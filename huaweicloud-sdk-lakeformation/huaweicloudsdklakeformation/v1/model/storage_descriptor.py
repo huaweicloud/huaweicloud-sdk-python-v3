@@ -47,7 +47,7 @@ class StorageDescriptor:
     }
 
     def __init__(self, columns=None, location=None, compressed=None, input_format=None, output_format=None, number_of_buckets=None, bucket_columns=None, sort_columns=None, serde_info=None, parameters=None, skewed_info=None, stored_as_sub_directories=None):
-        """StorageDescriptor
+        r"""StorageDescriptor
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class StorageDescriptor:
 
     @property
     def columns(self):
-        """Gets the columns of this StorageDescriptor.
+        r"""Gets the columns of this StorageDescriptor.
 
         分区列以外的所有字段
 
@@ -127,7 +127,7 @@ class StorageDescriptor:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this StorageDescriptor.
+        r"""Sets the columns of this StorageDescriptor.
 
         分区列以外的所有字段
 
@@ -138,7 +138,7 @@ class StorageDescriptor:
 
     @property
     def location(self):
-        """Gets the location of this StorageDescriptor.
+        r"""Gets the location of this StorageDescriptor.
 
         存储路径
 
@@ -149,7 +149,7 @@ class StorageDescriptor:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this StorageDescriptor.
+        r"""Sets the location of this StorageDescriptor.
 
         存储路径
 
@@ -160,7 +160,7 @@ class StorageDescriptor:
 
     @property
     def compressed(self):
-        """Gets the compressed of this StorageDescriptor.
+        r"""Gets the compressed of this StorageDescriptor.
 
         是否启用数据压缩
 
@@ -171,7 +171,7 @@ class StorageDescriptor:
 
     @compressed.setter
     def compressed(self, compressed):
-        """Sets the compressed of this StorageDescriptor.
+        r"""Sets the compressed of this StorageDescriptor.
 
         是否启用数据压缩
 
@@ -182,7 +182,7 @@ class StorageDescriptor:
 
     @property
     def input_format(self):
-        """Gets the input_format of this StorageDescriptor.
+        r"""Gets the input_format of this StorageDescriptor.
 
         输入格式
 
@@ -193,7 +193,7 @@ class StorageDescriptor:
 
     @input_format.setter
     def input_format(self, input_format):
-        """Sets the input_format of this StorageDescriptor.
+        r"""Sets the input_format of this StorageDescriptor.
 
         输入格式
 
@@ -204,7 +204,7 @@ class StorageDescriptor:
 
     @property
     def output_format(self):
-        """Gets the output_format of this StorageDescriptor.
+        r"""Gets the output_format of this StorageDescriptor.
 
         输出格式
 
@@ -215,7 +215,7 @@ class StorageDescriptor:
 
     @output_format.setter
     def output_format(self, output_format):
-        """Sets the output_format of this StorageDescriptor.
+        r"""Sets the output_format of this StorageDescriptor.
 
         输出格式
 
@@ -226,7 +226,7 @@ class StorageDescriptor:
 
     @property
     def number_of_buckets(self):
-        """Gets the number_of_buckets of this StorageDescriptor.
+        r"""Gets the number_of_buckets of this StorageDescriptor.
 
         分桶的桶数量
 
@@ -237,7 +237,7 @@ class StorageDescriptor:
 
     @number_of_buckets.setter
     def number_of_buckets(self, number_of_buckets):
-        """Sets the number_of_buckets of this StorageDescriptor.
+        r"""Sets the number_of_buckets of this StorageDescriptor.
 
         分桶的桶数量
 
@@ -248,7 +248,7 @@ class StorageDescriptor:
 
     @property
     def bucket_columns(self):
-        """Gets the bucket_columns of this StorageDescriptor.
+        r"""Gets the bucket_columns of this StorageDescriptor.
 
         分桶字段
 
@@ -259,7 +259,7 @@ class StorageDescriptor:
 
     @bucket_columns.setter
     def bucket_columns(self, bucket_columns):
-        """Sets the bucket_columns of this StorageDescriptor.
+        r"""Sets the bucket_columns of this StorageDescriptor.
 
         分桶字段
 
@@ -270,7 +270,7 @@ class StorageDescriptor:
 
     @property
     def sort_columns(self):
-        """Gets the sort_columns of this StorageDescriptor.
+        r"""Gets the sort_columns of this StorageDescriptor.
 
         指定表中的每个存储桶的排序顺序的列表
 
@@ -281,7 +281,7 @@ class StorageDescriptor:
 
     @sort_columns.setter
     def sort_columns(self, sort_columns):
-        """Sets the sort_columns of this StorageDescriptor.
+        r"""Sets the sort_columns of this StorageDescriptor.
 
         指定表中的每个存储桶的排序顺序的列表
 
@@ -292,7 +292,7 @@ class StorageDescriptor:
 
     @property
     def serde_info(self):
-        """Gets the serde_info of this StorageDescriptor.
+        r"""Gets the serde_info of this StorageDescriptor.
 
         :return: The serde_info of this StorageDescriptor.
         :rtype: :class:`huaweicloudsdklakeformation.v1.SerDeInfo`
@@ -301,7 +301,7 @@ class StorageDescriptor:
 
     @serde_info.setter
     def serde_info(self, serde_info):
-        """Sets the serde_info of this StorageDescriptor.
+        r"""Sets the serde_info of this StorageDescriptor.
 
         :param serde_info: The serde_info of this StorageDescriptor.
         :type serde_info: :class:`huaweicloudsdklakeformation.v1.SerDeInfo`
@@ -310,7 +310,7 @@ class StorageDescriptor:
 
     @property
     def parameters(self):
-        """Gets the parameters of this StorageDescriptor.
+        r"""Gets the parameters of this StorageDescriptor.
 
         存储描述符的参数。 key最小长度为1，最大长度为255. value最大长度为4000
 
@@ -321,7 +321,7 @@ class StorageDescriptor:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this StorageDescriptor.
+        r"""Sets the parameters of this StorageDescriptor.
 
         存储描述符的参数。 key最小长度为1，最大长度为255. value最大长度为4000
 
@@ -332,7 +332,7 @@ class StorageDescriptor:
 
     @property
     def skewed_info(self):
-        """Gets the skewed_info of this StorageDescriptor.
+        r"""Gets the skewed_info of this StorageDescriptor.
 
         :return: The skewed_info of this StorageDescriptor.
         :rtype: :class:`huaweicloudsdklakeformation.v1.SkewedInfo`
@@ -341,7 +341,7 @@ class StorageDescriptor:
 
     @skewed_info.setter
     def skewed_info(self, skewed_info):
-        """Sets the skewed_info of this StorageDescriptor.
+        r"""Sets the skewed_info of this StorageDescriptor.
 
         :param skewed_info: The skewed_info of this StorageDescriptor.
         :type skewed_info: :class:`huaweicloudsdklakeformation.v1.SkewedInfo`
@@ -350,7 +350,7 @@ class StorageDescriptor:
 
     @property
     def stored_as_sub_directories(self):
-        """Gets the stored_as_sub_directories of this StorageDescriptor.
+        r"""Gets the stored_as_sub_directories of this StorageDescriptor.
 
         数据是否会存放在子目录中
 
@@ -361,7 +361,7 @@ class StorageDescriptor:
 
     @stored_as_sub_directories.setter
     def stored_as_sub_directories(self, stored_as_sub_directories):
-        """Sets the stored_as_sub_directories of this StorageDescriptor.
+        r"""Sets the stored_as_sub_directories of this StorageDescriptor.
 
         数据是否会存放在子目录中
 

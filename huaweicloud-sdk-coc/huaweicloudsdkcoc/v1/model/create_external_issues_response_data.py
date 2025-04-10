@@ -25,7 +25,7 @@ class CreateExternalIssuesResponseData:
     }
 
     def __init__(self, ticket_id=None):
-        """CreateExternalIssuesResponseData
+        r"""CreateExternalIssuesResponseData
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateExternalIssuesResponseData:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this CreateExternalIssuesResponseData.
+        r"""Gets the ticket_id of this CreateExternalIssuesResponseData.
 
         问题单号
 
@@ -53,7 +53,7 @@ class CreateExternalIssuesResponseData:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this CreateExternalIssuesResponseData.
+        r"""Sets the ticket_id of this CreateExternalIssuesResponseData.
 
         问题单号
 

@@ -27,7 +27,7 @@ class HttpCodeSummary:
     }
 
     def __init__(self, http_codes=None, time=None):
-        """HttpCodeSummary
+        r"""HttpCodeSummary
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HttpCodeSummary:
 
     @property
     def http_codes(self):
-        """Gets the http_codes of this HttpCodeSummary.
+        r"""Gets the http_codes of this HttpCodeSummary.
 
         状态码信息
 
@@ -61,7 +61,7 @@ class HttpCodeSummary:
 
     @http_codes.setter
     def http_codes(self, http_codes):
-        """Sets the http_codes of this HttpCodeSummary.
+        r"""Sets the http_codes of this HttpCodeSummary.
 
         状态码信息
 
@@ -72,7 +72,7 @@ class HttpCodeSummary:
 
     @property
     def time(self):
-        """Gets the time of this HttpCodeSummary.
+        r"""Gets the time of this HttpCodeSummary.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
@@ -83,7 +83,7 @@ class HttpCodeSummary:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this HttpCodeSummary.
+        r"""Sets the time of this HttpCodeSummary.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 

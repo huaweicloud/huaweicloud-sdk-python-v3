@@ -27,7 +27,7 @@ class ResQuest:
     }
 
     def __init__(self, limits=None, requests=None):
-        """ResQuest
+        r"""ResQuest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResQuest:
 
     @property
     def limits(self):
-        """Gets the limits of this ResQuest.
+        r"""Gets the limits of this ResQuest.
 
         :return: The limits of this ResQuest.
         :rtype: :class:`huaweicloudsdkhilens.v3.Res`
@@ -59,7 +59,7 @@ class ResQuest:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this ResQuest.
+        r"""Sets the limits of this ResQuest.
 
         :param limits: The limits of this ResQuest.
         :type limits: :class:`huaweicloudsdkhilens.v3.Res`
@@ -68,7 +68,7 @@ class ResQuest:
 
     @property
     def requests(self):
-        """Gets the requests of this ResQuest.
+        r"""Gets the requests of this ResQuest.
 
         :return: The requests of this ResQuest.
         :rtype: :class:`huaweicloudsdkhilens.v3.Res`
@@ -77,7 +77,7 @@ class ResQuest:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this ResQuest.
+        r"""Sets the requests of this ResQuest.
 
         :param requests: The requests of this ResQuest.
         :type requests: :class:`huaweicloudsdkhilens.v3.Res`

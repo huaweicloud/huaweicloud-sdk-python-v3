@@ -33,7 +33,7 @@ class ListMonitorInfosRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, task_name=None, execute_status=None):
-        """ListMonitorInfosRequest
+        r"""ListMonitorInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListMonitorInfosRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMonitorInfosRequest.
+        r"""Gets the instance_id of this ListMonitorInfosRequest.
 
         实例ID
 
@@ -81,7 +81,7 @@ class ListMonitorInfosRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMonitorInfosRequest.
+        r"""Sets the instance_id of this ListMonitorInfosRequest.
 
         实例ID
 
@@ -92,7 +92,7 @@ class ListMonitorInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMonitorInfosRequest.
+        r"""Gets the offset of this ListMonitorInfosRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -103,7 +103,7 @@ class ListMonitorInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMonitorInfosRequest.
+        r"""Sets the offset of this ListMonitorInfosRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -114,7 +114,7 @@ class ListMonitorInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMonitorInfosRequest.
+        r"""Gets the limit of this ListMonitorInfosRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -125,7 +125,7 @@ class ListMonitorInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMonitorInfosRequest.
+        r"""Sets the limit of this ListMonitorInfosRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -136,7 +136,7 @@ class ListMonitorInfosRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListMonitorInfosRequest.
+        r"""Gets the task_name of this ListMonitorInfosRequest.
 
         需要搜索的任务名称，支持模糊搜索，大小写敏感，非必填参数，如果为空，搜索所有任务
 
@@ -147,7 +147,7 @@ class ListMonitorInfosRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListMonitorInfosRequest.
+        r"""Sets the task_name of this ListMonitorInfosRequest.
 
         需要搜索的任务名称，支持模糊搜索，大小写敏感，非必填参数，如果为空，搜索所有任务
 
@@ -158,7 +158,7 @@ class ListMonitorInfosRequest:
 
     @property
     def execute_status(self):
-        """Gets the execute_status of this ListMonitorInfosRequest.
+        r"""Gets the execute_status of this ListMonitorInfosRequest.
 
         需要搜索任务的执行状态, 只允许如下枚举值：UNSTARTED-未启动, WAITING-等待执行,RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常</br> 非必填参数，如果为空，搜索所有任务
 
@@ -169,7 +169,7 @@ class ListMonitorInfosRequest:
 
     @execute_status.setter
     def execute_status(self, execute_status):
-        """Sets the execute_status of this ListMonitorInfosRequest.
+        r"""Sets the execute_status of this ListMonitorInfosRequest.
 
         需要搜索任务的执行状态, 只允许如下枚举值：UNSTARTED-未启动, WAITING-等待执行,RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常</br> 非必填参数，如果为空，搜索所有任务
 

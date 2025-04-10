@@ -25,7 +25,7 @@ class UpdateNatGatewaySnatRuleRequestOption:
     }
 
     def __init__(self, snat_rule=None):
-        """UpdateNatGatewaySnatRuleRequestOption
+        r"""UpdateNatGatewaySnatRuleRequestOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNatGatewaySnatRuleRequestOption:
 
     @property
     def snat_rule(self):
-        """Gets the snat_rule of this UpdateNatGatewaySnatRuleRequestOption.
+        r"""Gets the snat_rule of this UpdateNatGatewaySnatRuleRequestOption.
 
         :return: The snat_rule of this UpdateNatGatewaySnatRuleRequestOption.
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleOption`
@@ -51,7 +51,7 @@ class UpdateNatGatewaySnatRuleRequestOption:
 
     @snat_rule.setter
     def snat_rule(self, snat_rule):
-        """Sets the snat_rule of this UpdateNatGatewaySnatRuleRequestOption.
+        r"""Sets the snat_rule of this UpdateNatGatewaySnatRuleRequestOption.
 
         :param snat_rule: The snat_rule of this UpdateNatGatewaySnatRuleRequestOption.
         :type snat_rule: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleOption`

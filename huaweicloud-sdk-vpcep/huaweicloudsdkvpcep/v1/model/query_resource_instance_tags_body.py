@@ -43,7 +43,7 @@ class QueryResourceInstanceTagsBody:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, sys_tags=None, limit=None, offset=None, action=None, matches=None, without_any_tag=None):
-        """QueryResourceInstanceTagsBody
+        r"""QueryResourceInstanceTagsBody
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryResourceInstanceTagsBody.
+        r"""Gets the tags of this QueryResourceInstanceTagsBody.
 
         包含标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复， 同一个key中values不能重复。结果返回包含所有标签的资源列表， key之间是与的关系，key-value结构中value是或的关系。 无tag过滤条件时返回全量数据。
 
@@ -116,7 +116,7 @@ class QueryResourceInstanceTagsBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryResourceInstanceTagsBody.
+        r"""Sets the tags of this QueryResourceInstanceTagsBody.
 
         包含标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复， 同一个key中values不能重复。结果返回包含所有标签的资源列表， key之间是与的关系，key-value结构中value是或的关系。 无tag过滤条件时返回全量数据。
 
@@ -127,7 +127,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this QueryResourceInstanceTagsBody.
+        r"""Gets the tags_any of this QueryResourceInstanceTagsBody.
 
         包含任意标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。 Key不能重复，同一个key中values不能重复。 结果返回包含标签的资源列表，key之间是或的关系，key、value结构中value是或的关系。 无过滤条件时返回全量数据。
 
@@ -138,7 +138,7 @@ class QueryResourceInstanceTagsBody:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this QueryResourceInstanceTagsBody.
+        r"""Sets the tags_any of this QueryResourceInstanceTagsBody.
 
         包含任意标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。 Key不能重复，同一个key中values不能重复。 结果返回包含标签的资源列表，key之间是或的关系，key、value结构中value是或的关系。 无过滤条件时返回全量数据。
 
@@ -149,7 +149,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this QueryResourceInstanceTagsBody.
+        r"""Gets the not_tags of this QueryResourceInstanceTagsBody.
 
         不包含标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复， 同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是与的关系， key、value结构中value是或的关系。 无过滤条件时返回全量数据。
 
@@ -160,7 +160,7 @@ class QueryResourceInstanceTagsBody:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this QueryResourceInstanceTagsBody.
+        r"""Sets the not_tags of this QueryResourceInstanceTagsBody.
 
         不包含标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复， 同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是与的关系， key、value结构中value是或的关系。 无过滤条件时返回全量数据。
 
@@ -171,7 +171,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this QueryResourceInstanceTagsBody.
+        r"""Gets the not_tags_any of this QueryResourceInstanceTagsBody.
 
         不包含任意标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复， 同一个key中values不能重复。结果返回不包含标签的资源列表， key之间是与的关系，key、value结构中value是或的关系。 无过滤条件时返回全量数据。
 
@@ -182,7 +182,7 @@ class QueryResourceInstanceTagsBody:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this QueryResourceInstanceTagsBody.
+        r"""Sets the not_tags_any of this QueryResourceInstanceTagsBody.
 
         不包含任意标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复， 同一个key中values不能重复。结果返回不包含标签的资源列表， key之间是与的关系，key、value结构中value是或的关系。 无过滤条件时返回全量数据。
 
@@ -193,7 +193,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this QueryResourceInstanceTagsBody.
+        r"""Gets the sys_tags of this QueryResourceInstanceTagsBody.
 
         系统标签，
 
@@ -204,7 +204,7 @@ class QueryResourceInstanceTagsBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this QueryResourceInstanceTagsBody.
+        r"""Sets the sys_tags of this QueryResourceInstanceTagsBody.
 
         系统标签，
 
@@ -215,7 +215,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryResourceInstanceTagsBody.
+        r"""Gets the limit of this QueryResourceInstanceTagsBody.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000， limit最多为1000，不能为负数，最小值为1。
 
@@ -226,7 +226,7 @@ class QueryResourceInstanceTagsBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryResourceInstanceTagsBody.
+        r"""Sets the limit of this QueryResourceInstanceTagsBody.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000， limit最多为1000，不能为负数，最小值为1。
 
@@ -237,7 +237,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryResourceInstanceTagsBody.
+        r"""Gets the offset of this QueryResourceInstanceTagsBody.
 
         索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询， 如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）， 必须为数字，不能为负数。
 
@@ -248,7 +248,7 @@ class QueryResourceInstanceTagsBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryResourceInstanceTagsBody.
+        r"""Sets the offset of this QueryResourceInstanceTagsBody.
 
         索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询， 如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）， 必须为数字，不能为负数。
 
@@ -259,7 +259,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def action(self):
-        """Gets the action of this QueryResourceInstanceTagsBody.
+        r"""Gets the action of this QueryResourceInstanceTagsBody.
 
         操作标识（仅限于filter，count）：filter（过滤）， count(查询总条数)如果是filter就按照过滤条件查询， 如果是count，只需要返回总条数，禁止返回其他字段。
 
@@ -270,7 +270,7 @@ class QueryResourceInstanceTagsBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this QueryResourceInstanceTagsBody.
+        r"""Sets the action of this QueryResourceInstanceTagsBody.
 
         操作标识（仅限于filter，count）：filter（过滤）， count(查询总条数)如果是filter就按照过滤条件查询， 如果是count，只需要返回总条数，禁止返回其他字段。
 
@@ -281,7 +281,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def matches(self):
-        """Gets the matches of this QueryResourceInstanceTagsBody.
+        r"""Gets the matches of this QueryResourceInstanceTagsBody.
 
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。 key为固定字典值，不能包含重复的key或不支持的key。 根据key的值确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写）， 如果value为空字符串精确匹配（多数服务不存在资源名称为空的情况， 因此此类情况返回空列表）。resource_id为精确匹配。 第一期只做resource_name，后续再扩展。
 
@@ -292,7 +292,7 @@ class QueryResourceInstanceTagsBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this QueryResourceInstanceTagsBody.
+        r"""Sets the matches of this QueryResourceInstanceTagsBody.
 
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。 key为固定字典值，不能包含重复的key或不支持的key。 根据key的值确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写）， 如果value为空字符串精确匹配（多数服务不存在资源名称为空的情况， 因此此类情况返回空列表）。resource_id为精确匹配。 第一期只做resource_name，后续再扩展。
 
@@ -303,7 +303,7 @@ class QueryResourceInstanceTagsBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this QueryResourceInstanceTagsBody.
+        r"""Gets the without_any_tag of this QueryResourceInstanceTagsBody.
 
         默认为false，取值【true/false】,当withoutAnyTag=true， 忽略tags、tagsAny、notTags、notTagsAny参数校验。
 
@@ -314,7 +314,7 @@ class QueryResourceInstanceTagsBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this QueryResourceInstanceTagsBody.
+        r"""Sets the without_any_tag of this QueryResourceInstanceTagsBody.
 
         默认为false，取值【true/false】,当withoutAnyTag=true， 忽略tags、tagsAny、notTags、notTagsAny参数校验。
 

@@ -27,7 +27,7 @@ class SubscribeImageRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """SubscribeImageRequest
+        r"""SubscribeImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SubscribeImageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this SubscribeImageRequest.
+        r"""Gets the eihealth_project_id of this SubscribeImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class SubscribeImageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this SubscribeImageRequest.
+        r"""Sets the eihealth_project_id of this SubscribeImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class SubscribeImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this SubscribeImageRequest.
+        r"""Gets the body of this SubscribeImageRequest.
 
         :return: The body of this SubscribeImageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeImageReq`
@@ -80,7 +80,7 @@ class SubscribeImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SubscribeImageRequest.
+        r"""Sets the body of this SubscribeImageRequest.
 
         :param body: The body of this SubscribeImageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SubscribeImageReq`

@@ -24,7 +24,7 @@ class DisassociateRequestThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateRequestThrottlingPolicyV2Response
+        r"""DisassociateRequestThrottlingPolicyV2Response
 
         The model defined in huaweicloud sdk
 

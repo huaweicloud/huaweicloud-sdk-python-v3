@@ -29,7 +29,7 @@ class ShowSecretFunctionTemplatesRequest:
     }
 
     def __init__(self, secret_type=None, secret_sub_type=None, engine=None):
-        """ShowSecretFunctionTemplatesRequest
+        r"""ShowSecretFunctionTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowSecretFunctionTemplatesRequest:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this ShowSecretFunctionTemplatesRequest.
+        r"""Gets the secret_type of this ShowSecretFunctionTemplatesRequest.
 
         凭据类型。
 
@@ -66,7 +66,7 @@ class ShowSecretFunctionTemplatesRequest:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this ShowSecretFunctionTemplatesRequest.
+        r"""Sets the secret_type of this ShowSecretFunctionTemplatesRequest.
 
         凭据类型。
 
@@ -77,7 +77,7 @@ class ShowSecretFunctionTemplatesRequest:
 
     @property
     def secret_sub_type(self):
-        """Gets the secret_sub_type of this ShowSecretFunctionTemplatesRequest.
+        r"""Gets the secret_sub_type of this ShowSecretFunctionTemplatesRequest.
 
         凭据轮转账号类型。 - SingleUser：单用户模式轮转 - MultiUser：双用户模式轮转
 
@@ -88,7 +88,7 @@ class ShowSecretFunctionTemplatesRequest:
 
     @secret_sub_type.setter
     def secret_sub_type(self, secret_sub_type):
-        """Sets the secret_sub_type of this ShowSecretFunctionTemplatesRequest.
+        r"""Sets the secret_sub_type of this ShowSecretFunctionTemplatesRequest.
 
         凭据轮转账号类型。 - SingleUser：单用户模式轮转 - MultiUser：双用户模式轮转
 
@@ -99,7 +99,7 @@ class ShowSecretFunctionTemplatesRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ShowSecretFunctionTemplatesRequest.
+        r"""Gets the engine of this ShowSecretFunctionTemplatesRequest.
 
         数据库类型。凭据类型为RDS-FG时为必填参数，可传入mysql、postgresql、sqlserver。其余凭据类型不支持。
 
@@ -110,7 +110,7 @@ class ShowSecretFunctionTemplatesRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowSecretFunctionTemplatesRequest.
+        r"""Sets the engine of this ShowSecretFunctionTemplatesRequest.
 
         数据库类型。凭据类型为RDS-FG时为必填参数，可传入mysql、postgresql、sqlserver。其余凭据类型不支持。
 

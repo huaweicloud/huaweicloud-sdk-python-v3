@@ -33,7 +33,7 @@ class GetTagDetailRsp:
     }
 
     def __init__(self, tag=None, size=None, create_time=None, update_time=None, path=None):
-        """GetTagDetailRsp
+        r"""GetTagDetailRsp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class GetTagDetailRsp:
 
     @property
     def tag(self):
-        """Gets the tag of this GetTagDetailRsp.
+        r"""Gets the tag of this GetTagDetailRsp.
 
         镜像版本名称
 
@@ -82,7 +82,7 @@ class GetTagDetailRsp:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this GetTagDetailRsp.
+        r"""Sets the tag of this GetTagDetailRsp.
 
         镜像版本名称
 
@@ -93,7 +93,7 @@ class GetTagDetailRsp:
 
     @property
     def size(self):
-        """Gets the size of this GetTagDetailRsp.
+        r"""Gets the size of this GetTagDetailRsp.
 
         镜像版本大小
 
@@ -104,7 +104,7 @@ class GetTagDetailRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GetTagDetailRsp.
+        r"""Sets the size of this GetTagDetailRsp.
 
         镜像版本大小
 
@@ -115,7 +115,7 @@ class GetTagDetailRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetTagDetailRsp.
+        r"""Gets the create_time of this GetTagDetailRsp.
 
         镜像版本创建时间
 
@@ -126,7 +126,7 @@ class GetTagDetailRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetTagDetailRsp.
+        r"""Sets the create_time of this GetTagDetailRsp.
 
         镜像版本创建时间
 
@@ -137,7 +137,7 @@ class GetTagDetailRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetTagDetailRsp.
+        r"""Gets the update_time of this GetTagDetailRsp.
 
         镜像版本更新时间
 
@@ -148,7 +148,7 @@ class GetTagDetailRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetTagDetailRsp.
+        r"""Sets the update_time of this GetTagDetailRsp.
 
         镜像版本更新时间
 
@@ -159,7 +159,7 @@ class GetTagDetailRsp:
 
     @property
     def path(self):
-        """Gets the path of this GetTagDetailRsp.
+        r"""Gets the path of this GetTagDetailRsp.
 
         镜像地址
 
@@ -170,7 +170,7 @@ class GetTagDetailRsp:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this GetTagDetailRsp.
+        r"""Sets the path of this GetTagDetailRsp.
 
         镜像地址
 

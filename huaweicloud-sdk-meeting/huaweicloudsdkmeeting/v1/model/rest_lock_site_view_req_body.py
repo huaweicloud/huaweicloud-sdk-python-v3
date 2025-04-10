@@ -27,7 +27,7 @@ class RestLockSiteViewReqBody:
     }
 
     def __init__(self, status=None, participant_id=None):
-        """RestLockSiteViewReqBody
+        r"""RestLockSiteViewReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestLockSiteViewReqBody:
 
     @property
     def status(self):
-        """Gets the status of this RestLockSiteViewReqBody.
+        r"""Gets the status of this RestLockSiteViewReqBody.
 
         锁定标志。 - 0: 取消锁定 - 1: 锁定
 
@@ -59,7 +59,7 @@ class RestLockSiteViewReqBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RestLockSiteViewReqBody.
+        r"""Sets the status of this RestLockSiteViewReqBody.
 
         锁定标志。 - 0: 取消锁定 - 1: 锁定
 
@@ -70,7 +70,7 @@ class RestLockSiteViewReqBody:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RestLockSiteViewReqBody.
+        r"""Gets the participant_id of this RestLockSiteViewReqBody.
 
         被锁定视频源的与会者标识。
 
@@ -81,7 +81,7 @@ class RestLockSiteViewReqBody:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RestLockSiteViewReqBody.
+        r"""Sets the participant_id of this RestLockSiteViewReqBody.
 
         被锁定视频源的与会者标识。
 

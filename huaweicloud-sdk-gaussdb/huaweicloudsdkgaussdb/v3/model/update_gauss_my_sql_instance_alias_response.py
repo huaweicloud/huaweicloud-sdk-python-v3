@@ -26,7 +26,7 @@ class UpdateGaussMySqlInstanceAliasResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateGaussMySqlInstanceAliasResponse
+        r"""UpdateGaussMySqlInstanceAliasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGaussMySqlInstanceAliasResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlInstanceAliasResponse.
+        r"""Gets the body of this UpdateGaussMySqlInstanceAliasResponse.
 
         :return: The body of this UpdateGaussMySqlInstanceAliasResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateGaussMySqlInstanceAliasResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlInstanceAliasResponse.
+        r"""Sets the body of this UpdateGaussMySqlInstanceAliasResponse.
 
         :param body: The body of this UpdateGaussMySqlInstanceAliasResponse.
         :type body: str

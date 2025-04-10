@@ -25,7 +25,7 @@ class OutputPolicy:
     }
 
     def __init__(self, output_policy=None):
-        """OutputPolicy
+        r"""OutputPolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OutputPolicy:
 
     @property
     def output_policy(self):
-        """Gets the output_policy of this OutputPolicy.
+        r"""Gets the output_policy of this OutputPolicy.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -54,7 +54,7 @@ class OutputPolicy:
 
     @output_policy.setter
     def output_policy(self, output_policy):
-        """Sets the output_policy of this OutputPolicy.
+        r"""Sets the output_policy of this OutputPolicy.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 

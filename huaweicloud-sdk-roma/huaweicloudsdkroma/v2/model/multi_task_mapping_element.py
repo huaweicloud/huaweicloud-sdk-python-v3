@@ -41,7 +41,7 @@ class MultiTaskMappingElement:
     }
 
     def __init__(self, id=None, source_table=None, target_table=None, updated_time=None, mapping_percent=None, status=None, source_columns=None, target_columns=None, mapping=None):
-        """MultiTaskMappingElement
+        r"""MultiTaskMappingElement
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class MultiTaskMappingElement:
 
     @property
     def id(self):
-        """Gets the id of this MultiTaskMappingElement.
+        r"""Gets the id of this MultiTaskMappingElement.
 
         映射唯一ID
 
@@ -110,7 +110,7 @@ class MultiTaskMappingElement:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MultiTaskMappingElement.
+        r"""Sets the id of this MultiTaskMappingElement.
 
         映射唯一ID
 
@@ -121,7 +121,7 @@ class MultiTaskMappingElement:
 
     @property
     def source_table(self):
-        """Gets the source_table of this MultiTaskMappingElement.
+        r"""Gets the source_table of this MultiTaskMappingElement.
 
         源表名
 
@@ -132,7 +132,7 @@ class MultiTaskMappingElement:
 
     @source_table.setter
     def source_table(self, source_table):
-        """Sets the source_table of this MultiTaskMappingElement.
+        r"""Sets the source_table of this MultiTaskMappingElement.
 
         源表名
 
@@ -143,7 +143,7 @@ class MultiTaskMappingElement:
 
     @property
     def target_table(self):
-        """Gets the target_table of this MultiTaskMappingElement.
+        r"""Gets the target_table of this MultiTaskMappingElement.
 
         目标表名
 
@@ -154,7 +154,7 @@ class MultiTaskMappingElement:
 
     @target_table.setter
     def target_table(self, target_table):
-        """Sets the target_table of this MultiTaskMappingElement.
+        r"""Sets the target_table of this MultiTaskMappingElement.
 
         目标表名
 
@@ -165,7 +165,7 @@ class MultiTaskMappingElement:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this MultiTaskMappingElement.
+        r"""Gets the updated_time of this MultiTaskMappingElement.
 
         上次修改时间
 
@@ -176,7 +176,7 @@ class MultiTaskMappingElement:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this MultiTaskMappingElement.
+        r"""Sets the updated_time of this MultiTaskMappingElement.
 
         上次修改时间
 
@@ -187,7 +187,7 @@ class MultiTaskMappingElement:
 
     @property
     def mapping_percent(self):
-        """Gets the mapping_percent of this MultiTaskMappingElement.
+        r"""Gets the mapping_percent of this MultiTaskMappingElement.
 
         匹配度
 
@@ -198,7 +198,7 @@ class MultiTaskMappingElement:
 
     @mapping_percent.setter
     def mapping_percent(self, mapping_percent):
-        """Sets the mapping_percent of this MultiTaskMappingElement.
+        r"""Sets the mapping_percent of this MultiTaskMappingElement.
 
         匹配度
 
@@ -209,7 +209,7 @@ class MultiTaskMappingElement:
 
     @property
     def status(self):
-        """Gets the status of this MultiTaskMappingElement.
+        r"""Gets the status of this MultiTaskMappingElement.
 
         映射状态 - AUTO (自动映射) - MANUAL (手工新增) - ADD (自动新增) - UPDATE (更新) - DELETE (删除) - USING (使用中)
 
@@ -220,7 +220,7 @@ class MultiTaskMappingElement:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MultiTaskMappingElement.
+        r"""Sets the status of this MultiTaskMappingElement.
 
         映射状态 - AUTO (自动映射) - MANUAL (手工新增) - ADD (自动新增) - UPDATE (更新) - DELETE (删除) - USING (使用中)
 
@@ -231,7 +231,7 @@ class MultiTaskMappingElement:
 
     @property
     def source_columns(self):
-        """Gets the source_columns of this MultiTaskMappingElement.
+        r"""Gets the source_columns of this MultiTaskMappingElement.
 
         源端字段列表
 
@@ -242,7 +242,7 @@ class MultiTaskMappingElement:
 
     @source_columns.setter
     def source_columns(self, source_columns):
-        """Sets the source_columns of this MultiTaskMappingElement.
+        r"""Sets the source_columns of this MultiTaskMappingElement.
 
         源端字段列表
 
@@ -253,7 +253,7 @@ class MultiTaskMappingElement:
 
     @property
     def target_columns(self):
-        """Gets the target_columns of this MultiTaskMappingElement.
+        r"""Gets the target_columns of this MultiTaskMappingElement.
 
         目标端字段列表
 
@@ -264,7 +264,7 @@ class MultiTaskMappingElement:
 
     @target_columns.setter
     def target_columns(self, target_columns):
-        """Sets the target_columns of this MultiTaskMappingElement.
+        r"""Sets the target_columns of this MultiTaskMappingElement.
 
         目标端字段列表
 
@@ -275,7 +275,7 @@ class MultiTaskMappingElement:
 
     @property
     def mapping(self):
-        """Gets the mapping of this MultiTaskMappingElement.
+        r"""Gets the mapping of this MultiTaskMappingElement.
 
         字段映射列表
 
@@ -286,7 +286,7 @@ class MultiTaskMappingElement:
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this MultiTaskMappingElement.
+        r"""Sets the mapping of this MultiTaskMappingElement.
 
         字段映射列表
 

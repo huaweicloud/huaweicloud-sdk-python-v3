@@ -37,7 +37,7 @@ class IpPool:
     }
 
     def __init__(self, id=None, site_id=None, pool_id=None, ip_version=None, operator=None, display_name=None, allow_share_bandwidth_types=None):
-        """IpPool
+        r"""IpPool
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class IpPool:
 
     @property
     def id(self):
-        """Gets the id of this IpPool.
+        r"""Gets the id of this IpPool.
 
         线路的ID。
 
@@ -96,7 +96,7 @@ class IpPool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpPool.
+        r"""Sets the id of this IpPool.
 
         线路的ID。
 
@@ -107,7 +107,7 @@ class IpPool:
 
     @property
     def site_id(self):
-        """Gets the site_id of this IpPool.
+        r"""Gets the site_id of this IpPool.
 
         线路所属站点ID。
 
@@ -118,7 +118,7 @@ class IpPool:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this IpPool.
+        r"""Sets the site_id of this IpPool.
 
         线路所属站点ID。
 
@@ -129,7 +129,7 @@ class IpPool:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this IpPool.
+        r"""Gets the pool_id of this IpPool.
 
         线路标识。
 
@@ -140,7 +140,7 @@ class IpPool:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this IpPool.
+        r"""Sets the pool_id of this IpPool.
 
         线路标识。
 
@@ -151,7 +151,7 @@ class IpPool:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this IpPool.
+        r"""Gets the ip_version of this IpPool.
 
         IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
 
@@ -162,7 +162,7 @@ class IpPool:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this IpPool.
+        r"""Sets the ip_version of this IpPool.
 
         IPv4或IPv6线路。  取值范围： - 4：IPv4线路 - 6：IPv6线路
 
@@ -173,7 +173,7 @@ class IpPool:
 
     @property
     def operator(self):
-        """Gets the operator of this IpPool.
+        r"""Gets the operator of this IpPool.
 
         :return: The operator of this IpPool.
         :rtype: :class:`huaweicloudsdkiec.v1.Operator`
@@ -182,7 +182,7 @@ class IpPool:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this IpPool.
+        r"""Sets the operator of this IpPool.
 
         :param operator: The operator of this IpPool.
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`
@@ -191,7 +191,7 @@ class IpPool:
 
     @property
     def display_name(self):
-        """Gets the display_name of this IpPool.
+        r"""Gets the display_name of this IpPool.
 
         线路的显示名称。
 
@@ -202,7 +202,7 @@ class IpPool:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this IpPool.
+        r"""Sets the display_name of this IpPool.
 
         线路的显示名称。
 
@@ -213,7 +213,7 @@ class IpPool:
 
     @property
     def allow_share_bandwidth_types(self):
-        """Gets the allow_share_bandwidth_types of this IpPool.
+        r"""Gets the allow_share_bandwidth_types of this IpPool.
 
         功能说明：表示此线路可以使用的带宽类型列表，如果列表为空，则表示该线路不能使用任何带宽  约束：线路下的ip只能加入到带宽类型在allow_share_bandwidth_types中带宽 
 
@@ -224,7 +224,7 @@ class IpPool:
 
     @allow_share_bandwidth_types.setter
     def allow_share_bandwidth_types(self, allow_share_bandwidth_types):
-        """Sets the allow_share_bandwidth_types of this IpPool.
+        r"""Sets the allow_share_bandwidth_types of this IpPool.
 
         功能说明：表示此线路可以使用的带宽类型列表，如果列表为空，则表示该线路不能使用任何带宽  约束：线路下的ip只能加入到带宽类型在allow_share_bandwidth_types中带宽 
 

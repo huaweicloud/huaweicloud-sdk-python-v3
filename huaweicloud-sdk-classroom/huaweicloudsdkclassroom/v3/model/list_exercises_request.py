@@ -27,7 +27,7 @@ class ListExercisesRequest:
     }
 
     def __init__(self, package_id=None, body=None):
-        """ListExercisesRequest
+        r"""ListExercisesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListExercisesRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ListExercisesRequest.
+        r"""Gets the package_id of this ListExercisesRequest.
 
         习题库id
 
@@ -60,7 +60,7 @@ class ListExercisesRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ListExercisesRequest.
+        r"""Sets the package_id of this ListExercisesRequest.
 
         习题库id
 
@@ -71,7 +71,7 @@ class ListExercisesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListExercisesRequest.
+        r"""Gets the body of this ListExercisesRequest.
 
         :return: The body of this ListExercisesRequest.
         :rtype: :class:`huaweicloudsdkclassroom.v3.ExercisesListRequestBody`
@@ -80,7 +80,7 @@ class ListExercisesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListExercisesRequest.
+        r"""Sets the body of this ListExercisesRequest.
 
         :param body: The body of this ListExercisesRequest.
         :type body: :class:`huaweicloudsdkclassroom.v3.ExercisesListRequestBody`

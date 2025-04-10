@@ -65,7 +65,7 @@ class Domains:
     }
 
     def __init__(self, id=None, domain_name=None, business_type=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, auto_refresh_preheat=None, service_area=None, range_status=None, follow_status=None, origin_status=None, banned_reason=None, locked_reason=None, enterprise_project_id=None, tags=None):
-        """Domains
+        r"""Domains
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class Domains:
 
     @property
     def id(self):
-        """Gets the id of this Domains.
+        r"""Gets the id of this Domains.
 
         加速域名ID。
 
@@ -194,7 +194,7 @@ class Domains:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Domains.
+        r"""Sets the id of this Domains.
 
         加速域名ID。
 
@@ -205,7 +205,7 @@ class Domains:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this Domains.
+        r"""Gets the domain_name of this Domains.
 
         加速域名。
 
@@ -216,7 +216,7 @@ class Domains:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this Domains.
+        r"""Sets the domain_name of this Domains.
 
         加速域名。
 
@@ -227,7 +227,7 @@ class Domains:
 
     @property
     def business_type(self):
-        """Gets the business_type of this Domains.
+        r"""Gets the business_type of this Domains.
 
         域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
@@ -238,7 +238,7 @@ class Domains:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this Domains.
+        r"""Sets the business_type of this Domains.
 
         域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
@@ -249,7 +249,7 @@ class Domains:
 
     @property
     def domain_status(self):
-        """Gets the domain_status of this Domains.
+        r"""Gets the domain_status of this Domains.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -260,7 +260,7 @@ class Domains:
 
     @domain_status.setter
     def domain_status(self, domain_status):
-        """Sets the domain_status of this Domains.
+        r"""Sets the domain_status of this Domains.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -271,7 +271,7 @@ class Domains:
 
     @property
     def cname(self):
-        """Gets the cname of this Domains.
+        r"""Gets the cname of this Domains.
 
         加速域名对应的CNAME。
 
@@ -282,7 +282,7 @@ class Domains:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this Domains.
+        r"""Sets the cname of this Domains.
 
         加速域名对应的CNAME。
 
@@ -293,7 +293,7 @@ class Domains:
 
     @property
     def sources(self):
-        """Gets the sources of this Domains.
+        r"""Gets the sources of this Domains.
 
         源站配置。
 
@@ -304,7 +304,7 @@ class Domains:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this Domains.
+        r"""Sets the sources of this Domains.
 
         源站配置。
 
@@ -315,7 +315,7 @@ class Domains:
 
     @property
     def domain_origin_host(self):
-        """Gets the domain_origin_host of this Domains.
+        r"""Gets the domain_origin_host of this Domains.
 
         :return: The domain_origin_host of this Domains.
         :rtype: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
@@ -324,7 +324,7 @@ class Domains:
 
     @domain_origin_host.setter
     def domain_origin_host(self, domain_origin_host):
-        """Sets the domain_origin_host of this Domains.
+        r"""Sets the domain_origin_host of this Domains.
 
         :param domain_origin_host: The domain_origin_host of this Domains.
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
@@ -333,7 +333,7 @@ class Domains:
 
     @property
     def https_status(self):
-        """Gets the https_status of this Domains.
+        r"""Gets the https_status of this Domains.
 
         是否开启HTTPS加速。
 
@@ -344,7 +344,7 @@ class Domains:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this Domains.
+        r"""Sets the https_status of this Domains.
 
         是否开启HTTPS加速。
 
@@ -355,7 +355,7 @@ class Domains:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Domains.
+        r"""Gets the create_time of this Domains.
 
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -366,7 +366,7 @@ class Domains:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Domains.
+        r"""Sets the create_time of this Domains.
 
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -377,7 +377,7 @@ class Domains:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this Domains.
+        r"""Gets the modify_time of this Domains.
 
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -388,7 +388,7 @@ class Domains:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this Domains.
+        r"""Sets the modify_time of this Domains.
 
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -399,7 +399,7 @@ class Domains:
 
     @property
     def disabled(self):
-        """Gets the disabled of this Domains.
+        r"""Gets the disabled of this Domains.
 
         封禁状态（0代表未禁用；1代表禁用）。
 
@@ -410,7 +410,7 @@ class Domains:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this Domains.
+        r"""Sets the disabled of this Domains.
 
         封禁状态（0代表未禁用；1代表禁用）。
 
@@ -421,7 +421,7 @@ class Domains:
 
     @property
     def locked(self):
-        """Gets the locked of this Domains.
+        r"""Gets the locked of this Domains.
 
         锁定状态（0代表未锁定；1代表锁定）。
 
@@ -432,7 +432,7 @@ class Domains:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this Domains.
+        r"""Sets the locked of this Domains.
 
         锁定状态（0代表未锁定；1代表锁定）。
 
@@ -443,7 +443,7 @@ class Domains:
 
     @property
     def auto_refresh_preheat(self):
-        """Gets the auto_refresh_preheat of this Domains.
+        r"""Gets the auto_refresh_preheat of this Domains.
 
         自动刷新预热（0代表关闭；1代表打开）。
 
@@ -454,7 +454,7 @@ class Domains:
 
     @auto_refresh_preheat.setter
     def auto_refresh_preheat(self, auto_refresh_preheat):
-        """Sets the auto_refresh_preheat of this Domains.
+        r"""Sets the auto_refresh_preheat of this Domains.
 
         自动刷新预热（0代表关闭；1代表打开）。
 
@@ -465,7 +465,7 @@ class Domains:
 
     @property
     def service_area(self):
-        """Gets the service_area of this Domains.
+        r"""Gets the service_area of this Domains.
 
         华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
 
@@ -476,7 +476,7 @@ class Domains:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this Domains.
+        r"""Sets the service_area of this Domains.
 
         华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
 
@@ -487,7 +487,7 @@ class Domains:
 
     @property
     def range_status(self):
-        """Gets the range_status of this Domains.
+        r"""Gets the range_status of this Domains.
 
         Range回源状态。
 
@@ -498,7 +498,7 @@ class Domains:
 
     @range_status.setter
     def range_status(self, range_status):
-        """Sets the range_status of this Domains.
+        r"""Sets the range_status of this Domains.
 
         Range回源状态。
 
@@ -509,7 +509,7 @@ class Domains:
 
     @property
     def follow_status(self):
-        """Gets the follow_status of this Domains.
+        r"""Gets the follow_status of this Domains.
 
         回源跟随状态。
 
@@ -520,7 +520,7 @@ class Domains:
 
     @follow_status.setter
     def follow_status(self, follow_status):
-        """Sets the follow_status of this Domains.
+        r"""Sets the follow_status of this Domains.
 
         回源跟随状态。
 
@@ -531,7 +531,7 @@ class Domains:
 
     @property
     def origin_status(self):
-        """Gets the origin_status of this Domains.
+        r"""Gets the origin_status of this Domains.
 
         是否暂停源站回源（off代表关闭 on代表开启）。
 
@@ -542,7 +542,7 @@ class Domains:
 
     @origin_status.setter
     def origin_status(self, origin_status):
-        """Sets the origin_status of this Domains.
+        r"""Sets the origin_status of this Domains.
 
         是否暂停源站回源（off代表关闭 on代表开启）。
 
@@ -553,7 +553,7 @@ class Domains:
 
     @property
     def banned_reason(self):
-        """Gets the banned_reason of this Domains.
+        r"""Gets the banned_reason of this Domains.
 
         域名禁用原因。
 
@@ -564,7 +564,7 @@ class Domains:
 
     @banned_reason.setter
     def banned_reason(self, banned_reason):
-        """Sets the banned_reason of this Domains.
+        r"""Sets the banned_reason of this Domains.
 
         域名禁用原因。
 
@@ -575,7 +575,7 @@ class Domains:
 
     @property
     def locked_reason(self):
-        """Gets the locked_reason of this Domains.
+        r"""Gets the locked_reason of this Domains.
 
         域名锁定原因。
 
@@ -586,7 +586,7 @@ class Domains:
 
     @locked_reason.setter
     def locked_reason(self, locked_reason):
-        """Sets the locked_reason of this Domains.
+        r"""Sets the locked_reason of this Domains.
 
         域名锁定原因。
 
@@ -597,7 +597,7 @@ class Domains:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Domains.
+        r"""Gets the enterprise_project_id of this Domains.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -608,7 +608,7 @@ class Domains:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Domains.
+        r"""Sets the enterprise_project_id of this Domains.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -619,7 +619,7 @@ class Domains:
 
     @property
     def tags(self):
-        """Gets the tags of this Domains.
+        r"""Gets the tags of this Domains.
 
         标签信息。
 
@@ -630,7 +630,7 @@ class Domains:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Domains.
+        r"""Sets the tags of this Domains.
 
         标签信息。
 

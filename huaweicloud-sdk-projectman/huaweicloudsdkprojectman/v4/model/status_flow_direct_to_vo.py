@@ -37,7 +37,7 @@ class StatusFlowDirectToVo:
     }
 
     def __init__(self, parent_name=None, parent_type=None, status_id=None, name=None, status_type=None, enabled=None, parent_id=None):
-        """StatusFlowDirectToVo
+        r"""StatusFlowDirectToVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class StatusFlowDirectToVo:
 
     @property
     def parent_name(self):
-        """Gets the parent_name of this StatusFlowDirectToVo.
+        r"""Gets the parent_name of this StatusFlowDirectToVo.
 
          父状态的名称
 
@@ -96,7 +96,7 @@ class StatusFlowDirectToVo:
 
     @parent_name.setter
     def parent_name(self, parent_name):
-        """Sets the parent_name of this StatusFlowDirectToVo.
+        r"""Sets the parent_name of this StatusFlowDirectToVo.
 
          父状态的名称
 
@@ -107,7 +107,7 @@ class StatusFlowDirectToVo:
 
     @property
     def parent_type(self):
-        """Gets the parent_type of this StatusFlowDirectToVo.
+        r"""Gets the parent_type of this StatusFlowDirectToVo.
 
         父状态的类型
 
@@ -118,7 +118,7 @@ class StatusFlowDirectToVo:
 
     @parent_type.setter
     def parent_type(self, parent_type):
-        """Sets the parent_type of this StatusFlowDirectToVo.
+        r"""Sets the parent_type of this StatusFlowDirectToVo.
 
         父状态的类型
 
@@ -129,7 +129,7 @@ class StatusFlowDirectToVo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this StatusFlowDirectToVo.
+        r"""Gets the status_id of this StatusFlowDirectToVo.
 
         状态id
 
@@ -140,7 +140,7 @@ class StatusFlowDirectToVo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this StatusFlowDirectToVo.
+        r"""Sets the status_id of this StatusFlowDirectToVo.
 
         状态id
 
@@ -151,7 +151,7 @@ class StatusFlowDirectToVo:
 
     @property
     def name(self):
-        """Gets the name of this StatusFlowDirectToVo.
+        r"""Gets the name of this StatusFlowDirectToVo.
 
         状态名称
 
@@ -162,7 +162,7 @@ class StatusFlowDirectToVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StatusFlowDirectToVo.
+        r"""Sets the name of this StatusFlowDirectToVo.
 
         状态名称
 
@@ -173,7 +173,7 @@ class StatusFlowDirectToVo:
 
     @property
     def status_type(self):
-        """Gets the status_type of this StatusFlowDirectToVo.
+        r"""Gets the status_type of this StatusFlowDirectToVo.
 
         状态类型
 
@@ -184,7 +184,7 @@ class StatusFlowDirectToVo:
 
     @status_type.setter
     def status_type(self, status_type):
-        """Sets the status_type of this StatusFlowDirectToVo.
+        r"""Sets the status_type of this StatusFlowDirectToVo.
 
         状态类型
 
@@ -195,7 +195,7 @@ class StatusFlowDirectToVo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this StatusFlowDirectToVo.
+        r"""Gets the enabled of this StatusFlowDirectToVo.
 
         是否已开启状态流转， true： 开启, false 没开启
 
@@ -206,7 +206,7 @@ class StatusFlowDirectToVo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this StatusFlowDirectToVo.
+        r"""Sets the enabled of this StatusFlowDirectToVo.
 
         是否已开启状态流转， true： 开启, false 没开启
 
@@ -217,7 +217,7 @@ class StatusFlowDirectToVo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this StatusFlowDirectToVo.
+        r"""Gets the parent_id of this StatusFlowDirectToVo.
 
         父状态的uuid
 
@@ -228,7 +228,7 @@ class StatusFlowDirectToVo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this StatusFlowDirectToVo.
+        r"""Sets the parent_id of this StatusFlowDirectToVo.
 
         父状态的uuid
 

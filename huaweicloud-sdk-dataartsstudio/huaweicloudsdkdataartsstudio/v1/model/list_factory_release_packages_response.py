@@ -30,7 +30,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None, x_request_id=None):
-        """ListFactoryReleasePackagesResponse
+        r"""ListFactoryReleasePackagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListFactoryReleasePackagesResponse.
+        r"""Gets the data of this ListFactoryReleasePackagesResponse.
 
         发布包信息
 
@@ -69,7 +69,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListFactoryReleasePackagesResponse.
+        r"""Sets the data of this ListFactoryReleasePackagesResponse.
 
         发布包信息
 
@@ -80,7 +80,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFactoryReleasePackagesResponse.
+        r"""Gets the total of this ListFactoryReleasePackagesResponse.
 
         发布包个数
 
@@ -91,7 +91,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFactoryReleasePackagesResponse.
+        r"""Sets the total of this ListFactoryReleasePackagesResponse.
 
         发布包个数
 
@@ -102,7 +102,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListFactoryReleasePackagesResponse.
+        r"""Gets the x_request_id of this ListFactoryReleasePackagesResponse.
 
         :return: The x_request_id of this ListFactoryReleasePackagesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListFactoryReleasePackagesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListFactoryReleasePackagesResponse.
+        r"""Sets the x_request_id of this ListFactoryReleasePackagesResponse.
 
         :param x_request_id: The x_request_id of this ListFactoryReleasePackagesResponse.
         :type x_request_id: str

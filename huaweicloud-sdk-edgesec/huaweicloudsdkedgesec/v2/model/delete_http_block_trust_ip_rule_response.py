@@ -24,7 +24,7 @@ class DeleteHttpBlockTrustIpRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttpBlockTrustIpRuleResponse
+        r"""DeleteHttpBlockTrustIpRuleResponse
 
         The model defined in huaweicloud sdk
 

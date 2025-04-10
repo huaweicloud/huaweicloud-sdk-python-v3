@@ -23,7 +23,7 @@ class ListScaleOutPolicyRequest:
     }
 
     def __init__(self):
-        """ListScaleOutPolicyRequest
+        r"""ListScaleOutPolicyRequest
 
         The model defined in huaweicloud sdk
 

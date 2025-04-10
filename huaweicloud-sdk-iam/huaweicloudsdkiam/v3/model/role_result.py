@@ -49,7 +49,7 @@ class RoleResult:
     }
 
     def __init__(self, domain_id=None, flag=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None, updated_time=None, created_time=None):
-        """RoleResult
+        r"""RoleResult
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class RoleResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RoleResult.
+        r"""Gets the domain_id of this RoleResult.
 
         权限所属账号ID。
 
@@ -134,7 +134,7 @@ class RoleResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RoleResult.
+        r"""Sets the domain_id of this RoleResult.
 
         权限所属账号ID。
 
@@ -145,7 +145,7 @@ class RoleResult:
 
     @property
     def flag(self):
-        """Gets the flag of this RoleResult.
+        r"""Gets the flag of this RoleResult.
 
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
@@ -156,7 +156,7 @@ class RoleResult:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this RoleResult.
+        r"""Sets the flag of this RoleResult.
 
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
@@ -167,7 +167,7 @@ class RoleResult:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this RoleResult.
+        r"""Gets the description_cn of this RoleResult.
 
         权限的中文描述信息。
 
@@ -178,7 +178,7 @@ class RoleResult:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this RoleResult.
+        r"""Sets the description_cn of this RoleResult.
 
         权限的中文描述信息。
 
@@ -189,7 +189,7 @@ class RoleResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this RoleResult.
+        r"""Gets the catalog of this RoleResult.
 
         权限所在目录。
 
@@ -200,7 +200,7 @@ class RoleResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this RoleResult.
+        r"""Sets the catalog of this RoleResult.
 
         权限所在目录。
 
@@ -211,7 +211,7 @@ class RoleResult:
 
     @property
     def name(self):
-        """Gets the name of this RoleResult.
+        r"""Gets the name of this RoleResult.
 
         权限名。携带在用户的token中，云服务根据该名称来判断用户是否有权限访问。
 
@@ -222,7 +222,7 @@ class RoleResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RoleResult.
+        r"""Sets the name of this RoleResult.
 
         权限名。携带在用户的token中，云服务根据该名称来判断用户是否有权限访问。
 
@@ -233,7 +233,7 @@ class RoleResult:
 
     @property
     def description(self):
-        """Gets the description of this RoleResult.
+        r"""Gets the description of this RoleResult.
 
         权限描述信息。
 
@@ -244,7 +244,7 @@ class RoleResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RoleResult.
+        r"""Sets the description of this RoleResult.
 
         权限描述信息。
 
@@ -255,7 +255,7 @@ class RoleResult:
 
     @property
     def links(self):
-        """Gets the links of this RoleResult.
+        r"""Gets the links of this RoleResult.
 
         :return: The links of this RoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -264,7 +264,7 @@ class RoleResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this RoleResult.
+        r"""Sets the links of this RoleResult.
 
         :param links: The links of this RoleResult.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -273,7 +273,7 @@ class RoleResult:
 
     @property
     def id(self):
-        """Gets the id of this RoleResult.
+        r"""Gets the id of this RoleResult.
 
         权限ID。
 
@@ -284,7 +284,7 @@ class RoleResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RoleResult.
+        r"""Sets the id of this RoleResult.
 
         权限ID。
 
@@ -295,7 +295,7 @@ class RoleResult:
 
     @property
     def display_name(self):
-        """Gets the display_name of this RoleResult.
+        r"""Gets the display_name of this RoleResult.
 
         权限展示名。
 
@@ -306,7 +306,7 @@ class RoleResult:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this RoleResult.
+        r"""Sets the display_name of this RoleResult.
 
         权限展示名。
 
@@ -317,7 +317,7 @@ class RoleResult:
 
     @property
     def type(self):
-        """Gets the type of this RoleResult.
+        r"""Gets the type of this RoleResult.
 
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -328,7 +328,7 @@ class RoleResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RoleResult.
+        r"""Sets the type of this RoleResult.
 
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -339,7 +339,7 @@ class RoleResult:
 
     @property
     def policy(self):
-        """Gets the policy of this RoleResult.
+        r"""Gets the policy of this RoleResult.
 
         :return: The policy of this RoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.RolePolicy`
@@ -348,7 +348,7 @@ class RoleResult:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this RoleResult.
+        r"""Sets the policy of this RoleResult.
 
         :param policy: The policy of this RoleResult.
         :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
@@ -357,7 +357,7 @@ class RoleResult:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this RoleResult.
+        r"""Gets the updated_time of this RoleResult.
 
         权限更新时间。
 
@@ -368,7 +368,7 @@ class RoleResult:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this RoleResult.
+        r"""Sets the updated_time of this RoleResult.
 
         权限更新时间。
 
@@ -379,7 +379,7 @@ class RoleResult:
 
     @property
     def created_time(self):
-        """Gets the created_time of this RoleResult.
+        r"""Gets the created_time of this RoleResult.
 
         权限创建时间。
 
@@ -390,7 +390,7 @@ class RoleResult:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this RoleResult.
+        r"""Sets the created_time of this RoleResult.
 
         权限创建时间。
 

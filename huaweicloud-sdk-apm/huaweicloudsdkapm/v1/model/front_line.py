@@ -35,7 +35,7 @@ class FrontLine:
     }
 
     def __init__(self, point_list=None, title=None, unit=None, precision=None, data_type=None, visible=None):
-        """FrontLine
+        r"""FrontLine
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FrontLine:
 
     @property
     def point_list(self):
-        """Gets the point_list of this FrontLine.
+        r"""Gets the point_list of this FrontLine.
 
         数据点集合。
 
@@ -89,7 +89,7 @@ class FrontLine:
 
     @point_list.setter
     def point_list(self, point_list):
-        """Sets the point_list of this FrontLine.
+        r"""Sets the point_list of this FrontLine.
 
         数据点集合。
 
@@ -100,7 +100,7 @@ class FrontLine:
 
     @property
     def title(self):
-        """Gets the title of this FrontLine.
+        r"""Gets the title of this FrontLine.
 
         标题。
 
@@ -111,7 +111,7 @@ class FrontLine:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this FrontLine.
+        r"""Sets the title of this FrontLine.
 
         标题。
 
@@ -122,7 +122,7 @@ class FrontLine:
 
     @property
     def unit(self):
-        """Gets the unit of this FrontLine.
+        r"""Gets the unit of this FrontLine.
 
         单位。
 
@@ -133,7 +133,7 @@ class FrontLine:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this FrontLine.
+        r"""Sets the unit of this FrontLine.
 
         单位。
 
@@ -144,7 +144,7 @@ class FrontLine:
 
     @property
     def precision(self):
-        """Gets the precision of this FrontLine.
+        r"""Gets the precision of this FrontLine.
 
         百分比。
 
@@ -155,7 +155,7 @@ class FrontLine:
 
     @precision.setter
     def precision(self, precision):
-        """Sets the precision of this FrontLine.
+        r"""Sets the precision of this FrontLine.
 
         百分比。
 
@@ -166,7 +166,7 @@ class FrontLine:
 
     @property
     def data_type(self):
-        """Gets the data_type of this FrontLine.
+        r"""Gets the data_type of this FrontLine.
 
         日期类型。
 
@@ -177,7 +177,7 @@ class FrontLine:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this FrontLine.
+        r"""Sets the data_type of this FrontLine.
 
         日期类型。
 
@@ -188,7 +188,7 @@ class FrontLine:
 
     @property
     def visible(self):
-        """Gets the visible of this FrontLine.
+        r"""Gets the visible of this FrontLine.
 
         是否可见。
 
@@ -199,7 +199,7 @@ class FrontLine:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this FrontLine.
+        r"""Sets the visible of this FrontLine.
 
         是否可见。
 

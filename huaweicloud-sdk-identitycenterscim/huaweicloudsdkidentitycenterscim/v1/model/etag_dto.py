@@ -25,7 +25,7 @@ class EtagDto:
     }
 
     def __init__(self, supported=None):
-        """EtagDto
+        r"""EtagDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EtagDto:
 
     @property
     def supported(self):
-        """Gets the supported of this EtagDto.
+        r"""Gets the supported of this EtagDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -54,7 +54,7 @@ class EtagDto:
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this EtagDto.
+        r"""Sets the supported of this EtagDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 

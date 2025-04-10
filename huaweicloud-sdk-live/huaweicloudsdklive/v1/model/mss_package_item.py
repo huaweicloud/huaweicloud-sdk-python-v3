@@ -39,7 +39,7 @@ class MssPackageItem:
     }
 
     def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ext_args=None, delay_segment=None, request_args=None):
-        """MssPackageItem
+        r"""MssPackageItem
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class MssPackageItem:
 
     @property
     def url(self):
-        """Gets the url of this MssPackageItem.
+        r"""Gets the url of this MssPackageItem.
 
         客户自定义的拉流地址，包括方法、域名、路径
 
@@ -101,7 +101,7 @@ class MssPackageItem:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this MssPackageItem.
+        r"""Sets the url of this MssPackageItem.
 
         客户自定义的拉流地址，包括方法、域名、路径
 
@@ -112,7 +112,7 @@ class MssPackageItem:
 
     @property
     def stream_selection(self):
-        """Gets the stream_selection of this MssPackageItem.
+        r"""Gets the stream_selection of this MssPackageItem.
 
         从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
 
@@ -123,7 +123,7 @@ class MssPackageItem:
 
     @stream_selection.setter
     def stream_selection(self, stream_selection):
-        """Sets the stream_selection of this MssPackageItem.
+        r"""Sets the stream_selection of this MssPackageItem.
 
         从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
 
@@ -134,7 +134,7 @@ class MssPackageItem:
 
     @property
     def segment_duration_seconds(self):
-        """Gets the segment_duration_seconds of this MssPackageItem.
+        r"""Gets the segment_duration_seconds of this MssPackageItem.
 
         频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
@@ -145,7 +145,7 @@ class MssPackageItem:
 
     @segment_duration_seconds.setter
     def segment_duration_seconds(self, segment_duration_seconds):
-        """Sets the segment_duration_seconds of this MssPackageItem.
+        r"""Sets the segment_duration_seconds of this MssPackageItem.
 
         频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
@@ -156,7 +156,7 @@ class MssPackageItem:
 
     @property
     def playlist_window_seconds(self):
-        """Gets the playlist_window_seconds of this MssPackageItem.
+        r"""Gets the playlist_window_seconds of this MssPackageItem.
 
         频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
 
@@ -167,7 +167,7 @@ class MssPackageItem:
 
     @playlist_window_seconds.setter
     def playlist_window_seconds(self, playlist_window_seconds):
-        """Sets the playlist_window_seconds of this MssPackageItem.
+        r"""Sets the playlist_window_seconds of this MssPackageItem.
 
         频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
 
@@ -178,7 +178,7 @@ class MssPackageItem:
 
     @property
     def encryption(self):
-        """Gets the encryption of this MssPackageItem.
+        r"""Gets the encryption of this MssPackageItem.
 
         :return: The encryption of this MssPackageItem.
         :rtype: :class:`huaweicloudsdklive.v1.Encryption`
@@ -187,7 +187,7 @@ class MssPackageItem:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this MssPackageItem.
+        r"""Sets the encryption of this MssPackageItem.
 
         :param encryption: The encryption of this MssPackageItem.
         :type encryption: :class:`huaweicloudsdklive.v1.Encryption`
@@ -196,7 +196,7 @@ class MssPackageItem:
 
     @property
     def ext_args(self):
-        """Gets the ext_args of this MssPackageItem.
+        r"""Gets the ext_args of this MssPackageItem.
 
         其他额外参数
 
@@ -207,7 +207,7 @@ class MssPackageItem:
 
     @ext_args.setter
     def ext_args(self, ext_args):
-        """Sets the ext_args of this MssPackageItem.
+        r"""Sets the ext_args of this MssPackageItem.
 
         其他额外参数
 
@@ -218,7 +218,7 @@ class MssPackageItem:
 
     @property
     def delay_segment(self):
-        """Gets the delay_segment of this MssPackageItem.
+        r"""Gets the delay_segment of this MssPackageItem.
 
         延播时长，单位秒
 
@@ -229,7 +229,7 @@ class MssPackageItem:
 
     @delay_segment.setter
     def delay_segment(self, delay_segment):
-        """Sets the delay_segment of this MssPackageItem.
+        r"""Sets the delay_segment of this MssPackageItem.
 
         延播时长，单位秒
 
@@ -240,7 +240,7 @@ class MssPackageItem:
 
     @property
     def request_args(self):
-        """Gets the request_args of this MssPackageItem.
+        r"""Gets the request_args of this MssPackageItem.
 
         :return: The request_args of this MssPackageItem.
         :rtype: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
@@ -249,7 +249,7 @@ class MssPackageItem:
 
     @request_args.setter
     def request_args(self, request_args):
-        """Sets the request_args of this MssPackageItem.
+        r"""Sets the request_args of this MssPackageItem.
 
         :param request_args: The request_args of this MssPackageItem.
         :type request_args: :class:`huaweicloudsdklive.v1.PackageRequestArgs`

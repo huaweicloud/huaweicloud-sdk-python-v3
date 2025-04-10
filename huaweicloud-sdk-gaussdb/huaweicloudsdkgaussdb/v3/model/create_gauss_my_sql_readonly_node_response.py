@@ -32,7 +32,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, node_names=None, job_id=None, order_id=None):
-        """CreateGaussMySqlReadonlyNodeResponse
+        r"""CreateGaussMySqlReadonlyNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Gets the instance_id of this CreateGaussMySqlReadonlyNodeResponse.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Sets the instance_id of this CreateGaussMySqlReadonlyNodeResponse.
 
         实例ID。
 
@@ -87,7 +87,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @property
     def node_names(self):
-        """Gets the node_names of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Gets the node_names of this CreateGaussMySqlReadonlyNodeResponse.
 
         节点名称列表。
 
@@ -98,7 +98,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @node_names.setter
     def node_names(self, node_names):
-        """Sets the node_names of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Sets the node_names of this CreateGaussMySqlReadonlyNodeResponse.
 
         节点名称列表。
 
@@ -109,7 +109,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Gets the job_id of this CreateGaussMySqlReadonlyNodeResponse.
 
         创建只读节点的任务ID。  仅创建按需只读节点时会返回该参数。
 
@@ -120,7 +120,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Sets the job_id of this CreateGaussMySqlReadonlyNodeResponse.
 
         创建只读节点的任务ID。  仅创建按需只读节点时会返回该参数。
 
@@ -131,7 +131,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Gets the order_id of this CreateGaussMySqlReadonlyNodeResponse.
 
         订单号，创建包年包月只读节点时返回该参数。
 
@@ -142,7 +142,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateGaussMySqlReadonlyNodeResponse.
+        r"""Sets the order_id of this CreateGaussMySqlReadonlyNodeResponse.
 
         订单号，创建包年包月只读节点时返回该参数。
 

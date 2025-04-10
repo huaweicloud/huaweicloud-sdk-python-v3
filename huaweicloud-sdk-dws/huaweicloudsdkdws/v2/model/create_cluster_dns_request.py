@@ -27,7 +27,7 @@ class CreateClusterDnsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateClusterDnsRequest
+        r"""CreateClusterDnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusterDnsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterDnsRequest.
+        r"""Gets the cluster_id of this CreateClusterDnsRequest.
 
         集群的ID
 
@@ -60,7 +60,7 @@ class CreateClusterDnsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterDnsRequest.
+        r"""Sets the cluster_id of this CreateClusterDnsRequest.
 
         集群的ID
 
@@ -71,7 +71,7 @@ class CreateClusterDnsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClusterDnsRequest.
+        r"""Gets the body of this CreateClusterDnsRequest.
 
         :return: The body of this CreateClusterDnsRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterDns`
@@ -80,7 +80,7 @@ class CreateClusterDnsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClusterDnsRequest.
+        r"""Sets the body of this CreateClusterDnsRequest.
 
         :param body: The body of this CreateClusterDnsRequest.
         :type body: :class:`huaweicloudsdkdws.v2.CreateClusterDns`

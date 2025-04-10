@@ -27,7 +27,7 @@ class TimeFloatValueData:
     }
 
     def __init__(self, time=None, value=None):
-        """TimeFloatValueData
+        r"""TimeFloatValueData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TimeFloatValueData:
 
     @property
     def time(self):
-        """Gets the time of this TimeFloatValueData.
+        r"""Gets the time of this TimeFloatValueData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DDThh:mm:ssZ
 
@@ -61,7 +61,7 @@ class TimeFloatValueData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TimeFloatValueData.
+        r"""Sets the time of this TimeFloatValueData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DDThh:mm:ssZ
 
@@ -72,7 +72,7 @@ class TimeFloatValueData:
 
     @property
     def value(self):
-        """Gets the value of this TimeFloatValueData.
+        r"""Gets the value of this TimeFloatValueData.
 
         当前时间返回参数取值
 
@@ -83,7 +83,7 @@ class TimeFloatValueData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TimeFloatValueData.
+        r"""Sets the value of this TimeFloatValueData.
 
         当前时间返回参数取值
 

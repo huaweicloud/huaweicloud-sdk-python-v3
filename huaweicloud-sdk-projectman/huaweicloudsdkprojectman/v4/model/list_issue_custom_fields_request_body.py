@@ -29,7 +29,7 @@ class ListIssueCustomFieldsRequestBody:
     }
 
     def __init__(self, custom_fields=None, names=None, included_not_in_use=None):
-        """ListIssueCustomFieldsRequestBody
+        r"""ListIssueCustomFieldsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListIssueCustomFieldsRequestBody:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this ListIssueCustomFieldsRequestBody.
+        r"""Gets the custom_fields of this ListIssueCustomFieldsRequestBody.
 
         自定义字段
 
@@ -68,7 +68,7 @@ class ListIssueCustomFieldsRequestBody:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this ListIssueCustomFieldsRequestBody.
+        r"""Sets the custom_fields of this ListIssueCustomFieldsRequestBody.
 
         自定义字段
 
@@ -79,7 +79,7 @@ class ListIssueCustomFieldsRequestBody:
 
     @property
     def names(self):
-        """Gets the names of this ListIssueCustomFieldsRequestBody.
+        r"""Gets the names of this ListIssueCustomFieldsRequestBody.
 
         自定义字段页面显示的含义
 
@@ -90,7 +90,7 @@ class ListIssueCustomFieldsRequestBody:
 
     @names.setter
     def names(self, names):
-        """Sets the names of this ListIssueCustomFieldsRequestBody.
+        r"""Sets the names of this ListIssueCustomFieldsRequestBody.
 
         自定义字段页面显示的含义
 
@@ -101,7 +101,7 @@ class ListIssueCustomFieldsRequestBody:
 
     @property
     def included_not_in_use(self):
-        """Gets the included_not_in_use of this ListIssueCustomFieldsRequestBody.
+        r"""Gets the included_not_in_use of this ListIssueCustomFieldsRequestBody.
 
         查询结果是否包括未使用的自定义字段，默认仅查询使用中的自定义字段，设为true时查询项目中所有自定义字段
 
@@ -112,7 +112,7 @@ class ListIssueCustomFieldsRequestBody:
 
     @included_not_in_use.setter
     def included_not_in_use(self, included_not_in_use):
-        """Sets the included_not_in_use of this ListIssueCustomFieldsRequestBody.
+        r"""Sets the included_not_in_use of this ListIssueCustomFieldsRequestBody.
 
         查询结果是否包括未使用的自定义字段，默认仅查询使用中的自定义字段，设为true时查询项目中所有自定义字段
 

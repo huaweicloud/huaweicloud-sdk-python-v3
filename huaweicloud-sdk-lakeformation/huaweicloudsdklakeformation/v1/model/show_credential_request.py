@@ -27,7 +27,7 @@ class ShowCredentialRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ShowCredentialRequest
+        r"""ShowCredentialRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCredentialRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowCredentialRequest.
+        r"""Gets the instance_id of this ShowCredentialRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -60,7 +60,7 @@ class ShowCredentialRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowCredentialRequest.
+        r"""Sets the instance_id of this ShowCredentialRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -71,7 +71,7 @@ class ShowCredentialRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowCredentialRequest.
+        r"""Gets the body of this ShowCredentialRequest.
 
         :return: The body of this ShowCredentialRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.IdentityInput`
@@ -80,7 +80,7 @@ class ShowCredentialRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowCredentialRequest.
+        r"""Sets the body of this ShowCredentialRequest.
 
         :param body: The body of this ShowCredentialRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.IdentityInput`

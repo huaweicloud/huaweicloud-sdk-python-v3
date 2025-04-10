@@ -28,7 +28,7 @@ class ListScheduleJobsResponse(SdkResponse):
     }
 
     def __init__(self, schedules=None, total_count=None):
-        """ListScheduleJobsResponse
+        r"""ListScheduleJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScheduleJobsResponse(SdkResponse):
 
     @property
     def schedules(self):
-        """Gets the schedules of this ListScheduleJobsResponse.
+        r"""Gets the schedules of this ListScheduleJobsResponse.
 
         任务详情
 
@@ -62,7 +62,7 @@ class ListScheduleJobsResponse(SdkResponse):
 
     @schedules.setter
     def schedules(self, schedules):
-        """Sets the schedules of this ListScheduleJobsResponse.
+        r"""Sets the schedules of this ListScheduleJobsResponse.
 
         任务详情
 
@@ -73,7 +73,7 @@ class ListScheduleJobsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListScheduleJobsResponse.
+        r"""Gets the total_count of this ListScheduleJobsResponse.
 
         记录总数。
 
@@ -84,7 +84,7 @@ class ListScheduleJobsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListScheduleJobsResponse.
+        r"""Sets the total_count of this ListScheduleJobsResponse.
 
         记录总数。
 

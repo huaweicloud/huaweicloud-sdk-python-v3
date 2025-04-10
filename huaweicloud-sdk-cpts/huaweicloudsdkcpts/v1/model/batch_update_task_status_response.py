@@ -32,7 +32,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """BatchUpdateTaskStatusResponse
+        r"""BatchUpdateTaskStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this BatchUpdateTaskStatusResponse.
+        r"""Gets the code of this BatchUpdateTaskStatusResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BatchUpdateTaskStatusResponse.
+        r"""Sets the code of this BatchUpdateTaskStatusResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this BatchUpdateTaskStatusResponse.
+        r"""Gets the message of this BatchUpdateTaskStatusResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this BatchUpdateTaskStatusResponse.
+        r"""Sets the message of this BatchUpdateTaskStatusResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this BatchUpdateTaskStatusResponse.
+        r"""Gets the extend of this BatchUpdateTaskStatusResponse.
 
         扩展字段
 
@@ -120,7 +120,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this BatchUpdateTaskStatusResponse.
+        r"""Sets the extend of this BatchUpdateTaskStatusResponse.
 
         扩展字段
 
@@ -131,7 +131,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchUpdateTaskStatusResponse.
+        r"""Gets the result of this BatchUpdateTaskStatusResponse.
 
         批量启停任务响应结果
 
@@ -142,7 +142,7 @@ class BatchUpdateTaskStatusResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchUpdateTaskStatusResponse.
+        r"""Sets the result of this BatchUpdateTaskStatusResponse.
 
         批量启停任务响应结果
 

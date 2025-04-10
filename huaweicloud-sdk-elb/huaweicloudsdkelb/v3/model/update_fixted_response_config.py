@@ -35,7 +35,7 @@ class UpdateFixtedResponseConfig:
     }
 
     def __init__(self, status_code=None, content_type=None, message_body=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None):
-        """UpdateFixtedResponseConfig
+        r"""UpdateFixtedResponseConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateFixtedResponseConfig:
 
     @property
     def status_code(self):
-        """Gets the status_code of this UpdateFixtedResponseConfig.
+        r"""Gets the status_code of this UpdateFixtedResponseConfig.
 
         参数解释：返回码。  取值范围：200-299，400-499，500-599。
 
@@ -89,7 +89,7 @@ class UpdateFixtedResponseConfig:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this UpdateFixtedResponseConfig.
+        r"""Sets the status_code of this UpdateFixtedResponseConfig.
 
         参数解释：返回码。  取值范围：200-299，400-499，500-599。
 
@@ -100,7 +100,7 @@ class UpdateFixtedResponseConfig:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateFixtedResponseConfig.
+        r"""Gets the content_type of this UpdateFixtedResponseConfig.
 
         参数解释：返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json application/json
 
@@ -111,7 +111,7 @@ class UpdateFixtedResponseConfig:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateFixtedResponseConfig.
+        r"""Sets the content_type of this UpdateFixtedResponseConfig.
 
         参数解释：返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json application/json
 
@@ -122,7 +122,7 @@ class UpdateFixtedResponseConfig:
 
     @property
     def message_body(self):
-        """Gets the message_body of this UpdateFixtedResponseConfig.
+        r"""Gets the message_body of this UpdateFixtedResponseConfig.
 
         参数解释：返回消息内容。
 
@@ -133,7 +133,7 @@ class UpdateFixtedResponseConfig:
 
     @message_body.setter
     def message_body(self, message_body):
-        """Sets the message_body of this UpdateFixtedResponseConfig.
+        r"""Sets the message_body of this UpdateFixtedResponseConfig.
 
         参数解释：返回消息内容。
 
@@ -144,7 +144,7 @@ class UpdateFixtedResponseConfig:
 
     @property
     def insert_headers_config(self):
-        """Gets the insert_headers_config of this UpdateFixtedResponseConfig.
+        r"""Gets the insert_headers_config of this UpdateFixtedResponseConfig.
 
         :return: The insert_headers_config of this UpdateFixtedResponseConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
@@ -153,7 +153,7 @@ class UpdateFixtedResponseConfig:
 
     @insert_headers_config.setter
     def insert_headers_config(self, insert_headers_config):
-        """Sets the insert_headers_config of this UpdateFixtedResponseConfig.
+        r"""Sets the insert_headers_config of this UpdateFixtedResponseConfig.
 
         :param insert_headers_config: The insert_headers_config of this UpdateFixtedResponseConfig.
         :type insert_headers_config: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
@@ -162,7 +162,7 @@ class UpdateFixtedResponseConfig:
 
     @property
     def remove_headers_config(self):
-        """Gets the remove_headers_config of this UpdateFixtedResponseConfig.
+        r"""Gets the remove_headers_config of this UpdateFixtedResponseConfig.
 
         :return: The remove_headers_config of this UpdateFixtedResponseConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
@@ -171,7 +171,7 @@ class UpdateFixtedResponseConfig:
 
     @remove_headers_config.setter
     def remove_headers_config(self, remove_headers_config):
-        """Sets the remove_headers_config of this UpdateFixtedResponseConfig.
+        r"""Sets the remove_headers_config of this UpdateFixtedResponseConfig.
 
         :param remove_headers_config: The remove_headers_config of this UpdateFixtedResponseConfig.
         :type remove_headers_config: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
@@ -180,7 +180,7 @@ class UpdateFixtedResponseConfig:
 
     @property
     def traffic_limit_config(self):
-        """Gets the traffic_limit_config of this UpdateFixtedResponseConfig.
+        r"""Gets the traffic_limit_config of this UpdateFixtedResponseConfig.
 
         :return: The traffic_limit_config of this UpdateFixtedResponseConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`
@@ -189,7 +189,7 @@ class UpdateFixtedResponseConfig:
 
     @traffic_limit_config.setter
     def traffic_limit_config(self, traffic_limit_config):
-        """Sets the traffic_limit_config of this UpdateFixtedResponseConfig.
+        r"""Sets the traffic_limit_config of this UpdateFixtedResponseConfig.
 
         :param traffic_limit_config: The traffic_limit_config of this UpdateFixtedResponseConfig.
         :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`

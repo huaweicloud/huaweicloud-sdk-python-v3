@@ -59,7 +59,7 @@ class StandElementFieldVO:
     }
 
     def __init__(self, fd_name=None, fd_name_en=None, description=None, description_en=None, label=None, disabled=None, id=None, actived=None, required=None, searchable=None, optional_values=None, field_type=None, displayed_name=None, displayed_name_en=None, create_time=None, update_time=None, create_by=None, update_by=None):
-        """StandElementFieldVO
+        r"""StandElementFieldVO
 
         The model defined in huaweicloud sdk
 
@@ -160,7 +160,7 @@ class StandElementFieldVO:
 
     @property
     def fd_name(self):
-        """Gets the fd_name of this StandElementFieldVO.
+        r"""Gets the fd_name of this StandElementFieldVO.
 
         属性名称。
 
@@ -171,7 +171,7 @@ class StandElementFieldVO:
 
     @fd_name.setter
     def fd_name(self, fd_name):
-        """Sets the fd_name of this StandElementFieldVO.
+        r"""Sets the fd_name of this StandElementFieldVO.
 
         属性名称。
 
@@ -182,7 +182,7 @@ class StandElementFieldVO:
 
     @property
     def fd_name_en(self):
-        """Gets the fd_name_en of this StandElementFieldVO.
+        r"""Gets the fd_name_en of this StandElementFieldVO.
 
         属性英文名称。
 
@@ -193,7 +193,7 @@ class StandElementFieldVO:
 
     @fd_name_en.setter
     def fd_name_en(self, fd_name_en):
-        """Sets the fd_name_en of this StandElementFieldVO.
+        r"""Sets the fd_name_en of this StandElementFieldVO.
 
         属性英文名称。
 
@@ -204,7 +204,7 @@ class StandElementFieldVO:
 
     @property
     def description(self):
-        """Gets the description of this StandElementFieldVO.
+        r"""Gets the description of this StandElementFieldVO.
 
         属性描述。
 
@@ -215,7 +215,7 @@ class StandElementFieldVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StandElementFieldVO.
+        r"""Sets the description of this StandElementFieldVO.
 
         属性描述。
 
@@ -226,7 +226,7 @@ class StandElementFieldVO:
 
     @property
     def description_en(self):
-        """Gets the description_en of this StandElementFieldVO.
+        r"""Gets the description_en of this StandElementFieldVO.
 
         属性英文描述。
 
@@ -237,7 +237,7 @@ class StandElementFieldVO:
 
     @description_en.setter
     def description_en(self, description_en):
-        """Sets the description_en of this StandElementFieldVO.
+        r"""Sets the description_en of this StandElementFieldVO.
 
         属性英文描述。
 
@@ -248,7 +248,7 @@ class StandElementFieldVO:
 
     @property
     def label(self):
-        """Gets the label of this StandElementFieldVO.
+        r"""Gets the label of this StandElementFieldVO.
 
         属性标签。
 
@@ -259,7 +259,7 @@ class StandElementFieldVO:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this StandElementFieldVO.
+        r"""Sets the label of this StandElementFieldVO.
 
         属性标签。
 
@@ -270,7 +270,7 @@ class StandElementFieldVO:
 
     @property
     def disabled(self):
-        """Gets the disabled of this StandElementFieldVO.
+        r"""Gets the disabled of this StandElementFieldVO.
 
         是否禁用。
 
@@ -281,7 +281,7 @@ class StandElementFieldVO:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this StandElementFieldVO.
+        r"""Sets the disabled of this StandElementFieldVO.
 
         是否禁用。
 
@@ -292,7 +292,7 @@ class StandElementFieldVO:
 
     @property
     def id(self):
-        """Gets the id of this StandElementFieldVO.
+        r"""Gets the id of this StandElementFieldVO.
 
         数据标准ID，ID字符串。
 
@@ -303,7 +303,7 @@ class StandElementFieldVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StandElementFieldVO.
+        r"""Sets the id of this StandElementFieldVO.
 
         数据标准ID，ID字符串。
 
@@ -314,7 +314,7 @@ class StandElementFieldVO:
 
     @property
     def actived(self):
-        """Gets the actived of this StandElementFieldVO.
+        r"""Gets the actived of this StandElementFieldVO.
 
         是否显示，系统默认项必然显示不允许修改。true表示使用数据标准时体现（增改查的时候可以操作该属性），false表示使用数据标准时不体现。
 
@@ -325,7 +325,7 @@ class StandElementFieldVO:
 
     @actived.setter
     def actived(self, actived):
-        """Sets the actived of this StandElementFieldVO.
+        r"""Sets the actived of this StandElementFieldVO.
 
         是否显示，系统默认项必然显示不允许修改。true表示使用数据标准时体现（增改查的时候可以操作该属性），false表示使用数据标准时不体现。
 
@@ -336,7 +336,7 @@ class StandElementFieldVO:
 
     @property
     def required(self):
-        """Gets the required of this StandElementFieldVO.
+        r"""Gets the required of this StandElementFieldVO.
 
         是否必填。true：必填，false：非必填。
 
@@ -347,7 +347,7 @@ class StandElementFieldVO:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this StandElementFieldVO.
+        r"""Sets the required of this StandElementFieldVO.
 
         是否必填。true：必填，false：非必填。
 
@@ -358,7 +358,7 @@ class StandElementFieldVO:
 
     @property
     def searchable(self):
-        """Gets the searchable of this StandElementFieldVO.
+        r"""Gets the searchable of this StandElementFieldVO.
 
         是否可搜索。true表示在数据标准列表页面可搜索，false表示在数据标准列表页面不可搜索。
 
@@ -369,7 +369,7 @@ class StandElementFieldVO:
 
     @searchable.setter
     def searchable(self, searchable):
-        """Sets the searchable of this StandElementFieldVO.
+        r"""Sets the searchable of this StandElementFieldVO.
 
         是否可搜索。true表示在数据标准列表页面可搜索，false表示在数据标准列表页面不可搜索。
 
@@ -380,7 +380,7 @@ class StandElementFieldVO:
 
     @property
     def optional_values(self):
-        """Gets the optional_values of this StandElementFieldVO.
+        r"""Gets the optional_values of this StandElementFieldVO.
 
         允许值。
 
@@ -391,7 +391,7 @@ class StandElementFieldVO:
 
     @optional_values.setter
     def optional_values(self, optional_values):
-        """Sets the optional_values of this StandElementFieldVO.
+        r"""Sets the optional_values of this StandElementFieldVO.
 
         允许值。
 
@@ -402,7 +402,7 @@ class StandElementFieldVO:
 
     @property
     def field_type(self):
-        """Gets the field_type of this StandElementFieldVO.
+        r"""Gets the field_type of this StandElementFieldVO.
 
         字段类型，0表示系统字段， 1表示自定义字段。
 
@@ -413,7 +413,7 @@ class StandElementFieldVO:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this StandElementFieldVO.
+        r"""Sets the field_type of this StandElementFieldVO.
 
         字段类型，0表示系统字段， 1表示自定义字段。
 
@@ -424,7 +424,7 @@ class StandElementFieldVO:
 
     @property
     def displayed_name(self):
-        """Gets the displayed_name of this StandElementFieldVO.
+        r"""Gets the displayed_name of this StandElementFieldVO.
 
         前端展示名。
 
@@ -435,7 +435,7 @@ class StandElementFieldVO:
 
     @displayed_name.setter
     def displayed_name(self, displayed_name):
-        """Sets the displayed_name of this StandElementFieldVO.
+        r"""Sets the displayed_name of this StandElementFieldVO.
 
         前端展示名。
 
@@ -446,7 +446,7 @@ class StandElementFieldVO:
 
     @property
     def displayed_name_en(self):
-        """Gets the displayed_name_en of this StandElementFieldVO.
+        r"""Gets the displayed_name_en of this StandElementFieldVO.
 
         前端展示名英文。
 
@@ -457,7 +457,7 @@ class StandElementFieldVO:
 
     @displayed_name_en.setter
     def displayed_name_en(self, displayed_name_en):
-        """Sets the displayed_name_en of this StandElementFieldVO.
+        r"""Sets the displayed_name_en of this StandElementFieldVO.
 
         前端展示名英文。
 
@@ -468,7 +468,7 @@ class StandElementFieldVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StandElementFieldVO.
+        r"""Gets the create_time of this StandElementFieldVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -479,7 +479,7 @@ class StandElementFieldVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StandElementFieldVO.
+        r"""Sets the create_time of this StandElementFieldVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -490,7 +490,7 @@ class StandElementFieldVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StandElementFieldVO.
+        r"""Gets the update_time of this StandElementFieldVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -501,7 +501,7 @@ class StandElementFieldVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StandElementFieldVO.
+        r"""Sets the update_time of this StandElementFieldVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -512,7 +512,7 @@ class StandElementFieldVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this StandElementFieldVO.
+        r"""Gets the create_by of this StandElementFieldVO.
 
         创建人。
 
@@ -523,7 +523,7 @@ class StandElementFieldVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this StandElementFieldVO.
+        r"""Sets the create_by of this StandElementFieldVO.
 
         创建人。
 
@@ -534,7 +534,7 @@ class StandElementFieldVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this StandElementFieldVO.
+        r"""Gets the update_by of this StandElementFieldVO.
 
         更新人。
 
@@ -545,7 +545,7 @@ class StandElementFieldVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this StandElementFieldVO.
+        r"""Sets the update_by of this StandElementFieldVO.
 
         更新人。
 

@@ -31,7 +31,7 @@ class CreateEvaluationProjectReq:
     }
 
     def __init__(self, evaluation_project_name=None, source_db_info=None, schemas_info=None, objects_type_info=None):
-        """CreateEvaluationProjectReq
+        r"""CreateEvaluationProjectReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateEvaluationProjectReq:
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this CreateEvaluationProjectReq.
+        r"""Gets the evaluation_project_name of this CreateEvaluationProjectReq.
 
         评估项目名称。长度为5-50个字符，以英文字母开头，英文字母或数字结束，允许包含下划线和中划线。不允许重复。
 
@@ -71,7 +71,7 @@ class CreateEvaluationProjectReq:
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this CreateEvaluationProjectReq.
+        r"""Sets the evaluation_project_name of this CreateEvaluationProjectReq.
 
         评估项目名称。长度为5-50个字符，以英文字母开头，英文字母或数字结束，允许包含下划线和中划线。不允许重复。
 
@@ -82,7 +82,7 @@ class CreateEvaluationProjectReq:
 
     @property
     def source_db_info(self):
-        """Gets the source_db_info of this CreateEvaluationProjectReq.
+        r"""Gets the source_db_info of this CreateEvaluationProjectReq.
 
         :return: The source_db_info of this CreateEvaluationProjectReq.
         :rtype: :class:`huaweicloudsdkugo.v1.SourceDBInfo`
@@ -91,7 +91,7 @@ class CreateEvaluationProjectReq:
 
     @source_db_info.setter
     def source_db_info(self, source_db_info):
-        """Sets the source_db_info of this CreateEvaluationProjectReq.
+        r"""Sets the source_db_info of this CreateEvaluationProjectReq.
 
         :param source_db_info: The source_db_info of this CreateEvaluationProjectReq.
         :type source_db_info: :class:`huaweicloudsdkugo.v1.SourceDBInfo`
@@ -100,7 +100,7 @@ class CreateEvaluationProjectReq:
 
     @property
     def schemas_info(self):
-        """Gets the schemas_info of this CreateEvaluationProjectReq.
+        r"""Gets the schemas_info of this CreateEvaluationProjectReq.
 
         :return: The schemas_info of this CreateEvaluationProjectReq.
         :rtype: :class:`huaweicloudsdkugo.v1.SchemaInfo`
@@ -109,7 +109,7 @@ class CreateEvaluationProjectReq:
 
     @schemas_info.setter
     def schemas_info(self, schemas_info):
-        """Sets the schemas_info of this CreateEvaluationProjectReq.
+        r"""Sets the schemas_info of this CreateEvaluationProjectReq.
 
         :param schemas_info: The schemas_info of this CreateEvaluationProjectReq.
         :type schemas_info: :class:`huaweicloudsdkugo.v1.SchemaInfo`
@@ -118,7 +118,7 @@ class CreateEvaluationProjectReq:
 
     @property
     def objects_type_info(self):
-        """Gets the objects_type_info of this CreateEvaluationProjectReq.
+        r"""Gets the objects_type_info of this CreateEvaluationProjectReq.
 
         :return: The objects_type_info of this CreateEvaluationProjectReq.
         :rtype: :class:`huaweicloudsdkugo.v1.ObjectTypeInfo`
@@ -127,7 +127,7 @@ class CreateEvaluationProjectReq:
 
     @objects_type_info.setter
     def objects_type_info(self, objects_type_info):
-        """Sets the objects_type_info of this CreateEvaluationProjectReq.
+        r"""Sets the objects_type_info of this CreateEvaluationProjectReq.
 
         :param objects_type_info: The objects_type_info of this CreateEvaluationProjectReq.
         :type objects_type_info: :class:`huaweicloudsdkugo.v1.ObjectTypeInfo`

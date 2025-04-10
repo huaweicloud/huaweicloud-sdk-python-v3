@@ -27,7 +27,7 @@ class DimensionSeries:
     }
 
     def __init__(self, name=None, value=None):
-        """DimensionSeries
+        r"""DimensionSeries
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DimensionSeries:
 
     @property
     def name(self):
-        """Gets the name of this DimensionSeries.
+        r"""Gets the name of this DimensionSeries.
 
         维度名称。
 
@@ -61,7 +61,7 @@ class DimensionSeries:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DimensionSeries.
+        r"""Sets the name of this DimensionSeries.
 
         维度名称。
 
@@ -72,7 +72,7 @@ class DimensionSeries:
 
     @property
     def value(self):
-        """Gets the value of this DimensionSeries.
+        r"""Gets the value of this DimensionSeries.
 
         维度取值。
 
@@ -83,7 +83,7 @@ class DimensionSeries:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DimensionSeries.
+        r"""Sets the value of this DimensionSeries.
 
         维度取值。
 

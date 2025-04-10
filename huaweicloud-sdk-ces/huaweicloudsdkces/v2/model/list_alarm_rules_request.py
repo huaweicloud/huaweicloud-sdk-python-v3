@@ -37,7 +37,7 @@ class ListAlarmRulesRequest:
     }
 
     def __init__(self, alarm_id=None, name=None, namespace=None, resource_id=None, enterprise_project_id=None, offset=None, limit=None):
-        """ListAlarmRulesRequest
+        r"""ListAlarmRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListAlarmRulesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmRulesRequest.
+        r"""Gets the alarm_id of this ListAlarmRulesRequest.
 
         告警规则ID
 
@@ -96,7 +96,7 @@ class ListAlarmRulesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmRulesRequest.
+        r"""Sets the alarm_id of this ListAlarmRulesRequest.
 
         告警规则ID
 
@@ -107,7 +107,7 @@ class ListAlarmRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAlarmRulesRequest.
+        r"""Gets the name of this ListAlarmRulesRequest.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -118,7 +118,7 @@ class ListAlarmRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAlarmRulesRequest.
+        r"""Sets the name of this ListAlarmRulesRequest.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -129,7 +129,7 @@ class ListAlarmRulesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmRulesRequest.
+        r"""Gets the namespace of this ListAlarmRulesRequest.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -140,7 +140,7 @@ class ListAlarmRulesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmRulesRequest.
+        r"""Sets the namespace of this ListAlarmRulesRequest.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -151,7 +151,7 @@ class ListAlarmRulesRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListAlarmRulesRequest.
+        r"""Gets the resource_id of this ListAlarmRulesRequest.
 
         告警资源ID，多维度情况按字母升序排列并使用逗号分隔
 
@@ -162,7 +162,7 @@ class ListAlarmRulesRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListAlarmRulesRequest.
+        r"""Sets the resource_id of this ListAlarmRulesRequest.
 
         告警资源ID，多维度情况按字母升序排列并使用逗号分隔
 
@@ -173,7 +173,7 @@ class ListAlarmRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAlarmRulesRequest.
+        r"""Gets the enterprise_project_id of this ListAlarmRulesRequest.
 
         企业项目ID
 
@@ -184,7 +184,7 @@ class ListAlarmRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAlarmRulesRequest.
+        r"""Sets the enterprise_project_id of this ListAlarmRulesRequest.
 
         企业项目ID
 
@@ -195,7 +195,7 @@ class ListAlarmRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmRulesRequest.
+        r"""Gets the offset of this ListAlarmRulesRequest.
 
         分页偏移量
 
@@ -206,7 +206,7 @@ class ListAlarmRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmRulesRequest.
+        r"""Sets the offset of this ListAlarmRulesRequest.
 
         分页偏移量
 
@@ -217,7 +217,7 @@ class ListAlarmRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmRulesRequest.
+        r"""Gets the limit of this ListAlarmRulesRequest.
 
         分页大小
 
@@ -228,7 +228,7 @@ class ListAlarmRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmRulesRequest.
+        r"""Sets the limit of this ListAlarmRulesRequest.
 
         分页大小
 

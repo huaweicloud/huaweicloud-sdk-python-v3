@@ -25,7 +25,7 @@ class RemoveDesignQualityInfosResultData:
     }
 
     def __init__(self, value=None):
-        """RemoveDesignQualityInfosResultData
+        r"""RemoveDesignQualityInfosResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RemoveDesignQualityInfosResultData:
 
     @property
     def value(self):
-        """Gets the value of this RemoveDesignQualityInfosResultData.
+        r"""Gets the value of this RemoveDesignQualityInfosResultData.
 
         是否清除成功。
 
@@ -54,7 +54,7 @@ class RemoveDesignQualityInfosResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RemoveDesignQualityInfosResultData.
+        r"""Sets the value of this RemoveDesignQualityInfosResultData.
 
         是否清除成功。
 

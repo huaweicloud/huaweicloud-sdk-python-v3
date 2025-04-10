@@ -28,7 +28,7 @@ class ListAggregateDiscoveredResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resource_identifiers=None, page_info=None):
-        """ListAggregateDiscoveredResourcesResponse
+        r"""ListAggregateDiscoveredResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAggregateDiscoveredResourcesResponse(SdkResponse):
 
     @property
     def resource_identifiers(self):
-        """Gets the resource_identifiers of this ListAggregateDiscoveredResourcesResponse.
+        r"""Gets the resource_identifiers of this ListAggregateDiscoveredResourcesResponse.
 
         资源信息列表。
 
@@ -62,7 +62,7 @@ class ListAggregateDiscoveredResourcesResponse(SdkResponse):
 
     @resource_identifiers.setter
     def resource_identifiers(self, resource_identifiers):
-        """Sets the resource_identifiers of this ListAggregateDiscoveredResourcesResponse.
+        r"""Sets the resource_identifiers of this ListAggregateDiscoveredResourcesResponse.
 
         资源信息列表。
 
@@ -73,7 +73,7 @@ class ListAggregateDiscoveredResourcesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAggregateDiscoveredResourcesResponse.
+        r"""Gets the page_info of this ListAggregateDiscoveredResourcesResponse.
 
         :return: The page_info of this ListAggregateDiscoveredResourcesResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListAggregateDiscoveredResourcesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAggregateDiscoveredResourcesResponse.
+        r"""Sets the page_info of this ListAggregateDiscoveredResourcesResponse.
 
         :param page_info: The page_info of this ListAggregateDiscoveredResourcesResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

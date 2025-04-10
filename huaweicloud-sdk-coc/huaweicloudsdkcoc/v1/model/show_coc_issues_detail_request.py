@@ -25,7 +25,7 @@ class ShowCocIssuesDetailRequest:
     }
 
     def __init__(self, ticket_id=None):
-        """ShowCocIssuesDetailRequest
+        r"""ShowCocIssuesDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCocIssuesDetailRequest:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this ShowCocIssuesDetailRequest.
+        r"""Gets the ticket_id of this ShowCocIssuesDetailRequest.
 
         问题单号
 
@@ -53,7 +53,7 @@ class ShowCocIssuesDetailRequest:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this ShowCocIssuesDetailRequest.
+        r"""Sets the ticket_id of this ShowCocIssuesDetailRequest.
 
         问题单号
 

@@ -29,7 +29,7 @@ class GenerateMacRequestBody:
     }
 
     def __init__(self, key_id=None, mac_algorithm=None, message=None):
-        """GenerateMacRequestBody
+        r"""GenerateMacRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GenerateMacRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this GenerateMacRequestBody.
+        r"""Gets the key_id of this GenerateMacRequestBody.
 
         密钥ID
 
@@ -65,7 +65,7 @@ class GenerateMacRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this GenerateMacRequestBody.
+        r"""Sets the key_id of this GenerateMacRequestBody.
 
         密钥ID
 
@@ -76,7 +76,7 @@ class GenerateMacRequestBody:
 
     @property
     def mac_algorithm(self):
-        """Gets the mac_algorithm of this GenerateMacRequestBody.
+        r"""Gets the mac_algorithm of this GenerateMacRequestBody.
 
         Mac算法，HMAC_SM3只有中国区支持。枚举如下： - HMAC_SHA_256 - HMAC_SHA_384 - HMAC_SHA_512 - HMAC_SM3
 
@@ -87,7 +87,7 @@ class GenerateMacRequestBody:
 
     @mac_algorithm.setter
     def mac_algorithm(self, mac_algorithm):
-        """Sets the mac_algorithm of this GenerateMacRequestBody.
+        r"""Sets the mac_algorithm of this GenerateMacRequestBody.
 
         Mac算法，HMAC_SM3只有中国区支持。枚举如下： - HMAC_SHA_256 - HMAC_SHA_384 - HMAC_SHA_512 - HMAC_SM3
 
@@ -98,7 +98,7 @@ class GenerateMacRequestBody:
 
     @property
     def message(self):
-        """Gets the message of this GenerateMacRequestBody.
+        r"""Gets the message of this GenerateMacRequestBody.
 
         待处理消息。原消息最小长度1、最大长度4096。请将原消息转为Base64格式后传入
 
@@ -109,7 +109,7 @@ class GenerateMacRequestBody:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this GenerateMacRequestBody.
+        r"""Sets the message of this GenerateMacRequestBody.
 
         待处理消息。原消息最小长度1、最大长度4096。请将原消息转为Base64格式后传入
 

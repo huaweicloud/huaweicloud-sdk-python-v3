@@ -35,7 +35,7 @@ class LoadBalancerStatusPool:
     }
 
     def __init__(self, provisioning_status=None, name=None, healthmonitor=None, members=None, id=None, operating_status=None):
-        """LoadBalancerStatusPool
+        r"""LoadBalancerStatusPool
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LoadBalancerStatusPool:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancerStatusPool.
+        r"""Gets the provisioning_status of this LoadBalancerStatusPool.
 
         后端服务器组的配置状态。  取值： - ACTIVE：使用中。
 
@@ -89,7 +89,7 @@ class LoadBalancerStatusPool:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancerStatusPool.
+        r"""Sets the provisioning_status of this LoadBalancerStatusPool.
 
         后端服务器组的配置状态。  取值： - ACTIVE：使用中。
 
@@ -100,7 +100,7 @@ class LoadBalancerStatusPool:
 
     @property
     def name(self):
-        """Gets the name of this LoadBalancerStatusPool.
+        r"""Gets the name of this LoadBalancerStatusPool.
 
         后端服务器组名。
 
@@ -111,7 +111,7 @@ class LoadBalancerStatusPool:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadBalancerStatusPool.
+        r"""Sets the name of this LoadBalancerStatusPool.
 
         后端服务器组名。
 
@@ -122,7 +122,7 @@ class LoadBalancerStatusPool:
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this LoadBalancerStatusPool.
+        r"""Gets the healthmonitor of this LoadBalancerStatusPool.
 
         :return: The healthmonitor of this LoadBalancerStatusPool.
         :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusHealthMonitor`
@@ -131,7 +131,7 @@ class LoadBalancerStatusPool:
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this LoadBalancerStatusPool.
+        r"""Sets the healthmonitor of this LoadBalancerStatusPool.
 
         :param healthmonitor: The healthmonitor of this LoadBalancerStatusPool.
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusHealthMonitor`
@@ -140,7 +140,7 @@ class LoadBalancerStatusPool:
 
     @property
     def members(self):
-        """Gets the members of this LoadBalancerStatusPool.
+        r"""Gets the members of this LoadBalancerStatusPool.
 
         后端服务器状态信息。
 
@@ -151,7 +151,7 @@ class LoadBalancerStatusPool:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this LoadBalancerStatusPool.
+        r"""Sets the members of this LoadBalancerStatusPool.
 
         后端服务器状态信息。
 
@@ -162,7 +162,7 @@ class LoadBalancerStatusPool:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerStatusPool.
+        r"""Gets the id of this LoadBalancerStatusPool.
 
         参数解释：后端服务器组ID。
 
@@ -173,7 +173,7 @@ class LoadBalancerStatusPool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerStatusPool.
+        r"""Sets the id of this LoadBalancerStatusPool.
 
         参数解释：后端服务器组ID。
 
@@ -184,7 +184,7 @@ class LoadBalancerStatusPool:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this LoadBalancerStatusPool.
+        r"""Gets the operating_status of this LoadBalancerStatusPool.
 
         后端服务器组的操作状态。  取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。  说明： DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
@@ -195,7 +195,7 @@ class LoadBalancerStatusPool:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this LoadBalancerStatusPool.
+        r"""Sets the operating_status of this LoadBalancerStatusPool.
 
         后端服务器组的操作状态。  取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。  说明： DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 

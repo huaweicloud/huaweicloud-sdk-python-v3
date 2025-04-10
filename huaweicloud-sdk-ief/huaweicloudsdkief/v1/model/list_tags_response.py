@@ -28,7 +28,7 @@ class ListTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, count=None):
-        """ListTagsResponse
+        r"""ListTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListTagsResponse.
+        r"""Gets the tags of this ListTagsResponse.
 
         标签属性
 
@@ -62,7 +62,7 @@ class ListTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTagsResponse.
+        r"""Sets the tags of this ListTagsResponse.
 
         标签属性
 
@@ -73,7 +73,7 @@ class ListTagsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTagsResponse.
+        r"""Gets the count of this ListTagsResponse.
 
         标签数量
 
@@ -84,7 +84,7 @@ class ListTagsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTagsResponse.
+        r"""Sets the count of this ListTagsResponse.
 
         标签数量
 

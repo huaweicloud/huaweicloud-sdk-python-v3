@@ -37,7 +37,7 @@ class ShowDomainItemLocationDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, stat_type=None, region=None, isp=None):
-        """ShowDomainItemLocationDetailsRequest
+        r"""ShowDomainItemLocationDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainItemLocationDetailsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -90,7 +90,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainItemLocationDetailsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -101,7 +101,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the start_time of this ShowDomainItemLocationDetailsRequest.
 
         查询开始时间戳，必须设为5分钟整时刻点
 
@@ -112,7 +112,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the start_time of this ShowDomainItemLocationDetailsRequest.
 
         查询开始时间戳，必须设为5分钟整时刻点
 
@@ -123,7 +123,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the end_time of this ShowDomainItemLocationDetailsRequest.
 
         查询结束时间戳，必须设为5分钟整时刻点
 
@@ -134,7 +134,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the end_time of this ShowDomainItemLocationDetailsRequest.
 
         查询结束时间戳，必须设为5分钟整时刻点
 
@@ -145,7 +145,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the domain_name of this ShowDomainItemLocationDetailsRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -156,7 +156,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the domain_name of this ShowDomainItemLocationDetailsRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -167,7 +167,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the stat_type of this ShowDomainItemLocationDetailsRequest.
 
         指标类型列表 网络资源消耗：bw（带宽），flux（流量），ipv6_bw(ipv6带宽)，ipv6_flux(ipv6流量), https_bw(https带宽)，https_flux(https流量) 访问情况：req_num（请求总数），hit_num（请求命中次数），req_time(请求时长) HTTP状态码（组合指标）：status_code_2xx(状态码2xx)，status_code_3xx(状态码3xx)，status_code_4xx(状态码4xx)，status_code_5xx(状态码5xx)
 
@@ -178,7 +178,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the stat_type of this ShowDomainItemLocationDetailsRequest.
 
         指标类型列表 网络资源消耗：bw（带宽），flux（流量），ipv6_bw(ipv6带宽)，ipv6_flux(ipv6流量), https_bw(https带宽)，https_flux(https流量) 访问情况：req_num（请求总数），hit_num（请求命中次数），req_time(请求时长) HTTP状态码（组合指标）：status_code_2xx(状态码2xx)，status_code_3xx(状态码3xx)，status_code_4xx(状态码4xx)，status_code_5xx(状态码5xx)
 
@@ -189,7 +189,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the region of this ShowDomainItemLocationDetailsRequest.
 
         区域列表，以逗号分隔，all表示查询全部区域
 
@@ -200,7 +200,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the region of this ShowDomainItemLocationDetailsRequest.
 
         区域列表，以逗号分隔，all表示查询全部区域
 
@@ -211,7 +211,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ShowDomainItemLocationDetailsRequest.
+        r"""Gets the isp of this ShowDomainItemLocationDetailsRequest.
 
         运营商列表，以逗号分隔，all表示查询全部运营商
 
@@ -222,7 +222,7 @@ class ShowDomainItemLocationDetailsRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ShowDomainItemLocationDetailsRequest.
+        r"""Sets the isp of this ShowDomainItemLocationDetailsRequest.
 
         运营商列表，以逗号分隔，all表示查询全部运营商
 

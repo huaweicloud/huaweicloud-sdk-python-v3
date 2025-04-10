@@ -24,7 +24,7 @@ class AddProtectedInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddProtectedInstanceTagsResponse
+        r"""AddProtectedInstanceTagsResponse
 
         The model defined in huaweicloud sdk
 

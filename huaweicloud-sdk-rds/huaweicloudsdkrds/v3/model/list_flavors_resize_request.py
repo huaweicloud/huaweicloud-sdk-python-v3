@@ -27,7 +27,7 @@ class ListFlavorsResizeRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListFlavorsResizeRequest
+        r"""ListFlavorsResizeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListFlavorsResizeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListFlavorsResizeRequest.
+        r"""Gets the instance_id of this ListFlavorsResizeRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ListFlavorsResizeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListFlavorsResizeRequest.
+        r"""Sets the instance_id of this ListFlavorsResizeRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ListFlavorsResizeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListFlavorsResizeRequest.
+        r"""Gets the x_language of this ListFlavorsResizeRequest.
 
         语言
 
@@ -82,7 +82,7 @@ class ListFlavorsResizeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListFlavorsResizeRequest.
+        r"""Sets the x_language of this ListFlavorsResizeRequest.
 
         语言
 

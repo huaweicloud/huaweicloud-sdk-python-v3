@@ -29,7 +29,7 @@ class ShowSmartLiveRequest:
     }
 
     def __init__(self, room_id=None, job_id=None, x_app_user_id=None):
-        """ShowSmartLiveRequest
+        r"""ShowSmartLiveRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowSmartLiveRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ShowSmartLiveRequest.
+        r"""Gets the room_id of this ShowSmartLiveRequest.
 
         直播间ID。
 
@@ -66,7 +66,7 @@ class ShowSmartLiveRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ShowSmartLiveRequest.
+        r"""Sets the room_id of this ShowSmartLiveRequest.
 
         直播间ID。
 
@@ -77,7 +77,7 @@ class ShowSmartLiveRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSmartLiveRequest.
+        r"""Gets the job_id of this ShowSmartLiveRequest.
 
         任务ID。
 
@@ -88,7 +88,7 @@ class ShowSmartLiveRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSmartLiveRequest.
+        r"""Sets the job_id of this ShowSmartLiveRequest.
 
         任务ID。
 
@@ -99,7 +99,7 @@ class ShowSmartLiveRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowSmartLiveRequest.
+        r"""Gets the x_app_user_id of this ShowSmartLiveRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -110,7 +110,7 @@ class ShowSmartLiveRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowSmartLiveRequest.
+        r"""Sets the x_app_user_id of this ShowSmartLiveRequest.
 
         第三方用户ID。不允许输入中文。
 

@@ -26,7 +26,7 @@ class RunImageMediaTaggingResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunImageMediaTaggingResponse
+        r"""RunImageMediaTaggingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunImageMediaTaggingResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunImageMediaTaggingResponse.
+        r"""Gets the result of this RunImageMediaTaggingResponse.
 
         :return: The result of this RunImageMediaTaggingResponse.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingResponseResult`
@@ -53,7 +53,7 @@ class RunImageMediaTaggingResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunImageMediaTaggingResponse.
+        r"""Sets the result of this RunImageMediaTaggingResponse.
 
         :param result: The result of this RunImageMediaTaggingResponse.
         :type result: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingResponseResult`

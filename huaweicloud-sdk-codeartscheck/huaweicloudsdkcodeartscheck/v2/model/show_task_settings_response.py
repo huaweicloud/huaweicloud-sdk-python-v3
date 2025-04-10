@@ -28,7 +28,7 @@ class ShowTaskSettingsResponse(SdkResponse):
     }
 
     def __init__(self, info=None, total=None):
-        """ShowTaskSettingsResponse
+        r"""ShowTaskSettingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTaskSettingsResponse(SdkResponse):
 
     @property
     def info(self):
-        """Gets the info of this ShowTaskSettingsResponse.
+        r"""Gets the info of this ShowTaskSettingsResponse.
 
         高级选项的相关信息
 
@@ -62,7 +62,7 @@ class ShowTaskSettingsResponse(SdkResponse):
 
     @info.setter
     def info(self, info):
-        """Sets the info of this ShowTaskSettingsResponse.
+        r"""Sets the info of this ShowTaskSettingsResponse.
 
         高级选项的相关信息
 
@@ -73,7 +73,7 @@ class ShowTaskSettingsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTaskSettingsResponse.
+        r"""Gets the total of this ShowTaskSettingsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowTaskSettingsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTaskSettingsResponse.
+        r"""Sets the total of this ShowTaskSettingsResponse.
 
         总数
 

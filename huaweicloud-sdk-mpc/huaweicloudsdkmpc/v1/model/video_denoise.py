@@ -27,7 +27,7 @@ class VideoDenoise:
     }
 
     def __init__(self, name=None, execution_order=None):
-        """VideoDenoise
+        r"""VideoDenoise
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VideoDenoise:
 
     @property
     def name(self):
-        """Gets the name of this VideoDenoise.
+        r"""Gets the name of this VideoDenoise.
 
         降噪算法名称\"hw-denoise\"、\"waifu2x\"。 
 
@@ -61,7 +61,7 @@ class VideoDenoise:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VideoDenoise.
+        r"""Sets the name of this VideoDenoise.
 
         降噪算法名称\"hw-denoise\"、\"waifu2x\"。 
 
@@ -72,7 +72,7 @@ class VideoDenoise:
 
     @property
     def execution_order(self):
-        """Gets the execution_order of this VideoDenoise.
+        r"""Gets the execution_order of this VideoDenoise.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -83,7 +83,7 @@ class VideoDenoise:
 
     @execution_order.setter
     def execution_order(self, execution_order):
-        """Sets the execution_order of this VideoDenoise.
+        r"""Sets the execution_order of this VideoDenoise.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 

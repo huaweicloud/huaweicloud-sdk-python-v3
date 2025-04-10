@@ -29,7 +29,7 @@ class FilterCriteria:
     }
 
     def __init__(self, name=None, value=None, operator=None):
-        """FilterCriteria
+        r"""FilterCriteria
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class FilterCriteria:
 
     @property
     def name(self):
-        """Gets the name of this FilterCriteria.
+        r"""Gets the name of this FilterCriteria.
 
         当前可选值：database
 
@@ -65,7 +65,7 @@ class FilterCriteria:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FilterCriteria.
+        r"""Sets the name of this FilterCriteria.
 
         当前可选值：database
 
@@ -76,7 +76,7 @@ class FilterCriteria:
 
     @property
     def value(self):
-        """Gets the value of this FilterCriteria.
+        r"""Gets the value of this FilterCriteria.
 
         database的名称
 
@@ -87,7 +87,7 @@ class FilterCriteria:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FilterCriteria.
+        r"""Sets the value of this FilterCriteria.
 
         database的名称
 
@@ -98,7 +98,7 @@ class FilterCriteria:
 
     @property
     def operator(self):
-        """Gets the operator of this FilterCriteria.
+        r"""Gets the operator of this FilterCriteria.
 
         操作者
 
@@ -109,7 +109,7 @@ class FilterCriteria:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this FilterCriteria.
+        r"""Sets the operator of this FilterCriteria.
 
         操作者
 

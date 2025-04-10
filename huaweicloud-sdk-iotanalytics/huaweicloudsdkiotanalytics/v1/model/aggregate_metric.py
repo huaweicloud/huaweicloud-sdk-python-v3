@@ -29,7 +29,7 @@ class AggregateMetric:
     }
 
     def __init__(self, inputs=None, metric_name=None, expression=None):
-        """AggregateMetric
+        r"""AggregateMetric
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AggregateMetric:
 
     @property
     def inputs(self):
-        """Gets the inputs of this AggregateMetric.
+        r"""Gets the inputs of this AggregateMetric.
 
         声明属性作为表达式参数
 
@@ -65,7 +65,7 @@ class AggregateMetric:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this AggregateMetric.
+        r"""Sets the inputs of this AggregateMetric.
 
         声明属性作为表达式参数
 
@@ -76,7 +76,7 @@ class AggregateMetric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this AggregateMetric.
+        r"""Gets the metric_name of this AggregateMetric.
 
         指标名称
 
@@ -87,7 +87,7 @@ class AggregateMetric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this AggregateMetric.
+        r"""Sets the metric_name of this AggregateMetric.
 
         指标名称
 
@@ -98,7 +98,7 @@ class AggregateMetric:
 
     @property
     def expression(self):
-        """Gets the expression of this AggregateMetric.
+        r"""Gets the expression of this AggregateMetric.
 
         表达式
 
@@ -109,7 +109,7 @@ class AggregateMetric:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this AggregateMetric.
+        r"""Sets the expression of this AggregateMetric.
 
         表达式
 

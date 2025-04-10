@@ -39,7 +39,7 @@ class ListMoreInstantMessagesRequest:
     }
 
     def __init__(self, case_id=None, create_time=None, type=None, group_id=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListMoreInstantMessagesRequest
+        r"""ListMoreInstantMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this ListMoreInstantMessagesRequest.
+        r"""Gets the case_id of this ListMoreInstantMessagesRequest.
 
         工单id
 
@@ -99,7 +99,7 @@ class ListMoreInstantMessagesRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this ListMoreInstantMessagesRequest.
+        r"""Sets the case_id of this ListMoreInstantMessagesRequest.
 
         工单id
 
@@ -110,7 +110,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListMoreInstantMessagesRequest.
+        r"""Gets the create_time of this ListMoreInstantMessagesRequest.
 
         创建时间，时间戳
 
@@ -121,7 +121,7 @@ class ListMoreInstantMessagesRequest:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListMoreInstantMessagesRequest.
+        r"""Sets the create_time of this ListMoreInstantMessagesRequest.
 
         创建时间，时间戳
 
@@ -132,7 +132,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListMoreInstantMessagesRequest.
+        r"""Gets the type of this ListMoreInstantMessagesRequest.
 
         上一条消息的留言方式 0是客户留言 1是客服回留言
 
@@ -143,7 +143,7 @@ class ListMoreInstantMessagesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListMoreInstantMessagesRequest.
+        r"""Sets the type of this ListMoreInstantMessagesRequest.
 
         上一条消息的留言方式 0是客户留言 1是客服回留言
 
@@ -154,7 +154,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListMoreInstantMessagesRequest.
+        r"""Gets the group_id of this ListMoreInstantMessagesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -165,7 +165,7 @@ class ListMoreInstantMessagesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListMoreInstantMessagesRequest.
+        r"""Sets the group_id of this ListMoreInstantMessagesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -176,7 +176,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMoreInstantMessagesRequest.
+        r"""Gets the limit of this ListMoreInstantMessagesRequest.
 
         查询数量
 
@@ -187,7 +187,7 @@ class ListMoreInstantMessagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMoreInstantMessagesRequest.
+        r"""Sets the limit of this ListMoreInstantMessagesRequest.
 
         查询数量
 
@@ -198,7 +198,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListMoreInstantMessagesRequest.
+        r"""Gets the x_site of this ListMoreInstantMessagesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -209,7 +209,7 @@ class ListMoreInstantMessagesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListMoreInstantMessagesRequest.
+        r"""Sets the x_site of this ListMoreInstantMessagesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -220,7 +220,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListMoreInstantMessagesRequest.
+        r"""Gets the x_language of this ListMoreInstantMessagesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -231,7 +231,7 @@ class ListMoreInstantMessagesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListMoreInstantMessagesRequest.
+        r"""Sets the x_language of this ListMoreInstantMessagesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -242,7 +242,7 @@ class ListMoreInstantMessagesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListMoreInstantMessagesRequest.
+        r"""Gets the x_time_zone of this ListMoreInstantMessagesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -253,7 +253,7 @@ class ListMoreInstantMessagesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListMoreInstantMessagesRequest.
+        r"""Sets the x_time_zone of this ListMoreInstantMessagesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

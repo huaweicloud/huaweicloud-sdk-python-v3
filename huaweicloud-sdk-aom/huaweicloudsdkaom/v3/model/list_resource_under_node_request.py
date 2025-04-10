@@ -29,7 +29,7 @@ class ListResourceUnderNodeRequest:
     }
 
     def __init__(self, rf_resource_type=None, type=None, body=None):
-        """ListResourceUnderNodeRequest
+        r"""ListResourceUnderNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListResourceUnderNodeRequest:
 
     @property
     def rf_resource_type(self):
-        """Gets the rf_resource_type of this ListResourceUnderNodeRequest.
+        r"""Gets the rf_resource_type of this ListResourceUnderNodeRequest.
 
         云服务资源,同rms服务的provider
 
@@ -66,7 +66,7 @@ class ListResourceUnderNodeRequest:
 
     @rf_resource_type.setter
     def rf_resource_type(self, rf_resource_type):
-        """Sets the rf_resource_type of this ListResourceUnderNodeRequest.
+        r"""Sets the rf_resource_type of this ListResourceUnderNodeRequest.
 
         云服务资源,同rms服务的provider
 
@@ -77,7 +77,7 @@ class ListResourceUnderNodeRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListResourceUnderNodeRequest.
+        r"""Gets the type of this ListResourceUnderNodeRequest.
 
         云服务资源类型,同rms服务的type
 
@@ -88,7 +88,7 @@ class ListResourceUnderNodeRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListResourceUnderNodeRequest.
+        r"""Sets the type of this ListResourceUnderNodeRequest.
 
         云服务资源类型,同rms服务的type
 
@@ -99,7 +99,7 @@ class ListResourceUnderNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceUnderNodeRequest.
+        r"""Gets the body of this ListResourceUnderNodeRequest.
 
         :return: The body of this ListResourceUnderNodeRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.PageResourceListParam`
@@ -108,7 +108,7 @@ class ListResourceUnderNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceUnderNodeRequest.
+        r"""Sets the body of this ListResourceUnderNodeRequest.
 
         :param body: The body of this ListResourceUnderNodeRequest.
         :type body: :class:`huaweicloudsdkaom.v3.PageResourceListParam`

@@ -31,7 +31,7 @@ class IngressPortInfo:
     }
 
     def __init__(self, protocol=None, ingress_port=None, ingress_port_id=None, status=None):
-        """IngressPortInfo
+        r"""IngressPortInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IngressPortInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this IngressPortInfo.
+        r"""Gets the protocol of this IngressPortInfo.
 
         实例自定义入方向端口协议。 - HTTP：实例自定义入方向端口使用HTTP协议。 - HTTPS：实例自定义入方向端口使用HTTPS协议。 
 
@@ -75,7 +75,7 @@ class IngressPortInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this IngressPortInfo.
+        r"""Sets the protocol of this IngressPortInfo.
 
         实例自定义入方向端口协议。 - HTTP：实例自定义入方向端口使用HTTP协议。 - HTTPS：实例自定义入方向端口使用HTTPS协议。 
 
@@ -86,7 +86,7 @@ class IngressPortInfo:
 
     @property
     def ingress_port(self):
-        """Gets the ingress_port of this IngressPortInfo.
+        r"""Gets the ingress_port of this IngressPortInfo.
 
         实例自定义入方向端口，支持的端口范围为1024~49151。
 
@@ -97,7 +97,7 @@ class IngressPortInfo:
 
     @ingress_port.setter
     def ingress_port(self, ingress_port):
-        """Sets the ingress_port of this IngressPortInfo.
+        r"""Sets the ingress_port of this IngressPortInfo.
 
         实例自定义入方向端口，支持的端口范围为1024~49151。
 
@@ -108,7 +108,7 @@ class IngressPortInfo:
 
     @property
     def ingress_port_id(self):
-        """Gets the ingress_port_id of this IngressPortInfo.
+        r"""Gets the ingress_port_id of this IngressPortInfo.
 
         实例自定义入方向端口ID。
 
@@ -119,7 +119,7 @@ class IngressPortInfo:
 
     @ingress_port_id.setter
     def ingress_port_id(self, ingress_port_id):
-        """Sets the ingress_port_id of this IngressPortInfo.
+        r"""Sets the ingress_port_id of this IngressPortInfo.
 
         实例自定义入方向端口ID。
 
@@ -130,7 +130,7 @@ class IngressPortInfo:
 
     @property
     def status(self):
-        """Gets the status of this IngressPortInfo.
+        r"""Gets the status of this IngressPortInfo.
 
         实例自定义入方向端口的有效状态。 - normal：实例自定义入方向端口状态正常。 - abnormal：实例自定义入方向端口状态异常，无法使用。 
 
@@ -141,7 +141,7 @@ class IngressPortInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IngressPortInfo.
+        r"""Sets the status of this IngressPortInfo.
 
         实例自定义入方向端口的有效状态。 - normal：实例自定义入方向端口状态正常。 - abnormal：实例自定义入方向端口状态异常，无法使用。 
 

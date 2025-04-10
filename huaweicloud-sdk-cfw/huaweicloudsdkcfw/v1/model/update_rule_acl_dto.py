@@ -57,7 +57,7 @@ class UpdateRuleAclDto:
     }
 
     def __init__(self, address_type=None, name=None, direction=None, action_type=None, status=None, applications=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
-        """UpdateRuleAclDto
+        r"""UpdateRuleAclDto
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class UpdateRuleAclDto:
 
     @property
     def address_type(self):
-        """Gets the address_type of this UpdateRuleAclDto.
+        r"""Gets the address_type of this UpdateRuleAclDto.
 
         地址类型，0表示ipv4，1表示ipv6
 
@@ -166,7 +166,7 @@ class UpdateRuleAclDto:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this UpdateRuleAclDto.
+        r"""Sets the address_type of this UpdateRuleAclDto.
 
         地址类型，0表示ipv4，1表示ipv6
 
@@ -177,7 +177,7 @@ class UpdateRuleAclDto:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRuleAclDto.
+        r"""Gets the name of this UpdateRuleAclDto.
 
         规则名称
 
@@ -188,7 +188,7 @@ class UpdateRuleAclDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRuleAclDto.
+        r"""Sets the name of this UpdateRuleAclDto.
 
         规则名称
 
@@ -199,7 +199,7 @@ class UpdateRuleAclDto:
 
     @property
     def direction(self):
-        """Gets the direction of this UpdateRuleAclDto.
+        r"""Gets the direction of this UpdateRuleAclDto.
 
         方向：0表示外到内，1表示内到外,规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
 
@@ -210,7 +210,7 @@ class UpdateRuleAclDto:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this UpdateRuleAclDto.
+        r"""Sets the direction of this UpdateRuleAclDto.
 
         方向：0表示外到内，1表示内到外,规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
 
@@ -221,7 +221,7 @@ class UpdateRuleAclDto:
 
     @property
     def action_type(self):
-        """Gets the action_type of this UpdateRuleAclDto.
+        r"""Gets the action_type of this UpdateRuleAclDto.
 
         规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
 
@@ -232,7 +232,7 @@ class UpdateRuleAclDto:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this UpdateRuleAclDto.
+        r"""Sets the action_type of this UpdateRuleAclDto.
 
         规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
 
@@ -243,7 +243,7 @@ class UpdateRuleAclDto:
 
     @property
     def status(self):
-        """Gets the status of this UpdateRuleAclDto.
+        r"""Gets the status of this UpdateRuleAclDto.
 
         规则启用状态，0表示禁用，1表示启用
 
@@ -254,7 +254,7 @@ class UpdateRuleAclDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateRuleAclDto.
+        r"""Sets the status of this UpdateRuleAclDto.
 
         规则启用状态，0表示禁用，1表示启用
 
@@ -265,7 +265,7 @@ class UpdateRuleAclDto:
 
     @property
     def applications(self):
-        """Gets the applications of this UpdateRuleAclDto.
+        r"""Gets the applications of this UpdateRuleAclDto.
 
         规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -276,7 +276,7 @@ class UpdateRuleAclDto:
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this UpdateRuleAclDto.
+        r"""Sets the applications of this UpdateRuleAclDto.
 
         规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -287,7 +287,7 @@ class UpdateRuleAclDto:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRuleAclDto.
+        r"""Gets the description of this UpdateRuleAclDto.
 
         规则描述
 
@@ -298,7 +298,7 @@ class UpdateRuleAclDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRuleAclDto.
+        r"""Sets the description of this UpdateRuleAclDto.
 
         规则描述
 
@@ -309,7 +309,7 @@ class UpdateRuleAclDto:
 
     @property
     def long_connect_time_hour(self):
-        """Gets the long_connect_time_hour of this UpdateRuleAclDto.
+        r"""Gets the long_connect_time_hour of this UpdateRuleAclDto.
 
         长连接时长对应小时
 
@@ -320,7 +320,7 @@ class UpdateRuleAclDto:
 
     @long_connect_time_hour.setter
     def long_connect_time_hour(self, long_connect_time_hour):
-        """Sets the long_connect_time_hour of this UpdateRuleAclDto.
+        r"""Sets the long_connect_time_hour of this UpdateRuleAclDto.
 
         长连接时长对应小时
 
@@ -331,7 +331,7 @@ class UpdateRuleAclDto:
 
     @property
     def long_connect_time_minute(self):
-        """Gets the long_connect_time_minute of this UpdateRuleAclDto.
+        r"""Gets the long_connect_time_minute of this UpdateRuleAclDto.
 
         长连接时长对应分钟
 
@@ -342,7 +342,7 @@ class UpdateRuleAclDto:
 
     @long_connect_time_minute.setter
     def long_connect_time_minute(self, long_connect_time_minute):
-        """Sets the long_connect_time_minute of this UpdateRuleAclDto.
+        r"""Sets the long_connect_time_minute of this UpdateRuleAclDto.
 
         长连接时长对应分钟
 
@@ -353,7 +353,7 @@ class UpdateRuleAclDto:
 
     @property
     def long_connect_time_second(self):
-        """Gets the long_connect_time_second of this UpdateRuleAclDto.
+        r"""Gets the long_connect_time_second of this UpdateRuleAclDto.
 
         长连接时长秒
 
@@ -364,7 +364,7 @@ class UpdateRuleAclDto:
 
     @long_connect_time_second.setter
     def long_connect_time_second(self, long_connect_time_second):
-        """Sets the long_connect_time_second of this UpdateRuleAclDto.
+        r"""Sets the long_connect_time_second of this UpdateRuleAclDto.
 
         长连接时长秒
 
@@ -375,7 +375,7 @@ class UpdateRuleAclDto:
 
     @property
     def long_connect_time(self):
-        """Gets the long_connect_time of this UpdateRuleAclDto.
+        r"""Gets the long_connect_time of this UpdateRuleAclDto.
 
         长连接时长
 
@@ -386,7 +386,7 @@ class UpdateRuleAclDto:
 
     @long_connect_time.setter
     def long_connect_time(self, long_connect_time):
-        """Sets the long_connect_time of this UpdateRuleAclDto.
+        r"""Sets the long_connect_time of this UpdateRuleAclDto.
 
         长连接时长
 
@@ -397,7 +397,7 @@ class UpdateRuleAclDto:
 
     @property
     def long_connect_enable(self):
-        """Gets the long_connect_enable of this UpdateRuleAclDto.
+        r"""Gets the long_connect_enable of this UpdateRuleAclDto.
 
         是否支持长连接，0表示不支持，1表示支持
 
@@ -408,7 +408,7 @@ class UpdateRuleAclDto:
 
     @long_connect_enable.setter
     def long_connect_enable(self, long_connect_enable):
-        """Sets the long_connect_enable of this UpdateRuleAclDto.
+        r"""Sets the long_connect_enable of this UpdateRuleAclDto.
 
         是否支持长连接，0表示不支持，1表示支持
 
@@ -419,7 +419,7 @@ class UpdateRuleAclDto:
 
     @property
     def source(self):
-        """Gets the source of this UpdateRuleAclDto.
+        r"""Gets the source of this UpdateRuleAclDto.
 
         :return: The source of this UpdateRuleAclDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
@@ -428,7 +428,7 @@ class UpdateRuleAclDto:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateRuleAclDto.
+        r"""Sets the source of this UpdateRuleAclDto.
 
         :param source: The source of this UpdateRuleAclDto.
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
@@ -437,7 +437,7 @@ class UpdateRuleAclDto:
 
     @property
     def destination(self):
-        """Gets the destination of this UpdateRuleAclDto.
+        r"""Gets the destination of this UpdateRuleAclDto.
 
         :return: The destination of this UpdateRuleAclDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
@@ -446,7 +446,7 @@ class UpdateRuleAclDto:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this UpdateRuleAclDto.
+        r"""Sets the destination of this UpdateRuleAclDto.
 
         :param destination: The destination of this UpdateRuleAclDto.
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
@@ -455,7 +455,7 @@ class UpdateRuleAclDto:
 
     @property
     def service(self):
-        """Gets the service of this UpdateRuleAclDto.
+        r"""Gets the service of this UpdateRuleAclDto.
 
         :return: The service of this UpdateRuleAclDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
@@ -464,7 +464,7 @@ class UpdateRuleAclDto:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this UpdateRuleAclDto.
+        r"""Sets the service of this UpdateRuleAclDto.
 
         :param service: The service of this UpdateRuleAclDto.
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
@@ -473,7 +473,7 @@ class UpdateRuleAclDto:
 
     @property
     def type(self):
-        """Gets the type of this UpdateRuleAclDto.
+        r"""Gets the type of this UpdateRuleAclDto.
 
         规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
@@ -484,7 +484,7 @@ class UpdateRuleAclDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateRuleAclDto.
+        r"""Sets the type of this UpdateRuleAclDto.
 
         规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
@@ -495,7 +495,7 @@ class UpdateRuleAclDto:
 
     @property
     def tag(self):
-        """Gets the tag of this UpdateRuleAclDto.
+        r"""Gets the tag of this UpdateRuleAclDto.
 
         :return: The tag of this UpdateRuleAclDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -504,7 +504,7 @@ class UpdateRuleAclDto:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this UpdateRuleAclDto.
+        r"""Sets the tag of this UpdateRuleAclDto.
 
         :param tag: The tag of this UpdateRuleAclDto.
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`

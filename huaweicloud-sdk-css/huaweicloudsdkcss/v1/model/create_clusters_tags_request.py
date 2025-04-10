@@ -29,7 +29,7 @@ class CreateClustersTagsRequest:
     }
 
     def __init__(self, cluster_id=None, resource_type=None, body=None):
-        """CreateClustersTagsRequest
+        r"""CreateClustersTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateClustersTagsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClustersTagsRequest.
+        r"""Gets the cluster_id of this CreateClustersTagsRequest.
 
         指定待添加标签的集群ID。
 
@@ -66,7 +66,7 @@ class CreateClustersTagsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClustersTagsRequest.
+        r"""Sets the cluster_id of this CreateClustersTagsRequest.
 
         指定待添加标签的集群ID。
 
@@ -77,7 +77,7 @@ class CreateClustersTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateClustersTagsRequest.
+        r"""Gets the resource_type of this CreateClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -88,7 +88,7 @@ class CreateClustersTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateClustersTagsRequest.
+        r"""Sets the resource_type of this CreateClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -99,7 +99,7 @@ class CreateClustersTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClustersTagsRequest.
+        r"""Gets the body of this CreateClustersTagsRequest.
 
         :return: The body of this CreateClustersTagsRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.TagReq`
@@ -108,7 +108,7 @@ class CreateClustersTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClustersTagsRequest.
+        r"""Sets the body of this CreateClustersTagsRequest.
 
         :param body: The body of this CreateClustersTagsRequest.
         :type body: :class:`huaweicloudsdkcss.v1.TagReq`

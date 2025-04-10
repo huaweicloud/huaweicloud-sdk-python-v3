@@ -27,7 +27,7 @@ class CreateDatabaseList:
     }
 
     def __init__(self, name=None, readonly=None):
-        """CreateDatabaseList
+        r"""CreateDatabaseList
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateDatabaseList:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseList.
+        r"""Gets the name of this CreateDatabaseList.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class CreateDatabaseList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseList.
+        r"""Sets the name of this CreateDatabaseList.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class CreateDatabaseList:
 
     @property
     def readonly(self):
-        """Gets the readonly of this CreateDatabaseList.
+        r"""Gets the readonly of this CreateDatabaseList.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 
@@ -81,7 +81,7 @@ class CreateDatabaseList:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this CreateDatabaseList.
+        r"""Sets the readonly of this CreateDatabaseList.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 

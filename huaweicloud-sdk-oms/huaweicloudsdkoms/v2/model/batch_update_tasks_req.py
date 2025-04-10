@@ -31,7 +31,7 @@ class BatchUpdateTasksReq:
     }
 
     def __init__(self, group_id=None, ids=None, bandwidth_policy=None, task_priority=None):
-        """BatchUpdateTasksReq
+        r"""BatchUpdateTasksReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BatchUpdateTasksReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchUpdateTasksReq.
+        r"""Gets the group_id of this BatchUpdateTasksReq.
 
         迁移任务组ID，表示批量更新该任务组下所有任务。 group_id和ids为二选一参数，不可同时存在或同时缺失。
 
@@ -74,7 +74,7 @@ class BatchUpdateTasksReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchUpdateTasksReq.
+        r"""Sets the group_id of this BatchUpdateTasksReq.
 
         迁移任务组ID，表示批量更新该任务组下所有任务。 group_id和ids为二选一参数，不可同时存在或同时缺失。
 
@@ -85,7 +85,7 @@ class BatchUpdateTasksReq:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchUpdateTasksReq.
+        r"""Gets the ids of this BatchUpdateTasksReq.
 
         迁移任务id数组，包含所有需要批量更新操作的任务id。 group_id和ids为二选一参数，不可同时存在或同时缺失。
 
@@ -96,7 +96,7 @@ class BatchUpdateTasksReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchUpdateTasksReq.
+        r"""Sets the ids of this BatchUpdateTasksReq.
 
         迁移任务id数组，包含所有需要批量更新操作的任务id。 group_id和ids为二选一参数，不可同时存在或同时缺失。
 
@@ -107,7 +107,7 @@ class BatchUpdateTasksReq:
 
     @property
     def bandwidth_policy(self):
-        """Gets the bandwidth_policy of this BatchUpdateTasksReq.
+        r"""Gets the bandwidth_policy of this BatchUpdateTasksReq.
 
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
@@ -118,7 +118,7 @@ class BatchUpdateTasksReq:
 
     @bandwidth_policy.setter
     def bandwidth_policy(self, bandwidth_policy):
-        """Sets the bandwidth_policy of this BatchUpdateTasksReq.
+        r"""Sets the bandwidth_policy of this BatchUpdateTasksReq.
 
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
@@ -129,7 +129,7 @@ class BatchUpdateTasksReq:
 
     @property
     def task_priority(self):
-        """Gets the task_priority of this BatchUpdateTasksReq.
+        r"""Gets the task_priority of this BatchUpdateTasksReq.
 
         任务优先级配置，存在高中低三个优先级档次，限制仅在等待中、已暂停、已失败的任务进行修改 HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
 
@@ -140,7 +140,7 @@ class BatchUpdateTasksReq:
 
     @task_priority.setter
     def task_priority(self, task_priority):
-        """Sets the task_priority of this BatchUpdateTasksReq.
+        r"""Sets the task_priority of this BatchUpdateTasksReq.
 
         任务优先级配置，存在高中低三个优先级档次，限制仅在等待中、已暂停、已失败的任务进行修改 HIGH：高优先级 MEDIUM：中优先级 LOW：低优先级
 

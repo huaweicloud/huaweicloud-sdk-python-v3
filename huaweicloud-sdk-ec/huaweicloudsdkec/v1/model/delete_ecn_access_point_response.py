@@ -24,7 +24,7 @@ class DeleteEcnAccessPointResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEcnAccessPointResponse
+        r"""DeleteEcnAccessPointResponse
 
         The model defined in huaweicloud sdk
 

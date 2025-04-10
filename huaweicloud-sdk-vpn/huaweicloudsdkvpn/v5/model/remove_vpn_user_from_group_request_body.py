@@ -25,7 +25,7 @@ class RemoveVpnUserFromGroupRequestBody:
     }
 
     def __init__(self, users=None):
-        """RemoveVpnUserFromGroupRequestBody
+        r"""RemoveVpnUserFromGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveVpnUserFromGroupRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this RemoveVpnUserFromGroupRequestBody.
+        r"""Gets the users of this RemoveVpnUserFromGroupRequestBody.
 
         用户列表信息
 
@@ -53,7 +53,7 @@ class RemoveVpnUserFromGroupRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RemoveVpnUserFromGroupRequestBody.
+        r"""Sets the users of this RemoveVpnUserFromGroupRequestBody.
 
         用户列表信息
 

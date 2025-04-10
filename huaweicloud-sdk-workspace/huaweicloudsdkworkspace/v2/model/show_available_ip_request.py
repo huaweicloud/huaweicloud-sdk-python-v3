@@ -25,7 +25,7 @@ class ShowAvailableIpRequest:
     }
 
     def __init__(self, subnet_id=None):
-        """ShowAvailableIpRequest
+        r"""ShowAvailableIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAvailableIpRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowAvailableIpRequest.
+        r"""Gets the subnet_id of this ShowAvailableIpRequest.
 
         子网id。
 
@@ -53,7 +53,7 @@ class ShowAvailableIpRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowAvailableIpRequest.
+        r"""Sets the subnet_id of this ShowAvailableIpRequest.
 
         子网id。
 

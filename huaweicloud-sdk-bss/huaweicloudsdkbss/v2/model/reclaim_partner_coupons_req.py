@@ -27,7 +27,7 @@ class ReclaimPartnerCouponsReq:
     }
 
     def __init__(self, coupon_id=None, indirect_partner_id=None):
-        """ReclaimPartnerCouponsReq
+        r"""ReclaimPartnerCouponsReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReclaimPartnerCouponsReq:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this ReclaimPartnerCouponsReq.
+        r"""Gets the coupon_id of this ReclaimPartnerCouponsReq.
 
         待回收的代金券ID。 请从“发放优惠券”或“查询已发放的优惠券”接口的响应参数中获取。
 
@@ -60,7 +60,7 @@ class ReclaimPartnerCouponsReq:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this ReclaimPartnerCouponsReq.
+        r"""Sets the coupon_id of this ReclaimPartnerCouponsReq.
 
         待回收的代金券ID。 请从“发放优惠券”或“查询已发放的优惠券”接口的响应参数中获取。
 
@@ -71,7 +71,7 @@ class ReclaimPartnerCouponsReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ReclaimPartnerCouponsReq.
+        r"""Gets the indirect_partner_id of this ReclaimPartnerCouponsReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  云经销商回收给子客户发放的优惠券时，需要携带该字段。除此之外，此参数不做处理。
 
@@ -82,7 +82,7 @@ class ReclaimPartnerCouponsReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ReclaimPartnerCouponsReq.
+        r"""Sets the indirect_partner_id of this ReclaimPartnerCouponsReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  云经销商回收给子客户发放的优惠券时，需要携带该字段。除此之外，此参数不做处理。
 

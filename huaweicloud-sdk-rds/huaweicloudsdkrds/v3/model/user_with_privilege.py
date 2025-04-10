@@ -27,7 +27,7 @@ class UserWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None):
-        """UserWithPrivilege
+        r"""UserWithPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UserWithPrivilege:
 
     @property
     def name(self):
-        """Gets the name of this UserWithPrivilege.
+        r"""Gets the name of this UserWithPrivilege.
 
         用户名。
 
@@ -59,7 +59,7 @@ class UserWithPrivilege:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserWithPrivilege.
+        r"""Sets the name of this UserWithPrivilege.
 
         用户名。
 
@@ -70,7 +70,7 @@ class UserWithPrivilege:
 
     @property
     def readonly(self):
-        """Gets the readonly of this UserWithPrivilege.
+        r"""Gets the readonly of this UserWithPrivilege.
 
         是否为只读权限。
 
@@ -81,7 +81,7 @@ class UserWithPrivilege:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this UserWithPrivilege.
+        r"""Sets the readonly of this UserWithPrivilege.
 
         是否为只读权限。
 

@@ -32,7 +32,7 @@ class ListConnectGatewaysResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, connect_gateways=None, total_count=None, page_info=None):
-        """ListConnectGatewaysResponse
+        r"""ListConnectGatewaysResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListConnectGatewaysResponse.
+        r"""Gets the request_id of this ListConnectGatewaysResponse.
 
         请求ID
 
@@ -76,7 +76,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListConnectGatewaysResponse.
+        r"""Sets the request_id of this ListConnectGatewaysResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @property
     def connect_gateways(self):
-        """Gets the connect_gateways of this ListConnectGatewaysResponse.
+        r"""Gets the connect_gateways of this ListConnectGatewaysResponse.
 
         :return: The connect_gateways of this ListConnectGatewaysResponse.
         :rtype: list[:class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`]
@@ -96,7 +96,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @connect_gateways.setter
     def connect_gateways(self, connect_gateways):
-        """Sets the connect_gateways of this ListConnectGatewaysResponse.
+        r"""Sets the connect_gateways of this ListConnectGatewaysResponse.
 
         :param connect_gateways: The connect_gateways of this ListConnectGatewaysResponse.
         :type connect_gateways: list[:class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`]
@@ -105,7 +105,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListConnectGatewaysResponse.
+        r"""Gets the total_count of this ListConnectGatewaysResponse.
 
         总记录数。
 
@@ -116,7 +116,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListConnectGatewaysResponse.
+        r"""Sets the total_count of this ListConnectGatewaysResponse.
 
         总记录数。
 
@@ -127,7 +127,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListConnectGatewaysResponse.
+        r"""Gets the page_info of this ListConnectGatewaysResponse.
 
         :return: The page_info of this ListConnectGatewaysResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -136,7 +136,7 @@ class ListConnectGatewaysResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListConnectGatewaysResponse.
+        r"""Sets the page_info of this ListConnectGatewaysResponse.
 
         :param page_info: The page_info of this ListConnectGatewaysResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

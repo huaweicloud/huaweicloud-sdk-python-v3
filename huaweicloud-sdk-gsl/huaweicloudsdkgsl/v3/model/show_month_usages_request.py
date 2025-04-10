@@ -25,7 +25,7 @@ class ShowMonthUsagesRequest:
     }
 
     def __init__(self, body=None):
-        """ShowMonthUsagesRequest
+        r"""ShowMonthUsagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowMonthUsagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowMonthUsagesRequest.
+        r"""Gets the body of this ShowMonthUsagesRequest.
 
         :return: The body of this ShowMonthUsagesRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`
@@ -52,7 +52,7 @@ class ShowMonthUsagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowMonthUsagesRequest.
+        r"""Sets the body of this ShowMonthUsagesRequest.
 
         :param body: The body of this ShowMonthUsagesRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`

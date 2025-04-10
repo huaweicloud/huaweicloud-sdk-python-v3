@@ -39,7 +39,7 @@ class NotificationObjConfiguration:
     }
 
     def __init__(self, notification_endpoint_type=None, schedule_scene=None, schedule_role=None, schedule_role_name=None, recipients=None, group_type=None, group_id=None, group_name=None):
-        """NotificationObjConfiguration
+        r"""NotificationObjConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class NotificationObjConfiguration:
 
     @property
     def notification_endpoint_type(self):
-        """Gets the notification_endpoint_type of this NotificationObjConfiguration.
+        r"""Gets the notification_endpoint_type of this NotificationObjConfiguration.
 
         通知对象类型（排班/个人/工单责任人/群组）
 
@@ -103,7 +103,7 @@ class NotificationObjConfiguration:
 
     @notification_endpoint_type.setter
     def notification_endpoint_type(self, notification_endpoint_type):
-        """Sets the notification_endpoint_type of this NotificationObjConfiguration.
+        r"""Sets the notification_endpoint_type of this NotificationObjConfiguration.
 
         通知对象类型（排班/个人/工单责任人/群组）
 
@@ -114,7 +114,7 @@ class NotificationObjConfiguration:
 
     @property
     def schedule_scene(self):
-        """Gets the schedule_scene of this NotificationObjConfiguration.
+        r"""Gets the schedule_scene of this NotificationObjConfiguration.
 
         排班场景ID
 
@@ -125,7 +125,7 @@ class NotificationObjConfiguration:
 
     @schedule_scene.setter
     def schedule_scene(self, schedule_scene):
-        """Sets the schedule_scene of this NotificationObjConfiguration.
+        r"""Sets the schedule_scene of this NotificationObjConfiguration.
 
         排班场景ID
 
@@ -136,7 +136,7 @@ class NotificationObjConfiguration:
 
     @property
     def schedule_role(self):
-        """Gets the schedule_role of this NotificationObjConfiguration.
+        r"""Gets the schedule_role of this NotificationObjConfiguration.
 
         排班角色ID
 
@@ -147,7 +147,7 @@ class NotificationObjConfiguration:
 
     @schedule_role.setter
     def schedule_role(self, schedule_role):
-        """Sets the schedule_role of this NotificationObjConfiguration.
+        r"""Sets the schedule_role of this NotificationObjConfiguration.
 
         排班角色ID
 
@@ -158,7 +158,7 @@ class NotificationObjConfiguration:
 
     @property
     def schedule_role_name(self):
-        """Gets the schedule_role_name of this NotificationObjConfiguration.
+        r"""Gets the schedule_role_name of this NotificationObjConfiguration.
 
         排班角色名称
 
@@ -169,7 +169,7 @@ class NotificationObjConfiguration:
 
     @schedule_role_name.setter
     def schedule_role_name(self, schedule_role_name):
-        """Sets the schedule_role_name of this NotificationObjConfiguration.
+        r"""Sets the schedule_role_name of this NotificationObjConfiguration.
 
         排班角色名称
 
@@ -180,7 +180,7 @@ class NotificationObjConfiguration:
 
     @property
     def recipients(self):
-        """Gets the recipients of this NotificationObjConfiguration.
+        r"""Gets the recipients of this NotificationObjConfiguration.
 
         消息通知接收人，对于群组通知而言其对应的是被@的群成员
 
@@ -191,7 +191,7 @@ class NotificationObjConfiguration:
 
     @recipients.setter
     def recipients(self, recipients):
-        """Sets the recipients of this NotificationObjConfiguration.
+        r"""Sets the recipients of this NotificationObjConfiguration.
 
         消息通知接收人，对于群组通知而言其对应的是被@的群成员
 
@@ -202,7 +202,7 @@ class NotificationObjConfiguration:
 
     @property
     def group_type(self):
-        """Gets the group_type of this NotificationObjConfiguration.
+        r"""Gets the group_type of this NotificationObjConfiguration.
 
         群组类型（企业微信/钉钉/飞书）
 
@@ -213,7 +213,7 @@ class NotificationObjConfiguration:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this NotificationObjConfiguration.
+        r"""Sets the group_type of this NotificationObjConfiguration.
 
         群组类型（企业微信/钉钉/飞书）
 
@@ -224,7 +224,7 @@ class NotificationObjConfiguration:
 
     @property
     def group_id(self):
-        """Gets the group_id of this NotificationObjConfiguration.
+        r"""Gets the group_id of this NotificationObjConfiguration.
 
         群组ID
 
@@ -235,7 +235,7 @@ class NotificationObjConfiguration:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this NotificationObjConfiguration.
+        r"""Sets the group_id of this NotificationObjConfiguration.
 
         群组ID
 
@@ -246,7 +246,7 @@ class NotificationObjConfiguration:
 
     @property
     def group_name(self):
-        """Gets the group_name of this NotificationObjConfiguration.
+        r"""Gets the group_name of this NotificationObjConfiguration.
 
         群组名称
 
@@ -257,7 +257,7 @@ class NotificationObjConfiguration:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this NotificationObjConfiguration.
+        r"""Sets the group_name of this NotificationObjConfiguration.
 
         群组名称
 

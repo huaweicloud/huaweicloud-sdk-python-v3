@@ -29,7 +29,7 @@ class BatchAddDeviceToGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """BatchAddDeviceToGroupRequest
+        r"""BatchAddDeviceToGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAddDeviceToGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchAddDeviceToGroupRequest.
+        r"""Gets the instance_id of this BatchAddDeviceToGroupRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class BatchAddDeviceToGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchAddDeviceToGroupRequest.
+        r"""Sets the instance_id of this BatchAddDeviceToGroupRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class BatchAddDeviceToGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchAddDeviceToGroupRequest.
+        r"""Gets the group_id of this BatchAddDeviceToGroupRequest.
 
         设备分组ID
 
@@ -88,7 +88,7 @@ class BatchAddDeviceToGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchAddDeviceToGroupRequest.
+        r"""Sets the group_id of this BatchAddDeviceToGroupRequest.
 
         设备分组ID
 
@@ -99,7 +99,7 @@ class BatchAddDeviceToGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddDeviceToGroupRequest.
+        r"""Gets the body of this BatchAddDeviceToGroupRequest.
 
         :return: The body of this BatchAddDeviceToGroupRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`
@@ -108,7 +108,7 @@ class BatchAddDeviceToGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddDeviceToGroupRequest.
+        r"""Sets the body of this BatchAddDeviceToGroupRequest.
 
         :param body: The body of this BatchAddDeviceToGroupRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`

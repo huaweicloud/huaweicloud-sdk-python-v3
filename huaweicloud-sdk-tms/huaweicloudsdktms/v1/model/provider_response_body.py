@@ -29,7 +29,7 @@ class ProviderResponseBody:
     }
 
     def __init__(self, provider=None, provider_i18n_display_name=None, resource_types=None):
-        """ProviderResponseBody
+        r"""ProviderResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ProviderResponseBody:
 
     @property
     def provider(self):
-        """Gets the provider of this ProviderResponseBody.
+        r"""Gets the provider of this ProviderResponseBody.
 
         云服务名称
 
@@ -65,7 +65,7 @@ class ProviderResponseBody:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ProviderResponseBody.
+        r"""Sets the provider of this ProviderResponseBody.
 
         云服务名称
 
@@ -76,7 +76,7 @@ class ProviderResponseBody:
 
     @property
     def provider_i18n_display_name(self):
-        """Gets the provider_i18n_display_name of this ProviderResponseBody.
+        r"""Gets the provider_i18n_display_name of this ProviderResponseBody.
 
         服务显示名称，可以通过参数中“locale”设置语言。
 
@@ -87,7 +87,7 @@ class ProviderResponseBody:
 
     @provider_i18n_display_name.setter
     def provider_i18n_display_name(self, provider_i18n_display_name):
-        """Sets the provider_i18n_display_name of this ProviderResponseBody.
+        r"""Sets the provider_i18n_display_name of this ProviderResponseBody.
 
         服务显示名称，可以通过参数中“locale”设置语言。
 
@@ -98,7 +98,7 @@ class ProviderResponseBody:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ProviderResponseBody.
+        r"""Gets the resource_types of this ProviderResponseBody.
 
         资源类型列表
 
@@ -109,7 +109,7 @@ class ProviderResponseBody:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ProviderResponseBody.
+        r"""Sets the resource_types of this ProviderResponseBody.
 
         资源类型列表
 

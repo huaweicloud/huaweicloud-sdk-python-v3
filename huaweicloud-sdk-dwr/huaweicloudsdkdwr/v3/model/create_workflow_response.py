@@ -38,7 +38,7 @@ class CreateWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, graph_name=None, graph_urn=None, created_at=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """CreateWorkflowResponse
+        r"""CreateWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this CreateWorkflowResponse.
+        r"""Gets the graph_name of this CreateWorkflowResponse.
 
         工作流名称。
 
@@ -97,7 +97,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this CreateWorkflowResponse.
+        r"""Sets the graph_name of this CreateWorkflowResponse.
 
         工作流名称。
 
@@ -108,7 +108,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def graph_urn(self):
-        """Gets the graph_urn of this CreateWorkflowResponse.
+        r"""Gets the graph_urn of this CreateWorkflowResponse.
 
         工作流的URN。
 
@@ -119,7 +119,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @graph_urn.setter
     def graph_urn(self, graph_urn):
-        """Sets the graph_urn of this CreateWorkflowResponse.
+        r"""Sets the graph_urn of this CreateWorkflowResponse.
 
         工作流的URN。
 
@@ -130,7 +130,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateWorkflowResponse.
+        r"""Gets the created_at of this CreateWorkflowResponse.
 
         工作流创建的时间。
 
@@ -141,7 +141,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateWorkflowResponse.
+        r"""Sets the created_at of this CreateWorkflowResponse.
 
         工作流创建的时间。
 
@@ -152,7 +152,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateWorkflowResponse.
+        r"""Gets the x_request_id of this CreateWorkflowResponse.
 
         :return: The x_request_id of this CreateWorkflowResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateWorkflowResponse.
+        r"""Sets the x_request_id of this CreateWorkflowResponse.
 
         :param x_request_id: The x_request_id of this CreateWorkflowResponse.
         :type x_request_id: str
@@ -170,7 +170,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this CreateWorkflowResponse.
+        r"""Gets the connection of this CreateWorkflowResponse.
 
         :return: The connection of this CreateWorkflowResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this CreateWorkflowResponse.
+        r"""Sets the connection of this CreateWorkflowResponse.
 
         :param connection: The connection of this CreateWorkflowResponse.
         :type connection: str
@@ -188,7 +188,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this CreateWorkflowResponse.
+        r"""Gets the content_length of this CreateWorkflowResponse.
 
         :return: The content_length of this CreateWorkflowResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this CreateWorkflowResponse.
+        r"""Sets the content_length of this CreateWorkflowResponse.
 
         :param content_length: The content_length of this CreateWorkflowResponse.
         :type content_length: str
@@ -206,7 +206,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this CreateWorkflowResponse.
+        r"""Gets the date of this CreateWorkflowResponse.
 
         :return: The date of this CreateWorkflowResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CreateWorkflowResponse.
+        r"""Sets the date of this CreateWorkflowResponse.
 
         :param date: The date of this CreateWorkflowResponse.
         :type date: str

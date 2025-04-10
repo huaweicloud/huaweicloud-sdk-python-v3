@@ -27,7 +27,7 @@ class ServerAppInfoLastUpdatedUser:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """ServerAppInfoLastUpdatedUser
+        r"""ServerAppInfoLastUpdatedUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServerAppInfoLastUpdatedUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ServerAppInfoLastUpdatedUser.
+        r"""Gets the user_id of this ServerAppInfoLastUpdatedUser.
 
         最后修改者的用户ID
 
@@ -61,7 +61,7 @@ class ServerAppInfoLastUpdatedUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ServerAppInfoLastUpdatedUser.
+        r"""Sets the user_id of this ServerAppInfoLastUpdatedUser.
 
         最后修改者的用户ID
 
@@ -72,7 +72,7 @@ class ServerAppInfoLastUpdatedUser:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ServerAppInfoLastUpdatedUser.
+        r"""Gets the user_name of this ServerAppInfoLastUpdatedUser.
 
         最后修改者的用户名
 
@@ -83,7 +83,7 @@ class ServerAppInfoLastUpdatedUser:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ServerAppInfoLastUpdatedUser.
+        r"""Sets the user_name of this ServerAppInfoLastUpdatedUser.
 
         最后修改者的用户名
 

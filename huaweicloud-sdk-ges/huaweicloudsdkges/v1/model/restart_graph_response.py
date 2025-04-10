@@ -30,7 +30,7 @@ class RestartGraphResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_id=None):
-        """RestartGraphResponse
+        r"""RestartGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RestartGraphResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this RestartGraphResponse.
+        r"""Gets the error_message of this RestartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -69,7 +69,7 @@ class RestartGraphResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this RestartGraphResponse.
+        r"""Sets the error_message of this RestartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -80,7 +80,7 @@ class RestartGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RestartGraphResponse.
+        r"""Gets the error_code of this RestartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -91,7 +91,7 @@ class RestartGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RestartGraphResponse.
+        r"""Sets the error_code of this RestartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -102,7 +102,7 @@ class RestartGraphResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartGraphResponse.
+        r"""Gets the job_id of this RestartGraphResponse.
 
         强制重启任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
@@ -113,7 +113,7 @@ class RestartGraphResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartGraphResponse.
+        r"""Sets the job_id of this RestartGraphResponse.
 
         强制重启任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 

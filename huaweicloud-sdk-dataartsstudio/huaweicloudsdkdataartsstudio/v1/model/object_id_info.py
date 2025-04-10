@@ -29,7 +29,7 @@ class ObjectIdInfo:
     }
 
     def __init__(self, name=None, type_name=None, qualified_name=None):
-        """ObjectIdInfo
+        r"""ObjectIdInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObjectIdInfo:
 
     @property
     def name(self):
-        """Gets the name of this ObjectIdInfo.
+        r"""Gets the name of this ObjectIdInfo.
 
         作业算子名称
 
@@ -68,7 +68,7 @@ class ObjectIdInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ObjectIdInfo.
+        r"""Sets the name of this ObjectIdInfo.
 
         作业算子名称
 
@@ -79,7 +79,7 @@ class ObjectIdInfo:
 
     @property
     def type_name(self):
-        """Gets the type_name of this ObjectIdInfo.
+        r"""Gets the type_name of this ObjectIdInfo.
 
         资产类型
 
@@ -90,7 +90,7 @@ class ObjectIdInfo:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this ObjectIdInfo.
+        r"""Sets the type_name of this ObjectIdInfo.
 
         资产类型
 
@@ -101,7 +101,7 @@ class ObjectIdInfo:
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this ObjectIdInfo.
+        r"""Gets the qualified_name of this ObjectIdInfo.
 
         作业资产唯一限定名称
 
@@ -112,7 +112,7 @@ class ObjectIdInfo:
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this ObjectIdInfo.
+        r"""Sets the qualified_name of this ObjectIdInfo.
 
         作业资产唯一限定名称
 

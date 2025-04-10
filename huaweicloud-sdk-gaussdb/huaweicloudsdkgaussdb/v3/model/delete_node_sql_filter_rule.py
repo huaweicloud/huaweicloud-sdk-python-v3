@@ -27,7 +27,7 @@ class DeleteNodeSqlFilterRule:
     }
 
     def __init__(self, sql_type=None, patterns=None):
-        """DeleteNodeSqlFilterRule
+        r"""DeleteNodeSqlFilterRule
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNodeSqlFilterRule:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this DeleteNodeSqlFilterRule.
+        r"""Gets the sql_type of this DeleteNodeSqlFilterRule.
 
         Sql限流类型。  取值范围： - SELECT - UPDATE - DELETE
 
@@ -59,7 +59,7 @@ class DeleteNodeSqlFilterRule:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this DeleteNodeSqlFilterRule.
+        r"""Sets the sql_type of this DeleteNodeSqlFilterRule.
 
         Sql限流类型。  取值范围： - SELECT - UPDATE - DELETE
 
@@ -70,7 +70,7 @@ class DeleteNodeSqlFilterRule:
 
     @property
     def patterns(self):
-        """Gets the patterns of this DeleteNodeSqlFilterRule.
+        r"""Gets the patterns of this DeleteNodeSqlFilterRule.
 
         SQL限流具体规则。
 
@@ -81,7 +81,7 @@ class DeleteNodeSqlFilterRule:
 
     @patterns.setter
     def patterns(self, patterns):
-        """Sets the patterns of this DeleteNodeSqlFilterRule.
+        r"""Sets the patterns of this DeleteNodeSqlFilterRule.
 
         SQL限流具体规则。
 

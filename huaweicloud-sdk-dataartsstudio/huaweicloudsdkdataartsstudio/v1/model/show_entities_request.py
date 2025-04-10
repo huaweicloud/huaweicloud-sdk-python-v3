@@ -27,7 +27,7 @@ class ShowEntitiesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ShowEntitiesRequest
+        r"""ShowEntitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowEntitiesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowEntitiesRequest.
+        r"""Gets the workspace of this ShowEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ShowEntitiesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowEntitiesRequest.
+        r"""Sets the workspace of this ShowEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ShowEntitiesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowEntitiesRequest.
+        r"""Gets the body of this ShowEntitiesRequest.
 
         :return: The body of this ShowEntitiesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenEntitySearchRequest`
@@ -80,7 +80,7 @@ class ShowEntitiesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowEntitiesRequest.
+        r"""Sets the body of this ShowEntitiesRequest.
 
         :param body: The body of this ShowEntitiesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.OpenEntitySearchRequest`

@@ -25,7 +25,7 @@ class StartGraphReq:
     }
 
     def __init__(self, graph_backup_id=None):
-        """StartGraphReq
+        r"""StartGraphReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartGraphReq:
 
     @property
     def graph_backup_id(self):
-        """Gets the graph_backup_id of this StartGraphReq.
+        r"""Gets the graph_backup_id of this StartGraphReq.
 
         启动图时关联的备份ID，设置此参数时，表示从备份进行启动；如果为空，表示从上次关闭图时的状态启动。
 
@@ -54,7 +54,7 @@ class StartGraphReq:
 
     @graph_backup_id.setter
     def graph_backup_id(self, graph_backup_id):
-        """Sets the graph_backup_id of this StartGraphReq.
+        r"""Sets the graph_backup_id of this StartGraphReq.
 
         启动图时关联的备份ID，设置此参数时，表示从备份进行启动；如果为空，表示从上次关闭图时的状态启动。
 

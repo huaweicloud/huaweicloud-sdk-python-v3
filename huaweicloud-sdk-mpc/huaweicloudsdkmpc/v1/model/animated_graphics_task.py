@@ -45,7 +45,7 @@ class AnimatedGraphicsTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None, output_param=None):
-        """AnimatedGraphicsTask
+        r"""AnimatedGraphicsTask
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AnimatedGraphicsTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this AnimatedGraphicsTask.
+        r"""Gets the task_id of this AnimatedGraphicsTask.
 
         任务ID 
 
@@ -124,7 +124,7 @@ class AnimatedGraphicsTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AnimatedGraphicsTask.
+        r"""Sets the task_id of this AnimatedGraphicsTask.
 
         任务ID 
 
@@ -135,7 +135,7 @@ class AnimatedGraphicsTask:
 
     @property
     def status(self):
-        """Gets the status of this AnimatedGraphicsTask.
+        r"""Gets the status of this AnimatedGraphicsTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -146,7 +146,7 @@ class AnimatedGraphicsTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AnimatedGraphicsTask.
+        r"""Sets the status of this AnimatedGraphicsTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -157,7 +157,7 @@ class AnimatedGraphicsTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AnimatedGraphicsTask.
+        r"""Gets the create_time of this AnimatedGraphicsTask.
 
         任务创建时间 
 
@@ -168,7 +168,7 @@ class AnimatedGraphicsTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AnimatedGraphicsTask.
+        r"""Sets the create_time of this AnimatedGraphicsTask.
 
         任务创建时间 
 
@@ -179,7 +179,7 @@ class AnimatedGraphicsTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AnimatedGraphicsTask.
+        r"""Gets the start_time of this AnimatedGraphicsTask.
 
         任务启动时间 
 
@@ -190,7 +190,7 @@ class AnimatedGraphicsTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AnimatedGraphicsTask.
+        r"""Sets the start_time of this AnimatedGraphicsTask.
 
         任务启动时间 
 
@@ -201,7 +201,7 @@ class AnimatedGraphicsTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AnimatedGraphicsTask.
+        r"""Gets the end_time of this AnimatedGraphicsTask.
 
         任务结束时间 
 
@@ -212,7 +212,7 @@ class AnimatedGraphicsTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AnimatedGraphicsTask.
+        r"""Sets the end_time of this AnimatedGraphicsTask.
 
         任务结束时间 
 
@@ -223,7 +223,7 @@ class AnimatedGraphicsTask:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AnimatedGraphicsTask.
+        r"""Gets the error_code of this AnimatedGraphicsTask.
 
         任务的返回码。 
 
@@ -234,7 +234,7 @@ class AnimatedGraphicsTask:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AnimatedGraphicsTask.
+        r"""Sets the error_code of this AnimatedGraphicsTask.
 
         任务的返回码。 
 
@@ -245,7 +245,7 @@ class AnimatedGraphicsTask:
 
     @property
     def description(self):
-        """Gets the description of this AnimatedGraphicsTask.
+        r"""Gets the description of this AnimatedGraphicsTask.
 
         错误描述 
 
@@ -256,7 +256,7 @@ class AnimatedGraphicsTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AnimatedGraphicsTask.
+        r"""Sets the description of this AnimatedGraphicsTask.
 
         错误描述 
 
@@ -267,7 +267,7 @@ class AnimatedGraphicsTask:
 
     @property
     def user_data(self):
-        """Gets the user_data of this AnimatedGraphicsTask.
+        r"""Gets the user_data of this AnimatedGraphicsTask.
 
         用户数据。 
 
@@ -278,7 +278,7 @@ class AnimatedGraphicsTask:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this AnimatedGraphicsTask.
+        r"""Sets the user_data of this AnimatedGraphicsTask.
 
         用户数据。 
 
@@ -289,7 +289,7 @@ class AnimatedGraphicsTask:
 
     @property
     def input(self):
-        """Gets the input of this AnimatedGraphicsTask.
+        r"""Gets the input of this AnimatedGraphicsTask.
 
         :return: The input of this AnimatedGraphicsTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -298,7 +298,7 @@ class AnimatedGraphicsTask:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this AnimatedGraphicsTask.
+        r"""Sets the input of this AnimatedGraphicsTask.
 
         :param input: The input of this AnimatedGraphicsTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -307,7 +307,7 @@ class AnimatedGraphicsTask:
 
     @property
     def output(self):
-        """Gets the output of this AnimatedGraphicsTask.
+        r"""Gets the output of this AnimatedGraphicsTask.
 
         :return: The output of this AnimatedGraphicsTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -316,7 +316,7 @@ class AnimatedGraphicsTask:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this AnimatedGraphicsTask.
+        r"""Sets the output of this AnimatedGraphicsTask.
 
         :param output: The output of this AnimatedGraphicsTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -325,7 +325,7 @@ class AnimatedGraphicsTask:
 
     @property
     def output_param(self):
-        """Gets the output_param of this AnimatedGraphicsTask.
+        r"""Gets the output_param of this AnimatedGraphicsTask.
 
         :return: The output_param of this AnimatedGraphicsTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
@@ -334,7 +334,7 @@ class AnimatedGraphicsTask:
 
     @output_param.setter
     def output_param(self, output_param):
-        """Sets the output_param of this AnimatedGraphicsTask.
+        r"""Sets the output_param of this AnimatedGraphicsTask.
 
         :param output_param: The output_param of this AnimatedGraphicsTask.
         :type output_param: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`

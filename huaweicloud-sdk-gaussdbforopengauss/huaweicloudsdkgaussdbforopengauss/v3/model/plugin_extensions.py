@@ -27,7 +27,7 @@ class PluginExtensions:
     }
 
     def __init__(self, extension_name=None, status=None):
-        """PluginExtensions
+        r"""PluginExtensions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PluginExtensions:
 
     @property
     def extension_name(self):
-        """Gets the extension_name of this PluginExtensions.
+        r"""Gets the extension_name of this PluginExtensions.
 
         拓展名称
 
@@ -61,7 +61,7 @@ class PluginExtensions:
 
     @extension_name.setter
     def extension_name(self, extension_name):
-        """Sets the extension_name of this PluginExtensions.
+        r"""Sets the extension_name of this PluginExtensions.
 
         拓展名称
 
@@ -72,7 +72,7 @@ class PluginExtensions:
 
     @property
     def status(self):
-        """Gets the status of this PluginExtensions.
+        r"""Gets the status of this PluginExtensions.
 
         拓展状态。on表示开启，off表示关闭。
 
@@ -83,7 +83,7 @@ class PluginExtensions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PluginExtensions.
+        r"""Sets the status of this PluginExtensions.
 
         拓展状态。on表示开启，off表示关闭。
 

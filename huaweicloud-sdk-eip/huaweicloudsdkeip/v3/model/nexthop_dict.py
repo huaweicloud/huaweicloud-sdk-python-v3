@@ -27,7 +27,7 @@ class NexthopDict:
     }
 
     def __init__(self, ip_address=None, mode=None):
-        """NexthopDict
+        r"""NexthopDict
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NexthopDict:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this NexthopDict.
+        r"""Gets the ip_address of this NexthopDict.
 
         功能说明：下一跳的实际地址  约束：同一virtualnexthop中的nexthops列表，不同下一跳之间的地址不允许重复
 
@@ -61,7 +61,7 @@ class NexthopDict:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this NexthopDict.
+        r"""Sets the ip_address of this NexthopDict.
 
         功能说明：下一跳的实际地址  约束：同一virtualnexthop中的nexthops列表，不同下一跳之间的地址不允许重复
 
@@ -72,7 +72,7 @@ class NexthopDict:
 
     @property
     def mode(self):
-        """Gets the mode of this NexthopDict.
+        r"""Gets the mode of this NexthopDict.
 
         功能说明：标识主备模式，与virtualnexthop的forward_mode配合使用  取值范围：'ACTIVE'主、'STANDBY'备
 
@@ -83,7 +83,7 @@ class NexthopDict:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this NexthopDict.
+        r"""Sets the mode of this NexthopDict.
 
         功能说明：标识主备模式，与virtualnexthop的forward_mode配合使用  取值范围：'ACTIVE'主、'STANDBY'备
 

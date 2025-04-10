@@ -27,7 +27,7 @@ class ChangeModeRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ChangeModeRequest
+        r"""ChangeModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeModeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ChangeModeRequest.
+        r"""Gets the cluster_id of this ChangeModeRequest.
 
         指定修改的集群ID。
 
@@ -60,7 +60,7 @@ class ChangeModeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ChangeModeRequest.
+        r"""Sets the cluster_id of this ChangeModeRequest.
 
         指定修改的集群ID。
 
@@ -71,7 +71,7 @@ class ChangeModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeModeRequest.
+        r"""Gets the body of this ChangeModeRequest.
 
         :return: The body of this ChangeModeRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.ChangeModeReq`
@@ -80,7 +80,7 @@ class ChangeModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeModeRequest.
+        r"""Sets the body of this ChangeModeRequest.
 
         :param body: The body of this ChangeModeRequest.
         :type body: :class:`huaweicloudsdkcss.v1.ChangeModeReq`

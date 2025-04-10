@@ -25,7 +25,7 @@ class DeleteAssetModelRequest:
     }
 
     def __init__(self, model_id=None):
-        """DeleteAssetModelRequest
+        r"""DeleteAssetModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAssetModelRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this DeleteAssetModelRequest.
+        r"""Gets the model_id of this DeleteAssetModelRequest.
 
         模型ID
 
@@ -53,7 +53,7 @@ class DeleteAssetModelRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this DeleteAssetModelRequest.
+        r"""Sets the model_id of this DeleteAssetModelRequest.
 
         模型ID
 

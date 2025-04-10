@@ -30,7 +30,7 @@ class CreateVpcAttachmentRequest:
     }
 
     def __init__(self, x_client_token=None, er_id=None, body=None):
-        """CreateVpcAttachmentRequest
+        r"""CreateVpcAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVpcAttachmentRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVpcAttachmentRequest.
+        r"""Gets the x_client_token of this CreateVpcAttachmentRequest.
 
         幂等性标识
 
@@ -68,7 +68,7 @@ class CreateVpcAttachmentRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVpcAttachmentRequest.
+        r"""Sets the x_client_token of this CreateVpcAttachmentRequest.
 
         幂等性标识
 
@@ -79,7 +79,7 @@ class CreateVpcAttachmentRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this CreateVpcAttachmentRequest.
+        r"""Gets the er_id of this CreateVpcAttachmentRequest.
 
         企业路由器实例ID
 
@@ -90,7 +90,7 @@ class CreateVpcAttachmentRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this CreateVpcAttachmentRequest.
+        r"""Sets the er_id of this CreateVpcAttachmentRequest.
 
         企业路由器实例ID
 
@@ -101,7 +101,7 @@ class CreateVpcAttachmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpcAttachmentRequest.
+        r"""Gets the body of this CreateVpcAttachmentRequest.
 
         :return: The body of this CreateVpcAttachmentRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateVpcAttachmentBody`
@@ -110,7 +110,7 @@ class CreateVpcAttachmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpcAttachmentRequest.
+        r"""Sets the body of this CreateVpcAttachmentRequest.
 
         :param body: The body of this CreateVpcAttachmentRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateVpcAttachmentBody`

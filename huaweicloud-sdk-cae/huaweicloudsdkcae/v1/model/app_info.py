@@ -27,7 +27,7 @@ class AppInfo:
     }
 
     def __init__(self, app_id=None, app_name=None):
-        """AppInfo
+        r"""AppInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppInfo.
+        r"""Gets the app_id of this AppInfo.
 
         应用ID。
 
@@ -61,7 +61,7 @@ class AppInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppInfo.
+        r"""Sets the app_id of this AppInfo.
 
         应用ID。
 
@@ -72,7 +72,7 @@ class AppInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppInfo.
+        r"""Gets the app_name of this AppInfo.
 
         应用名称。
 
@@ -83,7 +83,7 @@ class AppInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppInfo.
+        r"""Sets the app_name of this AppInfo.
 
         应用名称。
 

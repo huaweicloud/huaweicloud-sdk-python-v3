@@ -41,7 +41,7 @@ class HistoryStreamInfo:
     }
 
     def __init__(self, domain=None, app=None, stream=None, type=None, video_codec=None, audio_codec=None, client_ip=None, start_time=None, end_time=None):
-        """HistoryStreamInfo
+        r"""HistoryStreamInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class HistoryStreamInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this HistoryStreamInfo.
+        r"""Gets the domain of this HistoryStreamInfo.
 
         推流域名。  - type为0表主播推流域名。  - type为1表示第三方推流域名 
 
@@ -110,7 +110,7 @@ class HistoryStreamInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this HistoryStreamInfo.
+        r"""Sets the domain of this HistoryStreamInfo.
 
         推流域名。  - type为0表主播推流域名。  - type为1表示第三方推流域名 
 
@@ -121,7 +121,7 @@ class HistoryStreamInfo:
 
     @property
     def app(self):
-        """Gets the app of this HistoryStreamInfo.
+        r"""Gets the app of this HistoryStreamInfo.
 
         应用名称。
 
@@ -132,7 +132,7 @@ class HistoryStreamInfo:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this HistoryStreamInfo.
+        r"""Sets the app of this HistoryStreamInfo.
 
         应用名称。
 
@@ -143,7 +143,7 @@ class HistoryStreamInfo:
 
     @property
     def stream(self):
-        """Gets the stream of this HistoryStreamInfo.
+        r"""Gets the stream of this HistoryStreamInfo.
 
         流名。
 
@@ -154,7 +154,7 @@ class HistoryStreamInfo:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this HistoryStreamInfo.
+        r"""Sets the stream of this HistoryStreamInfo.
 
         流名。
 
@@ -165,7 +165,7 @@ class HistoryStreamInfo:
 
     @property
     def type(self):
-        """Gets the type of this HistoryStreamInfo.
+        r"""Gets the type of this HistoryStreamInfo.
 
         推流类型，取值如下：  - 0：表示主播推流  - 1：表示第三方推流 
 
@@ -176,7 +176,7 @@ class HistoryStreamInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HistoryStreamInfo.
+        r"""Sets the type of this HistoryStreamInfo.
 
         推流类型，取值如下：  - 0：表示主播推流  - 1：表示第三方推流 
 
@@ -187,7 +187,7 @@ class HistoryStreamInfo:
 
     @property
     def video_codec(self):
-        """Gets the video_codec of this HistoryStreamInfo.
+        r"""Gets the video_codec of this HistoryStreamInfo.
 
         视频编码格式。
 
@@ -198,7 +198,7 @@ class HistoryStreamInfo:
 
     @video_codec.setter
     def video_codec(self, video_codec):
-        """Sets the video_codec of this HistoryStreamInfo.
+        r"""Sets the video_codec of this HistoryStreamInfo.
 
         视频编码格式。
 
@@ -209,7 +209,7 @@ class HistoryStreamInfo:
 
     @property
     def audio_codec(self):
-        """Gets the audio_codec of this HistoryStreamInfo.
+        r"""Gets the audio_codec of this HistoryStreamInfo.
 
         音频编码格式。
 
@@ -220,7 +220,7 @@ class HistoryStreamInfo:
 
     @audio_codec.setter
     def audio_codec(self, audio_codec):
-        """Sets the audio_codec of this HistoryStreamInfo.
+        r"""Sets the audio_codec of this HistoryStreamInfo.
 
         音频编码格式。
 
@@ -231,7 +231,7 @@ class HistoryStreamInfo:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this HistoryStreamInfo.
+        r"""Gets the client_ip of this HistoryStreamInfo.
 
         主播ip。
 
@@ -242,7 +242,7 @@ class HistoryStreamInfo:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this HistoryStreamInfo.
+        r"""Sets the client_ip of this HistoryStreamInfo.
 
         主播ip。
 
@@ -253,7 +253,7 @@ class HistoryStreamInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this HistoryStreamInfo.
+        r"""Gets the start_time of this HistoryStreamInfo.
 
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -264,7 +264,7 @@ class HistoryStreamInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this HistoryStreamInfo.
+        r"""Sets the start_time of this HistoryStreamInfo.
 
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -275,7 +275,7 @@ class HistoryStreamInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this HistoryStreamInfo.
+        r"""Gets the end_time of this HistoryStreamInfo.
 
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -286,7 +286,7 @@ class HistoryStreamInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this HistoryStreamInfo.
+        r"""Sets the end_time of this HistoryStreamInfo.
 
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 

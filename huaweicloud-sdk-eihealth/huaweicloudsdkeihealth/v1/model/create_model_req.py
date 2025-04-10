@@ -35,7 +35,7 @@ class CreateModelReq:
     }
 
     def __init__(self, name=None, description=None, type=None, file=None, shareable=None, base_model_id=None):
-        """CreateModelReq
+        r"""CreateModelReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateModelReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateModelReq.
+        r"""Gets the name of this CreateModelReq.
 
         模型名称，取值范围：[5,32]，允许大小写字母、数字、下划线(_)、中划线(-)和空格,只能以字母开头
 
@@ -86,7 +86,7 @@ class CreateModelReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateModelReq.
+        r"""Sets the name of this CreateModelReq.
 
         模型名称，取值范围：[5,32]，允许大小写字母、数字、下划线(_)、中划线(-)和空格,只能以字母开头
 
@@ -97,7 +97,7 @@ class CreateModelReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateModelReq.
+        r"""Gets the description of this CreateModelReq.
 
         模型描述信息
 
@@ -108,7 +108,7 @@ class CreateModelReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateModelReq.
+        r"""Sets the description of this CreateModelReq.
 
         模型描述信息
 
@@ -119,7 +119,7 @@ class CreateModelReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateModelReq.
+        r"""Gets the type of this CreateModelReq.
 
         :return: The type of this CreateModelReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ModelType`
@@ -128,7 +128,7 @@ class CreateModelReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateModelReq.
+        r"""Sets the type of this CreateModelReq.
 
         :param type: The type of this CreateModelReq.
         :type type: :class:`huaweicloudsdkeihealth.v1.ModelType`
@@ -137,7 +137,7 @@ class CreateModelReq:
 
     @property
     def file(self):
-        """Gets the file of this CreateModelReq.
+        r"""Gets the file of this CreateModelReq.
 
         :return: The file of this CreateModelReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ModelFile`
@@ -146,7 +146,7 @@ class CreateModelReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateModelReq.
+        r"""Sets the file of this CreateModelReq.
 
         :param file: The file of this CreateModelReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.ModelFile`
@@ -155,7 +155,7 @@ class CreateModelReq:
 
     @property
     def shareable(self):
-        """Gets the shareable of this CreateModelReq.
+        r"""Gets the shareable of this CreateModelReq.
 
         是否打开组织共享
 
@@ -166,7 +166,7 @@ class CreateModelReq:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this CreateModelReq.
+        r"""Sets the shareable of this CreateModelReq.
 
         是否打开组织共享
 
@@ -177,7 +177,7 @@ class CreateModelReq:
 
     @property
     def base_model_id(self):
-        """Gets the base_model_id of this CreateModelReq.
+        r"""Gets the base_model_id of this CreateModelReq.
 
         基模型id
 
@@ -188,7 +188,7 @@ class CreateModelReq:
 
     @base_model_id.setter
     def base_model_id(self, base_model_id):
-        """Sets the base_model_id of this CreateModelReq.
+        r"""Sets the base_model_id of this CreateModelReq.
 
         基模型id
 

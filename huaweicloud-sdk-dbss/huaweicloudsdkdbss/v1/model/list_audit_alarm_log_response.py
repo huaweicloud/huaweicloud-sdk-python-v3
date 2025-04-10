@@ -28,7 +28,7 @@ class ListAuditAlarmLogResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, alarm_log=None):
-        """ListAuditAlarmLogResponse
+        r"""ListAuditAlarmLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditAlarmLogResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListAuditAlarmLogResponse.
+        r"""Gets the total_num of this ListAuditAlarmLogResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListAuditAlarmLogResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListAuditAlarmLogResponse.
+        r"""Sets the total_num of this ListAuditAlarmLogResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListAuditAlarmLogResponse(SdkResponse):
 
     @property
     def alarm_log(self):
-        """Gets the alarm_log of this ListAuditAlarmLogResponse.
+        r"""Gets the alarm_log of this ListAuditAlarmLogResponse.
 
         告警列表
 
@@ -84,7 +84,7 @@ class ListAuditAlarmLogResponse(SdkResponse):
 
     @alarm_log.setter
     def alarm_log(self, alarm_log):
-        """Sets the alarm_log of this ListAuditAlarmLogResponse.
+        r"""Sets the alarm_log of this ListAuditAlarmLogResponse.
 
         告警列表
 

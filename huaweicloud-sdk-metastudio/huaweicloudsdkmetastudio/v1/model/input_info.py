@@ -25,7 +25,7 @@ class InputInfo:
     }
 
     def __init__(self, rtc_room_info=None):
-        """InputInfo
+        r"""InputInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InputInfo:
 
     @property
     def rtc_room_info(self):
-        """Gets the rtc_room_info of this InputInfo.
+        r"""Gets the rtc_room_info of this InputInfo.
 
         :return: The rtc_room_info of this InputInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -52,7 +52,7 @@ class InputInfo:
 
     @rtc_room_info.setter
     def rtc_room_info(self, rtc_room_info):
-        """Sets the rtc_room_info of this InputInfo.
+        r"""Sets the rtc_room_info of this InputInfo.
 
         :param rtc_room_info: The rtc_room_info of this InputInfo.
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`

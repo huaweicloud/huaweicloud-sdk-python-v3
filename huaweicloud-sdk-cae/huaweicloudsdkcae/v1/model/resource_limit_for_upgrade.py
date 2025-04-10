@@ -27,7 +27,7 @@ class ResourceLimitForUpgrade:
     }
 
     def __init__(self, cpu_limit=None, memory_limit=None):
-        """ResourceLimitForUpgrade
+        r"""ResourceLimitForUpgrade
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceLimitForUpgrade:
 
     @property
     def cpu_limit(self):
-        """Gets the cpu_limit of this ResourceLimitForUpgrade.
+        r"""Gets the cpu_limit of this ResourceLimitForUpgrade.
 
         cpu限额。
 
@@ -61,7 +61,7 @@ class ResourceLimitForUpgrade:
 
     @cpu_limit.setter
     def cpu_limit(self, cpu_limit):
-        """Sets the cpu_limit of this ResourceLimitForUpgrade.
+        r"""Sets the cpu_limit of this ResourceLimitForUpgrade.
 
         cpu限额。
 
@@ -72,7 +72,7 @@ class ResourceLimitForUpgrade:
 
     @property
     def memory_limit(self):
-        """Gets the memory_limit of this ResourceLimitForUpgrade.
+        r"""Gets the memory_limit of this ResourceLimitForUpgrade.
 
         内存限额。
 
@@ -83,7 +83,7 @@ class ResourceLimitForUpgrade:
 
     @memory_limit.setter
     def memory_limit(self, memory_limit):
-        """Sets the memory_limit of this ResourceLimitForUpgrade.
+        r"""Sets the memory_limit of this ResourceLimitForUpgrade.
 
         内存限额。
 

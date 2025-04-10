@@ -34,7 +34,7 @@ class CssAsyncClient(Client):
         return client_builder
 
     def add_independent_node_async(self, request):
-        """添加独立master、client
+        r"""添加独立master、client
 
         由于集群数据面业务的增长或者不确定性，很难在一开始就能够把集群的规模形态想明白，该接口能够在非独立master和client的集群上面独立master、client角色。
         
@@ -103,7 +103,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def change_mode_async(self, request):
-        """安全模式修改
+        r"""安全模式修改
 
         该接口用于切换集群的安全模式。
         
@@ -170,7 +170,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def change_security_group_async(self, request):
-        """切换安全组
+        r"""切换安全组
 
         该接口可以在集群创建成功后，修改安全组。
         
@@ -237,7 +237,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_ai_ops_async(self, request):
-        """创建一次集群检测任务
+        r"""创建一次集群检测任务
 
         该接口用于创建一个集群检测任务。
         
@@ -304,7 +304,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_auto_create_policy_async(self, request):
-        """设置自动创建快照策略
+        r"""设置自动创建快照策略
 
         该接口用于设置自动创建快照，默认一天创建一个快照。
         
@@ -371,7 +371,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_bind_public_async(self, request):
-        """开启公网访问
+        r"""开启公网访问
 
         该接口用于开启公网访问。
         
@@ -438,7 +438,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建集群
+        r"""创建集群
 
         该接口用于创建集群。
         
@@ -503,7 +503,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_clusters_tags_async(self, request):
-        """添加指定集群标签
+        r"""添加指定集群标签
 
         该接口用于给指定集群添加标签。
         
@@ -572,7 +572,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_elb_listener_async(self, request):
-        """es监听器配置。
+        r"""es监听器配置。
 
         该接口用于es监听器配置。
         
@@ -639,7 +639,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_load_ik_thesaurus_async(self, request):
-        """加载自定义词库
+        r"""加载自定义词库
 
         该接口用于加载存放于OBS的自定义词库。
         
@@ -706,7 +706,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_log_backup_async(self, request):
-        """备份日志
+        r"""备份日志
 
         该接口用于备份日志。
         
@@ -771,7 +771,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_snapshot_async(self, request):
-        """手动创建快照
+        r"""手动创建快照
 
         该接口用于手动创建一个快照。
         
@@ -838,7 +838,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_ai_ops_async(self, request):
-        """删除一个检测任务记录
+        r"""删除一个检测任务记录
 
         该接口用于删除一个检测任务记录。
         
@@ -905,7 +905,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_cluster_async(self, request):
-        """删除集群
+        r"""删除集群
 
         此接口用于删除集群。集群删除将释放此集群的所有资源，包括客户数据。如果需要保留客户集群数据，建议在删除集群前先创建快照。
         
@@ -972,7 +972,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_clusters_tags_async(self, request):
-        """删除集群标签
+        r"""删除集群标签
 
         此接口用于删除集群标签。
         
@@ -1041,7 +1041,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_ik_thesaurus_async(self, request):
-        """删除自定义词库
+        r"""删除自定义词库
 
         该接口用于删除自定义词库。
         
@@ -1106,7 +1106,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_snapshot_async(self, request):
-        """删除快照
+        r"""删除快照
 
         该接口用于删除快照。
         
@@ -1173,7 +1173,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def download_cert_async(self, request):
-        """下载安全证书
+        r"""下载安全证书
 
         该接口用于下载安全证书。
         
@@ -1236,7 +1236,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def enable_or_disable_elb_async(self, request):
-        """打开或关闭es负载均衡器
+        r"""打开或关闭es负载均衡器
 
         该接口打开或关闭es负载均衡器。
         
@@ -1303,7 +1303,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_ai_ops_async(self, request):
-        """获取智能运维任务列表及详情
+        r"""获取智能运维任务列表及详情
 
         该接口用于获取智能运维任务列表及详情。
         
@@ -1372,7 +1372,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_clusters_details_async(self, request):
-        """查询集群列表
+        r"""查询集群列表
 
         该接口用于查询并显示集群列表以及集群的状态。
         
@@ -1441,7 +1441,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_clusters_tags_async(self, request):
-        """查询所有标签
+        r"""查询所有标签
 
         该接口用于查询指定region下的所有标签集合。
         
@@ -1506,7 +1506,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_elb_certs_async(self, request):
-        """查询证书列表
+        r"""查询证书列表
 
         该接口用于查询证书列表。
         
@@ -1571,7 +1571,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_elbs_async(self, request):
-        """查询集群支持的elbv3负载均衡器
+        r"""查询集群支持的elbv3负载均衡器
 
         展示查询集群支持的elbv3负载均衡器
         
@@ -1636,7 +1636,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        """获取实例规格列表
+        r"""获取实例规格列表
 
         该接口用于查询并显示支持的实例规格对应的ID。
         
@@ -1699,7 +1699,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_images_async(self, request):
-        """获取目标镜像ID
+        r"""获取目标镜像ID
 
         该接口用于获取当前集群的可升级目标镜像ID。
         
@@ -1766,7 +1766,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_logs_job_async(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         该接口用于查询具体某个集群的日志任务记录列表。
         
@@ -1835,7 +1835,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_smn_topics_async(self, request):
-        """获取智能运维告警可用的SMN主题
+        r"""获取智能运维告警可用的SMN主题
 
         该接口用于获取智能运维告警可用的SMN主题。
         
@@ -1900,7 +1900,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_snapshots_async(self, request):
-        """查询快照列表
+        r"""查询快照列表
 
         该接口用于查询集群的所有快照。
         
@@ -1965,7 +1965,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_ymls_async(self, request):
-        """获取参数配置列表
+        r"""获取参数配置列表
 
         该接口用于获取当前集群现有的参数配置列表。
         
@@ -2030,7 +2030,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_ymls_job_async(self, request):
-        """获取参数配置任务列表
+        r"""获取参数配置任务列表
 
         该接口可获取参数配置的任务操作列表。
         
@@ -2099,7 +2099,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def reset_password_async(self, request):
-        """修改密码
+        r"""修改密码
 
         该接口用于修改集群密码。
         
@@ -2166,7 +2166,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def restart_cluster_async(self, request):
-        """重启集群
+        r"""重启集群
 
         此接口用于重启集群，重启集群将导致业务中断。
         
@@ -2231,7 +2231,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def restore_snapshot_async(self, request):
-        """恢复快照
+        r"""恢复快照
 
         该接口用于手动恢复一个快照。
         
@@ -2300,7 +2300,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def retry_upgrade_task_async(self, request):
-        """重试升级失败任务
+        r"""重试升级失败任务
 
         由于升级过程时间较长，可能由于网络等原因导致升级失败，可以通过该接口重试该任务或终止该任务的影响。
         
@@ -2369,7 +2369,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_auto_create_policy_async(self, request):
-        """查询自动创建快照的策略
+        r"""查询自动创建快照的策略
 
         该接口用于查询自动创建快照策略。
         
@@ -2434,7 +2434,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_cluster_detail_async(self, request):
-        """查询集群详情
+        r"""查询集群详情
 
         该接口用于查询并显示单个集群详情。
         
@@ -2499,7 +2499,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_cluster_tag_async(self, request):
-        """查询指定集群的标签
+        r"""查询指定集群的标签
 
         该接口用于查询指定集群的标签信息。
         
@@ -2566,7 +2566,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_elb_detail_async(self, request):
-        """获取该esELB的信息，以及页面需要展示健康检查状态
+        r"""获取该esELB的信息，以及页面需要展示健康检查状态
 
         该接口用于获取该esELB的信息，以及页面需要展示健康检查状态。
         
@@ -2631,7 +2631,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_get_log_setting_async(self, request):
-        """查询日志基础配置
+        r"""查询日志基础配置
 
         该接口用于日志基础配置查询。
         
@@ -2696,7 +2696,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_ik_thesaurus_async(self, request):
-        """查询自定义词库状态
+        r"""查询自定义词库状态
 
         该接口用于查询自定义词库的加载状态。
         
@@ -2761,7 +2761,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_log_backup_async(self, request):
-        """查询日志
+        r"""查询日志
 
         该接口用于查询日志信息。
         
@@ -2828,7 +2828,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_vpcep_connection_async(self, request):
-        """获取终端节点连接
+        r"""获取终端节点连接
 
         该接口用于获取终端节点连接。
         
@@ -2897,7 +2897,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_auto_setting_async(self, request):
-        """自动设置集群快照的基础配置（不推荐使用）
+        r"""自动设置集群快照的基础配置（不推荐使用）
 
         该接口用于自动设置集群快照的基础配置，包括配置OBS桶和IAM委托。
         
@@ -2971,7 +2971,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_log_auto_backup_policy_async(self, request):
-        """开启日志自动备份策略
+        r"""开启日志自动备份策略
 
         该接口用于日志自动备份策略开启。
         
@@ -3038,7 +3038,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_logs_async(self, request):
-        """开启日志功能
+        r"""开启日志功能
 
         该接口用于开启日志功能。
         
@@ -3107,7 +3107,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_public_whitelist_async(self, request):
-        """开启公网访问控制白名单
+        r"""开启公网访问控制白名单
 
         该接口用于开启公网访问控制白名单。
         
@@ -3174,7 +3174,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_target_cluster_connectivity_test_async(self, request):
-        """连通性测试。
+        r"""连通性测试。
 
         该接口用于连通性测试。
         
@@ -3241,7 +3241,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_vpecp_async(self, request):
-        """开启终端节点服务
+        r"""开启终端节点服务
 
         该接口用于开启终端节点服务。
         
@@ -3308,7 +3308,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_log_auto_backup_policy_async(self, request):
-        """关闭日志自动备份策略
+        r"""关闭日志自动备份策略
 
         该接口用于日志自动备份策略关闭。
         
@@ -3373,7 +3373,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_logs_async(self, request):
-        """关闭日志功能
+        r"""关闭日志功能
 
         该接口用于关闭日志功能。
         
@@ -3438,7 +3438,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_public_whitelist_async(self, request):
-        """关闭公网访问控制白名单
+        r"""关闭公网访问控制白名单
 
         该接口用于关闭公网访问控制白名单。
         
@@ -3503,7 +3503,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_snapshot_async(self, request):
-        """停用快照功能
+        r"""停用快照功能
 
         该接口用于停用快照功能。
         
@@ -3568,7 +3568,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_vpecp_async(self, request):
-        """关闭终端节点服务
+        r"""关闭终端节点服务
 
         该接口用于关闭终端节点服务。
         
@@ -3633,7 +3633,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_az_by_instance_type_async(self, request):
-        """切换集群实例AZ
+        r"""切换集群实例AZ
 
         该接口通过指定节点类型切换AZ。
         
@@ -3702,7 +3702,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_batch_clusters_tags_async(self, request):
-        """批量添加或删除集群标签
+        r"""批量添加或删除集群标签
 
         该接口用于对集群批量添加或删除标签。
         
@@ -3771,7 +3771,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_cluster_name_async(self, request):
-        """修改集群名称
+        r"""修改集群名称
 
         该接口用于修改集群名称。
         
@@ -3838,7 +3838,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_es_listener_async(self, request):
-        """更新es监听器
+        r"""更新es监听器
 
         该接口用于更新es监听器。
         
@@ -3907,7 +3907,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_extend_cluster_async(self, request):
-        """扩容集群
+        r"""扩容集群
 
         该接口用于集群扩容实例（仅支持扩容elasticsearch实例）。只扩容普通节点，且只针对要扩容的集群实例不存在特殊节点（Master、Client、冷数据节点）的情况。
         
@@ -3976,7 +3976,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_extend_instance_storage_async(self, request):
-        """扩容实例的数量和存储容量
+        r"""扩容实例的数量和存储容量
 
         该接口用于集群扩容不同类型实例的个数以及存储容量。已经存在独立Master、Client、冷数据节点的集群使用该接口扩容。
         
@@ -4043,7 +4043,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_flavor_async(self, request):
-        """变更规格
+        r"""变更规格
 
         该接口用于变更集群规格。只支持变更ess节点类型。
         
@@ -4110,7 +4110,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_flavor_by_type_async(self, request):
-        """指定节点类型规格变更
+        r"""指定节点类型规格变更
 
         修改集群规格。支持修改:
         - ess： 数据节点。
@@ -4183,7 +4183,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_instance_async(self, request):
-        """节点替换
+        r"""节点替换
 
         该接口用于替换失败节点。
         
@@ -4250,7 +4250,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_log_setting_async(self, request):
-        """修改日志基础配置
+        r"""修改日志基础配置
 
         该接口用于修改日志基础配置。
         
@@ -4317,7 +4317,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_ondemand_cluster_to_period_async(self, request):
-        """按需集群转包周期
+        r"""按需集群转包周期
 
         该接口用于按需集群转包周期集群。
         
@@ -4384,7 +4384,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_public_band_width_async(self, request):
-        """修改公网访问带宽
+        r"""修改公网访问带宽
 
         该接口用于修改公网访问带宽。
         
@@ -4451,7 +4451,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_shrink_cluster_async(self, request):
-        """指定节点类型缩容
+        r"""指定节点类型缩容
 
         该接口用于集群对不同类型实例的个数以及存储容量进行缩容。包周期类型的集群不支持通过api进行指定节点类型缩容操作。
         
@@ -4518,7 +4518,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_shrink_nodes_async(self, request):
-        """指定节点缩容
+        r"""指定节点缩容
 
         该接口可以对集群现有节点中指定节点进行缩容。包周期类型的集群不支持通过api进行指定节点缩容操作。
         
@@ -4585,7 +4585,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_snapshot_setting_async(self, request):
-        """修改集群快照的基础配置
+        r"""修改集群快照的基础配置
 
         该接口用于修改集群快照的基础配置，可修改OBS桶和IAM委托。
         
@@ -4654,7 +4654,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_unbind_public_async(self, request):
-        """关闭公网访问
+        r"""关闭公网访问
 
         该接口用于关闭公网访问。包周期类型的集群不支持通过api进行关闭公网访问。
         
@@ -4721,7 +4721,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_vpcep_connection_async(self, request):
-        """更新终端节点连接
+        r"""更新终端节点连接
 
         该接口用于更新终端节点连接。
         
@@ -4788,7 +4788,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_vpcep_whitelist_async(self, request):
-        """修改终端节点服务白名单
+        r"""修改终端节点服务白名单
 
         该接口用于修改终端节点服务白名单。
         
@@ -4855,7 +4855,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_ymls_async(self, request):
-        """修改参数配置
+        r"""修改参数配置
 
         该接口用于修改参数配置。
         
@@ -4922,7 +4922,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def upgrade_core_async(self, request):
-        """集群内核升级
+        r"""集群内核升级
 
         该接口用于将低版本的ES升级到高版本或同版本ES。
         
@@ -4991,7 +4991,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def upgrade_detail_async(self, request):
-        """获取升级详情信息
+        r"""获取升级详情信息
 
         由于升级过程时间较长，该接口可以展示当前升级（切换AZ）节点的各个阶段信息。
         
@@ -5062,7 +5062,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_kibana_public_async(self, request):
-        """开启Kibana公网访问
+        r"""开启Kibana公网访问
 
         该接口用于开启Kibana公网访问。
         
@@ -5129,7 +5129,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_public_kibana_whitelist_async(self, request):
-        """关闭Kibana公网访问控制
+        r"""关闭Kibana公网访问控制
 
         该接口用于关闭Kibana公网访问控制。
         
@@ -5194,7 +5194,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_alter_kibana_async(self, request):
-        """修改Kibana公网带宽
+        r"""修改Kibana公网带宽
 
         该接口用于修改Kibana公网带宽。
         
@@ -5261,7 +5261,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_close_kibana_async(self, request):
-        """关闭Kibana公网访问
+        r"""关闭Kibana公网访问
 
         该接口用于关闭Kibana公网访问。包周期类型集群不支持通过api进行关闭Kibana公网访问。
         
@@ -5328,7 +5328,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_public_kibana_whitelist_async(self, request):
-        """修改Kibana公网访问控制
+        r"""修改Kibana公网访问控制
 
         该接口通过修改kibana白名单，修改kibana的访问权限。
         
@@ -5395,7 +5395,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def add_favorite_async(self, request):
-        """添加到自定义模板
+        r"""添加到自定义模板
 
         该接口用于添加到自定义模板。
         
@@ -5462,7 +5462,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def create_cnf_async(self, request):
-        """创建配置文件
+        r"""创建配置文件
 
         该接口用于创建配置文件。
         
@@ -5529,7 +5529,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_conf_async(self, request):
-        """删除配置文件
+        r"""删除配置文件
 
         删除配置文件。
         
@@ -5596,7 +5596,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_config_async(self, request):
-        """删除配置文件V2
+        r"""删除配置文件V2
 
         删除配置文件。
         
@@ -5663,7 +5663,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def delete_template_async(self, request):
-        """删除自定义模板
+        r"""删除自定义模板
 
         该接口用于删除自定义模板。
         
@@ -5728,7 +5728,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_actions_async(self, request):
-        """查询操作记录
+        r"""查询操作记录
 
         该接口用于查询操作记录。
         
@@ -5793,7 +5793,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_certs_async(self, request):
-        """查询证书列表
+        r"""查询证书列表
 
         该接口用于查询证书列表。
         
@@ -5864,7 +5864,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_confs_async(self, request):
-        """查询配置文件列表
+        r"""查询配置文件列表
 
         该接口用于查询配置文件列表。
         
@@ -5929,7 +5929,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_pipelines_async(self, request):
-        """查询pipeline列表
+        r"""查询pipeline列表
 
         该接口用于查询pipeline列表。
         
@@ -5994,7 +5994,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_templates_async(self, request):
-        """查询模板列表
+        r"""查询模板列表
 
         该接口用于查询模板列表。
         
@@ -6059,7 +6059,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def show_get_conf_detail_async(self, request):
-        """查询配置文件内容
+        r"""查询配置文件内容
 
         该接口用于查询配置文件内容。
         
@@ -6126,7 +6126,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_connectivity_test_async(self, request):
-        """连通性测试
+        r"""连通性测试
 
         该接口用于连通性测试。
         
@@ -6193,7 +6193,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_pipeline_async(self, request):
-        """启动pipeline迁移数据
+        r"""启动pipeline迁移数据
 
         该接口用于启动pipeline迁移数据。
         
@@ -6260,7 +6260,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_hot_pipeline_async(self, request):
-        """热停止pipeline迁移数据。
+        r"""热停止pipeline迁移数据。
 
         该接口用于热停止pipeline迁移数据。
         
@@ -6327,7 +6327,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def stop_pipeline_async(self, request):
-        """停止pipeline迁移数据
+        r"""停止pipeline迁移数据
 
         该接口用于停止pipeline迁移数据。
         
@@ -6392,7 +6392,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_cnf_async(self, request):
-        """更新配置文件
+        r"""更新配置文件
 
         该接口用于更新配置文件。
         

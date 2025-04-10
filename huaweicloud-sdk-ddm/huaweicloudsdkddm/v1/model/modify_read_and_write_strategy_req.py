@@ -25,7 +25,7 @@ class ModifyReadAndWriteStrategyReq:
     }
 
     def __init__(self, read_weight=None):
-        """ModifyReadAndWriteStrategyReq
+        r"""ModifyReadAndWriteStrategyReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyReadAndWriteStrategyReq:
 
     @property
     def read_weight(self):
-        """Gets the read_weight of this ModifyReadAndWriteStrategyReq.
+        r"""Gets the read_weight of this ModifyReadAndWriteStrategyReq.
 
         主数据库实例与只读数据库实例的读权重集合。
 
@@ -53,7 +53,7 @@ class ModifyReadAndWriteStrategyReq:
 
     @read_weight.setter
     def read_weight(self, read_weight):
-        """Sets the read_weight of this ModifyReadAndWriteStrategyReq.
+        r"""Sets the read_weight of this ModifyReadAndWriteStrategyReq.
 
         主数据库实例与只读数据库实例的读权重集合。
 

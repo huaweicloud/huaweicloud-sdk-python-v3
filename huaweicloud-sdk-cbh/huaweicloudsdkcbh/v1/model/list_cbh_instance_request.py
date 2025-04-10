@@ -23,7 +23,7 @@ class ListCbhInstanceRequest:
     }
 
     def __init__(self):
-        """ListCbhInstanceRequest
+        r"""ListCbhInstanceRequest
 
         The model defined in huaweicloud sdk
 

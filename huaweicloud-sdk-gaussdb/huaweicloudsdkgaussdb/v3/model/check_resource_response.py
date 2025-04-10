@@ -26,7 +26,7 @@ class CheckResourceResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CheckResourceResponse
+        r"""CheckResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckResourceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckResourceResponse.
+        r"""Gets the result of this CheckResourceResponse.
 
         结果。 - true：表示通过。 - false：表示不通过。
 
@@ -55,7 +55,7 @@ class CheckResourceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckResourceResponse.
+        r"""Sets the result of this CheckResourceResponse.
 
         结果。 - true：表示通过。 - false：表示不通过。
 

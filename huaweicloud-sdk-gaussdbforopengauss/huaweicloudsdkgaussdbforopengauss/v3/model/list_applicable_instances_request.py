@@ -31,7 +31,7 @@ class ListApplicableInstancesRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, offset=None, limit=None):
-        """ListApplicableInstancesRequest
+        r"""ListApplicableInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListApplicableInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListApplicableInstancesRequest.
+        r"""Gets the x_language of this ListApplicableInstancesRequest.
 
         语言。
 
@@ -74,7 +74,7 @@ class ListApplicableInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListApplicableInstancesRequest.
+        r"""Sets the x_language of this ListApplicableInstancesRequest.
 
         语言。
 
@@ -85,7 +85,7 @@ class ListApplicableInstancesRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ListApplicableInstancesRequest.
+        r"""Gets the config_id of this ListApplicableInstancesRequest.
 
         参数配置模板ID。
 
@@ -96,7 +96,7 @@ class ListApplicableInstancesRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ListApplicableInstancesRequest.
+        r"""Sets the config_id of this ListApplicableInstancesRequest.
 
         参数配置模板ID。
 
@@ -107,7 +107,7 @@ class ListApplicableInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApplicableInstancesRequest.
+        r"""Gets the offset of this ListApplicableInstancesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -118,7 +118,7 @@ class ListApplicableInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApplicableInstancesRequest.
+        r"""Sets the offset of this ListApplicableInstancesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -129,7 +129,7 @@ class ListApplicableInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplicableInstancesRequest.
+        r"""Gets the limit of this ListApplicableInstancesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -140,7 +140,7 @@ class ListApplicableInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplicableInstancesRequest.
+        r"""Sets the limit of this ListApplicableInstancesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 

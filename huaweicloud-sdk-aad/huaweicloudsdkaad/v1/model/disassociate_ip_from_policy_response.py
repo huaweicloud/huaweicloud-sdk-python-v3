@@ -24,7 +24,7 @@ class DisassociateIpFromPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateIpFromPolicyResponse
+        r"""DisassociateIpFromPolicyResponse
 
         The model defined in huaweicloud sdk
 

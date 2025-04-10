@@ -37,7 +37,7 @@ class AddonMetadata:
     }
 
     def __init__(self, uid=None, name=None, alias=None, labels=None, annotations=None, update_timestamp=None, creation_timestamp=None):
-        """AddonMetadata
+        r"""AddonMetadata
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AddonMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this AddonMetadata.
+        r"""Gets the uid of this AddonMetadata.
 
         唯一id标识
 
@@ -96,7 +96,7 @@ class AddonMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this AddonMetadata.
+        r"""Sets the uid of this AddonMetadata.
 
         唯一id标识
 
@@ -107,7 +107,7 @@ class AddonMetadata:
 
     @property
     def name(self):
-        """Gets the name of this AddonMetadata.
+        r"""Gets the name of this AddonMetadata.
 
         插件名称
 
@@ -118,7 +118,7 @@ class AddonMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddonMetadata.
+        r"""Sets the name of this AddonMetadata.
 
         插件名称
 
@@ -129,7 +129,7 @@ class AddonMetadata:
 
     @property
     def alias(self):
-        """Gets the alias of this AddonMetadata.
+        r"""Gets the alias of this AddonMetadata.
 
         插件别名
 
@@ -140,7 +140,7 @@ class AddonMetadata:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AddonMetadata.
+        r"""Sets the alias of this AddonMetadata.
 
         插件别名
 
@@ -151,7 +151,7 @@ class AddonMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this AddonMetadata.
+        r"""Gets the labels of this AddonMetadata.
 
         插件标签，key/value对格式，接口保留字段，填写不会生效
 
@@ -162,7 +162,7 @@ class AddonMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this AddonMetadata.
+        r"""Sets the labels of this AddonMetadata.
 
         插件标签，key/value对格式，接口保留字段，填写不会生效
 
@@ -173,7 +173,7 @@ class AddonMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this AddonMetadata.
+        r"""Gets the annotations of this AddonMetadata.
 
         插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
 
@@ -184,7 +184,7 @@ class AddonMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this AddonMetadata.
+        r"""Sets the annotations of this AddonMetadata.
 
         插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
 
@@ -195,7 +195,7 @@ class AddonMetadata:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this AddonMetadata.
+        r"""Gets the update_timestamp of this AddonMetadata.
 
         更新时间
 
@@ -206,7 +206,7 @@ class AddonMetadata:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this AddonMetadata.
+        r"""Sets the update_timestamp of this AddonMetadata.
 
         更新时间
 
@@ -217,7 +217,7 @@ class AddonMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this AddonMetadata.
+        r"""Gets the creation_timestamp of this AddonMetadata.
 
         创建时间
 
@@ -228,7 +228,7 @@ class AddonMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this AddonMetadata.
+        r"""Sets the creation_timestamp of this AddonMetadata.
 
         创建时间
 

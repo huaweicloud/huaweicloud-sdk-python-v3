@@ -28,7 +28,7 @@ class InitializeTenantResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, service_status=None):
-        """InitializeTenantResponse
+        r"""InitializeTenantResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class InitializeTenantResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this InitializeTenantResponse.
+        r"""Gets the project_id of this InitializeTenantResponse.
 
         租户ID 同tenant_id。
 
@@ -62,7 +62,7 @@ class InitializeTenantResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this InitializeTenantResponse.
+        r"""Sets the project_id of this InitializeTenantResponse.
 
         租户ID 同tenant_id。
 
@@ -73,7 +73,7 @@ class InitializeTenantResponse(SdkResponse):
 
     @property
     def service_status(self):
-        """Gets the service_status of this InitializeTenantResponse.
+        r"""Gets the service_status of this InitializeTenantResponse.
 
         企业是否激活：active(激活)，inactive(未激活)。
 
@@ -84,7 +84,7 @@ class InitializeTenantResponse(SdkResponse):
 
     @service_status.setter
     def service_status(self, service_status):
-        """Sets the service_status of this InitializeTenantResponse.
+        r"""Sets the service_status of this InitializeTenantResponse.
 
         企业是否激活：active(激活)，inactive(未激活)。
 

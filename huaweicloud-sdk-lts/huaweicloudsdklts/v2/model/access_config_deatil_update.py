@@ -77,7 +77,7 @@ class AccessConfigDeatilUpdate:
     }
 
     def __init__(self, paths=None, black_paths=None, format=None, windows_log_info=None, stdout=None, stderr=None, path_type=None, namespace_regex=None, pod_name_regex=None, container_name_regex=None, include_labels=None, exclude_labels=None, include_envs=None, exclude_envs=None, log_labels=None, log_envs=None, include_k8s_labels=None, exclude_k8s_labels=None, log_k8s=None, system_fields=None, custom_key_value=None, include_labels_logical=None, exclude_labels_logical=None, include_k8s_labels_logical=None, exclude_k8s_labels_logical=None, include_envs_logical=None, exclude_envs_logical=None):
-        """AccessConfigDeatilUpdate
+        r"""AccessConfigDeatilUpdate
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def paths(self):
-        """Gets the paths of this AccessConfigDeatilUpdate.
+        r"""Gets the paths of this AccessConfigDeatilUpdate.
 
         1.路径必须以/或者字母:\\开头 2.不能包含特殊字符<> ' | \" 且不能只输入/ 3.第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 5.最大数量为10
 
@@ -236,7 +236,7 @@ class AccessConfigDeatilUpdate:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this AccessConfigDeatilUpdate.
+        r"""Sets the paths of this AccessConfigDeatilUpdate.
 
         1.路径必须以/或者字母:\\开头 2.不能包含特殊字符<> ' | \" 且不能只输入/ 3.第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 5.最大数量为10
 
@@ -247,7 +247,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def black_paths(self):
-        """Gets the black_paths of this AccessConfigDeatilUpdate.
+        r"""Gets the black_paths of this AccessConfigDeatilUpdate.
 
         1.路径必须以/或者字母:\\开头 2.不能包含特殊字符<> ' | \" 且不能只输入/ 3.第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 5.最大数量为10
 
@@ -258,7 +258,7 @@ class AccessConfigDeatilUpdate:
 
     @black_paths.setter
     def black_paths(self, black_paths):
-        """Sets the black_paths of this AccessConfigDeatilUpdate.
+        r"""Sets the black_paths of this AccessConfigDeatilUpdate.
 
         1.路径必须以/或者字母:\\开头 2.不能包含特殊字符<> ' | \" 且不能只输入/ 3.第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 5.最大数量为10
 
@@ -269,7 +269,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def format(self):
-        """Gets the format of this AccessConfigDeatilUpdate.
+        r"""Gets the format of this AccessConfigDeatilUpdate.
 
         :return: The format of this AccessConfigDeatilUpdate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatUpdate`
@@ -278,7 +278,7 @@ class AccessConfigDeatilUpdate:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this AccessConfigDeatilUpdate.
+        r"""Sets the format of this AccessConfigDeatilUpdate.
 
         :param format: The format of this AccessConfigDeatilUpdate.
         :type format: :class:`huaweicloudsdklts.v2.AccessConfigFormatUpdate`
@@ -287,7 +287,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def windows_log_info(self):
-        """Gets the windows_log_info of this AccessConfigDeatilUpdate.
+        r"""Gets the windows_log_info of this AccessConfigDeatilUpdate.
 
         :return: The windows_log_info of this AccessConfigDeatilUpdate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfoUpdate`
@@ -296,7 +296,7 @@ class AccessConfigDeatilUpdate:
 
     @windows_log_info.setter
     def windows_log_info(self, windows_log_info):
-        """Sets the windows_log_info of this AccessConfigDeatilUpdate.
+        r"""Sets the windows_log_info of this AccessConfigDeatilUpdate.
 
         :param windows_log_info: The windows_log_info of this AccessConfigDeatilUpdate.
         :type windows_log_info: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfoUpdate`
@@ -305,7 +305,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def stdout(self):
-        """Gets the stdout of this AccessConfigDeatilUpdate.
+        r"""Gets the stdout of this AccessConfigDeatilUpdate.
 
         标准输出开关，仅CCE接入类型时使用
 
@@ -316,7 +316,7 @@ class AccessConfigDeatilUpdate:
 
     @stdout.setter
     def stdout(self, stdout):
-        """Sets the stdout of this AccessConfigDeatilUpdate.
+        r"""Sets the stdout of this AccessConfigDeatilUpdate.
 
         标准输出开关，仅CCE接入类型时使用
 
@@ -327,7 +327,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def stderr(self):
-        """Gets the stderr of this AccessConfigDeatilUpdate.
+        r"""Gets the stderr of this AccessConfigDeatilUpdate.
 
         标准输出开关标准错误开关，仅CCE接入类型时使用
 
@@ -338,7 +338,7 @@ class AccessConfigDeatilUpdate:
 
     @stderr.setter
     def stderr(self, stderr):
-        """Sets the stderr of this AccessConfigDeatilUpdate.
+        r"""Sets the stderr of this AccessConfigDeatilUpdate.
 
         标准输出开关标准错误开关，仅CCE接入类型时使用
 
@@ -349,7 +349,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def path_type(self):
-        """Gets the path_type of this AccessConfigDeatilUpdate.
+        r"""Gets the path_type of this AccessConfigDeatilUpdate.
 
         CCE接入类型，仅CCE接入类型时使用
 
@@ -360,7 +360,7 @@ class AccessConfigDeatilUpdate:
 
     @path_type.setter
     def path_type(self, path_type):
-        """Sets the path_type of this AccessConfigDeatilUpdate.
+        r"""Sets the path_type of this AccessConfigDeatilUpdate.
 
         CCE接入类型，仅CCE接入类型时使用
 
@@ -371,7 +371,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def namespace_regex(self):
-        """Gets the namespace_regex of this AccessConfigDeatilUpdate.
+        r"""Gets the namespace_regex of this AccessConfigDeatilUpdate.
 
         K8s Namespace正则匹配，仅CCE接入类型时使用
 
@@ -382,7 +382,7 @@ class AccessConfigDeatilUpdate:
 
     @namespace_regex.setter
     def namespace_regex(self, namespace_regex):
-        """Sets the namespace_regex of this AccessConfigDeatilUpdate.
+        r"""Sets the namespace_regex of this AccessConfigDeatilUpdate.
 
         K8s Namespace正则匹配，仅CCE接入类型时使用
 
@@ -393,7 +393,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def pod_name_regex(self):
-        """Gets the pod_name_regex of this AccessConfigDeatilUpdate.
+        r"""Gets the pod_name_regex of this AccessConfigDeatilUpdate.
 
         K8s Pod正则匹配，仅CCE接入类型时使用
 
@@ -404,7 +404,7 @@ class AccessConfigDeatilUpdate:
 
     @pod_name_regex.setter
     def pod_name_regex(self, pod_name_regex):
-        """Sets the pod_name_regex of this AccessConfigDeatilUpdate.
+        r"""Sets the pod_name_regex of this AccessConfigDeatilUpdate.
 
         K8s Pod正则匹配，仅CCE接入类型时使用
 
@@ -415,7 +415,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def container_name_regex(self):
-        """Gets the container_name_regex of this AccessConfigDeatilUpdate.
+        r"""Gets the container_name_regex of this AccessConfigDeatilUpdate.
 
         K8s 容器名称正则匹配，仅CCE接入类型时使用
 
@@ -426,7 +426,7 @@ class AccessConfigDeatilUpdate:
 
     @container_name_regex.setter
     def container_name_regex(self, container_name_regex):
-        """Sets the container_name_regex of this AccessConfigDeatilUpdate.
+        r"""Sets the container_name_regex of this AccessConfigDeatilUpdate.
 
         K8s 容器名称正则匹配，仅CCE接入类型时使用
 
@@ -437,7 +437,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def include_labels(self):
-        """Gets the include_labels of this AccessConfigDeatilUpdate.
+        r"""Gets the include_labels of this AccessConfigDeatilUpdate.
 
         容器 Label白名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -448,7 +448,7 @@ class AccessConfigDeatilUpdate:
 
     @include_labels.setter
     def include_labels(self, include_labels):
-        """Sets the include_labels of this AccessConfigDeatilUpdate.
+        r"""Sets the include_labels of this AccessConfigDeatilUpdate.
 
         容器 Label白名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -459,7 +459,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def exclude_labels(self):
-        """Gets the exclude_labels of this AccessConfigDeatilUpdate.
+        r"""Gets the exclude_labels of this AccessConfigDeatilUpdate.
 
         容器 Label黑名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -470,7 +470,7 @@ class AccessConfigDeatilUpdate:
 
     @exclude_labels.setter
     def exclude_labels(self, exclude_labels):
-        """Sets the exclude_labels of this AccessConfigDeatilUpdate.
+        r"""Sets the exclude_labels of this AccessConfigDeatilUpdate.
 
         容器 Label黑名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -481,7 +481,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def include_envs(self):
-        """Gets the include_envs of this AccessConfigDeatilUpdate.
+        r"""Gets the include_envs of this AccessConfigDeatilUpdate.
 
         环境变量白名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -492,7 +492,7 @@ class AccessConfigDeatilUpdate:
 
     @include_envs.setter
     def include_envs(self, include_envs):
-        """Sets the include_envs of this AccessConfigDeatilUpdate.
+        r"""Sets the include_envs of this AccessConfigDeatilUpdate.
 
         环境变量白名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -503,7 +503,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def exclude_envs(self):
-        """Gets the exclude_envs of this AccessConfigDeatilUpdate.
+        r"""Gets the exclude_envs of this AccessConfigDeatilUpdate.
 
         环境变量黑名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -514,7 +514,7 @@ class AccessConfigDeatilUpdate:
 
     @exclude_envs.setter
     def exclude_envs(self, exclude_envs):
-        """Sets the exclude_envs of this AccessConfigDeatilUpdate.
+        r"""Sets the exclude_envs of this AccessConfigDeatilUpdate.
 
         环境变量黑名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -525,7 +525,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def log_labels(self):
-        """Gets the log_labels of this AccessConfigDeatilUpdate.
+        r"""Gets the log_labels of this AccessConfigDeatilUpdate.
 
         容器 Label日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -536,7 +536,7 @@ class AccessConfigDeatilUpdate:
 
     @log_labels.setter
     def log_labels(self, log_labels):
-        """Sets the log_labels of this AccessConfigDeatilUpdate.
+        r"""Sets the log_labels of this AccessConfigDeatilUpdate.
 
         容器 Label日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -547,7 +547,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def log_envs(self):
-        """Gets the log_envs of this AccessConfigDeatilUpdate.
+        r"""Gets the log_envs of this AccessConfigDeatilUpdate.
 
         环境变量日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -558,7 +558,7 @@ class AccessConfigDeatilUpdate:
 
     @log_envs.setter
     def log_envs(self, log_envs):
-        """Sets the log_envs of this AccessConfigDeatilUpdate.
+        r"""Sets the log_envs of this AccessConfigDeatilUpdate.
 
         环境变量日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -569,7 +569,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def include_k8s_labels(self):
-        """Gets the include_k8s_labels of this AccessConfigDeatilUpdate.
+        r"""Gets the include_k8s_labels of this AccessConfigDeatilUpdate.
 
         K8s Label白名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -580,7 +580,7 @@ class AccessConfigDeatilUpdate:
 
     @include_k8s_labels.setter
     def include_k8s_labels(self, include_k8s_labels):
-        """Sets the include_k8s_labels of this AccessConfigDeatilUpdate.
+        r"""Sets the include_k8s_labels of this AccessConfigDeatilUpdate.
 
         K8s Label白名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -591,7 +591,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def exclude_k8s_labels(self):
-        """Gets the exclude_k8s_labels of this AccessConfigDeatilUpdate.
+        r"""Gets the exclude_k8s_labels of this AccessConfigDeatilUpdate.
 
         K8s Label黑名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -602,7 +602,7 @@ class AccessConfigDeatilUpdate:
 
     @exclude_k8s_labels.setter
     def exclude_k8s_labels(self, exclude_k8s_labels):
-        """Sets the exclude_k8s_labels of this AccessConfigDeatilUpdate.
+        r"""Sets the exclude_k8s_labels of this AccessConfigDeatilUpdate.
 
         K8s Label黑名单，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -613,7 +613,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def log_k8s(self):
-        """Gets the log_k8s of this AccessConfigDeatilUpdate.
+        r"""Gets the log_k8s of this AccessConfigDeatilUpdate.
 
         K8s Label日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -624,7 +624,7 @@ class AccessConfigDeatilUpdate:
 
     @log_k8s.setter
     def log_k8s(self, log_k8s):
-        """Sets the log_k8s of this AccessConfigDeatilUpdate.
+        r"""Sets the log_k8s of this AccessConfigDeatilUpdate.
 
         K8s Label日志标签，最多支持创建30个，keyname不支持重名，仅CCE接入类型时使用
 
@@ -635,7 +635,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def system_fields(self):
-        """Gets the system_fields of this AccessConfigDeatilUpdate.
+        r"""Gets the system_fields of this AccessConfigDeatilUpdate.
 
         系统内置字段：配置日志接入规则时，可以配置系统内置字段，上报日志后，每条日志数据的标签数据中将会有系统字段 采集场景为主机文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、category、collectTime、__host_group__ 采集场景为K8S集群容器文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、clusterId、podName、appName、containerName、nameSpace、category、collectTime、__host_group__、serviceID、podIp、clusterName、workloadType 若修改时传入此字段，将覆盖原有配置
 
@@ -646,7 +646,7 @@ class AccessConfigDeatilUpdate:
 
     @system_fields.setter
     def system_fields(self, system_fields):
-        """Sets the system_fields of this AccessConfigDeatilUpdate.
+        r"""Sets the system_fields of this AccessConfigDeatilUpdate.
 
         系统内置字段：配置日志接入规则时，可以配置系统内置字段，上报日志后，每条日志数据的标签数据中将会有系统字段 采集场景为主机文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、category、collectTime、__host_group__ 采集场景为K8S集群容器文件的内置字段为：hostName、hostId、hostIP、pathFile、hostIPv6、clusterId、podName、appName、containerName、nameSpace、category、collectTime、__host_group__、serviceID、podIp、clusterName、workloadType 若修改时传入此字段，将覆盖原有配置
 
@@ -657,7 +657,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def custom_key_value(self):
-        """Gets the custom_key_value of this AccessConfigDeatilUpdate.
+        r"""Gets the custom_key_value of this AccessConfigDeatilUpdate.
 
         自定义键值对：配置日志接入规则时，可以配置自定义键值对规则，上报日志后，每条日志数据的标签数据中将会有用户自定义的键值对字段，键值对数量不超过20 键的长度限制为128，允许的字符有a-zA-Z0-9_- 值的长度限制为1024 若修改时传入此字段，将覆盖原有配置
 
@@ -668,7 +668,7 @@ class AccessConfigDeatilUpdate:
 
     @custom_key_value.setter
     def custom_key_value(self, custom_key_value):
-        """Sets the custom_key_value of this AccessConfigDeatilUpdate.
+        r"""Sets the custom_key_value of this AccessConfigDeatilUpdate.
 
         自定义键值对：配置日志接入规则时，可以配置自定义键值对规则，上报日志后，每条日志数据的标签数据中将会有用户自定义的键值对字段，键值对数量不超过20 键的长度限制为128，允许的字符有a-zA-Z0-9_- 值的长度限制为1024 若修改时传入此字段，将覆盖原有配置
 
@@ -679,7 +679,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def include_labels_logical(self):
-        """Gets the include_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Gets the include_labels_logical of this AccessConfigDeatilUpdate.
 
         容器 Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -690,7 +690,7 @@ class AccessConfigDeatilUpdate:
 
     @include_labels_logical.setter
     def include_labels_logical(self, include_labels_logical):
-        """Sets the include_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Sets the include_labels_logical of this AccessConfigDeatilUpdate.
 
         容器 Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -701,7 +701,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def exclude_labels_logical(self):
-        """Gets the exclude_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Gets the exclude_labels_logical of this AccessConfigDeatilUpdate.
 
         容器 Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -712,7 +712,7 @@ class AccessConfigDeatilUpdate:
 
     @exclude_labels_logical.setter
     def exclude_labels_logical(self, exclude_labels_logical):
-        """Sets the exclude_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Sets the exclude_labels_logical of this AccessConfigDeatilUpdate.
 
         容器 Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -723,7 +723,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def include_k8s_labels_logical(self):
-        """Gets the include_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Gets the include_k8s_labels_logical of this AccessConfigDeatilUpdate.
 
         K8S Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -734,7 +734,7 @@ class AccessConfigDeatilUpdate:
 
     @include_k8s_labels_logical.setter
     def include_k8s_labels_logical(self, include_k8s_labels_logical):
-        """Sets the include_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Sets the include_k8s_labels_logical of this AccessConfigDeatilUpdate.
 
         K8S Label白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -745,7 +745,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def exclude_k8s_labels_logical(self):
-        """Gets the exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Gets the exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
 
         K8S Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -756,7 +756,7 @@ class AccessConfigDeatilUpdate:
 
     @exclude_k8s_labels_logical.setter
     def exclude_k8s_labels_logical(self, exclude_k8s_labels_logical):
-        """Sets the exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
+        r"""Sets the exclude_k8s_labels_logical of this AccessConfigDeatilUpdate.
 
         K8S Label黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -767,7 +767,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def include_envs_logical(self):
-        """Gets the include_envs_logical of this AccessConfigDeatilUpdate.
+        r"""Gets the include_envs_logical of this AccessConfigDeatilUpdate.
 
         环境变量白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -778,7 +778,7 @@ class AccessConfigDeatilUpdate:
 
     @include_envs_logical.setter
     def include_envs_logical(self, include_envs_logical):
-        """Sets the include_envs_logical of this AccessConfigDeatilUpdate.
+        r"""Sets the include_envs_logical of this AccessConfigDeatilUpdate.
 
         环境变量白名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -789,7 +789,7 @@ class AccessConfigDeatilUpdate:
 
     @property
     def exclude_envs_logical(self):
-        """Gets the exclude_envs_logical of this AccessConfigDeatilUpdate.
+        r"""Gets the exclude_envs_logical of this AccessConfigDeatilUpdate.
 
         环境变量黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 
@@ -800,7 +800,7 @@ class AccessConfigDeatilUpdate:
 
     @exclude_envs_logical.setter
     def exclude_envs_logical(self, exclude_envs_logical):
-        """Sets the exclude_envs_logical of this AccessConfigDeatilUpdate.
+        r"""Sets the exclude_envs_logical of this AccessConfigDeatilUpdate.
 
         环境变量黑名单，可选为AND，OR，不配置时默认为OR；当存在多个值时的处理逻辑，AND表示同时满足才会生效，OR表示有一项满足就会生效
 

@@ -26,7 +26,7 @@ class RetryBatchTaskResponse(SdkResponse):
     }
 
     def __init__(self, targets=None):
-        """RetryBatchTaskResponse
+        r"""RetryBatchTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RetryBatchTaskResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this RetryBatchTaskResponse.
+        r"""Gets the targets of this RetryBatchTaskResponse.
 
         批量操作目标结果集合
 
@@ -55,7 +55,7 @@ class RetryBatchTaskResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this RetryBatchTaskResponse.
+        r"""Sets the targets of this RetryBatchTaskResponse.
 
         批量操作目标结果集合
 

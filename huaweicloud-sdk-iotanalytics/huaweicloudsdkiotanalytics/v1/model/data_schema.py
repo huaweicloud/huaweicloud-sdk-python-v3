@@ -33,7 +33,7 @@ class DataSchema:
     }
 
     def __init__(self, min=None, max=None, min_length=None, max_length=None, data_type=None):
-        """DataSchema
+        r"""DataSchema
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class DataSchema:
 
     @property
     def min(self):
-        """Gets the min of this DataSchema.
+        r"""Gets the min of this DataSchema.
 
         integer或double类型的的最小值，当属性值超过范围时系统不予存储，integer时范围：-9223372036854775808 ~ 9223372036854775807；double时范围：-1.7976931348623157E308 ~ 1.7976931348623157E308
 
@@ -81,7 +81,7 @@ class DataSchema:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this DataSchema.
+        r"""Sets the min of this DataSchema.
 
         integer或double类型的的最小值，当属性值超过范围时系统不予存储，integer时范围：-9223372036854775808 ~ 9223372036854775807；double时范围：-1.7976931348623157E308 ~ 1.7976931348623157E308
 
@@ -92,7 +92,7 @@ class DataSchema:
 
     @property
     def max(self):
-        """Gets the max of this DataSchema.
+        r"""Gets the max of this DataSchema.
 
         integer或double类型的最大值，当属性值超过范围时系统不予存储，integer时范围：-9223372036854775808 ~ 9223372036854775807；double时范围：-1.7976931348623157E308 ~ 1.7976931348623157E308
 
@@ -103,7 +103,7 @@ class DataSchema:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this DataSchema.
+        r"""Sets the max of this DataSchema.
 
         integer或double类型的最大值，当属性值超过范围时系统不予存储，integer时范围：-9223372036854775808 ~ 9223372036854775807；double时范围：-1.7976931348623157E308 ~ 1.7976931348623157E308
 
@@ -114,7 +114,7 @@ class DataSchema:
 
     @property
     def min_length(self):
-        """Gets the min_length of this DataSchema.
+        r"""Gets the min_length of this DataSchema.
 
         string类型的最小长度，当属性值超过范围时系统不予存储，范围：0 ~ 4096
 
@@ -125,7 +125,7 @@ class DataSchema:
 
     @min_length.setter
     def min_length(self, min_length):
-        """Sets the min_length of this DataSchema.
+        r"""Sets the min_length of this DataSchema.
 
         string类型的最小长度，当属性值超过范围时系统不予存储，范围：0 ~ 4096
 
@@ -136,7 +136,7 @@ class DataSchema:
 
     @property
     def max_length(self):
-        """Gets the max_length of this DataSchema.
+        r"""Gets the max_length of this DataSchema.
 
         string类型的最大长度，当属性值超过范围时系统不予存储，范围：0 ~ 4096
 
@@ -147,7 +147,7 @@ class DataSchema:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this DataSchema.
+        r"""Sets the max_length of this DataSchema.
 
         string类型的最大长度，当属性值超过范围时系统不予存储，范围：0 ~ 4096
 
@@ -158,7 +158,7 @@ class DataSchema:
 
     @property
     def data_type(self):
-        """Gets the data_type of this DataSchema.
+        r"""Gets the data_type of this DataSchema.
 
         数据类型，字符串（string）、整数（integer）、浮点数（double）、对象（object），系统支持的对象型存储大小为1MB，超过时不予存储
 
@@ -169,7 +169,7 @@ class DataSchema:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this DataSchema.
+        r"""Sets the data_type of this DataSchema.
 
         数据类型，字符串（string）、整数（integer）、浮点数（double）、对象（object），系统支持的对象型存储大小为1MB，超过时不予存储
 

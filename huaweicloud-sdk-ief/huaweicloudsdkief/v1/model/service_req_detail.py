@@ -27,7 +27,7 @@ class ServiceReqDetail:
     }
 
     def __init__(self, meta_data=None, spec=None):
-        """ServiceReqDetail
+        r"""ServiceReqDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServiceReqDetail:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ServiceReqDetail.
+        r"""Gets the meta_data of this ServiceReqDetail.
 
         :return: The meta_data of this ServiceReqDetail.
         :rtype: :class:`huaweicloudsdkief.v1.SvcMetadata`
@@ -57,7 +57,7 @@ class ServiceReqDetail:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ServiceReqDetail.
+        r"""Sets the meta_data of this ServiceReqDetail.
 
         :param meta_data: The meta_data of this ServiceReqDetail.
         :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
@@ -66,7 +66,7 @@ class ServiceReqDetail:
 
     @property
     def spec(self):
-        """Gets the spec of this ServiceReqDetail.
+        r"""Gets the spec of this ServiceReqDetail.
 
         :return: The spec of this ServiceReqDetail.
         :rtype: :class:`huaweicloudsdkief.v1.SvcSpec`
@@ -75,7 +75,7 @@ class ServiceReqDetail:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ServiceReqDetail.
+        r"""Sets the spec of this ServiceReqDetail.
 
         :param spec: The spec of this ServiceReqDetail.
         :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`

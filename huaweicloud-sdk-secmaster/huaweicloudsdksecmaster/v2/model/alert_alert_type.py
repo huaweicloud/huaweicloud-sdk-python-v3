@@ -27,7 +27,7 @@ class AlertAlertType:
     }
 
     def __init__(self, category=None, alert_type=None):
-        """AlertAlertType
+        r"""AlertAlertType
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlertAlertType:
 
     @property
     def category(self):
-        """Gets the category of this AlertAlertType.
+        r"""Gets the category of this AlertAlertType.
 
         类别
 
@@ -61,7 +61,7 @@ class AlertAlertType:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AlertAlertType.
+        r"""Sets the category of this AlertAlertType.
 
         类别
 
@@ -72,7 +72,7 @@ class AlertAlertType:
 
     @property
     def alert_type(self):
-        """Gets the alert_type of this AlertAlertType.
+        r"""Gets the alert_type of this AlertAlertType.
 
         告警类型
 
@@ -83,7 +83,7 @@ class AlertAlertType:
 
     @alert_type.setter
     def alert_type(self, alert_type):
-        """Sets the alert_type of this AlertAlertType.
+        r"""Sets the alert_type of this AlertAlertType.
 
         告警类型
 

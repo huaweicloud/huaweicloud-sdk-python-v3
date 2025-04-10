@@ -61,7 +61,7 @@ class CreateSmartLiveRoomReq:
     }
 
     def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, relation_live_platform_info=None):
-        """CreateSmartLiveRoomReq
+        r"""CreateSmartLiveRoomReq
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def room_name(self):
-        """Gets the room_name of this CreateSmartLiveRoomReq.
+        r"""Gets the room_name of this CreateSmartLiveRoomReq.
 
         **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -179,7 +179,7 @@ class CreateSmartLiveRoomReq:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this CreateSmartLiveRoomReq.
+        r"""Sets the room_name of this CreateSmartLiveRoomReq.
 
         **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -190,7 +190,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def room_description(self):
-        """Gets the room_description of this CreateSmartLiveRoomReq.
+        r"""Gets the room_description of this CreateSmartLiveRoomReq.
 
         **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -201,7 +201,7 @@ class CreateSmartLiveRoomReq:
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this CreateSmartLiveRoomReq.
+        r"""Sets the room_description of this CreateSmartLiveRoomReq.
 
         **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -212,7 +212,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def room_type(self):
-        """Gets the room_type of this CreateSmartLiveRoomReq.
+        r"""Gets the room_type of this CreateSmartLiveRoomReq.
 
         **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -223,7 +223,7 @@ class CreateSmartLiveRoomReq:
 
     @room_type.setter
     def room_type(self, room_type):
-        """Sets the room_type of this CreateSmartLiveRoomReq.
+        r"""Sets the room_type of this CreateSmartLiveRoomReq.
 
         **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -234,7 +234,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def scene_scripts(self):
-        """Gets the scene_scripts of this CreateSmartLiveRoomReq.
+        r"""Gets the scene_scripts of this CreateSmartLiveRoomReq.
 
         默认直播剧本列表。
 
@@ -245,7 +245,7 @@ class CreateSmartLiveRoomReq:
 
     @scene_scripts.setter
     def scene_scripts(self, scene_scripts):
-        """Sets the scene_scripts of this CreateSmartLiveRoomReq.
+        r"""Sets the scene_scripts of this CreateSmartLiveRoomReq.
 
         默认直播剧本列表。
 
@@ -256,7 +256,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def interaction_config(self):
-        """Gets the interaction_config of this CreateSmartLiveRoomReq.
+        r"""Gets the interaction_config of this CreateSmartLiveRoomReq.
 
         :return: The interaction_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
@@ -265,7 +265,7 @@ class CreateSmartLiveRoomReq:
 
     @interaction_config.setter
     def interaction_config(self, interaction_config):
-        """Sets the interaction_config of this CreateSmartLiveRoomReq.
+        r"""Sets the interaction_config of this CreateSmartLiveRoomReq.
 
         :param interaction_config: The interaction_config of this CreateSmartLiveRoomReq.
         :type interaction_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
@@ -274,7 +274,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this CreateSmartLiveRoomReq.
+        r"""Gets the interaction_rules of this CreateSmartLiveRoomReq.
 
         互动规则列表
 
@@ -285,7 +285,7 @@ class CreateSmartLiveRoomReq:
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this CreateSmartLiveRoomReq.
+        r"""Sets the interaction_rules of this CreateSmartLiveRoomReq.
 
         互动规则列表
 
@@ -296,7 +296,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def play_policy(self):
-        """Gets the play_policy of this CreateSmartLiveRoomReq.
+        r"""Gets the play_policy of this CreateSmartLiveRoomReq.
 
         :return: The play_policy of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -305,7 +305,7 @@ class CreateSmartLiveRoomReq:
 
     @play_policy.setter
     def play_policy(self, play_policy):
-        """Sets the play_policy of this CreateSmartLiveRoomReq.
+        r"""Sets the play_policy of this CreateSmartLiveRoomReq.
 
         :param play_policy: The play_policy of this CreateSmartLiveRoomReq.
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -314,7 +314,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def video_config(self):
-        """Gets the video_config of this CreateSmartLiveRoomReq.
+        r"""Gets the video_config of this CreateSmartLiveRoomReq.
 
         :return: The video_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -323,7 +323,7 @@ class CreateSmartLiveRoomReq:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this CreateSmartLiveRoomReq.
+        r"""Sets the video_config of this CreateSmartLiveRoomReq.
 
         :param video_config: The video_config of this CreateSmartLiveRoomReq.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -332,7 +332,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def output_urls(self):
-        """Gets the output_urls of this CreateSmartLiveRoomReq.
+        r"""Gets the output_urls of this CreateSmartLiveRoomReq.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -343,7 +343,7 @@ class CreateSmartLiveRoomReq:
 
     @output_urls.setter
     def output_urls(self, output_urls):
-        """Sets the output_urls of this CreateSmartLiveRoomReq.
+        r"""Sets the output_urls of this CreateSmartLiveRoomReq.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -354,7 +354,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def stream_keys(self):
-        """Gets the stream_keys of this CreateSmartLiveRoomReq.
+        r"""Gets the stream_keys of this CreateSmartLiveRoomReq.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -365,7 +365,7 @@ class CreateSmartLiveRoomReq:
 
     @stream_keys.setter
     def stream_keys(self, stream_keys):
-        """Sets the stream_keys of this CreateSmartLiveRoomReq.
+        r"""Sets the stream_keys of this CreateSmartLiveRoomReq.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -376,7 +376,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def backup_model_asset_ids(self):
-        """Gets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
+        r"""Gets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
 
         **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
@@ -387,7 +387,7 @@ class CreateSmartLiveRoomReq:
 
     @backup_model_asset_ids.setter
     def backup_model_asset_ids(self, backup_model_asset_ids):
-        """Sets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
+        r"""Sets the backup_model_asset_ids of this CreateSmartLiveRoomReq.
 
         **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
@@ -398,7 +398,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def live_event_callback_config(self):
-        """Gets the live_event_callback_config of this CreateSmartLiveRoomReq.
+        r"""Gets the live_event_callback_config of this CreateSmartLiveRoomReq.
 
         :return: The live_event_callback_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
@@ -407,7 +407,7 @@ class CreateSmartLiveRoomReq:
 
     @live_event_callback_config.setter
     def live_event_callback_config(self, live_event_callback_config):
-        """Sets the live_event_callback_config of this CreateSmartLiveRoomReq.
+        r"""Sets the live_event_callback_config of this CreateSmartLiveRoomReq.
 
         :param live_event_callback_config: The live_event_callback_config of this CreateSmartLiveRoomReq.
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
@@ -416,7 +416,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def rtc_callback_config(self):
-        """Gets the rtc_callback_config of this CreateSmartLiveRoomReq.
+        r"""Gets the rtc_callback_config of this CreateSmartLiveRoomReq.
 
         :return: The rtc_callback_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -425,7 +425,7 @@ class CreateSmartLiveRoomReq:
 
     @rtc_callback_config.setter
     def rtc_callback_config(self, rtc_callback_config):
-        """Sets the rtc_callback_config of this CreateSmartLiveRoomReq.
+        r"""Sets the rtc_callback_config of this CreateSmartLiveRoomReq.
 
         :param rtc_callback_config: The rtc_callback_config of this CreateSmartLiveRoomReq.
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -434,7 +434,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def review_config(self):
-        """Gets the review_config of this CreateSmartLiveRoomReq.
+        r"""Gets the review_config of this CreateSmartLiveRoomReq.
 
         :return: The review_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -443,7 +443,7 @@ class CreateSmartLiveRoomReq:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this CreateSmartLiveRoomReq.
+        r"""Sets the review_config of this CreateSmartLiveRoomReq.
 
         :param review_config: The review_config of this CreateSmartLiveRoomReq.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -452,7 +452,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def shared_config(self):
-        """Gets the shared_config of this CreateSmartLiveRoomReq.
+        r"""Gets the shared_config of this CreateSmartLiveRoomReq.
 
         :return: The shared_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -461,7 +461,7 @@ class CreateSmartLiveRoomReq:
 
     @shared_config.setter
     def shared_config(self, shared_config):
-        """Sets the shared_config of this CreateSmartLiveRoomReq.
+        r"""Sets the shared_config of this CreateSmartLiveRoomReq.
 
         :param shared_config: The shared_config of this CreateSmartLiveRoomReq.
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -470,7 +470,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this CreateSmartLiveRoomReq.
+        r"""Gets the view_mode of this CreateSmartLiveRoomReq.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -481,7 +481,7 @@ class CreateSmartLiveRoomReq:
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this CreateSmartLiveRoomReq.
+        r"""Sets the view_mode of this CreateSmartLiveRoomReq.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -492,7 +492,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def co_streamer_config(self):
-        """Gets the co_streamer_config of this CreateSmartLiveRoomReq.
+        r"""Gets the co_streamer_config of this CreateSmartLiveRoomReq.
 
         :return: The co_streamer_config of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -501,7 +501,7 @@ class CreateSmartLiveRoomReq:
 
     @co_streamer_config.setter
     def co_streamer_config(self, co_streamer_config):
-        """Sets the co_streamer_config of this CreateSmartLiveRoomReq.
+        r"""Sets the co_streamer_config of this CreateSmartLiveRoomReq.
 
         :param co_streamer_config: The co_streamer_config of this CreateSmartLiveRoomReq.
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -510,7 +510,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def priv_data(self):
-        """Gets the priv_data of this CreateSmartLiveRoomReq.
+        r"""Gets the priv_data of this CreateSmartLiveRoomReq.
 
         **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
@@ -521,7 +521,7 @@ class CreateSmartLiveRoomReq:
 
     @priv_data.setter
     def priv_data(self, priv_data):
-        """Sets the priv_data of this CreateSmartLiveRoomReq.
+        r"""Sets the priv_data of this CreateSmartLiveRoomReq.
 
         **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
@@ -532,7 +532,7 @@ class CreateSmartLiveRoomReq:
 
     @property
     def relation_live_platform_info(self):
-        """Gets the relation_live_platform_info of this CreateSmartLiveRoomReq.
+        r"""Gets the relation_live_platform_info of this CreateSmartLiveRoomReq.
 
         :return: The relation_live_platform_info of this CreateSmartLiveRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveInfo`
@@ -541,7 +541,7 @@ class CreateSmartLiveRoomReq:
 
     @relation_live_platform_info.setter
     def relation_live_platform_info(self, relation_live_platform_info):
-        """Sets the relation_live_platform_info of this CreateSmartLiveRoomReq.
+        r"""Sets the relation_live_platform_info of this CreateSmartLiveRoomReq.
 
         :param relation_live_platform_info: The relation_live_platform_info of this CreateSmartLiveRoomReq.
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveInfo`

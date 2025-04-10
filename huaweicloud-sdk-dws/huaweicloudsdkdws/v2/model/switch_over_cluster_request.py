@@ -25,7 +25,7 @@ class SwitchOverClusterRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """SwitchOverClusterRequest
+        r"""SwitchOverClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchOverClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SwitchOverClusterRequest.
+        r"""Gets the cluster_id of this SwitchOverClusterRequest.
 
         集群的ID。
 
@@ -53,7 +53,7 @@ class SwitchOverClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SwitchOverClusterRequest.
+        r"""Sets the cluster_id of this SwitchOverClusterRequest.
 
         集群的ID。
 

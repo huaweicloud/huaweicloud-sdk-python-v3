@@ -29,7 +29,7 @@ class UpdatePacifyWordsSwitchReq:
     }
 
     def __init__(self, robot_id=None, language=None, enable_pacify_words=None):
-        """UpdatePacifyWordsSwitchReq
+        r"""UpdatePacifyWordsSwitchReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdatePacifyWordsSwitchReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdatePacifyWordsSwitchReq.
+        r"""Gets the robot_id of this UpdatePacifyWordsSwitchReq.
 
         应用ID。
 
@@ -65,7 +65,7 @@ class UpdatePacifyWordsSwitchReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdatePacifyWordsSwitchReq.
+        r"""Sets the robot_id of this UpdatePacifyWordsSwitchReq.
 
         应用ID。
 
@@ -76,7 +76,7 @@ class UpdatePacifyWordsSwitchReq:
 
     @property
     def language(self):
-        """Gets the language of this UpdatePacifyWordsSwitchReq.
+        r"""Gets the language of this UpdatePacifyWordsSwitchReq.
 
         :return: The language of this UpdatePacifyWordsSwitchReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -85,7 +85,7 @@ class UpdatePacifyWordsSwitchReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdatePacifyWordsSwitchReq.
+        r"""Sets the language of this UpdatePacifyWordsSwitchReq.
 
         :param language: The language of this UpdatePacifyWordsSwitchReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -94,7 +94,7 @@ class UpdatePacifyWordsSwitchReq:
 
     @property
     def enable_pacify_words(self):
-        """Gets the enable_pacify_words of this UpdatePacifyWordsSwitchReq.
+        r"""Gets the enable_pacify_words of this UpdatePacifyWordsSwitchReq.
 
         安抚话术功能开关。
 
@@ -105,7 +105,7 @@ class UpdatePacifyWordsSwitchReq:
 
     @enable_pacify_words.setter
     def enable_pacify_words(self, enable_pacify_words):
-        """Sets the enable_pacify_words of this UpdatePacifyWordsSwitchReq.
+        r"""Sets the enable_pacify_words of this UpdatePacifyWordsSwitchReq.
 
         安抚话术功能开关。
 

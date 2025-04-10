@@ -131,7 +131,7 @@ class BasicAw:
     }
 
     def __init__(self, aw_code=None, aw_description=None, aw_ins_list=None, aw_mark=None, aw_operationid=None, aw_tags=None, aw_type=None, aw_uniqueid=None, by_order=None, create_time=None, create_time_stamp=None, create_time_string=None, create_user=None, create_user_id=None, custom_aw_libs=None, delete_time=None, delete_user=None, description=None, dft_check_point_list=None, dft_custom_header=None, dft_retry_interval=None, dft_retry_times=None, dft_variable_list=None, extra_info=None, group_name=None, has_code=None, id=None, import_package=None, interface_label=None, is_favorite=None, keyword_variable_value=None, method=None, name=None, name_view=None, origin_project=None, output_param_list=None, param_type_and_dft_value=None, project_id=None, protocol_type=None, public_aw_lib=None, public_aw_lib_id=None, region=None, return_type=None, root_id=None, source=None, special_type=None, tmss_case_number=None, tmss_case_id=None, update_time=None, update_time_stamp=None, update_time_string=None, update_user=None, warning_msg=None, yaml_name=None):
-        """BasicAw
+        r"""BasicAw
 
         The model defined in huaweicloud sdk
 
@@ -414,7 +414,7 @@ class BasicAw:
 
     @property
     def aw_code(self):
-        """Gets the aw_code of this BasicAw.
+        r"""Gets the aw_code of this BasicAw.
 
         aw代码, hasCode为1时有效
 
@@ -425,7 +425,7 @@ class BasicAw:
 
     @aw_code.setter
     def aw_code(self, aw_code):
-        """Sets the aw_code of this BasicAw.
+        r"""Sets the aw_code of this BasicAw.
 
         aw代码, hasCode为1时有效
 
@@ -436,7 +436,7 @@ class BasicAw:
 
     @property
     def aw_description(self):
-        """Gets the aw_description of this BasicAw.
+        r"""Gets the aw_description of this BasicAw.
 
         脚本模板描述信息，在用例更新时添加
 
@@ -447,7 +447,7 @@ class BasicAw:
 
     @aw_description.setter
     def aw_description(self, aw_description):
-        """Sets the aw_description of this BasicAw.
+        r"""Sets the aw_description of this BasicAw.
 
         脚本模板描述信息，在用例更新时添加
 
@@ -458,7 +458,7 @@ class BasicAw:
 
     @property
     def aw_ins_list(self):
-        """Gets the aw_ins_list of this BasicAw.
+        r"""Gets the aw_ins_list of this BasicAw.
 
         组合aw包含的aw实例信息，awType为2时该字段有效
 
@@ -469,7 +469,7 @@ class BasicAw:
 
     @aw_ins_list.setter
     def aw_ins_list(self, aw_ins_list):
-        """Sets the aw_ins_list of this BasicAw.
+        r"""Sets the aw_ins_list of this BasicAw.
 
         组合aw包含的aw实例信息，awType为2时该字段有效
 
@@ -480,7 +480,7 @@ class BasicAw:
 
     @property
     def aw_mark(self):
-        """Gets the aw_mark of this BasicAw.
+        r"""Gets the aw_mark of this BasicAw.
 
         aw标记 0-normal；1-new；2-update 3-delete
 
@@ -491,7 +491,7 @@ class BasicAw:
 
     @aw_mark.setter
     def aw_mark(self, aw_mark):
-        """Sets the aw_mark of this BasicAw.
+        r"""Sets the aw_mark of this BasicAw.
 
         aw标记 0-normal；1-new；2-update 3-delete
 
@@ -502,7 +502,7 @@ class BasicAw:
 
     @property
     def aw_operationid(self):
-        """Gets the aw_operationid of this BasicAw.
+        r"""Gets the aw_operationid of this BasicAw.
 
         接口的operationId
 
@@ -513,7 +513,7 @@ class BasicAw:
 
     @aw_operationid.setter
     def aw_operationid(self, aw_operationid):
-        """Sets the aw_operationid of this BasicAw.
+        r"""Sets the aw_operationid of this BasicAw.
 
         接口的operationId
 
@@ -524,7 +524,7 @@ class BasicAw:
 
     @property
     def aw_tags(self):
-        """Gets the aw_tags of this BasicAw.
+        r"""Gets the aw_tags of this BasicAw.
 
         接口的tags
 
@@ -535,7 +535,7 @@ class BasicAw:
 
     @aw_tags.setter
     def aw_tags(self, aw_tags):
-        """Sets the aw_tags of this BasicAw.
+        r"""Sets the aw_tags of this BasicAw.
 
         接口的tags
 
@@ -546,7 +546,7 @@ class BasicAw:
 
     @property
     def aw_type(self):
-        """Gets the aw_type of this BasicAw.
+        r"""Gets the aw_type of this BasicAw.
 
         AW类型1-普通aw,2-组合aw,3-导入aw
 
@@ -557,7 +557,7 @@ class BasicAw:
 
     @aw_type.setter
     def aw_type(self, aw_type):
-        """Sets the aw_type of this BasicAw.
+        r"""Sets the aw_type of this BasicAw.
 
         AW类型1-普通aw,2-组合aw,3-导入aw
 
@@ -568,7 +568,7 @@ class BasicAw:
 
     @property
     def aw_uniqueid(self):
-        """Gets the aw_uniqueid of this BasicAw.
+        r"""Gets the aw_uniqueid of this BasicAw.
 
         awOperationId_awTags的拼接
 
@@ -579,7 +579,7 @@ class BasicAw:
 
     @aw_uniqueid.setter
     def aw_uniqueid(self, aw_uniqueid):
-        """Sets the aw_uniqueid of this BasicAw.
+        r"""Sets the aw_uniqueid of this BasicAw.
 
         awOperationId_awTags的拼接
 
@@ -590,7 +590,7 @@ class BasicAw:
 
     @property
     def by_order(self):
-        """Gets the by_order of this BasicAw.
+        r"""Gets the by_order of this BasicAw.
 
         顺序
 
@@ -601,7 +601,7 @@ class BasicAw:
 
     @by_order.setter
     def by_order(self, by_order):
-        """Sets the by_order of this BasicAw.
+        r"""Sets the by_order of this BasicAw.
 
         顺序
 
@@ -612,7 +612,7 @@ class BasicAw:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BasicAw.
+        r"""Gets the create_time of this BasicAw.
 
         创建时间
 
@@ -623,7 +623,7 @@ class BasicAw:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BasicAw.
+        r"""Sets the create_time of this BasicAw.
 
         创建时间
 
@@ -634,7 +634,7 @@ class BasicAw:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this BasicAw.
+        r"""Gets the create_time_stamp of this BasicAw.
 
         创建时间戳
 
@@ -645,7 +645,7 @@ class BasicAw:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this BasicAw.
+        r"""Sets the create_time_stamp of this BasicAw.
 
         创建时间戳
 
@@ -656,7 +656,7 @@ class BasicAw:
 
     @property
     def create_time_string(self):
-        """Gets the create_time_string of this BasicAw.
+        r"""Gets the create_time_string of this BasicAw.
 
         创建时间字符串
 
@@ -667,7 +667,7 @@ class BasicAw:
 
     @create_time_string.setter
     def create_time_string(self, create_time_string):
-        """Sets the create_time_string of this BasicAw.
+        r"""Sets the create_time_string of this BasicAw.
 
         创建时间字符串
 
@@ -678,7 +678,7 @@ class BasicAw:
 
     @property
     def create_user(self):
-        """Gets the create_user of this BasicAw.
+        r"""Gets the create_user of this BasicAw.
 
         创建人
 
@@ -689,7 +689,7 @@ class BasicAw:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this BasicAw.
+        r"""Sets the create_user of this BasicAw.
 
         创建人
 
@@ -700,7 +700,7 @@ class BasicAw:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this BasicAw.
+        r"""Gets the create_user_id of this BasicAw.
 
         创建人id
 
@@ -711,7 +711,7 @@ class BasicAw:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this BasicAw.
+        r"""Sets the create_user_id of this BasicAw.
 
         创建人id
 
@@ -722,7 +722,7 @@ class BasicAw:
 
     @property
     def custom_aw_libs(self):
-        """Gets the custom_aw_libs of this BasicAw.
+        r"""Gets the custom_aw_libs of this BasicAw.
 
         aw库的文件列表
 
@@ -733,7 +733,7 @@ class BasicAw:
 
     @custom_aw_libs.setter
     def custom_aw_libs(self, custom_aw_libs):
-        """Sets the custom_aw_libs of this BasicAw.
+        r"""Sets the custom_aw_libs of this BasicAw.
 
         aw库的文件列表
 
@@ -744,7 +744,7 @@ class BasicAw:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this BasicAw.
+        r"""Gets the delete_time of this BasicAw.
 
         删除时间
 
@@ -755,7 +755,7 @@ class BasicAw:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this BasicAw.
+        r"""Sets the delete_time of this BasicAw.
 
         删除时间
 
@@ -766,7 +766,7 @@ class BasicAw:
 
     @property
     def delete_user(self):
-        """Gets the delete_user of this BasicAw.
+        r"""Gets the delete_user of this BasicAw.
 
         删除人
 
@@ -777,7 +777,7 @@ class BasicAw:
 
     @delete_user.setter
     def delete_user(self, delete_user):
-        """Sets the delete_user of this BasicAw.
+        r"""Sets the delete_user of this BasicAw.
 
         删除人
 
@@ -788,7 +788,7 @@ class BasicAw:
 
     @property
     def description(self):
-        """Gets the description of this BasicAw.
+        r"""Gets the description of this BasicAw.
 
         描述
 
@@ -799,7 +799,7 @@ class BasicAw:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BasicAw.
+        r"""Sets the description of this BasicAw.
 
         描述
 
@@ -810,7 +810,7 @@ class BasicAw:
 
     @property
     def dft_check_point_list(self):
-        """Gets the dft_check_point_list of this BasicAw.
+        r"""Gets the dft_check_point_list of this BasicAw.
 
         默认检查点List
 
@@ -821,7 +821,7 @@ class BasicAw:
 
     @dft_check_point_list.setter
     def dft_check_point_list(self, dft_check_point_list):
-        """Sets the dft_check_point_list of this BasicAw.
+        r"""Sets the dft_check_point_list of this BasicAw.
 
         默认检查点List
 
@@ -832,7 +832,7 @@ class BasicAw:
 
     @property
     def dft_custom_header(self):
-        """Gets the dft_custom_header of this BasicAw.
+        r"""Gets the dft_custom_header of this BasicAw.
 
         默认请求头参数对象
 
@@ -843,7 +843,7 @@ class BasicAw:
 
     @dft_custom_header.setter
     def dft_custom_header(self, dft_custom_header):
-        """Sets the dft_custom_header of this BasicAw.
+        r"""Sets the dft_custom_header of this BasicAw.
 
         默认请求头参数对象
 
@@ -854,7 +854,7 @@ class BasicAw:
 
     @property
     def dft_retry_interval(self):
-        """Gets the dft_retry_interval of this BasicAw.
+        r"""Gets the dft_retry_interval of this BasicAw.
 
         重试间隔时间 (ms) 为空表示不等待
 
@@ -865,7 +865,7 @@ class BasicAw:
 
     @dft_retry_interval.setter
     def dft_retry_interval(self, dft_retry_interval):
-        """Sets the dft_retry_interval of this BasicAw.
+        r"""Sets the dft_retry_interval of this BasicAw.
 
         重试间隔时间 (ms) 为空表示不等待
 
@@ -876,7 +876,7 @@ class BasicAw:
 
     @property
     def dft_retry_times(self):
-        """Gets the dft_retry_times of this BasicAw.
+        r"""Gets the dft_retry_times of this BasicAw.
 
         重试次数
 
@@ -887,7 +887,7 @@ class BasicAw:
 
     @dft_retry_times.setter
     def dft_retry_times(self, dft_retry_times):
-        """Sets the dft_retry_times of this BasicAw.
+        r"""Sets the dft_retry_times of this BasicAw.
 
         重试次数
 
@@ -898,7 +898,7 @@ class BasicAw:
 
     @property
     def dft_variable_list(self):
-        """Gets the dft_variable_list of this BasicAw.
+        r"""Gets the dft_variable_list of this BasicAw.
 
         定义的变量信息
 
@@ -909,7 +909,7 @@ class BasicAw:
 
     @dft_variable_list.setter
     def dft_variable_list(self, dft_variable_list):
-        """Sets the dft_variable_list of this BasicAw.
+        r"""Sets the dft_variable_list of this BasicAw.
 
         定义的变量信息
 
@@ -920,7 +920,7 @@ class BasicAw:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this BasicAw.
+        r"""Gets the extra_info of this BasicAw.
 
         :return: The extra_info of this BasicAw.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.JsonNode`
@@ -929,7 +929,7 @@ class BasicAw:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this BasicAw.
+        r"""Sets the extra_info of this BasicAw.
 
         :param extra_info: The extra_info of this BasicAw.
         :type extra_info: :class:`huaweicloudsdkcloudtest.v1.JsonNode`
@@ -938,7 +938,7 @@ class BasicAw:
 
     @property
     def group_name(self):
-        """Gets the group_name of this BasicAw.
+        r"""Gets the group_name of this BasicAw.
 
         组名
 
@@ -949,7 +949,7 @@ class BasicAw:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this BasicAw.
+        r"""Sets the group_name of this BasicAw.
 
         组名
 
@@ -960,7 +960,7 @@ class BasicAw:
 
     @property
     def has_code(self):
-        """Gets the has_code of this BasicAw.
+        r"""Gets the has_code of this BasicAw.
 
         是否自带代码 0-不自带代码，该aw依赖source字段中的源；1-自带代码
 
@@ -971,7 +971,7 @@ class BasicAw:
 
     @has_code.setter
     def has_code(self, has_code):
-        """Sets the has_code of this BasicAw.
+        r"""Sets the has_code of this BasicAw.
 
         是否自带代码 0-不自带代码，该aw依赖source字段中的源；1-自带代码
 
@@ -982,7 +982,7 @@ class BasicAw:
 
     @property
     def id(self):
-        """Gets the id of this BasicAw.
+        r"""Gets the id of this BasicAw.
 
         id
 
@@ -993,7 +993,7 @@ class BasicAw:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BasicAw.
+        r"""Sets the id of this BasicAw.
 
         id
 
@@ -1004,7 +1004,7 @@ class BasicAw:
 
     @property
     def import_package(self):
-        """Gets the import_package of this BasicAw.
+        r"""Gets the import_package of this BasicAw.
 
         导入的包
 
@@ -1015,7 +1015,7 @@ class BasicAw:
 
     @import_package.setter
     def import_package(self, import_package):
-        """Sets the import_package of this BasicAw.
+        r"""Sets the import_package of this BasicAw.
 
         导入的包
 
@@ -1026,7 +1026,7 @@ class BasicAw:
 
     @property
     def interface_label(self):
-        """Gets the interface_label of this BasicAw.
+        r"""Gets the interface_label of this BasicAw.
 
         接口的x-extend
 
@@ -1037,7 +1037,7 @@ class BasicAw:
 
     @interface_label.setter
     def interface_label(self, interface_label):
-        """Sets the interface_label of this BasicAw.
+        r"""Sets the interface_label of this BasicAw.
 
         接口的x-extend
 
@@ -1048,7 +1048,7 @@ class BasicAw:
 
     @property
     def is_favorite(self):
-        """Gets the is_favorite of this BasicAw.
+        r"""Gets the is_favorite of this BasicAw.
 
         是否是当前工程的收藏aw，该字段不存数据库，每次获取时实时判断
 
@@ -1059,7 +1059,7 @@ class BasicAw:
 
     @is_favorite.setter
     def is_favorite(self, is_favorite):
-        """Sets the is_favorite of this BasicAw.
+        r"""Sets the is_favorite of this BasicAw.
 
         是否是当前工程的收藏aw，该字段不存数据库，每次获取时实时判断
 
@@ -1070,7 +1070,7 @@ class BasicAw:
 
     @property
     def keyword_variable_value(self):
-        """Gets the keyword_variable_value of this BasicAw.
+        r"""Gets the keyword_variable_value of this BasicAw.
 
         关键字局部变量
 
@@ -1081,7 +1081,7 @@ class BasicAw:
 
     @keyword_variable_value.setter
     def keyword_variable_value(self, keyword_variable_value):
-        """Sets the keyword_variable_value of this BasicAw.
+        r"""Sets the keyword_variable_value of this BasicAw.
 
         关键字局部变量
 
@@ -1092,7 +1092,7 @@ class BasicAw:
 
     @property
     def method(self):
-        """Gets the method of this BasicAw.
+        r"""Gets the method of this BasicAw.
 
         方法
 
@@ -1103,7 +1103,7 @@ class BasicAw:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this BasicAw.
+        r"""Sets the method of this BasicAw.
 
         方法
 
@@ -1114,7 +1114,7 @@ class BasicAw:
 
     @property
     def name(self):
-        """Gets the name of this BasicAw.
+        r"""Gets the name of this BasicAw.
 
         名称
 
@@ -1125,7 +1125,7 @@ class BasicAw:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BasicAw.
+        r"""Sets the name of this BasicAw.
 
         名称
 
@@ -1136,7 +1136,7 @@ class BasicAw:
 
     @property
     def name_view(self):
-        """Gets the name_view of this BasicAw.
+        r"""Gets the name_view of this BasicAw.
 
         aw在页面上显示的名字
 
@@ -1147,7 +1147,7 @@ class BasicAw:
 
     @name_view.setter
     def name_view(self, name_view):
-        """Sets the name_view of this BasicAw.
+        r"""Sets the name_view of this BasicAw.
 
         aw在页面上显示的名字
 
@@ -1158,7 +1158,7 @@ class BasicAw:
 
     @property
     def origin_project(self):
-        """Gets the origin_project of this BasicAw.
+        r"""Gets the origin_project of this BasicAw.
 
         源工程信息，如果该aw是从其他工程过来的(继承或者copy to local)
 
@@ -1169,7 +1169,7 @@ class BasicAw:
 
     @origin_project.setter
     def origin_project(self, origin_project):
-        """Sets the origin_project of this BasicAw.
+        r"""Sets the origin_project of this BasicAw.
 
         源工程信息，如果该aw是从其他工程过来的(继承或者copy to local)
 
@@ -1180,7 +1180,7 @@ class BasicAw:
 
     @property
     def output_param_list(self):
-        """Gets the output_param_list of this BasicAw.
+        r"""Gets the output_param_list of this BasicAw.
 
         组合aw的输出参数信息，该字段不存数据库，实时获取
 
@@ -1191,7 +1191,7 @@ class BasicAw:
 
     @output_param_list.setter
     def output_param_list(self, output_param_list):
-        """Sets the output_param_list of this BasicAw.
+        r"""Sets the output_param_list of this BasicAw.
 
         组合aw的输出参数信息，该字段不存数据库，实时获取
 
@@ -1202,7 +1202,7 @@ class BasicAw:
 
     @property
     def param_type_and_dft_value(self):
-        """Gets the param_type_and_dft_value of this BasicAw.
+        r"""Gets the param_type_and_dft_value of this BasicAw.
 
         参数类型和参数默认值对应List
 
@@ -1213,7 +1213,7 @@ class BasicAw:
 
     @param_type_and_dft_value.setter
     def param_type_and_dft_value(self, param_type_and_dft_value):
-        """Sets the param_type_and_dft_value of this BasicAw.
+        r"""Sets the param_type_and_dft_value of this BasicAw.
 
         参数类型和参数默认值对应List
 
@@ -1224,7 +1224,7 @@ class BasicAw:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BasicAw.
+        r"""Gets the project_id of this BasicAw.
 
         工程ID
 
@@ -1235,7 +1235,7 @@ class BasicAw:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BasicAw.
+        r"""Sets the project_id of this BasicAw.
 
         工程ID
 
@@ -1246,7 +1246,7 @@ class BasicAw:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this BasicAw.
+        r"""Gets the protocol_type of this BasicAw.
 
         协议类型 (http/dsf/other)
 
@@ -1257,7 +1257,7 @@ class BasicAw:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this BasicAw.
+        r"""Sets the protocol_type of this BasicAw.
 
         协议类型 (http/dsf/other)
 
@@ -1268,7 +1268,7 @@ class BasicAw:
 
     @property
     def public_aw_lib(self):
-        """Gets the public_aw_lib of this BasicAw.
+        r"""Gets the public_aw_lib of this BasicAw.
 
         :return: The public_aw_lib of this BasicAw.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PublicAwLib`
@@ -1277,7 +1277,7 @@ class BasicAw:
 
     @public_aw_lib.setter
     def public_aw_lib(self, public_aw_lib):
-        """Sets the public_aw_lib of this BasicAw.
+        r"""Sets the public_aw_lib of this BasicAw.
 
         :param public_aw_lib: The public_aw_lib of this BasicAw.
         :type public_aw_lib: :class:`huaweicloudsdkcloudtest.v1.PublicAwLib`
@@ -1286,7 +1286,7 @@ class BasicAw:
 
     @property
     def public_aw_lib_id(self):
-        """Gets the public_aw_lib_id of this BasicAw.
+        r"""Gets the public_aw_lib_id of this BasicAw.
 
         所属公共aw库Id
 
@@ -1297,7 +1297,7 @@ class BasicAw:
 
     @public_aw_lib_id.setter
     def public_aw_lib_id(self, public_aw_lib_id):
-        """Sets the public_aw_lib_id of this BasicAw.
+        r"""Sets the public_aw_lib_id of this BasicAw.
 
         所属公共aw库Id
 
@@ -1308,7 +1308,7 @@ class BasicAw:
 
     @property
     def region(self):
-        """Gets the region of this BasicAw.
+        r"""Gets the region of this BasicAw.
 
         区域名称
 
@@ -1319,7 +1319,7 @@ class BasicAw:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BasicAw.
+        r"""Sets the region of this BasicAw.
 
         区域名称
 
@@ -1330,7 +1330,7 @@ class BasicAw:
 
     @property
     def return_type(self):
-        """Gets the return_type of this BasicAw.
+        r"""Gets the return_type of this BasicAw.
 
         返回类型
 
@@ -1341,7 +1341,7 @@ class BasicAw:
 
     @return_type.setter
     def return_type(self, return_type):
-        """Sets the return_type of this BasicAw.
+        r"""Sets the return_type of this BasicAw.
 
         返回类型
 
@@ -1352,7 +1352,7 @@ class BasicAw:
 
     @property
     def root_id(self):
-        """Gets the root_id of this BasicAw.
+        r"""Gets the root_id of this BasicAw.
 
         root id
 
@@ -1363,7 +1363,7 @@ class BasicAw:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this BasicAw.
+        r"""Sets the root_id of this BasicAw.
 
         root id
 
@@ -1374,7 +1374,7 @@ class BasicAw:
 
     @property
     def source(self):
-        """Gets the source of this BasicAw.
+        r"""Gets the source of this BasicAw.
 
         来源
 
@@ -1385,7 +1385,7 @@ class BasicAw:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this BasicAw.
+        r"""Sets the source of this BasicAw.
 
         来源
 
@@ -1396,7 +1396,7 @@ class BasicAw:
 
     @property
     def special_type(self):
-        """Gets the special_type of this BasicAw.
+        r"""Gets the special_type of this BasicAw.
 
         测试步骤来源
 
@@ -1407,7 +1407,7 @@ class BasicAw:
 
     @special_type.setter
     def special_type(self, special_type):
-        """Sets the special_type of this BasicAw.
+        r"""Sets the special_type of this BasicAw.
 
         测试步骤来源
 
@@ -1418,7 +1418,7 @@ class BasicAw:
 
     @property
     def tmss_case_number(self):
-        """Gets the tmss_case_number of this BasicAw.
+        r"""Gets the tmss_case_number of this BasicAw.
 
         关键字管理的用例编号
 
@@ -1429,7 +1429,7 @@ class BasicAw:
 
     @tmss_case_number.setter
     def tmss_case_number(self, tmss_case_number):
-        """Sets the tmss_case_number of this BasicAw.
+        r"""Sets the tmss_case_number of this BasicAw.
 
         关键字管理的用例编号
 
@@ -1440,7 +1440,7 @@ class BasicAw:
 
     @property
     def tmss_case_id(self):
-        """Gets the tmss_case_id of this BasicAw.
+        r"""Gets the tmss_case_id of this BasicAw.
 
         关键字aw管理的用例ID
 
@@ -1451,7 +1451,7 @@ class BasicAw:
 
     @tmss_case_id.setter
     def tmss_case_id(self, tmss_case_id):
-        """Sets the tmss_case_id of this BasicAw.
+        r"""Sets the tmss_case_id of this BasicAw.
 
         关键字aw管理的用例ID
 
@@ -1462,7 +1462,7 @@ class BasicAw:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BasicAw.
+        r"""Gets the update_time of this BasicAw.
 
         更新时间
 
@@ -1473,7 +1473,7 @@ class BasicAw:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BasicAw.
+        r"""Sets the update_time of this BasicAw.
 
         更新时间
 
@@ -1484,7 +1484,7 @@ class BasicAw:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this BasicAw.
+        r"""Gets the update_time_stamp of this BasicAw.
 
         更新时间戳
 
@@ -1495,7 +1495,7 @@ class BasicAw:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this BasicAw.
+        r"""Sets the update_time_stamp of this BasicAw.
 
         更新时间戳
 
@@ -1506,7 +1506,7 @@ class BasicAw:
 
     @property
     def update_time_string(self):
-        """Gets the update_time_string of this BasicAw.
+        r"""Gets the update_time_string of this BasicAw.
 
         更新时间字符串
 
@@ -1517,7 +1517,7 @@ class BasicAw:
 
     @update_time_string.setter
     def update_time_string(self, update_time_string):
-        """Sets the update_time_string of this BasicAw.
+        r"""Sets the update_time_string of this BasicAw.
 
         更新时间字符串
 
@@ -1528,7 +1528,7 @@ class BasicAw:
 
     @property
     def update_user(self):
-        """Gets the update_user of this BasicAw.
+        r"""Gets the update_user of this BasicAw.
 
         更新人
 
@@ -1539,7 +1539,7 @@ class BasicAw:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this BasicAw.
+        r"""Sets the update_user of this BasicAw.
 
         更新人
 
@@ -1550,7 +1550,7 @@ class BasicAw:
 
     @property
     def warning_msg(self):
-        """Gets the warning_msg of this BasicAw.
+        r"""Gets the warning_msg of this BasicAw.
 
         警告信息
 
@@ -1561,7 +1561,7 @@ class BasicAw:
 
     @warning_msg.setter
     def warning_msg(self, warning_msg):
-        """Sets the warning_msg of this BasicAw.
+        r"""Sets the warning_msg of this BasicAw.
 
         警告信息
 
@@ -1572,7 +1572,7 @@ class BasicAw:
 
     @property
     def yaml_name(self):
-        """Gets the yaml_name of this BasicAw.
+        r"""Gets the yaml_name of this BasicAw.
 
         所属yaml文件名称,该字段不存库，用来记录从哪个yaml文件导入
 
@@ -1583,7 +1583,7 @@ class BasicAw:
 
     @yaml_name.setter
     def yaml_name(self, yaml_name):
-        """Sets the yaml_name of this BasicAw.
+        r"""Sets the yaml_name of this BasicAw.
 
         所属yaml文件名称,该字段不存库，用来记录从哪个yaml文件导入
 

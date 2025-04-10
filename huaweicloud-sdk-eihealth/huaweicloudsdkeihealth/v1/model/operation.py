@@ -27,7 +27,7 @@ class Operation:
     }
 
     def __init__(self):
-        """Operation
+        r"""Operation
 
         The model defined in huaweicloud sdk
 

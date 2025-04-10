@@ -26,7 +26,7 @@ class ListDomainParseDetailResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListDomainParseDetailResponse
+        r"""ListDomainParseDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDomainParseDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDomainParseDetailResponse.
+        r"""Gets the data of this ListDomainParseDetailResponse.
 
         域名解析ip列表
 
@@ -55,7 +55,7 @@ class ListDomainParseDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDomainParseDetailResponse.
+        r"""Sets the data of this ListDomainParseDetailResponse.
 
         域名解析ip列表
 

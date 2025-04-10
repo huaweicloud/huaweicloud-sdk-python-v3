@@ -34,7 +34,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, queue_name=None, user_list=None, count=None):
-        """ListWorkloadQueueUsersResponse
+        r"""ListWorkloadQueueUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ListWorkloadQueueUsersResponse.
+        r"""Gets the workload_res_code of this ListWorkloadQueueUsersResponse.
 
         结果状态码。
 
@@ -83,7 +83,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ListWorkloadQueueUsersResponse.
+        r"""Sets the workload_res_code of this ListWorkloadQueueUsersResponse.
 
         结果状态码。
 
@@ -94,7 +94,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ListWorkloadQueueUsersResponse.
+        r"""Gets the workload_res_str of this ListWorkloadQueueUsersResponse.
 
         结果描述。
 
@@ -105,7 +105,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ListWorkloadQueueUsersResponse.
+        r"""Sets the workload_res_str of this ListWorkloadQueueUsersResponse.
 
         结果描述。
 
@@ -116,7 +116,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListWorkloadQueueUsersResponse.
+        r"""Gets the queue_name of this ListWorkloadQueueUsersResponse.
 
         队列名称。
 
@@ -127,7 +127,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListWorkloadQueueUsersResponse.
+        r"""Sets the queue_name of this ListWorkloadQueueUsersResponse.
 
         队列名称。
 
@@ -138,7 +138,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @property
     def user_list(self):
-        """Gets the user_list of this ListWorkloadQueueUsersResponse.
+        r"""Gets the user_list of this ListWorkloadQueueUsersResponse.
 
         队列用户列表。
 
@@ -149,7 +149,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this ListWorkloadQueueUsersResponse.
+        r"""Sets the user_list of this ListWorkloadQueueUsersResponse.
 
         队列用户列表。
 
@@ -160,7 +160,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkloadQueueUsersResponse.
+        r"""Gets the count of this ListWorkloadQueueUsersResponse.
 
         总数量
 
@@ -171,7 +171,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkloadQueueUsersResponse.
+        r"""Sets the count of this ListWorkloadQueueUsersResponse.
 
         总数量
 

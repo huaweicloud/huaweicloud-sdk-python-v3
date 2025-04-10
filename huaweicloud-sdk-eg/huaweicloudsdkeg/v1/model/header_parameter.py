@@ -29,7 +29,7 @@ class HeaderParameter:
     }
 
     def __init__(self, is_value_secret=None, key=None, value=None):
-        """HeaderParameter
+        r"""HeaderParameter
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HeaderParameter:
 
     @property
     def is_value_secret(self):
-        """Gets the is_value_secret of this HeaderParameter.
+        r"""Gets the is_value_secret of this HeaderParameter.
 
         是否加密
 
@@ -68,7 +68,7 @@ class HeaderParameter:
 
     @is_value_secret.setter
     def is_value_secret(self, is_value_secret):
-        """Sets the is_value_secret of this HeaderParameter.
+        r"""Sets the is_value_secret of this HeaderParameter.
 
         是否加密
 
@@ -79,7 +79,7 @@ class HeaderParameter:
 
     @property
     def key(self):
-        """Gets the key of this HeaderParameter.
+        r"""Gets the key of this HeaderParameter.
 
         header的key值
 
@@ -90,7 +90,7 @@ class HeaderParameter:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this HeaderParameter.
+        r"""Sets the key of this HeaderParameter.
 
         header的key值
 
@@ -101,7 +101,7 @@ class HeaderParameter:
 
     @property
     def value(self):
-        """Gets the value of this HeaderParameter.
+        r"""Gets the value of this HeaderParameter.
 
         deader的value值
 
@@ -112,7 +112,7 @@ class HeaderParameter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this HeaderParameter.
+        r"""Sets the value of this HeaderParameter.
 
         deader的value值
 

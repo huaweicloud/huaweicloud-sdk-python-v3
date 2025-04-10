@@ -27,7 +27,7 @@ class AssociatedTransitIp:
     }
 
     def __init__(self, transit_ip_id=None, transit_ip_address=None):
-        """AssociatedTransitIp
+        r"""AssociatedTransitIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociatedTransitIp:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this AssociatedTransitIp.
+        r"""Gets the transit_ip_id of this AssociatedTransitIp.
 
         中转IP的ID。
 
@@ -61,7 +61,7 @@ class AssociatedTransitIp:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this AssociatedTransitIp.
+        r"""Sets the transit_ip_id of this AssociatedTransitIp.
 
         中转IP的ID。
 
@@ -72,7 +72,7 @@ class AssociatedTransitIp:
 
     @property
     def transit_ip_address(self):
-        """Gets the transit_ip_address of this AssociatedTransitIp.
+        r"""Gets the transit_ip_address of this AssociatedTransitIp.
 
         中转IP地址。
 
@@ -83,7 +83,7 @@ class AssociatedTransitIp:
 
     @transit_ip_address.setter
     def transit_ip_address(self, transit_ip_address):
-        """Sets the transit_ip_address of this AssociatedTransitIp.
+        r"""Sets the transit_ip_address of this AssociatedTransitIp.
 
         中转IP地址。
 

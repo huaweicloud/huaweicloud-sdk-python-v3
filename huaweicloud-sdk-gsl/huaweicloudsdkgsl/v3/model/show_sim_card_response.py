@@ -100,7 +100,7 @@ class ShowSimCardResponse(SdkResponse):
     }
 
     def __init__(self, sim_card_id=None, account_id=None, cid=None, sim_pool_id=None, imei=None, sim_status=None, device_status=None, device_model=None, act_date=None, device_status_date=None, node_id=None, iccid=None, network_type=None, dbm=None, signal_level=None, sim_type=None, tag_names=None, order_id=None, expire_time=None, price_plan_name=None, sim_price_plan_id=None, flow_left=None, flow_used=None, operator_status=None, msisdn=None, imsi=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None, cut_net_flag=None, exceed_cut_net_flag=None, exceed_cut_net_quota=None, imei_bind_remain_times=None, speed_value=None):
-        """ShowSimCardResponse
+        r"""ShowSimCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -303,7 +303,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this ShowSimCardResponse.
+        r"""Gets the sim_card_id of this ShowSimCardResponse.
 
         sim卡id
 
@@ -314,7 +314,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this ShowSimCardResponse.
+        r"""Sets the sim_card_id of this ShowSimCardResponse.
 
         sim卡id
 
@@ -325,7 +325,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def account_id(self):
-        """Gets the account_id of this ShowSimCardResponse.
+        r"""Gets the account_id of this ShowSimCardResponse.
 
         账户id
 
@@ -336,7 +336,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ShowSimCardResponse.
+        r"""Sets the account_id of this ShowSimCardResponse.
 
         账户id
 
@@ -347,7 +347,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def cid(self):
-        """Gets the cid of this ShowSimCardResponse.
+        r"""Gets the cid of this ShowSimCardResponse.
 
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
@@ -358,7 +358,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this ShowSimCardResponse.
+        r"""Sets the cid of this ShowSimCardResponse.
 
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
@@ -369,7 +369,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def sim_pool_id(self):
-        """Gets the sim_pool_id of this ShowSimCardResponse.
+        r"""Gets the sim_pool_id of this ShowSimCardResponse.
 
         流量池ID
 
@@ -380,7 +380,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @sim_pool_id.setter
     def sim_pool_id(self, sim_pool_id):
-        """Sets the sim_pool_id of this ShowSimCardResponse.
+        r"""Sets the sim_pool_id of this ShowSimCardResponse.
 
         流量池ID
 
@@ -391,7 +391,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def imei(self):
-        """Gets the imei of this ShowSimCardResponse.
+        r"""Gets the imei of this ShowSimCardResponse.
 
         设备IMEI
 
@@ -402,7 +402,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this ShowSimCardResponse.
+        r"""Sets the imei of this ShowSimCardResponse.
 
         设备IMEI
 
@@ -413,7 +413,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def sim_status(self):
-        """Gets the sim_status of this ShowSimCardResponse.
+        r"""Gets the sim_status of this ShowSimCardResponse.
 
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
@@ -424,7 +424,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @sim_status.setter
     def sim_status(self, sim_status):
-        """Sets the sim_status of this ShowSimCardResponse.
+        r"""Sets the sim_status of this ShowSimCardResponse.
 
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
@@ -435,7 +435,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def device_status(self):
-        """Gets the device_status of this ShowSimCardResponse.
+        r"""Gets the device_status of this ShowSimCardResponse.
 
         设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -446,7 +446,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @device_status.setter
     def device_status(self, device_status):
-        """Sets the device_status of this ShowSimCardResponse.
+        r"""Sets the device_status of this ShowSimCardResponse.
 
         设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -457,7 +457,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def device_model(self):
-        """Gets the device_model of this ShowSimCardResponse.
+        r"""Gets the device_model of this ShowSimCardResponse.
 
         设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -468,7 +468,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @device_model.setter
     def device_model(self, device_model):
-        """Sets the device_model of this ShowSimCardResponse.
+        r"""Sets the device_model of this ShowSimCardResponse.
 
         设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -479,7 +479,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def act_date(self):
-        """Gets the act_date of this ShowSimCardResponse.
+        r"""Gets the act_date of this ShowSimCardResponse.
 
         激活日期 例如2020-01-31T16:00:00.000Z
 
@@ -490,7 +490,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @act_date.setter
     def act_date(self, act_date):
-        """Sets the act_date of this ShowSimCardResponse.
+        r"""Sets the act_date of this ShowSimCardResponse.
 
         激活日期 例如2020-01-31T16:00:00.000Z
 
@@ -501,7 +501,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def device_status_date(self):
-        """Gets the device_status_date of this ShowSimCardResponse.
+        r"""Gets the device_status_date of this ShowSimCardResponse.
 
         设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -512,7 +512,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @device_status_date.setter
     def device_status_date(self, device_status_date):
-        """Sets the device_status_date of this ShowSimCardResponse.
+        r"""Sets the device_status_date of this ShowSimCardResponse.
 
         设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -523,7 +523,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowSimCardResponse.
+        r"""Gets the node_id of this ShowSimCardResponse.
 
         设备标识
 
@@ -534,7 +534,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowSimCardResponse.
+        r"""Sets the node_id of this ShowSimCardResponse.
 
         设备标识
 
@@ -545,7 +545,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def iccid(self):
-        """Gets the iccid of this ShowSimCardResponse.
+        r"""Gets the iccid of this ShowSimCardResponse.
 
         码号iccid
 
@@ -556,7 +556,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this ShowSimCardResponse.
+        r"""Sets the iccid of this ShowSimCardResponse.
 
         码号iccid
 
@@ -567,7 +567,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def network_type(self):
-        """Gets the network_type of this ShowSimCardResponse.
+        r"""Gets the network_type of this ShowSimCardResponse.
 
         网络类型
 
@@ -578,7 +578,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ShowSimCardResponse.
+        r"""Sets the network_type of this ShowSimCardResponse.
 
         网络类型
 
@@ -589,7 +589,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def dbm(self):
-        """Gets the dbm of this ShowSimCardResponse.
+        r"""Gets the dbm of this ShowSimCardResponse.
 
         信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -600,7 +600,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @dbm.setter
     def dbm(self, dbm):
-        """Sets the dbm of this ShowSimCardResponse.
+        r"""Sets the dbm of this ShowSimCardResponse.
 
         信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -611,7 +611,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def signal_level(self):
-        """Gets the signal_level of this ShowSimCardResponse.
+        r"""Gets the signal_level of this ShowSimCardResponse.
 
         信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -622,7 +622,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @signal_level.setter
     def signal_level(self, signal_level):
-        """Sets the signal_level of this ShowSimCardResponse.
+        r"""Sets the signal_level of this ShowSimCardResponse.
 
         信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -633,7 +633,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this ShowSimCardResponse.
+        r"""Gets the sim_type of this ShowSimCardResponse.
 
         sim卡类型 1.vSIM  2.eSIM  3.实体卡
 
@@ -644,7 +644,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this ShowSimCardResponse.
+        r"""Sets the sim_type of this ShowSimCardResponse.
 
         sim卡类型 1.vSIM  2.eSIM  3.实体卡
 
@@ -655,7 +655,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def tag_names(self):
-        """Gets the tag_names of this ShowSimCardResponse.
+        r"""Gets the tag_names of this ShowSimCardResponse.
 
         标签名
 
@@ -666,7 +666,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @tag_names.setter
     def tag_names(self, tag_names):
-        """Sets the tag_names of this ShowSimCardResponse.
+        r"""Sets the tag_names of this ShowSimCardResponse.
 
         标签名
 
@@ -677,7 +677,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowSimCardResponse.
+        r"""Gets the order_id of this ShowSimCardResponse.
 
         批次号
 
@@ -688,7 +688,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowSimCardResponse.
+        r"""Sets the order_id of this ShowSimCardResponse.
 
         批次号
 
@@ -699,7 +699,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowSimCardResponse.
+        r"""Gets the expire_time of this ShowSimCardResponse.
 
         到期时间 例如2021-06-30T00:00:00.000Z
 
@@ -710,7 +710,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowSimCardResponse.
+        r"""Sets the expire_time of this ShowSimCardResponse.
 
         到期时间 例如2021-06-30T00:00:00.000Z
 
@@ -721,7 +721,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this ShowSimCardResponse.
+        r"""Gets the price_plan_name of this ShowSimCardResponse.
 
         在用套餐名
 
@@ -732,7 +732,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this ShowSimCardResponse.
+        r"""Sets the price_plan_name of this ShowSimCardResponse.
 
         在用套餐名
 
@@ -743,7 +743,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def sim_price_plan_id(self):
-        """Gets the sim_price_plan_id of this ShowSimCardResponse.
+        r"""Gets the sim_price_plan_id of this ShowSimCardResponse.
 
         套餐订购实例ID
 
@@ -754,7 +754,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @sim_price_plan_id.setter
     def sim_price_plan_id(self, sim_price_plan_id):
-        """Sets the sim_price_plan_id of this ShowSimCardResponse.
+        r"""Sets the sim_price_plan_id of this ShowSimCardResponse.
 
         套餐订购实例ID
 
@@ -765,7 +765,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def flow_left(self):
-        """Gets the flow_left of this ShowSimCardResponse.
+        r"""Gets the flow_left of this ShowSimCardResponse.
 
         剩余流量(单位M)，数据默认截止到昨日24点。
 
@@ -776,7 +776,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @flow_left.setter
     def flow_left(self, flow_left):
-        """Sets the flow_left of this ShowSimCardResponse.
+        r"""Sets the flow_left of this ShowSimCardResponse.
 
         剩余流量(单位M)，数据默认截止到昨日24点。
 
@@ -787,7 +787,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this ShowSimCardResponse.
+        r"""Gets the flow_used of this ShowSimCardResponse.
 
         已用流量(单位M)，数据默认截止到昨日24点。
 
@@ -798,7 +798,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this ShowSimCardResponse.
+        r"""Sets the flow_used of this ShowSimCardResponse.
 
         已用流量(单位M)，数据默认截止到昨日24点。
 
@@ -809,7 +809,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def operator_status(self):
-        """Gets the operator_status of this ShowSimCardResponse.
+        r"""Gets the operator_status of this ShowSimCardResponse.
 
         运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
 
@@ -820,7 +820,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @operator_status.setter
     def operator_status(self, operator_status):
-        """Sets the operator_status of this ShowSimCardResponse.
+        r"""Sets the operator_status of this ShowSimCardResponse.
 
         运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
 
@@ -831,7 +831,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def msisdn(self):
-        """Gets the msisdn of this ShowSimCardResponse.
+        r"""Gets the msisdn of this ShowSimCardResponse.
 
         MSISDN
 
@@ -842,7 +842,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @msisdn.setter
     def msisdn(self, msisdn):
-        """Sets the msisdn of this ShowSimCardResponse.
+        r"""Sets the msisdn of this ShowSimCardResponse.
 
         MSISDN
 
@@ -853,7 +853,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def imsi(self):
-        """Gets the imsi of this ShowSimCardResponse.
+        r"""Gets the imsi of this ShowSimCardResponse.
 
         IMSI
 
@@ -864,7 +864,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @imsi.setter
     def imsi(self, imsi):
-        """Sets the imsi of this ShowSimCardResponse.
+        r"""Sets the imsi of this ShowSimCardResponse.
 
         IMSI
 
@@ -875,7 +875,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def customer_attribute1(self):
-        """Gets the customer_attribute1 of this ShowSimCardResponse.
+        r"""Gets the customer_attribute1 of this ShowSimCardResponse.
 
         自定义属性一
 
@@ -886,7 +886,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @customer_attribute1.setter
     def customer_attribute1(self, customer_attribute1):
-        """Sets the customer_attribute1 of this ShowSimCardResponse.
+        r"""Sets the customer_attribute1 of this ShowSimCardResponse.
 
         自定义属性一
 
@@ -897,7 +897,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def customer_attribute2(self):
-        """Gets the customer_attribute2 of this ShowSimCardResponse.
+        r"""Gets the customer_attribute2 of this ShowSimCardResponse.
 
         自定义属性二
 
@@ -908,7 +908,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @customer_attribute2.setter
     def customer_attribute2(self, customer_attribute2):
-        """Sets the customer_attribute2 of this ShowSimCardResponse.
+        r"""Sets the customer_attribute2 of this ShowSimCardResponse.
 
         自定义属性二
 
@@ -919,7 +919,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def customer_attribute3(self):
-        """Gets the customer_attribute3 of this ShowSimCardResponse.
+        r"""Gets the customer_attribute3 of this ShowSimCardResponse.
 
         自定义属性三
 
@@ -930,7 +930,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @customer_attribute3.setter
     def customer_attribute3(self, customer_attribute3):
-        """Sets the customer_attribute3 of this ShowSimCardResponse.
+        r"""Sets the customer_attribute3 of this ShowSimCardResponse.
 
         自定义属性三
 
@@ -941,7 +941,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def customer_attribute4(self):
-        """Gets the customer_attribute4 of this ShowSimCardResponse.
+        r"""Gets the customer_attribute4 of this ShowSimCardResponse.
 
         自定义属性四
 
@@ -952,7 +952,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @customer_attribute4.setter
     def customer_attribute4(self, customer_attribute4):
-        """Sets the customer_attribute4 of this ShowSimCardResponse.
+        r"""Sets the customer_attribute4 of this ShowSimCardResponse.
 
         自定义属性四
 
@@ -963,7 +963,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def customer_attribute5(self):
-        """Gets the customer_attribute5 of this ShowSimCardResponse.
+        r"""Gets the customer_attribute5 of this ShowSimCardResponse.
 
         自定义属性五
 
@@ -974,7 +974,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @customer_attribute5.setter
     def customer_attribute5(self, customer_attribute5):
-        """Sets the customer_attribute5 of this ShowSimCardResponse.
+        r"""Sets the customer_attribute5 of this ShowSimCardResponse.
 
         自定义属性五
 
@@ -985,7 +985,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def customer_attribute6(self):
-        """Gets the customer_attribute6 of this ShowSimCardResponse.
+        r"""Gets the customer_attribute6 of this ShowSimCardResponse.
 
         自定义属性六
 
@@ -996,7 +996,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @customer_attribute6.setter
     def customer_attribute6(self, customer_attribute6):
-        """Sets the customer_attribute6 of this ShowSimCardResponse.
+        r"""Sets the customer_attribute6 of this ShowSimCardResponse.
 
         自定义属性六
 
@@ -1007,7 +1007,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def real_named(self):
-        """Gets the real_named of this ShowSimCardResponse.
+        r"""Gets the real_named of this ShowSimCardResponse.
 
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
@@ -1018,7 +1018,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @real_named.setter
     def real_named(self, real_named):
-        """Sets the real_named of this ShowSimCardResponse.
+        r"""Sets the real_named of this ShowSimCardResponse.
 
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
@@ -1029,7 +1029,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def cut_net_flag(self):
-        """Gets the cut_net_flag of this ShowSimCardResponse.
+        r"""Gets the cut_net_flag of this ShowSimCardResponse.
 
         是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1040,7 +1040,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @cut_net_flag.setter
     def cut_net_flag(self, cut_net_flag):
-        """Sets the cut_net_flag of this ShowSimCardResponse.
+        r"""Sets the cut_net_flag of this ShowSimCardResponse.
 
         是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1051,7 +1051,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def exceed_cut_net_flag(self):
-        """Gets the exceed_cut_net_flag of this ShowSimCardResponse.
+        r"""Gets the exceed_cut_net_flag of this ShowSimCardResponse.
 
         是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1062,7 +1062,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @exceed_cut_net_flag.setter
     def exceed_cut_net_flag(self, exceed_cut_net_flag):
-        """Sets the exceed_cut_net_flag of this ShowSimCardResponse.
+        r"""Sets the exceed_cut_net_flag of this ShowSimCardResponse.
 
         是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1073,7 +1073,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def exceed_cut_net_quota(self):
-        """Gets the exceed_cut_net_quota of this ShowSimCardResponse.
+        r"""Gets the exceed_cut_net_quota of this ShowSimCardResponse.
 
         达量断网阈值（单位MB 当前仅电信卡支持）
 
@@ -1084,7 +1084,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @exceed_cut_net_quota.setter
     def exceed_cut_net_quota(self, exceed_cut_net_quota):
-        """Sets the exceed_cut_net_quota of this ShowSimCardResponse.
+        r"""Sets the exceed_cut_net_quota of this ShowSimCardResponse.
 
         达量断网阈值（单位MB 当前仅电信卡支持）
 
@@ -1095,7 +1095,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def imei_bind_remain_times(self):
-        """Gets the imei_bind_remain_times of this ShowSimCardResponse.
+        r"""Gets the imei_bind_remain_times of this ShowSimCardResponse.
 
         本月机卡绑定剩余次数（当前仅电信卡支持）
 
@@ -1106,7 +1106,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @imei_bind_remain_times.setter
     def imei_bind_remain_times(self, imei_bind_remain_times):
-        """Sets the imei_bind_remain_times of this ShowSimCardResponse.
+        r"""Sets the imei_bind_remain_times of this ShowSimCardResponse.
 
         本月机卡绑定剩余次数（当前仅电信卡支持）
 
@@ -1117,7 +1117,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @property
     def speed_value(self):
-        """Gets the speed_value of this ShowSimCardResponse.
+        r"""Gets the speed_value of this ShowSimCardResponse.
 
         网络限制速率（单位Kbps,当前电信联通卡支持）
 
@@ -1128,7 +1128,7 @@ class ShowSimCardResponse(SdkResponse):
 
     @speed_value.setter
     def speed_value(self, speed_value):
-        """Sets the speed_value of this ShowSimCardResponse.
+        r"""Sets the speed_value of this ShowSimCardResponse.
 
         网络限制速率（单位Kbps,当前电信联通卡支持）
 

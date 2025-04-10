@@ -29,7 +29,7 @@ class CustomBaselineRulePatchItem:
     }
 
     def __init__(self, name=None, version=None, created_time=None):
-        """CustomBaselineRulePatchItem
+        r"""CustomBaselineRulePatchItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CustomBaselineRulePatchItem:
 
     @property
     def name(self):
-        """Gets the name of this CustomBaselineRulePatchItem.
+        r"""Gets the name of this CustomBaselineRulePatchItem.
 
         补丁名称
 
@@ -68,7 +68,7 @@ class CustomBaselineRulePatchItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomBaselineRulePatchItem.
+        r"""Sets the name of this CustomBaselineRulePatchItem.
 
         补丁名称
 
@@ -79,7 +79,7 @@ class CustomBaselineRulePatchItem:
 
     @property
     def version(self):
-        """Gets the version of this CustomBaselineRulePatchItem.
+        r"""Gets the version of this CustomBaselineRulePatchItem.
 
         补丁版本
 
@@ -90,7 +90,7 @@ class CustomBaselineRulePatchItem:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CustomBaselineRulePatchItem.
+        r"""Sets the version of this CustomBaselineRulePatchItem.
 
         补丁版本
 
@@ -101,7 +101,7 @@ class CustomBaselineRulePatchItem:
 
     @property
     def created_time(self):
-        """Gets the created_time of this CustomBaselineRulePatchItem.
+        r"""Gets the created_time of this CustomBaselineRulePatchItem.
 
         创建时间
 
@@ -112,7 +112,7 @@ class CustomBaselineRulePatchItem:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CustomBaselineRulePatchItem.
+        r"""Sets the created_time of this CustomBaselineRulePatchItem.
 
         创建时间
 

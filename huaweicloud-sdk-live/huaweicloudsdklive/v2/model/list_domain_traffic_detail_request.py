@@ -43,7 +43,7 @@ class ListDomainTrafficDetailRequest:
     }
 
     def __init__(self, play_domains=None, app=None, stream=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None):
-        """ListDomainTrafficDetailRequest
+        r"""ListDomainTrafficDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def play_domains(self):
-        """Gets the play_domains of this ListDomainTrafficDetailRequest.
+        r"""Gets the play_domains of this ListDomainTrafficDetailRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的流量数据。 
 
@@ -117,7 +117,7 @@ class ListDomainTrafficDetailRequest:
 
     @play_domains.setter
     def play_domains(self, play_domains):
-        """Sets the play_domains of this ListDomainTrafficDetailRequest.
+        r"""Sets the play_domains of this ListDomainTrafficDetailRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的流量数据。 
 
@@ -128,7 +128,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListDomainTrafficDetailRequest.
+        r"""Gets the app of this ListDomainTrafficDetailRequest.
 
         应用名称。
 
@@ -139,7 +139,7 @@ class ListDomainTrafficDetailRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListDomainTrafficDetailRequest.
+        r"""Sets the app of this ListDomainTrafficDetailRequest.
 
         应用名称。
 
@@ -150,7 +150,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListDomainTrafficDetailRequest.
+        r"""Gets the stream of this ListDomainTrafficDetailRequest.
 
         流名。
 
@@ -161,7 +161,7 @@ class ListDomainTrafficDetailRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListDomainTrafficDetailRequest.
+        r"""Sets the stream of this ListDomainTrafficDetailRequest.
 
         流名。
 
@@ -172,7 +172,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListDomainTrafficDetailRequest.
+        r"""Gets the region of this ListDomainTrafficDetailRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -183,7 +183,7 @@ class ListDomainTrafficDetailRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListDomainTrafficDetailRequest.
+        r"""Sets the region of this ListDomainTrafficDetailRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -194,7 +194,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListDomainTrafficDetailRequest.
+        r"""Gets the isp of this ListDomainTrafficDetailRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -205,7 +205,7 @@ class ListDomainTrafficDetailRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListDomainTrafficDetailRequest.
+        r"""Sets the isp of this ListDomainTrafficDetailRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -216,7 +216,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListDomainTrafficDetailRequest.
+        r"""Gets the protocol of this ListDomainTrafficDetailRequest.
 
         请求协议
 
@@ -227,7 +227,7 @@ class ListDomainTrafficDetailRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListDomainTrafficDetailRequest.
+        r"""Sets the protocol of this ListDomainTrafficDetailRequest.
 
         请求协议
 
@@ -238,7 +238,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ListDomainTrafficDetailRequest.
+        r"""Gets the interval of this ListDomainTrafficDetailRequest.
 
         查询数据的时间粒度。支持300（默认值）, 3600和86400秒。不传值时，使用默认值300秒。 
 
@@ -249,7 +249,7 @@ class ListDomainTrafficDetailRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ListDomainTrafficDetailRequest.
+        r"""Sets the interval of this ListDomainTrafficDetailRequest.
 
         查询数据的时间粒度。支持300（默认值）, 3600和86400秒。不传值时，使用默认值300秒。 
 
@@ -260,7 +260,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDomainTrafficDetailRequest.
+        r"""Gets the start_time of this ListDomainTrafficDetailRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -271,7 +271,7 @@ class ListDomainTrafficDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDomainTrafficDetailRequest.
+        r"""Sets the start_time of this ListDomainTrafficDetailRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -282,7 +282,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDomainTrafficDetailRequest.
+        r"""Gets the end_time of this ListDomainTrafficDetailRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -293,7 +293,7 @@ class ListDomainTrafficDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDomainTrafficDetailRequest.
+        r"""Sets the end_time of this ListDomainTrafficDetailRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -304,7 +304,7 @@ class ListDomainTrafficDetailRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListDomainTrafficDetailRequest.
+        r"""Gets the service_type of this ListDomainTrafficDetailRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
 
@@ -315,7 +315,7 @@ class ListDomainTrafficDetailRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListDomainTrafficDetailRequest.
+        r"""Sets the service_type of this ListDomainTrafficDetailRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
 

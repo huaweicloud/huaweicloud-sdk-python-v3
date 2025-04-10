@@ -27,7 +27,7 @@ class DataClassRefPojo:
     }
 
     def __init__(self, id=None, name=None):
-        """DataClassRefPojo
+        r"""DataClassRefPojo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DataClassRefPojo:
 
     @property
     def id(self):
-        """Gets the id of this DataClassRefPojo.
+        r"""Gets the id of this DataClassRefPojo.
 
         唯一标识ID
 
@@ -60,7 +60,7 @@ class DataClassRefPojo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataClassRefPojo.
+        r"""Sets the id of this DataClassRefPojo.
 
         唯一标识ID
 
@@ -71,7 +71,7 @@ class DataClassRefPojo:
 
     @property
     def name(self):
-        """Gets the name of this DataClassRefPojo.
+        r"""Gets the name of this DataClassRefPojo.
 
         唯一标识ID
 
@@ -82,7 +82,7 @@ class DataClassRefPojo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassRefPojo.
+        r"""Sets the name of this DataClassRefPojo.
 
         唯一标识ID
 

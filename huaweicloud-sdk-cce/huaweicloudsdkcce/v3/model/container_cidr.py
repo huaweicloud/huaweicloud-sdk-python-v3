@@ -25,7 +25,7 @@ class ContainerCIDR:
     }
 
     def __init__(self, cidr=None):
-        """ContainerCIDR
+        r"""ContainerCIDR
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ContainerCIDR:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ContainerCIDR.
+        r"""Gets the cidr of this ContainerCIDR.
 
         容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19。
 
@@ -53,7 +53,7 @@ class ContainerCIDR:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ContainerCIDR.
+        r"""Sets the cidr of this ContainerCIDR.
 
         容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19。
 

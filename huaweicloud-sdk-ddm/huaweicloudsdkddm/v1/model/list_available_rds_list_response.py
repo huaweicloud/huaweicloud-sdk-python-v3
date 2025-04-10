@@ -32,7 +32,7 @@ class ListAvailableRdsListResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, offset=None, limit=None, total=None):
-        """ListAvailableRdsListResponse
+        r"""ListAvailableRdsListResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListAvailableRdsListResponse.
+        r"""Gets the instances of this ListAvailableRdsListResponse.
 
         获取创建逻辑库可用数据库实例信息列表的集合。
 
@@ -76,7 +76,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListAvailableRdsListResponse.
+        r"""Sets the instances of this ListAvailableRdsListResponse.
 
         获取创建逻辑库可用数据库实例信息列表的集合。
 
@@ -87,7 +87,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListAvailableRdsListResponse.
+        r"""Gets the offset of this ListAvailableRdsListResponse.
 
         分页参数: 起始值。
 
@@ -98,7 +98,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAvailableRdsListResponse.
+        r"""Sets the offset of this ListAvailableRdsListResponse.
 
         分页参数: 起始值。
 
@@ -109,7 +109,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListAvailableRdsListResponse.
+        r"""Gets the limit of this ListAvailableRdsListResponse.
 
         分页参数：每页多少条。
 
@@ -120,7 +120,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAvailableRdsListResponse.
+        r"""Sets the limit of this ListAvailableRdsListResponse.
 
         分页参数：每页多少条。
 
@@ -131,7 +131,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAvailableRdsListResponse.
+        r"""Gets the total of this ListAvailableRdsListResponse.
 
         集合总数
 
@@ -142,7 +142,7 @@ class ListAvailableRdsListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAvailableRdsListResponse.
+        r"""Sets the total of this ListAvailableRdsListResponse.
 
         集合总数
 

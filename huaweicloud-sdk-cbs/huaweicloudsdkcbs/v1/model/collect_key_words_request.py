@@ -31,7 +31,7 @@ class CollectKeyWordsRequest:
     }
 
     def __init__(self, qabot_id=None, start_time=None, end_time=None, top=None):
-        """CollectKeyWordsRequest
+        r"""CollectKeyWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CollectKeyWordsRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this CollectKeyWordsRequest.
+        r"""Gets the qabot_id of this CollectKeyWordsRequest.
 
         qabot编号，UUID格式。
 
@@ -74,7 +74,7 @@ class CollectKeyWordsRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this CollectKeyWordsRequest.
+        r"""Sets the qabot_id of this CollectKeyWordsRequest.
 
         qabot编号，UUID格式。
 
@@ -85,7 +85,7 @@ class CollectKeyWordsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CollectKeyWordsRequest.
+        r"""Gets the start_time of this CollectKeyWordsRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -96,7 +96,7 @@ class CollectKeyWordsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CollectKeyWordsRequest.
+        r"""Sets the start_time of this CollectKeyWordsRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -107,7 +107,7 @@ class CollectKeyWordsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CollectKeyWordsRequest.
+        r"""Gets the end_time of this CollectKeyWordsRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -118,7 +118,7 @@ class CollectKeyWordsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CollectKeyWordsRequest.
+        r"""Sets the end_time of this CollectKeyWordsRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -129,7 +129,7 @@ class CollectKeyWordsRequest:
 
     @property
     def top(self):
-        """Gets the top of this CollectKeyWordsRequest.
+        r"""Gets the top of this CollectKeyWordsRequest.
 
         关键词最多显示的个数，默认值为10，取值范围0-50。
 
@@ -140,7 +140,7 @@ class CollectKeyWordsRequest:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this CollectKeyWordsRequest.
+        r"""Sets the top of this CollectKeyWordsRequest.
 
         关键词最多显示的个数，默认值为10，取值范围0-50。
 

@@ -29,7 +29,7 @@ class NewExtensionOutputs:
     }
 
     def __init__(self, name=None, type=None, description=None):
-        """NewExtensionOutputs
+        r"""NewExtensionOutputs
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NewExtensionOutputs:
 
     @property
     def name(self):
-        """Gets the name of this NewExtensionOutputs.
+        r"""Gets the name of this NewExtensionOutputs.
 
         名称
 
@@ -68,7 +68,7 @@ class NewExtensionOutputs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NewExtensionOutputs.
+        r"""Sets the name of this NewExtensionOutputs.
 
         名称
 
@@ -79,7 +79,7 @@ class NewExtensionOutputs:
 
     @property
     def type(self):
-        """Gets the type of this NewExtensionOutputs.
+        r"""Gets the type of this NewExtensionOutputs.
 
         类型
 
@@ -90,7 +90,7 @@ class NewExtensionOutputs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NewExtensionOutputs.
+        r"""Sets the type of this NewExtensionOutputs.
 
         类型
 
@@ -101,7 +101,7 @@ class NewExtensionOutputs:
 
     @property
     def description(self):
-        """Gets the description of this NewExtensionOutputs.
+        r"""Gets the description of this NewExtensionOutputs.
 
         描述
 
@@ -112,7 +112,7 @@ class NewExtensionOutputs:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NewExtensionOutputs.
+        r"""Sets the description of this NewExtensionOutputs.
 
         描述
 

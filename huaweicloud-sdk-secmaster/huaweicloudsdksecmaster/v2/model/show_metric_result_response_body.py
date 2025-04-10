@@ -33,7 +33,7 @@ class ShowMetricResultResponseBody:
     }
 
     def __init__(self, metric_id=None, result=None, metric_format=None, log_msg=None, status=None):
-        """ShowMetricResultResponseBody
+        r"""ShowMetricResultResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowMetricResultResponseBody:
 
     @property
     def metric_id(self):
-        """Gets the metric_id of this ShowMetricResultResponseBody.
+        r"""Gets the metric_id of this ShowMetricResultResponseBody.
 
         指标ID
 
@@ -80,7 +80,7 @@ class ShowMetricResultResponseBody:
 
     @metric_id.setter
     def metric_id(self, metric_id):
-        """Sets the metric_id of this ShowMetricResultResponseBody.
+        r"""Sets the metric_id of this ShowMetricResultResponseBody.
 
         指标ID
 
@@ -91,7 +91,7 @@ class ShowMetricResultResponseBody:
 
     @property
     def result(self):
-        """Gets the result of this ShowMetricResultResponseBody.
+        r"""Gets the result of this ShowMetricResultResponseBody.
 
         :return: The result of this ShowMetricResultResponseBody.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBodyResult`
@@ -100,7 +100,7 @@ class ShowMetricResultResponseBody:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowMetricResultResponseBody.
+        r"""Sets the result of this ShowMetricResultResponseBody.
 
         :param result: The result of this ShowMetricResultResponseBody.
         :type result: :class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBodyResult`
@@ -109,7 +109,7 @@ class ShowMetricResultResponseBody:
 
     @property
     def metric_format(self):
-        """Gets the metric_format of this ShowMetricResultResponseBody.
+        r"""Gets the metric_format of this ShowMetricResultResponseBody.
 
         指标显示格式，根据不同指标固定返回。
 
@@ -120,7 +120,7 @@ class ShowMetricResultResponseBody:
 
     @metric_format.setter
     def metric_format(self, metric_format):
-        """Sets the metric_format of this ShowMetricResultResponseBody.
+        r"""Sets the metric_format of this ShowMetricResultResponseBody.
 
         指标显示格式，根据不同指标固定返回。
 
@@ -131,7 +131,7 @@ class ShowMetricResultResponseBody:
 
     @property
     def log_msg(self):
-        """Gets the log_msg of this ShowMetricResultResponseBody.
+        r"""Gets the log_msg of this ShowMetricResultResponseBody.
 
         结果日志信息
 
@@ -142,7 +142,7 @@ class ShowMetricResultResponseBody:
 
     @log_msg.setter
     def log_msg(self, log_msg):
-        """Sets the log_msg of this ShowMetricResultResponseBody.
+        r"""Sets the log_msg of this ShowMetricResultResponseBody.
 
         结果日志信息
 
@@ -153,7 +153,7 @@ class ShowMetricResultResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this ShowMetricResultResponseBody.
+        r"""Gets the status of this ShowMetricResultResponseBody.
 
         查询结果状态，SUCCESS：查询成功，FAILED：查询失败，FALLBACK：使用默认值
 
@@ -164,7 +164,7 @@ class ShowMetricResultResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMetricResultResponseBody.
+        r"""Sets the status of this ShowMetricResultResponseBody.
 
         查询结果状态，SUCCESS：查询成功，FAILED：查询失败，FALLBACK：使用默认值
 

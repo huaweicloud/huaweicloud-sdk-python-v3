@@ -37,7 +37,7 @@ class CreateMergeRequestDiscussionBodyDto:
     }
 
     def __init__(self, body=None, severity=None, assignee_id=None, review_categories=None, review_modules=None, proposer_id=None, position=None):
-        """CreateMergeRequestDiscussionBodyDto
+        r"""CreateMergeRequestDiscussionBodyDto
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def body(self):
-        """Gets the body of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the body of this CreateMergeRequestDiscussionBodyDto.
 
         检视意见内容
 
@@ -95,7 +95,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the body of this CreateMergeRequestDiscussionBodyDto.
 
         检视意见内容
 
@@ -106,7 +106,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def severity(self):
-        """Gets the severity of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the severity of this CreateMergeRequestDiscussionBodyDto.
 
         严重程度
 
@@ -117,7 +117,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the severity of this CreateMergeRequestDiscussionBodyDto.
 
         严重程度
 
@@ -128,7 +128,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def assignee_id(self):
-        """Gets the assignee_id of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the assignee_id of this CreateMergeRequestDiscussionBodyDto.
 
         指派人id
 
@@ -139,7 +139,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @assignee_id.setter
     def assignee_id(self, assignee_id):
-        """Sets the assignee_id of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the assignee_id of this CreateMergeRequestDiscussionBodyDto.
 
         指派人id
 
@@ -150,7 +150,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def review_categories(self):
-        """Gets the review_categories of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the review_categories of this CreateMergeRequestDiscussionBodyDto.
 
         检视意见分类
 
@@ -161,7 +161,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @review_categories.setter
     def review_categories(self, review_categories):
-        """Sets the review_categories of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the review_categories of this CreateMergeRequestDiscussionBodyDto.
 
         检视意见分类
 
@@ -172,7 +172,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def review_modules(self):
-        """Gets the review_modules of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the review_modules of this CreateMergeRequestDiscussionBodyDto.
 
         检视意见模块
 
@@ -183,7 +183,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @review_modules.setter
     def review_modules(self, review_modules):
-        """Sets the review_modules of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the review_modules of this CreateMergeRequestDiscussionBodyDto.
 
         检视意见模块
 
@@ -194,7 +194,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def proposer_id(self):
-        """Gets the proposer_id of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the proposer_id of this CreateMergeRequestDiscussionBodyDto.
 
         提出人id
 
@@ -205,7 +205,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @proposer_id.setter
     def proposer_id(self, proposer_id):
-        """Sets the proposer_id of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the proposer_id of this CreateMergeRequestDiscussionBodyDto.
 
         提出人id
 
@@ -216,7 +216,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @property
     def position(self):
-        """Gets the position of this CreateMergeRequestDiscussionBodyDto.
+        r"""Gets the position of this CreateMergeRequestDiscussionBodyDto.
 
         :return: The position of this CreateMergeRequestDiscussionBodyDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PositionDto`
@@ -225,7 +225,7 @@ class CreateMergeRequestDiscussionBodyDto:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this CreateMergeRequestDiscussionBodyDto.
+        r"""Sets the position of this CreateMergeRequestDiscussionBodyDto.
 
         :param position: The position of this CreateMergeRequestDiscussionBodyDto.
         :type position: :class:`huaweicloudsdkcodehub.v3.PositionDto`

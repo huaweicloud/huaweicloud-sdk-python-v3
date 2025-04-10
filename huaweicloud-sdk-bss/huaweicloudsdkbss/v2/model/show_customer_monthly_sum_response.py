@@ -48,7 +48,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, bill_sums=None, consume_amount=None, debt_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, cash_amount=None, credit_amount=None, writeoff_amount=None, measure_id=None, currency=None):
-        """ShowCustomerMonthlySumResponse
+        r"""ShowCustomerMonthlySumResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowCustomerMonthlySumResponse.
+        r"""Gets the total_count of this ShowCustomerMonthlySumResponse.
 
         总条数，必须大于等于0。
 
@@ -132,7 +132,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowCustomerMonthlySumResponse.
+        r"""Sets the total_count of this ShowCustomerMonthlySumResponse.
 
         总条数，必须大于等于0。
 
@@ -143,7 +143,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def bill_sums(self):
-        """Gets the bill_sums of this ShowCustomerMonthlySumResponse.
+        r"""Gets the bill_sums of this ShowCustomerMonthlySumResponse.
 
         账单记录，具体参考表2。
 
@@ -154,7 +154,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @bill_sums.setter
     def bill_sums(self, bill_sums):
-        """Sets the bill_sums of this ShowCustomerMonthlySumResponse.
+        r"""Sets the bill_sums of this ShowCustomerMonthlySumResponse.
 
         账单记录，具体参考表2。
 
@@ -165,7 +165,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the consume_amount of this ShowCustomerMonthlySumResponse.
 
         总金额（包含退订）。
 
@@ -176,7 +176,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the consume_amount of this ShowCustomerMonthlySumResponse.
 
         总金额（包含退订）。
 
@@ -187,7 +187,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the debt_amount of this ShowCustomerMonthlySumResponse.
 
         总欠费金额。
 
@@ -198,7 +198,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the debt_amount of this ShowCustomerMonthlySumResponse.
 
         总欠费金额。
 
@@ -209,7 +209,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the coupon_amount of this ShowCustomerMonthlySumResponse.
 
         代金券金额。
 
@@ -220,7 +220,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the coupon_amount of this ShowCustomerMonthlySumResponse.
 
         代金券金额。
 
@@ -231,7 +231,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
 
         现金券金额，预留。
 
@@ -242,7 +242,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
 
         现金券金额，预留。
 
@@ -253,7 +253,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def stored_value_card_amount(self):
-        """Gets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
 
         储值卡金额，预留。
 
@@ -264,7 +264,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @stored_value_card_amount.setter
     def stored_value_card_amount(self, stored_value_card_amount):
-        """Sets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
 
         储值卡金额，预留。
 
@@ -275,7 +275,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def cash_amount(self):
-        """Gets the cash_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the cash_amount of this ShowCustomerMonthlySumResponse.
 
         现金账户金额。
 
@@ -286,7 +286,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @cash_amount.setter
     def cash_amount(self, cash_amount):
-        """Sets the cash_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the cash_amount of this ShowCustomerMonthlySumResponse.
 
         现金账户金额。
 
@@ -297,7 +297,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the credit_amount of this ShowCustomerMonthlySumResponse.
 
         信用账户金额。
 
@@ -308,7 +308,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the credit_amount of this ShowCustomerMonthlySumResponse.
 
         信用账户金额。
 
@@ -319,7 +319,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def writeoff_amount(self):
-        """Gets the writeoff_amount of this ShowCustomerMonthlySumResponse.
+        r"""Gets the writeoff_amount of this ShowCustomerMonthlySumResponse.
 
         欠费核销金额。
 
@@ -330,7 +330,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @writeoff_amount.setter
     def writeoff_amount(self, writeoff_amount):
-        """Sets the writeoff_amount of this ShowCustomerMonthlySumResponse.
+        r"""Sets the writeoff_amount of this ShowCustomerMonthlySumResponse.
 
         欠费核销金额。
 
@@ -341,7 +341,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ShowCustomerMonthlySumResponse.
+        r"""Gets the measure_id of this ShowCustomerMonthlySumResponse.
 
         金额单位。 1：元
 
@@ -352,7 +352,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ShowCustomerMonthlySumResponse.
+        r"""Sets the measure_id of this ShowCustomerMonthlySumResponse.
 
         金额单位。 1：元
 
@@ -363,7 +363,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ShowCustomerMonthlySumResponse.
+        r"""Gets the currency of this ShowCustomerMonthlySumResponse.
 
         币种。 CNY：人民币。
 
@@ -374,7 +374,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ShowCustomerMonthlySumResponse.
+        r"""Sets the currency of this ShowCustomerMonthlySumResponse.
 
         币种。 CNY：人民币。
 

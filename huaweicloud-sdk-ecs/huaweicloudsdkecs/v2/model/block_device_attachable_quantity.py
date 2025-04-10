@@ -29,7 +29,7 @@ class BlockDeviceAttachableQuantity:
     }
 
     def __init__(self, free_scsi=None, free_blk=None, free_disk=None):
-        """BlockDeviceAttachableQuantity
+        r"""BlockDeviceAttachableQuantity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BlockDeviceAttachableQuantity:
 
     @property
     def free_scsi(self):
-        """Gets the free_scsi of this BlockDeviceAttachableQuantity.
+        r"""Gets the free_scsi of this BlockDeviceAttachableQuantity.
 
         云服务器可挂载scsi类型磁盘数量。
 
@@ -68,7 +68,7 @@ class BlockDeviceAttachableQuantity:
 
     @free_scsi.setter
     def free_scsi(self, free_scsi):
-        """Sets the free_scsi of this BlockDeviceAttachableQuantity.
+        r"""Sets the free_scsi of this BlockDeviceAttachableQuantity.
 
         云服务器可挂载scsi类型磁盘数量。
 
@@ -79,7 +79,7 @@ class BlockDeviceAttachableQuantity:
 
     @property
     def free_blk(self):
-        """Gets the free_blk of this BlockDeviceAttachableQuantity.
+        r"""Gets the free_blk of this BlockDeviceAttachableQuantity.
 
         云服务器可挂载virtio_blk类型磁盘数量。
 
@@ -90,7 +90,7 @@ class BlockDeviceAttachableQuantity:
 
     @free_blk.setter
     def free_blk(self, free_blk):
-        """Sets the free_blk of this BlockDeviceAttachableQuantity.
+        r"""Sets the free_blk of this BlockDeviceAttachableQuantity.
 
         云服务器可挂载virtio_blk类型磁盘数量。
 
@@ -101,7 +101,7 @@ class BlockDeviceAttachableQuantity:
 
     @property
     def free_disk(self):
-        """Gets the free_disk of this BlockDeviceAttachableQuantity.
+        r"""Gets the free_disk of this BlockDeviceAttachableQuantity.
 
         云服务器可挂载磁盘总数。
 
@@ -112,7 +112,7 @@ class BlockDeviceAttachableQuantity:
 
     @free_disk.setter
     def free_disk(self, free_disk):
-        """Sets the free_disk of this BlockDeviceAttachableQuantity.
+        r"""Sets the free_disk of this BlockDeviceAttachableQuantity.
 
         云服务器可挂载磁盘总数。
 

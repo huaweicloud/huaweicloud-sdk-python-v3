@@ -29,7 +29,7 @@ class IpGroup:
     }
 
     def __init__(self, id=None, name=None, size=None):
-        """IpGroup
+        r"""IpGroup
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IpGroup:
 
     @property
     def id(self):
-        """Gets the id of this IpGroup.
+        r"""Gets the id of this IpGroup.
 
         Ip地址组id，在新增Ip地址组时系统自动生成的唯一标识
 
@@ -68,7 +68,7 @@ class IpGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpGroup.
+        r"""Sets the id of this IpGroup.
 
         Ip地址组id，在新增Ip地址组时系统自动生成的唯一标识
 
@@ -79,7 +79,7 @@ class IpGroup:
 
     @property
     def name(self):
-        """Gets the name of this IpGroup.
+        r"""Gets the name of this IpGroup.
 
         Ip地址组名
 
@@ -90,7 +90,7 @@ class IpGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IpGroup.
+        r"""Sets the name of this IpGroup.
 
         Ip地址组名
 
@@ -101,7 +101,7 @@ class IpGroup:
 
     @property
     def size(self):
-        """Gets the size of this IpGroup.
+        r"""Gets the size of this IpGroup.
 
         Ip地址组中包含Ip/Ip段的数量
 
@@ -112,7 +112,7 @@ class IpGroup:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this IpGroup.
+        r"""Sets the size of this IpGroup.
 
         Ip地址组中包含Ip/Ip段的数量
 

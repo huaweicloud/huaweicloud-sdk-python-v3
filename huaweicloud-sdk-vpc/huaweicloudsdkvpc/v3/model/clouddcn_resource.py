@@ -31,7 +31,7 @@ class ClouddcnResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ClouddcnResource
+        r"""ClouddcnResource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ClouddcnResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ClouddcnResource.
+        r"""Gets the resource_id of this ClouddcnResource.
 
         资源ID标识符。
 
@@ -71,7 +71,7 @@ class ClouddcnResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ClouddcnResource.
+        r"""Sets the resource_id of this ClouddcnResource.
 
         资源ID标识符。
 
@@ -82,7 +82,7 @@ class ClouddcnResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ClouddcnResource.
+        r"""Gets the resource_detail of this ClouddcnResource.
 
         资源详情。
 
@@ -93,7 +93,7 @@ class ClouddcnResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ClouddcnResource.
+        r"""Sets the resource_detail of this ClouddcnResource.
 
         资源详情。
 
@@ -104,7 +104,7 @@ class ClouddcnResource:
 
     @property
     def tags(self):
-        """Gets the tags of this ClouddcnResource.
+        r"""Gets the tags of this ClouddcnResource.
 
         包含标签。
 
@@ -115,7 +115,7 @@ class ClouddcnResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClouddcnResource.
+        r"""Sets the tags of this ClouddcnResource.
 
         包含标签。
 
@@ -126,7 +126,7 @@ class ClouddcnResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ClouddcnResource.
+        r"""Gets the resource_name of this ClouddcnResource.
 
         实例名字。
 
@@ -137,7 +137,7 @@ class ClouddcnResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ClouddcnResource.
+        r"""Sets the resource_name of this ClouddcnResource.
 
         实例名字。
 

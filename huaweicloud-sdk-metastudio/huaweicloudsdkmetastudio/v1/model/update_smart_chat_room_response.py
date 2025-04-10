@@ -62,7 +62,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     }
 
     def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
-        """UpdateSmartChatRoomResponse
+        r"""UpdateSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def room_name(self):
-        """Gets the room_name of this UpdateSmartChatRoomResponse.
+        r"""Gets the room_name of this UpdateSmartChatRoomResponse.
 
         对话名称
 
@@ -180,7 +180,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this UpdateSmartChatRoomResponse.
+        r"""Sets the room_name of this UpdateSmartChatRoomResponse.
 
         对话名称
 
@@ -191,7 +191,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def room_description(self):
-        """Gets the room_description of this UpdateSmartChatRoomResponse.
+        r"""Gets the room_description of this UpdateSmartChatRoomResponse.
 
         对话描述。
 
@@ -202,7 +202,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this UpdateSmartChatRoomResponse.
+        r"""Sets the room_description of this UpdateSmartChatRoomResponse.
 
         对话描述。
 
@@ -213,7 +213,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this UpdateSmartChatRoomResponse.
+        r"""Gets the video_config of this UpdateSmartChatRoomResponse.
 
         :return: The video_config of this UpdateSmartChatRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -222,7 +222,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this UpdateSmartChatRoomResponse.
+        r"""Sets the video_config of this UpdateSmartChatRoomResponse.
 
         :param video_config: The video_config of this UpdateSmartChatRoomResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -231,7 +231,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this UpdateSmartChatRoomResponse.
+        r"""Gets the model_asset_id of this UpdateSmartChatRoomResponse.
 
         数字人模型资产ID。
 
@@ -242,7 +242,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this UpdateSmartChatRoomResponse.
+        r"""Sets the model_asset_id of this UpdateSmartChatRoomResponse.
 
         数字人模型资产ID。
 
@@ -253,7 +253,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this UpdateSmartChatRoomResponse.
+        r"""Gets the voice_config of this UpdateSmartChatRoomResponse.
 
         :return: The voice_config of this UpdateSmartChatRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -262,7 +262,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this UpdateSmartChatRoomResponse.
+        r"""Sets the voice_config of this UpdateSmartChatRoomResponse.
 
         :param voice_config: The voice_config of this UpdateSmartChatRoomResponse.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -271,7 +271,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def voice_config_list(self):
-        """Gets the voice_config_list of this UpdateSmartChatRoomResponse.
+        r"""Gets the voice_config_list of this UpdateSmartChatRoomResponse.
 
         语音配置参数列表。
 
@@ -282,7 +282,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @voice_config_list.setter
     def voice_config_list(self, voice_config_list):
-        """Sets the voice_config_list of this UpdateSmartChatRoomResponse.
+        r"""Sets the voice_config_list of this UpdateSmartChatRoomResponse.
 
         语音配置参数列表。
 
@@ -293,7 +293,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdateSmartChatRoomResponse.
+        r"""Gets the robot_id of this UpdateSmartChatRoomResponse.
 
         机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
@@ -304,7 +304,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdateSmartChatRoomResponse.
+        r"""Sets the robot_id of this UpdateSmartChatRoomResponse.
 
         机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
@@ -315,7 +315,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def concurrency(self):
-        """Gets the concurrency of this UpdateSmartChatRoomResponse.
+        r"""Gets the concurrency of this UpdateSmartChatRoomResponse.
 
         **参数解释**： 并发路数。
 
@@ -326,7 +326,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @concurrency.setter
     def concurrency(self, concurrency):
-        """Sets the concurrency of this UpdateSmartChatRoomResponse.
+        r"""Sets the concurrency of this UpdateSmartChatRoomResponse.
 
         **参数解释**： 并发路数。
 
@@ -337,7 +337,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def default_language(self):
-        """Gets the default_language of this UpdateSmartChatRoomResponse.
+        r"""Gets the default_language of this UpdateSmartChatRoomResponse.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -348,7 +348,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this UpdateSmartChatRoomResponse.
+        r"""Sets the default_language of this UpdateSmartChatRoomResponse.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -359,7 +359,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def background_config(self):
-        """Gets the background_config of this UpdateSmartChatRoomResponse.
+        r"""Gets the background_config of this UpdateSmartChatRoomResponse.
 
         :return: The background_config of this UpdateSmartChatRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -368,7 +368,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @background_config.setter
     def background_config(self, background_config):
-        """Sets the background_config of this UpdateSmartChatRoomResponse.
+        r"""Sets the background_config of this UpdateSmartChatRoomResponse.
 
         :param background_config: The background_config of this UpdateSmartChatRoomResponse.
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -377,7 +377,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def layer_config(self):
-        """Gets the layer_config of this UpdateSmartChatRoomResponse.
+        r"""Gets the layer_config of this UpdateSmartChatRoomResponse.
 
         图层配置。
 
@@ -388,7 +388,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @layer_config.setter
     def layer_config(self, layer_config):
-        """Sets the layer_config of this UpdateSmartChatRoomResponse.
+        r"""Sets the layer_config of this UpdateSmartChatRoomResponse.
 
         图层配置。
 
@@ -399,7 +399,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def review_config(self):
-        """Gets the review_config of this UpdateSmartChatRoomResponse.
+        r"""Gets the review_config of this UpdateSmartChatRoomResponse.
 
         :return: The review_config of this UpdateSmartChatRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -408,7 +408,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this UpdateSmartChatRoomResponse.
+        r"""Sets the review_config of this UpdateSmartChatRoomResponse.
 
         :param review_config: The review_config of this UpdateSmartChatRoomResponse.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -417,7 +417,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def chat_subtitle_config(self):
-        """Gets the chat_subtitle_config of this UpdateSmartChatRoomResponse.
+        r"""Gets the chat_subtitle_config of this UpdateSmartChatRoomResponse.
 
         :return: The chat_subtitle_config of this UpdateSmartChatRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
@@ -426,7 +426,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @chat_subtitle_config.setter
     def chat_subtitle_config(self, chat_subtitle_config):
-        """Sets the chat_subtitle_config of this UpdateSmartChatRoomResponse.
+        r"""Sets the chat_subtitle_config of this UpdateSmartChatRoomResponse.
 
         :param chat_subtitle_config: The chat_subtitle_config of this UpdateSmartChatRoomResponse.
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
@@ -435,7 +435,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def chat_video_type(self):
-        """Gets the chat_video_type of this UpdateSmartChatRoomResponse.
+        r"""Gets the chat_video_type of this UpdateSmartChatRoomResponse.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -446,7 +446,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @chat_video_type.setter
     def chat_video_type(self, chat_video_type):
-        """Sets the chat_video_type of this UpdateSmartChatRoomResponse.
+        r"""Sets the chat_video_type of this UpdateSmartChatRoomResponse.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -457,7 +457,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this UpdateSmartChatRoomResponse.
+        r"""Gets the room_id of this UpdateSmartChatRoomResponse.
 
         对话ID。
 
@@ -468,7 +468,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this UpdateSmartChatRoomResponse.
+        r"""Sets the room_id of this UpdateSmartChatRoomResponse.
 
         对话ID。
 
@@ -479,7 +479,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateSmartChatRoomResponse.
+        r"""Gets the create_time of this UpdateSmartChatRoomResponse.
 
         智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -490,7 +490,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateSmartChatRoomResponse.
+        r"""Sets the create_time of this UpdateSmartChatRoomResponse.
 
         智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -501,7 +501,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateSmartChatRoomResponse.
+        r"""Gets the update_time of this UpdateSmartChatRoomResponse.
 
         智能交互对话更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -512,7 +512,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateSmartChatRoomResponse.
+        r"""Sets the update_time of this UpdateSmartChatRoomResponse.
 
         智能交互对话更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -523,7 +523,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this UpdateSmartChatRoomResponse.
+        r"""Gets the cover_url of this UpdateSmartChatRoomResponse.
 
         对话封面图URL
 
@@ -534,7 +534,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this UpdateSmartChatRoomResponse.
+        r"""Sets the cover_url of this UpdateSmartChatRoomResponse.
 
         对话封面图URL
 
@@ -545,7 +545,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateSmartChatRoomResponse.
+        r"""Gets the x_request_id of this UpdateSmartChatRoomResponse.
 
         :return: The x_request_id of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -554,7 +554,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateSmartChatRoomResponse.
+        r"""Sets the x_request_id of this UpdateSmartChatRoomResponse.
 
         :param x_request_id: The x_request_id of this UpdateSmartChatRoomResponse.
         :type x_request_id: str

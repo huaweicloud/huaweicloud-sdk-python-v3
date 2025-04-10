@@ -37,7 +37,7 @@ class ListTasksRequest:
     }
 
     def __init__(self, x_language=None, status=None, name=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListTasksRequest
+        r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListTasksRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTasksRequest.
+        r"""Gets the x_language of this ListTasksRequest.
 
         语言。
 
@@ -96,7 +96,7 @@ class ListTasksRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTasksRequest.
+        r"""Sets the x_language of this ListTasksRequest.
 
         语言。
 
@@ -107,7 +107,7 @@ class ListTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTasksRequest.
+        r"""Gets the status of this ListTasksRequest.
 
         任务状态。
 
@@ -118,7 +118,7 @@ class ListTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTasksRequest.
+        r"""Sets the status of this ListTasksRequest.
 
         任务状态。
 
@@ -129,7 +129,7 @@ class ListTasksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTasksRequest.
+        r"""Gets the name of this ListTasksRequest.
 
         任务名称。
 
@@ -140,7 +140,7 @@ class ListTasksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTasksRequest.
+        r"""Sets the name of this ListTasksRequest.
 
         任务名称。
 
@@ -151,7 +151,7 @@ class ListTasksRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListTasksRequest.
+        r"""Gets the start_time of this ListTasksRequest.
 
         开始时间。
 
@@ -162,7 +162,7 @@ class ListTasksRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListTasksRequest.
+        r"""Sets the start_time of this ListTasksRequest.
 
         开始时间。
 
@@ -173,7 +173,7 @@ class ListTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListTasksRequest.
+        r"""Gets the end_time of this ListTasksRequest.
 
         结束时间。
 
@@ -184,7 +184,7 @@ class ListTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListTasksRequest.
+        r"""Sets the end_time of this ListTasksRequest.
 
         结束时间。
 
@@ -195,7 +195,7 @@ class ListTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTasksRequest.
+        r"""Gets the offset of this ListTasksRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -206,7 +206,7 @@ class ListTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTasksRequest.
+        r"""Sets the offset of this ListTasksRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -217,7 +217,7 @@ class ListTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTasksRequest.
+        r"""Gets the limit of this ListTasksRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
@@ -228,7 +228,7 @@ class ListTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTasksRequest.
+        r"""Sets the limit of this ListTasksRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 

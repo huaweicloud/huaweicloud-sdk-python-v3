@@ -28,7 +28,7 @@ class DeleteHostGroupResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total=None):
-        """DeleteHostGroupResponse
+        r"""DeleteHostGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteHostGroupResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteHostGroupResponse.
+        r"""Gets the result of this DeleteHostGroupResponse.
 
         主机组详细信息
 
@@ -62,7 +62,7 @@ class DeleteHostGroupResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteHostGroupResponse.
+        r"""Sets the result of this DeleteHostGroupResponse.
 
         主机组详细信息
 
@@ -73,7 +73,7 @@ class DeleteHostGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this DeleteHostGroupResponse.
+        r"""Gets the total of this DeleteHostGroupResponse.
 
         删除主机组数量
 
@@ -84,7 +84,7 @@ class DeleteHostGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DeleteHostGroupResponse.
+        r"""Sets the total of this DeleteHostGroupResponse.
 
         删除主机组数量
 

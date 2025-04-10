@@ -29,7 +29,7 @@ class DisablePropagationRequest:
     }
 
     def __init__(self, er_id=None, route_table_id=None, body=None):
-        """DisablePropagationRequest
+        r"""DisablePropagationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DisablePropagationRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this DisablePropagationRequest.
+        r"""Gets the er_id of this DisablePropagationRequest.
 
         企业路由器实例ID
 
@@ -66,7 +66,7 @@ class DisablePropagationRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this DisablePropagationRequest.
+        r"""Sets the er_id of this DisablePropagationRequest.
 
         企业路由器实例ID
 
@@ -77,7 +77,7 @@ class DisablePropagationRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this DisablePropagationRequest.
+        r"""Gets the route_table_id of this DisablePropagationRequest.
 
         路由表ID
 
@@ -88,7 +88,7 @@ class DisablePropagationRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this DisablePropagationRequest.
+        r"""Sets the route_table_id of this DisablePropagationRequest.
 
         路由表ID
 
@@ -99,7 +99,7 @@ class DisablePropagationRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisablePropagationRequest.
+        r"""Gets the body of this DisablePropagationRequest.
 
         :return: The body of this DisablePropagationRequest.
         :rtype: :class:`huaweicloudsdker.v3.PropagationRequestBody`
@@ -108,7 +108,7 @@ class DisablePropagationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisablePropagationRequest.
+        r"""Sets the body of this DisablePropagationRequest.
 
         :param body: The body of this DisablePropagationRequest.
         :type body: :class:`huaweicloudsdker.v3.PropagationRequestBody`

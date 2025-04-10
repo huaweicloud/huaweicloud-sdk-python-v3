@@ -33,7 +33,7 @@ class ListAppQuotaBoundAppsRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, offset=None, limit=None, app_name=None):
-        """ListAppQuotaBoundAppsRequest
+        r"""ListAppQuotaBoundAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAppQuotaBoundAppsRequest.
+        r"""Gets the instance_id of this ListAppQuotaBoundAppsRequest.
 
         实例ID
 
@@ -80,7 +80,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAppQuotaBoundAppsRequest.
+        r"""Sets the instance_id of this ListAppQuotaBoundAppsRequest.
 
         实例ID
 
@@ -91,7 +91,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this ListAppQuotaBoundAppsRequest.
+        r"""Gets the app_quota_id of this ListAppQuotaBoundAppsRequest.
 
         客户端配额编号
 
@@ -102,7 +102,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this ListAppQuotaBoundAppsRequest.
+        r"""Sets the app_quota_id of this ListAppQuotaBoundAppsRequest.
 
         客户端配额编号
 
@@ -113,7 +113,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppQuotaBoundAppsRequest.
+        r"""Gets the offset of this ListAppQuotaBoundAppsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -124,7 +124,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppQuotaBoundAppsRequest.
+        r"""Sets the offset of this ListAppQuotaBoundAppsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -135,7 +135,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppQuotaBoundAppsRequest.
+        r"""Gets the limit of this ListAppQuotaBoundAppsRequest.
 
         每页显示的条目数量
 
@@ -146,7 +146,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppQuotaBoundAppsRequest.
+        r"""Sets the limit of this ListAppQuotaBoundAppsRequest.
 
         每页显示的条目数量
 
@@ -157,7 +157,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppQuotaBoundAppsRequest.
+        r"""Gets the app_name of this ListAppQuotaBoundAppsRequest.
 
         客户端应用名称
 
@@ -168,7 +168,7 @@ class ListAppQuotaBoundAppsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppQuotaBoundAppsRequest.
+        r"""Sets the app_name of this ListAppQuotaBoundAppsRequest.
 
         客户端应用名称
 

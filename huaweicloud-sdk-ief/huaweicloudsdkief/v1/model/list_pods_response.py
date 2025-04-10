@@ -28,7 +28,7 @@ class ListPodsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, pods=None):
-        """ListPodsResponse
+        r"""ListPodsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPodsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPodsResponse.
+        r"""Gets the count of this ListPodsResponse.
 
         应用实例总数
 
@@ -62,7 +62,7 @@ class ListPodsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPodsResponse.
+        r"""Sets the count of this ListPodsResponse.
 
         应用实例总数
 
@@ -73,7 +73,7 @@ class ListPodsResponse(SdkResponse):
 
     @property
     def pods(self):
-        """Gets the pods of this ListPodsResponse.
+        r"""Gets the pods of this ListPodsResponse.
 
         应用实例列表
 
@@ -84,7 +84,7 @@ class ListPodsResponse(SdkResponse):
 
     @pods.setter
     def pods(self, pods):
-        """Sets the pods of this ListPodsResponse.
+        r"""Sets the pods of this ListPodsResponse.
 
         应用实例列表
 

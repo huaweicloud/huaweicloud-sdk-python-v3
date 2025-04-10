@@ -25,7 +25,7 @@ class ShowBranchesByRepositoryIdRequest:
     }
 
     def __init__(self, repository_id=None):
-        """ShowBranchesByRepositoryIdRequest
+        r"""ShowBranchesByRepositoryIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBranchesByRepositoryIdRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowBranchesByRepositoryIdRequest.
+        r"""Gets the repository_id of this ShowBranchesByRepositoryIdRequest.
 
         仓库的主键id
 
@@ -53,7 +53,7 @@ class ShowBranchesByRepositoryIdRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowBranchesByRepositoryIdRequest.
+        r"""Sets the repository_id of this ShowBranchesByRepositoryIdRequest.
 
         仓库的主键id
 

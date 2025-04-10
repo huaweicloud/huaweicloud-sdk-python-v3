@@ -25,7 +25,7 @@ class CreateAccessConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAccessConfigRequest
+        r"""CreateAccessConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAccessConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAccessConfigRequest.
+        r"""Gets the body of this CreateAccessConfigRequest.
 
         :return: The body of this CreateAccessConfigRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateAccessConfigRequestBody`
@@ -52,7 +52,7 @@ class CreateAccessConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAccessConfigRequest.
+        r"""Sets the body of this CreateAccessConfigRequest.
 
         :param body: The body of this CreateAccessConfigRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateAccessConfigRequestBody`

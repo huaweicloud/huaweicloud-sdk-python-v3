@@ -31,7 +31,7 @@ class ListTagWorkspacesRequestBody:
     }
 
     def __init__(self, without_any_tag=None, tags=None, matches=None, sys_tags=None):
-        """ListTagWorkspacesRequestBody
+        r"""ListTagWorkspacesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTagWorkspacesRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ListTagWorkspacesRequestBody.
+        r"""Gets the without_any_tag of this ListTagWorkspacesRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段
 
@@ -75,7 +75,7 @@ class ListTagWorkspacesRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ListTagWorkspacesRequestBody.
+        r"""Sets the without_any_tag of this ListTagWorkspacesRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段
 
@@ -86,7 +86,7 @@ class ListTagWorkspacesRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListTagWorkspacesRequestBody.
+        r"""Gets the tags of this ListTagWorkspacesRequestBody.
 
         包含标签，最多包含50个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。
 
@@ -97,7 +97,7 @@ class ListTagWorkspacesRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTagWorkspacesRequestBody.
+        r"""Sets the tags of this ListTagWorkspacesRequestBody.
 
         包含标签，最多包含50个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。
 
@@ -108,7 +108,7 @@ class ListTagWorkspacesRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListTagWorkspacesRequestBody.
+        r"""Gets the matches of this ListTagWorkspacesRequestBody.
 
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。
 
@@ -119,7 +119,7 @@ class ListTagWorkspacesRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListTagWorkspacesRequestBody.
+        r"""Sets the matches of this ListTagWorkspacesRequestBody.
 
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。
 
@@ -130,7 +130,7 @@ class ListTagWorkspacesRequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListTagWorkspacesRequestBody.
+        r"""Gets the sys_tags of this ListTagWorkspacesRequestBody.
 
         系统标签列表，目前只包含一个tag结构体。key下面只包含一个value。
 
@@ -141,7 +141,7 @@ class ListTagWorkspacesRequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListTagWorkspacesRequestBody.
+        r"""Sets the sys_tags of this ListTagWorkspacesRequestBody.
 
         系统标签列表，目前只包含一个tag结构体。key下面只包含一个value。
 

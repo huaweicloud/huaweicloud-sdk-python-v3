@@ -29,7 +29,7 @@ class ShowPostgresqlParamValueRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, name=None):
-        """ShowPostgresqlParamValueRequest
+        r"""ShowPostgresqlParamValueRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowPostgresqlParamValueRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowPostgresqlParamValueRequest.
+        r"""Gets the x_language of this ShowPostgresqlParamValueRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class ShowPostgresqlParamValueRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowPostgresqlParamValueRequest.
+        r"""Sets the x_language of this ShowPostgresqlParamValueRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class ShowPostgresqlParamValueRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPostgresqlParamValueRequest.
+        r"""Gets the instance_id of this ShowPostgresqlParamValueRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class ShowPostgresqlParamValueRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPostgresqlParamValueRequest.
+        r"""Sets the instance_id of this ShowPostgresqlParamValueRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ShowPostgresqlParamValueRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowPostgresqlParamValueRequest.
+        r"""Gets the name of this ShowPostgresqlParamValueRequest.
 
         参数名称。
 
@@ -110,7 +110,7 @@ class ShowPostgresqlParamValueRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPostgresqlParamValueRequest.
+        r"""Sets the name of this ShowPostgresqlParamValueRequest.
 
         参数名称。
 

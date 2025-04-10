@@ -27,7 +27,7 @@ class CreateConfigMapRequest:
     }
 
     def __init__(self, provider=None, body=None):
-        """CreateConfigMapRequest
+        r"""CreateConfigMapRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateConfigMapRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this CreateConfigMapRequest.
+        r"""Gets the provider of this CreateConfigMapRequest.
 
         服务名称，hilens或者ief，默认hilens
 
@@ -61,7 +61,7 @@ class CreateConfigMapRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this CreateConfigMapRequest.
+        r"""Sets the provider of this CreateConfigMapRequest.
 
         服务名称，hilens或者ief，默认hilens
 
@@ -72,7 +72,7 @@ class CreateConfigMapRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConfigMapRequest.
+        r"""Gets the body of this CreateConfigMapRequest.
 
         :return: The body of this CreateConfigMapRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.ConfigMapModelBoxDTO`
@@ -81,7 +81,7 @@ class CreateConfigMapRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConfigMapRequest.
+        r"""Sets the body of this CreateConfigMapRequest.
 
         :param body: The body of this CreateConfigMapRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.ConfigMapModelBoxDTO`

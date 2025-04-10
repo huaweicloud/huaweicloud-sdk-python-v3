@@ -37,7 +37,7 @@ class ChSlowLogQueryRequestBody:
     }
 
     def __init__(self, node_id=None, start_time=None, end_time=None, limit=None, line_num=None, operate_type=None, database=None):
-        """ChSlowLogQueryRequestBody
+        r"""ChSlowLogQueryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ChSlowLogQueryRequestBody.
+        r"""Gets the node_id of this ChSlowLogQueryRequestBody.
 
         实例节点ID。
 
@@ -92,7 +92,7 @@ class ChSlowLogQueryRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ChSlowLogQueryRequestBody.
+        r"""Sets the node_id of this ChSlowLogQueryRequestBody.
 
         实例节点ID。
 
@@ -103,7 +103,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ChSlowLogQueryRequestBody.
+        r"""Gets the start_time of this ChSlowLogQueryRequestBody.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -114,7 +114,7 @@ class ChSlowLogQueryRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ChSlowLogQueryRequestBody.
+        r"""Sets the start_time of this ChSlowLogQueryRequestBody.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -125,7 +125,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ChSlowLogQueryRequestBody.
+        r"""Gets the end_time of this ChSlowLogQueryRequestBody.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -136,7 +136,7 @@ class ChSlowLogQueryRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ChSlowLogQueryRequestBody.
+        r"""Sets the end_time of this ChSlowLogQueryRequestBody.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -147,7 +147,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ChSlowLogQueryRequestBody.
+        r"""Gets the limit of this ChSlowLogQueryRequestBody.
 
         查询记录数。
 
@@ -158,7 +158,7 @@ class ChSlowLogQueryRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ChSlowLogQueryRequestBody.
+        r"""Sets the limit of this ChSlowLogQueryRequestBody.
 
         查询记录数。
 
@@ -169,7 +169,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ChSlowLogQueryRequestBody.
+        r"""Gets the line_num of this ChSlowLogQueryRequestBody.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。
 
@@ -180,7 +180,7 @@ class ChSlowLogQueryRequestBody:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ChSlowLogQueryRequestBody.
+        r"""Sets the line_num of this ChSlowLogQueryRequestBody.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。
 
@@ -191,7 +191,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this ChSlowLogQueryRequestBody.
+        r"""Gets the operate_type of this ChSlowLogQueryRequestBody.
 
         慢日志操作类型。
 
@@ -202,7 +202,7 @@ class ChSlowLogQueryRequestBody:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this ChSlowLogQueryRequestBody.
+        r"""Sets the operate_type of this ChSlowLogQueryRequestBody.
 
         慢日志操作类型。
 
@@ -213,7 +213,7 @@ class ChSlowLogQueryRequestBody:
 
     @property
     def database(self):
-        """Gets the database of this ChSlowLogQueryRequestBody.
+        r"""Gets the database of this ChSlowLogQueryRequestBody.
 
         数据库名。
 
@@ -224,7 +224,7 @@ class ChSlowLogQueryRequestBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ChSlowLogQueryRequestBody.
+        r"""Sets the database of this ChSlowLogQueryRequestBody.
 
         数据库名。
 

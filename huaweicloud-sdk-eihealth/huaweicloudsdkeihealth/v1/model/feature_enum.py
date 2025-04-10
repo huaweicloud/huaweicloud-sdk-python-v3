@@ -26,7 +26,7 @@ class FeatureEnum:
     }
 
     def __init__(self):
-        """FeatureEnum
+        r"""FeatureEnum
 
         The model defined in huaweicloud sdk
 

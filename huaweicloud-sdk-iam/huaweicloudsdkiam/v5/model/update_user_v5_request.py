@@ -27,7 +27,7 @@ class UpdateUserV5Request:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateUserV5Request
+        r"""UpdateUserV5Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateUserV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateUserV5Request.
+        r"""Gets the user_id of this UpdateUserV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -60,7 +60,7 @@ class UpdateUserV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateUserV5Request.
+        r"""Sets the user_id of this UpdateUserV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class UpdateUserV5Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserV5Request.
+        r"""Gets the body of this UpdateUserV5Request.
 
         :return: The body of this UpdateUserV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.UpdateUserReqBody`
@@ -80,7 +80,7 @@ class UpdateUserV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserV5Request.
+        r"""Sets the body of this UpdateUserV5Request.
 
         :param body: The body of this UpdateUserV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.UpdateUserReqBody`

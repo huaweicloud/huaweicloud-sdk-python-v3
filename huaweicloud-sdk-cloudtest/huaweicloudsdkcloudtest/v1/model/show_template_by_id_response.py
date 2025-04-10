@@ -30,7 +30,7 @@ class ShowTemplateByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowTemplateByIdResponse
+        r"""ShowTemplateByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTemplateByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTemplateByIdResponse.
+        r"""Gets the code of this ShowTemplateByIdResponse.
 
         :return: The code of this ShowTemplateByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowTemplateByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTemplateByIdResponse.
+        r"""Sets the code of this ShowTemplateByIdResponse.
 
         :param code: The code of this ShowTemplateByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowTemplateByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowTemplateByIdResponse.
+        r"""Gets the data of this ShowTemplateByIdResponse.
 
         :return: The data of this ShowTemplateByIdResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class ShowTemplateByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowTemplateByIdResponse.
+        r"""Sets the data of this ShowTemplateByIdResponse.
 
         :param data: The data of this ShowTemplateByIdResponse.
         :type data: object
@@ -94,7 +94,7 @@ class ShowTemplateByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTemplateByIdResponse.
+        r"""Gets the message of this ShowTemplateByIdResponse.
 
         :return: The message of this ShowTemplateByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowTemplateByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTemplateByIdResponse.
+        r"""Sets the message of this ShowTemplateByIdResponse.
 
         :param message: The message of this ShowTemplateByIdResponse.
         :type message: str

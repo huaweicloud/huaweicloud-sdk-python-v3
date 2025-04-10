@@ -25,7 +25,7 @@ class SubscribeCertificateRequest:
     }
 
     def __init__(self, body=None):
-        """SubscribeCertificateRequest
+        r"""SubscribeCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SubscribeCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this SubscribeCertificateRequest.
+        r"""Gets the body of this SubscribeCertificateRequest.
 
         :return: The body of this SubscribeCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.PurchaseCertificateRequestBody`
@@ -52,7 +52,7 @@ class SubscribeCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SubscribeCertificateRequest.
+        r"""Sets the body of this SubscribeCertificateRequest.
 
         :param body: The body of this SubscribeCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.PurchaseCertificateRequestBody`

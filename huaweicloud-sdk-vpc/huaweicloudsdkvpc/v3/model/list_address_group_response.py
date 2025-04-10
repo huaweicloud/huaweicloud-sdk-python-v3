@@ -30,7 +30,7 @@ class ListAddressGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, address_groups=None, page_info=None):
-        """ListAddressGroupResponse
+        r"""ListAddressGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAddressGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAddressGroupResponse.
+        r"""Gets the request_id of this ListAddressGroupResponse.
 
         请求ID
 
@@ -69,7 +69,7 @@ class ListAddressGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAddressGroupResponse.
+        r"""Sets the request_id of this ListAddressGroupResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ListAddressGroupResponse(SdkResponse):
 
     @property
     def address_groups(self):
-        """Gets the address_groups of this ListAddressGroupResponse.
+        r"""Gets the address_groups of this ListAddressGroupResponse.
 
         地址组列表响应体
 
@@ -91,7 +91,7 @@ class ListAddressGroupResponse(SdkResponse):
 
     @address_groups.setter
     def address_groups(self, address_groups):
-        """Sets the address_groups of this ListAddressGroupResponse.
+        r"""Sets the address_groups of this ListAddressGroupResponse.
 
         地址组列表响应体
 
@@ -102,7 +102,7 @@ class ListAddressGroupResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAddressGroupResponse.
+        r"""Gets the page_info of this ListAddressGroupResponse.
 
         :return: The page_info of this ListAddressGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListAddressGroupResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAddressGroupResponse.
+        r"""Sets the page_info of this ListAddressGroupResponse.
 
         :param page_info: The page_info of this ListAddressGroupResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

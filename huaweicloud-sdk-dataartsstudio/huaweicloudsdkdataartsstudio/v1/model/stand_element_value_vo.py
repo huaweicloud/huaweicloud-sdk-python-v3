@@ -45,7 +45,7 @@ class StandElementValueVO:
     }
 
     def __init__(self, fd_name=None, fd_value=None, fd_id=None, directory_id=None, row_id=None, id=None, status=None, create_by=None, update_by=None, create_time=None, update_time=None):
-        """StandElementValueVO
+        r"""StandElementValueVO
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class StandElementValueVO:
 
     @property
     def fd_name(self):
-        """Gets the fd_name of this StandElementValueVO.
+        r"""Gets the fd_name of this StandElementValueVO.
 
         属性名称。
 
@@ -123,7 +123,7 @@ class StandElementValueVO:
 
     @fd_name.setter
     def fd_name(self, fd_name):
-        """Sets the fd_name of this StandElementValueVO.
+        r"""Sets the fd_name of this StandElementValueVO.
 
         属性名称。
 
@@ -134,7 +134,7 @@ class StandElementValueVO:
 
     @property
     def fd_value(self):
-        """Gets the fd_value of this StandElementValueVO.
+        r"""Gets the fd_value of this StandElementValueVO.
 
         属性值。
 
@@ -145,7 +145,7 @@ class StandElementValueVO:
 
     @fd_value.setter
     def fd_value(self, fd_value):
-        """Sets the fd_value of this StandElementValueVO.
+        r"""Sets the fd_value of this StandElementValueVO.
 
         属性值。
 
@@ -156,7 +156,7 @@ class StandElementValueVO:
 
     @property
     def fd_id(self):
-        """Gets the fd_id of this StandElementValueVO.
+        r"""Gets the fd_id of this StandElementValueVO.
 
         属性定义的ID，ID字符串。
 
@@ -167,7 +167,7 @@ class StandElementValueVO:
 
     @fd_id.setter
     def fd_id(self, fd_id):
-        """Sets the fd_id of this StandElementValueVO.
+        r"""Sets the fd_id of this StandElementValueVO.
 
         属性定义的ID，ID字符串。
 
@@ -178,7 +178,7 @@ class StandElementValueVO:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this StandElementValueVO.
+        r"""Gets the directory_id of this StandElementValueVO.
 
         标准所属目录，ID字符串。
 
@@ -189,7 +189,7 @@ class StandElementValueVO:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this StandElementValueVO.
+        r"""Sets the directory_id of this StandElementValueVO.
 
         标准所属目录，ID字符串。
 
@@ -200,7 +200,7 @@ class StandElementValueVO:
 
     @property
     def row_id(self):
-        """Gets the row_id of this StandElementValueVO.
+        r"""Gets the row_id of this StandElementValueVO.
 
         标准所属行，ID字符串。
 
@@ -211,7 +211,7 @@ class StandElementValueVO:
 
     @row_id.setter
     def row_id(self, row_id):
-        """Sets the row_id of this StandElementValueVO.
+        r"""Sets the row_id of this StandElementValueVO.
 
         标准所属行，ID字符串。
 
@@ -222,7 +222,7 @@ class StandElementValueVO:
 
     @property
     def id(self):
-        """Gets the id of this StandElementValueVO.
+        r"""Gets the id of this StandElementValueVO.
 
         数据标准的ID，ID字符串。
 
@@ -233,7 +233,7 @@ class StandElementValueVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StandElementValueVO.
+        r"""Sets the id of this StandElementValueVO.
 
         数据标准的ID，ID字符串。
 
@@ -244,7 +244,7 @@ class StandElementValueVO:
 
     @property
     def status(self):
-        """Gets the status of this StandElementValueVO.
+        r"""Gets the status of this StandElementValueVO.
 
         :return: The status of this StandElementValueVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -253,7 +253,7 @@ class StandElementValueVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StandElementValueVO.
+        r"""Sets the status of this StandElementValueVO.
 
         :param status: The status of this StandElementValueVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -262,7 +262,7 @@ class StandElementValueVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this StandElementValueVO.
+        r"""Gets the create_by of this StandElementValueVO.
 
         创建人。
 
@@ -273,7 +273,7 @@ class StandElementValueVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this StandElementValueVO.
+        r"""Sets the create_by of this StandElementValueVO.
 
         创建人。
 
@@ -284,7 +284,7 @@ class StandElementValueVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this StandElementValueVO.
+        r"""Gets the update_by of this StandElementValueVO.
 
         更新人。
 
@@ -295,7 +295,7 @@ class StandElementValueVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this StandElementValueVO.
+        r"""Sets the update_by of this StandElementValueVO.
 
         更新人。
 
@@ -306,7 +306,7 @@ class StandElementValueVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StandElementValueVO.
+        r"""Gets the create_time of this StandElementValueVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -317,7 +317,7 @@ class StandElementValueVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StandElementValueVO.
+        r"""Sets the create_time of this StandElementValueVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -328,7 +328,7 @@ class StandElementValueVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StandElementValueVO.
+        r"""Gets the update_time of this StandElementValueVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -339,7 +339,7 @@ class StandElementValueVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StandElementValueVO.
+        r"""Sets the update_time of this StandElementValueVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

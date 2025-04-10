@@ -32,7 +32,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, upgrade_paths=None):
-        """ListClusterUpgradePathsResponse
+        r"""ListClusterUpgradePathsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListClusterUpgradePathsResponse.
+        r"""Gets the api_version of this ListClusterUpgradePathsResponse.
 
         API版本
 
@@ -76,7 +76,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListClusterUpgradePathsResponse.
+        r"""Sets the api_version of this ListClusterUpgradePathsResponse.
 
         API版本
 
@@ -87,7 +87,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListClusterUpgradePathsResponse.
+        r"""Gets the kind of this ListClusterUpgradePathsResponse.
 
         资源类型
 
@@ -98,7 +98,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListClusterUpgradePathsResponse.
+        r"""Sets the kind of this ListClusterUpgradePathsResponse.
 
         资源类型
 
@@ -109,7 +109,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListClusterUpgradePathsResponse.
+        r"""Gets the metadata of this ListClusterUpgradePathsResponse.
 
         :return: The metadata of this ListClusterUpgradePathsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -118,7 +118,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListClusterUpgradePathsResponse.
+        r"""Sets the metadata of this ListClusterUpgradePathsResponse.
 
         :param metadata: The metadata of this ListClusterUpgradePathsResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -127,7 +127,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def upgrade_paths(self):
-        """Gets the upgrade_paths of this ListClusterUpgradePathsResponse.
+        r"""Gets the upgrade_paths of this ListClusterUpgradePathsResponse.
 
         升级路径集合
 
@@ -138,7 +138,7 @@ class ListClusterUpgradePathsResponse(SdkResponse):
 
     @upgrade_paths.setter
     def upgrade_paths(self, upgrade_paths):
-        """Sets the upgrade_paths of this ListClusterUpgradePathsResponse.
+        r"""Sets the upgrade_paths of this ListClusterUpgradePathsResponse.
 
         升级路径集合
 

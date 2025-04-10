@@ -30,7 +30,7 @@ class ListDomainsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domains=None, x_request_id=None):
-        """ListDomainsResponse
+        r"""ListDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDomainsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDomainsResponse.
+        r"""Gets the total of this ListDomainsResponse.
 
         总条数。
 
@@ -69,7 +69,7 @@ class ListDomainsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDomainsResponse.
+        r"""Sets the total of this ListDomainsResponse.
 
         总条数。
 
@@ -80,7 +80,7 @@ class ListDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this ListDomainsResponse.
+        r"""Gets the domains of this ListDomainsResponse.
 
         域名信息
 
@@ -91,7 +91,7 @@ class ListDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListDomainsResponse.
+        r"""Sets the domains of this ListDomainsResponse.
 
         域名信息
 
@@ -102,7 +102,7 @@ class ListDomainsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDomainsResponse.
+        r"""Gets the x_request_id of this ListDomainsResponse.
 
         :return: The x_request_id of this ListDomainsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListDomainsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDomainsResponse.
+        r"""Sets the x_request_id of this ListDomainsResponse.
 
         :param x_request_id: The x_request_id of this ListDomainsResponse.
         :type x_request_id: str

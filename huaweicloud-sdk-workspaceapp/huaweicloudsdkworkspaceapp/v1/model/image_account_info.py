@@ -29,7 +29,7 @@ class ImageAccountInfo:
     }
 
     def __init__(self, account=None, account_type=None, domain=None):
-        """ImageAccountInfo
+        r"""ImageAccountInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImageAccountInfo:
 
     @property
     def account(self):
-        """Gets the account of this ImageAccountInfo.
+        r"""Gets the account of this ImageAccountInfo.
 
         用户(组)。
 
@@ -66,7 +66,7 @@ class ImageAccountInfo:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this ImageAccountInfo.
+        r"""Sets the account of this ImageAccountInfo.
 
         用户(组)。
 
@@ -77,7 +77,7 @@ class ImageAccountInfo:
 
     @property
     def account_type(self):
-        """Gets the account_type of this ImageAccountInfo.
+        r"""Gets the account_type of this ImageAccountInfo.
 
         用户类型： * `USER` - 用户 * `USER_GROUP` - 用户组
 
@@ -88,7 +88,7 @@ class ImageAccountInfo:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this ImageAccountInfo.
+        r"""Sets the account_type of this ImageAccountInfo.
 
         用户类型： * `USER` - 用户 * `USER_GROUP` - 用户组
 
@@ -99,7 +99,7 @@ class ImageAccountInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this ImageAccountInfo.
+        r"""Gets the domain of this ImageAccountInfo.
 
         域名城。
 
@@ -110,7 +110,7 @@ class ImageAccountInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ImageAccountInfo.
+        r"""Sets the domain of this ImageAccountInfo.
 
         域名城。
 

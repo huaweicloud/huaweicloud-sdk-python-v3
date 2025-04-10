@@ -34,7 +34,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
     }
 
     def __init__(self, provided_actions=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ShowSystemTemplateDetailResponse
+        r"""ShowSystemTemplateDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @property
     def provided_actions(self):
-        """Gets the provided_actions of this ShowSystemTemplateDetailResponse.
+        r"""Gets the provided_actions of this ShowSystemTemplateDetailResponse.
 
         :return: The provided_actions of this ShowSystemTemplateDetailResponse.
         :rtype: list[:class:`huaweicloudsdkdwr.v3.ProvidedAction`]
@@ -81,7 +81,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @provided_actions.setter
     def provided_actions(self, provided_actions):
-        """Sets the provided_actions of this ShowSystemTemplateDetailResponse.
+        r"""Sets the provided_actions of this ShowSystemTemplateDetailResponse.
 
         :param provided_actions: The provided_actions of this ShowSystemTemplateDetailResponse.
         :type provided_actions: list[:class:`huaweicloudsdkdwr.v3.ProvidedAction`]
@@ -90,7 +90,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowSystemTemplateDetailResponse.
+        r"""Gets the x_request_id of this ShowSystemTemplateDetailResponse.
 
         :return: The x_request_id of this ShowSystemTemplateDetailResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowSystemTemplateDetailResponse.
+        r"""Sets the x_request_id of this ShowSystemTemplateDetailResponse.
 
         :param x_request_id: The x_request_id of this ShowSystemTemplateDetailResponse.
         :type x_request_id: str
@@ -108,7 +108,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ShowSystemTemplateDetailResponse.
+        r"""Gets the connection of this ShowSystemTemplateDetailResponse.
 
         :return: The connection of this ShowSystemTemplateDetailResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ShowSystemTemplateDetailResponse.
+        r"""Sets the connection of this ShowSystemTemplateDetailResponse.
 
         :param connection: The connection of this ShowSystemTemplateDetailResponse.
         :type connection: str
@@ -126,7 +126,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ShowSystemTemplateDetailResponse.
+        r"""Gets the content_length of this ShowSystemTemplateDetailResponse.
 
         :return: The content_length of this ShowSystemTemplateDetailResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ShowSystemTemplateDetailResponse.
+        r"""Sets the content_length of this ShowSystemTemplateDetailResponse.
 
         :param content_length: The content_length of this ShowSystemTemplateDetailResponse.
         :type content_length: str
@@ -144,7 +144,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ShowSystemTemplateDetailResponse.
+        r"""Gets the date of this ShowSystemTemplateDetailResponse.
 
         :return: The date of this ShowSystemTemplateDetailResponse.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowSystemTemplateDetailResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowSystemTemplateDetailResponse.
+        r"""Sets the date of this ShowSystemTemplateDetailResponse.
 
         :param date: The date of this ShowSystemTemplateDetailResponse.
         :type date: str

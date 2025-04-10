@@ -25,7 +25,7 @@ class CreateAssetReviewTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAssetReviewTaskRequest
+        r"""CreateAssetReviewTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAssetReviewTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAssetReviewTaskRequest.
+        r"""Gets the body of this CreateAssetReviewTaskRequest.
 
         :return: The body of this CreateAssetReviewTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.AssetReviewReq`
@@ -52,7 +52,7 @@ class CreateAssetReviewTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAssetReviewTaskRequest.
+        r"""Sets the body of this CreateAssetReviewTaskRequest.
 
         :param body: The body of this CreateAssetReviewTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.AssetReviewReq`

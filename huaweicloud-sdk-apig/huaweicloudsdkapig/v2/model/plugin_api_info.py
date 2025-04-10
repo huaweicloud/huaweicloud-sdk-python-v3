@@ -59,7 +59,7 @@ class PluginApiInfo:
     }
 
     def __init__(self, api_id=None, api_name=None, type=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, match_mode=None, remark=None, group_id=None, group_name=None, roma_app_id=None, env_id=None, env_name=None, publish_id=None, plugin_attach_id=None, attached_time=None, tags=None):
-        """PluginApiInfo
+        r"""PluginApiInfo
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class PluginApiInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this PluginApiInfo.
+        r"""Gets the api_id of this PluginApiInfo.
 
         API编号
 
@@ -173,7 +173,7 @@ class PluginApiInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this PluginApiInfo.
+        r"""Sets the api_id of this PluginApiInfo.
 
         API编号
 
@@ -184,7 +184,7 @@ class PluginApiInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this PluginApiInfo.
+        r"""Gets the api_name of this PluginApiInfo.
 
         API名称。   支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。  > 中文字符必须为UTF-8或者unicode编码。
 
@@ -195,7 +195,7 @@ class PluginApiInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this PluginApiInfo.
+        r"""Sets the api_name of this PluginApiInfo.
 
         API名称。   支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。  > 中文字符必须为UTF-8或者unicode编码。
 
@@ -206,7 +206,7 @@ class PluginApiInfo:
 
     @property
     def type(self):
-        """Gets the type of this PluginApiInfo.
+        r"""Gets the type of this PluginApiInfo.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -217,7 +217,7 @@ class PluginApiInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PluginApiInfo.
+        r"""Sets the type of this PluginApiInfo.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -228,7 +228,7 @@ class PluginApiInfo:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this PluginApiInfo.
+        r"""Gets the req_protocol of this PluginApiInfo.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
@@ -239,7 +239,7 @@ class PluginApiInfo:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this PluginApiInfo.
+        r"""Sets the req_protocol of this PluginApiInfo.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
@@ -250,7 +250,7 @@ class PluginApiInfo:
 
     @property
     def req_method(self):
-        """Gets the req_method of this PluginApiInfo.
+        r"""Gets the req_method of this PluginApiInfo.
 
         API的请求方式
 
@@ -261,7 +261,7 @@ class PluginApiInfo:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this PluginApiInfo.
+        r"""Sets the req_method of this PluginApiInfo.
 
         API的请求方式
 
@@ -272,7 +272,7 @@ class PluginApiInfo:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this PluginApiInfo.
+        r"""Gets the req_uri of this PluginApiInfo.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -283,7 +283,7 @@ class PluginApiInfo:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this PluginApiInfo.
+        r"""Sets the req_uri of this PluginApiInfo.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -294,7 +294,7 @@ class PluginApiInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this PluginApiInfo.
+        r"""Gets the auth_type of this PluginApiInfo.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -305,7 +305,7 @@ class PluginApiInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this PluginApiInfo.
+        r"""Sets the auth_type of this PluginApiInfo.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -316,7 +316,7 @@ class PluginApiInfo:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this PluginApiInfo.
+        r"""Gets the match_mode of this PluginApiInfo.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -327,7 +327,7 @@ class PluginApiInfo:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this PluginApiInfo.
+        r"""Sets the match_mode of this PluginApiInfo.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -338,7 +338,7 @@ class PluginApiInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this PluginApiInfo.
+        r"""Gets the remark of this PluginApiInfo.
 
         API描述。
 
@@ -349,7 +349,7 @@ class PluginApiInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this PluginApiInfo.
+        r"""Sets the remark of this PluginApiInfo.
 
         API描述。
 
@@ -360,7 +360,7 @@ class PluginApiInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PluginApiInfo.
+        r"""Gets the group_id of this PluginApiInfo.
 
         API所属的分组编号
 
@@ -371,7 +371,7 @@ class PluginApiInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PluginApiInfo.
+        r"""Sets the group_id of this PluginApiInfo.
 
         API所属的分组编号
 
@@ -382,7 +382,7 @@ class PluginApiInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PluginApiInfo.
+        r"""Gets the group_name of this PluginApiInfo.
 
         API所属分组的名称
 
@@ -393,7 +393,7 @@ class PluginApiInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PluginApiInfo.
+        r"""Sets the group_name of this PluginApiInfo.
 
         API所属分组的名称
 
@@ -404,7 +404,7 @@ class PluginApiInfo:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this PluginApiInfo.
+        r"""Gets the roma_app_id of this PluginApiInfo.
 
         归属集成应用编码,兼容roma实例的字段，一般为空
 
@@ -415,7 +415,7 @@ class PluginApiInfo:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this PluginApiInfo.
+        r"""Sets the roma_app_id of this PluginApiInfo.
 
         归属集成应用编码,兼容roma实例的字段，一般为空
 
@@ -426,7 +426,7 @@ class PluginApiInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this PluginApiInfo.
+        r"""Gets the env_id of this PluginApiInfo.
 
         绑定API的环境编码。
 
@@ -437,7 +437,7 @@ class PluginApiInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this PluginApiInfo.
+        r"""Sets the env_id of this PluginApiInfo.
 
         绑定API的环境编码。
 
@@ -448,7 +448,7 @@ class PluginApiInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this PluginApiInfo.
+        r"""Gets the env_name of this PluginApiInfo.
 
         绑定API的环境名称
 
@@ -459,7 +459,7 @@ class PluginApiInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this PluginApiInfo.
+        r"""Sets the env_name of this PluginApiInfo.
 
         绑定API的环境名称
 
@@ -470,7 +470,7 @@ class PluginApiInfo:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this PluginApiInfo.
+        r"""Gets the publish_id of this PluginApiInfo.
 
         发布编码。
 
@@ -481,7 +481,7 @@ class PluginApiInfo:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this PluginApiInfo.
+        r"""Sets the publish_id of this PluginApiInfo.
 
         发布编码。
 
@@ -492,7 +492,7 @@ class PluginApiInfo:
 
     @property
     def plugin_attach_id(self):
-        """Gets the plugin_attach_id of this PluginApiInfo.
+        r"""Gets the plugin_attach_id of this PluginApiInfo.
 
         插件绑定编码。
 
@@ -503,7 +503,7 @@ class PluginApiInfo:
 
     @plugin_attach_id.setter
     def plugin_attach_id(self, plugin_attach_id):
-        """Sets the plugin_attach_id of this PluginApiInfo.
+        r"""Sets the plugin_attach_id of this PluginApiInfo.
 
         插件绑定编码。
 
@@ -514,7 +514,7 @@ class PluginApiInfo:
 
     @property
     def attached_time(self):
-        """Gets the attached_time of this PluginApiInfo.
+        r"""Gets the attached_time of this PluginApiInfo.
 
         绑定时间。
 
@@ -525,7 +525,7 @@ class PluginApiInfo:
 
     @attached_time.setter
     def attached_time(self, attached_time):
-        """Sets the attached_time of this PluginApiInfo.
+        r"""Sets the attached_time of this PluginApiInfo.
 
         绑定时间。
 
@@ -536,7 +536,7 @@ class PluginApiInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this PluginApiInfo.
+        r"""Gets the tags of this PluginApiInfo.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 
@@ -547,7 +547,7 @@ class PluginApiInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PluginApiInfo.
+        r"""Sets the tags of this PluginApiInfo.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 

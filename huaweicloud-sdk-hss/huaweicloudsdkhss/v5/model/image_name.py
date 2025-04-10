@@ -23,7 +23,7 @@ class ImageName:
     }
 
     def __init__(self):
-        """ImageName
+        r"""ImageName
 
         The model defined in huaweicloud sdk
 

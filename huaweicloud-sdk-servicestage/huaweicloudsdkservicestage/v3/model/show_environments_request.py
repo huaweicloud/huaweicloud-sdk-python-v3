@@ -37,7 +37,7 @@ class ShowEnvironmentsRequest:
     }
 
     def __init__(self, limit=None, offset=None, order_by=None, order=None, name=None, environment_id=None, enterprise_project_id=None):
-        """ShowEnvironmentsRequest
+        r"""ShowEnvironmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowEnvironmentsRequest.
+        r"""Gets the limit of this ShowEnvironmentsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -96,7 +96,7 @@ class ShowEnvironmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowEnvironmentsRequest.
+        r"""Sets the limit of this ShowEnvironmentsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -107,7 +107,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowEnvironmentsRequest.
+        r"""Gets the offset of this ShowEnvironmentsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -118,7 +118,7 @@ class ShowEnvironmentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowEnvironmentsRequest.
+        r"""Sets the offset of this ShowEnvironmentsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -129,7 +129,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ShowEnvironmentsRequest.
+        r"""Gets the order_by of this ShowEnvironmentsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -140,7 +140,7 @@ class ShowEnvironmentsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ShowEnvironmentsRequest.
+        r"""Sets the order_by of this ShowEnvironmentsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -151,7 +151,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ShowEnvironmentsRequest.
+        r"""Gets the order of this ShowEnvironmentsRequest.
 
         desc/asc，默认desc。
 
@@ -162,7 +162,7 @@ class ShowEnvironmentsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ShowEnvironmentsRequest.
+        r"""Sets the order of this ShowEnvironmentsRequest.
 
         desc/asc，默认desc。
 
@@ -173,7 +173,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowEnvironmentsRequest.
+        r"""Gets the name of this ShowEnvironmentsRequest.
 
         环境名称
 
@@ -184,7 +184,7 @@ class ShowEnvironmentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEnvironmentsRequest.
+        r"""Sets the name of this ShowEnvironmentsRequest.
 
         环境名称
 
@@ -195,7 +195,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ShowEnvironmentsRequest.
+        r"""Gets the environment_id of this ShowEnvironmentsRequest.
 
         环境id
 
@@ -206,7 +206,7 @@ class ShowEnvironmentsRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ShowEnvironmentsRequest.
+        r"""Sets the environment_id of this ShowEnvironmentsRequest.
 
         环境id
 
@@ -217,7 +217,7 @@ class ShowEnvironmentsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowEnvironmentsRequest.
+        r"""Gets the enterprise_project_id of this ShowEnvironmentsRequest.
 
         企业项目id
 
@@ -228,7 +228,7 @@ class ShowEnvironmentsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowEnvironmentsRequest.
+        r"""Sets the enterprise_project_id of this ShowEnvironmentsRequest.
 
         企业项目id
 

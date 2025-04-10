@@ -35,7 +35,7 @@ class ListSubscriptionsRequest:
     }
 
     def __init__(self, offset=None, limit=None, protocol=None, status=None, endpoint=None, fuzzy_remark=None):
-        """ListSubscriptionsRequest
+        r"""ListSubscriptionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSubscriptionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubscriptionsRequest.
+        r"""Gets the offset of this ListSubscriptionsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -89,7 +89,7 @@ class ListSubscriptionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubscriptionsRequest.
+        r"""Sets the offset of this ListSubscriptionsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -100,7 +100,7 @@ class ListSubscriptionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubscriptionsRequest.
+        r"""Gets the limit of this ListSubscriptionsRequest.
 
          查询数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -111,7 +111,7 @@ class ListSubscriptionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubscriptionsRequest.
+        r"""Sets the limit of this ListSubscriptionsRequest.
 
          查询数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -122,7 +122,7 @@ class ListSubscriptionsRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListSubscriptionsRequest.
+        r"""Gets the protocol of this ListSubscriptionsRequest.
 
         协议名称， 枚举值：http、https、sms、email、functionstage。
 
@@ -133,7 +133,7 @@ class ListSubscriptionsRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListSubscriptionsRequest.
+        r"""Sets the protocol of this ListSubscriptionsRequest.
 
         协议名称， 枚举值：http、https、sms、email、functionstage。
 
@@ -144,7 +144,7 @@ class ListSubscriptionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSubscriptionsRequest.
+        r"""Gets the status of this ListSubscriptionsRequest.
 
         状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
 
@@ -155,7 +155,7 @@ class ListSubscriptionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubscriptionsRequest.
+        r"""Sets the status of this ListSubscriptionsRequest.
 
         状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
 
@@ -166,7 +166,7 @@ class ListSubscriptionsRequest:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ListSubscriptionsRequest.
+        r"""Gets the endpoint of this ListSubscriptionsRequest.
 
         订阅终端。
 
@@ -177,7 +177,7 @@ class ListSubscriptionsRequest:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ListSubscriptionsRequest.
+        r"""Sets the endpoint of this ListSubscriptionsRequest.
 
         订阅终端。
 
@@ -188,7 +188,7 @@ class ListSubscriptionsRequest:
 
     @property
     def fuzzy_remark(self):
-        """Gets the fuzzy_remark of this ListSubscriptionsRequest.
+        r"""Gets the fuzzy_remark of this ListSubscriptionsRequest.
 
         检索的订阅备注字段，模糊匹配。最大长度限制为128个字节。
 
@@ -199,7 +199,7 @@ class ListSubscriptionsRequest:
 
     @fuzzy_remark.setter
     def fuzzy_remark(self, fuzzy_remark):
-        """Sets the fuzzy_remark of this ListSubscriptionsRequest.
+        r"""Sets the fuzzy_remark of this ListSubscriptionsRequest.
 
         检索的订阅备注字段，模糊匹配。最大长度限制为128个字节。
 

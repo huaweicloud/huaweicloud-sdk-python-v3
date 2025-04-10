@@ -31,7 +31,7 @@ class ReceptorDrugFile:
     }
 
     def __init__(self, source=None, url=None, format=None, data=None):
-        """ReceptorDrugFile
+        r"""ReceptorDrugFile
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ReceptorDrugFile:
 
     @property
     def source(self):
-        """Gets the source of this ReceptorDrugFile.
+        r"""Gets the source of this ReceptorDrugFile.
 
         :return: The source of this ReceptorDrugFile.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -72,7 +72,7 @@ class ReceptorDrugFile:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ReceptorDrugFile.
+        r"""Sets the source of this ReceptorDrugFile.
 
         :param source: The source of this ReceptorDrugFile.
         :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -81,7 +81,7 @@ class ReceptorDrugFile:
 
     @property
     def url(self):
-        """Gets the url of this ReceptorDrugFile.
+        r"""Gets the url of this ReceptorDrugFile.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -92,7 +92,7 @@ class ReceptorDrugFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ReceptorDrugFile.
+        r"""Sets the url of this ReceptorDrugFile.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -103,7 +103,7 @@ class ReceptorDrugFile:
 
     @property
     def format(self):
-        """Gets the format of this ReceptorDrugFile.
+        r"""Gets the format of this ReceptorDrugFile.
 
         文件格式，仅支持PDB，仅数据源为RAW时提供
 
@@ -114,7 +114,7 @@ class ReceptorDrugFile:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ReceptorDrugFile.
+        r"""Sets the format of this ReceptorDrugFile.
 
         文件格式，仅支持PDB，仅数据源为RAW时提供
 
@@ -125,7 +125,7 @@ class ReceptorDrugFile:
 
     @property
     def data(self):
-        """Gets the data of this ReceptorDrugFile.
+        r"""Gets the data of this ReceptorDrugFile.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -136,7 +136,7 @@ class ReceptorDrugFile:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ReceptorDrugFile.
+        r"""Sets the data of this ReceptorDrugFile.
 
         文件原始数据，仅数据源为RAW时提供
 

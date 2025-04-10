@@ -25,7 +25,7 @@ class GcbSize:
     }
 
     def __init__(self, size=None):
-        """GcbSize
+        r"""GcbSize
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GcbSize:
 
     @property
     def size(self):
-        """Gets the size of this GcbSize.
+        r"""Gets the size of this GcbSize.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -53,7 +53,7 @@ class GcbSize:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GcbSize.
+        r"""Sets the size of this GcbSize.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 

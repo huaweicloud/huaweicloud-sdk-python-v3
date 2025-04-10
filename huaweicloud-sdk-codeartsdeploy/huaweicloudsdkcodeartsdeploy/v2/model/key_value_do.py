@@ -27,7 +27,7 @@ class KeyValueDO:
     }
 
     def __init__(self, key=None, value=None):
-        """KeyValueDO
+        r"""KeyValueDO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeyValueDO:
 
     @property
     def key(self):
-        """Gets the key of this KeyValueDO.
+        r"""Gets the key of this KeyValueDO.
 
         部署应用时传递的参数名称
 
@@ -61,7 +61,7 @@ class KeyValueDO:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this KeyValueDO.
+        r"""Sets the key of this KeyValueDO.
 
         部署应用时传递的参数名称
 
@@ -72,7 +72,7 @@ class KeyValueDO:
 
     @property
     def value(self):
-        """Gets the value of this KeyValueDO.
+        r"""Gets the value of this KeyValueDO.
 
         部署应用时传递的参数值
 
@@ -83,7 +83,7 @@ class KeyValueDO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this KeyValueDO.
+        r"""Sets the value of this KeyValueDO.
 
         部署应用时传递的参数值
 

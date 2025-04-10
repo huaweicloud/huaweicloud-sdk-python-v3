@@ -45,7 +45,7 @@ class QueryInstanceBackupResponseBodyBackups:
     }
 
     def __init__(self, id=None, name=None, description=None, begin_time=None, end_time=None, status=None, size=None, type=None, instance_id=None, instance_name=None, datastore=None):
-        """QueryInstanceBackupResponseBodyBackups
+        r"""QueryInstanceBackupResponseBodyBackups
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def id(self):
-        """Gets the id of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the id of this QueryInstanceBackupResponseBodyBackups.
 
         备份ID。
 
@@ -113,7 +113,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the id of this QueryInstanceBackupResponseBodyBackups.
 
         备份ID。
 
@@ -124,7 +124,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def name(self):
-        """Gets the name of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the name of this QueryInstanceBackupResponseBodyBackups.
 
         备份名称。
 
@@ -135,7 +135,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the name of this QueryInstanceBackupResponseBodyBackups.
 
         备份名称。
 
@@ -146,7 +146,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def description(self):
-        """Gets the description of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the description of this QueryInstanceBackupResponseBodyBackups.
 
         备份描述信息。
 
@@ -157,7 +157,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the description of this QueryInstanceBackupResponseBodyBackups.
 
         备份描述信息。
 
@@ -168,7 +168,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the begin_time of this QueryInstanceBackupResponseBodyBackups.
 
         备份开始时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -179,7 +179,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the begin_time of this QueryInstanceBackupResponseBodyBackups.
 
         备份开始时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -190,7 +190,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the end_time of this QueryInstanceBackupResponseBodyBackups.
 
         备份结束时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -201,7 +201,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the end_time of this QueryInstanceBackupResponseBodyBackups.
 
         备份结束时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -212,7 +212,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def status(self):
-        """Gets the status of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the status of this QueryInstanceBackupResponseBodyBackups.
 
         备份状态。
 
@@ -223,7 +223,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the status of this QueryInstanceBackupResponseBodyBackups.
 
         备份状态。
 
@@ -234,7 +234,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def size(self):
-        """Gets the size of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the size of this QueryInstanceBackupResponseBodyBackups.
 
         备份大小，单位：KB。
 
@@ -245,7 +245,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the size of this QueryInstanceBackupResponseBodyBackups.
 
         备份大小，单位：KB。
 
@@ -256,7 +256,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def type(self):
-        """Gets the type of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the type of this QueryInstanceBackupResponseBodyBackups.
 
         备份类型。
 
@@ -267,7 +267,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the type of this QueryInstanceBackupResponseBodyBackups.
 
         备份类型。
 
@@ -278,7 +278,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the instance_id of this QueryInstanceBackupResponseBodyBackups.
 
         实例ID。
 
@@ -289,7 +289,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the instance_id of this QueryInstanceBackupResponseBodyBackups.
 
         实例ID。
 
@@ -300,7 +300,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the instance_name of this QueryInstanceBackupResponseBodyBackups.
 
         实例名称。
 
@@ -311,7 +311,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the instance_name of this QueryInstanceBackupResponseBodyBackups.
 
         实例名称。
 
@@ -322,7 +322,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @property
     def datastore(self):
-        """Gets the datastore of this QueryInstanceBackupResponseBodyBackups.
+        r"""Gets the datastore of this QueryInstanceBackupResponseBodyBackups.
 
         :return: The datastore of this QueryInstanceBackupResponseBodyBackups.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.QueryInstanceBackupResponseBodyDatastore`
@@ -331,7 +331,7 @@ class QueryInstanceBackupResponseBodyBackups:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this QueryInstanceBackupResponseBodyBackups.
+        r"""Sets the datastore of this QueryInstanceBackupResponseBodyBackups.
 
         :param datastore: The datastore of this QueryInstanceBackupResponseBodyBackups.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.QueryInstanceBackupResponseBodyDatastore`

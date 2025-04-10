@@ -26,7 +26,7 @@ class ShowDisasterRecoveryDrillResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery_drill=None):
-        """ShowDisasterRecoveryDrillResponse
+        r"""ShowDisasterRecoveryDrillResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDisasterRecoveryDrillResponse(SdkResponse):
 
     @property
     def disaster_recovery_drill(self):
-        """Gets the disaster_recovery_drill of this ShowDisasterRecoveryDrillResponse.
+        r"""Gets the disaster_recovery_drill of this ShowDisasterRecoveryDrillResponse.
 
         :return: The disaster_recovery_drill of this ShowDisasterRecoveryDrillResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillParams`
@@ -53,7 +53,7 @@ class ShowDisasterRecoveryDrillResponse(SdkResponse):
 
     @disaster_recovery_drill.setter
     def disaster_recovery_drill(self, disaster_recovery_drill):
-        """Sets the disaster_recovery_drill of this ShowDisasterRecoveryDrillResponse.
+        r"""Sets the disaster_recovery_drill of this ShowDisasterRecoveryDrillResponse.
 
         :param disaster_recovery_drill: The disaster_recovery_drill of this ShowDisasterRecoveryDrillResponse.
         :type disaster_recovery_drill: :class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillParams`

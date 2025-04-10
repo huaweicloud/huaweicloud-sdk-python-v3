@@ -27,7 +27,7 @@ class UpdateAutopilotMaintenanceWindowRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateAutopilotMaintenanceWindowRequest
+        r"""UpdateAutopilotMaintenanceWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAutopilotMaintenanceWindowRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAutopilotMaintenanceWindowRequest.
+        r"""Gets the cluster_id of this UpdateAutopilotMaintenanceWindowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class UpdateAutopilotMaintenanceWindowRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAutopilotMaintenanceWindowRequest.
+        r"""Sets the cluster_id of this UpdateAutopilotMaintenanceWindowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class UpdateAutopilotMaintenanceWindowRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutopilotMaintenanceWindowRequest.
+        r"""Gets the body of this UpdateAutopilotMaintenanceWindowRequest.
 
         :return: The body of this UpdateAutopilotMaintenanceWindowRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MaintenanceWindow`
@@ -80,7 +80,7 @@ class UpdateAutopilotMaintenanceWindowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutopilotMaintenanceWindowRequest.
+        r"""Sets the body of this UpdateAutopilotMaintenanceWindowRequest.
 
         :param body: The body of this UpdateAutopilotMaintenanceWindowRequest.
         :type body: :class:`huaweicloudsdkcce.v3.MaintenanceWindow`

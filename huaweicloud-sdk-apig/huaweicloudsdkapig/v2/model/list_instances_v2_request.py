@@ -33,7 +33,7 @@ class ListInstancesV2Request:
     }
 
     def __init__(self, offset=None, limit=None, instance_id=None, instance_name=None, status=None):
-        """ListInstancesV2Request
+        r"""ListInstancesV2Request
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListInstancesV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesV2Request.
+        r"""Gets the offset of this ListInstancesV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -82,7 +82,7 @@ class ListInstancesV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesV2Request.
+        r"""Sets the offset of this ListInstancesV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -93,7 +93,7 @@ class ListInstancesV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesV2Request.
+        r"""Gets the limit of this ListInstancesV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -104,7 +104,7 @@ class ListInstancesV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesV2Request.
+        r"""Sets the limit of this ListInstancesV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -115,7 +115,7 @@ class ListInstancesV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstancesV2Request.
+        r"""Gets the instance_id of this ListInstancesV2Request.
 
         实例编号
 
@@ -126,7 +126,7 @@ class ListInstancesV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstancesV2Request.
+        r"""Sets the instance_id of this ListInstancesV2Request.
 
         实例编号
 
@@ -137,7 +137,7 @@ class ListInstancesV2Request:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListInstancesV2Request.
+        r"""Gets the instance_name of this ListInstancesV2Request.
 
         实例名称
 
@@ -148,7 +148,7 @@ class ListInstancesV2Request:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListInstancesV2Request.
+        r"""Sets the instance_name of this ListInstancesV2Request.
 
         实例名称
 
@@ -159,7 +159,7 @@ class ListInstancesV2Request:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesV2Request.
+        r"""Gets the status of this ListInstancesV2Request.
 
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
 
@@ -170,7 +170,7 @@ class ListInstancesV2Request:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesV2Request.
+        r"""Sets the status of this ListInstancesV2Request.
 
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
 

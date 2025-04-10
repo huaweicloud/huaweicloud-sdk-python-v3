@@ -34,7 +34,7 @@ class CdmAsyncClient(Client):
         return client_builder
 
     def create_and_start_random_cluster_job_async(self, request):
-        """随机集群创建作业并执行
+        r"""随机集群创建作业并执行
 
         随机集群创建作业并执行接口。
         
@@ -101,7 +101,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建集群
+        r"""创建集群
 
         创建集群接口。
         
@@ -168,7 +168,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def create_job_async(self, request):
-        """指定集群创建作业
+        r"""指定集群创建作业
 
         指定集群创建作业接口。
         
@@ -235,7 +235,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def create_link_async(self, request):
-        """创建连接
+        r"""创建连接
 
         创建连接接口。
         
@@ -304,7 +304,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def delete_cluster_async(self, request):
-        """删除集群
+        r"""删除集群
 
         删除集群接口。
         
@@ -371,7 +371,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def delete_job_async(self, request):
-        """删除作业
+        r"""删除作业
 
         删除作业接口。
         
@@ -438,7 +438,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def delete_link_async(self, request):
-        """删除连接
+        r"""删除连接
 
         删除连接接口。
         
@@ -505,7 +505,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def list_clusters_async(self, request):
-        """查询集群列表
+        r"""查询集群列表
 
         查询集群列表接口。
         
@@ -568,7 +568,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def modify_cluster_async(self, request):
-        """修改集群
+        r"""修改集群
 
         修改CDM集群配置。
         
@@ -639,7 +639,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def restart_cluster_async(self, request):
-        """重启集群
+        r"""重启集群
 
         重启集群接口。
         
@@ -706,7 +706,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_availability_zones_async(self, request):
-        """查询所有可用区
+        r"""查询所有可用区
 
         查询CDM集群的所有可用区。
         
@@ -771,7 +771,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_cluster_detail_async(self, request):
-        """查询集群详情
+        r"""查询集群详情
 
         查询集群详情接口。
         
@@ -836,7 +836,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_cluster_enterprise_projects_async(self, request):
-        """查询集群的企业项目ID
+        r"""查询集群的企业项目ID
 
         查询指定集群的企业项目ID。
         
@@ -901,7 +901,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_datastores_async(self, request):
-        """查询支持的版本
+        r"""查询支持的版本
 
         查询CDM集群支持的版本。
         
@@ -964,7 +964,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_enterprise_projects_async(self, request):
-        """查询所有集群的企业项目ID
+        r"""查询所有集群的企业项目ID
 
         查询当前项目下的所有集群的企业项目ID。
         
@@ -1027,7 +1027,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_flavor_detail_async(self, request):
-        """查询规格详情
+        r"""查询规格详情
 
         查询指定规格ID的规格详请。
         
@@ -1092,7 +1092,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_flavors_async(self, request):
-        """查询版本规格
+        r"""查询版本规格
 
         按版本ID查询所有兼容规格。
         
@@ -1157,7 +1157,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_instance_detail_async(self, request):
-        """查询集群实例信息
+        r"""查询集群实例信息
 
         查询集群实例信息。
         
@@ -1222,7 +1222,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_job_status_async(self, request):
-        """查询作业状态
+        r"""查询作业状态
 
         查询作业状态接口。
         
@@ -1289,7 +1289,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_jobs_async(self, request):
-        """查询作业
+        r"""查询作业
 
         查询作业接口。
         
@@ -1364,7 +1364,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_link_async(self, request):
-        """查询连接
+        r"""查询连接
 
         查询连接接口。
         
@@ -1431,7 +1431,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def show_submissions_async(self, request):
-        """查询作业执行历史
+        r"""查询作业执行历史
 
         查询作业执行历史接口。
         
@@ -1498,7 +1498,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def start_cluster_async(self, request):
-        """启动集群
+        r"""启动集群
 
         启动集群接口。
         
@@ -1565,7 +1565,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def start_job_async(self, request):
-        """启动作业
+        r"""启动作业
 
         启动作业接口。
         
@@ -1634,7 +1634,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def stop_cluster_async(self, request):
-        """停止集群
+        r"""停止集群
 
         停止集群接口。
         
@@ -1701,7 +1701,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def stop_job_async(self, request):
-        """停止作业
+        r"""停止作业
 
         停止作业接口。
         
@@ -1768,7 +1768,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def update_job_async(self, request):
-        """修改作业
+        r"""修改作业
 
         修改作业接口。
         
@@ -1837,7 +1837,7 @@ class CdmAsyncClient(Client):
         return http_info
 
     def update_link_async(self, request):
-        """修改连接
+        r"""修改连接
 
         修改连接接口。
         

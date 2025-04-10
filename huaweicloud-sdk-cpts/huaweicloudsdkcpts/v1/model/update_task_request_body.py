@@ -45,7 +45,7 @@ class UpdateTaskRequestBody:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, run_status=None, run_type=None, task_run_info=None, case_list=None, operate_mode=None, bench_concurrent=None, related_temp_running_data=None):
-        """UpdateTaskRequestBody
+        r"""UpdateTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class UpdateTaskRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTaskRequestBody.
+        r"""Gets the id of this UpdateTaskRequestBody.
 
         任务id
 
@@ -121,7 +121,7 @@ class UpdateTaskRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTaskRequestBody.
+        r"""Sets the id of this UpdateTaskRequestBody.
 
         任务id
 
@@ -132,7 +132,7 @@ class UpdateTaskRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTaskRequestBody.
+        r"""Gets the name of this UpdateTaskRequestBody.
 
         任务名称
 
@@ -143,7 +143,7 @@ class UpdateTaskRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTaskRequestBody.
+        r"""Sets the name of this UpdateTaskRequestBody.
 
         任务名称
 
@@ -154,7 +154,7 @@ class UpdateTaskRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTaskRequestBody.
+        r"""Gets the description of this UpdateTaskRequestBody.
 
         描述
 
@@ -165,7 +165,7 @@ class UpdateTaskRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTaskRequestBody.
+        r"""Sets the description of this UpdateTaskRequestBody.
 
         描述
 
@@ -176,7 +176,7 @@ class UpdateTaskRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTaskRequestBody.
+        r"""Gets the project_id of this UpdateTaskRequestBody.
 
         工程id
 
@@ -187,7 +187,7 @@ class UpdateTaskRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTaskRequestBody.
+        r"""Sets the project_id of this UpdateTaskRequestBody.
 
         工程id
 
@@ -198,7 +198,7 @@ class UpdateTaskRequestBody:
 
     @property
     def run_status(self):
-        """Gets the run_status of this UpdateTaskRequestBody.
+        r"""Gets the run_status of this UpdateTaskRequestBody.
 
         任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
@@ -209,7 +209,7 @@ class UpdateTaskRequestBody:
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this UpdateTaskRequestBody.
+        r"""Sets the run_status of this UpdateTaskRequestBody.
 
         任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
@@ -220,7 +220,7 @@ class UpdateTaskRequestBody:
 
     @property
     def run_type(self):
-        """Gets the run_type of this UpdateTaskRequestBody.
+        r"""Gets the run_type of this UpdateTaskRequestBody.
 
         任务类型（0：旧版本任务；1：融合版本任务）
 
@@ -231,7 +231,7 @@ class UpdateTaskRequestBody:
 
     @run_type.setter
     def run_type(self, run_type):
-        """Sets the run_type of this UpdateTaskRequestBody.
+        r"""Sets the run_type of this UpdateTaskRequestBody.
 
         任务类型（0：旧版本任务；1：融合版本任务）
 
@@ -242,7 +242,7 @@ class UpdateTaskRequestBody:
 
     @property
     def task_run_info(self):
-        """Gets the task_run_info of this UpdateTaskRequestBody.
+        r"""Gets the task_run_info of this UpdateTaskRequestBody.
 
         :return: The task_run_info of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
@@ -251,7 +251,7 @@ class UpdateTaskRequestBody:
 
     @task_run_info.setter
     def task_run_info(self, task_run_info):
-        """Sets the task_run_info of this UpdateTaskRequestBody.
+        r"""Sets the task_run_info of this UpdateTaskRequestBody.
 
         :param task_run_info: The task_run_info of this UpdateTaskRequestBody.
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
@@ -260,7 +260,7 @@ class UpdateTaskRequestBody:
 
     @property
     def case_list(self):
-        """Gets the case_list of this UpdateTaskRequestBody.
+        r"""Gets the case_list of this UpdateTaskRequestBody.
 
         用例信息
 
@@ -271,7 +271,7 @@ class UpdateTaskRequestBody:
 
     @case_list.setter
     def case_list(self, case_list):
-        """Sets the case_list of this UpdateTaskRequestBody.
+        r"""Sets the case_list of this UpdateTaskRequestBody.
 
         用例信息
 
@@ -282,7 +282,7 @@ class UpdateTaskRequestBody:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this UpdateTaskRequestBody.
+        r"""Gets the operate_mode of this UpdateTaskRequestBody.
 
         压力阶段模式，0：时长模式；1：次数模式
 
@@ -293,7 +293,7 @@ class UpdateTaskRequestBody:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this UpdateTaskRequestBody.
+        r"""Sets the operate_mode of this UpdateTaskRequestBody.
 
         压力阶段模式，0：时长模式；1：次数模式
 
@@ -304,7 +304,7 @@ class UpdateTaskRequestBody:
 
     @property
     def bench_concurrent(self):
-        """Gets the bench_concurrent of this UpdateTaskRequestBody.
+        r"""Gets the bench_concurrent of this UpdateTaskRequestBody.
 
         基准并发
 
@@ -315,7 +315,7 @@ class UpdateTaskRequestBody:
 
     @bench_concurrent.setter
     def bench_concurrent(self, bench_concurrent):
-        """Sets the bench_concurrent of this UpdateTaskRequestBody.
+        r"""Sets the bench_concurrent of this UpdateTaskRequestBody.
 
         基准并发
 
@@ -326,7 +326,7 @@ class UpdateTaskRequestBody:
 
     @property
     def related_temp_running_data(self):
-        """Gets the related_temp_running_data of this UpdateTaskRequestBody.
+        r"""Gets the related_temp_running_data of this UpdateTaskRequestBody.
 
         最近一次运行的报告简略信息
 
@@ -337,7 +337,7 @@ class UpdateTaskRequestBody:
 
     @related_temp_running_data.setter
     def related_temp_running_data(self, related_temp_running_data):
-        """Sets the related_temp_running_data of this UpdateTaskRequestBody.
+        r"""Sets the related_temp_running_data of this UpdateTaskRequestBody.
 
         最近一次运行的报告简略信息
 

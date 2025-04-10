@@ -43,7 +43,7 @@ class RolesItem:
     }
 
     def __init__(self, catalog=None, display_name=None, description=None, description_cn=None, domain_id=None, flag=None, id=None, name=None, policy=None, type=None):
-        """RolesItem
+        r"""RolesItem
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class RolesItem:
 
     @property
     def catalog(self):
-        """Gets the catalog of this RolesItem.
+        r"""Gets the catalog of this RolesItem.
 
         权限所在目录。
 
@@ -107,7 +107,7 @@ class RolesItem:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this RolesItem.
+        r"""Sets the catalog of this RolesItem.
 
         权限所在目录。
 
@@ -118,7 +118,7 @@ class RolesItem:
 
     @property
     def display_name(self):
-        """Gets the display_name of this RolesItem.
+        r"""Gets the display_name of this RolesItem.
 
         权限展示名称。
 
@@ -129,7 +129,7 @@ class RolesItem:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this RolesItem.
+        r"""Sets the display_name of this RolesItem.
 
         权限展示名称。
 
@@ -140,7 +140,7 @@ class RolesItem:
 
     @property
     def description(self):
-        """Gets the description of this RolesItem.
+        r"""Gets the description of this RolesItem.
 
         权限的英文描述。
 
@@ -151,7 +151,7 @@ class RolesItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RolesItem.
+        r"""Sets the description of this RolesItem.
 
         权限的英文描述。
 
@@ -162,7 +162,7 @@ class RolesItem:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this RolesItem.
+        r"""Gets the description_cn of this RolesItem.
 
         权限的中文描述信息。
 
@@ -173,7 +173,7 @@ class RolesItem:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this RolesItem.
+        r"""Sets the description_cn of this RolesItem.
 
         权限的中文描述信息。
 
@@ -184,7 +184,7 @@ class RolesItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RolesItem.
+        r"""Gets the domain_id of this RolesItem.
 
         权限所属账号ID。
 
@@ -195,7 +195,7 @@ class RolesItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RolesItem.
+        r"""Sets the domain_id of this RolesItem.
 
         权限所属账号ID。
 
@@ -206,7 +206,7 @@ class RolesItem:
 
     @property
     def flag(self):
-        """Gets the flag of this RolesItem.
+        r"""Gets the flag of this RolesItem.
 
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
@@ -217,7 +217,7 @@ class RolesItem:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this RolesItem.
+        r"""Sets the flag of this RolesItem.
 
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
@@ -228,7 +228,7 @@ class RolesItem:
 
     @property
     def id(self):
-        """Gets the id of this RolesItem.
+        r"""Gets the id of this RolesItem.
 
         权限Id。
 
@@ -239,7 +239,7 @@ class RolesItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RolesItem.
+        r"""Sets the id of this RolesItem.
 
         权限Id。
 
@@ -250,7 +250,7 @@ class RolesItem:
 
     @property
     def name(self):
-        """Gets the name of this RolesItem.
+        r"""Gets the name of this RolesItem.
 
         权限名称。
 
@@ -261,7 +261,7 @@ class RolesItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RolesItem.
+        r"""Sets the name of this RolesItem.
 
         权限名称。
 
@@ -272,7 +272,7 @@ class RolesItem:
 
     @property
     def policy(self):
-        """Gets the policy of this RolesItem.
+        r"""Gets the policy of this RolesItem.
 
         :return: The policy of this RolesItem.
         :rtype: :class:`huaweicloudsdkiam.v3.RolePolicy`
@@ -281,7 +281,7 @@ class RolesItem:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this RolesItem.
+        r"""Sets the policy of this RolesItem.
 
         :param policy: The policy of this RolesItem.
         :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
@@ -290,7 +290,7 @@ class RolesItem:
 
     @property
     def type(self):
-        """Gets the type of this RolesItem.
+        r"""Gets the type of this RolesItem.
 
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -301,7 +301,7 @@ class RolesItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RolesItem.
+        r"""Sets the type of this RolesItem.
 
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 

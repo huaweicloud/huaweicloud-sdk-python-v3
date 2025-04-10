@@ -25,7 +25,7 @@ class TaskInstanceSpecRsp:
     }
 
     def __init__(self, containers=None):
-        """TaskInstanceSpecRsp
+        r"""TaskInstanceSpecRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskInstanceSpecRsp:
 
     @property
     def containers(self):
-        """Gets the containers of this TaskInstanceSpecRsp.
+        r"""Gets the containers of this TaskInstanceSpecRsp.
 
         实例详情响应体
 
@@ -54,7 +54,7 @@ class TaskInstanceSpecRsp:
 
     @containers.setter
     def containers(self, containers):
-        """Sets the containers of this TaskInstanceSpecRsp.
+        r"""Sets the containers of this TaskInstanceSpecRsp.
 
         实例详情响应体
 

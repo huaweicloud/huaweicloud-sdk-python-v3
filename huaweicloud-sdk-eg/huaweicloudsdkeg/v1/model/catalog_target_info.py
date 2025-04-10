@@ -39,7 +39,7 @@ class CatalogTargetInfo:
     }
 
     def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, parameters=None, created_time=None, updated_time=None):
-        """CatalogTargetInfo
+        r"""CatalogTargetInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CatalogTargetInfo:
 
     @property
     def id(self):
-        """Gets the id of this CatalogTargetInfo.
+        r"""Gets the id of this CatalogTargetInfo.
 
         事件目标分类ID
 
@@ -103,7 +103,7 @@ class CatalogTargetInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CatalogTargetInfo.
+        r"""Sets the id of this CatalogTargetInfo.
 
         事件目标分类ID
 
@@ -114,7 +114,7 @@ class CatalogTargetInfo:
 
     @property
     def name(self):
-        """Gets the name of this CatalogTargetInfo.
+        r"""Gets the name of this CatalogTargetInfo.
 
         事件目标分类名称
 
@@ -125,7 +125,7 @@ class CatalogTargetInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CatalogTargetInfo.
+        r"""Sets the name of this CatalogTargetInfo.
 
         事件目标分类名称
 
@@ -136,7 +136,7 @@ class CatalogTargetInfo:
 
     @property
     def label(self):
-        """Gets the label of this CatalogTargetInfo.
+        r"""Gets the label of this CatalogTargetInfo.
 
         事件目标分类名称展示说明
 
@@ -147,7 +147,7 @@ class CatalogTargetInfo:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this CatalogTargetInfo.
+        r"""Sets the label of this CatalogTargetInfo.
 
         事件目标分类名称展示说明
 
@@ -158,7 +158,7 @@ class CatalogTargetInfo:
 
     @property
     def description(self):
-        """Gets the description of this CatalogTargetInfo.
+        r"""Gets the description of this CatalogTargetInfo.
 
         事件目标分类描述
 
@@ -169,7 +169,7 @@ class CatalogTargetInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CatalogTargetInfo.
+        r"""Sets the description of this CatalogTargetInfo.
 
         事件目标分类描述
 
@@ -180,7 +180,7 @@ class CatalogTargetInfo:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this CatalogTargetInfo.
+        r"""Gets the provider_type of this CatalogTargetInfo.
 
         提供方类型，OFFICIAL：官方云服务事件目标；CUSTOM：第三方事件目标
 
@@ -191,7 +191,7 @@ class CatalogTargetInfo:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this CatalogTargetInfo.
+        r"""Sets the provider_type of this CatalogTargetInfo.
 
         提供方类型，OFFICIAL：官方云服务事件目标；CUSTOM：第三方事件目标
 
@@ -202,7 +202,7 @@ class CatalogTargetInfo:
 
     @property
     def parameters(self):
-        """Gets the parameters of this CatalogTargetInfo.
+        r"""Gets the parameters of this CatalogTargetInfo.
 
         :return: The parameters of this CatalogTargetInfo.
         :rtype: list[object]
@@ -211,7 +211,7 @@ class CatalogTargetInfo:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this CatalogTargetInfo.
+        r"""Sets the parameters of this CatalogTargetInfo.
 
         :param parameters: The parameters of this CatalogTargetInfo.
         :type parameters: list[object]
@@ -220,7 +220,7 @@ class CatalogTargetInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this CatalogTargetInfo.
+        r"""Gets the created_time of this CatalogTargetInfo.
 
         创建UTC时间
 
@@ -231,7 +231,7 @@ class CatalogTargetInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CatalogTargetInfo.
+        r"""Sets the created_time of this CatalogTargetInfo.
 
         创建UTC时间
 
@@ -242,7 +242,7 @@ class CatalogTargetInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this CatalogTargetInfo.
+        r"""Gets the updated_time of this CatalogTargetInfo.
 
         更新UTC时间
 
@@ -253,7 +253,7 @@ class CatalogTargetInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this CatalogTargetInfo.
+        r"""Sets the updated_time of this CatalogTargetInfo.
 
         更新UTC时间
 

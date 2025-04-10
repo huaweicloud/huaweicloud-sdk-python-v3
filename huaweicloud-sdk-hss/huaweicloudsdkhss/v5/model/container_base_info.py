@@ -57,7 +57,7 @@ class ContainerBaseInfo:
     }
 
     def __init__(self, container_id=None, container_name=None, image_name=None, status=None, create_time=None, cpu_limit=None, memory_limit=None, restart_count=None, pod_name=None, cluster_name=None, cluster_id=None, cluster_type=None, risky=None, low_risk=None, medium_risk=None, high_risk=None, fatal_risk=None):
-        """ContainerBaseInfo
+        r"""ContainerBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ContainerBaseInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this ContainerBaseInfo.
+        r"""Gets the container_id of this ContainerBaseInfo.
 
         容器ID
 
@@ -166,7 +166,7 @@ class ContainerBaseInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this ContainerBaseInfo.
+        r"""Sets the container_id of this ContainerBaseInfo.
 
         容器ID
 
@@ -177,7 +177,7 @@ class ContainerBaseInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this ContainerBaseInfo.
+        r"""Gets the container_name of this ContainerBaseInfo.
 
         容器名称
 
@@ -188,7 +188,7 @@ class ContainerBaseInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this ContainerBaseInfo.
+        r"""Sets the container_name of this ContainerBaseInfo.
 
         容器名称
 
@@ -199,7 +199,7 @@ class ContainerBaseInfo:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ContainerBaseInfo.
+        r"""Gets the image_name of this ContainerBaseInfo.
 
         镜像名称
 
@@ -210,7 +210,7 @@ class ContainerBaseInfo:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ContainerBaseInfo.
+        r"""Sets the image_name of this ContainerBaseInfo.
 
         镜像名称
 
@@ -221,7 +221,7 @@ class ContainerBaseInfo:
 
     @property
     def status(self):
-        """Gets the status of this ContainerBaseInfo.
+        r"""Gets the status of this ContainerBaseInfo.
 
         容器状态，包含以下几种： -Running 运行中 -Terminated 终止 -Waiting 等待
 
@@ -232,7 +232,7 @@ class ContainerBaseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ContainerBaseInfo.
+        r"""Sets the status of this ContainerBaseInfo.
 
         容器状态，包含以下几种： -Running 运行中 -Terminated 终止 -Waiting 等待
 
@@ -243,7 +243,7 @@ class ContainerBaseInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ContainerBaseInfo.
+        r"""Gets the create_time of this ContainerBaseInfo.
 
         创建时间
 
@@ -254,7 +254,7 @@ class ContainerBaseInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ContainerBaseInfo.
+        r"""Sets the create_time of this ContainerBaseInfo.
 
         创建时间
 
@@ -265,7 +265,7 @@ class ContainerBaseInfo:
 
     @property
     def cpu_limit(self):
-        """Gets the cpu_limit of this ContainerBaseInfo.
+        r"""Gets the cpu_limit of this ContainerBaseInfo.
 
         cpu限制
 
@@ -276,7 +276,7 @@ class ContainerBaseInfo:
 
     @cpu_limit.setter
     def cpu_limit(self, cpu_limit):
-        """Sets the cpu_limit of this ContainerBaseInfo.
+        r"""Sets the cpu_limit of this ContainerBaseInfo.
 
         cpu限制
 
@@ -287,7 +287,7 @@ class ContainerBaseInfo:
 
     @property
     def memory_limit(self):
-        """Gets the memory_limit of this ContainerBaseInfo.
+        r"""Gets the memory_limit of this ContainerBaseInfo.
 
         内存限制
 
@@ -298,7 +298,7 @@ class ContainerBaseInfo:
 
     @memory_limit.setter
     def memory_limit(self, memory_limit):
-        """Sets the memory_limit of this ContainerBaseInfo.
+        r"""Sets the memory_limit of this ContainerBaseInfo.
 
         内存限制
 
@@ -309,7 +309,7 @@ class ContainerBaseInfo:
 
     @property
     def restart_count(self):
-        """Gets the restart_count of this ContainerBaseInfo.
+        r"""Gets the restart_count of this ContainerBaseInfo.
 
         重启次数
 
@@ -320,7 +320,7 @@ class ContainerBaseInfo:
 
     @restart_count.setter
     def restart_count(self, restart_count):
-        """Sets the restart_count of this ContainerBaseInfo.
+        r"""Sets the restart_count of this ContainerBaseInfo.
 
         重启次数
 
@@ -331,7 +331,7 @@ class ContainerBaseInfo:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this ContainerBaseInfo.
+        r"""Gets the pod_name of this ContainerBaseInfo.
 
         所属pod名称
 
@@ -342,7 +342,7 @@ class ContainerBaseInfo:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this ContainerBaseInfo.
+        r"""Sets the pod_name of this ContainerBaseInfo.
 
         所属pod名称
 
@@ -353,7 +353,7 @@ class ContainerBaseInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ContainerBaseInfo.
+        r"""Gets the cluster_name of this ContainerBaseInfo.
 
         所属集群
 
@@ -364,7 +364,7 @@ class ContainerBaseInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ContainerBaseInfo.
+        r"""Sets the cluster_name of this ContainerBaseInfo.
 
         所属集群
 
@@ -375,7 +375,7 @@ class ContainerBaseInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ContainerBaseInfo.
+        r"""Gets the cluster_id of this ContainerBaseInfo.
 
         集群id
 
@@ -386,7 +386,7 @@ class ContainerBaseInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ContainerBaseInfo.
+        r"""Sets the cluster_id of this ContainerBaseInfo.
 
         集群id
 
@@ -397,7 +397,7 @@ class ContainerBaseInfo:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this ContainerBaseInfo.
+        r"""Gets the cluster_type of this ContainerBaseInfo.
 
         集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
 
@@ -408,7 +408,7 @@ class ContainerBaseInfo:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this ContainerBaseInfo.
+        r"""Sets the cluster_type of this ContainerBaseInfo.
 
         集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
 
@@ -419,7 +419,7 @@ class ContainerBaseInfo:
 
     @property
     def risky(self):
-        """Gets the risky of this ContainerBaseInfo.
+        r"""Gets the risky of this ContainerBaseInfo.
 
         是否有风险
 
@@ -430,7 +430,7 @@ class ContainerBaseInfo:
 
     @risky.setter
     def risky(self, risky):
-        """Sets the risky of this ContainerBaseInfo.
+        r"""Sets the risky of this ContainerBaseInfo.
 
         是否有风险
 
@@ -441,7 +441,7 @@ class ContainerBaseInfo:
 
     @property
     def low_risk(self):
-        """Gets the low_risk of this ContainerBaseInfo.
+        r"""Gets the low_risk of this ContainerBaseInfo.
 
         低危风险数量
 
@@ -452,7 +452,7 @@ class ContainerBaseInfo:
 
     @low_risk.setter
     def low_risk(self, low_risk):
-        """Sets the low_risk of this ContainerBaseInfo.
+        r"""Sets the low_risk of this ContainerBaseInfo.
 
         低危风险数量
 
@@ -463,7 +463,7 @@ class ContainerBaseInfo:
 
     @property
     def medium_risk(self):
-        """Gets the medium_risk of this ContainerBaseInfo.
+        r"""Gets the medium_risk of this ContainerBaseInfo.
 
         中危风险数量
 
@@ -474,7 +474,7 @@ class ContainerBaseInfo:
 
     @medium_risk.setter
     def medium_risk(self, medium_risk):
-        """Sets the medium_risk of this ContainerBaseInfo.
+        r"""Sets the medium_risk of this ContainerBaseInfo.
 
         中危风险数量
 
@@ -485,7 +485,7 @@ class ContainerBaseInfo:
 
     @property
     def high_risk(self):
-        """Gets the high_risk of this ContainerBaseInfo.
+        r"""Gets the high_risk of this ContainerBaseInfo.
 
         高危风险数量
 
@@ -496,7 +496,7 @@ class ContainerBaseInfo:
 
     @high_risk.setter
     def high_risk(self, high_risk):
-        """Sets the high_risk of this ContainerBaseInfo.
+        r"""Sets the high_risk of this ContainerBaseInfo.
 
         高危风险数量
 
@@ -507,7 +507,7 @@ class ContainerBaseInfo:
 
     @property
     def fatal_risk(self):
-        """Gets the fatal_risk of this ContainerBaseInfo.
+        r"""Gets the fatal_risk of this ContainerBaseInfo.
 
         致命风险数量
 
@@ -518,7 +518,7 @@ class ContainerBaseInfo:
 
     @fatal_risk.setter
     def fatal_risk(self, fatal_risk):
-        """Sets the fatal_risk of this ContainerBaseInfo.
+        r"""Sets the fatal_risk of this ContainerBaseInfo.
 
         致命风险数量
 

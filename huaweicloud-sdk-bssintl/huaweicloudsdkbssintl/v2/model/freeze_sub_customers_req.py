@@ -31,7 +31,7 @@ class FreezeSubCustomersReq:
     }
 
     def __init__(self, customer_ids=None, reason=None, indirect_partner_id=None, freeze_type=None):
-        """FreezeSubCustomersReq
+        r"""FreezeSubCustomersReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class FreezeSubCustomersReq:
 
     @property
     def customer_ids(self):
-        """Gets the customer_ids of this FreezeSubCustomersReq.
+        r"""Gets the customer_ids of this FreezeSubCustomersReq.
 
         需要冻结的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
@@ -73,7 +73,7 @@ class FreezeSubCustomersReq:
 
     @customer_ids.setter
     def customer_ids(self, customer_ids):
-        """Sets the customer_ids of this FreezeSubCustomersReq.
+        r"""Sets the customer_ids of this FreezeSubCustomersReq.
 
         需要冻结的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
@@ -84,7 +84,7 @@ class FreezeSubCustomersReq:
 
     @property
     def reason(self):
-        """Gets the reason of this FreezeSubCustomersReq.
+        r"""Gets the reason of this FreezeSubCustomersReq.
 
         冻结原因。
 
@@ -95,7 +95,7 @@ class FreezeSubCustomersReq:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this FreezeSubCustomersReq.
+        r"""Sets the reason of this FreezeSubCustomersReq.
 
         冻结原因。
 
@@ -106,7 +106,7 @@ class FreezeSubCustomersReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this FreezeSubCustomersReq.
+        r"""Gets the indirect_partner_id of this FreezeSubCustomersReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -117,7 +117,7 @@ class FreezeSubCustomersReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this FreezeSubCustomersReq.
+        r"""Sets the indirect_partner_id of this FreezeSubCustomersReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -128,7 +128,7 @@ class FreezeSubCustomersReq:
 
     @property
     def freeze_type(self):
-        """Gets the freeze_type of this FreezeSubCustomersReq.
+        r"""Gets the freeze_type of this FreezeSubCustomersReq.
 
         |参数名称：冻结类型| |参数的约束及描述：该参数非必填，冻结类型，支持枚举| |ACCOUNT：冻结账号，ACCOUNT_AND_RESOURCE：冻结账号与资源|
 
@@ -139,7 +139,7 @@ class FreezeSubCustomersReq:
 
     @freeze_type.setter
     def freeze_type(self, freeze_type):
-        """Sets the freeze_type of this FreezeSubCustomersReq.
+        r"""Sets the freeze_type of this FreezeSubCustomersReq.
 
         |参数名称：冻结类型| |参数的约束及描述：该参数非必填，冻结类型，支持枚举| |ACCOUNT：冻结账号，ACCOUNT_AND_RESOURCE：冻结账号与资源|
 

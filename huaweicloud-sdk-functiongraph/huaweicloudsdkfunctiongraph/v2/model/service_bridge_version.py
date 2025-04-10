@@ -29,7 +29,7 @@ class ServiceBridgeVersion:
     }
 
     def __init__(self, name=None, version=None, code_url=None):
-        """ServiceBridgeVersion
+        r"""ServiceBridgeVersion
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ServiceBridgeVersion:
 
     @property
     def name(self):
-        """Gets the name of this ServiceBridgeVersion.
+        r"""Gets the name of this ServiceBridgeVersion.
 
         代码包名
 
@@ -68,7 +68,7 @@ class ServiceBridgeVersion:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServiceBridgeVersion.
+        r"""Sets the name of this ServiceBridgeVersion.
 
         代码包名
 
@@ -79,7 +79,7 @@ class ServiceBridgeVersion:
 
     @property
     def version(self):
-        """Gets the version of this ServiceBridgeVersion.
+        r"""Gets the version of this ServiceBridgeVersion.
 
         代码版本
 
@@ -90,7 +90,7 @@ class ServiceBridgeVersion:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ServiceBridgeVersion.
+        r"""Sets the version of this ServiceBridgeVersion.
 
         代码版本
 
@@ -101,7 +101,7 @@ class ServiceBridgeVersion:
 
     @property
     def code_url(self):
-        """Gets the code_url of this ServiceBridgeVersion.
+        r"""Gets the code_url of this ServiceBridgeVersion.
 
         代码所在obs路径
 
@@ -112,7 +112,7 @@ class ServiceBridgeVersion:
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this ServiceBridgeVersion.
+        r"""Sets the code_url of this ServiceBridgeVersion.
 
         代码所在obs路径
 

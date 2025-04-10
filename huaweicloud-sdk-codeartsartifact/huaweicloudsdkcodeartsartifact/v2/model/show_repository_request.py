@@ -31,7 +31,7 @@ class ShowRepositoryRequest:
     }
 
     def __init__(self, tenant_id=None, project_id=None, repo_id=None, region=None):
-        """ShowRepositoryRequest
+        r"""ShowRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowRepositoryRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowRepositoryRequest.
+        r"""Gets the tenant_id of this ShowRepositoryRequest.
 
         租户id
 
@@ -72,7 +72,7 @@ class ShowRepositoryRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowRepositoryRequest.
+        r"""Sets the tenant_id of this ShowRepositoryRequest.
 
         租户id
 
@@ -83,7 +83,7 @@ class ShowRepositoryRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowRepositoryRequest.
+        r"""Gets the project_id of this ShowRepositoryRequest.
 
         项目id
 
@@ -94,7 +94,7 @@ class ShowRepositoryRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowRepositoryRequest.
+        r"""Sets the project_id of this ShowRepositoryRequest.
 
         项目id
 
@@ -105,7 +105,7 @@ class ShowRepositoryRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ShowRepositoryRequest.
+        r"""Gets the repo_id of this ShowRepositoryRequest.
 
         仓库id
 
@@ -116,7 +116,7 @@ class ShowRepositoryRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ShowRepositoryRequest.
+        r"""Sets the repo_id of this ShowRepositoryRequest.
 
         仓库id
 
@@ -127,7 +127,7 @@ class ShowRepositoryRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowRepositoryRequest.
+        r"""Gets the region of this ShowRepositoryRequest.
 
         服务区
 
@@ -138,7 +138,7 @@ class ShowRepositoryRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowRepositoryRequest.
+        r"""Sets the region of this ShowRepositoryRequest.
 
         服务区
 

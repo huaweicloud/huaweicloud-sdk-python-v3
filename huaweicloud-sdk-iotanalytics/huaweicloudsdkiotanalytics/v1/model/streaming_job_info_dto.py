@@ -45,7 +45,7 @@ class StreamingJobInfoDto:
     }
 
     def __init__(self, job_id=None, job_name=None, job_input_type=None, job_description=None, job_state=None, status=None, rtu=None, created_time=None, modified_time=None, user_id=None, has_savepoint=None):
-        """StreamingJobInfoDto
+        r"""StreamingJobInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class StreamingJobInfoDto:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StreamingJobInfoDto.
+        r"""Gets the job_id of this StreamingJobInfoDto.
 
         作业ID
 
@@ -124,7 +124,7 @@ class StreamingJobInfoDto:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StreamingJobInfoDto.
+        r"""Sets the job_id of this StreamingJobInfoDto.
 
         作业ID
 
@@ -135,7 +135,7 @@ class StreamingJobInfoDto:
 
     @property
     def job_name(self):
-        """Gets the job_name of this StreamingJobInfoDto.
+        r"""Gets the job_name of this StreamingJobInfoDto.
 
         作业名称
 
@@ -146,7 +146,7 @@ class StreamingJobInfoDto:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this StreamingJobInfoDto.
+        r"""Sets the job_name of this StreamingJobInfoDto.
 
         作业名称
 
@@ -157,7 +157,7 @@ class StreamingJobInfoDto:
 
     @property
     def job_input_type(self):
-        """Gets the job_input_type of this StreamingJobInfoDto.
+        r"""Gets the job_input_type of this StreamingJobInfoDto.
 
         接收数据类型
 
@@ -168,7 +168,7 @@ class StreamingJobInfoDto:
 
     @job_input_type.setter
     def job_input_type(self, job_input_type):
-        """Sets the job_input_type of this StreamingJobInfoDto.
+        r"""Sets the job_input_type of this StreamingJobInfoDto.
 
         接收数据类型
 
@@ -179,7 +179,7 @@ class StreamingJobInfoDto:
 
     @property
     def job_description(self):
-        """Gets the job_description of this StreamingJobInfoDto.
+        r"""Gets the job_description of this StreamingJobInfoDto.
 
         作业描述
 
@@ -190,7 +190,7 @@ class StreamingJobInfoDto:
 
     @job_description.setter
     def job_description(self, job_description):
-        """Sets the job_description of this StreamingJobInfoDto.
+        r"""Sets the job_description of this StreamingJobInfoDto.
 
         作业描述
 
@@ -201,7 +201,7 @@ class StreamingJobInfoDto:
 
     @property
     def job_state(self):
-        """Gets the job_state of this StreamingJobInfoDto.
+        r"""Gets the job_state of this StreamingJobInfoDto.
 
         作业状态
 
@@ -212,7 +212,7 @@ class StreamingJobInfoDto:
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this StreamingJobInfoDto.
+        r"""Sets the job_state of this StreamingJobInfoDto.
 
         作业状态
 
@@ -223,7 +223,7 @@ class StreamingJobInfoDto:
 
     @property
     def status(self):
-        """Gets the status of this StreamingJobInfoDto.
+        r"""Gets the status of this StreamingJobInfoDto.
 
         操作状态
 
@@ -234,7 +234,7 @@ class StreamingJobInfoDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StreamingJobInfoDto.
+        r"""Sets the status of this StreamingJobInfoDto.
 
         操作状态
 
@@ -245,7 +245,7 @@ class StreamingJobInfoDto:
 
     @property
     def rtu(self):
-        """Gets the rtu of this StreamingJobInfoDto.
+        r"""Gets the rtu of this StreamingJobInfoDto.
 
         运行作业的RTU个数
 
@@ -256,7 +256,7 @@ class StreamingJobInfoDto:
 
     @rtu.setter
     def rtu(self, rtu):
-        """Sets the rtu of this StreamingJobInfoDto.
+        r"""Sets the rtu of this StreamingJobInfoDto.
 
         运行作业的RTU个数
 
@@ -267,7 +267,7 @@ class StreamingJobInfoDto:
 
     @property
     def created_time(self):
-        """Gets the created_time of this StreamingJobInfoDto.
+        r"""Gets the created_time of this StreamingJobInfoDto.
 
         创建时间
 
@@ -278,7 +278,7 @@ class StreamingJobInfoDto:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this StreamingJobInfoDto.
+        r"""Sets the created_time of this StreamingJobInfoDto.
 
         创建时间
 
@@ -289,7 +289,7 @@ class StreamingJobInfoDto:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this StreamingJobInfoDto.
+        r"""Gets the modified_time of this StreamingJobInfoDto.
 
         修改时间
 
@@ -300,7 +300,7 @@ class StreamingJobInfoDto:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this StreamingJobInfoDto.
+        r"""Sets the modified_time of this StreamingJobInfoDto.
 
         修改时间
 
@@ -311,7 +311,7 @@ class StreamingJobInfoDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this StreamingJobInfoDto.
+        r"""Gets the user_id of this StreamingJobInfoDto.
 
         用户ID
 
@@ -322,7 +322,7 @@ class StreamingJobInfoDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this StreamingJobInfoDto.
+        r"""Sets the user_id of this StreamingJobInfoDto.
 
         用户ID
 
@@ -333,7 +333,7 @@ class StreamingJobInfoDto:
 
     @property
     def has_savepoint(self):
-        """Gets the has_savepoint of this StreamingJobInfoDto.
+        r"""Gets the has_savepoint of this StreamingJobInfoDto.
 
         已停止作业是否有历史缓存数据
 
@@ -344,7 +344,7 @@ class StreamingJobInfoDto:
 
     @has_savepoint.setter
     def has_savepoint(self, has_savepoint):
-        """Sets the has_savepoint of this StreamingJobInfoDto.
+        r"""Sets the has_savepoint of this StreamingJobInfoDto.
 
         已停止作业是否有历史缓存数据
 

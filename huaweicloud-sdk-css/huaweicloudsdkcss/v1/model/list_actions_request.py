@@ -25,7 +25,7 @@ class ListActionsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListActionsRequest
+        r"""ListActionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListActionsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListActionsRequest.
+        r"""Gets the cluster_id of this ListActionsRequest.
 
         指定查询集群ID。
 
@@ -53,7 +53,7 @@ class ListActionsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListActionsRequest.
+        r"""Sets the cluster_id of this ListActionsRequest.
 
         指定查询集群ID。
 

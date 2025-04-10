@@ -24,7 +24,7 @@ class UnpublishAppResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UnpublishAppResponse
+        r"""UnpublishAppResponse
 
         The model defined in huaweicloud sdk
 

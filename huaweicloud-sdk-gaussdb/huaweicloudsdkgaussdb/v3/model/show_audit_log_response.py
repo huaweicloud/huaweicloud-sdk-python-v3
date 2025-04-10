@@ -26,7 +26,7 @@ class ShowAuditLogResponse(SdkResponse):
     }
 
     def __init__(self, switch_status=None):
-        """ShowAuditLogResponse
+        r"""ShowAuditLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAuditLogResponse(SdkResponse):
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this ShowAuditLogResponse.
+        r"""Gets the switch_status of this ShowAuditLogResponse.
 
         全量SQL开关状态。 取值： - ON，表示开启 - OFF，表示关闭
 
@@ -55,7 +55,7 @@ class ShowAuditLogResponse(SdkResponse):
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this ShowAuditLogResponse.
+        r"""Sets the switch_status of this ShowAuditLogResponse.
 
         全量SQL开关状态。 取值： - ON，表示开启 - OFF，表示关闭
 

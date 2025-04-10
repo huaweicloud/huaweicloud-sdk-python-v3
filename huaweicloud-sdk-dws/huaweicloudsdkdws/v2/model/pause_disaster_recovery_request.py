@@ -25,7 +25,7 @@ class PauseDisasterRecoveryRequest:
     }
 
     def __init__(self, disaster_recovery_id=None):
-        """PauseDisasterRecoveryRequest
+        r"""PauseDisasterRecoveryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PauseDisasterRecoveryRequest:
 
     @property
     def disaster_recovery_id(self):
-        """Gets the disaster_recovery_id of this PauseDisasterRecoveryRequest.
+        r"""Gets the disaster_recovery_id of this PauseDisasterRecoveryRequest.
 
         容灾ID
 
@@ -53,7 +53,7 @@ class PauseDisasterRecoveryRequest:
 
     @disaster_recovery_id.setter
     def disaster_recovery_id(self, disaster_recovery_id):
-        """Sets the disaster_recovery_id of this PauseDisasterRecoveryRequest.
+        r"""Sets the disaster_recovery_id of this PauseDisasterRecoveryRequest.
 
         容灾ID
 

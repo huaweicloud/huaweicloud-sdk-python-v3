@@ -33,7 +33,7 @@ class ListPlaybookActionsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, limit=None, offset=None):
-        """ListPlaybookActionsRequest
+        r"""ListPlaybookActionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookActionsRequest.
+        r"""Gets the project_id of this ListPlaybookActionsRequest.
 
         ID of project
 
@@ -79,7 +79,7 @@ class ListPlaybookActionsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookActionsRequest.
+        r"""Sets the project_id of this ListPlaybookActionsRequest.
 
         ID of project
 
@@ -90,7 +90,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookActionsRequest.
+        r"""Gets the workspace_id of this ListPlaybookActionsRequest.
 
         ID of workspace
 
@@ -101,7 +101,7 @@ class ListPlaybookActionsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookActionsRequest.
+        r"""Sets the workspace_id of this ListPlaybookActionsRequest.
 
         ID of workspace
 
@@ -112,7 +112,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListPlaybookActionsRequest.
+        r"""Gets the version_id of this ListPlaybookActionsRequest.
 
         version Id value
 
@@ -123,7 +123,7 @@ class ListPlaybookActionsRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListPlaybookActionsRequest.
+        r"""Sets the version_id of this ListPlaybookActionsRequest.
 
         version Id value
 
@@ -134,7 +134,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybookActionsRequest.
+        r"""Gets the limit of this ListPlaybookActionsRequest.
 
         request limit size
 
@@ -145,7 +145,7 @@ class ListPlaybookActionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybookActionsRequest.
+        r"""Sets the limit of this ListPlaybookActionsRequest.
 
         request limit size
 
@@ -156,7 +156,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybookActionsRequest.
+        r"""Gets the offset of this ListPlaybookActionsRequest.
 
         request offset, from 0
 
@@ -167,7 +167,7 @@ class ListPlaybookActionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybookActionsRequest.
+        r"""Sets the offset of this ListPlaybookActionsRequest.
 
         request offset, from 0
 

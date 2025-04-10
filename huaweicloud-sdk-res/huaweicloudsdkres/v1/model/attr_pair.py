@@ -27,7 +27,7 @@ class AttrPair:
     }
 
     def __init__(self, party_a=None, party_b=None):
-        """AttrPair
+        r"""AttrPair
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttrPair:
 
     @property
     def party_a(self):
-        """Gets the party_a of this AttrPair.
+        r"""Gets the party_a of this AttrPair.
 
         被推荐对象的属性名。
 
@@ -61,7 +61,7 @@ class AttrPair:
 
     @party_a.setter
     def party_a(self, party_a):
-        """Sets the party_a of this AttrPair.
+        r"""Sets the party_a of this AttrPair.
 
         被推荐对象的属性名。
 
@@ -72,7 +72,7 @@ class AttrPair:
 
     @property
     def party_b(self):
-        """Gets the party_b of this AttrPair.
+        r"""Gets the party_b of this AttrPair.
 
         被推荐对象的属性名。
 
@@ -83,7 +83,7 @@ class AttrPair:
 
     @party_b.setter
     def party_b(self, party_b):
-        """Sets the party_b of this AttrPair.
+        r"""Sets the party_b of this AttrPair.
 
         被推荐对象的属性名。
 

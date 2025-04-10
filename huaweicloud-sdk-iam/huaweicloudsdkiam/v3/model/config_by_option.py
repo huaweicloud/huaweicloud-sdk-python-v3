@@ -27,7 +27,7 @@ class ConfigByOption:
     }
 
     def __init__(self, password_regex=None, password_regex_description=None):
-        """ConfigByOption
+        r"""ConfigByOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfigByOption:
 
     @property
     def password_regex(self):
-        """Gets the password_regex of this ConfigByOption.
+        r"""Gets the password_regex of this ConfigByOption.
 
         密码强度策略的正则表达式。(当option为password_regex时返回)
 
@@ -61,7 +61,7 @@ class ConfigByOption:
 
     @password_regex.setter
     def password_regex(self, password_regex):
-        """Sets the password_regex of this ConfigByOption.
+        r"""Sets the password_regex of this ConfigByOption.
 
         密码强度策略的正则表达式。(当option为password_regex时返回)
 
@@ -72,7 +72,7 @@ class ConfigByOption:
 
     @property
     def password_regex_description(self):
-        """Gets the password_regex_description of this ConfigByOption.
+        r"""Gets the password_regex_description of this ConfigByOption.
 
         密码强度策略的描述。(当option为password_regex_description时返回)
 
@@ -83,7 +83,7 @@ class ConfigByOption:
 
     @password_regex_description.setter
     def password_regex_description(self, password_regex_description):
-        """Sets the password_regex_description of this ConfigByOption.
+        r"""Sets the password_regex_description of this ConfigByOption.
 
         密码强度策略的描述。(当option为password_regex_description时返回)
 

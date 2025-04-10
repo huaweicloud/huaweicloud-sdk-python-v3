@@ -31,7 +31,7 @@ class ListFlavorInfosRequest:
     }
 
     def __init__(self, engine_name=None, engine_version=None, offset=None, limit=None):
-        """ListFlavorInfosRequest
+        r"""ListFlavorInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListFlavorInfosRequest:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListFlavorInfosRequest.
+        r"""Gets the engine_name of this ListFlavorInfosRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 
@@ -75,7 +75,7 @@ class ListFlavorInfosRequest:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListFlavorInfosRequest.
+        r"""Sets the engine_name of this ListFlavorInfosRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 
@@ -86,7 +86,7 @@ class ListFlavorInfosRequest:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ListFlavorInfosRequest.
+        r"""Gets the engine_version of this ListFlavorInfosRequest.
 
         数据库版本号。
 
@@ -97,7 +97,7 @@ class ListFlavorInfosRequest:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ListFlavorInfosRequest.
+        r"""Sets the engine_version of this ListFlavorInfosRequest.
 
         数据库版本号。
 
@@ -108,7 +108,7 @@ class ListFlavorInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlavorInfosRequest.
+        r"""Gets the offset of this ListFlavorInfosRequest.
 
         索引位置，偏移量。   - 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。   - 取值必须为数字，不能为负数。
 
@@ -119,7 +119,7 @@ class ListFlavorInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlavorInfosRequest.
+        r"""Sets the offset of this ListFlavorInfosRequest.
 
         索引位置，偏移量。   - 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。   - 取值必须为数字，不能为负数。
 
@@ -130,7 +130,7 @@ class ListFlavorInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlavorInfosRequest.
+        r"""Gets the limit of this ListFlavorInfosRequest.
 
         查询规格信息上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条规格信息。
 
@@ -141,7 +141,7 @@ class ListFlavorInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlavorInfosRequest.
+        r"""Sets the limit of this ListFlavorInfosRequest.
 
         查询规格信息上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条规格信息。
 

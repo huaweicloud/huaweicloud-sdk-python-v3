@@ -31,7 +31,7 @@ class BlackWhiteListRule:
     }
 
     def __init__(self, id=None, type=None, ip=None, domain_id=None):
-        """BlackWhiteListRule
+        r"""BlackWhiteListRule
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BlackWhiteListRule:
 
     @property
     def id(self):
-        """Gets the id of this BlackWhiteListRule.
+        r"""Gets the id of this BlackWhiteListRule.
 
         id
 
@@ -75,7 +75,7 @@ class BlackWhiteListRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BlackWhiteListRule.
+        r"""Sets the id of this BlackWhiteListRule.
 
         id
 
@@ -86,7 +86,7 @@ class BlackWhiteListRule:
 
     @property
     def type(self):
-        """Gets the type of this BlackWhiteListRule.
+        r"""Gets the type of this BlackWhiteListRule.
 
         0-黑名单，1-白名单
 
@@ -97,7 +97,7 @@ class BlackWhiteListRule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BlackWhiteListRule.
+        r"""Sets the type of this BlackWhiteListRule.
 
         0-黑名单，1-白名单
 
@@ -108,7 +108,7 @@ class BlackWhiteListRule:
 
     @property
     def ip(self):
-        """Gets the ip of this BlackWhiteListRule.
+        r"""Gets the ip of this BlackWhiteListRule.
 
         ip
 
@@ -119,7 +119,7 @@ class BlackWhiteListRule:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BlackWhiteListRule.
+        r"""Sets the ip of this BlackWhiteListRule.
 
         ip
 
@@ -130,7 +130,7 @@ class BlackWhiteListRule:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this BlackWhiteListRule.
+        r"""Gets the domain_id of this BlackWhiteListRule.
 
         域名id
 
@@ -141,7 +141,7 @@ class BlackWhiteListRule:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this BlackWhiteListRule.
+        r"""Sets the domain_id of this BlackWhiteListRule.
 
         域名id
 

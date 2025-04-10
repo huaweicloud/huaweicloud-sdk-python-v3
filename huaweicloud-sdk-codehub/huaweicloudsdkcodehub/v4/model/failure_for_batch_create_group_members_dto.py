@@ -27,7 +27,7 @@ class FailureForBatchCreateGroupMembersDto:
     }
 
     def __init__(self, iam_id=None, message=None):
-        """FailureForBatchCreateGroupMembersDto
+        r"""FailureForBatchCreateGroupMembersDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FailureForBatchCreateGroupMembersDto:
 
     @property
     def iam_id(self):
-        """Gets the iam_id of this FailureForBatchCreateGroupMembersDto.
+        r"""Gets the iam_id of this FailureForBatchCreateGroupMembersDto.
 
         iam_id
 
@@ -61,7 +61,7 @@ class FailureForBatchCreateGroupMembersDto:
 
     @iam_id.setter
     def iam_id(self, iam_id):
-        """Sets the iam_id of this FailureForBatchCreateGroupMembersDto.
+        r"""Sets the iam_id of this FailureForBatchCreateGroupMembersDto.
 
         iam_id
 
@@ -72,7 +72,7 @@ class FailureForBatchCreateGroupMembersDto:
 
     @property
     def message(self):
-        """Gets the message of this FailureForBatchCreateGroupMembersDto.
+        r"""Gets the message of this FailureForBatchCreateGroupMembersDto.
 
         失败原因
 
@@ -83,7 +83,7 @@ class FailureForBatchCreateGroupMembersDto:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this FailureForBatchCreateGroupMembersDto.
+        r"""Sets the message of this FailureForBatchCreateGroupMembersDto.
 
         失败原因
 

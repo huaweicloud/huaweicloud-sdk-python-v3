@@ -28,7 +28,7 @@ class ShowLineageBulkResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ShowLineageBulkResponse
+        r"""ShowLineageBulkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowLineageBulkResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowLineageBulkResponse.
+        r"""Gets the total of this ShowLineageBulkResponse.
 
         作业算子个数，批量查询根据作业算子获取血缘
 
@@ -62,7 +62,7 @@ class ShowLineageBulkResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowLineageBulkResponse.
+        r"""Sets the total of this ShowLineageBulkResponse.
 
         作业算子个数，批量查询根据作业算子获取血缘
 
@@ -73,7 +73,7 @@ class ShowLineageBulkResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowLineageBulkResponse.
+        r"""Gets the data of this ShowLineageBulkResponse.
 
         当前页作业算子包含的表血缘列表
 
@@ -84,7 +84,7 @@ class ShowLineageBulkResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowLineageBulkResponse.
+        r"""Sets the data of this ShowLineageBulkResponse.
 
         当前页作业算子包含的表血缘列表
 

@@ -20,6 +20,7 @@ class ListPortStatisticsRequest:
         'port': 'int',
         'port_string': 'str',
         'type': 'str',
+        'status': 'str',
         'enterprise_project_id': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
@@ -32,6 +33,7 @@ class ListPortStatisticsRequest:
         'port': 'port',
         'port_string': 'port_string',
         'type': 'type',
+        'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
@@ -40,8 +42,8 @@ class ListPortStatisticsRequest:
         'category': 'category'
     }
 
-    def __init__(self, port=None, port_string=None, type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, category=None):
-        """ListPortStatisticsRequest
+    def __init__(self, port=None, port_string=None, type=None, status=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, category=None):
+        r"""ListPortStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +53,9 @@ class ListPortStatisticsRequest:
         :type port_string: str
         :param type: 端口类型
         :type type: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param status: 端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+        :type status: str
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param sort_key: 排序的key值，目前支持按照端口号port排序
         :type sort_key: str
@@ -70,6 +74,7 @@ class ListPortStatisticsRequest:
         self._port = None
         self._port_string = None
         self._type = None
+        self._status = None
         self._enterprise_project_id = None
         self._sort_key = None
         self._sort_dir = None
@@ -84,6 +89,8 @@ class ListPortStatisticsRequest:
             self.port_string = port_string
         if type is not None:
             self.type = type
+        if status is not None:
+            self.status = status
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if sort_key is not None:
@@ -99,7 +106,7 @@ class ListPortStatisticsRequest:
 
     @property
     def port(self):
-        """Gets the port of this ListPortStatisticsRequest.
+        r"""Gets the port of this ListPortStatisticsRequest.
 
         端口号，精确匹配
 
@@ -110,7 +117,7 @@ class ListPortStatisticsRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListPortStatisticsRequest.
+        r"""Sets the port of this ListPortStatisticsRequest.
 
         端口号，精确匹配
 
@@ -121,7 +128,7 @@ class ListPortStatisticsRequest:
 
     @property
     def port_string(self):
-        """Gets the port_string of this ListPortStatisticsRequest.
+        r"""Gets the port_string of this ListPortStatisticsRequest.
 
         端口字符串，用来进行模糊匹配
 
@@ -132,7 +139,7 @@ class ListPortStatisticsRequest:
 
     @port_string.setter
     def port_string(self, port_string):
-        """Sets the port_string of this ListPortStatisticsRequest.
+        r"""Sets the port_string of this ListPortStatisticsRequest.
 
         端口字符串，用来进行模糊匹配
 
@@ -143,7 +150,7 @@ class ListPortStatisticsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPortStatisticsRequest.
+        r"""Gets the type of this ListPortStatisticsRequest.
 
         端口类型
 
@@ -154,7 +161,7 @@ class ListPortStatisticsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPortStatisticsRequest.
+        r"""Sets the type of this ListPortStatisticsRequest.
 
         端口类型
 
@@ -164,10 +171,32 @@ class ListPortStatisticsRequest:
         self._type = type
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPortStatisticsRequest.
+    def status(self):
+        r"""Gets the status of this ListPortStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+
+        :return: The status of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListPortStatisticsRequest.
+
+        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+
+        :param status: The status of this ListPortStatisticsRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListPortStatisticsRequest.
+
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListPortStatisticsRequest.
         :rtype: str
@@ -176,9 +205,9 @@ class ListPortStatisticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPortStatisticsRequest.
+        r"""Sets the enterprise_project_id of this ListPortStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortStatisticsRequest.
         :type enterprise_project_id: str
@@ -187,7 +216,7 @@ class ListPortStatisticsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPortStatisticsRequest.
+        r"""Gets the sort_key of this ListPortStatisticsRequest.
 
         排序的key值，目前支持按照端口号port排序
 
@@ -198,7 +227,7 @@ class ListPortStatisticsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPortStatisticsRequest.
+        r"""Sets the sort_key of this ListPortStatisticsRequest.
 
         排序的key值，目前支持按照端口号port排序
 
@@ -209,7 +238,7 @@ class ListPortStatisticsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPortStatisticsRequest.
+        r"""Gets the sort_dir of this ListPortStatisticsRequest.
 
         升序还是降序，默认升序，asc
 
@@ -220,7 +249,7 @@ class ListPortStatisticsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPortStatisticsRequest.
+        r"""Sets the sort_dir of this ListPortStatisticsRequest.
 
         升序还是降序，默认升序，asc
 
@@ -231,7 +260,7 @@ class ListPortStatisticsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortStatisticsRequest.
+        r"""Gets the limit of this ListPortStatisticsRequest.
 
         每页显示数量
 
@@ -242,7 +271,7 @@ class ListPortStatisticsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortStatisticsRequest.
+        r"""Sets the limit of this ListPortStatisticsRequest.
 
         每页显示数量
 
@@ -253,7 +282,7 @@ class ListPortStatisticsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortStatisticsRequest.
+        r"""Gets the offset of this ListPortStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -264,7 +293,7 @@ class ListPortStatisticsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortStatisticsRequest.
+        r"""Sets the offset of this ListPortStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -275,7 +304,7 @@ class ListPortStatisticsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListPortStatisticsRequest.
+        r"""Gets the category of this ListPortStatisticsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -286,7 +315,7 @@ class ListPortStatisticsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListPortStatisticsRequest.
+        r"""Sets the category of this ListPortStatisticsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 

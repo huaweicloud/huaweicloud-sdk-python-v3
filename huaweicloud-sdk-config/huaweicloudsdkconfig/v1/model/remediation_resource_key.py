@@ -29,7 +29,7 @@ class RemediationResourceKey:
     }
 
     def __init__(self, resource_id=None, resource_provider=None, resource_type=None):
-        """RemediationResourceKey
+        r"""RemediationResourceKey
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RemediationResourceKey:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RemediationResourceKey.
+        r"""Gets the resource_id of this RemediationResourceKey.
 
         资源ID。
 
@@ -65,7 +65,7 @@ class RemediationResourceKey:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RemediationResourceKey.
+        r"""Sets the resource_id of this RemediationResourceKey.
 
         资源ID。
 
@@ -76,7 +76,7 @@ class RemediationResourceKey:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this RemediationResourceKey.
+        r"""Gets the resource_provider of this RemediationResourceKey.
 
         云服务名称，为兼容部分合规结果中云服务名称为空的场景，可为空字符串。
 
@@ -87,7 +87,7 @@ class RemediationResourceKey:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this RemediationResourceKey.
+        r"""Sets the resource_provider of this RemediationResourceKey.
 
         云服务名称，为兼容部分合规结果中云服务名称为空的场景，可为空字符串。
 
@@ -98,7 +98,7 @@ class RemediationResourceKey:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this RemediationResourceKey.
+        r"""Gets the resource_type of this RemediationResourceKey.
 
         资源类型，为兼容部分合规结果中资源类型为空的场景，可为空字符串。
 
@@ -109,7 +109,7 @@ class RemediationResourceKey:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this RemediationResourceKey.
+        r"""Sets the resource_type of this RemediationResourceKey.
 
         资源类型，为兼容部分合规结果中资源类型为空的场景，可为空字符串。
 

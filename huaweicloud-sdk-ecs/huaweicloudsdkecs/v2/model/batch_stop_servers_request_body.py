@@ -25,7 +25,7 @@ class BatchStopServersRequestBody:
     }
 
     def __init__(self, os_stop=None):
-        """BatchStopServersRequestBody
+        r"""BatchStopServersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchStopServersRequestBody:
 
     @property
     def os_stop(self):
-        """Gets the os_stop of this BatchStopServersRequestBody.
+        r"""Gets the os_stop of this BatchStopServersRequestBody.
 
         :return: The os_stop of this BatchStopServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStopServersOption`
@@ -51,7 +51,7 @@ class BatchStopServersRequestBody:
 
     @os_stop.setter
     def os_stop(self, os_stop):
-        """Sets the os_stop of this BatchStopServersRequestBody.
+        r"""Sets the os_stop of this BatchStopServersRequestBody.
 
         :param os_stop: The os_stop of this BatchStopServersRequestBody.
         :type os_stop: :class:`huaweicloudsdkecs.v2.BatchStopServersOption`

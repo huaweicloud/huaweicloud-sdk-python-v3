@@ -27,7 +27,7 @@ class RunActionsOnWorkspaceJobRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """RunActionsOnWorkspaceJobRequest
+        r"""RunActionsOnWorkspaceJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunActionsOnWorkspaceJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunActionsOnWorkspaceJobRequest.
+        r"""Gets the job_id of this RunActionsOnWorkspaceJobRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class RunActionsOnWorkspaceJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunActionsOnWorkspaceJobRequest.
+        r"""Sets the job_id of this RunActionsOnWorkspaceJobRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class RunActionsOnWorkspaceJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunActionsOnWorkspaceJobRequest.
+        r"""Gets the body of this RunActionsOnWorkspaceJobRequest.
 
         :return: The body of this RunActionsOnWorkspaceJobRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.JobActionsReq`
@@ -80,7 +80,7 @@ class RunActionsOnWorkspaceJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunActionsOnWorkspaceJobRequest.
+        r"""Sets the body of this RunActionsOnWorkspaceJobRequest.
 
         :param body: The body of this RunActionsOnWorkspaceJobRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.JobActionsReq`

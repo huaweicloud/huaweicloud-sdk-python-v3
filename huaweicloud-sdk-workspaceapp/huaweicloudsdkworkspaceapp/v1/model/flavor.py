@@ -27,7 +27,7 @@ class Flavor:
     }
 
     def __init__(self, id=None, links=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Flavor:
 
     @property
     def id(self):
-        """Gets the id of this Flavor.
+        r"""Gets the id of this Flavor.
 
         服务器对应的规格ID。
 
@@ -61,7 +61,7 @@ class Flavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Flavor.
+        r"""Sets the id of this Flavor.
 
         服务器对应的规格ID。
 
@@ -72,7 +72,7 @@ class Flavor:
 
     @property
     def links(self):
-        """Gets the links of this Flavor.
+        r"""Gets the links of this Flavor.
 
         服务器对应规格的相关标记快捷链接信息。
 
@@ -83,7 +83,7 @@ class Flavor:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Flavor.
+        r"""Sets the links of this Flavor.
 
         服务器对应规格的相关标记快捷链接信息。
 

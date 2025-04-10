@@ -29,7 +29,7 @@ class UpdateGroupScheduledTaskRequest:
     }
 
     def __init__(self, scaling_group_id=None, scheduled_task_id=None, body=None):
-        """UpdateGroupScheduledTaskRequest
+        r"""UpdateGroupScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateGroupScheduledTaskRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this UpdateGroupScheduledTaskRequest.
+        r"""Gets the scaling_group_id of this UpdateGroupScheduledTaskRequest.
 
         伸缩组ID
 
@@ -66,7 +66,7 @@ class UpdateGroupScheduledTaskRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this UpdateGroupScheduledTaskRequest.
+        r"""Sets the scaling_group_id of this UpdateGroupScheduledTaskRequest.
 
         伸缩组ID
 
@@ -77,7 +77,7 @@ class UpdateGroupScheduledTaskRequest:
 
     @property
     def scheduled_task_id(self):
-        """Gets the scheduled_task_id of this UpdateGroupScheduledTaskRequest.
+        r"""Gets the scheduled_task_id of this UpdateGroupScheduledTaskRequest.
 
         计划任务ID
 
@@ -88,7 +88,7 @@ class UpdateGroupScheduledTaskRequest:
 
     @scheduled_task_id.setter
     def scheduled_task_id(self, scheduled_task_id):
-        """Sets the scheduled_task_id of this UpdateGroupScheduledTaskRequest.
+        r"""Sets the scheduled_task_id of this UpdateGroupScheduledTaskRequest.
 
         计划任务ID
 
@@ -99,7 +99,7 @@ class UpdateGroupScheduledTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGroupScheduledTaskRequest.
+        r"""Gets the body of this UpdateGroupScheduledTaskRequest.
 
         :return: The body of this UpdateGroupScheduledTaskRequest.
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScheduledTaskOption`
@@ -108,7 +108,7 @@ class UpdateGroupScheduledTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGroupScheduledTaskRequest.
+        r"""Sets the body of this UpdateGroupScheduledTaskRequest.
 
         :param body: The body of this UpdateGroupScheduledTaskRequest.
         :type body: :class:`huaweicloudsdkas.v1.UpdateScheduledTaskOption`

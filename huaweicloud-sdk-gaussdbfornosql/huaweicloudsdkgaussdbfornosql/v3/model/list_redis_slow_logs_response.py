@@ -26,7 +26,7 @@ class ListRedisSlowLogsResponse(SdkResponse):
     }
 
     def __init__(self, slow_logs=None):
-        """ListRedisSlowLogsResponse
+        r"""ListRedisSlowLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRedisSlowLogsResponse(SdkResponse):
 
     @property
     def slow_logs(self):
-        """Gets the slow_logs of this ListRedisSlowLogsResponse.
+        r"""Gets the slow_logs of this ListRedisSlowLogsResponse.
 
         慢日志具体信息。
 
@@ -55,7 +55,7 @@ class ListRedisSlowLogsResponse(SdkResponse):
 
     @slow_logs.setter
     def slow_logs(self, slow_logs):
-        """Sets the slow_logs of this ListRedisSlowLogsResponse.
+        r"""Sets the slow_logs of this ListRedisSlowLogsResponse.
 
         慢日志具体信息。
 

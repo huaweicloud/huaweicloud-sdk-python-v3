@@ -27,7 +27,7 @@ class PolicyComplianceSummaryUnit:
     }
 
     def __init__(self, compliant_count=None, non_compliant_count=None):
-        """PolicyComplianceSummaryUnit
+        r"""PolicyComplianceSummaryUnit
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyComplianceSummaryUnit:
 
     @property
     def compliant_count(self):
-        """Gets the compliant_count of this PolicyComplianceSummaryUnit.
+        r"""Gets the compliant_count of this PolicyComplianceSummaryUnit.
 
         合规数量
 
@@ -61,7 +61,7 @@ class PolicyComplianceSummaryUnit:
 
     @compliant_count.setter
     def compliant_count(self, compliant_count):
-        """Sets the compliant_count of this PolicyComplianceSummaryUnit.
+        r"""Sets the compliant_count of this PolicyComplianceSummaryUnit.
 
         合规数量
 
@@ -72,7 +72,7 @@ class PolicyComplianceSummaryUnit:
 
     @property
     def non_compliant_count(self):
-        """Gets the non_compliant_count of this PolicyComplianceSummaryUnit.
+        r"""Gets the non_compliant_count of this PolicyComplianceSummaryUnit.
 
         不合规数量
 
@@ -83,7 +83,7 @@ class PolicyComplianceSummaryUnit:
 
     @non_compliant_count.setter
     def non_compliant_count(self, non_compliant_count):
-        """Sets the non_compliant_count of this PolicyComplianceSummaryUnit.
+        r"""Sets the non_compliant_count of this PolicyComplianceSummaryUnit.
 
         不合规数量
 

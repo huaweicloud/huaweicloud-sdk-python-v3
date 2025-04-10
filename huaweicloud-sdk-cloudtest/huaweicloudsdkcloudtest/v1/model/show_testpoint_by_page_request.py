@@ -27,7 +27,7 @@ class ShowTestpointByPageRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowTestpointByPageRequest
+        r"""ShowTestpointByPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTestpointByPageRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTestpointByPageRequest.
+        r"""Gets the project_id of this ShowTestpointByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowTestpointByPageRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTestpointByPageRequest.
+        r"""Sets the project_id of this ShowTestpointByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowTestpointByPageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowTestpointByPageRequest.
+        r"""Gets the body of this ShowTestpointByPageRequest.
 
         :return: The body of this ShowTestpointByPageRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestTestPointPageParam`
@@ -80,7 +80,7 @@ class ShowTestpointByPageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTestpointByPageRequest.
+        r"""Sets the body of this ShowTestpointByPageRequest.
 
         :param body: The body of this ShowTestpointByPageRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestTestPointPageParam`

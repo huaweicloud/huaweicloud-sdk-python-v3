@@ -39,7 +39,7 @@ class TrafficMirrorFilter:
     }
 
     def __init__(self, id=None, project_id=None, description=None, name=None, ingress_rules=None, egress_rules=None, created_at=None, updated_at=None):
-        """TrafficMirrorFilter
+        r"""TrafficMirrorFilter
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class TrafficMirrorFilter:
 
     @property
     def id(self):
-        """Gets the id of this TrafficMirrorFilter.
+        r"""Gets the id of this TrafficMirrorFilter.
 
         功能说明：流量镜像筛选条件ID
 
@@ -95,7 +95,7 @@ class TrafficMirrorFilter:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TrafficMirrorFilter.
+        r"""Sets the id of this TrafficMirrorFilter.
 
         功能说明：流量镜像筛选条件ID
 
@@ -106,7 +106,7 @@ class TrafficMirrorFilter:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TrafficMirrorFilter.
+        r"""Gets the project_id of this TrafficMirrorFilter.
 
         功能说明：项目ID
 
@@ -117,7 +117,7 @@ class TrafficMirrorFilter:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TrafficMirrorFilter.
+        r"""Sets the project_id of this TrafficMirrorFilter.
 
         功能说明：项目ID
 
@@ -128,7 +128,7 @@ class TrafficMirrorFilter:
 
     @property
     def description(self):
-        """Gets the description of this TrafficMirrorFilter.
+        r"""Gets the description of this TrafficMirrorFilter.
 
         功能说明：流量镜像筛选条件的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -139,7 +139,7 @@ class TrafficMirrorFilter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TrafficMirrorFilter.
+        r"""Sets the description of this TrafficMirrorFilter.
 
         功能说明：流量镜像筛选条件的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -150,7 +150,7 @@ class TrafficMirrorFilter:
 
     @property
     def name(self):
-        """Gets the name of this TrafficMirrorFilter.
+        r"""Gets the name of this TrafficMirrorFilter.
 
         功能说明：流量镜像筛选条件的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -161,7 +161,7 @@ class TrafficMirrorFilter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TrafficMirrorFilter.
+        r"""Sets the name of this TrafficMirrorFilter.
 
         功能说明：流量镜像筛选条件的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -172,7 +172,7 @@ class TrafficMirrorFilter:
 
     @property
     def ingress_rules(self):
-        """Gets the ingress_rules of this TrafficMirrorFilter.
+        r"""Gets the ingress_rules of this TrafficMirrorFilter.
 
         功能说明：入方向筛选规则列表
 
@@ -183,7 +183,7 @@ class TrafficMirrorFilter:
 
     @ingress_rules.setter
     def ingress_rules(self, ingress_rules):
-        """Sets the ingress_rules of this TrafficMirrorFilter.
+        r"""Sets the ingress_rules of this TrafficMirrorFilter.
 
         功能说明：入方向筛选规则列表
 
@@ -194,7 +194,7 @@ class TrafficMirrorFilter:
 
     @property
     def egress_rules(self):
-        """Gets the egress_rules of this TrafficMirrorFilter.
+        r"""Gets the egress_rules of this TrafficMirrorFilter.
 
         功能说明：出方向筛选规则列表
 
@@ -205,7 +205,7 @@ class TrafficMirrorFilter:
 
     @egress_rules.setter
     def egress_rules(self, egress_rules):
-        """Sets the egress_rules of this TrafficMirrorFilter.
+        r"""Sets the egress_rules of this TrafficMirrorFilter.
 
         功能说明：出方向筛选规则列表
 
@@ -216,7 +216,7 @@ class TrafficMirrorFilter:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TrafficMirrorFilter.
+        r"""Gets the created_at of this TrafficMirrorFilter.
 
         创建时间戳
 
@@ -227,7 +227,7 @@ class TrafficMirrorFilter:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TrafficMirrorFilter.
+        r"""Sets the created_at of this TrafficMirrorFilter.
 
         创建时间戳
 
@@ -238,7 +238,7 @@ class TrafficMirrorFilter:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TrafficMirrorFilter.
+        r"""Gets the updated_at of this TrafficMirrorFilter.
 
         更新时间戳
 
@@ -249,7 +249,7 @@ class TrafficMirrorFilter:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TrafficMirrorFilter.
+        r"""Sets the updated_at of this TrafficMirrorFilter.
 
         更新时间戳
 

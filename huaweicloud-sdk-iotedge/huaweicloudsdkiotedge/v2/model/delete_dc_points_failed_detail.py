@@ -29,7 +29,7 @@ class DeleteDcPointsFailedDetail:
     }
 
     def __init__(self, error_code=None, error_msg=None, point_id=None):
-        """DeleteDcPointsFailedDetail
+        r"""DeleteDcPointsFailedDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteDcPointsFailedDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteDcPointsFailedDetail.
+        r"""Gets the error_code of this DeleteDcPointsFailedDetail.
 
         点位删除失败错误码
 
@@ -65,7 +65,7 @@ class DeleteDcPointsFailedDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteDcPointsFailedDetail.
+        r"""Sets the error_code of this DeleteDcPointsFailedDetail.
 
         点位删除失败错误码
 
@@ -76,7 +76,7 @@ class DeleteDcPointsFailedDetail:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteDcPointsFailedDetail.
+        r"""Gets the error_msg of this DeleteDcPointsFailedDetail.
 
         点位删除失败错误详情
 
@@ -87,7 +87,7 @@ class DeleteDcPointsFailedDetail:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteDcPointsFailedDetail.
+        r"""Sets the error_msg of this DeleteDcPointsFailedDetail.
 
         点位删除失败错误详情
 
@@ -98,7 +98,7 @@ class DeleteDcPointsFailedDetail:
 
     @property
     def point_id(self):
-        """Gets the point_id of this DeleteDcPointsFailedDetail.
+        r"""Gets the point_id of this DeleteDcPointsFailedDetail.
 
         点位id
 
@@ -109,7 +109,7 @@ class DeleteDcPointsFailedDetail:
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this DeleteDcPointsFailedDetail.
+        r"""Sets the point_id of this DeleteDcPointsFailedDetail.
 
         点位id
 

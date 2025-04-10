@@ -28,7 +28,7 @@ class CreateAuthorisationResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, authorisation=None):
-        """CreateAuthorisationResponse
+        r"""CreateAuthorisationResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAuthorisationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateAuthorisationResponse.
+        r"""Gets the request_id of this CreateAuthorisationResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class CreateAuthorisationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateAuthorisationResponse.
+        r"""Sets the request_id of this CreateAuthorisationResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class CreateAuthorisationResponse(SdkResponse):
 
     @property
     def authorisation(self):
-        """Gets the authorisation of this CreateAuthorisationResponse.
+        r"""Gets the authorisation of this CreateAuthorisationResponse.
 
         :return: The authorisation of this CreateAuthorisationResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.Authorisation`
@@ -80,7 +80,7 @@ class CreateAuthorisationResponse(SdkResponse):
 
     @authorisation.setter
     def authorisation(self, authorisation):
-        """Sets the authorisation of this CreateAuthorisationResponse.
+        r"""Sets the authorisation of this CreateAuthorisationResponse.
 
         :param authorisation: The authorisation of this CreateAuthorisationResponse.
         :type authorisation: :class:`huaweicloudsdkcc.v3.Authorisation`

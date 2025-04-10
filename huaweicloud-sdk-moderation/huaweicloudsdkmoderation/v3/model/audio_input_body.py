@@ -27,7 +27,7 @@ class AudioInputBody:
     }
 
     def __init__(self, url=None, language=None):
-        """AudioInputBody
+        r"""AudioInputBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AudioInputBody:
 
     @property
     def url(self):
-        """Gets the url of this AudioInputBody.
+        r"""Gets the url of this AudioInputBody.
 
         音频url地址。
 
@@ -60,7 +60,7 @@ class AudioInputBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AudioInputBody.
+        r"""Sets the url of this AudioInputBody.
 
         音频url地址。
 
@@ -71,7 +71,7 @@ class AudioInputBody:
 
     @property
     def language(self):
-        """Gets the language of this AudioInputBody.
+        r"""Gets the language of this AudioInputBody.
 
         支持的语言，默认为zh，zh：中文
 
@@ -82,7 +82,7 @@ class AudioInputBody:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this AudioInputBody.
+        r"""Sets the language of this AudioInputBody.
 
         支持的语言，默认为zh，zh：中文
 

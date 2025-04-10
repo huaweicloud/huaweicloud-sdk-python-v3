@@ -67,7 +67,7 @@ class VulInfo:
     }
 
     def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None, cve_list=None, patch_url=None, repair_priority=None, hosts_num=None, repair_success_num=None, fixed_num=None, ignored_num=None, verify_num=None, repair_priority_list=None):
-        """VulInfo
+        r"""VulInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class VulInfo:
 
     @property
     def vul_name(self):
-        """Gets the vul_name of this VulInfo.
+        r"""Gets the vul_name of this VulInfo.
 
         漏洞名称
 
@@ -201,7 +201,7 @@ class VulInfo:
 
     @vul_name.setter
     def vul_name(self, vul_name):
-        """Sets the vul_name of this VulInfo.
+        r"""Sets the vul_name of this VulInfo.
 
         漏洞名称
 
@@ -212,7 +212,7 @@ class VulInfo:
 
     @property
     def vul_id(self):
-        """Gets the vul_id of this VulInfo.
+        r"""Gets the vul_id of this VulInfo.
 
         漏洞ID
 
@@ -223,7 +223,7 @@ class VulInfo:
 
     @vul_id.setter
     def vul_id(self, vul_id):
-        """Sets the vul_id of this VulInfo.
+        r"""Sets the vul_id of this VulInfo.
 
         漏洞ID
 
@@ -234,7 +234,7 @@ class VulInfo:
 
     @property
     def label_list(self):
-        """Gets the label_list of this VulInfo.
+        r"""Gets the label_list of this VulInfo.
 
         漏洞标签
 
@@ -245,7 +245,7 @@ class VulInfo:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this VulInfo.
+        r"""Sets the label_list of this VulInfo.
 
         漏洞标签
 
@@ -256,7 +256,7 @@ class VulInfo:
 
     @property
     def repair_necessity(self):
-        """Gets the repair_necessity of this VulInfo.
+        r"""Gets the repair_necessity of this VulInfo.
 
         修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
@@ -267,7 +267,7 @@ class VulInfo:
 
     @repair_necessity.setter
     def repair_necessity(self, repair_necessity):
-        """Sets the repair_necessity of this VulInfo.
+        r"""Sets the repair_necessity of this VulInfo.
 
         修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
@@ -278,7 +278,7 @@ class VulInfo:
 
     @property
     def severity_level(self):
-        """Gets the severity_level of this VulInfo.
+        r"""Gets the severity_level of this VulInfo.
 
         漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
@@ -289,7 +289,7 @@ class VulInfo:
 
     @severity_level.setter
     def severity_level(self, severity_level):
-        """Sets the severity_level of this VulInfo.
+        r"""Sets the severity_level of this VulInfo.
 
         漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
@@ -300,7 +300,7 @@ class VulInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this VulInfo.
+        r"""Gets the host_num of this VulInfo.
 
         受影响服务器台数
 
@@ -311,7 +311,7 @@ class VulInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this VulInfo.
+        r"""Sets the host_num of this VulInfo.
 
         受影响服务器台数
 
@@ -322,7 +322,7 @@ class VulInfo:
 
     @property
     def unhandle_host_num(self):
-        """Gets the unhandle_host_num of this VulInfo.
+        r"""Gets the unhandle_host_num of this VulInfo.
 
         未处理主机台数，除已忽略和已修复的主机数量
 
@@ -333,7 +333,7 @@ class VulInfo:
 
     @unhandle_host_num.setter
     def unhandle_host_num(self, unhandle_host_num):
-        """Sets the unhandle_host_num of this VulInfo.
+        r"""Sets the unhandle_host_num of this VulInfo.
 
         未处理主机台数，除已忽略和已修复的主机数量
 
@@ -344,7 +344,7 @@ class VulInfo:
 
     @property
     def scan_time(self):
-        """Gets the scan_time of this VulInfo.
+        r"""Gets the scan_time of this VulInfo.
 
         最近扫描时间，时间戳单位：毫秒
 
@@ -355,7 +355,7 @@ class VulInfo:
 
     @scan_time.setter
     def scan_time(self, scan_time):
-        """Sets the scan_time of this VulInfo.
+        r"""Sets the scan_time of this VulInfo.
 
         最近扫描时间，时间戳单位：毫秒
 
@@ -366,7 +366,7 @@ class VulInfo:
 
     @property
     def solution_detail(self):
-        """Gets the solution_detail of this VulInfo.
+        r"""Gets the solution_detail of this VulInfo.
 
         修复漏洞的指导意见
 
@@ -377,7 +377,7 @@ class VulInfo:
 
     @solution_detail.setter
     def solution_detail(self, solution_detail):
-        """Sets the solution_detail of this VulInfo.
+        r"""Sets the solution_detail of this VulInfo.
 
         修复漏洞的指导意见
 
@@ -388,7 +388,7 @@ class VulInfo:
 
     @property
     def url(self):
-        """Gets the url of this VulInfo.
+        r"""Gets the url of this VulInfo.
 
         URL链接
 
@@ -399,7 +399,7 @@ class VulInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this VulInfo.
+        r"""Sets the url of this VulInfo.
 
         URL链接
 
@@ -410,7 +410,7 @@ class VulInfo:
 
     @property
     def description(self):
-        """Gets the description of this VulInfo.
+        r"""Gets the description of this VulInfo.
 
         漏洞描述
 
@@ -421,7 +421,7 @@ class VulInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VulInfo.
+        r"""Sets the description of this VulInfo.
 
         漏洞描述
 
@@ -432,7 +432,7 @@ class VulInfo:
 
     @property
     def type(self):
-        """Gets the type of this VulInfo.
+        r"""Gets the type of this VulInfo.
 
         漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
 
@@ -443,7 +443,7 @@ class VulInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VulInfo.
+        r"""Sets the type of this VulInfo.
 
         漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
 
@@ -454,7 +454,7 @@ class VulInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this VulInfo.
+        r"""Gets the host_id_list of this VulInfo.
 
         可处置该漏洞的主机列表
 
@@ -465,7 +465,7 @@ class VulInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this VulInfo.
+        r"""Sets the host_id_list of this VulInfo.
 
         可处置该漏洞的主机列表
 
@@ -476,7 +476,7 @@ class VulInfo:
 
     @property
     def cve_list(self):
-        """Gets the cve_list of this VulInfo.
+        r"""Gets the cve_list of this VulInfo.
 
         CVE列表
 
@@ -487,7 +487,7 @@ class VulInfo:
 
     @cve_list.setter
     def cve_list(self, cve_list):
-        """Sets the cve_list of this VulInfo.
+        r"""Sets the cve_list of this VulInfo.
 
         CVE列表
 
@@ -498,7 +498,7 @@ class VulInfo:
 
     @property
     def patch_url(self):
-        """Gets the patch_url of this VulInfo.
+        r"""Gets the patch_url of this VulInfo.
 
         补丁地址
 
@@ -509,7 +509,7 @@ class VulInfo:
 
     @patch_url.setter
     def patch_url(self, patch_url):
-        """Sets the patch_url of this VulInfo.
+        r"""Sets the patch_url of this VulInfo.
 
         补丁地址
 
@@ -520,7 +520,7 @@ class VulInfo:
 
     @property
     def repair_priority(self):
-        """Gets the repair_priority of this VulInfo.
+        r"""Gets the repair_priority of this VulInfo.
 
         修复优先级 Critical 紧急 High 高 Medium 中 Low 低
 
@@ -531,7 +531,7 @@ class VulInfo:
 
     @repair_priority.setter
     def repair_priority(self, repair_priority):
-        """Sets the repair_priority of this VulInfo.
+        r"""Sets the repair_priority of this VulInfo.
 
         修复优先级 Critical 紧急 High 高 Medium 中 Low 低
 
@@ -542,7 +542,7 @@ class VulInfo:
 
     @property
     def hosts_num(self):
-        """Gets the hosts_num of this VulInfo.
+        r"""Gets the hosts_num of this VulInfo.
 
         :return: The hosts_num of this VulInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.VulnerabilityHostNumberInfo`
@@ -551,7 +551,7 @@ class VulInfo:
 
     @hosts_num.setter
     def hosts_num(self, hosts_num):
-        """Sets the hosts_num of this VulInfo.
+        r"""Sets the hosts_num of this VulInfo.
 
         :param hosts_num: The hosts_num of this VulInfo.
         :type hosts_num: :class:`huaweicloudsdkhss.v5.VulnerabilityHostNumberInfo`
@@ -560,7 +560,7 @@ class VulInfo:
 
     @property
     def repair_success_num(self):
-        """Gets the repair_success_num of this VulInfo.
+        r"""Gets the repair_success_num of this VulInfo.
 
         修复成功次数
 
@@ -571,7 +571,7 @@ class VulInfo:
 
     @repair_success_num.setter
     def repair_success_num(self, repair_success_num):
-        """Sets the repair_success_num of this VulInfo.
+        r"""Sets the repair_success_num of this VulInfo.
 
         修复成功次数
 
@@ -582,7 +582,7 @@ class VulInfo:
 
     @property
     def fixed_num(self):
-        """Gets the fixed_num of this VulInfo.
+        r"""Gets the fixed_num of this VulInfo.
 
         修复数量
 
@@ -593,7 +593,7 @@ class VulInfo:
 
     @fixed_num.setter
     def fixed_num(self, fixed_num):
-        """Sets the fixed_num of this VulInfo.
+        r"""Sets the fixed_num of this VulInfo.
 
         修复数量
 
@@ -604,7 +604,7 @@ class VulInfo:
 
     @property
     def ignored_num(self):
-        """Gets the ignored_num of this VulInfo.
+        r"""Gets the ignored_num of this VulInfo.
 
         忽略数量
 
@@ -615,7 +615,7 @@ class VulInfo:
 
     @ignored_num.setter
     def ignored_num(self, ignored_num):
-        """Sets the ignored_num of this VulInfo.
+        r"""Sets the ignored_num of this VulInfo.
 
         忽略数量
 
@@ -626,7 +626,7 @@ class VulInfo:
 
     @property
     def verify_num(self):
-        """Gets the verify_num of this VulInfo.
+        r"""Gets the verify_num of this VulInfo.
 
         验证数量
 
@@ -637,7 +637,7 @@ class VulInfo:
 
     @verify_num.setter
     def verify_num(self, verify_num):
-        """Sets the verify_num of this VulInfo.
+        r"""Sets the verify_num of this VulInfo.
 
         验证数量
 
@@ -648,7 +648,7 @@ class VulInfo:
 
     @property
     def repair_priority_list(self):
-        """Gets the repair_priority_list of this VulInfo.
+        r"""Gets the repair_priority_list of this VulInfo.
 
         修复优先级，每个修复优先级对应的主机数量
 
@@ -659,7 +659,7 @@ class VulInfo:
 
     @repair_priority_list.setter
     def repair_priority_list(self, repair_priority_list):
-        """Sets the repair_priority_list of this VulInfo.
+        r"""Sets the repair_priority_list of this VulInfo.
 
         修复优先级，每个修复优先级对应的主机数量
 

@@ -29,7 +29,7 @@ class AddOuNameInfoV2Req:
     }
 
     def __init__(self, domain=None, ou_name=None, description=None):
-        """AddOuNameInfoV2Req
+        r"""AddOuNameInfoV2Req
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddOuNameInfoV2Req:
 
     @property
     def domain(self):
-        """Gets the domain of this AddOuNameInfoV2Req.
+        r"""Gets the domain of this AddOuNameInfoV2Req.
 
         域名称
 
@@ -66,7 +66,7 @@ class AddOuNameInfoV2Req:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AddOuNameInfoV2Req.
+        r"""Sets the domain of this AddOuNameInfoV2Req.
 
         域名称
 
@@ -77,7 +77,7 @@ class AddOuNameInfoV2Req:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this AddOuNameInfoV2Req.
+        r"""Gets the ou_name of this AddOuNameInfoV2Req.
 
         OU名称
 
@@ -88,7 +88,7 @@ class AddOuNameInfoV2Req:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this AddOuNameInfoV2Req.
+        r"""Sets the ou_name of this AddOuNameInfoV2Req.
 
         OU名称
 
@@ -99,7 +99,7 @@ class AddOuNameInfoV2Req:
 
     @property
     def description(self):
-        """Gets the description of this AddOuNameInfoV2Req.
+        r"""Gets the description of this AddOuNameInfoV2Req.
 
         描述
 
@@ -110,7 +110,7 @@ class AddOuNameInfoV2Req:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddOuNameInfoV2Req.
+        r"""Sets the description of this AddOuNameInfoV2Req.
 
         描述
 

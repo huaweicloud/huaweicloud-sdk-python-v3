@@ -25,7 +25,7 @@ class DeleteScriptRequest:
     }
 
     def __init__(self, script_id=None):
-        """DeleteScriptRequest
+        r"""DeleteScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteScriptRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this DeleteScriptRequest.
+        r"""Gets the script_id of this DeleteScriptRequest.
 
         脚本ID。
 
@@ -53,7 +53,7 @@ class DeleteScriptRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this DeleteScriptRequest.
+        r"""Sets the script_id of this DeleteScriptRequest.
 
         脚本ID。
 

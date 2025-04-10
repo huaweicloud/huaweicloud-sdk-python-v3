@@ -27,7 +27,7 @@ class ApprovalTypeEnum:
     }
 
     def __init__(self):
-        """ApprovalTypeEnum
+        r"""ApprovalTypeEnum
 
         The model defined in huaweicloud sdk
 

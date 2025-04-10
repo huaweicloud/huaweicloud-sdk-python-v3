@@ -25,7 +25,7 @@ class CreateLtsConfigs:
     }
 
     def __init__(self, log_configs=None):
-        """CreateLtsConfigs
+        r"""CreateLtsConfigs
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateLtsConfigs:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this CreateLtsConfigs.
+        r"""Gets the log_configs of this CreateLtsConfigs.
 
         日志配置列表
 
@@ -53,7 +53,7 @@ class CreateLtsConfigs:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this CreateLtsConfigs.
+        r"""Sets the log_configs of this CreateLtsConfigs.
 
         日志配置列表
 

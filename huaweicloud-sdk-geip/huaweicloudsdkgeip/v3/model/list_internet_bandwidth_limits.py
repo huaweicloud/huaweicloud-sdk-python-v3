@@ -35,7 +35,7 @@ class ListInternetBandwidthLimits:
     }
 
     def __init__(self, id=None, charge_mode=None, min_size=None, ext_limit=None, max_size=None, type=None):
-        """ListInternetBandwidthLimits
+        r"""ListInternetBandwidthLimits
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListInternetBandwidthLimits:
 
     @property
     def id(self):
-        """Gets the id of this ListInternetBandwidthLimits.
+        r"""Gets the id of this ListInternetBandwidthLimits.
 
         全域公网带宽限制的ID
 
@@ -89,7 +89,7 @@ class ListInternetBandwidthLimits:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInternetBandwidthLimits.
+        r"""Sets the id of this ListInternetBandwidthLimits.
 
         全域公网带宽限制的ID
 
@@ -100,7 +100,7 @@ class ListInternetBandwidthLimits:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListInternetBandwidthLimits.
+        r"""Gets the charge_mode of this ListInternetBandwidthLimits.
 
         全域公网带宽的计费模式
 
@@ -111,7 +111,7 @@ class ListInternetBandwidthLimits:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListInternetBandwidthLimits.
+        r"""Sets the charge_mode of this ListInternetBandwidthLimits.
 
         全域公网带宽的计费模式
 
@@ -122,7 +122,7 @@ class ListInternetBandwidthLimits:
 
     @property
     def min_size(self):
-        """Gets the min_size of this ListInternetBandwidthLimits.
+        r"""Gets the min_size of this ListInternetBandwidthLimits.
 
         该类型全域公网带宽可购买的最小size
 
@@ -133,7 +133,7 @@ class ListInternetBandwidthLimits:
 
     @min_size.setter
     def min_size(self, min_size):
-        """Sets the min_size of this ListInternetBandwidthLimits.
+        r"""Sets the min_size of this ListInternetBandwidthLimits.
 
         该类型全域公网带宽可购买的最小size
 
@@ -144,7 +144,7 @@ class ListInternetBandwidthLimits:
 
     @property
     def ext_limit(self):
-        """Gets the ext_limit of this ListInternetBandwidthLimits.
+        r"""Gets the ext_limit of this ListInternetBandwidthLimits.
 
         :return: The ext_limit of this ListInternetBandwidthLimits.
         :rtype: :class:`huaweicloudsdkgeip.v3.ExtLimitPojo`
@@ -153,7 +153,7 @@ class ListInternetBandwidthLimits:
 
     @ext_limit.setter
     def ext_limit(self, ext_limit):
-        """Sets the ext_limit of this ListInternetBandwidthLimits.
+        r"""Sets the ext_limit of this ListInternetBandwidthLimits.
 
         :param ext_limit: The ext_limit of this ListInternetBandwidthLimits.
         :type ext_limit: :class:`huaweicloudsdkgeip.v3.ExtLimitPojo`
@@ -162,7 +162,7 @@ class ListInternetBandwidthLimits:
 
     @property
     def max_size(self):
-        """Gets the max_size of this ListInternetBandwidthLimits.
+        r"""Gets the max_size of this ListInternetBandwidthLimits.
 
         该类型全域公网带宽可购买的最大size
 
@@ -173,7 +173,7 @@ class ListInternetBandwidthLimits:
 
     @max_size.setter
     def max_size(self, max_size):
-        """Sets the max_size of this ListInternetBandwidthLimits.
+        r"""Sets the max_size of this ListInternetBandwidthLimits.
 
         该类型全域公网带宽可购买的最大size
 
@@ -184,7 +184,7 @@ class ListInternetBandwidthLimits:
 
     @property
     def type(self):
-        """Gets the type of this ListInternetBandwidthLimits.
+        r"""Gets the type of this ListInternetBandwidthLimits.
 
         全域公网带宽类型
 
@@ -195,7 +195,7 @@ class ListInternetBandwidthLimits:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInternetBandwidthLimits.
+        r"""Sets the type of this ListInternetBandwidthLimits.
 
         全域公网带宽类型
 

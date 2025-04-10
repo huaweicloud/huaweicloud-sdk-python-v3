@@ -35,7 +35,7 @@ class KeystoreDetails:
     }
 
     def __init__(self, keystore_id=None, domain_id=None, keystore_alias=None, keystore_type=None, hsm_cluster_id=None, create_time=None):
-        """KeystoreDetails
+        r"""KeystoreDetails
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class KeystoreDetails:
 
     @property
     def keystore_id(self):
-        """Gets the keystore_id of this KeystoreDetails.
+        r"""Gets the keystore_id of this KeystoreDetails.
 
         密钥库ID
 
@@ -89,7 +89,7 @@ class KeystoreDetails:
 
     @keystore_id.setter
     def keystore_id(self, keystore_id):
-        """Sets the keystore_id of this KeystoreDetails.
+        r"""Sets the keystore_id of this KeystoreDetails.
 
         密钥库ID
 
@@ -100,7 +100,7 @@ class KeystoreDetails:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoreDetails.
+        r"""Gets the domain_id of this KeystoreDetails.
 
         用户域ID
 
@@ -111,7 +111,7 @@ class KeystoreDetails:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoreDetails.
+        r"""Sets the domain_id of this KeystoreDetails.
 
         用户域ID
 
@@ -122,7 +122,7 @@ class KeystoreDetails:
 
     @property
     def keystore_alias(self):
-        """Gets the keystore_alias of this KeystoreDetails.
+        r"""Gets the keystore_alias of this KeystoreDetails.
 
         密钥库别名
 
@@ -133,7 +133,7 @@ class KeystoreDetails:
 
     @keystore_alias.setter
     def keystore_alias(self, keystore_alias):
-        """Sets the keystore_alias of this KeystoreDetails.
+        r"""Sets the keystore_alias of this KeystoreDetails.
 
         密钥库别名
 
@@ -144,7 +144,7 @@ class KeystoreDetails:
 
     @property
     def keystore_type(self):
-        """Gets the keystore_type of this KeystoreDetails.
+        r"""Gets the keystore_type of this KeystoreDetails.
 
         密钥库类型
 
@@ -155,7 +155,7 @@ class KeystoreDetails:
 
     @keystore_type.setter
     def keystore_type(self, keystore_type):
-        """Sets the keystore_type of this KeystoreDetails.
+        r"""Sets the keystore_type of this KeystoreDetails.
 
         密钥库类型
 
@@ -166,7 +166,7 @@ class KeystoreDetails:
 
     @property
     def hsm_cluster_id(self):
-        """Gets the hsm_cluster_id of this KeystoreDetails.
+        r"""Gets the hsm_cluster_id of this KeystoreDetails.
 
         DHSM集群id，要求集群当前未创建专属密钥库
 
@@ -177,7 +177,7 @@ class KeystoreDetails:
 
     @hsm_cluster_id.setter
     def hsm_cluster_id(self, hsm_cluster_id):
-        """Sets the hsm_cluster_id of this KeystoreDetails.
+        r"""Sets the hsm_cluster_id of this KeystoreDetails.
 
         DHSM集群id，要求集群当前未创建专属密钥库
 
@@ -188,7 +188,7 @@ class KeystoreDetails:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KeystoreDetails.
+        r"""Gets the create_time of this KeystoreDetails.
 
         密钥库创建时间，UTC时间戳。
 
@@ -199,7 +199,7 @@ class KeystoreDetails:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KeystoreDetails.
+        r"""Sets the create_time of this KeystoreDetails.
 
         密钥库创建时间，UTC时间戳。
 

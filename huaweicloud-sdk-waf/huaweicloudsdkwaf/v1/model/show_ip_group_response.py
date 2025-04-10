@@ -38,7 +38,7 @@ class ShowIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, ips=None, size=None, rules=None, share_info=None, description=None):
-        """ShowIpGroupResponse
+        r"""ShowIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowIpGroupResponse.
+        r"""Gets the id of this ShowIpGroupResponse.
 
         地址组id
 
@@ -97,7 +97,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowIpGroupResponse.
+        r"""Sets the id of this ShowIpGroupResponse.
 
         地址组id
 
@@ -108,7 +108,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowIpGroupResponse.
+        r"""Gets the name of this ShowIpGroupResponse.
 
         地址组名称
 
@@ -119,7 +119,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowIpGroupResponse.
+        r"""Sets the name of this ShowIpGroupResponse.
 
         地址组名称
 
@@ -130,7 +130,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this ShowIpGroupResponse.
+        r"""Gets the ips of this ShowIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -141,7 +141,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this ShowIpGroupResponse.
+        r"""Sets the ips of this ShowIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -152,7 +152,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowIpGroupResponse.
+        r"""Gets the size of this ShowIpGroupResponse.
 
         地址组长度
 
@@ -163,7 +163,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowIpGroupResponse.
+        r"""Sets the size of this ShowIpGroupResponse.
 
         地址组长度
 
@@ -174,7 +174,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ShowIpGroupResponse.
+        r"""Gets the rules of this ShowIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -185,7 +185,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ShowIpGroupResponse.
+        r"""Sets the rules of this ShowIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -196,7 +196,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def share_info(self):
-        """Gets the share_info of this ShowIpGroupResponse.
+        r"""Gets the share_info of this ShowIpGroupResponse.
 
         :return: The share_info of this ShowIpGroupResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.ShareInfo`
@@ -205,7 +205,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @share_info.setter
     def share_info(self, share_info):
-        """Sets the share_info of this ShowIpGroupResponse.
+        r"""Sets the share_info of this ShowIpGroupResponse.
 
         :param share_info: The share_info of this ShowIpGroupResponse.
         :type share_info: :class:`huaweicloudsdkwaf.v1.ShareInfo`
@@ -214,7 +214,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowIpGroupResponse.
+        r"""Gets the description of this ShowIpGroupResponse.
 
         地址组描述
 
@@ -225,7 +225,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowIpGroupResponse.
+        r"""Sets the description of this ShowIpGroupResponse.
 
         地址组描述
 

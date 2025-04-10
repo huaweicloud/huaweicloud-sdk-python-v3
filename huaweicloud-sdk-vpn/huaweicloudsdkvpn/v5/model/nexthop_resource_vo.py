@@ -27,7 +27,7 @@ class NexthopResourceVo:
     }
 
     def __init__(self, id=None, type=None):
-        """NexthopResourceVo
+        r"""NexthopResourceVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NexthopResourceVo:
 
     @property
     def id(self):
-        """Gets the id of this NexthopResourceVo.
+        r"""Gets the id of this NexthopResourceVo.
 
         下一跳资源ID
 
@@ -61,7 +61,7 @@ class NexthopResourceVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NexthopResourceVo.
+        r"""Sets the id of this NexthopResourceVo.
 
         下一跳资源ID
 
@@ -72,7 +72,7 @@ class NexthopResourceVo:
 
     @property
     def type(self):
-        """Gets the type of this NexthopResourceVo.
+        r"""Gets the type of this NexthopResourceVo.
 
         下一跳资源类型
 
@@ -83,7 +83,7 @@ class NexthopResourceVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NexthopResourceVo.
+        r"""Sets the type of this NexthopResourceVo.
 
         下一跳资源类型
 

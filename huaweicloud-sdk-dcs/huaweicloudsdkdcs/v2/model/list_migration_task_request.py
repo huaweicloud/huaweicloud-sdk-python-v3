@@ -29,7 +29,7 @@ class ListMigrationTaskRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListMigrationTaskRequest
+        r"""ListMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListMigrationTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMigrationTaskRequest.
+        r"""Gets the offset of this ListMigrationTaskRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -68,7 +68,7 @@ class ListMigrationTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMigrationTaskRequest.
+        r"""Sets the offset of this ListMigrationTaskRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -79,7 +79,7 @@ class ListMigrationTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMigrationTaskRequest.
+        r"""Gets the limit of this ListMigrationTaskRequest.
 
         每页显示的条目数量。
 
@@ -90,7 +90,7 @@ class ListMigrationTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMigrationTaskRequest.
+        r"""Sets the limit of this ListMigrationTaskRequest.
 
         每页显示的条目数量。
 
@@ -101,7 +101,7 @@ class ListMigrationTaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListMigrationTaskRequest.
+        r"""Gets the name of this ListMigrationTaskRequest.
 
         迁移任务名称。
 
@@ -112,7 +112,7 @@ class ListMigrationTaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListMigrationTaskRequest.
+        r"""Sets the name of this ListMigrationTaskRequest.
 
         迁移任务名称。
 

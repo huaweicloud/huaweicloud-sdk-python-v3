@@ -24,7 +24,7 @@ class RestoreSnapshotResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestoreSnapshotResponse
+        r"""RestoreSnapshotResponse
 
         The model defined in huaweicloud sdk
 

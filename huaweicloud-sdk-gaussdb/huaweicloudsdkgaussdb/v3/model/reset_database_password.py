@@ -29,7 +29,7 @@ class ResetDatabasePassword:
     }
 
     def __init__(self, name=None, host=None, password=None):
-        """ResetDatabasePassword
+        r"""ResetDatabasePassword
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ResetDatabasePassword:
 
     @property
     def name(self):
-        """Gets the name of this ResetDatabasePassword.
+        r"""Gets the name of this ResetDatabasePassword.
 
         数据库用户名。
 
@@ -65,7 +65,7 @@ class ResetDatabasePassword:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResetDatabasePassword.
+        r"""Sets the name of this ResetDatabasePassword.
 
         数据库用户名。
 
@@ -76,7 +76,7 @@ class ResetDatabasePassword:
 
     @property
     def host(self):
-        """Gets the host of this ResetDatabasePassword.
+        r"""Gets the host of this ResetDatabasePassword.
 
         主机地址。
 
@@ -87,7 +87,7 @@ class ResetDatabasePassword:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ResetDatabasePassword.
+        r"""Sets the host of this ResetDatabasePassword.
 
         主机地址。
 
@@ -98,7 +98,7 @@ class ResetDatabasePassword:
 
     @property
     def password(self):
-        """Gets the password of this ResetDatabasePassword.
+        r"""Gets the password of this ResetDatabasePassword.
 
         数据库用户密码，非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#$%^*-_=+?,()&组成，长度8~32个字符。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险
 
@@ -109,7 +109,7 @@ class ResetDatabasePassword:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ResetDatabasePassword.
+        r"""Sets the password of this ResetDatabasePassword.
 
         数据库用户密码，非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#$%^*-_=+?,()&组成，长度8~32个字符。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险
 

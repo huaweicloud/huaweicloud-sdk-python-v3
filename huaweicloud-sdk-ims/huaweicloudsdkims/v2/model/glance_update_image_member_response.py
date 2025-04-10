@@ -36,7 +36,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
     }
 
     def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):
-        """GlanceUpdateImageMemberResponse
+        r"""GlanceUpdateImageMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GlanceUpdateImageMemberResponse.
+        r"""Gets the status of this GlanceUpdateImageMemberResponse.
 
         共享状态
 
@@ -90,7 +90,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlanceUpdateImageMemberResponse.
+        r"""Sets the status of this GlanceUpdateImageMemberResponse.
 
         共享状态
 
@@ -101,7 +101,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlanceUpdateImageMemberResponse.
+        r"""Gets the created_at of this GlanceUpdateImageMemberResponse.
 
         共享时间，格式为UTC时间
 
@@ -112,7 +112,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlanceUpdateImageMemberResponse.
+        r"""Sets the created_at of this GlanceUpdateImageMemberResponse.
 
         共享时间，格式为UTC时间
 
@@ -123,7 +123,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlanceUpdateImageMemberResponse.
+        r"""Gets the updated_at of this GlanceUpdateImageMemberResponse.
 
         更新时间，格式为UTC时间
 
@@ -134,7 +134,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlanceUpdateImageMemberResponse.
+        r"""Sets the updated_at of this GlanceUpdateImageMemberResponse.
 
         更新时间，格式为UTC时间
 
@@ -145,7 +145,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceUpdateImageMemberResponse.
+        r"""Gets the image_id of this GlanceUpdateImageMemberResponse.
 
         镜像ID
 
@@ -156,7 +156,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceUpdateImageMemberResponse.
+        r"""Sets the image_id of this GlanceUpdateImageMemberResponse.
 
         镜像ID
 
@@ -167,7 +167,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @property
     def member_id(self):
-        """Gets the member_id of this GlanceUpdateImageMemberResponse.
+        r"""Gets the member_id of this GlanceUpdateImageMemberResponse.
 
         成员ID
 
@@ -178,7 +178,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GlanceUpdateImageMemberResponse.
+        r"""Sets the member_id of this GlanceUpdateImageMemberResponse.
 
         成员ID
 
@@ -189,7 +189,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceUpdateImageMemberResponse.
+        r"""Gets the schema of this GlanceUpdateImageMemberResponse.
 
         共享视图
 
@@ -200,7 +200,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceUpdateImageMemberResponse.
+        r"""Sets the schema of this GlanceUpdateImageMemberResponse.
 
         共享视图
 

@@ -24,7 +24,7 @@ class EnableComponentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableComponentResponse
+        r"""EnableComponentResponse
 
         The model defined in huaweicloud sdk
 

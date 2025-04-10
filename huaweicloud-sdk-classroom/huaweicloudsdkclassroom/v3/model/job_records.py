@@ -39,7 +39,7 @@ class JobRecords:
     }
 
     def __init__(self, name=None, auto_score=None, case_pass_count=None, exe_case_count=None, code_line=None, commit_time=None, complexity_file_avg=None, auto_score_using_time=None):
-        """JobRecords
+        r"""JobRecords
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class JobRecords:
 
     @property
     def name(self):
-        """Gets the name of this JobRecords.
+        r"""Gets the name of this JobRecords.
 
         第XX次提交
 
@@ -95,7 +95,7 @@ class JobRecords:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobRecords.
+        r"""Sets the name of this JobRecords.
 
         第XX次提交
 
@@ -106,7 +106,7 @@ class JobRecords:
 
     @property
     def auto_score(self):
-        """Gets the auto_score of this JobRecords.
+        r"""Gets the auto_score of this JobRecords.
 
         习题判题得分
 
@@ -117,7 +117,7 @@ class JobRecords:
 
     @auto_score.setter
     def auto_score(self, auto_score):
-        """Sets the auto_score of this JobRecords.
+        r"""Sets the auto_score of this JobRecords.
 
         习题判题得分
 
@@ -128,7 +128,7 @@ class JobRecords:
 
     @property
     def case_pass_count(self):
-        """Gets the case_pass_count of this JobRecords.
+        r"""Gets the case_pass_count of this JobRecords.
 
         习题用例通过数
 
@@ -139,7 +139,7 @@ class JobRecords:
 
     @case_pass_count.setter
     def case_pass_count(self, case_pass_count):
-        """Sets the case_pass_count of this JobRecords.
+        r"""Sets the case_pass_count of this JobRecords.
 
         习题用例通过数
 
@@ -150,7 +150,7 @@ class JobRecords:
 
     @property
     def exe_case_count(self):
-        """Gets the exe_case_count of this JobRecords.
+        r"""Gets the exe_case_count of this JobRecords.
 
         习题用例总数
 
@@ -161,7 +161,7 @@ class JobRecords:
 
     @exe_case_count.setter
     def exe_case_count(self, exe_case_count):
-        """Sets the exe_case_count of this JobRecords.
+        r"""Sets the exe_case_count of this JobRecords.
 
         习题用例总数
 
@@ -172,7 +172,7 @@ class JobRecords:
 
     @property
     def code_line(self):
-        """Gets the code_line of this JobRecords.
+        r"""Gets the code_line of this JobRecords.
 
         代码行数
 
@@ -183,7 +183,7 @@ class JobRecords:
 
     @code_line.setter
     def code_line(self, code_line):
-        """Sets the code_line of this JobRecords.
+        r"""Sets the code_line of this JobRecords.
 
         代码行数
 
@@ -194,7 +194,7 @@ class JobRecords:
 
     @property
     def commit_time(self):
-        """Gets the commit_time of this JobRecords.
+        r"""Gets the commit_time of this JobRecords.
 
         习题提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -205,7 +205,7 @@ class JobRecords:
 
     @commit_time.setter
     def commit_time(self, commit_time):
-        """Sets the commit_time of this JobRecords.
+        r"""Sets the commit_time of this JobRecords.
 
         习题提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -216,7 +216,7 @@ class JobRecords:
 
     @property
     def complexity_file_avg(self):
-        """Gets the complexity_file_avg of this JobRecords.
+        r"""Gets the complexity_file_avg of this JobRecords.
 
         习题圈复杂度
 
@@ -227,7 +227,7 @@ class JobRecords:
 
     @complexity_file_avg.setter
     def complexity_file_avg(self, complexity_file_avg):
-        """Sets the complexity_file_avg of this JobRecords.
+        r"""Sets the complexity_file_avg of this JobRecords.
 
         习题圈复杂度
 
@@ -238,7 +238,7 @@ class JobRecords:
 
     @property
     def auto_score_using_time(self):
-        """Gets the auto_score_using_time of this JobRecords.
+        r"""Gets the auto_score_using_time of this JobRecords.
 
         习题判题耗时(毫秒)
 
@@ -249,7 +249,7 @@ class JobRecords:
 
     @auto_score_using_time.setter
     def auto_score_using_time(self, auto_score_using_time):
-        """Sets the auto_score_using_time of this JobRecords.
+        r"""Sets the auto_score_using_time of this JobRecords.
 
         习题判题耗时(毫秒)
 

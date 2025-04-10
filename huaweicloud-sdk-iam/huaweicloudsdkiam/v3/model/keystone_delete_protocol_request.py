@@ -27,7 +27,7 @@ class KeystoneDeleteProtocolRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None):
-        """KeystoneDeleteProtocolRequest
+        r"""KeystoneDeleteProtocolRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeystoneDeleteProtocolRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this KeystoneDeleteProtocolRequest.
+        r"""Gets the idp_id of this KeystoneDeleteProtocolRequest.
 
         身份提供商ID。
 
@@ -59,7 +59,7 @@ class KeystoneDeleteProtocolRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this KeystoneDeleteProtocolRequest.
+        r"""Sets the idp_id of this KeystoneDeleteProtocolRequest.
 
         身份提供商ID。
 
@@ -70,7 +70,7 @@ class KeystoneDeleteProtocolRequest:
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this KeystoneDeleteProtocolRequest.
+        r"""Gets the protocol_id of this KeystoneDeleteProtocolRequest.
 
         待删除的协议ID。
 
@@ -81,7 +81,7 @@ class KeystoneDeleteProtocolRequest:
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this KeystoneDeleteProtocolRequest.
+        r"""Sets the protocol_id of this KeystoneDeleteProtocolRequest.
 
         待删除的协议ID。
 

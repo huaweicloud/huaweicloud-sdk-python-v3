@@ -40,7 +40,7 @@ class ShowInstanceParamResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, updated=None, configuration_parameter=None, offset=None, limit=None, total=None):
-        """ShowInstanceParamResponse
+        r"""ShowInstanceParamResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceParamResponse.
+        r"""Gets the id of this ShowInstanceParamResponse.
 
         参数组id。
 
@@ -104,7 +104,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceParamResponse.
+        r"""Sets the id of this ShowInstanceParamResponse.
 
         参数组id。
 
@@ -115,7 +115,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceParamResponse.
+        r"""Gets the name of this ShowInstanceParamResponse.
 
         参数组名称。
 
@@ -126,7 +126,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceParamResponse.
+        r"""Sets the name of this ShowInstanceParamResponse.
 
         参数组名称。
 
@@ -137,7 +137,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowInstanceParamResponse.
+        r"""Gets the description of this ShowInstanceParamResponse.
 
         参数组描述。
 
@@ -148,7 +148,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowInstanceParamResponse.
+        r"""Sets the description of this ShowInstanceParamResponse.
 
         参数组描述。
 
@@ -159,7 +159,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowInstanceParamResponse.
+        r"""Gets the updated of this ShowInstanceParamResponse.
 
         DDM参数最后更新时间。
 
@@ -170,7 +170,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowInstanceParamResponse.
+        r"""Sets the updated of this ShowInstanceParamResponse.
 
         DDM参数最后更新时间。
 
@@ -181,7 +181,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def configuration_parameter(self):
-        """Gets the configuration_parameter of this ShowInstanceParamResponse.
+        r"""Gets the configuration_parameter of this ShowInstanceParamResponse.
 
         DDM实例参数信息列表的集合。
 
@@ -192,7 +192,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @configuration_parameter.setter
     def configuration_parameter(self, configuration_parameter):
-        """Sets the configuration_parameter of this ShowInstanceParamResponse.
+        r"""Sets the configuration_parameter of this ShowInstanceParamResponse.
 
         DDM实例参数信息列表的集合。
 
@@ -203,7 +203,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowInstanceParamResponse.
+        r"""Gets the offset of this ShowInstanceParamResponse.
 
         分页参数: 起始值。
 
@@ -214,7 +214,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowInstanceParamResponse.
+        r"""Sets the offset of this ShowInstanceParamResponse.
 
         分页参数: 起始值。
 
@@ -225,7 +225,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ShowInstanceParamResponse.
+        r"""Gets the limit of this ShowInstanceParamResponse.
 
         分页参数：每页多少条。
 
@@ -236,7 +236,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowInstanceParamResponse.
+        r"""Sets the limit of this ShowInstanceParamResponse.
 
         分页参数：每页多少条。
 
@@ -247,7 +247,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowInstanceParamResponse.
+        r"""Gets the total of this ShowInstanceParamResponse.
 
         集合总数
 
@@ -258,7 +258,7 @@ class ShowInstanceParamResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowInstanceParamResponse.
+        r"""Sets the total of this ShowInstanceParamResponse.
 
         集合总数
 

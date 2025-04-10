@@ -25,7 +25,7 @@ class DeleteVpcRequest:
     }
 
     def __init__(self, vpc_id=None):
-        """DeleteVpcRequest
+        r"""DeleteVpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVpcRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this DeleteVpcRequest.
+        r"""Gets the vpc_id of this DeleteVpcRequest.
 
         VPC的资源ID
 
@@ -53,7 +53,7 @@ class DeleteVpcRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this DeleteVpcRequest.
+        r"""Sets the vpc_id of this DeleteVpcRequest.
 
         VPC的资源ID
 

@@ -25,7 +25,7 @@ class CreateSearchTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSearchTaskRequest
+        r"""CreateSearchTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSearchTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSearchTaskRequest.
+        r"""Gets the body of this CreateSearchTaskRequest.
 
         :return: The body of this CreateSearchTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SearchTaskData`
@@ -52,7 +52,7 @@ class CreateSearchTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSearchTaskRequest.
+        r"""Sets the body of this CreateSearchTaskRequest.
 
         :param body: The body of this CreateSearchTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SearchTaskData`

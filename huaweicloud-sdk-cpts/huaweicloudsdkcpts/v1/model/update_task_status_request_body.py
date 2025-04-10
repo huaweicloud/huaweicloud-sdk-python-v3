@@ -35,7 +35,7 @@ class UpdateTaskStatusRequestBody:
     }
 
     def __init__(self, cluster_id=None, cluster_type=None, without_package=None, network_info=None, status=None, enterprise_project_id=None):
-        """UpdateTaskStatusRequestBody
+        r"""UpdateTaskStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class UpdateTaskStatusRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateTaskStatusRequestBody.
+        r"""Gets the cluster_id of this UpdateTaskStatusRequestBody.
 
         资源组id
 
@@ -84,7 +84,7 @@ class UpdateTaskStatusRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateTaskStatusRequestBody.
+        r"""Sets the cluster_id of this UpdateTaskStatusRequestBody.
 
         资源组id
 
@@ -95,7 +95,7 @@ class UpdateTaskStatusRequestBody:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this UpdateTaskStatusRequestBody.
+        r"""Gets the cluster_type of this UpdateTaskStatusRequestBody.
 
         资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
@@ -106,7 +106,7 @@ class UpdateTaskStatusRequestBody:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this UpdateTaskStatusRequestBody.
+        r"""Sets the cluster_type of this UpdateTaskStatusRequestBody.
 
         资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
@@ -117,7 +117,7 @@ class UpdateTaskStatusRequestBody:
 
     @property
     def without_package(self):
-        """Gets the without_package of this UpdateTaskStatusRequestBody.
+        r"""Gets the without_package of this UpdateTaskStatusRequestBody.
 
         套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
@@ -128,7 +128,7 @@ class UpdateTaskStatusRequestBody:
 
     @without_package.setter
     def without_package(self, without_package):
-        """Sets the without_package of this UpdateTaskStatusRequestBody.
+        r"""Sets the without_package of this UpdateTaskStatusRequestBody.
 
         套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
@@ -139,7 +139,7 @@ class UpdateTaskStatusRequestBody:
 
     @property
     def network_info(self):
-        """Gets the network_info of this UpdateTaskStatusRequestBody.
+        r"""Gets the network_info of this UpdateTaskStatusRequestBody.
 
         :return: The network_info of this UpdateTaskStatusRequestBody.
         :rtype: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
@@ -148,7 +148,7 @@ class UpdateTaskStatusRequestBody:
 
     @network_info.setter
     def network_info(self, network_info):
-        """Sets the network_info of this UpdateTaskStatusRequestBody.
+        r"""Sets the network_info of this UpdateTaskStatusRequestBody.
 
         :param network_info: The network_info of this UpdateTaskStatusRequestBody.
         :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
@@ -157,7 +157,7 @@ class UpdateTaskStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateTaskStatusRequestBody.
+        r"""Gets the status of this UpdateTaskStatusRequestBody.
 
         状态（9：启动任务；2：停止任务）
 
@@ -168,7 +168,7 @@ class UpdateTaskStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTaskStatusRequestBody.
+        r"""Sets the status of this UpdateTaskStatusRequestBody.
 
         状态（9：启动任务；2：停止任务）
 
@@ -179,7 +179,7 @@ class UpdateTaskStatusRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateTaskStatusRequestBody.
+        r"""Gets the enterprise_project_id of this UpdateTaskStatusRequestBody.
 
         企业项目id
 
@@ -190,7 +190,7 @@ class UpdateTaskStatusRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateTaskStatusRequestBody.
+        r"""Sets the enterprise_project_id of this UpdateTaskStatusRequestBody.
 
         企业项目id
 

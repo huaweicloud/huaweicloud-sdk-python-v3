@@ -27,7 +27,7 @@ class LastUpdatedUser:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """LastUpdatedUser
+        r"""LastUpdatedUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LastUpdatedUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this LastUpdatedUser.
+        r"""Gets the user_id of this LastUpdatedUser.
 
         用户ID
 
@@ -61,7 +61,7 @@ class LastUpdatedUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this LastUpdatedUser.
+        r"""Sets the user_id of this LastUpdatedUser.
 
         用户ID
 
@@ -72,7 +72,7 @@ class LastUpdatedUser:
 
     @property
     def user_name(self):
-        """Gets the user_name of this LastUpdatedUser.
+        r"""Gets the user_name of this LastUpdatedUser.
 
         用户名
 
@@ -83,7 +83,7 @@ class LastUpdatedUser:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this LastUpdatedUser.
+        r"""Sets the user_name of this LastUpdatedUser.
 
         用户名
 

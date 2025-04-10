@@ -37,7 +37,7 @@ class LiveEventReportRequest:
     }
 
     def __init__(self, room_id=None, job_id=None, x_app_user_id=None, auth_key=None, expires_time=None, refresh_url=None, body=None):
-        """LiveEventReportRequest
+        r"""LiveEventReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class LiveEventReportRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this LiveEventReportRequest.
+        r"""Gets the room_id of this LiveEventReportRequest.
 
         直播间ID。
 
@@ -94,7 +94,7 @@ class LiveEventReportRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this LiveEventReportRequest.
+        r"""Sets the room_id of this LiveEventReportRequest.
 
         直播间ID。
 
@@ -105,7 +105,7 @@ class LiveEventReportRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this LiveEventReportRequest.
+        r"""Gets the job_id of this LiveEventReportRequest.
 
         任务ID。
 
@@ -116,7 +116,7 @@ class LiveEventReportRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this LiveEventReportRequest.
+        r"""Sets the job_id of this LiveEventReportRequest.
 
         任务ID。
 
@@ -127,7 +127,7 @@ class LiveEventReportRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this LiveEventReportRequest.
+        r"""Gets the x_app_user_id of this LiveEventReportRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -138,7 +138,7 @@ class LiveEventReportRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this LiveEventReportRequest.
+        r"""Sets the x_app_user_id of this LiveEventReportRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -149,7 +149,7 @@ class LiveEventReportRequest:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this LiveEventReportRequest.
+        r"""Gets the auth_key of this LiveEventReportRequest.
 
         鉴权Key。通过HmacSHA256生成的鉴权key
 
@@ -160,7 +160,7 @@ class LiveEventReportRequest:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this LiveEventReportRequest.
+        r"""Sets the auth_key of this LiveEventReportRequest.
 
         鉴权Key。通过HmacSHA256生成的鉴权key
 
@@ -171,7 +171,7 @@ class LiveEventReportRequest:
 
     @property
     def expires_time(self):
-        """Gets the expires_time of this LiveEventReportRequest.
+        r"""Gets the expires_time of this LiveEventReportRequest.
 
         **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
 
@@ -182,7 +182,7 @@ class LiveEventReportRequest:
 
     @expires_time.setter
     def expires_time(self, expires_time):
-        """Sets the expires_time of this LiveEventReportRequest.
+        r"""Sets the expires_time of this LiveEventReportRequest.
 
         **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
 
@@ -193,7 +193,7 @@ class LiveEventReportRequest:
 
     @property
     def refresh_url(self):
-        """Gets the refresh_url of this LiveEventReportRequest.
+        r"""Gets the refresh_url of this LiveEventReportRequest.
 
         是否刷新URL
 
@@ -204,7 +204,7 @@ class LiveEventReportRequest:
 
     @refresh_url.setter
     def refresh_url(self, refresh_url):
-        """Sets the refresh_url of this LiveEventReportRequest.
+        r"""Sets the refresh_url of this LiveEventReportRequest.
 
         是否刷新URL
 
@@ -215,7 +215,7 @@ class LiveEventReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this LiveEventReportRequest.
+        r"""Gets the body of this LiveEventReportRequest.
 
         :return: The body of this LiveEventReportRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReportLiveEventReq`
@@ -224,7 +224,7 @@ class LiveEventReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LiveEventReportRequest.
+        r"""Sets the body of this LiveEventReportRequest.
 
         :param body: The body of this LiveEventReportRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ReportLiveEventReq`

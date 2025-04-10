@@ -26,7 +26,7 @@ class BatchDeleteDesktopsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteDesktopsResponse
+        r"""BatchDeleteDesktopsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteDesktopsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteDesktopsResponse.
+        r"""Gets the job_id of this BatchDeleteDesktopsResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class BatchDeleteDesktopsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteDesktopsResponse.
+        r"""Sets the job_id of this BatchDeleteDesktopsResponse.
 
         任务ID。
 

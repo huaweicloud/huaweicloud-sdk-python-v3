@@ -27,7 +27,7 @@ class NovaShowKeypairRequest:
     }
 
     def __init__(self, keypair_name=None, open_stack_api_version=None):
-        """NovaShowKeypairRequest
+        r"""NovaShowKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaShowKeypairRequest:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this NovaShowKeypairRequest.
+        r"""Gets the keypair_name of this NovaShowKeypairRequest.
 
         密钥名称信息。
 
@@ -60,7 +60,7 @@ class NovaShowKeypairRequest:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this NovaShowKeypairRequest.
+        r"""Sets the keypair_name of this NovaShowKeypairRequest.
 
         密钥名称信息。
 
@@ -71,7 +71,7 @@ class NovaShowKeypairRequest:
 
     @property
     def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaShowKeypairRequest.
+        r"""Gets the open_stack_api_version of this NovaShowKeypairRequest.
 
         微版本头
 
@@ -82,7 +82,7 @@ class NovaShowKeypairRequest:
 
     @open_stack_api_version.setter
     def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaShowKeypairRequest.
+        r"""Sets the open_stack_api_version of this NovaShowKeypairRequest.
 
         微版本头
 

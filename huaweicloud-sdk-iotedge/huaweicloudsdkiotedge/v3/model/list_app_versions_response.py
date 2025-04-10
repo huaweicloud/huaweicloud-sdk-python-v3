@@ -30,7 +30,7 @@ class ListAppVersionsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, app_versions=None):
-        """ListAppVersionsResponse
+        r"""ListAppVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppVersionsResponse.
+        r"""Gets the count of this ListAppVersionsResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppVersionsResponse.
+        r"""Sets the count of this ListAppVersionsResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAppVersionsResponse.
+        r"""Gets the page_info of this ListAppVersionsResponse.
 
         :return: The page_info of this ListAppVersionsResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v3.PageInfoDTO`
@@ -89,7 +89,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAppVersionsResponse.
+        r"""Sets the page_info of this ListAppVersionsResponse.
 
         :param page_info: The page_info of this ListAppVersionsResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v3.PageInfoDTO`
@@ -98,7 +98,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @property
     def app_versions(self):
-        """Gets the app_versions of this ListAppVersionsResponse.
+        r"""Gets the app_versions of this ListAppVersionsResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @app_versions.setter
     def app_versions(self, app_versions):
-        """Sets the app_versions of this ListAppVersionsResponse.
+        r"""Sets the app_versions of this ListAppVersionsResponse.
 
         每页记录数
 

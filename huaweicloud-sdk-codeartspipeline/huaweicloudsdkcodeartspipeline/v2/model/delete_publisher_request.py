@@ -27,7 +27,7 @@ class DeletePublisherRequest:
     }
 
     def __init__(self, domain_id=None, publisher_unique_id=None):
-        """DeletePublisherRequest
+        r"""DeletePublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePublisherRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeletePublisherRequest.
+        r"""Gets the domain_id of this DeletePublisherRequest.
 
         租户ID
 
@@ -59,7 +59,7 @@ class DeletePublisherRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeletePublisherRequest.
+        r"""Sets the domain_id of this DeletePublisherRequest.
 
         租户ID
 
@@ -70,7 +70,7 @@ class DeletePublisherRequest:
 
     @property
     def publisher_unique_id(self):
-        """Gets the publisher_unique_id of this DeletePublisherRequest.
+        r"""Gets the publisher_unique_id of this DeletePublisherRequest.
 
         发布商ID
 
@@ -81,7 +81,7 @@ class DeletePublisherRequest:
 
     @publisher_unique_id.setter
     def publisher_unique_id(self, publisher_unique_id):
-        """Sets the publisher_unique_id of this DeletePublisherRequest.
+        r"""Sets the publisher_unique_id of this DeletePublisherRequest.
 
         发布商ID
 

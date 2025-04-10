@@ -27,7 +27,7 @@ class ListStudyJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, study_id=None):
-        """ListStudyJobRequest
+        r"""ListStudyJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListStudyJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListStudyJobRequest.
+        r"""Gets the eihealth_project_id of this ListStudyJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ListStudyJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListStudyJobRequest.
+        r"""Sets the eihealth_project_id of this ListStudyJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ListStudyJobRequest:
 
     @property
     def study_id(self):
-        """Gets the study_id of this ListStudyJobRequest.
+        r"""Gets the study_id of this ListStudyJobRequest.
 
         study_id
 
@@ -81,7 +81,7 @@ class ListStudyJobRequest:
 
     @study_id.setter
     def study_id(self, study_id):
-        """Sets the study_id of this ListStudyJobRequest.
+        r"""Sets the study_id of this ListStudyJobRequest.
 
         study_id
 

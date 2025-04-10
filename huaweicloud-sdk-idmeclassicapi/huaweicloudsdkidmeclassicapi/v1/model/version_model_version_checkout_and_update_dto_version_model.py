@@ -35,7 +35,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
     }
 
     def __init__(self, creator=None, custom_link_set=None, data=None, master_id=None, modifier=None, work_copy_type=None):
-        """VersionModelVersionCheckoutAndUpdateDTOVersionModel
+        r"""VersionModelVersionCheckoutAndUpdateDTOVersionModel
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @property
     def creator(self):
-        """Gets the creator of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Gets the creator of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -87,7 +87,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Sets the creator of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -98,7 +98,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @property
     def custom_link_set(self):
-        """Gets the custom_link_set of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Gets the custom_link_set of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -109,7 +109,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @custom_link_set.setter
     def custom_link_set(self, custom_link_set):
-        """Sets the custom_link_set of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Sets the custom_link_set of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -120,7 +120,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @property
     def data(self):
-        """Gets the data of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Gets the data of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         :return: The data of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
@@ -129,7 +129,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Sets the data of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         :param data: The data of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
@@ -138,7 +138,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @property
     def master_id(self):
-        """Gets the master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Gets the master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -149,7 +149,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Sets the master_id of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -160,7 +160,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Gets the modifier of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -171,7 +171,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Sets the modifier of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -182,7 +182,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @property
     def work_copy_type(self):
-        """Gets the work_copy_type of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Gets the work_copy_type of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  关系的复制类型。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，检出并更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，检出并更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，检出并更新后的数据实例将继承这些关系实例。 - NONE：检出并更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，检出并更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
@@ -193,7 +193,7 @@ class VersionModelVersionCheckoutAndUpdateDTOVersionModel:
 
     @work_copy_type.setter
     def work_copy_type(self, work_copy_type):
-        """Sets the work_copy_type of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
+        r"""Sets the work_copy_type of this VersionModelVersionCheckoutAndUpdateDTOVersionModel.
 
         **参数解释：**  关系的复制类型。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，检出并更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，检出并更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，检出并更新后的数据实例将继承这些关系实例。 - NONE：检出并更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，检出并更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 

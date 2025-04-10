@@ -26,7 +26,7 @@ class UpdateEquipmentWanConfigResponse(SdkResponse):
     }
 
     def __init__(self, wan_interfaces=None):
-        """UpdateEquipmentWanConfigResponse
+        r"""UpdateEquipmentWanConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEquipmentWanConfigResponse(SdkResponse):
 
     @property
     def wan_interfaces(self):
-        """Gets the wan_interfaces of this UpdateEquipmentWanConfigResponse.
+        r"""Gets the wan_interfaces of this UpdateEquipmentWanConfigResponse.
 
         设备WAN口配置列表
 
@@ -55,7 +55,7 @@ class UpdateEquipmentWanConfigResponse(SdkResponse):
 
     @wan_interfaces.setter
     def wan_interfaces(self, wan_interfaces):
-        """Sets the wan_interfaces of this UpdateEquipmentWanConfigResponse.
+        r"""Sets the wan_interfaces of this UpdateEquipmentWanConfigResponse.
 
         设备WAN口配置列表
 

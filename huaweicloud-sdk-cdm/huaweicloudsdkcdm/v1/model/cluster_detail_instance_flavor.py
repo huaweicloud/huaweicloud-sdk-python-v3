@@ -27,7 +27,7 @@ class ClusterDetailInstanceFlavor:
     }
 
     def __init__(self, id=None, links=None):
-        """ClusterDetailInstanceFlavor
+        r"""ClusterDetailInstanceFlavor
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterDetailInstanceFlavor:
 
     @property
     def id(self):
-        """Gets the id of this ClusterDetailInstanceFlavor.
+        r"""Gets the id of this ClusterDetailInstanceFlavor.
 
         节点虚拟机的规格ID。
 
@@ -61,7 +61,7 @@ class ClusterDetailInstanceFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterDetailInstanceFlavor.
+        r"""Sets the id of this ClusterDetailInstanceFlavor.
 
         节点虚拟机的规格ID。
 
@@ -72,7 +72,7 @@ class ClusterDetailInstanceFlavor:
 
     @property
     def links(self):
-        """Gets the links of this ClusterDetailInstanceFlavor.
+        r"""Gets the links of this ClusterDetailInstanceFlavor.
 
         链接信息
 
@@ -83,7 +83,7 @@ class ClusterDetailInstanceFlavor:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ClusterDetailInstanceFlavor.
+        r"""Sets the links of this ClusterDetailInstanceFlavor.
 
         链接信息
 

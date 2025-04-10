@@ -45,7 +45,7 @@ class ScheduledTasksRecords:
     }
 
     def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None, execute_object_type=None):
-        """ScheduledTasksRecords
+        r"""ScheduledTasksRecords
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScheduledTasksRecords:
 
     @property
     def id(self):
-        """Gets the id of this ScheduledTasksRecords.
+        r"""Gets the id of this ScheduledTasksRecords.
 
         任务执行记录id
 
@@ -124,7 +124,7 @@ class ScheduledTasksRecords:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduledTasksRecords.
+        r"""Sets the id of this ScheduledTasksRecords.
 
         任务执行记录id
 
@@ -135,7 +135,7 @@ class ScheduledTasksRecords:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduledTasksRecords.
+        r"""Gets the start_time of this ScheduledTasksRecords.
 
         执行时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -146,7 +146,7 @@ class ScheduledTasksRecords:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduledTasksRecords.
+        r"""Sets the start_time of this ScheduledTasksRecords.
 
         执行时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -157,7 +157,7 @@ class ScheduledTasksRecords:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduledTasksRecords.
+        r"""Gets the task_type of this ScheduledTasksRecords.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘。
 
@@ -168,7 +168,7 @@ class ScheduledTasksRecords:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduledTasksRecords.
+        r"""Sets the task_type of this ScheduledTasksRecords.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘。
 
@@ -179,7 +179,7 @@ class ScheduledTasksRecords:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ScheduledTasksRecords.
+        r"""Gets the scheduled_type of this ScheduledTasksRecords.
 
         执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
 
@@ -190,7 +190,7 @@ class ScheduledTasksRecords:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ScheduledTasksRecords.
+        r"""Sets the scheduled_type of this ScheduledTasksRecords.
 
         执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
 
@@ -201,7 +201,7 @@ class ScheduledTasksRecords:
 
     @property
     def status(self):
-        """Gets the status of this ScheduledTasksRecords.
+        r"""Gets the status of this ScheduledTasksRecords.
 
         本次执行状态。
 
@@ -212,7 +212,7 @@ class ScheduledTasksRecords:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScheduledTasksRecords.
+        r"""Sets the status of this ScheduledTasksRecords.
 
         本次执行状态。
 
@@ -223,7 +223,7 @@ class ScheduledTasksRecords:
 
     @property
     def success_num(self):
-        """Gets the success_num of this ScheduledTasksRecords.
+        r"""Gets the success_num of this ScheduledTasksRecords.
 
         成功桌面个数。
 
@@ -234,7 +234,7 @@ class ScheduledTasksRecords:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ScheduledTasksRecords.
+        r"""Sets the success_num of this ScheduledTasksRecords.
 
         成功桌面个数。
 
@@ -245,7 +245,7 @@ class ScheduledTasksRecords:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this ScheduledTasksRecords.
+        r"""Gets the failed_num of this ScheduledTasksRecords.
 
         失败桌面个数。
 
@@ -256,7 +256,7 @@ class ScheduledTasksRecords:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this ScheduledTasksRecords.
+        r"""Sets the failed_num of this ScheduledTasksRecords.
 
         失败桌面个数。
 
@@ -267,7 +267,7 @@ class ScheduledTasksRecords:
 
     @property
     def skip_num(self):
-        """Gets the skip_num of this ScheduledTasksRecords.
+        r"""Gets the skip_num of this ScheduledTasksRecords.
 
         跳过桌面个数。
 
@@ -278,7 +278,7 @@ class ScheduledTasksRecords:
 
     @skip_num.setter
     def skip_num(self, skip_num):
-        """Sets the skip_num of this ScheduledTasksRecords.
+        r"""Sets the skip_num of this ScheduledTasksRecords.
 
         跳过桌面个数。
 
@@ -289,7 +289,7 @@ class ScheduledTasksRecords:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduledTasksRecords.
+        r"""Gets the time_zone of this ScheduledTasksRecords.
 
         时区
 
@@ -300,7 +300,7 @@ class ScheduledTasksRecords:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduledTasksRecords.
+        r"""Sets the time_zone of this ScheduledTasksRecords.
 
         时区
 
@@ -311,7 +311,7 @@ class ScheduledTasksRecords:
 
     @property
     def execute_task_id(self):
-        """Gets the execute_task_id of this ScheduledTasksRecords.
+        r"""Gets the execute_task_id of this ScheduledTasksRecords.
 
         执行定时任务的任务id，只有定时执行脚本返回。
 
@@ -322,7 +322,7 @@ class ScheduledTasksRecords:
 
     @execute_task_id.setter
     def execute_task_id(self, execute_task_id):
-        """Sets the execute_task_id of this ScheduledTasksRecords.
+        r"""Sets the execute_task_id of this ScheduledTasksRecords.
 
         执行定时任务的任务id，只有定时执行脚本返回。
 
@@ -333,7 +333,7 @@ class ScheduledTasksRecords:
 
     @property
     def execute_object_type(self):
-        """Gets the execute_object_type of this ScheduledTasksRecords.
+        r"""Gets the execute_object_type of this ScheduledTasksRecords.
 
         执行定时任务的对象类型，只有定时执行脚本返回。
 
@@ -344,7 +344,7 @@ class ScheduledTasksRecords:
 
     @execute_object_type.setter
     def execute_object_type(self, execute_object_type):
-        """Sets the execute_object_type of this ScheduledTasksRecords.
+        r"""Sets the execute_object_type of this ScheduledTasksRecords.
 
         执行定时任务的对象类型，只有定时执行脚本返回。
 

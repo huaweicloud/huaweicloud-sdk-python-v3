@@ -27,7 +27,7 @@ class AttachOrDetachCertsReqBody:
     }
 
     def __init__(self, certificate_ids=None, verified_client_certificate_enabled=None):
-        """AttachOrDetachCertsReqBody
+        r"""AttachOrDetachCertsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachOrDetachCertsReqBody:
 
     @property
     def certificate_ids(self):
-        """Gets the certificate_ids of this AttachOrDetachCertsReqBody.
+        r"""Gets the certificate_ids of this AttachOrDetachCertsReqBody.
 
         证书的id集合
 
@@ -60,7 +60,7 @@ class AttachOrDetachCertsReqBody:
 
     @certificate_ids.setter
     def certificate_ids(self, certificate_ids):
-        """Sets the certificate_ids of this AttachOrDetachCertsReqBody.
+        r"""Sets the certificate_ids of this AttachOrDetachCertsReqBody.
 
         证书的id集合
 
@@ -71,7 +71,7 @@ class AttachOrDetachCertsReqBody:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
+        r"""Gets the verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
 
         是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -82,7 +82,7 @@ class AttachOrDetachCertsReqBody:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
+        r"""Sets the verified_client_certificate_enabled of this AttachOrDetachCertsReqBody.
 
         是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 

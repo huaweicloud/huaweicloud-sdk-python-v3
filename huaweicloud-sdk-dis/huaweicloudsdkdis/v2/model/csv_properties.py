@@ -25,7 +25,7 @@ class CSVProperties:
     }
 
     def __init__(self, delimiter=None):
-        """CSVProperties
+        r"""CSVProperties
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CSVProperties:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this CSVProperties.
+        r"""Gets the delimiter of this CSVProperties.
 
         数据分隔符。
 
@@ -54,7 +54,7 @@ class CSVProperties:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this CSVProperties.
+        r"""Sets the delimiter of this CSVProperties.
 
         数据分隔符。
 

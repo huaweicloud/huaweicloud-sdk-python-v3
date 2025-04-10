@@ -29,7 +29,7 @@ class SearchItem:
     }
 
     def __init__(self, id=None, score=None, source=None):
-        """SearchItem
+        r"""SearchItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SearchItem:
 
     @property
     def id(self):
-        """Gets the id of this SearchItem.
+        r"""Gets the id of this SearchItem.
 
         数据唯一ID。
 
@@ -68,7 +68,7 @@ class SearchItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SearchItem.
+        r"""Sets the id of this SearchItem.
 
         数据唯一ID。
 
@@ -79,7 +79,7 @@ class SearchItem:
 
     @property
     def score(self):
-        """Gets the score of this SearchItem.
+        r"""Gets the score of this SearchItem.
 
         数据匹配分数。
 
@@ -90,7 +90,7 @@ class SearchItem:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this SearchItem.
+        r"""Sets the score of this SearchItem.
 
         数据匹配分数。
 
@@ -101,7 +101,7 @@ class SearchItem:
 
     @property
     def source(self):
-        """Gets the source of this SearchItem.
+        r"""Gets the source of this SearchItem.
 
         :return: The source of this SearchItem.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.ItemSource`
@@ -110,7 +110,7 @@ class SearchItem:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this SearchItem.
+        r"""Sets the source of this SearchItem.
 
         :param source: The source of this SearchItem.
         :type source: :class:`huaweicloudsdkimagesearch.v2.ItemSource`

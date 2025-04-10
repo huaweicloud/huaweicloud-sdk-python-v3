@@ -27,7 +27,7 @@ class ConditonInfo:
     }
 
     def __init__(self, name=None, data=None):
-        """ConditonInfo
+        r"""ConditonInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConditonInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConditonInfo.
+        r"""Gets the name of this ConditonInfo.
 
         name
 
@@ -61,7 +61,7 @@ class ConditonInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConditonInfo.
+        r"""Sets the name of this ConditonInfo.
 
         name
 
@@ -72,7 +72,7 @@ class ConditonInfo:
 
     @property
     def data(self):
-        """Gets the data of this ConditonInfo.
+        r"""Gets the data of this ConditonInfo.
 
         search data
 
@@ -83,7 +83,7 @@ class ConditonInfo:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ConditonInfo.
+        r"""Sets the data of this ConditonInfo.
 
         search data
 

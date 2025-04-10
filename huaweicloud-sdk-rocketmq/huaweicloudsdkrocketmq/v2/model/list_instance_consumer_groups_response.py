@@ -36,7 +36,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, groups=None, max=None, remaining=None, next_offset=None, previous_offset=None):
-        """ListInstanceConsumerGroupsResponse
+        r"""ListInstanceConsumerGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the total of this ListInstanceConsumerGroupsResponse.
 
         消费组总数。
 
@@ -90,7 +90,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the total of this ListInstanceConsumerGroupsResponse.
 
         消费组总数。
 
@@ -101,7 +101,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the groups of this ListInstanceConsumerGroupsResponse.
 
         消费组列表。
 
@@ -112,7 +112,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the groups of this ListInstanceConsumerGroupsResponse.
 
         消费组列表。
 
@@ -123,7 +123,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def max(self):
-        """Gets the max of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the max of this ListInstanceConsumerGroupsResponse.
 
         最大可创建消费组数量。
 
@@ -134,7 +134,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the max of this ListInstanceConsumerGroupsResponse.
 
         最大可创建消费组数量。
 
@@ -145,7 +145,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def remaining(self):
-        """Gets the remaining of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the remaining of this ListInstanceConsumerGroupsResponse.
 
         剩余可创建消费组数量。
 
@@ -156,7 +156,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @remaining.setter
     def remaining(self, remaining):
-        """Sets the remaining of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the remaining of this ListInstanceConsumerGroupsResponse.
 
         剩余可创建消费组数量。
 
@@ -167,7 +167,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def next_offset(self):
-        """Gets the next_offset of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the next_offset of this ListInstanceConsumerGroupsResponse.
 
         下个分页的offset。
 
@@ -178,7 +178,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @next_offset.setter
     def next_offset(self, next_offset):
-        """Sets the next_offset of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the next_offset of this ListInstanceConsumerGroupsResponse.
 
         下个分页的offset。
 
@@ -189,7 +189,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def previous_offset(self):
-        """Gets the previous_offset of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the previous_offset of this ListInstanceConsumerGroupsResponse.
 
         上个分页的offset。
 
@@ -200,7 +200,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @previous_offset.setter
     def previous_offset(self, previous_offset):
-        """Sets the previous_offset of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the previous_offset of this ListInstanceConsumerGroupsResponse.
 
         上个分页的offset。
 

@@ -33,7 +33,7 @@ class RepoInfo:
     }
 
     def __init__(self, https_url=None, web_url=None, repo_status=None, error_msg=None, project_id=None):
-        """RepoInfo
+        r"""RepoInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RepoInfo:
 
     @property
     def https_url(self):
-        """Gets the https_url of this RepoInfo.
+        r"""Gets the https_url of this RepoInfo.
 
         http地址
 
@@ -82,7 +82,7 @@ class RepoInfo:
 
     @https_url.setter
     def https_url(self, https_url):
-        """Sets the https_url of this RepoInfo.
+        r"""Sets the https_url of this RepoInfo.
 
         http地址
 
@@ -93,7 +93,7 @@ class RepoInfo:
 
     @property
     def web_url(self):
-        """Gets the web_url of this RepoInfo.
+        r"""Gets the web_url of this RepoInfo.
 
         存储库链接
 
@@ -104,7 +104,7 @@ class RepoInfo:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this RepoInfo.
+        r"""Sets the web_url of this RepoInfo.
 
         存储库链接
 
@@ -115,7 +115,7 @@ class RepoInfo:
 
     @property
     def repo_status(self):
-        """Gets the repo_status of this RepoInfo.
+        r"""Gets the repo_status of this RepoInfo.
 
         存储库状态
 
@@ -126,7 +126,7 @@ class RepoInfo:
 
     @repo_status.setter
     def repo_status(self, repo_status):
-        """Sets the repo_status of this RepoInfo.
+        r"""Sets the repo_status of this RepoInfo.
 
         存储库状态
 
@@ -137,7 +137,7 @@ class RepoInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RepoInfo.
+        r"""Gets the error_msg of this RepoInfo.
 
         报错信息
 
@@ -148,7 +148,7 @@ class RepoInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RepoInfo.
+        r"""Sets the error_msg of this RepoInfo.
 
         报错信息
 
@@ -159,7 +159,7 @@ class RepoInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RepoInfo.
+        r"""Gets the project_id of this RepoInfo.
 
         项目id
 
@@ -170,7 +170,7 @@ class RepoInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RepoInfo.
+        r"""Sets the project_id of this RepoInfo.
 
         项目id
 

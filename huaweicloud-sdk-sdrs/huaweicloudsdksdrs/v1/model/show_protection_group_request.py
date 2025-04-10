@@ -25,7 +25,7 @@ class ShowProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """ShowProtectionGroupRequest
+        r"""ShowProtectionGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowProtectionGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowProtectionGroupRequest.
+        r"""Gets the server_group_id of this ShowProtectionGroupRequest.
 
         保护组的ID。
 
@@ -53,7 +53,7 @@ class ShowProtectionGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowProtectionGroupRequest.
+        r"""Sets the server_group_id of this ShowProtectionGroupRequest.
 
         保护组的ID。
 

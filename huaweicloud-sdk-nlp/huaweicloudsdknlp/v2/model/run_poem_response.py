@@ -30,7 +30,7 @@ class RunPoemResponse(SdkResponse):
     }
 
     def __init__(self, poem=None, error_code=None, error_msg=None):
-        """RunPoemResponse
+        r"""RunPoemResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunPoemResponse(SdkResponse):
 
     @property
     def poem(self):
-        """Gets the poem of this RunPoemResponse.
+        r"""Gets the poem of this RunPoemResponse.
 
         根据文本请求体，返回生成的诗歌。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunPoemResponse(SdkResponse):
 
     @poem.setter
     def poem(self, poem):
-        """Sets the poem of this RunPoemResponse.
+        r"""Sets the poem of this RunPoemResponse.
 
         根据文本请求体，返回生成的诗歌。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunPoemResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunPoemResponse.
+        r"""Gets the error_code of this RunPoemResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunPoemResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunPoemResponse.
+        r"""Sets the error_code of this RunPoemResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunPoemResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunPoemResponse.
+        r"""Gets the error_msg of this RunPoemResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunPoemResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunPoemResponse.
+        r"""Sets the error_msg of this RunPoemResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

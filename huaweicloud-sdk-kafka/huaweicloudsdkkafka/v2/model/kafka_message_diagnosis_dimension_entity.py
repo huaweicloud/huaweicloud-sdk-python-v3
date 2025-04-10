@@ -31,7 +31,7 @@ class KafkaMessageDiagnosisDimensionEntity:
     }
 
     def __init__(self, name=None, abnormal_num=None, failed_num=None, diagnosis_item_list=None):
-        """KafkaMessageDiagnosisDimensionEntity
+        r"""KafkaMessageDiagnosisDimensionEntity
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @property
     def name(self):
-        """Gets the name of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Gets the name of this KafkaMessageDiagnosisDimensionEntity.
 
         诊断维度名称
 
@@ -71,7 +71,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Sets the name of this KafkaMessageDiagnosisDimensionEntity.
 
         诊断维度名称
 
@@ -82,7 +82,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @property
     def abnormal_num(self):
-        """Gets the abnormal_num of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Gets the abnormal_num of this KafkaMessageDiagnosisDimensionEntity.
 
         该诊断维度下，异常的诊断项总数
 
@@ -93,7 +93,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @abnormal_num.setter
     def abnormal_num(self, abnormal_num):
-        """Sets the abnormal_num of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Sets the abnormal_num of this KafkaMessageDiagnosisDimensionEntity.
 
         该诊断维度下，异常的诊断项总数
 
@@ -104,7 +104,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Gets the failed_num of this KafkaMessageDiagnosisDimensionEntity.
 
         该诊断维度下，诊断失败的诊断项总和
 
@@ -115,7 +115,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Sets the failed_num of this KafkaMessageDiagnosisDimensionEntity.
 
         该诊断维度下，诊断失败的诊断项总和
 
@@ -126,7 +126,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @property
     def diagnosis_item_list(self):
-        """Gets the diagnosis_item_list of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Gets the diagnosis_item_list of this KafkaMessageDiagnosisDimensionEntity.
 
         诊断项列表
 
@@ -137,7 +137,7 @@ class KafkaMessageDiagnosisDimensionEntity:
 
     @diagnosis_item_list.setter
     def diagnosis_item_list(self, diagnosis_item_list):
-        """Sets the diagnosis_item_list of this KafkaMessageDiagnosisDimensionEntity.
+        r"""Sets the diagnosis_item_list of this KafkaMessageDiagnosisDimensionEntity.
 
         诊断项列表
 

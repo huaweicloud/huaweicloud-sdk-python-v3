@@ -25,7 +25,7 @@ class UpdatePublicipsRequestBody:
     }
 
     def __init__(self, publicip=None):
-        """UpdatePublicipsRequestBody
+        r"""UpdatePublicipsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePublicipsRequestBody:
 
     @property
     def publicip(self):
-        """Gets the publicip of this UpdatePublicipsRequestBody.
+        r"""Gets the publicip of this UpdatePublicipsRequestBody.
 
         :return: The publicip of this UpdatePublicipsRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v3.UpdatePublicipOption`
@@ -51,7 +51,7 @@ class UpdatePublicipsRequestBody:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this UpdatePublicipsRequestBody.
+        r"""Sets the publicip of this UpdatePublicipsRequestBody.
 
         :param publicip: The publicip of this UpdatePublicipsRequestBody.
         :type publicip: :class:`huaweicloudsdkeip.v3.UpdatePublicipOption`

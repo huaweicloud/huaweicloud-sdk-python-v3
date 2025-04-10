@@ -27,7 +27,7 @@ class DisassociateBandwidthPackageRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """DisassociateBandwidthPackageRequest
+        r"""DisassociateBandwidthPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateBandwidthPackageRequest:
 
     @property
     def id(self):
-        """Gets the id of this DisassociateBandwidthPackageRequest.
+        r"""Gets the id of this DisassociateBandwidthPackageRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class DisassociateBandwidthPackageRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisassociateBandwidthPackageRequest.
+        r"""Sets the id of this DisassociateBandwidthPackageRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class DisassociateBandwidthPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateBandwidthPackageRequest.
+        r"""Gets the body of this DisassociateBandwidthPackageRequest.
 
         :return: The body of this DisassociateBandwidthPackageRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequestBody`
@@ -80,7 +80,7 @@ class DisassociateBandwidthPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateBandwidthPackageRequest.
+        r"""Sets the body of this DisassociateBandwidthPackageRequest.
 
         :param body: The body of this DisassociateBandwidthPackageRequest.
         :type body: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequestBody`

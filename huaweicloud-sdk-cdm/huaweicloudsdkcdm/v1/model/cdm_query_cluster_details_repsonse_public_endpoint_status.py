@@ -27,7 +27,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
     }
 
     def __init__(self, status=None, error_message=None):
-        """CdmQueryClusterDetailsRepsonsePublicEndpointStatus
+        r"""CdmQueryClusterDetailsRepsonsePublicEndpointStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
 
     @property
     def status(self):
-        """Gets the status of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
+        r"""Gets the status of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
 
         状态
 
@@ -61,7 +61,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
+        r"""Sets the status of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
 
         状态
 
@@ -72,7 +72,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
 
     @property
     def error_message(self):
-        """Gets the error_message of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
+        r"""Gets the error_message of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
 
         错误信息
 
@@ -83,7 +83,7 @@ class CdmQueryClusterDetailsRepsonsePublicEndpointStatus:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
+        r"""Sets the error_message of this CdmQueryClusterDetailsRepsonsePublicEndpointStatus.
 
         错误信息
 

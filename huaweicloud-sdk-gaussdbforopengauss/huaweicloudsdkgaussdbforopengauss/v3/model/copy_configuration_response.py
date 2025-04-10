@@ -26,7 +26,7 @@ class CopyConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, config_id=None):
-        """CopyConfigurationResponse
+        r"""CopyConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def config_id(self):
-        """Gets the config_id of this CopyConfigurationResponse.
+        r"""Gets the config_id of this CopyConfigurationResponse.
 
         复制后的参数模板ID。
 
@@ -55,7 +55,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this CopyConfigurationResponse.
+        r"""Sets the config_id of this CopyConfigurationResponse.
 
         复制后的参数模板ID。
 

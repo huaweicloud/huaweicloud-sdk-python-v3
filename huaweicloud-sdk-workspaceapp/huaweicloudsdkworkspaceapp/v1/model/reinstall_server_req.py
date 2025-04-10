@@ -25,7 +25,7 @@ class ReinstallServerReq:
     }
 
     def __init__(self, update_access_agent=None):
-        """ReinstallServerReq
+        r"""ReinstallServerReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReinstallServerReq:
 
     @property
     def update_access_agent(self):
-        """Gets the update_access_agent of this ReinstallServerReq.
+        r"""Gets the update_access_agent of this ReinstallServerReq.
 
         是否自动升级hda版本。
 
@@ -54,7 +54,7 @@ class ReinstallServerReq:
 
     @update_access_agent.setter
     def update_access_agent(self, update_access_agent):
-        """Sets the update_access_agent of this ReinstallServerReq.
+        r"""Sets the update_access_agent of this ReinstallServerReq.
 
         是否自动升级hda版本。
 

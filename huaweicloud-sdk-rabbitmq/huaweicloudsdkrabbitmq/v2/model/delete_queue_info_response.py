@@ -24,7 +24,7 @@ class DeleteQueueInfoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteQueueInfoResponse
+        r"""DeleteQueueInfoResponse
 
         The model defined in huaweicloud sdk
 

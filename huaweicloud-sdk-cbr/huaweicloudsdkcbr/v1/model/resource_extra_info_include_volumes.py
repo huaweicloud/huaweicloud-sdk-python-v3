@@ -27,7 +27,7 @@ class ResourceExtraInfoIncludeVolumes:
     }
 
     def __init__(self, id=None, os_version=None):
-        """ResourceExtraInfoIncludeVolumes
+        r"""ResourceExtraInfoIncludeVolumes
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResourceExtraInfoIncludeVolumes:
 
     @property
     def id(self):
-        """Gets the id of this ResourceExtraInfoIncludeVolumes.
+        r"""Gets the id of this ResourceExtraInfoIncludeVolumes.
 
         卷ID，仅支持uuid
 
@@ -60,7 +60,7 @@ class ResourceExtraInfoIncludeVolumes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceExtraInfoIncludeVolumes.
+        r"""Sets the id of this ResourceExtraInfoIncludeVolumes.
 
         卷ID，仅支持uuid
 
@@ -71,7 +71,7 @@ class ResourceExtraInfoIncludeVolumes:
 
     @property
     def os_version(self):
-        """Gets the os_version of this ResourceExtraInfoIncludeVolumes.
+        r"""Gets the os_version of this ResourceExtraInfoIncludeVolumes.
 
         操作系统类型
 
@@ -82,7 +82,7 @@ class ResourceExtraInfoIncludeVolumes:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ResourceExtraInfoIncludeVolumes.
+        r"""Sets the os_version of this ResourceExtraInfoIncludeVolumes.
 
         操作系统类型
 

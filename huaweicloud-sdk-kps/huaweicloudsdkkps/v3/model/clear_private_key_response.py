@@ -26,7 +26,7 @@ class ClearPrivateKeyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ClearPrivateKeyResponse
+        r"""ClearPrivateKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ClearPrivateKeyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ClearPrivateKeyResponse.
+        r"""Gets the body of this ClearPrivateKeyResponse.
 
         :return: The body of this ClearPrivateKeyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ClearPrivateKeyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ClearPrivateKeyResponse.
+        r"""Sets the body of this ClearPrivateKeyResponse.
 
         :param body: The body of this ClearPrivateKeyResponse.
         :type body: str

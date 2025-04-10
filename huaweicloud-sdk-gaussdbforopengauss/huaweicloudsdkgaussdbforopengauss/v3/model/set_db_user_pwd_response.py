@@ -24,7 +24,7 @@ class SetDbUserPwdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetDbUserPwdResponse
+        r"""SetDbUserPwdResponse
 
         The model defined in huaweicloud sdk
 

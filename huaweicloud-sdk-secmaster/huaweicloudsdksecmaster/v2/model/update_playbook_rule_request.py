@@ -33,7 +33,7 @@ class UpdatePlaybookRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, rule_id=None, body=None):
-        """UpdatePlaybookRuleRequest
+        r"""UpdatePlaybookRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdatePlaybookRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdatePlaybookRuleRequest.
+        r"""Gets the project_id of this UpdatePlaybookRuleRequest.
 
         项目ID
 
@@ -78,7 +78,7 @@ class UpdatePlaybookRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdatePlaybookRuleRequest.
+        r"""Sets the project_id of this UpdatePlaybookRuleRequest.
 
         项目ID
 
@@ -89,7 +89,7 @@ class UpdatePlaybookRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdatePlaybookRuleRequest.
+        r"""Gets the workspace_id of this UpdatePlaybookRuleRequest.
 
         工作空间ID
 
@@ -100,7 +100,7 @@ class UpdatePlaybookRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdatePlaybookRuleRequest.
+        r"""Sets the workspace_id of this UpdatePlaybookRuleRequest.
 
         工作空间ID
 
@@ -111,7 +111,7 @@ class UpdatePlaybookRuleRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this UpdatePlaybookRuleRequest.
+        r"""Gets the version_id of this UpdatePlaybookRuleRequest.
 
         剧本版本ID
 
@@ -122,7 +122,7 @@ class UpdatePlaybookRuleRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this UpdatePlaybookRuleRequest.
+        r"""Sets the version_id of this UpdatePlaybookRuleRequest.
 
         剧本版本ID
 
@@ -133,7 +133,7 @@ class UpdatePlaybookRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdatePlaybookRuleRequest.
+        r"""Gets the rule_id of this UpdatePlaybookRuleRequest.
 
         剧本规则ID
 
@@ -144,7 +144,7 @@ class UpdatePlaybookRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdatePlaybookRuleRequest.
+        r"""Sets the rule_id of this UpdatePlaybookRuleRequest.
 
         剧本规则ID
 
@@ -155,7 +155,7 @@ class UpdatePlaybookRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePlaybookRuleRequest.
+        r"""Gets the body of this UpdatePlaybookRuleRequest.
 
         :return: The body of this UpdatePlaybookRuleRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ModifyRuleInfo`
@@ -164,7 +164,7 @@ class UpdatePlaybookRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePlaybookRuleRequest.
+        r"""Sets the body of this UpdatePlaybookRuleRequest.
 
         :param body: The body of this UpdatePlaybookRuleRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.ModifyRuleInfo`

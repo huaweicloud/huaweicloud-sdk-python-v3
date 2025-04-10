@@ -25,7 +25,7 @@ class DeleteFirewallRequest:
     }
 
     def __init__(self, firewall_id=None):
-        """DeleteFirewallRequest
+        r"""DeleteFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFirewallRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this DeleteFirewallRequest.
+        r"""Gets the firewall_id of this DeleteFirewallRequest.
 
         网络ACL ID
 
@@ -53,7 +53,7 @@ class DeleteFirewallRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this DeleteFirewallRequest.
+        r"""Sets the firewall_id of this DeleteFirewallRequest.
 
         网络ACL ID
 

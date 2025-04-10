@@ -40,7 +40,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, preferences=None, clusters=None, users=None, contexts=None, current_context=None, port_id=None):
-        """CreateAutopilotKubernetesClusterCertResponse
+        r"""CreateAutopilotKubernetesClusterCertResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the kind of this CreateAutopilotKubernetesClusterCertResponse.
 
         API类型，固定值“Config”，该值不可修改。 
 
@@ -104,7 +104,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the kind of this CreateAutopilotKubernetesClusterCertResponse.
 
         API类型，固定值“Config”，该值不可修改。 
 
@@ -115,7 +115,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the api_version of this CreateAutopilotKubernetesClusterCertResponse.
 
         API版本，固定值“v1”。
 
@@ -126,7 +126,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the api_version of this CreateAutopilotKubernetesClusterCertResponse.
 
         API版本，固定值“v1”。
 
@@ -137,7 +137,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def preferences(self):
-        """Gets the preferences of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the preferences of this CreateAutopilotKubernetesClusterCertResponse.
 
         当前未使用该字段，当前默认为空。
 
@@ -148,7 +148,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @preferences.setter
     def preferences(self, preferences):
-        """Sets the preferences of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the preferences of this CreateAutopilotKubernetesClusterCertResponse.
 
         当前未使用该字段，当前默认为空。
 
@@ -159,7 +159,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def clusters(self):
-        """Gets the clusters of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the clusters of this CreateAutopilotKubernetesClusterCertResponse.
 
         集群列表。
 
@@ -170,7 +170,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the clusters of this CreateAutopilotKubernetesClusterCertResponse.
 
         集群列表。
 
@@ -181,7 +181,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the users of this CreateAutopilotKubernetesClusterCertResponse.
 
         存放了指定用户的一些证书信息和ClientKey信息。
 
@@ -192,7 +192,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the users of this CreateAutopilotKubernetesClusterCertResponse.
 
         存放了指定用户的一些证书信息和ClientKey信息。
 
@@ -203,7 +203,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def contexts(self):
-        """Gets the contexts of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the contexts of this CreateAutopilotKubernetesClusterCertResponse.
 
         上下文列表。
 
@@ -214,7 +214,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @contexts.setter
     def contexts(self, contexts):
-        """Sets the contexts of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the contexts of this CreateAutopilotKubernetesClusterCertResponse.
 
         上下文列表。
 
@@ -225,7 +225,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def current_context(self):
-        """Gets the current_context of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the current_context of this CreateAutopilotKubernetesClusterCertResponse.
 
         当前上下文，若存在publicIp（虚拟机弹性IP）时为 external; 若不存在publicIp为 internal。
 
@@ -236,7 +236,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @current_context.setter
     def current_context(self, current_context):
-        """Sets the current_context of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the current_context of this CreateAutopilotKubernetesClusterCertResponse.
 
         当前上下文，若存在publicIp（虚拟机弹性IP）时为 external; 若不存在publicIp为 internal。
 
@@ -247,7 +247,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @property
     def port_id(self):
-        """Gets the port_id of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Gets the port_id of this CreateAutopilotKubernetesClusterCertResponse.
 
         :return: The port_id of this CreateAutopilotKubernetesClusterCertResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class CreateAutopilotKubernetesClusterCertResponse(SdkResponse):
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this CreateAutopilotKubernetesClusterCertResponse.
+        r"""Sets the port_id of this CreateAutopilotKubernetesClusterCertResponse.
 
         :param port_id: The port_id of this CreateAutopilotKubernetesClusterCertResponse.
         :type port_id: str

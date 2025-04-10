@@ -65,7 +65,7 @@ class TaxiInvoiceResult:
     }
 
     def __init__(self, location=None, code=None, number=None, phone_number=None, company=None, taxi_number=None, certificate_number=None, identification_number=None, date=None, boarding_time=None, alighting_time=None, time=None, unit_price=None, distance=None, waiting_time=None, fare=None, fuel_oil_surcharge=None, call_service_surcharge=None, total=None, confidence=None, text_location=None):
-        """TaxiInvoiceResult
+        r"""TaxiInvoiceResult
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class TaxiInvoiceResult:
 
     @property
     def location(self):
-        """Gets the location of this TaxiInvoiceResult.
+        r"""Gets the location of this TaxiInvoiceResult.
 
         归属地区。 
 
@@ -194,7 +194,7 @@ class TaxiInvoiceResult:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this TaxiInvoiceResult.
+        r"""Sets the location of this TaxiInvoiceResult.
 
         归属地区。 
 
@@ -205,7 +205,7 @@ class TaxiInvoiceResult:
 
     @property
     def code(self):
-        """Gets the code of this TaxiInvoiceResult.
+        r"""Gets the code of this TaxiInvoiceResult.
 
         发票代码。 
 
@@ -216,7 +216,7 @@ class TaxiInvoiceResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this TaxiInvoiceResult.
+        r"""Sets the code of this TaxiInvoiceResult.
 
         发票代码。 
 
@@ -227,7 +227,7 @@ class TaxiInvoiceResult:
 
     @property
     def number(self):
-        """Gets the number of this TaxiInvoiceResult.
+        r"""Gets the number of this TaxiInvoiceResult.
 
         发票号码。 
 
@@ -238,7 +238,7 @@ class TaxiInvoiceResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TaxiInvoiceResult.
+        r"""Sets the number of this TaxiInvoiceResult.
 
         发票号码。 
 
@@ -249,7 +249,7 @@ class TaxiInvoiceResult:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this TaxiInvoiceResult.
+        r"""Gets the phone_number of this TaxiInvoiceResult.
 
         电话（包括电话、监督电话）。 
 
@@ -260,7 +260,7 @@ class TaxiInvoiceResult:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this TaxiInvoiceResult.
+        r"""Sets the phone_number of this TaxiInvoiceResult.
 
         电话（包括电话、监督电话）。 
 
@@ -271,7 +271,7 @@ class TaxiInvoiceResult:
 
     @property
     def company(self):
-        """Gets the company of this TaxiInvoiceResult.
+        r"""Gets the company of this TaxiInvoiceResult.
 
         单位。 
 
@@ -282,7 +282,7 @@ class TaxiInvoiceResult:
 
     @company.setter
     def company(self, company):
-        """Sets the company of this TaxiInvoiceResult.
+        r"""Sets the company of this TaxiInvoiceResult.
 
         单位。 
 
@@ -293,7 +293,7 @@ class TaxiInvoiceResult:
 
     @property
     def taxi_number(self):
-        """Gets the taxi_number of this TaxiInvoiceResult.
+        r"""Gets the taxi_number of this TaxiInvoiceResult.
 
         车号。 
 
@@ -304,7 +304,7 @@ class TaxiInvoiceResult:
 
     @taxi_number.setter
     def taxi_number(self, taxi_number):
-        """Sets the taxi_number of this TaxiInvoiceResult.
+        r"""Sets the taxi_number of this TaxiInvoiceResult.
 
         车号。 
 
@@ -315,7 +315,7 @@ class TaxiInvoiceResult:
 
     @property
     def certificate_number(self):
-        """Gets the certificate_number of this TaxiInvoiceResult.
+        r"""Gets the certificate_number of this TaxiInvoiceResult.
 
         证号。 
 
@@ -326,7 +326,7 @@ class TaxiInvoiceResult:
 
     @certificate_number.setter
     def certificate_number(self, certificate_number):
-        """Sets the certificate_number of this TaxiInvoiceResult.
+        r"""Sets the certificate_number of this TaxiInvoiceResult.
 
         证号。 
 
@@ -337,7 +337,7 @@ class TaxiInvoiceResult:
 
     @property
     def identification_number(self):
-        """Gets the identification_number of this TaxiInvoiceResult.
+        r"""Gets the identification_number of this TaxiInvoiceResult.
 
         识别编号。 
 
@@ -348,7 +348,7 @@ class TaxiInvoiceResult:
 
     @identification_number.setter
     def identification_number(self, identification_number):
-        """Sets the identification_number of this TaxiInvoiceResult.
+        r"""Sets the identification_number of this TaxiInvoiceResult.
 
         识别编号。 
 
@@ -359,7 +359,7 @@ class TaxiInvoiceResult:
 
     @property
     def date(self):
-        """Gets the date of this TaxiInvoiceResult.
+        r"""Gets the date of this TaxiInvoiceResult.
 
         开票日期。 
 
@@ -370,7 +370,7 @@ class TaxiInvoiceResult:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this TaxiInvoiceResult.
+        r"""Sets the date of this TaxiInvoiceResult.
 
         开票日期。 
 
@@ -381,7 +381,7 @@ class TaxiInvoiceResult:
 
     @property
     def boarding_time(self):
-        """Gets the boarding_time of this TaxiInvoiceResult.
+        r"""Gets the boarding_time of this TaxiInvoiceResult.
 
         上车时间。 
 
@@ -392,7 +392,7 @@ class TaxiInvoiceResult:
 
     @boarding_time.setter
     def boarding_time(self, boarding_time):
-        """Sets the boarding_time of this TaxiInvoiceResult.
+        r"""Sets the boarding_time of this TaxiInvoiceResult.
 
         上车时间。 
 
@@ -403,7 +403,7 @@ class TaxiInvoiceResult:
 
     @property
     def alighting_time(self):
-        """Gets the alighting_time of this TaxiInvoiceResult.
+        r"""Gets the alighting_time of this TaxiInvoiceResult.
 
         下车时间。 
 
@@ -414,7 +414,7 @@ class TaxiInvoiceResult:
 
     @alighting_time.setter
     def alighting_time(self, alighting_time):
-        """Sets the alighting_time of this TaxiInvoiceResult.
+        r"""Sets the alighting_time of this TaxiInvoiceResult.
 
         下车时间。 
 
@@ -425,7 +425,7 @@ class TaxiInvoiceResult:
 
     @property
     def time(self):
-        """Gets the time of this TaxiInvoiceResult.
+        r"""Gets the time of this TaxiInvoiceResult.
 
         时间(起止时间、上下车时间)。 
 
@@ -436,7 +436,7 @@ class TaxiInvoiceResult:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TaxiInvoiceResult.
+        r"""Sets the time of this TaxiInvoiceResult.
 
         时间(起止时间、上下车时间)。 
 
@@ -447,7 +447,7 @@ class TaxiInvoiceResult:
 
     @property
     def unit_price(self):
-        """Gets the unit_price of this TaxiInvoiceResult.
+        r"""Gets the unit_price of this TaxiInvoiceResult.
 
         单价。 
 
@@ -458,7 +458,7 @@ class TaxiInvoiceResult:
 
     @unit_price.setter
     def unit_price(self, unit_price):
-        """Sets the unit_price of this TaxiInvoiceResult.
+        r"""Sets the unit_price of this TaxiInvoiceResult.
 
         单价。 
 
@@ -469,7 +469,7 @@ class TaxiInvoiceResult:
 
     @property
     def distance(self):
-        """Gets the distance of this TaxiInvoiceResult.
+        r"""Gets the distance of this TaxiInvoiceResult.
 
         总里程。 
 
@@ -480,7 +480,7 @@ class TaxiInvoiceResult:
 
     @distance.setter
     def distance(self, distance):
-        """Sets the distance of this TaxiInvoiceResult.
+        r"""Sets the distance of this TaxiInvoiceResult.
 
         总里程。 
 
@@ -491,7 +491,7 @@ class TaxiInvoiceResult:
 
     @property
     def waiting_time(self):
-        """Gets the waiting_time of this TaxiInvoiceResult.
+        r"""Gets the waiting_time of this TaxiInvoiceResult.
 
         等候时间。 
 
@@ -502,7 +502,7 @@ class TaxiInvoiceResult:
 
     @waiting_time.setter
     def waiting_time(self, waiting_time):
-        """Sets the waiting_time of this TaxiInvoiceResult.
+        r"""Sets the waiting_time of this TaxiInvoiceResult.
 
         等候时间。 
 
@@ -513,7 +513,7 @@ class TaxiInvoiceResult:
 
     @property
     def fare(self):
-        """Gets the fare of this TaxiInvoiceResult.
+        r"""Gets the fare of this TaxiInvoiceResult.
 
         金额。 
 
@@ -524,7 +524,7 @@ class TaxiInvoiceResult:
 
     @fare.setter
     def fare(self, fare):
-        """Sets the fare of this TaxiInvoiceResult.
+        r"""Sets the fare of this TaxiInvoiceResult.
 
         金额。 
 
@@ -535,7 +535,7 @@ class TaxiInvoiceResult:
 
     @property
     def fuel_oil_surcharge(self):
-        """Gets the fuel_oil_surcharge of this TaxiInvoiceResult.
+        r"""Gets the fuel_oil_surcharge of this TaxiInvoiceResult.
 
         燃油附加费。 
 
@@ -546,7 +546,7 @@ class TaxiInvoiceResult:
 
     @fuel_oil_surcharge.setter
     def fuel_oil_surcharge(self, fuel_oil_surcharge):
-        """Sets the fuel_oil_surcharge of this TaxiInvoiceResult.
+        r"""Sets the fuel_oil_surcharge of this TaxiInvoiceResult.
 
         燃油附加费。 
 
@@ -557,7 +557,7 @@ class TaxiInvoiceResult:
 
     @property
     def call_service_surcharge(self):
-        """Gets the call_service_surcharge of this TaxiInvoiceResult.
+        r"""Gets the call_service_surcharge of this TaxiInvoiceResult.
 
         电调费（预约费）。 
 
@@ -568,7 +568,7 @@ class TaxiInvoiceResult:
 
     @call_service_surcharge.setter
     def call_service_surcharge(self, call_service_surcharge):
-        """Sets the call_service_surcharge of this TaxiInvoiceResult.
+        r"""Sets the call_service_surcharge of this TaxiInvoiceResult.
 
         电调费（预约费）。 
 
@@ -579,7 +579,7 @@ class TaxiInvoiceResult:
 
     @property
     def total(self):
-        """Gets the total of this TaxiInvoiceResult.
+        r"""Gets the total of this TaxiInvoiceResult.
 
         实收金额。 
 
@@ -590,7 +590,7 @@ class TaxiInvoiceResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TaxiInvoiceResult.
+        r"""Sets the total of this TaxiInvoiceResult.
 
         实收金额。 
 
@@ -601,7 +601,7 @@ class TaxiInvoiceResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this TaxiInvoiceResult.
+        r"""Gets the confidence of this TaxiInvoiceResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -612,7 +612,7 @@ class TaxiInvoiceResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this TaxiInvoiceResult.
+        r"""Sets the confidence of this TaxiInvoiceResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -623,7 +623,7 @@ class TaxiInvoiceResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this TaxiInvoiceResult.
+        r"""Gets the text_location of this TaxiInvoiceResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -634,7 +634,7 @@ class TaxiInvoiceResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this TaxiInvoiceResult.
+        r"""Sets the text_location of this TaxiInvoiceResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

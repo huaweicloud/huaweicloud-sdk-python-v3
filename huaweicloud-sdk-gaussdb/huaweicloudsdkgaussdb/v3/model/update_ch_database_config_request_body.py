@@ -31,7 +31,7 @@ class UpdateChDatabaseConfigRequestBody:
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, database=None, value=None):
-        """UpdateChDatabaseConfigRequestBody
+        r"""UpdateChDatabaseConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this UpdateChDatabaseConfigRequestBody.
+        r"""Gets the source_instance_id of this UpdateChDatabaseConfigRequestBody.
 
         源实例ID，严格匹配UUID规则。
 
@@ -72,7 +72,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this UpdateChDatabaseConfigRequestBody.
+        r"""Sets the source_instance_id of this UpdateChDatabaseConfigRequestBody.
 
         源实例ID，严格匹配UUID规则。
 
@@ -83,7 +83,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this UpdateChDatabaseConfigRequestBody.
+        r"""Gets the source_node_id of this UpdateChDatabaseConfigRequestBody.
 
         源实例节点ID。
 
@@ -94,7 +94,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this UpdateChDatabaseConfigRequestBody.
+        r"""Sets the source_node_id of this UpdateChDatabaseConfigRequestBody.
 
         源实例节点ID。
 
@@ -105,7 +105,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @property
     def database(self):
-        """Gets the database of this UpdateChDatabaseConfigRequestBody.
+        r"""Gets the database of this UpdateChDatabaseConfigRequestBody.
 
         数据库名。
 
@@ -116,7 +116,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this UpdateChDatabaseConfigRequestBody.
+        r"""Sets the database of this UpdateChDatabaseConfigRequestBody.
 
         数据库名。
 
@@ -127,7 +127,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this UpdateChDatabaseConfigRequestBody.
+        r"""Gets the value of this UpdateChDatabaseConfigRequestBody.
 
         配置值。仅支持修改同步范围，不支持修改白名单或黑名单类型。  例如：创建了白名单数据同步，调用本接口修改时， 支持 \"value\"：\"{\\\"white_list\\\":\\\"test1,test2,test3\\\"}\" 不支持 \"value\"：\"{\\\"black_list\\\":\\\"test1,test2,test3\\\"}\"
 
@@ -138,7 +138,7 @@ class UpdateChDatabaseConfigRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateChDatabaseConfigRequestBody.
+        r"""Sets the value of this UpdateChDatabaseConfigRequestBody.
 
         配置值。仅支持修改同步范围，不支持修改白名单或黑名单类型。  例如：创建了白名单数据同步，调用本接口修改时， 支持 \"value\"：\"{\\\"white_list\\\":\\\"test1,test2,test3\\\"}\" 不支持 \"value\"：\"{\\\"black_list\\\":\\\"test1,test2,test3\\\"}\"
 

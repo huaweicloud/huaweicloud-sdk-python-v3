@@ -33,7 +33,7 @@ class ShowPathByIdRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None, limit=None, offset=None):
-        """ShowPathByIdRequest
+        r"""ShowPathByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowPathByIdRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowPathByIdRequest.
+        r"""Gets the workspace of this ShowPathByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ShowPathByIdRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowPathByIdRequest.
+        r"""Sets the workspace of this ShowPathByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ShowPathByIdRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowPathByIdRequest.
+        r"""Gets the dlm_type of this ShowPathByIdRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class ShowPathByIdRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowPathByIdRequest.
+        r"""Sets the dlm_type of this ShowPathByIdRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class ShowPathByIdRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this ShowPathByIdRequest.
+        r"""Gets the catalog_id of this ShowPathByIdRequest.
 
         目录编号。
 
@@ -124,7 +124,7 @@ class ShowPathByIdRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this ShowPathByIdRequest.
+        r"""Sets the catalog_id of this ShowPathByIdRequest.
 
         目录编号。
 
@@ -135,7 +135,7 @@ class ShowPathByIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPathByIdRequest.
+        r"""Gets the limit of this ShowPathByIdRequest.
 
         limit。
 
@@ -146,7 +146,7 @@ class ShowPathByIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPathByIdRequest.
+        r"""Sets the limit of this ShowPathByIdRequest.
 
         limit。
 
@@ -157,7 +157,7 @@ class ShowPathByIdRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPathByIdRequest.
+        r"""Gets the offset of this ShowPathByIdRequest.
 
         offset。
 
@@ -168,7 +168,7 @@ class ShowPathByIdRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPathByIdRequest.
+        r"""Sets the offset of this ShowPathByIdRequest.
 
         offset。
 

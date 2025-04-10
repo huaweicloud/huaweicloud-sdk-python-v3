@@ -37,7 +37,7 @@ class ShowServerResponseServerCertificate:
     }
 
     def __init__(self, id=None, name=None, issuer=None, subject=None, serial_number=None, expiration_time=None, signature_algorithm=None):
-        """ShowServerResponseServerCertificate
+        r"""ShowServerResponseServerCertificate
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def id(self):
-        """Gets the id of this ShowServerResponseServerCertificate.
+        r"""Gets the id of this ShowServerResponseServerCertificate.
 
         证书 ID，CCM 服务中的certificate_id，证书在CCM中被删除后，该ID为空
 
@@ -96,7 +96,7 @@ class ShowServerResponseServerCertificate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowServerResponseServerCertificate.
+        r"""Sets the id of this ShowServerResponseServerCertificate.
 
         证书 ID，CCM 服务中的certificate_id，证书在CCM中被删除后，该ID为空
 
@@ -107,7 +107,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def name(self):
-        """Gets the name of this ShowServerResponseServerCertificate.
+        r"""Gets the name of this ShowServerResponseServerCertificate.
 
         证书名
 
@@ -118,7 +118,7 @@ class ShowServerResponseServerCertificate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowServerResponseServerCertificate.
+        r"""Sets the name of this ShowServerResponseServerCertificate.
 
         证书名
 
@@ -129,7 +129,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def issuer(self):
-        """Gets the issuer of this ShowServerResponseServerCertificate.
+        r"""Gets the issuer of this ShowServerResponseServerCertificate.
 
         颁发者
 
@@ -140,7 +140,7 @@ class ShowServerResponseServerCertificate:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this ShowServerResponseServerCertificate.
+        r"""Sets the issuer of this ShowServerResponseServerCertificate.
 
         颁发者
 
@@ -151,7 +151,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def subject(self):
-        """Gets the subject of this ShowServerResponseServerCertificate.
+        r"""Gets the subject of this ShowServerResponseServerCertificate.
 
         主体
 
@@ -162,7 +162,7 @@ class ShowServerResponseServerCertificate:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ShowServerResponseServerCertificate.
+        r"""Sets the subject of this ShowServerResponseServerCertificate.
 
         主体
 
@@ -173,7 +173,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this ShowServerResponseServerCertificate.
+        r"""Gets the serial_number of this ShowServerResponseServerCertificate.
 
         序列号
 
@@ -184,7 +184,7 @@ class ShowServerResponseServerCertificate:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this ShowServerResponseServerCertificate.
+        r"""Sets the serial_number of this ShowServerResponseServerCertificate.
 
         序列号
 
@@ -195,7 +195,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this ShowServerResponseServerCertificate.
+        r"""Gets the expiration_time of this ShowServerResponseServerCertificate.
 
         过期时间
 
@@ -206,7 +206,7 @@ class ShowServerResponseServerCertificate:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this ShowServerResponseServerCertificate.
+        r"""Sets the expiration_time of this ShowServerResponseServerCertificate.
 
         过期时间
 
@@ -217,7 +217,7 @@ class ShowServerResponseServerCertificate:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this ShowServerResponseServerCertificate.
+        r"""Gets the signature_algorithm of this ShowServerResponseServerCertificate.
 
         证书签名算法
 
@@ -228,7 +228,7 @@ class ShowServerResponseServerCertificate:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ShowServerResponseServerCertificate.
+        r"""Sets the signature_algorithm of this ShowServerResponseServerCertificate.
 
         证书签名算法
 

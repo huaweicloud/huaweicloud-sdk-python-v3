@@ -27,7 +27,7 @@ class ListConfigurationsDifferencesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListConfigurationsDifferencesRequest
+        r"""ListConfigurationsDifferencesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConfigurationsDifferencesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListConfigurationsDifferencesRequest.
+        r"""Gets the x_language of this ListConfigurationsDifferencesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -61,7 +61,7 @@ class ListConfigurationsDifferencesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListConfigurationsDifferencesRequest.
+        r"""Sets the x_language of this ListConfigurationsDifferencesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -72,7 +72,7 @@ class ListConfigurationsDifferencesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListConfigurationsDifferencesRequest.
+        r"""Gets the body of this ListConfigurationsDifferencesRequest.
 
         :return: The body of this ListConfigurationsDifferencesRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListConfigurationsDifferencesRequestBody`
@@ -81,7 +81,7 @@ class ListConfigurationsDifferencesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListConfigurationsDifferencesRequest.
+        r"""Sets the body of this ListConfigurationsDifferencesRequest.
 
         :param body: The body of this ListConfigurationsDifferencesRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ListConfigurationsDifferencesRequestBody`

@@ -27,7 +27,7 @@ class UpdateScheduleRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateScheduleRequest
+        r"""UpdateScheduleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateScheduleRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateScheduleRequest.
+        r"""Gets the id of this UpdateScheduleRequest.
 
         计算资源id
 
@@ -60,7 +60,7 @@ class UpdateScheduleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateScheduleRequest.
+        r"""Sets the id of this UpdateScheduleRequest.
 
         计算资源id
 
@@ -71,7 +71,7 @@ class UpdateScheduleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScheduleRequest.
+        r"""Gets the body of this UpdateScheduleRequest.
 
         :return: The body of this UpdateScheduleRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleReq`
@@ -80,7 +80,7 @@ class UpdateScheduleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScheduleRequest.
+        r"""Sets the body of this UpdateScheduleRequest.
 
         :param body: The body of this UpdateScheduleRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleReq`

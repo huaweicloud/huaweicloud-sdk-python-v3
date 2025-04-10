@@ -29,7 +29,7 @@ class ListConfigHistoriesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListConfigHistoriesRequest
+        r"""ListConfigHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListConfigHistoriesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConfigHistoriesRequest.
+        r"""Gets the instance_id of this ListConfigHistoriesRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ListConfigHistoriesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConfigHistoriesRequest.
+        r"""Sets the instance_id of this ListConfigHistoriesRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ListConfigHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConfigHistoriesRequest.
+        r"""Gets the offset of this ListConfigHistoriesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -89,7 +89,7 @@ class ListConfigHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConfigHistoriesRequest.
+        r"""Sets the offset of this ListConfigHistoriesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -100,7 +100,7 @@ class ListConfigHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigHistoriesRequest.
+        r"""Gets the limit of this ListConfigHistoriesRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
@@ -111,7 +111,7 @@ class ListConfigHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigHistoriesRequest.
+        r"""Sets the limit of this ListConfigHistoriesRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 

@@ -31,7 +31,7 @@ class Version:
     }
 
     def __init__(self, id=None, links=None, status=None, updated=None):
-        """Version
+        r"""Version
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Version:
 
     @property
     def id(self):
-        """Gets the id of this Version.
+        r"""Gets the id of this Version.
 
         API版本号。
 
@@ -75,7 +75,7 @@ class Version:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Version.
+        r"""Sets the id of this Version.
 
         API版本号。
 
@@ -86,7 +86,7 @@ class Version:
 
     @property
     def links(self):
-        """Gets the links of this Version.
+        r"""Gets the links of this Version.
 
         API链接地址信息。
 
@@ -97,7 +97,7 @@ class Version:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Version.
+        r"""Sets the links of this Version.
 
         API链接地址信息。
 
@@ -108,7 +108,7 @@ class Version:
 
     @property
     def status(self):
-        """Gets the status of this Version.
+        r"""Gets the status of this Version.
 
         版本状态。 SUPPORTED表示支持的版本
 
@@ -119,7 +119,7 @@ class Version:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Version.
+        r"""Sets the status of this Version.
 
         版本状态。 SUPPORTED表示支持的版本
 
@@ -130,7 +130,7 @@ class Version:
 
     @property
     def updated(self):
-        """Gets the updated of this Version.
+        r"""Gets the updated of this Version.
 
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
 
@@ -141,7 +141,7 @@ class Version:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this Version.
+        r"""Sets the updated of this Version.
 
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
 

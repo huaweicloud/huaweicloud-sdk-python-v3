@@ -28,7 +28,7 @@ class ShowGlobalDcGatewayResponse(SdkResponse):
     }
 
     def __init__(self, global_dc_gateway=None, request_id=None):
-        """ShowGlobalDcGatewayResponse
+        r"""ShowGlobalDcGatewayResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowGlobalDcGatewayResponse(SdkResponse):
 
     @property
     def global_dc_gateway(self):
-        """Gets the global_dc_gateway of this ShowGlobalDcGatewayResponse.
+        r"""Gets the global_dc_gateway of this ShowGlobalDcGatewayResponse.
 
         :return: The global_dc_gateway of this ShowGlobalDcGatewayResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayEntry`
@@ -60,7 +60,7 @@ class ShowGlobalDcGatewayResponse(SdkResponse):
 
     @global_dc_gateway.setter
     def global_dc_gateway(self, global_dc_gateway):
-        """Sets the global_dc_gateway of this ShowGlobalDcGatewayResponse.
+        r"""Sets the global_dc_gateway of this ShowGlobalDcGatewayResponse.
 
         :param global_dc_gateway: The global_dc_gateway of this ShowGlobalDcGatewayResponse.
         :type global_dc_gateway: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayEntry`
@@ -69,7 +69,7 @@ class ShowGlobalDcGatewayResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowGlobalDcGatewayResponse.
+        r"""Gets the request_id of this ShowGlobalDcGatewayResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowGlobalDcGatewayResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowGlobalDcGatewayResponse.
+        r"""Sets the request_id of this ShowGlobalDcGatewayResponse.
 
         请求ID。
 

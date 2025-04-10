@@ -30,7 +30,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunMultiGrainedSegmentResponse
+        r"""RunMultiGrainedSegmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunMultiGrainedSegmentResponse.
+        r"""Gets the result of this RunMultiGrainedSegmentResponse.
 
         多粒度分词结果列表。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunMultiGrainedSegmentResponse.
+        r"""Sets the result of this RunMultiGrainedSegmentResponse.
 
         多粒度分词结果列表。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunMultiGrainedSegmentResponse.
+        r"""Gets the error_code of this RunMultiGrainedSegmentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunMultiGrainedSegmentResponse.
+        r"""Sets the error_code of this RunMultiGrainedSegmentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunMultiGrainedSegmentResponse.
+        r"""Gets the error_msg of this RunMultiGrainedSegmentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunMultiGrainedSegmentResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunMultiGrainedSegmentResponse.
+        r"""Sets the error_msg of this RunMultiGrainedSegmentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

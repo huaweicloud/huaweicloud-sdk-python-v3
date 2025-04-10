@@ -30,7 +30,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
     }
 
     def __init__(self, metric_name=None, unit=None, metrics=None):
-        """ListInstanceMultiNodesSingleMetricResponse
+        r"""ListInstanceMultiNodesSingleMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListInstanceMultiNodesSingleMetricResponse.
+        r"""Gets the metric_name of this ListInstanceMultiNodesSingleMetricResponse.
 
         指标名称
 
@@ -69,7 +69,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListInstanceMultiNodesSingleMetricResponse.
+        r"""Sets the metric_name of this ListInstanceMultiNodesSingleMetricResponse.
 
         指标名称
 
@@ -80,7 +80,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
 
     @property
     def unit(self):
-        """Gets the unit of this ListInstanceMultiNodesSingleMetricResponse.
+        r"""Gets the unit of this ListInstanceMultiNodesSingleMetricResponse.
 
         单位
 
@@ -91,7 +91,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ListInstanceMultiNodesSingleMetricResponse.
+        r"""Sets the unit of this ListInstanceMultiNodesSingleMetricResponse.
 
         单位
 
@@ -102,7 +102,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ListInstanceMultiNodesSingleMetricResponse.
+        r"""Gets the metrics of this ListInstanceMultiNodesSingleMetricResponse.
 
         指标值
 
@@ -113,7 +113,7 @@ class ListInstanceMultiNodesSingleMetricResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ListInstanceMultiNodesSingleMetricResponse.
+        r"""Sets the metrics of this ListInstanceMultiNodesSingleMetricResponse.
 
         指标值
 

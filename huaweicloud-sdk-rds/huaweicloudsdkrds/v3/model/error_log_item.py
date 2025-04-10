@@ -31,7 +31,7 @@ class ErrorLogItem:
     }
 
     def __init__(self, time=None, level=None, content=None, line_num=None):
-        """ErrorLogItem
+        r"""ErrorLogItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ErrorLogItem:
 
     @property
     def time(self):
-        """Gets the time of this ErrorLogItem.
+        r"""Gets the time of this ErrorLogItem.
 
         日期时间UTC时间。
 
@@ -75,7 +75,7 @@ class ErrorLogItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ErrorLogItem.
+        r"""Sets the time of this ErrorLogItem.
 
         日期时间UTC时间。
 
@@ -86,7 +86,7 @@ class ErrorLogItem:
 
     @property
     def level(self):
-        """Gets the level of this ErrorLogItem.
+        r"""Gets the level of this ErrorLogItem.
 
         日志级别。
 
@@ -97,7 +97,7 @@ class ErrorLogItem:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ErrorLogItem.
+        r"""Sets the level of this ErrorLogItem.
 
         日志级别。
 
@@ -108,7 +108,7 @@ class ErrorLogItem:
 
     @property
     def content(self):
-        """Gets the content of this ErrorLogItem.
+        r"""Gets the content of this ErrorLogItem.
 
         错误日志内容。
 
@@ -119,7 +119,7 @@ class ErrorLogItem:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ErrorLogItem.
+        r"""Sets the content of this ErrorLogItem.
 
         错误日志内容。
 
@@ -130,7 +130,7 @@ class ErrorLogItem:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ErrorLogItem.
+        r"""Gets the line_num of this ErrorLogItem.
 
         日志单行序列号。
 
@@ -141,7 +141,7 @@ class ErrorLogItem:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ErrorLogItem.
+        r"""Sets the line_num of this ErrorLogItem.
 
         日志单行序列号。
 

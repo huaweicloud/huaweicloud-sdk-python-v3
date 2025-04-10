@@ -27,7 +27,7 @@ class ActionParamsRepairInfo:
     }
 
     def __init__(self, query_id=None, objects=None):
-        """ActionParamsRepairInfo
+        r"""ActionParamsRepairInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ActionParamsRepairInfo:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ActionParamsRepairInfo.
+        r"""Gets the query_id of this ActionParamsRepairInfo.
 
         对比任务ID。
 
@@ -61,7 +61,7 @@ class ActionParamsRepairInfo:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ActionParamsRepairInfo.
+        r"""Sets the query_id of this ActionParamsRepairInfo.
 
         对比任务ID。
 
@@ -72,7 +72,7 @@ class ActionParamsRepairInfo:
 
     @property
     def objects(self):
-        """Gets the objects of this ActionParamsRepairInfo.
+        r"""Gets the objects of this ActionParamsRepairInfo.
 
         数据修复对象信息。
 
@@ -83,7 +83,7 @@ class ActionParamsRepairInfo:
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this ActionParamsRepairInfo.
+        r"""Sets the objects of this ActionParamsRepairInfo.
 
         数据修复对象信息。
 

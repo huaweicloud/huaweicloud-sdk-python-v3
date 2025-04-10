@@ -51,7 +51,7 @@ class QueryLtsLogParams:
     }
 
     def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None, query=None, is_analysis_query=None):
-        """QueryLtsLogParams
+        r"""QueryLtsLogParams
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class QueryLtsLogParams:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryLtsLogParams.
+        r"""Gets the start_time of this QueryLtsLogParams.
 
         搜索起始时间（UTC时间，毫秒级）。
 
@@ -143,7 +143,7 @@ class QueryLtsLogParams:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryLtsLogParams.
+        r"""Sets the start_time of this QueryLtsLogParams.
 
         搜索起始时间（UTC时间，毫秒级）。
 
@@ -154,7 +154,7 @@ class QueryLtsLogParams:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryLtsLogParams.
+        r"""Gets the end_time of this QueryLtsLogParams.
 
         搜索结束时间（UTC时间，毫秒级）。
 
@@ -165,7 +165,7 @@ class QueryLtsLogParams:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryLtsLogParams.
+        r"""Sets the end_time of this QueryLtsLogParams.
 
         搜索结束时间（UTC时间，毫秒级）。
 
@@ -176,7 +176,7 @@ class QueryLtsLogParams:
 
     @property
     def labels(self):
-        """Gets the labels of this QueryLtsLogParams.
+        r"""Gets the labels of this QueryLtsLogParams.
 
         日志过滤条件集合，不同日志来源所需字段不同。
 
@@ -187,7 +187,7 @@ class QueryLtsLogParams:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this QueryLtsLogParams.
+        r"""Sets the labels of this QueryLtsLogParams.
 
         日志过滤条件集合，不同日志来源所需字段不同。
 
@@ -198,7 +198,7 @@ class QueryLtsLogParams:
 
     @property
     def is_count(self):
-        """Gets the is_count of this QueryLtsLogParams.
+        r"""Gets the is_count of this QueryLtsLogParams.
 
         日志条数统计。默认为false(不统计)，true为统计日志条数。
 
@@ -209,7 +209,7 @@ class QueryLtsLogParams:
 
     @is_count.setter
     def is_count(self, is_count):
-        """Sets the is_count of this QueryLtsLogParams.
+        r"""Sets the is_count of this QueryLtsLogParams.
 
         日志条数统计。默认为false(不统计)，true为统计日志条数。
 
@@ -220,7 +220,7 @@ class QueryLtsLogParams:
 
     @property
     def keywords(self):
-        """Gets the keywords of this QueryLtsLogParams.
+        r"""Gets the keywords of this QueryLtsLogParams.
 
         支持关键词精确搜索。关键词指相邻两个分词符之间的单词,例：error
 
@@ -231,7 +231,7 @@ class QueryLtsLogParams:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this QueryLtsLogParams.
+        r"""Sets the keywords of this QueryLtsLogParams.
 
         支持关键词精确搜索。关键词指相邻两个分词符之间的单词,例：error
 
@@ -242,7 +242,7 @@ class QueryLtsLogParams:
 
     @property
     def line_num(self):
-        """Gets the line_num of this QueryLtsLogParams.
+        r"""Gets the line_num of this QueryLtsLogParams.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time 和 end_time 之间。
 
@@ -253,7 +253,7 @@ class QueryLtsLogParams:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this QueryLtsLogParams.
+        r"""Sets the line_num of this QueryLtsLogParams.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time 和 end_time 之间。
 
@@ -264,7 +264,7 @@ class QueryLtsLogParams:
 
     @property
     def time__(self):
-        """Gets the time__ of this QueryLtsLogParams.
+        r"""Gets the time__ of this QueryLtsLogParams.
 
         若已开启自定义时间功能，需要使用该字段进行分页查询。
 
@@ -275,7 +275,7 @@ class QueryLtsLogParams:
 
     @time__.setter
     def time__(self, time__):
-        """Sets the time__ of this QueryLtsLogParams.
+        r"""Sets the time__ of this QueryLtsLogParams.
 
         若已开启自定义时间功能，需要使用该字段进行分页查询。
 
@@ -286,7 +286,7 @@ class QueryLtsLogParams:
 
     @property
     def is_desc(self):
-        """Gets the is_desc of this QueryLtsLogParams.
+        r"""Gets the is_desc of this QueryLtsLogParams.
 
         顺序或者倒序查询, 默认为false(顺序查询)
 
@@ -297,7 +297,7 @@ class QueryLtsLogParams:
 
     @is_desc.setter
     def is_desc(self, is_desc):
-        """Sets the is_desc of this QueryLtsLogParams.
+        r"""Sets the is_desc of this QueryLtsLogParams.
 
         顺序或者倒序查询, 默认为false(顺序查询)
 
@@ -308,7 +308,7 @@ class QueryLtsLogParams:
 
     @property
     def search_type(self):
-        """Gets the search_type of this QueryLtsLogParams.
+        r"""Gets the search_type of this QueryLtsLogParams.
 
         首次查询为 “init”, 分页查询时为 “forwards”或者“backwards”, 默认为首次查询“init”, 与 is_desc 参数配合进行分页查询。
 
@@ -319,7 +319,7 @@ class QueryLtsLogParams:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this QueryLtsLogParams.
+        r"""Sets the search_type of this QueryLtsLogParams.
 
         首次查询为 “init”, 分页查询时为 “forwards”或者“backwards”, 默认为首次查询“init”, 与 is_desc 参数配合进行分页查询。
 
@@ -330,7 +330,7 @@ class QueryLtsLogParams:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryLtsLogParams.
+        r"""Gets the limit of this QueryLtsLogParams.
 
         表示每次查询的日志条数，不填时默认为50，建议您设置为100。
 
@@ -341,7 +341,7 @@ class QueryLtsLogParams:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryLtsLogParams.
+        r"""Sets the limit of this QueryLtsLogParams.
 
         表示每次查询的日志条数，不填时默认为50，建议您设置为100。
 
@@ -352,7 +352,7 @@ class QueryLtsLogParams:
 
     @property
     def highlight(self):
-        """Gets the highlight of this QueryLtsLogParams.
+        r"""Gets the highlight of this QueryLtsLogParams.
 
         日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
 
@@ -363,7 +363,7 @@ class QueryLtsLogParams:
 
     @highlight.setter
     def highlight(self, highlight):
-        """Sets the highlight of this QueryLtsLogParams.
+        r"""Sets the highlight of this QueryLtsLogParams.
 
         日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
 
@@ -374,7 +374,7 @@ class QueryLtsLogParams:
 
     @property
     def is_iterative(self):
-        """Gets the is_iterative of this QueryLtsLogParams.
+        r"""Gets the is_iterative of this QueryLtsLogParams.
 
         日志迭代查询，默认为false（不开启迭代），true为开启迭代。
 
@@ -385,7 +385,7 @@ class QueryLtsLogParams:
 
     @is_iterative.setter
     def is_iterative(self, is_iterative):
-        """Sets the is_iterative of this QueryLtsLogParams.
+        r"""Sets the is_iterative of this QueryLtsLogParams.
 
         日志迭代查询，默认为false（不开启迭代），true为开启迭代。
 
@@ -396,7 +396,7 @@ class QueryLtsLogParams:
 
     @property
     def query(self):
-        """Gets the query of this QueryLtsLogParams.
+        r"""Gets the query of this QueryLtsLogParams.
 
         使用带管道符的sql分析语句进行查询，需要query参数is_analysis_query为true时生效。
 
@@ -407,7 +407,7 @@ class QueryLtsLogParams:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this QueryLtsLogParams.
+        r"""Sets the query of this QueryLtsLogParams.
 
         使用带管道符的sql分析语句进行查询，需要query参数is_analysis_query为true时生效。
 
@@ -418,7 +418,7 @@ class QueryLtsLogParams:
 
     @property
     def is_analysis_query(self):
-        """Gets the is_analysis_query of this QueryLtsLogParams.
+        r"""Gets the is_analysis_query of this QueryLtsLogParams.
 
         是否为带管道符的sql分析语句。当该参数为true时，将依照body体中的query参数内容进行查询，且body体中除start_time与end_time以外的参数失效，分页、排序、查询结果条数等功能请依照sql语法规则实现。查询结果的响应体不同于未启用时的查询方式，将以默认列存的形式返回查询结果。当前仅对内测用户开放。响应示例：{\"analysisLogs\":[{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"}]}
 
@@ -429,7 +429,7 @@ class QueryLtsLogParams:
 
     @is_analysis_query.setter
     def is_analysis_query(self, is_analysis_query):
-        """Sets the is_analysis_query of this QueryLtsLogParams.
+        r"""Sets the is_analysis_query of this QueryLtsLogParams.
 
         是否为带管道符的sql分析语句。当该参数为true时，将依照body体中的query参数内容进行查询，且body体中除start_time与end_time以外的参数失效，分页、排序、查询结果条数等功能请依照sql语法规则实现。查询结果的响应体不同于未启用时的查询方式，将以默认列存的形式返回查询结果。当前仅对内测用户开放。响应示例：{\"analysisLogs\":[{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"},{\"field1\":\"1\",\"field2\":\"2\",\"field3\":\"3\"}]}
 

@@ -30,7 +30,7 @@ class ListAdOuUsersResponse(SdkResponse):
     }
 
     def __init__(self, user_infos=None, total_count=None, enable_create_count=None):
-        """ListAdOuUsersResponse
+        r"""ListAdOuUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAdOuUsersResponse(SdkResponse):
 
     @property
     def user_infos(self):
-        """Gets the user_infos of this ListAdOuUsersResponse.
+        r"""Gets the user_infos of this ListAdOuUsersResponse.
 
         OU对象
 
@@ -69,7 +69,7 @@ class ListAdOuUsersResponse(SdkResponse):
 
     @user_infos.setter
     def user_infos(self, user_infos):
-        """Sets the user_infos of this ListAdOuUsersResponse.
+        r"""Sets the user_infos of this ListAdOuUsersResponse.
 
         OU对象
 
@@ -80,7 +80,7 @@ class ListAdOuUsersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAdOuUsersResponse.
+        r"""Gets the total_count of this ListAdOuUsersResponse.
 
         用户数
 
@@ -91,7 +91,7 @@ class ListAdOuUsersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAdOuUsersResponse.
+        r"""Sets the total_count of this ListAdOuUsersResponse.
 
         用户数
 
@@ -102,7 +102,7 @@ class ListAdOuUsersResponse(SdkResponse):
 
     @property
     def enable_create_count(self):
-        """Gets the enable_create_count of this ListAdOuUsersResponse.
+        r"""Gets the enable_create_count of this ListAdOuUsersResponse.
 
         可以创建的用户数量
 
@@ -113,7 +113,7 @@ class ListAdOuUsersResponse(SdkResponse):
 
     @enable_create_count.setter
     def enable_create_count(self, enable_create_count):
-        """Sets the enable_create_count of this ListAdOuUsersResponse.
+        r"""Sets the enable_create_count of this ListAdOuUsersResponse.
 
         可以创建的用户数量
 

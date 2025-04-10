@@ -29,7 +29,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
     }
 
     def __init__(self, extend_mode=None, api_mode=None, file_name=None):
-        """ImportLiveDataApiDefinitionsV2RequestBody
+        r"""ImportLiveDataApiDefinitionsV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
 
     @property
     def extend_mode(self):
-        """Gets the extend_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
+        r"""Gets the extend_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
 
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
@@ -67,7 +67,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
 
     @extend_mode.setter
     def extend_mode(self, extend_mode):
-        """Sets the extend_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
+        r"""Sets the extend_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
 
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
@@ -78,7 +78,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
 
     @property
     def api_mode(self):
-        """Gets the api_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
+        r"""Gets the api_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
 
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
@@ -89,7 +89,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
 
     @api_mode.setter
     def api_mode(self, api_mode):
-        """Sets the api_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
+        r"""Sets the api_mode of this ImportLiveDataApiDefinitionsV2RequestBody.
 
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
@@ -100,7 +100,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ImportLiveDataApiDefinitionsV2RequestBody.
+        r"""Gets the file_name of this ImportLiveDataApiDefinitionsV2RequestBody.
 
         导入自定义后端API的请求体，json或yaml格式的文件
 
@@ -111,7 +111,7 @@ class ImportLiveDataApiDefinitionsV2RequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ImportLiveDataApiDefinitionsV2RequestBody.
+        r"""Sets the file_name of this ImportLiveDataApiDefinitionsV2RequestBody.
 
         导入自定义后端API的请求体，json或yaml格式的文件
 

@@ -33,7 +33,7 @@ class Group:
     }
 
     def __init__(self, group_id=None, group_name=None, created_at=None, urn=None, description=None):
-        """Group
+        r"""Group
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class Group:
 
     @property
     def group_id(self):
-        """Gets the group_id of this Group.
+        r"""Gets the group_id of this Group.
 
         用户组ID。
 
@@ -78,7 +78,7 @@ class Group:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this Group.
+        r"""Sets the group_id of this Group.
 
         用户组ID。
 
@@ -89,7 +89,7 @@ class Group:
 
     @property
     def group_name(self):
-        """Gets the group_name of this Group.
+        r"""Gets the group_name of this Group.
 
         用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
@@ -100,7 +100,7 @@ class Group:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this Group.
+        r"""Sets the group_name of this Group.
 
         用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
@@ -111,7 +111,7 @@ class Group:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Group.
+        r"""Gets the created_at of this Group.
 
         用户组创建时间。
 
@@ -122,7 +122,7 @@ class Group:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Group.
+        r"""Sets the created_at of this Group.
 
         用户组创建时间。
 
@@ -133,7 +133,7 @@ class Group:
 
     @property
     def urn(self):
-        """Gets the urn of this Group.
+        r"""Gets the urn of this Group.
 
         统一资源名称。
 
@@ -144,7 +144,7 @@ class Group:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this Group.
+        r"""Sets the urn of this Group.
 
         统一资源名称。
 
@@ -155,7 +155,7 @@ class Group:
 
     @property
     def description(self):
-        """Gets the description of this Group.
+        r"""Gets the description of this Group.
 
         用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -166,7 +166,7 @@ class Group:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Group.
+        r"""Sets the description of this Group.
 
         用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 

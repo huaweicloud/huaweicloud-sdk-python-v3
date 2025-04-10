@@ -29,7 +29,7 @@ class CategorySuggestions:
     }
 
     def __init__(self, politics=None, terrorism=None, porn=None):
-        """CategorySuggestions
+        r"""CategorySuggestions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CategorySuggestions:
 
     @property
     def politics(self):
-        """Gets the politics of this CategorySuggestions.
+        r"""Gets the politics of this CategorySuggestions.
 
         政治人物审核。
 
@@ -68,7 +68,7 @@ class CategorySuggestions:
 
     @politics.setter
     def politics(self, politics):
-        """Sets the politics of this CategorySuggestions.
+        r"""Sets the politics of this CategorySuggestions.
 
         政治人物审核。
 
@@ -79,7 +79,7 @@ class CategorySuggestions:
 
     @property
     def terrorism(self):
-        """Gets the terrorism of this CategorySuggestions.
+        r"""Gets the terrorism of this CategorySuggestions.
 
         暴恐内容审核。
 
@@ -90,7 +90,7 @@ class CategorySuggestions:
 
     @terrorism.setter
     def terrorism(self, terrorism):
-        """Sets the terrorism of this CategorySuggestions.
+        r"""Sets the terrorism of this CategorySuggestions.
 
         暴恐内容审核。
 
@@ -101,7 +101,7 @@ class CategorySuggestions:
 
     @property
     def porn(self):
-        """Gets the porn of this CategorySuggestions.
+        r"""Gets the porn of this CategorySuggestions.
 
         情色内容审核。
 
@@ -112,7 +112,7 @@ class CategorySuggestions:
 
     @porn.setter
     def porn(self, porn):
-        """Sets the porn of this CategorySuggestions.
+        r"""Sets the porn of this CategorySuggestions.
 
         情色内容审核。
 

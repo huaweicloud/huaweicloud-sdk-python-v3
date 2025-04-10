@@ -27,7 +27,7 @@ class ShrinkNodesReq:
     }
 
     def __init__(self, migrate_data=None, shrink_nodes=None):
-        """ShrinkNodesReq
+        r"""ShrinkNodesReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShrinkNodesReq:
 
     @property
     def migrate_data(self):
-        """Gets the migrate_data of this ShrinkNodesReq.
+        r"""Gets the migrate_data of this ShrinkNodesReq.
 
         是否迁移数据。 - \"true\"：迁移数据。 - \"false\"：不迁移数据。
 
@@ -60,7 +60,7 @@ class ShrinkNodesReq:
 
     @migrate_data.setter
     def migrate_data(self, migrate_data):
-        """Sets the migrate_data of this ShrinkNodesReq.
+        r"""Sets the migrate_data of this ShrinkNodesReq.
 
         是否迁移数据。 - \"true\"：迁移数据。 - \"false\"：不迁移数据。
 
@@ -71,7 +71,7 @@ class ShrinkNodesReq:
 
     @property
     def shrink_nodes(self):
-        """Gets the shrink_nodes of this ShrinkNodesReq.
+        r"""Gets the shrink_nodes of this ShrinkNodesReq.
 
         需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
 
@@ -82,7 +82,7 @@ class ShrinkNodesReq:
 
     @shrink_nodes.setter
     def shrink_nodes(self, shrink_nodes):
-        """Sets the shrink_nodes of this ShrinkNodesReq.
+        r"""Sets the shrink_nodes of this ShrinkNodesReq.
 
         需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
 

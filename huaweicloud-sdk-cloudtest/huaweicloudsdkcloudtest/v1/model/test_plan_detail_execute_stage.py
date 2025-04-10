@@ -31,7 +31,7 @@ class TestPlanDetailExecuteStage:
     }
 
     def __init__(self, defect_count=None, completed_defect_count=None, case_pass_rate=None, executed_case_count=None):
-        """TestPlanDetailExecuteStage
+        r"""TestPlanDetailExecuteStage
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TestPlanDetailExecuteStage:
 
     @property
     def defect_count(self):
-        """Gets the defect_count of this TestPlanDetailExecuteStage.
+        r"""Gets the defect_count of this TestPlanDetailExecuteStage.
 
         缺陷个数
 
@@ -75,7 +75,7 @@ class TestPlanDetailExecuteStage:
 
     @defect_count.setter
     def defect_count(self, defect_count):
-        """Sets the defect_count of this TestPlanDetailExecuteStage.
+        r"""Sets the defect_count of this TestPlanDetailExecuteStage.
 
         缺陷个数
 
@@ -86,7 +86,7 @@ class TestPlanDetailExecuteStage:
 
     @property
     def completed_defect_count(self):
-        """Gets the completed_defect_count of this TestPlanDetailExecuteStage.
+        r"""Gets the completed_defect_count of this TestPlanDetailExecuteStage.
 
         已完成缺陷个数
 
@@ -97,7 +97,7 @@ class TestPlanDetailExecuteStage:
 
     @completed_defect_count.setter
     def completed_defect_count(self, completed_defect_count):
-        """Sets the completed_defect_count of this TestPlanDetailExecuteStage.
+        r"""Sets the completed_defect_count of this TestPlanDetailExecuteStage.
 
         已完成缺陷个数
 
@@ -108,7 +108,7 @@ class TestPlanDetailExecuteStage:
 
     @property
     def case_pass_rate(self):
-        """Gets the case_pass_rate of this TestPlanDetailExecuteStage.
+        r"""Gets the case_pass_rate of this TestPlanDetailExecuteStage.
 
         用例通过率,按用例结果计算
 
@@ -119,7 +119,7 @@ class TestPlanDetailExecuteStage:
 
     @case_pass_rate.setter
     def case_pass_rate(self, case_pass_rate):
-        """Sets the case_pass_rate of this TestPlanDetailExecuteStage.
+        r"""Sets the case_pass_rate of this TestPlanDetailExecuteStage.
 
         用例通过率,按用例结果计算
 
@@ -130,7 +130,7 @@ class TestPlanDetailExecuteStage:
 
     @property
     def executed_case_count(self):
-        """Gets the executed_case_count of this TestPlanDetailExecuteStage.
+        r"""Gets the executed_case_count of this TestPlanDetailExecuteStage.
 
         已执行用例数, 按用例状态统计
 
@@ -141,7 +141,7 @@ class TestPlanDetailExecuteStage:
 
     @executed_case_count.setter
     def executed_case_count(self, executed_case_count):
-        """Sets the executed_case_count of this TestPlanDetailExecuteStage.
+        r"""Sets the executed_case_count of this TestPlanDetailExecuteStage.
 
         已执行用例数, 按用例状态统计
 

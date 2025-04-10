@@ -35,7 +35,7 @@ class RuleGroupRequest:
     }
 
     def __init__(self, category=None, default_status=None, group_desc=None, group_name=None, id=None, rule_ids=None):
-        """RuleGroupRequest
+        r"""RuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RuleGroupRequest:
 
     @property
     def category(self):
-        """Gets the category of this RuleGroupRequest.
+        r"""Gets the category of this RuleGroupRequest.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -89,7 +89,7 @@ class RuleGroupRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this RuleGroupRequest.
+        r"""Sets the category of this RuleGroupRequest.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -100,7 +100,7 @@ class RuleGroupRequest:
 
     @property
     def default_status(self):
-        """Gets the default_status of this RuleGroupRequest.
+        r"""Gets the default_status of this RuleGroupRequest.
 
         是否默认规则组
 
@@ -111,7 +111,7 @@ class RuleGroupRequest:
 
     @default_status.setter
     def default_status(self, default_status):
-        """Sets the default_status of this RuleGroupRequest.
+        r"""Sets the default_status of this RuleGroupRequest.
 
         是否默认规则组
 
@@ -122,7 +122,7 @@ class RuleGroupRequest:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this RuleGroupRequest.
+        r"""Gets the group_desc of this RuleGroupRequest.
 
         规则组描述
 
@@ -133,7 +133,7 @@ class RuleGroupRequest:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this RuleGroupRequest.
+        r"""Sets the group_desc of this RuleGroupRequest.
 
         规则组描述
 
@@ -144,7 +144,7 @@ class RuleGroupRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this RuleGroupRequest.
+        r"""Gets the group_name of this RuleGroupRequest.
 
         规则组名称
 
@@ -155,7 +155,7 @@ class RuleGroupRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this RuleGroupRequest.
+        r"""Sets the group_name of this RuleGroupRequest.
 
         规则组名称
 
@@ -166,7 +166,7 @@ class RuleGroupRequest:
 
     @property
     def id(self):
-        """Gets the id of this RuleGroupRequest.
+        r"""Gets the id of this RuleGroupRequest.
 
         规则组ID
 
@@ -177,7 +177,7 @@ class RuleGroupRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleGroupRequest.
+        r"""Sets the id of this RuleGroupRequest.
 
         规则组ID
 
@@ -188,7 +188,7 @@ class RuleGroupRequest:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this RuleGroupRequest.
+        r"""Gets the rule_ids of this RuleGroupRequest.
 
         包含的规则ID列表
 
@@ -199,7 +199,7 @@ class RuleGroupRequest:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this RuleGroupRequest.
+        r"""Sets the rule_ids of this RuleGroupRequest.
 
         包含的规则ID列表
 

@@ -47,7 +47,7 @@ class JobEntities:
     }
 
     def __init__(self, image_id=None, current_task=None, image_name=None, addition_error_code=None, addition_error_msg=None, error_code=None, error=None, alarm_code=None, process_percent=None, results=None, sub_jobs_result=None, sub_jobs_list=None):
-        """JobEntities
+        r"""JobEntities
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class JobEntities:
 
     @property
     def image_id(self):
-        """Gets the image_id of this JobEntities.
+        r"""Gets the image_id of this JobEntities.
 
         镜像ID
 
@@ -131,7 +131,7 @@ class JobEntities:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this JobEntities.
+        r"""Sets the image_id of this JobEntities.
 
         镜像ID
 
@@ -142,7 +142,7 @@ class JobEntities:
 
     @property
     def current_task(self):
-        """Gets the current_task of this JobEntities.
+        r"""Gets the current_task of this JobEntities.
 
         当前任务名称
 
@@ -153,7 +153,7 @@ class JobEntities:
 
     @current_task.setter
     def current_task(self, current_task):
-        """Sets the current_task of this JobEntities.
+        r"""Sets the current_task of this JobEntities.
 
         当前任务名称
 
@@ -164,7 +164,7 @@ class JobEntities:
 
     @property
     def image_name(self):
-        """Gets the image_name of this JobEntities.
+        r"""Gets the image_name of this JobEntities.
 
         镜像名称
 
@@ -175,7 +175,7 @@ class JobEntities:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this JobEntities.
+        r"""Sets the image_name of this JobEntities.
 
         镜像名称
 
@@ -186,7 +186,7 @@ class JobEntities:
 
     @property
     def addition_error_code(self):
-        """Gets the addition_error_code of this JobEntities.
+        r"""Gets the addition_error_code of this JobEntities.
 
         添加错误码
 
@@ -197,7 +197,7 @@ class JobEntities:
 
     @addition_error_code.setter
     def addition_error_code(self, addition_error_code):
-        """Sets the addition_error_code of this JobEntities.
+        r"""Sets the addition_error_code of this JobEntities.
 
         添加错误码
 
@@ -208,7 +208,7 @@ class JobEntities:
 
     @property
     def addition_error_msg(self):
-        """Gets the addition_error_msg of this JobEntities.
+        r"""Gets the addition_error_msg of this JobEntities.
 
         添加错误消息
 
@@ -219,7 +219,7 @@ class JobEntities:
 
     @addition_error_msg.setter
     def addition_error_msg(self, addition_error_msg):
-        """Sets the addition_error_msg of this JobEntities.
+        r"""Sets the addition_error_msg of this JobEntities.
 
         添加错误消息
 
@@ -230,7 +230,7 @@ class JobEntities:
 
     @property
     def error_code(self):
-        """Gets the error_code of this JobEntities.
+        r"""Gets the error_code of this JobEntities.
 
         错误码
 
@@ -241,7 +241,7 @@ class JobEntities:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this JobEntities.
+        r"""Sets the error_code of this JobEntities.
 
         错误码
 
@@ -252,7 +252,7 @@ class JobEntities:
 
     @property
     def error(self):
-        """Gets the error of this JobEntities.
+        r"""Gets the error of this JobEntities.
 
         错误消息
 
@@ -263,7 +263,7 @@ class JobEntities:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this JobEntities.
+        r"""Sets the error of this JobEntities.
 
         错误消息
 
@@ -274,7 +274,7 @@ class JobEntities:
 
     @property
     def alarm_code(self):
-        """Gets the alarm_code of this JobEntities.
+        r"""Gets the alarm_code of this JobEntities.
 
         告警代码
 
@@ -285,7 +285,7 @@ class JobEntities:
 
     @alarm_code.setter
     def alarm_code(self, alarm_code):
-        """Sets the alarm_code of this JobEntities.
+        r"""Sets the alarm_code of this JobEntities.
 
         告警代码
 
@@ -296,7 +296,7 @@ class JobEntities:
 
     @property
     def process_percent(self):
-        """Gets the process_percent of this JobEntities.
+        r"""Gets the process_percent of this JobEntities.
 
         任务执行进度
 
@@ -307,7 +307,7 @@ class JobEntities:
 
     @process_percent.setter
     def process_percent(self, process_percent):
-        """Sets the process_percent of this JobEntities.
+        r"""Sets the process_percent of this JobEntities.
 
         任务执行进度
 
@@ -318,7 +318,7 @@ class JobEntities:
 
     @property
     def results(self):
-        """Gets the results of this JobEntities.
+        r"""Gets the results of this JobEntities.
 
         批量任务执行结果
 
@@ -329,7 +329,7 @@ class JobEntities:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this JobEntities.
+        r"""Sets the results of this JobEntities.
 
         批量任务执行结果
 
@@ -340,7 +340,7 @@ class JobEntities:
 
     @property
     def sub_jobs_result(self):
-        """Gets the sub_jobs_result of this JobEntities.
+        r"""Gets the sub_jobs_result of this JobEntities.
 
         子任务结果列表
 
@@ -351,7 +351,7 @@ class JobEntities:
 
     @sub_jobs_result.setter
     def sub_jobs_result(self, sub_jobs_result):
-        """Sets the sub_jobs_result of this JobEntities.
+        r"""Sets the sub_jobs_result of this JobEntities.
 
         子任务结果列表
 
@@ -362,7 +362,7 @@ class JobEntities:
 
     @property
     def sub_jobs_list(self):
-        """Gets the sub_jobs_list of this JobEntities.
+        r"""Gets the sub_jobs_list of this JobEntities.
 
         子任务ID列表
 
@@ -373,7 +373,7 @@ class JobEntities:
 
     @sub_jobs_list.setter
     def sub_jobs_list(self, sub_jobs_list):
-        """Sets the sub_jobs_list of this JobEntities.
+        r"""Sets the sub_jobs_list of this JobEntities.
 
         子任务ID列表
 

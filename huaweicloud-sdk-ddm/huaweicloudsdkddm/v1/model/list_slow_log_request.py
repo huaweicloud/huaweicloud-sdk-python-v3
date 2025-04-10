@@ -33,7 +33,7 @@ class ListSlowLogRequest:
     }
 
     def __init__(self, instance_id=None, cur_page=None, per_page=None, start_date=None, end_date=None):
-        """ListSlowLogRequest
+        r"""ListSlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListSlowLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSlowLogRequest.
+        r"""Gets the instance_id of this ListSlowLogRequest.
 
         DDM实例ID。
 
@@ -77,7 +77,7 @@ class ListSlowLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSlowLogRequest.
+        r"""Sets the instance_id of this ListSlowLogRequest.
 
         DDM实例ID。
 
@@ -88,7 +88,7 @@ class ListSlowLogRequest:
 
     @property
     def cur_page(self):
-        """Gets the cur_page of this ListSlowLogRequest.
+        r"""Gets the cur_page of this ListSlowLogRequest.
 
         分页参数：起始值 [大于等于1] 。
 
@@ -99,7 +99,7 @@ class ListSlowLogRequest:
 
     @cur_page.setter
     def cur_page(self, cur_page):
-        """Sets the cur_page of this ListSlowLogRequest.
+        r"""Sets the cur_page of this ListSlowLogRequest.
 
         分页参数：起始值 [大于等于1] 。
 
@@ -110,7 +110,7 @@ class ListSlowLogRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ListSlowLogRequest.
+        r"""Gets the per_page of this ListSlowLogRequest.
 
         分页参数：每页多少条。
 
@@ -121,7 +121,7 @@ class ListSlowLogRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ListSlowLogRequest.
+        r"""Sets the per_page of this ListSlowLogRequest.
 
         分页参数：每页多少条。
 
@@ -132,7 +132,7 @@ class ListSlowLogRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListSlowLogRequest.
+        r"""Gets the start_date of this ListSlowLogRequest.
 
         开始时间，UTC time，精确到毫秒。
 
@@ -143,7 +143,7 @@ class ListSlowLogRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListSlowLogRequest.
+        r"""Sets the start_date of this ListSlowLogRequest.
 
         开始时间，UTC time，精确到毫秒。
 
@@ -154,7 +154,7 @@ class ListSlowLogRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListSlowLogRequest.
+        r"""Gets the end_date of this ListSlowLogRequest.
 
         结束时间，UTC time，精确到毫秒。结束时间与开始时间，间隔不能超过7天。
 
@@ -165,7 +165,7 @@ class ListSlowLogRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListSlowLogRequest.
+        r"""Sets the end_date of this ListSlowLogRequest.
 
         结束时间，UTC time，精确到毫秒。结束时间与开始时间，间隔不能超过7天。
 

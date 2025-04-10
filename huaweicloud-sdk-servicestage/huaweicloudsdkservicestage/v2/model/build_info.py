@@ -27,7 +27,7 @@ class BuildInfo:
     }
 
     def __init__(self, id=None, parameters=None):
-        """BuildInfo
+        r"""BuildInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BuildInfo:
 
     @property
     def id(self):
-        """Gets the id of this BuildInfo.
+        r"""Gets the id of this BuildInfo.
 
         构建ID，查看构建列表获取。
 
@@ -61,7 +61,7 @@ class BuildInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BuildInfo.
+        r"""Sets the id of this BuildInfo.
 
         构建ID，查看构建列表获取。
 
@@ -72,7 +72,7 @@ class BuildInfo:
 
     @property
     def parameters(self):
-        """Gets the parameters of this BuildInfo.
+        r"""Gets the parameters of this BuildInfo.
 
         :return: The parameters of this BuildInfo.
         :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
@@ -81,7 +81,7 @@ class BuildInfo:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this BuildInfo.
+        r"""Sets the parameters of this BuildInfo.
 
         :param parameters: The parameters of this BuildInfo.
         :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`

@@ -29,7 +29,7 @@ class CallBackConfig:
     }
 
     def __init__(self, callback_url=None, auth_type=None, key=None):
-        """CallBackConfig
+        r"""CallBackConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CallBackConfig:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this CallBackConfig.
+        r"""Gets the callback_url of this CallBackConfig.
 
         回调URL。  回调请求body为json格式，带参数如下：  result: SUCCEED或FAILED  asset_id: 资产ID  job_id: 任务
 
@@ -67,7 +67,7 @@ class CallBackConfig:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this CallBackConfig.
+        r"""Sets the callback_url of this CallBackConfig.
 
         回调URL。  回调请求body为json格式，带参数如下：  result: SUCCEED或FAILED  asset_id: 资产ID  job_id: 任务
 
@@ -78,7 +78,7 @@ class CallBackConfig:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this CallBackConfig.
+        r"""Gets the auth_type of this CallBackConfig.
 
         认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:secret,time_stamp。取值方式：secret=hmac_sha256(key, URI（callback_url）+ time_stamp)&time_stamp=hex(timestamp)
 
@@ -89,7 +89,7 @@ class CallBackConfig:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this CallBackConfig.
+        r"""Sets the auth_type of this CallBackConfig.
 
         认证类型。 * NONE。URL中自带认证。 * MSS_A。HMACSHA256签名模式，在URL中追加参数:secret,time_stamp。取值方式：secret=hmac_sha256(key, URI（callback_url）+ time_stamp)&time_stamp=hex(timestamp)
 
@@ -100,7 +100,7 @@ class CallBackConfig:
 
     @property
     def key(self):
-        """Gets the key of this CallBackConfig.
+        r"""Gets the key of this CallBackConfig.
 
         密钥Key
 
@@ -111,7 +111,7 @@ class CallBackConfig:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CallBackConfig.
+        r"""Sets the key of this CallBackConfig.
 
         密钥Key
 

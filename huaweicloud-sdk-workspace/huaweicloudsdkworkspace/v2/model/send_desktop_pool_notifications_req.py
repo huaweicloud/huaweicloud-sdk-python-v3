@@ -25,7 +25,7 @@ class SendDesktopPoolNotificationsReq:
     }
 
     def __init__(self, notifications=None):
-        """SendDesktopPoolNotificationsReq
+        r"""SendDesktopPoolNotificationsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SendDesktopPoolNotificationsReq:
 
     @property
     def notifications(self):
-        """Gets the notifications of this SendDesktopPoolNotificationsReq.
+        r"""Gets the notifications of this SendDesktopPoolNotificationsReq.
 
         消息通知内容
 
@@ -53,7 +53,7 @@ class SendDesktopPoolNotificationsReq:
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this SendDesktopPoolNotificationsReq.
+        r"""Sets the notifications of this SendDesktopPoolNotificationsReq.
 
         消息通知内容
 

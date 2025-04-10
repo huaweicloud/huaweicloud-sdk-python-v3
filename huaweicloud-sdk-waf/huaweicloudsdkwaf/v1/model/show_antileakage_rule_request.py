@@ -29,7 +29,7 @@ class ShowAntileakageRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """ShowAntileakageRuleRequest
+        r"""ShowAntileakageRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowAntileakageRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowAntileakageRuleRequest.
+        r"""Gets the enterprise_project_id of this ShowAntileakageRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -66,7 +66,7 @@ class ShowAntileakageRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowAntileakageRuleRequest.
+        r"""Sets the enterprise_project_id of this ShowAntileakageRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -77,7 +77,7 @@ class ShowAntileakageRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowAntileakageRuleRequest.
+        r"""Gets the policy_id of this ShowAntileakageRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -88,7 +88,7 @@ class ShowAntileakageRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowAntileakageRuleRequest.
+        r"""Sets the policy_id of this ShowAntileakageRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -99,7 +99,7 @@ class ShowAntileakageRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowAntileakageRuleRequest.
+        r"""Gets the rule_id of this ShowAntileakageRuleRequest.
 
         防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
 
@@ -110,7 +110,7 @@ class ShowAntileakageRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowAntileakageRuleRequest.
+        r"""Sets the rule_id of this ShowAntileakageRuleRequest.
 
         防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
 

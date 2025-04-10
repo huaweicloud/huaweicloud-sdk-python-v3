@@ -29,7 +29,7 @@ class DeletePostgresqlDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None):
-        """DeletePostgresqlDatabaseRequest
+        r"""DeletePostgresqlDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeletePostgresqlDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeletePostgresqlDatabaseRequest.
+        r"""Gets the x_language of this DeletePostgresqlDatabaseRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class DeletePostgresqlDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeletePostgresqlDatabaseRequest.
+        r"""Sets the x_language of this DeletePostgresqlDatabaseRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class DeletePostgresqlDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePostgresqlDatabaseRequest.
+        r"""Gets the instance_id of this DeletePostgresqlDatabaseRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class DeletePostgresqlDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePostgresqlDatabaseRequest.
+        r"""Sets the instance_id of this DeletePostgresqlDatabaseRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class DeletePostgresqlDatabaseRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeletePostgresqlDatabaseRequest.
+        r"""Gets the db_name of this DeletePostgresqlDatabaseRequest.
 
         需要删除的数据库名。
 
@@ -110,7 +110,7 @@ class DeletePostgresqlDatabaseRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeletePostgresqlDatabaseRequest.
+        r"""Sets the db_name of this DeletePostgresqlDatabaseRequest.
 
         需要删除的数据库名。
 

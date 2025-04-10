@@ -31,7 +31,7 @@ class ShowTemplateVersionMetadataRequest:
     }
 
     def __init__(self, client_request_id=None, template_name=None, version_id=None, template_id=None):
-        """ShowTemplateVersionMetadataRequest
+        r"""ShowTemplateVersionMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ShowTemplateVersionMetadataRequest.
+        r"""Gets the client_request_id of this ShowTemplateVersionMetadataRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -72,7 +72,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ShowTemplateVersionMetadataRequest.
+        r"""Sets the client_request_id of this ShowTemplateVersionMetadataRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -83,7 +83,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowTemplateVersionMetadataRequest.
+        r"""Gets the template_name of this ShowTemplateVersionMetadataRequest.
 
         用户希望创建的模板名称
 
@@ -94,7 +94,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowTemplateVersionMetadataRequest.
+        r"""Sets the template_name of this ShowTemplateVersionMetadataRequest.
 
         用户希望创建的模板名称
 
@@ -105,7 +105,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ShowTemplateVersionMetadataRequest.
+        r"""Gets the version_id of this ShowTemplateVersionMetadataRequest.
 
         模板版本ID，以大写V开头，每次创建模板版本，模板版本ID数字部分会自增加一
 
@@ -116,7 +116,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ShowTemplateVersionMetadataRequest.
+        r"""Sets the version_id of this ShowTemplateVersionMetadataRequest.
 
         模板版本ID，以大写V开头，每次创建模板版本，模板版本ID数字部分会自增加一
 
@@ -127,7 +127,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateVersionMetadataRequest.
+        r"""Gets the template_id of this ShowTemplateVersionMetadataRequest.
 
         模板的ID。当template_id存在时，模板服务会检查template_id是否和template_name匹配，不匹配会返回400
 
@@ -138,7 +138,7 @@ class ShowTemplateVersionMetadataRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateVersionMetadataRequest.
+        r"""Sets the template_id of this ShowTemplateVersionMetadataRequest.
 
         模板的ID。当template_id存在时，模板服务会检查template_id是否和template_name匹配，不匹配会返回400
 

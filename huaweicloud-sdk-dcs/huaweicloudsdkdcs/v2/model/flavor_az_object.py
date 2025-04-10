@@ -31,7 +31,7 @@ class FlavorAzObject:
     }
 
     def __init__(self, capacity=None, unit=None, available_zones=None, az_codes=None):
-        """FlavorAzObject
+        r"""FlavorAzObject
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FlavorAzObject:
 
     @property
     def capacity(self):
-        """Gets the capacity of this FlavorAzObject.
+        r"""Gets the capacity of this FlavorAzObject.
 
         缓存容量（G Byte）。
 
@@ -75,7 +75,7 @@ class FlavorAzObject:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this FlavorAzObject.
+        r"""Sets the capacity of this FlavorAzObject.
 
         缓存容量（G Byte）。
 
@@ -86,7 +86,7 @@ class FlavorAzObject:
 
     @property
     def unit(self):
-        """Gets the unit of this FlavorAzObject.
+        r"""Gets the unit of this FlavorAzObject.
 
         缓存容量单位。
 
@@ -97,7 +97,7 @@ class FlavorAzObject:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this FlavorAzObject.
+        r"""Sets the unit of this FlavorAzObject.
 
         缓存容量单位。
 
@@ -108,7 +108,7 @@ class FlavorAzObject:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this FlavorAzObject.
+        r"""Gets the available_zones of this FlavorAzObject.
 
         可用区信息。
 
@@ -119,7 +119,7 @@ class FlavorAzObject:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this FlavorAzObject.
+        r"""Sets the available_zones of this FlavorAzObject.
 
         可用区信息。
 
@@ -130,7 +130,7 @@ class FlavorAzObject:
 
     @property
     def az_codes(self):
-        """Gets the az_codes of this FlavorAzObject.
+        r"""Gets the az_codes of this FlavorAzObject.
 
         有资源的可用区编码。
 
@@ -141,7 +141,7 @@ class FlavorAzObject:
 
     @az_codes.setter
     def az_codes(self, az_codes):
-        """Sets the az_codes of this FlavorAzObject.
+        r"""Sets the az_codes of this FlavorAzObject.
 
         有资源的可用区编码。
 

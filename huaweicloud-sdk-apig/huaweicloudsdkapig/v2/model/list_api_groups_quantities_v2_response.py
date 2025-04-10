@@ -28,7 +28,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
     }
 
     def __init__(self, offsell_nums=None, onsell_nums=None):
-        """ListApiGroupsQuantitiesV2Response
+        r"""ListApiGroupsQuantitiesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
 
     @property
     def offsell_nums(self):
-        """Gets the offsell_nums of this ListApiGroupsQuantitiesV2Response.
+        r"""Gets the offsell_nums of this ListApiGroupsQuantitiesV2Response.
 
         未上架的API分组个数  暂不支持
 
@@ -62,7 +62,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
 
     @offsell_nums.setter
     def offsell_nums(self, offsell_nums):
-        """Sets the offsell_nums of this ListApiGroupsQuantitiesV2Response.
+        r"""Sets the offsell_nums of this ListApiGroupsQuantitiesV2Response.
 
         未上架的API分组个数  暂不支持
 
@@ -73,7 +73,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
 
     @property
     def onsell_nums(self):
-        """Gets the onsell_nums of this ListApiGroupsQuantitiesV2Response.
+        r"""Gets the onsell_nums of this ListApiGroupsQuantitiesV2Response.
 
         已上架的API分组个数
 
@@ -84,7 +84,7 @@ class ListApiGroupsQuantitiesV2Response(SdkResponse):
 
     @onsell_nums.setter
     def onsell_nums(self, onsell_nums):
-        """Sets the onsell_nums of this ListApiGroupsQuantitiesV2Response.
+        r"""Sets the onsell_nums of this ListApiGroupsQuantitiesV2Response.
 
         已上架的API分组个数
 

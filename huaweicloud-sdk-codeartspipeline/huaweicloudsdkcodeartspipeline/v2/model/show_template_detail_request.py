@@ -29,7 +29,7 @@ class ShowTemplateDetailRequest:
     }
 
     def __init__(self, template_id=None, template_type=None, source=None):
-        """ShowTemplateDetailRequest
+        r"""ShowTemplateDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowTemplateDetailRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateDetailRequest.
+        r"""Gets the template_id of this ShowTemplateDetailRequest.
 
         模板ID
 
@@ -66,7 +66,7 @@ class ShowTemplateDetailRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateDetailRequest.
+        r"""Sets the template_id of this ShowTemplateDetailRequest.
 
         模板ID
 
@@ -77,7 +77,7 @@ class ShowTemplateDetailRequest:
 
     @property
     def template_type(self):
-        """Gets the template_type of this ShowTemplateDetailRequest.
+        r"""Gets the template_type of this ShowTemplateDetailRequest.
 
         模板类型
 
@@ -88,7 +88,7 @@ class ShowTemplateDetailRequest:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ShowTemplateDetailRequest.
+        r"""Sets the template_type of this ShowTemplateDetailRequest.
 
         模板类型
 
@@ -99,7 +99,7 @@ class ShowTemplateDetailRequest:
 
     @property
     def source(self):
-        """Gets the source of this ShowTemplateDetailRequest.
+        r"""Gets the source of this ShowTemplateDetailRequest.
 
         接口调用方
 
@@ -110,7 +110,7 @@ class ShowTemplateDetailRequest:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ShowTemplateDetailRequest.
+        r"""Sets the source of this ShowTemplateDetailRequest.
 
         接口调用方
 

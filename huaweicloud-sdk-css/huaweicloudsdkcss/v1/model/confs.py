@@ -33,7 +33,7 @@ class Confs:
     }
 
     def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None):
-        """Confs
+        r"""Confs
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Confs:
 
     @property
     def name(self):
-        """Gets the name of this Confs.
+        r"""Gets the name of this Confs.
 
         配置文件名称。
 
@@ -82,7 +82,7 @@ class Confs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Confs.
+        r"""Sets the name of this Confs.
 
         配置文件名称。
 
@@ -93,7 +93,7 @@ class Confs:
 
     @property
     def status(self):
-        """Gets the status of this Confs.
+        r"""Gets the status of this Confs.
 
         配置文件状态。
 
@@ -104,7 +104,7 @@ class Confs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Confs.
+        r"""Sets the status of this Confs.
 
         配置文件状态。
 
@@ -115,7 +115,7 @@ class Confs:
 
     @property
     def conf_content(self):
-        """Gets the conf_content of this Confs.
+        r"""Gets the conf_content of this Confs.
 
         配置文件内容。
 
@@ -126,7 +126,7 @@ class Confs:
 
     @conf_content.setter
     def conf_content(self, conf_content):
-        """Sets the conf_content of this Confs.
+        r"""Sets the conf_content of this Confs.
 
         配置文件内容。
 
@@ -137,7 +137,7 @@ class Confs:
 
     @property
     def setting(self):
-        """Gets the setting of this Confs.
+        r"""Gets the setting of this Confs.
 
         :return: The setting of this Confs.
         :rtype: :class:`huaweicloudsdkcss.v1.Setting`
@@ -146,7 +146,7 @@ class Confs:
 
     @setting.setter
     def setting(self, setting):
-        """Sets the setting of this Confs.
+        r"""Sets the setting of this Confs.
 
         :param setting: The setting of this Confs.
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
@@ -155,7 +155,7 @@ class Confs:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Confs.
+        r"""Gets the update_at of this Confs.
 
         更新时间。
 
@@ -166,7 +166,7 @@ class Confs:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Confs.
+        r"""Sets the update_at of this Confs.
 
         更新时间。
 

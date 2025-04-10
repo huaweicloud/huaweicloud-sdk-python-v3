@@ -44,7 +44,7 @@ class ShowStrategyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, version=None, creator=None, create_time=None, updater=None, update_time=None, is_valid=None, rule_instances=None):
-        """ShowStrategyResponse
+        r"""ShowStrategyResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowStrategyResponse.
+        r"""Gets the id of this ShowStrategyResponse.
 
         规则模版实例ID
 
@@ -118,7 +118,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowStrategyResponse.
+        r"""Sets the id of this ShowStrategyResponse.
 
         规则模版实例ID
 
@@ -129,7 +129,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowStrategyResponse.
+        r"""Gets the name of this ShowStrategyResponse.
 
         规则模版实例名称
 
@@ -140,7 +140,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowStrategyResponse.
+        r"""Sets the name of this ShowStrategyResponse.
 
         规则模版实例名称
 
@@ -151,7 +151,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowStrategyResponse.
+        r"""Gets the type of this ShowStrategyResponse.
 
         类型
 
@@ -162,7 +162,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowStrategyResponse.
+        r"""Sets the type of this ShowStrategyResponse.
 
         类型
 
@@ -173,7 +173,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowStrategyResponse.
+        r"""Gets the version of this ShowStrategyResponse.
 
         版本
 
@@ -184,7 +184,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowStrategyResponse.
+        r"""Sets the version of this ShowStrategyResponse.
 
         版本
 
@@ -195,7 +195,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowStrategyResponse.
+        r"""Gets the creator of this ShowStrategyResponse.
 
         创建人
 
@@ -206,7 +206,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowStrategyResponse.
+        r"""Sets the creator of this ShowStrategyResponse.
 
         创建人
 
@@ -217,7 +217,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowStrategyResponse.
+        r"""Gets the create_time of this ShowStrategyResponse.
 
         创建时间
 
@@ -228,7 +228,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowStrategyResponse.
+        r"""Sets the create_time of this ShowStrategyResponse.
 
         创建时间
 
@@ -239,7 +239,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def updater(self):
-        """Gets the updater of this ShowStrategyResponse.
+        r"""Gets the updater of this ShowStrategyResponse.
 
         最近更新人
 
@@ -250,7 +250,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this ShowStrategyResponse.
+        r"""Sets the updater of this ShowStrategyResponse.
 
         最近更新人
 
@@ -261,7 +261,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowStrategyResponse.
+        r"""Gets the update_time of this ShowStrategyResponse.
 
         最近更新时间
 
@@ -272,7 +272,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowStrategyResponse.
+        r"""Sets the update_time of this ShowStrategyResponse.
 
         最近更新时间
 
@@ -283,7 +283,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this ShowStrategyResponse.
+        r"""Gets the is_valid of this ShowStrategyResponse.
 
         是否生效
 
@@ -294,7 +294,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this ShowStrategyResponse.
+        r"""Sets the is_valid of this ShowStrategyResponse.
 
         是否生效
 
@@ -305,7 +305,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @property
     def rule_instances(self):
-        """Gets the rule_instances of this ShowStrategyResponse.
+        r"""Gets the rule_instances of this ShowStrategyResponse.
 
         规则实例集合
 
@@ -316,7 +316,7 @@ class ShowStrategyResponse(SdkResponse):
 
     @rule_instances.setter
     def rule_instances(self, rule_instances):
-        """Sets the rule_instances of this ShowStrategyResponse.
+        r"""Sets the rule_instances of this ShowStrategyResponse.
 
         规则实例集合
 

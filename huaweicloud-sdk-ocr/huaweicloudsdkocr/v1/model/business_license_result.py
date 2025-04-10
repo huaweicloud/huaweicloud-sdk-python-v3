@@ -47,7 +47,7 @@ class BusinessLicenseResult:
     }
 
     def __init__(self, registration_number=None, name=None, type=None, address=None, legal_representative=None, registered_capital=None, organization_form=None, found_date=None, business_term=None, business_scope=None, issue_date=None, confidence=None):
-        """BusinessLicenseResult
+        r"""BusinessLicenseResult
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class BusinessLicenseResult:
 
     @property
     def registration_number(self):
-        """Gets the registration_number of this BusinessLicenseResult.
+        r"""Gets the registration_number of this BusinessLicenseResult.
 
         - 老版本营业执照对应注册号。 - 新三证合一版本营业执照对应社会保障号。 
 
@@ -131,7 +131,7 @@ class BusinessLicenseResult:
 
     @registration_number.setter
     def registration_number(self, registration_number):
-        """Sets the registration_number of this BusinessLicenseResult.
+        r"""Sets the registration_number of this BusinessLicenseResult.
 
         - 老版本营业执照对应注册号。 - 新三证合一版本营业执照对应社会保障号。 
 
@@ -142,7 +142,7 @@ class BusinessLicenseResult:
 
     @property
     def name(self):
-        """Gets the name of this BusinessLicenseResult.
+        r"""Gets the name of this BusinessLicenseResult.
 
         企业名称。 
 
@@ -153,7 +153,7 @@ class BusinessLicenseResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BusinessLicenseResult.
+        r"""Sets the name of this BusinessLicenseResult.
 
         企业名称。 
 
@@ -164,7 +164,7 @@ class BusinessLicenseResult:
 
     @property
     def type(self):
-        """Gets the type of this BusinessLicenseResult.
+        r"""Gets the type of this BusinessLicenseResult.
 
         公司/企业类型/主体类型/类型。 
 
@@ -175,7 +175,7 @@ class BusinessLicenseResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BusinessLicenseResult.
+        r"""Sets the type of this BusinessLicenseResult.
 
         公司/企业类型/主体类型/类型。 
 
@@ -186,7 +186,7 @@ class BusinessLicenseResult:
 
     @property
     def address(self):
-        """Gets the address of this BusinessLicenseResult.
+        r"""Gets the address of this BusinessLicenseResult.
 
         住所/营业场所/企业住所/主要经营场所/经营场所。 
 
@@ -197,7 +197,7 @@ class BusinessLicenseResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BusinessLicenseResult.
+        r"""Sets the address of this BusinessLicenseResult.
 
         住所/营业场所/企业住所/主要经营场所/经营场所。 
 
@@ -208,7 +208,7 @@ class BusinessLicenseResult:
 
     @property
     def legal_representative(self):
-        """Gets the legal_representative of this BusinessLicenseResult.
+        r"""Gets the legal_representative of this BusinessLicenseResult.
 
         法定代表人/负责人/执行事务合伙人/投资人/经营者。 
 
@@ -219,7 +219,7 @@ class BusinessLicenseResult:
 
     @legal_representative.setter
     def legal_representative(self, legal_representative):
-        """Sets the legal_representative of this BusinessLicenseResult.
+        r"""Sets the legal_representative of this BusinessLicenseResult.
 
         法定代表人/负责人/执行事务合伙人/投资人/经营者。 
 
@@ -230,7 +230,7 @@ class BusinessLicenseResult:
 
     @property
     def registered_capital(self):
-        """Gets the registered_capital of this BusinessLicenseResult.
+        r"""Gets the registered_capital of this BusinessLicenseResult.
 
         注册资本/出资额。 
 
@@ -241,7 +241,7 @@ class BusinessLicenseResult:
 
     @registered_capital.setter
     def registered_capital(self, registered_capital):
-        """Sets the registered_capital of this BusinessLicenseResult.
+        r"""Sets the registered_capital of this BusinessLicenseResult.
 
         注册资本/出资额。 
 
@@ -252,7 +252,7 @@ class BusinessLicenseResult:
 
     @property
     def organization_form(self):
-        """Gets the organization_form of this BusinessLicenseResult.
+        r"""Gets the organization_form of this BusinessLicenseResult.
 
         组成形式。 
 
@@ -263,7 +263,7 @@ class BusinessLicenseResult:
 
     @organization_form.setter
     def organization_form(self, organization_form):
-        """Sets the organization_form of this BusinessLicenseResult.
+        r"""Sets the organization_form of this BusinessLicenseResult.
 
         组成形式。 
 
@@ -274,7 +274,7 @@ class BusinessLicenseResult:
 
     @property
     def found_date(self):
-        """Gets the found_date of this BusinessLicenseResult.
+        r"""Gets the found_date of this BusinessLicenseResult.
 
         成立日期/注册日期。 
 
@@ -285,7 +285,7 @@ class BusinessLicenseResult:
 
     @found_date.setter
     def found_date(self, found_date):
-        """Sets the found_date of this BusinessLicenseResult.
+        r"""Sets the found_date of this BusinessLicenseResult.
 
         成立日期/注册日期。 
 
@@ -296,7 +296,7 @@ class BusinessLicenseResult:
 
     @property
     def business_term(self):
-        """Gets the business_term of this BusinessLicenseResult.
+        r"""Gets the business_term of this BusinessLicenseResult.
 
         营业期限。 
 
@@ -307,7 +307,7 @@ class BusinessLicenseResult:
 
     @business_term.setter
     def business_term(self, business_term):
-        """Sets the business_term of this BusinessLicenseResult.
+        r"""Sets the business_term of this BusinessLicenseResult.
 
         营业期限。 
 
@@ -318,7 +318,7 @@ class BusinessLicenseResult:
 
     @property
     def business_scope(self):
-        """Gets the business_scope of this BusinessLicenseResult.
+        r"""Gets the business_scope of this BusinessLicenseResult.
 
         经营范围。 
 
@@ -329,7 +329,7 @@ class BusinessLicenseResult:
 
     @business_scope.setter
     def business_scope(self, business_scope):
-        """Sets the business_scope of this BusinessLicenseResult.
+        r"""Sets the business_scope of this BusinessLicenseResult.
 
         经营范围。 
 
@@ -340,7 +340,7 @@ class BusinessLicenseResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this BusinessLicenseResult.
+        r"""Gets the issue_date of this BusinessLicenseResult.
 
         发照日期。 
 
@@ -351,7 +351,7 @@ class BusinessLicenseResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this BusinessLicenseResult.
+        r"""Sets the issue_date of this BusinessLicenseResult.
 
         发照日期。 
 
@@ -362,7 +362,7 @@ class BusinessLicenseResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this BusinessLicenseResult.
+        r"""Gets the confidence of this BusinessLicenseResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -373,7 +373,7 @@ class BusinessLicenseResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this BusinessLicenseResult.
+        r"""Sets the confidence of this BusinessLicenseResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 

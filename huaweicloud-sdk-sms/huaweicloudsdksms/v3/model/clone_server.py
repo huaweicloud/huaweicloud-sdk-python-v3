@@ -33,7 +33,7 @@ class CloneServer:
     }
 
     def __init__(self, vm_id=None, name=None, clone_error=None, clone_state=None, error_msg=None):
-        """CloneServer
+        r"""CloneServer
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CloneServer:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this CloneServer.
+        r"""Gets the vm_id of this CloneServer.
 
         克隆服务器ID
 
@@ -82,7 +82,7 @@ class CloneServer:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this CloneServer.
+        r"""Sets the vm_id of this CloneServer.
 
         克隆服务器ID
 
@@ -93,7 +93,7 @@ class CloneServer:
 
     @property
     def name(self):
-        """Gets the name of this CloneServer.
+        r"""Gets the name of this CloneServer.
 
         克隆虚拟机的名称
 
@@ -104,7 +104,7 @@ class CloneServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CloneServer.
+        r"""Sets the name of this CloneServer.
 
         克隆虚拟机的名称
 
@@ -115,7 +115,7 @@ class CloneServer:
 
     @property
     def clone_error(self):
-        """Gets the clone_error of this CloneServer.
+        r"""Gets the clone_error of this CloneServer.
 
         克隆错误信息
 
@@ -126,7 +126,7 @@ class CloneServer:
 
     @clone_error.setter
     def clone_error(self, clone_error):
-        """Sets the clone_error of this CloneServer.
+        r"""Sets the clone_error of this CloneServer.
 
         克隆错误信息
 
@@ -137,7 +137,7 @@ class CloneServer:
 
     @property
     def clone_state(self):
-        """Gets the clone_state of this CloneServer.
+        r"""Gets the clone_state of this CloneServer.
 
         克隆状态
 
@@ -148,7 +148,7 @@ class CloneServer:
 
     @clone_state.setter
     def clone_state(self, clone_state):
-        """Sets the clone_state of this CloneServer.
+        r"""Sets the clone_state of this CloneServer.
 
         克隆状态
 
@@ -159,7 +159,7 @@ class CloneServer:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CloneServer.
+        r"""Gets the error_msg of this CloneServer.
 
         克隆错误信息描述
 
@@ -170,7 +170,7 @@ class CloneServer:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CloneServer.
+        r"""Sets the error_msg of this CloneServer.
 
         克隆错误信息描述
 

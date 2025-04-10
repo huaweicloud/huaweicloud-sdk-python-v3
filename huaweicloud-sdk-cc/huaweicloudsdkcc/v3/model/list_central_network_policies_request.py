@@ -41,7 +41,7 @@ class ListCentralNetworkPoliciesRequest:
     }
 
     def __init__(self, central_network_id=None, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, state=None, version=None, is_applied=None):
-        """ListCentralNetworkPoliciesRequest
+        r"""ListCentralNetworkPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the central_network_id of this ListCentralNetworkPoliciesRequest.
 
         中心网络的ID。
 
@@ -109,7 +109,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the central_network_id of this ListCentralNetworkPoliciesRequest.
 
         中心网络的ID。
 
@@ -120,7 +120,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the limit of this ListCentralNetworkPoliciesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -131,7 +131,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the limit of this ListCentralNetworkPoliciesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -142,7 +142,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the marker of this ListCentralNetworkPoliciesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -153,7 +153,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the marker of this ListCentralNetworkPoliciesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -164,7 +164,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the sort_key of this ListCentralNetworkPoliciesRequest.
 
         排序字段。
 
@@ -175,7 +175,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the sort_key of this ListCentralNetworkPoliciesRequest.
 
         排序字段。
 
@@ -186,7 +186,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the sort_dir of this ListCentralNetworkPoliciesRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -197,7 +197,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the sort_dir of this ListCentralNetworkPoliciesRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -208,7 +208,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the id of this ListCentralNetworkPoliciesRequest.
 
         根据id查询，可查询多个id。
 
@@ -219,7 +219,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the id of this ListCentralNetworkPoliciesRequest.
 
         根据id查询，可查询多个id。
 
@@ -230,7 +230,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the state of this ListCentralNetworkPoliciesRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -241,7 +241,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the state of this ListCentralNetworkPoliciesRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -252,7 +252,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the version of this ListCentralNetworkPoliciesRequest.
 
         根据版本查询，可查询多个名字。
 
@@ -263,7 +263,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the version of this ListCentralNetworkPoliciesRequest.
 
         根据版本查询，可查询多个名字。
 
@@ -274,7 +274,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @property
     def is_applied(self):
-        """Gets the is_applied of this ListCentralNetworkPoliciesRequest.
+        r"""Gets the is_applied of this ListCentralNetworkPoliciesRequest.
 
         是否被应用。
 
@@ -285,7 +285,7 @@ class ListCentralNetworkPoliciesRequest:
 
     @is_applied.setter
     def is_applied(self, is_applied):
-        """Sets the is_applied of this ListCentralNetworkPoliciesRequest.
+        r"""Sets the is_applied of this ListCentralNetworkPoliciesRequest.
 
         是否被应用。
 

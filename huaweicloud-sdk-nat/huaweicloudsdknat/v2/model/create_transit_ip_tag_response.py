@@ -24,7 +24,7 @@ class CreateTransitIpTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateTransitIpTagResponse
+        r"""CreateTransitIpTagResponse
 
         The model defined in huaweicloud sdk
 

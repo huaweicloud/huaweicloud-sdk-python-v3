@@ -24,7 +24,7 @@ class DeleteServerGroupFailureJobsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteServerGroupFailureJobsResponse
+        r"""DeleteServerGroupFailureJobsResponse
 
         The model defined in huaweicloud sdk
 

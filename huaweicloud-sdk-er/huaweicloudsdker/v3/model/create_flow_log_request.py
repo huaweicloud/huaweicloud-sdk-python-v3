@@ -30,7 +30,7 @@ class CreateFlowLogRequest:
     }
 
     def __init__(self, x_client_token=None, er_id=None, body=None):
-        """CreateFlowLogRequest
+        r"""CreateFlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateFlowLogRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateFlowLogRequest.
+        r"""Gets the x_client_token of this CreateFlowLogRequest.
 
         幂等性标识
 
@@ -68,7 +68,7 @@ class CreateFlowLogRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateFlowLogRequest.
+        r"""Sets the x_client_token of this CreateFlowLogRequest.
 
         幂等性标识
 
@@ -79,7 +79,7 @@ class CreateFlowLogRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this CreateFlowLogRequest.
+        r"""Gets the er_id of this CreateFlowLogRequest.
 
         企业路由器实例ID
 
@@ -90,7 +90,7 @@ class CreateFlowLogRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this CreateFlowLogRequest.
+        r"""Sets the er_id of this CreateFlowLogRequest.
 
         企业路由器实例ID
 
@@ -101,7 +101,7 @@ class CreateFlowLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFlowLogRequest.
+        r"""Gets the body of this CreateFlowLogRequest.
 
         :return: The body of this CreateFlowLogRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateFlowLogRequestBody`
@@ -110,7 +110,7 @@ class CreateFlowLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFlowLogRequest.
+        r"""Sets the body of this CreateFlowLogRequest.
 
         :param body: The body of this CreateFlowLogRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateFlowLogRequestBody`

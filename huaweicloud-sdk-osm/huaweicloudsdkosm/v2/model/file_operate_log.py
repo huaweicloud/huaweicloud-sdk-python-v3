@@ -39,7 +39,7 @@ class FileOperateLog:
     }
 
     def __init__(self, duration=None, operate_time=None, operate_type=None, file_name=None, from_path=None, to_path=None, file_size=None, oper_result=None):
-        """FileOperateLog
+        r"""FileOperateLog
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FileOperateLog:
 
     @property
     def duration(self):
-        """Gets the duration of this FileOperateLog.
+        r"""Gets the duration of this FileOperateLog.
 
         传输时间 格式：hh:ii:ss
 
@@ -103,7 +103,7 @@ class FileOperateLog:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this FileOperateLog.
+        r"""Sets the duration of this FileOperateLog.
 
         传输时间 格式：hh:ii:ss
 
@@ -114,7 +114,7 @@ class FileOperateLog:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this FileOperateLog.
+        r"""Gets the operate_time of this FileOperateLog.
 
         操作时间
 
@@ -125,7 +125,7 @@ class FileOperateLog:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this FileOperateLog.
+        r"""Sets the operate_time of this FileOperateLog.
 
         操作时间
 
@@ -136,7 +136,7 @@ class FileOperateLog:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this FileOperateLog.
+        r"""Gets the operate_type of this FileOperateLog.
 
         操作类型
 
@@ -147,7 +147,7 @@ class FileOperateLog:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this FileOperateLog.
+        r"""Sets the operate_type of this FileOperateLog.
 
         操作类型
 
@@ -158,7 +158,7 @@ class FileOperateLog:
 
     @property
     def file_name(self):
-        """Gets the file_name of this FileOperateLog.
+        r"""Gets the file_name of this FileOperateLog.
 
         文件名
 
@@ -169,7 +169,7 @@ class FileOperateLog:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this FileOperateLog.
+        r"""Sets the file_name of this FileOperateLog.
 
         文件名
 
@@ -180,7 +180,7 @@ class FileOperateLog:
 
     @property
     def from_path(self):
-        """Gets the from_path of this FileOperateLog.
+        r"""Gets the from_path of this FileOperateLog.
 
         来源路径
 
@@ -191,7 +191,7 @@ class FileOperateLog:
 
     @from_path.setter
     def from_path(self, from_path):
-        """Sets the from_path of this FileOperateLog.
+        r"""Sets the from_path of this FileOperateLog.
 
         来源路径
 
@@ -202,7 +202,7 @@ class FileOperateLog:
 
     @property
     def to_path(self):
-        """Gets the to_path of this FileOperateLog.
+        r"""Gets the to_path of this FileOperateLog.
 
         目标路径
 
@@ -213,7 +213,7 @@ class FileOperateLog:
 
     @to_path.setter
     def to_path(self, to_path):
-        """Sets the to_path of this FileOperateLog.
+        r"""Sets the to_path of this FileOperateLog.
 
         目标路径
 
@@ -224,7 +224,7 @@ class FileOperateLog:
 
     @property
     def file_size(self):
-        """Gets the file_size of this FileOperateLog.
+        r"""Gets the file_size of this FileOperateLog.
 
         文件大小，多少k，多少M，多少G。
 
@@ -235,7 +235,7 @@ class FileOperateLog:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this FileOperateLog.
+        r"""Sets the file_size of this FileOperateLog.
 
         文件大小，多少k，多少M，多少G。
 
@@ -246,7 +246,7 @@ class FileOperateLog:
 
     @property
     def oper_result(self):
-        """Gets the oper_result of this FileOperateLog.
+        r"""Gets the oper_result of this FileOperateLog.
 
         操作结果
 
@@ -257,7 +257,7 @@ class FileOperateLog:
 
     @oper_result.setter
     def oper_result(self, oper_result):
-        """Sets the oper_result of this FileOperateLog.
+        r"""Sets the oper_result of this FileOperateLog.
 
         操作结果
 

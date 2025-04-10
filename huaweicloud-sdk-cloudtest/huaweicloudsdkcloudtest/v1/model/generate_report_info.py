@@ -33,7 +33,7 @@ class GenerateReportInfo:
     }
 
     def __init__(self, name=None, workpiece_type=None, analysis_dim_row=None, compare_dim_column=None, filter=None):
-        """GenerateReportInfo
+        r"""GenerateReportInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class GenerateReportInfo:
 
     @property
     def name(self):
-        """Gets the name of this GenerateReportInfo.
+        r"""Gets the name of this GenerateReportInfo.
 
         报表名称
 
@@ -82,7 +82,7 @@ class GenerateReportInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GenerateReportInfo.
+        r"""Sets the name of this GenerateReportInfo.
 
         报表名称
 
@@ -93,7 +93,7 @@ class GenerateReportInfo:
 
     @property
     def workpiece_type(self):
-        """Gets the workpiece_type of this GenerateReportInfo.
+        r"""Gets the workpiece_type of this GenerateReportInfo.
 
         工件类型(用例：case,测试套：suite)
 
@@ -104,7 +104,7 @@ class GenerateReportInfo:
 
     @workpiece_type.setter
     def workpiece_type(self, workpiece_type):
-        """Sets the workpiece_type of this GenerateReportInfo.
+        r"""Sets the workpiece_type of this GenerateReportInfo.
 
         工件类型(用例：case,测试套：suite)
 
@@ -115,7 +115,7 @@ class GenerateReportInfo:
 
     @property
     def analysis_dim_row(self):
-        """Gets the analysis_dim_row of this GenerateReportInfo.
+        r"""Gets the analysis_dim_row of this GenerateReportInfo.
 
         分析维度。该参数选择横坐标（X轴）维度，不传会返回空列表。
 
@@ -126,7 +126,7 @@ class GenerateReportInfo:
 
     @analysis_dim_row.setter
     def analysis_dim_row(self, analysis_dim_row):
-        """Sets the analysis_dim_row of this GenerateReportInfo.
+        r"""Sets the analysis_dim_row of this GenerateReportInfo.
 
         分析维度。该参数选择横坐标（X轴）维度，不传会返回空列表。
 
@@ -137,7 +137,7 @@ class GenerateReportInfo:
 
     @property
     def compare_dim_column(self):
-        """Gets the compare_dim_column of this GenerateReportInfo.
+        r"""Gets the compare_dim_column of this GenerateReportInfo.
 
         对比维度
 
@@ -148,7 +148,7 @@ class GenerateReportInfo:
 
     @compare_dim_column.setter
     def compare_dim_column(self, compare_dim_column):
-        """Sets the compare_dim_column of this GenerateReportInfo.
+        r"""Sets the compare_dim_column of this GenerateReportInfo.
 
         对比维度
 
@@ -159,7 +159,7 @@ class GenerateReportInfo:
 
     @property
     def filter(self):
-        """Gets the filter of this GenerateReportInfo.
+        r"""Gets the filter of this GenerateReportInfo.
 
         :return: The filter of this GenerateReportInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ReportFilter`
@@ -168,7 +168,7 @@ class GenerateReportInfo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this GenerateReportInfo.
+        r"""Sets the filter of this GenerateReportInfo.
 
         :param filter: The filter of this GenerateReportInfo.
         :type filter: :class:`huaweicloudsdkcloudtest.v1.ReportFilter`

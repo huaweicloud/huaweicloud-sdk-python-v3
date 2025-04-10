@@ -30,7 +30,7 @@ class ListAppResponse(SdkResponse):
     }
 
     def __init__(self, has_more_app=None, apps=None, total_number=None):
-        """ListAppResponse
+        r"""ListAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAppResponse(SdkResponse):
 
     @property
     def has_more_app(self):
-        """Gets the has_more_app of this ListAppResponse.
+        r"""Gets the has_more_app of this ListAppResponse.
 
         是否还有更多满足条件的App。  - true：是。 - false：否。
 
@@ -69,7 +69,7 @@ class ListAppResponse(SdkResponse):
 
     @has_more_app.setter
     def has_more_app(self, has_more_app):
-        """Sets the has_more_app of this ListAppResponse.
+        r"""Sets the has_more_app of this ListAppResponse.
 
         是否还有更多满足条件的App。  - true：是。 - false：否。
 
@@ -80,7 +80,7 @@ class ListAppResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListAppResponse.
+        r"""Gets the apps of this ListAppResponse.
 
         AppEntry list that meets the current request.
 
@@ -91,7 +91,7 @@ class ListAppResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListAppResponse.
+        r"""Sets the apps of this ListAppResponse.
 
         AppEntry list that meets the current request.
 
@@ -102,7 +102,7 @@ class ListAppResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListAppResponse.
+        r"""Gets the total_number of this ListAppResponse.
 
         满足条件的App总数。
 
@@ -113,7 +113,7 @@ class ListAppResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListAppResponse.
+        r"""Sets the total_number of this ListAppResponse.
 
         满足条件的App总数。
 

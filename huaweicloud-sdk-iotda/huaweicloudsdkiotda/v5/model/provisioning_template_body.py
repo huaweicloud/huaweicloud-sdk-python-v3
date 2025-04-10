@@ -27,7 +27,7 @@ class ProvisioningTemplateBody:
     }
 
     def __init__(self, parameters=None, resources=None):
-        """ProvisioningTemplateBody
+        r"""ProvisioningTemplateBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProvisioningTemplateBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ProvisioningTemplateBody.
+        r"""Gets the parameters of this ProvisioningTemplateBody.
 
         **参数说明**：预调配模板参数， ，配置格式为{\"parameter\":{\"type\":\"String\"}} ，其中parameter目前支持从预调配设备的证书的使用者字段提取内容，证书必须包含模板中定义的所有参数值，华为云IoT平台定义了可在预调配模板中声明和引用的如下参数: - iotda::certificate::country (国家/地区,C ) - iotda::certificate::organization (组织,O) - iotda::certificate::organizational_unit (组织单位,OU) - iotda::certificate::distinguished_name_qualifier (可辨别名称限定符,dnQualifier) - iotda::certificate::state_name (省市,ST) - iotda::certificate::common_name (公用名,CN) - iotda::certificate::serial_number (序列号,serialNumber)  type描述parameter的类型，目前仅支持string。  配置样例：  '{\"iotda::certificate::country\":{\"type\":\"String\"},  \"iotda::certificate::organization\":{\"type\":\"String\"},  \"iotda::certificate::organizational_unit\":{\"type\":\"String\"},  \"iotda::certificate::distinguished_name_qualifier\":{\"type\":\"String\"},  \"iotda::certificate::state_name\":{\"type\":\"String\"},  \"iotda::certificate::common_name\":{\"type\":\"String\"},  \"iotda::certificate::serial_number\":{\"type\":\"String\"}}'
 
@@ -59,7 +59,7 @@ class ProvisioningTemplateBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ProvisioningTemplateBody.
+        r"""Sets the parameters of this ProvisioningTemplateBody.
 
         **参数说明**：预调配模板参数， ，配置格式为{\"parameter\":{\"type\":\"String\"}} ，其中parameter目前支持从预调配设备的证书的使用者字段提取内容，证书必须包含模板中定义的所有参数值，华为云IoT平台定义了可在预调配模板中声明和引用的如下参数: - iotda::certificate::country (国家/地区,C ) - iotda::certificate::organization (组织,O) - iotda::certificate::organizational_unit (组织单位,OU) - iotda::certificate::distinguished_name_qualifier (可辨别名称限定符,dnQualifier) - iotda::certificate::state_name (省市,ST) - iotda::certificate::common_name (公用名,CN) - iotda::certificate::serial_number (序列号,serialNumber)  type描述parameter的类型，目前仅支持string。  配置样例：  '{\"iotda::certificate::country\":{\"type\":\"String\"},  \"iotda::certificate::organization\":{\"type\":\"String\"},  \"iotda::certificate::organizational_unit\":{\"type\":\"String\"},  \"iotda::certificate::distinguished_name_qualifier\":{\"type\":\"String\"},  \"iotda::certificate::state_name\":{\"type\":\"String\"},  \"iotda::certificate::common_name\":{\"type\":\"String\"},  \"iotda::certificate::serial_number\":{\"type\":\"String\"}}'
 
@@ -70,7 +70,7 @@ class ProvisioningTemplateBody:
 
     @property
     def resources(self):
-        """Gets the resources of this ProvisioningTemplateBody.
+        r"""Gets the resources of this ProvisioningTemplateBody.
 
         :return: The resources of this ProvisioningTemplateBody.
         :rtype: :class:`huaweicloudsdkiotda.v5.TemplateResource`
@@ -79,7 +79,7 @@ class ProvisioningTemplateBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ProvisioningTemplateBody.
+        r"""Sets the resources of this ProvisioningTemplateBody.
 
         :param resources: The resources of this ProvisioningTemplateBody.
         :type resources: :class:`huaweicloudsdkiotda.v5.TemplateResource`

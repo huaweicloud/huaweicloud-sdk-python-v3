@@ -35,7 +35,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
     }
 
     def __init__(self, id=None, code=None, cpu=None, mem=None, db_type=None, az_status=None):
-        """MysqlProxyFlavorsResponseComputeFlavors
+        r"""MysqlProxyFlavorsResponseComputeFlavors
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @property
     def id(self):
-        """Gets the id of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Gets the id of this MysqlProxyFlavorsResponseComputeFlavors.
 
         数据库代理规格ID。
 
@@ -89,7 +89,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Sets the id of this MysqlProxyFlavorsResponseComputeFlavors.
 
         数据库代理规格ID。
 
@@ -100,7 +100,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @property
     def code(self):
-        """Gets the code of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Gets the code of this MysqlProxyFlavorsResponseComputeFlavors.
 
         数据库代理规格码。
 
@@ -111,7 +111,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Sets the code of this MysqlProxyFlavorsResponseComputeFlavors.
 
         数据库代理规格码。
 
@@ -122,7 +122,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @property
     def cpu(self):
-        """Gets the cpu of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Gets the cpu of this MysqlProxyFlavorsResponseComputeFlavors.
 
         CPU大小。例如：1表示1U。
 
@@ -133,7 +133,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Sets the cpu of this MysqlProxyFlavorsResponseComputeFlavors.
 
         CPU大小。例如：1表示1U。
 
@@ -144,7 +144,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @property
     def mem(self):
-        """Gets the mem of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Gets the mem of this MysqlProxyFlavorsResponseComputeFlavors.
 
         内存大小，单位为GB。
 
@@ -155,7 +155,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Sets the mem of this MysqlProxyFlavorsResponseComputeFlavors.
 
         内存大小，单位为GB。
 
@@ -166,7 +166,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @property
     def db_type(self):
-        """Gets the db_type of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Gets the db_type of this MysqlProxyFlavorsResponseComputeFlavors.
 
         数据库类型。
 
@@ -177,7 +177,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Sets the db_type of this MysqlProxyFlavorsResponseComputeFlavors.
 
         数据库类型。
 
@@ -188,7 +188,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @property
     def az_status(self):
-        """Gets the az_status of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Gets the az_status of this MysqlProxyFlavorsResponseComputeFlavors.
 
         可用区信息，其中key是该规格绑定的可用区，value是该规格在对应可用区中的状态。 取值范围：     normal：正常     abandon：禁用      - 仅展示数据库主实例所在可用区规格状态。
 
@@ -199,7 +199,7 @@ class MysqlProxyFlavorsResponseComputeFlavors:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this MysqlProxyFlavorsResponseComputeFlavors.
+        r"""Sets the az_status of this MysqlProxyFlavorsResponseComputeFlavors.
 
         可用区信息，其中key是该规格绑定的可用区，value是该规格在对应可用区中的状态。 取值范围：     normal：正常     abandon：禁用      - 仅展示数据库主实例所在可用区规格状态。
 

@@ -25,7 +25,7 @@ class BatchCreateProtectedInstancesRequestBody:
     }
 
     def __init__(self, protected_instances=None):
-        """BatchCreateProtectedInstancesRequestBody
+        r"""BatchCreateProtectedInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateProtectedInstancesRequestBody:
 
     @property
     def protected_instances(self):
-        """Gets the protected_instances of this BatchCreateProtectedInstancesRequestBody.
+        r"""Gets the protected_instances of this BatchCreateProtectedInstancesRequestBody.
 
         :return: The protected_instances of this BatchCreateProtectedInstancesRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`
@@ -51,7 +51,7 @@ class BatchCreateProtectedInstancesRequestBody:
 
     @protected_instances.setter
     def protected_instances(self, protected_instances):
-        """Sets the protected_instances of this BatchCreateProtectedInstancesRequestBody.
+        r"""Sets the protected_instances of this BatchCreateProtectedInstancesRequestBody.
 
         :param protected_instances: The protected_instances of this BatchCreateProtectedInstancesRequestBody.
         :type protected_instances: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`

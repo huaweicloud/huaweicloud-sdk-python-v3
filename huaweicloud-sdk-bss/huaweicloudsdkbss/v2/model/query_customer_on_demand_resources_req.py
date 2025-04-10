@@ -43,7 +43,7 @@ class QueryCustomerOnDemandResourcesReq:
     }
 
     def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None, indirect_partner_id=None):
-        """QueryCustomerOnDemandResourcesReq
+        r"""QueryCustomerOnDemandResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the customer_id of this QueryCustomerOnDemandResourcesReq.
 
         客户账号ID。 您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -116,7 +116,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the customer_id of this QueryCustomerOnDemandResourcesReq.
 
         客户账号ID。 您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -127,7 +127,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def region_code(self):
-        """Gets the region_code of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the region_code of this QueryCustomerOnDemandResourcesReq.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -138,7 +138,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the region_code of this QueryCustomerOnDemandResourcesReq.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -149,7 +149,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the service_type_code of this QueryCustomerOnDemandResourcesReq.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -160,7 +160,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the service_type_code of this QueryCustomerOnDemandResourcesReq.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -171,7 +171,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the resource_ids of this QueryCustomerOnDemandResourcesReq.
 
         资源ID批量查询。 用于查询指定资源ID对应的资源。 最多支持同时传递50个ID的列表。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -182,7 +182,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the resource_ids of this QueryCustomerOnDemandResourcesReq.
 
         资源ID批量查询。 用于查询指定资源ID对应的资源。 最多支持同时传递50个ID的列表。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -193,7 +193,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def effective_time_begin(self):
-        """Gets the effective_time_begin of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the effective_time_begin of this QueryCustomerOnDemandResourcesReq.
 
         生效时间的开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -204,7 +204,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @effective_time_begin.setter
     def effective_time_begin(self, effective_time_begin):
-        """Sets the effective_time_begin of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the effective_time_begin of this QueryCustomerOnDemandResourcesReq.
 
         生效时间的开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -215,7 +215,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def effective_time_end(self):
-        """Gets the effective_time_end of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the effective_time_end of this QueryCustomerOnDemandResourcesReq.
 
         生效时间的结束时间 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -226,7 +226,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @effective_time_end.setter
     def effective_time_end(self, effective_time_end):
-        """Sets the effective_time_end of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the effective_time_end of this QueryCustomerOnDemandResourcesReq.
 
         生效时间的结束时间 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -237,7 +237,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the offset of this QueryCustomerOnDemandResourcesReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -248,7 +248,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the offset of this QueryCustomerOnDemandResourcesReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -259,7 +259,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the limit of this QueryCustomerOnDemandResourcesReq.
 
         一次查询的条数，默认值为10。
 
@@ -270,7 +270,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the limit of this QueryCustomerOnDemandResourcesReq.
 
         一次查询的条数，默认值为10。
 
@@ -281,7 +281,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def status(self):
-        """Gets the status of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the status of this QueryCustomerOnDemandResourcesReq.
 
         资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -292,7 +292,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the status of this QueryCustomerOnDemandResourcesReq.
 
         资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -303,7 +303,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+        r"""Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
 
@@ -314,7 +314,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+        r"""Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
 

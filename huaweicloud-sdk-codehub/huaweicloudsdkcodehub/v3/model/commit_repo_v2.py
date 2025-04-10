@@ -41,7 +41,7 @@ class CommitRepoV2:
     }
 
     def __init__(self, id=None, short_id=None, created_at=None, title=None, parent_ids=None, message=None, author_name=None, committer_name=None, committed_date=None):
-        """CommitRepoV2
+        r"""CommitRepoV2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CommitRepoV2:
 
     @property
     def id(self):
-        """Gets the id of this CommitRepoV2.
+        r"""Gets the id of this CommitRepoV2.
 
         提交对应的SHA id
 
@@ -110,7 +110,7 @@ class CommitRepoV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CommitRepoV2.
+        r"""Sets the id of this CommitRepoV2.
 
         提交对应的SHA id
 
@@ -121,7 +121,7 @@ class CommitRepoV2:
 
     @property
     def short_id(self):
-        """Gets the short_id of this CommitRepoV2.
+        r"""Gets the short_id of this CommitRepoV2.
 
         提交对应的短SHA id
 
@@ -132,7 +132,7 @@ class CommitRepoV2:
 
     @short_id.setter
     def short_id(self, short_id):
-        """Sets the short_id of this CommitRepoV2.
+        r"""Sets the short_id of this CommitRepoV2.
 
         提交对应的短SHA id
 
@@ -143,7 +143,7 @@ class CommitRepoV2:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CommitRepoV2.
+        r"""Gets the created_at of this CommitRepoV2.
 
         创建时间
 
@@ -154,7 +154,7 @@ class CommitRepoV2:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CommitRepoV2.
+        r"""Sets the created_at of this CommitRepoV2.
 
         创建时间
 
@@ -165,7 +165,7 @@ class CommitRepoV2:
 
     @property
     def title(self):
-        """Gets the title of this CommitRepoV2.
+        r"""Gets the title of this CommitRepoV2.
 
         提交标题
 
@@ -176,7 +176,7 @@ class CommitRepoV2:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CommitRepoV2.
+        r"""Sets the title of this CommitRepoV2.
 
         提交标题
 
@@ -187,7 +187,7 @@ class CommitRepoV2:
 
     @property
     def parent_ids(self):
-        """Gets the parent_ids of this CommitRepoV2.
+        r"""Gets the parent_ids of this CommitRepoV2.
 
         父提交id
 
@@ -198,7 +198,7 @@ class CommitRepoV2:
 
     @parent_ids.setter
     def parent_ids(self, parent_ids):
-        """Sets the parent_ids of this CommitRepoV2.
+        r"""Sets the parent_ids of this CommitRepoV2.
 
         父提交id
 
@@ -209,7 +209,7 @@ class CommitRepoV2:
 
     @property
     def message(self):
-        """Gets the message of this CommitRepoV2.
+        r"""Gets the message of this CommitRepoV2.
 
         提交信息
 
@@ -220,7 +220,7 @@ class CommitRepoV2:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CommitRepoV2.
+        r"""Sets the message of this CommitRepoV2.
 
         提交信息
 
@@ -231,7 +231,7 @@ class CommitRepoV2:
 
     @property
     def author_name(self):
-        """Gets the author_name of this CommitRepoV2.
+        r"""Gets the author_name of this CommitRepoV2.
 
         作者
 
@@ -242,7 +242,7 @@ class CommitRepoV2:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this CommitRepoV2.
+        r"""Sets the author_name of this CommitRepoV2.
 
         作者
 
@@ -253,7 +253,7 @@ class CommitRepoV2:
 
     @property
     def committer_name(self):
-        """Gets the committer_name of this CommitRepoV2.
+        r"""Gets the committer_name of this CommitRepoV2.
 
         提交作者
 
@@ -264,7 +264,7 @@ class CommitRepoV2:
 
     @committer_name.setter
     def committer_name(self, committer_name):
-        """Sets the committer_name of this CommitRepoV2.
+        r"""Sets the committer_name of this CommitRepoV2.
 
         提交作者
 
@@ -275,7 +275,7 @@ class CommitRepoV2:
 
     @property
     def committed_date(self):
-        """Gets the committed_date of this CommitRepoV2.
+        r"""Gets the committed_date of this CommitRepoV2.
 
         提交时间
 
@@ -286,7 +286,7 @@ class CommitRepoV2:
 
     @committed_date.setter
     def committed_date(self, committed_date):
-        """Sets the committed_date of this CommitRepoV2.
+        r"""Sets the committed_date of this CommitRepoV2.
 
         提交时间
 

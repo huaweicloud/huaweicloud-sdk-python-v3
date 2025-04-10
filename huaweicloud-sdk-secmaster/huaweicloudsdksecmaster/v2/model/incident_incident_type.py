@@ -27,7 +27,7 @@ class IncidentIncidentType:
     }
 
     def __init__(self, category=None, incident_type=None):
-        """IncidentIncidentType
+        r"""IncidentIncidentType
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IncidentIncidentType:
 
     @property
     def category(self):
-        """Gets the category of this IncidentIncidentType.
+        r"""Gets the category of this IncidentIncidentType.
 
         类别
 
@@ -61,7 +61,7 @@ class IncidentIncidentType:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this IncidentIncidentType.
+        r"""Sets the category of this IncidentIncidentType.
 
         类别
 
@@ -72,7 +72,7 @@ class IncidentIncidentType:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this IncidentIncidentType.
+        r"""Gets the incident_type of this IncidentIncidentType.
 
         事件类型
 
@@ -83,7 +83,7 @@ class IncidentIncidentType:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this IncidentIncidentType.
+        r"""Sets the incident_type of this IncidentIncidentType.
 
         事件类型
 

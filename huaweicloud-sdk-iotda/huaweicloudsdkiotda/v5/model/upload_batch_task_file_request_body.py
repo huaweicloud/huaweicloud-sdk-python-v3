@@ -25,7 +25,7 @@ class UploadBatchTaskFileRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadBatchTaskFileRequestBody
+        r"""UploadBatchTaskFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadBatchTaskFileRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadBatchTaskFileRequestBody.
+        r"""Gets the file of this UploadBatchTaskFileRequestBody.
 
         **参数说明**：上传批量任务文件。 **取值范围**：当前仅支持xlsx/xls文件格式，且文件最大行数为30000行。
 
@@ -53,7 +53,7 @@ class UploadBatchTaskFileRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadBatchTaskFileRequestBody.
+        r"""Sets the file of this UploadBatchTaskFileRequestBody.
 
         **参数说明**：上传批量任务文件。 **取值范围**：当前仅支持xlsx/xls文件格式，且文件最大行数为30000行。
 

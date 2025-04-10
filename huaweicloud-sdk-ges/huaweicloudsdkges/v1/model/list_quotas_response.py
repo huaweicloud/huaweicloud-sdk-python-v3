@@ -30,7 +30,7 @@ class ListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, quotas=None):
-        """ListQuotasResponse
+        r"""ListQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListQuotasResponse.
+        r"""Gets the error_message of this ListQuotasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -69,7 +69,7 @@ class ListQuotasResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListQuotasResponse.
+        r"""Sets the error_message of this ListQuotasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -80,7 +80,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListQuotasResponse.
+        r"""Gets the error_code of this ListQuotasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -91,7 +91,7 @@ class ListQuotasResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListQuotasResponse.
+        r"""Sets the error_code of this ListQuotasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -102,7 +102,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListQuotasResponse.
+        r"""Gets the quotas of this ListQuotasResponse.
 
         :return: The quotas of this ListQuotasResponse.
         :rtype: :class:`huaweicloudsdkges.v1.GesQuotaResp`
@@ -111,7 +111,7 @@ class ListQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListQuotasResponse.
+        r"""Sets the quotas of this ListQuotasResponse.
 
         :param quotas: The quotas of this ListQuotasResponse.
         :type quotas: :class:`huaweicloudsdkges.v1.GesQuotaResp`

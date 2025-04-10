@@ -28,7 +28,7 @@ class ListLogLtsConfigsResponse(SdkResponse):
     }
 
     def __init__(self, instance_lts_configs=None, total_count=None):
-        """ListLogLtsConfigsResponse
+        r"""ListLogLtsConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLogLtsConfigsResponse(SdkResponse):
 
     @property
     def instance_lts_configs(self):
-        """Gets the instance_lts_configs of this ListLogLtsConfigsResponse.
+        r"""Gets the instance_lts_configs of this ListLogLtsConfigsResponse.
 
         实例的LTS配置
 
@@ -62,7 +62,7 @@ class ListLogLtsConfigsResponse(SdkResponse):
 
     @instance_lts_configs.setter
     def instance_lts_configs(self, instance_lts_configs):
-        """Sets the instance_lts_configs of this ListLogLtsConfigsResponse.
+        r"""Sets the instance_lts_configs of this ListLogLtsConfigsResponse.
 
         实例的LTS配置
 
@@ -73,7 +73,7 @@ class ListLogLtsConfigsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLogLtsConfigsResponse.
+        r"""Gets the total_count of this ListLogLtsConfigsResponse.
 
         结果集大小
 
@@ -84,7 +84,7 @@ class ListLogLtsConfigsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLogLtsConfigsResponse.
+        r"""Sets the total_count of this ListLogLtsConfigsResponse.
 
         结果集大小
 

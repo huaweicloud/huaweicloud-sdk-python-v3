@@ -34,7 +34,7 @@ class IoTDMAsyncClient(Client):
         return client_builder
 
     def bind_instance_tags_async(self, request):
-        """添加实例标签
+        r"""添加实例标签
 
         添加实例标签。
         
@@ -101,7 +101,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def change_instance_charge_mode_async(self, request):
-        """修改实例计费模式
+        r"""修改实例计费模式
 
         修改设备接入实例的计费模式，支持将按需计费模式修改为包年/包月计费模式。
         接口约束：当前实例的规格支持包年/包月计费模式时，才可以修改实例的计费模式为包年/包月。支持的实例规格请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。
@@ -169,7 +169,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def create_instance_async(self, request):
-        """创建设备接入实例
+        r"""创建设备接入实例
 
         用户可以调用此接口创建一个设备接入实例。支持的实例规格请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。
         [接口约束：
@@ -238,7 +238,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def delete_instance_async(self, request):
-        """删除实例
+        r"""删除实例
 
         删除设备接入实例。约束：此接口仅支持删除按需计费的实例。
         
@@ -303,7 +303,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def list_instances_async(self, request):
-        """查询实例列表
+        r"""查询实例列表
 
         用户可以调用此接口查询设备接入实例列表。
         
@@ -376,7 +376,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def resize_instance_async(self, request):
-        """修改实例规格信息
+        r"""修改实例规格信息
 
         修改设备接入实例的规格。
         
@@ -443,7 +443,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def show_instance_async(self, request):
-        """查询实例详情
+        r"""查询实例详情
 
         查询设备接入实例详情。
         
@@ -508,7 +508,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def unbind_instance_tags_async(self, request):
-        """删除实例标签
+        r"""删除实例标签
 
         删除实例标签。
         
@@ -575,7 +575,7 @@ class IoTDMAsyncClient(Client):
         return http_info
 
     def update_instance_async(self, request):
-        """修改实例信息
+        r"""修改实例信息
 
         修改设备接入实例信息。
         

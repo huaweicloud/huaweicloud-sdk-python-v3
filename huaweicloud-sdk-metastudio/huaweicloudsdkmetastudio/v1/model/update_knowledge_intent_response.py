@@ -26,7 +26,7 @@ class UpdateKnowledgeIntentResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateKnowledgeIntentResponse
+        r"""UpdateKnowledgeIntentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateKnowledgeIntentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateKnowledgeIntentResponse.
+        r"""Gets the x_request_id of this UpdateKnowledgeIntentResponse.
 
         :return: The x_request_id of this UpdateKnowledgeIntentResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateKnowledgeIntentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateKnowledgeIntentResponse.
+        r"""Sets the x_request_id of this UpdateKnowledgeIntentResponse.
 
         :param x_request_id: The x_request_id of this UpdateKnowledgeIntentResponse.
         :type x_request_id: str

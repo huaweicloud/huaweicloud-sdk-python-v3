@@ -26,7 +26,7 @@ class DeleteUserResponse(SdkResponse):
     }
 
     def __init__(self, name=None):
-        """DeleteUserResponse
+        r"""DeleteUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteUserResponse.
+        r"""Gets the name of this DeleteUserResponse.
 
         DDM实例帐号名称。
 
@@ -55,7 +55,7 @@ class DeleteUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteUserResponse.
+        r"""Sets the name of this DeleteUserResponse.
 
         DDM实例帐号名称。
 

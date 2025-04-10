@@ -25,7 +25,7 @@ class MigrationRabbitVhostMetadata:
     }
 
     def __init__(self, name=None):
-        """MigrationRabbitVhostMetadata
+        r"""MigrationRabbitVhostMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MigrationRabbitVhostMetadata:
 
     @property
     def name(self):
-        """Gets the name of this MigrationRabbitVhostMetadata.
+        r"""Gets the name of this MigrationRabbitVhostMetadata.
 
         vhost名称。
 
@@ -54,7 +54,7 @@ class MigrationRabbitVhostMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MigrationRabbitVhostMetadata.
+        r"""Sets the name of this MigrationRabbitVhostMetadata.
 
         vhost名称。
 

@@ -26,7 +26,7 @@ class BatchDeleteRulesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """BatchDeleteRulesResponse
+        r"""BatchDeleteRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteRulesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this BatchDeleteRulesResponse.
+        r"""Gets the resources of this BatchDeleteRulesResponse.
 
         返回数组
 
@@ -55,7 +55,7 @@ class BatchDeleteRulesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this BatchDeleteRulesResponse.
+        r"""Sets the resources of this BatchDeleteRulesResponse.
 
         返回数组
 

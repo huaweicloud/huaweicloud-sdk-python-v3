@@ -23,7 +23,7 @@ class ShowAomMappingRulesRequest:
     }
 
     def __init__(self):
-        """ShowAomMappingRulesRequest
+        r"""ShowAomMappingRulesRequest
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class CreateDatabaseReq:
     }
 
     def __init__(self, databases=None):
-        """CreateDatabaseReq
+        r"""CreateDatabaseReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDatabaseReq:
 
     @property
     def databases(self):
-        """Gets the databases of this CreateDatabaseReq.
+        r"""Gets the databases of this CreateDatabaseReq.
 
         逻辑库相关信息的集合
 
@@ -53,7 +53,7 @@ class CreateDatabaseReq:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateDatabaseReq.
+        r"""Sets the databases of this CreateDatabaseReq.
 
         逻辑库相关信息的集合
 

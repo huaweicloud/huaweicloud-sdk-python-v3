@@ -27,7 +27,7 @@ class SubscribeImageReq:
     }
 
     def __init__(self, asset_id=None, version=None):
-        """SubscribeImageReq
+        r"""SubscribeImageReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SubscribeImageReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this SubscribeImageReq.
+        r"""Gets the asset_id of this SubscribeImageReq.
 
         镜像资产ID
 
@@ -59,7 +59,7 @@ class SubscribeImageReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this SubscribeImageReq.
+        r"""Sets the asset_id of this SubscribeImageReq.
 
         镜像资产ID
 
@@ -70,7 +70,7 @@ class SubscribeImageReq:
 
     @property
     def version(self):
-        """Gets the version of this SubscribeImageReq.
+        r"""Gets the version of this SubscribeImageReq.
 
         镜像资产版本
 
@@ -81,7 +81,7 @@ class SubscribeImageReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SubscribeImageReq.
+        r"""Sets the version of this SubscribeImageReq.
 
         镜像资产版本
 

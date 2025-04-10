@@ -45,7 +45,7 @@ class PoliciesKeyboardMouse:
     }
 
     def __init__(self, mouse_feedback=None, mouse_simulation_mode=None, external_cursor_feedback=None, selfhelp_console_enable=None, client_mouse_send_interval=None, windows_client_keyboard_mode=None, windows_client_mouse_mode=None, linux_client_keyboard_mode=None, linux_client_mouse_mode=None, special_keyboard=None, joy_stick_flag=None):
-        """PoliciesKeyboardMouse
+        r"""PoliciesKeyboardMouse
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def mouse_feedback(self):
-        """Gets the mouse_feedback of this PoliciesKeyboardMouse.
+        r"""Gets the mouse_feedback of this PoliciesKeyboardMouse.
 
         虚拟机鼠标回馈。取值为： SELFADAPTION：自适应鼠标回馈。 FORCE：强制鼠标回馈。 CLOSE：关闭鼠标回馈。
 
@@ -124,7 +124,7 @@ class PoliciesKeyboardMouse:
 
     @mouse_feedback.setter
     def mouse_feedback(self, mouse_feedback):
-        """Sets the mouse_feedback of this PoliciesKeyboardMouse.
+        r"""Sets the mouse_feedback of this PoliciesKeyboardMouse.
 
         虚拟机鼠标回馈。取值为： SELFADAPTION：自适应鼠标回馈。 FORCE：强制鼠标回馈。 CLOSE：关闭鼠标回馈。
 
@@ -135,7 +135,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def mouse_simulation_mode(self):
-        """Gets the mouse_simulation_mode of this PoliciesKeyboardMouse.
+        r"""Gets the mouse_simulation_mode of this PoliciesKeyboardMouse.
 
         虚拟机鼠标模拟方式。取值为： ABSOLUTE_POSITION：绝对位置模拟。 RELATIVE_POSITION：相对位置模拟。
 
@@ -146,7 +146,7 @@ class PoliciesKeyboardMouse:
 
     @mouse_simulation_mode.setter
     def mouse_simulation_mode(self, mouse_simulation_mode):
-        """Sets the mouse_simulation_mode of this PoliciesKeyboardMouse.
+        r"""Sets the mouse_simulation_mode of this PoliciesKeyboardMouse.
 
         虚拟机鼠标模拟方式。取值为： ABSOLUTE_POSITION：绝对位置模拟。 RELATIVE_POSITION：相对位置模拟。
 
@@ -157,7 +157,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def external_cursor_feedback(self):
-        """Gets the external_cursor_feedback of this PoliciesKeyboardMouse.
+        r"""Gets the external_cursor_feedback of this PoliciesKeyboardMouse.
 
         虚拟机外部光标反馈。取值为： false：表示关闭。 true：表示开启。
 
@@ -168,7 +168,7 @@ class PoliciesKeyboardMouse:
 
     @external_cursor_feedback.setter
     def external_cursor_feedback(self, external_cursor_feedback):
-        """Sets the external_cursor_feedback of this PoliciesKeyboardMouse.
+        r"""Sets the external_cursor_feedback of this PoliciesKeyboardMouse.
 
         虚拟机外部光标反馈。取值为： false：表示关闭。 true：表示开启。
 
@@ -179,7 +179,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def selfhelp_console_enable(self):
-        """Gets the selfhelp_console_enable of this PoliciesKeyboardMouse.
+        r"""Gets the selfhelp_console_enable of this PoliciesKeyboardMouse.
 
         自助维护台抢占登陆。取值为： false：表示关闭。 true：表示开启。
 
@@ -190,7 +190,7 @@ class PoliciesKeyboardMouse:
 
     @selfhelp_console_enable.setter
     def selfhelp_console_enable(self, selfhelp_console_enable):
-        """Sets the selfhelp_console_enable of this PoliciesKeyboardMouse.
+        r"""Sets the selfhelp_console_enable of this PoliciesKeyboardMouse.
 
         自助维护台抢占登陆。取值为： false：表示关闭。 true：表示开启。
 
@@ -201,7 +201,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def client_mouse_send_interval(self):
-        """Gets the client_mouse_send_interval of this PoliciesKeyboardMouse.
+        r"""Gets the client_mouse_send_interval of this PoliciesKeyboardMouse.
 
         客户端鼠标发送间隔。取值范围为[1-30]。默认：30。
 
@@ -212,7 +212,7 @@ class PoliciesKeyboardMouse:
 
     @client_mouse_send_interval.setter
     def client_mouse_send_interval(self, client_mouse_send_interval):
-        """Sets the client_mouse_send_interval of this PoliciesKeyboardMouse.
+        r"""Sets the client_mouse_send_interval of this PoliciesKeyboardMouse.
 
         客户端鼠标发送间隔。取值范围为[1-30]。默认：30。
 
@@ -223,7 +223,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def windows_client_keyboard_mode(self):
-        """Gets the windows_client_keyboard_mode of this PoliciesKeyboardMouse.
+        r"""Gets the windows_client_keyboard_mode of this PoliciesKeyboardMouse.
 
         Windows客户端键盘模式。取值为： GLOBAL：Windows客户端键盘全局模式。（默认） WINDOW：Windows客户端键盘窗口模式。
 
@@ -234,7 +234,7 @@ class PoliciesKeyboardMouse:
 
     @windows_client_keyboard_mode.setter
     def windows_client_keyboard_mode(self, windows_client_keyboard_mode):
-        """Sets the windows_client_keyboard_mode of this PoliciesKeyboardMouse.
+        r"""Sets the windows_client_keyboard_mode of this PoliciesKeyboardMouse.
 
         Windows客户端键盘模式。取值为： GLOBAL：Windows客户端键盘全局模式。（默认） WINDOW：Windows客户端键盘窗口模式。
 
@@ -245,7 +245,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def windows_client_mouse_mode(self):
-        """Gets the windows_client_mouse_mode of this PoliciesKeyboardMouse.
+        r"""Gets the windows_client_mouse_mode of this PoliciesKeyboardMouse.
 
         Windows客户端鼠标模式。取值为： GLOBAL：Windows客户端鼠标全局模式。 WINDOW：Windows客户端鼠标窗口模式。（默认）
 
@@ -256,7 +256,7 @@ class PoliciesKeyboardMouse:
 
     @windows_client_mouse_mode.setter
     def windows_client_mouse_mode(self, windows_client_mouse_mode):
-        """Sets the windows_client_mouse_mode of this PoliciesKeyboardMouse.
+        r"""Sets the windows_client_mouse_mode of this PoliciesKeyboardMouse.
 
         Windows客户端鼠标模式。取值为： GLOBAL：Windows客户端鼠标全局模式。 WINDOW：Windows客户端鼠标窗口模式。（默认）
 
@@ -267,7 +267,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def linux_client_keyboard_mode(self):
-        """Gets the linux_client_keyboard_mode of this PoliciesKeyboardMouse.
+        r"""Gets the linux_client_keyboard_mode of this PoliciesKeyboardMouse.
 
         Linux客户端键盘模式。取值为： EVENT：Linux客户端键盘事件模式。（默认） GRAPH：Linux客户端键盘图形模式。
 
@@ -278,7 +278,7 @@ class PoliciesKeyboardMouse:
 
     @linux_client_keyboard_mode.setter
     def linux_client_keyboard_mode(self, linux_client_keyboard_mode):
-        """Sets the linux_client_keyboard_mode of this PoliciesKeyboardMouse.
+        r"""Sets the linux_client_keyboard_mode of this PoliciesKeyboardMouse.
 
         Linux客户端键盘模式。取值为： EVENT：Linux客户端键盘事件模式。（默认） GRAPH：Linux客户端键盘图形模式。
 
@@ -289,7 +289,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def linux_client_mouse_mode(self):
-        """Gets the linux_client_mouse_mode of this PoliciesKeyboardMouse.
+        r"""Gets the linux_client_mouse_mode of this PoliciesKeyboardMouse.
 
         Linux客户端鼠标模式。取值为： EVENT：Linux客户端鼠标事件模式。（默认） GRAPH：Linux客户端鼠标窗口模式。
 
@@ -300,7 +300,7 @@ class PoliciesKeyboardMouse:
 
     @linux_client_mouse_mode.setter
     def linux_client_mouse_mode(self, linux_client_mouse_mode):
-        """Sets the linux_client_mouse_mode of this PoliciesKeyboardMouse.
+        r"""Sets the linux_client_mouse_mode of this PoliciesKeyboardMouse.
 
         Linux客户端鼠标模式。取值为： EVENT：Linux客户端鼠标事件模式。（默认） GRAPH：Linux客户端鼠标窗口模式。
 
@@ -311,7 +311,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def special_keyboard(self):
-        """Gets the special_keyboard of this PoliciesKeyboardMouse.
+        r"""Gets the special_keyboard of this PoliciesKeyboardMouse.
 
         特殊键盘。取值为： false：表示关闭。 true：表示开启。
 
@@ -322,7 +322,7 @@ class PoliciesKeyboardMouse:
 
     @special_keyboard.setter
     def special_keyboard(self, special_keyboard):
-        """Sets the special_keyboard of this PoliciesKeyboardMouse.
+        r"""Sets the special_keyboard of this PoliciesKeyboardMouse.
 
         特殊键盘。取值为： false：表示关闭。 true：表示开启。
 
@@ -333,7 +333,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def joy_stick_flag(self):
-        """Gets the joy_stick_flag of this PoliciesKeyboardMouse.
+        r"""Gets the joy_stick_flag of this PoliciesKeyboardMouse.
 
         游戏操纵杆。取值为： false：表示关闭。 true：表示开启。
 
@@ -344,7 +344,7 @@ class PoliciesKeyboardMouse:
 
     @joy_stick_flag.setter
     def joy_stick_flag(self, joy_stick_flag):
-        """Sets the joy_stick_flag of this PoliciesKeyboardMouse.
+        r"""Sets the joy_stick_flag of this PoliciesKeyboardMouse.
 
         游戏操纵杆。取值为： false：表示关闭。 true：表示开启。
 

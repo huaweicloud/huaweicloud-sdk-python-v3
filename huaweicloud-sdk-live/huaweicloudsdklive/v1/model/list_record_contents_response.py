@@ -30,7 +30,7 @@ class ListRecordContentsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, record_contents=None, x_request_id=None):
-        """ListRecordContentsResponse
+        r"""ListRecordContentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRecordContentsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRecordContentsResponse.
+        r"""Gets the total of this ListRecordContentsResponse.
 
         查询结果的总元素数量
 
@@ -69,7 +69,7 @@ class ListRecordContentsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRecordContentsResponse.
+        r"""Sets the total of this ListRecordContentsResponse.
 
         查询结果的总元素数量
 
@@ -80,7 +80,7 @@ class ListRecordContentsResponse(SdkResponse):
 
     @property
     def record_contents(self):
-        """Gets the record_contents of this ListRecordContentsResponse.
+        r"""Gets the record_contents of this ListRecordContentsResponse.
 
         录制内容数组
 
@@ -91,7 +91,7 @@ class ListRecordContentsResponse(SdkResponse):
 
     @record_contents.setter
     def record_contents(self, record_contents):
-        """Sets the record_contents of this ListRecordContentsResponse.
+        r"""Sets the record_contents of this ListRecordContentsResponse.
 
         录制内容数组
 
@@ -102,7 +102,7 @@ class ListRecordContentsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRecordContentsResponse.
+        r"""Gets the x_request_id of this ListRecordContentsResponse.
 
         :return: The x_request_id of this ListRecordContentsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListRecordContentsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRecordContentsResponse.
+        r"""Sets the x_request_id of this ListRecordContentsResponse.
 
         :param x_request_id: The x_request_id of this ListRecordContentsResponse.
         :type x_request_id: str

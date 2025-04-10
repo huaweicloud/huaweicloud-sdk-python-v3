@@ -30,7 +30,7 @@ class UpdateAccountRequest:
     }
 
     def __init__(self, x_security_token=None, account_id=None, body=None):
-        """UpdateAccountRequest
+        r"""UpdateAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAccountRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this UpdateAccountRequest.
+        r"""Gets the x_security_token of this UpdateAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class UpdateAccountRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this UpdateAccountRequest.
+        r"""Sets the x_security_token of this UpdateAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class UpdateAccountRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this UpdateAccountRequest.
+        r"""Gets the account_id of this UpdateAccountRequest.
 
         账号的唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class UpdateAccountRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this UpdateAccountRequest.
+        r"""Sets the account_id of this UpdateAccountRequest.
 
         账号的唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class UpdateAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAccountRequest.
+        r"""Gets the body of this UpdateAccountRequest.
 
         :return: The body of this UpdateAccountRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateAccountReqBody`
@@ -110,7 +110,7 @@ class UpdateAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAccountRequest.
+        r"""Sets the body of this UpdateAccountRequest.
 
         :param body: The body of this UpdateAccountRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.UpdateAccountReqBody`

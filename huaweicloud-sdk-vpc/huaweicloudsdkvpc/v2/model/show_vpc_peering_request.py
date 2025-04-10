@@ -25,7 +25,7 @@ class ShowVpcPeeringRequest:
     }
 
     def __init__(self, peering_id=None):
-        """ShowVpcPeeringRequest
+        r"""ShowVpcPeeringRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpcPeeringRequest:
 
     @property
     def peering_id(self):
-        """Gets the peering_id of this ShowVpcPeeringRequest.
+        r"""Gets the peering_id of this ShowVpcPeeringRequest.
 
         对等连接ID
 
@@ -53,7 +53,7 @@ class ShowVpcPeeringRequest:
 
     @peering_id.setter
     def peering_id(self, peering_id):
-        """Sets the peering_id of this ShowVpcPeeringRequest.
+        r"""Sets the peering_id of this ShowVpcPeeringRequest.
 
         对等连接ID
 

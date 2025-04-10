@@ -59,7 +59,7 @@ class ListCustomerBillsFeeRecordsRequest:
     }
 
     def __init__(self, x_language=None, bill_cycle=None, provider_type=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, trade_id=None, enterprise_project_id=None, include_zero_record=None, status=None, method=None, sub_customer_id=None, offset=None, limit=None, bill_date_begin=None, bill_date_end=None):
-        """ListCustomerBillsFeeRecordsRequest
+        r"""ListCustomerBillsFeeRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the x_language of this ListCustomerBillsFeeRecordsRequest.
 
         语言。zh_CN：中文 en_US：英文。默认为zh_CN：中文。
 
@@ -172,7 +172,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the x_language of this ListCustomerBillsFeeRecordsRequest.
 
         语言。zh_CN：中文 en_US：英文。默认为zh_CN：中文。
 
@@ -183,7 +183,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the bill_cycle of this ListCustomerBillsFeeRecordsRequest.
 
         查询的流水账单所在账期，东八区时间，格式为YYYY-MM。
 
@@ -194,7 +194,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the bill_cycle of this ListCustomerBillsFeeRecordsRequest.
 
         查询的流水账单所在账期，东八区时间，格式为YYYY-MM。
 
@@ -205,7 +205,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the provider_type of this ListCustomerBillsFeeRecordsRequest.
 
         服务商。1：华为云2：云商店为空时查询包含华为云和云商店在内的全部服务商。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -216,7 +216,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the provider_type of this ListCustomerBillsFeeRecordsRequest.
 
         服务商。1：华为云2：云商店为空时查询包含华为云和云商店在内的全部服务商。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -227,7 +227,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the service_type_code of this ListCustomerBillsFeeRecordsRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -238,7 +238,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the service_type_code of this ListCustomerBillsFeeRecordsRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -249,7 +249,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the resource_type_code of this ListCustomerBillsFeeRecordsRequest.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -260,7 +260,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the resource_type_code of this ListCustomerBillsFeeRecordsRequest.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -271,7 +271,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def region_code(self):
-        """Gets the region_code of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the region_code of this ListCustomerBillsFeeRecordsRequest.
 
         云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -282,7 +282,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the region_code of this ListCustomerBillsFeeRecordsRequest.
 
         云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -293,7 +293,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
 
         计费模式：1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -304,7 +304,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
 
         计费模式：1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -315,7 +315,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the bill_type of this ListCustomerBillsFeeRecordsRequest.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -326,7 +326,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the bill_type of this ListCustomerBillsFeeRecordsRequest.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -337,7 +337,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the trade_id of this ListCustomerBillsFeeRecordsRequest.
 
         订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -348,7 +348,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the trade_id of this ListCustomerBillsFeeRecordsRequest.
 
         订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -359,7 +359,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
 
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -370,7 +370,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
 
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -381,7 +381,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def include_zero_record(self):
-        """Gets the include_zero_record of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the include_zero_record of this ListCustomerBillsFeeRecordsRequest.
 
         返回是否包含应付金额为0的记录。true：包含false：不包含此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -392,7 +392,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @include_zero_record.setter
     def include_zero_record(self, include_zero_record):
-        """Sets the include_zero_record of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the include_zero_record of this ListCustomerBillsFeeRecordsRequest.
 
         返回是否包含应付金额为0的记录。true：包含false：不包含此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -403,7 +403,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the status of this ListCustomerBillsFeeRecordsRequest.
 
         支付状态。1：已支付2：未结清3：未出账此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -414,7 +414,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the status of this ListCustomerBillsFeeRecordsRequest.
 
         支付状态。1：已支付2：未结清3：未出账此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -425,7 +425,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def method(self):
-        """Gets the method of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the method of this ListCustomerBillsFeeRecordsRequest.
 
         查询流水账单的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 此参数不携带或携带值为空时，默认值为“all”，如果没有企业子客户，取值为all时查询的是客户自己的流水账单。
 
@@ -436,7 +436,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the method of this ListCustomerBillsFeeRecordsRequest.
 
         查询流水账单的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 此参数不携带或携带值为空时，默认值为“all”，如果没有企业子客户，取值为all时查询的是客户自己的流水账单。
 
@@ -447,7 +447,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
 
         企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -458,7 +458,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
 
         企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -469,7 +469,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the offset of this ListCustomerBillsFeeRecordsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -480,7 +480,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the offset of this ListCustomerBillsFeeRecordsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -491,7 +491,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the limit of this ListCustomerBillsFeeRecordsRequest.
 
         页面大小。默认值为10。
 
@@ -502,7 +502,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the limit of this ListCustomerBillsFeeRecordsRequest.
 
         页面大小。默认值为10。
 
@@ -513,7 +513,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def bill_date_begin(self):
-        """Gets the bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
 
         查询的流水账单的开始日期，东八区时间，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
 
@@ -524,7 +524,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @bill_date_begin.setter
     def bill_date_begin(self, bill_date_begin):
-        """Sets the bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
 
         查询的流水账单的开始日期，东八区时间，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
 
@@ -535,7 +535,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @property
     def bill_date_end(self):
-        """Gets the bill_date_end of this ListCustomerBillsFeeRecordsRequest.
+        r"""Gets the bill_date_end of this ListCustomerBillsFeeRecordsRequest.
 
         查询的流水账单的结束日期，东八区时间，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
 
@@ -546,7 +546,7 @@ class ListCustomerBillsFeeRecordsRequest:
 
     @bill_date_end.setter
     def bill_date_end(self, bill_date_end):
-        """Sets the bill_date_end of this ListCustomerBillsFeeRecordsRequest.
+        r"""Sets the bill_date_end of this ListCustomerBillsFeeRecordsRequest.
 
         查询的流水账单的结束日期，东八区时间，格式为YYYY-MM-DD。此参数不携带或携带值为空时，不作为筛选条件。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
 

@@ -30,7 +30,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
     }
 
     def __init__(self, state=None, audio_file_url=None, audio_info_file_url=None):
-        """ShowAsyncTtsJobResponse
+        r"""ShowAsyncTtsJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowAsyncTtsJobResponse.
+        r"""Gets the state of this ShowAsyncTtsJobResponse.
 
         音频文件是否已生成完成。该标记为PROCESSING时，应该每隔3秒再次调用本接口获取音频文件(WAITING 等待中,PROCESSING 处理中,SUCCEED 成功,FAILED 失败)
 
@@ -69,7 +69,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowAsyncTtsJobResponse.
+        r"""Sets the state of this ShowAsyncTtsJobResponse.
 
         音频文件是否已生成完成。该标记为PROCESSING时，应该每隔3秒再次调用本接口获取音频文件(WAITING 等待中,PROCESSING 处理中,SUCCEED 成功,FAILED 失败)
 
@@ -80,7 +80,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     @property
     def audio_file_url(self):
-        """Gets the audio_file_url of this ShowAsyncTtsJobResponse.
+        r"""Gets the audio_file_url of this ShowAsyncTtsJobResponse.
 
         音频文件下载链接，有效期为1个小时。
 
@@ -91,7 +91,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     @audio_file_url.setter
     def audio_file_url(self, audio_file_url):
-        """Sets the audio_file_url of this ShowAsyncTtsJobResponse.
+        r"""Sets the audio_file_url of this ShowAsyncTtsJobResponse.
 
         音频文件下载链接，有效期为1个小时。
 
@@ -102,7 +102,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     @property
     def audio_info_file_url(self):
-        """Gets the audio_info_file_url of this ShowAsyncTtsJobResponse.
+        r"""Gets the audio_info_file_url of this ShowAsyncTtsJobResponse.
 
         字幕文件下载链接，有效期为1个小时。
 
@@ -113,7 +113,7 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     @audio_info_file_url.setter
     def audio_info_file_url(self, audio_info_file_url):
-        """Sets the audio_info_file_url of this ShowAsyncTtsJobResponse.
+        r"""Sets the audio_info_file_url of this ShowAsyncTtsJobResponse.
 
         字幕文件下载链接，有效期为1个小时。
 

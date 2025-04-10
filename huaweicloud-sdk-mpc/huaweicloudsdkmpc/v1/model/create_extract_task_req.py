@@ -33,7 +33,7 @@ class CreateExtractTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, sync=None, encryption=None):
-        """CreateExtractTaskReq
+        r"""CreateExtractTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateExtractTaskReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateExtractTaskReq.
+        r"""Gets the input of this CreateExtractTaskReq.
 
         :return: The input of this CreateExtractTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -80,7 +80,7 @@ class CreateExtractTaskReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateExtractTaskReq.
+        r"""Sets the input of this CreateExtractTaskReq.
 
         :param input: The input of this CreateExtractTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -89,7 +89,7 @@ class CreateExtractTaskReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateExtractTaskReq.
+        r"""Gets the output of this CreateExtractTaskReq.
 
         :return: The output of this CreateExtractTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -98,7 +98,7 @@ class CreateExtractTaskReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateExtractTaskReq.
+        r"""Sets the output of this CreateExtractTaskReq.
 
         :param output: The output of this CreateExtractTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -107,7 +107,7 @@ class CreateExtractTaskReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateExtractTaskReq.
+        r"""Gets the user_data of this CreateExtractTaskReq.
 
         用户自定义数据。 
 
@@ -118,7 +118,7 @@ class CreateExtractTaskReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateExtractTaskReq.
+        r"""Sets the user_data of this CreateExtractTaskReq.
 
         用户自定义数据。 
 
@@ -129,7 +129,7 @@ class CreateExtractTaskReq:
 
     @property
     def sync(self):
-        """Gets the sync of this CreateExtractTaskReq.
+        r"""Gets the sync of this CreateExtractTaskReq.
 
         是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
 
@@ -140,7 +140,7 @@ class CreateExtractTaskReq:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this CreateExtractTaskReq.
+        r"""Sets the sync of this CreateExtractTaskReq.
 
         是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
 
@@ -151,7 +151,7 @@ class CreateExtractTaskReq:
 
     @property
     def encryption(self):
-        """Gets the encryption of this CreateExtractTaskReq.
+        r"""Gets the encryption of this CreateExtractTaskReq.
 
         :return: The encryption of this CreateExtractTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
@@ -160,7 +160,7 @@ class CreateExtractTaskReq:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this CreateExtractTaskReq.
+        r"""Sets the encryption of this CreateExtractTaskReq.
 
         :param encryption: The encryption of this CreateExtractTaskReq.
         :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`

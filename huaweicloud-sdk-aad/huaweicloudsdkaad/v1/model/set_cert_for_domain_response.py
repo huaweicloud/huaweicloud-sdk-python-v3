@@ -24,7 +24,7 @@ class SetCertForDomainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetCertForDomainResponse
+        r"""SetCertForDomainResponse
 
         The model defined in huaweicloud sdk
 

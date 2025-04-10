@@ -29,7 +29,7 @@ class QueryCategoryRsp:
     }
 
     def __init__(self, id=None, name=None, children=None):
-        """QueryCategoryRsp
+        r"""QueryCategoryRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryCategoryRsp:
 
     @property
     def id(self):
-        """Gets the id of this QueryCategoryRsp.
+        r"""Gets the id of this QueryCategoryRsp.
 
         分类ID。
 
@@ -68,7 +68,7 @@ class QueryCategoryRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryCategoryRsp.
+        r"""Sets the id of this QueryCategoryRsp.
 
         分类ID。
 
@@ -79,7 +79,7 @@ class QueryCategoryRsp:
 
     @property
     def name(self):
-        """Gets the name of this QueryCategoryRsp.
+        r"""Gets the name of this QueryCategoryRsp.
 
         分类名称。
 
@@ -90,7 +90,7 @@ class QueryCategoryRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryCategoryRsp.
+        r"""Sets the name of this QueryCategoryRsp.
 
         分类名称。
 
@@ -101,7 +101,7 @@ class QueryCategoryRsp:
 
     @property
     def children(self):
-        """Gets the children of this QueryCategoryRsp.
+        r"""Gets the children of this QueryCategoryRsp.
 
         子分类列表。
 
@@ -112,7 +112,7 @@ class QueryCategoryRsp:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this QueryCategoryRsp.
+        r"""Sets the children of this QueryCategoryRsp.
 
         子分类列表。
 

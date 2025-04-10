@@ -66,7 +66,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, datasource_type=None, cluster_id=None, cluster_name=None, database_name=None, table_id=None, table_name=None, user_groups=None, users=None, conn_name=None, conn_id=None, sync_status=None, sync_msg=None, sync_log=None, create_time=None, create_user=None, update_time=None, update_user=None, schema_name=None, policy_list=None):
-        """CreateSecurityDynamicMaskingPolicyResponse
+        r"""CreateSecurityDynamicMaskingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略id。
 
@@ -195,7 +195,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略id。
 
@@ -206,7 +206,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略名称。英文和汉字开头, 支持英文、汉字、数字、下划线, 2-64字符。
 
@@ -217,7 +217,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略名称。英文和汉字开头, 支持英文、汉字、数字、下划线, 2-64字符。
 
@@ -228,7 +228,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the datasource_type of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -239,7 +239,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the datasource_type of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -250,7 +250,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the cluster_id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         集群id。请于集群管理页面查看集群ID信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -261,7 +261,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the cluster_id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         集群id。请于集群管理页面查看集群ID信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -272,7 +272,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the cluster_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         集群名称。请于集群管理页面查看集群名称信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -283,7 +283,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the cluster_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         集群名称。请于集群管理页面查看集群名称信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -294,7 +294,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the database_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据库名称。获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -305,7 +305,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the database_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据库名称。获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -316,7 +316,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def table_id(self):
-        """Gets the table_id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the table_id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据表id，获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -327,7 +327,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the table_id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据表id，获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -338,7 +338,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the table_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据表名称, 获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -349,7 +349,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the table_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据表名称, 获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -360,7 +360,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def user_groups(self):
-        """Gets the user_groups of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the user_groups of this CreateSecurityDynamicMaskingPolicyResponse.
 
         用户组列表，用户组名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置）。例如：\"userGroup1,userGroup2\"。
 
@@ -371,7 +371,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @user_groups.setter
     def user_groups(self, user_groups):
-        """Sets the user_groups of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the user_groups of this CreateSecurityDynamicMaskingPolicyResponse.
 
         用户组列表，用户组名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置）。例如：\"userGroup1,userGroup2\"。
 
@@ -382,7 +382,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the users of this CreateSecurityDynamicMaskingPolicyResponse.
 
         用户列表，用户名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置），例如：\"user1,user2\"。
 
@@ -393,7 +393,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the users of this CreateSecurityDynamicMaskingPolicyResponse.
 
         用户列表，用户名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置），例如：\"user1,user2\"。
 
@@ -404,7 +404,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def conn_name(self):
-        """Gets the conn_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the conn_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据连接名称，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -415,7 +415,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @conn_name.setter
     def conn_name(self, conn_name):
-        """Sets the conn_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the conn_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据连接名称，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -426,7 +426,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def conn_id(self):
-        """Gets the conn_id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the conn_id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据连接id，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -437,7 +437,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @conn_id.setter
     def conn_id(self, conn_id):
-        """Sets the conn_id of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the conn_id of this CreateSecurityDynamicMaskingPolicyResponse.
 
         数据连接id，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -448,7 +448,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the sync_status of this CreateSecurityDynamicMaskingPolicyResponse.
 
         同步状态： - UNKNOWN 未知状态 - NOT_SYNC 未同步 - SYNCING 同步中 - SYNC_SUCCESS 同步成功 - SYNC_FAIL 同步失败 - SYNC_PARTIAL_FAIL 存在失败 - DELETE_FAIL 删除失败 - DELETING 删除中 - UPDATING 更新中 - DATA_UPDATED 数据存在更新
 
@@ -459,7 +459,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the sync_status of this CreateSecurityDynamicMaskingPolicyResponse.
 
         同步状态： - UNKNOWN 未知状态 - NOT_SYNC 未同步 - SYNCING 同步中 - SYNC_SUCCESS 同步成功 - SYNC_FAIL 同步失败 - SYNC_PARTIAL_FAIL 存在失败 - DELETE_FAIL 删除失败 - DELETING 删除中 - UPDATING 更新中 - DATA_UPDATED 数据存在更新
 
@@ -470,7 +470,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the sync_msg of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略同步信息。
 
@@ -481,7 +481,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the sync_msg of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略同步信息。
 
@@ -492,7 +492,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def sync_log(self):
-        """Gets the sync_log of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the sync_log of this CreateSecurityDynamicMaskingPolicyResponse.
 
         同步运行日志, 格式为 字段同步信息+换行符。
 
@@ -503,7 +503,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @sync_log.setter
     def sync_log(self, sync_log):
-        """Sets the sync_log of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the sync_log of this CreateSecurityDynamicMaskingPolicyResponse.
 
         同步运行日志, 格式为 字段同步信息+换行符。
 
@@ -514,7 +514,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the create_time of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略创建时间。
 
@@ -525,7 +525,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the create_time of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略创建时间。
 
@@ -536,7 +536,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the create_user of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略创建者。
 
@@ -547,7 +547,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the create_user of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略创建者。
 
@@ -558,7 +558,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the update_time of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略更新时间。
 
@@ -569,7 +569,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the update_time of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略更新时间。
 
@@ -580,7 +580,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the update_user of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略更新者。
 
@@ -591,7 +591,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the update_user of this CreateSecurityDynamicMaskingPolicyResponse.
 
         策略更新者。
 
@@ -602,7 +602,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the schema_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         DWS数据源的模式名称。
 
@@ -613,7 +613,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the schema_name of this CreateSecurityDynamicMaskingPolicyResponse.
 
         DWS数据源的模式名称。
 
@@ -624,7 +624,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @property
     def policy_list(self):
-        """Gets the policy_list of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Gets the policy_list of this CreateSecurityDynamicMaskingPolicyResponse.
 
         动态数据脱敏策略列表。
 
@@ -635,7 +635,7 @@ class CreateSecurityDynamicMaskingPolicyResponse(SdkResponse):
 
     @policy_list.setter
     def policy_list(self, policy_list):
-        """Sets the policy_list of this CreateSecurityDynamicMaskingPolicyResponse.
+        r"""Sets the policy_list of this CreateSecurityDynamicMaskingPolicyResponse.
 
         动态数据脱敏策略列表。
 

@@ -25,7 +25,7 @@ class DeleteCustomLineRequest:
     }
 
     def __init__(self, line_id=None):
-        """DeleteCustomLineRequest
+        r"""DeleteCustomLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteCustomLineRequest:
 
     @property
     def line_id(self):
-        """Gets the line_id of this DeleteCustomLineRequest.
+        r"""Gets the line_id of this DeleteCustomLineRequest.
 
         自定义线路id
 
@@ -53,7 +53,7 @@ class DeleteCustomLineRequest:
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this DeleteCustomLineRequest.
+        r"""Sets the line_id of this DeleteCustomLineRequest.
 
         自定义线路id
 

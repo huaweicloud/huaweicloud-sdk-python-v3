@@ -33,7 +33,7 @@ class SubAppCreateParam:
     }
 
     def __init__(self, name=None, display_name=None, model_id=None, model_type=None, description=None):
-        """SubAppCreateParam
+        r"""SubAppCreateParam
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class SubAppCreateParam:
 
     @property
     def name(self):
-        """Gets the name of this SubAppCreateParam.
+        r"""Gets the name of this SubAppCreateParam.
 
         子应用唯一标识
 
@@ -79,7 +79,7 @@ class SubAppCreateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubAppCreateParam.
+        r"""Sets the name of this SubAppCreateParam.
 
         子应用唯一标识
 
@@ -90,7 +90,7 @@ class SubAppCreateParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this SubAppCreateParam.
+        r"""Gets the display_name of this SubAppCreateParam.
 
         子应用节点显示名称
 
@@ -101,7 +101,7 @@ class SubAppCreateParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this SubAppCreateParam.
+        r"""Sets the display_name of this SubAppCreateParam.
 
         子应用节点显示名称
 
@@ -112,7 +112,7 @@ class SubAppCreateParam:
 
     @property
     def model_id(self):
-        """Gets the model_id of this SubAppCreateParam.
+        r"""Gets the model_id of this SubAppCreateParam.
 
         应用Id、子应用Id
 
@@ -123,7 +123,7 @@ class SubAppCreateParam:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this SubAppCreateParam.
+        r"""Sets the model_id of this SubAppCreateParam.
 
         应用Id、子应用Id
 
@@ -134,7 +134,7 @@ class SubAppCreateParam:
 
     @property
     def model_type(self):
-        """Gets the model_type of this SubAppCreateParam.
+        r"""Gets the model_type of this SubAppCreateParam.
 
         应用、子应用，取值：APPLICATION、SUB_APPLICATION
 
@@ -145,7 +145,7 @@ class SubAppCreateParam:
 
     @model_type.setter
     def model_type(self, model_type):
-        """Sets the model_type of this SubAppCreateParam.
+        r"""Sets the model_type of this SubAppCreateParam.
 
         应用、子应用，取值：APPLICATION、SUB_APPLICATION
 
@@ -156,7 +156,7 @@ class SubAppCreateParam:
 
     @property
     def description(self):
-        """Gets the description of this SubAppCreateParam.
+        r"""Gets the description of this SubAppCreateParam.
 
         子应用描述
 
@@ -167,7 +167,7 @@ class SubAppCreateParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubAppCreateParam.
+        r"""Sets the description of this SubAppCreateParam.
 
         子应用描述
 

@@ -25,7 +25,7 @@ class UpdateScheduleReq:
     }
 
     def __init__(self, schedulable=None):
-        """UpdateScheduleReq
+        r"""UpdateScheduleReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateScheduleReq:
 
     @property
     def schedulable(self):
-        """Gets the schedulable of this UpdateScheduleReq.
+        r"""Gets the schedulable of this UpdateScheduleReq.
 
         是否可调度
 
@@ -53,7 +53,7 @@ class UpdateScheduleReq:
 
     @schedulable.setter
     def schedulable(self, schedulable):
-        """Sets the schedulable of this UpdateScheduleReq.
+        r"""Sets the schedulable of this UpdateScheduleReq.
 
         是否可调度
 

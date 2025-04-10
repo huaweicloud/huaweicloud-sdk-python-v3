@@ -29,7 +29,7 @@ class DeleteServersRequestBody:
     }
 
     def __init__(self, delete_publicip=None, delete_volume=None, servers=None):
-        """DeleteServersRequestBody
+        r"""DeleteServersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteServersRequestBody:
 
     @property
     def delete_publicip(self):
-        """Gets the delete_publicip of this DeleteServersRequestBody.
+        r"""Gets the delete_publicip of this DeleteServersRequestBody.
 
         配置删除云服务器是否删除云服务器绑定的弹性IP。如果选择不删除，则系统仅做解绑定操作，保留弹性IP资源。 取值为true或false，默认为false。   - true：删除云服务器时会同时删除绑定在云服务器上的弹性IP。  - false：删除云服务器时，仅解绑定在云服务器上的弹性IP，不删除弹性IP
 
@@ -67,7 +67,7 @@ class DeleteServersRequestBody:
 
     @delete_publicip.setter
     def delete_publicip(self, delete_publicip):
-        """Sets the delete_publicip of this DeleteServersRequestBody.
+        r"""Sets the delete_publicip of this DeleteServersRequestBody.
 
         配置删除云服务器是否删除云服务器绑定的弹性IP。如果选择不删除，则系统仅做解绑定操作，保留弹性IP资源。 取值为true或false，默认为false。   - true：删除云服务器时会同时删除绑定在云服务器上的弹性IP。  - false：删除云服务器时，仅解绑定在云服务器上的弹性IP，不删除弹性IP
 
@@ -78,7 +78,7 @@ class DeleteServersRequestBody:
 
     @property
     def delete_volume(self):
-        """Gets the delete_volume of this DeleteServersRequestBody.
+        r"""Gets the delete_volume of this DeleteServersRequestBody.
 
         配置删除云服务器是否删除云服务器对应的数据盘，如果选择不删除，则系统仅做解绑定操作，保留云磁盘资源。 取值为false或true，默认为false。  - true：删除云服务器时会同时删除挂载在云服务器上的数据盘。 - false：删除云服务器时，仅卸载云服务器上挂载的数据盘，不删除该数据盘。
 
@@ -89,7 +89,7 @@ class DeleteServersRequestBody:
 
     @delete_volume.setter
     def delete_volume(self, delete_volume):
-        """Sets the delete_volume of this DeleteServersRequestBody.
+        r"""Sets the delete_volume of this DeleteServersRequestBody.
 
         配置删除云服务器是否删除云服务器对应的数据盘，如果选择不删除，则系统仅做解绑定操作，保留云磁盘资源。 取值为false或true，默认为false。  - true：删除云服务器时会同时删除挂载在云服务器上的数据盘。 - false：删除云服务器时，仅卸载云服务器上挂载的数据盘，不删除该数据盘。
 
@@ -100,7 +100,7 @@ class DeleteServersRequestBody:
 
     @property
     def servers(self):
-        """Gets the servers of this DeleteServersRequestBody.
+        r"""Gets the servers of this DeleteServersRequestBody.
 
         所需要删除的云服务器列表。
 
@@ -111,7 +111,7 @@ class DeleteServersRequestBody:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this DeleteServersRequestBody.
+        r"""Sets the servers of this DeleteServersRequestBody.
 
         所需要删除的云服务器列表。
 

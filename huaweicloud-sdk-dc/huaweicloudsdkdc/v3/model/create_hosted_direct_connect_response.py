@@ -28,7 +28,7 @@ class CreateHostedDirectConnectResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, hosted_connect=None):
-        """CreateHostedDirectConnectResponse
+        r"""CreateHostedDirectConnectResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateHostedDirectConnectResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateHostedDirectConnectResponse.
+        r"""Gets the request_id of this CreateHostedDirectConnectResponse.
 
         操作请求ID
 
@@ -62,7 +62,7 @@ class CreateHostedDirectConnectResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateHostedDirectConnectResponse.
+        r"""Sets the request_id of this CreateHostedDirectConnectResponse.
 
         操作请求ID
 
@@ -73,7 +73,7 @@ class CreateHostedDirectConnectResponse(SdkResponse):
 
     @property
     def hosted_connect(self):
-        """Gets the hosted_connect of this CreateHostedDirectConnectResponse.
+        r"""Gets the hosted_connect of this CreateHostedDirectConnectResponse.
 
         :return: The hosted_connect of this CreateHostedDirectConnectResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.HostedDirectConnect`
@@ -82,7 +82,7 @@ class CreateHostedDirectConnectResponse(SdkResponse):
 
     @hosted_connect.setter
     def hosted_connect(self, hosted_connect):
-        """Sets the hosted_connect of this CreateHostedDirectConnectResponse.
+        r"""Sets the hosted_connect of this CreateHostedDirectConnectResponse.
 
         :param hosted_connect: The hosted_connect of this CreateHostedDirectConnectResponse.
         :type hosted_connect: :class:`huaweicloudsdkdc.v3.HostedDirectConnect`

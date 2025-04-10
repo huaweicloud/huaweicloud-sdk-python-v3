@@ -29,7 +29,7 @@ class ListConfigurationAggregatorsRequest:
     }
 
     def __init__(self, aggregator_name=None, limit=None, marker=None):
-        """ListConfigurationAggregatorsRequest
+        r"""ListConfigurationAggregatorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListConfigurationAggregatorsRequest:
 
     @property
     def aggregator_name(self):
-        """Gets the aggregator_name of this ListConfigurationAggregatorsRequest.
+        r"""Gets the aggregator_name of this ListConfigurationAggregatorsRequest.
 
         资源聚合器名称。
 
@@ -68,7 +68,7 @@ class ListConfigurationAggregatorsRequest:
 
     @aggregator_name.setter
     def aggregator_name(self, aggregator_name):
-        """Sets the aggregator_name of this ListConfigurationAggregatorsRequest.
+        r"""Sets the aggregator_name of this ListConfigurationAggregatorsRequest.
 
         资源聚合器名称。
 
@@ -79,7 +79,7 @@ class ListConfigurationAggregatorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigurationAggregatorsRequest.
+        r"""Gets the limit of this ListConfigurationAggregatorsRequest.
 
         最大的返回数量
 
@@ -90,7 +90,7 @@ class ListConfigurationAggregatorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigurationAggregatorsRequest.
+        r"""Sets the limit of this ListConfigurationAggregatorsRequest.
 
         最大的返回数量
 
@@ -101,7 +101,7 @@ class ListConfigurationAggregatorsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListConfigurationAggregatorsRequest.
+        r"""Gets the marker of this ListConfigurationAggregatorsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -112,7 +112,7 @@ class ListConfigurationAggregatorsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListConfigurationAggregatorsRequest.
+        r"""Sets the marker of this ListConfigurationAggregatorsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

@@ -28,7 +28,7 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
     }
 
     def __init__(self, status=None, data=None):
-        """ListInstantQueryAomPromGetResponse
+        r"""ListInstantQueryAomPromGetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListInstantQueryAomPromGetResponse.
+        r"""Gets the status of this ListInstantQueryAomPromGetResponse.
 
         响应状态。
 
@@ -62,7 +62,7 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstantQueryAomPromGetResponse.
+        r"""Sets the status of this ListInstantQueryAomPromGetResponse.
 
         响应状态。
 
@@ -73,7 +73,7 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListInstantQueryAomPromGetResponse.
+        r"""Gets the data of this ListInstantQueryAomPromGetResponse.
 
         响应数据。
 
@@ -84,7 +84,7 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListInstantQueryAomPromGetResponse.
+        r"""Sets the data of this ListInstantQueryAomPromGetResponse.
 
         响应数据。
 

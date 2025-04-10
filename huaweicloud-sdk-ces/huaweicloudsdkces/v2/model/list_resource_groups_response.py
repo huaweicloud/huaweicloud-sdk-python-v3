@@ -28,7 +28,7 @@ class ListResourceGroupsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, resource_groups=None):
-        """ListResourceGroupsResponse
+        r"""ListResourceGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceGroupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListResourceGroupsResponse.
+        r"""Gets the count of this ListResourceGroupsResponse.
 
         资源分组总数
 
@@ -62,7 +62,7 @@ class ListResourceGroupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListResourceGroupsResponse.
+        r"""Sets the count of this ListResourceGroupsResponse.
 
         资源分组总数
 
@@ -73,7 +73,7 @@ class ListResourceGroupsResponse(SdkResponse):
 
     @property
     def resource_groups(self):
-        """Gets the resource_groups of this ListResourceGroupsResponse.
+        r"""Gets the resource_groups of this ListResourceGroupsResponse.
 
         资源分组列表
 
@@ -84,7 +84,7 @@ class ListResourceGroupsResponse(SdkResponse):
 
     @resource_groups.setter
     def resource_groups(self, resource_groups):
-        """Sets the resource_groups of this ListResourceGroupsResponse.
+        r"""Sets the resource_groups of this ListResourceGroupsResponse.
 
         资源分组列表
 

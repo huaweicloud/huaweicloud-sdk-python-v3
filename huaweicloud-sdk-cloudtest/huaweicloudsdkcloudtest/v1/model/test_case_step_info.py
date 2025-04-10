@@ -31,7 +31,7 @@ class TestCaseStepInfo:
     }
 
     def __init__(self, test_step=None, expect_result=None, step_actual=None, step_result=None):
-        """TestCaseStepInfo
+        r"""TestCaseStepInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TestCaseStepInfo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TestCaseStepInfo.
+        r"""Gets the test_step of this TestCaseStepInfo.
 
         测试步骤
 
@@ -75,7 +75,7 @@ class TestCaseStepInfo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TestCaseStepInfo.
+        r"""Sets the test_step of this TestCaseStepInfo.
 
         测试步骤
 
@@ -86,7 +86,7 @@ class TestCaseStepInfo:
 
     @property
     def expect_result(self):
-        """Gets the expect_result of this TestCaseStepInfo.
+        r"""Gets the expect_result of this TestCaseStepInfo.
 
         预期结果
 
@@ -97,7 +97,7 @@ class TestCaseStepInfo:
 
     @expect_result.setter
     def expect_result(self, expect_result):
-        """Sets the expect_result of this TestCaseStepInfo.
+        r"""Sets the expect_result of this TestCaseStepInfo.
 
         预期结果
 
@@ -108,7 +108,7 @@ class TestCaseStepInfo:
 
     @property
     def step_actual(self):
-        """Gets the step_actual of this TestCaseStepInfo.
+        r"""Gets the step_actual of this TestCaseStepInfo.
 
         步骤的实际结果
 
@@ -119,7 +119,7 @@ class TestCaseStepInfo:
 
     @step_actual.setter
     def step_actual(self, step_actual):
-        """Sets the step_actual of this TestCaseStepInfo.
+        r"""Sets the step_actual of this TestCaseStepInfo.
 
         步骤的实际结果
 
@@ -130,7 +130,7 @@ class TestCaseStepInfo:
 
     @property
     def step_result(self):
-        """Gets the step_result of this TestCaseStepInfo.
+        r"""Gets the step_result of this TestCaseStepInfo.
 
         步骤结果
 
@@ -141,7 +141,7 @@ class TestCaseStepInfo:
 
     @step_result.setter
     def step_result(self, step_result):
-        """Sets the step_result of this TestCaseStepInfo.
+        r"""Sets the step_result of this TestCaseStepInfo.
 
         步骤结果
 

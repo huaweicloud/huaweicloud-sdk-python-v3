@@ -37,7 +37,7 @@ class SlowlogDownloadInfo:
     }
 
     def __init__(self, workflow_id=None, file_name=None, status=None, file_size=None, file_link=None, create_at=None, update_at=None):
-        """SlowlogDownloadInfo
+        r"""SlowlogDownloadInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SlowlogDownloadInfo:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this SlowlogDownloadInfo.
+        r"""Gets the workflow_id of this SlowlogDownloadInfo.
 
         任务ID
 
@@ -89,7 +89,7 @@ class SlowlogDownloadInfo:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this SlowlogDownloadInfo.
+        r"""Sets the workflow_id of this SlowlogDownloadInfo.
 
         任务ID
 
@@ -100,7 +100,7 @@ class SlowlogDownloadInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this SlowlogDownloadInfo.
+        r"""Gets the file_name of this SlowlogDownloadInfo.
 
         生成的下载文件名
 
@@ -111,7 +111,7 @@ class SlowlogDownloadInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this SlowlogDownloadInfo.
+        r"""Sets the file_name of this SlowlogDownloadInfo.
 
         生成的下载文件名
 
@@ -122,7 +122,7 @@ class SlowlogDownloadInfo:
 
     @property
     def status(self):
-        """Gets the status of this SlowlogDownloadInfo.
+        r"""Gets the status of this SlowlogDownloadInfo.
 
         生成链接的生成状态
 
@@ -133,7 +133,7 @@ class SlowlogDownloadInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SlowlogDownloadInfo.
+        r"""Sets the status of this SlowlogDownloadInfo.
 
         生成链接的生成状态
 
@@ -144,7 +144,7 @@ class SlowlogDownloadInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this SlowlogDownloadInfo.
+        r"""Gets the file_size of this SlowlogDownloadInfo.
 
         文件大小
 
@@ -155,7 +155,7 @@ class SlowlogDownloadInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this SlowlogDownloadInfo.
+        r"""Sets the file_size of this SlowlogDownloadInfo.
 
         文件大小
 
@@ -166,7 +166,7 @@ class SlowlogDownloadInfo:
 
     @property
     def file_link(self):
-        """Gets the file_link of this SlowlogDownloadInfo.
+        r"""Gets the file_link of this SlowlogDownloadInfo.
 
         下载链接
 
@@ -177,7 +177,7 @@ class SlowlogDownloadInfo:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this SlowlogDownloadInfo.
+        r"""Sets the file_link of this SlowlogDownloadInfo.
 
         下载链接
 
@@ -188,7 +188,7 @@ class SlowlogDownloadInfo:
 
     @property
     def create_at(self):
-        """Gets the create_at of this SlowlogDownloadInfo.
+        r"""Gets the create_at of this SlowlogDownloadInfo.
 
         生成时间
 
@@ -199,7 +199,7 @@ class SlowlogDownloadInfo:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this SlowlogDownloadInfo.
+        r"""Sets the create_at of this SlowlogDownloadInfo.
 
         生成时间
 
@@ -210,7 +210,7 @@ class SlowlogDownloadInfo:
 
     @property
     def update_at(self):
-        """Gets the update_at of this SlowlogDownloadInfo.
+        r"""Gets the update_at of this SlowlogDownloadInfo.
 
         更新时间
 
@@ -221,7 +221,7 @@ class SlowlogDownloadInfo:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this SlowlogDownloadInfo.
+        r"""Sets the update_at of this SlowlogDownloadInfo.
 
         更新时间
 

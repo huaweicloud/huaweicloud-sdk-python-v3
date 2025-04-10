@@ -27,7 +27,7 @@ class CdmClusterEnterpriseProject:
     }
 
     def __init__(self, cluster_id=None, sys_tags=None):
-        """CdmClusterEnterpriseProject
+        r"""CdmClusterEnterpriseProject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CdmClusterEnterpriseProject:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CdmClusterEnterpriseProject.
+        r"""Gets the cluster_id of this CdmClusterEnterpriseProject.
 
         集群ID
 
@@ -61,7 +61,7 @@ class CdmClusterEnterpriseProject:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CdmClusterEnterpriseProject.
+        r"""Sets the cluster_id of this CdmClusterEnterpriseProject.
 
         集群ID
 
@@ -72,7 +72,7 @@ class CdmClusterEnterpriseProject:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CdmClusterEnterpriseProject.
+        r"""Gets the sys_tags of this CdmClusterEnterpriseProject.
 
         企业项目列表
 
@@ -83,7 +83,7 @@ class CdmClusterEnterpriseProject:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CdmClusterEnterpriseProject.
+        r"""Sets the sys_tags of this CdmClusterEnterpriseProject.
 
         企业项目列表
 

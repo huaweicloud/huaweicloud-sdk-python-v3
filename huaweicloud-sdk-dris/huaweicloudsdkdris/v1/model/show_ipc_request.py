@@ -27,7 +27,7 @@ class ShowIpcRequest:
     }
 
     def __init__(self, instance_id=None, camera_id=None):
-        """ShowIpcRequest
+        r"""ShowIpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowIpcRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowIpcRequest.
+        r"""Gets the instance_id of this ShowIpcRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -60,7 +60,7 @@ class ShowIpcRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowIpcRequest.
+        r"""Sets the instance_id of this ShowIpcRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -71,7 +71,7 @@ class ShowIpcRequest:
 
     @property
     def camera_id(self):
-        """Gets the camera_id of this ShowIpcRequest.
+        r"""Gets the camera_id of this ShowIpcRequest.
 
         **参数说明**：摄像头ID，console界面查询摄像头IPC列表中的设备Id。
 
@@ -82,7 +82,7 @@ class ShowIpcRequest:
 
     @camera_id.setter
     def camera_id(self, camera_id):
-        """Sets the camera_id of this ShowIpcRequest.
+        r"""Sets the camera_id of this ShowIpcRequest.
 
         **参数说明**：摄像头ID，console界面查询摄像头IPC列表中的设备Id。
 

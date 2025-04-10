@@ -26,7 +26,7 @@ class ShowUpgradeDurationResponse(SdkResponse):
     }
 
     def __init__(self, strategies=None):
-        """ShowUpgradeDurationResponse
+        r"""ShowUpgradeDurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowUpgradeDurationResponse(SdkResponse):
 
     @property
     def strategies(self):
-        """Gets the strategies of this ShowUpgradeDurationResponse.
+        r"""Gets the strategies of this ShowUpgradeDurationResponse.
 
         升级策略列表
 
@@ -55,7 +55,7 @@ class ShowUpgradeDurationResponse(SdkResponse):
 
     @strategies.setter
     def strategies(self, strategies):
-        """Sets the strategies of this ShowUpgradeDurationResponse.
+        r"""Sets the strategies of this ShowUpgradeDurationResponse.
 
         升级策略列表
 

@@ -28,7 +28,7 @@ class ListScriptResultsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ListScriptResultsResponse
+        r"""ListScriptResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListScriptResultsResponse.
+        r"""Gets the status of this ListScriptResultsResponse.
 
         :return: The status of this ListScriptResultsResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScriptResultsResponse.
+        r"""Sets the status of this ListScriptResultsResponse.
 
         :param status: The status of this ListScriptResultsResponse.
         :type status: str
@@ -69,7 +69,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListScriptResultsResponse.
+        r"""Gets the result of this ListScriptResultsResponse.
 
         :return: The result of this ListScriptResultsResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.Result`]
@@ -78,7 +78,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListScriptResultsResponse.
+        r"""Sets the result of this ListScriptResultsResponse.
 
         :param result: The result of this ListScriptResultsResponse.
         :type result: list[:class:`huaweicloudsdkdlf.v1.Result`]

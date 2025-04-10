@@ -49,7 +49,7 @@ class NovaListServersDetailsRequest:
     }
 
     def __init__(self, changes_since=None, flavor=None, image=None, ip=None, limit=None, marker=None, name=None, not_tags=None, reservation_id=None, sort_key=None, status=None, tags=None, open_stack_api_version=None):
-        """NovaListServersDetailsRequest
+        r"""NovaListServersDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def changes_since(self):
-        """Gets the changes_since of this NovaListServersDetailsRequest.
+        r"""Gets the changes_since of this NovaListServersDetailsRequest.
 
         云服务器上次更新状态的时间戳信息。时间戳为UTC格式。
 
@@ -138,7 +138,7 @@ class NovaListServersDetailsRequest:
 
     @changes_since.setter
     def changes_since(self, changes_since):
-        """Sets the changes_since of this NovaListServersDetailsRequest.
+        r"""Sets the changes_since of this NovaListServersDetailsRequest.
 
         云服务器上次更新状态的时间戳信息。时间戳为UTC格式。
 
@@ -149,7 +149,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this NovaListServersDetailsRequest.
+        r"""Gets the flavor of this NovaListServersDetailsRequest.
 
         云服务器规格ID。
 
@@ -160,7 +160,7 @@ class NovaListServersDetailsRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this NovaListServersDetailsRequest.
+        r"""Sets the flavor of this NovaListServersDetailsRequest.
 
         云服务器规格ID。
 
@@ -171,7 +171,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def image(self):
-        """Gets the image of this NovaListServersDetailsRequest.
+        r"""Gets the image of this NovaListServersDetailsRequest.
 
         镜像ID  在使用image作为条件过滤时，不能同时支持其他过滤条件和分页条件。如果同时指定image及其他条件，则以image条件为准；当条件不含image时，接口功能不受限制。
 
@@ -182,7 +182,7 @@ class NovaListServersDetailsRequest:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this NovaListServersDetailsRequest.
+        r"""Sets the image of this NovaListServersDetailsRequest.
 
         镜像ID  在使用image作为条件过滤时，不能同时支持其他过滤条件和分页条件。如果同时指定image及其他条件，则以image条件为准；当条件不含image时，接口功能不受限制。
 
@@ -193,7 +193,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this NovaListServersDetailsRequest.
+        r"""Gets the ip of this NovaListServersDetailsRequest.
 
         IPv4地址过滤结果，匹配规则为模糊匹配。
 
@@ -204,7 +204,7 @@ class NovaListServersDetailsRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this NovaListServersDetailsRequest.
+        r"""Sets the ip of this NovaListServersDetailsRequest.
 
         IPv4地址过滤结果，匹配规则为模糊匹配。
 
@@ -215,7 +215,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NovaListServersDetailsRequest.
+        r"""Gets the limit of this NovaListServersDetailsRequest.
 
         查询返回云服务器数量限制。
 
@@ -226,7 +226,7 @@ class NovaListServersDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NovaListServersDetailsRequest.
+        r"""Sets the limit of this NovaListServersDetailsRequest.
 
         查询返回云服务器数量限制。
 
@@ -237,7 +237,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NovaListServersDetailsRequest.
+        r"""Gets the marker of this NovaListServersDetailsRequest.
 
         从marker指定的云服务器ID的下一条数据开始查询。
 
@@ -248,7 +248,7 @@ class NovaListServersDetailsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NovaListServersDetailsRequest.
+        r"""Sets the marker of this NovaListServersDetailsRequest.
 
         从marker指定的云服务器ID的下一条数据开始查询。
 
@@ -259,7 +259,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def name(self):
-        """Gets the name of this NovaListServersDetailsRequest.
+        r"""Gets the name of this NovaListServersDetailsRequest.
 
         云服务器名称。
 
@@ -270,7 +270,7 @@ class NovaListServersDetailsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaListServersDetailsRequest.
+        r"""Sets the name of this NovaListServersDetailsRequest.
 
         云服务器名称。
 
@@ -281,7 +281,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this NovaListServersDetailsRequest.
+        r"""Gets the not_tags of this NovaListServersDetailsRequest.
 
         查询tag字段中不包含该值的云服务器，值为标签的Key。  > 说明： >  > 系统近期对标签功能进行了升级。如果之前添加的Tag为“Key.Value”的形式，则查询的时候需要使用“Key”来查询。 >  > 例如：之前添加的tag为“a.b”,则升级后，查询时需使用“not-tags=a”。
 
@@ -292,7 +292,7 @@ class NovaListServersDetailsRequest:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this NovaListServersDetailsRequest.
+        r"""Sets the not_tags of this NovaListServersDetailsRequest.
 
         查询tag字段中不包含该值的云服务器，值为标签的Key。  > 说明： >  > 系统近期对标签功能进行了升级。如果之前添加的Tag为“Key.Value”的形式，则查询的时候需要使用“Key”来查询。 >  > 例如：之前添加的tag为“a.b”,则升级后，查询时需使用“not-tags=a”。
 
@@ -303,7 +303,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def reservation_id(self):
-        """Gets the reservation_id of this NovaListServersDetailsRequest.
+        r"""Gets the reservation_id of this NovaListServersDetailsRequest.
 
         批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
@@ -314,7 +314,7 @@ class NovaListServersDetailsRequest:
 
     @reservation_id.setter
     def reservation_id(self, reservation_id):
-        """Sets the reservation_id of this NovaListServersDetailsRequest.
+        r"""Sets the reservation_id of this NovaListServersDetailsRequest.
 
         批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
@@ -325,7 +325,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this NovaListServersDetailsRequest.
+        r"""Gets the sort_key of this NovaListServersDetailsRequest.
 
         查询结果按弹性云服务器属性排序，默认排序顺序为created_at逆序。
 
@@ -336,7 +336,7 @@ class NovaListServersDetailsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this NovaListServersDetailsRequest.
+        r"""Sets the sort_key of this NovaListServersDetailsRequest.
 
         查询结果按弹性云服务器属性排序，默认排序顺序为created_at逆序。
 
@@ -347,7 +347,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this NovaListServersDetailsRequest.
+        r"""Gets the status of this NovaListServersDetailsRequest.
 
         云服务器状态。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  直到2.37微版本，非上面范围的status字段将返回空列表，2.38之后的微版本，将返回400错误。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -358,7 +358,7 @@ class NovaListServersDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NovaListServersDetailsRequest.
+        r"""Sets the status of this NovaListServersDetailsRequest.
 
         云服务器状态。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  直到2.37微版本，非上面范围的status字段将返回空列表，2.38之后的微版本，将返回400错误。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -369,7 +369,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this NovaListServersDetailsRequest.
+        r"""Gets the tags of this NovaListServersDetailsRequest.
 
         查询tag字段中包含该值的云服务器。
 
@@ -380,7 +380,7 @@ class NovaListServersDetailsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this NovaListServersDetailsRequest.
+        r"""Sets the tags of this NovaListServersDetailsRequest.
 
         查询tag字段中包含该值的云服务器。
 
@@ -391,7 +391,7 @@ class NovaListServersDetailsRequest:
 
     @property
     def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaListServersDetailsRequest.
+        r"""Gets the open_stack_api_version of this NovaListServersDetailsRequest.
 
         微版本头
 
@@ -402,7 +402,7 @@ class NovaListServersDetailsRequest:
 
     @open_stack_api_version.setter
     def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaListServersDetailsRequest.
+        r"""Sets the open_stack_api_version of this NovaListServersDetailsRequest.
 
         微版本头
 

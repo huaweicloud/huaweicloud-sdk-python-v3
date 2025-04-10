@@ -35,7 +35,7 @@ class CheckPoint:
     }
 
     def __init__(self, comparison=None, description=None, function_arg=None, function_type=None, _property=None, value=None):
-        """CheckPoint
+        r"""CheckPoint
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CheckPoint:
 
     @property
     def comparison(self):
-        """Gets the comparison of this CheckPoint.
+        r"""Gets the comparison of this CheckPoint.
 
         运算符
 
@@ -89,7 +89,7 @@ class CheckPoint:
 
     @comparison.setter
     def comparison(self, comparison):
-        """Sets the comparison of this CheckPoint.
+        r"""Sets the comparison of this CheckPoint.
 
         运算符
 
@@ -100,7 +100,7 @@ class CheckPoint:
 
     @property
     def description(self):
-        """Gets the description of this CheckPoint.
+        r"""Gets the description of this CheckPoint.
 
         描述信息
 
@@ -111,7 +111,7 @@ class CheckPoint:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckPoint.
+        r"""Sets the description of this CheckPoint.
 
         描述信息
 
@@ -122,7 +122,7 @@ class CheckPoint:
 
     @property
     def function_arg(self):
-        """Gets the function_arg of this CheckPoint.
+        r"""Gets the function_arg of this CheckPoint.
 
         响应提取时要使用什么方法处理参数
 
@@ -133,7 +133,7 @@ class CheckPoint:
 
     @function_arg.setter
     def function_arg(self, function_arg):
-        """Sets the function_arg of this CheckPoint.
+        r"""Sets the function_arg of this CheckPoint.
 
         响应提取时要使用什么方法处理参数
 
@@ -144,7 +144,7 @@ class CheckPoint:
 
     @property
     def function_type(self):
-        """Gets the function_type of this CheckPoint.
+        r"""Gets the function_type of this CheckPoint.
 
         响应提取时要使用什么方法处理参数
 
@@ -155,7 +155,7 @@ class CheckPoint:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this CheckPoint.
+        r"""Sets the function_type of this CheckPoint.
 
         响应提取时要使用什么方法处理参数
 
@@ -166,7 +166,7 @@ class CheckPoint:
 
     @property
     def _property(self):
-        """Gets the _property of this CheckPoint.
+        r"""Gets the _property of this CheckPoint.
 
         属性名称
 
@@ -177,7 +177,7 @@ class CheckPoint:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this CheckPoint.
+        r"""Sets the _property of this CheckPoint.
 
         属性名称
 
@@ -188,7 +188,7 @@ class CheckPoint:
 
     @property
     def value(self):
-        """Gets the value of this CheckPoint.
+        r"""Gets the value of this CheckPoint.
 
         值
 
@@ -199,7 +199,7 @@ class CheckPoint:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CheckPoint.
+        r"""Sets the value of this CheckPoint.
 
         值
 

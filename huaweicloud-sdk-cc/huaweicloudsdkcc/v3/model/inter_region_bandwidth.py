@@ -43,7 +43,7 @@ class InterRegionBandwidth:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, created_at=None, updated_at=None, cloud_connection_id=None, bandwidth_package_id=None, inter_regions=None, bandwidth=None):
-        """InterRegionBandwidth
+        r"""InterRegionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InterRegionBandwidth:
 
     @property
     def id(self):
-        """Gets the id of this InterRegionBandwidth.
+        r"""Gets the id of this InterRegionBandwidth.
 
         实例ID。
 
@@ -110,7 +110,7 @@ class InterRegionBandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InterRegionBandwidth.
+        r"""Sets the id of this InterRegionBandwidth.
 
         实例ID。
 
@@ -121,7 +121,7 @@ class InterRegionBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this InterRegionBandwidth.
+        r"""Gets the name of this InterRegionBandwidth.
 
         实例名字。
 
@@ -132,7 +132,7 @@ class InterRegionBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InterRegionBandwidth.
+        r"""Sets the name of this InterRegionBandwidth.
 
         实例名字。
 
@@ -143,7 +143,7 @@ class InterRegionBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this InterRegionBandwidth.
+        r"""Gets the description of this InterRegionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -154,7 +154,7 @@ class InterRegionBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InterRegionBandwidth.
+        r"""Sets the description of this InterRegionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -165,7 +165,7 @@ class InterRegionBandwidth:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this InterRegionBandwidth.
+        r"""Gets the domain_id of this InterRegionBandwidth.
 
         实例所属账号ID。
 
@@ -176,7 +176,7 @@ class InterRegionBandwidth:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this InterRegionBandwidth.
+        r"""Sets the domain_id of this InterRegionBandwidth.
 
         实例所属账号ID。
 
@@ -187,7 +187,7 @@ class InterRegionBandwidth:
 
     @property
     def created_at(self):
-        """Gets the created_at of this InterRegionBandwidth.
+        r"""Gets the created_at of this InterRegionBandwidth.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -198,7 +198,7 @@ class InterRegionBandwidth:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this InterRegionBandwidth.
+        r"""Sets the created_at of this InterRegionBandwidth.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -209,7 +209,7 @@ class InterRegionBandwidth:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this InterRegionBandwidth.
+        r"""Gets the updated_at of this InterRegionBandwidth.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -220,7 +220,7 @@ class InterRegionBandwidth:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this InterRegionBandwidth.
+        r"""Sets the updated_at of this InterRegionBandwidth.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -231,7 +231,7 @@ class InterRegionBandwidth:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this InterRegionBandwidth.
+        r"""Gets the cloud_connection_id of this InterRegionBandwidth.
 
         云连接实例ID。
 
@@ -242,7 +242,7 @@ class InterRegionBandwidth:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this InterRegionBandwidth.
+        r"""Sets the cloud_connection_id of this InterRegionBandwidth.
 
         云连接实例ID。
 
@@ -253,7 +253,7 @@ class InterRegionBandwidth:
 
     @property
     def bandwidth_package_id(self):
-        """Gets the bandwidth_package_id of this InterRegionBandwidth.
+        r"""Gets the bandwidth_package_id of this InterRegionBandwidth.
 
         带宽包实例ID。
 
@@ -264,7 +264,7 @@ class InterRegionBandwidth:
 
     @bandwidth_package_id.setter
     def bandwidth_package_id(self, bandwidth_package_id):
-        """Sets the bandwidth_package_id of this InterRegionBandwidth.
+        r"""Sets the bandwidth_package_id of this InterRegionBandwidth.
 
         带宽包实例ID。
 
@@ -275,7 +275,7 @@ class InterRegionBandwidth:
 
     @property
     def inter_regions(self):
-        """Gets the inter_regions of this InterRegionBandwidth.
+        r"""Gets the inter_regions of this InterRegionBandwidth.
 
         域间实例信息。
 
@@ -286,7 +286,7 @@ class InterRegionBandwidth:
 
     @inter_regions.setter
     def inter_regions(self, inter_regions):
-        """Sets the inter_regions of this InterRegionBandwidth.
+        r"""Sets the inter_regions of this InterRegionBandwidth.
 
         域间实例信息。
 
@@ -297,7 +297,7 @@ class InterRegionBandwidth:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this InterRegionBandwidth.
+        r"""Gets the bandwidth of this InterRegionBandwidth.
 
         带宽值，单位Mbps。
 
@@ -308,7 +308,7 @@ class InterRegionBandwidth:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this InterRegionBandwidth.
+        r"""Sets the bandwidth of this InterRegionBandwidth.
 
         带宽值，单位Mbps。
 

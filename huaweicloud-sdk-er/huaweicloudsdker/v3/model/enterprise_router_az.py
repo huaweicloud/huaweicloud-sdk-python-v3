@@ -25,7 +25,7 @@ class EnterpriseRouterAZ:
     }
 
     def __init__(self, availability_zone_ids=None):
-        """EnterpriseRouterAZ
+        r"""EnterpriseRouterAZ
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnterpriseRouterAZ:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this EnterpriseRouterAZ.
+        r"""Gets the availability_zone_ids of this EnterpriseRouterAZ.
 
         企业路由器实例所在的可用区
 
@@ -53,7 +53,7 @@ class EnterpriseRouterAZ:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this EnterpriseRouterAZ.
+        r"""Sets the availability_zone_ids of this EnterpriseRouterAZ.
 
         企业路由器实例所在的可用区
 

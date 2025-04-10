@@ -35,7 +35,7 @@ class DcsContentRsp:
     }
 
     def __init__(self, endpoint_service_id=None, endpoint_service_name=None, endpoint_ip=None, port=None, dcs_type=None, password=None):
-        """DcsContentRsp
+        r"""DcsContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DcsContentRsp:
 
     @property
     def endpoint_service_id(self):
-        """Gets the endpoint_service_id of this DcsContentRsp.
+        r"""Gets the endpoint_service_id of this DcsContentRsp.
 
         VPC-EP服务端id
 
@@ -89,7 +89,7 @@ class DcsContentRsp:
 
     @endpoint_service_id.setter
     def endpoint_service_id(self, endpoint_service_id):
-        """Sets the endpoint_service_id of this DcsContentRsp.
+        r"""Sets the endpoint_service_id of this DcsContentRsp.
 
         VPC-EP服务端id
 
@@ -100,7 +100,7 @@ class DcsContentRsp:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this DcsContentRsp.
+        r"""Gets the endpoint_service_name of this DcsContentRsp.
 
         VPC-EP服务端名称
 
@@ -111,7 +111,7 @@ class DcsContentRsp:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this DcsContentRsp.
+        r"""Sets the endpoint_service_name of this DcsContentRsp.
 
         VPC-EP服务端名称
 
@@ -122,7 +122,7 @@ class DcsContentRsp:
 
     @property
     def endpoint_ip(self):
-        """Gets the endpoint_ip of this DcsContentRsp.
+        r"""Gets the endpoint_ip of this DcsContentRsp.
 
         VPC-EP客户端IP
 
@@ -133,7 +133,7 @@ class DcsContentRsp:
 
     @endpoint_ip.setter
     def endpoint_ip(self, endpoint_ip):
-        """Sets the endpoint_ip of this DcsContentRsp.
+        r"""Sets the endpoint_ip of this DcsContentRsp.
 
         VPC-EP客户端IP
 
@@ -144,7 +144,7 @@ class DcsContentRsp:
 
     @property
     def port(self):
-        """Gets the port of this DcsContentRsp.
+        r"""Gets the port of this DcsContentRsp.
 
         VPC-EP客户端Port
 
@@ -155,7 +155,7 @@ class DcsContentRsp:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DcsContentRsp.
+        r"""Sets the port of this DcsContentRsp.
 
         VPC-EP客户端Port
 
@@ -166,7 +166,7 @@ class DcsContentRsp:
 
     @property
     def dcs_type(self):
-        """Gets the dcs_type of this DcsContentRsp.
+        r"""Gets the dcs_type of this DcsContentRsp.
 
         redis实例类型
 
@@ -177,7 +177,7 @@ class DcsContentRsp:
 
     @dcs_type.setter
     def dcs_type(self, dcs_type):
-        """Sets the dcs_type of this DcsContentRsp.
+        r"""Sets the dcs_type of this DcsContentRsp.
 
         redis实例类型
 
@@ -188,7 +188,7 @@ class DcsContentRsp:
 
     @property
     def password(self):
-        """Gets the password of this DcsContentRsp.
+        r"""Gets the password of this DcsContentRsp.
 
         redis访问密码
 
@@ -199,7 +199,7 @@ class DcsContentRsp:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this DcsContentRsp.
+        r"""Sets the password of this DcsContentRsp.
 
         redis访问密码
 

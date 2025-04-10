@@ -30,7 +30,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """ListRecordSetsWithLineResponse
+        r"""ListRecordSetsWithLineResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListRecordSetsWithLineResponse.
+        r"""Gets the links of this ListRecordSetsWithLineResponse.
 
         :return: The links of this ListRecordSetsWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListRecordSetsWithLineResponse.
+        r"""Sets the links of this ListRecordSetsWithLineResponse.
 
         :param links: The links of this ListRecordSetsWithLineResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this ListRecordSetsWithLineResponse.
+        r"""Gets the recordsets of this ListRecordSetsWithLineResponse.
 
         recordset列表信息。
 
@@ -87,7 +87,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this ListRecordSetsWithLineResponse.
+        r"""Sets the recordsets of this ListRecordSetsWithLineResponse.
 
         recordset列表信息。
 
@@ -98,7 +98,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListRecordSetsWithLineResponse.
+        r"""Gets the metadata of this ListRecordSetsWithLineResponse.
 
         :return: The metadata of this ListRecordSetsWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListRecordSetsWithLineResponse.
+        r"""Sets the metadata of this ListRecordSetsWithLineResponse.
 
         :param metadata: The metadata of this ListRecordSetsWithLineResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

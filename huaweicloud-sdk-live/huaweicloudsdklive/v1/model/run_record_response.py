@@ -26,7 +26,7 @@ class RunRecordResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """RunRecordResponse
+        r"""RunRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunRecordResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RunRecordResponse.
+        r"""Gets the x_request_id of this RunRecordResponse.
 
         :return: The x_request_id of this RunRecordResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RunRecordResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RunRecordResponse.
+        r"""Sets the x_request_id of this RunRecordResponse.
 
         :param x_request_id: The x_request_id of this RunRecordResponse.
         :type x_request_id: str

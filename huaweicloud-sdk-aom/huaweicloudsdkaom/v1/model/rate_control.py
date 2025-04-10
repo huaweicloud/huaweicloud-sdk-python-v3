@@ -29,7 +29,7 @@ class RateControl:
     }
 
     def __init__(self, have_rate_control=None, time_delay=None, max=None):
-        """RateControl
+        r"""RateControl
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RateControl:
 
     @property
     def have_rate_control(self):
-        """Gets the have_rate_control of this RateControl.
+        r"""Gets the have_rate_control of this RateControl.
 
         是否分批发布，默认值是false。
 
@@ -68,7 +68,7 @@ class RateControl:
 
     @have_rate_control.setter
     def have_rate_control(self, have_rate_control):
-        """Sets the have_rate_control of this RateControl.
+        r"""Sets the have_rate_control of this RateControl.
 
         是否分批发布，默认值是false。
 
@@ -79,7 +79,7 @@ class RateControl:
 
     @property
     def time_delay(self):
-        """Gets the time_delay of this RateControl.
+        r"""Gets the time_delay of this RateControl.
 
         每批间隔。
 
@@ -90,7 +90,7 @@ class RateControl:
 
     @time_delay.setter
     def time_delay(self, time_delay):
-        """Sets the time_delay of this RateControl.
+        r"""Sets the time_delay of this RateControl.
 
         每批间隔。
 
@@ -101,7 +101,7 @@ class RateControl:
 
     @property
     def max(self):
-        """Gets the max of this RateControl.
+        r"""Gets the max of this RateControl.
 
         每批支持的最大实例数。
 
@@ -112,7 +112,7 @@ class RateControl:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this RateControl.
+        r"""Sets the max of this RateControl.
 
         每批支持的最大实例数。
 

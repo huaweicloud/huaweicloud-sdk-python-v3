@@ -27,7 +27,7 @@ class RedistributionReq:
     }
 
     def __init__(self, redis_mode=None, parallel_jobs=None):
-        """RedistributionReq
+        r"""RedistributionReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RedistributionReq:
 
     @property
     def redis_mode(self):
-        """Gets the redis_mode of this RedistributionReq.
+        r"""Gets the redis_mode of this RedistributionReq.
 
         重分布模式
 
@@ -59,7 +59,7 @@ class RedistributionReq:
 
     @redis_mode.setter
     def redis_mode(self, redis_mode):
-        """Sets the redis_mode of this RedistributionReq.
+        r"""Sets the redis_mode of this RedistributionReq.
 
         重分布模式
 
@@ -70,7 +70,7 @@ class RedistributionReq:
 
     @property
     def parallel_jobs(self):
-        """Gets the parallel_jobs of this RedistributionReq.
+        r"""Gets the parallel_jobs of this RedistributionReq.
 
         重分布并发数
 
@@ -81,7 +81,7 @@ class RedistributionReq:
 
     @parallel_jobs.setter
     def parallel_jobs(self, parallel_jobs):
-        """Sets the parallel_jobs of this RedistributionReq.
+        r"""Sets the parallel_jobs of this RedistributionReq.
 
         重分布并发数
 

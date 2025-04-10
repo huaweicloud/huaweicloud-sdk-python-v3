@@ -27,7 +27,7 @@ class KeystoneUpdateProjectRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """KeystoneUpdateProjectRequest
+        r"""KeystoneUpdateProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneUpdateProjectRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this KeystoneUpdateProjectRequest.
+        r"""Gets the project_id of this KeystoneUpdateProjectRequest.
 
         待修改的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class KeystoneUpdateProjectRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this KeystoneUpdateProjectRequest.
+        r"""Sets the project_id of this KeystoneUpdateProjectRequest.
 
         待修改的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class KeystoneUpdateProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateProjectRequest.
+        r"""Gets the body of this KeystoneUpdateProjectRequest.
 
         :return: The body of this KeystoneUpdateProjectRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequestBody`
@@ -80,7 +80,7 @@ class KeystoneUpdateProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateProjectRequest.
+        r"""Sets the body of this KeystoneUpdateProjectRequest.
 
         :param body: The body of this KeystoneUpdateProjectRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequestBody`

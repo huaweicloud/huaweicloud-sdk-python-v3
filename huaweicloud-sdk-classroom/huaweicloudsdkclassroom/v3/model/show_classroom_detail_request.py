@@ -25,7 +25,7 @@ class ShowClassroomDetailRequest:
     }
 
     def __init__(self, classroom_id=None):
-        """ShowClassroomDetailRequest
+        r"""ShowClassroomDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowClassroomDetailRequest:
 
     @property
     def classroom_id(self):
-        """Gets the classroom_id of this ShowClassroomDetailRequest.
+        r"""Gets the classroom_id of this ShowClassroomDetailRequest.
 
         课堂ID
 
@@ -53,7 +53,7 @@ class ShowClassroomDetailRequest:
 
     @classroom_id.setter
     def classroom_id(self, classroom_id):
-        """Sets the classroom_id of this ShowClassroomDetailRequest.
+        r"""Sets the classroom_id of this ShowClassroomDetailRequest.
 
         课堂ID
 

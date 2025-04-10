@@ -27,7 +27,7 @@ class CreateSecretRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateSecretRequest
+        r"""CreateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSecretRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateSecretRequest.
+        r"""Gets the ief_instance_id of this CreateSecretRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateSecretRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateSecretRequest.
+        r"""Sets the ief_instance_id of this CreateSecretRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecretRequest.
+        r"""Gets the body of this CreateSecretRequest.
 
         :return: The body of this CreateSecretRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Secret`
@@ -81,7 +81,7 @@ class CreateSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecretRequest.
+        r"""Sets the body of this CreateSecretRequest.
 
         :param body: The body of this CreateSecretRequest.
         :type body: :class:`huaweicloudsdkief.v1.Secret`

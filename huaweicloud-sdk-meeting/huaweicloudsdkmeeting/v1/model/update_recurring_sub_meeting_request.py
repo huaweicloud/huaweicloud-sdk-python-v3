@@ -33,7 +33,7 @@ class UpdateRecurringSubMeetingRequest:
     }
 
     def __init__(self, x_authorization_type=None, user_uuid=None, x_site_id=None, conference_id=None, body=None):
-        """UpdateRecurringSubMeetingRequest
+        r"""UpdateRecurringSubMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this UpdateRecurringSubMeetingRequest.
+        r"""Gets the x_authorization_type of this UpdateRecurringSubMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -81,7 +81,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this UpdateRecurringSubMeetingRequest.
+        r"""Sets the x_authorization_type of this UpdateRecurringSubMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -92,7 +92,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this UpdateRecurringSubMeetingRequest.
+        r"""Gets the user_uuid of this UpdateRecurringSubMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -103,7 +103,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this UpdateRecurringSubMeetingRequest.
+        r"""Sets the user_uuid of this UpdateRecurringSubMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -114,7 +114,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this UpdateRecurringSubMeetingRequest.
+        r"""Gets the x_site_id of this UpdateRecurringSubMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -125,7 +125,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this UpdateRecurringSubMeetingRequest.
+        r"""Sets the x_site_id of this UpdateRecurringSubMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -136,7 +136,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this UpdateRecurringSubMeetingRequest.
+        r"""Gets the conference_id of this UpdateRecurringSubMeetingRequest.
 
         会议ID。
 
@@ -147,7 +147,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this UpdateRecurringSubMeetingRequest.
+        r"""Sets the conference_id of this UpdateRecurringSubMeetingRequest.
 
         会议ID。
 
@@ -158,7 +158,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRecurringSubMeetingRequest.
+        r"""Gets the body of this UpdateRecurringSubMeetingRequest.
 
         :return: The body of this UpdateRecurringSubMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestScheduleCycleConfDTO`
@@ -167,7 +167,7 @@ class UpdateRecurringSubMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRecurringSubMeetingRequest.
+        r"""Sets the body of this UpdateRecurringSubMeetingRequest.
 
         :param body: The body of this UpdateRecurringSubMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleCycleConfDTO`

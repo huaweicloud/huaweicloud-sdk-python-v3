@@ -39,7 +39,7 @@ class ListDbCacheMappingsRequest:
     }
 
     def __init__(self, id=None, name=None, source_instance_id=None, source_instance_name=None, target_instance_id=None, target_instance_name=None, offset=None, limit=None):
-        """ListDbCacheMappingsRequest
+        r"""ListDbCacheMappingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListDbCacheMappingsRequest.
+        r"""Gets the id of this ListDbCacheMappingsRequest.
 
         映射ID，可以调用“查询内存加速映射列表和详情”接口获取。
 
@@ -103,7 +103,7 @@ class ListDbCacheMappingsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListDbCacheMappingsRequest.
+        r"""Sets the id of this ListDbCacheMappingsRequest.
 
         映射ID，可以调用“查询内存加速映射列表和详情”接口获取。
 
@@ -114,7 +114,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDbCacheMappingsRequest.
+        r"""Gets the name of this ListDbCacheMappingsRequest.
 
         映射名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -125,7 +125,7 @@ class ListDbCacheMappingsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDbCacheMappingsRequest.
+        r"""Sets the name of this ListDbCacheMappingsRequest.
 
         映射名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -136,7 +136,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this ListDbCacheMappingsRequest.
+        r"""Gets the source_instance_id of this ListDbCacheMappingsRequest.
 
         源实例ID。
 
@@ -147,7 +147,7 @@ class ListDbCacheMappingsRequest:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this ListDbCacheMappingsRequest.
+        r"""Sets the source_instance_id of this ListDbCacheMappingsRequest.
 
         源实例ID。
 
@@ -158,7 +158,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def source_instance_name(self):
-        """Gets the source_instance_name of this ListDbCacheMappingsRequest.
+        r"""Gets the source_instance_name of this ListDbCacheMappingsRequest.
 
         源实例名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -169,7 +169,7 @@ class ListDbCacheMappingsRequest:
 
     @source_instance_name.setter
     def source_instance_name(self, source_instance_name):
-        """Sets the source_instance_name of this ListDbCacheMappingsRequest.
+        r"""Sets the source_instance_name of this ListDbCacheMappingsRequest.
 
         源实例名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -180,7 +180,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this ListDbCacheMappingsRequest.
+        r"""Gets the target_instance_id of this ListDbCacheMappingsRequest.
 
         目标实例ID。
 
@@ -191,7 +191,7 @@ class ListDbCacheMappingsRequest:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this ListDbCacheMappingsRequest.
+        r"""Sets the target_instance_id of this ListDbCacheMappingsRequest.
 
         目标实例ID。
 
@@ -202,7 +202,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def target_instance_name(self):
-        """Gets the target_instance_name of this ListDbCacheMappingsRequest.
+        r"""Gets the target_instance_name of this ListDbCacheMappingsRequest.
 
         目标实例名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -213,7 +213,7 @@ class ListDbCacheMappingsRequest:
 
     @target_instance_name.setter
     def target_instance_name(self, target_instance_name):
-        """Sets the target_instance_name of this ListDbCacheMappingsRequest.
+        r"""Sets the target_instance_name of this ListDbCacheMappingsRequest.
 
         目标实例名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -224,7 +224,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDbCacheMappingsRequest.
+        r"""Gets the offset of this ListDbCacheMappingsRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -235,7 +235,7 @@ class ListDbCacheMappingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDbCacheMappingsRequest.
+        r"""Sets the offset of this ListDbCacheMappingsRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -246,7 +246,7 @@ class ListDbCacheMappingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDbCacheMappingsRequest.
+        r"""Gets the limit of this ListDbCacheMappingsRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
@@ -257,7 +257,7 @@ class ListDbCacheMappingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDbCacheMappingsRequest.
+        r"""Sets the limit of this ListDbCacheMappingsRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 

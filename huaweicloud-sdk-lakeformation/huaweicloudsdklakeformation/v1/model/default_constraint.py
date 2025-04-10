@@ -41,7 +41,7 @@ class DefaultConstraint:
     }
 
     def __init__(self, catalog_name=None, database_name=None, table_name=None, column_name=None, constraint_name=None, default_value=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """DefaultConstraint
+        r"""DefaultConstraint
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class DefaultConstraint:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DefaultConstraint.
+        r"""Gets the catalog_name of this DefaultConstraint.
 
         catalog名字
 
@@ -102,7 +102,7 @@ class DefaultConstraint:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DefaultConstraint.
+        r"""Sets the catalog_name of this DefaultConstraint.
 
         catalog名字
 
@@ -113,7 +113,7 @@ class DefaultConstraint:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DefaultConstraint.
+        r"""Gets the database_name of this DefaultConstraint.
 
         数据库名字
 
@@ -124,7 +124,7 @@ class DefaultConstraint:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DefaultConstraint.
+        r"""Sets the database_name of this DefaultConstraint.
 
         数据库名字
 
@@ -135,7 +135,7 @@ class DefaultConstraint:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DefaultConstraint.
+        r"""Gets the table_name of this DefaultConstraint.
 
         表名称
 
@@ -146,7 +146,7 @@ class DefaultConstraint:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DefaultConstraint.
+        r"""Sets the table_name of this DefaultConstraint.
 
         表名称
 
@@ -157,7 +157,7 @@ class DefaultConstraint:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DefaultConstraint.
+        r"""Gets the column_name of this DefaultConstraint.
 
         列名
 
@@ -168,7 +168,7 @@ class DefaultConstraint:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DefaultConstraint.
+        r"""Sets the column_name of this DefaultConstraint.
 
         列名
 
@@ -179,7 +179,7 @@ class DefaultConstraint:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this DefaultConstraint.
+        r"""Gets the constraint_name of this DefaultConstraint.
 
         constraint Name
 
@@ -190,7 +190,7 @@ class DefaultConstraint:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this DefaultConstraint.
+        r"""Sets the constraint_name of this DefaultConstraint.
 
         constraint Name
 
@@ -201,7 +201,7 @@ class DefaultConstraint:
 
     @property
     def default_value(self):
-        """Gets the default_value of this DefaultConstraint.
+        r"""Gets the default_value of this DefaultConstraint.
 
         默认值
 
@@ -212,7 +212,7 @@ class DefaultConstraint:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this DefaultConstraint.
+        r"""Sets the default_value of this DefaultConstraint.
 
         默认值
 
@@ -223,7 +223,7 @@ class DefaultConstraint:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this DefaultConstraint.
+        r"""Gets the enable_constraint of this DefaultConstraint.
 
         enable constraint
 
@@ -234,7 +234,7 @@ class DefaultConstraint:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this DefaultConstraint.
+        r"""Sets the enable_constraint of this DefaultConstraint.
 
         enable constraint
 
@@ -245,7 +245,7 @@ class DefaultConstraint:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this DefaultConstraint.
+        r"""Gets the rely_constraint of this DefaultConstraint.
 
         constraint is rely when Query
 
@@ -256,7 +256,7 @@ class DefaultConstraint:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this DefaultConstraint.
+        r"""Sets the rely_constraint of this DefaultConstraint.
 
         constraint is rely when Query
 
@@ -267,7 +267,7 @@ class DefaultConstraint:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this DefaultConstraint.
+        r"""Gets the validate_constraint of this DefaultConstraint.
 
         constraint is validated
 
@@ -278,7 +278,7 @@ class DefaultConstraint:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this DefaultConstraint.
+        r"""Sets the validate_constraint of this DefaultConstraint.
 
         constraint is validated
 

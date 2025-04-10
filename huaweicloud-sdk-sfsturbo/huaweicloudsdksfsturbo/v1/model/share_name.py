@@ -25,7 +25,7 @@ class ShareName:
     }
 
     def __init__(self, name=None):
-        """ShareName
+        r"""ShareName
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShareName:
 
     @property
     def name(self):
-        """Gets the name of this ShareName.
+        r"""Gets the name of this ShareName.
 
         需要修改的SFS Turbo文件系统的名字
 
@@ -53,7 +53,7 @@ class ShareName:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShareName.
+        r"""Sets the name of this ShareName.
 
         需要修改的SFS Turbo文件系统的名字
 

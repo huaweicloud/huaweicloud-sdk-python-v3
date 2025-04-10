@@ -29,7 +29,7 @@ class UpdateHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, instance_id=None, body=None):
-        """UpdateHostRequest
+        r"""UpdateHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateHostRequest.
+        r"""Gets the enterprise_project_id of this UpdateHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class UpdateHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateHostRequest.
+        r"""Sets the enterprise_project_id of this UpdateHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class UpdateHostRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateHostRequest.
+        r"""Gets the instance_id of this UpdateHostRequest.
 
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
@@ -89,7 +89,7 @@ class UpdateHostRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateHostRequest.
+        r"""Sets the instance_id of this UpdateHostRequest.
 
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
@@ -100,7 +100,7 @@ class UpdateHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHostRequest.
+        r"""Gets the body of this UpdateHostRequest.
 
         :return: The body of this UpdateHostRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostRequestBody`
@@ -109,7 +109,7 @@ class UpdateHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHostRequest.
+        r"""Sets the body of this UpdateHostRequest.
 
         :param body: The body of this UpdateHostRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateHostRequestBody`

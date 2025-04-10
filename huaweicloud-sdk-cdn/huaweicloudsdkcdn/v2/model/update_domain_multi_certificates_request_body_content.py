@@ -45,7 +45,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     }
 
     def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, scm_certificate_id=None):
-        """UpdateDomainMultiCertificatesRequestBodyContent
+        r"""UpdateDomainMultiCertificatesRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the domain_name of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         域名列表,逗号分割，上限50个域名
 
@@ -122,7 +122,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the domain_name of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         域名列表,逗号分割，上限50个域名
 
@@ -133,7 +133,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def https_switch(self):
-        """Gets the https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         https开关（0：\"关闭\"；1：\"设置证书\" https_switch为1时，证书参数不能为空）
 
@@ -144,7 +144,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @https_switch.setter
     def https_switch(self, https_switch):
-        """Sets the https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         https开关（0：\"关闭\"；1：\"设置证书\" https_switch为1时，证书参数不能为空）
 
@@ -155,7 +155,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def access_origin_way(self):
-        """Gets the access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         回源方式:1：\"回源跟随\"；2：\"http\"(默认)，3：\"https\"  为空值时默认设置为http
 
@@ -166,7 +166,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @access_origin_way.setter
     def access_origin_way(self, access_origin_way):
-        """Sets the access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         回源方式:1：\"回源跟随\"；2：\"http\"(默认)，3：\"https\"  为空值时默认设置为http
 
@@ -177,7 +177,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def force_redirect_https(self):
-        """Gets the force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线，建议使用force_redirect_config修改配置）
 
@@ -188,7 +188,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @force_redirect_https.setter
     def force_redirect_https(self, force_redirect_https):
-        """Sets the force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线，建议使用force_redirect_config修改配置）
 
@@ -199,7 +199,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def force_redirect_config(self):
-        """Gets the force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         :return: The force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
@@ -208,7 +208,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
-        """Sets the force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         :param force_redirect_config: The force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
@@ -217,7 +217,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def http2(self):
-        """Gets the http2 of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the http2 of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         http2.0（0：关闭；1：开启） 为空值时默认设置为关闭
 
@@ -228,7 +228,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @http2.setter
     def http2(self, http2):
-        """Sets the http2 of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the http2 of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         http2.0（0：关闭；1：开启） 为空值时默认设置为关闭
 
@@ -239,7 +239,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         证书名称（设置证书必填）（长度限制为3-64字符）。
 
@@ -250,7 +250,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         证书名称（设置证书必填）（长度限制为3-64字符）。
 
@@ -261,7 +261,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -272,7 +272,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -283,7 +283,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def private_key(self):
-        """Gets the private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -294,7 +294,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -305,7 +305,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         证书类型（0为自有证书；2为SCM证书；不传默认为自有证书）
 
@@ -316,7 +316,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the certificate_type of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         证书类型（0为自有证书；2为SCM证书；不传默认为自有证书）
 
@@ -327,7 +327,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Gets the scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         SCM证书id
 
@@ -338,7 +338,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
+        r"""Sets the scm_certificate_id of this UpdateDomainMultiCertificatesRequestBodyContent.
 
         SCM证书id
 

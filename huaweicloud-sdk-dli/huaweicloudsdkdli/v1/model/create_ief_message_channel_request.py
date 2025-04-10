@@ -25,7 +25,7 @@ class CreateIefMessageChannelRequest:
     }
 
     def __init__(self, body=None):
-        """CreateIefMessageChannelRequest
+        r"""CreateIefMessageChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateIefMessageChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateIefMessageChannelRequest.
+        r"""Gets the body of this CreateIefMessageChannelRequest.
 
         :return: The body of this CreateIefMessageChannelRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequestBody`
@@ -52,7 +52,7 @@ class CreateIefMessageChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateIefMessageChannelRequest.
+        r"""Sets the body of this CreateIefMessageChannelRequest.
 
         :param body: The body of this CreateIefMessageChannelRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequestBody`

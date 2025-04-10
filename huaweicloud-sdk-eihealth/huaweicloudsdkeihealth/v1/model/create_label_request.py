@@ -25,7 +25,7 @@ class CreateLabelRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLabelRequest
+        r"""CreateLabelRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLabelRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLabelRequest.
+        r"""Gets the body of this CreateLabelRequest.
 
         :return: The body of this CreateLabelRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelReq`
@@ -52,7 +52,7 @@ class CreateLabelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLabelRequest.
+        r"""Sets the body of this CreateLabelRequest.
 
         :param body: The body of this CreateLabelRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateLabelReq`

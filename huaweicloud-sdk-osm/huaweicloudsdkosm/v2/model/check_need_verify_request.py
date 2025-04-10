@@ -35,7 +35,7 @@ class CheckNeedVerifyRequest:
     }
 
     def __init__(self, contact_value=None, contact_way=None, area_code=None, x_site=None, x_language=None, x_time_zone=None):
-        """CheckNeedVerifyRequest
+        r"""CheckNeedVerifyRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CheckNeedVerifyRequest:
 
     @property
     def contact_value(self):
-        """Gets the contact_value of this CheckNeedVerifyRequest.
+        r"""Gets the contact_value of this CheckNeedVerifyRequest.
 
         联系方式值
 
@@ -87,7 +87,7 @@ class CheckNeedVerifyRequest:
 
     @contact_value.setter
     def contact_value(self, contact_value):
-        """Sets the contact_value of this CheckNeedVerifyRequest.
+        r"""Sets the contact_value of this CheckNeedVerifyRequest.
 
         联系方式值
 
@@ -98,7 +98,7 @@ class CheckNeedVerifyRequest:
 
     @property
     def contact_way(self):
-        """Gets the contact_way of this CheckNeedVerifyRequest.
+        r"""Gets the contact_way of this CheckNeedVerifyRequest.
 
         联系方式类型，0: 手机; 1: 邮箱
 
@@ -109,7 +109,7 @@ class CheckNeedVerifyRequest:
 
     @contact_way.setter
     def contact_way(self, contact_way):
-        """Sets the contact_way of this CheckNeedVerifyRequest.
+        r"""Sets the contact_way of this CheckNeedVerifyRequest.
 
         联系方式类型，0: 手机; 1: 邮箱
 
@@ -120,7 +120,7 @@ class CheckNeedVerifyRequest:
 
     @property
     def area_code(self):
-        """Gets the area_code of this CheckNeedVerifyRequest.
+        r"""Gets the area_code of this CheckNeedVerifyRequest.
 
         国家码
 
@@ -131,7 +131,7 @@ class CheckNeedVerifyRequest:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this CheckNeedVerifyRequest.
+        r"""Sets the area_code of this CheckNeedVerifyRequest.
 
         国家码
 
@@ -142,7 +142,7 @@ class CheckNeedVerifyRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CheckNeedVerifyRequest.
+        r"""Gets the x_site of this CheckNeedVerifyRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -153,7 +153,7 @@ class CheckNeedVerifyRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CheckNeedVerifyRequest.
+        r"""Sets the x_site of this CheckNeedVerifyRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -164,7 +164,7 @@ class CheckNeedVerifyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckNeedVerifyRequest.
+        r"""Gets the x_language of this CheckNeedVerifyRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -175,7 +175,7 @@ class CheckNeedVerifyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckNeedVerifyRequest.
+        r"""Sets the x_language of this CheckNeedVerifyRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -186,7 +186,7 @@ class CheckNeedVerifyRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this CheckNeedVerifyRequest.
+        r"""Gets the x_time_zone of this CheckNeedVerifyRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -197,7 +197,7 @@ class CheckNeedVerifyRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this CheckNeedVerifyRequest.
+        r"""Sets the x_time_zone of this CheckNeedVerifyRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

@@ -27,7 +27,7 @@ class VolumeMetadata:
     }
 
     def __init__(self, system__encrypted=None, system__cmkid=None):
-        """VolumeMetadata
+        r"""VolumeMetadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VolumeMetadata:
 
     @property
     def system__encrypted(self):
-        """Gets the system__encrypted of this VolumeMetadata.
+        r"""Gets the system__encrypted of this VolumeMetadata.
 
         表示云硬盘加密功能的字段，'0'代表不加密，'1'代表加密。  该字段不存在时，云硬盘默认为不加密。
 
@@ -61,7 +61,7 @@ class VolumeMetadata:
 
     @system__encrypted.setter
     def system__encrypted(self, system__encrypted):
-        """Sets the system__encrypted of this VolumeMetadata.
+        r"""Sets the system__encrypted of this VolumeMetadata.
 
         表示云硬盘加密功能的字段，'0'代表不加密，'1'代表加密。  该字段不存在时，云硬盘默认为不加密。
 
@@ -72,7 +72,7 @@ class VolumeMetadata:
 
     @property
     def system__cmkid(self):
-        """Gets the system__cmkid of this VolumeMetadata.
+        r"""Gets the system__cmkid of this VolumeMetadata.
 
         用户主密钥ID，是metadata中的表示加密功能的字段，与__system__encrypted配合使用。
 
@@ -83,7 +83,7 @@ class VolumeMetadata:
 
     @system__cmkid.setter
     def system__cmkid(self, system__cmkid):
-        """Sets the system__cmkid of this VolumeMetadata.
+        r"""Sets the system__cmkid of this VolumeMetadata.
 
         用户主密钥ID，是metadata中的表示加密功能的字段，与__system__encrypted配合使用。
 

@@ -29,7 +29,7 @@ class ListInstanceTagsRequest:
     }
 
     def __init__(self, resource_type=None, x_language=None, resource_id=None):
-        """ListInstanceTagsRequest
+        r"""ListInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListInstanceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListInstanceTagsRequest.
+        r"""Gets the resource_type of this ListInstanceTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -66,7 +66,7 @@ class ListInstanceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListInstanceTagsRequest.
+        r"""Sets the resource_type of this ListInstanceTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -77,7 +77,7 @@ class ListInstanceTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstanceTagsRequest.
+        r"""Gets the x_language of this ListInstanceTagsRequest.
 
         请求语言类型。
 
@@ -88,7 +88,7 @@ class ListInstanceTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstanceTagsRequest.
+        r"""Sets the x_language of this ListInstanceTagsRequest.
 
         请求语言类型。
 
@@ -99,7 +99,7 @@ class ListInstanceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListInstanceTagsRequest.
+        r"""Gets the resource_id of this ListInstanceTagsRequest.
 
         资源ID，即DRS任务ID。
 
@@ -110,7 +110,7 @@ class ListInstanceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListInstanceTagsRequest.
+        r"""Sets the resource_id of this ListInstanceTagsRequest.
 
         资源ID，即DRS任务ID。
 

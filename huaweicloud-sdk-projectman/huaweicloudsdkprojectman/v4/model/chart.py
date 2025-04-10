@@ -35,7 +35,7 @@ class Chart:
     }
 
     def __init__(self, date=None, finished_num=None, iteration_id=None, project_num_id=None, remaining_num=None, total=None):
-        """Chart
+        r"""Chart
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Chart:
 
     @property
     def date(self):
-        """Gets the date of this Chart.
+        r"""Gets the date of this Chart.
 
         统计时间
 
@@ -89,7 +89,7 @@ class Chart:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this Chart.
+        r"""Sets the date of this Chart.
 
         统计时间
 
@@ -100,7 +100,7 @@ class Chart:
 
     @property
     def finished_num(self):
-        """Gets the finished_num of this Chart.
+        r"""Gets the finished_num of this Chart.
 
         完成story工单
 
@@ -111,7 +111,7 @@ class Chart:
 
     @finished_num.setter
     def finished_num(self, finished_num):
-        """Sets the finished_num of this Chart.
+        r"""Sets the finished_num of this Chart.
 
         完成story工单
 
@@ -122,7 +122,7 @@ class Chart:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this Chart.
+        r"""Gets the iteration_id of this Chart.
 
         迭代id
 
@@ -133,7 +133,7 @@ class Chart:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this Chart.
+        r"""Sets the iteration_id of this Chart.
 
         迭代id
 
@@ -144,7 +144,7 @@ class Chart:
 
     @property
     def project_num_id(self):
-        """Gets the project_num_id of this Chart.
+        r"""Gets the project_num_id of this Chart.
 
         项目id
 
@@ -155,7 +155,7 @@ class Chart:
 
     @project_num_id.setter
     def project_num_id(self, project_num_id):
-        """Sets the project_num_id of this Chart.
+        r"""Sets the project_num_id of this Chart.
 
         项目id
 
@@ -166,7 +166,7 @@ class Chart:
 
     @property
     def remaining_num(self):
-        """Gets the remaining_num of this Chart.
+        r"""Gets the remaining_num of this Chart.
 
         未完成story数
 
@@ -177,7 +177,7 @@ class Chart:
 
     @remaining_num.setter
     def remaining_num(self, remaining_num):
-        """Sets the remaining_num of this Chart.
+        r"""Sets the remaining_num of this Chart.
 
         未完成story数
 
@@ -188,7 +188,7 @@ class Chart:
 
     @property
     def total(self):
-        """Gets the total of this Chart.
+        r"""Gets the total of this Chart.
 
         总story数
 
@@ -199,7 +199,7 @@ class Chart:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this Chart.
+        r"""Sets the total of this Chart.
 
         总story数
 

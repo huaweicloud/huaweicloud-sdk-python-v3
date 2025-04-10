@@ -24,7 +24,7 @@ class StartAutoCreateSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartAutoCreateSnapshotsResponse
+        r"""StartAutoCreateSnapshotsResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class AddIpGroupIpResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """AddIpGroupIpResponse
+        r"""AddIpGroupIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddIpGroupIpResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddIpGroupIpResponse.
+        r"""Gets the request_id of this AddIpGroupIpResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class AddIpGroupIpResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddIpGroupIpResponse.
+        r"""Sets the request_id of this AddIpGroupIpResponse.
 
         请求ID。
 

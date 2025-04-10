@@ -45,7 +45,7 @@ class HierarchiesAttrVO:
     }
 
     def __init__(self, id=None, hierarchies_id=None, attr_id=None, level=None, attr_name_en=None, attr_name_ch=None, detail_attr_ids=None, detail_attr_name_ens=None, detail_attr_name_chs=None, attr=None, detail_attrs=None):
-        """HierarchiesAttrVO
+        r"""HierarchiesAttrVO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HierarchiesAttrVO:
 
     @property
     def id(self):
-        """Gets the id of this HierarchiesAttrVO.
+        r"""Gets the id of this HierarchiesAttrVO.
 
         编码，ID字符串。
 
@@ -124,7 +124,7 @@ class HierarchiesAttrVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HierarchiesAttrVO.
+        r"""Sets the id of this HierarchiesAttrVO.
 
         编码，ID字符串。
 
@@ -135,7 +135,7 @@ class HierarchiesAttrVO:
 
     @property
     def hierarchies_id(self):
-        """Gets the hierarchies_id of this HierarchiesAttrVO.
+        r"""Gets the hierarchies_id of this HierarchiesAttrVO.
 
         层级ID，ID字符串。
 
@@ -146,7 +146,7 @@ class HierarchiesAttrVO:
 
     @hierarchies_id.setter
     def hierarchies_id(self, hierarchies_id):
-        """Sets the hierarchies_id of this HierarchiesAttrVO.
+        r"""Sets the hierarchies_id of this HierarchiesAttrVO.
 
         层级ID，ID字符串。
 
@@ -157,7 +157,7 @@ class HierarchiesAttrVO:
 
     @property
     def attr_id(self):
-        """Gets the attr_id of this HierarchiesAttrVO.
+        r"""Gets the attr_id of this HierarchiesAttrVO.
 
         属性ID，ID字符串。
 
@@ -168,7 +168,7 @@ class HierarchiesAttrVO:
 
     @attr_id.setter
     def attr_id(self, attr_id):
-        """Sets the attr_id of this HierarchiesAttrVO.
+        r"""Sets the attr_id of this HierarchiesAttrVO.
 
         属性ID，ID字符串。
 
@@ -179,7 +179,7 @@ class HierarchiesAttrVO:
 
     @property
     def level(self):
-        """Gets the level of this HierarchiesAttrVO.
+        r"""Gets the level of this HierarchiesAttrVO.
 
         层次。
 
@@ -190,7 +190,7 @@ class HierarchiesAttrVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this HierarchiesAttrVO.
+        r"""Sets the level of this HierarchiesAttrVO.
 
         层次。
 
@@ -201,7 +201,7 @@ class HierarchiesAttrVO:
 
     @property
     def attr_name_en(self):
-        """Gets the attr_name_en of this HierarchiesAttrVO.
+        r"""Gets the attr_name_en of this HierarchiesAttrVO.
 
         引用属性编码。
 
@@ -212,7 +212,7 @@ class HierarchiesAttrVO:
 
     @attr_name_en.setter
     def attr_name_en(self, attr_name_en):
-        """Sets the attr_name_en of this HierarchiesAttrVO.
+        r"""Sets the attr_name_en of this HierarchiesAttrVO.
 
         引用属性编码。
 
@@ -223,7 +223,7 @@ class HierarchiesAttrVO:
 
     @property
     def attr_name_ch(self):
-        """Gets the attr_name_ch of this HierarchiesAttrVO.
+        r"""Gets the attr_name_ch of this HierarchiesAttrVO.
 
         引用属性名称，只读。
 
@@ -234,7 +234,7 @@ class HierarchiesAttrVO:
 
     @attr_name_ch.setter
     def attr_name_ch(self, attr_name_ch):
-        """Sets the attr_name_ch of this HierarchiesAttrVO.
+        r"""Sets the attr_name_ch of this HierarchiesAttrVO.
 
         引用属性名称，只读。
 
@@ -245,7 +245,7 @@ class HierarchiesAttrVO:
 
     @property
     def detail_attr_ids(self):
-        """Gets the detail_attr_ids of this HierarchiesAttrVO.
+        r"""Gets the detail_attr_ids of this HierarchiesAttrVO.
 
         详情属性ID，ID字符串。
 
@@ -256,7 +256,7 @@ class HierarchiesAttrVO:
 
     @detail_attr_ids.setter
     def detail_attr_ids(self, detail_attr_ids):
-        """Sets the detail_attr_ids of this HierarchiesAttrVO.
+        r"""Sets the detail_attr_ids of this HierarchiesAttrVO.
 
         详情属性ID，ID字符串。
 
@@ -267,7 +267,7 @@ class HierarchiesAttrVO:
 
     @property
     def detail_attr_name_ens(self):
-        """Gets the detail_attr_name_ens of this HierarchiesAttrVO.
+        r"""Gets the detail_attr_name_ens of this HierarchiesAttrVO.
 
         详情属性英文。
 
@@ -278,7 +278,7 @@ class HierarchiesAttrVO:
 
     @detail_attr_name_ens.setter
     def detail_attr_name_ens(self, detail_attr_name_ens):
-        """Sets the detail_attr_name_ens of this HierarchiesAttrVO.
+        r"""Sets the detail_attr_name_ens of this HierarchiesAttrVO.
 
         详情属性英文。
 
@@ -289,7 +289,7 @@ class HierarchiesAttrVO:
 
     @property
     def detail_attr_name_chs(self):
-        """Gets the detail_attr_name_chs of this HierarchiesAttrVO.
+        r"""Gets the detail_attr_name_chs of this HierarchiesAttrVO.
 
         详情属性中文，只读。
 
@@ -300,7 +300,7 @@ class HierarchiesAttrVO:
 
     @detail_attr_name_chs.setter
     def detail_attr_name_chs(self, detail_attr_name_chs):
-        """Sets the detail_attr_name_chs of this HierarchiesAttrVO.
+        r"""Sets the detail_attr_name_chs of this HierarchiesAttrVO.
 
         详情属性中文，只读。
 
@@ -311,7 +311,7 @@ class HierarchiesAttrVO:
 
     @property
     def attr(self):
-        """Gets the attr of this HierarchiesAttrVO.
+        r"""Gets the attr of this HierarchiesAttrVO.
 
         :return: The attr of this HierarchiesAttrVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DimensionAttributeVO`
@@ -320,7 +320,7 @@ class HierarchiesAttrVO:
 
     @attr.setter
     def attr(self, attr):
-        """Sets the attr of this HierarchiesAttrVO.
+        r"""Sets the attr of this HierarchiesAttrVO.
 
         :param attr: The attr of this HierarchiesAttrVO.
         :type attr: :class:`huaweicloudsdkdataartsstudio.v1.DimensionAttributeVO`
@@ -329,7 +329,7 @@ class HierarchiesAttrVO:
 
     @property
     def detail_attrs(self):
-        """Gets the detail_attrs of this HierarchiesAttrVO.
+        r"""Gets the detail_attrs of this HierarchiesAttrVO.
 
         详情字段，只读。
 
@@ -340,7 +340,7 @@ class HierarchiesAttrVO:
 
     @detail_attrs.setter
     def detail_attrs(self, detail_attrs):
-        """Sets the detail_attrs of this HierarchiesAttrVO.
+        r"""Sets the detail_attrs of this HierarchiesAttrVO.
 
         详情字段，只读。
 

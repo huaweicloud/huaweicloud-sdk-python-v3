@@ -26,7 +26,7 @@ class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
     }
 
     def __init__(self, is_review=None):
-        """ChangeEnterpriseRealnameAuthenticationResponse
+        r"""ChangeEnterpriseRealnameAuthenticationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
 
     @property
     def is_review(self):
-        """Gets the is_review of this ChangeEnterpriseRealnameAuthenticationResponse.
+        r"""Gets the is_review of this ChangeEnterpriseRealnameAuthenticationResponse.
 
         是否需要转人工审核，只有状态码为200才返回该参数。 0：不需要1：需要
 
@@ -55,7 +55,7 @@ class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
 
     @is_review.setter
     def is_review(self, is_review):
-        """Sets the is_review of this ChangeEnterpriseRealnameAuthenticationResponse.
+        r"""Sets the is_review of this ChangeEnterpriseRealnameAuthenticationResponse.
 
         是否需要转人工审核，只有状态码为200才返回该参数。 0：不需要1：需要
 

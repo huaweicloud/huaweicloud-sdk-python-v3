@@ -27,7 +27,7 @@ class ModifyProxyWeightReadonlyNode:
     }
 
     def __init__(self, id=None, weight=None):
-        """ModifyProxyWeightReadonlyNode
+        r"""ModifyProxyWeightReadonlyNode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ModifyProxyWeightReadonlyNode:
 
     @property
     def id(self):
-        """Gets the id of this ModifyProxyWeightReadonlyNode.
+        r"""Gets the id of this ModifyProxyWeightReadonlyNode.
 
         只读节点ID
 
@@ -61,7 +61,7 @@ class ModifyProxyWeightReadonlyNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyProxyWeightReadonlyNode.
+        r"""Sets the id of this ModifyProxyWeightReadonlyNode.
 
         只读节点ID
 
@@ -72,7 +72,7 @@ class ModifyProxyWeightReadonlyNode:
 
     @property
     def weight(self):
-        """Gets the weight of this ModifyProxyWeightReadonlyNode.
+        r"""Gets the weight of this ModifyProxyWeightReadonlyNode.
 
         只读节点权重
 
@@ -83,7 +83,7 @@ class ModifyProxyWeightReadonlyNode:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ModifyProxyWeightReadonlyNode.
+        r"""Sets the weight of this ModifyProxyWeightReadonlyNode.
 
         只读节点权重
 

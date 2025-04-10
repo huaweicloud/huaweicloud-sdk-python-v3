@@ -25,7 +25,7 @@ class AddGroupRequest:
     }
 
     def __init__(self, body=None):
-        """AddGroupRequest
+        r"""AddGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddGroupRequest.
+        r"""Gets the body of this AddGroupRequest.
 
         :return: The body of this AddGroupRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.AddGroupRequestBody`
@@ -52,7 +52,7 @@ class AddGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddGroupRequest.
+        r"""Sets the body of this AddGroupRequest.
 
         :param body: The body of this AddGroupRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.AddGroupRequestBody`

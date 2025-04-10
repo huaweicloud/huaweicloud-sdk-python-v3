@@ -34,7 +34,7 @@ class EdgeSecAsyncClient(Client):
         return client_builder
 
     def create_domain_async(self, request):
-        """创建防护域名
+        r"""创建防护域名
 
         创建防护域名
         
@@ -99,7 +99,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_reference_table_async(self, request):
-        """创建引用表
+        r"""创建引用表
 
         创建引用表
         
@@ -164,7 +164,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_domain_async(self, request):
-        """删除防护域名
+        r"""删除防护域名
 
         删除防护域名
         
@@ -231,7 +231,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_reference_table_async(self, request):
-        """删除引用表
+        r"""删除引用表
 
         删除引用表
         
@@ -296,7 +296,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_domain_detail_async(self, request):
-        """查询防护域名详情
+        r"""查询防护域名详情
 
         查询防护域名
         
@@ -361,7 +361,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_domains_async(self, request):
-        """查询防护域名列表
+        r"""查询防护域名列表
 
         查询防护域名列表
         
@@ -434,7 +434,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_overviews_async(self, request):
-        """查询攻击域名
+        r"""查询攻击域名
 
         查询安全总览top信息，包含攻击域名、攻击源ip、攻击url、攻击来源区域、防护类型
         
@@ -507,7 +507,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_reference_tables_async(self, request):
-        """查询引用表列表
+        r"""查询引用表列表
 
         查询引用表列表
         
@@ -578,7 +578,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_statistics_async(self, request):
-        """查询安全总览请求数据
+        r"""查询安全总览请求数据
 
         查询安全总览请求数据
         
@@ -649,7 +649,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_domain_async(self, request):
-        """更新防护域名
+        r"""更新防护域名
 
         更新防护域名
         
@@ -716,7 +716,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_reference_table_async(self, request):
-        """更新引用表
+        r"""更新引用表
 
         更新引用表
         
@@ -783,7 +783,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def download_ddos_attack_logs_async(self, request):
-        """Ddos攻击日志下载
+        r"""Ddos攻击日志下载
 
         Ddos攻击日志下载
         
@@ -856,7 +856,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_ddos_attack_logs_async(self, request):
-        """查询ddos攻击日志列表
+        r"""查询ddos攻击日志列表
 
         查询ddos攻击日志列表
         
@@ -929,7 +929,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_ddos_attack_timeline_stats_async(self, request):
-        """查询DDoS攻击统计时间线数据
+        r"""查询DDoS攻击统计时间线数据
 
         查询DDoS攻击统计时间线数据
         
@@ -1002,7 +1002,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def apply_http_policy_async(self, request):
-        """更新防护策略的域名
+        r"""更新防护策略的域名
 
         更新防护策略的域名
         
@@ -1069,7 +1069,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_policy_async(self, request):
-        """创建防护策略
+        r"""创建防护策略
 
         创建防护策略
         
@@ -1134,7 +1134,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_policy_async(self, request):
-        """删除防护策略
+        r"""删除防护策略
 
         删除防护策略
         
@@ -1199,7 +1199,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_attack_distribution_stats_async(self, request):
-        """查询HTTP攻击分布数据
+        r"""查询HTTP攻击分布数据
 
         查询HTTP攻击分布数据
         
@@ -1274,7 +1274,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_attack_timeline_stats_async(self, request):
-        """查询HTTP攻击统计时间线数据
+        r"""查询HTTP攻击统计时间线数据
 
         查询HTTP攻击统计时间线数据
         
@@ -1353,7 +1353,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_attack_top_stats_async(self, request):
-        """查询HTTP攻击TOP数据
+        r"""查询HTTP攻击TOP数据
 
         查询HTTP攻击TOP数据
         
@@ -1432,7 +1432,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_policies_async(self, request):
-        """查询防护策略列表
+        r"""查询防护策略列表
 
         查询防护策略列表
         
@@ -1505,7 +1505,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_policy_async(self, request):
-        """查询防护策略
+        r"""查询防护策略
 
         查询防护策略
         
@@ -1570,7 +1570,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_policy_async(self, request):
-        """更新防护策略
+        r"""更新防护策略
 
         更新防护策略
         
@@ -1637,7 +1637,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_policy_rule_status_async(self, request):
-        """更新防护策略规则开关
+        r"""更新防护策略规则开关
 
         更新防护策略规则开关
         
@@ -1708,7 +1708,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_access_control_rule_async(self, request):
-        """创建精准防护规则
+        r"""创建精准防护规则
 
         创建精准防护规则
         
@@ -1775,7 +1775,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_geo_ip_rule_async(self, request):
-        """创建地理位置规则
+        r"""创建地理位置规则
 
         创建地理位置规则
         
@@ -1842,7 +1842,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_ignore_rule_async(self, request):
-        """创建误报屏蔽规则
+        r"""创建误报屏蔽规则
 
         创建误报屏蔽规则
         
@@ -1909,7 +1909,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_punishment_rule_async(self, request):
-        """创建攻击惩罚规则
+        r"""创建攻击惩罚规则
 
         创建攻击惩罚规则
         
@@ -1976,7 +1976,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_access_control_rule_async(self, request):
-        """删除精准防护规则
+        r"""删除精准防护规则
 
         删除精准防护规则
         
@@ -2043,7 +2043,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_geo_ip_rule_async(self, request):
-        """删除地理位置规则
+        r"""删除地理位置规则
 
         删除地理位置规则
         
@@ -2110,7 +2110,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_ignore_rule_async(self, request):
-        """删除误报屏蔽规则
+        r"""删除误报屏蔽规则
 
         删除误报屏蔽规则
         
@@ -2177,7 +2177,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_punishment_rule_async(self, request):
-        """删除攻击惩罚规则
+        r"""删除攻击惩罚规则
 
         删除攻击惩罚规则
         
@@ -2244,7 +2244,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def reset_http_ignore_rule_async(self, request):
-        """重置误报屏蔽规则
+        r"""重置误报屏蔽规则
 
         重置误报屏蔽规则
         
@@ -2311,7 +2311,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_access_control_rule_async(self, request):
-        """查询精准防护规则
+        r"""查询精准防护规则
 
         查询精准防护规则
         
@@ -2378,7 +2378,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_access_control_rules_async(self, request):
-        """查询精准防护规则列表
+        r"""查询精准防护规则列表
 
         查询精准防护规则列表
         
@@ -2449,7 +2449,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_geo_ip_rule_async(self, request):
-        """查询地理位置规则
+        r"""查询地理位置规则
 
         查询地理位置规则
         
@@ -2516,7 +2516,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_geo_ip_rules_async(self, request):
-        """查询地理位置规则列表
+        r"""查询地理位置规则列表
 
         查询地理位置规则列表
         
@@ -2585,7 +2585,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_ignore_rule_async(self, request):
-        """查询误报屏蔽规则
+        r"""查询误报屏蔽规则
 
         查询误报屏蔽规则
         
@@ -2652,7 +2652,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_ignore_rules_async(self, request):
-        """查询误报屏蔽规则列表
+        r"""查询误报屏蔽规则列表
 
         查询误报屏蔽规则列表
         
@@ -2725,7 +2725,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_punishment_rule_async(self, request):
-        """查询攻击惩罚规则
+        r"""查询攻击惩罚规则
 
         查询攻击惩罚规则
         
@@ -2792,7 +2792,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_punishment_rules_async(self, request):
-        """查询攻击惩罚规则列表
+        r"""查询攻击惩罚规则列表
 
         查询攻击惩罚规则列表
         
@@ -2861,7 +2861,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_access_control_rule_async(self, request):
-        """更新精准防护规则
+        r"""更新精准防护规则
 
         更新精准防护规则
         
@@ -2930,7 +2930,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_geo_ip_rule_async(self, request):
-        """更新地理位置规则
+        r"""更新地理位置规则
 
         更新地理位置规则
         
@@ -2999,7 +2999,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_ignore_rule_async(self, request):
-        """更新误报屏蔽规则
+        r"""更新误报屏蔽规则
 
         更新误报屏蔽规则
         
@@ -3068,7 +3068,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_punishment_rule_async(self, request):
-        """更新攻击惩罚规则
+        r"""更新攻击惩罚规则
 
         更新攻击惩罚规则
         
@@ -3137,7 +3137,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_cc_rule_async(self, request):
-        """创建cc规则
+        r"""创建cc规则
 
         创建cc规则
         
@@ -3204,7 +3204,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_cc_rule_async(self, request):
-        """删除cc规则
+        r"""删除cc规则
 
         删除cc规则
         
@@ -3271,7 +3271,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_cc_rule_async(self, request):
-        """查询cc规则
+        r"""查询cc规则
 
         查询cc规则
         
@@ -3338,7 +3338,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_cc_rules_async(self, request):
-        """查询cc规则列表
+        r"""查询cc规则列表
 
         查询cc规则列表
         
@@ -3409,7 +3409,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_cc_rule_async(self, request):
-        """更新cc规则
+        r"""更新cc规则
 
         更新cc规则
         
@@ -3478,7 +3478,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_block_trust_ip_rule_async(self, request):
-        """创建IP黑白名单规则
+        r"""创建IP黑白名单规则
 
         创建IP黑白名单规则
         
@@ -3545,7 +3545,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_block_trust_ip_rule_async(self, request):
-        """删除IP黑白名单规则
+        r"""删除IP黑白名单规则
 
         删除IP黑白名单规则
         
@@ -3612,7 +3612,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_block_trust_ip_rule_async(self, request):
-        """查询IP黑白名单规则
+        r"""查询IP黑白名单规则
 
         查询IP黑白名单规则
         
@@ -3679,7 +3679,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_block_trust_ip_rules_async(self, request):
-        """查询IP黑白名单规则列表
+        r"""查询IP黑白名单规则列表
 
         查询IP黑白名单规则列表
         
@@ -3752,7 +3752,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_block_trust_ip_rule_async(self, request):
-        """更新IP黑白名单规则
+        r"""更新IP黑白名单规则
 
         更新IP黑白名单规则
         
@@ -3821,7 +3821,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def create_http_ip_group_async(self, request):
-        """创建IP地址组
+        r"""创建IP地址组
 
         创建IP地址组
         
@@ -3886,7 +3886,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def delete_http_ip_group_async(self, request):
-        """删除IP地址组
+        r"""删除IP地址组
 
         删除IP地址组
         
@@ -3951,7 +3951,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_ip_group_async(self, request):
-        """查询IP地址组
+        r"""查询IP地址组
 
         查询IP地址组
         
@@ -4016,7 +4016,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def show_http_ip_groups_async(self, request):
-        """查询IP地址组列表
+        r"""查询IP地址组列表
 
         查询IP地址组列表
         
@@ -4089,7 +4089,7 @@ class EdgeSecAsyncClient(Client):
         return http_info
 
     def update_http_ip_group_async(self, request):
-        """更新IP地址组
+        r"""更新IP地址组
 
         更新IP地址组
         

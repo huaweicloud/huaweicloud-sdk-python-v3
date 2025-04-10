@@ -25,7 +25,7 @@ class VaultAddResourceReq:
     }
 
     def __init__(self, resources=None):
-        """VaultAddResourceReq
+        r"""VaultAddResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VaultAddResourceReq:
 
     @property
     def resources(self):
-        """Gets the resources of this VaultAddResourceReq.
+        r"""Gets the resources of this VaultAddResourceReq.
 
         资源列表
 
@@ -53,7 +53,7 @@ class VaultAddResourceReq:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VaultAddResourceReq.
+        r"""Sets the resources of this VaultAddResourceReq.
 
         资源列表
 

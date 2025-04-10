@@ -31,7 +31,7 @@ class ListCenterTaskRequest:
     }
 
     def __init__(self, offset=None, limit=None, start_time=None, end_time=None):
-        """ListCenterTaskRequest
+        r"""ListCenterTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListCenterTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCenterTaskRequest.
+        r"""Gets the offset of this ListCenterTaskRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -75,7 +75,7 @@ class ListCenterTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCenterTaskRequest.
+        r"""Sets the offset of this ListCenterTaskRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -86,7 +86,7 @@ class ListCenterTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCenterTaskRequest.
+        r"""Gets the limit of this ListCenterTaskRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
@@ -97,7 +97,7 @@ class ListCenterTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCenterTaskRequest.
+        r"""Sets the limit of this ListCenterTaskRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
@@ -108,7 +108,7 @@ class ListCenterTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListCenterTaskRequest.
+        r"""Gets the start_time of this ListCenterTaskRequest.
 
         查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
@@ -119,7 +119,7 @@ class ListCenterTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListCenterTaskRequest.
+        r"""Sets the start_time of this ListCenterTaskRequest.
 
         查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
@@ -130,7 +130,7 @@ class ListCenterTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListCenterTaskRequest.
+        r"""Gets the end_time of this ListCenterTaskRequest.
 
         查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20230612155959。
 
@@ -141,7 +141,7 @@ class ListCenterTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListCenterTaskRequest.
+        r"""Sets the end_time of this ListCenterTaskRequest.
 
         查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20230612155959。
 

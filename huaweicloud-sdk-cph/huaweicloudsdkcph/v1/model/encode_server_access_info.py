@@ -39,7 +39,7 @@ class EncodeServerAccessInfo:
     }
 
     def __init__(self, listen_port=None, access_ip=None, intranet_ip=None, public_ip=None, server_ip=None, access_port=None, type=None, server_ipv6=None):
-        """EncodeServerAccessInfo
+        r"""EncodeServerAccessInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class EncodeServerAccessInfo:
 
     @property
     def listen_port(self):
-        """Gets the listen_port of this EncodeServerAccessInfo.
+        r"""Gets the listen_port of this EncodeServerAccessInfo.
 
         编码服务监听端口。
 
@@ -103,7 +103,7 @@ class EncodeServerAccessInfo:
 
     @listen_port.setter
     def listen_port(self, listen_port):
-        """Sets the listen_port of this EncodeServerAccessInfo.
+        r"""Sets the listen_port of this EncodeServerAccessInfo.
 
         编码服务监听端口。
 
@@ -114,7 +114,7 @@ class EncodeServerAccessInfo:
 
     @property
     def access_ip(self):
-        """Gets the access_ip of this EncodeServerAccessInfo.
+        r"""Gets the access_ip of this EncodeServerAccessInfo.
 
         编码服务访问的公网IP（过期）。
 
@@ -125,7 +125,7 @@ class EncodeServerAccessInfo:
 
     @access_ip.setter
     def access_ip(self, access_ip):
-        """Sets the access_ip of this EncodeServerAccessInfo.
+        r"""Sets the access_ip of this EncodeServerAccessInfo.
 
         编码服务访问的公网IP（过期）。
 
@@ -136,7 +136,7 @@ class EncodeServerAccessInfo:
 
     @property
     def intranet_ip(self):
-        """Gets the intranet_ip of this EncodeServerAccessInfo.
+        r"""Gets the intranet_ip of this EncodeServerAccessInfo.
 
         编码服务访问的内网IP（过期）。
 
@@ -147,7 +147,7 @@ class EncodeServerAccessInfo:
 
     @intranet_ip.setter
     def intranet_ip(self, intranet_ip):
-        """Sets the intranet_ip of this EncodeServerAccessInfo.
+        r"""Sets the intranet_ip of this EncodeServerAccessInfo.
 
         编码服务访问的内网IP（过期）。
 
@@ -158,7 +158,7 @@ class EncodeServerAccessInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this EncodeServerAccessInfo.
+        r"""Gets the public_ip of this EncodeServerAccessInfo.
 
         编码服务访问的公网IP（新增）。
 
@@ -169,7 +169,7 @@ class EncodeServerAccessInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this EncodeServerAccessInfo.
+        r"""Sets the public_ip of this EncodeServerAccessInfo.
 
         编码服务访问的公网IP（新增）。
 
@@ -180,7 +180,7 @@ class EncodeServerAccessInfo:
 
     @property
     def server_ip(self):
-        """Gets the server_ip of this EncodeServerAccessInfo.
+        r"""Gets the server_ip of this EncodeServerAccessInfo.
 
         编码服务访问的内网IP（新增）。
 
@@ -191,7 +191,7 @@ class EncodeServerAccessInfo:
 
     @server_ip.setter
     def server_ip(self, server_ip):
-        """Sets the server_ip of this EncodeServerAccessInfo.
+        r"""Sets the server_ip of this EncodeServerAccessInfo.
 
         编码服务访问的内网IP（新增）。
 
@@ -202,7 +202,7 @@ class EncodeServerAccessInfo:
 
     @property
     def access_port(self):
-        """Gets the access_port of this EncodeServerAccessInfo.
+        r"""Gets the access_port of this EncodeServerAccessInfo.
 
         编码服务公网的访问端口。
 
@@ -213,7 +213,7 @@ class EncodeServerAccessInfo:
 
     @access_port.setter
     def access_port(self, access_port):
-        """Sets the access_port of this EncodeServerAccessInfo.
+        r"""Sets the access_port of this EncodeServerAccessInfo.
 
         编码服务公网的访问端口。
 
@@ -224,7 +224,7 @@ class EncodeServerAccessInfo:
 
     @property
     def type(self):
-        """Gets the type of this EncodeServerAccessInfo.
+        r"""Gets the type of this EncodeServerAccessInfo.
 
         编码服务的端口类型，取值如下： - adb：云手机的ADB端口 - vnc：云手机的VNC端口 - cph_app_server：云游戏客户端接入端 - cph_h5_server：云游戏H5 web网页接入端口 - 其他值：用户自定义端口
 
@@ -235,7 +235,7 @@ class EncodeServerAccessInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EncodeServerAccessInfo.
+        r"""Sets the type of this EncodeServerAccessInfo.
 
         编码服务的端口类型，取值如下： - adb：云手机的ADB端口 - vnc：云手机的VNC端口 - cph_app_server：云游戏客户端接入端 - cph_h5_server：云游戏H5 web网页接入端口 - 其他值：用户自定义端口
 
@@ -246,7 +246,7 @@ class EncodeServerAccessInfo:
 
     @property
     def server_ipv6(self):
-        """Gets the server_ipv6 of this EncodeServerAccessInfo.
+        r"""Gets the server_ipv6 of this EncodeServerAccessInfo.
 
         编码服务访问的内网IPv6 IP（新增）。
 
@@ -257,7 +257,7 @@ class EncodeServerAccessInfo:
 
     @server_ipv6.setter
     def server_ipv6(self, server_ipv6):
-        """Sets the server_ipv6 of this EncodeServerAccessInfo.
+        r"""Sets the server_ipv6 of this EncodeServerAccessInfo.
 
         编码服务访问的内网IPv6 IP（新增）。
 

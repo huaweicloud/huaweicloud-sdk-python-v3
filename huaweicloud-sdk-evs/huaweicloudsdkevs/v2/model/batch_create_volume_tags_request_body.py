@@ -27,7 +27,7 @@ class BatchCreateVolumeTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateVolumeTagsRequestBody
+        r"""BatchCreateVolumeTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateVolumeTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateVolumeTagsRequestBody.
+        r"""Gets the action of this BatchCreateVolumeTagsRequestBody.
 
         操作标识，当前支持的取值如下：  添加标签：create
 
@@ -59,7 +59,7 @@ class BatchCreateVolumeTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateVolumeTagsRequestBody.
+        r"""Sets the action of this BatchCreateVolumeTagsRequestBody.
 
         操作标识，当前支持的取值如下：  添加标签：create
 
@@ -70,7 +70,7 @@ class BatchCreateVolumeTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateVolumeTagsRequestBody.
+        r"""Gets the tags of this BatchCreateVolumeTagsRequestBody.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class BatchCreateVolumeTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateVolumeTagsRequestBody.
+        r"""Sets the tags of this BatchCreateVolumeTagsRequestBody.
 
         标签列表。
 

@@ -25,7 +25,7 @@ class PrivateModuleDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, module_description=None):
-        """PrivateModuleDescriptionPrimitiveTypeHolder
+        r"""PrivateModuleDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateModuleDescriptionPrimitiveTypeHolder:
 
     @property
     def module_description(self):
-        """Gets the module_description of this PrivateModuleDescriptionPrimitiveTypeHolder.
+        r"""Gets the module_description of this PrivateModuleDescriptionPrimitiveTypeHolder.
 
         私有模块（private-module）的描述。可用于客户识别被管理的私有模块。如果想要更新私有模块的描述，可以通过UpdatePrivateModuleMetadata API。
 
@@ -54,7 +54,7 @@ class PrivateModuleDescriptionPrimitiveTypeHolder:
 
     @module_description.setter
     def module_description(self, module_description):
-        """Sets the module_description of this PrivateModuleDescriptionPrimitiveTypeHolder.
+        r"""Sets the module_description of this PrivateModuleDescriptionPrimitiveTypeHolder.
 
         私有模块（private-module）的描述。可用于客户识别被管理的私有模块。如果想要更新私有模块的描述，可以通过UpdatePrivateModuleMetadata API。
 

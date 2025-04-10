@@ -27,7 +27,7 @@ class UpdateEndpointWhiteRequestBody:
     }
 
     def __init__(self, whitelist=None, enable_whitelist=None):
-        """UpdateEndpointWhiteRequestBody
+        r"""UpdateEndpointWhiteRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateEndpointWhiteRequestBody:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this UpdateEndpointWhiteRequestBody.
+        r"""Gets the whitelist of this UpdateEndpointWhiteRequestBody.
 
         更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR：  - 当取值不为空时，表示将白名单更新为取值所示内容。  - 当取值为空时，表示删除所有白名单。 默认为空列表。
 
@@ -61,7 +61,7 @@ class UpdateEndpointWhiteRequestBody:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this UpdateEndpointWhiteRequestBody.
+        r"""Sets the whitelist of this UpdateEndpointWhiteRequestBody.
 
         更新或删除用于控制访问终端节点的白名单。此参数可以添加IPv4或CIDR：  - 当取值不为空时，表示将白名单更新为取值所示内容。  - 当取值为空时，表示删除所有白名单。 默认为空列表。
 
@@ -72,7 +72,7 @@ class UpdateEndpointWhiteRequestBody:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this UpdateEndpointWhiteRequestBody.
+        r"""Gets the enable_whitelist of this UpdateEndpointWhiteRequestBody.
 
         是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 默认值为false。
 
@@ -83,7 +83,7 @@ class UpdateEndpointWhiteRequestBody:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this UpdateEndpointWhiteRequestBody.
+        r"""Sets the enable_whitelist of this UpdateEndpointWhiteRequestBody.
 
         是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 默认值为false。
 

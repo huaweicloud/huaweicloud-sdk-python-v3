@@ -33,7 +33,7 @@ class ListResourceGroupRequest:
     }
 
     def __init__(self, group_name=None, group_id=None, status=None, start=None, limit=None):
-        """ListResourceGroupRequest
+        r"""ListResourceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListResourceGroupRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListResourceGroupRequest.
+        r"""Gets the group_name of this ListResourceGroupRequest.
 
         资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
@@ -82,7 +82,7 @@ class ListResourceGroupRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListResourceGroupRequest.
+        r"""Sets the group_name of this ListResourceGroupRequest.
 
         资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
@@ -93,7 +93,7 @@ class ListResourceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListResourceGroupRequest.
+        r"""Gets the group_id of this ListResourceGroupRequest.
 
         资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
 
@@ -104,7 +104,7 @@ class ListResourceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListResourceGroupRequest.
+        r"""Sets the group_id of this ListResourceGroupRequest.
 
         资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
 
@@ -115,7 +115,7 @@ class ListResourceGroupRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListResourceGroupRequest.
+        r"""Gets the status of this ListResourceGroupRequest.
 
         资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
@@ -126,7 +126,7 @@ class ListResourceGroupRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListResourceGroupRequest.
+        r"""Sets the status of this ListResourceGroupRequest.
 
         资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
@@ -137,7 +137,7 @@ class ListResourceGroupRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListResourceGroupRequest.
+        r"""Gets the start of this ListResourceGroupRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -148,7 +148,7 @@ class ListResourceGroupRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListResourceGroupRequest.
+        r"""Sets the start of this ListResourceGroupRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -159,7 +159,7 @@ class ListResourceGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceGroupRequest.
+        r"""Gets the limit of this ListResourceGroupRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
@@ -170,7 +170,7 @@ class ListResourceGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceGroupRequest.
+        r"""Sets the limit of this ListResourceGroupRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 

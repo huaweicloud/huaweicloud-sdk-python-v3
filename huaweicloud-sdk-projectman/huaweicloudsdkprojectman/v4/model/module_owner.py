@@ -31,7 +31,7 @@ class ModuleOwner:
     }
 
     def __init__(self, user_id=None, user_num_id=None, user_name=None, nick_name=None):
-        """ModuleOwner
+        r"""ModuleOwner
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ModuleOwner:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ModuleOwner.
+        r"""Gets the user_id of this ModuleOwner.
 
         用户32位字符串id
 
@@ -75,7 +75,7 @@ class ModuleOwner:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ModuleOwner.
+        r"""Sets the user_id of this ModuleOwner.
 
         用户32位字符串id
 
@@ -86,7 +86,7 @@ class ModuleOwner:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this ModuleOwner.
+        r"""Gets the user_num_id of this ModuleOwner.
 
         用户数字id
 
@@ -97,7 +97,7 @@ class ModuleOwner:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this ModuleOwner.
+        r"""Sets the user_num_id of this ModuleOwner.
 
         用户数字id
 
@@ -108,7 +108,7 @@ class ModuleOwner:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ModuleOwner.
+        r"""Gets the user_name of this ModuleOwner.
 
         用户名称
 
@@ -119,7 +119,7 @@ class ModuleOwner:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ModuleOwner.
+        r"""Sets the user_name of this ModuleOwner.
 
         用户名称
 
@@ -130,7 +130,7 @@ class ModuleOwner:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ModuleOwner.
+        r"""Gets the nick_name of this ModuleOwner.
 
         用户昵称
 
@@ -141,7 +141,7 @@ class ModuleOwner:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ModuleOwner.
+        r"""Sets the nick_name of this ModuleOwner.
 
         用户昵称
 

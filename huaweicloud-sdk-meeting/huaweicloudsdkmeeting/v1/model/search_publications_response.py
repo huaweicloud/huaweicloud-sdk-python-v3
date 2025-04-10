@@ -32,7 +32,7 @@ class SearchPublicationsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchPublicationsResponse
+        r"""SearchPublicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchPublicationsResponse.
+        r"""Gets the offset of this SearchPublicationsResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchPublicationsResponse.
+        r"""Sets the offset of this SearchPublicationsResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchPublicationsResponse.
+        r"""Gets the limit of this SearchPublicationsResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchPublicationsResponse.
+        r"""Sets the limit of this SearchPublicationsResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchPublicationsResponse.
+        r"""Gets the count of this SearchPublicationsResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchPublicationsResponse.
+        r"""Sets the count of this SearchPublicationsResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchPublicationsResponse.
+        r"""Gets the data of this SearchPublicationsResponse.
 
         发布响应信息
 
@@ -142,7 +142,7 @@ class SearchPublicationsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchPublicationsResponse.
+        r"""Sets the data of this SearchPublicationsResponse.
 
         发布响应信息
 

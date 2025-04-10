@@ -33,7 +33,7 @@ class UpdateStorageModeReq:
     }
 
     def __init__(self, asset_id=None, storage_mode=None, restore_mode=None, days=None, restore_tier=None):
-        """UpdateStorageModeReq
+        r"""UpdateStorageModeReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UpdateStorageModeReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateStorageModeReq.
+        r"""Gets the asset_id of this UpdateStorageModeReq.
 
         原媒资id 
 
@@ -80,7 +80,7 @@ class UpdateStorageModeReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateStorageModeReq.
+        r"""Sets the asset_id of this UpdateStorageModeReq.
 
         原媒资id 
 
@@ -91,7 +91,7 @@ class UpdateStorageModeReq:
 
     @property
     def storage_mode(self):
-        """Gets the storage_mode of this UpdateStorageModeReq.
+        r"""Gets the storage_mode of this UpdateStorageModeReq.
 
         存储模式。 取值如下： - STANDARD：标准存储。 - WARM：低频存储。 - COLD：归档存储。 
 
@@ -102,7 +102,7 @@ class UpdateStorageModeReq:
 
     @storage_mode.setter
     def storage_mode(self, storage_mode):
-        """Sets the storage_mode of this UpdateStorageModeReq.
+        r"""Sets the storage_mode of this UpdateStorageModeReq.
 
         存储模式。 取值如下： - STANDARD：标准存储。 - WARM：低频存储。 - COLD：归档存储。 
 
@@ -113,7 +113,7 @@ class UpdateStorageModeReq:
 
     @property
     def restore_mode(self):
-        """Gets the restore_mode of this UpdateStorageModeReq.
+        r"""Gets the restore_mode of this UpdateStorageModeReq.
 
         归档恢复方式。 取值如下： - TEMP：临时 - FOREVER：永久 
 
@@ -124,7 +124,7 @@ class UpdateStorageModeReq:
 
     @restore_mode.setter
     def restore_mode(self, restore_mode):
-        """Sets the restore_mode of this UpdateStorageModeReq.
+        r"""Sets the restore_mode of this UpdateStorageModeReq.
 
         归档恢复方式。 取值如下： - TEMP：临时 - FOREVER：永久 
 
@@ -135,7 +135,7 @@ class UpdateStorageModeReq:
 
     @property
     def days(self):
-        """Gets the days of this UpdateStorageModeReq.
+        r"""Gets the days of this UpdateStorageModeReq.
 
         从归档转标准存储且选择临时恢复时临时恢复时间。 
 
@@ -146,7 +146,7 @@ class UpdateStorageModeReq:
 
     @days.setter
     def days(self, days):
-        """Sets the days of this UpdateStorageModeReq.
+        r"""Sets the days of this UpdateStorageModeReq.
 
         从归档转标准存储且选择临时恢复时临时恢复时间。 
 
@@ -157,7 +157,7 @@ class UpdateStorageModeReq:
 
     @property
     def restore_tier(self):
-        """Gets the restore_tier of this UpdateStorageModeReq.
+        r"""Gets the restore_tier of this UpdateStorageModeReq.
 
         归档恢复选项，快速恢复EXPEDITED，标准恢复STANDARD，默认快速恢复 
 
@@ -168,7 +168,7 @@ class UpdateStorageModeReq:
 
     @restore_tier.setter
     def restore_tier(self, restore_tier):
-        """Sets the restore_tier of this UpdateStorageModeReq.
+        r"""Sets the restore_tier of this UpdateStorageModeReq.
 
         归档恢复选项，快速恢复EXPEDITED，标准恢复STANDARD，默认快速恢复 
 

@@ -27,7 +27,7 @@ class UntagBandwidthPackageRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UntagBandwidthPackageRequest
+        r"""UntagBandwidthPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UntagBandwidthPackageRequest:
 
     @property
     def id(self):
-        """Gets the id of this UntagBandwidthPackageRequest.
+        r"""Gets the id of this UntagBandwidthPackageRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UntagBandwidthPackageRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UntagBandwidthPackageRequest.
+        r"""Sets the id of this UntagBandwidthPackageRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UntagBandwidthPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this UntagBandwidthPackageRequest.
+        r"""Gets the body of this UntagBandwidthPackageRequest.
 
         :return: The body of this UntagBandwidthPackageRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UntagBandwidthPackageRequestBody`
@@ -80,7 +80,7 @@ class UntagBandwidthPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UntagBandwidthPackageRequest.
+        r"""Sets the body of this UntagBandwidthPackageRequest.
 
         :param body: The body of this UntagBandwidthPackageRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UntagBandwidthPackageRequestBody`

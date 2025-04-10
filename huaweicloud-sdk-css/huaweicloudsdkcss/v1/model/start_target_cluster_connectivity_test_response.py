@@ -26,7 +26,7 @@ class StartTargetClusterConnectivityTestResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """StartTargetClusterConnectivityTestResponse
+        r"""StartTargetClusterConnectivityTestResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartTargetClusterConnectivityTestResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this StartTargetClusterConnectivityTestResponse.
+        r"""Gets the body of this StartTargetClusterConnectivityTestResponse.
 
         :return: The body of this StartTargetClusterConnectivityTestResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StartTargetClusterConnectivityTestResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartTargetClusterConnectivityTestResponse.
+        r"""Sets the body of this StartTargetClusterConnectivityTestResponse.
 
         :param body: The body of this StartTargetClusterConnectivityTestResponse.
         :type body: str

@@ -26,7 +26,7 @@ class ModelType:
     }
 
     def __init__(self):
-        """ModelType
+        r"""ModelType
 
         The model defined in huaweicloud sdk
 

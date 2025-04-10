@@ -25,7 +25,7 @@ class ShowAdmetWithCustomPropsRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAdmetWithCustomPropsRequest
+        r"""ShowAdmetWithCustomPropsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAdmetWithCustomPropsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAdmetWithCustomPropsRequest.
+        r"""Gets the body of this ShowAdmetWithCustomPropsRequest.
 
         :return: The body of this ShowAdmetWithCustomPropsRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v2.AdmetWithCustomRequest`
@@ -52,7 +52,7 @@ class ShowAdmetWithCustomPropsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAdmetWithCustomPropsRequest.
+        r"""Sets the body of this ShowAdmetWithCustomPropsRequest.
 
         :param body: The body of this ShowAdmetWithCustomPropsRequest.
         :type body: :class:`huaweicloudsdkeihealth.v2.AdmetWithCustomRequest`

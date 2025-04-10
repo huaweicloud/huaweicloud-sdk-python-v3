@@ -47,7 +47,7 @@ class WorkItemStatusFlowVo:
     }
 
     def __init__(self, parent_name=None, parent_type=None, status_id=None, name=None, status_type=None, direct_to=None, assign_to=None, comment=None, required_assign=None, required_notes=None, field_type=None, parent_id=None):
-        """WorkItemStatusFlowVo
+        r"""WorkItemStatusFlowVo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def parent_name(self):
-        """Gets the parent_name of this WorkItemStatusFlowVo.
+        r"""Gets the parent_name of this WorkItemStatusFlowVo.
 
          父状态的名称
 
@@ -131,7 +131,7 @@ class WorkItemStatusFlowVo:
 
     @parent_name.setter
     def parent_name(self, parent_name):
-        """Sets the parent_name of this WorkItemStatusFlowVo.
+        r"""Sets the parent_name of this WorkItemStatusFlowVo.
 
          父状态的名称
 
@@ -142,7 +142,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def parent_type(self):
-        """Gets the parent_type of this WorkItemStatusFlowVo.
+        r"""Gets the parent_type of this WorkItemStatusFlowVo.
 
         父状态的类型
 
@@ -153,7 +153,7 @@ class WorkItemStatusFlowVo:
 
     @parent_type.setter
     def parent_type(self, parent_type):
-        """Sets the parent_type of this WorkItemStatusFlowVo.
+        r"""Sets the parent_type of this WorkItemStatusFlowVo.
 
         父状态的类型
 
@@ -164,7 +164,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this WorkItemStatusFlowVo.
+        r"""Gets the status_id of this WorkItemStatusFlowVo.
 
         状态id
 
@@ -175,7 +175,7 @@ class WorkItemStatusFlowVo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this WorkItemStatusFlowVo.
+        r"""Sets the status_id of this WorkItemStatusFlowVo.
 
         状态id
 
@@ -186,7 +186,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def name(self):
-        """Gets the name of this WorkItemStatusFlowVo.
+        r"""Gets the name of this WorkItemStatusFlowVo.
 
         状态名称
 
@@ -197,7 +197,7 @@ class WorkItemStatusFlowVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkItemStatusFlowVo.
+        r"""Sets the name of this WorkItemStatusFlowVo.
 
         状态名称
 
@@ -208,7 +208,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def status_type(self):
-        """Gets the status_type of this WorkItemStatusFlowVo.
+        r"""Gets the status_type of this WorkItemStatusFlowVo.
 
         状态类型
 
@@ -219,7 +219,7 @@ class WorkItemStatusFlowVo:
 
     @status_type.setter
     def status_type(self, status_type):
-        """Sets the status_type of this WorkItemStatusFlowVo.
+        r"""Sets the status_type of this WorkItemStatusFlowVo.
 
         状态类型
 
@@ -230,7 +230,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def direct_to(self):
-        """Gets the direct_to of this WorkItemStatusFlowVo.
+        r"""Gets the direct_to of this WorkItemStatusFlowVo.
 
         流转到的数据
 
@@ -241,7 +241,7 @@ class WorkItemStatusFlowVo:
 
     @direct_to.setter
     def direct_to(self, direct_to):
-        """Sets the direct_to of this WorkItemStatusFlowVo.
+        r"""Sets the direct_to of this WorkItemStatusFlowVo.
 
         流转到的数据
 
@@ -252,7 +252,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def assign_to(self):
-        """Gets the assign_to of this WorkItemStatusFlowVo.
+        r"""Gets the assign_to of this WorkItemStatusFlowVo.
 
         处理人的uuid
 
@@ -263,7 +263,7 @@ class WorkItemStatusFlowVo:
 
     @assign_to.setter
     def assign_to(self, assign_to):
-        """Sets the assign_to of this WorkItemStatusFlowVo.
+        r"""Sets the assign_to of this WorkItemStatusFlowVo.
 
         处理人的uuid
 
@@ -274,7 +274,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def comment(self):
-        """Gets the comment of this WorkItemStatusFlowVo.
+        r"""Gets the comment of this WorkItemStatusFlowVo.
 
         评论内容
 
@@ -285,7 +285,7 @@ class WorkItemStatusFlowVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this WorkItemStatusFlowVo.
+        r"""Sets the comment of this WorkItemStatusFlowVo.
 
         评论内容
 
@@ -296,7 +296,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def required_assign(self):
-        """Gets the required_assign of this WorkItemStatusFlowVo.
+        r"""Gets the required_assign of this WorkItemStatusFlowVo.
 
         处理人是否必填
 
@@ -307,7 +307,7 @@ class WorkItemStatusFlowVo:
 
     @required_assign.setter
     def required_assign(self, required_assign):
-        """Sets the required_assign of this WorkItemStatusFlowVo.
+        r"""Sets the required_assign of this WorkItemStatusFlowVo.
 
         处理人是否必填
 
@@ -318,7 +318,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def required_notes(self):
-        """Gets the required_notes of this WorkItemStatusFlowVo.
+        r"""Gets the required_notes of this WorkItemStatusFlowVo.
 
         评论是否必填
 
@@ -329,7 +329,7 @@ class WorkItemStatusFlowVo:
 
     @required_notes.setter
     def required_notes(self, required_notes):
-        """Sets the required_notes of this WorkItemStatusFlowVo.
+        r"""Sets the required_notes of this WorkItemStatusFlowVo.
 
         评论是否必填
 
@@ -340,7 +340,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def field_type(self):
-        """Gets the field_type of this WorkItemStatusFlowVo.
+        r"""Gets the field_type of this WorkItemStatusFlowVo.
 
         是否是字段值，true 处理人的信息是字段值， false 处理人的值是用户的信息,固定值
 
@@ -351,7 +351,7 @@ class WorkItemStatusFlowVo:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this WorkItemStatusFlowVo.
+        r"""Sets the field_type of this WorkItemStatusFlowVo.
 
         是否是字段值，true 处理人的信息是字段值， false 处理人的值是用户的信息,固定值
 
@@ -362,7 +362,7 @@ class WorkItemStatusFlowVo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this WorkItemStatusFlowVo.
+        r"""Gets the parent_id of this WorkItemStatusFlowVo.
 
         父状态的uuid
 
@@ -373,7 +373,7 @@ class WorkItemStatusFlowVo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this WorkItemStatusFlowVo.
+        r"""Sets the parent_id of this WorkItemStatusFlowVo.
 
         父状态的uuid
 

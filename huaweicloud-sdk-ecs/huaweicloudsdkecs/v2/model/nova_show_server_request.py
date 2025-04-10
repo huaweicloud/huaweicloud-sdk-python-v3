@@ -27,7 +27,7 @@ class NovaShowServerRequest:
     }
 
     def __init__(self, server_id=None, open_stack_api_version=None):
-        """NovaShowServerRequest
+        r"""NovaShowServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaShowServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaShowServerRequest.
+        r"""Gets the server_id of this NovaShowServerRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class NovaShowServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaShowServerRequest.
+        r"""Sets the server_id of this NovaShowServerRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class NovaShowServerRequest:
 
     @property
     def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaShowServerRequest.
+        r"""Gets the open_stack_api_version of this NovaShowServerRequest.
 
         微版本头
 
@@ -82,7 +82,7 @@ class NovaShowServerRequest:
 
     @open_stack_api_version.setter
     def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaShowServerRequest.
+        r"""Sets the open_stack_api_version of this NovaShowServerRequest.
 
         微版本头
 

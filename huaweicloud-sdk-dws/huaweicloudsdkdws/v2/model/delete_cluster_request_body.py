@@ -25,7 +25,7 @@ class DeleteClusterRequestBody:
     }
 
     def __init__(self, keep_last_manual_snapshot=None):
-        """DeleteClusterRequestBody
+        r"""DeleteClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteClusterRequestBody:
 
     @property
     def keep_last_manual_snapshot(self):
-        """Gets the keep_last_manual_snapshot of this DeleteClusterRequestBody.
+        r"""Gets the keep_last_manual_snapshot of this DeleteClusterRequestBody.
 
         集群需要保留的快照数
 
@@ -53,7 +53,7 @@ class DeleteClusterRequestBody:
 
     @keep_last_manual_snapshot.setter
     def keep_last_manual_snapshot(self, keep_last_manual_snapshot):
-        """Sets the keep_last_manual_snapshot of this DeleteClusterRequestBody.
+        r"""Sets the keep_last_manual_snapshot of this DeleteClusterRequestBody.
 
         集群需要保留的快照数
 

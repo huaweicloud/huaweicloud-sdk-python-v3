@@ -31,7 +31,7 @@ class SmartChatSubtitleConfig:
     }
 
     def __init__(self, dx=None, dy=None, width=None, height=None):
-        """SmartChatSubtitleConfig
+        r"""SmartChatSubtitleConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SmartChatSubtitleConfig:
 
     @property
     def dx(self):
-        """Gets the dx of this SmartChatSubtitleConfig.
+        r"""Gets the dx of this SmartChatSubtitleConfig.
 
         字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -75,7 +75,7 @@ class SmartChatSubtitleConfig:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this SmartChatSubtitleConfig.
+        r"""Sets the dx of this SmartChatSubtitleConfig.
 
         字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -86,7 +86,7 @@ class SmartChatSubtitleConfig:
 
     @property
     def dy(self):
-        """Gets the dy of this SmartChatSubtitleConfig.
+        r"""Gets the dy of this SmartChatSubtitleConfig.
 
         字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -97,7 +97,7 @@ class SmartChatSubtitleConfig:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this SmartChatSubtitleConfig.
+        r"""Sets the dy of this SmartChatSubtitleConfig.
 
         字幕左上角像素点坐标。  > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -108,7 +108,7 @@ class SmartChatSubtitleConfig:
 
     @property
     def width(self):
-        """Gets the width of this SmartChatSubtitleConfig.
+        r"""Gets the width of this SmartChatSubtitleConfig.
 
         图层图片宽度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
@@ -119,7 +119,7 @@ class SmartChatSubtitleConfig:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this SmartChatSubtitleConfig.
+        r"""Sets the width of this SmartChatSubtitleConfig.
 
         图层图片宽度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
@@ -130,7 +130,7 @@ class SmartChatSubtitleConfig:
 
     @property
     def height(self):
-        """Gets the height of this SmartChatSubtitleConfig.
+        r"""Gets the height of this SmartChatSubtitleConfig.
 
         图层图片高度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
@@ -141,7 +141,7 @@ class SmartChatSubtitleConfig:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this SmartChatSubtitleConfig.
+        r"""Sets the height of this SmartChatSubtitleConfig.
 
         图层图片高度像素值（相对画布大小）。 > 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 

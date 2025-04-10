@@ -25,7 +25,7 @@ class BatchStopMigrationTasksBody:
     }
 
     def __init__(self, migration_tasks=None):
-        """BatchStopMigrationTasksBody
+        r"""BatchStopMigrationTasksBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchStopMigrationTasksBody:
 
     @property
     def migration_tasks(self):
-        """Gets the migration_tasks of this BatchStopMigrationTasksBody.
+        r"""Gets the migration_tasks of this BatchStopMigrationTasksBody.
 
         数据迁移任务列表。
 
@@ -53,7 +53,7 @@ class BatchStopMigrationTasksBody:
 
     @migration_tasks.setter
     def migration_tasks(self, migration_tasks):
-        """Sets the migration_tasks of this BatchStopMigrationTasksBody.
+        r"""Sets the migration_tasks of this BatchStopMigrationTasksBody.
 
         数据迁移任务列表。
 

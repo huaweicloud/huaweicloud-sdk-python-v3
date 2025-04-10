@@ -25,7 +25,7 @@ class BatchQueryRpoAndRtoReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchQueryRpoAndRtoReq
+        r"""BatchQueryRpoAndRtoReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchQueryRpoAndRtoReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchQueryRpoAndRtoReq.
+        r"""Gets the jobs of this BatchQueryRpoAndRtoReq.
 
         批量查询RPO和RTO的任务详情ID请求列表
 
@@ -53,7 +53,7 @@ class BatchQueryRpoAndRtoReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchQueryRpoAndRtoReq.
+        r"""Sets the jobs of this BatchQueryRpoAndRtoReq.
 
         批量查询RPO和RTO的任务详情ID请求列表
 

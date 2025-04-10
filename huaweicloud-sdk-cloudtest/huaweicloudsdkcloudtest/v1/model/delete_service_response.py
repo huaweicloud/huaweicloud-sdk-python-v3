@@ -28,7 +28,7 @@ class DeleteServiceResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """DeleteServiceResponse
+        r"""DeleteServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteServiceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteServiceResponse.
+        r"""Gets the error_code of this DeleteServiceResponse.
 
         接口调用失败错误码
 
@@ -62,7 +62,7 @@ class DeleteServiceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteServiceResponse.
+        r"""Sets the error_code of this DeleteServiceResponse.
 
         接口调用失败错误码
 
@@ -73,7 +73,7 @@ class DeleteServiceResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteServiceResponse.
+        r"""Gets the error_msg of this DeleteServiceResponse.
 
         接口调用失败错误信息
 
@@ -84,7 +84,7 @@ class DeleteServiceResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteServiceResponse.
+        r"""Sets the error_msg of this DeleteServiceResponse.
 
         接口调用失败错误信息
 

@@ -33,7 +33,7 @@ class TagHeader:
     }
 
     def __init__(self, name=None, dexcription=None, display_text=None, relation_guid=None, tag_guid=None):
-        """TagHeader
+        r"""TagHeader
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TagHeader:
 
     @property
     def name(self):
-        """Gets the name of this TagHeader.
+        r"""Gets the name of this TagHeader.
 
         资产名称
 
@@ -82,7 +82,7 @@ class TagHeader:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TagHeader.
+        r"""Sets the name of this TagHeader.
 
         资产名称
 
@@ -93,7 +93,7 @@ class TagHeader:
 
     @property
     def dexcription(self):
-        """Gets the dexcription of this TagHeader.
+        r"""Gets the dexcription of this TagHeader.
 
         标签描述
 
@@ -104,7 +104,7 @@ class TagHeader:
 
     @dexcription.setter
     def dexcription(self, dexcription):
-        """Sets the dexcription of this TagHeader.
+        r"""Sets the dexcription of this TagHeader.
 
         标签描述
 
@@ -115,7 +115,7 @@ class TagHeader:
 
     @property
     def display_text(self):
-        """Gets the display_text of this TagHeader.
+        r"""Gets the display_text of this TagHeader.
 
         标签的名称
 
@@ -126,7 +126,7 @@ class TagHeader:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this TagHeader.
+        r"""Sets the display_text of this TagHeader.
 
         标签的名称
 
@@ -137,7 +137,7 @@ class TagHeader:
 
     @property
     def relation_guid(self):
-        """Gets the relation_guid of this TagHeader.
+        r"""Gets the relation_guid of this TagHeader.
 
         关联的guid
 
@@ -148,7 +148,7 @@ class TagHeader:
 
     @relation_guid.setter
     def relation_guid(self, relation_guid):
-        """Sets the relation_guid of this TagHeader.
+        r"""Sets the relation_guid of this TagHeader.
 
         关联的guid
 
@@ -159,7 +159,7 @@ class TagHeader:
 
     @property
     def tag_guid(self):
-        """Gets the tag_guid of this TagHeader.
+        r"""Gets the tag_guid of this TagHeader.
 
         标签关联的guid
 
@@ -170,7 +170,7 @@ class TagHeader:
 
     @tag_guid.setter
     def tag_guid(self, tag_guid):
-        """Sets the tag_guid of this TagHeader.
+        r"""Sets the tag_guid of this TagHeader.
 
         标签关联的guid
 

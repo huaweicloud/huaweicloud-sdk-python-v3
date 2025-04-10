@@ -30,7 +30,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
     }
 
     def __init__(self, links=None, zones=None, metadata=None):
-        """BatchSetZonesStatusResponse
+        r"""BatchSetZonesStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this BatchSetZonesStatusResponse.
+        r"""Gets the links of this BatchSetZonesStatusResponse.
 
         :return: The links of this BatchSetZonesStatusResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Link`
@@ -67,7 +67,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this BatchSetZonesStatusResponse.
+        r"""Sets the links of this BatchSetZonesStatusResponse.
 
         :param links: The links of this BatchSetZonesStatusResponse.
         :type links: :class:`huaweicloudsdkdns.v2.Link`
@@ -76,7 +76,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     @property
     def zones(self):
-        """Gets the zones of this BatchSetZonesStatusResponse.
+        r"""Gets the zones of this BatchSetZonesStatusResponse.
 
         设置zone的列表响应。
 
@@ -87,7 +87,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     @zones.setter
     def zones(self, zones):
-        """Sets the zones of this BatchSetZonesStatusResponse.
+        r"""Sets the zones of this BatchSetZonesStatusResponse.
 
         设置zone的列表响应。
 
@@ -98,7 +98,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this BatchSetZonesStatusResponse.
+        r"""Gets the metadata of this BatchSetZonesStatusResponse.
 
         :return: The metadata of this BatchSetZonesStatusResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this BatchSetZonesStatusResponse.
+        r"""Sets the metadata of this BatchSetZonesStatusResponse.
 
         :param metadata: The metadata of this BatchSetZonesStatusResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

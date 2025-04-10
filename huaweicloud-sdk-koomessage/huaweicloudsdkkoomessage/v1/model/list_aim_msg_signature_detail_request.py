@@ -25,7 +25,7 @@ class ListAimMsgSignatureDetailRequest:
     }
 
     def __init__(self, signature_id=None):
-        """ListAimMsgSignatureDetailRequest
+        r"""ListAimMsgSignatureDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAimMsgSignatureDetailRequest:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this ListAimMsgSignatureDetailRequest.
+        r"""Gets the signature_id of this ListAimMsgSignatureDetailRequest.
 
         签名ID。
 
@@ -53,7 +53,7 @@ class ListAimMsgSignatureDetailRequest:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this ListAimMsgSignatureDetailRequest.
+        r"""Sets the signature_id of this ListAimMsgSignatureDetailRequest.
 
         签名ID。
 

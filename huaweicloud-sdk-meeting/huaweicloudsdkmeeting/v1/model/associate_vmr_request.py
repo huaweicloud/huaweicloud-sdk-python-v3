@@ -33,7 +33,7 @@ class AssociateVmrRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, account=None, account_type=None, body=None):
-        """AssociateVmrRequest
+        r"""AssociateVmrRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AssociateVmrRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AssociateVmrRequest.
+        r"""Gets the x_request_id of this AssociateVmrRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -81,7 +81,7 @@ class AssociateVmrRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AssociateVmrRequest.
+        r"""Sets the x_request_id of this AssociateVmrRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -92,7 +92,7 @@ class AssociateVmrRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this AssociateVmrRequest.
+        r"""Gets the accept_language of this AssociateVmrRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -103,7 +103,7 @@ class AssociateVmrRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this AssociateVmrRequest.
+        r"""Sets the accept_language of this AssociateVmrRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -114,7 +114,7 @@ class AssociateVmrRequest:
 
     @property
     def account(self):
-        """Gets the account of this AssociateVmrRequest.
+        r"""Gets the account of this AssociateVmrRequest.
 
         帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID > 一个帐号能分配32个云会议室。 
 
@@ -125,7 +125,7 @@ class AssociateVmrRequest:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AssociateVmrRequest.
+        r"""Sets the account of this AssociateVmrRequest.
 
         帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID > 一个帐号能分配32个云会议室。 
 
@@ -136,7 +136,7 @@ class AssociateVmrRequest:
 
     @property
     def account_type(self):
-        """Gets the account_type of this AssociateVmrRequest.
+        r"""Gets the account_type of this AssociateVmrRequest.
 
         帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
@@ -147,7 +147,7 @@ class AssociateVmrRequest:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this AssociateVmrRequest.
+        r"""Sets the account_type of this AssociateVmrRequest.
 
         帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
@@ -158,7 +158,7 @@ class AssociateVmrRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateVmrRequest.
+        r"""Gets the body of this AssociateVmrRequest.
 
         :return: The body of this AssociateVmrRequest.
         :rtype: list[str]
@@ -167,7 +167,7 @@ class AssociateVmrRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateVmrRequest.
+        r"""Sets the body of this AssociateVmrRequest.
 
         :param body: The body of this AssociateVmrRequest.
         :type body: list[str]

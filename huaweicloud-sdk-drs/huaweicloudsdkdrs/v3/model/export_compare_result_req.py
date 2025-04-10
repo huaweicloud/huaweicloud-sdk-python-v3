@@ -29,7 +29,7 @@ class ExportCompareResultReq:
     }
 
     def __init__(self, compare_type=None, compare_job_id=None, time_zone=None):
-        """ExportCompareResultReq
+        r"""ExportCompareResultReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExportCompareResultReq:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this ExportCompareResultReq.
+        r"""Gets the compare_type of this ExportCompareResultReq.
 
         对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
 
@@ -67,7 +67,7 @@ class ExportCompareResultReq:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this ExportCompareResultReq.
+        r"""Sets the compare_type of this ExportCompareResultReq.
 
         对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
 
@@ -78,7 +78,7 @@ class ExportCompareResultReq:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ExportCompareResultReq.
+        r"""Gets the compare_job_id of this ExportCompareResultReq.
 
         对比任务的ID，内容对比、抽样对比、行数对比场景必填。
 
@@ -89,7 +89,7 @@ class ExportCompareResultReq:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ExportCompareResultReq.
+        r"""Sets the compare_job_id of this ExportCompareResultReq.
 
         对比任务的ID，内容对比、抽样对比、行数对比场景必填。
 
@@ -100,7 +100,7 @@ class ExportCompareResultReq:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ExportCompareResultReq.
+        r"""Gets the time_zone of this ExportCompareResultReq.
 
         时区，如GMT+08:00，用于生成当前时间标识，拼接到文件名称中。
 
@@ -111,7 +111,7 @@ class ExportCompareResultReq:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ExportCompareResultReq.
+        r"""Sets the time_zone of this ExportCompareResultReq.
 
         时区，如GMT+08:00，用于生成当前时间标识，拼接到文件名称中。
 

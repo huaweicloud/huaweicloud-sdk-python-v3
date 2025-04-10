@@ -25,7 +25,7 @@ class DeleteHostGroupRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteHostGroupRequest
+        r"""DeleteHostGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteHostGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteHostGroupRequest.
+        r"""Gets the body of this DeleteHostGroupRequest.
 
         :return: The body of this DeleteHostGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`
@@ -52,7 +52,7 @@ class DeleteHostGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteHostGroupRequest.
+        r"""Sets the body of this DeleteHostGroupRequest.
 
         :param body: The body of this DeleteHostGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`

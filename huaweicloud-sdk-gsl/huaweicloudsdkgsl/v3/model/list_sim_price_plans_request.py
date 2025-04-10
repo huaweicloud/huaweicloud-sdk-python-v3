@@ -33,7 +33,7 @@ class ListSimPricePlansRequest:
     }
 
     def __init__(self, sim_card_id=None, iccid=None, real_time=None, limit=None, offset=None):
-        """ListSimPricePlansRequest
+        r"""ListSimPricePlansRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListSimPricePlansRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this ListSimPricePlansRequest.
+        r"""Gets the sim_card_id of this ListSimPricePlansRequest.
 
         SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -81,7 +81,7 @@ class ListSimPricePlansRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this ListSimPricePlansRequest.
+        r"""Sets the sim_card_id of this ListSimPricePlansRequest.
 
         SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -92,7 +92,7 @@ class ListSimPricePlansRequest:
 
     @property
     def iccid(self):
-        """Gets the iccid of this ListSimPricePlansRequest.
+        r"""Gets the iccid of this ListSimPricePlansRequest.
 
         iccid，传入的SIM卡标识（sim_card_id）为0,则根据iccid进行处理
 
@@ -103,7 +103,7 @@ class ListSimPricePlansRequest:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this ListSimPricePlansRequest.
+        r"""Sets the iccid of this ListSimPricePlansRequest.
 
         iccid，传入的SIM卡标识（sim_card_id）为0,则根据iccid进行处理
 
@@ -114,7 +114,7 @@ class ListSimPricePlansRequest:
 
     @property
     def real_time(self):
-        """Gets the real_time of this ListSimPricePlansRequest.
+        r"""Gets the real_time of this ListSimPricePlansRequest.
 
         是否查实时流量
 
@@ -125,7 +125,7 @@ class ListSimPricePlansRequest:
 
     @real_time.setter
     def real_time(self, real_time):
-        """Sets the real_time of this ListSimPricePlansRequest.
+        r"""Sets the real_time of this ListSimPricePlansRequest.
 
         是否查实时流量
 
@@ -136,7 +136,7 @@ class ListSimPricePlansRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimPricePlansRequest.
+        r"""Gets the limit of this ListSimPricePlansRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -147,7 +147,7 @@ class ListSimPricePlansRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimPricePlansRequest.
+        r"""Sets the limit of this ListSimPricePlansRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -158,7 +158,7 @@ class ListSimPricePlansRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimPricePlansRequest.
+        r"""Gets the offset of this ListSimPricePlansRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -169,7 +169,7 @@ class ListSimPricePlansRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimPricePlansRequest.
+        r"""Sets the offset of this ListSimPricePlansRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 

@@ -30,7 +30,7 @@ class ShowFlinkJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_detail=None):
-        """ShowFlinkJobResponse
+        r"""ShowFlinkJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFlinkJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowFlinkJobResponse.
+        r"""Gets the is_success of this ShowFlinkJobResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ShowFlinkJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowFlinkJobResponse.
+        r"""Sets the is_success of this ShowFlinkJobResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ShowFlinkJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowFlinkJobResponse.
+        r"""Gets the message of this ShowFlinkJobResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class ShowFlinkJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowFlinkJobResponse.
+        r"""Sets the message of this ShowFlinkJobResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class ShowFlinkJobResponse(SdkResponse):
 
     @property
     def job_detail(self):
-        """Gets the job_detail of this ShowFlinkJobResponse.
+        r"""Gets the job_detail of this ShowFlinkJobResponse.
 
         :return: The job_detail of this ShowFlinkJobResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkJob`
@@ -111,7 +111,7 @@ class ShowFlinkJobResponse(SdkResponse):
 
     @job_detail.setter
     def job_detail(self, job_detail):
-        """Sets the job_detail of this ShowFlinkJobResponse.
+        r"""Sets the job_detail of this ShowFlinkJobResponse.
 
         :param job_detail: The job_detail of this ShowFlinkJobResponse.
         :type job_detail: :class:`huaweicloudsdkdli.v1.FlinkJob`

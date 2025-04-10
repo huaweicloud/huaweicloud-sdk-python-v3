@@ -26,7 +26,7 @@ class DeleteRoutingBacklogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteRoutingBacklogPolicyResponse
+        r"""DeleteRoutingBacklogPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteRoutingBacklogPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteRoutingBacklogPolicyResponse.
+        r"""Gets the body of this DeleteRoutingBacklogPolicyResponse.
 
         :return: The body of this DeleteRoutingBacklogPolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteRoutingBacklogPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRoutingBacklogPolicyResponse.
+        r"""Sets the body of this DeleteRoutingBacklogPolicyResponse.
 
         :param body: The body of this DeleteRoutingBacklogPolicyResponse.
         :type body: str

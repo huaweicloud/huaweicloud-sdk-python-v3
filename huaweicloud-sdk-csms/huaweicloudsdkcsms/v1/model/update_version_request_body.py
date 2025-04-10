@@ -25,7 +25,7 @@ class UpdateVersionRequestBody:
     }
 
     def __init__(self, expire_time=None):
-        """UpdateVersionRequestBody
+        r"""UpdateVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVersionRequestBody:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UpdateVersionRequestBody.
+        r"""Gets the expire_time of this UpdateVersionRequestBody.
 
         凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。
 
@@ -53,7 +53,7 @@ class UpdateVersionRequestBody:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UpdateVersionRequestBody.
+        r"""Sets the expire_time of this UpdateVersionRequestBody.
 
         凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。
 

@@ -25,7 +25,7 @@ class ShowTableSchemaRequest:
     }
 
     def __init__(self, table_id=None):
-        """ShowTableSchemaRequest
+        r"""ShowTableSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTableSchemaRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this ShowTableSchemaRequest.
+        r"""Gets the table_id of this ShowTableSchemaRequest.
 
         表ID。
 
@@ -53,7 +53,7 @@ class ShowTableSchemaRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this ShowTableSchemaRequest.
+        r"""Sets the table_id of this ShowTableSchemaRequest.
 
         表ID。
 

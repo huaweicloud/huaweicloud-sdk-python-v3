@@ -26,7 +26,7 @@ class CreateDesignAggregationLogicTableResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateDesignAggregationLogicTableResponse
+        r"""CreateDesignAggregationLogicTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesignAggregationLogicTableResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateDesignAggregationLogicTableResponse.
+        r"""Gets the data of this CreateDesignAggregationLogicTableResponse.
 
         :return: The data of this CreateDesignAggregationLogicTableResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVODetailData`
@@ -53,7 +53,7 @@ class CreateDesignAggregationLogicTableResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateDesignAggregationLogicTableResponse.
+        r"""Sets the data of this CreateDesignAggregationLogicTableResponse.
 
         :param data: The data of this CreateDesignAggregationLogicTableResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVODetailData`

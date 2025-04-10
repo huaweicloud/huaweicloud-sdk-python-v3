@@ -32,7 +32,7 @@ class ListSmsDetailsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, sms_details=None):
-        """ListSmsDetailsResponse
+        r"""ListSmsDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListSmsDetailsResponse.
+        r"""Gets the limit of this ListSmsDetailsResponse.
 
         每页的记录数
 
@@ -76,7 +76,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSmsDetailsResponse.
+        r"""Sets the limit of this ListSmsDetailsResponse.
 
         每页的记录数
 
@@ -87,7 +87,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListSmsDetailsResponse.
+        r"""Gets the offset of this ListSmsDetailsResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -98,7 +98,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSmsDetailsResponse.
+        r"""Sets the offset of this ListSmsDetailsResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -109,7 +109,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSmsDetailsResponse.
+        r"""Gets the count of this ListSmsDetailsResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSmsDetailsResponse.
+        r"""Sets the count of this ListSmsDetailsResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @property
     def sms_details(self):
-        """Gets the sms_details of this ListSmsDetailsResponse.
+        r"""Gets the sms_details of this ListSmsDetailsResponse.
 
         短信发送详情列表
 
@@ -142,7 +142,7 @@ class ListSmsDetailsResponse(SdkResponse):
 
     @sms_details.setter
     def sms_details(self, sms_details):
-        """Sets the sms_details of this ListSmsDetailsResponse.
+        r"""Sets the sms_details of this ListSmsDetailsResponse.
 
         短信发送详情列表
 

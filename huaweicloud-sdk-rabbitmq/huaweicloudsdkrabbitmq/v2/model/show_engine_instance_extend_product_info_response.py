@@ -30,7 +30,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     }
 
     def __init__(self, engine=None, versions=None, products=None):
-        """ShowEngineInstanceExtendProductInfoResponse
+        r"""ShowEngineInstanceExtendProductInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
     @property
     def engine(self):
-        """Gets the engine of this ShowEngineInstanceExtendProductInfoResponse.
+        r"""Gets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
         消息引擎类型。
 
@@ -69,7 +69,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowEngineInstanceExtendProductInfoResponse.
+        r"""Sets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
         消息引擎类型。
 
@@ -80,7 +80,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ShowEngineInstanceExtendProductInfoResponse.
+        r"""Gets the versions of this ShowEngineInstanceExtendProductInfoResponse.
 
         消息引擎支持的版本
 
@@ -91,7 +91,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ShowEngineInstanceExtendProductInfoResponse.
+        r"""Sets the versions of this ShowEngineInstanceExtendProductInfoResponse.
 
         消息引擎支持的版本
 
@@ -102,7 +102,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ShowEngineInstanceExtendProductInfoResponse.
+        r"""Gets the products of this ShowEngineInstanceExtendProductInfoResponse.
 
         规格变更的产品信息。
 
@@ -113,7 +113,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ShowEngineInstanceExtendProductInfoResponse.
+        r"""Sets the products of this ShowEngineInstanceExtendProductInfoResponse.
 
         规格变更的产品信息。
 

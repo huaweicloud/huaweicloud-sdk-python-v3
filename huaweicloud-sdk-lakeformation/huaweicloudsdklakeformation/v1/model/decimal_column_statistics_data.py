@@ -33,7 +33,7 @@ class DecimalColumnStatisticsData:
     }
 
     def __init__(self, minimum_value=None, maximum_value=None, number_of_null=None, number_of_distinct_value=None, bit_vector=None):
-        """DecimalColumnStatisticsData
+        r"""DecimalColumnStatisticsData
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class DecimalColumnStatisticsData:
 
     @property
     def minimum_value(self):
-        """Gets the minimum_value of this DecimalColumnStatisticsData.
+        r"""Gets the minimum_value of this DecimalColumnStatisticsData.
 
         :return: The minimum_value of this DecimalColumnStatisticsData.
         :rtype: :class:`huaweicloudsdklakeformation.v1.Decimal`
@@ -76,7 +76,7 @@ class DecimalColumnStatisticsData:
 
     @minimum_value.setter
     def minimum_value(self, minimum_value):
-        """Sets the minimum_value of this DecimalColumnStatisticsData.
+        r"""Sets the minimum_value of this DecimalColumnStatisticsData.
 
         :param minimum_value: The minimum_value of this DecimalColumnStatisticsData.
         :type minimum_value: :class:`huaweicloudsdklakeformation.v1.Decimal`
@@ -85,7 +85,7 @@ class DecimalColumnStatisticsData:
 
     @property
     def maximum_value(self):
-        """Gets the maximum_value of this DecimalColumnStatisticsData.
+        r"""Gets the maximum_value of this DecimalColumnStatisticsData.
 
         :return: The maximum_value of this DecimalColumnStatisticsData.
         :rtype: :class:`huaweicloudsdklakeformation.v1.Decimal`
@@ -94,7 +94,7 @@ class DecimalColumnStatisticsData:
 
     @maximum_value.setter
     def maximum_value(self, maximum_value):
-        """Sets the maximum_value of this DecimalColumnStatisticsData.
+        r"""Sets the maximum_value of this DecimalColumnStatisticsData.
 
         :param maximum_value: The maximum_value of this DecimalColumnStatisticsData.
         :type maximum_value: :class:`huaweicloudsdklakeformation.v1.Decimal`
@@ -103,7 +103,7 @@ class DecimalColumnStatisticsData:
 
     @property
     def number_of_null(self):
-        """Gets the number_of_null of this DecimalColumnStatisticsData.
+        r"""Gets the number_of_null of this DecimalColumnStatisticsData.
 
         列中空值个数
 
@@ -114,7 +114,7 @@ class DecimalColumnStatisticsData:
 
     @number_of_null.setter
     def number_of_null(self, number_of_null):
-        """Sets the number_of_null of this DecimalColumnStatisticsData.
+        r"""Sets the number_of_null of this DecimalColumnStatisticsData.
 
         列中空值个数
 
@@ -125,7 +125,7 @@ class DecimalColumnStatisticsData:
 
     @property
     def number_of_distinct_value(self):
-        """Gets the number_of_distinct_value of this DecimalColumnStatisticsData.
+        r"""Gets the number_of_distinct_value of this DecimalColumnStatisticsData.
 
         列中去重后的小数个数
 
@@ -136,7 +136,7 @@ class DecimalColumnStatisticsData:
 
     @number_of_distinct_value.setter
     def number_of_distinct_value(self, number_of_distinct_value):
-        """Sets the number_of_distinct_value of this DecimalColumnStatisticsData.
+        r"""Sets the number_of_distinct_value of this DecimalColumnStatisticsData.
 
         列中去重后的小数个数
 
@@ -147,7 +147,7 @@ class DecimalColumnStatisticsData:
 
     @property
     def bit_vector(self):
-        """Gets the bit_vector of this DecimalColumnStatisticsData.
+        r"""Gets the bit_vector of this DecimalColumnStatisticsData.
 
         估算唯一值使用的位图
 
@@ -158,7 +158,7 @@ class DecimalColumnStatisticsData:
 
     @bit_vector.setter
     def bit_vector(self, bit_vector):
-        """Sets the bit_vector of this DecimalColumnStatisticsData.
+        r"""Sets the bit_vector of this DecimalColumnStatisticsData.
 
         估算唯一值使用的位图
 

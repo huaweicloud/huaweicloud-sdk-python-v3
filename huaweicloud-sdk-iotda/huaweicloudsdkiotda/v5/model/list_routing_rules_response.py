@@ -30,7 +30,7 @@ class ListRoutingRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, count=None, marker=None):
-        """ListRoutingRulesResponse
+        r"""ListRoutingRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRoutingRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListRoutingRulesResponse.
+        r"""Gets the rules of this ListRoutingRulesResponse.
 
         规则条件信息列表。
 
@@ -69,7 +69,7 @@ class ListRoutingRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListRoutingRulesResponse.
+        r"""Sets the rules of this ListRoutingRulesResponse.
 
         规则条件信息列表。
 
@@ -80,7 +80,7 @@ class ListRoutingRulesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRoutingRulesResponse.
+        r"""Gets the count of this ListRoutingRulesResponse.
 
         满足查询条件的记录总数。
 
@@ -91,7 +91,7 @@ class ListRoutingRulesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRoutingRulesResponse.
+        r"""Sets the count of this ListRoutingRulesResponse.
 
         满足查询条件的记录总数。
 
@@ -102,7 +102,7 @@ class ListRoutingRulesResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListRoutingRulesResponse.
+        r"""Gets the marker of this ListRoutingRulesResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -113,7 +113,7 @@ class ListRoutingRulesResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRoutingRulesResponse.
+        r"""Sets the marker of this ListRoutingRulesResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 

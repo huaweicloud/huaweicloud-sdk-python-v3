@@ -28,7 +28,7 @@ class ShowDeploymentPodsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, pods=None):
-        """ShowDeploymentPodsResponse
+        r"""ShowDeploymentPodsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDeploymentPodsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDeploymentPodsResponse.
+        r"""Gets the count of this ShowDeploymentPodsResponse.
 
         pod总个数
 
@@ -62,7 +62,7 @@ class ShowDeploymentPodsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDeploymentPodsResponse.
+        r"""Sets the count of this ShowDeploymentPodsResponse.
 
         pod总个数
 
@@ -73,7 +73,7 @@ class ShowDeploymentPodsResponse(SdkResponse):
 
     @property
     def pods(self):
-        """Gets the pods of this ShowDeploymentPodsResponse.
+        r"""Gets the pods of this ShowDeploymentPodsResponse.
 
         pod 列表
 
@@ -84,7 +84,7 @@ class ShowDeploymentPodsResponse(SdkResponse):
 
     @pods.setter
     def pods(self, pods):
-        """Sets the pods of this ShowDeploymentPodsResponse.
+        r"""Sets the pods of this ShowDeploymentPodsResponse.
 
         pod 列表
 

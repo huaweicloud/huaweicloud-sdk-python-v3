@@ -25,7 +25,7 @@ class Asn:
     }
 
     def __init__(self, asn=None):
-        """Asn
+        r"""Asn
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Asn:
 
     @property
     def asn(self):
-        """Gets the asn of this Asn.
+        r"""Gets the asn of this Asn.
 
         网络实例BGP协议的AS号。
 
@@ -53,7 +53,7 @@ class Asn:
 
     @asn.setter
     def asn(self, asn):
-        """Sets the asn of this Asn.
+        r"""Sets the asn of this Asn.
 
         网络实例BGP协议的AS号。
 

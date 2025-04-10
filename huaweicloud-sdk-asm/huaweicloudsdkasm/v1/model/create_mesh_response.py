@@ -34,7 +34,7 @@ class CreateMeshResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """CreateMeshResponse
+        r"""CreateMeshResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateMeshResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateMeshResponse.
+        r"""Gets the api_version of this CreateMeshResponse.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -83,7 +83,7 @@ class CreateMeshResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateMeshResponse.
+        r"""Sets the api_version of this CreateMeshResponse.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -94,7 +94,7 @@ class CreateMeshResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateMeshResponse.
+        r"""Gets the kind of this CreateMeshResponse.
 
         API类型，固定值“Mesh”或“mesh”，该值不可修改
 
@@ -105,7 +105,7 @@ class CreateMeshResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateMeshResponse.
+        r"""Sets the kind of this CreateMeshResponse.
 
         API类型，固定值“Mesh”或“mesh”，该值不可修改
 
@@ -116,7 +116,7 @@ class CreateMeshResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateMeshResponse.
+        r"""Gets the metadata of this CreateMeshResponse.
 
         :return: The metadata of this CreateMeshResponse.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -125,7 +125,7 @@ class CreateMeshResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateMeshResponse.
+        r"""Sets the metadata of this CreateMeshResponse.
 
         :param metadata: The metadata of this CreateMeshResponse.
         :type metadata: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -134,7 +134,7 @@ class CreateMeshResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateMeshResponse.
+        r"""Gets the spec of this CreateMeshResponse.
 
         :return: The spec of this CreateMeshResponse.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshSpec`
@@ -143,7 +143,7 @@ class CreateMeshResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateMeshResponse.
+        r"""Sets the spec of this CreateMeshResponse.
 
         :param spec: The spec of this CreateMeshResponse.
         :type spec: :class:`huaweicloudsdkasm.v1.MeshSpec`
@@ -152,7 +152,7 @@ class CreateMeshResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateMeshResponse.
+        r"""Gets the status of this CreateMeshResponse.
 
         :return: The status of this CreateMeshResponse.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshStatus`
@@ -161,7 +161,7 @@ class CreateMeshResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateMeshResponse.
+        r"""Sets the status of this CreateMeshResponse.
 
         :param status: The status of this CreateMeshResponse.
         :type status: :class:`huaweicloudsdkasm.v1.MeshStatus`

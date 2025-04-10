@@ -28,7 +28,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interfaces=None):
-        """BatchCreateSubNetworkInterfaceResponse
+        r"""BatchCreateSubNetworkInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCreateSubNetworkInterfaceResponse.
+        r"""Gets the request_id of this BatchCreateSubNetworkInterfaceResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCreateSubNetworkInterfaceResponse.
+        r"""Sets the request_id of this BatchCreateSubNetworkInterfaceResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
 
     @property
     def sub_network_interfaces(self):
-        """Gets the sub_network_interfaces of this BatchCreateSubNetworkInterfaceResponse.
+        r"""Gets the sub_network_interfaces of this BatchCreateSubNetworkInterfaceResponse.
 
         批量创建辅助弹性网卡的响应体
 
@@ -84,7 +84,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
 
     @sub_network_interfaces.setter
     def sub_network_interfaces(self, sub_network_interfaces):
-        """Sets the sub_network_interfaces of this BatchCreateSubNetworkInterfaceResponse.
+        r"""Sets the sub_network_interfaces of this BatchCreateSubNetworkInterfaceResponse.
 
         批量创建辅助弹性网卡的响应体
 

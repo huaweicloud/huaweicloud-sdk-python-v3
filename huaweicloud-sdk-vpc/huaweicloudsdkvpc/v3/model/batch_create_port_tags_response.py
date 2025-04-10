@@ -24,7 +24,7 @@ class BatchCreatePortTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreatePortTagsResponse
+        r"""BatchCreatePortTagsResponse
 
         The model defined in huaweicloud sdk
 

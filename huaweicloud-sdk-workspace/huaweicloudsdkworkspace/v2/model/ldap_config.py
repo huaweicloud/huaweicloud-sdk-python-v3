@@ -45,7 +45,7 @@ class LdapConfig:
     }
 
     def __init__(self, host=None, port=None, base_dn=None, administrator_dn=None, administrator_password=None, user_dn=None, use_ssl=None, cert_content=None, username_attribute=None, object_class=None, security_type=None):
-        """LdapConfig
+        r"""LdapConfig
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class LdapConfig:
 
     @property
     def host(self):
-        """Gets the host of this LdapConfig.
+        r"""Gets the host of this LdapConfig.
 
         host
 
@@ -124,7 +124,7 @@ class LdapConfig:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this LdapConfig.
+        r"""Sets the host of this LdapConfig.
 
         host
 
@@ -135,7 +135,7 @@ class LdapConfig:
 
     @property
     def port(self):
-        """Gets the port of this LdapConfig.
+        r"""Gets the port of this LdapConfig.
 
         端口,取值范围1-65535,默认389
 
@@ -146,7 +146,7 @@ class LdapConfig:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this LdapConfig.
+        r"""Sets the port of this LdapConfig.
 
         端口,取值范围1-65535,默认389
 
@@ -157,7 +157,7 @@ class LdapConfig:
 
     @property
     def base_dn(self):
-        """Gets the base_dn of this LdapConfig.
+        r"""Gets the base_dn of this LdapConfig.
 
         base_dn
 
@@ -168,7 +168,7 @@ class LdapConfig:
 
     @base_dn.setter
     def base_dn(self, base_dn):
-        """Sets the base_dn of this LdapConfig.
+        r"""Sets the base_dn of this LdapConfig.
 
         base_dn
 
@@ -179,7 +179,7 @@ class LdapConfig:
 
     @property
     def administrator_dn(self):
-        """Gets the administrator_dn of this LdapConfig.
+        r"""Gets the administrator_dn of this LdapConfig.
 
         管理员dn
 
@@ -190,7 +190,7 @@ class LdapConfig:
 
     @administrator_dn.setter
     def administrator_dn(self, administrator_dn):
-        """Sets the administrator_dn of this LdapConfig.
+        r"""Sets the administrator_dn of this LdapConfig.
 
         管理员dn
 
@@ -201,7 +201,7 @@ class LdapConfig:
 
     @property
     def administrator_password(self):
-        """Gets the administrator_password of this LdapConfig.
+        r"""Gets the administrator_password of this LdapConfig.
 
         管理员密码
 
@@ -212,7 +212,7 @@ class LdapConfig:
 
     @administrator_password.setter
     def administrator_password(self, administrator_password):
-        """Sets the administrator_password of this LdapConfig.
+        r"""Sets the administrator_password of this LdapConfig.
 
         管理员密码
 
@@ -223,7 +223,7 @@ class LdapConfig:
 
     @property
     def user_dn(self):
-        """Gets the user_dn of this LdapConfig.
+        r"""Gets the user_dn of this LdapConfig.
 
         用户dn
 
@@ -234,7 +234,7 @@ class LdapConfig:
 
     @user_dn.setter
     def user_dn(self, user_dn):
-        """Sets the user_dn of this LdapConfig.
+        r"""Sets the user_dn of this LdapConfig.
 
         用户dn
 
@@ -245,7 +245,7 @@ class LdapConfig:
 
     @property
     def use_ssl(self):
-        """Gets the use_ssl of this LdapConfig.
+        r"""Gets the use_ssl of this LdapConfig.
 
         是否启用ssl
 
@@ -256,7 +256,7 @@ class LdapConfig:
 
     @use_ssl.setter
     def use_ssl(self, use_ssl):
-        """Sets the use_ssl of this LdapConfig.
+        r"""Sets the use_ssl of this LdapConfig.
 
         是否启用ssl
 
@@ -267,7 +267,7 @@ class LdapConfig:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this LdapConfig.
+        r"""Gets the cert_content of this LdapConfig.
 
         证书
 
@@ -278,7 +278,7 @@ class LdapConfig:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this LdapConfig.
+        r"""Sets the cert_content of this LdapConfig.
 
         证书
 
@@ -289,7 +289,7 @@ class LdapConfig:
 
     @property
     def username_attribute(self):
-        """Gets the username_attribute of this LdapConfig.
+        r"""Gets the username_attribute of this LdapConfig.
 
         用户名属性
 
@@ -300,7 +300,7 @@ class LdapConfig:
 
     @username_attribute.setter
     def username_attribute(self, username_attribute):
-        """Sets the username_attribute of this LdapConfig.
+        r"""Sets the username_attribute of this LdapConfig.
 
         用户名属性
 
@@ -311,7 +311,7 @@ class LdapConfig:
 
     @property
     def object_class(self):
-        """Gets the object_class of this LdapConfig.
+        r"""Gets the object_class of this LdapConfig.
 
         用户ObjectClass
 
@@ -322,7 +322,7 @@ class LdapConfig:
 
     @object_class.setter
     def object_class(self, object_class):
-        """Sets the object_class of this LdapConfig.
+        r"""Sets the object_class of this LdapConfig.
 
         用户ObjectClass
 
@@ -333,7 +333,7 @@ class LdapConfig:
 
     @property
     def security_type(self):
-        """Gets the security_type of this LdapConfig.
+        r"""Gets the security_type of this LdapConfig.
 
         安全类型
 
@@ -344,7 +344,7 @@ class LdapConfig:
 
     @security_type.setter
     def security_type(self, security_type):
-        """Sets the security_type of this LdapConfig.
+        r"""Sets the security_type of this LdapConfig.
 
         安全类型
 

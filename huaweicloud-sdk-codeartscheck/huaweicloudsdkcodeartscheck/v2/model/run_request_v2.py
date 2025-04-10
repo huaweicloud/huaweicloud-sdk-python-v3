@@ -31,7 +31,7 @@ class RunRequestV2:
     }
 
     def __init__(self, username=None, access_token=None, git_url=None, git_branch=None):
-        """RunRequestV2
+        r"""RunRequestV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RunRequestV2:
 
     @property
     def username(self):
-        """Gets the username of this RunRequestV2.
+        r"""Gets the username of this RunRequestV2.
 
         该任务对应临时仓库有权限的用户名
 
@@ -75,7 +75,7 @@ class RunRequestV2:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this RunRequestV2.
+        r"""Sets the username of this RunRequestV2.
 
         该任务对应临时仓库有权限的用户名
 
@@ -86,7 +86,7 @@ class RunRequestV2:
 
     @property
     def access_token(self):
-        """Gets the access_token of this RunRequestV2.
+        r"""Gets the access_token of this RunRequestV2.
 
         该任务对应临时仓库有权限的用户token
 
@@ -97,7 +97,7 @@ class RunRequestV2:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this RunRequestV2.
+        r"""Sets the access_token of this RunRequestV2.
 
         该任务对应临时仓库有权限的用户token
 
@@ -108,7 +108,7 @@ class RunRequestV2:
 
     @property
     def git_url(self):
-        """Gets the git_url of this RunRequestV2.
+        r"""Gets the git_url of this RunRequestV2.
 
         该任务对应的临时仓库地址
 
@@ -119,7 +119,7 @@ class RunRequestV2:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this RunRequestV2.
+        r"""Sets the git_url of this RunRequestV2.
 
         该任务对应的临时仓库地址
 
@@ -130,7 +130,7 @@ class RunRequestV2:
 
     @property
     def git_branch(self):
-        """Gets the git_branch of this RunRequestV2.
+        r"""Gets the git_branch of this RunRequestV2.
 
         该任务对应的临时仓库分支
 
@@ -141,7 +141,7 @@ class RunRequestV2:
 
     @git_branch.setter
     def git_branch(self, git_branch):
-        """Sets the git_branch of this RunRequestV2.
+        r"""Sets the git_branch of this RunRequestV2.
 
         该任务对应的临时仓库分支
 

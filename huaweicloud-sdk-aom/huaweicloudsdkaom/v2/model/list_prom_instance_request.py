@@ -33,7 +33,7 @@ class ListPromInstanceRequest:
     }
 
     def __init__(self, prom_id=None, prom_type=None, cce_cluster_enable=None, prom_status=None, enterprise_project_id=None):
-        """ListPromInstanceRequest
+        r"""ListPromInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListPromInstanceRequest:
 
     @property
     def prom_id(self):
-        """Gets the prom_id of this ListPromInstanceRequest.
+        r"""Gets the prom_id of this ListPromInstanceRequest.
 
         Prometheus实例id(prom_id与prom_type同时存在时，仅prom_id生效)。
 
@@ -81,7 +81,7 @@ class ListPromInstanceRequest:
 
     @prom_id.setter
     def prom_id(self, prom_id):
-        """Sets the prom_id of this ListPromInstanceRequest.
+        r"""Sets the prom_id of this ListPromInstanceRequest.
 
         Prometheus实例id(prom_id与prom_type同时存在时，仅prom_id生效)。
 
@@ -92,7 +92,7 @@ class ListPromInstanceRequest:
 
     @property
     def prom_type(self):
-        """Gets the prom_type of this ListPromInstanceRequest.
+        r"""Gets the prom_type of this ListPromInstanceRequest.
 
         Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
@@ -103,7 +103,7 @@ class ListPromInstanceRequest:
 
     @prom_type.setter
     def prom_type(self, prom_type):
-        """Sets the prom_type of this ListPromInstanceRequest.
+        r"""Sets the prom_type of this ListPromInstanceRequest.
 
         Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
@@ -114,7 +114,7 @@ class ListPromInstanceRequest:
 
     @property
     def cce_cluster_enable(self):
-        """Gets the cce_cluster_enable of this ListPromInstanceRequest.
+        r"""Gets the cce_cluster_enable of this ListPromInstanceRequest.
 
         cce集群开关。
 
@@ -125,7 +125,7 @@ class ListPromInstanceRequest:
 
     @cce_cluster_enable.setter
     def cce_cluster_enable(self, cce_cluster_enable):
-        """Sets the cce_cluster_enable of this ListPromInstanceRequest.
+        r"""Sets the cce_cluster_enable of this ListPromInstanceRequest.
 
         cce集群开关。
 
@@ -136,7 +136,7 @@ class ListPromInstanceRequest:
 
     @property
     def prom_status(self):
-        """Gets the prom_status of this ListPromInstanceRequest.
+        r"""Gets the prom_status of this ListPromInstanceRequest.
 
         Prometheus实例状态。
 
@@ -147,7 +147,7 @@ class ListPromInstanceRequest:
 
     @prom_status.setter
     def prom_status(self, prom_status):
-        """Sets the prom_status of this ListPromInstanceRequest.
+        r"""Sets the prom_status of this ListPromInstanceRequest.
 
         Prometheus实例状态。
 
@@ -158,7 +158,7 @@ class ListPromInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPromInstanceRequest.
+        r"""Gets the enterprise_project_id of this ListPromInstanceRequest.
 
         企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
 
@@ -169,7 +169,7 @@ class ListPromInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPromInstanceRequest.
+        r"""Sets the enterprise_project_id of this ListPromInstanceRequest.
 
         企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
 

@@ -26,7 +26,7 @@ class CreateMqsInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self, name=None):
-        """CreateMqsInstanceTopicResponse
+        r"""CreateMqsInstanceTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateMqsInstanceTopicResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateMqsInstanceTopicResponse.
+        r"""Gets the name of this CreateMqsInstanceTopicResponse.
 
         topic名称。
 
@@ -55,7 +55,7 @@ class CreateMqsInstanceTopicResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMqsInstanceTopicResponse.
+        r"""Sets the name of this CreateMqsInstanceTopicResponse.
 
         topic名称。
 

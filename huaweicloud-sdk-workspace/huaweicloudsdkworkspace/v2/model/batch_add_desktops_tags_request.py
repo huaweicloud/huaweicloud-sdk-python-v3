@@ -25,7 +25,7 @@ class BatchAddDesktopsTagsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchAddDesktopsTagsRequest
+        r"""BatchAddDesktopsTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAddDesktopsTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddDesktopsTagsRequest.
+        r"""Gets the body of this BatchAddDesktopsTagsRequest.
 
         :return: The body of this BatchAddDesktopsTagsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchAddDesktopsTagsReq`
@@ -52,7 +52,7 @@ class BatchAddDesktopsTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddDesktopsTagsRequest.
+        r"""Sets the body of this BatchAddDesktopsTagsRequest.
 
         :param body: The body of this BatchAddDesktopsTagsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchAddDesktopsTagsReq`

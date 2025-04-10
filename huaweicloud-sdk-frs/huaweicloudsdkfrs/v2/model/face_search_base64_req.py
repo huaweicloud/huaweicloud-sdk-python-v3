@@ -35,7 +35,7 @@ class FaceSearchBase64Req:
     }
 
     def __init__(self, filter=None, top_n=None, image_base64=None, return_fields=None, threshold=None, sort=None):
-        """FaceSearchBase64Req
+        r"""FaceSearchBase64Req
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class FaceSearchBase64Req:
 
     @property
     def filter(self):
-        """Gets the filter of this FaceSearchBase64Req.
+        r"""Gets the filter of this FaceSearchBase64Req.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -88,7 +88,7 @@ class FaceSearchBase64Req:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this FaceSearchBase64Req.
+        r"""Sets the filter of this FaceSearchBase64Req.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -99,7 +99,7 @@ class FaceSearchBase64Req:
 
     @property
     def top_n(self):
-        """Gets the top_n of this FaceSearchBase64Req.
+        r"""Gets the top_n of this FaceSearchBase64Req.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -110,7 +110,7 @@ class FaceSearchBase64Req:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this FaceSearchBase64Req.
+        r"""Sets the top_n of this FaceSearchBase64Req.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -121,7 +121,7 @@ class FaceSearchBase64Req:
 
     @property
     def image_base64(self):
-        """Gets the image_base64 of this FaceSearchBase64Req.
+        r"""Gets the image_base64 of this FaceSearchBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -132,7 +132,7 @@ class FaceSearchBase64Req:
 
     @image_base64.setter
     def image_base64(self, image_base64):
-        """Sets the image_base64 of this FaceSearchBase64Req.
+        r"""Sets the image_base64 of this FaceSearchBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -143,7 +143,7 @@ class FaceSearchBase64Req:
 
     @property
     def return_fields(self):
-        """Gets the return_fields of this FaceSearchBase64Req.
+        r"""Gets the return_fields of this FaceSearchBase64Req.
 
         指定返回的自定义字段。
 
@@ -154,7 +154,7 @@ class FaceSearchBase64Req:
 
     @return_fields.setter
     def return_fields(self, return_fields):
-        """Sets the return_fields of this FaceSearchBase64Req.
+        r"""Sets the return_fields of this FaceSearchBase64Req.
 
         指定返回的自定义字段。
 
@@ -165,7 +165,7 @@ class FaceSearchBase64Req:
 
     @property
     def threshold(self):
-        """Gets the threshold of this FaceSearchBase64Req.
+        r"""Gets the threshold of this FaceSearchBase64Req.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -176,7 +176,7 @@ class FaceSearchBase64Req:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this FaceSearchBase64Req.
+        r"""Sets the threshold of this FaceSearchBase64Req.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -187,7 +187,7 @@ class FaceSearchBase64Req:
 
     @property
     def sort(self):
-        """Gets the sort of this FaceSearchBase64Req.
+        r"""Gets the sort of this FaceSearchBase64Req.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
@@ -198,7 +198,7 @@ class FaceSearchBase64Req:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this FaceSearchBase64Req.
+        r"""Sets the sort of this FaceSearchBase64Req.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 

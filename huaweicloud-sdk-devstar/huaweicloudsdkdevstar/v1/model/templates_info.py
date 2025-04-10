@@ -27,7 +27,7 @@ class TemplatesInfo:
     }
 
     def __init__(self, template_ids=None, platform_source=None):
-        """TemplatesInfo
+        r"""TemplatesInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TemplatesInfo:
 
     @property
     def template_ids(self):
-        """Gets the template_ids of this TemplatesInfo.
+        r"""Gets the template_ids of this TemplatesInfo.
 
         模板ID列表。
 
@@ -59,7 +59,7 @@ class TemplatesInfo:
 
     @template_ids.setter
     def template_ids(self, template_ids):
-        """Sets the template_ids of this TemplatesInfo.
+        r"""Sets the template_ids of this TemplatesInfo.
 
         模板ID列表。
 
@@ -70,7 +70,7 @@ class TemplatesInfo:
 
     @property
     def platform_source(self):
-        """Gets the platform_source of this TemplatesInfo.
+        r"""Gets the platform_source of this TemplatesInfo.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -81,7 +81,7 @@ class TemplatesInfo:
 
     @platform_source.setter
     def platform_source(self, platform_source):
-        """Sets the platform_source of this TemplatesInfo.
+        r"""Sets the platform_source of this TemplatesInfo.
 
         平台来源： - 0：codelabs - 1：devstar 
 

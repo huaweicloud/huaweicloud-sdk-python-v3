@@ -31,7 +31,7 @@ class ResourcePrice:
     }
 
     def __init__(self, arch=None, price=None, size=None, type=None):
-        """ResourcePrice
+        r"""ResourcePrice
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourcePrice:
 
     @property
     def arch(self):
-        """Gets the arch of this ResourcePrice.
+        r"""Gets the arch of this ResourcePrice.
 
         cpu架构 x86|arm
 
@@ -75,7 +75,7 @@ class ResourcePrice:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ResourcePrice.
+        r"""Sets the arch of this ResourcePrice.
 
         cpu架构 x86|arm
 
@@ -86,7 +86,7 @@ class ResourcePrice:
 
     @property
     def price(self):
-        """Gets the price of this ResourcePrice.
+        r"""Gets the price of this ResourcePrice.
 
         价格
 
@@ -97,7 +97,7 @@ class ResourcePrice:
 
     @price.setter
     def price(self, price):
-        """Sets the price of this ResourcePrice.
+        r"""Sets the price of this ResourcePrice.
 
         价格
 
@@ -108,7 +108,7 @@ class ResourcePrice:
 
     @property
     def size(self):
-        """Gets the size of this ResourcePrice.
+        r"""Gets the size of this ResourcePrice.
 
         规格。 类型为'storage'时，size值可以为5GB，10GB，20GB。 类型为'cpuMemory'时，arch为'x86'，size值可以为1U1G，2U4G，4U8G；arch为'arm'，size值可以为4U8G。
 
@@ -119,7 +119,7 @@ class ResourcePrice:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ResourcePrice.
+        r"""Sets the size of this ResourcePrice.
 
         规格。 类型为'storage'时，size值可以为5GB，10GB，20GB。 类型为'cpuMemory'时，arch为'x86'，size值可以为1U1G，2U4G，4U8G；arch为'arm'，size值可以为4U8G。
 
@@ -130,7 +130,7 @@ class ResourcePrice:
 
     @property
     def type(self):
-        """Gets the type of this ResourcePrice.
+        r"""Gets the type of this ResourcePrice.
 
         类型。目前可以取值storage，cpuMemory
 
@@ -141,7 +141,7 @@ class ResourcePrice:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourcePrice.
+        r"""Sets the type of this ResourcePrice.
 
         类型。目前可以取值storage，cpuMemory
 

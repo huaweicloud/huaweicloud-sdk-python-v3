@@ -23,7 +23,7 @@ class UnprotectHostNum:
     }
 
     def __init__(self):
-        """UnprotectHostNum
+        r"""UnprotectHostNum
 
         The model defined in huaweicloud sdk
 

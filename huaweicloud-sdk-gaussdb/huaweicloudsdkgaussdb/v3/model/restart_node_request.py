@@ -25,7 +25,7 @@ class RestartNodeRequest:
     }
 
     def __init__(self, delay=None):
-        """RestartNodeRequest
+        r"""RestartNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartNodeRequest:
 
     @property
     def delay(self):
-        """Gets the delay of this RestartNodeRequest.
+        r"""Gets the delay of this RestartNodeRequest.
 
         实例节点是否延迟重启。默认false，立即重启。  - true: 延迟重启，实例节点将在运维时间窗内自动重启。 - false: 立即重启。
 
@@ -54,7 +54,7 @@ class RestartNodeRequest:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this RestartNodeRequest.
+        r"""Sets the delay of this RestartNodeRequest.
 
         实例节点是否延迟重启。默认false，立即重启。  - true: 延迟重启，实例节点将在运维时间窗内自动重启。 - false: 立即重启。
 

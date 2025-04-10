@@ -23,7 +23,7 @@ class WorkSpaceName:
     }
 
     def __init__(self):
-        """WorkSpaceName
+        r"""WorkSpaceName
 
         The model defined in huaweicloud sdk
 

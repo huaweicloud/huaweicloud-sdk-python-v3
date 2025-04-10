@@ -25,7 +25,7 @@ class CreateHttpReferenceTableRequest:
     }
 
     def __init__(self, body=None):
-        """CreateHttpReferenceTableRequest
+        r"""CreateHttpReferenceTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateHttpReferenceTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpReferenceTableRequest.
+        r"""Gets the body of this CreateHttpReferenceTableRequest.
 
         :return: The body of this CreateHttpReferenceTableRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpReferenceTableRequestBody`
@@ -52,7 +52,7 @@ class CreateHttpReferenceTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpReferenceTableRequest.
+        r"""Sets the body of this CreateHttpReferenceTableRequest.
 
         :param body: The body of this CreateHttpReferenceTableRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpReferenceTableRequestBody`

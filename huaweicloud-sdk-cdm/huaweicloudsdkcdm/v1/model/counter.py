@@ -43,7 +43,7 @@ class Counter:
     }
 
     def __init__(self, bytes_written=None, total_files=None, rows_read=None, bytes_read=None, rows_written=None, files_written=None, files_read=None, total_size=None, files_skipped=None, rows_written_skipped=None):
-        """Counter
+        r"""Counter
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Counter:
 
     @property
     def bytes_written(self):
-        """Gets the bytes_written of this Counter.
+        r"""Gets the bytes_written of this Counter.
 
         写入的字节数
 
@@ -117,7 +117,7 @@ class Counter:
 
     @bytes_written.setter
     def bytes_written(self, bytes_written):
-        """Sets the bytes_written of this Counter.
+        r"""Sets the bytes_written of this Counter.
 
         写入的字节数
 
@@ -128,7 +128,7 @@ class Counter:
 
     @property
     def total_files(self):
-        """Gets the total_files of this Counter.
+        r"""Gets the total_files of this Counter.
 
         总文件数
 
@@ -139,7 +139,7 @@ class Counter:
 
     @total_files.setter
     def total_files(self, total_files):
-        """Sets the total_files of this Counter.
+        r"""Sets the total_files of this Counter.
 
         总文件数
 
@@ -150,7 +150,7 @@ class Counter:
 
     @property
     def rows_read(self):
-        """Gets the rows_read of this Counter.
+        r"""Gets the rows_read of this Counter.
 
         读取的行数
 
@@ -161,7 +161,7 @@ class Counter:
 
     @rows_read.setter
     def rows_read(self, rows_read):
-        """Sets the rows_read of this Counter.
+        r"""Sets the rows_read of this Counter.
 
         读取的行数
 
@@ -172,7 +172,7 @@ class Counter:
 
     @property
     def bytes_read(self):
-        """Gets the bytes_read of this Counter.
+        r"""Gets the bytes_read of this Counter.
 
         读取的字节数
 
@@ -183,7 +183,7 @@ class Counter:
 
     @bytes_read.setter
     def bytes_read(self, bytes_read):
-        """Sets the bytes_read of this Counter.
+        r"""Sets the bytes_read of this Counter.
 
         读取的字节数
 
@@ -194,7 +194,7 @@ class Counter:
 
     @property
     def rows_written(self):
-        """Gets the rows_written of this Counter.
+        r"""Gets the rows_written of this Counter.
 
         写入的行数
 
@@ -205,7 +205,7 @@ class Counter:
 
     @rows_written.setter
     def rows_written(self, rows_written):
-        """Sets the rows_written of this Counter.
+        r"""Sets the rows_written of this Counter.
 
         写入的行数
 
@@ -216,7 +216,7 @@ class Counter:
 
     @property
     def files_written(self):
-        """Gets the files_written of this Counter.
+        r"""Gets the files_written of this Counter.
 
         写入的文件数
 
@@ -227,7 +227,7 @@ class Counter:
 
     @files_written.setter
     def files_written(self, files_written):
-        """Sets the files_written of this Counter.
+        r"""Sets the files_written of this Counter.
 
         写入的文件数
 
@@ -238,7 +238,7 @@ class Counter:
 
     @property
     def files_read(self):
-        """Gets the files_read of this Counter.
+        r"""Gets the files_read of this Counter.
 
         读取的文件数
 
@@ -249,7 +249,7 @@ class Counter:
 
     @files_read.setter
     def files_read(self, files_read):
-        """Sets the files_read of this Counter.
+        r"""Sets the files_read of this Counter.
 
         读取的文件数
 
@@ -260,7 +260,7 @@ class Counter:
 
     @property
     def total_size(self):
-        """Gets the total_size of this Counter.
+        r"""Gets the total_size of this Counter.
 
         总字节数
 
@@ -271,7 +271,7 @@ class Counter:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this Counter.
+        r"""Sets the total_size of this Counter.
 
         总字节数
 
@@ -282,7 +282,7 @@ class Counter:
 
     @property
     def files_skipped(self):
-        """Gets the files_skipped of this Counter.
+        r"""Gets the files_skipped of this Counter.
 
         跳过的文件数
 
@@ -293,7 +293,7 @@ class Counter:
 
     @files_skipped.setter
     def files_skipped(self, files_skipped):
-        """Sets the files_skipped of this Counter.
+        r"""Sets the files_skipped of this Counter.
 
         跳过的文件数
 
@@ -304,7 +304,7 @@ class Counter:
 
     @property
     def rows_written_skipped(self):
-        """Gets the rows_written_skipped of this Counter.
+        r"""Gets the rows_written_skipped of this Counter.
 
         跳过的行数
 
@@ -315,7 +315,7 @@ class Counter:
 
     @rows_written_skipped.setter
     def rows_written_skipped(self, rows_written_skipped):
-        """Sets the rows_written_skipped of this Counter.
+        r"""Sets the rows_written_skipped of this Counter.
 
         跳过的行数
 

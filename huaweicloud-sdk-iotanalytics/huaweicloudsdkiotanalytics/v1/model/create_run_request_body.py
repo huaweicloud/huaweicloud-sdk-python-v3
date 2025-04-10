@@ -27,7 +27,7 @@ class CreateRunRequestBody:
     }
 
     def __init__(self, computing_resource_id=None, conf=None):
-        """CreateRunRequestBody
+        r"""CreateRunRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRunRequestBody:
 
     @property
     def computing_resource_id(self):
-        """Gets the computing_resource_id of this CreateRunRequestBody.
+        r"""Gets the computing_resource_id of this CreateRunRequestBody.
 
         计算资源ID。
 
@@ -60,7 +60,7 @@ class CreateRunRequestBody:
 
     @computing_resource_id.setter
     def computing_resource_id(self, computing_resource_id):
-        """Sets the computing_resource_id of this CreateRunRequestBody.
+        r"""Sets the computing_resource_id of this CreateRunRequestBody.
 
         计算资源ID。
 
@@ -71,7 +71,7 @@ class CreateRunRequestBody:
 
     @property
     def conf(self):
-        """Gets the conf of this CreateRunRequestBody.
+        r"""Gets the conf of this CreateRunRequestBody.
 
         作业配置项。
 
@@ -82,7 +82,7 @@ class CreateRunRequestBody:
 
     @conf.setter
     def conf(self, conf):
-        """Sets the conf of this CreateRunRequestBody.
+        r"""Sets the conf of this CreateRunRequestBody.
 
         作业配置项。
 

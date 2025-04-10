@@ -33,7 +33,7 @@ class FirewallPolicy:
     }
 
     def __init__(self, id=None, name=None, firewall_rules=None, insert_after=None, insert_before=None):
-        """FirewallPolicy
+        r"""FirewallPolicy
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class FirewallPolicy:
 
     @property
     def id(self):
-        """Gets the id of this FirewallPolicy.
+        r"""Gets the id of this FirewallPolicy.
 
         网络ACL策略ID。
 
@@ -80,7 +80,7 @@ class FirewallPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FirewallPolicy.
+        r"""Sets the id of this FirewallPolicy.
 
         网络ACL策略ID。
 
@@ -91,7 +91,7 @@ class FirewallPolicy:
 
     @property
     def name(self):
-        """Gets the name of this FirewallPolicy.
+        r"""Gets the name of this FirewallPolicy.
 
         网络ACL策略名称。
 
@@ -102,7 +102,7 @@ class FirewallPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FirewallPolicy.
+        r"""Sets the name of this FirewallPolicy.
 
         网络ACL策略名称。
 
@@ -113,7 +113,7 @@ class FirewallPolicy:
 
     @property
     def firewall_rules(self):
-        """Gets the firewall_rules of this FirewallPolicy.
+        r"""Gets the firewall_rules of this FirewallPolicy.
 
         网络ACL规则列表对象。
 
@@ -124,7 +124,7 @@ class FirewallPolicy:
 
     @firewall_rules.setter
     def firewall_rules(self, firewall_rules):
-        """Sets the firewall_rules of this FirewallPolicy.
+        r"""Sets the firewall_rules of this FirewallPolicy.
 
         网络ACL规则列表对象。
 
@@ -135,7 +135,7 @@ class FirewallPolicy:
 
     @property
     def insert_after(self):
-        """Gets the insert_after of this FirewallPolicy.
+        r"""Gets the insert_after of this FirewallPolicy.
 
         ACL规则ID，表示在此ACL规则之后添加ACL规则
 
@@ -146,7 +146,7 @@ class FirewallPolicy:
 
     @insert_after.setter
     def insert_after(self, insert_after):
-        """Sets the insert_after of this FirewallPolicy.
+        r"""Sets the insert_after of this FirewallPolicy.
 
         ACL规则ID，表示在此ACL规则之后添加ACL规则
 
@@ -157,7 +157,7 @@ class FirewallPolicy:
 
     @property
     def insert_before(self):
-        """Gets the insert_before of this FirewallPolicy.
+        r"""Gets the insert_before of this FirewallPolicy.
 
         ACL规则ID，表示在此ACL规则之前添加ACL规则
 
@@ -168,7 +168,7 @@ class FirewallPolicy:
 
     @insert_before.setter
     def insert_before(self, insert_before):
-        """Sets the insert_before of this FirewallPolicy.
+        r"""Sets the insert_before of this FirewallPolicy.
 
         ACL规则ID，表示在此ACL规则之前添加ACL规则
 

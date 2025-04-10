@@ -28,7 +28,7 @@ class ListAnalyzersResponse(SdkResponse):
     }
 
     def __init__(self, analyzers=None, page_info=None):
-        """ListAnalyzersResponse
+        r"""ListAnalyzersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAnalyzersResponse(SdkResponse):
 
     @property
     def analyzers(self):
-        """Gets the analyzers of this ListAnalyzersResponse.
+        r"""Gets the analyzers of this ListAnalyzersResponse.
 
         分析器列表信息。
 
@@ -62,7 +62,7 @@ class ListAnalyzersResponse(SdkResponse):
 
     @analyzers.setter
     def analyzers(self, analyzers):
-        """Sets the analyzers of this ListAnalyzersResponse.
+        r"""Sets the analyzers of this ListAnalyzersResponse.
 
         分析器列表信息。
 
@@ -73,7 +73,7 @@ class ListAnalyzersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAnalyzersResponse.
+        r"""Gets the page_info of this ListAnalyzersResponse.
 
         :return: The page_info of this ListAnalyzersResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListAnalyzersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAnalyzersResponse.
+        r"""Sets the page_info of this ListAnalyzersResponse.
 
         :param page_info: The page_info of this ListAnalyzersResponse.
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`

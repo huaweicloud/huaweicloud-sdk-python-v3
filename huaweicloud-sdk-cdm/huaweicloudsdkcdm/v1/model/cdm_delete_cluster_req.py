@@ -25,7 +25,7 @@ class CdmDeleteClusterReq:
     }
 
     def __init__(self, keep_last_manual_backup=None):
-        """CdmDeleteClusterReq
+        r"""CdmDeleteClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CdmDeleteClusterReq:
 
     @property
     def keep_last_manual_backup(self):
-        """Gets the keep_last_manual_backup of this CdmDeleteClusterReq.
+        r"""Gets the keep_last_manual_backup of this CdmDeleteClusterReq.
 
         日志备份数，填写为默认填0即可。
 
@@ -53,7 +53,7 @@ class CdmDeleteClusterReq:
 
     @keep_last_manual_backup.setter
     def keep_last_manual_backup(self, keep_last_manual_backup):
-        """Sets the keep_last_manual_backup of this CdmDeleteClusterReq.
+        r"""Sets the keep_last_manual_backup of this CdmDeleteClusterReq.
 
         日志备份数，填写为默认填0即可。
 

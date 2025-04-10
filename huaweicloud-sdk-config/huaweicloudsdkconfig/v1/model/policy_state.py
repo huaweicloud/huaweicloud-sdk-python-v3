@@ -47,7 +47,7 @@ class PolicyState:
     }
 
     def __init__(self, domain_id=None, region_id=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, trigger_type=None, compliance_state=None, policy_assignment_id=None, policy_assignment_name=None, policy_definition_id=None, evaluation_time=None):
-        """PolicyState
+        r"""PolicyState
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class PolicyState:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PolicyState.
+        r"""Gets the domain_id of this PolicyState.
 
         用户ID
 
@@ -131,7 +131,7 @@ class PolicyState:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PolicyState.
+        r"""Sets the domain_id of this PolicyState.
 
         用户ID
 
@@ -142,7 +142,7 @@ class PolicyState:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PolicyState.
+        r"""Gets the region_id of this PolicyState.
 
         资源区域ID
 
@@ -153,7 +153,7 @@ class PolicyState:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PolicyState.
+        r"""Sets the region_id of this PolicyState.
 
         资源区域ID
 
@@ -164,7 +164,7 @@ class PolicyState:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PolicyState.
+        r"""Gets the resource_id of this PolicyState.
 
         资源ID
 
@@ -175,7 +175,7 @@ class PolicyState:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PolicyState.
+        r"""Sets the resource_id of this PolicyState.
 
         资源ID
 
@@ -186,7 +186,7 @@ class PolicyState:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this PolicyState.
+        r"""Gets the resource_name of this PolicyState.
 
         资源名称
 
@@ -197,7 +197,7 @@ class PolicyState:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this PolicyState.
+        r"""Sets the resource_name of this PolicyState.
 
         资源名称
 
@@ -208,7 +208,7 @@ class PolicyState:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this PolicyState.
+        r"""Gets the resource_provider of this PolicyState.
 
         云服务名称
 
@@ -219,7 +219,7 @@ class PolicyState:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this PolicyState.
+        r"""Sets the resource_provider of this PolicyState.
 
         云服务名称
 
@@ -230,7 +230,7 @@ class PolicyState:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PolicyState.
+        r"""Gets the resource_type of this PolicyState.
 
         资源类型
 
@@ -241,7 +241,7 @@ class PolicyState:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PolicyState.
+        r"""Sets the resource_type of this PolicyState.
 
         资源类型
 
@@ -252,7 +252,7 @@ class PolicyState:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PolicyState.
+        r"""Gets the trigger_type of this PolicyState.
 
         触发器类型，可选值：resource, period
 
@@ -263,7 +263,7 @@ class PolicyState:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PolicyState.
+        r"""Sets the trigger_type of this PolicyState.
 
         触发器类型，可选值：resource, period
 
@@ -274,7 +274,7 @@ class PolicyState:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this PolicyState.
+        r"""Gets the compliance_state of this PolicyState.
 
         合规状态
 
@@ -285,7 +285,7 @@ class PolicyState:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this PolicyState.
+        r"""Sets the compliance_state of this PolicyState.
 
         合规状态
 
@@ -296,7 +296,7 @@ class PolicyState:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this PolicyState.
+        r"""Gets the policy_assignment_id of this PolicyState.
 
         规则ID
 
@@ -307,7 +307,7 @@ class PolicyState:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this PolicyState.
+        r"""Sets the policy_assignment_id of this PolicyState.
 
         规则ID
 
@@ -318,7 +318,7 @@ class PolicyState:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this PolicyState.
+        r"""Gets the policy_assignment_name of this PolicyState.
 
         规则名称
 
@@ -329,7 +329,7 @@ class PolicyState:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this PolicyState.
+        r"""Sets the policy_assignment_name of this PolicyState.
 
         规则名称
 
@@ -340,7 +340,7 @@ class PolicyState:
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this PolicyState.
+        r"""Gets the policy_definition_id of this PolicyState.
 
         策略ID
 
@@ -351,7 +351,7 @@ class PolicyState:
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this PolicyState.
+        r"""Sets the policy_definition_id of this PolicyState.
 
         策略ID
 
@@ -362,7 +362,7 @@ class PolicyState:
 
     @property
     def evaluation_time(self):
-        """Gets the evaluation_time of this PolicyState.
+        r"""Gets the evaluation_time of this PolicyState.
 
         合规状态评估时间
 
@@ -373,7 +373,7 @@ class PolicyState:
 
     @evaluation_time.setter
     def evaluation_time(self, evaluation_time):
-        """Sets the evaluation_time of this PolicyState.
+        r"""Sets the evaluation_time of this PolicyState.
 
         合规状态评估时间
 

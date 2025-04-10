@@ -36,7 +36,7 @@ class ShowTrackerConfigResponse(SdkResponse):
     }
 
     def __init__(self, channel=None, selector=None, retention_period_in_days=None, agency_name=None, domain_id=None, frozen_status=None):
-        """ShowTrackerConfigResponse
+        r"""ShowTrackerConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def channel(self):
-        """Gets the channel of this ShowTrackerConfigResponse.
+        r"""Gets the channel of this ShowTrackerConfigResponse.
 
         :return: The channel of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.ChannelConfigBody`
@@ -88,7 +88,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this ShowTrackerConfigResponse.
+        r"""Sets the channel of this ShowTrackerConfigResponse.
 
         :param channel: The channel of this ShowTrackerConfigResponse.
         :type channel: :class:`huaweicloudsdkconfig.v1.ChannelConfigBody`
@@ -97,7 +97,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def selector(self):
-        """Gets the selector of this ShowTrackerConfigResponse.
+        r"""Gets the selector of this ShowTrackerConfigResponse.
 
         :return: The selector of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.SelectorConfigBody`
@@ -106,7 +106,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this ShowTrackerConfigResponse.
+        r"""Sets the selector of this ShowTrackerConfigResponse.
 
         :param selector: The selector of this ShowTrackerConfigResponse.
         :type selector: :class:`huaweicloudsdkconfig.v1.SelectorConfigBody`
@@ -115,7 +115,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def retention_period_in_days(self):
-        """Gets the retention_period_in_days of this ShowTrackerConfigResponse.
+        r"""Gets the retention_period_in_days of this ShowTrackerConfigResponse.
 
         存储历史信息的天数
 
@@ -126,7 +126,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @retention_period_in_days.setter
     def retention_period_in_days(self, retention_period_in_days):
-        """Sets the retention_period_in_days of this ShowTrackerConfigResponse.
+        r"""Sets the retention_period_in_days of this ShowTrackerConfigResponse.
 
         存储历史信息的天数
 
@@ -137,7 +137,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ShowTrackerConfigResponse.
+        r"""Gets the agency_name of this ShowTrackerConfigResponse.
 
         IAM委托名称
 
@@ -148,7 +148,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ShowTrackerConfigResponse.
+        r"""Sets the agency_name of this ShowTrackerConfigResponse.
 
         IAM委托名称
 
@@ -159,7 +159,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowTrackerConfigResponse.
+        r"""Gets the domain_id of this ShowTrackerConfigResponse.
 
         账号ID
 
@@ -170,7 +170,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowTrackerConfigResponse.
+        r"""Sets the domain_id of this ShowTrackerConfigResponse.
 
         账号ID
 
@@ -181,7 +181,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def frozen_status(self):
-        """Gets the frozen_status of this ShowTrackerConfigResponse.
+        r"""Gets the frozen_status of this ShowTrackerConfigResponse.
 
         :return: The frozen_status of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.FrozenStatus`
@@ -190,7 +190,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @frozen_status.setter
     def frozen_status(self, frozen_status):
-        """Sets the frozen_status of this ShowTrackerConfigResponse.
+        r"""Sets the frozen_status of this ShowTrackerConfigResponse.
 
         :param frozen_status: The frozen_status of this ShowTrackerConfigResponse.
         :type frozen_status: :class:`huaweicloudsdkconfig.v1.FrozenStatus`

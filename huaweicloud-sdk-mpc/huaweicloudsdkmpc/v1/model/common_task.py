@@ -43,7 +43,7 @@ class CommonTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None):
-        """CommonTask
+        r"""CommonTask
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CommonTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CommonTask.
+        r"""Gets the task_id of this CommonTask.
 
         任务ID 
 
@@ -117,7 +117,7 @@ class CommonTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CommonTask.
+        r"""Sets the task_id of this CommonTask.
 
         任务ID 
 
@@ -128,7 +128,7 @@ class CommonTask:
 
     @property
     def status(self):
-        """Gets the status of this CommonTask.
+        r"""Gets the status of this CommonTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -139,7 +139,7 @@ class CommonTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CommonTask.
+        r"""Sets the status of this CommonTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -150,7 +150,7 @@ class CommonTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CommonTask.
+        r"""Gets the create_time of this CommonTask.
 
         任务创建时间 
 
@@ -161,7 +161,7 @@ class CommonTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CommonTask.
+        r"""Sets the create_time of this CommonTask.
 
         任务创建时间 
 
@@ -172,7 +172,7 @@ class CommonTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CommonTask.
+        r"""Gets the start_time of this CommonTask.
 
         任务启动时间 
 
@@ -183,7 +183,7 @@ class CommonTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CommonTask.
+        r"""Sets the start_time of this CommonTask.
 
         任务启动时间 
 
@@ -194,7 +194,7 @@ class CommonTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CommonTask.
+        r"""Gets the end_time of this CommonTask.
 
         任务结束时间 
 
@@ -205,7 +205,7 @@ class CommonTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CommonTask.
+        r"""Sets the end_time of this CommonTask.
 
         任务结束时间 
 
@@ -216,7 +216,7 @@ class CommonTask:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CommonTask.
+        r"""Gets the error_code of this CommonTask.
 
         任务的返回码。 
 
@@ -227,7 +227,7 @@ class CommonTask:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CommonTask.
+        r"""Sets the error_code of this CommonTask.
 
         任务的返回码。 
 
@@ -238,7 +238,7 @@ class CommonTask:
 
     @property
     def description(self):
-        """Gets the description of this CommonTask.
+        r"""Gets the description of this CommonTask.
 
         错误描述 
 
@@ -249,7 +249,7 @@ class CommonTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CommonTask.
+        r"""Sets the description of this CommonTask.
 
         错误描述 
 
@@ -260,7 +260,7 @@ class CommonTask:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CommonTask.
+        r"""Gets the user_data of this CommonTask.
 
         用户数据。 
 
@@ -271,7 +271,7 @@ class CommonTask:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CommonTask.
+        r"""Sets the user_data of this CommonTask.
 
         用户数据。 
 
@@ -282,7 +282,7 @@ class CommonTask:
 
     @property
     def input(self):
-        """Gets the input of this CommonTask.
+        r"""Gets the input of this CommonTask.
 
         :return: The input of this CommonTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -291,7 +291,7 @@ class CommonTask:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CommonTask.
+        r"""Sets the input of this CommonTask.
 
         :param input: The input of this CommonTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -300,7 +300,7 @@ class CommonTask:
 
     @property
     def output(self):
-        """Gets the output of this CommonTask.
+        r"""Gets the output of this CommonTask.
 
         :return: The output of this CommonTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -309,7 +309,7 @@ class CommonTask:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CommonTask.
+        r"""Sets the output of this CommonTask.
 
         :param output: The output of this CommonTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

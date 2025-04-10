@@ -27,7 +27,7 @@ class DisassociateSubnetFirewallRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """DisassociateSubnetFirewallRequest
+        r"""DisassociateSubnetFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateSubnetFirewallRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this DisassociateSubnetFirewallRequest.
+        r"""Gets the firewall_id of this DisassociateSubnetFirewallRequest.
 
         网络ACL唯一标识
 
@@ -60,7 +60,7 @@ class DisassociateSubnetFirewallRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this DisassociateSubnetFirewallRequest.
+        r"""Sets the firewall_id of this DisassociateSubnetFirewallRequest.
 
         网络ACL唯一标识
 
@@ -71,7 +71,7 @@ class DisassociateSubnetFirewallRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateSubnetFirewallRequest.
+        r"""Gets the body of this DisassociateSubnetFirewallRequest.
 
         :return: The body of this DisassociateSubnetFirewallRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.DisassociateSubnetFirewallRequestBody`
@@ -80,7 +80,7 @@ class DisassociateSubnetFirewallRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateSubnetFirewallRequest.
+        r"""Sets the body of this DisassociateSubnetFirewallRequest.
 
         :param body: The body of this DisassociateSubnetFirewallRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.DisassociateSubnetFirewallRequestBody`

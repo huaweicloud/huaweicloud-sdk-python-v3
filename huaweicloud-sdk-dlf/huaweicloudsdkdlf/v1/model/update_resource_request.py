@@ -29,7 +29,7 @@ class UpdateResourceRequest:
     }
 
     def __init__(self, workspace=None, resource_id=None, body=None):
-        """UpdateResourceRequest
+        r"""UpdateResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateResourceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateResourceRequest.
+        r"""Gets the workspace of this UpdateResourceRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class UpdateResourceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateResourceRequest.
+        r"""Sets the workspace of this UpdateResourceRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class UpdateResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UpdateResourceRequest.
+        r"""Gets the resource_id of this UpdateResourceRequest.
 
         资源id.
 
@@ -89,7 +89,7 @@ class UpdateResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UpdateResourceRequest.
+        r"""Sets the resource_id of this UpdateResourceRequest.
 
         资源id.
 
@@ -100,7 +100,7 @@ class UpdateResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResourceRequest.
+        r"""Gets the body of this UpdateResourceRequest.
 
         :return: The body of this UpdateResourceRequest.
         :rtype: :class:`huaweicloudsdkdlf.v1.ResourceInfo`
@@ -109,7 +109,7 @@ class UpdateResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResourceRequest.
+        r"""Sets the body of this UpdateResourceRequest.
 
         :param body: The body of this UpdateResourceRequest.
         :type body: :class:`huaweicloudsdkdlf.v1.ResourceInfo`

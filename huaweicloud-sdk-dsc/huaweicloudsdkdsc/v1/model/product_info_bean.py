@@ -49,7 +49,7 @@ class ProductInfoBean:
     }
 
     def __init__(self, all_resource_names=None, cloud_service_type=None, display_id=None, product_id=None, product_spec_desc=None, resource_name=None, resource_size=None, resource_size_measure_id=None, resource_spec_code=None, resource_type=None, usage_factor=None, usage_measure_id=None, usage_value=None):
-        """ProductInfoBean
+        r"""ProductInfoBean
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ProductInfoBean:
 
     @property
     def all_resource_names(self):
-        """Gets the all_resource_names of this ProductInfoBean.
+        r"""Gets the all_resource_names of this ProductInfoBean.
 
         资源名称列表
 
@@ -132,7 +132,7 @@ class ProductInfoBean:
 
     @all_resource_names.setter
     def all_resource_names(self, all_resource_names):
-        """Sets the all_resource_names of this ProductInfoBean.
+        r"""Sets the all_resource_names of this ProductInfoBean.
 
         资源名称列表
 
@@ -143,7 +143,7 @@ class ProductInfoBean:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfoBean.
+        r"""Gets the cloud_service_type of this ProductInfoBean.
 
         云服务类型
 
@@ -154,7 +154,7 @@ class ProductInfoBean:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfoBean.
+        r"""Sets the cloud_service_type of this ProductInfoBean.
 
         云服务类型
 
@@ -165,7 +165,7 @@ class ProductInfoBean:
 
     @property
     def display_id(self):
-        """Gets the display_id of this ProductInfoBean.
+        r"""Gets the display_id of this ProductInfoBean.
 
         展示ID
 
@@ -176,7 +176,7 @@ class ProductInfoBean:
 
     @display_id.setter
     def display_id(self, display_id):
-        """Sets the display_id of this ProductInfoBean.
+        r"""Sets the display_id of this ProductInfoBean.
 
         展示ID
 
@@ -187,7 +187,7 @@ class ProductInfoBean:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductInfoBean.
+        r"""Gets the product_id of this ProductInfoBean.
 
         产品ID
 
@@ -198,7 +198,7 @@ class ProductInfoBean:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductInfoBean.
+        r"""Sets the product_id of this ProductInfoBean.
 
         产品ID
 
@@ -209,7 +209,7 @@ class ProductInfoBean:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this ProductInfoBean.
+        r"""Gets the product_spec_desc of this ProductInfoBean.
 
         产品规格描述
 
@@ -220,7 +220,7 @@ class ProductInfoBean:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this ProductInfoBean.
+        r"""Sets the product_spec_desc of this ProductInfoBean.
 
         产品规格描述
 
@@ -231,7 +231,7 @@ class ProductInfoBean:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ProductInfoBean.
+        r"""Gets the resource_name of this ProductInfoBean.
 
         资源名称
 
@@ -242,7 +242,7 @@ class ProductInfoBean:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ProductInfoBean.
+        r"""Sets the resource_name of this ProductInfoBean.
 
         资源名称
 
@@ -253,7 +253,7 @@ class ProductInfoBean:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ProductInfoBean.
+        r"""Gets the resource_size of this ProductInfoBean.
 
         产品支持的数据库数量，或者支持obs的扫描量
 
@@ -264,7 +264,7 @@ class ProductInfoBean:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ProductInfoBean.
+        r"""Sets the resource_size of this ProductInfoBean.
 
         产品支持的数据库数量，或者支持obs的扫描量
 
@@ -275,7 +275,7 @@ class ProductInfoBean:
 
     @property
     def resource_size_measure_id(self):
-        """Gets the resource_size_measure_id of this ProductInfoBean.
+        r"""Gets the resource_size_measure_id of this ProductInfoBean.
 
         资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
 
@@ -286,7 +286,7 @@ class ProductInfoBean:
 
     @resource_size_measure_id.setter
     def resource_size_measure_id(self, resource_size_measure_id):
-        """Sets the resource_size_measure_id of this ProductInfoBean.
+        r"""Sets the resource_size_measure_id of this ProductInfoBean.
 
         资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
 
@@ -297,7 +297,7 @@ class ProductInfoBean:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ProductInfoBean.
+        r"""Gets the resource_spec_code of this ProductInfoBean.
 
         产品编码
 
@@ -308,7 +308,7 @@ class ProductInfoBean:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ProductInfoBean.
+        r"""Sets the resource_spec_code of this ProductInfoBean.
 
         产品编码
 
@@ -319,7 +319,7 @@ class ProductInfoBean:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfoBean.
+        r"""Gets the resource_type of this ProductInfoBean.
 
         资源类型
 
@@ -330,7 +330,7 @@ class ProductInfoBean:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfoBean.
+        r"""Sets the resource_type of this ProductInfoBean.
 
         资源类型
 
@@ -341,7 +341,7 @@ class ProductInfoBean:
 
     @property
     def usage_factor(self):
-        """Gets the usage_factor of this ProductInfoBean.
+        r"""Gets the usage_factor of this ProductInfoBean.
 
         已使用系数
 
@@ -352,7 +352,7 @@ class ProductInfoBean:
 
     @usage_factor.setter
     def usage_factor(self, usage_factor):
-        """Sets the usage_factor of this ProductInfoBean.
+        r"""Sets the usage_factor of this ProductInfoBean.
 
         已使用系数
 
@@ -363,7 +363,7 @@ class ProductInfoBean:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this ProductInfoBean.
+        r"""Gets the usage_measure_id of this ProductInfoBean.
 
         已使用容量度量标识
 
@@ -374,7 +374,7 @@ class ProductInfoBean:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this ProductInfoBean.
+        r"""Sets the usage_measure_id of this ProductInfoBean.
 
         已使用容量度量标识
 
@@ -385,7 +385,7 @@ class ProductInfoBean:
 
     @property
     def usage_value(self):
-        """Gets the usage_value of this ProductInfoBean.
+        r"""Gets the usage_value of this ProductInfoBean.
 
         已使用值
 
@@ -396,7 +396,7 @@ class ProductInfoBean:
 
     @usage_value.setter
     def usage_value(self, usage_value):
-        """Sets the usage_value of this ProductInfoBean.
+        r"""Sets the usage_value of this ProductInfoBean.
 
         已使用值
 

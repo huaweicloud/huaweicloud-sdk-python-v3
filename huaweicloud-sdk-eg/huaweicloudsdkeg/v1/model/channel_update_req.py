@@ -31,7 +31,7 @@ class ChannelUpdateReq:
     }
 
     def __init__(self, description=None, enterprise_project_id=None, cross_account=None, policy=None):
-        """ChannelUpdateReq
+        r"""ChannelUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ChannelUpdateReq:
 
     @property
     def description(self):
-        """Gets the description of this ChannelUpdateReq.
+        r"""Gets the description of this ChannelUpdateReq.
 
         通道描述
 
@@ -75,7 +75,7 @@ class ChannelUpdateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChannelUpdateReq.
+        r"""Sets the description of this ChannelUpdateReq.
 
         通道描述
 
@@ -86,7 +86,7 @@ class ChannelUpdateReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChannelUpdateReq.
+        r"""Gets the enterprise_project_id of this ChannelUpdateReq.
 
         企业项目id
 
@@ -97,7 +97,7 @@ class ChannelUpdateReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChannelUpdateReq.
+        r"""Sets the enterprise_project_id of this ChannelUpdateReq.
 
         企业项目id
 
@@ -108,7 +108,7 @@ class ChannelUpdateReq:
 
     @property
     def cross_account(self):
-        """Gets the cross_account of this ChannelUpdateReq.
+        r"""Gets the cross_account of this ChannelUpdateReq.
 
         跨账号开关
 
@@ -119,7 +119,7 @@ class ChannelUpdateReq:
 
     @cross_account.setter
     def cross_account(self, cross_account):
-        """Sets the cross_account of this ChannelUpdateReq.
+        r"""Sets the cross_account of this ChannelUpdateReq.
 
         跨账号开关
 
@@ -130,7 +130,7 @@ class ChannelUpdateReq:
 
     @property
     def policy(self):
-        """Gets the policy of this ChannelUpdateReq.
+        r"""Gets the policy of this ChannelUpdateReq.
 
         策略
 
@@ -141,7 +141,7 @@ class ChannelUpdateReq:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ChannelUpdateReq.
+        r"""Sets the policy of this ChannelUpdateReq.
 
         策略
 

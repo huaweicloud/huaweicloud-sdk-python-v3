@@ -28,7 +28,7 @@ class UpdateStarrocksParamsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, restart_required=None):
-        """UpdateStarrocksParamsResponse
+        r"""UpdateStarrocksParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateStarrocksParamsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateStarrocksParamsResponse.
+        r"""Gets the job_id of this UpdateStarrocksParamsResponse.
 
         修改指定实例参数的任务ID。
 
@@ -62,7 +62,7 @@ class UpdateStarrocksParamsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateStarrocksParamsResponse.
+        r"""Sets the job_id of this UpdateStarrocksParamsResponse.
 
         修改指定实例参数的任务ID。
 
@@ -73,7 +73,7 @@ class UpdateStarrocksParamsResponse(SdkResponse):
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this UpdateStarrocksParamsResponse.
+        r"""Gets the restart_required of this UpdateStarrocksParamsResponse.
 
         是否需要重启。 true：是。 false：否。
 
@@ -84,7 +84,7 @@ class UpdateStarrocksParamsResponse(SdkResponse):
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this UpdateStarrocksParamsResponse.
+        r"""Sets the restart_required of this UpdateStarrocksParamsResponse.
 
         是否需要重启。 true：是。 false：否。
 

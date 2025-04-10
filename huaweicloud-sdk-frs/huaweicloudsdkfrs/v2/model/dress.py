@@ -27,7 +27,7 @@ class Dress:
     }
 
     def __init__(self, glass=None, hat=None):
-        """Dress
+        r"""Dress
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Dress:
 
     @property
     def glass(self):
-        """Gets the glass of this Dress.
+        r"""Gets the glass of this Dress.
 
         是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
 
@@ -61,7 +61,7 @@ class Dress:
 
     @glass.setter
     def glass(self, glass):
-        """Sets the glass of this Dress.
+        r"""Sets the glass of this Dress.
 
         是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
 
@@ -72,7 +72,7 @@ class Dress:
 
     @property
     def hat(self):
-        """Gets the hat of this Dress.
+        r"""Gets the hat of this Dress.
 
         是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
 
@@ -83,7 +83,7 @@ class Dress:
 
     @hat.setter
     def hat(self, hat):
-        """Sets the hat of this Dress.
+        r"""Sets the hat of this Dress.
 
         是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
 

@@ -25,7 +25,7 @@ class UpdateEndpointServicePermissionDescRequestBody:
     }
 
     def __init__(self, permission=None):
-        """UpdateEndpointServicePermissionDescRequestBody
+        r"""UpdateEndpointServicePermissionDescRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEndpointServicePermissionDescRequestBody:
 
     @property
     def permission(self):
-        """Gets the permission of this UpdateEndpointServicePermissionDescRequestBody.
+        r"""Gets the permission of this UpdateEndpointServicePermissionDescRequestBody.
 
         :return: The permission of this UpdateEndpointServicePermissionDescRequestBody.
         :rtype: :class:`huaweicloudsdkvpcep.v1.EpsUpdatePermissionDesc`
@@ -51,7 +51,7 @@ class UpdateEndpointServicePermissionDescRequestBody:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this UpdateEndpointServicePermissionDescRequestBody.
+        r"""Sets the permission of this UpdateEndpointServicePermissionDescRequestBody.
 
         :param permission: The permission of this UpdateEndpointServicePermissionDescRequestBody.
         :type permission: :class:`huaweicloudsdkvpcep.v1.EpsUpdatePermissionDesc`

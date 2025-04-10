@@ -27,7 +27,7 @@ class ValidationLinkConfig:
     }
 
     def __init__(self, message=None, status=None):
-        """ValidationLinkConfig
+        r"""ValidationLinkConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValidationLinkConfig:
 
     @property
     def message(self):
-        """Gets the message of this ValidationLinkConfig.
+        r"""Gets the message of this ValidationLinkConfig.
 
         错误描述
 
@@ -61,7 +61,7 @@ class ValidationLinkConfig:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ValidationLinkConfig.
+        r"""Sets the message of this ValidationLinkConfig.
 
         错误描述
 
@@ -72,7 +72,7 @@ class ValidationLinkConfig:
 
     @property
     def status(self):
-        """Gets the status of this ValidationLinkConfig.
+        r"""Gets the status of this ValidationLinkConfig.
 
         ERROR,WARNING
 
@@ -83,7 +83,7 @@ class ValidationLinkConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ValidationLinkConfig.
+        r"""Sets the status of this ValidationLinkConfig.
 
         ERROR,WARNING
 

@@ -25,7 +25,7 @@ class SeriesAPIQueryItemParam:
     }
 
     def __init__(self, series=None):
-        """SeriesAPIQueryItemParam
+        r"""SeriesAPIQueryItemParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SeriesAPIQueryItemParam:
 
     @property
     def series(self):
-        """Gets the series of this SeriesAPIQueryItemParam.
+        r"""Gets the series of this SeriesAPIQueryItemParam.
 
         通过该数组传递的参数信息进行时间序列查询。
 
@@ -53,7 +53,7 @@ class SeriesAPIQueryItemParam:
 
     @series.setter
     def series(self, series):
-        """Sets the series of this SeriesAPIQueryItemParam.
+        r"""Sets the series of this SeriesAPIQueryItemParam.
 
         通过该数组传递的参数信息进行时间序列查询。
 

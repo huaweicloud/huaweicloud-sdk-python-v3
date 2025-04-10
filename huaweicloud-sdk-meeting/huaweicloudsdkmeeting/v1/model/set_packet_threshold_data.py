@@ -27,7 +27,7 @@ class SetPacketThresholdData:
     }
 
     def __init__(self, receiving=None, sending=None):
-        """SetPacketThresholdData
+        r"""SetPacketThresholdData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetPacketThresholdData:
 
     @property
     def receiving(self):
-        """Gets the receiving of this SetPacketThresholdData.
+        r"""Gets the receiving of this SetPacketThresholdData.
 
         接收方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
@@ -61,7 +61,7 @@ class SetPacketThresholdData:
 
     @receiving.setter
     def receiving(self, receiving):
-        """Sets the receiving of this SetPacketThresholdData.
+        r"""Sets the receiving of this SetPacketThresholdData.
 
         接收方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
@@ -72,7 +72,7 @@ class SetPacketThresholdData:
 
     @property
     def sending(self):
-        """Gets the sending of this SetPacketThresholdData.
+        r"""Gets the sending of this SetPacketThresholdData.
 
         发送方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
@@ -83,7 +83,7 @@ class SetPacketThresholdData:
 
     @sending.setter
     def sending(self, sending):
-        """Sets the sending of this SetPacketThresholdData.
+        r"""Sets the sending of this SetPacketThresholdData.
 
         发送方向阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 

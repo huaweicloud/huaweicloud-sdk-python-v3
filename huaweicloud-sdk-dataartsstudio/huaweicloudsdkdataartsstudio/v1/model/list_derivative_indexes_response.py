@@ -26,7 +26,7 @@ class ListDerivativeIndexesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListDerivativeIndexesResponse
+        r"""ListDerivativeIndexesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDerivativeIndexesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDerivativeIndexesResponse.
+        r"""Gets the data of this ListDerivativeIndexesResponse.
 
         :return: The data of this ListDerivativeIndexesResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVOSearchResultData`
@@ -53,7 +53,7 @@ class ListDerivativeIndexesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDerivativeIndexesResponse.
+        r"""Sets the data of this ListDerivativeIndexesResponse.
 
         :param data: The data of this ListDerivativeIndexesResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVOSearchResultData`

@@ -29,7 +29,7 @@ class DeadletterResendRespResendResults:
     }
 
     def __init__(self, msg_id=None, error_code=None, error_message=None):
-        """DeadletterResendRespResendResults
+        r"""DeadletterResendRespResendResults
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeadletterResendRespResendResults:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this DeadletterResendRespResendResults.
+        r"""Gets the msg_id of this DeadletterResendRespResendResults.
 
         消息ID。
 
@@ -68,7 +68,7 @@ class DeadletterResendRespResendResults:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this DeadletterResendRespResendResults.
+        r"""Sets the msg_id of this DeadletterResendRespResendResults.
 
         消息ID。
 
@@ -79,7 +79,7 @@ class DeadletterResendRespResendResults:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeadletterResendRespResendResults.
+        r"""Gets the error_code of this DeadletterResendRespResendResults.
 
         错误码。
 
@@ -90,7 +90,7 @@ class DeadletterResendRespResendResults:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeadletterResendRespResendResults.
+        r"""Sets the error_code of this DeadletterResendRespResendResults.
 
         错误码。
 
@@ -101,7 +101,7 @@ class DeadletterResendRespResendResults:
 
     @property
     def error_message(self):
-        """Gets the error_message of this DeadletterResendRespResendResults.
+        r"""Gets the error_message of this DeadletterResendRespResendResults.
 
         错误信息。
 
@@ -112,7 +112,7 @@ class DeadletterResendRespResendResults:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DeadletterResendRespResendResults.
+        r"""Sets the error_message of this DeadletterResendRespResendResults.
 
         错误信息。
 

@@ -31,7 +31,7 @@ class WorkitemStatusRecords:
     }
 
     def __init__(self, work_item_record_id=None, work_item_id=None, project_id=None, work_item_statuses=None):
-        """WorkitemStatusRecords
+        r"""WorkitemStatusRecords
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WorkitemStatusRecords:
 
     @property
     def work_item_record_id(self):
-        """Gets the work_item_record_id of this WorkitemStatusRecords.
+        r"""Gets the work_item_record_id of this WorkitemStatusRecords.
 
         工作项的记录id，一个工作项对应一条记录
 
@@ -75,7 +75,7 @@ class WorkitemStatusRecords:
 
     @work_item_record_id.setter
     def work_item_record_id(self, work_item_record_id):
-        """Sets the work_item_record_id of this WorkitemStatusRecords.
+        r"""Sets the work_item_record_id of this WorkitemStatusRecords.
 
         工作项的记录id，一个工作项对应一条记录
 
@@ -86,7 +86,7 @@ class WorkitemStatusRecords:
 
     @property
     def work_item_id(self):
-        """Gets the work_item_id of this WorkitemStatusRecords.
+        r"""Gets the work_item_id of this WorkitemStatusRecords.
 
         工作项id
 
@@ -97,7 +97,7 @@ class WorkitemStatusRecords:
 
     @work_item_id.setter
     def work_item_id(self, work_item_id):
-        """Sets the work_item_id of this WorkitemStatusRecords.
+        r"""Sets the work_item_id of this WorkitemStatusRecords.
 
         工作项id
 
@@ -108,7 +108,7 @@ class WorkitemStatusRecords:
 
     @property
     def project_id(self):
-        """Gets the project_id of this WorkitemStatusRecords.
+        r"""Gets the project_id of this WorkitemStatusRecords.
 
         devcloud项目的32位id
 
@@ -119,7 +119,7 @@ class WorkitemStatusRecords:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this WorkitemStatusRecords.
+        r"""Sets the project_id of this WorkitemStatusRecords.
 
         devcloud项目的32位id
 
@@ -130,7 +130,7 @@ class WorkitemStatusRecords:
 
     @property
     def work_item_statuses(self):
-        """Gets the work_item_statuses of this WorkitemStatusRecords.
+        r"""Gets the work_item_statuses of this WorkitemStatusRecords.
 
         操作历史
 
@@ -141,7 +141,7 @@ class WorkitemStatusRecords:
 
     @work_item_statuses.setter
     def work_item_statuses(self, work_item_statuses):
-        """Sets the work_item_statuses of this WorkitemStatusRecords.
+        r"""Sets the work_item_statuses of this WorkitemStatusRecords.
 
         操作历史
 

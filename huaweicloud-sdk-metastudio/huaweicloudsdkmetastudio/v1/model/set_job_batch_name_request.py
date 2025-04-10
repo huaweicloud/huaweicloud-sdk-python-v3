@@ -25,7 +25,7 @@ class SetJobBatchNameRequest:
     }
 
     def __init__(self, body=None):
-        """SetJobBatchNameRequest
+        r"""SetJobBatchNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetJobBatchNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetJobBatchNameRequest.
+        r"""Gets the body of this SetJobBatchNameRequest.
 
         :return: The body of this SetJobBatchNameRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SetJobBatchNameReq`
@@ -52,7 +52,7 @@ class SetJobBatchNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetJobBatchNameRequest.
+        r"""Sets the body of this SetJobBatchNameRequest.
 
         :param body: The body of this SetJobBatchNameRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.SetJobBatchNameReq`

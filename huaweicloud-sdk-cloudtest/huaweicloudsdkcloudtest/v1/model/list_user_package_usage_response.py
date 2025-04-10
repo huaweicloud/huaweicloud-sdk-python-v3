@@ -30,7 +30,7 @@ class ListUserPackageUsageResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None):
-        """ListUserPackageUsageResponse
+        r"""ListUserPackageUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListUserPackageUsageResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListUserPackageUsageResponse.
+        r"""Gets the status of this ListUserPackageUsageResponse.
 
         是否请求成功
 
@@ -69,7 +69,7 @@ class ListUserPackageUsageResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListUserPackageUsageResponse.
+        r"""Sets the status of this ListUserPackageUsageResponse.
 
         是否请求成功
 
@@ -80,7 +80,7 @@ class ListUserPackageUsageResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListUserPackageUsageResponse.
+        r"""Gets the result of this ListUserPackageUsageResponse.
 
         套餐用量信息列表
 
@@ -91,7 +91,7 @@ class ListUserPackageUsageResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListUserPackageUsageResponse.
+        r"""Sets the result of this ListUserPackageUsageResponse.
 
         套餐用量信息列表
 
@@ -102,7 +102,7 @@ class ListUserPackageUsageResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListUserPackageUsageResponse.
+        r"""Gets the error of this ListUserPackageUsageResponse.
 
         :return: The error of this ListUserPackageUsageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -111,7 +111,7 @@ class ListUserPackageUsageResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListUserPackageUsageResponse.
+        r"""Sets the error of this ListUserPackageUsageResponse.
 
         :param error: The error of this ListUserPackageUsageResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`

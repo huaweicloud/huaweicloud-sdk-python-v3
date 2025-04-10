@@ -29,7 +29,7 @@ class MessageAttribute:
     }
 
     def __init__(self, name=None, type=None, value=None):
-        """MessageAttribute
+        r"""MessageAttribute
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MessageAttribute:
 
     @property
     def name(self):
-        """Gets the name of this MessageAttribute.
+        r"""Gets the name of this MessageAttribute.
 
         属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
 
@@ -65,7 +65,7 @@ class MessageAttribute:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MessageAttribute.
+        r"""Sets the name of this MessageAttribute.
 
         属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
 
@@ -76,7 +76,7 @@ class MessageAttribute:
 
     @property
     def type(self):
-        """Gets the type of this MessageAttribute.
+        r"""Gets the type of this MessageAttribute.
 
         属性类型 STRING：字符串（String）类型 STRING_ARRAY：字符串数组（String.Array）类型 PROTOCOL：协议类型
 
@@ -87,7 +87,7 @@ class MessageAttribute:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MessageAttribute.
+        r"""Sets the type of this MessageAttribute.
 
         属性类型 STRING：字符串（String）类型 STRING_ARRAY：字符串数组（String.Array）类型 PROTOCOL：协议类型
 
@@ -98,7 +98,7 @@ class MessageAttribute:
 
     @property
     def value(self):
-        """Gets the value of this MessageAttribute.
+        r"""Gets the value of this MessageAttribute.
 
         属性值。 当属性类型为“STRING”时，属性值只能包含中英文、数字、下划线，长度为1到32个字符。 当属性类型为“STRING_ARRAY”时，属性值为字符串数组，数组长度为1到10，数组中的元素内容不能重复，数组中的每个字符串都只能包含中英文、数字、下划线，且长度为1到32个字符。 当属性类型为“PROTOCOL”时，属性值为支持协议类型的字符串数组。
 
@@ -109,7 +109,7 @@ class MessageAttribute:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MessageAttribute.
+        r"""Sets the value of this MessageAttribute.
 
         属性值。 当属性类型为“STRING”时，属性值只能包含中英文、数字、下划线，长度为1到32个字符。 当属性类型为“STRING_ARRAY”时，属性值为字符串数组，数组长度为1到10，数组中的元素内容不能重复，数组中的每个字符串都只能包含中英文、数字、下划线，且长度为1到32个字符。 当属性类型为“PROTOCOL”时，属性值为支持协议类型的字符串数组。
 

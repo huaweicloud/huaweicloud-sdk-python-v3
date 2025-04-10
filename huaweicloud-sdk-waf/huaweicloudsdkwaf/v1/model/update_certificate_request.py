@@ -29,7 +29,7 @@ class UpdateCertificateRequest:
     }
 
     def __init__(self, enterprise_project_id=None, certificate_id=None, body=None):
-        """UpdateCertificateRequest
+        r"""UpdateCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateCertificateRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateCertificateRequest.
+        r"""Gets the enterprise_project_id of this UpdateCertificateRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class UpdateCertificateRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateCertificateRequest.
+        r"""Sets the enterprise_project_id of this UpdateCertificateRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class UpdateCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this UpdateCertificateRequest.
+        r"""Gets the certificate_id of this UpdateCertificateRequest.
 
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
@@ -89,7 +89,7 @@ class UpdateCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this UpdateCertificateRequest.
+        r"""Sets the certificate_id of this UpdateCertificateRequest.
 
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
@@ -100,7 +100,7 @@ class UpdateCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCertificateRequest.
+        r"""Gets the body of this UpdateCertificateRequest.
 
         :return: The body of this UpdateCertificateRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequestBody`
@@ -109,7 +109,7 @@ class UpdateCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCertificateRequest.
+        r"""Sets the body of this UpdateCertificateRequest.
 
         :param body: The body of this UpdateCertificateRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequestBody`

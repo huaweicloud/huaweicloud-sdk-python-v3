@@ -27,7 +27,7 @@ class AuthScopeProject:
     }
 
     def __init__(self, id=None, name=None):
-        """AuthScopeProject
+        r"""AuthScopeProject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AuthScopeProject:
 
     @property
     def id(self):
-        """Gets the id of this AuthScopeProject.
+        r"""Gets the id of this AuthScopeProject.
 
         IAM用户所属账号的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -61,7 +61,7 @@ class AuthScopeProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AuthScopeProject.
+        r"""Sets the id of this AuthScopeProject.
 
         IAM用户所属账号的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -72,7 +72,7 @@ class AuthScopeProject:
 
     @property
     def name(self):
-        """Gets the name of this AuthScopeProject.
+        r"""Gets the name of this AuthScopeProject.
 
         IAM用户所属账号的项目名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -83,7 +83,7 @@ class AuthScopeProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthScopeProject.
+        r"""Sets the name of this AuthScopeProject.
 
         IAM用户所属账号的项目名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

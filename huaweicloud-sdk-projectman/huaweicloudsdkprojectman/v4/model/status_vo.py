@@ -27,7 +27,7 @@ class StatusVo:
     }
 
     def __init__(self, id=None, name=None):
-        """StatusVo
+        r"""StatusVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatusVo:
 
     @property
     def id(self):
-        """Gets the id of this StatusVo.
+        r"""Gets the id of this StatusVo.
 
         状态id
 
@@ -61,7 +61,7 @@ class StatusVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StatusVo.
+        r"""Sets the id of this StatusVo.
 
         状态id
 
@@ -72,7 +72,7 @@ class StatusVo:
 
     @property
     def name(self):
-        """Gets the name of this StatusVo.
+        r"""Gets the name of this StatusVo.
 
         状态id对应的值
 
@@ -83,7 +83,7 @@ class StatusVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StatusVo.
+        r"""Sets the name of this StatusVo.
 
         状态id对应的值
 

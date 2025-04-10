@@ -31,7 +31,7 @@ class InterRegion:
     }
 
     def __init__(self, id=None, project_id=None, local_region_id=None, remote_region_id=None):
-        """InterRegion
+        r"""InterRegion
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class InterRegion:
 
     @property
     def id(self):
-        """Gets the id of this InterRegion.
+        r"""Gets the id of this InterRegion.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class InterRegion:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InterRegion.
+        r"""Sets the id of this InterRegion.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class InterRegion:
 
     @property
     def project_id(self):
-        """Gets the project_id of this InterRegion.
+        r"""Gets the project_id of this InterRegion.
 
         实例所属项目ID。
 
@@ -95,7 +95,7 @@ class InterRegion:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this InterRegion.
+        r"""Sets the project_id of this InterRegion.
 
         实例所属项目ID。
 
@@ -106,7 +106,7 @@ class InterRegion:
 
     @property
     def local_region_id(self):
-        """Gets the local_region_id of this InterRegion.
+        r"""Gets the local_region_id of this InterRegion.
 
         域间实例本端的RegionID。
 
@@ -117,7 +117,7 @@ class InterRegion:
 
     @local_region_id.setter
     def local_region_id(self, local_region_id):
-        """Sets the local_region_id of this InterRegion.
+        r"""Sets the local_region_id of this InterRegion.
 
         域间实例本端的RegionID。
 
@@ -128,7 +128,7 @@ class InterRegion:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this InterRegion.
+        r"""Gets the remote_region_id of this InterRegion.
 
         域间实例对端的RegionID。
 
@@ -139,7 +139,7 @@ class InterRegion:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this InterRegion.
+        r"""Sets the remote_region_id of this InterRegion.
 
         域间实例对端的RegionID。
 

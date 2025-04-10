@@ -27,7 +27,7 @@ class ChangeUserPrivilegeGroupReq:
     }
 
     def __init__(self, desktops=None, user_privilege_group=None):
-        """ChangeUserPrivilegeGroupReq
+        r"""ChangeUserPrivilegeGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeUserPrivilegeGroupReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this ChangeUserPrivilegeGroupReq.
+        r"""Gets the desktops of this ChangeUserPrivilegeGroupReq.
 
         桌面信息列表。
 
@@ -60,7 +60,7 @@ class ChangeUserPrivilegeGroupReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this ChangeUserPrivilegeGroupReq.
+        r"""Sets the desktops of this ChangeUserPrivilegeGroupReq.
 
         桌面信息列表。
 
@@ -71,7 +71,7 @@ class ChangeUserPrivilegeGroupReq:
 
     @property
     def user_privilege_group(self):
-        """Gets the user_privilege_group of this ChangeUserPrivilegeGroupReq.
+        r"""Gets the user_privilege_group of this ChangeUserPrivilegeGroupReq.
 
         桌面用户所属的用户权限组。desktops参数中，各个桌面所属的未传的桌面用户将应用该权限组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -82,7 +82,7 @@ class ChangeUserPrivilegeGroupReq:
 
     @user_privilege_group.setter
     def user_privilege_group(self, user_privilege_group):
-        """Sets the user_privilege_group of this ChangeUserPrivilegeGroupReq.
+        r"""Sets the user_privilege_group of this ChangeUserPrivilegeGroupReq.
 
         桌面用户所属的用户权限组。desktops参数中，各个桌面所属的未传的桌面用户将应用该权限组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 

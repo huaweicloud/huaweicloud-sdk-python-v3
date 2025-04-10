@@ -31,7 +31,7 @@ class CheckPutEventsResult:
     }
 
     def __init__(self, channel_id=None, source_name=None, check_result=None, check_detail=None):
-        """CheckPutEventsResult
+        r"""CheckPutEventsResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CheckPutEventsResult:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this CheckPutEventsResult.
+        r"""Gets the channel_id of this CheckPutEventsResult.
 
         事件通道id
 
@@ -75,7 +75,7 @@ class CheckPutEventsResult:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this CheckPutEventsResult.
+        r"""Sets the channel_id of this CheckPutEventsResult.
 
         事件通道id
 
@@ -86,7 +86,7 @@ class CheckPutEventsResult:
 
     @property
     def source_name(self):
-        """Gets the source_name of this CheckPutEventsResult.
+        r"""Gets the source_name of this CheckPutEventsResult.
 
         事件源名称
 
@@ -97,7 +97,7 @@ class CheckPutEventsResult:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this CheckPutEventsResult.
+        r"""Sets the source_name of this CheckPutEventsResult.
 
         事件源名称
 
@@ -108,7 +108,7 @@ class CheckPutEventsResult:
 
     @property
     def check_result(self):
-        """Gets the check_result of this CheckPutEventsResult.
+        r"""Gets the check_result of this CheckPutEventsResult.
 
         发送事件是否成功检查结果
 
@@ -119,7 +119,7 @@ class CheckPutEventsResult:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this CheckPutEventsResult.
+        r"""Sets the check_result of this CheckPutEventsResult.
 
         发送事件是否成功检查结果
 
@@ -130,7 +130,7 @@ class CheckPutEventsResult:
 
     @property
     def check_detail(self):
-        """Gets the check_detail of this CheckPutEventsResult.
+        r"""Gets the check_detail of this CheckPutEventsResult.
 
         发送事件是否成功检查明细
 
@@ -141,7 +141,7 @@ class CheckPutEventsResult:
 
     @check_detail.setter
     def check_detail(self, check_detail):
-        """Sets the check_detail of this CheckPutEventsResult.
+        r"""Sets the check_detail of this CheckPutEventsResult.
 
         发送事件是否成功检查明细
 

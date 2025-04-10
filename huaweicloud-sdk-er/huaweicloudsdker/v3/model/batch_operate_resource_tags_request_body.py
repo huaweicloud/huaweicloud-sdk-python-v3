@@ -27,7 +27,7 @@ class BatchOperateResourceTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchOperateResourceTagsRequestBody
+        r"""BatchOperateResourceTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchOperateResourceTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchOperateResourceTagsRequestBody.
+        r"""Gets the action of this BatchOperateResourceTagsRequestBody.
 
         功能说明：操作标识。 取值范围： create（创建） delete（删除）
 
@@ -60,7 +60,7 @@ class BatchOperateResourceTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchOperateResourceTagsRequestBody.
+        r"""Sets the action of this BatchOperateResourceTagsRequestBody.
 
         功能说明：操作标识。 取值范围： create（创建） delete（删除）
 
@@ -71,7 +71,7 @@ class BatchOperateResourceTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchOperateResourceTagsRequestBody.
+        r"""Gets the tags of this BatchOperateResourceTagsRequestBody.
 
         标签列表。
 
@@ -82,7 +82,7 @@ class BatchOperateResourceTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchOperateResourceTagsRequestBody.
+        r"""Sets the tags of this BatchOperateResourceTagsRequestBody.
 
         标签列表。
 

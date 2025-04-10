@@ -26,7 +26,7 @@ class ShowRiskInfoResponse(SdkResponse):
     }
 
     def __init__(self, risks=None):
-        """ShowRiskInfoResponse
+        r"""ShowRiskInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRiskInfoResponse(SdkResponse):
 
     @property
     def risks(self):
-        """Gets the risks of this ShowRiskInfoResponse.
+        r"""Gets the risks of this ShowRiskInfoResponse.
 
         内核风险提醒信息。
 
@@ -55,7 +55,7 @@ class ShowRiskInfoResponse(SdkResponse):
 
     @risks.setter
     def risks(self, risks):
-        """Sets the risks of this ShowRiskInfoResponse.
+        r"""Sets the risks of this ShowRiskInfoResponse.
 
         内核风险提醒信息。
 

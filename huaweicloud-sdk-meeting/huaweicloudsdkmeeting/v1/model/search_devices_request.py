@@ -39,7 +39,7 @@ class SearchDevicesRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, model=None, dept_code=None, enable_sub_dept=None):
-        """SearchDevicesRequest
+        r"""SearchDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SearchDevicesRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchDevicesRequest.
+        r"""Gets the x_request_id of this SearchDevicesRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -103,7 +103,7 @@ class SearchDevicesRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchDevicesRequest.
+        r"""Sets the x_request_id of this SearchDevicesRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -114,7 +114,7 @@ class SearchDevicesRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchDevicesRequest.
+        r"""Gets the accept_language of this SearchDevicesRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -125,7 +125,7 @@ class SearchDevicesRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchDevicesRequest.
+        r"""Sets the accept_language of this SearchDevicesRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -136,7 +136,7 @@ class SearchDevicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchDevicesRequest.
+        r"""Gets the offset of this SearchDevicesRequest.
 
         查询偏移量，若超过最大数量，则返回最后一页。
 
@@ -147,7 +147,7 @@ class SearchDevicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchDevicesRequest.
+        r"""Sets the offset of this SearchDevicesRequest.
 
         查询偏移量，若超过最大数量，则返回最后一页。
 
@@ -158,7 +158,7 @@ class SearchDevicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchDevicesRequest.
+        r"""Gets the limit of this SearchDevicesRequest.
 
         查询数量。 默认值：10。 
 
@@ -169,7 +169,7 @@ class SearchDevicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchDevicesRequest.
+        r"""Sets the limit of this SearchDevicesRequest.
 
         查询数量。 默认值：10。 
 
@@ -180,7 +180,7 @@ class SearchDevicesRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchDevicesRequest.
+        r"""Gets the search_key of this SearchDevicesRequest.
 
         搜索条件。支持名称、SN模糊查询。
 
@@ -191,7 +191,7 @@ class SearchDevicesRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchDevicesRequest.
+        r"""Sets the search_key of this SearchDevicesRequest.
 
         搜索条件。支持名称、SN模糊查询。
 
@@ -202,7 +202,7 @@ class SearchDevicesRequest:
 
     @property
     def model(self):
-        """Gets the model of this SearchDevicesRequest.
+        r"""Gets the model of this SearchDevicesRequest.
 
         终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
 
@@ -213,7 +213,7 @@ class SearchDevicesRequest:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this SearchDevicesRequest.
+        r"""Sets the model of this SearchDevicesRequest.
 
         终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
 
@@ -224,7 +224,7 @@ class SearchDevicesRequest:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this SearchDevicesRequest.
+        r"""Gets the dept_code of this SearchDevicesRequest.
 
         部门编码，默认为根部门。 默认值：1。
 
@@ -235,7 +235,7 @@ class SearchDevicesRequest:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this SearchDevicesRequest.
+        r"""Sets the dept_code of this SearchDevicesRequest.
 
         部门编码，默认为根部门。 默认值：1。
 
@@ -246,7 +246,7 @@ class SearchDevicesRequest:
 
     @property
     def enable_sub_dept(self):
-        """Gets the enable_sub_dept of this SearchDevicesRequest.
+        r"""Gets the enable_sub_dept of this SearchDevicesRequest.
 
         是否查询子部门。 默认值：true。 
 
@@ -257,7 +257,7 @@ class SearchDevicesRequest:
 
     @enable_sub_dept.setter
     def enable_sub_dept(self, enable_sub_dept):
-        """Sets the enable_sub_dept of this SearchDevicesRequest.
+        r"""Sets the enable_sub_dept of this SearchDevicesRequest.
 
         是否查询子部门。 默认值：true。 
 

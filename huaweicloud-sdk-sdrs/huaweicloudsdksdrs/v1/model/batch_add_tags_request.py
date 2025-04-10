@@ -27,7 +27,7 @@ class BatchAddTagsRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """BatchAddTagsRequest
+        r"""BatchAddTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddTagsRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this BatchAddTagsRequest.
+        r"""Gets the protected_instance_id of this BatchAddTagsRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class BatchAddTagsRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this BatchAddTagsRequest.
+        r"""Sets the protected_instance_id of this BatchAddTagsRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class BatchAddTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddTagsRequest.
+        r"""Gets the body of this BatchAddTagsRequest.
 
         :return: The body of this BatchAddTagsRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchAddTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchAddTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddTagsRequest.
+        r"""Sets the body of this BatchAddTagsRequest.
 
         :param body: The body of this BatchAddTagsRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.BatchAddTagsRequestBody`

@@ -31,7 +31,7 @@ class OperateHistorySession:
     }
 
     def __init__(self, duration=None, session_id=None, start_time=None, end_time=None):
-        """OperateHistorySession
+        r"""OperateHistorySession
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OperateHistorySession:
 
     @property
     def duration(self):
-        """Gets the duration of this OperateHistorySession.
+        r"""Gets the duration of this OperateHistorySession.
 
         会话时长，格式：hh:ii:ss
 
@@ -75,7 +75,7 @@ class OperateHistorySession:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OperateHistorySession.
+        r"""Sets the duration of this OperateHistorySession.
 
         会话时长，格式：hh:ii:ss
 
@@ -86,7 +86,7 @@ class OperateHistorySession:
 
     @property
     def session_id(self):
-        """Gets the session_id of this OperateHistorySession.
+        r"""Gets the session_id of this OperateHistorySession.
 
         会话id
 
@@ -97,7 +97,7 @@ class OperateHistorySession:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this OperateHistorySession.
+        r"""Sets the session_id of this OperateHistorySession.
 
         会话id
 
@@ -108,7 +108,7 @@ class OperateHistorySession:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OperateHistorySession.
+        r"""Gets the start_time of this OperateHistorySession.
 
         会话开始时间
 
@@ -119,7 +119,7 @@ class OperateHistorySession:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OperateHistorySession.
+        r"""Sets the start_time of this OperateHistorySession.
 
         会话开始时间
 
@@ -130,7 +130,7 @@ class OperateHistorySession:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OperateHistorySession.
+        r"""Gets the end_time of this OperateHistorySession.
 
         会话结束时间
 
@@ -141,7 +141,7 @@ class OperateHistorySession:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OperateHistorySession.
+        r"""Sets the end_time of this OperateHistorySession.
 
         会话结束时间
 

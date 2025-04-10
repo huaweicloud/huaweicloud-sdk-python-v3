@@ -25,7 +25,7 @@ class BatchCopyDRequestBody:
     }
 
     def __init__(self, configs=None):
-        """BatchCopyDRequestBody
+        r"""BatchCopyDRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCopyDRequestBody:
 
     @property
     def configs(self):
-        """Gets the configs of this BatchCopyDRequestBody.
+        r"""Gets the configs of this BatchCopyDRequestBody.
 
         :return: The configs of this BatchCopyDRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v2.BatchCopyConfigs`
@@ -51,7 +51,7 @@ class BatchCopyDRequestBody:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this BatchCopyDRequestBody.
+        r"""Sets the configs of this BatchCopyDRequestBody.
 
         :param configs: The configs of this BatchCopyDRequestBody.
         :type configs: :class:`huaweicloudsdkcdn.v2.BatchCopyConfigs`

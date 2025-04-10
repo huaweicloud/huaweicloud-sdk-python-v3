@@ -27,7 +27,7 @@ class ListAvailableZonesRequest:
     }
 
     def __init__(self, region_id=None, scope=None):
-        """ListAvailableZonesRequest
+        r"""ListAvailableZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAvailableZonesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListAvailableZonesRequest.
+        r"""Gets the region_id of this ListAvailableZonesRequest.
 
         区域id，例如cn-north-4
 
@@ -60,7 +60,7 @@ class ListAvailableZonesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListAvailableZonesRequest.
+        r"""Sets the region_id of this ListAvailableZonesRequest.
 
         区域id，例如cn-north-4
 
@@ -71,7 +71,7 @@ class ListAvailableZonesRequest:
 
     @property
     def scope(self):
-        """Gets the scope of this ListAvailableZonesRequest.
+        r"""Gets the scope of this ListAvailableZonesRequest.
 
         可用区范围
 
@@ -82,7 +82,7 @@ class ListAvailableZonesRequest:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ListAvailableZonesRequest.
+        r"""Sets the scope of this ListAvailableZonesRequest.
 
         可用区范围
 

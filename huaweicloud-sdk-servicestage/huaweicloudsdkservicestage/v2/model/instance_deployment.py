@@ -27,7 +27,7 @@ class InstanceDeployment:
     }
 
     def __init__(self, instance_id=None, variables=None):
-        """InstanceDeployment
+        r"""InstanceDeployment
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InstanceDeployment:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceDeployment.
+        r"""Gets the instance_id of this InstanceDeployment.
 
         实例id
 
@@ -60,7 +60,7 @@ class InstanceDeployment:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceDeployment.
+        r"""Sets the instance_id of this InstanceDeployment.
 
         实例id
 
@@ -71,7 +71,7 @@ class InstanceDeployment:
 
     @property
     def variables(self):
-        """Gets the variables of this InstanceDeployment.
+        r"""Gets the variables of this InstanceDeployment.
 
         :return: The variables of this InstanceDeployment.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceDeploymentVariables`
@@ -80,7 +80,7 @@ class InstanceDeployment:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this InstanceDeployment.
+        r"""Sets the variables of this InstanceDeployment.
 
         :param variables: The variables of this InstanceDeployment.
         :type variables: :class:`huaweicloudsdkservicestage.v2.InstanceDeploymentVariables`

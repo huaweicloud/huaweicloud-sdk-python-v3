@@ -25,7 +25,7 @@ class GetIdTokenRequestBody:
     }
 
     def __init__(self, auth=None):
-        """GetIdTokenRequestBody
+        r"""GetIdTokenRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetIdTokenRequestBody:
 
     @property
     def auth(self):
-        """Gets the auth of this GetIdTokenRequestBody.
+        r"""Gets the auth of this GetIdTokenRequestBody.
 
         :return: The auth of this GetIdTokenRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenAuthParams`
@@ -51,7 +51,7 @@ class GetIdTokenRequestBody:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this GetIdTokenRequestBody.
+        r"""Sets the auth of this GetIdTokenRequestBody.
 
         :param auth: The auth of this GetIdTokenRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.GetIdTokenAuthParams`

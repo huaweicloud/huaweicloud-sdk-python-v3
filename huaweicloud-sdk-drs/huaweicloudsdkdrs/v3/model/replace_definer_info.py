@@ -27,7 +27,7 @@ class ReplaceDefinerInfo:
     }
 
     def __init__(self, job_id=None, replace_definer=None):
-        """ReplaceDefinerInfo
+        r"""ReplaceDefinerInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReplaceDefinerInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ReplaceDefinerInfo.
+        r"""Gets the job_id of this ReplaceDefinerInfo.
 
         任务id
 
@@ -59,7 +59,7 @@ class ReplaceDefinerInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ReplaceDefinerInfo.
+        r"""Sets the job_id of this ReplaceDefinerInfo.
 
         任务id
 
@@ -70,7 +70,7 @@ class ReplaceDefinerInfo:
 
     @property
     def replace_definer(self):
-        """Gets the replace_definer of this ReplaceDefinerInfo.
+        r"""Gets the replace_definer of this ReplaceDefinerInfo.
 
         是否使用目标库的用户替换掉definer
 
@@ -81,7 +81,7 @@ class ReplaceDefinerInfo:
 
     @replace_definer.setter
     def replace_definer(self, replace_definer):
-        """Sets the replace_definer of this ReplaceDefinerInfo.
+        r"""Sets the replace_definer of this ReplaceDefinerInfo.
 
         是否使用目标库的用户替换掉definer
 

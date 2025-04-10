@@ -35,7 +35,7 @@ class Bucket:
     }
 
     def __init__(self, name=None, creation_date=None, location=None, cluster_type=None, ies_location=None):
-        """Bucket
+        r"""Bucket
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class Bucket:
 
     @property
     def name(self):
-        """Gets the name of this Bucket.
+        r"""Gets the name of this Bucket.
 
         Name of the bucket
 
@@ -84,7 +84,7 @@ class Bucket:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Bucket.
+        r"""Sets the name of this Bucket.
 
         Name of the bucket
 
@@ -95,7 +95,7 @@ class Bucket:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this Bucket.
+        r"""Gets the creation_date of this Bucket.
 
         Time when the bucket was created
 
@@ -106,7 +106,7 @@ class Bucket:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this Bucket.
+        r"""Sets the creation_date of this Bucket.
 
         Time when the bucket was created
 
@@ -117,7 +117,7 @@ class Bucket:
 
     @property
     def location(self):
-        """Gets the location of this Bucket.
+        r"""Gets the location of this Bucket.
 
         Location of the bucket
 
@@ -128,7 +128,7 @@ class Bucket:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this Bucket.
+        r"""Sets the location of this Bucket.
 
         Location of the bucket
 
@@ -139,7 +139,7 @@ class Bucket:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this Bucket.
+        r"""Gets the cluster_type of this Bucket.
 
         Type of the cluster where the bucket is created. This field is returned when the bucket is created in a dedicated cluster. This field is not returned in other cases.
 
@@ -150,7 +150,7 @@ class Bucket:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this Bucket.
+        r"""Sets the cluster_type of this Bucket.
 
         Type of the cluster where the bucket is created. This field is returned when the bucket is created in a dedicated cluster. This field is not returned in other cases.
 
@@ -161,7 +161,7 @@ class Bucket:
 
     @property
     def ies_location(self):
-        """Gets the ies_location of this Bucket.
+        r"""Gets the ies_location of this Bucket.
 
         If a bucket is created in a cluster at the IES site, the ID of the IES site is returned.  This header is not returned in other cases.
 
@@ -172,7 +172,7 @@ class Bucket:
 
     @ies_location.setter
     def ies_location(self, ies_location):
-        """Sets the ies_location of this Bucket.
+        r"""Sets the ies_location of this Bucket.
 
         If a bucket is created in a cluster at the IES site, the ID of the IES site is returned.  This header is not returned in other cases.
 

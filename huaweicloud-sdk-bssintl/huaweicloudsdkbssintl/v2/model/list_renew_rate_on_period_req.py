@@ -31,7 +31,7 @@ class ListRenewRateOnPeriodReq:
     }
 
     def __init__(self, resource_ids=None, period_type=None, period_num=None, include_relative_resources=None):
-        """ListRenewRateOnPeriodReq
+        r"""ListRenewRateOnPeriodReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListRenewRateOnPeriodReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ListRenewRateOnPeriodReq.
+        r"""Gets the resource_ids of this ListRenewRateOnPeriodReq.
 
         |参数名称：资源ID列表。只支持传入主资源ID，最多10个资源ID。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多10个资源ID。|
 
@@ -72,7 +72,7 @@ class ListRenewRateOnPeriodReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ListRenewRateOnPeriodReq.
+        r"""Sets the resource_ids of this ListRenewRateOnPeriodReq.
 
         |参数名称：资源ID列表。只支持传入主资源ID，最多10个资源ID。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多10个资源ID。|
 
@@ -83,7 +83,7 @@ class ListRenewRateOnPeriodReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ListRenewRateOnPeriodReq.
+        r"""Gets the period_type of this ListRenewRateOnPeriodReq.
 
         |参数名称：周期类型：2：月3：年| |参数的约束及描述：周期类型：2：月3：年|
 
@@ -94,7 +94,7 @@ class ListRenewRateOnPeriodReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ListRenewRateOnPeriodReq.
+        r"""Sets the period_type of this ListRenewRateOnPeriodReq.
 
         |参数名称：周期类型：2：月3：年| |参数的约束及描述：周期类型：2：月3：年|
 
@@ -105,7 +105,7 @@ class ListRenewRateOnPeriodReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ListRenewRateOnPeriodReq.
+        r"""Gets the period_num of this ListRenewRateOnPeriodReq.
 
         |参数名称：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3|
 
@@ -116,7 +116,7 @@ class ListRenewRateOnPeriodReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ListRenewRateOnPeriodReq.
+        r"""Sets the period_num of this ListRenewRateOnPeriodReq.
 
         |参数名称：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3|
 
@@ -127,7 +127,7 @@ class ListRenewRateOnPeriodReq:
 
     @property
     def include_relative_resources(self):
-        """Gets the include_relative_resources of this ListRenewRateOnPeriodReq.
+        r"""Gets the include_relative_resources of this ListRenewRateOnPeriodReq.
 
         |参数名称：是否包含关联资源一起询价| |参数的约束及描述：该参数非必填，true:包含。false:不包含|
 
@@ -138,7 +138,7 @@ class ListRenewRateOnPeriodReq:
 
     @include_relative_resources.setter
     def include_relative_resources(self, include_relative_resources):
-        """Sets the include_relative_resources of this ListRenewRateOnPeriodReq.
+        r"""Sets the include_relative_resources of this ListRenewRateOnPeriodReq.
 
         |参数名称：是否包含关联资源一起询价| |参数的约束及描述：该参数非必填，true:包含。false:不包含|
 

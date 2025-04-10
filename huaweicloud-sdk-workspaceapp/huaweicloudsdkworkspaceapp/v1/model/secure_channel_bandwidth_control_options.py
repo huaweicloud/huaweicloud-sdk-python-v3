@@ -25,7 +25,7 @@ class SecureChannelBandwidthControlOptions:
     }
 
     def __init__(self, secure_channel_bandwidth_control_value=None):
-        """SecureChannelBandwidthControlOptions
+        r"""SecureChannelBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SecureChannelBandwidthControlOptions:
 
     @property
     def secure_channel_bandwidth_control_value(self):
-        """Gets the secure_channel_bandwidth_control_value of this SecureChannelBandwidthControlOptions.
+        r"""Gets the secure_channel_bandwidth_control_value of this SecureChannelBandwidthControlOptions.
 
         安全通道带宽控制量（Kbps）。取值范围为[500-20000]。默认：10000。
 
@@ -54,7 +54,7 @@ class SecureChannelBandwidthControlOptions:
 
     @secure_channel_bandwidth_control_value.setter
     def secure_channel_bandwidth_control_value(self, secure_channel_bandwidth_control_value):
-        """Sets the secure_channel_bandwidth_control_value of this SecureChannelBandwidthControlOptions.
+        r"""Sets the secure_channel_bandwidth_control_value of this SecureChannelBandwidthControlOptions.
 
         安全通道带宽控制量（Kbps）。取值范围为[500-20000]。默认：10000。
 

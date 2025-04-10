@@ -47,7 +47,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
     }
 
     def __init__(self, project_id=None, id=None, name=None, region_id=None, workspace_attribution=None, agency_version=None, domain_id=None, domain_name=None, iam_agency_id=None, iam_agency_name=None, resource_spec_code=None, selected=None):
-        """CreateWorkspaceResponseBodyWorkspaceAgencyList
+        r"""CreateWorkspaceResponseBodyWorkspaceAgencyList
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the project_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托空间所属项目id
 
@@ -131,7 +131,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the project_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托空间所属项目id
 
@@ -142,7 +142,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def id(self):
-        """Gets the id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         空间委托id
 
@@ -153,7 +153,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         空间委托id
 
@@ -164,7 +164,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def name(self):
-        """Gets the name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         空间委托名称
 
@@ -175,7 +175,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         空间委托名称
 
@@ -186,7 +186,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the region_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托空间所属region id
 
@@ -197,7 +197,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the region_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托空间所属region id
 
@@ -208,7 +208,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def workspace_attribution(self):
-        """Gets the workspace_attribution of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the workspace_attribution of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         THIS_ACCOUNT:本账号空间,CROSS_ACCOUNT:跨账号空间
 
@@ -219,7 +219,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @workspace_attribution.setter
     def workspace_attribution(self, workspace_attribution):
-        """Sets the workspace_attribution of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the workspace_attribution of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         THIS_ACCOUNT:本账号空间,CROSS_ACCOUNT:跨账号空间
 
@@ -230,7 +230,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def agency_version(self):
-        """Gets the agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         用户创建托管空间时使用的IAM委托版本，V3或者V5
 
@@ -241,7 +241,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @agency_version.setter
     def agency_version(self, agency_version):
-        """Sets the agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         用户创建托管空间时使用的IAM委托版本，V3或者V5
 
@@ -252,7 +252,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the domain_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托租户id
 
@@ -263,7 +263,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the domain_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托租户id
 
@@ -274,7 +274,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the domain_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托租户名称
 
@@ -285,7 +285,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the domain_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托租户名称
 
@@ -296,7 +296,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def iam_agency_id(self):
-        """Gets the iam_agency_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the iam_agency_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         iam委托id
 
@@ -307,7 +307,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @iam_agency_id.setter
     def iam_agency_id(self, iam_agency_id):
-        """Sets the iam_agency_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the iam_agency_id of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         iam委托id
 
@@ -318,7 +318,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def iam_agency_name(self):
-        """Gets the iam_agency_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the iam_agency_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         iam委托名称
 
@@ -329,7 +329,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @iam_agency_name.setter
     def iam_agency_name(self, iam_agency_name):
-        """Sets the iam_agency_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the iam_agency_name of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         iam委托名称
 
@@ -340,7 +340,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托空间购买版本
 
@@ -351,7 +351,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         委托空间购买版本
 
@@ -362,7 +362,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @property
     def selected(self):
-        """Gets the selected of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Gets the selected of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         是否被视图选中
 
@@ -373,7 +373,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
+        r"""Sets the selected of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
         是否被视图选中
 

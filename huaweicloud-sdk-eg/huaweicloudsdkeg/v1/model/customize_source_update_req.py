@@ -27,7 +27,7 @@ class CustomizeSourceUpdateReq:
     }
 
     def __init__(self, description=None, detail=None):
-        """CustomizeSourceUpdateReq
+        r"""CustomizeSourceUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CustomizeSourceUpdateReq:
 
     @property
     def description(self):
-        """Gets the description of this CustomizeSourceUpdateReq.
+        r"""Gets the description of this CustomizeSourceUpdateReq.
 
         事件源描述
 
@@ -61,7 +61,7 @@ class CustomizeSourceUpdateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizeSourceUpdateReq.
+        r"""Sets the description of this CustomizeSourceUpdateReq.
 
         事件源描述
 
@@ -72,7 +72,7 @@ class CustomizeSourceUpdateReq:
 
     @property
     def detail(self):
-        """Gets the detail of this CustomizeSourceUpdateReq.
+        r"""Gets the detail of this CustomizeSourceUpdateReq.
 
         :return: The detail of this CustomizeSourceUpdateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
@@ -81,7 +81,7 @@ class CustomizeSourceUpdateReq:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CustomizeSourceUpdateReq.
+        r"""Sets the detail of this CustomizeSourceUpdateReq.
 
         :param detail: The detail of this CustomizeSourceUpdateReq.
         :type detail: :class:`huaweicloudsdkeg.v1.RocketMqDetail`

@@ -27,7 +27,7 @@ class DeleteHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, instance_id=None):
-        """DeleteHostRequest
+        r"""DeleteHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteHostRequest.
+        r"""Gets the enterprise_project_id of this DeleteHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -60,7 +60,7 @@ class DeleteHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteHostRequest.
+        r"""Sets the enterprise_project_id of this DeleteHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -71,7 +71,7 @@ class DeleteHostRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteHostRequest.
+        r"""Gets the instance_id of this DeleteHostRequest.
 
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
@@ -82,7 +82,7 @@ class DeleteHostRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteHostRequest.
+        r"""Sets the instance_id of this DeleteHostRequest.
 
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 

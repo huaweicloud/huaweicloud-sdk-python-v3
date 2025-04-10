@@ -25,7 +25,7 @@ class AddProtectRequest:
     }
 
     def __init__(self, access_level=None):
-        """AddProtectRequest
+        r"""AddProtectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddProtectRequest:
 
     @property
     def access_level(self):
-        """Gets the access_level of this AddProtectRequest.
+        r"""Gets the access_level of this AddProtectRequest.
 
         :return: The access_level of this AddProtectRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectAccessLevel`
@@ -51,7 +51,7 @@ class AddProtectRequest:
 
     @access_level.setter
     def access_level(self, access_level):
-        """Sets the access_level of this AddProtectRequest.
+        r"""Sets the access_level of this AddProtectRequest.
 
         :param access_level: The access_level of this AddProtectRequest.
         :type access_level: :class:`huaweicloudsdkcodehub.v3.AddProtectAccessLevel`

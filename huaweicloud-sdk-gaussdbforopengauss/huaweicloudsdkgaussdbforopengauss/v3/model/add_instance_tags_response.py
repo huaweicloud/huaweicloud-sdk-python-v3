@@ -28,7 +28,7 @@ class AddInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None):
-        """AddInstanceTagsResponse
+        r"""AddInstanceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddInstanceTagsResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddInstanceTagsResponse.
+        r"""Gets the instance_id of this AddInstanceTagsResponse.
 
         添加标签的实例ID。
 
@@ -62,7 +62,7 @@ class AddInstanceTagsResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddInstanceTagsResponse.
+        r"""Sets the instance_id of this AddInstanceTagsResponse.
 
         添加标签的实例ID。
 
@@ -73,7 +73,7 @@ class AddInstanceTagsResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this AddInstanceTagsResponse.
+        r"""Gets the instance_name of this AddInstanceTagsResponse.
 
         添加标签的实例名称。
 
@@ -84,7 +84,7 @@ class AddInstanceTagsResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this AddInstanceTagsResponse.
+        r"""Sets the instance_name of this AddInstanceTagsResponse.
 
         添加标签的实例名称。
 

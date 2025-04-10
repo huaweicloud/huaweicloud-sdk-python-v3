@@ -29,7 +29,7 @@ class SampleParam:
     }
 
     def __init__(self, divide_type=None, train_rate=None, test_rate=None):
-        """SampleParam
+        r"""SampleParam
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SampleParam:
 
     @property
     def divide_type(self):
-        """Gets the divide_type of this SampleParam.
+        r"""Gets the divide_type of this SampleParam.
 
         训练集测试集划分方式： - TIME，时间比例 - RAMDOM，个数比例
 
@@ -67,7 +67,7 @@ class SampleParam:
 
     @divide_type.setter
     def divide_type(self, divide_type):
-        """Sets the divide_type of this SampleParam.
+        r"""Sets the divide_type of this SampleParam.
 
         训练集测试集划分方式： - TIME，时间比例 - RAMDOM，个数比例
 
@@ -78,7 +78,7 @@ class SampleParam:
 
     @property
     def train_rate(self):
-        """Gets the train_rate of this SampleParam.
+        r"""Gets the train_rate of this SampleParam.
 
         训练数据占比。
 
@@ -89,7 +89,7 @@ class SampleParam:
 
     @train_rate.setter
     def train_rate(self, train_rate):
-        """Sets the train_rate of this SampleParam.
+        r"""Sets the train_rate of this SampleParam.
 
         训练数据占比。
 
@@ -100,7 +100,7 @@ class SampleParam:
 
     @property
     def test_rate(self):
-        """Gets the test_rate of this SampleParam.
+        r"""Gets the test_rate of this SampleParam.
 
         测试数据占比。
 
@@ -111,7 +111,7 @@ class SampleParam:
 
     @test_rate.setter
     def test_rate(self, test_rate):
-        """Sets the test_rate of this SampleParam.
+        r"""Sets the test_rate of this SampleParam.
 
         测试数据占比。
 

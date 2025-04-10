@@ -30,7 +30,7 @@ class ListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, endpoints=None, page_info=None, request_id=None):
-        """ListEndpointsResponse
+        r"""ListEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ListEndpointsResponse.
+        r"""Gets the endpoints of this ListEndpointsResponse.
 
         终端节点列表。
 
@@ -69,7 +69,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ListEndpointsResponse.
+        r"""Sets the endpoints of this ListEndpointsResponse.
 
         终端节点列表。
 
@@ -80,7 +80,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEndpointsResponse.
+        r"""Gets the page_info of this ListEndpointsResponse.
 
         :return: The page_info of this ListEndpointsResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -89,7 +89,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEndpointsResponse.
+        r"""Sets the page_info of this ListEndpointsResponse.
 
         :param page_info: The page_info of this ListEndpointsResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -98,7 +98,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListEndpointsResponse.
+        r"""Gets the request_id of this ListEndpointsResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListEndpointsResponse.
+        r"""Sets the request_id of this ListEndpointsResponse.
 
         请求ID。
 

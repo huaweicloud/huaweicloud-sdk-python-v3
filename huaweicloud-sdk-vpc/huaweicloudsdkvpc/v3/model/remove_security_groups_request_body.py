@@ -25,7 +25,7 @@ class RemoveSecurityGroupsRequestBody:
     }
 
     def __init__(self, port=None):
-        """RemoveSecurityGroupsRequestBody
+        r"""RemoveSecurityGroupsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveSecurityGroupsRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this RemoveSecurityGroupsRequestBody.
+        r"""Gets the port of this RemoveSecurityGroupsRequestBody.
 
         :return: The port of this RemoveSecurityGroupsRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveSecurityGroupOption`
@@ -51,7 +51,7 @@ class RemoveSecurityGroupsRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RemoveSecurityGroupsRequestBody.
+        r"""Sets the port of this RemoveSecurityGroupsRequestBody.
 
         :param port: The port of this RemoveSecurityGroupsRequestBody.
         :type port: :class:`huaweicloudsdkvpc.v3.RemoveSecurityGroupOption`

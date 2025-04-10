@@ -25,7 +25,7 @@ class CreateProjectBranchRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProjectBranchRequest
+        r"""CreateProjectBranchRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProjectBranchRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectBranchRequest.
+        r"""Gets the body of this CreateProjectBranchRequest.
 
         :return: The body of this CreateProjectBranchRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BranchVersionInfo`
@@ -52,7 +52,7 @@ class CreateProjectBranchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectBranchRequest.
+        r"""Sets the body of this CreateProjectBranchRequest.
 
         :param body: The body of this CreateProjectBranchRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.BranchVersionInfo`

@@ -35,7 +35,7 @@ class ErrorlogForLtsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, level=None, line_num=None, limit=None, search_type=None):
-        """ErrorlogForLtsRequest
+        r"""ErrorlogForLtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ErrorlogForLtsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ErrorlogForLtsRequest.
+        r"""Gets the start_time of this ErrorlogForLtsRequest.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -87,7 +87,7 @@ class ErrorlogForLtsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ErrorlogForLtsRequest.
+        r"""Sets the start_time of this ErrorlogForLtsRequest.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -98,7 +98,7 @@ class ErrorlogForLtsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ErrorlogForLtsRequest.
+        r"""Gets the end_time of this ErrorlogForLtsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -109,7 +109,7 @@ class ErrorlogForLtsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ErrorlogForLtsRequest.
+        r"""Sets the end_time of this ErrorlogForLtsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -120,7 +120,7 @@ class ErrorlogForLtsRequest:
 
     @property
     def level(self):
-        """Gets the level of this ErrorlogForLtsRequest.
+        r"""Gets the level of this ErrorlogForLtsRequest.
 
         日志级别，默认为ALL。
 
@@ -131,7 +131,7 @@ class ErrorlogForLtsRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ErrorlogForLtsRequest.
+        r"""Sets the level of this ErrorlogForLtsRequest.
 
         日志级别，默认为ALL。
 
@@ -142,7 +142,7 @@ class ErrorlogForLtsRequest:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ErrorlogForLtsRequest.
+        r"""Gets the line_num of this ErrorlogForLtsRequest.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time和end_time之间。
 
@@ -153,7 +153,7 @@ class ErrorlogForLtsRequest:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ErrorlogForLtsRequest.
+        r"""Sets the line_num of this ErrorlogForLtsRequest.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time和end_time之间。
 
@@ -164,7 +164,7 @@ class ErrorlogForLtsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ErrorlogForLtsRequest.
+        r"""Gets the limit of this ErrorlogForLtsRequest.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -175,7 +175,7 @@ class ErrorlogForLtsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ErrorlogForLtsRequest.
+        r"""Sets the limit of this ErrorlogForLtsRequest.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -186,7 +186,7 @@ class ErrorlogForLtsRequest:
 
     @property
     def search_type(self):
-        """Gets the search_type of this ErrorlogForLtsRequest.
+        r"""Gets the search_type of this ErrorlogForLtsRequest.
 
         搜索方式。默认forwards。配合line_num使用，以line_num为起点，向前搜索或向后搜索。
 
@@ -197,7 +197,7 @@ class ErrorlogForLtsRequest:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this ErrorlogForLtsRequest.
+        r"""Sets the search_type of this ErrorlogForLtsRequest.
 
         搜索方式。默认forwards。配合line_num使用，以line_num为起点，向前搜索或向后搜索。
 

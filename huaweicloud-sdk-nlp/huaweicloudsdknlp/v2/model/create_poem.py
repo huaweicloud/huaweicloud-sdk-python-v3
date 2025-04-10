@@ -29,7 +29,7 @@ class CreatePoem:
     }
 
     def __init__(self, title=None, type=None, acrostic=None):
-        """CreatePoem
+        r"""CreatePoem
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePoem:
 
     @property
     def title(self):
-        """Gets the title of this CreatePoem.
+        r"""Gets the title of this CreatePoem.
 
         诗歌标题，目前仅支持UTF-8编码，仅支持中文，长度为1-10
 
@@ -66,7 +66,7 @@ class CreatePoem:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreatePoem.
+        r"""Sets the title of this CreatePoem.
 
         诗歌标题，目前仅支持UTF-8编码，仅支持中文，长度为1-10
 
@@ -77,7 +77,7 @@ class CreatePoem:
 
     @property
     def type(self):
-        """Gets the type of this CreatePoem.
+        r"""Gets the type of this CreatePoem.
 
         诗歌类型，取值如下： 0：五言绝句； 1：七言绝句； 2：五言律诗； 3：七言律诗；
 
@@ -88,7 +88,7 @@ class CreatePoem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreatePoem.
+        r"""Sets the type of this CreatePoem.
 
         诗歌类型，取值如下： 0：五言绝句； 1：七言绝句； 2：五言律诗； 3：七言律诗；
 
@@ -99,7 +99,7 @@ class CreatePoem:
 
     @property
     def acrostic(self):
-        """Gets the acrostic of this CreatePoem.
+        r"""Gets the acrostic of this CreatePoem.
 
         藏头诗，取值如下： 取值为true，为藏头诗； 取值为false，非藏头诗； 默认取值为false。
 
@@ -110,7 +110,7 @@ class CreatePoem:
 
     @acrostic.setter
     def acrostic(self, acrostic):
-        """Sets the acrostic of this CreatePoem.
+        r"""Sets the acrostic of this CreatePoem.
 
         藏头诗，取值如下： 取值为true，为藏头诗； 取值为false，非藏头诗； 默认取值为false。
 

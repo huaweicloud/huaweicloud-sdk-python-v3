@@ -45,7 +45,7 @@ class ListInstancesSessionRespondBodySessions:
     }
 
     def __init__(self, addr=None, id=None, name=None, cmd=None, age=None, idle=None, db=None, fd=None, sub=None, psub=None, multi=None):
-        """ListInstancesSessionRespondBodySessions
+        r"""ListInstancesSessionRespondBodySessions
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def addr(self):
-        """Gets the addr of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the addr of this ListInstancesSessionRespondBodySessions.
 
         客户端的地址和端口。
 
@@ -124,7 +124,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the addr of this ListInstancesSessionRespondBodySessions.
 
         客户端的地址和端口。
 
@@ -135,7 +135,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def id(self):
-        """Gets the id of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the id of this ListInstancesSessionRespondBodySessions.
 
         会话id。
 
@@ -146,7 +146,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the id of this ListInstancesSessionRespondBodySessions.
 
         会话id。
 
@@ -157,7 +157,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the name of this ListInstancesSessionRespondBodySessions.
 
         连接名。
 
@@ -168,7 +168,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the name of this ListInstancesSessionRespondBodySessions.
 
         连接名。
 
@@ -179,7 +179,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def cmd(self):
-        """Gets the cmd of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the cmd of this ListInstancesSessionRespondBodySessions.
 
         最近一次执行的命令。
 
@@ -190,7 +190,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the cmd of this ListInstancesSessionRespondBodySessions.
 
         最近一次执行的命令。
 
@@ -201,7 +201,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def age(self):
-        """Gets the age of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the age of this ListInstancesSessionRespondBodySessions.
 
         以秒计算的已连接时长。
 
@@ -212,7 +212,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @age.setter
     def age(self, age):
-        """Sets the age of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the age of this ListInstancesSessionRespondBodySessions.
 
         以秒计算的已连接时长。
 
@@ -223,7 +223,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def idle(self):
-        """Gets the idle of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the idle of this ListInstancesSessionRespondBodySessions.
 
         以秒计算的空闲时长。
 
@@ -234,7 +234,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @idle.setter
     def idle(self, idle):
-        """Sets the idle of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the idle of this ListInstancesSessionRespondBodySessions.
 
         以秒计算的空闲时长。
 
@@ -245,7 +245,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def db(self):
-        """Gets the db of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the db of this ListInstancesSessionRespondBodySessions.
 
         该客户端正在使用的数据库 ID。
 
@@ -256,7 +256,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the db of this ListInstancesSessionRespondBodySessions.
 
         该客户端正在使用的数据库 ID。
 
@@ -267,7 +267,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def fd(self):
-        """Gets the fd of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the fd of this ListInstancesSessionRespondBodySessions.
 
         套接字所使用的文件描述符。
 
@@ -278,7 +278,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @fd.setter
     def fd(self, fd):
-        """Sets the fd of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the fd of this ListInstancesSessionRespondBodySessions.
 
         套接字所使用的文件描述符。
 
@@ -289,7 +289,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def sub(self):
-        """Gets the sub of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the sub of this ListInstancesSessionRespondBodySessions.
 
         已订阅频道的数量。
 
@@ -300,7 +300,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @sub.setter
     def sub(self, sub):
-        """Sets the sub of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the sub of this ListInstancesSessionRespondBodySessions.
 
         已订阅频道的数量。
 
@@ -311,7 +311,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def psub(self):
-        """Gets the psub of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the psub of this ListInstancesSessionRespondBodySessions.
 
         已订阅模式的数量。
 
@@ -322,7 +322,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @psub.setter
     def psub(self, psub):
-        """Sets the psub of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the psub of this ListInstancesSessionRespondBodySessions.
 
         已订阅模式的数量。
 
@@ -333,7 +333,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @property
     def multi(self):
-        """Gets the multi of this ListInstancesSessionRespondBodySessions.
+        r"""Gets the multi of this ListInstancesSessionRespondBodySessions.
 
         在事务中被执行的命令数量。
 
@@ -344,7 +344,7 @@ class ListInstancesSessionRespondBodySessions:
 
     @multi.setter
     def multi(self, multi):
-        """Sets the multi of this ListInstancesSessionRespondBodySessions.
+        r"""Sets the multi of this ListInstancesSessionRespondBodySessions.
 
         在事务中被执行的命令数量。
 

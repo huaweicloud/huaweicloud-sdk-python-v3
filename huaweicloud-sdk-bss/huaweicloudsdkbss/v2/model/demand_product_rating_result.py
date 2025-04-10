@@ -37,7 +37,7 @@ class DemandProductRatingResult:
     }
 
     def __init__(self, id=None, product_id=None, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, discount_rating_results=None):
-        """DemandProductRatingResult
+        r"""DemandProductRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DemandProductRatingResult:
 
     @property
     def id(self):
-        """Gets the id of this DemandProductRatingResult.
+        r"""Gets the id of this DemandProductRatingResult.
 
         同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
@@ -96,7 +96,7 @@ class DemandProductRatingResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DemandProductRatingResult.
+        r"""Sets the id of this DemandProductRatingResult.
 
         同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
@@ -107,7 +107,7 @@ class DemandProductRatingResult:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DemandProductRatingResult.
+        r"""Gets the product_id of this DemandProductRatingResult.
 
         按需产品的ID。
 
@@ -118,7 +118,7 @@ class DemandProductRatingResult:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DemandProductRatingResult.
+        r"""Sets the product_id of this DemandProductRatingResult.
 
         按需产品的ID。
 
@@ -129,7 +129,7 @@ class DemandProductRatingResult:
 
     @property
     def amount(self):
-        """Gets the amount of this DemandProductRatingResult.
+        r"""Gets the amount of this DemandProductRatingResult.
 
         折扣的金额。
 
@@ -140,7 +140,7 @@ class DemandProductRatingResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this DemandProductRatingResult.
+        r"""Sets the amount of this DemandProductRatingResult.
 
         折扣的金额。
 
@@ -151,7 +151,7 @@ class DemandProductRatingResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this DemandProductRatingResult.
+        r"""Gets the discount_amount of this DemandProductRatingResult.
 
         优惠额（官网价和总价的差）。
 
@@ -162,7 +162,7 @@ class DemandProductRatingResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this DemandProductRatingResult.
+        r"""Sets the discount_amount of this DemandProductRatingResult.
 
         优惠额（官网价和总价的差）。
 
@@ -173,7 +173,7 @@ class DemandProductRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this DemandProductRatingResult.
+        r"""Gets the official_website_amount of this DemandProductRatingResult.
 
         按需产品的官网价。
 
@@ -184,7 +184,7 @@ class DemandProductRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this DemandProductRatingResult.
+        r"""Sets the official_website_amount of this DemandProductRatingResult.
 
         按需产品的官网价。
 
@@ -195,7 +195,7 @@ class DemandProductRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this DemandProductRatingResult.
+        r"""Gets the measure_id of this DemandProductRatingResult.
 
         度量单位标识。 1：元
 
@@ -206,7 +206,7 @@ class DemandProductRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this DemandProductRatingResult.
+        r"""Sets the measure_id of this DemandProductRatingResult.
 
         度量单位标识。 1：元
 
@@ -217,7 +217,7 @@ class DemandProductRatingResult:
 
     @property
     def discount_rating_results(self):
-        """Gets the discount_rating_results of this DemandProductRatingResult.
+        r"""Gets the discount_rating_results of this DemandProductRatingResult.
 
         折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
 
@@ -228,7 +228,7 @@ class DemandProductRatingResult:
 
     @discount_rating_results.setter
     def discount_rating_results(self, discount_rating_results):
-        """Sets the discount_rating_results of this DemandProductRatingResult.
+        r"""Sets the discount_rating_results of this DemandProductRatingResult.
 
         折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
 

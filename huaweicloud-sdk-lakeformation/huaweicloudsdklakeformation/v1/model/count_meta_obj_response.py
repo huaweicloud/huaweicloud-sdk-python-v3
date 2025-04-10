@@ -38,7 +38,7 @@ class CountMetaObjResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, functions_count=None, catalogs_count=None, databases_count=None, tables_count=None, partitions_count=None, indexes_count=None):
-        """CountMetaObjResponse
+        r"""CountMetaObjResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this CountMetaObjResponse.
+        r"""Gets the total_count of this CountMetaObjResponse.
 
         总数量
 
@@ -97,7 +97,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this CountMetaObjResponse.
+        r"""Sets the total_count of this CountMetaObjResponse.
 
         总数量
 
@@ -108,7 +108,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def functions_count(self):
-        """Gets the functions_count of this CountMetaObjResponse.
+        r"""Gets the functions_count of this CountMetaObjResponse.
 
         函数数量
 
@@ -119,7 +119,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @functions_count.setter
     def functions_count(self, functions_count):
-        """Sets the functions_count of this CountMetaObjResponse.
+        r"""Sets the functions_count of this CountMetaObjResponse.
 
         函数数量
 
@@ -130,7 +130,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def catalogs_count(self):
-        """Gets the catalogs_count of this CountMetaObjResponse.
+        r"""Gets the catalogs_count of this CountMetaObjResponse.
 
         目录数量
 
@@ -141,7 +141,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @catalogs_count.setter
     def catalogs_count(self, catalogs_count):
-        """Sets the catalogs_count of this CountMetaObjResponse.
+        r"""Sets the catalogs_count of this CountMetaObjResponse.
 
         目录数量
 
@@ -152,7 +152,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def databases_count(self):
-        """Gets the databases_count of this CountMetaObjResponse.
+        r"""Gets the databases_count of this CountMetaObjResponse.
 
         数据库数量
 
@@ -163,7 +163,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @databases_count.setter
     def databases_count(self, databases_count):
-        """Sets the databases_count of this CountMetaObjResponse.
+        r"""Sets the databases_count of this CountMetaObjResponse.
 
         数据库数量
 
@@ -174,7 +174,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def tables_count(self):
-        """Gets the tables_count of this CountMetaObjResponse.
+        r"""Gets the tables_count of this CountMetaObjResponse.
 
         表数量
 
@@ -185,7 +185,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @tables_count.setter
     def tables_count(self, tables_count):
-        """Sets the tables_count of this CountMetaObjResponse.
+        r"""Sets the tables_count of this CountMetaObjResponse.
 
         表数量
 
@@ -196,7 +196,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def partitions_count(self):
-        """Gets the partitions_count of this CountMetaObjResponse.
+        r"""Gets the partitions_count of this CountMetaObjResponse.
 
         分区数量
 
@@ -207,7 +207,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @partitions_count.setter
     def partitions_count(self, partitions_count):
-        """Sets the partitions_count of this CountMetaObjResponse.
+        r"""Sets the partitions_count of this CountMetaObjResponse.
 
         分区数量
 
@@ -218,7 +218,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @property
     def indexes_count(self):
-        """Gets the indexes_count of this CountMetaObjResponse.
+        r"""Gets the indexes_count of this CountMetaObjResponse.
 
         索引数量
 
@@ -229,7 +229,7 @@ class CountMetaObjResponse(SdkResponse):
 
     @indexes_count.setter
     def indexes_count(self, indexes_count):
-        """Sets the indexes_count of this CountMetaObjResponse.
+        r"""Sets the indexes_count of this CountMetaObjResponse.
 
         索引数量
 

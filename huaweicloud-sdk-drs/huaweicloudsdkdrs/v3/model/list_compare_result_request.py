@@ -27,7 +27,7 @@ class ListCompareResultRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListCompareResultRequest
+        r"""ListCompareResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCompareResultRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCompareResultRequest.
+        r"""Gets the x_language of this ListCompareResultRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class ListCompareResultRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCompareResultRequest.
+        r"""Sets the x_language of this ListCompareResultRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class ListCompareResultRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCompareResultRequest.
+        r"""Gets the body of this ListCompareResultRequest.
 
         :return: The body of this ListCompareResultRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryCompareResultReq`
@@ -81,7 +81,7 @@ class ListCompareResultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCompareResultRequest.
+        r"""Sets the body of this ListCompareResultRequest.
 
         :param body: The body of this ListCompareResultRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.QueryCompareResultReq`

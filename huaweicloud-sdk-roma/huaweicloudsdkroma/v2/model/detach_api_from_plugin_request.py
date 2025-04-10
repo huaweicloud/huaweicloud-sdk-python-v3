@@ -29,7 +29,7 @@ class DetachApiFromPluginRequest:
     }
 
     def __init__(self, instance_id=None, plugin_id=None, body=None):
-        """DetachApiFromPluginRequest
+        r"""DetachApiFromPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DetachApiFromPluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DetachApiFromPluginRequest.
+        r"""Gets the instance_id of this DetachApiFromPluginRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class DetachApiFromPluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DetachApiFromPluginRequest.
+        r"""Sets the instance_id of this DetachApiFromPluginRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class DetachApiFromPluginRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this DetachApiFromPluginRequest.
+        r"""Gets the plugin_id of this DetachApiFromPluginRequest.
 
         插件编号
 
@@ -88,7 +88,7 @@ class DetachApiFromPluginRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this DetachApiFromPluginRequest.
+        r"""Sets the plugin_id of this DetachApiFromPluginRequest.
 
         插件编号
 
@@ -99,7 +99,7 @@ class DetachApiFromPluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this DetachApiFromPluginRequest.
+        r"""Gets the body of this DetachApiFromPluginRequest.
 
         :return: The body of this DetachApiFromPluginRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.PluginOperApiInfo`
@@ -108,7 +108,7 @@ class DetachApiFromPluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachApiFromPluginRequest.
+        r"""Sets the body of this DetachApiFromPluginRequest.
 
         :param body: The body of this DetachApiFromPluginRequest.
         :type body: :class:`huaweicloudsdkroma.v2.PluginOperApiInfo`

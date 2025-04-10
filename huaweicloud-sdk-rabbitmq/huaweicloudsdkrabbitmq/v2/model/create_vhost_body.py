@@ -25,7 +25,7 @@ class CreateVhostBody:
     }
 
     def __init__(self, name=None):
-        """CreateVhostBody
+        r"""CreateVhostBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVhostBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateVhostBody.
+        r"""Gets the name of this CreateVhostBody.
 
         Vhost名称
 
@@ -53,7 +53,7 @@ class CreateVhostBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVhostBody.
+        r"""Sets the name of this CreateVhostBody.
 
         Vhost名称
 

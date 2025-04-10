@@ -69,7 +69,7 @@ class ShowGlobalEip:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, ip_address=None, ipv6_address=None, freezen=None, freezen_info=None, polluted=None, status=None, created_at=None, updated_at=None, internet_bandwidth_info=None, global_connection_bandwidth_info=None, associate_instance_info=None, is_pre_paid=None, tags=None, sys_tags=None, enterprise_project_id=None):
-        """ShowGlobalEip
+        r"""ShowGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class ShowGlobalEip:
 
     @property
     def id(self):
-        """Gets the id of this ShowGlobalEip.
+        r"""Gets the id of this ShowGlobalEip.
 
         全域弹性公网IP的ID
 
@@ -208,7 +208,7 @@ class ShowGlobalEip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowGlobalEip.
+        r"""Sets the id of this ShowGlobalEip.
 
         全域弹性公网IP的ID
 
@@ -219,7 +219,7 @@ class ShowGlobalEip:
 
     @property
     def name(self):
-        """Gets the name of this ShowGlobalEip.
+        r"""Gets the name of this ShowGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -230,7 +230,7 @@ class ShowGlobalEip:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGlobalEip.
+        r"""Sets the name of this ShowGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -241,7 +241,7 @@ class ShowGlobalEip:
 
     @property
     def description(self):
-        """Gets the description of this ShowGlobalEip.
+        r"""Gets the description of this ShowGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -252,7 +252,7 @@ class ShowGlobalEip:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowGlobalEip.
+        r"""Sets the description of this ShowGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -263,7 +263,7 @@ class ShowGlobalEip:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowGlobalEip.
+        r"""Gets the domain_id of this ShowGlobalEip.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -274,7 +274,7 @@ class ShowGlobalEip:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowGlobalEip.
+        r"""Sets the domain_id of this ShowGlobalEip.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -285,7 +285,7 @@ class ShowGlobalEip:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ShowGlobalEip.
+        r"""Gets the access_site of this ShowGlobalEip.
 
         接入点信息
 
@@ -296,7 +296,7 @@ class ShowGlobalEip:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ShowGlobalEip.
+        r"""Sets the access_site of this ShowGlobalEip.
 
         接入点信息
 
@@ -307,7 +307,7 @@ class ShowGlobalEip:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this ShowGlobalEip.
+        r"""Gets the geip_pool_name of this ShowGlobalEip.
 
         全域弹性公网IP池子名称
 
@@ -318,7 +318,7 @@ class ShowGlobalEip:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this ShowGlobalEip.
+        r"""Sets the geip_pool_name of this ShowGlobalEip.
 
         全域弹性公网IP池子名称
 
@@ -329,7 +329,7 @@ class ShowGlobalEip:
 
     @property
     def isp(self):
-        """Gets the isp of this ShowGlobalEip.
+        r"""Gets the isp of this ShowGlobalEip.
 
         全域弹性公网IP所属线路
 
@@ -340,7 +340,7 @@ class ShowGlobalEip:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ShowGlobalEip.
+        r"""Sets the isp of this ShowGlobalEip.
 
         全域弹性公网IP所属线路
 
@@ -351,7 +351,7 @@ class ShowGlobalEip:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ShowGlobalEip.
+        r"""Gets the ip_version of this ShowGlobalEip.
 
         - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
@@ -362,7 +362,7 @@ class ShowGlobalEip:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ShowGlobalEip.
+        r"""Sets the ip_version of this ShowGlobalEip.
 
         - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
@@ -373,7 +373,7 @@ class ShowGlobalEip:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ShowGlobalEip.
+        r"""Gets the ip_address of this ShowGlobalEip.
 
         IPv4地址
 
@@ -384,7 +384,7 @@ class ShowGlobalEip:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ShowGlobalEip.
+        r"""Sets the ip_address of this ShowGlobalEip.
 
         IPv4地址
 
@@ -395,7 +395,7 @@ class ShowGlobalEip:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this ShowGlobalEip.
+        r"""Gets the ipv6_address of this ShowGlobalEip.
 
         IPv6地址
 
@@ -406,7 +406,7 @@ class ShowGlobalEip:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this ShowGlobalEip.
+        r"""Sets the ipv6_address of this ShowGlobalEip.
 
         IPv6地址
 
@@ -417,7 +417,7 @@ class ShowGlobalEip:
 
     @property
     def freezen(self):
-        """Gets the freezen of this ShowGlobalEip.
+        r"""Gets the freezen of this ShowGlobalEip.
 
         是否冻结
 
@@ -428,7 +428,7 @@ class ShowGlobalEip:
 
     @freezen.setter
     def freezen(self, freezen):
-        """Sets the freezen of this ShowGlobalEip.
+        r"""Sets the freezen of this ShowGlobalEip.
 
         是否冻结
 
@@ -439,7 +439,7 @@ class ShowGlobalEip:
 
     @property
     def freezen_info(self):
-        """Gets the freezen_info of this ShowGlobalEip.
+        r"""Gets the freezen_info of this ShowGlobalEip.
 
         冻结原因
 
@@ -450,7 +450,7 @@ class ShowGlobalEip:
 
     @freezen_info.setter
     def freezen_info(self, freezen_info):
-        """Sets the freezen_info of this ShowGlobalEip.
+        r"""Sets the freezen_info of this ShowGlobalEip.
 
         冻结原因
 
@@ -461,7 +461,7 @@ class ShowGlobalEip:
 
     @property
     def polluted(self):
-        """Gets the polluted of this ShowGlobalEip.
+        r"""Gets the polluted of this ShowGlobalEip.
 
         是否污染
 
@@ -472,7 +472,7 @@ class ShowGlobalEip:
 
     @polluted.setter
     def polluted(self, polluted):
-        """Sets the polluted of this ShowGlobalEip.
+        r"""Sets the polluted of this ShowGlobalEip.
 
         是否污染
 
@@ -483,7 +483,7 @@ class ShowGlobalEip:
 
     @property
     def status(self):
-        """Gets the status of this ShowGlobalEip.
+        r"""Gets the status of this ShowGlobalEip.
 
         状态
 
@@ -494,7 +494,7 @@ class ShowGlobalEip:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowGlobalEip.
+        r"""Sets the status of this ShowGlobalEip.
 
         状态
 
@@ -505,7 +505,7 @@ class ShowGlobalEip:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowGlobalEip.
+        r"""Gets the created_at of this ShowGlobalEip.
 
         创建时间
 
@@ -516,7 +516,7 @@ class ShowGlobalEip:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowGlobalEip.
+        r"""Sets the created_at of this ShowGlobalEip.
 
         创建时间
 
@@ -527,7 +527,7 @@ class ShowGlobalEip:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowGlobalEip.
+        r"""Gets the updated_at of this ShowGlobalEip.
 
         更新时间
 
@@ -538,7 +538,7 @@ class ShowGlobalEip:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowGlobalEip.
+        r"""Sets the updated_at of this ShowGlobalEip.
 
         更新时间
 
@@ -549,7 +549,7 @@ class ShowGlobalEip:
 
     @property
     def internet_bandwidth_info(self):
-        """Gets the internet_bandwidth_info of this ShowGlobalEip.
+        r"""Gets the internet_bandwidth_info of this ShowGlobalEip.
 
         :return: The internet_bandwidth_info of this ShowGlobalEip.
         :rtype: :class:`huaweicloudsdkgeip.v3.InternetBandwidthInfo`
@@ -558,7 +558,7 @@ class ShowGlobalEip:
 
     @internet_bandwidth_info.setter
     def internet_bandwidth_info(self, internet_bandwidth_info):
-        """Sets the internet_bandwidth_info of this ShowGlobalEip.
+        r"""Sets the internet_bandwidth_info of this ShowGlobalEip.
 
         :param internet_bandwidth_info: The internet_bandwidth_info of this ShowGlobalEip.
         :type internet_bandwidth_info: :class:`huaweicloudsdkgeip.v3.InternetBandwidthInfo`
@@ -567,7 +567,7 @@ class ShowGlobalEip:
 
     @property
     def global_connection_bandwidth_info(self):
-        """Gets the global_connection_bandwidth_info of this ShowGlobalEip.
+        r"""Gets the global_connection_bandwidth_info of this ShowGlobalEip.
 
         :return: The global_connection_bandwidth_info of this ShowGlobalEip.
         :rtype: :class:`huaweicloudsdkgeip.v3.GlobalConnectionBandwidthInfo`
@@ -576,7 +576,7 @@ class ShowGlobalEip:
 
     @global_connection_bandwidth_info.setter
     def global_connection_bandwidth_info(self, global_connection_bandwidth_info):
-        """Sets the global_connection_bandwidth_info of this ShowGlobalEip.
+        r"""Sets the global_connection_bandwidth_info of this ShowGlobalEip.
 
         :param global_connection_bandwidth_info: The global_connection_bandwidth_info of this ShowGlobalEip.
         :type global_connection_bandwidth_info: :class:`huaweicloudsdkgeip.v3.GlobalConnectionBandwidthInfo`
@@ -585,7 +585,7 @@ class ShowGlobalEip:
 
     @property
     def associate_instance_info(self):
-        """Gets the associate_instance_info of this ShowGlobalEip.
+        r"""Gets the associate_instance_info of this ShowGlobalEip.
 
         :return: The associate_instance_info of this ShowGlobalEip.
         :rtype: :class:`huaweicloudsdkgeip.v3.InstanceInfo`
@@ -594,7 +594,7 @@ class ShowGlobalEip:
 
     @associate_instance_info.setter
     def associate_instance_info(self, associate_instance_info):
-        """Sets the associate_instance_info of this ShowGlobalEip.
+        r"""Sets the associate_instance_info of this ShowGlobalEip.
 
         :param associate_instance_info: The associate_instance_info of this ShowGlobalEip.
         :type associate_instance_info: :class:`huaweicloudsdkgeip.v3.InstanceInfo`
@@ -603,7 +603,7 @@ class ShowGlobalEip:
 
     @property
     def is_pre_paid(self):
-        """Gets the is_pre_paid of this ShowGlobalEip.
+        r"""Gets the is_pre_paid of this ShowGlobalEip.
 
         是否包周期
 
@@ -614,7 +614,7 @@ class ShowGlobalEip:
 
     @is_pre_paid.setter
     def is_pre_paid(self, is_pre_paid):
-        """Sets the is_pre_paid of this ShowGlobalEip.
+        r"""Sets the is_pre_paid of this ShowGlobalEip.
 
         是否包周期
 
@@ -625,7 +625,7 @@ class ShowGlobalEip:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowGlobalEip.
+        r"""Gets the tags of this ShowGlobalEip.
 
         全域弹性公网IP标签
 
@@ -636,7 +636,7 @@ class ShowGlobalEip:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowGlobalEip.
+        r"""Sets the tags of this ShowGlobalEip.
 
         全域弹性公网IP标签
 
@@ -647,7 +647,7 @@ class ShowGlobalEip:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowGlobalEip.
+        r"""Gets the sys_tags of this ShowGlobalEip.
 
         系统标签
 
@@ -658,7 +658,7 @@ class ShowGlobalEip:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowGlobalEip.
+        r"""Sets the sys_tags of this ShowGlobalEip.
 
         系统标签
 
@@ -669,7 +669,7 @@ class ShowGlobalEip:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowGlobalEip.
+        r"""Gets the enterprise_project_id of this ShowGlobalEip.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -680,7 +680,7 @@ class ShowGlobalEip:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowGlobalEip.
+        r"""Sets the enterprise_project_id of this ShowGlobalEip.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 

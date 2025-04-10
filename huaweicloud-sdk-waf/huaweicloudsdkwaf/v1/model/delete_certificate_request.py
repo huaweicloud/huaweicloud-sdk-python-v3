@@ -27,7 +27,7 @@ class DeleteCertificateRequest:
     }
 
     def __init__(self, enterprise_project_id=None, certificate_id=None):
-        """DeleteCertificateRequest
+        r"""DeleteCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteCertificateRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteCertificateRequest.
+        r"""Gets the enterprise_project_id of this DeleteCertificateRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -60,7 +60,7 @@ class DeleteCertificateRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteCertificateRequest.
+        r"""Sets the enterprise_project_id of this DeleteCertificateRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -71,7 +71,7 @@ class DeleteCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this DeleteCertificateRequest.
+        r"""Gets the certificate_id of this DeleteCertificateRequest.
 
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
@@ -82,7 +82,7 @@ class DeleteCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this DeleteCertificateRequest.
+        r"""Sets the certificate_id of this DeleteCertificateRequest.
 
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 

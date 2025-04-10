@@ -37,7 +37,7 @@ class ListPacifyWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None, language=None, pacify_words_type=None, intent=None):
-        """ListPacifyWordsRequest
+        r"""ListPacifyWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListPacifyWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListPacifyWordsRequest.
+        r"""Gets the x_app_user_id of this ListPacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -95,7 +95,7 @@ class ListPacifyWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListPacifyWordsRequest.
+        r"""Sets the x_app_user_id of this ListPacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -106,7 +106,7 @@ class ListPacifyWordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPacifyWordsRequest.
+        r"""Gets the offset of this ListPacifyWordsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -117,7 +117,7 @@ class ListPacifyWordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPacifyWordsRequest.
+        r"""Sets the offset of this ListPacifyWordsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -128,7 +128,7 @@ class ListPacifyWordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPacifyWordsRequest.
+        r"""Gets the limit of this ListPacifyWordsRequest.
 
         每页显示的条目数量。
 
@@ -139,7 +139,7 @@ class ListPacifyWordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPacifyWordsRequest.
+        r"""Sets the limit of this ListPacifyWordsRequest.
 
         每页显示的条目数量。
 
@@ -150,7 +150,7 @@ class ListPacifyWordsRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ListPacifyWordsRequest.
+        r"""Gets the robot_id of this ListPacifyWordsRequest.
 
         应用ID。
 
@@ -161,7 +161,7 @@ class ListPacifyWordsRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ListPacifyWordsRequest.
+        r"""Sets the robot_id of this ListPacifyWordsRequest.
 
         应用ID。
 
@@ -172,7 +172,7 @@ class ListPacifyWordsRequest:
 
     @property
     def language(self):
-        """Gets the language of this ListPacifyWordsRequest.
+        r"""Gets the language of this ListPacifyWordsRequest.
 
         智能交互语言  * CN:中文  * EN:英文
 
@@ -183,7 +183,7 @@ class ListPacifyWordsRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ListPacifyWordsRequest.
+        r"""Sets the language of this ListPacifyWordsRequest.
 
         智能交互语言  * CN:中文  * EN:英文
 
@@ -194,7 +194,7 @@ class ListPacifyWordsRequest:
 
     @property
     def pacify_words_type(self):
-        """Gets the pacify_words_type of this ListPacifyWordsRequest.
+        r"""Gets the pacify_words_type of this ListPacifyWordsRequest.
 
         安抚话术类型 > 0:通用安抚话术, 1:基于意图匹配安抚话术
 
@@ -205,7 +205,7 @@ class ListPacifyWordsRequest:
 
     @pacify_words_type.setter
     def pacify_words_type(self, pacify_words_type):
-        """Sets the pacify_words_type of this ListPacifyWordsRequest.
+        r"""Sets the pacify_words_type of this ListPacifyWordsRequest.
 
         安抚话术类型 > 0:通用安抚话术, 1:基于意图匹配安抚话术
 
@@ -216,7 +216,7 @@ class ListPacifyWordsRequest:
 
     @property
     def intent(self):
-        """Gets the intent of this ListPacifyWordsRequest.
+        r"""Gets the intent of this ListPacifyWordsRequest.
 
         安抚话术意图
 
@@ -227,7 +227,7 @@ class ListPacifyWordsRequest:
 
     @intent.setter
     def intent(self, intent):
-        """Sets the intent of this ListPacifyWordsRequest.
+        r"""Sets the intent of this ListPacifyWordsRequest.
 
         安抚话术意图
 

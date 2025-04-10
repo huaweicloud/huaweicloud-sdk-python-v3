@@ -29,7 +29,7 @@ class FgacSingleUpdateReq:
     }
 
     def __init__(self, dw_id=None, fgac_flag=None, fgac_type=None):
-        """FgacSingleUpdateReq
+        r"""FgacSingleUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FgacSingleUpdateReq:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this FgacSingleUpdateReq.
+        r"""Gets the dw_id of this FgacSingleUpdateReq.
 
         数据连接id
 
@@ -68,7 +68,7 @@ class FgacSingleUpdateReq:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this FgacSingleUpdateReq.
+        r"""Sets the dw_id of this FgacSingleUpdateReq.
 
         数据连接id
 
@@ -79,7 +79,7 @@ class FgacSingleUpdateReq:
 
     @property
     def fgac_flag(self):
-        """Gets the fgac_flag of this FgacSingleUpdateReq.
+        r"""Gets the fgac_flag of this FgacSingleUpdateReq.
 
         是否开启细粒度认证,true表示开启细粒度认证,false表示关闭细粒度认证。
 
@@ -90,7 +90,7 @@ class FgacSingleUpdateReq:
 
     @fgac_flag.setter
     def fgac_flag(self, fgac_flag):
-        """Sets the fgac_flag of this FgacSingleUpdateReq.
+        r"""Sets the fgac_flag of this FgacSingleUpdateReq.
 
         是否开启细粒度认证,true表示开启细粒度认证,false表示关闭细粒度认证。
 
@@ -101,7 +101,7 @@ class FgacSingleUpdateReq:
 
     @property
     def fgac_type(self):
-        """Gets the fgac_type of this FgacSingleUpdateReq.
+        r"""Gets the fgac_type of this FgacSingleUpdateReq.
 
         细粒度认证类型，开启细粒度认证时才生效。\"0\"表示开发态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行，\"1\"表示调度态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行、作业执行调度。
 
@@ -112,7 +112,7 @@ class FgacSingleUpdateReq:
 
     @fgac_type.setter
     def fgac_type(self, fgac_type):
-        """Sets the fgac_type of this FgacSingleUpdateReq.
+        r"""Sets the fgac_type of this FgacSingleUpdateReq.
 
         细粒度认证类型，开启细粒度认证时才生效。\"0\"表示开发态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行，\"1\"表示调度态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行、作业执行调度。
 

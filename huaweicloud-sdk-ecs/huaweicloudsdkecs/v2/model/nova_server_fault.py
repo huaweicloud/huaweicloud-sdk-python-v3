@@ -31,7 +31,7 @@ class NovaServerFault:
     }
 
     def __init__(self, code=None, created=None, message=None, details=None):
-        """NovaServerFault
+        r"""NovaServerFault
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NovaServerFault:
 
     @property
     def code(self):
-        """Gets the code of this NovaServerFault.
+        r"""Gets the code of this NovaServerFault.
 
         错误码。
 
@@ -75,7 +75,7 @@ class NovaServerFault:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this NovaServerFault.
+        r"""Sets the code of this NovaServerFault.
 
         错误码。
 
@@ -86,7 +86,7 @@ class NovaServerFault:
 
     @property
     def created(self):
-        """Gets the created of this NovaServerFault.
+        r"""Gets the created of this NovaServerFault.
 
         异常出现的时间。
 
@@ -97,7 +97,7 @@ class NovaServerFault:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this NovaServerFault.
+        r"""Sets the created of this NovaServerFault.
 
         异常出现的时间。
 
@@ -108,7 +108,7 @@ class NovaServerFault:
 
     @property
     def message(self):
-        """Gets the message of this NovaServerFault.
+        r"""Gets the message of this NovaServerFault.
 
         异常描述信息。
 
@@ -119,7 +119,7 @@ class NovaServerFault:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this NovaServerFault.
+        r"""Sets the message of this NovaServerFault.
 
         异常描述信息。
 
@@ -130,7 +130,7 @@ class NovaServerFault:
 
     @property
     def details(self):
-        """Gets the details of this NovaServerFault.
+        r"""Gets the details of this NovaServerFault.
 
         异常详情信息。
 
@@ -141,7 +141,7 @@ class NovaServerFault:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this NovaServerFault.
+        r"""Sets the details of this NovaServerFault.
 
         异常详情信息。
 

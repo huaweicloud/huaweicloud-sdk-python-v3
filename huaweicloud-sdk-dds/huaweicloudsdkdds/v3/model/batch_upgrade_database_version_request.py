@@ -25,7 +25,7 @@ class BatchUpgradeDatabaseVersionRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpgradeDatabaseVersionRequest
+        r"""BatchUpgradeDatabaseVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpgradeDatabaseVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpgradeDatabaseVersionRequest.
+        r"""Gets the body of this BatchUpgradeDatabaseVersionRequest.
 
         :return: The body of this BatchUpgradeDatabaseVersionRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.BatchUpgradeDatabaseVersionRequestBody`
@@ -52,7 +52,7 @@ class BatchUpgradeDatabaseVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpgradeDatabaseVersionRequest.
+        r"""Sets the body of this BatchUpgradeDatabaseVersionRequest.
 
         :param body: The body of this BatchUpgradeDatabaseVersionRequest.
         :type body: :class:`huaweicloudsdkdds.v3.BatchUpgradeDatabaseVersionRequestBody`

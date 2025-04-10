@@ -41,7 +41,7 @@ class ListEndpointServiceRequest:
     }
 
     def __init__(self, endpoint_service_name=None, id=None, status=None, sort_key=None, sort_dir=None, limit=None, offset=None, public_border_group=None, net_type=None):
-        """ListEndpointServiceRequest
+        r"""ListEndpointServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListEndpointServiceRequest:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this ListEndpointServiceRequest.
+        r"""Gets the endpoint_service_name of this ListEndpointServiceRequest.
 
         终端节点服务的名称，支持大小写，前后模糊匹配。
 
@@ -110,7 +110,7 @@ class ListEndpointServiceRequest:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this ListEndpointServiceRequest.
+        r"""Sets the endpoint_service_name of this ListEndpointServiceRequest.
 
         终端节点服务的名称，支持大小写，前后模糊匹配。
 
@@ -121,7 +121,7 @@ class ListEndpointServiceRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEndpointServiceRequest.
+        r"""Gets the id of this ListEndpointServiceRequest.
 
         终端节点服务的ID，唯一标识。
 
@@ -132,7 +132,7 @@ class ListEndpointServiceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEndpointServiceRequest.
+        r"""Sets the id of this ListEndpointServiceRequest.
 
         终端节点服务的ID，唯一标识。
 
@@ -143,7 +143,7 @@ class ListEndpointServiceRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEndpointServiceRequest.
+        r"""Gets the status of this ListEndpointServiceRequest.
 
         终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
@@ -154,7 +154,7 @@ class ListEndpointServiceRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEndpointServiceRequest.
+        r"""Sets the status of this ListEndpointServiceRequest.
 
         终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
@@ -165,7 +165,7 @@ class ListEndpointServiceRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListEndpointServiceRequest.
+        r"""Gets the sort_key of this ListEndpointServiceRequest.
 
         查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
@@ -176,7 +176,7 @@ class ListEndpointServiceRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListEndpointServiceRequest.
+        r"""Sets the sort_key of this ListEndpointServiceRequest.
 
         查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
@@ -187,7 +187,7 @@ class ListEndpointServiceRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListEndpointServiceRequest.
+        r"""Gets the sort_dir of this ListEndpointServiceRequest.
 
         查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -198,7 +198,7 @@ class ListEndpointServiceRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListEndpointServiceRequest.
+        r"""Sets the sort_dir of this ListEndpointServiceRequest.
 
         查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -209,7 +209,7 @@ class ListEndpointServiceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointServiceRequest.
+        r"""Gets the limit of this ListEndpointServiceRequest.
 
         查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -220,7 +220,7 @@ class ListEndpointServiceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointServiceRequest.
+        r"""Sets the limit of this ListEndpointServiceRequest.
 
         查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -231,7 +231,7 @@ class ListEndpointServiceRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEndpointServiceRequest.
+        r"""Gets the offset of this ListEndpointServiceRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -242,7 +242,7 @@ class ListEndpointServiceRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEndpointServiceRequest.
+        r"""Sets the offset of this ListEndpointServiceRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -253,7 +253,7 @@ class ListEndpointServiceRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListEndpointServiceRequest.
+        r"""Gets the public_border_group of this ListEndpointServiceRequest.
 
         筛选结果中匹配边缘属性的EPS
 
@@ -264,7 +264,7 @@ class ListEndpointServiceRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListEndpointServiceRequest.
+        r"""Sets the public_border_group of this ListEndpointServiceRequest.
 
         筛选结果中匹配边缘属性的EPS
 
@@ -275,7 +275,7 @@ class ListEndpointServiceRequest:
 
     @property
     def net_type(self):
-        """Gets the net_type of this ListEndpointServiceRequest.
+        r"""Gets the net_type of this ListEndpointServiceRequest.
 
         后端类型
 
@@ -286,7 +286,7 @@ class ListEndpointServiceRequest:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this ListEndpointServiceRequest.
+        r"""Sets the net_type of this ListEndpointServiceRequest.
 
         后端类型
 

@@ -26,7 +26,7 @@ class ShowMemberResponse(SdkResponse):
     }
 
     def __init__(self, member=None):
-        """ShowMemberResponse
+        r"""ShowMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMemberResponse(SdkResponse):
 
     @property
     def member(self):
-        """Gets the member of this ShowMemberResponse.
+        r"""Gets the member of this ShowMemberResponse.
 
         :return: The member of this ShowMemberResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.MemberResp`
@@ -53,7 +53,7 @@ class ShowMemberResponse(SdkResponse):
 
     @member.setter
     def member(self, member):
-        """Sets the member of this ShowMemberResponse.
+        r"""Sets the member of this ShowMemberResponse.
 
         :param member: The member of this ShowMemberResponse.
         :type member: :class:`huaweicloudsdkelb.v2.MemberResp`

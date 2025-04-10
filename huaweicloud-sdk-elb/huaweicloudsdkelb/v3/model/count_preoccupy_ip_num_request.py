@@ -37,7 +37,7 @@ class CountPreoccupyIpNumRequest:
     }
 
     def __init__(self, l7_flavor_id=None, ip_target_enable=None, ip_version=None, loadbalancer_id=None, availability_zone_id=None, scene=None, nat64_enable=None):
-        """CountPreoccupyIpNumRequest
+        r"""CountPreoccupyIpNumRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this CountPreoccupyIpNumRequest.
+        r"""Gets the l7_flavor_id of this CountPreoccupyIpNumRequest.
 
         负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB的预占IP数量，或变更LB的原七层规格到该规格所需要的新增预占IP数量。  适用场景：创建负LB，变更LB规格。  [不支持传入l7_flavor_id。](tag:hcso,hk_vdf,srg,fcs)
 
@@ -96,7 +96,7 @@ class CountPreoccupyIpNumRequest:
 
     @l7_flavor_id.setter
     def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this CountPreoccupyIpNumRequest.
+        r"""Sets the l7_flavor_id of this CountPreoccupyIpNumRequest.
 
         负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB的预占IP数量，或变更LB的原七层规格到该规格所需要的新增预占IP数量。  适用场景：创建负LB，变更LB规格。  [不支持传入l7_flavor_id。](tag:hcso,hk_vdf,srg,fcs)
 
@@ -107,7 +107,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def ip_target_enable(self):
-        """Gets the ip_target_enable of this CountPreoccupyIpNumRequest.
+        r"""Gets the ip_target_enable of this CountPreoccupyIpNumRequest.
 
         跨VPC后端转发开关。  取值true表示计算创建开启跨VPC后端转发的LB的预占IP数量，或开启LB跨VPC后端转发所需要的新增预占IP数量。  取值false表示计算创建不开启跨VPC后端转发的LB的预占IP。  不传等价false。  适用场景：创建LB，LB开启跨VPC后端转发。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -118,7 +118,7 @@ class CountPreoccupyIpNumRequest:
 
     @ip_target_enable.setter
     def ip_target_enable(self, ip_target_enable):
-        """Sets the ip_target_enable of this CountPreoccupyIpNumRequest.
+        r"""Sets the ip_target_enable of this CountPreoccupyIpNumRequest.
 
         跨VPC后端转发开关。  取值true表示计算创建开启跨VPC后端转发的LB的预占IP数量，或开启LB跨VPC后端转发所需要的新增预占IP数量。  取值false表示计算创建不开启跨VPC后端转发的LB的预占IP。  不传等价false。  适用场景：创建LB，LB开启跨VPC后端转发。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -129,7 +129,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CountPreoccupyIpNumRequest.
+        r"""Gets the ip_version of this CountPreoccupyIpNumRequest.
 
         负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。  [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -140,7 +140,7 @@ class CountPreoccupyIpNumRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CountPreoccupyIpNumRequest.
+        r"""Sets the ip_version of this CountPreoccupyIpNumRequest.
 
         负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。  [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -151,7 +151,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CountPreoccupyIpNumRequest.
+        r"""Gets the loadbalancer_id of this CountPreoccupyIpNumRequest.
 
         负载均衡器ID。计算LB变更或创建LB中的第一个七层监听器的新增预占IP。  适用场景：变更LB规格，开启跨VPC后端转发，开启/不开启地址族转换功能，创建LB中的第一个七层监听器。
 
@@ -162,7 +162,7 @@ class CountPreoccupyIpNumRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CountPreoccupyIpNumRequest.
+        r"""Sets the loadbalancer_id of this CountPreoccupyIpNumRequest.
 
         负载均衡器ID。计算LB变更或创建LB中的第一个七层监听器的新增预占IP。  适用场景：变更LB规格，开启跨VPC后端转发，开启/不开启地址族转换功能，创建LB中的第一个七层监听器。
 
@@ -173,7 +173,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this CountPreoccupyIpNumRequest.
+        r"""Gets the availability_zone_id of this CountPreoccupyIpNumRequest.
 
         计算创建AZ列表为availability_zone_id的负载均衡器实例的预占IP。  适用场景：创建LB。  使用说明：传入loadbalancer_id时，该参数无效。
 
@@ -184,7 +184,7 @@ class CountPreoccupyIpNumRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this CountPreoccupyIpNumRequest.
+        r"""Sets the availability_zone_id of this CountPreoccupyIpNumRequest.
 
         计算创建AZ列表为availability_zone_id的负载均衡器实例的预占IP。  适用场景：创建LB。  使用说明：传入loadbalancer_id时，该参数无效。
 
@@ -195,7 +195,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def scene(self):
-        """Gets the scene of this CountPreoccupyIpNumRequest.
+        r"""Gets the scene of this CountPreoccupyIpNumRequest.
 
         参数解释：计算共享型升级为独享型ELB负载均衡器实例的所需预占IP。  约束限制：必须同时传入loadbalancer_id。  取值范围：UPGRADE - 共享型升级为独享型ELB场景。
 
@@ -206,7 +206,7 @@ class CountPreoccupyIpNumRequest:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this CountPreoccupyIpNumRequest.
+        r"""Sets the scene of this CountPreoccupyIpNumRequest.
 
         参数解释：计算共享型升级为独享型ELB负载均衡器实例的所需预占IP。  约束限制：必须同时传入loadbalancer_id。  取值范围：UPGRADE - 共享型升级为独享型ELB场景。
 
@@ -217,7 +217,7 @@ class CountPreoccupyIpNumRequest:
 
     @property
     def nat64_enable(self):
-        """Gets the nat64_enable of this CountPreoccupyIpNumRequest.
+        r"""Gets the nat64_enable of this CountPreoccupyIpNumRequest.
 
         参数解释： 开启地址族转换。传入该字段表示计算创建LB及该LB下开启/不开启地址族转换特性的监听器所需要的预占IP，或者指定LB创建开启/不开启地址族转换特性的监听器所需要的新增预占IP。  取值范围： true：开启地址族转换特性。 false：不开启地址族转换特性。  默认取值： false
 
@@ -228,7 +228,7 @@ class CountPreoccupyIpNumRequest:
 
     @nat64_enable.setter
     def nat64_enable(self, nat64_enable):
-        """Sets the nat64_enable of this CountPreoccupyIpNumRequest.
+        r"""Sets the nat64_enable of this CountPreoccupyIpNumRequest.
 
         参数解释： 开启地址族转换。传入该字段表示计算创建LB及该LB下开启/不开启地址族转换特性的监听器所需要的预占IP，或者指定LB创建开启/不开启地址族转换特性的监听器所需要的新增预占IP。  取值范围： true：开启地址族转换特性。 false：不开启地址族转换特性。  默认取值： false
 

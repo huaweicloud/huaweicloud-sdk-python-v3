@@ -25,7 +25,7 @@ class RestBulkHangUpReqBody:
     }
 
     def __init__(self, bulk_hang_up_participants=None):
-        """RestBulkHangUpReqBody
+        r"""RestBulkHangUpReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestBulkHangUpReqBody:
 
     @property
     def bulk_hang_up_participants(self):
-        """Gets the bulk_hang_up_participants of this RestBulkHangUpReqBody.
+        r"""Gets the bulk_hang_up_participants of this RestBulkHangUpReqBody.
 
         批量挂断会场列表，列表元素为与会者标识。
 
@@ -53,7 +53,7 @@ class RestBulkHangUpReqBody:
 
     @bulk_hang_up_participants.setter
     def bulk_hang_up_participants(self, bulk_hang_up_participants):
-        """Sets the bulk_hang_up_participants of this RestBulkHangUpReqBody.
+        r"""Sets the bulk_hang_up_participants of this RestBulkHangUpReqBody.
 
         批量挂断会场列表，列表元素为与会者标识。
 

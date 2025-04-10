@@ -29,7 +29,7 @@ class WebImageResult:
     }
 
     def __init__(self, words_block_count=None, words_block_list=None, extracted_data=None):
-        """WebImageResult
+        r"""WebImageResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class WebImageResult:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this WebImageResult.
+        r"""Gets the words_block_count of this WebImageResult.
 
         代表检测识别出来的文字块数目。 
 
@@ -65,7 +65,7 @@ class WebImageResult:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this WebImageResult.
+        r"""Sets the words_block_count of this WebImageResult.
 
         代表检测识别出来的文字块数目。 
 
@@ -76,7 +76,7 @@ class WebImageResult:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this WebImageResult.
+        r"""Gets the words_block_list of this WebImageResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 
@@ -87,7 +87,7 @@ class WebImageResult:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this WebImageResult.
+        r"""Sets the words_block_list of this WebImageResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 
@@ -98,7 +98,7 @@ class WebImageResult:
 
     @property
     def extracted_data(self):
-        """Gets the extracted_data of this WebImageResult.
+        r"""Gets the extracted_data of this WebImageResult.
 
         :return: The extracted_data of this WebImageResult.
         :rtype: :class:`huaweicloudsdkocr.v1.WebImageExtractedData`
@@ -107,7 +107,7 @@ class WebImageResult:
 
     @extracted_data.setter
     def extracted_data(self, extracted_data):
-        """Sets the extracted_data of this WebImageResult.
+        r"""Sets the extracted_data of this WebImageResult.
 
         :param extracted_data: The extracted_data of this WebImageResult.
         :type extracted_data: :class:`huaweicloudsdkocr.v1.WebImageExtractedData`

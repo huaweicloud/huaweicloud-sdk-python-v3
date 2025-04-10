@@ -29,7 +29,7 @@ class CreateSqlLimitRulesBody:
     }
 
     def __init__(self, datastore_type=None, sql_limit_rules=None, database_name=None):
-        """CreateSqlLimitRulesBody
+        r"""CreateSqlLimitRulesBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSqlLimitRulesBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this CreateSqlLimitRulesBody.
+        r"""Gets the datastore_type of this CreateSqlLimitRulesBody.
 
         数据库类型
 
@@ -66,7 +66,7 @@ class CreateSqlLimitRulesBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this CreateSqlLimitRulesBody.
+        r"""Sets the datastore_type of this CreateSqlLimitRulesBody.
 
         数据库类型
 
@@ -77,7 +77,7 @@ class CreateSqlLimitRulesBody:
 
     @property
     def sql_limit_rules(self):
-        """Gets the sql_limit_rules of this CreateSqlLimitRulesBody.
+        r"""Gets the sql_limit_rules of this CreateSqlLimitRulesBody.
 
         需要创建的SQL限流规则列表，一次最多创建5个
 
@@ -88,7 +88,7 @@ class CreateSqlLimitRulesBody:
 
     @sql_limit_rules.setter
     def sql_limit_rules(self, sql_limit_rules):
-        """Sets the sql_limit_rules of this CreateSqlLimitRulesBody.
+        r"""Sets the sql_limit_rules of this CreateSqlLimitRulesBody.
 
         需要创建的SQL限流规则列表，一次最多创建5个
 
@@ -99,7 +99,7 @@ class CreateSqlLimitRulesBody:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateSqlLimitRulesBody.
+        r"""Gets the database_name of this CreateSqlLimitRulesBody.
 
         数据库名（PostgreSQL必填）
 
@@ -110,7 +110,7 @@ class CreateSqlLimitRulesBody:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateSqlLimitRulesBody.
+        r"""Sets the database_name of this CreateSqlLimitRulesBody.
 
         数据库名（PostgreSQL必填）
 

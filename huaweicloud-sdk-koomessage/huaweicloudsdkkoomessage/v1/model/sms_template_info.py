@@ -57,7 +57,7 @@ class SmsTemplateInfo:
     }
 
     def __init__(self, template_id=None, template_name=None, create_time=None, template_type=None, app_id=None, app_name=None, signature_id=None, template_content=None, template_desc=None, has_variable=None, flow_status=None, status=None, universal_template=None, urge_status=None, urge_time=None, urge_desc=None, review_desc=None):
-        """SmsTemplateInfo
+        r"""SmsTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class SmsTemplateInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this SmsTemplateInfo.
+        r"""Gets the template_id of this SmsTemplateInfo.
 
         模板ID。
 
@@ -166,7 +166,7 @@ class SmsTemplateInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this SmsTemplateInfo.
+        r"""Sets the template_id of this SmsTemplateInfo.
 
         模板ID。
 
@@ -177,7 +177,7 @@ class SmsTemplateInfo:
 
     @property
     def template_name(self):
-        """Gets the template_name of this SmsTemplateInfo.
+        r"""Gets the template_name of this SmsTemplateInfo.
 
         模板名称。
 
@@ -188,7 +188,7 @@ class SmsTemplateInfo:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this SmsTemplateInfo.
+        r"""Sets the template_name of this SmsTemplateInfo.
 
         模板名称。
 
@@ -199,7 +199,7 @@ class SmsTemplateInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsTemplateInfo.
+        r"""Gets the create_time of this SmsTemplateInfo.
 
         创建时间。
 
@@ -210,7 +210,7 @@ class SmsTemplateInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsTemplateInfo.
+        r"""Sets the create_time of this SmsTemplateInfo.
 
         创建时间。
 
@@ -221,7 +221,7 @@ class SmsTemplateInfo:
 
     @property
     def template_type(self):
-        """Gets the template_type of this SmsTemplateInfo.
+        r"""Gets the template_type of this SmsTemplateInfo.
 
         模板类型。
 
@@ -232,7 +232,7 @@ class SmsTemplateInfo:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this SmsTemplateInfo.
+        r"""Sets the template_type of this SmsTemplateInfo.
 
         模板类型。
 
@@ -243,7 +243,7 @@ class SmsTemplateInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SmsTemplateInfo.
+        r"""Gets the app_id of this SmsTemplateInfo.
 
         应用ID。
 
@@ -254,7 +254,7 @@ class SmsTemplateInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SmsTemplateInfo.
+        r"""Sets the app_id of this SmsTemplateInfo.
 
         应用ID。
 
@@ -265,7 +265,7 @@ class SmsTemplateInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsTemplateInfo.
+        r"""Gets the app_name of this SmsTemplateInfo.
 
         应用名称。
 
@@ -276,7 +276,7 @@ class SmsTemplateInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsTemplateInfo.
+        r"""Sets the app_name of this SmsTemplateInfo.
 
         应用名称。
 
@@ -287,7 +287,7 @@ class SmsTemplateInfo:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this SmsTemplateInfo.
+        r"""Gets the signature_id of this SmsTemplateInfo.
 
         签名ID。
 
@@ -298,7 +298,7 @@ class SmsTemplateInfo:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this SmsTemplateInfo.
+        r"""Sets the signature_id of this SmsTemplateInfo.
 
         签名ID。
 
@@ -309,7 +309,7 @@ class SmsTemplateInfo:
 
     @property
     def template_content(self):
-        """Gets the template_content of this SmsTemplateInfo.
+        r"""Gets the template_content of this SmsTemplateInfo.
 
         模板内容。
 
@@ -320,7 +320,7 @@ class SmsTemplateInfo:
 
     @template_content.setter
     def template_content(self, template_content):
-        """Sets the template_content of this SmsTemplateInfo.
+        r"""Sets the template_content of this SmsTemplateInfo.
 
         模板内容。
 
@@ -331,7 +331,7 @@ class SmsTemplateInfo:
 
     @property
     def template_desc(self):
-        """Gets the template_desc of this SmsTemplateInfo.
+        r"""Gets the template_desc of this SmsTemplateInfo.
 
         申请描述。
 
@@ -342,7 +342,7 @@ class SmsTemplateInfo:
 
     @template_desc.setter
     def template_desc(self, template_desc):
-        """Sets the template_desc of this SmsTemplateInfo.
+        r"""Sets the template_desc of this SmsTemplateInfo.
 
         申请描述。
 
@@ -353,7 +353,7 @@ class SmsTemplateInfo:
 
     @property
     def has_variable(self):
-        """Gets the has_variable of this SmsTemplateInfo.
+        r"""Gets the has_variable of this SmsTemplateInfo.
 
         是否有变量。
 
@@ -364,7 +364,7 @@ class SmsTemplateInfo:
 
     @has_variable.setter
     def has_variable(self, has_variable):
-        """Sets the has_variable of this SmsTemplateInfo.
+        r"""Sets the has_variable of this SmsTemplateInfo.
 
         是否有变量。
 
@@ -375,7 +375,7 @@ class SmsTemplateInfo:
 
     @property
     def flow_status(self):
-        """Gets the flow_status of this SmsTemplateInfo.
+        r"""Gets the flow_status of this SmsTemplateInfo.
 
         流程状态。
 
@@ -386,7 +386,7 @@ class SmsTemplateInfo:
 
     @flow_status.setter
     def flow_status(self, flow_status):
-        """Sets the flow_status of this SmsTemplateInfo.
+        r"""Sets the flow_status of this SmsTemplateInfo.
 
         流程状态。
 
@@ -397,7 +397,7 @@ class SmsTemplateInfo:
 
     @property
     def status(self):
-        """Gets the status of this SmsTemplateInfo.
+        r"""Gets the status of this SmsTemplateInfo.
 
         模板状态。
 
@@ -408,7 +408,7 @@ class SmsTemplateInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsTemplateInfo.
+        r"""Sets the status of this SmsTemplateInfo.
 
         模板状态。
 
@@ -419,7 +419,7 @@ class SmsTemplateInfo:
 
     @property
     def universal_template(self):
-        """Gets the universal_template of this SmsTemplateInfo.
+        r"""Gets the universal_template of this SmsTemplateInfo.
 
         是否是通用模板。
 
@@ -430,7 +430,7 @@ class SmsTemplateInfo:
 
     @universal_template.setter
     def universal_template(self, universal_template):
-        """Sets the universal_template of this SmsTemplateInfo.
+        r"""Sets the universal_template of this SmsTemplateInfo.
 
         是否是通用模板。
 
@@ -441,7 +441,7 @@ class SmsTemplateInfo:
 
     @property
     def urge_status(self):
-        """Gets the urge_status of this SmsTemplateInfo.
+        r"""Gets the urge_status of this SmsTemplateInfo.
 
         催审状态。
 
@@ -452,7 +452,7 @@ class SmsTemplateInfo:
 
     @urge_status.setter
     def urge_status(self, urge_status):
-        """Sets the urge_status of this SmsTemplateInfo.
+        r"""Sets the urge_status of this SmsTemplateInfo.
 
         催审状态。
 
@@ -463,7 +463,7 @@ class SmsTemplateInfo:
 
     @property
     def urge_time(self):
-        """Gets the urge_time of this SmsTemplateInfo.
+        r"""Gets the urge_time of this SmsTemplateInfo.
 
         催审时间。
 
@@ -474,7 +474,7 @@ class SmsTemplateInfo:
 
     @urge_time.setter
     def urge_time(self, urge_time):
-        """Sets the urge_time of this SmsTemplateInfo.
+        r"""Sets the urge_time of this SmsTemplateInfo.
 
         催审时间。
 
@@ -485,7 +485,7 @@ class SmsTemplateInfo:
 
     @property
     def urge_desc(self):
-        """Gets the urge_desc of this SmsTemplateInfo.
+        r"""Gets the urge_desc of this SmsTemplateInfo.
 
         催审描述。
 
@@ -496,7 +496,7 @@ class SmsTemplateInfo:
 
     @urge_desc.setter
     def urge_desc(self, urge_desc):
-        """Sets the urge_desc of this SmsTemplateInfo.
+        r"""Sets the urge_desc of this SmsTemplateInfo.
 
         催审描述。
 
@@ -507,7 +507,7 @@ class SmsTemplateInfo:
 
     @property
     def review_desc(self):
-        """Gets the review_desc of this SmsTemplateInfo.
+        r"""Gets the review_desc of this SmsTemplateInfo.
 
         审批描述。
 
@@ -518,7 +518,7 @@ class SmsTemplateInfo:
 
     @review_desc.setter
     def review_desc(self, review_desc):
-        """Sets the review_desc of this SmsTemplateInfo.
+        r"""Sets the review_desc of this SmsTemplateInfo.
 
         审批描述。
 

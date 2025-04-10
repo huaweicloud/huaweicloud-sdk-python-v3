@@ -25,7 +25,7 @@ class Recommendation:
     }
 
     def __init__(self, name=None):
-        """Recommendation
+        r"""Recommendation
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Recommendation:
 
     @property
     def name(self):
-        """Gets the name of this Recommendation.
+        r"""Gets the name of this Recommendation.
 
         标签名称。
 
@@ -54,7 +54,7 @@ class Recommendation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Recommendation.
+        r"""Sets the name of this Recommendation.
 
         标签名称。
 

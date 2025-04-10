@@ -32,7 +32,7 @@ class SearchTransactionResponse(SdkResponse):
     }
 
     def __init__(self, tx_item_list=None, latest_time=None, total_count=None, result_id=None):
-        """SearchTransactionResponse
+        r"""SearchTransactionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @property
     def tx_item_list(self):
-        """Gets the tx_item_list of this SearchTransactionResponse.
+        r"""Gets the tx_item_list of this SearchTransactionResponse.
 
         URL跟踪视图列表。
 
@@ -76,7 +76,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @tx_item_list.setter
     def tx_item_list(self, tx_item_list):
-        """Sets the tx_item_list of this SearchTransactionResponse.
+        r"""Sets the tx_item_list of this SearchTransactionResponse.
 
         URL跟踪视图列表。
 
@@ -87,7 +87,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @property
     def latest_time(self):
-        """Gets the latest_time of this SearchTransactionResponse.
+        r"""Gets the latest_time of this SearchTransactionResponse.
 
         最后响应时间。
 
@@ -98,7 +98,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @latest_time.setter
     def latest_time(self, latest_time):
-        """Sets the latest_time of this SearchTransactionResponse.
+        r"""Sets the latest_time of this SearchTransactionResponse.
 
         最后响应时间。
 
@@ -109,7 +109,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this SearchTransactionResponse.
+        r"""Gets the total_count of this SearchTransactionResponse.
 
         总数据条数。
 
@@ -120,7 +120,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this SearchTransactionResponse.
+        r"""Sets the total_count of this SearchTransactionResponse.
 
         总数据条数。
 
@@ -131,7 +131,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @property
     def result_id(self):
-        """Gets the result_id of this SearchTransactionResponse.
+        r"""Gets the result_id of this SearchTransactionResponse.
 
         请求id。
 
@@ -142,7 +142,7 @@ class SearchTransactionResponse(SdkResponse):
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this SearchTransactionResponse.
+        r"""Sets the result_id of this SearchTransactionResponse.
 
         请求id。
 

@@ -53,7 +53,7 @@ class UsersDetailsResult:
     }
 
     def __init__(self, user_id=None, org_id=None, user_name=None, name=None, mobile=None, email=None, pwd_must_modify=None, pwd_change_at=None, created_at=None, updated_at=None, disabled=None, grade=None, locked=None, extension=None, user_org_relation_list=None):
-        """UsersDetailsResult
+        r"""UsersDetailsResult
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class UsersDetailsResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UsersDetailsResult.
+        r"""Gets the user_id of this UsersDetailsResult.
 
         用户id。
 
@@ -152,7 +152,7 @@ class UsersDetailsResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UsersDetailsResult.
+        r"""Sets the user_id of this UsersDetailsResult.
 
         用户id。
 
@@ -163,7 +163,7 @@ class UsersDetailsResult:
 
     @property
     def org_id(self):
-        """Gets the org_id of this UsersDetailsResult.
+        r"""Gets the org_id of this UsersDetailsResult.
 
         用户所属组织。
 
@@ -174,7 +174,7 @@ class UsersDetailsResult:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this UsersDetailsResult.
+        r"""Sets the org_id of this UsersDetailsResult.
 
         用户所属组织。
 
@@ -185,7 +185,7 @@ class UsersDetailsResult:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UsersDetailsResult.
+        r"""Gets the user_name of this UsersDetailsResult.
 
         用户名。
 
@@ -196,7 +196,7 @@ class UsersDetailsResult:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UsersDetailsResult.
+        r"""Sets the user_name of this UsersDetailsResult.
 
         用户名。
 
@@ -207,7 +207,7 @@ class UsersDetailsResult:
 
     @property
     def name(self):
-        """Gets the name of this UsersDetailsResult.
+        r"""Gets the name of this UsersDetailsResult.
 
         姓名。
 
@@ -218,7 +218,7 @@ class UsersDetailsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UsersDetailsResult.
+        r"""Sets the name of this UsersDetailsResult.
 
         姓名。
 
@@ -229,7 +229,7 @@ class UsersDetailsResult:
 
     @property
     def mobile(self):
-        """Gets the mobile of this UsersDetailsResult.
+        r"""Gets the mobile of this UsersDetailsResult.
 
         手机号。
 
@@ -240,7 +240,7 @@ class UsersDetailsResult:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this UsersDetailsResult.
+        r"""Sets the mobile of this UsersDetailsResult.
 
         手机号。
 
@@ -251,7 +251,7 @@ class UsersDetailsResult:
 
     @property
     def email(self):
-        """Gets the email of this UsersDetailsResult.
+        r"""Gets the email of this UsersDetailsResult.
 
         邮箱。
 
@@ -262,7 +262,7 @@ class UsersDetailsResult:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UsersDetailsResult.
+        r"""Sets the email of this UsersDetailsResult.
 
         邮箱。
 
@@ -273,7 +273,7 @@ class UsersDetailsResult:
 
     @property
     def pwd_must_modify(self):
-        """Gets the pwd_must_modify of this UsersDetailsResult.
+        r"""Gets the pwd_must_modify of this UsersDetailsResult.
 
         首次登录是否强制修改密码。
 
@@ -284,7 +284,7 @@ class UsersDetailsResult:
 
     @pwd_must_modify.setter
     def pwd_must_modify(self, pwd_must_modify):
-        """Sets the pwd_must_modify of this UsersDetailsResult.
+        r"""Sets the pwd_must_modify of this UsersDetailsResult.
 
         首次登录是否强制修改密码。
 
@@ -295,7 +295,7 @@ class UsersDetailsResult:
 
     @property
     def pwd_change_at(self):
-        """Gets the pwd_change_at of this UsersDetailsResult.
+        r"""Gets the pwd_change_at of this UsersDetailsResult.
 
         密码修改时间。
 
@@ -306,7 +306,7 @@ class UsersDetailsResult:
 
     @pwd_change_at.setter
     def pwd_change_at(self, pwd_change_at):
-        """Sets the pwd_change_at of this UsersDetailsResult.
+        r"""Sets the pwd_change_at of this UsersDetailsResult.
 
         密码修改时间。
 
@@ -317,7 +317,7 @@ class UsersDetailsResult:
 
     @property
     def created_at(self):
-        """Gets the created_at of this UsersDetailsResult.
+        r"""Gets the created_at of this UsersDetailsResult.
 
         创建时间。
 
@@ -328,7 +328,7 @@ class UsersDetailsResult:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UsersDetailsResult.
+        r"""Sets the created_at of this UsersDetailsResult.
 
         创建时间。
 
@@ -339,7 +339,7 @@ class UsersDetailsResult:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UsersDetailsResult.
+        r"""Gets the updated_at of this UsersDetailsResult.
 
         最后一次修改时间。
 
@@ -350,7 +350,7 @@ class UsersDetailsResult:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UsersDetailsResult.
+        r"""Sets the updated_at of this UsersDetailsResult.
 
         最后一次修改时间。
 
@@ -361,7 +361,7 @@ class UsersDetailsResult:
 
     @property
     def disabled(self):
-        """Gets the disabled of this UsersDetailsResult.
+        r"""Gets the disabled of this UsersDetailsResult.
 
         是否禁用。
 
@@ -372,7 +372,7 @@ class UsersDetailsResult:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this UsersDetailsResult.
+        r"""Sets the disabled of this UsersDetailsResult.
 
         是否禁用。
 
@@ -383,7 +383,7 @@ class UsersDetailsResult:
 
     @property
     def grade(self):
-        """Gets the grade of this UsersDetailsResult.
+        r"""Gets the grade of this UsersDetailsResult.
 
         可信等级。
 
@@ -394,7 +394,7 @@ class UsersDetailsResult:
 
     @grade.setter
     def grade(self, grade):
-        """Sets the grade of this UsersDetailsResult.
+        r"""Sets the grade of this UsersDetailsResult.
 
         可信等级。
 
@@ -405,7 +405,7 @@ class UsersDetailsResult:
 
     @property
     def locked(self):
-        """Gets the locked of this UsersDetailsResult.
+        r"""Gets the locked of this UsersDetailsResult.
 
         是否锁定。
 
@@ -416,7 +416,7 @@ class UsersDetailsResult:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UsersDetailsResult.
+        r"""Sets the locked of this UsersDetailsResult.
 
         是否锁定。
 
@@ -427,7 +427,7 @@ class UsersDetailsResult:
 
     @property
     def extension(self):
-        """Gets the extension of this UsersDetailsResult.
+        r"""Gets the extension of this UsersDetailsResult.
 
         自定义扩展属性。
 
@@ -438,7 +438,7 @@ class UsersDetailsResult:
 
     @extension.setter
     def extension(self, extension):
-        """Sets the extension of this UsersDetailsResult.
+        r"""Sets the extension of this UsersDetailsResult.
 
         自定义扩展属性。
 
@@ -449,7 +449,7 @@ class UsersDetailsResult:
 
     @property
     def user_org_relation_list(self):
-        """Gets the user_org_relation_list of this UsersDetailsResult.
+        r"""Gets the user_org_relation_list of this UsersDetailsResult.
 
         用户组织关系集合。
 
@@ -460,7 +460,7 @@ class UsersDetailsResult:
 
     @user_org_relation_list.setter
     def user_org_relation_list(self, user_org_relation_list):
-        """Sets the user_org_relation_list of this UsersDetailsResult.
+        r"""Sets the user_org_relation_list of this UsersDetailsResult.
 
         用户组织关系集合。
 

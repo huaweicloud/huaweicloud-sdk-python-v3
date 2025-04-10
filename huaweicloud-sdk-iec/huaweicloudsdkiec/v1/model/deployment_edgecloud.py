@@ -33,7 +33,7 @@ class DeploymentEdgecloud:
     }
 
     def __init__(self, id=None, name=None, stacks=None, description=None, coverage=None):
-        """DeploymentEdgecloud
+        r"""DeploymentEdgecloud
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DeploymentEdgecloud:
 
     @property
     def id(self):
-        """Gets the id of this DeploymentEdgecloud.
+        r"""Gets the id of this DeploymentEdgecloud.
 
         边缘业务ID。
 
@@ -82,7 +82,7 @@ class DeploymentEdgecloud:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeploymentEdgecloud.
+        r"""Sets the id of this DeploymentEdgecloud.
 
         边缘业务ID。
 
@@ -93,7 +93,7 @@ class DeploymentEdgecloud:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentEdgecloud.
+        r"""Gets the name of this DeploymentEdgecloud.
 
         边缘业务名称。
 
@@ -104,7 +104,7 @@ class DeploymentEdgecloud:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentEdgecloud.
+        r"""Sets the name of this DeploymentEdgecloud.
 
         边缘业务名称。
 
@@ -115,7 +115,7 @@ class DeploymentEdgecloud:
 
     @property
     def stacks(self):
-        """Gets the stacks of this DeploymentEdgecloud.
+        r"""Gets the stacks of this DeploymentEdgecloud.
 
         :return: The stacks of this DeploymentEdgecloud.
         :rtype: :class:`huaweicloudsdkiec.v1.Stack`
@@ -124,7 +124,7 @@ class DeploymentEdgecloud:
 
     @stacks.setter
     def stacks(self, stacks):
-        """Sets the stacks of this DeploymentEdgecloud.
+        r"""Sets the stacks of this DeploymentEdgecloud.
 
         :param stacks: The stacks of this DeploymentEdgecloud.
         :type stacks: :class:`huaweicloudsdkiec.v1.Stack`
@@ -133,7 +133,7 @@ class DeploymentEdgecloud:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentEdgecloud.
+        r"""Gets the description of this DeploymentEdgecloud.
 
         边缘业务描述，最大支持255字节。
 
@@ -144,7 +144,7 @@ class DeploymentEdgecloud:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentEdgecloud.
+        r"""Sets the description of this DeploymentEdgecloud.
 
         边缘业务描述，最大支持255字节。
 
@@ -155,7 +155,7 @@ class DeploymentEdgecloud:
 
     @property
     def coverage(self):
-        """Gets the coverage of this DeploymentEdgecloud.
+        r"""Gets the coverage of this DeploymentEdgecloud.
 
         :return: The coverage of this DeploymentEdgecloud.
         :rtype: :class:`huaweicloudsdkiec.v1.Coverage`
@@ -164,7 +164,7 @@ class DeploymentEdgecloud:
 
     @coverage.setter
     def coverage(self, coverage):
-        """Sets the coverage of this DeploymentEdgecloud.
+        r"""Sets the coverage of this DeploymentEdgecloud.
 
         :param coverage: The coverage of this DeploymentEdgecloud.
         :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`

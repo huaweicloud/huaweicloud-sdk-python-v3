@@ -31,7 +31,7 @@ class ApplyDedicatedStandbyNetworkParam:
     }
 
     def __init__(self, site_id=None, address=None, port=None, availability_zone=None):
-        """ApplyDedicatedStandbyNetworkParam
+        r"""ApplyDedicatedStandbyNetworkParam
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ApplyDedicatedStandbyNetworkParam.
+        r"""Gets the site_id of this ApplyDedicatedStandbyNetworkParam.
 
         租户的站点id
 
@@ -75,7 +75,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ApplyDedicatedStandbyNetworkParam.
+        r"""Sets the site_id of this ApplyDedicatedStandbyNetworkParam.
 
         租户的站点id
 
@@ -86,7 +86,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @property
     def address(self):
-        """Gets the address of this ApplyDedicatedStandbyNetworkParam.
+        r"""Gets the address of this ApplyDedicatedStandbyNetworkParam.
 
         租户指定的专线备用地址
 
@@ -97,7 +97,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ApplyDedicatedStandbyNetworkParam.
+        r"""Sets the address of this ApplyDedicatedStandbyNetworkParam.
 
         租户指定的专线备用地址
 
@@ -108,7 +108,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @property
     def port(self):
-        """Gets the port of this ApplyDedicatedStandbyNetworkParam.
+        r"""Gets the port of this ApplyDedicatedStandbyNetworkParam.
 
         租户指定的专线备用地址端口
 
@@ -119,7 +119,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ApplyDedicatedStandbyNetworkParam.
+        r"""Sets the port of this ApplyDedicatedStandbyNetworkParam.
 
         租户指定的专线备用地址端口
 
@@ -130,7 +130,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ApplyDedicatedStandbyNetworkParam.
+        r"""Gets the availability_zone of this ApplyDedicatedStandbyNetworkParam.
 
         开通服务资源使用的可用分区，默认随机使用2个可用区
 
@@ -141,7 +141,7 @@ class ApplyDedicatedStandbyNetworkParam:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ApplyDedicatedStandbyNetworkParam.
+        r"""Sets the availability_zone of this ApplyDedicatedStandbyNetworkParam.
 
         开通服务资源使用的可用分区，默认随机使用2个可用区
 

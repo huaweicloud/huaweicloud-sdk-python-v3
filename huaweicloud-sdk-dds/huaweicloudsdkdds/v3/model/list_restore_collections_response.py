@@ -28,7 +28,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, collections=None):
-        """ListRestoreCollectionsResponse
+        r"""ListRestoreCollectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRestoreCollectionsResponse.
+        r"""Gets the total_count of this ListRestoreCollectionsResponse.
 
         集合总数。
 
@@ -62,7 +62,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRestoreCollectionsResponse.
+        r"""Sets the total_count of this ListRestoreCollectionsResponse.
 
         集合总数。
 
@@ -73,7 +73,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
 
     @property
     def collections(self):
-        """Gets the collections of this ListRestoreCollectionsResponse.
+        r"""Gets the collections of this ListRestoreCollectionsResponse.
 
         集合列表，列表中每个元素表示一个集合。
 
@@ -84,7 +84,7 @@ class ListRestoreCollectionsResponse(SdkResponse):
 
     @collections.setter
     def collections(self, collections):
-        """Sets the collections of this ListRestoreCollectionsResponse.
+        r"""Sets the collections of this ListRestoreCollectionsResponse.
 
         集合列表，列表中每个元素表示一个集合。
 

@@ -31,7 +31,7 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
-        """ListDatabasesRequest
+        r"""ListDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListDatabasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDatabasesRequest.
+        r"""Gets the x_language of this ListDatabasesRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ListDatabasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDatabasesRequest.
+        r"""Sets the x_language of this ListDatabasesRequest.
 
         语言
 
@@ -83,7 +83,7 @@ class ListDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabasesRequest.
+        r"""Gets the instance_id of this ListDatabasesRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ListDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabasesRequest.
+        r"""Sets the instance_id of this ListDatabasesRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ListDatabasesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListDatabasesRequest.
+        r"""Gets the page of this ListDatabasesRequest.
 
         分页页码，从1开始。
 
@@ -116,7 +116,7 @@ class ListDatabasesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListDatabasesRequest.
+        r"""Sets the page of this ListDatabasesRequest.
 
         分页页码，从1开始。
 
@@ -127,7 +127,7 @@ class ListDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabasesRequest.
+        r"""Gets the limit of this ListDatabasesRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -138,7 +138,7 @@ class ListDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabasesRequest.
+        r"""Sets the limit of this ListDatabasesRequest.
 
         每页数据条数。取值范围[1, 100]。
 

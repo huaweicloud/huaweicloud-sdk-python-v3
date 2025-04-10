@@ -29,7 +29,7 @@ class PageInfoDict:
     }
 
     def __init__(self, previous_marker=None, next_marker=None, current_count=None):
-        """PageInfoDict
+        r"""PageInfoDict
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PageInfoDict:
 
     @property
     def previous_marker(self):
-        """Gets the previous_marker of this PageInfoDict.
+        r"""Gets the previous_marker of this PageInfoDict.
 
         翻页时，作为前一页的marker取值
 
@@ -68,7 +68,7 @@ class PageInfoDict:
 
     @previous_marker.setter
     def previous_marker(self, previous_marker):
-        """Sets the previous_marker of this PageInfoDict.
+        r"""Sets the previous_marker of this PageInfoDict.
 
         翻页时，作为前一页的marker取值
 
@@ -79,7 +79,7 @@ class PageInfoDict:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PageInfoDict.
+        r"""Gets the next_marker of this PageInfoDict.
 
         翻页时，作为后一页的marker取值
 
@@ -90,7 +90,7 @@ class PageInfoDict:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PageInfoDict.
+        r"""Sets the next_marker of this PageInfoDict.
 
         翻页时，作为后一页的marker取值
 
@@ -101,7 +101,7 @@ class PageInfoDict:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PageInfoDict.
+        r"""Gets the current_count of this PageInfoDict.
 
         当前页的数据总数
 
@@ -112,7 +112,7 @@ class PageInfoDict:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PageInfoDict.
+        r"""Sets the current_count of this PageInfoDict.
 
         当前页的数据总数
 

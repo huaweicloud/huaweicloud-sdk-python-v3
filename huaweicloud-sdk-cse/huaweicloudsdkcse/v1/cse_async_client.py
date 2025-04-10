@@ -34,7 +34,7 @@ class CseAsyncClient(Client):
         return client_builder
 
     def create_engine_async(self, request):
-        """创建微服务引擎
+        r"""创建微服务引擎
 
         创建微服务引擎，支持创建ServiceComb引擎专享版、注册配置中心、应用网关（公测）。
         
@@ -101,7 +101,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def create_governance_policy_async(self, request):
-        """创建治理策略
+        r"""创建治理策略
 
         创建治理策略。
         
@@ -176,7 +176,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def create_microservice_route_rule_async(self, request):
-        """创建灰度发布策略
+        r"""创建灰度发布策略
 
         创建灰度发布策略。
         
@@ -253,7 +253,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def delete_engine_async(self, request):
-        """删除微服务引擎
+        r"""删除微服务引擎
 
         删除微服务引擎。
         
@@ -320,7 +320,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def delete_governance_policy_async(self, request):
-        """删除治理策略
+        r"""删除治理策略
 
         删除治理策略。
         
@@ -395,7 +395,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def delete_microservice_route_rule_async(self, request):
-        """删除灰度发布策略
+        r"""删除灰度发布策略
 
         删除灰度发布策略。
         
@@ -470,7 +470,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def download_kie_async(self, request):
-        """导出kie配置
+        r"""导出kie配置
 
         导出kie配置
         
@@ -543,7 +543,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_engines_async(self, request):
-        """查询微服务引擎列表
+        r"""查询微服务引擎列表
 
         查询微服务引擎列表。
         
@@ -612,7 +612,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        """查询微服务引擎的规格列表
+        r"""查询微服务引擎的规格列表
 
         查询微服务引擎的规格列表。
         
@@ -677,7 +677,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_governance_policy_async(self, request):
-        """查询指定类型治理策略列表
+        r"""查询指定类型治理策略列表
 
         查询指定类型治理策略列表。
         
@@ -750,7 +750,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_governance_policy_by_policy_id_async(self, request):
-        """查询治理策略详情
+        r"""查询治理策略详情
 
         查询治理策略详情。
         
@@ -825,7 +825,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_governance_policys_async(self, request):
-        """查询治理策略列表
+        r"""查询治理策略列表
 
         查询治理策略列表。
         
@@ -898,7 +898,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_microservice_route_rule_async(self, request):
-        """查询微服务的灰度发布规则
+        r"""查询微服务的灰度发布规则
 
         查询微服务的灰度发布规则。
         
@@ -971,7 +971,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def resize_engine_async(self, request):
-        """变更微服务引擎规格
+        r"""变更微服务引擎规格
 
         变更微服务引擎规格。
         
@@ -1044,7 +1044,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def retry_engine_async(self, request):
-        """对微服务引擎进行重试
+        r"""对微服务引擎进行重试
 
         对微服务引擎进行重试，当前支持ServiceComb专享版引擎
         
@@ -1113,7 +1113,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def show_engine_async(self, request):
-        """查询微服务引擎详情
+        r"""查询微服务引擎详情
 
         查询微服务引擎详情
         
@@ -1180,7 +1180,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def show_engine_job_async(self, request):
-        """查询微服务引擎任务详情
+        r"""查询微服务引擎任务详情
 
         查询微服务引擎任务详情。
         
@@ -1249,7 +1249,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def show_engine_quotas_async(self, request):
-        """查询微服务引擎配额
+        r"""查询微服务引擎配额
 
         查询微服务引擎配额。
         
@@ -1312,7 +1312,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def update_governance_policy_async(self, request):
-        """修改治理策略
+        r"""修改治理策略
 
         修改治理策略。
         
@@ -1389,7 +1389,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def upgrade_engine_async(self, request):
-        """升级微服务引擎
+        r"""升级微服务引擎
 
         升级微服务引擎
         
@@ -1458,7 +1458,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def upgrade_engine_config_async(self, request):
-        """更新微服务引擎配置
+        r"""更新微服务引擎配置
 
         更新微服务引擎配置，更新ServiceComb专享版引擎与注册配置中心引擎的配置
         
@@ -1527,7 +1527,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def upload_kie_async(self, request):
-        """导入kie配置
+        r"""导入kie配置
 
         导入kie配置
         
@@ -1602,7 +1602,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def create_http2_rpc_async(self, request):
-        """创建http转rpc方法
+        r"""创建http转rpc方法
 
         创建http转rpc方法。
         
@@ -1671,7 +1671,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def create_plugin_async(self, request):
-        """创建插件
+        r"""创建插件
 
         创建插件。
         
@@ -1740,7 +1740,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def delete_http2_rpc_async(self, request):
-        """删除http转rpc方法
+        r"""删除http转rpc方法
 
         删除http转rpc方法。
         
@@ -1809,7 +1809,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def delete_plugin_async(self, request):
-        """删除插件
+        r"""删除插件
 
         删除插件。
         
@@ -1878,7 +1878,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def modify_http2_rpc_async(self, request):
-        """修改http转rpc方法
+        r"""修改http转rpc方法
 
         修改http转rpc方法。
         
@@ -1949,7 +1949,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def modify_plugin_async(self, request):
-        """修改插件
+        r"""修改插件
 
         修改插件。
         
@@ -2020,7 +2020,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def show_http2_rpcs_async(self, request):
-        """查询http2rpc资源列表
+        r"""查询http2rpc资源列表
 
         查询http转rpc资源列表。
         
@@ -2087,7 +2087,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def show_plugins_async(self, request):
-        """查询插件列表
+        r"""查询插件列表
 
         查询插件列表。
         
@@ -2154,7 +2154,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def show_single_plugin_async(self, request):
-        """查询单个插件
+        r"""查询单个插件
 
         查询单个插件。
         
@@ -2223,7 +2223,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def create_nacos_namespaces_async(self, request):
-        """创建nacos命名空间
+        r"""创建nacos命名空间
 
         创建nacos命名空间。
         
@@ -2296,7 +2296,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def delete_nacos_namespaces_async(self, request):
-        """删除nacos命名空间
+        r"""删除nacos命名空间
 
         删除nacos命名空间。
         
@@ -2365,7 +2365,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def list_nacos_namespaces_async(self, request):
-        """查询nacos命名空间
+        r"""查询nacos命名空间
 
         查询nacos命名空间。
         
@@ -2436,7 +2436,7 @@ class CseAsyncClient(Client):
         return http_info
 
     def update_nacos_namespaces_async(self, request):
-        """更新nacos命名空间
+        r"""更新nacos命名空间
 
         更新nacos命名空间。
         

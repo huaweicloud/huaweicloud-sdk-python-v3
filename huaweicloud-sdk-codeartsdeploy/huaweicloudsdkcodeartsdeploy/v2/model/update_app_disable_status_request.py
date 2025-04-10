@@ -27,7 +27,7 @@ class UpdateAppDisableStatusRequest:
     }
 
     def __init__(self, app_id=None, body=None):
-        """UpdateAppDisableStatusRequest
+        r"""UpdateAppDisableStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAppDisableStatusRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppDisableStatusRequest.
+        r"""Gets the app_id of this UpdateAppDisableStatusRequest.
 
         应用id
 
@@ -60,7 +60,7 @@ class UpdateAppDisableStatusRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppDisableStatusRequest.
+        r"""Sets the app_id of this UpdateAppDisableStatusRequest.
 
         应用id
 
@@ -71,7 +71,7 @@ class UpdateAppDisableStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppDisableStatusRequest.
+        r"""Gets the body of this UpdateAppDisableStatusRequest.
 
         :return: The body of this UpdateAppDisableStatusRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateAppDisableStatusRequestBody`
@@ -80,7 +80,7 @@ class UpdateAppDisableStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppDisableStatusRequest.
+        r"""Sets the body of this UpdateAppDisableStatusRequest.
 
         :param body: The body of this UpdateAppDisableStatusRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateAppDisableStatusRequestBody`

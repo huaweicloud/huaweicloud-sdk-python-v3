@@ -25,7 +25,7 @@ class UploadAppIconRequestBody:
     }
 
     def __init__(self, data=None):
-        """UploadAppIconRequestBody
+        r"""UploadAppIconRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadAppIconRequestBody:
 
     @property
     def data(self):
-        """Gets the data of this UploadAppIconRequestBody.
+        r"""Gets the data of this UploadAppIconRequestBody.
 
         应用图标，png格式，限制大小8KB。
 
@@ -53,7 +53,7 @@ class UploadAppIconRequestBody:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UploadAppIconRequestBody.
+        r"""Sets the data of this UploadAppIconRequestBody.
 
         应用图标，png格式，限制大小8KB。
 

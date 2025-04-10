@@ -25,7 +25,7 @@ class UnTagsReq:
     }
 
     def __init__(self, tags=None):
-        """UnTagsReq
+        r"""UnTagsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnTagsReq:
 
     @property
     def tags(self):
-        """Gets the tags of this UnTagsReq.
+        r"""Gets the tags of this UnTagsReq.
 
         标签列表。租户权限时该字段必选，op_service权限时和sys_tags二选一。
 
@@ -54,7 +54,7 @@ class UnTagsReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UnTagsReq.
+        r"""Sets the tags of this UnTagsReq.
 
         标签列表。租户权限时该字段必选，op_service权限时和sys_tags二选一。
 

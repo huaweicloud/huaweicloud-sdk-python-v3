@@ -29,7 +29,7 @@ class ComponentAffinity:
     }
 
     def __init__(self, az=None, node=None, component=None):
-        """ComponentAffinity
+        r"""ComponentAffinity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ComponentAffinity:
 
     @property
     def az(self):
-        """Gets the az of this ComponentAffinity.
+        r"""Gets the az of this ComponentAffinity.
 
         :return: The az of this ComponentAffinity.
         :rtype: list[str]
@@ -66,7 +66,7 @@ class ComponentAffinity:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this ComponentAffinity.
+        r"""Sets the az of this ComponentAffinity.
 
         :param az: The az of this ComponentAffinity.
         :type az: list[str]
@@ -75,7 +75,7 @@ class ComponentAffinity:
 
     @property
     def node(self):
-        """Gets the node of this ComponentAffinity.
+        r"""Gets the node of this ComponentAffinity.
 
         :return: The node of this ComponentAffinity.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class ComponentAffinity:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this ComponentAffinity.
+        r"""Sets the node of this ComponentAffinity.
 
         :param node: The node of this ComponentAffinity.
         :type node: list[str]
@@ -93,7 +93,7 @@ class ComponentAffinity:
 
     @property
     def component(self):
-        """Gets the component of this ComponentAffinity.
+        r"""Gets the component of this ComponentAffinity.
 
         :return: The component of this ComponentAffinity.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityAppInnerParameters`]
@@ -102,7 +102,7 @@ class ComponentAffinity:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this ComponentAffinity.
+        r"""Sets the component of this ComponentAffinity.
 
         :param component: The component of this ComponentAffinity.
         :type component: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityAppInnerParameters`]

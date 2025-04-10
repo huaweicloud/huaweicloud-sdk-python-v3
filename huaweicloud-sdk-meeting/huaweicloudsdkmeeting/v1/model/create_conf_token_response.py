@@ -30,7 +30,7 @@ class CreateConfTokenResponse(SdkResponse):
     }
 
     def __init__(self, data=None, address_token=None, gloabl_public_ip=None):
-        """CreateConfTokenResponse
+        r"""CreateConfTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateConfTokenResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateConfTokenResponse.
+        r"""Gets the data of this CreateConfTokenResponse.
 
         :return: The data of this CreateConfTokenResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
@@ -67,7 +67,7 @@ class CreateConfTokenResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateConfTokenResponse.
+        r"""Sets the data of this CreateConfTokenResponse.
 
         :param data: The data of this CreateConfTokenResponse.
         :type data: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
@@ -76,7 +76,7 @@ class CreateConfTokenResponse(SdkResponse):
 
     @property
     def address_token(self):
-        """Gets the address_token of this CreateConfTokenResponse.
+        r"""Gets the address_token of this CreateConfTokenResponse.
 
         企业通讯录查询临时Token。
 
@@ -87,7 +87,7 @@ class CreateConfTokenResponse(SdkResponse):
 
     @address_token.setter
     def address_token(self, address_token):
-        """Sets the address_token of this CreateConfTokenResponse.
+        r"""Sets the address_token of this CreateConfTokenResponse.
 
         企业通讯录查询临时Token。
 
@@ -98,7 +98,7 @@ class CreateConfTokenResponse(SdkResponse):
 
     @property
     def gloabl_public_ip(self):
-        """Gets the gloabl_public_ip of this CreateConfTokenResponse.
+        r"""Gets the gloabl_public_ip of this CreateConfTokenResponse.
 
         华为云会议Portal地址。
 
@@ -109,7 +109,7 @@ class CreateConfTokenResponse(SdkResponse):
 
     @gloabl_public_ip.setter
     def gloabl_public_ip(self, gloabl_public_ip):
-        """Sets the gloabl_public_ip of this CreateConfTokenResponse.
+        r"""Sets the gloabl_public_ip of this CreateConfTokenResponse.
 
         华为云会议Portal地址。
 

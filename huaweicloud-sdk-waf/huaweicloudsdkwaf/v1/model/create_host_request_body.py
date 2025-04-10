@@ -47,7 +47,7 @@ class CreateHostRequestBody:
     }
 
     def __init__(self, hostname=None, policyid=None, server=None, certificateid=None, certificatename=None, web_tag=None, exclusive_ip=None, paid_type=None, proxy=None, lb_algorithm=None, description=None, forward_header_map=None):
-        """CreateHostRequestBody
+        r"""CreateHostRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class CreateHostRequestBody:
 
     @property
     def hostname(self):
-        """Gets the hostname of this CreateHostRequestBody.
+        r"""Gets the hostname of this CreateHostRequestBody.
 
         域名（域名只能由字母、数字、-、_和.组成，长度不能超过64个字符，如www.domain.com）
 
@@ -128,7 +128,7 @@ class CreateHostRequestBody:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CreateHostRequestBody.
+        r"""Sets the hostname of this CreateHostRequestBody.
 
         域名（域名只能由字母、数字、-、_和.组成，长度不能超过64个字符，如www.domain.com）
 
@@ -139,7 +139,7 @@ class CreateHostRequestBody:
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreateHostRequestBody.
+        r"""Gets the policyid of this CreateHostRequestBody.
 
         防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -150,7 +150,7 @@ class CreateHostRequestBody:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreateHostRequestBody.
+        r"""Sets the policyid of this CreateHostRequestBody.
 
         防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -161,7 +161,7 @@ class CreateHostRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this CreateHostRequestBody.
+        r"""Gets the server of this CreateHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -172,7 +172,7 @@ class CreateHostRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreateHostRequestBody.
+        r"""Sets the server of this CreateHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -183,7 +183,7 @@ class CreateHostRequestBody:
 
     @property
     def certificateid(self):
-        """Gets the certificateid of this CreateHostRequestBody.
+        r"""Gets the certificateid of this CreateHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -194,7 +194,7 @@ class CreateHostRequestBody:
 
     @certificateid.setter
     def certificateid(self, certificateid):
-        """Sets the certificateid of this CreateHostRequestBody.
+        r"""Sets the certificateid of this CreateHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -205,7 +205,7 @@ class CreateHostRequestBody:
 
     @property
     def certificatename(self):
-        """Gets the certificatename of this CreateHostRequestBody.
+        r"""Gets the certificatename of this CreateHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -216,7 +216,7 @@ class CreateHostRequestBody:
 
     @certificatename.setter
     def certificatename(self, certificatename):
-        """Sets the certificatename of this CreateHostRequestBody.
+        r"""Sets the certificatename of this CreateHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -227,7 +227,7 @@ class CreateHostRequestBody:
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this CreateHostRequestBody.
+        r"""Gets the web_tag of this CreateHostRequestBody.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -238,7 +238,7 @@ class CreateHostRequestBody:
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this CreateHostRequestBody.
+        r"""Sets the web_tag of this CreateHostRequestBody.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -249,7 +249,7 @@ class CreateHostRequestBody:
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this CreateHostRequestBody.
+        r"""Gets the exclusive_ip of this CreateHostRequestBody.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -260,7 +260,7 @@ class CreateHostRequestBody:
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this CreateHostRequestBody.
+        r"""Sets the exclusive_ip of this CreateHostRequestBody.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -271,7 +271,7 @@ class CreateHostRequestBody:
 
     @property
     def paid_type(self):
-        """Gets the paid_type of this CreateHostRequestBody.
+        r"""Gets the paid_type of this CreateHostRequestBody.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -282,7 +282,7 @@ class CreateHostRequestBody:
 
     @paid_type.setter
     def paid_type(self, paid_type):
-        """Sets the paid_type of this CreateHostRequestBody.
+        r"""Sets the paid_type of this CreateHostRequestBody.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -293,7 +293,7 @@ class CreateHostRequestBody:
 
     @property
     def proxy(self):
-        """Gets the proxy of this CreateHostRequestBody.
+        r"""Gets the proxy of this CreateHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -304,7 +304,7 @@ class CreateHostRequestBody:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this CreateHostRequestBody.
+        r"""Sets the proxy of this CreateHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -315,7 +315,7 @@ class CreateHostRequestBody:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this CreateHostRequestBody.
+        r"""Gets the lb_algorithm of this CreateHostRequestBody.
 
         LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
@@ -326,7 +326,7 @@ class CreateHostRequestBody:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this CreateHostRequestBody.
+        r"""Sets the lb_algorithm of this CreateHostRequestBody.
 
         LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
@@ -337,7 +337,7 @@ class CreateHostRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHostRequestBody.
+        r"""Gets the description of this CreateHostRequestBody.
 
         域名描述
 
@@ -348,7 +348,7 @@ class CreateHostRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHostRequestBody.
+        r"""Sets the description of this CreateHostRequestBody.
 
         域名描述
 
@@ -359,7 +359,7 @@ class CreateHostRequestBody:
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this CreateHostRequestBody.
+        r"""Gets the forward_header_map of this CreateHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -370,7 +370,7 @@ class CreateHostRequestBody:
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this CreateHostRequestBody.
+        r"""Sets the forward_header_map of this CreateHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 

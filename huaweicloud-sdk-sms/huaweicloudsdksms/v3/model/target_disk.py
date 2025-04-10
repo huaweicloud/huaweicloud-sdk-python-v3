@@ -45,7 +45,7 @@ class TargetDisk:
     }
 
     def __init__(self, id=None, device_use=None, disk_id=None, name=None, physical_volumes=None, size=None, used_size=None, disk_index=None, os_disk=None, partition_style=None, relation_name=None):
-        """TargetDisk
+        r"""TargetDisk
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TargetDisk:
 
     @property
     def id(self):
-        """Gets the id of this TargetDisk.
+        r"""Gets the id of this TargetDisk.
 
         磁盘标识ID
 
@@ -124,7 +124,7 @@ class TargetDisk:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TargetDisk.
+        r"""Sets the id of this TargetDisk.
 
         磁盘标识ID
 
@@ -135,7 +135,7 @@ class TargetDisk:
 
     @property
     def device_use(self):
-        """Gets the device_use of this TargetDisk.
+        r"""Gets the device_use of this TargetDisk.
 
         判断是普通分区，启动分区还是系统分区 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
@@ -146,7 +146,7 @@ class TargetDisk:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this TargetDisk.
+        r"""Sets the device_use of this TargetDisk.
 
         判断是普通分区，启动分区还是系统分区 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
@@ -157,7 +157,7 @@ class TargetDisk:
 
     @property
     def disk_id(self):
-        """Gets the disk_id of this TargetDisk.
+        r"""Gets the disk_id of this TargetDisk.
 
         磁盘ID
 
@@ -168,7 +168,7 @@ class TargetDisk:
 
     @disk_id.setter
     def disk_id(self, disk_id):
-        """Sets the disk_id of this TargetDisk.
+        r"""Sets the disk_id of this TargetDisk.
 
         磁盘ID
 
@@ -179,7 +179,7 @@ class TargetDisk:
 
     @property
     def name(self):
-        """Gets the name of this TargetDisk.
+        r"""Gets the name of this TargetDisk.
 
         磁盘名称
 
@@ -190,7 +190,7 @@ class TargetDisk:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetDisk.
+        r"""Sets the name of this TargetDisk.
 
         磁盘名称
 
@@ -201,7 +201,7 @@ class TargetDisk:
 
     @property
     def physical_volumes(self):
-        """Gets the physical_volumes of this TargetDisk.
+        r"""Gets the physical_volumes of this TargetDisk.
 
         逻辑卷信息
 
@@ -212,7 +212,7 @@ class TargetDisk:
 
     @physical_volumes.setter
     def physical_volumes(self, physical_volumes):
-        """Sets the physical_volumes of this TargetDisk.
+        r"""Sets the physical_volumes of this TargetDisk.
 
         逻辑卷信息
 
@@ -223,7 +223,7 @@ class TargetDisk:
 
     @property
     def size(self):
-        """Gets the size of this TargetDisk.
+        r"""Gets the size of this TargetDisk.
 
         大小
 
@@ -234,7 +234,7 @@ class TargetDisk:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this TargetDisk.
+        r"""Sets the size of this TargetDisk.
 
         大小
 
@@ -245,7 +245,7 @@ class TargetDisk:
 
     @property
     def used_size(self):
-        """Gets the used_size of this TargetDisk.
+        r"""Gets the used_size of this TargetDisk.
 
         已使用大小
 
@@ -256,7 +256,7 @@ class TargetDisk:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this TargetDisk.
+        r"""Sets the used_size of this TargetDisk.
 
         已使用大小
 
@@ -267,7 +267,7 @@ class TargetDisk:
 
     @property
     def disk_index(self):
-        """Gets the disk_index of this TargetDisk.
+        r"""Gets the disk_index of this TargetDisk.
 
         磁盘索引
 
@@ -278,7 +278,7 @@ class TargetDisk:
 
     @disk_index.setter
     def disk_index(self, disk_index):
-        """Sets the disk_index of this TargetDisk.
+        r"""Sets the disk_index of this TargetDisk.
 
         磁盘索引
 
@@ -289,7 +289,7 @@ class TargetDisk:
 
     @property
     def os_disk(self):
-        """Gets the os_disk of this TargetDisk.
+        r"""Gets the os_disk of this TargetDisk.
 
         是否为系统盘
 
@@ -300,7 +300,7 @@ class TargetDisk:
 
     @os_disk.setter
     def os_disk(self, os_disk):
-        """Sets the os_disk of this TargetDisk.
+        r"""Sets the os_disk of this TargetDisk.
 
         是否为系统盘
 
@@ -311,7 +311,7 @@ class TargetDisk:
 
     @property
     def partition_style(self):
-        """Gets the partition_style of this TargetDisk.
+        r"""Gets the partition_style of this TargetDisk.
 
         磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
@@ -322,7 +322,7 @@ class TargetDisk:
 
     @partition_style.setter
     def partition_style(self, partition_style):
-        """Sets the partition_style of this TargetDisk.
+        r"""Sets the partition_style of this TargetDisk.
 
         磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
@@ -333,7 +333,7 @@ class TargetDisk:
 
     @property
     def relation_name(self):
-        """Gets the relation_name of this TargetDisk.
+        r"""Gets the relation_name of this TargetDisk.
 
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
@@ -344,7 +344,7 @@ class TargetDisk:
 
     @relation_name.setter
     def relation_name(self, relation_name):
-        """Sets the relation_name of this TargetDisk.
+        r"""Sets the relation_name of this TargetDisk.
 
         Linux系统 目的端ECS中与源端关联的磁盘名称
 

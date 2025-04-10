@@ -39,7 +39,7 @@ class NodePoolSpec:
     }
 
     def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None, extension_scale_groups=None, custom_security_groups=None):
-        """NodePoolSpec
+        r"""NodePoolSpec
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class NodePoolSpec:
 
     @property
     def type(self):
-        """Gets the type of this NodePoolSpec.
+        r"""Gets the type of this NodePoolSpec.
 
         节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical - pm: 裸金属服务器 
 
@@ -102,7 +102,7 @@ class NodePoolSpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NodePoolSpec.
+        r"""Sets the type of this NodePoolSpec.
 
         节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical - pm: 裸金属服务器 
 
@@ -113,7 +113,7 @@ class NodePoolSpec:
 
     @property
     def node_template(self):
-        """Gets the node_template of this NodePoolSpec.
+        r"""Gets the node_template of this NodePoolSpec.
 
         :return: The node_template of this NodePoolSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -122,7 +122,7 @@ class NodePoolSpec:
 
     @node_template.setter
     def node_template(self, node_template):
-        """Sets the node_template of this NodePoolSpec.
+        r"""Sets the node_template of this NodePoolSpec.
 
         :param node_template: The node_template of this NodePoolSpec.
         :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -131,7 +131,7 @@ class NodePoolSpec:
 
     @property
     def initial_node_count(self):
-        """Gets the initial_node_count of this NodePoolSpec.
+        r"""Gets the initial_node_count of this NodePoolSpec.
 
         节点池初始化节点个数。查询时为节点池目标节点数量。
 
@@ -142,7 +142,7 @@ class NodePoolSpec:
 
     @initial_node_count.setter
     def initial_node_count(self, initial_node_count):
-        """Sets the initial_node_count of this NodePoolSpec.
+        r"""Sets the initial_node_count of this NodePoolSpec.
 
         节点池初始化节点个数。查询时为节点池目标节点数量。
 
@@ -153,7 +153,7 @@ class NodePoolSpec:
 
     @property
     def autoscaling(self):
-        """Gets the autoscaling of this NodePoolSpec.
+        r"""Gets the autoscaling of this NodePoolSpec.
 
         :return: The autoscaling of this NodePoolSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
@@ -162,7 +162,7 @@ class NodePoolSpec:
 
     @autoscaling.setter
     def autoscaling(self, autoscaling):
-        """Sets the autoscaling of this NodePoolSpec.
+        r"""Sets the autoscaling of this NodePoolSpec.
 
         :param autoscaling: The autoscaling of this NodePoolSpec.
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
@@ -171,7 +171,7 @@ class NodePoolSpec:
 
     @property
     def node_management(self):
-        """Gets the node_management of this NodePoolSpec.
+        r"""Gets the node_management of this NodePoolSpec.
 
         :return: The node_management of this NodePoolSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeManagement`
@@ -180,7 +180,7 @@ class NodePoolSpec:
 
     @node_management.setter
     def node_management(self, node_management):
-        """Sets the node_management of this NodePoolSpec.
+        r"""Sets the node_management of this NodePoolSpec.
 
         :param node_management: The node_management of this NodePoolSpec.
         :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
@@ -189,7 +189,7 @@ class NodePoolSpec:
 
     @property
     def pod_security_groups(self):
-        """Gets the pod_security_groups of this NodePoolSpec.
+        r"""Gets the pod_security_groups of this NodePoolSpec.
 
         1.21版本集群节点池支持绑定安全组，最多五个。
 
@@ -200,7 +200,7 @@ class NodePoolSpec:
 
     @pod_security_groups.setter
     def pod_security_groups(self, pod_security_groups):
-        """Sets the pod_security_groups of this NodePoolSpec.
+        r"""Sets the pod_security_groups of this NodePoolSpec.
 
         1.21版本集群节点池支持绑定安全组，最多五个。
 
@@ -211,7 +211,7 @@ class NodePoolSpec:
 
     @property
     def extension_scale_groups(self):
-        """Gets the extension_scale_groups of this NodePoolSpec.
+        r"""Gets the extension_scale_groups of this NodePoolSpec.
 
         节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
 
@@ -222,7 +222,7 @@ class NodePoolSpec:
 
     @extension_scale_groups.setter
     def extension_scale_groups(self, extension_scale_groups):
-        """Sets the extension_scale_groups of this NodePoolSpec.
+        r"""Sets the extension_scale_groups of this NodePoolSpec.
 
         节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
 
@@ -233,7 +233,7 @@ class NodePoolSpec:
 
     @property
     def custom_security_groups(self):
-        """Gets the custom_security_groups of this NodePoolSpec.
+        r"""Gets the custom_security_groups of this NodePoolSpec.
 
         节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
 
@@ -244,7 +244,7 @@ class NodePoolSpec:
 
     @custom_security_groups.setter
     def custom_security_groups(self, custom_security_groups):
-        """Sets the custom_security_groups of this NodePoolSpec.
+        r"""Sets the custom_security_groups of this NodePoolSpec.
 
         节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
 

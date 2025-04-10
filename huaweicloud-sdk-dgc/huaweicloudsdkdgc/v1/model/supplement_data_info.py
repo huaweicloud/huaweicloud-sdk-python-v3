@@ -49,7 +49,7 @@ class SupplementDataInfo:
     }
 
     def __init__(self, name=None, job_name=None, start_date=None, end_date=None, parallel=None, depend_jobs=None, is_day_granularity=None, priority=None, is_stop_when_fail=None, reverse_order=None, force=None, supplement_data_run_time=None, supplement_data_instance_time=None):
-        """SupplementDataInfo
+        r"""SupplementDataInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class SupplementDataInfo:
 
     @property
     def name(self):
-        """Gets the name of this SupplementDataInfo.
+        r"""Gets the name of this SupplementDataInfo.
 
         补数据实例名称
 
@@ -138,7 +138,7 @@ class SupplementDataInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SupplementDataInfo.
+        r"""Sets the name of this SupplementDataInfo.
 
         补数据实例名称
 
@@ -149,7 +149,7 @@ class SupplementDataInfo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this SupplementDataInfo.
+        r"""Gets the job_name of this SupplementDataInfo.
 
         补数据依赖的作业名称
 
@@ -160,7 +160,7 @@ class SupplementDataInfo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this SupplementDataInfo.
+        r"""Sets the job_name of this SupplementDataInfo.
 
         补数据依赖的作业名称
 
@@ -171,7 +171,7 @@ class SupplementDataInfo:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SupplementDataInfo.
+        r"""Gets the start_date of this SupplementDataInfo.
 
         补数据开始时间
 
@@ -182,7 +182,7 @@ class SupplementDataInfo:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SupplementDataInfo.
+        r"""Sets the start_date of this SupplementDataInfo.
 
         补数据开始时间
 
@@ -193,7 +193,7 @@ class SupplementDataInfo:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SupplementDataInfo.
+        r"""Gets the end_date of this SupplementDataInfo.
 
         补数据结束时间
 
@@ -204,7 +204,7 @@ class SupplementDataInfo:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SupplementDataInfo.
+        r"""Sets the end_date of this SupplementDataInfo.
 
         补数据结束时间
 
@@ -215,7 +215,7 @@ class SupplementDataInfo:
 
     @property
     def parallel(self):
-        """Gets the parallel of this SupplementDataInfo.
+        r"""Gets the parallel of this SupplementDataInfo.
 
         并行周期数
 
@@ -226,7 +226,7 @@ class SupplementDataInfo:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this SupplementDataInfo.
+        r"""Sets the parallel of this SupplementDataInfo.
 
         并行周期数
 
@@ -237,7 +237,7 @@ class SupplementDataInfo:
 
     @property
     def depend_jobs(self):
-        """Gets the depend_jobs of this SupplementDataInfo.
+        r"""Gets the depend_jobs of this SupplementDataInfo.
 
         依赖的作业信息
 
@@ -248,7 +248,7 @@ class SupplementDataInfo:
 
     @depend_jobs.setter
     def depend_jobs(self, depend_jobs):
-        """Sets the depend_jobs of this SupplementDataInfo.
+        r"""Sets the depend_jobs of this SupplementDataInfo.
 
         依赖的作业信息
 
@@ -259,7 +259,7 @@ class SupplementDataInfo:
 
     @property
     def is_day_granularity(self):
-        """Gets the is_day_granularity of this SupplementDataInfo.
+        r"""Gets the is_day_granularity of this SupplementDataInfo.
 
         是否按天粒度补数据
 
@@ -270,7 +270,7 @@ class SupplementDataInfo:
 
     @is_day_granularity.setter
     def is_day_granularity(self, is_day_granularity):
-        """Sets the is_day_granularity of this SupplementDataInfo.
+        r"""Sets the is_day_granularity of this SupplementDataInfo.
 
         是否按天粒度补数据
 
@@ -281,7 +281,7 @@ class SupplementDataInfo:
 
     @property
     def priority(self):
-        """Gets the priority of this SupplementDataInfo.
+        r"""Gets the priority of this SupplementDataInfo.
 
         优先级
 
@@ -292,7 +292,7 @@ class SupplementDataInfo:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this SupplementDataInfo.
+        r"""Sets the priority of this SupplementDataInfo.
 
         优先级
 
@@ -303,7 +303,7 @@ class SupplementDataInfo:
 
     @property
     def is_stop_when_fail(self):
-        """Gets the is_stop_when_fail of this SupplementDataInfo.
+        r"""Gets the is_stop_when_fail of this SupplementDataInfo.
 
         失败时作业是否停止
 
@@ -314,7 +314,7 @@ class SupplementDataInfo:
 
     @is_stop_when_fail.setter
     def is_stop_when_fail(self, is_stop_when_fail):
-        """Sets the is_stop_when_fail of this SupplementDataInfo.
+        r"""Sets the is_stop_when_fail of this SupplementDataInfo.
 
         失败时作业是否停止
 
@@ -325,7 +325,7 @@ class SupplementDataInfo:
 
     @property
     def reverse_order(self):
-        """Gets the reverse_order of this SupplementDataInfo.
+        r"""Gets the reverse_order of this SupplementDataInfo.
 
         按照时间倒序补跑
 
@@ -336,7 +336,7 @@ class SupplementDataInfo:
 
     @reverse_order.setter
     def reverse_order(self, reverse_order):
-        """Sets the reverse_order of this SupplementDataInfo.
+        r"""Sets the reverse_order of this SupplementDataInfo.
 
         按照时间倒序补跑
 
@@ -347,7 +347,7 @@ class SupplementDataInfo:
 
     @property
     def force(self):
-        """Gets the force of this SupplementDataInfo.
+        r"""Gets the force of this SupplementDataInfo.
 
         当前有补数据实例在运行时，是否强制补数据
 
@@ -358,7 +358,7 @@ class SupplementDataInfo:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this SupplementDataInfo.
+        r"""Sets the force of this SupplementDataInfo.
 
         当前有补数据实例在运行时，是否强制补数据
 
@@ -369,7 +369,7 @@ class SupplementDataInfo:
 
     @property
     def supplement_data_run_time(self):
-        """Gets the supplement_data_run_time of this SupplementDataInfo.
+        r"""Gets the supplement_data_run_time of this SupplementDataInfo.
 
         :return: The supplement_data_run_time of this SupplementDataInfo.
         :rtype: :class:`huaweicloudsdkdgc.v1.SupplementDataInfoSupplementDataRunTime`
@@ -378,7 +378,7 @@ class SupplementDataInfo:
 
     @supplement_data_run_time.setter
     def supplement_data_run_time(self, supplement_data_run_time):
-        """Sets the supplement_data_run_time of this SupplementDataInfo.
+        r"""Sets the supplement_data_run_time of this SupplementDataInfo.
 
         :param supplement_data_run_time: The supplement_data_run_time of this SupplementDataInfo.
         :type supplement_data_run_time: :class:`huaweicloudsdkdgc.v1.SupplementDataInfoSupplementDataRunTime`
@@ -387,7 +387,7 @@ class SupplementDataInfo:
 
     @property
     def supplement_data_instance_time(self):
-        """Gets the supplement_data_instance_time of this SupplementDataInfo.
+        r"""Gets the supplement_data_instance_time of this SupplementDataInfo.
 
         :return: The supplement_data_instance_time of this SupplementDataInfo.
         :rtype: :class:`huaweicloudsdkdgc.v1.SupplementDataInfoSupplementDataInstanceTime`
@@ -396,7 +396,7 @@ class SupplementDataInfo:
 
     @supplement_data_instance_time.setter
     def supplement_data_instance_time(self, supplement_data_instance_time):
-        """Sets the supplement_data_instance_time of this SupplementDataInfo.
+        r"""Sets the supplement_data_instance_time of this SupplementDataInfo.
 
         :param supplement_data_instance_time: The supplement_data_instance_time of this SupplementDataInfo.
         :type supplement_data_instance_time: :class:`huaweicloudsdkdgc.v1.SupplementDataInfoSupplementDataInstanceTime`

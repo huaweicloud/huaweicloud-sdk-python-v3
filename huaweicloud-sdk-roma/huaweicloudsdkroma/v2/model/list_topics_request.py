@@ -39,7 +39,7 @@ class ListTopicsRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, limit=None, offset=None, name=None, topic_permission=None, topic_type=None, is_private=None):
-        """ListTopicsRequest
+        r"""ListTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListTopicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTopicsRequest.
+        r"""Gets the instance_id of this ListTopicsRequest.
 
         实例ID
 
@@ -101,7 +101,7 @@ class ListTopicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTopicsRequest.
+        r"""Sets the instance_id of this ListTopicsRequest.
 
         实例ID
 
@@ -112,7 +112,7 @@ class ListTopicsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListTopicsRequest.
+        r"""Gets the device_id of this ListTopicsRequest.
 
         设备ID
 
@@ -123,7 +123,7 @@ class ListTopicsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListTopicsRequest.
+        r"""Sets the device_id of this ListTopicsRequest.
 
         设备ID
 
@@ -134,7 +134,7 @@ class ListTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTopicsRequest.
+        r"""Gets the limit of this ListTopicsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -145,7 +145,7 @@ class ListTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTopicsRequest.
+        r"""Sets the limit of this ListTopicsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -156,7 +156,7 @@ class ListTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTopicsRequest.
+        r"""Gets the offset of this ListTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -167,7 +167,7 @@ class ListTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTopicsRequest.
+        r"""Sets the offset of this ListTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -178,7 +178,7 @@ class ListTopicsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTopicsRequest.
+        r"""Gets the name of this ListTopicsRequest.
 
         topic名称
 
@@ -189,7 +189,7 @@ class ListTopicsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTopicsRequest.
+        r"""Sets the name of this ListTopicsRequest.
 
         topic名称
 
@@ -200,7 +200,7 @@ class ListTopicsRequest:
 
     @property
     def topic_permission(self):
-        """Gets the topic_permission of this ListTopicsRequest.
+        r"""Gets the topic_permission of this ListTopicsRequest.
 
         topic权限，0为发布，1为订阅
 
@@ -211,7 +211,7 @@ class ListTopicsRequest:
 
     @topic_permission.setter
     def topic_permission(self, topic_permission):
-        """Sets the topic_permission of this ListTopicsRequest.
+        r"""Sets the topic_permission of this ListTopicsRequest.
 
         topic权限，0为发布，1为订阅
 
@@ -222,7 +222,7 @@ class ListTopicsRequest:
 
     @property
     def topic_type(self):
-        """Gets the topic_type of this ListTopicsRequest.
+        r"""Gets the topic_type of this ListTopicsRequest.
 
         topic类型，0为设备类topic，1为产品类topic
 
@@ -233,7 +233,7 @@ class ListTopicsRequest:
 
     @topic_type.setter
     def topic_type(self, topic_type):
-        """Sets the topic_type of this ListTopicsRequest.
+        r"""Sets the topic_type of this ListTopicsRequest.
 
         topic类型，0为设备类topic，1为产品类topic
 
@@ -244,7 +244,7 @@ class ListTopicsRequest:
 
     @property
     def is_private(self):
-        """Gets the is_private of this ListTopicsRequest.
+        r"""Gets the is_private of this ListTopicsRequest.
 
         topic是否为自定义，0为基础topic，1为自定义topic
 
@@ -255,7 +255,7 @@ class ListTopicsRequest:
 
     @is_private.setter
     def is_private(self, is_private):
-        """Sets the is_private of this ListTopicsRequest.
+        r"""Sets the is_private of this ListTopicsRequest.
 
         topic是否为自定义，0为基础topic，1为自定义topic
 

@@ -26,7 +26,7 @@ class RestartClusterResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestartClusterResponse
+        r"""RestartClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartClusterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartClusterResponse.
+        r"""Gets the job_id of this RestartClusterResponse.
 
         作业ID
 
@@ -55,7 +55,7 @@ class RestartClusterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartClusterResponse.
+        r"""Sets the job_id of this RestartClusterResponse.
 
         作业ID
 

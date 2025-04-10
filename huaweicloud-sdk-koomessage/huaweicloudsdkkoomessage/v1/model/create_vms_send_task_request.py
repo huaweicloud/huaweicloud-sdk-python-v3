@@ -25,7 +25,7 @@ class CreateVmsSendTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVmsSendTaskRequest
+        r"""CreateVmsSendTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVmsSendTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVmsSendTaskRequest.
+        r"""Gets the body of this CreateVmsSendTaskRequest.
 
         :return: The body of this CreateVmsSendTaskRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateVmsSendTaskRequestBody`
@@ -52,7 +52,7 @@ class CreateVmsSendTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVmsSendTaskRequest.
+        r"""Sets the body of this CreateVmsSendTaskRequest.
 
         :param body: The body of this CreateVmsSendTaskRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CreateVmsSendTaskRequestBody`

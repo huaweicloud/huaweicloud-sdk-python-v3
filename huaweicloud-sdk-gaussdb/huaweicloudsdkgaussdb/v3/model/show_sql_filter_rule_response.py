@@ -28,7 +28,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
     }
 
     def __init__(self, node_id=None, sql_filter_rules=None):
-        """ShowSqlFilterRuleResponse
+        r"""ShowSqlFilterRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowSqlFilterRuleResponse.
+        r"""Gets the node_id of this ShowSqlFilterRuleResponse.
 
         节点ID
 
@@ -62,7 +62,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowSqlFilterRuleResponse.
+        r"""Sets the node_id of this ShowSqlFilterRuleResponse.
 
         节点ID
 
@@ -73,7 +73,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
 
     @property
     def sql_filter_rules(self):
-        """Gets the sql_filter_rules of this ShowSqlFilterRuleResponse.
+        r"""Gets the sql_filter_rules of this ShowSqlFilterRuleResponse.
 
         SQL限流规则
 
@@ -84,7 +84,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
 
     @sql_filter_rules.setter
     def sql_filter_rules(self, sql_filter_rules):
-        """Sets the sql_filter_rules of this ShowSqlFilterRuleResponse.
+        r"""Sets the sql_filter_rules of this ShowSqlFilterRuleResponse.
 
         SQL限流规则
 

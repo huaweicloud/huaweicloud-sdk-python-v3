@@ -27,7 +27,7 @@ class ShowPropertyRawValueRequest:
     }
 
     def __init__(self, asset_id=None, body=None):
-        """ShowPropertyRawValueRequest
+        r"""ShowPropertyRawValueRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPropertyRawValueRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowPropertyRawValueRequest.
+        r"""Gets the asset_id of this ShowPropertyRawValueRequest.
 
         资产ID
 
@@ -60,7 +60,7 @@ class ShowPropertyRawValueRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowPropertyRawValueRequest.
+        r"""Sets the asset_id of this ShowPropertyRawValueRequest.
 
         资产ID
 
@@ -71,7 +71,7 @@ class ShowPropertyRawValueRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPropertyRawValueRequest.
+        r"""Gets the body of this ShowPropertyRawValueRequest.
 
         :return: The body of this ShowPropertyRawValueRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`
@@ -80,7 +80,7 @@ class ShowPropertyRawValueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPropertyRawValueRequest.
+        r"""Sets the body of this ShowPropertyRawValueRequest.
 
         :param body: The body of this ShowPropertyRawValueRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`

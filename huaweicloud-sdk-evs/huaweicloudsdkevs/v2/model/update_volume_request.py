@@ -27,7 +27,7 @@ class UpdateVolumeRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """UpdateVolumeRequest
+        r"""UpdateVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVolumeRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this UpdateVolumeRequest.
+        r"""Gets the volume_id of this UpdateVolumeRequest.
 
         云硬盘ID。
 
@@ -60,7 +60,7 @@ class UpdateVolumeRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this UpdateVolumeRequest.
+        r"""Sets the volume_id of this UpdateVolumeRequest.
 
         云硬盘ID。
 
@@ -71,7 +71,7 @@ class UpdateVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVolumeRequest.
+        r"""Gets the body of this UpdateVolumeRequest.
 
         :return: The body of this UpdateVolumeRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateVolumeRequestBody`
@@ -80,7 +80,7 @@ class UpdateVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVolumeRequest.
+        r"""Sets the body of this UpdateVolumeRequest.
 
         :param body: The body of this UpdateVolumeRequest.
         :type body: :class:`huaweicloudsdkevs.v2.UpdateVolumeRequestBody`

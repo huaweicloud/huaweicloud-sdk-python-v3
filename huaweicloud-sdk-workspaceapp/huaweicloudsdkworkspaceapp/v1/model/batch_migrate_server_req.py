@@ -27,7 +27,7 @@ class BatchMigrateServerReq:
     }
 
     def __init__(self, server_ids=None, host_id=None):
-        """BatchMigrateServerReq
+        r"""BatchMigrateServerReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchMigrateServerReq:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this BatchMigrateServerReq.
+        r"""Gets the server_ids of this BatchMigrateServerReq.
 
         应用服务器id集合。
 
@@ -59,7 +59,7 @@ class BatchMigrateServerReq:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this BatchMigrateServerReq.
+        r"""Sets the server_ids of this BatchMigrateServerReq.
 
         应用服务器id集合。
 
@@ -70,7 +70,7 @@ class BatchMigrateServerReq:
 
     @property
     def host_id(self):
-        """Gets the host_id of this BatchMigrateServerReq.
+        r"""Gets the host_id of this BatchMigrateServerReq.
 
         目标云办公主机id。
 
@@ -81,7 +81,7 @@ class BatchMigrateServerReq:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this BatchMigrateServerReq.
+        r"""Sets the host_id of this BatchMigrateServerReq.
 
         目标云办公主机id。
 

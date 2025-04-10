@@ -27,7 +27,7 @@ class CreateAiOpsRequestBodyAlarm:
     }
 
     def __init__(self, level=None, smn_topic=None):
-        """CreateAiOpsRequestBodyAlarm
+        r"""CreateAiOpsRequestBodyAlarm
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAiOpsRequestBodyAlarm:
 
     @property
     def level(self):
-        """Gets the level of this CreateAiOpsRequestBodyAlarm.
+        r"""Gets the level of this CreateAiOpsRequestBodyAlarm.
 
         SMN告警消息敏感度。 - high：高风险。 - medium：中风险。 - suggestion：建议。 - norisk：无风险。
 
@@ -59,7 +59,7 @@ class CreateAiOpsRequestBodyAlarm:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this CreateAiOpsRequestBodyAlarm.
+        r"""Sets the level of this CreateAiOpsRequestBodyAlarm.
 
         SMN告警消息敏感度。 - high：高风险。 - medium：中风险。 - suggestion：建议。 - norisk：无风险。
 
@@ -70,7 +70,7 @@ class CreateAiOpsRequestBodyAlarm:
 
     @property
     def smn_topic(self):
-        """Gets the smn_topic of this CreateAiOpsRequestBodyAlarm.
+        r"""Gets the smn_topic of this CreateAiOpsRequestBodyAlarm.
 
         SMN主题名称。
 
@@ -81,7 +81,7 @@ class CreateAiOpsRequestBodyAlarm:
 
     @smn_topic.setter
     def smn_topic(self, smn_topic):
-        """Sets the smn_topic of this CreateAiOpsRequestBodyAlarm.
+        r"""Sets the smn_topic of this CreateAiOpsRequestBodyAlarm.
 
         SMN主题名称。
 

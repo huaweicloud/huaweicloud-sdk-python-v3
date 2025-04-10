@@ -25,7 +25,7 @@ class UpdateBucketAuthorizedRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateBucketAuthorizedRequest
+        r"""UpdateBucketAuthorizedRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateBucketAuthorizedRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBucketAuthorizedRequest.
+        r"""Gets the body of this UpdateBucketAuthorizedRequest.
 
         :return: The body of this UpdateBucketAuthorizedRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedReq`
@@ -52,7 +52,7 @@ class UpdateBucketAuthorizedRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBucketAuthorizedRequest.
+        r"""Sets the body of this UpdateBucketAuthorizedRequest.
 
         :param body: The body of this UpdateBucketAuthorizedRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedReq`

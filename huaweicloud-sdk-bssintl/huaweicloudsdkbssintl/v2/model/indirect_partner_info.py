@@ -39,7 +39,7 @@ class IndirectPartnerInfo:
     }
 
     def __init__(self, indirect_partner_id=None, mobile_phone=None, email=None, account_name=None, name=None, associated_on=None, account_manager_id=None, account_manager_name=None):
-        """IndirectPartnerInfo
+        r"""IndirectPartnerInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class IndirectPartnerInfo:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this IndirectPartnerInfo.
+        r"""Gets the indirect_partner_id of this IndirectPartnerInfo.
 
         云经销商ID。
 
@@ -103,7 +103,7 @@ class IndirectPartnerInfo:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this IndirectPartnerInfo.
+        r"""Sets the indirect_partner_id of this IndirectPartnerInfo.
 
         云经销商ID。
 
@@ -114,7 +114,7 @@ class IndirectPartnerInfo:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this IndirectPartnerInfo.
+        r"""Gets the mobile_phone of this IndirectPartnerInfo.
 
         云经销商的手机号码。
 
@@ -125,7 +125,7 @@ class IndirectPartnerInfo:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this IndirectPartnerInfo.
+        r"""Sets the mobile_phone of this IndirectPartnerInfo.
 
         云经销商的手机号码。
 
@@ -136,7 +136,7 @@ class IndirectPartnerInfo:
 
     @property
     def email(self):
-        """Gets the email of this IndirectPartnerInfo.
+        r"""Gets the email of this IndirectPartnerInfo.
 
         云经销商的邮箱。
 
@@ -147,7 +147,7 @@ class IndirectPartnerInfo:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this IndirectPartnerInfo.
+        r"""Sets the email of this IndirectPartnerInfo.
 
         云经销商的邮箱。
 
@@ -158,7 +158,7 @@ class IndirectPartnerInfo:
 
     @property
     def account_name(self):
-        """Gets the account_name of this IndirectPartnerInfo.
+        r"""Gets the account_name of this IndirectPartnerInfo.
 
         云经销商的账户名。
 
@@ -169,7 +169,7 @@ class IndirectPartnerInfo:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this IndirectPartnerInfo.
+        r"""Sets the account_name of this IndirectPartnerInfo.
 
         云经销商的账户名。
 
@@ -180,7 +180,7 @@ class IndirectPartnerInfo:
 
     @property
     def name(self):
-        """Gets the name of this IndirectPartnerInfo.
+        r"""Gets the name of this IndirectPartnerInfo.
 
         云经销商的名称。
 
@@ -191,7 +191,7 @@ class IndirectPartnerInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IndirectPartnerInfo.
+        r"""Sets the name of this IndirectPartnerInfo.
 
         云经销商的名称。
 
@@ -202,7 +202,7 @@ class IndirectPartnerInfo:
 
     @property
     def associated_on(self):
-        """Gets the associated_on of this IndirectPartnerInfo.
+        r"""Gets the associated_on of this IndirectPartnerInfo.
 
         云经销商关联华为云总经销商的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
@@ -213,7 +213,7 @@ class IndirectPartnerInfo:
 
     @associated_on.setter
     def associated_on(self, associated_on):
-        """Sets the associated_on of this IndirectPartnerInfo.
+        r"""Sets the associated_on of this IndirectPartnerInfo.
 
         云经销商关联华为云总经销商的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
@@ -224,7 +224,7 @@ class IndirectPartnerInfo:
 
     @property
     def account_manager_id(self):
-        """Gets the account_manager_id of this IndirectPartnerInfo.
+        r"""Gets the account_manager_id of this IndirectPartnerInfo.
 
         客户经理登录账户名。
 
@@ -235,7 +235,7 @@ class IndirectPartnerInfo:
 
     @account_manager_id.setter
     def account_manager_id(self, account_manager_id):
-        """Sets the account_manager_id of this IndirectPartnerInfo.
+        r"""Sets the account_manager_id of this IndirectPartnerInfo.
 
         客户经理登录账户名。
 
@@ -246,7 +246,7 @@ class IndirectPartnerInfo:
 
     @property
     def account_manager_name(self):
-        """Gets the account_manager_name of this IndirectPartnerInfo.
+        r"""Gets the account_manager_name of this IndirectPartnerInfo.
 
         客户经理的名称。
 
@@ -257,7 +257,7 @@ class IndirectPartnerInfo:
 
     @account_manager_name.setter
     def account_manager_name(self, account_manager_name):
-        """Sets the account_manager_name of this IndirectPartnerInfo.
+        r"""Sets the account_manager_name of this IndirectPartnerInfo.
 
         客户经理的名称。
 

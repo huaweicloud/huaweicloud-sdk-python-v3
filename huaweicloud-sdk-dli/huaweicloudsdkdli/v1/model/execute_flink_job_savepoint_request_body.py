@@ -27,7 +27,7 @@ class ExecuteFlinkJobSavepointRequestBody:
     }
 
     def __init__(self, action=None, savepoint_path=None):
-        """ExecuteFlinkJobSavepointRequestBody
+        r"""ExecuteFlinkJobSavepointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExecuteFlinkJobSavepointRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ExecuteFlinkJobSavepointRequestBody.
+        r"""Gets the action of this ExecuteFlinkJobSavepointRequestBody.
 
         操作类型
 
@@ -59,7 +59,7 @@ class ExecuteFlinkJobSavepointRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ExecuteFlinkJobSavepointRequestBody.
+        r"""Sets the action of this ExecuteFlinkJobSavepointRequestBody.
 
         操作类型
 
@@ -70,7 +70,7 @@ class ExecuteFlinkJobSavepointRequestBody:
 
     @property
     def savepoint_path(self):
-        """Gets the savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
+        r"""Gets the savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
 
         obs桶路径.例 \"bucket_name/file_name/\"
 
@@ -81,7 +81,7 @@ class ExecuteFlinkJobSavepointRequestBody:
 
     @savepoint_path.setter
     def savepoint_path(self, savepoint_path):
-        """Sets the savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
+        r"""Sets the savepoint_path of this ExecuteFlinkJobSavepointRequestBody.
 
         obs桶路径.例 \"bucket_name/file_name/\"
 

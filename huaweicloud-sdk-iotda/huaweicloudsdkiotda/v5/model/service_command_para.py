@@ -43,7 +43,7 @@ class ServiceCommandPara:
     }
 
     def __init__(self, para_name=None, data_type=None, required=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, description=None):
-        """ServiceCommandPara
+        r"""ServiceCommandPara
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class ServiceCommandPara:
 
     @property
     def para_name(self):
-        """Gets the para_name of this ServiceCommandPara.
+        r"""Gets the para_name of this ServiceCommandPara.
 
         **参数说明**：参数的名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -115,7 +115,7 @@ class ServiceCommandPara:
 
     @para_name.setter
     def para_name(self, para_name):
-        """Sets the para_name of this ServiceCommandPara.
+        r"""Sets the para_name of this ServiceCommandPara.
 
         **参数说明**：参数的名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -126,7 +126,7 @@ class ServiceCommandPara:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ServiceCommandPara.
+        r"""Gets the data_type of this ServiceCommandPara.
 
         **参数说明**：参数的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
@@ -137,7 +137,7 @@ class ServiceCommandPara:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ServiceCommandPara.
+        r"""Sets the data_type of this ServiceCommandPara.
 
         **参数说明**：参数的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
@@ -148,7 +148,7 @@ class ServiceCommandPara:
 
     @property
     def required(self):
-        """Gets the required of this ServiceCommandPara.
+        r"""Gets the required of this ServiceCommandPara.
 
         **参数说明**：参数是否必选。默认为false。
 
@@ -159,7 +159,7 @@ class ServiceCommandPara:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ServiceCommandPara.
+        r"""Sets the required of this ServiceCommandPara.
 
         **参数说明**：参数是否必选。默认为false。
 
@@ -170,7 +170,7 @@ class ServiceCommandPara:
 
     @property
     def enum_list(self):
-        """Gets the enum_list of this ServiceCommandPara.
+        r"""Gets the enum_list of this ServiceCommandPara.
 
         **参数说明**：参数的枚举值列表。
 
@@ -181,7 +181,7 @@ class ServiceCommandPara:
 
     @enum_list.setter
     def enum_list(self, enum_list):
-        """Sets the enum_list of this ServiceCommandPara.
+        r"""Sets the enum_list of this ServiceCommandPara.
 
         **参数说明**：参数的枚举值列表。
 
@@ -192,7 +192,7 @@ class ServiceCommandPara:
 
     @property
     def min(self):
-        """Gets the min of this ServiceCommandPara.
+        r"""Gets the min of this ServiceCommandPara.
 
         **参数说明**：参数的最小值。 **取值范围**：长度1-16。
 
@@ -203,7 +203,7 @@ class ServiceCommandPara:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ServiceCommandPara.
+        r"""Sets the min of this ServiceCommandPara.
 
         **参数说明**：参数的最小值。 **取值范围**：长度1-16。
 
@@ -214,7 +214,7 @@ class ServiceCommandPara:
 
     @property
     def max(self):
-        """Gets the max of this ServiceCommandPara.
+        r"""Gets the max of this ServiceCommandPara.
 
         **参数说明**：参数的最大值。 **取值范围**：长度1-16。
 
@@ -225,7 +225,7 @@ class ServiceCommandPara:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ServiceCommandPara.
+        r"""Sets the max of this ServiceCommandPara.
 
         **参数说明**：参数的最大值。 **取值范围**：长度1-16。
 
@@ -236,7 +236,7 @@ class ServiceCommandPara:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ServiceCommandPara.
+        r"""Gets the max_length of this ServiceCommandPara.
 
         **参数说明**：参数的最大长度。
 
@@ -247,7 +247,7 @@ class ServiceCommandPara:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ServiceCommandPara.
+        r"""Sets the max_length of this ServiceCommandPara.
 
         **参数说明**：参数的最大长度。
 
@@ -258,7 +258,7 @@ class ServiceCommandPara:
 
     @property
     def step(self):
-        """Gets the step of this ServiceCommandPara.
+        r"""Gets the step of this ServiceCommandPara.
 
         **参数说明**：参数的步长。
 
@@ -269,7 +269,7 @@ class ServiceCommandPara:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ServiceCommandPara.
+        r"""Sets the step of this ServiceCommandPara.
 
         **参数说明**：参数的步长。
 
@@ -280,7 +280,7 @@ class ServiceCommandPara:
 
     @property
     def unit(self):
-        """Gets the unit of this ServiceCommandPara.
+        r"""Gets the unit of this ServiceCommandPara.
 
         **参数说明**：参数的单位。 **取值范围**：长度不超过16。
 
@@ -291,7 +291,7 @@ class ServiceCommandPara:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ServiceCommandPara.
+        r"""Sets the unit of this ServiceCommandPara.
 
         **参数说明**：参数的单位。 **取值范围**：长度不超过16。
 
@@ -302,7 +302,7 @@ class ServiceCommandPara:
 
     @property
     def description(self):
-        """Gets the description of this ServiceCommandPara.
+        r"""Gets the description of this ServiceCommandPara.
 
         **参数说明**：参数的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -313,7 +313,7 @@ class ServiceCommandPara:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceCommandPara.
+        r"""Sets the description of this ServiceCommandPara.
 
         **参数说明**：参数的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 

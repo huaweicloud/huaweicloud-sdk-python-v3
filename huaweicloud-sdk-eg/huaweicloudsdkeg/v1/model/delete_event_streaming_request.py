@@ -25,7 +25,7 @@ class DeleteEventStreamingRequest:
     }
 
     def __init__(self, eventstreaming_id=None):
-        """DeleteEventStreamingRequest
+        r"""DeleteEventStreamingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEventStreamingRequest:
 
     @property
     def eventstreaming_id(self):
-        """Gets the eventstreaming_id of this DeleteEventStreamingRequest.
+        r"""Gets the eventstreaming_id of this DeleteEventStreamingRequest.
 
         事件流ID
 
@@ -53,7 +53,7 @@ class DeleteEventStreamingRequest:
 
     @eventstreaming_id.setter
     def eventstreaming_id(self, eventstreaming_id):
-        """Sets the eventstreaming_id of this DeleteEventStreamingRequest.
+        r"""Sets the eventstreaming_id of this DeleteEventStreamingRequest.
 
         事件流ID
 

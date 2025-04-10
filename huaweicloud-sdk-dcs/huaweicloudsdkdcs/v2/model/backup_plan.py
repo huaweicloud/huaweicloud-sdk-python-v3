@@ -31,7 +31,7 @@ class BackupPlan:
     }
 
     def __init__(self, timezone_offset=None, backup_at=None, period_type=None, begin_at=None):
-        """BackupPlan
+        r"""BackupPlan
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BackupPlan:
 
     @property
     def timezone_offset(self):
-        """Gets the timezone_offset of this BackupPlan.
+        r"""Gets the timezone_offset of this BackupPlan.
 
         备份的时区。取值为-1200 ~+1200之间的时区。若为空则默认使用DCS-Server节点的当前时区。
 
@@ -72,7 +72,7 @@ class BackupPlan:
 
     @timezone_offset.setter
     def timezone_offset(self, timezone_offset):
-        """Sets the timezone_offset of this BackupPlan.
+        r"""Sets the timezone_offset of this BackupPlan.
 
         备份的时区。取值为-1200 ~+1200之间的时区。若为空则默认使用DCS-Server节点的当前时区。
 
@@ -83,7 +83,7 @@ class BackupPlan:
 
     @property
     def backup_at(self):
-        """Gets the backup_at of this BackupPlan.
+        r"""Gets the backup_at of this BackupPlan.
 
         每周的周几开始备份，取值1-7，1代表周一，7代表周日。
 
@@ -94,7 +94,7 @@ class BackupPlan:
 
     @backup_at.setter
     def backup_at(self, backup_at):
-        """Sets the backup_at of this BackupPlan.
+        r"""Sets the backup_at of this BackupPlan.
 
         每周的周几开始备份，取值1-7，1代表周一，7代表周日。
 
@@ -105,7 +105,7 @@ class BackupPlan:
 
     @property
     def period_type(self):
-        """Gets the period_type of this BackupPlan.
+        r"""Gets the period_type of this BackupPlan.
 
         备份周期类型，目前支持“weekly”。
 
@@ -116,7 +116,7 @@ class BackupPlan:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this BackupPlan.
+        r"""Sets the period_type of this BackupPlan.
 
         备份周期类型，目前支持“weekly”。
 
@@ -127,7 +127,7 @@ class BackupPlan:
 
     @property
     def begin_at(self):
-        """Gets the begin_at of this BackupPlan.
+        r"""Gets the begin_at of this BackupPlan.
 
         备份执行时间，“00:00-01:00”代表0点开始执行备份。
 
@@ -138,7 +138,7 @@ class BackupPlan:
 
     @begin_at.setter
     def begin_at(self, begin_at):
-        """Sets the begin_at of this BackupPlan.
+        r"""Sets the begin_at of this BackupPlan.
 
         备份执行时间，“00:00-01:00”代表0点开始执行备份。
 

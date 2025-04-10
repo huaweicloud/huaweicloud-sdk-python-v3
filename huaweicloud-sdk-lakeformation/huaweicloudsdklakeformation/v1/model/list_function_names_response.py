@@ -28,7 +28,7 @@ class ListFunctionNamesResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_request_id=None):
-        """ListFunctionNamesResponse
+        r"""ListFunctionNamesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFunctionNamesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListFunctionNamesResponse.
+        r"""Gets the body of this ListFunctionNamesResponse.
 
         :return: The body of this ListFunctionNamesResponse.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class ListFunctionNamesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFunctionNamesResponse.
+        r"""Sets the body of this ListFunctionNamesResponse.
 
         :param body: The body of this ListFunctionNamesResponse.
         :type body: list[str]
@@ -69,7 +69,7 @@ class ListFunctionNamesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListFunctionNamesResponse.
+        r"""Gets the x_request_id of this ListFunctionNamesResponse.
 
         :return: The x_request_id of this ListFunctionNamesResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ListFunctionNamesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListFunctionNamesResponse.
+        r"""Sets the x_request_id of this ListFunctionNamesResponse.
 
         :param x_request_id: The x_request_id of this ListFunctionNamesResponse.
         :type x_request_id: str

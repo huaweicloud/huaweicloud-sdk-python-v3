@@ -28,7 +28,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, restart_required=None, job_id=None):
-        """UpdateInstanceConfigurationResponse
+        r"""UpdateInstanceConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this UpdateInstanceConfigurationResponse.
+        r"""Gets the restart_required of this UpdateInstanceConfigurationResponse.
 
         实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
 
@@ -62,7 +62,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this UpdateInstanceConfigurationResponse.
+        r"""Sets the restart_required of this UpdateInstanceConfigurationResponse.
 
         实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
 
@@ -73,7 +73,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateInstanceConfigurationResponse.
+        r"""Gets the job_id of this UpdateInstanceConfigurationResponse.
 
         修改指定实例参数的任务ID。
 
@@ -84,7 +84,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateInstanceConfigurationResponse.
+        r"""Sets the job_id of this UpdateInstanceConfigurationResponse.
 
         修改指定实例参数的任务ID。
 

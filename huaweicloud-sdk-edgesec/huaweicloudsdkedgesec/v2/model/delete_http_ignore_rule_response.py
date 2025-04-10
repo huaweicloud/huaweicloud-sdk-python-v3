@@ -24,7 +24,7 @@ class DeleteHttpIgnoreRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttpIgnoreRuleResponse
+        r"""DeleteHttpIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
 

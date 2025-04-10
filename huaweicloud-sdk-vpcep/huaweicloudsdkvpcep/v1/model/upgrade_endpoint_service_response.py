@@ -24,7 +24,7 @@ class UpgradeEndpointServiceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpgradeEndpointServiceResponse
+        r"""UpgradeEndpointServiceResponse
 
         The model defined in huaweicloud sdk
 

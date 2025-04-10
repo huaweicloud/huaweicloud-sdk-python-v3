@@ -35,7 +35,7 @@ class DistinguishedName:
     }
 
     def __init__(self, common_name=None, country=None, state=None, locality=None, organization=None, organizational_unit=None):
-        """DistinguishedName
+        r"""DistinguishedName
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DistinguishedName:
 
     @property
     def common_name(self):
-        """Gets the common_name of this DistinguishedName.
+        r"""Gets the common_name of this DistinguishedName.
 
         证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -83,7 +83,7 @@ class DistinguishedName:
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this DistinguishedName.
+        r"""Sets the common_name of this DistinguishedName.
 
         证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -94,7 +94,7 @@ class DistinguishedName:
 
     @property
     def country(self):
-        """Gets the country of this DistinguishedName.
+        r"""Gets the country of this DistinguishedName.
 
         国家编码，只能由英文组成，长度为2位字符。
 
@@ -105,7 +105,7 @@ class DistinguishedName:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this DistinguishedName.
+        r"""Sets the country of this DistinguishedName.
 
         国家编码，只能由英文组成，长度为2位字符。
 
@@ -116,7 +116,7 @@ class DistinguishedName:
 
     @property
     def state(self):
-        """Gets the state of this DistinguishedName.
+        r"""Gets the state of this DistinguishedName.
 
         省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
@@ -127,7 +127,7 @@ class DistinguishedName:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DistinguishedName.
+        r"""Sets the state of this DistinguishedName.
 
         省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
@@ -138,7 +138,7 @@ class DistinguishedName:
 
     @property
     def locality(self):
-        """Gets the locality of this DistinguishedName.
+        r"""Gets the locality of this DistinguishedName.
 
         地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
@@ -149,7 +149,7 @@ class DistinguishedName:
 
     @locality.setter
     def locality(self, locality):
-        """Sets the locality of this DistinguishedName.
+        r"""Sets the locality of this DistinguishedName.
 
         地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。
 
@@ -160,7 +160,7 @@ class DistinguishedName:
 
     @property
     def organization(self):
-        """Gets the organization of this DistinguishedName.
+        r"""Gets the organization of this DistinguishedName.
 
         组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -171,7 +171,7 @@ class DistinguishedName:
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this DistinguishedName.
+        r"""Sets the organization of this DistinguishedName.
 
         组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -182,7 +182,7 @@ class DistinguishedName:
 
     @property
     def organizational_unit(self):
-        """Gets the organizational_unit of this DistinguishedName.
+        r"""Gets the organizational_unit of this DistinguishedName.
 
         组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -193,7 +193,7 @@ class DistinguishedName:
 
     @organizational_unit.setter
     def organizational_unit(self, organizational_unit):
-        """Sets the organizational_unit of this DistinguishedName.
+        r"""Sets the organizational_unit of this DistinguishedName.
 
         组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。
 

@@ -29,7 +29,7 @@ class UploadPluginIconRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, body=None):
-        """UploadPluginIconRequest
+        r"""UploadPluginIconRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UploadPluginIconRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UploadPluginIconRequest.
+        r"""Gets the domain_id of this UploadPluginIconRequest.
 
         租户ID
 
@@ -66,7 +66,7 @@ class UploadPluginIconRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UploadPluginIconRequest.
+        r"""Sets the domain_id of this UploadPluginIconRequest.
 
         租户ID
 
@@ -77,7 +77,7 @@ class UploadPluginIconRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this UploadPluginIconRequest.
+        r"""Gets the plugin_name of this UploadPluginIconRequest.
 
         :return: The plugin_name of this UploadPluginIconRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class UploadPluginIconRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this UploadPluginIconRequest.
+        r"""Sets the plugin_name of this UploadPluginIconRequest.
 
         :param plugin_name: The plugin_name of this UploadPluginIconRequest.
         :type plugin_name: str
@@ -95,7 +95,7 @@ class UploadPluginIconRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadPluginIconRequest.
+        r"""Gets the body of this UploadPluginIconRequest.
 
         :return: The body of this UploadPluginIconRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UploadPluginIconRequestBody`
@@ -104,7 +104,7 @@ class UploadPluginIconRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadPluginIconRequest.
+        r"""Sets the body of this UploadPluginIconRequest.
 
         :param body: The body of this UploadPluginIconRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.UploadPluginIconRequestBody`

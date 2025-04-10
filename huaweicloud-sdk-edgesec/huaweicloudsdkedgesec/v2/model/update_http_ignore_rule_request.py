@@ -29,7 +29,7 @@ class UpdateHttpIgnoreRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None, body=None):
-        """UpdateHttpIgnoreRuleRequest
+        r"""UpdateHttpIgnoreRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateHttpIgnoreRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpIgnoreRuleRequest.
+        r"""Gets the policy_id of this UpdateHttpIgnoreRuleRequest.
 
         策略id
 
@@ -66,7 +66,7 @@ class UpdateHttpIgnoreRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpIgnoreRuleRequest.
+        r"""Sets the policy_id of this UpdateHttpIgnoreRuleRequest.
 
         策略id
 
@@ -77,7 +77,7 @@ class UpdateHttpIgnoreRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateHttpIgnoreRuleRequest.
+        r"""Gets the rule_id of this UpdateHttpIgnoreRuleRequest.
 
         防护规则id
 
@@ -88,7 +88,7 @@ class UpdateHttpIgnoreRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateHttpIgnoreRuleRequest.
+        r"""Sets the rule_id of this UpdateHttpIgnoreRuleRequest.
 
         防护规则id
 
@@ -99,7 +99,7 @@ class UpdateHttpIgnoreRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpIgnoreRuleRequest.
+        r"""Gets the body of this UpdateHttpIgnoreRuleRequest.
 
         :return: The body of this UpdateHttpIgnoreRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpIgnoreRuleRequestBody`
@@ -108,7 +108,7 @@ class UpdateHttpIgnoreRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpIgnoreRuleRequest.
+        r"""Sets the body of this UpdateHttpIgnoreRuleRequest.
 
         :param body: The body of this UpdateHttpIgnoreRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpIgnoreRuleRequestBody`

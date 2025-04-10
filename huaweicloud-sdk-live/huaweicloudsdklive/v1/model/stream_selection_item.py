@@ -29,7 +29,7 @@ class StreamSelectionItem:
     }
 
     def __init__(self, key=None, max_bandwidth=None, min_bandwidth=None):
-        """StreamSelectionItem
+        r"""StreamSelectionItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StreamSelectionItem:
 
     @property
     def key(self):
-        """Gets the key of this StreamSelectionItem.
+        r"""Gets the key of this StreamSelectionItem.
 
         拉流URL中用于码率过滤的参数
 
@@ -68,7 +68,7 @@ class StreamSelectionItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this StreamSelectionItem.
+        r"""Sets the key of this StreamSelectionItem.
 
         拉流URL中用于码率过滤的参数
 
@@ -79,7 +79,7 @@ class StreamSelectionItem:
 
     @property
     def max_bandwidth(self):
-        """Gets the max_bandwidth of this StreamSelectionItem.
+        r"""Gets the max_bandwidth of this StreamSelectionItem.
 
         最大码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
@@ -90,7 +90,7 @@ class StreamSelectionItem:
 
     @max_bandwidth.setter
     def max_bandwidth(self, max_bandwidth):
-        """Sets the max_bandwidth of this StreamSelectionItem.
+        r"""Sets the max_bandwidth of this StreamSelectionItem.
 
         最大码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
@@ -101,7 +101,7 @@ class StreamSelectionItem:
 
     @property
     def min_bandwidth(self):
-        """Gets the min_bandwidth of this StreamSelectionItem.
+        r"""Gets the min_bandwidth of this StreamSelectionItem.
 
         最小码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 
@@ -112,7 +112,7 @@ class StreamSelectionItem:
 
     @min_bandwidth.setter
     def min_bandwidth(self, min_bandwidth):
-        """Sets the min_bandwidth of this StreamSelectionItem.
+        r"""Sets the min_bandwidth of this StreamSelectionItem.
 
         最小码率，单位：bps  取值范围：0 - 104,857,600（100Mbps）
 

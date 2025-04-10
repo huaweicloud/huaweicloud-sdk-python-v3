@@ -25,7 +25,7 @@ class ShowPolicyRequest:
     }
 
     def __init__(self, policy_id=None):
-        """ShowPolicyRequest
+        r"""ShowPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowPolicyRequest.
+        r"""Gets the policy_id of this ShowPolicyRequest.
 
         策略ID
 
@@ -53,7 +53,7 @@ class ShowPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowPolicyRequest.
+        r"""Sets the policy_id of this ShowPolicyRequest.
 
         策略ID
 

@@ -26,7 +26,7 @@ class UpdateReplicationNameResponse(SdkResponse):
     }
 
     def __init__(self, replication=None):
-        """UpdateReplicationNameResponse
+        r"""UpdateReplicationNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateReplicationNameResponse(SdkResponse):
 
     @property
     def replication(self):
-        """Gets the replication of this UpdateReplicationNameResponse.
+        r"""Gets the replication of this UpdateReplicationNameResponse.
 
         :return: The replication of this UpdateReplicationNameResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowReplicationParams`
@@ -53,7 +53,7 @@ class UpdateReplicationNameResponse(SdkResponse):
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this UpdateReplicationNameResponse.
+        r"""Sets the replication of this UpdateReplicationNameResponse.
 
         :param replication: The replication of this UpdateReplicationNameResponse.
         :type replication: :class:`huaweicloudsdksdrs.v1.ShowReplicationParams`

@@ -31,7 +31,7 @@ class NodeSpecDto:
     }
 
     def __init__(self, code=None, name=None, ram=None, vcpus=None):
-        """NodeSpecDto
+        r"""NodeSpecDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NodeSpecDto:
 
     @property
     def code(self):
-        """Gets the code of this NodeSpecDto.
+        r"""Gets the code of this NodeSpecDto.
 
         规格编号
 
@@ -75,7 +75,7 @@ class NodeSpecDto:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this NodeSpecDto.
+        r"""Sets the code of this NodeSpecDto.
 
         规格编号
 
@@ -86,7 +86,7 @@ class NodeSpecDto:
 
     @property
     def name(self):
-        """Gets the name of this NodeSpecDto.
+        r"""Gets the name of this NodeSpecDto.
 
         规格名称
 
@@ -97,7 +97,7 @@ class NodeSpecDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeSpecDto.
+        r"""Sets the name of this NodeSpecDto.
 
         规格名称
 
@@ -108,7 +108,7 @@ class NodeSpecDto:
 
     @property
     def ram(self):
-        """Gets the ram of this NodeSpecDto.
+        r"""Gets the ram of this NodeSpecDto.
 
         内存
 
@@ -119,7 +119,7 @@ class NodeSpecDto:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this NodeSpecDto.
+        r"""Sets the ram of this NodeSpecDto.
 
         内存
 
@@ -130,7 +130,7 @@ class NodeSpecDto:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this NodeSpecDto.
+        r"""Gets the vcpus of this NodeSpecDto.
 
         vcpus
 
@@ -141,7 +141,7 @@ class NodeSpecDto:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this NodeSpecDto.
+        r"""Sets the vcpus of this NodeSpecDto.
 
         vcpus
 

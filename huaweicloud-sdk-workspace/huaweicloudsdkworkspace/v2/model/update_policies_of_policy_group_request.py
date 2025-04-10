@@ -27,7 +27,7 @@ class UpdatePoliciesOfPolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None, body=None):
-        """UpdatePoliciesOfPolicyGroupRequest
+        r"""UpdatePoliciesOfPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePoliciesOfPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this UpdatePoliciesOfPolicyGroupRequest.
+        r"""Gets the policy_group_id of this UpdatePoliciesOfPolicyGroupRequest.
 
         策略组id。
 
@@ -60,7 +60,7 @@ class UpdatePoliciesOfPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this UpdatePoliciesOfPolicyGroupRequest.
+        r"""Sets the policy_group_id of this UpdatePoliciesOfPolicyGroupRequest.
 
         策略组id。
 
@@ -71,7 +71,7 @@ class UpdatePoliciesOfPolicyGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePoliciesOfPolicyGroupRequest.
+        r"""Gets the body of this UpdatePoliciesOfPolicyGroupRequest.
 
         :return: The body of this UpdatePoliciesOfPolicyGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ModifyPolicyRequest`
@@ -80,7 +80,7 @@ class UpdatePoliciesOfPolicyGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePoliciesOfPolicyGroupRequest.
+        r"""Sets the body of this UpdatePoliciesOfPolicyGroupRequest.
 
         :param body: The body of this UpdatePoliciesOfPolicyGroupRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ModifyPolicyRequest`

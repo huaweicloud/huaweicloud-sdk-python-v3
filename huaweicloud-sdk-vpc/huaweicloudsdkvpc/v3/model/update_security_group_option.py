@@ -27,7 +27,7 @@ class UpdateSecurityGroupOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateSecurityGroupOption
+        r"""UpdateSecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateSecurityGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSecurityGroupOption.
+        r"""Gets the name of this UpdateSecurityGroupOption.
 
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -61,7 +61,7 @@ class UpdateSecurityGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSecurityGroupOption.
+        r"""Sets the name of this UpdateSecurityGroupOption.
 
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -72,7 +72,7 @@ class UpdateSecurityGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSecurityGroupOption.
+        r"""Gets the description of this UpdateSecurityGroupOption.
 
         功能说明：安全组描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -83,7 +83,7 @@ class UpdateSecurityGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSecurityGroupOption.
+        r"""Sets the description of this UpdateSecurityGroupOption.
 
         功能说明：安全组描述 取值范围：0-255个字符，不能包含“<”和“>”
 

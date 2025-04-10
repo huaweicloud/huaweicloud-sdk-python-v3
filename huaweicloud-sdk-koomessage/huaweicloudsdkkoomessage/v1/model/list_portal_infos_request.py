@@ -35,7 +35,7 @@ class ListPortalInfosRequest:
     }
 
     def __init__(self, pub_name=None, begin_time=None, end_time=None, state=None, limit=None, offset=None):
-        """ListPortalInfosRequest
+        r"""ListPortalInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListPortalInfosRequest:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this ListPortalInfosRequest.
+        r"""Gets the pub_name of this ListPortalInfosRequest.
 
         服务号名称。
 
@@ -89,7 +89,7 @@ class ListPortalInfosRequest:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this ListPortalInfosRequest.
+        r"""Sets the pub_name of this ListPortalInfosRequest.
 
         服务号名称。
 
@@ -100,7 +100,7 @@ class ListPortalInfosRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListPortalInfosRequest.
+        r"""Gets the begin_time of this ListPortalInfosRequest.
 
         起始上线时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -111,7 +111,7 @@ class ListPortalInfosRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListPortalInfosRequest.
+        r"""Sets the begin_time of this ListPortalInfosRequest.
 
         起始上线时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -122,7 +122,7 @@ class ListPortalInfosRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPortalInfosRequest.
+        r"""Gets the end_time of this ListPortalInfosRequest.
 
         截止上线时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -133,7 +133,7 @@ class ListPortalInfosRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPortalInfosRequest.
+        r"""Sets the end_time of this ListPortalInfosRequest.
 
         截止上线时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -144,7 +144,7 @@ class ListPortalInfosRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListPortalInfosRequest.
+        r"""Gets the state of this ListPortalInfosRequest.
 
         主页状态。 - 1：未生效  - 2：已生效  - 3：已失效  - 4：服务号已冻结 
 
@@ -155,7 +155,7 @@ class ListPortalInfosRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListPortalInfosRequest.
+        r"""Sets the state of this ListPortalInfosRequest.
 
         主页状态。 - 1：未生效  - 2：已生效  - 3：已失效  - 4：服务号已冻结 
 
@@ -166,7 +166,7 @@ class ListPortalInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortalInfosRequest.
+        r"""Gets the limit of this ListPortalInfosRequest.
 
         每页显示的条目数量。
 
@@ -177,7 +177,7 @@ class ListPortalInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortalInfosRequest.
+        r"""Sets the limit of this ListPortalInfosRequest.
 
         每页显示的条目数量。
 
@@ -188,7 +188,7 @@ class ListPortalInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortalInfosRequest.
+        r"""Gets the offset of this ListPortalInfosRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -199,7 +199,7 @@ class ListPortalInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortalInfosRequest.
+        r"""Sets the offset of this ListPortalInfosRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 

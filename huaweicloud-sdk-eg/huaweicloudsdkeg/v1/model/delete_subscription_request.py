@@ -27,7 +27,7 @@ class DeleteSubscriptionRequest:
     }
 
     def __init__(self, subscription_id=None, enterprise_project_id=None):
-        """DeleteSubscriptionRequest
+        r"""DeleteSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSubscriptionRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this DeleteSubscriptionRequest.
+        r"""Gets the subscription_id of this DeleteSubscriptionRequest.
 
         事件订阅ID
 
@@ -60,7 +60,7 @@ class DeleteSubscriptionRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this DeleteSubscriptionRequest.
+        r"""Sets the subscription_id of this DeleteSubscriptionRequest.
 
         事件订阅ID
 
@@ -71,7 +71,7 @@ class DeleteSubscriptionRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteSubscriptionRequest.
+        r"""Gets the enterprise_project_id of this DeleteSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -82,7 +82,7 @@ class DeleteSubscriptionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteSubscriptionRequest.
+        r"""Sets the enterprise_project_id of this DeleteSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 

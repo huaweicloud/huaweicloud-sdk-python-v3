@@ -27,7 +27,7 @@ class ShowTestCaseAndDefectInfoRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowTestCaseAndDefectInfoRequest
+        r"""ShowTestCaseAndDefectInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTestCaseAndDefectInfoRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTestCaseAndDefectInfoRequest.
+        r"""Gets the project_id of this ShowTestCaseAndDefectInfoRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowTestCaseAndDefectInfoRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTestCaseAndDefectInfoRequest.
+        r"""Sets the project_id of this ShowTestCaseAndDefectInfoRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowTestCaseAndDefectInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowTestCaseAndDefectInfoRequest.
+        r"""Gets the body of this ShowTestCaseAndDefectInfoRequest.
 
         :return: The body of this ShowTestCaseAndDefectInfoRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseAndDefectInfoRequestBody`
@@ -80,7 +80,7 @@ class ShowTestCaseAndDefectInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTestCaseAndDefectInfoRequest.
+        r"""Sets the body of this ShowTestCaseAndDefectInfoRequest.
 
         :param body: The body of this ShowTestCaseAndDefectInfoRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseAndDefectInfoRequestBody`

@@ -29,7 +29,7 @@ class AsyncActionResp:
     }
 
     def __init__(self, query_id=None, id=None, name=None):
-        """AsyncActionResp
+        r"""AsyncActionResp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AsyncActionResp:
 
     @property
     def query_id(self):
-        """Gets the query_id of this AsyncActionResp.
+        r"""Gets the query_id of this AsyncActionResp.
 
         异步操作任务响应查询ID。
 
@@ -65,7 +65,7 @@ class AsyncActionResp:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this AsyncActionResp.
+        r"""Sets the query_id of this AsyncActionResp.
 
         异步操作任务响应查询ID。
 
@@ -76,7 +76,7 @@ class AsyncActionResp:
 
     @property
     def id(self):
-        """Gets the id of this AsyncActionResp.
+        r"""Gets the id of this AsyncActionResp.
 
         任务ID。
 
@@ -87,7 +87,7 @@ class AsyncActionResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AsyncActionResp.
+        r"""Sets the id of this AsyncActionResp.
 
         任务ID。
 
@@ -98,7 +98,7 @@ class AsyncActionResp:
 
     @property
     def name(self):
-        """Gets the name of this AsyncActionResp.
+        r"""Gets the name of this AsyncActionResp.
 
         任务名称。
 
@@ -109,7 +109,7 @@ class AsyncActionResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AsyncActionResp.
+        r"""Sets the name of this AsyncActionResp.
 
         任务名称。
 

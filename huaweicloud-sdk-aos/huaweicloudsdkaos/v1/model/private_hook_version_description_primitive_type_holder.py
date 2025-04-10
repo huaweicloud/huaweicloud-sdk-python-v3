@@ -25,7 +25,7 @@ class PrivateHookVersionDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, hook_version_description=None):
-        """PrivateHookVersionDescriptionPrimitiveTypeHolder
+        r"""PrivateHookVersionDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateHookVersionDescriptionPrimitiveTypeHolder:
 
     @property
     def hook_version_description(self):
-        """Gets the hook_version_description of this PrivateHookVersionDescriptionPrimitiveTypeHolder.
+        r"""Gets the hook_version_description of this PrivateHookVersionDescriptionPrimitiveTypeHolder.
 
         私有hook版本的描述。可用于客户识别创建私有hook的版本。注意：hook版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建。
 
@@ -54,7 +54,7 @@ class PrivateHookVersionDescriptionPrimitiveTypeHolder:
 
     @hook_version_description.setter
     def hook_version_description(self, hook_version_description):
-        """Sets the hook_version_description of this PrivateHookVersionDescriptionPrimitiveTypeHolder.
+        r"""Sets the hook_version_description of this PrivateHookVersionDescriptionPrimitiveTypeHolder.
 
         私有hook版本的描述。可用于客户识别创建私有hook的版本。注意：hook版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建。
 

@@ -27,7 +27,7 @@ class CloneServerBrief:
     }
 
     def __init__(self, vm_id=None, name=None):
-        """CloneServerBrief
+        r"""CloneServerBrief
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CloneServerBrief:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this CloneServerBrief.
+        r"""Gets the vm_id of this CloneServerBrief.
 
         克隆服务器ID
 
@@ -61,7 +61,7 @@ class CloneServerBrief:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this CloneServerBrief.
+        r"""Sets the vm_id of this CloneServerBrief.
 
         克隆服务器ID
 
@@ -72,7 +72,7 @@ class CloneServerBrief:
 
     @property
     def name(self):
-        """Gets the name of this CloneServerBrief.
+        r"""Gets the name of this CloneServerBrief.
 
         克隆虚拟机的名称
 
@@ -83,7 +83,7 @@ class CloneServerBrief:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CloneServerBrief.
+        r"""Sets the name of this CloneServerBrief.
 
         克隆虚拟机的名称
 

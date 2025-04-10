@@ -27,7 +27,7 @@ class BoundingBox:
     }
 
     def __init__(self, center=None, size=None):
-        """BoundingBox
+        r"""BoundingBox
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BoundingBox:
 
     @property
     def center(self):
-        """Gets the center of this BoundingBox.
+        r"""Gets the center of this BoundingBox.
 
         口袋中心坐标; x, y, z轴的坐标
 
@@ -61,7 +61,7 @@ class BoundingBox:
 
     @center.setter
     def center(self, center):
-        """Sets the center of this BoundingBox.
+        r"""Sets the center of this BoundingBox.
 
         口袋中心坐标; x, y, z轴的坐标
 
@@ -72,7 +72,7 @@ class BoundingBox:
 
     @property
     def size(self):
-        """Gets the size of this BoundingBox.
+        r"""Gets the size of this BoundingBox.
 
         口袋尺寸大小;  x, y, z轴的大小
 
@@ -83,7 +83,7 @@ class BoundingBox:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BoundingBox.
+        r"""Sets the size of this BoundingBox.
 
         口袋尺寸大小;  x, y, z轴的大小
 

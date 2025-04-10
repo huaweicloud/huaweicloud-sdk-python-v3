@@ -24,7 +24,7 @@ class CreateLogBackupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateLogBackupResponse
+        r"""CreateLogBackupResponse
 
         The model defined in huaweicloud sdk
 

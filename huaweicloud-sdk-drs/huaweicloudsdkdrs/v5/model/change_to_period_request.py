@@ -29,7 +29,7 @@ class ChangeToPeriodRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """ChangeToPeriodRequest
+        r"""ChangeToPeriodRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeToPeriodRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeToPeriodRequest.
+        r"""Gets the job_id of this ChangeToPeriodRequest.
 
         转包周期的任务ID。
 
@@ -67,7 +67,7 @@ class ChangeToPeriodRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeToPeriodRequest.
+        r"""Sets the job_id of this ChangeToPeriodRequest.
 
         转包周期的任务ID。
 
@@ -78,7 +78,7 @@ class ChangeToPeriodRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeToPeriodRequest.
+        r"""Gets the x_language of this ChangeToPeriodRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class ChangeToPeriodRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeToPeriodRequest.
+        r"""Sets the x_language of this ChangeToPeriodRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class ChangeToPeriodRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeToPeriodRequest.
+        r"""Gets the body of this ChangeToPeriodRequest.
 
         :return: The body of this ChangeToPeriodRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.ToPeriodReq`
@@ -109,7 +109,7 @@ class ChangeToPeriodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeToPeriodRequest.
+        r"""Sets the body of this ChangeToPeriodRequest.
 
         :param body: The body of this ChangeToPeriodRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.ToPeriodReq`

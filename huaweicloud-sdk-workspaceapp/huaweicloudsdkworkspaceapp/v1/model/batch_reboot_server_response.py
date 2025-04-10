@@ -24,7 +24,7 @@ class BatchRebootServerResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchRebootServerResponse
+        r"""BatchRebootServerResponse
 
         The model defined in huaweicloud sdk
 

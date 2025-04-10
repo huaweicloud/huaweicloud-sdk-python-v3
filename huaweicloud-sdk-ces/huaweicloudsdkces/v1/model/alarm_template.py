@@ -35,7 +35,7 @@ class AlarmTemplate:
     }
 
     def __init__(self, template_name=None, template_description=None, namespace=None, dimension_name=None, template_items=None, template_id=None):
-        """AlarmTemplate
+        r"""AlarmTemplate
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AlarmTemplate:
 
     @property
     def template_name(self):
-        """Gets the template_name of this AlarmTemplate.
+        r"""Gets the template_name of this AlarmTemplate.
 
         自定义告警模板名称，如：alarmTemplate-Test01。
 
@@ -89,7 +89,7 @@ class AlarmTemplate:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this AlarmTemplate.
+        r"""Sets the template_name of this AlarmTemplate.
 
         自定义告警模板名称，如：alarmTemplate-Test01。
 
@@ -100,7 +100,7 @@ class AlarmTemplate:
 
     @property
     def template_description(self):
-        """Gets the template_description of this AlarmTemplate.
+        r"""Gets the template_description of this AlarmTemplate.
 
         自定义告警模板描述。
 
@@ -111,7 +111,7 @@ class AlarmTemplate:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this AlarmTemplate.
+        r"""Sets the template_description of this AlarmTemplate.
 
         自定义告警模板描述。
 
@@ -122,7 +122,7 @@ class AlarmTemplate:
 
     @property
     def namespace(self):
-        """Gets the namespace of this AlarmTemplate.
+        r"""Gets the namespace of this AlarmTemplate.
 
         自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -133,7 +133,7 @@ class AlarmTemplate:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this AlarmTemplate.
+        r"""Sets the namespace of this AlarmTemplate.
 
         自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -144,7 +144,7 @@ class AlarmTemplate:
 
     @property
     def dimension_name(self):
-        """Gets the dimension_name of this AlarmTemplate.
+        r"""Gets the dimension_name of this AlarmTemplate.
 
         自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -155,7 +155,7 @@ class AlarmTemplate:
 
     @dimension_name.setter
     def dimension_name(self, dimension_name):
-        """Sets the dimension_name of this AlarmTemplate.
+        r"""Sets the dimension_name of this AlarmTemplate.
 
         自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -166,7 +166,7 @@ class AlarmTemplate:
 
     @property
     def template_items(self):
-        """Gets the template_items of this AlarmTemplate.
+        r"""Gets the template_items of this AlarmTemplate.
 
         自定义告警模板添加的一组或者多个告警策略。
 
@@ -177,7 +177,7 @@ class AlarmTemplate:
 
     @template_items.setter
     def template_items(self, template_items):
-        """Sets the template_items of this AlarmTemplate.
+        r"""Sets the template_items of this AlarmTemplate.
 
         自定义告警模板添加的一组或者多个告警策略。
 
@@ -188,7 +188,7 @@ class AlarmTemplate:
 
     @property
     def template_id(self):
-        """Gets the template_id of this AlarmTemplate.
+        r"""Gets the template_id of this AlarmTemplate.
 
         自定义告警模板的ID，如：at1603330892378wkDm77y6B。
 
@@ -199,7 +199,7 @@ class AlarmTemplate:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this AlarmTemplate.
+        r"""Sets the template_id of this AlarmTemplate.
 
         自定义告警模板的ID，如：at1603330892378wkDm77y6B。
 

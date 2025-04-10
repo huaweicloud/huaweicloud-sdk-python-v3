@@ -29,7 +29,7 @@ class ResetConsumeOffsetRespQueues:
     }
 
     def __init__(self, broker_name=None, queue_id=None, timestamp_offset=None):
-        """ResetConsumeOffsetRespQueues
+        r"""ResetConsumeOffsetRespQueues
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResetConsumeOffsetRespQueues:
 
     @property
     def broker_name(self):
-        """Gets the broker_name of this ResetConsumeOffsetRespQueues.
+        r"""Gets the broker_name of this ResetConsumeOffsetRespQueues.
 
         队列所在的broker。
 
@@ -68,7 +68,7 @@ class ResetConsumeOffsetRespQueues:
 
     @broker_name.setter
     def broker_name(self, broker_name):
-        """Sets the broker_name of this ResetConsumeOffsetRespQueues.
+        r"""Sets the broker_name of this ResetConsumeOffsetRespQueues.
 
         队列所在的broker。
 
@@ -79,7 +79,7 @@ class ResetConsumeOffsetRespQueues:
 
     @property
     def queue_id(self):
-        """Gets the queue_id of this ResetConsumeOffsetRespQueues.
+        r"""Gets the queue_id of this ResetConsumeOffsetRespQueues.
 
         队列ID。
 
@@ -90,7 +90,7 @@ class ResetConsumeOffsetRespQueues:
 
     @queue_id.setter
     def queue_id(self, queue_id):
-        """Sets the queue_id of this ResetConsumeOffsetRespQueues.
+        r"""Sets the queue_id of this ResetConsumeOffsetRespQueues.
 
         队列ID。
 
@@ -101,7 +101,7 @@ class ResetConsumeOffsetRespQueues:
 
     @property
     def timestamp_offset(self):
-        """Gets the timestamp_offset of this ResetConsumeOffsetRespQueues.
+        r"""Gets the timestamp_offset of this ResetConsumeOffsetRespQueues.
 
         重置消费进度。
 
@@ -112,7 +112,7 @@ class ResetConsumeOffsetRespQueues:
 
     @timestamp_offset.setter
     def timestamp_offset(self, timestamp_offset):
-        """Sets the timestamp_offset of this ResetConsumeOffsetRespQueues.
+        r"""Sets the timestamp_offset of this ResetConsumeOffsetRespQueues.
 
         重置消费进度。
 

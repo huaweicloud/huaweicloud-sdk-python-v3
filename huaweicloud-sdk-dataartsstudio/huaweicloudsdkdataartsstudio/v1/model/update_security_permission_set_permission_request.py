@@ -31,7 +31,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
     }
 
     def __init__(self, permission_set_id=None, permission_id=None, workspace=None, body=None):
-        """UpdateSecurityPermissionSetPermissionRequest
+        r"""UpdateSecurityPermissionSetPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Gets the permission_set_id of this UpdateSecurityPermissionSetPermissionRequest.
 
         权限集id
 
@@ -72,7 +72,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Sets the permission_set_id of this UpdateSecurityPermissionSetPermissionRequest.
 
         权限集id
 
@@ -83,7 +83,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Gets the permission_id of this UpdateSecurityPermissionSetPermissionRequest.
 
         权限id
 
@@ -94,7 +94,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Sets the permission_id of this UpdateSecurityPermissionSetPermissionRequest.
 
         权限id
 
@@ -105,7 +105,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Gets the workspace of this UpdateSecurityPermissionSetPermissionRequest.
 
         DataArts Studio工作空间ID
 
@@ -116,7 +116,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Sets the workspace of this UpdateSecurityPermissionSetPermissionRequest.
 
         DataArts Studio工作空间ID
 
@@ -127,7 +127,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Gets the body of this UpdateSecurityPermissionSetPermissionRequest.
 
         :return: The body of this UpdateSecurityPermissionSetPermissionRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionUpdateDTO`
@@ -136,7 +136,7 @@ class UpdateSecurityPermissionSetPermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityPermissionSetPermissionRequest.
+        r"""Sets the body of this UpdateSecurityPermissionSetPermissionRequest.
 
         :param body: The body of this UpdateSecurityPermissionSetPermissionRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionUpdateDTO`

@@ -31,7 +31,7 @@ class VideoModerationAudioDetailList:
     }
 
     def __init__(self, confidence=None, label=None, suggestion=None, segments=None):
-        """VideoModerationAudioDetailList
+        r"""VideoModerationAudioDetailList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VideoModerationAudioDetailList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this VideoModerationAudioDetailList.
+        r"""Gets the confidence of this VideoModerationAudioDetailList.
 
         风险置信度
 
@@ -75,7 +75,7 @@ class VideoModerationAudioDetailList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this VideoModerationAudioDetailList.
+        r"""Sets the confidence of this VideoModerationAudioDetailList.
 
         风险置信度
 
@@ -86,7 +86,7 @@ class VideoModerationAudioDetailList:
 
     @property
     def label(self):
-        """Gets the label of this VideoModerationAudioDetailList.
+        r"""Gets the label of this VideoModerationAudioDetailList.
 
         风险标签
 
@@ -97,7 +97,7 @@ class VideoModerationAudioDetailList:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this VideoModerationAudioDetailList.
+        r"""Sets the label of this VideoModerationAudioDetailList.
 
         风险标签
 
@@ -108,7 +108,7 @@ class VideoModerationAudioDetailList:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this VideoModerationAudioDetailList.
+        r"""Gets the suggestion of this VideoModerationAudioDetailList.
 
         审核处理建议： block：包含敏感信息，不通过 review：需要人工复检
 
@@ -119,7 +119,7 @@ class VideoModerationAudioDetailList:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this VideoModerationAudioDetailList.
+        r"""Sets the suggestion of this VideoModerationAudioDetailList.
 
         审核处理建议： block：包含敏感信息，不通过 review：需要人工复检
 
@@ -130,7 +130,7 @@ class VideoModerationAudioDetailList:
 
     @property
     def segments(self):
-        """Gets the segments of this VideoModerationAudioDetailList.
+        r"""Gets the segments of this VideoModerationAudioDetailList.
 
         命中的风险片段信息列表，如果命中语义算法模型，则该字段不会存在
 
@@ -141,7 +141,7 @@ class VideoModerationAudioDetailList:
 
     @segments.setter
     def segments(self, segments):
-        """Sets the segments of this VideoModerationAudioDetailList.
+        r"""Sets the segments of this VideoModerationAudioDetailList.
 
         命中的风险片段信息列表，如果命中语义算法模型，则该字段不会存在
 

@@ -29,7 +29,7 @@ class CreateRoutetableOption:
     }
 
     def __init__(self, name=None, vpc_id=None, description=None):
-        """CreateRoutetableOption
+        r"""CreateRoutetableOption
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateRoutetableOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateRoutetableOption.
+        r"""Gets the name of this CreateRoutetableOption.
 
         路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -66,7 +66,7 @@ class CreateRoutetableOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRoutetableOption.
+        r"""Sets the name of this CreateRoutetableOption.
 
         路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -77,7 +77,7 @@ class CreateRoutetableOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateRoutetableOption.
+        r"""Gets the vpc_id of this CreateRoutetableOption.
 
         路由表所在的虚拟私有云ID
 
@@ -88,7 +88,7 @@ class CreateRoutetableOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateRoutetableOption.
+        r"""Sets the vpc_id of this CreateRoutetableOption.
 
         路由表所在的虚拟私有云ID
 
@@ -99,7 +99,7 @@ class CreateRoutetableOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateRoutetableOption.
+        r"""Gets the description of this CreateRoutetableOption.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -110,7 +110,7 @@ class CreateRoutetableOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRoutetableOption.
+        r"""Sets the description of this CreateRoutetableOption.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 

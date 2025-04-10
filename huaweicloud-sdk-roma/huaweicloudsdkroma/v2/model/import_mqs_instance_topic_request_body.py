@@ -25,7 +25,7 @@ class ImportMqsInstanceTopicRequestBody:
     }
 
     def __init__(self, upload_file_name=None):
-        """ImportMqsInstanceTopicRequestBody
+        r"""ImportMqsInstanceTopicRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportMqsInstanceTopicRequestBody:
 
     @property
     def upload_file_name(self):
-        """Gets the upload_file_name of this ImportMqsInstanceTopicRequestBody.
+        r"""Gets the upload_file_name of this ImportMqsInstanceTopicRequestBody.
 
         待导入的topic列表文件。
 
@@ -53,7 +53,7 @@ class ImportMqsInstanceTopicRequestBody:
 
     @upload_file_name.setter
     def upload_file_name(self, upload_file_name):
-        """Sets the upload_file_name of this ImportMqsInstanceTopicRequestBody.
+        r"""Sets the upload_file_name of this ImportMqsInstanceTopicRequestBody.
 
         待导入的topic列表文件。
 

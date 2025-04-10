@@ -26,7 +26,7 @@ class UpdateRecurringMeetingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateRecurringMeetingResponse
+        r"""UpdateRecurringMeetingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateRecurringMeetingResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateRecurringMeetingResponse.
+        r"""Gets the body of this UpdateRecurringMeetingResponse.
 
         会议信息列表。
 
@@ -55,7 +55,7 @@ class UpdateRecurringMeetingResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRecurringMeetingResponse.
+        r"""Sets the body of this UpdateRecurringMeetingResponse.
 
         会议信息列表。
 

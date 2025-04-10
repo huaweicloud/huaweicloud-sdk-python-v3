@@ -29,7 +29,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, strategy_id=None):
-        """DeleteSpecialThrottlingConfigurationV2Request
+        r"""DeleteSpecialThrottlingConfigurationV2Request
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
+        r"""Gets the instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
+        r"""Sets the instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
+        r"""Gets the throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
         流控策略的编号
 
@@ -87,7 +87,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
+        r"""Sets the throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
         流控策略的编号
 
@@ -98,7 +98,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
 
     @property
     def strategy_id(self):
-        """Gets the strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
+        r"""Gets the strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
         特殊配置的编号
 
@@ -109,7 +109,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
 
     @strategy_id.setter
     def strategy_id(self, strategy_id):
-        """Sets the strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
+        r"""Sets the strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
         特殊配置的编号
 

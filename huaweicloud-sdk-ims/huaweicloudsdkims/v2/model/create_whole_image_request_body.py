@@ -45,7 +45,7 @@ class CreateWholeImageRequestBody:
     }
 
     def __init__(self, description=None, enterprise_project_id=None, image_tags=None, instance_id=None, name=None, tags=None, backup_id=None, whole_image_type=None, max_ram=None, min_ram=None, vault_id=None):
-        """CreateWholeImageRequestBody
+        r"""CreateWholeImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateWholeImageRequestBody.
+        r"""Gets the description of this CreateWholeImageRequestBody.
 
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
@@ -122,7 +122,7 @@ class CreateWholeImageRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWholeImageRequestBody.
+        r"""Sets the description of this CreateWholeImageRequestBody.
 
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
@@ -133,7 +133,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateWholeImageRequestBody.
+        r"""Gets the enterprise_project_id of this CreateWholeImageRequestBody.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -144,7 +144,7 @@ class CreateWholeImageRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateWholeImageRequestBody.
+        r"""Sets the enterprise_project_id of this CreateWholeImageRequestBody.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -155,7 +155,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def image_tags(self):
-        """Gets the image_tags of this CreateWholeImageRequestBody.
+        r"""Gets the image_tags of this CreateWholeImageRequestBody.
 
         新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
@@ -166,7 +166,7 @@ class CreateWholeImageRequestBody:
 
     @image_tags.setter
     def image_tags(self, image_tags):
-        """Sets the image_tags of this CreateWholeImageRequestBody.
+        r"""Sets the image_tags of this CreateWholeImageRequestBody.
 
         新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
@@ -177,7 +177,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateWholeImageRequestBody.
+        r"""Gets the instance_id of this CreateWholeImageRequestBody.
 
         弹性云服务器ID。使用弹性云服务器制作整机镜像时使用此参数且必填。 如果使用备份创建整机镜像，该参数应换成backup_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
 
@@ -188,7 +188,7 @@ class CreateWholeImageRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateWholeImageRequestBody.
+        r"""Sets the instance_id of this CreateWholeImageRequestBody.
 
         弹性云服务器ID。使用弹性云服务器制作整机镜像时使用此参数且必填。 如果使用备份创建整机镜像，该参数应换成backup_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
 
@@ -199,7 +199,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateWholeImageRequestBody.
+        r"""Gets the name of this CreateWholeImageRequestBody.
 
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
@@ -210,7 +210,7 @@ class CreateWholeImageRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWholeImageRequestBody.
+        r"""Sets the name of this CreateWholeImageRequestBody.
 
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
@@ -221,7 +221,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateWholeImageRequestBody.
+        r"""Gets the tags of this CreateWholeImageRequestBody.
 
         镜像标签列表。tags和image_tags只能使用一个。
 
@@ -232,7 +232,7 @@ class CreateWholeImageRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateWholeImageRequestBody.
+        r"""Sets the tags of this CreateWholeImageRequestBody.
 
         镜像标签列表。tags和image_tags只能使用一个。
 
@@ -243,7 +243,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this CreateWholeImageRequestBody.
+        r"""Gets the backup_id of this CreateWholeImageRequestBody.
 
         使用云服务器备份创建整机镜像使用此参数且必填。 如果使用ECS创建整机镜像，则该参数应传为instance_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
 
@@ -254,7 +254,7 @@ class CreateWholeImageRequestBody:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this CreateWholeImageRequestBody.
+        r"""Sets the backup_id of this CreateWholeImageRequestBody.
 
         使用云服务器备份创建整机镜像使用此参数且必填。 如果使用ECS创建整机镜像，则该参数应传为instance_id。 非必填的原因是需要兼容“使用备份创建整机镜像”和“使用弹性云服务器制作整机镜像”两种场景的body体。
 
@@ -265,7 +265,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def whole_image_type(self):
-        """Gets the whole_image_type of this CreateWholeImageRequestBody.
+        r"""Gets the whole_image_type of this CreateWholeImageRequestBody.
 
         使用备份创建整机镜像时，该字段区分是CBR服务的备份还是CSBS服务的备份，取值为：CBR/CSBS。 使用ECS创建整机镜像时，该字段不填
 
@@ -276,7 +276,7 @@ class CreateWholeImageRequestBody:
 
     @whole_image_type.setter
     def whole_image_type(self, whole_image_type):
-        """Sets the whole_image_type of this CreateWholeImageRequestBody.
+        r"""Sets the whole_image_type of this CreateWholeImageRequestBody.
 
         使用备份创建整机镜像时，该字段区分是CBR服务的备份还是CSBS服务的备份，取值为：CBR/CSBS。 使用ECS创建整机镜像时，该字段不填
 
@@ -287,7 +287,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this CreateWholeImageRequestBody.
+        r"""Gets the max_ram of this CreateWholeImageRequestBody.
 
         表示镜像支持的最大内存，单位为MB，默认不设置。
 
@@ -298,7 +298,7 @@ class CreateWholeImageRequestBody:
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this CreateWholeImageRequestBody.
+        r"""Sets the max_ram of this CreateWholeImageRequestBody.
 
         表示镜像支持的最大内存，单位为MB，默认不设置。
 
@@ -309,7 +309,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this CreateWholeImageRequestBody.
+        r"""Gets the min_ram of this CreateWholeImageRequestBody.
 
         表示镜像支持的最小内存，单位为MB，默认为0。
 
@@ -320,7 +320,7 @@ class CreateWholeImageRequestBody:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this CreateWholeImageRequestBody.
+        r"""Sets the min_ram of this CreateWholeImageRequestBody.
 
         表示镜像支持的最小内存，单位为MB，默认为0。
 
@@ -331,7 +331,7 @@ class CreateWholeImageRequestBody:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this CreateWholeImageRequestBody.
+        r"""Gets the vault_id of this CreateWholeImageRequestBody.
 
         表示云服务器待加入的或已加入的存储库的ID。 使用云服务器创建整机镜像的过程为：先创建一个备份，再将备份创建为整机镜像。如果这个备份为CBR，vault_id为必填项；如果备份为CSBS，vault_id参数可不填。
 
@@ -342,7 +342,7 @@ class CreateWholeImageRequestBody:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this CreateWholeImageRequestBody.
+        r"""Sets the vault_id of this CreateWholeImageRequestBody.
 
         表示云服务器待加入的或已加入的存储库的ID。 使用云服务器创建整机镜像的过程为：先创建一个备份，再将备份创建为整机镜像。如果这个备份为CBR，vault_id为必填项；如果备份为CSBS，vault_id参数可不填。
 

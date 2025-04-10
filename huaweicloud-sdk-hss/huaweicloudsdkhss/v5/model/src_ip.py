@@ -23,7 +23,7 @@ class SrcIp:
     }
 
     def __init__(self):
-        """SrcIp
+        r"""SrcIp
 
         The model defined in huaweicloud sdk
 

@@ -101,7 +101,7 @@ class ChInstancesInfoRsponseInstance:
     }
 
     def __init__(self, id=None, name=None, project_id=None, public_ip=None, can_enable_public_access=None, current_backup_node_id=None, cluster_mode=None, status=None, is_frozen=None, frozen_time=None, db_user=None, bak_period=None, bak_keep_day=None, bak_expected_start_time=None, datastore_version_id=None, datastore_version=None, datastore_type=None, create_at=None, update_at=None, delete_at=None, db_port=None, param_group=None, actions=None, create_fail_error_code=None, groups=None, ops_window=None, tags_info=None, time_zone=None, backup_used_space=None, az_mode=None, master_az_code=None, enterprise_project_id=None, port_info=None, volume_code=None, support_data_replication=None, new_version_available=None, ssl_option=None, dedicated_resource_id=None, pay_model=None):
-        """ChInstancesInfoRsponseInstance
+        r"""ChInstancesInfoRsponseInstance
 
         The model defined in huaweicloud sdk
 
@@ -287,7 +287,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def id(self):
-        """Gets the id of this ChInstancesInfoRsponseInstance.
+        r"""Gets the id of this ChInstancesInfoRsponseInstance.
 
         实例ID。
 
@@ -298,7 +298,7 @@ class ChInstancesInfoRsponseInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChInstancesInfoRsponseInstance.
+        r"""Sets the id of this ChInstancesInfoRsponseInstance.
 
         实例ID。
 
@@ -309,7 +309,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def name(self):
-        """Gets the name of this ChInstancesInfoRsponseInstance.
+        r"""Gets the name of this ChInstancesInfoRsponseInstance.
 
         实例名称。
 
@@ -320,7 +320,7 @@ class ChInstancesInfoRsponseInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChInstancesInfoRsponseInstance.
+        r"""Sets the name of this ChInstancesInfoRsponseInstance.
 
         实例名称。
 
@@ -331,7 +331,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ChInstancesInfoRsponseInstance.
+        r"""Gets the project_id of this ChInstancesInfoRsponseInstance.
 
         租户在某一Region下的project ID。
 
@@ -342,7 +342,7 @@ class ChInstancesInfoRsponseInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ChInstancesInfoRsponseInstance.
+        r"""Sets the project_id of this ChInstancesInfoRsponseInstance.
 
         租户在某一Region下的project ID。
 
@@ -353,7 +353,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ChInstancesInfoRsponseInstance.
+        r"""Gets the public_ip of this ChInstancesInfoRsponseInstance.
 
         公网访问IP。
 
@@ -364,7 +364,7 @@ class ChInstancesInfoRsponseInstance:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ChInstancesInfoRsponseInstance.
+        r"""Sets the public_ip of this ChInstancesInfoRsponseInstance.
 
         公网访问IP。
 
@@ -375,7 +375,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def can_enable_public_access(self):
-        """Gets the can_enable_public_access of this ChInstancesInfoRsponseInstance.
+        r"""Gets the can_enable_public_access of this ChInstancesInfoRsponseInstance.
 
         是否可公网访问。
 
@@ -386,7 +386,7 @@ class ChInstancesInfoRsponseInstance:
 
     @can_enable_public_access.setter
     def can_enable_public_access(self, can_enable_public_access):
-        """Sets the can_enable_public_access of this ChInstancesInfoRsponseInstance.
+        r"""Sets the can_enable_public_access of this ChInstancesInfoRsponseInstance.
 
         是否可公网访问。
 
@@ -397,7 +397,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def current_backup_node_id(self):
-        """Gets the current_backup_node_id of this ChInstancesInfoRsponseInstance.
+        r"""Gets the current_backup_node_id of this ChInstancesInfoRsponseInstance.
 
         备份节点ID。
 
@@ -408,7 +408,7 @@ class ChInstancesInfoRsponseInstance:
 
     @current_backup_node_id.setter
     def current_backup_node_id(self, current_backup_node_id):
-        """Sets the current_backup_node_id of this ChInstancesInfoRsponseInstance.
+        r"""Sets the current_backup_node_id of this ChInstancesInfoRsponseInstance.
 
         备份节点ID。
 
@@ -419,7 +419,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this ChInstancesInfoRsponseInstance.
+        r"""Gets the cluster_mode of this ChInstancesInfoRsponseInstance.
 
         部署模式。 取值范围： - Single：单机 - Ha：主备
 
@@ -430,7 +430,7 @@ class ChInstancesInfoRsponseInstance:
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this ChInstancesInfoRsponseInstance.
+        r"""Sets the cluster_mode of this ChInstancesInfoRsponseInstance.
 
         部署模式。 取值范围： - Single：单机 - Ha：主备
 
@@ -441,7 +441,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def status(self):
-        """Gets the status of this ChInstancesInfoRsponseInstance.
+        r"""Gets the status of this ChInstancesInfoRsponseInstance.
 
         实例状态。
 
@@ -452,7 +452,7 @@ class ChInstancesInfoRsponseInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChInstancesInfoRsponseInstance.
+        r"""Sets the status of this ChInstancesInfoRsponseInstance.
 
         实例状态。
 
@@ -463,7 +463,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this ChInstancesInfoRsponseInstance.
+        r"""Gets the is_frozen of this ChInstancesInfoRsponseInstance.
 
         是否冻结。 取值范围： - 0：不冻结 - 1：冻结
 
@@ -474,7 +474,7 @@ class ChInstancesInfoRsponseInstance:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this ChInstancesInfoRsponseInstance.
+        r"""Sets the is_frozen of this ChInstancesInfoRsponseInstance.
 
         是否冻结。 取值范围： - 0：不冻结 - 1：冻结
 
@@ -485,7 +485,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def frozen_time(self):
-        """Gets the frozen_time of this ChInstancesInfoRsponseInstance.
+        r"""Gets the frozen_time of this ChInstancesInfoRsponseInstance.
 
         冻结时间。
 
@@ -496,7 +496,7 @@ class ChInstancesInfoRsponseInstance:
 
     @frozen_time.setter
     def frozen_time(self, frozen_time):
-        """Sets the frozen_time of this ChInstancesInfoRsponseInstance.
+        r"""Sets the frozen_time of this ChInstancesInfoRsponseInstance.
 
         冻结时间。
 
@@ -507,7 +507,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def db_user(self):
-        """Gets the db_user of this ChInstancesInfoRsponseInstance.
+        r"""Gets the db_user of this ChInstancesInfoRsponseInstance.
 
         默认用户。
 
@@ -518,7 +518,7 @@ class ChInstancesInfoRsponseInstance:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this ChInstancesInfoRsponseInstance.
+        r"""Sets the db_user of this ChInstancesInfoRsponseInstance.
 
         默认用户。
 
@@ -529,7 +529,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def bak_period(self):
-        """Gets the bak_period of this ChInstancesInfoRsponseInstance.
+        r"""Gets the bak_period of this ChInstancesInfoRsponseInstance.
 
         备份周期。
 
@@ -540,7 +540,7 @@ class ChInstancesInfoRsponseInstance:
 
     @bak_period.setter
     def bak_period(self, bak_period):
-        """Sets the bak_period of this ChInstancesInfoRsponseInstance.
+        r"""Sets the bak_period of this ChInstancesInfoRsponseInstance.
 
         备份周期。
 
@@ -551,7 +551,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def bak_keep_day(self):
-        """Gets the bak_keep_day of this ChInstancesInfoRsponseInstance.
+        r"""Gets the bak_keep_day of this ChInstancesInfoRsponseInstance.
 
         备份保存天数。
 
@@ -562,7 +562,7 @@ class ChInstancesInfoRsponseInstance:
 
     @bak_keep_day.setter
     def bak_keep_day(self, bak_keep_day):
-        """Sets the bak_keep_day of this ChInstancesInfoRsponseInstance.
+        r"""Sets the bak_keep_day of this ChInstancesInfoRsponseInstance.
 
         备份保存天数。
 
@@ -573,7 +573,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def bak_expected_start_time(self):
-        """Gets the bak_expected_start_time of this ChInstancesInfoRsponseInstance.
+        r"""Gets the bak_expected_start_time of this ChInstancesInfoRsponseInstance.
 
         备份预计开始时间。
 
@@ -584,7 +584,7 @@ class ChInstancesInfoRsponseInstance:
 
     @bak_expected_start_time.setter
     def bak_expected_start_time(self, bak_expected_start_time):
-        """Sets the bak_expected_start_time of this ChInstancesInfoRsponseInstance.
+        r"""Sets the bak_expected_start_time of this ChInstancesInfoRsponseInstance.
 
         备份预计开始时间。
 
@@ -595,7 +595,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def datastore_version_id(self):
-        """Gets the datastore_version_id of this ChInstancesInfoRsponseInstance.
+        r"""Gets the datastore_version_id of this ChInstancesInfoRsponseInstance.
 
         数据库版本ID。
 
@@ -606,7 +606,7 @@ class ChInstancesInfoRsponseInstance:
 
     @datastore_version_id.setter
     def datastore_version_id(self, datastore_version_id):
-        """Sets the datastore_version_id of this ChInstancesInfoRsponseInstance.
+        r"""Sets the datastore_version_id of this ChInstancesInfoRsponseInstance.
 
         数据库版本ID。
 
@@ -617,7 +617,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ChInstancesInfoRsponseInstance.
+        r"""Gets the datastore_version of this ChInstancesInfoRsponseInstance.
 
         数据库版本。
 
@@ -628,7 +628,7 @@ class ChInstancesInfoRsponseInstance:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ChInstancesInfoRsponseInstance.
+        r"""Sets the datastore_version of this ChInstancesInfoRsponseInstance.
 
         数据库版本。
 
@@ -639,7 +639,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ChInstancesInfoRsponseInstance.
+        r"""Gets the datastore_type of this ChInstancesInfoRsponseInstance.
 
         数据库引擎。
 
@@ -650,7 +650,7 @@ class ChInstancesInfoRsponseInstance:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ChInstancesInfoRsponseInstance.
+        r"""Sets the datastore_type of this ChInstancesInfoRsponseInstance.
 
         数据库引擎。
 
@@ -661,7 +661,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ChInstancesInfoRsponseInstance.
+        r"""Gets the create_at of this ChInstancesInfoRsponseInstance.
 
         实例创建时间。
 
@@ -672,7 +672,7 @@ class ChInstancesInfoRsponseInstance:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ChInstancesInfoRsponseInstance.
+        r"""Sets the create_at of this ChInstancesInfoRsponseInstance.
 
         实例创建时间。
 
@@ -683,7 +683,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ChInstancesInfoRsponseInstance.
+        r"""Gets the update_at of this ChInstancesInfoRsponseInstance.
 
         实例更新时间。
 
@@ -694,7 +694,7 @@ class ChInstancesInfoRsponseInstance:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ChInstancesInfoRsponseInstance.
+        r"""Sets the update_at of this ChInstancesInfoRsponseInstance.
 
         实例更新时间。
 
@@ -705,7 +705,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def delete_at(self):
-        """Gets the delete_at of this ChInstancesInfoRsponseInstance.
+        r"""Gets the delete_at of this ChInstancesInfoRsponseInstance.
 
         实例删除时间。
 
@@ -716,7 +716,7 @@ class ChInstancesInfoRsponseInstance:
 
     @delete_at.setter
     def delete_at(self, delete_at):
-        """Sets the delete_at of this ChInstancesInfoRsponseInstance.
+        r"""Sets the delete_at of this ChInstancesInfoRsponseInstance.
 
         实例删除时间。
 
@@ -727,7 +727,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def db_port(self):
-        """Gets the db_port of this ChInstancesInfoRsponseInstance.
+        r"""Gets the db_port of this ChInstancesInfoRsponseInstance.
 
         数据库端口号。取值范围0~65535。
 
@@ -738,7 +738,7 @@ class ChInstancesInfoRsponseInstance:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this ChInstancesInfoRsponseInstance.
+        r"""Sets the db_port of this ChInstancesInfoRsponseInstance.
 
         数据库端口号。取值范围0~65535。
 
@@ -749,7 +749,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def param_group(self):
-        """Gets the param_group of this ChInstancesInfoRsponseInstance.
+        r"""Gets the param_group of this ChInstancesInfoRsponseInstance.
 
         :return: The param_group of this ChInstancesInfoRsponseInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstanceParamGroup`
@@ -758,7 +758,7 @@ class ChInstancesInfoRsponseInstance:
 
     @param_group.setter
     def param_group(self, param_group):
-        """Sets the param_group of this ChInstancesInfoRsponseInstance.
+        r"""Sets the param_group of this ChInstancesInfoRsponseInstance.
 
         :param param_group: The param_group of this ChInstancesInfoRsponseInstance.
         :type param_group: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstanceParamGroup`
@@ -767,7 +767,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def actions(self):
-        """Gets the actions of this ChInstancesInfoRsponseInstance.
+        r"""Gets the actions of this ChInstancesInfoRsponseInstance.
 
         实例动作。
 
@@ -778,7 +778,7 @@ class ChInstancesInfoRsponseInstance:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ChInstancesInfoRsponseInstance.
+        r"""Sets the actions of this ChInstancesInfoRsponseInstance.
 
         实例动作。
 
@@ -789,7 +789,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def create_fail_error_code(self):
-        """Gets the create_fail_error_code of this ChInstancesInfoRsponseInstance.
+        r"""Gets the create_fail_error_code of this ChInstancesInfoRsponseInstance.
 
         实例创建失败错误码。
 
@@ -800,7 +800,7 @@ class ChInstancesInfoRsponseInstance:
 
     @create_fail_error_code.setter
     def create_fail_error_code(self, create_fail_error_code):
-        """Sets the create_fail_error_code of this ChInstancesInfoRsponseInstance.
+        r"""Sets the create_fail_error_code of this ChInstancesInfoRsponseInstance.
 
         实例创建失败错误码。
 
@@ -811,7 +811,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def groups(self):
-        """Gets the groups of this ChInstancesInfoRsponseInstance.
+        r"""Gets the groups of this ChInstancesInfoRsponseInstance.
 
         实例分组。
 
@@ -822,7 +822,7 @@ class ChInstancesInfoRsponseInstance:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ChInstancesInfoRsponseInstance.
+        r"""Sets the groups of this ChInstancesInfoRsponseInstance.
 
         实例分组。
 
@@ -833,7 +833,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def ops_window(self):
-        """Gets the ops_window of this ChInstancesInfoRsponseInstance.
+        r"""Gets the ops_window of this ChInstancesInfoRsponseInstance.
 
         :return: The ops_window of this ChInstancesInfoRsponseInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstanceOpsWindow`
@@ -842,7 +842,7 @@ class ChInstancesInfoRsponseInstance:
 
     @ops_window.setter
     def ops_window(self, ops_window):
-        """Sets the ops_window of this ChInstancesInfoRsponseInstance.
+        r"""Sets the ops_window of this ChInstancesInfoRsponseInstance.
 
         :param ops_window: The ops_window of this ChInstancesInfoRsponseInstance.
         :type ops_window: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstanceOpsWindow`
@@ -851,7 +851,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def tags_info(self):
-        """Gets the tags_info of this ChInstancesInfoRsponseInstance.
+        r"""Gets the tags_info of this ChInstancesInfoRsponseInstance.
 
         :return: The tags_info of this ChInstancesInfoRsponseInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfo`
@@ -860,7 +860,7 @@ class ChInstancesInfoRsponseInstance:
 
     @tags_info.setter
     def tags_info(self, tags_info):
-        """Sets the tags_info of this ChInstancesInfoRsponseInstance.
+        r"""Sets the tags_info of this ChInstancesInfoRsponseInstance.
 
         :param tags_info: The tags_info of this ChInstancesInfoRsponseInstance.
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfo`
@@ -869,7 +869,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ChInstancesInfoRsponseInstance.
+        r"""Gets the time_zone of this ChInstancesInfoRsponseInstance.
 
         时区。
 
@@ -880,7 +880,7 @@ class ChInstancesInfoRsponseInstance:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ChInstancesInfoRsponseInstance.
+        r"""Sets the time_zone of this ChInstancesInfoRsponseInstance.
 
         时区。
 
@@ -891,7 +891,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def backup_used_space(self):
-        """Gets the backup_used_space of this ChInstancesInfoRsponseInstance.
+        r"""Gets the backup_used_space of this ChInstancesInfoRsponseInstance.
 
         备份使用空间。
 
@@ -902,7 +902,7 @@ class ChInstancesInfoRsponseInstance:
 
     @backup_used_space.setter
     def backup_used_space(self, backup_used_space):
-        """Sets the backup_used_space of this ChInstancesInfoRsponseInstance.
+        r"""Sets the backup_used_space of this ChInstancesInfoRsponseInstance.
 
         备份使用空间。
 
@@ -913,7 +913,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this ChInstancesInfoRsponseInstance.
+        r"""Gets the az_mode of this ChInstancesInfoRsponseInstance.
 
         可用区模式。 取值范围： - single：单可用区 - double：多可用区-
 
@@ -924,7 +924,7 @@ class ChInstancesInfoRsponseInstance:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this ChInstancesInfoRsponseInstance.
+        r"""Sets the az_mode of this ChInstancesInfoRsponseInstance.
 
         可用区模式。 取值范围： - single：单可用区 - double：多可用区-
 
@@ -935,7 +935,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def master_az_code(self):
-        """Gets the master_az_code of this ChInstancesInfoRsponseInstance.
+        r"""Gets the master_az_code of this ChInstancesInfoRsponseInstance.
 
         主可用区。
 
@@ -946,7 +946,7 @@ class ChInstancesInfoRsponseInstance:
 
     @master_az_code.setter
     def master_az_code(self, master_az_code):
-        """Sets the master_az_code of this ChInstancesInfoRsponseInstance.
+        r"""Sets the master_az_code of this ChInstancesInfoRsponseInstance.
 
         主可用区。
 
@@ -957,7 +957,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChInstancesInfoRsponseInstance.
+        r"""Gets the enterprise_project_id of this ChInstancesInfoRsponseInstance.
 
         企业项目ID。
 
@@ -968,7 +968,7 @@ class ChInstancesInfoRsponseInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChInstancesInfoRsponseInstance.
+        r"""Sets the enterprise_project_id of this ChInstancesInfoRsponseInstance.
 
         企业项目ID。
 
@@ -979,7 +979,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def port_info(self):
-        """Gets the port_info of this ChInstancesInfoRsponseInstance.
+        r"""Gets the port_info of this ChInstancesInfoRsponseInstance.
 
         :return: The port_info of this ChInstancesInfoRsponseInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstancePortInfo`
@@ -988,7 +988,7 @@ class ChInstancesInfoRsponseInstance:
 
     @port_info.setter
     def port_info(self, port_info):
-        """Sets the port_info of this ChInstancesInfoRsponseInstance.
+        r"""Sets the port_info of this ChInstancesInfoRsponseInstance.
 
         :param port_info: The port_info of this ChInstancesInfoRsponseInstance.
         :type port_info: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstancePortInfo`
@@ -997,7 +997,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def volume_code(self):
-        """Gets the volume_code of this ChInstancesInfoRsponseInstance.
+        r"""Gets the volume_code of this ChInstancesInfoRsponseInstance.
 
         磁盘规格码。
 
@@ -1008,7 +1008,7 @@ class ChInstancesInfoRsponseInstance:
 
     @volume_code.setter
     def volume_code(self, volume_code):
-        """Sets the volume_code of this ChInstancesInfoRsponseInstance.
+        r"""Sets the volume_code of this ChInstancesInfoRsponseInstance.
 
         磁盘规格码。
 
@@ -1019,7 +1019,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def support_data_replication(self):
-        """Gets the support_data_replication of this ChInstancesInfoRsponseInstance.
+        r"""Gets the support_data_replication of this ChInstancesInfoRsponseInstance.
 
         是否支持副本。
 
@@ -1030,7 +1030,7 @@ class ChInstancesInfoRsponseInstance:
 
     @support_data_replication.setter
     def support_data_replication(self, support_data_replication):
-        """Sets the support_data_replication of this ChInstancesInfoRsponseInstance.
+        r"""Sets the support_data_replication of this ChInstancesInfoRsponseInstance.
 
         是否支持副本。
 
@@ -1041,7 +1041,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def new_version_available(self):
-        """Gets the new_version_available of this ChInstancesInfoRsponseInstance.
+        r"""Gets the new_version_available of this ChInstancesInfoRsponseInstance.
 
         是否有数据库新版本。
 
@@ -1052,7 +1052,7 @@ class ChInstancesInfoRsponseInstance:
 
     @new_version_available.setter
     def new_version_available(self, new_version_available):
-        """Sets the new_version_available of this ChInstancesInfoRsponseInstance.
+        r"""Sets the new_version_available of this ChInstancesInfoRsponseInstance.
 
         是否有数据库新版本。
 
@@ -1063,7 +1063,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this ChInstancesInfoRsponseInstance.
+        r"""Gets the ssl_option of this ChInstancesInfoRsponseInstance.
 
         SSL开关。
 
@@ -1074,7 +1074,7 @@ class ChInstancesInfoRsponseInstance:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this ChInstancesInfoRsponseInstance.
+        r"""Sets the ssl_option of this ChInstancesInfoRsponseInstance.
 
         SSL开关。
 
@@ -1085,7 +1085,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this ChInstancesInfoRsponseInstance.
+        r"""Gets the dedicated_resource_id of this ChInstancesInfoRsponseInstance.
 
         专属资源池ID。
 
@@ -1096,7 +1096,7 @@ class ChInstancesInfoRsponseInstance:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this ChInstancesInfoRsponseInstance.
+        r"""Sets the dedicated_resource_id of this ChInstancesInfoRsponseInstance.
 
         专属资源池ID。
 
@@ -1107,7 +1107,7 @@ class ChInstancesInfoRsponseInstance:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this ChInstancesInfoRsponseInstance.
+        r"""Gets the pay_model of this ChInstancesInfoRsponseInstance.
 
         支付模式。 取值范围： - 0：按需计费 - 1：包周期-
 
@@ -1118,7 +1118,7 @@ class ChInstancesInfoRsponseInstance:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this ChInstancesInfoRsponseInstance.
+        r"""Sets the pay_model of this ChInstancesInfoRsponseInstance.
 
         支付模式。 取值范围： - 0：按需计费 - 1：包周期-
 

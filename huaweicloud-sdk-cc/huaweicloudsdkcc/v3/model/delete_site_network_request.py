@@ -25,7 +25,7 @@ class DeleteSiteNetworkRequest:
     }
 
     def __init__(self, site_network_id=None):
-        """DeleteSiteNetworkRequest
+        r"""DeleteSiteNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSiteNetworkRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this DeleteSiteNetworkRequest.
+        r"""Gets the site_network_id of this DeleteSiteNetworkRequest.
 
         分支网络的ID。
 
@@ -53,7 +53,7 @@ class DeleteSiteNetworkRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this DeleteSiteNetworkRequest.
+        r"""Sets the site_network_id of this DeleteSiteNetworkRequest.
 
         分支网络的ID。
 

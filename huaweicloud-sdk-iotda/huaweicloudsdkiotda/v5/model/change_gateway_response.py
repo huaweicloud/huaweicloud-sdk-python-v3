@@ -24,7 +24,7 @@ class ChangeGatewayResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeGatewayResponse
+        r"""ChangeGatewayResponse
 
         The model defined in huaweicloud sdk
 

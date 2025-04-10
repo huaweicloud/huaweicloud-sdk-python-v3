@@ -28,7 +28,7 @@ class CreatePostPaidServersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, server_ids=None):
-        """CreatePostPaidServersResponse
+        r"""CreatePostPaidServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreatePostPaidServersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreatePostPaidServersResponse.
+        r"""Gets the job_id of this CreatePostPaidServersResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -62,7 +62,7 @@ class CreatePostPaidServersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreatePostPaidServersResponse.
+        r"""Sets the job_id of this CreatePostPaidServersResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -73,7 +73,7 @@ class CreatePostPaidServersResponse(SdkResponse):
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this CreatePostPaidServersResponse.
+        r"""Gets the server_ids of this CreatePostPaidServersResponse.
 
         云服务器ID列表。
 
@@ -84,7 +84,7 @@ class CreatePostPaidServersResponse(SdkResponse):
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this CreatePostPaidServersResponse.
+        r"""Sets the server_ids of this CreatePostPaidServersResponse.
 
         云服务器ID列表。
 

@@ -25,7 +25,7 @@ class TaurusProxyScaleRequest:
     }
 
     def __init__(self, flavor_ref=None):
-        """TaurusProxyScaleRequest
+        r"""TaurusProxyScaleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TaurusProxyScaleRequest:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this TaurusProxyScaleRequest.
+        r"""Gets the flavor_ref of this TaurusProxyScaleRequest.
 
         需要变更的新规格ID。
 
@@ -53,7 +53,7 @@ class TaurusProxyScaleRequest:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this TaurusProxyScaleRequest.
+        r"""Sets the flavor_ref of this TaurusProxyScaleRequest.
 
         需要变更的新规格ID。
 

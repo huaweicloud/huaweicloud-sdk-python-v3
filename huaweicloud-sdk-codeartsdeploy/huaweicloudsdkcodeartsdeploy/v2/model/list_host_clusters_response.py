@@ -30,7 +30,7 @@ class ListHostClustersResponse(SdkResponse):
     }
 
     def __init__(self, status=None, total=None, result=None):
-        """ListHostClustersResponse
+        r"""ListHostClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHostClustersResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListHostClustersResponse.
+        r"""Gets the status of this ListHostClustersResponse.
 
         请求成功失败状态
 
@@ -69,7 +69,7 @@ class ListHostClustersResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListHostClustersResponse.
+        r"""Sets the status of this ListHostClustersResponse.
 
         请求成功失败状态
 
@@ -80,7 +80,7 @@ class ListHostClustersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListHostClustersResponse.
+        r"""Gets the total of this ListHostClustersResponse.
 
         主机集群个数
 
@@ -91,7 +91,7 @@ class ListHostClustersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListHostClustersResponse.
+        r"""Sets the total of this ListHostClustersResponse.
 
         主机集群个数
 
@@ -102,7 +102,7 @@ class ListHostClustersResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListHostClustersResponse.
+        r"""Gets the result of this ListHostClustersResponse.
 
         主机集群详情响应体
 
@@ -113,7 +113,7 @@ class ListHostClustersResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListHostClustersResponse.
+        r"""Sets the result of this ListHostClustersResponse.
 
         主机集群详情响应体
 

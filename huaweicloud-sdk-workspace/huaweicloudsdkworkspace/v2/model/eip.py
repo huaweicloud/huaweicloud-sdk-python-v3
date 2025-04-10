@@ -31,7 +31,7 @@ class Eip:
     }
 
     def __init__(self, id=None, type=None, charge_mode=None, bandwidth_size=None):
-        """Eip
+        r"""Eip
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Eip:
 
     @property
     def id(self):
-        """Gets the id of this Eip.
+        r"""Gets the id of this Eip.
 
         桌面绑定的Eip的id，有值时优先绑定Eip。
 
@@ -75,7 +75,7 @@ class Eip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Eip.
+        r"""Sets the id of this Eip.
 
         桌面绑定的Eip的id，有值时优先绑定Eip。
 
@@ -86,7 +86,7 @@ class Eip:
 
     @property
     def type(self):
-        """Gets the type of this Eip.
+        r"""Gets the type of this Eip.
 
         EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）
 
@@ -97,7 +97,7 @@ class Eip:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Eip.
+        r"""Sets the type of this Eip.
 
         EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）
 
@@ -108,7 +108,7 @@ class Eip:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this Eip.
+        r"""Gets the charge_mode of this Eip.
 
         eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
 
@@ -119,7 +119,7 @@ class Eip:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this Eip.
+        r"""Sets the charge_mode of this Eip.
 
         eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
 
@@ -130,7 +130,7 @@ class Eip:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this Eip.
+        r"""Gets the bandwidth_size of this Eip.
 
         带宽大小
 
@@ -141,7 +141,7 @@ class Eip:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this Eip.
+        r"""Sets the bandwidth_size of this Eip.
 
         带宽大小
 

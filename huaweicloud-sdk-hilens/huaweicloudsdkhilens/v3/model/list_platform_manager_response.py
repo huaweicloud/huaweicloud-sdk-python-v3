@@ -28,7 +28,7 @@ class ListPlatformManagerResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListPlatformManagerResponse
+        r"""ListPlatformManagerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPlatformManagerResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPlatformManagerResponse.
+        r"""Gets the total of this ListPlatformManagerResponse.
 
         订单总数
 
@@ -62,7 +62,7 @@ class ListPlatformManagerResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPlatformManagerResponse.
+        r"""Sets the total of this ListPlatformManagerResponse.
 
         订单总数
 
@@ -73,7 +73,7 @@ class ListPlatformManagerResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPlatformManagerResponse.
+        r"""Gets the data of this ListPlatformManagerResponse.
 
         订单列表
 
@@ -84,7 +84,7 @@ class ListPlatformManagerResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPlatformManagerResponse.
+        r"""Sets the data of this ListPlatformManagerResponse.
 
         订单列表
 

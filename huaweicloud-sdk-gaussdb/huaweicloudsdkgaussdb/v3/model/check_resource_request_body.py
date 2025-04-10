@@ -27,7 +27,7 @@ class CheckResourceRequestBody:
     }
 
     def __init__(self, action=None, resource=None):
-        """CheckResourceRequestBody
+        r"""CheckResourceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckResourceRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CheckResourceRequestBody.
+        r"""Gets the action of this CheckResourceRequestBody.
 
         校验类型。 - createInstance：校验创建实例。 - createReadonlyNode：校验创建只读节点。 - resizeFlavor：校验规格变更。
 
@@ -59,7 +59,7 @@ class CheckResourceRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CheckResourceRequestBody.
+        r"""Sets the action of this CheckResourceRequestBody.
 
         校验类型。 - createInstance：校验创建实例。 - createReadonlyNode：校验创建只读节点。 - resizeFlavor：校验规格变更。
 
@@ -70,7 +70,7 @@ class CheckResourceRequestBody:
 
     @property
     def resource(self):
-        """Gets the resource of this CheckResourceRequestBody.
+        r"""Gets the resource of this CheckResourceRequestBody.
 
         :return: The resource of this CheckResourceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckResourceInfo`
@@ -79,7 +79,7 @@ class CheckResourceRequestBody:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this CheckResourceRequestBody.
+        r"""Sets the resource of this CheckResourceRequestBody.
 
         :param resource: The resource of this CheckResourceRequestBody.
         :type resource: :class:`huaweicloudsdkgaussdb.v3.CheckResourceInfo`

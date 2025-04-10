@@ -27,7 +27,7 @@ class CleanupModelRequest:
     }
 
     def __init__(self, workspace_id=None, model_id=None):
-        """CleanupModelRequest
+        r"""CleanupModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CleanupModelRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CleanupModelRequest.
+        r"""Gets the workspace_id of this CleanupModelRequest.
 
         工作空间ID
 
@@ -59,7 +59,7 @@ class CleanupModelRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CleanupModelRequest.
+        r"""Sets the workspace_id of this CleanupModelRequest.
 
         工作空间ID
 
@@ -70,7 +70,7 @@ class CleanupModelRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this CleanupModelRequest.
+        r"""Gets the model_id of this CleanupModelRequest.
 
         推理模型ID
 
@@ -81,7 +81,7 @@ class CleanupModelRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this CleanupModelRequest.
+        r"""Sets the model_id of this CleanupModelRequest.
 
         推理模型ID
 

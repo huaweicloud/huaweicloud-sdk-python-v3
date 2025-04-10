@@ -29,7 +29,7 @@ class PublicKey:
     }
 
     def __init__(self, id=None, key=None, title=None):
-        """PublicKey
+        r"""PublicKey
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PublicKey:
 
     @property
     def id(self):
-        """Gets the id of this PublicKey.
+        r"""Gets the id of this PublicKey.
 
         密钥id
 
@@ -65,7 +65,7 @@ class PublicKey:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicKey.
+        r"""Sets the id of this PublicKey.
 
         密钥id
 
@@ -76,7 +76,7 @@ class PublicKey:
 
     @property
     def key(self):
-        """Gets the key of this PublicKey.
+        r"""Gets the key of this PublicKey.
 
         密钥
 
@@ -87,7 +87,7 @@ class PublicKey:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PublicKey.
+        r"""Sets the key of this PublicKey.
 
         密钥
 
@@ -98,7 +98,7 @@ class PublicKey:
 
     @property
     def title(self):
-        """Gets the title of this PublicKey.
+        r"""Gets the title of this PublicKey.
 
         密钥名称
 
@@ -109,7 +109,7 @@ class PublicKey:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this PublicKey.
+        r"""Sets the title of this PublicKey.
 
         密钥名称
 

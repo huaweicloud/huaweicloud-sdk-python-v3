@@ -23,7 +23,7 @@ class Smiles:
     }
 
     def __init__(self):
-        """Smiles
+        r"""Smiles
 
         The model defined in huaweicloud sdk
 

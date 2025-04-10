@@ -37,7 +37,7 @@ class ShowAppsDashboardRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, start_time=None, end_time=None, time_unit=None, limit=None, offset=None):
-        """ShowAppsDashboardRequest
+        r"""ShowAppsDashboardRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowAppsDashboardRequest.
+        r"""Gets the workspace of this ShowAppsDashboardRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -92,7 +92,7 @@ class ShowAppsDashboardRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowAppsDashboardRequest.
+        r"""Sets the workspace of this ShowAppsDashboardRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -103,7 +103,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowAppsDashboardRequest.
+        r"""Gets the dlm_type of this ShowAppsDashboardRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -114,7 +114,7 @@ class ShowAppsDashboardRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowAppsDashboardRequest.
+        r"""Sets the dlm_type of this ShowAppsDashboardRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -125,7 +125,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowAppsDashboardRequest.
+        r"""Gets the start_time of this ShowAppsDashboardRequest.
 
         开始时间（13位时间戳）。
 
@@ -136,7 +136,7 @@ class ShowAppsDashboardRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowAppsDashboardRequest.
+        r"""Sets the start_time of this ShowAppsDashboardRequest.
 
         开始时间（13位时间戳）。
 
@@ -147,7 +147,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowAppsDashboardRequest.
+        r"""Gets the end_time of this ShowAppsDashboardRequest.
 
         结束时间（13位时间戳）。
 
@@ -158,7 +158,7 @@ class ShowAppsDashboardRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowAppsDashboardRequest.
+        r"""Sets the end_time of this ShowAppsDashboardRequest.
 
         结束时间（13位时间戳）。
 
@@ -169,7 +169,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ShowAppsDashboardRequest.
+        r"""Gets the time_unit of this ShowAppsDashboardRequest.
 
         时间单位。
 
@@ -180,7 +180,7 @@ class ShowAppsDashboardRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ShowAppsDashboardRequest.
+        r"""Sets the time_unit of this ShowAppsDashboardRequest.
 
         时间单位。
 
@@ -191,7 +191,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAppsDashboardRequest.
+        r"""Gets the limit of this ShowAppsDashboardRequest.
 
         limit。
 
@@ -202,7 +202,7 @@ class ShowAppsDashboardRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAppsDashboardRequest.
+        r"""Sets the limit of this ShowAppsDashboardRequest.
 
         limit。
 
@@ -213,7 +213,7 @@ class ShowAppsDashboardRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAppsDashboardRequest.
+        r"""Gets the offset of this ShowAppsDashboardRequest.
 
         offset。
 
@@ -224,7 +224,7 @@ class ShowAppsDashboardRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAppsDashboardRequest.
+        r"""Sets the offset of this ShowAppsDashboardRequest.
 
         offset。
 

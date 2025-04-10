@@ -26,7 +26,7 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
     }
 
     def __init__(self, node=None):
-        """EnableDisableEdgeNodesResponse
+        r"""EnableDisableEdgeNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
 
     @property
     def node(self):
-        """Gets the node of this EnableDisableEdgeNodesResponse.
+        r"""Gets the node of this EnableDisableEdgeNodesResponse.
 
         :return: The node of this EnableDisableEdgeNodesResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Action`
@@ -53,7 +53,7 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
 
     @node.setter
     def node(self, node):
-        """Sets the node of this EnableDisableEdgeNodesResponse.
+        r"""Sets the node of this EnableDisableEdgeNodesResponse.
 
         :param node: The node of this EnableDisableEdgeNodesResponse.
         :type node: :class:`huaweicloudsdkief.v1.Action`

@@ -43,7 +43,7 @@ class SlowLogStatistics:
     }
 
     def __init__(self, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, client_ip=None):
-        """SlowLogStatistics
+        r"""SlowLogStatistics
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class SlowLogStatistics:
 
     @property
     def count(self):
-        """Gets the count of this SlowLogStatistics.
+        r"""Gets the count of this SlowLogStatistics.
 
         执行次数。
 
@@ -107,7 +107,7 @@ class SlowLogStatistics:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SlowLogStatistics.
+        r"""Sets the count of this SlowLogStatistics.
 
         执行次数。
 
@@ -118,7 +118,7 @@ class SlowLogStatistics:
 
     @property
     def time(self):
-        """Gets the time of this SlowLogStatistics.
+        r"""Gets the time of this SlowLogStatistics.
 
         平均执行时间。
 
@@ -129,7 +129,7 @@ class SlowLogStatistics:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this SlowLogStatistics.
+        r"""Sets the time of this SlowLogStatistics.
 
         平均执行时间。
 
@@ -140,7 +140,7 @@ class SlowLogStatistics:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this SlowLogStatistics.
+        r"""Gets the lock_time of this SlowLogStatistics.
 
         平均等待锁时间。
 
@@ -151,7 +151,7 @@ class SlowLogStatistics:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this SlowLogStatistics.
+        r"""Sets the lock_time of this SlowLogStatistics.
 
         平均等待锁时间。
 
@@ -162,7 +162,7 @@ class SlowLogStatistics:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this SlowLogStatistics.
+        r"""Gets the rows_sent of this SlowLogStatistics.
 
         平均结果行数量。
 
@@ -173,7 +173,7 @@ class SlowLogStatistics:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this SlowLogStatistics.
+        r"""Sets the rows_sent of this SlowLogStatistics.
 
         平均结果行数量。
 
@@ -184,7 +184,7 @@ class SlowLogStatistics:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this SlowLogStatistics.
+        r"""Gets the rows_examined of this SlowLogStatistics.
 
         平均扫描的行数量。
 
@@ -195,7 +195,7 @@ class SlowLogStatistics:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this SlowLogStatistics.
+        r"""Sets the rows_examined of this SlowLogStatistics.
 
         平均扫描的行数量。
 
@@ -206,7 +206,7 @@ class SlowLogStatistics:
 
     @property
     def database(self):
-        """Gets the database of this SlowLogStatistics.
+        r"""Gets the database of this SlowLogStatistics.
 
         所属数据库。
 
@@ -217,7 +217,7 @@ class SlowLogStatistics:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowLogStatistics.
+        r"""Sets the database of this SlowLogStatistics.
 
         所属数据库。
 
@@ -228,7 +228,7 @@ class SlowLogStatistics:
 
     @property
     def users(self):
-        """Gets the users of this SlowLogStatistics.
+        r"""Gets the users of this SlowLogStatistics.
 
         帐号。
 
@@ -239,7 +239,7 @@ class SlowLogStatistics:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this SlowLogStatistics.
+        r"""Sets the users of this SlowLogStatistics.
 
         帐号。
 
@@ -250,7 +250,7 @@ class SlowLogStatistics:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this SlowLogStatistics.
+        r"""Gets the query_sample of this SlowLogStatistics.
 
         执行语法。
 
@@ -261,7 +261,7 @@ class SlowLogStatistics:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this SlowLogStatistics.
+        r"""Sets the query_sample of this SlowLogStatistics.
 
         执行语法。
 
@@ -272,7 +272,7 @@ class SlowLogStatistics:
 
     @property
     def type(self):
-        """Gets the type of this SlowLogStatistics.
+        r"""Gets the type of this SlowLogStatistics.
 
         语句类型。
 
@@ -283,7 +283,7 @@ class SlowLogStatistics:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SlowLogStatistics.
+        r"""Sets the type of this SlowLogStatistics.
 
         语句类型。
 
@@ -294,7 +294,7 @@ class SlowLogStatistics:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this SlowLogStatistics.
+        r"""Gets the client_ip of this SlowLogStatistics.
 
         IP地址。
 
@@ -305,7 +305,7 @@ class SlowLogStatistics:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this SlowLogStatistics.
+        r"""Sets the client_ip of this SlowLogStatistics.
 
         IP地址。
 

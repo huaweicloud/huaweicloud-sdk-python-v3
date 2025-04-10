@@ -25,7 +25,7 @@ class ListReadOnlyReplayDatabaseRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListReadOnlyReplayDatabaseRequest
+        r"""ListReadOnlyReplayDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListReadOnlyReplayDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListReadOnlyReplayDatabaseRequest.
+        r"""Gets the instance_id of this ListReadOnlyReplayDatabaseRequest.
 
         实例id
 
@@ -53,7 +53,7 @@ class ListReadOnlyReplayDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListReadOnlyReplayDatabaseRequest.
+        r"""Sets the instance_id of this ListReadOnlyReplayDatabaseRequest.
 
         实例id
 

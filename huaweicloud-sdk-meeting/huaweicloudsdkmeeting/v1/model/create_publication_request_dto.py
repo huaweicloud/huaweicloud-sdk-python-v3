@@ -35,7 +35,7 @@ class CreatePublicationRequestDTO:
     }
 
     def __init__(self, publish_name=None, start_time=None, end_time=None, dept_list=None, device_list=None, program_list=None):
-        """CreatePublicationRequestDTO
+        r"""CreatePublicationRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CreatePublicationRequestDTO:
 
     @property
     def publish_name(self):
-        """Gets the publish_name of this CreatePublicationRequestDTO.
+        r"""Gets the publish_name of this CreatePublicationRequestDTO.
 
         发布名称。
 
@@ -84,7 +84,7 @@ class CreatePublicationRequestDTO:
 
     @publish_name.setter
     def publish_name(self, publish_name):
-        """Sets the publish_name of this CreatePublicationRequestDTO.
+        r"""Sets the publish_name of this CreatePublicationRequestDTO.
 
         发布名称。
 
@@ -95,7 +95,7 @@ class CreatePublicationRequestDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreatePublicationRequestDTO.
+        r"""Gets the start_time of this CreatePublicationRequestDTO.
 
         开始时间。
 
@@ -106,7 +106,7 @@ class CreatePublicationRequestDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreatePublicationRequestDTO.
+        r"""Sets the start_time of this CreatePublicationRequestDTO.
 
         开始时间。
 
@@ -117,7 +117,7 @@ class CreatePublicationRequestDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreatePublicationRequestDTO.
+        r"""Gets the end_time of this CreatePublicationRequestDTO.
 
         结束时间。
 
@@ -128,7 +128,7 @@ class CreatePublicationRequestDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreatePublicationRequestDTO.
+        r"""Sets the end_time of this CreatePublicationRequestDTO.
 
         结束时间。
 
@@ -139,7 +139,7 @@ class CreatePublicationRequestDTO:
 
     @property
     def dept_list(self):
-        """Gets the dept_list of this CreatePublicationRequestDTO.
+        r"""Gets the dept_list of this CreatePublicationRequestDTO.
 
         发布到部门编码列表。
 
@@ -150,7 +150,7 @@ class CreatePublicationRequestDTO:
 
     @dept_list.setter
     def dept_list(self, dept_list):
-        """Sets the dept_list of this CreatePublicationRequestDTO.
+        r"""Sets the dept_list of this CreatePublicationRequestDTO.
 
         发布到部门编码列表。
 
@@ -161,7 +161,7 @@ class CreatePublicationRequestDTO:
 
     @property
     def device_list(self):
-        """Gets the device_list of this CreatePublicationRequestDTO.
+        r"""Gets the device_list of this CreatePublicationRequestDTO.
 
         发布到设备用户ID列表。
 
@@ -172,7 +172,7 @@ class CreatePublicationRequestDTO:
 
     @device_list.setter
     def device_list(self, device_list):
-        """Sets the device_list of this CreatePublicationRequestDTO.
+        r"""Sets the device_list of this CreatePublicationRequestDTO.
 
         发布到设备用户ID列表。
 
@@ -183,7 +183,7 @@ class CreatePublicationRequestDTO:
 
     @property
     def program_list(self):
-        """Gets the program_list of this CreatePublicationRequestDTO.
+        r"""Gets the program_list of this CreatePublicationRequestDTO.
 
         发布节目ID列表。
 
@@ -194,7 +194,7 @@ class CreatePublicationRequestDTO:
 
     @program_list.setter
     def program_list(self, program_list):
-        """Sets the program_list of this CreatePublicationRequestDTO.
+        r"""Sets the program_list of this CreatePublicationRequestDTO.
 
         发布节目ID列表。
 

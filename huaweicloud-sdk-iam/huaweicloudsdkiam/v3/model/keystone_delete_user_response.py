@@ -24,7 +24,7 @@ class KeystoneDeleteUserResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneDeleteUserResponse
+        r"""KeystoneDeleteUserResponse
 
         The model defined in huaweicloud sdk
 

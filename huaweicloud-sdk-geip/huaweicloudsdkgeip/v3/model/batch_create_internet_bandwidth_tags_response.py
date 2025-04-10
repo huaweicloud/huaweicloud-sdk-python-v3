@@ -26,7 +26,7 @@ class BatchCreateInternetBandwidthTagsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """BatchCreateInternetBandwidthTagsResponse
+        r"""BatchCreateInternetBandwidthTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateInternetBandwidthTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchCreateInternetBandwidthTagsResponse.
+        r"""Gets the x_request_id of this BatchCreateInternetBandwidthTagsResponse.
 
         :return: The x_request_id of this BatchCreateInternetBandwidthTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchCreateInternetBandwidthTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchCreateInternetBandwidthTagsResponse.
+        r"""Sets the x_request_id of this BatchCreateInternetBandwidthTagsResponse.
 
         :param x_request_id: The x_request_id of this BatchCreateInternetBandwidthTagsResponse.
         :type x_request_id: str

@@ -30,7 +30,7 @@ class ImportDataResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, job_id=None, run_id=None):
-        """ImportDataResponse
+        r"""ImportDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ImportDataResponse(SdkResponse):
 
     @property
     def table_id(self):
-        """Gets the table_id of this ImportDataResponse.
+        r"""Gets the table_id of this ImportDataResponse.
 
         表ID。
 
@@ -69,7 +69,7 @@ class ImportDataResponse(SdkResponse):
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this ImportDataResponse.
+        r"""Sets the table_id of this ImportDataResponse.
 
         表ID。
 
@@ -80,7 +80,7 @@ class ImportDataResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportDataResponse.
+        r"""Gets the job_id of this ImportDataResponse.
 
         作业ID。
 
@@ -91,7 +91,7 @@ class ImportDataResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportDataResponse.
+        r"""Sets the job_id of this ImportDataResponse.
 
         作业ID。
 
@@ -102,7 +102,7 @@ class ImportDataResponse(SdkResponse):
 
     @property
     def run_id(self):
-        """Gets the run_id of this ImportDataResponse.
+        r"""Gets the run_id of this ImportDataResponse.
 
         作业运行ID。
 
@@ -113,7 +113,7 @@ class ImportDataResponse(SdkResponse):
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this ImportDataResponse.
+        r"""Sets the run_id of this ImportDataResponse.
 
         作业运行ID。
 

@@ -50,7 +50,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, labels=None, workflow_file=None, workflow_file_url=None, main_file=None, params_file=None, params=None, create_time=None, update_time=None, source_project_name=None, source_resource_id=None):
-        """ShowNextflowWorkflowResponse
+        r"""ShowNextflowWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNextflowWorkflowResponse.
+        r"""Gets the id of this ShowNextflowWorkflowResponse.
 
         流程id
 
@@ -139,7 +139,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNextflowWorkflowResponse.
+        r"""Sets the id of this ShowNextflowWorkflowResponse.
 
         流程id
 
@@ -150,7 +150,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNextflowWorkflowResponse.
+        r"""Gets the name of this ShowNextflowWorkflowResponse.
 
         流程名称
 
@@ -161,7 +161,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNextflowWorkflowResponse.
+        r"""Sets the name of this ShowNextflowWorkflowResponse.
 
         流程名称
 
@@ -172,7 +172,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowNextflowWorkflowResponse.
+        r"""Gets the description of this ShowNextflowWorkflowResponse.
 
         流程描述
 
@@ -183,7 +183,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowNextflowWorkflowResponse.
+        r"""Sets the description of this ShowNextflowWorkflowResponse.
 
         流程描述
 
@@ -194,7 +194,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowNextflowWorkflowResponse.
+        r"""Gets the labels of this ShowNextflowWorkflowResponse.
 
         流程标签
 
@@ -205,7 +205,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowNextflowWorkflowResponse.
+        r"""Sets the labels of this ShowNextflowWorkflowResponse.
 
         流程标签
 
@@ -216,7 +216,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def workflow_file(self):
-        """Gets the workflow_file of this ShowNextflowWorkflowResponse.
+        r"""Gets the workflow_file of this ShowNextflowWorkflowResponse.
 
         流程的文件名
 
@@ -227,7 +227,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @workflow_file.setter
     def workflow_file(self, workflow_file):
-        """Sets the workflow_file of this ShowNextflowWorkflowResponse.
+        r"""Sets the workflow_file of this ShowNextflowWorkflowResponse.
 
         流程的文件名
 
@@ -238,7 +238,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def workflow_file_url(self):
-        """Gets the workflow_file_url of this ShowNextflowWorkflowResponse.
+        r"""Gets the workflow_file_url of this ShowNextflowWorkflowResponse.
 
         流程的文件名下载地址
 
@@ -249,7 +249,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @workflow_file_url.setter
     def workflow_file_url(self, workflow_file_url):
-        """Sets the workflow_file_url of this ShowNextflowWorkflowResponse.
+        r"""Sets the workflow_file_url of this ShowNextflowWorkflowResponse.
 
         流程的文件名下载地址
 
@@ -260,7 +260,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def main_file(self):
-        """Gets the main_file of this ShowNextflowWorkflowResponse.
+        r"""Gets the main_file of this ShowNextflowWorkflowResponse.
 
         主文件名
 
@@ -271,7 +271,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @main_file.setter
     def main_file(self, main_file):
-        """Sets the main_file of this ShowNextflowWorkflowResponse.
+        r"""Sets the main_file of this ShowNextflowWorkflowResponse.
 
         主文件名
 
@@ -282,7 +282,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def params_file(self):
-        """Gets the params_file of this ShowNextflowWorkflowResponse.
+        r"""Gets the params_file of this ShowNextflowWorkflowResponse.
 
         用户上传时使用的参数文件名
 
@@ -293,7 +293,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @params_file.setter
     def params_file(self, params_file):
-        """Sets the params_file of this ShowNextflowWorkflowResponse.
+        r"""Sets the params_file of this ShowNextflowWorkflowResponse.
 
         用户上传时使用的参数文件名
 
@@ -304,7 +304,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowNextflowWorkflowResponse.
+        r"""Gets the params of this ShowNextflowWorkflowResponse.
 
         流程参数列表
 
@@ -315,7 +315,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowNextflowWorkflowResponse.
+        r"""Sets the params of this ShowNextflowWorkflowResponse.
 
         流程参数列表
 
@@ -326,7 +326,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowNextflowWorkflowResponse.
+        r"""Gets the create_time of this ShowNextflowWorkflowResponse.
 
         流程的创建时间
 
@@ -337,7 +337,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowNextflowWorkflowResponse.
+        r"""Sets the create_time of this ShowNextflowWorkflowResponse.
 
         流程的创建时间
 
@@ -348,7 +348,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowNextflowWorkflowResponse.
+        r"""Gets the update_time of this ShowNextflowWorkflowResponse.
 
         流程的更新时间
 
@@ -359,7 +359,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowNextflowWorkflowResponse.
+        r"""Sets the update_time of this ShowNextflowWorkflowResponse.
 
         流程的更新时间
 
@@ -370,7 +370,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ShowNextflowWorkflowResponse.
+        r"""Gets the source_project_name of this ShowNextflowWorkflowResponse.
 
         源项目名称
 
@@ -381,7 +381,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ShowNextflowWorkflowResponse.
+        r"""Sets the source_project_name of this ShowNextflowWorkflowResponse.
 
         源项目名称
 
@@ -392,7 +392,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @property
     def source_resource_id(self):
-        """Gets the source_resource_id of this ShowNextflowWorkflowResponse.
+        r"""Gets the source_resource_id of this ShowNextflowWorkflowResponse.
 
         源资源id
 
@@ -403,7 +403,7 @@ class ShowNextflowWorkflowResponse(SdkResponse):
 
     @source_resource_id.setter
     def source_resource_id(self, source_resource_id):
-        """Sets the source_resource_id of this ShowNextflowWorkflowResponse.
+        r"""Sets the source_resource_id of this ShowNextflowWorkflowResponse.
 
         源资源id
 

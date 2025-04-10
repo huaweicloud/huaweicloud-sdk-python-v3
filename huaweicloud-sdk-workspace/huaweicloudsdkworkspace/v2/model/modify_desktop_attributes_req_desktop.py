@@ -27,7 +27,7 @@ class ModifyDesktopAttributesReqDesktop:
     }
 
     def __init__(self, computer_name=None, self_backup_management=None):
-        """ModifyDesktopAttributesReqDesktop
+        r"""ModifyDesktopAttributesReqDesktop
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ModifyDesktopAttributesReqDesktop:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ModifyDesktopAttributesReqDesktop.
+        r"""Gets the computer_name of this ModifyDesktopAttributesReqDesktop.
 
         桌面名
 
@@ -61,7 +61,7 @@ class ModifyDesktopAttributesReqDesktop:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ModifyDesktopAttributesReqDesktop.
+        r"""Sets the computer_name of this ModifyDesktopAttributesReqDesktop.
 
         桌面名
 
@@ -72,7 +72,7 @@ class ModifyDesktopAttributesReqDesktop:
 
     @property
     def self_backup_management(self):
-        """Gets the self_backup_management of this ModifyDesktopAttributesReqDesktop.
+        r"""Gets the self_backup_management of this ModifyDesktopAttributesReqDesktop.
 
         是否开启快照的操作类型,\"0\":关闭 \"1\":开启
 
@@ -83,7 +83,7 @@ class ModifyDesktopAttributesReqDesktop:
 
     @self_backup_management.setter
     def self_backup_management(self, self_backup_management):
-        """Sets the self_backup_management of this ModifyDesktopAttributesReqDesktop.
+        r"""Sets the self_backup_management of this ModifyDesktopAttributesReqDesktop.
 
         是否开启快照的操作类型,\"0\":关闭 \"1\":开启
 

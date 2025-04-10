@@ -29,7 +29,7 @@ class DataStoreDto:
     }
 
     def __init__(self, data_store_id=None, data_store_group_id=None, product_id=None):
-        """DataStoreDto
+        r"""DataStoreDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DataStoreDto:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this DataStoreDto.
+        r"""Gets the data_store_id of this DataStoreDto.
 
         存储ID
 
@@ -68,7 +68,7 @@ class DataStoreDto:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this DataStoreDto.
+        r"""Sets the data_store_id of this DataStoreDto.
 
         存储ID
 
@@ -79,7 +79,7 @@ class DataStoreDto:
 
     @property
     def data_store_group_id(self):
-        """Gets the data_store_group_id of this DataStoreDto.
+        r"""Gets the data_store_group_id of this DataStoreDto.
 
         存储组ID
 
@@ -90,7 +90,7 @@ class DataStoreDto:
 
     @data_store_group_id.setter
     def data_store_group_id(self, data_store_group_id):
-        """Sets the data_store_group_id of this DataStoreDto.
+        r"""Sets the data_store_group_id of this DataStoreDto.
 
         存储组ID
 
@@ -101,7 +101,7 @@ class DataStoreDto:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DataStoreDto.
+        r"""Gets the product_id of this DataStoreDto.
 
         产品ID
 
@@ -112,7 +112,7 @@ class DataStoreDto:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DataStoreDto.
+        r"""Sets the product_id of this DataStoreDto.
 
         产品ID
 

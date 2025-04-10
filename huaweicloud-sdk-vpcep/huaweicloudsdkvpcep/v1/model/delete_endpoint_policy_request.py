@@ -25,7 +25,7 @@ class DeleteEndpointPolicyRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None):
-        """DeleteEndpointPolicyRequest
+        r"""DeleteEndpointPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEndpointPolicyRequest:
 
     @property
     def vpc_endpoint_id(self):
-        """Gets the vpc_endpoint_id of this DeleteEndpointPolicyRequest.
+        r"""Gets the vpc_endpoint_id of this DeleteEndpointPolicyRequest.
 
         终端节点的ID。
 
@@ -53,7 +53,7 @@ class DeleteEndpointPolicyRequest:
 
     @vpc_endpoint_id.setter
     def vpc_endpoint_id(self, vpc_endpoint_id):
-        """Sets the vpc_endpoint_id of this DeleteEndpointPolicyRequest.
+        r"""Sets the vpc_endpoint_id of this DeleteEndpointPolicyRequest.
 
         终端节点的ID。
 

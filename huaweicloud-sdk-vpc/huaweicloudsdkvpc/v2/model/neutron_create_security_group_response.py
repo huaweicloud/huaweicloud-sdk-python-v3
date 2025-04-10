@@ -26,7 +26,7 @@ class NeutronCreateSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, security_group=None):
-        """NeutronCreateSecurityGroupResponse
+        r"""NeutronCreateSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronCreateSecurityGroupResponse(SdkResponse):
 
     @property
     def security_group(self):
-        """Gets the security_group of this NeutronCreateSecurityGroupResponse.
+        r"""Gets the security_group of this NeutronCreateSecurityGroupResponse.
 
         :return: The security_group of this NeutronCreateSecurityGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronSecurityGroup`
@@ -53,7 +53,7 @@ class NeutronCreateSecurityGroupResponse(SdkResponse):
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this NeutronCreateSecurityGroupResponse.
+        r"""Sets the security_group of this NeutronCreateSecurityGroupResponse.
 
         :param security_group: The security_group of this NeutronCreateSecurityGroupResponse.
         :type security_group: :class:`huaweicloudsdkvpc.v2.NeutronSecurityGroup`

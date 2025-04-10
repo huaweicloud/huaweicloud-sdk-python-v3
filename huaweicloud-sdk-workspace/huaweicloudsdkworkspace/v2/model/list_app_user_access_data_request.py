@@ -37,7 +37,7 @@ class ListAppUserAccessDataRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, username=None, sort_field=None, sort_type=None, offset=None, limit=None):
-        """ListAppUserAccessDataRequest
+        r"""ListAppUserAccessDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAppUserAccessDataRequest.
+        r"""Gets the start_time of this ListAppUserAccessDataRequest.
 
         查询起始时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
 
@@ -94,7 +94,7 @@ class ListAppUserAccessDataRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAppUserAccessDataRequest.
+        r"""Sets the start_time of this ListAppUserAccessDataRequest.
 
         查询起始时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
 
@@ -105,7 +105,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAppUserAccessDataRequest.
+        r"""Gets the end_time of this ListAppUserAccessDataRequest.
 
         查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
 
@@ -116,7 +116,7 @@ class ListAppUserAccessDataRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAppUserAccessDataRequest.
+        r"""Sets the end_time of this ListAppUserAccessDataRequest.
 
         查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
 
@@ -127,7 +127,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def username(self):
-        """Gets the username of this ListAppUserAccessDataRequest.
+        r"""Gets the username of this ListAppUserAccessDataRequest.
 
         用户名(模糊匹配)
 
@@ -138,7 +138,7 @@ class ListAppUserAccessDataRequest:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ListAppUserAccessDataRequest.
+        r"""Sets the username of this ListAppUserAccessDataRequest.
 
         用户名(模糊匹配)
 
@@ -149,7 +149,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListAppUserAccessDataRequest.
+        r"""Gets the sort_field of this ListAppUserAccessDataRequest.
 
         按照指标进行排序 * `access_failed_count` -  按照接入失败数排序 * `last_access_failed_time` -  按照最近接入失败时间排序
 
@@ -160,7 +160,7 @@ class ListAppUserAccessDataRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListAppUserAccessDataRequest.
+        r"""Sets the sort_field of this ListAppUserAccessDataRequest.
 
         按照指标进行排序 * `access_failed_count` -  按照接入失败数排序 * `last_access_failed_time` -  按照最近接入失败时间排序
 
@@ -171,7 +171,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListAppUserAccessDataRequest.
+        r"""Gets the sort_type of this ListAppUserAccessDataRequest.
 
         按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
@@ -182,7 +182,7 @@ class ListAppUserAccessDataRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListAppUserAccessDataRequest.
+        r"""Sets the sort_type of this ListAppUserAccessDataRequest.
 
         按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
@@ -193,7 +193,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppUserAccessDataRequest.
+        r"""Gets the offset of this ListAppUserAccessDataRequest.
 
         查询的偏移量,默认值0
 
@@ -204,7 +204,7 @@ class ListAppUserAccessDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppUserAccessDataRequest.
+        r"""Sets the offset of this ListAppUserAccessDataRequest.
 
         查询的偏移量,默认值0
 
@@ -215,7 +215,7 @@ class ListAppUserAccessDataRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppUserAccessDataRequest.
+        r"""Gets the limit of this ListAppUserAccessDataRequest.
 
         limit范围[1-100],默认值10
 
@@ -226,7 +226,7 @@ class ListAppUserAccessDataRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppUserAccessDataRequest.
+        r"""Sets the limit of this ListAppUserAccessDataRequest.
 
         limit范围[1-100],默认值10
 

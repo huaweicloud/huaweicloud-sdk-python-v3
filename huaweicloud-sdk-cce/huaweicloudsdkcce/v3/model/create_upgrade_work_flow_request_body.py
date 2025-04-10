@@ -29,7 +29,7 @@ class CreateUpgradeWorkFlowRequestBody:
     }
 
     def __init__(self, kind=None, api_version=None, spec=None):
-        """CreateUpgradeWorkFlowRequestBody
+        r"""CreateUpgradeWorkFlowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateUpgradeWorkFlowRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateUpgradeWorkFlowRequestBody.
+        r"""Gets the kind of this CreateUpgradeWorkFlowRequestBody.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -65,7 +65,7 @@ class CreateUpgradeWorkFlowRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateUpgradeWorkFlowRequestBody.
+        r"""Sets the kind of this CreateUpgradeWorkFlowRequestBody.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -76,7 +76,7 @@ class CreateUpgradeWorkFlowRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateUpgradeWorkFlowRequestBody.
+        r"""Gets the api_version of this CreateUpgradeWorkFlowRequestBody.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -87,7 +87,7 @@ class CreateUpgradeWorkFlowRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateUpgradeWorkFlowRequestBody.
+        r"""Sets the api_version of this CreateUpgradeWorkFlowRequestBody.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -98,7 +98,7 @@ class CreateUpgradeWorkFlowRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateUpgradeWorkFlowRequestBody.
+        r"""Gets the spec of this CreateUpgradeWorkFlowRequestBody.
 
         :return: The spec of this CreateUpgradeWorkFlowRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -107,7 +107,7 @@ class CreateUpgradeWorkFlowRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateUpgradeWorkFlowRequestBody.
+        r"""Sets the spec of this CreateUpgradeWorkFlowRequestBody.
 
         :param spec: The spec of this CreateUpgradeWorkFlowRequestBody.
         :type spec: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`

@@ -27,7 +27,7 @@ class ImportTrafficRequestBody:
     }
 
     def __init__(self, traffic_type=None, phone_ids=None):
-        """ImportTrafficRequestBody
+        r"""ImportTrafficRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ImportTrafficRequestBody:
 
     @property
     def traffic_type(self):
-        """Gets the traffic_type of this ImportTrafficRequestBody.
+        r"""Gets the traffic_type of this ImportTrafficRequestBody.
 
         手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
@@ -59,7 +59,7 @@ class ImportTrafficRequestBody:
 
     @traffic_type.setter
     def traffic_type(self, traffic_type):
-        """Sets the traffic_type of this ImportTrafficRequestBody.
+        r"""Sets the traffic_type of this ImportTrafficRequestBody.
 
         手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
@@ -70,7 +70,7 @@ class ImportTrafficRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this ImportTrafficRequestBody.
+        r"""Gets the phone_ids of this ImportTrafficRequestBody.
 
         手机id列表，一次调用最多支持100个。
 
@@ -81,7 +81,7 @@ class ImportTrafficRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this ImportTrafficRequestBody.
+        r"""Sets the phone_ids of this ImportTrafficRequestBody.
 
         手机id列表，一次调用最多支持100个。
 

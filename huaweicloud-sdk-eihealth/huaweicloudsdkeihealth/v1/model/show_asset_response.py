@@ -48,7 +48,7 @@ class ShowAssetResponse(SdkResponse):
     }
 
     def __init__(self, id=None, category=None, name=None, title=None, labels=None, picture=None, vendor_id=None, versions=None, create_time=None, update_time=None, stars=None, subscribes=None):
-        """ShowAssetResponse
+        r"""ShowAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAssetResponse.
+        r"""Gets the id of this ShowAssetResponse.
 
         资产id
 
@@ -132,7 +132,7 @@ class ShowAssetResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAssetResponse.
+        r"""Sets the id of this ShowAssetResponse.
 
         资产id
 
@@ -143,7 +143,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowAssetResponse.
+        r"""Gets the category of this ShowAssetResponse.
 
         类别
 
@@ -154,7 +154,7 @@ class ShowAssetResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowAssetResponse.
+        r"""Sets the category of this ShowAssetResponse.
 
         类别
 
@@ -165,7 +165,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAssetResponse.
+        r"""Gets the name of this ShowAssetResponse.
 
         资产名
 
@@ -176,7 +176,7 @@ class ShowAssetResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAssetResponse.
+        r"""Sets the name of this ShowAssetResponse.
 
         资产名
 
@@ -187,7 +187,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ShowAssetResponse.
+        r"""Gets the title of this ShowAssetResponse.
 
         资产展示名
 
@@ -198,7 +198,7 @@ class ShowAssetResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowAssetResponse.
+        r"""Sets the title of this ShowAssetResponse.
 
         资产展示名
 
@@ -209,7 +209,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowAssetResponse.
+        r"""Gets the labels of this ShowAssetResponse.
 
         资产标签列表
 
@@ -220,7 +220,7 @@ class ShowAssetResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowAssetResponse.
+        r"""Sets the labels of this ShowAssetResponse.
 
         资产标签列表
 
@@ -231,7 +231,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def picture(self):
-        """Gets the picture of this ShowAssetResponse.
+        r"""Gets the picture of this ShowAssetResponse.
 
         资产封面图访问链接
 
@@ -242,7 +242,7 @@ class ShowAssetResponse(SdkResponse):
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this ShowAssetResponse.
+        r"""Sets the picture of this ShowAssetResponse.
 
         资产封面图访问链接
 
@@ -253,7 +253,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def vendor_id(self):
-        """Gets the vendor_id of this ShowAssetResponse.
+        r"""Gets the vendor_id of this ShowAssetResponse.
 
         供应商id
 
@@ -264,7 +264,7 @@ class ShowAssetResponse(SdkResponse):
 
     @vendor_id.setter
     def vendor_id(self, vendor_id):
-        """Sets the vendor_id of this ShowAssetResponse.
+        r"""Sets the vendor_id of this ShowAssetResponse.
 
         供应商id
 
@@ -275,7 +275,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ShowAssetResponse.
+        r"""Gets the versions of this ShowAssetResponse.
 
         资产版本号列表
 
@@ -286,7 +286,7 @@ class ShowAssetResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ShowAssetResponse.
+        r"""Sets the versions of this ShowAssetResponse.
 
         资产版本号列表
 
@@ -297,7 +297,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAssetResponse.
+        r"""Gets the create_time of this ShowAssetResponse.
 
         创建时间
 
@@ -308,7 +308,7 @@ class ShowAssetResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAssetResponse.
+        r"""Sets the create_time of this ShowAssetResponse.
 
         创建时间
 
@@ -319,7 +319,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAssetResponse.
+        r"""Gets the update_time of this ShowAssetResponse.
 
         更新时间
 
@@ -330,7 +330,7 @@ class ShowAssetResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAssetResponse.
+        r"""Sets the update_time of this ShowAssetResponse.
 
         更新时间
 
@@ -341,7 +341,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def stars(self):
-        """Gets the stars of this ShowAssetResponse.
+        r"""Gets the stars of this ShowAssetResponse.
 
         收藏数
 
@@ -352,7 +352,7 @@ class ShowAssetResponse(SdkResponse):
 
     @stars.setter
     def stars(self, stars):
-        """Sets the stars of this ShowAssetResponse.
+        r"""Sets the stars of this ShowAssetResponse.
 
         收藏数
 
@@ -363,7 +363,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def subscribes(self):
-        """Gets the subscribes of this ShowAssetResponse.
+        r"""Gets the subscribes of this ShowAssetResponse.
 
         订阅数
 
@@ -374,7 +374,7 @@ class ShowAssetResponse(SdkResponse):
 
     @subscribes.setter
     def subscribes(self, subscribes):
-        """Sets the subscribes of this ShowAssetResponse.
+        r"""Sets the subscribes of this ShowAssetResponse.
 
         订阅数
 

@@ -25,7 +25,7 @@ class AllowedAddressPair:
     }
 
     def __init__(self, ip_address=None):
-        """AllowedAddressPair
+        r"""AllowedAddressPair
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AllowedAddressPair:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AllowedAddressPair.
+        r"""Gets the ip_address of this AllowedAddressPair.
 
         是否开启源/目的检查开关。  默认是开启，不允许置空。  关闭：1.1.1.1/0 开启：除“1.1.1.1/0”以外的其余值均按开启处理
 
@@ -54,7 +54,7 @@ class AllowedAddressPair:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AllowedAddressPair.
+        r"""Sets the ip_address of this AllowedAddressPair.
 
         是否开启源/目的检查开关。  默认是开启，不允许置空。  关闭：1.1.1.1/0 开启：除“1.1.1.1/0”以外的其余值均按开启处理
 

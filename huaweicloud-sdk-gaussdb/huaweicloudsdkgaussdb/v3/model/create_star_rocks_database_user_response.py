@@ -26,7 +26,7 @@ class CreateStarRocksDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CreateStarRocksDatabaseUserResponse
+        r"""CreateStarRocksDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateStarRocksDatabaseUserResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateStarRocksDatabaseUserResponse.
+        r"""Gets the result of this CreateStarRocksDatabaseUserResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class CreateStarRocksDatabaseUserResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateStarRocksDatabaseUserResponse.
+        r"""Sets the result of this CreateStarRocksDatabaseUserResponse.
 
         请求结果。
 

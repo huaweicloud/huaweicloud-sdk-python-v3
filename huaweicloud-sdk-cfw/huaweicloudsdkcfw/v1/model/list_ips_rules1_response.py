@@ -26,7 +26,7 @@ class ListIpsRules1Response(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListIpsRules1Response
+        r"""ListIpsRules1Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListIpsRules1Response(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListIpsRules1Response.
+        r"""Gets the data of this ListIpsRules1Response.
 
         :return: The data of this ListIpsRules1Response.
         :rtype: :class:`huaweicloudsdkcfw.v1.IpsRuleListVO`
@@ -53,7 +53,7 @@ class ListIpsRules1Response(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListIpsRules1Response.
+        r"""Sets the data of this ListIpsRules1Response.
 
         :param data: The data of this ListIpsRules1Response.
         :type data: :class:`huaweicloudsdkcfw.v1.IpsRuleListVO`

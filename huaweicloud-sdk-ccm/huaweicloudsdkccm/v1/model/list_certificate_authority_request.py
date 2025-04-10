@@ -37,7 +37,7 @@ class ListCertificateAuthorityRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None, type=None, sort_key=None, sort_dir=None):
-        """ListCertificateAuthorityRequest
+        r"""ListCertificateAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertificateAuthorityRequest.
+        r"""Gets the limit of this ListCertificateAuthorityRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -96,7 +96,7 @@ class ListCertificateAuthorityRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertificateAuthorityRequest.
+        r"""Sets the limit of this ListCertificateAuthorityRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -107,7 +107,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCertificateAuthorityRequest.
+        r"""Gets the name of this ListCertificateAuthorityRequest.
 
         CA证书名称（CN）过滤值，用于获取名称中带有特定值的CA证书集合。
 
@@ -118,7 +118,7 @@ class ListCertificateAuthorityRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCertificateAuthorityRequest.
+        r"""Sets the name of this ListCertificateAuthorityRequest.
 
         CA证书名称（CN）过滤值，用于获取名称中带有特定值的CA证书集合。
 
@@ -129,7 +129,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCertificateAuthorityRequest.
+        r"""Gets the offset of this ListCertificateAuthorityRequest.
 
         索引位置，从offset指定的下一条数据开始查询。默认值为0。
 
@@ -140,7 +140,7 @@ class ListCertificateAuthorityRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCertificateAuthorityRequest.
+        r"""Sets the offset of this ListCertificateAuthorityRequest.
 
         索引位置，从offset指定的下一条数据开始查询。默认值为0。
 
@@ -151,7 +151,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCertificateAuthorityRequest.
+        r"""Gets the status of this ListCertificateAuthorityRequest.
 
         CA证书状态，通过状态过滤证书集合： - **PENDING** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
@@ -162,7 +162,7 @@ class ListCertificateAuthorityRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCertificateAuthorityRequest.
+        r"""Sets the status of this ListCertificateAuthorityRequest.
 
         CA证书状态，通过状态过滤证书集合： - **PENDING** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
@@ -173,7 +173,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListCertificateAuthorityRequest.
+        r"""Gets the type of this ListCertificateAuthorityRequest.
 
         CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
 
@@ -184,7 +184,7 @@ class ListCertificateAuthorityRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListCertificateAuthorityRequest.
+        r"""Sets the type of this ListCertificateAuthorityRequest.
 
         CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
 
@@ -195,7 +195,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCertificateAuthorityRequest.
+        r"""Gets the sort_key of this ListCertificateAuthorityRequest.
 
         排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **type** : CA证书类型 - **not_after** : 证书到期时间
 
@@ -206,7 +206,7 @@ class ListCertificateAuthorityRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCertificateAuthorityRequest.
+        r"""Sets the sort_key of this ListCertificateAuthorityRequest.
 
         排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **type** : CA证书类型 - **not_after** : 证书到期时间
 
@@ -217,7 +217,7 @@ class ListCertificateAuthorityRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCertificateAuthorityRequest.
+        r"""Gets the sort_dir of this ListCertificateAuthorityRequest.
 
         排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
 
@@ -228,7 +228,7 @@ class ListCertificateAuthorityRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCertificateAuthorityRequest.
+        r"""Sets the sort_dir of this ListCertificateAuthorityRequest.
 
         排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
 

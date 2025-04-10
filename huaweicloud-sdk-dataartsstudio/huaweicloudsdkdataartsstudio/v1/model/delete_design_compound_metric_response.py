@@ -26,7 +26,7 @@ class DeleteDesignCompoundMetricResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignCompoundMetricResponse
+        r"""DeleteDesignCompoundMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignCompoundMetricResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignCompoundMetricResponse.
+        r"""Gets the data of this DeleteDesignCompoundMetricResponse.
 
         :return: The data of this DeleteDesignCompoundMetricResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignCompoundMetricResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignCompoundMetricResponse.
+        r"""Sets the data of this DeleteDesignCompoundMetricResponse.
 
         :param data: The data of this DeleteDesignCompoundMetricResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

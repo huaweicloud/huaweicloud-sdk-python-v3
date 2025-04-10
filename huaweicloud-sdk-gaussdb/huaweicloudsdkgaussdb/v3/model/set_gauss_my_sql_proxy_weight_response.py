@@ -26,7 +26,7 @@ class SetGaussMySqlProxyWeightResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SetGaussMySqlProxyWeightResponse
+        r"""SetGaussMySqlProxyWeightResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetGaussMySqlProxyWeightResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SetGaussMySqlProxyWeightResponse.
+        r"""Gets the job_id of this SetGaussMySqlProxyWeightResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class SetGaussMySqlProxyWeightResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SetGaussMySqlProxyWeightResponse.
+        r"""Sets the job_id of this SetGaussMySqlProxyWeightResponse.
 
         任务ID。
 

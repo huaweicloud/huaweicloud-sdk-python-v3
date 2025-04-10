@@ -42,7 +42,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
     }
 
     def __init__(self, interface_name=None, interface_type=None, vlan_id=None, ip_address=None, dhcp=None, start_ip_address=None, end_ip_address=None, lease_time=None, post_to_cloud=None):
-        """UpdateEquipmentLanConfigResponse
+        r"""UpdateEquipmentLanConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the interface_name of this UpdateEquipmentLanConfigResponse.
 
         接口名字
 
@@ -111,7 +111,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the interface_name of this UpdateEquipmentLanConfigResponse.
 
         接口名字
 
@@ -122,7 +122,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def interface_type(self):
-        """Gets the interface_type of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the interface_type of this UpdateEquipmentLanConfigResponse.
 
         接口类型
 
@@ -133,7 +133,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @interface_type.setter
     def interface_type(self, interface_type):
-        """Sets the interface_type of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the interface_type of this UpdateEquipmentLanConfigResponse.
 
         接口类型
 
@@ -144,7 +144,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def vlan_id(self):
-        """Gets the vlan_id of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the vlan_id of this UpdateEquipmentLanConfigResponse.
 
         VlanID
 
@@ -155,7 +155,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @vlan_id.setter
     def vlan_id(self, vlan_id):
-        """Sets the vlan_id of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the vlan_id of this UpdateEquipmentLanConfigResponse.
 
         VlanID
 
@@ -166,7 +166,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the ip_address of this UpdateEquipmentLanConfigResponse.
 
         IPv4地址
 
@@ -177,7 +177,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the ip_address of this UpdateEquipmentLanConfigResponse.
 
         IPv4地址
 
@@ -188,7 +188,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def dhcp(self):
-        """Gets the dhcp of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the dhcp of this UpdateEquipmentLanConfigResponse.
 
         DHCP开关
 
@@ -199,7 +199,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @dhcp.setter
     def dhcp(self, dhcp):
-        """Sets the dhcp of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the dhcp of this UpdateEquipmentLanConfigResponse.
 
         DHCP开关
 
@@ -210,7 +210,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def start_ip_address(self):
-        """Gets the start_ip_address of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the start_ip_address of this UpdateEquipmentLanConfigResponse.
 
         DHCP地址池起始IP地址
 
@@ -221,7 +221,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @start_ip_address.setter
     def start_ip_address(self, start_ip_address):
-        """Sets the start_ip_address of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the start_ip_address of this UpdateEquipmentLanConfigResponse.
 
         DHCP地址池起始IP地址
 
@@ -232,7 +232,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def end_ip_address(self):
-        """Gets the end_ip_address of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the end_ip_address of this UpdateEquipmentLanConfigResponse.
 
         DHCP地址池结束IP地址
 
@@ -243,7 +243,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @end_ip_address.setter
     def end_ip_address(self, end_ip_address):
-        """Sets the end_ip_address of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the end_ip_address of this UpdateEquipmentLanConfigResponse.
 
         DHCP地址池结束IP地址
 
@@ -254,7 +254,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def lease_time(self):
-        """Gets the lease_time of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the lease_time of this UpdateEquipmentLanConfigResponse.
 
         地址租期(分钟)
 
@@ -265,7 +265,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @lease_time.setter
     def lease_time(self, lease_time):
-        """Sets the lease_time of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the lease_time of this UpdateEquipmentLanConfigResponse.
 
         地址租期(分钟)
 
@@ -276,7 +276,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @property
     def post_to_cloud(self):
-        """Gets the post_to_cloud of this UpdateEquipmentLanConfigResponse.
+        r"""Gets the post_to_cloud of this UpdateEquipmentLanConfigResponse.
 
         发布到企业连接网络
 
@@ -287,7 +287,7 @@ class UpdateEquipmentLanConfigResponse(SdkResponse):
 
     @post_to_cloud.setter
     def post_to_cloud(self, post_to_cloud):
-        """Sets the post_to_cloud of this UpdateEquipmentLanConfigResponse.
+        r"""Sets the post_to_cloud of this UpdateEquipmentLanConfigResponse.
 
         发布到企业连接网络
 

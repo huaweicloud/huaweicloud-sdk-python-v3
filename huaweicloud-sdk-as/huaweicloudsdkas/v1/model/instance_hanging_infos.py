@@ -37,7 +37,7 @@ class InstanceHangingInfos:
     }
 
     def __init__(self, lifecycle_hook_name=None, lifecycle_action_key=None, instance_id=None, scaling_group_id=None, lifecycle_hook_status=None, timeout=None, default_result=None):
-        """InstanceHangingInfos
+        r"""InstanceHangingInfos
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceHangingInfos:
 
     @property
     def lifecycle_hook_name(self):
-        """Gets the lifecycle_hook_name of this InstanceHangingInfos.
+        r"""Gets the lifecycle_hook_name of this InstanceHangingInfos.
 
         生命周期挂钩名称。
 
@@ -96,7 +96,7 @@ class InstanceHangingInfos:
 
     @lifecycle_hook_name.setter
     def lifecycle_hook_name(self, lifecycle_hook_name):
-        """Sets the lifecycle_hook_name of this InstanceHangingInfos.
+        r"""Sets the lifecycle_hook_name of this InstanceHangingInfos.
 
         生命周期挂钩名称。
 
@@ -107,7 +107,7 @@ class InstanceHangingInfos:
 
     @property
     def lifecycle_action_key(self):
-        """Gets the lifecycle_action_key of this InstanceHangingInfos.
+        r"""Gets the lifecycle_action_key of this InstanceHangingInfos.
 
         生命周期操作令牌，用于指定生命周期回调对象。
 
@@ -118,7 +118,7 @@ class InstanceHangingInfos:
 
     @lifecycle_action_key.setter
     def lifecycle_action_key(self, lifecycle_action_key):
-        """Sets the lifecycle_action_key of this InstanceHangingInfos.
+        r"""Sets the lifecycle_action_key of this InstanceHangingInfos.
 
         生命周期操作令牌，用于指定生命周期回调对象。
 
@@ -129,7 +129,7 @@ class InstanceHangingInfos:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceHangingInfos.
+        r"""Gets the instance_id of this InstanceHangingInfos.
 
         伸缩实例ID。
 
@@ -140,7 +140,7 @@ class InstanceHangingInfos:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceHangingInfos.
+        r"""Sets the instance_id of this InstanceHangingInfos.
 
         伸缩实例ID。
 
@@ -151,7 +151,7 @@ class InstanceHangingInfos:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this InstanceHangingInfos.
+        r"""Gets the scaling_group_id of this InstanceHangingInfos.
 
         伸缩组ID。
 
@@ -162,7 +162,7 @@ class InstanceHangingInfos:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this InstanceHangingInfos.
+        r"""Sets the scaling_group_id of this InstanceHangingInfos.
 
         伸缩组ID。
 
@@ -173,7 +173,7 @@ class InstanceHangingInfos:
 
     @property
     def lifecycle_hook_status(self):
-        """Gets the lifecycle_hook_status of this InstanceHangingInfos.
+        r"""Gets the lifecycle_hook_status of this InstanceHangingInfos.
 
         伸缩实例挂钩的挂起状态。HANGING：挂起。CONTINUE：继续。ABANDON：终止。
 
@@ -184,7 +184,7 @@ class InstanceHangingInfos:
 
     @lifecycle_hook_status.setter
     def lifecycle_hook_status(self, lifecycle_hook_status):
-        """Sets the lifecycle_hook_status of this InstanceHangingInfos.
+        r"""Sets the lifecycle_hook_status of this InstanceHangingInfos.
 
         伸缩实例挂钩的挂起状态。HANGING：挂起。CONTINUE：继续。ABANDON：终止。
 
@@ -195,7 +195,7 @@ class InstanceHangingInfos:
 
     @property
     def timeout(self):
-        """Gets the timeout of this InstanceHangingInfos.
+        r"""Gets the timeout of this InstanceHangingInfos.
 
         超时时间，遵循UTC时间，格式为：YYYY-MM-DDThh:mm:ssZZ。
 
@@ -206,7 +206,7 @@ class InstanceHangingInfos:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this InstanceHangingInfos.
+        r"""Sets the timeout of this InstanceHangingInfos.
 
         超时时间，遵循UTC时间，格式为：YYYY-MM-DDThh:mm:ssZZ。
 
@@ -217,7 +217,7 @@ class InstanceHangingInfos:
 
     @property
     def default_result(self):
-        """Gets the default_result of this InstanceHangingInfos.
+        r"""Gets the default_result of this InstanceHangingInfos.
 
         生命周期挂钩默认回调操作。
 
@@ -228,7 +228,7 @@ class InstanceHangingInfos:
 
     @default_result.setter
     def default_result(self, default_result):
-        """Sets the default_result of this InstanceHangingInfos.
+        r"""Sets the default_result of this InstanceHangingInfos.
 
         生命周期挂钩默认回调操作。
 

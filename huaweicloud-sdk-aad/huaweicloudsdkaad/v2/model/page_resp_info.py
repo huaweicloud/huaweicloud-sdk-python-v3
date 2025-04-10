@@ -27,7 +27,7 @@ class PageRespInfo:
     }
 
     def __init__(self, content_type=None, content=None):
-        """PageRespInfo
+        r"""PageRespInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PageRespInfo:
 
     @property
     def content_type(self):
-        """Gets the content_type of this PageRespInfo.
+        r"""Gets the content_type of this PageRespInfo.
 
         页面类型
 
@@ -61,7 +61,7 @@ class PageRespInfo:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this PageRespInfo.
+        r"""Sets the content_type of this PageRespInfo.
 
         页面类型
 
@@ -72,7 +72,7 @@ class PageRespInfo:
 
     @property
     def content(self):
-        """Gets the content of this PageRespInfo.
+        r"""Gets the content of this PageRespInfo.
 
         页面内容
 
@@ -83,7 +83,7 @@ class PageRespInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PageRespInfo.
+        r"""Sets the content of this PageRespInfo.
 
         页面内容
 

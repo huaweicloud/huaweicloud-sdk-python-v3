@@ -49,7 +49,7 @@ class ListDataJobRequest:
     }
 
     def __init__(self, creator=None, eihealth_project_id=None, from_time=None, limit=None, name=None, offset=None, status=None, to_time=None, type=None, finish_from_time=None, finish_to_time=None, sort_dir=None, sort_key=None):
-        """ListDataJobRequest
+        r"""ListDataJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ListDataJobRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListDataJobRequest.
+        r"""Gets the creator of this ListDataJobRequest.
 
         创建者名称
 
@@ -137,7 +137,7 @@ class ListDataJobRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListDataJobRequest.
+        r"""Sets the creator of this ListDataJobRequest.
 
         创建者名称
 
@@ -148,7 +148,7 @@ class ListDataJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListDataJobRequest.
+        r"""Gets the eihealth_project_id of this ListDataJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -159,7 +159,7 @@ class ListDataJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListDataJobRequest.
+        r"""Sets the eihealth_project_id of this ListDataJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -170,7 +170,7 @@ class ListDataJobRequest:
 
     @property
     def from_time(self):
-        """Gets the from_time of this ListDataJobRequest.
+        r"""Gets the from_time of this ListDataJobRequest.
 
         查询该时间之后创建的数据作业
 
@@ -181,7 +181,7 @@ class ListDataJobRequest:
 
     @from_time.setter
     def from_time(self, from_time):
-        """Sets the from_time of this ListDataJobRequest.
+        r"""Sets the from_time of this ListDataJobRequest.
 
         查询该时间之后创建的数据作业
 
@@ -192,7 +192,7 @@ class ListDataJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataJobRequest.
+        r"""Gets the limit of this ListDataJobRequest.
 
         查询条数
 
@@ -203,7 +203,7 @@ class ListDataJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataJobRequest.
+        r"""Sets the limit of this ListDataJobRequest.
 
         查询条数
 
@@ -214,7 +214,7 @@ class ListDataJobRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDataJobRequest.
+        r"""Gets the name of this ListDataJobRequest.
 
         数据作业名称
 
@@ -225,7 +225,7 @@ class ListDataJobRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDataJobRequest.
+        r"""Sets the name of this ListDataJobRequest.
 
         数据作业名称
 
@@ -236,7 +236,7 @@ class ListDataJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataJobRequest.
+        r"""Gets the offset of this ListDataJobRequest.
 
         查询偏移量
 
@@ -247,7 +247,7 @@ class ListDataJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataJobRequest.
+        r"""Sets the offset of this ListDataJobRequest.
 
         查询偏移量
 
@@ -258,7 +258,7 @@ class ListDataJobRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDataJobRequest.
+        r"""Gets the status of this ListDataJobRequest.
 
         数据作业状态
 
@@ -269,7 +269,7 @@ class ListDataJobRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDataJobRequest.
+        r"""Sets the status of this ListDataJobRequest.
 
         数据作业状态
 
@@ -280,7 +280,7 @@ class ListDataJobRequest:
 
     @property
     def to_time(self):
-        """Gets the to_time of this ListDataJobRequest.
+        r"""Gets the to_time of this ListDataJobRequest.
 
         查询该时间之前创建的数据作业
 
@@ -291,7 +291,7 @@ class ListDataJobRequest:
 
     @to_time.setter
     def to_time(self, to_time):
-        """Sets the to_time of this ListDataJobRequest.
+        r"""Sets the to_time of this ListDataJobRequest.
 
         查询该时间之前创建的数据作业
 
@@ -302,7 +302,7 @@ class ListDataJobRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDataJobRequest.
+        r"""Gets the type of this ListDataJobRequest.
 
         数据作业类型
 
@@ -313,7 +313,7 @@ class ListDataJobRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDataJobRequest.
+        r"""Sets the type of this ListDataJobRequest.
 
         数据作业类型
 
@@ -324,7 +324,7 @@ class ListDataJobRequest:
 
     @property
     def finish_from_time(self):
-        """Gets the finish_from_time of this ListDataJobRequest.
+        r"""Gets the finish_from_time of this ListDataJobRequest.
 
         查询该时间之后完成的数据作业
 
@@ -335,7 +335,7 @@ class ListDataJobRequest:
 
     @finish_from_time.setter
     def finish_from_time(self, finish_from_time):
-        """Sets the finish_from_time of this ListDataJobRequest.
+        r"""Sets the finish_from_time of this ListDataJobRequest.
 
         查询该时间之后完成的数据作业
 
@@ -346,7 +346,7 @@ class ListDataJobRequest:
 
     @property
     def finish_to_time(self):
-        """Gets the finish_to_time of this ListDataJobRequest.
+        r"""Gets the finish_to_time of this ListDataJobRequest.
 
         查询该时间之前完成的数据作业
 
@@ -357,7 +357,7 @@ class ListDataJobRequest:
 
     @finish_to_time.setter
     def finish_to_time(self, finish_to_time):
-        """Sets the finish_to_time of this ListDataJobRequest.
+        r"""Sets the finish_to_time of this ListDataJobRequest.
 
         查询该时间之前完成的数据作业
 
@@ -368,7 +368,7 @@ class ListDataJobRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDataJobRequest.
+        r"""Gets the sort_dir of this ListDataJobRequest.
 
         排序规则 目前默认时间降序
 
@@ -379,7 +379,7 @@ class ListDataJobRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDataJobRequest.
+        r"""Sets the sort_dir of this ListDataJobRequest.
 
         排序规则 目前默认时间降序
 
@@ -390,7 +390,7 @@ class ListDataJobRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDataJobRequest.
+        r"""Gets the sort_key of this ListDataJobRequest.
 
         排序规则 目前默认时间降序，支持根据status,name,type,creator,create_time,end_time
 
@@ -401,7 +401,7 @@ class ListDataJobRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDataJobRequest.
+        r"""Sets the sort_key of this ListDataJobRequest.
 
         排序规则 目前默认时间降序，支持根据status,name,type,creator,create_time,end_time
 

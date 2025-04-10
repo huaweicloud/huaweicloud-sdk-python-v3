@@ -41,7 +41,7 @@ class ListAssociationsRequest:
     }
 
     def __init__(self, er_id=None, route_table_id=None, limit=None, marker=None, attachment_id=None, resource_type=None, state=None, sort_key=None, sort_dir=None):
-        """ListAssociationsRequest
+        r"""ListAssociationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ListAssociationsRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ListAssociationsRequest.
+        r"""Gets the er_id of this ListAssociationsRequest.
 
         企业路由器实例ID
 
@@ -108,7 +108,7 @@ class ListAssociationsRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ListAssociationsRequest.
+        r"""Sets the er_id of this ListAssociationsRequest.
 
         企业路由器实例ID
 
@@ -119,7 +119,7 @@ class ListAssociationsRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this ListAssociationsRequest.
+        r"""Gets the route_table_id of this ListAssociationsRequest.
 
         路由表ID
 
@@ -130,7 +130,7 @@ class ListAssociationsRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this ListAssociationsRequest.
+        r"""Sets the route_table_id of this ListAssociationsRequest.
 
         路由表ID
 
@@ -141,7 +141,7 @@ class ListAssociationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssociationsRequest.
+        r"""Gets the limit of this ListAssociationsRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -152,7 +152,7 @@ class ListAssociationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssociationsRequest.
+        r"""Sets the limit of this ListAssociationsRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -163,7 +163,7 @@ class ListAssociationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAssociationsRequest.
+        r"""Gets the marker of this ListAssociationsRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -174,7 +174,7 @@ class ListAssociationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAssociationsRequest.
+        r"""Sets the marker of this ListAssociationsRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -185,7 +185,7 @@ class ListAssociationsRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this ListAssociationsRequest.
+        r"""Gets the attachment_id of this ListAssociationsRequest.
 
         连接ID
 
@@ -196,7 +196,7 @@ class ListAssociationsRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this ListAssociationsRequest.
+        r"""Sets the attachment_id of this ListAssociationsRequest.
 
         连接ID
 
@@ -207,7 +207,7 @@ class ListAssociationsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListAssociationsRequest.
+        r"""Gets the resource_type of this ListAssociationsRequest.
 
         - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
@@ -218,7 +218,7 @@ class ListAssociationsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListAssociationsRequest.
+        r"""Sets the resource_type of this ListAssociationsRequest.
 
         - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
@@ -229,7 +229,7 @@ class ListAssociationsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListAssociationsRequest.
+        r"""Gets the state of this ListAssociationsRequest.
 
         状态
 
@@ -240,7 +240,7 @@ class ListAssociationsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListAssociationsRequest.
+        r"""Sets the state of this ListAssociationsRequest.
 
         状态
 
@@ -251,7 +251,7 @@ class ListAssociationsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAssociationsRequest.
+        r"""Gets the sort_key of this ListAssociationsRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -262,7 +262,7 @@ class ListAssociationsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAssociationsRequest.
+        r"""Sets the sort_key of this ListAssociationsRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -273,7 +273,7 @@ class ListAssociationsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAssociationsRequest.
+        r"""Gets the sort_dir of this ListAssociationsRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -284,7 +284,7 @@ class ListAssociationsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAssociationsRequest.
+        r"""Sets the sort_dir of this ListAssociationsRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 

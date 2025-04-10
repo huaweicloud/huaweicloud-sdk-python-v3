@@ -27,7 +27,7 @@ class HostRoute:
     }
 
     def __init__(self, destination=None, nexthop=None):
-        """HostRoute
+        r"""HostRoute
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HostRoute:
 
     @property
     def destination(self):
-        """Gets the destination of this HostRoute.
+        r"""Gets the destination of this HostRoute.
 
         路由目的子网
 
@@ -61,7 +61,7 @@ class HostRoute:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this HostRoute.
+        r"""Sets the destination of this HostRoute.
 
         路由目的子网
 
@@ -72,7 +72,7 @@ class HostRoute:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this HostRoute.
+        r"""Gets the nexthop of this HostRoute.
 
         路由下一跳IP
 
@@ -83,7 +83,7 @@ class HostRoute:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this HostRoute.
+        r"""Sets the nexthop of this HostRoute.
 
         路由下一跳IP
 

@@ -29,7 +29,7 @@ class AddUserToAppRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, body=None):
-        """AddUserToAppRequest
+        r"""AddUserToAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddUserToAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddUserToAppRequest.
+        r"""Gets the app_id of this AddUserToAppRequest.
 
         应用ID
 
@@ -66,7 +66,7 @@ class AddUserToAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddUserToAppRequest.
+        r"""Sets the app_id of this AddUserToAppRequest.
 
         应用ID
 
@@ -77,7 +77,7 @@ class AddUserToAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddUserToAppRequest.
+        r"""Gets the instance_id of this AddUserToAppRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class AddUserToAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddUserToAppRequest.
+        r"""Sets the instance_id of this AddUserToAppRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class AddUserToAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddUserToAppRequest.
+        r"""Gets the body of this AddUserToAppRequest.
 
         :return: The body of this AddUserToAppRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AddUserToApp`
@@ -108,7 +108,7 @@ class AddUserToAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddUserToAppRequest.
+        r"""Sets the body of this AddUserToAppRequest.
 
         :param body: The body of this AddUserToAppRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AddUserToApp`

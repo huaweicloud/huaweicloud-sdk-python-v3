@@ -27,7 +27,7 @@ class ScaleUpBillingConfigOverride:
     }
 
     def __init__(self, billing_mode=None, extend_param=None):
-        """ScaleUpBillingConfigOverride
+        r"""ScaleUpBillingConfigOverride
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ScaleUpBillingConfigOverride:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this ScaleUpBillingConfigOverride.
+        r"""Gets the billing_mode of this ScaleUpBillingConfigOverride.
 
         节点计费类型，0(按需)，1(包周期)
 
@@ -60,7 +60,7 @@ class ScaleUpBillingConfigOverride:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this ScaleUpBillingConfigOverride.
+        r"""Sets the billing_mode of this ScaleUpBillingConfigOverride.
 
         节点计费类型，0(按需)，1(包周期)
 
@@ -71,7 +71,7 @@ class ScaleUpBillingConfigOverride:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this ScaleUpBillingConfigOverride.
+        r"""Gets the extend_param of this ScaleUpBillingConfigOverride.
 
         :return: The extend_param of this ScaleUpBillingConfigOverride.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleUpExtendParam`
@@ -80,7 +80,7 @@ class ScaleUpBillingConfigOverride:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this ScaleUpBillingConfigOverride.
+        r"""Sets the extend_param of this ScaleUpBillingConfigOverride.
 
         :param extend_param: The extend_param of this ScaleUpBillingConfigOverride.
         :type extend_param: :class:`huaweicloudsdkcce.v3.ScaleUpExtendParam`

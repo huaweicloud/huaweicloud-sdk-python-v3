@@ -28,7 +28,7 @@ class ListEventsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, meta_data=None):
-        """ListEventsResponse
+        r"""ListEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ListEventsResponse.
+        r"""Gets the events of this ListEventsResponse.
 
         一条或者多条事件数据。
 
@@ -62,7 +62,7 @@ class ListEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ListEventsResponse.
+        r"""Sets the events of this ListEventsResponse.
 
         一条或者多条事件数据。
 
@@ -73,7 +73,7 @@ class ListEventsResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListEventsResponse.
+        r"""Gets the meta_data of this ListEventsResponse.
 
         :return: The meta_data of this ListEventsResponse.
         :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
@@ -82,7 +82,7 @@ class ListEventsResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListEventsResponse.
+        r"""Sets the meta_data of this ListEventsResponse.
 
         :param meta_data: The meta_data of this ListEventsResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`

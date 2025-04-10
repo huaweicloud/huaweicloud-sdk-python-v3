@@ -81,7 +81,7 @@ class Workitems:
     }
 
     def __init__(self, id=None, description=None, actual_work_hours=None, assigned_user=None, author=None, begin_time=None, created_time=None, tags=None, developer=None, assigned_cc_user=None, discover_version=None, end_time=None, done_ratio=None, expected_work_hours=None, order=None, parent_work_item_id=None, release_version=None, story_point=None, domain=None, iteration=None, module=None, priority=None, severity=None, status=None, subject=None, updated_time=None, sequence=None, important=None, custom_fields=None):
-        """Workitems
+        r"""Workitems
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class Workitems:
 
     @property
     def id(self):
-        """Gets the id of this Workitems.
+        r"""Gets the id of this Workitems.
 
         工作项id
 
@@ -250,7 +250,7 @@ class Workitems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Workitems.
+        r"""Sets the id of this Workitems.
 
         工作项id
 
@@ -261,7 +261,7 @@ class Workitems:
 
     @property
     def description(self):
-        """Gets the description of this Workitems.
+        r"""Gets the description of this Workitems.
 
         工作项描述
 
@@ -272,7 +272,7 @@ class Workitems:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Workitems.
+        r"""Sets the description of this Workitems.
 
         工作项描述
 
@@ -283,7 +283,7 @@ class Workitems:
 
     @property
     def actual_work_hours(self):
-        """Gets the actual_work_hours of this Workitems.
+        r"""Gets the actual_work_hours of this Workitems.
 
         实际工时
 
@@ -294,7 +294,7 @@ class Workitems:
 
     @actual_work_hours.setter
     def actual_work_hours(self, actual_work_hours):
-        """Sets the actual_work_hours of this Workitems.
+        r"""Sets the actual_work_hours of this Workitems.
 
         实际工时
 
@@ -305,7 +305,7 @@ class Workitems:
 
     @property
     def assigned_user(self):
-        """Gets the assigned_user of this Workitems.
+        r"""Gets the assigned_user of this Workitems.
 
         :return: The assigned_user of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -314,7 +314,7 @@ class Workitems:
 
     @assigned_user.setter
     def assigned_user(self, assigned_user):
-        """Sets the assigned_user of this Workitems.
+        r"""Sets the assigned_user of this Workitems.
 
         :param assigned_user: The assigned_user of this Workitems.
         :type assigned_user: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -323,7 +323,7 @@ class Workitems:
 
     @property
     def author(self):
-        """Gets the author of this Workitems.
+        r"""Gets the author of this Workitems.
 
         :return: The author of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -332,7 +332,7 @@ class Workitems:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this Workitems.
+        r"""Sets the author of this Workitems.
 
         :param author: The author of this Workitems.
         :type author: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -341,7 +341,7 @@ class Workitems:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Workitems.
+        r"""Gets the begin_time of this Workitems.
 
         工作项开始时间
 
@@ -352,7 +352,7 @@ class Workitems:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Workitems.
+        r"""Sets the begin_time of this Workitems.
 
         工作项开始时间
 
@@ -363,7 +363,7 @@ class Workitems:
 
     @property
     def created_time(self):
-        """Gets the created_time of this Workitems.
+        r"""Gets the created_time of this Workitems.
 
         创建时间
 
@@ -374,7 +374,7 @@ class Workitems:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this Workitems.
+        r"""Sets the created_time of this Workitems.
 
         创建时间
 
@@ -385,7 +385,7 @@ class Workitems:
 
     @property
     def tags(self):
-        """Gets the tags of this Workitems.
+        r"""Gets the tags of this Workitems.
 
         标签
 
@@ -396,7 +396,7 @@ class Workitems:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Workitems.
+        r"""Sets the tags of this Workitems.
 
         标签
 
@@ -407,7 +407,7 @@ class Workitems:
 
     @property
     def developer(self):
-        """Gets the developer of this Workitems.
+        r"""Gets the developer of this Workitems.
 
         :return: The developer of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -416,7 +416,7 @@ class Workitems:
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this Workitems.
+        r"""Sets the developer of this Workitems.
 
         :param developer: The developer of this Workitems.
         :type developer: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -425,7 +425,7 @@ class Workitems:
 
     @property
     def assigned_cc_user(self):
-        """Gets the assigned_cc_user of this Workitems.
+        r"""Gets the assigned_cc_user of this Workitems.
 
         抄送人
 
@@ -436,7 +436,7 @@ class Workitems:
 
     @assigned_cc_user.setter
     def assigned_cc_user(self, assigned_cc_user):
-        """Sets the assigned_cc_user of this Workitems.
+        r"""Sets the assigned_cc_user of this Workitems.
 
         抄送人
 
@@ -447,7 +447,7 @@ class Workitems:
 
     @property
     def discover_version(self):
-        """Gets the discover_version of this Workitems.
+        r"""Gets the discover_version of this Workitems.
 
         发现问题的版本
 
@@ -458,7 +458,7 @@ class Workitems:
 
     @discover_version.setter
     def discover_version(self, discover_version):
-        """Sets the discover_version of this Workitems.
+        r"""Sets the discover_version of this Workitems.
 
         发现问题的版本
 
@@ -469,7 +469,7 @@ class Workitems:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Workitems.
+        r"""Gets the end_time of this Workitems.
 
         工作项结束时间
 
@@ -480,7 +480,7 @@ class Workitems:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Workitems.
+        r"""Sets the end_time of this Workitems.
 
         工作项结束时间
 
@@ -491,7 +491,7 @@ class Workitems:
 
     @property
     def done_ratio(self):
-        """Gets the done_ratio of this Workitems.
+        r"""Gets the done_ratio of this Workitems.
 
         工作项进度值
 
@@ -502,7 +502,7 @@ class Workitems:
 
     @done_ratio.setter
     def done_ratio(self, done_ratio):
-        """Sets the done_ratio of this Workitems.
+        r"""Sets the done_ratio of this Workitems.
 
         工作项进度值
 
@@ -513,7 +513,7 @@ class Workitems:
 
     @property
     def expected_work_hours(self):
-        """Gets the expected_work_hours of this Workitems.
+        r"""Gets the expected_work_hours of this Workitems.
 
         预计工时
 
@@ -524,7 +524,7 @@ class Workitems:
 
     @expected_work_hours.setter
     def expected_work_hours(self, expected_work_hours):
-        """Sets the expected_work_hours of this Workitems.
+        r"""Sets the expected_work_hours of this Workitems.
 
         预计工时
 
@@ -535,7 +535,7 @@ class Workitems:
 
     @property
     def order(self):
-        """Gets the order of this Workitems.
+        r"""Gets the order of this Workitems.
 
         顺序
 
@@ -546,7 +546,7 @@ class Workitems:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this Workitems.
+        r"""Sets the order of this Workitems.
 
         顺序
 
@@ -557,7 +557,7 @@ class Workitems:
 
     @property
     def parent_work_item_id(self):
-        """Gets the parent_work_item_id of this Workitems.
+        r"""Gets the parent_work_item_id of this Workitems.
 
         父工作项的id
 
@@ -568,7 +568,7 @@ class Workitems:
 
     @parent_work_item_id.setter
     def parent_work_item_id(self, parent_work_item_id):
-        """Sets the parent_work_item_id of this Workitems.
+        r"""Sets the parent_work_item_id of this Workitems.
 
         父工作项的id
 
@@ -579,7 +579,7 @@ class Workitems:
 
     @property
     def release_version(self):
-        """Gets the release_version of this Workitems.
+        r"""Gets the release_version of this Workitems.
 
         发布的版本
 
@@ -590,7 +590,7 @@ class Workitems:
 
     @release_version.setter
     def release_version(self, release_version):
-        """Sets the release_version of this Workitems.
+        r"""Sets the release_version of this Workitems.
 
         发布的版本
 
@@ -601,7 +601,7 @@ class Workitems:
 
     @property
     def story_point(self):
-        """Gets the story_point of this Workitems.
+        r"""Gets the story_point of this Workitems.
 
         故事点
 
@@ -612,7 +612,7 @@ class Workitems:
 
     @story_point.setter
     def story_point(self, story_point):
-        """Sets the story_point of this Workitems.
+        r"""Sets the story_point of this Workitems.
 
         故事点
 
@@ -623,7 +623,7 @@ class Workitems:
 
     @property
     def domain(self):
-        """Gets the domain of this Workitems.
+        r"""Gets the domain of this Workitems.
 
         :return: The domain of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsDomain`
@@ -632,7 +632,7 @@ class Workitems:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this Workitems.
+        r"""Sets the domain of this Workitems.
 
         :param domain: The domain of this Workitems.
         :type domain: :class:`huaweicloudsdkprojectman.v4.WorkitemsDomain`
@@ -641,7 +641,7 @@ class Workitems:
 
     @property
     def iteration(self):
-        """Gets the iteration of this Workitems.
+        r"""Gets the iteration of this Workitems.
 
         :return: The iteration of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsIteration`
@@ -650,7 +650,7 @@ class Workitems:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this Workitems.
+        r"""Sets the iteration of this Workitems.
 
         :param iteration: The iteration of this Workitems.
         :type iteration: :class:`huaweicloudsdkprojectman.v4.WorkitemsIteration`
@@ -659,7 +659,7 @@ class Workitems:
 
     @property
     def module(self):
-        """Gets the module of this Workitems.
+        r"""Gets the module of this Workitems.
 
         :return: The module of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsModule`
@@ -668,7 +668,7 @@ class Workitems:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this Workitems.
+        r"""Sets the module of this Workitems.
 
         :param module: The module of this Workitems.
         :type module: :class:`huaweicloudsdkprojectman.v4.WorkitemsModule`
@@ -677,7 +677,7 @@ class Workitems:
 
     @property
     def priority(self):
-        """Gets the priority of this Workitems.
+        r"""Gets the priority of this Workitems.
 
         工作项优先级
 
@@ -688,7 +688,7 @@ class Workitems:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this Workitems.
+        r"""Sets the priority of this Workitems.
 
         工作项优先级
 
@@ -699,7 +699,7 @@ class Workitems:
 
     @property
     def severity(self):
-        """Gets the severity of this Workitems.
+        r"""Gets the severity of this Workitems.
 
         严重的程度 \"提示\", \"一般\", \"严重\", \"致命\"
 
@@ -710,7 +710,7 @@ class Workitems:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this Workitems.
+        r"""Sets the severity of this Workitems.
 
         严重的程度 \"提示\", \"一般\", \"严重\", \"致命\"
 
@@ -721,7 +721,7 @@ class Workitems:
 
     @property
     def status(self):
-        """Gets the status of this Workitems.
+        r"""Gets the status of this Workitems.
 
         :return: The status of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsStatus`
@@ -730,7 +730,7 @@ class Workitems:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Workitems.
+        r"""Sets the status of this Workitems.
 
         :param status: The status of this Workitems.
         :type status: :class:`huaweicloudsdkprojectman.v4.WorkitemsStatus`
@@ -739,7 +739,7 @@ class Workitems:
 
     @property
     def subject(self):
-        """Gets the subject of this Workitems.
+        r"""Gets the subject of this Workitems.
 
         工作项标题
 
@@ -750,7 +750,7 @@ class Workitems:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this Workitems.
+        r"""Sets the subject of this Workitems.
 
         工作项标题
 
@@ -761,7 +761,7 @@ class Workitems:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this Workitems.
+        r"""Gets the updated_time of this Workitems.
 
         更新时间
 
@@ -772,7 +772,7 @@ class Workitems:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this Workitems.
+        r"""Sets the updated_time of this Workitems.
 
         更新时间
 
@@ -783,7 +783,7 @@ class Workitems:
 
     @property
     def sequence(self):
-        """Gets the sequence of this Workitems.
+        r"""Gets the sequence of this Workitems.
 
         工作项编号
 
@@ -794,7 +794,7 @@ class Workitems:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this Workitems.
+        r"""Sets the sequence of this Workitems.
 
         工作项编号
 
@@ -805,7 +805,7 @@ class Workitems:
 
     @property
     def important(self):
-        """Gets the important of this Workitems.
+        r"""Gets the important of this Workitems.
 
         重要程度 \"关键\", \"重要\", \"一般\", \"提示\"
 
@@ -816,7 +816,7 @@ class Workitems:
 
     @important.setter
     def important(self, important):
-        """Sets the important of this Workitems.
+        r"""Sets the important of this Workitems.
 
         重要程度 \"关键\", \"重要\", \"一般\", \"提示\"
 
@@ -827,7 +827,7 @@ class Workitems:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this Workitems.
+        r"""Gets the custom_fields of this Workitems.
 
         用户自定义字段
 
@@ -838,7 +838,7 @@ class Workitems:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this Workitems.
+        r"""Sets the custom_fields of this Workitems.
 
         用户自定义字段
 

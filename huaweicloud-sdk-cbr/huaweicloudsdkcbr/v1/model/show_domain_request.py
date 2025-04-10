@@ -25,7 +25,7 @@ class ShowDomainRequest:
     }
 
     def __init__(self, source_project_id=None):
-        """ShowDomainRequest
+        r"""ShowDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDomainRequest:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ShowDomainRequest.
+        r"""Gets the source_project_id of this ShowDomainRequest.
 
         源项目ID
 
@@ -53,7 +53,7 @@ class ShowDomainRequest:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ShowDomainRequest.
+        r"""Sets the source_project_id of this ShowDomainRequest.
 
         源项目ID
 

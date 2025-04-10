@@ -33,7 +33,7 @@ class ListTargetOfPolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None, target_type=None, target_name=None, limit=None, offset=None):
-        """ListTargetOfPolicyGroupRequest
+        r"""ListTargetOfPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ListTargetOfPolicyGroupRequest.
+        r"""Gets the policy_group_id of this ListTargetOfPolicyGroupRequest.
 
         策略组id。
 
@@ -81,7 +81,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ListTargetOfPolicyGroupRequest.
+        r"""Sets the policy_group_id of this ListTargetOfPolicyGroupRequest.
 
         策略组id。
 
@@ -92,7 +92,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ListTargetOfPolicyGroupRequest.
+        r"""Gets the target_type of this ListTargetOfPolicyGroupRequest.
 
         应用对象的类型。 - INSTANCE：表示桌面。 - USER：表示用户。 - OU：表示组织单元。 - CLIENTIP：终端IP地址。
 
@@ -103,7 +103,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ListTargetOfPolicyGroupRequest.
+        r"""Sets the target_type of this ListTargetOfPolicyGroupRequest.
 
         应用对象的类型。 - INSTANCE：表示桌面。 - USER：表示用户。 - OU：表示组织单元。 - CLIENTIP：终端IP地址。
 
@@ -114,7 +114,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @property
     def target_name(self):
-        """Gets the target_name of this ListTargetOfPolicyGroupRequest.
+        r"""Gets the target_name of this ListTargetOfPolicyGroupRequest.
 
         对象名称，支持模糊查询。
 
@@ -125,7 +125,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this ListTargetOfPolicyGroupRequest.
+        r"""Sets the target_name of this ListTargetOfPolicyGroupRequest.
 
         对象名称，支持模糊查询。
 
@@ -136,7 +136,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTargetOfPolicyGroupRequest.
+        r"""Gets the limit of this ListTargetOfPolicyGroupRequest.
 
         每页数量。范围0-1000
 
@@ -147,7 +147,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTargetOfPolicyGroupRequest.
+        r"""Sets the limit of this ListTargetOfPolicyGroupRequest.
 
         每页数量。范围0-1000
 
@@ -158,7 +158,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTargetOfPolicyGroupRequest.
+        r"""Gets the offset of this ListTargetOfPolicyGroupRequest.
 
         偏移量。
 
@@ -169,7 +169,7 @@ class ListTargetOfPolicyGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTargetOfPolicyGroupRequest.
+        r"""Sets the offset of this ListTargetOfPolicyGroupRequest.
 
         偏移量。
 

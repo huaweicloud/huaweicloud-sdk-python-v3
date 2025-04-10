@@ -31,7 +31,7 @@ class EventStreamingSink:
     }
 
     def __init__(self, sink_fg=None, sink_kafka=None, sink_obs=None, name=None):
-        """EventStreamingSink
+        r"""EventStreamingSink
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EventStreamingSink:
 
     @property
     def sink_fg(self):
-        """Gets the sink_fg of this EventStreamingSink.
+        r"""Gets the sink_fg of this EventStreamingSink.
 
         :return: The sink_fg of this EventStreamingSink.
         :rtype: :class:`huaweicloudsdkeg.v1.SinkFGParameters`
@@ -73,7 +73,7 @@ class EventStreamingSink:
 
     @sink_fg.setter
     def sink_fg(self, sink_fg):
-        """Sets the sink_fg of this EventStreamingSink.
+        r"""Sets the sink_fg of this EventStreamingSink.
 
         :param sink_fg: The sink_fg of this EventStreamingSink.
         :type sink_fg: :class:`huaweicloudsdkeg.v1.SinkFGParameters`
@@ -82,7 +82,7 @@ class EventStreamingSink:
 
     @property
     def sink_kafka(self):
-        """Gets the sink_kafka of this EventStreamingSink.
+        r"""Gets the sink_kafka of this EventStreamingSink.
 
         :return: The sink_kafka of this EventStreamingSink.
         :rtype: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
@@ -91,7 +91,7 @@ class EventStreamingSink:
 
     @sink_kafka.setter
     def sink_kafka(self, sink_kafka):
-        """Sets the sink_kafka of this EventStreamingSink.
+        r"""Sets the sink_kafka of this EventStreamingSink.
 
         :param sink_kafka: The sink_kafka of this EventStreamingSink.
         :type sink_kafka: :class:`huaweicloudsdkeg.v1.SinkKafkaParameters`
@@ -100,7 +100,7 @@ class EventStreamingSink:
 
     @property
     def sink_obs(self):
-        """Gets the sink_obs of this EventStreamingSink.
+        r"""Gets the sink_obs of this EventStreamingSink.
 
         :return: The sink_obs of this EventStreamingSink.
         :rtype: :class:`huaweicloudsdkeg.v1.SinkObsParameters`
@@ -109,7 +109,7 @@ class EventStreamingSink:
 
     @sink_obs.setter
     def sink_obs(self, sink_obs):
-        """Sets the sink_obs of this EventStreamingSink.
+        r"""Sets the sink_obs of this EventStreamingSink.
 
         :param sink_obs: The sink_obs of this EventStreamingSink.
         :type sink_obs: :class:`huaweicloudsdkeg.v1.SinkObsParameters`
@@ -118,7 +118,7 @@ class EventStreamingSink:
 
     @property
     def name(self):
-        """Gets the name of this EventStreamingSink.
+        r"""Gets the name of this EventStreamingSink.
 
         事件目标类型名称
 
@@ -129,7 +129,7 @@ class EventStreamingSink:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventStreamingSink.
+        r"""Sets the name of this EventStreamingSink.
 
         事件目标类型名称
 

@@ -37,7 +37,7 @@ class AddressSetListResponseDTODataRecords:
     }
 
     def __init__(self, set_id=None, ref_count=None, description=None, address_type=None, object_id=None, address_set_type=None, name=None):
-        """AddressSetListResponseDTODataRecords
+        r"""AddressSetListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def set_id(self):
-        """Gets the set_id of this AddressSetListResponseDTODataRecords.
+        r"""Gets the set_id of this AddressSetListResponseDTODataRecords.
 
         地址组id
 
@@ -96,7 +96,7 @@ class AddressSetListResponseDTODataRecords:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this AddressSetListResponseDTODataRecords.
+        r"""Sets the set_id of this AddressSetListResponseDTODataRecords.
 
         地址组id
 
@@ -107,7 +107,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def ref_count(self):
-        """Gets the ref_count of this AddressSetListResponseDTODataRecords.
+        r"""Gets the ref_count of this AddressSetListResponseDTODataRecords.
 
         地址组被规则引用次数
 
@@ -118,7 +118,7 @@ class AddressSetListResponseDTODataRecords:
 
     @ref_count.setter
     def ref_count(self, ref_count):
-        """Sets the ref_count of this AddressSetListResponseDTODataRecords.
+        r"""Sets the ref_count of this AddressSetListResponseDTODataRecords.
 
         地址组被规则引用次数
 
@@ -129,7 +129,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def description(self):
-        """Gets the description of this AddressSetListResponseDTODataRecords.
+        r"""Gets the description of this AddressSetListResponseDTODataRecords.
 
         描述信息
 
@@ -140,7 +140,7 @@ class AddressSetListResponseDTODataRecords:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddressSetListResponseDTODataRecords.
+        r"""Sets the description of this AddressSetListResponseDTODataRecords.
 
         描述信息
 
@@ -151,7 +151,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddressSetListResponseDTODataRecords.
+        r"""Gets the address_type of this AddressSetListResponseDTODataRecords.
 
         地址类型0 ipv4，1 ipv6
 
@@ -162,7 +162,7 @@ class AddressSetListResponseDTODataRecords:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddressSetListResponseDTODataRecords.
+        r"""Sets the address_type of this AddressSetListResponseDTODataRecords.
 
         地址类型0 ipv4，1 ipv6
 
@@ -173,7 +173,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AddressSetListResponseDTODataRecords.
+        r"""Gets the object_id of this AddressSetListResponseDTODataRecords.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -184,7 +184,7 @@ class AddressSetListResponseDTODataRecords:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AddressSetListResponseDTODataRecords.
+        r"""Sets the object_id of this AddressSetListResponseDTODataRecords.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -195,7 +195,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def address_set_type(self):
-        """Gets the address_set_type of this AddressSetListResponseDTODataRecords.
+        r"""Gets the address_set_type of this AddressSetListResponseDTODataRecords.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -206,7 +206,7 @@ class AddressSetListResponseDTODataRecords:
 
     @address_set_type.setter
     def address_set_type(self, address_set_type):
-        """Sets the address_set_type of this AddressSetListResponseDTODataRecords.
+        r"""Sets the address_set_type of this AddressSetListResponseDTODataRecords.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -217,7 +217,7 @@ class AddressSetListResponseDTODataRecords:
 
     @property
     def name(self):
-        """Gets the name of this AddressSetListResponseDTODataRecords.
+        r"""Gets the name of this AddressSetListResponseDTODataRecords.
 
         地址组名称
 
@@ -228,7 +228,7 @@ class AddressSetListResponseDTODataRecords:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddressSetListResponseDTODataRecords.
+        r"""Sets the name of this AddressSetListResponseDTODataRecords.
 
         地址组名称
 

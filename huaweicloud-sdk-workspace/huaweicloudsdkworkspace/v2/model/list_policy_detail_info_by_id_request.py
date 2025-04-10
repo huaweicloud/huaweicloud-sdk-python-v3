@@ -25,7 +25,7 @@ class ListPolicyDetailInfoByIdRequest:
     }
 
     def __init__(self, policy_group_id=None):
-        """ListPolicyDetailInfoByIdRequest
+        r"""ListPolicyDetailInfoByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPolicyDetailInfoByIdRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ListPolicyDetailInfoByIdRequest.
+        r"""Gets the policy_group_id of this ListPolicyDetailInfoByIdRequest.
 
         策略组id。
 
@@ -53,7 +53,7 @@ class ListPolicyDetailInfoByIdRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ListPolicyDetailInfoByIdRequest.
+        r"""Sets the policy_group_id of this ListPolicyDetailInfoByIdRequest.
 
         策略组id。
 

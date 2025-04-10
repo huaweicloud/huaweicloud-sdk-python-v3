@@ -32,7 +32,7 @@ class ListSchemasResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, dw_id=None, database=None, schemas=None):
-        """ListSchemasResponse
+        r"""ListSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSchemasResponse.
+        r"""Gets the total_count of this ListSchemasResponse.
 
         当前数据连接schema记录数
 
@@ -76,7 +76,7 @@ class ListSchemasResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSchemasResponse.
+        r"""Sets the total_count of this ListSchemasResponse.
 
         当前数据连接schema记录数
 
@@ -87,7 +87,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this ListSchemasResponse.
+        r"""Gets the dw_id of this ListSchemasResponse.
 
         数据连接id
 
@@ -98,7 +98,7 @@ class ListSchemasResponse(SdkResponse):
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this ListSchemasResponse.
+        r"""Sets the dw_id of this ListSchemasResponse.
 
         数据连接id
 
@@ -109,7 +109,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def database(self):
-        """Gets the database of this ListSchemasResponse.
+        r"""Gets the database of this ListSchemasResponse.
 
         数据库名称
 
@@ -120,7 +120,7 @@ class ListSchemasResponse(SdkResponse):
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ListSchemasResponse.
+        r"""Sets the database of this ListSchemasResponse.
 
         数据库名称
 
@@ -131,7 +131,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this ListSchemasResponse.
+        r"""Gets the schemas of this ListSchemasResponse.
 
         schema列表
 
@@ -142,7 +142,7 @@ class ListSchemasResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this ListSchemasResponse.
+        r"""Sets the schemas of this ListSchemasResponse.
 
         schema列表
 

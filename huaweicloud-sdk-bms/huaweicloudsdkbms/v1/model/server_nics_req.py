@@ -29,7 +29,7 @@ class ServerNicsReq:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, security_groups=None):
-        """ServerNicsReq
+        r"""ServerNicsReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ServerNicsReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ServerNicsReq.
+        r"""Gets the subnet_id of this ServerNicsReq.
 
         网卡的子网ID
 
@@ -67,7 +67,7 @@ class ServerNicsReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ServerNicsReq.
+        r"""Sets the subnet_id of this ServerNicsReq.
 
         网卡的子网ID
 
@@ -78,7 +78,7 @@ class ServerNicsReq:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ServerNicsReq.
+        r"""Gets the ip_address of this ServerNicsReq.
 
         
 
@@ -89,7 +89,7 @@ class ServerNicsReq:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ServerNicsReq.
+        r"""Sets the ip_address of this ServerNicsReq.
 
         
 
@@ -100,7 +100,7 @@ class ServerNicsReq:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ServerNicsReq.
+        r"""Gets the security_groups of this ServerNicsReq.
 
         
 
@@ -111,7 +111,7 @@ class ServerNicsReq:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ServerNicsReq.
+        r"""Sets the security_groups of this ServerNicsReq.
 
         
 

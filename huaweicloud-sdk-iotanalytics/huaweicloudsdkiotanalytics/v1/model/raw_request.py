@@ -33,7 +33,7 @@ class RawRequest:
     }
 
     def __init__(self, time_span=None, tags=None, property_filter=None, property_names=None, limit=None):
-        """RawRequest
+        r"""RawRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class RawRequest:
 
     @property
     def time_span(self):
-        """Gets the time_span of this RawRequest.
+        r"""Gets the time_span of this RawRequest.
 
         :return: The time_span of this RawRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
@@ -79,7 +79,7 @@ class RawRequest:
 
     @time_span.setter
     def time_span(self, time_span):
-        """Sets the time_span of this RawRequest.
+        r"""Sets the time_span of this RawRequest.
 
         :param time_span: The time_span of this RawRequest.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
@@ -88,7 +88,7 @@ class RawRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this RawRequest.
+        r"""Gets the tags of this RawRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -99,7 +99,7 @@ class RawRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this RawRequest.
+        r"""Sets the tags of this RawRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -110,7 +110,7 @@ class RawRequest:
 
     @property
     def property_filter(self):
-        """Gets the property_filter of this RawRequest.
+        r"""Gets the property_filter of this RawRequest.
 
         属性过滤器，最多5个
 
@@ -121,7 +121,7 @@ class RawRequest:
 
     @property_filter.setter
     def property_filter(self, property_filter):
-        """Sets the property_filter of this RawRequest.
+        r"""Sets the property_filter of this RawRequest.
 
         属性过滤器，最多5个
 
@@ -132,7 +132,7 @@ class RawRequest:
 
     @property
     def property_names(self):
-        """Gets the property_names of this RawRequest.
+        r"""Gets the property_names of this RawRequest.
 
         待查询的资产属性列表
 
@@ -143,7 +143,7 @@ class RawRequest:
 
     @property_names.setter
     def property_names(self, property_names):
-        """Sets the property_names of this RawRequest.
+        r"""Sets the property_names of this RawRequest.
 
         待查询的资产属性列表
 
@@ -154,7 +154,7 @@ class RawRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this RawRequest.
+        r"""Gets the limit of this RawRequest.
 
         返回值个数限制
 
@@ -165,7 +165,7 @@ class RawRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this RawRequest.
+        r"""Sets the limit of this RawRequest.
 
         返回值个数限制
 

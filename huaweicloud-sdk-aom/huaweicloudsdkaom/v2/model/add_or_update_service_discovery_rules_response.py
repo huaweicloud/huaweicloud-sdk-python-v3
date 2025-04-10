@@ -34,7 +34,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, response_status=None, id=None, results=None):
-        """AddOrUpdateServiceDiscoveryRulesResponse
+        r"""AddOrUpdateServiceDiscoveryRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Gets the error_code of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         响应码。
 
@@ -83,7 +83,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Sets the error_code of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         响应码。
 
@@ -94,7 +94,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Gets the error_message of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         响应信息描述。
 
@@ -105,7 +105,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Sets the error_message of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         响应信息描述。
 
@@ -116,7 +116,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def response_status(self):
-        """Gets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Gets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         响应状态码（不再使用）。
 
@@ -127,7 +127,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @response_status.setter
     def response_status(self, response_status):
-        """Sets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Sets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         响应状态码（不再使用）。
 
@@ -138,7 +138,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Gets the id of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         服务发现规则id列表，多AZ配置同步时使用。
 
@@ -149,7 +149,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Sets the id of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         服务发现规则id列表，多AZ配置同步时使用。
 
@@ -160,7 +160,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Gets the results of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         服务发现规则详细信息列表。
 
@@ -171,7 +171,7 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this AddOrUpdateServiceDiscoveryRulesResponse.
+        r"""Sets the results of this AddOrUpdateServiceDiscoveryRulesResponse.
 
         服务发现规则详细信息列表。
 

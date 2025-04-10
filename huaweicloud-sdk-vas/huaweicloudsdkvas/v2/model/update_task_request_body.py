@@ -35,7 +35,7 @@ class UpdateTaskRequestBody:
     }
 
     def __init__(self, name=None, description=None, timing=None, input=None, output=None, service_config=None):
-        """UpdateTaskRequestBody
+        r"""UpdateTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateTaskRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTaskRequestBody.
+        r"""Gets the name of this UpdateTaskRequestBody.
 
         作业的名称，必填。仅能包含汉字、字母、数字、中划线和下划线，长度介于1~100之间。
 
@@ -89,7 +89,7 @@ class UpdateTaskRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTaskRequestBody.
+        r"""Sets the name of this UpdateTaskRequestBody.
 
         作业的名称，必填。仅能包含汉字、字母、数字、中划线和下划线，长度介于1~100之间。
 
@@ -100,7 +100,7 @@ class UpdateTaskRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTaskRequestBody.
+        r"""Gets the description of this UpdateTaskRequestBody.
 
         作业的描述，选填。长度不超过500。
 
@@ -111,7 +111,7 @@ class UpdateTaskRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTaskRequestBody.
+        r"""Sets the description of this UpdateTaskRequestBody.
 
         作业的描述，选填。长度不超过500。
 
@@ -122,7 +122,7 @@ class UpdateTaskRequestBody:
 
     @property
     def timing(self):
-        """Gets the timing of this UpdateTaskRequestBody.
+        r"""Gets the timing of this UpdateTaskRequestBody.
 
         :return: The timing of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -131,7 +131,7 @@ class UpdateTaskRequestBody:
 
     @timing.setter
     def timing(self, timing):
-        """Sets the timing of this UpdateTaskRequestBody.
+        r"""Sets the timing of this UpdateTaskRequestBody.
 
         :param timing: The timing of this UpdateTaskRequestBody.
         :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -140,7 +140,7 @@ class UpdateTaskRequestBody:
 
     @property
     def input(self):
-        """Gets the input of this UpdateTaskRequestBody.
+        r"""Gets the input of this UpdateTaskRequestBody.
 
         :return: The input of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -149,7 +149,7 @@ class UpdateTaskRequestBody:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this UpdateTaskRequestBody.
+        r"""Sets the input of this UpdateTaskRequestBody.
 
         :param input: The input of this UpdateTaskRequestBody.
         :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -158,7 +158,7 @@ class UpdateTaskRequestBody:
 
     @property
     def output(self):
-        """Gets the output of this UpdateTaskRequestBody.
+        r"""Gets the output of this UpdateTaskRequestBody.
 
         :return: The output of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutput`
@@ -167,7 +167,7 @@ class UpdateTaskRequestBody:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this UpdateTaskRequestBody.
+        r"""Sets the output of this UpdateTaskRequestBody.
 
         :param output: The output of this UpdateTaskRequestBody.
         :type output: :class:`huaweicloudsdkvas.v2.TaskOutput`
@@ -176,7 +176,7 @@ class UpdateTaskRequestBody:
 
     @property
     def service_config(self):
-        """Gets the service_config of this UpdateTaskRequestBody.
+        r"""Gets the service_config of this UpdateTaskRequestBody.
 
         :return: The service_config of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
@@ -185,7 +185,7 @@ class UpdateTaskRequestBody:
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this UpdateTaskRequestBody.
+        r"""Sets the service_config of this UpdateTaskRequestBody.
 
         :param service_config: The service_config of this UpdateTaskRequestBody.
         :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`

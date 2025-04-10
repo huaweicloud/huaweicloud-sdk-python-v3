@@ -33,7 +33,7 @@ class RenameCommandResp:
     }
 
     def __init__(self, command=None, flushall=None, flushdb=None, hgetall=None, keys=None):
-        """RenameCommandResp
+        r"""RenameCommandResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RenameCommandResp:
 
     @property
     def command(self):
-        """Gets the command of this RenameCommandResp.
+        r"""Gets the command of this RenameCommandResp.
 
         命令command
 
@@ -82,7 +82,7 @@ class RenameCommandResp:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this RenameCommandResp.
+        r"""Sets the command of this RenameCommandResp.
 
         命令command
 
@@ -93,7 +93,7 @@ class RenameCommandResp:
 
     @property
     def flushall(self):
-        """Gets the flushall of this RenameCommandResp.
+        r"""Gets the flushall of this RenameCommandResp.
 
         命令flushall
 
@@ -104,7 +104,7 @@ class RenameCommandResp:
 
     @flushall.setter
     def flushall(self, flushall):
-        """Sets the flushall of this RenameCommandResp.
+        r"""Sets the flushall of this RenameCommandResp.
 
         命令flushall
 
@@ -115,7 +115,7 @@ class RenameCommandResp:
 
     @property
     def flushdb(self):
-        """Gets the flushdb of this RenameCommandResp.
+        r"""Gets the flushdb of this RenameCommandResp.
 
         命令flushdb
 
@@ -126,7 +126,7 @@ class RenameCommandResp:
 
     @flushdb.setter
     def flushdb(self, flushdb):
-        """Sets the flushdb of this RenameCommandResp.
+        r"""Sets the flushdb of this RenameCommandResp.
 
         命令flushdb
 
@@ -137,7 +137,7 @@ class RenameCommandResp:
 
     @property
     def hgetall(self):
-        """Gets the hgetall of this RenameCommandResp.
+        r"""Gets the hgetall of this RenameCommandResp.
 
         命令hgetall
 
@@ -148,7 +148,7 @@ class RenameCommandResp:
 
     @hgetall.setter
     def hgetall(self, hgetall):
-        """Sets the hgetall of this RenameCommandResp.
+        r"""Sets the hgetall of this RenameCommandResp.
 
         命令hgetall
 
@@ -159,7 +159,7 @@ class RenameCommandResp:
 
     @property
     def keys(self):
-        """Gets the keys of this RenameCommandResp.
+        r"""Gets the keys of this RenameCommandResp.
 
         命令keys
 
@@ -170,7 +170,7 @@ class RenameCommandResp:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this RenameCommandResp.
+        r"""Sets the keys of this RenameCommandResp.
 
         命令keys
 

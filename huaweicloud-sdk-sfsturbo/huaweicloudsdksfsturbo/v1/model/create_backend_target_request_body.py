@@ -27,7 +27,7 @@ class CreateBackendTargetRequestBody:
     }
 
     def __init__(self, file_system_path=None, obs=None):
-        """CreateBackendTargetRequestBody
+        r"""CreateBackendTargetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateBackendTargetRequestBody:
 
     @property
     def file_system_path(self):
-        """Gets the file_system_path of this CreateBackendTargetRequestBody.
+        r"""Gets the file_system_path of this CreateBackendTargetRequestBody.
 
         联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。  必须是文件系统根目录下不存在的目录名，长度不能超过63个字符，子目录名称不能是“.”或“..”。  不支持多层目录，不能包含字符'/'。 
 
@@ -59,7 +59,7 @@ class CreateBackendTargetRequestBody:
 
     @file_system_path.setter
     def file_system_path(self, file_system_path):
-        """Sets the file_system_path of this CreateBackendTargetRequestBody.
+        r"""Sets the file_system_path of this CreateBackendTargetRequestBody.
 
         联动目录名称，SFS Turbo会在文件系统根目录下以该名称创建一个子目录，该目录用于绑定后端存储。  必须是文件系统根目录下不存在的目录名，长度不能超过63个字符，子目录名称不能是“.”或“..”。  不支持多层目录，不能包含字符'/'。 
 
@@ -70,7 +70,7 @@ class CreateBackendTargetRequestBody:
 
     @property
     def obs(self):
-        """Gets the obs of this CreateBackendTargetRequestBody.
+        r"""Gets the obs of this CreateBackendTargetRequestBody.
 
         :return: The obs of this CreateBackendTargetRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -79,7 +79,7 @@ class CreateBackendTargetRequestBody:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this CreateBackendTargetRequestBody.
+        r"""Sets the obs of this CreateBackendTargetRequestBody.
 
         :param obs: The obs of this CreateBackendTargetRequestBody.
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`

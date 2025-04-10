@@ -27,7 +27,7 @@ class CancelFactoryPackagesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CancelFactoryPackagesRequest
+        r"""CancelFactoryPackagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CancelFactoryPackagesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CancelFactoryPackagesRequest.
+        r"""Gets the workspace of this CancelFactoryPackagesRequest.
 
         工作空间ID
 
@@ -61,7 +61,7 @@ class CancelFactoryPackagesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CancelFactoryPackagesRequest.
+        r"""Sets the workspace of this CancelFactoryPackagesRequest.
 
         工作空间ID
 
@@ -72,7 +72,7 @@ class CancelFactoryPackagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelFactoryPackagesRequest.
+        r"""Gets the body of this CancelFactoryPackagesRequest.
 
         :return: The body of this CancelFactoryPackagesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CancelFactoryPackagesRequestBody`
@@ -81,7 +81,7 @@ class CancelFactoryPackagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelFactoryPackagesRequest.
+        r"""Sets the body of this CancelFactoryPackagesRequest.
 
         :param body: The body of this CancelFactoryPackagesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CancelFactoryPackagesRequestBody`

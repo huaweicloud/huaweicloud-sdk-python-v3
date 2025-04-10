@@ -27,7 +27,7 @@ class CreateOrderReq:
     }
 
     def __init__(self, resources=None, type=None):
-        """CreateOrderReq
+        r"""CreateOrderReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateOrderReq:
 
     @property
     def resources(self):
-        """Gets the resources of this CreateOrderReq.
+        r"""Gets the resources of this CreateOrderReq.
 
         包周期资源对象。
 
@@ -59,7 +59,7 @@ class CreateOrderReq:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this CreateOrderReq.
+        r"""Sets the resources of this CreateOrderReq.
 
         包周期资源对象。
 
@@ -70,7 +70,7 @@ class CreateOrderReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateOrderReq.
+        r"""Gets the type of this CreateOrderReq.
 
         createApps【添加云应用】。
 
@@ -81,7 +81,7 @@ class CreateOrderReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateOrderReq.
+        r"""Sets the type of this CreateOrderReq.
 
         createApps【添加云应用】。
 

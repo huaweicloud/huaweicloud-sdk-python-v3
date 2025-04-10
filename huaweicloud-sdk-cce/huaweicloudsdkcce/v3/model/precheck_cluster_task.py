@@ -33,7 +33,7 @@ class PrecheckClusterTask:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """PrecheckClusterTask
+        r"""PrecheckClusterTask
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PrecheckClusterTask:
 
     @property
     def api_version(self):
-        """Gets the api_version of this PrecheckClusterTask.
+        r"""Gets the api_version of this PrecheckClusterTask.
 
         api版本，默认为v3
 
@@ -82,7 +82,7 @@ class PrecheckClusterTask:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this PrecheckClusterTask.
+        r"""Sets the api_version of this PrecheckClusterTask.
 
         api版本，默认为v3
 
@@ -93,7 +93,7 @@ class PrecheckClusterTask:
 
     @property
     def kind(self):
-        """Gets the kind of this PrecheckClusterTask.
+        r"""Gets the kind of this PrecheckClusterTask.
 
         资源类型，默认为PreCheckTask
 
@@ -104,7 +104,7 @@ class PrecheckClusterTask:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this PrecheckClusterTask.
+        r"""Sets the kind of this PrecheckClusterTask.
 
         资源类型，默认为PreCheckTask
 
@@ -115,7 +115,7 @@ class PrecheckClusterTask:
 
     @property
     def metadata(self):
-        """Gets the metadata of this PrecheckClusterTask.
+        r"""Gets the metadata of this PrecheckClusterTask.
 
         :return: The metadata of this PrecheckClusterTask.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckTaskMetadata`
@@ -124,7 +124,7 @@ class PrecheckClusterTask:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this PrecheckClusterTask.
+        r"""Sets the metadata of this PrecheckClusterTask.
 
         :param metadata: The metadata of this PrecheckClusterTask.
         :type metadata: :class:`huaweicloudsdkcce.v3.PrecheckTaskMetadata`
@@ -133,7 +133,7 @@ class PrecheckClusterTask:
 
     @property
     def spec(self):
-        """Gets the spec of this PrecheckClusterTask.
+        r"""Gets the spec of this PrecheckClusterTask.
 
         :return: The spec of this PrecheckClusterTask.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -142,7 +142,7 @@ class PrecheckClusterTask:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this PrecheckClusterTask.
+        r"""Sets the spec of this PrecheckClusterTask.
 
         :param spec: The spec of this PrecheckClusterTask.
         :type spec: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -151,7 +151,7 @@ class PrecheckClusterTask:
 
     @property
     def status(self):
-        """Gets the status of this PrecheckClusterTask.
+        r"""Gets the status of this PrecheckClusterTask.
 
         :return: The status of this PrecheckClusterTask.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckStatus`
@@ -160,7 +160,7 @@ class PrecheckClusterTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PrecheckClusterTask.
+        r"""Sets the status of this PrecheckClusterTask.
 
         :param status: The status of this PrecheckClusterTask.
         :type status: :class:`huaweicloudsdkcce.v3.PrecheckStatus`

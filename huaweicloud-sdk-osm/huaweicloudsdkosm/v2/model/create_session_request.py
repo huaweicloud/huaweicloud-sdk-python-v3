@@ -29,7 +29,7 @@ class CreateSessionRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None):
-        """CreateSessionRequest
+        r"""CreateSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSessionRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this CreateSessionRequest.
+        r"""Gets the x_service_key of this CreateSessionRequest.
 
         调用智能客服服务标志。
 
@@ -67,7 +67,7 @@ class CreateSessionRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this CreateSessionRequest.
+        r"""Sets the x_service_key of this CreateSessionRequest.
 
         调用智能客服服务标志。
 
@@ -78,7 +78,7 @@ class CreateSessionRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CreateSessionRequest.
+        r"""Gets the x_site of this CreateSessionRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -89,7 +89,7 @@ class CreateSessionRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CreateSessionRequest.
+        r"""Sets the x_site of this CreateSessionRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -100,7 +100,7 @@ class CreateSessionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateSessionRequest.
+        r"""Gets the x_language of this CreateSessionRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -111,7 +111,7 @@ class CreateSessionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateSessionRequest.
+        r"""Sets the x_language of this CreateSessionRequest.
 
         区域语言简写，en-us  zh-cn
 

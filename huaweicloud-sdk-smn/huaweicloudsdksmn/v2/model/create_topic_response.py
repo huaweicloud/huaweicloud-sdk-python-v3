@@ -28,7 +28,7 @@ class CreateTopicResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, topic_urn=None):
-        """CreateTopicResponse
+        r"""CreateTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateTopicResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateTopicResponse.
+        r"""Gets the request_id of this CreateTopicResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class CreateTopicResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateTopicResponse.
+        r"""Sets the request_id of this CreateTopicResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class CreateTopicResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateTopicResponse.
+        r"""Gets the topic_urn of this CreateTopicResponse.
 
         Topic的唯一的资源标识，可通过查询主题列表获取该标识。
 
@@ -84,7 +84,7 @@ class CreateTopicResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateTopicResponse.
+        r"""Sets the topic_urn of this CreateTopicResponse.
 
         Topic的唯一的资源标识，可通过查询主题列表获取该标识。
 

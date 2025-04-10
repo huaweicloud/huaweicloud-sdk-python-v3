@@ -34,7 +34,7 @@ class CodeArtsCheckClient(Client):
         return client_builder
 
     def check_parameters(self, request):
-        """查询任务规则集的检查参数
+        r"""查询任务规则集的检查参数
 
         查询任务规则集的检查参数
         
@@ -105,7 +105,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def check_record(self, request):
-        """历史扫描结果查询
+        r"""历史扫描结果查询
 
         提供每次扫描的问题数量统计
         
@@ -180,7 +180,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def check_ruleset_parameters(self, request):
-        """查询任务规则集的检查参数
+        r"""查询任务规则集的检查参数
 
         查询任务规则集的检查参数
         
@@ -255,7 +255,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def create_ruleset(self, request):
-        """创建自定义规则集
+        r"""创建自定义规则集
 
         可根据需求灵活的组合规则。
         
@@ -320,7 +320,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def create_task(self, request):
-        """新建检查任务
+        r"""新建检查任务
 
         新建检查任务但是不执行。
         
@@ -387,7 +387,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def delete_ruleset(self, request):
-        """删除自定义规则集
+        r"""删除自定义规则集
 
         删除自定义规则集，正在使用中的或默认规则集不能删除
         
@@ -454,7 +454,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def delete_task(self, request):
-        """删除检查任务
+        r"""删除检查任务
 
         删除检查任务，执行中的任务删除无法再查看
         
@@ -519,7 +519,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def list_rules(self, request):
-        """获取规则列表接口
+        r"""获取规则列表接口
 
         根据语言、问题级别等条件查询规则列表。
         
@@ -590,7 +590,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def list_rulesets(self, request):
-        """查询规则集列表
+        r"""查询规则集列表
 
         根据项目ID、语言等条件查询规则集列表。
         
@@ -661,7 +661,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def list_task_parameter(self, request):
-        """任务配置检查参数
+        r"""任务配置检查参数
 
         任务配置检查参数
         
@@ -730,7 +730,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def list_task_ruleset(self, request):
-        """查询任务的已选规则集列表
+        r"""查询任务的已选规则集列表
 
         查询任务的已选规则集列表。
         
@@ -797,7 +797,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def list_template_rules(self, request):
-        """查看规则集的规则列表
+        r"""查看规则集的规则列表
 
         根据项目ID、规则集ID等条件查询规则列表。
         
@@ -874,7 +874,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def run_task(self, request):
-        """执行检查任务
+        r"""执行检查任务
 
         执行检查任务。
         
@@ -941,7 +941,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def set_defaul_template(self, request):
-        """设置每个项目对应语言的默认规则集配置
+        r"""设置每个项目对应语言的默认规则集配置
 
         设置每个项目对应语言的默认规则集配置。
         
@@ -1010,7 +1010,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_progress_detail(self, request):
-        """查询任务执行状态
+        r"""查询任务执行状态
 
         根据任务ID查询任务执行状态。任务状态：0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止。只有正在检查中才有进度的详细信息。
         
@@ -1075,7 +1075,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_cmetrics(self, request):
-        """查询cmertrics缺陷概要
+        r"""查询cmertrics缺陷概要
 
         根据检查任务ID查询cmertrics缺陷概要。
         
@@ -1142,7 +1142,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_defects(self, request):
-        """查询缺陷详情
+        r"""查询缺陷详情
 
         根据检查任务ID分页查询缺陷结果详情。
         
@@ -1215,7 +1215,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_defects_statistic(self, request):
-        """查询缺陷详情的统计
+        r"""查询缺陷详情的统计
 
         根据检查任务ID查询缺陷详情的统计
         
@@ -1280,7 +1280,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_detail(self, request):
-        """查询缺陷概要
+        r"""查询缺陷概要
 
         根据检查任务ID查询缺陷结果的概要。包括问题概述、问题状态、圈复杂度、代码重复率等。
         
@@ -1345,7 +1345,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_list_by_project_id(self, request):
-        """查询任务列表
+        r"""查询任务列表
 
         根据DEVCLOUD_PROJECT_UUID查询该项目下的任务列表。
         
@@ -1414,7 +1414,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_path_tree(self, request):
-        """获取任务的目录树
+        r"""获取任务的目录树
 
         获取任务的目录树
         
@@ -1487,7 +1487,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_task_settings(self, request):
-        """查询任务的高级选项
+        r"""查询任务的高级选项
 
         查询任务的高级选项
         
@@ -1558,7 +1558,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_tasklog(self, request):
-        """查询任务检查失败日志
+        r"""查询任务检查失败日志
 
         查询任务检查失败日志，不传execute_id则查询最近一次的检查日志
         
@@ -1627,7 +1627,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def show_tasks_rulesets(self, request):
-        """查询任务的已选规则集列表
+        r"""查询任务的已选规则集列表
 
         查询任务的已选规则集列表。
         
@@ -1698,7 +1698,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def stop_task_by_id(self, request):
-        """终止检查任务
+        r"""终止检查任务
 
         根据任务ID终止检查任务。
         
@@ -1763,7 +1763,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def update_defect_status(self, request):
-        """修改缺陷状态
+        r"""修改缺陷状态
 
         修改检查出的缺陷的状态为已解决、已忽略
         
@@ -1830,7 +1830,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def update_ignore_path(self, request):
-        """任务配置屏蔽目录
+        r"""任务配置屏蔽目录
 
         任务配置屏蔽目录
         
@@ -1899,7 +1899,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def update_task_ruleset(self, request):
-        """修改任务规则集
+        r"""修改任务规则集
 
         修改任务规则集。
         
@@ -1966,7 +1966,7 @@ class CodeArtsCheckClient(Client):
         return http_info
 
     def update_task_settings(self, request):
-        """任务配置高级选项
+        r"""任务配置高级选项
 
         任务配置高级选项，如自定义镜像
         

@@ -24,7 +24,7 @@ class DeleteBindingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteBindingResponse
+        r"""DeleteBindingResponse
 
         The model defined in huaweicloud sdk
 

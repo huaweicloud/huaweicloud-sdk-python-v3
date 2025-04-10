@@ -31,7 +31,7 @@ class TagResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """TagResource
+        r"""TagResource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TagResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TagResource.
+        r"""Gets the resource_id of this TagResource.
 
         资源ID。
 
@@ -71,7 +71,7 @@ class TagResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TagResource.
+        r"""Sets the resource_id of this TagResource.
 
         资源ID。
 
@@ -82,7 +82,7 @@ class TagResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this TagResource.
+        r"""Gets the resource_detail of this TagResource.
 
         :return: The resource_detail of this TagResource.
         :rtype: :class:`huaweicloudsdksmn.v2.ResourceDetail`
@@ -91,7 +91,7 @@ class TagResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this TagResource.
+        r"""Sets the resource_detail of this TagResource.
 
         :param resource_detail: The resource_detail of this TagResource.
         :type resource_detail: :class:`huaweicloudsdksmn.v2.ResourceDetail`
@@ -100,7 +100,7 @@ class TagResource:
 
     @property
     def tags(self):
-        """Gets the tags of this TagResource.
+        r"""Gets the tags of this TagResource.
 
         标签列表。
 
@@ -111,7 +111,7 @@ class TagResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagResource.
+        r"""Sets the tags of this TagResource.
 
         标签列表。
 
@@ -122,7 +122,7 @@ class TagResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this TagResource.
+        r"""Gets the resource_name of this TagResource.
 
         资源名称。
 
@@ -133,7 +133,7 @@ class TagResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this TagResource.
+        r"""Sets the resource_name of this TagResource.
 
         资源名称。
 

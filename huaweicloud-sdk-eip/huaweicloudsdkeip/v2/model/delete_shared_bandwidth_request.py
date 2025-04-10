@@ -25,7 +25,7 @@ class DeleteSharedBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None):
-        """DeleteSharedBandwidthRequest
+        r"""DeleteSharedBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSharedBandwidthRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this DeleteSharedBandwidthRequest.
+        r"""Gets the bandwidth_id of this DeleteSharedBandwidthRequest.
 
         带宽唯一标识  约束： 当前仅支持删除共享带宽
 
@@ -53,7 +53,7 @@ class DeleteSharedBandwidthRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this DeleteSharedBandwidthRequest.
+        r"""Sets the bandwidth_id of this DeleteSharedBandwidthRequest.
 
         带宽唯一标识  约束： 当前仅支持删除共享带宽
 

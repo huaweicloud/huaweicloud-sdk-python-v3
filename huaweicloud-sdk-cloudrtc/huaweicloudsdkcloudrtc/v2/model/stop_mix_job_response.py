@@ -26,7 +26,7 @@ class StopMixJobResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """StopMixJobResponse
+        r"""StopMixJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopMixJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StopMixJobResponse.
+        r"""Gets the x_request_id of this StopMixJobResponse.
 
         :return: The x_request_id of this StopMixJobResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopMixJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StopMixJobResponse.
+        r"""Sets the x_request_id of this StopMixJobResponse.
 
         :param x_request_id: The x_request_id of this StopMixJobResponse.
         :type x_request_id: str

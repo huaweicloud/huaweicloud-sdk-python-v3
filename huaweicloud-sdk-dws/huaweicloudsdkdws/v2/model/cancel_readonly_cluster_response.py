@@ -24,7 +24,7 @@ class CancelReadonlyClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelReadonlyClusterResponse
+        r"""CancelReadonlyClusterResponse
 
         The model defined in huaweicloud sdk
 

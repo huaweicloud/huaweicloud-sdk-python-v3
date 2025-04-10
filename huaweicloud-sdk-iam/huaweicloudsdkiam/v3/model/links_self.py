@@ -25,7 +25,7 @@ class LinksSelf:
     }
 
     def __init__(self, _self=None):
-        """LinksSelf
+        r"""LinksSelf
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LinksSelf:
 
     @property
     def _self(self):
-        """Gets the _self of this LinksSelf.
+        r"""Gets the _self of this LinksSelf.
 
         资源链接地址。
 
@@ -53,7 +53,7 @@ class LinksSelf:
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this LinksSelf.
+        r"""Sets the _self of this LinksSelf.
 
         资源链接地址。
 

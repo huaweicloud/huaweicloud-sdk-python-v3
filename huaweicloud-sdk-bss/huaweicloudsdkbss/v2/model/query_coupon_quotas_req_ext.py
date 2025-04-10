@@ -47,7 +47,7 @@ class QueryCouponQuotasReqExt:
     }
 
     def __init__(self, quota_ids=None, quota_status_list=None, quota_type=None, create_time_begin=None, create_time_end=None, effective_time_begin=None, effective_time_end=None, expire_time_begin=None, expire_time_end=None, offset=None, limit=None, indirect_partner_id=None):
-        """QueryCouponQuotasReqExt
+        r"""QueryCouponQuotasReqExt
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def quota_ids(self):
-        """Gets the quota_ids of this QueryCouponQuotasReqExt.
+        r"""Gets the quota_ids of this QueryCouponQuotasReqExt.
 
         优惠券额度ID列表。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -131,7 +131,7 @@ class QueryCouponQuotasReqExt:
 
     @quota_ids.setter
     def quota_ids(self, quota_ids):
-        """Sets the quota_ids of this QueryCouponQuotasReqExt.
+        r"""Sets the quota_ids of this QueryCouponQuotasReqExt.
 
         优惠券额度ID列表。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -142,7 +142,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def quota_status_list(self):
-        """Gets the quota_status_list of this QueryCouponQuotasReqExt.
+        r"""Gets the quota_status_list of this QueryCouponQuotasReqExt.
 
         优惠券额度状态列表。 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -153,7 +153,7 @@ class QueryCouponQuotasReqExt:
 
     @quota_status_list.setter
     def quota_status_list(self, quota_status_list):
-        """Sets the quota_status_list of this QueryCouponQuotasReqExt.
+        r"""Sets the quota_status_list of this QueryCouponQuotasReqExt.
 
         优惠券额度状态列表。 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -164,7 +164,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this QueryCouponQuotasReqExt.
+        r"""Gets the quota_type of this QueryCouponQuotasReqExt.
 
         优惠券额度的类型。 0：代金券额度1：现金券额度 此参数不携带或携带值为null时，默认值为“0：代金券额度”。
 
@@ -175,7 +175,7 @@ class QueryCouponQuotasReqExt:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this QueryCouponQuotasReqExt.
+        r"""Sets the quota_type of this QueryCouponQuotasReqExt.
 
         优惠券额度的类型。 0：代金券额度1：现金券额度 此参数不携带或携带值为null时，默认值为“0：代金券额度”。
 
@@ -186,7 +186,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def create_time_begin(self):
-        """Gets the create_time_begin of this QueryCouponQuotasReqExt.
+        r"""Gets the create_time_begin of this QueryCouponQuotasReqExt.
 
         创建时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间大于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -197,7 +197,7 @@ class QueryCouponQuotasReqExt:
 
     @create_time_begin.setter
     def create_time_begin(self, create_time_begin):
-        """Sets the create_time_begin of this QueryCouponQuotasReqExt.
+        r"""Sets the create_time_begin of this QueryCouponQuotasReqExt.
 
         创建时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间大于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -208,7 +208,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def create_time_end(self):
-        """Gets the create_time_end of this QueryCouponQuotasReqExt.
+        r"""Gets the create_time_end of this QueryCouponQuotasReqExt.
 
         创建时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间小于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -219,7 +219,7 @@ class QueryCouponQuotasReqExt:
 
     @create_time_end.setter
     def create_time_end(self, create_time_end):
-        """Sets the create_time_end of this QueryCouponQuotasReqExt.
+        r"""Sets the create_time_end of this QueryCouponQuotasReqExt.
 
         创建时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间小于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -230,7 +230,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def effective_time_begin(self):
-        """Gets the effective_time_begin of this QueryCouponQuotasReqExt.
+        r"""Gets the effective_time_begin of this QueryCouponQuotasReqExt.
 
         生效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间大于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -241,7 +241,7 @@ class QueryCouponQuotasReqExt:
 
     @effective_time_begin.setter
     def effective_time_begin(self, effective_time_begin):
-        """Sets the effective_time_begin of this QueryCouponQuotasReqExt.
+        r"""Sets the effective_time_begin of this QueryCouponQuotasReqExt.
 
         生效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间大于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -252,7 +252,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def effective_time_end(self):
-        """Gets the effective_time_end of this QueryCouponQuotasReqExt.
+        r"""Gets the effective_time_end of this QueryCouponQuotasReqExt.
 
         生效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间小于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -263,7 +263,7 @@ class QueryCouponQuotasReqExt:
 
     @effective_time_end.setter
     def effective_time_end(self, effective_time_end):
-        """Sets the effective_time_end of this QueryCouponQuotasReqExt.
+        r"""Sets the effective_time_end of this QueryCouponQuotasReqExt.
 
         生效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间小于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -274,7 +274,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def expire_time_begin(self):
-        """Gets the expire_time_begin of this QueryCouponQuotasReqExt.
+        r"""Gets the expire_time_begin of this QueryCouponQuotasReqExt.
 
         失效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间大于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -285,7 +285,7 @@ class QueryCouponQuotasReqExt:
 
     @expire_time_begin.setter
     def expire_time_begin(self, expire_time_begin):
-        """Sets the expire_time_begin of this QueryCouponQuotasReqExt.
+        r"""Sets the expire_time_begin of this QueryCouponQuotasReqExt.
 
         失效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间大于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -296,7 +296,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def expire_time_end(self):
-        """Gets the expire_time_end of this QueryCouponQuotasReqExt.
+        r"""Gets the expire_time_end of this QueryCouponQuotasReqExt.
 
         失效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间小于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -307,7 +307,7 @@ class QueryCouponQuotasReqExt:
 
     @expire_time_end.setter
     def expire_time_end(self, expire_time_end):
-        """Sets the expire_time_end of this QueryCouponQuotasReqExt.
+        r"""Sets the expire_time_end of this QueryCouponQuotasReqExt.
 
         失效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间小于这个时间的记录。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -318,7 +318,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryCouponQuotasReqExt.
+        r"""Gets the offset of this QueryCouponQuotasReqExt.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -329,7 +329,7 @@ class QueryCouponQuotasReqExt:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryCouponQuotasReqExt.
+        r"""Sets the offset of this QueryCouponQuotasReqExt.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -340,7 +340,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryCouponQuotasReqExt.
+        r"""Gets the limit of this QueryCouponQuotasReqExt.
 
         每次查询记录数。默认值为10。
 
@@ -351,7 +351,7 @@ class QueryCouponQuotasReqExt:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryCouponQuotasReqExt.
+        r"""Sets the limit of this QueryCouponQuotasReqExt.
 
         每次查询记录数。默认值为10。
 
@@ -362,7 +362,7 @@ class QueryCouponQuotasReqExt:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryCouponQuotasReqExt.
+        r"""Gets the indirect_partner_id of this QueryCouponQuotasReqExt.
 
         云经销商（二级经销商）ID。 华为云总经销商（一级经销商）查询云经销商的优惠券额度时，需要携带该参数；否则只能查询自己的优惠券额度。
 
@@ -373,7 +373,7 @@ class QueryCouponQuotasReqExt:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryCouponQuotasReqExt.
+        r"""Sets the indirect_partner_id of this QueryCouponQuotasReqExt.
 
         云经销商（二级经销商）ID。 华为云总经销商（一级经销商）查询云经销商的优惠券额度时，需要携带该参数；否则只能查询自己的优惠券额度。
 

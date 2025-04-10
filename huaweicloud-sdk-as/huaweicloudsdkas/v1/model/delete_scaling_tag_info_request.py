@@ -29,7 +29,7 @@ class DeleteScalingTagInfoRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """DeleteScalingTagInfoRequest
+        r"""DeleteScalingTagInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteScalingTagInfoRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteScalingTagInfoRequest.
+        r"""Gets the resource_type of this DeleteScalingTagInfoRequest.
 
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
@@ -66,7 +66,7 @@ class DeleteScalingTagInfoRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteScalingTagInfoRequest.
+        r"""Sets the resource_type of this DeleteScalingTagInfoRequest.
 
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
@@ -77,7 +77,7 @@ class DeleteScalingTagInfoRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteScalingTagInfoRequest.
+        r"""Gets the resource_id of this DeleteScalingTagInfoRequest.
 
         资源ID。
 
@@ -88,7 +88,7 @@ class DeleteScalingTagInfoRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteScalingTagInfoRequest.
+        r"""Sets the resource_id of this DeleteScalingTagInfoRequest.
 
         资源ID。
 
@@ -99,7 +99,7 @@ class DeleteScalingTagInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteScalingTagInfoRequest.
+        r"""Gets the body of this DeleteScalingTagInfoRequest.
 
         :return: The body of this DeleteScalingTagInfoRequest.
         :rtype: :class:`huaweicloudsdkas.v1.DeleteTagsOption`
@@ -108,7 +108,7 @@ class DeleteScalingTagInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteScalingTagInfoRequest.
+        r"""Sets the body of this DeleteScalingTagInfoRequest.
 
         :param body: The body of this DeleteScalingTagInfoRequest.
         :type body: :class:`huaweicloudsdkas.v1.DeleteTagsOption`

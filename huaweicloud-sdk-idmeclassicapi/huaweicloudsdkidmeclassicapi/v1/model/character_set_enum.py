@@ -29,7 +29,7 @@ class CharacterSetEnum:
     }
 
     def __init__(self, cn_name=None, code=None, en_name=None):
-        """CharacterSetEnum
+        r"""CharacterSetEnum
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CharacterSetEnum:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this CharacterSetEnum.
+        r"""Gets the cn_name of this CharacterSetEnum.
 
         **参数解释：**  中文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -68,7 +68,7 @@ class CharacterSetEnum:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this CharacterSetEnum.
+        r"""Sets the cn_name of this CharacterSetEnum.
 
         **参数解释：**  中文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -79,7 +79,7 @@ class CharacterSetEnum:
 
     @property
     def code(self):
-        """Gets the code of this CharacterSetEnum.
+        r"""Gets the code of this CharacterSetEnum.
 
         **参数解释：**  编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -90,7 +90,7 @@ class CharacterSetEnum:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CharacterSetEnum.
+        r"""Sets the code of this CharacterSetEnum.
 
         **参数解释：**  编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -101,7 +101,7 @@ class CharacterSetEnum:
 
     @property
     def en_name(self):
-        """Gets the en_name of this CharacterSetEnum.
+        r"""Gets the en_name of this CharacterSetEnum.
 
         **参数解释：**  英文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -112,7 +112,7 @@ class CharacterSetEnum:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this CharacterSetEnum.
+        r"""Sets the en_name of this CharacterSetEnum.
 
         **参数解释：**  英文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

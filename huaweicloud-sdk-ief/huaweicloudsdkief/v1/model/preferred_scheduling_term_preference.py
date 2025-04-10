@@ -25,7 +25,7 @@ class PreferredSchedulingTermPreference:
     }
 
     def __init__(self, match_expressions=None):
-        """PreferredSchedulingTermPreference
+        r"""PreferredSchedulingTermPreference
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PreferredSchedulingTermPreference:
 
     @property
     def match_expressions(self):
-        """Gets the match_expressions of this PreferredSchedulingTermPreference.
+        r"""Gets the match_expressions of this PreferredSchedulingTermPreference.
 
         匹配规则表达式
 
@@ -54,7 +54,7 @@ class PreferredSchedulingTermPreference:
 
     @match_expressions.setter
     def match_expressions(self, match_expressions):
-        """Sets the match_expressions of this PreferredSchedulingTermPreference.
+        r"""Sets the match_expressions of this PreferredSchedulingTermPreference.
 
         匹配规则表达式
 

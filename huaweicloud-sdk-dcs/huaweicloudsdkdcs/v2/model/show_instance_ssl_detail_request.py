@@ -25,7 +25,7 @@ class ShowInstanceSslDetailRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowInstanceSslDetailRequest
+        r"""ShowInstanceSslDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceSslDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceSslDetailRequest.
+        r"""Gets the instance_id of this ShowInstanceSslDetailRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowInstanceSslDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceSslDetailRequest.
+        r"""Sets the instance_id of this ShowInstanceSslDetailRequest.
 
         实例ID。
 

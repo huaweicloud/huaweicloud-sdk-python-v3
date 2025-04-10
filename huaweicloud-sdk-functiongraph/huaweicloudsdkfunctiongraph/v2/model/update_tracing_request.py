@@ -27,7 +27,7 @@ class UpdateTracingRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateTracingRequest
+        r"""UpdateTracingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTracingRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateTracingRequest.
+        r"""Gets the function_urn of this UpdateTracingRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class UpdateTracingRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateTracingRequest.
+        r"""Sets the function_urn of this UpdateTracingRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class UpdateTracingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTracingRequest.
+        r"""Gets the body of this UpdateTracingRequest.
 
         :return: The body of this UpdateTracingRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequestBody`
@@ -80,7 +80,7 @@ class UpdateTracingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTracingRequest.
+        r"""Sets the body of this UpdateTracingRequest.
 
         :param body: The body of this UpdateTracingRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequestBody`

@@ -30,7 +30,7 @@ class ListRuleActionsResponse(SdkResponse):
     }
 
     def __init__(self, actions=None, count=None, marker=None):
-        """ListRuleActionsResponse
+        r"""ListRuleActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRuleActionsResponse(SdkResponse):
 
     @property
     def actions(self):
-        """Gets the actions of this ListRuleActionsResponse.
+        r"""Gets the actions of this ListRuleActionsResponse.
 
         规则动作信息列表。
 
@@ -69,7 +69,7 @@ class ListRuleActionsResponse(SdkResponse):
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ListRuleActionsResponse.
+        r"""Sets the actions of this ListRuleActionsResponse.
 
         规则动作信息列表。
 
@@ -80,7 +80,7 @@ class ListRuleActionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRuleActionsResponse.
+        r"""Gets the count of this ListRuleActionsResponse.
 
         满足查询条件的记录总数。
 
@@ -91,7 +91,7 @@ class ListRuleActionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRuleActionsResponse.
+        r"""Sets the count of this ListRuleActionsResponse.
 
         满足查询条件的记录总数。
 
@@ -102,7 +102,7 @@ class ListRuleActionsResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListRuleActionsResponse.
+        r"""Gets the marker of this ListRuleActionsResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -113,7 +113,7 @@ class ListRuleActionsResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRuleActionsResponse.
+        r"""Sets the marker of this ListRuleActionsResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 

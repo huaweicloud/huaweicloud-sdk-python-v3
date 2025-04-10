@@ -31,7 +31,7 @@ class DisContentReq:
     }
 
     def __init__(self, project_id=None, stream_name=None, ak=None, sk=None):
-        """DisContentReq
+        r"""DisContentReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DisContentReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DisContentReq.
+        r"""Gets the project_id of this DisContentReq.
 
         项目id
 
@@ -71,7 +71,7 @@ class DisContentReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DisContentReq.
+        r"""Sets the project_id of this DisContentReq.
 
         项目id
 
@@ -82,7 +82,7 @@ class DisContentReq:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DisContentReq.
+        r"""Gets the stream_name of this DisContentReq.
 
         通道名称
 
@@ -93,7 +93,7 @@ class DisContentReq:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DisContentReq.
+        r"""Sets the stream_name of this DisContentReq.
 
         通道名称
 
@@ -104,7 +104,7 @@ class DisContentReq:
 
     @property
     def ak(self):
-        """Gets the ak of this DisContentReq.
+        r"""Gets the ak of this DisContentReq.
 
         租户的AK
 
@@ -115,7 +115,7 @@ class DisContentReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this DisContentReq.
+        r"""Sets the ak of this DisContentReq.
 
         租户的AK
 
@@ -126,7 +126,7 @@ class DisContentReq:
 
     @property
     def sk(self):
-        """Gets the sk of this DisContentReq.
+        r"""Gets the sk of this DisContentReq.
 
         租户的SK
 
@@ -137,7 +137,7 @@ class DisContentReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this DisContentReq.
+        r"""Sets the sk of this DisContentReq.
 
         租户的SK
 

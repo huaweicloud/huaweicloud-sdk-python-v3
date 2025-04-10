@@ -29,7 +29,7 @@ class PublishLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, ld_api_id=None, body=None):
-        """PublishLiveDataApiV2Request
+        r"""PublishLiveDataApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PublishLiveDataApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PublishLiveDataApiV2Request.
+        r"""Gets the instance_id of this PublishLiveDataApiV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class PublishLiveDataApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PublishLiveDataApiV2Request.
+        r"""Sets the instance_id of this PublishLiveDataApiV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class PublishLiveDataApiV2Request:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this PublishLiveDataApiV2Request.
+        r"""Gets the ld_api_id of this PublishLiveDataApiV2Request.
 
         后端API的编号
 
@@ -88,7 +88,7 @@ class PublishLiveDataApiV2Request:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this PublishLiveDataApiV2Request.
+        r"""Sets the ld_api_id of this PublishLiveDataApiV2Request.
 
         后端API的编号
 
@@ -99,7 +99,7 @@ class PublishLiveDataApiV2Request:
 
     @property
     def body(self):
-        """Gets the body of this PublishLiveDataApiV2Request.
+        r"""Gets the body of this PublishLiveDataApiV2Request.
 
         :return: The body of this PublishLiveDataApiV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.LdApiDeploy`
@@ -108,7 +108,7 @@ class PublishLiveDataApiV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishLiveDataApiV2Request.
+        r"""Sets the body of this PublishLiveDataApiV2Request.
 
         :param body: The body of this PublishLiveDataApiV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.LdApiDeploy`

@@ -27,7 +27,7 @@ class TablePrivilege:
     }
 
     def __init__(self, object=None, privileges=None):
-        """TablePrivilege
+        r"""TablePrivilege
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TablePrivilege:
 
     @property
     def object(self):
-        """Gets the object of this TablePrivilege.
+        r"""Gets the object of this TablePrivilege.
 
         该用户有权限的对象： “databases.数据库名.tables.表名”，用户在当前表上的权限。 “databases.数据库名.tables.表名.columns.列名”，用户在列上的权限。
 
@@ -61,7 +61,7 @@ class TablePrivilege:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this TablePrivilege.
+        r"""Sets the object of this TablePrivilege.
 
         该用户有权限的对象： “databases.数据库名.tables.表名”，用户在当前表上的权限。 “databases.数据库名.tables.表名.columns.列名”，用户在列上的权限。
 
@@ -72,7 +72,7 @@ class TablePrivilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this TablePrivilege.
+        r"""Gets the privileges of this TablePrivilege.
 
         用户在指定对象上的权限。
 
@@ -83,7 +83,7 @@ class TablePrivilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this TablePrivilege.
+        r"""Sets the privileges of this TablePrivilege.
 
         用户在指定对象上的权限。
 

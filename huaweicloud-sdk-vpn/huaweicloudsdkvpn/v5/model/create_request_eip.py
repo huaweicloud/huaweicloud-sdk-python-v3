@@ -33,7 +33,7 @@ class CreateRequestEip:
     }
 
     def __init__(self, id=None, type=None, charge_mode=None, bandwidth_size=None, bandwidth_name=None):
-        """CreateRequestEip
+        r"""CreateRequestEip
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateRequestEip:
 
     @property
     def id(self):
-        """Gets the id of this CreateRequestEip.
+        r"""Gets the id of this CreateRequestEip.
 
         功能说明：公网IP的唯一标识
 
@@ -82,7 +82,7 @@ class CreateRequestEip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRequestEip.
+        r"""Sets the id of this CreateRequestEip.
 
         功能说明：公网IP的唯一标识
 
@@ -93,7 +93,7 @@ class CreateRequestEip:
 
     @property
     def type(self):
-        """Gets the type of this CreateRequestEip.
+        r"""Gets the type of this CreateRequestEip.
 
         功能说明：EIP的类型  取值范围：5_bgp（全动态BGP），5_sbgp（静态BGP）  华南-广州：5_bgp、5_sbgp  华东-上海一：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp  中国-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  拉美-圣地亚哥：5_bgp  拉美-圣保罗一：5_bgp  拉美-墨西哥城一：5_bgp  拉美-布宜诺斯艾利一：5_bgp  拉美-利马一：5_bgp  拉美-圣地亚哥二： 5_bgp 约束：必须是系统具体支持的类型。
 
@@ -104,7 +104,7 @@ class CreateRequestEip:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRequestEip.
+        r"""Sets the type of this CreateRequestEip.
 
         功能说明：EIP的类型  取值范围：5_bgp（全动态BGP），5_sbgp（静态BGP）  华南-广州：5_bgp、5_sbgp  华东-上海一：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp  中国-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  拉美-圣地亚哥：5_bgp  拉美-圣保罗一：5_bgp  拉美-墨西哥城一：5_bgp  拉美-布宜诺斯艾利一：5_bgp  拉美-利马一：5_bgp  拉美-圣地亚哥二： 5_bgp 约束：必须是系统具体支持的类型。
 
@@ -115,7 +115,7 @@ class CreateRequestEip:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateRequestEip.
+        r"""Gets the charge_mode of this CreateRequestEip.
 
         功能说明：按流量计费还是按带宽计费  取值范围：  bandwidth：按带宽计费  traffic：按流量计费  95peak_plus：按增强型95计费
 
@@ -126,7 +126,7 @@ class CreateRequestEip:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateRequestEip.
+        r"""Sets the charge_mode of this CreateRequestEip.
 
         功能说明：按流量计费还是按带宽计费  取值范围：  bandwidth：按带宽计费  traffic：按流量计费  95peak_plus：按增强型95计费
 
@@ -137,7 +137,7 @@ class CreateRequestEip:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CreateRequestEip.
+        r"""Gets the bandwidth_size of this CreateRequestEip.
 
         带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1000
 
@@ -148,7 +148,7 @@ class CreateRequestEip:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CreateRequestEip.
+        r"""Sets the bandwidth_size of this CreateRequestEip.
 
         带宽大小Mbit/s。flavor为Basic时，取值不能大于100；flavor为Professional1时，取值不能大于300；flavor为Professional2时，取值不能大于1000
 
@@ -159,7 +159,7 @@ class CreateRequestEip:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this CreateRequestEip.
+        r"""Gets the bandwidth_name of this CreateRequestEip.
 
         带宽名称
 
@@ -170,7 +170,7 @@ class CreateRequestEip:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this CreateRequestEip.
+        r"""Sets the bandwidth_name of this CreateRequestEip.
 
         带宽名称
 

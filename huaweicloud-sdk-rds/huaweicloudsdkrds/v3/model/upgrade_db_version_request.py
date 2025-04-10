@@ -29,7 +29,7 @@ class UpgradeDbVersionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpgradeDbVersionRequest
+        r"""UpgradeDbVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpgradeDbVersionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpgradeDbVersionRequest.
+        r"""Gets the x_language of this UpgradeDbVersionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpgradeDbVersionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpgradeDbVersionRequest.
+        r"""Sets the x_language of this UpgradeDbVersionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpgradeDbVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeDbVersionRequest.
+        r"""Gets the instance_id of this UpgradeDbVersionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpgradeDbVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeDbVersionRequest.
+        r"""Sets the instance_id of this UpgradeDbVersionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpgradeDbVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeDbVersionRequest.
+        r"""Gets the body of this UpgradeDbVersionRequest.
 
         :return: The body of this UpgradeDbVersionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`
@@ -109,7 +109,7 @@ class UpgradeDbVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeDbVersionRequest.
+        r"""Sets the body of this UpgradeDbVersionRequest.
 
         :param body: The body of this UpgradeDbVersionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`

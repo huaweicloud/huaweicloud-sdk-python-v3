@@ -39,7 +39,7 @@ class NeutronSecurityGroup:
     }
 
     def __init__(self, description=None, id=None, name=None, security_group_rules=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronSecurityGroup
+        r"""NeutronSecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class NeutronSecurityGroup:
 
     @property
     def description(self):
-        """Gets the description of this NeutronSecurityGroup.
+        r"""Gets the description of this NeutronSecurityGroup.
 
         功能说明：安全组描述 取值范围：0-255个字符
 
@@ -95,7 +95,7 @@ class NeutronSecurityGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronSecurityGroup.
+        r"""Sets the description of this NeutronSecurityGroup.
 
         功能说明：安全组描述 取值范围：0-255个字符
 
@@ -106,7 +106,7 @@ class NeutronSecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this NeutronSecurityGroup.
+        r"""Gets the id of this NeutronSecurityGroup.
 
         安全组ID
 
@@ -117,7 +117,7 @@ class NeutronSecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronSecurityGroup.
+        r"""Sets the id of this NeutronSecurityGroup.
 
         安全组ID
 
@@ -128,7 +128,7 @@ class NeutronSecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this NeutronSecurityGroup.
+        r"""Gets the name of this NeutronSecurityGroup.
 
         功能说明：安全组名称 取值范围：0-255个字符
 
@@ -139,7 +139,7 @@ class NeutronSecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronSecurityGroup.
+        r"""Sets the name of this NeutronSecurityGroup.
 
         功能说明：安全组名称 取值范围：0-255个字符
 
@@ -150,7 +150,7 @@ class NeutronSecurityGroup:
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this NeutronSecurityGroup.
+        r"""Gets the security_group_rules of this NeutronSecurityGroup.
 
         安全组规则，详情参见Security Group Rule对象
 
@@ -161,7 +161,7 @@ class NeutronSecurityGroup:
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this NeutronSecurityGroup.
+        r"""Sets the security_group_rules of this NeutronSecurityGroup.
 
         安全组规则，详情参见Security Group Rule对象
 
@@ -172,7 +172,7 @@ class NeutronSecurityGroup:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronSecurityGroup.
+        r"""Gets the tenant_id of this NeutronSecurityGroup.
 
         项目ID
 
@@ -183,7 +183,7 @@ class NeutronSecurityGroup:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronSecurityGroup.
+        r"""Sets the tenant_id of this NeutronSecurityGroup.
 
         项目ID
 
@@ -194,7 +194,7 @@ class NeutronSecurityGroup:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronSecurityGroup.
+        r"""Gets the project_id of this NeutronSecurityGroup.
 
         项目ID
 
@@ -205,7 +205,7 @@ class NeutronSecurityGroup:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronSecurityGroup.
+        r"""Sets the project_id of this NeutronSecurityGroup.
 
         项目ID
 
@@ -216,7 +216,7 @@ class NeutronSecurityGroup:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NeutronSecurityGroup.
+        r"""Gets the created_at of this NeutronSecurityGroup.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -227,7 +227,7 @@ class NeutronSecurityGroup:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NeutronSecurityGroup.
+        r"""Sets the created_at of this NeutronSecurityGroup.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -238,7 +238,7 @@ class NeutronSecurityGroup:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NeutronSecurityGroup.
+        r"""Gets the updated_at of this NeutronSecurityGroup.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -249,7 +249,7 @@ class NeutronSecurityGroup:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NeutronSecurityGroup.
+        r"""Sets the updated_at of this NeutronSecurityGroup.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

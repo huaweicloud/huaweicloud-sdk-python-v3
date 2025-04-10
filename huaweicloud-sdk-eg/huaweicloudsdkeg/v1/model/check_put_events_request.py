@@ -25,7 +25,7 @@ class CheckPutEventsRequest:
     }
 
     def __init__(self, body=None):
-        """CheckPutEventsRequest
+        r"""CheckPutEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckPutEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckPutEventsRequest.
+        r"""Gets the body of this CheckPutEventsRequest.
 
         :return: The body of this CheckPutEventsRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CheckPutEventsReq`
@@ -52,7 +52,7 @@ class CheckPutEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckPutEventsRequest.
+        r"""Sets the body of this CheckPutEventsRequest.
 
         :param body: The body of this CheckPutEventsRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CheckPutEventsReq`

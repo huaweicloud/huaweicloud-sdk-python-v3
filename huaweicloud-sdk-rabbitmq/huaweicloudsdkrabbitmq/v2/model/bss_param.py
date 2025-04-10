@@ -33,7 +33,7 @@ class BssParam:
     }
 
     def __init__(self, is_auto_renew=None, charging_mode=None, is_auto_pay=None, period_type=None, period_num=None):
-        """BssParam
+        r"""BssParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BssParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this BssParam.
+        r"""Gets the is_auto_renew of this BssParam.
 
         是否自动续订。  取值范围：   - true: 自动续订。   - false: 不自动续订。  默认不自动续订。
 
@@ -82,7 +82,7 @@ class BssParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this BssParam.
+        r"""Sets the is_auto_renew of this BssParam.
 
         是否自动续订。  取值范围：   - true: 自动续订。   - false: 不自动续订。  默认不自动续订。
 
@@ -93,7 +93,7 @@ class BssParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BssParam.
+        r"""Gets the charging_mode of this BssParam.
 
         计费模式。  功能说明：付费方式。  取值范围：   - prePaid：预付费，即包年包月；   - postPaid：后付费，即按需付费；  默认为postPaid。
 
@@ -104,7 +104,7 @@ class BssParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BssParam.
+        r"""Sets the charging_mode of this BssParam.
 
         计费模式。  功能说明：付费方式。  取值范围：   - prePaid：预付费，即包年包月；   - postPaid：后付费，即按需付费；  默认为postPaid。
 
@@ -115,7 +115,7 @@ class BssParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BssParam.
+        r"""Gets the is_auto_pay of this BssParam.
 
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  取值范围：   - true：是（自动支付）   - false：否（需要客户手动支付）  默认为手动支付。
 
@@ -126,7 +126,7 @@ class BssParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BssParam.
+        r"""Sets the is_auto_pay of this BssParam.
 
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  取值范围：   - true：是（自动支付）   - false：否（需要客户手动支付）  默认为手动支付。
 
@@ -137,7 +137,7 @@ class BssParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this BssParam.
+        r"""Gets the period_type of this BssParam.
 
         订购周期类型。  取值范围：   - month：月   - year：年  **chargingMode为prePaid时生效且为必选值。**
 
@@ -148,7 +148,7 @@ class BssParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this BssParam.
+        r"""Sets the period_type of this BssParam.
 
         订购周期类型。  取值范围：   - month：月   - year：年  **chargingMode为prePaid时生效且为必选值。**
 
@@ -159,7 +159,7 @@ class BssParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this BssParam.
+        r"""Gets the period_num of this BssParam.
 
         订购周期数。  取值范围：   - periodType=month（周期类型为月）时，取值为[1，9]；  - periodType=year（周期类型为年）时，取值为[1，3]；  **chargingMode为prePaid时生效且为必选值。**
 
@@ -170,7 +170,7 @@ class BssParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this BssParam.
+        r"""Sets the period_num of this BssParam.
 
         订购周期数。  取值范围：   - periodType=month（周期类型为月）时，取值为[1，9]；  - periodType=year（周期类型为年）时，取值为[1，3]；  **chargingMode为prePaid时生效且为必选值。**
 

@@ -43,7 +43,7 @@ class NetworkSwitchPolicyDTO:
     }
 
     def __init__(self, policy_name=None, preferred_carrier=None, least_preferred_carrier=None, optimal_signal=None, auto_switch=None, weak_signal_switch=None, connect_ip=None, version=None, switch_order=None, blacklist=None):
-        """NetworkSwitchPolicyDTO
+        r"""NetworkSwitchPolicyDTO
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this NetworkSwitchPolicyDTO.
+        r"""Gets the policy_name of this NetworkSwitchPolicyDTO.
 
         策略名称
 
@@ -116,7 +116,7 @@ class NetworkSwitchPolicyDTO:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this NetworkSwitchPolicyDTO.
+        r"""Sets the policy_name of this NetworkSwitchPolicyDTO.
 
         策略名称
 
@@ -127,7 +127,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def preferred_carrier(self):
-        """Gets the preferred_carrier of this NetworkSwitchPolicyDTO.
+        r"""Gets the preferred_carrier of this NetworkSwitchPolicyDTO.
 
         最优选运营商,1:移动、2:电信、3:联通、4:上次使用的运营商
 
@@ -138,7 +138,7 @@ class NetworkSwitchPolicyDTO:
 
     @preferred_carrier.setter
     def preferred_carrier(self, preferred_carrier):
-        """Sets the preferred_carrier of this NetworkSwitchPolicyDTO.
+        r"""Sets the preferred_carrier of this NetworkSwitchPolicyDTO.
 
         最优选运营商,1:移动、2:电信、3:联通、4:上次使用的运营商
 
@@ -149,7 +149,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def least_preferred_carrier(self):
-        """Gets the least_preferred_carrier of this NetworkSwitchPolicyDTO.
+        r"""Gets the least_preferred_carrier of this NetworkSwitchPolicyDTO.
 
         最不优选运营商,1:移动、2:电信、3:联通
 
@@ -160,7 +160,7 @@ class NetworkSwitchPolicyDTO:
 
     @least_preferred_carrier.setter
     def least_preferred_carrier(self, least_preferred_carrier):
-        """Sets the least_preferred_carrier of this NetworkSwitchPolicyDTO.
+        r"""Sets the least_preferred_carrier of this NetworkSwitchPolicyDTO.
 
         最不优选运营商,1:移动、2:电信、3:联通
 
@@ -171,7 +171,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def optimal_signal(self):
-        """Gets the optimal_signal of this NetworkSwitchPolicyDTO.
+        r"""Gets the optimal_signal of this NetworkSwitchPolicyDTO.
 
         最优信号选取策略是否开启,true:开启,false:不开启
 
@@ -182,7 +182,7 @@ class NetworkSwitchPolicyDTO:
 
     @optimal_signal.setter
     def optimal_signal(self, optimal_signal):
-        """Sets the optimal_signal of this NetworkSwitchPolicyDTO.
+        r"""Sets the optimal_signal of this NetworkSwitchPolicyDTO.
 
         最优信号选取策略是否开启,true:开启,false:不开启
 
@@ -193,7 +193,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def auto_switch(self):
-        """Gets the auto_switch of this NetworkSwitchPolicyDTO.
+        r"""Gets the auto_switch of this NetworkSwitchPolicyDTO.
 
         自动切卡是否开启,true:开启,false:不开启
 
@@ -204,7 +204,7 @@ class NetworkSwitchPolicyDTO:
 
     @auto_switch.setter
     def auto_switch(self, auto_switch):
-        """Sets the auto_switch of this NetworkSwitchPolicyDTO.
+        r"""Sets the auto_switch of this NetworkSwitchPolicyDTO.
 
         自动切卡是否开启,true:开启,false:不开启
 
@@ -215,7 +215,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def weak_signal_switch(self):
-        """Gets the weak_signal_switch of this NetworkSwitchPolicyDTO.
+        r"""Gets the weak_signal_switch of this NetworkSwitchPolicyDTO.
 
         弱信号切换策略是否开启,true:开启,false:不开启
 
@@ -226,7 +226,7 @@ class NetworkSwitchPolicyDTO:
 
     @weak_signal_switch.setter
     def weak_signal_switch(self, weak_signal_switch):
-        """Sets the weak_signal_switch of this NetworkSwitchPolicyDTO.
+        r"""Sets the weak_signal_switch of this NetworkSwitchPolicyDTO.
 
         弱信号切换策略是否开启,true:开启,false:不开启
 
@@ -237,7 +237,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def connect_ip(self):
-        """Gets the connect_ip of this NetworkSwitchPolicyDTO.
+        r"""Gets the connect_ip of this NetworkSwitchPolicyDTO.
 
         连接延时切换策略，连接延时时需要ping的ip地址
 
@@ -248,7 +248,7 @@ class NetworkSwitchPolicyDTO:
 
     @connect_ip.setter
     def connect_ip(self, connect_ip):
-        """Sets the connect_ip of this NetworkSwitchPolicyDTO.
+        r"""Sets the connect_ip of this NetworkSwitchPolicyDTO.
 
         连接延时切换策略，连接延时时需要ping的ip地址
 
@@ -259,7 +259,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def version(self):
-        """Gets the version of this NetworkSwitchPolicyDTO.
+        r"""Gets the version of this NetworkSwitchPolicyDTO.
 
         版本枚举1-SDK版 2-无SDK版
 
@@ -270,7 +270,7 @@ class NetworkSwitchPolicyDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NetworkSwitchPolicyDTO.
+        r"""Sets the version of this NetworkSwitchPolicyDTO.
 
         版本枚举1-SDK版 2-无SDK版
 
@@ -281,7 +281,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def switch_order(self):
-        """Gets the switch_order of this NetworkSwitchPolicyDTO.
+        r"""Gets the switch_order of this NetworkSwitchPolicyDTO.
 
         切卡顺序，运营商以英文逗号分隔
 
@@ -292,7 +292,7 @@ class NetworkSwitchPolicyDTO:
 
     @switch_order.setter
     def switch_order(self, switch_order):
-        """Sets the switch_order of this NetworkSwitchPolicyDTO.
+        r"""Sets the switch_order of this NetworkSwitchPolicyDTO.
 
         切卡顺序，运营商以英文逗号分隔
 
@@ -303,7 +303,7 @@ class NetworkSwitchPolicyDTO:
 
     @property
     def blacklist(self):
-        """Gets the blacklist of this NetworkSwitchPolicyDTO.
+        r"""Gets the blacklist of this NetworkSwitchPolicyDTO.
 
         黑名单，只支持单个运营商
 
@@ -314,7 +314,7 @@ class NetworkSwitchPolicyDTO:
 
     @blacklist.setter
     def blacklist(self, blacklist):
-        """Sets the blacklist of this NetworkSwitchPolicyDTO.
+        r"""Sets the blacklist of this NetworkSwitchPolicyDTO.
 
         黑名单，只支持单个运营商
 

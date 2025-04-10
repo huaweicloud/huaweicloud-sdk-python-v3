@@ -30,7 +30,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """CreateVmsSendTaskResponse
+        r"""CreateVmsSendTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateVmsSendTaskResponse.
+        r"""Gets the status of this CreateVmsSendTaskResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateVmsSendTaskResponse.
+        r"""Sets the status of this CreateVmsSendTaskResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateVmsSendTaskResponse.
+        r"""Gets the message of this CreateVmsSendTaskResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateVmsSendTaskResponse.
+        r"""Sets the message of this CreateVmsSendTaskResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateVmsSendTaskResponse.
+        r"""Gets the data of this CreateVmsSendTaskResponse.
 
         :return: The data of this CreateVmsSendTaskResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateVmsTaskResponseMode`
@@ -111,7 +111,7 @@ class CreateVmsSendTaskResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateVmsSendTaskResponse.
+        r"""Sets the data of this CreateVmsSendTaskResponse.
 
         :param data: The data of this CreateVmsSendTaskResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.CreateVmsTaskResponseMode`

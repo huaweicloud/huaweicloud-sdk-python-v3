@@ -32,7 +32,7 @@ class ListRtcEventResponse(SdkResponse):
     }
 
     def __init__(self, ctime=None, event_id=None, event_info=None, x_request_id=None):
-        """ListRtcEventResponse
+        r"""ListRtcEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @property
     def ctime(self):
-        """Gets the ctime of this ListRtcEventResponse.
+        r"""Gets the ctime of this ListRtcEventResponse.
 
         时间 
 
@@ -76,7 +76,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @ctime.setter
     def ctime(self, ctime):
-        """Sets the ctime of this ListRtcEventResponse.
+        r"""Sets the ctime of this ListRtcEventResponse.
 
         时间 
 
@@ -87,7 +87,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @property
     def event_id(self):
-        """Gets the event_id of this ListRtcEventResponse.
+        r"""Gets the event_id of this ListRtcEventResponse.
 
         异常事件ID 
 
@@ -98,7 +98,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ListRtcEventResponse.
+        r"""Sets the event_id of this ListRtcEventResponse.
 
         异常事件ID 
 
@@ -109,7 +109,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @property
     def event_info(self):
-        """Gets the event_info of this ListRtcEventResponse.
+        r"""Gets the event_info of this ListRtcEventResponse.
 
         异常事件信息 
 
@@ -120,7 +120,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @event_info.setter
     def event_info(self, event_info):
-        """Sets the event_info of this ListRtcEventResponse.
+        r"""Sets the event_info of this ListRtcEventResponse.
 
         异常事件信息 
 
@@ -131,7 +131,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcEventResponse.
+        r"""Gets the x_request_id of this ListRtcEventResponse.
 
         :return: The x_request_id of this ListRtcEventResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListRtcEventResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcEventResponse.
+        r"""Sets the x_request_id of this ListRtcEventResponse.
 
         :param x_request_id: The x_request_id of this ListRtcEventResponse.
         :type x_request_id: str

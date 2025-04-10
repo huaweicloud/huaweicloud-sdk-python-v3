@@ -27,7 +27,7 @@ class ListTemplateViewHistoriesRequest:
     }
 
     def __init__(self, x_language=None, platform_source=None):
-        """ListTemplateViewHistoriesRequest
+        r"""ListTemplateViewHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTemplateViewHistoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTemplateViewHistoriesRequest.
+        r"""Gets the x_language of this ListTemplateViewHistoriesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -60,7 +60,7 @@ class ListTemplateViewHistoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTemplateViewHistoriesRequest.
+        r"""Sets the x_language of this ListTemplateViewHistoriesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -71,7 +71,7 @@ class ListTemplateViewHistoriesRequest:
 
     @property
     def platform_source(self):
-        """Gets the platform_source of this ListTemplateViewHistoriesRequest.
+        r"""Gets the platform_source of this ListTemplateViewHistoriesRequest.
 
         平台来源： - 0：查询CodeLabs中用户浏览过的模板。 - 1：查询DevStar中用户浏览过的模板。 
 
@@ -82,7 +82,7 @@ class ListTemplateViewHistoriesRequest:
 
     @platform_source.setter
     def platform_source(self, platform_source):
-        """Sets the platform_source of this ListTemplateViewHistoriesRequest.
+        r"""Sets the platform_source of this ListTemplateViewHistoriesRequest.
 
         平台来源： - 0：查询CodeLabs中用户浏览过的模板。 - 1：查询DevStar中用户浏览过的模板。 
 

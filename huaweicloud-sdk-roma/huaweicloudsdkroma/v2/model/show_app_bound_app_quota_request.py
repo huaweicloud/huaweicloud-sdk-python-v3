@@ -27,7 +27,7 @@ class ShowAppBoundAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, app_id=None):
-        """ShowAppBoundAppQuotaRequest
+        r"""ShowAppBoundAppQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAppBoundAppQuotaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAppBoundAppQuotaRequest.
+        r"""Gets the instance_id of this ShowAppBoundAppQuotaRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowAppBoundAppQuotaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAppBoundAppQuotaRequest.
+        r"""Sets the instance_id of this ShowAppBoundAppQuotaRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowAppBoundAppQuotaRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppBoundAppQuotaRequest.
+        r"""Gets the app_id of this ShowAppBoundAppQuotaRequest.
 
         应用编号
 
@@ -81,7 +81,7 @@ class ShowAppBoundAppQuotaRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppBoundAppQuotaRequest.
+        r"""Sets the app_id of this ShowAppBoundAppQuotaRequest.
 
         应用编号
 

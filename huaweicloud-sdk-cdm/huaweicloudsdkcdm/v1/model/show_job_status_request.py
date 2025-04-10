@@ -27,7 +27,7 @@ class ShowJobStatusRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None):
-        """ShowJobStatusRequest
+        r"""ShowJobStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowJobStatusRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowJobStatusRequest.
+        r"""Gets the cluster_id of this ShowJobStatusRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class ShowJobStatusRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowJobStatusRequest.
+        r"""Sets the cluster_id of this ShowJobStatusRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class ShowJobStatusRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobStatusRequest.
+        r"""Gets the job_name of this ShowJobStatusRequest.
 
         作业名称
 
@@ -81,7 +81,7 @@ class ShowJobStatusRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobStatusRequest.
+        r"""Sets the job_name of this ShowJobStatusRequest.
 
         作业名称
 

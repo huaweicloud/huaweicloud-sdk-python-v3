@@ -27,7 +27,7 @@ class DeleteBackgroundTaskRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None):
-        """DeleteBackgroundTaskRequest
+        r"""DeleteBackgroundTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteBackgroundTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteBackgroundTaskRequest.
+        r"""Gets the instance_id of this DeleteBackgroundTaskRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteBackgroundTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteBackgroundTaskRequest.
+        r"""Sets the instance_id of this DeleteBackgroundTaskRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteBackgroundTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteBackgroundTaskRequest.
+        r"""Gets the task_id of this DeleteBackgroundTaskRequest.
 
         后台任务ID
 
@@ -81,7 +81,7 @@ class DeleteBackgroundTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteBackgroundTaskRequest.
+        r"""Sets the task_id of this DeleteBackgroundTaskRequest.
 
         后台任务ID
 

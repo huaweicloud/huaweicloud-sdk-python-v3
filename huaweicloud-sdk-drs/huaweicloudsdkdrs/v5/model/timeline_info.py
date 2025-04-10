@@ -31,7 +31,7 @@ class TimelineInfo:
     }
 
     def __init__(self, name=None, status=None, operation_time=None, user_name=None):
-        """TimelineInfo
+        r"""TimelineInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TimelineInfo:
 
     @property
     def name(self):
-        """Gets the name of this TimelineInfo.
+        r"""Gets the name of this TimelineInfo.
 
         时间轴名称。
 
@@ -75,7 +75,7 @@ class TimelineInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TimelineInfo.
+        r"""Sets the name of this TimelineInfo.
 
         时间轴名称。
 
@@ -86,7 +86,7 @@ class TimelineInfo:
 
     @property
     def status(self):
-        """Gets the status of this TimelineInfo.
+        r"""Gets the status of this TimelineInfo.
 
         状态。
 
@@ -97,7 +97,7 @@ class TimelineInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TimelineInfo.
+        r"""Sets the status of this TimelineInfo.
 
         状态。
 
@@ -108,7 +108,7 @@ class TimelineInfo:
 
     @property
     def operation_time(self):
-        """Gets the operation_time of this TimelineInfo.
+        r"""Gets the operation_time of this TimelineInfo.
 
         操作时间。
 
@@ -119,7 +119,7 @@ class TimelineInfo:
 
     @operation_time.setter
     def operation_time(self, operation_time):
-        """Sets the operation_time of this TimelineInfo.
+        r"""Sets the operation_time of this TimelineInfo.
 
         操作时间。
 
@@ -130,7 +130,7 @@ class TimelineInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TimelineInfo.
+        r"""Gets the user_name of this TimelineInfo.
 
         用户名称。
 
@@ -141,7 +141,7 @@ class TimelineInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TimelineInfo.
+        r"""Sets the user_name of this TimelineInfo.
 
         用户名称。
 

@@ -41,7 +41,7 @@ class ListAgentsInstallConditionRequest:
     }
 
     def __init__(self, enterprise_project_id=None, desktop_id=None, desktop_name=None, status=None, ip_address=None, is_installed=None, desktop_pool_id=None, limit=None, offset=None):
-        """ListAgentsInstallConditionRequest
+        r"""ListAgentsInstallConditionRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAgentsInstallConditionRequest.
+        r"""Gets the enterprise_project_id of this ListAgentsInstallConditionRequest.
 
         企业项目ID
 
@@ -110,7 +110,7 @@ class ListAgentsInstallConditionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAgentsInstallConditionRequest.
+        r"""Sets the enterprise_project_id of this ListAgentsInstallConditionRequest.
 
         企业项目ID
 
@@ -121,7 +121,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListAgentsInstallConditionRequest.
+        r"""Gets the desktop_id of this ListAgentsInstallConditionRequest.
 
         桌面ID
 
@@ -132,7 +132,7 @@ class ListAgentsInstallConditionRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListAgentsInstallConditionRequest.
+        r"""Sets the desktop_id of this ListAgentsInstallConditionRequest.
 
         桌面ID
 
@@ -143,7 +143,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ListAgentsInstallConditionRequest.
+        r"""Gets the desktop_name of this ListAgentsInstallConditionRequest.
 
         桌面名称
 
@@ -154,7 +154,7 @@ class ListAgentsInstallConditionRequest:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ListAgentsInstallConditionRequest.
+        r"""Sets the desktop_name of this ListAgentsInstallConditionRequest.
 
         桌面名称
 
@@ -165,7 +165,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAgentsInstallConditionRequest.
+        r"""Gets the status of this ListAgentsInstallConditionRequest.
 
         桌面状态
 
@@ -176,7 +176,7 @@ class ListAgentsInstallConditionRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAgentsInstallConditionRequest.
+        r"""Sets the status of this ListAgentsInstallConditionRequest.
 
         桌面状态
 
@@ -187,7 +187,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ListAgentsInstallConditionRequest.
+        r"""Gets the ip_address of this ListAgentsInstallConditionRequest.
 
         ip地址
 
@@ -198,7 +198,7 @@ class ListAgentsInstallConditionRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ListAgentsInstallConditionRequest.
+        r"""Sets the ip_address of this ListAgentsInstallConditionRequest.
 
         ip地址
 
@@ -209,7 +209,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def is_installed(self):
-        """Gets the is_installed of this ListAgentsInstallConditionRequest.
+        r"""Gets the is_installed of this ListAgentsInstallConditionRequest.
 
         插件是否已安装
 
@@ -220,7 +220,7 @@ class ListAgentsInstallConditionRequest:
 
     @is_installed.setter
     def is_installed(self, is_installed):
-        """Sets the is_installed of this ListAgentsInstallConditionRequest.
+        r"""Sets the is_installed of this ListAgentsInstallConditionRequest.
 
         插件是否已安装
 
@@ -231,7 +231,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this ListAgentsInstallConditionRequest.
+        r"""Gets the desktop_pool_id of this ListAgentsInstallConditionRequest.
 
         桌面池id
 
@@ -242,7 +242,7 @@ class ListAgentsInstallConditionRequest:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this ListAgentsInstallConditionRequest.
+        r"""Sets the desktop_pool_id of this ListAgentsInstallConditionRequest.
 
         桌面池id
 
@@ -253,7 +253,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgentsInstallConditionRequest.
+        r"""Gets the limit of this ListAgentsInstallConditionRequest.
 
         每页显示的数量。
 
@@ -264,7 +264,7 @@ class ListAgentsInstallConditionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgentsInstallConditionRequest.
+        r"""Sets the limit of this ListAgentsInstallConditionRequest.
 
         每页显示的数量。
 
@@ -275,7 +275,7 @@ class ListAgentsInstallConditionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAgentsInstallConditionRequest.
+        r"""Gets the offset of this ListAgentsInstallConditionRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -286,7 +286,7 @@ class ListAgentsInstallConditionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAgentsInstallConditionRequest.
+        r"""Sets the offset of this ListAgentsInstallConditionRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 

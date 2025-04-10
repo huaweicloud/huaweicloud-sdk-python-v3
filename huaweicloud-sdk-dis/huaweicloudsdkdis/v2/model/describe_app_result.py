@@ -31,7 +31,7 @@ class DescribeAppResult:
     }
 
     def __init__(self, app_name=None, app_id=None, create_time=None, commit_checkpoint_stream_names=None):
-        """DescribeAppResult
+        r"""DescribeAppResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DescribeAppResult:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DescribeAppResult.
+        r"""Gets the app_name of this DescribeAppResult.
 
         App的名称。
 
@@ -75,7 +75,7 @@ class DescribeAppResult:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DescribeAppResult.
+        r"""Sets the app_name of this DescribeAppResult.
 
         App的名称。
 
@@ -86,7 +86,7 @@ class DescribeAppResult:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DescribeAppResult.
+        r"""Gets the app_id of this DescribeAppResult.
 
         App的唯一标识符。
 
@@ -97,7 +97,7 @@ class DescribeAppResult:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DescribeAppResult.
+        r"""Sets the app_id of this DescribeAppResult.
 
         App的唯一标识符。
 
@@ -108,7 +108,7 @@ class DescribeAppResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DescribeAppResult.
+        r"""Gets the create_time of this DescribeAppResult.
 
         App创建的时间，单位毫秒。
 
@@ -119,7 +119,7 @@ class DescribeAppResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DescribeAppResult.
+        r"""Sets the create_time of this DescribeAppResult.
 
         App创建的时间，单位毫秒。
 
@@ -130,7 +130,7 @@ class DescribeAppResult:
 
     @property
     def commit_checkpoint_stream_names(self):
-        """Gets the commit_checkpoint_stream_names of this DescribeAppResult.
+        r"""Gets the commit_checkpoint_stream_names of this DescribeAppResult.
 
         关联通道列表。
 
@@ -141,7 +141,7 @@ class DescribeAppResult:
 
     @commit_checkpoint_stream_names.setter
     def commit_checkpoint_stream_names(self, commit_checkpoint_stream_names):
-        """Sets the commit_checkpoint_stream_names of this DescribeAppResult.
+        r"""Sets the commit_checkpoint_stream_names of this DescribeAppResult.
 
         关联通道列表。
 

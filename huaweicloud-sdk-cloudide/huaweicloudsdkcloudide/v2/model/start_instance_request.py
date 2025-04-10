@@ -27,7 +27,7 @@ class StartInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """StartInstanceRequest
+        r"""StartInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartInstanceRequest.
+        r"""Gets the instance_id of this StartInstanceRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class StartInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceRequest.
+        r"""Sets the instance_id of this StartInstanceRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class StartInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceRequest.
+        r"""Gets the body of this StartInstanceRequest.
 
         :return: The body of this StartInstanceRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`
@@ -80,7 +80,7 @@ class StartInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceRequest.
+        r"""Sets the body of this StartInstanceRequest.
 
         :param body: The body of this StartInstanceRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`

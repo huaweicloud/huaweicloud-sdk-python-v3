@@ -33,7 +33,7 @@ class ListSecretsRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None, sort=None):
-        """ListSecretsRequest
+        r"""ListSecretsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSecretsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListSecretsRequest.
+        r"""Gets the ief_instance_id of this ListSecretsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class ListSecretsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListSecretsRequest.
+        r"""Sets the ief_instance_id of this ListSecretsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -93,7 +93,7 @@ class ListSecretsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecretsRequest.
+        r"""Gets the name of this ListSecretsRequest.
 
         密钥名称，模糊匹配
 
@@ -104,7 +104,7 @@ class ListSecretsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecretsRequest.
+        r"""Sets the name of this ListSecretsRequest.
 
         密钥名称，模糊匹配
 
@@ -115,7 +115,7 @@ class ListSecretsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecretsRequest.
+        r"""Gets the limit of this ListSecretsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认值为1000。
 
@@ -126,7 +126,7 @@ class ListSecretsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecretsRequest.
+        r"""Sets the limit of this ListSecretsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认值为1000。
 
@@ -137,7 +137,7 @@ class ListSecretsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecretsRequest.
+        r"""Gets the offset of this ListSecretsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -148,7 +148,7 @@ class ListSecretsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecretsRequest.
+        r"""Sets the offset of this ListSecretsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -159,7 +159,7 @@ class ListSecretsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListSecretsRequest.
+        r"""Gets the sort of this ListSecretsRequest.
 
         排序方式，可根据名称、创建时间、更新时间排序 枚举值： - name - created_at - updated_at 默认升序，如sort=name，降序：sort=name%3Adesc
 
@@ -170,7 +170,7 @@ class ListSecretsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListSecretsRequest.
+        r"""Sets the sort of this ListSecretsRequest.
 
         排序方式，可根据名称、创建时间、更新时间排序 枚举值： - name - created_at - updated_at 默认升序，如sort=name，降序：sort=name%3Adesc
 

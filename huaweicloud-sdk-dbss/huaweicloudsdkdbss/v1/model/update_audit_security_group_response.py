@@ -26,7 +26,7 @@ class UpdateAuditSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateAuditSecurityGroupResponse
+        r"""UpdateAuditSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAuditSecurityGroupResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateAuditSecurityGroupResponse.
+        r"""Gets the result of this UpdateAuditSecurityGroupResponse.
 
         响应状态
 
@@ -55,7 +55,7 @@ class UpdateAuditSecurityGroupResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAuditSecurityGroupResponse.
+        r"""Sets the result of this UpdateAuditSecurityGroupResponse.
 
         响应状态
 

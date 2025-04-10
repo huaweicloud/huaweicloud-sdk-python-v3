@@ -43,7 +43,7 @@ class ProcessorVo:
     }
 
     def __init__(self, end_time=None, exec_duration_nano=None, id=None, last_step_task_ins_id=None, start_time=None, task_in_record_cnt=None, task_name=None, task_out_record_cnt=None, task_show_info=None, task_status=None):
-        """ProcessorVo
+        r"""ProcessorVo
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class ProcessorVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ProcessorVo.
+        r"""Gets the end_time of this ProcessorVo.
 
         结束时间
 
@@ -115,7 +115,7 @@ class ProcessorVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ProcessorVo.
+        r"""Sets the end_time of this ProcessorVo.
 
         结束时间
 
@@ -126,7 +126,7 @@ class ProcessorVo:
 
     @property
     def exec_duration_nano(self):
-        """Gets the exec_duration_nano of this ProcessorVo.
+        r"""Gets the exec_duration_nano of this ProcessorVo.
 
         执行时长
 
@@ -137,7 +137,7 @@ class ProcessorVo:
 
     @exec_duration_nano.setter
     def exec_duration_nano(self, exec_duration_nano):
-        """Sets the exec_duration_nano of this ProcessorVo.
+        r"""Sets the exec_duration_nano of this ProcessorVo.
 
         执行时长
 
@@ -148,7 +148,7 @@ class ProcessorVo:
 
     @property
     def id(self):
-        """Gets the id of this ProcessorVo.
+        r"""Gets the id of this ProcessorVo.
 
         执行过程id
 
@@ -159,7 +159,7 @@ class ProcessorVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProcessorVo.
+        r"""Sets the id of this ProcessorVo.
 
         执行过程id
 
@@ -170,7 +170,7 @@ class ProcessorVo:
 
     @property
     def last_step_task_ins_id(self):
-        """Gets the last_step_task_ins_id of this ProcessorVo.
+        r"""Gets the last_step_task_ins_id of this ProcessorVo.
 
         上游子任务id
 
@@ -181,7 +181,7 @@ class ProcessorVo:
 
     @last_step_task_ins_id.setter
     def last_step_task_ins_id(self, last_step_task_ins_id):
-        """Sets the last_step_task_ins_id of this ProcessorVo.
+        r"""Sets the last_step_task_ins_id of this ProcessorVo.
 
         上游子任务id
 
@@ -192,7 +192,7 @@ class ProcessorVo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ProcessorVo.
+        r"""Gets the start_time of this ProcessorVo.
 
         开始时间
 
@@ -203,7 +203,7 @@ class ProcessorVo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ProcessorVo.
+        r"""Sets the start_time of this ProcessorVo.
 
         开始时间
 
@@ -214,7 +214,7 @@ class ProcessorVo:
 
     @property
     def task_in_record_cnt(self):
-        """Gets the task_in_record_cnt of this ProcessorVo.
+        r"""Gets the task_in_record_cnt of this ProcessorVo.
 
         输入个数
 
@@ -225,7 +225,7 @@ class ProcessorVo:
 
     @task_in_record_cnt.setter
     def task_in_record_cnt(self, task_in_record_cnt):
-        """Sets the task_in_record_cnt of this ProcessorVo.
+        r"""Sets the task_in_record_cnt of this ProcessorVo.
 
         输入个数
 
@@ -236,7 +236,7 @@ class ProcessorVo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ProcessorVo.
+        r"""Gets the task_name of this ProcessorVo.
 
         执行过程名称
 
@@ -247,7 +247,7 @@ class ProcessorVo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ProcessorVo.
+        r"""Sets the task_name of this ProcessorVo.
 
         执行过程名称
 
@@ -258,7 +258,7 @@ class ProcessorVo:
 
     @property
     def task_out_record_cnt(self):
-        """Gets the task_out_record_cnt of this ProcessorVo.
+        r"""Gets the task_out_record_cnt of this ProcessorVo.
 
         输出个数
 
@@ -269,7 +269,7 @@ class ProcessorVo:
 
     @task_out_record_cnt.setter
     def task_out_record_cnt(self, task_out_record_cnt):
-        """Sets the task_out_record_cnt of this ProcessorVo.
+        r"""Sets the task_out_record_cnt of this ProcessorVo.
 
         输出个数
 
@@ -280,7 +280,7 @@ class ProcessorVo:
 
     @property
     def task_show_info(self):
-        """Gets the task_show_info of this ProcessorVo.
+        r"""Gets the task_show_info of this ProcessorVo.
 
         processor对外展示信息，k,v
 
@@ -291,7 +291,7 @@ class ProcessorVo:
 
     @task_show_info.setter
     def task_show_info(self, task_show_info):
-        """Sets the task_show_info of this ProcessorVo.
+        r"""Sets the task_show_info of this ProcessorVo.
 
         processor对外展示信息，k,v
 
@@ -302,7 +302,7 @@ class ProcessorVo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this ProcessorVo.
+        r"""Gets the task_status of this ProcessorVo.
 
         执行状态，作业任务状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 
@@ -313,7 +313,7 @@ class ProcessorVo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ProcessorVo.
+        r"""Sets the task_status of this ProcessorVo.
 
         执行状态，作业任务状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 

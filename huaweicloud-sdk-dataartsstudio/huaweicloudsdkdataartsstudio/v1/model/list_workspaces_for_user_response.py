@@ -30,7 +30,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
     }
 
     def __init__(self, count=None, total_page=None, data=None):
-        """ListWorkspacesForUserResponse
+        r"""ListWorkspacesForUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkspacesForUserResponse.
+        r"""Gets the count of this ListWorkspacesForUserResponse.
 
         当前工作空间用户记录数
 
@@ -69,7 +69,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkspacesForUserResponse.
+        r"""Sets the count of this ListWorkspacesForUserResponse.
 
         当前工作空间用户记录数
 
@@ -80,7 +80,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ListWorkspacesForUserResponse.
+        r"""Gets the total_page of this ListWorkspacesForUserResponse.
 
         查询结果总页数
 
@@ -91,7 +91,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ListWorkspacesForUserResponse.
+        r"""Sets the total_page of this ListWorkspacesForUserResponse.
 
         查询结果总页数
 
@@ -102,7 +102,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListWorkspacesForUserResponse.
+        r"""Gets the data of this ListWorkspacesForUserResponse.
 
         工作空间列表
 
@@ -113,7 +113,7 @@ class ListWorkspacesForUserResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListWorkspacesForUserResponse.
+        r"""Sets the data of this ListWorkspacesForUserResponse.
 
         工作空间列表
 

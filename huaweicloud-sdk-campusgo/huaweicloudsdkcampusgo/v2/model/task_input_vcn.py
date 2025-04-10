@@ -31,7 +31,7 @@ class TaskInputVcn:
     }
 
     def __init__(self, ip=None, port=None, username=None, password=None):
-        """TaskInputVcn
+        r"""TaskInputVcn
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TaskInputVcn:
 
     @property
     def ip(self):
-        """Gets the ip of this TaskInputVcn.
+        r"""Gets the ip of this TaskInputVcn.
 
         VCN服务器的IP地址
 
@@ -71,7 +71,7 @@ class TaskInputVcn:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this TaskInputVcn.
+        r"""Sets the ip of this TaskInputVcn.
 
         VCN服务器的IP地址
 
@@ -82,7 +82,7 @@ class TaskInputVcn:
 
     @property
     def port(self):
-        """Gets the port of this TaskInputVcn.
+        r"""Gets the port of this TaskInputVcn.
 
         VCN服务器的端口号
 
@@ -93,7 +93,7 @@ class TaskInputVcn:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this TaskInputVcn.
+        r"""Sets the port of this TaskInputVcn.
 
         VCN服务器的端口号
 
@@ -104,7 +104,7 @@ class TaskInputVcn:
 
     @property
     def username(self):
-        """Gets the username of this TaskInputVcn.
+        r"""Gets the username of this TaskInputVcn.
 
         VCN服务器的账号名
 
@@ -115,7 +115,7 @@ class TaskInputVcn:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this TaskInputVcn.
+        r"""Sets the username of this TaskInputVcn.
 
         VCN服务器的账号名
 
@@ -126,7 +126,7 @@ class TaskInputVcn:
 
     @property
     def password(self):
-        """Gets the password of this TaskInputVcn.
+        r"""Gets the password of this TaskInputVcn.
 
         VCN服务器的与账号对应的密码
 
@@ -137,7 +137,7 @@ class TaskInputVcn:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this TaskInputVcn.
+        r"""Sets the password of this TaskInputVcn.
 
         VCN服务器的与账号对应的密码
 

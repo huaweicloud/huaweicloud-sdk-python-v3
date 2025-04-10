@@ -27,7 +27,7 @@ class DeleteServiceItemResponseBodyData:
     }
 
     def __init__(self, id=None, name=None):
-        """DeleteServiceItemResponseBodyData
+        r"""DeleteServiceItemResponseBodyData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteServiceItemResponseBodyData:
 
     @property
     def id(self):
-        """Gets the id of this DeleteServiceItemResponseBodyData.
+        r"""Gets the id of this DeleteServiceItemResponseBodyData.
 
         服务组成员id
 
@@ -61,7 +61,7 @@ class DeleteServiceItemResponseBodyData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteServiceItemResponseBodyData.
+        r"""Sets the id of this DeleteServiceItemResponseBodyData.
 
         服务组成员id
 
@@ -72,7 +72,7 @@ class DeleteServiceItemResponseBodyData:
 
     @property
     def name(self):
-        """Gets the name of this DeleteServiceItemResponseBodyData.
+        r"""Gets the name of this DeleteServiceItemResponseBodyData.
 
         服务组成员名称，为源和目的端口
 
@@ -83,7 +83,7 @@ class DeleteServiceItemResponseBodyData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteServiceItemResponseBodyData.
+        r"""Sets the name of this DeleteServiceItemResponseBodyData.
 
         服务组成员名称，为源和目的端口
 

@@ -25,7 +25,7 @@ class StartChatRequest:
     }
 
     def __init__(self, body=None):
-        """StartChatRequest
+        r"""StartChatRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartChatRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartChatRequest.
+        r"""Gets the body of this StartChatRequest.
 
         :return: The body of this StartChatRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartChatRequestMessage`
@@ -52,7 +52,7 @@ class StartChatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartChatRequest.
+        r"""Sets the body of this StartChatRequest.
 
         :param body: The body of this StartChatRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.StartChatRequestMessage`

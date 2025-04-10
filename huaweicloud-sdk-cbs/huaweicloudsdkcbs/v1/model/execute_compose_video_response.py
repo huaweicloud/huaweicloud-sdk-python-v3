@@ -24,7 +24,7 @@ class ExecuteComposeVideoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExecuteComposeVideoResponse
+        r"""ExecuteComposeVideoResponse
 
         The model defined in huaweicloud sdk
 

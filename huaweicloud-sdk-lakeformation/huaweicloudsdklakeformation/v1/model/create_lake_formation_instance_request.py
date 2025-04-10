@@ -25,7 +25,7 @@ class CreateLakeFormationInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLakeFormationInstanceRequest
+        r"""CreateLakeFormationInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLakeFormationInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLakeFormationInstanceRequest.
+        r"""Gets the body of this CreateLakeFormationInstanceRequest.
 
         :return: The body of this CreateLakeFormationInstanceRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateInstanceRequestBody`
@@ -52,7 +52,7 @@ class CreateLakeFormationInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLakeFormationInstanceRequest.
+        r"""Sets the body of this CreateLakeFormationInstanceRequest.
 
         :param body: The body of this CreateLakeFormationInstanceRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.CreateInstanceRequestBody`

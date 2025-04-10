@@ -28,7 +28,7 @@ class ListOffSiteBackupsResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, total_count=None):
-        """ListOffSiteBackupsResponse
+        r"""ListOffSiteBackupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOffSiteBackupsResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ListOffSiteBackupsResponse.
+        r"""Gets the backups of this ListOffSiteBackupsResponse.
 
         跨区域备份信息。
 
@@ -62,7 +62,7 @@ class ListOffSiteBackupsResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ListOffSiteBackupsResponse.
+        r"""Sets the backups of this ListOffSiteBackupsResponse.
 
         跨区域备份信息。
 
@@ -73,7 +73,7 @@ class ListOffSiteBackupsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListOffSiteBackupsResponse.
+        r"""Gets the total_count of this ListOffSiteBackupsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListOffSiteBackupsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListOffSiteBackupsResponse.
+        r"""Sets the total_count of this ListOffSiteBackupsResponse.
 
         总记录数。
 

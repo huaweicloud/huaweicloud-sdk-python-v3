@@ -28,7 +28,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
     }
 
     def __init__(self, bitrate_info_list=None, x_request_id=None):
-        """ListSingleStreamBitrateResponse
+        r"""ListSingleStreamBitrateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
 
     @property
     def bitrate_info_list(self):
-        """Gets the bitrate_info_list of this ListSingleStreamBitrateResponse.
+        r"""Gets the bitrate_info_list of this ListSingleStreamBitrateResponse.
 
         用量详情。
 
@@ -62,7 +62,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
 
     @bitrate_info_list.setter
     def bitrate_info_list(self, bitrate_info_list):
-        """Sets the bitrate_info_list of this ListSingleStreamBitrateResponse.
+        r"""Sets the bitrate_info_list of this ListSingleStreamBitrateResponse.
 
         用量详情。
 
@@ -73,7 +73,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSingleStreamBitrateResponse.
+        r"""Gets the x_request_id of this ListSingleStreamBitrateResponse.
 
         :return: The x_request_id of this ListSingleStreamBitrateResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSingleStreamBitrateResponse.
+        r"""Sets the x_request_id of this ListSingleStreamBitrateResponse.
 
         :param x_request_id: The x_request_id of this ListSingleStreamBitrateResponse.
         :type x_request_id: str

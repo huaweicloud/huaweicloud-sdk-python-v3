@@ -26,7 +26,7 @@ class ListBreifStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListBreifStructTemplateResponse
+        r"""ListBreifStructTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBreifStructTemplateResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListBreifStructTemplateResponse.
+        r"""Gets the results of this ListBreifStructTemplateResponse.
 
         结构化模板缩略信息列表
 
@@ -55,7 +55,7 @@ class ListBreifStructTemplateResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListBreifStructTemplateResponse.
+        r"""Sets the results of this ListBreifStructTemplateResponse.
 
         结构化模板缩略信息列表
 

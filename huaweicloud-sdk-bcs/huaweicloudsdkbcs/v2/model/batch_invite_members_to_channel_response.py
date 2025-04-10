@@ -26,7 +26,7 @@ class BatchInviteMembersToChannelResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """BatchInviteMembersToChannelResponse
+        r"""BatchInviteMembersToChannelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchInviteMembersToChannelResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchInviteMembersToChannelResponse.
+        r"""Gets the result of this BatchInviteMembersToChannelResponse.
 
         请求成功的结果
 
@@ -55,7 +55,7 @@ class BatchInviteMembersToChannelResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchInviteMembersToChannelResponse.
+        r"""Sets the result of this BatchInviteMembersToChannelResponse.
 
         请求成功的结果
 

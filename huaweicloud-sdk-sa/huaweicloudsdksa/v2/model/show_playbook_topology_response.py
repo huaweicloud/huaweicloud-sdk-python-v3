@@ -30,7 +30,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
     }
 
     def __init__(self, count=None, action_instances=None, x_request_id=None):
-        """ShowPlaybookTopologyResponse
+        r"""ShowPlaybookTopologyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowPlaybookTopologyResponse.
+        r"""Gets the count of this ShowPlaybookTopologyResponse.
 
         tatal count
 
@@ -69,7 +69,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowPlaybookTopologyResponse.
+        r"""Sets the count of this ShowPlaybookTopologyResponse.
 
         tatal count
 
@@ -80,7 +80,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
     @property
     def action_instances(self):
-        """Gets the action_instances of this ShowPlaybookTopologyResponse.
+        r"""Gets the action_instances of this ShowPlaybookTopologyResponse.
 
         Playbook action instances list
 
@@ -91,7 +91,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
     @action_instances.setter
     def action_instances(self, action_instances):
-        """Sets the action_instances of this ShowPlaybookTopologyResponse.
+        r"""Sets the action_instances of this ShowPlaybookTopologyResponse.
 
         Playbook action instances list
 
@@ -102,7 +102,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPlaybookTopologyResponse.
+        r"""Gets the x_request_id of this ShowPlaybookTopologyResponse.
 
         :return: The x_request_id of this ShowPlaybookTopologyResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPlaybookTopologyResponse.
+        r"""Sets the x_request_id of this ShowPlaybookTopologyResponse.
 
         :param x_request_id: The x_request_id of this ShowPlaybookTopologyResponse.
         :type x_request_id: str

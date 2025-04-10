@@ -39,7 +39,7 @@ class AclAccountResp:
     }
 
     def __init__(self, account_id=None, account_name=None, account_type=None, instance_id=None, status=None, account_role=None, description=None, error_code=None):
-        """AclAccountResp
+        r"""AclAccountResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AclAccountResp:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AclAccountResp.
+        r"""Gets the account_id of this AclAccountResp.
 
         账号ID
 
@@ -103,7 +103,7 @@ class AclAccountResp:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AclAccountResp.
+        r"""Sets the account_id of this AclAccountResp.
 
         账号ID
 
@@ -114,7 +114,7 @@ class AclAccountResp:
 
     @property
     def account_name(self):
-        """Gets the account_name of this AclAccountResp.
+        r"""Gets the account_name of this AclAccountResp.
 
         账号名
 
@@ -125,7 +125,7 @@ class AclAccountResp:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this AclAccountResp.
+        r"""Sets the account_name of this AclAccountResp.
 
         账号名
 
@@ -136,7 +136,7 @@ class AclAccountResp:
 
     @property
     def account_type(self):
-        """Gets the account_type of this AclAccountResp.
+        r"""Gets the account_type of this AclAccountResp.
 
         账号类型
 
@@ -147,7 +147,7 @@ class AclAccountResp:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this AclAccountResp.
+        r"""Sets the account_type of this AclAccountResp.
 
         账号类型
 
@@ -158,7 +158,7 @@ class AclAccountResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AclAccountResp.
+        r"""Gets the instance_id of this AclAccountResp.
 
         账号所属实例ID
 
@@ -169,7 +169,7 @@ class AclAccountResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AclAccountResp.
+        r"""Sets the instance_id of this AclAccountResp.
 
         账号所属实例ID
 
@@ -180,7 +180,7 @@ class AclAccountResp:
 
     @property
     def status(self):
-        """Gets the status of this AclAccountResp.
+        r"""Gets the status of this AclAccountResp.
 
         ACL账号状态 取值范围： - CREATING：账号创建中。 - AVAILABLE：账号可用。 - CREATEFAILED：账号创建失败。 - DELETED：账号已删除。 - DELETEFAILED：账号删除失败。 - DELETING：账号删除中。 - UPDATING：账号更新中。 - ERROR：账号异常。 
 
@@ -191,7 +191,7 @@ class AclAccountResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AclAccountResp.
+        r"""Sets the status of this AclAccountResp.
 
         ACL账号状态 取值范围： - CREATING：账号创建中。 - AVAILABLE：账号可用。 - CREATEFAILED：账号创建失败。 - DELETED：账号已删除。 - DELETEFAILED：账号删除失败。 - DELETING：账号删除中。 - UPDATING：账号更新中。 - ERROR：账号异常。 
 
@@ -202,7 +202,7 @@ class AclAccountResp:
 
     @property
     def account_role(self):
-        """Gets the account_role of this AclAccountResp.
+        r"""Gets the account_role of this AclAccountResp.
 
         账号权限
 
@@ -213,7 +213,7 @@ class AclAccountResp:
 
     @account_role.setter
     def account_role(self, account_role):
-        """Sets the account_role of this AclAccountResp.
+        r"""Sets the account_role of this AclAccountResp.
 
         账号权限
 
@@ -224,7 +224,7 @@ class AclAccountResp:
 
     @property
     def description(self):
-        """Gets the description of this AclAccountResp.
+        r"""Gets the description of this AclAccountResp.
 
         账号描述
 
@@ -235,7 +235,7 @@ class AclAccountResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AclAccountResp.
+        r"""Sets the description of this AclAccountResp.
 
         账号描述
 
@@ -246,7 +246,7 @@ class AclAccountResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AclAccountResp.
+        r"""Gets the error_code of this AclAccountResp.
 
         错误码（暂未使用，赋值为null）
 
@@ -257,7 +257,7 @@ class AclAccountResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AclAccountResp.
+        r"""Sets the error_code of this AclAccountResp.
 
         错误码（暂未使用，赋值为null）
 

@@ -39,7 +39,7 @@ class Contents:
     }
 
     def __init__(self, owner=None, e_tag=None, type=None, key=None, last_modified=None, size=None, storage_class=None):
-        """Contents
+        r"""Contents
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class Contents:
 
     @property
     def owner(self):
-        """Gets the owner of this Contents.
+        r"""Gets the owner of this Contents.
 
         :return: The owner of this Contents.
         :rtype: :class:`huaweicloudsdkobs.v1.Owner`
@@ -96,7 +96,7 @@ class Contents:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Contents.
+        r"""Sets the owner of this Contents.
 
         :param owner: The owner of this Contents.
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
@@ -105,7 +105,7 @@ class Contents:
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this Contents.
+        r"""Gets the e_tag of this Contents.
 
         Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
 
@@ -116,7 +116,7 @@ class Contents:
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this Contents.
+        r"""Sets the e_tag of this Contents.
 
         Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
 
@@ -127,7 +127,7 @@ class Contents:
 
     @property
     def type(self):
-        """Gets the type of this Contents.
+        r"""Gets the type of this Contents.
 
         Object type. This parameter is returned when the object type is not **Normal**.
 
@@ -138,7 +138,7 @@ class Contents:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Contents.
+        r"""Sets the type of this Contents.
 
         Object type. This parameter is returned when the object type is not **Normal**.
 
@@ -149,7 +149,7 @@ class Contents:
 
     @property
     def key(self):
-        """Gets the key of this Contents.
+        r"""Gets the key of this Contents.
 
         Name of the object
 
@@ -160,7 +160,7 @@ class Contents:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Contents.
+        r"""Sets the key of this Contents.
 
         Name of the object
 
@@ -171,7 +171,7 @@ class Contents:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this Contents.
+        r"""Gets the last_modified of this Contents.
 
         Time (UTC) when the object was last modified
 
@@ -182,7 +182,7 @@ class Contents:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this Contents.
+        r"""Sets the last_modified of this Contents.
 
         Time (UTC) when the object was last modified
 
@@ -193,7 +193,7 @@ class Contents:
 
     @property
     def size(self):
-        """Gets the size of this Contents.
+        r"""Gets the size of this Contents.
 
         Object size in bytes
 
@@ -204,7 +204,7 @@ class Contents:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Contents.
+        r"""Sets the size of this Contents.
 
         Object size in bytes
 
@@ -215,7 +215,7 @@ class Contents:
 
     @property
     def storage_class(self):
-        """Gets the storage_class of this Contents.
+        r"""Gets the storage_class of this Contents.
 
         Storage class of the object
 
@@ -226,7 +226,7 @@ class Contents:
 
     @storage_class.setter
     def storage_class(self, storage_class):
-        """Sets the storage_class of this Contents.
+        r"""Sets the storage_class of this Contents.
 
         Storage class of the object
 

@@ -25,7 +25,7 @@ class DeleteRouteOption:
     }
 
     def __init__(self, destination=None):
-        """DeleteRouteOption
+        r"""DeleteRouteOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRouteOption:
 
     @property
     def destination(self):
-        """Gets the destination of this DeleteRouteOption.
+        r"""Gets the destination of this DeleteRouteOption.
 
         功能说明：路由的目的网段  约束：合法的CIDR格式
 
@@ -53,7 +53,7 @@ class DeleteRouteOption:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this DeleteRouteOption.
+        r"""Sets the destination of this DeleteRouteOption.
 
         功能说明：路由的目的网段  约束：合法的CIDR格式
 

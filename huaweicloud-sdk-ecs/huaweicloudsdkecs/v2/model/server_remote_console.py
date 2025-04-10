@@ -29,7 +29,7 @@ class ServerRemoteConsole:
     }
 
     def __init__(self, protocol=None, type=None, url=None):
-        """ServerRemoteConsole
+        r"""ServerRemoteConsole
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ServerRemoteConsole:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ServerRemoteConsole.
+        r"""Gets the protocol of this ServerRemoteConsole.
 
         远程登录的协议。
 
@@ -65,7 +65,7 @@ class ServerRemoteConsole:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ServerRemoteConsole.
+        r"""Sets the protocol of this ServerRemoteConsole.
 
         远程登录的协议。
 
@@ -76,7 +76,7 @@ class ServerRemoteConsole:
 
     @property
     def type(self):
-        """Gets the type of this ServerRemoteConsole.
+        r"""Gets the type of this ServerRemoteConsole.
 
         远程登录的类型。
 
@@ -87,7 +87,7 @@ class ServerRemoteConsole:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ServerRemoteConsole.
+        r"""Sets the type of this ServerRemoteConsole.
 
         远程登录的类型。
 
@@ -98,7 +98,7 @@ class ServerRemoteConsole:
 
     @property
     def url(self):
-        """Gets the url of this ServerRemoteConsole.
+        r"""Gets the url of this ServerRemoteConsole.
 
         远程登录的url。
 
@@ -109,7 +109,7 @@ class ServerRemoteConsole:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ServerRemoteConsole.
+        r"""Sets the url of this ServerRemoteConsole.
 
         远程登录的url。
 

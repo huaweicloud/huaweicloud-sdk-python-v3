@@ -27,7 +27,7 @@ class MysqlBackupStrategy:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """MysqlBackupStrategy
+        r"""MysqlBackupStrategy
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MysqlBackupStrategy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MysqlBackupStrategy.
+        r"""Gets the start_time of this MysqlBackupStrategy.
 
         自动备份开始时间段。自动备份将在该时间一个小时内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  1. HH取值必须比hh大1。 2. mm和MM取值必须相同，且取值必须为00。
 
@@ -60,7 +60,7 @@ class MysqlBackupStrategy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MysqlBackupStrategy.
+        r"""Sets the start_time of this MysqlBackupStrategy.
 
         自动备份开始时间段。自动备份将在该时间一个小时内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  1. HH取值必须比hh大1。 2. mm和MM取值必须相同，且取值必须为00。
 
@@ -71,7 +71,7 @@ class MysqlBackupStrategy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this MysqlBackupStrategy.
+        r"""Gets the keep_days of this MysqlBackupStrategy.
 
         自动备份保留天数，取值范围：1-732
 
@@ -82,7 +82,7 @@ class MysqlBackupStrategy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this MysqlBackupStrategy.
+        r"""Sets the keep_days of this MysqlBackupStrategy.
 
         自动备份保留天数，取值范围：1-732
 

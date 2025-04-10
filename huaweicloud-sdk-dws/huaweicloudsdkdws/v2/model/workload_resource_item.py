@@ -31,7 +31,7 @@ class WorkloadResourceItem:
     }
 
     def __init__(self, resource_name=None, resource_value=None, value_unit=None, resource_description=None):
-        """WorkloadResourceItem
+        r"""WorkloadResourceItem
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class WorkloadResourceItem:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this WorkloadResourceItem.
+        r"""Gets the resource_name of this WorkloadResourceItem.
 
         资源名称。
 
@@ -73,7 +73,7 @@ class WorkloadResourceItem:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this WorkloadResourceItem.
+        r"""Sets the resource_name of this WorkloadResourceItem.
 
         资源名称。
 
@@ -84,7 +84,7 @@ class WorkloadResourceItem:
 
     @property
     def resource_value(self):
-        """Gets the resource_value of this WorkloadResourceItem.
+        r"""Gets the resource_value of this WorkloadResourceItem.
 
         资源属性值。
 
@@ -95,7 +95,7 @@ class WorkloadResourceItem:
 
     @resource_value.setter
     def resource_value(self, resource_value):
-        """Sets the resource_value of this WorkloadResourceItem.
+        r"""Sets the resource_value of this WorkloadResourceItem.
 
         资源属性值。
 
@@ -106,7 +106,7 @@ class WorkloadResourceItem:
 
     @property
     def value_unit(self):
-        """Gets the value_unit of this WorkloadResourceItem.
+        r"""Gets the value_unit of this WorkloadResourceItem.
 
         资源属性单位。
 
@@ -117,7 +117,7 @@ class WorkloadResourceItem:
 
     @value_unit.setter
     def value_unit(self, value_unit):
-        """Sets the value_unit of this WorkloadResourceItem.
+        r"""Sets the value_unit of this WorkloadResourceItem.
 
         资源属性单位。
 
@@ -128,7 +128,7 @@ class WorkloadResourceItem:
 
     @property
     def resource_description(self):
-        """Gets the resource_description of this WorkloadResourceItem.
+        r"""Gets the resource_description of this WorkloadResourceItem.
 
         资源附加描述
 
@@ -139,7 +139,7 @@ class WorkloadResourceItem:
 
     @resource_description.setter
     def resource_description(self, resource_description):
-        """Sets the resource_description of this WorkloadResourceItem.
+        r"""Sets the resource_description of this WorkloadResourceItem.
 
         资源附加描述
 

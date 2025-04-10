@@ -25,7 +25,7 @@ class ListAllAppRequest:
     }
 
     def __init__(self, body=None):
-        """ListAllAppRequest
+        r"""ListAllAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAllAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAllAppRequest.
+        r"""Gets the body of this ListAllAppRequest.
 
         :return: The body of this ListAllAppRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListAllAppRequestBody`
@@ -52,7 +52,7 @@ class ListAllAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAllAppRequest.
+        r"""Sets the body of this ListAllAppRequest.
 
         :param body: The body of this ListAllAppRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.ListAllAppRequestBody`

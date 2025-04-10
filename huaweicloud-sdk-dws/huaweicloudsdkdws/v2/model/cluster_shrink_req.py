@@ -35,7 +35,7 @@ class ClusterShrinkReq:
     }
 
     def __init__(self, shrink_number=None, online=None, type=None, retry=None, force_backup=None, need_agency=None):
-        """ClusterShrinkReq
+        r"""ClusterShrinkReq
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ClusterShrinkReq:
 
     @property
     def shrink_number(self):
-        """Gets the shrink_number of this ClusterShrinkReq.
+        r"""Gets the shrink_number of this ClusterShrinkReq.
 
         缩容数
 
@@ -84,7 +84,7 @@ class ClusterShrinkReq:
 
     @shrink_number.setter
     def shrink_number(self, shrink_number):
-        """Sets the shrink_number of this ClusterShrinkReq.
+        r"""Sets the shrink_number of this ClusterShrinkReq.
 
         缩容数
 
@@ -95,7 +95,7 @@ class ClusterShrinkReq:
 
     @property
     def online(self):
-        """Gets the online of this ClusterShrinkReq.
+        r"""Gets the online of this ClusterShrinkReq.
 
         在线
 
@@ -106,7 +106,7 @@ class ClusterShrinkReq:
 
     @online.setter
     def online(self, online):
-        """Sets the online of this ClusterShrinkReq.
+        r"""Sets the online of this ClusterShrinkReq.
 
         在线
 
@@ -117,7 +117,7 @@ class ClusterShrinkReq:
 
     @property
     def type(self):
-        """Gets the type of this ClusterShrinkReq.
+        r"""Gets the type of this ClusterShrinkReq.
 
         数据库类型
 
@@ -128,7 +128,7 @@ class ClusterShrinkReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterShrinkReq.
+        r"""Sets the type of this ClusterShrinkReq.
 
         数据库类型
 
@@ -139,7 +139,7 @@ class ClusterShrinkReq:
 
     @property
     def retry(self):
-        """Gets the retry of this ClusterShrinkReq.
+        r"""Gets the retry of this ClusterShrinkReq.
 
         重试
 
@@ -150,7 +150,7 @@ class ClusterShrinkReq:
 
     @retry.setter
     def retry(self, retry):
-        """Sets the retry of this ClusterShrinkReq.
+        r"""Sets the retry of this ClusterShrinkReq.
 
         重试
 
@@ -161,7 +161,7 @@ class ClusterShrinkReq:
 
     @property
     def force_backup(self):
-        """Gets the force_backup of this ClusterShrinkReq.
+        r"""Gets the force_backup of this ClusterShrinkReq.
 
         执行备份
 
@@ -172,7 +172,7 @@ class ClusterShrinkReq:
 
     @force_backup.setter
     def force_backup(self, force_backup):
-        """Sets the force_backup of this ClusterShrinkReq.
+        r"""Sets the force_backup of this ClusterShrinkReq.
 
         执行备份
 
@@ -183,7 +183,7 @@ class ClusterShrinkReq:
 
     @property
     def need_agency(self):
-        """Gets the need_agency of this ClusterShrinkReq.
+        r"""Gets the need_agency of this ClusterShrinkReq.
 
         是否需要委托
 
@@ -194,7 +194,7 @@ class ClusterShrinkReq:
 
     @need_agency.setter
     def need_agency(self, need_agency):
-        """Sets the need_agency of this ClusterShrinkReq.
+        r"""Sets the need_agency of this ClusterShrinkReq.
 
         是否需要委托
 

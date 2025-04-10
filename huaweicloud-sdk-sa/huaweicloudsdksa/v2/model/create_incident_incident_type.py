@@ -31,7 +31,7 @@ class CreateIncidentIncidentType:
     }
 
     def __init__(self, id=None, layout_id=None, incident_type=None, category=None):
-        """CreateIncidentIncidentType
+        r"""CreateIncidentIncidentType
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateIncidentIncidentType:
 
     @property
     def id(self):
-        """Gets the id of this CreateIncidentIncidentType.
+        r"""Gets the id of this CreateIncidentIncidentType.
 
         Id value
 
@@ -75,7 +75,7 @@ class CreateIncidentIncidentType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIncidentIncidentType.
+        r"""Sets the id of this CreateIncidentIncidentType.
 
         Id value
 
@@ -86,7 +86,7 @@ class CreateIncidentIncidentType:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this CreateIncidentIncidentType.
+        r"""Gets the layout_id of this CreateIncidentIncidentType.
 
         Id value
 
@@ -97,7 +97,7 @@ class CreateIncidentIncidentType:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this CreateIncidentIncidentType.
+        r"""Sets the layout_id of this CreateIncidentIncidentType.
 
         Id value
 
@@ -108,7 +108,7 @@ class CreateIncidentIncidentType:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this CreateIncidentIncidentType.
+        r"""Gets the incident_type of this CreateIncidentIncidentType.
 
         Id value
 
@@ -119,7 +119,7 @@ class CreateIncidentIncidentType:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this CreateIncidentIncidentType.
+        r"""Sets the incident_type of this CreateIncidentIncidentType.
 
         Id value
 
@@ -130,7 +130,7 @@ class CreateIncidentIncidentType:
 
     @property
     def category(self):
-        """Gets the category of this CreateIncidentIncidentType.
+        r"""Gets the category of this CreateIncidentIncidentType.
 
         Id value
 
@@ -141,7 +141,7 @@ class CreateIncidentIncidentType:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateIncidentIncidentType.
+        r"""Sets the category of this CreateIncidentIncidentType.
 
         Id value
 

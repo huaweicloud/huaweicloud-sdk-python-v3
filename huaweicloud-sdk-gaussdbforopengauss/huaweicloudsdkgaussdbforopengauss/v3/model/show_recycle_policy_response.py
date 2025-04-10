@@ -26,7 +26,7 @@ class ShowRecyclePolicyResponse(SdkResponse):
     }
 
     def __init__(self, retention_period_in_days=None):
-        """ShowRecyclePolicyResponse
+        r"""ShowRecyclePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRecyclePolicyResponse(SdkResponse):
 
     @property
     def retention_period_in_days(self):
-        """Gets the retention_period_in_days of this ShowRecyclePolicyResponse.
+        r"""Gets the retention_period_in_days of this ShowRecyclePolicyResponse.
 
         已删除实例保留天数，可设置范围为1~7天。 - 取值1~7，设置已删除实例的保留天数为该值。
 
@@ -55,7 +55,7 @@ class ShowRecyclePolicyResponse(SdkResponse):
 
     @retention_period_in_days.setter
     def retention_period_in_days(self, retention_period_in_days):
-        """Sets the retention_period_in_days of this ShowRecyclePolicyResponse.
+        r"""Sets the retention_period_in_days of this ShowRecyclePolicyResponse.
 
         已删除实例保留天数，可设置范围为1~7天。 - 取值1~7，设置已删除实例的保留天数为该值。
 

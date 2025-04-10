@@ -31,7 +31,7 @@ class Extends:
     }
 
     def __init__(self, tag_ids=None, domain_ids=None, source=None, return_all_answers=None):
-        """Extends
+        r"""Extends
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Extends:
 
     @property
     def tag_ids(self):
-        """Gets the tag_ids of this Extends.
+        r"""Gets the tag_ids of this Extends.
 
         :return: The tag_ids of this Extends.
         :rtype: :class:`huaweicloudsdkcbs.v1.Tag`
@@ -73,7 +73,7 @@ class Extends:
 
     @tag_ids.setter
     def tag_ids(self, tag_ids):
-        """Sets the tag_ids of this Extends.
+        r"""Sets the tag_ids of this Extends.
 
         :param tag_ids: The tag_ids of this Extends.
         :type tag_ids: :class:`huaweicloudsdkcbs.v1.Tag`
@@ -82,7 +82,7 @@ class Extends:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this Extends.
+        r"""Gets the domain_ids of this Extends.
 
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
@@ -93,7 +93,7 @@ class Extends:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this Extends.
+        r"""Sets the domain_ids of this Extends.
 
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
@@ -104,7 +104,7 @@ class Extends:
 
     @property
     def source(self):
-        """Gets the source of this Extends.
+        r"""Gets the source of this Extends.
 
         问题来源 其他支持用户自定义，最终体现在问答日志里
 
@@ -115,7 +115,7 @@ class Extends:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this Extends.
+        r"""Sets the source of this Extends.
 
         问题来源 其他支持用户自定义，最终体现在问答日志里
 
@@ -126,7 +126,7 @@ class Extends:
 
     @property
     def return_all_answers(self):
-        """Gets the return_all_answers of this Extends.
+        r"""Gets the return_all_answers of this Extends.
 
         是否返回所有类型的回答
 
@@ -137,7 +137,7 @@ class Extends:
 
     @return_all_answers.setter
     def return_all_answers(self, return_all_answers):
-        """Sets the return_all_answers of this Extends.
+        r"""Sets the return_all_answers of this Extends.
 
         是否返回所有类型的回答
 

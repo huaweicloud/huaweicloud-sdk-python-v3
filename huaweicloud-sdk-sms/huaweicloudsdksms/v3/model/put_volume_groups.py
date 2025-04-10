@@ -31,7 +31,7 @@ class PutVolumeGroups:
     }
 
     def __init__(self, logical_volumes=None, id=None, need_migration=None, adjust_size=None):
-        """PutVolumeGroups
+        r"""PutVolumeGroups
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PutVolumeGroups:
 
     @property
     def logical_volumes(self):
-        """Gets the logical_volumes of this PutVolumeGroups.
+        r"""Gets the logical_volumes of this PutVolumeGroups.
 
         lv信息
 
@@ -74,7 +74,7 @@ class PutVolumeGroups:
 
     @logical_volumes.setter
     def logical_volumes(self, logical_volumes):
-        """Sets the logical_volumes of this PutVolumeGroups.
+        r"""Sets the logical_volumes of this PutVolumeGroups.
 
         lv信息
 
@@ -85,7 +85,7 @@ class PutVolumeGroups:
 
     @property
     def id(self):
-        """Gets the id of this PutVolumeGroups.
+        r"""Gets the id of this PutVolumeGroups.
 
         卷组ID
 
@@ -96,7 +96,7 @@ class PutVolumeGroups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PutVolumeGroups.
+        r"""Sets the id of this PutVolumeGroups.
 
         卷组ID
 
@@ -107,7 +107,7 @@ class PutVolumeGroups:
 
     @property
     def need_migration(self):
-        """Gets the need_migration of this PutVolumeGroups.
+        r"""Gets the need_migration of this PutVolumeGroups.
 
         是否迁移
 
@@ -118,7 +118,7 @@ class PutVolumeGroups:
 
     @need_migration.setter
     def need_migration(self, need_migration):
-        """Sets the need_migration of this PutVolumeGroups.
+        r"""Sets the need_migration of this PutVolumeGroups.
 
         是否迁移
 
@@ -129,7 +129,7 @@ class PutVolumeGroups:
 
     @property
     def adjust_size(self):
-        """Gets the adjust_size of this PutVolumeGroups.
+        r"""Gets the adjust_size of this PutVolumeGroups.
 
         调整大小
 
@@ -140,7 +140,7 @@ class PutVolumeGroups:
 
     @adjust_size.setter
     def adjust_size(self, adjust_size):
-        """Sets the adjust_size of this PutVolumeGroups.
+        r"""Sets the adjust_size of this PutVolumeGroups.
 
         调整大小
 

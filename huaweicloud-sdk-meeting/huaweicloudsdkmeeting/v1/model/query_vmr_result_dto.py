@@ -51,7 +51,7 @@ class QueryVmrResultDTO:
     }
 
     def __init__(self, id=None, vmr_id=None, vmr_name=None, gust_pwd=None, gust_join_url=None, chair_pwd=None, chair_join_url=None, allow_gust_first=None, gust_first_notice=None, vmr_mode=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, status=None):
-        """QueryVmrResultDTO
+        r"""QueryVmrResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class QueryVmrResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryVmrResultDTO.
+        r"""Gets the id of this QueryVmrResultDTO.
 
         云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
@@ -145,7 +145,7 @@ class QueryVmrResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryVmrResultDTO.
+        r"""Sets the id of this QueryVmrResultDTO.
 
         云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
@@ -156,7 +156,7 @@ class QueryVmrResultDTO:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this QueryVmrResultDTO.
+        r"""Gets the vmr_id of this QueryVmrResultDTO.
 
         云会议室的固定会议ID或者个人会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
 
@@ -167,7 +167,7 @@ class QueryVmrResultDTO:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this QueryVmrResultDTO.
+        r"""Sets the vmr_id of this QueryVmrResultDTO.
 
         云会议室的固定会议ID或者个人会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
 
@@ -178,7 +178,7 @@ class QueryVmrResultDTO:
 
     @property
     def vmr_name(self):
-        """Gets the vmr_name of this QueryVmrResultDTO.
+        r"""Gets the vmr_name of this QueryVmrResultDTO.
 
         云会议室名称。
 
@@ -189,7 +189,7 @@ class QueryVmrResultDTO:
 
     @vmr_name.setter
     def vmr_name(self, vmr_name):
-        """Sets the vmr_name of this QueryVmrResultDTO.
+        r"""Sets the vmr_name of this QueryVmrResultDTO.
 
         云会议室名称。
 
@@ -200,7 +200,7 @@ class QueryVmrResultDTO:
 
     @property
     def gust_pwd(self):
-        """Gets the gust_pwd of this QueryVmrResultDTO.
+        r"""Gets the gust_pwd of this QueryVmrResultDTO.
 
         来宾密码。
 
@@ -211,7 +211,7 @@ class QueryVmrResultDTO:
 
     @gust_pwd.setter
     def gust_pwd(self, gust_pwd):
-        """Sets the gust_pwd of this QueryVmrResultDTO.
+        r"""Sets the gust_pwd of this QueryVmrResultDTO.
 
         来宾密码。
 
@@ -222,7 +222,7 @@ class QueryVmrResultDTO:
 
     @property
     def gust_join_url(self):
-        """Gets the gust_join_url of this QueryVmrResultDTO.
+        r"""Gets the gust_join_url of this QueryVmrResultDTO.
 
         来宾与会链接。
 
@@ -233,7 +233,7 @@ class QueryVmrResultDTO:
 
     @gust_join_url.setter
     def gust_join_url(self, gust_join_url):
-        """Sets the gust_join_url of this QueryVmrResultDTO.
+        r"""Sets the gust_join_url of this QueryVmrResultDTO.
 
         来宾与会链接。
 
@@ -244,7 +244,7 @@ class QueryVmrResultDTO:
 
     @property
     def chair_pwd(self):
-        """Gets the chair_pwd of this QueryVmrResultDTO.
+        r"""Gets the chair_pwd of this QueryVmrResultDTO.
 
         主持人密码。
 
@@ -255,7 +255,7 @@ class QueryVmrResultDTO:
 
     @chair_pwd.setter
     def chair_pwd(self, chair_pwd):
-        """Sets the chair_pwd of this QueryVmrResultDTO.
+        r"""Sets the chair_pwd of this QueryVmrResultDTO.
 
         主持人密码。
 
@@ -266,7 +266,7 @@ class QueryVmrResultDTO:
 
     @property
     def chair_join_url(self):
-        """Gets the chair_join_url of this QueryVmrResultDTO.
+        r"""Gets the chair_join_url of this QueryVmrResultDTO.
 
         主持人与会链接。
 
@@ -277,7 +277,7 @@ class QueryVmrResultDTO:
 
     @chair_join_url.setter
     def chair_join_url(self, chair_join_url):
-        """Sets the chair_join_url of this QueryVmrResultDTO.
+        r"""Sets the chair_join_url of this QueryVmrResultDTO.
 
         主持人与会链接。
 
@@ -288,7 +288,7 @@ class QueryVmrResultDTO:
 
     @property
     def allow_gust_first(self):
-        """Gets the allow_gust_first of this QueryVmrResultDTO.
+        r"""Gets the allow_gust_first of this QueryVmrResultDTO.
 
         允许来宾先入会。
 
@@ -299,7 +299,7 @@ class QueryVmrResultDTO:
 
     @allow_gust_first.setter
     def allow_gust_first(self, allow_gust_first):
-        """Sets the allow_gust_first of this QueryVmrResultDTO.
+        r"""Sets the allow_gust_first of this QueryVmrResultDTO.
 
         允许来宾先入会。
 
@@ -310,7 +310,7 @@ class QueryVmrResultDTO:
 
     @property
     def gust_first_notice(self):
-        """Gets the gust_first_notice of this QueryVmrResultDTO.
+        r"""Gets the gust_first_notice of this QueryVmrResultDTO.
 
         云会议室被使用后是否通知会议室所有者。
 
@@ -321,7 +321,7 @@ class QueryVmrResultDTO:
 
     @gust_first_notice.setter
     def gust_first_notice(self, gust_first_notice):
-        """Sets the gust_first_notice of this QueryVmrResultDTO.
+        r"""Sets the gust_first_notice of this QueryVmrResultDTO.
 
         云会议室被使用后是否通知会议室所有者。
 
@@ -332,7 +332,7 @@ class QueryVmrResultDTO:
 
     @property
     def vmr_mode(self):
-        """Gets the vmr_mode of this QueryVmrResultDTO.
+        r"""Gets the vmr_mode of this QueryVmrResultDTO.
 
         VMR模式。 * 0: 个人会议ID * 1: 云会议室 * 2: 网络研讨会 
 
@@ -343,7 +343,7 @@ class QueryVmrResultDTO:
 
     @vmr_mode.setter
     def vmr_mode(self, vmr_mode):
-        """Sets the vmr_mode of this QueryVmrResultDTO.
+        r"""Sets the vmr_mode of this QueryVmrResultDTO.
 
         VMR模式。 * 0: 个人会议ID * 1: 云会议室 * 2: 网络研讨会 
 
@@ -354,7 +354,7 @@ class QueryVmrResultDTO:
 
     @property
     def vmr_pkg_id(self):
-        """Gets the vmr_pkg_id of this QueryVmrResultDTO.
+        r"""Gets the vmr_pkg_id of this QueryVmrResultDTO.
 
         云会议室套餐包的id，仅云会议室返回。
 
@@ -365,7 +365,7 @@ class QueryVmrResultDTO:
 
     @vmr_pkg_id.setter
     def vmr_pkg_id(self, vmr_pkg_id):
-        """Sets the vmr_pkg_id of this QueryVmrResultDTO.
+        r"""Sets the vmr_pkg_id of this QueryVmrResultDTO.
 
         云会议室套餐包的id，仅云会议室返回。
 
@@ -376,7 +376,7 @@ class QueryVmrResultDTO:
 
     @property
     def vmr_pkg_name(self):
-        """Gets the vmr_pkg_name of this QueryVmrResultDTO.
+        r"""Gets the vmr_pkg_name of this QueryVmrResultDTO.
 
         云会议室套餐包的名称，仅云会议室返回。
 
@@ -387,7 +387,7 @@ class QueryVmrResultDTO:
 
     @vmr_pkg_name.setter
     def vmr_pkg_name(self, vmr_pkg_name):
-        """Sets the vmr_pkg_name of this QueryVmrResultDTO.
+        r"""Sets the vmr_pkg_name of this QueryVmrResultDTO.
 
         云会议室套餐包的名称，仅云会议室返回。
 
@@ -398,7 +398,7 @@ class QueryVmrResultDTO:
 
     @property
     def vmr_pkg_parties(self):
-        """Gets the vmr_pkg_parties of this QueryVmrResultDTO.
+        r"""Gets the vmr_pkg_parties of this QueryVmrResultDTO.
 
         云会议室套餐包的会议并发方数，仅云会议室返回。
 
@@ -409,7 +409,7 @@ class QueryVmrResultDTO:
 
     @vmr_pkg_parties.setter
     def vmr_pkg_parties(self, vmr_pkg_parties):
-        """Sets the vmr_pkg_parties of this QueryVmrResultDTO.
+        r"""Sets the vmr_pkg_parties of this QueryVmrResultDTO.
 
         云会议室套餐包的会议并发方数，仅云会议室返回。
 
@@ -420,7 +420,7 @@ class QueryVmrResultDTO:
 
     @property
     def status(self):
-        """Gets the status of this QueryVmrResultDTO.
+        r"""Gets the status of this QueryVmrResultDTO.
 
         云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
 
@@ -431,7 +431,7 @@ class QueryVmrResultDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryVmrResultDTO.
+        r"""Sets the status of this QueryVmrResultDTO.
 
         云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
 

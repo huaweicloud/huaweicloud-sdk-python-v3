@@ -26,7 +26,7 @@ class ShowClusterFlavorResponse(SdkResponse):
     }
 
     def __init__(self, flavor=None):
-        """ShowClusterFlavorResponse
+        r"""ShowClusterFlavorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClusterFlavorResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowClusterFlavorResponse.
+        r"""Gets the flavor of this ShowClusterFlavorResponse.
 
         :return: The flavor of this ShowClusterFlavorResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterFlavorDetailInfo`
@@ -53,7 +53,7 @@ class ShowClusterFlavorResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowClusterFlavorResponse.
+        r"""Sets the flavor of this ShowClusterFlavorResponse.
 
         :param flavor: The flavor of this ShowClusterFlavorResponse.
         :type flavor: :class:`huaweicloudsdkdws.v2.ClusterFlavorDetailInfo`

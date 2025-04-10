@@ -27,7 +27,7 @@ class ShowVoiceTrainingJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, job_id=None):
-        """ShowVoiceTrainingJobRequest
+        r"""ShowVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowVoiceTrainingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowVoiceTrainingJobRequest.
+        r"""Gets the x_app_user_id of this ShowVoiceTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowVoiceTrainingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowVoiceTrainingJobRequest.
+        r"""Sets the x_app_user_id of this ShowVoiceTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowVoiceTrainingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowVoiceTrainingJobRequest.
+        r"""Gets the job_id of this ShowVoiceTrainingJobRequest.
 
         任务id。
 
@@ -82,7 +82,7 @@ class ShowVoiceTrainingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowVoiceTrainingJobRequest.
+        r"""Sets the job_id of this ShowVoiceTrainingJobRequest.
 
         任务id。
 

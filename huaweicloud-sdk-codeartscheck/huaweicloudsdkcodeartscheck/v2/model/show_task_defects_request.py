@@ -33,7 +33,7 @@ class ShowTaskDefectsRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None, status_ids=None, severity=None):
-        """ShowTaskDefectsRequest
+        r"""ShowTaskDefectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowTaskDefectsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskDefectsRequest.
+        r"""Gets the task_id of this ShowTaskDefectsRequest.
 
         任务ID
 
@@ -81,7 +81,7 @@ class ShowTaskDefectsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskDefectsRequest.
+        r"""Sets the task_id of this ShowTaskDefectsRequest.
 
         任务ID
 
@@ -92,7 +92,7 @@ class ShowTaskDefectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTaskDefectsRequest.
+        r"""Gets the offset of this ShowTaskDefectsRequest.
 
         分页索引，偏移量
 
@@ -103,7 +103,7 @@ class ShowTaskDefectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTaskDefectsRequest.
+        r"""Sets the offset of this ShowTaskDefectsRequest.
 
         分页索引，偏移量
 
@@ -114,7 +114,7 @@ class ShowTaskDefectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTaskDefectsRequest.
+        r"""Gets the limit of this ShowTaskDefectsRequest.
 
         每页显示的数量,每页最多显示100条
 
@@ -125,7 +125,7 @@ class ShowTaskDefectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTaskDefectsRequest.
+        r"""Sets the limit of this ShowTaskDefectsRequest.
 
         每页显示的数量,每页最多显示100条
 
@@ -136,7 +136,7 @@ class ShowTaskDefectsRequest:
 
     @property
     def status_ids(self):
-        """Gets the status_ids of this ShowTaskDefectsRequest.
+        r"""Gets the status_ids of this ShowTaskDefectsRequest.
 
         问题状态筛选
 
@@ -147,7 +147,7 @@ class ShowTaskDefectsRequest:
 
     @status_ids.setter
     def status_ids(self, status_ids):
-        """Sets the status_ids of this ShowTaskDefectsRequest.
+        r"""Sets the status_ids of this ShowTaskDefectsRequest.
 
         问题状态筛选
 
@@ -158,7 +158,7 @@ class ShowTaskDefectsRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ShowTaskDefectsRequest.
+        r"""Gets the severity of this ShowTaskDefectsRequest.
 
         严重级别，0致命，1严重，2一般，3提示
 
@@ -169,7 +169,7 @@ class ShowTaskDefectsRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ShowTaskDefectsRequest.
+        r"""Sets the severity of this ShowTaskDefectsRequest.
 
         严重级别，0致命，1严重，2一般，3提示
 

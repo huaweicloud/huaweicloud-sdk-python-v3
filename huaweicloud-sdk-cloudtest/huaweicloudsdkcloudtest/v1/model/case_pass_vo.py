@@ -27,7 +27,7 @@ class CasePassVo:
     }
 
     def __init__(self, pass_rate=None, result_number_list=None):
-        """CasePassVo
+        r"""CasePassVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CasePassVo:
 
     @property
     def pass_rate(self):
-        """Gets the pass_rate of this CasePassVo.
+        r"""Gets the pass_rate of this CasePassVo.
 
         需求关联用例通过率
 
@@ -61,7 +61,7 @@ class CasePassVo:
 
     @pass_rate.setter
     def pass_rate(self, pass_rate):
-        """Sets the pass_rate of this CasePassVo.
+        r"""Sets the pass_rate of this CasePassVo.
 
         需求关联用例通过率
 
@@ -72,7 +72,7 @@ class CasePassVo:
 
     @property
     def result_number_list(self):
-        """Gets the result_number_list of this CasePassVo.
+        r"""Gets the result_number_list of this CasePassVo.
 
         需求关联用例结果与对应的用例数目列表
 
@@ -83,7 +83,7 @@ class CasePassVo:
 
     @result_number_list.setter
     def result_number_list(self, result_number_list):
-        """Sets the result_number_list of this CasePassVo.
+        r"""Sets the result_number_list of this CasePassVo.
 
         需求关联用例结果与对应的用例数目列表
 

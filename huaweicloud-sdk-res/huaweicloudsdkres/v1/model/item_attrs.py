@@ -29,7 +29,7 @@ class ItemAttrs:
     }
 
     def __init__(self, data_type=None, name=None, other_uses=None):
-        """ItemAttrs
+        r"""ItemAttrs
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ItemAttrs:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ItemAttrs.
+        r"""Gets the data_type of this ItemAttrs.
 
         数据类型。
 
@@ -68,7 +68,7 @@ class ItemAttrs:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ItemAttrs.
+        r"""Sets the data_type of this ItemAttrs.
 
         数据类型。
 
@@ -79,7 +79,7 @@ class ItemAttrs:
 
     @property
     def name(self):
-        """Gets the name of this ItemAttrs.
+        r"""Gets the name of this ItemAttrs.
 
         物品。
 
@@ -90,7 +90,7 @@ class ItemAttrs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ItemAttrs.
+        r"""Sets the name of this ItemAttrs.
 
         物品。
 
@@ -101,7 +101,7 @@ class ItemAttrs:
 
     @property
     def other_uses(self):
-        """Gets the other_uses of this ItemAttrs.
+        r"""Gets the other_uses of this ItemAttrs.
 
         其他用途。
 
@@ -112,7 +112,7 @@ class ItemAttrs:
 
     @other_uses.setter
     def other_uses(self, other_uses):
-        """Sets the other_uses of this ItemAttrs.
+        r"""Sets the other_uses of this ItemAttrs.
 
         其他用途。
 

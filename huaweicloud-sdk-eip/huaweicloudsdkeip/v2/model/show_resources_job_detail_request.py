@@ -25,7 +25,7 @@ class ShowResourcesJobDetailRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowResourcesJobDetailRequest
+        r"""ShowResourcesJobDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowResourcesJobDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowResourcesJobDetailRequest.
+        r"""Gets the job_id of this ShowResourcesJobDetailRequest.
 
         批量操作返回的JOB ID
 
@@ -53,7 +53,7 @@ class ShowResourcesJobDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowResourcesJobDetailRequest.
+        r"""Sets the job_id of this ShowResourcesJobDetailRequest.
 
         批量操作返回的JOB ID
 

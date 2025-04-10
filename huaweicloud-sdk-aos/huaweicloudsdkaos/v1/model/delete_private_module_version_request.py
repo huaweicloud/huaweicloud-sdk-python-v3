@@ -31,7 +31,7 @@ class DeletePrivateModuleVersionRequest:
     }
 
     def __init__(self, client_request_id=None, module_name=None, module_version=None, module_id=None):
-        """DeletePrivateModuleVersionRequest
+        r"""DeletePrivateModuleVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeletePrivateModuleVersionRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this DeletePrivateModuleVersionRequest.
+        r"""Gets the client_request_id of this DeletePrivateModuleVersionRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -72,7 +72,7 @@ class DeletePrivateModuleVersionRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this DeletePrivateModuleVersionRequest.
+        r"""Sets the client_request_id of this DeletePrivateModuleVersionRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -83,7 +83,7 @@ class DeletePrivateModuleVersionRequest:
 
     @property
     def module_name(self):
-        """Gets the module_name of this DeletePrivateModuleVersionRequest.
+        r"""Gets the module_name of this DeletePrivateModuleVersionRequest.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -94,7 +94,7 @@ class DeletePrivateModuleVersionRequest:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this DeletePrivateModuleVersionRequest.
+        r"""Sets the module_name of this DeletePrivateModuleVersionRequest.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -105,7 +105,7 @@ class DeletePrivateModuleVersionRequest:
 
     @property
     def module_version(self):
-        """Gets the module_version of this DeletePrivateModuleVersionRequest.
+        r"""Gets the module_version of this DeletePrivateModuleVersionRequest.
 
         模块的版本号。版本号遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -116,7 +116,7 @@ class DeletePrivateModuleVersionRequest:
 
     @module_version.setter
     def module_version(self, module_version):
-        """Sets the module_version of this DeletePrivateModuleVersionRequest.
+        r"""Sets the module_version of this DeletePrivateModuleVersionRequest.
 
         模块的版本号。版本号遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -127,7 +127,7 @@ class DeletePrivateModuleVersionRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this DeletePrivateModuleVersionRequest.
+        r"""Gets the module_id of this DeletePrivateModuleVersionRequest.
 
         私有模块（private-module）的唯一Id。  此Id由资源编排服务在生成模块的时候生成，为UUID。  由于私有模块名称仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的私有模块，删除，再重新创建一个同名私有模块。  对于团队并行开发，用户可能希望确保，当前我操作的私有模块就是我认为的那个，而不是其他队友删除后创建的同名私有模块。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有模块所对应的Id都不相同，更新不会影响Id。如果给予的module_id和当前模块的Id不一致，则返回400
 
@@ -138,7 +138,7 @@ class DeletePrivateModuleVersionRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this DeletePrivateModuleVersionRequest.
+        r"""Sets the module_id of this DeletePrivateModuleVersionRequest.
 
         私有模块（private-module）的唯一Id。  此Id由资源编排服务在生成模块的时候生成，为UUID。  由于私有模块名称仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的私有模块，删除，再重新创建一个同名私有模块。  对于团队并行开发，用户可能希望确保，当前我操作的私有模块就是我认为的那个，而不是其他队友删除后创建的同名私有模块。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有模块所对应的Id都不相同，更新不会影响Id。如果给予的module_id和当前模块的Id不一致，则返回400
 

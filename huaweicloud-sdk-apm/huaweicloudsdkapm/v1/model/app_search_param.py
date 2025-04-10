@@ -33,7 +33,7 @@ class AppSearchParam:
     }
 
     def __init__(self, business_id=None, region=None, page=None, page_size=None, keyword=None):
-        """AppSearchParam
+        r"""AppSearchParam
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class AppSearchParam:
 
     @property
     def business_id(self):
-        """Gets the business_id of this AppSearchParam.
+        r"""Gets the business_id of this AppSearchParam.
 
         应用id。
 
@@ -79,7 +79,7 @@ class AppSearchParam:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this AppSearchParam.
+        r"""Sets the business_id of this AppSearchParam.
 
         应用id。
 
@@ -90,7 +90,7 @@ class AppSearchParam:
 
     @property
     def region(self):
-        """Gets the region of this AppSearchParam.
+        r"""Gets the region of this AppSearchParam.
 
         区域名称。
 
@@ -101,7 +101,7 @@ class AppSearchParam:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AppSearchParam.
+        r"""Sets the region of this AppSearchParam.
 
         区域名称。
 
@@ -112,7 +112,7 @@ class AppSearchParam:
 
     @property
     def page(self):
-        """Gets the page of this AppSearchParam.
+        r"""Gets the page of this AppSearchParam.
 
         页码。
 
@@ -123,7 +123,7 @@ class AppSearchParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AppSearchParam.
+        r"""Sets the page of this AppSearchParam.
 
         页码。
 
@@ -134,7 +134,7 @@ class AppSearchParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this AppSearchParam.
+        r"""Gets the page_size of this AppSearchParam.
 
         每页条数。
 
@@ -145,7 +145,7 @@ class AppSearchParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this AppSearchParam.
+        r"""Sets the page_size of this AppSearchParam.
 
         每页条数。
 
@@ -156,7 +156,7 @@ class AppSearchParam:
 
     @property
     def keyword(self):
-        """Gets the keyword of this AppSearchParam.
+        r"""Gets the keyword of this AppSearchParam.
 
         关键字。
 
@@ -167,7 +167,7 @@ class AppSearchParam:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this AppSearchParam.
+        r"""Sets the keyword of this AppSearchParam.
 
         关键字。
 

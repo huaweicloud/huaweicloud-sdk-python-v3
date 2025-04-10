@@ -33,7 +33,7 @@ class ResponseCodeSum:
     }
 
     def __init__(self, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None):
-        """ResponseCodeSum
+        r"""ResponseCodeSum
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResponseCodeSum:
 
     @property
     def sum1xx(self):
-        """Gets the sum1xx of this ResponseCodeSum.
+        r"""Gets the sum1xx of this ResponseCodeSum.
 
         1xx请求数
 
@@ -82,7 +82,7 @@ class ResponseCodeSum:
 
     @sum1xx.setter
     def sum1xx(self, sum1xx):
-        """Sets the sum1xx of this ResponseCodeSum.
+        r"""Sets the sum1xx of this ResponseCodeSum.
 
         1xx请求数
 
@@ -93,7 +93,7 @@ class ResponseCodeSum:
 
     @property
     def sum2xx(self):
-        """Gets the sum2xx of this ResponseCodeSum.
+        r"""Gets the sum2xx of this ResponseCodeSum.
 
         2xx请求数
 
@@ -104,7 +104,7 @@ class ResponseCodeSum:
 
     @sum2xx.setter
     def sum2xx(self, sum2xx):
-        """Sets the sum2xx of this ResponseCodeSum.
+        r"""Sets the sum2xx of this ResponseCodeSum.
 
         2xx请求数
 
@@ -115,7 +115,7 @@ class ResponseCodeSum:
 
     @property
     def sum3xx(self):
-        """Gets the sum3xx of this ResponseCodeSum.
+        r"""Gets the sum3xx of this ResponseCodeSum.
 
         3xx请求数
 
@@ -126,7 +126,7 @@ class ResponseCodeSum:
 
     @sum3xx.setter
     def sum3xx(self, sum3xx):
-        """Sets the sum3xx of this ResponseCodeSum.
+        r"""Sets the sum3xx of this ResponseCodeSum.
 
         3xx请求数
 
@@ -137,7 +137,7 @@ class ResponseCodeSum:
 
     @property
     def sum4xx(self):
-        """Gets the sum4xx of this ResponseCodeSum.
+        r"""Gets the sum4xx of this ResponseCodeSum.
 
         4xx请求数
 
@@ -148,7 +148,7 @@ class ResponseCodeSum:
 
     @sum4xx.setter
     def sum4xx(self, sum4xx):
-        """Sets the sum4xx of this ResponseCodeSum.
+        r"""Sets the sum4xx of this ResponseCodeSum.
 
         4xx请求数
 
@@ -159,7 +159,7 @@ class ResponseCodeSum:
 
     @property
     def sum5xx(self):
-        """Gets the sum5xx of this ResponseCodeSum.
+        r"""Gets the sum5xx of this ResponseCodeSum.
 
         5xx请求数
 
@@ -170,7 +170,7 @@ class ResponseCodeSum:
 
     @sum5xx.setter
     def sum5xx(self, sum5xx):
-        """Sets the sum5xx of this ResponseCodeSum.
+        r"""Sets the sum5xx of this ResponseCodeSum.
 
         5xx请求数
 

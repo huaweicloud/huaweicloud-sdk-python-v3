@@ -24,7 +24,7 @@ class DeleteClassificationFromEntitiesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteClassificationFromEntitiesResponse
+        r"""DeleteClassificationFromEntitiesResponse
 
         The model defined in huaweicloud sdk
 

@@ -47,7 +47,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
     }
 
     def __init__(self, query_id=None, db_name=None, schema_name=None, table_name=None, total_row_count=None, complete_row_count=None, filter_row_count=None, repaired_row_count=None, failed_row_count=None, repair_status=None, start_time=None, update_time=None):
-        """JobDetailRespRepairProgressInfoRepairProgressDetails
+        r"""JobDetailRespRepairProgressInfoRepairProgressDetails
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def query_id(self):
-        """Gets the query_id of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the query_id of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         对比任务ID。
 
@@ -131,7 +131,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the query_id of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         对比任务ID。
 
@@ -142,7 +142,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def db_name(self):
-        """Gets the db_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the db_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         库名。
 
@@ -153,7 +153,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the db_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         库名。
 
@@ -164,7 +164,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the schema_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         schema名。
 
@@ -175,7 +175,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the schema_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         schema名。
 
@@ -186,7 +186,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def table_name(self):
-        """Gets the table_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the table_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         表名。
 
@@ -197,7 +197,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the table_name of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         表名。
 
@@ -208,7 +208,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def total_row_count(self):
-        """Gets the total_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the total_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         总行数。
 
@@ -219,7 +219,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @total_row_count.setter
     def total_row_count(self, total_row_count):
-        """Sets the total_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the total_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         总行数。
 
@@ -230,7 +230,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def complete_row_count(self):
-        """Gets the complete_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the complete_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         完成行数。
 
@@ -241,7 +241,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @complete_row_count.setter
     def complete_row_count(self, complete_row_count):
-        """Sets the complete_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the complete_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         完成行数。
 
@@ -252,7 +252,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def filter_row_count(self):
-        """Gets the filter_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the filter_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         过滤行数。
 
@@ -263,7 +263,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @filter_row_count.setter
     def filter_row_count(self, filter_row_count):
-        """Sets the filter_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the filter_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         过滤行数。
 
@@ -274,7 +274,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def repaired_row_count(self):
-        """Gets the repaired_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the repaired_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         已修复行数。
 
@@ -285,7 +285,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @repaired_row_count.setter
     def repaired_row_count(self, repaired_row_count):
-        """Sets the repaired_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the repaired_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         已修复行数。
 
@@ -296,7 +296,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def failed_row_count(self):
-        """Gets the failed_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the failed_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         失败行数。
 
@@ -307,7 +307,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @failed_row_count.setter
     def failed_row_count(self, failed_row_count):
-        """Sets the failed_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the failed_row_count of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         失败行数。
 
@@ -318,7 +318,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def repair_status(self):
-        """Gets the repair_status of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the repair_status of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         修复状态。
 
@@ -329,7 +329,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @repair_status.setter
     def repair_status(self, repair_status):
-        """Sets the repair_status of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the repair_status of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         修复状态。
 
@@ -340,7 +340,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the start_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         开始时间。
 
@@ -351,7 +351,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the start_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         开始时间。
 
@@ -362,7 +362,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @property
     def update_time(self):
-        """Gets the update_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Gets the update_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         更新时间。
 
@@ -373,7 +373,7 @@ class JobDetailRespRepairProgressInfoRepairProgressDetails:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
+        r"""Sets the update_time of this JobDetailRespRepairProgressInfoRepairProgressDetails.
 
         更新时间。
 

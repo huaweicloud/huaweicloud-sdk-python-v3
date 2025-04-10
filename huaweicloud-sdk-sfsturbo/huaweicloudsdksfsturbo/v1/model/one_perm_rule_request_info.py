@@ -29,7 +29,7 @@ class OnePermRuleRequestInfo:
     }
 
     def __init__(self, ip_cidr=None, rw_type=None, user_type=None):
-        """OnePermRuleRequestInfo
+        r"""OnePermRuleRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OnePermRuleRequestInfo:
 
     @property
     def ip_cidr(self):
-        """Gets the ip_cidr of this OnePermRuleRequestInfo.
+        r"""Gets the ip_cidr of this OnePermRuleRequestInfo.
 
         授权对象的IP地址或网段，设置后不支持修改
 
@@ -68,7 +68,7 @@ class OnePermRuleRequestInfo:
 
     @ip_cidr.setter
     def ip_cidr(self, ip_cidr):
-        """Sets the ip_cidr of this OnePermRuleRequestInfo.
+        r"""Sets the ip_cidr of this OnePermRuleRequestInfo.
 
         授权对象的IP地址或网段，设置后不支持修改
 
@@ -79,7 +79,7 @@ class OnePermRuleRequestInfo:
 
     @property
     def rw_type(self):
-        """Gets the rw_type of this OnePermRuleRequestInfo.
+        r"""Gets the rw_type of this OnePermRuleRequestInfo.
 
         授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
@@ -90,7 +90,7 @@ class OnePermRuleRequestInfo:
 
     @rw_type.setter
     def rw_type(self, rw_type):
-        """Sets the rw_type of this OnePermRuleRequestInfo.
+        r"""Sets the rw_type of this OnePermRuleRequestInfo.
 
         授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
@@ -101,7 +101,7 @@ class OnePermRuleRequestInfo:
 
     @property
     def user_type(self):
-        """Gets the user_type of this OnePermRuleRequestInfo.
+        r"""Gets the user_type of this OnePermRuleRequestInfo.
 
         授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：默认选项。客户端使用包括root用户在内的任何用户，NFS服务器都保持客户端使用的用户，不做映射。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。客户端使用非root用户时，NFS服务器保持客户端使用的用户，不做映射。  - all_squash：所有访问NFS服务器的客户端的用户都映射为匿名用户。
 
@@ -112,7 +112,7 @@ class OnePermRuleRequestInfo:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this OnePermRuleRequestInfo.
+        r"""Sets the user_type of this OnePermRuleRequestInfo.
 
         授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：默认选项。客户端使用包括root用户在内的任何用户，NFS服务器都保持客户端使用的用户，不做映射。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。客户端使用非root用户时，NFS服务器保持客户端使用的用户，不做映射。  - all_squash：所有访问NFS服务器的客户端的用户都映射为匿名用户。
 

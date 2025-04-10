@@ -49,7 +49,7 @@ class IssueTreeInfo:
     }
 
     def __init__(self, owner=None, issue_id=None, page_no=None, page_size=None, key_word=None, iteration_id=None, severity_id=None, status_id=None, module_id=None, status_ids=None, module_ids=None, pi_filter=None, status_names=None):
-        """IssueTreeInfo
+        r"""IssueTreeInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class IssueTreeInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this IssueTreeInfo.
+        r"""Gets the owner of this IssueTreeInfo.
 
         过滤条件：处理人
 
@@ -138,7 +138,7 @@ class IssueTreeInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this IssueTreeInfo.
+        r"""Sets the owner of this IssueTreeInfo.
 
         过滤条件：处理人
 
@@ -149,7 +149,7 @@ class IssueTreeInfo:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this IssueTreeInfo.
+        r"""Gets the issue_id of this IssueTreeInfo.
 
         需求ID
 
@@ -160,7 +160,7 @@ class IssueTreeInfo:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this IssueTreeInfo.
+        r"""Sets the issue_id of this IssueTreeInfo.
 
         需求ID
 
@@ -171,7 +171,7 @@ class IssueTreeInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this IssueTreeInfo.
+        r"""Gets the page_no of this IssueTreeInfo.
 
         页码
 
@@ -182,7 +182,7 @@ class IssueTreeInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this IssueTreeInfo.
+        r"""Sets the page_no of this IssueTreeInfo.
 
         页码
 
@@ -193,7 +193,7 @@ class IssueTreeInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this IssueTreeInfo.
+        r"""Gets the page_size of this IssueTreeInfo.
 
         每页展示条数
 
@@ -204,7 +204,7 @@ class IssueTreeInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this IssueTreeInfo.
+        r"""Sets the page_size of this IssueTreeInfo.
 
         每页展示条数
 
@@ -215,7 +215,7 @@ class IssueTreeInfo:
 
     @property
     def key_word(self):
-        """Gets the key_word of this IssueTreeInfo.
+        r"""Gets the key_word of this IssueTreeInfo.
 
         关键字
 
@@ -226,7 +226,7 @@ class IssueTreeInfo:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this IssueTreeInfo.
+        r"""Sets the key_word of this IssueTreeInfo.
 
         关键字
 
@@ -237,7 +237,7 @@ class IssueTreeInfo:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this IssueTreeInfo.
+        r"""Gets the iteration_id of this IssueTreeInfo.
 
         过滤条件：迭代ID
 
@@ -248,7 +248,7 @@ class IssueTreeInfo:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this IssueTreeInfo.
+        r"""Sets the iteration_id of this IssueTreeInfo.
 
         过滤条件：迭代ID
 
@@ -259,7 +259,7 @@ class IssueTreeInfo:
 
     @property
     def severity_id(self):
-        """Gets the severity_id of this IssueTreeInfo.
+        r"""Gets the severity_id of this IssueTreeInfo.
 
         过滤条件：重要程度ID
 
@@ -270,7 +270,7 @@ class IssueTreeInfo:
 
     @severity_id.setter
     def severity_id(self, severity_id):
-        """Sets the severity_id of this IssueTreeInfo.
+        r"""Sets the severity_id of this IssueTreeInfo.
 
         过滤条件：重要程度ID
 
@@ -281,7 +281,7 @@ class IssueTreeInfo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this IssueTreeInfo.
+        r"""Gets the status_id of this IssueTreeInfo.
 
         过滤条件：状态ID
 
@@ -292,7 +292,7 @@ class IssueTreeInfo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this IssueTreeInfo.
+        r"""Sets the status_id of this IssueTreeInfo.
 
         过滤条件：状态ID
 
@@ -303,7 +303,7 @@ class IssueTreeInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this IssueTreeInfo.
+        r"""Gets the module_id of this IssueTreeInfo.
 
         过滤条件：模块ID
 
@@ -314,7 +314,7 @@ class IssueTreeInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this IssueTreeInfo.
+        r"""Sets the module_id of this IssueTreeInfo.
 
         过滤条件：模块ID
 
@@ -325,7 +325,7 @@ class IssueTreeInfo:
 
     @property
     def status_ids(self):
-        """Gets the status_ids of this IssueTreeInfo.
+        r"""Gets the status_ids of this IssueTreeInfo.
 
         过滤条件：状态ID多个条件，每个条件取或，-2代表搜索未设置
 
@@ -336,7 +336,7 @@ class IssueTreeInfo:
 
     @status_ids.setter
     def status_ids(self, status_ids):
-        """Sets the status_ids of this IssueTreeInfo.
+        r"""Sets the status_ids of this IssueTreeInfo.
 
         过滤条件：状态ID多个条件，每个条件取或，-2代表搜索未设置
 
@@ -347,7 +347,7 @@ class IssueTreeInfo:
 
     @property
     def module_ids(self):
-        """Gets the module_ids of this IssueTreeInfo.
+        r"""Gets the module_ids of this IssueTreeInfo.
 
         过滤条件：模块ID多个，每个条件取或，-2代表搜索未设置
 
@@ -358,7 +358,7 @@ class IssueTreeInfo:
 
     @module_ids.setter
     def module_ids(self, module_ids):
-        """Sets the module_ids of this IssueTreeInfo.
+        r"""Sets the module_ids of this IssueTreeInfo.
 
         过滤条件：模块ID多个，每个条件取或，-2代表搜索未设置
 
@@ -369,7 +369,7 @@ class IssueTreeInfo:
 
     @property
     def pi_filter(self):
-        """Gets the pi_filter of this IssueTreeInfo.
+        r"""Gets the pi_filter of this IssueTreeInfo.
 
         迭代、pi过滤条件
 
@@ -380,7 +380,7 @@ class IssueTreeInfo:
 
     @pi_filter.setter
     def pi_filter(self, pi_filter):
-        """Sets the pi_filter of this IssueTreeInfo.
+        r"""Sets the pi_filter of this IssueTreeInfo.
 
         迭代、pi过滤条件
 
@@ -391,7 +391,7 @@ class IssueTreeInfo:
 
     @property
     def status_names(self):
-        """Gets the status_names of this IssueTreeInfo.
+        r"""Gets the status_names of this IssueTreeInfo.
 
         状态名称列表
 
@@ -402,7 +402,7 @@ class IssueTreeInfo:
 
     @status_names.setter
     def status_names(self, status_names):
-        """Sets the status_names of this IssueTreeInfo.
+        r"""Sets the status_names of this IssueTreeInfo.
 
         状态名称列表
 

@@ -28,7 +28,7 @@ class CreateBandwidthPackageResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, bandwidth_package=None):
-        """CreateBandwidthPackageResponse
+        r"""CreateBandwidthPackageResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateBandwidthPackageResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateBandwidthPackageResponse.
+        r"""Gets the request_id of this CreateBandwidthPackageResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class CreateBandwidthPackageResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateBandwidthPackageResponse.
+        r"""Sets the request_id of this CreateBandwidthPackageResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class CreateBandwidthPackageResponse(SdkResponse):
 
     @property
     def bandwidth_package(self):
-        """Gets the bandwidth_package of this CreateBandwidthPackageResponse.
+        r"""Gets the bandwidth_package of this CreateBandwidthPackageResponse.
 
         :return: The bandwidth_package of this CreateBandwidthPackageResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthPackage`
@@ -80,7 +80,7 @@ class CreateBandwidthPackageResponse(SdkResponse):
 
     @bandwidth_package.setter
     def bandwidth_package(self, bandwidth_package):
-        """Sets the bandwidth_package of this CreateBandwidthPackageResponse.
+        r"""Sets the bandwidth_package of this CreateBandwidthPackageResponse.
 
         :param bandwidth_package: The bandwidth_package of this CreateBandwidthPackageResponse.
         :type bandwidth_package: :class:`huaweicloudsdkcc.v3.BandwidthPackage`

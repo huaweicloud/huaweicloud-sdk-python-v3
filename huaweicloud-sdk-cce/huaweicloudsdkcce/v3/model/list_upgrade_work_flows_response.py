@@ -30,7 +30,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListUpgradeWorkFlowsResponse
+        r"""ListUpgradeWorkFlowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListUpgradeWorkFlowsResponse.
+        r"""Gets the kind of this ListUpgradeWorkFlowsResponse.
 
         API类型，固定值“List”，该值不可修改。 
 
@@ -69,7 +69,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListUpgradeWorkFlowsResponse.
+        r"""Sets the kind of this ListUpgradeWorkFlowsResponse.
 
         API类型，固定值“List”，该值不可修改。 
 
@@ -80,7 +80,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListUpgradeWorkFlowsResponse.
+        r"""Gets the api_version of this ListUpgradeWorkFlowsResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -91,7 +91,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListUpgradeWorkFlowsResponse.
+        r"""Sets the api_version of this ListUpgradeWorkFlowsResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -102,7 +102,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListUpgradeWorkFlowsResponse.
+        r"""Gets the items of this ListUpgradeWorkFlowsResponse.
 
         :return: The items of this ListUpgradeWorkFlowsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`
@@ -111,7 +111,7 @@ class ListUpgradeWorkFlowsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListUpgradeWorkFlowsResponse.
+        r"""Sets the items of this ListUpgradeWorkFlowsResponse.
 
         :param items: The items of this ListUpgradeWorkFlowsResponse.
         :type items: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`

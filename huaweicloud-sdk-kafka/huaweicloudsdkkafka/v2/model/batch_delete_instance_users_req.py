@@ -27,7 +27,7 @@ class BatchDeleteInstanceUsersReq:
     }
 
     def __init__(self, action=None, users=None):
-        """BatchDeleteInstanceUsersReq
+        r"""BatchDeleteInstanceUsersReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteInstanceUsersReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteInstanceUsersReq.
+        r"""Gets the action of this BatchDeleteInstanceUsersReq.
 
         删除类型。当前只支持delete。  当删除用户时，为必选参数。
 
@@ -61,7 +61,7 @@ class BatchDeleteInstanceUsersReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteInstanceUsersReq.
+        r"""Sets the action of this BatchDeleteInstanceUsersReq.
 
         删除类型。当前只支持delete。  当删除用户时，为必选参数。
 
@@ -72,7 +72,7 @@ class BatchDeleteInstanceUsersReq:
 
     @property
     def users(self):
-        """Gets the users of this BatchDeleteInstanceUsersReq.
+        r"""Gets the users of this BatchDeleteInstanceUsersReq.
 
         用户列表。  当删除用户时，为必选参数。
 
@@ -83,7 +83,7 @@ class BatchDeleteInstanceUsersReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchDeleteInstanceUsersReq.
+        r"""Sets the users of this BatchDeleteInstanceUsersReq.
 
         用户列表。  当删除用户时，为必选参数。
 

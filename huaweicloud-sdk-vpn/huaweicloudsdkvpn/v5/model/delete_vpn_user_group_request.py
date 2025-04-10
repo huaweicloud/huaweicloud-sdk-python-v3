@@ -27,7 +27,7 @@ class DeleteVpnUserGroupRequest:
     }
 
     def __init__(self, vpn_server_id=None, group_id=None):
-        """DeleteVpnUserGroupRequest
+        r"""DeleteVpnUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVpnUserGroupRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this DeleteVpnUserGroupRequest.
+        r"""Gets the vpn_server_id of this DeleteVpnUserGroupRequest.
 
         VPN服务端 ID
 
@@ -59,7 +59,7 @@ class DeleteVpnUserGroupRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this DeleteVpnUserGroupRequest.
+        r"""Sets the vpn_server_id of this DeleteVpnUserGroupRequest.
 
         VPN服务端 ID
 
@@ -70,7 +70,7 @@ class DeleteVpnUserGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteVpnUserGroupRequest.
+        r"""Gets the group_id of this DeleteVpnUserGroupRequest.
 
         用户组ID
 
@@ -81,7 +81,7 @@ class DeleteVpnUserGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteVpnUserGroupRequest.
+        r"""Sets the group_id of this DeleteVpnUserGroupRequest.
 
         用户组ID
 

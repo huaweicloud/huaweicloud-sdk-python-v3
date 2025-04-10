@@ -30,7 +30,7 @@ class ListAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency_name=None, authorized=None, agency_policies=None):
-        """ListAgencyResponse
+        r"""ListAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAgencyResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ListAgencyResponse.
+        r"""Gets the agency_name of this ListAgencyResponse.
 
         委托名称
 
@@ -69,7 +69,7 @@ class ListAgencyResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ListAgencyResponse.
+        r"""Sets the agency_name of this ListAgencyResponse.
 
         委托名称
 
@@ -80,7 +80,7 @@ class ListAgencyResponse(SdkResponse):
 
     @property
     def authorized(self):
-        """Gets the authorized of this ListAgencyResponse.
+        r"""Gets the authorized of this ListAgencyResponse.
 
         授权与否。如果用户的服务委托权限包含系统所需要的委托权限返回true，否则返回false。
 
@@ -91,7 +91,7 @@ class ListAgencyResponse(SdkResponse):
 
     @authorized.setter
     def authorized(self, authorized):
-        """Sets the authorized of this ListAgencyResponse.
+        r"""Sets the authorized of this ListAgencyResponse.
 
         授权与否。如果用户的服务委托权限包含系统所需要的委托权限返回true，否则返回false。
 
@@ -102,7 +102,7 @@ class ListAgencyResponse(SdkResponse):
 
     @property
     def agency_policies(self):
-        """Gets the agency_policies of this ListAgencyResponse.
+        r"""Gets the agency_policies of this ListAgencyResponse.
 
         委托策略列表。
 
@@ -113,7 +113,7 @@ class ListAgencyResponse(SdkResponse):
 
     @agency_policies.setter
     def agency_policies(self, agency_policies):
-        """Sets the agency_policies of this ListAgencyResponse.
+        r"""Sets the agency_policies of this ListAgencyResponse.
 
         委托策略列表。
 

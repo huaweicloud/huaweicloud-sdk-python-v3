@@ -28,7 +28,7 @@ class ListAppDetailsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, total=None):
-        """ListAppDetailsResponse
+        r"""ListAppDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAppDetailsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListAppDetailsResponse.
+        r"""Gets the results of this ListAppDetailsResponse.
 
         查询结果
 
@@ -62,7 +62,7 @@ class ListAppDetailsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListAppDetailsResponse.
+        r"""Sets the results of this ListAppDetailsResponse.
 
         查询结果
 
@@ -73,7 +73,7 @@ class ListAppDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAppDetailsResponse.
+        r"""Gets the total of this ListAppDetailsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAppDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAppDetailsResponse.
+        r"""Sets the total of this ListAppDetailsResponse.
 
         总数
 

@@ -30,7 +30,7 @@ class ListSnapshotDataResponse(SdkResponse):
     }
 
     def __init__(self, snapshot_list=None, total=None, x_request_id=None):
-        """ListSnapshotDataResponse
+        r"""ListSnapshotDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
     @property
     def snapshot_list(self):
-        """Gets the snapshot_list of this ListSnapshotDataResponse.
+        r"""Gets the snapshot_list of this ListSnapshotDataResponse.
 
         采样数据列表。 
 
@@ -69,7 +69,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
     @snapshot_list.setter
     def snapshot_list(self, snapshot_list):
-        """Sets the snapshot_list of this ListSnapshotDataResponse.
+        r"""Sets the snapshot_list of this ListSnapshotDataResponse.
 
         采样数据列表。 
 
@@ -80,7 +80,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSnapshotDataResponse.
+        r"""Gets the total of this ListSnapshotDataResponse.
 
         指定时间区间内截图数量总和。
 
@@ -91,7 +91,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSnapshotDataResponse.
+        r"""Sets the total of this ListSnapshotDataResponse.
 
         指定时间区间内截图数量总和。
 
@@ -102,7 +102,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSnapshotDataResponse.
+        r"""Gets the x_request_id of this ListSnapshotDataResponse.
 
         :return: The x_request_id of this ListSnapshotDataResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSnapshotDataResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSnapshotDataResponse.
+        r"""Sets the x_request_id of this ListSnapshotDataResponse.
 
         :param x_request_id: The x_request_id of this ListSnapshotDataResponse.
         :type x_request_id: str

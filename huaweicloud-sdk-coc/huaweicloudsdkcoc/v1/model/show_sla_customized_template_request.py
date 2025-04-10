@@ -25,7 +25,7 @@ class ShowSlaCustomizedTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """ShowSlaCustomizedTemplateRequest
+        r"""ShowSlaCustomizedTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSlaCustomizedTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowSlaCustomizedTemplateRequest.
+        r"""Gets the template_id of this ShowSlaCustomizedTemplateRequest.
 
         模板ID
 
@@ -53,7 +53,7 @@ class ShowSlaCustomizedTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowSlaCustomizedTemplateRequest.
+        r"""Sets the template_id of this ShowSlaCustomizedTemplateRequest.
 
         模板ID
 

@@ -43,7 +43,7 @@ class FileContentInfo:
     }
 
     def __init__(self, file_name=None, file_path=None, size=None, encoding=None, content_sha256=None, ref=None, blob_id=None, commit_id=None, last_commit_id=None, content=None):
-        """FileContentInfo
+        r"""FileContentInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class FileContentInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this FileContentInfo.
+        r"""Gets the file_name of this FileContentInfo.
 
         文件名
 
@@ -117,7 +117,7 @@ class FileContentInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this FileContentInfo.
+        r"""Sets the file_name of this FileContentInfo.
 
         文件名
 
@@ -128,7 +128,7 @@ class FileContentInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this FileContentInfo.
+        r"""Gets the file_path of this FileContentInfo.
 
         文件路径
 
@@ -139,7 +139,7 @@ class FileContentInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this FileContentInfo.
+        r"""Sets the file_path of this FileContentInfo.
 
         文件路径
 
@@ -150,7 +150,7 @@ class FileContentInfo:
 
     @property
     def size(self):
-        """Gets the size of this FileContentInfo.
+        r"""Gets the size of this FileContentInfo.
 
         文件大小
 
@@ -161,7 +161,7 @@ class FileContentInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this FileContentInfo.
+        r"""Sets the size of this FileContentInfo.
 
         文件大小
 
@@ -172,7 +172,7 @@ class FileContentInfo:
 
     @property
     def encoding(self):
-        """Gets the encoding of this FileContentInfo.
+        r"""Gets the encoding of this FileContentInfo.
 
         文件编码
 
@@ -183,7 +183,7 @@ class FileContentInfo:
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this FileContentInfo.
+        r"""Sets the encoding of this FileContentInfo.
 
         文件编码
 
@@ -194,7 +194,7 @@ class FileContentInfo:
 
     @property
     def content_sha256(self):
-        """Gets the content_sha256 of this FileContentInfo.
+        r"""Gets the content_sha256 of this FileContentInfo.
 
         sha256编码的文件内容
 
@@ -205,7 +205,7 @@ class FileContentInfo:
 
     @content_sha256.setter
     def content_sha256(self, content_sha256):
-        """Sets the content_sha256 of this FileContentInfo.
+        r"""Sets the content_sha256 of this FileContentInfo.
 
         sha256编码的文件内容
 
@@ -216,7 +216,7 @@ class FileContentInfo:
 
     @property
     def ref(self):
-        """Gets the ref of this FileContentInfo.
+        r"""Gets the ref of this FileContentInfo.
 
         分支名
 
@@ -227,7 +227,7 @@ class FileContentInfo:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this FileContentInfo.
+        r"""Sets the ref of this FileContentInfo.
 
         分支名
 
@@ -238,7 +238,7 @@ class FileContentInfo:
 
     @property
     def blob_id(self):
-        """Gets the blob_id of this FileContentInfo.
+        r"""Gets the blob_id of this FileContentInfo.
 
         blob sha
 
@@ -249,7 +249,7 @@ class FileContentInfo:
 
     @blob_id.setter
     def blob_id(self, blob_id):
-        """Sets the blob_id of this FileContentInfo.
+        r"""Sets the blob_id of this FileContentInfo.
 
         blob sha
 
@@ -260,7 +260,7 @@ class FileContentInfo:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this FileContentInfo.
+        r"""Gets the commit_id of this FileContentInfo.
 
         提交对应的SHA id
 
@@ -271,7 +271,7 @@ class FileContentInfo:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this FileContentInfo.
+        r"""Sets the commit_id of this FileContentInfo.
 
         提交对应的SHA id
 
@@ -282,7 +282,7 @@ class FileContentInfo:
 
     @property
     def last_commit_id(self):
-        """Gets the last_commit_id of this FileContentInfo.
+        r"""Gets the last_commit_id of this FileContentInfo.
 
         最后一个提交对应的SHA id
 
@@ -293,7 +293,7 @@ class FileContentInfo:
 
     @last_commit_id.setter
     def last_commit_id(self, last_commit_id):
-        """Sets the last_commit_id of this FileContentInfo.
+        r"""Sets the last_commit_id of this FileContentInfo.
 
         最后一个提交对应的SHA id
 
@@ -304,7 +304,7 @@ class FileContentInfo:
 
     @property
     def content(self):
-        """Gets the content of this FileContentInfo.
+        r"""Gets the content of this FileContentInfo.
 
         base64编码的文件内容
 
@@ -315,7 +315,7 @@ class FileContentInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this FileContentInfo.
+        r"""Sets the content of this FileContentInfo.
 
         base64编码的文件内容
 

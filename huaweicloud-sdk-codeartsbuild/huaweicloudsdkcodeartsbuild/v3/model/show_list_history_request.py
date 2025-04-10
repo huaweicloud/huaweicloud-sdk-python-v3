@@ -31,7 +31,7 @@ class ShowListHistoryRequest:
     }
 
     def __init__(self, job_id=None, offset=None, limit=None, interval=None):
-        """ShowListHistoryRequest
+        r"""ShowListHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowListHistoryRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowListHistoryRequest.
+        r"""Gets the job_id of this ShowListHistoryRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -71,7 +71,7 @@ class ShowListHistoryRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowListHistoryRequest.
+        r"""Sets the job_id of this ShowListHistoryRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -82,7 +82,7 @@ class ShowListHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowListHistoryRequest.
+        r"""Gets the offset of this ShowListHistoryRequest.
 
         分页页码， 表示从此页开始查询， offset大于等于0
 
@@ -93,7 +93,7 @@ class ShowListHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowListHistoryRequest.
+        r"""Sets the offset of this ShowListHistoryRequest.
 
         分页页码， 表示从此页开始查询， offset大于等于0
 
@@ -104,7 +104,7 @@ class ShowListHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowListHistoryRequest.
+        r"""Gets the limit of this ShowListHistoryRequest.
 
         每页显示的条目数量，limit小于等于100
 
@@ -115,7 +115,7 @@ class ShowListHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowListHistoryRequest.
+        r"""Sets the limit of this ShowListHistoryRequest.
 
         每页显示的条目数量，limit小于等于100
 
@@ -126,7 +126,7 @@ class ShowListHistoryRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ShowListHistoryRequest.
+        r"""Gets the interval of this ShowListHistoryRequest.
 
         距今天的时间区间（单位：天），interval小于等于30
 
@@ -137,7 +137,7 @@ class ShowListHistoryRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowListHistoryRequest.
+        r"""Sets the interval of this ShowListHistoryRequest.
 
         距今天的时间区间（单位：天），interval小于等于30
 

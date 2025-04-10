@@ -25,7 +25,7 @@ class UnfreezeCertRequestBody:
     }
 
     def __init__(self, file=None):
-        """UnfreezeCertRequestBody
+        r"""UnfreezeCertRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnfreezeCertRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UnfreezeCertRequestBody.
+        r"""Gets the file of this UnfreezeCertRequestBody.
 
         生成证书的zip文件（每次只允许上传一个证书文件，文件大小不大于30K，后缀名为.zip文件）
 
@@ -54,7 +54,7 @@ class UnfreezeCertRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UnfreezeCertRequestBody.
+        r"""Sets the file of this UnfreezeCertRequestBody.
 
         生成证书的zip文件（每次只允许上传一个证书文件，文件大小不大于30K，后缀名为.zip文件）
 

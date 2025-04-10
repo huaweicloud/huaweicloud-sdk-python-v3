@@ -36,7 +36,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
     }
 
     def __init__(self, target_root_db=None, object_info=None, max_table_num=None, status=None, id=None, object_scope=None):
-        """ShowDbObjectCollectionStatusResponse
+        r"""ShowDbObjectCollectionStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @property
     def target_root_db(self):
-        """Gets the target_root_db of this ShowDbObjectCollectionStatusResponse.
+        r"""Gets the target_root_db of this ShowDbObjectCollectionStatusResponse.
 
         :return: The target_root_db of this ShowDbObjectCollectionStatusResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.TargetRootDb`
@@ -88,7 +88,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @target_root_db.setter
     def target_root_db(self, target_root_db):
-        """Sets the target_root_db of this ShowDbObjectCollectionStatusResponse.
+        r"""Sets the target_root_db of this ShowDbObjectCollectionStatusResponse.
 
         :param target_root_db: The target_root_db of this ShowDbObjectCollectionStatusResponse.
         :type target_root_db: :class:`huaweicloudsdkdrs.v5.TargetRootDb`
@@ -97,7 +97,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @property
     def object_info(self):
-        """Gets the object_info of this ShowDbObjectCollectionStatusResponse.
+        r"""Gets the object_info of this ShowDbObjectCollectionStatusResponse.
 
         数据库对象迁移或同步信息。
 
@@ -108,7 +108,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @object_info.setter
     def object_info(self, object_info):
-        """Sets the object_info of this ShowDbObjectCollectionStatusResponse.
+        r"""Sets the object_info of this ShowDbObjectCollectionStatusResponse.
 
         数据库对象迁移或同步信息。
 
@@ -119,7 +119,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @property
     def max_table_num(self):
-        """Gets the max_table_num of this ShowDbObjectCollectionStatusResponse.
+        r"""Gets the max_table_num of this ShowDbObjectCollectionStatusResponse.
 
         库下表数量的阈值。
 
@@ -130,7 +130,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @max_table_num.setter
     def max_table_num(self, max_table_num):
-        """Sets the max_table_num of this ShowDbObjectCollectionStatusResponse.
+        r"""Sets the max_table_num of this ShowDbObjectCollectionStatusResponse.
 
         库下表数量的阈值。
 
@@ -141,7 +141,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDbObjectCollectionStatusResponse.
+        r"""Gets the status of this ShowDbObjectCollectionStatusResponse.
 
         获取提交查询对象选择信息的状态
 
@@ -152,7 +152,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDbObjectCollectionStatusResponse.
+        r"""Sets the status of this ShowDbObjectCollectionStatusResponse.
 
         获取提交查询对象选择信息的状态
 
@@ -163,7 +163,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDbObjectCollectionStatusResponse.
+        r"""Gets the id of this ShowDbObjectCollectionStatusResponse.
 
         任务id
 
@@ -174,7 +174,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDbObjectCollectionStatusResponse.
+        r"""Sets the id of this ShowDbObjectCollectionStatusResponse.
 
         任务id
 
@@ -185,7 +185,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @property
     def object_scope(self):
-        """Gets the object_scope of this ShowDbObjectCollectionStatusResponse.
+        r"""Gets the object_scope of this ShowDbObjectCollectionStatusResponse.
 
         该数据库在实时同步场景下的类型
 
@@ -196,7 +196,7 @@ class ShowDbObjectCollectionStatusResponse(SdkResponse):
 
     @object_scope.setter
     def object_scope(self, object_scope):
-        """Sets the object_scope of this ShowDbObjectCollectionStatusResponse.
+        r"""Sets the object_scope of this ShowDbObjectCollectionStatusResponse.
 
         该数据库在实时同步场景下的类型
 

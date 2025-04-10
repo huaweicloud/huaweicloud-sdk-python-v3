@@ -35,7 +35,7 @@ class ChannelDetails:
     }
 
     def __init__(self, name=None, number=None, user=None, connection_name=None, peer_host=None, peer_port=None):
-        """ChannelDetails
+        r"""ChannelDetails
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ChannelDetails:
 
     @property
     def name(self):
-        """Gets the name of this ChannelDetails.
+        r"""Gets the name of this ChannelDetails.
 
         channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。
 
@@ -89,7 +89,7 @@ class ChannelDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChannelDetails.
+        r"""Sets the name of this ChannelDetails.
 
         channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。
 
@@ -100,7 +100,7 @@ class ChannelDetails:
 
     @property
     def number(self):
-        """Gets the number of this ChannelDetails.
+        r"""Gets the number of this ChannelDetails.
 
         channel数量
 
@@ -111,7 +111,7 @@ class ChannelDetails:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ChannelDetails.
+        r"""Sets the number of this ChannelDetails.
 
         channel数量
 
@@ -122,7 +122,7 @@ class ChannelDetails:
 
     @property
     def user(self):
-        """Gets the user of this ChannelDetails.
+        r"""Gets the user of this ChannelDetails.
 
         消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。
 
@@ -133,7 +133,7 @@ class ChannelDetails:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ChannelDetails.
+        r"""Sets the user of this ChannelDetails.
 
         消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。
 
@@ -144,7 +144,7 @@ class ChannelDetails:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ChannelDetails.
+        r"""Gets the connection_name of this ChannelDetails.
 
         connection信息，包括客户端IP:Port到服务端IP:Port。
 
@@ -155,7 +155,7 @@ class ChannelDetails:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ChannelDetails.
+        r"""Sets the connection_name of this ChannelDetails.
 
         connection信息，包括客户端IP:Port到服务端IP:Port。
 
@@ -166,7 +166,7 @@ class ChannelDetails:
 
     @property
     def peer_host(self):
-        """Gets the peer_host of this ChannelDetails.
+        r"""Gets the peer_host of this ChannelDetails.
 
         连接的消费者IP
 
@@ -177,7 +177,7 @@ class ChannelDetails:
 
     @peer_host.setter
     def peer_host(self, peer_host):
-        """Sets the peer_host of this ChannelDetails.
+        r"""Sets the peer_host of this ChannelDetails.
 
         连接的消费者IP
 
@@ -188,7 +188,7 @@ class ChannelDetails:
 
     @property
     def peer_port(self):
-        """Gets the peer_port of this ChannelDetails.
+        r"""Gets the peer_port of this ChannelDetails.
 
         连接的消费者进程端口号
 
@@ -199,7 +199,7 @@ class ChannelDetails:
 
     @peer_port.setter
     def peer_port(self, peer_port):
-        """Sets the peer_port of this ChannelDetails.
+        r"""Sets the peer_port of this ChannelDetails.
 
         连接的消费者进程端口号
 

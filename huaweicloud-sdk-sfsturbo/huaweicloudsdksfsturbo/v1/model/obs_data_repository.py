@@ -31,7 +31,7 @@ class ObsDataRepository:
     }
 
     def __init__(self, bucket=None, endpoint=None, policy=None, attributes=None):
-        """ObsDataRepository
+        r"""ObsDataRepository
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ObsDataRepository:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsDataRepository.
+        r"""Gets the bucket of this ObsDataRepository.
 
         OBS桶名称
 
@@ -73,7 +73,7 @@ class ObsDataRepository:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsDataRepository.
+        r"""Sets the bucket of this ObsDataRepository.
 
         OBS桶名称
 
@@ -84,7 +84,7 @@ class ObsDataRepository:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ObsDataRepository.
+        r"""Gets the endpoint of this ObsDataRepository.
 
         OBS桶所在的区域域名
 
@@ -95,7 +95,7 @@ class ObsDataRepository:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ObsDataRepository.
+        r"""Sets the endpoint of this ObsDataRepository.
 
         OBS桶所在的区域域名
 
@@ -106,7 +106,7 @@ class ObsDataRepository:
 
     @property
     def policy(self):
-        """Gets the policy of this ObsDataRepository.
+        r"""Gets the policy of this ObsDataRepository.
 
         :return: The policy of this ObsDataRepository.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepositoryPolicy`
@@ -115,7 +115,7 @@ class ObsDataRepository:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ObsDataRepository.
+        r"""Sets the policy of this ObsDataRepository.
 
         :param policy: The policy of this ObsDataRepository.
         :type policy: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepositoryPolicy`
@@ -124,7 +124,7 @@ class ObsDataRepository:
 
     @property
     def attributes(self):
-        """Gets the attributes of this ObsDataRepository.
+        r"""Gets the attributes of this ObsDataRepository.
 
         :return: The attributes of this ObsDataRepository.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
@@ -133,7 +133,7 @@ class ObsDataRepository:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ObsDataRepository.
+        r"""Sets the attributes of this ObsDataRepository.
 
         :param attributes: The attributes of this ObsDataRepository.
         :type attributes: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`

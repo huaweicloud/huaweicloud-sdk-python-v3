@@ -29,7 +29,7 @@ class UpdateSiteNetwork:
     }
 
     def __init__(self, name=None, description=None, tags=None):
-        """UpdateSiteNetwork
+        r"""UpdateSiteNetwork
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateSiteNetwork:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSiteNetwork.
+        r"""Gets the name of this UpdateSiteNetwork.
 
         实例名字。
 
@@ -68,7 +68,7 @@ class UpdateSiteNetwork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSiteNetwork.
+        r"""Sets the name of this UpdateSiteNetwork.
 
         实例名字。
 
@@ -79,7 +79,7 @@ class UpdateSiteNetwork:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSiteNetwork.
+        r"""Gets the description of this UpdateSiteNetwork.
 
         实例描述。不支持 <>。
 
@@ -90,7 +90,7 @@ class UpdateSiteNetwork:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSiteNetwork.
+        r"""Sets the description of this UpdateSiteNetwork.
 
         实例描述。不支持 <>。
 
@@ -101,7 +101,7 @@ class UpdateSiteNetwork:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateSiteNetwork.
+        r"""Gets the tags of this UpdateSiteNetwork.
 
         实例标签。
 
@@ -112,7 +112,7 @@ class UpdateSiteNetwork:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateSiteNetwork.
+        r"""Sets the tags of this UpdateSiteNetwork.
 
         实例标签。
 

@@ -31,7 +31,7 @@ class FlexibleOrigins:
     }
 
     def __init__(self, match_type=None, match_pattern=None, priority=None, back_sources=None):
-        """FlexibleOrigins
+        r"""FlexibleOrigins
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class FlexibleOrigins:
 
     @property
     def match_type(self):
-        """Gets the match_type of this FlexibleOrigins.
+        r"""Gets the match_type of this FlexibleOrigins.
 
         URI的匹配方式，支持文件后缀（file_extension）和路径前缀（file_path）。
 
@@ -71,7 +71,7 @@ class FlexibleOrigins:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this FlexibleOrigins.
+        r"""Sets the match_type of this FlexibleOrigins.
 
         URI的匹配方式，支持文件后缀（file_extension）和路径前缀（file_path）。
 
@@ -82,7 +82,7 @@ class FlexibleOrigins:
 
     @property
     def match_pattern(self):
-        """Gets the match_pattern of this FlexibleOrigins.
+        r"""Gets the match_pattern of this FlexibleOrigins.
 
         file_extension（文件后缀）： 支持所有格式的文件类型。 输入首字符为“.”，以“;”进行分隔。 输入的文件后缀名总数不能超过20个。 file_path（目录路径）：输入要求以“/”作为首字符，以“;”进行分隔，输入的目录路径总数不能超过20个。
 
@@ -93,7 +93,7 @@ class FlexibleOrigins:
 
     @match_pattern.setter
     def match_pattern(self, match_pattern):
-        """Sets the match_pattern of this FlexibleOrigins.
+        r"""Sets the match_pattern of this FlexibleOrigins.
 
         file_extension（文件后缀）： 支持所有格式的文件类型。 输入首字符为“.”，以“;”进行分隔。 输入的文件后缀名总数不能超过20个。 file_path（目录路径）：输入要求以“/”作为首字符，以“;”进行分隔，输入的目录路径总数不能超过20个。
 
@@ -104,7 +104,7 @@ class FlexibleOrigins:
 
     @property
     def priority(self):
-        """Gets the priority of this FlexibleOrigins.
+        r"""Gets the priority of this FlexibleOrigins.
 
         优先级取值范围为1~100，数值越大优先级越高。
 
@@ -115,7 +115,7 @@ class FlexibleOrigins:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this FlexibleOrigins.
+        r"""Sets the priority of this FlexibleOrigins.
 
         优先级取值范围为1~100，数值越大优先级越高。
 
@@ -126,7 +126,7 @@ class FlexibleOrigins:
 
     @property
     def back_sources(self):
-        """Gets the back_sources of this FlexibleOrigins.
+        r"""Gets the back_sources of this FlexibleOrigins.
 
         回源信息。  > 每个目录的回源源站数量不超过1个。
 
@@ -137,7 +137,7 @@ class FlexibleOrigins:
 
     @back_sources.setter
     def back_sources(self, back_sources):
-        """Sets the back_sources of this FlexibleOrigins.
+        r"""Sets the back_sources of this FlexibleOrigins.
 
         回源信息。  > 每个目录的回源源站数量不超过1个。
 

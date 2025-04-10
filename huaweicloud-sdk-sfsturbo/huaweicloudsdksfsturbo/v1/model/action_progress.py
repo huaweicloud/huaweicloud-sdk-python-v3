@@ -25,7 +25,7 @@ class ActionProgress:
     }
 
     def __init__(self, creating=None):
-        """ActionProgress
+        r"""ActionProgress
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ActionProgress:
 
     @property
     def creating(self):
-        """Gets the creating of this ActionProgress.
+        r"""Gets the creating of this ActionProgress.
 
         创建文件系统的进度。
 
@@ -54,7 +54,7 @@ class ActionProgress:
 
     @creating.setter
     def creating(self, creating):
-        """Sets the creating of this ActionProgress.
+        r"""Sets the creating of this ActionProgress.
 
         创建文件系统的进度。
 

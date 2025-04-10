@@ -37,7 +37,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
     }
 
     def __init__(self, id=None, ingress_size=None, charge_mode=None, size=None, name=None, tags=None, type=None):
-        """BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo
+        r"""BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def id(self):
-        """Gets the id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽的ID
 
@@ -96,7 +96,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the id of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽的ID
 
@@ -107,7 +107,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the ingress_size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽大小（入云方向）
 
@@ -118,7 +118,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the ingress_size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽大小（入云方向）
 
@@ -129,7 +129,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the charge_mode of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         计费模式
 
@@ -140,7 +140,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the charge_mode of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         计费模式
 
@@ -151,7 +151,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def size(self):
-        """Gets the size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽大小（出云方向）
 
@@ -162,7 +162,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the size of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽大小（出云方向）
 
@@ -173,7 +173,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -184,7 +184,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the name of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -195,7 +195,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the tags of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域弹性公网IP标签
 
@@ -206,7 +206,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the tags of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域弹性公网IP标签
 
@@ -217,7 +217,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @property
     def type(self):
-        """Gets the type of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Gets the type of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽类型
 
@@ -228,7 +228,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
+        r"""Sets the type of this BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo.
 
         全域公网带宽类型
 

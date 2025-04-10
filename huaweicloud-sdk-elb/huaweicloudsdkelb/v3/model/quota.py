@@ -61,7 +61,7 @@ class Quota:
     }
 
     def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, security_policy=None, listeners_per_loadbalancer=None, ipgroups_per_listener=None, pools_per_l7policy=None, l7policies_per_listener=None):
-        """Quota
+        r"""Quota
 
         The model defined in huaweicloud sdk
 
@@ -150,7 +150,7 @@ class Quota:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Quota.
+        r"""Gets the project_id of this Quota.
 
         参数解释：项目ID。
 
@@ -161,7 +161,7 @@ class Quota:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Quota.
+        r"""Sets the project_id of this Quota.
 
         参数解释：项目ID。
 
@@ -172,7 +172,7 @@ class Quota:
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this Quota.
+        r"""Gets the loadbalancer of this Quota.
 
         负载均衡器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -183,7 +183,7 @@ class Quota:
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this Quota.
+        r"""Sets the loadbalancer of this Quota.
 
         负载均衡器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -194,7 +194,7 @@ class Quota:
 
     @property
     def certificate(self):
-        """Gets the certificate of this Quota.
+        r"""Gets the certificate of this Quota.
 
         证书配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -205,7 +205,7 @@ class Quota:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this Quota.
+        r"""Sets the certificate of this Quota.
 
         证书配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -216,7 +216,7 @@ class Quota:
 
     @property
     def listener(self):
-        """Gets the listener of this Quota.
+        r"""Gets the listener of this Quota.
 
         监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -227,7 +227,7 @@ class Quota:
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this Quota.
+        r"""Sets the listener of this Quota.
 
         监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -238,7 +238,7 @@ class Quota:
 
     @property
     def l7policy(self):
-        """Gets the l7policy of this Quota.
+        r"""Gets the l7policy of this Quota.
 
         转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -249,7 +249,7 @@ class Quota:
 
     @l7policy.setter
     def l7policy(self, l7policy):
-        """Sets the l7policy of this Quota.
+        r"""Sets the l7policy of this Quota.
 
         转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -260,7 +260,7 @@ class Quota:
 
     @property
     def condition_per_policy(self):
-        """Gets the condition_per_policy of this Quota.
+        r"""Gets the condition_per_policy of this Quota.
 
         单个转发策略下所有转发规则的condition总数配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -271,7 +271,7 @@ class Quota:
 
     @condition_per_policy.setter
     def condition_per_policy(self, condition_per_policy):
-        """Sets the condition_per_policy of this Quota.
+        r"""Sets the condition_per_policy of this Quota.
 
         单个转发策略下所有转发规则的condition总数配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -282,7 +282,7 @@ class Quota:
 
     @property
     def pool(self):
-        """Gets the pool of this Quota.
+        r"""Gets the pool of this Quota.
 
         后端服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -293,7 +293,7 @@ class Quota:
 
     @pool.setter
     def pool(self, pool):
-        """Sets the pool of this Quota.
+        r"""Sets the pool of this Quota.
 
         后端服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -304,7 +304,7 @@ class Quota:
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this Quota.
+        r"""Gets the healthmonitor of this Quota.
 
         健康检查配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -315,7 +315,7 @@ class Quota:
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this Quota.
+        r"""Sets the healthmonitor of this Quota.
 
         健康检查配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -326,7 +326,7 @@ class Quota:
 
     @property
     def member(self):
-        """Gets the member of this Quota.
+        r"""Gets the member of this Quota.
 
         后端服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -337,7 +337,7 @@ class Quota:
 
     @member.setter
     def member(self, member):
-        """Sets the member of this Quota.
+        r"""Sets the member of this Quota.
 
         后端服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -348,7 +348,7 @@ class Quota:
 
     @property
     def members_per_pool(self):
-        """Gets the members_per_pool of this Quota.
+        r"""Gets the members_per_pool of this Quota.
 
         单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -359,7 +359,7 @@ class Quota:
 
     @members_per_pool.setter
     def members_per_pool(self, members_per_pool):
-        """Sets the members_per_pool of this Quota.
+        r"""Sets the members_per_pool of this Quota.
 
         单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -370,7 +370,7 @@ class Quota:
 
     @property
     def listeners_per_pool(self):
-        """Gets the listeners_per_pool of this Quota.
+        r"""Gets the listeners_per_pool of this Quota.
 
         单个pool器关联的监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -381,7 +381,7 @@ class Quota:
 
     @listeners_per_pool.setter
     def listeners_per_pool(self, listeners_per_pool):
-        """Sets the listeners_per_pool of this Quota.
+        r"""Sets the listeners_per_pool of this Quota.
 
         单个pool器关联的监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -392,7 +392,7 @@ class Quota:
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this Quota.
+        r"""Gets the ipgroup of this Quota.
 
         IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -403,7 +403,7 @@ class Quota:
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this Quota.
+        r"""Sets the ipgroup of this Quota.
 
         IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -414,7 +414,7 @@ class Quota:
 
     @property
     def ipgroup_bindings(self):
-        """Gets the ipgroup_bindings of this Quota.
+        r"""Gets the ipgroup_bindings of this Quota.
 
         单个IP地址组可以关联的监听器数量配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -425,7 +425,7 @@ class Quota:
 
     @ipgroup_bindings.setter
     def ipgroup_bindings(self, ipgroup_bindings):
-        """Sets the ipgroup_bindings of this Quota.
+        r"""Sets the ipgroup_bindings of this Quota.
 
         单个IP地址组可以关联的监听器数量配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -436,7 +436,7 @@ class Quota:
 
     @property
     def ipgroup_max_length(self):
-        """Gets the ipgroup_max_length of this Quota.
+        r"""Gets the ipgroup_max_length of this Quota.
 
         单个监听器下关联的所有IP地址组的ip列表中的IP总数不能超过ipgroup_max_length。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -447,7 +447,7 @@ class Quota:
 
     @ipgroup_max_length.setter
     def ipgroup_max_length(self, ipgroup_max_length):
-        """Sets the ipgroup_max_length of this Quota.
+        r"""Sets the ipgroup_max_length of this Quota.
 
         单个监听器下关联的所有IP地址组的ip列表中的IP总数不能超过ipgroup_max_length。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -458,7 +458,7 @@ class Quota:
 
     @property
     def security_policy(self):
-        """Gets the security_policy of this Quota.
+        r"""Gets the security_policy of this Quota.
 
         自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -469,7 +469,7 @@ class Quota:
 
     @security_policy.setter
     def security_policy(self, security_policy):
-        """Sets the security_policy of this Quota.
+        r"""Sets the security_policy of this Quota.
 
         自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -480,7 +480,7 @@ class Quota:
 
     @property
     def listeners_per_loadbalancer(self):
-        """Gets the listeners_per_loadbalancer of this Quota.
+        r"""Gets the listeners_per_loadbalancer of this Quota.
 
         单个LB实例下的监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  > 当前单个LB下监听器配额实际未限制，但建议不要超过默认配额。
 
@@ -491,7 +491,7 @@ class Quota:
 
     @listeners_per_loadbalancer.setter
     def listeners_per_loadbalancer(self, listeners_per_loadbalancer):
-        """Sets the listeners_per_loadbalancer of this Quota.
+        r"""Sets the listeners_per_loadbalancer of this Quota.
 
         单个LB实例下的监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  > 当前单个LB下监听器配额实际未限制，但建议不要超过默认配额。
 
@@ -502,7 +502,7 @@ class Quota:
 
     @property
     def ipgroups_per_listener(self):
-        """Gets the ipgroups_per_listener of this Quota.
+        r"""Gets the ipgroups_per_listener of this Quota.
 
         单个监听器下的IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -513,7 +513,7 @@ class Quota:
 
     @ipgroups_per_listener.setter
     def ipgroups_per_listener(self, ipgroups_per_listener):
-        """Sets the ipgroups_per_listener of this Quota.
+        r"""Sets the ipgroups_per_listener of this Quota.
 
         单个监听器下的IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -524,7 +524,7 @@ class Quota:
 
     @property
     def pools_per_l7policy(self):
-        """Gets the pools_per_l7policy of this Quota.
+        r"""Gets the pools_per_l7policy of this Quota.
 
         单个转发策略下的后端服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -535,7 +535,7 @@ class Quota:
 
     @pools_per_l7policy.setter
     def pools_per_l7policy(self, pools_per_l7policy):
-        """Sets the pools_per_l7policy of this Quota.
+        r"""Sets the pools_per_l7policy of this Quota.
 
         单个转发策略下的后端服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -546,7 +546,7 @@ class Quota:
 
     @property
     def l7policies_per_listener(self):
-        """Gets the l7policies_per_listener of this Quota.
+        r"""Gets the l7policies_per_listener of this Quota.
 
         单个监听器下的转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
@@ -557,7 +557,7 @@ class Quota:
 
     @l7policies_per_listener.setter
     def l7policies_per_listener(self, l7policies_per_listener):
-        """Sets the l7policies_per_listener of this Quota.
+        r"""Sets the l7policies_per_listener of this Quota.
 
         单个监听器下的转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 

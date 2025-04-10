@@ -39,7 +39,7 @@ class ListProcessesRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, user=None, database=None, node_id=None, offset=None, limit=None, x_language=None):
-        """ListProcessesRequest
+        r"""ListProcessesRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListProcessesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListProcessesRequest.
+        r"""Gets the instance_id of this ListProcessesRequest.
 
         实例ID
 
@@ -101,7 +101,7 @@ class ListProcessesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListProcessesRequest.
+        r"""Sets the instance_id of this ListProcessesRequest.
 
         实例ID
 
@@ -112,7 +112,7 @@ class ListProcessesRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this ListProcessesRequest.
+        r"""Gets the db_user_id of this ListProcessesRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -123,7 +123,7 @@ class ListProcessesRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this ListProcessesRequest.
+        r"""Sets the db_user_id of this ListProcessesRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -134,7 +134,7 @@ class ListProcessesRequest:
 
     @property
     def user(self):
-        """Gets the user of this ListProcessesRequest.
+        r"""Gets the user of this ListProcessesRequest.
 
         用户
 
@@ -145,7 +145,7 @@ class ListProcessesRequest:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ListProcessesRequest.
+        r"""Sets the user of this ListProcessesRequest.
 
         用户
 
@@ -156,7 +156,7 @@ class ListProcessesRequest:
 
     @property
     def database(self):
-        """Gets the database of this ListProcessesRequest.
+        r"""Gets the database of this ListProcessesRequest.
 
         数据库
 
@@ -167,7 +167,7 @@ class ListProcessesRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ListProcessesRequest.
+        r"""Sets the database of this ListProcessesRequest.
 
         数据库
 
@@ -178,7 +178,7 @@ class ListProcessesRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListProcessesRequest.
+        r"""Gets the node_id of this ListProcessesRequest.
 
         节点ID
 
@@ -189,7 +189,7 @@ class ListProcessesRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListProcessesRequest.
+        r"""Sets the node_id of this ListProcessesRequest.
 
         节点ID
 
@@ -200,7 +200,7 @@ class ListProcessesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProcessesRequest.
+        r"""Gets the offset of this ListProcessesRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -211,7 +211,7 @@ class ListProcessesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProcessesRequest.
+        r"""Sets the offset of this ListProcessesRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -222,7 +222,7 @@ class ListProcessesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProcessesRequest.
+        r"""Gets the limit of this ListProcessesRequest.
 
         每页记录数，默认为20，最大取值100。
 
@@ -233,7 +233,7 @@ class ListProcessesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProcessesRequest.
+        r"""Sets the limit of this ListProcessesRequest.
 
         每页记录数，默认为20，最大取值100。
 
@@ -244,7 +244,7 @@ class ListProcessesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListProcessesRequest.
+        r"""Gets the x_language of this ListProcessesRequest.
 
         语言
 
@@ -255,7 +255,7 @@ class ListProcessesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListProcessesRequest.
+        r"""Sets the x_language of this ListProcessesRequest.
 
         语言
 

@@ -37,7 +37,7 @@ class ListSessionsRequest:
     }
 
     def __init__(self, node_id=None, offset=None, limit=None, plan_summary=None, type=None, namespace=None, cost_time=None):
-        """ListSessionsRequest
+        r"""ListSessionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListSessionsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListSessionsRequest.
+        r"""Gets the node_id of this ListSessionsRequest.
 
         节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
@@ -95,7 +95,7 @@ class ListSessionsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListSessionsRequest.
+        r"""Sets the node_id of this ListSessionsRequest.
 
         节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
@@ -106,7 +106,7 @@ class ListSessionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSessionsRequest.
+        r"""Gets the offset of this ListSessionsRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -117,7 +117,7 @@ class ListSessionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSessionsRequest.
+        r"""Sets the offset of this ListSessionsRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -128,7 +128,7 @@ class ListSessionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSessionsRequest.
+        r"""Gets the limit of this ListSessionsRequest.
 
         查询记录数。取值范围[1, 20]，默认10 （表示返回10条数据）。
 
@@ -139,7 +139,7 @@ class ListSessionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSessionsRequest.
+        r"""Sets the limit of this ListSessionsRequest.
 
         查询记录数。取值范围[1, 20]，默认10 （表示返回10条数据）。
 
@@ -150,7 +150,7 @@ class ListSessionsRequest:
 
     @property
     def plan_summary(self):
-        """Gets the plan_summary of this ListSessionsRequest.
+        r"""Gets the plan_summary of this ListSessionsRequest.
 
         执行计划描述。取空值表示查询所有语句类型，也可指定执行计划，例如： COLLSCAN IXSCAN FETCH SORT LIMIT SKIP COUNT COUNT_SCAN TEXT PROJECTION 等
 
@@ -161,7 +161,7 @@ class ListSessionsRequest:
 
     @plan_summary.setter
     def plan_summary(self, plan_summary):
-        """Sets the plan_summary of this ListSessionsRequest.
+        r"""Sets the plan_summary of this ListSessionsRequest.
 
         执行计划描述。取空值表示查询所有语句类型，也可指定执行计划，例如： COLLSCAN IXSCAN FETCH SORT LIMIT SKIP COUNT COUNT_SCAN TEXT PROJECTION 等
 
@@ -172,7 +172,7 @@ class ListSessionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListSessionsRequest.
+        r"""Gets the type of this ListSessionsRequest.
 
         操作类型。取空值表示查询所有操作类型。也可指定操作类型，例如： none update insert query command getmore remove killcursors等
 
@@ -183,7 +183,7 @@ class ListSessionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListSessionsRequest.
+        r"""Sets the type of this ListSessionsRequest.
 
         操作类型。取空值表示查询所有操作类型。也可指定操作类型，例如： none update insert query command getmore remove killcursors等
 
@@ -194,7 +194,7 @@ class ListSessionsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListSessionsRequest.
+        r"""Gets the namespace of this ListSessionsRequest.
 
         命名空间。取空值表示查询所有命名空间。也可根据当前业务进行指定。
 
@@ -205,7 +205,7 @@ class ListSessionsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListSessionsRequest.
+        r"""Sets the namespace of this ListSessionsRequest.
 
         命名空间。取空值表示查询所有命名空间。也可根据当前业务进行指定。
 
@@ -216,7 +216,7 @@ class ListSessionsRequest:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this ListSessionsRequest.
+        r"""Gets the cost_time of this ListSessionsRequest.
 
         运行时间，单位为 us。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
 
@@ -227,7 +227,7 @@ class ListSessionsRequest:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this ListSessionsRequest.
+        r"""Sets the cost_time of this ListSessionsRequest.
 
         运行时间，单位为 us。取空值表示查询所有的运行时间。也可根据当前业务需要进行配置，表示查询超出 cost_time 的会话。
 

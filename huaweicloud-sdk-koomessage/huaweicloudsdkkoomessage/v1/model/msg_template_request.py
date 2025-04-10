@@ -39,7 +39,7 @@ class MsgTemplateRequest:
     }
 
     def __init__(self, app_id=None, signature_id=None, template_content=None, template_desc=None, template_name=None, template_type=None, universal_template=None, variable_attributes=None):
-        """MsgTemplateRequest
+        r"""MsgTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class MsgTemplateRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this MsgTemplateRequest.
+        r"""Gets the app_id of this MsgTemplateRequest.
 
         应用ID，默认取签名所属的应用ID。
 
@@ -99,7 +99,7 @@ class MsgTemplateRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this MsgTemplateRequest.
+        r"""Sets the app_id of this MsgTemplateRequest.
 
         应用ID，默认取签名所属的应用ID。
 
@@ -110,7 +110,7 @@ class MsgTemplateRequest:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this MsgTemplateRequest.
+        r"""Gets the signature_id of this MsgTemplateRequest.
 
         签名ID。
 
@@ -121,7 +121,7 @@ class MsgTemplateRequest:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this MsgTemplateRequest.
+        r"""Sets the signature_id of this MsgTemplateRequest.
 
         签名ID。
 
@@ -132,7 +132,7 @@ class MsgTemplateRequest:
 
     @property
     def template_content(self):
-        """Gets the template_content of this MsgTemplateRequest.
+        r"""Gets the template_content of this MsgTemplateRequest.
 
         模板内容。
 
@@ -143,7 +143,7 @@ class MsgTemplateRequest:
 
     @template_content.setter
     def template_content(self, template_content):
-        """Sets the template_content of this MsgTemplateRequest.
+        r"""Sets the template_content of this MsgTemplateRequest.
 
         模板内容。
 
@@ -154,7 +154,7 @@ class MsgTemplateRequest:
 
     @property
     def template_desc(self):
-        """Gets the template_desc of this MsgTemplateRequest.
+        r"""Gets the template_desc of this MsgTemplateRequest.
 
         模板描述。
 
@@ -165,7 +165,7 @@ class MsgTemplateRequest:
 
     @template_desc.setter
     def template_desc(self, template_desc):
-        """Sets the template_desc of this MsgTemplateRequest.
+        r"""Sets the template_desc of this MsgTemplateRequest.
 
         模板描述。
 
@@ -176,7 +176,7 @@ class MsgTemplateRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this MsgTemplateRequest.
+        r"""Gets the template_name of this MsgTemplateRequest.
 
         模板名称。
 
@@ -187,7 +187,7 @@ class MsgTemplateRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this MsgTemplateRequest.
+        r"""Sets the template_name of this MsgTemplateRequest.
 
         模板名称。
 
@@ -198,7 +198,7 @@ class MsgTemplateRequest:
 
     @property
     def template_type(self):
-        """Gets the template_type of this MsgTemplateRequest.
+        r"""Gets the template_type of this MsgTemplateRequest.
 
         模板类型。默认取所属签名的签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
@@ -209,7 +209,7 @@ class MsgTemplateRequest:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this MsgTemplateRequest.
+        r"""Sets the template_type of this MsgTemplateRequest.
 
         模板类型。默认取所属签名的签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
@@ -220,7 +220,7 @@ class MsgTemplateRequest:
 
     @property
     def universal_template(self):
-        """Gets the universal_template of this MsgTemplateRequest.
+        r"""Gets the universal_template of this MsgTemplateRequest.
 
         是否为通用模板(暂不支持通用模板)。0：非通用模板，1：通用模板。
 
@@ -231,7 +231,7 @@ class MsgTemplateRequest:
 
     @universal_template.setter
     def universal_template(self, universal_template):
-        """Sets the universal_template of this MsgTemplateRequest.
+        r"""Sets the universal_template of this MsgTemplateRequest.
 
         是否为通用模板(暂不支持通用模板)。0：非通用模板，1：通用模板。
 
@@ -242,7 +242,7 @@ class MsgTemplateRequest:
 
     @property
     def variable_attributes(self):
-        """Gets the variable_attributes of this MsgTemplateRequest.
+        r"""Gets the variable_attributes of this MsgTemplateRequest.
 
         模板参数。
 
@@ -253,7 +253,7 @@ class MsgTemplateRequest:
 
     @variable_attributes.setter
     def variable_attributes(self, variable_attributes):
-        """Sets the variable_attributes of this MsgTemplateRequest.
+        r"""Sets the variable_attributes of this MsgTemplateRequest.
 
         模板参数。
 

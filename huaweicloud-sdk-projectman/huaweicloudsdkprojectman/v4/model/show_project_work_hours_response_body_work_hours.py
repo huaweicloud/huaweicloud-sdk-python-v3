@@ -53,7 +53,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
     }
 
     def __init__(self, project_name=None, nick_name=None, user_id=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None, work_hours_created_time=None, work_hours_updated_time=None):
-        """ShowProjectWorkHoursResponseBodyWorkHours
+        r"""ShowProjectWorkHoursResponseBodyWorkHours
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the project_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         项目名称
 
@@ -152,7 +152,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the project_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         项目名称
 
@@ -163,7 +163,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the nick_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         用户昵称
 
@@ -174,7 +174,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the nick_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         用户昵称
 
@@ -185,7 +185,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         用户id
 
@@ -196,7 +196,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         用户id
 
@@ -207,7 +207,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the user_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         用户名
 
@@ -218,7 +218,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the user_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         用户名
 
@@ -229,7 +229,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def work_date(self):
-        """Gets the work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时日期
 
@@ -240,7 +240,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @work_date.setter
     def work_date(self, work_date):
-        """Sets the work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时日期
 
@@ -251,7 +251,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def work_hours_num(self):
-        """Gets the work_hours_num of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the work_hours_num of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时花费
 
@@ -262,7 +262,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @work_hours_num.setter
     def work_hours_num(self, work_hours_num):
-        """Sets the work_hours_num of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the work_hours_num of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时花费
 
@@ -273,7 +273,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def summary(self):
-        """Gets the summary of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the summary of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时内容
 
@@ -284,7 +284,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the summary of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时内容
 
@@ -295,7 +295,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def work_hours_type_name(self):
-        """Gets the work_hours_type_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the work_hours_type_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时类型
 
@@ -306,7 +306,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @work_hours_type_name.setter
     def work_hours_type_name(self, work_hours_type_name):
-        """Sets the work_hours_type_name of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the work_hours_type_name of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时类型
 
@@ -317,7 +317,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the issue_id of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项id
 
@@ -328,7 +328,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the issue_id of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项id
 
@@ -339,7 +339,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def issue_type(self):
-        """Gets the issue_type of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the issue_type of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项类型
 
@@ -350,7 +350,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @issue_type.setter
     def issue_type(self, issue_type):
-        """Sets the issue_type of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the issue_type of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项类型
 
@@ -361,7 +361,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def subject(self):
-        """Gets the subject of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the subject of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项标题
 
@@ -372,7 +372,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the subject of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项标题
 
@@ -383,7 +383,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项创建时间
 
@@ -394,7 +394,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项创建时间
 
@@ -405,7 +405,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def closed_time(self):
-        """Gets the closed_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the closed_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项结束时间
 
@@ -416,7 +416,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @closed_time.setter
     def closed_time(self, closed_time):
-        """Sets the closed_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the closed_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工作项结束时间
 
@@ -427,7 +427,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def work_hours_created_time(self):
-        """Gets the work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时创建时间
 
@@ -438,7 +438,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @work_hours_created_time.setter
     def work_hours_created_time(self, work_hours_created_time):
-        """Sets the work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时创建时间
 
@@ -449,7 +449,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @property
     def work_hours_updated_time(self):
-        """Gets the work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Gets the work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时更新时间
 
@@ -460,7 +460,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
     @work_hours_updated_time.setter
     def work_hours_updated_time(self, work_hours_updated_time):
-        """Sets the work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        r"""Sets the work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时更新时间
 

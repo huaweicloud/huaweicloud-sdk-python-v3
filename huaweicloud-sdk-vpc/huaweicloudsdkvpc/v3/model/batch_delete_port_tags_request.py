@@ -27,7 +27,7 @@ class BatchDeletePortTagsRequest:
     }
 
     def __init__(self, port_id=None, body=None):
-        """BatchDeletePortTagsRequest
+        r"""BatchDeletePortTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeletePortTagsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this BatchDeletePortTagsRequest.
+        r"""Gets the port_id of this BatchDeletePortTagsRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -60,7 +60,7 @@ class BatchDeletePortTagsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this BatchDeletePortTagsRequest.
+        r"""Sets the port_id of this BatchDeletePortTagsRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -71,7 +71,7 @@ class BatchDeletePortTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePortTagsRequest.
+        r"""Gets the body of this BatchDeletePortTagsRequest.
 
         :return: The body of this BatchDeletePortTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchDeletePortTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeletePortTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePortTagsRequest.
+        r"""Sets the body of this BatchDeletePortTagsRequest.
 
         :param body: The body of this BatchDeletePortTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.BatchDeletePortTagsRequestBody`

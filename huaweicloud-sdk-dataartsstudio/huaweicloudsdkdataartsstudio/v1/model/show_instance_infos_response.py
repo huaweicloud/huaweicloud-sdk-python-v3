@@ -30,7 +30,7 @@ class ShowInstanceInfosResponse(SdkResponse):
     }
 
     def __init__(self, status_code=None, body=None, header_map=None):
-        """ShowInstanceInfosResponse
+        r"""ShowInstanceInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowInstanceInfosResponse(SdkResponse):
 
     @property
     def status_code(self):
-        """Gets the status_code of this ShowInstanceInfosResponse.
+        r"""Gets the status_code of this ShowInstanceInfosResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowInstanceInfosResponse(SdkResponse):
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this ShowInstanceInfosResponse.
+        r"""Sets the status_code of this ShowInstanceInfosResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowInstanceInfosResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowInstanceInfosResponse.
+        r"""Gets the body of this ShowInstanceInfosResponse.
 
         响应体
 
@@ -91,7 +91,7 @@ class ShowInstanceInfosResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowInstanceInfosResponse.
+        r"""Sets the body of this ShowInstanceInfosResponse.
 
         响应体
 
@@ -102,7 +102,7 @@ class ShowInstanceInfosResponse(SdkResponse):
 
     @property
     def header_map(self):
-        """Gets the header_map of this ShowInstanceInfosResponse.
+        r"""Gets the header_map of this ShowInstanceInfosResponse.
 
         响应头，结构为Map<String,String>
 
@@ -113,7 +113,7 @@ class ShowInstanceInfosResponse(SdkResponse):
 
     @header_map.setter
     def header_map(self, header_map):
-        """Sets the header_map of this ShowInstanceInfosResponse.
+        r"""Sets the header_map of this ShowInstanceInfosResponse.
 
         响应头，结构为Map<String,String>
 

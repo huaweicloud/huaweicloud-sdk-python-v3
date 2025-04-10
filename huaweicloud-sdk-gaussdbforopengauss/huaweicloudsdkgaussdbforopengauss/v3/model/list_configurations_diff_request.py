@@ -27,7 +27,7 @@ class ListConfigurationsDiffRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListConfigurationsDiffRequest
+        r"""ListConfigurationsDiffRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConfigurationsDiffRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListConfigurationsDiffRequest.
+        r"""Gets the x_language of this ListConfigurationsDiffRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class ListConfigurationsDiffRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListConfigurationsDiffRequest.
+        r"""Sets the x_language of this ListConfigurationsDiffRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class ListConfigurationsDiffRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListConfigurationsDiffRequest.
+        r"""Gets the body of this ListConfigurationsDiffRequest.
 
         :return: The body of this ListConfigurationsDiffRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ParamGroupDiffRequestBody`
@@ -81,7 +81,7 @@ class ListConfigurationsDiffRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListConfigurationsDiffRequest.
+        r"""Sets the body of this ListConfigurationsDiffRequest.
 
         :param body: The body of this ListConfigurationsDiffRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ParamGroupDiffRequestBody`

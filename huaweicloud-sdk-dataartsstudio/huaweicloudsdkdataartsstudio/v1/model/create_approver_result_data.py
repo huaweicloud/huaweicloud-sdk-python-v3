@@ -25,7 +25,7 @@ class CreateApproverResultData:
     }
 
     def __init__(self, value=None):
-        """CreateApproverResultData
+        r"""CreateApproverResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateApproverResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateApproverResultData.
+        r"""Gets the value of this CreateApproverResultData.
 
         :return: The value of this CreateApproverResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApproverVO`
@@ -52,7 +52,7 @@ class CreateApproverResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateApproverResultData.
+        r"""Sets the value of this CreateApproverResultData.
 
         :param value: The value of this CreateApproverResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ApproverVO`

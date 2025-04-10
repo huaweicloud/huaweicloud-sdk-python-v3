@@ -27,7 +27,7 @@ class MsgAppRequest:
     }
 
     def __init__(self, app_name=None, up_link_addr=None):
-        """MsgAppRequest
+        r"""MsgAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MsgAppRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this MsgAppRequest.
+        r"""Gets the app_name of this MsgAppRequest.
 
         应用名称。
 
@@ -60,7 +60,7 @@ class MsgAppRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this MsgAppRequest.
+        r"""Sets the app_name of this MsgAppRequest.
 
         应用名称。
 
@@ -71,7 +71,7 @@ class MsgAppRequest:
 
     @property
     def up_link_addr(self):
-        """Gets the up_link_addr of this MsgAppRequest.
+        r"""Gets the up_link_addr of this MsgAppRequest.
 
         上行回调地址。支持通信协议HTTPS/HTTP。
 
@@ -82,7 +82,7 @@ class MsgAppRequest:
 
     @up_link_addr.setter
     def up_link_addr(self, up_link_addr):
-        """Sets the up_link_addr of this MsgAppRequest.
+        r"""Sets the up_link_addr of this MsgAppRequest.
 
         上行回调地址。支持通信协议HTTPS/HTTP。
 

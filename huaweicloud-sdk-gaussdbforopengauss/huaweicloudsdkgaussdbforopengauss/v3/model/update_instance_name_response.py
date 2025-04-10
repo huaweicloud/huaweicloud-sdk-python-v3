@@ -26,7 +26,7 @@ class UpdateInstanceNameResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateInstanceNameResponse
+        r"""UpdateInstanceNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateInstanceNameResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateInstanceNameResponse.
+        r"""Gets the job_id of this UpdateInstanceNameResponse.
 
         修改实例名称的任务ID。
 
@@ -55,7 +55,7 @@ class UpdateInstanceNameResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateInstanceNameResponse.
+        r"""Sets the job_id of this UpdateInstanceNameResponse.
 
         修改实例名称的任务ID。
 

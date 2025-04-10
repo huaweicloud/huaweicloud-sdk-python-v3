@@ -28,7 +28,7 @@ class ShowStreamMetricsResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None, metrics_list=None):
-        """ShowStreamMetricsResponse
+        r"""ShowStreamMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStreamMetricsResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowStreamMetricsResponse.
+        r"""Gets the metrics of this ShowStreamMetricsResponse.
 
         :return: The metrics of this ShowStreamMetricsResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.Metrics`
@@ -60,7 +60,7 @@ class ShowStreamMetricsResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowStreamMetricsResponse.
+        r"""Sets the metrics of this ShowStreamMetricsResponse.
 
         :param metrics: The metrics of this ShowStreamMetricsResponse.
         :type metrics: :class:`huaweicloudsdkdis.v2.Metrics`
@@ -69,7 +69,7 @@ class ShowStreamMetricsResponse(SdkResponse):
 
     @property
     def metrics_list(self):
-        """Gets the metrics_list of this ShowStreamMetricsResponse.
+        r"""Gets the metrics_list of this ShowStreamMetricsResponse.
 
         监控数据对象列表。
 
@@ -80,7 +80,7 @@ class ShowStreamMetricsResponse(SdkResponse):
 
     @metrics_list.setter
     def metrics_list(self, metrics_list):
-        """Sets the metrics_list of this ShowStreamMetricsResponse.
+        r"""Sets the metrics_list of this ShowStreamMetricsResponse.
 
         监控数据对象列表。
 

@@ -29,7 +29,7 @@ class UpdateLivePlatformReq:
     }
 
     def __init__(self, name=None, auth_config=None, callback_config=None):
-        """UpdateLivePlatformReq
+        r"""UpdateLivePlatformReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLivePlatformReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateLivePlatformReq.
+        r"""Gets the name of this UpdateLivePlatformReq.
 
         直播平台名称
 
@@ -66,7 +66,7 @@ class UpdateLivePlatformReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateLivePlatformReq.
+        r"""Sets the name of this UpdateLivePlatformReq.
 
         直播平台名称
 
@@ -77,7 +77,7 @@ class UpdateLivePlatformReq:
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this UpdateLivePlatformReq.
+        r"""Gets the auth_config of this UpdateLivePlatformReq.
 
         :return: The auth_config of this UpdateLivePlatformReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateCustomPlatformAuthConfig`
@@ -86,7 +86,7 @@ class UpdateLivePlatformReq:
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this UpdateLivePlatformReq.
+        r"""Sets the auth_config of this UpdateLivePlatformReq.
 
         :param auth_config: The auth_config of this UpdateLivePlatformReq.
         :type auth_config: :class:`huaweicloudsdkmetastudio.v1.UpdateCustomPlatformAuthConfig`
@@ -95,7 +95,7 @@ class UpdateLivePlatformReq:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this UpdateLivePlatformReq.
+        r"""Gets the callback_config of this UpdateLivePlatformReq.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 
@@ -106,7 +106,7 @@ class UpdateLivePlatformReq:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this UpdateLivePlatformReq.
+        r"""Sets the callback_config of this UpdateLivePlatformReq.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 

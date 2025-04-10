@@ -30,7 +30,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
     }
 
     def __init__(self, links=None, name=None, properties=None):
-        """GlanceListImageMemberSchemasResponse
+        r"""GlanceListImageMemberSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this GlanceListImageMemberSchemasResponse.
+        r"""Gets the links of this GlanceListImageMemberSchemasResponse.
 
         视图链接。
 
@@ -69,7 +69,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this GlanceListImageMemberSchemasResponse.
+        r"""Sets the links of this GlanceListImageMemberSchemasResponse.
 
         视图链接。
 
@@ -80,7 +80,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GlanceListImageMemberSchemasResponse.
+        r"""Gets the name of this GlanceListImageMemberSchemasResponse.
 
         视图名称。
 
@@ -91,7 +91,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceListImageMemberSchemasResponse.
+        r"""Sets the name of this GlanceListImageMemberSchemasResponse.
 
         视图名称。
 
@@ -102,7 +102,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this GlanceListImageMemberSchemasResponse.
+        r"""Gets the properties of this GlanceListImageMemberSchemasResponse.
 
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型，用途。
 
@@ -113,7 +113,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this GlanceListImageMemberSchemasResponse.
+        r"""Sets the properties of this GlanceListImageMemberSchemasResponse.
 
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型，用途。
 

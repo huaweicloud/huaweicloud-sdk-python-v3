@@ -28,7 +28,7 @@ class ShowResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, tags=None):
-        """ShowResourceTagsResponse
+        r"""ShowResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowResourceTagsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowResourceTagsResponse.
+        r"""Gets the count of this ShowResourceTagsResponse.
 
         满足条件的总数
 
@@ -62,7 +62,7 @@ class ShowResourceTagsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowResourceTagsResponse.
+        r"""Sets the count of this ShowResourceTagsResponse.
 
         满足条件的总数
 
@@ -73,7 +73,7 @@ class ShowResourceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowResourceTagsResponse.
+        r"""Gets the tags of this ShowResourceTagsResponse.
 
         资源标签对列表
 
@@ -84,7 +84,7 @@ class ShowResourceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowResourceTagsResponse.
+        r"""Sets the tags of this ShowResourceTagsResponse.
 
         资源标签对列表
 

@@ -44,7 +44,7 @@ class UpdateAppGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, app_server_group_id=None, app_server_group_name=None, description=None, authorization_type=None, tenant_id=None, app_type=None, create_at=None, app_count=None):
-        """UpdateAppGroupResponse
+        r"""UpdateAppGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAppGroupResponse.
+        r"""Gets the id of this UpdateAppGroupResponse.
 
         应用组ID。
 
@@ -118,7 +118,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAppGroupResponse.
+        r"""Sets the id of this UpdateAppGroupResponse.
 
         应用组ID。
 
@@ -129,7 +129,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppGroupResponse.
+        r"""Gets the name of this UpdateAppGroupResponse.
 
         应用组名称。
 
@@ -140,7 +140,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppGroupResponse.
+        r"""Sets the name of this UpdateAppGroupResponse.
 
         应用组名称。
 
@@ -151,7 +151,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this UpdateAppGroupResponse.
+        r"""Gets the app_server_group_id of this UpdateAppGroupResponse.
 
         应用服务器组ID。
 
@@ -162,7 +162,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this UpdateAppGroupResponse.
+        r"""Sets the app_server_group_id of this UpdateAppGroupResponse.
 
         应用服务器组ID。
 
@@ -173,7 +173,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def app_server_group_name(self):
-        """Gets the app_server_group_name of this UpdateAppGroupResponse.
+        r"""Gets the app_server_group_name of this UpdateAppGroupResponse.
 
         应用服务器组名称。
 
@@ -184,7 +184,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @app_server_group_name.setter
     def app_server_group_name(self, app_server_group_name):
-        """Sets the app_server_group_name of this UpdateAppGroupResponse.
+        r"""Sets the app_server_group_name of this UpdateAppGroupResponse.
 
         应用服务器组名称。
 
@@ -195,7 +195,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppGroupResponse.
+        r"""Gets the description of this UpdateAppGroupResponse.
 
         应用组描述。
 
@@ -206,7 +206,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppGroupResponse.
+        r"""Sets the description of this UpdateAppGroupResponse.
 
         应用组描述。
 
@@ -217,7 +217,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this UpdateAppGroupResponse.
+        r"""Gets the authorization_type of this UpdateAppGroupResponse.
 
         :return: The authorization_type of this UpdateAppGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -226,7 +226,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this UpdateAppGroupResponse.
+        r"""Sets the authorization_type of this UpdateAppGroupResponse.
 
         :param authorization_type: The authorization_type of this UpdateAppGroupResponse.
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -235,7 +235,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this UpdateAppGroupResponse.
+        r"""Gets the tenant_id of this UpdateAppGroupResponse.
 
         租户ID。
 
@@ -246,7 +246,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this UpdateAppGroupResponse.
+        r"""Sets the tenant_id of this UpdateAppGroupResponse.
 
         租户ID。
 
@@ -257,7 +257,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this UpdateAppGroupResponse.
+        r"""Gets the app_type of this UpdateAppGroupResponse.
 
         :return: The app_type of this UpdateAppGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -266,7 +266,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this UpdateAppGroupResponse.
+        r"""Sets the app_type of this UpdateAppGroupResponse.
 
         :param app_type: The app_type of this UpdateAppGroupResponse.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -275,7 +275,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this UpdateAppGroupResponse.
+        r"""Gets the create_at of this UpdateAppGroupResponse.
 
         发布时间。
 
@@ -286,7 +286,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this UpdateAppGroupResponse.
+        r"""Sets the create_at of this UpdateAppGroupResponse.
 
         发布时间。
 
@@ -297,7 +297,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @property
     def app_count(self):
-        """Gets the app_count of this UpdateAppGroupResponse.
+        r"""Gets the app_count of this UpdateAppGroupResponse.
 
         应用数量。
 
@@ -308,7 +308,7 @@ class UpdateAppGroupResponse(SdkResponse):
 
     @app_count.setter
     def app_count(self, app_count):
-        """Sets the app_count of this UpdateAppGroupResponse.
+        r"""Sets the app_count of this UpdateAppGroupResponse.
 
         应用数量。
 

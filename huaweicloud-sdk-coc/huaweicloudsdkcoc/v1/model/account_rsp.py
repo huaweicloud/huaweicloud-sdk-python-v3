@@ -49,7 +49,7 @@ class AccountRsp:
     }
 
     def __init__(self, id=None, name=None, type=None, delegatee=None, agency_id=None, delegator=None, create_user_name=None, status=None, create_user_id=None, create_time=None, update_user_name=None, update_user_id=None, update_time=None):
-        """AccountRsp
+        r"""AccountRsp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AccountRsp:
 
     @property
     def id(self):
-        """Gets the id of this AccountRsp.
+        r"""Gets the id of this AccountRsp.
 
         id
 
@@ -131,7 +131,7 @@ class AccountRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AccountRsp.
+        r"""Sets the id of this AccountRsp.
 
         id
 
@@ -142,7 +142,7 @@ class AccountRsp:
 
     @property
     def name(self):
-        """Gets the name of this AccountRsp.
+        r"""Gets the name of this AccountRsp.
 
         名称
 
@@ -153,7 +153,7 @@ class AccountRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccountRsp.
+        r"""Sets the name of this AccountRsp.
 
         名称
 
@@ -164,7 +164,7 @@ class AccountRsp:
 
     @property
     def type(self):
-        """Gets the type of this AccountRsp.
+        r"""Gets the type of this AccountRsp.
 
         账号类型 NORMAL 普通账号，停用状态 DELEGATOR 委托人 DELEGATEE 被委托人
 
@@ -175,7 +175,7 @@ class AccountRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AccountRsp.
+        r"""Sets the type of this AccountRsp.
 
         账号类型 NORMAL 普通账号，停用状态 DELEGATOR 委托人 DELEGATEE 被委托人
 
@@ -186,7 +186,7 @@ class AccountRsp:
 
     @property
     def delegatee(self):
-        """Gets the delegatee of this AccountRsp.
+        r"""Gets the delegatee of this AccountRsp.
 
         被委托人id
 
@@ -197,7 +197,7 @@ class AccountRsp:
 
     @delegatee.setter
     def delegatee(self, delegatee):
-        """Sets the delegatee of this AccountRsp.
+        r"""Sets the delegatee of this AccountRsp.
 
         被委托人id
 
@@ -208,7 +208,7 @@ class AccountRsp:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this AccountRsp.
+        r"""Gets the agency_id of this AccountRsp.
 
         委托id
 
@@ -219,7 +219,7 @@ class AccountRsp:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this AccountRsp.
+        r"""Sets the agency_id of this AccountRsp.
 
         委托id
 
@@ -230,7 +230,7 @@ class AccountRsp:
 
     @property
     def delegator(self):
-        """Gets the delegator of this AccountRsp.
+        r"""Gets the delegator of this AccountRsp.
 
         托管账号Id
 
@@ -241,7 +241,7 @@ class AccountRsp:
 
     @delegator.setter
     def delegator(self, delegator):
-        """Sets the delegator of this AccountRsp.
+        r"""Sets the delegator of this AccountRsp.
 
         托管账号Id
 
@@ -252,7 +252,7 @@ class AccountRsp:
 
     @property
     def create_user_name(self):
-        """Gets the create_user_name of this AccountRsp.
+        r"""Gets the create_user_name of this AccountRsp.
 
         创建人
 
@@ -263,7 +263,7 @@ class AccountRsp:
 
     @create_user_name.setter
     def create_user_name(self, create_user_name):
-        """Sets the create_user_name of this AccountRsp.
+        r"""Sets the create_user_name of this AccountRsp.
 
         创建人
 
@@ -274,7 +274,7 @@ class AccountRsp:
 
     @property
     def status(self):
-        """Gets the status of this AccountRsp.
+        r"""Gets the status of this AccountRsp.
 
         PENDING_AUTHORIZATION, 待授权,ENABLED 启用, DISABLED 停用
 
@@ -285,7 +285,7 @@ class AccountRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccountRsp.
+        r"""Sets the status of this AccountRsp.
 
         PENDING_AUTHORIZATION, 待授权,ENABLED 启用, DISABLED 停用
 
@@ -296,7 +296,7 @@ class AccountRsp:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this AccountRsp.
+        r"""Gets the create_user_id of this AccountRsp.
 
         创建userId
 
@@ -307,7 +307,7 @@ class AccountRsp:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this AccountRsp.
+        r"""Sets the create_user_id of this AccountRsp.
 
         创建userId
 
@@ -318,7 +318,7 @@ class AccountRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AccountRsp.
+        r"""Gets the create_time of this AccountRsp.
 
         创建时间
 
@@ -329,7 +329,7 @@ class AccountRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AccountRsp.
+        r"""Sets the create_time of this AccountRsp.
 
         创建时间
 
@@ -340,7 +340,7 @@ class AccountRsp:
 
     @property
     def update_user_name(self):
-        """Gets the update_user_name of this AccountRsp.
+        r"""Gets the update_user_name of this AccountRsp.
 
         编辑人
 
@@ -351,7 +351,7 @@ class AccountRsp:
 
     @update_user_name.setter
     def update_user_name(self, update_user_name):
-        """Sets the update_user_name of this AccountRsp.
+        r"""Sets the update_user_name of this AccountRsp.
 
         编辑人
 
@@ -362,7 +362,7 @@ class AccountRsp:
 
     @property
     def update_user_id(self):
-        """Gets the update_user_id of this AccountRsp.
+        r"""Gets the update_user_id of this AccountRsp.
 
         编辑人user_id
 
@@ -373,7 +373,7 @@ class AccountRsp:
 
     @update_user_id.setter
     def update_user_id(self, update_user_id):
-        """Sets the update_user_id of this AccountRsp.
+        r"""Sets the update_user_id of this AccountRsp.
 
         编辑人user_id
 
@@ -384,7 +384,7 @@ class AccountRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AccountRsp.
+        r"""Gets the update_time of this AccountRsp.
 
         编辑时间，期初和创建时间一样
 
@@ -395,7 +395,7 @@ class AccountRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AccountRsp.
+        r"""Sets the update_time of this AccountRsp.
 
         编辑时间，期初和创建时间一样
 

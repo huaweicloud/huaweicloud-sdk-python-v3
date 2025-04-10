@@ -43,7 +43,7 @@ class CreateCbcOrderRequestBody:
     }
 
     def __init__(self, charging_mode=None, is_auto_renew=None, is_auto_pay=None, period_num=None, period_type=None, cloud_service_type=None, project_id=None, promotion_info=None, region_id=None, product_infos=None):
-        """CreateCbcOrderRequestBody
+        r"""CreateCbcOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateCbcOrderRequestBody.
+        r"""Gets the charging_mode of this CreateCbcOrderRequestBody.
 
         计费模式： 0：一次性计费（默认值，对应包年包月） 10：RI
 
@@ -109,7 +109,7 @@ class CreateCbcOrderRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateCbcOrderRequestBody.
+        r"""Sets the charging_mode of this CreateCbcOrderRequestBody.
 
         计费模式： 0：一次性计费（默认值，对应包年包月） 10：RI
 
@@ -120,7 +120,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateCbcOrderRequestBody.
+        r"""Gets the is_auto_renew of this CreateCbcOrderRequestBody.
 
         0：不自动续订 1：自动续订
 
@@ -131,7 +131,7 @@ class CreateCbcOrderRequestBody:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateCbcOrderRequestBody.
+        r"""Sets the is_auto_renew of this CreateCbcOrderRequestBody.
 
         0：不自动续订 1：自动续订
 
@@ -142,7 +142,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateCbcOrderRequestBody.
+        r"""Gets the is_auto_pay of this CreateCbcOrderRequestBody.
 
         该请求参数为预留参数，当前不支持自动支付，使用接口时该参数请使用0 0：不自动支付 1：自动支付
 
@@ -153,7 +153,7 @@ class CreateCbcOrderRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateCbcOrderRequestBody.
+        r"""Sets the is_auto_pay of this CreateCbcOrderRequestBody.
 
         该请求参数为预留参数，当前不支持自动支付，使用接口时该参数请使用0 0：不自动支付 1：自动支付
 
@@ -164,7 +164,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateCbcOrderRequestBody.
+        r"""Gets the period_num of this CreateCbcOrderRequestBody.
 
         period_num
 
@@ -175,7 +175,7 @@ class CreateCbcOrderRequestBody:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateCbcOrderRequestBody.
+        r"""Sets the period_num of this CreateCbcOrderRequestBody.
 
         period_num
 
@@ -186,7 +186,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateCbcOrderRequestBody.
+        r"""Gets the period_type of this CreateCbcOrderRequestBody.
 
         订购周期类型： 2：月； 3：年； 4：包小时（仅限带宽加油包购买场景使用） 5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘） 6：一次性（chargingMode=1 一次性计费场景使用）
 
@@ -197,7 +197,7 @@ class CreateCbcOrderRequestBody:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateCbcOrderRequestBody.
+        r"""Sets the period_type of this CreateCbcOrderRequestBody.
 
         订购周期类型： 2：月； 3：年； 4：包小时（仅限带宽加油包购买场景使用） 5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘） 6：一次性（chargingMode=1 一次性计费场景使用）
 
@@ -208,7 +208,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this CreateCbcOrderRequestBody.
+        r"""Gets the cloud_service_type of this CreateCbcOrderRequestBody.
 
         用户购买的云服务的主云服务类型
 
@@ -219,7 +219,7 @@ class CreateCbcOrderRequestBody:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this CreateCbcOrderRequestBody.
+        r"""Sets the cloud_service_type of this CreateCbcOrderRequestBody.
 
         用户购买的云服务的主云服务类型
 
@@ -230,7 +230,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateCbcOrderRequestBody.
+        r"""Gets the project_id of this CreateCbcOrderRequestBody.
 
         project_id
 
@@ -241,7 +241,7 @@ class CreateCbcOrderRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateCbcOrderRequestBody.
+        r"""Sets the project_id of this CreateCbcOrderRequestBody.
 
         project_id
 
@@ -252,7 +252,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CreateCbcOrderRequestBody.
+        r"""Gets the promotion_info of this CreateCbcOrderRequestBody.
 
         promotion_info
 
@@ -263,7 +263,7 @@ class CreateCbcOrderRequestBody:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CreateCbcOrderRequestBody.
+        r"""Sets the promotion_info of this CreateCbcOrderRequestBody.
 
         promotion_info
 
@@ -274,7 +274,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateCbcOrderRequestBody.
+        r"""Gets the region_id of this CreateCbcOrderRequestBody.
 
         Region标识，填region编码如\"cn-north-1\"，对于global服务，此处固定填写虚拟的Global regionCode(global-cbc-1)
 
@@ -285,7 +285,7 @@ class CreateCbcOrderRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateCbcOrderRequestBody.
+        r"""Sets the region_id of this CreateCbcOrderRequestBody.
 
         Region标识，填region编码如\"cn-north-1\"，对于global服务，此处固定填写虚拟的Global regionCode(global-cbc-1)
 
@@ -296,7 +296,7 @@ class CreateCbcOrderRequestBody:
 
     @property
     def product_infos(self):
-        """Gets the product_infos of this CreateCbcOrderRequestBody.
+        r"""Gets the product_infos of this CreateCbcOrderRequestBody.
 
         product_infos
 
@@ -307,7 +307,7 @@ class CreateCbcOrderRequestBody:
 
     @product_infos.setter
     def product_infos(self, product_infos):
-        """Sets the product_infos of this CreateCbcOrderRequestBody.
+        r"""Sets the product_infos of this CreateCbcOrderRequestBody.
 
         product_infos
 

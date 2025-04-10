@@ -26,7 +26,7 @@ class CreateBackup2Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateBackup2Response
+        r"""CreateBackup2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateBackup2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateBackup2Response.
+        r"""Gets the job_id of this CreateBackup2Response.
 
         图备份任务ID。
 
@@ -55,7 +55,7 @@ class CreateBackup2Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateBackup2Response.
+        r"""Sets the job_id of this CreateBackup2Response.
 
         图备份任务ID。
 

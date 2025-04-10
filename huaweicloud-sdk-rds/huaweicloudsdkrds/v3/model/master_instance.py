@@ -31,7 +31,7 @@ class MasterInstance:
     }
 
     def __init__(self, instance_id=None, region=None, project_id=None, project_name=None):
-        """MasterInstance
+        r"""MasterInstance
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class MasterInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MasterInstance.
+        r"""Gets the instance_id of this MasterInstance.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class MasterInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MasterInstance.
+        r"""Sets the instance_id of this MasterInstance.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class MasterInstance:
 
     @property
     def region(self):
-        """Gets the region of this MasterInstance.
+        r"""Gets the region of this MasterInstance.
 
         区域。
 
@@ -93,7 +93,7 @@ class MasterInstance:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MasterInstance.
+        r"""Sets the region of this MasterInstance.
 
         区域。
 
@@ -104,7 +104,7 @@ class MasterInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MasterInstance.
+        r"""Gets the project_id of this MasterInstance.
 
         项目ID。
 
@@ -115,7 +115,7 @@ class MasterInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MasterInstance.
+        r"""Sets the project_id of this MasterInstance.
 
         项目ID。
 
@@ -126,7 +126,7 @@ class MasterInstance:
 
     @property
     def project_name(self):
-        """Gets the project_name of this MasterInstance.
+        r"""Gets the project_name of this MasterInstance.
 
         项目名称。
 
@@ -137,7 +137,7 @@ class MasterInstance:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this MasterInstance.
+        r"""Sets the project_name of this MasterInstance.
 
         项目名称。
 

@@ -51,7 +51,7 @@ class TaskInfo:
     }
 
     def __init__(self, name=None, timestamp=None, description=None, streams=None, ok_pod_number=None, cur_pod_number=None, sum_pod_number=None, fail_pod_number=None, pending_pod_number=None, task_status=None, task_id=None, user_task_id=None, start_time_info=None, source_usage_estimate=None):
-        """TaskInfo
+        r"""TaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class TaskInfo:
 
     @property
     def name(self):
-        """Gets the name of this TaskInfo.
+        r"""Gets the name of this TaskInfo.
 
         作业名称
 
@@ -145,7 +145,7 @@ class TaskInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskInfo.
+        r"""Sets the name of this TaskInfo.
 
         作业名称
 
@@ -156,7 +156,7 @@ class TaskInfo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this TaskInfo.
+        r"""Gets the timestamp of this TaskInfo.
 
         作业创建时间
 
@@ -167,7 +167,7 @@ class TaskInfo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this TaskInfo.
+        r"""Sets the timestamp of this TaskInfo.
 
         作业创建时间
 
@@ -178,7 +178,7 @@ class TaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this TaskInfo.
+        r"""Gets the description of this TaskInfo.
 
         作业描述
 
@@ -189,7 +189,7 @@ class TaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskInfo.
+        r"""Sets the description of this TaskInfo.
 
         作业描述
 
@@ -200,7 +200,7 @@ class TaskInfo:
 
     @property
     def streams(self):
-        """Gets the streams of this TaskInfo.
+        r"""Gets the streams of this TaskInfo.
 
         作业流详情
 
@@ -211,7 +211,7 @@ class TaskInfo:
 
     @streams.setter
     def streams(self, streams):
-        """Sets the streams of this TaskInfo.
+        r"""Sets the streams of this TaskInfo.
 
         作业流详情
 
@@ -222,7 +222,7 @@ class TaskInfo:
 
     @property
     def ok_pod_number(self):
-        """Gets the ok_pod_number of this TaskInfo.
+        r"""Gets the ok_pod_number of this TaskInfo.
 
         在实例上运行成功的作业数
 
@@ -233,7 +233,7 @@ class TaskInfo:
 
     @ok_pod_number.setter
     def ok_pod_number(self, ok_pod_number):
-        """Sets the ok_pod_number of this TaskInfo.
+        r"""Sets the ok_pod_number of this TaskInfo.
 
         在实例上运行成功的作业数
 
@@ -244,7 +244,7 @@ class TaskInfo:
 
     @property
     def cur_pod_number(self):
-        """Gets the cur_pod_number of this TaskInfo.
+        r"""Gets the cur_pod_number of this TaskInfo.
 
         在实例上正在运行的作业数
 
@@ -255,7 +255,7 @@ class TaskInfo:
 
     @cur_pod_number.setter
     def cur_pod_number(self, cur_pod_number):
-        """Sets the cur_pod_number of this TaskInfo.
+        r"""Sets the cur_pod_number of this TaskInfo.
 
         在实例上正在运行的作业数
 
@@ -266,7 +266,7 @@ class TaskInfo:
 
     @property
     def sum_pod_number(self):
-        """Gets the sum_pod_number of this TaskInfo.
+        r"""Gets the sum_pod_number of this TaskInfo.
 
         在实例上运行过的作业总数
 
@@ -277,7 +277,7 @@ class TaskInfo:
 
     @sum_pod_number.setter
     def sum_pod_number(self, sum_pod_number):
-        """Sets the sum_pod_number of this TaskInfo.
+        r"""Sets the sum_pod_number of this TaskInfo.
 
         在实例上运行过的作业总数
 
@@ -288,7 +288,7 @@ class TaskInfo:
 
     @property
     def fail_pod_number(self):
-        """Gets the fail_pod_number of this TaskInfo.
+        r"""Gets the fail_pod_number of this TaskInfo.
 
         在实例上运行失败的作业数
 
@@ -299,7 +299,7 @@ class TaskInfo:
 
     @fail_pod_number.setter
     def fail_pod_number(self, fail_pod_number):
-        """Sets the fail_pod_number of this TaskInfo.
+        r"""Sets the fail_pod_number of this TaskInfo.
 
         在实例上运行失败的作业数
 
@@ -310,7 +310,7 @@ class TaskInfo:
 
     @property
     def pending_pod_number(self):
-        """Gets the pending_pod_number of this TaskInfo.
+        r"""Gets the pending_pod_number of this TaskInfo.
 
         在实例上等待运行的作业数
 
@@ -321,7 +321,7 @@ class TaskInfo:
 
     @pending_pod_number.setter
     def pending_pod_number(self, pending_pod_number):
-        """Sets the pending_pod_number of this TaskInfo.
+        r"""Sets the pending_pod_number of this TaskInfo.
 
         在实例上等待运行的作业数
 
@@ -332,7 +332,7 @@ class TaskInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this TaskInfo.
+        r"""Gets the task_status of this TaskInfo.
 
         作业状态信息
 
@@ -343,7 +343,7 @@ class TaskInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this TaskInfo.
+        r"""Sets the task_status of this TaskInfo.
 
         作业状态信息
 
@@ -354,7 +354,7 @@ class TaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskInfo.
+        r"""Gets the task_id of this TaskInfo.
 
         作业id
 
@@ -365,7 +365,7 @@ class TaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskInfo.
+        r"""Sets the task_id of this TaskInfo.
 
         作业id
 
@@ -376,7 +376,7 @@ class TaskInfo:
 
     @property
     def user_task_id(self):
-        """Gets the user_task_id of this TaskInfo.
+        r"""Gets the user_task_id of this TaskInfo.
 
         用户作业id
 
@@ -387,7 +387,7 @@ class TaskInfo:
 
     @user_task_id.setter
     def user_task_id(self, user_task_id):
-        """Sets the user_task_id of this TaskInfo.
+        r"""Sets the user_task_id of this TaskInfo.
 
         用户作业id
 
@@ -398,7 +398,7 @@ class TaskInfo:
 
     @property
     def start_time_info(self):
-        """Gets the start_time_info of this TaskInfo.
+        r"""Gets the start_time_info of this TaskInfo.
 
         :return: The start_time_info of this TaskInfo.
         :rtype: :class:`huaweicloudsdkhilens.v3.StartTimeInfo`
@@ -407,7 +407,7 @@ class TaskInfo:
 
     @start_time_info.setter
     def start_time_info(self, start_time_info):
-        """Sets the start_time_info of this TaskInfo.
+        r"""Sets the start_time_info of this TaskInfo.
 
         :param start_time_info: The start_time_info of this TaskInfo.
         :type start_time_info: :class:`huaweicloudsdkhilens.v3.StartTimeInfo`
@@ -416,7 +416,7 @@ class TaskInfo:
 
     @property
     def source_usage_estimate(self):
-        """Gets the source_usage_estimate of this TaskInfo.
+        r"""Gets the source_usage_estimate of this TaskInfo.
 
         :return: The source_usage_estimate of this TaskInfo.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskSourceUsageEstimate`
@@ -425,7 +425,7 @@ class TaskInfo:
 
     @source_usage_estimate.setter
     def source_usage_estimate(self, source_usage_estimate):
-        """Sets the source_usage_estimate of this TaskInfo.
+        r"""Sets the source_usage_estimate of this TaskInfo.
 
         :param source_usage_estimate: The source_usage_estimate of this TaskInfo.
         :type source_usage_estimate: :class:`huaweicloudsdkhilens.v3.TaskSourceUsageEstimate`

@@ -26,7 +26,7 @@ class ListLogGroupsResponse(SdkResponse):
     }
 
     def __init__(self, log_groups=None):
-        """ListLogGroupsResponse
+        r"""ListLogGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLogGroupsResponse(SdkResponse):
 
     @property
     def log_groups(self):
-        """Gets the log_groups of this ListLogGroupsResponse.
+        r"""Gets the log_groups of this ListLogGroupsResponse.
 
         日志组信息。
 
@@ -55,7 +55,7 @@ class ListLogGroupsResponse(SdkResponse):
 
     @log_groups.setter
     def log_groups(self, log_groups):
-        """Sets the log_groups of this ListLogGroupsResponse.
+        r"""Sets the log_groups of this ListLogGroupsResponse.
 
         日志组信息。
 

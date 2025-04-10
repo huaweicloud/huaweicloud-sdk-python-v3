@@ -27,7 +27,7 @@ class BatchAssociateClassificationToEntitiesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """BatchAssociateClassificationToEntitiesRequest
+        r"""BatchAssociateClassificationToEntitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAssociateClassificationToEntitiesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchAssociateClassificationToEntitiesRequest.
+        r"""Gets the workspace of this BatchAssociateClassificationToEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class BatchAssociateClassificationToEntitiesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchAssociateClassificationToEntitiesRequest.
+        r"""Sets the workspace of this BatchAssociateClassificationToEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class BatchAssociateClassificationToEntitiesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAssociateClassificationToEntitiesRequest.
+        r"""Gets the body of this BatchAssociateClassificationToEntitiesRequest.
 
         :return: The body of this BatchAssociateClassificationToEntitiesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenBulkClassifications`
@@ -80,7 +80,7 @@ class BatchAssociateClassificationToEntitiesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAssociateClassificationToEntitiesRequest.
+        r"""Sets the body of this BatchAssociateClassificationToEntitiesRequest.
 
         :param body: The body of this BatchAssociateClassificationToEntitiesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.OpenBulkClassifications`

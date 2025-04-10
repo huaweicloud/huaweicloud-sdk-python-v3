@@ -30,7 +30,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, task_data=None, result=None):
-        """ShowCustomPropsTaskResultResponse
+        r"""ShowCustomPropsTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCustomPropsTaskResultResponse.
+        r"""Gets the status of this ShowCustomPropsTaskResultResponse.
 
         :return: The status of this ShowCustomPropsTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -67,7 +67,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCustomPropsTaskResultResponse.
+        r"""Sets the status of this ShowCustomPropsTaskResultResponse.
 
         :param status: The status of this ShowCustomPropsTaskResultResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -76,7 +76,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowCustomPropsTaskResultResponse.
+        r"""Gets the task_data of this ShowCustomPropsTaskResultResponse.
 
         :return: The task_data of this ShowCustomPropsTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CustomPropsTaskData`
@@ -85,7 +85,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowCustomPropsTaskResultResponse.
+        r"""Sets the task_data of this ShowCustomPropsTaskResultResponse.
 
         :param task_data: The task_data of this ShowCustomPropsTaskResultResponse.
         :type task_data: :class:`huaweicloudsdkeihealth.v1.CustomPropsTaskData`
@@ -94,7 +94,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowCustomPropsTaskResultResponse.
+        r"""Gets the result of this ShowCustomPropsTaskResultResponse.
 
         :return: The result of this ShowCustomPropsTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CustomPropsResult`
@@ -103,7 +103,7 @@ class ShowCustomPropsTaskResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowCustomPropsTaskResultResponse.
+        r"""Sets the result of this ShowCustomPropsTaskResultResponse.
 
         :param result: The result of this ShowCustomPropsTaskResultResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.CustomPropsResult`

@@ -26,7 +26,7 @@ class LtsLogType:
     }
 
     def __init__(self):
-        """LtsLogType
+        r"""LtsLogType
 
         The model defined in huaweicloud sdk
 

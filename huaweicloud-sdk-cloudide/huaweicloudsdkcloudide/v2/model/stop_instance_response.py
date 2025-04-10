@@ -28,7 +28,7 @@ class StopInstanceResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """StopInstanceResponse
+        r"""StopInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StopInstanceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StopInstanceResponse.
+        r"""Gets the result of this StopInstanceResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class StopInstanceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StopInstanceResponse.
+        r"""Sets the result of this StopInstanceResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class StopInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this StopInstanceResponse.
+        r"""Gets the status of this StopInstanceResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class StopInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StopInstanceResponse.
+        r"""Sets the status of this StopInstanceResponse.
 
         状态
 

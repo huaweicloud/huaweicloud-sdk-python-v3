@@ -31,7 +31,7 @@ class ResourceConfigDTO:
     }
 
     def __init__(self, cpu=None, memory=None, gpu=None, npu=None):
-        """ResourceConfigDTO
+        r"""ResourceConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceConfigDTO:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ResourceConfigDTO.
+        r"""Gets the cpu of this ResourceConfigDTO.
 
         **参数说明**：cpu个数。
 
@@ -75,7 +75,7 @@ class ResourceConfigDTO:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ResourceConfigDTO.
+        r"""Sets the cpu of this ResourceConfigDTO.
 
         **参数说明**：cpu个数。
 
@@ -86,7 +86,7 @@ class ResourceConfigDTO:
 
     @property
     def memory(self):
-        """Gets the memory of this ResourceConfigDTO.
+        r"""Gets the memory of this ResourceConfigDTO.
 
         **参数说明**：内存大小。
 
@@ -97,7 +97,7 @@ class ResourceConfigDTO:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ResourceConfigDTO.
+        r"""Sets the memory of this ResourceConfigDTO.
 
         **参数说明**：内存大小。
 
@@ -108,7 +108,7 @@ class ResourceConfigDTO:
 
     @property
     def gpu(self):
-        """Gets the gpu of this ResourceConfigDTO.
+        r"""Gets the gpu of this ResourceConfigDTO.
 
         **参数说明**：gpu个数。
 
@@ -119,7 +119,7 @@ class ResourceConfigDTO:
 
     @gpu.setter
     def gpu(self, gpu):
-        """Sets the gpu of this ResourceConfigDTO.
+        r"""Sets the gpu of this ResourceConfigDTO.
 
         **参数说明**：gpu个数。
 
@@ -130,7 +130,7 @@ class ResourceConfigDTO:
 
     @property
     def npu(self):
-        """Gets the npu of this ResourceConfigDTO.
+        r"""Gets the npu of this ResourceConfigDTO.
 
         **参数说明**：npu个数。
 
@@ -141,7 +141,7 @@ class ResourceConfigDTO:
 
     @npu.setter
     def npu(self, npu):
-        """Sets the npu of this ResourceConfigDTO.
+        r"""Sets the npu of this ResourceConfigDTO.
 
         **参数说明**：npu个数。
 

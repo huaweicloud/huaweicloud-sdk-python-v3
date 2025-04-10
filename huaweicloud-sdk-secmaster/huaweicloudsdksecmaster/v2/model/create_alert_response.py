@@ -32,7 +32,7 @@ class CreateAlertResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """CreateAlertResponse
+        r"""CreateAlertResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateAlertResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateAlertResponse.
+        r"""Gets the code of this CreateAlertResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class CreateAlertResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateAlertResponse.
+        r"""Sets the code of this CreateAlertResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class CreateAlertResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateAlertResponse.
+        r"""Gets the message of this CreateAlertResponse.
 
         错误信息
 
@@ -98,7 +98,7 @@ class CreateAlertResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateAlertResponse.
+        r"""Sets the message of this CreateAlertResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class CreateAlertResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateAlertResponse.
+        r"""Gets the data of this CreateAlertResponse.
 
         :return: The data of this CreateAlertResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDetail`
@@ -118,7 +118,7 @@ class CreateAlertResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateAlertResponse.
+        r"""Sets the data of this CreateAlertResponse.
 
         :param data: The data of this CreateAlertResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.AlertDetail`
@@ -127,7 +127,7 @@ class CreateAlertResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateAlertResponse.
+        r"""Gets the x_request_id of this CreateAlertResponse.
 
         :return: The x_request_id of this CreateAlertResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class CreateAlertResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateAlertResponse.
+        r"""Sets the x_request_id of this CreateAlertResponse.
 
         :param x_request_id: The x_request_id of this CreateAlertResponse.
         :type x_request_id: str

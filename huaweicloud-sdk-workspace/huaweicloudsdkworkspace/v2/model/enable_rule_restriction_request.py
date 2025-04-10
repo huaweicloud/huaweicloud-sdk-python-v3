@@ -23,7 +23,7 @@ class EnableRuleRestrictionRequest:
     }
 
     def __init__(self):
-        """EnableRuleRestrictionRequest
+        r"""EnableRuleRestrictionRequest
 
         The model defined in huaweicloud sdk
 

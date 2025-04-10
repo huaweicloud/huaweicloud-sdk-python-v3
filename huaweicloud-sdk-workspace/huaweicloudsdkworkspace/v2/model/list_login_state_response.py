@@ -36,7 +36,7 @@ class ListLoginStateResponse(SdkResponse):
     }
 
     def __init__(self, in_use_num=None, stop_num=None, unregistered_num=None, unable_to_connect_num=None, ready_num=None, disconnected_num=None):
-        """ListLoginStateResponse
+        r"""ListLoginStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @property
     def in_use_num(self):
-        """Gets the in_use_num of this ListLoginStateResponse.
+        r"""Gets the in_use_num of this ListLoginStateResponse.
 
         使用中。
 
@@ -90,7 +90,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @in_use_num.setter
     def in_use_num(self, in_use_num):
-        """Sets the in_use_num of this ListLoginStateResponse.
+        r"""Sets the in_use_num of this ListLoginStateResponse.
 
         使用中。
 
@@ -101,7 +101,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @property
     def stop_num(self):
-        """Gets the stop_num of this ListLoginStateResponse.
+        r"""Gets the stop_num of this ListLoginStateResponse.
 
         关机数目(关机中、已关机)。
 
@@ -112,7 +112,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @stop_num.setter
     def stop_num(self, stop_num):
-        """Sets the stop_num of this ListLoginStateResponse.
+        r"""Sets the stop_num of this ListLoginStateResponse.
 
         关机数目(关机中、已关机)。
 
@@ -123,7 +123,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @property
     def unregistered_num(self):
-        """Gets the unregistered_num of this ListLoginStateResponse.
+        r"""Gets the unregistered_num of this ListLoginStateResponse.
 
         未注册数目。
 
@@ -134,7 +134,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @unregistered_num.setter
     def unregistered_num(self, unregistered_num):
-        """Sets the unregistered_num of this ListLoginStateResponse.
+        r"""Sets the unregistered_num of this ListLoginStateResponse.
 
         未注册数目。
 
@@ -145,7 +145,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @property
     def unable_to_connect_num(self):
-        """Gets the unable_to_connect_num of this ListLoginStateResponse.
+        r"""Gets the unable_to_connect_num of this ListLoginStateResponse.
 
         未注册数目。
 
@@ -156,7 +156,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @unable_to_connect_num.setter
     def unable_to_connect_num(self, unable_to_connect_num):
-        """Sets the unable_to_connect_num of this ListLoginStateResponse.
+        r"""Sets the unable_to_connect_num of this ListLoginStateResponse.
 
         未注册数目。
 
@@ -167,7 +167,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @property
     def ready_num(self):
-        """Gets the ready_num of this ListLoginStateResponse.
+        r"""Gets the ready_num of this ListLoginStateResponse.
 
         空闲数目。
 
@@ -178,7 +178,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @ready_num.setter
     def ready_num(self, ready_num):
-        """Sets the ready_num of this ListLoginStateResponse.
+        r"""Sets the ready_num of this ListLoginStateResponse.
 
         空闲数目。
 
@@ -189,7 +189,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @property
     def disconnected_num(self):
-        """Gets the disconnected_num of this ListLoginStateResponse.
+        r"""Gets the disconnected_num of this ListLoginStateResponse.
 
         断开连接数目。
 
@@ -200,7 +200,7 @@ class ListLoginStateResponse(SdkResponse):
 
     @disconnected_num.setter
     def disconnected_num(self, disconnected_num):
-        """Sets the disconnected_num of this ListLoginStateResponse.
+        r"""Sets the disconnected_num of this ListLoginStateResponse.
 
         断开连接数目。
 

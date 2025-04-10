@@ -27,7 +27,7 @@ class ProjectRepository:
     }
 
     def __init__(self, project_uuid=None, repository_uuid=None):
-        """ProjectRepository
+        r"""ProjectRepository
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProjectRepository:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ProjectRepository.
+        r"""Gets the project_uuid of this ProjectRepository.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -61,7 +61,7 @@ class ProjectRepository:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ProjectRepository.
+        r"""Sets the project_uuid of this ProjectRepository.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -72,7 +72,7 @@ class ProjectRepository:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ProjectRepository.
+        r"""Gets the repository_uuid of this ProjectRepository.
 
         仓库UUID
 
@@ -83,7 +83,7 @@ class ProjectRepository:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ProjectRepository.
+        r"""Sets the repository_uuid of this ProjectRepository.
 
         仓库UUID
 

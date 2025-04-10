@@ -35,7 +35,7 @@ class SeveritySummary:
     }
 
     def __init__(self, critical_count=None, high_count=None, informational_count=None, low_count=None, medium_count=None, unspecified_count=None):
-        """SeveritySummary
+        r"""SeveritySummary
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SeveritySummary:
 
     @property
     def critical_count(self):
-        """Gets the critical_count of this SeveritySummary.
+        r"""Gets the critical_count of this SeveritySummary.
 
         重大合规性报告数量
 
@@ -89,7 +89,7 @@ class SeveritySummary:
 
     @critical_count.setter
     def critical_count(self, critical_count):
-        """Sets the critical_count of this SeveritySummary.
+        r"""Sets the critical_count of this SeveritySummary.
 
         重大合规性报告数量
 
@@ -100,7 +100,7 @@ class SeveritySummary:
 
     @property
     def high_count(self):
-        """Gets the high_count of this SeveritySummary.
+        r"""Gets the high_count of this SeveritySummary.
 
         高合规性报告数量
 
@@ -111,7 +111,7 @@ class SeveritySummary:
 
     @high_count.setter
     def high_count(self, high_count):
-        """Sets the high_count of this SeveritySummary.
+        r"""Sets the high_count of this SeveritySummary.
 
         高合规性报告数量
 
@@ -122,7 +122,7 @@ class SeveritySummary:
 
     @property
     def informational_count(self):
-        """Gets the informational_count of this SeveritySummary.
+        r"""Gets the informational_count of this SeveritySummary.
 
         信息性合规性报告数量
 
@@ -133,7 +133,7 @@ class SeveritySummary:
 
     @informational_count.setter
     def informational_count(self, informational_count):
-        """Sets the informational_count of this SeveritySummary.
+        r"""Sets the informational_count of this SeveritySummary.
 
         信息性合规性报告数量
 
@@ -144,7 +144,7 @@ class SeveritySummary:
 
     @property
     def low_count(self):
-        """Gets the low_count of this SeveritySummary.
+        r"""Gets the low_count of this SeveritySummary.
 
         低合规性报告数量
 
@@ -155,7 +155,7 @@ class SeveritySummary:
 
     @low_count.setter
     def low_count(self, low_count):
-        """Sets the low_count of this SeveritySummary.
+        r"""Sets the low_count of this SeveritySummary.
 
         低合规性报告数量
 
@@ -166,7 +166,7 @@ class SeveritySummary:
 
     @property
     def medium_count(self):
-        """Gets the medium_count of this SeveritySummary.
+        r"""Gets the medium_count of this SeveritySummary.
 
         中级合规性报告数量
 
@@ -177,7 +177,7 @@ class SeveritySummary:
 
     @medium_count.setter
     def medium_count(self, medium_count):
-        """Sets the medium_count of this SeveritySummary.
+        r"""Sets the medium_count of this SeveritySummary.
 
         中级合规性报告数量
 
@@ -188,7 +188,7 @@ class SeveritySummary:
 
     @property
     def unspecified_count(self):
-        """Gets the unspecified_count of this SeveritySummary.
+        r"""Gets the unspecified_count of this SeveritySummary.
 
         未指定合规性报告数量
 
@@ -199,7 +199,7 @@ class SeveritySummary:
 
     @unspecified_count.setter
     def unspecified_count(self, unspecified_count):
-        """Sets the unspecified_count of this SeveritySummary.
+        r"""Sets the unspecified_count of this SeveritySummary.
 
         未指定合规性报告数量
 

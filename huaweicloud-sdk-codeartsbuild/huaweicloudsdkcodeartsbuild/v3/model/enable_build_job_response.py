@@ -26,7 +26,7 @@ class EnableBuildJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """EnableBuildJobResponse
+        r"""EnableBuildJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class EnableBuildJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this EnableBuildJobResponse.
+        r"""Gets the status of this EnableBuildJobResponse.
 
         返回结果状态
 
@@ -55,7 +55,7 @@ class EnableBuildJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnableBuildJobResponse.
+        r"""Sets the status of this EnableBuildJobResponse.
 
         返回结果状态
 

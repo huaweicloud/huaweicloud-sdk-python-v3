@@ -24,7 +24,7 @@ class KeystoneRemoveDomainPermissionFromGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneRemoveDomainPermissionFromGroupResponse
+        r"""KeystoneRemoveDomainPermissionFromGroupResponse
 
         The model defined in huaweicloud sdk
 

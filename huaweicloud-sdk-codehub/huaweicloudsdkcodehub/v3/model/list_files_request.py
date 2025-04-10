@@ -29,7 +29,7 @@ class ListFilesRequest:
     }
 
     def __init__(self, repository_uuid=None, branch_name=None, path=None):
-        """ListFilesRequest
+        r"""ListFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListFilesRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ListFilesRequest.
+        r"""Gets the repository_uuid of this ListFilesRequest.
 
         仓库id
 
@@ -65,7 +65,7 @@ class ListFilesRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ListFilesRequest.
+        r"""Sets the repository_uuid of this ListFilesRequest.
 
         仓库id
 
@@ -76,7 +76,7 @@ class ListFilesRequest:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this ListFilesRequest.
+        r"""Gets the branch_name of this ListFilesRequest.
 
         分支名称
 
@@ -87,7 +87,7 @@ class ListFilesRequest:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this ListFilesRequest.
+        r"""Sets the branch_name of this ListFilesRequest.
 
         分支名称
 
@@ -98,7 +98,7 @@ class ListFilesRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListFilesRequest.
+        r"""Gets the path of this ListFilesRequest.
 
         文件路径
 
@@ -109,7 +109,7 @@ class ListFilesRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListFilesRequest.
+        r"""Sets the path of this ListFilesRequest.
 
         文件路径
 

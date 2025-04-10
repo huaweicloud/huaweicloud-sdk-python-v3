@@ -30,7 +30,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None, x_request_id=None):
-        """DetectStandardByIdCardImageResponse
+        r"""DetectStandardByIdCardImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this DetectStandardByIdCardImageResponse.
+        r"""Gets the meta of this DetectStandardByIdCardImageResponse.
 
         :return: The meta of this DetectStandardByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -67,7 +67,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this DetectStandardByIdCardImageResponse.
+        r"""Sets the meta of this DetectStandardByIdCardImageResponse.
 
         :param meta: The meta of this DetectStandardByIdCardImageResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +76,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectStandardByIdCardImageResponse.
+        r"""Gets the result of this DetectStandardByIdCardImageResponse.
 
         :return: The result of this DetectStandardByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageResponseBodyResult`
@@ -85,7 +85,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectStandardByIdCardImageResponse.
+        r"""Sets the result of this DetectStandardByIdCardImageResponse.
 
         :param result: The result of this DetectStandardByIdCardImageResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageResponseBodyResult`
@@ -94,7 +94,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectStandardByIdCardImageResponse.
+        r"""Gets the x_request_id of this DetectStandardByIdCardImageResponse.
 
         :return: The x_request_id of this DetectStandardByIdCardImageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectStandardByIdCardImageResponse.
+        r"""Sets the x_request_id of this DetectStandardByIdCardImageResponse.
 
         :param x_request_id: The x_request_id of this DetectStandardByIdCardImageResponse.
         :type x_request_id: str

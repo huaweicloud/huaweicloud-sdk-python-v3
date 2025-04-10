@@ -35,7 +35,7 @@ class ListDataServiceInstancesDetailRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, limit=None, offset=None, name=None, create_user=None):
-        """ListDataServiceInstancesDetailRequest
+        r"""ListDataServiceInstancesDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDataServiceInstancesDetailRequest.
+        r"""Gets the workspace of this ListDataServiceInstancesDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -88,7 +88,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDataServiceInstancesDetailRequest.
+        r"""Sets the workspace of this ListDataServiceInstancesDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -99,7 +99,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListDataServiceInstancesDetailRequest.
+        r"""Gets the dlm_type of this ListDataServiceInstancesDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -110,7 +110,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListDataServiceInstancesDetailRequest.
+        r"""Sets the dlm_type of this ListDataServiceInstancesDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -121,7 +121,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataServiceInstancesDetailRequest.
+        r"""Gets the limit of this ListDataServiceInstancesDetailRequest.
 
         查询条数限制。
 
@@ -132,7 +132,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataServiceInstancesDetailRequest.
+        r"""Sets the limit of this ListDataServiceInstancesDetailRequest.
 
         查询条数限制。
 
@@ -143,7 +143,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataServiceInstancesDetailRequest.
+        r"""Gets the offset of this ListDataServiceInstancesDetailRequest.
 
         查询起始坐标。
 
@@ -154,7 +154,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataServiceInstancesDetailRequest.
+        r"""Sets the offset of this ListDataServiceInstancesDetailRequest.
 
         查询起始坐标。
 
@@ -165,7 +165,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDataServiceInstancesDetailRequest.
+        r"""Gets the name of this ListDataServiceInstancesDetailRequest.
 
         集群名称。
 
@@ -176,7 +176,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDataServiceInstancesDetailRequest.
+        r"""Sets the name of this ListDataServiceInstancesDetailRequest.
 
         集群名称。
 
@@ -187,7 +187,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ListDataServiceInstancesDetailRequest.
+        r"""Gets the create_user of this ListDataServiceInstancesDetailRequest.
 
         创建人名称。
 
@@ -198,7 +198,7 @@ class ListDataServiceInstancesDetailRequest:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ListDataServiceInstancesDetailRequest.
+        r"""Sets the create_user of this ListDataServiceInstancesDetailRequest.
 
         创建人名称。
 

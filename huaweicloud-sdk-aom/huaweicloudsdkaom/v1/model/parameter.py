@@ -43,7 +43,7 @@ class Parameter:
     }
 
     def __init__(self, param_name=None, param_type=None, param_group=None, default_value=None, id=None, encryption=None, hint=None, quote_param=None, required=None, description=None):
-        """Parameter
+        r"""Parameter
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class Parameter:
 
     @property
     def param_name(self):
-        """Gets the param_name of this Parameter.
+        r"""Gets the param_name of this Parameter.
 
         参数名称。
 
@@ -113,7 +113,7 @@ class Parameter:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this Parameter.
+        r"""Sets the param_name of this Parameter.
 
         参数名称。
 
@@ -124,7 +124,7 @@ class Parameter:
 
     @property
     def param_type(self):
-        """Gets the param_type of this Parameter.
+        r"""Gets the param_type of this Parameter.
 
         参数类型。
 
@@ -135,7 +135,7 @@ class Parameter:
 
     @param_type.setter
     def param_type(self, param_type):
-        """Sets the param_type of this Parameter.
+        r"""Sets the param_type of this Parameter.
 
         参数类型。
 
@@ -146,7 +146,7 @@ class Parameter:
 
     @property
     def param_group(self):
-        """Gets the param_group of this Parameter.
+        r"""Gets the param_group of this Parameter.
 
         参数分组。
 
@@ -157,7 +157,7 @@ class Parameter:
 
     @param_group.setter
     def param_group(self, param_group):
-        """Sets the param_group of this Parameter.
+        r"""Sets the param_group of this Parameter.
 
         参数分组。
 
@@ -168,7 +168,7 @@ class Parameter:
 
     @property
     def default_value(self):
-        """Gets the default_value of this Parameter.
+        r"""Gets the default_value of this Parameter.
 
         参数初始值。
 
@@ -179,7 +179,7 @@ class Parameter:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this Parameter.
+        r"""Sets the default_value of this Parameter.
 
         参数初始值。
 
@@ -190,7 +190,7 @@ class Parameter:
 
     @property
     def id(self):
-        """Gets the id of this Parameter.
+        r"""Gets the id of this Parameter.
 
         参数id。
 
@@ -201,7 +201,7 @@ class Parameter:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Parameter.
+        r"""Sets the id of this Parameter.
 
         参数id。
 
@@ -212,7 +212,7 @@ class Parameter:
 
     @property
     def encryption(self):
-        """Gets the encryption of this Parameter.
+        r"""Gets the encryption of this Parameter.
 
         是否加密。
 
@@ -223,7 +223,7 @@ class Parameter:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this Parameter.
+        r"""Sets the encryption of this Parameter.
 
         是否加密。
 
@@ -234,7 +234,7 @@ class Parameter:
 
     @property
     def hint(self):
-        """Gets the hint of this Parameter.
+        r"""Gets the hint of this Parameter.
 
         参数提示。
 
@@ -245,7 +245,7 @@ class Parameter:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this Parameter.
+        r"""Sets the hint of this Parameter.
 
         参数提示。
 
@@ -256,7 +256,7 @@ class Parameter:
 
     @property
     def quote_param(self):
-        """Gets the quote_param of this Parameter.
+        r"""Gets the quote_param of this Parameter.
 
         是否从参数库选择。
 
@@ -267,7 +267,7 @@ class Parameter:
 
     @quote_param.setter
     def quote_param(self, quote_param):
-        """Sets the quote_param of this Parameter.
+        r"""Sets the quote_param of this Parameter.
 
         是否从参数库选择。
 
@@ -278,7 +278,7 @@ class Parameter:
 
     @property
     def required(self):
-        """Gets the required of this Parameter.
+        r"""Gets the required of this Parameter.
 
         是否为必填参数。
 
@@ -289,7 +289,7 @@ class Parameter:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this Parameter.
+        r"""Sets the required of this Parameter.
 
         是否为必填参数。
 
@@ -300,7 +300,7 @@ class Parameter:
 
     @property
     def description(self):
-        """Gets the description of this Parameter.
+        r"""Gets the description of this Parameter.
 
         参数描述。
 
@@ -311,7 +311,7 @@ class Parameter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Parameter.
+        r"""Sets the description of this Parameter.
 
         参数描述。
 

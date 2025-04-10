@@ -41,7 +41,7 @@ class ScheduledTasksRspSchedules:
     }
 
     def __init__(self, job_id=None, job_name=None, job_status=None, instance_id=None, instance_name=None, instance_status=None, create_time=None, start_time=None, end_time=None):
-        """ScheduledTasksRspSchedules
+        r"""ScheduledTasksRspSchedules
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ScheduledTasksRspSchedules.
+        r"""Gets the job_id of this ScheduledTasksRspSchedules.
 
         任务ID。
 
@@ -110,7 +110,7 @@ class ScheduledTasksRspSchedules:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ScheduledTasksRspSchedules.
+        r"""Sets the job_id of this ScheduledTasksRspSchedules.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ScheduledTasksRspSchedules.
+        r"""Gets the job_name of this ScheduledTasksRspSchedules.
 
         任务名称。对应取值如下：   \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格
 
@@ -132,7 +132,7 @@ class ScheduledTasksRspSchedules:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ScheduledTasksRspSchedules.
+        r"""Sets the job_name of this ScheduledTasksRspSchedules.
 
         任务名称。对应取值如下：   \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格
 
@@ -143,7 +143,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def job_status(self):
-        """Gets the job_status of this ScheduledTasksRspSchedules.
+        r"""Gets the job_status of this ScheduledTasksRspSchedules.
 
         任务执行状态。 取值：  值为\"Running\"，表示任务正在执行。  值为\"Completed\"，表示任务执行成功。  值为\"Failed\"，表示任务执行失败。  值为\"Pending\"，表示任务未执行。
 
@@ -154,7 +154,7 @@ class ScheduledTasksRspSchedules:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ScheduledTasksRspSchedules.
+        r"""Sets the job_status of this ScheduledTasksRspSchedules.
 
         任务执行状态。 取值：  值为\"Running\"，表示任务正在执行。  值为\"Completed\"，表示任务执行成功。  值为\"Failed\"，表示任务执行失败。  值为\"Pending\"，表示任务未执行。
 
@@ -165,7 +165,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScheduledTasksRspSchedules.
+        r"""Gets the instance_id of this ScheduledTasksRspSchedules.
 
         实例ID。
 
@@ -176,7 +176,7 @@ class ScheduledTasksRspSchedules:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScheduledTasksRspSchedules.
+        r"""Sets the instance_id of this ScheduledTasksRspSchedules.
 
         实例ID。
 
@@ -187,7 +187,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ScheduledTasksRspSchedules.
+        r"""Gets the instance_name of this ScheduledTasksRspSchedules.
 
         实例名称。
 
@@ -198,7 +198,7 @@ class ScheduledTasksRspSchedules:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ScheduledTasksRspSchedules.
+        r"""Sets the instance_name of this ScheduledTasksRspSchedules.
 
         实例名称。
 
@@ -209,7 +209,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this ScheduledTasksRspSchedules.
+        r"""Gets the instance_status of this ScheduledTasksRspSchedules.
 
         实例状态。 取值：  值为“createfail”，表示实例创建失败。  值为“creating”，表示实例创建中。  值为“normal”，表示实例正常。  值为“abnormal”，表示实例异常。  值为“deleted”，表示实例已删除。
 
@@ -220,7 +220,7 @@ class ScheduledTasksRspSchedules:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this ScheduledTasksRspSchedules.
+        r"""Sets the instance_status of this ScheduledTasksRspSchedules.
 
         实例状态。 取值：  值为“createfail”，表示实例创建失败。  值为“creating”，表示实例创建中。  值为“normal”，表示实例正常。  值为“abnormal”，表示实例异常。  值为“deleted”，表示实例已删除。
 
@@ -231,7 +231,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScheduledTasksRspSchedules.
+        r"""Gets the create_time of this ScheduledTasksRspSchedules.
 
         任务创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -242,7 +242,7 @@ class ScheduledTasksRspSchedules:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScheduledTasksRspSchedules.
+        r"""Sets the create_time of this ScheduledTasksRspSchedules.
 
         任务创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -253,7 +253,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduledTasksRspSchedules.
+        r"""Gets the start_time of this ScheduledTasksRspSchedules.
 
         任务开始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -264,7 +264,7 @@ class ScheduledTasksRspSchedules:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduledTasksRspSchedules.
+        r"""Sets the start_time of this ScheduledTasksRspSchedules.
 
         任务开始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -275,7 +275,7 @@ class ScheduledTasksRspSchedules:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduledTasksRspSchedules.
+        r"""Gets the end_time of this ScheduledTasksRspSchedules.
 
         任务结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -286,7 +286,7 @@ class ScheduledTasksRspSchedules:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduledTasksRspSchedules.
+        r"""Sets the end_time of this ScheduledTasksRspSchedules.
 
         任务结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 

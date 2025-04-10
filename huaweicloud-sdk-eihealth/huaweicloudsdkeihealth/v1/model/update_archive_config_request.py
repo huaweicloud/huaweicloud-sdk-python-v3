@@ -25,7 +25,7 @@ class UpdateArchiveConfigRequest:
     }
 
     def __init__(self, region_id=None):
-        """UpdateArchiveConfigRequest
+        r"""UpdateArchiveConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateArchiveConfigRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this UpdateArchiveConfigRequest.
+        r"""Gets the region_id of this UpdateArchiveConfigRequest.
 
         region id
 
@@ -53,7 +53,7 @@ class UpdateArchiveConfigRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this UpdateArchiveConfigRequest.
+        r"""Sets the region_id of this UpdateArchiveConfigRequest.
 
         region id
 

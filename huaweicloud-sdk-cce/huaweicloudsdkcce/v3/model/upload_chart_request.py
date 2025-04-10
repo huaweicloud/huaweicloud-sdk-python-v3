@@ -25,7 +25,7 @@ class UploadChartRequest:
     }
 
     def __init__(self, body=None):
-        """UploadChartRequest
+        r"""UploadChartRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadChartRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadChartRequest.
+        r"""Gets the body of this UploadChartRequest.
 
         :return: The body of this UploadChartRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UploadChartRequestBody`
@@ -52,7 +52,7 @@ class UploadChartRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadChartRequest.
+        r"""Sets the body of this UploadChartRequest.
 
         :param body: The body of this UploadChartRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UploadChartRequestBody`

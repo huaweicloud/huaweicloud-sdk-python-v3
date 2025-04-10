@@ -29,7 +29,7 @@ class ObsCredential:
     }
 
     def __init__(self, access=None, secret=None, security_token=None):
-        """ObsCredential
+        r"""ObsCredential
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObsCredential:
 
     @property
     def access(self):
-        """Gets the access of this ObsCredential.
+        r"""Gets the access of this ObsCredential.
 
         access key。
 
@@ -68,7 +68,7 @@ class ObsCredential:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this ObsCredential.
+        r"""Sets the access of this ObsCredential.
 
         access key。
 
@@ -79,7 +79,7 @@ class ObsCredential:
 
     @property
     def secret(self):
-        """Gets the secret of this ObsCredential.
+        r"""Gets the secret of this ObsCredential.
 
         secret key。
 
@@ -90,7 +90,7 @@ class ObsCredential:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ObsCredential.
+        r"""Sets the secret of this ObsCredential.
 
         secret key。
 
@@ -101,7 +101,7 @@ class ObsCredential:
 
     @property
     def security_token(self):
-        """Gets the security_token of this ObsCredential.
+        r"""Gets the security_token of this ObsCredential.
 
         安全校验token。
 
@@ -112,7 +112,7 @@ class ObsCredential:
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this ObsCredential.
+        r"""Sets the security_token of this ObsCredential.
 
         安全校验token。
 

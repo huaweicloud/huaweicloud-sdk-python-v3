@@ -47,7 +47,7 @@ class Thumbnail:
     }
 
     def __init__(self, id=None, created_at=None, is_primary=None, resource_type=None, file_name=None, aim_resource_id=None, obs_object_key=None, obs_file_url=None, image_rate=None, is_auto_gen=None, description=None, size=None):
-        """Thumbnail
+        r"""Thumbnail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Thumbnail:
 
     @property
     def id(self):
-        """Gets the id of this Thumbnail.
+        r"""Gets the id of this Thumbnail.
 
         缩略图ID。
 
@@ -124,7 +124,7 @@ class Thumbnail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Thumbnail.
+        r"""Sets the id of this Thumbnail.
 
         缩略图ID。
 
@@ -135,7 +135,7 @@ class Thumbnail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Thumbnail.
+        r"""Gets the created_at of this Thumbnail.
 
         创建时间。
 
@@ -146,7 +146,7 @@ class Thumbnail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Thumbnail.
+        r"""Sets the created_at of this Thumbnail.
 
         创建时间。
 
@@ -157,7 +157,7 @@ class Thumbnail:
 
     @property
     def is_primary(self):
-        """Gets the is_primary of this Thumbnail.
+        r"""Gets the is_primary of this Thumbnail.
 
         是否作为视频素材封面。 - 0：否 - 1：是 
 
@@ -168,7 +168,7 @@ class Thumbnail:
 
     @is_primary.setter
     def is_primary(self, is_primary):
-        """Sets the is_primary of this Thumbnail.
+        r"""Sets the is_primary of this Thumbnail.
 
         是否作为视频素材封面。 - 0：否 - 1：是 
 
@@ -179,7 +179,7 @@ class Thumbnail:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Thumbnail.
+        r"""Gets the resource_type of this Thumbnail.
 
         资源类型，image：表示图片。 
 
@@ -190,7 +190,7 @@ class Thumbnail:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Thumbnail.
+        r"""Sets the resource_type of this Thumbnail.
 
         资源类型，image：表示图片。 
 
@@ -201,7 +201,7 @@ class Thumbnail:
 
     @property
     def file_name(self):
-        """Gets the file_name of this Thumbnail.
+        r"""Gets the file_name of this Thumbnail.
 
         文件名称。
 
@@ -212,7 +212,7 @@ class Thumbnail:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this Thumbnail.
+        r"""Sets the file_name of this Thumbnail.
 
         文件名称。
 
@@ -223,7 +223,7 @@ class Thumbnail:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this Thumbnail.
+        r"""Gets the aim_resource_id of this Thumbnail.
 
         资源ID。
 
@@ -234,7 +234,7 @@ class Thumbnail:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this Thumbnail.
+        r"""Sets the aim_resource_id of this Thumbnail.
 
         资源ID。
 
@@ -245,7 +245,7 @@ class Thumbnail:
 
     @property
     def obs_object_key(self):
-        """Gets the obs_object_key of this Thumbnail.
+        r"""Gets the obs_object_key of this Thumbnail.
 
         从OBS返回的文件Key。
 
@@ -256,7 +256,7 @@ class Thumbnail:
 
     @obs_object_key.setter
     def obs_object_key(self, obs_object_key):
-        """Sets the obs_object_key of this Thumbnail.
+        r"""Sets the obs_object_key of this Thumbnail.
 
         从OBS返回的文件Key。
 
@@ -267,7 +267,7 @@ class Thumbnail:
 
     @property
     def obs_file_url(self):
-        """Gets the obs_file_url of this Thumbnail.
+        r"""Gets the obs_file_url of this Thumbnail.
 
         文件访问路径。
 
@@ -278,7 +278,7 @@ class Thumbnail:
 
     @obs_file_url.setter
     def obs_file_url(self, obs_file_url):
-        """Sets the obs_file_url of this Thumbnail.
+        r"""Sets the obs_file_url of this Thumbnail.
 
         文件访问路径。
 
@@ -289,7 +289,7 @@ class Thumbnail:
 
     @property
     def image_rate(self):
-        """Gets the image_rate of this Thumbnail.
+        r"""Gets the image_rate of this Thumbnail.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
@@ -300,7 +300,7 @@ class Thumbnail:
 
     @image_rate.setter
     def image_rate(self, image_rate):
-        """Sets the image_rate of this Thumbnail.
+        r"""Sets the image_rate of this Thumbnail.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
@@ -311,7 +311,7 @@ class Thumbnail:
 
     @property
     def is_auto_gen(self):
-        """Gets the is_auto_gen of this Thumbnail.
+        r"""Gets the is_auto_gen of this Thumbnail.
 
         缩略图是否自动从系统生成。
 
@@ -322,7 +322,7 @@ class Thumbnail:
 
     @is_auto_gen.setter
     def is_auto_gen(self, is_auto_gen):
-        """Sets the is_auto_gen of this Thumbnail.
+        r"""Sets the is_auto_gen of this Thumbnail.
 
         缩略图是否自动从系统生成。
 
@@ -333,7 +333,7 @@ class Thumbnail:
 
     @property
     def description(self):
-        """Gets the description of this Thumbnail.
+        r"""Gets the description of this Thumbnail.
 
         缩略图的详细描述。
 
@@ -344,7 +344,7 @@ class Thumbnail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Thumbnail.
+        r"""Sets the description of this Thumbnail.
 
         缩略图的详细描述。
 
@@ -355,7 +355,7 @@ class Thumbnail:
 
     @property
     def size(self):
-        """Gets the size of this Thumbnail.
+        r"""Gets the size of this Thumbnail.
 
         缩略图所占空间大小。
 
@@ -366,7 +366,7 @@ class Thumbnail:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Thumbnail.
+        r"""Sets the size of this Thumbnail.
 
         缩略图所占空间大小。
 

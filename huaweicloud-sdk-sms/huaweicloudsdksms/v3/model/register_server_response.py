@@ -26,7 +26,7 @@ class RegisterServerResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """RegisterServerResponse
+        r"""RegisterServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterServerResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this RegisterServerResponse.
+        r"""Gets the id of this RegisterServerResponse.
 
         源端ID
 
@@ -55,7 +55,7 @@ class RegisterServerResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RegisterServerResponse.
+        r"""Sets the id of this RegisterServerResponse.
 
         源端ID
 

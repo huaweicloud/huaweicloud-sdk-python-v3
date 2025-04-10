@@ -33,7 +33,7 @@ class ListAppAuthorizationsRequest:
     }
 
     def __init__(self, offset=None, limit=None, app_id=None, name=None, target_type=None):
-        """ListAppAuthorizationsRequest
+        r"""ListAppAuthorizationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListAppAuthorizationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppAuthorizationsRequest.
+        r"""Gets the offset of this ListAppAuthorizationsRequest.
 
         查询的偏移量。
 
@@ -81,7 +81,7 @@ class ListAppAuthorizationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppAuthorizationsRequest.
+        r"""Sets the offset of this ListAppAuthorizationsRequest.
 
         查询的偏移量。
 
@@ -92,7 +92,7 @@ class ListAppAuthorizationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppAuthorizationsRequest.
+        r"""Gets the limit of this ListAppAuthorizationsRequest.
 
         单次查询的大小[1-100]。
 
@@ -103,7 +103,7 @@ class ListAppAuthorizationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppAuthorizationsRequest.
+        r"""Sets the limit of this ListAppAuthorizationsRequest.
 
         单次查询的大小[1-100]。
 
@@ -114,7 +114,7 @@ class ListAppAuthorizationsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppAuthorizationsRequest.
+        r"""Gets the app_id of this ListAppAuthorizationsRequest.
 
         应用ID。
 
@@ -125,7 +125,7 @@ class ListAppAuthorizationsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppAuthorizationsRequest.
+        r"""Sets the app_id of this ListAppAuthorizationsRequest.
 
         应用ID。
 
@@ -136,7 +136,7 @@ class ListAppAuthorizationsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAppAuthorizationsRequest.
+        r"""Gets the name of this ListAppAuthorizationsRequest.
 
         用户名/用户组名。
 
@@ -147,7 +147,7 @@ class ListAppAuthorizationsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppAuthorizationsRequest.
+        r"""Sets the name of this ListAppAuthorizationsRequest.
 
         用户名/用户组名。
 
@@ -158,7 +158,7 @@ class ListAppAuthorizationsRequest:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ListAppAuthorizationsRequest.
+        r"""Gets the target_type of this ListAppAuthorizationsRequest.
 
         类型： * `SIMPLE` - 普通用户 * `USER_GROUP` - 用户组
 
@@ -169,7 +169,7 @@ class ListAppAuthorizationsRequest:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ListAppAuthorizationsRequest.
+        r"""Sets the target_type of this ListAppAuthorizationsRequest.
 
         类型： * `SIMPLE` - 普通用户 * `USER_GROUP` - 用户组
 

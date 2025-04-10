@@ -27,7 +27,7 @@ class ShowInstanceConfigurationRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowInstanceConfigurationRequest
+        r"""ShowInstanceConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInstanceConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowInstanceConfigurationRequest.
+        r"""Gets the x_language of this ShowInstanceConfigurationRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class ShowInstanceConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceConfigurationRequest.
+        r"""Sets the x_language of this ShowInstanceConfigurationRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class ShowInstanceConfigurationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceConfigurationRequest.
+        r"""Gets the instance_id of this ShowInstanceConfigurationRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ShowInstanceConfigurationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceConfigurationRequest.
+        r"""Sets the instance_id of this ShowInstanceConfigurationRequest.
 
         实例ID。
 

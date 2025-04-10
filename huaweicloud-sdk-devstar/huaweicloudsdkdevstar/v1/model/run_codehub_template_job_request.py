@@ -27,7 +27,7 @@ class RunCodehubTemplateJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """RunCodehubTemplateJobRequest
+        r"""RunCodehubTemplateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RunCodehubTemplateJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RunCodehubTemplateJobRequest.
+        r"""Gets the x_language of this RunCodehubTemplateJobRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -61,7 +61,7 @@ class RunCodehubTemplateJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RunCodehubTemplateJobRequest.
+        r"""Sets the x_language of this RunCodehubTemplateJobRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -72,7 +72,7 @@ class RunCodehubTemplateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunCodehubTemplateJobRequest.
+        r"""Gets the body of this RunCodehubTemplateJobRequest.
 
         :return: The body of this RunCodehubTemplateJobRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.CodehubJobInfo`
@@ -81,7 +81,7 @@ class RunCodehubTemplateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCodehubTemplateJobRequest.
+        r"""Sets the body of this RunCodehubTemplateJobRequest.
 
         :param body: The body of this RunCodehubTemplateJobRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.CodehubJobInfo`

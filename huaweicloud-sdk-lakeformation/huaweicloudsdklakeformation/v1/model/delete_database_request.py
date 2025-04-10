@@ -33,7 +33,7 @@ class DeleteDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, delete_data=None, cascade=None):
-        """DeleteDatabaseRequest
+        r"""DeleteDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DeleteDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDatabaseRequest.
+        r"""Gets the instance_id of this DeleteDatabaseRequest.
 
         实例Id
 
@@ -79,7 +79,7 @@ class DeleteDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDatabaseRequest.
+        r"""Sets the instance_id of this DeleteDatabaseRequest.
 
         实例Id
 
@@ -90,7 +90,7 @@ class DeleteDatabaseRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeleteDatabaseRequest.
+        r"""Gets the catalog_name of this DeleteDatabaseRequest.
 
         catalog名字
 
@@ -101,7 +101,7 @@ class DeleteDatabaseRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeleteDatabaseRequest.
+        r"""Sets the catalog_name of this DeleteDatabaseRequest.
 
         catalog名字
 
@@ -112,7 +112,7 @@ class DeleteDatabaseRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteDatabaseRequest.
+        r"""Gets the database_name of this DeleteDatabaseRequest.
 
         数据库名
 
@@ -123,7 +123,7 @@ class DeleteDatabaseRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteDatabaseRequest.
+        r"""Sets the database_name of this DeleteDatabaseRequest.
 
         数据库名
 
@@ -134,7 +134,7 @@ class DeleteDatabaseRequest:
 
     @property
     def delete_data(self):
-        """Gets the delete_data of this DeleteDatabaseRequest.
+        r"""Gets the delete_data of this DeleteDatabaseRequest.
 
         是否删除数据库路径下的数据
 
@@ -145,7 +145,7 @@ class DeleteDatabaseRequest:
 
     @delete_data.setter
     def delete_data(self, delete_data):
-        """Sets the delete_data of this DeleteDatabaseRequest.
+        r"""Sets the delete_data of this DeleteDatabaseRequest.
 
         是否删除数据库路径下的数据
 
@@ -156,7 +156,7 @@ class DeleteDatabaseRequest:
 
     @property
     def cascade(self):
-        """Gets the cascade of this DeleteDatabaseRequest.
+        r"""Gets the cascade of this DeleteDatabaseRequest.
 
         是否级联删除数据库下的表、分区以及函数
 
@@ -167,7 +167,7 @@ class DeleteDatabaseRequest:
 
     @cascade.setter
     def cascade(self, cascade):
-        """Sets the cascade of this DeleteDatabaseRequest.
+        r"""Sets the cascade of this DeleteDatabaseRequest.
 
         是否级联删除数据库下的表、分区以及函数
 

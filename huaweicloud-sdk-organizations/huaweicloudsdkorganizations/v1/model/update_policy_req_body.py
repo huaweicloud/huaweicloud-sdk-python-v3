@@ -29,7 +29,7 @@ class UpdatePolicyReqBody:
     }
 
     def __init__(self, content=None, description=None, name=None):
-        """UpdatePolicyReqBody
+        r"""UpdatePolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePolicyReqBody:
 
     @property
     def content(self):
-        """Gets the content of this UpdatePolicyReqBody.
+        r"""Gets the content of this UpdatePolicyReqBody.
 
         要添加到新策略的策略文本内容。
 
@@ -68,7 +68,7 @@ class UpdatePolicyReqBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdatePolicyReqBody.
+        r"""Sets the content of this UpdatePolicyReqBody.
 
         要添加到新策略的策略文本内容。
 
@@ -79,7 +79,7 @@ class UpdatePolicyReqBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePolicyReqBody.
+        r"""Gets the description of this UpdatePolicyReqBody.
 
         要分配给策略的可选说明。
 
@@ -90,7 +90,7 @@ class UpdatePolicyReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePolicyReqBody.
+        r"""Sets the description of this UpdatePolicyReqBody.
 
         要分配给策略的可选说明。
 
@@ -101,7 +101,7 @@ class UpdatePolicyReqBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePolicyReqBody.
+        r"""Gets the name of this UpdatePolicyReqBody.
 
         要分配给策略的名称。
 
@@ -112,7 +112,7 @@ class UpdatePolicyReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePolicyReqBody.
+        r"""Sets the name of this UpdatePolicyReqBody.
 
         要分配给策略的名称。
 

@@ -35,7 +35,7 @@ class ActionTagInfo:
     }
 
     def __init__(self, action_name_zh=None, action_name_en=None, action_duration=None, catalog=None, file_name=None, tag=None):
-        """ActionTagInfo
+        r"""ActionTagInfo
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ActionTagInfo:
 
     @property
     def action_name_zh(self):
-        """Gets the action_name_zh of this ActionTagInfo.
+        r"""Gets the action_name_zh of this ActionTagInfo.
 
         原子动作中文名称。
 
@@ -87,7 +87,7 @@ class ActionTagInfo:
 
     @action_name_zh.setter
     def action_name_zh(self, action_name_zh):
-        """Sets the action_name_zh of this ActionTagInfo.
+        r"""Sets the action_name_zh of this ActionTagInfo.
 
         原子动作中文名称。
 
@@ -98,7 +98,7 @@ class ActionTagInfo:
 
     @property
     def action_name_en(self):
-        """Gets the action_name_en of this ActionTagInfo.
+        r"""Gets the action_name_en of this ActionTagInfo.
 
         原子动作英文名称。
 
@@ -109,7 +109,7 @@ class ActionTagInfo:
 
     @action_name_en.setter
     def action_name_en(self, action_name_en):
-        """Sets the action_name_en of this ActionTagInfo.
+        r"""Sets the action_name_en of this ActionTagInfo.
 
         原子动作英文名称。
 
@@ -120,7 +120,7 @@ class ActionTagInfo:
 
     @property
     def action_duration(self):
-        """Gets the action_duration of this ActionTagInfo.
+        r"""Gets the action_duration of this ActionTagInfo.
 
         动作时长
 
@@ -131,7 +131,7 @@ class ActionTagInfo:
 
     @action_duration.setter
     def action_duration(self, action_duration):
-        """Sets the action_duration of this ActionTagInfo.
+        r"""Sets the action_duration of this ActionTagInfo.
 
         动作时长
 
@@ -142,7 +142,7 @@ class ActionTagInfo:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ActionTagInfo.
+        r"""Gets the catalog of this ActionTagInfo.
 
         动作分类名称。
 
@@ -153,7 +153,7 @@ class ActionTagInfo:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ActionTagInfo.
+        r"""Sets the catalog of this ActionTagInfo.
 
         动作分类名称。
 
@@ -164,7 +164,7 @@ class ActionTagInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ActionTagInfo.
+        r"""Gets the file_name of this ActionTagInfo.
 
         样例视频文件名，最大长度256，最小长度1。
 
@@ -175,7 +175,7 @@ class ActionTagInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ActionTagInfo.
+        r"""Sets the file_name of this ActionTagInfo.
 
         样例视频文件名，最大长度256，最小长度1。
 
@@ -186,7 +186,7 @@ class ActionTagInfo:
 
     @property
     def tag(self):
-        """Gets the tag of this ActionTagInfo.
+        r"""Gets the tag of this ActionTagInfo.
 
         动作标签。
 
@@ -197,7 +197,7 @@ class ActionTagInfo:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ActionTagInfo.
+        r"""Sets the tag of this ActionTagInfo.
 
         动作标签。
 

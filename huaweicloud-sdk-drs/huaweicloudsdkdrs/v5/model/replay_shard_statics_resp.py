@@ -33,7 +33,7 @@ class ReplayShardStaticsResp:
     }
 
     def __init__(self, time=None, total=None, finish=None, abnormal=None, slow=None):
-        """ReplayShardStaticsResp
+        r"""ReplayShardStaticsResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ReplayShardStaticsResp:
 
     @property
     def time(self):
-        """Gets the time of this ReplayShardStaticsResp.
+        r"""Gets the time of this ReplayShardStaticsResp.
 
         回放时间点
 
@@ -77,7 +77,7 @@ class ReplayShardStaticsResp:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ReplayShardStaticsResp.
+        r"""Sets the time of this ReplayShardStaticsResp.
 
         回放时间点
 
@@ -88,7 +88,7 @@ class ReplayShardStaticsResp:
 
     @property
     def total(self):
-        """Gets the total of this ReplayShardStaticsResp.
+        r"""Gets the total of this ReplayShardStaticsResp.
 
         SQL总量
 
@@ -99,7 +99,7 @@ class ReplayShardStaticsResp:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ReplayShardStaticsResp.
+        r"""Sets the total of this ReplayShardStaticsResp.
 
         SQL总量
 
@@ -110,7 +110,7 @@ class ReplayShardStaticsResp:
 
     @property
     def finish(self):
-        """Gets the finish of this ReplayShardStaticsResp.
+        r"""Gets the finish of this ReplayShardStaticsResp.
 
         SQL执行量
 
@@ -121,7 +121,7 @@ class ReplayShardStaticsResp:
 
     @finish.setter
     def finish(self, finish):
-        """Sets the finish of this ReplayShardStaticsResp.
+        r"""Sets the finish of this ReplayShardStaticsResp.
 
         SQL执行量
 
@@ -132,7 +132,7 @@ class ReplayShardStaticsResp:
 
     @property
     def abnormal(self):
-        """Gets the abnormal of this ReplayShardStaticsResp.
+        r"""Gets the abnormal of this ReplayShardStaticsResp.
 
         SQL异常量
 
@@ -143,7 +143,7 @@ class ReplayShardStaticsResp:
 
     @abnormal.setter
     def abnormal(self, abnormal):
-        """Sets the abnormal of this ReplayShardStaticsResp.
+        r"""Sets the abnormal of this ReplayShardStaticsResp.
 
         SQL异常量
 
@@ -154,7 +154,7 @@ class ReplayShardStaticsResp:
 
     @property
     def slow(self):
-        """Gets the slow of this ReplayShardStaticsResp.
+        r"""Gets the slow of this ReplayShardStaticsResp.
 
         慢SQL数量
 
@@ -165,7 +165,7 @@ class ReplayShardStaticsResp:
 
     @slow.setter
     def slow(self, slow):
-        """Sets the slow of this ReplayShardStaticsResp.
+        r"""Sets the slow of this ReplayShardStaticsResp.
 
         慢SQL数量
 

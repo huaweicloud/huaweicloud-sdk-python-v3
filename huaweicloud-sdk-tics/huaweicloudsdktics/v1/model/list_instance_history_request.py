@@ -31,7 +31,7 @@ class ListInstanceHistoryRequest:
     }
 
     def __init__(self, league_id=None, limit=None, offset=None, job_id=None):
-        """ListInstanceHistoryRequest
+        r"""ListInstanceHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListInstanceHistoryRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ListInstanceHistoryRequest.
+        r"""Gets the league_id of this ListInstanceHistoryRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -72,7 +72,7 @@ class ListInstanceHistoryRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ListInstanceHistoryRequest.
+        r"""Sets the league_id of this ListInstanceHistoryRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -83,7 +83,7 @@ class ListInstanceHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceHistoryRequest.
+        r"""Gets the limit of this ListInstanceHistoryRequest.
 
         每页记录数，取值0-100
 
@@ -94,7 +94,7 @@ class ListInstanceHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceHistoryRequest.
+        r"""Sets the limit of this ListInstanceHistoryRequest.
 
         每页记录数，取值0-100
 
@@ -105,7 +105,7 @@ class ListInstanceHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceHistoryRequest.
+        r"""Gets the offset of this ListInstanceHistoryRequest.
 
         记录数偏移量 
 
@@ -116,7 +116,7 @@ class ListInstanceHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceHistoryRequest.
+        r"""Sets the offset of this ListInstanceHistoryRequest.
 
         记录数偏移量 
 
@@ -127,7 +127,7 @@ class ListInstanceHistoryRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListInstanceHistoryRequest.
+        r"""Gets the job_id of this ListInstanceHistoryRequest.
 
         任务id，最大32位，字母和数字组成
 
@@ -138,7 +138,7 @@ class ListInstanceHistoryRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListInstanceHistoryRequest.
+        r"""Sets the job_id of this ListInstanceHistoryRequest.
 
         任务id，最大32位，字母和数字组成
 

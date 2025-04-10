@@ -42,7 +42,7 @@ class ShowAccessPointResponse(SdkResponse):
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, region=None, access_point=None, token=None, hidden_token=None, sw_business_id=None, agent_download_url=None):
-        """ShowAccessPointResponse
+        r"""ShowAccessPointResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAccessPointResponse.
+        r"""Gets the id of this ShowAccessPointResponse.
 
         :return: The id of this ShowAccessPointResponse.
         :rtype: int
@@ -109,7 +109,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAccessPointResponse.
+        r"""Sets the id of this ShowAccessPointResponse.
 
         :param id: The id of this ShowAccessPointResponse.
         :type id: int
@@ -118,7 +118,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this ShowAccessPointResponse.
+        r"""Gets the gmt_create of this ShowAccessPointResponse.
 
         创建时间
 
@@ -129,7 +129,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this ShowAccessPointResponse.
+        r"""Sets the gmt_create of this ShowAccessPointResponse.
 
         创建时间
 
@@ -140,7 +140,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this ShowAccessPointResponse.
+        r"""Gets the gmt_modify of this ShowAccessPointResponse.
 
         修改时间
 
@@ -151,7 +151,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this ShowAccessPointResponse.
+        r"""Sets the gmt_modify of this ShowAccessPointResponse.
 
         修改时间
 
@@ -162,7 +162,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowAccessPointResponse.
+        r"""Gets the region of this ShowAccessPointResponse.
 
         当前局点
 
@@ -173,7 +173,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowAccessPointResponse.
+        r"""Sets the region of this ShowAccessPointResponse.
 
         当前局点
 
@@ -184,7 +184,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def access_point(self):
-        """Gets the access_point of this ShowAccessPointResponse.
+        r"""Gets the access_point of this ShowAccessPointResponse.
 
         接入点地址
 
@@ -195,7 +195,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @access_point.setter
     def access_point(self, access_point):
-        """Sets the access_point of this ShowAccessPointResponse.
+        r"""Sets the access_point of this ShowAccessPointResponse.
 
         接入点地址
 
@@ -206,7 +206,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this ShowAccessPointResponse.
+        r"""Gets the token of this ShowAccessPointResponse.
 
         token
 
@@ -217,7 +217,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ShowAccessPointResponse.
+        r"""Sets the token of this ShowAccessPointResponse.
 
         token
 
@@ -228,7 +228,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def hidden_token(self):
-        """Gets the hidden_token of this ShowAccessPointResponse.
+        r"""Gets the hidden_token of this ShowAccessPointResponse.
 
         token隐藏字符
 
@@ -239,7 +239,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @hidden_token.setter
     def hidden_token(self, hidden_token):
-        """Sets the hidden_token of this ShowAccessPointResponse.
+        r"""Sets the hidden_token of this ShowAccessPointResponse.
 
         token隐藏字符
 
@@ -250,7 +250,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def sw_business_id(self):
-        """Gets the sw_business_id of this ShowAccessPointResponse.
+        r"""Gets the sw_business_id of this ShowAccessPointResponse.
 
         应用ID
 
@@ -261,7 +261,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @sw_business_id.setter
     def sw_business_id(self, sw_business_id):
-        """Sets the sw_business_id of this ShowAccessPointResponse.
+        r"""Sets the sw_business_id of this ShowAccessPointResponse.
 
         应用ID
 
@@ -272,7 +272,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @property
     def agent_download_url(self):
-        """Gets the agent_download_url of this ShowAccessPointResponse.
+        r"""Gets the agent_download_url of this ShowAccessPointResponse.
 
         agent下载地址
 
@@ -283,7 +283,7 @@ class ShowAccessPointResponse(SdkResponse):
 
     @agent_download_url.setter
     def agent_download_url(self, agent_download_url):
-        """Sets the agent_download_url of this ShowAccessPointResponse.
+        r"""Sets the agent_download_url of this ShowAccessPointResponse.
 
         agent下载地址
 

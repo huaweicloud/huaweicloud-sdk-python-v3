@@ -28,7 +28,7 @@ class UpdateGlobalConnectionBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, globalconnection_bandwidth=None):
-        """UpdateGlobalConnectionBandwidthResponse
+        r"""UpdateGlobalConnectionBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGlobalConnectionBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateGlobalConnectionBandwidthResponse.
+        r"""Gets the request_id of this UpdateGlobalConnectionBandwidthResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class UpdateGlobalConnectionBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateGlobalConnectionBandwidthResponse.
+        r"""Sets the request_id of this UpdateGlobalConnectionBandwidthResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class UpdateGlobalConnectionBandwidthResponse(SdkResponse):
 
     @property
     def globalconnection_bandwidth(self):
-        """Gets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthResponse.
+        r"""Gets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthResponse.
 
         :return: The globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.GlobalConnectionBandwidth`
@@ -80,7 +80,7 @@ class UpdateGlobalConnectionBandwidthResponse(SdkResponse):
 
     @globalconnection_bandwidth.setter
     def globalconnection_bandwidth(self, globalconnection_bandwidth):
-        """Sets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthResponse.
+        r"""Sets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthResponse.
 
         :param globalconnection_bandwidth: The globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthResponse.
         :type globalconnection_bandwidth: :class:`huaweicloudsdkcc.v3.GlobalConnectionBandwidth`

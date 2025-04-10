@@ -75,7 +75,7 @@ class ProductInfo:
     }
 
     def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, sessions=None, status=None, cond_operation_az=None, sub_product_list=None, domain_ids=None, package_type=None, series_type=None, expire_time=None, support_gpu_type=None):
-        """ProductInfo
+        r"""ProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class ProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductInfo.
+        r"""Gets the product_id of this ProductInfo.
 
         产品id。
 
@@ -229,7 +229,7 @@ class ProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductInfo.
+        r"""Sets the product_id of this ProductInfo.
 
         产品id。
 
@@ -240,7 +240,7 @@ class ProductInfo:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ProductInfo.
+        r"""Gets the flavor_id of this ProductInfo.
 
         规格ID。
 
@@ -251,7 +251,7 @@ class ProductInfo:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ProductInfo.
+        r"""Sets the flavor_id of this ProductInfo.
 
         规格ID。
 
@@ -262,7 +262,7 @@ class ProductInfo:
 
     @property
     def type(self):
-        """Gets the type of this ProductInfo.
+        r"""Gets the type of this ProductInfo.
 
         产品类型。 - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
 
@@ -273,7 +273,7 @@ class ProductInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProductInfo.
+        r"""Sets the type of this ProductInfo.
 
         产品类型。 - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
 
@@ -284,7 +284,7 @@ class ProductInfo:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ProductInfo.
+        r"""Gets the architecture of this ProductInfo.
 
         产品架构，当前仅支持x86。 - x86 - arm
 
@@ -295,7 +295,7 @@ class ProductInfo:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ProductInfo.
+        r"""Sets the architecture of this ProductInfo.
 
         产品架构，当前仅支持x86。 - x86 - arm
 
@@ -306,7 +306,7 @@ class ProductInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ProductInfo.
+        r"""Gets the cpu of this ProductInfo.
 
         CPU。
 
@@ -317,7 +317,7 @@ class ProductInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ProductInfo.
+        r"""Sets the cpu of this ProductInfo.
 
         CPU。
 
@@ -328,7 +328,7 @@ class ProductInfo:
 
     @property
     def cpu_desc(self):
-        """Gets the cpu_desc of this ProductInfo.
+        r"""Gets the cpu_desc of this ProductInfo.
 
         CPU描述。
 
@@ -339,7 +339,7 @@ class ProductInfo:
 
     @cpu_desc.setter
     def cpu_desc(self, cpu_desc):
-        """Sets the cpu_desc of this ProductInfo.
+        r"""Sets the cpu_desc of this ProductInfo.
 
         CPU描述。
 
@@ -350,7 +350,7 @@ class ProductInfo:
 
     @property
     def memory(self):
-        """Gets the memory of this ProductInfo.
+        r"""Gets the memory of this ProductInfo.
 
         内存大小，单位兆：MB。
 
@@ -361,7 +361,7 @@ class ProductInfo:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ProductInfo.
+        r"""Sets the memory of this ProductInfo.
 
         内存大小，单位兆：MB。
 
@@ -372,7 +372,7 @@ class ProductInfo:
 
     @property
     def is_gpu(self):
-        """Gets the is_gpu of this ProductInfo.
+        r"""Gets the is_gpu of this ProductInfo.
 
         是否是GPU类型的规格。
 
@@ -383,7 +383,7 @@ class ProductInfo:
 
     @is_gpu.setter
     def is_gpu(self, is_gpu):
-        """Sets the is_gpu of this ProductInfo.
+        r"""Sets the is_gpu of this ProductInfo.
 
         是否是GPU类型的规格。
 
@@ -394,7 +394,7 @@ class ProductInfo:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this ProductInfo.
+        r"""Gets the system_disk_type of this ProductInfo.
 
         系统盘类型。
 
@@ -405,7 +405,7 @@ class ProductInfo:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this ProductInfo.
+        r"""Sets the system_disk_type of this ProductInfo.
 
         系统盘类型。
 
@@ -416,7 +416,7 @@ class ProductInfo:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this ProductInfo.
+        r"""Gets the system_disk_size of this ProductInfo.
 
         系统盘大小。
 
@@ -427,7 +427,7 @@ class ProductInfo:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this ProductInfo.
+        r"""Sets the system_disk_size of this ProductInfo.
 
         系统盘大小。
 
@@ -438,7 +438,7 @@ class ProductInfo:
 
     @property
     def gpu_desc(self):
-        """Gets the gpu_desc of this ProductInfo.
+        r"""Gets the gpu_desc of this ProductInfo.
 
         GPU描述。
 
@@ -449,7 +449,7 @@ class ProductInfo:
 
     @gpu_desc.setter
     def gpu_desc(self, gpu_desc):
-        """Sets the gpu_desc of this ProductInfo.
+        r"""Sets the gpu_desc of this ProductInfo.
 
         GPU描述。
 
@@ -460,7 +460,7 @@ class ProductInfo:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this ProductInfo.
+        r"""Gets the descriptions of this ProductInfo.
 
         产品描述。
 
@@ -471,7 +471,7 @@ class ProductInfo:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this ProductInfo.
+        r"""Sets the descriptions of this ProductInfo.
 
         产品描述。
 
@@ -482,7 +482,7 @@ class ProductInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ProductInfo.
+        r"""Gets the charge_mode of this ProductInfo.
 
         套餐标识。 - 1：表示包周期。 - 0：表示按需。
 
@@ -493,7 +493,7 @@ class ProductInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ProductInfo.
+        r"""Sets the charge_mode of this ProductInfo.
 
         套餐标识。 - 1：表示包周期。 - 0：表示按需。
 
@@ -504,7 +504,7 @@ class ProductInfo:
 
     @property
     def contain_data_disk(self):
-        """Gets the contain_data_disk of this ProductInfo.
+        r"""Gets the contain_data_disk of this ProductInfo.
 
         套餐计费是否包含了数据盘。
 
@@ -515,7 +515,7 @@ class ProductInfo:
 
     @contain_data_disk.setter
     def contain_data_disk(self, contain_data_disk):
-        """Sets the contain_data_disk of this ProductInfo.
+        r"""Sets the contain_data_disk of this ProductInfo.
 
         套餐计费是否包含了数据盘。
 
@@ -526,7 +526,7 @@ class ProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfo.
+        r"""Gets the resource_type of this ProductInfo.
 
         资源类型。
 
@@ -537,7 +537,7 @@ class ProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfo.
+        r"""Sets the resource_type of this ProductInfo.
 
         资源类型。
 
@@ -548,7 +548,7 @@ class ProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfo.
+        r"""Gets the cloud_service_type of this ProductInfo.
 
         云服务类型。
 
@@ -559,7 +559,7 @@ class ProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfo.
+        r"""Sets the cloud_service_type of this ProductInfo.
 
         云服务类型。
 
@@ -570,7 +570,7 @@ class ProductInfo:
 
     @property
     def volume_product_type(self):
-        """Gets the volume_product_type of this ProductInfo.
+        r"""Gets the volume_product_type of this ProductInfo.
 
         磁盘产品类型。
 
@@ -581,7 +581,7 @@ class ProductInfo:
 
     @volume_product_type.setter
     def volume_product_type(self, volume_product_type):
-        """Sets the volume_product_type of this ProductInfo.
+        r"""Sets the volume_product_type of this ProductInfo.
 
         磁盘产品类型。
 
@@ -592,7 +592,7 @@ class ProductInfo:
 
     @property
     def sessions(self):
-        """Gets the sessions of this ProductInfo.
+        r"""Gets the sessions of this ProductInfo.
 
         套餐默认支持的最大会话数。
 
@@ -603,7 +603,7 @@ class ProductInfo:
 
     @sessions.setter
     def sessions(self, sessions):
-        """Sets the sessions of this ProductInfo.
+        r"""Sets the sessions of this ProductInfo.
 
         套餐默认支持的最大会话数。
 
@@ -614,7 +614,7 @@ class ProductInfo:
 
     @property
     def status(self):
-        """Gets the status of this ProductInfo.
+        r"""Gets the status of this ProductInfo.
 
         产品套餐在销售模式下的状态，取值自ECS的cond:operation:status。 不配置时等同于normal在售状态。 * `normal` - 正常商用 * `abandon` - 下线（即不显示） * `sellout` - 售罄 * `obt` - 公测 * `obt_sellout` - 公测售罄 * `promotion` - 推荐(等同normal，也是商用)
 
@@ -625,7 +625,7 @@ class ProductInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProductInfo.
+        r"""Sets the status of this ProductInfo.
 
         产品套餐在销售模式下的状态，取值自ECS的cond:operation:status。 不配置时等同于normal在售状态。 * `normal` - 正常商用 * `abandon` - 下线（即不显示） * `sellout` - 售罄 * `obt` - 公测 * `obt_sellout` - 公测售罄 * `promotion` - 推荐(等同normal，也是商用)
 
@@ -636,7 +636,7 @@ class ProductInfo:
 
     @property
     def cond_operation_az(self):
-        """Gets the cond_operation_az of this ProductInfo.
+        r"""Gets the cond_operation_az of this ProductInfo.
 
         产品套餐在可用区的状态，配套status使用。 > - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 > - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 > - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： >   - “status”设置为：“abandon” 。 >   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。  > -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
 
@@ -647,7 +647,7 @@ class ProductInfo:
 
     @cond_operation_az.setter
     def cond_operation_az(self, cond_operation_az):
-        """Sets the cond_operation_az of this ProductInfo.
+        r"""Sets the cond_operation_az of this ProductInfo.
 
         产品套餐在可用区的状态，配套status使用。 > - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 > - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 > - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： >   - “status”设置为：“abandon” 。 >   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。  > -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
 
@@ -658,7 +658,7 @@ class ProductInfo:
 
     @property
     def sub_product_list(self):
-        """Gets the sub_product_list of this ProductInfo.
+        r"""Gets the sub_product_list of this ProductInfo.
 
         专属主机的子产品。
 
@@ -669,7 +669,7 @@ class ProductInfo:
 
     @sub_product_list.setter
     def sub_product_list(self, sub_product_list):
-        """Sets the sub_product_list of this ProductInfo.
+        r"""Sets the sub_product_list of this ProductInfo.
 
         专属主机的子产品。
 
@@ -680,7 +680,7 @@ class ProductInfo:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this ProductInfo.
+        r"""Gets the domain_ids of this ProductInfo.
 
         产品属于专有的domainId。
 
@@ -691,7 +691,7 @@ class ProductInfo:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this ProductInfo.
+        r"""Sets the domain_ids of this ProductInfo.
 
         产品属于专有的domainId。
 
@@ -702,7 +702,7 @@ class ProductInfo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ProductInfo.
+        r"""Gets the package_type of this ProductInfo.
 
         套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
@@ -713,7 +713,7 @@ class ProductInfo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ProductInfo.
+        r"""Sets the package_type of this ProductInfo.
 
         套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
@@ -724,7 +724,7 @@ class ProductInfo:
 
     @property
     def series_type(self):
-        """Gets the series_type of this ProductInfo.
+        r"""Gets the series_type of this ProductInfo.
 
         系列类型
 
@@ -735,7 +735,7 @@ class ProductInfo:
 
     @series_type.setter
     def series_type(self, series_type):
-        """Sets the series_type of this ProductInfo.
+        r"""Sets the series_type of this ProductInfo.
 
         系列类型
 
@@ -746,7 +746,7 @@ class ProductInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ProductInfo.
+        r"""Gets the expire_time of this ProductInfo.
 
         产品套餐过期时间,产品将在改时间点后逐步下架。
 
@@ -757,7 +757,7 @@ class ProductInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ProductInfo.
+        r"""Sets the expire_time of this ProductInfo.
 
         产品套餐过期时间,产品将在改时间点后逐步下架。
 
@@ -768,7 +768,7 @@ class ProductInfo:
 
     @property
     def support_gpu_type(self):
-        """Gets the support_gpu_type of this ProductInfo.
+        r"""Gets the support_gpu_type of this ProductInfo.
 
         产品套餐支持的GPU类型。
 
@@ -779,7 +779,7 @@ class ProductInfo:
 
     @support_gpu_type.setter
     def support_gpu_type(self, support_gpu_type):
-        """Sets the support_gpu_type of this ProductInfo.
+        r"""Sets the support_gpu_type of this ProductInfo.
 
         产品套餐支持的GPU类型。
 

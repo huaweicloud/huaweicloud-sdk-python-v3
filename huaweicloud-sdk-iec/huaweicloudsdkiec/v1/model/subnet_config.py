@@ -33,7 +33,7 @@ class SubnetConfig:
     }
 
     def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
-        """SubnetConfig
+        r"""SubnetConfig
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class SubnetConfig:
 
     @property
     def id(self):
-        """Gets the id of this SubnetConfig.
+        r"""Gets the id of this SubnetConfig.
 
         边缘子网ID。
 
@@ -81,7 +81,7 @@ class SubnetConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubnetConfig.
+        r"""Sets the id of this SubnetConfig.
 
         边缘子网ID。
 
@@ -92,7 +92,7 @@ class SubnetConfig:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this SubnetConfig.
+        r"""Gets the ipv6_enable of this SubnetConfig.
 
         创建实例是否开启IPv6能力。
 
@@ -103,7 +103,7 @@ class SubnetConfig:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this SubnetConfig.
+        r"""Sets the ipv6_enable of this SubnetConfig.
 
         创建实例是否开启IPv6能力。
 
@@ -114,7 +114,7 @@ class SubnetConfig:
 
     @property
     def ipv6_bandwidth_enable(self):
-        """Gets the ipv6_bandwidth_enable of this SubnetConfig.
+        r"""Gets the ipv6_bandwidth_enable of this SubnetConfig.
 
         是否使用IPv6带宽。  约束： - ipv6_enable=true时，有效； - 使用IPv6带宽后，优先根据ipv6_bandwidth中配置的带宽，如果ipv6_bandwidth未设置，则使用使用IPv6子网所在Ipv6池的带宽,如果当前IPv6所在池子下面没有带宽，则自动创建带宽
 
@@ -125,7 +125,7 @@ class SubnetConfig:
 
     @ipv6_bandwidth_enable.setter
     def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
-        """Sets the ipv6_bandwidth_enable of this SubnetConfig.
+        r"""Sets the ipv6_bandwidth_enable of this SubnetConfig.
 
         是否使用IPv6带宽。  约束： - ipv6_enable=true时，有效； - 使用IPv6带宽后，优先根据ipv6_bandwidth中配置的带宽，如果ipv6_bandwidth未设置，则使用使用IPv6子网所在Ipv6池的带宽,如果当前IPv6所在池子下面没有带宽，则自动创建带宽
 
@@ -136,7 +136,7 @@ class SubnetConfig:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this SubnetConfig.
+        r"""Gets the ipv6_bandwidth of this SubnetConfig.
 
         :return: The ipv6_bandwidth of this SubnetConfig.
         :rtype: :class:`huaweicloudsdkiec.v1.Ipv6Bandwidth`
@@ -145,7 +145,7 @@ class SubnetConfig:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this SubnetConfig.
+        r"""Sets the ipv6_bandwidth of this SubnetConfig.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this SubnetConfig.
         :type ipv6_bandwidth: :class:`huaweicloudsdkiec.v1.Ipv6Bandwidth`
@@ -154,7 +154,7 @@ class SubnetConfig:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this SubnetConfig.
+        r"""Gets the allowed_address_pairs of this SubnetConfig.
 
         - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
 
@@ -165,7 +165,7 @@ class SubnetConfig:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this SubnetConfig.
+        r"""Sets the allowed_address_pairs of this SubnetConfig.
 
         - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
 

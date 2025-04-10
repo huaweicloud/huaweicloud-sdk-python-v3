@@ -24,7 +24,7 @@ class DeleteImportedKeyMaterialResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteImportedKeyMaterialResponse
+        r"""DeleteImportedKeyMaterialResponse
 
         The model defined in huaweicloud sdk
 

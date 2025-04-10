@@ -25,7 +25,7 @@ class AttachSharebwDict:
     }
 
     def __init__(self, bandwidth_id=None):
-        """AttachSharebwDict
+        r"""AttachSharebwDict
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AttachSharebwDict:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this AttachSharebwDict.
+        r"""Gets the bandwidth_id of this AttachSharebwDict.
 
         - 带宽id
 
@@ -54,7 +54,7 @@ class AttachSharebwDict:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this AttachSharebwDict.
+        r"""Sets the bandwidth_id of this AttachSharebwDict.
 
         - 带宽id
 

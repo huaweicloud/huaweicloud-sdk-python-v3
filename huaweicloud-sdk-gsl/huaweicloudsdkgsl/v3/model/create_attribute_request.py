@@ -25,7 +25,7 @@ class CreateAttributeRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAttributeRequest
+        r"""CreateAttributeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAttributeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAttributeRequest.
+        r"""Gets the body of this CreateAttributeRequest.
 
         :return: The body of this CreateAttributeRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.AddOrModifyAttributeReq`
@@ -52,7 +52,7 @@ class CreateAttributeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAttributeRequest.
+        r"""Sets the body of this CreateAttributeRequest.
 
         :param body: The body of this CreateAttributeRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.AddOrModifyAttributeReq`

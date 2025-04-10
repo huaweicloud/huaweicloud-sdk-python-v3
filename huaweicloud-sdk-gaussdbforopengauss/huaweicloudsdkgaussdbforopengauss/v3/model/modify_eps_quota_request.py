@@ -27,7 +27,7 @@ class ModifyEpsQuotaRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ModifyEpsQuotaRequest
+        r"""ModifyEpsQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ModifyEpsQuotaRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyEpsQuotaRequest.
+        r"""Gets the x_language of this ModifyEpsQuotaRequest.
 
         语言。默认值：en-us。
 
@@ -61,7 +61,7 @@ class ModifyEpsQuotaRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyEpsQuotaRequest.
+        r"""Sets the x_language of this ModifyEpsQuotaRequest.
 
         语言。默认值：en-us。
 
@@ -72,7 +72,7 @@ class ModifyEpsQuotaRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyEpsQuotaRequest.
+        r"""Gets the body of this ModifyEpsQuotaRequest.
 
         :return: The body of this ModifyEpsQuotaRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyEpsQuotaRequestBody`
@@ -81,7 +81,7 @@ class ModifyEpsQuotaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyEpsQuotaRequest.
+        r"""Sets the body of this ModifyEpsQuotaRequest.
 
         :param body: The body of this ModifyEpsQuotaRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyEpsQuotaRequestBody`

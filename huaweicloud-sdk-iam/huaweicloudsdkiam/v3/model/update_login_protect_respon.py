@@ -29,7 +29,7 @@ class UpdateLoginProtectRespon:
     }
 
     def __init__(self, user_id=None, enabled=None, verification_method=None):
-        """UpdateLoginProtectRespon
+        r"""UpdateLoginProtectRespon
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateLoginProtectRespon:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateLoginProtectRespon.
+        r"""Gets the user_id of this UpdateLoginProtectRespon.
 
         待修改信息的IAM用户ID。
 
@@ -65,7 +65,7 @@ class UpdateLoginProtectRespon:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateLoginProtectRespon.
+        r"""Sets the user_id of this UpdateLoginProtectRespon.
 
         待修改信息的IAM用户ID。
 
@@ -76,7 +76,7 @@ class UpdateLoginProtectRespon:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateLoginProtectRespon.
+        r"""Gets the enabled of this UpdateLoginProtectRespon.
 
         IAM用户是否开启登录保护，开启为\"true\"，不开启为\"false\"。
 
@@ -87,7 +87,7 @@ class UpdateLoginProtectRespon:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateLoginProtectRespon.
+        r"""Sets the enabled of this UpdateLoginProtectRespon.
 
         IAM用户是否开启登录保护，开启为\"true\"，不开启为\"false\"。
 
@@ -98,7 +98,7 @@ class UpdateLoginProtectRespon:
 
     @property
     def verification_method(self):
-        """Gets the verification_method of this UpdateLoginProtectRespon.
+        r"""Gets the verification_method of this UpdateLoginProtectRespon.
 
         IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
 
@@ -109,7 +109,7 @@ class UpdateLoginProtectRespon:
 
     @verification_method.setter
     def verification_method(self, verification_method):
-        """Sets the verification_method of this UpdateLoginProtectRespon.
+        r"""Sets the verification_method of this UpdateLoginProtectRespon.
 
         IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
 

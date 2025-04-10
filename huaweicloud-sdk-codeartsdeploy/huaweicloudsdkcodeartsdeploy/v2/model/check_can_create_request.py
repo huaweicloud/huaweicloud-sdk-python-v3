@@ -25,7 +25,7 @@ class CheckCanCreateRequest:
     }
 
     def __init__(self, project_id=None):
-        """CheckCanCreateRequest
+        r"""CheckCanCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckCanCreateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckCanCreateRequest.
+        r"""Gets the project_id of this CheckCanCreateRequest.
 
         项目id
 
@@ -53,7 +53,7 @@ class CheckCanCreateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckCanCreateRequest.
+        r"""Sets the project_id of this CheckCanCreateRequest.
 
         项目id
 

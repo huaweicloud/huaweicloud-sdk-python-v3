@@ -32,7 +32,7 @@ class ListOrganizationTreeRequest:
     }
 
     def __init__(self, x_security_token=None, region=None, is_refresh=None, enterprise_project_id=None):
-        """ListOrganizationTreeRequest
+        r"""ListOrganizationTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListOrganizationTreeRequest:
         :type region: str
         :param is_refresh: 是否强制从organization同步组织信息
         :type is_refresh: bool
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         """
         
@@ -64,7 +64,7 @@ class ListOrganizationTreeRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListOrganizationTreeRequest.
+        r"""Gets the x_security_token of this ListOrganizationTreeRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -75,7 +75,7 @@ class ListOrganizationTreeRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListOrganizationTreeRequest.
+        r"""Sets the x_security_token of this ListOrganizationTreeRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -86,7 +86,7 @@ class ListOrganizationTreeRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListOrganizationTreeRequest.
+        r"""Gets the region of this ListOrganizationTreeRequest.
 
         Region ID
 
@@ -97,7 +97,7 @@ class ListOrganizationTreeRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListOrganizationTreeRequest.
+        r"""Sets the region of this ListOrganizationTreeRequest.
 
         Region ID
 
@@ -108,7 +108,7 @@ class ListOrganizationTreeRequest:
 
     @property
     def is_refresh(self):
-        """Gets the is_refresh of this ListOrganizationTreeRequest.
+        r"""Gets the is_refresh of this ListOrganizationTreeRequest.
 
         是否强制从organization同步组织信息
 
@@ -119,7 +119,7 @@ class ListOrganizationTreeRequest:
 
     @is_refresh.setter
     def is_refresh(self, is_refresh):
-        """Sets the is_refresh of this ListOrganizationTreeRequest.
+        r"""Sets the is_refresh of this ListOrganizationTreeRequest.
 
         是否强制从organization同步组织信息
 
@@ -130,9 +130,9 @@ class ListOrganizationTreeRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListOrganizationTreeRequest.
+        r"""Gets the enterprise_project_id of this ListOrganizationTreeRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListOrganizationTreeRequest.
         :rtype: str
@@ -141,9 +141,9 @@ class ListOrganizationTreeRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListOrganizationTreeRequest.
+        r"""Sets the enterprise_project_id of this ListOrganizationTreeRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListOrganizationTreeRequest.
         :type enterprise_project_id: str

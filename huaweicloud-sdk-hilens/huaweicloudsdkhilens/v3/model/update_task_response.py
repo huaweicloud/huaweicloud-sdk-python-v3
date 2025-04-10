@@ -26,7 +26,7 @@ class UpdateTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """UpdateTaskResponse
+        r"""UpdateTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskResponse.
+        r"""Gets the task_id of this UpdateTaskResponse.
 
         作业id
 
@@ -55,7 +55,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskResponse.
+        r"""Sets the task_id of this UpdateTaskResponse.
 
         作业id
 

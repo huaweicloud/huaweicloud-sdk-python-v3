@@ -27,7 +27,7 @@ class HostedCloudEnum:
     }
 
     def __init__(self):
-        """HostedCloudEnum
+        r"""HostedCloudEnum
 
         The model defined in huaweicloud sdk
 

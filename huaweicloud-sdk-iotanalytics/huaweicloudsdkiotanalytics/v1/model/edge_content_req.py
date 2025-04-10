@@ -27,7 +27,7 @@ class EdgeContentReq:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """EdgeContentReq
+        r"""EdgeContentReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EdgeContentReq:
 
     @property
     def iotda_instance_id(self):
-        """Gets the iotda_instance_id of this EdgeContentReq.
+        r"""Gets the iotda_instance_id of this EdgeContentReq.
 
         edge实例Id
 
@@ -60,7 +60,7 @@ class EdgeContentReq:
 
     @iotda_instance_id.setter
     def iotda_instance_id(self, iotda_instance_id):
-        """Sets the iotda_instance_id of this EdgeContentReq.
+        r"""Sets the iotda_instance_id of this EdgeContentReq.
 
         edge实例Id
 
@@ -71,7 +71,7 @@ class EdgeContentReq:
 
     @property
     def rules(self):
-        """Gets the rules of this EdgeContentReq.
+        r"""Gets the rules of this EdgeContentReq.
 
         在edge实例中要配置转发规则推送数据的资源空间和产品列表
 
@@ -82,7 +82,7 @@ class EdgeContentReq:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this EdgeContentReq.
+        r"""Sets the rules of this EdgeContentReq.
 
         在edge实例中要配置转发规则推送数据的资源空间和产品列表
 

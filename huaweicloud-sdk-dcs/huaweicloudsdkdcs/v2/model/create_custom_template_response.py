@@ -26,7 +26,7 @@ class CreateCustomTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateCustomTemplateResponse
+        r"""CreateCustomTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCustomTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCustomTemplateResponse.
+        r"""Gets the id of this CreateCustomTemplateResponse.
 
         模板ID
 
@@ -55,7 +55,7 @@ class CreateCustomTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCustomTemplateResponse.
+        r"""Sets the id of this CreateCustomTemplateResponse.
 
         模板ID
 

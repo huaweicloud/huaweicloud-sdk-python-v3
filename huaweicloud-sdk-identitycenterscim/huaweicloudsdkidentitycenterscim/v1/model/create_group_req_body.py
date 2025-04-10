@@ -31,7 +31,7 @@ class CreateGroupReqBody:
     }
 
     def __init__(self, external_id=None, display_name=None, members=None, schemas=None):
-        """CreateGroupReqBody
+        r"""CreateGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateGroupReqBody:
 
     @property
     def external_id(self):
-        """Gets the external_id of this CreateGroupReqBody.
+        r"""Gets the external_id of this CreateGroupReqBody.
 
         外部标识符
 
@@ -73,7 +73,7 @@ class CreateGroupReqBody:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this CreateGroupReqBody.
+        r"""Sets the external_id of this CreateGroupReqBody.
 
         外部标识符
 
@@ -84,7 +84,7 @@ class CreateGroupReqBody:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateGroupReqBody.
+        r"""Gets the display_name of this CreateGroupReqBody.
 
         包含用户组显示名称的字符串
 
@@ -95,7 +95,7 @@ class CreateGroupReqBody:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateGroupReqBody.
+        r"""Sets the display_name of this CreateGroupReqBody.
 
         包含用户组显示名称的字符串
 
@@ -106,7 +106,7 @@ class CreateGroupReqBody:
 
     @property
     def members(self):
-        """Gets the members of this CreateGroupReqBody.
+        r"""Gets the members of this CreateGroupReqBody.
 
         用户组中的成员对象列表
 
@@ -117,7 +117,7 @@ class CreateGroupReqBody:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this CreateGroupReqBody.
+        r"""Sets the members of this CreateGroupReqBody.
 
         用户组中的成员对象列表
 
@@ -128,7 +128,7 @@ class CreateGroupReqBody:
 
     @property
     def schemas(self):
-        """Gets the schemas of this CreateGroupReqBody.
+        r"""Gets the schemas of this CreateGroupReqBody.
 
         概要
 
@@ -139,7 +139,7 @@ class CreateGroupReqBody:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this CreateGroupReqBody.
+        r"""Sets the schemas of this CreateGroupReqBody.
 
         概要
 

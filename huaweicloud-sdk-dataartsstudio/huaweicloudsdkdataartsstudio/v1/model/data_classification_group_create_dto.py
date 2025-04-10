@@ -31,7 +31,7 @@ class DataClassificationGroupCreateDTO:
     }
 
     def __init__(self, name=None, rule_ids=None, description=None, create_rules=None):
-        """DataClassificationGroupCreateDTO
+        r"""DataClassificationGroupCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DataClassificationGroupCreateDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationGroupCreateDTO.
+        r"""Gets the name of this DataClassificationGroupCreateDTO.
 
         规则名称
 
@@ -73,7 +73,7 @@ class DataClassificationGroupCreateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationGroupCreateDTO.
+        r"""Sets the name of this DataClassificationGroupCreateDTO.
 
         规则名称
 
@@ -84,7 +84,7 @@ class DataClassificationGroupCreateDTO:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this DataClassificationGroupCreateDTO.
+        r"""Gets the rule_ids of this DataClassificationGroupCreateDTO.
 
         规则id列表
 
@@ -95,7 +95,7 @@ class DataClassificationGroupCreateDTO:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this DataClassificationGroupCreateDTO.
+        r"""Sets the rule_ids of this DataClassificationGroupCreateDTO.
 
         规则id列表
 
@@ -106,7 +106,7 @@ class DataClassificationGroupCreateDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationGroupCreateDTO.
+        r"""Gets the description of this DataClassificationGroupCreateDTO.
 
         规则组描述
 
@@ -117,7 +117,7 @@ class DataClassificationGroupCreateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationGroupCreateDTO.
+        r"""Sets the description of this DataClassificationGroupCreateDTO.
 
         规则组描述
 
@@ -128,7 +128,7 @@ class DataClassificationGroupCreateDTO:
 
     @property
     def create_rules(self):
-        """Gets the create_rules of this DataClassificationGroupCreateDTO.
+        r"""Gets the create_rules of this DataClassificationGroupCreateDTO.
 
         需要创建的规则
 
@@ -139,7 +139,7 @@ class DataClassificationGroupCreateDTO:
 
     @create_rules.setter
     def create_rules(self, create_rules):
-        """Sets the create_rules of this DataClassificationGroupCreateDTO.
+        r"""Sets the create_rules of this DataClassificationGroupCreateDTO.
 
         需要创建的规则
 

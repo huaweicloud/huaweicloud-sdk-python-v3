@@ -35,7 +35,7 @@ class ClusterUpgradeAction:
     }
 
     def __init__(self, addons=None, node_order=None, node_pool_order=None, strategy=None, target_version=None, is_only_upgrade=None):
-        """ClusterUpgradeAction
+        r"""ClusterUpgradeAction
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ClusterUpgradeAction:
 
     @property
     def addons(self):
-        """Gets the addons of this ClusterUpgradeAction.
+        r"""Gets the addons of this ClusterUpgradeAction.
 
         插件配置列表
 
@@ -87,7 +87,7 @@ class ClusterUpgradeAction:
 
     @addons.setter
     def addons(self, addons):
-        """Sets the addons of this ClusterUpgradeAction.
+        r"""Sets the addons of this ClusterUpgradeAction.
 
         插件配置列表
 
@@ -98,7 +98,7 @@ class ClusterUpgradeAction:
 
     @property
     def node_order(self):
-        """Gets the node_order of this ClusterUpgradeAction.
+        r"""Gets the node_order of this ClusterUpgradeAction.
 
         节点池内节点升级顺序配置。 > key表示节点池ID，默认节点池取值为\"DefaultPool\" 
 
@@ -109,7 +109,7 @@ class ClusterUpgradeAction:
 
     @node_order.setter
     def node_order(self, node_order):
-        """Sets the node_order of this ClusterUpgradeAction.
+        r"""Sets the node_order of this ClusterUpgradeAction.
 
         节点池内节点升级顺序配置。 > key表示节点池ID，默认节点池取值为\"DefaultPool\" 
 
@@ -120,7 +120,7 @@ class ClusterUpgradeAction:
 
     @property
     def node_pool_order(self):
-        """Gets the node_pool_order of this ClusterUpgradeAction.
+        r"""Gets the node_pool_order of this ClusterUpgradeAction.
 
         节点池升级顺序配置，key/value对格式。 > key表示节点池ID，默认节点池取值为\"DefaultPool\" > value表示对应节点池的优先级，默认值为0，优先级最低，数值越大优先级越高 
 
@@ -131,7 +131,7 @@ class ClusterUpgradeAction:
 
     @node_pool_order.setter
     def node_pool_order(self, node_pool_order):
-        """Sets the node_pool_order of this ClusterUpgradeAction.
+        r"""Sets the node_pool_order of this ClusterUpgradeAction.
 
         节点池升级顺序配置，key/value对格式。 > key表示节点池ID，默认节点池取值为\"DefaultPool\" > value表示对应节点池的优先级，默认值为0，优先级最低，数值越大优先级越高 
 
@@ -142,7 +142,7 @@ class ClusterUpgradeAction:
 
     @property
     def strategy(self):
-        """Gets the strategy of this ClusterUpgradeAction.
+        r"""Gets the strategy of this ClusterUpgradeAction.
 
         :return: The strategy of this ClusterUpgradeAction.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeStrategy`
@@ -151,7 +151,7 @@ class ClusterUpgradeAction:
 
     @strategy.setter
     def strategy(self, strategy):
-        """Sets the strategy of this ClusterUpgradeAction.
+        r"""Sets the strategy of this ClusterUpgradeAction.
 
         :param strategy: The strategy of this ClusterUpgradeAction.
         :type strategy: :class:`huaweicloudsdkcce.v3.UpgradeStrategy`
@@ -160,7 +160,7 @@ class ClusterUpgradeAction:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ClusterUpgradeAction.
+        r"""Gets the target_version of this ClusterUpgradeAction.
 
         目标集群版本，例如\"v1.23\"
 
@@ -171,7 +171,7 @@ class ClusterUpgradeAction:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ClusterUpgradeAction.
+        r"""Sets the target_version of this ClusterUpgradeAction.
 
         目标集群版本，例如\"v1.23\"
 
@@ -182,7 +182,7 @@ class ClusterUpgradeAction:
 
     @property
     def is_only_upgrade(self):
-        """Gets the is_only_upgrade of this ClusterUpgradeAction.
+        r"""Gets the is_only_upgrade of this ClusterUpgradeAction.
 
         是否在集群升级流程中执行升级前检查。默认为false，表示会执行升级前检查，如果您在集群升级编排中调用了升级前检查的API，则升级时可用将该字段置为false，不再额外执行一次检查
 
@@ -193,7 +193,7 @@ class ClusterUpgradeAction:
 
     @is_only_upgrade.setter
     def is_only_upgrade(self, is_only_upgrade):
-        """Sets the is_only_upgrade of this ClusterUpgradeAction.
+        r"""Sets the is_only_upgrade of this ClusterUpgradeAction.
 
         是否在集群升级流程中执行升级前检查。默认为false，表示会执行升级前检查，如果您在集群升级编排中调用了升级前检查的API，则升级时可用将该字段置为false，不再额外执行一次检查
 

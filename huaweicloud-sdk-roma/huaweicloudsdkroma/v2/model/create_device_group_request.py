@@ -27,7 +27,7 @@ class CreateDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDeviceGroupRequest
+        r"""CreateDeviceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDeviceGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDeviceGroupRequest.
+        r"""Gets the instance_id of this CreateDeviceGroupRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateDeviceGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDeviceGroupRequest.
+        r"""Sets the instance_id of this CreateDeviceGroupRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateDeviceGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeviceGroupRequest.
+        r"""Gets the body of this CreateDeviceGroupRequest.
 
         :return: The body of this CreateDeviceGroupRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequestBody`
@@ -80,7 +80,7 @@ class CreateDeviceGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeviceGroupRequest.
+        r"""Sets the body of this CreateDeviceGroupRequest.
 
         :param body: The body of this CreateDeviceGroupRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequestBody`

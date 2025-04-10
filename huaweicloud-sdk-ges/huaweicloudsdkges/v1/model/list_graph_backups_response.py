@@ -32,7 +32,7 @@ class ListGraphBackupsResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, backup_count=None, backup_list=None):
-        """ListGraphBackupsResponse
+        r"""ListGraphBackupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListGraphBackupsResponse.
+        r"""Gets the error_message of this ListGraphBackupsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -76,7 +76,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListGraphBackupsResponse.
+        r"""Sets the error_message of this ListGraphBackupsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -87,7 +87,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListGraphBackupsResponse.
+        r"""Gets the error_code of this ListGraphBackupsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -98,7 +98,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListGraphBackupsResponse.
+        r"""Sets the error_code of this ListGraphBackupsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -109,7 +109,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @property
     def backup_count(self):
-        """Gets the backup_count of this ListGraphBackupsResponse.
+        r"""Gets the backup_count of this ListGraphBackupsResponse.
 
         备份总个数。请求失败时。字段为空。
 
@@ -120,7 +120,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @backup_count.setter
     def backup_count(self, backup_count):
-        """Sets the backup_count of this ListGraphBackupsResponse.
+        r"""Sets the backup_count of this ListGraphBackupsResponse.
 
         备份总个数。请求失败时。字段为空。
 
@@ -131,7 +131,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @property
     def backup_list(self):
-        """Gets the backup_list of this ListGraphBackupsResponse.
+        r"""Gets the backup_list of this ListGraphBackupsResponse.
 
         当前Project下指定Graph的的备份列表。请求失败时，字段为空。
 
@@ -142,7 +142,7 @@ class ListGraphBackupsResponse(SdkResponse):
 
     @backup_list.setter
     def backup_list(self, backup_list):
-        """Sets the backup_list of this ListGraphBackupsResponse.
+        r"""Sets the backup_list of this ListGraphBackupsResponse.
 
         当前Project下指定Graph的的备份列表。请求失败时，字段为空。
 

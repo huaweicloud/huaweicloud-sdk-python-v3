@@ -25,7 +25,7 @@ class ListUserPopupInfoRequest:
     }
 
     def __init__(self, project_id=None):
-        """ListUserPopupInfoRequest
+        r"""ListUserPopupInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListUserPopupInfoRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListUserPopupInfoRequest.
+        r"""Gets the project_id of this ListUserPopupInfoRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -53,7 +53,7 @@ class ListUserPopupInfoRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListUserPopupInfoRequest.
+        r"""Sets the project_id of this ListUserPopupInfoRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 

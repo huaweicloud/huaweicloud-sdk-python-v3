@@ -95,7 +95,7 @@ class CreateClusterReqV11:
     }
 
     def __init__(self, cluster_version=None, cluster_name=None, master_node_num=None, core_node_num=None, billing_type=None, data_center=None, vpc=None, master_node_size=None, core_node_size=None, component_list=None, available_zone_id=None, vpc_id=None, subnet_id=None, subnet_name=None, security_groups_id=None, add_jobs=None, volume_size=None, volume_type=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, task_node_groups=None, bootstrap_scripts=None, node_public_cert_name=None, cluster_admin_secret=None, cluster_master_secret=None, safe_mode=None, cluster_type=None, log_collection=None, enterprise_project_id=None, tags=None, login_mode=None, node_groups=None):
-        """CreateClusterReqV11
+        r"""CreateClusterReqV11
 
         The model defined in huaweicloud sdk
 
@@ -277,7 +277,7 @@ class CreateClusterReqV11:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this CreateClusterReqV11.
+        r"""Gets the cluster_version of this CreateClusterReqV11.
 
         集群版本。 例如：MRS 3.1.0。
 
@@ -288,7 +288,7 @@ class CreateClusterReqV11:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this CreateClusterReqV11.
+        r"""Sets the cluster_version of this CreateClusterReqV11.
 
         集群版本。 例如：MRS 3.1.0。
 
@@ -299,7 +299,7 @@ class CreateClusterReqV11:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateClusterReqV11.
+        r"""Gets the cluster_name of this CreateClusterReqV11.
 
         集群名称，不允许相同。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
 
@@ -310,7 +310,7 @@ class CreateClusterReqV11:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateClusterReqV11.
+        r"""Sets the cluster_name of this CreateClusterReqV11.
 
         集群名称，不允许相同。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
 
@@ -321,7 +321,7 @@ class CreateClusterReqV11:
 
     @property
     def master_node_num(self):
-        """Gets the master_node_num of this CreateClusterReqV11.
+        r"""Gets the master_node_num of this CreateClusterReqV11.
 
         Master节点数量。启用集群高可用功能时配置为2，不启用集群高可用功能时配置为1。MRS 3.x版本暂时不支持该参数配置为1。
 
@@ -332,7 +332,7 @@ class CreateClusterReqV11:
 
     @master_node_num.setter
     def master_node_num(self, master_node_num):
-        """Sets the master_node_num of this CreateClusterReqV11.
+        r"""Sets the master_node_num of this CreateClusterReqV11.
 
         Master节点数量。启用集群高可用功能时配置为2，不启用集群高可用功能时配置为1。MRS 3.x版本暂时不支持该参数配置为1。
 
@@ -343,7 +343,7 @@ class CreateClusterReqV11:
 
     @property
     def core_node_num(self):
-        """Gets the core_node_num of this CreateClusterReqV11.
+        r"""Gets the core_node_num of this CreateClusterReqV11.
 
         Core节点数量。  取值范围：[1～500]  Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
 
@@ -354,7 +354,7 @@ class CreateClusterReqV11:
 
     @core_node_num.setter
     def core_node_num(self, core_node_num):
-        """Sets the core_node_num of this CreateClusterReqV11.
+        r"""Sets the core_node_num of this CreateClusterReqV11.
 
         Core节点数量。  取值范围：[1～500]  Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
 
@@ -365,7 +365,7 @@ class CreateClusterReqV11:
 
     @property
     def billing_type(self):
-        """Gets the billing_type of this CreateClusterReqV11.
+        r"""Gets the billing_type of this CreateClusterReqV11.
 
         集群的计费模式。  12：表示按需计费。接口调用仅支持创建按需计费集群。
 
@@ -376,7 +376,7 @@ class CreateClusterReqV11:
 
     @billing_type.setter
     def billing_type(self, billing_type):
-        """Sets the billing_type of this CreateClusterReqV11.
+        r"""Sets the billing_type of this CreateClusterReqV11.
 
         集群的计费模式。  12：表示按需计费。接口调用仅支持创建按需计费集群。
 
@@ -387,7 +387,7 @@ class CreateClusterReqV11:
 
     @property
     def data_center(self):
-        """Gets the data_center of this CreateClusterReqV11.
+        r"""Gets the data_center of this CreateClusterReqV11.
 
         集群区域信息，请参见[终端节点及区域](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
@@ -398,7 +398,7 @@ class CreateClusterReqV11:
 
     @data_center.setter
     def data_center(self, data_center):
-        """Sets the data_center of this CreateClusterReqV11.
+        r"""Sets the data_center of this CreateClusterReqV11.
 
         集群区域信息，请参见[终端节点及区域](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
@@ -409,7 +409,7 @@ class CreateClusterReqV11:
 
     @property
     def vpc(self):
-        """Gets the vpc of this CreateClusterReqV11.
+        r"""Gets the vpc of this CreateClusterReqV11.
 
         子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。  在“虚拟私有云”页面的列表中即可获取VPC名称。
 
@@ -420,7 +420,7 @@ class CreateClusterReqV11:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this CreateClusterReqV11.
+        r"""Sets the vpc of this CreateClusterReqV11.
 
         子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。  在“虚拟私有云”页面的列表中即可获取VPC名称。
 
@@ -431,7 +431,7 @@ class CreateClusterReqV11:
 
     @property
     def master_node_size(self):
-        """Gets the master_node_size of this CreateClusterReqV11.
+        r"""Gets the master_node_size of this CreateClusterReqV11.
 
         Master节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -442,7 +442,7 @@ class CreateClusterReqV11:
 
     @master_node_size.setter
     def master_node_size(self, master_node_size):
-        """Sets the master_node_size of this CreateClusterReqV11.
+        r"""Sets the master_node_size of this CreateClusterReqV11.
 
         Master节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -453,7 +453,7 @@ class CreateClusterReqV11:
 
     @property
     def core_node_size(self):
-        """Gets the core_node_size of this CreateClusterReqV11.
+        r"""Gets the core_node_size of this CreateClusterReqV11.
 
         Core节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -464,7 +464,7 @@ class CreateClusterReqV11:
 
     @core_node_size.setter
     def core_node_size(self, core_node_size):
-        """Sets the core_node_size of this CreateClusterReqV11.
+        r"""Sets the core_node_size of this CreateClusterReqV11.
 
         Core节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -475,7 +475,7 @@ class CreateClusterReqV11:
 
     @property
     def component_list(self):
-        """Gets the component_list of this CreateClusterReqV11.
+        r"""Gets the component_list of this CreateClusterReqV11.
 
         服务组件安装列表信息。
 
@@ -486,7 +486,7 @@ class CreateClusterReqV11:
 
     @component_list.setter
     def component_list(self, component_list):
-        """Sets the component_list of this CreateClusterReqV11.
+        r"""Sets the component_list of this CreateClusterReqV11.
 
         服务组件安装列表信息。
 
@@ -497,7 +497,7 @@ class CreateClusterReqV11:
 
     @property
     def available_zone_id(self):
-        """Gets the available_zone_id of this CreateClusterReqV11.
+        r"""Gets the available_zone_id of this CreateClusterReqV11.
 
         可用分区ID。  - 华北-北京一可用区1（cn-north-1a）：ae04cf9d61544df3806a3feeb401b204 - 华北-北京一可用区2（cn-north-1b）：d573142f24894ef3bd3664de068b44b0 - 华东-上海二可用区1（cn-east-2a）：72d50cedc49846b9b42c21495f38d81c - 华东-上海二可用区2（cn-east-2b）：38b0f7a602344246bcb0da47b5d548e7 - 华东-上海二可用区3（cn-east-2c）：5547fd6bf8f84bb5a7f9db062ad3d015 - 华南-广州可用区1（cn-south-1a）：34f5ff4865cf4ed6b270f15382ebdec5 - 华南-广州可用区2（cn-south-2b）：043c7e39ecb347a08dc8fcb6c35a274e - 华南-广州可用区3（cn-south-1c）：af1687643e8c4ec1b34b688e4e3b8901 - 华北-北京四可用区1（cn-north-4a）：effdcbc7d4d64a02aa1fa26b42f56533 - 华北-北京四可用区2（cn-north-4b）：a0865121f83b41cbafce65930a22a6e8 - 华北-北京四可用区3（cn-north-4c）：2dcb154ac2724a6d92e9bcc859657c1e
 
@@ -508,7 +508,7 @@ class CreateClusterReqV11:
 
     @available_zone_id.setter
     def available_zone_id(self, available_zone_id):
-        """Sets the available_zone_id of this CreateClusterReqV11.
+        r"""Sets the available_zone_id of this CreateClusterReqV11.
 
         可用分区ID。  - 华北-北京一可用区1（cn-north-1a）：ae04cf9d61544df3806a3feeb401b204 - 华北-北京一可用区2（cn-north-1b）：d573142f24894ef3bd3664de068b44b0 - 华东-上海二可用区1（cn-east-2a）：72d50cedc49846b9b42c21495f38d81c - 华东-上海二可用区2（cn-east-2b）：38b0f7a602344246bcb0da47b5d548e7 - 华东-上海二可用区3（cn-east-2c）：5547fd6bf8f84bb5a7f9db062ad3d015 - 华南-广州可用区1（cn-south-1a）：34f5ff4865cf4ed6b270f15382ebdec5 - 华南-广州可用区2（cn-south-2b）：043c7e39ecb347a08dc8fcb6c35a274e - 华南-广州可用区3（cn-south-1c）：af1687643e8c4ec1b34b688e4e3b8901 - 华北-北京四可用区1（cn-north-4a）：effdcbc7d4d64a02aa1fa26b42f56533 - 华北-北京四可用区2（cn-north-4b）：a0865121f83b41cbafce65930a22a6e8 - 华北-北京四可用区3（cn-north-4c）：2dcb154ac2724a6d92e9bcc859657c1e
 
@@ -519,7 +519,7 @@ class CreateClusterReqV11:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateClusterReqV11.
+        r"""Gets the vpc_id of this CreateClusterReqV11.
 
         子网所在VPC ID。 通过VPC管理控制台获取ID： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。   在“虚拟私有云”页面的列表中即可获取VPC ID。
 
@@ -530,7 +530,7 @@ class CreateClusterReqV11:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateClusterReqV11.
+        r"""Sets the vpc_id of this CreateClusterReqV11.
 
         子网所在VPC ID。 通过VPC管理控制台获取ID： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。   在“虚拟私有云”页面的列表中即可获取VPC ID。
 
@@ -541,7 +541,7 @@ class CreateClusterReqV11:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateClusterReqV11.
+        r"""Gets the subnet_id of this CreateClusterReqV11.
 
         子网ID。通过VPC管理控制台获取子网ID： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
 
@@ -552,7 +552,7 @@ class CreateClusterReqV11:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateClusterReqV11.
+        r"""Sets the subnet_id of this CreateClusterReqV11.
 
         子网ID。通过VPC管理控制台获取子网ID： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
 
@@ -563,7 +563,7 @@ class CreateClusterReqV11:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this CreateClusterReqV11.
+        r"""Gets the subnet_name of this CreateClusterReqV11.
 
         子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
 
@@ -574,7 +574,7 @@ class CreateClusterReqV11:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this CreateClusterReqV11.
+        r"""Sets the subnet_name of this CreateClusterReqV11.
 
         子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
 
@@ -585,7 +585,7 @@ class CreateClusterReqV11:
 
     @property
     def security_groups_id(self):
-        """Gets the security_groups_id of this CreateClusterReqV11.
+        r"""Gets the security_groups_id of this CreateClusterReqV11.
 
         集群安全组的ID。 - 当该ID为空时MRS后台会自己创建安全组，自动创建的安全组名称以mrs_{cluster_name}开头。 - 当该ID不为空时，表示使用固定安全组来创建集群，传入的ID必须是当前租户中包含的安全组ID，且该安全组中包含一条全部协议，全部端口，源地址为指定的管理面节点IP的入方向规则。
 
@@ -596,7 +596,7 @@ class CreateClusterReqV11:
 
     @security_groups_id.setter
     def security_groups_id(self, security_groups_id):
-        """Sets the security_groups_id of this CreateClusterReqV11.
+        r"""Sets the security_groups_id of this CreateClusterReqV11.
 
         集群安全组的ID。 - 当该ID为空时MRS后台会自己创建安全组，自动创建的安全组名称以mrs_{cluster_name}开头。 - 当该ID不为空时，表示使用固定安全组来创建集群，传入的ID必须是当前租户中包含的安全组ID，且该安全组中包含一条全部协议，全部端口，源地址为指定的管理面节点IP的入方向规则。
 
@@ -607,7 +607,7 @@ class CreateClusterReqV11:
 
     @property
     def add_jobs(self):
-        """Gets the add_jobs of this CreateClusterReqV11.
+        r"""Gets the add_jobs of this CreateClusterReqV11.
 
         创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
 
@@ -618,7 +618,7 @@ class CreateClusterReqV11:
 
     @add_jobs.setter
     def add_jobs(self, add_jobs):
-        """Sets the add_jobs of this CreateClusterReqV11.
+        r"""Sets the add_jobs of this CreateClusterReqV11.
 
         创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
 
@@ -629,7 +629,7 @@ class CreateClusterReqV11:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this CreateClusterReqV11.
+        r"""Gets the volume_size of this CreateClusterReqV11.
 
         Master和Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。可以根据如下应用场景合理选择磁盘存储空间大小： - 数据存储和计算分离，数据存储在OBS系统中，集群费用相对较低，计算性能不高，并且集群随时可以删除，建议数据计算不频繁场景下使用。 - 数据存储和计算不分离，数据存储在HDFS中，集群费用相对较高，计算性能高，集群需要长期存在，建议数据计算频繁场景下使用。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。 不建议使用该参数，详情请参考volume_type参数的说明。
 
@@ -640,7 +640,7 @@ class CreateClusterReqV11:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this CreateClusterReqV11.
+        r"""Sets the volume_size of this CreateClusterReqV11.
 
         Master和Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。可以根据如下应用场景合理选择磁盘存储空间大小： - 数据存储和计算分离，数据存储在OBS系统中，集群费用相对较低，计算性能不高，并且集群随时可以删除，建议数据计算不频繁场景下使用。 - 数据存储和计算不分离，数据存储在HDFS中，集群费用相对较高，计算性能高，集群需要长期存在，建议数据计算频繁场景下使用。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。 不建议使用该参数，详情请参考volume_type参数的说明。
 
@@ -651,7 +651,7 @@ class CreateClusterReqV11:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this CreateClusterReqV11.
+        r"""Gets the volume_type of this CreateClusterReqV11.
 
         Master和Core节点的磁盘存储类别，目前支持SATA、SAS、SSD和GPSSD。磁盘参数可以使用volume_type和volume_size表示，也可以使用多磁盘相关的参数表示。volume_type和volume_size这两个参数如果与多磁盘参数同时出现，系统优先读取volume_type和volume_size参数。建议使用多磁盘参数。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -662,7 +662,7 @@ class CreateClusterReqV11:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this CreateClusterReqV11.
+        r"""Sets the volume_type of this CreateClusterReqV11.
 
         Master和Core节点的磁盘存储类别，目前支持SATA、SAS、SSD和GPSSD。磁盘参数可以使用volume_type和volume_size表示，也可以使用多磁盘相关的参数表示。volume_type和volume_size这两个参数如果与多磁盘参数同时出现，系统优先读取volume_type和volume_size参数。建议使用多磁盘参数。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -673,7 +673,7 @@ class CreateClusterReqV11:
 
     @property
     def master_data_volume_type(self):
-        """Gets the master_data_volume_type of this CreateClusterReqV11.
+        r"""Gets the master_data_volume_type of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Master节点数据磁盘存储类别，目前支持SATA、SAS、SSD和GPSSD。
 
@@ -684,7 +684,7 @@ class CreateClusterReqV11:
 
     @master_data_volume_type.setter
     def master_data_volume_type(self, master_data_volume_type):
-        """Sets the master_data_volume_type of this CreateClusterReqV11.
+        r"""Sets the master_data_volume_type of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Master节点数据磁盘存储类别，目前支持SATA、SAS、SSD和GPSSD。
 
@@ -695,7 +695,7 @@ class CreateClusterReqV11:
 
     @property
     def master_data_volume_size(self):
-        """Gets the master_data_volume_size of this CreateClusterReqV11.
+        r"""Gets the master_data_volume_size of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Master节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -706,7 +706,7 @@ class CreateClusterReqV11:
 
     @master_data_volume_size.setter
     def master_data_volume_size(self, master_data_volume_size):
-        """Sets the master_data_volume_size of this CreateClusterReqV11.
+        r"""Sets the master_data_volume_size of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Master节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -717,7 +717,7 @@ class CreateClusterReqV11:
 
     @property
     def master_data_volume_count(self):
-        """Gets the master_data_volume_count of this CreateClusterReqV11.
+        r"""Gets the master_data_volume_count of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Master节点数据磁盘个数。取值只能是1。
 
@@ -728,7 +728,7 @@ class CreateClusterReqV11:
 
     @master_data_volume_count.setter
     def master_data_volume_count(self, master_data_volume_count):
-        """Sets the master_data_volume_count of this CreateClusterReqV11.
+        r"""Sets the master_data_volume_count of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Master节点数据磁盘个数。取值只能是1。
 
@@ -739,7 +739,7 @@ class CreateClusterReqV11:
 
     @property
     def core_data_volume_type(self):
-        """Gets the core_data_volume_type of this CreateClusterReqV11.
+        r"""Gets the core_data_volume_type of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Core节点数据磁盘存储类别，目前支持SATA、SAS、SSD和GPSSD。
 
@@ -750,7 +750,7 @@ class CreateClusterReqV11:
 
     @core_data_volume_type.setter
     def core_data_volume_type(self, core_data_volume_type):
-        """Sets the core_data_volume_type of this CreateClusterReqV11.
+        r"""Sets the core_data_volume_type of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Core节点数据磁盘存储类别，目前支持SATA、SAS、SSD和GPSSD。
 
@@ -761,7 +761,7 @@ class CreateClusterReqV11:
 
     @property
     def core_data_volume_size(self):
-        """Gets the core_data_volume_size of this CreateClusterReqV11.
+        r"""Gets the core_data_volume_size of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -772,7 +772,7 @@ class CreateClusterReqV11:
 
     @core_data_volume_size.setter
     def core_data_volume_size(self, core_data_volume_size):
-        """Sets the core_data_volume_size of this CreateClusterReqV11.
+        r"""Sets the core_data_volume_size of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -783,7 +783,7 @@ class CreateClusterReqV11:
 
     @property
     def core_data_volume_count(self):
-        """Gets the core_data_volume_count of this CreateClusterReqV11.
+        r"""Gets the core_data_volume_count of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～20
 
@@ -794,7 +794,7 @@ class CreateClusterReqV11:
 
     @core_data_volume_count.setter
     def core_data_volume_count(self, core_data_volume_count):
-        """Sets the core_data_volume_count of this CreateClusterReqV11.
+        r"""Sets the core_data_volume_count of this CreateClusterReqV11.
 
         该参数为多磁盘参数，表示Core节点数据磁盘个数。 取值范围：1～20
 
@@ -805,7 +805,7 @@ class CreateClusterReqV11:
 
     @property
     def task_node_groups(self):
-        """Gets the task_node_groups of this CreateClusterReqV11.
+        r"""Gets the task_node_groups of this CreateClusterReqV11.
 
         Task节点列表信息。
 
@@ -816,7 +816,7 @@ class CreateClusterReqV11:
 
     @task_node_groups.setter
     def task_node_groups(self, task_node_groups):
-        """Sets the task_node_groups of this CreateClusterReqV11.
+        r"""Sets the task_node_groups of this CreateClusterReqV11.
 
         Task节点列表信息。
 
@@ -827,7 +827,7 @@ class CreateClusterReqV11:
 
     @property
     def bootstrap_scripts(self):
-        """Gets the bootstrap_scripts of this CreateClusterReqV11.
+        r"""Gets the bootstrap_scripts of this CreateClusterReqV11.
 
         配置引导操作脚本信息。
 
@@ -838,7 +838,7 @@ class CreateClusterReqV11:
 
     @bootstrap_scripts.setter
     def bootstrap_scripts(self, bootstrap_scripts):
-        """Sets the bootstrap_scripts of this CreateClusterReqV11.
+        r"""Sets the bootstrap_scripts of this CreateClusterReqV11.
 
         配置引导操作脚本信息。
 
@@ -849,7 +849,7 @@ class CreateClusterReqV11:
 
     @property
     def node_public_cert_name(self):
-        """Gets the node_public_cert_name of this CreateClusterReqV11.
+        r"""Gets the node_public_cert_name of this CreateClusterReqV11.
 
         密钥对名称。用户可以使用密钥对方式登录集群节点。当“login_mode”配置为“1”时，请求消息体中包含node_public_cert_name字段。
 
@@ -860,7 +860,7 @@ class CreateClusterReqV11:
 
     @node_public_cert_name.setter
     def node_public_cert_name(self, node_public_cert_name):
-        """Sets the node_public_cert_name of this CreateClusterReqV11.
+        r"""Sets the node_public_cert_name of this CreateClusterReqV11.
 
         密钥对名称。用户可以使用密钥对方式登录集群节点。当“login_mode”配置为“1”时，请求消息体中包含node_public_cert_name字段。
 
@@ -871,7 +871,7 @@ class CreateClusterReqV11:
 
     @property
     def cluster_admin_secret(self):
-        """Gets the cluster_admin_secret of this CreateClusterReqV11.
+        r"""Gets the cluster_admin_secret of this CreateClusterReqV11.
 
         配置MRS Manager管理员用户的密码。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
@@ -882,7 +882,7 @@ class CreateClusterReqV11:
 
     @cluster_admin_secret.setter
     def cluster_admin_secret(self, cluster_admin_secret):
-        """Sets the cluster_admin_secret of this CreateClusterReqV11.
+        r"""Sets the cluster_admin_secret of this CreateClusterReqV11.
 
         配置MRS Manager管理员用户的密码。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
@@ -893,7 +893,7 @@ class CreateClusterReqV11:
 
     @property
     def cluster_master_secret(self):
-        """Gets the cluster_master_secret of this CreateClusterReqV11.
+        r"""Gets the cluster_master_secret of this CreateClusterReqV11.
 
         配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含4种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
@@ -904,7 +904,7 @@ class CreateClusterReqV11:
 
     @cluster_master_secret.setter
     def cluster_master_secret(self, cluster_master_secret):
-        """Sets the cluster_master_secret of this CreateClusterReqV11.
+        r"""Sets the cluster_master_secret of this CreateClusterReqV11.
 
         配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含4种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
@@ -915,7 +915,7 @@ class CreateClusterReqV11:
 
     @property
     def safe_mode(self):
-        """Gets the safe_mode of this CreateClusterReqV11.
+        r"""Gets the safe_mode of this CreateClusterReqV11.
 
         MRS集群运行模式。 - 0：普通集群，表示Kerberos认证关闭，用户可使用集群提供的所有功能。 - 1：安全集群，表示Kerberos认证开启，普通用户无权限使用MRS集群的“文件管理”和“作业管理”功能，并且无法查看Hadoop、Spark的作业记录以及集群资源使用情况。如果需要使用集群更多功能，需要找MRS Manager的管理员分配权限。
 
@@ -926,7 +926,7 @@ class CreateClusterReqV11:
 
     @safe_mode.setter
     def safe_mode(self, safe_mode):
-        """Sets the safe_mode of this CreateClusterReqV11.
+        r"""Sets the safe_mode of this CreateClusterReqV11.
 
         MRS集群运行模式。 - 0：普通集群，表示Kerberos认证关闭，用户可使用集群提供的所有功能。 - 1：安全集群，表示Kerberos认证开启，普通用户无权限使用MRS集群的“文件管理”和“作业管理”功能，并且无法查看Hadoop、Spark的作业记录以及集群资源使用情况。如果需要使用集群更多功能，需要找MRS Manager的管理员分配权限。
 
@@ -937,7 +937,7 @@ class CreateClusterReqV11:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this CreateClusterReqV11.
+        r"""Gets the cluster_type of this CreateClusterReqV11.
 
         集群类型。  默认值为0：分析集群。  说明：暂不支持通过接口方式创建混合集群。  枚举值： - 0：分析集群 - 1：流式集群
 
@@ -948,7 +948,7 @@ class CreateClusterReqV11:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this CreateClusterReqV11.
+        r"""Sets the cluster_type of this CreateClusterReqV11.
 
         集群类型。  默认值为0：分析集群。  说明：暂不支持通过接口方式创建混合集群。  枚举值： - 0：分析集群 - 1：流式集群
 
@@ -959,7 +959,7 @@ class CreateClusterReqV11:
 
     @property
     def log_collection(self):
-        """Gets the log_collection of this CreateClusterReqV11.
+        r"""Gets the log_collection of this CreateClusterReqV11.
 
         集群创建失败时，是否收集失败日志。  默认设置为1，将创建OBS桶仅用于MRS集群创建失败时的日志收集。  枚举值： - 0：不收集 - 1：收集
 
@@ -970,7 +970,7 @@ class CreateClusterReqV11:
 
     @log_collection.setter
     def log_collection(self, log_collection):
-        """Sets the log_collection of this CreateClusterReqV11.
+        r"""Sets the log_collection of this CreateClusterReqV11.
 
         集群创建失败时，是否收集失败日志。  默认设置为1，将创建OBS桶仅用于MRS集群创建失败时的日志收集。  枚举值： - 0：不收集 - 1：收集
 
@@ -981,7 +981,7 @@ class CreateClusterReqV11:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateClusterReqV11.
+        r"""Gets the enterprise_project_id of this CreateClusterReqV11.
 
         企业项目ID。  创建集群时，给集群绑定企业项目ID。  默认设置为0，表示为default企业项目。  获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
@@ -992,7 +992,7 @@ class CreateClusterReqV11:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateClusterReqV11.
+        r"""Sets the enterprise_project_id of this CreateClusterReqV11.
 
         企业项目ID。  创建集群时，给集群绑定企业项目ID。  默认设置为0，表示为default企业项目。  获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
@@ -1003,7 +1003,7 @@ class CreateClusterReqV11:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateClusterReqV11.
+        r"""Gets the tags of this CreateClusterReqV11.
 
         集群的标签信息。  同一个集群最多能使用10个tag，tag的名称（key）不能重复 标签的键/值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
 
@@ -1014,7 +1014,7 @@ class CreateClusterReqV11:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateClusterReqV11.
+        r"""Sets the tags of this CreateClusterReqV11.
 
         集群的标签信息。  同一个集群最多能使用10个tag，tag的名称（key）不能重复 标签的键/值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
 
@@ -1025,7 +1025,7 @@ class CreateClusterReqV11:
 
     @property
     def login_mode(self):
-        """Gets the login_mode of this CreateClusterReqV11.
+        r"""Gets the login_mode of this CreateClusterReqV11.
 
         集群登录方式。默认设置为1。  - 当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。 - 当“login_mode”配置为“1”时，请求消息体中包含node_public_cert_name字段。  枚举值： - 0：密码方式 - 1：密钥对方式
 
@@ -1036,7 +1036,7 @@ class CreateClusterReqV11:
 
     @login_mode.setter
     def login_mode(self, login_mode):
-        """Sets the login_mode of this CreateClusterReqV11.
+        r"""Sets the login_mode of this CreateClusterReqV11.
 
         集群登录方式。默认设置为1。  - 当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。 - 当“login_mode”配置为“1”时，请求消息体中包含node_public_cert_name字段。  枚举值： - 0：密码方式 - 1：密钥对方式
 
@@ -1047,7 +1047,7 @@ class CreateClusterReqV11:
 
     @property
     def node_groups(self):
-        """Gets the node_groups of this CreateClusterReqV11.
+        r"""Gets the node_groups of this CreateClusterReqV11.
 
         节点列表信息。  说明：如下参数和该参数任选一组进行配置即可。  master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
 
@@ -1058,7 +1058,7 @@ class CreateClusterReqV11:
 
     @node_groups.setter
     def node_groups(self, node_groups):
-        """Sets the node_groups of this CreateClusterReqV11.
+        r"""Sets the node_groups of this CreateClusterReqV11.
 
         节点列表信息。  说明：如下参数和该参数任选一组进行配置即可。  master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
 

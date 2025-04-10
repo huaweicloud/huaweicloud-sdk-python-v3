@@ -33,7 +33,7 @@ class ShowCategoryListRequest:
     }
 
     def __init__(self, page_num=None, page_size=None, scene_name=None, support_ide=None, type=None):
-        """ShowCategoryListRequest
+        r"""ShowCategoryListRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowCategoryListRequest:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ShowCategoryListRequest.
+        r"""Gets the page_num of this ShowCategoryListRequest.
 
         页码
 
@@ -82,7 +82,7 @@ class ShowCategoryListRequest:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ShowCategoryListRequest.
+        r"""Sets the page_num of this ShowCategoryListRequest.
 
         页码
 
@@ -93,7 +93,7 @@ class ShowCategoryListRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowCategoryListRequest.
+        r"""Gets the page_size of this ShowCategoryListRequest.
 
         分页大小
 
@@ -104,7 +104,7 @@ class ShowCategoryListRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowCategoryListRequest.
+        r"""Sets the page_size of this ShowCategoryListRequest.
 
         分页大小
 
@@ -115,7 +115,7 @@ class ShowCategoryListRequest:
 
     @property
     def scene_name(self):
-        """Gets the scene_name of this ShowCategoryListRequest.
+        r"""Gets the scene_name of this ShowCategoryListRequest.
 
         场景名称
 
@@ -126,7 +126,7 @@ class ShowCategoryListRequest:
 
     @scene_name.setter
     def scene_name(self, scene_name):
-        """Sets the scene_name of this ShowCategoryListRequest.
+        r"""Sets the scene_name of this ShowCategoryListRequest.
 
         场景名称
 
@@ -137,7 +137,7 @@ class ShowCategoryListRequest:
 
     @property
     def support_ide(self):
-        """Gets the support_ide of this ShowCategoryListRequest.
+        r"""Gets the support_ide of this ShowCategoryListRequest.
 
         支持的ide
 
@@ -148,7 +148,7 @@ class ShowCategoryListRequest:
 
     @support_ide.setter
     def support_ide(self, support_ide):
-        """Sets the support_ide of this ShowCategoryListRequest.
+        r"""Sets the support_ide of this ShowCategoryListRequest.
 
         支持的ide
 
@@ -159,7 +159,7 @@ class ShowCategoryListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowCategoryListRequest.
+        r"""Gets the type of this ShowCategoryListRequest.
 
         数据来源
 
@@ -170,7 +170,7 @@ class ShowCategoryListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowCategoryListRequest.
+        r"""Sets the type of this ShowCategoryListRequest.
 
         数据来源
 

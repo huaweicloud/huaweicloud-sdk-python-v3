@@ -27,7 +27,7 @@ class BatchUpdateTargetOfPolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None, body=None):
-        """BatchUpdateTargetOfPolicyGroupRequest
+        r"""BatchUpdateTargetOfPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateTargetOfPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this BatchUpdateTargetOfPolicyGroupRequest.
+        r"""Gets the policy_group_id of this BatchUpdateTargetOfPolicyGroupRequest.
 
         策略组id。
 
@@ -60,7 +60,7 @@ class BatchUpdateTargetOfPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this BatchUpdateTargetOfPolicyGroupRequest.
+        r"""Sets the policy_group_id of this BatchUpdateTargetOfPolicyGroupRequest.
 
         策略组id。
 
@@ -71,7 +71,7 @@ class BatchUpdateTargetOfPolicyGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateTargetOfPolicyGroupRequest.
+        r"""Gets the body of this BatchUpdateTargetOfPolicyGroupRequest.
 
         :return: The body of this BatchUpdateTargetOfPolicyGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ModifyPolicyTargetReq`
@@ -80,7 +80,7 @@ class BatchUpdateTargetOfPolicyGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateTargetOfPolicyGroupRequest.
+        r"""Sets the body of this BatchUpdateTargetOfPolicyGroupRequest.
 
         :param body: The body of this BatchUpdateTargetOfPolicyGroupRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ModifyPolicyTargetReq`

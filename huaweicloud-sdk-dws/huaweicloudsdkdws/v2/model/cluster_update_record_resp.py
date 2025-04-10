@@ -41,7 +41,7 @@ class ClusterUpdateRecordResp:
     }
 
     def __init__(self, item_id=None, status=None, record_type=None, from_version=None, to_version=None, start_time=None, end_time=None, job_id=None, failed_reason=None):
-        """ClusterUpdateRecordResp
+        r"""ClusterUpdateRecordResp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def item_id(self):
-        """Gets the item_id of this ClusterUpdateRecordResp.
+        r"""Gets the item_id of this ClusterUpdateRecordResp.
 
         升级项目ID
 
@@ -110,7 +110,7 @@ class ClusterUpdateRecordResp:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this ClusterUpdateRecordResp.
+        r"""Sets the item_id of this ClusterUpdateRecordResp.
 
         升级项目ID
 
@@ -121,7 +121,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def status(self):
-        """Gets the status of this ClusterUpdateRecordResp.
+        r"""Gets the status of this ClusterUpdateRecordResp.
 
         升级状态
 
@@ -132,7 +132,7 @@ class ClusterUpdateRecordResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterUpdateRecordResp.
+        r"""Sets the status of this ClusterUpdateRecordResp.
 
         升级状态
 
@@ -143,7 +143,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def record_type(self):
-        """Gets the record_type of this ClusterUpdateRecordResp.
+        r"""Gets the record_type of this ClusterUpdateRecordResp.
 
         升级类型
 
@@ -154,7 +154,7 @@ class ClusterUpdateRecordResp:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this ClusterUpdateRecordResp.
+        r"""Sets the record_type of this ClusterUpdateRecordResp.
 
         升级类型
 
@@ -165,7 +165,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def from_version(self):
-        """Gets the from_version of this ClusterUpdateRecordResp.
+        r"""Gets the from_version of this ClusterUpdateRecordResp.
 
         升级前版本
 
@@ -176,7 +176,7 @@ class ClusterUpdateRecordResp:
 
     @from_version.setter
     def from_version(self, from_version):
-        """Sets the from_version of this ClusterUpdateRecordResp.
+        r"""Sets the from_version of this ClusterUpdateRecordResp.
 
         升级前版本
 
@@ -187,7 +187,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def to_version(self):
-        """Gets the to_version of this ClusterUpdateRecordResp.
+        r"""Gets the to_version of this ClusterUpdateRecordResp.
 
         目标版本
 
@@ -198,7 +198,7 @@ class ClusterUpdateRecordResp:
 
     @to_version.setter
     def to_version(self, to_version):
-        """Sets the to_version of this ClusterUpdateRecordResp.
+        r"""Sets the to_version of this ClusterUpdateRecordResp.
 
         目标版本
 
@@ -209,7 +209,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ClusterUpdateRecordResp.
+        r"""Gets the start_time of this ClusterUpdateRecordResp.
 
         开始时间
 
@@ -220,7 +220,7 @@ class ClusterUpdateRecordResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ClusterUpdateRecordResp.
+        r"""Sets the start_time of this ClusterUpdateRecordResp.
 
         开始时间
 
@@ -231,7 +231,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ClusterUpdateRecordResp.
+        r"""Gets the end_time of this ClusterUpdateRecordResp.
 
         结束时间
 
@@ -242,7 +242,7 @@ class ClusterUpdateRecordResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ClusterUpdateRecordResp.
+        r"""Sets the end_time of this ClusterUpdateRecordResp.
 
         结束时间
 
@@ -253,7 +253,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ClusterUpdateRecordResp.
+        r"""Gets the job_id of this ClusterUpdateRecordResp.
 
         升级任务ID
 
@@ -264,7 +264,7 @@ class ClusterUpdateRecordResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ClusterUpdateRecordResp.
+        r"""Sets the job_id of this ClusterUpdateRecordResp.
 
         升级任务ID
 
@@ -275,7 +275,7 @@ class ClusterUpdateRecordResp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ClusterUpdateRecordResp.
+        r"""Gets the failed_reason of this ClusterUpdateRecordResp.
 
         失败原因
 
@@ -286,7 +286,7 @@ class ClusterUpdateRecordResp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ClusterUpdateRecordResp.
+        r"""Sets the failed_reason of this ClusterUpdateRecordResp.
 
         失败原因
 

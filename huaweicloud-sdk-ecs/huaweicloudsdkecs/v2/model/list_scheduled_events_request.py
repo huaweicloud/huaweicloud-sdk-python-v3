@@ -39,7 +39,7 @@ class ListScheduledEventsRequest:
     }
 
     def __init__(self, marker=None, id=None, instance_id=None, type=None, state=None, publish_since=None, publish_until=None, limit=None):
-        """ListScheduledEventsRequest
+        r"""ListScheduledEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListScheduledEventsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListScheduledEventsRequest.
+        r"""Gets the marker of this ListScheduledEventsRequest.
 
         从marker指定的事件的下一条数据开始查询。
 
@@ -103,7 +103,7 @@ class ListScheduledEventsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListScheduledEventsRequest.
+        r"""Sets the marker of this ListScheduledEventsRequest.
 
         从marker指定的事件的下一条数据开始查询。
 
@@ -114,7 +114,7 @@ class ListScheduledEventsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListScheduledEventsRequest.
+        r"""Gets the id of this ListScheduledEventsRequest.
 
         事件ID
 
@@ -125,7 +125,7 @@ class ListScheduledEventsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListScheduledEventsRequest.
+        r"""Sets the id of this ListScheduledEventsRequest.
 
         事件ID
 
@@ -136,7 +136,7 @@ class ListScheduledEventsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListScheduledEventsRequest.
+        r"""Gets the instance_id of this ListScheduledEventsRequest.
 
         实例ID
 
@@ -147,7 +147,7 @@ class ListScheduledEventsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListScheduledEventsRequest.
+        r"""Sets the instance_id of this ListScheduledEventsRequest.
 
         实例ID
 
@@ -158,7 +158,7 @@ class ListScheduledEventsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListScheduledEventsRequest.
+        r"""Gets the type of this ListScheduledEventsRequest.
 
         事件类型
 
@@ -169,7 +169,7 @@ class ListScheduledEventsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListScheduledEventsRequest.
+        r"""Sets the type of this ListScheduledEventsRequest.
 
         事件类型
 
@@ -180,7 +180,7 @@ class ListScheduledEventsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListScheduledEventsRequest.
+        r"""Gets the state of this ListScheduledEventsRequest.
 
         事件状态
 
@@ -191,7 +191,7 @@ class ListScheduledEventsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListScheduledEventsRequest.
+        r"""Sets the state of this ListScheduledEventsRequest.
 
         事件状态
 
@@ -202,7 +202,7 @@ class ListScheduledEventsRequest:
 
     @property
     def publish_since(self):
-        """Gets the publish_since of this ListScheduledEventsRequest.
+        r"""Gets the publish_since of this ListScheduledEventsRequest.
 
         事件发布开始时间
 
@@ -213,7 +213,7 @@ class ListScheduledEventsRequest:
 
     @publish_since.setter
     def publish_since(self, publish_since):
-        """Sets the publish_since of this ListScheduledEventsRequest.
+        r"""Sets the publish_since of this ListScheduledEventsRequest.
 
         事件发布开始时间
 
@@ -224,7 +224,7 @@ class ListScheduledEventsRequest:
 
     @property
     def publish_until(self):
-        """Gets the publish_until of this ListScheduledEventsRequest.
+        r"""Gets the publish_until of this ListScheduledEventsRequest.
 
         事件发布截至时间
 
@@ -235,7 +235,7 @@ class ListScheduledEventsRequest:
 
     @publish_until.setter
     def publish_until(self, publish_until):
-        """Sets the publish_until of this ListScheduledEventsRequest.
+        r"""Sets the publish_until of this ListScheduledEventsRequest.
 
         事件发布截至时间
 
@@ -246,7 +246,7 @@ class ListScheduledEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduledEventsRequest.
+        r"""Gets the limit of this ListScheduledEventsRequest.
 
         每页显示的条目数量
 
@@ -257,7 +257,7 @@ class ListScheduledEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduledEventsRequest.
+        r"""Sets the limit of this ListScheduledEventsRequest.
 
         每页显示的条目数量
 

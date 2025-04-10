@@ -28,7 +28,7 @@ class ShowExtensionEvaluationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ShowExtensionEvaluationResponse
+        r"""ShowExtensionEvaluationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowExtensionEvaluationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowExtensionEvaluationResponse.
+        r"""Gets the result of this ShowExtensionEvaluationResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class ShowExtensionEvaluationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowExtensionEvaluationResponse.
+        r"""Sets the result of this ShowExtensionEvaluationResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class ShowExtensionEvaluationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowExtensionEvaluationResponse.
+        r"""Gets the status of this ShowExtensionEvaluationResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class ShowExtensionEvaluationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowExtensionEvaluationResponse.
+        r"""Sets the status of this ShowExtensionEvaluationResponse.
 
         状态
 

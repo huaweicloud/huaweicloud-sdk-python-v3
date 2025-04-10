@@ -27,7 +27,7 @@ class DebugDataconnectionRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """DebugDataconnectionRequest
+        r"""DebugDataconnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DebugDataconnectionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DebugDataconnectionRequest.
+        r"""Gets the workspace of this DebugDataconnectionRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class DebugDataconnectionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DebugDataconnectionRequest.
+        r"""Sets the workspace of this DebugDataconnectionRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class DebugDataconnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DebugDataconnectionRequest.
+        r"""Gets the body of this DebugDataconnectionRequest.
 
         :return: The body of this DebugDataconnectionRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourceVo`
@@ -80,7 +80,7 @@ class DebugDataconnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DebugDataconnectionRequest.
+        r"""Sets the body of this DebugDataconnectionRequest.
 
         :param body: The body of this DebugDataconnectionRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourceVo`

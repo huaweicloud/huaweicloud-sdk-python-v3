@@ -39,7 +39,7 @@ class CreateInstance:
     }
 
     def __init__(self, instance_type=None, flavor=None, name=None, charge_info=None, description=None, enterprise_project_id=None, tags=None, additional_params=None):
-        """CreateInstance
+        r"""CreateInstance
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreateInstance:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this CreateInstance.
+        r"""Gets the instance_type of this CreateInstance.
 
         **参数说明**：创建的实例类型。实例类型说明参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -99,7 +99,7 @@ class CreateInstance:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this CreateInstance.
+        r"""Sets the instance_type of this CreateInstance.
 
         **参数说明**：创建的实例类型。实例类型说明参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -110,7 +110,7 @@ class CreateInstance:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateInstance.
+        r"""Gets the flavor of this CreateInstance.
 
         :return: The flavor of this CreateInstance.
         :rtype: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -119,7 +119,7 @@ class CreateInstance:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateInstance.
+        r"""Sets the flavor of this CreateInstance.
 
         :param flavor: The flavor of this CreateInstance.
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -128,7 +128,7 @@ class CreateInstance:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstance.
+        r"""Gets the name of this CreateInstance.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -139,7 +139,7 @@ class CreateInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstance.
+        r"""Sets the name of this CreateInstance.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -150,7 +150,7 @@ class CreateInstance:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateInstance.
+        r"""Gets the charge_info of this CreateInstance.
 
         :return: The charge_info of this CreateInstance.
         :rtype: :class:`huaweicloudsdkiotdm.v5.ChargeInfo`
@@ -159,7 +159,7 @@ class CreateInstance:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateInstance.
+        r"""Sets the charge_info of this CreateInstance.
 
         :param charge_info: The charge_info of this CreateInstance.
         :type charge_info: :class:`huaweicloudsdkiotdm.v5.ChargeInfo`
@@ -168,7 +168,7 @@ class CreateInstance:
 
     @property
     def description(self):
-        """Gets the description of this CreateInstance.
+        r"""Gets the description of this CreateInstance.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
 
@@ -179,7 +179,7 @@ class CreateInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateInstance.
+        r"""Sets the description of this CreateInstance.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
 
@@ -190,7 +190,7 @@ class CreateInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstance.
+        r"""Gets the enterprise_project_id of this CreateInstance.
 
         **参数说明**：企业项目Id。此字段填写明确的企业项目Id或者0(表示默认企业项目Id)时支持企业项目特性。可以企业项目管理服务中获取。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -201,7 +201,7 @@ class CreateInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstance.
+        r"""Sets the enterprise_project_id of this CreateInstance.
 
         **参数说明**：企业项目Id。此字段填写明确的企业项目Id或者0(表示默认企业项目Id)时支持企业项目特性。可以企业项目管理服务中获取。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -212,7 +212,7 @@ class CreateInstance:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstance.
+        r"""Gets the tags of this CreateInstance.
 
         **参数说明**：设备接入实例的标签信息。 
 
@@ -223,7 +223,7 @@ class CreateInstance:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstance.
+        r"""Sets the tags of this CreateInstance.
 
         **参数说明**：设备接入实例的标签信息。 
 
@@ -234,7 +234,7 @@ class CreateInstance:
 
     @property
     def additional_params(self):
-        """Gets the additional_params of this CreateInstance.
+        r"""Gets the additional_params of this CreateInstance.
 
         :return: The additional_params of this CreateInstance.
         :rtype: :class:`huaweicloudsdkiotdm.v5.AdditionalParams`
@@ -243,7 +243,7 @@ class CreateInstance:
 
     @additional_params.setter
     def additional_params(self, additional_params):
-        """Sets the additional_params of this CreateInstance.
+        r"""Sets the additional_params of this CreateInstance.
 
         :param additional_params: The additional_params of this CreateInstance.
         :type additional_params: :class:`huaweicloudsdkiotdm.v5.AdditionalParams`

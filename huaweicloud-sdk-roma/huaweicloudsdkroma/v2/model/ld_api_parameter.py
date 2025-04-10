@@ -33,7 +33,7 @@ class LdApiParameter:
     }
 
     def __init__(self, name=None, _in=None, default=None, description=None, required=None):
-        """LdApiParameter
+        r"""LdApiParameter
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class LdApiParameter:
 
     @property
     def name(self):
-        """Gets the name of this LdApiParameter.
+        r"""Gets the name of this LdApiParameter.
 
         参数名称： - 参数位于Headers、 Parameters时，用户自行定义，支持英文、数字、点、中划线、下划线，且需要英文开头，不区分大小写。 - 参数位于Body时候，参数以application/json、application/xml、application/text为名，但实际是以请求body里的键值对作为参数名和参数值，比如请求消息样例，参数名为application/json，参数值为{\\\"table\\\":\\\"apic01\\\",\\\"id\\\":\\\"1\\\"}，后端取table：apic01，id：1这两个键值对作为入参。 - 注意：定义参数不要重名，否则会覆盖掉，当Headers、Parameters重复时候，Parameters会被覆盖，当Parameters和Body里的键值对重复时候，Parameters会被覆盖。
 
@@ -80,7 +80,7 @@ class LdApiParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LdApiParameter.
+        r"""Sets the name of this LdApiParameter.
 
         参数名称： - 参数位于Headers、 Parameters时，用户自行定义，支持英文、数字、点、中划线、下划线，且需要英文开头，不区分大小写。 - 参数位于Body时候，参数以application/json、application/xml、application/text为名，但实际是以请求body里的键值对作为参数名和参数值，比如请求消息样例，参数名为application/json，参数值为{\\\"table\\\":\\\"apic01\\\",\\\"id\\\":\\\"1\\\"}，后端取table：apic01，id：1这两个键值对作为入参。 - 注意：定义参数不要重名，否则会覆盖掉，当Headers、Parameters重复时候，Parameters会被覆盖，当Parameters和Body里的键值对重复时候，Parameters会被覆盖。
 
@@ -91,7 +91,7 @@ class LdApiParameter:
 
     @property
     def _in(self):
-        """Gets the _in of this LdApiParameter.
+        r"""Gets the _in of this LdApiParameter.
 
         该参数在调用API时候所放的位置： - Headers ：放于请求头 - Parameters ：放于请求参数 - Body：放于请求体
 
@@ -102,7 +102,7 @@ class LdApiParameter:
 
     @_in.setter
     def _in(self, _in):
-        """Sets the _in of this LdApiParameter.
+        r"""Sets the _in of this LdApiParameter.
 
         该参数在调用API时候所放的位置： - Headers ：放于请求头 - Parameters ：放于请求参数 - Body：放于请求体
 
@@ -113,7 +113,7 @@ class LdApiParameter:
 
     @property
     def default(self):
-        """Gets the default of this LdApiParameter.
+        r"""Gets the default of this LdApiParameter.
 
         参数默认值
 
@@ -124,7 +124,7 @@ class LdApiParameter:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this LdApiParameter.
+        r"""Sets the default of this LdApiParameter.
 
         参数默认值
 
@@ -135,7 +135,7 @@ class LdApiParameter:
 
     @property
     def description(self):
-        """Gets the description of this LdApiParameter.
+        r"""Gets the description of this LdApiParameter.
 
         参数描述  不支持<，>字符
 
@@ -146,7 +146,7 @@ class LdApiParameter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LdApiParameter.
+        r"""Sets the description of this LdApiParameter.
 
         参数描述  不支持<，>字符
 
@@ -157,7 +157,7 @@ class LdApiParameter:
 
     @property
     def required(self):
-        """Gets the required of this LdApiParameter.
+        r"""Gets the required of this LdApiParameter.
 
         参数是否必须。true：必须，false：不必须
 
@@ -168,7 +168,7 @@ class LdApiParameter:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this LdApiParameter.
+        r"""Sets the required of this LdApiParameter.
 
         参数是否必须。true：必须，false：不必须
 

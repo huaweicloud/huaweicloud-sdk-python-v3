@@ -27,7 +27,7 @@ class ModifyInstancePasswordBody:
     }
 
     def __init__(self, old_password=None, new_password=None):
-        """ModifyInstancePasswordBody
+        r"""ModifyInstancePasswordBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyInstancePasswordBody:
 
     @property
     def old_password(self):
-        """Gets the old_password of this ModifyInstancePasswordBody.
+        r"""Gets the old_password of this ModifyInstancePasswordBody.
 
         旧密码
 
@@ -59,7 +59,7 @@ class ModifyInstancePasswordBody:
 
     @old_password.setter
     def old_password(self, old_password):
-        """Sets the old_password of this ModifyInstancePasswordBody.
+        r"""Sets the old_password of this ModifyInstancePasswordBody.
 
         旧密码
 
@@ -70,7 +70,7 @@ class ModifyInstancePasswordBody:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ModifyInstancePasswordBody.
+        r"""Gets the new_password of this ModifyInstancePasswordBody.
 
         新密码
 
@@ -81,7 +81,7 @@ class ModifyInstancePasswordBody:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ModifyInstancePasswordBody.
+        r"""Sets the new_password of this ModifyInstancePasswordBody.
 
         新密码
 

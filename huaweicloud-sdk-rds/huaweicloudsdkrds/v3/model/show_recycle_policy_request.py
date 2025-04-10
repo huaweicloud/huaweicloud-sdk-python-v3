@@ -25,7 +25,7 @@ class ShowRecyclePolicyRequest:
     }
 
     def __init__(self, x_language=None):
-        """ShowRecyclePolicyRequest
+        r"""ShowRecyclePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowRecyclePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowRecyclePolicyRequest.
+        r"""Gets the x_language of this ShowRecyclePolicyRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ShowRecyclePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowRecyclePolicyRequest.
+        r"""Sets the x_language of this ShowRecyclePolicyRequest.
 
         语言
 

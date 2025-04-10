@@ -32,7 +32,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
     }
 
     def __init__(self, key_rotation_enabled=None, rotation_interval=None, last_rotation_time=None, number_of_rotations=None):
-        """ShowKeyRotationStatusResponse
+        r"""ShowKeyRotationStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @property
     def key_rotation_enabled(self):
-        """Gets the key_rotation_enabled of this ShowKeyRotationStatusResponse.
+        r"""Gets the key_rotation_enabled of this ShowKeyRotationStatusResponse.
 
         密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
 
@@ -76,7 +76,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @key_rotation_enabled.setter
     def key_rotation_enabled(self, key_rotation_enabled):
-        """Sets the key_rotation_enabled of this ShowKeyRotationStatusResponse.
+        r"""Sets the key_rotation_enabled of this ShowKeyRotationStatusResponse.
 
         密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
 
@@ -87,7 +87,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @property
     def rotation_interval(self):
-        """Gets the rotation_interval of this ShowKeyRotationStatusResponse.
+        r"""Gets the rotation_interval of this ShowKeyRotationStatusResponse.
 
         轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
 
@@ -98,7 +98,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @rotation_interval.setter
     def rotation_interval(self, rotation_interval):
-        """Sets the rotation_interval of this ShowKeyRotationStatusResponse.
+        r"""Sets the rotation_interval of this ShowKeyRotationStatusResponse.
 
         轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
 
@@ -109,7 +109,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @property
     def last_rotation_time(self):
-        """Gets the last_rotation_time of this ShowKeyRotationStatusResponse.
+        r"""Gets the last_rotation_time of this ShowKeyRotationStatusResponse.
 
         上一次密钥轮换时间。时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -120,7 +120,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @last_rotation_time.setter
     def last_rotation_time(self, last_rotation_time):
-        """Sets the last_rotation_time of this ShowKeyRotationStatusResponse.
+        r"""Sets the last_rotation_time of this ShowKeyRotationStatusResponse.
 
         上一次密钥轮换时间。时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -131,7 +131,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @property
     def number_of_rotations(self):
-        """Gets the number_of_rotations of this ShowKeyRotationStatusResponse.
+        r"""Gets the number_of_rotations of this ShowKeyRotationStatusResponse.
 
         密钥轮换次数。
 
@@ -142,7 +142,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
 
     @number_of_rotations.setter
     def number_of_rotations(self, number_of_rotations):
-        """Sets the number_of_rotations of this ShowKeyRotationStatusResponse.
+        r"""Sets the number_of_rotations of this ShowKeyRotationStatusResponse.
 
         密钥轮换次数。
 

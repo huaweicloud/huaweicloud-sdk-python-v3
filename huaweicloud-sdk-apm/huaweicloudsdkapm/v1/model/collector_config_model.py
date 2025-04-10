@@ -27,7 +27,7 @@ class CollectorConfigModel:
     }
 
     def __init__(self, line_view_config=None, detail_view_config=None):
-        """CollectorConfigModel
+        r"""CollectorConfigModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CollectorConfigModel:
 
     @property
     def line_view_config(self):
-        """Gets the line_view_config of this CollectorConfigModel.
+        r"""Gets the line_view_config of this CollectorConfigModel.
 
         :return: The line_view_config of this CollectorConfigModel.
         :rtype: :class:`huaweicloudsdkapm.v1.LineViewConfigModel`
@@ -59,7 +59,7 @@ class CollectorConfigModel:
 
     @line_view_config.setter
     def line_view_config(self, line_view_config):
-        """Sets the line_view_config of this CollectorConfigModel.
+        r"""Sets the line_view_config of this CollectorConfigModel.
 
         :param line_view_config: The line_view_config of this CollectorConfigModel.
         :type line_view_config: :class:`huaweicloudsdkapm.v1.LineViewConfigModel`
@@ -68,7 +68,7 @@ class CollectorConfigModel:
 
     @property
     def detail_view_config(self):
-        """Gets the detail_view_config of this CollectorConfigModel.
+        r"""Gets the detail_view_config of this CollectorConfigModel.
 
         :return: The detail_view_config of this CollectorConfigModel.
         :rtype: :class:`huaweicloudsdkapm.v1.DetailViewConfigModel`
@@ -77,7 +77,7 @@ class CollectorConfigModel:
 
     @detail_view_config.setter
     def detail_view_config(self, detail_view_config):
-        """Sets the detail_view_config of this CollectorConfigModel.
+        r"""Sets the detail_view_config of this CollectorConfigModel.
 
         :param detail_view_config: The detail_view_config of this CollectorConfigModel.
         :type detail_view_config: :class:`huaweicloudsdkapm.v1.DetailViewConfigModel`

@@ -27,7 +27,7 @@ class IssueCertificateAuthorityCertificateRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """IssueCertificateAuthorityCertificateRequest
+        r"""IssueCertificateAuthorityCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IssueCertificateAuthorityCertificateRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this IssueCertificateAuthorityCertificateRequest.
+        r"""Gets the ca_id of this IssueCertificateAuthorityCertificateRequest.
 
         所要激活的从属CA证书ID。
 
@@ -60,7 +60,7 @@ class IssueCertificateAuthorityCertificateRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this IssueCertificateAuthorityCertificateRequest.
+        r"""Sets the ca_id of this IssueCertificateAuthorityCertificateRequest.
 
         所要激活的从属CA证书ID。
 
@@ -71,7 +71,7 @@ class IssueCertificateAuthorityCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this IssueCertificateAuthorityCertificateRequest.
+        r"""Gets the body of this IssueCertificateAuthorityCertificateRequest.
 
         :return: The body of this IssueCertificateAuthorityCertificateRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateRequestBody`
@@ -80,7 +80,7 @@ class IssueCertificateAuthorityCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this IssueCertificateAuthorityCertificateRequest.
+        r"""Sets the body of this IssueCertificateAuthorityCertificateRequest.
 
         :param body: The body of this IssueCertificateAuthorityCertificateRequest.
         :type body: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateRequestBody`

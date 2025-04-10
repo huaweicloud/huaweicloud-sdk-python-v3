@@ -25,7 +25,7 @@ class CreateWholeImageRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWholeImageRequest
+        r"""CreateWholeImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateWholeImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateWholeImageRequest.
+        r"""Gets the body of this CreateWholeImageRequest.
 
         :return: The body of this CreateWholeImageRequest.
         :rtype: :class:`huaweicloudsdkims.v2.CreateWholeImageRequestBody`
@@ -52,7 +52,7 @@ class CreateWholeImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateWholeImageRequest.
+        r"""Sets the body of this CreateWholeImageRequest.
 
         :param body: The body of this CreateWholeImageRequest.
         :type body: :class:`huaweicloudsdkims.v2.CreateWholeImageRequestBody`

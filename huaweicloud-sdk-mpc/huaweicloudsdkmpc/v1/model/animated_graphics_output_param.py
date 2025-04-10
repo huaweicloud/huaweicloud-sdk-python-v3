@@ -35,7 +35,7 @@ class AnimatedGraphicsOutputParam:
     }
 
     def __init__(self, format=None, width=None, height=None, start=None, end=None, frame_rate=None):
-        """AnimatedGraphicsOutputParam
+        r"""AnimatedGraphicsOutputParam
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class AnimatedGraphicsOutputParam:
 
     @property
     def format(self):
-        """Gets the format of this AnimatedGraphicsOutputParam.
+        r"""Gets the format of this AnimatedGraphicsOutputParam.
 
         动图格式，目前仅支持取值 gif 
 
@@ -84,7 +84,7 @@ class AnimatedGraphicsOutputParam:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this AnimatedGraphicsOutputParam.
+        r"""Sets the format of this AnimatedGraphicsOutputParam.
 
         动图格式，目前仅支持取值 gif 
 
@@ -95,7 +95,7 @@ class AnimatedGraphicsOutputParam:
 
     @property
     def width(self):
-        """Gets the width of this AnimatedGraphicsOutputParam.
+        r"""Gets the width of this AnimatedGraphicsOutputParam.
 
         输出动图的宽。  取值范围：0，-1或[32,3840]之间2的倍数。  >- 若设置为-1， 则宽根据高来自适应，此时“height”不能取-1或0。 >- 若设置为0，则取原始视频的宽，此时“height”只能取0。 
 
@@ -106,7 +106,7 @@ class AnimatedGraphicsOutputParam:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this AnimatedGraphicsOutputParam.
+        r"""Sets the width of this AnimatedGraphicsOutputParam.
 
         输出动图的宽。  取值范围：0，-1或[32,3840]之间2的倍数。  >- 若设置为-1， 则宽根据高来自适应，此时“height”不能取-1或0。 >- 若设置为0，则取原始视频的宽，此时“height”只能取0。 
 
@@ -117,7 +117,7 @@ class AnimatedGraphicsOutputParam:
 
     @property
     def height(self):
-        """Gets the height of this AnimatedGraphicsOutputParam.
+        r"""Gets the height of this AnimatedGraphicsOutputParam.
 
         输出动图的高。  取值范围：0，-1或[32,2160]之间2的倍数。  >- 若设置为-1， 则高根据宽来自适应，此时“width”不能取-1或0。 >- 若设置为0，则取原始视频的高，此时“width”只能取0。 
 
@@ -128,7 +128,7 @@ class AnimatedGraphicsOutputParam:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this AnimatedGraphicsOutputParam.
+        r"""Sets the height of this AnimatedGraphicsOutputParam.
 
         输出动图的高。  取值范围：0，-1或[32,2160]之间2的倍数。  >- 若设置为-1， 则高根据宽来自适应，此时“width”不能取-1或0。 >- 若设置为0，则取原始视频的高，此时“width”只能取0。 
 
@@ -139,7 +139,7 @@ class AnimatedGraphicsOutputParam:
 
     @property
     def start(self):
-        """Gets the start of this AnimatedGraphicsOutputParam.
+        r"""Gets the start of this AnimatedGraphicsOutputParam.
 
         起始时间，单位：毫秒 
 
@@ -150,7 +150,7 @@ class AnimatedGraphicsOutputParam:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this AnimatedGraphicsOutputParam.
+        r"""Sets the start of this AnimatedGraphicsOutputParam.
 
         起始时间，单位：毫秒 
 
@@ -161,7 +161,7 @@ class AnimatedGraphicsOutputParam:
 
     @property
     def end(self):
-        """Gets the end of this AnimatedGraphicsOutputParam.
+        r"""Gets the end of this AnimatedGraphicsOutputParam.
 
         结束时间。  单位：毫秒。  end、start差值最多60秒。 
 
@@ -172,7 +172,7 @@ class AnimatedGraphicsOutputParam:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this AnimatedGraphicsOutputParam.
+        r"""Sets the end of this AnimatedGraphicsOutputParam.
 
         结束时间。  单位：毫秒。  end、start差值最多60秒。 
 
@@ -183,7 +183,7 @@ class AnimatedGraphicsOutputParam:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this AnimatedGraphicsOutputParam.
+        r"""Gets the frame_rate of this AnimatedGraphicsOutputParam.
 
         动图帧率。  取值范围：[1,75] 
 
@@ -194,7 +194,7 @@ class AnimatedGraphicsOutputParam:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this AnimatedGraphicsOutputParam.
+        r"""Sets the frame_rate of this AnimatedGraphicsOutputParam.
 
         动图帧率。  取值范围：[1,75] 
 

@@ -31,7 +31,7 @@ class UnscopedTokenUser:
     }
 
     def __init__(self, domain=None, id=None, name=None, os_federation=None):
-        """UnscopedTokenUser
+        r"""UnscopedTokenUser
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UnscopedTokenUser:
 
     @property
     def domain(self):
-        """Gets the domain of this UnscopedTokenUser.
+        r"""Gets the domain of this UnscopedTokenUser.
 
         :return: The domain of this UnscopedTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -69,7 +69,7 @@ class UnscopedTokenUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UnscopedTokenUser.
+        r"""Sets the domain of this UnscopedTokenUser.
 
         :param domain: The domain of this UnscopedTokenUser.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -78,7 +78,7 @@ class UnscopedTokenUser:
 
     @property
     def id(self):
-        """Gets the id of this UnscopedTokenUser.
+        r"""Gets the id of this UnscopedTokenUser.
 
         用户ID。
 
@@ -89,7 +89,7 @@ class UnscopedTokenUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnscopedTokenUser.
+        r"""Sets the id of this UnscopedTokenUser.
 
         用户ID。
 
@@ -100,7 +100,7 @@ class UnscopedTokenUser:
 
     @property
     def name(self):
-        """Gets the name of this UnscopedTokenUser.
+        r"""Gets the name of this UnscopedTokenUser.
 
         用户名称。
 
@@ -111,7 +111,7 @@ class UnscopedTokenUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UnscopedTokenUser.
+        r"""Sets the name of this UnscopedTokenUser.
 
         用户名称。
 
@@ -122,7 +122,7 @@ class UnscopedTokenUser:
 
     @property
     def os_federation(self):
-        """Gets the os_federation of this UnscopedTokenUser.
+        r"""Gets the os_federation of this UnscopedTokenUser.
 
         :return: The os_federation of this UnscopedTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
@@ -131,7 +131,7 @@ class UnscopedTokenUser:
 
     @os_federation.setter
     def os_federation(self, os_federation):
-        """Sets the os_federation of this UnscopedTokenUser.
+        r"""Sets the os_federation of this UnscopedTokenUser.
 
         :param os_federation: The os_federation of this UnscopedTokenUser.
         :type os_federation: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`

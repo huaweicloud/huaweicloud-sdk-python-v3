@@ -27,7 +27,7 @@ class SearchType:
     }
 
     def __init__(self):
-        """SearchType
+        r"""SearchType
 
         The model defined in huaweicloud sdk
 

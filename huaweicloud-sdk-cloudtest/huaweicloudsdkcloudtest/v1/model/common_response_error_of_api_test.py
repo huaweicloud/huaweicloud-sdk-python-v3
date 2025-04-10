@@ -27,7 +27,7 @@ class CommonResponseErrorOfAPITest:
     }
 
     def __init__(self, code=None, reason=None):
-        """CommonResponseErrorOfAPITest
+        r"""CommonResponseErrorOfAPITest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CommonResponseErrorOfAPITest:
 
     @property
     def code(self):
-        """Gets the code of this CommonResponseErrorOfAPITest.
+        r"""Gets the code of this CommonResponseErrorOfAPITest.
 
         错误码
 
@@ -61,7 +61,7 @@ class CommonResponseErrorOfAPITest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CommonResponseErrorOfAPITest.
+        r"""Sets the code of this CommonResponseErrorOfAPITest.
 
         错误码
 
@@ -72,7 +72,7 @@ class CommonResponseErrorOfAPITest:
 
     @property
     def reason(self):
-        """Gets the reason of this CommonResponseErrorOfAPITest.
+        r"""Gets the reason of this CommonResponseErrorOfAPITest.
 
         错误原因
 
@@ -83,7 +83,7 @@ class CommonResponseErrorOfAPITest:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CommonResponseErrorOfAPITest.
+        r"""Sets the reason of this CommonResponseErrorOfAPITest.
 
         错误原因
 

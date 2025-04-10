@@ -47,7 +47,7 @@ class CreateSecurityGroupRuleOption:
     }
 
     def __init__(self, security_group_id=None, description=None, direction=None, ethertype=None, protocol=None, multiport=None, remote_ip_prefix=None, remote_group_id=None, remote_address_group_id=None, action=None, priority=None, enabled=None):
-        """CreateSecurityGroupRuleOption
+        r"""CreateSecurityGroupRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateSecurityGroupRuleOption.
+        r"""Gets the security_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则所属的安全组ID
 
@@ -129,7 +129,7 @@ class CreateSecurityGroupRuleOption:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateSecurityGroupRuleOption.
+        r"""Sets the security_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则所属的安全组ID
 
@@ -140,7 +140,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateSecurityGroupRuleOption.
+        r"""Gets the description of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -151,7 +151,7 @@ class CreateSecurityGroupRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSecurityGroupRuleOption.
+        r"""Sets the description of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -162,7 +162,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def direction(self):
-        """Gets the direction of this CreateSecurityGroupRuleOption.
+        r"""Gets the direction of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则的出入控制方向 取值范围：ingress 表示入方向；egress 表示出方向
 
@@ -173,7 +173,7 @@ class CreateSecurityGroupRuleOption:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this CreateSecurityGroupRuleOption.
+        r"""Sets the direction of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则的出入控制方向 取值范围：ingress 表示入方向；egress 表示出方向
 
@@ -184,7 +184,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this CreateSecurityGroupRuleOption.
+        r"""Gets the ethertype of this CreateSecurityGroupRuleOption.
 
         功能说明：IP地址协议类型 取值范围：IPv4，IPv6 约束：不填默认值为IPv4
 
@@ -195,7 +195,7 @@ class CreateSecurityGroupRuleOption:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this CreateSecurityGroupRuleOption.
+        r"""Sets the ethertype of this CreateSecurityGroupRuleOption.
 
         功能说明：IP地址协议类型 取值范围：IPv4，IPv6 约束：不填默认值为IPv4
 
@@ -206,7 +206,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateSecurityGroupRuleOption.
+        r"""Gets the protocol of this CreateSecurityGroupRuleOption.
 
         功能说明：协议类型 取值范围：icmp、tcp、udp、icmpv6或IP协议号(0~255) 约束：为空表示支持所有协议。协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -217,7 +217,7 @@ class CreateSecurityGroupRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateSecurityGroupRuleOption.
+        r"""Sets the protocol of this CreateSecurityGroupRuleOption.
 
         功能说明：协议类型 取值范围：icmp、tcp、udp、icmpv6或IP协议号(0~255) 约束：为空表示支持所有协议。协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -228,7 +228,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def multiport(self):
-        """Gets the multiport of this CreateSecurityGroupRuleOption.
+        r"""Gets the multiport of this CreateSecurityGroupRuleOption.
 
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80) 约束：端口值的范围1~65535
 
@@ -239,7 +239,7 @@ class CreateSecurityGroupRuleOption:
 
     @multiport.setter
     def multiport(self, multiport):
-        """Sets the multiport of this CreateSecurityGroupRuleOption.
+        r"""Sets the multiport of this CreateSecurityGroupRuleOption.
 
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80) 约束：端口值的范围1~65535
 
@@ -250,7 +250,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
+        r"""Gets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
 
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：与remote_group_id、remote_address_group_id互斥
 
@@ -261,7 +261,7 @@ class CreateSecurityGroupRuleOption:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
+        r"""Sets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
 
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：与remote_group_id、remote_address_group_id互斥
 
@@ -272,7 +272,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this CreateSecurityGroupRuleOption.
+        r"""Gets the remote_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：远端安全组ID，表示该安全组内的流量允许或拒绝 取值范围：租户下存在的安全组ID 约束：与remote_ip_prefix，remote_address_group_id功能互斥
 
@@ -283,7 +283,7 @@ class CreateSecurityGroupRuleOption:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this CreateSecurityGroupRuleOption.
+        r"""Sets the remote_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：远端安全组ID，表示该安全组内的流量允许或拒绝 取值范围：租户下存在的安全组ID 约束：与remote_ip_prefix，remote_address_group_id功能互斥
 
@@ -294,7 +294,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def remote_address_group_id(self):
-        """Gets the remote_address_group_id of this CreateSecurityGroupRuleOption.
+        r"""Gets the remote_address_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：远端地址组ID 取值范围：租户下存在的地址组ID 约束：与remote_ip_prefix，remote_group_id功能互斥
 
@@ -305,7 +305,7 @@ class CreateSecurityGroupRuleOption:
 
     @remote_address_group_id.setter
     def remote_address_group_id(self, remote_address_group_id):
-        """Sets the remote_address_group_id of this CreateSecurityGroupRuleOption.
+        r"""Sets the remote_address_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：远端地址组ID 取值范围：租户下存在的地址组ID 约束：与remote_ip_prefix，remote_group_id功能互斥
 
@@ -316,7 +316,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def action(self):
-        """Gets the action of this CreateSecurityGroupRuleOption.
+        r"""Gets the action of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为allow 
 
@@ -327,7 +327,7 @@ class CreateSecurityGroupRuleOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateSecurityGroupRuleOption.
+        r"""Sets the action of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为allow 
 
@@ -338,7 +338,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateSecurityGroupRuleOption.
+        r"""Gets the priority of this CreateSecurityGroupRuleOption.
 
         功能说明：规则在安全组中的优先级 取值范围：1~100，1代表最高优先级 约束：默认值为100
 
@@ -349,7 +349,7 @@ class CreateSecurityGroupRuleOption:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateSecurityGroupRuleOption.
+        r"""Sets the priority of this CreateSecurityGroupRuleOption.
 
         功能说明：规则在安全组中的优先级 取值范围：1~100，1代表最高优先级 约束：默认值为100
 
@@ -360,7 +360,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateSecurityGroupRuleOption.
+        r"""Gets the enabled of this CreateSecurityGroupRuleOption.
 
         功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
 
@@ -371,7 +371,7 @@ class CreateSecurityGroupRuleOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateSecurityGroupRuleOption.
+        r"""Sets the enabled of this CreateSecurityGroupRuleOption.
 
         功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
 

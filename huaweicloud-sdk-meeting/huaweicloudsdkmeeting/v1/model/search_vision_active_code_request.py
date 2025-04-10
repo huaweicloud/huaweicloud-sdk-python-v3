@@ -35,7 +35,7 @@ class SearchVisionActiveCodeRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, dev_type=None):
-        """SearchVisionActiveCodeRequest
+        r"""SearchVisionActiveCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SearchVisionActiveCodeRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchVisionActiveCodeRequest.
+        r"""Gets the x_request_id of this SearchVisionActiveCodeRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -89,7 +89,7 @@ class SearchVisionActiveCodeRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchVisionActiveCodeRequest.
+        r"""Sets the x_request_id of this SearchVisionActiveCodeRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -100,7 +100,7 @@ class SearchVisionActiveCodeRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchVisionActiveCodeRequest.
+        r"""Gets the accept_language of this SearchVisionActiveCodeRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -111,7 +111,7 @@ class SearchVisionActiveCodeRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchVisionActiveCodeRequest.
+        r"""Sets the accept_language of this SearchVisionActiveCodeRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -122,7 +122,7 @@ class SearchVisionActiveCodeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchVisionActiveCodeRequest.
+        r"""Gets the offset of this SearchVisionActiveCodeRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -133,7 +133,7 @@ class SearchVisionActiveCodeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchVisionActiveCodeRequest.
+        r"""Sets the offset of this SearchVisionActiveCodeRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -144,7 +144,7 @@ class SearchVisionActiveCodeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchVisionActiveCodeRequest.
+        r"""Gets the limit of this SearchVisionActiveCodeRequest.
 
         查询数量。 默认值：10。 
 
@@ -155,7 +155,7 @@ class SearchVisionActiveCodeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchVisionActiveCodeRequest.
+        r"""Sets the limit of this SearchVisionActiveCodeRequest.
 
         查询数量。 默认值：10。 
 
@@ -166,7 +166,7 @@ class SearchVisionActiveCodeRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchVisionActiveCodeRequest.
+        r"""Gets the search_key of this SearchVisionActiveCodeRequest.
 
         搜索条件,支持激活码、终端名称模糊搜索。
 
@@ -177,7 +177,7 @@ class SearchVisionActiveCodeRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchVisionActiveCodeRequest.
+        r"""Sets the search_key of this SearchVisionActiveCodeRequest.
 
         搜索条件,支持激活码、终端名称模糊搜索。
 
@@ -188,7 +188,7 @@ class SearchVisionActiveCodeRequest:
 
     @property
     def dev_type(self):
-        """Gets the dev_type of this SearchVisionActiveCodeRequest.
+        r"""Gets the dev_type of this SearchVisionActiveCodeRequest.
 
         终端类型。 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
@@ -199,7 +199,7 @@ class SearchVisionActiveCodeRequest:
 
     @dev_type.setter
     def dev_type(self, dev_type):
-        """Sets the dev_type of this SearchVisionActiveCodeRequest.
+        r"""Sets the dev_type of this SearchVisionActiveCodeRequest.
 
         终端类型。 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 

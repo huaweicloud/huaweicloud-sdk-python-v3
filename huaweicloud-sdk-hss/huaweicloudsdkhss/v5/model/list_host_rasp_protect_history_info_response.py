@@ -28,7 +28,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListHostRaspProtectHistoryInfoResponse
+        r"""ListHostRaspProtectHistoryInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListHostRaspProtectHistoryInfoResponse.
+        r"""Gets the total_num of this ListHostRaspProtectHistoryInfoResponse.
 
         total number of dynamic WTPs
 
@@ -62,7 +62,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListHostRaspProtectHistoryInfoResponse.
+        r"""Sets the total_num of this ListHostRaspProtectHistoryInfoResponse.
 
         total number of dynamic WTPs
 
@@ -73,7 +73,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListHostRaspProtectHistoryInfoResponse.
+        r"""Gets the data_list of this ListHostRaspProtectHistoryInfoResponse.
 
         data list
 
@@ -84,7 +84,7 @@ class ListHostRaspProtectHistoryInfoResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListHostRaspProtectHistoryInfoResponse.
+        r"""Sets the data_list of this ListHostRaspProtectHistoryInfoResponse.
 
         data list
 

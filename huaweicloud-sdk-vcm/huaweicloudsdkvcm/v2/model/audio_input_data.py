@@ -29,7 +29,7 @@ class AudioInputData:
     }
 
     def __init__(self, bucket=None, path=None, url=None):
-        """AudioInputData
+        r"""AudioInputData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AudioInputData:
 
     @property
     def bucket(self):
-        """Gets the bucket of this AudioInputData.
+        r"""Gets the bucket of this AudioInputData.
 
         type为obs时输入参数  OBS桶名称。 
 
@@ -68,7 +68,7 @@ class AudioInputData:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this AudioInputData.
+        r"""Sets the bucket of this AudioInputData.
 
         type为obs时输入参数  OBS桶名称。 
 
@@ -79,7 +79,7 @@ class AudioInputData:
 
     @property
     def path(self):
-        """Gets the path of this AudioInputData.
+        r"""Gets the path of this AudioInputData.
 
         type为obs时输入参数  OBS桶内的路径，例如“output/c1.mp4”。 
 
@@ -90,7 +90,7 @@ class AudioInputData:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AudioInputData.
+        r"""Sets the path of this AudioInputData.
 
         type为obs时输入参数  OBS桶内的路径，例如“output/c1.mp4”。 
 
@@ -101,7 +101,7 @@ class AudioInputData:
 
     @property
     def url(self):
-        """Gets the url of this AudioInputData.
+        r"""Gets the url of this AudioInputData.
 
         type为url时输入参数  视频数据的URL，目前支持OBS URL，且需要设置该URL对匿名用户可读权限。 
 
@@ -112,7 +112,7 @@ class AudioInputData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AudioInputData.
+        r"""Sets the url of this AudioInputData.
 
         type为url时输入参数  视频数据的URL，目前支持OBS URL，且需要设置该URL对匿名用户可读权限。 
 

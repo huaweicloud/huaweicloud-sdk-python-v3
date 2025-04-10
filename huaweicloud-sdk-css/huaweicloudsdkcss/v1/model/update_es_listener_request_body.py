@@ -25,7 +25,7 @@ class UpdateEsListenerRequestBody:
     }
 
     def __init__(self, listener=None):
-        """UpdateEsListenerRequestBody
+        r"""UpdateEsListenerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEsListenerRequestBody:
 
     @property
     def listener(self):
-        """Gets the listener of this UpdateEsListenerRequestBody.
+        r"""Gets the listener of this UpdateEsListenerRequestBody.
 
         :return: The listener of this UpdateEsListenerRequestBody.
         :rtype: :class:`huaweicloudsdkcss.v1.EsListenerRequest`
@@ -51,7 +51,7 @@ class UpdateEsListenerRequestBody:
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this UpdateEsListenerRequestBody.
+        r"""Sets the listener of this UpdateEsListenerRequestBody.
 
         :param listener: The listener of this UpdateEsListenerRequestBody.
         :type listener: :class:`huaweicloudsdkcss.v1.EsListenerRequest`

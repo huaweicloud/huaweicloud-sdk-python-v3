@@ -25,7 +25,7 @@ class BatchAddPeersToChannelRequestBody:
     }
 
     def __init__(self, channel_peers=None):
-        """BatchAddPeersToChannelRequestBody
+        r"""BatchAddPeersToChannelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAddPeersToChannelRequestBody:
 
     @property
     def channel_peers(self):
-        """Gets the channel_peers of this BatchAddPeersToChannelRequestBody.
+        r"""Gets the channel_peers of this BatchAddPeersToChannelRequestBody.
 
         加入某个通道的节点信息
 
@@ -53,7 +53,7 @@ class BatchAddPeersToChannelRequestBody:
 
     @channel_peers.setter
     def channel_peers(self, channel_peers):
-        """Sets the channel_peers of this BatchAddPeersToChannelRequestBody.
+        r"""Sets the channel_peers of this BatchAddPeersToChannelRequestBody.
 
         加入某个通道的节点信息
 

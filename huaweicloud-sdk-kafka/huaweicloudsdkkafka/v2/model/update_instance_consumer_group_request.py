@@ -31,7 +31,7 @@ class UpdateInstanceConsumerGroupRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, group=None, body=None):
-        """UpdateInstanceConsumerGroupRequest
+        r"""UpdateInstanceConsumerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this UpdateInstanceConsumerGroupRequest.
+        r"""Gets the engine of this UpdateInstanceConsumerGroupRequest.
 
         消息引擎的类型。
 
@@ -72,7 +72,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this UpdateInstanceConsumerGroupRequest.
+        r"""Sets the engine of this UpdateInstanceConsumerGroupRequest.
 
         消息引擎的类型。
 
@@ -83,7 +83,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceConsumerGroupRequest.
+        r"""Gets the instance_id of this UpdateInstanceConsumerGroupRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceConsumerGroupRequest.
+        r"""Sets the instance_id of this UpdateInstanceConsumerGroupRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @property
     def group(self):
-        """Gets the group of this UpdateInstanceConsumerGroupRequest.
+        r"""Gets the group of this UpdateInstanceConsumerGroupRequest.
 
         消费者组。
 
@@ -116,7 +116,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UpdateInstanceConsumerGroupRequest.
+        r"""Sets the group of this UpdateInstanceConsumerGroupRequest.
 
         消费者组。
 
@@ -127,7 +127,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceConsumerGroupRequest.
+        r"""Gets the body of this UpdateInstanceConsumerGroupRequest.
 
         :return: The body of this UpdateInstanceConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateGroupReq`
@@ -136,7 +136,7 @@ class UpdateInstanceConsumerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceConsumerGroupRequest.
+        r"""Sets the body of this UpdateInstanceConsumerGroupRequest.
 
         :param body: The body of this UpdateInstanceConsumerGroupRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateGroupReq`

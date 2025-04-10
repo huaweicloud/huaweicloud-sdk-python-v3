@@ -29,7 +29,7 @@ class ListWorksResponseModel:
     }
 
     def __init__(self, works_id=None, domain_id=None, team_id=None):
-        """ListWorksResponseModel
+        r"""ListWorksResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListWorksResponseModel:
 
     @property
     def works_id(self):
-        """Gets the works_id of this ListWorksResponseModel.
+        r"""Gets the works_id of this ListWorksResponseModel.
 
         作品ID
 
@@ -65,7 +65,7 @@ class ListWorksResponseModel:
 
     @works_id.setter
     def works_id(self, works_id):
-        """Sets the works_id of this ListWorksResponseModel.
+        r"""Sets the works_id of this ListWorksResponseModel.
 
         作品ID
 
@@ -76,7 +76,7 @@ class ListWorksResponseModel:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListWorksResponseModel.
+        r"""Gets the domain_id of this ListWorksResponseModel.
 
         租户ID
 
@@ -87,7 +87,7 @@ class ListWorksResponseModel:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListWorksResponseModel.
+        r"""Sets the domain_id of this ListWorksResponseModel.
 
         租户ID
 
@@ -98,7 +98,7 @@ class ListWorksResponseModel:
 
     @property
     def team_id(self):
-        """Gets the team_id of this ListWorksResponseModel.
+        r"""Gets the team_id of this ListWorksResponseModel.
 
         团队ID
 
@@ -109,7 +109,7 @@ class ListWorksResponseModel:
 
     @team_id.setter
     def team_id(self, team_id):
-        """Sets the team_id of this ListWorksResponseModel.
+        r"""Sets the team_id of this ListWorksResponseModel.
 
         团队ID
 

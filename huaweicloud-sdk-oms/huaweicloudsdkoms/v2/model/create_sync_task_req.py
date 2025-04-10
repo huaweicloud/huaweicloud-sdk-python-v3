@@ -57,7 +57,7 @@ class CreateSyncTaskReq:
     }
 
     def __init__(self, src_cloud_type=None, src_region=None, src_bucket=None, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, dst_region=None, dst_bucket=None, description=None, enable_metadata_migration=None, enable_kms=None, enable_restore=None, dst_storage_policy=None, app_id=None, source_cdn=None, consistency_check=None):
-        """CreateSyncTaskReq
+        r"""CreateSyncTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class CreateSyncTaskReq:
 
     @property
     def src_cloud_type(self):
-        """Gets the src_cloud_type of this CreateSyncTaskReq.
+        r"""Gets the src_cloud_type of this CreateSyncTaskReq.
 
         源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Cloud。默认值为Aliyun。
 
@@ -158,7 +158,7 @@ class CreateSyncTaskReq:
 
     @src_cloud_type.setter
     def src_cloud_type(self, src_cloud_type):
-        """Sets the src_cloud_type of this CreateSyncTaskReq.
+        r"""Sets the src_cloud_type of this CreateSyncTaskReq.
 
         源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Cloud。默认值为Aliyun。
 
@@ -169,7 +169,7 @@ class CreateSyncTaskReq:
 
     @property
     def src_region(self):
-        """Gets the src_region of this CreateSyncTaskReq.
+        r"""Gets the src_region of this CreateSyncTaskReq.
 
         源端桶所处的区域
 
@@ -180,7 +180,7 @@ class CreateSyncTaskReq:
 
     @src_region.setter
     def src_region(self, src_region):
-        """Sets the src_region of this CreateSyncTaskReq.
+        r"""Sets the src_region of this CreateSyncTaskReq.
 
         源端桶所处的区域
 
@@ -191,7 +191,7 @@ class CreateSyncTaskReq:
 
     @property
     def src_bucket(self):
-        """Gets the src_bucket of this CreateSyncTaskReq.
+        r"""Gets the src_bucket of this CreateSyncTaskReq.
 
         源端桶名
 
@@ -202,7 +202,7 @@ class CreateSyncTaskReq:
 
     @src_bucket.setter
     def src_bucket(self, src_bucket):
-        """Sets the src_bucket of this CreateSyncTaskReq.
+        r"""Sets the src_bucket of this CreateSyncTaskReq.
 
         源端桶名
 
@@ -213,7 +213,7 @@ class CreateSyncTaskReq:
 
     @property
     def src_ak(self):
-        """Gets the src_ak of this CreateSyncTaskReq.
+        r"""Gets the src_ak of this CreateSyncTaskReq.
 
         源端桶的AK（最大长度100个字符）。
 
@@ -224,7 +224,7 @@ class CreateSyncTaskReq:
 
     @src_ak.setter
     def src_ak(self, src_ak):
-        """Sets the src_ak of this CreateSyncTaskReq.
+        r"""Sets the src_ak of this CreateSyncTaskReq.
 
         源端桶的AK（最大长度100个字符）。
 
@@ -235,7 +235,7 @@ class CreateSyncTaskReq:
 
     @property
     def src_sk(self):
-        """Gets the src_sk of this CreateSyncTaskReq.
+        r"""Gets the src_sk of this CreateSyncTaskReq.
 
         源端桶的SK（最大长度100个字符）。
 
@@ -246,7 +246,7 @@ class CreateSyncTaskReq:
 
     @src_sk.setter
     def src_sk(self, src_sk):
-        """Sets the src_sk of this CreateSyncTaskReq.
+        r"""Sets the src_sk of this CreateSyncTaskReq.
 
         源端桶的SK（最大长度100个字符）。
 
@@ -257,7 +257,7 @@ class CreateSyncTaskReq:
 
     @property
     def dst_ak(self):
-        """Gets the dst_ak of this CreateSyncTaskReq.
+        r"""Gets the dst_ak of this CreateSyncTaskReq.
 
         目的端桶的AK（最大长度100个字符）。
 
@@ -268,7 +268,7 @@ class CreateSyncTaskReq:
 
     @dst_ak.setter
     def dst_ak(self, dst_ak):
-        """Sets the dst_ak of this CreateSyncTaskReq.
+        r"""Sets the dst_ak of this CreateSyncTaskReq.
 
         目的端桶的AK（最大长度100个字符）。
 
@@ -279,7 +279,7 @@ class CreateSyncTaskReq:
 
     @property
     def dst_sk(self):
-        """Gets the dst_sk of this CreateSyncTaskReq.
+        r"""Gets the dst_sk of this CreateSyncTaskReq.
 
         目的端桶的SK（最大长度100个字符）。
 
@@ -290,7 +290,7 @@ class CreateSyncTaskReq:
 
     @dst_sk.setter
     def dst_sk(self, dst_sk):
-        """Sets the dst_sk of this CreateSyncTaskReq.
+        r"""Sets the dst_sk of this CreateSyncTaskReq.
 
         目的端桶的SK（最大长度100个字符）。
 
@@ -301,7 +301,7 @@ class CreateSyncTaskReq:
 
     @property
     def dst_region(self):
-        """Gets the dst_region of this CreateSyncTaskReq.
+        r"""Gets the dst_region of this CreateSyncTaskReq.
 
         目的端region
 
@@ -312,7 +312,7 @@ class CreateSyncTaskReq:
 
     @dst_region.setter
     def dst_region(self, dst_region):
-        """Sets the dst_region of this CreateSyncTaskReq.
+        r"""Sets the dst_region of this CreateSyncTaskReq.
 
         目的端region
 
@@ -323,7 +323,7 @@ class CreateSyncTaskReq:
 
     @property
     def dst_bucket(self):
-        """Gets the dst_bucket of this CreateSyncTaskReq.
+        r"""Gets the dst_bucket of this CreateSyncTaskReq.
 
         目的端桶名
 
@@ -334,7 +334,7 @@ class CreateSyncTaskReq:
 
     @dst_bucket.setter
     def dst_bucket(self, dst_bucket):
-        """Sets the dst_bucket of this CreateSyncTaskReq.
+        r"""Sets the dst_bucket of this CreateSyncTaskReq.
 
         目的端桶名
 
@@ -345,7 +345,7 @@ class CreateSyncTaskReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateSyncTaskReq.
+        r"""Gets the description of this CreateSyncTaskReq.
 
         任务描述，不能超过255个字符，且不能包含<>()\"'&等特殊字符。
 
@@ -356,7 +356,7 @@ class CreateSyncTaskReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSyncTaskReq.
+        r"""Sets the description of this CreateSyncTaskReq.
 
         任务描述，不能超过255个字符，且不能包含<>()\"'&等特殊字符。
 
@@ -367,7 +367,7 @@ class CreateSyncTaskReq:
 
     @property
     def enable_metadata_migration(self):
-        """Gets the enable_metadata_migration of this CreateSyncTaskReq.
+        r"""Gets the enable_metadata_migration of this CreateSyncTaskReq.
 
         是否启用元数据迁移，默认否。不启用时，为保证迁移任务正常运行，仍将为您迁移ContentType元数据。
 
@@ -378,7 +378,7 @@ class CreateSyncTaskReq:
 
     @enable_metadata_migration.setter
     def enable_metadata_migration(self, enable_metadata_migration):
-        """Sets the enable_metadata_migration of this CreateSyncTaskReq.
+        r"""Sets the enable_metadata_migration of this CreateSyncTaskReq.
 
         是否启用元数据迁移，默认否。不启用时，为保证迁移任务正常运行，仍将为您迁移ContentType元数据。
 
@@ -389,7 +389,7 @@ class CreateSyncTaskReq:
 
     @property
     def enable_kms(self):
-        """Gets the enable_kms of this CreateSyncTaskReq.
+        r"""Gets the enable_kms of this CreateSyncTaskReq.
 
         是否开启KMS加密，默认不开启。
 
@@ -400,7 +400,7 @@ class CreateSyncTaskReq:
 
     @enable_kms.setter
     def enable_kms(self, enable_kms):
-        """Sets the enable_kms of this CreateSyncTaskReq.
+        r"""Sets the enable_kms of this CreateSyncTaskReq.
 
         是否开启KMS加密，默认不开启。
 
@@ -411,7 +411,7 @@ class CreateSyncTaskReq:
 
     @property
     def enable_restore(self):
-        """Gets the enable_restore of this CreateSyncTaskReq.
+        r"""Gets the enable_restore of this CreateSyncTaskReq.
 
         是否自动解冻归档数据，默认否。  开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
 
@@ -422,7 +422,7 @@ class CreateSyncTaskReq:
 
     @enable_restore.setter
     def enable_restore(self, enable_restore):
-        """Sets the enable_restore of this CreateSyncTaskReq.
+        r"""Sets the enable_restore of this CreateSyncTaskReq.
 
         是否自动解冻归档数据，默认否。  开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
 
@@ -433,7 +433,7 @@ class CreateSyncTaskReq:
 
     @property
     def dst_storage_policy(self):
-        """Gets the dst_storage_policy of this CreateSyncTaskReq.
+        r"""Gets the dst_storage_policy of this CreateSyncTaskReq.
 
         目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
 
@@ -444,7 +444,7 @@ class CreateSyncTaskReq:
 
     @dst_storage_policy.setter
     def dst_storage_policy(self, dst_storage_policy):
-        """Sets the dst_storage_policy of this CreateSyncTaskReq.
+        r"""Sets the dst_storage_policy of this CreateSyncTaskReq.
 
         目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
 
@@ -455,7 +455,7 @@ class CreateSyncTaskReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateSyncTaskReq.
+        r"""Gets the app_id of this CreateSyncTaskReq.
 
         当源端为腾讯云时，需要填写此参数。
 
@@ -466,7 +466,7 @@ class CreateSyncTaskReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateSyncTaskReq.
+        r"""Sets the app_id of this CreateSyncTaskReq.
 
         当源端为腾讯云时，需要填写此参数。
 
@@ -477,7 +477,7 @@ class CreateSyncTaskReq:
 
     @property
     def source_cdn(self):
-        """Gets the source_cdn of this CreateSyncTaskReq.
+        r"""Gets the source_cdn of this CreateSyncTaskReq.
 
         :return: The source_cdn of this CreateSyncTaskReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
@@ -486,7 +486,7 @@ class CreateSyncTaskReq:
 
     @source_cdn.setter
     def source_cdn(self, source_cdn):
-        """Sets the source_cdn of this CreateSyncTaskReq.
+        r"""Sets the source_cdn of this CreateSyncTaskReq.
 
         :param source_cdn: The source_cdn of this CreateSyncTaskReq.
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
@@ -495,7 +495,7 @@ class CreateSyncTaskReq:
 
     @property
     def consistency_check(self):
-        """Gets the consistency_check of this CreateSyncTaskReq.
+        r"""Gets the consistency_check of this CreateSyncTaskReq.
 
         一致性校验方式，用于迁移前/后校验对象是否一致，所有校验方式需满足源端/目的端对象的加密状态一致，具体校验方式和校验结果可通过对象列表查看。默认size_last_modified。 size_last_modified：默认配置。迁移前后，通过对比源端和目的端对象大小+最后修改时间，判断对象是否已存在或迁移后数据是否完整。源端与目的端同名对象大小相同，且目的端对象最后修改时间晚于源端对象最后修改时间，则代表该对象已存在/迁移成功。 crc64：目前仅支持华为/阿里/腾讯。迁移前后，通过对比源端和目的端对象元数据中CRC64值是否相同，判断对象是否已存在/迁移完成。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用大小/最后修改时间校验方式来校验。 transmission：目前仅支持HTTP/HTTPS数据源。当源端对象无法通过标准http协议中content-length字段获取数据大小时，默认数据下载成功即迁移成功，不对数据做额外校验，且迁移时源端对象默认覆盖目的端同名对象。当源端对象能正常通过标准http协议中content-length字段获取数据大小时，则采用大小/最后修改时间校验方式来校验。
 
@@ -506,7 +506,7 @@ class CreateSyncTaskReq:
 
     @consistency_check.setter
     def consistency_check(self, consistency_check):
-        """Sets the consistency_check of this CreateSyncTaskReq.
+        r"""Sets the consistency_check of this CreateSyncTaskReq.
 
         一致性校验方式，用于迁移前/后校验对象是否一致，所有校验方式需满足源端/目的端对象的加密状态一致，具体校验方式和校验结果可通过对象列表查看。默认size_last_modified。 size_last_modified：默认配置。迁移前后，通过对比源端和目的端对象大小+最后修改时间，判断对象是否已存在或迁移后数据是否完整。源端与目的端同名对象大小相同，且目的端对象最后修改时间晚于源端对象最后修改时间，则代表该对象已存在/迁移成功。 crc64：目前仅支持华为/阿里/腾讯。迁移前后，通过对比源端和目的端对象元数据中CRC64值是否相同，判断对象是否已存在/迁移完成。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用大小/最后修改时间校验方式来校验。 transmission：目前仅支持HTTP/HTTPS数据源。当源端对象无法通过标准http协议中content-length字段获取数据大小时，默认数据下载成功即迁移成功，不对数据做额外校验，且迁移时源端对象默认覆盖目的端同名对象。当源端对象能正常通过标准http协议中content-length字段获取数据大小时，则采用大小/最后修改时间校验方式来校验。
 

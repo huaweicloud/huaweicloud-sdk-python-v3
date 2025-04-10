@@ -38,7 +38,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """DeleteBucketCustomdomainResponse
+        r"""DeleteBucketCustomdomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this DeleteBucketCustomdomainResponse.
+        r"""Gets the x_obs_id_2 of this DeleteBucketCustomdomainResponse.
 
         :return: The x_obs_id_2 of this DeleteBucketCustomdomainResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this DeleteBucketCustomdomainResponse.
+        r"""Sets the x_obs_id_2 of this DeleteBucketCustomdomainResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this DeleteBucketCustomdomainResponse.
         :type x_obs_id_2: str
@@ -99,7 +99,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this DeleteBucketCustomdomainResponse.
+        r"""Gets the x_obs_request_id of this DeleteBucketCustomdomainResponse.
 
         :return: The x_obs_request_id of this DeleteBucketCustomdomainResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this DeleteBucketCustomdomainResponse.
+        r"""Sets the x_obs_request_id of this DeleteBucketCustomdomainResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this DeleteBucketCustomdomainResponse.
         :type x_obs_request_id: str
@@ -117,7 +117,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this DeleteBucketCustomdomainResponse.
+        r"""Gets the e_tag of this DeleteBucketCustomdomainResponse.
 
         :return: The e_tag of this DeleteBucketCustomdomainResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this DeleteBucketCustomdomainResponse.
+        r"""Sets the e_tag of this DeleteBucketCustomdomainResponse.
 
         :param e_tag: The e_tag of this DeleteBucketCustomdomainResponse.
         :type e_tag: str
@@ -135,7 +135,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this DeleteBucketCustomdomainResponse.
+        r"""Gets the connection of this DeleteBucketCustomdomainResponse.
 
         :return: The connection of this DeleteBucketCustomdomainResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this DeleteBucketCustomdomainResponse.
+        r"""Sets the connection of this DeleteBucketCustomdomainResponse.
 
         :param connection: The connection of this DeleteBucketCustomdomainResponse.
         :type connection: str
@@ -153,7 +153,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this DeleteBucketCustomdomainResponse.
+        r"""Gets the content_length of this DeleteBucketCustomdomainResponse.
 
         :return: The content_length of this DeleteBucketCustomdomainResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this DeleteBucketCustomdomainResponse.
+        r"""Sets the content_length of this DeleteBucketCustomdomainResponse.
 
         :param content_length: The content_length of this DeleteBucketCustomdomainResponse.
         :type content_length: str
@@ -171,7 +171,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this DeleteBucketCustomdomainResponse.
+        r"""Gets the date of this DeleteBucketCustomdomainResponse.
 
         :return: The date of this DeleteBucketCustomdomainResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class DeleteBucketCustomdomainResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteBucketCustomdomainResponse.
+        r"""Sets the date of this DeleteBucketCustomdomainResponse.
 
         :param date: The date of this DeleteBucketCustomdomainResponse.
         :type date: str

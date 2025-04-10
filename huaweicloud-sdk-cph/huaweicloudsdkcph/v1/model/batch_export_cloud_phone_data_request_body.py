@@ -25,7 +25,7 @@ class BatchExportCloudPhoneDataRequestBody:
     }
 
     def __init__(self, storage_infos=None):
-        """BatchExportCloudPhoneDataRequestBody
+        r"""BatchExportCloudPhoneDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchExportCloudPhoneDataRequestBody:
 
     @property
     def storage_infos(self):
-        """Gets the storage_infos of this BatchExportCloudPhoneDataRequestBody.
+        r"""Gets the storage_infos of this BatchExportCloudPhoneDataRequestBody.
 
         待导出数据的云手机信息。
 
@@ -53,7 +53,7 @@ class BatchExportCloudPhoneDataRequestBody:
 
     @storage_infos.setter
     def storage_infos(self, storage_infos):
-        """Sets the storage_infos of this BatchExportCloudPhoneDataRequestBody.
+        r"""Sets the storage_infos of this BatchExportCloudPhoneDataRequestBody.
 
         待导出数据的云手机信息。
 

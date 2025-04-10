@@ -59,7 +59,7 @@ class CreateServers:
     }
 
     def __init__(self, image_ref=None, flavor_ref=None, name=None, metadata=None, user_data=None, admin_pass=None, key_name=None, security_groups=None, nics=None, availability_zone=None, vpcid=None, publicip=None, count=None, root_volume=None, data_volumes=None, extendparam=None, scheduler_hints=None, server_tags=None):
-        """CreateServers
+        r"""CreateServers
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class CreateServers:
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this CreateServers.
+        r"""Gets the image_ref of this CreateServers.
 
         裸金属服务器使用的镜像ID或者镜像资源的URL。ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。镜像ID可以从镜像服务控制台获取，或者参考《镜像服务API参考》的“查询镜像列表”章节查询。在使用“查询镜像列表”API查询时，可以添加过滤字段“?virtual_env_type=Ironic”来筛选裸金属服务器镜像。
 
@@ -165,7 +165,7 @@ class CreateServers:
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this CreateServers.
+        r"""Sets the image_ref of this CreateServers.
 
         裸金属服务器使用的镜像ID或者镜像资源的URL。ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。镜像ID可以从镜像服务控制台获取，或者参考《镜像服务API参考》的“查询镜像列表”章节查询。在使用“查询镜像列表”API查询时，可以添加过滤字段“?virtual_env_type=Ironic”来筛选裸金属服务器镜像。
 
@@ -176,7 +176,7 @@ class CreateServers:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateServers.
+        r"""Gets the flavor_ref of this CreateServers.
 
         裸金属服务器使用的规格ID，格式为physical.x.x。规格ID可以从裸金属服务器控制台获取，也可以通过查询规格详情和规格扩展信息列表API查询。 说明：裸金属服务器规格与镜像间的约束关系请参见裸金属服务器类型与支持的操作系统版本。对于physical.x.x.hba类型的规格，申请的租户只能是DeC租户，且只能挂载DESS卷。
 
@@ -187,7 +187,7 @@ class CreateServers:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateServers.
+        r"""Sets the flavor_ref of this CreateServers.
 
         裸金属服务器使用的规格ID，格式为physical.x.x。规格ID可以从裸金属服务器控制台获取，也可以通过查询规格详情和规格扩展信息列表API查询。 说明：裸金属服务器规格与镜像间的约束关系请参见裸金属服务器类型与支持的操作系统版本。对于physical.x.x.hba类型的规格，申请的租户只能是DeC租户，且只能挂载DESS卷。
 
@@ -198,7 +198,7 @@ class CreateServers:
 
     @property
     def name(self):
-        """Gets the name of this CreateServers.
+        r"""Gets the name of this CreateServers.
 
         裸金属服务器名称。取值范围：只能由中文字符、英文字母（a~z，A~Z）、数字（0~9）、下划线（_）、中划线（-）、点（.）组成，且长度为[1-63]个字符。创建的裸金属服务器数量大于1时，为区分不同裸金属服务器，创建过程中系统会自动在名称后加“-0000”的类似标记。故此时名称的长度为[1-58]个字符。
 
@@ -209,7 +209,7 @@ class CreateServers:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateServers.
+        r"""Sets the name of this CreateServers.
 
         裸金属服务器名称。取值范围：只能由中文字符、英文字母（a~z，A~Z）、数字（0~9）、下划线（_）、中划线（-）、点（.）组成，且长度为[1-63]个字符。创建的裸金属服务器数量大于1时，为区分不同裸金属服务器，创建过程中系统会自动在名称后加“-0000”的类似标记。故此时名称的长度为[1-58]个字符。
 
@@ -220,7 +220,7 @@ class CreateServers:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateServers.
+        r"""Gets the metadata of this CreateServers.
 
         :return: The metadata of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.MetaDataInfo`
@@ -229,7 +229,7 @@ class CreateServers:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateServers.
+        r"""Sets the metadata of this CreateServers.
 
         :param metadata: The metadata of this CreateServers.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetaDataInfo`
@@ -238,7 +238,7 @@ class CreateServers:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateServers.
+        r"""Gets the user_data of this CreateServers.
 
         创建裸金属服务器过程中待注入的用户数据。支持注入文本、文本文件或gzip文件。约束：注入内容，需要进行base64格式编码。注入内容（编码之前的内容）最大长度32KB。当key_name没有指定时，user_data注入的数据默认为裸金属服务器root帐户的登录密码。创建密码方式鉴权的Linux裸金属服务器时为必填项，为root用户注入自定义初始化密码。建议密码复杂度如下：长度为8-26位。密码至少必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。示例：使用明文密码（存在安全风险），以密码cloud.1234为例：#!/bin/bash echo 'root:Cloud.1234' | chpasswd ;使用密码：#!/bin/bash echo 'root:$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig' | chpasswd -e其中，$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig为密文密码
 
@@ -249,7 +249,7 @@ class CreateServers:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateServers.
+        r"""Sets the user_data of this CreateServers.
 
         创建裸金属服务器过程中待注入的用户数据。支持注入文本、文本文件或gzip文件。约束：注入内容，需要进行base64格式编码。注入内容（编码之前的内容）最大长度32KB。当key_name没有指定时，user_data注入的数据默认为裸金属服务器root帐户的登录密码。创建密码方式鉴权的Linux裸金属服务器时为必填项，为root用户注入自定义初始化密码。建议密码复杂度如下：长度为8-26位。密码至少必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。示例：使用明文密码（存在安全风险），以密码cloud.1234为例：#!/bin/bash echo 'root:Cloud.1234' | chpasswd ;使用密码：#!/bin/bash echo 'root:$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig' | chpasswd -e其中，$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig为密文密码
 
@@ -260,7 +260,7 @@ class CreateServers:
 
     @property
     def admin_pass(self):
-        """Gets the admin_pass of this CreateServers.
+        r"""Gets the admin_pass of this CreateServers.
 
         如果需要使用密码方式登录裸金属服务器，可使用adminPass字段指定裸金属服务器管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。密码复杂度要求：长度为8-26位。密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。Linux系统密码不能包含用户名或用户名的逆序。Windows系统密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。
 
@@ -271,7 +271,7 @@ class CreateServers:
 
     @admin_pass.setter
     def admin_pass(self, admin_pass):
-        """Sets the admin_pass of this CreateServers.
+        r"""Sets the admin_pass of this CreateServers.
 
         如果需要使用密码方式登录裸金属服务器，可使用adminPass字段指定裸金属服务器管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。密码复杂度要求：长度为8-26位。密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。Linux系统密码不能包含用户名或用户名的逆序。Windows系统密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。
 
@@ -282,7 +282,7 @@ class CreateServers:
 
     @property
     def key_name(self):
-        """Gets the key_name of this CreateServers.
+        r"""Gets the key_name of this CreateServers.
 
         扩展属性，指定密钥的名称。如果需要使用SSH密钥方式登录裸金属服务器，请指定已有密钥的名称。密钥可以通过7.10.3-创建和导入SSH密钥（OpenStack原生）API创建，或者使用7.10.1-查询SSH密钥列表（OpenStack原生）API查询已有的密钥。约束：当key_name和user_data同时指定时，user_data只能用做用户数据注入。Windows裸金属服务器登录时，首先需要将密钥解析为密码，然后通过远程登录工具进行登录。具体请参见“MSTSC密码方式登录”“MSTSC密码方式登录”。
 
@@ -293,7 +293,7 @@ class CreateServers:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this CreateServers.
+        r"""Sets the key_name of this CreateServers.
 
         扩展属性，指定密钥的名称。如果需要使用SSH密钥方式登录裸金属服务器，请指定已有密钥的名称。密钥可以通过7.10.3-创建和导入SSH密钥（OpenStack原生）API创建，或者使用7.10.1-查询SSH密钥列表（OpenStack原生）API查询已有的密钥。约束：当key_name和user_data同时指定时，user_data只能用做用户数据注入。Windows裸金属服务器登录时，首先需要将密钥解析为密码，然后通过远程登录工具进行登录。具体请参见“MSTSC密码方式登录”“MSTSC密码方式登录”。
 
@@ -304,7 +304,7 @@ class CreateServers:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateServers.
+        r"""Gets the security_groups of this CreateServers.
 
         指定裸金属服务器的安全组。详情请参见表 security_groups字段数据结构说明。
 
@@ -315,7 +315,7 @@ class CreateServers:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateServers.
+        r"""Sets the security_groups of this CreateServers.
 
         指定裸金属服务器的安全组。详情请参见表 security_groups字段数据结构说明。
 
@@ -326,7 +326,7 @@ class CreateServers:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateServers.
+        r"""Gets the nics of this CreateServers.
 
         指定裸金属服务器的网卡信息。详情请参见表 nics字段数据结构说明。约束：一个裸金属服务器最多挂载2个网卡，参数中第一个网卡会作为裸金属服务器的主网卡。若用户指定了多组网卡参数，需保证各组参数都属于同一VPC。
 
@@ -337,7 +337,7 @@ class CreateServers:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateServers.
+        r"""Sets the nics of this CreateServers.
 
         指定裸金属服务器的网卡信息。详情请参见表 nics字段数据结构说明。约束：一个裸金属服务器最多挂载2个网卡，参数中第一个网卡会作为裸金属服务器的主网卡。若用户指定了多组网卡参数，需保证各组参数都属于同一VPC。
 
@@ -348,7 +348,7 @@ class CreateServers:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateServers.
+        r"""Gets the availability_zone of this CreateServers.
 
         裸金属服务器对应可用区信息，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 
@@ -359,7 +359,7 @@ class CreateServers:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateServers.
+        r"""Sets the availability_zone of this CreateServers.
 
         裸金属服务器对应可用区信息，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 
@@ -370,7 +370,7 @@ class CreateServers:
 
     @property
     def vpcid(self):
-        """Gets the vpcid of this CreateServers.
+        r"""Gets the vpcid of this CreateServers.
 
         创建裸金属服务器所属虚拟私有云（VPC），需要指定已有VPC的ID，UUID格式。VPC的ID可以从网络控制台或者参考《虚拟私有云API参考》的“查询VPC”。
 
@@ -381,7 +381,7 @@ class CreateServers:
 
     @vpcid.setter
     def vpcid(self, vpcid):
-        """Sets the vpcid of this CreateServers.
+        r"""Sets the vpcid of this CreateServers.
 
         创建裸金属服务器所属虚拟私有云（VPC），需要指定已有VPC的ID，UUID格式。VPC的ID可以从网络控制台或者参考《虚拟私有云API参考》的“查询VPC”。
 
@@ -392,7 +392,7 @@ class CreateServers:
 
     @property
     def publicip(self):
-        """Gets the publicip of this CreateServers.
+        r"""Gets the publicip of this CreateServers.
 
         :return: The publicip of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.PublicIp`
@@ -401,7 +401,7 @@ class CreateServers:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this CreateServers.
+        r"""Sets the publicip of this CreateServers.
 
         :param publicip: The publicip of this CreateServers.
         :type publicip: :class:`huaweicloudsdkbms.v1.PublicIp`
@@ -410,7 +410,7 @@ class CreateServers:
 
     @property
     def count(self):
-        """Gets the count of this CreateServers.
+        r"""Gets the count of this CreateServers.
 
         创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为100。
 
@@ -421,7 +421,7 @@ class CreateServers:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateServers.
+        r"""Sets the count of this CreateServers.
 
         创建裸金属服务器的数量。约束：不传该字段时默认取值为1。租户的配额足够时，最大值为100。
 
@@ -432,7 +432,7 @@ class CreateServers:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateServers.
+        r"""Gets the root_volume of this CreateServers.
 
         :return: The root_volume of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.RootVolume`
@@ -441,7 +441,7 @@ class CreateServers:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateServers.
+        r"""Sets the root_volume of this CreateServers.
 
         :param root_volume: The root_volume of this CreateServers.
         :type root_volume: :class:`huaweicloudsdkbms.v1.RootVolume`
@@ -450,7 +450,7 @@ class CreateServers:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this CreateServers.
+        r"""Gets the data_volumes of this CreateServers.
 
         裸金属服务器对应数据盘相关配置。每一个数据结构代表一个待创建的数据盘。详情请参见表 data_volumes字段数据结构说明。约束：目前裸金属服务器最多可挂载60块云硬盘（包括系统盘和数据盘）。
 
@@ -461,7 +461,7 @@ class CreateServers:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this CreateServers.
+        r"""Sets the data_volumes of this CreateServers.
 
         裸金属服务器对应数据盘相关配置。每一个数据结构代表一个待创建的数据盘。详情请参见表 data_volumes字段数据结构说明。约束：目前裸金属服务器最多可挂载60块云硬盘（包括系统盘和数据盘）。
 
@@ -472,7 +472,7 @@ class CreateServers:
 
     @property
     def extendparam(self):
-        """Gets the extendparam of this CreateServers.
+        r"""Gets the extendparam of this CreateServers.
 
         :return: The extendparam of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.ExtendParam`
@@ -481,7 +481,7 @@ class CreateServers:
 
     @extendparam.setter
     def extendparam(self, extendparam):
-        """Sets the extendparam of this CreateServers.
+        r"""Sets the extendparam of this CreateServers.
 
         :param extendparam: The extendparam of this CreateServers.
         :type extendparam: :class:`huaweicloudsdkbms.v1.ExtendParam`
@@ -490,7 +490,7 @@ class CreateServers:
 
     @property
     def scheduler_hints(self):
-        """Gets the scheduler_hints of this CreateServers.
+        r"""Gets the scheduler_hints of this CreateServers.
 
         :return: The scheduler_hints of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.CreateSchedulerHints`
@@ -499,7 +499,7 @@ class CreateServers:
 
     @scheduler_hints.setter
     def scheduler_hints(self, scheduler_hints):
-        """Sets the scheduler_hints of this CreateServers.
+        r"""Sets the scheduler_hints of this CreateServers.
 
         :param scheduler_hints: The scheduler_hints of this CreateServers.
         :type scheduler_hints: :class:`huaweicloudsdkbms.v1.CreateSchedulerHints`
@@ -508,7 +508,7 @@ class CreateServers:
 
     @property
     def server_tags(self):
-        """Gets the server_tags of this CreateServers.
+        r"""Gets the server_tags of this CreateServers.
 
         裸金属服务器的标签。详情请参见表 server_tags字段数据结构说明。 说明：创建裸金属服务器时，一台裸金属服务器最多可以添加10个标签。其中，__type_baremetal为系统内部标签，因此实际能添加的标签为9个。
 
@@ -519,7 +519,7 @@ class CreateServers:
 
     @server_tags.setter
     def server_tags(self, server_tags):
-        """Sets the server_tags of this CreateServers.
+        r"""Sets the server_tags of this CreateServers.
 
         裸金属服务器的标签。详情请参见表 server_tags字段数据结构说明。 说明：创建裸金属服务器时，一台裸金属服务器最多可以添加10个标签。其中，__type_baremetal为系统内部标签，因此实际能添加的标签为9个。
 

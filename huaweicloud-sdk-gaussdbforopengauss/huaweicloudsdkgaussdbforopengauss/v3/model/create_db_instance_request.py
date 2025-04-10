@@ -27,7 +27,7 @@ class CreateDbInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateDbInstanceRequest
+        r"""CreateDbInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDbInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDbInstanceRequest.
+        r"""Gets the x_language of this CreateDbInstanceRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class CreateDbInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDbInstanceRequest.
+        r"""Sets the x_language of this CreateDbInstanceRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class CreateDbInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDbInstanceRequest.
+        r"""Gets the body of this CreateDbInstanceRequest.
 
         :return: The body of this CreateDbInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceRequestBody`
@@ -81,7 +81,7 @@ class CreateDbInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDbInstanceRequest.
+        r"""Sets the body of this CreateDbInstanceRequest.
 
         :param body: The body of this CreateDbInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceRequestBody`

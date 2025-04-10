@@ -27,7 +27,7 @@ class QueueProperty:
     }
 
     def __init__(self, key=None, value=None):
-        """QueueProperty
+        r"""QueueProperty
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueueProperty:
 
     @property
     def key(self):
-        """Gets the key of this QueueProperty.
+        r"""Gets the key of this QueueProperty.
 
         返回属性值对应的key值 computeEngine.maxInstances, 队列能启动的最大spark driver数量 computeEngine.maxPrefetchInstance, 队列预先启动的最大spark driver数量 job.maxConcurrent,单个spark driver能同时运行的最大任务数量 multipleSc.support,是否支持设置多个spark driver
 
@@ -59,7 +59,7 @@ class QueueProperty:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this QueueProperty.
+        r"""Sets the key of this QueueProperty.
 
         返回属性值对应的key值 computeEngine.maxInstances, 队列能启动的最大spark driver数量 computeEngine.maxPrefetchInstance, 队列预先启动的最大spark driver数量 job.maxConcurrent,单个spark driver能同时运行的最大任务数量 multipleSc.support,是否支持设置多个spark driver
 
@@ -70,7 +70,7 @@ class QueueProperty:
 
     @property
     def value(self):
-        """Gets the value of this QueueProperty.
+        r"""Gets the value of this QueueProperty.
 
         :return: The value of this QueueProperty.
         :rtype: str
@@ -79,7 +79,7 @@ class QueueProperty:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QueueProperty.
+        r"""Sets the value of this QueueProperty.
 
         :param value: The value of this QueueProperty.
         :type value: str

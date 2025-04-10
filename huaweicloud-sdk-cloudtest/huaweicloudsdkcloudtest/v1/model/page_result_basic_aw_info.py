@@ -33,7 +33,7 @@ class PageResultBasicAWInfo:
     }
 
     def __init__(self, page_list=None, page_no=None, page_size=None, total_page=None, total_size=None):
-        """PageResultBasicAWInfo
+        r"""PageResultBasicAWInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PageResultBasicAWInfo:
 
     @property
     def page_list(self):
-        """Gets the page_list of this PageResultBasicAWInfo.
+        r"""Gets the page_list of this PageResultBasicAWInfo.
 
         当前页数据
 
@@ -82,7 +82,7 @@ class PageResultBasicAWInfo:
 
     @page_list.setter
     def page_list(self, page_list):
-        """Sets the page_list of this PageResultBasicAWInfo.
+        r"""Sets the page_list of this PageResultBasicAWInfo.
 
         当前页数据
 
@@ -93,7 +93,7 @@ class PageResultBasicAWInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this PageResultBasicAWInfo.
+        r"""Gets the page_no of this PageResultBasicAWInfo.
 
         当前页数
 
@@ -104,7 +104,7 @@ class PageResultBasicAWInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this PageResultBasicAWInfo.
+        r"""Sets the page_no of this PageResultBasicAWInfo.
 
         当前页数
 
@@ -115,7 +115,7 @@ class PageResultBasicAWInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this PageResultBasicAWInfo.
+        r"""Gets the page_size of this PageResultBasicAWInfo.
 
         每页条数
 
@@ -126,7 +126,7 @@ class PageResultBasicAWInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this PageResultBasicAWInfo.
+        r"""Sets the page_size of this PageResultBasicAWInfo.
 
         每页条数
 
@@ -137,7 +137,7 @@ class PageResultBasicAWInfo:
 
     @property
     def total_page(self):
-        """Gets the total_page of this PageResultBasicAWInfo.
+        r"""Gets the total_page of this PageResultBasicAWInfo.
 
         总页数
 
@@ -148,7 +148,7 @@ class PageResultBasicAWInfo:
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this PageResultBasicAWInfo.
+        r"""Sets the total_page of this PageResultBasicAWInfo.
 
         总页数
 
@@ -159,7 +159,7 @@ class PageResultBasicAWInfo:
 
     @property
     def total_size(self):
-        """Gets the total_size of this PageResultBasicAWInfo.
+        r"""Gets the total_size of this PageResultBasicAWInfo.
 
         总条数
 
@@ -170,7 +170,7 @@ class PageResultBasicAWInfo:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this PageResultBasicAWInfo.
+        r"""Sets the total_size of this PageResultBasicAWInfo.
 
         总条数
 

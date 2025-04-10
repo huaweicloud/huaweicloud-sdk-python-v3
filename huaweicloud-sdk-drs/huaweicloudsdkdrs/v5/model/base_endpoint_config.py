@@ -27,7 +27,7 @@ class BaseEndpointConfig:
     }
 
     def __init__(self, is_target_readonly=None, node_num=None):
-        """BaseEndpointConfig
+        r"""BaseEndpointConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BaseEndpointConfig:
 
     @property
     def is_target_readonly(self):
-        """Gets the is_target_readonly of this BaseEndpointConfig.
+        r"""Gets the is_target_readonly of this BaseEndpointConfig.
 
         目标实例是否设置为为只读。 - MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
 
@@ -61,7 +61,7 @@ class BaseEndpointConfig:
 
     @is_target_readonly.setter
     def is_target_readonly(self, is_target_readonly):
-        """Sets the is_target_readonly of this BaseEndpointConfig.
+        r"""Sets the is_target_readonly of this BaseEndpointConfig.
 
         目标实例是否设置为为只读。 - MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
 
@@ -72,7 +72,7 @@ class BaseEndpointConfig:
 
     @property
     def node_num(self):
-        """Gets the node_num of this BaseEndpointConfig.
+        r"""Gets the node_num of this BaseEndpointConfig.
 
         Redis集群到GeminiDB Redis迁移场景填写，连接源端Redis集群的子任务个数，输入值在1到16之间，且输入值不能大于源端Redis集群的分片个数，请根据源端Redis集群的规模合理选择。建议集群的每4个分片设置1个源端分片个数，即每1个子任务连接源端集群的4个分片。
 
@@ -83,7 +83,7 @@ class BaseEndpointConfig:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this BaseEndpointConfig.
+        r"""Sets the node_num of this BaseEndpointConfig.
 
         Redis集群到GeminiDB Redis迁移场景填写，连接源端Redis集群的子任务个数，输入值在1到16之间，且输入值不能大于源端Redis集群的分片个数，请根据源端Redis集群的规模合理选择。建议集群的每4个分片设置1个源端分片个数，即每1个子任务连接源端集群的4个分片。
 

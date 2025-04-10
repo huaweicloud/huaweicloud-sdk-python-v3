@@ -27,7 +27,7 @@ class BandwidthStatisticsTimelineItem:
     }
 
     def __init__(self, key=None, timeline=None):
-        """BandwidthStatisticsTimelineItem
+        r"""BandwidthStatisticsTimelineItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BandwidthStatisticsTimelineItem:
 
     @property
     def key(self):
-        """Gets the key of this BandwidthStatisticsTimelineItem.
+        r"""Gets the key of this BandwidthStatisticsTimelineItem.
 
         键值，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）
 
@@ -61,7 +61,7 @@ class BandwidthStatisticsTimelineItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BandwidthStatisticsTimelineItem.
+        r"""Sets the key of this BandwidthStatisticsTimelineItem.
 
         键值，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）
 
@@ -72,7 +72,7 @@ class BandwidthStatisticsTimelineItem:
 
     @property
     def timeline(self):
-        """Gets the timeline of this BandwidthStatisticsTimelineItem.
+        r"""Gets the timeline of this BandwidthStatisticsTimelineItem.
 
         对应键值的时间线统计数据，包含两个字段，time字段值为时间点；num字段为time对应时间点与前一时间点间隔内的统计数值
 
@@ -83,7 +83,7 @@ class BandwidthStatisticsTimelineItem:
 
     @timeline.setter
     def timeline(self, timeline):
-        """Sets the timeline of this BandwidthStatisticsTimelineItem.
+        r"""Sets the timeline of this BandwidthStatisticsTimelineItem.
 
         对应键值的时间线统计数据，包含两个字段，time字段值为时间点；num字段为time对应时间点与前一时间点间隔内的统计数值
 

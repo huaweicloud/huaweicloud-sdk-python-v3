@@ -28,7 +28,7 @@ class ListWafCustomRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListWafCustomRuleResponse
+        r"""ListWafCustomRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWafCustomRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWafCustomRuleResponse.
+        r"""Gets the total of this ListWafCustomRuleResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ListWafCustomRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWafCustomRuleResponse.
+        r"""Sets the total of this ListWafCustomRuleResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ListWafCustomRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListWafCustomRuleResponse.
+        r"""Gets the items of this ListWafCustomRuleResponse.
 
         items
 
@@ -84,7 +84,7 @@ class ListWafCustomRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListWafCustomRuleResponse.
+        r"""Sets the items of this ListWafCustomRuleResponse.
 
         items
 

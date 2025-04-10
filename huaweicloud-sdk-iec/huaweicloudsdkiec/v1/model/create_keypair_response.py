@@ -34,7 +34,7 @@ class CreateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, name=None, public_key=None, private_key=None, user_id=None, fingerprint=None):
-        """CreateKeypairResponse
+        r"""CreateKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateKeypairResponse.
+        r"""Gets the name of this CreateKeypairResponse.
 
         密钥对名称。
 
@@ -83,7 +83,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateKeypairResponse.
+        r"""Sets the name of this CreateKeypairResponse.
 
         密钥对名称。
 
@@ -94,7 +94,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @property
     def public_key(self):
-        """Gets the public_key of this CreateKeypairResponse.
+        r"""Gets the public_key of this CreateKeypairResponse.
 
         公钥。
 
@@ -105,7 +105,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this CreateKeypairResponse.
+        r"""Sets the public_key of this CreateKeypairResponse.
 
         公钥。
 
@@ -116,7 +116,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this CreateKeypairResponse.
+        r"""Gets the private_key of this CreateKeypairResponse.
 
         私钥。
 
@@ -127,7 +127,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CreateKeypairResponse.
+        r"""Sets the private_key of this CreateKeypairResponse.
 
         私钥。
 
@@ -138,7 +138,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateKeypairResponse.
+        r"""Gets the user_id of this CreateKeypairResponse.
 
         用户ID。
 
@@ -149,7 +149,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateKeypairResponse.
+        r"""Sets the user_id of this CreateKeypairResponse.
 
         用户ID。
 
@@ -160,7 +160,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this CreateKeypairResponse.
+        r"""Gets the fingerprint of this CreateKeypairResponse.
 
         指纹。
 
@@ -171,7 +171,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this CreateKeypairResponse.
+        r"""Sets the fingerprint of this CreateKeypairResponse.
 
         指纹。
 

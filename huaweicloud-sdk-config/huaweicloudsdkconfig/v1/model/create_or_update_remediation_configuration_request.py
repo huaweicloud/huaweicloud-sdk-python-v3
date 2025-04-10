@@ -27,7 +27,7 @@ class CreateOrUpdateRemediationConfigurationRequest:
     }
 
     def __init__(self, policy_assignment_id=None, body=None):
-        """CreateOrUpdateRemediationConfigurationRequest
+        r"""CreateOrUpdateRemediationConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOrUpdateRemediationConfigurationRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this CreateOrUpdateRemediationConfigurationRequest.
+        r"""Gets the policy_assignment_id of this CreateOrUpdateRemediationConfigurationRequest.
 
         规则ID
 
@@ -60,7 +60,7 @@ class CreateOrUpdateRemediationConfigurationRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this CreateOrUpdateRemediationConfigurationRequest.
+        r"""Sets the policy_assignment_id of this CreateOrUpdateRemediationConfigurationRequest.
 
         规则ID
 
@@ -71,7 +71,7 @@ class CreateOrUpdateRemediationConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrUpdateRemediationConfigurationRequest.
+        r"""Gets the body of this CreateOrUpdateRemediationConfigurationRequest.
 
         :return: The body of this CreateOrUpdateRemediationConfigurationRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.RemediationConfigurationRequestBody`
@@ -80,7 +80,7 @@ class CreateOrUpdateRemediationConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrUpdateRemediationConfigurationRequest.
+        r"""Sets the body of this CreateOrUpdateRemediationConfigurationRequest.
 
         :param body: The body of this CreateOrUpdateRemediationConfigurationRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.RemediationConfigurationRequestBody`

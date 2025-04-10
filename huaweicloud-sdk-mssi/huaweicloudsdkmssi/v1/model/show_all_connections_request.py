@@ -29,7 +29,7 @@ class ShowAllConnectionsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ShowAllConnectionsRequest
+        r"""ShowAllConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowAllConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAllConnectionsRequest.
+        r"""Gets the offset of this ShowAllConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -66,7 +66,7 @@ class ShowAllConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAllConnectionsRequest.
+        r"""Sets the offset of this ShowAllConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -77,7 +77,7 @@ class ShowAllConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAllConnectionsRequest.
+        r"""Gets the limit of this ShowAllConnectionsRequest.
 
         每页显示的条目数量
 
@@ -88,7 +88,7 @@ class ShowAllConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAllConnectionsRequest.
+        r"""Sets the limit of this ShowAllConnectionsRequest.
 
         每页显示的条目数量
 
@@ -99,7 +99,7 @@ class ShowAllConnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowAllConnectionsRequest.
+        r"""Gets the name of this ShowAllConnectionsRequest.
 
         模糊查询参数
 
@@ -110,7 +110,7 @@ class ShowAllConnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAllConnectionsRequest.
+        r"""Sets the name of this ShowAllConnectionsRequest.
 
         模糊查询参数
 

@@ -32,7 +32,7 @@ class ListGetChildListResponse(SdkResponse):
     }
 
     def __init__(self, result=None, data=None, errors=None, page_info=None):
-        """ListGetChildListResponse
+        r"""ListGetChildListResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListGetChildListResponse.
+        r"""Gets the result of this ListGetChildListResponse.
 
         **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
@@ -76,7 +76,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListGetChildListResponse.
+        r"""Sets the result of this ListGetChildListResponse.
 
         **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
@@ -87,7 +87,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListGetChildListResponse.
+        r"""Gets the data of this ListGetChildListResponse.
 
         **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -98,7 +98,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListGetChildListResponse.
+        r"""Sets the data of this ListGetChildListResponse.
 
         **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -109,7 +109,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this ListGetChildListResponse.
+        r"""Gets the errors of this ListGetChildListResponse.
 
         **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -120,7 +120,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this ListGetChildListResponse.
+        r"""Sets the errors of this ListGetChildListResponse.
 
         **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -131,7 +131,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGetChildListResponse.
+        r"""Gets the page_info of this ListGetChildListResponse.
 
         :return: The page_info of this ListGetChildListResponse.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PageInfoViewDTO`
@@ -140,7 +140,7 @@ class ListGetChildListResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGetChildListResponse.
+        r"""Sets the page_info of this ListGetChildListResponse.
 
         :param page_info: The page_info of this ListGetChildListResponse.
         :type page_info: :class:`huaweicloudsdkidmeclassicapi.v1.PageInfoViewDTO`

@@ -29,7 +29,7 @@ class ShowMonthUsageReq:
     }
 
     def __init__(self, sim_card_ids=None, iccids=None, billing_cycles=None):
-        """ShowMonthUsageReq
+        r"""ShowMonthUsageReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowMonthUsageReq:
 
     @property
     def sim_card_ids(self):
-        """Gets the sim_card_ids of this ShowMonthUsageReq.
+        r"""Gets the sim_card_ids of this ShowMonthUsageReq.
 
         sim卡id列表，最多支持传入500个SIM卡id。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -67,7 +67,7 @@ class ShowMonthUsageReq:
 
     @sim_card_ids.setter
     def sim_card_ids(self, sim_card_ids):
-        """Sets the sim_card_ids of this ShowMonthUsageReq.
+        r"""Sets the sim_card_ids of this ShowMonthUsageReq.
 
         sim卡id列表，最多支持传入500个SIM卡id。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -78,7 +78,7 @@ class ShowMonthUsageReq:
 
     @property
     def iccids(self):
-        """Gets the iccids of this ShowMonthUsageReq.
+        r"""Gets the iccids of this ShowMonthUsageReq.
 
         iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -89,7 +89,7 @@ class ShowMonthUsageReq:
 
     @iccids.setter
     def iccids(self, iccids):
-        """Sets the iccids of this ShowMonthUsageReq.
+        r"""Sets the iccids of this ShowMonthUsageReq.
 
         iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -100,7 +100,7 @@ class ShowMonthUsageReq:
 
     @property
     def billing_cycles(self):
-        """Gets the billing_cycles of this ShowMonthUsageReq.
+        r"""Gets the billing_cycles of this ShowMonthUsageReq.
 
         账期，最多支持传入本月在内的6个月账期，例如[2022-07, 2022-06]，不支持传入未来账期。
 
@@ -111,7 +111,7 @@ class ShowMonthUsageReq:
 
     @billing_cycles.setter
     def billing_cycles(self, billing_cycles):
-        """Sets the billing_cycles of this ShowMonthUsageReq.
+        r"""Sets the billing_cycles of this ShowMonthUsageReq.
 
         账期，最多支持传入本月在内的6个月账期，例如[2022-07, 2022-06]，不支持传入未来账期。
 

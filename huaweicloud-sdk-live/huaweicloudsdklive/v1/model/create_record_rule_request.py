@@ -25,7 +25,7 @@ class CreateRecordRuleRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRecordRuleRequest
+        r"""CreateRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRecordRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordRuleRequest.
+        r"""Gets the body of this CreateRecordRuleRequest.
 
         :return: The body of this CreateRecordRuleRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordRuleRequest`
@@ -52,7 +52,7 @@ class CreateRecordRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordRuleRequest.
+        r"""Sets the body of this CreateRecordRuleRequest.
 
         :param body: The body of this CreateRecordRuleRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordRuleRequest`

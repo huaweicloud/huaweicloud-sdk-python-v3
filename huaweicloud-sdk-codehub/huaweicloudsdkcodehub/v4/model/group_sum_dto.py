@@ -25,7 +25,7 @@ class GroupSumDto:
     }
 
     def __init__(self, open_merge_requests_count=None):
-        """GroupSumDto
+        r"""GroupSumDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GroupSumDto:
 
     @property
     def open_merge_requests_count(self):
-        """Gets the open_merge_requests_count of this GroupSumDto.
+        r"""Gets the open_merge_requests_count of this GroupSumDto.
 
         打开状态MR计数
 
@@ -54,7 +54,7 @@ class GroupSumDto:
 
     @open_merge_requests_count.setter
     def open_merge_requests_count(self, open_merge_requests_count):
-        """Sets the open_merge_requests_count of this GroupSumDto.
+        r"""Sets the open_merge_requests_count of this GroupSumDto.
 
         打开状态MR计数
 

@@ -32,7 +32,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
     }
 
     def __init__(self, share_space_id=None, status=None, desktop_id=None, initiator_type=None):
-        """CreateRemoteAssistanceResponse
+        r"""CreateRemoteAssistanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @property
     def share_space_id(self):
-        """Gets the share_space_id of this CreateRemoteAssistanceResponse.
+        r"""Gets the share_space_id of this CreateRemoteAssistanceResponse.
 
         协同空间ID
 
@@ -76,7 +76,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @share_space_id.setter
     def share_space_id(self, share_space_id):
-        """Sets the share_space_id of this CreateRemoteAssistanceResponse.
+        r"""Sets the share_space_id of this CreateRemoteAssistanceResponse.
 
         协同空间ID
 
@@ -87,7 +87,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRemoteAssistanceResponse.
+        r"""Gets the status of this CreateRemoteAssistanceResponse.
 
         协同空间状态 - OPEN 协同空间已创建 - CLOSE 协同空间已关闭 - WAIT_USER_CONFIRM 等待用户确认进入远程协助 - WAIT_USER_ACCESS 等待用户进入远程协助
 
@@ -98,7 +98,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRemoteAssistanceResponse.
+        r"""Sets the status of this CreateRemoteAssistanceResponse.
 
         协同空间状态 - OPEN 协同空间已创建 - CLOSE 协同空间已关闭 - WAIT_USER_CONFIRM 等待用户确认进入远程协助 - WAIT_USER_ACCESS 等待用户进入远程协助
 
@@ -109,7 +109,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this CreateRemoteAssistanceResponse.
+        r"""Gets the desktop_id of this CreateRemoteAssistanceResponse.
 
         桌面的desktopId
 
@@ -120,7 +120,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this CreateRemoteAssistanceResponse.
+        r"""Sets the desktop_id of this CreateRemoteAssistanceResponse.
 
         桌面的desktopId
 
@@ -131,7 +131,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @property
     def initiator_type(self):
-        """Gets the initiator_type of this CreateRemoteAssistanceResponse.
+        r"""Gets the initiator_type of this CreateRemoteAssistanceResponse.
 
         发起方类型 - ADMIN_INITIATE 管理员发起 - ENDUSER_INITIATE 终端用户发起
 
@@ -142,7 +142,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
     @initiator_type.setter
     def initiator_type(self, initiator_type):
-        """Sets the initiator_type of this CreateRemoteAssistanceResponse.
+        r"""Sets the initiator_type of this CreateRemoteAssistanceResponse.
 
         发起方类型 - ADMIN_INITIATE 管理员发起 - ENDUSER_INITIATE 终端用户发起
 

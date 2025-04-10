@@ -37,7 +37,7 @@ class ListSmartChatRoomsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, model_name=None, start_time=None, end_time=None):
-        """ListSmartChatRoomsRequest
+        r"""ListSmartChatRoomsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListSmartChatRoomsRequest.
+        r"""Gets the x_app_user_id of this ListSmartChatRoomsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -96,7 +96,7 @@ class ListSmartChatRoomsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListSmartChatRoomsRequest.
+        r"""Sets the x_app_user_id of this ListSmartChatRoomsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -107,7 +107,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSmartChatRoomsRequest.
+        r"""Gets the offset of this ListSmartChatRoomsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -118,7 +118,7 @@ class ListSmartChatRoomsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSmartChatRoomsRequest.
+        r"""Sets the offset of this ListSmartChatRoomsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -129,7 +129,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSmartChatRoomsRequest.
+        r"""Gets the limit of this ListSmartChatRoomsRequest.
 
         每页显示的条目数量。
 
@@ -140,7 +140,7 @@ class ListSmartChatRoomsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSmartChatRoomsRequest.
+        r"""Sets the limit of this ListSmartChatRoomsRequest.
 
         每页显示的条目数量。
 
@@ -151,7 +151,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def room_name(self):
-        """Gets the room_name of this ListSmartChatRoomsRequest.
+        r"""Gets the room_name of this ListSmartChatRoomsRequest.
 
         按智能交互对话名称模糊查询。
 
@@ -162,7 +162,7 @@ class ListSmartChatRoomsRequest:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this ListSmartChatRoomsRequest.
+        r"""Sets the room_name of this ListSmartChatRoomsRequest.
 
         按智能交互对话名称模糊查询。
 
@@ -173,7 +173,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this ListSmartChatRoomsRequest.
+        r"""Gets the model_name of this ListSmartChatRoomsRequest.
 
         按形象名称模糊查询。
 
@@ -184,7 +184,7 @@ class ListSmartChatRoomsRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this ListSmartChatRoomsRequest.
+        r"""Sets the model_name of this ListSmartChatRoomsRequest.
 
         按形象名称模糊查询。
 
@@ -195,7 +195,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSmartChatRoomsRequest.
+        r"""Gets the start_time of this ListSmartChatRoomsRequest.
 
         最近智能交互对话任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -206,7 +206,7 @@ class ListSmartChatRoomsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSmartChatRoomsRequest.
+        r"""Sets the start_time of this ListSmartChatRoomsRequest.
 
         最近智能交互对话任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -217,7 +217,7 @@ class ListSmartChatRoomsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSmartChatRoomsRequest.
+        r"""Gets the end_time of this ListSmartChatRoomsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -228,7 +228,7 @@ class ListSmartChatRoomsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSmartChatRoomsRequest.
+        r"""Sets the end_time of this ListSmartChatRoomsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 

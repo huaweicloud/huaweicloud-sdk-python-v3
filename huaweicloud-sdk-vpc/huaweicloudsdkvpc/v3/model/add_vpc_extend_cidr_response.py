@@ -28,7 +28,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
     }
 
     def __init__(self, vpc=None, request_id=None):
-        """AddVpcExtendCidrResponse
+        r"""AddVpcExtendCidrResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
 
     @property
     def vpc(self):
-        """Gets the vpc of this AddVpcExtendCidrResponse.
+        r"""Gets the vpc of this AddVpcExtendCidrResponse.
 
         :return: The vpc of this AddVpcExtendCidrResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.Vpc`
@@ -60,7 +60,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this AddVpcExtendCidrResponse.
+        r"""Sets the vpc of this AddVpcExtendCidrResponse.
 
         :param vpc: The vpc of this AddVpcExtendCidrResponse.
         :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`
@@ -69,7 +69,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddVpcExtendCidrResponse.
+        r"""Gets the request_id of this AddVpcExtendCidrResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class AddVpcExtendCidrResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddVpcExtendCidrResponse.
+        r"""Sets the request_id of this AddVpcExtendCidrResponse.
 
         请求ID
 

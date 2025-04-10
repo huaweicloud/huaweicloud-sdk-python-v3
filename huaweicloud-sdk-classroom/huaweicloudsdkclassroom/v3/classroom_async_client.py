@@ -34,7 +34,7 @@ class ClassroomAsyncClient(Client):
         return client_builder
 
     def apply_judgement_async(self, request):
-        """下发判题任务
+        r"""下发判题任务
 
         下发判题任务，根据回调地址、代码来源、源代码文本、语言类型、超时时长、输出类型，触发后台代码编译运行和判题
         
@@ -99,7 +99,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_judgement_detail_async(self, request):
-        """获取判题结果详情
+        r"""获取判题结果详情
 
         根据判题任务ID获取判题结果详情
         
@@ -164,7 +164,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_judgement_file_async(self, request):
-        """下载判题结果文件
+        r"""下载判题结果文件
 
         根据文件id或图片id下载输出结果文件
         
@@ -229,7 +229,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def execute_exercise_async(self, request):
-        """习题判题
+        r"""习题判题
 
         习题判题
         
@@ -298,7 +298,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_exercises_async(self, request):
-        """查询习题库下习题列表
+        r"""查询习题库下习题列表
 
         查询习题库下习题列表
         
@@ -365,7 +365,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_packages_async(self, request):
-        """查询当前租户的习题库列表
+        r"""查询当前租户的习题库列表
 
         查询当前租户的习题库列表
         
@@ -430,7 +430,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_exercise_detail_async(self, request):
-        """查询单个习题详情
+        r"""查询单个习题详情
 
         查询单个习题详情
         
@@ -495,7 +495,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_package_detail_async(self, request):
-        """查询单个习题库详情
+        r"""查询单个习题库详情
 
         查询单个习题库详情
         
@@ -560,7 +560,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_all_difficults_async(self, request):
-        """获取习题所有难度
+        r"""获取习题所有难度
 
         获取习题所有难度
         
@@ -623,7 +623,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_my_knowledge_points_async(self, request):
-        """获取自身习题知识点
+        r"""获取自身习题知识点
 
         获取自身习题知识点
         
@@ -688,7 +688,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_classroom_members_async(self, request):
-        """根据课堂ID获取指定课堂的课堂成员列表
+        r"""根据课堂ID获取指定课堂的课堂成员列表
 
         根据课堂ID获取指定课堂的课堂成员列表，支持分页，搜索字段默认同时匹配姓名，学号，用户名，班级。
         
@@ -759,7 +759,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_classrooms_async(self, request):
-        """获取当前用户的课堂列表
+        r"""获取当前用户的课堂列表
 
         获取当前用户的课堂列表，课堂课表分为我创建的课堂，我加入的课堂以及所有课堂，支持分页查询。
         
@@ -828,7 +828,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_classroom_detail_async(self, request):
-        """根据课堂ID获取指定课堂的详细信息
+        r"""根据课堂ID获取指定课堂的详细信息
 
         根据课堂ID获取指定课堂的详细信息
         
@@ -893,7 +893,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_classroom_member_jobs_async(self, request):
-        """查询课堂下指定成员的作业信息
+        r"""查询课堂下指定成员的作业信息
 
         查询课堂下指定成员的作业信息
         
@@ -964,7 +964,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_jobs_async(self, request):
-        """查询指定课堂下的作业列表信息
+        r"""查询指定课堂下的作业列表信息
 
         查询指定课堂下的作业列表信息，支持分页查询。
         
@@ -1035,7 +1035,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def list_member_job_records_async(self, request):
-        """查询学生函数习题提交记录信息
+        r"""查询学生函数习题提交记录信息
 
         查询学生指定作业的习题提交记录信息(针对函数习题)
         
@@ -1108,7 +1108,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_job_detail_async(self, request):
-        """根据作业ID，查询指定作业的信息
+        r"""根据作业ID，查询指定作业的信息
 
         根据作业ID，查询指定作业的信息
         
@@ -1173,7 +1173,7 @@ class ClassroomAsyncClient(Client):
         return http_info
 
     def show_job_exercises_async(self, request):
-        """查询指定作业下的习题信息
+        r"""查询指定作业下的习题信息
 
         查询指定作业下的习题信息
         

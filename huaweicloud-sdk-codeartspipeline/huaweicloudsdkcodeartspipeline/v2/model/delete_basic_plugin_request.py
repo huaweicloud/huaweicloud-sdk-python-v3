@@ -31,7 +31,7 @@ class DeleteBasicPluginRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, type=None, version=None):
-        """DeleteBasicPluginRequest
+        r"""DeleteBasicPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeleteBasicPluginRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeleteBasicPluginRequest.
+        r"""Gets the domain_id of this DeleteBasicPluginRequest.
 
         租户ID
 
@@ -72,7 +72,7 @@ class DeleteBasicPluginRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeleteBasicPluginRequest.
+        r"""Sets the domain_id of this DeleteBasicPluginRequest.
 
         租户ID
 
@@ -83,7 +83,7 @@ class DeleteBasicPluginRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this DeleteBasicPluginRequest.
+        r"""Gets the plugin_name of this DeleteBasicPluginRequest.
 
         需要删除的插件名
 
@@ -94,7 +94,7 @@ class DeleteBasicPluginRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this DeleteBasicPluginRequest.
+        r"""Sets the plugin_name of this DeleteBasicPluginRequest.
 
         需要删除的插件名
 
@@ -105,7 +105,7 @@ class DeleteBasicPluginRequest:
 
     @property
     def type(self):
-        """Gets the type of this DeleteBasicPluginRequest.
+        r"""Gets the type of this DeleteBasicPluginRequest.
 
         删除类型，all 代表删除整个插件，single代表删除单个插件版本
 
@@ -116,7 +116,7 @@ class DeleteBasicPluginRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteBasicPluginRequest.
+        r"""Sets the type of this DeleteBasicPluginRequest.
 
         删除类型，all 代表删除整个插件，single代表删除单个插件版本
 
@@ -127,7 +127,7 @@ class DeleteBasicPluginRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeleteBasicPluginRequest.
+        r"""Gets the version of this DeleteBasicPluginRequest.
 
         需要删除的插件版本
 
@@ -138,7 +138,7 @@ class DeleteBasicPluginRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeleteBasicPluginRequest.
+        r"""Sets the version of this DeleteBasicPluginRequest.
 
         需要删除的插件版本
 

@@ -25,7 +25,7 @@ class StackSetCreateTimePrimitiveTypeHolder:
     }
 
     def __init__(self, create_time=None):
-        """StackSetCreateTimePrimitiveTypeHolder
+        r"""StackSetCreateTimePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetCreateTimePrimitiveTypeHolder:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StackSetCreateTimePrimitiveTypeHolder.
+        r"""Gets the create_time of this StackSetCreateTimePrimitiveTypeHolder.
 
         资源栈集的创建时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -54,7 +54,7 @@ class StackSetCreateTimePrimitiveTypeHolder:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StackSetCreateTimePrimitiveTypeHolder.
+        r"""Sets the create_time of this StackSetCreateTimePrimitiveTypeHolder.
 
         资源栈集的创建时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

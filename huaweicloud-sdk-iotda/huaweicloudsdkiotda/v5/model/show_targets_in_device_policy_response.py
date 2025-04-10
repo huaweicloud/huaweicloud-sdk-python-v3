@@ -28,7 +28,7 @@ class ShowTargetsInDevicePolicyResponse(SdkResponse):
     }
 
     def __init__(self, targets=None, page=None):
-        """ShowTargetsInDevicePolicyResponse
+        r"""ShowTargetsInDevicePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTargetsInDevicePolicyResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this ShowTargetsInDevicePolicyResponse.
+        r"""Gets the targets of this ShowTargetsInDevicePolicyResponse.
 
         策略绑定信息列表。
 
@@ -62,7 +62,7 @@ class ShowTargetsInDevicePolicyResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this ShowTargetsInDevicePolicyResponse.
+        r"""Sets the targets of this ShowTargetsInDevicePolicyResponse.
 
         策略绑定信息列表。
 
@@ -73,7 +73,7 @@ class ShowTargetsInDevicePolicyResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ShowTargetsInDevicePolicyResponse.
+        r"""Gets the page of this ShowTargetsInDevicePolicyResponse.
 
         :return: The page of this ShowTargetsInDevicePolicyResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ShowTargetsInDevicePolicyResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowTargetsInDevicePolicyResponse.
+        r"""Sets the page of this ShowTargetsInDevicePolicyResponse.
 
         :param page: The page of this ShowTargetsInDevicePolicyResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

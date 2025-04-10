@@ -31,7 +31,7 @@ class Grant:
     }
 
     def __init__(self, grantee=None, permission=None, delivered=None):
-        """Grant
+        r"""Grant
 
         The model defined in huaweicloud sdk
 
@@ -59,7 +59,7 @@ class Grant:
 
     @property
     def grantee(self):
-        """Gets the grantee of this Grant.
+        r"""Gets the grantee of this Grant.
 
         :return: The grantee of this Grant.
         :rtype: :class:`huaweicloudsdkobs.v1.Grantee`
@@ -68,7 +68,7 @@ class Grant:
 
     @grantee.setter
     def grantee(self, grantee):
-        """Sets the grantee of this Grant.
+        r"""Sets the grantee of this Grant.
 
         :param grantee: The grantee of this Grant.
         :type grantee: :class:`huaweicloudsdkobs.v1.Grantee`
@@ -77,7 +77,7 @@ class Grant:
 
     @property
     def permission(self):
-        """Gets the permission of this Grant.
+        r"""Gets the permission of this Grant.
 
         Permissions granted
 
@@ -88,7 +88,7 @@ class Grant:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this Grant.
+        r"""Sets the permission of this Grant.
 
         Permissions granted
 
@@ -99,7 +99,7 @@ class Grant:
 
     @property
     def delivered(self):
-        """Gets the delivered of this Grant.
+        r"""Gets the delivered of this Grant.
 
         Indicates whether the bucket ACL is applied to objects in the bucket.
 
@@ -110,7 +110,7 @@ class Grant:
 
     @delivered.setter
     def delivered(self, delivered):
-        """Sets the delivered of this Grant.
+        r"""Sets the delivered of this Grant.
 
         Indicates whether the bucket ACL is applied to objects in the bucket.
 

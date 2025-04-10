@@ -41,7 +41,7 @@ class CreateVirtualGateway:
     }
 
     def __init__(self, vpc_id=None, enterprise_router_id=None, name=None, description=None, local_ep_group=None, local_ep_group_ipv6=None, bgp_asn=None, enterprise_project_id=None, tags=None):
-        """CreateVirtualGateway
+        r"""CreateVirtualGateway
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class CreateVirtualGateway:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateVirtualGateway.
+        r"""Gets the vpc_id of this CreateVirtualGateway.
 
         虚拟网关接入的VPC的ID[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
@@ -108,7 +108,7 @@ class CreateVirtualGateway:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateVirtualGateway.
+        r"""Sets the vpc_id of this CreateVirtualGateway.
 
         虚拟网关接入的VPC的ID[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
@@ -119,7 +119,7 @@ class CreateVirtualGateway:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this CreateVirtualGateway.
+        r"""Gets the enterprise_router_id of this CreateVirtualGateway.
 
         虚拟网关接入的ER的ID，当选择创建接入ER的虚拟网关时必选。
 
@@ -130,7 +130,7 @@ class CreateVirtualGateway:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this CreateVirtualGateway.
+        r"""Sets the enterprise_router_id of this CreateVirtualGateway.
 
         虚拟网关接入的ER的ID，当选择创建接入ER的虚拟网关时必选。
 
@@ -141,7 +141,7 @@ class CreateVirtualGateway:
 
     @property
     def name(self):
-        """Gets the name of this CreateVirtualGateway.
+        r"""Gets the name of this CreateVirtualGateway.
 
         虚拟网关名字
 
@@ -152,7 +152,7 @@ class CreateVirtualGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVirtualGateway.
+        r"""Sets the name of this CreateVirtualGateway.
 
         虚拟网关名字
 
@@ -163,7 +163,7 @@ class CreateVirtualGateway:
 
     @property
     def description(self):
-        """Gets the description of this CreateVirtualGateway.
+        r"""Gets the description of this CreateVirtualGateway.
 
         虚拟网关的描述信息
 
@@ -174,7 +174,7 @@ class CreateVirtualGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVirtualGateway.
+        r"""Sets the description of this CreateVirtualGateway.
 
         虚拟网关的描述信息
 
@@ -185,7 +185,7 @@ class CreateVirtualGateway:
 
     @property
     def local_ep_group(self):
-        """Gets the local_ep_group of this CreateVirtualGateway.
+        r"""Gets the local_ep_group of this CreateVirtualGateway.
 
         虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
@@ -196,7 +196,7 @@ class CreateVirtualGateway:
 
     @local_ep_group.setter
     def local_ep_group(self, local_ep_group):
-        """Sets the local_ep_group of this CreateVirtualGateway.
+        r"""Sets the local_ep_group of this CreateVirtualGateway.
 
         虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当选择创建接入VPC的虚拟网关时必选。](tag:dt)
 
@@ -207,7 +207,7 @@ class CreateVirtualGateway:
 
     @property
     def local_ep_group_ipv6(self):
-        """Gets the local_ep_group_ipv6 of this CreateVirtualGateway.
+        r"""Gets the local_ep_group_ipv6 of this CreateVirtualGateway.
 
         预留字段用于虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
 
@@ -218,7 +218,7 @@ class CreateVirtualGateway:
 
     @local_ep_group_ipv6.setter
     def local_ep_group_ipv6(self, local_ep_group_ipv6):
-        """Sets the local_ep_group_ipv6 of this CreateVirtualGateway.
+        r"""Sets the local_ep_group_ipv6 of this CreateVirtualGateway.
 
         预留字段用于虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
 
@@ -229,7 +229,7 @@ class CreateVirtualGateway:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateVirtualGateway.
+        r"""Gets the bgp_asn of this CreateVirtualGateway.
 
         虚拟网关本地的BGP自治域号(asn)
 
@@ -240,7 +240,7 @@ class CreateVirtualGateway:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateVirtualGateway.
+        r"""Sets the bgp_asn of this CreateVirtualGateway.
 
         虚拟网关本地的BGP自治域号(asn)
 
@@ -251,7 +251,7 @@ class CreateVirtualGateway:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateVirtualGateway.
+        r"""Gets the enterprise_project_id of this CreateVirtualGateway.
 
         实例所属企业项目ID
 
@@ -262,7 +262,7 @@ class CreateVirtualGateway:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateVirtualGateway.
+        r"""Sets the enterprise_project_id of this CreateVirtualGateway.
 
         实例所属企业项目ID
 
@@ -273,7 +273,7 @@ class CreateVirtualGateway:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateVirtualGateway.
+        r"""Gets the tags of this CreateVirtualGateway.
 
         标签信息
 
@@ -284,7 +284,7 @@ class CreateVirtualGateway:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateVirtualGateway.
+        r"""Sets the tags of this CreateVirtualGateway.
 
         标签信息
 

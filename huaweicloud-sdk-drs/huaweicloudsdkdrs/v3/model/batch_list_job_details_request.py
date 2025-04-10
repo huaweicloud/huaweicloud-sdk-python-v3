@@ -27,7 +27,7 @@ class BatchListJobDetailsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchListJobDetailsRequest
+        r"""BatchListJobDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchListJobDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchListJobDetailsRequest.
+        r"""Gets the x_language of this BatchListJobDetailsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchListJobDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchListJobDetailsRequest.
+        r"""Sets the x_language of this BatchListJobDetailsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchListJobDetailsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchListJobDetailsRequest.
+        r"""Gets the body of this BatchListJobDetailsRequest.
 
         :return: The body of this BatchListJobDetailsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`
@@ -81,7 +81,7 @@ class BatchListJobDetailsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListJobDetailsRequest.
+        r"""Sets the body of this BatchListJobDetailsRequest.
 
         :param body: The body of this BatchListJobDetailsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`

@@ -43,7 +43,7 @@ class Network:
     }
 
     def __init__(self, direction=None, protocol=None, src_ip=None, src_port=None, src_domain=None, src_geo=None, dest_ip=None, dest_port=None, dest_domain=None, dest_geo=None):
-        """Network
+        r"""Network
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Network:
 
     @property
     def direction(self):
-        """Gets the direction of this Network.
+        r"""Gets the direction of this Network.
 
         方向，取值范围：IN、OUT。
 
@@ -117,7 +117,7 @@ class Network:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this Network.
+        r"""Sets the direction of this Network.
 
         方向，取值范围：IN、OUT。
 
@@ -128,7 +128,7 @@ class Network:
 
     @property
     def protocol(self):
-        """Gets the protocol of this Network.
+        r"""Gets the protocol of this Network.
 
         协议。
 
@@ -139,7 +139,7 @@ class Network:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this Network.
+        r"""Sets the protocol of this Network.
 
         协议。
 
@@ -150,7 +150,7 @@ class Network:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this Network.
+        r"""Gets the src_ip of this Network.
 
         源IP地址。
 
@@ -161,7 +161,7 @@ class Network:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this Network.
+        r"""Sets the src_ip of this Network.
 
         源IP地址。
 
@@ -172,7 +172,7 @@ class Network:
 
     @property
     def src_port(self):
-        """Gets the src_port of this Network.
+        r"""Gets the src_port of this Network.
 
         源端口，0–65535。
 
@@ -183,7 +183,7 @@ class Network:
 
     @src_port.setter
     def src_port(self, src_port):
-        """Sets the src_port of this Network.
+        r"""Sets the src_port of this Network.
 
         源端口，0–65535。
 
@@ -194,7 +194,7 @@ class Network:
 
     @property
     def src_domain(self):
-        """Gets the src_domain of this Network.
+        r"""Gets the src_domain of this Network.
 
         源域名，最大128个字符。
 
@@ -205,7 +205,7 @@ class Network:
 
     @src_domain.setter
     def src_domain(self, src_domain):
-        """Sets the src_domain of this Network.
+        r"""Sets the src_domain of this Network.
 
         源域名，最大128个字符。
 
@@ -216,7 +216,7 @@ class Network:
 
     @property
     def src_geo(self):
-        """Gets the src_geo of this Network.
+        r"""Gets the src_geo of this Network.
 
         :return: The src_geo of this Network.
         :rtype: :class:`huaweicloudsdksa.v1.Geo`
@@ -225,7 +225,7 @@ class Network:
 
     @src_geo.setter
     def src_geo(self, src_geo):
-        """Sets the src_geo of this Network.
+        r"""Sets the src_geo of this Network.
 
         :param src_geo: The src_geo of this Network.
         :type src_geo: :class:`huaweicloudsdksa.v1.Geo`
@@ -234,7 +234,7 @@ class Network:
 
     @property
     def dest_ip(self):
-        """Gets the dest_ip of this Network.
+        r"""Gets the dest_ip of this Network.
 
         目标IP地址。
 
@@ -245,7 +245,7 @@ class Network:
 
     @dest_ip.setter
     def dest_ip(self, dest_ip):
-        """Sets the dest_ip of this Network.
+        r"""Sets the dest_ip of this Network.
 
         目标IP地址。
 
@@ -256,7 +256,7 @@ class Network:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this Network.
+        r"""Gets the dest_port of this Network.
 
         目标端口，0–65535。
 
@@ -267,7 +267,7 @@ class Network:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this Network.
+        r"""Sets the dest_port of this Network.
 
         目标端口，0–65535。
 
@@ -278,7 +278,7 @@ class Network:
 
     @property
     def dest_domain(self):
-        """Gets the dest_domain of this Network.
+        r"""Gets the dest_domain of this Network.
 
         目标域名，最大128个字符。
 
@@ -289,7 +289,7 @@ class Network:
 
     @dest_domain.setter
     def dest_domain(self, dest_domain):
-        """Sets the dest_domain of this Network.
+        r"""Sets the dest_domain of this Network.
 
         目标域名，最大128个字符。
 
@@ -300,7 +300,7 @@ class Network:
 
     @property
     def dest_geo(self):
-        """Gets the dest_geo of this Network.
+        r"""Gets the dest_geo of this Network.
 
         :return: The dest_geo of this Network.
         :rtype: :class:`huaweicloudsdksa.v1.Geo`
@@ -309,7 +309,7 @@ class Network:
 
     @dest_geo.setter
     def dest_geo(self, dest_geo):
-        """Sets the dest_geo of this Network.
+        r"""Sets the dest_geo of this Network.
 
         :param dest_geo: The dest_geo of this Network.
         :type dest_geo: :class:`huaweicloudsdksa.v1.Geo`

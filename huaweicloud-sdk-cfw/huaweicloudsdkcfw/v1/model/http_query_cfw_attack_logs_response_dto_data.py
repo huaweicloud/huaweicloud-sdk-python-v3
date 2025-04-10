@@ -29,7 +29,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     }
 
     def __init__(self, total=None, limit=None, records=None):
-        """HttpQueryCfwAttackLogsResponseDTOData
+        r"""HttpQueryCfwAttackLogsResponseDTOData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
     @property
     def total(self):
-        """Gets the total of this HttpQueryCfwAttackLogsResponseDTOData.
+        r"""Gets the total of this HttpQueryCfwAttackLogsResponseDTOData.
 
         返回攻击数据总数
 
@@ -68,7 +68,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this HttpQueryCfwAttackLogsResponseDTOData.
+        r"""Sets the total of this HttpQueryCfwAttackLogsResponseDTOData.
 
         返回攻击数据总数
 
@@ -79,7 +79,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
     @property
     def limit(self):
-        """Gets the limit of this HttpQueryCfwAttackLogsResponseDTOData.
+        r"""Gets the limit of this HttpQueryCfwAttackLogsResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -90,7 +90,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this HttpQueryCfwAttackLogsResponseDTOData.
+        r"""Sets the limit of this HttpQueryCfwAttackLogsResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -101,7 +101,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
     @property
     def records(self):
-        """Gets the records of this HttpQueryCfwAttackLogsResponseDTOData.
+        r"""Gets the records of this HttpQueryCfwAttackLogsResponseDTOData.
 
         攻击日志记录列表
 
@@ -112,7 +112,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this HttpQueryCfwAttackLogsResponseDTOData.
+        r"""Sets the records of this HttpQueryCfwAttackLogsResponseDTOData.
 
         攻击日志记录列表
 

@@ -23,7 +23,7 @@ class CreateEnterpriseProjectAuthRequest:
     }
 
     def __init__(self):
-        """CreateEnterpriseProjectAuthRequest
+        r"""CreateEnterpriseProjectAuthRequest
 
         The model defined in huaweicloud sdk
 

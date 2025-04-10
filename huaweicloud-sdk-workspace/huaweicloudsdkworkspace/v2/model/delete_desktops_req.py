@@ -31,7 +31,7 @@ class DeleteDesktopsReq:
     }
 
     def __init__(self, desktop_ids=None, delete_users=None, email_notification=None, is_force_delete=None):
-        """DeleteDesktopsReq
+        r"""DeleteDesktopsReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteDesktopsReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this DeleteDesktopsReq.
+        r"""Gets the desktop_ids of this DeleteDesktopsReq.
 
         待删除的桌面ID列表。
 
@@ -74,7 +74,7 @@ class DeleteDesktopsReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this DeleteDesktopsReq.
+        r"""Sets the desktop_ids of this DeleteDesktopsReq.
 
         待删除的桌面ID列表。
 
@@ -85,7 +85,7 @@ class DeleteDesktopsReq:
 
     @property
     def delete_users(self):
-        """Gets the delete_users of this DeleteDesktopsReq.
+        r"""Gets the delete_users of this DeleteDesktopsReq.
 
         删除桌面后，如果当前用户没有其它桌面，可以删除桌面用户。true：删除用户，false：不删除用户，默认为false。
 
@@ -96,7 +96,7 @@ class DeleteDesktopsReq:
 
     @delete_users.setter
     def delete_users(self, delete_users):
-        """Sets the delete_users of this DeleteDesktopsReq.
+        r"""Sets the delete_users of this DeleteDesktopsReq.
 
         删除桌面后，如果当前用户没有其它桌面，可以删除桌面用户。true：删除用户，false：不删除用户，默认为false。
 
@@ -107,7 +107,7 @@ class DeleteDesktopsReq:
 
     @property
     def email_notification(self):
-        """Gets the email_notification of this DeleteDesktopsReq.
+        r"""Gets the email_notification of this DeleteDesktopsReq.
 
         是否邮件通知，true：邮件通知，false：不通知，默认值true。
 
@@ -118,7 +118,7 @@ class DeleteDesktopsReq:
 
     @email_notification.setter
     def email_notification(self, email_notification):
-        """Sets the email_notification of this DeleteDesktopsReq.
+        r"""Sets the email_notification of this DeleteDesktopsReq.
 
         是否邮件通知，true：邮件通知，false：不通知，默认值true。
 
@@ -129,7 +129,7 @@ class DeleteDesktopsReq:
 
     @property
     def is_force_delete(self):
-        """Gets the is_force_delete of this DeleteDesktopsReq.
+        r"""Gets the is_force_delete of this DeleteDesktopsReq.
 
         是否强制删除，true：强制删除，false：不强制删除
 
@@ -140,7 +140,7 @@ class DeleteDesktopsReq:
 
     @is_force_delete.setter
     def is_force_delete(self, is_force_delete):
-        """Sets the is_force_delete of this DeleteDesktopsReq.
+        r"""Sets the is_force_delete of this DeleteDesktopsReq.
 
         是否强制删除，true：强制删除，false：不强制删除
 

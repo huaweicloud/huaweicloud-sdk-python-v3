@@ -41,7 +41,7 @@ class QueryPreCheckResp:
     }
 
     def __init__(self, precheck_id=None, result=None, process=None, total_passed_rate=None, rds_instance_id=None, job_direction=None, precheck_result=None, error_msg=None, error_code=None):
-        """QueryPreCheckResp
+        r"""QueryPreCheckResp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryPreCheckResp:
 
     @property
     def precheck_id(self):
-        """Gets the precheck_id of this QueryPreCheckResp.
+        r"""Gets the precheck_id of this QueryPreCheckResp.
 
         预检查id。
 
@@ -110,7 +110,7 @@ class QueryPreCheckResp:
 
     @precheck_id.setter
     def precheck_id(self, precheck_id):
-        """Sets the precheck_id of this QueryPreCheckResp.
+        r"""Sets the precheck_id of this QueryPreCheckResp.
 
         预检查id。
 
@@ -121,7 +121,7 @@ class QueryPreCheckResp:
 
     @property
     def result(self):
-        """Gets the result of this QueryPreCheckResp.
+        r"""Gets the result of this QueryPreCheckResp.
 
         返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
 
@@ -132,7 +132,7 @@ class QueryPreCheckResp:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this QueryPreCheckResp.
+        r"""Sets the result of this QueryPreCheckResp.
 
         返回的预检查结果是否通过。true表示预检查通过，通过后才可进行启动任务。
 
@@ -143,7 +143,7 @@ class QueryPreCheckResp:
 
     @property
     def process(self):
-        """Gets the process of this QueryPreCheckResp.
+        r"""Gets the process of this QueryPreCheckResp.
 
         预检查进度百分比。
 
@@ -154,7 +154,7 @@ class QueryPreCheckResp:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this QueryPreCheckResp.
+        r"""Sets the process of this QueryPreCheckResp.
 
         预检查进度百分比。
 
@@ -165,7 +165,7 @@ class QueryPreCheckResp:
 
     @property
     def total_passed_rate(self):
-        """Gets the total_passed_rate of this QueryPreCheckResp.
+        r"""Gets the total_passed_rate of this QueryPreCheckResp.
 
         预检查通过百分比。
 
@@ -176,7 +176,7 @@ class QueryPreCheckResp:
 
     @total_passed_rate.setter
     def total_passed_rate(self, total_passed_rate):
-        """Sets the total_passed_rate of this QueryPreCheckResp.
+        r"""Sets the total_passed_rate of this QueryPreCheckResp.
 
         预检查通过百分比。
 
@@ -187,7 +187,7 @@ class QueryPreCheckResp:
 
     @property
     def rds_instance_id(self):
-        """Gets the rds_instance_id of this QueryPreCheckResp.
+        r"""Gets the rds_instance_id of this QueryPreCheckResp.
 
         RDS实例id。
 
@@ -198,7 +198,7 @@ class QueryPreCheckResp:
 
     @rds_instance_id.setter
     def rds_instance_id(self, rds_instance_id):
-        """Sets the rds_instance_id of this QueryPreCheckResp.
+        r"""Sets the rds_instance_id of this QueryPreCheckResp.
 
         RDS实例id。
 
@@ -209,7 +209,7 @@ class QueryPreCheckResp:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this QueryPreCheckResp.
+        r"""Gets the job_direction of this QueryPreCheckResp.
 
         迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
 
@@ -220,7 +220,7 @@ class QueryPreCheckResp:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this QueryPreCheckResp.
+        r"""Sets the job_direction of this QueryPreCheckResp.
 
         迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
 
@@ -231,7 +231,7 @@ class QueryPreCheckResp:
 
     @property
     def precheck_result(self):
-        """Gets the precheck_result of this QueryPreCheckResp.
+        r"""Gets the precheck_result of this QueryPreCheckResp.
 
         预检查各项结果。
 
@@ -242,7 +242,7 @@ class QueryPreCheckResp:
 
     @precheck_result.setter
     def precheck_result(self, precheck_result):
-        """Sets the precheck_result of this QueryPreCheckResp.
+        r"""Sets the precheck_result of this QueryPreCheckResp.
 
         预检查各项结果。
 
@@ -253,7 +253,7 @@ class QueryPreCheckResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this QueryPreCheckResp.
+        r"""Gets the error_msg of this QueryPreCheckResp.
 
         错误信息
 
@@ -264,7 +264,7 @@ class QueryPreCheckResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this QueryPreCheckResp.
+        r"""Sets the error_msg of this QueryPreCheckResp.
 
         错误信息
 
@@ -275,7 +275,7 @@ class QueryPreCheckResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryPreCheckResp.
+        r"""Gets the error_code of this QueryPreCheckResp.
 
         任务错误码。
 
@@ -286,7 +286,7 @@ class QueryPreCheckResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryPreCheckResp.
+        r"""Sets the error_code of this QueryPreCheckResp.
 
         任务错误码。
 

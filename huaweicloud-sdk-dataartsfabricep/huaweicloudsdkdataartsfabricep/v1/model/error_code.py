@@ -23,7 +23,7 @@ class ErrorCode:
     }
 
     def __init__(self):
-        """ErrorCode
+        r"""ErrorCode
 
         The model defined in huaweicloud sdk
 

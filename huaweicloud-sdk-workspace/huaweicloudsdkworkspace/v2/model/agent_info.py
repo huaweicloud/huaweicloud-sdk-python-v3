@@ -29,7 +29,7 @@ class AgentInfo:
     }
 
     def __init__(self, agent_name=None, agent_version=None, is_installed=None):
-        """AgentInfo
+        r"""AgentInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AgentInfo:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this AgentInfo.
+        r"""Gets the agent_name of this AgentInfo.
 
         插件名称
 
@@ -68,7 +68,7 @@ class AgentInfo:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this AgentInfo.
+        r"""Sets the agent_name of this AgentInfo.
 
         插件名称
 
@@ -79,7 +79,7 @@ class AgentInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this AgentInfo.
+        r"""Gets the agent_version of this AgentInfo.
 
         插件版本
 
@@ -90,7 +90,7 @@ class AgentInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this AgentInfo.
+        r"""Sets the agent_version of this AgentInfo.
 
         插件版本
 
@@ -101,7 +101,7 @@ class AgentInfo:
 
     @property
     def is_installed(self):
-        """Gets the is_installed of this AgentInfo.
+        r"""Gets the is_installed of this AgentInfo.
 
         是否安装插件（是否）
 
@@ -112,7 +112,7 @@ class AgentInfo:
 
     @is_installed.setter
     def is_installed(self, is_installed):
-        """Sets the is_installed of this AgentInfo.
+        r"""Sets the is_installed of this AgentInfo.
 
         是否安装插件（是否）
 

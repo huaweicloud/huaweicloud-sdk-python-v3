@@ -31,7 +31,7 @@ class UpdateAomMappingRequest:
     }
 
     def __init__(self, rule_id=None, project_id=None, rule_name=None, rule_info=None):
-        """UpdateAomMappingRequest
+        r"""UpdateAomMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateAomMappingRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateAomMappingRequest.
+        r"""Gets the rule_id of this UpdateAomMappingRequest.
 
         接入规则id
 
@@ -71,7 +71,7 @@ class UpdateAomMappingRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateAomMappingRequest.
+        r"""Sets the rule_id of this UpdateAomMappingRequest.
 
         接入规则id
 
@@ -82,7 +82,7 @@ class UpdateAomMappingRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAomMappingRequest.
+        r"""Gets the project_id of this UpdateAomMappingRequest.
 
         项目id
 
@@ -93,7 +93,7 @@ class UpdateAomMappingRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAomMappingRequest.
+        r"""Sets the project_id of this UpdateAomMappingRequest.
 
         项目id
 
@@ -104,7 +104,7 @@ class UpdateAomMappingRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this UpdateAomMappingRequest.
+        r"""Gets the rule_name of this UpdateAomMappingRequest.
 
         接入规则名称
 
@@ -115,7 +115,7 @@ class UpdateAomMappingRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this UpdateAomMappingRequest.
+        r"""Sets the rule_name of this UpdateAomMappingRequest.
 
         接入规则名称
 
@@ -126,7 +126,7 @@ class UpdateAomMappingRequest:
 
     @property
     def rule_info(self):
-        """Gets the rule_info of this UpdateAomMappingRequest.
+        r"""Gets the rule_info of this UpdateAomMappingRequest.
 
         :return: The rule_info of this UpdateAomMappingRequest.
         :rtype: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`
@@ -135,7 +135,7 @@ class UpdateAomMappingRequest:
 
     @rule_info.setter
     def rule_info(self, rule_info):
-        """Sets the rule_info of this UpdateAomMappingRequest.
+        r"""Sets the rule_info of this UpdateAomMappingRequest.
 
         :param rule_info: The rule_info of this UpdateAomMappingRequest.
         :type rule_info: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`

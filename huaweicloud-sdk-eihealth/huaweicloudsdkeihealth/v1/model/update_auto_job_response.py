@@ -24,7 +24,7 @@ class UpdateAutoJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAutoJobResponse
+        r"""UpdateAutoJobResponse
 
         The model defined in huaweicloud sdk
 

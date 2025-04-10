@@ -30,7 +30,7 @@ class ListDatabaseResourceResponse(SdkResponse):
     }
 
     def __init__(self, count=None, resources=None, x_resource_mappings=None):
-        """ListDatabaseResourceResponse
+        r"""ListDatabaseResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDatabaseResourceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDatabaseResourceResponse.
+        r"""Gets the count of this ListDatabaseResourceResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListDatabaseResourceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDatabaseResourceResponse.
+        r"""Sets the count of this ListDatabaseResourceResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListDatabaseResourceResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListDatabaseResourceResponse.
+        r"""Gets the resources of this ListDatabaseResourceResponse.
 
         数据库资源列表
 
@@ -91,7 +91,7 @@ class ListDatabaseResourceResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListDatabaseResourceResponse.
+        r"""Sets the resources of this ListDatabaseResourceResponse.
 
         数据库资源列表
 
@@ -102,7 +102,7 @@ class ListDatabaseResourceResponse(SdkResponse):
 
     @property
     def x_resource_mappings(self):
-        """Gets the x_resource_mappings of this ListDatabaseResourceResponse.
+        r"""Gets the x_resource_mappings of this ListDatabaseResourceResponse.
 
         :return: The x_resource_mappings of this ListDatabaseResourceResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListDatabaseResourceResponse(SdkResponse):
 
     @x_resource_mappings.setter
     def x_resource_mappings(self, x_resource_mappings):
-        """Sets the x_resource_mappings of this ListDatabaseResourceResponse.
+        r"""Sets the x_resource_mappings of this ListDatabaseResourceResponse.
 
         :param x_resource_mappings: The x_resource_mappings of this ListDatabaseResourceResponse.
         :type x_resource_mappings: str

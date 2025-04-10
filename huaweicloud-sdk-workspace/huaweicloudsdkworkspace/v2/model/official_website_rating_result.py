@@ -47,7 +47,7 @@ class OfficialWebsiteRatingResult:
     }
 
     def __init__(self, amount=None, official_website_amount=None, original_amount=None, official_website_discount_amount=None, optional_discount_amount=None, discount_amount=None, per_amount=None, per_discount_amount=None, per_original_amount=None, per_period_type=None, measure_id=None, product_rating_results=None):
-        """OfficialWebsiteRatingResult
+        r"""OfficialWebsiteRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def amount(self):
-        """Gets the amount of this OfficialWebsiteRatingResult.
+        r"""Gets the amount of this OfficialWebsiteRatingResult.
 
         订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
 
@@ -131,7 +131,7 @@ class OfficialWebsiteRatingResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this OfficialWebsiteRatingResult.
+        r"""Sets the amount of this OfficialWebsiteRatingResult.
 
         订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
 
@@ -142,7 +142,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the official_website_amount of this OfficialWebsiteRatingResult.
 
         官网价(预留实例只包含预付部分)
 
@@ -153,7 +153,7 @@ class OfficialWebsiteRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the official_website_amount of this OfficialWebsiteRatingResult.
 
         官网价(预留实例只包含预付部分)
 
@@ -164,7 +164,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the original_amount of this OfficialWebsiteRatingResult.
 
         订单原总额，即优惠前订单总额(预留实例只包含预付部分)
 
@@ -175,7 +175,7 @@ class OfficialWebsiteRatingResult:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the original_amount of this OfficialWebsiteRatingResult.
 
         订单原总额，即优惠前订单总额(预留实例只包含预付部分)
 
@@ -186,7 +186,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def official_website_discount_amount(self):
-        """Gets the official_website_discount_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the official_website_discount_amount of this OfficialWebsiteRatingResult.
 
         官网价优惠额(预留实例只包含预付部分)
 
@@ -197,7 +197,7 @@ class OfficialWebsiteRatingResult:
 
     @official_website_discount_amount.setter
     def official_website_discount_amount(self, official_website_discount_amount):
-        """Sets the official_website_discount_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the official_website_discount_amount of this OfficialWebsiteRatingResult.
 
         官网价优惠额(预留实例只包含预付部分)
 
@@ -208,7 +208,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def optional_discount_amount(self):
-        """Gets the optional_discount_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the optional_discount_amount of this OfficialWebsiteRatingResult.
 
         可选折扣优惠额(预留实例只包含预付部分)
 
@@ -219,7 +219,7 @@ class OfficialWebsiteRatingResult:
 
     @optional_discount_amount.setter
     def optional_discount_amount(self, optional_discount_amount):
-        """Sets the optional_discount_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the optional_discount_amount of this OfficialWebsiteRatingResult.
 
         可选折扣优惠额(预留实例只包含预付部分)
 
@@ -230,7 +230,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the discount_amount of this OfficialWebsiteRatingResult.
 
         总优惠额(预留实例只包含预付部分)
 
@@ -241,7 +241,7 @@ class OfficialWebsiteRatingResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the discount_amount of this OfficialWebsiteRatingResult.
 
         总优惠额(预留实例只包含预付部分)
 
@@ -252,7 +252,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def per_amount(self):
-        """Gets the per_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the per_amount of this OfficialWebsiteRatingResult.
 
         总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
 
@@ -263,7 +263,7 @@ class OfficialWebsiteRatingResult:
 
     @per_amount.setter
     def per_amount(self, per_amount):
-        """Sets the per_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the per_amount of this OfficialWebsiteRatingResult.
 
         总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
 
@@ -274,7 +274,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def per_discount_amount(self):
-        """Gets the per_discount_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the per_discount_amount of this OfficialWebsiteRatingResult.
 
         总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
 
@@ -285,7 +285,7 @@ class OfficialWebsiteRatingResult:
 
     @per_discount_amount.setter
     def per_discount_amount(self, per_discount_amount):
-        """Sets the per_discount_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the per_discount_amount of this OfficialWebsiteRatingResult.
 
         总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
 
@@ -296,7 +296,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def per_original_amount(self):
-        """Gets the per_original_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the per_original_amount of this OfficialWebsiteRatingResult.
 
         总分期金额原价
 
@@ -307,7 +307,7 @@ class OfficialWebsiteRatingResult:
 
     @per_original_amount.setter
     def per_original_amount(self, per_original_amount):
-        """Sets the per_original_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the per_original_amount of this OfficialWebsiteRatingResult.
 
         总分期金额原价
 
@@ -318,7 +318,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def per_period_type(self):
-        """Gets the per_period_type of this OfficialWebsiteRatingResult.
+        r"""Gets the per_period_type of this OfficialWebsiteRatingResult.
 
         分期周期类型 2:月 4:小时
 
@@ -329,7 +329,7 @@ class OfficialWebsiteRatingResult:
 
     @per_period_type.setter
     def per_period_type(self, per_period_type):
-        """Sets the per_period_type of this OfficialWebsiteRatingResult.
+        r"""Sets the per_period_type of this OfficialWebsiteRatingResult.
 
         分期周期类型 2:月 4:小时
 
@@ -340,7 +340,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this OfficialWebsiteRatingResult.
+        r"""Gets the measure_id of this OfficialWebsiteRatingResult.
 
         度量单位
 
@@ -351,7 +351,7 @@ class OfficialWebsiteRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this OfficialWebsiteRatingResult.
+        r"""Sets the measure_id of this OfficialWebsiteRatingResult.
 
         度量单位
 
@@ -362,7 +362,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def product_rating_results(self):
-        """Gets the product_rating_results of this OfficialWebsiteRatingResult.
+        r"""Gets the product_rating_results of this OfficialWebsiteRatingResult.
 
         产品询价结果
 
@@ -373,7 +373,7 @@ class OfficialWebsiteRatingResult:
 
     @product_rating_results.setter
     def product_rating_results(self, product_rating_results):
-        """Sets the product_rating_results of this OfficialWebsiteRatingResult.
+        r"""Sets the product_rating_results of this OfficialWebsiteRatingResult.
 
         产品询价结果
 

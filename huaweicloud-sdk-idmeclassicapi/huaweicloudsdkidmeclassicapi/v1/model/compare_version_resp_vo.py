@@ -27,7 +27,7 @@ class CompareVersionRespVo:
     }
 
     def __init__(self, basic_version=None, correlation_version=None):
-        """CompareVersionRespVo
+        r"""CompareVersionRespVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CompareVersionRespVo:
 
     @property
     def basic_version(self):
-        """Gets the basic_version of this CompareVersionRespVo.
+        r"""Gets the basic_version of this CompareVersionRespVo.
 
         **参数解释：**  基础版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -61,7 +61,7 @@ class CompareVersionRespVo:
 
     @basic_version.setter
     def basic_version(self, basic_version):
-        """Sets the basic_version of this CompareVersionRespVo.
+        r"""Sets the basic_version of this CompareVersionRespVo.
 
         **参数解释：**  基础版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -72,7 +72,7 @@ class CompareVersionRespVo:
 
     @property
     def correlation_version(self):
-        """Gets the correlation_version of this CompareVersionRespVo.
+        r"""Gets the correlation_version of this CompareVersionRespVo.
 
         **参数解释：**  当前版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -83,7 +83,7 @@ class CompareVersionRespVo:
 
     @correlation_version.setter
     def correlation_version(self, correlation_version):
-        """Sets the correlation_version of this CompareVersionRespVo.
+        r"""Sets the correlation_version of this CompareVersionRespVo.
 
         **参数解释：**  当前版本对象。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

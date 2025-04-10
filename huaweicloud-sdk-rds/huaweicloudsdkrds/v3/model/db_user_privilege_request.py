@@ -29,7 +29,7 @@ class DbUserPrivilegeRequest:
     }
 
     def __init__(self, user_name=None, authorization_type=None, privileges=None):
-        """DbUserPrivilegeRequest
+        r"""DbUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DbUserPrivilegeRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DbUserPrivilegeRequest.
+        r"""Gets the user_name of this DbUserPrivilegeRequest.
 
         账号，数据库相关联的帐号
 
@@ -65,7 +65,7 @@ class DbUserPrivilegeRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DbUserPrivilegeRequest.
+        r"""Sets the user_name of this DbUserPrivilegeRequest.
 
         账号，数据库相关联的帐号
 
@@ -76,7 +76,7 @@ class DbUserPrivilegeRequest:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this DbUserPrivilegeRequest.
+        r"""Gets the authorization_type of this DbUserPrivilegeRequest.
 
         授权SQL类型,枚举： 1、ROLE(支持对指定用户设置以下权限) 2、RECYCLING_ROLE(支持对指定用户回收以下权限) 3、SYSTEM_ROLE(支持对指定用户授予以下系统角色) 4、RECYCLING_SYSTEM_ROLE(支持对指定用户回收以下系统角色)
 
@@ -87,7 +87,7 @@ class DbUserPrivilegeRequest:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this DbUserPrivilegeRequest.
+        r"""Sets the authorization_type of this DbUserPrivilegeRequest.
 
         授权SQL类型,枚举： 1、ROLE(支持对指定用户设置以下权限) 2、RECYCLING_ROLE(支持对指定用户回收以下权限) 3、SYSTEM_ROLE(支持对指定用户授予以下系统角色) 4、RECYCLING_SYSTEM_ROLE(支持对指定用户回收以下系统角色)
 
@@ -98,7 +98,7 @@ class DbUserPrivilegeRequest:
 
     @property
     def privileges(self):
-        """Gets the privileges of this DbUserPrivilegeRequest.
+        r"""Gets the privileges of this DbUserPrivilegeRequest.
 
         支持用户设置的权限集合。 1、privilege_type为ROLE时需要使用,枚举： CREATEDB CREATEROLE LOGIN REPLICATION 2、privilege_type为RECYCLING_ROLE时需要使用,枚举： NOCREATEDB NOCREATEROLE NOLOGIN NOREPLICATION 3、privilege_type为SYSTEM_ROLE /RECYCLING_ SYSTEM_ROLE时需要使用,枚举： pg_monitor pg_signal_backend root
 
@@ -109,7 +109,7 @@ class DbUserPrivilegeRequest:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this DbUserPrivilegeRequest.
+        r"""Sets the privileges of this DbUserPrivilegeRequest.
 
         支持用户设置的权限集合。 1、privilege_type为ROLE时需要使用,枚举： CREATEDB CREATEROLE LOGIN REPLICATION 2、privilege_type为RECYCLING_ROLE时需要使用,枚举： NOCREATEDB NOCREATEROLE NOLOGIN NOREPLICATION 3、privilege_type为SYSTEM_ROLE /RECYCLING_ SYSTEM_ROLE时需要使用,枚举： pg_monitor pg_signal_backend root
 

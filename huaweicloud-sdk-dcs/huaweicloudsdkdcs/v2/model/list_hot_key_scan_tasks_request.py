@@ -31,7 +31,7 @@ class ListHotKeyScanTasksRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, status=None):
-        """ListHotKeyScanTasksRequest
+        r"""ListHotKeyScanTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListHotKeyScanTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListHotKeyScanTasksRequest.
+        r"""Gets the instance_id of this ListHotKeyScanTasksRequest.
 
         实例ID。
 
@@ -74,7 +74,7 @@ class ListHotKeyScanTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListHotKeyScanTasksRequest.
+        r"""Sets the instance_id of this ListHotKeyScanTasksRequest.
 
         实例ID。
 
@@ -85,7 +85,7 @@ class ListHotKeyScanTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHotKeyScanTasksRequest.
+        r"""Gets the offset of this ListHotKeyScanTasksRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -96,7 +96,7 @@ class ListHotKeyScanTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHotKeyScanTasksRequest.
+        r"""Sets the offset of this ListHotKeyScanTasksRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -107,7 +107,7 @@ class ListHotKeyScanTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHotKeyScanTasksRequest.
+        r"""Gets the limit of this ListHotKeyScanTasksRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListHotKeyScanTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHotKeyScanTasksRequest.
+        r"""Sets the limit of this ListHotKeyScanTasksRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListHotKeyScanTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListHotKeyScanTasksRequest.
+        r"""Gets the status of this ListHotKeyScanTasksRequest.
 
         分析任务状态
 
@@ -140,7 +140,7 @@ class ListHotKeyScanTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListHotKeyScanTasksRequest.
+        r"""Sets the status of this ListHotKeyScanTasksRequest.
 
         分析任务状态
 

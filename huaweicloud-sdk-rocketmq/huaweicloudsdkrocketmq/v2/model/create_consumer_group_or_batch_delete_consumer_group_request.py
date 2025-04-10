@@ -29,7 +29,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
     }
 
     def __init__(self, instance_id=None, action=None, body=None):
-        """CreateConsumerGroupOrBatchDeleteConsumerGroupRequest
+        r"""CreateConsumerGroupOrBatchDeleteConsumerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
+        r"""Gets the instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
+        r"""Sets the instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
     @property
     def action(self):
-        """Gets the action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
+        r"""Gets the action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
         批量删除消费组时使用，不配置则为创建接口。删除操作：delete。
 
@@ -89,7 +89,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
+        r"""Sets the action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
         批量删除消费组时使用，不配置则为创建接口。删除操作：delete。
 
@@ -100,7 +100,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
+        r"""Gets the body of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
         :return: The body of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateConsumerGroupOrBatchDeleteConsumerGroupReq`
@@ -109,7 +109,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
+        r"""Sets the body of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
         :param body: The body of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateConsumerGroupOrBatchDeleteConsumerGroupReq`

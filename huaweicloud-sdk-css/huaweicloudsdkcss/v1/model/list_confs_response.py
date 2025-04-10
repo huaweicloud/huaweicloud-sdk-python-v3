@@ -26,7 +26,7 @@ class ListConfsResponse(SdkResponse):
     }
 
     def __init__(self, confs=None):
-        """ListConfsResponse
+        r"""ListConfsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListConfsResponse(SdkResponse):
 
     @property
     def confs(self):
-        """Gets the confs of this ListConfsResponse.
+        r"""Gets the confs of this ListConfsResponse.
 
         配置文件列表。
 
@@ -55,7 +55,7 @@ class ListConfsResponse(SdkResponse):
 
     @confs.setter
     def confs(self, confs):
-        """Sets the confs of this ListConfsResponse.
+        r"""Sets the confs of this ListConfsResponse.
 
         配置文件列表。
 

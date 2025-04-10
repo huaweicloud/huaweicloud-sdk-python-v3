@@ -45,7 +45,7 @@ class ConditionInfo:
     }
 
     def __init__(self, expression_type=None, conditions=None, logics=None, cron=None, schedule_type=None, start_type=None, end_type=None, end_time=None, repeat_range=None, only_once=None, execution_type=None):
-        """ConditionInfo
+        r"""ConditionInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ConditionInfo:
 
     @property
     def expression_type(self):
-        """Gets the expression_type of this ConditionInfo.
+        r"""Gets the expression_type of this ConditionInfo.
 
         表达式类型。默认为common,事件触发剧本必填
 
@@ -124,7 +124,7 @@ class ConditionInfo:
 
     @expression_type.setter
     def expression_type(self, expression_type):
-        """Sets the expression_type of this ConditionInfo.
+        r"""Sets the expression_type of this ConditionInfo.
 
         表达式类型。默认为common,事件触发剧本必填
 
@@ -135,7 +135,7 @@ class ConditionInfo:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ConditionInfo.
+        r"""Gets the conditions of this ConditionInfo.
 
         触发条件。事件触发剧本必填
 
@@ -146,7 +146,7 @@ class ConditionInfo:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ConditionInfo.
+        r"""Sets the conditions of this ConditionInfo.
 
         触发条件。事件触发剧本必填
 
@@ -157,7 +157,7 @@ class ConditionInfo:
 
     @property
     def logics(self):
-        """Gets the logics of this ConditionInfo.
+        r"""Gets the logics of this ConditionInfo.
 
         条件逻辑组合。事件触发剧本必填
 
@@ -168,7 +168,7 @@ class ConditionInfo:
 
     @logics.setter
     def logics(self, logics):
-        """Sets the logics of this ConditionInfo.
+        r"""Sets the logics of this ConditionInfo.
 
         条件逻辑组合。事件触发剧本必填
 
@@ -179,7 +179,7 @@ class ConditionInfo:
 
     @property
     def cron(self):
-        """Gets the cron of this ConditionInfo.
+        r"""Gets the cron of this ConditionInfo.
 
         Cron 表达式（定时任务）。定时触发剧本必填
 
@@ -190,7 +190,7 @@ class ConditionInfo:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this ConditionInfo.
+        r"""Sets the cron of this ConditionInfo.
 
         Cron 表达式（定时任务）。定时触发剧本必填
 
@@ -201,7 +201,7 @@ class ConditionInfo:
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this ConditionInfo.
+        r"""Gets the schedule_type of this ConditionInfo.
 
         定时重复类型(second--秒, hour--小时,day--天，week-周)。定时触发剧本必填
 
@@ -212,7 +212,7 @@ class ConditionInfo:
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this ConditionInfo.
+        r"""Sets the schedule_type of this ConditionInfo.
 
         定时重复类型(second--秒, hour--小时,day--天，week-周)。定时触发剧本必填
 
@@ -223,7 +223,7 @@ class ConditionInfo:
 
     @property
     def start_type(self):
-        """Gets the start_type of this ConditionInfo.
+        r"""Gets the start_type of this ConditionInfo.
 
         剧本开始执行类型，IMMEDIATELY--创建完成立即执行, CUSTOM--自定义执行时间。定时触发剧本必填
 
@@ -234,7 +234,7 @@ class ConditionInfo:
 
     @start_type.setter
     def start_type(self, start_type):
-        """Sets the start_type of this ConditionInfo.
+        r"""Sets the start_type of this ConditionInfo.
 
         剧本开始执行类型，IMMEDIATELY--创建完成立即执行, CUSTOM--自定义执行时间。定时触发剧本必填
 
@@ -245,7 +245,7 @@ class ConditionInfo:
 
     @property
     def end_type(self):
-        """Gets the end_type of this ConditionInfo.
+        r"""Gets the end_type of this ConditionInfo.
 
         剧本结束执行类型，FOREVER--一直执行, CUSTOM--自定义结束时间。定时触发剧本必填
 
@@ -256,7 +256,7 @@ class ConditionInfo:
 
     @end_type.setter
     def end_type(self, end_type):
-        """Sets the end_type of this ConditionInfo.
+        r"""Sets the end_type of this ConditionInfo.
 
         剧本结束执行类型，FOREVER--一直执行, CUSTOM--自定义结束时间。定时触发剧本必填
 
@@ -267,7 +267,7 @@ class ConditionInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ConditionInfo.
+        r"""Gets the end_time of this ConditionInfo.
 
         定时结束时间。定时触发剧本必填
 
@@ -278,7 +278,7 @@ class ConditionInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ConditionInfo.
+        r"""Sets the end_time of this ConditionInfo.
 
         定时结束时间。定时触发剧本必填
 
@@ -289,7 +289,7 @@ class ConditionInfo:
 
     @property
     def repeat_range(self):
-        """Gets the repeat_range of this ConditionInfo.
+        r"""Gets the repeat_range of this ConditionInfo.
 
         执行时间段 2021-01-30T23:00:00Z+0800。定时触发剧本必填
 
@@ -300,7 +300,7 @@ class ConditionInfo:
 
     @repeat_range.setter
     def repeat_range(self, repeat_range):
-        """Sets the repeat_range of this ConditionInfo.
+        r"""Sets the repeat_range of this ConditionInfo.
 
         执行时间段 2021-01-30T23:00:00Z+0800。定时触发剧本必填
 
@@ -311,7 +311,7 @@ class ConditionInfo:
 
     @property
     def only_once(self):
-        """Gets the only_once of this ConditionInfo.
+        r"""Gets the only_once of this ConditionInfo.
 
         是否只执行一次。定时触发剧本必填
 
@@ -322,7 +322,7 @@ class ConditionInfo:
 
     @only_once.setter
     def only_once(self, only_once):
-        """Sets the only_once of this ConditionInfo.
+        r"""Sets the only_once of this ConditionInfo.
 
         是否只执行一次。定时触发剧本必填
 
@@ -333,7 +333,7 @@ class ConditionInfo:
 
     @property
     def execution_type(self):
-        """Gets the execution_type of this ConditionInfo.
+        r"""Gets the execution_type of this ConditionInfo.
 
         执行队列类型（PARALLEL-新任务与之前任务并行）。定时触发剧本必填
 
@@ -344,7 +344,7 @@ class ConditionInfo:
 
     @execution_type.setter
     def execution_type(self, execution_type):
-        """Sets the execution_type of this ConditionInfo.
+        r"""Sets the execution_type of this ConditionInfo.
 
         执行队列类型（PARALLEL-新任务与之前任务并行）。定时触发剧本必填
 

@@ -28,7 +28,7 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, certificates=None, instance_num=None):
-        """ListCertificatesResponse
+        r"""ListCertificatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def certificates(self):
-        """Gets the certificates of this ListCertificatesResponse.
+        r"""Gets the certificates of this ListCertificatesResponse.
 
         SSL证书列表对象
 
@@ -62,7 +62,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @certificates.setter
     def certificates(self, certificates):
-        """Sets the certificates of this ListCertificatesResponse.
+        r"""Sets the certificates of this ListCertificatesResponse.
 
         SSL证书列表对象
 
@@ -73,7 +73,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ListCertificatesResponse.
+        r"""Gets the instance_num of this ListCertificatesResponse.
 
         证书的个数
 
@@ -84,7 +84,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ListCertificatesResponse.
+        r"""Sets the instance_num of this ListCertificatesResponse.
 
         证书的个数
 

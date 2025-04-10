@@ -33,7 +33,7 @@ class ModVmrDTO:
     }
 
     def __init__(self, vmr_name=None, gust_pwd=None, chair_pwd=None, allow_gust_first=None, gust_first_notice=None):
-        """ModVmrDTO
+        r"""ModVmrDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ModVmrDTO:
 
     @property
     def vmr_name(self):
-        """Gets the vmr_name of this ModVmrDTO.
+        r"""Gets the vmr_name of this ModVmrDTO.
 
         云会议室名称。 
 
@@ -82,7 +82,7 @@ class ModVmrDTO:
 
     @vmr_name.setter
     def vmr_name(self, vmr_name):
-        """Sets the vmr_name of this ModVmrDTO.
+        r"""Sets the vmr_name of this ModVmrDTO.
 
         云会议室名称。 
 
@@ -93,7 +93,7 @@ class ModVmrDTO:
 
     @property
     def gust_pwd(self):
-        """Gets the gust_pwd of this ModVmrDTO.
+        r"""Gets the gust_pwd of this ModVmrDTO.
 
         来宾密码，设置为空字符串代表不设置来宾密码。 4~16位的数字 
 
@@ -104,7 +104,7 @@ class ModVmrDTO:
 
     @gust_pwd.setter
     def gust_pwd(self, gust_pwd):
-        """Sets the gust_pwd of this ModVmrDTO.
+        r"""Sets the gust_pwd of this ModVmrDTO.
 
         来宾密码，设置为空字符串代表不设置来宾密码。 4~16位的数字 
 
@@ -115,7 +115,7 @@ class ModVmrDTO:
 
     @property
     def chair_pwd(self):
-        """Gets the chair_pwd of this ModVmrDTO.
+        r"""Gets the chair_pwd of this ModVmrDTO.
 
         主持人密码。4~16位的数字。 
 
@@ -126,7 +126,7 @@ class ModVmrDTO:
 
     @chair_pwd.setter
     def chair_pwd(self, chair_pwd):
-        """Sets the chair_pwd of this ModVmrDTO.
+        r"""Sets the chair_pwd of this ModVmrDTO.
 
         主持人密码。4~16位的数字。 
 
@@ -137,7 +137,7 @@ class ModVmrDTO:
 
     @property
     def allow_gust_first(self):
-        """Gets the allow_gust_first of this ModVmrDTO.
+        r"""Gets the allow_gust_first of this ModVmrDTO.
 
         是否允许来宾先入会。
 
@@ -148,7 +148,7 @@ class ModVmrDTO:
 
     @allow_gust_first.setter
     def allow_gust_first(self, allow_gust_first):
-        """Sets the allow_gust_first of this ModVmrDTO.
+        r"""Sets the allow_gust_first of this ModVmrDTO.
 
         是否允许来宾先入会。
 
@@ -159,7 +159,7 @@ class ModVmrDTO:
 
     @property
     def gust_first_notice(self):
-        """Gets the gust_first_notice of this ModVmrDTO.
+        r"""Gets the gust_first_notice of this ModVmrDTO.
 
         云会议室被使用后是否通知会议室所有者。
 
@@ -170,7 +170,7 @@ class ModVmrDTO:
 
     @gust_first_notice.setter
     def gust_first_notice(self, gust_first_notice):
-        """Sets the gust_first_notice of this ModVmrDTO.
+        r"""Sets the gust_first_notice of this ModVmrDTO.
 
         云会议室被使用后是否通知会议室所有者。
 

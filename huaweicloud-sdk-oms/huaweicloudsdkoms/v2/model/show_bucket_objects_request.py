@@ -25,7 +25,7 @@ class ShowBucketObjectsRequest:
     }
 
     def __init__(self, body=None):
-        """ShowBucketObjectsRequest
+        r"""ShowBucketObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowBucketObjectsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowBucketObjectsRequest.
+        r"""Gets the body of this ShowBucketObjectsRequest.
 
         :return: The body of this ShowBucketObjectsRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.ShowBucketReq`
@@ -52,7 +52,7 @@ class ShowBucketObjectsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBucketObjectsRequest.
+        r"""Sets the body of this ShowBucketObjectsRequest.
 
         :param body: The body of this ShowBucketObjectsRequest.
         :type body: :class:`huaweicloudsdkoms.v2.ShowBucketReq`

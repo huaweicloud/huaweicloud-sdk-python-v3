@@ -33,7 +33,7 @@ class ListCatalogListRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None, limit=None, offset=None):
-        """ListCatalogListRequest
+        r"""ListCatalogListRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListCatalogListRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListCatalogListRequest.
+        r"""Gets the workspace of this ListCatalogListRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ListCatalogListRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListCatalogListRequest.
+        r"""Sets the workspace of this ListCatalogListRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ListCatalogListRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListCatalogListRequest.
+        r"""Gets the dlm_type of this ListCatalogListRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class ListCatalogListRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListCatalogListRequest.
+        r"""Sets the dlm_type of this ListCatalogListRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class ListCatalogListRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this ListCatalogListRequest.
+        r"""Gets the catalog_id of this ListCatalogListRequest.
 
         目录编号。
 
@@ -124,7 +124,7 @@ class ListCatalogListRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this ListCatalogListRequest.
+        r"""Sets the catalog_id of this ListCatalogListRequest.
 
         目录编号。
 
@@ -135,7 +135,7 @@ class ListCatalogListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCatalogListRequest.
+        r"""Gets the limit of this ListCatalogListRequest.
 
         limit。
 
@@ -146,7 +146,7 @@ class ListCatalogListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCatalogListRequest.
+        r"""Sets the limit of this ListCatalogListRequest.
 
         limit。
 
@@ -157,7 +157,7 @@ class ListCatalogListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCatalogListRequest.
+        r"""Gets the offset of this ListCatalogListRequest.
 
         offset。
 
@@ -168,7 +168,7 @@ class ListCatalogListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCatalogListRequest.
+        r"""Sets the offset of this ListCatalogListRequest.
 
         offset。
 

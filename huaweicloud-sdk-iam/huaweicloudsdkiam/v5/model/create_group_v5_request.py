@@ -25,7 +25,7 @@ class CreateGroupV5Request:
     }
 
     def __init__(self, body=None):
-        """CreateGroupV5Request
+        r"""CreateGroupV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGroupV5Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateGroupV5Request.
+        r"""Gets the body of this CreateGroupV5Request.
 
         :return: The body of this CreateGroupV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.CreateGroupReqBody`
@@ -52,7 +52,7 @@ class CreateGroupV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGroupV5Request.
+        r"""Sets the body of this CreateGroupV5Request.
 
         :param body: The body of this CreateGroupV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.CreateGroupReqBody`

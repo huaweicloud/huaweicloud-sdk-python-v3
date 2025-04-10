@@ -26,7 +26,7 @@ class ListStacksResponse(SdkResponse):
     }
 
     def __init__(self, stacks=None):
-        """ListStacksResponse
+        r"""ListStacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStacksResponse(SdkResponse):
 
     @property
     def stacks(self):
-        """Gets the stacks of this ListStacksResponse.
+        r"""Gets the stacks of this ListStacksResponse.
 
         资源栈列表。默认按照生成时间降序排序，最新生成的在最前
 
@@ -55,7 +55,7 @@ class ListStacksResponse(SdkResponse):
 
     @stacks.setter
     def stacks(self, stacks):
-        """Sets the stacks of this ListStacksResponse.
+        r"""Sets the stacks of this ListStacksResponse.
 
         资源栈列表。默认按照生成时间降序排序，最新生成的在最前
 

@@ -29,7 +29,7 @@ class EpQuotas:
     }
 
     def __init__(self, quota=None, type=None, used=None):
-        """EpQuotas
+        r"""EpQuotas
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EpQuotas:
 
     @property
     def quota(self):
-        """Gets the quota of this EpQuotas.
+        r"""Gets the quota of this EpQuotas.
 
         总配额
 
@@ -65,7 +65,7 @@ class EpQuotas:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this EpQuotas.
+        r"""Sets the quota of this EpQuotas.
 
         总配额
 
@@ -76,7 +76,7 @@ class EpQuotas:
 
     @property
     def type(self):
-        """Gets the type of this EpQuotas.
+        r"""Gets the type of this EpQuotas.
 
         qutoa的资源类型
 
@@ -87,7 +87,7 @@ class EpQuotas:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EpQuotas.
+        r"""Sets the type of this EpQuotas.
 
         qutoa的资源类型
 
@@ -98,7 +98,7 @@ class EpQuotas:
 
     @property
     def used(self):
-        """Gets the used of this EpQuotas.
+        r"""Gets the used of this EpQuotas.
 
         配额使用量
 
@@ -109,7 +109,7 @@ class EpQuotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this EpQuotas.
+        r"""Sets the used of this EpQuotas.
 
         配额使用量
 

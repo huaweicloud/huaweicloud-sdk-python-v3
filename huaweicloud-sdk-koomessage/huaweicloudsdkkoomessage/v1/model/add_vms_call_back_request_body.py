@@ -29,7 +29,7 @@ class AddVmsCallBackRequestBody:
     }
 
     def __init__(self, url_type=None, callback_url=None, remark=None):
-        """AddVmsCallBackRequestBody
+        r"""AddVmsCallBackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddVmsCallBackRequestBody:
 
     @property
     def url_type(self):
-        """Gets the url_type of this AddVmsCallBackRequestBody.
+        r"""Gets the url_type of this AddVmsCallBackRequestBody.
 
         回调类型。  - 0：发送状态回执 - 1：上行消息回执 
 
@@ -66,7 +66,7 @@ class AddVmsCallBackRequestBody:
 
     @url_type.setter
     def url_type(self, url_type):
-        """Sets the url_type of this AddVmsCallBackRequestBody.
+        r"""Sets the url_type of this AddVmsCallBackRequestBody.
 
         回调类型。  - 0：发送状态回执 - 1：上行消息回执 
 
@@ -77,7 +77,7 @@ class AddVmsCallBackRequestBody:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this AddVmsCallBackRequestBody.
+        r"""Gets the callback_url of this AddVmsCallBackRequestBody.
 
         回调地址，必须是http或https开头的字符串，不能为空。  > 建议使用https。 
 
@@ -88,7 +88,7 @@ class AddVmsCallBackRequestBody:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this AddVmsCallBackRequestBody.
+        r"""Sets the callback_url of this AddVmsCallBackRequestBody.
 
         回调地址，必须是http或https开头的字符串，不能为空。  > 建议使用https。 
 
@@ -99,7 +99,7 @@ class AddVmsCallBackRequestBody:
 
     @property
     def remark(self):
-        """Gets the remark of this AddVmsCallBackRequestBody.
+        r"""Gets the remark of this AddVmsCallBackRequestBody.
 
         备注。
 
@@ -110,7 +110,7 @@ class AddVmsCallBackRequestBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AddVmsCallBackRequestBody.
+        r"""Sets the remark of this AddVmsCallBackRequestBody.
 
         备注。
 

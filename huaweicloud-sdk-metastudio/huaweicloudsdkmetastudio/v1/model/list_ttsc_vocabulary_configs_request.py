@@ -39,7 +39,7 @@ class ListTtscVocabularyConfigsRequest:
     }
 
     def __init__(self, x_request_id=None, x_app_user_id=None, type=None, limit=None, offset=None, start_time=None, end_time=None, search_key=None):
-        """ListTtscVocabularyConfigsRequest
+        r"""ListTtscVocabularyConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the x_request_id of this ListTtscVocabularyConfigsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -102,7 +102,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the x_request_id of this ListTtscVocabularyConfigsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -113,7 +113,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the x_app_user_id of this ListTtscVocabularyConfigsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -124,7 +124,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the x_app_user_id of this ListTtscVocabularyConfigsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -135,7 +135,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the type of this ListTtscVocabularyConfigsRequest.
 
         自定义读法类型 CHINESE_G2P：拼音
 
@@ -146,7 +146,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the type of this ListTtscVocabularyConfigsRequest.
 
         自定义读法类型 CHINESE_G2P：拼音
 
@@ -157,7 +157,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the limit of this ListTtscVocabularyConfigsRequest.
 
         每页显示的条目数量。
 
@@ -168,7 +168,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the limit of this ListTtscVocabularyConfigsRequest.
 
         每页显示的条目数量。
 
@@ -179,7 +179,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the offset of this ListTtscVocabularyConfigsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -190,7 +190,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the offset of this ListTtscVocabularyConfigsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -201,7 +201,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the start_time of this ListTtscVocabularyConfigsRequest.
 
         起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -212,7 +212,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the start_time of this ListTtscVocabularyConfigsRequest.
 
         起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -223,7 +223,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the end_time of this ListTtscVocabularyConfigsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -234,7 +234,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the end_time of this ListTtscVocabularyConfigsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -245,7 +245,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListTtscVocabularyConfigsRequest.
+        r"""Gets the search_key of this ListTtscVocabularyConfigsRequest.
 
         搜索条件
 
@@ -256,7 +256,7 @@ class ListTtscVocabularyConfigsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListTtscVocabularyConfigsRequest.
+        r"""Sets the search_key of this ListTtscVocabularyConfigsRequest.
 
         搜索条件
 

@@ -52,7 +52,7 @@ class ShowInstanceEipResponse(SdkResponse):
     }
 
     def __init__(self, can_enable_public_access=None, id=None, type=None, port_id=None, public_ip_address=None, private_ip_address=None, status=None, tenant_id=None, create_time=None, bandwidth_id=None, bandwidth_name=None, bandwidth_size=None, bandwidth_share_type=None, profile=None):
-        """ShowInstanceEipResponse
+        r"""ShowInstanceEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def can_enable_public_access(self):
-        """Gets the can_enable_public_access of this ShowInstanceEipResponse.
+        r"""Gets the can_enable_public_access of this ShowInstanceEipResponse.
 
         是否能访问公网
 
@@ -146,7 +146,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @can_enable_public_access.setter
     def can_enable_public_access(self, can_enable_public_access):
-        """Sets the can_enable_public_access of this ShowInstanceEipResponse.
+        r"""Sets the can_enable_public_access of this ShowInstanceEipResponse.
 
         是否能访问公网
 
@@ -157,7 +157,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceEipResponse.
+        r"""Gets the id of this ShowInstanceEipResponse.
 
         弹性公网ID。
 
@@ -168,7 +168,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceEipResponse.
+        r"""Sets the id of this ShowInstanceEipResponse.
 
         弹性公网ID。
 
@@ -179,7 +179,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowInstanceEipResponse.
+        r"""Gets the type of this ShowInstanceEipResponse.
 
         弹性公网IP的网络类型。
 
@@ -190,7 +190,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowInstanceEipResponse.
+        r"""Sets the type of this ShowInstanceEipResponse.
 
         弹性公网IP的网络类型。
 
@@ -201,7 +201,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def port_id(self):
-        """Gets the port_id of this ShowInstanceEipResponse.
+        r"""Gets the port_id of this ShowInstanceEipResponse.
 
         端口ID。
 
@@ -212,7 +212,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ShowInstanceEipResponse.
+        r"""Sets the port_id of this ShowInstanceEipResponse.
 
         端口ID。
 
@@ -223,7 +223,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this ShowInstanceEipResponse.
+        r"""Gets the public_ip_address of this ShowInstanceEipResponse.
 
         弹性公网IP地址。
 
@@ -234,7 +234,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this ShowInstanceEipResponse.
+        r"""Sets the public_ip_address of this ShowInstanceEipResponse.
 
         弹性公网IP地址。
 
@@ -245,7 +245,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this ShowInstanceEipResponse.
+        r"""Gets the private_ip_address of this ShowInstanceEipResponse.
 
         私网IP地址。
 
@@ -256,7 +256,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this ShowInstanceEipResponse.
+        r"""Sets the private_ip_address of this ShowInstanceEipResponse.
 
         私网IP地址。
 
@@ -267,7 +267,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceEipResponse.
+        r"""Gets the status of this ShowInstanceEipResponse.
 
         弹性公网IP地址。
 
@@ -278,7 +278,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceEipResponse.
+        r"""Sets the status of this ShowInstanceEipResponse.
 
         弹性公网IP地址。
 
@@ -289,7 +289,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowInstanceEipResponse.
+        r"""Gets the tenant_id of this ShowInstanceEipResponse.
 
         租户ID。
 
@@ -300,7 +300,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowInstanceEipResponse.
+        r"""Sets the tenant_id of this ShowInstanceEipResponse.
 
         租户ID。
 
@@ -311,7 +311,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowInstanceEipResponse.
+        r"""Gets the create_time of this ShowInstanceEipResponse.
 
         创建时间。
 
@@ -322,7 +322,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowInstanceEipResponse.
+        r"""Sets the create_time of this ShowInstanceEipResponse.
 
         创建时间。
 
@@ -333,7 +333,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this ShowInstanceEipResponse.
+        r"""Gets the bandwidth_id of this ShowInstanceEipResponse.
 
         带宽ID。
 
@@ -344,7 +344,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this ShowInstanceEipResponse.
+        r"""Sets the bandwidth_id of this ShowInstanceEipResponse.
 
         带宽ID。
 
@@ -355,7 +355,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this ShowInstanceEipResponse.
+        r"""Gets the bandwidth_name of this ShowInstanceEipResponse.
 
         带宽名称。
 
@@ -366,7 +366,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this ShowInstanceEipResponse.
+        r"""Sets the bandwidth_name of this ShowInstanceEipResponse.
 
         带宽名称。
 
@@ -377,7 +377,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ShowInstanceEipResponse.
+        r"""Gets the bandwidth_size of this ShowInstanceEipResponse.
 
         带宽大小。
 
@@ -388,7 +388,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ShowInstanceEipResponse.
+        r"""Sets the bandwidth_size of this ShowInstanceEipResponse.
 
         带宽大小。
 
@@ -399,7 +399,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def bandwidth_share_type(self):
-        """Gets the bandwidth_share_type of this ShowInstanceEipResponse.
+        r"""Gets the bandwidth_share_type of this ShowInstanceEipResponse.
 
         带宽类型。枚举值：PER 和WHOLE。
 
@@ -410,7 +410,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @bandwidth_share_type.setter
     def bandwidth_share_type(self, bandwidth_share_type):
-        """Sets the bandwidth_share_type of this ShowInstanceEipResponse.
+        r"""Sets the bandwidth_share_type of this ShowInstanceEipResponse.
 
         带宽类型。枚举值：PER 和WHOLE。
 
@@ -421,7 +421,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @property
     def profile(self):
-        """Gets the profile of this ShowInstanceEipResponse.
+        r"""Gets the profile of this ShowInstanceEipResponse.
 
         额外参数，包括订单id、产品id等信息。如果profile不为空，说明是包周期的弹性公网IP。
 
@@ -432,7 +432,7 @@ class ShowInstanceEipResponse(SdkResponse):
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this ShowInstanceEipResponse.
+        r"""Sets the profile of this ShowInstanceEipResponse.
 
         额外参数，包括订单id、产品id等信息。如果profile不为空，说明是包周期的弹性公网IP。
 

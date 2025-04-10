@@ -27,7 +27,7 @@ class ListGaussMySqlDatabase:
     }
 
     def __init__(self, name=None, readonly=None):
-        """ListGaussMySqlDatabase
+        r"""ListGaussMySqlDatabase
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListGaussMySqlDatabase:
 
     @property
     def name(self):
-        """Gets the name of this ListGaussMySqlDatabase.
+        r"""Gets the name of this ListGaussMySqlDatabase.
 
         数据库名称。
 
@@ -61,7 +61,7 @@ class ListGaussMySqlDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGaussMySqlDatabase.
+        r"""Sets the name of this ListGaussMySqlDatabase.
 
         数据库名称。
 
@@ -72,7 +72,7 @@ class ListGaussMySqlDatabase:
 
     @property
     def readonly(self):
-        """Gets the readonly of this ListGaussMySqlDatabase.
+        r"""Gets the readonly of this ListGaussMySqlDatabase.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 
@@ -83,7 +83,7 @@ class ListGaussMySqlDatabase:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this ListGaussMySqlDatabase.
+        r"""Sets the readonly of this ListGaussMySqlDatabase.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 

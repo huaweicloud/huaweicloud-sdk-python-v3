@@ -28,7 +28,7 @@ class ListNotifyEventResponse(SdkResponse):
     }
 
     def __init__(self, event_name=None, total=None):
-        """ListNotifyEventResponse
+        r"""ListNotifyEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNotifyEventResponse(SdkResponse):
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListNotifyEventResponse.
+        r"""Gets the event_name of this ListNotifyEventResponse.
 
         事件名称
 
@@ -62,7 +62,7 @@ class ListNotifyEventResponse(SdkResponse):
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListNotifyEventResponse.
+        r"""Sets the event_name of this ListNotifyEventResponse.
 
         事件名称
 
@@ -73,7 +73,7 @@ class ListNotifyEventResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListNotifyEventResponse.
+        r"""Gets the total of this ListNotifyEventResponse.
 
         点播通知事件总数
 
@@ -84,7 +84,7 @@ class ListNotifyEventResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListNotifyEventResponse.
+        r"""Sets the total of this ListNotifyEventResponse.
 
         点播通知事件总数
 

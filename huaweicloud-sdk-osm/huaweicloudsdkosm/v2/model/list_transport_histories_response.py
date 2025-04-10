@@ -28,7 +28,7 @@ class ListTransportHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, file_ops_list=None):
-        """ListTransportHistoriesResponse
+        r"""ListTransportHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTransportHistoriesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListTransportHistoriesResponse.
+        r"""Gets the total_count of this ListTransportHistoriesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListTransportHistoriesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListTransportHistoriesResponse.
+        r"""Sets the total_count of this ListTransportHistoriesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListTransportHistoriesResponse(SdkResponse):
 
     @property
     def file_ops_list(self):
-        """Gets the file_ops_list of this ListTransportHistoriesResponse.
+        r"""Gets the file_ops_list of this ListTransportHistoriesResponse.
 
         文件记录列表
 
@@ -84,7 +84,7 @@ class ListTransportHistoriesResponse(SdkResponse):
 
     @file_ops_list.setter
     def file_ops_list(self, file_ops_list):
-        """Sets the file_ops_list of this ListTransportHistoriesResponse.
+        r"""Sets the file_ops_list of this ListTransportHistoriesResponse.
 
         文件记录列表
 

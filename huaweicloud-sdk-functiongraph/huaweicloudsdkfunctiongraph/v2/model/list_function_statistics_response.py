@@ -44,7 +44,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, duration=None, fail_count=None, max_duration=None, min_duration=None, reject_count=None, function_error_count=None, system_error_count=None, reserved_instance_num=None, concurrency_num=None):
-        """ListFunctionStatisticsResponse
+        r"""ListFunctionStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionStatisticsResponse.
+        r"""Gets the count of this ListFunctionStatisticsResponse.
 
         调用次数
 
@@ -118,7 +118,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionStatisticsResponse.
+        r"""Sets the count of this ListFunctionStatisticsResponse.
 
         调用次数
 
@@ -129,7 +129,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ListFunctionStatisticsResponse.
+        r"""Gets the duration of this ListFunctionStatisticsResponse.
 
         平均时延，单位毫秒
 
@@ -140,7 +140,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ListFunctionStatisticsResponse.
+        r"""Sets the duration of this ListFunctionStatisticsResponse.
 
         平均时延，单位毫秒
 
@@ -151,7 +151,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this ListFunctionStatisticsResponse.
+        r"""Gets the fail_count of this ListFunctionStatisticsResponse.
 
         错误次数
 
@@ -162,7 +162,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this ListFunctionStatisticsResponse.
+        r"""Sets the fail_count of this ListFunctionStatisticsResponse.
 
         错误次数
 
@@ -173,7 +173,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def max_duration(self):
-        """Gets the max_duration of this ListFunctionStatisticsResponse.
+        r"""Gets the max_duration of this ListFunctionStatisticsResponse.
 
         最大时延，单位毫秒
 
@@ -184,7 +184,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @max_duration.setter
     def max_duration(self, max_duration):
-        """Sets the max_duration of this ListFunctionStatisticsResponse.
+        r"""Sets the max_duration of this ListFunctionStatisticsResponse.
 
         最大时延，单位毫秒
 
@@ -195,7 +195,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def min_duration(self):
-        """Gets the min_duration of this ListFunctionStatisticsResponse.
+        r"""Gets the min_duration of this ListFunctionStatisticsResponse.
 
         最小时延，单位毫秒
 
@@ -206,7 +206,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @min_duration.setter
     def min_duration(self, min_duration):
-        """Sets the min_duration of this ListFunctionStatisticsResponse.
+        r"""Sets the min_duration of this ListFunctionStatisticsResponse.
 
         最小时延，单位毫秒
 
@@ -217,7 +217,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def reject_count(self):
-        """Gets the reject_count of this ListFunctionStatisticsResponse.
+        r"""Gets the reject_count of this ListFunctionStatisticsResponse.
 
         被拒绝次数
 
@@ -228,7 +228,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @reject_count.setter
     def reject_count(self, reject_count):
-        """Sets the reject_count of this ListFunctionStatisticsResponse.
+        r"""Sets the reject_count of this ListFunctionStatisticsResponse.
 
         被拒绝次数
 
@@ -239,7 +239,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def function_error_count(self):
-        """Gets the function_error_count of this ListFunctionStatisticsResponse.
+        r"""Gets the function_error_count of this ListFunctionStatisticsResponse.
 
         函数错误次数
 
@@ -250,7 +250,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @function_error_count.setter
     def function_error_count(self, function_error_count):
-        """Sets the function_error_count of this ListFunctionStatisticsResponse.
+        r"""Sets the function_error_count of this ListFunctionStatisticsResponse.
 
         函数错误次数
 
@@ -261,7 +261,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def system_error_count(self):
-        """Gets the system_error_count of this ListFunctionStatisticsResponse.
+        r"""Gets the system_error_count of this ListFunctionStatisticsResponse.
 
         系统错误次数
 
@@ -272,7 +272,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @system_error_count.setter
     def system_error_count(self, system_error_count):
-        """Sets the system_error_count of this ListFunctionStatisticsResponse.
+        r"""Sets the system_error_count of this ListFunctionStatisticsResponse.
 
         系统错误次数
 
@@ -283,7 +283,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def reserved_instance_num(self):
-        """Gets the reserved_instance_num of this ListFunctionStatisticsResponse.
+        r"""Gets the reserved_instance_num of this ListFunctionStatisticsResponse.
 
         预留实例指标
 
@@ -294,7 +294,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @reserved_instance_num.setter
     def reserved_instance_num(self, reserved_instance_num):
-        """Sets the reserved_instance_num of this ListFunctionStatisticsResponse.
+        r"""Sets the reserved_instance_num of this ListFunctionStatisticsResponse.
 
         预留实例指标
 
@@ -305,7 +305,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @property
     def concurrency_num(self):
-        """Gets the concurrency_num of this ListFunctionStatisticsResponse.
+        r"""Gets the concurrency_num of this ListFunctionStatisticsResponse.
 
         弹性实例指标
 
@@ -316,7 +316,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
 
     @concurrency_num.setter
     def concurrency_num(self, concurrency_num):
-        """Sets the concurrency_num of this ListFunctionStatisticsResponse.
+        r"""Sets the concurrency_num of this ListFunctionStatisticsResponse.
 
         弹性实例指标
 

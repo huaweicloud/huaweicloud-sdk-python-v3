@@ -26,7 +26,7 @@ class ShowMapTileResponse(SdkStreamResponse):
     }
 
     def __init__(self, response, content_type=None):
-        """ShowMapTileResponse
+        r"""ShowMapTileResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMapTileResponse(SdkStreamResponse):
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowMapTileResponse.
+        r"""Gets the content_type of this ShowMapTileResponse.
 
         :return: The content_type of this ShowMapTileResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowMapTileResponse(SdkStreamResponse):
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowMapTileResponse.
+        r"""Sets the content_type of this ShowMapTileResponse.
 
         :param content_type: The content_type of this ShowMapTileResponse.
         :type content_type: str

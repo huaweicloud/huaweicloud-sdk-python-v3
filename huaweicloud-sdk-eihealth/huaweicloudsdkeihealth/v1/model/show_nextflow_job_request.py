@@ -27,7 +27,7 @@ class ShowNextflowJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None):
-        """ShowNextflowJobRequest
+        r"""ShowNextflowJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNextflowJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowNextflowJobRequest.
+        r"""Gets the eihealth_project_id of this ShowNextflowJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowNextflowJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowNextflowJobRequest.
+        r"""Sets the eihealth_project_id of this ShowNextflowJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowNextflowJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowNextflowJobRequest.
+        r"""Gets the job_id of this ShowNextflowJobRequest.
 
         作业id
 
@@ -81,7 +81,7 @@ class ShowNextflowJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowNextflowJobRequest.
+        r"""Sets the job_id of this ShowNextflowJobRequest.
 
         作业id
 

@@ -24,7 +24,7 @@ class PutKvResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PutKvResponse
+        r"""PutKvResponse
 
         The model defined in huaweicloud sdk
 

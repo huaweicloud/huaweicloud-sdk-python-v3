@@ -29,7 +29,7 @@ class CollectDbObjectsInfoRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """CollectDbObjectsInfoRequest
+        r"""CollectDbObjectsInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CollectDbObjectsInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectDbObjectsInfoRequest.
+        r"""Gets the job_id of this CollectDbObjectsInfoRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class CollectDbObjectsInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectDbObjectsInfoRequest.
+        r"""Sets the job_id of this CollectDbObjectsInfoRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class CollectDbObjectsInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CollectDbObjectsInfoRequest.
+        r"""Gets the x_language of this CollectDbObjectsInfoRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CollectDbObjectsInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CollectDbObjectsInfoRequest.
+        r"""Sets the x_language of this CollectDbObjectsInfoRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CollectDbObjectsInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CollectDbObjectsInfoRequest.
+        r"""Gets the body of this CollectDbObjectsInfoRequest.
 
         :return: The body of this CollectDbObjectsInfoRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.QuerySelectObjectInfoReq`
@@ -109,7 +109,7 @@ class CollectDbObjectsInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectDbObjectsInfoRequest.
+        r"""Sets the body of this CollectDbObjectsInfoRequest.
 
         :param body: The body of this CollectDbObjectsInfoRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.QuerySelectObjectInfoReq`

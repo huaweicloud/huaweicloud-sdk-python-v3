@@ -52,7 +52,7 @@ class CreateCustomfieldsResponse(SdkResponse):
     }
 
     def __init__(self, options=None, region=None, id=None, identifier=None, project_id=None, tracker_id=None, custom_field=None, type=None, name=None, sort=None, memo=None, created=None, modified=None, is_delete=None):
-        """CreateCustomfieldsResponse
+        r"""CreateCustomfieldsResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def options(self):
-        """Gets the options of this CreateCustomfieldsResponse.
+        r"""Gets the options of this CreateCustomfieldsResponse.
 
         字段选项
 
@@ -146,7 +146,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @options.setter
     def options(self, options):
-        """Sets the options of this CreateCustomfieldsResponse.
+        r"""Sets the options of this CreateCustomfieldsResponse.
 
         字段选项
 
@@ -157,7 +157,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this CreateCustomfieldsResponse.
+        r"""Gets the region of this CreateCustomfieldsResponse.
 
         系统字段
 
@@ -168,7 +168,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateCustomfieldsResponse.
+        r"""Sets the region of this CreateCustomfieldsResponse.
 
         系统字段
 
@@ -179,7 +179,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCustomfieldsResponse.
+        r"""Gets the id of this CreateCustomfieldsResponse.
 
         字段ID
 
@@ -190,7 +190,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCustomfieldsResponse.
+        r"""Sets the id of this CreateCustomfieldsResponse.
 
         字段ID
 
@@ -201,7 +201,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def identifier(self):
-        """Gets the identifier of this CreateCustomfieldsResponse.
+        r"""Gets the identifier of this CreateCustomfieldsResponse.
 
         字段ID
 
@@ -212,7 +212,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this CreateCustomfieldsResponse.
+        r"""Sets the identifier of this CreateCustomfieldsResponse.
 
         字段ID
 
@@ -223,7 +223,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateCustomfieldsResponse.
+        r"""Gets the project_id of this CreateCustomfieldsResponse.
 
         项目ID
 
@@ -234,7 +234,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateCustomfieldsResponse.
+        r"""Sets the project_id of this CreateCustomfieldsResponse.
 
         项目ID
 
@@ -245,7 +245,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this CreateCustomfieldsResponse.
+        r"""Gets the tracker_id of this CreateCustomfieldsResponse.
 
         工作项类型id 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -256,7 +256,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this CreateCustomfieldsResponse.
+        r"""Sets the tracker_id of this CreateCustomfieldsResponse.
 
         工作项类型id 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -267,7 +267,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def custom_field(self):
-        """Gets the custom_field of this CreateCustomfieldsResponse.
+        r"""Gets the custom_field of this CreateCustomfieldsResponse.
 
         系统字段名
 
@@ -278,7 +278,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @custom_field.setter
     def custom_field(self, custom_field):
-        """Sets the custom_field of this CreateCustomfieldsResponse.
+        r"""Sets the custom_field of this CreateCustomfieldsResponse.
 
         系统字段名
 
@@ -289,7 +289,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateCustomfieldsResponse.
+        r"""Gets the type of this CreateCustomfieldsResponse.
 
         字段类型
 
@@ -300,7 +300,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCustomfieldsResponse.
+        r"""Sets the type of this CreateCustomfieldsResponse.
 
         字段类型
 
@@ -311,7 +311,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomfieldsResponse.
+        r"""Gets the name of this CreateCustomfieldsResponse.
 
         字段名称
 
@@ -322,7 +322,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomfieldsResponse.
+        r"""Sets the name of this CreateCustomfieldsResponse.
 
         字段名称
 
@@ -333,7 +333,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def sort(self):
-        """Gets the sort of this CreateCustomfieldsResponse.
+        r"""Gets the sort of this CreateCustomfieldsResponse.
 
         系统字段
 
@@ -344,7 +344,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this CreateCustomfieldsResponse.
+        r"""Sets the sort of this CreateCustomfieldsResponse.
 
         系统字段
 
@@ -355,7 +355,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def memo(self):
-        """Gets the memo of this CreateCustomfieldsResponse.
+        r"""Gets the memo of this CreateCustomfieldsResponse.
 
         字段描述
 
@@ -366,7 +366,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this CreateCustomfieldsResponse.
+        r"""Sets the memo of this CreateCustomfieldsResponse.
 
         字段描述
 
@@ -377,7 +377,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this CreateCustomfieldsResponse.
+        r"""Gets the created of this CreateCustomfieldsResponse.
 
         创建时间
 
@@ -388,7 +388,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CreateCustomfieldsResponse.
+        r"""Sets the created of this CreateCustomfieldsResponse.
 
         创建时间
 
@@ -399,7 +399,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def modified(self):
-        """Gets the modified of this CreateCustomfieldsResponse.
+        r"""Gets the modified of this CreateCustomfieldsResponse.
 
         修改时间
 
@@ -410,7 +410,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @modified.setter
     def modified(self, modified):
-        """Sets the modified of this CreateCustomfieldsResponse.
+        r"""Sets the modified of this CreateCustomfieldsResponse.
 
         修改时间
 
@@ -421,7 +421,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @property
     def is_delete(self):
-        """Gets the is_delete of this CreateCustomfieldsResponse.
+        r"""Gets the is_delete of this CreateCustomfieldsResponse.
 
         是否被删除
 
@@ -432,7 +432,7 @@ class CreateCustomfieldsResponse(SdkResponse):
 
     @is_delete.setter
     def is_delete(self, is_delete):
-        """Sets the is_delete of this CreateCustomfieldsResponse.
+        r"""Sets the is_delete of this CreateCustomfieldsResponse.
 
         是否被删除
 

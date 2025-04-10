@@ -27,7 +27,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequest:
     }
 
     def __init__(self, traffic_mirror_session_id=None, body=None):
-        """RemoveSourcesFromTrafficMirrorSessionRequest
+        r"""RemoveSourcesFromTrafficMirrorSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequest:
 
     @property
     def traffic_mirror_session_id(self):
-        """Gets the traffic_mirror_session_id of this RemoveSourcesFromTrafficMirrorSessionRequest.
+        r"""Gets the traffic_mirror_session_id of this RemoveSourcesFromTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -60,7 +60,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequest:
 
     @traffic_mirror_session_id.setter
     def traffic_mirror_session_id(self, traffic_mirror_session_id):
-        """Sets the traffic_mirror_session_id of this RemoveSourcesFromTrafficMirrorSessionRequest.
+        r"""Sets the traffic_mirror_session_id of this RemoveSourcesFromTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -71,7 +71,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveSourcesFromTrafficMirrorSessionRequest.
+        r"""Gets the body of this RemoveSourcesFromTrafficMirrorSessionRequest.
 
         :return: The body of this RemoveSourcesFromTrafficMirrorSessionRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveSourcesFromTrafficMirrorSessionRequestBody`
@@ -80,7 +80,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveSourcesFromTrafficMirrorSessionRequest.
+        r"""Sets the body of this RemoveSourcesFromTrafficMirrorSessionRequest.
 
         :param body: The body of this RemoveSourcesFromTrafficMirrorSessionRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.RemoveSourcesFromTrafficMirrorSessionRequestBody`

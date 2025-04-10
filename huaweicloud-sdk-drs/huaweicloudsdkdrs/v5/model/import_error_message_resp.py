@@ -31,7 +31,7 @@ class ImportErrorMessageResp:
     }
 
     def __init__(self, sheet_name=None, row_rum=None, value=None, error_message=None):
-        """ImportErrorMessageResp
+        r"""ImportErrorMessageResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ImportErrorMessageResp:
 
     @property
     def sheet_name(self):
-        """Gets the sheet_name of this ImportErrorMessageResp.
+        r"""Gets the sheet_name of this ImportErrorMessageResp.
 
         sheet名称。
 
@@ -75,7 +75,7 @@ class ImportErrorMessageResp:
 
     @sheet_name.setter
     def sheet_name(self, sheet_name):
-        """Sets the sheet_name of this ImportErrorMessageResp.
+        r"""Sets the sheet_name of this ImportErrorMessageResp.
 
         sheet名称。
 
@@ -86,7 +86,7 @@ class ImportErrorMessageResp:
 
     @property
     def row_rum(self):
-        """Gets the row_rum of this ImportErrorMessageResp.
+        r"""Gets the row_rum of this ImportErrorMessageResp.
 
         行号。
 
@@ -97,7 +97,7 @@ class ImportErrorMessageResp:
 
     @row_rum.setter
     def row_rum(self, row_rum):
-        """Sets the row_rum of this ImportErrorMessageResp.
+        r"""Sets the row_rum of this ImportErrorMessageResp.
 
         行号。
 
@@ -108,7 +108,7 @@ class ImportErrorMessageResp:
 
     @property
     def value(self):
-        """Gets the value of this ImportErrorMessageResp.
+        r"""Gets the value of this ImportErrorMessageResp.
 
         字段值。
 
@@ -119,7 +119,7 @@ class ImportErrorMessageResp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ImportErrorMessageResp.
+        r"""Sets the value of this ImportErrorMessageResp.
 
         字段值。
 
@@ -130,7 +130,7 @@ class ImportErrorMessageResp:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ImportErrorMessageResp.
+        r"""Gets the error_message of this ImportErrorMessageResp.
 
         错误信息。
 
@@ -141,7 +141,7 @@ class ImportErrorMessageResp:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ImportErrorMessageResp.
+        r"""Sets the error_message of this ImportErrorMessageResp.
 
         错误信息。
 

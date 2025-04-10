@@ -26,7 +26,7 @@ class BatchSyncMetadataResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """BatchSyncMetadataResponse
+        r"""BatchSyncMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchSyncMetadataResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this BatchSyncMetadataResponse.
+        r"""Gets the success of this BatchSyncMetadataResponse.
 
         是否成功
 
@@ -55,7 +55,7 @@ class BatchSyncMetadataResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchSyncMetadataResponse.
+        r"""Sets the success of this BatchSyncMetadataResponse.
 
         是否成功
 

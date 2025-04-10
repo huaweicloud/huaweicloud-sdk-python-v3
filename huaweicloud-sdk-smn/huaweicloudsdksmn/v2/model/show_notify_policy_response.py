@@ -32,7 +32,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, id=None, protocol=None, polling=None):
-        """ShowNotifyPolicyResponse
+        r"""ShowNotifyPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowNotifyPolicyResponse.
+        r"""Gets the request_id of this ShowNotifyPolicyResponse.
 
         请求ID。
 
@@ -76,7 +76,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowNotifyPolicyResponse.
+        r"""Sets the request_id of this ShowNotifyPolicyResponse.
 
         请求ID。
 
@@ -87,7 +87,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNotifyPolicyResponse.
+        r"""Gets the id of this ShowNotifyPolicyResponse.
 
         通知策略ID。
 
@@ -98,7 +98,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNotifyPolicyResponse.
+        r"""Sets the id of this ShowNotifyPolicyResponse.
 
         通知策略ID。
 
@@ -109,7 +109,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this ShowNotifyPolicyResponse.
+        r"""Gets the protocol of this ShowNotifyPolicyResponse.
 
         通知策略类型，当前仅支持语音。
 
@@ -120,7 +120,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ShowNotifyPolicyResponse.
+        r"""Sets the protocol of this ShowNotifyPolicyResponse.
 
         通知策略类型，当前仅支持语音。
 
@@ -131,7 +131,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @property
     def polling(self):
-        """Gets the polling of this ShowNotifyPolicyResponse.
+        r"""Gets the polling of this ShowNotifyPolicyResponse.
 
         轮询策略订阅终端。
 
@@ -142,7 +142,7 @@ class ShowNotifyPolicyResponse(SdkResponse):
 
     @polling.setter
     def polling(self, polling):
-        """Sets the polling of this ShowNotifyPolicyResponse.
+        r"""Sets the polling of this ShowNotifyPolicyResponse.
 
         轮询策略订阅终端。
 

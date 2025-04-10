@@ -28,7 +28,7 @@ class ShowCredentialRequest:
     }
 
     def __init__(self, x_auth_token=None, content_type=None):
-        """ShowCredentialRequest
+        r"""ShowCredentialRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCredentialRequest:
 
     @property
     def x_auth_token(self):
-        """Gets the x_auth_token of this ShowCredentialRequest.
+        r"""Gets the x_auth_token of this ShowCredentialRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -60,7 +60,7 @@ class ShowCredentialRequest:
 
     @x_auth_token.setter
     def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this ShowCredentialRequest.
+        r"""Sets the x_auth_token of this ShowCredentialRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -71,7 +71,7 @@ class ShowCredentialRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowCredentialRequest.
+        r"""Gets the content_type of this ShowCredentialRequest.
 
         该字段填为“application/json;charset=utf8”。
 
@@ -82,7 +82,7 @@ class ShowCredentialRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowCredentialRequest.
+        r"""Sets the content_type of this ShowCredentialRequest.
 
         该字段填为“application/json;charset=utf8”。
 

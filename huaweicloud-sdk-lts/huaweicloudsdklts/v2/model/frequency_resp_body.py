@@ -35,7 +35,7 @@ class FrequencyRespBody:
     }
 
     def __init__(self, type=None, cron_expr=None, hour_of_day=None, day_of_week=None, fixed_rate=None, fixed_rate_unit=None):
-        """FrequencyRespBody
+        r"""FrequencyRespBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FrequencyRespBody:
 
     @property
     def type(self):
-        """Gets the type of this FrequencyRespBody.
+        r"""Gets the type of this FrequencyRespBody.
 
         时间类型。
 
@@ -89,7 +89,7 @@ class FrequencyRespBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FrequencyRespBody.
+        r"""Sets the type of this FrequencyRespBody.
 
         时间类型。
 
@@ -100,7 +100,7 @@ class FrequencyRespBody:
 
     @property
     def cron_expr(self):
-        """Gets the cron_expr of this FrequencyRespBody.
+        r"""Gets the cron_expr of this FrequencyRespBody.
 
         当字段type为\"CRON\"时取该字段。
 
@@ -111,7 +111,7 @@ class FrequencyRespBody:
 
     @cron_expr.setter
     def cron_expr(self, cron_expr):
-        """Sets the cron_expr of this FrequencyRespBody.
+        r"""Sets the cron_expr of this FrequencyRespBody.
 
         当字段type为\"CRON\"时取该字段。
 
@@ -122,7 +122,7 @@ class FrequencyRespBody:
 
     @property
     def hour_of_day(self):
-        """Gets the hour_of_day of this FrequencyRespBody.
+        r"""Gets the hour_of_day of this FrequencyRespBody.
 
         当字段type为\"DAILY\"或者\"WEEKLY\"时取该字段。
 
@@ -133,7 +133,7 @@ class FrequencyRespBody:
 
     @hour_of_day.setter
     def hour_of_day(self, hour_of_day):
-        """Sets the hour_of_day of this FrequencyRespBody.
+        r"""Sets the hour_of_day of this FrequencyRespBody.
 
         当字段type为\"DAILY\"或者\"WEEKLY\"时取该字段。
 
@@ -144,7 +144,7 @@ class FrequencyRespBody:
 
     @property
     def day_of_week(self):
-        """Gets the day_of_week of this FrequencyRespBody.
+        r"""Gets the day_of_week of this FrequencyRespBody.
 
         当字段type为\"WEEKLY\"时取该字段（周日~周六）。
 
@@ -155,7 +155,7 @@ class FrequencyRespBody:
 
     @day_of_week.setter
     def day_of_week(self, day_of_week):
-        """Sets the day_of_week of this FrequencyRespBody.
+        r"""Sets the day_of_week of this FrequencyRespBody.
 
         当字段type为\"WEEKLY\"时取该字段（周日~周六）。
 
@@ -166,7 +166,7 @@ class FrequencyRespBody:
 
     @property
     def fixed_rate(self):
-        """Gets the fixed_rate of this FrequencyRespBody.
+        r"""Gets the fixed_rate of this FrequencyRespBody.
 
         当字段type为\"FIXED_RATE\"时取该字段（当fixed_rate_unit单位为minute，最大值60；当fixed_rate_unit单位为hour，最大值24）。
 
@@ -177,7 +177,7 @@ class FrequencyRespBody:
 
     @fixed_rate.setter
     def fixed_rate(self, fixed_rate):
-        """Sets the fixed_rate of this FrequencyRespBody.
+        r"""Sets the fixed_rate of this FrequencyRespBody.
 
         当字段type为\"FIXED_RATE\"时取该字段（当fixed_rate_unit单位为minute，最大值60；当fixed_rate_unit单位为hour，最大值24）。
 
@@ -188,7 +188,7 @@ class FrequencyRespBody:
 
     @property
     def fixed_rate_unit(self):
-        """Gets the fixed_rate_unit of this FrequencyRespBody.
+        r"""Gets the fixed_rate_unit of this FrequencyRespBody.
 
         时间单位枚举值：
 
@@ -199,7 +199,7 @@ class FrequencyRespBody:
 
     @fixed_rate_unit.setter
     def fixed_rate_unit(self, fixed_rate_unit):
-        """Sets the fixed_rate_unit of this FrequencyRespBody.
+        r"""Sets the fixed_rate_unit of this FrequencyRespBody.
 
         时间单位枚举值：
 

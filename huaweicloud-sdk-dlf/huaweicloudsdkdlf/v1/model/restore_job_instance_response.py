@@ -24,7 +24,7 @@ class RestoreJobInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestoreJobInstanceResponse
+        r"""RestoreJobInstanceResponse
 
         The model defined in huaweicloud sdk
 

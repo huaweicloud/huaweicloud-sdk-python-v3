@@ -42,7 +42,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, name=None, id=None, nodes=None, schedule=None, params=None, directory=None, job_type=None, last_update_user=None, basic_config=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowJobResponse.
+        r"""Gets the name of this ShowJobResponse.
 
         :return: The name of this ShowJobResponse.
         :rtype: str
@@ -109,7 +109,7 @@ class ShowJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowJobResponse.
+        r"""Sets the name of this ShowJobResponse.
 
         :param name: The name of this ShowJobResponse.
         :type name: str
@@ -118,7 +118,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowJobResponse.
+        r"""Gets the id of this ShowJobResponse.
 
         :return: The id of this ShowJobResponse.
         :rtype: int
@@ -127,7 +127,7 @@ class ShowJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowJobResponse.
+        r"""Sets the id of this ShowJobResponse.
 
         :param id: The id of this ShowJobResponse.
         :type id: int
@@ -136,7 +136,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowJobResponse.
+        r"""Gets the nodes of this ShowJobResponse.
 
         :return: The nodes of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.Node`]
@@ -145,7 +145,7 @@ class ShowJobResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowJobResponse.
+        r"""Sets the nodes of this ShowJobResponse.
 
         :param nodes: The nodes of this ShowJobResponse.
         :type nodes: list[:class:`huaweicloudsdkdlf.v1.Node`]
@@ -154,7 +154,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def schedule(self):
-        """Gets the schedule of this ShowJobResponse.
+        r"""Gets the schedule of this ShowJobResponse.
 
         :return: The schedule of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkdlf.v1.Schedule`
@@ -163,7 +163,7 @@ class ShowJobResponse(SdkResponse):
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this ShowJobResponse.
+        r"""Sets the schedule of this ShowJobResponse.
 
         :param schedule: The schedule of this ShowJobResponse.
         :type schedule: :class:`huaweicloudsdkdlf.v1.Schedule`
@@ -172,7 +172,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowJobResponse.
+        r"""Gets the params of this ShowJobResponse.
 
         :return: The params of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.JobParam`]
@@ -181,7 +181,7 @@ class ShowJobResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowJobResponse.
+        r"""Sets the params of this ShowJobResponse.
 
         :param params: The params of this ShowJobResponse.
         :type params: list[:class:`huaweicloudsdkdlf.v1.JobParam`]
@@ -190,7 +190,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def directory(self):
-        """Gets the directory of this ShowJobResponse.
+        r"""Gets the directory of this ShowJobResponse.
 
         :return: The directory of this ShowJobResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class ShowJobResponse(SdkResponse):
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ShowJobResponse.
+        r"""Sets the directory of this ShowJobResponse.
 
         :param directory: The directory of this ShowJobResponse.
         :type directory: str
@@ -208,7 +208,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobResponse.
+        r"""Gets the job_type of this ShowJobResponse.
 
         :return: The job_type of this ShowJobResponse.
         :rtype: str
@@ -217,7 +217,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobResponse.
+        r"""Sets the job_type of this ShowJobResponse.
 
         :param job_type: The job_type of this ShowJobResponse.
         :type job_type: str
@@ -226,7 +226,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this ShowJobResponse.
+        r"""Gets the last_update_user of this ShowJobResponse.
 
         :return: The last_update_user of this ShowJobResponse.
         :rtype: str
@@ -235,7 +235,7 @@ class ShowJobResponse(SdkResponse):
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this ShowJobResponse.
+        r"""Sets the last_update_user of this ShowJobResponse.
 
         :param last_update_user: The last_update_user of this ShowJobResponse.
         :type last_update_user: str
@@ -244,7 +244,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def basic_config(self):
-        """Gets the basic_config of this ShowJobResponse.
+        r"""Gets the basic_config of this ShowJobResponse.
 
         :return: The basic_config of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkdlf.v1.BasicInfo`
@@ -253,7 +253,7 @@ class ShowJobResponse(SdkResponse):
 
     @basic_config.setter
     def basic_config(self, basic_config):
-        """Sets the basic_config of this ShowJobResponse.
+        r"""Sets the basic_config of this ShowJobResponse.
 
         :param basic_config: The basic_config of this ShowJobResponse.
         :type basic_config: :class:`huaweicloudsdkdlf.v1.BasicInfo`

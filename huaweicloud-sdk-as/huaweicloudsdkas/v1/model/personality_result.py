@@ -27,7 +27,7 @@ class PersonalityResult:
     }
 
     def __init__(self, path=None, content=None):
-        """PersonalityResult
+        r"""PersonalityResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PersonalityResult:
 
     @property
     def path(self):
-        """Gets the path of this PersonalityResult.
+        r"""Gets the path of this PersonalityResult.
 
         注入文件路径信息。
 
@@ -61,7 +61,7 @@ class PersonalityResult:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PersonalityResult.
+        r"""Sets the path of this PersonalityResult.
 
         注入文件路径信息。
 
@@ -72,7 +72,7 @@ class PersonalityResult:
 
     @property
     def content(self):
-        """Gets the content of this PersonalityResult.
+        r"""Gets the content of this PersonalityResult.
 
         注入文件内容，base64格式编码。
 
@@ -83,7 +83,7 @@ class PersonalityResult:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PersonalityResult.
+        r"""Sets the content of this PersonalityResult.
 
         注入文件内容，base64格式编码。
 

@@ -29,7 +29,7 @@ class ShowDatabaseLevelDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, backup_id=None, x_language=None):
-        """ShowDatabaseLevelDatabaseRequest
+        r"""ShowDatabaseLevelDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDatabaseLevelDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDatabaseLevelDatabaseRequest.
+        r"""Gets the instance_id of this ShowDatabaseLevelDatabaseRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ShowDatabaseLevelDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDatabaseLevelDatabaseRequest.
+        r"""Sets the instance_id of this ShowDatabaseLevelDatabaseRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ShowDatabaseLevelDatabaseRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowDatabaseLevelDatabaseRequest.
+        r"""Gets the backup_id of this ShowDatabaseLevelDatabaseRequest.
 
         备份id
 
@@ -88,7 +88,7 @@ class ShowDatabaseLevelDatabaseRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowDatabaseLevelDatabaseRequest.
+        r"""Sets the backup_id of this ShowDatabaseLevelDatabaseRequest.
 
         备份id
 
@@ -99,7 +99,7 @@ class ShowDatabaseLevelDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDatabaseLevelDatabaseRequest.
+        r"""Gets the x_language of this ShowDatabaseLevelDatabaseRequest.
 
         语言。默认en-us。
 
@@ -110,7 +110,7 @@ class ShowDatabaseLevelDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDatabaseLevelDatabaseRequest.
+        r"""Sets the x_language of this ShowDatabaseLevelDatabaseRequest.
 
         语言。默认en-us。
 

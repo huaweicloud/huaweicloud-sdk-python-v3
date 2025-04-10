@@ -25,7 +25,7 @@ class DeleteApplicationRequest:
     }
 
     def __init__(self, application_urn=None):
-        """DeleteApplicationRequest
+        r"""DeleteApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteApplicationRequest:
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this DeleteApplicationRequest.
+        r"""Gets the application_urn of this DeleteApplicationRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class DeleteApplicationRequest:
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this DeleteApplicationRequest.
+        r"""Sets the application_urn of this DeleteApplicationRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 

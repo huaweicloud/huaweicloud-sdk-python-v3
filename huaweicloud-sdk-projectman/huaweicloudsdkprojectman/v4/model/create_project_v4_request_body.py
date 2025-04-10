@@ -35,7 +35,7 @@ class CreateProjectV4RequestBody:
     }
 
     def __init__(self, project_name=None, description=None, source=None, project_type=None, enterprise_id=None, template_id=None):
-        """CreateProjectV4RequestBody
+        r"""CreateProjectV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateProjectV4RequestBody:
 
     @property
     def project_name(self):
-        """Gets the project_name of this CreateProjectV4RequestBody.
+        r"""Gets the project_name of this CreateProjectV4RequestBody.
 
         项目名称
 
@@ -87,7 +87,7 @@ class CreateProjectV4RequestBody:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this CreateProjectV4RequestBody.
+        r"""Sets the project_name of this CreateProjectV4RequestBody.
 
         项目名称
 
@@ -98,7 +98,7 @@ class CreateProjectV4RequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateProjectV4RequestBody.
+        r"""Gets the description of this CreateProjectV4RequestBody.
 
         项目描述
 
@@ -109,7 +109,7 @@ class CreateProjectV4RequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProjectV4RequestBody.
+        r"""Sets the description of this CreateProjectV4RequestBody.
 
         项目描述
 
@@ -120,7 +120,7 @@ class CreateProjectV4RequestBody:
 
     @property
     def source(self):
-        """Gets the source of this CreateProjectV4RequestBody.
+        r"""Gets the source of this CreateProjectV4RequestBody.
 
         项目来源
 
@@ -131,7 +131,7 @@ class CreateProjectV4RequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateProjectV4RequestBody.
+        r"""Sets the source of this CreateProjectV4RequestBody.
 
         项目来源
 
@@ -142,7 +142,7 @@ class CreateProjectV4RequestBody:
 
     @property
     def project_type(self):
-        """Gets the project_type of this CreateProjectV4RequestBody.
+        r"""Gets the project_type of this CreateProjectV4RequestBody.
 
         项目类型 scrum, xboard(看板项目), basic, phoenix(凤凰项目)
 
@@ -153,7 +153,7 @@ class CreateProjectV4RequestBody:
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this CreateProjectV4RequestBody.
+        r"""Sets the project_type of this CreateProjectV4RequestBody.
 
         项目类型 scrum, xboard(看板项目), basic, phoenix(凤凰项目)
 
@@ -164,7 +164,7 @@ class CreateProjectV4RequestBody:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this CreateProjectV4RequestBody.
+        r"""Gets the enterprise_id of this CreateProjectV4RequestBody.
 
         项目要绑定的企业项目ID
 
@@ -175,7 +175,7 @@ class CreateProjectV4RequestBody:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this CreateProjectV4RequestBody.
+        r"""Sets the enterprise_id of this CreateProjectV4RequestBody.
 
         项目要绑定的企业项目ID
 
@@ -186,7 +186,7 @@ class CreateProjectV4RequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateProjectV4RequestBody.
+        r"""Gets the template_id of this CreateProjectV4RequestBody.
 
         用户创建的项目模板id
 
@@ -197,7 +197,7 @@ class CreateProjectV4RequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateProjectV4RequestBody.
+        r"""Sets the template_id of this CreateProjectV4RequestBody.
 
         用户创建的项目模板id
 

@@ -29,7 +29,7 @@ class UpdateEquipmentDnsInfoRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """UpdateEquipmentDnsInfoRequest
+        r"""UpdateEquipmentDnsInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEquipmentDnsInfoRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateEquipmentDnsInfoRequest.
+        r"""Gets the ieg_id of this UpdateEquipmentDnsInfoRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateEquipmentDnsInfoRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateEquipmentDnsInfoRequest.
+        r"""Sets the ieg_id of this UpdateEquipmentDnsInfoRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateEquipmentDnsInfoRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this UpdateEquipmentDnsInfoRequest.
+        r"""Gets the equipment_id of this UpdateEquipmentDnsInfoRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class UpdateEquipmentDnsInfoRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this UpdateEquipmentDnsInfoRequest.
+        r"""Sets the equipment_id of this UpdateEquipmentDnsInfoRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class UpdateEquipmentDnsInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEquipmentDnsInfoRequest.
+        r"""Gets the body of this UpdateEquipmentDnsInfoRequest.
 
         :return: The body of this UpdateEquipmentDnsInfoRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EquipmentDnsItem`
@@ -108,7 +108,7 @@ class UpdateEquipmentDnsInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEquipmentDnsInfoRequest.
+        r"""Sets the body of this UpdateEquipmentDnsInfoRequest.
 
         :param body: The body of this UpdateEquipmentDnsInfoRequest.
         :type body: :class:`huaweicloudsdkec.v1.EquipmentDnsItem`

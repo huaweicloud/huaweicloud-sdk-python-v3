@@ -29,7 +29,7 @@ class UpdateRoleRequest:
     }
 
     def __init__(self, instance_id=None, role_name=None, body=None):
-        """UpdateRoleRequest
+        r"""UpdateRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRoleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateRoleRequest.
+        r"""Gets the instance_id of this UpdateRoleRequest.
 
         实例Id
 
@@ -66,7 +66,7 @@ class UpdateRoleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateRoleRequest.
+        r"""Sets the instance_id of this UpdateRoleRequest.
 
         实例Id
 
@@ -77,7 +77,7 @@ class UpdateRoleRequest:
 
     @property
     def role_name(self):
-        """Gets the role_name of this UpdateRoleRequest.
+        r"""Gets the role_name of this UpdateRoleRequest.
 
         角色名称
 
@@ -88,7 +88,7 @@ class UpdateRoleRequest:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this UpdateRoleRequest.
+        r"""Sets the role_name of this UpdateRoleRequest.
 
         角色名称
 
@@ -99,7 +99,7 @@ class UpdateRoleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRoleRequest.
+        r"""Gets the body of this UpdateRoleRequest.
 
         :return: The body of this UpdateRoleRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.AlterRoleInput`
@@ -108,7 +108,7 @@ class UpdateRoleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRoleRequest.
+        r"""Sets the body of this UpdateRoleRequest.
 
         :param body: The body of this UpdateRoleRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.AlterRoleInput`

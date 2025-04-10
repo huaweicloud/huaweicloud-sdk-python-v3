@@ -29,7 +29,7 @@ class UploadMediaResponseModel:
     }
 
     def __init__(self, resource_type=None, resource_id=None, resource_url=None):
-        """UploadMediaResponseModel
+        r"""UploadMediaResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UploadMediaResponseModel:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this UploadMediaResponseModel.
+        r"""Gets the resource_type of this UploadMediaResponseModel.
 
         资源类型。 - 1：图片 
 
@@ -68,7 +68,7 @@ class UploadMediaResponseModel:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this UploadMediaResponseModel.
+        r"""Sets the resource_type of this UploadMediaResponseModel.
 
         资源类型。 - 1：图片 
 
@@ -79,7 +79,7 @@ class UploadMediaResponseModel:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UploadMediaResponseModel.
+        r"""Gets the resource_id of this UploadMediaResponseModel.
 
         资源ID。
 
@@ -90,7 +90,7 @@ class UploadMediaResponseModel:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UploadMediaResponseModel.
+        r"""Sets the resource_id of this UploadMediaResponseModel.
 
         资源ID。
 
@@ -101,7 +101,7 @@ class UploadMediaResponseModel:
 
     @property
     def resource_url(self):
-        """Gets the resource_url of this UploadMediaResponseModel.
+        r"""Gets the resource_url of this UploadMediaResponseModel.
 
         资源路径。
 
@@ -112,7 +112,7 @@ class UploadMediaResponseModel:
 
     @resource_url.setter
     def resource_url(self, resource_url):
-        """Sets the resource_url of this UploadMediaResponseModel.
+        r"""Sets the resource_url of this UploadMediaResponseModel.
 
         资源路径。
 

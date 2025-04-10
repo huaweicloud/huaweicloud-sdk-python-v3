@@ -26,7 +26,7 @@ class CreateVirtualMfaDeviceV5Response(SdkResponse):
     }
 
     def __init__(self, virtual_mfa_device=None):
-        """CreateVirtualMfaDeviceV5Response
+        r"""CreateVirtualMfaDeviceV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateVirtualMfaDeviceV5Response(SdkResponse):
 
     @property
     def virtual_mfa_device(self):
-        """Gets the virtual_mfa_device of this CreateVirtualMfaDeviceV5Response.
+        r"""Gets the virtual_mfa_device of this CreateVirtualMfaDeviceV5Response.
 
         :return: The virtual_mfa_device of this CreateVirtualMfaDeviceV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.VirtualMfaDevice`
@@ -53,7 +53,7 @@ class CreateVirtualMfaDeviceV5Response(SdkResponse):
 
     @virtual_mfa_device.setter
     def virtual_mfa_device(self, virtual_mfa_device):
-        """Sets the virtual_mfa_device of this CreateVirtualMfaDeviceV5Response.
+        r"""Sets the virtual_mfa_device of this CreateVirtualMfaDeviceV5Response.
 
         :param virtual_mfa_device: The virtual_mfa_device of this CreateVirtualMfaDeviceV5Response.
         :type virtual_mfa_device: :class:`huaweicloudsdkiam.v5.VirtualMfaDevice`

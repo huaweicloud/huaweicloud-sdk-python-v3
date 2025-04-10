@@ -25,7 +25,7 @@ class CommitCheckpointRequest:
     }
 
     def __init__(self, body=None):
-        """CommitCheckpointRequest
+        r"""CommitCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommitCheckpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CommitCheckpointRequest.
+        r"""Gets the body of this CommitCheckpointRequest.
 
         :return: The body of this CommitCheckpointRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.CommitCheckpointReq`
@@ -52,7 +52,7 @@ class CommitCheckpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CommitCheckpointRequest.
+        r"""Sets the body of this CommitCheckpointRequest.
 
         :param body: The body of this CommitCheckpointRequest.
         :type body: :class:`huaweicloudsdkdis.v2.CommitCheckpointReq`

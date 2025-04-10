@@ -39,7 +39,7 @@ class JobDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, created=None, ended=None, progress=None, instance=None, fail_reason=None):
-        """JobDetail
+        r"""JobDetail
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class JobDetail:
 
     @property
     def id(self):
-        """Gets the id of this JobDetail.
+        r"""Gets the id of this JobDetail.
 
         任务ID
 
@@ -95,7 +95,7 @@ class JobDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobDetail.
+        r"""Sets the id of this JobDetail.
 
         任务ID
 
@@ -106,7 +106,7 @@ class JobDetail:
 
     @property
     def name(self):
-        """Gets the name of this JobDetail.
+        r"""Gets the name of this JobDetail.
 
         任务名称。
 
@@ -117,7 +117,7 @@ class JobDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobDetail.
+        r"""Sets the name of this JobDetail.
 
         任务名称。
 
@@ -128,7 +128,7 @@ class JobDetail:
 
     @property
     def status(self):
-        """Gets the status of this JobDetail.
+        r"""Gets the status of this JobDetail.
 
         任务执行状态。
 
@@ -139,7 +139,7 @@ class JobDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobDetail.
+        r"""Sets the status of this JobDetail.
 
         任务执行状态。
 
@@ -150,7 +150,7 @@ class JobDetail:
 
     @property
     def created(self):
-        """Gets the created of this JobDetail.
+        r"""Gets the created of this JobDetail.
 
         任务创建时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -161,7 +161,7 @@ class JobDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this JobDetail.
+        r"""Sets the created of this JobDetail.
 
         任务创建时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -172,7 +172,7 @@ class JobDetail:
 
     @property
     def ended(self):
-        """Gets the ended of this JobDetail.
+        r"""Gets the ended of this JobDetail.
 
         任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -183,7 +183,7 @@ class JobDetail:
 
     @ended.setter
     def ended(self, ended):
-        """Sets the ended of this JobDetail.
+        r"""Sets the ended of this JobDetail.
 
         任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -194,7 +194,7 @@ class JobDetail:
 
     @property
     def progress(self):
-        """Gets the progress of this JobDetail.
+        r"""Gets the progress of this JobDetail.
 
         任务执行进度。
 
@@ -205,7 +205,7 @@ class JobDetail:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobDetail.
+        r"""Sets the progress of this JobDetail.
 
         任务执行进度。
 
@@ -216,7 +216,7 @@ class JobDetail:
 
     @property
     def instance(self):
-        """Gets the instance of this JobDetail.
+        r"""Gets the instance of this JobDetail.
 
         :return: The instance of this JobDetail.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.JobInstanceInfo`
@@ -225,7 +225,7 @@ class JobDetail:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this JobDetail.
+        r"""Sets the instance of this JobDetail.
 
         :param instance: The instance of this JobDetail.
         :type instance: :class:`huaweicloudsdkgaussdbforopengauss.v3.JobInstanceInfo`
@@ -234,7 +234,7 @@ class JobDetail:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this JobDetail.
+        r"""Gets the fail_reason of this JobDetail.
 
         任务执行失败时的错误信息。
 
@@ -245,7 +245,7 @@ class JobDetail:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this JobDetail.
+        r"""Sets the fail_reason of this JobDetail.
 
         任务执行失败时的错误信息。
 

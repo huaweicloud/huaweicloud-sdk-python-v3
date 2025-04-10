@@ -26,7 +26,7 @@ class TagDeviceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """TagDeviceResponse
+        r"""TagDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class TagDeviceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this TagDeviceResponse.
+        r"""Gets the body of this TagDeviceResponse.
 
         :return: The body of this TagDeviceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class TagDeviceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagDeviceResponse.
+        r"""Sets the body of this TagDeviceResponse.
 
         :param body: The body of this TagDeviceResponse.
         :type body: str

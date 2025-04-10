@@ -30,7 +30,7 @@ class CreateVpnServerResponse(SdkResponse):
     }
 
     def __init__(self, vpn_server=None, request_id=None, header_response_token=None):
-        """CreateVpnServerResponse
+        r"""CreateVpnServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVpnServerResponse(SdkResponse):
 
     @property
     def vpn_server(self):
-        """Gets the vpn_server of this CreateVpnServerResponse.
+        r"""Gets the vpn_server of this CreateVpnServerResponse.
 
         :return: The vpn_server of this CreateVpnServerResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateServerResponseBodyVpnServer`
@@ -67,7 +67,7 @@ class CreateVpnServerResponse(SdkResponse):
 
     @vpn_server.setter
     def vpn_server(self, vpn_server):
-        """Sets the vpn_server of this CreateVpnServerResponse.
+        r"""Sets the vpn_server of this CreateVpnServerResponse.
 
         :param vpn_server: The vpn_server of this CreateVpnServerResponse.
         :type vpn_server: :class:`huaweicloudsdkvpn.v5.CreateServerResponseBodyVpnServer`
@@ -76,7 +76,7 @@ class CreateVpnServerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateVpnServerResponse.
+        r"""Gets the request_id of this CreateVpnServerResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class CreateVpnServerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateVpnServerResponse.
+        r"""Sets the request_id of this CreateVpnServerResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class CreateVpnServerResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateVpnServerResponse.
+        r"""Gets the header_response_token of this CreateVpnServerResponse.
 
         :return: The header_response_token of this CreateVpnServerResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVpnServerResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateVpnServerResponse.
+        r"""Sets the header_response_token of this CreateVpnServerResponse.
 
         :param header_response_token: The header_response_token of this CreateVpnServerResponse.
         :type header_response_token: str

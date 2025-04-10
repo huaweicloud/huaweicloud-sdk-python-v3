@@ -27,7 +27,7 @@ class AudioSelectorLangSelection:
     }
 
     def __init__(self, language_code=None, language_selection_policy=None):
-        """AudioSelectorLangSelection
+        r"""AudioSelectorLangSelection
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AudioSelectorLangSelection:
 
     @property
     def language_code(self):
-        """Gets the language_code of this AudioSelectorLangSelection.
+        r"""Gets the language_code of this AudioSelectorLangSelection.
 
         语言简称，输入2或3个小写字母的语言代码。
 
@@ -60,7 +60,7 @@ class AudioSelectorLangSelection:
 
     @language_code.setter
     def language_code(self, language_code):
-        """Sets the language_code of this AudioSelectorLangSelection.
+        r"""Sets the language_code of this AudioSelectorLangSelection.
 
         语言简称，输入2或3个小写字母的语言代码。
 
@@ -71,7 +71,7 @@ class AudioSelectorLangSelection:
 
     @property
     def language_selection_policy(self):
-        """Gets the language_selection_policy of this AudioSelectorLangSelection.
+        r"""Gets the language_selection_policy of this AudioSelectorLangSelection.
 
         语言输出策略。  取值如下： - LOOSE：宽松匹配，示例“eng”会优先匹配源流中语言为English的音轨，如果匹配不到，则选择PID最小的音轨。 - STRICT：严格匹配，示例“eng”会严格匹配源流中语言为English的音轨，如果匹配不到，媒体直播服务会自动补齐一个静音分片，当终端使用此音频选择器播放视频时，会静音播放。
 
@@ -82,7 +82,7 @@ class AudioSelectorLangSelection:
 
     @language_selection_policy.setter
     def language_selection_policy(self, language_selection_policy):
-        """Sets the language_selection_policy of this AudioSelectorLangSelection.
+        r"""Sets the language_selection_policy of this AudioSelectorLangSelection.
 
         语言输出策略。  取值如下： - LOOSE：宽松匹配，示例“eng”会优先匹配源流中语言为English的音轨，如果匹配不到，则选择PID最小的音轨。 - STRICT：严格匹配，示例“eng”会严格匹配源流中语言为English的音轨，如果匹配不到，媒体直播服务会自动补齐一个静音分片，当终端使用此音频选择器播放视频时，会静音播放。
 

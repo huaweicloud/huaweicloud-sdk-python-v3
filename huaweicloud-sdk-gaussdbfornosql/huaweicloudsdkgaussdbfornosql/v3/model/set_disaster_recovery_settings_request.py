@@ -25,7 +25,7 @@ class SetDisasterRecoverySettingsRequest:
     }
 
     def __init__(self, body=None):
-        """SetDisasterRecoverySettingsRequest
+        r"""SetDisasterRecoverySettingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetDisasterRecoverySettingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetDisasterRecoverySettingsRequest.
+        r"""Gets the body of this SetDisasterRecoverySettingsRequest.
 
         :return: The body of this SetDisasterRecoverySettingsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetDisasterRecoverySettingsRequestBody`
@@ -52,7 +52,7 @@ class SetDisasterRecoverySettingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetDisasterRecoverySettingsRequest.
+        r"""Sets the body of this SetDisasterRecoverySettingsRequest.
 
         :param body: The body of this SetDisasterRecoverySettingsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SetDisasterRecoverySettingsRequestBody`

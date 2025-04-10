@@ -35,7 +35,7 @@ class InstanceModReq:
     }
 
     def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, security_group_id=None, vpcep_service_name=None):
-        """InstanceModReq
+        r"""InstanceModReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class InstanceModReq:
 
     @property
     def description(self):
-        """Gets the description of this InstanceModReq.
+        r"""Gets the description of this InstanceModReq.
 
         实例描述。支持除>和<以外的字符，长度为0~255。
 
@@ -89,7 +89,7 @@ class InstanceModReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceModReq.
+        r"""Sets the description of this InstanceModReq.
 
         实例描述。支持除>和<以外的字符，长度为0~255。
 
@@ -100,7 +100,7 @@ class InstanceModReq:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this InstanceModReq.
+        r"""Gets the maintain_begin of this InstanceModReq.
 
         维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -111,7 +111,7 @@ class InstanceModReq:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this InstanceModReq.
+        r"""Sets the maintain_begin of this InstanceModReq.
 
         维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -122,7 +122,7 @@ class InstanceModReq:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this InstanceModReq.
+        r"""Gets the maintain_end of this InstanceModReq.
 
         维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -133,7 +133,7 @@ class InstanceModReq:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this InstanceModReq.
+        r"""Sets the maintain_end of this InstanceModReq.
 
         维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -144,7 +144,7 @@ class InstanceModReq:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceModReq.
+        r"""Gets the instance_name of this InstanceModReq.
 
         实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  > 中文字符必须为UTF-8或者unicode编码。
 
@@ -155,7 +155,7 @@ class InstanceModReq:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceModReq.
+        r"""Sets the instance_name of this InstanceModReq.
 
         实例名称。  中英文字符开头，只能由中英文字符、数字、中划线、下划线组成，长度为3~64。  > 中文字符必须为UTF-8或者unicode编码。
 
@@ -166,7 +166,7 @@ class InstanceModReq:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this InstanceModReq.
+        r"""Gets the security_group_id of this InstanceModReq.
 
         指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
@@ -177,7 +177,7 @@ class InstanceModReq:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this InstanceModReq.
+        r"""Sets the security_group_id of this InstanceModReq.
 
         指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
@@ -188,7 +188,7 @@ class InstanceModReq:
 
     @property
     def vpcep_service_name(self):
-        """Gets the vpcep_service_name of this InstanceModReq.
+        r"""Gets the vpcep_service_name of this InstanceModReq.
 
         终端节点服务的名称。  支持英文、数字、中划线、下划线，0~16个字符。  如果您填写该参数为空，系统生成的终端节点服务的名称为{region}.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 
 
@@ -199,7 +199,7 @@ class InstanceModReq:
 
     @vpcep_service_name.setter
     def vpcep_service_name(self, vpcep_service_name):
-        """Sets the vpcep_service_name of this InstanceModReq.
+        r"""Sets the vpcep_service_name of this InstanceModReq.
 
         终端节点服务的名称。  支持英文、数字、中划线、下划线，0~16个字符。  如果您填写该参数为空，系统生成的终端节点服务的名称为{region}.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 
 

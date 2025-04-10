@@ -34,7 +34,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_status=None, pipeline_id=None, pipeline_name=None, pipeline_url=None):
-        """ShowInstanceStatusResponse
+        r"""ShowInstanceStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowInstanceStatusResponse.
+        r"""Gets the task_id of this ShowInstanceStatusResponse.
 
         实例ID
 
@@ -83,7 +83,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowInstanceStatusResponse.
+        r"""Sets the task_id of this ShowInstanceStatusResponse.
 
         实例ID
 
@@ -94,7 +94,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowInstanceStatusResponse.
+        r"""Gets the task_status of this ShowInstanceStatusResponse.
 
         实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
 
@@ -105,7 +105,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowInstanceStatusResponse.
+        r"""Sets the task_status of this ShowInstanceStatusResponse.
 
         实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
 
@@ -116,7 +116,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowInstanceStatusResponse.
+        r"""Gets the pipeline_id of this ShowInstanceStatusResponse.
 
         流水线ID
 
@@ -127,7 +127,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowInstanceStatusResponse.
+        r"""Sets the pipeline_id of this ShowInstanceStatusResponse.
 
         流水线ID
 
@@ -138,7 +138,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this ShowInstanceStatusResponse.
+        r"""Gets the pipeline_name of this ShowInstanceStatusResponse.
 
         流水线名字
 
@@ -149,7 +149,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this ShowInstanceStatusResponse.
+        r"""Sets the pipeline_name of this ShowInstanceStatusResponse.
 
         流水线名字
 
@@ -160,7 +160,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def pipeline_url(self):
-        """Gets the pipeline_url of this ShowInstanceStatusResponse.
+        r"""Gets the pipeline_url of this ShowInstanceStatusResponse.
 
         流水线详情页面url
 
@@ -171,7 +171,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @pipeline_url.setter
     def pipeline_url(self, pipeline_url):
-        """Sets the pipeline_url of this ShowInstanceStatusResponse.
+        r"""Sets the pipeline_url of this ShowInstanceStatusResponse.
 
         流水线详情页面url
 

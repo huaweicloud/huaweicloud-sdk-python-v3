@@ -27,7 +27,7 @@ class StatisticsTimelineItem:
     }
 
     def __init__(self, key=None, timeline=None):
-        """StatisticsTimelineItem
+        r"""StatisticsTimelineItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatisticsTimelineItem:
 
     @property
     def key(self):
-        """Gets the key of this StatisticsTimelineItem.
+        r"""Gets the key of this StatisticsTimelineItem.
 
         键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
 
@@ -61,7 +61,7 @@ class StatisticsTimelineItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this StatisticsTimelineItem.
+        r"""Sets the key of this StatisticsTimelineItem.
 
         键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
 
@@ -72,7 +72,7 @@ class StatisticsTimelineItem:
 
     @property
     def timeline(self):
-        """Gets the timeline of this StatisticsTimelineItem.
+        r"""Gets the timeline of this StatisticsTimelineItem.
 
         对应键值的时间线统计数据
 
@@ -83,7 +83,7 @@ class StatisticsTimelineItem:
 
     @timeline.setter
     def timeline(self, timeline):
-        """Sets the timeline of this StatisticsTimelineItem.
+        r"""Sets the timeline of this StatisticsTimelineItem.
 
         对应键值的时间线统计数据
 

@@ -29,7 +29,7 @@ class UpdateDcDsRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, body=None):
-        """UpdateDcDsRequest
+        r"""UpdateDcDsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDcDsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateDcDsRequest.
+        r"""Gets the edge_node_id of this UpdateDcDsRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class UpdateDcDsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateDcDsRequest.
+        r"""Sets the edge_node_id of this UpdateDcDsRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class UpdateDcDsRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this UpdateDcDsRequest.
+        r"""Gets the ds_id of this UpdateDcDsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -88,7 +88,7 @@ class UpdateDcDsRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this UpdateDcDsRequest.
+        r"""Sets the ds_id of this UpdateDcDsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -99,7 +99,7 @@ class UpdateDcDsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDcDsRequest.
+        r"""Gets the body of this UpdateDcDsRequest.
 
         :return: The body of this UpdateDcDsRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsReqDTO`
@@ -108,7 +108,7 @@ class UpdateDcDsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDcDsRequest.
+        r"""Sets the body of this UpdateDcDsRequest.
 
         :param body: The body of this UpdateDcDsRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsReqDTO`

@@ -27,7 +27,7 @@ class DeleteSecretStageRequest:
     }
 
     def __init__(self, secret_name=None, stage_name=None):
-        """DeleteSecretStageRequest
+        r"""DeleteSecretStageRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecretStageRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this DeleteSecretStageRequest.
+        r"""Gets the secret_name of this DeleteSecretStageRequest.
 
         凭据的资源标识符。
 
@@ -59,7 +59,7 @@ class DeleteSecretStageRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this DeleteSecretStageRequest.
+        r"""Sets the secret_name of this DeleteSecretStageRequest.
 
         凭据的资源标识符。
 
@@ -70,7 +70,7 @@ class DeleteSecretStageRequest:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this DeleteSecretStageRequest.
+        r"""Gets the stage_name of this DeleteSecretStageRequest.
 
         凭据版本状态的名称。
 
@@ -81,7 +81,7 @@ class DeleteSecretStageRequest:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this DeleteSecretStageRequest.
+        r"""Sets the stage_name of this DeleteSecretStageRequest.
 
         凭据版本状态的名称。
 

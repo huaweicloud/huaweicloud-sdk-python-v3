@@ -37,7 +37,7 @@ class ListTablesStatisticDto:
     }
 
     def __init__(self, db_name=None, schema_name=None, table_name=None, table_owner=None, table_size=None, skew_rate=None, dirty_page_rate=None):
-        """ListTablesStatisticDto
+        r"""ListTablesStatisticDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListTablesStatisticDto:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListTablesStatisticDto.
+        r"""Gets the db_name of this ListTablesStatisticDto.
 
         数据库名称。
 
@@ -96,7 +96,7 @@ class ListTablesStatisticDto:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListTablesStatisticDto.
+        r"""Sets the db_name of this ListTablesStatisticDto.
 
         数据库名称。
 
@@ -107,7 +107,7 @@ class ListTablesStatisticDto:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ListTablesStatisticDto.
+        r"""Gets the schema_name of this ListTablesStatisticDto.
 
         schema名称。
 
@@ -118,7 +118,7 @@ class ListTablesStatisticDto:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ListTablesStatisticDto.
+        r"""Sets the schema_name of this ListTablesStatisticDto.
 
         schema名称。
 
@@ -129,7 +129,7 @@ class ListTablesStatisticDto:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListTablesStatisticDto.
+        r"""Gets the table_name of this ListTablesStatisticDto.
 
         表名。
 
@@ -140,7 +140,7 @@ class ListTablesStatisticDto:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListTablesStatisticDto.
+        r"""Sets the table_name of this ListTablesStatisticDto.
 
         表名。
 
@@ -151,7 +151,7 @@ class ListTablesStatisticDto:
 
     @property
     def table_owner(self):
-        """Gets the table_owner of this ListTablesStatisticDto.
+        r"""Gets the table_owner of this ListTablesStatisticDto.
 
         所属用户。
 
@@ -162,7 +162,7 @@ class ListTablesStatisticDto:
 
     @table_owner.setter
     def table_owner(self, table_owner):
-        """Sets the table_owner of this ListTablesStatisticDto.
+        r"""Sets the table_owner of this ListTablesStatisticDto.
 
         所属用户。
 
@@ -173,7 +173,7 @@ class ListTablesStatisticDto:
 
     @property
     def table_size(self):
-        """Gets the table_size of this ListTablesStatisticDto.
+        r"""Gets the table_size of this ListTablesStatisticDto.
 
         表大小。
 
@@ -184,7 +184,7 @@ class ListTablesStatisticDto:
 
     @table_size.setter
     def table_size(self, table_size):
-        """Sets the table_size of this ListTablesStatisticDto.
+        r"""Sets the table_size of this ListTablesStatisticDto.
 
         表大小。
 
@@ -195,7 +195,7 @@ class ListTablesStatisticDto:
 
     @property
     def skew_rate(self):
-        """Gets the skew_rate of this ListTablesStatisticDto.
+        r"""Gets the skew_rate of this ListTablesStatisticDto.
 
         表倾斜率。
 
@@ -206,7 +206,7 @@ class ListTablesStatisticDto:
 
     @skew_rate.setter
     def skew_rate(self, skew_rate):
-        """Sets the skew_rate of this ListTablesStatisticDto.
+        r"""Sets the skew_rate of this ListTablesStatisticDto.
 
         表倾斜率。
 
@@ -217,7 +217,7 @@ class ListTablesStatisticDto:
 
     @property
     def dirty_page_rate(self):
-        """Gets the dirty_page_rate of this ListTablesStatisticDto.
+        r"""Gets the dirty_page_rate of this ListTablesStatisticDto.
 
         脏页率。
 
@@ -228,7 +228,7 @@ class ListTablesStatisticDto:
 
     @dirty_page_rate.setter
     def dirty_page_rate(self, dirty_page_rate):
-        """Sets the dirty_page_rate of this ListTablesStatisticDto.
+        r"""Sets the dirty_page_rate of this ListTablesStatisticDto.
 
         脏页率。
 

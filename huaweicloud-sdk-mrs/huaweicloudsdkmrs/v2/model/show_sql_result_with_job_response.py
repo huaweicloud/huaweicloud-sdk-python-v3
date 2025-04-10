@@ -26,7 +26,7 @@ class ShowSqlResultWithJobResponse(SdkResponse):
     }
 
     def __init__(self, sql_results=None):
-        """ShowSqlResultWithJobResponse
+        r"""ShowSqlResultWithJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSqlResultWithJobResponse(SdkResponse):
 
     @property
     def sql_results(self):
-        """Gets the sql_results of this ShowSqlResultWithJobResponse.
+        r"""Gets the sql_results of this ShowSqlResultWithJobResponse.
 
         SQL语句查询结果。
 
@@ -55,7 +55,7 @@ class ShowSqlResultWithJobResponse(SdkResponse):
 
     @sql_results.setter
     def sql_results(self, sql_results):
-        """Sets the sql_results of this ShowSqlResultWithJobResponse.
+        r"""Sets the sql_results of this ShowSqlResultWithJobResponse.
 
         SQL语句查询结果。
 

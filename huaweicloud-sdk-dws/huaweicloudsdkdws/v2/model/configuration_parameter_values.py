@@ -25,7 +25,7 @@ class ConfigurationParameterValues:
     }
 
     def __init__(self, configurations=None):
-        """ConfigurationParameterValues
+        r"""ConfigurationParameterValues
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConfigurationParameterValues:
 
     @property
     def configurations(self):
-        """Gets the configurations of this ConfigurationParameterValues.
+        r"""Gets the configurations of this ConfigurationParameterValues.
 
         集群参数配置列表
 
@@ -53,7 +53,7 @@ class ConfigurationParameterValues:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ConfigurationParameterValues.
+        r"""Sets the configurations of this ConfigurationParameterValues.
 
         集群参数配置列表
 

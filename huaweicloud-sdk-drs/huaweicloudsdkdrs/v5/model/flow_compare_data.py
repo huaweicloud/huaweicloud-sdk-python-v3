@@ -33,7 +33,7 @@ class FlowCompareData:
     }
 
     def __init__(self, src_db=None, src_tb=None, dst_db=None, dst_tb=None, progress=None):
-        """FlowCompareData
+        r"""FlowCompareData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class FlowCompareData:
 
     @property
     def src_db(self):
-        """Gets the src_db of this FlowCompareData.
+        r"""Gets the src_db of this FlowCompareData.
 
         源数据库名称。
 
@@ -82,7 +82,7 @@ class FlowCompareData:
 
     @src_db.setter
     def src_db(self, src_db):
-        """Sets the src_db of this FlowCompareData.
+        r"""Sets the src_db of this FlowCompareData.
 
         源数据库名称。
 
@@ -93,7 +93,7 @@ class FlowCompareData:
 
     @property
     def src_tb(self):
-        """Gets the src_tb of this FlowCompareData.
+        r"""Gets the src_tb of this FlowCompareData.
 
         源对象名称。
 
@@ -104,7 +104,7 @@ class FlowCompareData:
 
     @src_tb.setter
     def src_tb(self, src_tb):
-        """Sets the src_tb of this FlowCompareData.
+        r"""Sets the src_tb of this FlowCompareData.
 
         源对象名称。
 
@@ -115,7 +115,7 @@ class FlowCompareData:
 
     @property
     def dst_db(self):
-        """Gets the dst_db of this FlowCompareData.
+        r"""Gets the dst_db of this FlowCompareData.
 
         目标数据库名称。
 
@@ -126,7 +126,7 @@ class FlowCompareData:
 
     @dst_db.setter
     def dst_db(self, dst_db):
-        """Sets the dst_db of this FlowCompareData.
+        r"""Sets the dst_db of this FlowCompareData.
 
         目标数据库名称。
 
@@ -137,7 +137,7 @@ class FlowCompareData:
 
     @property
     def dst_tb(self):
-        """Gets the dst_tb of this FlowCompareData.
+        r"""Gets the dst_tb of this FlowCompareData.
 
         目标对象名称。
 
@@ -148,7 +148,7 @@ class FlowCompareData:
 
     @dst_tb.setter
     def dst_tb(self, dst_tb):
-        """Sets the dst_tb of this FlowCompareData.
+        r"""Sets the dst_tb of this FlowCompareData.
 
         目标对象名称。
 
@@ -159,7 +159,7 @@ class FlowCompareData:
 
     @property
     def progress(self):
-        """Gets the progress of this FlowCompareData.
+        r"""Gets the progress of this FlowCompareData.
 
         进度，1-100。
 
@@ -170,7 +170,7 @@ class FlowCompareData:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this FlowCompareData.
+        r"""Sets the progress of this FlowCompareData.
 
         进度，1-100。
 

@@ -27,7 +27,7 @@ class AddDeviceRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """AddDeviceRequest
+        r"""AddDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddDeviceRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this AddDeviceRequest.
+        r"""Gets the edge_node_id of this AddDeviceRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class AddDeviceRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this AddDeviceRequest.
+        r"""Sets the edge_node_id of this AddDeviceRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class AddDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDeviceRequest.
+        r"""Gets the body of this AddDeviceRequest.
 
         :return: The body of this AddDeviceRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequestBody`
@@ -80,7 +80,7 @@ class AddDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDeviceRequest.
+        r"""Sets the body of this AddDeviceRequest.
 
         :param body: The body of this AddDeviceRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequestBody`

@@ -26,7 +26,7 @@ class CreateOneClickAlarmResponse(SdkResponse):
     }
 
     def __init__(self, one_click_alarm_id=None):
-        """CreateOneClickAlarmResponse
+        r"""CreateOneClickAlarmResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateOneClickAlarmResponse(SdkResponse):
 
     @property
     def one_click_alarm_id(self):
-        """Gets the one_click_alarm_id of this CreateOneClickAlarmResponse.
+        r"""Gets the one_click_alarm_id of this CreateOneClickAlarmResponse.
 
         一键告警ID
 
@@ -55,7 +55,7 @@ class CreateOneClickAlarmResponse(SdkResponse):
 
     @one_click_alarm_id.setter
     def one_click_alarm_id(self, one_click_alarm_id):
-        """Sets the one_click_alarm_id of this CreateOneClickAlarmResponse.
+        r"""Sets the one_click_alarm_id of this CreateOneClickAlarmResponse.
 
         一键告警ID
 

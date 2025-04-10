@@ -28,7 +28,7 @@ class ShowCreateAccountStatusRequest:
     }
 
     def __init__(self, x_security_token=None, create_account_status_id=None):
-        """ShowCreateAccountStatusRequest
+        r"""ShowCreateAccountStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowCreateAccountStatusRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ShowCreateAccountStatusRequest.
+        r"""Gets the x_security_token of this ShowCreateAccountStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class ShowCreateAccountStatusRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowCreateAccountStatusRequest.
+        r"""Sets the x_security_token of this ShowCreateAccountStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class ShowCreateAccountStatusRequest:
 
     @property
     def create_account_status_id(self):
-        """Gets the create_account_status_id of this ShowCreateAccountStatusRequest.
+        r"""Gets the create_account_status_id of this ShowCreateAccountStatusRequest.
 
         指定唯一标识CreateAccount请求的ID值。
 
@@ -83,7 +83,7 @@ class ShowCreateAccountStatusRequest:
 
     @create_account_status_id.setter
     def create_account_status_id(self, create_account_status_id):
-        """Sets the create_account_status_id of this ShowCreateAccountStatusRequest.
+        r"""Sets the create_account_status_id of this ShowCreateAccountStatusRequest.
 
         指定唯一标识CreateAccount请求的ID值。
 

@@ -33,7 +33,7 @@ class ShowAccountRequest:
     }
 
     def __init__(self, name=None, delegator=None, status=None, offset=None, limit=None):
-        """ShowAccountRequest
+        r"""ShowAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowAccountRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowAccountRequest.
+        r"""Gets the name of this ShowAccountRequest.
 
         账号名称
 
@@ -82,7 +82,7 @@ class ShowAccountRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAccountRequest.
+        r"""Sets the name of this ShowAccountRequest.
 
         账号名称
 
@@ -93,7 +93,7 @@ class ShowAccountRequest:
 
     @property
     def delegator(self):
-        """Gets the delegator of this ShowAccountRequest.
+        r"""Gets the delegator of this ShowAccountRequest.
 
         账号id
 
@@ -104,7 +104,7 @@ class ShowAccountRequest:
 
     @delegator.setter
     def delegator(self, delegator):
-        """Sets the delegator of this ShowAccountRequest.
+        r"""Sets the delegator of this ShowAccountRequest.
 
         账号id
 
@@ -115,7 +115,7 @@ class ShowAccountRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowAccountRequest.
+        r"""Gets the status of this ShowAccountRequest.
 
         账号状态
 
@@ -126,7 +126,7 @@ class ShowAccountRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAccountRequest.
+        r"""Sets the status of this ShowAccountRequest.
 
         账号状态
 
@@ -137,7 +137,7 @@ class ShowAccountRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAccountRequest.
+        r"""Gets the offset of this ShowAccountRequest.
 
         分页参数
 
@@ -148,7 +148,7 @@ class ShowAccountRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAccountRequest.
+        r"""Sets the offset of this ShowAccountRequest.
 
         分页参数
 
@@ -159,7 +159,7 @@ class ShowAccountRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAccountRequest.
+        r"""Gets the limit of this ShowAccountRequest.
 
         分页参数
 
@@ -170,7 +170,7 @@ class ShowAccountRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAccountRequest.
+        r"""Sets the limit of this ShowAccountRequest.
 
         分页参数
 

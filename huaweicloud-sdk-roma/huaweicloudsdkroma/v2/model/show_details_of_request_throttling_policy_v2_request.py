@@ -27,7 +27,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None):
-        """ShowDetailsOfRequestThrottlingPolicyV2Request
+        r"""ShowDetailsOfRequestThrottlingPolicyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
+        r"""Gets the throttle_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
 
         流控策略的编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfRequestThrottlingPolicyV2Request:
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
+        r"""Sets the throttle_id of this ShowDetailsOfRequestThrottlingPolicyV2Request.
 
         流控策略的编号
 

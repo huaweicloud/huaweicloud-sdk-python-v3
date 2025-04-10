@@ -27,7 +27,7 @@ class ShowLastPropertyValueRequest:
     }
 
     def __init__(self, asset_id=None, body=None):
-        """ShowLastPropertyValueRequest
+        r"""ShowLastPropertyValueRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowLastPropertyValueRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowLastPropertyValueRequest.
+        r"""Gets the asset_id of this ShowLastPropertyValueRequest.
 
         资产ID
 
@@ -60,7 +60,7 @@ class ShowLastPropertyValueRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowLastPropertyValueRequest.
+        r"""Sets the asset_id of this ShowLastPropertyValueRequest.
 
         资产ID
 
@@ -71,7 +71,7 @@ class ShowLastPropertyValueRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowLastPropertyValueRequest.
+        r"""Gets the body of this ShowLastPropertyValueRequest.
 
         :return: The body of this ShowLastPropertyValueRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`
@@ -80,7 +80,7 @@ class ShowLastPropertyValueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowLastPropertyValueRequest.
+        r"""Sets the body of this ShowLastPropertyValueRequest.
 
         :param body: The body of this ShowLastPropertyValueRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`

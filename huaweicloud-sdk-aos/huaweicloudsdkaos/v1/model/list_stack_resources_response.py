@@ -26,7 +26,7 @@ class ListStackResourcesResponse(SdkResponse):
     }
 
     def __init__(self, stack_resources=None):
-        """ListStackResourcesResponse
+        r"""ListStackResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStackResourcesResponse(SdkResponse):
 
     @property
     def stack_resources(self):
-        """Gets the stack_resources of this ListStackResourcesResponse.
+        r"""Gets the stack_resources of this ListStackResourcesResponse.
 
         资源栈中所管理的资源信息列表
 
@@ -55,7 +55,7 @@ class ListStackResourcesResponse(SdkResponse):
 
     @stack_resources.setter
     def stack_resources(self, stack_resources):
-        """Sets the stack_resources of this ListStackResourcesResponse.
+        r"""Sets the stack_resources of this ListStackResourcesResponse.
 
         资源栈中所管理的资源信息列表
 

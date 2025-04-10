@@ -29,7 +29,7 @@ class DsProcessImportResultVO:
     }
 
     def __init__(self, status=None, group=None, rate=None):
-        """DsProcessImportResultVO
+        r"""DsProcessImportResultVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DsProcessImportResultVO:
 
     @property
     def status(self):
-        """Gets the status of this DsProcessImportResultVO.
+        r"""Gets the status of this DsProcessImportResultVO.
 
         标识本次导入的唯一值，用于查询导入结果。 枚举值：   - importing: 导入中   - fail: 导入失败   - success: 导入成功 
 
@@ -68,7 +68,7 @@ class DsProcessImportResultVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DsProcessImportResultVO.
+        r"""Sets the status of this DsProcessImportResultVO.
 
         标识本次导入的唯一值，用于查询导入结果。 枚举值：   - importing: 导入中   - fail: 导入失败   - success: 导入成功 
 
@@ -79,7 +79,7 @@ class DsProcessImportResultVO:
 
     @property
     def group(self):
-        """Gets the group of this DsProcessImportResultVO.
+        r"""Gets the group of this DsProcessImportResultVO.
 
         :return: The group of this DsProcessImportResultVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -88,7 +88,7 @@ class DsProcessImportResultVO:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this DsProcessImportResultVO.
+        r"""Sets the group of this DsProcessImportResultVO.
 
         :param group: The group of this DsProcessImportResultVO.
         :type group: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -97,7 +97,7 @@ class DsProcessImportResultVO:
 
     @property
     def rate(self):
-        """Gets the rate of this DsProcessImportResultVO.
+        r"""Gets the rate of this DsProcessImportResultVO.
 
         当前进度。
 
@@ -108,7 +108,7 @@ class DsProcessImportResultVO:
 
     @rate.setter
     def rate(self, rate):
-        """Sets the rate of this DsProcessImportResultVO.
+        r"""Sets the rate of this DsProcessImportResultVO.
 
         当前进度。
 

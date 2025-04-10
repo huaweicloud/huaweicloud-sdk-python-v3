@@ -32,7 +32,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
     }
 
     def __init__(self, face_set_id=None, face_set_name=None, faces=None, x_request_id=None):
-        """ShowFacesByFaceIdResponse
+        r"""ShowFacesByFaceIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @property
     def face_set_id(self):
-        """Gets the face_set_id of this ShowFacesByFaceIdResponse.
+        r"""Gets the face_set_id of this ShowFacesByFaceIdResponse.
 
         人脸库ID，随机生成的包含八个字符的字符串。 调用失败时无此字段。
 
@@ -76,7 +76,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @face_set_id.setter
     def face_set_id(self, face_set_id):
-        """Sets the face_set_id of this ShowFacesByFaceIdResponse.
+        r"""Sets the face_set_id of this ShowFacesByFaceIdResponse.
 
         人脸库ID，随机生成的包含八个字符的字符串。 调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @property
     def face_set_name(self):
-        """Gets the face_set_name of this ShowFacesByFaceIdResponse.
+        r"""Gets the face_set_name of this ShowFacesByFaceIdResponse.
 
         人脸库名称。 调用失败时无此字段。
 
@@ -98,7 +98,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @face_set_name.setter
     def face_set_name(self, face_set_name):
-        """Sets the face_set_name of this ShowFacesByFaceIdResponse.
+        r"""Sets the face_set_name of this ShowFacesByFaceIdResponse.
 
         人脸库名称。 调用失败时无此字段。
 
@@ -109,7 +109,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @property
     def faces(self):
-        """Gets the faces of this ShowFacesByFaceIdResponse.
+        r"""Gets the faces of this ShowFacesByFaceIdResponse.
 
         [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hk)
 
@@ -120,7 +120,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @faces.setter
     def faces(self, faces):
-        """Sets the faces of this ShowFacesByFaceIdResponse.
+        r"""Sets the faces of this ShowFacesByFaceIdResponse.
 
         [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hk)
 
@@ -131,7 +131,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowFacesByFaceIdResponse.
+        r"""Gets the x_request_id of this ShowFacesByFaceIdResponse.
 
         :return: The x_request_id of this ShowFacesByFaceIdResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowFacesByFaceIdResponse.
+        r"""Sets the x_request_id of this ShowFacesByFaceIdResponse.
 
         :param x_request_id: The x_request_id of this ShowFacesByFaceIdResponse.
         :type x_request_id: str

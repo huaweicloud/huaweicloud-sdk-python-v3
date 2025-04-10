@@ -26,7 +26,7 @@ class ShowVolumeTypesResponse(SdkResponse):
     }
 
     def __init__(self, volume_types=None):
-        """ShowVolumeTypesResponse
+        r"""ShowVolumeTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVolumeTypesResponse(SdkResponse):
 
     @property
     def volume_types(self):
-        """Gets the volume_types of this ShowVolumeTypesResponse.
+        r"""Gets the volume_types of this ShowVolumeTypesResponse.
 
         硬盘类型列表。
 
@@ -55,7 +55,7 @@ class ShowVolumeTypesResponse(SdkResponse):
 
     @volume_types.setter
     def volume_types(self, volume_types):
-        """Sets the volume_types of this ShowVolumeTypesResponse.
+        r"""Sets the volume_types of this ShowVolumeTypesResponse.
 
         硬盘类型列表。
 

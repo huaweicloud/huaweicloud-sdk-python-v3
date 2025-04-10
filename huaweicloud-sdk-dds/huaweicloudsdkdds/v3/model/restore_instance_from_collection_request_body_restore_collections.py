@@ -29,7 +29,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
     }
 
     def __init__(self, database=None, restore_database_time=None, collections=None):
-        """RestoreInstanceFromCollectionRequestBodyRestoreCollections
+        r"""RestoreInstanceFromCollectionRequestBodyRestoreCollections
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
     @property
     def database(self):
-        """Gets the database of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
+        r"""Gets the database of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
 
         数据库名称。
 
@@ -67,7 +67,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
+        r"""Sets the database of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
 
         数据库名称。
 
@@ -78,7 +78,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
     @property
     def restore_database_time(self):
-        """Gets the restore_database_time of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
+        r"""Gets the restore_database_time of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
 
         数据库恢复时间点。如果是数据库级恢复，该参数必传，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -89,7 +89,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
     @restore_database_time.setter
     def restore_database_time(self, restore_database_time):
-        """Sets the restore_database_time of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
+        r"""Sets the restore_database_time of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
 
         数据库恢复时间点。如果是数据库级恢复，该参数必传，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -100,7 +100,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
     @property
     def collections(self):
-        """Gets the collections of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
+        r"""Gets the collections of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
 
         集合信息。
 
@@ -111,7 +111,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
     @collections.setter
     def collections(self, collections):
-        """Sets the collections of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
+        r"""Sets the collections of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
 
         集合信息。
 

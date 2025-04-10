@@ -24,7 +24,7 @@ class DebugSecurityDlfDataWareHousesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DebugSecurityDlfDataWareHousesResponse
+        r"""DebugSecurityDlfDataWareHousesResponse
 
         The model defined in huaweicloud sdk
 

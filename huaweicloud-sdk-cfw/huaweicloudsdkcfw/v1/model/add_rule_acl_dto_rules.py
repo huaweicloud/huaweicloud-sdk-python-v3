@@ -57,7 +57,7 @@ class AddRuleAclDtoRules:
     }
 
     def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, applications=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, source=None, destination=None, service=None, tag=None):
-        """AddRuleAclDtoRules
+        r"""AddRuleAclDtoRules
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class AddRuleAclDtoRules:
 
     @property
     def name(self):
-        """Gets the name of this AddRuleAclDtoRules.
+        r"""Gets the name of this AddRuleAclDtoRules.
 
         规则名称
 
@@ -157,7 +157,7 @@ class AddRuleAclDtoRules:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddRuleAclDtoRules.
+        r"""Sets the name of this AddRuleAclDtoRules.
 
         规则名称
 
@@ -168,7 +168,7 @@ class AddRuleAclDtoRules:
 
     @property
     def sequence(self):
-        """Gets the sequence of this AddRuleAclDtoRules.
+        r"""Gets the sequence of this AddRuleAclDtoRules.
 
         :return: The sequence of this AddRuleAclDtoRules.
         :rtype: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
@@ -177,7 +177,7 @@ class AddRuleAclDtoRules:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this AddRuleAclDtoRules.
+        r"""Sets the sequence of this AddRuleAclDtoRules.
 
         :param sequence: The sequence of this AddRuleAclDtoRules.
         :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
@@ -186,7 +186,7 @@ class AddRuleAclDtoRules:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddRuleAclDtoRules.
+        r"""Gets the address_type of this AddRuleAclDtoRules.
 
         地址类型，0表示ipv4，1表示ipv6
 
@@ -197,7 +197,7 @@ class AddRuleAclDtoRules:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddRuleAclDtoRules.
+        r"""Sets the address_type of this AddRuleAclDtoRules.
 
         地址类型，0表示ipv4，1表示ipv6
 
@@ -208,7 +208,7 @@ class AddRuleAclDtoRules:
 
     @property
     def action_type(self):
-        """Gets the action_type of this AddRuleAclDtoRules.
+        r"""Gets the action_type of this AddRuleAclDtoRules.
 
         规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
 
@@ -219,7 +219,7 @@ class AddRuleAclDtoRules:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this AddRuleAclDtoRules.
+        r"""Sets the action_type of this AddRuleAclDtoRules.
 
         规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
 
@@ -230,7 +230,7 @@ class AddRuleAclDtoRules:
 
     @property
     def status(self):
-        """Gets the status of this AddRuleAclDtoRules.
+        r"""Gets the status of this AddRuleAclDtoRules.
 
         规则启用状态，0表示禁用，1表示启用
 
@@ -241,7 +241,7 @@ class AddRuleAclDtoRules:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddRuleAclDtoRules.
+        r"""Sets the status of this AddRuleAclDtoRules.
 
         规则启用状态，0表示禁用，1表示启用
 
@@ -252,7 +252,7 @@ class AddRuleAclDtoRules:
 
     @property
     def applications(self):
-        """Gets the applications of this AddRuleAclDtoRules.
+        r"""Gets the applications of this AddRuleAclDtoRules.
 
         规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
 
@@ -263,7 +263,7 @@ class AddRuleAclDtoRules:
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this AddRuleAclDtoRules.
+        r"""Sets the applications of this AddRuleAclDtoRules.
 
         规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
 
@@ -274,7 +274,7 @@ class AddRuleAclDtoRules:
 
     @property
     def long_connect_time(self):
-        """Gets the long_connect_time of this AddRuleAclDtoRules.
+        r"""Gets the long_connect_time of this AddRuleAclDtoRules.
 
         长连接时长
 
@@ -285,7 +285,7 @@ class AddRuleAclDtoRules:
 
     @long_connect_time.setter
     def long_connect_time(self, long_connect_time):
-        """Sets the long_connect_time of this AddRuleAclDtoRules.
+        r"""Sets the long_connect_time of this AddRuleAclDtoRules.
 
         长连接时长
 
@@ -296,7 +296,7 @@ class AddRuleAclDtoRules:
 
     @property
     def long_connect_time_hour(self):
-        """Gets the long_connect_time_hour of this AddRuleAclDtoRules.
+        r"""Gets the long_connect_time_hour of this AddRuleAclDtoRules.
 
         长连接时长对应小时
 
@@ -307,7 +307,7 @@ class AddRuleAclDtoRules:
 
     @long_connect_time_hour.setter
     def long_connect_time_hour(self, long_connect_time_hour):
-        """Sets the long_connect_time_hour of this AddRuleAclDtoRules.
+        r"""Sets the long_connect_time_hour of this AddRuleAclDtoRules.
 
         长连接时长对应小时
 
@@ -318,7 +318,7 @@ class AddRuleAclDtoRules:
 
     @property
     def long_connect_time_minute(self):
-        """Gets the long_connect_time_minute of this AddRuleAclDtoRules.
+        r"""Gets the long_connect_time_minute of this AddRuleAclDtoRules.
 
         长连接时长对应分钟
 
@@ -329,7 +329,7 @@ class AddRuleAclDtoRules:
 
     @long_connect_time_minute.setter
     def long_connect_time_minute(self, long_connect_time_minute):
-        """Sets the long_connect_time_minute of this AddRuleAclDtoRules.
+        r"""Sets the long_connect_time_minute of this AddRuleAclDtoRules.
 
         长连接时长对应分钟
 
@@ -340,7 +340,7 @@ class AddRuleAclDtoRules:
 
     @property
     def long_connect_time_second(self):
-        """Gets the long_connect_time_second of this AddRuleAclDtoRules.
+        r"""Gets the long_connect_time_second of this AddRuleAclDtoRules.
 
         长连接时长秒
 
@@ -351,7 +351,7 @@ class AddRuleAclDtoRules:
 
     @long_connect_time_second.setter
     def long_connect_time_second(self, long_connect_time_second):
-        """Sets the long_connect_time_second of this AddRuleAclDtoRules.
+        r"""Sets the long_connect_time_second of this AddRuleAclDtoRules.
 
         长连接时长秒
 
@@ -362,7 +362,7 @@ class AddRuleAclDtoRules:
 
     @property
     def long_connect_enable(self):
-        """Gets the long_connect_enable of this AddRuleAclDtoRules.
+        r"""Gets the long_connect_enable of this AddRuleAclDtoRules.
 
         是否支持长连接，0表示不支持长连接，1表示支持长连接
 
@@ -373,7 +373,7 @@ class AddRuleAclDtoRules:
 
     @long_connect_enable.setter
     def long_connect_enable(self, long_connect_enable):
-        """Sets the long_connect_enable of this AddRuleAclDtoRules.
+        r"""Sets the long_connect_enable of this AddRuleAclDtoRules.
 
         是否支持长连接，0表示不支持长连接，1表示支持长连接
 
@@ -384,7 +384,7 @@ class AddRuleAclDtoRules:
 
     @property
     def description(self):
-        """Gets the description of this AddRuleAclDtoRules.
+        r"""Gets the description of this AddRuleAclDtoRules.
 
         描述
 
@@ -395,7 +395,7 @@ class AddRuleAclDtoRules:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddRuleAclDtoRules.
+        r"""Sets the description of this AddRuleAclDtoRules.
 
         描述
 
@@ -406,7 +406,7 @@ class AddRuleAclDtoRules:
 
     @property
     def direction(self):
-        """Gets the direction of this AddRuleAclDtoRules.
+        r"""Gets the direction of this AddRuleAclDtoRules.
 
         方向：0表示外到内，1表示内到外，规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
 
@@ -417,7 +417,7 @@ class AddRuleAclDtoRules:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this AddRuleAclDtoRules.
+        r"""Sets the direction of this AddRuleAclDtoRules.
 
         方向：0表示外到内，1表示内到外，规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
 
@@ -428,7 +428,7 @@ class AddRuleAclDtoRules:
 
     @property
     def source(self):
-        """Gets the source of this AddRuleAclDtoRules.
+        r"""Gets the source of this AddRuleAclDtoRules.
 
         :return: The source of this AddRuleAclDtoRules.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
@@ -437,7 +437,7 @@ class AddRuleAclDtoRules:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this AddRuleAclDtoRules.
+        r"""Sets the source of this AddRuleAclDtoRules.
 
         :param source: The source of this AddRuleAclDtoRules.
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
@@ -446,7 +446,7 @@ class AddRuleAclDtoRules:
 
     @property
     def destination(self):
-        """Gets the destination of this AddRuleAclDtoRules.
+        r"""Gets the destination of this AddRuleAclDtoRules.
 
         :return: The destination of this AddRuleAclDtoRules.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
@@ -455,7 +455,7 @@ class AddRuleAclDtoRules:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this AddRuleAclDtoRules.
+        r"""Sets the destination of this AddRuleAclDtoRules.
 
         :param destination: The destination of this AddRuleAclDtoRules.
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
@@ -464,7 +464,7 @@ class AddRuleAclDtoRules:
 
     @property
     def service(self):
-        """Gets the service of this AddRuleAclDtoRules.
+        r"""Gets the service of this AddRuleAclDtoRules.
 
         :return: The service of this AddRuleAclDtoRules.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
@@ -473,7 +473,7 @@ class AddRuleAclDtoRules:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this AddRuleAclDtoRules.
+        r"""Sets the service of this AddRuleAclDtoRules.
 
         :param service: The service of this AddRuleAclDtoRules.
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
@@ -482,7 +482,7 @@ class AddRuleAclDtoRules:
 
     @property
     def tag(self):
-        """Gets the tag of this AddRuleAclDtoRules.
+        r"""Gets the tag of this AddRuleAclDtoRules.
 
         :return: The tag of this AddRuleAclDtoRules.
         :rtype: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -491,7 +491,7 @@ class AddRuleAclDtoRules:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AddRuleAclDtoRules.
+        r"""Sets the tag of this AddRuleAclDtoRules.
 
         :param tag: The tag of this AddRuleAclDtoRules.
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`

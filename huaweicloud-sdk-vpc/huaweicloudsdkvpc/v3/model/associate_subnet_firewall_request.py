@@ -27,7 +27,7 @@ class AssociateSubnetFirewallRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """AssociateSubnetFirewallRequest
+        r"""AssociateSubnetFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateSubnetFirewallRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this AssociateSubnetFirewallRequest.
+        r"""Gets the firewall_id of this AssociateSubnetFirewallRequest.
 
         网络ACL唯一标识
 
@@ -60,7 +60,7 @@ class AssociateSubnetFirewallRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this AssociateSubnetFirewallRequest.
+        r"""Sets the firewall_id of this AssociateSubnetFirewallRequest.
 
         网络ACL唯一标识
 
@@ -71,7 +71,7 @@ class AssociateSubnetFirewallRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateSubnetFirewallRequest.
+        r"""Gets the body of this AssociateSubnetFirewallRequest.
 
         :return: The body of this AssociateSubnetFirewallRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.AssociateSubnetFirewallRequestBody`
@@ -80,7 +80,7 @@ class AssociateSubnetFirewallRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateSubnetFirewallRequest.
+        r"""Sets the body of this AssociateSubnetFirewallRequest.
 
         :param body: The body of this AssociateSubnetFirewallRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.AssociateSubnetFirewallRequestBody`

@@ -31,7 +31,7 @@ class RestMixedPictureBody:
     }
 
     def __init__(self, manual_set=None, image_type=None, subscriber_in_pics=None, switch_time=None):
-        """RestMixedPictureBody
+        r"""RestMixedPictureBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class RestMixedPictureBody:
 
     @property
     def manual_set(self):
-        """Gets the manual_set of this RestMixedPictureBody.
+        r"""Gets the manual_set of this RestMixedPictureBody.
 
         是否为手工设置多画面。 - 0: 系统自动多画面 - 1: 手工设置多画面
 
@@ -74,7 +74,7 @@ class RestMixedPictureBody:
 
     @manual_set.setter
     def manual_set(self, manual_set):
-        """Sets the manual_set of this RestMixedPictureBody.
+        r"""Sets the manual_set of this RestMixedPictureBody.
 
         是否为手工设置多画面。 - 0: 系统自动多画面 - 1: 手工设置多画面
 
@@ -85,7 +85,7 @@ class RestMixedPictureBody:
 
     @property
     def image_type(self):
-        """Gets the image_type of this RestMixedPictureBody.
+        r"""Gets the image_type of this RestMixedPictureBody.
 
         多画面数目。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Four: 四画面 - Six: 六画面 - Nine: 九画面 - Sixteen: 十六画面
 
@@ -96,7 +96,7 @@ class RestMixedPictureBody:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this RestMixedPictureBody.
+        r"""Sets the image_type of this RestMixedPictureBody.
 
         多画面数目。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Four: 四画面 - Six: 六画面 - Nine: 九画面 - Sixteen: 十六画面
 
@@ -107,7 +107,7 @@ class RestMixedPictureBody:
 
     @property
     def subscriber_in_pics(self):
-        """Gets the subscriber_in_pics of this RestMixedPictureBody.
+        r"""Gets the subscriber_in_pics of this RestMixedPictureBody.
 
         子画面列表（手工设置多画面时必填）。
 
@@ -118,7 +118,7 @@ class RestMixedPictureBody:
 
     @subscriber_in_pics.setter
     def subscriber_in_pics(self, subscriber_in_pics):
-        """Sets the subscriber_in_pics of this RestMixedPictureBody.
+        r"""Sets the subscriber_in_pics of this RestMixedPictureBody.
 
         子画面列表（手工设置多画面时必填）。
 
@@ -129,7 +129,7 @@ class RestMixedPictureBody:
 
     @property
     def switch_time(self):
-        """Gets the switch_time of this RestMixedPictureBody.
+        r"""Gets the switch_time of this RestMixedPictureBody.
 
         表示轮询间隔。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。
 
@@ -140,7 +140,7 @@ class RestMixedPictureBody:
 
     @switch_time.setter
     def switch_time(self, switch_time):
-        """Sets the switch_time of this RestMixedPictureBody.
+        r"""Sets the switch_time of this RestMixedPictureBody.
 
         表示轮询间隔。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。
 

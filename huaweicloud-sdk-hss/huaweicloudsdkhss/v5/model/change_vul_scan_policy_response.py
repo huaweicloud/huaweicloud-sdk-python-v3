@@ -24,7 +24,7 @@ class ChangeVulScanPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeVulScanPolicyResponse
+        r"""ChangeVulScanPolicyResponse
 
         The model defined in huaweicloud sdk
 

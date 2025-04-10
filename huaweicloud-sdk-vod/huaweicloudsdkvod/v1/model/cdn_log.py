@@ -35,7 +35,7 @@ class CdnLog:
     }
 
     def __init__(self, domain_name=None, start_time=None, end_time=None, name=None, size=None, link=None):
-        """CdnLog
+        r"""CdnLog
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CdnLog:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CdnLog.
+        r"""Gets the domain_name of this CdnLog.
 
         域名名称。
 
@@ -89,7 +89,7 @@ class CdnLog:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CdnLog.
+        r"""Sets the domain_name of this CdnLog.
 
         域名名称。
 
@@ -100,7 +100,7 @@ class CdnLog:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CdnLog.
+        r"""Gets the start_time of this CdnLog.
 
         查询起始时间。
 
@@ -111,7 +111,7 @@ class CdnLog:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CdnLog.
+        r"""Sets the start_time of this CdnLog.
 
         查询起始时间。
 
@@ -122,7 +122,7 @@ class CdnLog:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CdnLog.
+        r"""Gets the end_time of this CdnLog.
 
         查询结束时间。
 
@@ -133,7 +133,7 @@ class CdnLog:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CdnLog.
+        r"""Sets the end_time of this CdnLog.
 
         查询结束时间。
 
@@ -144,7 +144,7 @@ class CdnLog:
 
     @property
     def name(self):
-        """Gets the name of this CdnLog.
+        r"""Gets the name of this CdnLog.
 
         日志名称。
 
@@ -155,7 +155,7 @@ class CdnLog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdnLog.
+        r"""Sets the name of this CdnLog.
 
         日志名称。
 
@@ -166,7 +166,7 @@ class CdnLog:
 
     @property
     def size(self):
-        """Gets the size of this CdnLog.
+        r"""Gets the size of this CdnLog.
 
         日志大小。  单位：byte。
 
@@ -177,7 +177,7 @@ class CdnLog:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CdnLog.
+        r"""Sets the size of this CdnLog.
 
         日志大小。  单位：byte。
 
@@ -188,7 +188,7 @@ class CdnLog:
 
     @property
     def link(self):
-        """Gets the link of this CdnLog.
+        r"""Gets the link of this CdnLog.
 
         日志下载链接,日志文件[参数说明](https://support.huaweicloud.com/usermanual-cdn/zh-cn_topic_0073337424.html)。
 
@@ -199,7 +199,7 @@ class CdnLog:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this CdnLog.
+        r"""Sets the link of this CdnLog.
 
         日志下载链接,日志文件[参数说明](https://support.huaweicloud.com/usermanual-cdn/zh-cn_topic_0073337424.html)。
 

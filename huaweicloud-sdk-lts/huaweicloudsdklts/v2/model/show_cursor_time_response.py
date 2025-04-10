@@ -26,7 +26,7 @@ class ShowCursorTimeResponse(SdkResponse):
     }
 
     def __init__(self, cursor_time=None):
-        """ShowCursorTimeResponse
+        r"""ShowCursorTimeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCursorTimeResponse(SdkResponse):
 
     @property
     def cursor_time(self):
-        """Gets the cursor_time of this ShowCursorTimeResponse.
+        r"""Gets the cursor_time of this ShowCursorTimeResponse.
 
         游标时间值
 
@@ -55,7 +55,7 @@ class ShowCursorTimeResponse(SdkResponse):
 
     @cursor_time.setter
     def cursor_time(self, cursor_time):
-        """Sets the cursor_time of this ShowCursorTimeResponse.
+        r"""Sets the cursor_time of this ShowCursorTimeResponse.
 
         游标时间值
 

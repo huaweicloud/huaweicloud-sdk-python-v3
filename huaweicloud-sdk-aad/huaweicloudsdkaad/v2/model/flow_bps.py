@@ -29,7 +29,7 @@ class FlowBps:
     }
 
     def __init__(self, utime=None, attack_bps=None, normal_bps=None):
-        """FlowBps
+        r"""FlowBps
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlowBps:
 
     @property
     def utime(self):
-        """Gets the utime of this FlowBps.
+        r"""Gets the utime of this FlowBps.
 
         数据时间
 
@@ -68,7 +68,7 @@ class FlowBps:
 
     @utime.setter
     def utime(self, utime):
-        """Sets the utime of this FlowBps.
+        r"""Sets the utime of this FlowBps.
 
         数据时间
 
@@ -79,7 +79,7 @@ class FlowBps:
 
     @property
     def attack_bps(self):
-        """Gets the attack_bps of this FlowBps.
+        r"""Gets the attack_bps of this FlowBps.
 
         攻击流量
 
@@ -90,7 +90,7 @@ class FlowBps:
 
     @attack_bps.setter
     def attack_bps(self, attack_bps):
-        """Sets the attack_bps of this FlowBps.
+        r"""Sets the attack_bps of this FlowBps.
 
         攻击流量
 
@@ -101,7 +101,7 @@ class FlowBps:
 
     @property
     def normal_bps(self):
-        """Gets the normal_bps of this FlowBps.
+        r"""Gets the normal_bps of this FlowBps.
 
         正常流量
 
@@ -112,7 +112,7 @@ class FlowBps:
 
     @normal_bps.setter
     def normal_bps(self, normal_bps):
-        """Sets the normal_bps of this FlowBps.
+        r"""Sets the normal_bps of this FlowBps.
 
         正常流量
 

@@ -37,7 +37,7 @@ class OpenRoomSettingVO:
     }
 
     def __init__(self, room_introduce=None, crop_logo_id=None, cover_picture_id=None, show_audience_mode=None, is_redouble_open=None, base_audience_count=None, multiple=None):
-        """OpenRoomSettingVO
+        r"""OpenRoomSettingVO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OpenRoomSettingVO:
 
     @property
     def room_introduce(self):
-        """Gets the room_introduce of this OpenRoomSettingVO.
+        r"""Gets the room_introduce of this OpenRoomSettingVO.
 
         网络研讨会介绍。
 
@@ -96,7 +96,7 @@ class OpenRoomSettingVO:
 
     @room_introduce.setter
     def room_introduce(self, room_introduce):
-        """Sets the room_introduce of this OpenRoomSettingVO.
+        r"""Sets the room_introduce of this OpenRoomSettingVO.
 
         网络研讨会介绍。
 
@@ -107,7 +107,7 @@ class OpenRoomSettingVO:
 
     @property
     def crop_logo_id(self):
-        """Gets the crop_logo_id of this OpenRoomSettingVO.
+        r"""Gets the crop_logo_id of this OpenRoomSettingVO.
 
         企业Logo的文件id。
 
@@ -118,7 +118,7 @@ class OpenRoomSettingVO:
 
     @crop_logo_id.setter
     def crop_logo_id(self, crop_logo_id):
-        """Sets the crop_logo_id of this OpenRoomSettingVO.
+        r"""Sets the crop_logo_id of this OpenRoomSettingVO.
 
         企业Logo的文件id。
 
@@ -129,7 +129,7 @@ class OpenRoomSettingVO:
 
     @property
     def cover_picture_id(self):
-        """Gets the cover_picture_id of this OpenRoomSettingVO.
+        r"""Gets the cover_picture_id of this OpenRoomSettingVO.
 
         欢迎界面的文件id。
 
@@ -140,7 +140,7 @@ class OpenRoomSettingVO:
 
     @cover_picture_id.setter
     def cover_picture_id(self, cover_picture_id):
-        """Sets the cover_picture_id of this OpenRoomSettingVO.
+        r"""Sets the cover_picture_id of this OpenRoomSettingVO.
 
         欢迎界面的文件id。
 
@@ -151,7 +151,7 @@ class OpenRoomSettingVO:
 
     @property
     def show_audience_mode(self):
-        """Gets the show_audience_mode of this OpenRoomSettingVO.
+        r"""Gets the show_audience_mode of this OpenRoomSettingVO.
 
         显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
 
@@ -162,7 +162,7 @@ class OpenRoomSettingVO:
 
     @show_audience_mode.setter
     def show_audience_mode(self, show_audience_mode):
-        """Sets the show_audience_mode of this OpenRoomSettingVO.
+        r"""Sets the show_audience_mode of this OpenRoomSettingVO.
 
         显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
 
@@ -173,7 +173,7 @@ class OpenRoomSettingVO:
 
     @property
     def is_redouble_open(self):
-        """Gets the is_redouble_open of this OpenRoomSettingVO.
+        r"""Gets the is_redouble_open of this OpenRoomSettingVO.
 
         智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
 
@@ -184,7 +184,7 @@ class OpenRoomSettingVO:
 
     @is_redouble_open.setter
     def is_redouble_open(self, is_redouble_open):
-        """Sets the is_redouble_open of this OpenRoomSettingVO.
+        r"""Sets the is_redouble_open of this OpenRoomSettingVO.
 
         智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
 
@@ -195,7 +195,7 @@ class OpenRoomSettingVO:
 
     @property
     def base_audience_count(self):
-        """Gets the base_audience_count of this OpenRoomSettingVO.
+        r"""Gets the base_audience_count of this OpenRoomSettingVO.
 
         基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
 
@@ -206,7 +206,7 @@ class OpenRoomSettingVO:
 
     @base_audience_count.setter
     def base_audience_count(self, base_audience_count):
-        """Sets the base_audience_count of this OpenRoomSettingVO.
+        r"""Sets the base_audience_count of this OpenRoomSettingVO.
 
         基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
 
@@ -217,7 +217,7 @@ class OpenRoomSettingVO:
 
     @property
     def multiple(self):
-        """Gets the multiple of this OpenRoomSettingVO.
+        r"""Gets the multiple of this OpenRoomSettingVO.
 
         设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
 
@@ -228,7 +228,7 @@ class OpenRoomSettingVO:
 
     @multiple.setter
     def multiple(self, multiple):
-        """Sets the multiple of this OpenRoomSettingVO.
+        r"""Sets the multiple of this OpenRoomSettingVO.
 
         设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
 

@@ -25,7 +25,7 @@ class GesMetaData:
     }
 
     def __init__(self, labels=None):
-        """GesMetaData
+        r"""GesMetaData
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GesMetaData:
 
     @property
     def labels(self):
-        """Gets the labels of this GesMetaData.
+        r"""Gets the labels of this GesMetaData.
 
         Label数据结构集合。
 
@@ -53,7 +53,7 @@ class GesMetaData:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this GesMetaData.
+        r"""Sets the labels of this GesMetaData.
 
         Label数据结构集合。
 

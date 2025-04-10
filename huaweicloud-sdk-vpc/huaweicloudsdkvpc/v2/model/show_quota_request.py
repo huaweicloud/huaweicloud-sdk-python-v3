@@ -25,7 +25,7 @@ class ShowQuotaRequest:
     }
 
     def __init__(self, type=None):
-        """ShowQuotaRequest
+        r"""ShowQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowQuotaRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowQuotaRequest.
+        r"""Gets the type of this ShowQuotaRequest.
 
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener，physicalConnect，virtualInterface，vpcContainRoutetable，routetableContainRoutes
 
@@ -54,7 +54,7 @@ class ShowQuotaRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowQuotaRequest.
+        r"""Sets the type of this ShowQuotaRequest.
 
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener，physicalConnect，virtualInterface，vpcContainRoutetable，routetableContainRoutes
 

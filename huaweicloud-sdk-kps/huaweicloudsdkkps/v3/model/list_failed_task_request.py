@@ -27,7 +27,7 @@ class ListFailedTaskRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListFailedTaskRequest
+        r"""ListFailedTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFailedTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFailedTaskRequest.
+        r"""Gets the limit of this ListFailedTaskRequest.
 
         每页显示的条目数量。默认值1000。
 
@@ -61,7 +61,7 @@ class ListFailedTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFailedTaskRequest.
+        r"""Sets the limit of this ListFailedTaskRequest.
 
         每页显示的条目数量。默认值1000。
 
@@ -72,7 +72,7 @@ class ListFailedTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFailedTaskRequest.
+        r"""Gets the offset of this ListFailedTaskRequest.
 
         失败的任务信息列表的偏移量
 
@@ -83,7 +83,7 @@ class ListFailedTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFailedTaskRequest.
+        r"""Sets the offset of this ListFailedTaskRequest.
 
         失败的任务信息列表的偏移量
 

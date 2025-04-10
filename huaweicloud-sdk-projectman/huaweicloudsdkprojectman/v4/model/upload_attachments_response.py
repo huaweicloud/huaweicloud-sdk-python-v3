@@ -36,7 +36,7 @@ class UploadAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, issue_id=None, project_id=None, disk_filename=None, file_name=None, size=None):
-        """UploadAttachmentsResponse
+        r"""UploadAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UploadAttachmentsResponse.
+        r"""Gets the id of this UploadAttachmentsResponse.
 
         关联id
 
@@ -90,7 +90,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadAttachmentsResponse.
+        r"""Sets the id of this UploadAttachmentsResponse.
 
         关联id
 
@@ -101,7 +101,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this UploadAttachmentsResponse.
+        r"""Gets the issue_id of this UploadAttachmentsResponse.
 
         工作项id
 
@@ -112,7 +112,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this UploadAttachmentsResponse.
+        r"""Sets the issue_id of this UploadAttachmentsResponse.
 
         工作项id
 
@@ -123,7 +123,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UploadAttachmentsResponse.
+        r"""Gets the project_id of this UploadAttachmentsResponse.
 
         项目id
 
@@ -134,7 +134,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UploadAttachmentsResponse.
+        r"""Sets the project_id of this UploadAttachmentsResponse.
 
         项目id
 
@@ -145,7 +145,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @property
     def disk_filename(self):
-        """Gets the disk_filename of this UploadAttachmentsResponse.
+        r"""Gets the disk_filename of this UploadAttachmentsResponse.
 
         云盘存贮名
 
@@ -156,7 +156,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @disk_filename.setter
     def disk_filename(self, disk_filename):
-        """Sets the disk_filename of this UploadAttachmentsResponse.
+        r"""Sets the disk_filename of this UploadAttachmentsResponse.
 
         云盘存贮名
 
@@ -167,7 +167,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this UploadAttachmentsResponse.
+        r"""Gets the file_name of this UploadAttachmentsResponse.
 
         文件名
 
@@ -178,7 +178,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this UploadAttachmentsResponse.
+        r"""Sets the file_name of this UploadAttachmentsResponse.
 
         文件名
 
@@ -189,7 +189,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this UploadAttachmentsResponse.
+        r"""Gets the size of this UploadAttachmentsResponse.
 
         文件大小
 
@@ -200,7 +200,7 @@ class UploadAttachmentsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UploadAttachmentsResponse.
+        r"""Sets the size of this UploadAttachmentsResponse.
 
         文件大小
 

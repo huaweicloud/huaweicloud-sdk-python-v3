@@ -28,7 +28,7 @@ class UpdateAimMsgTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, template_name=None):
-        """UpdateAimMsgTemplateResponse
+        r"""UpdateAimMsgTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAimMsgTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateAimMsgTemplateResponse.
+        r"""Gets the template_id of this UpdateAimMsgTemplateResponse.
 
         模板ID。
 
@@ -62,7 +62,7 @@ class UpdateAimMsgTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateAimMsgTemplateResponse.
+        r"""Sets the template_id of this UpdateAimMsgTemplateResponse.
 
         模板ID。
 
@@ -73,7 +73,7 @@ class UpdateAimMsgTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this UpdateAimMsgTemplateResponse.
+        r"""Gets the template_name of this UpdateAimMsgTemplateResponse.
 
         模板名称。
 
@@ -84,7 +84,7 @@ class UpdateAimMsgTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this UpdateAimMsgTemplateResponse.
+        r"""Sets the template_name of this UpdateAimMsgTemplateResponse.
 
         模板名称。
 

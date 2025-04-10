@@ -31,7 +31,7 @@ class Column:
     }
 
     def __init__(self, column_name=None, type=None, description=None, is_partition_column=None):
-        """Column
+        r"""Column
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Column:
 
     @property
     def column_name(self):
-        """Gets the column_name of this Column.
+        r"""Gets the column_name of this Column.
 
         列的名称。
 
@@ -73,7 +73,7 @@ class Column:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this Column.
+        r"""Sets the column_name of this Column.
 
         列的名称。
 
@@ -84,7 +84,7 @@ class Column:
 
     @property
     def type(self):
-        """Gets the type of this Column.
+        r"""Gets the type of this Column.
 
         列的数据类型。
 
@@ -95,7 +95,7 @@ class Column:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Column.
+        r"""Sets the type of this Column.
 
         列的数据类型。
 
@@ -106,7 +106,7 @@ class Column:
 
     @property
     def description(self):
-        """Gets the description of this Column.
+        r"""Gets the description of this Column.
 
         列的描述信息。
 
@@ -117,7 +117,7 @@ class Column:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Column.
+        r"""Sets the description of this Column.
 
         列的描述信息。
 
@@ -128,7 +128,7 @@ class Column:
 
     @property
     def is_partition_column(self):
-        """Gets the is_partition_column of this Column.
+        r"""Gets the is_partition_column of this Column.
 
         表示该列是否为分区列。“true”表示为分区列，“false”为非分区列，默认为“false”。
 
@@ -139,7 +139,7 @@ class Column:
 
     @is_partition_column.setter
     def is_partition_column(self, is_partition_column):
-        """Sets the is_partition_column of this Column.
+        r"""Sets the is_partition_column of this Column.
 
         表示该列是否为分区列。“true”表示为分区列，“false”为非分区列，默认为“false”。
 

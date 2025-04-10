@@ -27,7 +27,7 @@ class PostEntityLinkingRequest:
     }
 
     def __init__(self, text=None, lang=None):
-        """PostEntityLinkingRequest
+        r"""PostEntityLinkingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PostEntityLinkingRequest:
 
     @property
     def text(self):
-        """Gets the text of this PostEntityLinkingRequest.
+        r"""Gets the text of this PostEntityLinkingRequest.
 
         待分析文本，长度为1~50，文本编码为UTF-8。
 
@@ -60,7 +60,7 @@ class PostEntityLinkingRequest:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this PostEntityLinkingRequest.
+        r"""Sets the text of this PostEntityLinkingRequest.
 
         待分析文本，长度为1~50，文本编码为UTF-8。
 
@@ -71,7 +71,7 @@ class PostEntityLinkingRequest:
 
     @property
     def lang(self):
-        """Gets the lang of this PostEntityLinkingRequest.
+        r"""Gets the lang of this PostEntityLinkingRequest.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -82,7 +82,7 @@ class PostEntityLinkingRequest:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this PostEntityLinkingRequest.
+        r"""Sets the lang of this PostEntityLinkingRequest.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 

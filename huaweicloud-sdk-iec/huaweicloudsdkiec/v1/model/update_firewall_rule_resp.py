@@ -31,7 +31,7 @@ class UpdateFirewallRuleResp:
     }
 
     def __init__(self, id=None, status=None, egress_firewall_policy=None, ingress_firewall_policy=None):
-        """UpdateFirewallRuleResp
+        r"""UpdateFirewallRuleResp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateFirewallRuleResp:
 
     @property
     def id(self):
-        """Gets the id of this UpdateFirewallRuleResp.
+        r"""Gets the id of this UpdateFirewallRuleResp.
 
         网络ACL ID
 
@@ -71,7 +71,7 @@ class UpdateFirewallRuleResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateFirewallRuleResp.
+        r"""Sets the id of this UpdateFirewallRuleResp.
 
         网络ACL ID
 
@@ -82,7 +82,7 @@ class UpdateFirewallRuleResp:
 
     @property
     def status(self):
-        """Gets the status of this UpdateFirewallRuleResp.
+        r"""Gets the status of this UpdateFirewallRuleResp.
 
         网络ACL状态。
 
@@ -93,7 +93,7 @@ class UpdateFirewallRuleResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateFirewallRuleResp.
+        r"""Sets the status of this UpdateFirewallRuleResp.
 
         网络ACL状态。
 
@@ -104,7 +104,7 @@ class UpdateFirewallRuleResp:
 
     @property
     def egress_firewall_policy(self):
-        """Gets the egress_firewall_policy of this UpdateFirewallRuleResp.
+        r"""Gets the egress_firewall_policy of this UpdateFirewallRuleResp.
 
         :return: The egress_firewall_policy of this UpdateFirewallRuleResp.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -113,7 +113,7 @@ class UpdateFirewallRuleResp:
 
     @egress_firewall_policy.setter
     def egress_firewall_policy(self, egress_firewall_policy):
-        """Sets the egress_firewall_policy of this UpdateFirewallRuleResp.
+        r"""Sets the egress_firewall_policy of this UpdateFirewallRuleResp.
 
         :param egress_firewall_policy: The egress_firewall_policy of this UpdateFirewallRuleResp.
         :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -122,7 +122,7 @@ class UpdateFirewallRuleResp:
 
     @property
     def ingress_firewall_policy(self):
-        """Gets the ingress_firewall_policy of this UpdateFirewallRuleResp.
+        r"""Gets the ingress_firewall_policy of this UpdateFirewallRuleResp.
 
         :return: The ingress_firewall_policy of this UpdateFirewallRuleResp.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -131,7 +131,7 @@ class UpdateFirewallRuleResp:
 
     @ingress_firewall_policy.setter
     def ingress_firewall_policy(self, ingress_firewall_policy):
-        """Sets the ingress_firewall_policy of this UpdateFirewallRuleResp.
+        r"""Sets the ingress_firewall_policy of this UpdateFirewallRuleResp.
 
         :param ingress_firewall_policy: The ingress_firewall_policy of this UpdateFirewallRuleResp.
         :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`

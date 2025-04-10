@@ -30,7 +30,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowDefaultTemplateByPageResponse
+        r"""ShowDefaultTemplateByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowDefaultTemplateByPageResponse.
+        r"""Gets the code of this ShowDefaultTemplateByPageResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowDefaultTemplateByPageResponse.
+        r"""Sets the code of this ShowDefaultTemplateByPageResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowDefaultTemplateByPageResponse.
+        r"""Gets the data of this ShowDefaultTemplateByPageResponse.
 
         :return: The data of this ShowDefaultTemplateByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTemplate`
@@ -89,7 +89,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowDefaultTemplateByPageResponse.
+        r"""Sets the data of this ShowDefaultTemplateByPageResponse.
 
         :param data: The data of this ShowDefaultTemplateByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTemplate`
@@ -98,7 +98,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowDefaultTemplateByPageResponse.
+        r"""Gets the message of this ShowDefaultTemplateByPageResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class ShowDefaultTemplateByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowDefaultTemplateByPageResponse.
+        r"""Sets the message of this ShowDefaultTemplateByPageResponse.
 
         错误信息
 

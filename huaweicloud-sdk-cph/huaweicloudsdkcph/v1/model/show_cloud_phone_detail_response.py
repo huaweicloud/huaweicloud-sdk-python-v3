@@ -66,7 +66,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, phone_name=None, server_id=None, phone_id=None, image_id=None, image_version=None, vnc_enable=None, phone_model_name=None, status=None, access_infos=None, _property=None, metadata=None, phone_data_volume=None, imei=None, type=None, traffic_type=None, volume_mode=None, availability_zone=None, has_encrypt=None, create_time=None, update_time=None):
-        """ShowCloudPhoneDetailResponse
+        r"""ShowCloudPhoneDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowCloudPhoneDetailResponse.
+        r"""Gets the request_id of this ShowCloudPhoneDetailResponse.
 
         请求的唯一标识ID，不超过32个字节。
 
@@ -195,7 +195,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowCloudPhoneDetailResponse.
+        r"""Sets the request_id of this ShowCloudPhoneDetailResponse.
 
         请求的唯一标识ID，不超过32个字节。
 
@@ -206,7 +206,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def phone_name(self):
-        """Gets the phone_name of this ShowCloudPhoneDetailResponse.
+        r"""Gets the phone_name of this ShowCloudPhoneDetailResponse.
 
         云手机名称，不超过65个字符。
 
@@ -217,7 +217,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @phone_name.setter
     def phone_name(self, phone_name):
-        """Sets the phone_name of this ShowCloudPhoneDetailResponse.
+        r"""Sets the phone_name of this ShowCloudPhoneDetailResponse.
 
         云手机名称，不超过65个字符。
 
@@ -228,7 +228,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowCloudPhoneDetailResponse.
+        r"""Gets the server_id of this ShowCloudPhoneDetailResponse.
 
         云手机服务器ID，不超过32个字节。
 
@@ -239,7 +239,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowCloudPhoneDetailResponse.
+        r"""Sets the server_id of this ShowCloudPhoneDetailResponse.
 
         云手机服务器ID，不超过32个字节。
 
@@ -250,7 +250,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this ShowCloudPhoneDetailResponse.
+        r"""Gets the phone_id of this ShowCloudPhoneDetailResponse.
 
         云手机的唯一标识，不超过32个字节。
 
@@ -261,7 +261,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this ShowCloudPhoneDetailResponse.
+        r"""Sets the phone_id of this ShowCloudPhoneDetailResponse.
 
         云手机的唯一标识，不超过32个字节。
 
@@ -272,7 +272,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowCloudPhoneDetailResponse.
+        r"""Gets the image_id of this ShowCloudPhoneDetailResponse.
 
         云手机镜像ID，不超过32个字节。
 
@@ -283,7 +283,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowCloudPhoneDetailResponse.
+        r"""Sets the image_id of this ShowCloudPhoneDetailResponse.
 
         云手机镜像ID，不超过32个字节。
 
@@ -294,7 +294,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def image_version(self):
-        """Gets the image_version of this ShowCloudPhoneDetailResponse.
+        r"""Gets the image_version of this ShowCloudPhoneDetailResponse.
 
         镜像版本。
 
@@ -305,7 +305,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this ShowCloudPhoneDetailResponse.
+        r"""Sets the image_version of this ShowCloudPhoneDetailResponse.
 
         镜像版本。
 
@@ -316,7 +316,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def vnc_enable(self):
-        """Gets the vnc_enable of this ShowCloudPhoneDetailResponse.
+        r"""Gets the vnc_enable of this ShowCloudPhoneDetailResponse.
 
         云手机是否开启VNC服务（过期） - true：开启 - false：关闭
 
@@ -327,7 +327,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @vnc_enable.setter
     def vnc_enable(self, vnc_enable):
-        """Sets the vnc_enable of this ShowCloudPhoneDetailResponse.
+        r"""Sets the vnc_enable of this ShowCloudPhoneDetailResponse.
 
         云手机是否开启VNC服务（过期） - true：开启 - false：关闭
 
@@ -338,7 +338,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this ShowCloudPhoneDetailResponse.
+        r"""Gets the phone_model_name of this ShowCloudPhoneDetailResponse.
 
         云手机规格名称，不超过64个字节。
 
@@ -349,7 +349,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this ShowCloudPhoneDetailResponse.
+        r"""Sets the phone_model_name of this ShowCloudPhoneDetailResponse.
 
         云手机规格名称，不超过64个字节。
 
@@ -360,7 +360,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCloudPhoneDetailResponse.
+        r"""Gets the status of this ShowCloudPhoneDetailResponse.
 
         云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
@@ -371,7 +371,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCloudPhoneDetailResponse.
+        r"""Sets the status of this ShowCloudPhoneDetailResponse.
 
         云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
@@ -382,7 +382,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def access_infos(self):
-        """Gets the access_infos of this ShowCloudPhoneDetailResponse.
+        r"""Gets the access_infos of this ShowCloudPhoneDetailResponse.
 
         云手机访问信息。
 
@@ -393,7 +393,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @access_infos.setter
     def access_infos(self, access_infos):
-        """Sets the access_infos of this ShowCloudPhoneDetailResponse.
+        r"""Sets the access_infos of this ShowCloudPhoneDetailResponse.
 
         云手机访问信息。
 
@@ -404,7 +404,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def _property(self):
-        """Gets the _property of this ShowCloudPhoneDetailResponse.
+        r"""Gets the _property of this ShowCloudPhoneDetailResponse.
 
         云手机属性字符串，不超过2048个字节。
 
@@ -415,7 +415,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ShowCloudPhoneDetailResponse.
+        r"""Sets the _property of this ShowCloudPhoneDetailResponse.
 
         云手机属性字符串，不超过2048个字节。
 
@@ -426,7 +426,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowCloudPhoneDetailResponse.
+        r"""Gets the metadata of this ShowCloudPhoneDetailResponse.
 
         :return: The metadata of this ShowCloudPhoneDetailResponse.
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
@@ -435,7 +435,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowCloudPhoneDetailResponse.
+        r"""Sets the metadata of this ShowCloudPhoneDetailResponse.
 
         :param metadata: The metadata of this ShowCloudPhoneDetailResponse.
         :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
@@ -444,7 +444,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def phone_data_volume(self):
-        """Gets the phone_data_volume of this ShowCloudPhoneDetailResponse.
+        r"""Gets the phone_data_volume of this ShowCloudPhoneDetailResponse.
 
         :return: The phone_data_volume of this ShowCloudPhoneDetailResponse.
         :rtype: :class:`huaweicloudsdkcph.v1.PhoneDataVolume`
@@ -453,7 +453,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @phone_data_volume.setter
     def phone_data_volume(self, phone_data_volume):
-        """Sets the phone_data_volume of this ShowCloudPhoneDetailResponse.
+        r"""Sets the phone_data_volume of this ShowCloudPhoneDetailResponse.
 
         :param phone_data_volume: The phone_data_volume of this ShowCloudPhoneDetailResponse.
         :type phone_data_volume: :class:`huaweicloudsdkcph.v1.PhoneDataVolume`
@@ -462,7 +462,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def imei(self):
-        """Gets the imei of this ShowCloudPhoneDetailResponse.
+        r"""Gets the imei of this ShowCloudPhoneDetailResponse.
 
         imei码。
 
@@ -473,7 +473,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this ShowCloudPhoneDetailResponse.
+        r"""Sets the imei of this ShowCloudPhoneDetailResponse.
 
         imei码。
 
@@ -484,7 +484,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowCloudPhoneDetailResponse.
+        r"""Gets the type of this ShowCloudPhoneDetailResponse.
 
         云手机类型。 - 0：普通云手机
 
@@ -495,7 +495,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowCloudPhoneDetailResponse.
+        r"""Sets the type of this ShowCloudPhoneDetailResponse.
 
         云手机类型。 - 0：普通云手机
 
@@ -506,7 +506,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def traffic_type(self):
-        """Gets the traffic_type of this ShowCloudPhoneDetailResponse.
+        r"""Gets the traffic_type of this ShowCloudPhoneDetailResponse.
 
         手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
@@ -517,7 +517,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @traffic_type.setter
     def traffic_type(self, traffic_type):
-        """Sets the traffic_type of this ShowCloudPhoneDetailResponse.
+        r"""Sets the traffic_type of this ShowCloudPhoneDetailResponse.
 
         手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
@@ -528,7 +528,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def volume_mode(self):
-        """Gets the volume_mode of this ShowCloudPhoneDetailResponse.
+        r"""Gets the volume_mode of this ShowCloudPhoneDetailResponse.
 
         手机物理磁盘是否独立。 - 0：不独立 - 1：独立
 
@@ -539,7 +539,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @volume_mode.setter
     def volume_mode(self, volume_mode):
-        """Sets the volume_mode of this ShowCloudPhoneDetailResponse.
+        r"""Sets the volume_mode of this ShowCloudPhoneDetailResponse.
 
         手机物理磁盘是否独立。 - 0：不独立 - 1：独立
 
@@ -550,7 +550,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowCloudPhoneDetailResponse.
+        r"""Gets the availability_zone of this ShowCloudPhoneDetailResponse.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -561,7 +561,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowCloudPhoneDetailResponse.
+        r"""Sets the availability_zone of this ShowCloudPhoneDetailResponse.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -572,7 +572,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def has_encrypt(self):
-        """Gets the has_encrypt of this ShowCloudPhoneDetailResponse.
+        r"""Gets the has_encrypt of this ShowCloudPhoneDetailResponse.
 
         当前手机是否开启文件级加密。
 
@@ -583,7 +583,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @has_encrypt.setter
     def has_encrypt(self, has_encrypt):
-        """Sets the has_encrypt of this ShowCloudPhoneDetailResponse.
+        r"""Sets the has_encrypt of this ShowCloudPhoneDetailResponse.
 
         当前手机是否开启文件级加密。
 
@@ -594,7 +594,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCloudPhoneDetailResponse.
+        r"""Gets the create_time of this ShowCloudPhoneDetailResponse.
 
         创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -605,7 +605,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCloudPhoneDetailResponse.
+        r"""Sets the create_time of this ShowCloudPhoneDetailResponse.
 
         创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -616,7 +616,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowCloudPhoneDetailResponse.
+        r"""Gets the update_time of this ShowCloudPhoneDetailResponse.
 
         更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -627,7 +627,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowCloudPhoneDetailResponse.
+        r"""Sets the update_time of this ShowCloudPhoneDetailResponse.
 
         更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 

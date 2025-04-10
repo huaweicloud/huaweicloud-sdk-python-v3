@@ -26,7 +26,7 @@ class CreateTtsAuditionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateTtsAuditionResponse
+        r"""CreateTtsAuditionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTtsAuditionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateTtsAuditionResponse.
+        r"""Gets the job_id of this CreateTtsAuditionResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class CreateTtsAuditionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateTtsAuditionResponse.
+        r"""Sets the job_id of this CreateTtsAuditionResponse.
 
         任务ID。
 

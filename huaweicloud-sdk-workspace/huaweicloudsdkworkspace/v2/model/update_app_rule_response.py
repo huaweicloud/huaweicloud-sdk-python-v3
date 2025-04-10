@@ -38,7 +38,7 @@ class UpdateAppRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, rule=None, rule_source=None, create_time=None, update_time=None):
-        """UpdateAppRuleResponse
+        r"""UpdateAppRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAppRuleResponse.
+        r"""Gets the id of this UpdateAppRuleResponse.
 
         规则ID。
 
@@ -97,7 +97,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAppRuleResponse.
+        r"""Sets the id of this UpdateAppRuleResponse.
 
         规则ID。
 
@@ -108,7 +108,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppRuleResponse.
+        r"""Gets the name of this UpdateAppRuleResponse.
 
         规则名称。
 
@@ -119,7 +119,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppRuleResponse.
+        r"""Sets the name of this UpdateAppRuleResponse.
 
         规则名称。
 
@@ -130,7 +130,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppRuleResponse.
+        r"""Gets the description of this UpdateAppRuleResponse.
 
         规则描述。
 
@@ -141,7 +141,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppRuleResponse.
+        r"""Sets the description of this UpdateAppRuleResponse.
 
         规则描述。
 
@@ -152,7 +152,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this UpdateAppRuleResponse.
+        r"""Gets the rule of this UpdateAppRuleResponse.
 
         :return: The rule of this UpdateAppRuleResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Rule`
@@ -161,7 +161,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this UpdateAppRuleResponse.
+        r"""Sets the rule of this UpdateAppRuleResponse.
 
         :param rule: The rule of this UpdateAppRuleResponse.
         :type rule: :class:`huaweicloudsdkworkspace.v2.Rule`
@@ -170,7 +170,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def rule_source(self):
-        """Gets the rule_source of this UpdateAppRuleResponse.
+        r"""Gets the rule_source of this UpdateAppRuleResponse.
 
         规则来源。
 
@@ -181,7 +181,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @rule_source.setter
     def rule_source(self, rule_source):
-        """Sets the rule_source of this UpdateAppRuleResponse.
+        r"""Sets the rule_source of this UpdateAppRuleResponse.
 
         规则来源。
 
@@ -192,7 +192,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateAppRuleResponse.
+        r"""Gets the create_time of this UpdateAppRuleResponse.
 
         创建时间。
 
@@ -203,7 +203,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateAppRuleResponse.
+        r"""Sets the create_time of this UpdateAppRuleResponse.
 
         创建时间。
 
@@ -214,7 +214,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateAppRuleResponse.
+        r"""Gets the update_time of this UpdateAppRuleResponse.
 
         更新时间。
 
@@ -225,7 +225,7 @@ class UpdateAppRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateAppRuleResponse.
+        r"""Sets the update_time of this UpdateAppRuleResponse.
 
         更新时间。
 

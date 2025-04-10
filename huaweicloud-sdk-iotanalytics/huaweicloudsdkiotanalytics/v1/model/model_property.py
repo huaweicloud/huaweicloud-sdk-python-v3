@@ -31,7 +31,7 @@ class ModelProperty:
     }
 
     def __init__(self, name=None, type=None, description=None, unit=None):
-        """ModelProperty
+        r"""ModelProperty
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ModelProperty:
 
     @property
     def name(self):
-        """Gets the name of this ModelProperty.
+        r"""Gets the name of this ModelProperty.
 
         属性名称
 
@@ -75,7 +75,7 @@ class ModelProperty:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModelProperty.
+        r"""Sets the name of this ModelProperty.
 
         属性名称
 
@@ -86,7 +86,7 @@ class ModelProperty:
 
     @property
     def type(self):
-        """Gets the type of this ModelProperty.
+        r"""Gets the type of this ModelProperty.
 
         属性值类型
 
@@ -97,7 +97,7 @@ class ModelProperty:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ModelProperty.
+        r"""Sets the type of this ModelProperty.
 
         属性值类型
 
@@ -108,7 +108,7 @@ class ModelProperty:
 
     @property
     def description(self):
-        """Gets the description of this ModelProperty.
+        r"""Gets the description of this ModelProperty.
 
         属性描述
 
@@ -119,7 +119,7 @@ class ModelProperty:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModelProperty.
+        r"""Sets the description of this ModelProperty.
 
         属性描述
 
@@ -130,7 +130,7 @@ class ModelProperty:
 
     @property
     def unit(self):
-        """Gets the unit of this ModelProperty.
+        r"""Gets the unit of this ModelProperty.
 
         属性单位
 
@@ -141,7 +141,7 @@ class ModelProperty:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ModelProperty.
+        r"""Sets the unit of this ModelProperty.
 
         属性单位
 

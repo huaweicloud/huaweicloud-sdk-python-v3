@@ -27,7 +27,7 @@ class DeleteJobRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None):
-        """DeleteJobRequest
+        r"""DeleteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteJobRequest.
+        r"""Gets the cluster_id of this DeleteJobRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class DeleteJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteJobRequest.
+        r"""Sets the cluster_id of this DeleteJobRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class DeleteJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this DeleteJobRequest.
+        r"""Gets the job_name of this DeleteJobRequest.
 
         作业名称
 
@@ -81,7 +81,7 @@ class DeleteJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this DeleteJobRequest.
+        r"""Sets the job_name of this DeleteJobRequest.
 
         作业名称
 

@@ -29,7 +29,7 @@ class Match:
     }
 
     def __init__(self, key=None, operate=None, value=None):
-        """Match
+        r"""Match
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Match:
 
     @property
     def key(self):
-        """Gets the key of this Match.
+        r"""Gets the key of this Match.
 
         指定按照Metadata中的key进行匹配
 
@@ -66,7 +66,7 @@ class Match:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Match.
+        r"""Sets the key of this Match.
 
         指定按照Metadata中的key进行匹配
 
@@ -77,7 +77,7 @@ class Match:
 
     @property
     def operate(self):
-        """Gets the operate of this Match.
+        r"""Gets the operate of this Match.
 
         指定匹配的方式：EXIST:存在，REGEX:正则，EQUALS:等于
 
@@ -88,7 +88,7 @@ class Match:
 
     @operate.setter
     def operate(self, operate):
-        """Sets the operate of this Match.
+        r"""Sets the operate of this Match.
 
         指定匹配的方式：EXIST:存在，REGEX:正则，EQUALS:等于
 
@@ -99,7 +99,7 @@ class Match:
 
     @property
     def value(self):
-        """Gets the value of this Match.
+        r"""Gets the value of this Match.
 
         要匹配的key对应的value，当operate为存在时，此值为空
 
@@ -110,7 +110,7 @@ class Match:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Match.
+        r"""Sets the value of this Match.
 
         要匹配的key对应的value，当operate为存在时，此值为空
 

@@ -33,7 +33,7 @@ class LtsLogDump:
     }
 
     def __init__(self, log_dump=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None):
-        """LtsLogDump
+        r"""LtsLogDump
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LtsLogDump:
 
     @property
     def log_dump(self):
-        """Gets the log_dump of this LtsLogDump.
+        r"""Gets the log_dump of this LtsLogDump.
 
         是否开启LTS日志转储功能，true表示开启，false表示关闭。
 
@@ -82,7 +82,7 @@ class LtsLogDump:
 
     @log_dump.setter
     def log_dump(self, log_dump):
-        """Sets the log_dump of this LtsLogDump.
+        r"""Sets the log_dump of this LtsLogDump.
 
         是否开启LTS日志转储功能，true表示开启，false表示关闭。
 
@@ -93,7 +93,7 @@ class LtsLogDump:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LtsLogDump.
+        r"""Gets the log_group_id of this LtsLogDump.
 
         日志组ID。
 
@@ -104,7 +104,7 @@ class LtsLogDump:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LtsLogDump.
+        r"""Sets the log_group_id of this LtsLogDump.
 
         日志组ID。
 
@@ -115,7 +115,7 @@ class LtsLogDump:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this LtsLogDump.
+        r"""Gets the log_group_name of this LtsLogDump.
 
         日志组名称。
 
@@ -126,7 +126,7 @@ class LtsLogDump:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this LtsLogDump.
+        r"""Sets the log_group_name of this LtsLogDump.
 
         日志组名称。
 
@@ -137,7 +137,7 @@ class LtsLogDump:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this LtsLogDump.
+        r"""Gets the log_stream_id of this LtsLogDump.
 
         日志流ID。
 
@@ -148,7 +148,7 @@ class LtsLogDump:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LtsLogDump.
+        r"""Sets the log_stream_id of this LtsLogDump.
 
         日志流ID。
 
@@ -159,7 +159,7 @@ class LtsLogDump:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this LtsLogDump.
+        r"""Gets the log_stream_name of this LtsLogDump.
 
         日志流名称。
 
@@ -170,7 +170,7 @@ class LtsLogDump:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this LtsLogDump.
+        r"""Sets the log_stream_name of this LtsLogDump.
 
         日志流名称。
 

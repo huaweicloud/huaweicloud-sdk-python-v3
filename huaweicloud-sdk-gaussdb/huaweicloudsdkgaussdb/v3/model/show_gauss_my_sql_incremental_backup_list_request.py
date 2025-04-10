@@ -35,7 +35,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ShowGaussMySqlIncrementalBackupListRequest
+        r"""ShowGaussMySqlIncrementalBackupListRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Gets the x_language of this ShowGaussMySqlIncrementalBackupListRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -88,7 +88,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Sets the x_language of this ShowGaussMySqlIncrementalBackupListRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -99,7 +99,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Gets the instance_id of this ShowGaussMySqlIncrementalBackupListRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -110,7 +110,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Sets the instance_id of this ShowGaussMySqlIncrementalBackupListRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -121,7 +121,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Gets the offset of this ShowGaussMySqlIncrementalBackupListRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -132,7 +132,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Sets the offset of this ShowGaussMySqlIncrementalBackupListRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -143,7 +143,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Gets the limit of this ShowGaussMySqlIncrementalBackupListRequest.
 
         查询记录数。默认为10，可取范围：10、20、50。
 
@@ -154,7 +154,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Sets the limit of this ShowGaussMySqlIncrementalBackupListRequest.
 
         查询记录数。默认为10，可取范围：10、20、50。
 
@@ -165,7 +165,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Gets the begin_time of this ShowGaussMySqlIncrementalBackupListRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  “begin_time”有值时，“end_time”必选。
 
@@ -176,7 +176,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Sets the begin_time of this ShowGaussMySqlIncrementalBackupListRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  “begin_time”有值时，“end_time”必选。
 
@@ -187,7 +187,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Gets the end_time of this ShowGaussMySqlIncrementalBackupListRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  “end_time”有值时，“begin_time”必选。
 
@@ -198,7 +198,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowGaussMySqlIncrementalBackupListRequest.
+        r"""Sets the end_time of this ShowGaussMySqlIncrementalBackupListRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  “end_time”有值时，“begin_time”必选。
 

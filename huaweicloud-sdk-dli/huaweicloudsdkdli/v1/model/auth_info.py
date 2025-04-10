@@ -45,7 +45,7 @@ class AuthInfo:
     }
 
     def __init__(self, auth_info_name=None, user_name=None, certificate_location=None, datasource_type=None, create_time=None, update_time=None, krb5_conf=None, keytab=None, truststore_location=None, keystore_location=None, owner=None):
-        """AuthInfo
+        r"""AuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AuthInfo:
 
     @property
     def auth_info_name(self):
-        """Gets the auth_info_name of this AuthInfo.
+        r"""Gets the auth_info_name of this AuthInfo.
 
         用户安全集群的登录用户名
 
@@ -124,7 +124,7 @@ class AuthInfo:
 
     @auth_info_name.setter
     def auth_info_name(self, auth_info_name):
-        """Sets the auth_info_name of this AuthInfo.
+        r"""Sets the auth_info_name of this AuthInfo.
 
         用户安全集群的登录用户名
 
@@ -135,7 +135,7 @@ class AuthInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AuthInfo.
+        r"""Gets the user_name of this AuthInfo.
 
         用户安全集群的登录密码
 
@@ -146,7 +146,7 @@ class AuthInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AuthInfo.
+        r"""Sets the user_name of this AuthInfo.
 
         用户安全集群的登录密码
 
@@ -157,7 +157,7 @@ class AuthInfo:
 
     @property
     def certificate_location(self):
-        """Gets the certificate_location of this AuthInfo.
+        r"""Gets the certificate_location of this AuthInfo.
 
         用户安全集群的证书路径，目前只支持OBS路径，cer类型文件
 
@@ -168,7 +168,7 @@ class AuthInfo:
 
     @certificate_location.setter
     def certificate_location(self, certificate_location):
-        """Sets the certificate_location of this AuthInfo.
+        r"""Sets the certificate_location of this AuthInfo.
 
         用户安全集群的证书路径，目前只支持OBS路径，cer类型文件
 
@@ -179,7 +179,7 @@ class AuthInfo:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this AuthInfo.
+        r"""Gets the datasource_type of this AuthInfo.
 
         数据源类型，目前支持CSS,KRB,passwd,Kafka_SSL
 
@@ -190,7 +190,7 @@ class AuthInfo:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this AuthInfo.
+        r"""Sets the datasource_type of this AuthInfo.
 
         数据源类型，目前支持CSS,KRB,passwd,Kafka_SSL
 
@@ -201,7 +201,7 @@ class AuthInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AuthInfo.
+        r"""Gets the create_time of this AuthInfo.
 
         创建时间戳
 
@@ -212,7 +212,7 @@ class AuthInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AuthInfo.
+        r"""Sets the create_time of this AuthInfo.
 
         创建时间戳
 
@@ -223,7 +223,7 @@ class AuthInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AuthInfo.
+        r"""Gets the update_time of this AuthInfo.
 
         更新时间戳
 
@@ -234,7 +234,7 @@ class AuthInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AuthInfo.
+        r"""Sets the update_time of this AuthInfo.
 
         更新时间戳
 
@@ -245,7 +245,7 @@ class AuthInfo:
 
     @property
     def krb5_conf(self):
-        """Gets the krb5_conf of this AuthInfo.
+        r"""Gets the krb5_conf of this AuthInfo.
 
         krb5配置文件obs路径
 
@@ -256,7 +256,7 @@ class AuthInfo:
 
     @krb5_conf.setter
     def krb5_conf(self, krb5_conf):
-        """Sets the krb5_conf of this AuthInfo.
+        r"""Sets the krb5_conf of this AuthInfo.
 
         krb5配置文件obs路径
 
@@ -267,7 +267,7 @@ class AuthInfo:
 
     @property
     def keytab(self):
-        """Gets the keytab of this AuthInfo.
+        r"""Gets the keytab of this AuthInfo.
 
         keytab配置文件obs路径
 
@@ -278,7 +278,7 @@ class AuthInfo:
 
     @keytab.setter
     def keytab(self, keytab):
-        """Sets the keytab of this AuthInfo.
+        r"""Sets the keytab of this AuthInfo.
 
         keytab配置文件obs路径
 
@@ -289,7 +289,7 @@ class AuthInfo:
 
     @property
     def truststore_location(self):
-        """Gets the truststore_location of this AuthInfo.
+        r"""Gets the truststore_location of this AuthInfo.
 
         truststore配置文件obs路径
 
@@ -300,7 +300,7 @@ class AuthInfo:
 
     @truststore_location.setter
     def truststore_location(self, truststore_location):
-        """Sets the truststore_location of this AuthInfo.
+        r"""Sets the truststore_location of this AuthInfo.
 
         truststore配置文件obs路径
 
@@ -311,7 +311,7 @@ class AuthInfo:
 
     @property
     def keystore_location(self):
-        """Gets the keystore_location of this AuthInfo.
+        r"""Gets the keystore_location of this AuthInfo.
 
         keystore配置文件obs路径
 
@@ -322,7 +322,7 @@ class AuthInfo:
 
     @keystore_location.setter
     def keystore_location(self, keystore_location):
-        """Sets the keystore_location of this AuthInfo.
+        r"""Sets the keystore_location of this AuthInfo.
 
         keystore配置文件obs路径
 
@@ -333,7 +333,7 @@ class AuthInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this AuthInfo.
+        r"""Gets the owner of this AuthInfo.
 
         所属用户名
 
@@ -344,7 +344,7 @@ class AuthInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AuthInfo.
+        r"""Sets the owner of this AuthInfo.
 
         所属用户名
 

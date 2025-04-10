@@ -31,7 +31,7 @@ class ShowImageByTagsResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ShowImageByTagsResource
+        r"""ShowImageByTagsResource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowImageByTagsResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowImageByTagsResource.
+        r"""Gets the resource_id of this ShowImageByTagsResource.
 
         镜像ID
 
@@ -71,7 +71,7 @@ class ShowImageByTagsResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowImageByTagsResource.
+        r"""Sets the resource_id of this ShowImageByTagsResource.
 
         镜像ID
 
@@ -82,7 +82,7 @@ class ShowImageByTagsResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ShowImageByTagsResource.
+        r"""Gets the resource_detail of this ShowImageByTagsResource.
 
         :return: The resource_detail of this ShowImageByTagsResource.
         :rtype: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`
@@ -91,7 +91,7 @@ class ShowImageByTagsResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ShowImageByTagsResource.
+        r"""Sets the resource_detail of this ShowImageByTagsResource.
 
         :param resource_detail: The resource_detail of this ShowImageByTagsResource.
         :type resource_detail: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`
@@ -100,7 +100,7 @@ class ShowImageByTagsResource:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowImageByTagsResource.
+        r"""Gets the tags of this ShowImageByTagsResource.
 
         镜像的标签列表
 
@@ -111,7 +111,7 @@ class ShowImageByTagsResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowImageByTagsResource.
+        r"""Sets the tags of this ShowImageByTagsResource.
 
         镜像的标签列表
 
@@ -122,7 +122,7 @@ class ShowImageByTagsResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ShowImageByTagsResource.
+        r"""Gets the resource_name of this ShowImageByTagsResource.
 
         镜像名称
 
@@ -133,7 +133,7 @@ class ShowImageByTagsResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ShowImageByTagsResource.
+        r"""Sets the resource_name of this ShowImageByTagsResource.
 
         镜像名称
 

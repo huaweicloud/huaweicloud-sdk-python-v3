@@ -28,7 +28,7 @@ class ShowPortTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, request_id=None):
-        """ShowPortTagsResponse
+        r"""ShowPortTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPortTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowPortTagsResponse.
+        r"""Gets the tags of this ShowPortTagsResponse.
 
         tag对象列表
 
@@ -62,7 +62,7 @@ class ShowPortTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowPortTagsResponse.
+        r"""Sets the tags of this ShowPortTagsResponse.
 
         tag对象列表
 
@@ -73,7 +73,7 @@ class ShowPortTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPortTagsResponse.
+        r"""Gets the request_id of this ShowPortTagsResponse.
 
         请求ID
 
@@ -84,7 +84,7 @@ class ShowPortTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPortTagsResponse.
+        r"""Sets the request_id of this ShowPortTagsResponse.
 
         请求ID
 

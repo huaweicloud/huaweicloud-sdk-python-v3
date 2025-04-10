@@ -41,7 +41,7 @@ class Datasources:
     }
 
     def __init__(self, datasource_id=None, datasource_name=None, status=None, structure=None, workspace_id=None, data_config=None, specs_config=None, created_at=None, update_at=None):
-        """Datasources
+        r"""Datasources
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Datasources:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this Datasources.
+        r"""Gets the datasource_id of this Datasources.
 
         数据源id。
 
@@ -110,7 +110,7 @@ class Datasources:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this Datasources.
+        r"""Sets the datasource_id of this Datasources.
 
         数据源id。
 
@@ -121,7 +121,7 @@ class Datasources:
 
     @property
     def datasource_name(self):
-        """Gets the datasource_name of this Datasources.
+        r"""Gets the datasource_name of this Datasources.
 
         名称。
 
@@ -132,7 +132,7 @@ class Datasources:
 
     @datasource_name.setter
     def datasource_name(self, datasource_name):
-        """Sets the datasource_name of this Datasources.
+        r"""Sets the datasource_name of this Datasources.
 
         名称。
 
@@ -143,7 +143,7 @@ class Datasources:
 
     @property
     def status(self):
-        """Gets the status of this Datasources.
+        r"""Gets the status of this Datasources.
 
         状态。
 
@@ -154,7 +154,7 @@ class Datasources:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Datasources.
+        r"""Sets the status of this Datasources.
 
         状态。
 
@@ -165,7 +165,7 @@ class Datasources:
 
     @property
     def structure(self):
-        """Gets the structure of this Datasources.
+        r"""Gets the structure of this Datasources.
 
         结构。
 
@@ -176,7 +176,7 @@ class Datasources:
 
     @structure.setter
     def structure(self, structure):
-        """Sets the structure of this Datasources.
+        r"""Sets the structure of this Datasources.
 
         结构。
 
@@ -187,7 +187,7 @@ class Datasources:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this Datasources.
+        r"""Gets the workspace_id of this Datasources.
 
         工作空间编号。
 
@@ -198,7 +198,7 @@ class Datasources:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this Datasources.
+        r"""Sets the workspace_id of this Datasources.
 
         工作空间编号。
 
@@ -209,7 +209,7 @@ class Datasources:
 
     @property
     def data_config(self):
-        """Gets the data_config of this Datasources.
+        r"""Gets the data_config of this Datasources.
 
         :return: The data_config of this Datasources.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -218,7 +218,7 @@ class Datasources:
 
     @data_config.setter
     def data_config(self, data_config):
-        """Sets the data_config of this Datasources.
+        r"""Sets the data_config of this Datasources.
 
         :param data_config: The data_config of this Datasources.
         :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -227,7 +227,7 @@ class Datasources:
 
     @property
     def specs_config(self):
-        """Gets the specs_config of this Datasources.
+        r"""Gets the specs_config of this Datasources.
 
         :return: The specs_config of this Datasources.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -236,7 +236,7 @@ class Datasources:
 
     @specs_config.setter
     def specs_config(self, specs_config):
-        """Sets the specs_config of this Datasources.
+        r"""Sets the specs_config of this Datasources.
 
         :param specs_config: The specs_config of this Datasources.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -245,7 +245,7 @@ class Datasources:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Datasources.
+        r"""Gets the created_at of this Datasources.
 
         创建时间。
 
@@ -256,7 +256,7 @@ class Datasources:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Datasources.
+        r"""Sets the created_at of this Datasources.
 
         创建时间。
 
@@ -267,7 +267,7 @@ class Datasources:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Datasources.
+        r"""Gets the update_at of this Datasources.
 
         更新时间。
 
@@ -278,7 +278,7 @@ class Datasources:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Datasources.
+        r"""Sets the update_at of this Datasources.
 
         更新时间。
 

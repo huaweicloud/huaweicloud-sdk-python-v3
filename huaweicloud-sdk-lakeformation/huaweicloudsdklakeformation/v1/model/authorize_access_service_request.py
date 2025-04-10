@@ -25,7 +25,7 @@ class AuthorizeAccessServiceRequest:
     }
 
     def __init__(self, body=None):
-        """AuthorizeAccessServiceRequest
+        r"""AuthorizeAccessServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AuthorizeAccessServiceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AuthorizeAccessServiceRequest.
+        r"""Gets the body of this AuthorizeAccessServiceRequest.
 
         :return: The body of this AuthorizeAccessServiceRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.GrantAccessServiceRequestBody`
@@ -52,7 +52,7 @@ class AuthorizeAccessServiceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AuthorizeAccessServiceRequest.
+        r"""Sets the body of this AuthorizeAccessServiceRequest.
 
         :param body: The body of this AuthorizeAccessServiceRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.GrantAccessServiceRequestBody`

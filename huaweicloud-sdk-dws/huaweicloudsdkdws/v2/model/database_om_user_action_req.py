@@ -25,7 +25,7 @@ class DatabaseOmUserActionReq:
     }
 
     def __init__(self, operation=None):
-        """DatabaseOmUserActionReq
+        r"""DatabaseOmUserActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DatabaseOmUserActionReq:
 
     @property
     def operation(self):
-        """Gets the operation of this DatabaseOmUserActionReq.
+        r"""Gets the operation of this DatabaseOmUserActionReq.
 
         操作类型，取值如下：  - addOmUser：添加运维用户 - deleteOmUser：删除运维用户 - increaseOmUserPeriod ：延长用户有效期
 
@@ -53,7 +53,7 @@ class DatabaseOmUserActionReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this DatabaseOmUserActionReq.
+        r"""Sets the operation of this DatabaseOmUserActionReq.
 
         操作类型，取值如下：  - addOmUser：添加运维用户 - deleteOmUser：删除运维用户 - increaseOmUserPeriod ：延长用户有效期
 

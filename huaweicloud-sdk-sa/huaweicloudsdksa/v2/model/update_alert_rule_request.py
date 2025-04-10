@@ -31,7 +31,7 @@ class UpdateAlertRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, rule_id=None, body=None):
-        """UpdateAlertRuleRequest
+        r"""UpdateAlertRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateAlertRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAlertRuleRequest.
+        r"""Gets the project_id of this UpdateAlertRuleRequest.
 
         project_id
 
@@ -72,7 +72,7 @@ class UpdateAlertRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAlertRuleRequest.
+        r"""Sets the project_id of this UpdateAlertRuleRequest.
 
         project_id
 
@@ -83,7 +83,7 @@ class UpdateAlertRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateAlertRuleRequest.
+        r"""Gets the workspace_id of this UpdateAlertRuleRequest.
 
         workspace_id
 
@@ -94,7 +94,7 @@ class UpdateAlertRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateAlertRuleRequest.
+        r"""Sets the workspace_id of this UpdateAlertRuleRequest.
 
         workspace_id
 
@@ -105,7 +105,7 @@ class UpdateAlertRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateAlertRuleRequest.
+        r"""Gets the rule_id of this UpdateAlertRuleRequest.
 
         rule_id
 
@@ -116,7 +116,7 @@ class UpdateAlertRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateAlertRuleRequest.
+        r"""Sets the rule_id of this UpdateAlertRuleRequest.
 
         rule_id
 
@@ -127,7 +127,7 @@ class UpdateAlertRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlertRuleRequest.
+        r"""Gets the body of this UpdateAlertRuleRequest.
 
         :return: The body of this UpdateAlertRuleRequest.
         :rtype: :class:`huaweicloudsdksa.v2.UpdateAlertRuleRequestBody`
@@ -136,7 +136,7 @@ class UpdateAlertRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlertRuleRequest.
+        r"""Sets the body of this UpdateAlertRuleRequest.
 
         :param body: The body of this UpdateAlertRuleRequest.
         :type body: :class:`huaweicloudsdksa.v2.UpdateAlertRuleRequestBody`

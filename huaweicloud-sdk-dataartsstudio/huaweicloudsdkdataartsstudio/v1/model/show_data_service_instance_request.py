@@ -29,7 +29,7 @@ class ShowDataServiceInstanceRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, instance_id=None):
-        """ShowDataServiceInstanceRequest
+        r"""ShowDataServiceInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDataServiceInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowDataServiceInstanceRequest.
+        r"""Gets the workspace of this ShowDataServiceInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowDataServiceInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowDataServiceInstanceRequest.
+        r"""Sets the workspace of this ShowDataServiceInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowDataServiceInstanceRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowDataServiceInstanceRequest.
+        r"""Gets the dlm_type of this ShowDataServiceInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -88,7 +88,7 @@ class ShowDataServiceInstanceRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowDataServiceInstanceRequest.
+        r"""Sets the dlm_type of this ShowDataServiceInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -99,7 +99,7 @@ class ShowDataServiceInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDataServiceInstanceRequest.
+        r"""Gets the instance_id of this ShowDataServiceInstanceRequest.
 
         集群ID。
 
@@ -110,7 +110,7 @@ class ShowDataServiceInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDataServiceInstanceRequest.
+        r"""Sets the instance_id of this ShowDataServiceInstanceRequest.
 
         集群ID。
 

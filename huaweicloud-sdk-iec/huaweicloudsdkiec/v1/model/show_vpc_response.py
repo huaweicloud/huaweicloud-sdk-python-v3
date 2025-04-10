@@ -26,7 +26,7 @@ class ShowVpcResponse(SdkResponse):
     }
 
     def __init__(self, vpc=None):
-        """ShowVpcResponse
+        r"""ShowVpcResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVpcResponse(SdkResponse):
 
     @property
     def vpc(self):
-        """Gets the vpc of this ShowVpcResponse.
+        r"""Gets the vpc of this ShowVpcResponse.
 
         :return: The vpc of this ShowVpcResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Vpc`
@@ -53,7 +53,7 @@ class ShowVpcResponse(SdkResponse):
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this ShowVpcResponse.
+        r"""Sets the vpc of this ShowVpcResponse.
 
         :param vpc: The vpc of this ShowVpcResponse.
         :type vpc: :class:`huaweicloudsdkiec.v1.Vpc`

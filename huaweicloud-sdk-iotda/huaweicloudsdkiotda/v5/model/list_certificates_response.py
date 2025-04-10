@@ -28,7 +28,7 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, certificates=None, page=None):
-        """ListCertificatesResponse
+        r"""ListCertificatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def certificates(self):
-        """Gets the certificates of this ListCertificatesResponse.
+        r"""Gets the certificates of this ListCertificatesResponse.
 
         证书列表。
 
@@ -62,7 +62,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @certificates.setter
     def certificates(self, certificates):
-        """Sets the certificates of this ListCertificatesResponse.
+        r"""Sets the certificates of this ListCertificatesResponse.
 
         证书列表。
 
@@ -73,7 +73,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListCertificatesResponse.
+        r"""Gets the page of this ListCertificatesResponse.
 
         :return: The page of this ListCertificatesResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListCertificatesResponse.
+        r"""Sets the page of this ListCertificatesResponse.
 
         :param page: The page of this ListCertificatesResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

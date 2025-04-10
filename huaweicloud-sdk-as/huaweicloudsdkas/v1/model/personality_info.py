@@ -27,7 +27,7 @@ class PersonalityInfo:
     }
 
     def __init__(self, path=None, content=None):
-        """PersonalityInfo
+        r"""PersonalityInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PersonalityInfo:
 
     @property
     def path(self):
-        """Gets the path of this PersonalityInfo.
+        r"""Gets the path of this PersonalityInfo.
 
         注入文件路径信息。Linux系统请输入注入文件保存路径，例如 “/etc/foo.txt”。Windows系统注入文件自动保存在C盘根目录，只需要输入保存文件名，例如 “foo”，文件名只能包含字母（a~zA~Z）和数字（0~9）。
 
@@ -59,7 +59,7 @@ class PersonalityInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PersonalityInfo.
+        r"""Sets the path of this PersonalityInfo.
 
         注入文件路径信息。Linux系统请输入注入文件保存路径，例如 “/etc/foo.txt”。Windows系统注入文件自动保存在C盘根目录，只需要输入保存文件名，例如 “foo”，文件名只能包含字母（a~zA~Z）和数字（0~9）。
 
@@ -70,7 +70,7 @@ class PersonalityInfo:
 
     @property
     def content(self):
-        """Gets the content of this PersonalityInfo.
+        r"""Gets the content of this PersonalityInfo.
 
         注入文件内容。该值应指定为注入文件的内容进行base64格式编码后的信息。
 
@@ -81,7 +81,7 @@ class PersonalityInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PersonalityInfo.
+        r"""Sets the content of this PersonalityInfo.
 
         注入文件内容。该值应指定为注入文件的内容进行base64格式编码后的信息。
 

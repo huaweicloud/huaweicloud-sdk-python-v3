@@ -32,7 +32,7 @@ class AddEipV2Response(SdkResponse):
     }
 
     def __init__(self, eip_id=None, eip_address=None, eip_status=None, eip_ipv6_address=None):
-        """AddEipV2Response
+        r"""AddEipV2Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class AddEipV2Response(SdkResponse):
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this AddEipV2Response.
+        r"""Gets the eip_id of this AddEipV2Response.
 
         弹性公网IP编号
 
@@ -76,7 +76,7 @@ class AddEipV2Response(SdkResponse):
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this AddEipV2Response.
+        r"""Sets the eip_id of this AddEipV2Response.
 
         弹性公网IP编号
 
@@ -87,7 +87,7 @@ class AddEipV2Response(SdkResponse):
 
     @property
     def eip_address(self):
-        """Gets the eip_address of this AddEipV2Response.
+        r"""Gets the eip_address of this AddEipV2Response.
 
         弹性公网IP
 
@@ -98,7 +98,7 @@ class AddEipV2Response(SdkResponse):
 
     @eip_address.setter
     def eip_address(self, eip_address):
-        """Sets the eip_address of this AddEipV2Response.
+        r"""Sets the eip_address of this AddEipV2Response.
 
         弹性公网IP
 
@@ -109,7 +109,7 @@ class AddEipV2Response(SdkResponse):
 
     @property
     def eip_status(self):
-        """Gets the eip_status of this AddEipV2Response.
+        r"""Gets the eip_status of this AddEipV2Response.
 
         弹性公网IP状态
 
@@ -120,7 +120,7 @@ class AddEipV2Response(SdkResponse):
 
     @eip_status.setter
     def eip_status(self, eip_status):
-        """Sets the eip_status of this AddEipV2Response.
+        r"""Sets the eip_status of this AddEipV2Response.
 
         弹性公网IP状态
 
@@ -131,7 +131,7 @@ class AddEipV2Response(SdkResponse):
 
     @property
     def eip_ipv6_address(self):
-        """Gets the eip_ipv6_address of this AddEipV2Response.
+        r"""Gets the eip_ipv6_address of this AddEipV2Response.
 
         弹性公网IP(IPV6)
 
@@ -142,7 +142,7 @@ class AddEipV2Response(SdkResponse):
 
     @eip_ipv6_address.setter
     def eip_ipv6_address(self, eip_ipv6_address):
-        """Sets the eip_ipv6_address of this AddEipV2Response.
+        r"""Sets the eip_ipv6_address of this AddEipV2Response.
 
         弹性公网IP(IPV6)
 

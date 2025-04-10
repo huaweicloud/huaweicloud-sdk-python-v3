@@ -27,7 +27,7 @@ class CreateStreamingJobRequest:
     }
 
     def __init__(self, check=None, body=None):
-        """CreateStreamingJobRequest
+        r"""CreateStreamingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateStreamingJobRequest:
 
     @property
     def check(self):
-        """Gets the check of this CreateStreamingJobRequest.
+        r"""Gets the check of this CreateStreamingJobRequest.
 
         是否需要校验配置是否正确
 
@@ -61,7 +61,7 @@ class CreateStreamingJobRequest:
 
     @check.setter
     def check(self, check):
-        """Sets the check of this CreateStreamingJobRequest.
+        r"""Sets the check of this CreateStreamingJobRequest.
 
         是否需要校验配置是否正确
 
@@ -72,7 +72,7 @@ class CreateStreamingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStreamingJobRequest.
+        r"""Gets the body of this CreateStreamingJobRequest.
 
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 
@@ -83,7 +83,7 @@ class CreateStreamingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStreamingJobRequest.
+        r"""Sets the body of this CreateStreamingJobRequest.
 
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 

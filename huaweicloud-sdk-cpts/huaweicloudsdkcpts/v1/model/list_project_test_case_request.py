@@ -25,7 +25,7 @@ class ListProjectTestCaseRequest:
     }
 
     def __init__(self, test_suite_id=None):
-        """ListProjectTestCaseRequest
+        r"""ListProjectTestCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProjectTestCaseRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this ListProjectTestCaseRequest.
+        r"""Gets the test_suite_id of this ListProjectTestCaseRequest.
 
         测试工程id
 
@@ -53,7 +53,7 @@ class ListProjectTestCaseRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this ListProjectTestCaseRequest.
+        r"""Sets the test_suite_id of this ListProjectTestCaseRequest.
 
         测试工程id
 

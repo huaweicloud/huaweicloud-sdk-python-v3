@@ -57,7 +57,7 @@ class StarRocksCreateRequest:
     }
 
     def __init__(self, name=None, engine=None, ha=None, fe_flavor_id=None, be_flavor_id=None, db_root_pwd=None, fe_count=None, be_count=None, az_mode=None, fe_volume=None, be_volume=None, az_code=None, time_zone=None, tags_info=None, security_group_id=None, pay_info=None, region_code=None):
-        """StarRocksCreateRequest
+        r"""StarRocksCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class StarRocksCreateRequest:
 
     @property
     def name(self):
-        """Gets the name of this StarRocksCreateRequest.
+        r"""Gets the name of this StarRocksCreateRequest.
 
         实例名称。同一租户下，同类型的实例名可重名。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节，必须以字母开头，区分大小写，可以包含字母、数字、中划线、下划线，不能包含其他特殊字符。不支持中文名。
 
@@ -153,7 +153,7 @@ class StarRocksCreateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StarRocksCreateRequest.
+        r"""Sets the name of this StarRocksCreateRequest.
 
         实例名称。同一租户下，同类型的实例名可重名。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节，必须以字母开头，区分大小写，可以包含字母、数字、中划线、下划线，不能包含其他特殊字符。不支持中文名。
 
@@ -164,7 +164,7 @@ class StarRocksCreateRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this StarRocksCreateRequest.
+        r"""Gets the engine of this StarRocksCreateRequest.
 
         :return: The engine of this StarRocksCreateRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestEngine`
@@ -173,7 +173,7 @@ class StarRocksCreateRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this StarRocksCreateRequest.
+        r"""Sets the engine of this StarRocksCreateRequest.
 
         :param engine: The engine of this StarRocksCreateRequest.
         :type engine: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestEngine`
@@ -182,7 +182,7 @@ class StarRocksCreateRequest:
 
     @property
     def ha(self):
-        """Gets the ha of this StarRocksCreateRequest.
+        r"""Gets the ha of this StarRocksCreateRequest.
 
         :return: The ha of this StarRocksCreateRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestHa`
@@ -191,7 +191,7 @@ class StarRocksCreateRequest:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this StarRocksCreateRequest.
+        r"""Sets the ha of this StarRocksCreateRequest.
 
         :param ha: The ha of this StarRocksCreateRequest.
         :type ha: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestHa`
@@ -200,7 +200,7 @@ class StarRocksCreateRequest:
 
     @property
     def fe_flavor_id(self):
-        """Gets the fe_flavor_id of this StarRocksCreateRequest.
+        r"""Gets the fe_flavor_id of this StarRocksCreateRequest.
 
         FE节点规格ID。使用可通过查询HTAP规格响应消息中的“id”。
 
@@ -211,7 +211,7 @@ class StarRocksCreateRequest:
 
     @fe_flavor_id.setter
     def fe_flavor_id(self, fe_flavor_id):
-        """Sets the fe_flavor_id of this StarRocksCreateRequest.
+        r"""Sets the fe_flavor_id of this StarRocksCreateRequest.
 
         FE节点规格ID。使用可通过查询HTAP规格响应消息中的“id”。
 
@@ -222,7 +222,7 @@ class StarRocksCreateRequest:
 
     @property
     def be_flavor_id(self):
-        """Gets the be_flavor_id of this StarRocksCreateRequest.
+        r"""Gets the be_flavor_id of this StarRocksCreateRequest.
 
         BE节点规格ID。使用可通过查询HTAP规格响应消息中的“id”。
 
@@ -233,7 +233,7 @@ class StarRocksCreateRequest:
 
     @be_flavor_id.setter
     def be_flavor_id(self, be_flavor_id):
-        """Sets the be_flavor_id of this StarRocksCreateRequest.
+        r"""Sets the be_flavor_id of this StarRocksCreateRequest.
 
         BE节点规格ID。使用可通过查询HTAP规格响应消息中的“id”。
 
@@ -244,7 +244,7 @@ class StarRocksCreateRequest:
 
     @property
     def db_root_pwd(self):
-        """Gets the db_root_pwd of this StarRocksCreateRequest.
+        r"""Gets the db_root_pwd of this StarRocksCreateRequest.
 
         数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&|.，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
@@ -255,7 +255,7 @@ class StarRocksCreateRequest:
 
     @db_root_pwd.setter
     def db_root_pwd(self, db_root_pwd):
-        """Sets the db_root_pwd of this StarRocksCreateRequest.
+        r"""Sets the db_root_pwd of this StarRocksCreateRequest.
 
         数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&|.，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
@@ -266,7 +266,7 @@ class StarRocksCreateRequest:
 
     @property
     def fe_count(self):
-        """Gets the fe_count of this StarRocksCreateRequest.
+        r"""Gets the fe_count of this StarRocksCreateRequest.
 
         FE节点数。 - 单机时固定为1 - 集群时取值[3, 10]
 
@@ -277,7 +277,7 @@ class StarRocksCreateRequest:
 
     @fe_count.setter
     def fe_count(self, fe_count):
-        """Sets the fe_count of this StarRocksCreateRequest.
+        r"""Sets the fe_count of this StarRocksCreateRequest.
 
         FE节点数。 - 单机时固定为1 - 集群时取值[3, 10]
 
@@ -288,7 +288,7 @@ class StarRocksCreateRequest:
 
     @property
     def be_count(self):
-        """Gets the be_count of this StarRocksCreateRequest.
+        r"""Gets the be_count of this StarRocksCreateRequest.
 
         BE节点数。 - 单机时固定为1 - 集群时取值[3, 10]
 
@@ -299,7 +299,7 @@ class StarRocksCreateRequest:
 
     @be_count.setter
     def be_count(self, be_count):
-        """Sets the be_count of this StarRocksCreateRequest.
+        r"""Sets the be_count of this StarRocksCreateRequest.
 
         BE节点数。 - 单机时固定为1 - 集群时取值[3, 10]
 
@@ -310,7 +310,7 @@ class StarRocksCreateRequest:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this StarRocksCreateRequest.
+        r"""Gets the az_mode of this StarRocksCreateRequest.
 
         可用区类型。 当前仅支持single。
 
@@ -321,7 +321,7 @@ class StarRocksCreateRequest:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this StarRocksCreateRequest.
+        r"""Sets the az_mode of this StarRocksCreateRequest.
 
         可用区类型。 当前仅支持single。
 
@@ -332,7 +332,7 @@ class StarRocksCreateRequest:
 
     @property
     def fe_volume(self):
-        """Gets the fe_volume of this StarRocksCreateRequest.
+        r"""Gets the fe_volume of this StarRocksCreateRequest.
 
         :return: The fe_volume of this StarRocksCreateRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestFeVolume`
@@ -341,7 +341,7 @@ class StarRocksCreateRequest:
 
     @fe_volume.setter
     def fe_volume(self, fe_volume):
-        """Sets the fe_volume of this StarRocksCreateRequest.
+        r"""Sets the fe_volume of this StarRocksCreateRequest.
 
         :param fe_volume: The fe_volume of this StarRocksCreateRequest.
         :type fe_volume: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestFeVolume`
@@ -350,7 +350,7 @@ class StarRocksCreateRequest:
 
     @property
     def be_volume(self):
-        """Gets the be_volume of this StarRocksCreateRequest.
+        r"""Gets the be_volume of this StarRocksCreateRequest.
 
         :return: The be_volume of this StarRocksCreateRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestBeVolume`
@@ -359,7 +359,7 @@ class StarRocksCreateRequest:
 
     @be_volume.setter
     def be_volume(self, be_volume):
-        """Sets the be_volume of this StarRocksCreateRequest.
+        r"""Sets the be_volume of this StarRocksCreateRequest.
 
         :param be_volume: The be_volume of this StarRocksCreateRequest.
         :type be_volume: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestBeVolume`
@@ -368,7 +368,7 @@ class StarRocksCreateRequest:
 
     @property
     def az_code(self):
-        """Gets the az_code of this StarRocksCreateRequest.
+        r"""Gets the az_code of this StarRocksCreateRequest.
 
         可用区代码。
 
@@ -379,7 +379,7 @@ class StarRocksCreateRequest:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this StarRocksCreateRequest.
+        r"""Sets the az_code of this StarRocksCreateRequest.
 
         可用区代码。
 
@@ -390,7 +390,7 @@ class StarRocksCreateRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this StarRocksCreateRequest.
+        r"""Gets the time_zone of this StarRocksCreateRequest.
 
         时区。默认时区为UTC+08:00。
 
@@ -401,7 +401,7 @@ class StarRocksCreateRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this StarRocksCreateRequest.
+        r"""Sets the time_zone of this StarRocksCreateRequest.
 
         时区。默认时区为UTC+08:00。
 
@@ -412,7 +412,7 @@ class StarRocksCreateRequest:
 
     @property
     def tags_info(self):
-        """Gets the tags_info of this StarRocksCreateRequest.
+        r"""Gets the tags_info of this StarRocksCreateRequest.
 
         :return: The tags_info of this StarRocksCreateRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestTagsInfo`
@@ -421,7 +421,7 @@ class StarRocksCreateRequest:
 
     @tags_info.setter
     def tags_info(self, tags_info):
-        """Sets the tags_info of this StarRocksCreateRequest.
+        r"""Sets the tags_info of this StarRocksCreateRequest.
 
         :param tags_info: The tags_info of this StarRocksCreateRequest.
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestTagsInfo`
@@ -430,7 +430,7 @@ class StarRocksCreateRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this StarRocksCreateRequest.
+        r"""Gets the security_group_id of this StarRocksCreateRequest.
 
         实例安全组ID。默认与Taurus安全组ID一致。
 
@@ -441,7 +441,7 @@ class StarRocksCreateRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this StarRocksCreateRequest.
+        r"""Sets the security_group_id of this StarRocksCreateRequest.
 
         实例安全组ID。默认与Taurus安全组ID一致。
 
@@ -452,7 +452,7 @@ class StarRocksCreateRequest:
 
     @property
     def pay_info(self):
-        """Gets the pay_info of this StarRocksCreateRequest.
+        r"""Gets the pay_info of this StarRocksCreateRequest.
 
         :return: The pay_info of this StarRocksCreateRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestPayInfo`
@@ -461,7 +461,7 @@ class StarRocksCreateRequest:
 
     @pay_info.setter
     def pay_info(self, pay_info):
-        """Sets the pay_info of this StarRocksCreateRequest.
+        r"""Sets the pay_info of this StarRocksCreateRequest.
 
         :param pay_info: The pay_info of this StarRocksCreateRequest.
         :type pay_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksCreateRequestPayInfo`
@@ -470,7 +470,7 @@ class StarRocksCreateRequest:
 
     @property
     def region_code(self):
-        """Gets the region_code of this StarRocksCreateRequest.
+        r"""Gets the region_code of this StarRocksCreateRequest.
 
         可用区。包周期场景必填。
 
@@ -481,7 +481,7 @@ class StarRocksCreateRequest:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this StarRocksCreateRequest.
+        r"""Sets the region_code of this StarRocksCreateRequest.
 
         可用区。包周期场景必填。
 

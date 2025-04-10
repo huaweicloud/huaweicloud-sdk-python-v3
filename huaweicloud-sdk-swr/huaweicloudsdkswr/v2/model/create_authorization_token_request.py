@@ -23,7 +23,7 @@ class CreateAuthorizationTokenRequest:
     }
 
     def __init__(self):
-        """CreateAuthorizationTokenRequest
+        r"""CreateAuthorizationTokenRequest
 
         The model defined in huaweicloud sdk
 

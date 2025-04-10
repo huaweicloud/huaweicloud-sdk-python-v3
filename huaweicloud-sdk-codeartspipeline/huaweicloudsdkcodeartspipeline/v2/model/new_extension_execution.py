@@ -29,7 +29,7 @@ class NewExtensionExecution:
     }
 
     def __init__(self, target=None, type=None, sha256=None):
-        """NewExtensionExecution
+        r"""NewExtensionExecution
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NewExtensionExecution:
 
     @property
     def target(self):
-        """Gets the target of this NewExtensionExecution.
+        r"""Gets the target of this NewExtensionExecution.
 
         入口
 
@@ -68,7 +68,7 @@ class NewExtensionExecution:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this NewExtensionExecution.
+        r"""Sets the target of this NewExtensionExecution.
 
         入口
 
@@ -79,7 +79,7 @@ class NewExtensionExecution:
 
     @property
     def type(self):
-        """Gets the type of this NewExtensionExecution.
+        r"""Gets the type of this NewExtensionExecution.
 
         类型
 
@@ -90,7 +90,7 @@ class NewExtensionExecution:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NewExtensionExecution.
+        r"""Sets the type of this NewExtensionExecution.
 
         类型
 
@@ -101,7 +101,7 @@ class NewExtensionExecution:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this NewExtensionExecution.
+        r"""Gets the sha256 of this NewExtensionExecution.
 
         sha256
 
@@ -112,7 +112,7 @@ class NewExtensionExecution:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this NewExtensionExecution.
+        r"""Sets the sha256 of this NewExtensionExecution.
 
         sha256
 

@@ -27,7 +27,7 @@ class ResourcePackageDescription:
     }
 
     def __init__(self, zh_cn=None, en_us=None):
-        """ResourcePackageDescription
+        r"""ResourcePackageDescription
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourcePackageDescription:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this ResourcePackageDescription.
+        r"""Gets the zh_cn of this ResourcePackageDescription.
 
         中文描述。
 
@@ -61,7 +61,7 @@ class ResourcePackageDescription:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this ResourcePackageDescription.
+        r"""Sets the zh_cn of this ResourcePackageDescription.
 
         中文描述。
 
@@ -72,7 +72,7 @@ class ResourcePackageDescription:
 
     @property
     def en_us(self):
-        """Gets the en_us of this ResourcePackageDescription.
+        r"""Gets the en_us of this ResourcePackageDescription.
 
         英文描述。
 
@@ -83,7 +83,7 @@ class ResourcePackageDescription:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this ResourcePackageDescription.
+        r"""Sets the en_us of this ResourcePackageDescription.
 
         英文描述。
 

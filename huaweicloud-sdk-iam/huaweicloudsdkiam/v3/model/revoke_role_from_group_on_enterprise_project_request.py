@@ -29,7 +29,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, group_id=None, role_id=None):
-        """RevokeRoleFromGroupOnEnterpriseProjectRequest
+        r"""RevokeRoleFromGroupOnEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
 
         企业项目ID。
 
@@ -65,7 +65,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
 
         企业项目ID。
 
@@ -76,7 +76,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
+        r"""Gets the group_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
 
         用户组ID。
 
@@ -87,7 +87,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
+        r"""Sets the group_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
 
         用户组ID。
 
@@ -98,7 +98,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
+        r"""Gets the role_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
 
         权限ID。
 
@@ -109,7 +109,7 @@ class RevokeRoleFromGroupOnEnterpriseProjectRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
+        r"""Sets the role_id of this RevokeRoleFromGroupOnEnterpriseProjectRequest.
 
         权限ID。
 

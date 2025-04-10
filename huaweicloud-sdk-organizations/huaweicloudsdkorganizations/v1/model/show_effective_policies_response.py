@@ -32,7 +32,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
     }
 
     def __init__(self, last_updated_at=None, policy_content=None, policy_type=None, entity_id=None):
-        """ShowEffectivePoliciesResponse
+        r"""ShowEffectivePoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @property
     def last_updated_at(self):
-        """Gets the last_updated_at of this ShowEffectivePoliciesResponse.
+        r"""Gets the last_updated_at of this ShowEffectivePoliciesResponse.
 
         有效策略最后更新时间。
 
@@ -76,7 +76,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @last_updated_at.setter
     def last_updated_at(self, last_updated_at):
-        """Sets the last_updated_at of this ShowEffectivePoliciesResponse.
+        r"""Sets the last_updated_at of this ShowEffectivePoliciesResponse.
 
         有效策略最后更新时间。
 
@@ -87,7 +87,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @property
     def policy_content(self):
-        """Gets the policy_content of this ShowEffectivePoliciesResponse.
+        r"""Gets the policy_content of this ShowEffectivePoliciesResponse.
 
         有效策略文本内容。
 
@@ -98,7 +98,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @policy_content.setter
     def policy_content(self, policy_content):
-        """Sets the policy_content of this ShowEffectivePoliciesResponse.
+        r"""Sets the policy_content of this ShowEffectivePoliciesResponse.
 
         有效策略文本内容。
 
@@ -109,7 +109,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ShowEffectivePoliciesResponse.
+        r"""Gets the policy_type of this ShowEffectivePoliciesResponse.
 
         策略类型的名称。tag_policy标签策略。
 
@@ -120,7 +120,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ShowEffectivePoliciesResponse.
+        r"""Sets the policy_type of this ShowEffectivePoliciesResponse.
 
         策略类型的名称。tag_policy标签策略。
 
@@ -131,7 +131,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this ShowEffectivePoliciesResponse.
+        r"""Gets the entity_id of this ShowEffectivePoliciesResponse.
 
         根、组织单元或账号的唯一标识符（ID）。
 
@@ -142,7 +142,7 @@ class ShowEffectivePoliciesResponse(SdkResponse):
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this ShowEffectivePoliciesResponse.
+        r"""Sets the entity_id of this ShowEffectivePoliciesResponse.
 
         根、组织单元或账号的唯一标识符（ID）。
 

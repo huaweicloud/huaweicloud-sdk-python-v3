@@ -25,7 +25,7 @@ class AuditionFile:
     }
 
     def __init__(self, download_url=None):
-        """AuditionFile
+        r"""AuditionFile
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AuditionFile:
 
     @property
     def download_url(self):
-        """Gets the download_url of this AuditionFile.
+        r"""Gets the download_url of this AuditionFile.
 
         试听文件下载链接，有效期为1个小时。
 
@@ -53,7 +53,7 @@ class AuditionFile:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this AuditionFile.
+        r"""Sets the download_url of this AuditionFile.
 
         试听文件下载链接，有效期为1个小时。
 

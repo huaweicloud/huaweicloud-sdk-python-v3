@@ -25,7 +25,7 @@ class PasswordRequest:
     }
 
     def __init__(self, pwd=None):
-        """PasswordRequest
+        r"""PasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PasswordRequest:
 
     @property
     def pwd(self):
-        """Gets the pwd of this PasswordRequest.
+        r"""Gets the pwd of this PasswordRequest.
 
         https密码
 
@@ -53,7 +53,7 @@ class PasswordRequest:
 
     @pwd.setter
     def pwd(self, pwd):
-        """Sets the pwd of this PasswordRequest.
+        r"""Sets the pwd of this PasswordRequest.
 
         https密码
 

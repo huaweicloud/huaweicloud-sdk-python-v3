@@ -27,7 +27,7 @@ class FunctionGraphForwarding:
     }
 
     def __init__(self, func_urn=None, func_name=None):
-        """FunctionGraphForwarding
+        r"""FunctionGraphForwarding
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FunctionGraphForwarding:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this FunctionGraphForwarding.
+        r"""Gets the func_urn of this FunctionGraphForwarding.
 
         **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -59,7 +59,7 @@ class FunctionGraphForwarding:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this FunctionGraphForwarding.
+        r"""Sets the func_urn of this FunctionGraphForwarding.
 
         **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -70,7 +70,7 @@ class FunctionGraphForwarding:
 
     @property
     def func_name(self):
-        """Gets the func_name of this FunctionGraphForwarding.
+        r"""Gets the func_name of this FunctionGraphForwarding.
 
         **参数说明**：函数名称。
 
@@ -81,7 +81,7 @@ class FunctionGraphForwarding:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this FunctionGraphForwarding.
+        r"""Sets the func_name of this FunctionGraphForwarding.
 
         **参数说明**：函数名称。
 

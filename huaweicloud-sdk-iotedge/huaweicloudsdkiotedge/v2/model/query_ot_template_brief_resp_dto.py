@@ -33,7 +33,7 @@ class QueryOtTemplateBriefRespDTO:
     }
 
     def __init__(self, tpl_id=None, name=None, description=None, create_time=None, update_time=None):
-        """QueryOtTemplateBriefRespDTO
+        r"""QueryOtTemplateBriefRespDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this QueryOtTemplateBriefRespDTO.
+        r"""Gets the tpl_id of this QueryOtTemplateBriefRespDTO.
 
         模板id
 
@@ -82,7 +82,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this QueryOtTemplateBriefRespDTO.
+        r"""Sets the tpl_id of this QueryOtTemplateBriefRespDTO.
 
         模板id
 
@@ -93,7 +93,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryOtTemplateBriefRespDTO.
+        r"""Gets the name of this QueryOtTemplateBriefRespDTO.
 
         模板名称
 
@@ -104,7 +104,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryOtTemplateBriefRespDTO.
+        r"""Sets the name of this QueryOtTemplateBriefRespDTO.
 
         模板名称
 
@@ -115,7 +115,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryOtTemplateBriefRespDTO.
+        r"""Gets the description of this QueryOtTemplateBriefRespDTO.
 
         描述
 
@@ -126,7 +126,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryOtTemplateBriefRespDTO.
+        r"""Sets the description of this QueryOtTemplateBriefRespDTO.
 
         描述
 
@@ -137,7 +137,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryOtTemplateBriefRespDTO.
+        r"""Gets the create_time of this QueryOtTemplateBriefRespDTO.
 
         创建时间
 
@@ -148,7 +148,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryOtTemplateBriefRespDTO.
+        r"""Sets the create_time of this QueryOtTemplateBriefRespDTO.
 
         创建时间
 
@@ -159,7 +159,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryOtTemplateBriefRespDTO.
+        r"""Gets the update_time of this QueryOtTemplateBriefRespDTO.
 
         最后一次修改时间
 
@@ -170,7 +170,7 @@ class QueryOtTemplateBriefRespDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryOtTemplateBriefRespDTO.
+        r"""Sets the update_time of this QueryOtTemplateBriefRespDTO.
 
         最后一次修改时间
 

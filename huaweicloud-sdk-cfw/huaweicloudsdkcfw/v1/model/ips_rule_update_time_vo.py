@@ -29,7 +29,7 @@ class IpsRuleUpdateTimeVO:
     }
 
     def __init__(self, ips_type=None, ips_version=None, update_time=None):
-        """IpsRuleUpdateTimeVO
+        r"""IpsRuleUpdateTimeVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IpsRuleUpdateTimeVO:
 
     @property
     def ips_type(self):
-        """Gets the ips_type of this IpsRuleUpdateTimeVO.
+        r"""Gets the ips_type of this IpsRuleUpdateTimeVO.
 
         :return: The ips_type of this IpsRuleUpdateTimeVO.
         :rtype: int
@@ -66,7 +66,7 @@ class IpsRuleUpdateTimeVO:
 
     @ips_type.setter
     def ips_type(self, ips_type):
-        """Sets the ips_type of this IpsRuleUpdateTimeVO.
+        r"""Sets the ips_type of this IpsRuleUpdateTimeVO.
 
         :param ips_type: The ips_type of this IpsRuleUpdateTimeVO.
         :type ips_type: int
@@ -75,7 +75,7 @@ class IpsRuleUpdateTimeVO:
 
     @property
     def ips_version(self):
-        """Gets the ips_version of this IpsRuleUpdateTimeVO.
+        r"""Gets the ips_version of this IpsRuleUpdateTimeVO.
 
         :return: The ips_version of this IpsRuleUpdateTimeVO.
         :rtype: str
@@ -84,7 +84,7 @@ class IpsRuleUpdateTimeVO:
 
     @ips_version.setter
     def ips_version(self, ips_version):
-        """Sets the ips_version of this IpsRuleUpdateTimeVO.
+        r"""Sets the ips_version of this IpsRuleUpdateTimeVO.
 
         :param ips_version: The ips_version of this IpsRuleUpdateTimeVO.
         :type ips_version: str
@@ -93,7 +93,7 @@ class IpsRuleUpdateTimeVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this IpsRuleUpdateTimeVO.
+        r"""Gets the update_time of this IpsRuleUpdateTimeVO.
 
         :return: The update_time of this IpsRuleUpdateTimeVO.
         :rtype: int
@@ -102,7 +102,7 @@ class IpsRuleUpdateTimeVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this IpsRuleUpdateTimeVO.
+        r"""Sets the update_time of this IpsRuleUpdateTimeVO.
 
         :param update_time: The update_time of this IpsRuleUpdateTimeVO.
         :type update_time: int

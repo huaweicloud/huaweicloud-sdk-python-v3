@@ -27,7 +27,7 @@ class ShowConnectionRequest:
     }
 
     def __init__(self, workspace=None, connection_name=None):
-        """ShowConnectionRequest
+        r"""ShowConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowConnectionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowConnectionRequest.
+        r"""Gets the workspace of this ShowConnectionRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class ShowConnectionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowConnectionRequest.
+        r"""Sets the workspace of this ShowConnectionRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class ShowConnectionRequest:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ShowConnectionRequest.
+        r"""Gets the connection_name of this ShowConnectionRequest.
 
         连接名称.
 
@@ -82,7 +82,7 @@ class ShowConnectionRequest:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ShowConnectionRequest.
+        r"""Sets the connection_name of this ShowConnectionRequest.
 
         连接名称.
 

@@ -29,7 +29,7 @@ class NeutronUpdateNetworkOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, port_security_enabled=None):
-        """NeutronUpdateNetworkOption
+        r"""NeutronUpdateNetworkOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NeutronUpdateNetworkOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronUpdateNetworkOption.
+        r"""Gets the name of this NeutronUpdateNetworkOption.
 
         功能说明：网络名称 取值范围：0-255个字符 约束：不能为admin_external_net
 
@@ -68,7 +68,7 @@ class NeutronUpdateNetworkOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronUpdateNetworkOption.
+        r"""Sets the name of this NeutronUpdateNetworkOption.
 
         功能说明：网络名称 取值范围：0-255个字符 约束：不能为admin_external_net
 
@@ -79,7 +79,7 @@ class NeutronUpdateNetworkOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronUpdateNetworkOption.
+        r"""Gets the admin_state_up of this NeutronUpdateNetworkOption.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -90,7 +90,7 @@ class NeutronUpdateNetworkOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronUpdateNetworkOption.
+        r"""Sets the admin_state_up of this NeutronUpdateNetworkOption.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -101,7 +101,7 @@ class NeutronUpdateNetworkOption:
 
     @property
     def port_security_enabled(self):
-        """Gets the port_security_enabled of this NeutronUpdateNetworkOption.
+        r"""Gets the port_security_enabled of this NeutronUpdateNetworkOption.
 
         功能说明：端口安全使能标记 取值范围：true(启用)、false(禁用) 约束：如果不使能，则network下所有虚机的安全组和dhcp防欺骗不生效
 
@@ -112,7 +112,7 @@ class NeutronUpdateNetworkOption:
 
     @port_security_enabled.setter
     def port_security_enabled(self, port_security_enabled):
-        """Sets the port_security_enabled of this NeutronUpdateNetworkOption.
+        r"""Sets the port_security_enabled of this NeutronUpdateNetworkOption.
 
         功能说明：端口安全使能标记 取值范围：true(启用)、false(禁用) 约束：如果不使能，则network下所有虚机的安全组和dhcp防欺骗不生效
 

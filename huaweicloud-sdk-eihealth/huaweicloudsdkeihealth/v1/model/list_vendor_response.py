@@ -28,7 +28,7 @@ class ListVendorResponse(SdkResponse):
     }
 
     def __init__(self, count=None, vendors=None):
-        """ListVendorResponse
+        r"""ListVendorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVendorResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVendorResponse.
+        r"""Gets the count of this ListVendorResponse.
 
         供应商个数
 
@@ -62,7 +62,7 @@ class ListVendorResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVendorResponse.
+        r"""Sets the count of this ListVendorResponse.
 
         供应商个数
 
@@ -73,7 +73,7 @@ class ListVendorResponse(SdkResponse):
 
     @property
     def vendors(self):
-        """Gets the vendors of this ListVendorResponse.
+        r"""Gets the vendors of this ListVendorResponse.
 
         供应商列表
 
@@ -84,7 +84,7 @@ class ListVendorResponse(SdkResponse):
 
     @vendors.setter
     def vendors(self, vendors):
-        """Sets the vendors of this ListVendorResponse.
+        r"""Sets the vendors of this ListVendorResponse.
 
         供应商列表
 

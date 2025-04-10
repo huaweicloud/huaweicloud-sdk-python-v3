@@ -37,7 +37,7 @@ class EdgemgrDeviceReq:
     }
 
     def __init__(self, name=None, access_protocol=None, description=None, attributes=None, twin=None, tags=None, property_visitors=None):
-        """EdgemgrDeviceReq
+        r"""EdgemgrDeviceReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class EdgemgrDeviceReq:
 
     @property
     def name(self):
-        """Gets the name of this EdgemgrDeviceReq.
+        r"""Gets the name of this EdgemgrDeviceReq.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -95,7 +95,7 @@ class EdgemgrDeviceReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgemgrDeviceReq.
+        r"""Sets the name of this EdgemgrDeviceReq.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -106,7 +106,7 @@ class EdgemgrDeviceReq:
 
     @property
     def access_protocol(self):
-        """Gets the access_protocol of this EdgemgrDeviceReq.
+        r"""Gets the access_protocol of this EdgemgrDeviceReq.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -117,7 +117,7 @@ class EdgemgrDeviceReq:
 
     @access_protocol.setter
     def access_protocol(self, access_protocol):
-        """Sets the access_protocol of this EdgemgrDeviceReq.
+        r"""Sets the access_protocol of this EdgemgrDeviceReq.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -128,7 +128,7 @@ class EdgemgrDeviceReq:
 
     @property
     def description(self):
-        """Gets the description of this EdgemgrDeviceReq.
+        r"""Gets the description of this EdgemgrDeviceReq.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -139,7 +139,7 @@ class EdgemgrDeviceReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgemgrDeviceReq.
+        r"""Sets the description of this EdgemgrDeviceReq.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -150,7 +150,7 @@ class EdgemgrDeviceReq:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgemgrDeviceReq.
+        r"""Gets the attributes of this EdgemgrDeviceReq.
 
         静态属性
 
@@ -161,7 +161,7 @@ class EdgemgrDeviceReq:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgemgrDeviceReq.
+        r"""Sets the attributes of this EdgemgrDeviceReq.
 
         静态属性
 
@@ -172,7 +172,7 @@ class EdgemgrDeviceReq:
 
     @property
     def twin(self):
-        """Gets the twin of this EdgemgrDeviceReq.
+        r"""Gets the twin of this EdgemgrDeviceReq.
 
         终端设备动态属性
 
@@ -183,7 +183,7 @@ class EdgemgrDeviceReq:
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this EdgemgrDeviceReq.
+        r"""Sets the twin of this EdgemgrDeviceReq.
 
         终端设备动态属性
 
@@ -194,7 +194,7 @@ class EdgemgrDeviceReq:
 
     @property
     def tags(self):
-        """Gets the tags of this EdgemgrDeviceReq.
+        r"""Gets the tags of this EdgemgrDeviceReq.
 
         :return: The tags of this EdgemgrDeviceReq.
         :rtype: :class:`huaweicloudsdkief.v1.ResourceTag`
@@ -203,7 +203,7 @@ class EdgemgrDeviceReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EdgemgrDeviceReq.
+        r"""Sets the tags of this EdgemgrDeviceReq.
 
         :param tags: The tags of this EdgemgrDeviceReq.
         :type tags: :class:`huaweicloudsdkief.v1.ResourceTag`
@@ -212,7 +212,7 @@ class EdgemgrDeviceReq:
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this EdgemgrDeviceReq.
+        r"""Gets the property_visitors of this EdgemgrDeviceReq.
 
         孪生属性配置
 
@@ -223,7 +223,7 @@ class EdgemgrDeviceReq:
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this EdgemgrDeviceReq.
+        r"""Sets the property_visitors of this EdgemgrDeviceReq.
 
         孪生属性配置
 

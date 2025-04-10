@@ -31,7 +31,7 @@ class UpdateInstanceUserRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, user_name=None, body=None):
-        """UpdateInstanceUserRequest
+        r"""UpdateInstanceUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateInstanceUserRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this UpdateInstanceUserRequest.
+        r"""Gets the engine of this UpdateInstanceUserRequest.
 
         消息引擎的类型。
 
@@ -72,7 +72,7 @@ class UpdateInstanceUserRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this UpdateInstanceUserRequest.
+        r"""Sets the engine of this UpdateInstanceUserRequest.
 
         消息引擎的类型。
 
@@ -83,7 +83,7 @@ class UpdateInstanceUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceUserRequest.
+        r"""Gets the instance_id of this UpdateInstanceUserRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class UpdateInstanceUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceUserRequest.
+        r"""Sets the instance_id of this UpdateInstanceUserRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class UpdateInstanceUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdateInstanceUserRequest.
+        r"""Gets the user_name of this UpdateInstanceUserRequest.
 
         用户名称。
 
@@ -116,7 +116,7 @@ class UpdateInstanceUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdateInstanceUserRequest.
+        r"""Sets the user_name of this UpdateInstanceUserRequest.
 
         用户名称。
 
@@ -127,7 +127,7 @@ class UpdateInstanceUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceUserRequest.
+        r"""Gets the body of this UpdateInstanceUserRequest.
 
         :return: The body of this UpdateInstanceUserRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateUserReq`
@@ -136,7 +136,7 @@ class UpdateInstanceUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceUserRequest.
+        r"""Sets the body of this UpdateInstanceUserRequest.
 
         :param body: The body of this UpdateInstanceUserRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateUserReq`

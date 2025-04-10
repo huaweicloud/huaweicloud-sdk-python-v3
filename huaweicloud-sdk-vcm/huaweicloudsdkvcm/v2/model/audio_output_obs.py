@@ -27,7 +27,7 @@ class AudioOutputObs:
     }
 
     def __init__(self, bucket=None, path=None):
-        """AudioOutputObs
+        r"""AudioOutputObs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AudioOutputObs:
 
     @property
     def bucket(self):
-        """Gets the bucket of this AudioOutputObs.
+        r"""Gets the bucket of this AudioOutputObs.
 
         存储结果文件的OBS桶名。
 
@@ -61,7 +61,7 @@ class AudioOutputObs:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this AudioOutputObs.
+        r"""Sets the bucket of this AudioOutputObs.
 
         存储结果文件的OBS桶名。
 
@@ -72,7 +72,7 @@ class AudioOutputObs:
 
     @property
     def path(self):
-        """Gets the path of this AudioOutputObs.
+        r"""Gets the path of this AudioOutputObs.
 
         结果文件的OBS桶内路径，例如“output/”。
 
@@ -83,7 +83,7 @@ class AudioOutputObs:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AudioOutputObs.
+        r"""Sets the path of this AudioOutputObs.
 
         结果文件的OBS桶内路径，例如“output/”。
 

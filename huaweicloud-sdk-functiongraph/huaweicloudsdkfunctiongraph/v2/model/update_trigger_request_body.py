@@ -27,7 +27,7 @@ class UpdateTriggerRequestBody:
     }
 
     def __init__(self, trigger_status=None, event_data=None):
-        """UpdateTriggerRequestBody
+        r"""UpdateTriggerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateTriggerRequestBody:
 
     @property
     def trigger_status(self):
-        """Gets the trigger_status of this UpdateTriggerRequestBody.
+        r"""Gets the trigger_status of this UpdateTriggerRequestBody.
 
         触发器状态
 
@@ -61,7 +61,7 @@ class UpdateTriggerRequestBody:
 
     @trigger_status.setter
     def trigger_status(self, trigger_status):
-        """Sets the trigger_status of this UpdateTriggerRequestBody.
+        r"""Sets the trigger_status of this UpdateTriggerRequestBody.
 
         触发器状态
 
@@ -72,7 +72,7 @@ class UpdateTriggerRequestBody:
 
     @property
     def event_data(self):
-        """Gets the event_data of this UpdateTriggerRequestBody.
+        r"""Gets the event_data of this UpdateTriggerRequestBody.
 
         触发器更新事件
 
@@ -83,7 +83,7 @@ class UpdateTriggerRequestBody:
 
     @event_data.setter
     def event_data(self, event_data):
-        """Sets the event_data of this UpdateTriggerRequestBody.
+        r"""Sets the event_data of this UpdateTriggerRequestBody.
 
         触发器更新事件
 

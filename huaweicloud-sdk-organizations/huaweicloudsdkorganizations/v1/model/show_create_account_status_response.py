@@ -26,7 +26,7 @@ class ShowCreateAccountStatusResponse(SdkResponse):
     }
 
     def __init__(self, create_account_status=None):
-        """ShowCreateAccountStatusResponse
+        r"""ShowCreateAccountStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCreateAccountStatusResponse(SdkResponse):
 
     @property
     def create_account_status(self):
-        """Gets the create_account_status of this ShowCreateAccountStatusResponse.
+        r"""Gets the create_account_status of this ShowCreateAccountStatusResponse.
 
         :return: The create_account_status of this ShowCreateAccountStatusResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateAccountStatusDto`
@@ -53,7 +53,7 @@ class ShowCreateAccountStatusResponse(SdkResponse):
 
     @create_account_status.setter
     def create_account_status(self, create_account_status):
-        """Sets the create_account_status of this ShowCreateAccountStatusResponse.
+        r"""Sets the create_account_status of this ShowCreateAccountStatusResponse.
 
         :param create_account_status: The create_account_status of this ShowCreateAccountStatusResponse.
         :type create_account_status: :class:`huaweicloudsdkorganizations.v1.CreateAccountStatusDto`

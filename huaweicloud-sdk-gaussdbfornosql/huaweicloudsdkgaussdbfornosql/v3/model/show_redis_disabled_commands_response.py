@@ -32,7 +32,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, disabled_type=None, commands=None, keys=None):
-        """ShowRedisDisabledCommandsResponse
+        r"""ShowRedisDisabledCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowRedisDisabledCommandsResponse.
+        r"""Gets the total_count of this ShowRedisDisabledCommandsResponse.
 
         总数。
 
@@ -76,7 +76,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowRedisDisabledCommandsResponse.
+        r"""Sets the total_count of this ShowRedisDisabledCommandsResponse.
 
         总数。
 
@@ -87,7 +87,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @property
     def disabled_type(self):
-        """Gets the disabled_type of this ShowRedisDisabledCommandsResponse.
+        r"""Gets the disabled_type of this ShowRedisDisabledCommandsResponse.
 
         禁用类型。
 
@@ -98,7 +98,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @disabled_type.setter
     def disabled_type(self, disabled_type):
-        """Sets the disabled_type of this ShowRedisDisabledCommandsResponse.
+        r"""Sets the disabled_type of this ShowRedisDisabledCommandsResponse.
 
         禁用类型。
 
@@ -109,7 +109,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @property
     def commands(self):
-        """Gets the commands of this ShowRedisDisabledCommandsResponse.
+        r"""Gets the commands of this ShowRedisDisabledCommandsResponse.
 
         disabled_type为command时展示该参数。
 
@@ -120,7 +120,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this ShowRedisDisabledCommandsResponse.
+        r"""Sets the commands of this ShowRedisDisabledCommandsResponse.
 
         disabled_type为command时展示该参数。
 
@@ -131,7 +131,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @property
     def keys(self):
-        """Gets the keys of this ShowRedisDisabledCommandsResponse.
+        r"""Gets the keys of this ShowRedisDisabledCommandsResponse.
 
         disabled_type为key时展示该参数，最多20个。
 
@@ -142,7 +142,7 @@ class ShowRedisDisabledCommandsResponse(SdkResponse):
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ShowRedisDisabledCommandsResponse.
+        r"""Sets the keys of this ShowRedisDisabledCommandsResponse.
 
         disabled_type为key时展示该参数，最多20个。
 

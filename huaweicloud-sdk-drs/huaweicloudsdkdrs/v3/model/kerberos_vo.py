@@ -31,7 +31,7 @@ class KerberosVO:
     }
 
     def __init__(self, krb5_conf_file=None, key_tab_file=None, domain_name=None, user_principal=None):
-        """KerberosVO
+        r"""KerberosVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class KerberosVO:
 
     @property
     def krb5_conf_file(self):
-        """Gets the krb5_conf_file of this KerberosVO.
+        r"""Gets the krb5_conf_file of this KerberosVO.
 
         krb5配置文件
 
@@ -75,7 +75,7 @@ class KerberosVO:
 
     @krb5_conf_file.setter
     def krb5_conf_file(self, krb5_conf_file):
-        """Sets the krb5_conf_file of this KerberosVO.
+        r"""Sets the krb5_conf_file of this KerberosVO.
 
         krb5配置文件
 
@@ -86,7 +86,7 @@ class KerberosVO:
 
     @property
     def key_tab_file(self):
-        """Gets the key_tab_file of this KerberosVO.
+        r"""Gets the key_tab_file of this KerberosVO.
 
         key文件
 
@@ -97,7 +97,7 @@ class KerberosVO:
 
     @key_tab_file.setter
     def key_tab_file(self, key_tab_file):
-        """Sets the key_tab_file of this KerberosVO.
+        r"""Sets the key_tab_file of this KerberosVO.
 
         key文件
 
@@ -108,7 +108,7 @@ class KerberosVO:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this KerberosVO.
+        r"""Gets the domain_name of this KerberosVO.
 
         域名
 
@@ -119,7 +119,7 @@ class KerberosVO:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this KerberosVO.
+        r"""Sets the domain_name of this KerberosVO.
 
         域名
 
@@ -130,7 +130,7 @@ class KerberosVO:
 
     @property
     def user_principal(self):
-        """Gets the user_principal of this KerberosVO.
+        r"""Gets the user_principal of this KerberosVO.
 
         Kerberos用户对象
 
@@ -141,7 +141,7 @@ class KerberosVO:
 
     @user_principal.setter
     def user_principal(self, user_principal):
-        """Sets the user_principal of this KerberosVO.
+        r"""Sets the user_principal of this KerberosVO.
 
         Kerberos用户对象
 

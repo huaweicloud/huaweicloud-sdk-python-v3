@@ -29,7 +29,7 @@ class ListBackendTargetsRequest:
     }
 
     def __init__(self, share_id=None, limit=None, marker=None):
-        """ListBackendTargetsRequest
+        r"""ListBackendTargetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListBackendTargetsRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ListBackendTargetsRequest.
+        r"""Gets the share_id of this ListBackendTargetsRequest.
 
         文件系统id
 
@@ -67,7 +67,7 @@ class ListBackendTargetsRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ListBackendTargetsRequest.
+        r"""Sets the share_id of this ListBackendTargetsRequest.
 
         文件系统id
 
@@ -78,7 +78,7 @@ class ListBackendTargetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackendTargetsRequest.
+        r"""Gets the limit of this ListBackendTargetsRequest.
 
         查询列表返回元素个数
 
@@ -89,7 +89,7 @@ class ListBackendTargetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackendTargetsRequest.
+        r"""Sets the limit of this ListBackendTargetsRequest.
 
         查询列表返回元素个数
 
@@ -100,7 +100,7 @@ class ListBackendTargetsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBackendTargetsRequest.
+        r"""Gets the marker of this ListBackendTargetsRequest.
 
         查询列表偏移量
 
@@ -111,7 +111,7 @@ class ListBackendTargetsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBackendTargetsRequest.
+        r"""Sets the marker of this ListBackendTargetsRequest.
 
         查询列表偏移量
 

@@ -25,7 +25,7 @@ class DeletePendingAggregationRequestRequest:
     }
 
     def __init__(self, requester_account_id=None):
-        """DeletePendingAggregationRequestRequest
+        r"""DeletePendingAggregationRequestRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePendingAggregationRequestRequest:
 
     @property
     def requester_account_id(self):
-        """Gets the requester_account_id of this DeletePendingAggregationRequestRequest.
+        r"""Gets the requester_account_id of this DeletePendingAggregationRequestRequest.
 
         请求聚合数据的帐号ID。
 
@@ -53,7 +53,7 @@ class DeletePendingAggregationRequestRequest:
 
     @requester_account_id.setter
     def requester_account_id(self, requester_account_id):
-        """Sets the requester_account_id of this DeletePendingAggregationRequestRequest.
+        r"""Sets the requester_account_id of this DeletePendingAggregationRequestRequest.
 
         请求聚合数据的帐号ID。
 

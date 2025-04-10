@@ -31,7 +31,7 @@ class PortStatisticResponseInfo:
     }
 
     def __init__(self, port=None, type=None, num=None, status=None):
-        """PortStatisticResponseInfo
+        r"""PortStatisticResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PortStatisticResponseInfo:
 
     @property
     def port(self):
-        """Gets the port of this PortStatisticResponseInfo.
+        r"""Gets the port of this PortStatisticResponseInfo.
 
         端口号
 
@@ -75,7 +75,7 @@ class PortStatisticResponseInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this PortStatisticResponseInfo.
+        r"""Sets the port of this PortStatisticResponseInfo.
 
         端口号
 
@@ -86,7 +86,7 @@ class PortStatisticResponseInfo:
 
     @property
     def type(self):
-        """Gets the type of this PortStatisticResponseInfo.
+        r"""Gets the type of this PortStatisticResponseInfo.
 
         端口类型
 
@@ -97,7 +97,7 @@ class PortStatisticResponseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PortStatisticResponseInfo.
+        r"""Sets the type of this PortStatisticResponseInfo.
 
         端口类型
 
@@ -108,7 +108,7 @@ class PortStatisticResponseInfo:
 
     @property
     def num(self):
-        """Gets the num of this PortStatisticResponseInfo.
+        r"""Gets the num of this PortStatisticResponseInfo.
 
         端口数量
 
@@ -119,7 +119,7 @@ class PortStatisticResponseInfo:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this PortStatisticResponseInfo.
+        r"""Sets the num of this PortStatisticResponseInfo.
 
         端口数量
 
@@ -130,7 +130,7 @@ class PortStatisticResponseInfo:
 
     @property
     def status(self):
-        """Gets the status of this PortStatisticResponseInfo.
+        r"""Gets the status of this PortStatisticResponseInfo.
 
         危险类型:danger/unknown
 
@@ -141,7 +141,7 @@ class PortStatisticResponseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PortStatisticResponseInfo.
+        r"""Sets the status of this PortStatisticResponseInfo.
 
         危险类型:danger/unknown
 

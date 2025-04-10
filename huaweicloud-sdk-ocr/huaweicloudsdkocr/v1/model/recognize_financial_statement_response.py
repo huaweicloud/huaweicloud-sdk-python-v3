@@ -28,7 +28,7 @@ class RecognizeFinancialStatementResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeFinancialStatementResponse
+        r"""RecognizeFinancialStatementResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeFinancialStatementResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeFinancialStatementResponse.
+        r"""Gets the result of this RecognizeFinancialStatementResponse.
 
         :return: The result of this RecognizeFinancialStatementResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.FinancialStatementResult`
@@ -60,7 +60,7 @@ class RecognizeFinancialStatementResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeFinancialStatementResponse.
+        r"""Sets the result of this RecognizeFinancialStatementResponse.
 
         :param result: The result of this RecognizeFinancialStatementResponse.
         :type result: :class:`huaweicloudsdkocr.v1.FinancialStatementResult`
@@ -69,7 +69,7 @@ class RecognizeFinancialStatementResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeFinancialStatementResponse.
+        r"""Gets the x_request_id of this RecognizeFinancialStatementResponse.
 
         :return: The x_request_id of this RecognizeFinancialStatementResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeFinancialStatementResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeFinancialStatementResponse.
+        r"""Sets the x_request_id of this RecognizeFinancialStatementResponse.
 
         :param x_request_id: The x_request_id of this RecognizeFinancialStatementResponse.
         :type x_request_id: str

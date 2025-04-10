@@ -37,7 +37,7 @@ class TemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, template_ids=None, videos=None, audio=None, video_common=None, common=None):
-        """TemplateGroup
+        r"""TemplateGroup
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TemplateGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this TemplateGroup.
+        r"""Gets the group_id of this TemplateGroup.
 
         模板组id 
 
@@ -96,7 +96,7 @@ class TemplateGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this TemplateGroup.
+        r"""Sets the group_id of this TemplateGroup.
 
         模板组id 
 
@@ -107,7 +107,7 @@ class TemplateGroup:
 
     @property
     def name(self):
-        """Gets the name of this TemplateGroup.
+        r"""Gets the name of this TemplateGroup.
 
         模板组名称 
 
@@ -118,7 +118,7 @@ class TemplateGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateGroup.
+        r"""Sets the name of this TemplateGroup.
 
         模板组名称 
 
@@ -129,7 +129,7 @@ class TemplateGroup:
 
     @property
     def template_ids(self):
-        """Gets the template_ids of this TemplateGroup.
+        r"""Gets the template_ids of this TemplateGroup.
 
         模板组模板ID 
 
@@ -140,7 +140,7 @@ class TemplateGroup:
 
     @template_ids.setter
     def template_ids(self, template_ids):
-        """Sets the template_ids of this TemplateGroup.
+        r"""Sets the template_ids of this TemplateGroup.
 
         模板组模板ID 
 
@@ -151,7 +151,7 @@ class TemplateGroup:
 
     @property
     def videos(self):
-        """Gets the videos of this TemplateGroup.
+        r"""Gets the videos of this TemplateGroup.
 
         视频信息列表 
 
@@ -162,7 +162,7 @@ class TemplateGroup:
 
     @videos.setter
     def videos(self, videos):
-        """Sets the videos of this TemplateGroup.
+        r"""Sets the videos of this TemplateGroup.
 
         视频信息列表 
 
@@ -173,7 +173,7 @@ class TemplateGroup:
 
     @property
     def audio(self):
-        """Gets the audio of this TemplateGroup.
+        r"""Gets the audio of this TemplateGroup.
 
         :return: The audio of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -182,7 +182,7 @@ class TemplateGroup:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this TemplateGroup.
+        r"""Sets the audio of this TemplateGroup.
 
         :param audio: The audio of this TemplateGroup.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -191,7 +191,7 @@ class TemplateGroup:
 
     @property
     def video_common(self):
-        """Gets the video_common of this TemplateGroup.
+        r"""Gets the video_common of this TemplateGroup.
 
         :return: The video_common of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -200,7 +200,7 @@ class TemplateGroup:
 
     @video_common.setter
     def video_common(self, video_common):
-        """Sets the video_common of this TemplateGroup.
+        r"""Sets the video_common of this TemplateGroup.
 
         :param video_common: The video_common of this TemplateGroup.
         :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -209,7 +209,7 @@ class TemplateGroup:
 
     @property
     def common(self):
-        """Gets the common of this TemplateGroup.
+        r"""Gets the common of this TemplateGroup.
 
         :return: The common of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
@@ -218,7 +218,7 @@ class TemplateGroup:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TemplateGroup.
+        r"""Sets the common of this TemplateGroup.
 
         :param common: The common of this TemplateGroup.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

@@ -25,7 +25,7 @@ class ShowAutoEnlargePolicyRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowAutoEnlargePolicyRequest
+        r"""ShowAutoEnlargePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAutoEnlargePolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAutoEnlargePolicyRequest.
+        r"""Gets the instance_id of this ShowAutoEnlargePolicyRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowAutoEnlargePolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAutoEnlargePolicyRequest.
+        r"""Sets the instance_id of this ShowAutoEnlargePolicyRequest.
 
         实例ID。
 

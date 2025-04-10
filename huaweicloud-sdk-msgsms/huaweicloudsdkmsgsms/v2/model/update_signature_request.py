@@ -27,7 +27,7 @@ class UpdateSignatureRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateSignatureRequest
+        r"""UpdateSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSignatureRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSignatureRequest.
+        r"""Gets the id of this UpdateSignatureRequest.
 
         签名ID
 
@@ -60,7 +60,7 @@ class UpdateSignatureRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSignatureRequest.
+        r"""Sets the id of this UpdateSignatureRequest.
 
         签名ID
 
@@ -71,7 +71,7 @@ class UpdateSignatureRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSignatureRequest.
+        r"""Gets the body of this UpdateSignatureRequest.
 
         :return: The body of this UpdateSignatureRequest.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.SmsSignatureReq`
@@ -80,7 +80,7 @@ class UpdateSignatureRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSignatureRequest.
+        r"""Sets the body of this UpdateSignatureRequest.
 
         :param body: The body of this UpdateSignatureRequest.
         :type body: :class:`huaweicloudsdkmsgsms.v2.SmsSignatureReq`

@@ -31,7 +31,7 @@ class MaintenanceWindow:
     }
 
     def __init__(self, weekly_period=None, start_time=None, duration_hours=None, upgrade_scope=None):
-        """MaintenanceWindow
+        r"""MaintenanceWindow
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class MaintenanceWindow:
 
     @property
     def weekly_period(self):
-        """Gets the weekly_period of this MaintenanceWindow.
+        r"""Gets the weekly_period of this MaintenanceWindow.
 
         升级周期，从\"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday\"中进行选择，以英文逗号分隔 如：\"Friday,Saturday\" 
 
@@ -72,7 +72,7 @@ class MaintenanceWindow:
 
     @weekly_period.setter
     def weekly_period(self, weekly_period):
-        """Sets the weekly_period of this MaintenanceWindow.
+        r"""Sets the weekly_period of this MaintenanceWindow.
 
         升级周期，从\"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday\"中进行选择，以英文逗号分隔 如：\"Friday,Saturday\" 
 
@@ -83,7 +83,7 @@ class MaintenanceWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MaintenanceWindow.
+        r"""Gets the start_time of this MaintenanceWindow.
 
         升级起始时间（UTC时间）
 
@@ -94,7 +94,7 @@ class MaintenanceWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MaintenanceWindow.
+        r"""Sets the start_time of this MaintenanceWindow.
 
         升级起始时间（UTC时间）
 
@@ -105,7 +105,7 @@ class MaintenanceWindow:
 
     @property
     def duration_hours(self):
-        """Gets the duration_hours of this MaintenanceWindow.
+        r"""Gets the duration_hours of this MaintenanceWindow.
 
         升级时长
 
@@ -116,7 +116,7 @@ class MaintenanceWindow:
 
     @duration_hours.setter
     def duration_hours(self, duration_hours):
-        """Sets the duration_hours of this MaintenanceWindow.
+        r"""Sets the duration_hours of this MaintenanceWindow.
 
         升级时长
 
@@ -127,7 +127,7 @@ class MaintenanceWindow:
 
     @property
     def upgrade_scope(self):
-        """Gets the upgrade_scope of this MaintenanceWindow.
+        r"""Gets the upgrade_scope of this MaintenanceWindow.
 
         升级版本范围，当前只支持小版本自动升级
 
@@ -138,7 +138,7 @@ class MaintenanceWindow:
 
     @upgrade_scope.setter
     def upgrade_scope(self, upgrade_scope):
-        """Sets the upgrade_scope of this MaintenanceWindow.
+        r"""Sets the upgrade_scope of this MaintenanceWindow.
 
         升级版本范围，当前只支持小版本自动升级
 

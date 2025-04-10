@@ -26,7 +26,7 @@ class ListFsTasksResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None):
-        """ListFsTasksResponse
+        r"""ListFsTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFsTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListFsTasksResponse.
+        r"""Gets the tasks of this ListFsTasksResponse.
 
         任务列表
 
@@ -55,7 +55,7 @@ class ListFsTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListFsTasksResponse.
+        r"""Sets the tasks of this ListFsTasksResponse.
 
         任务列表
 

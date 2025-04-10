@@ -33,7 +33,7 @@ class SealList:
     }
 
     def __init__(self, type=None, seal_image=None, confidence=None, location=None, words_block_list=None):
-        """SealList
+        r"""SealList
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SealList:
 
     @property
     def type(self):
-        """Gets the type of this SealList.
+        r"""Gets the type of this SealList.
 
         印章类型，当前支持circle（圆形章）、ellipse（椭圆章）、rectangle（方形章）、triangle（三角章）、rhombus（菱形章）五种。 
 
@@ -82,7 +82,7 @@ class SealList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SealList.
+        r"""Sets the type of this SealList.
 
         印章类型，当前支持circle（圆形章）、ellipse（椭圆章）、rectangle（方形章）、triangle（三角章）、rhombus（菱形章）五种。 
 
@@ -93,7 +93,7 @@ class SealList:
 
     @property
     def seal_image(self):
-        """Gets the seal_image of this SealList.
+        r"""Gets the seal_image of this SealList.
 
         提取的单个印章base64编码图片。 
 
@@ -104,7 +104,7 @@ class SealList:
 
     @seal_image.setter
     def seal_image(self, seal_image):
-        """Sets the seal_image of this SealList.
+        r"""Sets the seal_image of this SealList.
 
         提取的单个印章base64编码图片。 
 
@@ -115,7 +115,7 @@ class SealList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this SealList.
+        r"""Gets the confidence of this SealList.
 
         印章位置的置信度。 
 
@@ -126,7 +126,7 @@ class SealList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this SealList.
+        r"""Sets the confidence of this SealList.
 
         印章位置的置信度。 
 
@@ -137,7 +137,7 @@ class SealList:
 
     @property
     def location(self):
-        """Gets the location of this SealList.
+        r"""Gets the location of this SealList.
 
         印章位置，列表形式，包含印章区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -148,7 +148,7 @@ class SealList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this SealList.
+        r"""Sets the location of this SealList.
 
         印章位置，列表形式，包含印章区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -159,7 +159,7 @@ class SealList:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this SealList.
+        r"""Gets the words_block_list of this SealList.
 
         印章文本块列表。 
 
@@ -170,7 +170,7 @@ class SealList:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this SealList.
+        r"""Sets the words_block_list of this SealList.
 
         印章文本块列表。 
 

@@ -29,7 +29,7 @@ class DeleteTagRsp:
     }
 
     def __init__(self, tag=None, status=None, failed_reason=None):
-        """DeleteTagRsp
+        r"""DeleteTagRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeleteTagRsp:
 
     @property
     def tag(self):
-        """Gets the tag of this DeleteTagRsp.
+        r"""Gets the tag of this DeleteTagRsp.
 
         镜像tag名称
 
@@ -68,7 +68,7 @@ class DeleteTagRsp:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this DeleteTagRsp.
+        r"""Sets the tag of this DeleteTagRsp.
 
         镜像tag名称
 
@@ -79,7 +79,7 @@ class DeleteTagRsp:
 
     @property
     def status(self):
-        """Gets the status of this DeleteTagRsp.
+        r"""Gets the status of this DeleteTagRsp.
 
         删除结果
 
@@ -90,7 +90,7 @@ class DeleteTagRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteTagRsp.
+        r"""Sets the status of this DeleteTagRsp.
 
         删除结果
 
@@ -101,7 +101,7 @@ class DeleteTagRsp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this DeleteTagRsp.
+        r"""Gets the failed_reason of this DeleteTagRsp.
 
         失败原因
 
@@ -112,7 +112,7 @@ class DeleteTagRsp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this DeleteTagRsp.
+        r"""Sets the failed_reason of this DeleteTagRsp.
 
         失败原因
 

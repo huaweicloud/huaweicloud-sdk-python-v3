@@ -50,7 +50,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
     }
 
     def __init__(self, success=None, start_at=None, end_at=None, task_id=None, summary_info=None, instance_info=None, performance_stat=None, disk_stat=None, table_space_stat=None, slow_log_stat=None, full_sql_stat=None, inspection_stat=None, error_message=None):
-        """ShowInstanceHealthReportResponse
+        r"""ShowInstanceHealthReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ShowInstanceHealthReportResponse.
+        r"""Gets the success of this ShowInstanceHealthReportResponse.
 
         日报诊断是否成功。
 
@@ -139,7 +139,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ShowInstanceHealthReportResponse.
+        r"""Sets the success of this ShowInstanceHealthReportResponse.
 
         日报诊断是否成功。
 
@@ -150,7 +150,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def start_at(self):
-        """Gets the start_at of this ShowInstanceHealthReportResponse.
+        r"""Gets the start_at of this ShowInstanceHealthReportResponse.
 
         日报诊断区间的起始时间（Unix timestamp），单位：毫秒。
 
@@ -161,7 +161,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ShowInstanceHealthReportResponse.
+        r"""Sets the start_at of this ShowInstanceHealthReportResponse.
 
         日报诊断区间的起始时间（Unix timestamp），单位：毫秒。
 
@@ -172,7 +172,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def end_at(self):
-        """Gets the end_at of this ShowInstanceHealthReportResponse.
+        r"""Gets the end_at of this ShowInstanceHealthReportResponse.
 
         日报诊断区间的结束时间（Unix timestamp），单位：毫秒。
 
@@ -183,7 +183,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ShowInstanceHealthReportResponse.
+        r"""Sets the end_at of this ShowInstanceHealthReportResponse.
 
         日报诊断区间的结束时间（Unix timestamp），单位：毫秒。
 
@@ -194,7 +194,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowInstanceHealthReportResponse.
+        r"""Gets the task_id of this ShowInstanceHealthReportResponse.
 
         报告ID。
 
@@ -205,7 +205,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowInstanceHealthReportResponse.
+        r"""Sets the task_id of this ShowInstanceHealthReportResponse.
 
         报告ID。
 
@@ -216,7 +216,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def summary_info(self):
-        """Gets the summary_info of this ShowInstanceHealthReportResponse.
+        r"""Gets the summary_info of this ShowInstanceHealthReportResponse.
 
         :return: The summary_info of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportSummaryInfo`
@@ -225,7 +225,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @summary_info.setter
     def summary_info(self, summary_info):
-        """Sets the summary_info of this ShowInstanceHealthReportResponse.
+        r"""Sets the summary_info of this ShowInstanceHealthReportResponse.
 
         :param summary_info: The summary_info of this ShowInstanceHealthReportResponse.
         :type summary_info: :class:`huaweicloudsdkdas.v3.HealthReportSummaryInfo`
@@ -234,7 +234,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def instance_info(self):
-        """Gets the instance_info of this ShowInstanceHealthReportResponse.
+        r"""Gets the instance_info of this ShowInstanceHealthReportResponse.
 
         :return: The instance_info of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportInstanceInfo`
@@ -243,7 +243,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @instance_info.setter
     def instance_info(self, instance_info):
-        """Sets the instance_info of this ShowInstanceHealthReportResponse.
+        r"""Sets the instance_info of this ShowInstanceHealthReportResponse.
 
         :param instance_info: The instance_info of this ShowInstanceHealthReportResponse.
         :type instance_info: :class:`huaweicloudsdkdas.v3.HealthReportInstanceInfo`
@@ -252,7 +252,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def performance_stat(self):
-        """Gets the performance_stat of this ShowInstanceHealthReportResponse.
+        r"""Gets the performance_stat of this ShowInstanceHealthReportResponse.
 
         :return: The performance_stat of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStat`
@@ -261,7 +261,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @performance_stat.setter
     def performance_stat(self, performance_stat):
-        """Sets the performance_stat of this ShowInstanceHealthReportResponse.
+        r"""Sets the performance_stat of this ShowInstanceHealthReportResponse.
 
         :param performance_stat: The performance_stat of this ShowInstanceHealthReportResponse.
         :type performance_stat: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStat`
@@ -270,7 +270,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def disk_stat(self):
-        """Gets the disk_stat of this ShowInstanceHealthReportResponse.
+        r"""Gets the disk_stat of this ShowInstanceHealthReportResponse.
 
         :return: The disk_stat of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportDiskStat`
@@ -279,7 +279,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @disk_stat.setter
     def disk_stat(self, disk_stat):
-        """Sets the disk_stat of this ShowInstanceHealthReportResponse.
+        r"""Sets the disk_stat of this ShowInstanceHealthReportResponse.
 
         :param disk_stat: The disk_stat of this ShowInstanceHealthReportResponse.
         :type disk_stat: :class:`huaweicloudsdkdas.v3.HealthReportDiskStat`
@@ -288,7 +288,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def table_space_stat(self):
-        """Gets the table_space_stat of this ShowInstanceHealthReportResponse.
+        r"""Gets the table_space_stat of this ShowInstanceHealthReportResponse.
 
         :return: The table_space_stat of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportTableSpaceStat`
@@ -297,7 +297,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @table_space_stat.setter
     def table_space_stat(self, table_space_stat):
-        """Sets the table_space_stat of this ShowInstanceHealthReportResponse.
+        r"""Sets the table_space_stat of this ShowInstanceHealthReportResponse.
 
         :param table_space_stat: The table_space_stat of this ShowInstanceHealthReportResponse.
         :type table_space_stat: :class:`huaweicloudsdkdas.v3.HealthReportTableSpaceStat`
@@ -306,7 +306,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def slow_log_stat(self):
-        """Gets the slow_log_stat of this ShowInstanceHealthReportResponse.
+        r"""Gets the slow_log_stat of this ShowInstanceHealthReportResponse.
 
         :return: The slow_log_stat of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportSlowLogStat`
@@ -315,7 +315,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @slow_log_stat.setter
     def slow_log_stat(self, slow_log_stat):
-        """Sets the slow_log_stat of this ShowInstanceHealthReportResponse.
+        r"""Sets the slow_log_stat of this ShowInstanceHealthReportResponse.
 
         :param slow_log_stat: The slow_log_stat of this ShowInstanceHealthReportResponse.
         :type slow_log_stat: :class:`huaweicloudsdkdas.v3.HealthReportSlowLogStat`
@@ -324,7 +324,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def full_sql_stat(self):
-        """Gets the full_sql_stat of this ShowInstanceHealthReportResponse.
+        r"""Gets the full_sql_stat of this ShowInstanceHealthReportResponse.
 
         :return: The full_sql_stat of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportFullSqlStat`
@@ -333,7 +333,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @full_sql_stat.setter
     def full_sql_stat(self, full_sql_stat):
-        """Sets the full_sql_stat of this ShowInstanceHealthReportResponse.
+        r"""Sets the full_sql_stat of this ShowInstanceHealthReportResponse.
 
         :param full_sql_stat: The full_sql_stat of this ShowInstanceHealthReportResponse.
         :type full_sql_stat: :class:`huaweicloudsdkdas.v3.HealthReportFullSqlStat`
@@ -342,7 +342,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def inspection_stat(self):
-        """Gets the inspection_stat of this ShowInstanceHealthReportResponse.
+        r"""Gets the inspection_stat of this ShowInstanceHealthReportResponse.
 
         :return: The inspection_stat of this ShowInstanceHealthReportResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.HealthReportInspectionStat`
@@ -351,7 +351,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @inspection_stat.setter
     def inspection_stat(self, inspection_stat):
-        """Sets the inspection_stat of this ShowInstanceHealthReportResponse.
+        r"""Sets the inspection_stat of this ShowInstanceHealthReportResponse.
 
         :param inspection_stat: The inspection_stat of this ShowInstanceHealthReportResponse.
         :type inspection_stat: :class:`huaweicloudsdkdas.v3.HealthReportInspectionStat`
@@ -360,7 +360,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ShowInstanceHealthReportResponse.
+        r"""Gets the error_message of this ShowInstanceHealthReportResponse.
 
         错误信息。
 
@@ -371,7 +371,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ShowInstanceHealthReportResponse.
+        r"""Sets the error_message of this ShowInstanceHealthReportResponse.
 
         错误信息。
 

@@ -23,7 +23,7 @@ class ListGlobalEipDomainTagsRequest:
     }
 
     def __init__(self):
-        """ListGlobalEipDomainTagsRequest
+        r"""ListGlobalEipDomainTagsRequest
 
         The model defined in huaweicloud sdk
 

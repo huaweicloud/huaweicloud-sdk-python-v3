@@ -27,7 +27,7 @@ class FlinkMetricList:
     }
 
     def __init__(self, job_id=None, metrics=None):
-        """FlinkMetricList
+        r"""FlinkMetricList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlinkMetricList:
 
     @property
     def job_id(self):
-        """Gets the job_id of this FlinkMetricList.
+        r"""Gets the job_id of this FlinkMetricList.
 
         作业ID。
 
@@ -61,7 +61,7 @@ class FlinkMetricList:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this FlinkMetricList.
+        r"""Sets the job_id of this FlinkMetricList.
 
         作业ID。
 
@@ -72,7 +72,7 @@ class FlinkMetricList:
 
     @property
     def metrics(self):
-        """Gets the metrics of this FlinkMetricList.
+        r"""Gets the metrics of this FlinkMetricList.
 
         :return: The metrics of this FlinkMetricList.
         :rtype: :class:`huaweicloudsdkdli.v1.Metric`
@@ -81,7 +81,7 @@ class FlinkMetricList:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this FlinkMetricList.
+        r"""Sets the metrics of this FlinkMetricList.
 
         :param metrics: The metrics of this FlinkMetricList.
         :type metrics: :class:`huaweicloudsdkdli.v1.Metric`

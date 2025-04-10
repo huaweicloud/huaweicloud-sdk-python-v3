@@ -23,7 +23,7 @@ class UsageMeasureId:
     }
 
     def __init__(self):
-        """UsageMeasureId
+        r"""UsageMeasureId
 
         The model defined in huaweicloud sdk
 

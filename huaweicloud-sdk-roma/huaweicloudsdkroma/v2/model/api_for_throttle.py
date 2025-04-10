@@ -51,7 +51,7 @@ class ApiForThrottle:
     }
 
     def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, type=None, throttle_apply_id=None, throttle_name=None, apply_time=None):
-        """ApiForThrottle
+        r"""ApiForThrottle
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ApiForThrottle:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ApiForThrottle.
+        r"""Gets the auth_type of this ApiForThrottle.
 
         API的认证方式
 
@@ -145,7 +145,7 @@ class ApiForThrottle:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ApiForThrottle.
+        r"""Sets the auth_type of this ApiForThrottle.
 
         API的认证方式
 
@@ -156,7 +156,7 @@ class ApiForThrottle:
 
     @property
     def run_env_name(self):
-        """Gets the run_env_name of this ApiForThrottle.
+        r"""Gets the run_env_name of this ApiForThrottle.
 
         发布的环境名
 
@@ -167,7 +167,7 @@ class ApiForThrottle:
 
     @run_env_name.setter
     def run_env_name(self, run_env_name):
-        """Sets the run_env_name of this ApiForThrottle.
+        r"""Sets the run_env_name of this ApiForThrottle.
 
         发布的环境名
 
@@ -178,7 +178,7 @@ class ApiForThrottle:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApiForThrottle.
+        r"""Gets the group_name of this ApiForThrottle.
 
         API所属分组的名称
 
@@ -189,7 +189,7 @@ class ApiForThrottle:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApiForThrottle.
+        r"""Sets the group_name of this ApiForThrottle.
 
         API所属分组的名称
 
@@ -200,7 +200,7 @@ class ApiForThrottle:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ApiForThrottle.
+        r"""Gets the publish_id of this ApiForThrottle.
 
         发布记录的编号
 
@@ -211,7 +211,7 @@ class ApiForThrottle:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ApiForThrottle.
+        r"""Sets the publish_id of this ApiForThrottle.
 
         发布记录的编号
 
@@ -222,7 +222,7 @@ class ApiForThrottle:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiForThrottle.
+        r"""Gets the group_id of this ApiForThrottle.
 
         API所属分组的编号
 
@@ -233,7 +233,7 @@ class ApiForThrottle:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiForThrottle.
+        r"""Sets the group_id of this ApiForThrottle.
 
         API所属分组的编号
 
@@ -244,7 +244,7 @@ class ApiForThrottle:
 
     @property
     def name(self):
-        """Gets the name of this ApiForThrottle.
+        r"""Gets the name of this ApiForThrottle.
 
         API名称
 
@@ -255,7 +255,7 @@ class ApiForThrottle:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiForThrottle.
+        r"""Sets the name of this ApiForThrottle.
 
         API名称
 
@@ -266,7 +266,7 @@ class ApiForThrottle:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiForThrottle.
+        r"""Gets the remark of this ApiForThrottle.
 
         API描述
 
@@ -277,7 +277,7 @@ class ApiForThrottle:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiForThrottle.
+        r"""Sets the remark of this ApiForThrottle.
 
         API描述
 
@@ -288,7 +288,7 @@ class ApiForThrottle:
 
     @property
     def run_env_id(self):
-        """Gets the run_env_id of this ApiForThrottle.
+        r"""Gets the run_env_id of this ApiForThrottle.
 
         发布的环境id
 
@@ -299,7 +299,7 @@ class ApiForThrottle:
 
     @run_env_id.setter
     def run_env_id(self, run_env_id):
-        """Sets the run_env_id of this ApiForThrottle.
+        r"""Sets the run_env_id of this ApiForThrottle.
 
         发布的环境id
 
@@ -310,7 +310,7 @@ class ApiForThrottle:
 
     @property
     def id(self):
-        """Gets the id of this ApiForThrottle.
+        r"""Gets the id of this ApiForThrottle.
 
         API编号
 
@@ -321,7 +321,7 @@ class ApiForThrottle:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiForThrottle.
+        r"""Sets the id of this ApiForThrottle.
 
         API编号
 
@@ -332,7 +332,7 @@ class ApiForThrottle:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiForThrottle.
+        r"""Gets the req_uri of this ApiForThrottle.
 
         API的请求地址
 
@@ -343,7 +343,7 @@ class ApiForThrottle:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiForThrottle.
+        r"""Sets the req_uri of this ApiForThrottle.
 
         API的请求地址
 
@@ -354,7 +354,7 @@ class ApiForThrottle:
 
     @property
     def type(self):
-        """Gets the type of this ApiForThrottle.
+        r"""Gets the type of this ApiForThrottle.
 
         API类型
 
@@ -365,7 +365,7 @@ class ApiForThrottle:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiForThrottle.
+        r"""Sets the type of this ApiForThrottle.
 
         API类型
 
@@ -376,7 +376,7 @@ class ApiForThrottle:
 
     @property
     def throttle_apply_id(self):
-        """Gets the throttle_apply_id of this ApiForThrottle.
+        r"""Gets the throttle_apply_id of this ApiForThrottle.
 
         与流控策略的绑定关系编号
 
@@ -387,7 +387,7 @@ class ApiForThrottle:
 
     @throttle_apply_id.setter
     def throttle_apply_id(self, throttle_apply_id):
-        """Sets the throttle_apply_id of this ApiForThrottle.
+        r"""Sets the throttle_apply_id of this ApiForThrottle.
 
         与流控策略的绑定关系编号
 
@@ -398,7 +398,7 @@ class ApiForThrottle:
 
     @property
     def throttle_name(self):
-        """Gets the throttle_name of this ApiForThrottle.
+        r"""Gets the throttle_name of this ApiForThrottle.
 
         绑定的流控策略名称
 
@@ -409,7 +409,7 @@ class ApiForThrottle:
 
     @throttle_name.setter
     def throttle_name(self, throttle_name):
-        """Sets the throttle_name of this ApiForThrottle.
+        r"""Sets the throttle_name of this ApiForThrottle.
 
         绑定的流控策略名称
 
@@ -420,7 +420,7 @@ class ApiForThrottle:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this ApiForThrottle.
+        r"""Gets the apply_time of this ApiForThrottle.
 
         已绑定的流控策略的绑定时间
 
@@ -431,7 +431,7 @@ class ApiForThrottle:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this ApiForThrottle.
+        r"""Sets the apply_time of this ApiForThrottle.
 
         已绑定的流控策略的绑定时间
 

@@ -29,7 +29,7 @@ class RunTestCaseRequestBody:
     }
 
     def __init__(self, service_id=None, plan_id=None, execute_list=None):
-        """RunTestCaseRequestBody
+        r"""RunTestCaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RunTestCaseRequestBody:
 
     @property
     def service_id(self):
-        """Gets the service_id of this RunTestCaseRequestBody.
+        r"""Gets the service_id of this RunTestCaseRequestBody.
 
         注册测试类型服务接口返回的服务id
 
@@ -66,7 +66,7 @@ class RunTestCaseRequestBody:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this RunTestCaseRequestBody.
+        r"""Sets the service_id of this RunTestCaseRequestBody.
 
         注册测试类型服务接口返回的服务id
 
@@ -77,7 +77,7 @@ class RunTestCaseRequestBody:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this RunTestCaseRequestBody.
+        r"""Gets the plan_id of this RunTestCaseRequestBody.
 
         测试计划id
 
@@ -88,7 +88,7 @@ class RunTestCaseRequestBody:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this RunTestCaseRequestBody.
+        r"""Sets the plan_id of this RunTestCaseRequestBody.
 
         测试计划id
 
@@ -99,7 +99,7 @@ class RunTestCaseRequestBody:
 
     @property
     def execute_list(self):
-        """Gets the execute_list of this RunTestCaseRequestBody.
+        r"""Gets the execute_list of this RunTestCaseRequestBody.
 
         测试用例执行信息，数组长度小于等于50
 
@@ -110,7 +110,7 @@ class RunTestCaseRequestBody:
 
     @execute_list.setter
     def execute_list(self, execute_list):
-        """Sets the execute_list of this RunTestCaseRequestBody.
+        r"""Sets the execute_list of this RunTestCaseRequestBody.
 
         测试用例执行信息，数组长度小于等于50
 

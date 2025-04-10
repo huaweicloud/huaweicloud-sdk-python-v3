@@ -29,7 +29,7 @@ class TopSlowLogTopSlowLogList:
     }
 
     def __init__(self, instance_id=None, instance_name=None, slow_log_num=None):
-        """TopSlowLogTopSlowLogList
+        r"""TopSlowLogTopSlowLogList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TopSlowLogTopSlowLogList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TopSlowLogTopSlowLogList.
+        r"""Gets the instance_id of this TopSlowLogTopSlowLogList.
 
         实例ID
 
@@ -68,7 +68,7 @@ class TopSlowLogTopSlowLogList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TopSlowLogTopSlowLogList.
+        r"""Sets the instance_id of this TopSlowLogTopSlowLogList.
 
         实例ID
 
@@ -79,7 +79,7 @@ class TopSlowLogTopSlowLogList:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this TopSlowLogTopSlowLogList.
+        r"""Gets the instance_name of this TopSlowLogTopSlowLogList.
 
         实例数量
 
@@ -90,7 +90,7 @@ class TopSlowLogTopSlowLogList:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this TopSlowLogTopSlowLogList.
+        r"""Sets the instance_name of this TopSlowLogTopSlowLogList.
 
         实例数量
 
@@ -101,7 +101,7 @@ class TopSlowLogTopSlowLogList:
 
     @property
     def slow_log_num(self):
-        """Gets the slow_log_num of this TopSlowLogTopSlowLogList.
+        r"""Gets the slow_log_num of this TopSlowLogTopSlowLogList.
 
         慢SQL数量
 
@@ -112,7 +112,7 @@ class TopSlowLogTopSlowLogList:
 
     @slow_log_num.setter
     def slow_log_num(self, slow_log_num):
-        """Sets the slow_log_num of this TopSlowLogTopSlowLogList.
+        r"""Sets the slow_log_num of this TopSlowLogTopSlowLogList.
 
         慢SQL数量
 

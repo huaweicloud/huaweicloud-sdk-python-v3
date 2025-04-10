@@ -26,7 +26,7 @@ class ShowClobDetailResponse(SdkResponse):
     }
 
     def __init__(self, clob_string=None):
-        """ShowClobDetailResponse
+        r"""ShowClobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClobDetailResponse(SdkResponse):
 
     @property
     def clob_string(self):
-        """Gets the clob_string of this ShowClobDetailResponse.
+        r"""Gets the clob_string of this ShowClobDetailResponse.
 
         clob详情。
 
@@ -55,7 +55,7 @@ class ShowClobDetailResponse(SdkResponse):
 
     @clob_string.setter
     def clob_string(self, clob_string):
-        """Sets the clob_string of this ShowClobDetailResponse.
+        r"""Sets the clob_string of this ShowClobDetailResponse.
 
         clob详情。
 

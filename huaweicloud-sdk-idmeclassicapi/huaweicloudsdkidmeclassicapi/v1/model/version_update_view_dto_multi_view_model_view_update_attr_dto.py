@@ -29,7 +29,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
     }
 
     def __init__(self, version_id=None, new_view_attrs=None, need_set_null=None):
-        """VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO
+        r"""VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @property
     def version_id(self):
-        """Gets the version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Gets the version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Sets the version_id of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @property
     def new_view_attrs(self):
-        """Gets the new_view_attrs of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Gets the new_view_attrs of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         :return: The new_view_attrs of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelViewUpdateAttrDTO`
@@ -86,7 +86,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @new_view_attrs.setter
     def new_view_attrs(self, new_view_attrs):
-        """Sets the new_view_attrs of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Sets the new_view_attrs of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         :param new_view_attrs: The new_view_attrs of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :type new_view_attrs: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelViewUpdateAttrDTO`
@@ -95,7 +95,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @property
     def need_set_null(self):
-        """Gets the need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Gets the need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         **参数解释：**  指定不复制的视图属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -106,7 +106,7 @@ class VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @need_set_null.setter
     def need_set_null(self, need_set_null):
-        """Sets the need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Sets the need_set_null of this VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         **参数解释：**  指定不复制的视图属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

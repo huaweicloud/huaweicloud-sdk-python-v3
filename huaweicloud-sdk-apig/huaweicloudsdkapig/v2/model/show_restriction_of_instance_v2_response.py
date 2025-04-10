@@ -28,7 +28,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
     }
 
     def __init__(self, restrict_cidrs=None, resource_subnet_cidr=None):
-        """ShowRestrictionOfInstanceV2Response
+        r"""ShowRestrictionOfInstanceV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
 
     @property
     def restrict_cidrs(self):
-        """Gets the restrict_cidrs of this ShowRestrictionOfInstanceV2Response.
+        r"""Gets the restrict_cidrs of this ShowRestrictionOfInstanceV2Response.
 
         受限的IP网段的CIDR列表。
 
@@ -62,7 +62,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
 
     @restrict_cidrs.setter
     def restrict_cidrs(self, restrict_cidrs):
-        """Sets the restrict_cidrs of this ShowRestrictionOfInstanceV2Response.
+        r"""Sets the restrict_cidrs of this ShowRestrictionOfInstanceV2Response.
 
         受限的IP网段的CIDR列表。
 
@@ -73,7 +73,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
 
     @property
     def resource_subnet_cidr(self):
-        """Gets the resource_subnet_cidr of this ShowRestrictionOfInstanceV2Response.
+        r"""Gets the resource_subnet_cidr of this ShowRestrictionOfInstanceV2Response.
 
         资源租户的IP网段的CIDR。
 
@@ -84,7 +84,7 @@ class ShowRestrictionOfInstanceV2Response(SdkResponse):
 
     @resource_subnet_cidr.setter
     def resource_subnet_cidr(self, resource_subnet_cidr):
-        """Sets the resource_subnet_cidr of this ShowRestrictionOfInstanceV2Response.
+        r"""Sets the resource_subnet_cidr of this ShowRestrictionOfInstanceV2Response.
 
         资源租户的IP网段的CIDR。
 

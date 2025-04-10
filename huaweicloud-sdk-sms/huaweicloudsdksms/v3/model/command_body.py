@@ -29,7 +29,7 @@ class CommandBody:
     }
 
     def __init__(self, command_name=None, result=None, result_detail=None):
-        """CommandBody
+        r"""CommandBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CommandBody:
 
     @property
     def command_name(self):
-        """Gets the command_name of this CommandBody.
+        r"""Gets the command_name of this CommandBody.
 
         命令名称，分为：START、STOP、DELETE、SYNC、UPLOAD_LOG、RSET_LOG_ACL
 
@@ -65,7 +65,7 @@ class CommandBody:
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this CommandBody.
+        r"""Sets the command_name of this CommandBody.
 
         命令名称，分为：START、STOP、DELETE、SYNC、UPLOAD_LOG、RSET_LOG_ACL
 
@@ -76,7 +76,7 @@ class CommandBody:
 
     @property
     def result(self):
-        """Gets the result of this CommandBody.
+        r"""Gets the result of this CommandBody.
 
         命令执行结果  success代表执行命令成功  fail代表命令执行失败 
 
@@ -87,7 +87,7 @@ class CommandBody:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CommandBody.
+        r"""Sets the result of this CommandBody.
 
         命令执行结果  success代表执行命令成功  fail代表命令执行失败 
 
@@ -98,7 +98,7 @@ class CommandBody:
 
     @property
     def result_detail(self):
-        """Gets the result_detail of this CommandBody.
+        r"""Gets the result_detail of this CommandBody.
 
         JSON格式的命令执行结果，只用于保存数据库，没有其他作用
 
@@ -109,7 +109,7 @@ class CommandBody:
 
     @result_detail.setter
     def result_detail(self, result_detail):
-        """Sets the result_detail of this CommandBody.
+        r"""Sets the result_detail of this CommandBody.
 
         JSON格式的命令执行结果，只用于保存数据库，没有其他作用
 

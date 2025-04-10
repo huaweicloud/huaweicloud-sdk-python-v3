@@ -24,7 +24,7 @@ class ApplyForAccessResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ApplyForAccessResponse
+        r"""ApplyForAccessResponse
 
         The model defined in huaweicloud sdk
 

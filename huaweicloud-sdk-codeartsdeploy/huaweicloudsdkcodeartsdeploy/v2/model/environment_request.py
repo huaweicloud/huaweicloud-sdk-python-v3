@@ -27,7 +27,7 @@ class EnvironmentRequest:
     }
 
     def __init__(self, name=None, description=None):
-        """EnvironmentRequest
+        r"""EnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EnvironmentRequest:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentRequest.
+        r"""Gets the name of this EnvironmentRequest.
 
         环境名称
 
@@ -61,7 +61,7 @@ class EnvironmentRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentRequest.
+        r"""Sets the name of this EnvironmentRequest.
 
         环境名称
 
@@ -72,7 +72,7 @@ class EnvironmentRequest:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentRequest.
+        r"""Gets the description of this EnvironmentRequest.
 
         环境描述信息
 
@@ -83,7 +83,7 @@ class EnvironmentRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentRequest.
+        r"""Sets the description of this EnvironmentRequest.
 
         环境描述信息
 

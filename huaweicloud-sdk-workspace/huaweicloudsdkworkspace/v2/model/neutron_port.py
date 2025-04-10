@@ -31,7 +31,7 @@ class NeutronPort:
     }
 
     def __init__(self, id=None, status=None, network_id=None, fixed_ips=None):
-        """NeutronPort
+        r"""NeutronPort
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NeutronPort:
 
     @property
     def id(self):
-        """Gets the id of this NeutronPort.
+        r"""Gets the id of this NeutronPort.
 
         端口唯一标识
 
@@ -75,7 +75,7 @@ class NeutronPort:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronPort.
+        r"""Sets the id of this NeutronPort.
 
         端口唯一标识
 
@@ -86,7 +86,7 @@ class NeutronPort:
 
     @property
     def status(self):
-        """Gets the status of this NeutronPort.
+        r"""Gets the status of this NeutronPort.
 
         私有ip状态
 
@@ -97,7 +97,7 @@ class NeutronPort:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronPort.
+        r"""Sets the status of this NeutronPort.
 
         私有ip状态
 
@@ -108,7 +108,7 @@ class NeutronPort:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronPort.
+        r"""Gets the network_id of this NeutronPort.
 
         端口所属网络的ID
 
@@ -119,7 +119,7 @@ class NeutronPort:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronPort.
+        r"""Sets the network_id of this NeutronPort.
 
         端口所属网络的ID
 
@@ -130,7 +130,7 @@ class NeutronPort:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this NeutronPort.
+        r"""Gets the fixed_ips of this NeutronPort.
 
         端口IP
 
@@ -141,7 +141,7 @@ class NeutronPort:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this NeutronPort.
+        r"""Sets the fixed_ips of this NeutronPort.
 
         端口IP
 

@@ -25,7 +25,7 @@ class ShowBucketRegionRequest:
     }
 
     def __init__(self, body=None):
-        """ShowBucketRegionRequest
+        r"""ShowBucketRegionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowBucketRegionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowBucketRegionRequest.
+        r"""Gets the body of this ShowBucketRegionRequest.
 
         :return: The body of this ShowBucketRegionRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.ShowBucketRegionReq`
@@ -52,7 +52,7 @@ class ShowBucketRegionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBucketRegionRequest.
+        r"""Sets the body of this ShowBucketRegionRequest.
 
         :param body: The body of this ShowBucketRegionRequest.
         :type body: :class:`huaweicloudsdkoms.v2.ShowBucketRegionReq`

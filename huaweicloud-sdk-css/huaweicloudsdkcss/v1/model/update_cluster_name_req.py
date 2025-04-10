@@ -25,7 +25,7 @@ class UpdateClusterNameReq:
     }
 
     def __init__(self, display_name=None):
-        """UpdateClusterNameReq
+        r"""UpdateClusterNameReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateClusterNameReq:
 
     @property
     def display_name(self):
-        """Gets the display_name of this UpdateClusterNameReq.
+        r"""Gets the display_name of this UpdateClusterNameReq.
 
         修改后集群名称。
 
@@ -53,7 +53,7 @@ class UpdateClusterNameReq:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this UpdateClusterNameReq.
+        r"""Sets the display_name of this UpdateClusterNameReq.
 
         修改后集群名称。
 

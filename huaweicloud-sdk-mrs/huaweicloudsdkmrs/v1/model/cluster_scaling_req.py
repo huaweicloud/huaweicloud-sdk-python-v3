@@ -31,7 +31,7 @@ class ClusterScalingReq:
     }
 
     def __init__(self, service_id=None, plan_id=None, parameters=None, previous_values=None):
-        """ClusterScalingReq
+        r"""ClusterScalingReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ClusterScalingReq:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ClusterScalingReq.
+        r"""Gets the service_id of this ClusterScalingReq.
 
         服务ID，为扩展接口，预留此参数。用户不需要配置。
 
@@ -74,7 +74,7 @@ class ClusterScalingReq:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ClusterScalingReq.
+        r"""Sets the service_id of this ClusterScalingReq.
 
         服务ID，为扩展接口，预留此参数。用户不需要配置。
 
@@ -85,7 +85,7 @@ class ClusterScalingReq:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ClusterScalingReq.
+        r"""Gets the plan_id of this ClusterScalingReq.
 
         套餐ID，为扩展接口，预留此参数。用户不需要配置。
 
@@ -96,7 +96,7 @@ class ClusterScalingReq:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ClusterScalingReq.
+        r"""Sets the plan_id of this ClusterScalingReq.
 
         套餐ID，为扩展接口，预留此参数。用户不需要配置。
 
@@ -107,7 +107,7 @@ class ClusterScalingReq:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ClusterScalingReq.
+        r"""Gets the parameters of this ClusterScalingReq.
 
         :return: The parameters of this ClusterScalingReq.
         :rtype: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`
@@ -116,7 +116,7 @@ class ClusterScalingReq:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ClusterScalingReq.
+        r"""Sets the parameters of this ClusterScalingReq.
 
         :param parameters: The parameters of this ClusterScalingReq.
         :type parameters: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`
@@ -125,7 +125,7 @@ class ClusterScalingReq:
 
     @property
     def previous_values(self):
-        """Gets the previous_values of this ClusterScalingReq.
+        r"""Gets the previous_values of this ClusterScalingReq.
 
         扩展接口，预留此参数。用户不需要配置。
 
@@ -136,7 +136,7 @@ class ClusterScalingReq:
 
     @previous_values.setter
     def previous_values(self, previous_values):
-        """Sets the previous_values of this ClusterScalingReq.
+        r"""Sets the previous_values of this ClusterScalingReq.
 
         扩展接口，预留此参数。用户不需要配置。
 

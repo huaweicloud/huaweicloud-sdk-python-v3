@@ -42,7 +42,7 @@ class ResetActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, active_code_id=None, active_code=None, robot_id=None, room_id=None, valid_period=None, expire_time=None, create_time=None, update_time=None, x_request_id=None):
-        """ResetActiveCodeResponse
+        r"""ResetActiveCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def active_code_id(self):
-        """Gets the active_code_id of this ResetActiveCodeResponse.
+        r"""Gets the active_code_id of this ResetActiveCodeResponse.
 
         激活码ID。
 
@@ -111,7 +111,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @active_code_id.setter
     def active_code_id(self, active_code_id):
-        """Sets the active_code_id of this ResetActiveCodeResponse.
+        r"""Sets the active_code_id of this ResetActiveCodeResponse.
 
         激活码ID。
 
@@ -122,7 +122,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def active_code(self):
-        """Gets the active_code of this ResetActiveCodeResponse.
+        r"""Gets the active_code of this ResetActiveCodeResponse.
 
         激活码。
 
@@ -133,7 +133,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @active_code.setter
     def active_code(self, active_code):
-        """Sets the active_code of this ResetActiveCodeResponse.
+        r"""Sets the active_code of this ResetActiveCodeResponse.
 
         激活码。
 
@@ -144,7 +144,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ResetActiveCodeResponse.
+        r"""Gets the robot_id of this ResetActiveCodeResponse.
 
         应用ID。
 
@@ -155,7 +155,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ResetActiveCodeResponse.
+        r"""Sets the robot_id of this ResetActiveCodeResponse.
 
         应用ID。
 
@@ -166,7 +166,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this ResetActiveCodeResponse.
+        r"""Gets the room_id of this ResetActiveCodeResponse.
 
         智能交互对话ID。
 
@@ -177,7 +177,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ResetActiveCodeResponse.
+        r"""Sets the room_id of this ResetActiveCodeResponse.
 
         智能交互对话ID。
 
@@ -188,7 +188,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this ResetActiveCodeResponse.
+        r"""Gets the valid_period of this ResetActiveCodeResponse.
 
         有效天数（0表示长期有效）。
 
@@ -199,7 +199,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this ResetActiveCodeResponse.
+        r"""Sets the valid_period of this ResetActiveCodeResponse.
 
         有效天数（0表示长期有效）。
 
@@ -210,7 +210,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ResetActiveCodeResponse.
+        r"""Gets the expire_time of this ResetActiveCodeResponse.
 
         过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -221,7 +221,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ResetActiveCodeResponse.
+        r"""Sets the expire_time of this ResetActiveCodeResponse.
 
         过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -232,7 +232,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ResetActiveCodeResponse.
+        r"""Gets the create_time of this ResetActiveCodeResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -243,7 +243,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ResetActiveCodeResponse.
+        r"""Sets the create_time of this ResetActiveCodeResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -254,7 +254,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ResetActiveCodeResponse.
+        r"""Gets the update_time of this ResetActiveCodeResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -265,7 +265,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ResetActiveCodeResponse.
+        r"""Sets the update_time of this ResetActiveCodeResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -276,7 +276,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ResetActiveCodeResponse.
+        r"""Gets the x_request_id of this ResetActiveCodeResponse.
 
         :return: The x_request_id of this ResetActiveCodeResponse.
         :rtype: str
@@ -285,7 +285,7 @@ class ResetActiveCodeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ResetActiveCodeResponse.
+        r"""Sets the x_request_id of this ResetActiveCodeResponse.
 
         :param x_request_id: The x_request_id of this ResetActiveCodeResponse.
         :type x_request_id: str

@@ -97,7 +97,7 @@ class AppServer:
     }
 
     def __init__(self, id=None, name=None, machine_name=None, description=None, server_group_id=None, flavor=None, status=None, create_time=None, update_time=None, image_id=None, availability_zone=None, domain=None, ou_name=None, sid=None, instance_id=None, os_version=None, os_type=None, order_id=None, maintain_status=None, scaling_auto_create=None, job_id=None, job_type=None, job_status=None, job_time=None, resource_pool_id=None, resource_pool_type=None, host_id=None, server_group_name=None, product_info=None, metadata=None, session_count=None, vm_status=None, task_status=None, freeze=None, host_address=None, enterprise_project_id=None, tags=None):
-        """AppServer
+        r"""AppServer
 
         The model defined in huaweicloud sdk
 
@@ -295,7 +295,7 @@ class AppServer:
 
     @property
     def id(self):
-        """Gets the id of this AppServer.
+        r"""Gets the id of this AppServer.
 
         aps实例的唯一标识。
 
@@ -306,7 +306,7 @@ class AppServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppServer.
+        r"""Sets the id of this AppServer.
 
         aps实例的唯一标识。
 
@@ -317,7 +317,7 @@ class AppServer:
 
     @property
     def name(self):
-        """Gets the name of this AppServer.
+        r"""Gets the name of this AppServer.
 
         服务器名称。
 
@@ -328,7 +328,7 @@ class AppServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppServer.
+        r"""Sets the name of this AppServer.
 
         服务器名称。
 
@@ -339,7 +339,7 @@ class AppServer:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this AppServer.
+        r"""Gets the machine_name of this AppServer.
 
         计算机名称。
 
@@ -350,7 +350,7 @@ class AppServer:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this AppServer.
+        r"""Sets the machine_name of this AppServer.
 
         计算机名称。
 
@@ -361,7 +361,7 @@ class AppServer:
 
     @property
     def description(self):
-        """Gets the description of this AppServer.
+        r"""Gets the description of this AppServer.
 
         描述。
 
@@ -372,7 +372,7 @@ class AppServer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppServer.
+        r"""Sets the description of this AppServer.
 
         描述。
 
@@ -383,7 +383,7 @@ class AppServer:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this AppServer.
+        r"""Gets the server_group_id of this AppServer.
 
         服务器组ID。
 
@@ -394,7 +394,7 @@ class AppServer:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this AppServer.
+        r"""Sets the server_group_id of this AppServer.
 
         服务器组ID。
 
@@ -405,7 +405,7 @@ class AppServer:
 
     @property
     def flavor(self):
-        """Gets the flavor of this AppServer.
+        r"""Gets the flavor of this AppServer.
 
         :return: The flavor of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
@@ -414,7 +414,7 @@ class AppServer:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this AppServer.
+        r"""Sets the flavor of this AppServer.
 
         :param flavor: The flavor of this AppServer.
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
@@ -423,7 +423,7 @@ class AppServer:
 
     @property
     def status(self):
-        """Gets the status of this AppServer.
+        r"""Gets the status of this AppServer.
 
         :return: The status of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -432,7 +432,7 @@ class AppServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AppServer.
+        r"""Sets the status of this AppServer.
 
         :param status: The status of this AppServer.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -441,7 +441,7 @@ class AppServer:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppServer.
+        r"""Gets the create_time of this AppServer.
 
         服务器创建时间。
 
@@ -452,7 +452,7 @@ class AppServer:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppServer.
+        r"""Sets the create_time of this AppServer.
 
         服务器创建时间。
 
@@ -463,7 +463,7 @@ class AppServer:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppServer.
+        r"""Gets the update_time of this AppServer.
 
         更新时间。
 
@@ -474,7 +474,7 @@ class AppServer:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppServer.
+        r"""Sets the update_time of this AppServer.
 
         更新时间。
 
@@ -485,7 +485,7 @@ class AppServer:
 
     @property
     def image_id(self):
-        """Gets the image_id of this AppServer.
+        r"""Gets the image_id of this AppServer.
 
         镜像ID。
 
@@ -496,7 +496,7 @@ class AppServer:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this AppServer.
+        r"""Sets the image_id of this AppServer.
 
         镜像ID。
 
@@ -507,7 +507,7 @@ class AppServer:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this AppServer.
+        r"""Gets the availability_zone of this AppServer.
 
         服务器可用分区。
 
@@ -518,7 +518,7 @@ class AppServer:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this AppServer.
+        r"""Sets the availability_zone of this AppServer.
 
         服务器可用分区。
 
@@ -529,7 +529,7 @@ class AppServer:
 
     @property
     def domain(self):
-        """Gets the domain of this AppServer.
+        r"""Gets the domain of this AppServer.
 
         域。
 
@@ -540,7 +540,7 @@ class AppServer:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AppServer.
+        r"""Sets the domain of this AppServer.
 
         域。
 
@@ -551,7 +551,7 @@ class AppServer:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this AppServer.
+        r"""Gets the ou_name of this AppServer.
 
         组织名称。
 
@@ -562,7 +562,7 @@ class AppServer:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this AppServer.
+        r"""Sets the ou_name of this AppServer.
 
         组织名称。
 
@@ -573,7 +573,7 @@ class AppServer:
 
     @property
     def sid(self):
-        """Gets the sid of this AppServer.
+        r"""Gets the sid of this AppServer.
 
         实例的SID。
 
@@ -584,7 +584,7 @@ class AppServer:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this AppServer.
+        r"""Sets the sid of this AppServer.
 
         实例的SID。
 
@@ -595,7 +595,7 @@ class AppServer:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AppServer.
+        r"""Gets the instance_id of this AppServer.
 
         实例的ID。
 
@@ -606,7 +606,7 @@ class AppServer:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AppServer.
+        r"""Sets the instance_id of this AppServer.
 
         实例的ID。
 
@@ -617,7 +617,7 @@ class AppServer:
 
     @property
     def os_version(self):
-        """Gets the os_version of this AppServer.
+        r"""Gets the os_version of this AppServer.
 
         服务器系统版本。
 
@@ -628,7 +628,7 @@ class AppServer:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this AppServer.
+        r"""Sets the os_version of this AppServer.
 
         服务器系统版本。
 
@@ -639,7 +639,7 @@ class AppServer:
 
     @property
     def os_type(self):
-        """Gets the os_type of this AppServer.
+        r"""Gets the os_type of this AppServer.
 
         操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
@@ -650,7 +650,7 @@ class AppServer:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this AppServer.
+        r"""Sets the os_type of this AppServer.
 
         操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
@@ -661,7 +661,7 @@ class AppServer:
 
     @property
     def order_id(self):
-        """Gets the order_id of this AppServer.
+        r"""Gets the order_id of this AppServer.
 
         包周期产品的订单ID。
 
@@ -672,7 +672,7 @@ class AppServer:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this AppServer.
+        r"""Sets the order_id of this AppServer.
 
         包周期产品的订单ID。
 
@@ -683,7 +683,7 @@ class AppServer:
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this AppServer.
+        r"""Gets the maintain_status of this AppServer.
 
         是否维护状态。
 
@@ -694,7 +694,7 @@ class AppServer:
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this AppServer.
+        r"""Sets the maintain_status of this AppServer.
 
         是否维护状态。
 
@@ -705,7 +705,7 @@ class AppServer:
 
     @property
     def scaling_auto_create(self):
-        """Gets the scaling_auto_create of this AppServer.
+        r"""Gets the scaling_auto_create of this AppServer.
 
         配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
@@ -716,7 +716,7 @@ class AppServer:
 
     @scaling_auto_create.setter
     def scaling_auto_create(self, scaling_auto_create):
-        """Sets the scaling_auto_create of this AppServer.
+        r"""Sets the scaling_auto_create of this AppServer.
 
         配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
@@ -727,7 +727,7 @@ class AppServer:
 
     @property
     def job_id(self):
-        """Gets the job_id of this AppServer.
+        r"""Gets the job_id of this AppServer.
 
         上一次执行job的id。
 
@@ -738,7 +738,7 @@ class AppServer:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AppServer.
+        r"""Sets the job_id of this AppServer.
 
         上一次执行job的id。
 
@@ -749,7 +749,7 @@ class AppServer:
 
     @property
     def job_type(self):
-        """Gets the job_type of this AppServer.
+        r"""Gets the job_type of this AppServer.
 
         :return: The job_type of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -758,7 +758,7 @@ class AppServer:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this AppServer.
+        r"""Sets the job_type of this AppServer.
 
         :param job_type: The job_type of this AppServer.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -767,7 +767,7 @@ class AppServer:
 
     @property
     def job_status(self):
-        """Gets the job_status of this AppServer.
+        r"""Gets the job_status of this AppServer.
 
         :return: The job_status of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -776,7 +776,7 @@ class AppServer:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this AppServer.
+        r"""Sets the job_status of this AppServer.
 
         :param job_status: The job_status of this AppServer.
         :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -785,7 +785,7 @@ class AppServer:
 
     @property
     def job_time(self):
-        """Gets the job_time of this AppServer.
+        r"""Gets the job_time of this AppServer.
 
         上一次执行job的执行时间。
 
@@ -796,7 +796,7 @@ class AppServer:
 
     @job_time.setter
     def job_time(self, job_time):
-        """Sets the job_time of this AppServer.
+        r"""Sets the job_time of this AppServer.
 
         上一次执行job的执行时间。
 
@@ -807,7 +807,7 @@ class AppServer:
 
     @property
     def resource_pool_id(self):
-        """Gets the resource_pool_id of this AppServer.
+        r"""Gets the resource_pool_id of this AppServer.
 
         资源池ID。
 
@@ -818,7 +818,7 @@ class AppServer:
 
     @resource_pool_id.setter
     def resource_pool_id(self, resource_pool_id):
-        """Sets the resource_pool_id of this AppServer.
+        r"""Sets the resource_pool_id of this AppServer.
 
         资源池ID。
 
@@ -829,7 +829,7 @@ class AppServer:
 
     @property
     def resource_pool_type(self):
-        """Gets the resource_pool_type of this AppServer.
+        r"""Gets the resource_pool_type of this AppServer.
 
         资源池类型： - private：私有资源池。 - public: 工作资源池。
 
@@ -840,7 +840,7 @@ class AppServer:
 
     @resource_pool_type.setter
     def resource_pool_type(self, resource_pool_type):
-        """Sets the resource_pool_type of this AppServer.
+        r"""Sets the resource_pool_type of this AppServer.
 
         资源池类型： - private：私有资源池。 - public: 工作资源池。
 
@@ -851,7 +851,7 @@ class AppServer:
 
     @property
     def host_id(self):
-        """Gets the host_id of this AppServer.
+        r"""Gets the host_id of this AppServer.
 
         云专属主机id。
 
@@ -862,7 +862,7 @@ class AppServer:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this AppServer.
+        r"""Sets the host_id of this AppServer.
 
         云专属主机id。
 
@@ -873,7 +873,7 @@ class AppServer:
 
     @property
     def server_group_name(self):
-        """Gets the server_group_name of this AppServer.
+        r"""Gets the server_group_name of this AppServer.
 
         服务器组名称。
 
@@ -884,7 +884,7 @@ class AppServer:
 
     @server_group_name.setter
     def server_group_name(self, server_group_name):
-        """Sets the server_group_name of this AppServer.
+        r"""Sets the server_group_name of this AppServer.
 
         服务器组名称。
 
@@ -895,7 +895,7 @@ class AppServer:
 
     @property
     def product_info(self):
-        """Gets the product_info of this AppServer.
+        r"""Gets the product_info of this AppServer.
 
         :return: The product_info of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -904,7 +904,7 @@ class AppServer:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this AppServer.
+        r"""Sets the product_info of this AppServer.
 
         :param product_info: The product_info of this AppServer.
         :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -913,7 +913,7 @@ class AppServer:
 
     @property
     def metadata(self):
-        """Gets the metadata of this AppServer.
+        r"""Gets the metadata of this AppServer.
 
         弹性云服务器元数据。  >   1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -924,7 +924,7 @@ class AppServer:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this AppServer.
+        r"""Sets the metadata of this AppServer.
 
         弹性云服务器元数据。  >   1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -935,7 +935,7 @@ class AppServer:
 
     @property
     def session_count(self):
-        """Gets the session_count of this AppServer.
+        r"""Gets the session_count of this AppServer.
 
         会话数量。
 
@@ -946,7 +946,7 @@ class AppServer:
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this AppServer.
+        r"""Sets the session_count of this AppServer.
 
         会话数量。
 
@@ -957,7 +957,7 @@ class AppServer:
 
     @property
     def vm_status(self):
-        """Gets the vm_status of this AppServer.
+        r"""Gets the vm_status of this AppServer.
 
         :return: The vm_status of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
@@ -966,7 +966,7 @@ class AppServer:
 
     @vm_status.setter
     def vm_status(self, vm_status):
-        """Sets the vm_status of this AppServer.
+        r"""Sets the vm_status of this AppServer.
 
         :param vm_status: The vm_status of this AppServer.
         :type vm_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
@@ -975,7 +975,7 @@ class AppServer:
 
     @property
     def task_status(self):
-        """Gets the task_status of this AppServer.
+        r"""Gets the task_status of this AppServer.
 
         :return: The task_status of this AppServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
@@ -984,7 +984,7 @@ class AppServer:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this AppServer.
+        r"""Sets the task_status of this AppServer.
 
         :param task_status: The task_status of this AppServer.
         :type task_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
@@ -993,7 +993,7 @@ class AppServer:
 
     @property
     def freeze(self):
-        """Gets the freeze of this AppServer.
+        r"""Gets the freeze of this AppServer.
 
         冻结信息。
 
@@ -1004,7 +1004,7 @@ class AppServer:
 
     @freeze.setter
     def freeze(self, freeze):
-        """Sets the freeze of this AppServer.
+        r"""Sets the freeze of this AppServer.
 
         冻结信息。
 
@@ -1015,7 +1015,7 @@ class AppServer:
 
     @property
     def host_address(self):
-        """Gets the host_address of this AppServer.
+        r"""Gets the host_address of this AppServer.
 
         vpc和子网信息。
 
@@ -1026,7 +1026,7 @@ class AppServer:
 
     @host_address.setter
     def host_address(self, host_address):
-        """Sets the host_address of this AppServer.
+        r"""Sets the host_address of this AppServer.
 
         vpc和子网信息。
 
@@ -1037,7 +1037,7 @@ class AppServer:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AppServer.
+        r"""Gets the enterprise_project_id of this AppServer.
 
         企业项目ID,仅企业项目会返回
 
@@ -1048,7 +1048,7 @@ class AppServer:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AppServer.
+        r"""Sets the enterprise_project_id of this AppServer.
 
         企业项目ID,仅企业项目会返回
 
@@ -1059,7 +1059,7 @@ class AppServer:
 
     @property
     def tags(self):
-        """Gets the tags of this AppServer.
+        r"""Gets the tags of this AppServer.
 
         标签信息
 
@@ -1070,7 +1070,7 @@ class AppServer:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AppServer.
+        r"""Sets the tags of this AppServer.
 
         标签信息
 

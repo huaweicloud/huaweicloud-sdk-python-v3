@@ -26,7 +26,7 @@ class NeutronUpdateSubnetResponse(SdkResponse):
     }
 
     def __init__(self, subnet=None):
-        """NeutronUpdateSubnetResponse
+        r"""NeutronUpdateSubnetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronUpdateSubnetResponse(SdkResponse):
 
     @property
     def subnet(self):
-        """Gets the subnet of this NeutronUpdateSubnetResponse.
+        r"""Gets the subnet of this NeutronUpdateSubnetResponse.
 
         :return: The subnet of this NeutronUpdateSubnetResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronSubnet`
@@ -53,7 +53,7 @@ class NeutronUpdateSubnetResponse(SdkResponse):
 
     @subnet.setter
     def subnet(self, subnet):
-        """Sets the subnet of this NeutronUpdateSubnetResponse.
+        r"""Sets the subnet of this NeutronUpdateSubnetResponse.
 
         :param subnet: The subnet of this NeutronUpdateSubnetResponse.
         :type subnet: :class:`huaweicloudsdkvpc.v2.NeutronSubnet`

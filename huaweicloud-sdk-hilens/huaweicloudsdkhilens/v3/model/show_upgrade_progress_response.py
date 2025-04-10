@@ -32,7 +32,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
     }
 
     def __init__(self, version=None, status=None, progress=None, cause=None):
-        """ShowUpgradeProgressResponse
+        r"""ShowUpgradeProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowUpgradeProgressResponse.
+        r"""Gets the version of this ShowUpgradeProgressResponse.
 
         升级的固件版本
 
@@ -76,7 +76,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowUpgradeProgressResponse.
+        r"""Sets the version of this ShowUpgradeProgressResponse.
 
         升级的固件版本
 
@@ -87,7 +87,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowUpgradeProgressResponse.
+        r"""Gets the status of this ShowUpgradeProgressResponse.
 
         固件升级状态，1:升级中 2:升级失败 3:升级成功
 
@@ -98,7 +98,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUpgradeProgressResponse.
+        r"""Sets the status of this ShowUpgradeProgressResponse.
 
         固件升级状态，1:升级中 2:升级失败 3:升级成功
 
@@ -109,7 +109,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowUpgradeProgressResponse.
+        r"""Gets the progress of this ShowUpgradeProgressResponse.
 
         固件升级进度，用数字0-100表示
 
@@ -120,7 +120,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowUpgradeProgressResponse.
+        r"""Sets the progress of this ShowUpgradeProgressResponse.
 
         固件升级进度，用数字0-100表示
 
@@ -131,7 +131,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @property
     def cause(self):
-        """Gets the cause of this ShowUpgradeProgressResponse.
+        r"""Gets the cause of this ShowUpgradeProgressResponse.
 
         固件升级失败原因
 
@@ -142,7 +142,7 @@ class ShowUpgradeProgressResponse(SdkResponse):
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this ShowUpgradeProgressResponse.
+        r"""Sets the cause of this ShowUpgradeProgressResponse.
 
         固件升级失败原因
 

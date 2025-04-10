@@ -30,7 +30,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
     }
 
     def __init__(self, segment_url=None, package_url=None, authorization_letter_uploading_url=None):
-        """ShowJobUploadingAddressResponse
+        r"""ShowJobUploadingAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
 
     @property
     def segment_url(self):
-        """Gets the segment_url of this ShowJobUploadingAddressResponse.
+        r"""Gets the segment_url of this ShowJobUploadingAddressResponse.
 
         :return: The segment_url of this ShowJobUploadingAddressResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowJobUploadingAddressRspSegmentUrl`
@@ -67,7 +67,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
 
     @segment_url.setter
     def segment_url(self, segment_url):
-        """Sets the segment_url of this ShowJobUploadingAddressResponse.
+        r"""Sets the segment_url of this ShowJobUploadingAddressResponse.
 
         :param segment_url: The segment_url of this ShowJobUploadingAddressResponse.
         :type segment_url: :class:`huaweicloudsdkmetastudio.v1.ShowJobUploadingAddressRspSegmentUrl`
@@ -76,7 +76,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
 
     @property
     def package_url(self):
-        """Gets the package_url of this ShowJobUploadingAddressResponse.
+        r"""Gets the package_url of this ShowJobUploadingAddressResponse.
 
         :return: The package_url of this ShowJobUploadingAddressResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowJobUploadingAddressRspPackageUrl`
@@ -85,7 +85,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
 
     @package_url.setter
     def package_url(self, package_url):
-        """Sets the package_url of this ShowJobUploadingAddressResponse.
+        r"""Sets the package_url of this ShowJobUploadingAddressResponse.
 
         :param package_url: The package_url of this ShowJobUploadingAddressResponse.
         :type package_url: :class:`huaweicloudsdkmetastudio.v1.ShowJobUploadingAddressRspPackageUrl`
@@ -94,7 +94,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
 
     @property
     def authorization_letter_uploading_url(self):
-        """Gets the authorization_letter_uploading_url of this ShowJobUploadingAddressResponse.
+        r"""Gets the authorization_letter_uploading_url of this ShowJobUploadingAddressResponse.
 
         授权书的上传地址。
 
@@ -105,7 +105,7 @@ class ShowJobUploadingAddressResponse(SdkResponse):
 
     @authorization_letter_uploading_url.setter
     def authorization_letter_uploading_url(self, authorization_letter_uploading_url):
-        """Sets the authorization_letter_uploading_url of this ShowJobUploadingAddressResponse.
+        r"""Sets the authorization_letter_uploading_url of this ShowJobUploadingAddressResponse.
 
         授权书的上传地址。
 

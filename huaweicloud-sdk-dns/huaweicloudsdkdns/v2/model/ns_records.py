@@ -29,7 +29,7 @@ class NsRecords:
     }
 
     def __init__(self, hostname=None, address=None, priority=None):
-        """NsRecords
+        r"""NsRecords
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NsRecords:
 
     @property
     def hostname(self):
-        """Gets the hostname of this NsRecords.
+        r"""Gets the hostname of this NsRecords.
 
         主机名。  当为内网名称服务器时，此值为空。
 
@@ -68,7 +68,7 @@ class NsRecords:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this NsRecords.
+        r"""Sets the hostname of this NsRecords.
 
         主机名。  当为内网名称服务器时，此值为空。
 
@@ -79,7 +79,7 @@ class NsRecords:
 
     @property
     def address(self):
-        """Gets the address of this NsRecords.
+        r"""Gets the address of this NsRecords.
 
         名称服务器地址。  当为公网名称服务器时，此值为空。
 
@@ -90,7 +90,7 @@ class NsRecords:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this NsRecords.
+        r"""Sets the address of this NsRecords.
 
         名称服务器地址。  当为公网名称服务器时，此值为空。
 
@@ -101,7 +101,7 @@ class NsRecords:
 
     @property
     def priority(self):
-        """Gets the priority of this NsRecords.
+        r"""Gets the priority of this NsRecords.
 
         优先级。  示例：  如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
 
@@ -112,7 +112,7 @@ class NsRecords:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this NsRecords.
+        r"""Sets the priority of this NsRecords.
 
         优先级。  示例：  如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
 

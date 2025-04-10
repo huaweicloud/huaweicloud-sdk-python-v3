@@ -25,7 +25,7 @@ class FsDirReq:
     }
 
     def __init__(self, path=None):
-        """FsDirReq
+        r"""FsDirReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FsDirReq:
 
     @property
     def path(self):
-        """Gets the path of this FsDirReq.
+        r"""Gets the path of this FsDirReq.
 
         文件系统内合法的目录全路径。单层目录长度不允许超过255，全路径长度不允许超过4096。
 
@@ -53,7 +53,7 @@ class FsDirReq:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this FsDirReq.
+        r"""Sets the path of this FsDirReq.
 
         文件系统内合法的目录全路径。单层目录长度不允许超过255，全路径长度不允许超过4096。
 

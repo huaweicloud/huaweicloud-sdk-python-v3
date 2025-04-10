@@ -31,7 +31,7 @@ class ApigTriggerFuncInfo:
     }
 
     def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None):
-        """ApigTriggerFuncInfo
+        r"""ApigTriggerFuncInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ApigTriggerFuncInfo:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ApigTriggerFuncInfo.
+        r"""Gets the function_urn of this ApigTriggerFuncInfo.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -74,7 +74,7 @@ class ApigTriggerFuncInfo:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ApigTriggerFuncInfo.
+        r"""Sets the function_urn of this ApigTriggerFuncInfo.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -85,7 +85,7 @@ class ApigTriggerFuncInfo:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this ApigTriggerFuncInfo.
+        r"""Gets the invocation_type of this ApigTriggerFuncInfo.
 
         调用函数执行方式。 - sync：同步执行 - async：异步执行
 
@@ -96,7 +96,7 @@ class ApigTriggerFuncInfo:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this ApigTriggerFuncInfo.
+        r"""Sets the invocation_type of this ApigTriggerFuncInfo.
 
         调用函数执行方式。 - sync：同步执行 - async：异步执行
 
@@ -107,7 +107,7 @@ class ApigTriggerFuncInfo:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApigTriggerFuncInfo.
+        r"""Gets the timeout of this ApigTriggerFuncInfo.
 
         API网关请求函数服务的超时时间（毫秒）。APIG触发器此参数必填。
 
@@ -118,7 +118,7 @@ class ApigTriggerFuncInfo:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApigTriggerFuncInfo.
+        r"""Sets the timeout of this ApigTriggerFuncInfo.
 
         API网关请求函数服务的超时时间（毫秒）。APIG触发器此参数必填。
 
@@ -129,7 +129,7 @@ class ApigTriggerFuncInfo:
 
     @property
     def version(self):
-        """Gets the version of this ApigTriggerFuncInfo.
+        r"""Gets the version of this ApigTriggerFuncInfo.
 
         函数版本信息。
 
@@ -140,7 +140,7 @@ class ApigTriggerFuncInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApigTriggerFuncInfo.
+        r"""Sets the version of this ApigTriggerFuncInfo.
 
         函数版本信息。
 

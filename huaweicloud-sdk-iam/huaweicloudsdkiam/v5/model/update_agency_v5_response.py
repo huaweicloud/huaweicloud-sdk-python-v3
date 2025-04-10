@@ -24,7 +24,7 @@ class UpdateAgencyV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAgencyV5Response
+        r"""UpdateAgencyV5Response
 
         The model defined in huaweicloud sdk
 

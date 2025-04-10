@@ -27,7 +27,7 @@ class GeoClassificationItem:
     }
 
     def __init__(self, total=None, items=None):
-        """GeoClassificationItem
+        r"""GeoClassificationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GeoClassificationItem:
 
     @property
     def total(self):
-        """Gets the total of this GeoClassificationItem.
+        r"""Gets the total of this GeoClassificationItem.
 
         GeoItem的总数量
 
@@ -61,7 +61,7 @@ class GeoClassificationItem:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this GeoClassificationItem.
+        r"""Sets the total of this GeoClassificationItem.
 
         GeoItem的总数量
 
@@ -72,7 +72,7 @@ class GeoClassificationItem:
 
     @property
     def items(self):
-        """Gets the items of this GeoClassificationItem.
+        r"""Gets the items of this GeoClassificationItem.
 
         GeoItem详细信息
 
@@ -83,7 +83,7 @@ class GeoClassificationItem:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this GeoClassificationItem.
+        r"""Sets the items of this GeoClassificationItem.
 
         GeoItem详细信息
 

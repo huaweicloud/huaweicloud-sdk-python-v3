@@ -34,7 +34,7 @@ class ShowGetConfDetailResponse(SdkResponse):
     }
 
     def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None):
-        """ShowGetConfDetailResponse
+        r"""ShowGetConfDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowGetConfDetailResponse.
+        r"""Gets the name of this ShowGetConfDetailResponse.
 
         配置文件名称。
 
@@ -83,7 +83,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGetConfDetailResponse.
+        r"""Sets the name of this ShowGetConfDetailResponse.
 
         配置文件名称。
 
@@ -94,7 +94,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowGetConfDetailResponse.
+        r"""Gets the status of this ShowGetConfDetailResponse.
 
         配置文件状态。
 
@@ -105,7 +105,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowGetConfDetailResponse.
+        r"""Sets the status of this ShowGetConfDetailResponse.
 
         配置文件状态。
 
@@ -116,7 +116,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @property
     def conf_content(self):
-        """Gets the conf_content of this ShowGetConfDetailResponse.
+        r"""Gets the conf_content of this ShowGetConfDetailResponse.
 
         配置文件内容。
 
@@ -127,7 +127,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @conf_content.setter
     def conf_content(self, conf_content):
-        """Sets the conf_content of this ShowGetConfDetailResponse.
+        r"""Sets the conf_content of this ShowGetConfDetailResponse.
 
         配置文件内容。
 
@@ -138,7 +138,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @property
     def setting(self):
-        """Gets the setting of this ShowGetConfDetailResponse.
+        r"""Gets the setting of this ShowGetConfDetailResponse.
 
         :return: The setting of this ShowGetConfDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.Setting`
@@ -147,7 +147,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @setting.setter
     def setting(self, setting):
-        """Sets the setting of this ShowGetConfDetailResponse.
+        r"""Sets the setting of this ShowGetConfDetailResponse.
 
         :param setting: The setting of this ShowGetConfDetailResponse.
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
@@ -156,7 +156,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @property
     def update_at(self):
-        """Gets the update_at of this ShowGetConfDetailResponse.
+        r"""Gets the update_at of this ShowGetConfDetailResponse.
 
         更新时间。
 
@@ -167,7 +167,7 @@ class ShowGetConfDetailResponse(SdkResponse):
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ShowGetConfDetailResponse.
+        r"""Sets the update_at of this ShowGetConfDetailResponse.
 
         更新时间。
 

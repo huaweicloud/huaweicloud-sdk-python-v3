@@ -47,7 +47,7 @@ class ClusterConfigResponseInfo:
     }
 
     def __init__(self, cluster_id=None, protect_node_num=None, protect_interrupt_node_num=None, unprotect_node_num=None, node_total_num=None, cluster_name=None, charging_mode=None, prefer_packet_cycle=None, protect_type=None, protect_status=None, cluster_type=None, fail_reason=None):
-        """ClusterConfigResponseInfo
+        r"""ClusterConfigResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ClusterConfigResponseInfo.
+        r"""Gets the cluster_id of this ClusterConfigResponseInfo.
 
         集群id
 
@@ -131,7 +131,7 @@ class ClusterConfigResponseInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ClusterConfigResponseInfo.
+        r"""Sets the cluster_id of this ClusterConfigResponseInfo.
 
         集群id
 
@@ -142,7 +142,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def protect_node_num(self):
-        """Gets the protect_node_num of this ClusterConfigResponseInfo.
+        r"""Gets the protect_node_num of this ClusterConfigResponseInfo.
 
         集群开启防护节点数量
 
@@ -153,7 +153,7 @@ class ClusterConfigResponseInfo:
 
     @protect_node_num.setter
     def protect_node_num(self, protect_node_num):
-        """Sets the protect_node_num of this ClusterConfigResponseInfo.
+        r"""Sets the protect_node_num of this ClusterConfigResponseInfo.
 
         集群开启防护节点数量
 
@@ -164,7 +164,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def protect_interrupt_node_num(self):
-        """Gets the protect_interrupt_node_num of this ClusterConfigResponseInfo.
+        r"""Gets the protect_interrupt_node_num of this ClusterConfigResponseInfo.
 
         集群防护中断节点数量
 
@@ -175,7 +175,7 @@ class ClusterConfigResponseInfo:
 
     @protect_interrupt_node_num.setter
     def protect_interrupt_node_num(self, protect_interrupt_node_num):
-        """Sets the protect_interrupt_node_num of this ClusterConfigResponseInfo.
+        r"""Sets the protect_interrupt_node_num of this ClusterConfigResponseInfo.
 
         集群防护中断节点数量
 
@@ -186,7 +186,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def unprotect_node_num(self):
-        """Gets the unprotect_node_num of this ClusterConfigResponseInfo.
+        r"""Gets the unprotect_node_num of this ClusterConfigResponseInfo.
 
         集群防护中断节点数量
 
@@ -197,7 +197,7 @@ class ClusterConfigResponseInfo:
 
     @unprotect_node_num.setter
     def unprotect_node_num(self, unprotect_node_num):
-        """Sets the unprotect_node_num of this ClusterConfigResponseInfo.
+        r"""Sets the unprotect_node_num of this ClusterConfigResponseInfo.
 
         集群防护中断节点数量
 
@@ -208,7 +208,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def node_total_num(self):
-        """Gets the node_total_num of this ClusterConfigResponseInfo.
+        r"""Gets the node_total_num of this ClusterConfigResponseInfo.
 
         集群节点总数
 
@@ -219,7 +219,7 @@ class ClusterConfigResponseInfo:
 
     @node_total_num.setter
     def node_total_num(self, node_total_num):
-        """Sets the node_total_num of this ClusterConfigResponseInfo.
+        r"""Sets the node_total_num of this ClusterConfigResponseInfo.
 
         集群节点总数
 
@@ -230,7 +230,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ClusterConfigResponseInfo.
+        r"""Gets the cluster_name of this ClusterConfigResponseInfo.
 
         集群名称
 
@@ -241,7 +241,7 @@ class ClusterConfigResponseInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ClusterConfigResponseInfo.
+        r"""Sets the cluster_name of this ClusterConfigResponseInfo.
 
         集群名称
 
@@ -252,7 +252,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ClusterConfigResponseInfo.
+        r"""Gets the charging_mode of this ClusterConfigResponseInfo.
 
         付费模式：   on_demand 按需   free 免费
 
@@ -263,7 +263,7 @@ class ClusterConfigResponseInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ClusterConfigResponseInfo.
+        r"""Sets the charging_mode of this ClusterConfigResponseInfo.
 
         付费模式：   on_demand 按需   free 免费
 
@@ -274,7 +274,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def prefer_packet_cycle(self):
-        """Gets the prefer_packet_cycle of this ClusterConfigResponseInfo.
+        r"""Gets the prefer_packet_cycle of this ClusterConfigResponseInfo.
 
         优先使用包周期配额；默认0
 
@@ -285,7 +285,7 @@ class ClusterConfigResponseInfo:
 
     @prefer_packet_cycle.setter
     def prefer_packet_cycle(self, prefer_packet_cycle):
-        """Sets the prefer_packet_cycle of this ClusterConfigResponseInfo.
+        r"""Sets the prefer_packet_cycle of this ClusterConfigResponseInfo.
 
         优先使用包周期配额；默认0
 
@@ -296,7 +296,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def protect_type(self):
-        """Gets the protect_type of this ClusterConfigResponseInfo.
+        r"""Gets the protect_type of this ClusterConfigResponseInfo.
 
         cce集群防护类型
 
@@ -307,7 +307,7 @@ class ClusterConfigResponseInfo:
 
     @protect_type.setter
     def protect_type(self, protect_type):
-        """Sets the protect_type of this ClusterConfigResponseInfo.
+        r"""Sets the protect_type of this ClusterConfigResponseInfo.
 
         cce集群防护类型
 
@@ -318,7 +318,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ClusterConfigResponseInfo.
+        r"""Gets the protect_status of this ClusterConfigResponseInfo.
 
         防护状态：   protecting 防护中   part_protect  部分防护   creating 开启中   error_protect 防护异常   unprotect 未防护   wait_protect 待防护
 
@@ -329,7 +329,7 @@ class ClusterConfigResponseInfo:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ClusterConfigResponseInfo.
+        r"""Sets the protect_status of this ClusterConfigResponseInfo.
 
         防护状态：   protecting 防护中   part_protect  部分防护   creating 开启中   error_protect 防护异常   unprotect 未防护   wait_protect 待防护
 
@@ -340,7 +340,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this ClusterConfigResponseInfo.
+        r"""Gets the cluster_type of this ClusterConfigResponseInfo.
 
         集群类型
 
@@ -351,7 +351,7 @@ class ClusterConfigResponseInfo:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this ClusterConfigResponseInfo.
+        r"""Sets the cluster_type of this ClusterConfigResponseInfo.
 
         集群类型
 
@@ -362,7 +362,7 @@ class ClusterConfigResponseInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ClusterConfigResponseInfo.
+        r"""Gets the fail_reason of this ClusterConfigResponseInfo.
 
         fail reason
 
@@ -373,7 +373,7 @@ class ClusterConfigResponseInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ClusterConfigResponseInfo.
+        r"""Sets the fail_reason of this ClusterConfigResponseInfo.
 
         fail reason
 

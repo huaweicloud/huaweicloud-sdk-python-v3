@@ -29,7 +29,7 @@ class PostDomainNerRequest:
     }
 
     def __init__(self, text=None, lang=None, domain=None):
-        """PostDomainNerRequest
+        r"""PostDomainNerRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PostDomainNerRequest:
 
     @property
     def text(self):
-        """Gets the text of this PostDomainNerRequest.
+        r"""Gets the text of this PostDomainNerRequest.
 
         待分析文本，长度为1~512，文本编码为UTF-8。
 
@@ -67,7 +67,7 @@ class PostDomainNerRequest:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this PostDomainNerRequest.
+        r"""Sets the text of this PostDomainNerRequest.
 
         待分析文本，长度为1~512，文本编码为UTF-8。
 
@@ -78,7 +78,7 @@ class PostDomainNerRequest:
 
     @property
     def lang(self):
-        """Gets the lang of this PostDomainNerRequest.
+        r"""Gets the lang of this PostDomainNerRequest.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -89,7 +89,7 @@ class PostDomainNerRequest:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this PostDomainNerRequest.
+        r"""Sets the lang of this PostDomainNerRequest.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -100,7 +100,7 @@ class PostDomainNerRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this PostDomainNerRequest.
+        r"""Gets the domain of this PostDomainNerRequest.
 
         支持的领域类型，目前支持通用（general）领域、商务（business）领域、娱乐（entertainment）领域，默认为general。
 
@@ -111,7 +111,7 @@ class PostDomainNerRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this PostDomainNerRequest.
+        r"""Sets the domain of this PostDomainNerRequest.
 
         支持的领域类型，目前支持通用（general）领域、商务（business）领域、娱乐（entertainment）领域，默认为general。
 

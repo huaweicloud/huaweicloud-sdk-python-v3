@@ -30,7 +30,7 @@ class ListDbCacheRulesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, dbcache_mapping_id=None, rules=None):
-        """ListDbCacheRulesResponse
+        r"""ListDbCacheRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDbCacheRulesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDbCacheRulesResponse.
+        r"""Gets the total_count of this ListDbCacheRulesResponse.
 
         总记录数。
 
@@ -69,7 +69,7 @@ class ListDbCacheRulesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDbCacheRulesResponse.
+        r"""Sets the total_count of this ListDbCacheRulesResponse.
 
         总记录数。
 
@@ -80,7 +80,7 @@ class ListDbCacheRulesResponse(SdkResponse):
 
     @property
     def dbcache_mapping_id(self):
-        """Gets the dbcache_mapping_id of this ListDbCacheRulesResponse.
+        r"""Gets the dbcache_mapping_id of this ListDbCacheRulesResponse.
 
         内存加速映射ID。
 
@@ -91,7 +91,7 @@ class ListDbCacheRulesResponse(SdkResponse):
 
     @dbcache_mapping_id.setter
     def dbcache_mapping_id(self, dbcache_mapping_id):
-        """Sets the dbcache_mapping_id of this ListDbCacheRulesResponse.
+        r"""Sets the dbcache_mapping_id of this ListDbCacheRulesResponse.
 
         内存加速映射ID。
 
@@ -102,7 +102,7 @@ class ListDbCacheRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListDbCacheRulesResponse.
+        r"""Gets the rules of this ListDbCacheRulesResponse.
 
         内存加速规则详情。
 
@@ -113,7 +113,7 @@ class ListDbCacheRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListDbCacheRulesResponse.
+        r"""Sets the rules of this ListDbCacheRulesResponse.
 
         内存加速规则详情。
 

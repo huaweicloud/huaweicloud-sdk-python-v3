@@ -39,7 +39,7 @@ class BatchUpdateStructuredDocDto:
     }
 
     def __init__(self, id=None, title=None, template_id=None, organization_id=None, wiki_id=None, parent_document_id=None, instance_id=None, modifier=None):
-        """BatchUpdateStructuredDocDto
+        r"""BatchUpdateStructuredDocDto
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def id(self):
-        """Gets the id of this BatchUpdateStructuredDocDto.
+        r"""Gets the id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -102,7 +102,7 @@ class BatchUpdateStructuredDocDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchUpdateStructuredDocDto.
+        r"""Sets the id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -113,7 +113,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def title(self):
-        """Gets the title of this BatchUpdateStructuredDocDto.
+        r"""Gets the title of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -124,7 +124,7 @@ class BatchUpdateStructuredDocDto:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this BatchUpdateStructuredDocDto.
+        r"""Sets the title of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -135,7 +135,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def template_id(self):
-        """Gets the template_id of this BatchUpdateStructuredDocDto.
+        r"""Gets the template_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -146,7 +146,7 @@ class BatchUpdateStructuredDocDto:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this BatchUpdateStructuredDocDto.
+        r"""Sets the template_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -157,7 +157,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this BatchUpdateStructuredDocDto.
+        r"""Gets the organization_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -168,7 +168,7 @@ class BatchUpdateStructuredDocDto:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this BatchUpdateStructuredDocDto.
+        r"""Sets the organization_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -179,7 +179,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def wiki_id(self):
-        """Gets the wiki_id of this BatchUpdateStructuredDocDto.
+        r"""Gets the wiki_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -190,7 +190,7 @@ class BatchUpdateStructuredDocDto:
 
     @wiki_id.setter
     def wiki_id(self, wiki_id):
-        """Sets the wiki_id of this BatchUpdateStructuredDocDto.
+        r"""Sets the wiki_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -201,7 +201,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def parent_document_id(self):
-        """Gets the parent_document_id of this BatchUpdateStructuredDocDto.
+        r"""Gets the parent_document_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -212,7 +212,7 @@ class BatchUpdateStructuredDocDto:
 
     @parent_document_id.setter
     def parent_document_id(self, parent_document_id):
-        """Sets the parent_document_id of this BatchUpdateStructuredDocDto.
+        r"""Sets the parent_document_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -223,7 +223,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchUpdateStructuredDocDto.
+        r"""Gets the instance_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -234,7 +234,7 @@ class BatchUpdateStructuredDocDto:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchUpdateStructuredDocDto.
+        r"""Sets the instance_id of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -245,7 +245,7 @@ class BatchUpdateStructuredDocDto:
 
     @property
     def modifier(self):
-        """Gets the modifier of this BatchUpdateStructuredDocDto.
+        r"""Gets the modifier of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -256,7 +256,7 @@ class BatchUpdateStructuredDocDto:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this BatchUpdateStructuredDocDto.
+        r"""Sets the modifier of this BatchUpdateStructuredDocDto.
 
         **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 

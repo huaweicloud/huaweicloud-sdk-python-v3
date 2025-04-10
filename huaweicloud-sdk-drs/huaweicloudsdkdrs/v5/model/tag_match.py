@@ -27,7 +27,7 @@ class TagMatch:
     }
 
     def __init__(self, key=None, value=None):
-        """TagMatch
+        r"""TagMatch
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagMatch:
 
     @property
     def key(self):
-        """Gets the key of this TagMatch.
+        r"""Gets the key of this TagMatch.
 
         键。
 
@@ -59,7 +59,7 @@ class TagMatch:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagMatch.
+        r"""Sets the key of this TagMatch.
 
         键。
 
@@ -70,7 +70,7 @@ class TagMatch:
 
     @property
     def value(self):
-        """Gets the value of this TagMatch.
+        r"""Gets the value of this TagMatch.
 
         值。
 
@@ -81,7 +81,7 @@ class TagMatch:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagMatch.
+        r"""Sets the value of this TagMatch.
 
         值。
 

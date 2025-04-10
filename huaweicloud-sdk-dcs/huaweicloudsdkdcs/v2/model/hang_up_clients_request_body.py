@@ -27,7 +27,7 @@ class HangUpClientsRequestBody:
     }
 
     def __init__(self, node_id=None, client_addrs=None):
-        """HangUpClientsRequestBody
+        r"""HangUpClientsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HangUpClientsRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this HangUpClientsRequestBody.
+        r"""Gets the node_id of this HangUpClientsRequestBody.
 
         节点id
 
@@ -59,7 +59,7 @@ class HangUpClientsRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this HangUpClientsRequestBody.
+        r"""Sets the node_id of this HangUpClientsRequestBody.
 
         节点id
 
@@ -70,7 +70,7 @@ class HangUpClientsRequestBody:
 
     @property
     def client_addrs(self):
-        """Gets the client_addrs of this HangUpClientsRequestBody.
+        r"""Gets the client_addrs of this HangUpClientsRequestBody.
 
         要kill的会话addr列表
 
@@ -81,7 +81,7 @@ class HangUpClientsRequestBody:
 
     @client_addrs.setter
     def client_addrs(self, client_addrs):
-        """Sets the client_addrs of this HangUpClientsRequestBody.
+        r"""Sets the client_addrs of this HangUpClientsRequestBody.
 
         要kill的会话addr列表
 

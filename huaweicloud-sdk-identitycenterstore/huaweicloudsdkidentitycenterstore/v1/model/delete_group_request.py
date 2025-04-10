@@ -30,7 +30,7 @@ class DeleteGroupRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, group_id=None):
-        """DeleteGroupRequest
+        r"""DeleteGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteGroupRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeleteGroupRequest.
+        r"""Gets the x_security_token of this DeleteGroupRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class DeleteGroupRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeleteGroupRequest.
+        r"""Sets the x_security_token of this DeleteGroupRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class DeleteGroupRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this DeleteGroupRequest.
+        r"""Gets the identity_store_id of this DeleteGroupRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -89,7 +89,7 @@ class DeleteGroupRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this DeleteGroupRequest.
+        r"""Sets the identity_store_id of this DeleteGroupRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -100,7 +100,7 @@ class DeleteGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteGroupRequest.
+        r"""Gets the group_id of this DeleteGroupRequest.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -111,7 +111,7 @@ class DeleteGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteGroupRequest.
+        r"""Sets the group_id of this DeleteGroupRequest.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 

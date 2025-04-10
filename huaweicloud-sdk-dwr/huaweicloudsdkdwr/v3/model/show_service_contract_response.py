@@ -36,7 +36,7 @@ class ShowServiceContractResponse(SdkResponse):
     }
 
     def __init__(self, agreement_type=None, create_time=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ShowServiceContractResponse
+        r"""ShowServiceContractResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @property
     def agreement_type(self):
-        """Gets the agreement_type of this ShowServiceContractResponse.
+        r"""Gets the agreement_type of this ShowServiceContractResponse.
 
         服务协议类型,默认为use_public_action_privacy_statement。
 
@@ -90,7 +90,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @agreement_type.setter
     def agreement_type(self, agreement_type):
-        """Sets the agreement_type of this ShowServiceContractResponse.
+        r"""Sets the agreement_type of this ShowServiceContractResponse.
 
         服务协议类型,默认为use_public_action_privacy_statement。
 
@@ -101,7 +101,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowServiceContractResponse.
+        r"""Gets the create_time of this ShowServiceContractResponse.
 
         同意时间。
 
@@ -112,7 +112,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowServiceContractResponse.
+        r"""Sets the create_time of this ShowServiceContractResponse.
 
         同意时间。
 
@@ -123,7 +123,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowServiceContractResponse.
+        r"""Gets the x_request_id of this ShowServiceContractResponse.
 
         :return: The x_request_id of this ShowServiceContractResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowServiceContractResponse.
+        r"""Sets the x_request_id of this ShowServiceContractResponse.
 
         :param x_request_id: The x_request_id of this ShowServiceContractResponse.
         :type x_request_id: str
@@ -141,7 +141,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ShowServiceContractResponse.
+        r"""Gets the connection of this ShowServiceContractResponse.
 
         :return: The connection of this ShowServiceContractResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ShowServiceContractResponse.
+        r"""Sets the connection of this ShowServiceContractResponse.
 
         :param connection: The connection of this ShowServiceContractResponse.
         :type connection: str
@@ -159,7 +159,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ShowServiceContractResponse.
+        r"""Gets the content_length of this ShowServiceContractResponse.
 
         :return: The content_length of this ShowServiceContractResponse.
         :rtype: str
@@ -168,7 +168,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ShowServiceContractResponse.
+        r"""Sets the content_length of this ShowServiceContractResponse.
 
         :param content_length: The content_length of this ShowServiceContractResponse.
         :type content_length: str
@@ -177,7 +177,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ShowServiceContractResponse.
+        r"""Gets the date of this ShowServiceContractResponse.
 
         :return: The date of this ShowServiceContractResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class ShowServiceContractResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowServiceContractResponse.
+        r"""Sets the date of this ShowServiceContractResponse.
 
         :param date: The date of this ShowServiceContractResponse.
         :type date: str

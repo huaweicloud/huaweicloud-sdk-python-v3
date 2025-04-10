@@ -26,7 +26,7 @@ class ExecuteKillLogicalProcessesResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """ExecuteKillLogicalProcessesResponse
+        r"""ExecuteKillLogicalProcessesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteKillLogicalProcessesResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this ExecuteKillLogicalProcessesResponse.
+        r"""Gets the resp of this ExecuteKillLogicalProcessesResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class ExecuteKillLogicalProcessesResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this ExecuteKillLogicalProcessesResponse.
+        r"""Sets the resp of this ExecuteKillLogicalProcessesResponse.
 
         操作结果。
 

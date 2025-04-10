@@ -27,7 +27,7 @@ class ShowMindmapByPageRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowMindmapByPageRequest
+        r"""ShowMindmapByPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowMindmapByPageRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowMindmapByPageRequest.
+        r"""Gets the project_id of this ShowMindmapByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowMindmapByPageRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowMindmapByPageRequest.
+        r"""Sets the project_id of this ShowMindmapByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowMindmapByPageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowMindmapByPageRequest.
+        r"""Gets the body of this ShowMindmapByPageRequest.
 
         :return: The body of this ShowMindmapByPageRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestMindmapPageParamV3`
@@ -80,7 +80,7 @@ class ShowMindmapByPageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowMindmapByPageRequest.
+        r"""Sets the body of this ShowMindmapByPageRequest.
 
         :param body: The body of this ShowMindmapByPageRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestMindmapPageParamV3`

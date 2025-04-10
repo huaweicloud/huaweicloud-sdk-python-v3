@@ -28,7 +28,7 @@ class OsTypeEnum:
     }
 
     def __init__(self):
-        """OsTypeEnum
+        r"""OsTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -34,7 +34,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
     }
 
     def __init__(self, code=None, msg=None, start_time=None, end_time=None, list=None):
-        """ListLatelyApiStatisticsV2Response
+        r"""ListLatelyApiStatisticsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListLatelyApiStatisticsV2Response.
+        r"""Gets the code of this ListLatelyApiStatisticsV2Response.
 
         响应码
 
@@ -83,7 +83,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListLatelyApiStatisticsV2Response.
+        r"""Sets the code of this ListLatelyApiStatisticsV2Response.
 
         响应码
 
@@ -94,7 +94,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ListLatelyApiStatisticsV2Response.
+        r"""Gets the msg of this ListLatelyApiStatisticsV2Response.
 
         返回消息
 
@@ -105,7 +105,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ListLatelyApiStatisticsV2Response.
+        r"""Sets the msg of this ListLatelyApiStatisticsV2Response.
 
         返回消息
 
@@ -116,7 +116,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListLatelyApiStatisticsV2Response.
+        r"""Gets the start_time of this ListLatelyApiStatisticsV2Response.
 
         开始时间的UTC的时间戳
 
@@ -127,7 +127,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListLatelyApiStatisticsV2Response.
+        r"""Sets the start_time of this ListLatelyApiStatisticsV2Response.
 
         开始时间的UTC的时间戳
 
@@ -138,7 +138,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListLatelyApiStatisticsV2Response.
+        r"""Gets the end_time of this ListLatelyApiStatisticsV2Response.
 
         截止时间的UTC的时间戳
 
@@ -149,7 +149,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListLatelyApiStatisticsV2Response.
+        r"""Sets the end_time of this ListLatelyApiStatisticsV2Response.
 
         截止时间的UTC的时间戳
 
@@ -160,7 +160,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ListLatelyApiStatisticsV2Response.
+        r"""Gets the list of this ListLatelyApiStatisticsV2Response.
 
         统计指标的数据结构结构体
 
@@ -171,7 +171,7 @@ class ListLatelyApiStatisticsV2Response(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListLatelyApiStatisticsV2Response.
+        r"""Sets the list of this ListLatelyApiStatisticsV2Response.
 
         统计指标的数据结构结构体
 

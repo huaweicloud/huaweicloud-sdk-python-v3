@@ -31,7 +31,7 @@ class AuthMethodConfigRequest:
     }
 
     def __init__(self, auth_type=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None):
-        """AuthMethodConfigRequest
+        r"""AuthMethodConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AuthMethodConfigRequest:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this AuthMethodConfigRequest.
+        r"""Gets the auth_type of this AuthMethodConfigRequest.
 
         :return: The auth_type of this AuthMethodConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AuthTypeEnum`
@@ -73,7 +73,7 @@ class AuthMethodConfigRequest:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this AuthMethodConfigRequest.
+        r"""Sets the auth_type of this AuthMethodConfigRequest.
 
         :param auth_type: The auth_type of this AuthMethodConfigRequest.
         :type auth_type: :class:`huaweicloudsdkworkspace.v2.AuthTypeEnum`
@@ -82,7 +82,7 @@ class AuthMethodConfigRequest:
 
     @property
     def radius_gateway_config(self):
-        """Gets the radius_gateway_config of this AuthMethodConfigRequest.
+        r"""Gets the radius_gateway_config of this AuthMethodConfigRequest.
 
         :return: The radius_gateway_config of this AuthMethodConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfig`
@@ -91,7 +91,7 @@ class AuthMethodConfigRequest:
 
     @radius_gateway_config.setter
     def radius_gateway_config(self, radius_gateway_config):
-        """Sets the radius_gateway_config of this AuthMethodConfigRequest.
+        r"""Sets the radius_gateway_config of this AuthMethodConfigRequest.
 
         :param radius_gateway_config: The radius_gateway_config of this AuthMethodConfigRequest.
         :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfig`
@@ -100,7 +100,7 @@ class AuthMethodConfigRequest:
 
     @property
     def third_party_auth_config(self):
-        """Gets the third_party_auth_config of this AuthMethodConfigRequest.
+        r"""Gets the third_party_auth_config of this AuthMethodConfigRequest.
 
         :return: The third_party_auth_config of this AuthMethodConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`
@@ -109,7 +109,7 @@ class AuthMethodConfigRequest:
 
     @third_party_auth_config.setter
     def third_party_auth_config(self, third_party_auth_config):
-        """Sets the third_party_auth_config of this AuthMethodConfigRequest.
+        r"""Sets the third_party_auth_config of this AuthMethodConfigRequest.
 
         :param third_party_auth_config: The third_party_auth_config of this AuthMethodConfigRequest.
         :type third_party_auth_config: :class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`
@@ -118,7 +118,7 @@ class AuthMethodConfigRequest:
 
     @property
     def emergency_login_mode(self):
-        """Gets the emergency_login_mode of this AuthMethodConfigRequest.
+        r"""Gets the emergency_login_mode of this AuthMethodConfigRequest.
 
         应急登录模式。
 
@@ -129,7 +129,7 @@ class AuthMethodConfigRequest:
 
     @emergency_login_mode.setter
     def emergency_login_mode(self, emergency_login_mode):
-        """Sets the emergency_login_mode of this AuthMethodConfigRequest.
+        r"""Sets the emergency_login_mode of this AuthMethodConfigRequest.
 
         应急登录模式。
 

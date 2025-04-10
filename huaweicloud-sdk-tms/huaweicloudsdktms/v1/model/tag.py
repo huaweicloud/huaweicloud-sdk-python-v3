@@ -27,7 +27,7 @@ class Tag:
     }
 
     def __init__(self, key=None, values=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Tag:
 
     @property
     def key(self):
-        """Gets the key of this Tag.
+        r"""Gets the key of this Tag.
 
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -59,7 +59,7 @@ class Tag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tag.
+        r"""Sets the key of this Tag.
 
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -70,7 +70,7 @@ class Tag:
 
     @property
     def values(self):
-        """Gets the values of this Tag.
+        r"""Gets the values of this Tag.
 
         值列表。 每个值最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -81,7 +81,7 @@ class Tag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this Tag.
+        r"""Sets the values of this Tag.
 
         值列表。 每个值最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 

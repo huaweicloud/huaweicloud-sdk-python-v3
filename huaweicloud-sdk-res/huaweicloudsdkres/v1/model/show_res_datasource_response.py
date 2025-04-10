@@ -34,7 +34,7 @@ class ShowResDatasourceResponse(SdkResponse):
     }
 
     def __init__(self, datasource=None, jobs=None, is_success=None, message=None, error_code=None):
-        """ShowResDatasourceResponse
+        r"""ShowResDatasourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @property
     def datasource(self):
-        """Gets the datasource of this ShowResDatasourceResponse.
+        r"""Gets the datasource of this ShowResDatasourceResponse.
 
         :return: The datasource of this ShowResDatasourceResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Datasources`
@@ -81,7 +81,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this ShowResDatasourceResponse.
+        r"""Sets the datasource of this ShowResDatasourceResponse.
 
         :param datasource: The datasource of this ShowResDatasourceResponse.
         :type datasource: :class:`huaweicloudsdkres.v1.Datasources`
@@ -90,7 +90,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ShowResDatasourceResponse.
+        r"""Gets the jobs of this ShowResDatasourceResponse.
 
         数据源相关任务详情。
 
@@ -101,7 +101,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ShowResDatasourceResponse.
+        r"""Sets the jobs of this ShowResDatasourceResponse.
 
         数据源相关任务详情。
 
@@ -112,7 +112,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowResDatasourceResponse.
+        r"""Gets the is_success of this ShowResDatasourceResponse.
 
         是否成功。
 
@@ -123,7 +123,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowResDatasourceResponse.
+        r"""Sets the is_success of this ShowResDatasourceResponse.
 
         是否成功。
 
@@ -134,7 +134,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowResDatasourceResponse.
+        r"""Gets the message of this ShowResDatasourceResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -145,7 +145,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowResDatasourceResponse.
+        r"""Sets the message of this ShowResDatasourceResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -156,7 +156,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowResDatasourceResponse.
+        r"""Gets the error_code of this ShowResDatasourceResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -167,7 +167,7 @@ class ShowResDatasourceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowResDatasourceResponse.
+        r"""Sets the error_code of this ShowResDatasourceResponse.
 
         错误码（请求成功时，不返回此字段）。
 

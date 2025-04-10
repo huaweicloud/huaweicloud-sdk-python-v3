@@ -37,7 +37,7 @@ class DbObjectInfo:
     }
 
     def __init__(self, source_db_name=None, source_schema_name=None, source_table_name=None, target_db_name=None, target_schema_name=None, target_table_name=None, has_column_info=None):
-        """DbObjectInfo
+        r"""DbObjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DbObjectInfo:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this DbObjectInfo.
+        r"""Gets the source_db_name of this DbObjectInfo.
 
         源数据库库名。
 
@@ -96,7 +96,7 @@ class DbObjectInfo:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this DbObjectInfo.
+        r"""Sets the source_db_name of this DbObjectInfo.
 
         源数据库库名。
 
@@ -107,7 +107,7 @@ class DbObjectInfo:
 
     @property
     def source_schema_name(self):
-        """Gets the source_schema_name of this DbObjectInfo.
+        r"""Gets the source_schema_name of this DbObjectInfo.
 
         源数据库模式名。
 
@@ -118,7 +118,7 @@ class DbObjectInfo:
 
     @source_schema_name.setter
     def source_schema_name(self, source_schema_name):
-        """Sets the source_schema_name of this DbObjectInfo.
+        r"""Sets the source_schema_name of this DbObjectInfo.
 
         源数据库模式名。
 
@@ -129,7 +129,7 @@ class DbObjectInfo:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this DbObjectInfo.
+        r"""Gets the source_table_name of this DbObjectInfo.
 
         源数据库表名。
 
@@ -140,7 +140,7 @@ class DbObjectInfo:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this DbObjectInfo.
+        r"""Sets the source_table_name of this DbObjectInfo.
 
         源数据库表名。
 
@@ -151,7 +151,7 @@ class DbObjectInfo:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this DbObjectInfo.
+        r"""Gets the target_db_name of this DbObjectInfo.
 
         目标数据库库名。
 
@@ -162,7 +162,7 @@ class DbObjectInfo:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this DbObjectInfo.
+        r"""Sets the target_db_name of this DbObjectInfo.
 
         目标数据库库名。
 
@@ -173,7 +173,7 @@ class DbObjectInfo:
 
     @property
     def target_schema_name(self):
-        """Gets the target_schema_name of this DbObjectInfo.
+        r"""Gets the target_schema_name of this DbObjectInfo.
 
         目标数据库模式名。
 
@@ -184,7 +184,7 @@ class DbObjectInfo:
 
     @target_schema_name.setter
     def target_schema_name(self, target_schema_name):
-        """Sets the target_schema_name of this DbObjectInfo.
+        r"""Sets the target_schema_name of this DbObjectInfo.
 
         目标数据库模式名。
 
@@ -195,7 +195,7 @@ class DbObjectInfo:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this DbObjectInfo.
+        r"""Gets the target_table_name of this DbObjectInfo.
 
         目标数据库表名。
 
@@ -206,7 +206,7 @@ class DbObjectInfo:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this DbObjectInfo.
+        r"""Sets the target_table_name of this DbObjectInfo.
 
         目标数据库表名。
 
@@ -217,7 +217,7 @@ class DbObjectInfo:
 
     @property
     def has_column_info(self):
-        """Gets the has_column_info of this DbObjectInfo.
+        r"""Gets the has_column_info of this DbObjectInfo.
 
         是否有列映射。
 
@@ -228,7 +228,7 @@ class DbObjectInfo:
 
     @has_column_info.setter
     def has_column_info(self, has_column_info):
-        """Sets the has_column_info of this DbObjectInfo.
+        r"""Sets the has_column_info of this DbObjectInfo.
 
         是否有列映射。
 

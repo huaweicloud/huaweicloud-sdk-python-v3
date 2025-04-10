@@ -29,7 +29,7 @@ class UpdatePartitionRequest:
     }
 
     def __init__(self, cluster_id=None, partition_name=None, body=None):
-        """UpdatePartitionRequest
+        r"""UpdatePartitionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePartitionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdatePartitionRequest.
+        r"""Gets the cluster_id of this UpdatePartitionRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class UpdatePartitionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdatePartitionRequest.
+        r"""Sets the cluster_id of this UpdatePartitionRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class UpdatePartitionRequest:
 
     @property
     def partition_name(self):
-        """Gets the partition_name of this UpdatePartitionRequest.
+        r"""Gets the partition_name of this UpdatePartitionRequest.
 
         分区名称
 
@@ -88,7 +88,7 @@ class UpdatePartitionRequest:
 
     @partition_name.setter
     def partition_name(self, partition_name):
-        """Sets the partition_name of this UpdatePartitionRequest.
+        r"""Sets the partition_name of this UpdatePartitionRequest.
 
         分区名称
 
@@ -99,7 +99,7 @@ class UpdatePartitionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePartitionRequest.
+        r"""Gets the body of this UpdatePartitionRequest.
 
         :return: The body of this UpdatePartitionRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionReqBody`
@@ -108,7 +108,7 @@ class UpdatePartitionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePartitionRequest.
+        r"""Sets the body of this UpdatePartitionRequest.
 
         :param body: The body of this UpdatePartitionRequest.
         :type body: :class:`huaweicloudsdkcce.v3.PartitionReqBody`

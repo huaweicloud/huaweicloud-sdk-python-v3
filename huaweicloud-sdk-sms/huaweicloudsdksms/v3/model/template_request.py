@@ -55,7 +55,7 @@ class TemplateRequest:
     }
 
     def __init__(self, name=None, is_template=None, region=None, projectid=None, target_server_name=None, availability_zone=None, volumetype=None, flavor=None, vpc=None, nics=None, security_groups=None, publicip=None, disk=None, data_volume_type=None, target_password=None, image_id=None):
-        """TemplateRequest
+        r"""TemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class TemplateRequest:
 
     @property
     def name(self):
-        """Gets the name of this TemplateRequest.
+        r"""Gets the name of this TemplateRequest.
 
         模板名称
 
@@ -155,7 +155,7 @@ class TemplateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateRequest.
+        r"""Sets the name of this TemplateRequest.
 
         模板名称
 
@@ -166,7 +166,7 @@ class TemplateRequest:
 
     @property
     def is_template(self):
-        """Gets the is_template of this TemplateRequest.
+        r"""Gets the is_template of this TemplateRequest.
 
         是否是通用模板，如果模板关联一个任务，则不算通用模板
 
@@ -177,7 +177,7 @@ class TemplateRequest:
 
     @is_template.setter
     def is_template(self, is_template):
-        """Sets the is_template of this TemplateRequest.
+        r"""Sets the is_template of this TemplateRequest.
 
         是否是通用模板，如果模板关联一个任务，则不算通用模板
 
@@ -188,7 +188,7 @@ class TemplateRequest:
 
     @property
     def region(self):
-        """Gets the region of this TemplateRequest.
+        r"""Gets the region of this TemplateRequest.
 
         Region信息
 
@@ -199,7 +199,7 @@ class TemplateRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TemplateRequest.
+        r"""Sets the region of this TemplateRequest.
 
         Region信息
 
@@ -210,7 +210,7 @@ class TemplateRequest:
 
     @property
     def projectid(self):
-        """Gets the projectid of this TemplateRequest.
+        r"""Gets the projectid of this TemplateRequest.
 
         项目ID
 
@@ -221,7 +221,7 @@ class TemplateRequest:
 
     @projectid.setter
     def projectid(self, projectid):
-        """Sets the projectid of this TemplateRequest.
+        r"""Sets the projectid of this TemplateRequest.
 
         项目ID
 
@@ -232,7 +232,7 @@ class TemplateRequest:
 
     @property
     def target_server_name(self):
-        """Gets the target_server_name of this TemplateRequest.
+        r"""Gets the target_server_name of this TemplateRequest.
 
         目标端服务器名称
 
@@ -243,7 +243,7 @@ class TemplateRequest:
 
     @target_server_name.setter
     def target_server_name(self, target_server_name):
-        """Sets the target_server_name of this TemplateRequest.
+        r"""Sets the target_server_name of this TemplateRequest.
 
         目标端服务器名称
 
@@ -254,7 +254,7 @@ class TemplateRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this TemplateRequest.
+        r"""Gets the availability_zone of this TemplateRequest.
 
         可用区
 
@@ -265,7 +265,7 @@ class TemplateRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this TemplateRequest.
+        r"""Sets the availability_zone of this TemplateRequest.
 
         可用区
 
@@ -276,7 +276,7 @@ class TemplateRequest:
 
     @property
     def volumetype(self):
-        """Gets the volumetype of this TemplateRequest.
+        r"""Gets the volumetype of this TemplateRequest.
 
         磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -287,7 +287,7 @@ class TemplateRequest:
 
     @volumetype.setter
     def volumetype(self, volumetype):
-        """Sets the volumetype of this TemplateRequest.
+        r"""Sets the volumetype of this TemplateRequest.
 
         磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -298,7 +298,7 @@ class TemplateRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this TemplateRequest.
+        r"""Gets the flavor of this TemplateRequest.
 
         虚拟机规格
 
@@ -309,7 +309,7 @@ class TemplateRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this TemplateRequest.
+        r"""Sets the flavor of this TemplateRequest.
 
         虚拟机规格
 
@@ -320,7 +320,7 @@ class TemplateRequest:
 
     @property
     def vpc(self):
-        """Gets the vpc of this TemplateRequest.
+        r"""Gets the vpc of this TemplateRequest.
 
         :return: The vpc of this TemplateRequest.
         :rtype: :class:`huaweicloudsdksms.v3.VpcObject`
@@ -329,7 +329,7 @@ class TemplateRequest:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this TemplateRequest.
+        r"""Sets the vpc of this TemplateRequest.
 
         :param vpc: The vpc of this TemplateRequest.
         :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
@@ -338,7 +338,7 @@ class TemplateRequest:
 
     @property
     def nics(self):
-        """Gets the nics of this TemplateRequest.
+        r"""Gets the nics of this TemplateRequest.
 
         网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -349,7 +349,7 @@ class TemplateRequest:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this TemplateRequest.
+        r"""Sets the nics of this TemplateRequest.
 
         网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -360,7 +360,7 @@ class TemplateRequest:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this TemplateRequest.
+        r"""Gets the security_groups of this TemplateRequest.
 
         安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -371,7 +371,7 @@ class TemplateRequest:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this TemplateRequest.
+        r"""Sets the security_groups of this TemplateRequest.
 
         安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -382,7 +382,7 @@ class TemplateRequest:
 
     @property
     def publicip(self):
-        """Gets the publicip of this TemplateRequest.
+        r"""Gets the publicip of this TemplateRequest.
 
         :return: The publicip of this TemplateRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PublicIp`
@@ -391,7 +391,7 @@ class TemplateRequest:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this TemplateRequest.
+        r"""Sets the publicip of this TemplateRequest.
 
         :param publicip: The publicip of this TemplateRequest.
         :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
@@ -400,7 +400,7 @@ class TemplateRequest:
 
     @property
     def disk(self):
-        """Gets the disk of this TemplateRequest.
+        r"""Gets the disk of this TemplateRequest.
 
         磁盘信息
 
@@ -411,7 +411,7 @@ class TemplateRequest:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this TemplateRequest.
+        r"""Sets the disk of this TemplateRequest.
 
         磁盘信息
 
@@ -422,7 +422,7 @@ class TemplateRequest:
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this TemplateRequest.
+        r"""Gets the data_volume_type of this TemplateRequest.
 
         数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -433,7 +433,7 @@ class TemplateRequest:
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this TemplateRequest.
+        r"""Sets the data_volume_type of this TemplateRequest.
 
         数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -444,7 +444,7 @@ class TemplateRequest:
 
     @property
     def target_password(self):
-        """Gets the target_password of this TemplateRequest.
+        r"""Gets the target_password of this TemplateRequest.
 
         目的端密码
 
@@ -455,7 +455,7 @@ class TemplateRequest:
 
     @target_password.setter
     def target_password(self, target_password):
-        """Sets the target_password of this TemplateRequest.
+        r"""Sets the target_password of this TemplateRequest.
 
         目的端密码
 
@@ -466,7 +466,7 @@ class TemplateRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this TemplateRequest.
+        r"""Gets the image_id of this TemplateRequest.
 
         新建目的虚拟机用户选择的镜像版本Id值
 
@@ -477,7 +477,7 @@ class TemplateRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this TemplateRequest.
+        r"""Sets the image_id of this TemplateRequest.
 
         新建目的虚拟机用户选择的镜像版本Id值
 

@@ -25,7 +25,7 @@ class ShowMergeReportLogsOutlineRequest:
     }
 
     def __init__(self, task_run_id=None):
-        """ShowMergeReportLogsOutlineRequest
+        r"""ShowMergeReportLogsOutlineRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMergeReportLogsOutlineRequest:
 
     @property
     def task_run_id(self):
-        """Gets the task_run_id of this ShowMergeReportLogsOutlineRequest.
+        r"""Gets the task_run_id of this ShowMergeReportLogsOutlineRequest.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -53,7 +53,7 @@ class ShowMergeReportLogsOutlineRequest:
 
     @task_run_id.setter
     def task_run_id(self, task_run_id):
-        """Sets the task_run_id of this ShowMergeReportLogsOutlineRequest.
+        r"""Sets the task_run_id of this ShowMergeReportLogsOutlineRequest.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 

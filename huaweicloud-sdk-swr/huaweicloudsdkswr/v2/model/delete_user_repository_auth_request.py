@@ -29,7 +29,7 @@ class DeleteUserRepositoryAuthRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """DeleteUserRepositoryAuthRequest
+        r"""DeleteUserRepositoryAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteUserRepositoryAuthRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteUserRepositoryAuthRequest.
+        r"""Gets the namespace of this DeleteUserRepositoryAuthRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -66,7 +66,7 @@ class DeleteUserRepositoryAuthRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteUserRepositoryAuthRequest.
+        r"""Sets the namespace of this DeleteUserRepositoryAuthRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -77,7 +77,7 @@ class DeleteUserRepositoryAuthRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this DeleteUserRepositoryAuthRequest.
+        r"""Gets the repository of this DeleteUserRepositoryAuthRequest.
 
         镜像仓库名称
 
@@ -88,7 +88,7 @@ class DeleteUserRepositoryAuthRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this DeleteUserRepositoryAuthRequest.
+        r"""Sets the repository of this DeleteUserRepositoryAuthRequest.
 
         镜像仓库名称
 
@@ -99,7 +99,7 @@ class DeleteUserRepositoryAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteUserRepositoryAuthRequest.
+        r"""Gets the body of this DeleteUserRepositoryAuthRequest.
 
         :return: The body of this DeleteUserRepositoryAuthRequest.
         :rtype: list[str]
@@ -108,7 +108,7 @@ class DeleteUserRepositoryAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteUserRepositoryAuthRequest.
+        r"""Sets the body of this DeleteUserRepositoryAuthRequest.
 
         :param body: The body of this DeleteUserRepositoryAuthRequest.
         :type body: list[str]

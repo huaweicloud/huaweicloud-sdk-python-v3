@@ -27,7 +27,7 @@ class ServicesInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """ServicesInfo
+        r"""ServicesInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServicesInfo:
 
     @property
     def id(self):
-        """Gets the id of this ServicesInfo.
+        r"""Gets the id of this ServicesInfo.
 
         服务id
 
@@ -61,7 +61,7 @@ class ServicesInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServicesInfo.
+        r"""Sets the id of this ServicesInfo.
 
         服务id
 
@@ -72,7 +72,7 @@ class ServicesInfo:
 
     @property
     def name(self):
-        """Gets the name of this ServicesInfo.
+        r"""Gets the name of this ServicesInfo.
 
         服务名称
 
@@ -83,7 +83,7 @@ class ServicesInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServicesInfo.
+        r"""Sets the name of this ServicesInfo.
 
         服务名称
 

@@ -29,7 +29,7 @@ class UpdateProjectModuleRequest:
     }
 
     def __init__(self, project_id=None, module_id=None, body=None):
-        """UpdateProjectModuleRequest
+        r"""UpdateProjectModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateProjectModuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateProjectModuleRequest.
+        r"""Gets the project_id of this UpdateProjectModuleRequest.
 
         devcloud项目的32位id
 
@@ -66,7 +66,7 @@ class UpdateProjectModuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateProjectModuleRequest.
+        r"""Sets the project_id of this UpdateProjectModuleRequest.
 
         devcloud项目的32位id
 
@@ -77,7 +77,7 @@ class UpdateProjectModuleRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this UpdateProjectModuleRequest.
+        r"""Gets the module_id of this UpdateProjectModuleRequest.
 
         模块id
 
@@ -88,7 +88,7 @@ class UpdateProjectModuleRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this UpdateProjectModuleRequest.
+        r"""Sets the module_id of this UpdateProjectModuleRequest.
 
         模块id
 
@@ -99,7 +99,7 @@ class UpdateProjectModuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProjectModuleRequest.
+        r"""Gets the body of this UpdateProjectModuleRequest.
 
         :return: The body of this UpdateProjectModuleRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequestBody`
@@ -108,7 +108,7 @@ class UpdateProjectModuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProjectModuleRequest.
+        r"""Sets the body of this UpdateProjectModuleRequest.
 
         :param body: The body of this UpdateProjectModuleRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequestBody`

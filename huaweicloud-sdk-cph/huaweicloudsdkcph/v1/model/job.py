@@ -43,7 +43,7 @@ class Job:
     }
 
     def __init__(self, phone_id=None, server_id=None, node_id=None, job_id=None, begin_time=None, end_time=None, status=None, error_code=None, error_msg=None, execute_msg=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Job:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this Job.
+        r"""Gets the phone_id of this Job.
 
         云手机的唯一标识，云手机相关任务包含此字段。
 
@@ -117,7 +117,7 @@ class Job:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this Job.
+        r"""Sets the phone_id of this Job.
 
         云手机的唯一标识，云手机相关任务包含此字段。
 
@@ -128,7 +128,7 @@ class Job:
 
     @property
     def server_id(self):
-        """Gets the server_id of this Job.
+        r"""Gets the server_id of this Job.
 
         云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
@@ -139,7 +139,7 @@ class Job:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this Job.
+        r"""Sets the server_id of this Job.
 
         云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
@@ -150,7 +150,7 @@ class Job:
 
     @property
     def node_id(self):
-        """Gets the node_id of this Job.
+        r"""Gets the node_id of this Job.
 
         （已废弃）云手机服务器的唯一标识ID，云手机服务含此字段。
 
@@ -161,7 +161,7 @@ class Job:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this Job.
+        r"""Sets the node_id of this Job.
 
         （已废弃）云手机服务器的唯一标识ID，云手机服务含此字段。
 
@@ -172,7 +172,7 @@ class Job:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Job.
+        r"""Gets the job_id of this Job.
 
         任务的唯一标识。
 
@@ -183,7 +183,7 @@ class Job:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Job.
+        r"""Sets the job_id of this Job.
 
         任务的唯一标识。
 
@@ -194,7 +194,7 @@ class Job:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Job.
+        r"""Gets the begin_time of this Job.
 
         任务处理开始时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -205,7 +205,7 @@ class Job:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Job.
+        r"""Sets the begin_time of this Job.
 
         任务处理开始时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -216,7 +216,7 @@ class Job:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Job.
+        r"""Gets the end_time of this Job.
 
         任务处理结束时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -227,7 +227,7 @@ class Job:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Job.
+        r"""Sets the end_time of this Job.
 
         任务处理结束时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -238,7 +238,7 @@ class Job:
 
     @property
     def status(self):
-        """Gets the status of this Job.
+        r"""Gets the status of this Job.
 
         任务状态。 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
 
@@ -249,7 +249,7 @@ class Job:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Job.
+        r"""Sets the status of this Job.
 
         任务状态。 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
 
@@ -260,7 +260,7 @@ class Job:
 
     @property
     def error_code(self):
-        """Gets the error_code of this Job.
+        r"""Gets the error_code of this Job.
 
         任务错误码。
 
@@ -271,7 +271,7 @@ class Job:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this Job.
+        r"""Sets the error_code of this Job.
 
         任务错误码。
 
@@ -282,7 +282,7 @@ class Job:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this Job.
+        r"""Gets the error_msg of this Job.
 
         任务错误码说明。
 
@@ -293,7 +293,7 @@ class Job:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this Job.
+        r"""Sets the error_msg of this Job.
 
         任务错误码说明。
 
@@ -304,7 +304,7 @@ class Job:
 
     @property
     def execute_msg(self):
-        """Gets the execute_msg of this Job.
+        r"""Gets the execute_msg of this Job.
 
         任务执行返回内容，最长1024个字节。
 
@@ -315,7 +315,7 @@ class Job:
 
     @execute_msg.setter
     def execute_msg(self, execute_msg):
-        """Sets the execute_msg of this Job.
+        r"""Sets the execute_msg of this Job.
 
         任务执行返回内容，最长1024个字节。
 

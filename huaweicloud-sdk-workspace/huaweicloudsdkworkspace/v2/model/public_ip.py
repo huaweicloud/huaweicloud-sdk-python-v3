@@ -27,7 +27,7 @@ class PublicIp:
     }
 
     def __init__(self, id=None, public_ip_address=None):
-        """PublicIp
+        r"""PublicIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublicIp:
 
     @property
     def id(self):
-        """Gets the id of this PublicIp.
+        r"""Gets the id of this PublicIp.
 
         弹性IP唯一标识
 
@@ -61,7 +61,7 @@ class PublicIp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicIp.
+        r"""Sets the id of this PublicIp.
 
         弹性IP唯一标识
 
@@ -72,7 +72,7 @@ class PublicIp:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this PublicIp.
+        r"""Gets the public_ip_address of this PublicIp.
 
         弹性IP地址
 
@@ -83,7 +83,7 @@ class PublicIp:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this PublicIp.
+        r"""Sets the public_ip_address of this PublicIp.
 
         弹性IP地址
 

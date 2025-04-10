@@ -29,7 +29,7 @@ class DeleteFsTaskRequest:
     }
 
     def __init__(self, share_id=None, feature=None, task_id=None):
-        """DeleteFsTaskRequest
+        r"""DeleteFsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteFsTaskRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this DeleteFsTaskRequest.
+        r"""Gets the share_id of this DeleteFsTaskRequest.
 
         文件系统id
 
@@ -65,7 +65,7 @@ class DeleteFsTaskRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this DeleteFsTaskRequest.
+        r"""Sets the share_id of this DeleteFsTaskRequest.
 
         文件系统id
 
@@ -76,7 +76,7 @@ class DeleteFsTaskRequest:
 
     @property
     def feature(self):
-        """Gets the feature of this DeleteFsTaskRequest.
+        r"""Gets the feature of this DeleteFsTaskRequest.
 
         任务类型。例，DU任务取值为dir-usage
 
@@ -87,7 +87,7 @@ class DeleteFsTaskRequest:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this DeleteFsTaskRequest.
+        r"""Sets the feature of this DeleteFsTaskRequest.
 
         任务类型。例，DU任务取值为dir-usage
 
@@ -98,7 +98,7 @@ class DeleteFsTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteFsTaskRequest.
+        r"""Gets the task_id of this DeleteFsTaskRequest.
 
         任务ID
 
@@ -109,7 +109,7 @@ class DeleteFsTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteFsTaskRequest.
+        r"""Sets the task_id of this DeleteFsTaskRequest.
 
         任务ID
 

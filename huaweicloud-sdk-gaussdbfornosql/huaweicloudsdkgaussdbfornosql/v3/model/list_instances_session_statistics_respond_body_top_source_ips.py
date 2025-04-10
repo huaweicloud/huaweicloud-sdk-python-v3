@@ -27,7 +27,7 @@ class ListInstancesSessionStatisticsRespondBodyTopSourceIps:
     }
 
     def __init__(self, client_ip=None, connection_count=None):
-        """ListInstancesSessionStatisticsRespondBodyTopSourceIps
+        r"""ListInstancesSessionStatisticsRespondBodyTopSourceIps
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListInstancesSessionStatisticsRespondBodyTopSourceIps:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
+        r"""Gets the client_ip of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
 
         客户端ip地址。
 
@@ -61,7 +61,7 @@ class ListInstancesSessionStatisticsRespondBodyTopSourceIps:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
+        r"""Sets the client_ip of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
 
         客户端ip地址。
 
@@ -72,7 +72,7 @@ class ListInstancesSessionStatisticsRespondBodyTopSourceIps:
 
     @property
     def connection_count(self):
-        """Gets the connection_count of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
+        r"""Gets the connection_count of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
 
         客户端连接数。
 
@@ -83,7 +83,7 @@ class ListInstancesSessionStatisticsRespondBodyTopSourceIps:
 
     @connection_count.setter
     def connection_count(self, connection_count):
-        """Sets the connection_count of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
+        r"""Sets the connection_count of this ListInstancesSessionStatisticsRespondBodyTopSourceIps.
 
         客户端连接数。
 

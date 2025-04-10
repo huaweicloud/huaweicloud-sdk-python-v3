@@ -35,7 +35,7 @@ class OrganizationNodeResponseInfo:
     }
 
     def __init__(self, parent_id=None, id=None, urn=None, name=None, org_type=None, delegated=None):
-        """OrganizationNodeResponseInfo
+        r"""OrganizationNodeResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OrganizationNodeResponseInfo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this OrganizationNodeResponseInfo.
+        r"""Gets the parent_id of this OrganizationNodeResponseInfo.
 
         父节点Id
 
@@ -89,7 +89,7 @@ class OrganizationNodeResponseInfo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this OrganizationNodeResponseInfo.
+        r"""Sets the parent_id of this OrganizationNodeResponseInfo.
 
         父节点Id
 
@@ -100,7 +100,7 @@ class OrganizationNodeResponseInfo:
 
     @property
     def id(self):
-        """Gets the id of this OrganizationNodeResponseInfo.
+        r"""Gets the id of this OrganizationNodeResponseInfo.
 
         节点account_id
 
@@ -111,7 +111,7 @@ class OrganizationNodeResponseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrganizationNodeResponseInfo.
+        r"""Sets the id of this OrganizationNodeResponseInfo.
 
         节点account_id
 
@@ -122,7 +122,7 @@ class OrganizationNodeResponseInfo:
 
     @property
     def urn(self):
-        """Gets the urn of this OrganizationNodeResponseInfo.
+        r"""Gets the urn of this OrganizationNodeResponseInfo.
 
         组织的统一资源名称,格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
 
@@ -133,7 +133,7 @@ class OrganizationNodeResponseInfo:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this OrganizationNodeResponseInfo.
+        r"""Sets the urn of this OrganizationNodeResponseInfo.
 
         组织的统一资源名称,格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
 
@@ -144,7 +144,7 @@ class OrganizationNodeResponseInfo:
 
     @property
     def name(self):
-        """Gets the name of this OrganizationNodeResponseInfo.
+        r"""Gets the name of this OrganizationNodeResponseInfo.
 
         名称
 
@@ -155,7 +155,7 @@ class OrganizationNodeResponseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrganizationNodeResponseInfo.
+        r"""Sets the name of this OrganizationNodeResponseInfo.
 
         名称
 
@@ -166,7 +166,7 @@ class OrganizationNodeResponseInfo:
 
     @property
     def org_type(self):
-        """Gets the org_type of this OrganizationNodeResponseInfo.
+        r"""Gets the org_type of this OrganizationNodeResponseInfo.
 
         节点类型，unit:组织单元、account:账号
 
@@ -177,7 +177,7 @@ class OrganizationNodeResponseInfo:
 
     @org_type.setter
     def org_type(self, org_type):
-        """Sets the org_type of this OrganizationNodeResponseInfo.
+        r"""Sets the org_type of this OrganizationNodeResponseInfo.
 
         节点类型，unit:组织单元、account:账号
 
@@ -188,7 +188,7 @@ class OrganizationNodeResponseInfo:
 
     @property
     def delegated(self):
-        """Gets the delegated of this OrganizationNodeResponseInfo.
+        r"""Gets the delegated of this OrganizationNodeResponseInfo.
 
         组织或账号是否已授权。   - true: 已授权（无需授权）。   - false: 未授权。
 
@@ -199,7 +199,7 @@ class OrganizationNodeResponseInfo:
 
     @delegated.setter
     def delegated(self, delegated):
-        """Sets the delegated of this OrganizationNodeResponseInfo.
+        r"""Sets the delegated of this OrganizationNodeResponseInfo.
 
         组织或账号是否已授权。   - true: 已授权（无需授权）。   - false: 未授权。
 

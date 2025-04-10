@@ -25,7 +25,7 @@ class UpdateClientCaCertificateRequestBodyClientCaCertificate:
     }
 
     def __init__(self, name=None):
-        """UpdateClientCaCertificateRequestBodyClientCaCertificate
+        r"""UpdateClientCaCertificateRequestBodyClientCaCertificate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateClientCaCertificateRequestBodyClientCaCertificate:
 
     @property
     def name(self):
-        """Gets the name of this UpdateClientCaCertificateRequestBodyClientCaCertificate.
+        r"""Gets the name of this UpdateClientCaCertificateRequestBodyClientCaCertificate.
 
         客户端 CA 证书名
 
@@ -54,7 +54,7 @@ class UpdateClientCaCertificateRequestBodyClientCaCertificate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateClientCaCertificateRequestBodyClientCaCertificate.
+        r"""Sets the name of this UpdateClientCaCertificateRequestBodyClientCaCertificate.
 
         客户端 CA 证书名
 

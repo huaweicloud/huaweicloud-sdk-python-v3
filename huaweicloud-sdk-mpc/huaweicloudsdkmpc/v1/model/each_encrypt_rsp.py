@@ -41,7 +41,7 @@ class EachEncryptRsp:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, user_data=None, description=None):
-        """EachEncryptRsp
+        r"""EachEncryptRsp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class EachEncryptRsp:
 
     @property
     def task_id(self):
-        """Gets the task_id of this EachEncryptRsp.
+        r"""Gets the task_id of this EachEncryptRsp.
 
         任务Id
 
@@ -110,7 +110,7 @@ class EachEncryptRsp:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this EachEncryptRsp.
+        r"""Sets the task_id of this EachEncryptRsp.
 
         任务Id
 
@@ -121,7 +121,7 @@ class EachEncryptRsp:
 
     @property
     def status(self):
-        """Gets the status of this EachEncryptRsp.
+        r"""Gets the status of this EachEncryptRsp.
 
         任务执行状态。  取值如下： - NO_TASK：无任务 - WAITING：等待启动 - PROCESSING：加密中 - SUCCEEDED：加密成功 - FAILED：加密失败 - CANCELED：已删除 
 
@@ -132,7 +132,7 @@ class EachEncryptRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EachEncryptRsp.
+        r"""Sets the status of this EachEncryptRsp.
 
         任务执行状态。  取值如下： - NO_TASK：无任务 - WAITING：等待启动 - PROCESSING：加密中 - SUCCEEDED：加密成功 - FAILED：加密失败 - CANCELED：已删除 
 
@@ -143,7 +143,7 @@ class EachEncryptRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EachEncryptRsp.
+        r"""Gets the create_time of this EachEncryptRsp.
 
         加密任务启动时间。 
 
@@ -154,7 +154,7 @@ class EachEncryptRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EachEncryptRsp.
+        r"""Sets the create_time of this EachEncryptRsp.
 
         加密任务启动时间。 
 
@@ -165,7 +165,7 @@ class EachEncryptRsp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this EachEncryptRsp.
+        r"""Gets the end_time of this EachEncryptRsp.
 
         加密任务结束时间。 
 
@@ -176,7 +176,7 @@ class EachEncryptRsp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this EachEncryptRsp.
+        r"""Sets the end_time of this EachEncryptRsp.
 
         加密任务结束时间。 
 
@@ -187,7 +187,7 @@ class EachEncryptRsp:
 
     @property
     def input(self):
-        """Gets the input of this EachEncryptRsp.
+        r"""Gets the input of this EachEncryptRsp.
 
         :return: The input of this EachEncryptRsp.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -196,7 +196,7 @@ class EachEncryptRsp:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this EachEncryptRsp.
+        r"""Sets the input of this EachEncryptRsp.
 
         :param input: The input of this EachEncryptRsp.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -205,7 +205,7 @@ class EachEncryptRsp:
 
     @property
     def output(self):
-        """Gets the output of this EachEncryptRsp.
+        r"""Gets the output of this EachEncryptRsp.
 
         :return: The output of this EachEncryptRsp.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -214,7 +214,7 @@ class EachEncryptRsp:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this EachEncryptRsp.
+        r"""Sets the output of this EachEncryptRsp.
 
         :param output: The output of this EachEncryptRsp.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -223,7 +223,7 @@ class EachEncryptRsp:
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this EachEncryptRsp.
+        r"""Gets the output_file_name of this EachEncryptRsp.
 
         加密生成的文件名，数组类型，可能包含多个，包含加密文件名。 
 
@@ -234,7 +234,7 @@ class EachEncryptRsp:
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this EachEncryptRsp.
+        r"""Sets the output_file_name of this EachEncryptRsp.
 
         加密生成的文件名，数组类型，可能包含多个，包含加密文件名。 
 
@@ -245,7 +245,7 @@ class EachEncryptRsp:
 
     @property
     def user_data(self):
-        """Gets the user_data of this EachEncryptRsp.
+        r"""Gets the user_data of this EachEncryptRsp.
 
         用户数据。 
 
@@ -256,7 +256,7 @@ class EachEncryptRsp:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this EachEncryptRsp.
+        r"""Sets the user_data of this EachEncryptRsp.
 
         用户数据。 
 
@@ -267,7 +267,7 @@ class EachEncryptRsp:
 
     @property
     def description(self):
-        """Gets the description of this EachEncryptRsp.
+        r"""Gets the description of this EachEncryptRsp.
 
         加密任务描述，当加密出现异常时，此字段为异常的原因。 
 
@@ -278,7 +278,7 @@ class EachEncryptRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EachEncryptRsp.
+        r"""Sets the description of this EachEncryptRsp.
 
         加密任务描述，当加密出现异常时，此字段为异常的原因。 
 

@@ -28,7 +28,7 @@ class ListHostResultsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListHostResultsResponse
+        r"""ListHostResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHostResultsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListHostResultsResponse.
+        r"""Gets the total of this ListHostResultsResponse.
 
         主机漏洞总数
 
@@ -62,7 +62,7 @@ class ListHostResultsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListHostResultsResponse.
+        r"""Sets the total of this ListHostResultsResponse.
 
         主机漏洞总数
 
@@ -73,7 +73,7 @@ class ListHostResultsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListHostResultsResponse.
+        r"""Gets the items of this ListHostResultsResponse.
 
         主机漏洞信息列表
 
@@ -84,7 +84,7 @@ class ListHostResultsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListHostResultsResponse.
+        r"""Sets the items of this ListHostResultsResponse.
 
         主机漏洞信息列表
 

@@ -27,7 +27,7 @@ class UpdateEdgeSite:
     }
 
     def __init__(self, description=None, location=None):
-        """UpdateEdgeSite
+        r"""UpdateEdgeSite
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateEdgeSite:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEdgeSite.
+        r"""Gets the description of this UpdateEdgeSite.
 
         边缘小站描述，最大支持长度为255个字节，不允许包含<>
 
@@ -61,7 +61,7 @@ class UpdateEdgeSite:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEdgeSite.
+        r"""Sets the description of this UpdateEdgeSite.
 
         边缘小站描述，最大支持长度为255个字节，不允许包含<>
 
@@ -72,7 +72,7 @@ class UpdateEdgeSite:
 
     @property
     def location(self):
-        """Gets the location of this UpdateEdgeSite.
+        r"""Gets the location of this UpdateEdgeSite.
 
         :return: The location of this UpdateEdgeSite.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.UpdateLocation`
@@ -81,7 +81,7 @@ class UpdateEdgeSite:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this UpdateEdgeSite.
+        r"""Sets the location of this UpdateEdgeSite.
 
         :param location: The location of this UpdateEdgeSite.
         :type location: :class:`huaweicloudsdkcloudpond.v1.UpdateLocation`

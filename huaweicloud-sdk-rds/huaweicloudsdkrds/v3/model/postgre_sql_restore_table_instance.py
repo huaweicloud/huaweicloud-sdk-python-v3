@@ -29,7 +29,7 @@ class PostgreSQLRestoreTableInstance:
     }
 
     def __init__(self, restore_time=None, instance_id=None, databases=None):
-        """PostgreSQLRestoreTableInstance
+        r"""PostgreSQLRestoreTableInstance
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PostgreSQLRestoreTableInstance:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this PostgreSQLRestoreTableInstance.
+        r"""Gets the restore_time of this PostgreSQLRestoreTableInstance.
 
         恢复时间
 
@@ -68,7 +68,7 @@ class PostgreSQLRestoreTableInstance:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this PostgreSQLRestoreTableInstance.
+        r"""Sets the restore_time of this PostgreSQLRestoreTableInstance.
 
         恢复时间
 
@@ -79,7 +79,7 @@ class PostgreSQLRestoreTableInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PostgreSQLRestoreTableInstance.
+        r"""Gets the instance_id of this PostgreSQLRestoreTableInstance.
 
         实例ID
 
@@ -90,7 +90,7 @@ class PostgreSQLRestoreTableInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PostgreSQLRestoreTableInstance.
+        r"""Sets the instance_id of this PostgreSQLRestoreTableInstance.
 
         实例ID
 
@@ -101,7 +101,7 @@ class PostgreSQLRestoreTableInstance:
 
     @property
     def databases(self):
-        """Gets the databases of this PostgreSQLRestoreTableInstance.
+        r"""Gets the databases of this PostgreSQLRestoreTableInstance.
 
         数据库信息
 
@@ -112,7 +112,7 @@ class PostgreSQLRestoreTableInstance:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this PostgreSQLRestoreTableInstance.
+        r"""Sets the databases of this PostgreSQLRestoreTableInstance.
 
         数据库信息
 

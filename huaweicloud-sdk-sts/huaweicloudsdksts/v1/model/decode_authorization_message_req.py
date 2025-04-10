@@ -25,7 +25,7 @@ class DecodeAuthorizationMessageReq:
     }
 
     def __init__(self, encoded_message=None):
-        """DecodeAuthorizationMessageReq
+        r"""DecodeAuthorizationMessageReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DecodeAuthorizationMessageReq:
 
     @property
     def encoded_message(self):
-        """Gets the encoded_message of this DecodeAuthorizationMessageReq.
+        r"""Gets the encoded_message of this DecodeAuthorizationMessageReq.
 
         加密的鉴权失败原因。
 
@@ -53,7 +53,7 @@ class DecodeAuthorizationMessageReq:
 
     @encoded_message.setter
     def encoded_message(self, encoded_message):
-        """Sets the encoded_message of this DecodeAuthorizationMessageReq.
+        r"""Sets the encoded_message of this DecodeAuthorizationMessageReq.
 
         加密的鉴权失败原因。
 

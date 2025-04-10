@@ -51,7 +51,7 @@ class ListConnectionsRequest:
     }
 
     def __init__(self, x_language=None, connection_id=None, db_type=None, name=None, inst_id=None, ip=None, description=None, create_time=None, enterprise_project_id=None, offset=None, limit=None, fetch_all=None, sort_key=None, sort_dir=None):
-        """ListConnectionsRequest
+        r"""ListConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListConnectionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListConnectionsRequest.
+        r"""Gets the x_language of this ListConnectionsRequest.
 
         请求语言类型。
 
@@ -145,7 +145,7 @@ class ListConnectionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListConnectionsRequest.
+        r"""Sets the x_language of this ListConnectionsRequest.
 
         请求语言类型。
 
@@ -156,7 +156,7 @@ class ListConnectionsRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListConnectionsRequest.
+        r"""Gets the connection_id of this ListConnectionsRequest.
 
         连接ID。
 
@@ -167,7 +167,7 @@ class ListConnectionsRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListConnectionsRequest.
+        r"""Sets the connection_id of this ListConnectionsRequest.
 
         连接ID。
 
@@ -178,7 +178,7 @@ class ListConnectionsRequest:
 
     @property
     def db_type(self):
-        """Gets the db_type of this ListConnectionsRequest.
+        r"""Gets the db_type of this ListConnectionsRequest.
 
         连接类型。 - mysql - oracle - postgresql - mongodb
 
@@ -189,7 +189,7 @@ class ListConnectionsRequest:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this ListConnectionsRequest.
+        r"""Sets the db_type of this ListConnectionsRequest.
 
         连接类型。 - mysql - oracle - postgresql - mongodb
 
@@ -200,7 +200,7 @@ class ListConnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListConnectionsRequest.
+        r"""Gets the name of this ListConnectionsRequest.
 
         连接名称，忽略大小写。
 
@@ -211,7 +211,7 @@ class ListConnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConnectionsRequest.
+        r"""Sets the name of this ListConnectionsRequest.
 
         连接名称，忽略大小写。
 
@@ -222,7 +222,7 @@ class ListConnectionsRequest:
 
     @property
     def inst_id(self):
-        """Gets the inst_id of this ListConnectionsRequest.
+        r"""Gets the inst_id of this ListConnectionsRequest.
 
         云上数据库实例ID。
 
@@ -233,7 +233,7 @@ class ListConnectionsRequest:
 
     @inst_id.setter
     def inst_id(self, inst_id):
-        """Sets the inst_id of this ListConnectionsRequest.
+        r"""Sets the inst_id of this ListConnectionsRequest.
 
         云上数据库实例ID。
 
@@ -244,7 +244,7 @@ class ListConnectionsRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListConnectionsRequest.
+        r"""Gets the ip of this ListConnectionsRequest.
 
         连接IP。
 
@@ -255,7 +255,7 @@ class ListConnectionsRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListConnectionsRequest.
+        r"""Sets the ip of this ListConnectionsRequest.
 
         连接IP。
 
@@ -266,7 +266,7 @@ class ListConnectionsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListConnectionsRequest.
+        r"""Gets the description of this ListConnectionsRequest.
 
         连接描述。
 
@@ -277,7 +277,7 @@ class ListConnectionsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListConnectionsRequest.
+        r"""Sets the description of this ListConnectionsRequest.
 
         连接描述。
 
@@ -288,7 +288,7 @@ class ListConnectionsRequest:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListConnectionsRequest.
+        r"""Gets the create_time of this ListConnectionsRequest.
 
         时间区间用“，”分割。示例：2024-05-17T07:46:00.414Z,2024-05-20T07:46:00.999Z。
 
@@ -299,7 +299,7 @@ class ListConnectionsRequest:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListConnectionsRequest.
+        r"""Sets the create_time of this ListConnectionsRequest.
 
         时间区间用“，”分割。示例：2024-05-17T07:46:00.414Z,2024-05-20T07:46:00.999Z。
 
@@ -310,7 +310,7 @@ class ListConnectionsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListConnectionsRequest.
+        r"""Gets the enterprise_project_id of this ListConnectionsRequest.
 
         企业项目ID。
 
@@ -321,7 +321,7 @@ class ListConnectionsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListConnectionsRequest.
+        r"""Sets the enterprise_project_id of this ListConnectionsRequest.
 
         企业项目ID。
 
@@ -332,7 +332,7 @@ class ListConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConnectionsRequest.
+        r"""Gets the offset of this ListConnectionsRequest.
 
         偏移量，默认值为0，表示查询该偏移量后面的记录。
 
@@ -343,7 +343,7 @@ class ListConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConnectionsRequest.
+        r"""Sets the offset of this ListConnectionsRequest.
 
         偏移量，默认值为0，表示查询该偏移量后面的记录。
 
@@ -354,7 +354,7 @@ class ListConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConnectionsRequest.
+        r"""Gets the limit of this ListConnectionsRequest.
 
         查询返回记录的数量限制，默认值为10。
 
@@ -365,7 +365,7 @@ class ListConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConnectionsRequest.
+        r"""Sets the limit of this ListConnectionsRequest.
 
         查询返回记录的数量限制，默认值为10。
 
@@ -376,7 +376,7 @@ class ListConnectionsRequest:
 
     @property
     def fetch_all(self):
-        """Gets the fetch_all of this ListConnectionsRequest.
+        r"""Gets the fetch_all of this ListConnectionsRequest.
 
         值为“true”时会使得offset和limit参数失效并返回所有记录。
 
@@ -387,7 +387,7 @@ class ListConnectionsRequest:
 
     @fetch_all.setter
     def fetch_all(self, fetch_all):
-        """Sets the fetch_all of this ListConnectionsRequest.
+        r"""Sets the fetch_all of this ListConnectionsRequest.
 
         值为“true”时会使得offset和limit参数失效并返回所有记录。
 
@@ -398,7 +398,7 @@ class ListConnectionsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListConnectionsRequest.
+        r"""Gets the sort_key of this ListConnectionsRequest.
 
         返回结果按该关键字排序，默认为“created_at”。
 
@@ -409,7 +409,7 @@ class ListConnectionsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListConnectionsRequest.
+        r"""Sets the sort_key of this ListConnectionsRequest.
 
         返回结果按该关键字排序，默认为“created_at”。
 
@@ -420,7 +420,7 @@ class ListConnectionsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListConnectionsRequest.
+        r"""Gets the sort_dir of this ListConnectionsRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）。
 
@@ -431,7 +431,7 @@ class ListConnectionsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListConnectionsRequest.
+        r"""Sets the sort_dir of this ListConnectionsRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）。
 

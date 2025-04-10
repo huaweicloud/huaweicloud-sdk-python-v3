@@ -25,7 +25,7 @@ class TtsCallBackConfig:
     }
 
     def __init__(self, callback_url=None):
-        """TtsCallBackConfig
+        r"""TtsCallBackConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TtsCallBackConfig:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this TtsCallBackConfig.
+        r"""Gets the callback_url of this TtsCallBackConfig.
 
         回调URL。 回调请求body为json格式，带参数如下： status: FINISHED或ERROR或者WAITING job_id: 任务id audio_file_download_url: 音频文件路径 subtitle_file_download_url: 字幕文件路径 audio_duration: 音频时长（秒）
 
@@ -53,7 +53,7 @@ class TtsCallBackConfig:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this TtsCallBackConfig.
+        r"""Sets the callback_url of this TtsCallBackConfig.
 
         回调URL。 回调请求body为json格式，带参数如下： status: FINISHED或ERROR或者WAITING job_id: 任务id audio_file_download_url: 音频文件路径 subtitle_file_download_url: 字幕文件路径 audio_duration: 音频时长（秒）
 

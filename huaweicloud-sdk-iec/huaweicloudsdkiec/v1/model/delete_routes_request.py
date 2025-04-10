@@ -27,7 +27,7 @@ class DeleteRoutesRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """DeleteRoutesRequest
+        r"""DeleteRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteRoutesRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this DeleteRoutesRequest.
+        r"""Gets the routetable_id of this DeleteRoutesRequest.
 
         路由表ID
 
@@ -60,7 +60,7 @@ class DeleteRoutesRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this DeleteRoutesRequest.
+        r"""Sets the routetable_id of this DeleteRoutesRequest.
 
         路由表ID
 
@@ -71,7 +71,7 @@ class DeleteRoutesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRoutesRequest.
+        r"""Gets the body of this DeleteRoutesRequest.
 
         :return: The body of this DeleteRoutesRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequestBody`
@@ -80,7 +80,7 @@ class DeleteRoutesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRoutesRequest.
+        r"""Sets the body of this DeleteRoutesRequest.
 
         :param body: The body of this DeleteRoutesRequest.
         :type body: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequestBody`

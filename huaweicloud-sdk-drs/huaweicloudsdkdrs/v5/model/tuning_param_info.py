@@ -31,7 +31,7 @@ class TuningParamInfo:
     }
 
     def __init__(self, full_sync=None, incre_capture=None, incre_apply=None, incre_relay=None):
-        """TuningParamInfo
+        r"""TuningParamInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TuningParamInfo:
 
     @property
     def full_sync(self):
-        """Gets the full_sync of this TuningParamInfo.
+        r"""Gets the full_sync of this TuningParamInfo.
 
         全量调优参数。
 
@@ -71,7 +71,7 @@ class TuningParamInfo:
 
     @full_sync.setter
     def full_sync(self, full_sync):
-        """Sets the full_sync of this TuningParamInfo.
+        r"""Sets the full_sync of this TuningParamInfo.
 
         全量调优参数。
 
@@ -82,7 +82,7 @@ class TuningParamInfo:
 
     @property
     def incre_capture(self):
-        """Gets the incre_capture of this TuningParamInfo.
+        r"""Gets the incre_capture of this TuningParamInfo.
 
         增量抓取调优参数。
 
@@ -93,7 +93,7 @@ class TuningParamInfo:
 
     @incre_capture.setter
     def incre_capture(self, incre_capture):
-        """Sets the incre_capture of this TuningParamInfo.
+        r"""Sets the incre_capture of this TuningParamInfo.
 
         增量抓取调优参数。
 
@@ -104,7 +104,7 @@ class TuningParamInfo:
 
     @property
     def incre_apply(self):
-        """Gets the incre_apply of this TuningParamInfo.
+        r"""Gets the incre_apply of this TuningParamInfo.
 
         增量回放调优参数。
 
@@ -115,7 +115,7 @@ class TuningParamInfo:
 
     @incre_apply.setter
     def incre_apply(self, incre_apply):
-        """Sets the incre_apply of this TuningParamInfo.
+        r"""Sets the incre_apply of this TuningParamInfo.
 
         增量回放调优参数。
 
@@ -126,7 +126,7 @@ class TuningParamInfo:
 
     @property
     def incre_relay(self):
-        """Gets the incre_relay of this TuningParamInfo.
+        r"""Gets the incre_relay of this TuningParamInfo.
 
         增量日志拉取调优参数。
 
@@ -137,7 +137,7 @@ class TuningParamInfo:
 
     @incre_relay.setter
     def incre_relay(self, incre_relay):
-        """Sets the incre_relay of this TuningParamInfo.
+        r"""Sets the incre_relay of this TuningParamInfo.
 
         增量日志拉取调优参数。
 

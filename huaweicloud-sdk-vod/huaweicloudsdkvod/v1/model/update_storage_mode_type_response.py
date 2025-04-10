@@ -24,7 +24,7 @@ class UpdateStorageModeTypeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateStorageModeTypeResponse
+        r"""UpdateStorageModeTypeResponse
 
         The model defined in huaweicloud sdk
 

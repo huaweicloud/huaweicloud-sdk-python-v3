@@ -25,7 +25,7 @@ class ManageAssetReq:
     }
 
     def __init__(self, action=None):
-        """ManageAssetReq
+        r"""ManageAssetReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ManageAssetReq:
 
     @property
     def action(self):
-        """Gets the action of this ManageAssetReq.
+        r"""Gets the action of this ManageAssetReq.
 
         :return: The action of this ManageAssetReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AssetAction`
@@ -51,7 +51,7 @@ class ManageAssetReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ManageAssetReq.
+        r"""Sets the action of this ManageAssetReq.
 
         :param action: The action of this ManageAssetReq.
         :type action: :class:`huaweicloudsdkeihealth.v1.AssetAction`

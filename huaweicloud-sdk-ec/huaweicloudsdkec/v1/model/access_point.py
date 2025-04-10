@@ -37,7 +37,7 @@ class AccessPoint:
     }
 
     def __init__(self, id=None, region_id=None, bandwidth_size=None, bind_ieg_count=None, attach_vpc_count=None, created_at=None, updated_at=None):
-        """AccessPoint
+        r"""AccessPoint
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AccessPoint:
 
     @property
     def id(self):
-        """Gets the id of this AccessPoint.
+        r"""Gets the id of this AccessPoint.
 
         企业连接网络接入点ID
 
@@ -96,7 +96,7 @@ class AccessPoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AccessPoint.
+        r"""Sets the id of this AccessPoint.
 
         企业连接网络接入点ID
 
@@ -107,7 +107,7 @@ class AccessPoint:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AccessPoint.
+        r"""Gets the region_id of this AccessPoint.
 
         区域ID
 
@@ -118,7 +118,7 @@ class AccessPoint:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AccessPoint.
+        r"""Sets the region_id of this AccessPoint.
 
         区域ID
 
@@ -129,7 +129,7 @@ class AccessPoint:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this AccessPoint.
+        r"""Gets the bandwidth_size of this AccessPoint.
 
         带宽
 
@@ -140,7 +140,7 @@ class AccessPoint:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this AccessPoint.
+        r"""Sets the bandwidth_size of this AccessPoint.
 
         带宽
 
@@ -151,7 +151,7 @@ class AccessPoint:
 
     @property
     def bind_ieg_count(self):
-        """Gets the bind_ieg_count of this AccessPoint.
+        r"""Gets the bind_ieg_count of this AccessPoint.
 
         绑定智能企业网关数量
 
@@ -162,7 +162,7 @@ class AccessPoint:
 
     @bind_ieg_count.setter
     def bind_ieg_count(self, bind_ieg_count):
-        """Sets the bind_ieg_count of this AccessPoint.
+        r"""Sets the bind_ieg_count of this AccessPoint.
 
         绑定智能企业网关数量
 
@@ -173,7 +173,7 @@ class AccessPoint:
 
     @property
     def attach_vpc_count(self):
-        """Gets the attach_vpc_count of this AccessPoint.
+        r"""Gets the attach_vpc_count of this AccessPoint.
 
         关联VPC数量
 
@@ -184,7 +184,7 @@ class AccessPoint:
 
     @attach_vpc_count.setter
     def attach_vpc_count(self, attach_vpc_count):
-        """Sets the attach_vpc_count of this AccessPoint.
+        r"""Sets the attach_vpc_count of this AccessPoint.
 
         关联VPC数量
 
@@ -195,7 +195,7 @@ class AccessPoint:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AccessPoint.
+        r"""Gets the created_at of this AccessPoint.
 
         创建时间
 
@@ -206,7 +206,7 @@ class AccessPoint:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AccessPoint.
+        r"""Sets the created_at of this AccessPoint.
 
         创建时间
 
@@ -217,7 +217,7 @@ class AccessPoint:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AccessPoint.
+        r"""Gets the updated_at of this AccessPoint.
 
         更新时间
 
@@ -228,7 +228,7 @@ class AccessPoint:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AccessPoint.
+        r"""Sets the updated_at of this AccessPoint.
 
         更新时间
 

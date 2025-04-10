@@ -25,7 +25,7 @@ class ListEcnWithVpcRequest:
     }
 
     def __init__(self, ecn_id=None):
-        """ListEcnWithVpcRequest
+        r"""ListEcnWithVpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEcnWithVpcRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this ListEcnWithVpcRequest.
+        r"""Gets the ecn_id of this ListEcnWithVpcRequest.
 
         企业连接网络ID
 
@@ -53,7 +53,7 @@ class ListEcnWithVpcRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this ListEcnWithVpcRequest.
+        r"""Sets the ecn_id of this ListEcnWithVpcRequest.
 
         企业连接网络ID
 

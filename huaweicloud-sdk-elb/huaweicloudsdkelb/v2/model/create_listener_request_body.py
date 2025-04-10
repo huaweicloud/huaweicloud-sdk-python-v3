@@ -25,7 +25,7 @@ class CreateListenerRequestBody:
     }
 
     def __init__(self, listener=None):
-        """CreateListenerRequestBody
+        r"""CreateListenerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateListenerRequestBody:
 
     @property
     def listener(self):
-        """Gets the listener of this CreateListenerRequestBody.
+        r"""Gets the listener of this CreateListenerRequestBody.
 
         :return: The listener of this CreateListenerRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateListenerReq`
@@ -51,7 +51,7 @@ class CreateListenerRequestBody:
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this CreateListenerRequestBody.
+        r"""Sets the listener of this CreateListenerRequestBody.
 
         :param listener: The listener of this CreateListenerRequestBody.
         :type listener: :class:`huaweicloudsdkelb.v2.CreateListenerReq`

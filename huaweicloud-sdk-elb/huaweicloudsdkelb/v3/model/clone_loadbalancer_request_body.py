@@ -27,7 +27,7 @@ class CloneLoadbalancerRequestBody:
     }
 
     def __init__(self, count=None, target_loadbalancer_param=None):
-        """CloneLoadbalancerRequestBody
+        r"""CloneLoadbalancerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CloneLoadbalancerRequestBody:
 
     @property
     def count(self):
-        """Gets the count of this CloneLoadbalancerRequestBody.
+        r"""Gets the count of this CloneLoadbalancerRequestBody.
 
         参数解释：单次最大复制数量。  取值范围：1-10  默认取值：1
 
@@ -60,7 +60,7 @@ class CloneLoadbalancerRequestBody:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CloneLoadbalancerRequestBody.
+        r"""Sets the count of this CloneLoadbalancerRequestBody.
 
         参数解释：单次最大复制数量。  取值范围：1-10  默认取值：1
 
@@ -71,7 +71,7 @@ class CloneLoadbalancerRequestBody:
 
     @property
     def target_loadbalancer_param(self):
-        """Gets the target_loadbalancer_param of this CloneLoadbalancerRequestBody.
+        r"""Gets the target_loadbalancer_param of this CloneLoadbalancerRequestBody.
 
         :return: The target_loadbalancer_param of this CloneLoadbalancerRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.TargetLoadbalancerParam`
@@ -80,7 +80,7 @@ class CloneLoadbalancerRequestBody:
 
     @target_loadbalancer_param.setter
     def target_loadbalancer_param(self, target_loadbalancer_param):
-        """Sets the target_loadbalancer_param of this CloneLoadbalancerRequestBody.
+        r"""Sets the target_loadbalancer_param of this CloneLoadbalancerRequestBody.
 
         :param target_loadbalancer_param: The target_loadbalancer_param of this CloneLoadbalancerRequestBody.
         :type target_loadbalancer_param: :class:`huaweicloudsdkelb.v3.TargetLoadbalancerParam`

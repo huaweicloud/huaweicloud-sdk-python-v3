@@ -34,7 +34,7 @@ class EcAsyncClient(Client):
         return client_builder
 
     def create_ecn_access_point_async(self, request):
-        """添加新的接入点
+        r"""添加新的接入点
 
         添加新的接入点
         
@@ -101,7 +101,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_ecn_access_point_async(self, request):
-        """删除接入点
+        r"""删除接入点
 
         根据企业连接网络ID，删除接入点
         
@@ -168,7 +168,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_ecn_access_point_by_ecn_id_async(self, request):
-        """查询接入点
+        r"""查询接入点
 
         根据企业连接网络ID，查询其下所有接入点
         
@@ -233,7 +233,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_ecn_access_point_async(self, request):
-        """更新接入点
+        r"""更新接入点
 
         根据企业连接网络ID，更新接入点
         
@@ -302,7 +302,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def add_ecn_with_ieg_async(self, request):
-        """绑定智能企业网关到企业连接网络
+        r"""绑定智能企业网关到企业连接网络
 
         绑定智能企业网关到企业连接网络
         
@@ -369,7 +369,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_ecn_with_ieg_async(self, request):
-        """解除智能企业网关和企业连接网络的绑定
+        r"""解除智能企业网关和企业连接网络的绑定
 
         解除智能企业网关和企业连接网络的绑定
         
@@ -436,7 +436,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_ecn_async(self, request):
-        """查询企业连接网络列表
+        r"""查询企业连接网络列表
 
         查询租户的企业连接网络列表
         
@@ -506,7 +506,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_ecn_with_ieg_async(self, request):
-        """查询企业连接网络与智能企业网关绑定关系
+        r"""查询企业连接网络与智能企业网关绑定关系
 
         根据企业连接网络ID，查询企业连接网络与智能企业网关绑定关系
         
@@ -573,7 +573,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_ecn_info_async(self, request):
-        """查询企业连接网络
+        r"""查询企业连接网络
 
         根据企业连接网络ID，查询企业连接网络
         
@@ -638,7 +638,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_ecn_with_ieg_async(self, request):
-        """查询企业连接网络与单个智能企业网关绑定关系
+        r"""查询企业连接网络与单个智能企业网关绑定关系
 
         查询企业连接网络与单个智能企业网关绑定关系
         
@@ -705,7 +705,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_ecn_async(self, request):
-        """更新企业连接网络
+        r"""更新企业连接网络
 
         根据企业连接网络ID，更新企业连接网络
         
@@ -772,7 +772,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def create_equipment_async(self, request):
-        """激活智能企业网关设备
+        r"""激活智能企业网关设备
 
         激活智能企业网关设备
         
@@ -839,7 +839,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_equipment_async(self, request):
-        """移除智能企业网关设备
+        r"""移除智能企业网关设备
 
         移除智能企业网关设备
         
@@ -906,7 +906,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def generate_initial_configuration_async(self, request):
-        """生成智能企业网关设备初始配置
+        r"""生成智能企业网关设备初始配置
 
         生成智能企业网关设备初始配置
         
@@ -975,7 +975,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_equipments_async(self, request):
-        """查询智能企业网关设备列表
+        r"""查询智能企业网关设备列表
 
         根据智能企业网关ID，查询智能企业网关设备列表
         
@@ -1040,7 +1040,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def reboot_equipment_async(self, request):
-        """重启智能企业网关设备
+        r"""重启智能企业网关设备
 
         重启智能企业网关设备
         
@@ -1107,7 +1107,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_info_async(self, request):
-        """查询智能企业网关设备
+        r"""查询智能企业网关设备
 
         查询智能企业网关设备
         
@@ -1174,7 +1174,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_specific_config_async(self, request):
-        """查询智能企业网关设备基础规格配置
+        r"""查询智能企业网关设备基础规格配置
 
         查询智能企业网关设备基础规格配置
         
@@ -1239,7 +1239,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_esn_async(self, request):
-        """修改智能企业网关设备ESN
+        r"""修改智能企业网关设备ESN
 
         修改智能企业网关设备ESN
         
@@ -1308,7 +1308,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_info_async(self, request):
-        """更新智能企业网关设备
+        r"""更新智能企业网关设备
 
         更新智能企业网关设备
         
@@ -1377,7 +1377,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def create_equipment_lan_config_async(self, request):
-        """创建智能企业网关设备LAN口配置
+        r"""创建智能企业网关设备LAN口配置
 
         创建智能企业网关设备LAN口配置
         
@@ -1446,7 +1446,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_equipment_lan_config_async(self, request):
-        """删除智能企业网关设备LAN口配置
+        r"""删除智能企业网关设备LAN口配置
 
         删除智能企业网关设备LAN口配置
         
@@ -1517,7 +1517,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_equipment_interface_name_async(self, request):
-        """查询智能企业网关已配置的接口名字
+        r"""查询智能企业网关已配置的接口名字
 
         查询智能企业网关已配置的接口名字
         
@@ -1584,7 +1584,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_dns_info_async(self, request):
-        """查询智能企业网关设备主备DNS配置
+        r"""查询智能企业网关设备主备DNS配置
 
         查询智能企业网关设备主备DNS配置
         
@@ -1651,7 +1651,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_lan_info_async(self, request):
-        """查询智能企业网关设备LAN口配置
+        r"""查询智能企业网关设备LAN口配置
 
         查询智能企业网关设备LAN口配置
         
@@ -1718,7 +1718,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_dns_info_async(self, request):
-        """更新智能企业网关设备主备DNS配置
+        r"""更新智能企业网关设备主备DNS配置
 
         更新智能企业网关设备主备DNS配置
         
@@ -1787,7 +1787,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_lan_config_async(self, request):
-        """更新智能企业网关设备LAN口配置
+        r"""更新智能企业网关设备LAN口配置
 
         更新智能企业网关设备LAN口配置
         
@@ -1856,7 +1856,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_ospf_async(self, request):
-        """查询智能企业网关设备OSPF配置
+        r"""查询智能企业网关设备OSPF配置
 
         查询智能企业网关设备OSPF配置
         
@@ -1923,7 +1923,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_ospf_async(self, request):
-        """配置智能企业网关设备OSPF协议
+        r"""配置智能企业网关设备OSPF协议
 
         配置智能企业网关设备OSPF协议
         
@@ -1992,7 +1992,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def create_equipment_static_route_config_async(self, request):
-        """创建智能企业网关设备静态路由配置
+        r"""创建智能企业网关设备静态路由配置
 
         创建智能企业网关设备静态路由配置
         
@@ -2061,7 +2061,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_equipment_static_route_config_async(self, request):
-        """删除智能企业网关设备静态路由配置
+        r"""删除智能企业网关设备静态路由配置
 
         删除智能企业网关设备静态路由配置
         
@@ -2134,7 +2134,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_static_route_info_async(self, request):
-        """查询智能企业网关设备静态路由配置
+        r"""查询智能企业网关设备静态路由配置
 
         查询智能企业网关设备静态路由配置
         
@@ -2201,7 +2201,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_static_route_config_async(self, request):
-        """更新智能企业网关设备静态路由配置
+        r"""更新智能企业网关设备静态路由配置
 
         更新智能企业网关设备静态路由配置
         
@@ -2270,7 +2270,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_wan_info_async(self, request):
-        """查询智能企业网关设备WAN口配置
+        r"""查询智能企业网关设备WAN口配置
 
         查询智能企业网关设备WAN口配置
         
@@ -2337,7 +2337,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_wan_config_async(self, request):
-        """更新智能企业网关设备WAN口配置
+        r"""更新智能企业网关设备WAN口配置
 
         更新智能企业网关设备WAN口配置
         
@@ -2406,7 +2406,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_equipment_wlan_async(self, request):
-        """查询智能企业网关设备Wlan配置
+        r"""查询智能企业网关设备Wlan配置
 
         查询智能企业网关设备Wlan配置
         
@@ -2473,7 +2473,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_equipment_wlan_async(self, request):
-        """配置智能企业网关设备Wlan
+        r"""配置智能企业网关设备Wlan
 
         配置智能企业网关设备Wlan
         
@@ -2542,7 +2542,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def add_ecn_with_er_async(self, request):
-        """关联企业路由器到企业连接网络
+        r"""关联企业路由器到企业连接网络
 
         关联企业路由器到企业连接网络
         
@@ -2609,7 +2609,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_ecn_with_er_async(self, request):
-        """解除企业路由器和企业连接网络的关联
+        r"""解除企业路由器和企业连接网络的关联
 
         解除企业路由器和企业连接网络的关联
         
@@ -2676,7 +2676,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_ecn_with_er_async(self, request):
-        """查询企业连接网络网与企业路由器关联关系
+        r"""查询企业连接网络网与企业路由器关联关系
 
         根据企业连接网络ID，查询企业连接网络网与企业路由器关联关系
         
@@ -2741,7 +2741,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def change_ieg_password_async(self, request):
-        """修改IEG设备admin账户密码
+        r"""修改IEG设备admin账户密码
 
         修改IEG设备admin账户密码
         
@@ -2808,7 +2808,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_ieg_async(self, request):
-        """查询租户智能企业网关列表
+        r"""查询租户智能企业网关列表
 
         查询租户智能企业网关列表
         
@@ -2878,7 +2878,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_ieg_info_async(self, request):
-        """查询租户单个智能企业网关
+        r"""查询租户单个智能企业网关
 
         根据智能企业网关ID，查询租户智能企业网关
         
@@ -2943,7 +2943,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def switch_equipment_ha_type_async(self, request):
-        """交换双机主备属性
+        r"""交换双机主备属性
 
         交换双机主备属性
         
@@ -3010,7 +3010,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_ieg_async(self, request):
-        """更新智能企业网关
+        r"""更新智能企业网关
 
         根据智能企业网关ID，更新智能企业网关
         
@@ -3077,7 +3077,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_quotas_info_async(self, request):
-        """查询EC相关的指定租户的配额
+        r"""查询EC相关的指定租户的配额
 
         查询EC相关的指定租户的配额
         
@@ -3140,7 +3140,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def add_ecn_with_vpc_async(self, request):
-        """关联虚拟私有云到企业连接网络
+        r"""关联虚拟私有云到企业连接网络
 
         关联虚拟私有云到企业连接网络
         
@@ -3207,7 +3207,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_ecn_with_vpc_async(self, request):
-        """解除虚拟私有云和企业连接网络的关联
+        r"""解除虚拟私有云和企业连接网络的关联
 
         解除虚拟私有云和企业连接网络的关联
         
@@ -3274,7 +3274,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def list_ecn_with_vpc_async(self, request):
-        """查询企业连接网络与虚拟私有云关联关系
+        r"""查询企业连接网络与虚拟私有云关联关系
 
         根据企业连接网络ID，查询企业连接网络与虚拟私有云关联关系
         
@@ -3339,7 +3339,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_ecn_with_vpc_async(self, request):
-        """更新虚拟私有云和企业连接网络的关联
+        r"""更新虚拟私有云和企业连接网络的关联
 
         更新虚拟私有云和企业连接网络的关联
         
@@ -3408,7 +3408,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def add_vrrp_config_async(self, request):
-        """创建vrrp配置
+        r"""创建vrrp配置
 
         创建vrrp配置
         
@@ -3475,7 +3475,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def delete_vrrp_config_async(self, request):
-        """删除vrrp配置
+        r"""删除vrrp配置
 
         删除vrrp配置
         
@@ -3542,7 +3542,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def show_vrrp_config_async(self, request):
-        """查询vrrp配置列表
+        r"""查询vrrp配置列表
 
         查询vrrp配置列表
         
@@ -3607,7 +3607,7 @@ class EcAsyncClient(Client):
         return http_info
 
     def update_vrrp_config_async(self, request):
-        """更新vrrp配置
+        r"""更新vrrp配置
 
         更新vrrp配置
         

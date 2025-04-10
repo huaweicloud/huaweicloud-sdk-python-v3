@@ -26,7 +26,7 @@ class UpdateKafkaUserClientQuotaTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateKafkaUserClientQuotaTaskResponse
+        r"""UpdateKafkaUserClientQuotaTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateKafkaUserClientQuotaTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateKafkaUserClientQuotaTaskResponse.
+        r"""Gets the job_id of this UpdateKafkaUserClientQuotaTaskResponse.
 
         修改流控配置的任务ID
 
@@ -55,7 +55,7 @@ class UpdateKafkaUserClientQuotaTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateKafkaUserClientQuotaTaskResponse.
+        r"""Sets the job_id of this UpdateKafkaUserClientQuotaTaskResponse.
 
         修改流控配置的任务ID
 

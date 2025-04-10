@@ -25,7 +25,7 @@ class DeletetemplatesReq:
     }
 
     def __init__(self, ids=None):
-        """DeletetemplatesReq
+        r"""DeletetemplatesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeletetemplatesReq:
 
     @property
     def ids(self):
-        """Gets the ids of this DeletetemplatesReq.
+        r"""Gets the ids of this DeletetemplatesReq.
 
         需要删除的模板ID
 
@@ -54,7 +54,7 @@ class DeletetemplatesReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeletetemplatesReq.
+        r"""Sets the ids of this DeletetemplatesReq.
 
         需要删除的模板ID
 

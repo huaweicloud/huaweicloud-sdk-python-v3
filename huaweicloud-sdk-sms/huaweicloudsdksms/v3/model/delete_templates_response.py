@@ -26,7 +26,7 @@ class DeleteTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteTemplatesResponse
+        r"""DeleteTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteTemplatesResponse.
+        r"""Gets the body of this DeleteTemplatesResponse.
 
         批量删除指定ID的模板成功
 
@@ -55,7 +55,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTemplatesResponse.
+        r"""Sets the body of this DeleteTemplatesResponse.
 
         批量删除指定ID的模板成功
 

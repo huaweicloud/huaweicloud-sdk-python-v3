@@ -25,7 +25,7 @@ class EdgeGroupUpdateRequest:
     }
 
     def __init__(self, description=None):
-        """EdgeGroupUpdateRequest
+        r"""EdgeGroupUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EdgeGroupUpdateRequest:
 
     @property
     def description(self):
-        """Gets the description of this EdgeGroupUpdateRequest.
+        r"""Gets the description of this EdgeGroupUpdateRequest.
 
         边缘节点组描述
 
@@ -54,7 +54,7 @@ class EdgeGroupUpdateRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeGroupUpdateRequest.
+        r"""Sets the description of this EdgeGroupUpdateRequest.
 
         边缘节点组描述
 

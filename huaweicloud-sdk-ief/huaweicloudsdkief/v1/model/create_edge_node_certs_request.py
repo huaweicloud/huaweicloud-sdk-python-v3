@@ -29,7 +29,7 @@ class CreateEdgeNodeCertsRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None, body=None):
-        """CreateEdgeNodeCertsRequest
+        r"""CreateEdgeNodeCertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateEdgeNodeCertsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateEdgeNodeCertsRequest.
+        r"""Gets the node_id of this CreateEdgeNodeCertsRequest.
 
         边缘节点ID
 
@@ -67,7 +67,7 @@ class CreateEdgeNodeCertsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateEdgeNodeCertsRequest.
+        r"""Sets the node_id of this CreateEdgeNodeCertsRequest.
 
         边缘节点ID
 
@@ -78,7 +78,7 @@ class CreateEdgeNodeCertsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateEdgeNodeCertsRequest.
+        r"""Gets the ief_instance_id of this CreateEdgeNodeCertsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -89,7 +89,7 @@ class CreateEdgeNodeCertsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateEdgeNodeCertsRequest.
+        r"""Sets the ief_instance_id of this CreateEdgeNodeCertsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -100,7 +100,7 @@ class CreateEdgeNodeCertsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeNodeCertsRequest.
+        r"""Gets the body of this CreateEdgeNodeCertsRequest.
 
         :return: The body of this CreateEdgeNodeCertsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Cert`
@@ -109,7 +109,7 @@ class CreateEdgeNodeCertsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeNodeCertsRequest.
+        r"""Sets the body of this CreateEdgeNodeCertsRequest.
 
         :param body: The body of this CreateEdgeNodeCertsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Cert`

@@ -40,7 +40,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
     }
 
     def __init__(self, welcome_speech_id=None, welcome_speech=None, enable_welcome_speech=None, language=None, robot_id=None, create_time=None, update_time=None, x_request_id=None):
-        """UpdateWelcomeSpeechResponse
+        r"""UpdateWelcomeSpeechResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def welcome_speech_id(self):
-        """Gets the welcome_speech_id of this UpdateWelcomeSpeechResponse.
+        r"""Gets the welcome_speech_id of this UpdateWelcomeSpeechResponse.
 
         欢迎词ID。
 
@@ -104,7 +104,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @welcome_speech_id.setter
     def welcome_speech_id(self, welcome_speech_id):
-        """Sets the welcome_speech_id of this UpdateWelcomeSpeechResponse.
+        r"""Sets the welcome_speech_id of this UpdateWelcomeSpeechResponse.
 
         欢迎词ID。
 
@@ -115,7 +115,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def welcome_speech(self):
-        """Gets the welcome_speech of this UpdateWelcomeSpeechResponse.
+        r"""Gets the welcome_speech of this UpdateWelcomeSpeechResponse.
 
         欢迎词。
 
@@ -126,7 +126,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @welcome_speech.setter
     def welcome_speech(self, welcome_speech):
-        """Sets the welcome_speech of this UpdateWelcomeSpeechResponse.
+        r"""Sets the welcome_speech of this UpdateWelcomeSpeechResponse.
 
         欢迎词。
 
@@ -137,7 +137,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def enable_welcome_speech(self):
-        """Gets the enable_welcome_speech of this UpdateWelcomeSpeechResponse.
+        r"""Gets the enable_welcome_speech of this UpdateWelcomeSpeechResponse.
 
         欢迎词功能开关。
 
@@ -148,7 +148,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @enable_welcome_speech.setter
     def enable_welcome_speech(self, enable_welcome_speech):
-        """Sets the enable_welcome_speech of this UpdateWelcomeSpeechResponse.
+        r"""Sets the enable_welcome_speech of this UpdateWelcomeSpeechResponse.
 
         欢迎词功能开关。
 
@@ -159,7 +159,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this UpdateWelcomeSpeechResponse.
+        r"""Gets the language of this UpdateWelcomeSpeechResponse.
 
         :return: The language of this UpdateWelcomeSpeechResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -168,7 +168,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateWelcomeSpeechResponse.
+        r"""Sets the language of this UpdateWelcomeSpeechResponse.
 
         :param language: The language of this UpdateWelcomeSpeechResponse.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -177,7 +177,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdateWelcomeSpeechResponse.
+        r"""Gets the robot_id of this UpdateWelcomeSpeechResponse.
 
         应用ID。
 
@@ -188,7 +188,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdateWelcomeSpeechResponse.
+        r"""Sets the robot_id of this UpdateWelcomeSpeechResponse.
 
         应用ID。
 
@@ -199,7 +199,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateWelcomeSpeechResponse.
+        r"""Gets the create_time of this UpdateWelcomeSpeechResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -210,7 +210,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateWelcomeSpeechResponse.
+        r"""Sets the create_time of this UpdateWelcomeSpeechResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -221,7 +221,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateWelcomeSpeechResponse.
+        r"""Gets the update_time of this UpdateWelcomeSpeechResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -232,7 +232,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateWelcomeSpeechResponse.
+        r"""Sets the update_time of this UpdateWelcomeSpeechResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -243,7 +243,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateWelcomeSpeechResponse.
+        r"""Gets the x_request_id of this UpdateWelcomeSpeechResponse.
 
         :return: The x_request_id of this UpdateWelcomeSpeechResponse.
         :rtype: str
@@ -252,7 +252,7 @@ class UpdateWelcomeSpeechResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateWelcomeSpeechResponse.
+        r"""Sets the x_request_id of this UpdateWelcomeSpeechResponse.
 
         :param x_request_id: The x_request_id of this UpdateWelcomeSpeechResponse.
         :type x_request_id: str

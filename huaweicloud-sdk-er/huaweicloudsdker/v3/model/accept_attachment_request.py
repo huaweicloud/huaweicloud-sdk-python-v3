@@ -27,7 +27,7 @@ class AcceptAttachmentRequest:
     }
 
     def __init__(self, er_id=None, attachment_id=None):
-        """AcceptAttachmentRequest
+        r"""AcceptAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AcceptAttachmentRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this AcceptAttachmentRequest.
+        r"""Gets the er_id of this AcceptAttachmentRequest.
 
         企业路由器实例ID
 
@@ -59,7 +59,7 @@ class AcceptAttachmentRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this AcceptAttachmentRequest.
+        r"""Sets the er_id of this AcceptAttachmentRequest.
 
         企业路由器实例ID
 
@@ -70,7 +70,7 @@ class AcceptAttachmentRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this AcceptAttachmentRequest.
+        r"""Gets the attachment_id of this AcceptAttachmentRequest.
 
         连接ID
 
@@ -81,7 +81,7 @@ class AcceptAttachmentRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this AcceptAttachmentRequest.
+        r"""Sets the attachment_id of this AcceptAttachmentRequest.
 
         连接ID
 

@@ -35,7 +35,7 @@ class AlarmLogRequest:
     }
 
     def __init__(self, time=None, risk=None, type=None, status=None, page=None, size=None):
-        """AlarmLogRequest
+        r"""AlarmLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class AlarmLogRequest:
 
     @property
     def time(self):
-        """Gets the time of this AlarmLogRequest.
+        r"""Gets the time of this AlarmLogRequest.
 
         :return: The time of this AlarmLogRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AlarmLogRequestTime`
@@ -86,7 +86,7 @@ class AlarmLogRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this AlarmLogRequest.
+        r"""Sets the time of this AlarmLogRequest.
 
         :param time: The time of this AlarmLogRequest.
         :type time: :class:`huaweicloudsdkdbss.v1.AlarmLogRequestTime`
@@ -95,7 +95,7 @@ class AlarmLogRequest:
 
     @property
     def risk(self):
-        """Gets the risk of this AlarmLogRequest.
+        r"""Gets the risk of this AlarmLogRequest.
 
         风险级别 - LOW - MEDIUM - HIGH
 
@@ -106,7 +106,7 @@ class AlarmLogRequest:
 
     @risk.setter
     def risk(self, risk):
-        """Sets the risk of this AlarmLogRequest.
+        r"""Sets the risk of this AlarmLogRequest.
 
         风险级别 - LOW - MEDIUM - HIGH
 
@@ -117,7 +117,7 @@ class AlarmLogRequest:
 
     @property
     def type(self):
-        """Gets the type of this AlarmLogRequest.
+        r"""Gets the type of this AlarmLogRequest.
 
         告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
 
@@ -128,7 +128,7 @@ class AlarmLogRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AlarmLogRequest.
+        r"""Sets the type of this AlarmLogRequest.
 
         告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
 
@@ -139,7 +139,7 @@ class AlarmLogRequest:
 
     @property
     def status(self):
-        """Gets the status of this AlarmLogRequest.
+        r"""Gets the status of this AlarmLogRequest.
 
         告警确认状态 - DONE: 已确认 - UNDO: 未确认
 
@@ -150,7 +150,7 @@ class AlarmLogRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmLogRequest.
+        r"""Sets the status of this AlarmLogRequest.
 
         告警确认状态 - DONE: 已确认 - UNDO: 未确认
 
@@ -161,7 +161,7 @@ class AlarmLogRequest:
 
     @property
     def page(self):
-        """Gets the page of this AlarmLogRequest.
+        r"""Gets the page of this AlarmLogRequest.
 
         页码
 
@@ -172,7 +172,7 @@ class AlarmLogRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AlarmLogRequest.
+        r"""Sets the page of this AlarmLogRequest.
 
         页码
 
@@ -183,7 +183,7 @@ class AlarmLogRequest:
 
     @property
     def size(self):
-        """Gets the size of this AlarmLogRequest.
+        r"""Gets the size of this AlarmLogRequest.
 
         每页条数
 
@@ -194,7 +194,7 @@ class AlarmLogRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AlarmLogRequest.
+        r"""Sets the size of this AlarmLogRequest.
 
         每页条数
 

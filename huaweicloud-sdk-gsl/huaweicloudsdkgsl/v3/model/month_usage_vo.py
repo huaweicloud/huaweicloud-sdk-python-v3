@@ -29,7 +29,7 @@ class MonthUsageVo:
     }
 
     def __init__(self, sim_card_id=None, iccid=None, flow_usages=None):
-        """MonthUsageVo
+        r"""MonthUsageVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MonthUsageVo:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this MonthUsageVo.
+        r"""Gets the sim_card_id of this MonthUsageVo.
 
         SIM卡ID
 
@@ -68,7 +68,7 @@ class MonthUsageVo:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this MonthUsageVo.
+        r"""Sets the sim_card_id of this MonthUsageVo.
 
         SIM卡ID
 
@@ -79,7 +79,7 @@ class MonthUsageVo:
 
     @property
     def iccid(self):
-        """Gets the iccid of this MonthUsageVo.
+        r"""Gets the iccid of this MonthUsageVo.
 
         iccid
 
@@ -90,7 +90,7 @@ class MonthUsageVo:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this MonthUsageVo.
+        r"""Sets the iccid of this MonthUsageVo.
 
         iccid
 
@@ -101,7 +101,7 @@ class MonthUsageVo:
 
     @property
     def flow_usages(self):
-        """Gets the flow_usages of this MonthUsageVo.
+        r"""Gets the flow_usages of this MonthUsageVo.
 
         月用量
 
@@ -112,7 +112,7 @@ class MonthUsageVo:
 
     @flow_usages.setter
     def flow_usages(self, flow_usages):
-        """Sets the flow_usages of this MonthUsageVo.
+        r"""Sets the flow_usages of this MonthUsageVo.
 
         月用量
 

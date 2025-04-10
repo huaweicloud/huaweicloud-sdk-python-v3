@@ -41,7 +41,7 @@ class ServerInfo:
     }
 
     def __init__(self, server_id=None, server_name=None, server_type=None, data_volumes=None, root_volume=None, cpu_type=None, cpu=None, mem=None, internal_ip=None):
-        """ServerInfo
+        r"""ServerInfo
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ServerInfo:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerInfo.
+        r"""Gets the server_id of this ServerInfo.
 
         服务器ID。
 
@@ -107,7 +107,7 @@ class ServerInfo:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerInfo.
+        r"""Sets the server_id of this ServerInfo.
 
         服务器ID。
 
@@ -118,7 +118,7 @@ class ServerInfo:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ServerInfo.
+        r"""Gets the server_name of this ServerInfo.
 
         服务器名称。
 
@@ -129,7 +129,7 @@ class ServerInfo:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ServerInfo.
+        r"""Sets the server_name of this ServerInfo.
 
         服务器名称。
 
@@ -140,7 +140,7 @@ class ServerInfo:
 
     @property
     def server_type(self):
-        """Gets the server_type of this ServerInfo.
+        r"""Gets the server_type of this ServerInfo.
 
         ECS或者BMS。
 
@@ -151,7 +151,7 @@ class ServerInfo:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this ServerInfo.
+        r"""Sets the server_type of this ServerInfo.
 
         ECS或者BMS。
 
@@ -162,7 +162,7 @@ class ServerInfo:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this ServerInfo.
+        r"""Gets the data_volumes of this ServerInfo.
 
         数据盘。
 
@@ -173,7 +173,7 @@ class ServerInfo:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this ServerInfo.
+        r"""Sets the data_volumes of this ServerInfo.
 
         数据盘。
 
@@ -184,7 +184,7 @@ class ServerInfo:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this ServerInfo.
+        r"""Gets the root_volume of this ServerInfo.
 
         :return: The root_volume of this ServerInfo.
         :rtype: :class:`huaweicloudsdkmrs.v2.VolumeInfo`
@@ -193,7 +193,7 @@ class ServerInfo:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this ServerInfo.
+        r"""Sets the root_volume of this ServerInfo.
 
         :param root_volume: The root_volume of this ServerInfo.
         :type root_volume: :class:`huaweicloudsdkmrs.v2.VolumeInfo`
@@ -202,7 +202,7 @@ class ServerInfo:
 
     @property
     def cpu_type(self):
-        """Gets the cpu_type of this ServerInfo.
+        r"""Gets the cpu_type of this ServerInfo.
 
         CPU类型。x86或者ARM。
 
@@ -213,7 +213,7 @@ class ServerInfo:
 
     @cpu_type.setter
     def cpu_type(self, cpu_type):
-        """Sets the cpu_type of this ServerInfo.
+        r"""Sets the cpu_type of this ServerInfo.
 
         CPU类型。x86或者ARM。
 
@@ -224,7 +224,7 @@ class ServerInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ServerInfo.
+        r"""Gets the cpu of this ServerInfo.
 
         CPU大小。
 
@@ -235,7 +235,7 @@ class ServerInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ServerInfo.
+        r"""Sets the cpu of this ServerInfo.
 
         CPU大小。
 
@@ -246,7 +246,7 @@ class ServerInfo:
 
     @property
     def mem(self):
-        """Gets the mem of this ServerInfo.
+        r"""Gets the mem of this ServerInfo.
 
         内存大小。
 
@@ -257,7 +257,7 @@ class ServerInfo:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this ServerInfo.
+        r"""Sets the mem of this ServerInfo.
 
         内存大小。
 
@@ -268,7 +268,7 @@ class ServerInfo:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this ServerInfo.
+        r"""Gets the internal_ip of this ServerInfo.
 
         内部IP。
 
@@ -279,7 +279,7 @@ class ServerInfo:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this ServerInfo.
+        r"""Sets the internal_ip of this ServerInfo.
 
         内部IP。
 

@@ -27,7 +27,7 @@ class BatchDeleteRemediationExceptionsRequest:
     }
 
     def __init__(self, policy_assignment_id=None, body=None):
-        """BatchDeleteRemediationExceptionsRequest
+        r"""BatchDeleteRemediationExceptionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteRemediationExceptionsRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this BatchDeleteRemediationExceptionsRequest.
+        r"""Gets the policy_assignment_id of this BatchDeleteRemediationExceptionsRequest.
 
         规则ID
 
@@ -60,7 +60,7 @@ class BatchDeleteRemediationExceptionsRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this BatchDeleteRemediationExceptionsRequest.
+        r"""Sets the policy_assignment_id of this BatchDeleteRemediationExceptionsRequest.
 
         规则ID
 
@@ -71,7 +71,7 @@ class BatchDeleteRemediationExceptionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteRemediationExceptionsRequest.
+        r"""Gets the body of this BatchDeleteRemediationExceptionsRequest.
 
         :return: The body of this BatchDeleteRemediationExceptionsRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.BatchDeleteRemediationExceptionsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteRemediationExceptionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteRemediationExceptionsRequest.
+        r"""Sets the body of this BatchDeleteRemediationExceptionsRequest.
 
         :param body: The body of this BatchDeleteRemediationExceptionsRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.BatchDeleteRemediationExceptionsRequestBody`

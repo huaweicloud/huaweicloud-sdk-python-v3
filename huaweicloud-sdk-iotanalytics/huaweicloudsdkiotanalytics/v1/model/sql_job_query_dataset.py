@@ -29,7 +29,7 @@ class SqlJobQueryDataset:
     }
 
     def __init__(self, sql_type=None, schema=None, rows=None):
-        """SqlJobQueryDataset
+        r"""SqlJobQueryDataset
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SqlJobQueryDataset:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SqlJobQueryDataset.
+        r"""Gets the sql_type of this SqlJobQueryDataset.
 
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
@@ -67,7 +67,7 @@ class SqlJobQueryDataset:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SqlJobQueryDataset.
+        r"""Sets the sql_type of this SqlJobQueryDataset.
 
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
@@ -78,7 +78,7 @@ class SqlJobQueryDataset:
 
     @property
     def schema(self):
-        """Gets the schema of this SqlJobQueryDataset.
+        r"""Gets the schema of this SqlJobQueryDataset.
 
         当语句类型为DDL时，返回其结果的列名称及类型。
 
@@ -89,7 +89,7 @@ class SqlJobQueryDataset:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this SqlJobQueryDataset.
+        r"""Sets the schema of this SqlJobQueryDataset.
 
         当语句类型为DDL时，返回其结果的列名称及类型。
 
@@ -100,7 +100,7 @@ class SqlJobQueryDataset:
 
     @property
     def rows(self):
-        """Gets the rows of this SqlJobQueryDataset.
+        r"""Gets the rows of this SqlJobQueryDataset.
 
         当语句类型为DDL时，直接返回其执行结果。
 
@@ -111,7 +111,7 @@ class SqlJobQueryDataset:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this SqlJobQueryDataset.
+        r"""Sets the rows of this SqlJobQueryDataset.
 
         当语句类型为DDL时，直接返回其执行结果。
 

@@ -25,7 +25,7 @@ class VaultUpdateReq:
     }
 
     def __init__(self, vault=None):
-        """VaultUpdateReq
+        r"""VaultUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VaultUpdateReq:
 
     @property
     def vault(self):
-        """Gets the vault of this VaultUpdateReq.
+        r"""Gets the vault of this VaultUpdateReq.
 
         :return: The vault of this VaultUpdateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultUpdate`
@@ -51,7 +51,7 @@ class VaultUpdateReq:
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this VaultUpdateReq.
+        r"""Sets the vault of this VaultUpdateReq.
 
         :param vault: The vault of this VaultUpdateReq.
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultUpdate`

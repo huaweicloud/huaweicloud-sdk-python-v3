@@ -34,7 +34,7 @@ class ScmAsyncClient(Client):
         return client_builder
 
     def apply_certificate_async(self, request):
-        """申请证书
+        r"""申请证书
 
         申请证书。
         
@@ -101,7 +101,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def batch_push_certificate_async(self, request):
-        """批量推送证书
+        r"""批量推送证书
 
         批量推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
         
@@ -168,7 +168,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def cancel_certificate_request_async(self, request):
-        """撤回证书申请
+        r"""撤回证书申请
 
         撤回证书申请。
         
@@ -233,7 +233,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def delete_certificate_async(self, request):
-        """删除证书
+        r"""删除证书
 
         删除证书实例，即将证书资源从系统中删除。
         
@@ -298,7 +298,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def deploy_certificate_async(self, request):
-        """部署证书
+        r"""部署证书
 
         部署SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
         
@@ -365,7 +365,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def export_certificate_async(self, request):
-        """导出证书
+        r"""导出证书
 
         导出证书。
         
@@ -430,7 +430,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def import_certificate_async(self, request):
-        """导入证书
+        r"""导入证书
 
         导入证书到CCM服务管理。
         
@@ -495,7 +495,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def list_certificates_async(self, request):
-        """查询证书列表
+        r"""查询证书列表
 
         根据证书名称或绑定域名查询证书列表。
         
@@ -576,7 +576,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def list_deployed_resources_async(self, request):
-        """查询已部署资源
+        r"""查询已部署资源
 
         查询证书已部署的具体资源。针对已签发和上传的非国密证书。
         
@@ -641,7 +641,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def push_certificate_async(self, request):
-        """推送证书
+        r"""推送证书
 
         推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
         
@@ -708,7 +708,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def show_certificate_async(self, request):
-        """获取证书详情
+        r"""获取证书详情
 
         查询某张证书的详细信息。
         
@@ -773,7 +773,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def subscribe_certificate_async(self, request):
-        """购买SSL证书
+        r"""购买SSL证书
 
         购买SSL证书。
         
@@ -838,7 +838,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def unsubscribe_certificate_async(self, request):
-        """退订证书
+        r"""退订证书
 
         退订证书。
         
@@ -903,7 +903,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def create_csr_async(self, request):
-        """创建CSR
+        r"""创建CSR
 
         创建CSR。
         
@@ -968,7 +968,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def delete_csr_async(self, request):
-        """删除CSR
+        r"""删除CSR
 
         删除CSR。
         
@@ -1033,7 +1033,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def list_csr_async(self, request):
-        """查询CSR列表
+        r"""查询CSR列表
 
         查询CSR列表。
         
@@ -1104,7 +1104,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def show_csr_async(self, request):
-        """查询CSR
+        r"""查询CSR
 
         查询CSR。
         
@@ -1169,7 +1169,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def show_csr_private_key_async(self, request):
-        """查询私钥
+        r"""查询私钥
 
         查询私钥。
         
@@ -1234,7 +1234,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def update_csr_async(self, request):
-        """更新CSR
+        r"""更新CSR
 
         更新CSR。
         
@@ -1301,7 +1301,7 @@ class ScmAsyncClient(Client):
         return http_info
 
     def upload_csr_async(self, request):
-        """上传CSR
+        r"""上传CSR
 
         上传CSR。
         

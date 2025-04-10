@@ -37,7 +37,7 @@ class ListUserEventsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, username=None, event_type=None, event_trace_id=None, offset=None, limit=None):
-        """ListUserEventsRequest
+        r"""ListUserEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListUserEventsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUserEventsRequest.
+        r"""Gets the start_time of this ListUserEventsRequest.
 
         查询起始时间(0时区)
 
@@ -96,7 +96,7 @@ class ListUserEventsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUserEventsRequest.
+        r"""Sets the start_time of this ListUserEventsRequest.
 
         查询起始时间(0时区)
 
@@ -107,7 +107,7 @@ class ListUserEventsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUserEventsRequest.
+        r"""Gets the end_time of this ListUserEventsRequest.
 
         查询结束时间(0时区)
 
@@ -118,7 +118,7 @@ class ListUserEventsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUserEventsRequest.
+        r"""Sets the end_time of this ListUserEventsRequest.
 
         查询结束时间(0时区)
 
@@ -129,7 +129,7 @@ class ListUserEventsRequest:
 
     @property
     def username(self):
-        """Gets the username of this ListUserEventsRequest.
+        r"""Gets the username of this ListUserEventsRequest.
 
         用户名（精确搜索）
 
@@ -140,7 +140,7 @@ class ListUserEventsRequest:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ListUserEventsRequest.
+        r"""Sets the username of this ListUserEventsRequest.
 
         用户名（精确搜索）
 
@@ -151,7 +151,7 @@ class ListUserEventsRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListUserEventsRequest.
+        r"""Gets the event_type of this ListUserEventsRequest.
 
         事件类型
 
@@ -162,7 +162,7 @@ class ListUserEventsRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListUserEventsRequest.
+        r"""Sets the event_type of this ListUserEventsRequest.
 
         事件类型
 
@@ -173,7 +173,7 @@ class ListUserEventsRequest:
 
     @property
     def event_trace_id(self):
-        """Gets the event_trace_id of this ListUserEventsRequest.
+        r"""Gets the event_trace_id of this ListUserEventsRequest.
 
         事件之间的关联id
 
@@ -184,7 +184,7 @@ class ListUserEventsRequest:
 
     @event_trace_id.setter
     def event_trace_id(self, event_trace_id):
-        """Sets the event_trace_id of this ListUserEventsRequest.
+        r"""Sets the event_trace_id of this ListUserEventsRequest.
 
         事件之间的关联id
 
@@ -195,7 +195,7 @@ class ListUserEventsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserEventsRequest.
+        r"""Gets the offset of this ListUserEventsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -206,7 +206,7 @@ class ListUserEventsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserEventsRequest.
+        r"""Sets the offset of this ListUserEventsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -217,7 +217,7 @@ class ListUserEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserEventsRequest.
+        r"""Gets the limit of this ListUserEventsRequest.
 
         用于分页查询，返回用户事件数量限制，取值范围0-1000。如果不指定，默认为100。
 
@@ -228,7 +228,7 @@ class ListUserEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserEventsRequest.
+        r"""Sets the limit of this ListUserEventsRequest.
 
         用于分页查询，返回用户事件数量限制，取值范围0-1000。如果不指定，默认为100。
 

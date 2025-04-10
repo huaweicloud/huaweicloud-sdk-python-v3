@@ -31,7 +31,7 @@ class CreatePictureModelingJobRequestBody:
     }
 
     def __init__(self, file=None, style_id=None, name=None, notify_url=None):
-        """CreatePictureModelingJobRequestBody
+        r"""CreatePictureModelingJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePictureModelingJobRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this CreatePictureModelingJobRequestBody.
+        r"""Gets the file of this CreatePictureModelingJobRequestBody.
 
         照片文件。 > 只能上传jpg/jpeg/png格式文件， 最大分辨率为3840*2160
 
@@ -72,7 +72,7 @@ class CreatePictureModelingJobRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreatePictureModelingJobRequestBody.
+        r"""Sets the file of this CreatePictureModelingJobRequestBody.
 
         照片文件。 > 只能上传jpg/jpeg/png格式文件， 最大分辨率为3840*2160
 
@@ -83,7 +83,7 @@ class CreatePictureModelingJobRequestBody:
 
     @property
     def style_id(self):
-        """Gets the style_id of this CreatePictureModelingJobRequestBody.
+        r"""Gets the style_id of this CreatePictureModelingJobRequestBody.
 
         数字人风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02 * system_female_002：女性风格02
 
@@ -94,7 +94,7 @@ class CreatePictureModelingJobRequestBody:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this CreatePictureModelingJobRequestBody.
+        r"""Sets the style_id of this CreatePictureModelingJobRequestBody.
 
         数字人风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02 * system_female_002：女性风格02
 
@@ -105,7 +105,7 @@ class CreatePictureModelingJobRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreatePictureModelingJobRequestBody.
+        r"""Gets the name of this CreatePictureModelingJobRequestBody.
 
         数字人模型名称，首次创建时使用。
 
@@ -116,7 +116,7 @@ class CreatePictureModelingJobRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePictureModelingJobRequestBody.
+        r"""Sets the name of this CreatePictureModelingJobRequestBody.
 
         数字人模型名称，首次创建时使用。
 
@@ -127,7 +127,7 @@ class CreatePictureModelingJobRequestBody:
 
     @property
     def notify_url(self):
-        """Gets the notify_url of this CreatePictureModelingJobRequestBody.
+        r"""Gets the notify_url of this CreatePictureModelingJobRequestBody.
 
         照片建模任务结束的回调地址。
 
@@ -138,7 +138,7 @@ class CreatePictureModelingJobRequestBody:
 
     @notify_url.setter
     def notify_url(self, notify_url):
-        """Sets the notify_url of this CreatePictureModelingJobRequestBody.
+        r"""Sets the notify_url of this CreatePictureModelingJobRequestBody.
 
         照片建模任务结束的回调地址。
 

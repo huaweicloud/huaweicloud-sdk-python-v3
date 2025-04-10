@@ -26,7 +26,7 @@ class DisassociateServerVirtualIpResponse(SdkResponse):
     }
 
     def __init__(self, port_id=None):
-        """DisassociateServerVirtualIpResponse
+        r"""DisassociateServerVirtualIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisassociateServerVirtualIpResponse(SdkResponse):
 
     @property
     def port_id(self):
-        """Gets the port_id of this DisassociateServerVirtualIpResponse.
+        r"""Gets the port_id of this DisassociateServerVirtualIpResponse.
 
         云服务器网卡ID
 
@@ -55,7 +55,7 @@ class DisassociateServerVirtualIpResponse(SdkResponse):
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this DisassociateServerVirtualIpResponse.
+        r"""Sets the port_id of this DisassociateServerVirtualIpResponse.
 
         云服务器网卡ID
 

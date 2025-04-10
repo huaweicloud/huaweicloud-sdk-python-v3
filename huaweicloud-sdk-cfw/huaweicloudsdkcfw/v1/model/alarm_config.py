@@ -47,7 +47,7 @@ class AlarmConfig:
     }
 
     def __init__(self, account_name=None, alarm_id=None, alarm_time_period=None, alarm_type=None, enable_status=None, frequency_count=None, frequency_time=None, language=None, name=None, severity=None, topic_urn=None, username=None):
-        """AlarmConfig
+        r"""AlarmConfig
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AlarmConfig:
 
     @property
     def account_name(self):
-        """Gets the account_name of this AlarmConfig.
+        r"""Gets the account_name of this AlarmConfig.
 
         账号名称
 
@@ -131,7 +131,7 @@ class AlarmConfig:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this AlarmConfig.
+        r"""Sets the account_name of this AlarmConfig.
 
         账号名称
 
@@ -142,7 +142,7 @@ class AlarmConfig:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AlarmConfig.
+        r"""Gets the alarm_id of this AlarmConfig.
 
         告警id
 
@@ -153,7 +153,7 @@ class AlarmConfig:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AlarmConfig.
+        r"""Sets the alarm_id of this AlarmConfig.
 
         告警id
 
@@ -164,7 +164,7 @@ class AlarmConfig:
 
     @property
     def alarm_time_period(self):
-        """Gets the alarm_time_period of this AlarmConfig.
+        r"""Gets the alarm_time_period of this AlarmConfig.
 
         告警周期，0：全天，1：8时到22时
 
@@ -175,7 +175,7 @@ class AlarmConfig:
 
     @alarm_time_period.setter
     def alarm_time_period(self, alarm_time_period):
-        """Sets the alarm_time_period of this AlarmConfig.
+        r"""Sets the alarm_time_period of this AlarmConfig.
 
         告警周期，0：全天，1：8时到22时
 
@@ -186,7 +186,7 @@ class AlarmConfig:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this AlarmConfig.
+        r"""Gets the alarm_type of this AlarmConfig.
 
         告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
 
@@ -197,7 +197,7 @@ class AlarmConfig:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this AlarmConfig.
+        r"""Sets the alarm_type of this AlarmConfig.
 
         告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
 
@@ -208,7 +208,7 @@ class AlarmConfig:
 
     @property
     def enable_status(self):
-        """Gets the enable_status of this AlarmConfig.
+        r"""Gets the enable_status of this AlarmConfig.
 
         告警状态 0:失效; 1:生效
 
@@ -219,7 +219,7 @@ class AlarmConfig:
 
     @enable_status.setter
     def enable_status(self, enable_status):
-        """Sets the enable_status of this AlarmConfig.
+        r"""Sets the enable_status of this AlarmConfig.
 
         告警状态 0:失效; 1:生效
 
@@ -230,7 +230,7 @@ class AlarmConfig:
 
     @property
     def frequency_count(self):
-        """Gets the frequency_count of this AlarmConfig.
+        r"""Gets the frequency_count of this AlarmConfig.
 
         告警触发频次
 
@@ -241,7 +241,7 @@ class AlarmConfig:
 
     @frequency_count.setter
     def frequency_count(self, frequency_count):
-        """Sets the frequency_count of this AlarmConfig.
+        r"""Sets the frequency_count of this AlarmConfig.
 
         告警触发频次
 
@@ -252,7 +252,7 @@ class AlarmConfig:
 
     @property
     def frequency_time(self):
-        """Gets the frequency_time of this AlarmConfig.
+        r"""Gets the frequency_time of this AlarmConfig.
 
         告警频次时间范围
 
@@ -263,7 +263,7 @@ class AlarmConfig:
 
     @frequency_time.setter
     def frequency_time(self, frequency_time):
-        """Sets the frequency_time of this AlarmConfig.
+        r"""Sets the frequency_time of this AlarmConfig.
 
         告警频次时间范围
 
@@ -274,7 +274,7 @@ class AlarmConfig:
 
     @property
     def language(self):
-        """Gets the language of this AlarmConfig.
+        r"""Gets the language of this AlarmConfig.
 
         告警语言
 
@@ -285,7 +285,7 @@ class AlarmConfig:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this AlarmConfig.
+        r"""Sets the language of this AlarmConfig.
 
         告警语言
 
@@ -296,7 +296,7 @@ class AlarmConfig:
 
     @property
     def name(self):
-        """Gets the name of this AlarmConfig.
+        r"""Gets the name of this AlarmConfig.
 
         告警主题名称
 
@@ -307,7 +307,7 @@ class AlarmConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmConfig.
+        r"""Sets the name of this AlarmConfig.
 
         告警主题名称
 
@@ -318,7 +318,7 @@ class AlarmConfig:
 
     @property
     def severity(self):
-        """Gets the severity of this AlarmConfig.
+        r"""Gets the severity of this AlarmConfig.
 
         告警等级
 
@@ -329,7 +329,7 @@ class AlarmConfig:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this AlarmConfig.
+        r"""Sets the severity of this AlarmConfig.
 
         告警等级
 
@@ -340,7 +340,7 @@ class AlarmConfig:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this AlarmConfig.
+        r"""Gets the topic_urn of this AlarmConfig.
 
         告警urn
 
@@ -351,7 +351,7 @@ class AlarmConfig:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this AlarmConfig.
+        r"""Sets the topic_urn of this AlarmConfig.
 
         告警urn
 
@@ -362,7 +362,7 @@ class AlarmConfig:
 
     @property
     def username(self):
-        """Gets the username of this AlarmConfig.
+        r"""Gets the username of this AlarmConfig.
 
         用户名称
 
@@ -373,7 +373,7 @@ class AlarmConfig:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this AlarmConfig.
+        r"""Sets the username of this AlarmConfig.
 
         用户名称
 

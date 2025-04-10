@@ -28,7 +28,7 @@ class ListSecurityMemberSyncTasksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListSecurityMemberSyncTasksResponse
+        r"""ListSecurityMemberSyncTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityMemberSyncTasksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityMemberSyncTasksResponse.
+        r"""Gets the total of this ListSecurityMemberSyncTasksResponse.
 
         用户同步任务总条数。
 
@@ -62,7 +62,7 @@ class ListSecurityMemberSyncTasksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityMemberSyncTasksResponse.
+        r"""Sets the total of this ListSecurityMemberSyncTasksResponse.
 
         用户同步任务总条数。
 
@@ -73,7 +73,7 @@ class ListSecurityMemberSyncTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListSecurityMemberSyncTasksResponse.
+        r"""Gets the tasks of this ListSecurityMemberSyncTasksResponse.
 
         用户同步任务列表。
 
@@ -84,7 +84,7 @@ class ListSecurityMemberSyncTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListSecurityMemberSyncTasksResponse.
+        r"""Sets the tasks of this ListSecurityMemberSyncTasksResponse.
 
         用户同步任务列表。
 

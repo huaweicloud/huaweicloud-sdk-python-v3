@@ -25,7 +25,7 @@ class WorkflowDeleteBody:
     }
 
     def __init__(self, workflow_urns=None):
-        """WorkflowDeleteBody
+        r"""WorkflowDeleteBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class WorkflowDeleteBody:
 
     @property
     def workflow_urns(self):
-        """Gets the workflow_urns of this WorkflowDeleteBody.
+        r"""Gets the workflow_urns of this WorkflowDeleteBody.
 
         函数流URN列表
 
@@ -53,7 +53,7 @@ class WorkflowDeleteBody:
 
     @workflow_urns.setter
     def workflow_urns(self, workflow_urns):
-        """Sets the workflow_urns of this WorkflowDeleteBody.
+        r"""Sets the workflow_urns of this WorkflowDeleteBody.
 
         函数流URN列表
 

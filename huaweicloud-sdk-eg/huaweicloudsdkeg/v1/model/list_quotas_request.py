@@ -25,7 +25,7 @@ class ListQuotasRequest:
     }
 
     def __init__(self, type=None):
-        """ListQuotasRequest
+        r"""ListQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListQuotasRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListQuotasRequest.
+        r"""Gets the type of this ListQuotasRequest.
 
         指定查询资源类型的配额
 
@@ -54,7 +54,7 @@ class ListQuotasRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListQuotasRequest.
+        r"""Sets the type of this ListQuotasRequest.
 
         指定查询资源类型的配额
 

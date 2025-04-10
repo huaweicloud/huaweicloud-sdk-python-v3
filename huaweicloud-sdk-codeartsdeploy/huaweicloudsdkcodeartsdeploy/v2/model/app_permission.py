@@ -41,7 +41,7 @@ class AppPermission:
     }
 
     def __init__(self, dev_role_id=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None):
-        """AppPermission
+        r"""AppPermission
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class AppPermission:
 
     @property
     def dev_role_id(self):
-        """Gets the dev_role_id of this AppPermission.
+        r"""Gets the dev_role_id of this AppPermission.
 
         角色id
 
@@ -101,7 +101,7 @@ class AppPermission:
 
     @dev_role_id.setter
     def dev_role_id(self, dev_role_id):
-        """Sets the dev_role_id of this AppPermission.
+        r"""Sets the dev_role_id of this AppPermission.
 
         角色id
 
@@ -112,7 +112,7 @@ class AppPermission:
 
     @property
     def can_modify(self):
-        """Gets the can_modify of this AppPermission.
+        r"""Gets the can_modify of this AppPermission.
 
         是否具有编辑权限
 
@@ -123,7 +123,7 @@ class AppPermission:
 
     @can_modify.setter
     def can_modify(self, can_modify):
-        """Sets the can_modify of this AppPermission.
+        r"""Sets the can_modify of this AppPermission.
 
         是否具有编辑权限
 
@@ -134,7 +134,7 @@ class AppPermission:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this AppPermission.
+        r"""Gets the can_delete of this AppPermission.
 
         是否具有删除权限
 
@@ -145,7 +145,7 @@ class AppPermission:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this AppPermission.
+        r"""Sets the can_delete of this AppPermission.
 
         是否具有删除权限
 
@@ -156,7 +156,7 @@ class AppPermission:
 
     @property
     def can_view(self):
-        """Gets the can_view of this AppPermission.
+        r"""Gets the can_view of this AppPermission.
 
         是否具有查看权限
 
@@ -167,7 +167,7 @@ class AppPermission:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this AppPermission.
+        r"""Sets the can_view of this AppPermission.
 
         是否具有查看权限
 
@@ -178,7 +178,7 @@ class AppPermission:
 
     @property
     def can_execute(self):
-        """Gets the can_execute of this AppPermission.
+        r"""Gets the can_execute of this AppPermission.
 
         是否具有执行权限
 
@@ -189,7 +189,7 @@ class AppPermission:
 
     @can_execute.setter
     def can_execute(self, can_execute):
-        """Sets the can_execute of this AppPermission.
+        r"""Sets the can_execute of this AppPermission.
 
         是否具有执行权限
 
@@ -200,7 +200,7 @@ class AppPermission:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this AppPermission.
+        r"""Gets the can_copy of this AppPermission.
 
         是否具有复制权限
 
@@ -211,7 +211,7 @@ class AppPermission:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this AppPermission.
+        r"""Sets the can_copy of this AppPermission.
 
         是否具有复制权限
 
@@ -222,7 +222,7 @@ class AppPermission:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this AppPermission.
+        r"""Gets the can_manage of this AppPermission.
 
         是否具有权限管理权限
 
@@ -233,7 +233,7 @@ class AppPermission:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this AppPermission.
+        r"""Sets the can_manage of this AppPermission.
 
         是否具有权限管理权限
 
@@ -244,7 +244,7 @@ class AppPermission:
 
     @property
     def can_create_env(self):
-        """Gets the can_create_env of this AppPermission.
+        r"""Gets the can_create_env of this AppPermission.
 
         是否具有创建环境权限
 
@@ -255,7 +255,7 @@ class AppPermission:
 
     @can_create_env.setter
     def can_create_env(self, can_create_env):
-        """Sets the can_create_env of this AppPermission.
+        r"""Sets the can_create_env of this AppPermission.
 
         是否具有创建环境权限
 
@@ -266,7 +266,7 @@ class AppPermission:
 
     @property
     def can_disable(self):
-        """Gets the can_disable of this AppPermission.
+        r"""Gets the can_disable of this AppPermission.
 
         是否具有禁用权限
 
@@ -277,7 +277,7 @@ class AppPermission:
 
     @can_disable.setter
     def can_disable(self, can_disable):
-        """Sets the can_disable of this AppPermission.
+        r"""Sets the can_disable of this AppPermission.
 
         是否具有禁用权限
 

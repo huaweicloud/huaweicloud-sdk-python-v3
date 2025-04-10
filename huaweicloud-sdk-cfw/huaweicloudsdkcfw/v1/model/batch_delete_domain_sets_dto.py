@@ -27,7 +27,7 @@ class BatchDeleteDomainSetsDto:
     }
 
     def __init__(self, object_id=None, set_ids=None):
-        """BatchDeleteDomainSetsDto
+        r"""BatchDeleteDomainSetsDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteDomainSetsDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this BatchDeleteDomainSetsDto.
+        r"""Gets the object_id of this BatchDeleteDomainSetsDto.
 
         防护对象id
 
@@ -61,7 +61,7 @@ class BatchDeleteDomainSetsDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this BatchDeleteDomainSetsDto.
+        r"""Sets the object_id of this BatchDeleteDomainSetsDto.
 
         防护对象id
 
@@ -72,7 +72,7 @@ class BatchDeleteDomainSetsDto:
 
     @property
     def set_ids(self):
-        """Gets the set_ids of this BatchDeleteDomainSetsDto.
+        r"""Gets the set_ids of this BatchDeleteDomainSetsDto.
 
         域名组id
 
@@ -83,7 +83,7 @@ class BatchDeleteDomainSetsDto:
 
     @set_ids.setter
     def set_ids(self, set_ids):
-        """Sets the set_ids of this BatchDeleteDomainSetsDto.
+        r"""Sets the set_ids of this BatchDeleteDomainSetsDto.
 
         域名组id
 

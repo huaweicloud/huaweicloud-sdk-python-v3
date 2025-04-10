@@ -27,7 +27,7 @@ class Content:
     }
 
     def __init__(self, content_type=None, content=None):
-        """Content
+        r"""Content
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Content:
 
     @property
     def content_type(self):
-        """Gets the content_type of this Content.
+        r"""Gets the content_type of this Content.
 
         用例卡片类型（1：思考时间；2：报文；3：检查点；4：变量提取）
 
@@ -61,7 +61,7 @@ class Content:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this Content.
+        r"""Sets the content_type of this Content.
 
         用例卡片类型（1：思考时间；2：报文；3：检查点；4：变量提取）
 
@@ -72,7 +72,7 @@ class Content:
 
     @property
     def content(self):
-        """Gets the content of this Content.
+        r"""Gets the content of this Content.
 
         :return: The content of this Content.
         :rtype: :class:`huaweicloudsdkcpts.v1.ContentInfo`
@@ -81,7 +81,7 @@ class Content:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Content.
+        r"""Sets the content of this Content.
 
         :param content: The content of this Content.
         :type content: :class:`huaweicloudsdkcpts.v1.ContentInfo`

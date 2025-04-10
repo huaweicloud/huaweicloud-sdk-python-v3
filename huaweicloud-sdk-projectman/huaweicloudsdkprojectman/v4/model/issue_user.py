@@ -33,7 +33,7 @@ class IssueUser:
     }
 
     def __init__(self, user_id=None, user_num_id=None, id=None, name=None, nick_name=None):
-        """IssueUser
+        r"""IssueUser
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IssueUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this IssueUser.
+        r"""Gets the user_id of this IssueUser.
 
         用户uuid
 
@@ -82,7 +82,7 @@ class IssueUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this IssueUser.
+        r"""Sets the user_id of this IssueUser.
 
         用户uuid
 
@@ -93,7 +93,7 @@ class IssueUser:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this IssueUser.
+        r"""Gets the user_num_id of this IssueUser.
 
         用户数字id
 
@@ -104,7 +104,7 @@ class IssueUser:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this IssueUser.
+        r"""Sets the user_num_id of this IssueUser.
 
         用户数字id
 
@@ -115,7 +115,7 @@ class IssueUser:
 
     @property
     def id(self):
-        """Gets the id of this IssueUser.
+        r"""Gets the id of this IssueUser.
 
         用户id
 
@@ -126,7 +126,7 @@ class IssueUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueUser.
+        r"""Sets the id of this IssueUser.
 
         用户id
 
@@ -137,7 +137,7 @@ class IssueUser:
 
     @property
     def name(self):
-        """Gets the name of this IssueUser.
+        r"""Gets the name of this IssueUser.
 
         用户名
 
@@ -148,7 +148,7 @@ class IssueUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueUser.
+        r"""Sets the name of this IssueUser.
 
         用户名
 
@@ -159,7 +159,7 @@ class IssueUser:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this IssueUser.
+        r"""Gets the nick_name of this IssueUser.
 
         昵称
 
@@ -170,7 +170,7 @@ class IssueUser:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this IssueUser.
+        r"""Sets the nick_name of this IssueUser.
 
         昵称
 

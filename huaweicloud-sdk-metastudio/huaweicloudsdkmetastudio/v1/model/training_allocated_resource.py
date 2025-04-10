@@ -29,7 +29,7 @@ class TrainingAllocatedResource:
     }
 
     def __init__(self, resource_id=None, charge_mode=None, expire_time=None):
-        """TrainingAllocatedResource
+        r"""TrainingAllocatedResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TrainingAllocatedResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TrainingAllocatedResource.
+        r"""Gets the resource_id of this TrainingAllocatedResource.
 
         资源ID。
 
@@ -68,7 +68,7 @@ class TrainingAllocatedResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TrainingAllocatedResource.
+        r"""Sets the resource_id of this TrainingAllocatedResource.
 
         资源ID。
 
@@ -79,7 +79,7 @@ class TrainingAllocatedResource:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this TrainingAllocatedResource.
+        r"""Gets the charge_mode of this TrainingAllocatedResource.
 
         资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
 
@@ -90,7 +90,7 @@ class TrainingAllocatedResource:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this TrainingAllocatedResource.
+        r"""Sets the charge_mode of this TrainingAllocatedResource.
 
         资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
 
@@ -101,7 +101,7 @@ class TrainingAllocatedResource:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this TrainingAllocatedResource.
+        r"""Gets the expire_time of this TrainingAllocatedResource.
 
         资源过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -112,7 +112,7 @@ class TrainingAllocatedResource:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this TrainingAllocatedResource.
+        r"""Sets the expire_time of this TrainingAllocatedResource.
 
         资源过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 

@@ -26,7 +26,7 @@ class ShowBackupPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, backup_policy=None):
-        """ShowBackupPoliciesResponse
+        r"""ShowBackupPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBackupPoliciesResponse(SdkResponse):
 
     @property
     def backup_policy(self):
-        """Gets the backup_policy of this ShowBackupPoliciesResponse.
+        r"""Gets the backup_policy of this ShowBackupPoliciesResponse.
 
         :return: The backup_policy of this ShowBackupPoliciesResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResult`
@@ -53,7 +53,7 @@ class ShowBackupPoliciesResponse(SdkResponse):
 
     @backup_policy.setter
     def backup_policy(self, backup_policy):
-        """Sets the backup_policy of this ShowBackupPoliciesResponse.
+        r"""Sets the backup_policy of this ShowBackupPoliciesResponse.
 
         :param backup_policy: The backup_policy of this ShowBackupPoliciesResponse.
         :type backup_policy: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResult`

@@ -25,7 +25,7 @@ class CheckSqlRequest:
     }
 
     def __init__(self, body=None):
-        """CheckSqlRequest
+        r"""CheckSqlRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckSqlRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckSqlRequest.
+        r"""Gets the body of this CheckSqlRequest.
 
         :return: The body of this CheckSqlRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CheckSqlRequestBody`
@@ -52,7 +52,7 @@ class CheckSqlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckSqlRequest.
+        r"""Sets the body of this CheckSqlRequest.
 
         :param body: The body of this CheckSqlRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CheckSqlRequestBody`

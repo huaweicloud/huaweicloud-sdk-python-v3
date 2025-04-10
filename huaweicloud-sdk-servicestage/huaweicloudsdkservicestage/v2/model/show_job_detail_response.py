@@ -30,7 +30,7 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_count=None, job=None, tasks=None):
-        """ShowJobDetailResponse
+        r"""ShowJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def task_count(self):
-        """Gets the task_count of this ShowJobDetailResponse.
+        r"""Gets the task_count of this ShowJobDetailResponse.
 
         部署任务数量。
 
@@ -69,7 +69,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @task_count.setter
     def task_count(self, task_count):
-        """Sets the task_count of this ShowJobDetailResponse.
+        r"""Sets the task_count of this ShowJobDetailResponse.
 
         部署任务数量。
 
@@ -80,7 +80,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this ShowJobDetailResponse.
+        r"""Gets the job of this ShowJobDetailResponse.
 
         :return: The job of this ShowJobDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.JobInfo`
@@ -89,7 +89,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this ShowJobDetailResponse.
+        r"""Sets the job of this ShowJobDetailResponse.
 
         :param job: The job of this ShowJobDetailResponse.
         :type job: :class:`huaweicloudsdkservicestage.v2.JobInfo`
@@ -98,7 +98,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowJobDetailResponse.
+        r"""Gets the tasks of this ShowJobDetailResponse.
 
         部署任务列表。
 
@@ -109,7 +109,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowJobDetailResponse.
+        r"""Sets the tasks of this ShowJobDetailResponse.
 
         部署任务列表。
 

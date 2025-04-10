@@ -25,7 +25,7 @@ class DeleteAuthorisationRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteAuthorisationRequest
+        r"""DeleteAuthorisationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAuthorisationRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteAuthorisationRequest.
+        r"""Gets the id of this DeleteAuthorisationRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DeleteAuthorisationRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteAuthorisationRequest.
+        r"""Sets the id of this DeleteAuthorisationRequest.
 
         实例ID。
 

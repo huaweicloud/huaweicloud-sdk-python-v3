@@ -41,7 +41,7 @@ class AlarmLogResponseAlarmLog:
     }
 
     def __init__(self, id=None, alarm_life=None, send_email=None, alarm_time=None, alarm_type=None, alarm_fix_time=None, alarm_status=None, alarm_risk=None, alarm_description=None):
-        """AlarmLogResponseAlarmLog
+        r"""AlarmLogResponseAlarmLog
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def id(self):
-        """Gets the id of this AlarmLogResponseAlarmLog.
+        r"""Gets the id of this AlarmLogResponseAlarmLog.
 
         告警ID
 
@@ -110,7 +110,7 @@ class AlarmLogResponseAlarmLog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlarmLogResponseAlarmLog.
+        r"""Sets the id of this AlarmLogResponseAlarmLog.
 
         告警ID
 
@@ -121,7 +121,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_life(self):
-        """Gets the alarm_life of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_life of this AlarmLogResponseAlarmLog.
 
         告警状态 - ON - OFF
 
@@ -132,7 +132,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_life.setter
     def alarm_life(self, alarm_life):
-        """Sets the alarm_life of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_life of this AlarmLogResponseAlarmLog.
 
         告警状态 - ON - OFF
 
@@ -143,7 +143,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def send_email(self):
-        """Gets the send_email of this AlarmLogResponseAlarmLog.
+        r"""Gets the send_email of this AlarmLogResponseAlarmLog.
 
         是否发送邮件
 
@@ -154,7 +154,7 @@ class AlarmLogResponseAlarmLog:
 
     @send_email.setter
     def send_email(self, send_email):
-        """Sets the send_email of this AlarmLogResponseAlarmLog.
+        r"""Sets the send_email of this AlarmLogResponseAlarmLog.
 
         是否发送邮件
 
@@ -165,7 +165,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_time(self):
-        """Gets the alarm_time of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_time of this AlarmLogResponseAlarmLog.
 
         告警发生时间
 
@@ -176,7 +176,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_time.setter
     def alarm_time(self, alarm_time):
-        """Sets the alarm_time of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_time of this AlarmLogResponseAlarmLog.
 
         告警发生时间
 
@@ -187,7 +187,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_type of this AlarmLogResponseAlarmLog.
 
         告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
 
@@ -198,7 +198,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_type of this AlarmLogResponseAlarmLog.
 
         告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
 
@@ -209,7 +209,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_fix_time(self):
-        """Gets the alarm_fix_time of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_fix_time of this AlarmLogResponseAlarmLog.
 
         告警恢复时间
 
@@ -220,7 +220,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_fix_time.setter
     def alarm_fix_time(self, alarm_fix_time):
-        """Sets the alarm_fix_time of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_fix_time of this AlarmLogResponseAlarmLog.
 
         告警恢复时间
 
@@ -231,7 +231,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_status(self):
-        """Gets the alarm_status of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_status of this AlarmLogResponseAlarmLog.
 
         告警确认状态 - DONE: 已确认 - UNDO: 未确认
 
@@ -242,7 +242,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_status.setter
     def alarm_status(self, alarm_status):
-        """Sets the alarm_status of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_status of this AlarmLogResponseAlarmLog.
 
         告警确认状态 - DONE: 已确认 - UNDO: 未确认
 
@@ -253,7 +253,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_risk(self):
-        """Gets the alarm_risk of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_risk of this AlarmLogResponseAlarmLog.
 
         告警风险等级 - LOW - MEDIUM - HIGH
 
@@ -264,7 +264,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_risk.setter
     def alarm_risk(self, alarm_risk):
-        """Sets the alarm_risk of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_risk of this AlarmLogResponseAlarmLog.
 
         告警风险等级 - LOW - MEDIUM - HIGH
 
@@ -275,7 +275,7 @@ class AlarmLogResponseAlarmLog:
 
     @property
     def alarm_description(self):
-        """Gets the alarm_description of this AlarmLogResponseAlarmLog.
+        r"""Gets the alarm_description of this AlarmLogResponseAlarmLog.
 
         告警描述信息
 
@@ -286,7 +286,7 @@ class AlarmLogResponseAlarmLog:
 
     @alarm_description.setter
     def alarm_description(self, alarm_description):
-        """Sets the alarm_description of this AlarmLogResponseAlarmLog.
+        r"""Sets the alarm_description of this AlarmLogResponseAlarmLog.
 
         告警描述信息
 

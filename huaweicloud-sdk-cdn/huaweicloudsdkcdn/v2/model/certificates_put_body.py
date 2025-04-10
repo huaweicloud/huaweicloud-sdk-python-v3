@@ -39,7 +39,7 @@ class CertificatesPutBody:
     }
 
     def __init__(self, certificate_source=None, scm_certificate_id=None, certificate_type=None, certificate_name=None, certificate_value=None, private_key=None, enc_certificate_value=None, enc_private_key=None):
-        """CertificatesPutBody
+        r"""CertificatesPutBody
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CertificatesPutBody:
 
     @property
     def certificate_source(self):
-        """Gets the certificate_source of this CertificatesPutBody.
+        r"""Gets the certificate_source of this CertificatesPutBody.
 
         证书来源，0：自有证书。2：SCM证书。
 
@@ -99,7 +99,7 @@ class CertificatesPutBody:
 
     @certificate_source.setter
     def certificate_source(self, certificate_source):
-        """Sets the certificate_source of this CertificatesPutBody.
+        r"""Sets the certificate_source of this CertificatesPutBody.
 
         证书来源，0：自有证书。2：SCM证书。
 
@@ -110,7 +110,7 @@ class CertificatesPutBody:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this CertificatesPutBody.
+        r"""Gets the scm_certificate_id of this CertificatesPutBody.
 
         SCM证书id
 
@@ -121,7 +121,7 @@ class CertificatesPutBody:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this CertificatesPutBody.
+        r"""Sets the scm_certificate_id of this CertificatesPutBody.
 
         SCM证书id
 
@@ -132,7 +132,7 @@ class CertificatesPutBody:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this CertificatesPutBody.
+        r"""Gets the certificate_type of this CertificatesPutBody.
 
         证书类型，server：国际证书；server_sm：国密证书。
 
@@ -143,7 +143,7 @@ class CertificatesPutBody:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this CertificatesPutBody.
+        r"""Sets the certificate_type of this CertificatesPutBody.
 
         证书类型，server：国际证书；server_sm：国密证书。
 
@@ -154,7 +154,7 @@ class CertificatesPutBody:
 
     @property
     def certificate_name(self):
-        """Gets the certificate_name of this CertificatesPutBody.
+        r"""Gets the certificate_name of this CertificatesPutBody.
 
         证书名字，长度限制为3-64字符。
 
@@ -165,7 +165,7 @@ class CertificatesPutBody:
 
     @certificate_name.setter
     def certificate_name(self, certificate_name):
-        """Sets the certificate_name of this CertificatesPutBody.
+        r"""Sets the certificate_name of this CertificatesPutBody.
 
         证书名字，长度限制为3-64字符。
 
@@ -176,7 +176,7 @@ class CertificatesPutBody:
 
     @property
     def certificate_value(self):
-        """Gets the certificate_value of this CertificatesPutBody.
+        r"""Gets the certificate_value of this CertificatesPutBody.
 
         HTTPS协议使用的证书内容。  > PEM编码格式。
 
@@ -187,7 +187,7 @@ class CertificatesPutBody:
 
     @certificate_value.setter
     def certificate_value(self, certificate_value):
-        """Sets the certificate_value of this CertificatesPutBody.
+        r"""Sets the certificate_value of this CertificatesPutBody.
 
         HTTPS协议使用的证书内容。  > PEM编码格式。
 
@@ -198,7 +198,7 @@ class CertificatesPutBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CertificatesPutBody.
+        r"""Gets the private_key of this CertificatesPutBody.
 
         HTTPS协议使用的私钥。  > PEM编码格式。
 
@@ -209,7 +209,7 @@ class CertificatesPutBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CertificatesPutBody.
+        r"""Sets the private_key of this CertificatesPutBody.
 
         HTTPS协议使用的私钥。  > PEM编码格式。
 
@@ -220,7 +220,7 @@ class CertificatesPutBody:
 
     @property
     def enc_certificate_value(self):
-        """Gets the enc_certificate_value of this CertificatesPutBody.
+        r"""Gets the enc_certificate_value of this CertificatesPutBody.
 
         加密证书内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -231,7 +231,7 @@ class CertificatesPutBody:
 
     @enc_certificate_value.setter
     def enc_certificate_value(self, enc_certificate_value):
-        """Sets the enc_certificate_value of this CertificatesPutBody.
+        r"""Sets the enc_certificate_value of this CertificatesPutBody.
 
         加密证书内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -242,7 +242,7 @@ class CertificatesPutBody:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this CertificatesPutBody.
+        r"""Gets the enc_private_key of this CertificatesPutBody.
 
         加密私钥内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -253,7 +253,7 @@ class CertificatesPutBody:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this CertificatesPutBody.
+        r"""Sets the enc_private_key of this CertificatesPutBody.
 
         加密私钥内容，证书类型为国密证书时必传。  > PEM编码格式。
 

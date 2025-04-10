@@ -33,7 +33,7 @@ class ObjectsCompareDetailInfo:
     }
 
     def __init__(self, source_db_value=None, target_db_value=None, source_db_name=None, target_db_name=None, error_message=None):
-        """ObjectsCompareDetailInfo
+        r"""ObjectsCompareDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ObjectsCompareDetailInfo:
 
     @property
     def source_db_value(self):
-        """Gets the source_db_value of this ObjectsCompareDetailInfo.
+        r"""Gets the source_db_value of this ObjectsCompareDetailInfo.
 
         源库对比值。
 
@@ -82,7 +82,7 @@ class ObjectsCompareDetailInfo:
 
     @source_db_value.setter
     def source_db_value(self, source_db_value):
-        """Sets the source_db_value of this ObjectsCompareDetailInfo.
+        r"""Sets the source_db_value of this ObjectsCompareDetailInfo.
 
         源库对比值。
 
@@ -93,7 +93,7 @@ class ObjectsCompareDetailInfo:
 
     @property
     def target_db_value(self):
-        """Gets the target_db_value of this ObjectsCompareDetailInfo.
+        r"""Gets the target_db_value of this ObjectsCompareDetailInfo.
 
         目标库对比值。
 
@@ -104,7 +104,7 @@ class ObjectsCompareDetailInfo:
 
     @target_db_value.setter
     def target_db_value(self, target_db_value):
-        """Sets the target_db_value of this ObjectsCompareDetailInfo.
+        r"""Sets the target_db_value of this ObjectsCompareDetailInfo.
 
         目标库对比值。
 
@@ -115,7 +115,7 @@ class ObjectsCompareDetailInfo:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this ObjectsCompareDetailInfo.
+        r"""Gets the source_db_name of this ObjectsCompareDetailInfo.
 
         源库名称。
 
@@ -126,7 +126,7 @@ class ObjectsCompareDetailInfo:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this ObjectsCompareDetailInfo.
+        r"""Sets the source_db_name of this ObjectsCompareDetailInfo.
 
         源库名称。
 
@@ -137,7 +137,7 @@ class ObjectsCompareDetailInfo:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this ObjectsCompareDetailInfo.
+        r"""Gets the target_db_name of this ObjectsCompareDetailInfo.
 
         目标库名称。
 
@@ -148,7 +148,7 @@ class ObjectsCompareDetailInfo:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this ObjectsCompareDetailInfo.
+        r"""Sets the target_db_name of this ObjectsCompareDetailInfo.
 
         目标库名称。
 
@@ -159,7 +159,7 @@ class ObjectsCompareDetailInfo:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ObjectsCompareDetailInfo.
+        r"""Gets the error_message of this ObjectsCompareDetailInfo.
 
         失败原因。
 
@@ -170,7 +170,7 @@ class ObjectsCompareDetailInfo:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ObjectsCompareDetailInfo.
+        r"""Sets the error_message of this ObjectsCompareDetailInfo.
 
         失败原因。
 

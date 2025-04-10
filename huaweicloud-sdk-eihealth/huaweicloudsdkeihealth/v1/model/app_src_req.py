@@ -29,7 +29,7 @@ class AppSrcReq:
     }
 
     def __init__(self, destination_app_name=None, destination_app_version=None, source_app_id=None):
-        """AppSrcReq
+        r"""AppSrcReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AppSrcReq:
 
     @property
     def destination_app_name(self):
-        """Gets the destination_app_name of this AppSrcReq.
+        r"""Gets the destination_app_name of this AppSrcReq.
 
         目标应用名称 取值范围：长度为[1,56]，以大小写字母开头，允许出现中划线(-)、下划线(_)、小写字母和数字，且必须以大小写字母或数字结尾。
 
@@ -65,7 +65,7 @@ class AppSrcReq:
 
     @destination_app_name.setter
     def destination_app_name(self, destination_app_name):
-        """Sets the destination_app_name of this AppSrcReq.
+        r"""Sets the destination_app_name of this AppSrcReq.
 
         目标应用名称 取值范围：长度为[1,56]，以大小写字母开头，允许出现中划线(-)、下划线(_)、小写字母和数字，且必须以大小写字母或数字结尾。
 
@@ -76,7 +76,7 @@ class AppSrcReq:
 
     @property
     def destination_app_version(self):
-        """Gets the destination_app_version of this AppSrcReq.
+        r"""Gets the destination_app_version of this AppSrcReq.
 
         目标应用版本 取值范围：长度[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 
@@ -87,7 +87,7 @@ class AppSrcReq:
 
     @destination_app_version.setter
     def destination_app_version(self, destination_app_version):
-        """Sets the destination_app_version of this AppSrcReq.
+        r"""Sets the destination_app_version of this AppSrcReq.
 
         目标应用版本 取值范围：长度[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 
@@ -98,7 +98,7 @@ class AppSrcReq:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this AppSrcReq.
+        r"""Gets the source_app_id of this AppSrcReq.
 
         源应用id
 
@@ -109,7 +109,7 @@ class AppSrcReq:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this AppSrcReq.
+        r"""Sets the source_app_id of this AppSrcReq.
 
         源应用id
 

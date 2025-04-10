@@ -28,7 +28,7 @@ class ListAuditOperateLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, operate_log=None):
-        """ListAuditOperateLogsResponse
+        r"""ListAuditOperateLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditOperateLogsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListAuditOperateLogsResponse.
+        r"""Gets the total_num of this ListAuditOperateLogsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListAuditOperateLogsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListAuditOperateLogsResponse.
+        r"""Sets the total_num of this ListAuditOperateLogsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListAuditOperateLogsResponse(SdkResponse):
 
     @property
     def operate_log(self):
-        """Gets the operate_log of this ListAuditOperateLogsResponse.
+        r"""Gets the operate_log of this ListAuditOperateLogsResponse.
 
         操作日志列表
 
@@ -84,7 +84,7 @@ class ListAuditOperateLogsResponse(SdkResponse):
 
     @operate_log.setter
     def operate_log(self, operate_log):
-        """Sets the operate_log of this ListAuditOperateLogsResponse.
+        r"""Sets the operate_log of this ListAuditOperateLogsResponse.
 
         操作日志列表
 

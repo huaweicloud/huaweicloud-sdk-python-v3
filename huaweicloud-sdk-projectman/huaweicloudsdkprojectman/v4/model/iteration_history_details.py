@@ -29,7 +29,7 @@ class IterationHistoryDetails:
     }
 
     def __init__(self, operate_field_name=None, new_value=None, old_value=None):
-        """IterationHistoryDetails
+        r"""IterationHistoryDetails
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IterationHistoryDetails:
 
     @property
     def operate_field_name(self):
-        """Gets the operate_field_name of this IterationHistoryDetails.
+        r"""Gets the operate_field_name of this IterationHistoryDetails.
 
         变更的字段
 
@@ -68,7 +68,7 @@ class IterationHistoryDetails:
 
     @operate_field_name.setter
     def operate_field_name(self, operate_field_name):
-        """Sets the operate_field_name of this IterationHistoryDetails.
+        r"""Sets the operate_field_name of this IterationHistoryDetails.
 
         变更的字段
 
@@ -79,7 +79,7 @@ class IterationHistoryDetails:
 
     @property
     def new_value(self):
-        """Gets the new_value of this IterationHistoryDetails.
+        r"""Gets the new_value of this IterationHistoryDetails.
 
         操作后的值
 
@@ -90,7 +90,7 @@ class IterationHistoryDetails:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this IterationHistoryDetails.
+        r"""Sets the new_value of this IterationHistoryDetails.
 
         操作后的值
 
@@ -101,7 +101,7 @@ class IterationHistoryDetails:
 
     @property
     def old_value(self):
-        """Gets the old_value of this IterationHistoryDetails.
+        r"""Gets the old_value of this IterationHistoryDetails.
 
         操作前的值
 
@@ -112,7 +112,7 @@ class IterationHistoryDetails:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this IterationHistoryDetails.
+        r"""Sets the old_value of this IterationHistoryDetails.
 
         操作前的值
 

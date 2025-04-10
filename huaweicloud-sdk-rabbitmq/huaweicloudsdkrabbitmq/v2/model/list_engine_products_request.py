@@ -27,7 +27,7 @@ class ListEngineProductsRequest:
     }
 
     def __init__(self, engine=None, product_id=None):
-        """ListEngineProductsRequest
+        r"""ListEngineProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEngineProductsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListEngineProductsRequest.
+        r"""Gets the engine of this ListEngineProductsRequest.
 
         消息引擎的类型。
 
@@ -60,7 +60,7 @@ class ListEngineProductsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListEngineProductsRequest.
+        r"""Sets the engine of this ListEngineProductsRequest.
 
         消息引擎的类型。
 
@@ -71,7 +71,7 @@ class ListEngineProductsRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListEngineProductsRequest.
+        r"""Gets the product_id of this ListEngineProductsRequest.
 
         产品ID。
 
@@ -82,7 +82,7 @@ class ListEngineProductsRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListEngineProductsRequest.
+        r"""Sets the product_id of this ListEngineProductsRequest.
 
         产品ID。
 

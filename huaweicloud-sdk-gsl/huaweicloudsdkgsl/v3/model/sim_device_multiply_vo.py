@@ -43,7 +43,7 @@ class SimDeviceMultiplyVO:
     }
 
     def __init__(self, sim_card_id=None, cid=None, online_carrier=None, network_switch_policy_id=None, policy_name=None, version=None, iccid_mobile=None, iccid_unicom=None, iccid_telcom=None, order_id=None):
-        """SimDeviceMultiplyVO
+        r"""SimDeviceMultiplyVO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SimDeviceMultiplyVO.
+        r"""Gets the sim_card_id of this SimDeviceMultiplyVO.
 
         sim卡id
 
@@ -117,7 +117,7 @@ class SimDeviceMultiplyVO:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SimDeviceMultiplyVO.
+        r"""Sets the sim_card_id of this SimDeviceMultiplyVO.
 
         sim卡id
 
@@ -128,7 +128,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def cid(self):
-        """Gets the cid of this SimDeviceMultiplyVO.
+        r"""Gets the cid of this SimDeviceMultiplyVO.
 
         三网卡标识
 
@@ -139,7 +139,7 @@ class SimDeviceMultiplyVO:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this SimDeviceMultiplyVO.
+        r"""Sets the cid of this SimDeviceMultiplyVO.
 
         三网卡标识
 
@@ -150,7 +150,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def online_carrier(self):
-        """Gets the online_carrier of this SimDeviceMultiplyVO.
+        r"""Gets the online_carrier of this SimDeviceMultiplyVO.
 
         在线运营商标识
 
@@ -161,7 +161,7 @@ class SimDeviceMultiplyVO:
 
     @online_carrier.setter
     def online_carrier(self, online_carrier):
-        """Sets the online_carrier of this SimDeviceMultiplyVO.
+        r"""Sets the online_carrier of this SimDeviceMultiplyVO.
 
         在线运营商标识
 
@@ -172,7 +172,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def network_switch_policy_id(self):
-        """Gets the network_switch_policy_id of this SimDeviceMultiplyVO.
+        r"""Gets the network_switch_policy_id of this SimDeviceMultiplyVO.
 
         网络切换策略id
 
@@ -183,7 +183,7 @@ class SimDeviceMultiplyVO:
 
     @network_switch_policy_id.setter
     def network_switch_policy_id(self, network_switch_policy_id):
-        """Sets the network_switch_policy_id of this SimDeviceMultiplyVO.
+        r"""Sets the network_switch_policy_id of this SimDeviceMultiplyVO.
 
         网络切换策略id
 
@@ -194,7 +194,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this SimDeviceMultiplyVO.
+        r"""Gets the policy_name of this SimDeviceMultiplyVO.
 
         网络切换策略名称
 
@@ -205,7 +205,7 @@ class SimDeviceMultiplyVO:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this SimDeviceMultiplyVO.
+        r"""Sets the policy_name of this SimDeviceMultiplyVO.
 
         网络切换策略名称
 
@@ -216,7 +216,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def version(self):
-        """Gets the version of this SimDeviceMultiplyVO.
+        r"""Gets the version of this SimDeviceMultiplyVO.
 
         版本信息
 
@@ -227,7 +227,7 @@ class SimDeviceMultiplyVO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SimDeviceMultiplyVO.
+        r"""Sets the version of this SimDeviceMultiplyVO.
 
         版本信息
 
@@ -238,7 +238,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def iccid_mobile(self):
-        """Gets the iccid_mobile of this SimDeviceMultiplyVO.
+        r"""Gets the iccid_mobile of this SimDeviceMultiplyVO.
 
         移动网络iccid
 
@@ -249,7 +249,7 @@ class SimDeviceMultiplyVO:
 
     @iccid_mobile.setter
     def iccid_mobile(self, iccid_mobile):
-        """Sets the iccid_mobile of this SimDeviceMultiplyVO.
+        r"""Sets the iccid_mobile of this SimDeviceMultiplyVO.
 
         移动网络iccid
 
@@ -260,7 +260,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def iccid_unicom(self):
-        """Gets the iccid_unicom of this SimDeviceMultiplyVO.
+        r"""Gets the iccid_unicom of this SimDeviceMultiplyVO.
 
         联通网络iccid
 
@@ -271,7 +271,7 @@ class SimDeviceMultiplyVO:
 
     @iccid_unicom.setter
     def iccid_unicom(self, iccid_unicom):
-        """Sets the iccid_unicom of this SimDeviceMultiplyVO.
+        r"""Sets the iccid_unicom of this SimDeviceMultiplyVO.
 
         联通网络iccid
 
@@ -282,7 +282,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def iccid_telcom(self):
-        """Gets the iccid_telcom of this SimDeviceMultiplyVO.
+        r"""Gets the iccid_telcom of this SimDeviceMultiplyVO.
 
         电信网络iccid
 
@@ -293,7 +293,7 @@ class SimDeviceMultiplyVO:
 
     @iccid_telcom.setter
     def iccid_telcom(self, iccid_telcom):
-        """Sets the iccid_telcom of this SimDeviceMultiplyVO.
+        r"""Sets the iccid_telcom of this SimDeviceMultiplyVO.
 
         电信网络iccid
 
@@ -304,7 +304,7 @@ class SimDeviceMultiplyVO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SimDeviceMultiplyVO.
+        r"""Gets the order_id of this SimDeviceMultiplyVO.
 
         批次号
 
@@ -315,7 +315,7 @@ class SimDeviceMultiplyVO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SimDeviceMultiplyVO.
+        r"""Sets the order_id of this SimDeviceMultiplyVO.
 
         批次号
 

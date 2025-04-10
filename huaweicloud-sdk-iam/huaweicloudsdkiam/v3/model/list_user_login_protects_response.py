@@ -26,7 +26,7 @@ class ListUserLoginProtectsResponse(SdkResponse):
     }
 
     def __init__(self, login_protects=None):
-        """ListUserLoginProtectsResponse
+        r"""ListUserLoginProtectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUserLoginProtectsResponse(SdkResponse):
 
     @property
     def login_protects(self):
-        """Gets the login_protects of this ListUserLoginProtectsResponse.
+        r"""Gets the login_protects of this ListUserLoginProtectsResponse.
 
         登录状态保护信息列表。
 
@@ -55,7 +55,7 @@ class ListUserLoginProtectsResponse(SdkResponse):
 
     @login_protects.setter
     def login_protects(self, login_protects):
-        """Sets the login_protects of this ListUserLoginProtectsResponse.
+        r"""Sets the login_protects of this ListUserLoginProtectsResponse.
 
         登录状态保护信息列表。
 

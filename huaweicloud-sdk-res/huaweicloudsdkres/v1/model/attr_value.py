@@ -27,7 +27,7 @@ class AttrValue:
     }
 
     def __init__(self, name=None, value=None):
-        """AttrValue
+        r"""AttrValue
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AttrValue:
 
     @property
     def name(self):
-        """Gets the name of this AttrValue.
+        r"""Gets the name of this AttrValue.
 
         属性名称。
 
@@ -59,7 +59,7 @@ class AttrValue:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AttrValue.
+        r"""Sets the name of this AttrValue.
 
         属性名称。
 
@@ -70,7 +70,7 @@ class AttrValue:
 
     @property
     def value(self):
-        """Gets the value of this AttrValue.
+        r"""Gets the value of this AttrValue.
 
         属性值。
 
@@ -81,7 +81,7 @@ class AttrValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AttrValue.
+        r"""Sets the value of this AttrValue.
 
         属性值。
 

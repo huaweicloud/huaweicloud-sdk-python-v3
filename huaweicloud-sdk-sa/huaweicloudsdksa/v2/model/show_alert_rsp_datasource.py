@@ -31,7 +31,7 @@ class ShowAlertRspDatasource:
     }
 
     def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None):
-        """ShowAlertRspDatasource
+        r"""ShowAlertRspDatasource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowAlertRspDatasource:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ShowAlertRspDatasource.
+        r"""Gets the source_type of this ShowAlertRspDatasource.
 
         current page count
 
@@ -75,7 +75,7 @@ class ShowAlertRspDatasource:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ShowAlertRspDatasource.
+        r"""Sets the source_type of this ShowAlertRspDatasource.
 
         current page count
 
@@ -86,7 +86,7 @@ class ShowAlertRspDatasource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowAlertRspDatasource.
+        r"""Gets the domain_id of this ShowAlertRspDatasource.
 
         Id value
 
@@ -97,7 +97,7 @@ class ShowAlertRspDatasource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowAlertRspDatasource.
+        r"""Sets the domain_id of this ShowAlertRspDatasource.
 
         Id value
 
@@ -108,7 +108,7 @@ class ShowAlertRspDatasource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAlertRspDatasource.
+        r"""Gets the project_id of this ShowAlertRspDatasource.
 
         Id value
 
@@ -119,7 +119,7 @@ class ShowAlertRspDatasource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAlertRspDatasource.
+        r"""Sets the project_id of this ShowAlertRspDatasource.
 
         Id value
 
@@ -130,7 +130,7 @@ class ShowAlertRspDatasource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowAlertRspDatasource.
+        r"""Gets the region_id of this ShowAlertRspDatasource.
 
         Id value
 
@@ -141,7 +141,7 @@ class ShowAlertRspDatasource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowAlertRspDatasource.
+        r"""Sets the region_id of this ShowAlertRspDatasource.
 
         Id value
 

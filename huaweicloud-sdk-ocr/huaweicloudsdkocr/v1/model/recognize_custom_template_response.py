@@ -30,7 +30,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, template_id=None, x_request_id=None):
-        """RecognizeCustomTemplateResponse
+        r"""RecognizeCustomTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeCustomTemplateResponse.
+        r"""Gets the result of this RecognizeCustomTemplateResponse.
 
         调用成功时表示调用结果。 调用失败时无此字段。 
 
@@ -69,7 +69,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeCustomTemplateResponse.
+        r"""Sets the result of this RecognizeCustomTemplateResponse.
 
         调用成功时表示调用结果。 调用失败时无此字段。 
 
@@ -80,7 +80,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this RecognizeCustomTemplateResponse.
+        r"""Gets the template_id of this RecognizeCustomTemplateResponse.
 
         调用成功时返回调用模板id。 调用失败时无此字段。 
 
@@ -91,7 +91,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this RecognizeCustomTemplateResponse.
+        r"""Sets the template_id of this RecognizeCustomTemplateResponse.
 
         调用成功时返回调用模板id。 调用失败时无此字段。 
 
@@ -102,7 +102,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeCustomTemplateResponse.
+        r"""Gets the x_request_id of this RecognizeCustomTemplateResponse.
 
         :return: The x_request_id of this RecognizeCustomTemplateResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class RecognizeCustomTemplateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeCustomTemplateResponse.
+        r"""Sets the x_request_id of this RecognizeCustomTemplateResponse.
 
         :param x_request_id: The x_request_id of this RecognizeCustomTemplateResponse.
         :type x_request_id: str

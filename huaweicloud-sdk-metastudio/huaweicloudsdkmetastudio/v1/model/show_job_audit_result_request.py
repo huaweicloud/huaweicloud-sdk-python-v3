@@ -25,7 +25,7 @@ class ShowJobAuditResultRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowJobAuditResultRequest
+        r"""ShowJobAuditResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowJobAuditResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobAuditResultRequest.
+        r"""Gets the job_id of this ShowJobAuditResultRequest.
 
         任务id。
 
@@ -53,7 +53,7 @@ class ShowJobAuditResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobAuditResultRequest.
+        r"""Sets the job_id of this ShowJobAuditResultRequest.
 
         任务id。
 

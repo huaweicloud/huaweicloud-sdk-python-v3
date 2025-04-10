@@ -26,7 +26,7 @@ class ListWafBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, curve=None):
-        """ListWafBandwidthResponse
+        r"""ListWafBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListWafBandwidthResponse(SdkResponse):
 
     @property
     def curve(self):
-        """Gets the curve of this ListWafBandwidthResponse.
+        r"""Gets the curve of this ListWafBandwidthResponse.
 
         曲线
 
@@ -55,7 +55,7 @@ class ListWafBandwidthResponse(SdkResponse):
 
     @curve.setter
     def curve(self, curve):
-        """Sets the curve of this ListWafBandwidthResponse.
+        r"""Sets the curve of this ListWafBandwidthResponse.
 
         曲线
 

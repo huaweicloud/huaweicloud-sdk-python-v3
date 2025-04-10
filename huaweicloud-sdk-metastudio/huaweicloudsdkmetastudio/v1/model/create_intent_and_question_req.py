@@ -31,7 +31,7 @@ class CreateIntentAndQuestionReq:
     }
 
     def __init__(self, name=None, answer=None, skill_id=None, question_list=None):
-        """CreateIntentAndQuestionReq
+        r"""CreateIntentAndQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateIntentAndQuestionReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateIntentAndQuestionReq.
+        r"""Gets the name of this CreateIntentAndQuestionReq.
 
         主题。
 
@@ -72,7 +72,7 @@ class CreateIntentAndQuestionReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIntentAndQuestionReq.
+        r"""Sets the name of this CreateIntentAndQuestionReq.
 
         主题。
 
@@ -83,7 +83,7 @@ class CreateIntentAndQuestionReq:
 
     @property
     def answer(self):
-        """Gets the answer of this CreateIntentAndQuestionReq.
+        r"""Gets the answer of this CreateIntentAndQuestionReq.
 
         问题答案。
 
@@ -94,7 +94,7 @@ class CreateIntentAndQuestionReq:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this CreateIntentAndQuestionReq.
+        r"""Sets the answer of this CreateIntentAndQuestionReq.
 
         问题答案。
 
@@ -105,7 +105,7 @@ class CreateIntentAndQuestionReq:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this CreateIntentAndQuestionReq.
+        r"""Gets the skill_id of this CreateIntentAndQuestionReq.
 
         技能ID。
 
@@ -116,7 +116,7 @@ class CreateIntentAndQuestionReq:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this CreateIntentAndQuestionReq.
+        r"""Sets the skill_id of this CreateIntentAndQuestionReq.
 
         技能ID。
 
@@ -127,7 +127,7 @@ class CreateIntentAndQuestionReq:
 
     @property
     def question_list(self):
-        """Gets the question_list of this CreateIntentAndQuestionReq.
+        r"""Gets the question_list of this CreateIntentAndQuestionReq.
 
         问法列表
 
@@ -138,7 +138,7 @@ class CreateIntentAndQuestionReq:
 
     @question_list.setter
     def question_list(self, question_list):
-        """Sets the question_list of this CreateIntentAndQuestionReq.
+        r"""Sets the question_list of this CreateIntentAndQuestionReq.
 
         问法列表
 

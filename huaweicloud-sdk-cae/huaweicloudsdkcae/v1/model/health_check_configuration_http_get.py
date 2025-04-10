@@ -29,7 +29,7 @@ class HealthCheckConfigurationHttpGet:
     }
 
     def __init__(self, path=None, port=None, scheme=None):
-        """HealthCheckConfigurationHttpGet
+        r"""HealthCheckConfigurationHttpGet
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HealthCheckConfigurationHttpGet:
 
     @property
     def path(self):
-        """Gets the path of this HealthCheckConfigurationHttpGet.
+        r"""Gets the path of this HealthCheckConfigurationHttpGet.
 
         URL路径。
 
@@ -68,7 +68,7 @@ class HealthCheckConfigurationHttpGet:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this HealthCheckConfigurationHttpGet.
+        r"""Sets the path of this HealthCheckConfigurationHttpGet.
 
         URL路径。
 
@@ -79,7 +79,7 @@ class HealthCheckConfigurationHttpGet:
 
     @property
     def port(self):
-        """Gets the port of this HealthCheckConfigurationHttpGet.
+        r"""Gets the port of this HealthCheckConfigurationHttpGet.
 
         端口。
 
@@ -90,7 +90,7 @@ class HealthCheckConfigurationHttpGet:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HealthCheckConfigurationHttpGet.
+        r"""Sets the port of this HealthCheckConfigurationHttpGet.
 
         端口。
 
@@ -101,7 +101,7 @@ class HealthCheckConfigurationHttpGet:
 
     @property
     def scheme(self):
-        """Gets the scheme of this HealthCheckConfigurationHttpGet.
+        r"""Gets the scheme of this HealthCheckConfigurationHttpGet.
 
         协议。
 
@@ -112,7 +112,7 @@ class HealthCheckConfigurationHttpGet:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this HealthCheckConfigurationHttpGet.
+        r"""Sets the scheme of this HealthCheckConfigurationHttpGet.
 
         协议。
 

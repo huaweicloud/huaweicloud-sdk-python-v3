@@ -26,7 +26,7 @@ class CheckObsBucketsResponse(SdkResponse):
     }
 
     def __init__(self, buckets=None):
-        """CheckObsBucketsResponse
+        r"""CheckObsBucketsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckObsBucketsResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this CheckObsBucketsResponse.
+        r"""Gets the buckets of this CheckObsBucketsResponse.
 
         检查OBS桶状态响应体。
 
@@ -55,7 +55,7 @@ class CheckObsBucketsResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this CheckObsBucketsResponse.
+        r"""Sets the buckets of this CheckObsBucketsResponse.
 
         检查OBS桶状态响应体。
 

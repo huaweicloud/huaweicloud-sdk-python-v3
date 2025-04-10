@@ -27,7 +27,7 @@ class DataVolume:
     }
 
     def __init__(self, size=None, volume_type=None):
-        """DataVolume
+        r"""DataVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DataVolume:
 
     @property
     def size(self):
-        """Gets the size of this DataVolume.
+        r"""Gets the size of this DataVolume.
 
         数据盘大小，容量单位为GB，输入大小范围为[1,500]。
 
@@ -59,7 +59,7 @@ class DataVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DataVolume.
+        r"""Sets the size of this DataVolume.
 
         数据盘大小，容量单位为GB，输入大小范围为[1,500]。
 
@@ -70,7 +70,7 @@ class DataVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this DataVolume.
+        r"""Gets the volume_type of this DataVolume.
 
         边缘实例数据盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
 
@@ -81,7 +81,7 @@ class DataVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this DataVolume.
+        r"""Sets the volume_type of this DataVolume.
 
         边缘实例数据盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
 

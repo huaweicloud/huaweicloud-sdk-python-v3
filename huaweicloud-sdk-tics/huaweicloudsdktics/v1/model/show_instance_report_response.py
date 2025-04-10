@@ -34,7 +34,7 @@ class ShowInstanceReportResponse(SdkResponse):
     }
 
     def __init__(self, job_report_base_info=None, job_report_env=None, job_report_output=None, job_report_partners=None, round_deploys=None):
-        """ShowInstanceReportResponse
+        r"""ShowInstanceReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @property
     def job_report_base_info(self):
-        """Gets the job_report_base_info of this ShowInstanceReportResponse.
+        r"""Gets the job_report_base_info of this ShowInstanceReportResponse.
 
         :return: The job_report_base_info of this ShowInstanceReportResponse.
         :rtype: :class:`huaweicloudsdktics.v1.JobReportBaseInfoVo`
@@ -81,7 +81,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @job_report_base_info.setter
     def job_report_base_info(self, job_report_base_info):
-        """Sets the job_report_base_info of this ShowInstanceReportResponse.
+        r"""Sets the job_report_base_info of this ShowInstanceReportResponse.
 
         :param job_report_base_info: The job_report_base_info of this ShowInstanceReportResponse.
         :type job_report_base_info: :class:`huaweicloudsdktics.v1.JobReportBaseInfoVo`
@@ -90,7 +90,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @property
     def job_report_env(self):
-        """Gets the job_report_env of this ShowInstanceReportResponse.
+        r"""Gets the job_report_env of this ShowInstanceReportResponse.
 
         :return: The job_report_env of this ShowInstanceReportResponse.
         :rtype: :class:`huaweicloudsdktics.v1.JobReportEnvVo`
@@ -99,7 +99,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @job_report_env.setter
     def job_report_env(self, job_report_env):
-        """Sets the job_report_env of this ShowInstanceReportResponse.
+        r"""Sets the job_report_env of this ShowInstanceReportResponse.
 
         :param job_report_env: The job_report_env of this ShowInstanceReportResponse.
         :type job_report_env: :class:`huaweicloudsdktics.v1.JobReportEnvVo`
@@ -108,7 +108,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @property
     def job_report_output(self):
-        """Gets the job_report_output of this ShowInstanceReportResponse.
+        r"""Gets the job_report_output of this ShowInstanceReportResponse.
 
         :return: The job_report_output of this ShowInstanceReportResponse.
         :rtype: :class:`huaweicloudsdktics.v1.JobReportOutputVo`
@@ -117,7 +117,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @job_report_output.setter
     def job_report_output(self, job_report_output):
-        """Sets the job_report_output of this ShowInstanceReportResponse.
+        r"""Sets the job_report_output of this ShowInstanceReportResponse.
 
         :param job_report_output: The job_report_output of this ShowInstanceReportResponse.
         :type job_report_output: :class:`huaweicloudsdktics.v1.JobReportOutputVo`
@@ -126,7 +126,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @property
     def job_report_partners(self):
-        """Gets the job_report_partners of this ShowInstanceReportResponse.
+        r"""Gets the job_report_partners of this ShowInstanceReportResponse.
 
         合作方信息
 
@@ -137,7 +137,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @job_report_partners.setter
     def job_report_partners(self, job_report_partners):
-        """Sets the job_report_partners of this ShowInstanceReportResponse.
+        r"""Sets the job_report_partners of this ShowInstanceReportResponse.
 
         合作方信息
 
@@ -148,7 +148,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @property
     def round_deploys(self):
-        """Gets the round_deploys of this ShowInstanceReportResponse.
+        r"""Gets the round_deploys of this ShowInstanceReportResponse.
 
         计算过程
 
@@ -159,7 +159,7 @@ class ShowInstanceReportResponse(SdkResponse):
 
     @round_deploys.setter
     def round_deploys(self, round_deploys):
-        """Sets the round_deploys of this ShowInstanceReportResponse.
+        r"""Sets the round_deploys of this ShowInstanceReportResponse.
 
         计算过程
 

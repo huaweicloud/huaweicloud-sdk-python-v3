@@ -24,7 +24,7 @@ class DeleteAssetModelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAssetModelResponse
+        r"""DeleteAssetModelResponse
 
         The model defined in huaweicloud sdk
 

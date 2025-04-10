@@ -37,7 +37,7 @@ class ParaGroupParameterResult:
     }
 
     def __init__(self, name=None, value=None, need_restart=None, readonly=None, value_range=None, data_type=None, description=None):
-        """ParaGroupParameterResult
+        r"""ParaGroupParameterResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ParaGroupParameterResult:
 
     @property
     def name(self):
-        """Gets the name of this ParaGroupParameterResult.
+        r"""Gets the name of this ParaGroupParameterResult.
 
         特定参数名称。
 
@@ -89,7 +89,7 @@ class ParaGroupParameterResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParaGroupParameterResult.
+        r"""Sets the name of this ParaGroupParameterResult.
 
         特定参数名称。
 
@@ -100,7 +100,7 @@ class ParaGroupParameterResult:
 
     @property
     def value(self):
-        """Gets the value of this ParaGroupParameterResult.
+        r"""Gets the value of this ParaGroupParameterResult.
 
         特定参数值。
 
@@ -111,7 +111,7 @@ class ParaGroupParameterResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ParaGroupParameterResult.
+        r"""Sets the value of this ParaGroupParameterResult.
 
         特定参数值。
 
@@ -122,7 +122,7 @@ class ParaGroupParameterResult:
 
     @property
     def need_restart(self):
-        """Gets the need_restart of this ParaGroupParameterResult.
+        r"""Gets the need_restart of this ParaGroupParameterResult.
 
         参数是否需要重启。 - 取值为\"true\"，需要重启。 - 取值为\"false\"，不需要重启。
 
@@ -133,7 +133,7 @@ class ParaGroupParameterResult:
 
     @need_restart.setter
     def need_restart(self, need_restart):
-        """Sets the need_restart of this ParaGroupParameterResult.
+        r"""Sets the need_restart of this ParaGroupParameterResult.
 
         参数是否需要重启。 - 取值为\"true\"，需要重启。 - 取值为\"false\"，不需要重启。
 
@@ -144,7 +144,7 @@ class ParaGroupParameterResult:
 
     @property
     def readonly(self):
-        """Gets the readonly of this ParaGroupParameterResult.
+        r"""Gets the readonly of this ParaGroupParameterResult.
 
         该参数是否只读(true：只读；false：可编辑)。
 
@@ -155,7 +155,7 @@ class ParaGroupParameterResult:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this ParaGroupParameterResult.
+        r"""Sets the readonly of this ParaGroupParameterResult.
 
         该参数是否只读(true：只读；false：可编辑)。
 
@@ -166,7 +166,7 @@ class ParaGroupParameterResult:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ParaGroupParameterResult.
+        r"""Gets the value_range of this ParaGroupParameterResult.
 
         参数取值范围。
 
@@ -177,7 +177,7 @@ class ParaGroupParameterResult:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ParaGroupParameterResult.
+        r"""Sets the value_range of this ParaGroupParameterResult.
 
         参数取值范围。
 
@@ -188,7 +188,7 @@ class ParaGroupParameterResult:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ParaGroupParameterResult.
+        r"""Gets the data_type of this ParaGroupParameterResult.
 
         参数类型，取值为“string”、“integer”、“boolean”、“list”、\"all\"或“float”之一。
 
@@ -199,7 +199,7 @@ class ParaGroupParameterResult:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ParaGroupParameterResult.
+        r"""Sets the data_type of this ParaGroupParameterResult.
 
         参数类型，取值为“string”、“integer”、“boolean”、“list”、\"all\"或“float”之一。
 
@@ -210,7 +210,7 @@ class ParaGroupParameterResult:
 
     @property
     def description(self):
-        """Gets the description of this ParaGroupParameterResult.
+        r"""Gets the description of this ParaGroupParameterResult.
 
         参数描述。
 
@@ -221,7 +221,7 @@ class ParaGroupParameterResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ParaGroupParameterResult.
+        r"""Sets the description of this ParaGroupParameterResult.
 
         参数描述。
 

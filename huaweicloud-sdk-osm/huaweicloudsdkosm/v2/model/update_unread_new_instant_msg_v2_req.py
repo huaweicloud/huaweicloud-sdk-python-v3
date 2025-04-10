@@ -25,7 +25,7 @@ class UpdateUnreadNewInstantMsgV2Req:
     }
 
     def __init__(self, group_id=None):
-        """UpdateUnreadNewInstantMsgV2Req
+        r"""UpdateUnreadNewInstantMsgV2Req
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateUnreadNewInstantMsgV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateUnreadNewInstantMsgV2Req.
+        r"""Gets the group_id of this UpdateUnreadNewInstantMsgV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -54,7 +54,7 @@ class UpdateUnreadNewInstantMsgV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateUnreadNewInstantMsgV2Req.
+        r"""Sets the group_id of this UpdateUnreadNewInstantMsgV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

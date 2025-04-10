@@ -25,7 +25,7 @@ class BatchRunDesktopsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRunDesktopsRequest
+        r"""BatchRunDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRunDesktopsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRunDesktopsRequest.
+        r"""Gets the body of this BatchRunDesktopsRequest.
 
         :return: The body of this BatchRunDesktopsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchActionDesktopsReq`
@@ -52,7 +52,7 @@ class BatchRunDesktopsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRunDesktopsRequest.
+        r"""Sets the body of this BatchRunDesktopsRequest.
 
         :param body: The body of this BatchRunDesktopsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchActionDesktopsReq`

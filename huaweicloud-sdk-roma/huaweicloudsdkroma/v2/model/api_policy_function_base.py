@@ -35,7 +35,7 @@ class ApiPolicyFunctionBase:
     }
 
     def __init__(self, function_urn=None, network_type=None, invocation_type=None, timeout=None, version=None, alias_urn=None):
-        """ApiPolicyFunctionBase
+        r"""ApiPolicyFunctionBase
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ApiPolicyFunctionBase:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ApiPolicyFunctionBase.
+        r"""Gets the function_urn of this ApiPolicyFunctionBase.
 
         函数URN
 
@@ -86,7 +86,7 @@ class ApiPolicyFunctionBase:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ApiPolicyFunctionBase.
+        r"""Sets the function_urn of this ApiPolicyFunctionBase.
 
         函数URN
 
@@ -97,7 +97,7 @@ class ApiPolicyFunctionBase:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ApiPolicyFunctionBase.
+        r"""Gets the network_type of this ApiPolicyFunctionBase.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -108,7 +108,7 @@ class ApiPolicyFunctionBase:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ApiPolicyFunctionBase.
+        r"""Sets the network_type of this ApiPolicyFunctionBase.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -119,7 +119,7 @@ class ApiPolicyFunctionBase:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this ApiPolicyFunctionBase.
+        r"""Gets the invocation_type of this ApiPolicyFunctionBase.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -130,7 +130,7 @@ class ApiPolicyFunctionBase:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this ApiPolicyFunctionBase.
+        r"""Sets the invocation_type of this ApiPolicyFunctionBase.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -141,7 +141,7 @@ class ApiPolicyFunctionBase:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApiPolicyFunctionBase.
+        r"""Gets the timeout of this ApiPolicyFunctionBase.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -152,7 +152,7 @@ class ApiPolicyFunctionBase:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApiPolicyFunctionBase.
+        r"""Sets the timeout of this ApiPolicyFunctionBase.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -163,7 +163,7 @@ class ApiPolicyFunctionBase:
 
     @property
     def version(self):
-        """Gets the version of this ApiPolicyFunctionBase.
+        r"""Gets the version of this ApiPolicyFunctionBase.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -174,7 +174,7 @@ class ApiPolicyFunctionBase:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiPolicyFunctionBase.
+        r"""Sets the version of this ApiPolicyFunctionBase.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -185,7 +185,7 @@ class ApiPolicyFunctionBase:
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this ApiPolicyFunctionBase.
+        r"""Gets the alias_urn of this ApiPolicyFunctionBase.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -196,7 +196,7 @@ class ApiPolicyFunctionBase:
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this ApiPolicyFunctionBase.
+        r"""Sets the alias_urn of this ApiPolicyFunctionBase.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 

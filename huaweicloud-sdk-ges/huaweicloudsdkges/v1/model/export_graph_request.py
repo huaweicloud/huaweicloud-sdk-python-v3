@@ -29,7 +29,7 @@ class ExportGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """ExportGraphRequest
+        r"""ExportGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExportGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ExportGraphRequest.
+        r"""Gets the graph_id of this ExportGraphRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class ExportGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ExportGraphRequest.
+        r"""Sets the graph_id of this ExportGraphRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class ExportGraphRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ExportGraphRequest.
+        r"""Gets the action_id of this ExportGraphRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class ExportGraphRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ExportGraphRequest.
+        r"""Sets the action_id of this ExportGraphRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class ExportGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportGraphRequest.
+        r"""Gets the body of this ExportGraphRequest.
 
         :return: The body of this ExportGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.ExportGraphReq`
@@ -108,7 +108,7 @@ class ExportGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportGraphRequest.
+        r"""Sets the body of this ExportGraphRequest.
 
         :param body: The body of this ExportGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.ExportGraphReq`

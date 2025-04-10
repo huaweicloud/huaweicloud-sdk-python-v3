@@ -27,7 +27,7 @@ class CheckJobNameReq:
     }
 
     def __init__(self, name=None, type=None):
-        """CheckJobNameReq
+        r"""CheckJobNameReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckJobNameReq:
 
     @property
     def name(self):
-        """Gets the name of this CheckJobNameReq.
+        r"""Gets the name of this CheckJobNameReq.
 
         - 迁移、同步、灾备、订阅任务名称，名称在4位到50位之间，必须以字母开头，可以包含字母、数字、中划线或下划线，不能包含其他特殊字符，任务名称不能重复。 - 备份迁移任务名称，名称在4位到80位之间，必须以字母开头，可以包含字母、数字、中划线或下划线，不能包含其他特殊字符，任务名称不能重复。
 
@@ -59,7 +59,7 @@ class CheckJobNameReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckJobNameReq.
+        r"""Sets the name of this CheckJobNameReq.
 
         - 迁移、同步、灾备、订阅任务名称，名称在4位到50位之间，必须以字母开头，可以包含字母、数字、中划线或下划线，不能包含其他特殊字符，任务名称不能重复。 - 备份迁移任务名称，名称在4位到80位之间，必须以字母开头，可以包含字母、数字、中划线或下划线，不能包含其他特殊字符，任务名称不能重复。
 
@@ -70,7 +70,7 @@ class CheckJobNameReq:
 
     @property
     def type(self):
-        """Gets the type of this CheckJobNameReq.
+        r"""Gets the type of this CheckJobNameReq.
 
         任务类型。 - trans - subscription - offline
 
@@ -81,7 +81,7 @@ class CheckJobNameReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CheckJobNameReq.
+        r"""Sets the type of this CheckJobNameReq.
 
         任务类型。 - trans - subscription - offline
 

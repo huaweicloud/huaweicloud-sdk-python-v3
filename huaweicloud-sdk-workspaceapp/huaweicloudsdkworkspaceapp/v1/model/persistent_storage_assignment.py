@@ -37,7 +37,7 @@ class PersistentStorageAssignment:
     }
 
     def __init__(self, storage_claim_id=None, folder_path=None, delimiter=None, claim_mode=None, storage_metadata=None, policy_statement=None, attachment=None):
-        """PersistentStorageAssignment
+        r"""PersistentStorageAssignment
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PersistentStorageAssignment:
 
     @property
     def storage_claim_id(self):
-        """Gets the storage_claim_id of this PersistentStorageAssignment.
+        r"""Gets the storage_claim_id of this PersistentStorageAssignment.
 
         WKS存储目录声明ID。
 
@@ -96,7 +96,7 @@ class PersistentStorageAssignment:
 
     @storage_claim_id.setter
     def storage_claim_id(self, storage_claim_id):
-        """Sets the storage_claim_id of this PersistentStorageAssignment.
+        r"""Sets the storage_claim_id of this PersistentStorageAssignment.
 
         WKS存储目录声明ID。
 
@@ -107,7 +107,7 @@ class PersistentStorageAssignment:
 
     @property
     def folder_path(self):
-        """Gets the folder_path of this PersistentStorageAssignment.
+        r"""Gets the folder_path of this PersistentStorageAssignment.
 
         存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
@@ -118,7 +118,7 @@ class PersistentStorageAssignment:
 
     @folder_path.setter
     def folder_path(self, folder_path):
-        """Sets the folder_path of this PersistentStorageAssignment.
+        r"""Sets the folder_path of this PersistentStorageAssignment.
 
         存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
@@ -129,7 +129,7 @@ class PersistentStorageAssignment:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this PersistentStorageAssignment.
+        r"""Gets the delimiter of this PersistentStorageAssignment.
 
         路径分隔符。
 
@@ -140,7 +140,7 @@ class PersistentStorageAssignment:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this PersistentStorageAssignment.
+        r"""Sets the delimiter of this PersistentStorageAssignment.
 
         路径分隔符。
 
@@ -151,7 +151,7 @@ class PersistentStorageAssignment:
 
     @property
     def claim_mode(self):
-        """Gets the claim_mode of this PersistentStorageAssignment.
+        r"""Gets the claim_mode of this PersistentStorageAssignment.
 
         :return: The claim_mode of this PersistentStorageAssignment.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
@@ -160,7 +160,7 @@ class PersistentStorageAssignment:
 
     @claim_mode.setter
     def claim_mode(self, claim_mode):
-        """Sets the claim_mode of this PersistentStorageAssignment.
+        r"""Sets the claim_mode of this PersistentStorageAssignment.
 
         :param claim_mode: The claim_mode of this PersistentStorageAssignment.
         :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
@@ -169,7 +169,7 @@ class PersistentStorageAssignment:
 
     @property
     def storage_metadata(self):
-        """Gets the storage_metadata of this PersistentStorageAssignment.
+        r"""Gets the storage_metadata of this PersistentStorageAssignment.
 
         :return: The storage_metadata of this PersistentStorageAssignment.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
@@ -178,7 +178,7 @@ class PersistentStorageAssignment:
 
     @storage_metadata.setter
     def storage_metadata(self, storage_metadata):
-        """Sets the storage_metadata of this PersistentStorageAssignment.
+        r"""Sets the storage_metadata of this PersistentStorageAssignment.
 
         :param storage_metadata: The storage_metadata of this PersistentStorageAssignment.
         :type storage_metadata: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
@@ -187,7 +187,7 @@ class PersistentStorageAssignment:
 
     @property
     def policy_statement(self):
-        """Gets the policy_statement of this PersistentStorageAssignment.
+        r"""Gets the policy_statement of this PersistentStorageAssignment.
 
         :return: The policy_statement of this PersistentStorageAssignment.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`
@@ -196,7 +196,7 @@ class PersistentStorageAssignment:
 
     @policy_statement.setter
     def policy_statement(self, policy_statement):
-        """Sets the policy_statement of this PersistentStorageAssignment.
+        r"""Sets the policy_statement of this PersistentStorageAssignment.
 
         :param policy_statement: The policy_statement of this PersistentStorageAssignment.
         :type policy_statement: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`
@@ -205,7 +205,7 @@ class PersistentStorageAssignment:
 
     @property
     def attachment(self):
-        """Gets the attachment of this PersistentStorageAssignment.
+        r"""Gets the attachment of this PersistentStorageAssignment.
 
         :return: The attachment of this PersistentStorageAssignment.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Attachment`
@@ -214,7 +214,7 @@ class PersistentStorageAssignment:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this PersistentStorageAssignment.
+        r"""Sets the attachment of this PersistentStorageAssignment.
 
         :param attachment: The attachment of this PersistentStorageAssignment.
         :type attachment: :class:`huaweicloudsdkworkspaceapp.v1.Attachment`

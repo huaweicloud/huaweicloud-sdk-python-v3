@@ -43,7 +43,7 @@ class AddProduct:
     }
 
     def __init__(self, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, service_capabilities=None, manufacturer_name=None, industry=None, description=None, app_id=None):
-        """AddProduct
+        r"""AddProduct
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class AddProduct:
 
     @property
     def product_id(self):
-        """Gets the product_id of this AddProduct.
+        r"""Gets the product_id of this AddProduct.
 
         **参数说明**：产品ID，资源空间下唯一。常app_id一起使用，用于唯一标识一个产品。如果携带此参数，平台将产品ID设置为该参数值；如果不携带此参数，产品ID在物联网平台创建产品后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -112,7 +112,7 @@ class AddProduct:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this AddProduct.
+        r"""Sets the product_id of this AddProduct.
 
         **参数说明**：产品ID，资源空间下唯一。常app_id一起使用，用于唯一标识一个产品。如果携带此参数，平台将产品ID设置为该参数值；如果不携带此参数，产品ID在物联网平台创建产品后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -123,7 +123,7 @@ class AddProduct:
 
     @property
     def name(self):
-        """Gets the name of this AddProduct.
+        r"""Gets the name of this AddProduct.
 
         **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -134,7 +134,7 @@ class AddProduct:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddProduct.
+        r"""Sets the name of this AddProduct.
 
         **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -145,7 +145,7 @@ class AddProduct:
 
     @property
     def device_type(self):
-        """Gets the device_type of this AddProduct.
+        r"""Gets the device_type of this AddProduct.
 
         **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -156,7 +156,7 @@ class AddProduct:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this AddProduct.
+        r"""Sets the device_type of this AddProduct.
 
         **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -167,7 +167,7 @@ class AddProduct:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this AddProduct.
+        r"""Gets the protocol_type of this AddProduct.
 
         **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -178,7 +178,7 @@ class AddProduct:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this AddProduct.
+        r"""Sets the protocol_type of this AddProduct.
 
         **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -189,7 +189,7 @@ class AddProduct:
 
     @property
     def data_format(self):
-        """Gets the data_format of this AddProduct.
+        r"""Gets the data_format of this AddProduct.
 
         **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式 默认值json。
 
@@ -200,7 +200,7 @@ class AddProduct:
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this AddProduct.
+        r"""Sets the data_format of this AddProduct.
 
         **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式 默认值json。
 
@@ -211,7 +211,7 @@ class AddProduct:
 
     @property
     def service_capabilities(self):
-        """Gets the service_capabilities of this AddProduct.
+        r"""Gets the service_capabilities of this AddProduct.
 
         **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
 
@@ -222,7 +222,7 @@ class AddProduct:
 
     @service_capabilities.setter
     def service_capabilities(self, service_capabilities):
-        """Sets the service_capabilities of this AddProduct.
+        r"""Sets the service_capabilities of this AddProduct.
 
         **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
 
@@ -233,7 +233,7 @@ class AddProduct:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this AddProduct.
+        r"""Gets the manufacturer_name of this AddProduct.
 
         **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -244,7 +244,7 @@ class AddProduct:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this AddProduct.
+        r"""Sets the manufacturer_name of this AddProduct.
 
         **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -255,7 +255,7 @@ class AddProduct:
 
     @property
     def industry(self):
-        """Gets the industry of this AddProduct.
+        r"""Gets the industry of this AddProduct.
 
         **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -266,7 +266,7 @@ class AddProduct:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this AddProduct.
+        r"""Sets the industry of this AddProduct.
 
         **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -277,7 +277,7 @@ class AddProduct:
 
     @property
     def description(self):
-        """Gets the description of this AddProduct.
+        r"""Gets the description of this AddProduct.
 
         **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -288,7 +288,7 @@ class AddProduct:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddProduct.
+        r"""Sets the description of this AddProduct.
 
         **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -299,7 +299,7 @@ class AddProduct:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddProduct.
+        r"""Gets the app_id of this AddProduct.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的产品归属到哪个资源空间下，否则创建的产品将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -310,7 +310,7 @@ class AddProduct:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddProduct.
+        r"""Sets the app_id of this AddProduct.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的产品归属到哪个资源空间下，否则创建的产品将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 

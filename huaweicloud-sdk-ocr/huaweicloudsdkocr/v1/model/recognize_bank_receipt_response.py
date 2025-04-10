@@ -28,7 +28,7 @@ class RecognizeBankReceiptResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeBankReceiptResponse
+        r"""RecognizeBankReceiptResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeBankReceiptResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeBankReceiptResponse.
+        r"""Gets the result of this RecognizeBankReceiptResponse.
 
         :return: The result of this RecognizeBankReceiptResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.BankReceiptResult`
@@ -60,7 +60,7 @@ class RecognizeBankReceiptResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeBankReceiptResponse.
+        r"""Sets the result of this RecognizeBankReceiptResponse.
 
         :param result: The result of this RecognizeBankReceiptResponse.
         :type result: :class:`huaweicloudsdkocr.v1.BankReceiptResult`
@@ -69,7 +69,7 @@ class RecognizeBankReceiptResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeBankReceiptResponse.
+        r"""Gets the x_request_id of this RecognizeBankReceiptResponse.
 
         :return: The x_request_id of this RecognizeBankReceiptResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeBankReceiptResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeBankReceiptResponse.
+        r"""Sets the x_request_id of this RecognizeBankReceiptResponse.
 
         :param x_request_id: The x_request_id of this RecognizeBankReceiptResponse.
         :type x_request_id: str

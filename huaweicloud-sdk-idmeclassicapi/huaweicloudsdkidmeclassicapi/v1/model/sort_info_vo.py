@@ -33,7 +33,7 @@ class SortInfoVo:
     }
 
     def __init__(self, character_set=None, order_by=None, sort=None, sort_info=None, sort_info_order_by=None):
-        """SortInfoVo
+        r"""SortInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SortInfoVo:
 
     @property
     def character_set(self):
-        """Gets the character_set of this SortInfoVo.
+        r"""Gets the character_set of this SortInfoVo.
 
         :return: The character_set of this SortInfoVo.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
@@ -80,7 +80,7 @@ class SortInfoVo:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this SortInfoVo.
+        r"""Sets the character_set of this SortInfoVo.
 
         :param character_set: The character_set of this SortInfoVo.
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
@@ -89,7 +89,7 @@ class SortInfoVo:
 
     @property
     def order_by(self):
-        """Gets the order_by of this SortInfoVo.
+        r"""Gets the order_by of this SortInfoVo.
 
         **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -100,7 +100,7 @@ class SortInfoVo:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this SortInfoVo.
+        r"""Sets the order_by of this SortInfoVo.
 
         **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -111,7 +111,7 @@ class SortInfoVo:
 
     @property
     def sort(self):
-        """Gets the sort of this SortInfoVo.
+        r"""Gets the sort of this SortInfoVo.
 
         **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
@@ -122,7 +122,7 @@ class SortInfoVo:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this SortInfoVo.
+        r"""Sets the sort of this SortInfoVo.
 
         **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
@@ -133,7 +133,7 @@ class SortInfoVo:
 
     @property
     def sort_info(self):
-        """Gets the sort_info of this SortInfoVo.
+        r"""Gets the sort_info of this SortInfoVo.
 
         **参数解释：**  排序信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -144,7 +144,7 @@ class SortInfoVo:
 
     @sort_info.setter
     def sort_info(self, sort_info):
-        """Sets the sort_info of this SortInfoVo.
+        r"""Sets the sort_info of this SortInfoVo.
 
         **参数解释：**  排序信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -155,7 +155,7 @@ class SortInfoVo:
 
     @property
     def sort_info_order_by(self):
-        """Gets the sort_info_order_by of this SortInfoVo.
+        r"""Gets the sort_info_order_by of this SortInfoVo.
 
         **参数解释：**  排序信息字段。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -166,7 +166,7 @@ class SortInfoVo:
 
     @sort_info_order_by.setter
     def sort_info_order_by(self, sort_info_order_by):
-        """Sets the sort_info_order_by of this SortInfoVo.
+        r"""Sets the sort_info_order_by of this SortInfoVo.
 
         **参数解释：**  排序信息字段。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

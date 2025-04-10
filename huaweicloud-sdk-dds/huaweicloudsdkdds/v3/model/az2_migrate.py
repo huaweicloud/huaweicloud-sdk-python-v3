@@ -29,7 +29,7 @@ class Az2Migrate:
     }
 
     def __init__(self, code=None, description=None, status=None):
-        """Az2Migrate
+        r"""Az2Migrate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Az2Migrate:
 
     @property
     def code(self):
-        """Gets the code of this Az2Migrate.
+        r"""Gets the code of this Az2Migrate.
 
         可用区ID。
 
@@ -65,7 +65,7 @@ class Az2Migrate:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Az2Migrate.
+        r"""Sets the code of this Az2Migrate.
 
         可用区ID。
 
@@ -76,7 +76,7 @@ class Az2Migrate:
 
     @property
     def description(self):
-        """Gets the description of this Az2Migrate.
+        r"""Gets the description of this Az2Migrate.
 
         可用区描述。
 
@@ -87,7 +87,7 @@ class Az2Migrate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Az2Migrate.
+        r"""Sets the description of this Az2Migrate.
 
         可用区描述。
 
@@ -98,7 +98,7 @@ class Az2Migrate:
 
     @property
     def status(self):
-        """Gets the status of this Az2Migrate.
+        r"""Gets the status of this Az2Migrate.
 
         当前可用区的的状态。 - ENABLED，表示该可用区（组合）可用。 - DISABLED，表示该可用区（组合）不可用。
 
@@ -109,7 +109,7 @@ class Az2Migrate:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Az2Migrate.
+        r"""Sets the status of this Az2Migrate.
 
         当前可用区的的状态。 - ENABLED，表示该可用区（组合）可用。 - DISABLED，表示该可用区（组合）不可用。
 

@@ -53,7 +53,7 @@ class InstanceAccesslog:
     }
 
     def __init__(self, id=None, request_id=None, api_id=None, api_name=None, app_id=None, app_name=None, access_time=None, duration=None, status_code=None, error_code=None, error_message=None, detail=None, in_flow_size=None, out_flow_size=None, out_total_size=None):
-        """InstanceAccesslog
+        r"""InstanceAccesslog
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class InstanceAccesslog:
 
     @property
     def id(self):
-        """Gets the id of this InstanceAccesslog.
+        r"""Gets the id of this InstanceAccesslog.
 
         集群ID。
 
@@ -152,7 +152,7 @@ class InstanceAccesslog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceAccesslog.
+        r"""Sets the id of this InstanceAccesslog.
 
         集群ID。
 
@@ -163,7 +163,7 @@ class InstanceAccesslog:
 
     @property
     def request_id(self):
-        """Gets the request_id of this InstanceAccesslog.
+        r"""Gets the request_id of this InstanceAccesslog.
 
         请求ID。
 
@@ -174,7 +174,7 @@ class InstanceAccesslog:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this InstanceAccesslog.
+        r"""Sets the request_id of this InstanceAccesslog.
 
         请求ID。
 
@@ -185,7 +185,7 @@ class InstanceAccesslog:
 
     @property
     def api_id(self):
-        """Gets the api_id of this InstanceAccesslog.
+        r"""Gets the api_id of this InstanceAccesslog.
 
         API ID。
 
@@ -196,7 +196,7 @@ class InstanceAccesslog:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this InstanceAccesslog.
+        r"""Sets the api_id of this InstanceAccesslog.
 
         API ID。
 
@@ -207,7 +207,7 @@ class InstanceAccesslog:
 
     @property
     def api_name(self):
-        """Gets the api_name of this InstanceAccesslog.
+        r"""Gets the api_name of this InstanceAccesslog.
 
         API名称。
 
@@ -218,7 +218,7 @@ class InstanceAccesslog:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this InstanceAccesslog.
+        r"""Sets the api_name of this InstanceAccesslog.
 
         API名称。
 
@@ -229,7 +229,7 @@ class InstanceAccesslog:
 
     @property
     def app_id(self):
-        """Gets the app_id of this InstanceAccesslog.
+        r"""Gets the app_id of this InstanceAccesslog.
 
         APP ID。
 
@@ -240,7 +240,7 @@ class InstanceAccesslog:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this InstanceAccesslog.
+        r"""Sets the app_id of this InstanceAccesslog.
 
         APP ID。
 
@@ -251,7 +251,7 @@ class InstanceAccesslog:
 
     @property
     def app_name(self):
-        """Gets the app_name of this InstanceAccesslog.
+        r"""Gets the app_name of this InstanceAccesslog.
 
         APP名称。
 
@@ -262,7 +262,7 @@ class InstanceAccesslog:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this InstanceAccesslog.
+        r"""Sets the app_name of this InstanceAccesslog.
 
         APP名称。
 
@@ -273,7 +273,7 @@ class InstanceAccesslog:
 
     @property
     def access_time(self):
-        """Gets the access_time of this InstanceAccesslog.
+        r"""Gets the access_time of this InstanceAccesslog.
 
         访问时间。
 
@@ -284,7 +284,7 @@ class InstanceAccesslog:
 
     @access_time.setter
     def access_time(self, access_time):
-        """Sets the access_time of this InstanceAccesslog.
+        r"""Sets the access_time of this InstanceAccesslog.
 
         访问时间。
 
@@ -295,7 +295,7 @@ class InstanceAccesslog:
 
     @property
     def duration(self):
-        """Gets the duration of this InstanceAccesslog.
+        r"""Gets the duration of this InstanceAccesslog.
 
         访问时长。
 
@@ -306,7 +306,7 @@ class InstanceAccesslog:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this InstanceAccesslog.
+        r"""Sets the duration of this InstanceAccesslog.
 
         访问时长。
 
@@ -317,7 +317,7 @@ class InstanceAccesslog:
 
     @property
     def status_code(self):
-        """Gets the status_code of this InstanceAccesslog.
+        r"""Gets the status_code of this InstanceAccesslog.
 
         状态码。
 
@@ -328,7 +328,7 @@ class InstanceAccesslog:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this InstanceAccesslog.
+        r"""Sets the status_code of this InstanceAccesslog.
 
         状态码。
 
@@ -339,7 +339,7 @@ class InstanceAccesslog:
 
     @property
     def error_code(self):
-        """Gets the error_code of this InstanceAccesslog.
+        r"""Gets the error_code of this InstanceAccesslog.
 
         错误码。
 
@@ -350,7 +350,7 @@ class InstanceAccesslog:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this InstanceAccesslog.
+        r"""Sets the error_code of this InstanceAccesslog.
 
         错误码。
 
@@ -361,7 +361,7 @@ class InstanceAccesslog:
 
     @property
     def error_message(self):
-        """Gets the error_message of this InstanceAccesslog.
+        r"""Gets the error_message of this InstanceAccesslog.
 
         错误信息。
 
@@ -372,7 +372,7 @@ class InstanceAccesslog:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this InstanceAccesslog.
+        r"""Sets the error_message of this InstanceAccesslog.
 
         错误信息。
 
@@ -383,7 +383,7 @@ class InstanceAccesslog:
 
     @property
     def detail(self):
-        """Gets the detail of this InstanceAccesslog.
+        r"""Gets the detail of this InstanceAccesslog.
 
         日志详情。
 
@@ -394,7 +394,7 @@ class InstanceAccesslog:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this InstanceAccesslog.
+        r"""Sets the detail of this InstanceAccesslog.
 
         日志详情。
 
@@ -405,7 +405,7 @@ class InstanceAccesslog:
 
     @property
     def in_flow_size(self):
-        """Gets the in_flow_size of this InstanceAccesslog.
+        r"""Gets the in_flow_size of this InstanceAccesslog.
 
         输入流量大小。
 
@@ -416,7 +416,7 @@ class InstanceAccesslog:
 
     @in_flow_size.setter
     def in_flow_size(self, in_flow_size):
-        """Sets the in_flow_size of this InstanceAccesslog.
+        r"""Sets the in_flow_size of this InstanceAccesslog.
 
         输入流量大小。
 
@@ -427,7 +427,7 @@ class InstanceAccesslog:
 
     @property
     def out_flow_size(self):
-        """Gets the out_flow_size of this InstanceAccesslog.
+        r"""Gets the out_flow_size of this InstanceAccesslog.
 
         输出流量大小。
 
@@ -438,7 +438,7 @@ class InstanceAccesslog:
 
     @out_flow_size.setter
     def out_flow_size(self, out_flow_size):
-        """Sets the out_flow_size of this InstanceAccesslog.
+        r"""Sets the out_flow_size of this InstanceAccesslog.
 
         输出流量大小。
 
@@ -449,7 +449,7 @@ class InstanceAccesslog:
 
     @property
     def out_total_size(self):
-        """Gets the out_total_size of this InstanceAccesslog.
+        r"""Gets the out_total_size of this InstanceAccesslog.
 
         输出数据条数。
 
@@ -460,7 +460,7 @@ class InstanceAccesslog:
 
     @out_total_size.setter
     def out_total_size(self, out_total_size):
-        """Sets the out_total_size of this InstanceAccesslog.
+        r"""Sets the out_total_size of this InstanceAccesslog.
 
         输出数据条数。
 

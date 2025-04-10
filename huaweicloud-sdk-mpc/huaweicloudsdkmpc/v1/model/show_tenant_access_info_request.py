@@ -25,7 +25,7 @@ class ShowTenantAccessInfoRequest:
     }
 
     def __init__(self, x_language=None):
-        """ShowTenantAccessInfoRequest
+        r"""ShowTenantAccessInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowTenantAccessInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowTenantAccessInfoRequest.
+        r"""Gets the x_language of this ShowTenantAccessInfoRequest.
 
         客户端语言
 
@@ -54,7 +54,7 @@ class ShowTenantAccessInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowTenantAccessInfoRequest.
+        r"""Sets the x_language of this ShowTenantAccessInfoRequest.
 
         客户端语言
 

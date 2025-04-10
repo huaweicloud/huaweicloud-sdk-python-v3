@@ -25,7 +25,7 @@ class CreatePermanentAccessKeyRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePermanentAccessKeyRequest
+        r"""CreatePermanentAccessKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePermanentAccessKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePermanentAccessKeyRequest.
+        r"""Gets the body of this CreatePermanentAccessKeyRequest.
 
         :return: The body of this CreatePermanentAccessKeyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyRequestBody`
@@ -52,7 +52,7 @@ class CreatePermanentAccessKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePermanentAccessKeyRequest.
+        r"""Sets the body of this CreatePermanentAccessKeyRequest.
 
         :param body: The body of this CreatePermanentAccessKeyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyRequestBody`

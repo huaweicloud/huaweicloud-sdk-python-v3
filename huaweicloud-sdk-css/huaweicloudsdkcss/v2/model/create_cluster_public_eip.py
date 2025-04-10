@@ -25,7 +25,7 @@ class CreateClusterPublicEip:
     }
 
     def __init__(self, band_width=None):
-        """CreateClusterPublicEip
+        r"""CreateClusterPublicEip
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateClusterPublicEip:
 
     @property
     def band_width(self):
-        """Gets the band_width of this CreateClusterPublicEip.
+        r"""Gets the band_width of this CreateClusterPublicEip.
 
         :return: The band_width of this CreateClusterPublicEip.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`
@@ -51,7 +51,7 @@ class CreateClusterPublicEip:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this CreateClusterPublicEip.
+        r"""Sets the band_width of this CreateClusterPublicEip.
 
         :param band_width: The band_width of this CreateClusterPublicEip.
         :type band_width: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`

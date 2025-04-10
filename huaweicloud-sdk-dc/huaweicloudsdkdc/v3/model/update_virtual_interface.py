@@ -39,7 +39,7 @@ class UpdateVirtualInterface:
     }
 
     def __init__(self, name=None, description=None, bandwidth=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, status=None):
-        """UpdateVirtualInterface
+        r"""UpdateVirtualInterface
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateVirtualInterface:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVirtualInterface.
+        r"""Gets the name of this UpdateVirtualInterface.
 
         虚拟接口名字
 
@@ -103,7 +103,7 @@ class UpdateVirtualInterface:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVirtualInterface.
+        r"""Sets the name of this UpdateVirtualInterface.
 
         虚拟接口名字
 
@@ -114,7 +114,7 @@ class UpdateVirtualInterface:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVirtualInterface.
+        r"""Gets the description of this UpdateVirtualInterface.
 
         虚拟接口描述信息
 
@@ -125,7 +125,7 @@ class UpdateVirtualInterface:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVirtualInterface.
+        r"""Sets the description of this UpdateVirtualInterface.
 
         虚拟接口描述信息
 
@@ -136,7 +136,7 @@ class UpdateVirtualInterface:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdateVirtualInterface.
+        r"""Gets the bandwidth of this UpdateVirtualInterface.
 
         虚拟接口带宽配置
 
@@ -147,7 +147,7 @@ class UpdateVirtualInterface:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdateVirtualInterface.
+        r"""Sets the bandwidth of this UpdateVirtualInterface.
 
         虚拟接口带宽配置
 
@@ -158,7 +158,7 @@ class UpdateVirtualInterface:
 
     @property
     def remote_ep_group(self):
-        """Gets the remote_ep_group of this UpdateVirtualInterface.
+        r"""Gets the remote_ep_group of this UpdateVirtualInterface.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -169,7 +169,7 @@ class UpdateVirtualInterface:
 
     @remote_ep_group.setter
     def remote_ep_group(self, remote_ep_group):
-        """Sets the remote_ep_group of this UpdateVirtualInterface.
+        r"""Sets the remote_ep_group of this UpdateVirtualInterface.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -180,7 +180,7 @@ class UpdateVirtualInterface:
 
     @property
     def service_ep_group(self):
-        """Gets the service_ep_group of this UpdateVirtualInterface.
+        r"""Gets the service_ep_group of this UpdateVirtualInterface.
 
         用于公网专线,用户访问公网服务地址列表。[（预留字段，暂不支持）](tag:dt)
 
@@ -191,7 +191,7 @@ class UpdateVirtualInterface:
 
     @service_ep_group.setter
     def service_ep_group(self, service_ep_group):
-        """Sets the service_ep_group of this UpdateVirtualInterface.
+        r"""Sets the service_ep_group of this UpdateVirtualInterface.
 
         用于公网专线,用户访问公网服务地址列表。[（预留字段，暂不支持）](tag:dt)
 
@@ -202,7 +202,7 @@ class UpdateVirtualInterface:
 
     @property
     def enable_bfd(self):
-        """Gets the enable_bfd of this UpdateVirtualInterface.
+        r"""Gets the enable_bfd of this UpdateVirtualInterface.
 
         是否使能bfd功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
@@ -213,7 +213,7 @@ class UpdateVirtualInterface:
 
     @enable_bfd.setter
     def enable_bfd(self, enable_bfd):
-        """Sets the enable_bfd of this UpdateVirtualInterface.
+        r"""Sets the enable_bfd of this UpdateVirtualInterface.
 
         是否使能bfd功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
@@ -224,7 +224,7 @@ class UpdateVirtualInterface:
 
     @property
     def enable_nqa(self):
-        """Gets the enable_nqa of this UpdateVirtualInterface.
+        r"""Gets the enable_nqa of this UpdateVirtualInterface.
 
         是否使能nqa功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
@@ -235,7 +235,7 @@ class UpdateVirtualInterface:
 
     @enable_nqa.setter
     def enable_nqa(self, enable_nqa):
-        """Sets the enable_nqa of this UpdateVirtualInterface.
+        r"""Sets the enable_nqa of this UpdateVirtualInterface.
 
         是否使能nqa功能：true或false。[（预留字段，暂不支持）](tag:dt)
 
@@ -246,7 +246,7 @@ class UpdateVirtualInterface:
 
     @property
     def status(self):
-        """Gets the status of this UpdateVirtualInterface.
+        r"""Gets the status of this UpdateVirtualInterface.
 
         对其他租户创建的虚拟接口进行确认,可以是ACCEPTED和REJECTED
 
@@ -257,7 +257,7 @@ class UpdateVirtualInterface:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateVirtualInterface.
+        r"""Sets the status of this UpdateVirtualInterface.
 
         对其他租户创建的虚拟接口进行确认,可以是ACCEPTED和REJECTED
 

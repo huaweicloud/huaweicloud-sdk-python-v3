@@ -25,7 +25,7 @@ class StopJobActionReq:
     }
 
     def __init__(self, is_force_stop=None):
-        """StopJobActionReq
+        r"""StopJobActionReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StopJobActionReq:
 
     @property
     def is_force_stop(self):
-        """Gets the is_force_stop of this StopJobActionReq.
+        r"""Gets the is_force_stop of this StopJobActionReq.
 
         强制结束任务时取值true，默认false。
 
@@ -54,7 +54,7 @@ class StopJobActionReq:
 
     @is_force_stop.setter
     def is_force_stop(self, is_force_stop):
-        """Sets the is_force_stop of this StopJobActionReq.
+        r"""Sets the is_force_stop of this StopJobActionReq.
 
         强制结束任务时取值true，默认false。
 

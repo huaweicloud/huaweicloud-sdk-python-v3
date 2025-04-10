@@ -71,7 +71,7 @@ class DimensionAttributeVO:
     }
 
     def __init__(self, id=None, dimension_id=None, code_table_field_id=None, name_en=None, name_ch=None, description=None, create_by=None, data_type=None, domain_type=None, data_type_extend=None, is_primary_key=None, is_biz_primary=None, is_partition_key=None, ordinal=None, not_null=None, stand_row_id=None, stand_row_name=None, quality_infos=None, secrecy_levels=None, status=None, create_time=None, update_time=None, alias=None, self_defined_fields=None):
-        """DimensionAttributeVO
+        r"""DimensionAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -199,7 +199,7 @@ class DimensionAttributeVO:
 
     @property
     def id(self):
-        """Gets the id of this DimensionAttributeVO.
+        r"""Gets the id of this DimensionAttributeVO.
 
         编码，ID字符串。
 
@@ -210,7 +210,7 @@ class DimensionAttributeVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DimensionAttributeVO.
+        r"""Sets the id of this DimensionAttributeVO.
 
         编码，ID字符串。
 
@@ -221,7 +221,7 @@ class DimensionAttributeVO:
 
     @property
     def dimension_id(self):
-        """Gets the dimension_id of this DimensionAttributeVO.
+        r"""Gets the dimension_id of this DimensionAttributeVO.
 
         维度ID，只读，ID字符串。
 
@@ -232,7 +232,7 @@ class DimensionAttributeVO:
 
     @dimension_id.setter
     def dimension_id(self, dimension_id):
-        """Sets the dimension_id of this DimensionAttributeVO.
+        r"""Sets the dimension_id of this DimensionAttributeVO.
 
         维度ID，只读，ID字符串。
 
@@ -243,7 +243,7 @@ class DimensionAttributeVO:
 
     @property
     def code_table_field_id(self):
-        """Gets the code_table_field_id of this DimensionAttributeVO.
+        r"""Gets the code_table_field_id of this DimensionAttributeVO.
 
         码表属性ID，ID字符串。
 
@@ -254,7 +254,7 @@ class DimensionAttributeVO:
 
     @code_table_field_id.setter
     def code_table_field_id(self, code_table_field_id):
-        """Sets the code_table_field_id of this DimensionAttributeVO.
+        r"""Sets the code_table_field_id of this DimensionAttributeVO.
 
         码表属性ID，ID字符串。
 
@@ -265,7 +265,7 @@ class DimensionAttributeVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this DimensionAttributeVO.
+        r"""Gets the name_en of this DimensionAttributeVO.
 
         字段名。
 
@@ -276,7 +276,7 @@ class DimensionAttributeVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this DimensionAttributeVO.
+        r"""Sets the name_en of this DimensionAttributeVO.
 
         字段名。
 
@@ -287,7 +287,7 @@ class DimensionAttributeVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this DimensionAttributeVO.
+        r"""Gets the name_ch of this DimensionAttributeVO.
 
         业务属性。
 
@@ -298,7 +298,7 @@ class DimensionAttributeVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this DimensionAttributeVO.
+        r"""Sets the name_ch of this DimensionAttributeVO.
 
         业务属性。
 
@@ -309,7 +309,7 @@ class DimensionAttributeVO:
 
     @property
     def description(self):
-        """Gets the description of this DimensionAttributeVO.
+        r"""Gets the description of this DimensionAttributeVO.
 
         描述。
 
@@ -320,7 +320,7 @@ class DimensionAttributeVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DimensionAttributeVO.
+        r"""Sets the description of this DimensionAttributeVO.
 
         描述。
 
@@ -331,7 +331,7 @@ class DimensionAttributeVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DimensionAttributeVO.
+        r"""Gets the create_by of this DimensionAttributeVO.
 
         创建人。
 
@@ -342,7 +342,7 @@ class DimensionAttributeVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DimensionAttributeVO.
+        r"""Sets the create_by of this DimensionAttributeVO.
 
         创建人。
 
@@ -353,7 +353,7 @@ class DimensionAttributeVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this DimensionAttributeVO.
+        r"""Gets the data_type of this DimensionAttributeVO.
 
         字段类型。
 
@@ -364,7 +364,7 @@ class DimensionAttributeVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this DimensionAttributeVO.
+        r"""Sets the data_type of this DimensionAttributeVO.
 
         字段类型。
 
@@ -375,7 +375,7 @@ class DimensionAttributeVO:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this DimensionAttributeVO.
+        r"""Gets the domain_type of this DimensionAttributeVO.
 
         :return: The domain_type of this DimensionAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -384,7 +384,7 @@ class DimensionAttributeVO:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this DimensionAttributeVO.
+        r"""Sets the domain_type of this DimensionAttributeVO.
 
         :param domain_type: The domain_type of this DimensionAttributeVO.
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -393,7 +393,7 @@ class DimensionAttributeVO:
 
     @property
     def data_type_extend(self):
-        """Gets the data_type_extend of this DimensionAttributeVO.
+        r"""Gets the data_type_extend of this DimensionAttributeVO.
 
         数据类型扩展字段。
 
@@ -404,7 +404,7 @@ class DimensionAttributeVO:
 
     @data_type_extend.setter
     def data_type_extend(self, data_type_extend):
-        """Sets the data_type_extend of this DimensionAttributeVO.
+        r"""Sets the data_type_extend of this DimensionAttributeVO.
 
         数据类型扩展字段。
 
@@ -415,7 +415,7 @@ class DimensionAttributeVO:
 
     @property
     def is_primary_key(self):
-        """Gets the is_primary_key of this DimensionAttributeVO.
+        r"""Gets the is_primary_key of this DimensionAttributeVO.
 
         是否主键。
 
@@ -426,7 +426,7 @@ class DimensionAttributeVO:
 
     @is_primary_key.setter
     def is_primary_key(self, is_primary_key):
-        """Sets the is_primary_key of this DimensionAttributeVO.
+        r"""Sets the is_primary_key of this DimensionAttributeVO.
 
         是否主键。
 
@@ -437,7 +437,7 @@ class DimensionAttributeVO:
 
     @property
     def is_biz_primary(self):
-        """Gets the is_biz_primary of this DimensionAttributeVO.
+        r"""Gets the is_biz_primary of this DimensionAttributeVO.
 
         是否业务主键。
 
@@ -448,7 +448,7 @@ class DimensionAttributeVO:
 
     @is_biz_primary.setter
     def is_biz_primary(self, is_biz_primary):
-        """Sets the is_biz_primary of this DimensionAttributeVO.
+        r"""Sets the is_biz_primary of this DimensionAttributeVO.
 
         是否业务主键。
 
@@ -459,7 +459,7 @@ class DimensionAttributeVO:
 
     @property
     def is_partition_key(self):
-        """Gets the is_partition_key of this DimensionAttributeVO.
+        r"""Gets the is_partition_key of this DimensionAttributeVO.
 
         是否分区。
 
@@ -470,7 +470,7 @@ class DimensionAttributeVO:
 
     @is_partition_key.setter
     def is_partition_key(self, is_partition_key):
-        """Sets the is_partition_key of this DimensionAttributeVO.
+        r"""Sets the is_partition_key of this DimensionAttributeVO.
 
         是否分区。
 
@@ -481,7 +481,7 @@ class DimensionAttributeVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this DimensionAttributeVO.
+        r"""Gets the ordinal of this DimensionAttributeVO.
 
         序号。
 
@@ -492,7 +492,7 @@ class DimensionAttributeVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this DimensionAttributeVO.
+        r"""Sets the ordinal of this DimensionAttributeVO.
 
         序号。
 
@@ -503,7 +503,7 @@ class DimensionAttributeVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this DimensionAttributeVO.
+        r"""Gets the not_null of this DimensionAttributeVO.
 
         是否不为空。
 
@@ -514,7 +514,7 @@ class DimensionAttributeVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this DimensionAttributeVO.
+        r"""Sets the not_null of this DimensionAttributeVO.
 
         是否不为空。
 
@@ -525,7 +525,7 @@ class DimensionAttributeVO:
 
     @property
     def stand_row_id(self):
-        """Gets the stand_row_id of this DimensionAttributeVO.
+        r"""Gets the stand_row_id of this DimensionAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -536,7 +536,7 @@ class DimensionAttributeVO:
 
     @stand_row_id.setter
     def stand_row_id(self, stand_row_id):
-        """Sets the stand_row_id of this DimensionAttributeVO.
+        r"""Sets the stand_row_id of this DimensionAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -547,7 +547,7 @@ class DimensionAttributeVO:
 
     @property
     def stand_row_name(self):
-        """Gets the stand_row_name of this DimensionAttributeVO.
+        r"""Gets the stand_row_name of this DimensionAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -558,7 +558,7 @@ class DimensionAttributeVO:
 
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
-        """Sets the stand_row_name of this DimensionAttributeVO.
+        r"""Sets the stand_row_name of this DimensionAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -569,7 +569,7 @@ class DimensionAttributeVO:
 
     @property
     def quality_infos(self):
-        """Gets the quality_infos of this DimensionAttributeVO.
+        r"""Gets the quality_infos of this DimensionAttributeVO.
 
         质量信息，只读。
 
@@ -580,7 +580,7 @@ class DimensionAttributeVO:
 
     @quality_infos.setter
     def quality_infos(self, quality_infos):
-        """Sets the quality_infos of this DimensionAttributeVO.
+        r"""Sets the quality_infos of this DimensionAttributeVO.
 
         质量信息，只读。
 
@@ -591,7 +591,7 @@ class DimensionAttributeVO:
 
     @property
     def secrecy_levels(self):
-        """Gets the secrecy_levels of this DimensionAttributeVO.
+        r"""Gets the secrecy_levels of this DimensionAttributeVO.
 
         密级
 
@@ -602,7 +602,7 @@ class DimensionAttributeVO:
 
     @secrecy_levels.setter
     def secrecy_levels(self, secrecy_levels):
-        """Sets the secrecy_levels of this DimensionAttributeVO.
+        r"""Sets the secrecy_levels of this DimensionAttributeVO.
 
         密级
 
@@ -613,7 +613,7 @@ class DimensionAttributeVO:
 
     @property
     def status(self):
-        """Gets the status of this DimensionAttributeVO.
+        r"""Gets the status of this DimensionAttributeVO.
 
         :return: The status of this DimensionAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -622,7 +622,7 @@ class DimensionAttributeVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DimensionAttributeVO.
+        r"""Sets the status of this DimensionAttributeVO.
 
         :param status: The status of this DimensionAttributeVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -631,7 +631,7 @@ class DimensionAttributeVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DimensionAttributeVO.
+        r"""Gets the create_time of this DimensionAttributeVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -642,7 +642,7 @@ class DimensionAttributeVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DimensionAttributeVO.
+        r"""Sets the create_time of this DimensionAttributeVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -653,7 +653,7 @@ class DimensionAttributeVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DimensionAttributeVO.
+        r"""Gets the update_time of this DimensionAttributeVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -664,7 +664,7 @@ class DimensionAttributeVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DimensionAttributeVO.
+        r"""Sets the update_time of this DimensionAttributeVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -675,7 +675,7 @@ class DimensionAttributeVO:
 
     @property
     def alias(self):
-        """Gets the alias of this DimensionAttributeVO.
+        r"""Gets the alias of this DimensionAttributeVO.
 
         别名
 
@@ -686,7 +686,7 @@ class DimensionAttributeVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this DimensionAttributeVO.
+        r"""Sets the alias of this DimensionAttributeVO.
 
         别名
 
@@ -697,7 +697,7 @@ class DimensionAttributeVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this DimensionAttributeVO.
+        r"""Gets the self_defined_fields of this DimensionAttributeVO.
 
         自定义项。
 
@@ -708,7 +708,7 @@ class DimensionAttributeVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this DimensionAttributeVO.
+        r"""Sets the self_defined_fields of this DimensionAttributeVO.
 
         自定义项。
 

@@ -25,7 +25,7 @@ class IAMAgency:
     }
 
     def __init__(self, trust_policy=None):
-        """IAMAgency
+        r"""IAMAgency
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class IAMAgency:
 
     @property
     def trust_policy(self):
-        """Gets the trust_policy of this IAMAgency.
+        r"""Gets the trust_policy of this IAMAgency.
 
         该策略JSON格式策略文档。
 
@@ -53,7 +53,7 @@ class IAMAgency:
 
     @trust_policy.setter
     def trust_policy(self, trust_policy):
-        """Sets the trust_policy of this IAMAgency.
+        r"""Sets the trust_policy of this IAMAgency.
 
         该策略JSON格式策略文档。
 

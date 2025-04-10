@@ -36,7 +36,7 @@ class RunEntitySentimentResponse(SdkResponse):
     }
 
     def __init__(self, content=None, entity=None, label=None, confidence=None, error_code=None, error_msg=None):
-        """RunEntitySentimentResponse
+        r"""RunEntitySentimentResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this RunEntitySentimentResponse.
+        r"""Gets the content of this RunEntitySentimentResponse.
 
         响应的文本
 
@@ -90,7 +90,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this RunEntitySentimentResponse.
+        r"""Sets the content of this RunEntitySentimentResponse.
 
         响应的文本
 
@@ -101,7 +101,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @property
     def entity(self):
-        """Gets the entity of this RunEntitySentimentResponse.
+        r"""Gets the entity of this RunEntitySentimentResponse.
 
         响应的实体
 
@@ -112,7 +112,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this RunEntitySentimentResponse.
+        r"""Sets the entity of this RunEntitySentimentResponse.
 
         响应的实体
 
@@ -123,7 +123,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @property
     def label(self):
-        """Gets the label of this RunEntitySentimentResponse.
+        r"""Gets the label of this RunEntitySentimentResponse.
 
         响应的情感标签，0表示负面，1表示非负面，2表示不相关
 
@@ -134,7 +134,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @label.setter
     def label(self, label):
-        """Sets the label of this RunEntitySentimentResponse.
+        r"""Sets the label of this RunEntitySentimentResponse.
 
         响应的情感标签，0表示负面，1表示非负面，2表示不相关
 
@@ -145,7 +145,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @property
     def confidence(self):
-        """Gets the confidence of this RunEntitySentimentResponse.
+        r"""Gets the confidence of this RunEntitySentimentResponse.
 
         该实体在文本中的情感label的置信度
 
@@ -156,7 +156,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this RunEntitySentimentResponse.
+        r"""Sets the confidence of this RunEntitySentimentResponse.
 
         该实体在文本中的情感label的置信度
 
@@ -167,7 +167,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunEntitySentimentResponse.
+        r"""Gets the error_code of this RunEntitySentimentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -178,7 +178,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunEntitySentimentResponse.
+        r"""Sets the error_code of this RunEntitySentimentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -189,7 +189,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunEntitySentimentResponse.
+        r"""Gets the error_msg of this RunEntitySentimentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -200,7 +200,7 @@ class RunEntitySentimentResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunEntitySentimentResponse.
+        r"""Sets the error_msg of this RunEntitySentimentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

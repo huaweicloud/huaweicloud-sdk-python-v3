@@ -27,7 +27,7 @@ class ChDatabaseConfigsInfo:
     }
 
     def __init__(self, param_name=None, value=None):
-        """ChDatabaseConfigsInfo
+        r"""ChDatabaseConfigsInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChDatabaseConfigsInfo:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ChDatabaseConfigsInfo.
+        r"""Gets the param_name of this ChDatabaseConfigsInfo.
 
         库同步配置参数名。可通过“查询ClickHouse数据同步的库参数配置”接口查询。
 
@@ -59,7 +59,7 @@ class ChDatabaseConfigsInfo:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ChDatabaseConfigsInfo.
+        r"""Sets the param_name of this ChDatabaseConfigsInfo.
 
         库同步配置参数名。可通过“查询ClickHouse数据同步的库参数配置”接口查询。
 
@@ -70,7 +70,7 @@ class ChDatabaseConfigsInfo:
 
     @property
     def value(self):
-        """Gets the value of this ChDatabaseConfigsInfo.
+        r"""Gets the value of this ChDatabaseConfigsInfo.
 
         库同步配置参数值。
 
@@ -81,7 +81,7 @@ class ChDatabaseConfigsInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ChDatabaseConfigsInfo.
+        r"""Sets the value of this ChDatabaseConfigsInfo.
 
         库同步配置参数值。
 

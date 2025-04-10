@@ -30,7 +30,7 @@ class ListNoticeRulesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListNoticeRulesResponse
+        r"""ListNoticeRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNoticeRulesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListNoticeRulesResponse.
+        r"""Gets the api_version of this ListNoticeRulesResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ListNoticeRulesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListNoticeRulesResponse.
+        r"""Sets the api_version of this ListNoticeRulesResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ListNoticeRulesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListNoticeRulesResponse.
+        r"""Gets the kind of this ListNoticeRulesResponse.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -91,7 +91,7 @@ class ListNoticeRulesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListNoticeRulesResponse.
+        r"""Sets the kind of this ListNoticeRulesResponse.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -102,7 +102,7 @@ class ListNoticeRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListNoticeRulesResponse.
+        r"""Gets the items of this ListNoticeRulesResponse.
 
         请求数据。
 
@@ -113,7 +113,7 @@ class ListNoticeRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListNoticeRulesResponse.
+        r"""Sets the items of this ListNoticeRulesResponse.
 
         请求数据。
 

@@ -28,7 +28,7 @@ class ShowJobListByProjectIdResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None, total=None):
-        """ShowJobListByProjectIdResponse
+        r"""ShowJobListByProjectIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobListByProjectIdResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ShowJobListByProjectIdResponse.
+        r"""Gets the jobs of this ShowJobListByProjectIdResponse.
 
         任务列表
 
@@ -62,7 +62,7 @@ class ShowJobListByProjectIdResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ShowJobListByProjectIdResponse.
+        r"""Sets the jobs of this ShowJobListByProjectIdResponse.
 
         任务列表
 
@@ -73,7 +73,7 @@ class ShowJobListByProjectIdResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowJobListByProjectIdResponse.
+        r"""Gets the total of this ShowJobListByProjectIdResponse.
 
         任务总数
 
@@ -84,7 +84,7 @@ class ShowJobListByProjectIdResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowJobListByProjectIdResponse.
+        r"""Sets the total of this ShowJobListByProjectIdResponse.
 
         任务总数
 

@@ -33,7 +33,7 @@ class AdditionalParamsResp:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, security_group_id=None, ciphering_algorithm=None, forwarding_info=None):
-        """AdditionalParamsResp
+        r"""AdditionalParamsResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AdditionalParamsResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AdditionalParamsResp.
+        r"""Gets the vpc_id of this AdditionalParamsResp.
 
         **参数说明**：企业版实例的VPCID 
 
@@ -82,7 +82,7 @@ class AdditionalParamsResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AdditionalParamsResp.
+        r"""Sets the vpc_id of this AdditionalParamsResp.
 
         **参数说明**：企业版实例的VPCID 
 
@@ -93,7 +93,7 @@ class AdditionalParamsResp:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AdditionalParamsResp.
+        r"""Gets the subnet_id of this AdditionalParamsResp.
 
         **参数说明**：企业版实例的子网ID 
 
@@ -104,7 +104,7 @@ class AdditionalParamsResp:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AdditionalParamsResp.
+        r"""Sets the subnet_id of this AdditionalParamsResp.
 
         **参数说明**：企业版实例的子网ID 
 
@@ -115,7 +115,7 @@ class AdditionalParamsResp:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this AdditionalParamsResp.
+        r"""Gets the security_group_id of this AdditionalParamsResp.
 
         **参数说明**：企业版实例的安全组ID 
 
@@ -126,7 +126,7 @@ class AdditionalParamsResp:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this AdditionalParamsResp.
+        r"""Sets the security_group_id of this AdditionalParamsResp.
 
         **参数说明**：企业版实例的安全组ID 
 
@@ -137,7 +137,7 @@ class AdditionalParamsResp:
 
     @property
     def ciphering_algorithm(self):
-        """Gets the ciphering_algorithm of this AdditionalParamsResp.
+        r"""Gets the ciphering_algorithm of this AdditionalParamsResp.
 
         **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
@@ -148,7 +148,7 @@ class AdditionalParamsResp:
 
     @ciphering_algorithm.setter
     def ciphering_algorithm(self, ciphering_algorithm):
-        """Sets the ciphering_algorithm of this AdditionalParamsResp.
+        r"""Sets the ciphering_algorithm of this AdditionalParamsResp.
 
         **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
@@ -159,7 +159,7 @@ class AdditionalParamsResp:
 
     @property
     def forwarding_info(self):
-        """Gets the forwarding_info of this AdditionalParamsResp.
+        r"""Gets the forwarding_info of this AdditionalParamsResp.
 
         :return: The forwarding_info of this AdditionalParamsResp.
         :rtype: :class:`huaweicloudsdkiotdm.v5.ForwardingInfo`
@@ -168,7 +168,7 @@ class AdditionalParamsResp:
 
     @forwarding_info.setter
     def forwarding_info(self, forwarding_info):
-        """Sets the forwarding_info of this AdditionalParamsResp.
+        r"""Sets the forwarding_info of this AdditionalParamsResp.
 
         :param forwarding_info: The forwarding_info of this AdditionalParamsResp.
         :type forwarding_info: :class:`huaweicloudsdkiotdm.v5.ForwardingInfo`

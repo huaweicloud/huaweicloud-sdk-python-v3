@@ -35,7 +35,7 @@ class ListFlavorsDetailsRequest:
     }
 
     def __init__(self, x_language=None, version=None, spec_code=None, ha_mode=None, limit=None, offset=None):
-        """ListFlavorsDetailsRequest
+        r"""ListFlavorsDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListFlavorsDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListFlavorsDetailsRequest.
+        r"""Gets the x_language of this ListFlavorsDetailsRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ListFlavorsDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListFlavorsDetailsRequest.
+        r"""Sets the x_language of this ListFlavorsDetailsRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ListFlavorsDetailsRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListFlavorsDetailsRequest.
+        r"""Gets the version of this ListFlavorsDetailsRequest.
 
         数据库版本号。
 
@@ -111,7 +111,7 @@ class ListFlavorsDetailsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListFlavorsDetailsRequest.
+        r"""Sets the version of this ListFlavorsDetailsRequest.
 
         数据库版本号。
 
@@ -122,7 +122,7 @@ class ListFlavorsDetailsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListFlavorsDetailsRequest.
+        r"""Gets the spec_code of this ListFlavorsDetailsRequest.
 
         规格编码
 
@@ -133,7 +133,7 @@ class ListFlavorsDetailsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListFlavorsDetailsRequest.
+        r"""Sets the spec_code of this ListFlavorsDetailsRequest.
 
         规格编码
 
@@ -144,7 +144,7 @@ class ListFlavorsDetailsRequest:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this ListFlavorsDetailsRequest.
+        r"""Gets the ha_mode of this ListFlavorsDetailsRequest.
 
         实例类型  集中式centralization_standard  分布式enterprise
 
@@ -155,7 +155,7 @@ class ListFlavorsDetailsRequest:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this ListFlavorsDetailsRequest.
+        r"""Sets the ha_mode of this ListFlavorsDetailsRequest.
 
         实例类型  集中式centralization_standard  分布式enterprise
 
@@ -166,7 +166,7 @@ class ListFlavorsDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlavorsDetailsRequest.
+        r"""Gets the limit of this ListFlavorsDetailsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -177,7 +177,7 @@ class ListFlavorsDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlavorsDetailsRequest.
+        r"""Sets the limit of this ListFlavorsDetailsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -188,7 +188,7 @@ class ListFlavorsDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlavorsDetailsRequest.
+        r"""Gets the offset of this ListFlavorsDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -199,7 +199,7 @@ class ListFlavorsDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlavorsDetailsRequest.
+        r"""Sets the offset of this ListFlavorsDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 

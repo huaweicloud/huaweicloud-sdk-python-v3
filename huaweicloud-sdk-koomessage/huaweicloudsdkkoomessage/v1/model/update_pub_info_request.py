@@ -27,7 +27,7 @@ class UpdatePubInfoRequest:
     }
 
     def __init__(self, pub_id=None, body=None):
-        """UpdatePubInfoRequest
+        r"""UpdatePubInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePubInfoRequest:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this UpdatePubInfoRequest.
+        r"""Gets the pub_id of this UpdatePubInfoRequest.
 
         服务号ID。
 
@@ -60,7 +60,7 @@ class UpdatePubInfoRequest:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this UpdatePubInfoRequest.
+        r"""Sets the pub_id of this UpdatePubInfoRequest.
 
         服务号ID。
 
@@ -71,7 +71,7 @@ class UpdatePubInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePubInfoRequest.
+        r"""Gets the body of this UpdatePubInfoRequest.
 
         :return: The body of this UpdatePubInfoRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePubInfoRequestBody`
@@ -80,7 +80,7 @@ class UpdatePubInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePubInfoRequest.
+        r"""Sets the body of this UpdatePubInfoRequest.
 
         :param body: The body of this UpdatePubInfoRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UpdatePubInfoRequestBody`

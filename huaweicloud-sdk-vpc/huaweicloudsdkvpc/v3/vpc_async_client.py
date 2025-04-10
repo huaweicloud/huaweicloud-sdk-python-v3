@@ -34,7 +34,7 @@ class VpcAsyncClient(Client):
         return client_builder
 
     def add_security_groups_async(self, request):
-        """端口插入安全组
+        r"""端口插入安全组
 
         端口插入安全组
         
@@ -101,7 +101,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def add_sources_to_traffic_mirror_session_async(self, request):
-        """流量镜像会话添加镜像源
+        r"""流量镜像会话添加镜像源
 
         流量镜像会话添加镜像源
         
@@ -168,7 +168,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_port_tags_async(self, request):
-        """批量添加端口资源标签
+        r"""批量添加端口资源标签
 
         为指定的端口批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
@@ -237,7 +237,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_security_group_rules_async(self, request):
-        """批量创建安全组规则
+        r"""批量创建安全组规则
 
         在特定安全组下批量创建安全组规则
         
@@ -304,7 +304,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_sub_network_interface_async(self, request):
-        """批量创建辅助弹性网卡
+        r"""批量创建辅助弹性网卡
 
         批量创建辅助弹性网卡
         
@@ -369,7 +369,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_delete_port_tags_async(self, request):
-        """批量删除端口资源标签
+        r"""批量删除端口资源标签
 
         为指定的端口资源实例批量删除标签。
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
@@ -438,7 +438,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def count_ports_by_tags_async(self, request):
-        """查询端口资源实例数量
+        r"""查询端口资源实例数量
 
         使用标签过滤查询端口实例数量。
         该接口在华南-深圳上线。
@@ -504,7 +504,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_port_tag_async(self, request):
-        """添加端口资源标签
+        r"""添加端口资源标签
 
         给指定端口资源实例增加标签信息
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
@@ -573,7 +573,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_security_group_async(self, request):
-        """创建安全组
+        r"""创建安全组
 
         创建安全组
         
@@ -638,7 +638,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_security_group_rule_async(self, request):
-        """创建安全组规则
+        r"""创建安全组规则
 
         创建安全组规则
         
@@ -703,7 +703,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_sub_network_interface_async(self, request):
-        """创建辅助弹性网卡
+        r"""创建辅助弹性网卡
 
         创建辅助弹性网卡
         
@@ -768,7 +768,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_traffic_mirror_filter_async(self, request):
-        """创建流量镜像筛选条件
+        r"""创建流量镜像筛选条件
 
         创建流量镜像筛选条件
         
@@ -833,7 +833,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_traffic_mirror_filter_rule_async(self, request):
-        """创建流量镜像筛选规则
+        r"""创建流量镜像筛选规则
 
         创建流量镜像筛选规则
         
@@ -898,7 +898,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_traffic_mirror_session_async(self, request):
-        """创建流量镜像会话
+        r"""创建流量镜像会话
 
         创建流量镜像会话
         
@@ -963,7 +963,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_port_tag_async(self, request):
-        """删除端口资源标签
+        r"""删除端口资源标签
 
         删除指定端口的标签信息
         该接口为幂等接口：删除的key不存在报404，key不能为空或者空字符串。
@@ -1032,7 +1032,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_security_group_async(self, request):
-        """删除安全组
+        r"""删除安全组
 
         删除安全组
         
@@ -1097,7 +1097,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_security_group_rule_async(self, request):
-        """删除安全组规则
+        r"""删除安全组规则
 
         删除安全组规则
         
@@ -1162,7 +1162,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_sub_network_interface_async(self, request):
-        """删除辅助弹性网卡
+        r"""删除辅助弹性网卡
 
         删除辅助弹性网卡
         
@@ -1227,7 +1227,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_traffic_mirror_filter_async(self, request):
-        """删除流量镜像筛选条件
+        r"""删除流量镜像筛选条件
 
         删除流量镜像筛选条件
         
@@ -1292,7 +1292,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_traffic_mirror_filter_rule_async(self, request):
-        """删除流量镜像筛选规则
+        r"""删除流量镜像筛选规则
 
         删除流量镜像筛选规则
         
@@ -1357,7 +1357,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_traffic_mirror_session_async(self, request):
-        """删除流量镜像会话
+        r"""删除流量镜像会话
 
         删除流量镜像会话
         
@@ -1422,7 +1422,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_port_tags_async(self, request):
-        """查询端口项目标签
+        r"""查询端口项目标签
 
         查询租户在指定Project中实例类型的所有资源标签集合。
         该接口在华南-深圳上线。
@@ -1490,7 +1490,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_ports_by_tags_async(self, request):
-        """查询端口资源实例列表
+        r"""查询端口资源实例列表
 
         使用标签过滤查询端口。
         该接口在华南-深圳上线。
@@ -1560,7 +1560,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_security_group_rules_async(self, request):
-        """查询安全组规则列表
+        r"""查询安全组规则列表
 
         查询安全组规则列表
         
@@ -1659,7 +1659,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_security_groups_async(self, request):
-        """查询安全组列表
+        r"""查询安全组列表
 
         查询某租户下的安全组列表
         
@@ -1737,7 +1737,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_sub_network_interfaces_async(self, request):
-        """查询租户下辅助弹性网卡列表
+        r"""查询租户下辅助弹性网卡列表
 
         查询辅助弹性网卡列表，单次查询最多返回2000条数据
         
@@ -1825,7 +1825,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_traffic_mirror_filter_rules_async(self, request):
-        """查询流量镜像筛选规则列表
+        r"""查询流量镜像筛选规则列表
 
         查询流量镜像筛选规则列表
         
@@ -1914,7 +1914,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_traffic_mirror_filters_async(self, request):
-        """查询流量镜像筛选条件列表
+        r"""查询流量镜像筛选条件列表
 
         查询流量镜像筛选条件列表
         
@@ -1991,7 +1991,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_traffic_mirror_sessions_async(self, request):
-        """查询流量镜像会话列表
+        r"""查询流量镜像会话列表
 
         查询流量镜像会话列表
         
@@ -2084,7 +2084,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def migrate_sub_network_interface_async(self, request):
-        """迁移辅助弹性网卡
+        r"""迁移辅助弹性网卡
 
         批量迁移辅助弹性网卡
         
@@ -2149,7 +2149,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def remove_security_groups_async(self, request):
-        """端口移除安全组
+        r"""端口移除安全组
 
         端口移除安全组
         
@@ -2216,7 +2216,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def remove_sources_from_traffic_mirror_session_async(self, request):
-        """流量镜像会话移除镜像源
+        r"""流量镜像会话移除镜像源
 
         流量镜像会话移除镜像源
         
@@ -2283,7 +2283,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_port_tags_async(self, request):
-        """查询端口资源标签
+        r"""查询端口资源标签
 
         查询指定端口的标签信息。
         该接口在华南-深圳上线。
@@ -2349,7 +2349,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_security_group_async(self, request):
-        """查询安全组
+        r"""查询安全组
 
         查询单个安全组详情
         
@@ -2414,7 +2414,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_security_group_rule_async(self, request):
-        """查询安全组规则
+        r"""查询安全组规则
 
         查询单个安全组规则
         
@@ -2479,7 +2479,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_sub_network_interface_async(self, request):
-        """查询租户下辅助弹性网卡
+        r"""查询租户下辅助弹性网卡
 
         查询辅助弹性网卡详情
         
@@ -2544,7 +2544,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_sub_network_interfaces_quantity_async(self, request):
-        """查询租户下辅助弹性网卡数目
+        r"""查询租户下辅助弹性网卡数目
 
         查询辅助弹性网卡数目
         
@@ -2607,7 +2607,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_traffic_mirror_filter_async(self, request):
-        """查询流量镜像筛选条件详情
+        r"""查询流量镜像筛选条件详情
 
         查询流量镜像筛选条件详情
         
@@ -2672,7 +2672,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_traffic_mirror_filter_rule_async(self, request):
-        """查询流量镜像筛选规则详情
+        r"""查询流量镜像筛选规则详情
 
         查询流量镜像筛选规则详情
         
@@ -2737,7 +2737,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_traffic_mirror_session_async(self, request):
-        """查询流量镜像会话详情
+        r"""查询流量镜像会话详情
 
         查询流量镜像会话详情
         
@@ -2802,7 +2802,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_security_group_async(self, request):
-        """更新安全组
+        r"""更新安全组
 
         更新安全组
         
@@ -2869,7 +2869,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_sub_network_interface_async(self, request):
-        """更新辅助弹性网卡
+        r"""更新辅助弹性网卡
 
         更新辅助弹性网卡
         
@@ -2936,7 +2936,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_traffic_mirror_filter_async(self, request):
-        """更新流量镜像筛选条件
+        r"""更新流量镜像筛选条件
 
         更新流量镜像筛选条件
         
@@ -3003,7 +3003,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_traffic_mirror_filter_rule_async(self, request):
-        """更新流量镜像筛选规则
+        r"""更新流量镜像筛选规则
 
         更新流量镜像筛选规则
         
@@ -3070,7 +3070,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_traffic_mirror_session_async(self, request):
-        """更新流量镜像会话
+        r"""更新流量镜像会话
 
         更新流量镜像会话
         
@@ -3137,7 +3137,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def add_firewall_rules_async(self, request):
-        """网络ACL插入规则
+        r"""网络ACL插入规则
 
         网络ACL插入规则
         
@@ -3204,7 +3204,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def associate_subnet_firewall_async(self, request):
-        """网络ACL绑定子网
+        r"""网络ACL绑定子网
 
         网络ACL绑定子网
         
@@ -3271,7 +3271,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_firewall_tags_async(self, request):
-        """批量添加ACL资源标签
+        r"""批量添加ACL资源标签
 
         为指定的网络ACL资源实例批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
@@ -3339,7 +3339,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_delete_firewall_tags_async(self, request):
-        """批量删除ACL资源标签
+        r"""批量删除ACL资源标签
 
         为指定的网络ACL资源实例批量删除标签。
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
@@ -3407,7 +3407,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def count_firewalls_by_tags_async(self, request):
-        """查询ACL资源实例数量
+        r"""查询ACL资源实例数量
 
         使用标签过滤查询ACL实例数量。
         
@@ -3472,7 +3472,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_firewall_async(self, request):
-        """创建网络ACL
+        r"""创建网络ACL
 
         创建网络ACL
         
@@ -3537,7 +3537,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_firewall_tag_async(self, request):
-        """添加ACL资源标签
+        r"""添加ACL资源标签
 
         给指定IP地址组资源实例增加标签信息
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
@@ -3605,7 +3605,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_firewall_async(self, request):
-        """删除网络ACL
+        r"""删除网络ACL
 
         删除网络ACL
         
@@ -3670,7 +3670,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_firewall_tag_async(self, request):
-        """删除ACL资源标签
+        r"""删除ACL资源标签
 
         删除指定IP地址组资源实例的标签信息
         该接口为幂等接口：删除的key不存在报404，key不能为空或者空字符串
@@ -3738,7 +3738,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def disassociate_subnet_firewall_async(self, request):
-        """网络ACL解绑子网
+        r"""网络ACL解绑子网
 
         网络ACL解绑子网
         
@@ -3805,7 +3805,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_firewall_async(self, request):
-        """查询网络ACL列表
+        r"""查询网络ACL列表
 
         查询网络ACL列表
         
@@ -3885,7 +3885,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_firewall_tags_async(self, request):
-        """查询ACL项目标签
+        r"""查询ACL项目标签
 
         查询租户在指定Project中实例类型的所有资源标签集合
         
@@ -3952,7 +3952,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_firewalls_by_tags_async(self, request):
-        """查询ACL资源实例列表
+        r"""查询ACL资源实例列表
 
         使用标签过滤查询ACL实例。
         
@@ -4021,7 +4021,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def remove_firewall_rules_async(self, request):
-        """网络ACL移除规则
+        r"""网络ACL移除规则
 
         网络ACL移除规则
         
@@ -4088,7 +4088,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_firewall_async(self, request):
-        """查询网络ACL详情
+        r"""查询网络ACL详情
 
         查询网络ACL详情
         
@@ -4153,7 +4153,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_firewall_tags_async(self, request):
-        """查询ACL资源标签
+        r"""查询ACL资源标签
 
         查询指定ACL实例的标签信息
         
@@ -4218,7 +4218,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_firewall_async(self, request):
-        """更新网络ACL
+        r"""更新网络ACL
 
         更新网络ACL
         
@@ -4285,7 +4285,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_firewall_rules_async(self, request):
-        """网络ACL更新规则
+        r"""网络ACL更新规则
 
         网络ACL更新规则
         
@@ -4352,7 +4352,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def add_clouddcn_subnets_tags_async(self, request):
-        """添加Clouddcn子网标签
+        r"""添加Clouddcn子网标签
 
         添加Clouddcn子网的标签
         
@@ -4419,7 +4419,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_clouddcn_subnets_tags_async(self, request):
-        """批量添加Clouddcn子网标签
+        r"""批量添加Clouddcn子网标签
 
         批量添加Clouddcn子网的标签
         
@@ -4486,7 +4486,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_delete_clouddcn_subnets_tags_async(self, request):
-        """批量删除Clouddcn子网标签
+        r"""批量删除Clouddcn子网标签
 
         批量删除Clouddcn子网的标签
         
@@ -4553,7 +4553,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_clouddcn_subnet_async(self, request):
-        """创建clouddcn子网
+        r"""创建clouddcn子网
 
         创建clouddcn子网。
         
@@ -4618,7 +4618,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_clouddcn_subnet_async(self, request):
-        """删除clouddcn子网
+        r"""删除clouddcn子网
 
         删除clouddcn子网
         
@@ -4683,7 +4683,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_clouddcn_subnets_tag_async(self, request):
-        """删除Clouddcn子网标签
+        r"""删除Clouddcn子网标签
 
         删除Clouddcn子网的标签
         
@@ -4750,7 +4750,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_clouddcn_subnets_async(self, request):
-        """查询clouddcn子网列表
+        r"""查询clouddcn子网列表
 
         查询clouddcn子网列表
         
@@ -4819,7 +4819,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_clouddcn_subnets_count_filter_tags_async(self, request):
-        """查询资源实例列表数目
+        r"""查询资源实例列表数目
 
         查询资源实例列表数目
         
@@ -4884,7 +4884,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_clouddcn_subnets_filter_tags_async(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         查询资源实例列表
         
@@ -4953,7 +4953,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_clouddcn_subnets_tags_async(self, request):
-        """查询Clouddcn子网项目标签
+        r"""查询Clouddcn子网项目标签
 
         查询Clouddcn子网的项目标签
         
@@ -5016,7 +5016,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_clouddcn_subnet_async(self, request):
-        """查询clouddcn子网
+        r"""查询clouddcn子网
 
         查询clouddcn子网详情。
         
@@ -5081,7 +5081,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_clouddcn_subnets_tags_async(self, request):
-        """查询Clouddcn子网标签
+        r"""查询Clouddcn子网标签
 
         查询Clouddcn子网的标签
         
@@ -5146,7 +5146,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_clouddcn_subnet_async(self, request):
-        """更新clouddcn子网
+        r"""更新clouddcn子网
 
         更新clouddcn子网。
         
@@ -5213,7 +5213,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_address_group_async(self, request):
-        """创建地址组
+        r"""创建地址组
 
         创建地址组
         
@@ -5278,7 +5278,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_address_group_async(self, request):
-        """删除地址组
+        r"""删除地址组
 
         删除地址组，非强制删除，删除前请确保未被其他资源引用
         
@@ -5343,7 +5343,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_ip_address_group_force_async(self, request):
-        """强制删除地址组
+        r"""强制删除地址组
 
         强制删除地址组，删除的地址组与安全组规则关联时，会删除地址组与关联的安全组规则。
         
@@ -5408,7 +5408,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_address_group_async(self, request):
-        """查询地址组列表
+        r"""查询地址组列表
 
         查询地址组列表，根据过滤条件进行过滤。
         
@@ -5488,7 +5488,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_address_group_async(self, request):
-        """查询地址组
+        r"""查询地址组
 
         查询地址组详情。
         
@@ -5553,7 +5553,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_address_group_async(self, request):
-        """更新地址组
+        r"""更新地址组
 
         更新地址组。
         
@@ -5620,7 +5620,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def add_vpc_extend_cidr_async(self, request):
-        """添加VPC扩展网段
+        r"""添加VPC扩展网段
 
         添加VPC的扩展网段
         
@@ -5687,7 +5687,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_vpc_async(self, request):
-        """创建VPC
+        r"""创建VPC
 
         创建虚拟私有云
         
@@ -5752,7 +5752,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_vpc_async(self, request):
-        """删除VPC
+        r"""删除VPC
 
         删除VPC
         
@@ -5817,7 +5817,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_vpcs_async(self, request):
-        """查询VPC列表
+        r"""查询VPC列表
 
         查询vpc列表
         
@@ -5898,7 +5898,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def remove_vpc_extend_cidr_async(self, request):
-        """移除VPC扩展网段
+        r"""移除VPC扩展网段
 
         移除VPC扩展网段
         
@@ -5965,7 +5965,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_vpc_async(self, request):
-        """查询VPC详情
+        r"""查询VPC详情
 
         查询vpc详情
         
@@ -6030,7 +6030,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_vpc_async(self, request):
-        """更新VPC
+        r"""更新VPC
 
         更新vpc
         

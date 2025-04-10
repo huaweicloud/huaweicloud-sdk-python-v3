@@ -25,7 +25,7 @@ class ListObsBucketRequest:
     }
 
     def __init__(self, type=None):
-        """ListObsBucketRequest
+        r"""ListObsBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListObsBucketRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListObsBucketRequest.
+        r"""Gets the type of this ListObsBucketRequest.
 
         桶类型。OBJECT：桶列表；PFS：并行文件系统。不传返回所有
 
@@ -54,7 +54,7 @@ class ListObsBucketRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListObsBucketRequest.
+        r"""Sets the type of this ListObsBucketRequest.
 
         桶类型。OBJECT：桶列表；PFS：并行文件系统。不传返回所有
 

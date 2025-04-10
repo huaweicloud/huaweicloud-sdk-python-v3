@@ -27,7 +27,7 @@ class NerRequest:
     }
 
     def __init__(self, text=None, lang=None):
-        """NerRequest
+        r"""NerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NerRequest:
 
     @property
     def text(self):
-        """Gets the text of this NerRequest.
+        r"""Gets the text of this NerRequest.
 
         待分析文本，中文长度为1~512，英文和西班牙文长度为1~2000，文本编码为UTF-8。
 
@@ -60,7 +60,7 @@ class NerRequest:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this NerRequest.
+        r"""Sets the text of this NerRequest.
 
         待分析文本，中文长度为1~512，英文和西班牙文长度为1~2000，文本编码为UTF-8。
 
@@ -71,7 +71,7 @@ class NerRequest:
 
     @property
     def lang(self):
-        """Gets the lang of this NerRequest.
+        r"""Gets the lang of this NerRequest.
 
         支持的文本语言类型，目前支持中文（zh）,英文（en）,和西班牙文（es），默认为中文。
 
@@ -82,7 +82,7 @@ class NerRequest:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this NerRequest.
+        r"""Sets the lang of this NerRequest.
 
         支持的文本语言类型，目前支持中文（zh）,英文（en）,和西班牙文（es），默认为中文。
 

@@ -27,7 +27,7 @@ class SetHostPrivilegeRequestV3:
     }
 
     def __init__(self, user_name=None, hosts=None):
-        """SetHostPrivilegeRequestV3
+        r"""SetHostPrivilegeRequestV3
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SetHostPrivilegeRequestV3:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SetHostPrivilegeRequestV3.
+        r"""Gets the user_name of this SetHostPrivilegeRequestV3.
 
         数据库用户名
 
@@ -59,7 +59,7 @@ class SetHostPrivilegeRequestV3:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SetHostPrivilegeRequestV3.
+        r"""Sets the user_name of this SetHostPrivilegeRequestV3.
 
         数据库用户名
 
@@ -70,7 +70,7 @@ class SetHostPrivilegeRequestV3:
 
     @property
     def hosts(self):
-        """Gets the hosts of this SetHostPrivilegeRequestV3.
+        r"""Gets the hosts of this SetHostPrivilegeRequestV3.
 
         host信息
 
@@ -81,7 +81,7 @@ class SetHostPrivilegeRequestV3:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this SetHostPrivilegeRequestV3.
+        r"""Sets the hosts of this SetHostPrivilegeRequestV3.
 
         host信息
 

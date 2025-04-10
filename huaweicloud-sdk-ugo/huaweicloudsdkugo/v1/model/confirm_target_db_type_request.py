@@ -25,7 +25,7 @@ class ConfirmTargetDbTypeRequest:
     }
 
     def __init__(self, body=None):
-        """ConfirmTargetDbTypeRequest
+        r"""ConfirmTargetDbTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfirmTargetDbTypeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmTargetDbTypeRequest.
+        r"""Gets the body of this ConfirmTargetDbTypeRequest.
 
         :return: The body of this ConfirmTargetDbTypeRequest.
         :rtype: :class:`huaweicloudsdkugo.v1.ConfirmTargetDBReq`
@@ -52,7 +52,7 @@ class ConfirmTargetDbTypeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmTargetDbTypeRequest.
+        r"""Sets the body of this ConfirmTargetDbTypeRequest.
 
         :param body: The body of this ConfirmTargetDbTypeRequest.
         :type body: :class:`huaweicloudsdkugo.v1.ConfirmTargetDBReq`

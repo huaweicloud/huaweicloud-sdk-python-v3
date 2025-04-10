@@ -27,7 +27,7 @@ class DeleteLinkRequest:
     }
 
     def __init__(self, cluster_id=None, link_name=None):
-        """DeleteLinkRequest
+        r"""DeleteLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLinkRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteLinkRequest.
+        r"""Gets the cluster_id of this DeleteLinkRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class DeleteLinkRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteLinkRequest.
+        r"""Sets the cluster_id of this DeleteLinkRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class DeleteLinkRequest:
 
     @property
     def link_name(self):
-        """Gets the link_name of this DeleteLinkRequest.
+        r"""Gets the link_name of this DeleteLinkRequest.
 
         需要删除的连接名
 
@@ -81,7 +81,7 @@ class DeleteLinkRequest:
 
     @link_name.setter
     def link_name(self, link_name):
-        """Sets the link_name of this DeleteLinkRequest.
+        r"""Sets the link_name of this DeleteLinkRequest.
 
         需要删除的连接名
 

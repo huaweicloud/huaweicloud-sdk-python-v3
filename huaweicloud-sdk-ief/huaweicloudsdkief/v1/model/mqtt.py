@@ -29,7 +29,7 @@ class Mqtt:
     }
 
     def __init__(self, bind_addr=None, port=None, type=None):
-        """Mqtt
+        r"""Mqtt
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Mqtt:
 
     @property
     def bind_addr(self):
-        """Gets the bind_addr of this Mqtt.
+        r"""Gets the bind_addr of this Mqtt.
 
         MQTT监听地址，根据type取值确定。
 
@@ -65,7 +65,7 @@ class Mqtt:
 
     @bind_addr.setter
     def bind_addr(self, bind_addr):
-        """Sets the bind_addr of this Mqtt.
+        r"""Sets the bind_addr of this Mqtt.
 
         MQTT监听地址，根据type取值确定。
 
@@ -76,7 +76,7 @@ class Mqtt:
 
     @property
     def port(self):
-        """Gets the port of this Mqtt.
+        r"""Gets the port of this Mqtt.
 
         端口号。
 
@@ -87,7 +87,7 @@ class Mqtt:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Mqtt.
+        r"""Sets the port of this Mqtt.
 
         端口号。
 
@@ -98,7 +98,7 @@ class Mqtt:
 
     @property
     def type(self):
-        """Gets the type of this Mqtt.
+        r"""Gets the type of this Mqtt.
 
         类型。枚举值： - nic：网卡类型 - ip：IP类型
 
@@ -109,7 +109,7 @@ class Mqtt:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Mqtt.
+        r"""Sets the type of this Mqtt.
 
         类型。枚举值： - nic：网卡类型 - ip：IP类型
 

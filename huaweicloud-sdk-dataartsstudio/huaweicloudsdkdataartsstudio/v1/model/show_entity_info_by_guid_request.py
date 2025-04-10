@@ -27,7 +27,7 @@ class ShowEntityInfoByGuidRequest:
     }
 
     def __init__(self, workspace=None, guid=None):
-        """ShowEntityInfoByGuidRequest
+        r"""ShowEntityInfoByGuidRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEntityInfoByGuidRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowEntityInfoByGuidRequest.
+        r"""Gets the workspace of this ShowEntityInfoByGuidRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowEntityInfoByGuidRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowEntityInfoByGuidRequest.
+        r"""Sets the workspace of this ShowEntityInfoByGuidRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowEntityInfoByGuidRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowEntityInfoByGuidRequest.
+        r"""Gets the guid of this ShowEntityInfoByGuidRequest.
 
         资产的guid
 
@@ -81,7 +81,7 @@ class ShowEntityInfoByGuidRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowEntityInfoByGuidRequest.
+        r"""Sets the guid of this ShowEntityInfoByGuidRequest.
 
         资产的guid
 

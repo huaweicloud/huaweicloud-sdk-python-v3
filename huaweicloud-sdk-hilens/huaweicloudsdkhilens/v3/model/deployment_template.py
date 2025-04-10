@@ -27,7 +27,7 @@ class DeploymentTemplate:
     }
 
     def __init__(self, configs=None, apps=None):
-        """DeploymentTemplate
+        r"""DeploymentTemplate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeploymentTemplate:
 
     @property
     def configs(self):
-        """Gets the configs of this DeploymentTemplate.
+        r"""Gets the configs of this DeploymentTemplate.
 
         :return: The configs of this DeploymentTemplate.
         :rtype: :class:`huaweicloudsdkhilens.v3.PodConfig`
@@ -59,7 +59,7 @@ class DeploymentTemplate:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this DeploymentTemplate.
+        r"""Sets the configs of this DeploymentTemplate.
 
         :param configs: The configs of this DeploymentTemplate.
         :type configs: :class:`huaweicloudsdkhilens.v3.PodConfig`
@@ -68,7 +68,7 @@ class DeploymentTemplate:
 
     @property
     def apps(self):
-        """Gets the apps of this DeploymentTemplate.
+        r"""Gets the apps of this DeploymentTemplate.
 
         部署应用列表
 
@@ -79,7 +79,7 @@ class DeploymentTemplate:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this DeploymentTemplate.
+        r"""Sets the apps of this DeploymentTemplate.
 
         部署应用列表
 

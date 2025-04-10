@@ -33,7 +33,7 @@ class ListSeveritiesRequest:
     }
 
     def __init__(self, product_category_id=None, business_type_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListSeveritiesRequest
+        r"""ListSeveritiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListSeveritiesRequest:
 
     @property
     def product_category_id(self):
-        """Gets the product_category_id of this ListSeveritiesRequest.
+        r"""Gets the product_category_id of this ListSeveritiesRequest.
 
         产品类型id
 
@@ -80,7 +80,7 @@ class ListSeveritiesRequest:
 
     @product_category_id.setter
     def product_category_id(self, product_category_id):
-        """Sets the product_category_id of this ListSeveritiesRequest.
+        r"""Sets the product_category_id of this ListSeveritiesRequest.
 
         产品类型id
 
@@ -91,7 +91,7 @@ class ListSeveritiesRequest:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this ListSeveritiesRequest.
+        r"""Gets the business_type_id of this ListSeveritiesRequest.
 
         问题类型id
 
@@ -102,7 +102,7 @@ class ListSeveritiesRequest:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this ListSeveritiesRequest.
+        r"""Sets the business_type_id of this ListSeveritiesRequest.
 
         问题类型id
 
@@ -113,7 +113,7 @@ class ListSeveritiesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListSeveritiesRequest.
+        r"""Gets the x_site of this ListSeveritiesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -124,7 +124,7 @@ class ListSeveritiesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListSeveritiesRequest.
+        r"""Sets the x_site of this ListSeveritiesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -135,7 +135,7 @@ class ListSeveritiesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSeveritiesRequest.
+        r"""Gets the x_language of this ListSeveritiesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -146,7 +146,7 @@ class ListSeveritiesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSeveritiesRequest.
+        r"""Sets the x_language of this ListSeveritiesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -157,7 +157,7 @@ class ListSeveritiesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListSeveritiesRequest.
+        r"""Gets the x_time_zone of this ListSeveritiesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -168,7 +168,7 @@ class ListSeveritiesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListSeveritiesRequest.
+        r"""Sets the x_time_zone of this ListSeveritiesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

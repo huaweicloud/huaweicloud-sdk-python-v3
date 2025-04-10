@@ -25,7 +25,7 @@ class SubnetInfo:
     }
 
     def __init__(self, subnet_id=None):
-        """SubnetInfo
+        r"""SubnetInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SubnetInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this SubnetInfo.
+        r"""Gets the subnet_id of this SubnetInfo.
 
         子网的网络ID。
 
@@ -54,7 +54,7 @@ class SubnetInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this SubnetInfo.
+        r"""Sets the subnet_id of this SubnetInfo.
 
         子网的网络ID。
 

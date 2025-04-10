@@ -31,7 +31,7 @@ class AdvancedQueueProperty:
     }
 
     def __init__(self, compute_engine_max_instance=None, job_max_concurrent=None, compute_engine_max_prefetch_instance=None, network_cidr_in_vpc=None):
-        """AdvancedQueueProperty
+        r"""AdvancedQueueProperty
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AdvancedQueueProperty:
 
     @property
     def compute_engine_max_instance(self):
-        """Gets the compute_engine_max_instance of this AdvancedQueueProperty.
+        r"""Gets the compute_engine_max_instance of this AdvancedQueueProperty.
 
         队列能启动的最大spark driver数量
 
@@ -75,7 +75,7 @@ class AdvancedQueueProperty:
 
     @compute_engine_max_instance.setter
     def compute_engine_max_instance(self, compute_engine_max_instance):
-        """Sets the compute_engine_max_instance of this AdvancedQueueProperty.
+        r"""Sets the compute_engine_max_instance of this AdvancedQueueProperty.
 
         队列能启动的最大spark driver数量
 
@@ -86,7 +86,7 @@ class AdvancedQueueProperty:
 
     @property
     def job_max_concurrent(self):
-        """Gets the job_max_concurrent of this AdvancedQueueProperty.
+        r"""Gets the job_max_concurrent of this AdvancedQueueProperty.
 
         单个spark driver能同时运行的最大任务数量
 
@@ -97,7 +97,7 @@ class AdvancedQueueProperty:
 
     @job_max_concurrent.setter
     def job_max_concurrent(self, job_max_concurrent):
-        """Sets the job_max_concurrent of this AdvancedQueueProperty.
+        r"""Sets the job_max_concurrent of this AdvancedQueueProperty.
 
         单个spark driver能同时运行的最大任务数量
 
@@ -108,7 +108,7 @@ class AdvancedQueueProperty:
 
     @property
     def compute_engine_max_prefetch_instance(self):
-        """Gets the compute_engine_max_prefetch_instance of this AdvancedQueueProperty.
+        r"""Gets the compute_engine_max_prefetch_instance of this AdvancedQueueProperty.
 
         队列预先启动的最大spark driver数量
 
@@ -119,7 +119,7 @@ class AdvancedQueueProperty:
 
     @compute_engine_max_prefetch_instance.setter
     def compute_engine_max_prefetch_instance(self, compute_engine_max_prefetch_instance):
-        """Sets the compute_engine_max_prefetch_instance of this AdvancedQueueProperty.
+        r"""Sets the compute_engine_max_prefetch_instance of this AdvancedQueueProperty.
 
         队列预先启动的最大spark driver数量
 
@@ -130,7 +130,7 @@ class AdvancedQueueProperty:
 
     @property
     def network_cidr_in_vpc(self):
-        """Gets the network_cidr_in_vpc of this AdvancedQueueProperty.
+        r"""Gets the network_cidr_in_vpc of this AdvancedQueueProperty.
 
         设置队列网段
 
@@ -141,7 +141,7 @@ class AdvancedQueueProperty:
 
     @network_cidr_in_vpc.setter
     def network_cidr_in_vpc(self, network_cidr_in_vpc):
-        """Sets the network_cidr_in_vpc of this AdvancedQueueProperty.
+        r"""Sets the network_cidr_in_vpc of this AdvancedQueueProperty.
 
         设置队列网段
 

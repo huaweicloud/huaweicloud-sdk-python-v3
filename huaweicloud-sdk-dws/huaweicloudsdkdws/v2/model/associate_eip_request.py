@@ -27,7 +27,7 @@ class AssociateEipRequest:
     }
 
     def __init__(self, cluster_id=None, eip_id=None):
-        """AssociateEipRequest
+        r"""AssociateEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociateEipRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AssociateEipRequest.
+        r"""Gets the cluster_id of this AssociateEipRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class AssociateEipRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AssociateEipRequest.
+        r"""Sets the cluster_id of this AssociateEipRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class AssociateEipRequest:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this AssociateEipRequest.
+        r"""Gets the eip_id of this AssociateEipRequest.
 
         未绑定的弹性IP的ID
 
@@ -81,7 +81,7 @@ class AssociateEipRequest:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this AssociateEipRequest.
+        r"""Sets the eip_id of this AssociateEipRequest.
 
         未绑定的弹性IP的ID
 

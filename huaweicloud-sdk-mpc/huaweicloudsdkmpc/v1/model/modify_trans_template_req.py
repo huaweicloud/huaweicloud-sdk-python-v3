@@ -33,7 +33,7 @@ class ModifyTransTemplateReq:
     }
 
     def __init__(self, template_id=None, template_name=None, video=None, audio=None, common=None):
-        """ModifyTransTemplateReq
+        r"""ModifyTransTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ModifyTransTemplateReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ModifyTransTemplateReq.
+        r"""Gets the template_id of this ModifyTransTemplateReq.
 
         转码模板ID 
 
@@ -79,7 +79,7 @@ class ModifyTransTemplateReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ModifyTransTemplateReq.
+        r"""Sets the template_id of this ModifyTransTemplateReq.
 
         转码模板ID 
 
@@ -90,7 +90,7 @@ class ModifyTransTemplateReq:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ModifyTransTemplateReq.
+        r"""Gets the template_name of this ModifyTransTemplateReq.
 
         转码模板名称。 
 
@@ -101,7 +101,7 @@ class ModifyTransTemplateReq:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ModifyTransTemplateReq.
+        r"""Sets the template_name of this ModifyTransTemplateReq.
 
         转码模板名称。 
 
@@ -112,7 +112,7 @@ class ModifyTransTemplateReq:
 
     @property
     def video(self):
-        """Gets the video of this ModifyTransTemplateReq.
+        r"""Gets the video of this ModifyTransTemplateReq.
 
         :return: The video of this ModifyTransTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Video`
@@ -121,7 +121,7 @@ class ModifyTransTemplateReq:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this ModifyTransTemplateReq.
+        r"""Sets the video of this ModifyTransTemplateReq.
 
         :param video: The video of this ModifyTransTemplateReq.
         :type video: :class:`huaweicloudsdkmpc.v1.Video`
@@ -130,7 +130,7 @@ class ModifyTransTemplateReq:
 
     @property
     def audio(self):
-        """Gets the audio of this ModifyTransTemplateReq.
+        r"""Gets the audio of this ModifyTransTemplateReq.
 
         :return: The audio of this ModifyTransTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -139,7 +139,7 @@ class ModifyTransTemplateReq:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this ModifyTransTemplateReq.
+        r"""Sets the audio of this ModifyTransTemplateReq.
 
         :param audio: The audio of this ModifyTransTemplateReq.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -148,7 +148,7 @@ class ModifyTransTemplateReq:
 
     @property
     def common(self):
-        """Gets the common of this ModifyTransTemplateReq.
+        r"""Gets the common of this ModifyTransTemplateReq.
 
         :return: The common of this ModifyTransTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
@@ -157,7 +157,7 @@ class ModifyTransTemplateReq:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this ModifyTransTemplateReq.
+        r"""Sets the common of this ModifyTransTemplateReq.
 
         :param common: The common of this ModifyTransTemplateReq.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

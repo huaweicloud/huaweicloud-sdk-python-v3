@@ -29,7 +29,7 @@ class ExceedCutNetReq:
     }
 
     def __init__(self, action=None, quota=None, iccid=None):
-        """ExceedCutNetReq
+        r"""ExceedCutNetReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExceedCutNetReq:
 
     @property
     def action(self):
-        """Gets the action of this ExceedCutNetReq.
+        r"""Gets the action of this ExceedCutNetReq.
 
         操作类型(1:设置达量断网域值，2：取消达量断网域值)
 
@@ -67,7 +67,7 @@ class ExceedCutNetReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ExceedCutNetReq.
+        r"""Sets the action of this ExceedCutNetReq.
 
         操作类型(1:设置达量断网域值，2：取消达量断网域值)
 
@@ -78,7 +78,7 @@ class ExceedCutNetReq:
 
     @property
     def quota(self):
-        """Gets the quota of this ExceedCutNetReq.
+        r"""Gets the quota of this ExceedCutNetReq.
 
         阈值,只能是0,-1,正整数，-1表示无限制，0表示有上网流量产生就会立即断网，取消达量断网功能时可不传，单位MB
 
@@ -89,7 +89,7 @@ class ExceedCutNetReq:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ExceedCutNetReq.
+        r"""Sets the quota of this ExceedCutNetReq.
 
         阈值,只能是0,-1,正整数，-1表示无限制，0表示有上网流量产生就会立即断网，取消达量断网功能时可不传，单位MB
 
@@ -100,7 +100,7 @@ class ExceedCutNetReq:
 
     @property
     def iccid(self):
-        """Gets the iccid of this ExceedCutNetReq.
+        r"""Gets the iccid of this ExceedCutNetReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 
@@ -111,7 +111,7 @@ class ExceedCutNetReq:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this ExceedCutNetReq.
+        r"""Sets the iccid of this ExceedCutNetReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 

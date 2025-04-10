@@ -25,7 +25,7 @@ class CreateP2PSiteNetworkRequestBody:
     }
 
     def __init__(self, p2p_site_network=None):
-        """CreateP2PSiteNetworkRequestBody
+        r"""CreateP2PSiteNetworkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateP2PSiteNetworkRequestBody:
 
     @property
     def p2p_site_network(self):
-        """Gets the p2p_site_network of this CreateP2PSiteNetworkRequestBody.
+        r"""Gets the p2p_site_network of this CreateP2PSiteNetworkRequestBody.
 
         :return: The p2p_site_network of this CreateP2PSiteNetworkRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateP2PSiteNetwork`
@@ -51,7 +51,7 @@ class CreateP2PSiteNetworkRequestBody:
 
     @p2p_site_network.setter
     def p2p_site_network(self, p2p_site_network):
-        """Sets the p2p_site_network of this CreateP2PSiteNetworkRequestBody.
+        r"""Sets the p2p_site_network of this CreateP2PSiteNetworkRequestBody.
 
         :param p2p_site_network: The p2p_site_network of this CreateP2PSiteNetworkRequestBody.
         :type p2p_site_network: :class:`huaweicloudsdkcc.v3.CreateP2PSiteNetwork`

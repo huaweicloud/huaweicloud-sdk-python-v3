@@ -24,7 +24,7 @@ class RevokeKubernetesClusterCertResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RevokeKubernetesClusterCertResponse
+        r"""RevokeKubernetesClusterCertResponse
 
         The model defined in huaweicloud sdk
 

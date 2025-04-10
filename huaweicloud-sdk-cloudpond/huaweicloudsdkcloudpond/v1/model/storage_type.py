@@ -34,7 +34,7 @@ class StorageType:
     }
 
     def __init__(self):
-        """StorageType
+        r"""StorageType
 
         The model defined in huaweicloud sdk
 

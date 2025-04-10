@@ -25,7 +25,7 @@ class ShowUserAccessInfoRequest:
     }
 
     def __init__(self, project_uuid=None):
-        """ShowUserAccessInfoRequest
+        r"""ShowUserAccessInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowUserAccessInfoRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowUserAccessInfoRequest.
+        r"""Gets the project_uuid of this ShowUserAccessInfoRequest.
 
         项目ID
 
@@ -54,7 +54,7 @@ class ShowUserAccessInfoRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowUserAccessInfoRequest.
+        r"""Sets the project_uuid of this ShowUserAccessInfoRequest.
 
         项目ID
 

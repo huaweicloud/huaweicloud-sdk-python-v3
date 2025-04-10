@@ -65,7 +65,7 @@ class ScheduledTaskRequestBody:
     }
 
     def __init__(self, ticket_infos=None, name=None, enterprise_project_id=None, agency_name=None, version_no=None, trigger_time=None, task_type=None, associated_task_id=None, associated_task_type=None, associated_task_name=None, associated_task_name_en=None, associated_task_enterprise_project_id=None, runbook_instance_mode=None, risk_level=None, input_param=None, target_instances=None, enable_approve=None, reviewer_notification=None, reviewer_user_name=None, enable_message_notification=None, message_notification=None):
-        """ScheduledTaskRequestBody
+        r"""ScheduledTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -171,7 +171,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def ticket_infos(self):
-        """Gets the ticket_infos of this ScheduledTaskRequestBody.
+        r"""Gets the ticket_infos of this ScheduledTaskRequestBody.
 
         选择的四号提权单信息
 
@@ -182,7 +182,7 @@ class ScheduledTaskRequestBody:
 
     @ticket_infos.setter
     def ticket_infos(self, ticket_infos):
-        """Sets the ticket_infos of this ScheduledTaskRequestBody.
+        r"""Sets the ticket_infos of this ScheduledTaskRequestBody.
 
         选择的四号提权单信息
 
@@ -193,7 +193,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this ScheduledTaskRequestBody.
+        r"""Gets the name of this ScheduledTaskRequestBody.
 
         任务名称
 
@@ -204,7 +204,7 @@ class ScheduledTaskRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduledTaskRequestBody.
+        r"""Sets the name of this ScheduledTaskRequestBody.
 
         任务名称
 
@@ -215,7 +215,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ScheduledTaskRequestBody.
+        r"""Gets the enterprise_project_id of this ScheduledTaskRequestBody.
 
         企业项目id
 
@@ -226,7 +226,7 @@ class ScheduledTaskRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ScheduledTaskRequestBody.
+        r"""Sets the enterprise_project_id of this ScheduledTaskRequestBody.
 
         企业项目id
 
@@ -237,7 +237,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ScheduledTaskRequestBody.
+        r"""Gets the agency_name of this ScheduledTaskRequestBody.
 
         委托名称
 
@@ -248,7 +248,7 @@ class ScheduledTaskRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ScheduledTaskRequestBody.
+        r"""Sets the agency_name of this ScheduledTaskRequestBody.
 
         委托名称
 
@@ -259,7 +259,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def version_no(self):
-        """Gets the version_no of this ScheduledTaskRequestBody.
+        r"""Gets the version_no of this ScheduledTaskRequestBody.
 
         版本号
 
@@ -270,7 +270,7 @@ class ScheduledTaskRequestBody:
 
     @version_no.setter
     def version_no(self, version_no):
-        """Sets the version_no of this ScheduledTaskRequestBody.
+        r"""Sets the version_no of this ScheduledTaskRequestBody.
 
         版本号
 
@@ -281,7 +281,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this ScheduledTaskRequestBody.
+        r"""Gets the trigger_time of this ScheduledTaskRequestBody.
 
         :return: The trigger_time of this ScheduledTaskRequestBody.
         :rtype: :class:`huaweicloudsdkcoc.v1.TriggerTime`
@@ -290,7 +290,7 @@ class ScheduledTaskRequestBody:
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this ScheduledTaskRequestBody.
+        r"""Sets the trigger_time of this ScheduledTaskRequestBody.
 
         :param trigger_time: The trigger_time of this ScheduledTaskRequestBody.
         :type trigger_time: :class:`huaweicloudsdkcoc.v1.TriggerTime`
@@ -299,7 +299,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduledTaskRequestBody.
+        r"""Gets the task_type of this ScheduledTaskRequestBody.
 
         任务类型
 
@@ -310,7 +310,7 @@ class ScheduledTaskRequestBody:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduledTaskRequestBody.
+        r"""Sets the task_type of this ScheduledTaskRequestBody.
 
         任务类型
 
@@ -321,7 +321,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def associated_task_id(self):
-        """Gets the associated_task_id of this ScheduledTaskRequestBody.
+        r"""Gets the associated_task_id of this ScheduledTaskRequestBody.
 
         关联任务ID（脚本ID/作业ID）
 
@@ -332,7 +332,7 @@ class ScheduledTaskRequestBody:
 
     @associated_task_id.setter
     def associated_task_id(self, associated_task_id):
-        """Sets the associated_task_id of this ScheduledTaskRequestBody.
+        r"""Sets the associated_task_id of this ScheduledTaskRequestBody.
 
         关联任务ID（脚本ID/作业ID）
 
@@ -343,7 +343,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def associated_task_type(self):
-        """Gets the associated_task_type of this ScheduledTaskRequestBody.
+        r"""Gets the associated_task_type of this ScheduledTaskRequestBody.
 
         关联任务的类型
 
@@ -354,7 +354,7 @@ class ScheduledTaskRequestBody:
 
     @associated_task_type.setter
     def associated_task_type(self, associated_task_type):
-        """Sets the associated_task_type of this ScheduledTaskRequestBody.
+        r"""Sets the associated_task_type of this ScheduledTaskRequestBody.
 
         关联任务的类型
 
@@ -365,7 +365,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def associated_task_name(self):
-        """Gets the associated_task_name of this ScheduledTaskRequestBody.
+        r"""Gets the associated_task_name of this ScheduledTaskRequestBody.
 
         关联任务名称（脚本名称/作业名称）
 
@@ -376,7 +376,7 @@ class ScheduledTaskRequestBody:
 
     @associated_task_name.setter
     def associated_task_name(self, associated_task_name):
-        """Sets the associated_task_name of this ScheduledTaskRequestBody.
+        r"""Sets the associated_task_name of this ScheduledTaskRequestBody.
 
         关联任务名称（脚本名称/作业名称）
 
@@ -387,7 +387,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def associated_task_name_en(self):
-        """Gets the associated_task_name_en of this ScheduledTaskRequestBody.
+        r"""Gets the associated_task_name_en of this ScheduledTaskRequestBody.
 
         关联任务名称(英文)（脚本名称/作业名称）
 
@@ -398,7 +398,7 @@ class ScheduledTaskRequestBody:
 
     @associated_task_name_en.setter
     def associated_task_name_en(self, associated_task_name_en):
-        """Sets the associated_task_name_en of this ScheduledTaskRequestBody.
+        r"""Sets the associated_task_name_en of this ScheduledTaskRequestBody.
 
         关联任务名称(英文)（脚本名称/作业名称）
 
@@ -409,7 +409,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def associated_task_enterprise_project_id(self):
-        """Gets the associated_task_enterprise_project_id of this ScheduledTaskRequestBody.
+        r"""Gets the associated_task_enterprise_project_id of this ScheduledTaskRequestBody.
 
         关联任务的企业项目ID
 
@@ -420,7 +420,7 @@ class ScheduledTaskRequestBody:
 
     @associated_task_enterprise_project_id.setter
     def associated_task_enterprise_project_id(self, associated_task_enterprise_project_id):
-        """Sets the associated_task_enterprise_project_id of this ScheduledTaskRequestBody.
+        r"""Sets the associated_task_enterprise_project_id of this ScheduledTaskRequestBody.
 
         关联任务的企业项目ID
 
@@ -431,7 +431,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def runbook_instance_mode(self):
-        """Gets the runbook_instance_mode of this ScheduledTaskRequestBody.
+        r"""Gets the runbook_instance_mode of this ScheduledTaskRequestBody.
 
         作业实例模式
 
@@ -442,7 +442,7 @@ class ScheduledTaskRequestBody:
 
     @runbook_instance_mode.setter
     def runbook_instance_mode(self, runbook_instance_mode):
-        """Sets the runbook_instance_mode of this ScheduledTaskRequestBody.
+        r"""Sets the runbook_instance_mode of this ScheduledTaskRequestBody.
 
         作业实例模式
 
@@ -453,7 +453,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ScheduledTaskRequestBody.
+        r"""Gets the risk_level of this ScheduledTaskRequestBody.
 
         风险等级
 
@@ -464,7 +464,7 @@ class ScheduledTaskRequestBody:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ScheduledTaskRequestBody.
+        r"""Sets the risk_level of this ScheduledTaskRequestBody.
 
         风险等级
 
@@ -475,7 +475,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def input_param(self):
-        """Gets the input_param of this ScheduledTaskRequestBody.
+        r"""Gets the input_param of this ScheduledTaskRequestBody.
 
         执行参数，值为json串
 
@@ -486,7 +486,7 @@ class ScheduledTaskRequestBody:
 
     @input_param.setter
     def input_param(self, input_param):
-        """Sets the input_param of this ScheduledTaskRequestBody.
+        r"""Sets the input_param of this ScheduledTaskRequestBody.
 
         执行参数，值为json串
 
@@ -497,7 +497,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def target_instances(self):
-        """Gets the target_instances of this ScheduledTaskRequestBody.
+        r"""Gets the target_instances of this ScheduledTaskRequestBody.
 
         目标实例信息
 
@@ -508,7 +508,7 @@ class ScheduledTaskRequestBody:
 
     @target_instances.setter
     def target_instances(self, target_instances):
-        """Sets the target_instances of this ScheduledTaskRequestBody.
+        r"""Sets the target_instances of this ScheduledTaskRequestBody.
 
         目标实例信息
 
@@ -519,7 +519,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def enable_approve(self):
-        """Gets the enable_approve of this ScheduledTaskRequestBody.
+        r"""Gets the enable_approve of this ScheduledTaskRequestBody.
 
         是否开启入库人工审核
 
@@ -530,7 +530,7 @@ class ScheduledTaskRequestBody:
 
     @enable_approve.setter
     def enable_approve(self, enable_approve):
-        """Sets the enable_approve of this ScheduledTaskRequestBody.
+        r"""Sets the enable_approve of this ScheduledTaskRequestBody.
 
         是否开启入库人工审核
 
@@ -541,7 +541,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def reviewer_notification(self):
-        """Gets the reviewer_notification of this ScheduledTaskRequestBody.
+        r"""Gets the reviewer_notification of this ScheduledTaskRequestBody.
 
         :return: The reviewer_notification of this ScheduledTaskRequestBody.
         :rtype: :class:`huaweicloudsdkcoc.v1.MessageNotification`
@@ -550,7 +550,7 @@ class ScheduledTaskRequestBody:
 
     @reviewer_notification.setter
     def reviewer_notification(self, reviewer_notification):
-        """Sets the reviewer_notification of this ScheduledTaskRequestBody.
+        r"""Sets the reviewer_notification of this ScheduledTaskRequestBody.
 
         :param reviewer_notification: The reviewer_notification of this ScheduledTaskRequestBody.
         :type reviewer_notification: :class:`huaweicloudsdkcoc.v1.MessageNotification`
@@ -559,7 +559,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def reviewer_user_name(self):
-        """Gets the reviewer_user_name of this ScheduledTaskRequestBody.
+        r"""Gets the reviewer_user_name of this ScheduledTaskRequestBody.
 
         审核人昵称
 
@@ -570,7 +570,7 @@ class ScheduledTaskRequestBody:
 
     @reviewer_user_name.setter
     def reviewer_user_name(self, reviewer_user_name):
-        """Sets the reviewer_user_name of this ScheduledTaskRequestBody.
+        r"""Sets the reviewer_user_name of this ScheduledTaskRequestBody.
 
         审核人昵称
 
@@ -581,7 +581,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def enable_message_notification(self):
-        """Gets the enable_message_notification of this ScheduledTaskRequestBody.
+        r"""Gets the enable_message_notification of this ScheduledTaskRequestBody.
 
         是否启用消息通知
 
@@ -592,7 +592,7 @@ class ScheduledTaskRequestBody:
 
     @enable_message_notification.setter
     def enable_message_notification(self, enable_message_notification):
-        """Sets the enable_message_notification of this ScheduledTaskRequestBody.
+        r"""Sets the enable_message_notification of this ScheduledTaskRequestBody.
 
         是否启用消息通知
 
@@ -603,7 +603,7 @@ class ScheduledTaskRequestBody:
 
     @property
     def message_notification(self):
-        """Gets the message_notification of this ScheduledTaskRequestBody.
+        r"""Gets the message_notification of this ScheduledTaskRequestBody.
 
         :return: The message_notification of this ScheduledTaskRequestBody.
         :rtype: :class:`huaweicloudsdkcoc.v1.MessageNotification`
@@ -612,7 +612,7 @@ class ScheduledTaskRequestBody:
 
     @message_notification.setter
     def message_notification(self, message_notification):
-        """Sets the message_notification of this ScheduledTaskRequestBody.
+        r"""Sets the message_notification of this ScheduledTaskRequestBody.
 
         :param message_notification: The message_notification of this ScheduledTaskRequestBody.
         :type message_notification: :class:`huaweicloudsdkcoc.v1.MessageNotification`

@@ -25,7 +25,7 @@ class Runtime:
     }
 
     def __init__(self, name=None):
-        """Runtime
+        r"""Runtime
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Runtime:
 
     @property
     def name(self):
-        """Gets the name of this Runtime.
+        r"""Gets the name of this Runtime.
 
         容器运行时，默认场景： - v1.25以下集群：默认为\"docker\" - v1.25及以上集群，随操作系统变化，默认的容器运行时不同：操作系统为EulerOS 2.5[、EulerOS 2.8](tag:hws,hws_hk)的节点默认为\"docker\"，其余操作系统的节点默认为\"containerd\" 
 
@@ -54,7 +54,7 @@ class Runtime:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Runtime.
+        r"""Sets the name of this Runtime.
 
         容器运行时，默认场景： - v1.25以下集群：默认为\"docker\" - v1.25及以上集群，随操作系统变化，默认的容器运行时不同：操作系统为EulerOS 2.5[、EulerOS 2.8](tag:hws,hws_hk)的节点默认为\"docker\"，其余操作系统的节点默认为\"containerd\" 
 

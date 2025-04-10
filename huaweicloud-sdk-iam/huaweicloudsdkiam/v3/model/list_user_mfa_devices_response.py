@@ -26,7 +26,7 @@ class ListUserMfaDevicesResponse(SdkResponse):
     }
 
     def __init__(self, virtual_mfa_devices=None):
-        """ListUserMfaDevicesResponse
+        r"""ListUserMfaDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUserMfaDevicesResponse(SdkResponse):
 
     @property
     def virtual_mfa_devices(self):
-        """Gets the virtual_mfa_devices of this ListUserMfaDevicesResponse.
+        r"""Gets the virtual_mfa_devices of this ListUserMfaDevicesResponse.
 
         虚拟MFA设备信息列表。
 
@@ -55,7 +55,7 @@ class ListUserMfaDevicesResponse(SdkResponse):
 
     @virtual_mfa_devices.setter
     def virtual_mfa_devices(self, virtual_mfa_devices):
-        """Sets the virtual_mfa_devices of this ListUserMfaDevicesResponse.
+        r"""Sets the virtual_mfa_devices of this ListUserMfaDevicesResponse.
 
         虚拟MFA设备信息列表。
 

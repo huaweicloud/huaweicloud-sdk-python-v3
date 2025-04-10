@@ -25,7 +25,7 @@ class ShowFlowBlockRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowFlowBlockRequest
+        r"""ShowFlowBlockRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlowBlockRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowFlowBlockRequest.
+        r"""Gets the instance_id of this ShowFlowBlockRequest.
 
         instanceId
 
@@ -53,7 +53,7 @@ class ShowFlowBlockRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowFlowBlockRequest.
+        r"""Sets the instance_id of this ShowFlowBlockRequest.
 
         instanceId
 

@@ -29,7 +29,7 @@ class ExecuteJobActionRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """ExecuteJobActionRequest
+        r"""ExecuteJobActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExecuteJobActionRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecuteJobActionRequest.
+        r"""Gets the job_id of this ExecuteJobActionRequest.
 
         任务ID (对比任务相关操作，多任务场景传父任务详情返回的master_job_id)
 
@@ -67,7 +67,7 @@ class ExecuteJobActionRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecuteJobActionRequest.
+        r"""Sets the job_id of this ExecuteJobActionRequest.
 
         任务ID (对比任务相关操作，多任务场景传父任务详情返回的master_job_id)
 
@@ -78,7 +78,7 @@ class ExecuteJobActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExecuteJobActionRequest.
+        r"""Gets the x_language of this ExecuteJobActionRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class ExecuteJobActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExecuteJobActionRequest.
+        r"""Sets the x_language of this ExecuteJobActionRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class ExecuteJobActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteJobActionRequest.
+        r"""Gets the body of this ExecuteJobActionRequest.
 
         :return: The body of this ExecuteJobActionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobActionReq`
@@ -109,7 +109,7 @@ class ExecuteJobActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteJobActionRequest.
+        r"""Sets the body of this ExecuteJobActionRequest.
 
         :param body: The body of this ExecuteJobActionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.JobActionReq`

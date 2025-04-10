@@ -27,7 +27,7 @@ class ValidateParaGroupNameRequest:
     }
 
     def __init__(self, x_language=None, name=None):
-        """ValidateParaGroupNameRequest
+        r"""ValidateParaGroupNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ValidateParaGroupNameRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ValidateParaGroupNameRequest.
+        r"""Gets the x_language of this ValidateParaGroupNameRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class ValidateParaGroupNameRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ValidateParaGroupNameRequest.
+        r"""Sets the x_language of this ValidateParaGroupNameRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class ValidateParaGroupNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this ValidateParaGroupNameRequest.
+        r"""Gets the name of this ValidateParaGroupNameRequest.
 
         参数组名称。
 
@@ -82,7 +82,7 @@ class ValidateParaGroupNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValidateParaGroupNameRequest.
+        r"""Sets the name of this ValidateParaGroupNameRequest.
 
         参数组名称。
 

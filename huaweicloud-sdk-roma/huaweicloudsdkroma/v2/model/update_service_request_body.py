@@ -29,7 +29,7 @@ class UpdateServiceRequestBody:
     }
 
     def __init__(self, service_name=None, description=None, status=None):
-        """UpdateServiceRequestBody
+        r"""UpdateServiceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateServiceRequestBody:
 
     @property
     def service_name(self):
-        """Gets the service_name of this UpdateServiceRequestBody.
+        r"""Gets the service_name of this UpdateServiceRequestBody.
 
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -66,7 +66,7 @@ class UpdateServiceRequestBody:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this UpdateServiceRequestBody.
+        r"""Sets the service_name of this UpdateServiceRequestBody.
 
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -77,7 +77,7 @@ class UpdateServiceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateServiceRequestBody.
+        r"""Gets the description of this UpdateServiceRequestBody.
 
         服务描述，长度0-200
 
@@ -88,7 +88,7 @@ class UpdateServiceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServiceRequestBody.
+        r"""Sets the description of this UpdateServiceRequestBody.
 
         服务描述，长度0-200
 
@@ -99,7 +99,7 @@ class UpdateServiceRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateServiceRequestBody.
+        r"""Gets the status of this UpdateServiceRequestBody.
 
         服务状态 0-启用 1-停用
 
@@ -110,7 +110,7 @@ class UpdateServiceRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateServiceRequestBody.
+        r"""Sets the status of this UpdateServiceRequestBody.
 
         服务状态 0-启用 1-停用
 

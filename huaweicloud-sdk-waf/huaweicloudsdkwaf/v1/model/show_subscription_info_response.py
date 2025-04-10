@@ -32,7 +32,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
     }
 
     def __init__(self, type=None, resources=None, is_new_user=None, premium=None):
-        """ShowSubscriptionInfoResponse
+        r"""ShowSubscriptionInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowSubscriptionInfoResponse.
+        r"""Gets the type of this ShowSubscriptionInfoResponse.
 
         云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7:入门版   - 22：按需版本
 
@@ -76,7 +76,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSubscriptionInfoResponse.
+        r"""Sets the type of this ShowSubscriptionInfoResponse.
 
         云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7:入门版   - 22：按需版本
 
@@ -87,7 +87,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowSubscriptionInfoResponse.
+        r"""Gets the resources of this ShowSubscriptionInfoResponse.
 
         资源列表
 
@@ -98,7 +98,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowSubscriptionInfoResponse.
+        r"""Sets the resources of this ShowSubscriptionInfoResponse.
 
         资源列表
 
@@ -109,7 +109,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @property
     def is_new_user(self):
-        """Gets the is_new_user of this ShowSubscriptionInfoResponse.
+        r"""Gets the is_new_user of this ShowSubscriptionInfoResponse.
 
         是否为新用户
 
@@ -120,7 +120,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @is_new_user.setter
     def is_new_user(self, is_new_user):
-        """Sets the is_new_user of this ShowSubscriptionInfoResponse.
+        r"""Sets the is_new_user of this ShowSubscriptionInfoResponse.
 
         是否为新用户
 
@@ -131,7 +131,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @property
     def premium(self):
-        """Gets the premium of this ShowSubscriptionInfoResponse.
+        r"""Gets the premium of this ShowSubscriptionInfoResponse.
 
         :return: The premium of this ShowSubscriptionInfoResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Premium`
@@ -140,7 +140,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
     @premium.setter
     def premium(self, premium):
-        """Sets the premium of this ShowSubscriptionInfoResponse.
+        r"""Sets the premium of this ShowSubscriptionInfoResponse.
 
         :param premium: The premium of this ShowSubscriptionInfoResponse.
         :type premium: :class:`huaweicloudsdkwaf.v1.Premium`

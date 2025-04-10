@@ -23,7 +23,7 @@ class ShowStorageModeTypeRequest:
     }
 
     def __init__(self):
-        """ShowStorageModeTypeRequest
+        r"""ShowStorageModeTypeRequest
 
         The model defined in huaweicloud sdk
 

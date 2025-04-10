@@ -25,7 +25,7 @@ class PendingAggregationRequest:
     }
 
     def __init__(self, requester_account_id=None):
-        """PendingAggregationRequest
+        r"""PendingAggregationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PendingAggregationRequest:
 
     @property
     def requester_account_id(self):
-        """Gets the requester_account_id of this PendingAggregationRequest.
+        r"""Gets the requester_account_id of this PendingAggregationRequest.
 
         请求聚合数据的帐号ID。
 
@@ -54,7 +54,7 @@ class PendingAggregationRequest:
 
     @requester_account_id.setter
     def requester_account_id(self, requester_account_id):
-        """Sets the requester_account_id of this PendingAggregationRequest.
+        r"""Sets the requester_account_id of this PendingAggregationRequest.
 
         请求聚合数据的帐号ID。
 

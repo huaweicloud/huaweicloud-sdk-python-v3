@@ -27,7 +27,7 @@ class UpdateAddressSetDto:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateAddressSetDto
+        r"""UpdateAddressSetDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAddressSetDto:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAddressSetDto.
+        r"""Gets the name of this UpdateAddressSetDto.
 
         地址组名称
 
@@ -61,7 +61,7 @@ class UpdateAddressSetDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAddressSetDto.
+        r"""Sets the name of this UpdateAddressSetDto.
 
         地址组名称
 
@@ -72,7 +72,7 @@ class UpdateAddressSetDto:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAddressSetDto.
+        r"""Gets the description of this UpdateAddressSetDto.
 
         地址组描述
 
@@ -83,7 +83,7 @@ class UpdateAddressSetDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAddressSetDto.
+        r"""Sets the description of this UpdateAddressSetDto.
 
         地址组描述
 

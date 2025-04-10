@@ -29,7 +29,7 @@ class RestorePtrRecordRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None, body=None):
-        """RestorePtrRecordRequest
+        r"""RestorePtrRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestorePtrRecordRequest:
 
     @property
     def region(self):
-        """Gets the region of this RestorePtrRecordRequest.
+        r"""Gets the region of this RestorePtrRecordRequest.
 
         域名所属的区域。
 
@@ -66,7 +66,7 @@ class RestorePtrRecordRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RestorePtrRecordRequest.
+        r"""Sets the region of this RestorePtrRecordRequest.
 
         域名所属的区域。
 
@@ -77,7 +77,7 @@ class RestorePtrRecordRequest:
 
     @property
     def floatingip_id(self):
-        """Gets the floatingip_id of this RestorePtrRecordRequest.
+        r"""Gets the floatingip_id of this RestorePtrRecordRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -88,7 +88,7 @@ class RestorePtrRecordRequest:
 
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
-        """Sets the floatingip_id of this RestorePtrRecordRequest.
+        r"""Sets the floatingip_id of this RestorePtrRecordRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -99,7 +99,7 @@ class RestorePtrRecordRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestorePtrRecordRequest.
+        r"""Gets the body of this RestorePtrRecordRequest.
 
         :return: The body of this RestorePtrRecordRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
@@ -108,7 +108,7 @@ class RestorePtrRecordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestorePtrRecordRequest.
+        r"""Sets the body of this RestorePtrRecordRequest.
 
         :param body: The body of this RestorePtrRecordRequest.
         :type body: :class:`huaweicloudsdkdns.v2.RestorePtrReq`

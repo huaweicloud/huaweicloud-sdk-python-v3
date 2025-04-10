@@ -27,7 +27,7 @@ class StopScriptExecutionReq:
     }
 
     def __init__(self, record_id=None, task_id=None):
-        """StopScriptExecutionReq
+        r"""StopScriptExecutionReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StopScriptExecutionReq:
 
     @property
     def record_id(self):
-        """Gets the record_id of this StopScriptExecutionReq.
+        r"""Gets the record_id of this StopScriptExecutionReq.
 
         脚本执行记录ID。
 
@@ -61,7 +61,7 @@ class StopScriptExecutionReq:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this StopScriptExecutionReq.
+        r"""Sets the record_id of this StopScriptExecutionReq.
 
         脚本执行记录ID。
 
@@ -72,7 +72,7 @@ class StopScriptExecutionReq:
 
     @property
     def task_id(self):
-        """Gets the task_id of this StopScriptExecutionReq.
+        r"""Gets the task_id of this StopScriptExecutionReq.
 
         脚本执行任务ID。
 
@@ -83,7 +83,7 @@ class StopScriptExecutionReq:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StopScriptExecutionReq.
+        r"""Sets the task_id of this StopScriptExecutionReq.
 
         脚本执行任务ID。
 

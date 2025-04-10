@@ -33,7 +33,7 @@ class KafkaConfigRequestDTO:
     }
 
     def __init__(self, topic_prefix=None, user_topics=None, brokers=None, username=None, password=None):
-        """KafkaConfigRequestDTO
+        r"""KafkaConfigRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class KafkaConfigRequestDTO:
 
     @property
     def topic_prefix(self):
-        """Gets the topic_prefix of this KafkaConfigRequestDTO.
+        r"""Gets the topic_prefix of this KafkaConfigRequestDTO.
 
         **参数说明**：Topic前缀，不携带时以user_topics中具体Topic为准，携带时前缀将拼接在user_topics中的topic前方，例如：topic_prefixv2x-v1-tracks，topic_prefixv2x-v1-bsm。
 
@@ -81,7 +81,7 @@ class KafkaConfigRequestDTO:
 
     @topic_prefix.setter
     def topic_prefix(self, topic_prefix):
-        """Sets the topic_prefix of this KafkaConfigRequestDTO.
+        r"""Sets the topic_prefix of this KafkaConfigRequestDTO.
 
         **参数说明**：Topic前缀，不携带时以user_topics中具体Topic为准，携带时前缀将拼接在user_topics中的topic前方，例如：topic_prefixv2x-v1-tracks，topic_prefixv2x-v1-bsm。
 
@@ -92,7 +92,7 @@ class KafkaConfigRequestDTO:
 
     @property
     def user_topics(self):
-        """Gets the user_topics of this KafkaConfigRequestDTO.
+        r"""Gets the user_topics of this KafkaConfigRequestDTO.
 
         **参数说明**：kafka的主题列表，根据需要转发的消息类型填写。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -103,7 +103,7 @@ class KafkaConfigRequestDTO:
 
     @user_topics.setter
     def user_topics(self, user_topics):
-        """Sets the user_topics of this KafkaConfigRequestDTO.
+        r"""Sets the user_topics of this KafkaConfigRequestDTO.
 
         **参数说明**：kafka的主题列表，根据需要转发的消息类型填写。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -114,7 +114,7 @@ class KafkaConfigRequestDTO:
 
     @property
     def brokers(self):
-        """Gets the brokers of this KafkaConfigRequestDTO.
+        r"""Gets the brokers of this KafkaConfigRequestDTO.
 
         **参数说明**：Kafka broker列表。
 
@@ -125,7 +125,7 @@ class KafkaConfigRequestDTO:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this KafkaConfigRequestDTO.
+        r"""Sets the brokers of this KafkaConfigRequestDTO.
 
         **参数说明**：Kafka broker列表。
 
@@ -136,7 +136,7 @@ class KafkaConfigRequestDTO:
 
     @property
     def username(self):
-        """Gets the username of this KafkaConfigRequestDTO.
+        r"""Gets the username of this KafkaConfigRequestDTO.
 
         **参数说明**：kafka用户名。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -147,7 +147,7 @@ class KafkaConfigRequestDTO:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this KafkaConfigRequestDTO.
+        r"""Sets the username of this KafkaConfigRequestDTO.
 
         **参数说明**：kafka用户名。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -158,7 +158,7 @@ class KafkaConfigRequestDTO:
 
     @property
     def password(self):
-        """Gets the password of this KafkaConfigRequestDTO.
+        r"""Gets the password of this KafkaConfigRequestDTO.
 
         **参数说明**：kafka密码。
 
@@ -169,7 +169,7 @@ class KafkaConfigRequestDTO:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this KafkaConfigRequestDTO.
+        r"""Sets the password of this KafkaConfigRequestDTO.
 
         **参数说明**：kafka密码。
 

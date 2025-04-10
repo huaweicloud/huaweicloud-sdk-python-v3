@@ -28,7 +28,7 @@ class ShowVirtualInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, virtual_interface=None):
-        """ShowVirtualInterfaceResponse
+        r"""ShowVirtualInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVirtualInterfaceResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVirtualInterfaceResponse.
+        r"""Gets the request_id of this ShowVirtualInterfaceResponse.
 
         操作请求ID
 
@@ -62,7 +62,7 @@ class ShowVirtualInterfaceResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVirtualInterfaceResponse.
+        r"""Sets the request_id of this ShowVirtualInterfaceResponse.
 
         操作请求ID
 
@@ -73,7 +73,7 @@ class ShowVirtualInterfaceResponse(SdkResponse):
 
     @property
     def virtual_interface(self):
-        """Gets the virtual_interface of this ShowVirtualInterfaceResponse.
+        r"""Gets the virtual_interface of this ShowVirtualInterfaceResponse.
 
         :return: The virtual_interface of this ShowVirtualInterfaceResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.VirtualInterface`
@@ -82,7 +82,7 @@ class ShowVirtualInterfaceResponse(SdkResponse):
 
     @virtual_interface.setter
     def virtual_interface(self, virtual_interface):
-        """Sets the virtual_interface of this ShowVirtualInterfaceResponse.
+        r"""Sets the virtual_interface of this ShowVirtualInterfaceResponse.
 
         :param virtual_interface: The virtual_interface of this ShowVirtualInterfaceResponse.
         :type virtual_interface: :class:`huaweicloudsdkdc.v3.VirtualInterface`

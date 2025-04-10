@@ -27,7 +27,7 @@ class UpdateSubAppRequest:
     }
 
     def __init__(self, sub_app_id=None, body=None):
-        """UpdateSubAppRequest
+        r"""UpdateSubAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSubAppRequest:
 
     @property
     def sub_app_id(self):
-        """Gets the sub_app_id of this UpdateSubAppRequest.
+        r"""Gets the sub_app_id of this UpdateSubAppRequest.
 
         子应用id
 
@@ -60,7 +60,7 @@ class UpdateSubAppRequest:
 
     @sub_app_id.setter
     def sub_app_id(self, sub_app_id):
-        """Sets the sub_app_id of this UpdateSubAppRequest.
+        r"""Sets the sub_app_id of this UpdateSubAppRequest.
 
         子应用id
 
@@ -71,7 +71,7 @@ class UpdateSubAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubAppRequest.
+        r"""Gets the body of this UpdateSubAppRequest.
 
         :return: The body of this UpdateSubAppRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.SubAppUpdateParam`
@@ -80,7 +80,7 @@ class UpdateSubAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubAppRequest.
+        r"""Sets the body of this UpdateSubAppRequest.
 
         :param body: The body of this UpdateSubAppRequest.
         :type body: :class:`huaweicloudsdkaom.v3.SubAppUpdateParam`

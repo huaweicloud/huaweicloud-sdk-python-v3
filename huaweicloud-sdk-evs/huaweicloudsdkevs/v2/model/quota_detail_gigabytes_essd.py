@@ -29,7 +29,7 @@ class QuotaDetailGigabytesESSD:
     }
 
     def __init__(self, in_use=None, limit=None, reserved=None):
-        """QuotaDetailGigabytesESSD
+        r"""QuotaDetailGigabytesESSD
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class QuotaDetailGigabytesESSD:
 
     @property
     def in_use(self):
-        """Gets the in_use of this QuotaDetailGigabytesESSD.
+        r"""Gets the in_use of this QuotaDetailGigabytesESSD.
 
         已使用的数量。
 
@@ -65,7 +65,7 @@ class QuotaDetailGigabytesESSD:
 
     @in_use.setter
     def in_use(self, in_use):
-        """Sets the in_use of this QuotaDetailGigabytesESSD.
+        r"""Sets the in_use of this QuotaDetailGigabytesESSD.
 
         已使用的数量。
 
@@ -76,7 +76,7 @@ class QuotaDetailGigabytesESSD:
 
     @property
     def limit(self):
-        """Gets the limit of this QuotaDetailGigabytesESSD.
+        r"""Gets the limit of this QuotaDetailGigabytesESSD.
 
         最大的数量。
 
@@ -87,7 +87,7 @@ class QuotaDetailGigabytesESSD:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QuotaDetailGigabytesESSD.
+        r"""Sets the limit of this QuotaDetailGigabytesESSD.
 
         最大的数量。
 
@@ -98,7 +98,7 @@ class QuotaDetailGigabytesESSD:
 
     @property
     def reserved(self):
-        """Gets the reserved of this QuotaDetailGigabytesESSD.
+        r"""Gets the reserved of this QuotaDetailGigabytesESSD.
 
         预留属性。
 
@@ -109,7 +109,7 @@ class QuotaDetailGigabytesESSD:
 
     @reserved.setter
     def reserved(self, reserved):
-        """Sets the reserved of this QuotaDetailGigabytesESSD.
+        r"""Sets the reserved of this QuotaDetailGigabytesESSD.
 
         预留属性。
 

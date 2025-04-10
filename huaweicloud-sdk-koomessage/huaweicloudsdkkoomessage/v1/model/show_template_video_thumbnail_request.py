@@ -25,7 +25,7 @@ class ShowTemplateVideoThumbnailRequest:
     }
 
     def __init__(self, aim_resource_id=None):
-        """ShowTemplateVideoThumbnailRequest
+        r"""ShowTemplateVideoThumbnailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTemplateVideoThumbnailRequest:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this ShowTemplateVideoThumbnailRequest.
+        r"""Gets the aim_resource_id of this ShowTemplateVideoThumbnailRequest.
 
         目标资源ID。
 
@@ -53,7 +53,7 @@ class ShowTemplateVideoThumbnailRequest:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this ShowTemplateVideoThumbnailRequest.
+        r"""Sets the aim_resource_id of this ShowTemplateVideoThumbnailRequest.
 
         目标资源ID。
 

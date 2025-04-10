@@ -29,7 +29,7 @@ class AutoScalingPolicyV2:
     }
 
     def __init__(self, node_group_name=None, resource_pool_name=None, auto_scaling_policy=None):
-        """AutoScalingPolicyV2
+        r"""AutoScalingPolicyV2
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AutoScalingPolicyV2:
 
     @property
     def node_group_name(self):
-        """Gets the node_group_name of this AutoScalingPolicyV2.
+        r"""Gets the node_group_name of this AutoScalingPolicyV2.
 
         节点组名称。必填参数。如果resource_pool_name为default，则创建节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下创建对应资源池维度的策略。
 
@@ -66,7 +66,7 @@ class AutoScalingPolicyV2:
 
     @node_group_name.setter
     def node_group_name(self, node_group_name):
-        """Sets the node_group_name of this AutoScalingPolicyV2.
+        r"""Sets the node_group_name of this AutoScalingPolicyV2.
 
         节点组名称。必填参数。如果resource_pool_name为default，则创建节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下创建对应资源池维度的策略。
 
@@ -77,7 +77,7 @@ class AutoScalingPolicyV2:
 
     @property
     def resource_pool_name(self):
-        """Gets the resource_pool_name of this AutoScalingPolicyV2.
+        r"""Gets the resource_pool_name of this AutoScalingPolicyV2.
 
         资源池名称。必填参数。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
 
@@ -88,7 +88,7 @@ class AutoScalingPolicyV2:
 
     @resource_pool_name.setter
     def resource_pool_name(self, resource_pool_name):
-        """Sets the resource_pool_name of this AutoScalingPolicyV2.
+        r"""Sets the resource_pool_name of this AutoScalingPolicyV2.
 
         资源池名称。必填参数。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
 
@@ -99,7 +99,7 @@ class AutoScalingPolicyV2:
 
     @property
     def auto_scaling_policy(self):
-        """Gets the auto_scaling_policy of this AutoScalingPolicyV2.
+        r"""Gets the auto_scaling_policy of this AutoScalingPolicyV2.
 
         :return: The auto_scaling_policy of this AutoScalingPolicyV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyInfo`
@@ -108,7 +108,7 @@ class AutoScalingPolicyV2:
 
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
-        """Sets the auto_scaling_policy of this AutoScalingPolicyV2.
+        r"""Sets the auto_scaling_policy of this AutoScalingPolicyV2.
 
         :param auto_scaling_policy: The auto_scaling_policy of this AutoScalingPolicyV2.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyInfo`

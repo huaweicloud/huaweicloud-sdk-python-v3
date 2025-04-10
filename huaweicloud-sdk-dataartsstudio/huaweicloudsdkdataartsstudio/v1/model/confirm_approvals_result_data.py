@@ -25,7 +25,7 @@ class ConfirmApprovalsResultData:
     }
 
     def __init__(self, value=None):
-        """ConfirmApprovalsResultData
+        r"""ConfirmApprovalsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfirmApprovalsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ConfirmApprovalsResultData.
+        r"""Gets the value of this ConfirmApprovalsResultData.
 
         :return: The value of this ConfirmApprovalsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -52,7 +52,7 @@ class ConfirmApprovalsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfirmApprovalsResultData.
+        r"""Sets the value of this ConfirmApprovalsResultData.
 
         :param value: The value of this ConfirmApprovalsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`

@@ -29,7 +29,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None):
-        """DeleteGaussMySqlReadonlyNodeRequest
+        r"""DeleteGaussMySqlReadonlyNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteGaussMySqlReadonlyNodeRequest.
+        r"""Gets the x_language of this DeleteGaussMySqlReadonlyNodeRequest.
 
         语言。
 
@@ -66,7 +66,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteGaussMySqlReadonlyNodeRequest.
+        r"""Sets the x_language of this DeleteGaussMySqlReadonlyNodeRequest.
 
         语言。
 
@@ -77,7 +77,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteGaussMySqlReadonlyNodeRequest.
+        r"""Gets the instance_id of this DeleteGaussMySqlReadonlyNodeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteGaussMySqlReadonlyNodeRequest.
+        r"""Sets the instance_id of this DeleteGaussMySqlReadonlyNodeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteGaussMySqlReadonlyNodeRequest.
+        r"""Gets the node_id of this DeleteGaussMySqlReadonlyNodeRequest.
 
         节点ID，严格匹配UUID规则。
 
@@ -110,7 +110,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteGaussMySqlReadonlyNodeRequest.
+        r"""Sets the node_id of this DeleteGaussMySqlReadonlyNodeRequest.
 
         节点ID，严格匹配UUID规则。
 

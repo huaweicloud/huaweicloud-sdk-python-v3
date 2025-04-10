@@ -25,7 +25,7 @@ class KeystoneCreateScopedTokenRequest:
     }
 
     def __init__(self, body=None):
-        """KeystoneCreateScopedTokenRequest
+        r"""KeystoneCreateScopedTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class KeystoneCreateScopedTokenRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateScopedTokenRequest.
+        r"""Gets the body of this KeystoneCreateScopedTokenRequest.
 
         :return: The body of this KeystoneCreateScopedTokenRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenRequestBody`
@@ -52,7 +52,7 @@ class KeystoneCreateScopedTokenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateScopedTokenRequest.
+        r"""Sets the body of this KeystoneCreateScopedTokenRequest.
 
         :param body: The body of this KeystoneCreateScopedTokenRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenRequestBody`

@@ -62,7 +62,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, owner=None, start_time=None, duration=None, export_mode=None, database_name=None, table_name=None, data_path=None, data_type=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None, compress=None, tags=None):
-        """ShowSqlJobDetailResponse
+        r"""ShowSqlJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowSqlJobDetailResponse.
+        r"""Gets the is_success of this ShowSqlJobDetailResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -181,7 +181,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowSqlJobDetailResponse.
+        r"""Sets the is_success of this ShowSqlJobDetailResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -192,7 +192,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowSqlJobDetailResponse.
+        r"""Gets the message of this ShowSqlJobDetailResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -203,7 +203,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowSqlJobDetailResponse.
+        r"""Sets the message of this ShowSqlJobDetailResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -214,7 +214,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSqlJobDetailResponse.
+        r"""Gets the job_id of this ShowSqlJobDetailResponse.
 
         作业ID。
 
@@ -225,7 +225,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSqlJobDetailResponse.
+        r"""Sets the job_id of this ShowSqlJobDetailResponse.
 
         作业ID。
 
@@ -236,7 +236,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowSqlJobDetailResponse.
+        r"""Gets the owner of this ShowSqlJobDetailResponse.
 
         提交作业的用户。
 
@@ -247,7 +247,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowSqlJobDetailResponse.
+        r"""Sets the owner of this ShowSqlJobDetailResponse.
 
         提交作业的用户。
 
@@ -258,7 +258,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowSqlJobDetailResponse.
+        r"""Gets the start_time of this ShowSqlJobDetailResponse.
 
         作业开始的时间。是单位为“毫秒”的时间戳。
 
@@ -269,7 +269,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowSqlJobDetailResponse.
+        r"""Sets the start_time of this ShowSqlJobDetailResponse.
 
         作业开始的时间。是单位为“毫秒”的时间戳。
 
@@ -280,7 +280,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowSqlJobDetailResponse.
+        r"""Gets the duration of this ShowSqlJobDetailResponse.
 
         作业运行时长，单位毫秒。
 
@@ -291,7 +291,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowSqlJobDetailResponse.
+        r"""Sets the duration of this ShowSqlJobDetailResponse.
 
         作业运行时长，单位毫秒。
 
@@ -302,7 +302,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def export_mode(self):
-        """Gets the export_mode of this ShowSqlJobDetailResponse.
+        r"""Gets the export_mode of this ShowSqlJobDetailResponse.
 
         导出数据或保存查询结果时，指定的导出模式。
 
@@ -313,7 +313,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @export_mode.setter
     def export_mode(self, export_mode):
-        """Sets the export_mode of this ShowSqlJobDetailResponse.
+        r"""Sets the export_mode of this ShowSqlJobDetailResponse.
 
         导出数据或保存查询结果时，指定的导出模式。
 
@@ -324,7 +324,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowSqlJobDetailResponse.
+        r"""Gets the database_name of this ShowSqlJobDetailResponse.
 
         记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
 
@@ -335,7 +335,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowSqlJobDetailResponse.
+        r"""Sets the database_name of this ShowSqlJobDetailResponse.
 
         记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
 
@@ -346,7 +346,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowSqlJobDetailResponse.
+        r"""Gets the table_name of this ShowSqlJobDetailResponse.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -357,7 +357,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowSqlJobDetailResponse.
+        r"""Sets the table_name of this ShowSqlJobDetailResponse.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -368,7 +368,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def data_path(self):
-        """Gets the data_path of this ShowSqlJobDetailResponse.
+        r"""Gets the data_path of this ShowSqlJobDetailResponse.
 
         导入或导出的文件路径。
 
@@ -379,7 +379,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @data_path.setter
     def data_path(self, data_path):
-        """Sets the data_path of this ShowSqlJobDetailResponse.
+        r"""Sets the data_path of this ShowSqlJobDetailResponse.
 
         导入或导出的文件路径。
 
@@ -390,7 +390,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this ShowSqlJobDetailResponse.
+        r"""Gets the data_type of this ShowSqlJobDetailResponse.
 
         导入或导出的数据类型（当前仅支持csv）。
 
@@ -401,7 +401,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ShowSqlJobDetailResponse.
+        r"""Sets the data_type of this ShowSqlJobDetailResponse.
 
         导入或导出的数据类型（当前仅支持csv）。
 
@@ -412,7 +412,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this ShowSqlJobDetailResponse.
+        r"""Gets the with_column_header of this ShowSqlJobDetailResponse.
 
         导入作业时，导入的数据是否包括列名。
 
@@ -423,7 +423,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this ShowSqlJobDetailResponse.
+        r"""Sets the with_column_header of this ShowSqlJobDetailResponse.
 
         导入作业时，导入的数据是否包括列名。
 
@@ -434,7 +434,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ShowSqlJobDetailResponse.
+        r"""Gets the delimiter of this ShowSqlJobDetailResponse.
 
         导入作业时，用户自定义数据分隔符。
 
@@ -445,7 +445,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ShowSqlJobDetailResponse.
+        r"""Sets the delimiter of this ShowSqlJobDetailResponse.
 
         导入作业时，用户自定义数据分隔符。
 
@@ -456,7 +456,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def quote_char(self):
-        """Gets the quote_char of this ShowSqlJobDetailResponse.
+        r"""Gets the quote_char of this ShowSqlJobDetailResponse.
 
         导入作业时，用户自定义引用字符。
 
@@ -467,7 +467,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @quote_char.setter
     def quote_char(self, quote_char):
-        """Sets the quote_char of this ShowSqlJobDetailResponse.
+        r"""Sets the quote_char of this ShowSqlJobDetailResponse.
 
         导入作业时，用户自定义引用字符。
 
@@ -478,7 +478,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def escape_char(self):
-        """Gets the escape_char of this ShowSqlJobDetailResponse.
+        r"""Gets the escape_char of this ShowSqlJobDetailResponse.
 
         导入作业时，用户自定义转义字符。
 
@@ -489,7 +489,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @escape_char.setter
     def escape_char(self, escape_char):
-        """Sets the escape_char of this ShowSqlJobDetailResponse.
+        r"""Sets the escape_char of this ShowSqlJobDetailResponse.
 
         导入作业时，用户自定义转义字符。
 
@@ -500,7 +500,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def date_format(self):
-        """Gets the date_format of this ShowSqlJobDetailResponse.
+        r"""Gets the date_format of this ShowSqlJobDetailResponse.
 
         导入作业时，指定表的日期格式。
 
@@ -511,7 +511,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @date_format.setter
     def date_format(self, date_format):
-        """Sets the date_format of this ShowSqlJobDetailResponse.
+        r"""Sets the date_format of this ShowSqlJobDetailResponse.
 
         导入作业时，指定表的日期格式。
 
@@ -522,7 +522,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this ShowSqlJobDetailResponse.
+        r"""Gets the timestamp_format of this ShowSqlJobDetailResponse.
 
         导入作业时，指定表的时间格式
 
@@ -533,7 +533,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this ShowSqlJobDetailResponse.
+        r"""Sets the timestamp_format of this ShowSqlJobDetailResponse.
 
         导入作业时，指定表的时间格式
 
@@ -544,7 +544,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def compress(self):
-        """Gets the compress of this ShowSqlJobDetailResponse.
+        r"""Gets the compress of this ShowSqlJobDetailResponse.
 
         导出作业时，用户指定的压缩方式。
 
@@ -555,7 +555,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @compress.setter
     def compress(self, compress):
-        """Sets the compress of this ShowSqlJobDetailResponse.
+        r"""Sets the compress of this ShowSqlJobDetailResponse.
 
         导出作业时，用户指定的压缩方式。
 
@@ -566,7 +566,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowSqlJobDetailResponse.
+        r"""Gets the tags of this ShowSqlJobDetailResponse.
 
         作业标签
 
@@ -577,7 +577,7 @@ class ShowSqlJobDetailResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowSqlJobDetailResponse.
+        r"""Sets the tags of this ShowSqlJobDetailResponse.
 
         作业标签
 

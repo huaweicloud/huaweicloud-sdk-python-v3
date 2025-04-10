@@ -32,7 +32,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """ListPlaybookApprovesResponse
+        r"""ListPlaybookApprovesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListPlaybookApprovesResponse.
+        r"""Gets the code of this ListPlaybookApprovesResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListPlaybookApprovesResponse.
+        r"""Sets the code of this ListPlaybookApprovesResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListPlaybookApprovesResponse.
+        r"""Gets the message of this ListPlaybookApprovesResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListPlaybookApprovesResponse.
+        r"""Sets the message of this ListPlaybookApprovesResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPlaybookApprovesResponse.
+        r"""Gets the data of this ListPlaybookApprovesResponse.
 
         剧本审核详情
 
@@ -120,7 +120,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPlaybookApprovesResponse.
+        r"""Sets the data of this ListPlaybookApprovesResponse.
 
         剧本审核详情
 
@@ -131,7 +131,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlaybookApprovesResponse.
+        r"""Gets the x_request_id of this ListPlaybookApprovesResponse.
 
         :return: The x_request_id of this ListPlaybookApprovesResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlaybookApprovesResponse.
+        r"""Sets the x_request_id of this ListPlaybookApprovesResponse.
 
         :param x_request_id: The x_request_id of this ListPlaybookApprovesResponse.
         :type x_request_id: str

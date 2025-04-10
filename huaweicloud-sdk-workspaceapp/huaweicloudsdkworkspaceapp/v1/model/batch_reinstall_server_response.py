@@ -26,7 +26,7 @@ class BatchReinstallServerResponse(SdkResponse):
     }
 
     def __init__(self, items=None):
-        """BatchReinstallServerResponse
+        r"""BatchReinstallServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchReinstallServerResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this BatchReinstallServerResponse.
+        r"""Gets the items of this BatchReinstallServerResponse.
 
         服务器任务信息。
 
@@ -55,7 +55,7 @@ class BatchReinstallServerResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchReinstallServerResponse.
+        r"""Sets the items of this BatchReinstallServerResponse.
 
         服务器任务信息。
 

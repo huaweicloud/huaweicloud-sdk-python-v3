@@ -33,7 +33,7 @@ class QueryAppImageResponseDTO:
     }
 
     def __init__(self, image_namespace=None, name=None, tag=None, digest=None, create_time=None):
-        """QueryAppImageResponseDTO
+        r"""QueryAppImageResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryAppImageResponseDTO:
 
     @property
     def image_namespace(self):
-        """Gets the image_namespace of this QueryAppImageResponseDTO.
+        r"""Gets the image_namespace of this QueryAppImageResponseDTO.
 
         镜像组织
 
@@ -82,7 +82,7 @@ class QueryAppImageResponseDTO:
 
     @image_namespace.setter
     def image_namespace(self, image_namespace):
-        """Sets the image_namespace of this QueryAppImageResponseDTO.
+        r"""Sets the image_namespace of this QueryAppImageResponseDTO.
 
         镜像组织
 
@@ -93,7 +93,7 @@ class QueryAppImageResponseDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryAppImageResponseDTO.
+        r"""Gets the name of this QueryAppImageResponseDTO.
 
         镜像仓库名称
 
@@ -104,7 +104,7 @@ class QueryAppImageResponseDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryAppImageResponseDTO.
+        r"""Sets the name of this QueryAppImageResponseDTO.
 
         镜像仓库名称
 
@@ -115,7 +115,7 @@ class QueryAppImageResponseDTO:
 
     @property
     def tag(self):
-        """Gets the tag of this QueryAppImageResponseDTO.
+        r"""Gets the tag of this QueryAppImageResponseDTO.
 
         镜像tag
 
@@ -126,7 +126,7 @@ class QueryAppImageResponseDTO:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this QueryAppImageResponseDTO.
+        r"""Sets the tag of this QueryAppImageResponseDTO.
 
         镜像tag
 
@@ -137,7 +137,7 @@ class QueryAppImageResponseDTO:
 
     @property
     def digest(self):
-        """Gets the digest of this QueryAppImageResponseDTO.
+        r"""Gets the digest of this QueryAppImageResponseDTO.
 
         镜像摘要
 
@@ -148,7 +148,7 @@ class QueryAppImageResponseDTO:
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this QueryAppImageResponseDTO.
+        r"""Sets the digest of this QueryAppImageResponseDTO.
 
         镜像摘要
 
@@ -159,7 +159,7 @@ class QueryAppImageResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryAppImageResponseDTO.
+        r"""Gets the create_time of this QueryAppImageResponseDTO.
 
         创建时间
 
@@ -170,7 +170,7 @@ class QueryAppImageResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryAppImageResponseDTO.
+        r"""Sets the create_time of this QueryAppImageResponseDTO.
 
         创建时间
 

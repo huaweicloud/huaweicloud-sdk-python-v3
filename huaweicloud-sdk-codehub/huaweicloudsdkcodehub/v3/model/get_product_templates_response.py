@@ -30,7 +30,7 @@ class GetProductTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """GetProductTemplatesResponse
+        r"""GetProductTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this GetProductTemplatesResponse.
+        r"""Gets the error of this GetProductTemplatesResponse.
 
         :return: The error of this GetProductTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this GetProductTemplatesResponse.
+        r"""Sets the error of this GetProductTemplatesResponse.
 
         :param error: The error of this GetProductTemplatesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this GetProductTemplatesResponse.
+        r"""Gets the result of this GetProductTemplatesResponse.
 
         :return: The result of this GetProductTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
@@ -85,7 +85,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this GetProductTemplatesResponse.
+        r"""Sets the result of this GetProductTemplatesResponse.
 
         :param result: The result of this GetProductTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
@@ -94,7 +94,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GetProductTemplatesResponse.
+        r"""Gets the status of this GetProductTemplatesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class GetProductTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetProductTemplatesResponse.
+        r"""Sets the status of this GetProductTemplatesResponse.
 
         响应状态
 

@@ -27,7 +27,7 @@ class KeystoneCheckUserInGroupRequest:
     }
 
     def __init__(self, group_id=None, user_id=None):
-        """KeystoneCheckUserInGroupRequest
+        r"""KeystoneCheckUserInGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeystoneCheckUserInGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneCheckUserInGroupRequest.
+        r"""Gets the group_id of this KeystoneCheckUserInGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -59,7 +59,7 @@ class KeystoneCheckUserInGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneCheckUserInGroupRequest.
+        r"""Sets the group_id of this KeystoneCheckUserInGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -70,7 +70,7 @@ class KeystoneCheckUserInGroupRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this KeystoneCheckUserInGroupRequest.
+        r"""Gets the user_id of this KeystoneCheckUserInGroupRequest.
 
         待查询的IAM用户ID，获取方式请参见：[获取IAM用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -81,7 +81,7 @@ class KeystoneCheckUserInGroupRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this KeystoneCheckUserInGroupRequest.
+        r"""Sets the user_id of this KeystoneCheckUserInGroupRequest.
 
         待查询的IAM用户ID，获取方式请参见：[获取IAM用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

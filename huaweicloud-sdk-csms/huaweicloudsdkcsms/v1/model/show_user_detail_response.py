@@ -56,7 +56,7 @@ class ShowUserDetailResponse(SdkResponse):
     }
 
     def __init__(self, user_id=None, org_id=None, user_name=None, name=None, mobile=None, email=None, pwd_must_modify=None, pwd_change_at=None, created_at=None, updated_at=None, disabled=None, grade=None, locked=None, extension=None, user_org_relation_list=None, domain_id=None):
-        """ShowUserDetailResponse
+        r"""ShowUserDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowUserDetailResponse.
+        r"""Gets the user_id of this ShowUserDetailResponse.
 
         用户id。
 
@@ -160,7 +160,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowUserDetailResponse.
+        r"""Sets the user_id of this ShowUserDetailResponse.
 
         用户id。
 
@@ -171,7 +171,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def org_id(self):
-        """Gets the org_id of this ShowUserDetailResponse.
+        r"""Gets the org_id of this ShowUserDetailResponse.
 
         用户所属组织。
 
@@ -182,7 +182,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this ShowUserDetailResponse.
+        r"""Sets the org_id of this ShowUserDetailResponse.
 
         用户所属组织。
 
@@ -193,7 +193,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowUserDetailResponse.
+        r"""Gets the user_name of this ShowUserDetailResponse.
 
         用户名。
 
@@ -204,7 +204,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowUserDetailResponse.
+        r"""Sets the user_name of this ShowUserDetailResponse.
 
         用户名。
 
@@ -215,7 +215,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowUserDetailResponse.
+        r"""Gets the name of this ShowUserDetailResponse.
 
         姓名。
 
@@ -226,7 +226,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowUserDetailResponse.
+        r"""Sets the name of this ShowUserDetailResponse.
 
         姓名。
 
@@ -237,7 +237,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def mobile(self):
-        """Gets the mobile of this ShowUserDetailResponse.
+        r"""Gets the mobile of this ShowUserDetailResponse.
 
         手机号。
 
@@ -248,7 +248,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this ShowUserDetailResponse.
+        r"""Sets the mobile of this ShowUserDetailResponse.
 
         手机号。
 
@@ -259,7 +259,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowUserDetailResponse.
+        r"""Gets the email of this ShowUserDetailResponse.
 
         邮箱。
 
@@ -270,7 +270,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowUserDetailResponse.
+        r"""Sets the email of this ShowUserDetailResponse.
 
         邮箱。
 
@@ -281,7 +281,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def pwd_must_modify(self):
-        """Gets the pwd_must_modify of this ShowUserDetailResponse.
+        r"""Gets the pwd_must_modify of this ShowUserDetailResponse.
 
         首次登录是否强制修改密码。
 
@@ -292,7 +292,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @pwd_must_modify.setter
     def pwd_must_modify(self, pwd_must_modify):
-        """Sets the pwd_must_modify of this ShowUserDetailResponse.
+        r"""Sets the pwd_must_modify of this ShowUserDetailResponse.
 
         首次登录是否强制修改密码。
 
@@ -303,7 +303,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def pwd_change_at(self):
-        """Gets the pwd_change_at of this ShowUserDetailResponse.
+        r"""Gets the pwd_change_at of this ShowUserDetailResponse.
 
         密码修改时间
 
@@ -314,7 +314,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @pwd_change_at.setter
     def pwd_change_at(self, pwd_change_at):
-        """Sets the pwd_change_at of this ShowUserDetailResponse.
+        r"""Sets the pwd_change_at of this ShowUserDetailResponse.
 
         密码修改时间
 
@@ -325,7 +325,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowUserDetailResponse.
+        r"""Gets the created_at of this ShowUserDetailResponse.
 
         创建时间。
 
@@ -336,7 +336,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowUserDetailResponse.
+        r"""Sets the created_at of this ShowUserDetailResponse.
 
         创建时间。
 
@@ -347,7 +347,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowUserDetailResponse.
+        r"""Gets the updated_at of this ShowUserDetailResponse.
 
         最后一次修改时间。
 
@@ -358,7 +358,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowUserDetailResponse.
+        r"""Sets the updated_at of this ShowUserDetailResponse.
 
         最后一次修改时间。
 
@@ -369,7 +369,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def disabled(self):
-        """Gets the disabled of this ShowUserDetailResponse.
+        r"""Gets the disabled of this ShowUserDetailResponse.
 
         是否禁用。
 
@@ -380,7 +380,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this ShowUserDetailResponse.
+        r"""Sets the disabled of this ShowUserDetailResponse.
 
         是否禁用。
 
@@ -391,7 +391,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def grade(self):
-        """Gets the grade of this ShowUserDetailResponse.
+        r"""Gets the grade of this ShowUserDetailResponse.
 
         可信等级。
 
@@ -402,7 +402,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @grade.setter
     def grade(self, grade):
-        """Sets the grade of this ShowUserDetailResponse.
+        r"""Sets the grade of this ShowUserDetailResponse.
 
         可信等级。
 
@@ -413,7 +413,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def locked(self):
-        """Gets the locked of this ShowUserDetailResponse.
+        r"""Gets the locked of this ShowUserDetailResponse.
 
         是否锁定。
 
@@ -424,7 +424,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this ShowUserDetailResponse.
+        r"""Sets the locked of this ShowUserDetailResponse.
 
         是否锁定。
 
@@ -435,7 +435,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def extension(self):
-        """Gets the extension of this ShowUserDetailResponse.
+        r"""Gets the extension of this ShowUserDetailResponse.
 
         自定义扩展属性。
 
@@ -446,7 +446,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @extension.setter
     def extension(self, extension):
-        """Sets the extension of this ShowUserDetailResponse.
+        r"""Sets the extension of this ShowUserDetailResponse.
 
         自定义扩展属性。
 
@@ -457,7 +457,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def user_org_relation_list(self):
-        """Gets the user_org_relation_list of this ShowUserDetailResponse.
+        r"""Gets the user_org_relation_list of this ShowUserDetailResponse.
 
         用户组织关系集合。
 
@@ -468,7 +468,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @user_org_relation_list.setter
     def user_org_relation_list(self, user_org_relation_list):
-        """Sets the user_org_relation_list of this ShowUserDetailResponse.
+        r"""Sets the user_org_relation_list of this ShowUserDetailResponse.
 
         用户组织关系集合。
 
@@ -479,7 +479,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowUserDetailResponse.
+        r"""Gets the domain_id of this ShowUserDetailResponse.
 
         所属租户ID
 
@@ -490,7 +490,7 @@ class ShowUserDetailResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowUserDetailResponse.
+        r"""Sets the domain_id of this ShowUserDetailResponse.
 
         所属租户ID
 

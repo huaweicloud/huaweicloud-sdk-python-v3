@@ -30,7 +30,7 @@ class DeleteRepositoryResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteRepositoryResponse
+        r"""DeleteRepositoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteRepositoryResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteRepositoryResponse.
+        r"""Gets the error of this DeleteRepositoryResponse.
 
         :return: The error of this DeleteRepositoryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class DeleteRepositoryResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteRepositoryResponse.
+        r"""Sets the error of this DeleteRepositoryResponse.
 
         :param error: The error of this DeleteRepositoryResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class DeleteRepositoryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteRepositoryResponse.
+        r"""Gets the result of this DeleteRepositoryResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class DeleteRepositoryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteRepositoryResponse.
+        r"""Sets the result of this DeleteRepositoryResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class DeleteRepositoryResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteRepositoryResponse.
+        r"""Gets the status of this DeleteRepositoryResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class DeleteRepositoryResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteRepositoryResponse.
+        r"""Sets the status of this DeleteRepositoryResponse.
 
         响应状态
 

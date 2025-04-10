@@ -27,7 +27,7 @@ class CustomProp:
     }
 
     def __init__(self, id=None, prop_definition=None):
-        """CustomProp
+        r"""CustomProp
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CustomProp:
 
     @property
     def id(self):
-        """Gets the id of this CustomProp.
+        r"""Gets the id of this CustomProp.
 
         自定义属性的ID（API侧）
 
@@ -60,7 +60,7 @@ class CustomProp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomProp.
+        r"""Sets the id of this CustomProp.
 
         自定义属性的ID（API侧）
 
@@ -71,7 +71,7 @@ class CustomProp:
 
     @property
     def prop_definition(self):
-        """Gets the prop_definition of this CustomProp.
+        r"""Gets the prop_definition of this CustomProp.
 
         :return: The prop_definition of this CustomProp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PropDefinition`
@@ -80,7 +80,7 @@ class CustomProp:
 
     @prop_definition.setter
     def prop_definition(self, prop_definition):
-        """Sets the prop_definition of this CustomProp.
+        r"""Sets the prop_definition of this CustomProp.
 
         :param prop_definition: The prop_definition of this CustomProp.
         :type prop_definition: :class:`huaweicloudsdkeihealth.v1.PropDefinition`

@@ -39,7 +39,7 @@ class QueryCorpBasicResultDTO:
     }
 
     def __init__(self, name=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None):
-        """QueryCorpBasicResultDTO
+        r"""QueryCorpBasicResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryCorpBasicResultDTO.
+        r"""Gets the name of this QueryCorpBasicResultDTO.
 
         企业名称。
 
@@ -103,7 +103,7 @@ class QueryCorpBasicResultDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryCorpBasicResultDTO.
+        r"""Sets the name of this QueryCorpBasicResultDTO.
 
         企业名称。
 
@@ -114,7 +114,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this QueryCorpBasicResultDTO.
+        r"""Gets the phone of this QueryCorpBasicResultDTO.
 
         联系号码。
 
@@ -125,7 +125,7 @@ class QueryCorpBasicResultDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this QueryCorpBasicResultDTO.
+        r"""Sets the phone of this QueryCorpBasicResultDTO.
 
         联系号码。
 
@@ -136,7 +136,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def country(self):
-        """Gets the country of this QueryCorpBasicResultDTO.
+        r"""Gets the country of this QueryCorpBasicResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -147,7 +147,7 @@ class QueryCorpBasicResultDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this QueryCorpBasicResultDTO.
+        r"""Sets the country of this QueryCorpBasicResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -158,7 +158,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def fax(self):
-        """Gets the fax of this QueryCorpBasicResultDTO.
+        r"""Gets the fax of this QueryCorpBasicResultDTO.
 
         传真号码。
 
@@ -169,7 +169,7 @@ class QueryCorpBasicResultDTO:
 
     @fax.setter
     def fax(self, fax):
-        """Sets the fax of this QueryCorpBasicResultDTO.
+        r"""Sets the fax of this QueryCorpBasicResultDTO.
 
         传真号码。
 
@@ -180,7 +180,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def email(self):
-        """Gets the email of this QueryCorpBasicResultDTO.
+        r"""Gets the email of this QueryCorpBasicResultDTO.
 
         邮箱地址。
 
@@ -191,7 +191,7 @@ class QueryCorpBasicResultDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this QueryCorpBasicResultDTO.
+        r"""Sets the email of this QueryCorpBasicResultDTO.
 
         邮箱地址。
 
@@ -202,7 +202,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def address(self):
-        """Gets the address of this QueryCorpBasicResultDTO.
+        r"""Gets the address of this QueryCorpBasicResultDTO.
 
         地址。
 
@@ -213,7 +213,7 @@ class QueryCorpBasicResultDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this QueryCorpBasicResultDTO.
+        r"""Sets the address of this QueryCorpBasicResultDTO.
 
         地址。
 
@@ -224,7 +224,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryCorpBasicResultDTO.
+        r"""Gets the description of this QueryCorpBasicResultDTO.
 
         备注。
 
@@ -235,7 +235,7 @@ class QueryCorpBasicResultDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryCorpBasicResultDTO.
+        r"""Sets the description of this QueryCorpBasicResultDTO.
 
         备注。
 
@@ -246,7 +246,7 @@ class QueryCorpBasicResultDTO:
 
     @property
     def sp_id(self):
-        """Gets the sp_id of this QueryCorpBasicResultDTO.
+        r"""Gets the sp_id of this QueryCorpBasicResultDTO.
 
         企业所属SP ID。
 
@@ -257,7 +257,7 @@ class QueryCorpBasicResultDTO:
 
     @sp_id.setter
     def sp_id(self, sp_id):
-        """Sets the sp_id of this QueryCorpBasicResultDTO.
+        r"""Sets the sp_id of this QueryCorpBasicResultDTO.
 
         企业所属SP ID。
 

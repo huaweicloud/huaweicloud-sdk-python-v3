@@ -44,7 +44,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, job_id=None, begin_time=None, end_time=None, status=None, phone_id=None, server_id=None, error_msg=None, error_code=None, execute_msg=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowJobResponse.
+        r"""Gets the request_id of this ShowJobResponse.
 
         请求的唯一标识ID。
 
@@ -118,7 +118,7 @@ class ShowJobResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowJobResponse.
+        r"""Sets the request_id of this ShowJobResponse.
 
         请求的唯一标识ID。
 
@@ -129,7 +129,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobResponse.
+        r"""Gets the job_id of this ShowJobResponse.
 
         任务的唯一标识。
 
@@ -140,7 +140,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobResponse.
+        r"""Sets the job_id of this ShowJobResponse.
 
         任务的唯一标识。
 
@@ -151,7 +151,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobResponse.
+        r"""Gets the begin_time of this ShowJobResponse.
 
         任务处理开始时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -162,7 +162,7 @@ class ShowJobResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobResponse.
+        r"""Sets the begin_time of this ShowJobResponse.
 
         任务处理开始时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -173,7 +173,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobResponse.
+        r"""Gets the end_time of this ShowJobResponse.
 
         任务处理结束时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -184,7 +184,7 @@ class ShowJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobResponse.
+        r"""Sets the end_time of this ShowJobResponse.
 
         任务处理结束时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -195,7 +195,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobResponse.
+        r"""Gets the status of this ShowJobResponse.
 
         任务状态。 - 1： 运行中 - 2： 成功 - -1： 失败
 
@@ -206,7 +206,7 @@ class ShowJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobResponse.
+        r"""Sets the status of this ShowJobResponse.
 
         任务状态。 - 1： 运行中 - 2： 成功 - -1： 失败
 
@@ -217,7 +217,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this ShowJobResponse.
+        r"""Gets the phone_id of this ShowJobResponse.
 
         云手机的唯一标识，云手机相关任务包含此字段。
 
@@ -228,7 +228,7 @@ class ShowJobResponse(SdkResponse):
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this ShowJobResponse.
+        r"""Sets the phone_id of this ShowJobResponse.
 
         云手机的唯一标识，云手机相关任务包含此字段。
 
@@ -239,7 +239,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowJobResponse.
+        r"""Gets the server_id of this ShowJobResponse.
 
         云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
@@ -250,7 +250,7 @@ class ShowJobResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowJobResponse.
+        r"""Sets the server_id of this ShowJobResponse.
 
         云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
@@ -261,7 +261,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowJobResponse.
+        r"""Gets the error_msg of this ShowJobResponse.
 
         任务错误码说明。
 
@@ -272,7 +272,7 @@ class ShowJobResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowJobResponse.
+        r"""Sets the error_msg of this ShowJobResponse.
 
         任务错误码说明。
 
@@ -283,7 +283,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowJobResponse.
+        r"""Gets the error_code of this ShowJobResponse.
 
         任务错误码。
 
@@ -294,7 +294,7 @@ class ShowJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowJobResponse.
+        r"""Sets the error_code of this ShowJobResponse.
 
         任务错误码。
 
@@ -305,7 +305,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def execute_msg(self):
-        """Gets the execute_msg of this ShowJobResponse.
+        r"""Gets the execute_msg of this ShowJobResponse.
 
         任务执行返回内容，最长1024个字节。
 
@@ -316,7 +316,7 @@ class ShowJobResponse(SdkResponse):
 
     @execute_msg.setter
     def execute_msg(self, execute_msg):
-        """Sets the execute_msg of this ShowJobResponse.
+        r"""Sets the execute_msg of this ShowJobResponse.
 
         任务执行返回内容，最长1024个字节。
 

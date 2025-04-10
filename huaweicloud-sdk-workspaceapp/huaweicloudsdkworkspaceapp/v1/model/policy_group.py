@@ -39,7 +39,7 @@ class PolicyGroup:
     }
 
     def __init__(self, id=None, name=None, priority=None, description=None, targets=None, policies=None, create_time=None, update_time=None):
-        """PolicyGroup
+        r"""PolicyGroup
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PolicyGroup:
 
     @property
     def id(self):
-        """Gets the id of this PolicyGroup.
+        r"""Gets the id of this PolicyGroup.
 
         策略组的唯一标识。
 
@@ -103,7 +103,7 @@ class PolicyGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyGroup.
+        r"""Sets the id of this PolicyGroup.
 
         策略组的唯一标识。
 
@@ -114,7 +114,7 @@ class PolicyGroup:
 
     @property
     def name(self):
-        """Gets the name of this PolicyGroup.
+        r"""Gets the name of this PolicyGroup.
 
         策略组名称。
 
@@ -125,7 +125,7 @@ class PolicyGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyGroup.
+        r"""Sets the name of this PolicyGroup.
 
         策略组名称。
 
@@ -136,7 +136,7 @@ class PolicyGroup:
 
     @property
     def priority(self):
-        """Gets the priority of this PolicyGroup.
+        r"""Gets the priority of this PolicyGroup.
 
         优先级。
 
@@ -147,7 +147,7 @@ class PolicyGroup:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PolicyGroup.
+        r"""Sets the priority of this PolicyGroup.
 
         优先级。
 
@@ -158,7 +158,7 @@ class PolicyGroup:
 
     @property
     def description(self):
-        """Gets the description of this PolicyGroup.
+        r"""Gets the description of this PolicyGroup.
 
         服务器组描述。
 
@@ -169,7 +169,7 @@ class PolicyGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyGroup.
+        r"""Sets the description of this PolicyGroup.
 
         服务器组描述。
 
@@ -180,7 +180,7 @@ class PolicyGroup:
 
     @property
     def targets(self):
-        """Gets the targets of this PolicyGroup.
+        r"""Gets the targets of this PolicyGroup.
 
         应用对象列表。
 
@@ -191,7 +191,7 @@ class PolicyGroup:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this PolicyGroup.
+        r"""Sets the targets of this PolicyGroup.
 
         应用对象列表。
 
@@ -202,7 +202,7 @@ class PolicyGroup:
 
     @property
     def policies(self):
-        """Gets the policies of this PolicyGroup.
+        r"""Gets the policies of this PolicyGroup.
 
         :return: The policies of this PolicyGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -211,7 +211,7 @@ class PolicyGroup:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PolicyGroup.
+        r"""Sets the policies of this PolicyGroup.
 
         :param policies: The policies of this PolicyGroup.
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -220,7 +220,7 @@ class PolicyGroup:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PolicyGroup.
+        r"""Gets the create_time of this PolicyGroup.
 
         策略组创建时间。
 
@@ -231,7 +231,7 @@ class PolicyGroup:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PolicyGroup.
+        r"""Sets the create_time of this PolicyGroup.
 
         策略组创建时间。
 
@@ -242,7 +242,7 @@ class PolicyGroup:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PolicyGroup.
+        r"""Gets the update_time of this PolicyGroup.
 
         策略组更新时间。
 
@@ -253,7 +253,7 @@ class PolicyGroup:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PolicyGroup.
+        r"""Sets the update_time of this PolicyGroup.
 
         策略组更新时间。
 

@@ -29,7 +29,7 @@ class CollectPositionAsyncRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """CollectPositionAsyncRequest
+        r"""CollectPositionAsyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CollectPositionAsyncRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectPositionAsyncRequest.
+        r"""Gets the job_id of this CollectPositionAsyncRequest.
 
         任务ID
 
@@ -67,7 +67,7 @@ class CollectPositionAsyncRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectPositionAsyncRequest.
+        r"""Sets the job_id of this CollectPositionAsyncRequest.
 
         任务ID
 
@@ -78,7 +78,7 @@ class CollectPositionAsyncRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CollectPositionAsyncRequest.
+        r"""Gets the x_language of this CollectPositionAsyncRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CollectPositionAsyncRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CollectPositionAsyncRequest.
+        r"""Sets the x_language of this CollectPositionAsyncRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CollectPositionAsyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this CollectPositionAsyncRequest.
+        r"""Gets the body of this CollectPositionAsyncRequest.
 
         :return: The body of this CollectPositionAsyncRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryDbPositionReq`
@@ -109,7 +109,7 @@ class CollectPositionAsyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectPositionAsyncRequest.
+        r"""Sets the body of this CollectPositionAsyncRequest.
 
         :param body: The body of this CollectPositionAsyncRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.QueryDbPositionReq`

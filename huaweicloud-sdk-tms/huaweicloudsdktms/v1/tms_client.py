@@ -34,7 +34,7 @@ class TmsClient(Client):
         return client_builder
 
     def create_predefine_tags(self, request):
-        """创建预定义标签
+        r"""创建预定义标签
 
         用于创建预定标签。用户创建预定义标签后，可以使用预定义标签来给资源创建标签。该接口支持幂等特性和处理批量数据。
         
@@ -99,7 +99,7 @@ class TmsClient(Client):
         return http_info
 
     def create_resource_tag(self, request):
-        """批量添加标签
+        r"""批量添加标签
 
         用于给云服务的多个资源添加标签，每个资源最多可添加10个标签，每次最多支持批量操作20个资源。
         
@@ -164,7 +164,7 @@ class TmsClient(Client):
         return http_info
 
     def delete_predefine_tags(self, request):
-        """删除预定义标签
+        r"""删除预定义标签
 
         用于删除预定标签。
         
@@ -229,7 +229,7 @@ class TmsClient(Client):
         return http_info
 
     def delete_resource_tag(self, request):
-        """批量移除标签
+        r"""批量移除标签
 
         用于批量移除云服务多个资源的标签，每个资源最多支持移除10个标签，每次最多支持批量操作20个资源。
         
@@ -294,7 +294,7 @@ class TmsClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询API版本列表
+        r"""查询API版本列表
 
         查询标签管理服务的API版本列表。
         
@@ -357,7 +357,7 @@ class TmsClient(Client):
         return http_info
 
     def list_predefine_tags(self, request):
-        """查询预定义标签列表
+        r"""查询预定义标签列表
 
         用于查询预定义标签列表。
         
@@ -432,7 +432,7 @@ class TmsClient(Client):
         return http_info
 
     def list_providers(self, request):
-        """查询标签管理支持的服务
+        r"""查询标签管理支持的服务
 
         查询标签管理支持的服务。
         
@@ -503,7 +503,7 @@ class TmsClient(Client):
         return http_info
 
     def list_resource(self, request):
-        """根据标签过滤资源
+        r"""根据标签过滤资源
 
         根据标签过滤资源。
         
@@ -568,7 +568,7 @@ class TmsClient(Client):
         return http_info
 
     def list_tag_keys(self, request):
-        """查询标签键列表
+        r"""查询标签键列表
 
         查询指定区域的所有标签键.
         
@@ -637,7 +637,7 @@ class TmsClient(Client):
         return http_info
 
     def list_tag_values(self, request):
-        """查询标签值列表
+        r"""查询标签值列表
 
         查询指定区域的标签键下的所有标签值。
         
@@ -708,7 +708,7 @@ class TmsClient(Client):
         return http_info
 
     def show_api_version(self, request):
-        """查询API版本号详情
+        r"""查询API版本号详情
 
         查询指定的标签管理服务API版本号详情。
         
@@ -773,7 +773,7 @@ class TmsClient(Client):
         return http_info
 
     def show_resource_tag(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询单个资源上的标签。
         
@@ -842,7 +842,7 @@ class TmsClient(Client):
         return http_info
 
     def show_tag_quota(self, request):
-        """查询标签配额
+        r"""查询标签配额
 
         查询标签的配额信息。
         
@@ -905,7 +905,7 @@ class TmsClient(Client):
         return http_info
 
     def update_predefine_tags(self, request):
-        """修改预定义标签
+        r"""修改预定义标签
 
         修改预定义标签。
         

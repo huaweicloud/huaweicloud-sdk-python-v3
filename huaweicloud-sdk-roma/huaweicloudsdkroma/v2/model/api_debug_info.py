@@ -45,7 +45,7 @@ class ApiDebugInfo:
     }
 
     def __init__(self, body=None, header=None, method=None, mode=None, path=None, query=None, scheme=None, app_key=None, app_secret=None, domain=None, stage=None):
-        """ApiDebugInfo
+        r"""ApiDebugInfo
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class ApiDebugInfo:
 
     @property
     def body(self):
-        """Gets the body of this ApiDebugInfo.
+        r"""Gets the body of this ApiDebugInfo.
 
         请求消息体，最长2097152字节
 
@@ -120,7 +120,7 @@ class ApiDebugInfo:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApiDebugInfo.
+        r"""Sets the body of this ApiDebugInfo.
 
         请求消息体，最长2097152字节
 
@@ -131,7 +131,7 @@ class ApiDebugInfo:
 
     @property
     def header(self):
-        """Gets the header of this ApiDebugInfo.
+        r"""Gets the header of this ApiDebugInfo.
 
         头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\"X-Auth-Token\"和\"Authorization\"，不区分大小写 > 头域名称在使用前会被规范化，如：\"x-MY-hEaDer\"会被规范化为\"X-My-Header\"
 
@@ -142,7 +142,7 @@ class ApiDebugInfo:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this ApiDebugInfo.
+        r"""Sets the header of this ApiDebugInfo.
 
         头域参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写 - mode为MARKET或CONSUMER时，不支持取值为\"X-Auth-Token\"和\"Authorization\"，不区分大小写 > 头域名称在使用前会被规范化，如：\"x-MY-hEaDer\"会被规范化为\"X-My-Header\"
 
@@ -153,7 +153,7 @@ class ApiDebugInfo:
 
     @property
     def method(self):
-        """Gets the method of this ApiDebugInfo.
+        r"""Gets the method of this ApiDebugInfo.
 
         API的请求方法
 
@@ -164,7 +164,7 @@ class ApiDebugInfo:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ApiDebugInfo.
+        r"""Sets the method of this ApiDebugInfo.
 
         API的请求方法
 
@@ -175,7 +175,7 @@ class ApiDebugInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this ApiDebugInfo.
+        r"""Gets the mode of this ApiDebugInfo.
 
         调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET 调试云市场已购买的API - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    MARKET模式，接口调用者必须是API购买者或拥有者。    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
 
@@ -186,7 +186,7 @@ class ApiDebugInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ApiDebugInfo.
+        r"""Sets the mode of this ApiDebugInfo.
 
         调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET 调试云市场已购买的API - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    MARKET模式，接口调用者必须是API购买者或拥有者。    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
 
@@ -197,7 +197,7 @@ class ApiDebugInfo:
 
     @property
     def path(self):
-        """Gets the path of this ApiDebugInfo.
+        r"""Gets the path of this ApiDebugInfo.
 
         API的请求路径，需以\"/\"开头，最大长度1024 > 须符合路径规范，百分号编码格式可被正确解码
 
@@ -208,7 +208,7 @@ class ApiDebugInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ApiDebugInfo.
+        r"""Sets the path of this ApiDebugInfo.
 
         API的请求路径，需以\"/\"开头，最大长度1024 > 须符合路径规范，百分号编码格式可被正确解码
 
@@ -219,7 +219,7 @@ class ApiDebugInfo:
 
     @property
     def query(self):
-        """Gets the query of this ApiDebugInfo.
+        r"""Gets the query of this ApiDebugInfo.
 
         查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写
 
@@ -230,7 +230,7 @@ class ApiDebugInfo:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ApiDebugInfo.
+        r"""Sets the query of this ApiDebugInfo.
 
         查询参数，每个参数值为字符串数组，每个参数名称有如下约束： - 英文字母、数字、点、下划线、中连线组成 - 必须以英文字母开头，最长32字节 - 不支持以\"X-Apig-\"或\"X-Sdk-\"开头，不区分大小写 - 不支持取值为\"X-Stage\"，不区分大小写
 
@@ -241,7 +241,7 @@ class ApiDebugInfo:
 
     @property
     def scheme(self):
-        """Gets the scheme of this ApiDebugInfo.
+        r"""Gets the scheme of this ApiDebugInfo.
 
         API的请求协议 - HTTP - HTTPS
 
@@ -252,7 +252,7 @@ class ApiDebugInfo:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this ApiDebugInfo.
+        r"""Sets the scheme of this ApiDebugInfo.
 
         API的请求协议 - HTTP - HTTPS
 
@@ -263,7 +263,7 @@ class ApiDebugInfo:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ApiDebugInfo.
+        r"""Gets the app_key of this ApiDebugInfo.
 
         调试请求使用的APP的key
 
@@ -274,7 +274,7 @@ class ApiDebugInfo:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ApiDebugInfo.
+        r"""Sets the app_key of this ApiDebugInfo.
 
         调试请求使用的APP的key
 
@@ -285,7 +285,7 @@ class ApiDebugInfo:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this ApiDebugInfo.
+        r"""Gets the app_secret of this ApiDebugInfo.
 
         调试请求使用的APP的密钥
 
@@ -296,7 +296,7 @@ class ApiDebugInfo:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this ApiDebugInfo.
+        r"""Sets the app_secret of this ApiDebugInfo.
 
         调试请求使用的APP的密钥
 
@@ -307,7 +307,7 @@ class ApiDebugInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this ApiDebugInfo.
+        r"""Gets the domain of this ApiDebugInfo.
 
         API的访问域名，未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET 云市场为API分组分配的域名 - CONSUMER API分组的子域名
 
@@ -318,7 +318,7 @@ class ApiDebugInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ApiDebugInfo.
+        r"""Sets the domain of this ApiDebugInfo.
 
         API的访问域名，未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET 云市场为API分组分配的域名 - CONSUMER API分组的子域名
 
@@ -329,7 +329,7 @@ class ApiDebugInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this ApiDebugInfo.
+        r"""Gets the stage of this ApiDebugInfo.
 
         调试请求指定的运行环境，仅在mode为CONSUMER时有效，未提供时有如下默认值: - CONSUMER RELEASE
 
@@ -340,7 +340,7 @@ class ApiDebugInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this ApiDebugInfo.
+        r"""Sets the stage of this ApiDebugInfo.
 
         调试请求指定的运行环境，仅在mode为CONSUMER时有效，未提供时有如下默认值: - CONSUMER RELEASE
 

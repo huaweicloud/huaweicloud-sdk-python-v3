@@ -33,7 +33,7 @@ class RepoMemberInfo:
     }
 
     def __init__(self, domain_id=None, domain_name=None, id=None, name=None, role=None):
-        """RepoMemberInfo
+        r"""RepoMemberInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class RepoMemberInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RepoMemberInfo.
+        r"""Gets the domain_id of this RepoMemberInfo.
 
         用户的租户ID
 
@@ -79,7 +79,7 @@ class RepoMemberInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RepoMemberInfo.
+        r"""Sets the domain_id of this RepoMemberInfo.
 
         用户的租户ID
 
@@ -90,7 +90,7 @@ class RepoMemberInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this RepoMemberInfo.
+        r"""Gets the domain_name of this RepoMemberInfo.
 
         用户的租户名称
 
@@ -101,7 +101,7 @@ class RepoMemberInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this RepoMemberInfo.
+        r"""Sets the domain_name of this RepoMemberInfo.
 
         用户的租户名称
 
@@ -112,7 +112,7 @@ class RepoMemberInfo:
 
     @property
     def id(self):
-        """Gets the id of this RepoMemberInfo.
+        r"""Gets the id of this RepoMemberInfo.
 
         添加的用户ID
 
@@ -123,7 +123,7 @@ class RepoMemberInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RepoMemberInfo.
+        r"""Sets the id of this RepoMemberInfo.
 
         添加的用户ID
 
@@ -134,7 +134,7 @@ class RepoMemberInfo:
 
     @property
     def name(self):
-        """Gets the name of this RepoMemberInfo.
+        r"""Gets the name of this RepoMemberInfo.
 
         添加的用户名
 
@@ -145,7 +145,7 @@ class RepoMemberInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RepoMemberInfo.
+        r"""Sets the name of this RepoMemberInfo.
 
         添加的用户名
 
@@ -156,7 +156,7 @@ class RepoMemberInfo:
 
     @property
     def role(self):
-        """Gets the role of this RepoMemberInfo.
+        r"""Gets the role of this RepoMemberInfo.
 
         添加的用户权限，取值范围：20->浏览者，30->普通成员，40->管理员
 
@@ -167,7 +167,7 @@ class RepoMemberInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this RepoMemberInfo.
+        r"""Sets the role of this RepoMemberInfo.
 
         添加的用户权限，取值范围：20->浏览者，30->普通成员，40->管理员
 

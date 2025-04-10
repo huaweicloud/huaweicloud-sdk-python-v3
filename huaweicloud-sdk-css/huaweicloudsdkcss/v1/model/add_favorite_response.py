@@ -24,7 +24,7 @@ class AddFavoriteResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddFavoriteResponse
+        r"""AddFavoriteResponse
 
         The model defined in huaweicloud sdk
 

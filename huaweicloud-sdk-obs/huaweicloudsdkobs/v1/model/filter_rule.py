@@ -29,7 +29,7 @@ class FilterRule:
     }
 
     def __init__(self, name=None, value=None):
-        """FilterRule
+        r"""FilterRule
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class FilterRule:
 
     @property
     def name(self):
-        """Gets the name of this FilterRule.
+        r"""Gets the name of this FilterRule.
 
         Prefix or suffix of object names for filtering
 
@@ -63,7 +63,7 @@ class FilterRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FilterRule.
+        r"""Sets the name of this FilterRule.
 
         Prefix or suffix of object names for filtering
 
@@ -74,7 +74,7 @@ class FilterRule:
 
     @property
     def value(self):
-        """Gets the value of this FilterRule.
+        r"""Gets the value of this FilterRule.
 
         Key word of object names. Based on the prefix or suffix defined by **Name**, enter the key word for filtering objects. A longer string of characters delivers a more accurate filtering result. A maximum of 1024 characters are supported.
 
@@ -85,7 +85,7 @@ class FilterRule:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FilterRule.
+        r"""Sets the value of this FilterRule.
 
         Key word of object names. Based on the prefix or suffix defined by **Name**, enter the key word for filtering objects. A longer string of characters delivers a more accurate filtering result. A maximum of 1024 characters are supported.
 

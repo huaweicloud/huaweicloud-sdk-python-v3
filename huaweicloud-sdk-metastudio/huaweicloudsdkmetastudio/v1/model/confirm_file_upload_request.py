@@ -29,7 +29,7 @@ class ConfirmFileUploadRequest:
     }
 
     def __init__(self, x_app_user_id=None, file_id=None, body=None):
-        """ConfirmFileUploadRequest
+        r"""ConfirmFileUploadRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ConfirmFileUploadRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ConfirmFileUploadRequest.
+        r"""Gets the x_app_user_id of this ConfirmFileUploadRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class ConfirmFileUploadRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ConfirmFileUploadRequest.
+        r"""Sets the x_app_user_id of this ConfirmFileUploadRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class ConfirmFileUploadRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this ConfirmFileUploadRequest.
+        r"""Gets the file_id of this ConfirmFileUploadRequest.
 
         文件ID。
 
@@ -89,7 +89,7 @@ class ConfirmFileUploadRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ConfirmFileUploadRequest.
+        r"""Sets the file_id of this ConfirmFileUploadRequest.
 
         文件ID。
 
@@ -100,7 +100,7 @@ class ConfirmFileUploadRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmFileUploadRequest.
+        r"""Gets the body of this ConfirmFileUploadRequest.
 
         :return: The body of this ConfirmFileUploadRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmFileUploadRequestBody`
@@ -109,7 +109,7 @@ class ConfirmFileUploadRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmFileUploadRequest.
+        r"""Sets the body of this ConfirmFileUploadRequest.
 
         :param body: The body of this ConfirmFileUploadRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ConfirmFileUploadRequestBody`

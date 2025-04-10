@@ -31,7 +31,7 @@ class ListPublicIpsRequest:
     }
 
     def __init__(self, limit=None, offset=None, site_id=None, port_id=None):
-        """ListPublicIpsRequest
+        r"""ListPublicIpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListPublicIpsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublicIpsRequest.
+        r"""Gets the limit of this ListPublicIpsRequest.
 
         查询返回弹性IP列表数量。取值范围：0~1000。
 
@@ -75,7 +75,7 @@ class ListPublicIpsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublicIpsRequest.
+        r"""Sets the limit of this ListPublicIpsRequest.
 
         查询返回弹性IP列表数量。取值范围：0~1000。
 
@@ -86,7 +86,7 @@ class ListPublicIpsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublicIpsRequest.
+        r"""Gets the offset of this ListPublicIpsRequest.
 
         查询的偏移量。
 
@@ -97,7 +97,7 @@ class ListPublicIpsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublicIpsRequest.
+        r"""Sets the offset of this ListPublicIpsRequest.
 
         查询的偏移量。
 
@@ -108,7 +108,7 @@ class ListPublicIpsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListPublicIpsRequest.
+        r"""Gets the site_id of this ListPublicIpsRequest.
 
         站点ID。
 
@@ -119,7 +119,7 @@ class ListPublicIpsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListPublicIpsRequest.
+        r"""Sets the site_id of this ListPublicIpsRequest.
 
         站点ID。
 
@@ -130,7 +130,7 @@ class ListPublicIpsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ListPublicIpsRequest.
+        r"""Gets the port_id of this ListPublicIpsRequest.
 
         端口ID
 
@@ -141,7 +141,7 @@ class ListPublicIpsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ListPublicIpsRequest.
+        r"""Sets the port_id of this ListPublicIpsRequest.
 
         端口ID
 

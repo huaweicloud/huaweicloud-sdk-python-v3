@@ -24,7 +24,7 @@ class DeleteFirewallResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteFirewallResponse
+        r"""DeleteFirewallResponse
 
         The model defined in huaweicloud sdk
 

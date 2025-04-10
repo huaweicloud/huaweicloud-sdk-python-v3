@@ -31,7 +31,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, org_id=None, offset=None, limit=None, user_info=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListUsersRequest:
 
     @property
     def org_id(self):
-        """Gets the org_id of this ListUsersRequest.
+        r"""Gets the org_id of this ListUsersRequest.
 
         组织id，为空时查询所有用户。
 
@@ -73,7 +73,7 @@ class ListUsersRequest:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this ListUsersRequest.
+        r"""Sets the org_id of this ListUsersRequest.
 
         组织id，为空时查询所有用户。
 
@@ -84,7 +84,7 @@ class ListUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsersRequest.
+        r"""Gets the offset of this ListUsersRequest.
 
         第几页。最小值：0
 
@@ -95,7 +95,7 @@ class ListUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsersRequest.
+        r"""Sets the offset of this ListUsersRequest.
 
         第几页。最小值：0
 
@@ -106,7 +106,7 @@ class ListUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersRequest.
+        r"""Gets the limit of this ListUsersRequest.
 
         每页多少条。最小值：10。最大值：100
 
@@ -117,7 +117,7 @@ class ListUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersRequest.
+        r"""Sets the limit of this ListUsersRequest.
 
         每页多少条。最小值：10。最大值：100
 
@@ -128,7 +128,7 @@ class ListUsersRequest:
 
     @property
     def user_info(self):
-        """Gets the user_info of this ListUsersRequest.
+        r"""Gets the user_info of this ListUsersRequest.
 
         最长64位，用户名，支持模糊查询
 
@@ -139,7 +139,7 @@ class ListUsersRequest:
 
     @user_info.setter
     def user_info(self, user_info):
-        """Sets the user_info of this ListUsersRequest.
+        r"""Sets the user_info of this ListUsersRequest.
 
         最长64位，用户名，支持模糊查询
 

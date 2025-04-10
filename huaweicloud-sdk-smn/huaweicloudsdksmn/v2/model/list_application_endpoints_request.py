@@ -36,7 +36,7 @@ class ListApplicationEndpointsRequest:
     }
 
     def __init__(self, application_urn=None, offset=None, limit=None, enabled=None, token=None, user_data=None):
-        """ListApplicationEndpointsRequest
+        r"""ListApplicationEndpointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListApplicationEndpointsRequest:
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this ListApplicationEndpointsRequest.
+        r"""Gets the application_urn of this ListApplicationEndpointsRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -89,7 +89,7 @@ class ListApplicationEndpointsRequest:
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this ListApplicationEndpointsRequest.
+        r"""Sets the application_urn of this ListApplicationEndpointsRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -100,7 +100,7 @@ class ListApplicationEndpointsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApplicationEndpointsRequest.
+        r"""Gets the offset of this ListApplicationEndpointsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -111,7 +111,7 @@ class ListApplicationEndpointsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApplicationEndpointsRequest.
+        r"""Sets the offset of this ListApplicationEndpointsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -122,7 +122,7 @@ class ListApplicationEndpointsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplicationEndpointsRequest.
+        r"""Gets the limit of this ListApplicationEndpointsRequest.
 
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -133,7 +133,7 @@ class ListApplicationEndpointsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplicationEndpointsRequest.
+        r"""Sets the limit of this ListApplicationEndpointsRequest.
 
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -144,7 +144,7 @@ class ListApplicationEndpointsRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListApplicationEndpointsRequest.
+        r"""Gets the enabled of this ListApplicationEndpointsRequest.
 
         设备是否可用，值为true或false字符串。
 
@@ -155,7 +155,7 @@ class ListApplicationEndpointsRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListApplicationEndpointsRequest.
+        r"""Sets the enabled of this ListApplicationEndpointsRequest.
 
         设备是否可用，值为true或false字符串。
 
@@ -166,7 +166,7 @@ class ListApplicationEndpointsRequest:
 
     @property
     def token(self):
-        """Gets the token of this ListApplicationEndpointsRequest.
+        r"""Gets the token of this ListApplicationEndpointsRequest.
 
         设备token，最大长度512个字节。
 
@@ -177,7 +177,7 @@ class ListApplicationEndpointsRequest:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ListApplicationEndpointsRequest.
+        r"""Sets the token of this ListApplicationEndpointsRequest.
 
         设备token，最大长度512个字节。
 
@@ -188,7 +188,7 @@ class ListApplicationEndpointsRequest:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ListApplicationEndpointsRequest.
+        r"""Gets the user_data of this ListApplicationEndpointsRequest.
 
         用户数据，最大长度2048个字节。
 
@@ -199,7 +199,7 @@ class ListApplicationEndpointsRequest:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ListApplicationEndpointsRequest.
+        r"""Sets the user_data of this ListApplicationEndpointsRequest.
 
         用户数据，最大长度2048个字节。
 

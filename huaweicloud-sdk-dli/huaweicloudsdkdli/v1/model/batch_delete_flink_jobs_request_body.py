@@ -25,7 +25,7 @@ class BatchDeleteFlinkJobsRequestBody:
     }
 
     def __init__(self, job_ids=None):
-        """BatchDeleteFlinkJobsRequestBody
+        r"""BatchDeleteFlinkJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteFlinkJobsRequestBody:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this BatchDeleteFlinkJobsRequestBody.
+        r"""Gets the job_ids of this BatchDeleteFlinkJobsRequestBody.
 
         
 
@@ -53,7 +53,7 @@ class BatchDeleteFlinkJobsRequestBody:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this BatchDeleteFlinkJobsRequestBody.
+        r"""Sets the job_ids of this BatchDeleteFlinkJobsRequestBody.
 
         
 

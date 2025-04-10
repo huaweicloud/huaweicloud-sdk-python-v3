@@ -27,7 +27,7 @@ class ClearInstanceSessionsRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None):
-        """ClearInstanceSessionsRequest
+        r"""ClearInstanceSessionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ClearInstanceSessionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ClearInstanceSessionsRequest.
+        r"""Gets the instance_id of this ClearInstanceSessionsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ClearInstanceSessionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ClearInstanceSessionsRequest.
+        r"""Sets the instance_id of this ClearInstanceSessionsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ClearInstanceSessionsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ClearInstanceSessionsRequest.
+        r"""Gets the node_id of this ClearInstanceSessionsRequest.
 
         节点ID。
 
@@ -82,7 +82,7 @@ class ClearInstanceSessionsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ClearInstanceSessionsRequest.
+        r"""Sets the node_id of this ClearInstanceSessionsRequest.
 
         节点ID。
 

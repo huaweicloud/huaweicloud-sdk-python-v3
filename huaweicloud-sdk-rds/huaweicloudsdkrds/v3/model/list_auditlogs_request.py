@@ -35,7 +35,7 @@ class ListAuditlogsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListAuditlogsRequest
+        r"""ListAuditlogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ListAuditlogsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAuditlogsRequest.
+        r"""Gets the x_language of this ListAuditlogsRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class ListAuditlogsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAuditlogsRequest.
+        r"""Sets the x_language of this ListAuditlogsRequest.
 
         语言
 
@@ -95,7 +95,7 @@ class ListAuditlogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditlogsRequest.
+        r"""Gets the instance_id of this ListAuditlogsRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class ListAuditlogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditlogsRequest.
+        r"""Sets the instance_id of this ListAuditlogsRequest.
 
         实例ID。
 
@@ -117,7 +117,7 @@ class ListAuditlogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAuditlogsRequest.
+        r"""Gets the start_time of this ListAuditlogsRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -128,7 +128,7 @@ class ListAuditlogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAuditlogsRequest.
+        r"""Sets the start_time of this ListAuditlogsRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -139,7 +139,7 @@ class ListAuditlogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAuditlogsRequest.
+        r"""Gets the end_time of this ListAuditlogsRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -150,7 +150,7 @@ class ListAuditlogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAuditlogsRequest.
+        r"""Sets the end_time of this ListAuditlogsRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -161,7 +161,7 @@ class ListAuditlogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuditlogsRequest.
+        r"""Gets the offset of this ListAuditlogsRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -172,7 +172,7 @@ class ListAuditlogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuditlogsRequest.
+        r"""Sets the offset of this ListAuditlogsRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -183,7 +183,7 @@ class ListAuditlogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditlogsRequest.
+        r"""Gets the limit of this ListAuditlogsRequest.
 
         查询记录数。取值范围[1, 50]。
 
@@ -194,7 +194,7 @@ class ListAuditlogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditlogsRequest.
+        r"""Sets the limit of this ListAuditlogsRequest.
 
         查询记录数。取值范围[1, 50]。
 

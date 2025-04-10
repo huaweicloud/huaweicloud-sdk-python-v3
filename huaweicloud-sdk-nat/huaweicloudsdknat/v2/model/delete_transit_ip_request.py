@@ -25,7 +25,7 @@ class DeleteTransitIpRequest:
     }
 
     def __init__(self, transit_ip_id=None):
-        """DeleteTransitIpRequest
+        r"""DeleteTransitIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTransitIpRequest:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this DeleteTransitIpRequest.
+        r"""Gets the transit_ip_id of this DeleteTransitIpRequest.
 
         中转IP的ID。
 
@@ -53,7 +53,7 @@ class DeleteTransitIpRequest:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this DeleteTransitIpRequest.
+        r"""Sets the transit_ip_id of this DeleteTransitIpRequest.
 
         中转IP的ID。
 

@@ -35,7 +35,7 @@ class ProtectableAgentStatus:
     }
 
     def __init__(self, code=None, installed=None, is_old=None, message=None, resource_id=None, version=None):
-        """ProtectableAgentStatus
+        r"""ProtectableAgentStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProtectableAgentStatus:
 
     @property
     def code(self):
-        """Gets the code of this ProtectableAgentStatus.
+        r"""Gets the code of this ProtectableAgentStatus.
 
         agent无法连接的错误码
 
@@ -89,7 +89,7 @@ class ProtectableAgentStatus:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ProtectableAgentStatus.
+        r"""Sets the code of this ProtectableAgentStatus.
 
         agent无法连接的错误码
 
@@ -100,7 +100,7 @@ class ProtectableAgentStatus:
 
     @property
     def installed(self):
-        """Gets the installed of this ProtectableAgentStatus.
+        r"""Gets the installed of this ProtectableAgentStatus.
 
         agent是否安装
 
@@ -111,7 +111,7 @@ class ProtectableAgentStatus:
 
     @installed.setter
     def installed(self, installed):
-        """Sets the installed of this ProtectableAgentStatus.
+        r"""Sets the installed of this ProtectableAgentStatus.
 
         agent是否安装
 
@@ -122,7 +122,7 @@ class ProtectableAgentStatus:
 
     @property
     def is_old(self):
-        """Gets the is_old of this ProtectableAgentStatus.
+        r"""Gets the is_old of this ProtectableAgentStatus.
 
         agent是否为老版本
 
@@ -133,7 +133,7 @@ class ProtectableAgentStatus:
 
     @is_old.setter
     def is_old(self, is_old):
-        """Sets the is_old of this ProtectableAgentStatus.
+        r"""Sets the is_old of this ProtectableAgentStatus.
 
         agent是否为老版本
 
@@ -144,7 +144,7 @@ class ProtectableAgentStatus:
 
     @property
     def message(self):
-        """Gets the message of this ProtectableAgentStatus.
+        r"""Gets the message of this ProtectableAgentStatus.
 
         agent无法连接的错误信息
 
@@ -155,7 +155,7 @@ class ProtectableAgentStatus:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ProtectableAgentStatus.
+        r"""Sets the message of this ProtectableAgentStatus.
 
         agent无法连接的错误信息
 
@@ -166,7 +166,7 @@ class ProtectableAgentStatus:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ProtectableAgentStatus.
+        r"""Gets the resource_id of this ProtectableAgentStatus.
 
         资源ID
 
@@ -177,7 +177,7 @@ class ProtectableAgentStatus:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ProtectableAgentStatus.
+        r"""Sets the resource_id of this ProtectableAgentStatus.
 
         资源ID
 
@@ -188,7 +188,7 @@ class ProtectableAgentStatus:
 
     @property
     def version(self):
-        """Gets the version of this ProtectableAgentStatus.
+        r"""Gets the version of this ProtectableAgentStatus.
 
         agent版本号
 
@@ -199,7 +199,7 @@ class ProtectableAgentStatus:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ProtectableAgentStatus.
+        r"""Sets the version of this ProtectableAgentStatus.
 
         agent版本号
 

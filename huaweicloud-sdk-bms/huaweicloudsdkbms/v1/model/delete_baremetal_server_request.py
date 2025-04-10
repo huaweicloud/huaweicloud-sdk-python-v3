@@ -25,7 +25,7 @@ class DeleteBaremetalServerRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteBaremetalServerRequest
+        r"""DeleteBaremetalServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteBaremetalServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteBaremetalServerRequest.
+        r"""Gets the body of this DeleteBaremetalServerRequest.
 
         :return: The body of this DeleteBaremetalServerRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteBaremetalBody`
@@ -52,7 +52,7 @@ class DeleteBaremetalServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteBaremetalServerRequest.
+        r"""Sets the body of this DeleteBaremetalServerRequest.
 
         :param body: The body of this DeleteBaremetalServerRequest.
         :type body: :class:`huaweicloudsdkbms.v1.DeleteBaremetalBody`

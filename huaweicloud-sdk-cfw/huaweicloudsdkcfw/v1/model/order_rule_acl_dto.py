@@ -29,7 +29,7 @@ class OrderRuleAclDto:
     }
 
     def __init__(self, dest_rule_id=None, top=None, bottom=None):
-        """OrderRuleAclDto
+        r"""OrderRuleAclDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OrderRuleAclDto:
 
     @property
     def dest_rule_id(self):
-        """Gets the dest_rule_id of this OrderRuleAclDto.
+        r"""Gets the dest_rule_id of this OrderRuleAclDto.
 
         目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
@@ -68,7 +68,7 @@ class OrderRuleAclDto:
 
     @dest_rule_id.setter
     def dest_rule_id(self, dest_rule_id):
-        """Sets the dest_rule_id of this OrderRuleAclDto.
+        r"""Sets the dest_rule_id of this OrderRuleAclDto.
 
         目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
@@ -79,7 +79,7 @@ class OrderRuleAclDto:
 
     @property
     def top(self):
-        """Gets the top of this OrderRuleAclDto.
+        r"""Gets the top of this OrderRuleAclDto.
 
         是否置顶，0代表非置顶，1代表置顶
 
@@ -90,7 +90,7 @@ class OrderRuleAclDto:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this OrderRuleAclDto.
+        r"""Sets the top of this OrderRuleAclDto.
 
         是否置顶，0代表非置顶，1代表置顶
 
@@ -101,7 +101,7 @@ class OrderRuleAclDto:
 
     @property
     def bottom(self):
-        """Gets the bottom of this OrderRuleAclDto.
+        r"""Gets the bottom of this OrderRuleAclDto.
 
         是否置底，0代表非置底，1代表置底
 
@@ -112,7 +112,7 @@ class OrderRuleAclDto:
 
     @bottom.setter
     def bottom(self, bottom):
-        """Sets the bottom of this OrderRuleAclDto.
+        r"""Sets the bottom of this OrderRuleAclDto.
 
         是否置底，0代表非置底，1代表置底
 

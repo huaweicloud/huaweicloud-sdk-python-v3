@@ -25,7 +25,7 @@ class ShowsSpeedLimitsRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowsSpeedLimitsRequest
+        r"""ShowsSpeedLimitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowsSpeedLimitsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowsSpeedLimitsRequest.
+        r"""Gets the task_id of this ShowsSpeedLimitsRequest.
 
         查询限速信息的任务ID
 
@@ -53,7 +53,7 @@ class ShowsSpeedLimitsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowsSpeedLimitsRequest.
+        r"""Sets the task_id of this ShowsSpeedLimitsRequest.
 
         查询限速信息的任务ID
 

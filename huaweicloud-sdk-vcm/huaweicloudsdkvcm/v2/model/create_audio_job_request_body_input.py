@@ -27,7 +27,7 @@ class CreateAudioJobRequestBodyInput:
     }
 
     def __init__(self, type=None, data=None):
-        """CreateAudioJobRequestBodyInput
+        r"""CreateAudioJobRequestBodyInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAudioJobRequestBodyInput:
 
     @property
     def type(self):
-        """Gets the type of this CreateAudioJobRequestBodyInput.
+        r"""Gets the type of this CreateAudioJobRequestBodyInput.
 
         视频数据的输入类型： - obs：表示从华为云 OBS 中读取视频数据。 - url：表示从指定的 URL 地址中读取视频数据。 
 
@@ -59,7 +59,7 @@ class CreateAudioJobRequestBodyInput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateAudioJobRequestBodyInput.
+        r"""Sets the type of this CreateAudioJobRequestBodyInput.
 
         视频数据的输入类型： - obs：表示从华为云 OBS 中读取视频数据。 - url：表示从指定的 URL 地址中读取视频数据。 
 
@@ -70,7 +70,7 @@ class CreateAudioJobRequestBodyInput:
 
     @property
     def data(self):
-        """Gets the data of this CreateAudioJobRequestBodyInput.
+        r"""Gets the data of this CreateAudioJobRequestBodyInput.
 
         数据输入内容
 
@@ -81,7 +81,7 @@ class CreateAudioJobRequestBodyInput:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateAudioJobRequestBodyInput.
+        r"""Sets the data of this CreateAudioJobRequestBodyInput.
 
         数据输入内容
 

@@ -24,7 +24,7 @@ class SetSsoConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetSsoConfigResponse
+        r"""SetSsoConfigResponse
 
         The model defined in huaweicloud sdk
 

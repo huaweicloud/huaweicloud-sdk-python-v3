@@ -27,7 +27,7 @@ class ImportJobRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ImportJobRequest
+        r"""ImportJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImportJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportJobRequest.
+        r"""Gets the workspace of this ImportJobRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class ImportJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportJobRequest.
+        r"""Sets the workspace of this ImportJobRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class ImportJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportJobRequest.
+        r"""Gets the body of this ImportJobRequest.
 
         :return: The body of this ImportJobRequest.
         :rtype: :class:`huaweicloudsdkdlf.v1.ImportFileReq`
@@ -81,7 +81,7 @@ class ImportJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportJobRequest.
+        r"""Sets the body of this ImportJobRequest.
 
         :param body: The body of this ImportJobRequest.
         :type body: :class:`huaweicloudsdkdlf.v1.ImportFileReq`

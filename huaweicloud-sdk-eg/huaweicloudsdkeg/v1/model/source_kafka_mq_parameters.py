@@ -49,7 +49,7 @@ class SourceKafkaMQParameters:
     }
 
     def __init__(self, addr=None, group=None, instance_name=None, security_protocol=None, instance_id=None, topic=None, seek_to=None, enable_sasl_ssl=None, sasl_mechanism=None, ssl_certificate_url=None, ssl_certificate_pwd=None, user_name=None, password=None):
-        """SourceKafkaMQParameters
+        r"""SourceKafkaMQParameters
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class SourceKafkaMQParameters:
 
     @property
     def addr(self):
-        """Gets the addr of this SourceKafkaMQParameters.
+        r"""Gets the addr of this SourceKafkaMQParameters.
 
         kafka连接地址
 
@@ -136,7 +136,7 @@ class SourceKafkaMQParameters:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this SourceKafkaMQParameters.
+        r"""Sets the addr of this SourceKafkaMQParameters.
 
         kafka连接地址
 
@@ -147,7 +147,7 @@ class SourceKafkaMQParameters:
 
     @property
     def group(self):
-        """Gets the group of this SourceKafkaMQParameters.
+        r"""Gets the group of this SourceKafkaMQParameters.
 
         kafka消费组
 
@@ -158,7 +158,7 @@ class SourceKafkaMQParameters:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this SourceKafkaMQParameters.
+        r"""Sets the group of this SourceKafkaMQParameters.
 
         kafka消费组
 
@@ -169,7 +169,7 @@ class SourceKafkaMQParameters:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this SourceKafkaMQParameters.
+        r"""Gets the instance_name of this SourceKafkaMQParameters.
 
         kafka实例名称
 
@@ -180,7 +180,7 @@ class SourceKafkaMQParameters:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this SourceKafkaMQParameters.
+        r"""Sets the instance_name of this SourceKafkaMQParameters.
 
         kafka实例名称
 
@@ -191,7 +191,7 @@ class SourceKafkaMQParameters:
 
     @property
     def security_protocol(self):
-        """Gets the security_protocol of this SourceKafkaMQParameters.
+        r"""Gets the security_protocol of this SourceKafkaMQParameters.
 
         安全协议
 
@@ -202,7 +202,7 @@ class SourceKafkaMQParameters:
 
     @security_protocol.setter
     def security_protocol(self, security_protocol):
-        """Sets the security_protocol of this SourceKafkaMQParameters.
+        r"""Sets the security_protocol of this SourceKafkaMQParameters.
 
         安全协议
 
@@ -213,7 +213,7 @@ class SourceKafkaMQParameters:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SourceKafkaMQParameters.
+        r"""Gets the instance_id of this SourceKafkaMQParameters.
 
         kafka实例ID
 
@@ -224,7 +224,7 @@ class SourceKafkaMQParameters:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SourceKafkaMQParameters.
+        r"""Sets the instance_id of this SourceKafkaMQParameters.
 
         kafka实例ID
 
@@ -235,7 +235,7 @@ class SourceKafkaMQParameters:
 
     @property
     def topic(self):
-        """Gets the topic of this SourceKafkaMQParameters.
+        r"""Gets the topic of this SourceKafkaMQParameters.
 
         kafka topic名称
 
@@ -246,7 +246,7 @@ class SourceKafkaMQParameters:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SourceKafkaMQParameters.
+        r"""Sets the topic of this SourceKafkaMQParameters.
 
         kafka topic名称
 
@@ -257,7 +257,7 @@ class SourceKafkaMQParameters:
 
     @property
     def seek_to(self):
-        """Gets the seek_to of this SourceKafkaMQParameters.
+        r"""Gets the seek_to of this SourceKafkaMQParameters.
 
         消费点位
 
@@ -268,7 +268,7 @@ class SourceKafkaMQParameters:
 
     @seek_to.setter
     def seek_to(self, seek_to):
-        """Sets the seek_to of this SourceKafkaMQParameters.
+        r"""Sets the seek_to of this SourceKafkaMQParameters.
 
         消费点位
 
@@ -279,7 +279,7 @@ class SourceKafkaMQParameters:
 
     @property
     def enable_sasl_ssl(self):
-        """Gets the enable_sasl_ssl of this SourceKafkaMQParameters.
+        r"""Gets the enable_sasl_ssl of this SourceKafkaMQParameters.
 
         SASL_SSL是否开启
 
@@ -290,7 +290,7 @@ class SourceKafkaMQParameters:
 
     @enable_sasl_ssl.setter
     def enable_sasl_ssl(self, enable_sasl_ssl):
-        """Sets the enable_sasl_ssl of this SourceKafkaMQParameters.
+        r"""Sets the enable_sasl_ssl of this SourceKafkaMQParameters.
 
         SASL_SSL是否开启
 
@@ -301,7 +301,7 @@ class SourceKafkaMQParameters:
 
     @property
     def sasl_mechanism(self):
-        """Gets the sasl_mechanism of this SourceKafkaMQParameters.
+        r"""Gets the sasl_mechanism of this SourceKafkaMQParameters.
 
         SASL认证机制
 
@@ -312,7 +312,7 @@ class SourceKafkaMQParameters:
 
     @sasl_mechanism.setter
     def sasl_mechanism(self, sasl_mechanism):
-        """Sets the sasl_mechanism of this SourceKafkaMQParameters.
+        r"""Sets the sasl_mechanism of this SourceKafkaMQParameters.
 
         SASL认证机制
 
@@ -323,7 +323,7 @@ class SourceKafkaMQParameters:
 
     @property
     def ssl_certificate_url(self):
-        """Gets the ssl_certificate_url of this SourceKafkaMQParameters.
+        r"""Gets the ssl_certificate_url of this SourceKafkaMQParameters.
 
         SASL证书地址，配置的obs地址
 
@@ -334,7 +334,7 @@ class SourceKafkaMQParameters:
 
     @ssl_certificate_url.setter
     def ssl_certificate_url(self, ssl_certificate_url):
-        """Sets the ssl_certificate_url of this SourceKafkaMQParameters.
+        r"""Sets the ssl_certificate_url of this SourceKafkaMQParameters.
 
         SASL证书地址，配置的obs地址
 
@@ -345,7 +345,7 @@ class SourceKafkaMQParameters:
 
     @property
     def ssl_certificate_pwd(self):
-        """Gets the ssl_certificate_pwd of this SourceKafkaMQParameters.
+        r"""Gets the ssl_certificate_pwd of this SourceKafkaMQParameters.
 
         SASL证书密码
 
@@ -356,7 +356,7 @@ class SourceKafkaMQParameters:
 
     @ssl_certificate_pwd.setter
     def ssl_certificate_pwd(self, ssl_certificate_pwd):
-        """Sets the ssl_certificate_pwd of this SourceKafkaMQParameters.
+        r"""Sets the ssl_certificate_pwd of this SourceKafkaMQParameters.
 
         SASL证书密码
 
@@ -367,7 +367,7 @@ class SourceKafkaMQParameters:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SourceKafkaMQParameters.
+        r"""Gets the user_name of this SourceKafkaMQParameters.
 
         用户名
 
@@ -378,7 +378,7 @@ class SourceKafkaMQParameters:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SourceKafkaMQParameters.
+        r"""Sets the user_name of this SourceKafkaMQParameters.
 
         用户名
 
@@ -389,7 +389,7 @@ class SourceKafkaMQParameters:
 
     @property
     def password(self):
-        """Gets the password of this SourceKafkaMQParameters.
+        r"""Gets the password of this SourceKafkaMQParameters.
 
         用户密码
 
@@ -400,7 +400,7 @@ class SourceKafkaMQParameters:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this SourceKafkaMQParameters.
+        r"""Sets the password of this SourceKafkaMQParameters.
 
         用户密码
 

@@ -28,7 +28,7 @@ class ListScalingHistoryResponse(SdkResponse):
     }
 
     def __init__(self, count=None, histories=None):
-        """ListScalingHistoryResponse
+        r"""ListScalingHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScalingHistoryResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListScalingHistoryResponse.
+        r"""Gets the count of this ListScalingHistoryResponse.
 
         伸缩历史总数
 
@@ -62,7 +62,7 @@ class ListScalingHistoryResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListScalingHistoryResponse.
+        r"""Sets the count of this ListScalingHistoryResponse.
 
         伸缩历史总数
 
@@ -73,7 +73,7 @@ class ListScalingHistoryResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ListScalingHistoryResponse.
+        r"""Gets the histories of this ListScalingHistoryResponse.
 
         伸缩历史列表
 
@@ -84,7 +84,7 @@ class ListScalingHistoryResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ListScalingHistoryResponse.
+        r"""Sets the histories of this ListScalingHistoryResponse.
 
         伸缩历史列表
 

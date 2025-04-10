@@ -83,7 +83,7 @@ class ListIssueItemResponse:
     }
 
     def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, order=None, severity=None, status=None, release_dev=None, find_release_dev=None, env=None, tracker=None, updated_time=None, closed_time=None, deleted=None):
-        """ListIssueItemResponse
+        r"""ListIssueItemResponse
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class ListIssueItemResponse:
 
     @property
     def actual_work_hours(self):
-        """Gets the actual_work_hours of this ListIssueItemResponse.
+        r"""Gets the actual_work_hours of this ListIssueItemResponse.
 
         实际工时
 
@@ -257,7 +257,7 @@ class ListIssueItemResponse:
 
     @actual_work_hours.setter
     def actual_work_hours(self, actual_work_hours):
-        """Sets the actual_work_hours of this ListIssueItemResponse.
+        r"""Sets the actual_work_hours of this ListIssueItemResponse.
 
         实际工时
 
@@ -268,7 +268,7 @@ class ListIssueItemResponse:
 
     @property
     def assigned_cc_user(self):
-        """Gets the assigned_cc_user of this ListIssueItemResponse.
+        r"""Gets the assigned_cc_user of this ListIssueItemResponse.
 
         抄送人
 
@@ -279,7 +279,7 @@ class ListIssueItemResponse:
 
     @assigned_cc_user.setter
     def assigned_cc_user(self, assigned_cc_user):
-        """Sets the assigned_cc_user of this ListIssueItemResponse.
+        r"""Sets the assigned_cc_user of this ListIssueItemResponse.
 
         抄送人
 
@@ -290,7 +290,7 @@ class ListIssueItemResponse:
 
     @property
     def assigned_user(self):
-        """Gets the assigned_user of this ListIssueItemResponse.
+        r"""Gets the assigned_user of this ListIssueItemResponse.
 
         :return: The assigned_user of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -299,7 +299,7 @@ class ListIssueItemResponse:
 
     @assigned_user.setter
     def assigned_user(self, assigned_user):
-        """Sets the assigned_user of this ListIssueItemResponse.
+        r"""Sets the assigned_user of this ListIssueItemResponse.
 
         :param assigned_user: The assigned_user of this ListIssueItemResponse.
         :type assigned_user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -308,7 +308,7 @@ class ListIssueItemResponse:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListIssueItemResponse.
+        r"""Gets the begin_time of this ListIssueItemResponse.
 
         预计开始时间，年-月-日
 
@@ -319,7 +319,7 @@ class ListIssueItemResponse:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListIssueItemResponse.
+        r"""Sets the begin_time of this ListIssueItemResponse.
 
         预计开始时间，年-月-日
 
@@ -330,7 +330,7 @@ class ListIssueItemResponse:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ListIssueItemResponse.
+        r"""Gets the created_time of this ListIssueItemResponse.
 
         创建时间 年-月-日 时:分:秒
 
@@ -341,7 +341,7 @@ class ListIssueItemResponse:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ListIssueItemResponse.
+        r"""Sets the created_time of this ListIssueItemResponse.
 
         创建时间 年-月-日 时:分:秒
 
@@ -352,7 +352,7 @@ class ListIssueItemResponse:
 
     @property
     def creator(self):
-        """Gets the creator of this ListIssueItemResponse.
+        r"""Gets the creator of this ListIssueItemResponse.
 
         :return: The creator of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -361,7 +361,7 @@ class ListIssueItemResponse:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListIssueItemResponse.
+        r"""Sets the creator of this ListIssueItemResponse.
 
         :param creator: The creator of this ListIssueItemResponse.
         :type creator: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -370,7 +370,7 @@ class ListIssueItemResponse:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this ListIssueItemResponse.
+        r"""Gets the custom_fields of this ListIssueItemResponse.
 
         自定义属性值,不建议使用，建议参考new_custom_fields字段
 
@@ -381,7 +381,7 @@ class ListIssueItemResponse:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this ListIssueItemResponse.
+        r"""Sets the custom_fields of this ListIssueItemResponse.
 
         自定义属性值,不建议使用，建议参考new_custom_fields字段
 
@@ -392,7 +392,7 @@ class ListIssueItemResponse:
 
     @property
     def new_custom_fields(self):
-        """Gets the new_custom_fields of this ListIssueItemResponse.
+        r"""Gets the new_custom_fields of this ListIssueItemResponse.
 
         自定义属性值
 
@@ -403,7 +403,7 @@ class ListIssueItemResponse:
 
     @new_custom_fields.setter
     def new_custom_fields(self, new_custom_fields):
-        """Sets the new_custom_fields of this ListIssueItemResponse.
+        r"""Sets the new_custom_fields of this ListIssueItemResponse.
 
         自定义属性值
 
@@ -414,7 +414,7 @@ class ListIssueItemResponse:
 
     @property
     def developer(self):
-        """Gets the developer of this ListIssueItemResponse.
+        r"""Gets the developer of this ListIssueItemResponse.
 
         :return: The developer of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -423,7 +423,7 @@ class ListIssueItemResponse:
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this ListIssueItemResponse.
+        r"""Sets the developer of this ListIssueItemResponse.
 
         :param developer: The developer of this ListIssueItemResponse.
         :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -432,7 +432,7 @@ class ListIssueItemResponse:
 
     @property
     def domain(self):
-        """Gets the domain of this ListIssueItemResponse.
+        r"""Gets the domain of this ListIssueItemResponse.
 
         :return: The domain of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
@@ -441,7 +441,7 @@ class ListIssueItemResponse:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListIssueItemResponse.
+        r"""Sets the domain of this ListIssueItemResponse.
 
         :param domain: The domain of this ListIssueItemResponse.
         :type domain: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
@@ -450,7 +450,7 @@ class ListIssueItemResponse:
 
     @property
     def done_ratio(self):
-        """Gets the done_ratio of this ListIssueItemResponse.
+        r"""Gets the done_ratio of this ListIssueItemResponse.
 
         工作项进度值
 
@@ -461,7 +461,7 @@ class ListIssueItemResponse:
 
     @done_ratio.setter
     def done_ratio(self, done_ratio):
-        """Sets the done_ratio of this ListIssueItemResponse.
+        r"""Sets the done_ratio of this ListIssueItemResponse.
 
         工作项进度值
 
@@ -472,7 +472,7 @@ class ListIssueItemResponse:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListIssueItemResponse.
+        r"""Gets the end_time of this ListIssueItemResponse.
 
         预计结束时间，年-月-日
 
@@ -483,7 +483,7 @@ class ListIssueItemResponse:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListIssueItemResponse.
+        r"""Sets the end_time of this ListIssueItemResponse.
 
         预计结束时间，年-月-日
 
@@ -494,7 +494,7 @@ class ListIssueItemResponse:
 
     @property
     def expected_work_hours(self):
-        """Gets the expected_work_hours of this ListIssueItemResponse.
+        r"""Gets the expected_work_hours of this ListIssueItemResponse.
 
         预计工时
 
@@ -505,7 +505,7 @@ class ListIssueItemResponse:
 
     @expected_work_hours.setter
     def expected_work_hours(self, expected_work_hours):
-        """Sets the expected_work_hours of this ListIssueItemResponse.
+        r"""Sets the expected_work_hours of this ListIssueItemResponse.
 
         预计工时
 
@@ -516,7 +516,7 @@ class ListIssueItemResponse:
 
     @property
     def id(self):
-        """Gets the id of this ListIssueItemResponse.
+        r"""Gets the id of this ListIssueItemResponse.
 
         工作项项id
 
@@ -527,7 +527,7 @@ class ListIssueItemResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListIssueItemResponse.
+        r"""Sets the id of this ListIssueItemResponse.
 
         工作项项id
 
@@ -538,7 +538,7 @@ class ListIssueItemResponse:
 
     @property
     def project(self):
-        """Gets the project of this ListIssueItemResponse.
+        r"""Gets the project of this ListIssueItemResponse.
 
         :return: The project of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
@@ -547,7 +547,7 @@ class ListIssueItemResponse:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ListIssueItemResponse.
+        r"""Sets the project of this ListIssueItemResponse.
 
         :param project: The project of this ListIssueItemResponse.
         :type project: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
@@ -556,7 +556,7 @@ class ListIssueItemResponse:
 
     @property
     def iteration(self):
-        """Gets the iteration of this ListIssueItemResponse.
+        r"""Gets the iteration of this ListIssueItemResponse.
 
         :return: The iteration of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -565,7 +565,7 @@ class ListIssueItemResponse:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this ListIssueItemResponse.
+        r"""Sets the iteration of this ListIssueItemResponse.
 
         :param iteration: The iteration of this ListIssueItemResponse.
         :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -574,7 +574,7 @@ class ListIssueItemResponse:
 
     @property
     def module(self):
-        """Gets the module of this ListIssueItemResponse.
+        r"""Gets the module of this ListIssueItemResponse.
 
         :return: The module of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -583,7 +583,7 @@ class ListIssueItemResponse:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this ListIssueItemResponse.
+        r"""Sets the module of this ListIssueItemResponse.
 
         :param module: The module of this ListIssueItemResponse.
         :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -592,7 +592,7 @@ class ListIssueItemResponse:
 
     @property
     def name(self):
-        """Gets the name of this ListIssueItemResponse.
+        r"""Gets the name of this ListIssueItemResponse.
 
         标题
 
@@ -603,7 +603,7 @@ class ListIssueItemResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListIssueItemResponse.
+        r"""Sets the name of this ListIssueItemResponse.
 
         标题
 
@@ -614,7 +614,7 @@ class ListIssueItemResponse:
 
     @property
     def parent_issue(self):
-        """Gets the parent_issue of this ListIssueItemResponse.
+        r"""Gets the parent_issue of this ListIssueItemResponse.
 
         :return: The parent_issue of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
@@ -623,7 +623,7 @@ class ListIssueItemResponse:
 
     @parent_issue.setter
     def parent_issue(self, parent_issue):
-        """Sets the parent_issue of this ListIssueItemResponse.
+        r"""Sets the parent_issue of this ListIssueItemResponse.
 
         :param parent_issue: The parent_issue of this ListIssueItemResponse.
         :type parent_issue: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
@@ -632,7 +632,7 @@ class ListIssueItemResponse:
 
     @property
     def priority(self):
-        """Gets the priority of this ListIssueItemResponse.
+        r"""Gets the priority of this ListIssueItemResponse.
 
         :return: The priority of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -641,7 +641,7 @@ class ListIssueItemResponse:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListIssueItemResponse.
+        r"""Sets the priority of this ListIssueItemResponse.
 
         :param priority: The priority of this ListIssueItemResponse.
         :type priority: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -650,7 +650,7 @@ class ListIssueItemResponse:
 
     @property
     def order(self):
-        """Gets the order of this ListIssueItemResponse.
+        r"""Gets the order of this ListIssueItemResponse.
 
         :return: The order of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueResponseV4Order`
@@ -659,7 +659,7 @@ class ListIssueItemResponse:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListIssueItemResponse.
+        r"""Sets the order of this ListIssueItemResponse.
 
         :param order: The order of this ListIssueItemResponse.
         :type order: :class:`huaweicloudsdkprojectman.v4.IssueResponseV4Order`
@@ -668,7 +668,7 @@ class ListIssueItemResponse:
 
     @property
     def severity(self):
-        """Gets the severity of this ListIssueItemResponse.
+        r"""Gets the severity of this ListIssueItemResponse.
 
         :return: The severity of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -677,7 +677,7 @@ class ListIssueItemResponse:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListIssueItemResponse.
+        r"""Sets the severity of this ListIssueItemResponse.
 
         :param severity: The severity of this ListIssueItemResponse.
         :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -686,7 +686,7 @@ class ListIssueItemResponse:
 
     @property
     def status(self):
-        """Gets the status of this ListIssueItemResponse.
+        r"""Gets the status of this ListIssueItemResponse.
 
         :return: The status of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -695,7 +695,7 @@ class ListIssueItemResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListIssueItemResponse.
+        r"""Sets the status of this ListIssueItemResponse.
 
         :param status: The status of this ListIssueItemResponse.
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -704,7 +704,7 @@ class ListIssueItemResponse:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this ListIssueItemResponse.
+        r"""Gets the release_dev of this ListIssueItemResponse.
 
         工作项发布版本号
 
@@ -715,7 +715,7 @@ class ListIssueItemResponse:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this ListIssueItemResponse.
+        r"""Sets the release_dev of this ListIssueItemResponse.
 
         工作项发布版本号
 
@@ -726,7 +726,7 @@ class ListIssueItemResponse:
 
     @property
     def find_release_dev(self):
-        """Gets the find_release_dev of this ListIssueItemResponse.
+        r"""Gets the find_release_dev of this ListIssueItemResponse.
 
         缺陷发现版本号（仅Bug类型工作项具备该字段）
 
@@ -737,7 +737,7 @@ class ListIssueItemResponse:
 
     @find_release_dev.setter
     def find_release_dev(self, find_release_dev):
-        """Sets the find_release_dev of this ListIssueItemResponse.
+        r"""Sets the find_release_dev of this ListIssueItemResponse.
 
         缺陷发现版本号（仅Bug类型工作项具备该字段）
 
@@ -748,7 +748,7 @@ class ListIssueItemResponse:
 
     @property
     def env(self):
-        """Gets the env of this ListIssueItemResponse.
+        r"""Gets the env of this ListIssueItemResponse.
 
         :return: The env of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
@@ -757,7 +757,7 @@ class ListIssueItemResponse:
 
     @env.setter
     def env(self, env):
-        """Sets the env of this ListIssueItemResponse.
+        r"""Sets the env of this ListIssueItemResponse.
 
         :param env: The env of this ListIssueItemResponse.
         :type env: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
@@ -766,7 +766,7 @@ class ListIssueItemResponse:
 
     @property
     def tracker(self):
-        """Gets the tracker of this ListIssueItemResponse.
+        r"""Gets the tracker of this ListIssueItemResponse.
 
         :return: The tracker of this ListIssueItemResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
@@ -775,7 +775,7 @@ class ListIssueItemResponse:
 
     @tracker.setter
     def tracker(self, tracker):
-        """Sets the tracker of this ListIssueItemResponse.
+        r"""Sets the tracker of this ListIssueItemResponse.
 
         :param tracker: The tracker of this ListIssueItemResponse.
         :type tracker: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
@@ -784,7 +784,7 @@ class ListIssueItemResponse:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ListIssueItemResponse.
+        r"""Gets the updated_time of this ListIssueItemResponse.
 
         更新时间 年-月-日 时:分:秒
 
@@ -795,7 +795,7 @@ class ListIssueItemResponse:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ListIssueItemResponse.
+        r"""Sets the updated_time of this ListIssueItemResponse.
 
         更新时间 年-月-日 时:分:秒
 
@@ -806,7 +806,7 @@ class ListIssueItemResponse:
 
     @property
     def closed_time(self):
-        """Gets the closed_time of this ListIssueItemResponse.
+        r"""Gets the closed_time of this ListIssueItemResponse.
 
         关闭时间 年-月-日 时:分:秒
 
@@ -817,7 +817,7 @@ class ListIssueItemResponse:
 
     @closed_time.setter
     def closed_time(self, closed_time):
-        """Sets the closed_time of this ListIssueItemResponse.
+        r"""Sets the closed_time of this ListIssueItemResponse.
 
         关闭时间 年-月-日 时:分:秒
 
@@ -828,7 +828,7 @@ class ListIssueItemResponse:
 
     @property
     def deleted(self):
-        """Gets the deleted of this ListIssueItemResponse.
+        r"""Gets the deleted of this ListIssueItemResponse.
 
         是否已经删除,true 已经删除， false 未删除
 
@@ -839,7 +839,7 @@ class ListIssueItemResponse:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ListIssueItemResponse.
+        r"""Sets the deleted of this ListIssueItemResponse.
 
         是否已经删除,true 已经删除， false 未删除
 

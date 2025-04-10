@@ -32,7 +32,7 @@ class EnablePropagationRequest:
     }
 
     def __init__(self, x_client_token=None, er_id=None, route_table_id=None, body=None):
-        """EnablePropagationRequest
+        r"""EnablePropagationRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class EnablePropagationRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this EnablePropagationRequest.
+        r"""Gets the x_client_token of this EnablePropagationRequest.
 
         幂等性标识
 
@@ -74,7 +74,7 @@ class EnablePropagationRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this EnablePropagationRequest.
+        r"""Sets the x_client_token of this EnablePropagationRequest.
 
         幂等性标识
 
@@ -85,7 +85,7 @@ class EnablePropagationRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this EnablePropagationRequest.
+        r"""Gets the er_id of this EnablePropagationRequest.
 
         企业路由器实例ID
 
@@ -96,7 +96,7 @@ class EnablePropagationRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this EnablePropagationRequest.
+        r"""Sets the er_id of this EnablePropagationRequest.
 
         企业路由器实例ID
 
@@ -107,7 +107,7 @@ class EnablePropagationRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this EnablePropagationRequest.
+        r"""Gets the route_table_id of this EnablePropagationRequest.
 
         路由表ID
 
@@ -118,7 +118,7 @@ class EnablePropagationRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this EnablePropagationRequest.
+        r"""Sets the route_table_id of this EnablePropagationRequest.
 
         路由表ID
 
@@ -129,7 +129,7 @@ class EnablePropagationRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnablePropagationRequest.
+        r"""Gets the body of this EnablePropagationRequest.
 
         :return: The body of this EnablePropagationRequest.
         :rtype: :class:`huaweicloudsdker.v3.PropagationRequestBody`
@@ -138,7 +138,7 @@ class EnablePropagationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnablePropagationRequest.
+        r"""Sets the body of this EnablePropagationRequest.
 
         :param body: The body of this EnablePropagationRequest.
         :type body: :class:`huaweicloudsdker.v3.PropagationRequestBody`

@@ -30,7 +30,7 @@ class CreateInstanceRequest:
     }
 
     def __init__(self, x_language=None, x_client_token=None, body=None):
-        """CreateInstanceRequest
+        r"""CreateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateInstanceRequest.
+        r"""Gets the x_language of this CreateInstanceRequest.
 
         语言
 
@@ -69,7 +69,7 @@ class CreateInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateInstanceRequest.
+        r"""Sets the x_language of this CreateInstanceRequest.
 
         语言
 
@@ -80,7 +80,7 @@ class CreateInstanceRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateInstanceRequest.
+        r"""Gets the x_client_token of this CreateInstanceRequest.
 
         保证客户端请求幂等性的标识。 该标识为32位UUID格式，由客户端生成，且需确保72小时内不同请求之间该标识具有唯一性。
 
@@ -91,7 +91,7 @@ class CreateInstanceRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateInstanceRequest.
+        r"""Sets the x_client_token of this CreateInstanceRequest.
 
         保证客户端请求幂等性的标识。 该标识为32位UUID格式，由客户端生成，且需确保72小时内不同请求之间该标识具有唯一性。
 
@@ -102,7 +102,7 @@ class CreateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceRequest.
+        r"""Gets the body of this CreateInstanceRequest.
 
         :return: The body of this CreateInstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.InstanceRequest`
@@ -111,7 +111,7 @@ class CreateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceRequest.
+        r"""Sets the body of this CreateInstanceRequest.
 
         :param body: The body of this CreateInstanceRequest.
         :type body: :class:`huaweicloudsdkrds.v3.InstanceRequest`

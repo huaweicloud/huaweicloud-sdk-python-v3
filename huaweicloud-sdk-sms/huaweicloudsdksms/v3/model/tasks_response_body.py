@@ -83,7 +83,7 @@ class TasksResponseBody:
     }
 
     def __init__(self, id=None, name=None, type=None, os_type=None, state=None, estimate_complete_time=None, create_date=None, priority=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, error_json=None, total_time=None, migration_ip=None, sub_tasks=None, source_server=None, enterprise_project_id=None, target_server=None, log_collect_status=None, clone_server=None, syncing=None, network_check_info=None, special_config=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None):
-        """TasksResponseBody
+        r"""TasksResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class TasksResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this TasksResponseBody.
+        r"""Gets the id of this TasksResponseBody.
 
         迁移任务ID
 
@@ -257,7 +257,7 @@ class TasksResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TasksResponseBody.
+        r"""Sets the id of this TasksResponseBody.
 
         迁移任务ID
 
@@ -268,7 +268,7 @@ class TasksResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this TasksResponseBody.
+        r"""Gets the name of this TasksResponseBody.
 
         任务名称（用户自定义）
 
@@ -279,7 +279,7 @@ class TasksResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TasksResponseBody.
+        r"""Sets the name of this TasksResponseBody.
 
         任务名称（用户自定义）
 
@@ -290,7 +290,7 @@ class TasksResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this TasksResponseBody.
+        r"""Gets the type of this TasksResponseBody.
 
         任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -301,7 +301,7 @@ class TasksResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TasksResponseBody.
+        r"""Sets the type of this TasksResponseBody.
 
         任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -312,7 +312,7 @@ class TasksResponseBody:
 
     @property
     def os_type(self):
-        """Gets the os_type of this TasksResponseBody.
+        r"""Gets the os_type of this TasksResponseBody.
 
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
@@ -323,7 +323,7 @@ class TasksResponseBody:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this TasksResponseBody.
+        r"""Sets the os_type of this TasksResponseBody.
 
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
@@ -334,7 +334,7 @@ class TasksResponseBody:
 
     @property
     def state(self):
-        """Gets the state of this TasksResponseBody.
+        r"""Gets the state of this TasksResponseBody.
 
         任务状态
 
@@ -345,7 +345,7 @@ class TasksResponseBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TasksResponseBody.
+        r"""Sets the state of this TasksResponseBody.
 
         任务状态
 
@@ -356,7 +356,7 @@ class TasksResponseBody:
 
     @property
     def estimate_complete_time(self):
-        """Gets the estimate_complete_time of this TasksResponseBody.
+        r"""Gets the estimate_complete_time of this TasksResponseBody.
 
         预估完成时间
 
@@ -367,7 +367,7 @@ class TasksResponseBody:
 
     @estimate_complete_time.setter
     def estimate_complete_time(self, estimate_complete_time):
-        """Sets the estimate_complete_time of this TasksResponseBody.
+        r"""Sets the estimate_complete_time of this TasksResponseBody.
 
         预估完成时间
 
@@ -378,7 +378,7 @@ class TasksResponseBody:
 
     @property
     def create_date(self):
-        """Gets the create_date of this TasksResponseBody.
+        r"""Gets the create_date of this TasksResponseBody.
 
         任务创建时间
 
@@ -389,7 +389,7 @@ class TasksResponseBody:
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this TasksResponseBody.
+        r"""Sets the create_date of this TasksResponseBody.
 
         任务创建时间
 
@@ -400,7 +400,7 @@ class TasksResponseBody:
 
     @property
     def priority(self):
-        """Gets the priority of this TasksResponseBody.
+        r"""Gets the priority of this TasksResponseBody.
 
         进程优先级 0：低 1：标准 2：高
 
@@ -411,7 +411,7 @@ class TasksResponseBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this TasksResponseBody.
+        r"""Sets the priority of this TasksResponseBody.
 
         进程优先级 0：低 1：标准 2：高
 
@@ -422,7 +422,7 @@ class TasksResponseBody:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this TasksResponseBody.
+        r"""Gets the speed_limit of this TasksResponseBody.
 
         迁移限速
 
@@ -433,7 +433,7 @@ class TasksResponseBody:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this TasksResponseBody.
+        r"""Sets the speed_limit of this TasksResponseBody.
 
         迁移限速
 
@@ -444,7 +444,7 @@ class TasksResponseBody:
 
     @property
     def migrate_speed(self):
-        """Gets the migrate_speed of this TasksResponseBody.
+        r"""Gets the migrate_speed of this TasksResponseBody.
 
         迁移速率，单位：MB/S
 
@@ -455,7 +455,7 @@ class TasksResponseBody:
 
     @migrate_speed.setter
     def migrate_speed(self, migrate_speed):
-        """Sets the migrate_speed of this TasksResponseBody.
+        r"""Sets the migrate_speed of this TasksResponseBody.
 
         迁移速率，单位：MB/S
 
@@ -466,7 +466,7 @@ class TasksResponseBody:
 
     @property
     def compress_rate(self):
-        """Gets the compress_rate of this TasksResponseBody.
+        r"""Gets the compress_rate of this TasksResponseBody.
 
         压缩率
 
@@ -477,7 +477,7 @@ class TasksResponseBody:
 
     @compress_rate.setter
     def compress_rate(self, compress_rate):
-        """Sets the compress_rate of this TasksResponseBody.
+        r"""Sets the compress_rate of this TasksResponseBody.
 
         压缩率
 
@@ -488,7 +488,7 @@ class TasksResponseBody:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this TasksResponseBody.
+        r"""Gets the start_target_server of this TasksResponseBody.
 
         迁移完成后是否启动目的端服务器 true：启动 false：停止
 
@@ -499,7 +499,7 @@ class TasksResponseBody:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this TasksResponseBody.
+        r"""Sets the start_target_server of this TasksResponseBody.
 
         迁移完成后是否启动目的端服务器 true：启动 false：停止
 
@@ -510,7 +510,7 @@ class TasksResponseBody:
 
     @property
     def error_json(self):
-        """Gets the error_json of this TasksResponseBody.
+        r"""Gets the error_json of this TasksResponseBody.
 
         错误信息
 
@@ -521,7 +521,7 @@ class TasksResponseBody:
 
     @error_json.setter
     def error_json(self, error_json):
-        """Sets the error_json of this TasksResponseBody.
+        r"""Sets the error_json of this TasksResponseBody.
 
         错误信息
 
@@ -532,7 +532,7 @@ class TasksResponseBody:
 
     @property
     def total_time(self):
-        """Gets the total_time of this TasksResponseBody.
+        r"""Gets the total_time of this TasksResponseBody.
 
         任务总耗时
 
@@ -543,7 +543,7 @@ class TasksResponseBody:
 
     @total_time.setter
     def total_time(self, total_time):
-        """Sets the total_time of this TasksResponseBody.
+        r"""Sets the total_time of this TasksResponseBody.
 
         任务总耗时
 
@@ -554,7 +554,7 @@ class TasksResponseBody:
 
     @property
     def migration_ip(self):
-        """Gets the migration_ip of this TasksResponseBody.
+        r"""Gets the migration_ip of this TasksResponseBody.
 
         目的端服务器的IP地址。 公网迁移时请填写弹性IP地址 专线迁移时请填写私有IP地址
 
@@ -565,7 +565,7 @@ class TasksResponseBody:
 
     @migration_ip.setter
     def migration_ip(self, migration_ip):
-        """Sets the migration_ip of this TasksResponseBody.
+        r"""Sets the migration_ip of this TasksResponseBody.
 
         目的端服务器的IP地址。 公网迁移时请填写弹性IP地址 专线迁移时请填写私有IP地址
 
@@ -576,7 +576,7 @@ class TasksResponseBody:
 
     @property
     def sub_tasks(self):
-        """Gets the sub_tasks of this TasksResponseBody.
+        r"""Gets the sub_tasks of this TasksResponseBody.
 
         任务关联的子任务信息
 
@@ -587,7 +587,7 @@ class TasksResponseBody:
 
     @sub_tasks.setter
     def sub_tasks(self, sub_tasks):
-        """Sets the sub_tasks of this TasksResponseBody.
+        r"""Sets the sub_tasks of this TasksResponseBody.
 
         任务关联的子任务信息
 
@@ -598,7 +598,7 @@ class TasksResponseBody:
 
     @property
     def source_server(self):
-        """Gets the source_server of this TasksResponseBody.
+        r"""Gets the source_server of this TasksResponseBody.
 
         :return: The source_server of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
@@ -607,7 +607,7 @@ class TasksResponseBody:
 
     @source_server.setter
     def source_server(self, source_server):
-        """Sets the source_server of this TasksResponseBody.
+        r"""Sets the source_server of this TasksResponseBody.
 
         :param source_server: The source_server of this TasksResponseBody.
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
@@ -616,7 +616,7 @@ class TasksResponseBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this TasksResponseBody.
+        r"""Gets the enterprise_project_id of this TasksResponseBody.
 
         迁移项目ID
 
@@ -627,7 +627,7 @@ class TasksResponseBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this TasksResponseBody.
+        r"""Sets the enterprise_project_id of this TasksResponseBody.
 
         迁移项目ID
 
@@ -638,7 +638,7 @@ class TasksResponseBody:
 
     @property
     def target_server(self):
-        """Gets the target_server of this TasksResponseBody.
+        r"""Gets the target_server of this TasksResponseBody.
 
         :return: The target_server of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
@@ -647,7 +647,7 @@ class TasksResponseBody:
 
     @target_server.setter
     def target_server(self, target_server):
-        """Sets the target_server of this TasksResponseBody.
+        r"""Sets the target_server of this TasksResponseBody.
 
         :param target_server: The target_server of this TasksResponseBody.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
@@ -656,7 +656,7 @@ class TasksResponseBody:
 
     @property
     def log_collect_status(self):
-        """Gets the log_collect_status of this TasksResponseBody.
+        r"""Gets the log_collect_status of this TasksResponseBody.
 
         日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK
 
@@ -667,7 +667,7 @@ class TasksResponseBody:
 
     @log_collect_status.setter
     def log_collect_status(self, log_collect_status):
-        """Sets the log_collect_status of this TasksResponseBody.
+        r"""Sets the log_collect_status of this TasksResponseBody.
 
         日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK
 
@@ -678,7 +678,7 @@ class TasksResponseBody:
 
     @property
     def clone_server(self):
-        """Gets the clone_server of this TasksResponseBody.
+        r"""Gets the clone_server of this TasksResponseBody.
 
         :return: The clone_server of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServerBrief`
@@ -687,7 +687,7 @@ class TasksResponseBody:
 
     @clone_server.setter
     def clone_server(self, clone_server):
-        """Sets the clone_server of this TasksResponseBody.
+        r"""Sets the clone_server of this TasksResponseBody.
 
         :param clone_server: The clone_server of this TasksResponseBody.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServerBrief`
@@ -696,7 +696,7 @@ class TasksResponseBody:
 
     @property
     def syncing(self):
-        """Gets the syncing of this TasksResponseBody.
+        r"""Gets the syncing of this TasksResponseBody.
 
         是否同步
 
@@ -707,7 +707,7 @@ class TasksResponseBody:
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this TasksResponseBody.
+        r"""Sets the syncing of this TasksResponseBody.
 
         是否同步
 
@@ -718,7 +718,7 @@ class TasksResponseBody:
 
     @property
     def network_check_info(self):
-        """Gets the network_check_info of this TasksResponseBody.
+        r"""Gets the network_check_info of this TasksResponseBody.
 
         :return: The network_check_info of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
@@ -727,7 +727,7 @@ class TasksResponseBody:
 
     @network_check_info.setter
     def network_check_info(self, network_check_info):
-        """Sets the network_check_info of this TasksResponseBody.
+        r"""Sets the network_check_info of this TasksResponseBody.
 
         :param network_check_info: The network_check_info of this TasksResponseBody.
         :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
@@ -736,7 +736,7 @@ class TasksResponseBody:
 
     @property
     def special_config(self):
-        """Gets the special_config of this TasksResponseBody.
+        r"""Gets the special_config of this TasksResponseBody.
 
         特殊配置项配置信息
 
@@ -747,7 +747,7 @@ class TasksResponseBody:
 
     @special_config.setter
     def special_config(self, special_config):
-        """Sets the special_config of this TasksResponseBody.
+        r"""Sets the special_config of this TasksResponseBody.
 
         特殊配置项配置信息
 
@@ -758,7 +758,7 @@ class TasksResponseBody:
 
     @property
     def total_cpu_usage(self):
-        """Gets the total_cpu_usage of this TasksResponseBody.
+        r"""Gets the total_cpu_usage of this TasksResponseBody.
 
         主机的CPU使用率，单位是百分比
 
@@ -769,7 +769,7 @@ class TasksResponseBody:
 
     @total_cpu_usage.setter
     def total_cpu_usage(self, total_cpu_usage):
-        """Sets the total_cpu_usage of this TasksResponseBody.
+        r"""Sets the total_cpu_usage of this TasksResponseBody.
 
         主机的CPU使用率，单位是百分比
 
@@ -780,7 +780,7 @@ class TasksResponseBody:
 
     @property
     def agent_cpu_usage(self):
-        """Gets the agent_cpu_usage of this TasksResponseBody.
+        r"""Gets the agent_cpu_usage of this TasksResponseBody.
 
         Agent的CPU使用率，单位是百分比
 
@@ -791,7 +791,7 @@ class TasksResponseBody:
 
     @agent_cpu_usage.setter
     def agent_cpu_usage(self, agent_cpu_usage):
-        """Sets the agent_cpu_usage of this TasksResponseBody.
+        r"""Sets the agent_cpu_usage of this TasksResponseBody.
 
         Agent的CPU使用率，单位是百分比
 
@@ -802,7 +802,7 @@ class TasksResponseBody:
 
     @property
     def total_mem_usage(self):
-        """Gets the total_mem_usage of this TasksResponseBody.
+        r"""Gets the total_mem_usage of this TasksResponseBody.
 
         主机的内存使用值，单位是MB
 
@@ -813,7 +813,7 @@ class TasksResponseBody:
 
     @total_mem_usage.setter
     def total_mem_usage(self, total_mem_usage):
-        """Sets the total_mem_usage of this TasksResponseBody.
+        r"""Sets the total_mem_usage of this TasksResponseBody.
 
         主机的内存使用值，单位是MB
 
@@ -824,7 +824,7 @@ class TasksResponseBody:
 
     @property
     def agent_mem_usage(self):
-        """Gets the agent_mem_usage of this TasksResponseBody.
+        r"""Gets the agent_mem_usage of this TasksResponseBody.
 
         Agent的内存使用值，单位是MB
 
@@ -835,7 +835,7 @@ class TasksResponseBody:
 
     @agent_mem_usage.setter
     def agent_mem_usage(self, agent_mem_usage):
-        """Sets the agent_mem_usage of this TasksResponseBody.
+        r"""Sets the agent_mem_usage of this TasksResponseBody.
 
         Agent的内存使用值，单位是MB
 
@@ -846,7 +846,7 @@ class TasksResponseBody:
 
     @property
     def total_disk_io(self):
-        """Gets the total_disk_io of this TasksResponseBody.
+        r"""Gets the total_disk_io of this TasksResponseBody.
 
         主机的磁盘I/O值，单位是MB/s
 
@@ -857,7 +857,7 @@ class TasksResponseBody:
 
     @total_disk_io.setter
     def total_disk_io(self, total_disk_io):
-        """Sets the total_disk_io of this TasksResponseBody.
+        r"""Sets the total_disk_io of this TasksResponseBody.
 
         主机的磁盘I/O值，单位是MB/s
 
@@ -868,7 +868,7 @@ class TasksResponseBody:
 
     @property
     def agent_disk_io(self):
-        """Gets the agent_disk_io of this TasksResponseBody.
+        r"""Gets the agent_disk_io of this TasksResponseBody.
 
         Agent的磁盘I/O值，单位是MB/s
 
@@ -879,7 +879,7 @@ class TasksResponseBody:
 
     @agent_disk_io.setter
     def agent_disk_io(self, agent_disk_io):
-        """Sets the agent_disk_io of this TasksResponseBody.
+        r"""Sets the agent_disk_io of this TasksResponseBody.
 
         Agent的磁盘I/O值，单位是MB/s
 

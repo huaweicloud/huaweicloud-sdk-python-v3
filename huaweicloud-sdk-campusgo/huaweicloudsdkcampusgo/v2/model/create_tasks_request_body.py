@@ -39,7 +39,7 @@ class CreateTasksRequestBody:
     }
 
     def __init__(self, name=None, description=None, input=None, output=None, service_version=None, edge_pool_id=None, resource_order_id=None, service_config=None):
-        """CreateTasksRequestBody
+        r"""CreateTasksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreateTasksRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateTasksRequestBody.
+        r"""Gets the name of this CreateTasksRequestBody.
 
         作业的名称
 
@@ -99,7 +99,7 @@ class CreateTasksRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTasksRequestBody.
+        r"""Sets the name of this CreateTasksRequestBody.
 
         作业的名称
 
@@ -110,7 +110,7 @@ class CreateTasksRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateTasksRequestBody.
+        r"""Gets the description of this CreateTasksRequestBody.
 
         作业的描述
 
@@ -121,7 +121,7 @@ class CreateTasksRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTasksRequestBody.
+        r"""Sets the description of this CreateTasksRequestBody.
 
         作业的描述
 
@@ -132,7 +132,7 @@ class CreateTasksRequestBody:
 
     @property
     def input(self):
-        """Gets the input of this CreateTasksRequestBody.
+        r"""Gets the input of this CreateTasksRequestBody.
 
         :return: The input of this CreateTasksRequestBody.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskInput`
@@ -141,7 +141,7 @@ class CreateTasksRequestBody:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateTasksRequestBody.
+        r"""Sets the input of this CreateTasksRequestBody.
 
         :param input: The input of this CreateTasksRequestBody.
         :type input: :class:`huaweicloudsdkcampusgo.v2.TaskInput`
@@ -150,7 +150,7 @@ class CreateTasksRequestBody:
 
     @property
     def output(self):
-        """Gets the output of this CreateTasksRequestBody.
+        r"""Gets the output of this CreateTasksRequestBody.
 
         :return: The output of this CreateTasksRequestBody.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskOutput`
@@ -159,7 +159,7 @@ class CreateTasksRequestBody:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateTasksRequestBody.
+        r"""Sets the output of this CreateTasksRequestBody.
 
         :param output: The output of this CreateTasksRequestBody.
         :type output: :class:`huaweicloudsdkcampusgo.v2.TaskOutput`
@@ -168,7 +168,7 @@ class CreateTasksRequestBody:
 
     @property
     def service_version(self):
-        """Gets the service_version of this CreateTasksRequestBody.
+        r"""Gets the service_version of this CreateTasksRequestBody.
 
         作业对应服务的版本号
 
@@ -179,7 +179,7 @@ class CreateTasksRequestBody:
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this CreateTasksRequestBody.
+        r"""Sets the service_version of this CreateTasksRequestBody.
 
         作业对应服务的版本号
 
@@ -190,7 +190,7 @@ class CreateTasksRequestBody:
 
     @property
     def edge_pool_id(self):
-        """Gets the edge_pool_id of this CreateTasksRequestBody.
+        r"""Gets the edge_pool_id of this CreateTasksRequestBody.
 
         仅边缘作业需填且必填，作业运行指定的边缘运行池ID
 
@@ -201,7 +201,7 @@ class CreateTasksRequestBody:
 
     @edge_pool_id.setter
     def edge_pool_id(self, edge_pool_id):
-        """Sets the edge_pool_id of this CreateTasksRequestBody.
+        r"""Sets the edge_pool_id of this CreateTasksRequestBody.
 
         仅边缘作业需填且必填，作业运行指定的边缘运行池ID
 
@@ -212,7 +212,7 @@ class CreateTasksRequestBody:
 
     @property
     def resource_order_id(self):
-        """Gets the resource_order_id of this CreateTasksRequestBody.
+        r"""Gets the resource_order_id of this CreateTasksRequestBody.
 
         作业指定的算法能力包包周期订单ID
 
@@ -223,7 +223,7 @@ class CreateTasksRequestBody:
 
     @resource_order_id.setter
     def resource_order_id(self, resource_order_id):
-        """Sets the resource_order_id of this CreateTasksRequestBody.
+        r"""Sets the resource_order_id of this CreateTasksRequestBody.
 
         作业指定的算法能力包包周期订单ID
 
@@ -234,7 +234,7 @@ class CreateTasksRequestBody:
 
     @property
     def service_config(self):
-        """Gets the service_config of this CreateTasksRequestBody.
+        r"""Gets the service_config of this CreateTasksRequestBody.
 
         :return: The service_config of this CreateTasksRequestBody.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskServiceConfig`
@@ -243,7 +243,7 @@ class CreateTasksRequestBody:
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this CreateTasksRequestBody.
+        r"""Sets the service_config of this CreateTasksRequestBody.
 
         :param service_config: The service_config of this CreateTasksRequestBody.
         :type service_config: :class:`huaweicloudsdkcampusgo.v2.TaskServiceConfig`

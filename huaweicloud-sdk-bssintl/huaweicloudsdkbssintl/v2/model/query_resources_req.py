@@ -41,7 +41,7 @@ class QueryResourcesReq:
     }
 
     def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None, expire_time_begin=None, expire_time_end=None, service_type_code=None):
-        """QueryResourcesReq
+        r"""QueryResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryResourcesReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this QueryResourcesReq.
+        r"""Gets the resource_ids of this QueryResourcesReq.
 
         资源ID列表。 查询指定资源ID的资源（当only_main_resource=0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询，多个ID以英文逗号分隔。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
 
@@ -110,7 +110,7 @@ class QueryResourcesReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this QueryResourcesReq.
+        r"""Sets the resource_ids of this QueryResourcesReq.
 
         资源ID列表。 查询指定资源ID的资源（当only_main_resource=0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询，多个ID以英文逗号分隔。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
 
@@ -121,7 +121,7 @@ class QueryResourcesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this QueryResourcesReq.
+        r"""Gets the order_id of this QueryResourcesReq.
 
         订单号。查询指定订单下的资源。  说明： 使用特殊字符进行查询的时候，请注意进行URL编码转换，如“%”的转码应为“%25”。
 
@@ -132,7 +132,7 @@ class QueryResourcesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this QueryResourcesReq.
+        r"""Sets the order_id of this QueryResourcesReq.
 
         订单号。查询指定订单下的资源。  说明： 使用特殊字符进行查询的时候，请注意进行URL编码转换，如“%”的转码应为“%25”。
 
@@ -143,7 +143,7 @@ class QueryResourcesReq:
 
     @property
     def only_main_resource(self):
-        """Gets the only_main_resource of this QueryResourcesReq.
+        r"""Gets the only_main_resource of this QueryResourcesReq.
 
         是否只查询主资源，该参数对于请求参数是子资源ID的时候无效，如果resource_ids是子资源ID，只能查询自己。 0：查询主资源及附属资源。1：只查询主资源。 默认值为0。  说明： 主资源是指有关联的几个资源中，处于主导位置的资源。 对于ECS而言，虚拟机VM是主资源，磁盘EVS是辅资源。对于VPC而言，共享带宽的情况下，带宽为主资源，对应的从资源为弹性IP（可能包含多个IP）；独享带宽的情况下，弹性IP为主资源，对应的从资源为带宽。
 
@@ -154,7 +154,7 @@ class QueryResourcesReq:
 
     @only_main_resource.setter
     def only_main_resource(self, only_main_resource):
-        """Sets the only_main_resource of this QueryResourcesReq.
+        r"""Sets the only_main_resource of this QueryResourcesReq.
 
         是否只查询主资源，该参数对于请求参数是子资源ID的时候无效，如果resource_ids是子资源ID，只能查询自己。 0：查询主资源及附属资源。1：只查询主资源。 默认值为0。  说明： 主资源是指有关联的几个资源中，处于主导位置的资源。 对于ECS而言，虚拟机VM是主资源，磁盘EVS是辅资源。对于VPC而言，共享带宽的情况下，带宽为主资源，对应的从资源为弹性IP（可能包含多个IP）；独享带宽的情况下，弹性IP为主资源，对应的从资源为带宽。
 
@@ -165,7 +165,7 @@ class QueryResourcesReq:
 
     @property
     def status_list(self):
-        """Gets the status_list of this QueryResourcesReq.
+        r"""Gets the status_list of this QueryResourcesReq.
 
         资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中3：已关闭4：已冻结5：已过期
 
@@ -176,7 +176,7 @@ class QueryResourcesReq:
 
     @status_list.setter
     def status_list(self, status_list):
-        """Sets the status_list of this QueryResourcesReq.
+        r"""Sets the status_list of this QueryResourcesReq.
 
         资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中3：已关闭4：已冻结5：已过期
 
@@ -187,7 +187,7 @@ class QueryResourcesReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryResourcesReq.
+        r"""Gets the offset of this QueryResourcesReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -198,7 +198,7 @@ class QueryResourcesReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryResourcesReq.
+        r"""Sets the offset of this QueryResourcesReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -209,7 +209,7 @@ class QueryResourcesReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryResourcesReq.
+        r"""Gets the limit of this QueryResourcesReq.
 
         每次查询的条数。默认值为10。
 
@@ -220,7 +220,7 @@ class QueryResourcesReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryResourcesReq.
+        r"""Sets the limit of this QueryResourcesReq.
 
         每次查询的条数。默认值为10。
 
@@ -231,7 +231,7 @@ class QueryResourcesReq:
 
     @property
     def expire_time_begin(self):
-        """Gets the expire_time_begin of this QueryResourcesReq.
+        r"""Gets the expire_time_begin of this QueryResourcesReq.
 
         查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。
 
@@ -242,7 +242,7 @@ class QueryResourcesReq:
 
     @expire_time_begin.setter
     def expire_time_begin(self, expire_time_begin):
-        """Sets the expire_time_begin of this QueryResourcesReq.
+        r"""Sets the expire_time_begin of this QueryResourcesReq.
 
         查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。
 
@@ -253,7 +253,7 @@ class QueryResourcesReq:
 
     @property
     def expire_time_end(self):
-        """Gets the expire_time_end of this QueryResourcesReq.
+        r"""Gets the expire_time_end of this QueryResourcesReq.
 
         查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。
 
@@ -264,7 +264,7 @@ class QueryResourcesReq:
 
     @expire_time_end.setter
     def expire_time_end(self, expire_time_end):
-        """Sets the expire_time_end of this QueryResourcesReq.
+        r"""Sets the expire_time_end of this QueryResourcesReq.
 
         查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。
 
@@ -275,7 +275,7 @@ class QueryResourcesReq:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this QueryResourcesReq.
+        r"""Gets the service_type_code of this QueryResourcesReq.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带、携带值为null，不作为筛选条件。此参数不允许为空串，有参数校验。
 
@@ -286,7 +286,7 @@ class QueryResourcesReq:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this QueryResourcesReq.
+        r"""Sets the service_type_code of this QueryResourcesReq.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带、携带值为null，不作为筛选条件。此参数不允许为空串，有参数校验。
 

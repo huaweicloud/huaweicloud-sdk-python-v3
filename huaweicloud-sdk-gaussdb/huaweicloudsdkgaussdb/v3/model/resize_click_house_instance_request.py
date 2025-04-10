@@ -29,7 +29,7 @@ class ResizeClickHouseInstanceRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ResizeClickHouseInstanceRequest
+        r"""ResizeClickHouseInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResizeClickHouseInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResizeClickHouseInstanceRequest.
+        r"""Gets the instance_id of this ResizeClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class ResizeClickHouseInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResizeClickHouseInstanceRequest.
+        r"""Sets the instance_id of this ResizeClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class ResizeClickHouseInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ResizeClickHouseInstanceRequest.
+        r"""Gets the x_language of this ResizeClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class ResizeClickHouseInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ResizeClickHouseInstanceRequest.
+        r"""Sets the x_language of this ResizeClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class ResizeClickHouseInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeClickHouseInstanceRequest.
+        r"""Gets the body of this ResizeClickHouseInstanceRequest.
 
         :return: The body of this ResizeClickHouseInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChEnlargeVolumeRequestBody`
@@ -109,7 +109,7 @@ class ResizeClickHouseInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeClickHouseInstanceRequest.
+        r"""Sets the body of this ResizeClickHouseInstanceRequest.
 
         :param body: The body of this ResizeClickHouseInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ChEnlargeVolumeRequestBody`

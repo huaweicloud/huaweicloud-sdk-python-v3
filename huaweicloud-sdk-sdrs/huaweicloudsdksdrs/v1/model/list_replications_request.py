@@ -43,7 +43,7 @@ class ListReplicationsRequest:
     }
 
     def __init__(self, server_group_id=None, server_group_ids=None, protected_instance_id=None, protected_instance_ids=None, name=None, status=None, limit=None, offset=None, query_type=None, availability_zone=None):
-        """ListReplicationsRequest
+        r"""ListReplicationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListReplicationsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListReplicationsRequest.
+        r"""Gets the server_group_id of this ListReplicationsRequest.
 
         保护组的ID。
 
@@ -117,7 +117,7 @@ class ListReplicationsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListReplicationsRequest.
+        r"""Sets the server_group_id of this ListReplicationsRequest.
 
         保护组的ID。
 
@@ -128,7 +128,7 @@ class ListReplicationsRequest:
 
     @property
     def server_group_ids(self):
-        """Gets the server_group_ids of this ListReplicationsRequest.
+        r"""Gets the server_group_ids of this ListReplicationsRequest.
 
         保护组的ID列表，格式为server_group_ids=['server_group_id1','server_group_id2',...,'server_group_idx']，请使用URL编码进行转换。返回“server_group_ids”中有效server_group_id的复制对列表，无效的server_group_id会被忽略。支持查询最多30个server_group_id对应的复制对列表。如果“server_group_id”和“server_group_ids”查询参数同时存在，“server_group_id”会被忽略。
 
@@ -139,7 +139,7 @@ class ListReplicationsRequest:
 
     @server_group_ids.setter
     def server_group_ids(self, server_group_ids):
-        """Sets the server_group_ids of this ListReplicationsRequest.
+        r"""Sets the server_group_ids of this ListReplicationsRequest.
 
         保护组的ID列表，格式为server_group_ids=['server_group_id1','server_group_id2',...,'server_group_idx']，请使用URL编码进行转换。返回“server_group_ids”中有效server_group_id的复制对列表，无效的server_group_id会被忽略。支持查询最多30个server_group_id对应的复制对列表。如果“server_group_id”和“server_group_ids”查询参数同时存在，“server_group_id”会被忽略。
 
@@ -150,7 +150,7 @@ class ListReplicationsRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this ListReplicationsRequest.
+        r"""Gets the protected_instance_id of this ListReplicationsRequest.
 
         保护实例的ID。
 
@@ -161,7 +161,7 @@ class ListReplicationsRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this ListReplicationsRequest.
+        r"""Sets the protected_instance_id of this ListReplicationsRequest.
 
         保护实例的ID。
 
@@ -172,7 +172,7 @@ class ListReplicationsRequest:
 
     @property
     def protected_instance_ids(self):
-        """Gets the protected_instance_ids of this ListReplicationsRequest.
+        r"""Gets the protected_instance_ids of this ListReplicationsRequest.
 
         保护实例的ID列表，格式为protected_instance_ids=['protected_instance_id1','protected_instance_id2',...,'protected_instance_idx']，请使用URL编码进行转换。返回“protected_instance_ids”中有效protected_instance_id的复制对列表，无效的protected_instance_id会被忽略。支持查询最多30个protected_instance_id对应的复制对列表。如果“protected_instance_id”和“protected_instance_ids”查询参数同时存在，“protected_instance_id”会被忽略。
 
@@ -183,7 +183,7 @@ class ListReplicationsRequest:
 
     @protected_instance_ids.setter
     def protected_instance_ids(self, protected_instance_ids):
-        """Sets the protected_instance_ids of this ListReplicationsRequest.
+        r"""Sets the protected_instance_ids of this ListReplicationsRequest.
 
         保护实例的ID列表，格式为protected_instance_ids=['protected_instance_id1','protected_instance_id2',...,'protected_instance_idx']，请使用URL编码进行转换。返回“protected_instance_ids”中有效protected_instance_id的复制对列表，无效的protected_instance_id会被忽略。支持查询最多30个protected_instance_id对应的复制对列表。如果“protected_instance_id”和“protected_instance_ids”查询参数同时存在，“protected_instance_id”会被忽略。
 
@@ -194,7 +194,7 @@ class ListReplicationsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListReplicationsRequest.
+        r"""Gets the name of this ListReplicationsRequest.
 
         复制对的名称。支持模糊查询。
 
@@ -205,7 +205,7 @@ class ListReplicationsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListReplicationsRequest.
+        r"""Sets the name of this ListReplicationsRequest.
 
         复制对的名称。支持模糊查询。
 
@@ -216,7 +216,7 @@ class ListReplicationsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListReplicationsRequest.
+        r"""Gets the status of this ListReplicationsRequest.
 
         复制对的状态。
 
@@ -227,7 +227,7 @@ class ListReplicationsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListReplicationsRequest.
+        r"""Sets the status of this ListReplicationsRequest.
 
         复制对的状态。
 
@@ -238,7 +238,7 @@ class ListReplicationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListReplicationsRequest.
+        r"""Gets the limit of this ListReplicationsRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -249,7 +249,7 @@ class ListReplicationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListReplicationsRequest.
+        r"""Sets the limit of this ListReplicationsRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -260,7 +260,7 @@ class ListReplicationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListReplicationsRequest.
+        r"""Gets the offset of this ListReplicationsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -271,7 +271,7 @@ class ListReplicationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListReplicationsRequest.
+        r"""Sets the offset of this ListReplicationsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -282,7 +282,7 @@ class ListReplicationsRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListReplicationsRequest.
+        r"""Gets the query_type of this ListReplicationsRequest.
 
         查询场景类型。如需查询异常状态的复制对列表，query_type的值为“status_abnormal”。否则，query_type取值为空或“general”。
 
@@ -293,7 +293,7 @@ class ListReplicationsRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListReplicationsRequest.
+        r"""Sets the query_type of this ListReplicationsRequest.
 
         查询场景类型。如需查询异常状态的复制对列表，query_type的值为“status_abnormal”。否则，query_type取值为空或“general”。
 
@@ -304,7 +304,7 @@ class ListReplicationsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListReplicationsRequest.
+        r"""Gets the availability_zone of this ListReplicationsRequest.
 
         复制对所在的保护组的当前生产站点可用区。
 
@@ -315,7 +315,7 @@ class ListReplicationsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListReplicationsRequest.
+        r"""Sets the availability_zone of this ListReplicationsRequest.
 
         复制对所在的保护组的当前生产站点可用区。
 

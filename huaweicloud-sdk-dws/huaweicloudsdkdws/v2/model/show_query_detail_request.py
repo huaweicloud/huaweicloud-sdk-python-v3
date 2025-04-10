@@ -29,7 +29,7 @@ class ShowQueryDetailRequest:
     }
 
     def __init__(self, cluster_id=None, query_id=None, ctime=None):
-        """ShowQueryDetailRequest
+        r"""ShowQueryDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowQueryDetailRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowQueryDetailRequest.
+        r"""Gets the cluster_id of this ShowQueryDetailRequest.
 
         集群ID。
 
@@ -66,7 +66,7 @@ class ShowQueryDetailRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowQueryDetailRequest.
+        r"""Sets the cluster_id of this ShowQueryDetailRequest.
 
         集群ID。
 
@@ -77,7 +77,7 @@ class ShowQueryDetailRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowQueryDetailRequest.
+        r"""Gets the query_id of this ShowQueryDetailRequest.
 
         查询ID。
 
@@ -88,7 +88,7 @@ class ShowQueryDetailRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowQueryDetailRequest.
+        r"""Sets the query_id of this ShowQueryDetailRequest.
 
         查询ID。
 
@@ -99,7 +99,7 @@ class ShowQueryDetailRequest:
 
     @property
     def ctime(self):
-        """Gets the ctime of this ShowQueryDetailRequest.
+        r"""Gets the ctime of this ShowQueryDetailRequest.
 
         采集时间。
 
@@ -110,7 +110,7 @@ class ShowQueryDetailRequest:
 
     @ctime.setter
     def ctime(self, ctime):
-        """Sets the ctime of this ShowQueryDetailRequest.
+        r"""Sets the ctime of this ShowQueryDetailRequest.
 
         采集时间。
 

@@ -31,7 +31,7 @@ class CreateSecretEventRequestBody:
     }
 
     def __init__(self, name=None, event_types=None, state=None, notification=None):
-        """CreateSecretEventRequestBody
+        r"""CreateSecretEventRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateSecretEventRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateSecretEventRequestBody.
+        r"""Gets the name of this CreateSecretEventRequestBody.
 
         新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
 
@@ -71,7 +71,7 @@ class CreateSecretEventRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSecretEventRequestBody.
+        r"""Sets the name of this CreateSecretEventRequestBody.
 
         新创建事件通知的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
 
@@ -82,7 +82,7 @@ class CreateSecretEventRequestBody:
 
     @property
     def event_types(self):
-        """Gets the event_types of this CreateSecretEventRequestBody.
+        r"""Gets the event_types of this CreateSecretEventRequestBody.
 
         本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED：版本创建 - SECRET_VERSION_EXPIRED：版本过期 - SECRET_ROTATED：凭据轮转 - SECRET_DELETED：凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
@@ -93,7 +93,7 @@ class CreateSecretEventRequestBody:
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this CreateSecretEventRequestBody.
+        r"""Sets the event_types of this CreateSecretEventRequestBody.
 
         本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED：版本创建 - SECRET_VERSION_EXPIRED：版本过期 - SECRET_ROTATED：凭据轮转 - SECRET_DELETED：凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
@@ -104,7 +104,7 @@ class CreateSecretEventRequestBody:
 
     @property
     def state(self):
-        """Gets the state of this CreateSecretEventRequestBody.
+        r"""Gets the state of this CreateSecretEventRequestBody.
 
         控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用
 
@@ -115,7 +115,7 @@ class CreateSecretEventRequestBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateSecretEventRequestBody.
+        r"""Sets the state of this CreateSecretEventRequestBody.
 
         控制事件是否生效，只有启用状态才能触发包含的基础事件类型  ENABLED：启用 DISABLED：禁用
 
@@ -126,7 +126,7 @@ class CreateSecretEventRequestBody:
 
     @property
     def notification(self):
-        """Gets the notification of this CreateSecretEventRequestBody.
+        r"""Gets the notification of this CreateSecretEventRequestBody.
 
         :return: The notification of this CreateSecretEventRequestBody.
         :rtype: :class:`huaweicloudsdkcsms.v1.Notification`
@@ -135,7 +135,7 @@ class CreateSecretEventRequestBody:
 
     @notification.setter
     def notification(self, notification):
-        """Sets the notification of this CreateSecretEventRequestBody.
+        r"""Sets the notification of this CreateSecretEventRequestBody.
 
         :param notification: The notification of this CreateSecretEventRequestBody.
         :type notification: :class:`huaweicloudsdkcsms.v1.Notification`

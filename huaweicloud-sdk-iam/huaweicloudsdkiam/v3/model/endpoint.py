@@ -39,7 +39,7 @@ class Endpoint:
     }
 
     def __init__(self, service_id=None, region_id=None, links=None, id=None, interface=None, region=None, url=None, enabled=None):
-        """Endpoint
+        r"""Endpoint
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class Endpoint:
 
     @property
     def service_id(self):
-        """Gets the service_id of this Endpoint.
+        r"""Gets the service_id of this Endpoint.
 
         终端节点所属服务的ID。
 
@@ -95,7 +95,7 @@ class Endpoint:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this Endpoint.
+        r"""Sets the service_id of this Endpoint.
 
         终端节点所属服务的ID。
 
@@ -106,7 +106,7 @@ class Endpoint:
 
     @property
     def region_id(self):
-        """Gets the region_id of this Endpoint.
+        r"""Gets the region_id of this Endpoint.
 
         终端节点所属区域的ID。
 
@@ -117,7 +117,7 @@ class Endpoint:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this Endpoint.
+        r"""Sets the region_id of this Endpoint.
 
         终端节点所属区域的ID。
 
@@ -128,7 +128,7 @@ class Endpoint:
 
     @property
     def links(self):
-        """Gets the links of this Endpoint.
+        r"""Gets the links of this Endpoint.
 
         :return: The links of this Endpoint.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -137,7 +137,7 @@ class Endpoint:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Endpoint.
+        r"""Sets the links of this Endpoint.
 
         :param links: The links of this Endpoint.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -146,7 +146,7 @@ class Endpoint:
 
     @property
     def id(self):
-        """Gets the id of this Endpoint.
+        r"""Gets the id of this Endpoint.
 
         终端节点ID。
 
@@ -157,7 +157,7 @@ class Endpoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Endpoint.
+        r"""Sets the id of this Endpoint.
 
         终端节点ID。
 
@@ -168,7 +168,7 @@ class Endpoint:
 
     @property
     def interface(self):
-        """Gets the interface of this Endpoint.
+        r"""Gets the interface of this Endpoint.
 
         终端节点平面。
 
@@ -179,7 +179,7 @@ class Endpoint:
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this Endpoint.
+        r"""Sets the interface of this Endpoint.
 
         终端节点平面。
 
@@ -190,7 +190,7 @@ class Endpoint:
 
     @property
     def region(self):
-        """Gets the region of this Endpoint.
+        r"""Gets the region of this Endpoint.
 
         终端节点所属区域。
 
@@ -201,7 +201,7 @@ class Endpoint:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this Endpoint.
+        r"""Sets the region of this Endpoint.
 
         终端节点所属区域。
 
@@ -212,7 +212,7 @@ class Endpoint:
 
     @property
     def url(self):
-        """Gets the url of this Endpoint.
+        r"""Gets the url of this Endpoint.
 
         终端节点的地址。
 
@@ -223,7 +223,7 @@ class Endpoint:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Endpoint.
+        r"""Sets the url of this Endpoint.
 
         终端节点的地址。
 
@@ -234,7 +234,7 @@ class Endpoint:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Endpoint.
+        r"""Gets the enabled of this Endpoint.
 
         终端节点是否可用。
 
@@ -245,7 +245,7 @@ class Endpoint:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Endpoint.
+        r"""Sets the enabled of this Endpoint.
 
         终端节点是否可用。
 

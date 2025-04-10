@@ -25,7 +25,7 @@ class ShowProjectSummaryV4Request:
     }
 
     def __init__(self, project_id=None):
-        """ShowProjectSummaryV4Request
+        r"""ShowProjectSummaryV4Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowProjectSummaryV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectSummaryV4Request.
+        r"""Gets the project_id of this ShowProjectSummaryV4Request.
 
         devcloud项目的32位id
 
@@ -53,7 +53,7 @@ class ShowProjectSummaryV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectSummaryV4Request.
+        r"""Sets the project_id of this ShowProjectSummaryV4Request.
 
         devcloud项目的32位id
 

@@ -25,7 +25,7 @@ class UpdateAccessPolicyObjectsReq:
     }
 
     def __init__(self, policy_objects_list=None):
-        """UpdateAccessPolicyObjectsReq
+        r"""UpdateAccessPolicyObjectsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAccessPolicyObjectsReq:
 
     @property
     def policy_objects_list(self):
-        """Gets the policy_objects_list of this UpdateAccessPolicyObjectsReq.
+        r"""Gets the policy_objects_list of this UpdateAccessPolicyObjectsReq.
 
         更新策略应用对象列表请求。
 
@@ -54,7 +54,7 @@ class UpdateAccessPolicyObjectsReq:
 
     @policy_objects_list.setter
     def policy_objects_list(self, policy_objects_list):
-        """Sets the policy_objects_list of this UpdateAccessPolicyObjectsReq.
+        r"""Sets the policy_objects_list of this UpdateAccessPolicyObjectsReq.
 
         更新策略应用对象列表请求。
 

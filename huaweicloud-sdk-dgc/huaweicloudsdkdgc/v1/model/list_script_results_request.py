@@ -29,7 +29,7 @@ class ListScriptResultsRequest:
     }
 
     def __init__(self, workspace=None, script_name=None, instance_id=None):
-        """ListScriptResultsRequest
+        r"""ListScriptResultsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListScriptResultsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListScriptResultsRequest.
+        r"""Gets the workspace of this ListScriptResultsRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class ListScriptResultsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListScriptResultsRequest.
+        r"""Sets the workspace of this ListScriptResultsRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class ListScriptResultsRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ListScriptResultsRequest.
+        r"""Gets the script_name of this ListScriptResultsRequest.
 
         脚本名称
 
@@ -88,7 +88,7 @@ class ListScriptResultsRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ListScriptResultsRequest.
+        r"""Sets the script_name of this ListScriptResultsRequest.
 
         脚本名称
 
@@ -99,7 +99,7 @@ class ListScriptResultsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListScriptResultsRequest.
+        r"""Gets the instance_id of this ListScriptResultsRequest.
 
         脚本实例id
 
@@ -110,7 +110,7 @@ class ListScriptResultsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListScriptResultsRequest.
+        r"""Sets the instance_id of this ListScriptResultsRequest.
 
         脚本实例id
 

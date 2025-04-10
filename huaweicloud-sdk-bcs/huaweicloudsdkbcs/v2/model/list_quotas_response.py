@@ -26,7 +26,7 @@ class ListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """ListQuotasResponse
+        r"""ListQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListQuotasResponse.
+        r"""Gets the resources of this ListQuotasResponse.
 
         配额信息
 
@@ -55,7 +55,7 @@ class ListQuotasResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListQuotasResponse.
+        r"""Sets the resources of this ListQuotasResponse.
 
         配额信息
 

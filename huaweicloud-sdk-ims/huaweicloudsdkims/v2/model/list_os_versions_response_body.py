@@ -27,7 +27,7 @@ class ListOsVersionsResponseBody:
     }
 
     def __init__(self, platform=None, version_list=None):
-        """ListOsVersionsResponseBody
+        r"""ListOsVersionsResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListOsVersionsResponseBody:
 
     @property
     def platform(self):
-        """Gets the platform of this ListOsVersionsResponseBody.
+        r"""Gets the platform of this ListOsVersionsResponseBody.
 
         操作系统的平台值，如RedHat等
 
@@ -59,7 +59,7 @@ class ListOsVersionsResponseBody:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ListOsVersionsResponseBody.
+        r"""Sets the platform of this ListOsVersionsResponseBody.
 
         操作系统的平台值，如RedHat等
 
@@ -70,7 +70,7 @@ class ListOsVersionsResponseBody:
 
     @property
     def version_list(self):
-        """Gets the version_list of this ListOsVersionsResponseBody.
+        r"""Gets the version_list of this ListOsVersionsResponseBody.
 
         操作系统的详情值
 
@@ -81,7 +81,7 @@ class ListOsVersionsResponseBody:
 
     @version_list.setter
     def version_list(self, version_list):
-        """Sets the version_list of this ListOsVersionsResponseBody.
+        r"""Sets the version_list of this ListOsVersionsResponseBody.
 
         操作系统的详情值
 

@@ -79,7 +79,7 @@ class ClusterSnapshots:
     }
 
     def __init__(self, id=None, name=None, description=None, started=None, size=None, status=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, type=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None):
-        """ClusterSnapshots
+        r"""ClusterSnapshots
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class ClusterSnapshots:
 
     @property
     def id(self):
-        """Gets the id of this ClusterSnapshots.
+        r"""Gets the id of this ClusterSnapshots.
 
         快照ID。
 
@@ -243,7 +243,7 @@ class ClusterSnapshots:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterSnapshots.
+        r"""Sets the id of this ClusterSnapshots.
 
         快照ID。
 
@@ -254,7 +254,7 @@ class ClusterSnapshots:
 
     @property
     def name(self):
-        """Gets the name of this ClusterSnapshots.
+        r"""Gets the name of this ClusterSnapshots.
 
         快照名称。
 
@@ -265,7 +265,7 @@ class ClusterSnapshots:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterSnapshots.
+        r"""Sets the name of this ClusterSnapshots.
 
         快照名称。
 
@@ -276,7 +276,7 @@ class ClusterSnapshots:
 
     @property
     def description(self):
-        """Gets the description of this ClusterSnapshots.
+        r"""Gets the description of this ClusterSnapshots.
 
         快照描述。
 
@@ -287,7 +287,7 @@ class ClusterSnapshots:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClusterSnapshots.
+        r"""Sets the description of this ClusterSnapshots.
 
         快照描述。
 
@@ -298,7 +298,7 @@ class ClusterSnapshots:
 
     @property
     def started(self):
-        """Gets the started of this ClusterSnapshots.
+        r"""Gets the started of this ClusterSnapshots.
 
         快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -309,7 +309,7 @@ class ClusterSnapshots:
 
     @started.setter
     def started(self, started):
-        """Sets the started of this ClusterSnapshots.
+        r"""Sets the started of this ClusterSnapshots.
 
         快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -320,7 +320,7 @@ class ClusterSnapshots:
 
     @property
     def size(self):
-        """Gets the size of this ClusterSnapshots.
+        r"""Gets the size of this ClusterSnapshots.
 
         快照大小，单位 GB。
 
@@ -331,7 +331,7 @@ class ClusterSnapshots:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ClusterSnapshots.
+        r"""Sets the size of this ClusterSnapshots.
 
         快照大小，单位 GB。
 
@@ -342,7 +342,7 @@ class ClusterSnapshots:
 
     @property
     def status(self):
-        """Gets the status of this ClusterSnapshots.
+        r"""Gets the status of this ClusterSnapshots.
 
         快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
@@ -353,7 +353,7 @@ class ClusterSnapshots:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterSnapshots.
+        r"""Sets the status of this ClusterSnapshots.
 
         快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
@@ -364,7 +364,7 @@ class ClusterSnapshots:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ClusterSnapshots.
+        r"""Gets the cluster_id of this ClusterSnapshots.
 
         快照对应的集群ID
 
@@ -375,7 +375,7 @@ class ClusterSnapshots:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ClusterSnapshots.
+        r"""Sets the cluster_id of this ClusterSnapshots.
 
         快照对应的集群ID
 
@@ -386,7 +386,7 @@ class ClusterSnapshots:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ClusterSnapshots.
+        r"""Gets the datastore of this ClusterSnapshots.
 
         :return: The datastore of this ClusterSnapshots.
         :rtype: :class:`huaweicloudsdkdws.v2.Datastore`
@@ -395,7 +395,7 @@ class ClusterSnapshots:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ClusterSnapshots.
+        r"""Sets the datastore of this ClusterSnapshots.
 
         :param datastore: The datastore of this ClusterSnapshots.
         :type datastore: :class:`huaweicloudsdkdws.v2.Datastore`
@@ -404,7 +404,7 @@ class ClusterSnapshots:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ClusterSnapshots.
+        r"""Gets the cluster_name of this ClusterSnapshots.
 
         快照对应的集群名称。
 
@@ -415,7 +415,7 @@ class ClusterSnapshots:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ClusterSnapshots.
+        r"""Sets the cluster_name of this ClusterSnapshots.
 
         快照对应的集群名称。
 
@@ -426,7 +426,7 @@ class ClusterSnapshots:
 
     @property
     def updated(self):
-        """Gets the updated of this ClusterSnapshots.
+        r"""Gets the updated of this ClusterSnapshots.
 
         快照更新时间。
 
@@ -437,7 +437,7 @@ class ClusterSnapshots:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ClusterSnapshots.
+        r"""Sets the updated of this ClusterSnapshots.
 
         快照更新时间。
 
@@ -448,7 +448,7 @@ class ClusterSnapshots:
 
     @property
     def type(self):
-        """Gets the type of this ClusterSnapshots.
+        r"""Gets the type of this ClusterSnapshots.
 
         快照类型： - MANUAL :手动快照， - AUTO :自动快照。
 
@@ -459,7 +459,7 @@ class ClusterSnapshots:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterSnapshots.
+        r"""Sets the type of this ClusterSnapshots.
 
         快照类型： - MANUAL :手动快照， - AUTO :自动快照。
 
@@ -470,7 +470,7 @@ class ClusterSnapshots:
 
     @property
     def bak_expected_start_time(self):
-        """Gets the bak_expected_start_time of this ClusterSnapshots.
+        r"""Gets the bak_expected_start_time of this ClusterSnapshots.
 
         快照预计开始时间。
 
@@ -481,7 +481,7 @@ class ClusterSnapshots:
 
     @bak_expected_start_time.setter
     def bak_expected_start_time(self, bak_expected_start_time):
-        """Sets the bak_expected_start_time of this ClusterSnapshots.
+        r"""Sets the bak_expected_start_time of this ClusterSnapshots.
 
         快照预计开始时间。
 
@@ -492,7 +492,7 @@ class ClusterSnapshots:
 
     @property
     def bak_keep_day(self):
-        """Gets the bak_keep_day of this ClusterSnapshots.
+        r"""Gets the bak_keep_day of this ClusterSnapshots.
 
         快照保留天数。
 
@@ -503,7 +503,7 @@ class ClusterSnapshots:
 
     @bak_keep_day.setter
     def bak_keep_day(self, bak_keep_day):
-        """Sets the bak_keep_day of this ClusterSnapshots.
+        r"""Sets the bak_keep_day of this ClusterSnapshots.
 
         快照保留天数。
 
@@ -514,7 +514,7 @@ class ClusterSnapshots:
 
     @property
     def bak_period(self):
-        """Gets the bak_period of this ClusterSnapshots.
+        r"""Gets the bak_period of this ClusterSnapshots.
 
         快照策略。
 
@@ -525,7 +525,7 @@ class ClusterSnapshots:
 
     @bak_period.setter
     def bak_period(self, bak_period):
-        """Sets the bak_period of this ClusterSnapshots.
+        r"""Sets the bak_period of this ClusterSnapshots.
 
         快照策略。
 
@@ -536,7 +536,7 @@ class ClusterSnapshots:
 
     @property
     def db_user(self):
-        """Gets the db_user of this ClusterSnapshots.
+        r"""Gets the db_user of this ClusterSnapshots.
 
         数据库用户。
 
@@ -547,7 +547,7 @@ class ClusterSnapshots:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this ClusterSnapshots.
+        r"""Sets the db_user of this ClusterSnapshots.
 
         数据库用户。
 
@@ -558,7 +558,7 @@ class ClusterSnapshots:
 
     @property
     def progress(self):
-        """Gets the progress of this ClusterSnapshots.
+        r"""Gets the progress of this ClusterSnapshots.
 
         快照进度。
 
@@ -569,7 +569,7 @@ class ClusterSnapshots:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ClusterSnapshots.
+        r"""Sets the progress of this ClusterSnapshots.
 
         快照进度。
 
@@ -580,7 +580,7 @@ class ClusterSnapshots:
 
     @property
     def backup_key(self):
-        """Gets the backup_key of this ClusterSnapshots.
+        r"""Gets the backup_key of this ClusterSnapshots.
 
         快照BakcupKey。
 
@@ -591,7 +591,7 @@ class ClusterSnapshots:
 
     @backup_key.setter
     def backup_key(self, backup_key):
-        """Sets the backup_key of this ClusterSnapshots.
+        r"""Sets the backup_key of this ClusterSnapshots.
 
         快照BakcupKey。
 
@@ -602,7 +602,7 @@ class ClusterSnapshots:
 
     @property
     def prior_backup_key(self):
-        """Gets the prior_backup_key of this ClusterSnapshots.
+        r"""Gets the prior_backup_key of this ClusterSnapshots.
 
         增量快照，使用的前一个快照BakcupKey。
 
@@ -613,7 +613,7 @@ class ClusterSnapshots:
 
     @prior_backup_key.setter
     def prior_backup_key(self, prior_backup_key):
-        """Sets the prior_backup_key of this ClusterSnapshots.
+        r"""Sets the prior_backup_key of this ClusterSnapshots.
 
         增量快照，使用的前一个快照BakcupKey。
 
@@ -624,7 +624,7 @@ class ClusterSnapshots:
 
     @property
     def base_backup_key(self):
-        """Gets the base_backup_key of this ClusterSnapshots.
+        r"""Gets the base_backup_key of this ClusterSnapshots.
 
         对应全量快照BakcupKey。
 
@@ -635,7 +635,7 @@ class ClusterSnapshots:
 
     @base_backup_key.setter
     def base_backup_key(self, base_backup_key):
-        """Sets the base_backup_key of this ClusterSnapshots.
+        r"""Sets the base_backup_key of this ClusterSnapshots.
 
         对应全量快照BakcupKey。
 
@@ -646,7 +646,7 @@ class ClusterSnapshots:
 
     @property
     def backup_device(self):
-        """Gets the backup_device of this ClusterSnapshots.
+        r"""Gets the backup_device of this ClusterSnapshots.
 
         备份介质。
 
@@ -657,7 +657,7 @@ class ClusterSnapshots:
 
     @backup_device.setter
     def backup_device(self, backup_device):
-        """Sets the backup_device of this ClusterSnapshots.
+        r"""Sets the backup_device of this ClusterSnapshots.
 
         备份介质。
 
@@ -668,7 +668,7 @@ class ClusterSnapshots:
 
     @property
     def total_backup_size(self):
-        """Gets the total_backup_size of this ClusterSnapshots.
+        r"""Gets the total_backup_size of this ClusterSnapshots.
 
         累计快照大小。
 
@@ -679,7 +679,7 @@ class ClusterSnapshots:
 
     @total_backup_size.setter
     def total_backup_size(self, total_backup_size):
-        """Sets the total_backup_size of this ClusterSnapshots.
+        r"""Sets the total_backup_size of this ClusterSnapshots.
 
         累计快照大小。
 
@@ -690,7 +690,7 @@ class ClusterSnapshots:
 
     @property
     def base_backup_name(self):
-        """Gets the base_backup_name of this ClusterSnapshots.
+        r"""Gets the base_backup_name of this ClusterSnapshots.
 
         对应全量快照名称。
 
@@ -701,7 +701,7 @@ class ClusterSnapshots:
 
     @base_backup_name.setter
     def base_backup_name(self, base_backup_name):
-        """Sets the base_backup_name of this ClusterSnapshots.
+        r"""Sets the base_backup_name of this ClusterSnapshots.
 
         对应全量快照名称。
 
@@ -712,7 +712,7 @@ class ClusterSnapshots:
 
     @property
     def support_inplace_restore(self):
-        """Gets the support_inplace_restore of this ClusterSnapshots.
+        r"""Gets the support_inplace_restore of this ClusterSnapshots.
 
         是否支持就地恢复。
 
@@ -723,7 +723,7 @@ class ClusterSnapshots:
 
     @support_inplace_restore.setter
     def support_inplace_restore(self, support_inplace_restore):
-        """Sets the support_inplace_restore of this ClusterSnapshots.
+        r"""Sets the support_inplace_restore of this ClusterSnapshots.
 
         是否支持就地恢复。
 
@@ -734,7 +734,7 @@ class ClusterSnapshots:
 
     @property
     def fine_grained_backup(self):
-        """Gets the fine_grained_backup of this ClusterSnapshots.
+        r"""Gets the fine_grained_backup of this ClusterSnapshots.
 
         是否是细粒度备份。
 
@@ -745,7 +745,7 @@ class ClusterSnapshots:
 
     @fine_grained_backup.setter
     def fine_grained_backup(self, fine_grained_backup):
-        """Sets the fine_grained_backup of this ClusterSnapshots.
+        r"""Sets the fine_grained_backup of this ClusterSnapshots.
 
         是否是细粒度备份。
 
@@ -756,7 +756,7 @@ class ClusterSnapshots:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this ClusterSnapshots.
+        r"""Gets the backup_level of this ClusterSnapshots.
 
         备份级别。
 
@@ -767,7 +767,7 @@ class ClusterSnapshots:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this ClusterSnapshots.
+        r"""Sets the backup_level of this ClusterSnapshots.
 
         备份级别。
 
@@ -778,7 +778,7 @@ class ClusterSnapshots:
 
     @property
     def fine_grained_backup_detail(self):
-        """Gets the fine_grained_backup_detail of this ClusterSnapshots.
+        r"""Gets the fine_grained_backup_detail of this ClusterSnapshots.
 
         :return: The fine_grained_backup_detail of this ClusterSnapshots.
         :rtype: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
@@ -787,7 +787,7 @@ class ClusterSnapshots:
 
     @fine_grained_backup_detail.setter
     def fine_grained_backup_detail(self, fine_grained_backup_detail):
-        """Sets the fine_grained_backup_detail of this ClusterSnapshots.
+        r"""Sets the fine_grained_backup_detail of this ClusterSnapshots.
 
         :param fine_grained_backup_detail: The fine_grained_backup_detail of this ClusterSnapshots.
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
@@ -796,7 +796,7 @@ class ClusterSnapshots:
 
     @property
     def guest_agent_version(self):
-        """Gets the guest_agent_version of this ClusterSnapshots.
+        r"""Gets the guest_agent_version of this ClusterSnapshots.
 
         guestAgent版本。
 
@@ -807,7 +807,7 @@ class ClusterSnapshots:
 
     @guest_agent_version.setter
     def guest_agent_version(self, guest_agent_version):
-        """Sets the guest_agent_version of this ClusterSnapshots.
+        r"""Sets the guest_agent_version of this ClusterSnapshots.
 
         guestAgent版本。
 
@@ -818,7 +818,7 @@ class ClusterSnapshots:
 
     @property
     def cluster_status(self):
-        """Gets the cluster_status of this ClusterSnapshots.
+        r"""Gets the cluster_status of this ClusterSnapshots.
 
         集群状态。
 
@@ -829,7 +829,7 @@ class ClusterSnapshots:
 
     @cluster_status.setter
     def cluster_status(self, cluster_status):
-        """Sets the cluster_status of this ClusterSnapshots.
+        r"""Sets the cluster_status of this ClusterSnapshots.
 
         集群状态。
 

@@ -28,7 +28,7 @@ class ShowInstanceDiskResponse(SdkResponse):
     }
 
     def __init__(self, used=None, total=None):
-        """ShowInstanceDiskResponse
+        r"""ShowInstanceDiskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowInstanceDiskResponse(SdkResponse):
 
     @property
     def used(self):
-        """Gets the used of this ShowInstanceDiskResponse.
+        r"""Gets the used of this ShowInstanceDiskResponse.
 
         已使用量。表示当前实例已使用的存储空间大小。单位：GB
 
@@ -62,7 +62,7 @@ class ShowInstanceDiskResponse(SdkResponse):
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowInstanceDiskResponse.
+        r"""Sets the used of this ShowInstanceDiskResponse.
 
         已使用量。表示当前实例已使用的存储空间大小。单位：GB
 
@@ -73,7 +73,7 @@ class ShowInstanceDiskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowInstanceDiskResponse.
+        r"""Gets the total of this ShowInstanceDiskResponse.
 
         总量。表示当前实例最大存储空间大小。单位：GB
 
@@ -84,7 +84,7 @@ class ShowInstanceDiskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowInstanceDiskResponse.
+        r"""Sets the total of this ShowInstanceDiskResponse.
 
         总量。表示当前实例最大存储空间大小。单位：GB
 

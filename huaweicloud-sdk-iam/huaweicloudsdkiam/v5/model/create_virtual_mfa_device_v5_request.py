@@ -25,7 +25,7 @@ class CreateVirtualMfaDeviceV5Request:
     }
 
     def __init__(self, body=None):
-        """CreateVirtualMfaDeviceV5Request
+        r"""CreateVirtualMfaDeviceV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVirtualMfaDeviceV5Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateVirtualMfaDeviceV5Request.
+        r"""Gets the body of this CreateVirtualMfaDeviceV5Request.
 
         :return: The body of this CreateVirtualMfaDeviceV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.CreateVirtualMfaDeviceReqBody`
@@ -52,7 +52,7 @@ class CreateVirtualMfaDeviceV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVirtualMfaDeviceV5Request.
+        r"""Sets the body of this CreateVirtualMfaDeviceV5Request.
 
         :param body: The body of this CreateVirtualMfaDeviceV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.CreateVirtualMfaDeviceReqBody`

@@ -29,7 +29,7 @@ class ShowPositionResultRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, query_id=None):
-        """ShowPositionResultRequest
+        r"""ShowPositionResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowPositionResultRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowPositionResultRequest.
+        r"""Gets the x_language of this ShowPositionResultRequest.
 
         请求语言类型。
 
@@ -66,7 +66,7 @@ class ShowPositionResultRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowPositionResultRequest.
+        r"""Sets the x_language of this ShowPositionResultRequest.
 
         请求语言类型。
 
@@ -77,7 +77,7 @@ class ShowPositionResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPositionResultRequest.
+        r"""Gets the job_id of this ShowPositionResultRequest.
 
         任务ID。
 
@@ -88,7 +88,7 @@ class ShowPositionResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPositionResultRequest.
+        r"""Sets the job_id of this ShowPositionResultRequest.
 
         任务ID。
 
@@ -99,7 +99,7 @@ class ShowPositionResultRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowPositionResultRequest.
+        r"""Gets the query_id of this ShowPositionResultRequest.
 
         位点信息采集的ID，由采集数据库位点信息接口返回的ID。
 
@@ -110,7 +110,7 @@ class ShowPositionResultRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowPositionResultRequest.
+        r"""Sets the query_id of this ShowPositionResultRequest.
 
         位点信息采集的ID，由采集数据库位点信息接口返回的ID。
 

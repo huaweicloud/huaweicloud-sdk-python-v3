@@ -32,7 +32,7 @@ class UpdateTaskStatusResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """UpdateTaskStatusResponse
+        r"""UpdateTaskStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdateTaskStatusResponse.
+        r"""Gets the code of this UpdateTaskStatusResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdateTaskStatusResponse.
+        r"""Sets the code of this UpdateTaskStatusResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateTaskStatusResponse.
+        r"""Gets the message of this UpdateTaskStatusResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateTaskStatusResponse.
+        r"""Sets the message of this UpdateTaskStatusResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this UpdateTaskStatusResponse.
+        r"""Gets the extend of this UpdateTaskStatusResponse.
 
         扩展信息
 
@@ -120,7 +120,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this UpdateTaskStatusResponse.
+        r"""Sets the extend of this UpdateTaskStatusResponse.
 
         扩展信息
 
@@ -131,7 +131,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateTaskStatusResponse.
+        r"""Gets the result of this UpdateTaskStatusResponse.
 
         :return: The result of this UpdateTaskStatusResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`
@@ -140,7 +140,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateTaskStatusResponse.
+        r"""Sets the result of this UpdateTaskStatusResponse.
 
         :param result: The result of this UpdateTaskStatusResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`

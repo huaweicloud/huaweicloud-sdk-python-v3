@@ -33,7 +33,7 @@ class Resources:
     }
 
     def __init__(self, max=None, min=None, quota=None, type=None, used=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Resources:
 
     @property
     def max(self):
-        """Gets the max of this Resources.
+        r"""Gets the max of this Resources.
 
         配额最大值。
 
@@ -82,7 +82,7 @@ class Resources:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this Resources.
+        r"""Sets the max of this Resources.
 
         配额最大值。
 
@@ -93,7 +93,7 @@ class Resources:
 
     @property
     def min(self):
-        """Gets the min of this Resources.
+        r"""Gets the min of this Resources.
 
         配额最小值。
 
@@ -104,7 +104,7 @@ class Resources:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this Resources.
+        r"""Sets the min of this Resources.
 
         配额最小值。
 
@@ -115,7 +115,7 @@ class Resources:
 
     @property
     def quota(self):
-        """Gets the quota of this Resources.
+        r"""Gets the quota of this Resources.
 
         当前配额。
 
@@ -126,7 +126,7 @@ class Resources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Resources.
+        r"""Sets the quota of this Resources.
 
         当前配额。
 
@@ -137,7 +137,7 @@ class Resources:
 
     @property
     def type(self):
-        """Gets the type of this Resources.
+        r"""Gets the type of this Resources.
 
         配额类型。
 
@@ -148,7 +148,7 @@ class Resources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resources.
+        r"""Sets the type of this Resources.
 
         配额类型。
 
@@ -159,7 +159,7 @@ class Resources:
 
     @property
     def used(self):
-        """Gets the used of this Resources.
+        r"""Gets the used of this Resources.
 
         已使用的配额。
 
@@ -170,7 +170,7 @@ class Resources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Resources.
+        r"""Sets the used of this Resources.
 
         已使用的配额。
 

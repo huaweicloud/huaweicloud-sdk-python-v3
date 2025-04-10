@@ -47,7 +47,7 @@ class ExecutionPlan:
     }
 
     def __init__(self, id=None, select_type=None, table=None, partitions=None, type=None, possible_keys=None, key=None, key_len=None, ref=None, rows=None, filtered=None, extra=None):
-        """ExecutionPlan
+        r"""ExecutionPlan
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class ExecutionPlan:
 
     @property
     def id(self):
-        """Gets the id of this ExecutionPlan.
+        r"""Gets the id of this ExecutionPlan.
 
         id
 
@@ -119,7 +119,7 @@ class ExecutionPlan:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecutionPlan.
+        r"""Sets the id of this ExecutionPlan.
 
         id
 
@@ -130,7 +130,7 @@ class ExecutionPlan:
 
     @property
     def select_type(self):
-        """Gets the select_type of this ExecutionPlan.
+        r"""Gets the select_type of this ExecutionPlan.
 
         select子句的类型
 
@@ -141,7 +141,7 @@ class ExecutionPlan:
 
     @select_type.setter
     def select_type(self, select_type):
-        """Sets the select_type of this ExecutionPlan.
+        r"""Sets the select_type of this ExecutionPlan.
 
         select子句的类型
 
@@ -152,7 +152,7 @@ class ExecutionPlan:
 
     @property
     def table(self):
-        """Gets the table of this ExecutionPlan.
+        r"""Gets the table of this ExecutionPlan.
 
         数据库表
 
@@ -163,7 +163,7 @@ class ExecutionPlan:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ExecutionPlan.
+        r"""Sets the table of this ExecutionPlan.
 
         数据库表
 
@@ -174,7 +174,7 @@ class ExecutionPlan:
 
     @property
     def partitions(self):
-        """Gets the partitions of this ExecutionPlan.
+        r"""Gets the partitions of this ExecutionPlan.
 
         查询将匹配记录的分区
 
@@ -185,7 +185,7 @@ class ExecutionPlan:
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ExecutionPlan.
+        r"""Sets the partitions of this ExecutionPlan.
 
         查询将匹配记录的分区
 
@@ -196,7 +196,7 @@ class ExecutionPlan:
 
     @property
     def type(self):
-        """Gets the type of this ExecutionPlan.
+        r"""Gets the type of this ExecutionPlan.
 
         访问类型
 
@@ -207,7 +207,7 @@ class ExecutionPlan:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExecutionPlan.
+        r"""Sets the type of this ExecutionPlan.
 
         访问类型
 
@@ -218,7 +218,7 @@ class ExecutionPlan:
 
     @property
     def possible_keys(self):
-        """Gets the possible_keys of this ExecutionPlan.
+        r"""Gets the possible_keys of this ExecutionPlan.
 
         可能使用的键(索引)
 
@@ -229,7 +229,7 @@ class ExecutionPlan:
 
     @possible_keys.setter
     def possible_keys(self, possible_keys):
-        """Sets the possible_keys of this ExecutionPlan.
+        r"""Sets the possible_keys of this ExecutionPlan.
 
         可能使用的键(索引)
 
@@ -240,7 +240,7 @@ class ExecutionPlan:
 
     @property
     def key(self):
-        """Gets the key of this ExecutionPlan.
+        r"""Gets the key of this ExecutionPlan.
 
         实际使用的键(索引)
 
@@ -251,7 +251,7 @@ class ExecutionPlan:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ExecutionPlan.
+        r"""Sets the key of this ExecutionPlan.
 
         实际使用的键(索引)
 
@@ -262,7 +262,7 @@ class ExecutionPlan:
 
     @property
     def key_len(self):
-        """Gets the key_len of this ExecutionPlan.
+        r"""Gets the key_len of this ExecutionPlan.
 
         决定使用的键的长度
 
@@ -273,7 +273,7 @@ class ExecutionPlan:
 
     @key_len.setter
     def key_len(self, key_len):
-        """Sets the key_len of this ExecutionPlan.
+        r"""Sets the key_len of this ExecutionPlan.
 
         决定使用的键的长度
 
@@ -284,7 +284,7 @@ class ExecutionPlan:
 
     @property
     def ref(self):
-        """Gets the ref of this ExecutionPlan.
+        r"""Gets the ref of this ExecutionPlan.
 
         使用哪个列或常数与键一起来选择行
 
@@ -295,7 +295,7 @@ class ExecutionPlan:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ExecutionPlan.
+        r"""Sets the ref of this ExecutionPlan.
 
         使用哪个列或常数与键一起来选择行
 
@@ -306,7 +306,7 @@ class ExecutionPlan:
 
     @property
     def rows(self):
-        """Gets the rows of this ExecutionPlan.
+        r"""Gets the rows of this ExecutionPlan.
 
         MySQL认为它执行查询时必须检查的行数
 
@@ -317,7 +317,7 @@ class ExecutionPlan:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this ExecutionPlan.
+        r"""Sets the rows of this ExecutionPlan.
 
         MySQL认为它执行查询时必须检查的行数
 
@@ -328,7 +328,7 @@ class ExecutionPlan:
 
     @property
     def filtered(self):
-        """Gets the filtered of this ExecutionPlan.
+        r"""Gets the filtered of this ExecutionPlan.
 
         按表条件过滤的表行的估计百分比
 
@@ -339,7 +339,7 @@ class ExecutionPlan:
 
     @filtered.setter
     def filtered(self, filtered):
-        """Sets the filtered of this ExecutionPlan.
+        r"""Sets the filtered of this ExecutionPlan.
 
         按表条件过滤的表行的估计百分比
 
@@ -350,7 +350,7 @@ class ExecutionPlan:
 
     @property
     def extra(self):
-        """Gets the extra of this ExecutionPlan.
+        r"""Gets the extra of this ExecutionPlan.
 
         其他信息
 
@@ -361,7 +361,7 @@ class ExecutionPlan:
 
     @extra.setter
     def extra(self, extra):
-        """Sets the extra of this ExecutionPlan.
+        r"""Sets the extra of this ExecutionPlan.
 
         其他信息
 

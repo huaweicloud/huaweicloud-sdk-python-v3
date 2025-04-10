@@ -30,7 +30,7 @@ class ShowBucketObjectsResponse(SdkResponse):
     }
 
     def __init__(self, next_page=None, next_marker=None, records=None):
-        """ShowBucketObjectsResponse
+        r"""ShowBucketObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowBucketObjectsResponse(SdkResponse):
 
     @property
     def next_page(self):
-        """Gets the next_page of this ShowBucketObjectsResponse.
+        r"""Gets the next_page of this ShowBucketObjectsResponse.
 
         是否存在下一页
 
@@ -69,7 +69,7 @@ class ShowBucketObjectsResponse(SdkResponse):
 
     @next_page.setter
     def next_page(self, next_page):
-        """Sets the next_page of this ShowBucketObjectsResponse.
+        r"""Sets the next_page of this ShowBucketObjectsResponse.
 
         是否存在下一页
 
@@ -80,7 +80,7 @@ class ShowBucketObjectsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ShowBucketObjectsResponse.
+        r"""Gets the next_marker of this ShowBucketObjectsResponse.
 
         查询下一页所需要的标记（此页末尾对象名，偏移量）
 
@@ -91,7 +91,7 @@ class ShowBucketObjectsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ShowBucketObjectsResponse.
+        r"""Sets the next_marker of this ShowBucketObjectsResponse.
 
         查询下一页所需要的标记（此页末尾对象名，偏移量）
 
@@ -102,7 +102,7 @@ class ShowBucketObjectsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ShowBucketObjectsResponse.
+        r"""Gets the records of this ShowBucketObjectsResponse.
 
         查询桶信息返回的record
 
@@ -113,7 +113,7 @@ class ShowBucketObjectsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowBucketObjectsResponse.
+        r"""Sets the records of this ShowBucketObjectsResponse.
 
         查询桶信息返回的record
 

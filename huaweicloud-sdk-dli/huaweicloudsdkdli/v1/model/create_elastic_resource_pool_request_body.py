@@ -41,7 +41,7 @@ class CreateElasticResourcePoolRequestBody:
     }
 
     def __init__(self, elastic_resource_pool_name=None, description=None, cidr_in_vpc=None, max_cu=None, charging_mode=None, min_cu=None, enterprise_project_id=None, tags=None, label=None):
-        """CreateElasticResourcePoolRequestBody
+        r"""CreateElasticResourcePoolRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the elastic_resource_pool_name of this CreateElasticResourcePoolRequestBody.
 
         新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
 
@@ -107,7 +107,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the elastic_resource_pool_name of this CreateElasticResourcePoolRequestBody.
 
         新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
 
@@ -118,7 +118,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the description of this CreateElasticResourcePoolRequestBody.
 
         描述信息。长度限制：256个字符以内。
 
@@ -129,7 +129,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the description of this CreateElasticResourcePoolRequestBody.
 
         描述信息。长度限制：256个字符以内。
 
@@ -140,7 +140,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def cidr_in_vpc(self):
-        """Gets the cidr_in_vpc of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the cidr_in_vpc of this CreateElasticResourcePoolRequestBody.
 
         虚拟集群关联的vpc cidr.如果不填，默认值为172.16.0.0//12
 
@@ -151,7 +151,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @cidr_in_vpc.setter
     def cidr_in_vpc(self, cidr_in_vpc):
-        """Sets the cidr_in_vpc of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the cidr_in_vpc of this CreateElasticResourcePoolRequestBody.
 
         虚拟集群关联的vpc cidr.如果不填，默认值为172.16.0.0//12
 
@@ -162,7 +162,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def max_cu(self):
-        """Gets the max_cu of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the max_cu of this CreateElasticResourcePoolRequestBody.
 
         max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -173,7 +173,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @max_cu.setter
     def max_cu(self, max_cu):
-        """Sets the max_cu of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the max_cu of this CreateElasticResourcePoolRequestBody.
 
         max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -184,7 +184,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the charging_mode of this CreateElasticResourcePoolRequestBody.
 
         计费类型 1、按需计费
 
@@ -195,7 +195,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the charging_mode of this CreateElasticResourcePoolRequestBody.
 
         计费类型 1、按需计费
 
@@ -206,7 +206,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def min_cu(self):
-        """Gets the min_cu of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the min_cu of this CreateElasticResourcePoolRequestBody.
 
         min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -217,7 +217,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @min_cu.setter
     def min_cu(self, min_cu):
-        """Sets the min_cu of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the min_cu of this CreateElasticResourcePoolRequestBody.
 
         min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -228,7 +228,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the enterprise_project_id of this CreateElasticResourcePoolRequestBody.
 
         企业ID，不填默认为“0”
 
@@ -239,7 +239,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the enterprise_project_id of this CreateElasticResourcePoolRequestBody.
 
         企业ID，不填默认为“0”
 
@@ -250,7 +250,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the tags of this CreateElasticResourcePoolRequestBody.
 
         标签
 
@@ -261,7 +261,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the tags of this CreateElasticResourcePoolRequestBody.
 
         标签
 
@@ -272,7 +272,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @property
     def label(self):
-        """Gets the label of this CreateElasticResourcePoolRequestBody.
+        r"""Gets the label of this CreateElasticResourcePoolRequestBody.
 
         弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
 
@@ -283,7 +283,7 @@ class CreateElasticResourcePoolRequestBody:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this CreateElasticResourcePoolRequestBody.
+        r"""Sets the label of this CreateElasticResourcePoolRequestBody.
 
         弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
 

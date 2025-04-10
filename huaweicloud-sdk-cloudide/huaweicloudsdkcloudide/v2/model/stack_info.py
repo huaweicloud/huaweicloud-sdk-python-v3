@@ -57,7 +57,7 @@ class StackInfo:
     }
 
     def __init__(self, arm_config=None, bundle_url=None, config=None, created_time=None, delete=None, description=None, disable=None, display_name=None, id=None, label=None, logo=None, region=None, show=None, stack_name=None, tags=None, updated_time=None, users=None):
-        """StackInfo
+        r"""StackInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class StackInfo:
 
     @property
     def arm_config(self):
-        """Gets the arm_config of this StackInfo.
+        r"""Gets the arm_config of this StackInfo.
 
         :return: The arm_config of this StackInfo.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
@@ -164,7 +164,7 @@ class StackInfo:
 
     @arm_config.setter
     def arm_config(self, arm_config):
-        """Sets the arm_config of this StackInfo.
+        r"""Sets the arm_config of this StackInfo.
 
         :param arm_config: The arm_config of this StackInfo.
         :type arm_config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
@@ -173,7 +173,7 @@ class StackInfo:
 
     @property
     def bundle_url(self):
-        """Gets the bundle_url of this StackInfo.
+        r"""Gets the bundle_url of this StackInfo.
 
         bundleUrl
 
@@ -184,7 +184,7 @@ class StackInfo:
 
     @bundle_url.setter
     def bundle_url(self, bundle_url):
-        """Sets the bundle_url of this StackInfo.
+        r"""Sets the bundle_url of this StackInfo.
 
         bundleUrl
 
@@ -195,7 +195,7 @@ class StackInfo:
 
     @property
     def config(self):
-        """Gets the config of this StackInfo.
+        r"""Gets the config of this StackInfo.
 
         :return: The config of this StackInfo.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
@@ -204,7 +204,7 @@ class StackInfo:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this StackInfo.
+        r"""Sets the config of this StackInfo.
 
         :param config: The config of this StackInfo.
         :type config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
@@ -213,7 +213,7 @@ class StackInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this StackInfo.
+        r"""Gets the created_time of this StackInfo.
 
         创建时间
 
@@ -224,7 +224,7 @@ class StackInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this StackInfo.
+        r"""Sets the created_time of this StackInfo.
 
         创建时间
 
@@ -235,7 +235,7 @@ class StackInfo:
 
     @property
     def delete(self):
-        """Gets the delete of this StackInfo.
+        r"""Gets the delete of this StackInfo.
 
         是否删除
 
@@ -246,7 +246,7 @@ class StackInfo:
 
     @delete.setter
     def delete(self, delete):
-        """Sets the delete of this StackInfo.
+        r"""Sets the delete of this StackInfo.
 
         是否删除
 
@@ -257,7 +257,7 @@ class StackInfo:
 
     @property
     def description(self):
-        """Gets the description of this StackInfo.
+        r"""Gets the description of this StackInfo.
 
         描述
 
@@ -268,7 +268,7 @@ class StackInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StackInfo.
+        r"""Sets the description of this StackInfo.
 
         描述
 
@@ -279,7 +279,7 @@ class StackInfo:
 
     @property
     def disable(self):
-        """Gets the disable of this StackInfo.
+        r"""Gets the disable of this StackInfo.
 
         是否可用
 
@@ -290,7 +290,7 @@ class StackInfo:
 
     @disable.setter
     def disable(self, disable):
-        """Sets the disable of this StackInfo.
+        r"""Sets the disable of this StackInfo.
 
         是否可用
 
@@ -301,7 +301,7 @@ class StackInfo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this StackInfo.
+        r"""Gets the display_name of this StackInfo.
 
         显示名称
 
@@ -312,7 +312,7 @@ class StackInfo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this StackInfo.
+        r"""Sets the display_name of this StackInfo.
 
         显示名称
 
@@ -323,7 +323,7 @@ class StackInfo:
 
     @property
     def id(self):
-        """Gets the id of this StackInfo.
+        r"""Gets the id of this StackInfo.
 
         id
 
@@ -334,7 +334,7 @@ class StackInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StackInfo.
+        r"""Sets the id of this StackInfo.
 
         id
 
@@ -345,7 +345,7 @@ class StackInfo:
 
     @property
     def label(self):
-        """Gets the label of this StackInfo.
+        r"""Gets the label of this StackInfo.
 
         标签
 
@@ -356,7 +356,7 @@ class StackInfo:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this StackInfo.
+        r"""Sets the label of this StackInfo.
 
         标签
 
@@ -367,7 +367,7 @@ class StackInfo:
 
     @property
     def logo(self):
-        """Gets the logo of this StackInfo.
+        r"""Gets the logo of this StackInfo.
 
         图标
 
@@ -378,7 +378,7 @@ class StackInfo:
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this StackInfo.
+        r"""Sets the logo of this StackInfo.
 
         图标
 
@@ -389,7 +389,7 @@ class StackInfo:
 
     @property
     def region(self):
-        """Gets the region of this StackInfo.
+        r"""Gets the region of this StackInfo.
 
         region
 
@@ -400,7 +400,7 @@ class StackInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this StackInfo.
+        r"""Sets the region of this StackInfo.
 
         region
 
@@ -411,7 +411,7 @@ class StackInfo:
 
     @property
     def show(self):
-        """Gets the show of this StackInfo.
+        r"""Gets the show of this StackInfo.
 
         是否显示
 
@@ -422,7 +422,7 @@ class StackInfo:
 
     @show.setter
     def show(self, show):
-        """Sets the show of this StackInfo.
+        r"""Sets the show of this StackInfo.
 
         是否显示
 
@@ -433,7 +433,7 @@ class StackInfo:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this StackInfo.
+        r"""Gets the stack_name of this StackInfo.
 
         技术栈名称
 
@@ -444,7 +444,7 @@ class StackInfo:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this StackInfo.
+        r"""Sets the stack_name of this StackInfo.
 
         技术栈名称
 
@@ -455,7 +455,7 @@ class StackInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this StackInfo.
+        r"""Gets the tags of this StackInfo.
 
         tags
 
@@ -466,7 +466,7 @@ class StackInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this StackInfo.
+        r"""Sets the tags of this StackInfo.
 
         tags
 
@@ -477,7 +477,7 @@ class StackInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this StackInfo.
+        r"""Gets the updated_time of this StackInfo.
 
         修改时间
 
@@ -488,7 +488,7 @@ class StackInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this StackInfo.
+        r"""Sets the updated_time of this StackInfo.
 
         修改时间
 
@@ -499,7 +499,7 @@ class StackInfo:
 
     @property
     def users(self):
-        """Gets the users of this StackInfo.
+        r"""Gets the users of this StackInfo.
 
         使用者
 
@@ -510,7 +510,7 @@ class StackInfo:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this StackInfo.
+        r"""Sets the users of this StackInfo.
 
         使用者
 

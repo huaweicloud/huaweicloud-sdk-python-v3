@@ -39,7 +39,7 @@ class ShowTableDataRequest:
     }
 
     def __init__(self, instance=None, guid=None, data_connection_id=None, source_type=None, database=None, schema=None, table=None, queue=None):
-        """ShowTableDataRequest
+        r"""ShowTableDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ShowTableDataRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowTableDataRequest.
+        r"""Gets the instance of this ShowTableDataRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -101,7 +101,7 @@ class ShowTableDataRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowTableDataRequest.
+        r"""Sets the instance of this ShowTableDataRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -112,7 +112,7 @@ class ShowTableDataRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowTableDataRequest.
+        r"""Gets the guid of this ShowTableDataRequest.
 
         资产guid，获取方法请参见[数据资产guid](dataartsstudio_02_0351.xml)。
 
@@ -123,7 +123,7 @@ class ShowTableDataRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowTableDataRequest.
+        r"""Sets the guid of this ShowTableDataRequest.
 
         资产guid，获取方法请参见[数据资产guid](dataartsstudio_02_0351.xml)。
 
@@ -134,7 +134,7 @@ class ShowTableDataRequest:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this ShowTableDataRequest.
+        r"""Gets the data_connection_id of this ShowTableDataRequest.
 
         数据连接id。
 
@@ -145,7 +145,7 @@ class ShowTableDataRequest:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this ShowTableDataRequest.
+        r"""Sets the data_connection_id of this ShowTableDataRequest.
 
         数据连接id。
 
@@ -156,7 +156,7 @@ class ShowTableDataRequest:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ShowTableDataRequest.
+        r"""Gets the source_type of this ShowTableDataRequest.
 
         数据源类型。
 
@@ -167,7 +167,7 @@ class ShowTableDataRequest:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ShowTableDataRequest.
+        r"""Sets the source_type of this ShowTableDataRequest.
 
         数据源类型。
 
@@ -178,7 +178,7 @@ class ShowTableDataRequest:
 
     @property
     def database(self):
-        """Gets the database of this ShowTableDataRequest.
+        r"""Gets the database of this ShowTableDataRequest.
 
         db名称。
 
@@ -189,7 +189,7 @@ class ShowTableDataRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowTableDataRequest.
+        r"""Sets the database of this ShowTableDataRequest.
 
         db名称。
 
@@ -200,7 +200,7 @@ class ShowTableDataRequest:
 
     @property
     def schema(self):
-        """Gets the schema of this ShowTableDataRequest.
+        r"""Gets the schema of this ShowTableDataRequest.
 
         schema名称。
 
@@ -211,7 +211,7 @@ class ShowTableDataRequest:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowTableDataRequest.
+        r"""Sets the schema of this ShowTableDataRequest.
 
         schema名称。
 
@@ -222,7 +222,7 @@ class ShowTableDataRequest:
 
     @property
     def table(self):
-        """Gets the table of this ShowTableDataRequest.
+        r"""Gets the table of this ShowTableDataRequest.
 
         table名称。
 
@@ -233,7 +233,7 @@ class ShowTableDataRequest:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ShowTableDataRequest.
+        r"""Sets the table of this ShowTableDataRequest.
 
         table名称。
 
@@ -244,7 +244,7 @@ class ShowTableDataRequest:
 
     @property
     def queue(self):
-        """Gets the queue of this ShowTableDataRequest.
+        r"""Gets the queue of this ShowTableDataRequest.
 
         队列名称。
 
@@ -255,7 +255,7 @@ class ShowTableDataRequest:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this ShowTableDataRequest.
+        r"""Sets the queue of this ShowTableDataRequest.
 
         队列名称。
 

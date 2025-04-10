@@ -52,7 +52,7 @@ class CreateEnvironmentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, alias=None, description=None, project_id=None, enterprise_project_id=None, charge_mode=None, deploy_mode=None, vpc_id=None, base_resources=None, optional_resources=None, creator=None, create_time=None, update_time=None):
-        """CreateEnvironmentResponse
+        r"""CreateEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEnvironmentResponse.
+        r"""Gets the id of this CreateEnvironmentResponse.
 
         环境ID。
 
@@ -146,7 +146,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEnvironmentResponse.
+        r"""Sets the id of this CreateEnvironmentResponse.
 
         环境ID。
 
@@ -157,7 +157,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEnvironmentResponse.
+        r"""Gets the name of this CreateEnvironmentResponse.
 
         环境名称。
 
@@ -168,7 +168,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEnvironmentResponse.
+        r"""Sets the name of this CreateEnvironmentResponse.
 
         环境名称。
 
@@ -179,7 +179,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def alias(self):
-        """Gets the alias of this CreateEnvironmentResponse.
+        r"""Gets the alias of this CreateEnvironmentResponse.
 
         环境别名。
 
@@ -190,7 +190,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CreateEnvironmentResponse.
+        r"""Sets the alias of this CreateEnvironmentResponse.
 
         环境别名。
 
@@ -201,7 +201,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateEnvironmentResponse.
+        r"""Gets the description of this CreateEnvironmentResponse.
 
         环境描述。
 
@@ -212,7 +212,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEnvironmentResponse.
+        r"""Sets the description of this CreateEnvironmentResponse.
 
         环境描述。
 
@@ -223,7 +223,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateEnvironmentResponse.
+        r"""Gets the project_id of this CreateEnvironmentResponse.
 
         项目ID。
 
@@ -234,7 +234,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateEnvironmentResponse.
+        r"""Sets the project_id of this CreateEnvironmentResponse.
 
         项目ID。
 
@@ -245,7 +245,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateEnvironmentResponse.
+        r"""Gets the enterprise_project_id of this CreateEnvironmentResponse.
 
         企业项目ID。
 
@@ -256,7 +256,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateEnvironmentResponse.
+        r"""Sets the enterprise_project_id of this CreateEnvironmentResponse.
 
         企业项目ID。
 
@@ -267,7 +267,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateEnvironmentResponse.
+        r"""Gets the charge_mode of this CreateEnvironmentResponse.
 
         收费模式。
 
@@ -278,7 +278,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateEnvironmentResponse.
+        r"""Sets the charge_mode of this CreateEnvironmentResponse.
 
         收费模式。
 
@@ -289,7 +289,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this CreateEnvironmentResponse.
+        r"""Gets the deploy_mode of this CreateEnvironmentResponse.
 
         环境类型
 
@@ -300,7 +300,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this CreateEnvironmentResponse.
+        r"""Sets the deploy_mode of this CreateEnvironmentResponse.
 
         环境类型
 
@@ -311,7 +311,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateEnvironmentResponse.
+        r"""Gets the vpc_id of this CreateEnvironmentResponse.
 
         虚拟私有云ID。
 
@@ -322,7 +322,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateEnvironmentResponse.
+        r"""Sets the vpc_id of this CreateEnvironmentResponse.
 
         虚拟私有云ID。
 
@@ -333,7 +333,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def base_resources(self):
-        """Gets the base_resources of this CreateEnvironmentResponse.
+        r"""Gets the base_resources of this CreateEnvironmentResponse.
 
         基础资源。
 
@@ -344,7 +344,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @base_resources.setter
     def base_resources(self, base_resources):
-        """Sets the base_resources of this CreateEnvironmentResponse.
+        r"""Sets the base_resources of this CreateEnvironmentResponse.
 
         基础资源。
 
@@ -355,7 +355,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def optional_resources(self):
-        """Gets the optional_resources of this CreateEnvironmentResponse.
+        r"""Gets the optional_resources of this CreateEnvironmentResponse.
 
         可选资源。
 
@@ -366,7 +366,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @optional_resources.setter
     def optional_resources(self, optional_resources):
-        """Sets the optional_resources of this CreateEnvironmentResponse.
+        r"""Sets the optional_resources of this CreateEnvironmentResponse.
 
         可选资源。
 
@@ -377,7 +377,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreateEnvironmentResponse.
+        r"""Gets the creator of this CreateEnvironmentResponse.
 
         创建人。
 
@@ -388,7 +388,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateEnvironmentResponse.
+        r"""Sets the creator of this CreateEnvironmentResponse.
 
         创建人。
 
@@ -399,7 +399,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateEnvironmentResponse.
+        r"""Gets the create_time of this CreateEnvironmentResponse.
 
         创建时间。
 
@@ -410,7 +410,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateEnvironmentResponse.
+        r"""Sets the create_time of this CreateEnvironmentResponse.
 
         创建时间。
 
@@ -421,7 +421,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateEnvironmentResponse.
+        r"""Gets the update_time of this CreateEnvironmentResponse.
 
         修改时间。
 
@@ -432,7 +432,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateEnvironmentResponse.
+        r"""Sets the update_time of this CreateEnvironmentResponse.
 
         修改时间。
 

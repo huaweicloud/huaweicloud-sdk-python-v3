@@ -26,7 +26,7 @@ class CreateDbCacheRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateDbCacheRuleResponse
+        r"""CreateDbCacheRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDbCacheRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDbCacheRuleResponse.
+        r"""Gets the id of this CreateDbCacheRuleResponse.
 
         内存加速规则ID。
 
@@ -55,7 +55,7 @@ class CreateDbCacheRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDbCacheRuleResponse.
+        r"""Sets the id of this CreateDbCacheRuleResponse.
 
         内存加速规则ID。
 

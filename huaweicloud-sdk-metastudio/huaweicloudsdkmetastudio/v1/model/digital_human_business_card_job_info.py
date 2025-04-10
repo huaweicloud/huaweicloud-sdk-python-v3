@@ -41,7 +41,7 @@ class DigitalHumanBusinessCardJobInfo:
     }
 
     def __init__(self, job_id=None, state=None, start_time=None, end_time=None, output_asset_config=None, error_info=None, create_time=None, lastupdate_time=None, business_card_type=None):
-        """DigitalHumanBusinessCardJobInfo
+        r"""DigitalHumanBusinessCardJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the job_id of this DigitalHumanBusinessCardJobInfo.
 
         任务ID。
 
@@ -108,7 +108,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the job_id of this DigitalHumanBusinessCardJobInfo.
 
         任务ID。
 
@@ -119,7 +119,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def state(self):
-        """Gets the state of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the state of this DigitalHumanBusinessCardJobInfo.
 
         任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * BLOCK: 冻结
 
@@ -130,7 +130,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the state of this DigitalHumanBusinessCardJobInfo.
 
         任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * BLOCK: 冻结
 
@@ -141,7 +141,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the start_time of this DigitalHumanBusinessCardJobInfo.
 
         数字人名片制作开始时间。
 
@@ -152,7 +152,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the start_time of this DigitalHumanBusinessCardJobInfo.
 
         数字人名片制作开始时间。
 
@@ -163,7 +163,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the end_time of this DigitalHumanBusinessCardJobInfo.
 
         数字人名片制作结束时间。
 
@@ -174,7 +174,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the end_time of this DigitalHumanBusinessCardJobInfo.
 
         数字人名片制作结束时间。
 
@@ -185,7 +185,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def output_asset_config(self):
-        """Gets the output_asset_config of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the output_asset_config of this DigitalHumanBusinessCardJobInfo.
 
         :return: The output_asset_config of this DigitalHumanBusinessCardJobInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -194,7 +194,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @output_asset_config.setter
     def output_asset_config(self, output_asset_config):
-        """Sets the output_asset_config of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the output_asset_config of this DigitalHumanBusinessCardJobInfo.
 
         :param output_asset_config: The output_asset_config of this DigitalHumanBusinessCardJobInfo.
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -203,7 +203,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the error_info of this DigitalHumanBusinessCardJobInfo.
 
         :return: The error_info of this DigitalHumanBusinessCardJobInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -212,7 +212,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the error_info of this DigitalHumanBusinessCardJobInfo.
 
         :param error_info: The error_info of this DigitalHumanBusinessCardJobInfo.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -221,7 +221,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the create_time of this DigitalHumanBusinessCardJobInfo.
 
         任务创建时间。
 
@@ -232,7 +232,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the create_time of this DigitalHumanBusinessCardJobInfo.
 
         任务创建时间。
 
@@ -243,7 +243,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the lastupdate_time of this DigitalHumanBusinessCardJobInfo.
 
         任务更新时间。
 
@@ -254,7 +254,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the lastupdate_time of this DigitalHumanBusinessCardJobInfo.
 
         任务更新时间。
 
@@ -265,7 +265,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @property
     def business_card_type(self):
-        """Gets the business_card_type of this DigitalHumanBusinessCardJobInfo.
+        r"""Gets the business_card_type of this DigitalHumanBusinessCardJobInfo.
 
         数字人名片类型。 * 2D_DIGITAL_HUMAN_CARD：分身数字人名片
 
@@ -276,7 +276,7 @@ class DigitalHumanBusinessCardJobInfo:
 
     @business_card_type.setter
     def business_card_type(self, business_card_type):
-        """Sets the business_card_type of this DigitalHumanBusinessCardJobInfo.
+        r"""Sets the business_card_type of this DigitalHumanBusinessCardJobInfo.
 
         数字人名片类型。 * 2D_DIGITAL_HUMAN_CARD：分身数字人名片
 

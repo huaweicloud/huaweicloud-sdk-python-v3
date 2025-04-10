@@ -26,7 +26,7 @@ class CreatePipelineByTemplateResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreatePipelineByTemplateResponse
+        r"""CreatePipelineByTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePipelineByTemplateResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreatePipelineByTemplateResponse.
+        r"""Gets the task_id of this CreatePipelineByTemplateResponse.
 
         实例ID
 
@@ -55,7 +55,7 @@ class CreatePipelineByTemplateResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreatePipelineByTemplateResponse.
+        r"""Sets the task_id of this CreatePipelineByTemplateResponse.
 
         实例ID
 

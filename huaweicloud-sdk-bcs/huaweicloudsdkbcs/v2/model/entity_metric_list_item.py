@@ -37,7 +37,7 @@ class EntityMetricListItem:
     }
 
     def __init__(self, cpu_usage=None, disk_read_rate=None, disk_write_rate=None, mem_usage=None, recv_bytes_rate=None, send_bytes_rate=None, filesystem_usage=None):
-        """EntityMetricListItem
+        r"""EntityMetricListItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EntityMetricListItem:
 
     @property
     def cpu_usage(self):
-        """Gets the cpu_usage of this EntityMetricListItem.
+        r"""Gets the cpu_usage of this EntityMetricListItem.
 
         cpu使用率
 
@@ -96,7 +96,7 @@ class EntityMetricListItem:
 
     @cpu_usage.setter
     def cpu_usage(self, cpu_usage):
-        """Sets the cpu_usage of this EntityMetricListItem.
+        r"""Sets the cpu_usage of this EntityMetricListItem.
 
         cpu使用率
 
@@ -107,7 +107,7 @@ class EntityMetricListItem:
 
     @property
     def disk_read_rate(self):
-        """Gets the disk_read_rate of this EntityMetricListItem.
+        r"""Gets the disk_read_rate of this EntityMetricListItem.
 
         磁盘读取速率
 
@@ -118,7 +118,7 @@ class EntityMetricListItem:
 
     @disk_read_rate.setter
     def disk_read_rate(self, disk_read_rate):
-        """Sets the disk_read_rate of this EntityMetricListItem.
+        r"""Sets the disk_read_rate of this EntityMetricListItem.
 
         磁盘读取速率
 
@@ -129,7 +129,7 @@ class EntityMetricListItem:
 
     @property
     def disk_write_rate(self):
-        """Gets the disk_write_rate of this EntityMetricListItem.
+        r"""Gets the disk_write_rate of this EntityMetricListItem.
 
         磁盘写入速率
 
@@ -140,7 +140,7 @@ class EntityMetricListItem:
 
     @disk_write_rate.setter
     def disk_write_rate(self, disk_write_rate):
-        """Sets the disk_write_rate of this EntityMetricListItem.
+        r"""Sets the disk_write_rate of this EntityMetricListItem.
 
         磁盘写入速率
 
@@ -151,7 +151,7 @@ class EntityMetricListItem:
 
     @property
     def mem_usage(self):
-        """Gets the mem_usage of this EntityMetricListItem.
+        r"""Gets the mem_usage of this EntityMetricListItem.
 
         物理内存使用率
 
@@ -162,7 +162,7 @@ class EntityMetricListItem:
 
     @mem_usage.setter
     def mem_usage(self, mem_usage):
-        """Sets the mem_usage of this EntityMetricListItem.
+        r"""Sets the mem_usage of this EntityMetricListItem.
 
         物理内存使用率
 
@@ -173,7 +173,7 @@ class EntityMetricListItem:
 
     @property
     def recv_bytes_rate(self):
-        """Gets the recv_bytes_rate of this EntityMetricListItem.
+        r"""Gets the recv_bytes_rate of this EntityMetricListItem.
 
         下行BPs
 
@@ -184,7 +184,7 @@ class EntityMetricListItem:
 
     @recv_bytes_rate.setter
     def recv_bytes_rate(self, recv_bytes_rate):
-        """Sets the recv_bytes_rate of this EntityMetricListItem.
+        r"""Sets the recv_bytes_rate of this EntityMetricListItem.
 
         下行BPs
 
@@ -195,7 +195,7 @@ class EntityMetricListItem:
 
     @property
     def send_bytes_rate(self):
-        """Gets the send_bytes_rate of this EntityMetricListItem.
+        r"""Gets the send_bytes_rate of this EntityMetricListItem.
 
         上行BPs
 
@@ -206,7 +206,7 @@ class EntityMetricListItem:
 
     @send_bytes_rate.setter
     def send_bytes_rate(self, send_bytes_rate):
-        """Sets the send_bytes_rate of this EntityMetricListItem.
+        r"""Sets the send_bytes_rate of this EntityMetricListItem.
 
         上行BPs
 
@@ -217,7 +217,7 @@ class EntityMetricListItem:
 
     @property
     def filesystem_usage(self):
-        """Gets the filesystem_usage of this EntityMetricListItem.
+        r"""Gets the filesystem_usage of this EntityMetricListItem.
 
         文件系统使用率
 
@@ -228,7 +228,7 @@ class EntityMetricListItem:
 
     @filesystem_usage.setter
     def filesystem_usage(self, filesystem_usage):
-        """Sets the filesystem_usage of this EntityMetricListItem.
+        r"""Sets the filesystem_usage of this EntityMetricListItem.
 
         文件系统使用率
 

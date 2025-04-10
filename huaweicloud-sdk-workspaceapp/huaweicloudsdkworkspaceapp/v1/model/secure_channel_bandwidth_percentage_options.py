@@ -25,7 +25,7 @@ class SecureChannelBandwidthPercentageOptions:
     }
 
     def __init__(self, secure_channel_bandwidth_percentage_value=None):
-        """SecureChannelBandwidthPercentageOptions
+        r"""SecureChannelBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SecureChannelBandwidthPercentageOptions:
 
     @property
     def secure_channel_bandwidth_percentage_value(self):
-        """Gets the secure_channel_bandwidth_percentage_value of this SecureChannelBandwidthPercentageOptions.
+        r"""Gets the secure_channel_bandwidth_percentage_value of this SecureChannelBandwidthPercentageOptions.
 
         安全通道带宽百分比控制量（%）。取值范围为[0-100]。默认：30。
 
@@ -54,7 +54,7 @@ class SecureChannelBandwidthPercentageOptions:
 
     @secure_channel_bandwidth_percentage_value.setter
     def secure_channel_bandwidth_percentage_value(self, secure_channel_bandwidth_percentage_value):
-        """Sets the secure_channel_bandwidth_percentage_value of this SecureChannelBandwidthPercentageOptions.
+        r"""Sets the secure_channel_bandwidth_percentage_value of this SecureChannelBandwidthPercentageOptions.
 
         安全通道带宽百分比控制量（%）。取值范围为[0-100]。默认：30。
 

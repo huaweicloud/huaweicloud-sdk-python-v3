@@ -25,7 +25,7 @@ class DeleteLtsConfigRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteLtsConfigRequest
+        r"""DeleteLtsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteLtsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteLtsConfigRequest.
+        r"""Gets the body of this DeleteLtsConfigRequest.
 
         :return: The body of this DeleteLtsConfigRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteLtsConfigRequestBody`
@@ -52,7 +52,7 @@ class DeleteLtsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteLtsConfigRequest.
+        r"""Sets the body of this DeleteLtsConfigRequest.
 
         :param body: The body of this DeleteLtsConfigRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DeleteLtsConfigRequestBody`

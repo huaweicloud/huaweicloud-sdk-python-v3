@@ -27,7 +27,7 @@ class CreateGaussMySqlInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateGaussMySqlInstanceRequest
+        r"""CreateGaussMySqlInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateGaussMySqlInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateGaussMySqlInstanceRequest.
+        r"""Gets the x_language of this CreateGaussMySqlInstanceRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class CreateGaussMySqlInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateGaussMySqlInstanceRequest.
+        r"""Sets the x_language of this CreateGaussMySqlInstanceRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class CreateGaussMySqlInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGaussMySqlInstanceRequest.
+        r"""Gets the body of this CreateGaussMySqlInstanceRequest.
 
         :return: The body of this CreateGaussMySqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceRequest`
@@ -81,7 +81,7 @@ class CreateGaussMySqlInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGaussMySqlInstanceRequest.
+        r"""Sets the body of this CreateGaussMySqlInstanceRequest.
 
         :param body: The body of this CreateGaussMySqlInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceRequest`

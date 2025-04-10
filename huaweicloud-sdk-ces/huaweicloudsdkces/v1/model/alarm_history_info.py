@@ -59,7 +59,7 @@ class AlarmHistoryInfo:
     }
 
     def __init__(self, alarm_id=None, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_level=None, alarm_type=None, alarm_enabled=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, insufficientdata_actions=None, update_time=None, enterprise_project_id=None, trigger_time=None, alarm_status=None, datapoints=None, additional_info=None):
-        """AlarmHistoryInfo
+        r"""AlarmHistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AlarmHistoryInfo.
+        r"""Gets the alarm_id of this AlarmHistoryInfo.
 
         告警规则的ID，如：al1603131199286dzxpqK3Ez。
 
@@ -173,7 +173,7 @@ class AlarmHistoryInfo:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AlarmHistoryInfo.
+        r"""Sets the alarm_id of this AlarmHistoryInfo.
 
         告警规则的ID，如：al1603131199286dzxpqK3Ez。
 
@@ -184,7 +184,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this AlarmHistoryInfo.
+        r"""Gets the alarm_name of this AlarmHistoryInfo.
 
         告警规则的名称，如：alarm-test01。
 
@@ -195,7 +195,7 @@ class AlarmHistoryInfo:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this AlarmHistoryInfo.
+        r"""Sets the alarm_name of this AlarmHistoryInfo.
 
         告警规则的名称，如：alarm-test01。
 
@@ -206,7 +206,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_description(self):
-        """Gets the alarm_description of this AlarmHistoryInfo.
+        r"""Gets the alarm_description of this AlarmHistoryInfo.
 
         告警规则的描述。
 
@@ -217,7 +217,7 @@ class AlarmHistoryInfo:
 
     @alarm_description.setter
     def alarm_description(self, alarm_description):
-        """Sets the alarm_description of this AlarmHistoryInfo.
+        r"""Sets the alarm_description of this AlarmHistoryInfo.
 
         告警规则的描述。
 
@@ -228,7 +228,7 @@ class AlarmHistoryInfo:
 
     @property
     def metric(self):
-        """Gets the metric of this AlarmHistoryInfo.
+        r"""Gets the metric of this AlarmHistoryInfo.
 
         :return: The metric of this AlarmHistoryInfo.
         :rtype: :class:`huaweicloudsdkces.v1.MetricInfo`
@@ -237,7 +237,7 @@ class AlarmHistoryInfo:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this AlarmHistoryInfo.
+        r"""Sets the metric of this AlarmHistoryInfo.
 
         :param metric: The metric of this AlarmHistoryInfo.
         :type metric: :class:`huaweicloudsdkces.v1.MetricInfo`
@@ -246,7 +246,7 @@ class AlarmHistoryInfo:
 
     @property
     def condition(self):
-        """Gets the condition of this AlarmHistoryInfo.
+        r"""Gets the condition of this AlarmHistoryInfo.
 
         :return: The condition of this AlarmHistoryInfo.
         :rtype: :class:`huaweicloudsdkces.v1.Condition`
@@ -255,7 +255,7 @@ class AlarmHistoryInfo:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this AlarmHistoryInfo.
+        r"""Sets the condition of this AlarmHistoryInfo.
 
         :param condition: The condition of this AlarmHistoryInfo.
         :type condition: :class:`huaweicloudsdkces.v1.Condition`
@@ -264,7 +264,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmHistoryInfo.
+        r"""Gets the alarm_level of this AlarmHistoryInfo.
 
         告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -275,7 +275,7 @@ class AlarmHistoryInfo:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmHistoryInfo.
+        r"""Sets the alarm_level of this AlarmHistoryInfo.
 
         告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -286,7 +286,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this AlarmHistoryInfo.
+        r"""Gets the alarm_type of this AlarmHistoryInfo.
 
         告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
 
@@ -297,7 +297,7 @@ class AlarmHistoryInfo:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this AlarmHistoryInfo.
+        r"""Sets the alarm_type of this AlarmHistoryInfo.
 
         告警类型； 仅针对事件告警的参数，枚举类型：值为EVENT.SYS或者EVENT.CUSTOM
 
@@ -308,7 +308,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_enabled(self):
-        """Gets the alarm_enabled of this AlarmHistoryInfo.
+        r"""Gets the alarm_enabled of this AlarmHistoryInfo.
 
         告警规则是否被启用，值为true或者false。
 
@@ -319,7 +319,7 @@ class AlarmHistoryInfo:
 
     @alarm_enabled.setter
     def alarm_enabled(self, alarm_enabled):
-        """Sets the alarm_enabled of this AlarmHistoryInfo.
+        r"""Sets the alarm_enabled of this AlarmHistoryInfo.
 
         告警规则是否被启用，值为true或者false。
 
@@ -330,7 +330,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_action_enabled(self):
-        """Gets the alarm_action_enabled of this AlarmHistoryInfo.
+        r"""Gets the alarm_action_enabled of this AlarmHistoryInfo.
 
         告警规则的告警触发动作是否被启用，值为true或者false。
 
@@ -341,7 +341,7 @@ class AlarmHistoryInfo:
 
     @alarm_action_enabled.setter
     def alarm_action_enabled(self, alarm_action_enabled):
-        """Sets the alarm_action_enabled of this AlarmHistoryInfo.
+        r"""Sets the alarm_action_enabled of this AlarmHistoryInfo.
 
         告警规则的告警触发动作是否被启用，值为true或者false。
 
@@ -352,7 +352,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_actions(self):
-        """Gets the alarm_actions of this AlarmHistoryInfo.
+        r"""Gets the alarm_actions of this AlarmHistoryInfo.
 
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -363,7 +363,7 @@ class AlarmHistoryInfo:
 
     @alarm_actions.setter
     def alarm_actions(self, alarm_actions):
-        """Sets the alarm_actions of this AlarmHistoryInfo.
+        r"""Sets the alarm_actions of this AlarmHistoryInfo.
 
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -374,7 +374,7 @@ class AlarmHistoryInfo:
 
     @property
     def ok_actions(self):
-        """Gets the ok_actions of this AlarmHistoryInfo.
+        r"""Gets the ok_actions of this AlarmHistoryInfo.
 
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -385,7 +385,7 @@ class AlarmHistoryInfo:
 
     @ok_actions.setter
     def ok_actions(self, ok_actions):
-        """Sets the ok_actions of this AlarmHistoryInfo.
+        r"""Sets the ok_actions of this AlarmHistoryInfo.
 
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -396,7 +396,7 @@ class AlarmHistoryInfo:
 
     @property
     def insufficientdata_actions(self):
-        """Gets the insufficientdata_actions of this AlarmHistoryInfo.
+        r"""Gets the insufficientdata_actions of this AlarmHistoryInfo.
 
         数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
 
@@ -407,7 +407,7 @@ class AlarmHistoryInfo:
 
     @insufficientdata_actions.setter
     def insufficientdata_actions(self, insufficientdata_actions):
-        """Sets the insufficientdata_actions of this AlarmHistoryInfo.
+        r"""Sets the insufficientdata_actions of this AlarmHistoryInfo.
 
         数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
 
@@ -418,7 +418,7 @@ class AlarmHistoryInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlarmHistoryInfo.
+        r"""Gets the update_time of this AlarmHistoryInfo.
 
         告警状态变更的时间，UNIX时间戳，单位毫秒，如：1603131199000。
 
@@ -429,7 +429,7 @@ class AlarmHistoryInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlarmHistoryInfo.
+        r"""Sets the update_time of this AlarmHistoryInfo.
 
         告警状态变更的时间，UNIX时间戳，单位毫秒，如：1603131199000。
 
@@ -440,7 +440,7 @@ class AlarmHistoryInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AlarmHistoryInfo.
+        r"""Gets the enterprise_project_id of this AlarmHistoryInfo.
 
         企业项目ID。 值为all_granted_eps时，表示所有企业项目；值为0时，表示默认的企业项目default。
 
@@ -451,7 +451,7 @@ class AlarmHistoryInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AlarmHistoryInfo.
+        r"""Sets the enterprise_project_id of this AlarmHistoryInfo.
 
         企业项目ID。 值为all_granted_eps时，表示所有企业项目；值为0时，表示默认的企业项目default。
 
@@ -462,7 +462,7 @@ class AlarmHistoryInfo:
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this AlarmHistoryInfo.
+        r"""Gets the trigger_time of this AlarmHistoryInfo.
 
         计算出该条告警历史的时间，UNIX时间戳，单位毫秒，如：1603131199469。
 
@@ -473,7 +473,7 @@ class AlarmHistoryInfo:
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this AlarmHistoryInfo.
+        r"""Sets the trigger_time of this AlarmHistoryInfo.
 
         计算出该条告警历史的时间，UNIX时间戳，单位毫秒，如：1603131199469。
 
@@ -484,7 +484,7 @@ class AlarmHistoryInfo:
 
     @property
     def alarm_status(self):
-        """Gets the alarm_status of this AlarmHistoryInfo.
+        r"""Gets the alarm_status of this AlarmHistoryInfo.
 
         告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
 
@@ -495,7 +495,7 @@ class AlarmHistoryInfo:
 
     @alarm_status.setter
     def alarm_status(self, alarm_status):
-        """Sets the alarm_status of this AlarmHistoryInfo.
+        r"""Sets the alarm_status of this AlarmHistoryInfo.
 
         告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
 
@@ -506,7 +506,7 @@ class AlarmHistoryInfo:
 
     @property
     def datapoints(self):
-        """Gets the datapoints of this AlarmHistoryInfo.
+        r"""Gets the datapoints of this AlarmHistoryInfo.
 
         计算出该条告警历史的资源监控数据的一组数据上报时间和监控数值。
 
@@ -517,7 +517,7 @@ class AlarmHistoryInfo:
 
     @datapoints.setter
     def datapoints(self, datapoints):
-        """Sets the datapoints of this AlarmHistoryInfo.
+        r"""Sets the datapoints of this AlarmHistoryInfo.
 
         计算出该条告警历史的资源监控数据的一组数据上报时间和监控数值。
 
@@ -528,7 +528,7 @@ class AlarmHistoryInfo:
 
     @property
     def additional_info(self):
-        """Gets the additional_info of this AlarmHistoryInfo.
+        r"""Gets the additional_info of this AlarmHistoryInfo.
 
         :return: The additional_info of this AlarmHistoryInfo.
         :rtype: :class:`huaweicloudsdkces.v1.AdditionalInfo`
@@ -537,7 +537,7 @@ class AlarmHistoryInfo:
 
     @additional_info.setter
     def additional_info(self, additional_info):
-        """Sets the additional_info of this AlarmHistoryInfo.
+        r"""Sets the additional_info of this AlarmHistoryInfo.
 
         :param additional_info: The additional_info of this AlarmHistoryInfo.
         :type additional_info: :class:`huaweicloudsdkces.v1.AdditionalInfo`

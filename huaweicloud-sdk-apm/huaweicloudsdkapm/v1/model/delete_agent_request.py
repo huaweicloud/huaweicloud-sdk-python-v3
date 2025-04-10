@@ -27,7 +27,7 @@ class DeleteAgentRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """DeleteAgentRequest
+        r"""DeleteAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteAgentRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this DeleteAgentRequest.
+        r"""Gets the x_business_id of this DeleteAgentRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class DeleteAgentRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this DeleteAgentRequest.
+        r"""Sets the x_business_id of this DeleteAgentRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class DeleteAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAgentRequest.
+        r"""Gets the body of this DeleteAgentRequest.
 
         :return: The body of this DeleteAgentRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.AgentDeleteParam`
@@ -80,7 +80,7 @@ class DeleteAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAgentRequest.
+        r"""Sets the body of this DeleteAgentRequest.
 
         :param body: The body of this DeleteAgentRequest.
         :type body: :class:`huaweicloudsdkapm.v1.AgentDeleteParam`

@@ -27,7 +27,7 @@ class Sorted:
     }
 
     def __init__(self, key=None, reverse=None):
-        """Sorted
+        r"""Sorted
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Sorted:
 
     @property
     def key(self):
-        """Gets the key of this Sorted.
+        r"""Gets the key of this Sorted.
 
         按key值对请求内容进行排序
 
@@ -61,7 +61,7 @@ class Sorted:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Sorted.
+        r"""Sets the key of this Sorted.
 
         按key值对请求内容进行排序
 
@@ -72,7 +72,7 @@ class Sorted:
 
     @property
     def reverse(self):
-        """Gets the reverse of this Sorted.
+        r"""Gets the reverse of this Sorted.
 
         是否采用倒序
 
@@ -83,7 +83,7 @@ class Sorted:
 
     @reverse.setter
     def reverse(self, reverse):
-        """Sets the reverse of this Sorted.
+        r"""Sets the reverse of this Sorted.
 
         是否采用倒序
 

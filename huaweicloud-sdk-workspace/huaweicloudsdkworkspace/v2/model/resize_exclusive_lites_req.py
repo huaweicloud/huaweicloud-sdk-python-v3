@@ -33,7 +33,7 @@ class ResizeExclusiveLitesReq:
     }
 
     def __init__(self, host_id=None, order_id=None, enterprise_project_id=None, product_id=None, new_quantity=None):
-        """ResizeExclusiveLitesReq
+        r"""ResizeExclusiveLitesReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ResizeExclusiveLitesReq:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ResizeExclusiveLitesReq.
+        r"""Gets the host_id of this ResizeExclusiveLitesReq.
 
         专享主机的hostId。
 
@@ -80,7 +80,7 @@ class ResizeExclusiveLitesReq:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ResizeExclusiveLitesReq.
+        r"""Sets the host_id of this ResizeExclusiveLitesReq.
 
         专享主机的hostId。
 
@@ -91,7 +91,7 @@ class ResizeExclusiveLitesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeExclusiveLitesReq.
+        r"""Gets the order_id of this ResizeExclusiveLitesReq.
 
         订单ID，包周期专享主机变更桌面路数时使用。
 
@@ -102,7 +102,7 @@ class ResizeExclusiveLitesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeExclusiveLitesReq.
+        r"""Sets the order_id of this ResizeExclusiveLitesReq.
 
         订单ID，包周期专享主机变更桌面路数时使用。
 
@@ -113,7 +113,7 @@ class ResizeExclusiveLitesReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ResizeExclusiveLitesReq.
+        r"""Gets the enterprise_project_id of this ResizeExclusiveLitesReq.
 
         企业项目ID，默认\"0\"
 
@@ -124,7 +124,7 @@ class ResizeExclusiveLitesReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ResizeExclusiveLitesReq.
+        r"""Sets the enterprise_project_id of this ResizeExclusiveLitesReq.
 
         企业项目ID，默认\"0\"
 
@@ -135,7 +135,7 @@ class ResizeExclusiveLitesReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ResizeExclusiveLitesReq.
+        r"""Gets the product_id of this ResizeExclusiveLitesReq.
 
         产品套餐ID。
 
@@ -146,7 +146,7 @@ class ResizeExclusiveLitesReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ResizeExclusiveLitesReq.
+        r"""Sets the product_id of this ResizeExclusiveLitesReq.
 
         产品套餐ID。
 
@@ -157,7 +157,7 @@ class ResizeExclusiveLitesReq:
 
     @property
     def new_quantity(self):
-        """Gets the new_quantity of this ResizeExclusiveLitesReq.
+        r"""Gets the new_quantity of this ResizeExclusiveLitesReq.
 
         扩容后的桌面个数，单位为个/次。
 
@@ -168,7 +168,7 @@ class ResizeExclusiveLitesReq:
 
     @new_quantity.setter
     def new_quantity(self, new_quantity):
-        """Sets the new_quantity of this ResizeExclusiveLitesReq.
+        r"""Sets the new_quantity of this ResizeExclusiveLitesReq.
 
         扩容后的桌面个数，单位为个/次。
 

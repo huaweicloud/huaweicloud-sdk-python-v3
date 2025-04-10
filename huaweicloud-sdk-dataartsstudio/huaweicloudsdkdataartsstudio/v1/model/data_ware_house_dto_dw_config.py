@@ -33,7 +33,7 @@ class DataWareHouseDTODwConfig:
     }
 
     def __init__(self, fgac_flag=None, fgac_type=None, fgac_conn_status=None, fgac_conn_test_time=None, fgac_conn_test_error=None):
-        """DataWareHouseDTODwConfig
+        r"""DataWareHouseDTODwConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DataWareHouseDTODwConfig:
 
     @property
     def fgac_flag(self):
-        """Gets the fgac_flag of this DataWareHouseDTODwConfig.
+        r"""Gets the fgac_flag of this DataWareHouseDTODwConfig.
 
         是否开启细粒度认证,true表示开启细粒度认证,false表示关闭细粒度认证。
 
@@ -82,7 +82,7 @@ class DataWareHouseDTODwConfig:
 
     @fgac_flag.setter
     def fgac_flag(self, fgac_flag):
-        """Sets the fgac_flag of this DataWareHouseDTODwConfig.
+        r"""Sets the fgac_flag of this DataWareHouseDTODwConfig.
 
         是否开启细粒度认证,true表示开启细粒度认证,false表示关闭细粒度认证。
 
@@ -93,7 +93,7 @@ class DataWareHouseDTODwConfig:
 
     @property
     def fgac_type(self):
-        """Gets the fgac_type of this DataWareHouseDTODwConfig.
+        r"""Gets the fgac_type of this DataWareHouseDTODwConfig.
 
         细粒度认证类型，开启细粒度认证时才生效。\"0\"表示开发态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行，\"1\"表示调度态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行、作业执行调度。
 
@@ -104,7 +104,7 @@ class DataWareHouseDTODwConfig:
 
     @fgac_type.setter
     def fgac_type(self, fgac_type):
-        """Sets the fgac_type of this DataWareHouseDTODwConfig.
+        r"""Sets the fgac_type of this DataWareHouseDTODwConfig.
 
         细粒度认证类型，开启细粒度认证时才生效。\"0\"表示开发态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行，\"1\"表示调度态细粒度认证，支持数据开发细粒度脚本运行、作业测试运行、作业执行调度。
 
@@ -115,7 +115,7 @@ class DataWareHouseDTODwConfig:
 
     @property
     def fgac_conn_status(self):
-        """Gets the fgac_conn_status of this DataWareHouseDTODwConfig.
+        r"""Gets the fgac_conn_status of this DataWareHouseDTODwConfig.
 
         数据源连通性测试状态：   * UNKNOWN - 连通性未测试   * TESTING - 连通性测试中   * SUCCESS - 连通性测试成功   * FAILED - 连通性测试失败
 
@@ -126,7 +126,7 @@ class DataWareHouseDTODwConfig:
 
     @fgac_conn_status.setter
     def fgac_conn_status(self, fgac_conn_status):
-        """Sets the fgac_conn_status of this DataWareHouseDTODwConfig.
+        r"""Sets the fgac_conn_status of this DataWareHouseDTODwConfig.
 
         数据源连通性测试状态：   * UNKNOWN - 连通性未测试   * TESTING - 连通性测试中   * SUCCESS - 连通性测试成功   * FAILED - 连通性测试失败
 
@@ -137,7 +137,7 @@ class DataWareHouseDTODwConfig:
 
     @property
     def fgac_conn_test_time(self):
-        """Gets the fgac_conn_test_time of this DataWareHouseDTODwConfig.
+        r"""Gets the fgac_conn_test_time of this DataWareHouseDTODwConfig.
 
         最近一次连通性测试时间
 
@@ -148,7 +148,7 @@ class DataWareHouseDTODwConfig:
 
     @fgac_conn_test_time.setter
     def fgac_conn_test_time(self, fgac_conn_test_time):
-        """Sets the fgac_conn_test_time of this DataWareHouseDTODwConfig.
+        r"""Sets the fgac_conn_test_time of this DataWareHouseDTODwConfig.
 
         最近一次连通性测试时间
 
@@ -159,7 +159,7 @@ class DataWareHouseDTODwConfig:
 
     @property
     def fgac_conn_test_error(self):
-        """Gets the fgac_conn_test_error of this DataWareHouseDTODwConfig.
+        r"""Gets the fgac_conn_test_error of this DataWareHouseDTODwConfig.
 
         联通性测试失败信息，如果连通性测试成功或者未测试联通性，失败信息为空字符串
 
@@ -170,7 +170,7 @@ class DataWareHouseDTODwConfig:
 
     @fgac_conn_test_error.setter
     def fgac_conn_test_error(self, fgac_conn_test_error):
-        """Sets the fgac_conn_test_error of this DataWareHouseDTODwConfig.
+        r"""Sets the fgac_conn_test_error of this DataWareHouseDTODwConfig.
 
         联通性测试失败信息，如果连通性测试成功或者未测试联通性，失败信息为空字符串
 

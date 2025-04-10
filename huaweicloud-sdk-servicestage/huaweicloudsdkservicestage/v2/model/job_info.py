@@ -41,7 +41,7 @@ class JobInfo:
     }
 
     def __init__(self, created_by=None, execution_status=None, job_desc=None, job_id=None, job_name=None, job_type=None, order_id=None, project_id=None, service_instance_id=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class JobInfo:
 
     @property
     def created_by(self):
-        """Gets the created_by of this JobInfo.
+        r"""Gets the created_by of this JobInfo.
 
         创建者。
 
@@ -110,7 +110,7 @@ class JobInfo:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this JobInfo.
+        r"""Sets the created_by of this JobInfo.
 
         创建者。
 
@@ -121,7 +121,7 @@ class JobInfo:
 
     @property
     def execution_status(self):
-        """Gets the execution_status of this JobInfo.
+        r"""Gets the execution_status of this JobInfo.
 
         执行状态。
 
@@ -132,7 +132,7 @@ class JobInfo:
 
     @execution_status.setter
     def execution_status(self, execution_status):
-        """Sets the execution_status of this JobInfo.
+        r"""Sets the execution_status of this JobInfo.
 
         执行状态。
 
@@ -143,7 +143,7 @@ class JobInfo:
 
     @property
     def job_desc(self):
-        """Gets the job_desc of this JobInfo.
+        r"""Gets the job_desc of this JobInfo.
 
         工作描述。
 
@@ -154,7 +154,7 @@ class JobInfo:
 
     @job_desc.setter
     def job_desc(self, job_desc):
-        """Sets the job_desc of this JobInfo.
+        r"""Sets the job_desc of this JobInfo.
 
         工作描述。
 
@@ -165,7 +165,7 @@ class JobInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobInfo.
+        r"""Gets the job_id of this JobInfo.
 
         工作ID。
 
@@ -176,7 +176,7 @@ class JobInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobInfo.
+        r"""Sets the job_id of this JobInfo.
 
         工作ID。
 
@@ -187,7 +187,7 @@ class JobInfo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobInfo.
+        r"""Gets the job_name of this JobInfo.
 
         工作名称。
 
@@ -198,7 +198,7 @@ class JobInfo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobInfo.
+        r"""Sets the job_name of this JobInfo.
 
         工作名称。
 
@@ -209,7 +209,7 @@ class JobInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobInfo.
+        r"""Gets the job_type of this JobInfo.
 
         类别。
 
@@ -220,7 +220,7 @@ class JobInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobInfo.
+        r"""Sets the job_type of this JobInfo.
 
         类别。
 
@@ -231,7 +231,7 @@ class JobInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this JobInfo.
+        r"""Gets the order_id of this JobInfo.
 
         排序ID。
 
@@ -242,7 +242,7 @@ class JobInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this JobInfo.
+        r"""Sets the order_id of this JobInfo.
 
         排序ID。
 
@@ -253,7 +253,7 @@ class JobInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this JobInfo.
+        r"""Gets the project_id of this JobInfo.
 
         创建租户的项目ID。
 
@@ -264,7 +264,7 @@ class JobInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this JobInfo.
+        r"""Sets the project_id of this JobInfo.
 
         创建租户的项目ID。
 
@@ -275,7 +275,7 @@ class JobInfo:
 
     @property
     def service_instance_id(self):
-        """Gets the service_instance_id of this JobInfo.
+        r"""Gets the service_instance_id of this JobInfo.
 
         实例ID。
 
@@ -286,7 +286,7 @@ class JobInfo:
 
     @service_instance_id.setter
     def service_instance_id(self, service_instance_id):
-        """Sets the service_instance_id of this JobInfo.
+        r"""Sets the service_instance_id of this JobInfo.
 
         实例ID。
 

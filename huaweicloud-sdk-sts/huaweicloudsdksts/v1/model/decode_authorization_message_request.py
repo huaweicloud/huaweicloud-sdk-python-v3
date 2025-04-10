@@ -28,7 +28,7 @@ class DecodeAuthorizationMessageRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """DecodeAuthorizationMessageRequest
+        r"""DecodeAuthorizationMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DecodeAuthorizationMessageRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DecodeAuthorizationMessageRequest.
+        r"""Gets the x_security_token of this DecodeAuthorizationMessageRequest.
 
         通过临时访问密钥调用接口时，需要提供“X-Security-Token”Http头，取值为临时访问密钥的security_token字段。
 
@@ -62,7 +62,7 @@ class DecodeAuthorizationMessageRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DecodeAuthorizationMessageRequest.
+        r"""Sets the x_security_token of this DecodeAuthorizationMessageRequest.
 
         通过临时访问密钥调用接口时，需要提供“X-Security-Token”Http头，取值为临时访问密钥的security_token字段。
 
@@ -73,7 +73,7 @@ class DecodeAuthorizationMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this DecodeAuthorizationMessageRequest.
+        r"""Gets the body of this DecodeAuthorizationMessageRequest.
 
         :return: The body of this DecodeAuthorizationMessageRequest.
         :rtype: :class:`huaweicloudsdksts.v1.DecodeAuthorizationMessageReq`
@@ -82,7 +82,7 @@ class DecodeAuthorizationMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DecodeAuthorizationMessageRequest.
+        r"""Sets the body of this DecodeAuthorizationMessageRequest.
 
         :param body: The body of this DecodeAuthorizationMessageRequest.
         :type body: :class:`huaweicloudsdksts.v1.DecodeAuthorizationMessageReq`

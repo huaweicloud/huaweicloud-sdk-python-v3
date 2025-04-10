@@ -49,7 +49,7 @@ class ConditionVO:
     }
 
     def __init__(self, id=None, name_en=None, name_ch=None, description=None, create_by=None, condition_fn=None, condition_fn_param=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, base_time=None):
-        """ConditionVO
+        r"""ConditionVO
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class ConditionVO:
 
     @property
     def id(self):
-        """Gets the id of this ConditionVO.
+        r"""Gets the id of this ConditionVO.
 
         编码，ID字符串。
 
@@ -136,7 +136,7 @@ class ConditionVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConditionVO.
+        r"""Sets the id of this ConditionVO.
 
         编码，ID字符串。
 
@@ -147,7 +147,7 @@ class ConditionVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ConditionVO.
+        r"""Gets the name_en of this ConditionVO.
 
         字段名
 
@@ -158,7 +158,7 @@ class ConditionVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ConditionVO.
+        r"""Sets the name_en of this ConditionVO.
 
         字段名
 
@@ -169,7 +169,7 @@ class ConditionVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this ConditionVO.
+        r"""Gets the name_ch of this ConditionVO.
 
         业务属性。
 
@@ -180,7 +180,7 @@ class ConditionVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this ConditionVO.
+        r"""Sets the name_ch of this ConditionVO.
 
         业务属性。
 
@@ -191,7 +191,7 @@ class ConditionVO:
 
     @property
     def description(self):
-        """Gets the description of this ConditionVO.
+        r"""Gets the description of this ConditionVO.
 
         描述。
 
@@ -202,7 +202,7 @@ class ConditionVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConditionVO.
+        r"""Sets the description of this ConditionVO.
 
         描述。
 
@@ -213,7 +213,7 @@ class ConditionVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ConditionVO.
+        r"""Gets the create_by of this ConditionVO.
 
         创建人。
 
@@ -224,7 +224,7 @@ class ConditionVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ConditionVO.
+        r"""Sets the create_by of this ConditionVO.
 
         创建人。
 
@@ -235,7 +235,7 @@ class ConditionVO:
 
     @property
     def condition_fn(self):
-        """Gets the condition_fn of this ConditionVO.
+        r"""Gets the condition_fn of this ConditionVO.
 
         限定计算方法。 枚举值：   - LAST_YEAR: 前一年   - CURRENT_YEAR: 本年   - BETWEEN_YEAR: 自定义年区间   - LAST_MONTH: 前一月   - CURRENT_MONTH: 本月   - BETWEEN_MONTH: 自定义月区间   - LAST_DAY: 前一天   - CURRENT_DAY: 本日   - BETWEEN_DAY: 自定义日区间   - LAST_HOUR: 上一小时   - CURRENT_HOUR: 当前小时   - BETWEEN_HOUR: 自定义小时区间   - LAST_MINUTE: 上一分钟   - CURRENT_MINUTE: 当前分钟   - BETWEEN_MINUTE: 自定义分钟区间 
 
@@ -246,7 +246,7 @@ class ConditionVO:
 
     @condition_fn.setter
     def condition_fn(self, condition_fn):
-        """Sets the condition_fn of this ConditionVO.
+        r"""Sets the condition_fn of this ConditionVO.
 
         限定计算方法。 枚举值：   - LAST_YEAR: 前一年   - CURRENT_YEAR: 本年   - BETWEEN_YEAR: 自定义年区间   - LAST_MONTH: 前一月   - CURRENT_MONTH: 本月   - BETWEEN_MONTH: 自定义月区间   - LAST_DAY: 前一天   - CURRENT_DAY: 本日   - BETWEEN_DAY: 自定义日区间   - LAST_HOUR: 上一小时   - CURRENT_HOUR: 当前小时   - BETWEEN_HOUR: 自定义小时区间   - LAST_MINUTE: 上一分钟   - CURRENT_MINUTE: 当前分钟   - BETWEEN_MINUTE: 自定义分钟区间 
 
@@ -257,7 +257,7 @@ class ConditionVO:
 
     @property
     def condition_fn_param(self):
-        """Gets the condition_fn_param of this ConditionVO.
+        r"""Gets the condition_fn_param of this ConditionVO.
 
         限定计算参数。
 
@@ -268,7 +268,7 @@ class ConditionVO:
 
     @condition_fn_param.setter
     def condition_fn_param(self, condition_fn_param):
-        """Sets the condition_fn_param of this ConditionVO.
+        r"""Sets the condition_fn_param of this ConditionVO.
 
         限定计算参数。
 
@@ -279,7 +279,7 @@ class ConditionVO:
 
     @property
     def status(self):
-        """Gets the status of this ConditionVO.
+        r"""Gets the status of this ConditionVO.
 
         :return: The status of this ConditionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -288,7 +288,7 @@ class ConditionVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConditionVO.
+        r"""Sets the status of this ConditionVO.
 
         :param status: The status of this ConditionVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -297,7 +297,7 @@ class ConditionVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ConditionVO.
+        r"""Gets the create_time of this ConditionVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -308,7 +308,7 @@ class ConditionVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ConditionVO.
+        r"""Sets the create_time of this ConditionVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -319,7 +319,7 @@ class ConditionVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ConditionVO.
+        r"""Gets the update_time of this ConditionVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -330,7 +330,7 @@ class ConditionVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ConditionVO.
+        r"""Sets the update_time of this ConditionVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -341,7 +341,7 @@ class ConditionVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this ConditionVO.
+        r"""Gets the approval_info of this ConditionVO.
 
         :return: The approval_info of this ConditionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -350,7 +350,7 @@ class ConditionVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this ConditionVO.
+        r"""Sets the approval_info of this ConditionVO.
 
         :param approval_info: The approval_info of this ConditionVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -359,7 +359,7 @@ class ConditionVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this ConditionVO.
+        r"""Gets the new_biz of this ConditionVO.
 
         :return: The new_biz of this ConditionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -368,7 +368,7 @@ class ConditionVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this ConditionVO.
+        r"""Sets the new_biz of this ConditionVO.
 
         :param new_biz: The new_biz of this ConditionVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -377,7 +377,7 @@ class ConditionVO:
 
     @property
     def base_time(self):
-        """Gets the base_time of this ConditionVO.
+        r"""Gets the base_time of this ConditionVO.
 
         基准时间。
 
@@ -388,7 +388,7 @@ class ConditionVO:
 
     @base_time.setter
     def base_time(self, base_time):
-        """Sets the base_time of this ConditionVO.
+        r"""Sets the base_time of this ConditionVO.
 
         基准时间。
 

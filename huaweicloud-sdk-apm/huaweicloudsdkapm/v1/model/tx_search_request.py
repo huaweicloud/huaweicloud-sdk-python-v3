@@ -39,7 +39,7 @@ class TxSearchRequest:
     }
 
     def __init__(self, business_id=None, region=None, start_time=None, end_time=None, env_id=None, request_id=None, page_no=None, page_size=None):
-        """TxSearchRequest
+        r"""TxSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class TxSearchRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this TxSearchRequest.
+        r"""Gets the business_id of this TxSearchRequest.
 
         应用id。
 
@@ -98,7 +98,7 @@ class TxSearchRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this TxSearchRequest.
+        r"""Sets the business_id of this TxSearchRequest.
 
         应用id。
 
@@ -109,7 +109,7 @@ class TxSearchRequest:
 
     @property
     def region(self):
-        """Gets the region of this TxSearchRequest.
+        r"""Gets the region of this TxSearchRequest.
 
         region英文名称。
 
@@ -120,7 +120,7 @@ class TxSearchRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TxSearchRequest.
+        r"""Sets the region of this TxSearchRequest.
 
         region英文名称。
 
@@ -131,7 +131,7 @@ class TxSearchRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TxSearchRequest.
+        r"""Gets the start_time of this TxSearchRequest.
 
         开始时间。
 
@@ -142,7 +142,7 @@ class TxSearchRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TxSearchRequest.
+        r"""Sets the start_time of this TxSearchRequest.
 
         开始时间。
 
@@ -153,7 +153,7 @@ class TxSearchRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TxSearchRequest.
+        r"""Gets the end_time of this TxSearchRequest.
 
         结束时间。
 
@@ -164,7 +164,7 @@ class TxSearchRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TxSearchRequest.
+        r"""Sets the end_time of this TxSearchRequest.
 
         结束时间。
 
@@ -175,7 +175,7 @@ class TxSearchRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TxSearchRequest.
+        r"""Gets the env_id of this TxSearchRequest.
 
         环境id。
 
@@ -186,7 +186,7 @@ class TxSearchRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TxSearchRequest.
+        r"""Sets the env_id of this TxSearchRequest.
 
         环境id。
 
@@ -197,7 +197,7 @@ class TxSearchRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this TxSearchRequest.
+        r"""Gets the request_id of this TxSearchRequest.
 
         上次请求的id。
 
@@ -208,7 +208,7 @@ class TxSearchRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this TxSearchRequest.
+        r"""Sets the request_id of this TxSearchRequest.
 
         上次请求的id。
 
@@ -219,7 +219,7 @@ class TxSearchRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this TxSearchRequest.
+        r"""Gets the page_no of this TxSearchRequest.
 
         页码。
 
@@ -230,7 +230,7 @@ class TxSearchRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this TxSearchRequest.
+        r"""Sets the page_no of this TxSearchRequest.
 
         页码。
 
@@ -241,7 +241,7 @@ class TxSearchRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this TxSearchRequest.
+        r"""Gets the page_size of this TxSearchRequest.
 
         每页数量。
 
@@ -252,7 +252,7 @@ class TxSearchRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this TxSearchRequest.
+        r"""Sets the page_size of this TxSearchRequest.
 
         每页数量。
 

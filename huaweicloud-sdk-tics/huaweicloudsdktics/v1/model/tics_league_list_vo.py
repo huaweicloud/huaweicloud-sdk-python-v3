@@ -55,7 +55,7 @@ class TicsLeagueListVo:
     }
 
     def __init__(self, bcs_channel_name=None, bcs_ip=None, bcs_org_name=None, block_chain_id=None, block_chain_name=None, create_date=None, create_time=None, creator_id=None, creator_name=None, expire_time=None, id=None, league_status=None, name=None, partners=None, type=None, version=None):
-        """TicsLeagueListVo
+        r"""TicsLeagueListVo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class TicsLeagueListVo:
 
     @property
     def bcs_channel_name(self):
-        """Gets the bcs_channel_name of this TicsLeagueListVo.
+        r"""Gets the bcs_channel_name of this TicsLeagueListVo.
 
         BCS通道名称
 
@@ -152,7 +152,7 @@ class TicsLeagueListVo:
 
     @bcs_channel_name.setter
     def bcs_channel_name(self, bcs_channel_name):
-        """Sets the bcs_channel_name of this TicsLeagueListVo.
+        r"""Sets the bcs_channel_name of this TicsLeagueListVo.
 
         BCS通道名称
 
@@ -163,7 +163,7 @@ class TicsLeagueListVo:
 
     @property
     def bcs_ip(self):
-        """Gets the bcs_ip of this TicsLeagueListVo.
+        r"""Gets the bcs_ip of this TicsLeagueListVo.
 
         BCS浏览器ip
 
@@ -174,7 +174,7 @@ class TicsLeagueListVo:
 
     @bcs_ip.setter
     def bcs_ip(self, bcs_ip):
-        """Sets the bcs_ip of this TicsLeagueListVo.
+        r"""Sets the bcs_ip of this TicsLeagueListVo.
 
         BCS浏览器ip
 
@@ -185,7 +185,7 @@ class TicsLeagueListVo:
 
     @property
     def bcs_org_name(self):
-        """Gets the bcs_org_name of this TicsLeagueListVo.
+        r"""Gets the bcs_org_name of this TicsLeagueListVo.
 
         BCS组织名称
 
@@ -196,7 +196,7 @@ class TicsLeagueListVo:
 
     @bcs_org_name.setter
     def bcs_org_name(self, bcs_org_name):
-        """Sets the bcs_org_name of this TicsLeagueListVo.
+        r"""Sets the bcs_org_name of this TicsLeagueListVo.
 
         BCS组织名称
 
@@ -207,7 +207,7 @@ class TicsLeagueListVo:
 
     @property
     def block_chain_id(self):
-        """Gets the block_chain_id of this TicsLeagueListVo.
+        r"""Gets the block_chain_id of this TicsLeagueListVo.
 
         BCS服务实例ID
 
@@ -218,7 +218,7 @@ class TicsLeagueListVo:
 
     @block_chain_id.setter
     def block_chain_id(self, block_chain_id):
-        """Sets the block_chain_id of this TicsLeagueListVo.
+        r"""Sets the block_chain_id of this TicsLeagueListVo.
 
         BCS服务实例ID
 
@@ -229,7 +229,7 @@ class TicsLeagueListVo:
 
     @property
     def block_chain_name(self):
-        """Gets the block_chain_name of this TicsLeagueListVo.
+        r"""Gets the block_chain_name of this TicsLeagueListVo.
 
         BCS服务实例名称
 
@@ -240,7 +240,7 @@ class TicsLeagueListVo:
 
     @block_chain_name.setter
     def block_chain_name(self, block_chain_name):
-        """Sets the block_chain_name of this TicsLeagueListVo.
+        r"""Sets the block_chain_name of this TicsLeagueListVo.
 
         BCS服务实例名称
 
@@ -251,7 +251,7 @@ class TicsLeagueListVo:
 
     @property
     def create_date(self):
-        """Gets the create_date of this TicsLeagueListVo.
+        r"""Gets the create_date of this TicsLeagueListVo.
 
         创建日期
 
@@ -262,7 +262,7 @@ class TicsLeagueListVo:
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this TicsLeagueListVo.
+        r"""Sets the create_date of this TicsLeagueListVo.
 
         创建日期
 
@@ -273,7 +273,7 @@ class TicsLeagueListVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TicsLeagueListVo.
+        r"""Gets the create_time of this TicsLeagueListVo.
 
         创建时间
 
@@ -284,7 +284,7 @@ class TicsLeagueListVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TicsLeagueListVo.
+        r"""Sets the create_time of this TicsLeagueListVo.
 
         创建时间
 
@@ -295,7 +295,7 @@ class TicsLeagueListVo:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this TicsLeagueListVo.
+        r"""Gets the creator_id of this TicsLeagueListVo.
 
         创建人id
 
@@ -306,7 +306,7 @@ class TicsLeagueListVo:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this TicsLeagueListVo.
+        r"""Sets the creator_id of this TicsLeagueListVo.
 
         创建人id
 
@@ -317,7 +317,7 @@ class TicsLeagueListVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TicsLeagueListVo.
+        r"""Gets the creator_name of this TicsLeagueListVo.
 
         创建人名称
 
@@ -328,7 +328,7 @@ class TicsLeagueListVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TicsLeagueListVo.
+        r"""Sets the creator_name of this TicsLeagueListVo.
 
         创建人名称
 
@@ -339,7 +339,7 @@ class TicsLeagueListVo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this TicsLeagueListVo.
+        r"""Gets the expire_time of this TicsLeagueListVo.
 
         过期时间
 
@@ -350,7 +350,7 @@ class TicsLeagueListVo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this TicsLeagueListVo.
+        r"""Sets the expire_time of this TicsLeagueListVo.
 
         过期时间
 
@@ -361,7 +361,7 @@ class TicsLeagueListVo:
 
     @property
     def id(self):
-        """Gets the id of this TicsLeagueListVo.
+        r"""Gets the id of this TicsLeagueListVo.
 
         联盟id
 
@@ -372,7 +372,7 @@ class TicsLeagueListVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicsLeagueListVo.
+        r"""Sets the id of this TicsLeagueListVo.
 
         联盟id
 
@@ -383,7 +383,7 @@ class TicsLeagueListVo:
 
     @property
     def league_status(self):
-        """Gets the league_status of this TicsLeagueListVo.
+        r"""Gets the league_status of this TicsLeagueListVo.
 
         联盟状态,CREATING.创建中,CREATE_FAILED.创建失败,NORMAL.正常,UPDATING.升级中,UPDATE_FAILED.升级失败,ROLLING.回滚中,ROLL_FAILED.回滚失败,DELETING.删除中,DELETE_FAILED.删除失败,DELETED.已删除
 
@@ -394,7 +394,7 @@ class TicsLeagueListVo:
 
     @league_status.setter
     def league_status(self, league_status):
-        """Sets the league_status of this TicsLeagueListVo.
+        r"""Sets the league_status of this TicsLeagueListVo.
 
         联盟状态,CREATING.创建中,CREATE_FAILED.创建失败,NORMAL.正常,UPDATING.升级中,UPDATE_FAILED.升级失败,ROLLING.回滚中,ROLL_FAILED.回滚失败,DELETING.删除中,DELETE_FAILED.删除失败,DELETED.已删除
 
@@ -405,7 +405,7 @@ class TicsLeagueListVo:
 
     @property
     def name(self):
-        """Gets the name of this TicsLeagueListVo.
+        r"""Gets the name of this TicsLeagueListVo.
 
         联盟名称
 
@@ -416,7 +416,7 @@ class TicsLeagueListVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TicsLeagueListVo.
+        r"""Sets the name of this TicsLeagueListVo.
 
         联盟名称
 
@@ -427,7 +427,7 @@ class TicsLeagueListVo:
 
     @property
     def partners(self):
-        """Gets the partners of this TicsLeagueListVo.
+        r"""Gets the partners of this TicsLeagueListVo.
 
         联盟成员数
 
@@ -438,7 +438,7 @@ class TicsLeagueListVo:
 
     @partners.setter
     def partners(self, partners):
-        """Sets the partners of this TicsLeagueListVo.
+        r"""Sets the partners of this TicsLeagueListVo.
 
         联盟成员数
 
@@ -449,7 +449,7 @@ class TicsLeagueListVo:
 
     @property
     def type(self):
-        """Gets the type of this TicsLeagueListVo.
+        r"""Gets the type of this TicsLeagueListVo.
 
         参与类型,OWNER.所有者,PARTNER.参与者
 
@@ -460,7 +460,7 @@ class TicsLeagueListVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TicsLeagueListVo.
+        r"""Sets the type of this TicsLeagueListVo.
 
         参与类型,OWNER.所有者,PARTNER.参与者
 
@@ -471,7 +471,7 @@ class TicsLeagueListVo:
 
     @property
     def version(self):
-        """Gets the version of this TicsLeagueListVo.
+        r"""Gets the version of this TicsLeagueListVo.
 
         联盟版本
 
@@ -482,7 +482,7 @@ class TicsLeagueListVo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this TicsLeagueListVo.
+        r"""Sets the version of this TicsLeagueListVo.
 
         联盟版本
 

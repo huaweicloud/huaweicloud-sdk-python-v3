@@ -43,7 +43,7 @@ class DomainInfo:
     }
 
     def __init__(self, id=None, domain_name=None, enterprise_project_id=None, dispatch_status=None, web_name=None, description=None, policy_id=None, protect_status=None, create_time=None, update_time=None):
-        """DomainInfo
+        r"""DomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class DomainInfo:
 
     @property
     def id(self):
-        """Gets the id of this DomainInfo.
+        r"""Gets the id of this DomainInfo.
 
         域名id
 
@@ -117,7 +117,7 @@ class DomainInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DomainInfo.
+        r"""Sets the id of this DomainInfo.
 
         域名id
 
@@ -128,7 +128,7 @@ class DomainInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainInfo.
+        r"""Gets the domain_name of this DomainInfo.
 
         域名
 
@@ -139,7 +139,7 @@ class DomainInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainInfo.
+        r"""Sets the domain_name of this DomainInfo.
 
         域名
 
@@ -150,7 +150,7 @@ class DomainInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DomainInfo.
+        r"""Gets the enterprise_project_id of this DomainInfo.
 
         企业项目id
 
@@ -161,7 +161,7 @@ class DomainInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DomainInfo.
+        r"""Sets the enterprise_project_id of this DomainInfo.
 
         企业项目id
 
@@ -172,7 +172,7 @@ class DomainInfo:
 
     @property
     def dispatch_status(self):
-        """Gets the dispatch_status of this DomainInfo.
+        r"""Gets the dispatch_status of this DomainInfo.
 
         - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
 
@@ -183,7 +183,7 @@ class DomainInfo:
 
     @dispatch_status.setter
     def dispatch_status(self, dispatch_status):
-        """Sets the dispatch_status of this DomainInfo.
+        r"""Sets the dispatch_status of this DomainInfo.
 
         - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
 
@@ -194,7 +194,7 @@ class DomainInfo:
 
     @property
     def web_name(self):
-        """Gets the web_name of this DomainInfo.
+        r"""Gets the web_name of this DomainInfo.
 
         网站名称
 
@@ -205,7 +205,7 @@ class DomainInfo:
 
     @web_name.setter
     def web_name(self, web_name):
-        """Sets the web_name of this DomainInfo.
+        r"""Sets the web_name of this DomainInfo.
 
         网站名称
 
@@ -216,7 +216,7 @@ class DomainInfo:
 
     @property
     def description(self):
-        """Gets the description of this DomainInfo.
+        r"""Gets the description of this DomainInfo.
 
         描述
 
@@ -227,7 +227,7 @@ class DomainInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DomainInfo.
+        r"""Sets the description of this DomainInfo.
 
         描述
 
@@ -238,7 +238,7 @@ class DomainInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DomainInfo.
+        r"""Gets the policy_id of this DomainInfo.
 
         策略id
 
@@ -249,7 +249,7 @@ class DomainInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DomainInfo.
+        r"""Sets the policy_id of this DomainInfo.
 
         策略id
 
@@ -260,7 +260,7 @@ class DomainInfo:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this DomainInfo.
+        r"""Gets the protect_status of this DomainInfo.
 
         - 防护状态: - 防护中：on - 未防护：off
 
@@ -271,7 +271,7 @@ class DomainInfo:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this DomainInfo.
+        r"""Sets the protect_status of this DomainInfo.
 
         - 防护状态: - 防护中：on - 未防护：off
 
@@ -282,7 +282,7 @@ class DomainInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DomainInfo.
+        r"""Gets the create_time of this DomainInfo.
 
         创建域名的时间
 
@@ -293,7 +293,7 @@ class DomainInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DomainInfo.
+        r"""Sets the create_time of this DomainInfo.
 
         创建域名的时间
 
@@ -304,7 +304,7 @@ class DomainInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DomainInfo.
+        r"""Gets the update_time of this DomainInfo.
 
         更新域名的时间
 
@@ -315,7 +315,7 @@ class DomainInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DomainInfo.
+        r"""Sets the update_time of this DomainInfo.
 
         更新域名的时间
 

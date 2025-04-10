@@ -25,7 +25,7 @@ class UntagResourceReqBody:
     }
 
     def __init__(self, tags=None):
-        """UntagResourceReqBody
+        r"""UntagResourceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UntagResourceReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this UntagResourceReqBody.
+        r"""Gets the tags of this UntagResourceReqBody.
 
         一个或多个标签键值对的列表。标签键必须存在，而不是空字符串。标签值必须存在，但可以是空字符串。
 
@@ -53,7 +53,7 @@ class UntagResourceReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UntagResourceReqBody.
+        r"""Sets the tags of this UntagResourceReqBody.
 
         一个或多个标签键值对的列表。标签键必须存在，而不是空字符串。标签值必须存在，但可以是空字符串。
 

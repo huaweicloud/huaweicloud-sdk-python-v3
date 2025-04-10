@@ -45,7 +45,7 @@ class CreateL7policyReq:
     }
 
     def __init__(self, name=None, action=None, tenant_id=None, admin_state_up=None, description=None, listener_id=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, position=None, rules=None):
-        """CreateL7policyReq
+        r"""CreateL7policyReq
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class CreateL7policyReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateL7policyReq.
+        r"""Gets the name of this CreateL7policyReq.
 
         转发策略名称
 
@@ -122,7 +122,7 @@ class CreateL7policyReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateL7policyReq.
+        r"""Sets the name of this CreateL7policyReq.
 
         转发策略名称
 
@@ -133,7 +133,7 @@ class CreateL7policyReq:
 
     @property
     def action(self):
-        """Gets the action of this CreateL7policyReq.
+        r"""Gets the action of this CreateL7policyReq.
 
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
@@ -144,7 +144,7 @@ class CreateL7policyReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateL7policyReq.
+        r"""Sets the action of this CreateL7policyReq.
 
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
@@ -155,7 +155,7 @@ class CreateL7policyReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateL7policyReq.
+        r"""Gets the tenant_id of this CreateL7policyReq.
 
         转发策略所在的项目ID。
 
@@ -166,7 +166,7 @@ class CreateL7policyReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateL7policyReq.
+        r"""Sets the tenant_id of this CreateL7policyReq.
 
         转发策略所在的项目ID。
 
@@ -177,7 +177,7 @@ class CreateL7policyReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateL7policyReq.
+        r"""Gets the admin_state_up of this CreateL7policyReq.
 
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -188,7 +188,7 @@ class CreateL7policyReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateL7policyReq.
+        r"""Sets the admin_state_up of this CreateL7policyReq.
 
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -199,7 +199,7 @@ class CreateL7policyReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateL7policyReq.
+        r"""Gets the description of this CreateL7policyReq.
 
         转发策略额描述信息
 
@@ -210,7 +210,7 @@ class CreateL7policyReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateL7policyReq.
+        r"""Sets the description of this CreateL7policyReq.
 
         转发策略额描述信息
 
@@ -221,7 +221,7 @@ class CreateL7policyReq:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreateL7policyReq.
+        r"""Gets the listener_id of this CreateL7policyReq.
 
         转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
@@ -232,7 +232,7 @@ class CreateL7policyReq:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreateL7policyReq.
+        r"""Sets the listener_id of this CreateL7policyReq.
 
         转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
@@ -243,7 +243,7 @@ class CreateL7policyReq:
 
     @property
     def redirect_pool_id(self):
-        """Gets the redirect_pool_id of this CreateL7policyReq.
+        r"""Gets the redirect_pool_id of this CreateL7policyReq.
 
         转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。当action为REDIRECT_TO_POOL时必选
 
@@ -254,7 +254,7 @@ class CreateL7policyReq:
 
     @redirect_pool_id.setter
     def redirect_pool_id(self, redirect_pool_id):
-        """Sets the redirect_pool_id of this CreateL7policyReq.
+        r"""Sets the redirect_pool_id of this CreateL7policyReq.
 
         转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。当action为REDIRECT_TO_POOL时必选
 
@@ -265,7 +265,7 @@ class CreateL7policyReq:
 
     @property
     def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this CreateL7policyReq.
+        r"""Gets the redirect_listener_id of this CreateL7policyReq.
 
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
@@ -276,7 +276,7 @@ class CreateL7policyReq:
 
     @redirect_listener_id.setter
     def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this CreateL7policyReq.
+        r"""Sets the redirect_listener_id of this CreateL7policyReq.
 
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
@@ -287,7 +287,7 @@ class CreateL7policyReq:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this CreateL7policyReq.
+        r"""Gets the redirect_url of this CreateL7policyReq.
 
         转发到的url。该字段未启用。
 
@@ -298,7 +298,7 @@ class CreateL7policyReq:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this CreateL7policyReq.
+        r"""Sets the redirect_url of this CreateL7policyReq.
 
         转发到的url。该字段未启用。
 
@@ -309,7 +309,7 @@ class CreateL7policyReq:
 
     @property
     def position(self):
-        """Gets the position of this CreateL7policyReq.
+        r"""Gets the position of this CreateL7policyReq.
 
         转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
@@ -320,7 +320,7 @@ class CreateL7policyReq:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this CreateL7policyReq.
+        r"""Sets the position of this CreateL7policyReq.
 
         转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
@@ -331,7 +331,7 @@ class CreateL7policyReq:
 
     @property
     def rules(self):
-        """Gets the rules of this CreateL7policyReq.
+        r"""Gets the rules of this CreateL7policyReq.
 
         指定L7rule的参数，可以在创建L7policy的同时创建L7rule
 
@@ -342,7 +342,7 @@ class CreateL7policyReq:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CreateL7policyReq.
+        r"""Sets the rules of this CreateL7policyReq.
 
         指定L7rule的参数，可以在创建L7policy的同时创建L7rule
 

@@ -25,7 +25,7 @@ class ModifyPolicyRequest:
     }
 
     def __init__(self, policies=None):
-        """ModifyPolicyRequest
+        r"""ModifyPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyPolicyRequest:
 
     @property
     def policies(self):
-        """Gets the policies of this ModifyPolicyRequest.
+        r"""Gets the policies of this ModifyPolicyRequest.
 
         :return: The policies of this ModifyPolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Policies`
@@ -52,7 +52,7 @@ class ModifyPolicyRequest:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ModifyPolicyRequest.
+        r"""Sets the policies of this ModifyPolicyRequest.
 
         :param policies: The policies of this ModifyPolicyRequest.
         :type policies: :class:`huaweicloudsdkworkspace.v2.Policies`

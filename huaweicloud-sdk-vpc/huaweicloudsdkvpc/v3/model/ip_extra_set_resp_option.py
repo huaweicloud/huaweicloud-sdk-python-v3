@@ -27,7 +27,7 @@ class IpExtraSetRespOption:
     }
 
     def __init__(self, ip=None, remarks=None):
-        """IpExtraSetRespOption
+        r"""IpExtraSetRespOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpExtraSetRespOption:
 
     @property
     def ip(self):
-        """Gets the ip of this IpExtraSetRespOption.
+        r"""Gets the ip of this IpExtraSetRespOption.
 
         功能说明：单个IP地址、IP地址范围或ip地址网段，支持IPv4、IPv6
 
@@ -59,7 +59,7 @@ class IpExtraSetRespOption:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this IpExtraSetRespOption.
+        r"""Sets the ip of this IpExtraSetRespOption.
 
         功能说明：单个IP地址、IP地址范围或ip地址网段，支持IPv4、IPv6
 
@@ -70,7 +70,7 @@ class IpExtraSetRespOption:
 
     @property
     def remarks(self):
-        """Gets the remarks of this IpExtraSetRespOption.
+        r"""Gets the remarks of this IpExtraSetRespOption.
 
         功能说明：IP的备注信息 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -81,7 +81,7 @@ class IpExtraSetRespOption:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this IpExtraSetRespOption.
+        r"""Sets the remarks of this IpExtraSetRespOption.
 
         功能说明：IP的备注信息 取值范围：0-255个字符，不能包含“<”和“>”。
 

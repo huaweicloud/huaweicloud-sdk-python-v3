@@ -40,7 +40,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, status=None, reasons=None, progress_percent=None, archive_id=None, begin_time=None, end_time=None):
-        """CheckAssetJobStatusResponse
+        r"""CheckAssetJobStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CheckAssetJobStatusResponse.
+        r"""Gets the id of this CheckAssetJobStatusResponse.
 
         作业ID
 
@@ -104,7 +104,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckAssetJobStatusResponse.
+        r"""Sets the id of this CheckAssetJobStatusResponse.
 
         作业ID
 
@@ -115,7 +115,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CheckAssetJobStatusResponse.
+        r"""Gets the type of this CheckAssetJobStatusResponse.
 
         作业类型
 
@@ -126,7 +126,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CheckAssetJobStatusResponse.
+        r"""Sets the type of this CheckAssetJobStatusResponse.
 
         作业类型
 
@@ -137,7 +137,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CheckAssetJobStatusResponse.
+        r"""Gets the status of this CheckAssetJobStatusResponse.
 
         作业状态 - RUNNING : 作业正在执行 - SUCCEEDED : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - FAILED : 作业执行失败，通过reason字段查看具体错误原因
 
@@ -148,7 +148,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckAssetJobStatusResponse.
+        r"""Sets the status of this CheckAssetJobStatusResponse.
 
         作业状态 - RUNNING : 作业正在执行 - SUCCEEDED : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - FAILED : 作业执行失败，通过reason字段查看具体错误原因
 
@@ -159,7 +159,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def reasons(self):
-        """Gets the reasons of this CheckAssetJobStatusResponse.
+        r"""Gets the reasons of this CheckAssetJobStatusResponse.
 
         导致作业失败的错误原因
 
@@ -170,7 +170,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @reasons.setter
     def reasons(self, reasons):
-        """Sets the reasons of this CheckAssetJobStatusResponse.
+        r"""Sets the reasons of this CheckAssetJobStatusResponse.
 
         导致作业失败的错误原因
 
@@ -181,7 +181,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def progress_percent(self):
-        """Gets the progress_percent of this CheckAssetJobStatusResponse.
+        r"""Gets the progress_percent of this CheckAssetJobStatusResponse.
 
         作业进度百分比
 
@@ -192,7 +192,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @progress_percent.setter
     def progress_percent(self, progress_percent):
-        """Sets the progress_percent of this CheckAssetJobStatusResponse.
+        r"""Sets the progress_percent of this CheckAssetJobStatusResponse.
 
         作业进度百分比
 
@@ -203,7 +203,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def archive_id(self):
-        """Gets the archive_id of this CheckAssetJobStatusResponse.
+        r"""Gets the archive_id of this CheckAssetJobStatusResponse.
 
         导出作业成功时，供下载的资产包ID
 
@@ -214,7 +214,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @archive_id.setter
     def archive_id(self, archive_id):
-        """Sets the archive_id of this CheckAssetJobStatusResponse.
+        r"""Sets the archive_id of this CheckAssetJobStatusResponse.
 
         导出作业成功时，供下载的资产包ID
 
@@ -225,7 +225,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this CheckAssetJobStatusResponse.
+        r"""Gets the begin_time of this CheckAssetJobStatusResponse.
 
         作业开始时间
 
@@ -236,7 +236,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this CheckAssetJobStatusResponse.
+        r"""Sets the begin_time of this CheckAssetJobStatusResponse.
 
         作业开始时间
 
@@ -247,7 +247,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this CheckAssetJobStatusResponse.
+        r"""Gets the end_time of this CheckAssetJobStatusResponse.
 
         作业结束时间
 
@@ -258,7 +258,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CheckAssetJobStatusResponse.
+        r"""Sets the end_time of this CheckAssetJobStatusResponse.
 
         作业结束时间
 

@@ -99,7 +99,7 @@ class BizMetricVO:
     }
 
     def __init__(self, id=None, name=None, code=None, name_alias=None, biz_type=None, status=None, biz_catalog_id=None, biz_catalog_path=None, create_by=None, update_by=None, data_origin=None, unit=None, time_filters=None, dimensions=None, general_filters=None, interval_type=None, apply_scenario=None, technical_metric=None, technical_metric_name=None, technical_metric_type=None, measure=None, owner=None, owner_department=None, destination=None, guid=None, definition=None, expression=None, remark=None, approval_info=None, new_biz=None, create_time=None, update_time=None, l1=None, l2=None, l3=None, biz_metric=None, summary_status=None, self_defined_fields=None):
-        """BizMetricVO
+        r"""BizMetricVO
 
         The model defined in huaweicloud sdk
 
@@ -293,7 +293,7 @@ class BizMetricVO:
 
     @property
     def id(self):
-        """Gets the id of this BizMetricVO.
+        r"""Gets the id of this BizMetricVO.
 
         编码，更新时必填，创建时为空，ID字符串。
 
@@ -304,7 +304,7 @@ class BizMetricVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BizMetricVO.
+        r"""Sets the id of this BizMetricVO.
 
         编码，更新时必填，创建时为空，ID字符串。
 
@@ -315,7 +315,7 @@ class BizMetricVO:
 
     @property
     def name(self):
-        """Gets the name of this BizMetricVO.
+        r"""Gets the name of this BizMetricVO.
 
         指标名称。
 
@@ -326,7 +326,7 @@ class BizMetricVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BizMetricVO.
+        r"""Sets the name of this BizMetricVO.
 
         指标名称。
 
@@ -337,7 +337,7 @@ class BizMetricVO:
 
     @property
     def code(self):
-        """Gets the code of this BizMetricVO.
+        r"""Gets the code of this BizMetricVO.
 
         指标编码，只读。
 
@@ -348,7 +348,7 @@ class BizMetricVO:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BizMetricVO.
+        r"""Sets the code of this BizMetricVO.
 
         指标编码，只读。
 
@@ -359,7 +359,7 @@ class BizMetricVO:
 
     @property
     def name_alias(self):
-        """Gets the name_alias of this BizMetricVO.
+        r"""Gets the name_alias of this BizMetricVO.
 
         指标别名。
 
@@ -370,7 +370,7 @@ class BizMetricVO:
 
     @name_alias.setter
     def name_alias(self, name_alias):
-        """Sets the name_alias of this BizMetricVO.
+        r"""Sets the name_alias of this BizMetricVO.
 
         指标别名。
 
@@ -381,7 +381,7 @@ class BizMetricVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this BizMetricVO.
+        r"""Gets the biz_type of this BizMetricVO.
 
         :return: The biz_type of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -390,7 +390,7 @@ class BizMetricVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this BizMetricVO.
+        r"""Sets the biz_type of this BizMetricVO.
 
         :param biz_type: The biz_type of this BizMetricVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -399,7 +399,7 @@ class BizMetricVO:
 
     @property
     def status(self):
-        """Gets the status of this BizMetricVO.
+        r"""Gets the status of this BizMetricVO.
 
         :return: The status of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -408,7 +408,7 @@ class BizMetricVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BizMetricVO.
+        r"""Sets the status of this BizMetricVO.
 
         :param status: The status of this BizMetricVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -417,7 +417,7 @@ class BizMetricVO:
 
     @property
     def biz_catalog_id(self):
-        """Gets the biz_catalog_id of this BizMetricVO.
+        r"""Gets the biz_catalog_id of this BizMetricVO.
 
         归属的流程架构的ID，ID字符串。
 
@@ -428,7 +428,7 @@ class BizMetricVO:
 
     @biz_catalog_id.setter
     def biz_catalog_id(self, biz_catalog_id):
-        """Sets the biz_catalog_id of this BizMetricVO.
+        r"""Sets the biz_catalog_id of this BizMetricVO.
 
         归属的流程架构的ID，ID字符串。
 
@@ -439,7 +439,7 @@ class BizMetricVO:
 
     @property
     def biz_catalog_path(self):
-        """Gets the biz_catalog_path of this BizMetricVO.
+        r"""Gets the biz_catalog_path of this BizMetricVO.
 
         归属的流程架构路径，只读。
 
@@ -450,7 +450,7 @@ class BizMetricVO:
 
     @biz_catalog_path.setter
     def biz_catalog_path(self, biz_catalog_path):
-        """Sets the biz_catalog_path of this BizMetricVO.
+        r"""Sets the biz_catalog_path of this BizMetricVO.
 
         归属的流程架构路径，只读。
 
@@ -461,7 +461,7 @@ class BizMetricVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this BizMetricVO.
+        r"""Gets the create_by of this BizMetricVO.
 
         创建人，只读。
 
@@ -472,7 +472,7 @@ class BizMetricVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this BizMetricVO.
+        r"""Sets the create_by of this BizMetricVO.
 
         创建人，只读。
 
@@ -483,7 +483,7 @@ class BizMetricVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this BizMetricVO.
+        r"""Gets the update_by of this BizMetricVO.
 
         更新人，只读。
 
@@ -494,7 +494,7 @@ class BizMetricVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this BizMetricVO.
+        r"""Sets the update_by of this BizMetricVO.
 
         更新人，只读。
 
@@ -505,7 +505,7 @@ class BizMetricVO:
 
     @property
     def data_origin(self):
-        """Gets the data_origin of this BizMetricVO.
+        r"""Gets the data_origin of this BizMetricVO.
 
         数据来源。
 
@@ -516,7 +516,7 @@ class BizMetricVO:
 
     @data_origin.setter
     def data_origin(self, data_origin):
-        """Sets the data_origin of this BizMetricVO.
+        r"""Sets the data_origin of this BizMetricVO.
 
         数据来源。
 
@@ -527,7 +527,7 @@ class BizMetricVO:
 
     @property
     def unit(self):
-        """Gets the unit of this BizMetricVO.
+        r"""Gets the unit of this BizMetricVO.
 
         计量单位。
 
@@ -538,7 +538,7 @@ class BizMetricVO:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this BizMetricVO.
+        r"""Sets the unit of this BizMetricVO.
 
         计量单位。
 
@@ -549,7 +549,7 @@ class BizMetricVO:
 
     @property
     def time_filters(self):
-        """Gets the time_filters of this BizMetricVO.
+        r"""Gets the time_filters of this BizMetricVO.
 
         统计周期(时间限定)。
 
@@ -560,7 +560,7 @@ class BizMetricVO:
 
     @time_filters.setter
     def time_filters(self, time_filters):
-        """Sets the time_filters of this BizMetricVO.
+        r"""Sets the time_filters of this BizMetricVO.
 
         统计周期(时间限定)。
 
@@ -571,7 +571,7 @@ class BizMetricVO:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this BizMetricVO.
+        r"""Gets the dimensions of this BizMetricVO.
 
         统计维度。
 
@@ -582,7 +582,7 @@ class BizMetricVO:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this BizMetricVO.
+        r"""Sets the dimensions of this BizMetricVO.
 
         统计维度。
 
@@ -593,7 +593,7 @@ class BizMetricVO:
 
     @property
     def general_filters(self):
-        """Gets the general_filters of this BizMetricVO.
+        r"""Gets the general_filters of this BizMetricVO.
 
         统计口径和修饰词。
 
@@ -604,7 +604,7 @@ class BizMetricVO:
 
     @general_filters.setter
     def general_filters(self, general_filters):
-        """Sets the general_filters of this BizMetricVO.
+        r"""Sets the general_filters of this BizMetricVO.
 
         统计口径和修饰词。
 
@@ -615,7 +615,7 @@ class BizMetricVO:
 
     @property
     def interval_type(self):
-        """Gets the interval_type of this BizMetricVO.
+        r"""Gets the interval_type of this BizMetricVO.
 
         刷新频率。 枚举值：   - MINUTE: 每分钟   - HOUR: 每小时   - DAY: 每天   - WEEK: 每周   - MONTH: 每月   - YEAR: 每年   - REAL_TIME: 实时   - HALF_HOUR: 每半小时   - QUART: 每15分钟   - DOUBLE_WEEK: 每两周   - HALF_YEAR: 每半年   - HALF_DAY: 每半天 
 
@@ -626,7 +626,7 @@ class BizMetricVO:
 
     @interval_type.setter
     def interval_type(self, interval_type):
-        """Sets the interval_type of this BizMetricVO.
+        r"""Sets the interval_type of this BizMetricVO.
 
         刷新频率。 枚举值：   - MINUTE: 每分钟   - HOUR: 每小时   - DAY: 每天   - WEEK: 每周   - MONTH: 每月   - YEAR: 每年   - REAL_TIME: 实时   - HALF_HOUR: 每半小时   - QUART: 每15分钟   - DOUBLE_WEEK: 每两周   - HALF_YEAR: 每半年   - HALF_DAY: 每半天 
 
@@ -637,7 +637,7 @@ class BizMetricVO:
 
     @property
     def apply_scenario(self):
-        """Gets the apply_scenario of this BizMetricVO.
+        r"""Gets the apply_scenario of this BizMetricVO.
 
         应用场景。
 
@@ -648,7 +648,7 @@ class BizMetricVO:
 
     @apply_scenario.setter
     def apply_scenario(self, apply_scenario):
-        """Sets the apply_scenario of this BizMetricVO.
+        r"""Sets the apply_scenario of this BizMetricVO.
 
         应用场景。
 
@@ -659,7 +659,7 @@ class BizMetricVO:
 
     @property
     def technical_metric(self):
-        """Gets the technical_metric of this BizMetricVO.
+        r"""Gets the technical_metric of this BizMetricVO.
 
         关联技术指标，ID字符串。
 
@@ -670,7 +670,7 @@ class BizMetricVO:
 
     @technical_metric.setter
     def technical_metric(self, technical_metric):
-        """Sets the technical_metric of this BizMetricVO.
+        r"""Sets the technical_metric of this BizMetricVO.
 
         关联技术指标，ID字符串。
 
@@ -681,7 +681,7 @@ class BizMetricVO:
 
     @property
     def technical_metric_name(self):
-        """Gets the technical_metric_name of this BizMetricVO.
+        r"""Gets the technical_metric_name of this BizMetricVO.
 
         关联技术指标名称，只读。
 
@@ -692,7 +692,7 @@ class BizMetricVO:
 
     @technical_metric_name.setter
     def technical_metric_name(self, technical_metric_name):
-        """Sets the technical_metric_name of this BizMetricVO.
+        r"""Sets the technical_metric_name of this BizMetricVO.
 
         关联技术指标名称，只读。
 
@@ -703,7 +703,7 @@ class BizMetricVO:
 
     @property
     def technical_metric_type(self):
-        """Gets the technical_metric_type of this BizMetricVO.
+        r"""Gets the technical_metric_type of this BizMetricVO.
 
         :return: The technical_metric_type of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -712,7 +712,7 @@ class BizMetricVO:
 
     @technical_metric_type.setter
     def technical_metric_type(self, technical_metric_type):
-        """Sets the technical_metric_type of this BizMetricVO.
+        r"""Sets the technical_metric_type of this BizMetricVO.
 
         :param technical_metric_type: The technical_metric_type of this BizMetricVO.
         :type technical_metric_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -721,7 +721,7 @@ class BizMetricVO:
 
     @property
     def measure(self):
-        """Gets the measure of this BizMetricVO.
+        r"""Gets the measure of this BizMetricVO.
 
         度量对象。
 
@@ -732,7 +732,7 @@ class BizMetricVO:
 
     @measure.setter
     def measure(self, measure):
-        """Sets the measure of this BizMetricVO.
+        r"""Sets the measure of this BizMetricVO.
 
         度量对象。
 
@@ -743,7 +743,7 @@ class BizMetricVO:
 
     @property
     def owner(self):
-        """Gets the owner of this BizMetricVO.
+        r"""Gets the owner of this BizMetricVO.
 
         指标责任人。
 
@@ -754,7 +754,7 @@ class BizMetricVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this BizMetricVO.
+        r"""Sets the owner of this BizMetricVO.
 
         指标责任人。
 
@@ -765,7 +765,7 @@ class BizMetricVO:
 
     @property
     def owner_department(self):
-        """Gets the owner_department of this BizMetricVO.
+        r"""Gets the owner_department of this BizMetricVO.
 
         指标管理部门。
 
@@ -776,7 +776,7 @@ class BizMetricVO:
 
     @owner_department.setter
     def owner_department(self, owner_department):
-        """Sets the owner_department of this BizMetricVO.
+        r"""Sets the owner_department of this BizMetricVO.
 
         指标管理部门。
 
@@ -787,7 +787,7 @@ class BizMetricVO:
 
     @property
     def destination(self):
-        """Gets the destination of this BizMetricVO.
+        r"""Gets the destination of this BizMetricVO.
 
         设置目的。
 
@@ -798,7 +798,7 @@ class BizMetricVO:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this BizMetricVO.
+        r"""Sets the destination of this BizMetricVO.
 
         设置目的。
 
@@ -809,7 +809,7 @@ class BizMetricVO:
 
     @property
     def guid(self):
-        """Gets the guid of this BizMetricVO.
+        r"""Gets the guid of this BizMetricVO.
 
         资产同步后的guid，只读。
 
@@ -820,7 +820,7 @@ class BizMetricVO:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this BizMetricVO.
+        r"""Sets the guid of this BizMetricVO.
 
         资产同步后的guid，只读。
 
@@ -831,7 +831,7 @@ class BizMetricVO:
 
     @property
     def definition(self):
-        """Gets the definition of this BizMetricVO.
+        r"""Gets the definition of this BizMetricVO.
 
         指标定义。
 
@@ -842,7 +842,7 @@ class BizMetricVO:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this BizMetricVO.
+        r"""Sets the definition of this BizMetricVO.
 
         指标定义。
 
@@ -853,7 +853,7 @@ class BizMetricVO:
 
     @property
     def expression(self):
-        """Gets the expression of this BizMetricVO.
+        r"""Gets the expression of this BizMetricVO.
 
         计算公式。
 
@@ -864,7 +864,7 @@ class BizMetricVO:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this BizMetricVO.
+        r"""Sets the expression of this BizMetricVO.
 
         计算公式。
 
@@ -875,7 +875,7 @@ class BizMetricVO:
 
     @property
     def remark(self):
-        """Gets the remark of this BizMetricVO.
+        r"""Gets the remark of this BizMetricVO.
 
         备注。
 
@@ -886,7 +886,7 @@ class BizMetricVO:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this BizMetricVO.
+        r"""Sets the remark of this BizMetricVO.
 
         备注。
 
@@ -897,7 +897,7 @@ class BizMetricVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this BizMetricVO.
+        r"""Gets the approval_info of this BizMetricVO.
 
         :return: The approval_info of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -906,7 +906,7 @@ class BizMetricVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this BizMetricVO.
+        r"""Sets the approval_info of this BizMetricVO.
 
         :param approval_info: The approval_info of this BizMetricVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -915,7 +915,7 @@ class BizMetricVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this BizMetricVO.
+        r"""Gets the new_biz of this BizMetricVO.
 
         :return: The new_biz of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -924,7 +924,7 @@ class BizMetricVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this BizMetricVO.
+        r"""Sets the new_biz of this BizMetricVO.
 
         :param new_biz: The new_biz of this BizMetricVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -933,7 +933,7 @@ class BizMetricVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BizMetricVO.
+        r"""Gets the create_time of this BizMetricVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -944,7 +944,7 @@ class BizMetricVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BizMetricVO.
+        r"""Sets the create_time of this BizMetricVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -955,7 +955,7 @@ class BizMetricVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BizMetricVO.
+        r"""Gets the update_time of this BizMetricVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -966,7 +966,7 @@ class BizMetricVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BizMetricVO.
+        r"""Sets the update_time of this BizMetricVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -977,7 +977,7 @@ class BizMetricVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this BizMetricVO.
+        r"""Gets the l1 of this BizMetricVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -988,7 +988,7 @@ class BizMetricVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this BizMetricVO.
+        r"""Sets the l1 of this BizMetricVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -999,7 +999,7 @@ class BizMetricVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this BizMetricVO.
+        r"""Gets the l2 of this BizMetricVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1010,7 +1010,7 @@ class BizMetricVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this BizMetricVO.
+        r"""Sets the l2 of this BizMetricVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1021,7 +1021,7 @@ class BizMetricVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this BizMetricVO.
+        r"""Gets the l3 of this BizMetricVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1032,7 +1032,7 @@ class BizMetricVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this BizMetricVO.
+        r"""Sets the l3 of this BizMetricVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1043,7 +1043,7 @@ class BizMetricVO:
 
     @property
     def biz_metric(self):
-        """Gets the biz_metric of this BizMetricVO.
+        r"""Gets the biz_metric of this BizMetricVO.
 
         :return: The biz_metric of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1052,7 +1052,7 @@ class BizMetricVO:
 
     @biz_metric.setter
     def biz_metric(self, biz_metric):
-        """Sets the biz_metric of this BizMetricVO.
+        r"""Sets the biz_metric of this BizMetricVO.
 
         :param biz_metric: The biz_metric of this BizMetricVO.
         :type biz_metric: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1061,7 +1061,7 @@ class BizMetricVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this BizMetricVO.
+        r"""Gets the summary_status of this BizMetricVO.
 
         :return: The summary_status of this BizMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1070,7 +1070,7 @@ class BizMetricVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this BizMetricVO.
+        r"""Sets the summary_status of this BizMetricVO.
 
         :param summary_status: The summary_status of this BizMetricVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1079,7 +1079,7 @@ class BizMetricVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this BizMetricVO.
+        r"""Gets the self_defined_fields of this BizMetricVO.
 
         自定义项
 
@@ -1090,7 +1090,7 @@ class BizMetricVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this BizMetricVO.
+        r"""Sets the self_defined_fields of this BizMetricVO.
 
         自定义项
 

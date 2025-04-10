@@ -29,7 +29,7 @@ class UserDto:
     }
 
     def __init__(self, domain=None, id=None, name=None):
-        """UserDto
+        r"""UserDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UserDto:
 
     @property
     def domain(self):
-        """Gets the domain of this UserDto.
+        r"""Gets the domain of this UserDto.
 
         :return: The domain of this UserDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DomainDto`
@@ -66,7 +66,7 @@ class UserDto:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UserDto.
+        r"""Sets the domain of this UserDto.
 
         :param domain: The domain of this UserDto.
         :type domain: :class:`huaweicloudsdkeihealth.v1.DomainDto`
@@ -75,7 +75,7 @@ class UserDto:
 
     @property
     def id(self):
-        """Gets the id of this UserDto.
+        r"""Gets the id of this UserDto.
 
         用户id
 
@@ -86,7 +86,7 @@ class UserDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserDto.
+        r"""Sets the id of this UserDto.
 
         用户id
 
@@ -97,7 +97,7 @@ class UserDto:
 
     @property
     def name(self):
-        """Gets the name of this UserDto.
+        r"""Gets the name of this UserDto.
 
         用户名
 
@@ -108,7 +108,7 @@ class UserDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserDto.
+        r"""Sets the name of this UserDto.
 
         用户名
 

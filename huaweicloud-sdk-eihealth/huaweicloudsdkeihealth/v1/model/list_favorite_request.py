@@ -47,7 +47,7 @@ class ListFavoriteRequest:
     }
 
     def __init__(self, eihealth_project_id=None, resource_id=None, offset=None, limit=None, user_name_list=None, resource_type_list=None, type_list=None, start_time=None, end_time=None, key_word=None, sort_dir=None, sort_key=None):
-        """ListFavoriteRequest
+        r"""ListFavoriteRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListFavoriteRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListFavoriteRequest.
+        r"""Gets the eihealth_project_id of this ListFavoriteRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -130,7 +130,7 @@ class ListFavoriteRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListFavoriteRequest.
+        r"""Sets the eihealth_project_id of this ListFavoriteRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -141,7 +141,7 @@ class ListFavoriteRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListFavoriteRequest.
+        r"""Gets the resource_id of this ListFavoriteRequest.
 
         资源ID。
 
@@ -152,7 +152,7 @@ class ListFavoriteRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListFavoriteRequest.
+        r"""Sets the resource_id of this ListFavoriteRequest.
 
         资源ID。
 
@@ -163,7 +163,7 @@ class ListFavoriteRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFavoriteRequest.
+        r"""Gets the offset of this ListFavoriteRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]。
 
@@ -174,7 +174,7 @@ class ListFavoriteRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFavoriteRequest.
+        r"""Sets the offset of this ListFavoriteRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]。
 
@@ -185,7 +185,7 @@ class ListFavoriteRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFavoriteRequest.
+        r"""Gets the limit of this ListFavoriteRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]。
 
@@ -196,7 +196,7 @@ class ListFavoriteRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFavoriteRequest.
+        r"""Sets the limit of this ListFavoriteRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]。
 
@@ -207,7 +207,7 @@ class ListFavoriteRequest:
 
     @property
     def user_name_list(self):
-        """Gets the user_name_list of this ListFavoriteRequest.
+        r"""Gets the user_name_list of this ListFavoriteRequest.
 
         收藏人名称列表。
 
@@ -218,7 +218,7 @@ class ListFavoriteRequest:
 
     @user_name_list.setter
     def user_name_list(self, user_name_list):
-        """Sets the user_name_list of this ListFavoriteRequest.
+        r"""Sets the user_name_list of this ListFavoriteRequest.
 
         收藏人名称列表。
 
@@ -229,7 +229,7 @@ class ListFavoriteRequest:
 
     @property
     def resource_type_list(self):
-        """Gets the resource_type_list of this ListFavoriteRequest.
+        r"""Gets the resource_type_list of this ListFavoriteRequest.
 
         资源类型列表。
 
@@ -240,7 +240,7 @@ class ListFavoriteRequest:
 
     @resource_type_list.setter
     def resource_type_list(self, resource_type_list):
-        """Sets the resource_type_list of this ListFavoriteRequest.
+        r"""Sets the resource_type_list of this ListFavoriteRequest.
 
         资源类型列表。
 
@@ -251,7 +251,7 @@ class ListFavoriteRequest:
 
     @property
     def type_list(self):
-        """Gets the type_list of this ListFavoriteRequest.
+        r"""Gets the type_list of this ListFavoriteRequest.
 
         收藏类型列表，支持MICROMOLECULE|PROTEIN。
 
@@ -262,7 +262,7 @@ class ListFavoriteRequest:
 
     @type_list.setter
     def type_list(self, type_list):
-        """Sets the type_list of this ListFavoriteRequest.
+        r"""Sets the type_list of this ListFavoriteRequest.
 
         收藏类型列表，支持MICROMOLECULE|PROTEIN。
 
@@ -273,7 +273,7 @@ class ListFavoriteRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListFavoriteRequest.
+        r"""Gets the start_time of this ListFavoriteRequest.
 
         查询收藏信息的起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间。
 
@@ -284,7 +284,7 @@ class ListFavoriteRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListFavoriteRequest.
+        r"""Sets the start_time of this ListFavoriteRequest.
 
         查询收藏信息的起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间。
 
@@ -295,7 +295,7 @@ class ListFavoriteRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListFavoriteRequest.
+        r"""Gets the end_time of this ListFavoriteRequest.
 
         查询收藏信息的结束时间，UNIX时间戳，单位毫秒，不填时默认为当前时间。
 
@@ -306,7 +306,7 @@ class ListFavoriteRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListFavoriteRequest.
+        r"""Sets the end_time of this ListFavoriteRequest.
 
         查询收藏信息的结束时间，UNIX时间戳，单位毫秒，不填时默认为当前时间。
 
@@ -317,7 +317,7 @@ class ListFavoriteRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListFavoriteRequest.
+        r"""Gets the key_word of this ListFavoriteRequest.
 
         关键字，支持在display_info字段中内容的模糊搜索。
 
@@ -328,7 +328,7 @@ class ListFavoriteRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListFavoriteRequest.
+        r"""Sets the key_word of this ListFavoriteRequest.
 
         关键字，支持在display_info字段中内容的模糊搜索。
 
@@ -339,7 +339,7 @@ class ListFavoriteRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListFavoriteRequest.
+        r"""Gets the sort_dir of this ListFavoriteRequest.
 
         排序规则，目前默认时间降序。
 
@@ -350,7 +350,7 @@ class ListFavoriteRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListFavoriteRequest.
+        r"""Sets the sort_dir of this ListFavoriteRequest.
 
         排序规则，目前默认时间降序。
 
@@ -361,7 +361,7 @@ class ListFavoriteRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListFavoriteRequest.
+        r"""Gets the sort_key of this ListFavoriteRequest.
 
         排序规则，目前默认按收藏时间降序，支持根据create_time|user_name|resource_name|resource_type排序。
 
@@ -372,7 +372,7 @@ class ListFavoriteRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListFavoriteRequest.
+        r"""Sets the sort_key of this ListFavoriteRequest.
 
         排序规则，目前默认按收藏时间降序，支持根据create_time|user_name|resource_name|resource_type排序。
 

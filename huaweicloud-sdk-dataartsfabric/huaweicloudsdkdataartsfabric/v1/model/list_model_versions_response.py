@@ -30,7 +30,7 @@ class ListModelVersionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, versions=None, x_request_id=None):
-        """ListModelVersionsResponse
+        r"""ListModelVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListModelVersionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListModelVersionsResponse.
+        r"""Gets the total of this ListModelVersionsResponse.
 
         符合条件的Version总数
 
@@ -69,7 +69,7 @@ class ListModelVersionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListModelVersionsResponse.
+        r"""Sets the total of this ListModelVersionsResponse.
 
         符合条件的Version总数
 
@@ -80,7 +80,7 @@ class ListModelVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListModelVersionsResponse.
+        r"""Gets the versions of this ListModelVersionsResponse.
 
         列表信息
 
@@ -91,7 +91,7 @@ class ListModelVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListModelVersionsResponse.
+        r"""Sets the versions of this ListModelVersionsResponse.
 
         列表信息
 
@@ -102,7 +102,7 @@ class ListModelVersionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListModelVersionsResponse.
+        r"""Gets the x_request_id of this ListModelVersionsResponse.
 
         :return: The x_request_id of this ListModelVersionsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListModelVersionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListModelVersionsResponse.
+        r"""Sets the x_request_id of this ListModelVersionsResponse.
 
         :param x_request_id: The x_request_id of this ListModelVersionsResponse.
         :type x_request_id: str

@@ -31,7 +31,7 @@ class ListWorkloadQueueUsersRequest:
     }
 
     def __init__(self, cluster_id=None, queue_name=None, limit=None, offset=None):
-        """ListWorkloadQueueUsersRequest
+        r"""ListWorkloadQueueUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListWorkloadQueueUsersRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListWorkloadQueueUsersRequest.
+        r"""Gets the cluster_id of this ListWorkloadQueueUsersRequest.
 
         集群ID
 
@@ -73,7 +73,7 @@ class ListWorkloadQueueUsersRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListWorkloadQueueUsersRequest.
+        r"""Sets the cluster_id of this ListWorkloadQueueUsersRequest.
 
         集群ID
 
@@ -84,7 +84,7 @@ class ListWorkloadQueueUsersRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListWorkloadQueueUsersRequest.
+        r"""Gets the queue_name of this ListWorkloadQueueUsersRequest.
 
         队列名称
 
@@ -95,7 +95,7 @@ class ListWorkloadQueueUsersRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListWorkloadQueueUsersRequest.
+        r"""Sets the queue_name of this ListWorkloadQueueUsersRequest.
 
         队列名称
 
@@ -106,7 +106,7 @@ class ListWorkloadQueueUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkloadQueueUsersRequest.
+        r"""Gets the limit of this ListWorkloadQueueUsersRequest.
 
         查询条数
 
@@ -117,7 +117,7 @@ class ListWorkloadQueueUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkloadQueueUsersRequest.
+        r"""Sets the limit of this ListWorkloadQueueUsersRequest.
 
         查询条数
 
@@ -128,7 +128,7 @@ class ListWorkloadQueueUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkloadQueueUsersRequest.
+        r"""Gets the offset of this ListWorkloadQueueUsersRequest.
 
         偏移量
 
@@ -139,7 +139,7 @@ class ListWorkloadQueueUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkloadQueueUsersRequest.
+        r"""Sets the offset of this ListWorkloadQueueUsersRequest.
 
         偏移量
 

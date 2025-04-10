@@ -24,7 +24,7 @@ class DownloadKeystoreResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadKeystoreResponse
+        r"""DownloadKeystoreResponse
 
         The model defined in huaweicloud sdk
 

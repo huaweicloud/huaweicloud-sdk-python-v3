@@ -27,7 +27,7 @@ class ShowPluginInputsRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """ShowPluginInputsRequest
+        r"""ShowPluginInputsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPluginInputsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowPluginInputsRequest.
+        r"""Gets the domain_id of this ShowPluginInputsRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class ShowPluginInputsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowPluginInputsRequest.
+        r"""Sets the domain_id of this ShowPluginInputsRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ShowPluginInputsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPluginInputsRequest.
+        r"""Gets the body of this ShowPluginInputsRequest.
 
         :return: The body of this ShowPluginInputsRequest.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryDTO`]
@@ -80,7 +80,7 @@ class ShowPluginInputsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPluginInputsRequest.
+        r"""Sets the body of this ShowPluginInputsRequest.
 
         :param body: The body of this ShowPluginInputsRequest.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryDTO`]

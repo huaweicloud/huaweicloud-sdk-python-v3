@@ -25,7 +25,7 @@ class CacheConfigRequestBody:
     }
 
     def __init__(self, cache_config=None):
-        """CacheConfigRequestBody
+        r"""CacheConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CacheConfigRequestBody:
 
     @property
     def cache_config(self):
-        """Gets the cache_config of this CacheConfigRequestBody.
+        r"""Gets the cache_config of this CacheConfigRequestBody.
 
         :return: The cache_config of this CacheConfigRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`
@@ -51,7 +51,7 @@ class CacheConfigRequestBody:
 
     @cache_config.setter
     def cache_config(self, cache_config):
-        """Sets the cache_config of this CacheConfigRequestBody.
+        r"""Sets the cache_config of this CacheConfigRequestBody.
 
         :param cache_config: The cache_config of this CacheConfigRequestBody.
         :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`

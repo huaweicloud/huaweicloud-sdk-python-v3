@@ -25,7 +25,7 @@ class UpdatePortRequestBody:
     }
 
     def __init__(self, port=None):
-        """UpdatePortRequestBody
+        r"""UpdatePortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePortRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this UpdatePortRequestBody.
+        r"""Gets the port of this UpdatePortRequestBody.
 
         :return: The port of this UpdatePortRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdatePortOption`
@@ -51,7 +51,7 @@ class UpdatePortRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdatePortRequestBody.
+        r"""Sets the port of this UpdatePortRequestBody.
 
         :param port: The port of this UpdatePortRequestBody.
         :type port: :class:`huaweicloudsdkvpc.v2.UpdatePortOption`

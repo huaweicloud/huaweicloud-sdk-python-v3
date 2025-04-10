@@ -37,7 +37,7 @@ class ParamInfo:
     }
 
     def __init__(self, url=None, branch=None, language=None, exclude_dir=None, encode=None, compile_config=None, rule_template=None):
-        """ParamInfo
+        r"""ParamInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ParamInfo:
 
     @property
     def url(self):
-        """Gets the url of this ParamInfo.
+        r"""Gets the url of this ParamInfo.
 
         仓库地址
 
@@ -96,7 +96,7 @@ class ParamInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ParamInfo.
+        r"""Sets the url of this ParamInfo.
 
         仓库地址
 
@@ -107,7 +107,7 @@ class ParamInfo:
 
     @property
     def branch(self):
-        """Gets the branch of this ParamInfo.
+        r"""Gets the branch of this ParamInfo.
 
         仓库分支
 
@@ -118,7 +118,7 @@ class ParamInfo:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this ParamInfo.
+        r"""Sets the branch of this ParamInfo.
 
         仓库分支
 
@@ -129,7 +129,7 @@ class ParamInfo:
 
     @property
     def language(self):
-        """Gets the language of this ParamInfo.
+        r"""Gets the language of this ParamInfo.
 
         仓库语言
 
@@ -140,7 +140,7 @@ class ParamInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ParamInfo.
+        r"""Sets the language of this ParamInfo.
 
         仓库语言
 
@@ -151,7 +151,7 @@ class ParamInfo:
 
     @property
     def exclude_dir(self):
-        """Gets the exclude_dir of this ParamInfo.
+        r"""Gets the exclude_dir of this ParamInfo.
 
         排除的目录
 
@@ -162,7 +162,7 @@ class ParamInfo:
 
     @exclude_dir.setter
     def exclude_dir(self, exclude_dir):
-        """Sets the exclude_dir of this ParamInfo.
+        r"""Sets the exclude_dir of this ParamInfo.
 
         排除的目录
 
@@ -173,7 +173,7 @@ class ParamInfo:
 
     @property
     def encode(self):
-        """Gets the encode of this ParamInfo.
+        r"""Gets the encode of this ParamInfo.
 
         编码格式
 
@@ -184,7 +184,7 @@ class ParamInfo:
 
     @encode.setter
     def encode(self, encode):
-        """Sets the encode of this ParamInfo.
+        r"""Sets the encode of this ParamInfo.
 
         编码格式
 
@@ -195,7 +195,7 @@ class ParamInfo:
 
     @property
     def compile_config(self):
-        """Gets the compile_config of this ParamInfo.
+        r"""Gets the compile_config of this ParamInfo.
 
         编译配置信息
 
@@ -206,7 +206,7 @@ class ParamInfo:
 
     @compile_config.setter
     def compile_config(self, compile_config):
-        """Sets the compile_config of this ParamInfo.
+        r"""Sets the compile_config of this ParamInfo.
 
         编译配置信息
 
@@ -217,7 +217,7 @@ class ParamInfo:
 
     @property
     def rule_template(self):
-        """Gets the rule_template of this ParamInfo.
+        r"""Gets the rule_template of this ParamInfo.
 
         g规则集名称
 
@@ -228,7 +228,7 @@ class ParamInfo:
 
     @rule_template.setter
     def rule_template(self, rule_template):
-        """Sets the rule_template of this ParamInfo.
+        r"""Sets the rule_template of this ParamInfo.
 
         g规则集名称
 

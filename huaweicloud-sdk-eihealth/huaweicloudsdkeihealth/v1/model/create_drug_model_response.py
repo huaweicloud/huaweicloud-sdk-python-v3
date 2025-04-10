@@ -28,7 +28,7 @@ class CreateDrugModelResponse(SdkResponse):
     }
 
     def __init__(self, id=None, limit_concurrency=None):
-        """CreateDrugModelResponse
+        r"""CreateDrugModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDrugModelResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDrugModelResponse.
+        r"""Gets the id of this CreateDrugModelResponse.
 
         模型id
 
@@ -62,7 +62,7 @@ class CreateDrugModelResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDrugModelResponse.
+        r"""Sets the id of this CreateDrugModelResponse.
 
         模型id
 
@@ -73,7 +73,7 @@ class CreateDrugModelResponse(SdkResponse):
 
     @property
     def limit_concurrency(self):
-        """Gets the limit_concurrency of this CreateDrugModelResponse.
+        r"""Gets the limit_concurrency of this CreateDrugModelResponse.
 
         限制的并发量
 
@@ -84,7 +84,7 @@ class CreateDrugModelResponse(SdkResponse):
 
     @limit_concurrency.setter
     def limit_concurrency(self, limit_concurrency):
-        """Sets the limit_concurrency of this CreateDrugModelResponse.
+        r"""Sets the limit_concurrency of this CreateDrugModelResponse.
 
         限制的并发量
 

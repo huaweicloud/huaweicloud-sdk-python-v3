@@ -25,7 +25,7 @@ class DeleteClouddcnSubnetRequest:
     }
 
     def __init__(self, clouddcn_subnet_id=None):
-        """DeleteClouddcnSubnetRequest
+        r"""DeleteClouddcnSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteClouddcnSubnetRequest:
 
     @property
     def clouddcn_subnet_id(self):
-        """Gets the clouddcn_subnet_id of this DeleteClouddcnSubnetRequest.
+        r"""Gets the clouddcn_subnet_id of this DeleteClouddcnSubnetRequest.
 
         clouddcn子网ID
 
@@ -53,7 +53,7 @@ class DeleteClouddcnSubnetRequest:
 
     @clouddcn_subnet_id.setter
     def clouddcn_subnet_id(self, clouddcn_subnet_id):
-        """Sets the clouddcn_subnet_id of this DeleteClouddcnSubnetRequest.
+        r"""Sets the clouddcn_subnet_id of this DeleteClouddcnSubnetRequest.
 
         clouddcn子网ID
 

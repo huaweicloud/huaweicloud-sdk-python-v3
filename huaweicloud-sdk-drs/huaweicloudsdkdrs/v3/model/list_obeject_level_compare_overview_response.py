@@ -40,7 +40,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
     }
 
     def __init__(self, create_time=None, start_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_id=None, error_msg=None, compare_result=None):
-        """ListObejectLevelCompareOverviewResponse
+        r"""ListObejectLevelCompareOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the create_time of this ListObejectLevelCompareOverviewResponse.
 
         对比任务创建时间，UTC时间，例如：2024-04-09T07:00:57Z。
 
@@ -104,7 +104,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the create_time of this ListObejectLevelCompareOverviewResponse.
 
         对比任务创建时间，UTC时间，例如：2024-04-09T07:00:57Z。
 
@@ -115,7 +115,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the start_time of this ListObejectLevelCompareOverviewResponse.
 
         对比任务开始时间，UTC时间，例如：2024-04-09T07:00:57Z。
 
@@ -126,7 +126,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the start_time of this ListObejectLevelCompareOverviewResponse.
 
         对比任务开始时间，UTC时间，例如：2024-04-09T07:00:57Z。
 
@@ -137,7 +137,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the status of this ListObejectLevelCompareOverviewResponse.
 
         对比任务状态。 取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
 
@@ -148,7 +148,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the status of this ListObejectLevelCompareOverviewResponse.
 
         对比任务状态。 取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
 
@@ -159,7 +159,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def export_status(self):
-        """Gets the export_status of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the export_status of this ListObejectLevelCompareOverviewResponse.
 
         生成对比结果报告文件的状态：  - INIT：初始状态。  - EXPORTING：对比结果导出中。  - EXPORT_COMPLETE：对比结果导出完成。  - EXPORT_COMMON_FAILED：对比结果导出失败。
 
@@ -170,7 +170,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @export_status.setter
     def export_status(self, export_status):
-        """Sets the export_status of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the export_status of this ListObejectLevelCompareOverviewResponse.
 
         生成对比结果报告文件的状态：  - INIT：初始状态。  - EXPORTING：对比结果导出中。  - EXPORT_COMPLETE：对比结果导出完成。  - EXPORT_COMMON_FAILED：对比结果导出失败。
 
@@ -181,7 +181,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def report_remain_seconds(self):
-        """Gets the report_remain_seconds of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the report_remain_seconds of this ListObejectLevelCompareOverviewResponse.
 
         对比结果报告文件有效期剩余时间，单位秒，报告未生成时返回-1。
 
@@ -192,7 +192,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @report_remain_seconds.setter
     def report_remain_seconds(self, report_remain_seconds):
-        """Sets the report_remain_seconds of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the report_remain_seconds of this ListObejectLevelCompareOverviewResponse.
 
         对比结果报告文件有效期剩余时间，单位秒，报告未生成时返回-1。
 
@@ -203,7 +203,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the compare_job_id of this ListObejectLevelCompareOverviewResponse.
 
         对比任务ID。
 
@@ -214,7 +214,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the compare_job_id of this ListObejectLevelCompareOverviewResponse.
 
         对比任务ID。
 
@@ -225,7 +225,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the error_msg of this ListObejectLevelCompareOverviewResponse.
 
         失败原因。
 
@@ -236,7 +236,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the error_msg of this ListObejectLevelCompareOverviewResponse.
 
         失败原因。
 
@@ -247,7 +247,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @property
     def compare_result(self):
-        """Gets the compare_result of this ListObejectLevelCompareOverviewResponse.
+        r"""Gets the compare_result of this ListObejectLevelCompareOverviewResponse.
 
         对比结果。
 
@@ -258,7 +258,7 @@ class ListObejectLevelCompareOverviewResponse(SdkResponse):
 
     @compare_result.setter
     def compare_result(self, compare_result):
-        """Sets the compare_result of this ListObejectLevelCompareOverviewResponse.
+        r"""Sets the compare_result of this ListObejectLevelCompareOverviewResponse.
 
         对比结果。
 

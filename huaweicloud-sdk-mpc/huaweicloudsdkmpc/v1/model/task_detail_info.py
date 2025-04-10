@@ -49,7 +49,7 @@ class TaskDetailInfo:
     }
 
     def __init__(self, task_id=None, status=None, progress=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, error_code=None, description=None, media_detail=None, xcode_error=None):
-        """TaskDetailInfo
+        r"""TaskDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TaskDetailInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskDetailInfo.
+        r"""Gets the task_id of this TaskDetailInfo.
 
         任务ID。
 
@@ -138,7 +138,7 @@ class TaskDetailInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskDetailInfo.
+        r"""Sets the task_id of this TaskDetailInfo.
 
         任务ID。
 
@@ -149,7 +149,7 @@ class TaskDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this TaskDetailInfo.
+        r"""Gets the status of this TaskDetailInfo.
 
         任务执行状态，取值如下。 
 
@@ -160,7 +160,7 @@ class TaskDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskDetailInfo.
+        r"""Sets the status of this TaskDetailInfo.
 
         任务执行状态，取值如下。 
 
@@ -171,7 +171,7 @@ class TaskDetailInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this TaskDetailInfo.
+        r"""Gets the progress of this TaskDetailInfo.
 
         任务执行进度百分比, 取值范围：[0, 100]。 
 
@@ -182,7 +182,7 @@ class TaskDetailInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this TaskDetailInfo.
+        r"""Sets the progress of this TaskDetailInfo.
 
         任务执行进度百分比, 取值范围：[0, 100]。 
 
@@ -193,7 +193,7 @@ class TaskDetailInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskDetailInfo.
+        r"""Gets the create_time of this TaskDetailInfo.
 
         转码任务启动时间 
 
@@ -204,7 +204,7 @@ class TaskDetailInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskDetailInfo.
+        r"""Sets the create_time of this TaskDetailInfo.
 
         转码任务启动时间 
 
@@ -215,7 +215,7 @@ class TaskDetailInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskDetailInfo.
+        r"""Gets the start_time of this TaskDetailInfo.
 
         下发xcode任务成功时间 
 
@@ -226,7 +226,7 @@ class TaskDetailInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskDetailInfo.
+        r"""Sets the start_time of this TaskDetailInfo.
 
         下发xcode任务成功时间 
 
@@ -237,7 +237,7 @@ class TaskDetailInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TaskDetailInfo.
+        r"""Gets the end_time of this TaskDetailInfo.
 
         转码任务结束时间 
 
@@ -248,7 +248,7 @@ class TaskDetailInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TaskDetailInfo.
+        r"""Sets the end_time of this TaskDetailInfo.
 
         转码任务结束时间 
 
@@ -259,7 +259,7 @@ class TaskDetailInfo:
 
     @property
     def input(self):
-        """Gets the input of this TaskDetailInfo.
+        r"""Gets the input of this TaskDetailInfo.
 
         :return: The input of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -268,7 +268,7 @@ class TaskDetailInfo:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this TaskDetailInfo.
+        r"""Sets the input of this TaskDetailInfo.
 
         :param input: The input of this TaskDetailInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -277,7 +277,7 @@ class TaskDetailInfo:
 
     @property
     def output(self):
-        """Gets the output of this TaskDetailInfo.
+        r"""Gets the output of this TaskDetailInfo.
 
         :return: The output of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -286,7 +286,7 @@ class TaskDetailInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this TaskDetailInfo.
+        r"""Sets the output of this TaskDetailInfo.
 
         :param output: The output of this TaskDetailInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -295,7 +295,7 @@ class TaskDetailInfo:
 
     @property
     def user_data(self):
-        """Gets the user_data of this TaskDetailInfo.
+        r"""Gets the user_data of this TaskDetailInfo.
 
         用户数据。 
 
@@ -306,7 +306,7 @@ class TaskDetailInfo:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this TaskDetailInfo.
+        r"""Sets the user_data of this TaskDetailInfo.
 
         用户数据。 
 
@@ -317,7 +317,7 @@ class TaskDetailInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this TaskDetailInfo.
+        r"""Gets the error_code of this TaskDetailInfo.
 
         转码任务错误码。 
 
@@ -328,7 +328,7 @@ class TaskDetailInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this TaskDetailInfo.
+        r"""Sets the error_code of this TaskDetailInfo.
 
         转码任务错误码。 
 
@@ -339,7 +339,7 @@ class TaskDetailInfo:
 
     @property
     def description(self):
-        """Gets the description of this TaskDetailInfo.
+        r"""Gets the description of this TaskDetailInfo.
 
         转码任务描述，当转码出现异常时，此字段为异常的原因。 
 
@@ -350,7 +350,7 @@ class TaskDetailInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskDetailInfo.
+        r"""Sets the description of this TaskDetailInfo.
 
         转码任务描述，当转码出现异常时，此字段为异常的原因。 
 
@@ -361,7 +361,7 @@ class TaskDetailInfo:
 
     @property
     def media_detail(self):
-        """Gets the media_detail of this TaskDetailInfo.
+        r"""Gets the media_detail of this TaskDetailInfo.
 
         :return: The media_detail of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.MediaDetail`
@@ -370,7 +370,7 @@ class TaskDetailInfo:
 
     @media_detail.setter
     def media_detail(self, media_detail):
-        """Sets the media_detail of this TaskDetailInfo.
+        r"""Sets the media_detail of this TaskDetailInfo.
 
         :param media_detail: The media_detail of this TaskDetailInfo.
         :type media_detail: :class:`huaweicloudsdkmpc.v1.MediaDetail`
@@ -379,7 +379,7 @@ class TaskDetailInfo:
 
     @property
     def xcode_error(self):
-        """Gets the xcode_error of this TaskDetailInfo.
+        r"""Gets the xcode_error of this TaskDetailInfo.
 
         :return: The xcode_error of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
@@ -388,7 +388,7 @@ class TaskDetailInfo:
 
     @xcode_error.setter
     def xcode_error(self, xcode_error):
-        """Sets the xcode_error of this TaskDetailInfo.
+        r"""Sets the xcode_error of this TaskDetailInfo.
 
         :param xcode_error: The xcode_error of this TaskDetailInfo.
         :type xcode_error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`

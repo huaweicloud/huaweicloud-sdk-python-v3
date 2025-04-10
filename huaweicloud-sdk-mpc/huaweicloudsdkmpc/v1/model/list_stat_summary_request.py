@@ -29,7 +29,7 @@ class ListStatSummaryRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, stat_type=None):
-        """ListStatSummaryRequest
+        r"""ListStatSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListStatSummaryRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListStatSummaryRequest.
+        r"""Gets the start_time of this ListStatSummaryRequest.
 
         开始时间。格式为yyyymmdd。必须是与时区无关的UTC时间。 
 
@@ -65,7 +65,7 @@ class ListStatSummaryRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListStatSummaryRequest.
+        r"""Sets the start_time of this ListStatSummaryRequest.
 
         开始时间。格式为yyyymmdd。必须是与时区无关的UTC时间。 
 
@@ -76,7 +76,7 @@ class ListStatSummaryRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListStatSummaryRequest.
+        r"""Gets the end_time of this ListStatSummaryRequest.
 
         结束时间。格式为yyyymmdd。必须是与时区无关的UTC时间。 
 
@@ -87,7 +87,7 @@ class ListStatSummaryRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListStatSummaryRequest.
+        r"""Sets the end_time of this ListStatSummaryRequest.
 
         结束时间。格式为yyyymmdd。必须是与时区无关的UTC时间。 
 
@@ -98,7 +98,7 @@ class ListStatSummaryRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ListStatSummaryRequest.
+        r"""Gets the stat_type of this ListStatSummaryRequest.
 
         支持的参数类型 
 
@@ -109,7 +109,7 @@ class ListStatSummaryRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ListStatSummaryRequest.
+        r"""Sets the stat_type of this ListStatSummaryRequest.
 
         支持的参数类型 
 

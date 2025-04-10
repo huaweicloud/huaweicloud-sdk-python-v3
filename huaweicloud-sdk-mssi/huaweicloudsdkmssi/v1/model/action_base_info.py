@@ -55,7 +55,7 @@ class ActionBaseInfo:
     }
 
     def __init__(self, action_type=None, category=None, connector_action_html=None, connector_created_type=None, connector_id=None, connector_version=None, created_time=None, definition=None, description=None, id=None, name=None, operation_id=None, swagger=None, test_result=None, updated_time=None, visibility=None):
-        """ActionBaseInfo
+        r"""ActionBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ActionBaseInfo:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ActionBaseInfo.
+        r"""Gets the action_type of this ActionBaseInfo.
 
         执行动作的类型
 
@@ -159,7 +159,7 @@ class ActionBaseInfo:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ActionBaseInfo.
+        r"""Sets the action_type of this ActionBaseInfo.
 
         执行动作的类型
 
@@ -170,7 +170,7 @@ class ActionBaseInfo:
 
     @property
     def category(self):
-        """Gets the category of this ActionBaseInfo.
+        r"""Gets the category of this ActionBaseInfo.
 
         分类
 
@@ -181,7 +181,7 @@ class ActionBaseInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ActionBaseInfo.
+        r"""Sets the category of this ActionBaseInfo.
 
         分类
 
@@ -192,7 +192,7 @@ class ActionBaseInfo:
 
     @property
     def connector_action_html(self):
-        """Gets the connector_action_html of this ActionBaseInfo.
+        r"""Gets the connector_action_html of this ActionBaseInfo.
 
         :return: The connector_action_html of this ActionBaseInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class ActionBaseInfo:
 
     @connector_action_html.setter
     def connector_action_html(self, connector_action_html):
-        """Sets the connector_action_html of this ActionBaseInfo.
+        r"""Sets the connector_action_html of this ActionBaseInfo.
 
         :param connector_action_html: The connector_action_html of this ActionBaseInfo.
         :type connector_action_html: str
@@ -210,7 +210,7 @@ class ActionBaseInfo:
 
     @property
     def connector_created_type(self):
-        """Gets the connector_created_type of this ActionBaseInfo.
+        r"""Gets the connector_created_type of this ActionBaseInfo.
 
         :return: The connector_created_type of this ActionBaseInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class ActionBaseInfo:
 
     @connector_created_type.setter
     def connector_created_type(self, connector_created_type):
-        """Sets the connector_created_type of this ActionBaseInfo.
+        r"""Sets the connector_created_type of this ActionBaseInfo.
 
         :param connector_created_type: The connector_created_type of this ActionBaseInfo.
         :type connector_created_type: str
@@ -228,7 +228,7 @@ class ActionBaseInfo:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ActionBaseInfo.
+        r"""Gets the connector_id of this ActionBaseInfo.
 
         自定义连接器ID
 
@@ -239,7 +239,7 @@ class ActionBaseInfo:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ActionBaseInfo.
+        r"""Sets the connector_id of this ActionBaseInfo.
 
         自定义连接器ID
 
@@ -250,7 +250,7 @@ class ActionBaseInfo:
 
     @property
     def connector_version(self):
-        """Gets the connector_version of this ActionBaseInfo.
+        r"""Gets the connector_version of this ActionBaseInfo.
 
         连接器版本
 
@@ -261,7 +261,7 @@ class ActionBaseInfo:
 
     @connector_version.setter
     def connector_version(self, connector_version):
-        """Sets the connector_version of this ActionBaseInfo.
+        r"""Sets the connector_version of this ActionBaseInfo.
 
         连接器版本
 
@@ -272,7 +272,7 @@ class ActionBaseInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ActionBaseInfo.
+        r"""Gets the created_time of this ActionBaseInfo.
 
         创建时间
 
@@ -283,7 +283,7 @@ class ActionBaseInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ActionBaseInfo.
+        r"""Sets the created_time of this ActionBaseInfo.
 
         创建时间
 
@@ -294,7 +294,7 @@ class ActionBaseInfo:
 
     @property
     def definition(self):
-        """Gets the definition of this ActionBaseInfo.
+        r"""Gets the definition of this ActionBaseInfo.
 
         操作or触发器的详细定义
 
@@ -305,7 +305,7 @@ class ActionBaseInfo:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this ActionBaseInfo.
+        r"""Sets the definition of this ActionBaseInfo.
 
         操作or触发器的详细定义
 
@@ -316,7 +316,7 @@ class ActionBaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this ActionBaseInfo.
+        r"""Gets the description of this ActionBaseInfo.
 
         描述
 
@@ -327,7 +327,7 @@ class ActionBaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ActionBaseInfo.
+        r"""Sets the description of this ActionBaseInfo.
 
         描述
 
@@ -338,7 +338,7 @@ class ActionBaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this ActionBaseInfo.
+        r"""Gets the id of this ActionBaseInfo.
 
         执行动作ID
 
@@ -349,7 +349,7 @@ class ActionBaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ActionBaseInfo.
+        r"""Sets the id of this ActionBaseInfo.
 
         执行动作ID
 
@@ -360,7 +360,7 @@ class ActionBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this ActionBaseInfo.
+        r"""Gets the name of this ActionBaseInfo.
 
         执行动作名称
 
@@ -371,7 +371,7 @@ class ActionBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ActionBaseInfo.
+        r"""Sets the name of this ActionBaseInfo.
 
         执行动作名称
 
@@ -382,7 +382,7 @@ class ActionBaseInfo:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this ActionBaseInfo.
+        r"""Gets the operation_id of this ActionBaseInfo.
 
         执行动作ID
 
@@ -393,7 +393,7 @@ class ActionBaseInfo:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this ActionBaseInfo.
+        r"""Sets the operation_id of this ActionBaseInfo.
 
         执行动作ID
 
@@ -404,7 +404,7 @@ class ActionBaseInfo:
 
     @property
     def swagger(self):
-        """Gets the swagger of this ActionBaseInfo.
+        r"""Gets the swagger of this ActionBaseInfo.
 
         swagger文档
 
@@ -415,7 +415,7 @@ class ActionBaseInfo:
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this ActionBaseInfo.
+        r"""Sets the swagger of this ActionBaseInfo.
 
         swagger文档
 
@@ -426,7 +426,7 @@ class ActionBaseInfo:
 
     @property
     def test_result(self):
-        """Gets the test_result of this ActionBaseInfo.
+        r"""Gets the test_result of this ActionBaseInfo.
 
         最近一次测试结果
 
@@ -437,7 +437,7 @@ class ActionBaseInfo:
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this ActionBaseInfo.
+        r"""Sets the test_result of this ActionBaseInfo.
 
         最近一次测试结果
 
@@ -448,7 +448,7 @@ class ActionBaseInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ActionBaseInfo.
+        r"""Gets the updated_time of this ActionBaseInfo.
 
         修改时间
 
@@ -459,7 +459,7 @@ class ActionBaseInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ActionBaseInfo.
+        r"""Sets the updated_time of this ActionBaseInfo.
 
         修改时间
 
@@ -470,7 +470,7 @@ class ActionBaseInfo:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ActionBaseInfo.
+        r"""Gets the visibility of this ActionBaseInfo.
 
         标记动作在流编排是否可见
 
@@ -481,7 +481,7 @@ class ActionBaseInfo:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ActionBaseInfo.
+        r"""Sets the visibility of this ActionBaseInfo.
 
         标记动作在流编排是否可见
 

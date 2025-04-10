@@ -34,7 +34,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
     }
 
     def __init__(self, page_no=None, page_size=None, total_page=None, total_size=None, page_list=None):
-        """ShowIfTaskNameRepeatResponse
+        r"""ShowIfTaskNameRepeatResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @property
     def page_no(self):
-        """Gets the page_no of this ShowIfTaskNameRepeatResponse.
+        r"""Gets the page_no of this ShowIfTaskNameRepeatResponse.
 
         当前页
 
@@ -83,7 +83,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ShowIfTaskNameRepeatResponse.
+        r"""Sets the page_no of this ShowIfTaskNameRepeatResponse.
 
         当前页
 
@@ -94,7 +94,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowIfTaskNameRepeatResponse.
+        r"""Gets the page_size of this ShowIfTaskNameRepeatResponse.
 
         每页大小
 
@@ -105,7 +105,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowIfTaskNameRepeatResponse.
+        r"""Sets the page_size of this ShowIfTaskNameRepeatResponse.
 
         每页大小
 
@@ -116,7 +116,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ShowIfTaskNameRepeatResponse.
+        r"""Gets the total_page of this ShowIfTaskNameRepeatResponse.
 
         总页数
 
@@ -127,7 +127,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ShowIfTaskNameRepeatResponse.
+        r"""Sets the total_page of this ShowIfTaskNameRepeatResponse.
 
         总页数
 
@@ -138,7 +138,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ShowIfTaskNameRepeatResponse.
+        r"""Gets the total_size of this ShowIfTaskNameRepeatResponse.
 
         总条数
 
@@ -149,7 +149,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ShowIfTaskNameRepeatResponse.
+        r"""Sets the total_size of this ShowIfTaskNameRepeatResponse.
 
         总条数
 
@@ -160,7 +160,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @property
     def page_list(self):
-        """Gets the page_list of this ShowIfTaskNameRepeatResponse.
+        r"""Gets the page_list of this ShowIfTaskNameRepeatResponse.
 
         查询到的告警模板
 
@@ -171,7 +171,7 @@ class ShowIfTaskNameRepeatResponse(SdkResponse):
 
     @page_list.setter
     def page_list(self, page_list):
-        """Sets the page_list of this ShowIfTaskNameRepeatResponse.
+        r"""Sets the page_list of this ShowIfTaskNameRepeatResponse.
 
         查询到的告警模板
 

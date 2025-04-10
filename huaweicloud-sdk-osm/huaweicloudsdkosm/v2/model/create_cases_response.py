@@ -26,7 +26,7 @@ class CreateCasesResponse(SdkResponse):
     }
 
     def __init__(self, incident_id=None):
-        """CreateCasesResponse
+        r"""CreateCasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCasesResponse(SdkResponse):
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this CreateCasesResponse.
+        r"""Gets the incident_id of this CreateCasesResponse.
 
         工单id
 
@@ -55,7 +55,7 @@ class CreateCasesResponse(SdkResponse):
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this CreateCasesResponse.
+        r"""Sets the incident_id of this CreateCasesResponse.
 
         工单id
 

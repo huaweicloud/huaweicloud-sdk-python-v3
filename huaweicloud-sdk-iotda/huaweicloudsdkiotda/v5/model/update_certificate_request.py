@@ -29,7 +29,7 @@ class UpdateCertificateRequest:
     }
 
     def __init__(self, instance_id=None, certificate_id=None, body=None):
-        """UpdateCertificateRequest
+        r"""UpdateCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateCertificateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateCertificateRequest.
+        r"""Gets the instance_id of this UpdateCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -67,7 +67,7 @@ class UpdateCertificateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateCertificateRequest.
+        r"""Sets the instance_id of this UpdateCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -78,7 +78,7 @@ class UpdateCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this UpdateCertificateRequest.
+        r"""Gets the certificate_id of this UpdateCertificateRequest.
 
         CA证书ID，在上传CA证书时由平台分配的唯一标识。
 
@@ -89,7 +89,7 @@ class UpdateCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this UpdateCertificateRequest.
+        r"""Sets the certificate_id of this UpdateCertificateRequest.
 
         CA证书ID，在上传CA证书时由平台分配的唯一标识。
 
@@ -100,7 +100,7 @@ class UpdateCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCertificateRequest.
+        r"""Gets the body of this UpdateCertificateRequest.
 
         :return: The body of this UpdateCertificateRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateCertificateDTO`
@@ -109,7 +109,7 @@ class UpdateCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCertificateRequest.
+        r"""Sets the body of this UpdateCertificateRequest.
 
         :param body: The body of this UpdateCertificateRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.UpdateCertificateDTO`

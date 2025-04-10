@@ -27,7 +27,7 @@ class Tag:
     }
 
     def __init__(self, tag_key=None, tag_value=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Tag:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this Tag.
+        r"""Gets the tag_key of this Tag.
 
         标签键，可以包含任意语种字母、数字、空格以及\"_\"、\".\"、\":\"、\"=\"、\"+\"、\"-\"、\"@\"符号的任意组合，但是首尾不能包含空格以及不能使用\"\\_sys\\_\"为开头，长度范围[1,64]。
 
@@ -59,7 +59,7 @@ class Tag:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this Tag.
+        r"""Sets the tag_key of this Tag.
 
         标签键，可以包含任意语种字母、数字、空格以及\"_\"、\".\"、\":\"、\"=\"、\"+\"、\"-\"、\"@\"符号的任意组合，但是首尾不能包含空格以及不能使用\"\\_sys\\_\"为开头，长度范围[1,64]。
 
@@ -70,7 +70,7 @@ class Tag:
 
     @property
     def tag_value(self):
-        """Gets the tag_value of this Tag.
+        r"""Gets the tag_value of this Tag.
 
         标签值，可以包含任意语种字母、数字、空格以及\"_\"、\".\"、\":\"、\"/\"、\"=\"、\"+\"、\"-\"、\"@\"符号的任意组合，可以是空字符串，长度范围[0,128]。
 
@@ -81,7 +81,7 @@ class Tag:
 
     @tag_value.setter
     def tag_value(self, tag_value):
-        """Sets the tag_value of this Tag.
+        r"""Sets the tag_value of this Tag.
 
         标签值，可以包含任意语种字母、数字、空格以及\"_\"、\".\"、\":\"、\"/\"、\"=\"、\"+\"、\"-\"、\"@\"符号的任意组合，可以是空字符串，长度范围[0,128]。
 

@@ -35,7 +35,7 @@ class CreateRocketMqMigrationTaskReq:
     }
 
     def __init__(self, topic_config_table=None, subscription_group_table=None, vhosts=None, queues=None, exchanges=None, bindings=None):
-        """CreateRocketMqMigrationTaskReq
+        r"""CreateRocketMqMigrationTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @property
     def topic_config_table(self):
-        """Gets the topic_config_table of this CreateRocketMqMigrationTaskReq.
+        r"""Gets the topic_config_table of this CreateRocketMqMigrationTaskReq.
 
         RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
 
@@ -89,7 +89,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @topic_config_table.setter
     def topic_config_table(self, topic_config_table):
-        """Sets the topic_config_table of this CreateRocketMqMigrationTaskReq.
+        r"""Sets the topic_config_table of this CreateRocketMqMigrationTaskReq.
 
         RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
 
@@ -100,7 +100,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @property
     def subscription_group_table(self):
-        """Gets the subscription_group_table of this CreateRocketMqMigrationTaskReq.
+        r"""Gets the subscription_group_table of this CreateRocketMqMigrationTaskReq.
 
         RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
 
@@ -111,7 +111,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @subscription_group_table.setter
     def subscription_group_table(self, subscription_group_table):
-        """Sets the subscription_group_table of this CreateRocketMqMigrationTaskReq.
+        r"""Sets the subscription_group_table of this CreateRocketMqMigrationTaskReq.
 
         RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
 
@@ -122,7 +122,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @property
     def vhosts(self):
-        """Gets the vhosts of this CreateRocketMqMigrationTaskReq.
+        r"""Gets the vhosts of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -133,7 +133,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @vhosts.setter
     def vhosts(self, vhosts):
-        """Sets the vhosts of this CreateRocketMqMigrationTaskReq.
+        r"""Sets the vhosts of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -144,7 +144,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @property
     def queues(self):
-        """Gets the queues of this CreateRocketMqMigrationTaskReq.
+        r"""Gets the queues of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -155,7 +155,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this CreateRocketMqMigrationTaskReq.
+        r"""Sets the queues of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -166,7 +166,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @property
     def exchanges(self):
-        """Gets the exchanges of this CreateRocketMqMigrationTaskReq.
+        r"""Gets the exchanges of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -177,7 +177,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @exchanges.setter
     def exchanges(self, exchanges):
-        """Sets the exchanges of this CreateRocketMqMigrationTaskReq.
+        r"""Sets the exchanges of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -188,7 +188,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @property
     def bindings(self):
-        """Gets the bindings of this CreateRocketMqMigrationTaskReq.
+        r"""Gets the bindings of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 
@@ -199,7 +199,7 @@ class CreateRocketMqMigrationTaskReq:
 
     @bindings.setter
     def bindings(self, bindings):
-        """Sets the bindings of this CreateRocketMqMigrationTaskReq.
+        r"""Sets the bindings of this CreateRocketMqMigrationTaskReq.
 
         RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
 

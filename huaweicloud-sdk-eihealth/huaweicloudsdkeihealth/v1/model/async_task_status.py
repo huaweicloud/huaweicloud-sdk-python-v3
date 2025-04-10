@@ -29,7 +29,7 @@ class AsyncTaskStatus:
     }
 
     def __init__(self):
-        """AsyncTaskStatus
+        r"""AsyncTaskStatus
 
         The model defined in huaweicloud sdk
 

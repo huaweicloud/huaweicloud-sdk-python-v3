@@ -25,7 +25,7 @@ class CreateSnapshotRequestBody:
     }
 
     def __init__(self, snapshot=None):
-        """CreateSnapshotRequestBody
+        r"""CreateSnapshotRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSnapshotRequestBody:
 
     @property
     def snapshot(self):
-        """Gets the snapshot of this CreateSnapshotRequestBody.
+        r"""Gets the snapshot of this CreateSnapshotRequestBody.
 
         :return: The snapshot of this CreateSnapshotRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateSnapshotOption`
@@ -51,7 +51,7 @@ class CreateSnapshotRequestBody:
 
     @snapshot.setter
     def snapshot(self, snapshot):
-        """Sets the snapshot of this CreateSnapshotRequestBody.
+        r"""Sets the snapshot of this CreateSnapshotRequestBody.
 
         :param snapshot: The snapshot of this CreateSnapshotRequestBody.
         :type snapshot: :class:`huaweicloudsdkevs.v2.CreateSnapshotOption`

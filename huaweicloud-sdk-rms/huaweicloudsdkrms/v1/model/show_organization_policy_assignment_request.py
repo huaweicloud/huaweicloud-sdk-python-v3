@@ -27,7 +27,7 @@ class ShowOrganizationPolicyAssignmentRequest:
     }
 
     def __init__(self, organization_id=None, organization_policy_assignment_id=None):
-        """ShowOrganizationPolicyAssignmentRequest
+        r"""ShowOrganizationPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowOrganizationPolicyAssignmentRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ShowOrganizationPolicyAssignmentRequest.
+        r"""Gets the organization_id of this ShowOrganizationPolicyAssignmentRequest.
 
         组织ID。
 
@@ -59,7 +59,7 @@ class ShowOrganizationPolicyAssignmentRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ShowOrganizationPolicyAssignmentRequest.
+        r"""Sets the organization_id of this ShowOrganizationPolicyAssignmentRequest.
 
         组织ID。
 
@@ -70,7 +70,7 @@ class ShowOrganizationPolicyAssignmentRequest:
 
     @property
     def organization_policy_assignment_id(self):
-        """Gets the organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentRequest.
+        r"""Gets the organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentRequest.
 
         组织合规规则ID。
 
@@ -81,7 +81,7 @@ class ShowOrganizationPolicyAssignmentRequest:
 
     @organization_policy_assignment_id.setter
     def organization_policy_assignment_id(self, organization_policy_assignment_id):
-        """Sets the organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentRequest.
+        r"""Sets the organization_policy_assignment_id of this ShowOrganizationPolicyAssignmentRequest.
 
         组织合规规则ID。
 

@@ -31,7 +31,7 @@ class ErrorInfo:
     }
 
     def __init__(self, error_content=None, error_index=None, error_point=None, high_light=None):
-        """ErrorInfo
+        r"""ErrorInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ErrorInfo:
 
     @property
     def error_content(self):
-        """Gets the error_content of this ErrorInfo.
+        r"""Gets the error_content of this ErrorInfo.
 
         错误内容的描述
 
@@ -75,7 +75,7 @@ class ErrorInfo:
 
     @error_content.setter
     def error_content(self, error_content):
-        """Sets the error_content of this ErrorInfo.
+        r"""Sets the error_content of this ErrorInfo.
 
         错误内容的描述
 
@@ -86,7 +86,7 @@ class ErrorInfo:
 
     @property
     def error_index(self):
-        """Gets the error_index of this ErrorInfo.
+        r"""Gets the error_index of this ErrorInfo.
 
         错误索引的描述
 
@@ -97,7 +97,7 @@ class ErrorInfo:
 
     @error_index.setter
     def error_index(self, error_index):
-        """Sets the error_index of this ErrorInfo.
+        r"""Sets the error_index of this ErrorInfo.
 
         错误索引的描述
 
@@ -108,7 +108,7 @@ class ErrorInfo:
 
     @property
     def error_point(self):
-        """Gets the error_point of this ErrorInfo.
+        r"""Gets the error_point of this ErrorInfo.
 
         错误点的描述
 
@@ -119,7 +119,7 @@ class ErrorInfo:
 
     @error_point.setter
     def error_point(self, error_point):
-        """Sets the error_point of this ErrorInfo.
+        r"""Sets the error_point of this ErrorInfo.
 
         错误点的描述
 
@@ -130,7 +130,7 @@ class ErrorInfo:
 
     @property
     def high_light(self):
-        """Gets the high_light of this ErrorInfo.
+        r"""Gets the high_light of this ErrorInfo.
 
         是否高亮标识
 
@@ -141,7 +141,7 @@ class ErrorInfo:
 
     @high_light.setter
     def high_light(self, high_light):
-        """Sets the high_light of this ErrorInfo.
+        r"""Sets the high_light of this ErrorInfo.
 
         是否高亮标识
 

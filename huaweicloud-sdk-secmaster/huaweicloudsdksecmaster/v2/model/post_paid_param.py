@@ -33,7 +33,7 @@ class PostPaidParam:
     }
 
     def __init__(self, region_id=None, domain_id=None, tag_list=None, product_list=None, operate_type=None):
-        """PostPaidParam
+        r"""PostPaidParam
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PostPaidParam:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PostPaidParam.
+        r"""Gets the region_id of this PostPaidParam.
 
         区域ID，如cn-north-4
 
@@ -80,7 +80,7 @@ class PostPaidParam:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PostPaidParam.
+        r"""Sets the region_id of this PostPaidParam.
 
         区域ID，如cn-north-4
 
@@ -91,7 +91,7 @@ class PostPaidParam:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PostPaidParam.
+        r"""Gets the domain_id of this PostPaidParam.
 
         domainId
 
@@ -102,7 +102,7 @@ class PostPaidParam:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PostPaidParam.
+        r"""Sets the domain_id of this PostPaidParam.
 
         domainId
 
@@ -113,7 +113,7 @@ class PostPaidParam:
 
     @property
     def tag_list(self):
-        """Gets the tag_list of this PostPaidParam.
+        r"""Gets the tag_list of this PostPaidParam.
 
         计费标签
 
@@ -124,7 +124,7 @@ class PostPaidParam:
 
     @tag_list.setter
     def tag_list(self, tag_list):
-        """Sets the tag_list of this PostPaidParam.
+        r"""Sets the tag_list of this PostPaidParam.
 
         计费标签
 
@@ -135,7 +135,7 @@ class PostPaidParam:
 
     @property
     def product_list(self):
-        """Gets the product_list of this PostPaidParam.
+        r"""Gets the product_list of this PostPaidParam.
 
         商品列表
 
@@ -146,7 +146,7 @@ class PostPaidParam:
 
     @product_list.setter
     def product_list(self, product_list):
-        """Sets the product_list of this PostPaidParam.
+        r"""Sets the product_list of this PostPaidParam.
 
         商品列表
 
@@ -157,7 +157,7 @@ class PostPaidParam:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this PostPaidParam.
+        r"""Gets the operate_type of this PostPaidParam.
 
         操作类型：create新购, addition增加配额
 
@@ -168,7 +168,7 @@ class PostPaidParam:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this PostPaidParam.
+        r"""Sets the operate_type of this PostPaidParam.
 
         操作类型：create新购, addition增加配额
 

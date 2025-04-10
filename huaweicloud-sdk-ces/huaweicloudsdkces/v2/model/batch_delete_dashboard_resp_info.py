@@ -29,7 +29,7 @@ class BatchDeleteDashboardRespInfo:
     }
 
     def __init__(self, dashboard_id=None, ret_status=None, error_msg=None):
-        """BatchDeleteDashboardRespInfo
+        r"""BatchDeleteDashboardRespInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchDeleteDashboardRespInfo:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this BatchDeleteDashboardRespInfo.
+        r"""Gets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
         监控看板id
 
@@ -68,7 +68,7 @@ class BatchDeleteDashboardRespInfo:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this BatchDeleteDashboardRespInfo.
+        r"""Sets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
         监控看板id
 
@@ -79,7 +79,7 @@ class BatchDeleteDashboardRespInfo:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this BatchDeleteDashboardRespInfo.
+        r"""Gets the ret_status of this BatchDeleteDashboardRespInfo.
 
         处理结果, successful: 成功, error: 失败
 
@@ -90,7 +90,7 @@ class BatchDeleteDashboardRespInfo:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this BatchDeleteDashboardRespInfo.
+        r"""Sets the ret_status of this BatchDeleteDashboardRespInfo.
 
         处理结果, successful: 成功, error: 失败
 
@@ -101,7 +101,7 @@ class BatchDeleteDashboardRespInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchDeleteDashboardRespInfo.
+        r"""Gets the error_msg of this BatchDeleteDashboardRespInfo.
 
         错误信息
 
@@ -112,7 +112,7 @@ class BatchDeleteDashboardRespInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchDeleteDashboardRespInfo.
+        r"""Sets the error_msg of this BatchDeleteDashboardRespInfo.
 
         错误信息
 

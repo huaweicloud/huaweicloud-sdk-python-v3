@@ -24,7 +24,7 @@ class UpdateInstanceConsumerGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateInstanceConsumerGroupResponse
+        r"""UpdateInstanceConsumerGroupResponse
 
         The model defined in huaweicloud sdk
 

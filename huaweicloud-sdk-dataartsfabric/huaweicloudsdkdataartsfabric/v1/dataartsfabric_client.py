@@ -34,7 +34,7 @@ class DataArtsFabricClient(Client):
         return client_builder
 
     def create_agency(self, request):
-        """创建服务委托
+        r"""创建服务委托
 
         为用户自动创建服务所需要的服务委托。委托需要附加必需的权限策略才能使用，创建委托会自动附加必需的权限策略，也可以指定附加需要的权限策略。
         
@@ -99,7 +99,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def delete_agency(self, request):
-        """删除服务委托
+        r"""删除服务委托
 
         删除用户的服务委托权限。可以通过指定权限策略来删除委托中附加的权限策略，必需的权限策略无法被删除；如果不指定权限策略，会删除整个委托。
         
@@ -164,7 +164,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_agency(self, request):
-        """查询服务委托
+        r"""查询服务委托
 
         查询用用户服务委托详情是否满足系统所需权限。
         
@@ -229,7 +229,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def create_agreement(self, request):
-        """注册租户协议
+        r"""注册租户协议
 
         注册租户协议
         
@@ -294,7 +294,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def delete_agreement(self, request):
-        """删除用户注册协议
+        r"""删除用户注册协议
 
         删除用户注册协议
         
@@ -357,7 +357,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def show_agreement(self, request):
-        """查询用户是否注册协议
+        r"""查询用户是否注册协议
 
         查询用户是否注册协议
         
@@ -420,7 +420,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def show_agreement_rule(self, request):
-        """查询系统协议
+        r"""查询系统协议
 
         查询系统协议
         
@@ -483,7 +483,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_features(self, request):
-        """查询用户支持特性
+        r"""查询用户支持特性
 
         查询用户支持特性。
         
@@ -550,7 +550,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def create_endpoint(self, request):
-        """创建Endpoint
+        r"""创建Endpoint
 
         创建Endpoint
         
@@ -617,7 +617,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def delete_endpoint(self, request):
-        """删除endpioint
+        r"""删除endpioint
 
         删除endpioint
         
@@ -684,7 +684,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_endpoints(self, request):
-        """查询Endpoint列表
+        r"""查询Endpoint列表
 
         查询Endpoint列表
         
@@ -763,7 +763,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def show_endpoint(self, request):
-        """查询endpioint详情
+        r"""查询endpioint详情
 
         查询endpioint详情
         
@@ -832,7 +832,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def subscribe_endpoint(self, request):
-        """订阅Endpoint
+        r"""订阅Endpoint
 
         在用户Workspace下订阅Endpoint（公共Endpoint场景）。
         
@@ -899,7 +899,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def update_endpoint(self, request):
-        """修改Endpoint
+        r"""修改Endpoint
 
         修改Endpoint
         
@@ -968,7 +968,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def show_admin_health_check(self, request):
-        """健康检查
+        r"""健康检查
 
         服务健康检查
         
@@ -1031,7 +1031,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def create_message_notification_policy(self, request):
-        """创建消息通知策略
+        r"""创建消息通知策略
 
         创建消息通知策略
         
@@ -1098,7 +1098,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def delete_message_notification_policy(self, request):
-        """删除消息通知策略
+        r"""删除消息通知策略
 
         删除消息通知策略。
         
@@ -1165,7 +1165,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_message_notification_policy(self, request):
-        """查询消息通知策略列表
+        r"""查询消息通知策略列表
 
         查询消息通知策略列表。
         
@@ -1240,7 +1240,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def update_metrics_config(self, request):
-        """更新AOM监控采集配置
+        r"""更新AOM监控采集配置
 
         更新AOM监控采集配置
         
@@ -1307,7 +1307,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def cleanup_model(self, request):
-        """删除未使用的模型定义
+        r"""删除未使用的模型定义
 
         清理未使用的模型定义
         
@@ -1374,7 +1374,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def create_model_definition(self, request):
-        """创建模型
+        r"""创建模型
 
         创建模型
         
@@ -1441,7 +1441,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def delete_model_version(self, request):
-        """删除模型版本
+        r"""删除模型版本
 
         删除模型版本
         
@@ -1510,7 +1510,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_base_models(self, request):
-        """列举基模型
+        r"""列举基模型
 
         列举基模型
         
@@ -1577,7 +1577,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_model_versions(self, request):
-        """查询模型的版本列表
+        r"""查询模型的版本列表
 
         查询模型的版本列表
         
@@ -1652,7 +1652,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_models(self, request):
-        """列举模型
+        r"""列举模型
 
         列举模型
         
@@ -1733,7 +1733,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def update_model_definition(self, request):
-        """更新模型
+        r"""更新模型
 
         更新模型，会生成新版本
         
@@ -1802,7 +1802,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_specs(self, request):
-        """查询服务规格列表
+        r"""查询服务规格列表
 
         查询服务规格列表，购买计算资源使用。
         
@@ -1876,7 +1876,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def batch_create_fabric_workspace_tags(self, request):
-        """批量打资源标签
+        r"""批量打资源标签
 
         批量打资源标签
         
@@ -1943,7 +1943,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def batch_delete_fabric_workspace_tags(self, request):
-        """批量删除资源标签
+        r"""批量删除资源标签
 
         批量删除资源标签
         
@@ -2010,7 +2010,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def count_tag_fabric_workspaces(self, request):
-        """查询资源实例数量
+        r"""查询资源实例数量
 
         查询资源实例数量
         
@@ -2075,7 +2075,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_fabric_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签
         
@@ -2144,7 +2144,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_fabric_workspace_tags(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询资源标签
         
@@ -2213,7 +2213,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_tag_fabric_workspaces(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         查询资源实例列表
         
@@ -2282,7 +2282,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def create_workspace(self, request):
-        """创建Workspace
+        r"""创建Workspace
 
         Create workspace
         
@@ -2347,7 +2347,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def delete_workspace(self, request):
-        """删除Workspace
+        r"""删除Workspace
 
         删除Workspace
         
@@ -2412,7 +2412,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def list_workspaces(self, request):
-        """查询Workspace列表
+        r"""查询Workspace列表
 
         查询Workspace列表。
         
@@ -2485,7 +2485,7 @@ class DataArtsFabricClient(Client):
         return http_info
 
     def update_workspace(self, request):
-        """更新Workspace
+        r"""更新Workspace
 
         更新Workspace
         

@@ -29,7 +29,7 @@ class UpdateTopicRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, body=None):
-        """UpdateTopicRequest
+        r"""UpdateTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateTopicRequest.
+        r"""Gets the instance_id of this UpdateTopicRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateTopicRequest.
+        r"""Sets the instance_id of this UpdateTopicRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateTopicRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this UpdateTopicRequest.
+        r"""Gets the topic of this UpdateTopicRequest.
 
         主题名称。
 
@@ -88,7 +88,7 @@ class UpdateTopicRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this UpdateTopicRequest.
+        r"""Sets the topic of this UpdateTopicRequest.
 
         主题名称。
 
@@ -99,7 +99,7 @@ class UpdateTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTopicRequest.
+        r"""Gets the body of this UpdateTopicRequest.
 
         :return: The body of this UpdateTopicRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateTopicReq`
@@ -108,7 +108,7 @@ class UpdateTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTopicRequest.
+        r"""Sets the body of this UpdateTopicRequest.
 
         :param body: The body of this UpdateTopicRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.UpdateTopicReq`

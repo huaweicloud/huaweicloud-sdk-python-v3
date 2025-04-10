@@ -33,7 +33,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
     }
 
     def __init__(self, vpc_id=None, network_id=None, add_route=None, enable_ipv6=None, name=None):
-        """CreateTenantVpcIgwRequestBodyVpcIgw
+        r"""CreateTenantVpcIgwRequestBodyVpcIgw
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the vpc_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         vpcid
 
@@ -81,7 +81,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the vpc_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         vpcid
 
@@ -92,7 +92,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def network_id(self):
-        """Gets the network_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the network_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         创建VPC IGW的network id
 
@@ -103,7 +103,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the network_id of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         创建VPC IGW的network id
 
@@ -114,7 +114,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def add_route(self):
-        """Gets the add_route of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the add_route of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         是否添加默认路由
 
@@ -125,7 +125,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @add_route.setter
     def add_route(self, add_route):
-        """Sets the add_route of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the add_route of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         是否添加默认路由
 
@@ -136,7 +136,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def enable_ipv6(self):
-        """Gets the enable_ipv6 of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the enable_ipv6 of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         是否使能ipv6
 
@@ -147,7 +147,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @enable_ipv6.setter
     def enable_ipv6(self, enable_ipv6):
-        """Sets the enable_ipv6 of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the enable_ipv6 of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         是否使能ipv6
 
@@ -158,7 +158,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def name(self):
-        """Gets the name of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the name of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         虚拟IGW的名称
 
@@ -169,7 +169,7 @@ class CreateTenantVpcIgwRequestBodyVpcIgw:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the name of this CreateTenantVpcIgwRequestBodyVpcIgw.
 
         虚拟IGW的名称
 

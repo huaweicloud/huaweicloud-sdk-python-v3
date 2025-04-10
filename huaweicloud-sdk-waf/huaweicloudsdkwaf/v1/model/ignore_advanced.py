@@ -27,7 +27,7 @@ class IgnoreAdvanced:
     }
 
     def __init__(self, index=None, contents=None):
-        """IgnoreAdvanced
+        r"""IgnoreAdvanced
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IgnoreAdvanced:
 
     @property
     def index(self):
-        """Gets the index of this IgnoreAdvanced.
+        r"""Gets the index of this IgnoreAdvanced.
 
         字段类型，支持的字段类型有：Params、Cookie、Header、Body、Multipart。   - 当选择“Params”、“Cookie”或者“Header”字段时，可以配置“全部”或根据需求配置子字段   - 当选择“Body”或“Multipart”字段时，可以配置“全部”
 
@@ -61,7 +61,7 @@ class IgnoreAdvanced:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this IgnoreAdvanced.
+        r"""Sets the index of this IgnoreAdvanced.
 
         字段类型，支持的字段类型有：Params、Cookie、Header、Body、Multipart。   - 当选择“Params”、“Cookie”或者“Header”字段时，可以配置“全部”或根据需求配置子字段   - 当选择“Body”或“Multipart”字段时，可以配置“全部”
 
@@ -72,7 +72,7 @@ class IgnoreAdvanced:
 
     @property
     def contents(self):
-        """Gets the contents of this IgnoreAdvanced.
+        r"""Gets the contents of this IgnoreAdvanced.
 
         指定字段类型的子字段，默认值为“全部”
 
@@ -83,7 +83,7 @@ class IgnoreAdvanced:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this IgnoreAdvanced.
+        r"""Sets the contents of this IgnoreAdvanced.
 
         指定字段类型的子字段，默认值为“全部”
 

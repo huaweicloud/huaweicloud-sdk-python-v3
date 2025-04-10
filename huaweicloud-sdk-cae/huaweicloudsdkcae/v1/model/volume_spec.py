@@ -31,7 +31,7 @@ class VolumeSpec:
     }
 
     def __init__(self, resource_type=None, resource_sub_type=None, resources=None, resources_credentials=None):
-        """VolumeSpec
+        r"""VolumeSpec
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class VolumeSpec:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this VolumeSpec.
+        r"""Gets the resource_type of this VolumeSpec.
 
         资源类型，当前只支持“obs”和“sfs”。
 
@@ -72,7 +72,7 @@ class VolumeSpec:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this VolumeSpec.
+        r"""Sets the resource_type of this VolumeSpec.
 
         资源类型，当前只支持“obs”和“sfs”。
 
@@ -83,7 +83,7 @@ class VolumeSpec:
 
     @property
     def resource_sub_type(self):
-        """Gets the resource_sub_type of this VolumeSpec.
+        r"""Gets the resource_sub_type of this VolumeSpec.
 
         对象存储类型。
 
@@ -94,7 +94,7 @@ class VolumeSpec:
 
     @resource_sub_type.setter
     def resource_sub_type(self, resource_sub_type):
-        """Sets the resource_sub_type of this VolumeSpec.
+        r"""Sets the resource_sub_type of this VolumeSpec.
 
         对象存储类型。
 
@@ -105,7 +105,7 @@ class VolumeSpec:
 
     @property
     def resources(self):
-        """Gets the resources of this VolumeSpec.
+        r"""Gets the resources of this VolumeSpec.
 
         云存储名称。
 
@@ -116,7 +116,7 @@ class VolumeSpec:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VolumeSpec.
+        r"""Sets the resources of this VolumeSpec.
 
         云存储名称。
 
@@ -127,7 +127,7 @@ class VolumeSpec:
 
     @property
     def resources_credentials(self):
-        """Gets the resources_credentials of this VolumeSpec.
+        r"""Gets the resources_credentials of this VolumeSpec.
 
         云存储和授权凭证，获取环境列表接口响应中env_category字段为v2时需添加该字段的值。
 
@@ -138,7 +138,7 @@ class VolumeSpec:
 
     @resources_credentials.setter
     def resources_credentials(self, resources_credentials):
-        """Sets the resources_credentials of this VolumeSpec.
+        r"""Sets the resources_credentials of this VolumeSpec.
 
         云存储和授权凭证，获取环境列表接口响应中env_category字段为v2时需添加该字段的值。
 

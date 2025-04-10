@@ -31,7 +31,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
     }
 
     def __init__(self, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, enable_async_status_log=None):
-        """UpdateFunctionAsyncInvokeConfigRequestBody
+        r"""UpdateFunctionAsyncInvokeConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @property
     def max_async_event_age_in_seconds(self):
-        """Gets the max_async_event_age_in_seconds of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Gets the max_async_event_age_in_seconds of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         消息最大存活时长，取值范围[1，86400]，单位：秒，默认值为3600。
 
@@ -75,7 +75,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @max_async_event_age_in_seconds.setter
     def max_async_event_age_in_seconds(self, max_async_event_age_in_seconds):
-        """Sets the max_async_event_age_in_seconds of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Sets the max_async_event_age_in_seconds of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         消息最大存活时长，取值范围[1，86400]，单位：秒，默认值为3600。
 
@@ -86,7 +86,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @property
     def max_async_retry_attempts(self):
-        """Gets the max_async_retry_attempts of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Gets the max_async_retry_attempts of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         异步调用失败后的最大重试次数，默认值为1。取值范围[0，3]。
 
@@ -97,7 +97,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @max_async_retry_attempts.setter
     def max_async_retry_attempts(self, max_async_retry_attempts):
-        """Sets the max_async_retry_attempts of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Sets the max_async_retry_attempts of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         异步调用失败后的最大重试次数，默认值为1。取值范围[0，3]。
 
@@ -108,7 +108,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @property
     def destination_config(self):
-        """Gets the destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Gets the destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         :return: The destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
@@ -117,7 +117,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @destination_config.setter
     def destination_config(self, destination_config):
-        """Sets the destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Sets the destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         :param destination_config: The destination_config of this UpdateFunctionAsyncInvokeConfigRequestBody.
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
@@ -126,7 +126,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @property
     def enable_async_status_log(self):
-        """Gets the enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Gets the enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         开启异步调用状态持久化
 
@@ -137,7 +137,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
 
     @enable_async_status_log.setter
     def enable_async_status_log(self, enable_async_status_log):
-        """Sets the enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        r"""Sets the enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
 
         开启异步调用状态持久化
 

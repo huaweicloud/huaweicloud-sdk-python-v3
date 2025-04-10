@@ -51,7 +51,7 @@ class FlowLog:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, resource_type=None, resource_id=None, log_group_id=None, log_stream_id=None, log_store_type=None, log_aggregation_interval=None, created_at=None, updated_at=None, state=None, enabled=None):
-        """FlowLog
+        r"""FlowLog
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class FlowLog:
 
     @property
     def id(self):
-        """Gets the id of this FlowLog.
+        r"""Gets the id of this FlowLog.
 
         流日志ID
 
@@ -134,7 +134,7 @@ class FlowLog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowLog.
+        r"""Sets the id of this FlowLog.
 
         流日志ID
 
@@ -145,7 +145,7 @@ class FlowLog:
 
     @property
     def name(self):
-        """Gets the name of this FlowLog.
+        r"""Gets the name of this FlowLog.
 
         流日志名称
 
@@ -156,7 +156,7 @@ class FlowLog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlowLog.
+        r"""Sets the name of this FlowLog.
 
         流日志名称
 
@@ -167,7 +167,7 @@ class FlowLog:
 
     @property
     def description(self):
-        """Gets the description of this FlowLog.
+        r"""Gets the description of this FlowLog.
 
         流日志描述
 
@@ -178,7 +178,7 @@ class FlowLog:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlowLog.
+        r"""Sets the description of this FlowLog.
 
         流日志描述
 
@@ -189,7 +189,7 @@ class FlowLog:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FlowLog.
+        r"""Gets the project_id of this FlowLog.
 
         流日志任务创建者项目ID
 
@@ -200,7 +200,7 @@ class FlowLog:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FlowLog.
+        r"""Sets the project_id of this FlowLog.
 
         流日志任务创建者项目ID
 
@@ -211,7 +211,7 @@ class FlowLog:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FlowLog.
+        r"""Gets the resource_type of this FlowLog.
 
         采集的资源类型:attachment
 
@@ -222,7 +222,7 @@ class FlowLog:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FlowLog.
+        r"""Sets the resource_type of this FlowLog.
 
         采集的资源类型:attachment
 
@@ -233,7 +233,7 @@ class FlowLog:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FlowLog.
+        r"""Gets the resource_id of this FlowLog.
 
         采集的资源ID
 
@@ -244,7 +244,7 @@ class FlowLog:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FlowLog.
+        r"""Sets the resource_id of this FlowLog.
 
         采集的资源ID
 
@@ -255,7 +255,7 @@ class FlowLog:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this FlowLog.
+        r"""Gets the log_group_id of this FlowLog.
 
         日志组ID
 
@@ -266,7 +266,7 @@ class FlowLog:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this FlowLog.
+        r"""Sets the log_group_id of this FlowLog.
 
         日志组ID
 
@@ -277,7 +277,7 @@ class FlowLog:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this FlowLog.
+        r"""Gets the log_stream_id of this FlowLog.
 
         日志流ID
 
@@ -288,7 +288,7 @@ class FlowLog:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this FlowLog.
+        r"""Sets the log_stream_id of this FlowLog.
 
         日志流ID
 
@@ -299,7 +299,7 @@ class FlowLog:
 
     @property
     def log_store_type(self):
-        """Gets the log_store_type of this FlowLog.
+        r"""Gets the log_store_type of this FlowLog.
 
         流日志存储类型
 
@@ -310,7 +310,7 @@ class FlowLog:
 
     @log_store_type.setter
     def log_store_type(self, log_store_type):
-        """Sets the log_store_type of this FlowLog.
+        r"""Sets the log_store_type of this FlowLog.
 
         流日志存储类型
 
@@ -321,7 +321,7 @@ class FlowLog:
 
     @property
     def log_aggregation_interval(self):
-        """Gets the log_aggregation_interval of this FlowLog.
+        r"""Gets the log_aggregation_interval of this FlowLog.
 
         日志聚合时间，单位s，取值范围：60-600
 
@@ -332,7 +332,7 @@ class FlowLog:
 
     @log_aggregation_interval.setter
     def log_aggregation_interval(self, log_aggregation_interval):
-        """Sets the log_aggregation_interval of this FlowLog.
+        r"""Sets the log_aggregation_interval of this FlowLog.
 
         日志聚合时间，单位s，取值范围：60-600
 
@@ -343,7 +343,7 @@ class FlowLog:
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowLog.
+        r"""Gets the created_at of this FlowLog.
 
         创建时间
 
@@ -354,7 +354,7 @@ class FlowLog:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowLog.
+        r"""Sets the created_at of this FlowLog.
 
         创建时间
 
@@ -365,7 +365,7 @@ class FlowLog:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowLog.
+        r"""Gets the updated_at of this FlowLog.
 
         更新时间
 
@@ -376,7 +376,7 @@ class FlowLog:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowLog.
+        r"""Sets the updated_at of this FlowLog.
 
         更新时间
 
@@ -387,7 +387,7 @@ class FlowLog:
 
     @property
     def state(self):
-        """Gets the state of this FlowLog.
+        r"""Gets the state of this FlowLog.
 
         日志资源状态:pending|available|modifying|deleting|deleted|failed
 
@@ -398,7 +398,7 @@ class FlowLog:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this FlowLog.
+        r"""Sets the state of this FlowLog.
 
         日志资源状态:pending|available|modifying|deleting|deleted|failed
 
@@ -409,7 +409,7 @@ class FlowLog:
 
     @property
     def enabled(self):
-        """Gets the enabled of this FlowLog.
+        r"""Gets the enabled of this FlowLog.
 
         日志开关:true|false
 
@@ -420,7 +420,7 @@ class FlowLog:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this FlowLog.
+        r"""Sets the enabled of this FlowLog.
 
         日志开关:true|false
 

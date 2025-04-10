@@ -39,7 +39,7 @@ class TagVO:
     }
 
     def __init__(self, id=None, name=None, description=None, create_by=None, update_by=None, create_time=None, update_time=None, new_biz=None):
-        """TagVO
+        r"""TagVO
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class TagVO:
 
     @property
     def id(self):
-        """Gets the id of this TagVO.
+        r"""Gets the id of this TagVO.
 
         编码，ID字符串。
 
@@ -102,7 +102,7 @@ class TagVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TagVO.
+        r"""Sets the id of this TagVO.
 
         编码，ID字符串。
 
@@ -113,7 +113,7 @@ class TagVO:
 
     @property
     def name(self):
-        """Gets the name of this TagVO.
+        r"""Gets the name of this TagVO.
 
         标签名。
 
@@ -124,7 +124,7 @@ class TagVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TagVO.
+        r"""Sets the name of this TagVO.
 
         标签名。
 
@@ -135,7 +135,7 @@ class TagVO:
 
     @property
     def description(self):
-        """Gets the description of this TagVO.
+        r"""Gets the description of this TagVO.
 
         描述。
 
@@ -146,7 +146,7 @@ class TagVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TagVO.
+        r"""Sets the description of this TagVO.
 
         描述。
 
@@ -157,7 +157,7 @@ class TagVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this TagVO.
+        r"""Gets the create_by of this TagVO.
 
         创建人。
 
@@ -168,7 +168,7 @@ class TagVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this TagVO.
+        r"""Sets the create_by of this TagVO.
 
         创建人。
 
@@ -179,7 +179,7 @@ class TagVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this TagVO.
+        r"""Gets the update_by of this TagVO.
 
         更新人。
 
@@ -190,7 +190,7 @@ class TagVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this TagVO.
+        r"""Sets the update_by of this TagVO.
 
         更新人。
 
@@ -201,7 +201,7 @@ class TagVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TagVO.
+        r"""Gets the create_time of this TagVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -212,7 +212,7 @@ class TagVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TagVO.
+        r"""Sets the create_time of this TagVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -223,7 +223,7 @@ class TagVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TagVO.
+        r"""Gets the update_time of this TagVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -234,7 +234,7 @@ class TagVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TagVO.
+        r"""Sets the update_time of this TagVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -245,7 +245,7 @@ class TagVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this TagVO.
+        r"""Gets the new_biz of this TagVO.
 
         :return: The new_biz of this TagVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -254,7 +254,7 @@ class TagVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this TagVO.
+        r"""Sets the new_biz of this TagVO.
 
         :param new_biz: The new_biz of this TagVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`

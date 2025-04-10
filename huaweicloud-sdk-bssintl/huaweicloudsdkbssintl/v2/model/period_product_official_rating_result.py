@@ -31,7 +31,7 @@ class PeriodProductOfficialRatingResult:
     }
 
     def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None):
-        """PeriodProductOfficialRatingResult
+        r"""PeriodProductOfficialRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PeriodProductOfficialRatingResult:
 
     @property
     def id(self):
-        """Gets the id of this PeriodProductOfficialRatingResult.
+        r"""Gets the id of this PeriodProductOfficialRatingResult.
 
         ID标识，来源于请求中的ID。
 
@@ -75,7 +75,7 @@ class PeriodProductOfficialRatingResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PeriodProductOfficialRatingResult.
+        r"""Sets the id of this PeriodProductOfficialRatingResult.
 
         ID标识，来源于请求中的ID。
 
@@ -86,7 +86,7 @@ class PeriodProductOfficialRatingResult:
 
     @property
     def product_id(self):
-        """Gets the product_id of this PeriodProductOfficialRatingResult.
+        r"""Gets the product_id of this PeriodProductOfficialRatingResult.
 
         包年/包月产品的ID。
 
@@ -97,7 +97,7 @@ class PeriodProductOfficialRatingResult:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this PeriodProductOfficialRatingResult.
+        r"""Sets the product_id of this PeriodProductOfficialRatingResult.
 
         包年/包月产品的ID。
 
@@ -108,7 +108,7 @@ class PeriodProductOfficialRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this PeriodProductOfficialRatingResult.
+        r"""Gets the official_website_amount of this PeriodProductOfficialRatingResult.
 
         包年/包月产品的官网价。
 
@@ -119,7 +119,7 @@ class PeriodProductOfficialRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this PeriodProductOfficialRatingResult.
+        r"""Sets the official_website_amount of this PeriodProductOfficialRatingResult.
 
         包年/包月产品的官网价。
 
@@ -130,7 +130,7 @@ class PeriodProductOfficialRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this PeriodProductOfficialRatingResult.
+        r"""Gets the measure_id of this PeriodProductOfficialRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -141,7 +141,7 @@ class PeriodProductOfficialRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this PeriodProductOfficialRatingResult.
+        r"""Sets the measure_id of this PeriodProductOfficialRatingResult.
 
         价格度量单位标识。 1：元
 

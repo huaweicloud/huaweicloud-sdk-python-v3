@@ -29,7 +29,7 @@ class ApplicationModelQueryResponseData:
     }
 
     def __init__(self, sub_applications=None, components=None, groups=None):
-        """ApplicationModelQueryResponseData
+        r"""ApplicationModelQueryResponseData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApplicationModelQueryResponseData:
 
     @property
     def sub_applications(self):
-        """Gets the sub_applications of this ApplicationModelQueryResponseData.
+        r"""Gets the sub_applications of this ApplicationModelQueryResponseData.
 
         :return: The sub_applications of this ApplicationModelQueryResponseData.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.ApplicationInfo`]
@@ -66,7 +66,7 @@ class ApplicationModelQueryResponseData:
 
     @sub_applications.setter
     def sub_applications(self, sub_applications):
-        """Sets the sub_applications of this ApplicationModelQueryResponseData.
+        r"""Sets the sub_applications of this ApplicationModelQueryResponseData.
 
         :param sub_applications: The sub_applications of this ApplicationModelQueryResponseData.
         :type sub_applications: list[:class:`huaweicloudsdkcoc.v1.ApplicationInfo`]
@@ -75,7 +75,7 @@ class ApplicationModelQueryResponseData:
 
     @property
     def components(self):
-        """Gets the components of this ApplicationModelQueryResponseData.
+        r"""Gets the components of this ApplicationModelQueryResponseData.
 
         :return: The components of this ApplicationModelQueryResponseData.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.ComponentInfo`]
@@ -84,7 +84,7 @@ class ApplicationModelQueryResponseData:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this ApplicationModelQueryResponseData.
+        r"""Sets the components of this ApplicationModelQueryResponseData.
 
         :param components: The components of this ApplicationModelQueryResponseData.
         :type components: list[:class:`huaweicloudsdkcoc.v1.ComponentInfo`]
@@ -93,7 +93,7 @@ class ApplicationModelQueryResponseData:
 
     @property
     def groups(self):
-        """Gets the groups of this ApplicationModelQueryResponseData.
+        r"""Gets the groups of this ApplicationModelQueryResponseData.
 
         :return: The groups of this ApplicationModelQueryResponseData.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.GroupInfo`]
@@ -102,7 +102,7 @@ class ApplicationModelQueryResponseData:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ApplicationModelQueryResponseData.
+        r"""Sets the groups of this ApplicationModelQueryResponseData.
 
         :param groups: The groups of this ApplicationModelQueryResponseData.
         :type groups: list[:class:`huaweicloudsdkcoc.v1.GroupInfo`]

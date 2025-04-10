@@ -25,7 +25,7 @@ class ShowAgencyRequest:
     }
 
     def __init__(self, agency_id=None):
-        """ShowAgencyRequest
+        r"""ShowAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this ShowAgencyRequest.
+        r"""Gets the agency_id of this ShowAgencyRequest.
 
         待查询的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class ShowAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this ShowAgencyRequest.
+        r"""Sets the agency_id of this ShowAgencyRequest.
 
         待查询的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

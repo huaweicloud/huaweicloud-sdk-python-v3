@@ -29,7 +29,7 @@ class UpdateDesignDimensionRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, body=None):
-        """UpdateDesignDimensionRequest
+        r"""UpdateDesignDimensionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDesignDimensionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateDesignDimensionRequest.
+        r"""Gets the workspace of this UpdateDesignDimensionRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class UpdateDesignDimensionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateDesignDimensionRequest.
+        r"""Sets the workspace of this UpdateDesignDimensionRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class UpdateDesignDimensionRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this UpdateDesignDimensionRequest.
+        r"""Gets the x_project_id of this UpdateDesignDimensionRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -89,7 +89,7 @@ class UpdateDesignDimensionRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this UpdateDesignDimensionRequest.
+        r"""Sets the x_project_id of this UpdateDesignDimensionRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -100,7 +100,7 @@ class UpdateDesignDimensionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesignDimensionRequest.
+        r"""Gets the body of this UpdateDesignDimensionRequest.
 
         :return: The body of this UpdateDesignDimensionRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DimensionVO`
@@ -109,7 +109,7 @@ class UpdateDesignDimensionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesignDimensionRequest.
+        r"""Sets the body of this UpdateDesignDimensionRequest.
 
         :param body: The body of this UpdateDesignDimensionRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DimensionVO`

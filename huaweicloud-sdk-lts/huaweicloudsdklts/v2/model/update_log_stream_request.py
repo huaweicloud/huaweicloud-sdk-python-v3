@@ -29,7 +29,7 @@ class UpdateLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, body=None):
-        """UpdateLogStreamRequest
+        r"""UpdateLogStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLogStreamRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateLogStreamRequest.
+        r"""Gets the log_group_id of this UpdateLogStreamRequest.
 
         日志组ID，获取方式请参见：获取帐号ID、项目ID、日志组ID、日志流ID。  缺省值：None 最小长度：36 最大长度：36
 
@@ -66,7 +66,7 @@ class UpdateLogStreamRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateLogStreamRequest.
+        r"""Sets the log_group_id of this UpdateLogStreamRequest.
 
         日志组ID，获取方式请参见：获取帐号ID、项目ID、日志组ID、日志流ID。  缺省值：None 最小长度：36 最大长度：36
 
@@ -77,7 +77,7 @@ class UpdateLogStreamRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this UpdateLogStreamRequest.
+        r"""Gets the log_stream_id of this UpdateLogStreamRequest.
 
         日志流ID，获取方式请参见：获取帐号ID、项目ID、日志组ID、日志流ID。  缺省值：None 最小长度：36 最大长度：36
 
@@ -88,7 +88,7 @@ class UpdateLogStreamRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this UpdateLogStreamRequest.
+        r"""Sets the log_stream_id of this UpdateLogStreamRequest.
 
         日志流ID，获取方式请参见：获取帐号ID、项目ID、日志组ID、日志流ID。  缺省值：None 最小长度：36 最大长度：36
 
@@ -99,7 +99,7 @@ class UpdateLogStreamRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLogStreamRequest.
+        r"""Gets the body of this UpdateLogStreamRequest.
 
         :return: The body of this UpdateLogStreamRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateLogStreamParams`
@@ -108,7 +108,7 @@ class UpdateLogStreamRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLogStreamRequest.
+        r"""Sets the body of this UpdateLogStreamRequest.
 
         :param body: The body of this UpdateLogStreamRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateLogStreamParams`

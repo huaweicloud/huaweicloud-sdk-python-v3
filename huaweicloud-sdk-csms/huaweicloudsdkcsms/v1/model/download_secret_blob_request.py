@@ -25,7 +25,7 @@ class DownloadSecretBlobRequest:
     }
 
     def __init__(self, secret_name=None):
-        """DownloadSecretBlobRequest
+        r"""DownloadSecretBlobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadSecretBlobRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this DownloadSecretBlobRequest.
+        r"""Gets the secret_name of this DownloadSecretBlobRequest.
 
         凭据的名称。
 
@@ -53,7 +53,7 @@ class DownloadSecretBlobRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this DownloadSecretBlobRequest.
+        r"""Sets the secret_name of this DownloadSecretBlobRequest.
 
         凭据的名称。
 

@@ -26,7 +26,7 @@ class UpdateVifPeerResponse(SdkResponse):
     }
 
     def __init__(self, vif_peer=None):
-        """UpdateVifPeerResponse
+        r"""UpdateVifPeerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateVifPeerResponse(SdkResponse):
 
     @property
     def vif_peer(self):
-        """Gets the vif_peer of this UpdateVifPeerResponse.
+        r"""Gets the vif_peer of this UpdateVifPeerResponse.
 
         :return: The vif_peer of this UpdateVifPeerResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.VifPeer`
@@ -53,7 +53,7 @@ class UpdateVifPeerResponse(SdkResponse):
 
     @vif_peer.setter
     def vif_peer(self, vif_peer):
-        """Sets the vif_peer of this UpdateVifPeerResponse.
+        r"""Sets the vif_peer of this UpdateVifPeerResponse.
 
         :param vif_peer: The vif_peer of this UpdateVifPeerResponse.
         :type vif_peer: :class:`huaweicloudsdkdc.v3.VifPeer`

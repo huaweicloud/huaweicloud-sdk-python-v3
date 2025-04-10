@@ -27,7 +27,7 @@ class OpErrorInfo:
     }
 
     def __init__(self, code=None, message=None):
-        """OpErrorInfo
+        r"""OpErrorInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpErrorInfo:
 
     @property
     def code(self):
-        """Gets the code of this OpErrorInfo.
+        r"""Gets the code of this OpErrorInfo.
 
         请参见[错误码](ErrorCode.xml)。
 
@@ -61,7 +61,7 @@ class OpErrorInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this OpErrorInfo.
+        r"""Sets the code of this OpErrorInfo.
 
         请参见[错误码](ErrorCode.xml)。
 
@@ -72,7 +72,7 @@ class OpErrorInfo:
 
     @property
     def message(self):
-        """Gets the message of this OpErrorInfo.
+        r"""Gets the message of this OpErrorInfo.
 
         错误信息
 
@@ -83,7 +83,7 @@ class OpErrorInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this OpErrorInfo.
+        r"""Sets the message of this OpErrorInfo.
 
         错误信息
 

@@ -68,7 +68,7 @@ class CreateLimitTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_scope=None, limit_type=None, limit_type_value=None, databases=None, task_name=None, sql_model=None, key_words=None, status=None, instance_id=None, rule_name=None, parallel_size=None, cpu_utilization=None, memory_utilization=None, start_time=None, end_time=None, created=None, updated=None, creator=None, modifier=None, node_infos=None, job_id=None):
-        """CreateLimitTaskResponse
+        r"""CreateLimitTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateLimitTaskResponse.
+        r"""Gets the task_id of this CreateLimitTaskResponse.
 
         限流任务ID。
 
@@ -202,7 +202,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateLimitTaskResponse.
+        r"""Sets the task_id of this CreateLimitTaskResponse.
 
         限流任务ID。
 
@@ -213,7 +213,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def task_scope(self):
-        """Gets the task_scope of this CreateLimitTaskResponse.
+        r"""Gets the task_scope of this CreateLimitTaskResponse.
 
         任务限流范围，与请求参数相同。
 
@@ -224,7 +224,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @task_scope.setter
     def task_scope(self, task_scope):
-        """Sets the task_scope of this CreateLimitTaskResponse.
+        r"""Sets the task_scope of this CreateLimitTaskResponse.
 
         任务限流范围，与请求参数相同。
 
@@ -235,7 +235,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def limit_type(self):
-        """Gets the limit_type of this CreateLimitTaskResponse.
+        r"""Gets the limit_type of this CreateLimitTaskResponse.
 
         任务限流类型，与请求参数相同。
 
@@ -246,7 +246,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @limit_type.setter
     def limit_type(self, limit_type):
-        """Sets the limit_type of this CreateLimitTaskResponse.
+        r"""Sets the limit_type of this CreateLimitTaskResponse.
 
         任务限流类型，与请求参数相同。
 
@@ -257,7 +257,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def limit_type_value(self):
-        """Gets the limit_type_value of this CreateLimitTaskResponse.
+        r"""Gets the limit_type_value of this CreateLimitTaskResponse.
 
         任务限流类型值，与请求参数相同。
 
@@ -268,7 +268,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @limit_type_value.setter
     def limit_type_value(self, limit_type_value):
-        """Sets the limit_type_value of this CreateLimitTaskResponse.
+        r"""Sets the limit_type_value of this CreateLimitTaskResponse.
 
         任务限流类型值，与请求参数相同。
 
@@ -279,7 +279,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this CreateLimitTaskResponse.
+        r"""Gets the databases of this CreateLimitTaskResponse.
 
         CN节点数据库组，每个数据库字符串以逗号形式隔开。
 
@@ -290,7 +290,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateLimitTaskResponse.
+        r"""Sets the databases of this CreateLimitTaskResponse.
 
         CN节点数据库组，每个数据库字符串以逗号形式隔开。
 
@@ -301,7 +301,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateLimitTaskResponse.
+        r"""Gets the task_name of this CreateLimitTaskResponse.
 
         限流任务名。
 
@@ -312,7 +312,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateLimitTaskResponse.
+        r"""Sets the task_name of this CreateLimitTaskResponse.
 
         限流任务名。
 
@@ -323,7 +323,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def sql_model(self):
-        """Gets the sql_model of this CreateLimitTaskResponse.
+        r"""Gets the sql_model of this CreateLimitTaskResponse.
 
         SQL模板,仅当任务类型为SQL_ID时，返回该值且与请求参数相同。
 
@@ -334,7 +334,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @sql_model.setter
     def sql_model(self, sql_model):
-        """Sets the sql_model of this CreateLimitTaskResponse.
+        r"""Sets the sql_model of this CreateLimitTaskResponse.
 
         SQL模板,仅当任务类型为SQL_ID时，返回该值且与请求参数相同。
 
@@ -345,7 +345,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def key_words(self):
-        """Gets the key_words of this CreateLimitTaskResponse.
+        r"""Gets the key_words of this CreateLimitTaskResponse.
 
         关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
@@ -356,7 +356,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @key_words.setter
     def key_words(self, key_words):
-        """Sets the key_words of this CreateLimitTaskResponse.
+        r"""Sets the key_words of this CreateLimitTaskResponse.
 
         关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
@@ -367,7 +367,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateLimitTaskResponse.
+        r"""Gets the status of this CreateLimitTaskResponse.
 
         限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
 
@@ -378,7 +378,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateLimitTaskResponse.
+        r"""Sets the status of this CreateLimitTaskResponse.
 
         限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
 
@@ -389,7 +389,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateLimitTaskResponse.
+        r"""Gets the instance_id of this CreateLimitTaskResponse.
 
         实例id。
 
@@ -400,7 +400,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateLimitTaskResponse.
+        r"""Sets the instance_id of this CreateLimitTaskResponse.
 
         实例id。
 
@@ -411,7 +411,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this CreateLimitTaskResponse.
+        r"""Gets the rule_name of this CreateLimitTaskResponse.
 
         规则名。
 
@@ -422,7 +422,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this CreateLimitTaskResponse.
+        r"""Sets the rule_name of this CreateLimitTaskResponse.
 
         规则名。
 
@@ -433,7 +433,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def parallel_size(self):
-        """Gets the parallel_size of this CreateLimitTaskResponse.
+        r"""Gets the parallel_size of this CreateLimitTaskResponse.
 
         并发数，与请求参数相同。
 
@@ -444,7 +444,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @parallel_size.setter
     def parallel_size(self, parallel_size):
-        """Sets the parallel_size of this CreateLimitTaskResponse.
+        r"""Sets the parallel_size of this CreateLimitTaskResponse.
 
         并发数，与请求参数相同。
 
@@ -455,7 +455,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def cpu_utilization(self):
-        """Gets the cpu_utilization of this CreateLimitTaskResponse.
+        r"""Gets the cpu_utilization of this CreateLimitTaskResponse.
 
         cpu利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -466,7 +466,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @cpu_utilization.setter
     def cpu_utilization(self, cpu_utilization):
-        """Sets the cpu_utilization of this CreateLimitTaskResponse.
+        r"""Sets the cpu_utilization of this CreateLimitTaskResponse.
 
         cpu利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -477,7 +477,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def memory_utilization(self):
-        """Gets the memory_utilization of this CreateLimitTaskResponse.
+        r"""Gets the memory_utilization of this CreateLimitTaskResponse.
 
         内存利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -488,7 +488,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @memory_utilization.setter
     def memory_utilization(self, memory_utilization):
-        """Sets the memory_utilization of this CreateLimitTaskResponse.
+        r"""Sets the memory_utilization of this CreateLimitTaskResponse.
 
         内存利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -499,7 +499,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateLimitTaskResponse.
+        r"""Gets the start_time of this CreateLimitTaskResponse.
 
         限流任务开始时间，与请求参数相同，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -510,7 +510,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateLimitTaskResponse.
+        r"""Sets the start_time of this CreateLimitTaskResponse.
 
         限流任务开始时间，与请求参数相同，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -521,7 +521,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateLimitTaskResponse.
+        r"""Gets the end_time of this CreateLimitTaskResponse.
 
         限流任务结束时间，与请求参数相同，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -532,7 +532,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateLimitTaskResponse.
+        r"""Sets the end_time of this CreateLimitTaskResponse.
 
         限流任务结束时间，与请求参数相同，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -543,7 +543,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this CreateLimitTaskResponse.
+        r"""Gets the created of this CreateLimitTaskResponse.
 
         创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -554,7 +554,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CreateLimitTaskResponse.
+        r"""Sets the created of this CreateLimitTaskResponse.
 
         创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -565,7 +565,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this CreateLimitTaskResponse.
+        r"""Gets the updated of this CreateLimitTaskResponse.
 
         更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -576,7 +576,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this CreateLimitTaskResponse.
+        r"""Sets the updated of this CreateLimitTaskResponse.
 
         更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -587,7 +587,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreateLimitTaskResponse.
+        r"""Gets the creator of this CreateLimitTaskResponse.
 
         创建者。
 
@@ -598,7 +598,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateLimitTaskResponse.
+        r"""Sets the creator of this CreateLimitTaskResponse.
 
         创建者。
 
@@ -609,7 +609,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def modifier(self):
-        """Gets the modifier of this CreateLimitTaskResponse.
+        r"""Gets the modifier of this CreateLimitTaskResponse.
 
         更新者。
 
@@ -620,7 +620,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this CreateLimitTaskResponse.
+        r"""Sets the modifier of this CreateLimitTaskResponse.
 
         更新者。
 
@@ -631,7 +631,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def node_infos(self):
-        """Gets the node_infos of this CreateLimitTaskResponse.
+        r"""Gets the node_infos of this CreateLimitTaskResponse.
 
         CN节点信息列表，如果类型为SQLID，必返。
 
@@ -642,7 +642,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @node_infos.setter
     def node_infos(self, node_infos):
-        """Sets the node_infos of this CreateLimitTaskResponse.
+        r"""Sets the node_infos of this CreateLimitTaskResponse.
 
         CN节点信息列表，如果类型为SQLID，必返。
 
@@ -653,7 +653,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateLimitTaskResponse.
+        r"""Gets the job_id of this CreateLimitTaskResponse.
 
         工作流ID。
 
@@ -664,7 +664,7 @@ class CreateLimitTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateLimitTaskResponse.
+        r"""Sets the job_id of this CreateLimitTaskResponse.
 
         工作流ID。
 

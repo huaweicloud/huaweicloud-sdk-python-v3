@@ -69,7 +69,7 @@ class CentralNetworkGdgwAttachment:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, state=None, created_at=None, updated_at=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, bandwidth_type=None, bandwidth_size=None, is_frozen=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, enterprise_router_attachment_id=None, global_dc_gateway_peer_link_id=None, global_dc_gateway_id=None, global_dc_gateway_project_id=None, global_dc_gateway_region_id=None, enterprise_router_site_code=None, global_dc_gateway_site_code=None):
-        """CentralNetworkGdgwAttachment
+        r"""CentralNetworkGdgwAttachment
 
         The model defined in huaweicloud sdk
 
@@ -179,7 +179,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkGdgwAttachment.
+        r"""Gets the id of this CentralNetworkGdgwAttachment.
 
         实例ID。
 
@@ -190,7 +190,7 @@ class CentralNetworkGdgwAttachment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkGdgwAttachment.
+        r"""Sets the id of this CentralNetworkGdgwAttachment.
 
         实例ID。
 
@@ -201,7 +201,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def name(self):
-        """Gets the name of this CentralNetworkGdgwAttachment.
+        r"""Gets the name of this CentralNetworkGdgwAttachment.
 
         实例名字。
 
@@ -212,7 +212,7 @@ class CentralNetworkGdgwAttachment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CentralNetworkGdgwAttachment.
+        r"""Sets the name of this CentralNetworkGdgwAttachment.
 
         实例名字。
 
@@ -223,7 +223,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def description(self):
-        """Gets the description of this CentralNetworkGdgwAttachment.
+        r"""Gets the description of this CentralNetworkGdgwAttachment.
 
         实例描述。不支持 <>。
 
@@ -234,7 +234,7 @@ class CentralNetworkGdgwAttachment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CentralNetworkGdgwAttachment.
+        r"""Sets the description of this CentralNetworkGdgwAttachment.
 
         实例描述。不支持 <>。
 
@@ -245,7 +245,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the domain_id of this CentralNetworkGdgwAttachment.
 
         实例所属账号ID。
 
@@ -256,7 +256,7 @@ class CentralNetworkGdgwAttachment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the domain_id of this CentralNetworkGdgwAttachment.
 
         实例所属账号ID。
 
@@ -267,7 +267,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetworkGdgwAttachment.
+        r"""Gets the state of this CentralNetworkGdgwAttachment.
 
         :return: The state of this CentralNetworkGdgwAttachment.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -276,7 +276,7 @@ class CentralNetworkGdgwAttachment:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetworkGdgwAttachment.
+        r"""Sets the state of this CentralNetworkGdgwAttachment.
 
         :param state: The state of this CentralNetworkGdgwAttachment.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -285,7 +285,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CentralNetworkGdgwAttachment.
+        r"""Gets the created_at of this CentralNetworkGdgwAttachment.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -296,7 +296,7 @@ class CentralNetworkGdgwAttachment:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CentralNetworkGdgwAttachment.
+        r"""Sets the created_at of this CentralNetworkGdgwAttachment.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -307,7 +307,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CentralNetworkGdgwAttachment.
+        r"""Gets the updated_at of this CentralNetworkGdgwAttachment.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -318,7 +318,7 @@ class CentralNetworkGdgwAttachment:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CentralNetworkGdgwAttachment.
+        r"""Sets the updated_at of this CentralNetworkGdgwAttachment.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -329,7 +329,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the central_network_id of this CentralNetworkGdgwAttachment.
 
         中心网络ID。
 
@@ -340,7 +340,7 @@ class CentralNetworkGdgwAttachment:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the central_network_id of this CentralNetworkGdgwAttachment.
 
         中心网络ID。
 
@@ -351,7 +351,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the central_network_plane_id of this CentralNetworkGdgwAttachment.
 
         中心网络平面ID。
 
@@ -362,7 +362,7 @@ class CentralNetworkGdgwAttachment:
 
     @central_network_plane_id.setter
     def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the central_network_plane_id of this CentralNetworkGdgwAttachment.
 
         中心网络平面ID。
 
@@ -373,7 +373,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the global_connection_bandwidth_id of this CentralNetworkGdgwAttachment.
 
         全域互联带宽ID。
 
@@ -384,7 +384,7 @@ class CentralNetworkGdgwAttachment:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the global_connection_bandwidth_id of this CentralNetworkGdgwAttachment.
 
         全域互联带宽ID。
 
@@ -395,7 +395,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this CentralNetworkGdgwAttachment.
+        r"""Gets the bandwidth_type of this CentralNetworkGdgwAttachment.
 
         :return: The bandwidth_type of this CentralNetworkGdgwAttachment.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -404,7 +404,7 @@ class CentralNetworkGdgwAttachment:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this CentralNetworkGdgwAttachment.
+        r"""Sets the bandwidth_type of this CentralNetworkGdgwAttachment.
 
         :param bandwidth_type: The bandwidth_type of this CentralNetworkGdgwAttachment.
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -413,7 +413,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CentralNetworkGdgwAttachment.
+        r"""Gets the bandwidth_size of this CentralNetworkGdgwAttachment.
 
         带宽值，单位Mbps。
 
@@ -424,7 +424,7 @@ class CentralNetworkGdgwAttachment:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CentralNetworkGdgwAttachment.
+        r"""Sets the bandwidth_size of this CentralNetworkGdgwAttachment.
 
         带宽值，单位Mbps。
 
@@ -435,7 +435,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this CentralNetworkGdgwAttachment.
+        r"""Gets the is_frozen of this CentralNetworkGdgwAttachment.
 
         是否冻结
 
@@ -446,7 +446,7 @@ class CentralNetworkGdgwAttachment:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this CentralNetworkGdgwAttachment.
+        r"""Sets the is_frozen of this CentralNetworkGdgwAttachment.
 
         是否冻结
 
@@ -457,7 +457,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_id of this CentralNetworkGdgwAttachment.
 
         企业路由器的ID。
 
@@ -468,7 +468,7 @@ class CentralNetworkGdgwAttachment:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_id of this CentralNetworkGdgwAttachment.
 
         企业路由器的ID。
 
@@ -479,7 +479,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_project_id(self):
-        """Gets the enterprise_router_project_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_project_id of this CentralNetworkGdgwAttachment.
 
         企业路由器的项目ID。
 
@@ -490,7 +490,7 @@ class CentralNetworkGdgwAttachment:
 
     @enterprise_router_project_id.setter
     def enterprise_router_project_id(self, enterprise_router_project_id):
-        """Sets the enterprise_router_project_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_project_id of this CentralNetworkGdgwAttachment.
 
         企业路由器的项目ID。
 
@@ -501,7 +501,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_region_id(self):
-        """Gets the enterprise_router_region_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_region_id of this CentralNetworkGdgwAttachment.
 
         ER路由器的regionID。
 
@@ -512,7 +512,7 @@ class CentralNetworkGdgwAttachment:
 
     @enterprise_router_region_id.setter
     def enterprise_router_region_id(self, enterprise_router_region_id):
-        """Sets the enterprise_router_region_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_region_id of this CentralNetworkGdgwAttachment.
 
         ER路由器的regionID。
 
@@ -523,7 +523,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_attachment_id(self):
-        """Gets the enterprise_router_attachment_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_attachment_id of this CentralNetworkGdgwAttachment.
 
         企业路由器的连接ID。
 
@@ -534,7 +534,7 @@ class CentralNetworkGdgwAttachment:
 
     @enterprise_router_attachment_id.setter
     def enterprise_router_attachment_id(self, enterprise_router_attachment_id):
-        """Sets the enterprise_router_attachment_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_attachment_id of this CentralNetworkGdgwAttachment.
 
         企业路由器的连接ID。
 
@@ -545,7 +545,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_peer_link_id(self):
-        """Gets the global_dc_gateway_peer_link_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_peer_link_id of this CentralNetworkGdgwAttachment.
 
         GDGW的连接ID。
 
@@ -556,7 +556,7 @@ class CentralNetworkGdgwAttachment:
 
     @global_dc_gateway_peer_link_id.setter
     def global_dc_gateway_peer_link_id(self, global_dc_gateway_peer_link_id):
-        """Sets the global_dc_gateway_peer_link_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_peer_link_id of this CentralNetworkGdgwAttachment.
 
         GDGW的连接ID。
 
@@ -567,7 +567,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_id of this CentralNetworkGdgwAttachment.
 
         Gdgw的ID。
 
@@ -578,7 +578,7 @@ class CentralNetworkGdgwAttachment:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_id of this CentralNetworkGdgwAttachment.
 
         Gdgw的ID。
 
@@ -589,7 +589,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_project_id(self):
-        """Gets the global_dc_gateway_project_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_project_id of this CentralNetworkGdgwAttachment.
 
         Gdgw的项目ID。
 
@@ -600,7 +600,7 @@ class CentralNetworkGdgwAttachment:
 
     @global_dc_gateway_project_id.setter
     def global_dc_gateway_project_id(self, global_dc_gateway_project_id):
-        """Sets the global_dc_gateway_project_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_project_id of this CentralNetworkGdgwAttachment.
 
         Gdgw的项目ID。
 
@@ -611,7 +611,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_region_id(self):
-        """Gets the global_dc_gateway_region_id of this CentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_region_id of this CentralNetworkGdgwAttachment.
 
         Gdgw的RegionID。
 
@@ -622,7 +622,7 @@ class CentralNetworkGdgwAttachment:
 
     @global_dc_gateway_region_id.setter
     def global_dc_gateway_region_id(self, global_dc_gateway_region_id):
-        """Sets the global_dc_gateway_region_id of this CentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_region_id of this CentralNetworkGdgwAttachment.
 
         Gdgw的RegionID。
 
@@ -633,7 +633,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_site_code(self):
-        """Gets the enterprise_router_site_code of this CentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_site_code of this CentralNetworkGdgwAttachment.
 
         中心网络企业路由器的站点编码。
 
@@ -644,7 +644,7 @@ class CentralNetworkGdgwAttachment:
 
     @enterprise_router_site_code.setter
     def enterprise_router_site_code(self, enterprise_router_site_code):
-        """Sets the enterprise_router_site_code of this CentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_site_code of this CentralNetworkGdgwAttachment.
 
         中心网络企业路由器的站点编码。
 
@@ -655,7 +655,7 @@ class CentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_site_code(self):
-        """Gets the global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
 
         站点编码定义
 
@@ -666,7 +666,7 @@ class CentralNetworkGdgwAttachment:
 
     @global_dc_gateway_site_code.setter
     def global_dc_gateway_site_code(self, global_dc_gateway_site_code):
-        """Sets the global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
 
         站点编码定义
 

@@ -29,7 +29,7 @@ class UpdateOrganizationConformancePackRequest:
     }
 
     def __init__(self, organization_id=None, conformance_pack_id=None, body=None):
-        """UpdateOrganizationConformancePackRequest
+        r"""UpdateOrganizationConformancePackRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateOrganizationConformancePackRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this UpdateOrganizationConformancePackRequest.
+        r"""Gets the organization_id of this UpdateOrganizationConformancePackRequest.
 
         组织ID。
 
@@ -66,7 +66,7 @@ class UpdateOrganizationConformancePackRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this UpdateOrganizationConformancePackRequest.
+        r"""Sets the organization_id of this UpdateOrganizationConformancePackRequest.
 
         组织ID。
 
@@ -77,7 +77,7 @@ class UpdateOrganizationConformancePackRequest:
 
     @property
     def conformance_pack_id(self):
-        """Gets the conformance_pack_id of this UpdateOrganizationConformancePackRequest.
+        r"""Gets the conformance_pack_id of this UpdateOrganizationConformancePackRequest.
 
         合规规则包ID。
 
@@ -88,7 +88,7 @@ class UpdateOrganizationConformancePackRequest:
 
     @conformance_pack_id.setter
     def conformance_pack_id(self, conformance_pack_id):
-        """Sets the conformance_pack_id of this UpdateOrganizationConformancePackRequest.
+        r"""Sets the conformance_pack_id of this UpdateOrganizationConformancePackRequest.
 
         合规规则包ID。
 
@@ -99,7 +99,7 @@ class UpdateOrganizationConformancePackRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOrganizationConformancePackRequest.
+        r"""Gets the body of this UpdateOrganizationConformancePackRequest.
 
         :return: The body of this UpdateOrganizationConformancePackRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.UpdateOrgConformancePackRequestBody`
@@ -108,7 +108,7 @@ class UpdateOrganizationConformancePackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOrganizationConformancePackRequest.
+        r"""Sets the body of this UpdateOrganizationConformancePackRequest.
 
         :param body: The body of this UpdateOrganizationConformancePackRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.UpdateOrgConformancePackRequestBody`

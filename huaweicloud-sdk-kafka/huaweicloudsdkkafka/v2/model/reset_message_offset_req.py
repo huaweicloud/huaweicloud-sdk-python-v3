@@ -31,7 +31,7 @@ class ResetMessageOffsetReq:
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, timestamp=None):
-        """ResetMessageOffsetReq
+        r"""ResetMessageOffsetReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ResetMessageOffsetReq:
 
     @property
     def topic(self):
-        """Gets the topic of this ResetMessageOffsetReq.
+        r"""Gets the topic of this ResetMessageOffsetReq.
 
         topic名称。
 
@@ -74,7 +74,7 @@ class ResetMessageOffsetReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ResetMessageOffsetReq.
+        r"""Sets the topic of this ResetMessageOffsetReq.
 
         topic名称。
 
@@ -85,7 +85,7 @@ class ResetMessageOffsetReq:
 
     @property
     def partition(self):
-        """Gets the partition of this ResetMessageOffsetReq.
+        r"""Gets the partition of this ResetMessageOffsetReq.
 
         分区编号，默认值为-1，若传入值为-1，则重置所有分区。
 
@@ -96,7 +96,7 @@ class ResetMessageOffsetReq:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ResetMessageOffsetReq.
+        r"""Sets the partition of this ResetMessageOffsetReq.
 
         分区编号，默认值为-1，若传入值为-1，则重置所有分区。
 
@@ -107,7 +107,7 @@ class ResetMessageOffsetReq:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ResetMessageOffsetReq.
+        r"""Gets the message_offset of this ResetMessageOffsetReq.
 
         重置消费进度到指定偏移量。 - 如果传入offset小于当前最小的offset，则重置到最小的offset。 - 如果大于最大的offset，则重置到最大的offset。  **message_offset、timestamp二者必选其一。** 
 
@@ -118,7 +118,7 @@ class ResetMessageOffsetReq:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ResetMessageOffsetReq.
+        r"""Sets the message_offset of this ResetMessageOffsetReq.
 
         重置消费进度到指定偏移量。 - 如果传入offset小于当前最小的offset，则重置到最小的offset。 - 如果大于最大的offset，则重置到最大的offset。  **message_offset、timestamp二者必选其一。** 
 
@@ -129,7 +129,7 @@ class ResetMessageOffsetReq:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ResetMessageOffsetReq.
+        r"""Gets the timestamp of this ResetMessageOffsetReq.
 
         重置消费进度到指定时间，格式为unix时间戳，单位为毫秒。 - 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 - 如果晚于最晚的timestamp，则重置到最晚的timestamp。  **message_offset、timestamp二者必选其一。** 
 
@@ -140,7 +140,7 @@ class ResetMessageOffsetReq:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ResetMessageOffsetReq.
+        r"""Sets the timestamp of this ResetMessageOffsetReq.
 
         重置消费进度到指定时间，格式为unix时间戳，单位为毫秒。 - 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 - 如果晚于最晚的timestamp，则重置到最晚的timestamp。  **message_offset、timestamp二者必选其一。** 
 

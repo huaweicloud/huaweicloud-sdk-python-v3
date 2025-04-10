@@ -25,7 +25,7 @@ class AudioServiceConfig:
     }
 
     def __init__(self, common=None):
-        """AudioServiceConfig
+        r"""AudioServiceConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AudioServiceConfig:
 
     @property
     def common(self):
-        """Gets the common of this AudioServiceConfig.
+        r"""Gets the common of this AudioServiceConfig.
 
         :return: The common of this AudioServiceConfig.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioServiceConfigCommon`
@@ -51,7 +51,7 @@ class AudioServiceConfig:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this AudioServiceConfig.
+        r"""Sets the common of this AudioServiceConfig.
 
         :param common: The common of this AudioServiceConfig.
         :type common: :class:`huaweicloudsdkvcm.v2.AudioServiceConfigCommon`

@@ -27,7 +27,7 @@ class UpdateEdgeNodeRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """UpdateEdgeNodeRequest
+        r"""UpdateEdgeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEdgeNodeRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateEdgeNodeRequest.
+        r"""Gets the edge_node_id of this UpdateEdgeNodeRequest.
 
         节点id
 
@@ -60,7 +60,7 @@ class UpdateEdgeNodeRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateEdgeNodeRequest.
+        r"""Sets the edge_node_id of this UpdateEdgeNodeRequest.
 
         节点id
 
@@ -71,7 +71,7 @@ class UpdateEdgeNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeNodeRequest.
+        r"""Gets the body of this UpdateEdgeNodeRequest.
 
         :return: The body of this UpdateEdgeNodeRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNodeReqDTO`
@@ -80,7 +80,7 @@ class UpdateEdgeNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeNodeRequest.
+        r"""Sets the body of this UpdateEdgeNodeRequest.
 
         :param body: The body of this UpdateEdgeNodeRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateNodeReqDTO`

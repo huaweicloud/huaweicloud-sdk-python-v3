@@ -29,7 +29,7 @@ class SaveClusterDescriptionInfoRequest:
     }
 
     def __init__(self, cluster_id=None, namespace=None, body=None):
-        """SaveClusterDescriptionInfoRequest
+        r"""SaveClusterDescriptionInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SaveClusterDescriptionInfoRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SaveClusterDescriptionInfoRequest.
+        r"""Gets the cluster_id of this SaveClusterDescriptionInfoRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class SaveClusterDescriptionInfoRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SaveClusterDescriptionInfoRequest.
+        r"""Sets the cluster_id of this SaveClusterDescriptionInfoRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class SaveClusterDescriptionInfoRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this SaveClusterDescriptionInfoRequest.
+        r"""Gets the namespace of this SaveClusterDescriptionInfoRequest.
 
         命名空间
 
@@ -89,7 +89,7 @@ class SaveClusterDescriptionInfoRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this SaveClusterDescriptionInfoRequest.
+        r"""Sets the namespace of this SaveClusterDescriptionInfoRequest.
 
         命名空间
 
@@ -100,7 +100,7 @@ class SaveClusterDescriptionInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this SaveClusterDescriptionInfoRequest.
+        r"""Gets the body of this SaveClusterDescriptionInfoRequest.
 
         :return: The body of this SaveClusterDescriptionInfoRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterDescriptionInfo`
@@ -109,7 +109,7 @@ class SaveClusterDescriptionInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SaveClusterDescriptionInfoRequest.
+        r"""Sets the body of this SaveClusterDescriptionInfoRequest.
 
         :param body: The body of this SaveClusterDescriptionInfoRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ClusterDescriptionInfo`

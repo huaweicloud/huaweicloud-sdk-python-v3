@@ -29,7 +29,7 @@ class AddRuleAclDto:
     }
 
     def __init__(self, object_id=None, type=None, rules=None):
-        """AddRuleAclDto
+        r"""AddRuleAclDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddRuleAclDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AddRuleAclDto.
+        r"""Gets the object_id of this AddRuleAclDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -65,7 +65,7 @@ class AddRuleAclDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AddRuleAclDto.
+        r"""Sets the object_id of this AddRuleAclDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -76,7 +76,7 @@ class AddRuleAclDto:
 
     @property
     def type(self):
-        """Gets the type of this AddRuleAclDto.
+        r"""Gets the type of this AddRuleAclDto.
 
         规则类型，0：互联网边界规则，1：vpc间规则，2：nat规则，当type取0时，规则源和目的地址需要为公网ip或域名，vpc间规则需要源和目的地址为私有ip，nat规则需要源地址为私网ip，目的地址为公网ip或域名。
 
@@ -87,7 +87,7 @@ class AddRuleAclDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddRuleAclDto.
+        r"""Sets the type of this AddRuleAclDto.
 
         规则类型，0：互联网边界规则，1：vpc间规则，2：nat规则，当type取0时，规则源和目的地址需要为公网ip或域名，vpc间规则需要源和目的地址为私有ip，nat规则需要源地址为私网ip，目的地址为公网ip或域名。
 
@@ -98,7 +98,7 @@ class AddRuleAclDto:
 
     @property
     def rules(self):
-        """Gets the rules of this AddRuleAclDto.
+        r"""Gets the rules of this AddRuleAclDto.
 
         添加规则请求规则列表
 
@@ -109,7 +109,7 @@ class AddRuleAclDto:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this AddRuleAclDto.
+        r"""Sets the rules of this AddRuleAclDto.
 
         添加规则请求规则列表
 

@@ -25,7 +25,7 @@ class TcpSocketDTO:
     }
 
     def __init__(self, port=None):
-        """TcpSocketDTO
+        r"""TcpSocketDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TcpSocketDTO:
 
     @property
     def port(self):
-        """Gets the port of this TcpSocketDTO.
+        r"""Gets the port of this TcpSocketDTO.
 
         端口
 
@@ -53,7 +53,7 @@ class TcpSocketDTO:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this TcpSocketDTO.
+        r"""Sets the port of this TcpSocketDTO.
 
         端口
 

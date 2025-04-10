@@ -31,7 +31,7 @@ class ListUpdatableVersionRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None, type=None):
-        """ListUpdatableVersionRequest
+        r"""ListUpdatableVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListUpdatableVersionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListUpdatableVersionRequest.
+        r"""Gets the cluster_id of this ListUpdatableVersionRequest.
 
         集群ID
 
@@ -74,7 +74,7 @@ class ListUpdatableVersionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListUpdatableVersionRequest.
+        r"""Sets the cluster_id of this ListUpdatableVersionRequest.
 
         集群ID
 
@@ -85,7 +85,7 @@ class ListUpdatableVersionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUpdatableVersionRequest.
+        r"""Gets the offset of this ListUpdatableVersionRequest.
 
         偏移量
 
@@ -96,7 +96,7 @@ class ListUpdatableVersionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUpdatableVersionRequest.
+        r"""Sets the offset of this ListUpdatableVersionRequest.
 
         偏移量
 
@@ -107,7 +107,7 @@ class ListUpdatableVersionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUpdatableVersionRequest.
+        r"""Gets the limit of this ListUpdatableVersionRequest.
 
         条目数
 
@@ -118,7 +118,7 @@ class ListUpdatableVersionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUpdatableVersionRequest.
+        r"""Sets the limit of this ListUpdatableVersionRequest.
 
         条目数
 
@@ -129,7 +129,7 @@ class ListUpdatableVersionRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListUpdatableVersionRequest.
+        r"""Gets the type of this ListUpdatableVersionRequest.
 
         升级类型 cluster:集群升级 hotpatch:热补丁升级
 
@@ -140,7 +140,7 @@ class ListUpdatableVersionRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListUpdatableVersionRequest.
+        r"""Sets the type of this ListUpdatableVersionRequest.
 
         升级类型 cluster:集群升级 hotpatch:热补丁升级
 

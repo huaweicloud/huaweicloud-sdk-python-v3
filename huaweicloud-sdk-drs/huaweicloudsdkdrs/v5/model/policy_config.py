@@ -43,7 +43,7 @@ class PolicyConfig:
     }
 
     def __init__(self, filter_ddl_policy=None, conflict_policy=None, index_trans=None, ddl_trans=None, data_sync_topology_type=None, support_ddl_info=None, sync_type_policy=None, increment_read_mode=None, dml_types=None, is_create_table_with_index=None):
-        """PolicyConfig
+        r"""PolicyConfig
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PolicyConfig:
 
     @property
     def filter_ddl_policy(self):
-        """Gets the filter_ddl_policy of this PolicyConfig.
+        r"""Gets the filter_ddl_policy of this PolicyConfig.
 
         过滤DDL策略。取值： - drop_database  场景区别： - 实时迁移场景：MySQL迁移可填\"\"，表示不过滤DROP DATABASE。 - 实时同步场景：MySQL同步只能填\"drop_database\"。
 
@@ -117,7 +117,7 @@ class PolicyConfig:
 
     @filter_ddl_policy.setter
     def filter_ddl_policy(self, filter_ddl_policy):
-        """Sets the filter_ddl_policy of this PolicyConfig.
+        r"""Sets the filter_ddl_policy of this PolicyConfig.
 
         过滤DDL策略。取值： - drop_database  场景区别： - 实时迁移场景：MySQL迁移可填\"\"，表示不过滤DROP DATABASE。 - 实时同步场景：MySQL同步只能填\"drop_database\"。
 
@@ -128,7 +128,7 @@ class PolicyConfig:
 
     @property
     def conflict_policy(self):
-        """Gets the conflict_policy of this PolicyConfig.
+        r"""Gets the conflict_policy of this PolicyConfig.
 
         增量阶段冲突策略。该冲突策略特指增量同步中的冲突处理策略,全量阶段的冲突默认忽略。取值： - ignore：忽略。当同步数据与目标库已有数据冲突时（主键/唯一键重复等），DRS将忽略源库的冲突数据，并保留目标库中的冲突数据，继续进行后续同步。  - stop：报错。当同步数据与目标库已有数据冲突时（主键/唯一键重复等），同步任务将失败并立即中止。可在同步日志中查看详细信息。  - overwrite：覆盖。当同步数据与目标库已有数据冲突时（主键/唯一键重复等），将覆盖原来的冲突数据。  场景区别： - 实时迁移场景：不支持。 - 实时同步场景：支持。
 
@@ -139,7 +139,7 @@ class PolicyConfig:
 
     @conflict_policy.setter
     def conflict_policy(self, conflict_policy):
-        """Sets the conflict_policy of this PolicyConfig.
+        r"""Sets the conflict_policy of this PolicyConfig.
 
         增量阶段冲突策略。该冲突策略特指增量同步中的冲突处理策略,全量阶段的冲突默认忽略。取值： - ignore：忽略。当同步数据与目标库已有数据冲突时（主键/唯一键重复等），DRS将忽略源库的冲突数据，并保留目标库中的冲突数据，继续进行后续同步。  - stop：报错。当同步数据与目标库已有数据冲突时（主键/唯一键重复等），同步任务将失败并立即中止。可在同步日志中查看详细信息。  - overwrite：覆盖。当同步数据与目标库已有数据冲突时（主键/唯一键重复等），将覆盖原来的冲突数据。  场景区别： - 实时迁移场景：不支持。 - 实时同步场景：支持。
 
@@ -150,7 +150,7 @@ class PolicyConfig:
 
     @property
     def index_trans(self):
-        """Gets the index_trans of this PolicyConfig.
+        r"""Gets the index_trans of this PolicyConfig.
 
         对象同步范围：是否同步普通索引。DRS将默认同步主键/唯一索引，普通索引是指除主键/唯一索引以外的其他类型索引。取值： - true：将会同步全部的索引。 - false：仅同步主键/唯一索引，普通索引不会同步。
 
@@ -161,7 +161,7 @@ class PolicyConfig:
 
     @index_trans.setter
     def index_trans(self, index_trans):
-        """Sets the index_trans of this PolicyConfig.
+        r"""Sets the index_trans of this PolicyConfig.
 
         对象同步范围：是否同步普通索引。DRS将默认同步主键/唯一索引，普通索引是指除主键/唯一索引以外的其他类型索引。取值： - true：将会同步全部的索引。 - false：仅同步主键/唯一索引，普通索引不会同步。
 
@@ -172,7 +172,7 @@ class PolicyConfig:
 
     @property
     def ddl_trans(self):
-        """Gets the ddl_trans of this PolicyConfig.
+        r"""Gets the ddl_trans of this PolicyConfig.
 
         对象同步范围：同步增量阶段是否同步DDL。取值： - true：增量阶段同步DDL。 - false：增量阶段不同步DDL。
 
@@ -183,7 +183,7 @@ class PolicyConfig:
 
     @ddl_trans.setter
     def ddl_trans(self, ddl_trans):
-        """Sets the ddl_trans of this PolicyConfig.
+        r"""Sets the ddl_trans of this PolicyConfig.
 
         对象同步范围：同步增量阶段是否同步DDL。取值： - true：增量阶段同步DDL。 - false：增量阶段不同步DDL。
 
@@ -194,7 +194,7 @@ class PolicyConfig:
 
     @property
     def data_sync_topology_type(self):
-        """Gets the data_sync_topology_type of this PolicyConfig.
+        r"""Gets the data_sync_topology_type of this PolicyConfig.
 
         数据同步拓扑。数据同步功能支持多种同步拓扑，您可以根据业务需求规划您的同步实例。参考链接。取值： - one2one：一对一。 - one2many：一对多。 - many2one：多对一。
 
@@ -205,7 +205,7 @@ class PolicyConfig:
 
     @data_sync_topology_type.setter
     def data_sync_topology_type(self, data_sync_topology_type):
-        """Sets the data_sync_topology_type of this PolicyConfig.
+        r"""Sets the data_sync_topology_type of this PolicyConfig.
 
         数据同步拓扑。数据同步功能支持多种同步拓扑，您可以根据业务需求规划您的同步实例。参考链接。取值： - one2one：一对一。 - one2many：一对多。 - many2one：多对一。
 
@@ -216,7 +216,7 @@ class PolicyConfig:
 
     @property
     def support_ddl_info(self):
-        """Gets the support_ddl_info of this PolicyConfig.
+        r"""Gets the support_ddl_info of this PolicyConfig.
 
         增量支持的DDL。取值： - \"CREATE_TABLE,ADD_COLUMN,MODIFY_COLUMN,CHANGE_COLUMN,DROP_INDEX,ADD_INDEX,CREATE_INDEX,RENAME_INDEX\"。 - 含义解释： - CREATE_TABLE：创建表。 - ADD_COLUMN：加列。 - MODIFY_COLUMN：改列属性。 - CHANGE_COLUMN：改列属性。 - DROP_INDEX：删除索引。 - ADD_INDEX：加索引。 - CREATE_INDEX：创建索引。 - RENAME_INDEX：重命名索引。 - 使用提示： 1.一对一，一对多场景，如果业务上认为源和目标应该使用保持严格一致，那么高危类DDL也应该勾选并同步。 2.一对一，一对多场景，如果业务上确定某个高危DDL不应该发生，则可以不勾选同步高危类DDL，这样DRS将拦截过滤这个DDL，从而起到保护目标数据的作用，但需要知晓过滤DDL的附带问题是可能导致同步失败，例如过滤删列动作。 3.多对一数据聚合场景，最佳实践是推荐只选择同步加列DDL，其他大部分DDL同步都因目标表修改而导致其他任务失败/数据不一致的情况发生，常见情况有：a、同步truncate导致目标数据全部被清空； b、同步创建索引导致目标表被锁定； c、同步rename导致其他任务找不到目标表而失败；d、同步改列导致其他任务因数据类型不兼容而失败；
 
@@ -227,7 +227,7 @@ class PolicyConfig:
 
     @support_ddl_info.setter
     def support_ddl_info(self, support_ddl_info):
-        """Sets the support_ddl_info of this PolicyConfig.
+        r"""Sets the support_ddl_info of this PolicyConfig.
 
         增量支持的DDL。取值： - \"CREATE_TABLE,ADD_COLUMN,MODIFY_COLUMN,CHANGE_COLUMN,DROP_INDEX,ADD_INDEX,CREATE_INDEX,RENAME_INDEX\"。 - 含义解释： - CREATE_TABLE：创建表。 - ADD_COLUMN：加列。 - MODIFY_COLUMN：改列属性。 - CHANGE_COLUMN：改列属性。 - DROP_INDEX：删除索引。 - ADD_INDEX：加索引。 - CREATE_INDEX：创建索引。 - RENAME_INDEX：重命名索引。 - 使用提示： 1.一对一，一对多场景，如果业务上认为源和目标应该使用保持严格一致，那么高危类DDL也应该勾选并同步。 2.一对一，一对多场景，如果业务上确定某个高危DDL不应该发生，则可以不勾选同步高危类DDL，这样DRS将拦截过滤这个DDL，从而起到保护目标数据的作用，但需要知晓过滤DDL的附带问题是可能导致同步失败，例如过滤删列动作。 3.多对一数据聚合场景，最佳实践是推荐只选择同步加列DDL，其他大部分DDL同步都因目标表修改而导致其他任务失败/数据不一致的情况发生，常见情况有：a、同步truncate导致目标数据全部被清空； b、同步创建索引导致目标表被锁定； c、同步rename导致其他任务找不到目标表而失败；d、同步改列导致其他任务因数据类型不兼容而失败；
 
@@ -238,7 +238,7 @@ class PolicyConfig:
 
     @property
     def sync_type_policy(self):
-        """Gets the sync_type_policy of this PolicyConfig.
+        r"""Gets the sync_type_policy of this PolicyConfig.
 
         同步数据类型。取值：supportAllType（同步所有类型），tableData（同步数据），tableStructure（同步表结构），constraintData（索引同步）。 说明：除supportAllType以外，其他类型可组合填写，例如：\"tableData,tableStructure\" 。
 
@@ -249,7 +249,7 @@ class PolicyConfig:
 
     @sync_type_policy.setter
     def sync_type_policy(self, sync_type_policy):
-        """Sets the sync_type_policy of this PolicyConfig.
+        r"""Sets the sync_type_policy of this PolicyConfig.
 
         同步数据类型。取值：supportAllType（同步所有类型），tableData（同步数据），tableStructure（同步表结构），constraintData（索引同步）。 说明：除supportAllType以外，其他类型可组合填写，例如：\"tableData,tableStructure\" 。
 
@@ -260,7 +260,7 @@ class PolicyConfig:
 
     @property
     def increment_read_mode(self):
-        """Gets the increment_read_mode of this PolicyConfig.
+        r"""Gets the increment_read_mode of this PolicyConfig.
 
         oracle-gausssdb增量读取方式：logminer，xstream
 
@@ -271,7 +271,7 @@ class PolicyConfig:
 
     @increment_read_mode.setter
     def increment_read_mode(self, increment_read_mode):
-        """Sets the increment_read_mode of this PolicyConfig.
+        r"""Sets the increment_read_mode of this PolicyConfig.
 
         oracle-gausssdb增量读取方式：logminer，xstream
 
@@ -282,7 +282,7 @@ class PolicyConfig:
 
     @property
     def dml_types(self):
-        """Gets the dml_types of this PolicyConfig.
+        r"""Gets the dml_types of this PolicyConfig.
 
         DML同步类型。
 
@@ -293,7 +293,7 @@ class PolicyConfig:
 
     @dml_types.setter
     def dml_types(self, dml_types):
-        """Sets the dml_types of this PolicyConfig.
+        r"""Sets the dml_types of this PolicyConfig.
 
         DML同步类型。
 
@@ -304,7 +304,7 @@ class PolicyConfig:
 
     @property
     def is_create_table_with_index(self):
-        """Gets the is_create_table_with_index of this PolicyConfig.
+        r"""Gets the is_create_table_with_index of this PolicyConfig.
 
         索引与表结构是否同时建立。
 
@@ -315,7 +315,7 @@ class PolicyConfig:
 
     @is_create_table_with_index.setter
     def is_create_table_with_index(self, is_create_table_with_index):
-        """Sets the is_create_table_with_index of this PolicyConfig.
+        r"""Sets the is_create_table_with_index of this PolicyConfig.
 
         索引与表结构是否同时建立。
 

@@ -41,7 +41,7 @@ class Association:
     }
 
     def __init__(self, id=None, route_table_id=None, attachment_id=None, resource_type=None, resource_id=None, state=None, created_at=None, updated_at=None, route_policy=None):
-        """Association
+        r"""Association
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Association:
 
     @property
     def id(self):
-        """Gets the id of this Association.
+        r"""Gets the id of this Association.
 
         关联唯一标识
 
@@ -110,7 +110,7 @@ class Association:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Association.
+        r"""Sets the id of this Association.
 
         关联唯一标识
 
@@ -121,7 +121,7 @@ class Association:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this Association.
+        r"""Gets the route_table_id of this Association.
 
         路由表唯一标识
 
@@ -132,7 +132,7 @@ class Association:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this Association.
+        r"""Sets the route_table_id of this Association.
 
         路由表唯一标识
 
@@ -143,7 +143,7 @@ class Association:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this Association.
+        r"""Gets the attachment_id of this Association.
 
         连接唯一标识
 
@@ -154,7 +154,7 @@ class Association:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this Association.
+        r"""Sets the attachment_id of this Association.
 
         连接唯一标识
 
@@ -165,7 +165,7 @@ class Association:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Association.
+        r"""Gets the resource_type of this Association.
 
         连接的类型
 
@@ -176,7 +176,7 @@ class Association:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Association.
+        r"""Sets the resource_type of this Association.
 
         连接的类型
 
@@ -187,7 +187,7 @@ class Association:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Association.
+        r"""Gets the resource_id of this Association.
 
         连接的资源唯一标识
 
@@ -198,7 +198,7 @@ class Association:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Association.
+        r"""Sets the resource_id of this Association.
 
         连接的资源唯一标识
 
@@ -209,7 +209,7 @@ class Association:
 
     @property
     def state(self):
-        """Gets the state of this Association.
+        r"""Gets the state of this Association.
 
         状态
 
@@ -220,7 +220,7 @@ class Association:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Association.
+        r"""Sets the state of this Association.
 
         状态
 
@@ -231,7 +231,7 @@ class Association:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Association.
+        r"""Gets the created_at of this Association.
 
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -242,7 +242,7 @@ class Association:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Association.
+        r"""Sets the created_at of this Association.
 
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -253,7 +253,7 @@ class Association:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Association.
+        r"""Gets the updated_at of this Association.
 
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -264,7 +264,7 @@ class Association:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Association.
+        r"""Sets the updated_at of this Association.
 
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -275,7 +275,7 @@ class Association:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this Association.
+        r"""Gets the route_policy of this Association.
 
         :return: The route_policy of this Association.
         :rtype: :class:`huaweicloudsdker.v3.ExportRoutePolicy`
@@ -284,7 +284,7 @@ class Association:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this Association.
+        r"""Sets the route_policy of this Association.
 
         :param route_policy: The route_policy of this Association.
         :type route_policy: :class:`huaweicloudsdker.v3.ExportRoutePolicy`

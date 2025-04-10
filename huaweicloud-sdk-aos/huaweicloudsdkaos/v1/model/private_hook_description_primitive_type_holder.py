@@ -25,7 +25,7 @@ class PrivateHookDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, hook_description=None):
-        """PrivateHookDescriptionPrimitiveTypeHolder
+        r"""PrivateHookDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateHookDescriptionPrimitiveTypeHolder:
 
     @property
     def hook_description(self):
-        """Gets the hook_description of this PrivateHookDescriptionPrimitiveTypeHolder.
+        r"""Gets the hook_description of this PrivateHookDescriptionPrimitiveTypeHolder.
 
         私有hook的描述。可用于客户识别创建的私有hook。可通过UpdatePrivateHook API更新私有hook的描述。
 
@@ -54,7 +54,7 @@ class PrivateHookDescriptionPrimitiveTypeHolder:
 
     @hook_description.setter
     def hook_description(self, hook_description):
-        """Sets the hook_description of this PrivateHookDescriptionPrimitiveTypeHolder.
+        r"""Sets the hook_description of this PrivateHookDescriptionPrimitiveTypeHolder.
 
         私有hook的描述。可用于客户识别创建的私有hook。可通过UpdatePrivateHook API更新私有hook的描述。
 

@@ -27,7 +27,7 @@ class CreateOrchestrationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateOrchestrationRequest
+        r"""CreateOrchestrationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOrchestrationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateOrchestrationRequest.
+        r"""Gets the instance_id of this CreateOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class CreateOrchestrationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateOrchestrationRequest.
+        r"""Sets the instance_id of this CreateOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class CreateOrchestrationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrchestrationRequest.
+        r"""Gets the body of this CreateOrchestrationRequest.
 
         :return: The body of this CreateOrchestrationRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.OrchestrationCreate`
@@ -80,7 +80,7 @@ class CreateOrchestrationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrchestrationRequest.
+        r"""Sets the body of this CreateOrchestrationRequest.
 
         :param body: The body of this CreateOrchestrationRequest.
         :type body: :class:`huaweicloudsdkapig.v2.OrchestrationCreate`

@@ -29,7 +29,7 @@ class UpdateSecretRequest:
     }
 
     def __init__(self, ief_instance_id=None, secret_id=None, body=None):
-        """UpdateSecretRequest
+        r"""UpdateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateSecretRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateSecretRequest.
+        r"""Gets the ief_instance_id of this UpdateSecretRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateSecretRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateSecretRequest.
+        r"""Sets the ief_instance_id of this UpdateSecretRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateSecretRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this UpdateSecretRequest.
+        r"""Gets the secret_id of this UpdateSecretRequest.
 
         密钥ID
 
@@ -89,7 +89,7 @@ class UpdateSecretRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this UpdateSecretRequest.
+        r"""Sets the secret_id of this UpdateSecretRequest.
 
         密钥ID
 
@@ -100,7 +100,7 @@ class UpdateSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecretRequest.
+        r"""Gets the body of this UpdateSecretRequest.
 
         :return: The body of this UpdateSecretRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateSecret`
@@ -109,7 +109,7 @@ class UpdateSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecretRequest.
+        r"""Sets the body of this UpdateSecretRequest.
 
         :param body: The body of this UpdateSecretRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdateSecret`

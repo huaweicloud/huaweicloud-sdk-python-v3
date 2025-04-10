@@ -28,7 +28,7 @@ class ListAnticrawlerRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListAnticrawlerRulesResponse
+        r"""ListAnticrawlerRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAnticrawlerRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAnticrawlerRulesResponse.
+        r"""Gets the total of this ListAnticrawlerRulesResponse.
 
         该策略下反爬虫规则数量
 
@@ -62,7 +62,7 @@ class ListAnticrawlerRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAnticrawlerRulesResponse.
+        r"""Sets the total of this ListAnticrawlerRulesResponse.
 
         该策略下反爬虫规则数量
 
@@ -73,7 +73,7 @@ class ListAnticrawlerRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAnticrawlerRulesResponse.
+        r"""Gets the items of this ListAnticrawlerRulesResponse.
 
         反爬虫规则列表
 
@@ -84,7 +84,7 @@ class ListAnticrawlerRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAnticrawlerRulesResponse.
+        r"""Sets the items of this ListAnticrawlerRulesResponse.
 
         反爬虫规则列表
 

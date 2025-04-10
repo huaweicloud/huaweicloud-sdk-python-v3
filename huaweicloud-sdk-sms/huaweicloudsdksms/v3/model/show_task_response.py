@@ -100,7 +100,7 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, speed_limit=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None, network_check_info=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None):
-        """ShowTaskResponse
+        r"""ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -303,7 +303,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTaskResponse.
+        r"""Gets the name of this ShowTaskResponse.
 
         任务名称（用户自定义）
 
@@ -314,7 +314,7 @@ class ShowTaskResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTaskResponse.
+        r"""Sets the name of this ShowTaskResponse.
 
         任务名称（用户自定义）
 
@@ -325,7 +325,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowTaskResponse.
+        r"""Gets the type of this ShowTaskResponse.
 
         任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -336,7 +336,7 @@ class ShowTaskResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowTaskResponse.
+        r"""Sets the type of this ShowTaskResponse.
 
         任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -347,7 +347,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowTaskResponse.
+        r"""Gets the os_type of this ShowTaskResponse.
 
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
@@ -358,7 +358,7 @@ class ShowTaskResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowTaskResponse.
+        r"""Sets the os_type of this ShowTaskResponse.
 
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
@@ -369,7 +369,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTaskResponse.
+        r"""Gets the id of this ShowTaskResponse.
 
         迁移任务ID
 
@@ -380,7 +380,7 @@ class ShowTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTaskResponse.
+        r"""Sets the id of this ShowTaskResponse.
 
         迁移任务ID
 
@@ -391,7 +391,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ShowTaskResponse.
+        r"""Gets the priority of this ShowTaskResponse.
 
         进程优先级  0：低  1：标准（默认）  2：高
 
@@ -402,7 +402,7 @@ class ShowTaskResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowTaskResponse.
+        r"""Sets the priority of this ShowTaskResponse.
 
         进程优先级  0：低  1：标准（默认）  2：高
 
@@ -413,7 +413,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this ShowTaskResponse.
+        r"""Gets the speed_limit of this ShowTaskResponse.
 
         迁移限速
 
@@ -424,7 +424,7 @@ class ShowTaskResponse(SdkResponse):
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this ShowTaskResponse.
+        r"""Sets the speed_limit of this ShowTaskResponse.
 
         迁移限速
 
@@ -435,7 +435,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowTaskResponse.
+        r"""Gets the region_id of this ShowTaskResponse.
 
         目的端服务器的区域ID
 
@@ -446,7 +446,7 @@ class ShowTaskResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowTaskResponse.
+        r"""Sets the region_id of this ShowTaskResponse.
 
         目的端服务器的区域ID
 
@@ -457,7 +457,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this ShowTaskResponse.
+        r"""Gets the start_target_server of this ShowTaskResponse.
 
         迁移完成后是否启动目的端服务器  true：启动  false：停止
 
@@ -468,7 +468,7 @@ class ShowTaskResponse(SdkResponse):
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this ShowTaskResponse.
+        r"""Sets the start_target_server of this ShowTaskResponse.
 
         迁移完成后是否启动目的端服务器  true：启动  false：停止
 
@@ -479,7 +479,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowTaskResponse.
+        r"""Gets the enterprise_project_id of this ShowTaskResponse.
 
         企业项目ID
 
@@ -490,7 +490,7 @@ class ShowTaskResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowTaskResponse.
+        r"""Sets the enterprise_project_id of this ShowTaskResponse.
 
         企业项目ID
 
@@ -501,7 +501,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def migration_ip(self):
-        """Gets the migration_ip of this ShowTaskResponse.
+        r"""Gets the migration_ip of this ShowTaskResponse.
 
         目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
@@ -512,7 +512,7 @@ class ShowTaskResponse(SdkResponse):
 
     @migration_ip.setter
     def migration_ip(self, migration_ip):
-        """Sets the migration_ip of this ShowTaskResponse.
+        r"""Sets the migration_ip of this ShowTaskResponse.
 
         目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
@@ -523,7 +523,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def region_name(self):
-        """Gets the region_name of this ShowTaskResponse.
+        r"""Gets the region_name of this ShowTaskResponse.
 
         目的端服务器的区域名称
 
@@ -534,7 +534,7 @@ class ShowTaskResponse(SdkResponse):
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ShowTaskResponse.
+        r"""Sets the region_name of this ShowTaskResponse.
 
         目的端服务器的区域名称
 
@@ -545,7 +545,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowTaskResponse.
+        r"""Gets the project_name of this ShowTaskResponse.
 
         目的端服务器所在项目名称
 
@@ -556,7 +556,7 @@ class ShowTaskResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowTaskResponse.
+        r"""Sets the project_name of this ShowTaskResponse.
 
         目的端服务器所在项目名称
 
@@ -567,7 +567,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTaskResponse.
+        r"""Gets the project_id of this ShowTaskResponse.
 
         目的端服务器所在项目ID
 
@@ -578,7 +578,7 @@ class ShowTaskResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTaskResponse.
+        r"""Sets the project_id of this ShowTaskResponse.
 
         目的端服务器所在项目ID
 
@@ -589,7 +589,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def vm_template_id(self):
-        """Gets the vm_template_id of this ShowTaskResponse.
+        r"""Gets the vm_template_id of this ShowTaskResponse.
 
         模板ID
 
@@ -600,7 +600,7 @@ class ShowTaskResponse(SdkResponse):
 
     @vm_template_id.setter
     def vm_template_id(self, vm_template_id):
-        """Sets the vm_template_id of this ShowTaskResponse.
+        r"""Sets the vm_template_id of this ShowTaskResponse.
 
         模板ID
 
@@ -611,7 +611,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def source_server(self):
-        """Gets the source_server of this ShowTaskResponse.
+        r"""Gets the source_server of this ShowTaskResponse.
 
         :return: The source_server of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.SourceServerResponse`
@@ -620,7 +620,7 @@ class ShowTaskResponse(SdkResponse):
 
     @source_server.setter
     def source_server(self, source_server):
-        """Sets the source_server of this ShowTaskResponse.
+        r"""Sets the source_server of this ShowTaskResponse.
 
         :param source_server: The source_server of this ShowTaskResponse.
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerResponse`
@@ -629,7 +629,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def target_server(self):
-        """Gets the target_server of this ShowTaskResponse.
+        r"""Gets the target_server of this ShowTaskResponse.
 
         :return: The target_server of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.TaskTargetServer`
@@ -638,7 +638,7 @@ class ShowTaskResponse(SdkResponse):
 
     @target_server.setter
     def target_server(self, target_server):
-        """Sets the target_server of this ShowTaskResponse.
+        r"""Sets the target_server of this ShowTaskResponse.
 
         :param target_server: The target_server of this ShowTaskResponse.
         :type target_server: :class:`huaweicloudsdksms.v3.TaskTargetServer`
@@ -647,7 +647,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowTaskResponse.
+        r"""Gets the state of this ShowTaskResponse.
 
         任务状态
 
@@ -658,7 +658,7 @@ class ShowTaskResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowTaskResponse.
+        r"""Sets the state of this ShowTaskResponse.
 
         任务状态
 
@@ -669,7 +669,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def estimate_complete_time(self):
-        """Gets the estimate_complete_time of this ShowTaskResponse.
+        r"""Gets the estimate_complete_time of this ShowTaskResponse.
 
         预估完成时间
 
@@ -680,7 +680,7 @@ class ShowTaskResponse(SdkResponse):
 
     @estimate_complete_time.setter
     def estimate_complete_time(self, estimate_complete_time):
-        """Sets the estimate_complete_time of this ShowTaskResponse.
+        r"""Sets the estimate_complete_time of this ShowTaskResponse.
 
         预估完成时间
 
@@ -691,7 +691,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def connected(self):
-        """Gets the connected of this ShowTaskResponse.
+        r"""Gets the connected of this ShowTaskResponse.
 
         连接状态
 
@@ -702,7 +702,7 @@ class ShowTaskResponse(SdkResponse):
 
     @connected.setter
     def connected(self, connected):
-        """Sets the connected of this ShowTaskResponse.
+        r"""Sets the connected of this ShowTaskResponse.
 
         连接状态
 
@@ -713,7 +713,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def create_date(self):
-        """Gets the create_date of this ShowTaskResponse.
+        r"""Gets the create_date of this ShowTaskResponse.
 
         任务创建时间
 
@@ -724,7 +724,7 @@ class ShowTaskResponse(SdkResponse):
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this ShowTaskResponse.
+        r"""Sets the create_date of this ShowTaskResponse.
 
         任务创建时间
 
@@ -735,7 +735,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def start_date(self):
-        """Gets the start_date of this ShowTaskResponse.
+        r"""Gets the start_date of this ShowTaskResponse.
 
         任务开始时间
 
@@ -746,7 +746,7 @@ class ShowTaskResponse(SdkResponse):
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ShowTaskResponse.
+        r"""Sets the start_date of this ShowTaskResponse.
 
         任务开始时间
 
@@ -757,7 +757,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def finish_date(self):
-        """Gets the finish_date of this ShowTaskResponse.
+        r"""Gets the finish_date of this ShowTaskResponse.
 
         任务结束时间
 
@@ -768,7 +768,7 @@ class ShowTaskResponse(SdkResponse):
 
     @finish_date.setter
     def finish_date(self, finish_date):
-        """Sets the finish_date of this ShowTaskResponse.
+        r"""Sets the finish_date of this ShowTaskResponse.
 
         任务结束时间
 
@@ -779,7 +779,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def migrate_speed(self):
-        """Gets the migrate_speed of this ShowTaskResponse.
+        r"""Gets the migrate_speed of this ShowTaskResponse.
 
         迁移速率，单位：MB/S
 
@@ -790,7 +790,7 @@ class ShowTaskResponse(SdkResponse):
 
     @migrate_speed.setter
     def migrate_speed(self, migrate_speed):
-        """Sets the migrate_speed of this ShowTaskResponse.
+        r"""Sets the migrate_speed of this ShowTaskResponse.
 
         迁移速率，单位：MB/S
 
@@ -801,7 +801,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def compress_rate(self):
-        """Gets the compress_rate of this ShowTaskResponse.
+        r"""Gets the compress_rate of this ShowTaskResponse.
 
         压缩率
 
@@ -812,7 +812,7 @@ class ShowTaskResponse(SdkResponse):
 
     @compress_rate.setter
     def compress_rate(self, compress_rate):
-        """Sets the compress_rate of this ShowTaskResponse.
+        r"""Sets the compress_rate of this ShowTaskResponse.
 
         压缩率
 
@@ -823,7 +823,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def error_json(self):
-        """Gets the error_json of this ShowTaskResponse.
+        r"""Gets the error_json of this ShowTaskResponse.
 
         错误信息
 
@@ -834,7 +834,7 @@ class ShowTaskResponse(SdkResponse):
 
     @error_json.setter
     def error_json(self, error_json):
-        """Sets the error_json of this ShowTaskResponse.
+        r"""Sets the error_json of this ShowTaskResponse.
 
         错误信息
 
@@ -845,7 +845,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def total_time(self):
-        """Gets the total_time of this ShowTaskResponse.
+        r"""Gets the total_time of this ShowTaskResponse.
 
         任务总耗时
 
@@ -856,7 +856,7 @@ class ShowTaskResponse(SdkResponse):
 
     @total_time.setter
     def total_time(self, total_time):
-        """Sets the total_time of this ShowTaskResponse.
+        r"""Sets the total_time of this ShowTaskResponse.
 
         任务总耗时
 
@@ -867,7 +867,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def float_ip(self):
-        """Gets the float_ip of this ShowTaskResponse.
+        r"""Gets the float_ip of this ShowTaskResponse.
 
         暂时保留float,兼容现网老版本的SMS-Agent
 
@@ -878,7 +878,7 @@ class ShowTaskResponse(SdkResponse):
 
     @float_ip.setter
     def float_ip(self, float_ip):
-        """Sets the float_ip of this ShowTaskResponse.
+        r"""Sets the float_ip of this ShowTaskResponse.
 
         暂时保留float,兼容现网老版本的SMS-Agent
 
@@ -889,7 +889,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def remain_seconds(self):
-        """Gets the remain_seconds of this ShowTaskResponse.
+        r"""Gets the remain_seconds of this ShowTaskResponse.
 
         迁移剩余时间（秒）
 
@@ -900,7 +900,7 @@ class ShowTaskResponse(SdkResponse):
 
     @remain_seconds.setter
     def remain_seconds(self, remain_seconds):
-        """Sets the remain_seconds of this ShowTaskResponse.
+        r"""Sets the remain_seconds of this ShowTaskResponse.
 
         迁移剩余时间（秒）
 
@@ -911,7 +911,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def target_snapshot_id(self):
-        """Gets the target_snapshot_id of this ShowTaskResponse.
+        r"""Gets the target_snapshot_id of this ShowTaskResponse.
 
         目的端的快照ID
 
@@ -922,7 +922,7 @@ class ShowTaskResponse(SdkResponse):
 
     @target_snapshot_id.setter
     def target_snapshot_id(self, target_snapshot_id):
-        """Sets the target_snapshot_id of this ShowTaskResponse.
+        r"""Sets the target_snapshot_id of this ShowTaskResponse.
 
         目的端的快照ID
 
@@ -933,7 +933,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def clone_server(self):
-        """Gets the clone_server of this ShowTaskResponse.
+        r"""Gets the clone_server of this ShowTaskResponse.
 
         :return: The clone_server of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -942,7 +942,7 @@ class ShowTaskResponse(SdkResponse):
 
     @clone_server.setter
     def clone_server(self, clone_server):
-        """Sets the clone_server of this ShowTaskResponse.
+        r"""Sets the clone_server of this ShowTaskResponse.
 
         :param clone_server: The clone_server of this ShowTaskResponse.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -951,7 +951,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def sub_tasks(self):
-        """Gets the sub_tasks of this ShowTaskResponse.
+        r"""Gets the sub_tasks of this ShowTaskResponse.
 
         任务包含的子任务列表
 
@@ -962,7 +962,7 @@ class ShowTaskResponse(SdkResponse):
 
     @sub_tasks.setter
     def sub_tasks(self, sub_tasks):
-        """Sets the sub_tasks of this ShowTaskResponse.
+        r"""Sets the sub_tasks of this ShowTaskResponse.
 
         任务包含的子任务列表
 
@@ -973,7 +973,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def network_check_info(self):
-        """Gets the network_check_info of this ShowTaskResponse.
+        r"""Gets the network_check_info of this ShowTaskResponse.
 
         :return: The network_check_info of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
@@ -982,7 +982,7 @@ class ShowTaskResponse(SdkResponse):
 
     @network_check_info.setter
     def network_check_info(self, network_check_info):
-        """Sets the network_check_info of this ShowTaskResponse.
+        r"""Sets the network_check_info of this ShowTaskResponse.
 
         :param network_check_info: The network_check_info of this ShowTaskResponse.
         :type network_check_info: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
@@ -991,7 +991,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def total_cpu_usage(self):
-        """Gets the total_cpu_usage of this ShowTaskResponse.
+        r"""Gets the total_cpu_usage of this ShowTaskResponse.
 
         主机的CPU使用率，单位是百分比
 
@@ -1002,7 +1002,7 @@ class ShowTaskResponse(SdkResponse):
 
     @total_cpu_usage.setter
     def total_cpu_usage(self, total_cpu_usage):
-        """Sets the total_cpu_usage of this ShowTaskResponse.
+        r"""Sets the total_cpu_usage of this ShowTaskResponse.
 
         主机的CPU使用率，单位是百分比
 
@@ -1013,7 +1013,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def agent_cpu_usage(self):
-        """Gets the agent_cpu_usage of this ShowTaskResponse.
+        r"""Gets the agent_cpu_usage of this ShowTaskResponse.
 
         Agent的CPU使用率，单位是百分比
 
@@ -1024,7 +1024,7 @@ class ShowTaskResponse(SdkResponse):
 
     @agent_cpu_usage.setter
     def agent_cpu_usage(self, agent_cpu_usage):
-        """Sets the agent_cpu_usage of this ShowTaskResponse.
+        r"""Sets the agent_cpu_usage of this ShowTaskResponse.
 
         Agent的CPU使用率，单位是百分比
 
@@ -1035,7 +1035,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def total_mem_usage(self):
-        """Gets the total_mem_usage of this ShowTaskResponse.
+        r"""Gets the total_mem_usage of this ShowTaskResponse.
 
         主机的内存使用值，单位是MB
 
@@ -1046,7 +1046,7 @@ class ShowTaskResponse(SdkResponse):
 
     @total_mem_usage.setter
     def total_mem_usage(self, total_mem_usage):
-        """Sets the total_mem_usage of this ShowTaskResponse.
+        r"""Sets the total_mem_usage of this ShowTaskResponse.
 
         主机的内存使用值，单位是MB
 
@@ -1057,7 +1057,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def agent_mem_usage(self):
-        """Gets the agent_mem_usage of this ShowTaskResponse.
+        r"""Gets the agent_mem_usage of this ShowTaskResponse.
 
         Agent的内存使用值，单位是MB
 
@@ -1068,7 +1068,7 @@ class ShowTaskResponse(SdkResponse):
 
     @agent_mem_usage.setter
     def agent_mem_usage(self, agent_mem_usage):
-        """Sets the agent_mem_usage of this ShowTaskResponse.
+        r"""Sets the agent_mem_usage of this ShowTaskResponse.
 
         Agent的内存使用值，单位是MB
 
@@ -1079,7 +1079,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def total_disk_io(self):
-        """Gets the total_disk_io of this ShowTaskResponse.
+        r"""Gets the total_disk_io of this ShowTaskResponse.
 
         主机的磁盘I/O值，单位是MB/s
 
@@ -1090,7 +1090,7 @@ class ShowTaskResponse(SdkResponse):
 
     @total_disk_io.setter
     def total_disk_io(self, total_disk_io):
-        """Sets the total_disk_io of this ShowTaskResponse.
+        r"""Sets the total_disk_io of this ShowTaskResponse.
 
         主机的磁盘I/O值，单位是MB/s
 
@@ -1101,7 +1101,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def agent_disk_io(self):
-        """Gets the agent_disk_io of this ShowTaskResponse.
+        r"""Gets the agent_disk_io of this ShowTaskResponse.
 
         Agent的磁盘I/O值，单位是MB/s
 
@@ -1112,7 +1112,7 @@ class ShowTaskResponse(SdkResponse):
 
     @agent_disk_io.setter
     def agent_disk_io(self, agent_disk_io):
-        """Sets the agent_disk_io of this ShowTaskResponse.
+        r"""Sets the agent_disk_io of this ShowTaskResponse.
 
         Agent的磁盘I/O值，单位是MB/s
 

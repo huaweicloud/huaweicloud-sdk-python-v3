@@ -27,7 +27,7 @@ class SmartDocumentRecognizerFormResult:
     }
 
     def __init__(self, form_count=None, form_list=None):
-        """SmartDocumentRecognizerFormResult
+        r"""SmartDocumentRecognizerFormResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SmartDocumentRecognizerFormResult:
 
     @property
     def form_count(self):
-        """Gets the form_count of this SmartDocumentRecognizerFormResult.
+        r"""Gets the form_count of this SmartDocumentRecognizerFormResult.
 
         模型识别到的有线表单数量。 
 
@@ -61,7 +61,7 @@ class SmartDocumentRecognizerFormResult:
 
     @form_count.setter
     def form_count(self, form_count):
-        """Sets the form_count of this SmartDocumentRecognizerFormResult.
+        r"""Sets the form_count of this SmartDocumentRecognizerFormResult.
 
         模型识别到的有线表单数量。 
 
@@ -72,7 +72,7 @@ class SmartDocumentRecognizerFormResult:
 
     @property
     def form_list(self):
-        """Gets the form_list of this SmartDocumentRecognizerFormResult.
+        r"""Gets the form_list of this SmartDocumentRecognizerFormResult.
 
         有线表单识别结果列表。 
 
@@ -83,7 +83,7 @@ class SmartDocumentRecognizerFormResult:
 
     @form_list.setter
     def form_list(self, form_list):
-        """Sets the form_list of this SmartDocumentRecognizerFormResult.
+        r"""Sets the form_list of this SmartDocumentRecognizerFormResult.
 
         有线表单识别结果列表。 
 

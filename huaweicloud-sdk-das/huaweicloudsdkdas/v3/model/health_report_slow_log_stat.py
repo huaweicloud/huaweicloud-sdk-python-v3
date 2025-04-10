@@ -37,7 +37,7 @@ class HealthReportSlowLogStat:
     }
 
     def __init__(self, collect_slow_log=None, top_execute_slow_logs=None, top_avg_query_time_slow_logs=None, top_max_query_time_slow_logs=None, rows_examined_exceeding=None, analyze_success=None, error_message=None):
-        """HealthReportSlowLogStat
+        r"""HealthReportSlowLogStat
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HealthReportSlowLogStat:
 
     @property
     def collect_slow_log(self):
-        """Gets the collect_slow_log of this HealthReportSlowLogStat.
+        r"""Gets the collect_slow_log of this HealthReportSlowLogStat.
 
         是否收集慢SQL。
 
@@ -89,7 +89,7 @@ class HealthReportSlowLogStat:
 
     @collect_slow_log.setter
     def collect_slow_log(self, collect_slow_log):
-        """Sets the collect_slow_log of this HealthReportSlowLogStat.
+        r"""Sets the collect_slow_log of this HealthReportSlowLogStat.
 
         是否收集慢SQL。
 
@@ -100,7 +100,7 @@ class HealthReportSlowLogStat:
 
     @property
     def top_execute_slow_logs(self):
-        """Gets the top_execute_slow_logs of this HealthReportSlowLogStat.
+        r"""Gets the top_execute_slow_logs of this HealthReportSlowLogStat.
 
         慢SQL Top执行次数列表。
 
@@ -111,7 +111,7 @@ class HealthReportSlowLogStat:
 
     @top_execute_slow_logs.setter
     def top_execute_slow_logs(self, top_execute_slow_logs):
-        """Sets the top_execute_slow_logs of this HealthReportSlowLogStat.
+        r"""Sets the top_execute_slow_logs of this HealthReportSlowLogStat.
 
         慢SQL Top执行次数列表。
 
@@ -122,7 +122,7 @@ class HealthReportSlowLogStat:
 
     @property
     def top_avg_query_time_slow_logs(self):
-        """Gets the top_avg_query_time_slow_logs of this HealthReportSlowLogStat.
+        r"""Gets the top_avg_query_time_slow_logs of this HealthReportSlowLogStat.
 
         慢SQL Top平均执行时间列表。
 
@@ -133,7 +133,7 @@ class HealthReportSlowLogStat:
 
     @top_avg_query_time_slow_logs.setter
     def top_avg_query_time_slow_logs(self, top_avg_query_time_slow_logs):
-        """Sets the top_avg_query_time_slow_logs of this HealthReportSlowLogStat.
+        r"""Sets the top_avg_query_time_slow_logs of this HealthReportSlowLogStat.
 
         慢SQL Top平均执行时间列表。
 
@@ -144,7 +144,7 @@ class HealthReportSlowLogStat:
 
     @property
     def top_max_query_time_slow_logs(self):
-        """Gets the top_max_query_time_slow_logs of this HealthReportSlowLogStat.
+        r"""Gets the top_max_query_time_slow_logs of this HealthReportSlowLogStat.
 
         慢SQL Top最大执行时间列表。
 
@@ -155,7 +155,7 @@ class HealthReportSlowLogStat:
 
     @top_max_query_time_slow_logs.setter
     def top_max_query_time_slow_logs(self, top_max_query_time_slow_logs):
-        """Sets the top_max_query_time_slow_logs of this HealthReportSlowLogStat.
+        r"""Sets the top_max_query_time_slow_logs of this HealthReportSlowLogStat.
 
         慢SQL Top最大执行时间列表。
 
@@ -166,7 +166,7 @@ class HealthReportSlowLogStat:
 
     @property
     def rows_examined_exceeding(self):
-        """Gets the rows_examined_exceeding of this HealthReportSlowLogStat.
+        r"""Gets the rows_examined_exceeding of this HealthReportSlowLogStat.
 
         慢SQL Top扫描返回比列表。
 
@@ -177,7 +177,7 @@ class HealthReportSlowLogStat:
 
     @rows_examined_exceeding.setter
     def rows_examined_exceeding(self, rows_examined_exceeding):
-        """Sets the rows_examined_exceeding of this HealthReportSlowLogStat.
+        r"""Sets the rows_examined_exceeding of this HealthReportSlowLogStat.
 
         慢SQL Top扫描返回比列表。
 
@@ -188,7 +188,7 @@ class HealthReportSlowLogStat:
 
     @property
     def analyze_success(self):
-        """Gets the analyze_success of this HealthReportSlowLogStat.
+        r"""Gets the analyze_success of this HealthReportSlowLogStat.
 
         统计分析是否成功。
 
@@ -199,7 +199,7 @@ class HealthReportSlowLogStat:
 
     @analyze_success.setter
     def analyze_success(self, analyze_success):
-        """Sets the analyze_success of this HealthReportSlowLogStat.
+        r"""Sets the analyze_success of this HealthReportSlowLogStat.
 
         统计分析是否成功。
 
@@ -210,7 +210,7 @@ class HealthReportSlowLogStat:
 
     @property
     def error_message(self):
-        """Gets the error_message of this HealthReportSlowLogStat.
+        r"""Gets the error_message of this HealthReportSlowLogStat.
 
         错误信息。
 
@@ -221,7 +221,7 @@ class HealthReportSlowLogStat:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this HealthReportSlowLogStat.
+        r"""Sets the error_message of this HealthReportSlowLogStat.
 
         错误信息。
 

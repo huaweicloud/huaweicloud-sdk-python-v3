@@ -55,7 +55,7 @@ class DeploymentGroupDetail:
     }
 
     def __init__(self, group_id=None, created_time=None, updated_time=None, host_count=None, project_name=None, name=None, region_name=None, project_id=None, os=None, auto_connection_test_switch=None, slave_cluster_id=None, nick_name=None, created_by=None, updated_by=None, description=None, permission=None):
-        """DeploymentGroupDetail
+        r"""DeploymentGroupDetail
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class DeploymentGroupDetail:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeploymentGroupDetail.
+        r"""Gets the group_id of this DeploymentGroupDetail.
 
         主机集群id
 
@@ -159,7 +159,7 @@ class DeploymentGroupDetail:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeploymentGroupDetail.
+        r"""Sets the group_id of this DeploymentGroupDetail.
 
         主机集群id
 
@@ -170,7 +170,7 @@ class DeploymentGroupDetail:
 
     @property
     def created_time(self):
-        """Gets the created_time of this DeploymentGroupDetail.
+        r"""Gets the created_time of this DeploymentGroupDetail.
 
         创建时间
 
@@ -181,7 +181,7 @@ class DeploymentGroupDetail:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this DeploymentGroupDetail.
+        r"""Sets the created_time of this DeploymentGroupDetail.
 
         创建时间
 
@@ -192,7 +192,7 @@ class DeploymentGroupDetail:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this DeploymentGroupDetail.
+        r"""Gets the updated_time of this DeploymentGroupDetail.
 
         修改时间
 
@@ -203,7 +203,7 @@ class DeploymentGroupDetail:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this DeploymentGroupDetail.
+        r"""Sets the updated_time of this DeploymentGroupDetail.
 
         修改时间
 
@@ -214,7 +214,7 @@ class DeploymentGroupDetail:
 
     @property
     def host_count(self):
-        """Gets the host_count of this DeploymentGroupDetail.
+        r"""Gets the host_count of this DeploymentGroupDetail.
 
         集群内主机数量，一个主机集群内最多可添加200台主机
 
@@ -225,7 +225,7 @@ class DeploymentGroupDetail:
 
     @host_count.setter
     def host_count(self, host_count):
-        """Sets the host_count of this DeploymentGroupDetail.
+        r"""Sets the host_count of this DeploymentGroupDetail.
 
         集群内主机数量，一个主机集群内最多可添加200台主机
 
@@ -236,7 +236,7 @@ class DeploymentGroupDetail:
 
     @property
     def project_name(self):
-        """Gets the project_name of this DeploymentGroupDetail.
+        r"""Gets the project_name of this DeploymentGroupDetail.
 
         项目名称
 
@@ -247,7 +247,7 @@ class DeploymentGroupDetail:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this DeploymentGroupDetail.
+        r"""Sets the project_name of this DeploymentGroupDetail.
 
         项目名称
 
@@ -258,7 +258,7 @@ class DeploymentGroupDetail:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentGroupDetail.
+        r"""Gets the name of this DeploymentGroupDetail.
 
         主机集群名
 
@@ -269,7 +269,7 @@ class DeploymentGroupDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentGroupDetail.
+        r"""Sets the name of this DeploymentGroupDetail.
 
         主机集群名
 
@@ -280,7 +280,7 @@ class DeploymentGroupDetail:
 
     @property
     def region_name(self):
-        """Gets the region_name of this DeploymentGroupDetail.
+        r"""Gets the region_name of this DeploymentGroupDetail.
 
         局点信息
 
@@ -291,7 +291,7 @@ class DeploymentGroupDetail:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this DeploymentGroupDetail.
+        r"""Sets the region_name of this DeploymentGroupDetail.
 
         局点信息
 
@@ -302,7 +302,7 @@ class DeploymentGroupDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeploymentGroupDetail.
+        r"""Gets the project_id of this DeploymentGroupDetail.
 
         项目id
 
@@ -313,7 +313,7 @@ class DeploymentGroupDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeploymentGroupDetail.
+        r"""Sets the project_id of this DeploymentGroupDetail.
 
         项目id
 
@@ -324,7 +324,7 @@ class DeploymentGroupDetail:
 
     @property
     def os(self):
-        """Gets the os of this DeploymentGroupDetail.
+        r"""Gets the os of this DeploymentGroupDetail.
 
         操作系统：windows|linux
 
@@ -335,7 +335,7 @@ class DeploymentGroupDetail:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this DeploymentGroupDetail.
+        r"""Sets the os of this DeploymentGroupDetail.
 
         操作系统：windows|linux
 
@@ -346,7 +346,7 @@ class DeploymentGroupDetail:
 
     @property
     def auto_connection_test_switch(self):
-        """Gets the auto_connection_test_switch of this DeploymentGroupDetail.
+        r"""Gets the auto_connection_test_switch of this DeploymentGroupDetail.
 
         自动测试功能已下架，该字段已失效
 
@@ -357,7 +357,7 @@ class DeploymentGroupDetail:
 
     @auto_connection_test_switch.setter
     def auto_connection_test_switch(self, auto_connection_test_switch):
-        """Sets the auto_connection_test_switch of this DeploymentGroupDetail.
+        r"""Sets the auto_connection_test_switch of this DeploymentGroupDetail.
 
         自动测试功能已下架，该字段已失效
 
@@ -368,7 +368,7 @@ class DeploymentGroupDetail:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this DeploymentGroupDetail.
+        r"""Gets the slave_cluster_id of this DeploymentGroupDetail.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -379,7 +379,7 @@ class DeploymentGroupDetail:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this DeploymentGroupDetail.
+        r"""Sets the slave_cluster_id of this DeploymentGroupDetail.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -390,7 +390,7 @@ class DeploymentGroupDetail:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this DeploymentGroupDetail.
+        r"""Gets the nick_name of this DeploymentGroupDetail.
 
         用户昵称
 
@@ -401,7 +401,7 @@ class DeploymentGroupDetail:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this DeploymentGroupDetail.
+        r"""Sets the nick_name of this DeploymentGroupDetail.
 
         用户昵称
 
@@ -412,7 +412,7 @@ class DeploymentGroupDetail:
 
     @property
     def created_by(self):
-        """Gets the created_by of this DeploymentGroupDetail.
+        r"""Gets the created_by of this DeploymentGroupDetail.
 
         :return: The created_by of this DeploymentGroupDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -421,7 +421,7 @@ class DeploymentGroupDetail:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this DeploymentGroupDetail.
+        r"""Sets the created_by of this DeploymentGroupDetail.
 
         :param created_by: The created_by of this DeploymentGroupDetail.
         :type created_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -430,7 +430,7 @@ class DeploymentGroupDetail:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this DeploymentGroupDetail.
+        r"""Gets the updated_by of this DeploymentGroupDetail.
 
         :return: The updated_by of this DeploymentGroupDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -439,7 +439,7 @@ class DeploymentGroupDetail:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this DeploymentGroupDetail.
+        r"""Sets the updated_by of this DeploymentGroupDetail.
 
         :param updated_by: The updated_by of this DeploymentGroupDetail.
         :type updated_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -448,7 +448,7 @@ class DeploymentGroupDetail:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentGroupDetail.
+        r"""Gets the description of this DeploymentGroupDetail.
 
         描述
 
@@ -459,7 +459,7 @@ class DeploymentGroupDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentGroupDetail.
+        r"""Sets the description of this DeploymentGroupDetail.
 
         描述
 
@@ -470,7 +470,7 @@ class DeploymentGroupDetail:
 
     @property
     def permission(self):
-        """Gets the permission of this DeploymentGroupDetail.
+        r"""Gets the permission of this DeploymentGroupDetail.
 
         :return: The permission of this DeploymentGroupDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionGroupDetail`
@@ -479,7 +479,7 @@ class DeploymentGroupDetail:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this DeploymentGroupDetail.
+        r"""Sets the permission of this DeploymentGroupDetail.
 
         :param permission: The permission of this DeploymentGroupDetail.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionGroupDetail`

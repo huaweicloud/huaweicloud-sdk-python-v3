@@ -31,7 +31,7 @@ class ListServiceSetDetailRequest:
     }
 
     def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None, query_service_set_type=None):
-        """ListServiceSetDetailRequest
+        r"""ListServiceSetDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListServiceSetDetailRequest:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ListServiceSetDetailRequest.
+        r"""Gets the set_id of this ListServiceSetDetailRequest.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -74,7 +74,7 @@ class ListServiceSetDetailRequest:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ListServiceSetDetailRequest.
+        r"""Sets the set_id of this ListServiceSetDetailRequest.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -85,7 +85,7 @@ class ListServiceSetDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListServiceSetDetailRequest.
+        r"""Gets the enterprise_project_id of this ListServiceSetDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -96,7 +96,7 @@ class ListServiceSetDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListServiceSetDetailRequest.
+        r"""Sets the enterprise_project_id of this ListServiceSetDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -107,7 +107,7 @@ class ListServiceSetDetailRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListServiceSetDetailRequest.
+        r"""Gets the fw_instance_id of this ListServiceSetDetailRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -118,7 +118,7 @@ class ListServiceSetDetailRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListServiceSetDetailRequest.
+        r"""Sets the fw_instance_id of this ListServiceSetDetailRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -129,7 +129,7 @@ class ListServiceSetDetailRequest:
 
     @property
     def query_service_set_type(self):
-        """Gets the query_service_set_type of this ListServiceSetDetailRequest.
+        r"""Gets the query_service_set_type of this ListServiceSetDetailRequest.
 
         查询服务组类型，0表示自定义服务组，1表示预定义服务组
 
@@ -140,7 +140,7 @@ class ListServiceSetDetailRequest:
 
     @query_service_set_type.setter
     def query_service_set_type(self, query_service_set_type):
-        """Sets the query_service_set_type of this ListServiceSetDetailRequest.
+        r"""Sets the query_service_set_type of this ListServiceSetDetailRequest.
 
         查询服务组类型，0表示自定义服务组，1表示预定义服务组
 

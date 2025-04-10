@@ -27,7 +27,7 @@ class ApplyRuleInfo:
     }
 
     def __init__(self, rule_type=None, rule=None):
-        """ApplyRuleInfo
+        r"""ApplyRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApplyRuleInfo:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this ApplyRuleInfo.
+        r"""Gets the rule_type of this ApplyRuleInfo.
 
         认证应用对象类型。 - ACCESS_MODE：接入类型
 
@@ -61,7 +61,7 @@ class ApplyRuleInfo:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this ApplyRuleInfo.
+        r"""Sets the rule_type of this ApplyRuleInfo.
 
         认证应用对象类型。 - ACCESS_MODE：接入类型
 
@@ -72,7 +72,7 @@ class ApplyRuleInfo:
 
     @property
     def rule(self):
-        """Gets the rule of this ApplyRuleInfo.
+        r"""Gets the rule of this ApplyRuleInfo.
 
         认证应用对象。 - INTERNET：互联网接入，rule_type为ACCESS_MODE时可选该值 - PRIVATE：专线接入，rule_type为ACCESS_MODE时可选该值
 
@@ -83,7 +83,7 @@ class ApplyRuleInfo:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ApplyRuleInfo.
+        r"""Sets the rule of this ApplyRuleInfo.
 
         认证应用对象。 - INTERNET：互联网接入，rule_type为ACCESS_MODE时可选该值 - PRIVATE：专线接入，rule_type为ACCESS_MODE时可选该值
 

@@ -27,7 +27,7 @@ class InstanceJob:
     }
 
     def __init__(self, job_id=None, server_ids=None):
-        """InstanceJob
+        r"""InstanceJob
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this InstanceJob.
+        r"""Gets the job_id of this InstanceJob.
 
         :return: The job_id of this InstanceJob.
         :rtype: str
@@ -59,7 +59,7 @@ class InstanceJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this InstanceJob.
+        r"""Sets the job_id of this InstanceJob.
 
         :param job_id: The job_id of this InstanceJob.
         :type job_id: str
@@ -68,7 +68,7 @@ class InstanceJob:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this InstanceJob.
+        r"""Gets the server_ids of this InstanceJob.
 
         :return: The server_ids of this InstanceJob.
         :rtype: list[str]
@@ -77,7 +77,7 @@ class InstanceJob:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this InstanceJob.
+        r"""Sets the server_ids of this InstanceJob.
 
         :param server_ids: The server_ids of this InstanceJob.
         :type server_ids: list[str]

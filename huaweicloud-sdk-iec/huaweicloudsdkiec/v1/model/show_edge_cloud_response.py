@@ -48,7 +48,7 @@ class ShowEdgeCloudResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, stacks=None, coverage=None, success_num=None, failed_num=None, status=None, fail_reason=None, edge_regions=None, description=None, create_at=None, update_at=None):
-        """ShowEdgeCloudResponse
+        r"""ShowEdgeCloudResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEdgeCloudResponse.
+        r"""Gets the id of this ShowEdgeCloudResponse.
 
         边缘业务ID。
 
@@ -132,7 +132,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEdgeCloudResponse.
+        r"""Sets the id of this ShowEdgeCloudResponse.
 
         边缘业务ID。
 
@@ -143,7 +143,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEdgeCloudResponse.
+        r"""Gets the name of this ShowEdgeCloudResponse.
 
         边缘业务名称。
 
@@ -154,7 +154,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEdgeCloudResponse.
+        r"""Sets the name of this ShowEdgeCloudResponse.
 
         边缘业务名称。
 
@@ -165,7 +165,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def stacks(self):
-        """Gets the stacks of this ShowEdgeCloudResponse.
+        r"""Gets the stacks of this ShowEdgeCloudResponse.
 
         边缘业务资源组。
 
@@ -176,7 +176,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @stacks.setter
     def stacks(self, stacks):
-        """Sets the stacks of this ShowEdgeCloudResponse.
+        r"""Sets the stacks of this ShowEdgeCloudResponse.
 
         边缘业务资源组。
 
@@ -187,7 +187,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def coverage(self):
-        """Gets the coverage of this ShowEdgeCloudResponse.
+        r"""Gets the coverage of this ShowEdgeCloudResponse.
 
         :return: The coverage of this ShowEdgeCloudResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.CoverageResp`
@@ -196,7 +196,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @coverage.setter
     def coverage(self, coverage):
-        """Sets the coverage of this ShowEdgeCloudResponse.
+        r"""Sets the coverage of this ShowEdgeCloudResponse.
 
         :param coverage: The coverage of this ShowEdgeCloudResponse.
         :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
@@ -205,7 +205,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def success_num(self):
-        """Gets the success_num of this ShowEdgeCloudResponse.
+        r"""Gets the success_num of this ShowEdgeCloudResponse.
 
         边缘业务成功创建的虚拟机数量。
 
@@ -216,7 +216,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ShowEdgeCloudResponse.
+        r"""Sets the success_num of this ShowEdgeCloudResponse.
 
         边缘业务成功创建的虚拟机数量。
 
@@ -227,7 +227,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this ShowEdgeCloudResponse.
+        r"""Gets the failed_num of this ShowEdgeCloudResponse.
 
         边缘业务创建失败的虚拟机数量。
 
@@ -238,7 +238,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this ShowEdgeCloudResponse.
+        r"""Sets the failed_num of this ShowEdgeCloudResponse.
 
         边缘业务创建失败的虚拟机数量。
 
@@ -249,7 +249,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEdgeCloudResponse.
+        r"""Gets the status of this ShowEdgeCloudResponse.
 
         边缘业务状态。
 
@@ -260,7 +260,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEdgeCloudResponse.
+        r"""Sets the status of this ShowEdgeCloudResponse.
 
         边缘业务状态。
 
@@ -271,7 +271,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowEdgeCloudResponse.
+        r"""Gets the fail_reason of this ShowEdgeCloudResponse.
 
         :return: The fail_reason of this ShowEdgeCloudResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.FailReason`
@@ -280,7 +280,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowEdgeCloudResponse.
+        r"""Sets the fail_reason of this ShowEdgeCloudResponse.
 
         :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
         :type fail_reason: :class:`huaweicloudsdkiec.v1.FailReason`
@@ -289,7 +289,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def edge_regions(self):
-        """Gets the edge_regions of this ShowEdgeCloudResponse.
+        r"""Gets the edge_regions of this ShowEdgeCloudResponse.
 
         边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
 
@@ -300,7 +300,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @edge_regions.setter
     def edge_regions(self, edge_regions):
-        """Sets the edge_regions of this ShowEdgeCloudResponse.
+        r"""Sets the edge_regions of this ShowEdgeCloudResponse.
 
         边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
 
@@ -311,7 +311,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEdgeCloudResponse.
+        r"""Gets the description of this ShowEdgeCloudResponse.
 
         描述。
 
@@ -322,7 +322,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEdgeCloudResponse.
+        r"""Sets the description of this ShowEdgeCloudResponse.
 
         描述。
 
@@ -333,7 +333,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this ShowEdgeCloudResponse.
+        r"""Gets the create_at of this ShowEdgeCloudResponse.
 
         创建时间。
 
@@ -344,7 +344,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ShowEdgeCloudResponse.
+        r"""Sets the create_at of this ShowEdgeCloudResponse.
 
         创建时间。
 
@@ -355,7 +355,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @property
     def update_at(self):
-        """Gets the update_at of this ShowEdgeCloudResponse.
+        r"""Gets the update_at of this ShowEdgeCloudResponse.
 
         修改时间。
 
@@ -366,7 +366,7 @@ class ShowEdgeCloudResponse(SdkResponse):
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ShowEdgeCloudResponse.
+        r"""Sets the update_at of this ShowEdgeCloudResponse.
 
         修改时间。
 

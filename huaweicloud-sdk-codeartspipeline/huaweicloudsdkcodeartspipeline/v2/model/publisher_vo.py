@@ -53,7 +53,7 @@ class PublisherVO:
     }
 
     def __init__(self, publisher_unique_id=None, user_id=None, tenant_id=None, description=None, logo_url=None, website=None, support_url=None, source_url=None, en_name=None, name=None, auth_status=None, is_delete=None, last_update_user_name=None, last_update_user_id=None, last_update_time=None):
-        """PublisherVO
+        r"""PublisherVO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class PublisherVO:
 
     @property
     def publisher_unique_id(self):
-        """Gets the publisher_unique_id of this PublisherVO.
+        r"""Gets the publisher_unique_id of this PublisherVO.
 
         发布商ID
 
@@ -152,7 +152,7 @@ class PublisherVO:
 
     @publisher_unique_id.setter
     def publisher_unique_id(self, publisher_unique_id):
-        """Sets the publisher_unique_id of this PublisherVO.
+        r"""Sets the publisher_unique_id of this PublisherVO.
 
         发布商ID
 
@@ -163,7 +163,7 @@ class PublisherVO:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PublisherVO.
+        r"""Gets the user_id of this PublisherVO.
 
         用户ID
 
@@ -174,7 +174,7 @@ class PublisherVO:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PublisherVO.
+        r"""Sets the user_id of this PublisherVO.
 
         用户ID
 
@@ -185,7 +185,7 @@ class PublisherVO:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PublisherVO.
+        r"""Gets the tenant_id of this PublisherVO.
 
         租户ID
 
@@ -196,7 +196,7 @@ class PublisherVO:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PublisherVO.
+        r"""Sets the tenant_id of this PublisherVO.
 
         租户ID
 
@@ -207,7 +207,7 @@ class PublisherVO:
 
     @property
     def description(self):
-        """Gets the description of this PublisherVO.
+        r"""Gets the description of this PublisherVO.
 
         描述
 
@@ -218,7 +218,7 @@ class PublisherVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublisherVO.
+        r"""Sets the description of this PublisherVO.
 
         描述
 
@@ -229,7 +229,7 @@ class PublisherVO:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this PublisherVO.
+        r"""Gets the logo_url of this PublisherVO.
 
         图标URL
 
@@ -240,7 +240,7 @@ class PublisherVO:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this PublisherVO.
+        r"""Sets the logo_url of this PublisherVO.
 
         图标URL
 
@@ -251,7 +251,7 @@ class PublisherVO:
 
     @property
     def website(self):
-        """Gets the website of this PublisherVO.
+        r"""Gets the website of this PublisherVO.
 
         网页地址
 
@@ -262,7 +262,7 @@ class PublisherVO:
 
     @website.setter
     def website(self, website):
-        """Sets the website of this PublisherVO.
+        r"""Sets the website of this PublisherVO.
 
         网页地址
 
@@ -273,7 +273,7 @@ class PublisherVO:
 
     @property
     def support_url(self):
-        """Gets the support_url of this PublisherVO.
+        r"""Gets the support_url of this PublisherVO.
 
         地址
 
@@ -284,7 +284,7 @@ class PublisherVO:
 
     @support_url.setter
     def support_url(self, support_url):
-        """Sets the support_url of this PublisherVO.
+        r"""Sets the support_url of this PublisherVO.
 
         地址
 
@@ -295,7 +295,7 @@ class PublisherVO:
 
     @property
     def source_url(self):
-        """Gets the source_url of this PublisherVO.
+        r"""Gets the source_url of this PublisherVO.
 
         地址
 
@@ -306,7 +306,7 @@ class PublisherVO:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this PublisherVO.
+        r"""Sets the source_url of this PublisherVO.
 
         地址
 
@@ -317,7 +317,7 @@ class PublisherVO:
 
     @property
     def en_name(self):
-        """Gets the en_name of this PublisherVO.
+        r"""Gets the en_name of this PublisherVO.
 
         英文名
 
@@ -328,7 +328,7 @@ class PublisherVO:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this PublisherVO.
+        r"""Sets the en_name of this PublisherVO.
 
         英文名
 
@@ -339,7 +339,7 @@ class PublisherVO:
 
     @property
     def name(self):
-        """Gets the name of this PublisherVO.
+        r"""Gets the name of this PublisherVO.
 
         名称
 
@@ -350,7 +350,7 @@ class PublisherVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublisherVO.
+        r"""Sets the name of this PublisherVO.
 
         名称
 
@@ -361,7 +361,7 @@ class PublisherVO:
 
     @property
     def auth_status(self):
-        """Gets the auth_status of this PublisherVO.
+        r"""Gets the auth_status of this PublisherVO.
 
         授权状态
 
@@ -372,7 +372,7 @@ class PublisherVO:
 
     @auth_status.setter
     def auth_status(self, auth_status):
-        """Sets the auth_status of this PublisherVO.
+        r"""Sets the auth_status of this PublisherVO.
 
         授权状态
 
@@ -383,7 +383,7 @@ class PublisherVO:
 
     @property
     def is_delete(self):
-        """Gets the is_delete of this PublisherVO.
+        r"""Gets the is_delete of this PublisherVO.
 
         是否删除
 
@@ -394,7 +394,7 @@ class PublisherVO:
 
     @is_delete.setter
     def is_delete(self, is_delete):
-        """Sets the is_delete of this PublisherVO.
+        r"""Sets the is_delete of this PublisherVO.
 
         是否删除
 
@@ -405,7 +405,7 @@ class PublisherVO:
 
     @property
     def last_update_user_name(self):
-        """Gets the last_update_user_name of this PublisherVO.
+        r"""Gets the last_update_user_name of this PublisherVO.
 
         最后更新人
 
@@ -416,7 +416,7 @@ class PublisherVO:
 
     @last_update_user_name.setter
     def last_update_user_name(self, last_update_user_name):
-        """Sets the last_update_user_name of this PublisherVO.
+        r"""Sets the last_update_user_name of this PublisherVO.
 
         最后更新人
 
@@ -427,7 +427,7 @@ class PublisherVO:
 
     @property
     def last_update_user_id(self):
-        """Gets the last_update_user_id of this PublisherVO.
+        r"""Gets the last_update_user_id of this PublisherVO.
 
         最后更新人ID
 
@@ -438,7 +438,7 @@ class PublisherVO:
 
     @last_update_user_id.setter
     def last_update_user_id(self, last_update_user_id):
-        """Sets the last_update_user_id of this PublisherVO.
+        r"""Sets the last_update_user_id of this PublisherVO.
 
         最后更新人ID
 
@@ -449,7 +449,7 @@ class PublisherVO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this PublisherVO.
+        r"""Gets the last_update_time of this PublisherVO.
 
         最后更新时间
 
@@ -460,7 +460,7 @@ class PublisherVO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this PublisherVO.
+        r"""Sets the last_update_time of this PublisherVO.
 
         最后更新时间
 

@@ -27,7 +27,7 @@ class PiFilterInfo:
     }
 
     def __init__(self, pi_sprints=None, all_pi=None):
-        """PiFilterInfo
+        r"""PiFilterInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PiFilterInfo:
 
     @property
     def pi_sprints(self):
-        """Gets the pi_sprints of this PiFilterInfo.
+        r"""Gets the pi_sprints of this PiFilterInfo.
 
         pi迭代筛选条件
 
@@ -61,7 +61,7 @@ class PiFilterInfo:
 
     @pi_sprints.setter
     def pi_sprints(self, pi_sprints):
-        """Sets the pi_sprints of this PiFilterInfo.
+        r"""Sets the pi_sprints of this PiFilterInfo.
 
         pi迭代筛选条件
 
@@ -72,7 +72,7 @@ class PiFilterInfo:
 
     @property
     def all_pi(self):
-        """Gets the all_pi of this PiFilterInfo.
+        r"""Gets the all_pi of this PiFilterInfo.
 
         pi下拉框全选标识，全选时为true
 
@@ -83,7 +83,7 @@ class PiFilterInfo:
 
     @all_pi.setter
     def all_pi(self, all_pi):
-        """Sets the all_pi of this PiFilterInfo.
+        r"""Sets the all_pi of this PiFilterInfo.
 
         pi下拉框全选标识，全选时为true
 

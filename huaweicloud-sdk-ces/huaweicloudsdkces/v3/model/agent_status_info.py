@@ -29,7 +29,7 @@ class AgentStatusInfo:
     }
 
     def __init__(self, instance_id=None, uniagent_status=None, extensions=None):
-        """AgentStatusInfo
+        r"""AgentStatusInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AgentStatusInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AgentStatusInfo.
+        r"""Gets the instance_id of this AgentStatusInfo.
 
         机器id
 
@@ -68,7 +68,7 @@ class AgentStatusInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AgentStatusInfo.
+        r"""Sets the instance_id of this AgentStatusInfo.
 
         机器id
 
@@ -79,7 +79,7 @@ class AgentStatusInfo:
 
     @property
     def uniagent_status(self):
-        """Gets the uniagent_status of this AgentStatusInfo.
+        r"""Gets the uniagent_status of this AgentStatusInfo.
 
         uniagent运行状态,none无，running运行中，silent静默中，unknown故障
 
@@ -90,7 +90,7 @@ class AgentStatusInfo:
 
     @uniagent_status.setter
     def uniagent_status(self, uniagent_status):
-        """Sets the uniagent_status of this AgentStatusInfo.
+        r"""Sets the uniagent_status of this AgentStatusInfo.
 
         uniagent运行状态,none无，running运行中，silent静默中，unknown故障
 
@@ -101,7 +101,7 @@ class AgentStatusInfo:
 
     @property
     def extensions(self):
-        """Gets the extensions of this AgentStatusInfo.
+        r"""Gets the extensions of this AgentStatusInfo.
 
         插件信息列表
 
@@ -112,7 +112,7 @@ class AgentStatusInfo:
 
     @extensions.setter
     def extensions(self, extensions):
-        """Sets the extensions of this AgentStatusInfo.
+        r"""Sets the extensions of this AgentStatusInfo.
 
         插件信息列表
 

@@ -26,7 +26,7 @@ class DeleteEdgeApplicationVersionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteEdgeApplicationVersionResponse
+        r"""DeleteEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteEdgeApplicationVersionResponse.
+        r"""Gets the body of this DeleteEdgeApplicationVersionResponse.
 
         :return: The body of this DeleteEdgeApplicationVersionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteEdgeApplicationVersionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteEdgeApplicationVersionResponse.
+        r"""Sets the body of this DeleteEdgeApplicationVersionResponse.
 
         :param body: The body of this DeleteEdgeApplicationVersionResponse.
         :type body: str

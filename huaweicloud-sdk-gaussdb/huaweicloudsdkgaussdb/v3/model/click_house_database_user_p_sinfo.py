@@ -29,7 +29,7 @@ class ClickHouseDatabaseUserPSinfo:
     }
 
     def __init__(self, user_name=None, databases=None, dml=None):
-        """ClickHouseDatabaseUserPSinfo
+        r"""ClickHouseDatabaseUserPSinfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ClickHouseDatabaseUserPSinfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ClickHouseDatabaseUserPSinfo.
+        r"""Gets the user_name of this ClickHouseDatabaseUserPSinfo.
 
         数据库账号名。
 
@@ -65,7 +65,7 @@ class ClickHouseDatabaseUserPSinfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ClickHouseDatabaseUserPSinfo.
+        r"""Sets the user_name of this ClickHouseDatabaseUserPSinfo.
 
         数据库账号名。
 
@@ -76,7 +76,7 @@ class ClickHouseDatabaseUserPSinfo:
 
     @property
     def databases(self):
-        """Gets the databases of this ClickHouseDatabaseUserPSinfo.
+        r"""Gets the databases of this ClickHouseDatabaseUserPSinfo.
 
         数据库列表。“*”表示所有数据库。
 
@@ -87,7 +87,7 @@ class ClickHouseDatabaseUserPSinfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ClickHouseDatabaseUserPSinfo.
+        r"""Sets the databases of this ClickHouseDatabaseUserPSinfo.
 
         数据库列表。“*”表示所有数据库。
 
@@ -98,7 +98,7 @@ class ClickHouseDatabaseUserPSinfo:
 
     @property
     def dml(self):
-        """Gets the dml of this ClickHouseDatabaseUserPSinfo.
+        r"""Gets the dml of this ClickHouseDatabaseUserPSinfo.
 
         DML权限。 取值范围： - 1：只读权限 - 2：读取和设置权限
 
@@ -109,7 +109,7 @@ class ClickHouseDatabaseUserPSinfo:
 
     @dml.setter
     def dml(self, dml):
-        """Sets the dml of this ClickHouseDatabaseUserPSinfo.
+        r"""Sets the dml of this ClickHouseDatabaseUserPSinfo.
 
         DML权限。 取值范围： - 1：只读权限 - 2：读取和设置权限
 

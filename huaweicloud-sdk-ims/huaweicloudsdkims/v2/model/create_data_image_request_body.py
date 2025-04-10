@@ -41,7 +41,7 @@ class CreateDataImageRequestBody:
     }
 
     def __init__(self, cmk_id=None, description=None, enterprise_project_id=None, image_tags=None, image_url=None, min_disk=None, name=None, os_type=None, tags=None):
-        """CreateDataImageRequestBody
+        r"""CreateDataImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreateDataImageRequestBody:
 
     @property
     def cmk_id(self):
-        """Gets the cmk_id of this CreateDataImageRequestBody.
+        r"""Gets the cmk_id of this CreateDataImageRequestBody.
 
         创建加密镜像的用户主密钥，具体取值请参考《密钥管理服务用户指南》获取。
 
@@ -107,7 +107,7 @@ class CreateDataImageRequestBody:
 
     @cmk_id.setter
     def cmk_id(self, cmk_id):
-        """Sets the cmk_id of this CreateDataImageRequestBody.
+        r"""Sets the cmk_id of this CreateDataImageRequestBody.
 
         创建加密镜像的用户主密钥，具体取值请参考《密钥管理服务用户指南》获取。
 
@@ -118,7 +118,7 @@ class CreateDataImageRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateDataImageRequestBody.
+        r"""Gets the description of this CreateDataImageRequestBody.
 
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -129,7 +129,7 @@ class CreateDataImageRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDataImageRequestBody.
+        r"""Sets the description of this CreateDataImageRequestBody.
 
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -140,7 +140,7 @@ class CreateDataImageRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDataImageRequestBody.
+        r"""Gets the enterprise_project_id of this CreateDataImageRequestBody.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目；取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -151,7 +151,7 @@ class CreateDataImageRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDataImageRequestBody.
+        r"""Sets the enterprise_project_id of this CreateDataImageRequestBody.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目；取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -162,7 +162,7 @@ class CreateDataImageRequestBody:
 
     @property
     def image_tags(self):
-        """Gets the image_tags of this CreateDataImageRequestBody.
+        r"""Gets the image_tags of this CreateDataImageRequestBody.
 
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
@@ -173,7 +173,7 @@ class CreateDataImageRequestBody:
 
     @image_tags.setter
     def image_tags(self, image_tags):
-        """Sets the image_tags of this CreateDataImageRequestBody.
+        r"""Sets the image_tags of this CreateDataImageRequestBody.
 
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
@@ -184,7 +184,7 @@ class CreateDataImageRequestBody:
 
     @property
     def image_url(self):
-        """Gets the image_url of this CreateDataImageRequestBody.
+        r"""Gets the image_url of this CreateDataImageRequestBody.
 
         OBS桶中外部镜像文件地址。格式为<OBS桶名>:<OBS镜像文件名称>。 此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
@@ -195,7 +195,7 @@ class CreateDataImageRequestBody:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this CreateDataImageRequestBody.
+        r"""Sets the image_url of this CreateDataImageRequestBody.
 
         OBS桶中外部镜像文件地址。格式为<OBS桶名>:<OBS镜像文件名称>。 此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
@@ -206,7 +206,7 @@ class CreateDataImageRequestBody:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this CreateDataImageRequestBody.
+        r"""Gets the min_disk of this CreateDataImageRequestBody.
 
         最小数据盘大小。取值范围40-2048GB。
 
@@ -217,7 +217,7 @@ class CreateDataImageRequestBody:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this CreateDataImageRequestBody.
+        r"""Sets the min_disk of this CreateDataImageRequestBody.
 
         最小数据盘大小。取值范围40-2048GB。
 
@@ -228,7 +228,7 @@ class CreateDataImageRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDataImageRequestBody.
+        r"""Gets the name of this CreateDataImageRequestBody.
 
         镜像名称。
 
@@ -239,7 +239,7 @@ class CreateDataImageRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDataImageRequestBody.
+        r"""Sets the name of this CreateDataImageRequestBody.
 
         镜像名称。
 
@@ -250,7 +250,7 @@ class CreateDataImageRequestBody:
 
     @property
     def os_type(self):
-        """Gets the os_type of this CreateDataImageRequestBody.
+        r"""Gets the os_type of this CreateDataImageRequestBody.
 
         操作系统类型。只能是Windows、Linux二者之一，默认Linux。
 
@@ -261,7 +261,7 @@ class CreateDataImageRequestBody:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this CreateDataImageRequestBody.
+        r"""Sets the os_type of this CreateDataImageRequestBody.
 
         操作系统类型。只能是Windows、Linux二者之一，默认Linux。
 
@@ -272,7 +272,7 @@ class CreateDataImageRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDataImageRequestBody.
+        r"""Gets the tags of this CreateDataImageRequestBody.
 
         镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
@@ -283,7 +283,7 @@ class CreateDataImageRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDataImageRequestBody.
+        r"""Sets the tags of this CreateDataImageRequestBody.
 
         镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 

@@ -42,7 +42,7 @@ class ShowSignatureFileResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None, file_name=None, file_ref=None, file_size=None, file_type=None, module_type=None, operator=None, file_desc=None, update_time=None):
-        """ShowSignatureFileResponse
+        r"""ShowSignatureFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowSignatureFileResponse.
+        r"""Gets the file_id of this ShowSignatureFileResponse.
 
         文件ID
 
@@ -111,7 +111,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowSignatureFileResponse.
+        r"""Sets the file_id of this ShowSignatureFileResponse.
 
         文件ID
 
@@ -122,7 +122,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this ShowSignatureFileResponse.
+        r"""Gets the file_name of this ShowSignatureFileResponse.
 
         文件名称
 
@@ -133,7 +133,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ShowSignatureFileResponse.
+        r"""Sets the file_name of this ShowSignatureFileResponse.
 
         文件名称
 
@@ -144,7 +144,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def file_ref(self):
-        """Gets the file_ref of this ShowSignatureFileResponse.
+        r"""Gets the file_ref of this ShowSignatureFileResponse.
 
         文件引用
 
@@ -155,7 +155,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @file_ref.setter
     def file_ref(self, file_ref):
-        """Sets the file_ref of this ShowSignatureFileResponse.
+        r"""Sets the file_ref of this ShowSignatureFileResponse.
 
         文件引用
 
@@ -166,7 +166,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def file_size(self):
-        """Gets the file_size of this ShowSignatureFileResponse.
+        r"""Gets the file_size of this ShowSignatureFileResponse.
 
         文件大小
 
@@ -177,7 +177,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ShowSignatureFileResponse.
+        r"""Sets the file_size of this ShowSignatureFileResponse.
 
         文件大小
 
@@ -188,7 +188,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def file_type(self):
-        """Gets the file_type of this ShowSignatureFileResponse.
+        r"""Gets the file_type of this ShowSignatureFileResponse.
 
         文件类型
 
@@ -199,7 +199,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ShowSignatureFileResponse.
+        r"""Sets the file_type of this ShowSignatureFileResponse.
 
         文件类型
 
@@ -210,7 +210,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def module_type(self):
-        """Gets the module_type of this ShowSignatureFileResponse.
+        r"""Gets the module_type of this ShowSignatureFileResponse.
 
         模块类型
 
@@ -221,7 +221,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @module_type.setter
     def module_type(self, module_type):
-        """Sets the module_type of this ShowSignatureFileResponse.
+        r"""Sets the module_type of this ShowSignatureFileResponse.
 
         模块类型
 
@@ -232,7 +232,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def operator(self):
-        """Gets the operator of this ShowSignatureFileResponse.
+        r"""Gets the operator of this ShowSignatureFileResponse.
 
         操作人
 
@@ -243,7 +243,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ShowSignatureFileResponse.
+        r"""Sets the operator of this ShowSignatureFileResponse.
 
         操作人
 
@@ -254,7 +254,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def file_desc(self):
-        """Gets the file_desc of this ShowSignatureFileResponse.
+        r"""Gets the file_desc of this ShowSignatureFileResponse.
 
         描述
 
@@ -265,7 +265,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @file_desc.setter
     def file_desc(self, file_desc):
-        """Sets the file_desc of this ShowSignatureFileResponse.
+        r"""Sets the file_desc of this ShowSignatureFileResponse.
 
         描述
 
@@ -276,7 +276,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowSignatureFileResponse.
+        r"""Gets the update_time of this ShowSignatureFileResponse.
 
         更新时间
 
@@ -287,7 +287,7 @@ class ShowSignatureFileResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowSignatureFileResponse.
+        r"""Sets the update_time of this ShowSignatureFileResponse.
 
         更新时间
 

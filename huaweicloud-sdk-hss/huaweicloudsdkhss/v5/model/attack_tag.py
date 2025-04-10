@@ -23,7 +23,7 @@ class AttackTag:
     }
 
     def __init__(self):
-        """AttackTag
+        r"""AttackTag
 
         The model defined in huaweicloud sdk
 

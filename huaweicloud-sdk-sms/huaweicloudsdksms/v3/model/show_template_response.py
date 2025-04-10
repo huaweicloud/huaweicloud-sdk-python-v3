@@ -26,7 +26,7 @@ class ShowTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template=None):
-        """ShowTemplateResponse
+        r"""ShowTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this ShowTemplateResponse.
+        r"""Gets the template of this ShowTemplateResponse.
 
         :return: The template of this ShowTemplateResponse.
         :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
@@ -53,7 +53,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this ShowTemplateResponse.
+        r"""Sets the template of this ShowTemplateResponse.
 
         :param template: The template of this ShowTemplateResponse.
         :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`

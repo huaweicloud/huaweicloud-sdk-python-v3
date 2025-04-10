@@ -29,7 +29,7 @@ class CreateFunctionVersionRequestBody:
     }
 
     def __init__(self, digest=None, version=None, description=None):
-        """CreateFunctionVersionRequestBody
+        r"""CreateFunctionVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateFunctionVersionRequestBody:
 
     @property
     def digest(self):
-        """Gets the digest of this CreateFunctionVersionRequestBody.
+        r"""Gets the digest of this CreateFunctionVersionRequestBody.
 
         md5键值
 
@@ -68,7 +68,7 @@ class CreateFunctionVersionRequestBody:
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this CreateFunctionVersionRequestBody.
+        r"""Sets the digest of this CreateFunctionVersionRequestBody.
 
         md5键值
 
@@ -79,7 +79,7 @@ class CreateFunctionVersionRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this CreateFunctionVersionRequestBody.
+        r"""Gets the version of this CreateFunctionVersionRequestBody.
 
         发布版本名称
 
@@ -90,7 +90,7 @@ class CreateFunctionVersionRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateFunctionVersionRequestBody.
+        r"""Sets the version of this CreateFunctionVersionRequestBody.
 
         发布版本名称
 
@@ -101,7 +101,7 @@ class CreateFunctionVersionRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateFunctionVersionRequestBody.
+        r"""Gets the description of this CreateFunctionVersionRequestBody.
 
         发布版本描述
 
@@ -112,7 +112,7 @@ class CreateFunctionVersionRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateFunctionVersionRequestBody.
+        r"""Sets the description of this CreateFunctionVersionRequestBody.
 
         发布版本描述
 

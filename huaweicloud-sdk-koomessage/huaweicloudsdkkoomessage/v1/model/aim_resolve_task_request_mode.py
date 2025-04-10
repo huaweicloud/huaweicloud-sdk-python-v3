@@ -37,7 +37,7 @@ class AIMResolveTaskRequestMode:
     }
 
     def __init__(self, tpl_id=None, resolve_times=None, aim_code_type=None, generation_type=None, domain=None, expiration_time=None, params=None):
-        """AIMResolveTaskRequestMode
+        r"""AIMResolveTaskRequestMode
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AIMResolveTaskRequestMode.
+        r"""Gets the tpl_id of this AIMResolveTaskRequestMode.
 
         智能信息模板ID，由9位数字组成。
 
@@ -96,7 +96,7 @@ class AIMResolveTaskRequestMode:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AIMResolveTaskRequestMode.
+        r"""Sets the tpl_id of this AIMResolveTaskRequestMode.
 
         智能信息模板ID，由9位数字组成。
 
@@ -107,7 +107,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def resolve_times(self):
-        """Gets the resolve_times of this AIMResolveTaskRequestMode.
+        r"""Gets the resolve_times of this AIMResolveTaskRequestMode.
 
         短链的最大解析次数。 
 
@@ -118,7 +118,7 @@ class AIMResolveTaskRequestMode:
 
     @resolve_times.setter
     def resolve_times(self, resolve_times):
-        """Sets the resolve_times of this AIMResolveTaskRequestMode.
+        r"""Sets the resolve_times of this AIMResolveTaskRequestMode.
 
         短链的最大解析次数。 
 
@@ -129,7 +129,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def aim_code_type(self):
-        """Gets the aim_code_type of this AIMResolveTaskRequestMode.
+        r"""Gets the aim_code_type of this AIMResolveTaskRequestMode.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -140,7 +140,7 @@ class AIMResolveTaskRequestMode:
 
     @aim_code_type.setter
     def aim_code_type(self, aim_code_type):
-        """Sets the aim_code_type of this AIMResolveTaskRequestMode.
+        r"""Sets the aim_code_type of this AIMResolveTaskRequestMode.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -151,7 +151,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def generation_type(self):
-        """Gets the generation_type of this AIMResolveTaskRequestMode.
+        r"""Gets the generation_type of this AIMResolveTaskRequestMode.
 
         生成短码方式。  - 1：标准 - 2：自定义 
 
@@ -162,7 +162,7 @@ class AIMResolveTaskRequestMode:
 
     @generation_type.setter
     def generation_type(self, generation_type):
-        """Sets the generation_type of this AIMResolveTaskRequestMode.
+        r"""Sets the generation_type of this AIMResolveTaskRequestMode.
 
         生成短码方式。  - 1：标准 - 2：自定义 
 
@@ -173,7 +173,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def domain(self):
-        """Gets the domain of this AIMResolveTaskRequestMode.
+        r"""Gets the domain of this AIMResolveTaskRequestMode.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。  > 当生成类型为自定义生成短码时必填 
 
@@ -184,7 +184,7 @@ class AIMResolveTaskRequestMode:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AIMResolveTaskRequestMode.
+        r"""Sets the domain of this AIMResolveTaskRequestMode.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。  > 当生成类型为自定义生成短码时必填 
 
@@ -195,7 +195,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this AIMResolveTaskRequestMode.
+        r"""Gets the expiration_time of this AIMResolveTaskRequestMode.
 
         失效时间（天）。
 
@@ -206,7 +206,7 @@ class AIMResolveTaskRequestMode:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this AIMResolveTaskRequestMode.
+        r"""Sets the expiration_time of this AIMResolveTaskRequestMode.
 
         失效时间（天）。
 
@@ -217,7 +217,7 @@ class AIMResolveTaskRequestMode:
 
     @property
     def params(self):
-        """Gets the params of this AIMResolveTaskRequestMode.
+        r"""Gets the params of this AIMResolveTaskRequestMode.
 
         短链解析详情列表。一次请求最多100个短链。
 
@@ -228,7 +228,7 @@ class AIMResolveTaskRequestMode:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this AIMResolveTaskRequestMode.
+        r"""Sets the params of this AIMResolveTaskRequestMode.
 
         短链解析详情列表。一次请求最多100个短链。
 

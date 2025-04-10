@@ -29,7 +29,7 @@ class RuleRiskInfoBeanSchemas:
     }
 
     def __init__(self, schema=None, table=None, column=None):
-        """RuleRiskInfoBeanSchemas
+        r"""RuleRiskInfoBeanSchemas
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RuleRiskInfoBeanSchemas:
 
     @property
     def schema(self):
-        """Gets the schema of this RuleRiskInfoBeanSchemas.
+        r"""Gets the schema of this RuleRiskInfoBeanSchemas.
 
         schema名称
 
@@ -68,7 +68,7 @@ class RuleRiskInfoBeanSchemas:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this RuleRiskInfoBeanSchemas.
+        r"""Sets the schema of this RuleRiskInfoBeanSchemas.
 
         schema名称
 
@@ -79,7 +79,7 @@ class RuleRiskInfoBeanSchemas:
 
     @property
     def table(self):
-        """Gets the table of this RuleRiskInfoBeanSchemas.
+        r"""Gets the table of this RuleRiskInfoBeanSchemas.
 
         表名
 
@@ -90,7 +90,7 @@ class RuleRiskInfoBeanSchemas:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this RuleRiskInfoBeanSchemas.
+        r"""Sets the table of this RuleRiskInfoBeanSchemas.
 
         表名
 
@@ -101,7 +101,7 @@ class RuleRiskInfoBeanSchemas:
 
     @property
     def column(self):
-        """Gets the column of this RuleRiskInfoBeanSchemas.
+        r"""Gets the column of this RuleRiskInfoBeanSchemas.
 
         列名
 
@@ -112,7 +112,7 @@ class RuleRiskInfoBeanSchemas:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this RuleRiskInfoBeanSchemas.
+        r"""Sets the column of this RuleRiskInfoBeanSchemas.
 
         列名
 

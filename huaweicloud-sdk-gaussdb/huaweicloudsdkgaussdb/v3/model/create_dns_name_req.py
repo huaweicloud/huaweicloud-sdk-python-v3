@@ -25,7 +25,7 @@ class CreateDnsNameReq:
     }
 
     def __init__(self, dns_type=None):
-        """CreateDnsNameReq
+        r"""CreateDnsNameReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDnsNameReq:
 
     @property
     def dns_type(self):
-        """Gets the dns_type of this CreateDnsNameReq.
+        r"""Gets the dns_type of this CreateDnsNameReq.
 
         域名类型，当前只支持private。
 
@@ -53,7 +53,7 @@ class CreateDnsNameReq:
 
     @dns_type.setter
     def dns_type(self, dns_type):
-        """Sets the dns_type of this CreateDnsNameReq.
+        r"""Sets the dns_type of this CreateDnsNameReq.
 
         域名类型，当前只支持private。
 

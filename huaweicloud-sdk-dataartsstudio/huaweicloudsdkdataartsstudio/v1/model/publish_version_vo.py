@@ -73,7 +73,7 @@ class PublishVersionVO:
     }
 
     def __init__(self, id=None, version_name=None, version_tag=None, description=None, biz_id=None, biz_type=None, biz_info=None, biz_info_vo=None, effect_objs=None, change_props=None, sql_ddl=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, materialization=None, publish_to_dlm=None, biz_metric=None, summary_status=None, is_current_version=None, create_time=None, create_by=None):
-        """PublishVersionVO
+        r"""PublishVersionVO
 
         The model defined in huaweicloud sdk
 
@@ -210,7 +210,7 @@ class PublishVersionVO:
 
     @property
     def id(self):
-        """Gets the id of this PublishVersionVO.
+        r"""Gets the id of this PublishVersionVO.
 
         版本ID，ID字符串。
 
@@ -221,7 +221,7 @@ class PublishVersionVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublishVersionVO.
+        r"""Sets the id of this PublishVersionVO.
 
         版本ID，ID字符串。
 
@@ -232,7 +232,7 @@ class PublishVersionVO:
 
     @property
     def version_name(self):
-        """Gets the version_name of this PublishVersionVO.
+        r"""Gets the version_name of this PublishVersionVO.
 
         版本名称。
 
@@ -243,7 +243,7 @@ class PublishVersionVO:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this PublishVersionVO.
+        r"""Sets the version_name of this PublishVersionVO.
 
         版本名称。
 
@@ -254,7 +254,7 @@ class PublishVersionVO:
 
     @property
     def version_tag(self):
-        """Gets the version_tag of this PublishVersionVO.
+        r"""Gets the version_tag of this PublishVersionVO.
 
         版本标记，只读。
 
@@ -265,7 +265,7 @@ class PublishVersionVO:
 
     @version_tag.setter
     def version_tag(self, version_tag):
-        """Sets the version_tag of this PublishVersionVO.
+        r"""Sets the version_tag of this PublishVersionVO.
 
         版本标记，只读。
 
@@ -276,7 +276,7 @@ class PublishVersionVO:
 
     @property
     def description(self):
-        """Gets the description of this PublishVersionVO.
+        r"""Gets the description of this PublishVersionVO.
 
         版本描述。
 
@@ -287,7 +287,7 @@ class PublishVersionVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishVersionVO.
+        r"""Sets the description of this PublishVersionVO.
 
         版本描述。
 
@@ -298,7 +298,7 @@ class PublishVersionVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this PublishVersionVO.
+        r"""Gets the biz_id of this PublishVersionVO.
 
         业务对象ID，ID字符串。
 
@@ -309,7 +309,7 @@ class PublishVersionVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this PublishVersionVO.
+        r"""Sets the biz_id of this PublishVersionVO.
 
         业务对象ID，ID字符串。
 
@@ -320,7 +320,7 @@ class PublishVersionVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this PublishVersionVO.
+        r"""Gets the biz_type of this PublishVersionVO.
 
         :return: The biz_type of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -329,7 +329,7 @@ class PublishVersionVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this PublishVersionVO.
+        r"""Sets the biz_type of this PublishVersionVO.
 
         :param biz_type: The biz_type of this PublishVersionVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -338,7 +338,7 @@ class PublishVersionVO:
 
     @property
     def biz_info(self):
-        """Gets the biz_info of this PublishVersionVO.
+        r"""Gets the biz_info of this PublishVersionVO.
 
         业务详情，只读。
 
@@ -349,7 +349,7 @@ class PublishVersionVO:
 
     @biz_info.setter
     def biz_info(self, biz_info):
-        """Sets the biz_info of this PublishVersionVO.
+        r"""Sets the biz_info of this PublishVersionVO.
 
         业务详情，只读。
 
@@ -360,7 +360,7 @@ class PublishVersionVO:
 
     @property
     def biz_info_vo(self):
-        """Gets the biz_info_vo of this PublishVersionVO.
+        r"""Gets the biz_info_vo of this PublishVersionVO.
 
         业务对象。
 
@@ -371,7 +371,7 @@ class PublishVersionVO:
 
     @biz_info_vo.setter
     def biz_info_vo(self, biz_info_vo):
-        """Sets the biz_info_vo of this PublishVersionVO.
+        r"""Sets the biz_info_vo of this PublishVersionVO.
 
         业务对象。
 
@@ -382,7 +382,7 @@ class PublishVersionVO:
 
     @property
     def effect_objs(self):
-        """Gets the effect_objs of this PublishVersionVO.
+        r"""Gets the effect_objs of this PublishVersionVO.
 
         影响信息，只读。
 
@@ -393,7 +393,7 @@ class PublishVersionVO:
 
     @effect_objs.setter
     def effect_objs(self, effect_objs):
-        """Sets the effect_objs of this PublishVersionVO.
+        r"""Sets the effect_objs of this PublishVersionVO.
 
         影响信息，只读。
 
@@ -404,7 +404,7 @@ class PublishVersionVO:
 
     @property
     def change_props(self):
-        """Gets the change_props of this PublishVersionVO.
+        r"""Gets the change_props of this PublishVersionVO.
 
         变化信息，只读。
 
@@ -415,7 +415,7 @@ class PublishVersionVO:
 
     @change_props.setter
     def change_props(self, change_props):
-        """Sets the change_props of this PublishVersionVO.
+        r"""Sets the change_props of this PublishVersionVO.
 
         变化信息，只读。
 
@@ -426,7 +426,7 @@ class PublishVersionVO:
 
     @property
     def sql_ddl(self):
-        """Gets the sql_ddl of this PublishVersionVO.
+        r"""Gets the sql_ddl of this PublishVersionVO.
 
         SQL脚本，只读。
 
@@ -437,7 +437,7 @@ class PublishVersionVO:
 
     @sql_ddl.setter
     def sql_ddl(self, sql_ddl):
-        """Sets the sql_ddl of this PublishVersionVO.
+        r"""Sets the sql_ddl of this PublishVersionVO.
 
         SQL脚本，只读。
 
@@ -448,7 +448,7 @@ class PublishVersionVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this PublishVersionVO.
+        r"""Gets the physical_table of this PublishVersionVO.
 
         :return: The physical_table of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -457,7 +457,7 @@ class PublishVersionVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this PublishVersionVO.
+        r"""Sets the physical_table of this PublishVersionVO.
 
         :param physical_table: The physical_table of this PublishVersionVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -466,7 +466,7 @@ class PublishVersionVO:
 
     @property
     def dev_physical_table(self):
-        """Gets the dev_physical_table of this PublishVersionVO.
+        r"""Gets the dev_physical_table of this PublishVersionVO.
 
         :return: The dev_physical_table of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -475,7 +475,7 @@ class PublishVersionVO:
 
     @dev_physical_table.setter
     def dev_physical_table(self, dev_physical_table):
-        """Sets the dev_physical_table of this PublishVersionVO.
+        r"""Sets the dev_physical_table of this PublishVersionVO.
 
         :param dev_physical_table: The dev_physical_table of this PublishVersionVO.
         :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -484,7 +484,7 @@ class PublishVersionVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this PublishVersionVO.
+        r"""Gets the technical_asset of this PublishVersionVO.
 
         :return: The technical_asset of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -493,7 +493,7 @@ class PublishVersionVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this PublishVersionVO.
+        r"""Sets the technical_asset of this PublishVersionVO.
 
         :param technical_asset: The technical_asset of this PublishVersionVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -502,7 +502,7 @@ class PublishVersionVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this PublishVersionVO.
+        r"""Gets the business_asset of this PublishVersionVO.
 
         :return: The business_asset of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -511,7 +511,7 @@ class PublishVersionVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this PublishVersionVO.
+        r"""Sets the business_asset of this PublishVersionVO.
 
         :param business_asset: The business_asset of this PublishVersionVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -520,7 +520,7 @@ class PublishVersionVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this PublishVersionVO.
+        r"""Gets the meta_data_link of this PublishVersionVO.
 
         :return: The meta_data_link of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -529,7 +529,7 @@ class PublishVersionVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this PublishVersionVO.
+        r"""Sets the meta_data_link of this PublishVersionVO.
 
         :param meta_data_link: The meta_data_link of this PublishVersionVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -538,7 +538,7 @@ class PublishVersionVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this PublishVersionVO.
+        r"""Gets the data_quality of this PublishVersionVO.
 
         :return: The data_quality of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -547,7 +547,7 @@ class PublishVersionVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this PublishVersionVO.
+        r"""Sets the data_quality of this PublishVersionVO.
 
         :param data_quality: The data_quality of this PublishVersionVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -556,7 +556,7 @@ class PublishVersionVO:
 
     @property
     def dlf_task(self):
-        """Gets the dlf_task of this PublishVersionVO.
+        r"""Gets the dlf_task of this PublishVersionVO.
 
         :return: The dlf_task of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -565,7 +565,7 @@ class PublishVersionVO:
 
     @dlf_task.setter
     def dlf_task(self, dlf_task):
-        """Sets the dlf_task of this PublishVersionVO.
+        r"""Sets the dlf_task of this PublishVersionVO.
 
         :param dlf_task: The dlf_task of this PublishVersionVO.
         :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -574,7 +574,7 @@ class PublishVersionVO:
 
     @property
     def materialization(self):
-        """Gets the materialization of this PublishVersionVO.
+        r"""Gets the materialization of this PublishVersionVO.
 
         :return: The materialization of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -583,7 +583,7 @@ class PublishVersionVO:
 
     @materialization.setter
     def materialization(self, materialization):
-        """Sets the materialization of this PublishVersionVO.
+        r"""Sets the materialization of this PublishVersionVO.
 
         :param materialization: The materialization of this PublishVersionVO.
         :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -592,7 +592,7 @@ class PublishVersionVO:
 
     @property
     def publish_to_dlm(self):
-        """Gets the publish_to_dlm of this PublishVersionVO.
+        r"""Gets the publish_to_dlm of this PublishVersionVO.
 
         :return: The publish_to_dlm of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -601,7 +601,7 @@ class PublishVersionVO:
 
     @publish_to_dlm.setter
     def publish_to_dlm(self, publish_to_dlm):
-        """Sets the publish_to_dlm of this PublishVersionVO.
+        r"""Sets the publish_to_dlm of this PublishVersionVO.
 
         :param publish_to_dlm: The publish_to_dlm of this PublishVersionVO.
         :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -610,7 +610,7 @@ class PublishVersionVO:
 
     @property
     def biz_metric(self):
-        """Gets the biz_metric of this PublishVersionVO.
+        r"""Gets the biz_metric of this PublishVersionVO.
 
         :return: The biz_metric of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -619,7 +619,7 @@ class PublishVersionVO:
 
     @biz_metric.setter
     def biz_metric(self, biz_metric):
-        """Sets the biz_metric of this PublishVersionVO.
+        r"""Sets the biz_metric of this PublishVersionVO.
 
         :param biz_metric: The biz_metric of this PublishVersionVO.
         :type biz_metric: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -628,7 +628,7 @@ class PublishVersionVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this PublishVersionVO.
+        r"""Gets the summary_status of this PublishVersionVO.
 
         :return: The summary_status of this PublishVersionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -637,7 +637,7 @@ class PublishVersionVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this PublishVersionVO.
+        r"""Sets the summary_status of this PublishVersionVO.
 
         :param summary_status: The summary_status of this PublishVersionVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -646,7 +646,7 @@ class PublishVersionVO:
 
     @property
     def is_current_version(self):
-        """Gets the is_current_version of this PublishVersionVO.
+        r"""Gets the is_current_version of this PublishVersionVO.
 
         是否为当前版本，只读。
 
@@ -657,7 +657,7 @@ class PublishVersionVO:
 
     @is_current_version.setter
     def is_current_version(self, is_current_version):
-        """Sets the is_current_version of this PublishVersionVO.
+        r"""Sets the is_current_version of this PublishVersionVO.
 
         是否为当前版本，只读。
 
@@ -668,7 +668,7 @@ class PublishVersionVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublishVersionVO.
+        r"""Gets the create_time of this PublishVersionVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -679,7 +679,7 @@ class PublishVersionVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublishVersionVO.
+        r"""Sets the create_time of this PublishVersionVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -690,7 +690,7 @@ class PublishVersionVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this PublishVersionVO.
+        r"""Gets the create_by of this PublishVersionVO.
 
         创建人，只读。
 
@@ -701,7 +701,7 @@ class PublishVersionVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this PublishVersionVO.
+        r"""Sets the create_by of this PublishVersionVO.
 
         创建人，只读。
 

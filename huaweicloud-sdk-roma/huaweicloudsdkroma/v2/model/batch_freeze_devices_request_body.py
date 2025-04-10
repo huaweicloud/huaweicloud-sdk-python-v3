@@ -25,7 +25,7 @@ class BatchFreezeDevicesRequestBody:
     }
 
     def __init__(self, device_ids=None):
-        """BatchFreezeDevicesRequestBody
+        r"""BatchFreezeDevicesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchFreezeDevicesRequestBody:
 
     @property
     def device_ids(self):
-        """Gets the device_ids of this BatchFreezeDevicesRequestBody.
+        r"""Gets the device_ids of this BatchFreezeDevicesRequestBody.
 
         设备ID列表，自动向下取整
 
@@ -53,7 +53,7 @@ class BatchFreezeDevicesRequestBody:
 
     @device_ids.setter
     def device_ids(self, device_ids):
-        """Sets the device_ids of this BatchFreezeDevicesRequestBody.
+        r"""Sets the device_ids of this BatchFreezeDevicesRequestBody.
 
         设备ID列表，自动向下取整
 

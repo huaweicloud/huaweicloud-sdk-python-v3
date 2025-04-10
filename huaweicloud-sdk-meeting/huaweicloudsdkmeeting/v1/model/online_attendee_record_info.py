@@ -37,7 +37,7 @@ class OnlineAttendeeRecordInfo:
     }
 
     def __init__(self, participant_id=None, name=None, call_number=None, role=None, third_account=None, account=None, user_id=None):
-        """OnlineAttendeeRecordInfo
+        r"""OnlineAttendeeRecordInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this OnlineAttendeeRecordInfo.
+        r"""Gets the participant_id of this OnlineAttendeeRecordInfo.
 
         与会者标识
 
@@ -96,7 +96,7 @@ class OnlineAttendeeRecordInfo:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this OnlineAttendeeRecordInfo.
+        r"""Sets the participant_id of this OnlineAttendeeRecordInfo.
 
         与会者标识
 
@@ -107,7 +107,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def name(self):
-        """Gets the name of this OnlineAttendeeRecordInfo.
+        r"""Gets the name of this OnlineAttendeeRecordInfo.
 
         与会者名称
 
@@ -118,7 +118,7 @@ class OnlineAttendeeRecordInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OnlineAttendeeRecordInfo.
+        r"""Sets the name of this OnlineAttendeeRecordInfo.
 
         与会者名称
 
@@ -129,7 +129,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def call_number(self):
-        """Gets the call_number of this OnlineAttendeeRecordInfo.
+        r"""Gets the call_number of this OnlineAttendeeRecordInfo.
 
         呼叫号码
 
@@ -140,7 +140,7 @@ class OnlineAttendeeRecordInfo:
 
     @call_number.setter
     def call_number(self, call_number):
-        """Sets the call_number of this OnlineAttendeeRecordInfo.
+        r"""Sets the call_number of this OnlineAttendeeRecordInfo.
 
         呼叫号码
 
@@ -151,7 +151,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def role(self):
-        """Gets the role of this OnlineAttendeeRecordInfo.
+        r"""Gets the role of this OnlineAttendeeRecordInfo.
 
         会议中的角色，枚举值如下： 1：会议主席 0：普通与会者
 
@@ -162,7 +162,7 @@ class OnlineAttendeeRecordInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this OnlineAttendeeRecordInfo.
+        r"""Sets the role of this OnlineAttendeeRecordInfo.
 
         会议中的角色，枚举值如下： 1：会议主席 0：普通与会者
 
@@ -173,7 +173,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def third_account(self):
-        """Gets the third_account of this OnlineAttendeeRecordInfo.
+        r"""Gets the third_account of this OnlineAttendeeRecordInfo.
 
         开放性场景标识第三方账号信息
 
@@ -184,7 +184,7 @@ class OnlineAttendeeRecordInfo:
 
     @third_account.setter
     def third_account(self, third_account):
-        """Sets the third_account of this OnlineAttendeeRecordInfo.
+        r"""Sets the third_account of this OnlineAttendeeRecordInfo.
 
         开放性场景标识第三方账号信息
 
@@ -195,7 +195,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def account(self):
-        """Gets the account of this OnlineAttendeeRecordInfo.
+        r"""Gets the account of this OnlineAttendeeRecordInfo.
 
         用户账号
 
@@ -206,7 +206,7 @@ class OnlineAttendeeRecordInfo:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this OnlineAttendeeRecordInfo.
+        r"""Sets the account of this OnlineAttendeeRecordInfo.
 
         用户账号
 
@@ -217,7 +217,7 @@ class OnlineAttendeeRecordInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this OnlineAttendeeRecordInfo.
+        r"""Gets the user_id of this OnlineAttendeeRecordInfo.
 
         用户UUID
 
@@ -228,7 +228,7 @@ class OnlineAttendeeRecordInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this OnlineAttendeeRecordInfo.
+        r"""Sets the user_id of this OnlineAttendeeRecordInfo.
 
         用户UUID
 

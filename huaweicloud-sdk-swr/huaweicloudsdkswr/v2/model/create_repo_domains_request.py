@@ -29,7 +29,7 @@ class CreateRepoDomainsRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """CreateRepoDomainsRequest
+        r"""CreateRepoDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateRepoDomainsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateRepoDomainsRequest.
+        r"""Gets the namespace of this CreateRepoDomainsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -66,7 +66,7 @@ class CreateRepoDomainsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateRepoDomainsRequest.
+        r"""Sets the namespace of this CreateRepoDomainsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -77,7 +77,7 @@ class CreateRepoDomainsRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this CreateRepoDomainsRequest.
+        r"""Gets the repository of this CreateRepoDomainsRequest.
 
         镜像仓库名称
 
@@ -88,7 +88,7 @@ class CreateRepoDomainsRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this CreateRepoDomainsRequest.
+        r"""Sets the repository of this CreateRepoDomainsRequest.
 
         镜像仓库名称
 
@@ -99,7 +99,7 @@ class CreateRepoDomainsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRepoDomainsRequest.
+        r"""Gets the body of this CreateRepoDomainsRequest.
 
         :return: The body of this CreateRepoDomainsRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequestBody`
@@ -108,7 +108,7 @@ class CreateRepoDomainsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRepoDomainsRequest.
+        r"""Sets the body of this CreateRepoDomainsRequest.
 
         :param body: The body of this CreateRepoDomainsRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequestBody`

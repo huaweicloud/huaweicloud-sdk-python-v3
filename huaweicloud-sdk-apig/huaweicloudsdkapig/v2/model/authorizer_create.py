@@ -47,7 +47,7 @@ class AuthorizerCreate:
     }
 
     def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, network_type=None, authorizer_version=None, authorizer_alias_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None):
-        """AuthorizerCreate
+        r"""AuthorizerCreate
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class AuthorizerCreate:
 
     @property
     def name(self):
-        """Gets the name of this AuthorizerCreate.
+        r"""Gets the name of this AuthorizerCreate.
 
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
@@ -127,7 +127,7 @@ class AuthorizerCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthorizerCreate.
+        r"""Sets the name of this AuthorizerCreate.
 
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
@@ -138,7 +138,7 @@ class AuthorizerCreate:
 
     @property
     def type(self):
-        """Gets the type of this AuthorizerCreate.
+        r"""Gets the type of this AuthorizerCreate.
 
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端  不支持修改
 
@@ -149,7 +149,7 @@ class AuthorizerCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AuthorizerCreate.
+        r"""Sets the type of this AuthorizerCreate.
 
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端  不支持修改
 
@@ -160,7 +160,7 @@ class AuthorizerCreate:
 
     @property
     def authorizer_type(self):
-        """Gets the authorizer_type of this AuthorizerCreate.
+        r"""Gets the authorizer_type of this AuthorizerCreate.
 
         只能为：FUNC
 
@@ -171,7 +171,7 @@ class AuthorizerCreate:
 
     @authorizer_type.setter
     def authorizer_type(self, authorizer_type):
-        """Sets the authorizer_type of this AuthorizerCreate.
+        r"""Sets the authorizer_type of this AuthorizerCreate.
 
         只能为：FUNC
 
@@ -182,7 +182,7 @@ class AuthorizerCreate:
 
     @property
     def authorizer_uri(self):
-        """Gets the authorizer_uri of this AuthorizerCreate.
+        r"""Gets the authorizer_uri of this AuthorizerCreate.
 
         函数地址。
 
@@ -193,7 +193,7 @@ class AuthorizerCreate:
 
     @authorizer_uri.setter
     def authorizer_uri(self, authorizer_uri):
-        """Sets the authorizer_uri of this AuthorizerCreate.
+        r"""Sets the authorizer_uri of this AuthorizerCreate.
 
         函数地址。
 
@@ -204,7 +204,7 @@ class AuthorizerCreate:
 
     @property
     def network_type(self):
-        """Gets the network_type of this AuthorizerCreate.
+        r"""Gets the network_type of this AuthorizerCreate.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -215,7 +215,7 @@ class AuthorizerCreate:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this AuthorizerCreate.
+        r"""Sets the network_type of this AuthorizerCreate.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -226,7 +226,7 @@ class AuthorizerCreate:
 
     @property
     def authorizer_version(self):
-        """Gets the authorizer_version of this AuthorizerCreate.
+        r"""Gets the authorizer_version of this AuthorizerCreate.
 
         函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -237,7 +237,7 @@ class AuthorizerCreate:
 
     @authorizer_version.setter
     def authorizer_version(self, authorizer_version):
-        """Sets the authorizer_version of this AuthorizerCreate.
+        r"""Sets the authorizer_version of this AuthorizerCreate.
 
         函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -248,7 +248,7 @@ class AuthorizerCreate:
 
     @property
     def authorizer_alias_uri(self):
-        """Gets the authorizer_alias_uri of this AuthorizerCreate.
+        r"""Gets the authorizer_alias_uri of this AuthorizerCreate.
 
         函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -259,7 +259,7 @@ class AuthorizerCreate:
 
     @authorizer_alias_uri.setter
     def authorizer_alias_uri(self, authorizer_alias_uri):
-        """Sets the authorizer_alias_uri of this AuthorizerCreate.
+        r"""Sets the authorizer_alias_uri of this AuthorizerCreate.
 
         函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -270,7 +270,7 @@ class AuthorizerCreate:
 
     @property
     def identities(self):
-        """Gets the identities of this AuthorizerCreate.
+        r"""Gets the identities of this AuthorizerCreate.
 
         认证来源
 
@@ -281,7 +281,7 @@ class AuthorizerCreate:
 
     @identities.setter
     def identities(self, identities):
-        """Sets the identities of this AuthorizerCreate.
+        r"""Sets the identities of this AuthorizerCreate.
 
         认证来源
 
@@ -292,7 +292,7 @@ class AuthorizerCreate:
 
     @property
     def ttl(self):
-        """Gets the ttl of this AuthorizerCreate.
+        r"""Gets the ttl of this AuthorizerCreate.
 
         缓存时间
 
@@ -303,7 +303,7 @@ class AuthorizerCreate:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this AuthorizerCreate.
+        r"""Sets the ttl of this AuthorizerCreate.
 
         缓存时间
 
@@ -314,7 +314,7 @@ class AuthorizerCreate:
 
     @property
     def user_data(self):
-        """Gets the user_data of this AuthorizerCreate.
+        r"""Gets the user_data of this AuthorizerCreate.
 
         用户数据
 
@@ -325,7 +325,7 @@ class AuthorizerCreate:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this AuthorizerCreate.
+        r"""Sets the user_data of this AuthorizerCreate.
 
         用户数据
 
@@ -336,7 +336,7 @@ class AuthorizerCreate:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this AuthorizerCreate.
+        r"""Gets the ld_api_id of this AuthorizerCreate.
 
         自定义后端服务ID。  暂不支持
 
@@ -347,7 +347,7 @@ class AuthorizerCreate:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this AuthorizerCreate.
+        r"""Sets the ld_api_id of this AuthorizerCreate.
 
         自定义后端服务ID。  暂不支持
 
@@ -358,7 +358,7 @@ class AuthorizerCreate:
 
     @property
     def need_body(self):
-        """Gets the need_body of this AuthorizerCreate.
+        r"""Gets the need_body of this AuthorizerCreate.
 
         是否发送body
 
@@ -369,7 +369,7 @@ class AuthorizerCreate:
 
     @need_body.setter
     def need_body(self, need_body):
-        """Sets the need_body of this AuthorizerCreate.
+        r"""Sets the need_body of this AuthorizerCreate.
 
         是否发送body
 

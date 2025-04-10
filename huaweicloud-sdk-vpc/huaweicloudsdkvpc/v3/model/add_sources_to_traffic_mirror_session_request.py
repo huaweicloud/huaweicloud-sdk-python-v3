@@ -27,7 +27,7 @@ class AddSourcesToTrafficMirrorSessionRequest:
     }
 
     def __init__(self, traffic_mirror_session_id=None, body=None):
-        """AddSourcesToTrafficMirrorSessionRequest
+        r"""AddSourcesToTrafficMirrorSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddSourcesToTrafficMirrorSessionRequest:
 
     @property
     def traffic_mirror_session_id(self):
-        """Gets the traffic_mirror_session_id of this AddSourcesToTrafficMirrorSessionRequest.
+        r"""Gets the traffic_mirror_session_id of this AddSourcesToTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -60,7 +60,7 @@ class AddSourcesToTrafficMirrorSessionRequest:
 
     @traffic_mirror_session_id.setter
     def traffic_mirror_session_id(self, traffic_mirror_session_id):
-        """Sets the traffic_mirror_session_id of this AddSourcesToTrafficMirrorSessionRequest.
+        r"""Sets the traffic_mirror_session_id of this AddSourcesToTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -71,7 +71,7 @@ class AddSourcesToTrafficMirrorSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSourcesToTrafficMirrorSessionRequest.
+        r"""Gets the body of this AddSourcesToTrafficMirrorSessionRequest.
 
         :return: The body of this AddSourcesToTrafficMirrorSessionRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.AddSourcesToTrafficMirrorSessionRequestBody`
@@ -80,7 +80,7 @@ class AddSourcesToTrafficMirrorSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSourcesToTrafficMirrorSessionRequest.
+        r"""Sets the body of this AddSourcesToTrafficMirrorSessionRequest.
 
         :param body: The body of this AddSourcesToTrafficMirrorSessionRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.AddSourcesToTrafficMirrorSessionRequestBody`

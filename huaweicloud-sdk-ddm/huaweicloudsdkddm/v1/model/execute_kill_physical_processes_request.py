@@ -27,7 +27,7 @@ class ExecuteKillPhysicalProcessesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExecuteKillPhysicalProcessesRequest
+        r"""ExecuteKillPhysicalProcessesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteKillPhysicalProcessesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExecuteKillPhysicalProcessesRequest.
+        r"""Gets the instance_id of this ExecuteKillPhysicalProcessesRequest.
 
         关联RDS的ID。
 
@@ -60,7 +60,7 @@ class ExecuteKillPhysicalProcessesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExecuteKillPhysicalProcessesRequest.
+        r"""Sets the instance_id of this ExecuteKillPhysicalProcessesRequest.
 
         关联RDS的ID。
 
@@ -71,7 +71,7 @@ class ExecuteKillPhysicalProcessesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteKillPhysicalProcessesRequest.
+        r"""Gets the body of this ExecuteKillPhysicalProcessesRequest.
 
         :return: The body of this ExecuteKillPhysicalProcessesRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.KillProcessesOpenRequest`
@@ -80,7 +80,7 @@ class ExecuteKillPhysicalProcessesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteKillPhysicalProcessesRequest.
+        r"""Sets the body of this ExecuteKillPhysicalProcessesRequest.
 
         :param body: The body of this ExecuteKillPhysicalProcessesRequest.
         :type body: :class:`huaweicloudsdkddm.v1.KillProcessesOpenRequest`

@@ -55,7 +55,7 @@ class BatchOperationVO:
     }
 
     def __init__(self, id=None, tenant_id=None, group_id=None, biz_name=None, biz_id=None, operation_status=None, operation_type=None, biz_info=None, create_by=None, remark=None, total=None, success=None, failed=None, rate=None, logs=None, groups=None):
-        """BatchOperationVO
+        r"""BatchOperationVO
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class BatchOperationVO:
 
     @property
     def id(self):
-        """Gets the id of this BatchOperationVO.
+        r"""Gets the id of this BatchOperationVO.
 
         批量审批ID，ID字符串。
 
@@ -159,7 +159,7 @@ class BatchOperationVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchOperationVO.
+        r"""Sets the id of this BatchOperationVO.
 
         批量审批ID，ID字符串。
 
@@ -170,7 +170,7 @@ class BatchOperationVO:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this BatchOperationVO.
+        r"""Gets the tenant_id of this BatchOperationVO.
 
         项目ID。
 
@@ -181,7 +181,7 @@ class BatchOperationVO:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this BatchOperationVO.
+        r"""Sets the tenant_id of this BatchOperationVO.
 
         项目ID。
 
@@ -192,7 +192,7 @@ class BatchOperationVO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchOperationVO.
+        r"""Gets the group_id of this BatchOperationVO.
 
         组ID，ID字符串。
 
@@ -203,7 +203,7 @@ class BatchOperationVO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchOperationVO.
+        r"""Sets the group_id of this BatchOperationVO.
 
         组ID，ID字符串。
 
@@ -214,7 +214,7 @@ class BatchOperationVO:
 
     @property
     def biz_name(self):
-        """Gets the biz_name of this BatchOperationVO.
+        r"""Gets the biz_name of this BatchOperationVO.
 
         业务名。
 
@@ -225,7 +225,7 @@ class BatchOperationVO:
 
     @biz_name.setter
     def biz_name(self, biz_name):
-        """Sets the biz_name of this BatchOperationVO.
+        r"""Sets the biz_name of this BatchOperationVO.
 
         业务名。
 
@@ -236,7 +236,7 @@ class BatchOperationVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this BatchOperationVO.
+        r"""Gets the biz_id of this BatchOperationVO.
 
         业务ID，ID字符串。
 
@@ -247,7 +247,7 @@ class BatchOperationVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this BatchOperationVO.
+        r"""Sets the biz_id of this BatchOperationVO.
 
         业务ID，ID字符串。
 
@@ -258,7 +258,7 @@ class BatchOperationVO:
 
     @property
     def operation_status(self):
-        """Gets the operation_status of this BatchOperationVO.
+        r"""Gets the operation_status of this BatchOperationVO.
 
         操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。 枚举值：   - RUNNING: 运行中   - SUCCESS: 操作成功   - FAILED: 操作失败 
 
@@ -269,7 +269,7 @@ class BatchOperationVO:
 
     @operation_status.setter
     def operation_status(self, operation_status):
-        """Sets the operation_status of this BatchOperationVO.
+        r"""Sets the operation_status of this BatchOperationVO.
 
         操作结果类型枚举。RUNNING(运行中)、SUCCESS(操作成功)、FAILED(操作失败)。 枚举值：   - RUNNING: 运行中   - SUCCESS: 操作成功   - FAILED: 操作失败 
 
@@ -280,7 +280,7 @@ class BatchOperationVO:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this BatchOperationVO.
+        r"""Gets the operation_type of this BatchOperationVO.
 
         类型。
 
@@ -291,7 +291,7 @@ class BatchOperationVO:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this BatchOperationVO.
+        r"""Sets the operation_type of this BatchOperationVO.
 
         类型。
 
@@ -302,7 +302,7 @@ class BatchOperationVO:
 
     @property
     def biz_info(self):
-        """Gets the biz_info of this BatchOperationVO.
+        r"""Gets the biz_info of this BatchOperationVO.
 
         业务详情。
 
@@ -313,7 +313,7 @@ class BatchOperationVO:
 
     @biz_info.setter
     def biz_info(self, biz_info):
-        """Sets the biz_info of this BatchOperationVO.
+        r"""Sets the biz_info of this BatchOperationVO.
 
         业务详情。
 
@@ -324,7 +324,7 @@ class BatchOperationVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this BatchOperationVO.
+        r"""Gets the create_by of this BatchOperationVO.
 
         创建人。
 
@@ -335,7 +335,7 @@ class BatchOperationVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this BatchOperationVO.
+        r"""Sets the create_by of this BatchOperationVO.
 
         创建人。
 
@@ -346,7 +346,7 @@ class BatchOperationVO:
 
     @property
     def remark(self):
-        """Gets the remark of this BatchOperationVO.
+        r"""Gets the remark of this BatchOperationVO.
 
         remark信息。
 
@@ -357,7 +357,7 @@ class BatchOperationVO:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this BatchOperationVO.
+        r"""Sets the remark of this BatchOperationVO.
 
         remark信息。
 
@@ -368,7 +368,7 @@ class BatchOperationVO:
 
     @property
     def total(self):
-        """Gets the total of this BatchOperationVO.
+        r"""Gets the total of this BatchOperationVO.
 
         总数。
 
@@ -379,7 +379,7 @@ class BatchOperationVO:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BatchOperationVO.
+        r"""Sets the total of this BatchOperationVO.
 
         总数。
 
@@ -390,7 +390,7 @@ class BatchOperationVO:
 
     @property
     def success(self):
-        """Gets the success of this BatchOperationVO.
+        r"""Gets the success of this BatchOperationVO.
 
         操作成功个数。
 
@@ -401,7 +401,7 @@ class BatchOperationVO:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchOperationVO.
+        r"""Sets the success of this BatchOperationVO.
 
         操作成功个数。
 
@@ -412,7 +412,7 @@ class BatchOperationVO:
 
     @property
     def failed(self):
-        """Gets the failed of this BatchOperationVO.
+        r"""Gets the failed of this BatchOperationVO.
 
         操作失败个数。
 
@@ -423,7 +423,7 @@ class BatchOperationVO:
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this BatchOperationVO.
+        r"""Sets the failed of this BatchOperationVO.
 
         操作失败个数。
 
@@ -434,7 +434,7 @@ class BatchOperationVO:
 
     @property
     def rate(self):
-        """Gets the rate of this BatchOperationVO.
+        r"""Gets the rate of this BatchOperationVO.
 
         当前进度。
 
@@ -445,7 +445,7 @@ class BatchOperationVO:
 
     @rate.setter
     def rate(self, rate):
-        """Sets the rate of this BatchOperationVO.
+        r"""Sets the rate of this BatchOperationVO.
 
         当前进度。
 
@@ -456,7 +456,7 @@ class BatchOperationVO:
 
     @property
     def logs(self):
-        """Gets the logs of this BatchOperationVO.
+        r"""Gets the logs of this BatchOperationVO.
 
         日志。
 
@@ -467,7 +467,7 @@ class BatchOperationVO:
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this BatchOperationVO.
+        r"""Sets the logs of this BatchOperationVO.
 
         日志。
 
@@ -478,7 +478,7 @@ class BatchOperationVO:
 
     @property
     def groups(self):
-        """Gets the groups of this BatchOperationVO.
+        r"""Gets the groups of this BatchOperationVO.
 
         分组信息。
 
@@ -489,7 +489,7 @@ class BatchOperationVO:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this BatchOperationVO.
+        r"""Sets the groups of this BatchOperationVO.
 
         分组信息。
 

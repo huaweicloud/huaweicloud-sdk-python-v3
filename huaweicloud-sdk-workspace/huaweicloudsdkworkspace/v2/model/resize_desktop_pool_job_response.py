@@ -27,7 +27,7 @@ class ResizeDesktopPoolJobResponse:
     }
 
     def __init__(self, desktop_id=None, job_id=None):
-        """ResizeDesktopPoolJobResponse
+        r"""ResizeDesktopPoolJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResizeDesktopPoolJobResponse:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ResizeDesktopPoolJobResponse.
+        r"""Gets the desktop_id of this ResizeDesktopPoolJobResponse.
 
         桌面ID。
 
@@ -61,7 +61,7 @@ class ResizeDesktopPoolJobResponse:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ResizeDesktopPoolJobResponse.
+        r"""Sets the desktop_id of this ResizeDesktopPoolJobResponse.
 
         桌面ID。
 
@@ -72,7 +72,7 @@ class ResizeDesktopPoolJobResponse:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeDesktopPoolJobResponse.
+        r"""Gets the job_id of this ResizeDesktopPoolJobResponse.
 
         任务ID。
 
@@ -83,7 +83,7 @@ class ResizeDesktopPoolJobResponse:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeDesktopPoolJobResponse.
+        r"""Sets the job_id of this ResizeDesktopPoolJobResponse.
 
         任务ID。
 

@@ -28,7 +28,7 @@ class ListTopicAttributesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, attributes=None):
-        """ListTopicAttributesResponse
+        r"""ListTopicAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTopicAttributesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTopicAttributesResponse.
+        r"""Gets the request_id of this ListTopicAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ListTopicAttributesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTopicAttributesResponse.
+        r"""Sets the request_id of this ListTopicAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ListTopicAttributesResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this ListTopicAttributesResponse.
+        r"""Gets the attributes of this ListTopicAttributesResponse.
 
         :return: The attributes of this ListTopicAttributesResponse.
         :rtype: :class:`huaweicloudsdksmn.v2.TopicAttribute`
@@ -82,7 +82,7 @@ class ListTopicAttributesResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ListTopicAttributesResponse.
+        r"""Sets the attributes of this ListTopicAttributesResponse.
 
         :param attributes: The attributes of this ListTopicAttributesResponse.
         :type attributes: :class:`huaweicloudsdksmn.v2.TopicAttribute`

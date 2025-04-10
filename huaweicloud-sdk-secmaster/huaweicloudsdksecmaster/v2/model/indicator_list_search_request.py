@@ -39,7 +39,7 @@ class IndicatorListSearchRequest:
     }
 
     def __init__(self, ids=None, dataclass_id=None, condition=None, offset=None, limit=None, sort_by=None, from_date=None, to_date=None):
-        """IndicatorListSearchRequest
+        r"""IndicatorListSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class IndicatorListSearchRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this IndicatorListSearchRequest.
+        r"""Gets the ids of this IndicatorListSearchRequest.
 
         威胁情报ID列表
 
@@ -100,7 +100,7 @@ class IndicatorListSearchRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this IndicatorListSearchRequest.
+        r"""Sets the ids of this IndicatorListSearchRequest.
 
         威胁情报ID列表
 
@@ -111,7 +111,7 @@ class IndicatorListSearchRequest:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this IndicatorListSearchRequest.
+        r"""Gets the dataclass_id of this IndicatorListSearchRequest.
 
         数据类ID
 
@@ -122,7 +122,7 @@ class IndicatorListSearchRequest:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this IndicatorListSearchRequest.
+        r"""Sets the dataclass_id of this IndicatorListSearchRequest.
 
         数据类ID
 
@@ -133,7 +133,7 @@ class IndicatorListSearchRequest:
 
     @property
     def condition(self):
-        """Gets the condition of this IndicatorListSearchRequest.
+        r"""Gets the condition of this IndicatorListSearchRequest.
 
         :return: The condition of this IndicatorListSearchRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
@@ -142,7 +142,7 @@ class IndicatorListSearchRequest:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this IndicatorListSearchRequest.
+        r"""Sets the condition of this IndicatorListSearchRequest.
 
         :param condition: The condition of this IndicatorListSearchRequest.
         :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
@@ -151,7 +151,7 @@ class IndicatorListSearchRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this IndicatorListSearchRequest.
+        r"""Gets the offset of this IndicatorListSearchRequest.
 
         request offset, from 0
 
@@ -162,7 +162,7 @@ class IndicatorListSearchRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this IndicatorListSearchRequest.
+        r"""Sets the offset of this IndicatorListSearchRequest.
 
         request offset, from 0
 
@@ -173,7 +173,7 @@ class IndicatorListSearchRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this IndicatorListSearchRequest.
+        r"""Gets the limit of this IndicatorListSearchRequest.
 
         request limit size
 
@@ -184,7 +184,7 @@ class IndicatorListSearchRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this IndicatorListSearchRequest.
+        r"""Sets the limit of this IndicatorListSearchRequest.
 
         request limit size
 
@@ -195,7 +195,7 @@ class IndicatorListSearchRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this IndicatorListSearchRequest.
+        r"""Gets the sort_by of this IndicatorListSearchRequest.
 
         sort by property, create_time.
 
@@ -206,7 +206,7 @@ class IndicatorListSearchRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this IndicatorListSearchRequest.
+        r"""Sets the sort_by of this IndicatorListSearchRequest.
 
         sort by property, create_time.
 
@@ -217,7 +217,7 @@ class IndicatorListSearchRequest:
 
     @property
     def from_date(self):
-        """Gets the from_date of this IndicatorListSearchRequest.
+        r"""Gets the from_date of this IndicatorListSearchRequest.
 
         查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
 
@@ -228,7 +228,7 @@ class IndicatorListSearchRequest:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this IndicatorListSearchRequest.
+        r"""Sets the from_date of this IndicatorListSearchRequest.
 
         查询起始时间，例如：2024-01-20T00:00:00.000Z+0800
 
@@ -239,7 +239,7 @@ class IndicatorListSearchRequest:
 
     @property
     def to_date(self):
-        """Gets the to_date of this IndicatorListSearchRequest.
+        r"""Gets the to_date of this IndicatorListSearchRequest.
 
         查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
 
@@ -250,7 +250,7 @@ class IndicatorListSearchRequest:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this IndicatorListSearchRequest.
+        r"""Sets the to_date of this IndicatorListSearchRequest.
 
         查询截止时间，例如：2024-01-26T23:59:59.999Z+0800
 

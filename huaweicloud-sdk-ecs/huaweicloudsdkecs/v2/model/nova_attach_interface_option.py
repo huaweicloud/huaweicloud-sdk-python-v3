@@ -29,7 +29,7 @@ class NovaAttachInterfaceOption:
     }
 
     def __init__(self, fixed_ips=None, net_id=None, port_id=None):
-        """NovaAttachInterfaceOption
+        r"""NovaAttachInterfaceOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NovaAttachInterfaceOption:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this NovaAttachInterfaceOption.
+        r"""Gets the fixed_ips of this NovaAttachInterfaceOption.
 
         私有IP。  有port_id时，该参数不起作用，并且有该参数时，必须有net_id。  只有列表中第一个元素有效。传入两个及以上元素会报错。
 
@@ -68,7 +68,7 @@ class NovaAttachInterfaceOption:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this NovaAttachInterfaceOption.
+        r"""Sets the fixed_ips of this NovaAttachInterfaceOption.
 
         私有IP。  有port_id时，该参数不起作用，并且有该参数时，必须有net_id。  只有列表中第一个元素有效。传入两个及以上元素会报错。
 
@@ -79,7 +79,7 @@ class NovaAttachInterfaceOption:
 
     @property
     def net_id(self):
-        """Gets the net_id of this NovaAttachInterfaceOption.
+        r"""Gets the net_id of this NovaAttachInterfaceOption.
 
           Network ID。  有port_id时，该参数不起作用。
 
@@ -90,7 +90,7 @@ class NovaAttachInterfaceOption:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this NovaAttachInterfaceOption.
+        r"""Sets the net_id of this NovaAttachInterfaceOption.
 
           Network ID。  有port_id时，该参数不起作用。
 
@@ -101,7 +101,7 @@ class NovaAttachInterfaceOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this NovaAttachInterfaceOption.
+        r"""Gets the port_id of this NovaAttachInterfaceOption.
 
           Port ID。  port_id和net_id不能同时传入。
 
@@ -112,7 +112,7 @@ class NovaAttachInterfaceOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NovaAttachInterfaceOption.
+        r"""Sets the port_id of this NovaAttachInterfaceOption.
 
           Port ID。  port_id和net_id不能同时传入。
 

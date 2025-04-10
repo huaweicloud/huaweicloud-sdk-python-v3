@@ -27,7 +27,7 @@ class State:
     }
 
     def __init__(self, phase=None, reason=None):
-        """State
+        r"""State
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class State:
 
     @property
     def phase(self):
-        """Gets the phase of this State.
+        r"""Gets the phase of this State.
 
         :return: The phase of this State.
         :rtype: str
@@ -58,7 +58,7 @@ class State:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this State.
+        r"""Sets the phase of this State.
 
         :param phase: The phase of this State.
         :type phase: str
@@ -67,7 +67,7 @@ class State:
 
     @property
     def reason(self):
-        """Gets the reason of this State.
+        r"""Gets the reason of this State.
 
         :return: The reason of this State.
         :rtype: str
@@ -76,7 +76,7 @@ class State:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this State.
+        r"""Sets the reason of this State.
 
         :param reason: The reason of this State.
         :type reason: str

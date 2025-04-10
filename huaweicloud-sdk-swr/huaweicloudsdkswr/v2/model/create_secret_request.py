@@ -25,7 +25,7 @@ class CreateSecretRequest:
     }
 
     def __init__(self, projectname=None):
-        """CreateSecretRequest
+        r"""CreateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSecretRequest:
 
     @property
     def projectname(self):
-        """Gets the projectname of this CreateSecretRequest.
+        r"""Gets the projectname of this CreateSecretRequest.
 
         项目名称，缺省值默认为区域名称，例如：cn-north-1。 
 
@@ -54,7 +54,7 @@ class CreateSecretRequest:
 
     @projectname.setter
     def projectname(self, projectname):
-        """Sets the projectname of this CreateSecretRequest.
+        r"""Sets the projectname of this CreateSecretRequest.
 
         项目名称，缺省值默认为区域名称，例如：cn-north-1。 
 

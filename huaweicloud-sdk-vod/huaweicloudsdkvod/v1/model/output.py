@@ -37,7 +37,7 @@ class Output:
     }
 
     def __init__(self, play_type=None, url=None, group_id=None, group_name=None, encrypted=None, quality=None, meta_data=None):
-        """Output
+        r"""Output
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class Output:
 
     @property
     def play_type(self):
-        """Gets the play_type of this Output.
+        r"""Gets the play_type of this Output.
 
         协议类型。  取值如下： - hls - dash - mp4
 
@@ -93,7 +93,7 @@ class Output:
 
     @play_type.setter
     def play_type(self, play_type):
-        """Sets the play_type of this Output.
+        r"""Sets the play_type of this Output.
 
         协议类型。  取值如下： - hls - dash - mp4
 
@@ -104,7 +104,7 @@ class Output:
 
     @property
     def url(self):
-        """Gets the url of this Output.
+        r"""Gets the url of this Output.
 
         播放URL。
 
@@ -115,7 +115,7 @@ class Output:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Output.
+        r"""Sets the url of this Output.
 
         播放URL。
 
@@ -126,7 +126,7 @@ class Output:
 
     @property
     def group_id(self):
-        """Gets the group_id of this Output.
+        r"""Gets the group_id of this Output.
 
         所属转码组Id
 
@@ -137,7 +137,7 @@ class Output:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this Output.
+        r"""Sets the group_id of this Output.
 
         所属转码组Id
 
@@ -148,7 +148,7 @@ class Output:
 
     @property
     def group_name(self):
-        """Gets the group_name of this Output.
+        r"""Gets the group_name of this Output.
 
         所属转码组名称
 
@@ -159,7 +159,7 @@ class Output:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this Output.
+        r"""Sets the group_name of this Output.
 
         所属转码组名称
 
@@ -170,7 +170,7 @@ class Output:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this Output.
+        r"""Gets the encrypted of this Output.
 
         标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。
 
@@ -181,7 +181,7 @@ class Output:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this Output.
+        r"""Sets the encrypted of this Output.
 
         标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。
 
@@ -192,7 +192,7 @@ class Output:
 
     @property
     def quality(self):
-        """Gets the quality of this Output.
+        r"""Gets the quality of this Output.
 
         清晰度。  取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
 
@@ -203,7 +203,7 @@ class Output:
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this Output.
+        r"""Sets the quality of this Output.
 
         清晰度。  取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
 
@@ -214,7 +214,7 @@ class Output:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this Output.
+        r"""Gets the meta_data of this Output.
 
         :return: The meta_data of this Output.
         :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
@@ -223,7 +223,7 @@ class Output:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this Output.
+        r"""Sets the meta_data of this Output.
 
         :param meta_data: The meta_data of this Output.
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`

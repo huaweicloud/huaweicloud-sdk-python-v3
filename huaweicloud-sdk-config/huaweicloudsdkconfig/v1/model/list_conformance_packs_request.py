@@ -29,7 +29,7 @@ class ListConformancePacksRequest:
     }
 
     def __init__(self, limit=None, marker=None, conformance_pack_name=None):
-        """ListConformancePacksRequest
+        r"""ListConformancePacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListConformancePacksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConformancePacksRequest.
+        r"""Gets the limit of this ListConformancePacksRequest.
 
         最大的返回数量
 
@@ -68,7 +68,7 @@ class ListConformancePacksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConformancePacksRequest.
+        r"""Sets the limit of this ListConformancePacksRequest.
 
         最大的返回数量
 
@@ -79,7 +79,7 @@ class ListConformancePacksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListConformancePacksRequest.
+        r"""Gets the marker of this ListConformancePacksRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -90,7 +90,7 @@ class ListConformancePacksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListConformancePacksRequest.
+        r"""Sets the marker of this ListConformancePacksRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -101,7 +101,7 @@ class ListConformancePacksRequest:
 
     @property
     def conformance_pack_name(self):
-        """Gets the conformance_pack_name of this ListConformancePacksRequest.
+        r"""Gets the conformance_pack_name of this ListConformancePacksRequest.
 
         合规规则包名称。
 
@@ -112,7 +112,7 @@ class ListConformancePacksRequest:
 
     @conformance_pack_name.setter
     def conformance_pack_name(self, conformance_pack_name):
-        """Sets the conformance_pack_name of this ListConformancePacksRequest.
+        r"""Sets the conformance_pack_name of this ListConformancePacksRequest.
 
         合规规则包名称。
 

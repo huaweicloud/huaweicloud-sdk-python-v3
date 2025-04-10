@@ -27,7 +27,7 @@ class DeleteMessageNotificationPolicyRequest:
     }
 
     def __init__(self, message_policy_id=None, workspace_id=None):
-        """DeleteMessageNotificationPolicyRequest
+        r"""DeleteMessageNotificationPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteMessageNotificationPolicyRequest:
 
     @property
     def message_policy_id(self):
-        """Gets the message_policy_id of this DeleteMessageNotificationPolicyRequest.
+        r"""Gets the message_policy_id of this DeleteMessageNotificationPolicyRequest.
 
         消息通知策略ID
 
@@ -59,7 +59,7 @@ class DeleteMessageNotificationPolicyRequest:
 
     @message_policy_id.setter
     def message_policy_id(self, message_policy_id):
-        """Sets the message_policy_id of this DeleteMessageNotificationPolicyRequest.
+        r"""Sets the message_policy_id of this DeleteMessageNotificationPolicyRequest.
 
         消息通知策略ID
 
@@ -70,7 +70,7 @@ class DeleteMessageNotificationPolicyRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteMessageNotificationPolicyRequest.
+        r"""Gets the workspace_id of this DeleteMessageNotificationPolicyRequest.
 
         Workspace的ID
 
@@ -81,7 +81,7 @@ class DeleteMessageNotificationPolicyRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteMessageNotificationPolicyRequest.
+        r"""Sets the workspace_id of this DeleteMessageNotificationPolicyRequest.
 
         Workspace的ID
 

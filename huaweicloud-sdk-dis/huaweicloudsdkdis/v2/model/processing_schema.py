@@ -29,7 +29,7 @@ class ProcessingSchema:
     }
 
     def __init__(self, timestamp_name=None, timestamp_type=None, timestamp_format=None):
-        """ProcessingSchema
+        r"""ProcessingSchema
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ProcessingSchema:
 
     @property
     def timestamp_name(self):
-        """Gets the timestamp_name of this ProcessingSchema.
+        r"""Gets the timestamp_name of this ProcessingSchema.
 
         源数据时间戳的属性名称。
 
@@ -66,7 +66,7 @@ class ProcessingSchema:
 
     @timestamp_name.setter
     def timestamp_name(self, timestamp_name):
-        """Sets the timestamp_name of this ProcessingSchema.
+        r"""Sets the timestamp_name of this ProcessingSchema.
 
         源数据时间戳的属性名称。
 
@@ -77,7 +77,7 @@ class ProcessingSchema:
 
     @property
     def timestamp_type(self):
-        """Gets the timestamp_type of this ProcessingSchema.
+        r"""Gets the timestamp_type of this ProcessingSchema.
 
         源数据时间戳的类型。  - String - Timestamp：Long类型的13位时间戳
 
@@ -88,7 +88,7 @@ class ProcessingSchema:
 
     @timestamp_type.setter
     def timestamp_type(self, timestamp_type):
-        """Sets the timestamp_type of this ProcessingSchema.
+        r"""Sets the timestamp_type of this ProcessingSchema.
 
         源数据时间戳的类型。  - String - Timestamp：Long类型的13位时间戳
 
@@ -99,7 +99,7 @@ class ProcessingSchema:
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this ProcessingSchema.
+        r"""Gets the timestamp_format of this ProcessingSchema.
 
         源数据时间戳的类型为String时必选，用于根据时间戳格式生成OBS的时间目录。
 
@@ -110,7 +110,7 @@ class ProcessingSchema:
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this ProcessingSchema.
+        r"""Sets the timestamp_format of this ProcessingSchema.
 
         源数据时间戳的类型为String时必选，用于根据时间戳格式生成OBS的时间目录。
 

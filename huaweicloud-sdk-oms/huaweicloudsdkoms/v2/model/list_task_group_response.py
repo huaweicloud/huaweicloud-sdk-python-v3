@@ -28,7 +28,7 @@ class ListTaskGroupResponse(SdkResponse):
     }
 
     def __init__(self, count=None, taskgroups=None):
-        """ListTaskGroupResponse
+        r"""ListTaskGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTaskGroupResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTaskGroupResponse.
+        r"""Gets the count of this ListTaskGroupResponse.
 
         满足查询条件的任务组总数
 
@@ -62,7 +62,7 @@ class ListTaskGroupResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTaskGroupResponse.
+        r"""Sets the count of this ListTaskGroupResponse.
 
         满足查询条件的任务组总数
 
@@ -73,7 +73,7 @@ class ListTaskGroupResponse(SdkResponse):
 
     @property
     def taskgroups(self):
-        """Gets the taskgroups of this ListTaskGroupResponse.
+        r"""Gets the taskgroups of this ListTaskGroupResponse.
 
         查询的迁移任务组详情
 
@@ -84,7 +84,7 @@ class ListTaskGroupResponse(SdkResponse):
 
     @taskgroups.setter
     def taskgroups(self, taskgroups):
-        """Sets the taskgroups of this ListTaskGroupResponse.
+        r"""Sets the taskgroups of this ListTaskGroupResponse.
 
         查询的迁移任务组详情
 

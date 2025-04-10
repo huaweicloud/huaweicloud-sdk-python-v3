@@ -49,7 +49,7 @@ class AuditSqlRequest:
     }
 
     def __init__(self, time=None, risk_levels=None, client_ip=None, client_name=None, db_ip=None, db_user=None, query_type=None, rule_name=None, sql_statement=None, sql_response=None, page=None, size=None, time_order=None):
-        """AuditSqlRequest
+        r"""AuditSqlRequest
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class AuditSqlRequest:
 
     @property
     def time(self):
-        """Gets the time of this AuditSqlRequest.
+        r"""Gets the time of this AuditSqlRequest.
 
         :return: The time of this AuditSqlRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AuditSqlRequestTime`
@@ -135,7 +135,7 @@ class AuditSqlRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this AuditSqlRequest.
+        r"""Sets the time of this AuditSqlRequest.
 
         :param time: The time of this AuditSqlRequest.
         :type time: :class:`huaweicloudsdkdbss.v1.AuditSqlRequestTime`
@@ -144,7 +144,7 @@ class AuditSqlRequest:
 
     @property
     def risk_levels(self):
-        """Gets the risk_levels of this AuditSqlRequest.
+        r"""Gets the risk_levels of this AuditSqlRequest.
 
         风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
@@ -155,7 +155,7 @@ class AuditSqlRequest:
 
     @risk_levels.setter
     def risk_levels(self, risk_levels):
-        """Sets the risk_levels of this AuditSqlRequest.
+        r"""Sets the risk_levels of this AuditSqlRequest.
 
         风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
@@ -166,7 +166,7 @@ class AuditSqlRequest:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this AuditSqlRequest.
+        r"""Gets the client_ip of this AuditSqlRequest.
 
         客户端IP
 
@@ -177,7 +177,7 @@ class AuditSqlRequest:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this AuditSqlRequest.
+        r"""Sets the client_ip of this AuditSqlRequest.
 
         客户端IP
 
@@ -188,7 +188,7 @@ class AuditSqlRequest:
 
     @property
     def client_name(self):
-        """Gets the client_name of this AuditSqlRequest.
+        r"""Gets the client_name of this AuditSqlRequest.
 
         客户端名称
 
@@ -199,7 +199,7 @@ class AuditSqlRequest:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this AuditSqlRequest.
+        r"""Sets the client_name of this AuditSqlRequest.
 
         客户端名称
 
@@ -210,7 +210,7 @@ class AuditSqlRequest:
 
     @property
     def db_ip(self):
-        """Gets the db_ip of this AuditSqlRequest.
+        r"""Gets the db_ip of this AuditSqlRequest.
 
         数据库IP
 
@@ -221,7 +221,7 @@ class AuditSqlRequest:
 
     @db_ip.setter
     def db_ip(self, db_ip):
-        """Sets the db_ip of this AuditSqlRequest.
+        r"""Sets the db_ip of this AuditSqlRequest.
 
         数据库IP
 
@@ -232,7 +232,7 @@ class AuditSqlRequest:
 
     @property
     def db_user(self):
-        """Gets the db_user of this AuditSqlRequest.
+        r"""Gets the db_user of this AuditSqlRequest.
 
         数据库用户
 
@@ -243,7 +243,7 @@ class AuditSqlRequest:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this AuditSqlRequest.
+        r"""Sets the db_user of this AuditSqlRequest.
 
         数据库用户
 
@@ -254,7 +254,7 @@ class AuditSqlRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this AuditSqlRequest.
+        r"""Gets the query_type of this AuditSqlRequest.
 
         查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
@@ -265,7 +265,7 @@ class AuditSqlRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this AuditSqlRequest.
+        r"""Sets the query_type of this AuditSqlRequest.
 
         查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
@@ -276,7 +276,7 @@ class AuditSqlRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this AuditSqlRequest.
+        r"""Gets the rule_name of this AuditSqlRequest.
 
         规则名称
 
@@ -287,7 +287,7 @@ class AuditSqlRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this AuditSqlRequest.
+        r"""Sets the rule_name of this AuditSqlRequest.
 
         规则名称
 
@@ -298,7 +298,7 @@ class AuditSqlRequest:
 
     @property
     def sql_statement(self):
-        """Gets the sql_statement of this AuditSqlRequest.
+        r"""Gets the sql_statement of this AuditSqlRequest.
 
         sql语句
 
@@ -309,7 +309,7 @@ class AuditSqlRequest:
 
     @sql_statement.setter
     def sql_statement(self, sql_statement):
-        """Sets the sql_statement of this AuditSqlRequest.
+        r"""Sets the sql_statement of this AuditSqlRequest.
 
         sql语句
 
@@ -320,7 +320,7 @@ class AuditSqlRequest:
 
     @property
     def sql_response(self):
-        """Gets the sql_response of this AuditSqlRequest.
+        r"""Gets the sql_response of this AuditSqlRequest.
 
         响应结果 - SUCCESS - FAILED
 
@@ -331,7 +331,7 @@ class AuditSqlRequest:
 
     @sql_response.setter
     def sql_response(self, sql_response):
-        """Sets the sql_response of this AuditSqlRequest.
+        r"""Sets the sql_response of this AuditSqlRequest.
 
         响应结果 - SUCCESS - FAILED
 
@@ -342,7 +342,7 @@ class AuditSqlRequest:
 
     @property
     def page(self):
-        """Gets the page of this AuditSqlRequest.
+        r"""Gets the page of this AuditSqlRequest.
 
         页码
 
@@ -353,7 +353,7 @@ class AuditSqlRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AuditSqlRequest.
+        r"""Sets the page of this AuditSqlRequest.
 
         页码
 
@@ -364,7 +364,7 @@ class AuditSqlRequest:
 
     @property
     def size(self):
-        """Gets the size of this AuditSqlRequest.
+        r"""Gets the size of this AuditSqlRequest.
 
         条数
 
@@ -375,7 +375,7 @@ class AuditSqlRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AuditSqlRequest.
+        r"""Sets the size of this AuditSqlRequest.
 
         条数
 
@@ -386,7 +386,7 @@ class AuditSqlRequest:
 
     @property
     def time_order(self):
-        """Gets the time_order of this AuditSqlRequest.
+        r"""Gets the time_order of this AuditSqlRequest.
 
         时间顺序 - DESC - ASC
 
@@ -397,7 +397,7 @@ class AuditSqlRequest:
 
     @time_order.setter
     def time_order(self, time_order):
-        """Sets the time_order of this AuditSqlRequest.
+        r"""Sets the time_order of this AuditSqlRequest.
 
         时间顺序 - DESC - ASC
 

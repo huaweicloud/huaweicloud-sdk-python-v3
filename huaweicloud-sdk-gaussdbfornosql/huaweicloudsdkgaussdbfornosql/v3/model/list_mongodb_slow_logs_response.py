@@ -26,7 +26,7 @@ class ListMongodbSlowLogsResponse(SdkResponse):
     }
 
     def __init__(self, slow_logs=None):
-        """ListMongodbSlowLogsResponse
+        r"""ListMongodbSlowLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMongodbSlowLogsResponse(SdkResponse):
 
     @property
     def slow_logs(self):
-        """Gets the slow_logs of this ListMongodbSlowLogsResponse.
+        r"""Gets the slow_logs of this ListMongodbSlowLogsResponse.
 
         慢日志具体信息。
 
@@ -55,7 +55,7 @@ class ListMongodbSlowLogsResponse(SdkResponse):
 
     @slow_logs.setter
     def slow_logs(self, slow_logs):
-        """Sets the slow_logs of this ListMongodbSlowLogsResponse.
+        r"""Sets the slow_logs of this ListMongodbSlowLogsResponse.
 
         慢日志具体信息。
 

@@ -62,7 +62,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
     }
 
     def __init__(self, url=None, id=None, created_at=None, updated_at=None, labels=None, gen_scenario=None, road_scenario=None, description=None, file=None, simulator=None, version=None, map_filename=None, model_filename=None, user_id=None, user_name=None, name=None, priority=None, map=None, model=None):
-        """CreateSimSmScenariosResponse
+        r"""CreateSimSmScenariosResponse
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this CreateSimSmScenariosResponse.
+        r"""Gets the url of this CreateSimSmScenariosResponse.
 
         地址
 
@@ -173,7 +173,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateSimSmScenariosResponse.
+        r"""Sets the url of this CreateSimSmScenariosResponse.
 
         地址
 
@@ -184,7 +184,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSimSmScenariosResponse.
+        r"""Gets the id of this CreateSimSmScenariosResponse.
 
         ID
 
@@ -195,7 +195,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSimSmScenariosResponse.
+        r"""Sets the id of this CreateSimSmScenariosResponse.
 
         ID
 
@@ -206,7 +206,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateSimSmScenariosResponse.
+        r"""Gets the created_at of this CreateSimSmScenariosResponse.
 
         创建时间
 
@@ -217,7 +217,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateSimSmScenariosResponse.
+        r"""Sets the created_at of this CreateSimSmScenariosResponse.
 
         创建时间
 
@@ -228,7 +228,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateSimSmScenariosResponse.
+        r"""Gets the updated_at of this CreateSimSmScenariosResponse.
 
         更新时间
 
@@ -239,7 +239,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateSimSmScenariosResponse.
+        r"""Sets the updated_at of this CreateSimSmScenariosResponse.
 
         更新时间
 
@@ -250,7 +250,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this CreateSimSmScenariosResponse.
+        r"""Gets the labels of this CreateSimSmScenariosResponse.
 
         标签
 
@@ -261,7 +261,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateSimSmScenariosResponse.
+        r"""Sets the labels of this CreateSimSmScenariosResponse.
 
         标签
 
@@ -272,7 +272,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def gen_scenario(self):
-        """Gets the gen_scenario of this CreateSimSmScenariosResponse.
+        r"""Gets the gen_scenario of this CreateSimSmScenariosResponse.
 
         泛化场景
 
@@ -283,7 +283,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @gen_scenario.setter
     def gen_scenario(self, gen_scenario):
-        """Sets the gen_scenario of this CreateSimSmScenariosResponse.
+        r"""Sets the gen_scenario of this CreateSimSmScenariosResponse.
 
         泛化场景
 
@@ -294,7 +294,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def road_scenario(self):
-        """Gets the road_scenario of this CreateSimSmScenariosResponse.
+        r"""Gets the road_scenario of this CreateSimSmScenariosResponse.
 
         路采场景
 
@@ -305,7 +305,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @road_scenario.setter
     def road_scenario(self, road_scenario):
-        """Sets the road_scenario of this CreateSimSmScenariosResponse.
+        r"""Sets the road_scenario of this CreateSimSmScenariosResponse.
 
         路采场景
 
@@ -316,7 +316,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateSimSmScenariosResponse.
+        r"""Gets the description of this CreateSimSmScenariosResponse.
 
         :return: The description of this CreateSimSmScenariosResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.MutableFileSrlz`
@@ -325,7 +325,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSimSmScenariosResponse.
+        r"""Sets the description of this CreateSimSmScenariosResponse.
 
         :param description: The description of this CreateSimSmScenariosResponse.
         :type description: :class:`huaweicloudsdkoctopus.v2.MutableFileSrlz`
@@ -334,7 +334,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def file(self):
-        """Gets the file of this CreateSimSmScenariosResponse.
+        r"""Gets the file of this CreateSimSmScenariosResponse.
 
         文件
 
@@ -345,7 +345,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateSimSmScenariosResponse.
+        r"""Sets the file of this CreateSimSmScenariosResponse.
 
         文件
 
@@ -356,7 +356,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def simulator(self):
-        """Gets the simulator of this CreateSimSmScenariosResponse.
+        r"""Gets the simulator of this CreateSimSmScenariosResponse.
 
         :return: The simulator of this CreateSimSmScenariosResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
@@ -365,7 +365,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @simulator.setter
     def simulator(self, simulator):
-        """Sets the simulator of this CreateSimSmScenariosResponse.
+        r"""Sets the simulator of this CreateSimSmScenariosResponse.
 
         :param simulator: The simulator of this CreateSimSmScenariosResponse.
         :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
@@ -374,7 +374,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateSimSmScenariosResponse.
+        r"""Gets the version of this CreateSimSmScenariosResponse.
 
         :return: The version of this CreateSimSmScenariosResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
@@ -383,7 +383,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateSimSmScenariosResponse.
+        r"""Sets the version of this CreateSimSmScenariosResponse.
 
         :param version: The version of this CreateSimSmScenariosResponse.
         :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
@@ -392,7 +392,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def map_filename(self):
-        """Gets the map_filename of this CreateSimSmScenariosResponse.
+        r"""Gets the map_filename of this CreateSimSmScenariosResponse.
 
         地图文件名
 
@@ -403,7 +403,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @map_filename.setter
     def map_filename(self, map_filename):
-        """Sets the map_filename of this CreateSimSmScenariosResponse.
+        r"""Sets the map_filename of this CreateSimSmScenariosResponse.
 
         地图文件名
 
@@ -414,7 +414,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def model_filename(self):
-        """Gets the model_filename of this CreateSimSmScenariosResponse.
+        r"""Gets the model_filename of this CreateSimSmScenariosResponse.
 
         模型文件名
 
@@ -425,7 +425,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @model_filename.setter
     def model_filename(self, model_filename):
-        """Sets the model_filename of this CreateSimSmScenariosResponse.
+        r"""Sets the model_filename of this CreateSimSmScenariosResponse.
 
         模型文件名
 
@@ -436,7 +436,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateSimSmScenariosResponse.
+        r"""Gets the user_id of this CreateSimSmScenariosResponse.
 
         用户id
 
@@ -447,7 +447,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateSimSmScenariosResponse.
+        r"""Sets the user_id of this CreateSimSmScenariosResponse.
 
         用户id
 
@@ -458,7 +458,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateSimSmScenariosResponse.
+        r"""Gets the user_name of this CreateSimSmScenariosResponse.
 
         用户名
 
@@ -469,7 +469,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateSimSmScenariosResponse.
+        r"""Sets the user_name of this CreateSimSmScenariosResponse.
 
         用户名
 
@@ -480,7 +480,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateSimSmScenariosResponse.
+        r"""Gets the name of this CreateSimSmScenariosResponse.
 
         名称
 
@@ -491,7 +491,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSimSmScenariosResponse.
+        r"""Sets the name of this CreateSimSmScenariosResponse.
 
         名称
 
@@ -502,7 +502,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this CreateSimSmScenariosResponse.
+        r"""Gets the priority of this CreateSimSmScenariosResponse.
 
         :return: The priority of this CreateSimSmScenariosResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
@@ -511,7 +511,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateSimSmScenariosResponse.
+        r"""Sets the priority of this CreateSimSmScenariosResponse.
 
         :param priority: The priority of this CreateSimSmScenariosResponse.
         :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
@@ -520,7 +520,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def map(self):
-        """Gets the map of this CreateSimSmScenariosResponse.
+        r"""Gets the map of this CreateSimSmScenariosResponse.
 
         地图
 
@@ -531,7 +531,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @map.setter
     def map(self, map):
-        """Sets the map of this CreateSimSmScenariosResponse.
+        r"""Sets the map of this CreateSimSmScenariosResponse.
 
         地图
 
@@ -542,7 +542,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @property
     def model(self):
-        """Gets the model of this CreateSimSmScenariosResponse.
+        r"""Gets the model of this CreateSimSmScenariosResponse.
 
         模型
 
@@ -553,7 +553,7 @@ class CreateSimSmScenariosResponse(SdkResponse):
 
     @model.setter
     def model(self, model):
-        """Sets the model of this CreateSimSmScenariosResponse.
+        r"""Sets the model of this CreateSimSmScenariosResponse.
 
         模型
 

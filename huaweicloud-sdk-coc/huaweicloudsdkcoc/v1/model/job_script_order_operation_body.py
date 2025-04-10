@@ -29,7 +29,7 @@ class JobScriptOrderOperationBody:
     }
 
     def __init__(self, batch_index=None, instance_id=None, operation_type=None):
-        """JobScriptOrderOperationBody
+        r"""JobScriptOrderOperationBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class JobScriptOrderOperationBody:
 
     @property
     def batch_index(self):
-        """Gets the batch_index of this JobScriptOrderOperationBody.
+        r"""Gets the batch_index of this JobScriptOrderOperationBody.
 
         适用于批次操作时
 
@@ -67,7 +67,7 @@ class JobScriptOrderOperationBody:
 
     @batch_index.setter
     def batch_index(self, batch_index):
-        """Sets the batch_index of this JobScriptOrderOperationBody.
+        r"""Sets the batch_index of this JobScriptOrderOperationBody.
 
         适用于批次操作时
 
@@ -78,7 +78,7 @@ class JobScriptOrderOperationBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this JobScriptOrderOperationBody.
+        r"""Gets the instance_id of this JobScriptOrderOperationBody.
 
         适用于实例操作时 非script_execute_instance_do中iD，需要新增字段
 
@@ -89,7 +89,7 @@ class JobScriptOrderOperationBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this JobScriptOrderOperationBody.
+        r"""Sets the instance_id of this JobScriptOrderOperationBody.
 
         适用于实例操作时 非script_execute_instance_do中iD，需要新增字段
 
@@ -100,7 +100,7 @@ class JobScriptOrderOperationBody:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this JobScriptOrderOperationBody.
+        r"""Gets the operation_type of this JobScriptOrderOperationBody.
 
         操作类型：取消实例、跳过批次、取消整个工单、暂停整个工单、继续整个工单 CANCEL_INSTANCE：取消实例 SKIP_BATCH：跳过批次 CANCEL_ORDER：取消整个工单 PAUSE_ORDER：暂停整个工单 CONTINUE_ORDER：继续整个工单
 
@@ -111,7 +111,7 @@ class JobScriptOrderOperationBody:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this JobScriptOrderOperationBody.
+        r"""Sets the operation_type of this JobScriptOrderOperationBody.
 
         操作类型：取消实例、跳过批次、取消整个工单、暂停整个工单、继续整个工单 CANCEL_INSTANCE：取消实例 SKIP_BATCH：跳过批次 CANCEL_ORDER：取消整个工单 PAUSE_ORDER：暂停整个工单 CONTINUE_ORDER：继续整个工单
 

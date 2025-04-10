@@ -33,7 +33,7 @@ class PublishApiToInstanceRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, instance_id=None, body=None):
-        """PublishApiToInstanceRequest
+        r"""PublishApiToInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class PublishApiToInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this PublishApiToInstanceRequest.
+        r"""Gets the workspace of this PublishApiToInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -79,7 +79,7 @@ class PublishApiToInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this PublishApiToInstanceRequest.
+        r"""Sets the workspace of this PublishApiToInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -90,7 +90,7 @@ class PublishApiToInstanceRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this PublishApiToInstanceRequest.
+        r"""Gets the dlm_type of this PublishApiToInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -101,7 +101,7 @@ class PublishApiToInstanceRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this PublishApiToInstanceRequest.
+        r"""Sets the dlm_type of this PublishApiToInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -112,7 +112,7 @@ class PublishApiToInstanceRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this PublishApiToInstanceRequest.
+        r"""Gets the api_id of this PublishApiToInstanceRequest.
 
         api编号。
 
@@ -123,7 +123,7 @@ class PublishApiToInstanceRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this PublishApiToInstanceRequest.
+        r"""Sets the api_id of this PublishApiToInstanceRequest.
 
         api编号。
 
@@ -134,7 +134,7 @@ class PublishApiToInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PublishApiToInstanceRequest.
+        r"""Gets the instance_id of this PublishApiToInstanceRequest.
 
         集群编号。
 
@@ -145,7 +145,7 @@ class PublishApiToInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PublishApiToInstanceRequest.
+        r"""Sets the instance_id of this PublishApiToInstanceRequest.
 
         集群编号。
 
@@ -156,7 +156,7 @@ class PublishApiToInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishApiToInstanceRequest.
+        r"""Gets the body of this PublishApiToInstanceRequest.
 
         :return: The body of this PublishApiToInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.GatewayDTO`
@@ -165,7 +165,7 @@ class PublishApiToInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishApiToInstanceRequest.
+        r"""Sets the body of this PublishApiToInstanceRequest.
 
         :param body: The body of this PublishApiToInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.GatewayDTO`

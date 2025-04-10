@@ -25,7 +25,7 @@ class CreateVolumeSchedulerHints:
     }
 
     def __init__(self, dedicated_storage_id=None):
-        """CreateVolumeSchedulerHints
+        r"""CreateVolumeSchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVolumeSchedulerHints:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this CreateVolumeSchedulerHints.
+        r"""Gets the dedicated_storage_id of this CreateVolumeSchedulerHints.
 
         指定专属存储池ID，表示将云硬盘创建在该ID对应的存储池中。
 
@@ -54,7 +54,7 @@ class CreateVolumeSchedulerHints:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this CreateVolumeSchedulerHints.
+        r"""Sets the dedicated_storage_id of this CreateVolumeSchedulerHints.
 
         指定专属存储池ID，表示将云硬盘创建在该ID对应的存储池中。
 

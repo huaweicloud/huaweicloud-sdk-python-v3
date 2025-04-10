@@ -25,7 +25,7 @@ class CreateDesktopBatchOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDesktopBatchOrderRequest
+        r"""CreateDesktopBatchOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDesktopBatchOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopBatchOrderRequest.
+        r"""Gets the body of this CreateDesktopBatchOrderRequest.
 
         :return: The body of this CreateDesktopBatchOrderRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateBatchChangeOrderRequestBody`
@@ -52,7 +52,7 @@ class CreateDesktopBatchOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopBatchOrderRequest.
+        r"""Sets the body of this CreateDesktopBatchOrderRequest.
 
         :param body: The body of this CreateDesktopBatchOrderRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateBatchChangeOrderRequestBody`

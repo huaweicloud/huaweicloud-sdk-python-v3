@@ -25,7 +25,7 @@ class ShowShardingBalancerRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowShardingBalancerRequest
+        r"""ShowShardingBalancerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowShardingBalancerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowShardingBalancerRequest.
+        r"""Gets the instance_id of this ShowShardingBalancerRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -53,7 +53,7 @@ class ShowShardingBalancerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowShardingBalancerRequest.
+        r"""Sets the instance_id of this ShowShardingBalancerRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 

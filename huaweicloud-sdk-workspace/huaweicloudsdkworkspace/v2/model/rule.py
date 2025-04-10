@@ -29,7 +29,7 @@ class Rule:
     }
 
     def __init__(self, scope=None, product_rule=None, path_rule=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Rule:
 
     @property
     def scope(self):
-        """Gets the scope of this Rule.
+        r"""Gets the scope of this Rule.
 
         :return: The scope of this Rule.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RuleScope`
@@ -65,7 +65,7 @@ class Rule:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this Rule.
+        r"""Sets the scope of this Rule.
 
         :param scope: The scope of this Rule.
         :type scope: :class:`huaweicloudsdkworkspace.v2.RuleScope`
@@ -74,7 +74,7 @@ class Rule:
 
     @property
     def product_rule(self):
-        """Gets the product_rule of this Rule.
+        r"""Gets the product_rule of this Rule.
 
         :return: The product_rule of this Rule.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ProductRule`
@@ -83,7 +83,7 @@ class Rule:
 
     @product_rule.setter
     def product_rule(self, product_rule):
-        """Sets the product_rule of this Rule.
+        r"""Sets the product_rule of this Rule.
 
         :param product_rule: The product_rule of this Rule.
         :type product_rule: :class:`huaweicloudsdkworkspace.v2.ProductRule`
@@ -92,7 +92,7 @@ class Rule:
 
     @property
     def path_rule(self):
-        """Gets the path_rule of this Rule.
+        r"""Gets the path_rule of this Rule.
 
         :return: The path_rule of this Rule.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PathRule`
@@ -101,7 +101,7 @@ class Rule:
 
     @path_rule.setter
     def path_rule(self, path_rule):
-        """Sets the path_rule of this Rule.
+        r"""Sets the path_rule of this Rule.
 
         :param path_rule: The path_rule of this Rule.
         :type path_rule: :class:`huaweicloudsdkworkspace.v2.PathRule`

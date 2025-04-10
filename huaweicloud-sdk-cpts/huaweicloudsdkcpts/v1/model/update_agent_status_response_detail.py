@@ -31,7 +31,7 @@ class UpdateAgentStatusResponseDetail:
     }
 
     def __init__(self, id=None, status=None, update_time=None, result=None):
-        """UpdateAgentStatusResponseDetail
+        r"""UpdateAgentStatusResponseDetail
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateAgentStatusResponseDetail:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAgentStatusResponseDetail.
+        r"""Gets the id of this UpdateAgentStatusResponseDetail.
 
         全链路应用id
 
@@ -72,7 +72,7 @@ class UpdateAgentStatusResponseDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAgentStatusResponseDetail.
+        r"""Sets the id of this UpdateAgentStatusResponseDetail.
 
         全链路应用id
 
@@ -83,7 +83,7 @@ class UpdateAgentStatusResponseDetail:
 
     @property
     def status(self):
-        """Gets the status of this UpdateAgentStatusResponseDetail.
+        r"""Gets the status of this UpdateAgentStatusResponseDetail.
 
         全链路应用状态，枚举值：CREATING，FAILED，NORMAL，DELETE
 
@@ -94,7 +94,7 @@ class UpdateAgentStatusResponseDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAgentStatusResponseDetail.
+        r"""Sets the status of this UpdateAgentStatusResponseDetail.
 
         全链路应用状态，枚举值：CREATING，FAILED，NORMAL，DELETE
 
@@ -105,7 +105,7 @@ class UpdateAgentStatusResponseDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateAgentStatusResponseDetail.
+        r"""Gets the update_time of this UpdateAgentStatusResponseDetail.
 
         全链路应用更新时间
 
@@ -116,7 +116,7 @@ class UpdateAgentStatusResponseDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateAgentStatusResponseDetail.
+        r"""Sets the update_time of this UpdateAgentStatusResponseDetail.
 
         全链路应用更新时间
 
@@ -127,7 +127,7 @@ class UpdateAgentStatusResponseDetail:
 
     @property
     def result(self):
-        """Gets the result of this UpdateAgentStatusResponseDetail.
+        r"""Gets the result of this UpdateAgentStatusResponseDetail.
 
         :return: The result of this UpdateAgentStatusResponseDetail.
         :rtype: :class:`huaweicloudsdkcpts.v1.AgentConfig`
@@ -136,7 +136,7 @@ class UpdateAgentStatusResponseDetail:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAgentStatusResponseDetail.
+        r"""Sets the result of this UpdateAgentStatusResponseDetail.
 
         :param result: The result of this UpdateAgentStatusResponseDetail.
         :type result: :class:`huaweicloudsdkcpts.v1.AgentConfig`

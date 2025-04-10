@@ -51,7 +51,7 @@ class ShowSkillListRequest:
     }
 
     def __init__(self, limit=None, offset=None, skill_name=None, skill_form=None, permission=None, template_source=None, status=None, charge_model=None, platform=None, chip=None, type=None, charge_models=None, device_types=None, scenes=None):
-        """ShowSkillListRequest
+        r"""ShowSkillListRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ShowSkillListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowSkillListRequest.
+        r"""Gets the limit of this ShowSkillListRequest.
 
         每页显示的条目数量, 最大 100，默认值 10
 
@@ -145,7 +145,7 @@ class ShowSkillListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowSkillListRequest.
+        r"""Sets the limit of this ShowSkillListRequest.
 
         每页显示的条目数量, 最大 100，默认值 10
 
@@ -156,7 +156,7 @@ class ShowSkillListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowSkillListRequest.
+        r"""Gets the offset of this ShowSkillListRequest.
 
         查询的起始位置, 默认值 0
 
@@ -167,7 +167,7 @@ class ShowSkillListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowSkillListRequest.
+        r"""Sets the offset of this ShowSkillListRequest.
 
         查询的起始位置, 默认值 0
 
@@ -178,7 +178,7 @@ class ShowSkillListRequest:
 
     @property
     def skill_name(self):
-        """Gets the skill_name of this ShowSkillListRequest.
+        r"""Gets the skill_name of this ShowSkillListRequest.
 
         技能名称，支持模糊匹配。中英文、数字、下划线、中划线 长度[1-60]
 
@@ -189,7 +189,7 @@ class ShowSkillListRequest:
 
     @skill_name.setter
     def skill_name(self, skill_name):
-        """Sets the skill_name of this ShowSkillListRequest.
+        r"""Sets the skill_name of this ShowSkillListRequest.
 
         技能名称，支持模糊匹配。中英文、数字、下划线、中划线 长度[1-60]
 
@@ -200,7 +200,7 @@ class ShowSkillListRequest:
 
     @property
     def skill_form(self):
-        """Gets the skill_form of this ShowSkillListRequest.
+        r"""Gets the skill_form of this ShowSkillListRequest.
 
         技能形式，no_termplate不支持Modelbox部署模板，support_template支持Modelbox模板。
 
@@ -211,7 +211,7 @@ class ShowSkillListRequest:
 
     @skill_form.setter
     def skill_form(self, skill_form):
-        """Sets the skill_form of this ShowSkillListRequest.
+        r"""Sets the skill_form of this ShowSkillListRequest.
 
         技能形式，no_termplate不支持Modelbox部署模板，support_template支持Modelbox模板。
 
@@ -222,7 +222,7 @@ class ShowSkillListRequest:
 
     @property
     def permission(self):
-        """Gets the permission of this ShowSkillListRequest.
+        r"""Gets the permission of this ShowSkillListRequest.
 
         技能可见权限，支持公开可见public以及白名单whitelist
 
@@ -233,7 +233,7 @@ class ShowSkillListRequest:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ShowSkillListRequest.
+        r"""Sets the permission of this ShowSkillListRequest.
 
         技能可见权限，支持公开可见public以及白名单whitelist
 
@@ -244,7 +244,7 @@ class ShowSkillListRequest:
 
     @property
     def template_source(self):
-        """Gets the template_source of this ShowSkillListRequest.
+        r"""Gets the template_source of this ShowSkillListRequest.
 
         技能来源，分别hilens，ma_pro，studio
 
@@ -255,7 +255,7 @@ class ShowSkillListRequest:
 
     @template_source.setter
     def template_source(self, template_source):
-        """Sets the template_source of this ShowSkillListRequest.
+        r"""Sets the template_source of this ShowSkillListRequest.
 
         技能来源，分别hilens，ma_pro，studio
 
@@ -266,7 +266,7 @@ class ShowSkillListRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowSkillListRequest.
+        r"""Gets the status of this ShowSkillListRequest.
 
         技能审核状态状态，1表示审核通过，2表示审核不通过，0表示待审核
 
@@ -277,7 +277,7 @@ class ShowSkillListRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSkillListRequest.
+        r"""Sets the status of this ShowSkillListRequest.
 
         技能审核状态状态，1表示审核通过，2表示审核不通过，0表示待审核
 
@@ -288,7 +288,7 @@ class ShowSkillListRequest:
 
     @property
     def charge_model(self):
-        """Gets the charge_model of this ShowSkillListRequest.
+        r"""Gets the charge_model of this ShowSkillListRequest.
 
         收费模式，0表示永久免费，1表示收费，2表示30天试用，3表示365天试用，4表示收费（永久使用）
 
@@ -299,7 +299,7 @@ class ShowSkillListRequest:
 
     @charge_model.setter
     def charge_model(self, charge_model):
-        """Sets the charge_model of this ShowSkillListRequest.
+        r"""Sets the charge_model of this ShowSkillListRequest.
 
         收费模式，0表示永久免费，1表示收费，2表示30天试用，3表示365天试用，4表示收费（永久使用）
 
@@ -310,7 +310,7 @@ class ShowSkillListRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this ShowSkillListRequest.
+        r"""Gets the platform of this ShowSkillListRequest.
 
         技能操作系统平台，其值为：Linux，Android， iOS， LiteOS，Windows
 
@@ -321,7 +321,7 @@ class ShowSkillListRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ShowSkillListRequest.
+        r"""Sets the platform of this ShowSkillListRequest.
 
         技能操作系统平台，其值为：Linux，Android， iOS， LiteOS，Windows
 
@@ -332,7 +332,7 @@ class ShowSkillListRequest:
 
     @property
     def chip(self):
-        """Gets the chip of this ShowSkillListRequest.
+        r"""Gets the chip of this ShowSkillListRequest.
 
         技能芯片类型，其值为Ascend 310,Ascend 310(Atlas 200 DK)，Arm，x86，3516CV500,3519AV100,3519V101,3516DV300,3516EV200,3516EV300,3518EV300
 
@@ -343,7 +343,7 @@ class ShowSkillListRequest:
 
     @chip.setter
     def chip(self, chip):
-        """Sets the chip of this ShowSkillListRequest.
+        r"""Sets the chip of this ShowSkillListRequest.
 
         技能芯片类型，其值为Ascend 310,Ascend 310(Atlas 200 DK)，Arm，x86，3516CV500,3519AV100,3519V101,3516DV300,3516EV200,3516EV300,3518EV300
 
@@ -354,7 +354,7 @@ class ShowSkillListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowSkillListRequest.
+        r"""Gets the type of this ShowSkillListRequest.
 
         技能类型，lite表示使用于海思芯片的轻量型技能。standard表示标准技能。
 
@@ -365,7 +365,7 @@ class ShowSkillListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSkillListRequest.
+        r"""Sets the type of this ShowSkillListRequest.
 
         技能类型，lite表示使用于海思芯片的轻量型技能。standard表示标准技能。
 
@@ -376,7 +376,7 @@ class ShowSkillListRequest:
 
     @property
     def charge_models(self):
-        """Gets the charge_models of this ShowSkillListRequest.
+        r"""Gets the charge_models of this ShowSkillListRequest.
 
         收费模式多选，0表示永久免费，1表示收费，2表示30天试用，3表示365天试用，4表示收费（永久使用），分隔符为|，例如输入为1|2|3
 
@@ -387,7 +387,7 @@ class ShowSkillListRequest:
 
     @charge_models.setter
     def charge_models(self, charge_models):
-        """Sets the charge_models of this ShowSkillListRequest.
+        r"""Sets the charge_models of this ShowSkillListRequest.
 
         收费模式多选，0表示永久免费，1表示收费，2表示30天试用，3表示365天试用，4表示收费（永久使用），分隔符为|，例如输入为1|2|3
 
@@ -398,7 +398,7 @@ class ShowSkillListRequest:
 
     @property
     def device_types(self):
-        """Gets the device_types of this ShowSkillListRequest.
+        r"""Gets the device_types of this ShowSkillListRequest.
 
         设备类型校验，允许输入多个设备类型，用|分隔，例如设备a|设备b。每种设备类型不允许#~^$%&*<>{}[]'|字符，长度1到100。最多50个设备类型
 
@@ -409,7 +409,7 @@ class ShowSkillListRequest:
 
     @device_types.setter
     def device_types(self, device_types):
-        """Sets the device_types of this ShowSkillListRequest.
+        r"""Sets the device_types of this ShowSkillListRequest.
 
         设备类型校验，允许输入多个设备类型，用|分隔，例如设备a|设备b。每种设备类型不允许#~^$%&*<>{}[]'|字符，长度1到100。最多50个设备类型
 
@@ -420,7 +420,7 @@ class ShowSkillListRequest:
 
     @property
     def scenes(self):
-        """Gets the scenes of this ShowSkillListRequest.
+        r"""Gets the scenes of this ShowSkillListRequest.
 
         技能适用场景，支持多选，分隔符|，例如场景a|场景b，每种场景不允许输入#~^$%&*<>{}\\\\[\\\\]'\\\\|等字符，长度100以内，最多20个设备类型。
 
@@ -431,7 +431,7 @@ class ShowSkillListRequest:
 
     @scenes.setter
     def scenes(self, scenes):
-        """Sets the scenes of this ShowSkillListRequest.
+        r"""Sets the scenes of this ShowSkillListRequest.
 
         技能适用场景，支持多选，分隔符|，例如场景a|场景b，每种场景不允许输入#~^$%&*<>{}\\\\[\\\\]'\\\\|等字符，长度100以内，最多20个设备类型。
 

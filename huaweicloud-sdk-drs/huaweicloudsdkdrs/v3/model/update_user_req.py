@@ -37,7 +37,7 @@ class UpdateUserReq:
     }
 
     def __init__(self, job_id=None, password=None, list=None, user_roles=None, is_set_password=None, is_migrate_user=None, is_sync_object_privilege=None):
-        """UpdateUserReq
+        r"""UpdateUserReq
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class UpdateUserReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateUserReq.
+        r"""Gets the job_id of this UpdateUserReq.
 
         任务ID
 
@@ -93,7 +93,7 @@ class UpdateUserReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateUserReq.
+        r"""Sets the job_id of this UpdateUserReq.
 
         任务ID
 
@@ -104,7 +104,7 @@ class UpdateUserReq:
 
     @property
     def password(self):
-        """Gets the password of this UpdateUserReq.
+        r"""Gets the password of this UpdateUserReq.
 
         全局密码。
 
@@ -115,7 +115,7 @@ class UpdateUserReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UpdateUserReq.
+        r"""Sets the password of this UpdateUserReq.
 
         全局密码。
 
@@ -126,7 +126,7 @@ class UpdateUserReq:
 
     @property
     def list(self):
-        """Gets the list of this UpdateUserReq.
+        r"""Gets the list of this UpdateUserReq.
 
         用户迁移信息，迁移用户时必填
 
@@ -137,7 +137,7 @@ class UpdateUserReq:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this UpdateUserReq.
+        r"""Sets the list of this UpdateUserReq.
 
         用户迁移信息，迁移用户时必填
 
@@ -148,7 +148,7 @@ class UpdateUserReq:
 
     @property
     def user_roles(self):
-        """Gets the user_roles of this UpdateUserReq.
+        r"""Gets the user_roles of this UpdateUserReq.
 
         角色迁移信息，迁移用户时必填
 
@@ -159,7 +159,7 @@ class UpdateUserReq:
 
     @user_roles.setter
     def user_roles(self, user_roles):
-        """Sets the user_roles of this UpdateUserReq.
+        r"""Sets the user_roles of this UpdateUserReq.
 
         角色迁移信息，迁移用户时必填
 
@@ -170,7 +170,7 @@ class UpdateUserReq:
 
     @property
     def is_set_password(self):
-        """Gets the is_set_password of this UpdateUserReq.
+        r"""Gets the is_set_password of this UpdateUserReq.
 
         是否设置密码
 
@@ -181,7 +181,7 @@ class UpdateUserReq:
 
     @is_set_password.setter
     def is_set_password(self, is_set_password):
-        """Sets the is_set_password of this UpdateUserReq.
+        r"""Sets the is_set_password of this UpdateUserReq.
 
         是否设置密码
 
@@ -192,7 +192,7 @@ class UpdateUserReq:
 
     @property
     def is_migrate_user(self):
-        """Gets the is_migrate_user of this UpdateUserReq.
+        r"""Gets the is_migrate_user of this UpdateUserReq.
 
         是否迁移用户
 
@@ -203,7 +203,7 @@ class UpdateUserReq:
 
     @is_migrate_user.setter
     def is_migrate_user(self, is_migrate_user):
-        """Sets the is_migrate_user of this UpdateUserReq.
+        r"""Sets the is_migrate_user of this UpdateUserReq.
 
         是否迁移用户
 
@@ -214,7 +214,7 @@ class UpdateUserReq:
 
     @property
     def is_sync_object_privilege(self):
-        """Gets the is_sync_object_privilege of this UpdateUserReq.
+        r"""Gets the is_sync_object_privilege of this UpdateUserReq.
 
         是否同步权限，不填默认为false，PG同步使用。
 
@@ -225,7 +225,7 @@ class UpdateUserReq:
 
     @is_sync_object_privilege.setter
     def is_sync_object_privilege(self, is_sync_object_privilege):
-        """Sets the is_sync_object_privilege of this UpdateUserReq.
+        r"""Sets the is_sync_object_privilege of this UpdateUserReq.
 
         是否同步权限，不填默认为false，PG同步使用。
 

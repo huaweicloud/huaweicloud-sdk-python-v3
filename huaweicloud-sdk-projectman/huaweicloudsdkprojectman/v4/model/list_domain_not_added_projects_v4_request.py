@@ -27,7 +27,7 @@ class ListDomainNotAddedProjectsV4Request:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListDomainNotAddedProjectsV4Request
+        r"""ListDomainNotAddedProjectsV4Request
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDomainNotAddedProjectsV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDomainNotAddedProjectsV4Request.
+        r"""Gets the offset of this ListDomainNotAddedProjectsV4Request.
 
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -61,7 +61,7 @@ class ListDomainNotAddedProjectsV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDomainNotAddedProjectsV4Request.
+        r"""Sets the offset of this ListDomainNotAddedProjectsV4Request.
 
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -72,7 +72,7 @@ class ListDomainNotAddedProjectsV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDomainNotAddedProjectsV4Request.
+        r"""Gets the limit of this ListDomainNotAddedProjectsV4Request.
 
         每页显示的数量,每页最多显示100条
 
@@ -83,7 +83,7 @@ class ListDomainNotAddedProjectsV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDomainNotAddedProjectsV4Request.
+        r"""Sets the limit of this ListDomainNotAddedProjectsV4Request.
 
         每页显示的数量,每页最多显示100条
 

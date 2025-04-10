@@ -25,7 +25,7 @@ class UploadProductRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadProductRequestBody
+        r"""UploadProductRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadProductRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadProductRequestBody.
+        r"""Gets the file of this UploadProductRequestBody.
 
         上传产品文件(.csv格式)
 
@@ -54,7 +54,7 @@ class UploadProductRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadProductRequestBody.
+        r"""Sets the file of this UploadProductRequestBody.
 
         上传产品文件(.csv格式)
 

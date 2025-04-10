@@ -28,7 +28,7 @@ class ListClusterAllNodeLabelResponse(SdkResponse):
     }
 
     def __init__(self, count=None, labels=None):
-        """ListClusterAllNodeLabelResponse
+        r"""ListClusterAllNodeLabelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListClusterAllNodeLabelResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListClusterAllNodeLabelResponse.
+        r"""Gets the count of this ListClusterAllNodeLabelResponse.
 
         节点标签数量
 
@@ -62,7 +62,7 @@ class ListClusterAllNodeLabelResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListClusterAllNodeLabelResponse.
+        r"""Sets the count of this ListClusterAllNodeLabelResponse.
 
         节点标签数量
 
@@ -73,7 +73,7 @@ class ListClusterAllNodeLabelResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ListClusterAllNodeLabelResponse.
+        r"""Gets the labels of this ListClusterAllNodeLabelResponse.
 
         数据对象列表
 
@@ -84,7 +84,7 @@ class ListClusterAllNodeLabelResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ListClusterAllNodeLabelResponse.
+        r"""Sets the labels of this ListClusterAllNodeLabelResponse.
 
         数据对象列表
 

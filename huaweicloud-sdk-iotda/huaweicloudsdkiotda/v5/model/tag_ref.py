@@ -27,7 +27,7 @@ class TagRef:
     }
 
     def __init__(self, tag_key=None, tag_value=None):
-        """TagRef
+        r"""TagRef
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagRef:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this TagRef.
+        r"""Gets the tag_key of this TagRef.
 
         **参数说明**：标签键名称，可以是一个明确的静态字符串，也可以是动态的模板参数引用 - 明确的静态字符串：\"myTagKey\"。**取值范围**：长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合 - 参数引用: {\"ref\" : \"iotda::certificate::country\"}
 
@@ -61,7 +61,7 @@ class TagRef:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this TagRef.
+        r"""Sets the tag_key of this TagRef.
 
         **参数说明**：标签键名称，可以是一个明确的静态字符串，也可以是动态的模板参数引用 - 明确的静态字符串：\"myTagKey\"。**取值范围**：长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合 - 参数引用: {\"ref\" : \"iotda::certificate::country\"}
 
@@ -72,7 +72,7 @@ class TagRef:
 
     @property
     def tag_value(self):
-        """Gets the tag_value of this TagRef.
+        r"""Gets the tag_value of this TagRef.
 
         **参数说明**：标签值，可以是一个明确的静态字符串，也可以是动态的模板参数引用 - 明确的静态字符串：\"myTagValue\"。**取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。 - 参数引用: {\"ref\" : \"iotda::certificate::country\"}
 
@@ -83,7 +83,7 @@ class TagRef:
 
     @tag_value.setter
     def tag_value(self, tag_value):
-        """Sets the tag_value of this TagRef.
+        r"""Sets the tag_value of this TagRef.
 
         **参数说明**：标签值，可以是一个明确的静态字符串，也可以是动态的模板参数引用 - 明确的静态字符串：\"myTagValue\"。**取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。 - 参数引用: {\"ref\" : \"iotda::certificate::country\"}
 

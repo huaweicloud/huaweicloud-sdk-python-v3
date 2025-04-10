@@ -26,7 +26,7 @@ class ListInstancesStatusResponse(SdkResponse):
     }
 
     def __init__(self, statics=None):
-        """ListInstancesStatusResponse
+        r"""ListInstancesStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstancesStatusResponse(SdkResponse):
 
     @property
     def statics(self):
-        """Gets the statics of this ListInstancesStatusResponse.
+        r"""Gets the statics of this ListInstancesStatusResponse.
 
         统计信息。
 
@@ -55,7 +55,7 @@ class ListInstancesStatusResponse(SdkResponse):
 
     @statics.setter
     def statics(self, statics):
-        """Sets the statics of this ListInstancesStatusResponse.
+        r"""Sets the statics of this ListInstancesStatusResponse.
 
         统计信息。
 

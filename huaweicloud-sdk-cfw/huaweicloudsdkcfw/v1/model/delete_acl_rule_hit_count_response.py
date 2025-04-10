@@ -26,7 +26,7 @@ class DeleteAclRuleHitCountResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteAclRuleHitCountResponse
+        r"""DeleteAclRuleHitCountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAclRuleHitCountResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteAclRuleHitCountResponse.
+        r"""Gets the body of this DeleteAclRuleHitCountResponse.
 
         :return: The body of this DeleteAclRuleHitCountResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteAclRuleHitCountResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAclRuleHitCountResponse.
+        r"""Sets the body of this DeleteAclRuleHitCountResponse.
 
         :param body: The body of this DeleteAclRuleHitCountResponse.
         :type body: str

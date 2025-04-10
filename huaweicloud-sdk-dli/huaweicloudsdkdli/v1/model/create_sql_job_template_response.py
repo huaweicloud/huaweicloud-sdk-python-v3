@@ -32,7 +32,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, sql_id=None, group=None):
-        """CreateSqlJobTemplateResponse
+        r"""CreateSqlJobTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateSqlJobTemplateResponse.
+        r"""Gets the is_success of this CreateSqlJobTemplateResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateSqlJobTemplateResponse.
+        r"""Sets the is_success of this CreateSqlJobTemplateResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateSqlJobTemplateResponse.
+        r"""Gets the message of this CreateSqlJobTemplateResponse.
 
         系统提示信息，执行成功时，信息可能为空。执行失败时，用于显示执行失败的原因。
 
@@ -98,7 +98,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateSqlJobTemplateResponse.
+        r"""Sets the message of this CreateSqlJobTemplateResponse.
 
         系统提示信息，执行成功时，信息可能为空。执行失败时，用于显示执行失败的原因。
 
@@ -109,7 +109,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @property
     def sql_id(self):
-        """Gets the sql_id of this CreateSqlJobTemplateResponse.
+        r"""Gets the sql_id of this CreateSqlJobTemplateResponse.
 
         新增SQL模板的ID。
 
@@ -120,7 +120,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @sql_id.setter
     def sql_id(self, sql_id):
-        """Sets the sql_id of this CreateSqlJobTemplateResponse.
+        r"""Sets the sql_id of this CreateSqlJobTemplateResponse.
 
         新增SQL模板的ID。
 
@@ -131,7 +131,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this CreateSqlJobTemplateResponse.
+        r"""Gets the group of this CreateSqlJobTemplateResponse.
 
         SQL模板分组名称。
 
@@ -142,7 +142,7 @@ class CreateSqlJobTemplateResponse(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this CreateSqlJobTemplateResponse.
+        r"""Sets the group of this CreateSqlJobTemplateResponse.
 
         SQL模板分组名称。
 

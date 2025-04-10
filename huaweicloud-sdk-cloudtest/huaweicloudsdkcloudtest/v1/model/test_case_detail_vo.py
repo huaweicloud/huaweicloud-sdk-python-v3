@@ -285,7 +285,7 @@ class TestCaseDetailVo:
     }
 
     def __init__(self, uri=None, type=None, author=None, name=None, rank=None, preparation=None, remark=None, stage=None, activity=None, keywords=None, market=None, designer=None, tags=None, execute_parameter=None, region=None, owner=None, issue=None, last_modifier=None, last_modified=None, last_modified_timestamp=None, last_change_time=None, version_uri=None, origin_uri=None, parent_uri=None, parent_path=None, creation_version_uri=None, creation_date=None, creation_date_timestamp=None, author_name=None, comment=None, number=None, case_type=None, platform_type=None, service_type=None, service_type_name=None, test_type=None, test_type_name=None, design_note=None, test_step=None, expect_output=None, env_type=None, exe_platform=None, testcase_project=None, svn_script_path=None, map_restrict=None, network_script_name=None, auto_type=None, to_be_auto_exec=None, last_result=None, last_result_uri=None, feature_uri=None, feature_name=None, interface_name=None, snp_no=None, dr_relation_id=None, issue_name=None, test_base_num=None, automatically_executed=None, first_execute_time=None, detect_type=None, execute_param=None, test_feature=None, is_contract_testcase=None, time_cost=None, be_auto_type_time=None, compare_number=None, scene_flag=None, base_flag=None, para_validator=None, knet_node_id=None, last_exe_author=None, cloud_carrier=None, market_place=None, test_mind_id=None, test_mind_url=None, commit_url=None, test_pattern_number=None, test_factor_number=None, status_code=None, result_code=None, release_id=None, label_id=None, labels=None, module_id=None, module_name=None, module_path=None, module_path_name=None, execute_latest_time=None, execute_duration=None, execute_times=None, is_keyword=None, release_dev=None, new_created=None, project_uuid=None, creation_version_name=None, feature_path=None, testcase_uri=None, owner_name=None, iterator_case_uri=None, script_link=None, custom_field_1=None, custom_field_2=None, custom_field_3=None, custom_field_4=None, custom_field_5=None, custom_field_6=None, custom_field_7=None, custom_field_8=None, custom_field_9=None, custom_field_10=None, custom_field_11=None, custom_field_12=None, custom_field_13=None, custom_field_14=None, custom_field_15=None, custom_field_16=None, custom_field_17=None, custom_field_18=None, custom_field_19=None, custom_field_20=None, custom_field_21=None, custom_field_22=None, custom_field_23=None, custom_field_24=None, custom_field_25=None, last_modifier_name=None, version_name=None, steps=None, associate_defect=None, associate_issue=None, defect_list=None):
-        """TestCaseDetailVo
+        r"""TestCaseDetailVo
 
         The model defined in huaweicloud sdk
 
@@ -953,7 +953,7 @@ class TestCaseDetailVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestCaseDetailVo.
+        r"""Gets the uri of this TestCaseDetailVo.
 
         资源URI
 
@@ -964,7 +964,7 @@ class TestCaseDetailVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestCaseDetailVo.
+        r"""Sets the uri of this TestCaseDetailVo.
 
         资源URI
 
@@ -975,7 +975,7 @@ class TestCaseDetailVo:
 
     @property
     def type(self):
-        """Gets the type of this TestCaseDetailVo.
+        r"""Gets the type of this TestCaseDetailVo.
 
         资源类型
 
@@ -986,7 +986,7 @@ class TestCaseDetailVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TestCaseDetailVo.
+        r"""Sets the type of this TestCaseDetailVo.
 
         资源类型
 
@@ -997,7 +997,7 @@ class TestCaseDetailVo:
 
     @property
     def author(self):
-        """Gets the author of this TestCaseDetailVo.
+        r"""Gets the author of this TestCaseDetailVo.
 
         创建人
 
@@ -1008,7 +1008,7 @@ class TestCaseDetailVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TestCaseDetailVo.
+        r"""Sets the author of this TestCaseDetailVo.
 
         创建人
 
@@ -1019,7 +1019,7 @@ class TestCaseDetailVo:
 
     @property
     def name(self):
-        """Gets the name of this TestCaseDetailVo.
+        r"""Gets the name of this TestCaseDetailVo.
 
         名称
 
@@ -1030,7 +1030,7 @@ class TestCaseDetailVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestCaseDetailVo.
+        r"""Sets the name of this TestCaseDetailVo.
 
         名称
 
@@ -1041,7 +1041,7 @@ class TestCaseDetailVo:
 
     @property
     def rank(self):
-        """Gets the rank of this TestCaseDetailVo.
+        r"""Gets the rank of this TestCaseDetailVo.
 
         级别
 
@@ -1052,7 +1052,7 @@ class TestCaseDetailVo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this TestCaseDetailVo.
+        r"""Sets the rank of this TestCaseDetailVo.
 
         级别
 
@@ -1063,7 +1063,7 @@ class TestCaseDetailVo:
 
     @property
     def preparation(self):
-        """Gets the preparation of this TestCaseDetailVo.
+        r"""Gets the preparation of this TestCaseDetailVo.
 
         前置条件
 
@@ -1074,7 +1074,7 @@ class TestCaseDetailVo:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this TestCaseDetailVo.
+        r"""Sets the preparation of this TestCaseDetailVo.
 
         前置条件
 
@@ -1085,7 +1085,7 @@ class TestCaseDetailVo:
 
     @property
     def remark(self):
-        """Gets the remark of this TestCaseDetailVo.
+        r"""Gets the remark of this TestCaseDetailVo.
 
         备注
 
@@ -1096,7 +1096,7 @@ class TestCaseDetailVo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this TestCaseDetailVo.
+        r"""Sets the remark of this TestCaseDetailVo.
 
         备注
 
@@ -1107,7 +1107,7 @@ class TestCaseDetailVo:
 
     @property
     def stage(self):
-        """Gets the stage of this TestCaseDetailVo.
+        r"""Gets the stage of this TestCaseDetailVo.
 
         测试阶段
 
@@ -1118,7 +1118,7 @@ class TestCaseDetailVo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TestCaseDetailVo.
+        r"""Sets the stage of this TestCaseDetailVo.
 
         测试阶段
 
@@ -1129,7 +1129,7 @@ class TestCaseDetailVo:
 
     @property
     def activity(self):
-        """Gets the activity of this TestCaseDetailVo.
+        r"""Gets the activity of this TestCaseDetailVo.
 
         测试类型
 
@@ -1140,7 +1140,7 @@ class TestCaseDetailVo:
 
     @activity.setter
     def activity(self, activity):
-        """Sets the activity of this TestCaseDetailVo.
+        r"""Sets the activity of this TestCaseDetailVo.
 
         测试类型
 
@@ -1151,7 +1151,7 @@ class TestCaseDetailVo:
 
     @property
     def keywords(self):
-        """Gets the keywords of this TestCaseDetailVo.
+        r"""Gets the keywords of this TestCaseDetailVo.
 
         关键词
 
@@ -1162,7 +1162,7 @@ class TestCaseDetailVo:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this TestCaseDetailVo.
+        r"""Sets the keywords of this TestCaseDetailVo.
 
         关键词
 
@@ -1173,7 +1173,7 @@ class TestCaseDetailVo:
 
     @property
     def market(self):
-        """Gets the market of this TestCaseDetailVo.
+        r"""Gets the market of this TestCaseDetailVo.
 
         apitest标记是否代码已提交
 
@@ -1184,7 +1184,7 @@ class TestCaseDetailVo:
 
     @market.setter
     def market(self, market):
-        """Sets the market of this TestCaseDetailVo.
+        r"""Sets the market of this TestCaseDetailVo.
 
         apitest标记是否代码已提交
 
@@ -1195,7 +1195,7 @@ class TestCaseDetailVo:
 
     @property
     def designer(self):
-        """Gets the designer of this TestCaseDetailVo.
+        r"""Gets the designer of this TestCaseDetailVo.
 
         设计者
 
@@ -1206,7 +1206,7 @@ class TestCaseDetailVo:
 
     @designer.setter
     def designer(self, designer):
-        """Sets the designer of this TestCaseDetailVo.
+        r"""Sets the designer of this TestCaseDetailVo.
 
         设计者
 
@@ -1217,7 +1217,7 @@ class TestCaseDetailVo:
 
     @property
     def tags(self):
-        """Gets the tags of this TestCaseDetailVo.
+        r"""Gets the tags of this TestCaseDetailVo.
 
         标签
 
@@ -1228,7 +1228,7 @@ class TestCaseDetailVo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TestCaseDetailVo.
+        r"""Sets the tags of this TestCaseDetailVo.
 
         标签
 
@@ -1239,7 +1239,7 @@ class TestCaseDetailVo:
 
     @property
     def execute_parameter(self):
-        """Gets the execute_parameter of this TestCaseDetailVo.
+        r"""Gets the execute_parameter of this TestCaseDetailVo.
 
         执行参数
 
@@ -1250,7 +1250,7 @@ class TestCaseDetailVo:
 
     @execute_parameter.setter
     def execute_parameter(self, execute_parameter):
-        """Sets the execute_parameter of this TestCaseDetailVo.
+        r"""Sets the execute_parameter of this TestCaseDetailVo.
 
         执行参数
 
@@ -1261,7 +1261,7 @@ class TestCaseDetailVo:
 
     @property
     def region(self):
-        """Gets the region of this TestCaseDetailVo.
+        r"""Gets the region of this TestCaseDetailVo.
 
         逻辑region
 
@@ -1272,7 +1272,7 @@ class TestCaseDetailVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestCaseDetailVo.
+        r"""Sets the region of this TestCaseDetailVo.
 
         逻辑region
 
@@ -1283,7 +1283,7 @@ class TestCaseDetailVo:
 
     @property
     def owner(self):
-        """Gets the owner of this TestCaseDetailVo.
+        r"""Gets the owner of this TestCaseDetailVo.
 
         处理人id，IteratorTestCase字段
 
@@ -1294,7 +1294,7 @@ class TestCaseDetailVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestCaseDetailVo.
+        r"""Sets the owner of this TestCaseDetailVo.
 
         处理人id，IteratorTestCase字段
 
@@ -1305,7 +1305,7 @@ class TestCaseDetailVo:
 
     @property
     def issue(self):
-        """Gets the issue of this TestCaseDetailVo.
+        r"""Gets the issue of this TestCaseDetailVo.
 
         :return: The issue of this TestCaseDetailVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.SimpleIssueVo`
@@ -1314,7 +1314,7 @@ class TestCaseDetailVo:
 
     @issue.setter
     def issue(self, issue):
-        """Sets the issue of this TestCaseDetailVo.
+        r"""Sets the issue of this TestCaseDetailVo.
 
         :param issue: The issue of this TestCaseDetailVo.
         :type issue: :class:`huaweicloudsdkcloudtest.v1.SimpleIssueVo`
@@ -1323,7 +1323,7 @@ class TestCaseDetailVo:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this TestCaseDetailVo.
+        r"""Gets the last_modifier of this TestCaseDetailVo.
 
         最后修改人
 
@@ -1334,7 +1334,7 @@ class TestCaseDetailVo:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this TestCaseDetailVo.
+        r"""Sets the last_modifier of this TestCaseDetailVo.
 
         最后修改人
 
@@ -1345,7 +1345,7 @@ class TestCaseDetailVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TestCaseDetailVo.
+        r"""Gets the last_modified of this TestCaseDetailVo.
 
         最后修改时间
 
@@ -1356,7 +1356,7 @@ class TestCaseDetailVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TestCaseDetailVo.
+        r"""Sets the last_modified of this TestCaseDetailVo.
 
         最后修改时间
 
@@ -1367,7 +1367,7 @@ class TestCaseDetailVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this TestCaseDetailVo.
+        r"""Gets the last_modified_timestamp of this TestCaseDetailVo.
 
         修改时间时间戳
 
@@ -1378,7 +1378,7 @@ class TestCaseDetailVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this TestCaseDetailVo.
+        r"""Sets the last_modified_timestamp of this TestCaseDetailVo.
 
         修改时间时间戳
 
@@ -1389,7 +1389,7 @@ class TestCaseDetailVo:
 
     @property
     def last_change_time(self):
-        """Gets the last_change_time of this TestCaseDetailVo.
+        r"""Gets the last_change_time of this TestCaseDetailVo.
 
         最后变更时间
 
@@ -1400,7 +1400,7 @@ class TestCaseDetailVo:
 
     @last_change_time.setter
     def last_change_time(self, last_change_time):
-        """Sets the last_change_time of this TestCaseDetailVo.
+        r"""Sets the last_change_time of this TestCaseDetailVo.
 
         最后变更时间
 
@@ -1411,7 +1411,7 @@ class TestCaseDetailVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCaseDetailVo.
+        r"""Gets the version_uri of this TestCaseDetailVo.
 
         版本URI
 
@@ -1422,7 +1422,7 @@ class TestCaseDetailVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCaseDetailVo.
+        r"""Sets the version_uri of this TestCaseDetailVo.
 
         版本URI
 
@@ -1433,7 +1433,7 @@ class TestCaseDetailVo:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this TestCaseDetailVo.
+        r"""Gets the origin_uri of this TestCaseDetailVo.
 
         源资源URI
 
@@ -1444,7 +1444,7 @@ class TestCaseDetailVo:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this TestCaseDetailVo.
+        r"""Sets the origin_uri of this TestCaseDetailVo.
 
         源资源URI
 
@@ -1455,7 +1455,7 @@ class TestCaseDetailVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this TestCaseDetailVo.
+        r"""Gets the parent_uri of this TestCaseDetailVo.
 
         父资源URI
 
@@ -1466,7 +1466,7 @@ class TestCaseDetailVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this TestCaseDetailVo.
+        r"""Sets the parent_uri of this TestCaseDetailVo.
 
         父资源URI
 
@@ -1477,7 +1477,7 @@ class TestCaseDetailVo:
 
     @property
     def parent_path(self):
-        """Gets the parent_path of this TestCaseDetailVo.
+        r"""Gets the parent_path of this TestCaseDetailVo.
 
         父资源路径
 
@@ -1488,7 +1488,7 @@ class TestCaseDetailVo:
 
     @parent_path.setter
     def parent_path(self, parent_path):
-        """Sets the parent_path of this TestCaseDetailVo.
+        r"""Sets the parent_path of this TestCaseDetailVo.
 
         父资源路径
 
@@ -1499,7 +1499,7 @@ class TestCaseDetailVo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this TestCaseDetailVo.
+        r"""Gets the creation_version_uri of this TestCaseDetailVo.
 
         创建版本URI
 
@@ -1510,7 +1510,7 @@ class TestCaseDetailVo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this TestCaseDetailVo.
+        r"""Sets the creation_version_uri of this TestCaseDetailVo.
 
         创建版本URI
 
@@ -1521,7 +1521,7 @@ class TestCaseDetailVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TestCaseDetailVo.
+        r"""Gets the creation_date of this TestCaseDetailVo.
 
         创建时间
 
@@ -1532,7 +1532,7 @@ class TestCaseDetailVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TestCaseDetailVo.
+        r"""Sets the creation_date of this TestCaseDetailVo.
 
         创建时间
 
@@ -1543,7 +1543,7 @@ class TestCaseDetailVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this TestCaseDetailVo.
+        r"""Gets the creation_date_timestamp of this TestCaseDetailVo.
 
         创建时间时间戳
 
@@ -1554,7 +1554,7 @@ class TestCaseDetailVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this TestCaseDetailVo.
+        r"""Sets the creation_date_timestamp of this TestCaseDetailVo.
 
         创建时间时间戳
 
@@ -1565,7 +1565,7 @@ class TestCaseDetailVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this TestCaseDetailVo.
+        r"""Gets the author_name of this TestCaseDetailVo.
 
         创建人名称
 
@@ -1576,7 +1576,7 @@ class TestCaseDetailVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this TestCaseDetailVo.
+        r"""Sets the author_name of this TestCaseDetailVo.
 
         创建人名称
 
@@ -1587,7 +1587,7 @@ class TestCaseDetailVo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestCaseDetailVo.
+        r"""Gets the comment of this TestCaseDetailVo.
 
         备注
 
@@ -1598,7 +1598,7 @@ class TestCaseDetailVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestCaseDetailVo.
+        r"""Sets the comment of this TestCaseDetailVo.
 
         备注
 
@@ -1609,7 +1609,7 @@ class TestCaseDetailVo:
 
     @property
     def number(self):
-        """Gets the number of this TestCaseDetailVo.
+        r"""Gets the number of this TestCaseDetailVo.
 
         编号
 
@@ -1620,7 +1620,7 @@ class TestCaseDetailVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestCaseDetailVo.
+        r"""Sets the number of this TestCaseDetailVo.
 
         编号
 
@@ -1631,7 +1631,7 @@ class TestCaseDetailVo:
 
     @property
     def case_type(self):
-        """Gets the case_type of this TestCaseDetailVo.
+        r"""Gets the case_type of this TestCaseDetailVo.
 
         用例类型
 
@@ -1642,7 +1642,7 @@ class TestCaseDetailVo:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this TestCaseDetailVo.
+        r"""Sets the case_type of this TestCaseDetailVo.
 
         用例类型
 
@@ -1653,7 +1653,7 @@ class TestCaseDetailVo:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this TestCaseDetailVo.
+        r"""Gets the platform_type of this TestCaseDetailVo.
 
         执行平台类型
 
@@ -1664,7 +1664,7 @@ class TestCaseDetailVo:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this TestCaseDetailVo.
+        r"""Sets the platform_type of this TestCaseDetailVo.
 
         执行平台类型
 
@@ -1675,7 +1675,7 @@ class TestCaseDetailVo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TestCaseDetailVo.
+        r"""Gets the service_type of this TestCaseDetailVo.
 
         服务类型
 
@@ -1686,7 +1686,7 @@ class TestCaseDetailVo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TestCaseDetailVo.
+        r"""Sets the service_type of this TestCaseDetailVo.
 
         服务类型
 
@@ -1697,7 +1697,7 @@ class TestCaseDetailVo:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this TestCaseDetailVo.
+        r"""Gets the service_type_name of this TestCaseDetailVo.
 
         服务类型名称
 
@@ -1708,7 +1708,7 @@ class TestCaseDetailVo:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this TestCaseDetailVo.
+        r"""Sets the service_type_name of this TestCaseDetailVo.
 
         服务类型名称
 
@@ -1719,7 +1719,7 @@ class TestCaseDetailVo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this TestCaseDetailVo.
+        r"""Gets the test_type of this TestCaseDetailVo.
 
         测试类型
 
@@ -1730,7 +1730,7 @@ class TestCaseDetailVo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this TestCaseDetailVo.
+        r"""Sets the test_type of this TestCaseDetailVo.
 
         测试类型
 
@@ -1741,7 +1741,7 @@ class TestCaseDetailVo:
 
     @property
     def test_type_name(self):
-        """Gets the test_type_name of this TestCaseDetailVo.
+        r"""Gets the test_type_name of this TestCaseDetailVo.
 
         测试类型名称
 
@@ -1752,7 +1752,7 @@ class TestCaseDetailVo:
 
     @test_type_name.setter
     def test_type_name(self, test_type_name):
-        """Sets the test_type_name of this TestCaseDetailVo.
+        r"""Sets the test_type_name of this TestCaseDetailVo.
 
         测试类型名称
 
@@ -1763,7 +1763,7 @@ class TestCaseDetailVo:
 
     @property
     def design_note(self):
-        """Gets the design_note of this TestCaseDetailVo.
+        r"""Gets the design_note of this TestCaseDetailVo.
 
         设计描述
 
@@ -1774,7 +1774,7 @@ class TestCaseDetailVo:
 
     @design_note.setter
     def design_note(self, design_note):
-        """Sets the design_note of this TestCaseDetailVo.
+        r"""Sets the design_note of this TestCaseDetailVo.
 
         设计描述
 
@@ -1785,7 +1785,7 @@ class TestCaseDetailVo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TestCaseDetailVo.
+        r"""Gets the test_step of this TestCaseDetailVo.
 
         测试步骤
 
@@ -1796,7 +1796,7 @@ class TestCaseDetailVo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TestCaseDetailVo.
+        r"""Sets the test_step of this TestCaseDetailVo.
 
         测试步骤
 
@@ -1807,7 +1807,7 @@ class TestCaseDetailVo:
 
     @property
     def expect_output(self):
-        """Gets the expect_output of this TestCaseDetailVo.
+        r"""Gets the expect_output of this TestCaseDetailVo.
 
         期望结果
 
@@ -1818,7 +1818,7 @@ class TestCaseDetailVo:
 
     @expect_output.setter
     def expect_output(self, expect_output):
-        """Sets the expect_output of this TestCaseDetailVo.
+        r"""Sets the expect_output of this TestCaseDetailVo.
 
         期望结果
 
@@ -1829,7 +1829,7 @@ class TestCaseDetailVo:
 
     @property
     def env_type(self):
-        """Gets the env_type of this TestCaseDetailVo.
+        r"""Gets the env_type of this TestCaseDetailVo.
 
         测试环境类型
 
@@ -1840,7 +1840,7 @@ class TestCaseDetailVo:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this TestCaseDetailVo.
+        r"""Sets the env_type of this TestCaseDetailVo.
 
         测试环境类型
 
@@ -1851,7 +1851,7 @@ class TestCaseDetailVo:
 
     @property
     def exe_platform(self):
-        """Gets the exe_platform of this TestCaseDetailVo.
+        r"""Gets the exe_platform of this TestCaseDetailVo.
 
         执行平台
 
@@ -1862,7 +1862,7 @@ class TestCaseDetailVo:
 
     @exe_platform.setter
     def exe_platform(self, exe_platform):
-        """Sets the exe_platform of this TestCaseDetailVo.
+        r"""Sets the exe_platform of this TestCaseDetailVo.
 
         执行平台
 
@@ -1873,7 +1873,7 @@ class TestCaseDetailVo:
 
     @property
     def testcase_project(self):
-        """Gets the testcase_project of this TestCaseDetailVo.
+        r"""Gets the testcase_project of this TestCaseDetailVo.
 
         测试工程
 
@@ -1884,7 +1884,7 @@ class TestCaseDetailVo:
 
     @testcase_project.setter
     def testcase_project(self, testcase_project):
-        """Sets the testcase_project of this TestCaseDetailVo.
+        r"""Sets the testcase_project of this TestCaseDetailVo.
 
         测试工程
 
@@ -1895,7 +1895,7 @@ class TestCaseDetailVo:
 
     @property
     def svn_script_path(self):
-        """Gets the svn_script_path of this TestCaseDetailVo.
+        r"""Gets the svn_script_path of this TestCaseDetailVo.
 
         脚本路径
 
@@ -1906,7 +1906,7 @@ class TestCaseDetailVo:
 
     @svn_script_path.setter
     def svn_script_path(self, svn_script_path):
-        """Sets the svn_script_path of this TestCaseDetailVo.
+        r"""Sets the svn_script_path of this TestCaseDetailVo.
 
         脚本路径
 
@@ -1917,7 +1917,7 @@ class TestCaseDetailVo:
 
     @property
     def map_restrict(self):
-        """Gets the map_restrict of this TestCaseDetailVo.
+        r"""Gets the map_restrict of this TestCaseDetailVo.
 
         约束条件
 
@@ -1928,7 +1928,7 @@ class TestCaseDetailVo:
 
     @map_restrict.setter
     def map_restrict(self, map_restrict):
-        """Sets the map_restrict of this TestCaseDetailVo.
+        r"""Sets the map_restrict of this TestCaseDetailVo.
 
         约束条件
 
@@ -1939,7 +1939,7 @@ class TestCaseDetailVo:
 
     @property
     def network_script_name(self):
-        """Gets the network_script_name of this TestCaseDetailVo.
+        r"""Gets the network_script_name of this TestCaseDetailVo.
 
         网络脚本名
 
@@ -1950,7 +1950,7 @@ class TestCaseDetailVo:
 
     @network_script_name.setter
     def network_script_name(self, network_script_name):
-        """Sets the network_script_name of this TestCaseDetailVo.
+        r"""Sets the network_script_name of this TestCaseDetailVo.
 
         网络脚本名
 
@@ -1961,7 +1961,7 @@ class TestCaseDetailVo:
 
     @property
     def auto_type(self):
-        """Gets the auto_type of this TestCaseDetailVo.
+        r"""Gets the auto_type of this TestCaseDetailVo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1972,7 +1972,7 @@ class TestCaseDetailVo:
 
     @auto_type.setter
     def auto_type(self, auto_type):
-        """Sets the auto_type of this TestCaseDetailVo.
+        r"""Sets the auto_type of this TestCaseDetailVo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1983,7 +1983,7 @@ class TestCaseDetailVo:
 
     @property
     def to_be_auto_exec(self):
-        """Gets the to_be_auto_exec of this TestCaseDetailVo.
+        r"""Gets the to_be_auto_exec of this TestCaseDetailVo.
 
         被自动化执行
 
@@ -1994,7 +1994,7 @@ class TestCaseDetailVo:
 
     @to_be_auto_exec.setter
     def to_be_auto_exec(self, to_be_auto_exec):
-        """Sets the to_be_auto_exec of this TestCaseDetailVo.
+        r"""Sets the to_be_auto_exec of this TestCaseDetailVo.
 
         被自动化执行
 
@@ -2005,7 +2005,7 @@ class TestCaseDetailVo:
 
     @property
     def last_result(self):
-        """Gets the last_result of this TestCaseDetailVo.
+        r"""Gets the last_result of this TestCaseDetailVo.
 
         最后一次结果
 
@@ -2016,7 +2016,7 @@ class TestCaseDetailVo:
 
     @last_result.setter
     def last_result(self, last_result):
-        """Sets the last_result of this TestCaseDetailVo.
+        r"""Sets the last_result of this TestCaseDetailVo.
 
         最后一次结果
 
@@ -2027,7 +2027,7 @@ class TestCaseDetailVo:
 
     @property
     def last_result_uri(self):
-        """Gets the last_result_uri of this TestCaseDetailVo.
+        r"""Gets the last_result_uri of this TestCaseDetailVo.
 
         最后一次结果Uri
 
@@ -2038,7 +2038,7 @@ class TestCaseDetailVo:
 
     @last_result_uri.setter
     def last_result_uri(self, last_result_uri):
-        """Sets the last_result_uri of this TestCaseDetailVo.
+        r"""Sets the last_result_uri of this TestCaseDetailVo.
 
         最后一次结果Uri
 
@@ -2049,7 +2049,7 @@ class TestCaseDetailVo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this TestCaseDetailVo.
+        r"""Gets the feature_uri of this TestCaseDetailVo.
 
         目录Uri
 
@@ -2060,7 +2060,7 @@ class TestCaseDetailVo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this TestCaseDetailVo.
+        r"""Sets the feature_uri of this TestCaseDetailVo.
 
         目录Uri
 
@@ -2071,7 +2071,7 @@ class TestCaseDetailVo:
 
     @property
     def feature_name(self):
-        """Gets the feature_name of this TestCaseDetailVo.
+        r"""Gets the feature_name of this TestCaseDetailVo.
 
         目录名称
 
@@ -2082,7 +2082,7 @@ class TestCaseDetailVo:
 
     @feature_name.setter
     def feature_name(self, feature_name):
-        """Sets the feature_name of this TestCaseDetailVo.
+        r"""Sets the feature_name of this TestCaseDetailVo.
 
         目录名称
 
@@ -2093,7 +2093,7 @@ class TestCaseDetailVo:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this TestCaseDetailVo.
+        r"""Gets the interface_name of this TestCaseDetailVo.
 
         测试接口名
 
@@ -2104,7 +2104,7 @@ class TestCaseDetailVo:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this TestCaseDetailVo.
+        r"""Sets the interface_name of this TestCaseDetailVo.
 
         测试接口名
 
@@ -2115,7 +2115,7 @@ class TestCaseDetailVo:
 
     @property
     def snp_no(self):
-        """Gets the snp_no of this TestCaseDetailVo.
+        r"""Gets the snp_no of this TestCaseDetailVo.
 
         网络问题ID
 
@@ -2126,7 +2126,7 @@ class TestCaseDetailVo:
 
     @snp_no.setter
     def snp_no(self, snp_no):
-        """Sets the snp_no of this TestCaseDetailVo.
+        r"""Sets the snp_no of this TestCaseDetailVo.
 
         网络问题ID
 
@@ -2137,7 +2137,7 @@ class TestCaseDetailVo:
 
     @property
     def dr_relation_id(self):
-        """Gets the dr_relation_id of this TestCaseDetailVo.
+        r"""Gets the dr_relation_id of this TestCaseDetailVo.
 
         关联需求编号
 
@@ -2148,7 +2148,7 @@ class TestCaseDetailVo:
 
     @dr_relation_id.setter
     def dr_relation_id(self, dr_relation_id):
-        """Sets the dr_relation_id of this TestCaseDetailVo.
+        r"""Sets the dr_relation_id of this TestCaseDetailVo.
 
         关联需求编号
 
@@ -2159,7 +2159,7 @@ class TestCaseDetailVo:
 
     @property
     def issue_name(self):
-        """Gets the issue_name of this TestCaseDetailVo.
+        r"""Gets the issue_name of this TestCaseDetailVo.
 
         需求名称
 
@@ -2170,7 +2170,7 @@ class TestCaseDetailVo:
 
     @issue_name.setter
     def issue_name(self, issue_name):
-        """Sets the issue_name of this TestCaseDetailVo.
+        r"""Sets the issue_name of this TestCaseDetailVo.
 
         需求名称
 
@@ -2181,7 +2181,7 @@ class TestCaseDetailVo:
 
     @property
     def test_base_num(self):
-        """Gets the test_base_num of this TestCaseDetailVo.
+        r"""Gets the test_base_num of this TestCaseDetailVo.
 
         测试基数
 
@@ -2192,7 +2192,7 @@ class TestCaseDetailVo:
 
     @test_base_num.setter
     def test_base_num(self, test_base_num):
-        """Sets the test_base_num of this TestCaseDetailVo.
+        r"""Sets the test_base_num of this TestCaseDetailVo.
 
         测试基数
 
@@ -2203,7 +2203,7 @@ class TestCaseDetailVo:
 
     @property
     def automatically_executed(self):
-        """Gets the automatically_executed of this TestCaseDetailVo.
+        r"""Gets the automatically_executed of this TestCaseDetailVo.
 
         是否被自动化执行
 
@@ -2214,7 +2214,7 @@ class TestCaseDetailVo:
 
     @automatically_executed.setter
     def automatically_executed(self, automatically_executed):
-        """Sets the automatically_executed of this TestCaseDetailVo.
+        r"""Sets the automatically_executed of this TestCaseDetailVo.
 
         是否被自动化执行
 
@@ -2225,7 +2225,7 @@ class TestCaseDetailVo:
 
     @property
     def first_execute_time(self):
-        """Gets the first_execute_time of this TestCaseDetailVo.
+        r"""Gets the first_execute_time of this TestCaseDetailVo.
 
         第一次执行时间
 
@@ -2236,7 +2236,7 @@ class TestCaseDetailVo:
 
     @first_execute_time.setter
     def first_execute_time(self, first_execute_time):
-        """Sets the first_execute_time of this TestCaseDetailVo.
+        r"""Sets the first_execute_time of this TestCaseDetailVo.
 
         第一次执行时间
 
@@ -2247,7 +2247,7 @@ class TestCaseDetailVo:
 
     @property
     def detect_type(self):
-        """Gets the detect_type of this TestCaseDetailVo.
+        r"""Gets the detect_type of this TestCaseDetailVo.
 
         检测类型
 
@@ -2258,7 +2258,7 @@ class TestCaseDetailVo:
 
     @detect_type.setter
     def detect_type(self, detect_type):
-        """Sets the detect_type of this TestCaseDetailVo.
+        r"""Sets the detect_type of this TestCaseDetailVo.
 
         检测类型
 
@@ -2269,7 +2269,7 @@ class TestCaseDetailVo:
 
     @property
     def execute_param(self):
-        """Gets the execute_param of this TestCaseDetailVo.
+        r"""Gets the execute_param of this TestCaseDetailVo.
 
         执行参数
 
@@ -2280,7 +2280,7 @@ class TestCaseDetailVo:
 
     @execute_param.setter
     def execute_param(self, execute_param):
-        """Sets the execute_param of this TestCaseDetailVo.
+        r"""Sets the execute_param of this TestCaseDetailVo.
 
         执行参数
 
@@ -2291,7 +2291,7 @@ class TestCaseDetailVo:
 
     @property
     def test_feature(self):
-        """Gets the test_feature of this TestCaseDetailVo.
+        r"""Gets the test_feature of this TestCaseDetailVo.
 
         分析领域
 
@@ -2302,7 +2302,7 @@ class TestCaseDetailVo:
 
     @test_feature.setter
     def test_feature(self, test_feature):
-        """Sets the test_feature of this TestCaseDetailVo.
+        r"""Sets the test_feature of this TestCaseDetailVo.
 
         分析领域
 
@@ -2313,7 +2313,7 @@ class TestCaseDetailVo:
 
     @property
     def is_contract_testcase(self):
-        """Gets the is_contract_testcase of this TestCaseDetailVo.
+        r"""Gets the is_contract_testcase of this TestCaseDetailVo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -2324,7 +2324,7 @@ class TestCaseDetailVo:
 
     @is_contract_testcase.setter
     def is_contract_testcase(self, is_contract_testcase):
-        """Sets the is_contract_testcase of this TestCaseDetailVo.
+        r"""Sets the is_contract_testcase of this TestCaseDetailVo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -2335,7 +2335,7 @@ class TestCaseDetailVo:
 
     @property
     def time_cost(self):
-        """Gets the time_cost of this TestCaseDetailVo.
+        r"""Gets the time_cost of this TestCaseDetailVo.
 
         总共耗时
 
@@ -2346,7 +2346,7 @@ class TestCaseDetailVo:
 
     @time_cost.setter
     def time_cost(self, time_cost):
-        """Sets the time_cost of this TestCaseDetailVo.
+        r"""Sets the time_cost of this TestCaseDetailVo.
 
         总共耗时
 
@@ -2357,7 +2357,7 @@ class TestCaseDetailVo:
 
     @property
     def be_auto_type_time(self):
-        """Gets the be_auto_type_time of this TestCaseDetailVo.
+        r"""Gets the be_auto_type_time of this TestCaseDetailVo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2368,7 +2368,7 @@ class TestCaseDetailVo:
 
     @be_auto_type_time.setter
     def be_auto_type_time(self, be_auto_type_time):
-        """Sets the be_auto_type_time of this TestCaseDetailVo.
+        r"""Sets the be_auto_type_time of this TestCaseDetailVo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2379,7 +2379,7 @@ class TestCaseDetailVo:
 
     @property
     def compare_number(self):
-        """Gets the compare_number of this TestCaseDetailVo.
+        r"""Gets the compare_number of this TestCaseDetailVo.
 
         配对用例编号
 
@@ -2390,7 +2390,7 @@ class TestCaseDetailVo:
 
     @compare_number.setter
     def compare_number(self, compare_number):
-        """Sets the compare_number of this TestCaseDetailVo.
+        r"""Sets the compare_number of this TestCaseDetailVo.
 
         配对用例编号
 
@@ -2401,7 +2401,7 @@ class TestCaseDetailVo:
 
     @property
     def scene_flag(self):
-        """Gets the scene_flag of this TestCaseDetailVo.
+        r"""Gets the scene_flag of this TestCaseDetailVo.
 
         场景标识
 
@@ -2412,7 +2412,7 @@ class TestCaseDetailVo:
 
     @scene_flag.setter
     def scene_flag(self, scene_flag):
-        """Sets the scene_flag of this TestCaseDetailVo.
+        r"""Sets the scene_flag of this TestCaseDetailVo.
 
         场景标识
 
@@ -2423,7 +2423,7 @@ class TestCaseDetailVo:
 
     @property
     def base_flag(self):
-        """Gets the base_flag of this TestCaseDetailVo.
+        r"""Gets the base_flag of this TestCaseDetailVo.
 
         场景标识
 
@@ -2434,7 +2434,7 @@ class TestCaseDetailVo:
 
     @base_flag.setter
     def base_flag(self, base_flag):
-        """Sets the base_flag of this TestCaseDetailVo.
+        r"""Sets the base_flag of this TestCaseDetailVo.
 
         场景标识
 
@@ -2445,7 +2445,7 @@ class TestCaseDetailVo:
 
     @property
     def para_validator(self):
-        """Gets the para_validator of this TestCaseDetailVo.
+        r"""Gets the para_validator of this TestCaseDetailVo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2456,7 +2456,7 @@ class TestCaseDetailVo:
 
     @para_validator.setter
     def para_validator(self, para_validator):
-        """Sets the para_validator of this TestCaseDetailVo.
+        r"""Sets the para_validator of this TestCaseDetailVo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2467,7 +2467,7 @@ class TestCaseDetailVo:
 
     @property
     def knet_node_id(self):
-        """Gets the knet_node_id of this TestCaseDetailVo.
+        r"""Gets the knet_node_id of this TestCaseDetailVo.
 
         knet节点id
 
@@ -2478,7 +2478,7 @@ class TestCaseDetailVo:
 
     @knet_node_id.setter
     def knet_node_id(self, knet_node_id):
-        """Sets the knet_node_id of this TestCaseDetailVo.
+        r"""Sets the knet_node_id of this TestCaseDetailVo.
 
         knet节点id
 
@@ -2489,7 +2489,7 @@ class TestCaseDetailVo:
 
     @property
     def last_exe_author(self):
-        """Gets the last_exe_author of this TestCaseDetailVo.
+        r"""Gets the last_exe_author of this TestCaseDetailVo.
 
         最后一次执行用户
 
@@ -2500,7 +2500,7 @@ class TestCaseDetailVo:
 
     @last_exe_author.setter
     def last_exe_author(self, last_exe_author):
-        """Sets the last_exe_author of this TestCaseDetailVo.
+        r"""Sets the last_exe_author of this TestCaseDetailVo.
 
         最后一次执行用户
 
@@ -2511,7 +2511,7 @@ class TestCaseDetailVo:
 
     @property
     def cloud_carrier(self):
-        """Gets the cloud_carrier of this TestCaseDetailVo.
+        r"""Gets the cloud_carrier of this TestCaseDetailVo.
 
         运营商
 
@@ -2522,7 +2522,7 @@ class TestCaseDetailVo:
 
     @cloud_carrier.setter
     def cloud_carrier(self, cloud_carrier):
-        """Sets the cloud_carrier of this TestCaseDetailVo.
+        r"""Sets the cloud_carrier of this TestCaseDetailVo.
 
         运营商
 
@@ -2533,7 +2533,7 @@ class TestCaseDetailVo:
 
     @property
     def market_place(self):
-        """Gets the market_place of this TestCaseDetailVo.
+        r"""Gets the market_place of this TestCaseDetailVo.
 
         应用市场
 
@@ -2544,7 +2544,7 @@ class TestCaseDetailVo:
 
     @market_place.setter
     def market_place(self, market_place):
-        """Sets the market_place of this TestCaseDetailVo.
+        r"""Sets the market_place of this TestCaseDetailVo.
 
         应用市场
 
@@ -2555,7 +2555,7 @@ class TestCaseDetailVo:
 
     @property
     def test_mind_id(self):
-        """Gets the test_mind_id of this TestCaseDetailVo.
+        r"""Gets the test_mind_id of this TestCaseDetailVo.
 
         脑图id
 
@@ -2566,7 +2566,7 @@ class TestCaseDetailVo:
 
     @test_mind_id.setter
     def test_mind_id(self, test_mind_id):
-        """Sets the test_mind_id of this TestCaseDetailVo.
+        r"""Sets the test_mind_id of this TestCaseDetailVo.
 
         脑图id
 
@@ -2577,7 +2577,7 @@ class TestCaseDetailVo:
 
     @property
     def test_mind_url(self):
-        """Gets the test_mind_url of this TestCaseDetailVo.
+        r"""Gets the test_mind_url of this TestCaseDetailVo.
 
         脑图url
 
@@ -2588,7 +2588,7 @@ class TestCaseDetailVo:
 
     @test_mind_url.setter
     def test_mind_url(self, test_mind_url):
-        """Sets the test_mind_url of this TestCaseDetailVo.
+        r"""Sets the test_mind_url of this TestCaseDetailVo.
 
         脑图url
 
@@ -2599,7 +2599,7 @@ class TestCaseDetailVo:
 
     @property
     def commit_url(self):
-        """Gets the commit_url of this TestCaseDetailVo.
+        r"""Gets the commit_url of this TestCaseDetailVo.
 
         git提交url
 
@@ -2610,7 +2610,7 @@ class TestCaseDetailVo:
 
     @commit_url.setter
     def commit_url(self, commit_url):
-        """Sets the commit_url of this TestCaseDetailVo.
+        r"""Sets the commit_url of this TestCaseDetailVo.
 
         git提交url
 
@@ -2621,7 +2621,7 @@ class TestCaseDetailVo:
 
     @property
     def test_pattern_number(self):
-        """Gets the test_pattern_number of this TestCaseDetailVo.
+        r"""Gets the test_pattern_number of this TestCaseDetailVo.
 
         测试模式编号
 
@@ -2632,7 +2632,7 @@ class TestCaseDetailVo:
 
     @test_pattern_number.setter
     def test_pattern_number(self, test_pattern_number):
-        """Sets the test_pattern_number of this TestCaseDetailVo.
+        r"""Sets the test_pattern_number of this TestCaseDetailVo.
 
         测试模式编号
 
@@ -2643,7 +2643,7 @@ class TestCaseDetailVo:
 
     @property
     def test_factor_number(self):
-        """Gets the test_factor_number of this TestCaseDetailVo.
+        r"""Gets the test_factor_number of this TestCaseDetailVo.
 
         测试因子编号
 
@@ -2654,7 +2654,7 @@ class TestCaseDetailVo:
 
     @test_factor_number.setter
     def test_factor_number(self, test_factor_number):
-        """Sets the test_factor_number of this TestCaseDetailVo.
+        r"""Sets the test_factor_number of this TestCaseDetailVo.
 
         测试因子编号
 
@@ -2665,7 +2665,7 @@ class TestCaseDetailVo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this TestCaseDetailVo.
+        r"""Gets the status_code of this TestCaseDetailVo.
 
         状态Code
 
@@ -2676,7 +2676,7 @@ class TestCaseDetailVo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this TestCaseDetailVo.
+        r"""Sets the status_code of this TestCaseDetailVo.
 
         状态Code
 
@@ -2687,7 +2687,7 @@ class TestCaseDetailVo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this TestCaseDetailVo.
+        r"""Gets the result_code of this TestCaseDetailVo.
 
         结果Code
 
@@ -2698,7 +2698,7 @@ class TestCaseDetailVo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this TestCaseDetailVo.
+        r"""Sets the result_code of this TestCaseDetailVo.
 
         结果Code
 
@@ -2709,7 +2709,7 @@ class TestCaseDetailVo:
 
     @property
     def release_id(self):
-        """Gets the release_id of this TestCaseDetailVo.
+        r"""Gets the release_id of this TestCaseDetailVo.
 
         迭代ID
 
@@ -2720,7 +2720,7 @@ class TestCaseDetailVo:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this TestCaseDetailVo.
+        r"""Sets the release_id of this TestCaseDetailVo.
 
         迭代ID
 
@@ -2731,7 +2731,7 @@ class TestCaseDetailVo:
 
     @property
     def label_id(self):
-        """Gets the label_id of this TestCaseDetailVo.
+        r"""Gets the label_id of this TestCaseDetailVo.
 
         标签ID
 
@@ -2742,7 +2742,7 @@ class TestCaseDetailVo:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this TestCaseDetailVo.
+        r"""Sets the label_id of this TestCaseDetailVo.
 
         标签ID
 
@@ -2753,7 +2753,7 @@ class TestCaseDetailVo:
 
     @property
     def labels(self):
-        """Gets the labels of this TestCaseDetailVo.
+        r"""Gets the labels of this TestCaseDetailVo.
 
         用例标签名称列表
 
@@ -2764,7 +2764,7 @@ class TestCaseDetailVo:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this TestCaseDetailVo.
+        r"""Sets the labels of this TestCaseDetailVo.
 
         用例标签名称列表
 
@@ -2775,7 +2775,7 @@ class TestCaseDetailVo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this TestCaseDetailVo.
+        r"""Gets the module_id of this TestCaseDetailVo.
 
         模块ID
 
@@ -2786,7 +2786,7 @@ class TestCaseDetailVo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this TestCaseDetailVo.
+        r"""Sets the module_id of this TestCaseDetailVo.
 
         模块ID
 
@@ -2797,7 +2797,7 @@ class TestCaseDetailVo:
 
     @property
     def module_name(self):
-        """Gets the module_name of this TestCaseDetailVo.
+        r"""Gets the module_name of this TestCaseDetailVo.
 
         模块名称
 
@@ -2808,7 +2808,7 @@ class TestCaseDetailVo:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this TestCaseDetailVo.
+        r"""Sets the module_name of this TestCaseDetailVo.
 
         模块名称
 
@@ -2819,7 +2819,7 @@ class TestCaseDetailVo:
 
     @property
     def module_path(self):
-        """Gets the module_path of this TestCaseDetailVo.
+        r"""Gets the module_path of this TestCaseDetailVo.
 
         模块path
 
@@ -2830,7 +2830,7 @@ class TestCaseDetailVo:
 
     @module_path.setter
     def module_path(self, module_path):
-        """Sets the module_path of this TestCaseDetailVo.
+        r"""Sets the module_path of this TestCaseDetailVo.
 
         模块path
 
@@ -2841,7 +2841,7 @@ class TestCaseDetailVo:
 
     @property
     def module_path_name(self):
-        """Gets the module_path_name of this TestCaseDetailVo.
+        r"""Gets the module_path_name of this TestCaseDetailVo.
 
         模块路径名称
 
@@ -2852,7 +2852,7 @@ class TestCaseDetailVo:
 
     @module_path_name.setter
     def module_path_name(self, module_path_name):
-        """Sets the module_path_name of this TestCaseDetailVo.
+        r"""Sets the module_path_name of this TestCaseDetailVo.
 
         模块路径名称
 
@@ -2863,7 +2863,7 @@ class TestCaseDetailVo:
 
     @property
     def execute_latest_time(self):
-        """Gets the execute_latest_time of this TestCaseDetailVo.
+        r"""Gets the execute_latest_time of this TestCaseDetailVo.
 
         最后执行时间
 
@@ -2874,7 +2874,7 @@ class TestCaseDetailVo:
 
     @execute_latest_time.setter
     def execute_latest_time(self, execute_latest_time):
-        """Sets the execute_latest_time of this TestCaseDetailVo.
+        r"""Sets the execute_latest_time of this TestCaseDetailVo.
 
         最后执行时间
 
@@ -2885,7 +2885,7 @@ class TestCaseDetailVo:
 
     @property
     def execute_duration(self):
-        """Gets the execute_duration of this TestCaseDetailVo.
+        r"""Gets the execute_duration of this TestCaseDetailVo.
 
         执行时长
 
@@ -2896,7 +2896,7 @@ class TestCaseDetailVo:
 
     @execute_duration.setter
     def execute_duration(self, execute_duration):
-        """Sets the execute_duration of this TestCaseDetailVo.
+        r"""Sets the execute_duration of this TestCaseDetailVo.
 
         执行时长
 
@@ -2907,7 +2907,7 @@ class TestCaseDetailVo:
 
     @property
     def execute_times(self):
-        """Gets the execute_times of this TestCaseDetailVo.
+        r"""Gets the execute_times of this TestCaseDetailVo.
 
         执行次数
 
@@ -2918,7 +2918,7 @@ class TestCaseDetailVo:
 
     @execute_times.setter
     def execute_times(self, execute_times):
-        """Sets the execute_times of this TestCaseDetailVo.
+        r"""Sets the execute_times of this TestCaseDetailVo.
 
         执行次数
 
@@ -2929,7 +2929,7 @@ class TestCaseDetailVo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this TestCaseDetailVo.
+        r"""Gets the is_keyword of this TestCaseDetailVo.
 
         是否关键用例
 
@@ -2940,7 +2940,7 @@ class TestCaseDetailVo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this TestCaseDetailVo.
+        r"""Sets the is_keyword of this TestCaseDetailVo.
 
         是否关键用例
 
@@ -2951,7 +2951,7 @@ class TestCaseDetailVo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TestCaseDetailVo.
+        r"""Gets the release_dev of this TestCaseDetailVo.
 
         测试版本号
 
@@ -2962,7 +2962,7 @@ class TestCaseDetailVo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TestCaseDetailVo.
+        r"""Sets the release_dev of this TestCaseDetailVo.
 
         测试版本号
 
@@ -2973,7 +2973,7 @@ class TestCaseDetailVo:
 
     @property
     def new_created(self):
-        """Gets the new_created of this TestCaseDetailVo.
+        r"""Gets the new_created of this TestCaseDetailVo.
 
         是否用户新增用例
 
@@ -2984,7 +2984,7 @@ class TestCaseDetailVo:
 
     @new_created.setter
     def new_created(self, new_created):
-        """Sets the new_created of this TestCaseDetailVo.
+        r"""Sets the new_created of this TestCaseDetailVo.
 
         是否用户新增用例
 
@@ -2995,7 +2995,7 @@ class TestCaseDetailVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestCaseDetailVo.
+        r"""Gets the project_uuid of this TestCaseDetailVo.
 
         项目ID
 
@@ -3006,7 +3006,7 @@ class TestCaseDetailVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestCaseDetailVo.
+        r"""Sets the project_uuid of this TestCaseDetailVo.
 
         项目ID
 
@@ -3017,7 +3017,7 @@ class TestCaseDetailVo:
 
     @property
     def creation_version_name(self):
-        """Gets the creation_version_name of this TestCaseDetailVo.
+        r"""Gets the creation_version_name of this TestCaseDetailVo.
 
         创建版本名称，原逻辑marshall添加字段
 
@@ -3028,7 +3028,7 @@ class TestCaseDetailVo:
 
     @creation_version_name.setter
     def creation_version_name(self, creation_version_name):
-        """Sets the creation_version_name of this TestCaseDetailVo.
+        r"""Sets the creation_version_name of this TestCaseDetailVo.
 
         创建版本名称，原逻辑marshall添加字段
 
@@ -3039,7 +3039,7 @@ class TestCaseDetailVo:
 
     @property
     def feature_path(self):
-        """Gets the feature_path of this TestCaseDetailVo.
+        r"""Gets the feature_path of this TestCaseDetailVo.
 
         特性路径，原逻辑marshall添加字段
 
@@ -3050,7 +3050,7 @@ class TestCaseDetailVo:
 
     @feature_path.setter
     def feature_path(self, feature_path):
-        """Sets the feature_path of this TestCaseDetailVo.
+        r"""Sets the feature_path of this TestCaseDetailVo.
 
         特性路径，原逻辑marshall添加字段
 
@@ -3061,7 +3061,7 @@ class TestCaseDetailVo:
 
     @property
     def testcase_uri(self):
-        """Gets the testcase_uri of this TestCaseDetailVo.
+        r"""Gets the testcase_uri of this TestCaseDetailVo.
 
         实体用例Uri，IteratorTestCase字段
 
@@ -3072,7 +3072,7 @@ class TestCaseDetailVo:
 
     @testcase_uri.setter
     def testcase_uri(self, testcase_uri):
-        """Sets the testcase_uri of this TestCaseDetailVo.
+        r"""Sets the testcase_uri of this TestCaseDetailVo.
 
         实体用例Uri，IteratorTestCase字段
 
@@ -3083,7 +3083,7 @@ class TestCaseDetailVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this TestCaseDetailVo.
+        r"""Gets the owner_name of this TestCaseDetailVo.
 
         处理人名称
 
@@ -3094,7 +3094,7 @@ class TestCaseDetailVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this TestCaseDetailVo.
+        r"""Sets the owner_name of this TestCaseDetailVo.
 
         处理人名称
 
@@ -3105,7 +3105,7 @@ class TestCaseDetailVo:
 
     @property
     def iterator_case_uri(self):
-        """Gets the iterator_case_uri of this TestCaseDetailVo.
+        r"""Gets the iterator_case_uri of this TestCaseDetailVo.
 
         迭代用例Uri，IteratorTestCase字段
 
@@ -3116,7 +3116,7 @@ class TestCaseDetailVo:
 
     @iterator_case_uri.setter
     def iterator_case_uri(self, iterator_case_uri):
-        """Sets the iterator_case_uri of this TestCaseDetailVo.
+        r"""Sets the iterator_case_uri of this TestCaseDetailVo.
 
         迭代用例Uri，IteratorTestCase字段
 
@@ -3127,7 +3127,7 @@ class TestCaseDetailVo:
 
     @property
     def script_link(self):
-        """Gets the script_link of this TestCaseDetailVo.
+        r"""Gets the script_link of this TestCaseDetailVo.
 
         脚本链接scriptLink
 
@@ -3138,7 +3138,7 @@ class TestCaseDetailVo:
 
     @script_link.setter
     def script_link(self, script_link):
-        """Sets the script_link of this TestCaseDetailVo.
+        r"""Sets the script_link of this TestCaseDetailVo.
 
         脚本链接scriptLink
 
@@ -3149,7 +3149,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_1(self):
-        """Gets the custom_field_1 of this TestCaseDetailVo.
+        r"""Gets the custom_field_1 of this TestCaseDetailVo.
 
         自定义字段1
 
@@ -3160,7 +3160,7 @@ class TestCaseDetailVo:
 
     @custom_field_1.setter
     def custom_field_1(self, custom_field_1):
-        """Sets the custom_field_1 of this TestCaseDetailVo.
+        r"""Sets the custom_field_1 of this TestCaseDetailVo.
 
         自定义字段1
 
@@ -3171,7 +3171,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_2(self):
-        """Gets the custom_field_2 of this TestCaseDetailVo.
+        r"""Gets the custom_field_2 of this TestCaseDetailVo.
 
         自定义字段2
 
@@ -3182,7 +3182,7 @@ class TestCaseDetailVo:
 
     @custom_field_2.setter
     def custom_field_2(self, custom_field_2):
-        """Sets the custom_field_2 of this TestCaseDetailVo.
+        r"""Sets the custom_field_2 of this TestCaseDetailVo.
 
         自定义字段2
 
@@ -3193,7 +3193,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_3(self):
-        """Gets the custom_field_3 of this TestCaseDetailVo.
+        r"""Gets the custom_field_3 of this TestCaseDetailVo.
 
         自定义字段3
 
@@ -3204,7 +3204,7 @@ class TestCaseDetailVo:
 
     @custom_field_3.setter
     def custom_field_3(self, custom_field_3):
-        """Sets the custom_field_3 of this TestCaseDetailVo.
+        r"""Sets the custom_field_3 of this TestCaseDetailVo.
 
         自定义字段3
 
@@ -3215,7 +3215,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_4(self):
-        """Gets the custom_field_4 of this TestCaseDetailVo.
+        r"""Gets the custom_field_4 of this TestCaseDetailVo.
 
         自定义字段4
 
@@ -3226,7 +3226,7 @@ class TestCaseDetailVo:
 
     @custom_field_4.setter
     def custom_field_4(self, custom_field_4):
-        """Sets the custom_field_4 of this TestCaseDetailVo.
+        r"""Sets the custom_field_4 of this TestCaseDetailVo.
 
         自定义字段4
 
@@ -3237,7 +3237,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_5(self):
-        """Gets the custom_field_5 of this TestCaseDetailVo.
+        r"""Gets the custom_field_5 of this TestCaseDetailVo.
 
         自定义字段5
 
@@ -3248,7 +3248,7 @@ class TestCaseDetailVo:
 
     @custom_field_5.setter
     def custom_field_5(self, custom_field_5):
-        """Sets the custom_field_5 of this TestCaseDetailVo.
+        r"""Sets the custom_field_5 of this TestCaseDetailVo.
 
         自定义字段5
 
@@ -3259,7 +3259,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_6(self):
-        """Gets the custom_field_6 of this TestCaseDetailVo.
+        r"""Gets the custom_field_6 of this TestCaseDetailVo.
 
         自定义字段6
 
@@ -3270,7 +3270,7 @@ class TestCaseDetailVo:
 
     @custom_field_6.setter
     def custom_field_6(self, custom_field_6):
-        """Sets the custom_field_6 of this TestCaseDetailVo.
+        r"""Sets the custom_field_6 of this TestCaseDetailVo.
 
         自定义字段6
 
@@ -3281,7 +3281,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_7(self):
-        """Gets the custom_field_7 of this TestCaseDetailVo.
+        r"""Gets the custom_field_7 of this TestCaseDetailVo.
 
         自定义字段7
 
@@ -3292,7 +3292,7 @@ class TestCaseDetailVo:
 
     @custom_field_7.setter
     def custom_field_7(self, custom_field_7):
-        """Sets the custom_field_7 of this TestCaseDetailVo.
+        r"""Sets the custom_field_7 of this TestCaseDetailVo.
 
         自定义字段7
 
@@ -3303,7 +3303,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_8(self):
-        """Gets the custom_field_8 of this TestCaseDetailVo.
+        r"""Gets the custom_field_8 of this TestCaseDetailVo.
 
         自定义字段8
 
@@ -3314,7 +3314,7 @@ class TestCaseDetailVo:
 
     @custom_field_8.setter
     def custom_field_8(self, custom_field_8):
-        """Sets the custom_field_8 of this TestCaseDetailVo.
+        r"""Sets the custom_field_8 of this TestCaseDetailVo.
 
         自定义字段8
 
@@ -3325,7 +3325,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_9(self):
-        """Gets the custom_field_9 of this TestCaseDetailVo.
+        r"""Gets the custom_field_9 of this TestCaseDetailVo.
 
         自定义字段9
 
@@ -3336,7 +3336,7 @@ class TestCaseDetailVo:
 
     @custom_field_9.setter
     def custom_field_9(self, custom_field_9):
-        """Sets the custom_field_9 of this TestCaseDetailVo.
+        r"""Sets the custom_field_9 of this TestCaseDetailVo.
 
         自定义字段9
 
@@ -3347,7 +3347,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_10(self):
-        """Gets the custom_field_10 of this TestCaseDetailVo.
+        r"""Gets the custom_field_10 of this TestCaseDetailVo.
 
         自定义字段10
 
@@ -3358,7 +3358,7 @@ class TestCaseDetailVo:
 
     @custom_field_10.setter
     def custom_field_10(self, custom_field_10):
-        """Sets the custom_field_10 of this TestCaseDetailVo.
+        r"""Sets the custom_field_10 of this TestCaseDetailVo.
 
         自定义字段10
 
@@ -3369,7 +3369,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_11(self):
-        """Gets the custom_field_11 of this TestCaseDetailVo.
+        r"""Gets the custom_field_11 of this TestCaseDetailVo.
 
         自定义字段11
 
@@ -3380,7 +3380,7 @@ class TestCaseDetailVo:
 
     @custom_field_11.setter
     def custom_field_11(self, custom_field_11):
-        """Sets the custom_field_11 of this TestCaseDetailVo.
+        r"""Sets the custom_field_11 of this TestCaseDetailVo.
 
         自定义字段11
 
@@ -3391,7 +3391,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_12(self):
-        """Gets the custom_field_12 of this TestCaseDetailVo.
+        r"""Gets the custom_field_12 of this TestCaseDetailVo.
 
         自定义字段12
 
@@ -3402,7 +3402,7 @@ class TestCaseDetailVo:
 
     @custom_field_12.setter
     def custom_field_12(self, custom_field_12):
-        """Sets the custom_field_12 of this TestCaseDetailVo.
+        r"""Sets the custom_field_12 of this TestCaseDetailVo.
 
         自定义字段12
 
@@ -3413,7 +3413,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_13(self):
-        """Gets the custom_field_13 of this TestCaseDetailVo.
+        r"""Gets the custom_field_13 of this TestCaseDetailVo.
 
         自定义字段13
 
@@ -3424,7 +3424,7 @@ class TestCaseDetailVo:
 
     @custom_field_13.setter
     def custom_field_13(self, custom_field_13):
-        """Sets the custom_field_13 of this TestCaseDetailVo.
+        r"""Sets the custom_field_13 of this TestCaseDetailVo.
 
         自定义字段13
 
@@ -3435,7 +3435,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_14(self):
-        """Gets the custom_field_14 of this TestCaseDetailVo.
+        r"""Gets the custom_field_14 of this TestCaseDetailVo.
 
         自定义字段14
 
@@ -3446,7 +3446,7 @@ class TestCaseDetailVo:
 
     @custom_field_14.setter
     def custom_field_14(self, custom_field_14):
-        """Sets the custom_field_14 of this TestCaseDetailVo.
+        r"""Sets the custom_field_14 of this TestCaseDetailVo.
 
         自定义字段14
 
@@ -3457,7 +3457,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_15(self):
-        """Gets the custom_field_15 of this TestCaseDetailVo.
+        r"""Gets the custom_field_15 of this TestCaseDetailVo.
 
         自定义字段15
 
@@ -3468,7 +3468,7 @@ class TestCaseDetailVo:
 
     @custom_field_15.setter
     def custom_field_15(self, custom_field_15):
-        """Sets the custom_field_15 of this TestCaseDetailVo.
+        r"""Sets the custom_field_15 of this TestCaseDetailVo.
 
         自定义字段15
 
@@ -3479,7 +3479,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_16(self):
-        """Gets the custom_field_16 of this TestCaseDetailVo.
+        r"""Gets the custom_field_16 of this TestCaseDetailVo.
 
         自定义字段16
 
@@ -3490,7 +3490,7 @@ class TestCaseDetailVo:
 
     @custom_field_16.setter
     def custom_field_16(self, custom_field_16):
-        """Sets the custom_field_16 of this TestCaseDetailVo.
+        r"""Sets the custom_field_16 of this TestCaseDetailVo.
 
         自定义字段16
 
@@ -3501,7 +3501,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_17(self):
-        """Gets the custom_field_17 of this TestCaseDetailVo.
+        r"""Gets the custom_field_17 of this TestCaseDetailVo.
 
         自定义字段17
 
@@ -3512,7 +3512,7 @@ class TestCaseDetailVo:
 
     @custom_field_17.setter
     def custom_field_17(self, custom_field_17):
-        """Sets the custom_field_17 of this TestCaseDetailVo.
+        r"""Sets the custom_field_17 of this TestCaseDetailVo.
 
         自定义字段17
 
@@ -3523,7 +3523,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_18(self):
-        """Gets the custom_field_18 of this TestCaseDetailVo.
+        r"""Gets the custom_field_18 of this TestCaseDetailVo.
 
         自定义字段18
 
@@ -3534,7 +3534,7 @@ class TestCaseDetailVo:
 
     @custom_field_18.setter
     def custom_field_18(self, custom_field_18):
-        """Sets the custom_field_18 of this TestCaseDetailVo.
+        r"""Sets the custom_field_18 of this TestCaseDetailVo.
 
         自定义字段18
 
@@ -3545,7 +3545,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_19(self):
-        """Gets the custom_field_19 of this TestCaseDetailVo.
+        r"""Gets the custom_field_19 of this TestCaseDetailVo.
 
         自定义字段19
 
@@ -3556,7 +3556,7 @@ class TestCaseDetailVo:
 
     @custom_field_19.setter
     def custom_field_19(self, custom_field_19):
-        """Sets the custom_field_19 of this TestCaseDetailVo.
+        r"""Sets the custom_field_19 of this TestCaseDetailVo.
 
         自定义字段19
 
@@ -3567,7 +3567,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_20(self):
-        """Gets the custom_field_20 of this TestCaseDetailVo.
+        r"""Gets the custom_field_20 of this TestCaseDetailVo.
 
         自定义字段20
 
@@ -3578,7 +3578,7 @@ class TestCaseDetailVo:
 
     @custom_field_20.setter
     def custom_field_20(self, custom_field_20):
-        """Sets the custom_field_20 of this TestCaseDetailVo.
+        r"""Sets the custom_field_20 of this TestCaseDetailVo.
 
         自定义字段20
 
@@ -3589,7 +3589,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_21(self):
-        """Gets the custom_field_21 of this TestCaseDetailVo.
+        r"""Gets the custom_field_21 of this TestCaseDetailVo.
 
         自定义字段21
 
@@ -3600,7 +3600,7 @@ class TestCaseDetailVo:
 
     @custom_field_21.setter
     def custom_field_21(self, custom_field_21):
-        """Sets the custom_field_21 of this TestCaseDetailVo.
+        r"""Sets the custom_field_21 of this TestCaseDetailVo.
 
         自定义字段21
 
@@ -3611,7 +3611,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_22(self):
-        """Gets the custom_field_22 of this TestCaseDetailVo.
+        r"""Gets the custom_field_22 of this TestCaseDetailVo.
 
         自定义字段22
 
@@ -3622,7 +3622,7 @@ class TestCaseDetailVo:
 
     @custom_field_22.setter
     def custom_field_22(self, custom_field_22):
-        """Sets the custom_field_22 of this TestCaseDetailVo.
+        r"""Sets the custom_field_22 of this TestCaseDetailVo.
 
         自定义字段22
 
@@ -3633,7 +3633,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_23(self):
-        """Gets the custom_field_23 of this TestCaseDetailVo.
+        r"""Gets the custom_field_23 of this TestCaseDetailVo.
 
         自定义字段23
 
@@ -3644,7 +3644,7 @@ class TestCaseDetailVo:
 
     @custom_field_23.setter
     def custom_field_23(self, custom_field_23):
-        """Sets the custom_field_23 of this TestCaseDetailVo.
+        r"""Sets the custom_field_23 of this TestCaseDetailVo.
 
         自定义字段23
 
@@ -3655,7 +3655,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_24(self):
-        """Gets the custom_field_24 of this TestCaseDetailVo.
+        r"""Gets the custom_field_24 of this TestCaseDetailVo.
 
         自定义字段24
 
@@ -3666,7 +3666,7 @@ class TestCaseDetailVo:
 
     @custom_field_24.setter
     def custom_field_24(self, custom_field_24):
-        """Sets the custom_field_24 of this TestCaseDetailVo.
+        r"""Sets the custom_field_24 of this TestCaseDetailVo.
 
         自定义字段24
 
@@ -3677,7 +3677,7 @@ class TestCaseDetailVo:
 
     @property
     def custom_field_25(self):
-        """Gets the custom_field_25 of this TestCaseDetailVo.
+        r"""Gets the custom_field_25 of this TestCaseDetailVo.
 
         自定义字段25
 
@@ -3688,7 +3688,7 @@ class TestCaseDetailVo:
 
     @custom_field_25.setter
     def custom_field_25(self, custom_field_25):
-        """Sets the custom_field_25 of this TestCaseDetailVo.
+        r"""Sets the custom_field_25 of this TestCaseDetailVo.
 
         自定义字段25
 
@@ -3699,7 +3699,7 @@ class TestCaseDetailVo:
 
     @property
     def last_modifier_name(self):
-        """Gets the last_modifier_name of this TestCaseDetailVo.
+        r"""Gets the last_modifier_name of this TestCaseDetailVo.
 
         更新人名称
 
@@ -3710,7 +3710,7 @@ class TestCaseDetailVo:
 
     @last_modifier_name.setter
     def last_modifier_name(self, last_modifier_name):
-        """Sets the last_modifier_name of this TestCaseDetailVo.
+        r"""Sets the last_modifier_name of this TestCaseDetailVo.
 
         更新人名称
 
@@ -3721,7 +3721,7 @@ class TestCaseDetailVo:
 
     @property
     def version_name(self):
-        """Gets the version_name of this TestCaseDetailVo.
+        r"""Gets the version_name of this TestCaseDetailVo.
 
         迭代
 
@@ -3732,7 +3732,7 @@ class TestCaseDetailVo:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this TestCaseDetailVo.
+        r"""Sets the version_name of this TestCaseDetailVo.
 
         迭代
 
@@ -3743,7 +3743,7 @@ class TestCaseDetailVo:
 
     @property
     def steps(self):
-        """Gets the steps of this TestCaseDetailVo.
+        r"""Gets the steps of this TestCaseDetailVo.
 
         测试步骤
 
@@ -3754,7 +3754,7 @@ class TestCaseDetailVo:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this TestCaseDetailVo.
+        r"""Sets the steps of this TestCaseDetailVo.
 
         测试步骤
 
@@ -3765,7 +3765,7 @@ class TestCaseDetailVo:
 
     @property
     def associate_defect(self):
-        """Gets the associate_defect of this TestCaseDetailVo.
+        r"""Gets the associate_defect of this TestCaseDetailVo.
 
         是否关联缺陷
 
@@ -3776,7 +3776,7 @@ class TestCaseDetailVo:
 
     @associate_defect.setter
     def associate_defect(self, associate_defect):
-        """Sets the associate_defect of this TestCaseDetailVo.
+        r"""Sets the associate_defect of this TestCaseDetailVo.
 
         是否关联缺陷
 
@@ -3787,7 +3787,7 @@ class TestCaseDetailVo:
 
     @property
     def associate_issue(self):
-        """Gets the associate_issue of this TestCaseDetailVo.
+        r"""Gets the associate_issue of this TestCaseDetailVo.
 
         是否关联需求
 
@@ -3798,7 +3798,7 @@ class TestCaseDetailVo:
 
     @associate_issue.setter
     def associate_issue(self, associate_issue):
-        """Sets the associate_issue of this TestCaseDetailVo.
+        r"""Sets the associate_issue of this TestCaseDetailVo.
 
         是否关联需求
 
@@ -3809,7 +3809,7 @@ class TestCaseDetailVo:
 
     @property
     def defect_list(self):
-        """Gets the defect_list of this TestCaseDetailVo.
+        r"""Gets the defect_list of this TestCaseDetailVo.
 
         缺陷关联信息
 
@@ -3820,7 +3820,7 @@ class TestCaseDetailVo:
 
     @defect_list.setter
     def defect_list(self, defect_list):
-        """Sets the defect_list of this TestCaseDetailVo.
+        r"""Sets the defect_list of this TestCaseDetailVo.
 
         缺陷关联信息
 

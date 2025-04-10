@@ -79,7 +79,7 @@ class AppSession:
     }
 
     def __init__(self, id=None, session_stamp=None, os_session_id=None, protocol_type=None, login_user=None, session_type=None, app_group_id=None, app_server_group_id=None, pre_conn_time=None, start_time=None, end_time=None, status_continue_time=None, machine_sid=None, machine_name=None, session_state=None, app_name=None, client_mac=None, client_name=None, client_ip=None, public_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, failed_reason=None, failed_code=None, last_update_status_time=None, tenant_id=None):
-        """AppSession
+        r"""AppSession
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class AppSession:
 
     @property
     def id(self):
-        """Gets the id of this AppSession.
+        r"""Gets the id of this AppSession.
 
         主键ID。
 
@@ -243,7 +243,7 @@ class AppSession:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppSession.
+        r"""Sets the id of this AppSession.
 
         主键ID。
 
@@ -254,7 +254,7 @@ class AppSession:
 
     @property
     def session_stamp(self):
-        """Gets the session_stamp of this AppSession.
+        r"""Gets the session_stamp of this AppSession.
 
         会话标识。
 
@@ -265,7 +265,7 @@ class AppSession:
 
     @session_stamp.setter
     def session_stamp(self, session_stamp):
-        """Sets the session_stamp of this AppSession.
+        r"""Sets the session_stamp of this AppSession.
 
         会话标识。
 
@@ -276,7 +276,7 @@ class AppSession:
 
     @property
     def os_session_id(self):
-        """Gets the os_session_id of this AppSession.
+        r"""Gets the os_session_id of this AppSession.
 
         会话在hda的os中会话id。
 
@@ -287,7 +287,7 @@ class AppSession:
 
     @os_session_id.setter
     def os_session_id(self, os_session_id):
-        """Sets the os_session_id of this AppSession.
+        r"""Sets the os_session_id of this AppSession.
 
         会话在hda的os中会话id。
 
@@ -298,7 +298,7 @@ class AppSession:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this AppSession.
+        r"""Gets the protocol_type of this AppSession.
 
         协议类型。
 
@@ -309,7 +309,7 @@ class AppSession:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this AppSession.
+        r"""Sets the protocol_type of this AppSession.
 
         协议类型。
 
@@ -320,7 +320,7 @@ class AppSession:
 
     @property
     def login_user(self):
-        """Gets the login_user of this AppSession.
+        r"""Gets the login_user of this AppSession.
 
         当前会话的登录用户。
 
@@ -331,7 +331,7 @@ class AppSession:
 
     @login_user.setter
     def login_user(self, login_user):
-        """Sets the login_user of this AppSession.
+        r"""Sets the login_user of this AppSession.
 
         当前会话的登录用户。
 
@@ -342,7 +342,7 @@ class AppSession:
 
     @property
     def session_type(self):
-        """Gets the session_type of this AppSession.
+        r"""Gets the session_type of this AppSession.
 
         会话类型，1表示共享桌面，2表示应用。
 
@@ -353,7 +353,7 @@ class AppSession:
 
     @session_type.setter
     def session_type(self, session_type):
-        """Sets the session_type of this AppSession.
+        r"""Sets the session_type of this AppSession.
 
         会话类型，1表示共享桌面，2表示应用。
 
@@ -364,7 +364,7 @@ class AppSession:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this AppSession.
+        r"""Gets the app_group_id of this AppSession.
 
         App组ID。
 
@@ -375,7 +375,7 @@ class AppSession:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this AppSession.
+        r"""Sets the app_group_id of this AppSession.
 
         App组ID。
 
@@ -386,7 +386,7 @@ class AppSession:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this AppSession.
+        r"""Gets the app_server_group_id of this AppSession.
 
         AppServer组ID。
 
@@ -397,7 +397,7 @@ class AppSession:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this AppSession.
+        r"""Sets the app_server_group_id of this AppSession.
 
         AppServer组ID。
 
@@ -408,7 +408,7 @@ class AppSession:
 
     @property
     def pre_conn_time(self):
-        """Gets the pre_conn_time of this AppSession.
+        r"""Gets the pre_conn_time of this AppSession.
 
         预连接时间。
 
@@ -419,7 +419,7 @@ class AppSession:
 
     @pre_conn_time.setter
     def pre_conn_time(self, pre_conn_time):
-        """Sets the pre_conn_time of this AppSession.
+        r"""Sets the pre_conn_time of this AppSession.
 
         预连接时间。
 
@@ -430,7 +430,7 @@ class AppSession:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AppSession.
+        r"""Gets the start_time of this AppSession.
 
         会话开始时间。
 
@@ -441,7 +441,7 @@ class AppSession:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AppSession.
+        r"""Sets the start_time of this AppSession.
 
         会话开始时间。
 
@@ -452,7 +452,7 @@ class AppSession:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AppSession.
+        r"""Gets the end_time of this AppSession.
 
         会话结束时间。
 
@@ -463,7 +463,7 @@ class AppSession:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AppSession.
+        r"""Sets the end_time of this AppSession.
 
         会话结束时间。
 
@@ -474,7 +474,7 @@ class AppSession:
 
     @property
     def status_continue_time(self):
-        """Gets the status_continue_time of this AppSession.
+        r"""Gets the status_continue_time of this AppSession.
 
         状态持续时间。
 
@@ -485,7 +485,7 @@ class AppSession:
 
     @status_continue_time.setter
     def status_continue_time(self, status_continue_time):
-        """Sets the status_continue_time of this AppSession.
+        r"""Sets the status_continue_time of this AppSession.
 
         状态持续时间。
 
@@ -496,7 +496,7 @@ class AppSession:
 
     @property
     def machine_sid(self):
-        """Gets the machine_sid of this AppSession.
+        r"""Gets the machine_sid of this AppSession.
 
         服务器SID。。
 
@@ -507,7 +507,7 @@ class AppSession:
 
     @machine_sid.setter
     def machine_sid(self, machine_sid):
-        """Sets the machine_sid of this AppSession.
+        r"""Sets the machine_sid of this AppSession.
 
         服务器SID。。
 
@@ -518,7 +518,7 @@ class AppSession:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this AppSession.
+        r"""Gets the machine_name of this AppSession.
 
         服务器名称。
 
@@ -529,7 +529,7 @@ class AppSession:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this AppSession.
+        r"""Sets the machine_name of this AppSession.
 
         服务器名称。
 
@@ -540,7 +540,7 @@ class AppSession:
 
     @property
     def session_state(self):
-        """Gets the session_state of this AppSession.
+        r"""Gets the session_state of this AppSession.
 
         会话状态。
 
@@ -551,7 +551,7 @@ class AppSession:
 
     @session_state.setter
     def session_state(self, session_state):
-        """Sets the session_state of this AppSession.
+        r"""Sets the session_state of this AppSession.
 
         会话状态。
 
@@ -562,7 +562,7 @@ class AppSession:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppSession.
+        r"""Gets the app_name of this AppSession.
 
         会话中的应用名称。
 
@@ -573,7 +573,7 @@ class AppSession:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppSession.
+        r"""Sets the app_name of this AppSession.
 
         会话中的应用名称。
 
@@ -584,7 +584,7 @@ class AppSession:
 
     @property
     def client_mac(self):
-        """Gets the client_mac of this AppSession.
+        r"""Gets the client_mac of this AppSession.
 
         客户端Mac地址。
 
@@ -595,7 +595,7 @@ class AppSession:
 
     @client_mac.setter
     def client_mac(self, client_mac):
-        """Sets the client_mac of this AppSession.
+        r"""Sets the client_mac of this AppSession.
 
         客户端Mac地址。
 
@@ -606,7 +606,7 @@ class AppSession:
 
     @property
     def client_name(self):
-        """Gets the client_name of this AppSession.
+        r"""Gets the client_name of this AppSession.
 
         客户端名称。
 
@@ -617,7 +617,7 @@ class AppSession:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this AppSession.
+        r"""Sets the client_name of this AppSession.
 
         客户端名称。
 
@@ -628,7 +628,7 @@ class AppSession:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this AppSession.
+        r"""Gets the client_ip of this AppSession.
 
         客户端IP。
 
@@ -639,7 +639,7 @@ class AppSession:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this AppSession.
+        r"""Sets the client_ip of this AppSession.
 
         客户端IP。
 
@@ -650,7 +650,7 @@ class AppSession:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this AppSession.
+        r"""Gets the public_ip of this AppSession.
 
         客户端出口ip。
 
@@ -661,7 +661,7 @@ class AppSession:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this AppSession.
+        r"""Sets the public_ip of this AppSession.
 
         客户端出口ip。
 
@@ -672,7 +672,7 @@ class AppSession:
 
     @property
     def client_version(self):
-        """Gets the client_version of this AppSession.
+        r"""Gets the client_version of this AppSession.
 
         客户端版本。
 
@@ -683,7 +683,7 @@ class AppSession:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this AppSession.
+        r"""Sets the client_version of this AppSession.
 
         客户端版本。
 
@@ -694,7 +694,7 @@ class AppSession:
 
     @property
     def client_type(self):
-        """Gets the client_type of this AppSession.
+        r"""Gets the client_type of this AppSession.
 
         客户端类型。
 
@@ -705,7 +705,7 @@ class AppSession:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this AppSession.
+        r"""Sets the client_type of this AppSession.
 
         客户端类型。
 
@@ -716,7 +716,7 @@ class AppSession:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this AppSession.
+        r"""Gets the agent_version of this AppSession.
 
         agent版本。
 
@@ -727,7 +727,7 @@ class AppSession:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this AppSession.
+        r"""Sets the agent_version of this AppSession.
 
         agent版本。
 
@@ -738,7 +738,7 @@ class AppSession:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this AppSession.
+        r"""Gets the vm_ip of this AppSession.
 
         服务器IP。
 
@@ -749,7 +749,7 @@ class AppSession:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this AppSession.
+        r"""Sets the vm_ip of this AppSession.
 
         服务器IP。
 
@@ -760,7 +760,7 @@ class AppSession:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this AppSession.
+        r"""Gets the failed_reason of this AppSession.
 
         错误原因消息。
 
@@ -771,7 +771,7 @@ class AppSession:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this AppSession.
+        r"""Sets the failed_reason of this AppSession.
 
         错误原因消息。
 
@@ -782,7 +782,7 @@ class AppSession:
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this AppSession.
+        r"""Gets the failed_code of this AppSession.
 
         错误原因码。
 
@@ -793,7 +793,7 @@ class AppSession:
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this AppSession.
+        r"""Sets the failed_code of this AppSession.
 
         错误原因码。
 
@@ -804,7 +804,7 @@ class AppSession:
 
     @property
     def last_update_status_time(self):
-        """Gets the last_update_status_time of this AppSession.
+        r"""Gets the last_update_status_time of this AppSession.
 
         状态最后变化时间。
 
@@ -815,7 +815,7 @@ class AppSession:
 
     @last_update_status_time.setter
     def last_update_status_time(self, last_update_status_time):
-        """Sets the last_update_status_time of this AppSession.
+        r"""Sets the last_update_status_time of this AppSession.
 
         状态最后变化时间。
 
@@ -826,7 +826,7 @@ class AppSession:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this AppSession.
+        r"""Gets the tenant_id of this AppSession.
 
         租户ID
 
@@ -837,7 +837,7 @@ class AppSession:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this AppSession.
+        r"""Sets the tenant_id of this AppSession.
 
         租户ID
 

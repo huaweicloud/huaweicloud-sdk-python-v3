@@ -39,7 +39,7 @@ class MqttConnectionInfo:
     }
 
     def __init__(self, server_address=None, client_id=None, auth_type=None, private_key=None, certificate=None, user_name=None, password=None, qos=None):
-        """MqttConnectionInfo
+        r"""MqttConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MqttConnectionInfo:
 
     @property
     def server_address(self):
-        """Gets the server_address of this MqttConnectionInfo.
+        r"""Gets the server_address of this MqttConnectionInfo.
 
         采用cleint方式连接时，mqtt服务器地址
 
@@ -103,7 +103,7 @@ class MqttConnectionInfo:
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this MqttConnectionInfo.
+        r"""Sets the server_address of this MqttConnectionInfo.
 
         采用cleint方式连接时，mqtt服务器地址
 
@@ -114,7 +114,7 @@ class MqttConnectionInfo:
 
     @property
     def client_id(self):
-        """Gets the client_id of this MqttConnectionInfo.
+        r"""Gets the client_id of this MqttConnectionInfo.
 
         mqtt连接时，client_id
 
@@ -125,7 +125,7 @@ class MqttConnectionInfo:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this MqttConnectionInfo.
+        r"""Sets the client_id of this MqttConnectionInfo.
 
         mqtt连接时，client_id
 
@@ -136,7 +136,7 @@ class MqttConnectionInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this MqttConnectionInfo.
+        r"""Gets the auth_type of this MqttConnectionInfo.
 
         鉴权类型。支持密钥认证接入(SECRET)和证书认证接入(CERTIFICATES)两种方式。使用密钥认证接入方式(SECRET)填写user_name和user_name字段，使用证书认证接入方式(CERTIFICATES)填写privateKey和certificate字段
 
@@ -147,7 +147,7 @@ class MqttConnectionInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this MqttConnectionInfo.
+        r"""Sets the auth_type of this MqttConnectionInfo.
 
         鉴权类型。支持密钥认证接入(SECRET)和证书认证接入(CERTIFICATES)两种方式。使用密钥认证接入方式(SECRET)填写user_name和user_name字段，使用证书认证接入方式(CERTIFICATES)填写privateKey和certificate字段
 
@@ -158,7 +158,7 @@ class MqttConnectionInfo:
 
     @property
     def private_key(self):
-        """Gets the private_key of this MqttConnectionInfo.
+        r"""Gets the private_key of this MqttConnectionInfo.
 
         证书秘钥
 
@@ -169,7 +169,7 @@ class MqttConnectionInfo:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this MqttConnectionInfo.
+        r"""Sets the private_key of this MqttConnectionInfo.
 
         证书秘钥
 
@@ -180,7 +180,7 @@ class MqttConnectionInfo:
 
     @property
     def certificate(self):
-        """Gets the certificate of this MqttConnectionInfo.
+        r"""Gets the certificate of this MqttConnectionInfo.
 
         证书
 
@@ -191,7 +191,7 @@ class MqttConnectionInfo:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this MqttConnectionInfo.
+        r"""Sets the certificate of this MqttConnectionInfo.
 
         证书
 
@@ -202,7 +202,7 @@ class MqttConnectionInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this MqttConnectionInfo.
+        r"""Gets the user_name of this MqttConnectionInfo.
 
         用户名
 
@@ -213,7 +213,7 @@ class MqttConnectionInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this MqttConnectionInfo.
+        r"""Sets the user_name of this MqttConnectionInfo.
 
         用户名
 
@@ -224,7 +224,7 @@ class MqttConnectionInfo:
 
     @property
     def password(self):
-        """Gets the password of this MqttConnectionInfo.
+        r"""Gets the password of this MqttConnectionInfo.
 
         密码
 
@@ -235,7 +235,7 @@ class MqttConnectionInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this MqttConnectionInfo.
+        r"""Sets the password of this MqttConnectionInfo.
 
         密码
 
@@ -246,7 +246,7 @@ class MqttConnectionInfo:
 
     @property
     def qos(self):
-        """Gets the qos of this MqttConnectionInfo.
+        r"""Gets the qos of this MqttConnectionInfo.
 
         服务质量,默认为0,表示最多一次的传输,1表示至少一次,2表示仅一次.
 
@@ -257,7 +257,7 @@ class MqttConnectionInfo:
 
     @qos.setter
     def qos(self, qos):
-        """Sets the qos of this MqttConnectionInfo.
+        r"""Sets the qos of this MqttConnectionInfo.
 
         服务质量,默认为0,表示最多一次的传输,1表示至少一次,2表示仅一次.
 

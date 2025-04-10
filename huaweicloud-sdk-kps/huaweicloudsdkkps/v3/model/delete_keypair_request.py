@@ -25,7 +25,7 @@ class DeleteKeypairRequest:
     }
 
     def __init__(self, keypair_name=None):
-        """DeleteKeypairRequest
+        r"""DeleteKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteKeypairRequest:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this DeleteKeypairRequest.
+        r"""Gets the keypair_name of this DeleteKeypairRequest.
 
         密钥对名称
 
@@ -53,7 +53,7 @@ class DeleteKeypairRequest:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this DeleteKeypairRequest.
+        r"""Sets the keypair_name of this DeleteKeypairRequest.
 
         密钥对名称
 

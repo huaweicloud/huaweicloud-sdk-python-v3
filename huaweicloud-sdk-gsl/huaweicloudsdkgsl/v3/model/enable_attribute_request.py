@@ -25,7 +25,7 @@ class EnableAttributeRequest:
     }
 
     def __init__(self, attribute_id=None):
-        """EnableAttributeRequest
+        r"""EnableAttributeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableAttributeRequest:
 
     @property
     def attribute_id(self):
-        """Gets the attribute_id of this EnableAttributeRequest.
+        r"""Gets the attribute_id of this EnableAttributeRequest.
 
         自定义属性标识
 
@@ -53,7 +53,7 @@ class EnableAttributeRequest:
 
     @attribute_id.setter
     def attribute_id(self, attribute_id):
-        """Sets the attribute_id of this EnableAttributeRequest.
+        r"""Sets the attribute_id of this EnableAttributeRequest.
 
         自定义属性标识
 

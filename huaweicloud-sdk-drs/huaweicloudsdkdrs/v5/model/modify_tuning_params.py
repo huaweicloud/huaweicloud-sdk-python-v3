@@ -33,7 +33,7 @@ class ModifyTuningParams:
     }
 
     def __init__(self, full_sync=None, incre_capture=None, incre_apply=None, incre_relay=None, recovery=None):
-        """ModifyTuningParams
+        r"""ModifyTuningParams
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ModifyTuningParams:
 
     @property
     def full_sync(self):
-        """Gets the full_sync of this ModifyTuningParams.
+        r"""Gets the full_sync of this ModifyTuningParams.
 
         全量参数的参数名及对应的取值。
 
@@ -80,7 +80,7 @@ class ModifyTuningParams:
 
     @full_sync.setter
     def full_sync(self, full_sync):
-        """Sets the full_sync of this ModifyTuningParams.
+        r"""Sets the full_sync of this ModifyTuningParams.
 
         全量参数的参数名及对应的取值。
 
@@ -91,7 +91,7 @@ class ModifyTuningParams:
 
     @property
     def incre_capture(self):
-        """Gets the incre_capture of this ModifyTuningParams.
+        r"""Gets the incre_capture of this ModifyTuningParams.
 
         增量抓取参数的参数名及对应的取值。
 
@@ -102,7 +102,7 @@ class ModifyTuningParams:
 
     @incre_capture.setter
     def incre_capture(self, incre_capture):
-        """Sets the incre_capture of this ModifyTuningParams.
+        r"""Sets the incre_capture of this ModifyTuningParams.
 
         增量抓取参数的参数名及对应的取值。
 
@@ -113,7 +113,7 @@ class ModifyTuningParams:
 
     @property
     def incre_apply(self):
-        """Gets the incre_apply of this ModifyTuningParams.
+        r"""Gets the incre_apply of this ModifyTuningParams.
 
         增量回放参数的参数名及对应的取值。
 
@@ -124,7 +124,7 @@ class ModifyTuningParams:
 
     @incre_apply.setter
     def incre_apply(self, incre_apply):
-        """Sets the incre_apply of this ModifyTuningParams.
+        r"""Sets the incre_apply of this ModifyTuningParams.
 
         增量回放参数的参数名及对应的取值。
 
@@ -135,7 +135,7 @@ class ModifyTuningParams:
 
     @property
     def incre_relay(self):
-        """Gets the incre_relay of this ModifyTuningParams.
+        r"""Gets the incre_relay of this ModifyTuningParams.
 
         增量日志拉取参数的参数名及对应的取值。
 
@@ -146,7 +146,7 @@ class ModifyTuningParams:
 
     @incre_relay.setter
     def incre_relay(self, incre_relay):
-        """Sets the incre_relay of this ModifyTuningParams.
+        r"""Sets the incre_relay of this ModifyTuningParams.
 
         增量日志拉取参数的参数名及对应的取值。
 
@@ -157,7 +157,7 @@ class ModifyTuningParams:
 
     @property
     def recovery(self):
-        """Gets the recovery of this ModifyTuningParams.
+        r"""Gets the recovery of this ModifyTuningParams.
 
         是否一键还原到默认值。
 
@@ -168,7 +168,7 @@ class ModifyTuningParams:
 
     @recovery.setter
     def recovery(self, recovery):
-        """Sets the recovery of this ModifyTuningParams.
+        r"""Sets the recovery of this ModifyTuningParams.
 
         是否一键还原到默认值。
 

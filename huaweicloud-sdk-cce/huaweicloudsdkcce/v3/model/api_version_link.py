@@ -27,7 +27,7 @@ class APIVersionLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """APIVersionLink
+        r"""APIVersionLink
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class APIVersionLink:
 
     @property
     def href(self):
-        """Gets the href of this APIVersionLink.
+        r"""Gets the href of this APIVersionLink.
 
         API版本信息的链接。
 
@@ -59,7 +59,7 @@ class APIVersionLink:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this APIVersionLink.
+        r"""Sets the href of this APIVersionLink.
 
         API版本信息的链接。
 
@@ -70,7 +70,7 @@ class APIVersionLink:
 
     @property
     def rel(self):
-        """Gets the rel of this APIVersionLink.
+        r"""Gets the rel of this APIVersionLink.
 
         链接属性。self：自助链接包含版本链接的资源。立即链接后使用这些链接。
 
@@ -81,7 +81,7 @@ class APIVersionLink:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this APIVersionLink.
+        r"""Sets the rel of this APIVersionLink.
 
         链接属性。self：自助链接包含版本链接的资源。立即链接后使用这些链接。
 

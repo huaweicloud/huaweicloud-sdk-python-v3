@@ -30,7 +30,7 @@ class CreateMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """CreateMigrationTaskResponse
+        r"""CreateMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateMigrationTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateMigrationTaskResponse.
+        r"""Gets the id of this CreateMigrationTaskResponse.
 
         迁移任务ID。
 
@@ -69,7 +69,7 @@ class CreateMigrationTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateMigrationTaskResponse.
+        r"""Sets the id of this CreateMigrationTaskResponse.
 
         迁移任务ID。
 
@@ -80,7 +80,7 @@ class CreateMigrationTaskResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateMigrationTaskResponse.
+        r"""Gets the name of this CreateMigrationTaskResponse.
 
         迁移任务名称。
 
@@ -91,7 +91,7 @@ class CreateMigrationTaskResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMigrationTaskResponse.
+        r"""Sets the name of this CreateMigrationTaskResponse.
 
         迁移任务名称。
 
@@ -102,7 +102,7 @@ class CreateMigrationTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateMigrationTaskResponse.
+        r"""Gets the status of this CreateMigrationTaskResponse.
 
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
@@ -113,7 +113,7 @@ class CreateMigrationTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateMigrationTaskResponse.
+        r"""Sets the status of this CreateMigrationTaskResponse.
 
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 

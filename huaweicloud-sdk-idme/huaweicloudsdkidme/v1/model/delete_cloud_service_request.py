@@ -27,7 +27,7 @@ class DeleteCloudServiceRequest:
     }
 
     def __init__(self, service_type=None, instance_id=None):
-        """DeleteCloudServiceRequest
+        r"""DeleteCloudServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteCloudServiceRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this DeleteCloudServiceRequest.
+        r"""Gets the service_type of this DeleteCloudServiceRequest.
 
         iDME服务的类型。  说明：目前仅支持删除CLOUD_LINK按需资源  示例：CLOUD_LINKX
 
@@ -59,7 +59,7 @@ class DeleteCloudServiceRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this DeleteCloudServiceRequest.
+        r"""Sets the service_type of this DeleteCloudServiceRequest.
 
         iDME服务的类型。  说明：目前仅支持删除CLOUD_LINK按需资源  示例：CLOUD_LINKX
 
@@ -70,7 +70,7 @@ class DeleteCloudServiceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteCloudServiceRequest.
+        r"""Gets the instance_id of this DeleteCloudServiceRequest.
 
         待删除的实例ID。
 
@@ -81,7 +81,7 @@ class DeleteCloudServiceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteCloudServiceRequest.
+        r"""Sets the instance_id of this DeleteCloudServiceRequest.
 
         待删除的实例ID。
 

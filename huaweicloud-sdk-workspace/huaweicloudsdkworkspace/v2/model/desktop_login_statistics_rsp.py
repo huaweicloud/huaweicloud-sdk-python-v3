@@ -35,7 +35,7 @@ class DesktopLoginStatisticsRsp:
     }
 
     def __init__(self, in_use_num=None, stop_num=None, unregistered_num=None, unable_to_connect_num=None, ready_num=None, disconnected_num=None):
-        """DesktopLoginStatisticsRsp
+        r"""DesktopLoginStatisticsRsp
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class DesktopLoginStatisticsRsp:
 
     @property
     def in_use_num(self):
-        """Gets the in_use_num of this DesktopLoginStatisticsRsp.
+        r"""Gets the in_use_num of this DesktopLoginStatisticsRsp.
 
         使用中。
 
@@ -84,7 +84,7 @@ class DesktopLoginStatisticsRsp:
 
     @in_use_num.setter
     def in_use_num(self, in_use_num):
-        """Sets the in_use_num of this DesktopLoginStatisticsRsp.
+        r"""Sets the in_use_num of this DesktopLoginStatisticsRsp.
 
         使用中。
 
@@ -95,7 +95,7 @@ class DesktopLoginStatisticsRsp:
 
     @property
     def stop_num(self):
-        """Gets the stop_num of this DesktopLoginStatisticsRsp.
+        r"""Gets the stop_num of this DesktopLoginStatisticsRsp.
 
         关机数目(关机中、已关机)。
 
@@ -106,7 +106,7 @@ class DesktopLoginStatisticsRsp:
 
     @stop_num.setter
     def stop_num(self, stop_num):
-        """Sets the stop_num of this DesktopLoginStatisticsRsp.
+        r"""Sets the stop_num of this DesktopLoginStatisticsRsp.
 
         关机数目(关机中、已关机)。
 
@@ -117,7 +117,7 @@ class DesktopLoginStatisticsRsp:
 
     @property
     def unregistered_num(self):
-        """Gets the unregistered_num of this DesktopLoginStatisticsRsp.
+        r"""Gets the unregistered_num of this DesktopLoginStatisticsRsp.
 
         未注册数目。
 
@@ -128,7 +128,7 @@ class DesktopLoginStatisticsRsp:
 
     @unregistered_num.setter
     def unregistered_num(self, unregistered_num):
-        """Sets the unregistered_num of this DesktopLoginStatisticsRsp.
+        r"""Sets the unregistered_num of this DesktopLoginStatisticsRsp.
 
         未注册数目。
 
@@ -139,7 +139,7 @@ class DesktopLoginStatisticsRsp:
 
     @property
     def unable_to_connect_num(self):
-        """Gets the unable_to_connect_num of this DesktopLoginStatisticsRsp.
+        r"""Gets the unable_to_connect_num of this DesktopLoginStatisticsRsp.
 
         未注册数目。
 
@@ -150,7 +150,7 @@ class DesktopLoginStatisticsRsp:
 
     @unable_to_connect_num.setter
     def unable_to_connect_num(self, unable_to_connect_num):
-        """Sets the unable_to_connect_num of this DesktopLoginStatisticsRsp.
+        r"""Sets the unable_to_connect_num of this DesktopLoginStatisticsRsp.
 
         未注册数目。
 
@@ -161,7 +161,7 @@ class DesktopLoginStatisticsRsp:
 
     @property
     def ready_num(self):
-        """Gets the ready_num of this DesktopLoginStatisticsRsp.
+        r"""Gets the ready_num of this DesktopLoginStatisticsRsp.
 
         空闲数目。
 
@@ -172,7 +172,7 @@ class DesktopLoginStatisticsRsp:
 
     @ready_num.setter
     def ready_num(self, ready_num):
-        """Sets the ready_num of this DesktopLoginStatisticsRsp.
+        r"""Sets the ready_num of this DesktopLoginStatisticsRsp.
 
         空闲数目。
 
@@ -183,7 +183,7 @@ class DesktopLoginStatisticsRsp:
 
     @property
     def disconnected_num(self):
-        """Gets the disconnected_num of this DesktopLoginStatisticsRsp.
+        r"""Gets the disconnected_num of this DesktopLoginStatisticsRsp.
 
         断开连接数目。
 
@@ -194,7 +194,7 @@ class DesktopLoginStatisticsRsp:
 
     @disconnected_num.setter
     def disconnected_num(self, disconnected_num):
-        """Sets the disconnected_num of this DesktopLoginStatisticsRsp.
+        r"""Sets the disconnected_num of this DesktopLoginStatisticsRsp.
 
         断开连接数目。
 

@@ -33,7 +33,7 @@ class ListJobParametersRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, offset=None, limit=None, name=None):
-        """ListJobParametersRequest
+        r"""ListJobParametersRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListJobParametersRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobParametersRequest.
+        r"""Gets the job_id of this ListJobParametersRequest.
 
         任务ID。
 
@@ -81,7 +81,7 @@ class ListJobParametersRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobParametersRequest.
+        r"""Sets the job_id of this ListJobParametersRequest.
 
         任务ID。
 
@@ -92,7 +92,7 @@ class ListJobParametersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListJobParametersRequest.
+        r"""Gets the x_language of this ListJobParametersRequest.
 
         请求语言类型。
 
@@ -103,7 +103,7 @@ class ListJobParametersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListJobParametersRequest.
+        r"""Sets the x_language of this ListJobParametersRequest.
 
         请求语言类型。
 
@@ -114,7 +114,7 @@ class ListJobParametersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobParametersRequest.
+        r"""Gets the offset of this ListJobParametersRequest.
 
         偏移量，表示从此偏移量开始查询，offset 大于等于 0。默认为0
 
@@ -125,7 +125,7 @@ class ListJobParametersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobParametersRequest.
+        r"""Sets the offset of this ListJobParametersRequest.
 
         偏移量，表示从此偏移量开始查询，offset 大于等于 0。默认为0
 
@@ -136,7 +136,7 @@ class ListJobParametersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobParametersRequest.
+        r"""Gets the limit of this ListJobParametersRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -147,7 +147,7 @@ class ListJobParametersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobParametersRequest.
+        r"""Sets the limit of this ListJobParametersRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -158,7 +158,7 @@ class ListJobParametersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListJobParametersRequest.
+        r"""Gets the name of this ListJobParametersRequest.
 
         根据参数名查询。
 
@@ -169,7 +169,7 @@ class ListJobParametersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListJobParametersRequest.
+        r"""Sets the name of this ListJobParametersRequest.
 
         根据参数名查询。
 

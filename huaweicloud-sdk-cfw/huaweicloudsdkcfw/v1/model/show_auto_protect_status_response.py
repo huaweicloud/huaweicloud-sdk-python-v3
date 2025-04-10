@@ -26,7 +26,7 @@ class ShowAutoProtectStatusResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowAutoProtectStatusResponse
+        r"""ShowAutoProtectStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAutoProtectStatusResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowAutoProtectStatusResponse.
+        r"""Gets the data of this ShowAutoProtectStatusResponse.
 
         :return: The data of this ShowAutoProtectStatusResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.FirewallStatusVO`
@@ -53,7 +53,7 @@ class ShowAutoProtectStatusResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowAutoProtectStatusResponse.
+        r"""Sets the data of this ShowAutoProtectStatusResponse.
 
         :param data: The data of this ShowAutoProtectStatusResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.FirewallStatusVO`

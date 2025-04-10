@@ -41,7 +41,7 @@ class CloudEvents:
     }
 
     def __init__(self, id=None, source=None, specversion=None, type=None, datacontenttype=None, dataschema=None, data=None, time=None, subject=None):
-        """CloudEvents
+        r"""CloudEvents
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class CloudEvents:
 
     @property
     def id(self):
-        """Gets the id of this CloudEvents.
+        r"""Gets the id of this CloudEvents.
 
         事件唯一标识串，同一个事件来源里必须唯一
 
@@ -106,7 +106,7 @@ class CloudEvents:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CloudEvents.
+        r"""Sets the id of this CloudEvents.
 
         事件唯一标识串，同一个事件来源里必须唯一
 
@@ -117,7 +117,7 @@ class CloudEvents:
 
     @property
     def source(self):
-        """Gets the source of this CloudEvents.
+        r"""Gets the source of this CloudEvents.
 
         事件来源上下文标识串，source+id可以唯一确定一个事件。采用URI-Reference格式，参考https://tools.ietf.org/html/rfc3986#section-4.1
 
@@ -128,7 +128,7 @@ class CloudEvents:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CloudEvents.
+        r"""Sets the source of this CloudEvents.
 
         事件来源上下文标识串，source+id可以唯一确定一个事件。采用URI-Reference格式，参考https://tools.ietf.org/html/rfc3986#section-4.1
 
@@ -139,7 +139,7 @@ class CloudEvents:
 
     @property
     def specversion(self):
-        """Gets the specversion of this CloudEvents.
+        r"""Gets the specversion of this CloudEvents.
 
         CloudEvents协议版本，格式为major.minor
 
@@ -150,7 +150,7 @@ class CloudEvents:
 
     @specversion.setter
     def specversion(self, specversion):
-        """Sets the specversion of this CloudEvents.
+        r"""Sets the specversion of this CloudEvents.
 
         CloudEvents协议版本，格式为major.minor
 
@@ -161,7 +161,7 @@ class CloudEvents:
 
     @property
     def type(self):
-        """Gets the type of this CloudEvents.
+        r"""Gets the type of this CloudEvents.
 
         事件类型
 
@@ -172,7 +172,7 @@ class CloudEvents:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CloudEvents.
+        r"""Sets the type of this CloudEvents.
 
         事件类型
 
@@ -183,7 +183,7 @@ class CloudEvents:
 
     @property
     def datacontenttype(self):
-        """Gets the datacontenttype of this CloudEvents.
+        r"""Gets the datacontenttype of this CloudEvents.
 
         事件内容格式，采用MIME格式，遵循RFC2046，参考https://tools.ietf.org/html/rfc2046
 
@@ -194,7 +194,7 @@ class CloudEvents:
 
     @datacontenttype.setter
     def datacontenttype(self, datacontenttype):
-        """Sets the datacontenttype of this CloudEvents.
+        r"""Sets the datacontenttype of this CloudEvents.
 
         事件内容格式，采用MIME格式，遵循RFC2046，参考https://tools.ietf.org/html/rfc2046
 
@@ -205,7 +205,7 @@ class CloudEvents:
 
     @property
     def dataschema(self):
-        """Gets the dataschema of this CloudEvents.
+        r"""Gets the dataschema of this CloudEvents.
 
         事件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
 
@@ -216,7 +216,7 @@ class CloudEvents:
 
     @dataschema.setter
     def dataschema(self, dataschema):
-        """Sets the dataschema of this CloudEvents.
+        r"""Sets the dataschema of this CloudEvents.
 
         事件内容模型定义的URI，遵循RFC3986，参考https://tools.ietf.org/html/rfc3986#section-4.3
 
@@ -227,7 +227,7 @@ class CloudEvents:
 
     @property
     def data(self):
-        """Gets the data of this CloudEvents.
+        r"""Gets the data of this CloudEvents.
 
         事件的负载内容，采用datacontenttype字段指定的格式，内容字段遵循dataschema字段的描述
 
@@ -238,7 +238,7 @@ class CloudEvents:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CloudEvents.
+        r"""Sets the data of this CloudEvents.
 
         事件的负载内容，采用datacontenttype字段指定的格式，内容字段遵循dataschema字段的描述
 
@@ -249,7 +249,7 @@ class CloudEvents:
 
     @property
     def time(self):
-        """Gets the time of this CloudEvents.
+        r"""Gets the time of this CloudEvents.
 
         事件发生UTC日期时间，相同来源的事件格式相同，遵循RFC3339，格式需满足2018-04-05T17:31:00Z，参考https://tools.ietf.org/html/rfc3339
 
@@ -260,7 +260,7 @@ class CloudEvents:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this CloudEvents.
+        r"""Sets the time of this CloudEvents.
 
         事件发生UTC日期时间，相同来源的事件格式相同，遵循RFC3339，格式需满足2018-04-05T17:31:00Z，参考https://tools.ietf.org/html/rfc3339
 
@@ -271,7 +271,7 @@ class CloudEvents:
 
     @property
     def subject(self):
-        """Gets the subject of this CloudEvents.
+        r"""Gets the subject of this CloudEvents.
 
         事件发生的主题或对象，用以标识哪个具体对象发生了当前事件
 
@@ -282,7 +282,7 @@ class CloudEvents:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this CloudEvents.
+        r"""Sets the subject of this CloudEvents.
 
         事件发生的主题或对象，用以标识哪个具体对象发生了当前事件
 

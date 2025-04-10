@@ -25,7 +25,7 @@ class ShowOpLogRequest:
     }
 
     def __init__(self, operation_log_id=None):
-        """ShowOpLogRequest
+        r"""ShowOpLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowOpLogRequest:
 
     @property
     def operation_log_id(self):
-        """Gets the operation_log_id of this ShowOpLogRequest.
+        r"""Gets the operation_log_id of this ShowOpLogRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class ShowOpLogRequest:
 
     @operation_log_id.setter
     def operation_log_id(self, operation_log_id):
-        """Sets the operation_log_id of this ShowOpLogRequest.
+        r"""Sets the operation_log_id of this ShowOpLogRequest.
 
         任务ID
 

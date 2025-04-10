@@ -27,7 +27,7 @@ class SupplementDataRespSupplementDataInstanceTime:
     }
 
     def __init__(self, days=None, time_of_day=None):
-        """SupplementDataRespSupplementDataInstanceTime
+        r"""SupplementDataRespSupplementDataInstanceTime
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SupplementDataRespSupplementDataInstanceTime:
 
     @property
     def days(self):
-        """Gets the days of this SupplementDataRespSupplementDataInstanceTime.
+        r"""Gets the days of this SupplementDataRespSupplementDataInstanceTime.
 
         支持离散的天
 
@@ -61,7 +61,7 @@ class SupplementDataRespSupplementDataInstanceTime:
 
     @days.setter
     def days(self, days):
-        """Sets the days of this SupplementDataRespSupplementDataInstanceTime.
+        r"""Sets the days of this SupplementDataRespSupplementDataInstanceTime.
 
         支持离散的天
 
@@ -72,7 +72,7 @@ class SupplementDataRespSupplementDataInstanceTime:
 
     @property
     def time_of_day(self):
-        """Gets the time_of_day of this SupplementDataRespSupplementDataInstanceTime.
+        r"""Gets the time_of_day of this SupplementDataRespSupplementDataInstanceTime.
 
         一天中的时间段
 
@@ -83,7 +83,7 @@ class SupplementDataRespSupplementDataInstanceTime:
 
     @time_of_day.setter
     def time_of_day(self, time_of_day):
-        """Sets the time_of_day of this SupplementDataRespSupplementDataInstanceTime.
+        r"""Sets the time_of_day of this SupplementDataRespSupplementDataInstanceTime.
 
         一天中的时间段
 

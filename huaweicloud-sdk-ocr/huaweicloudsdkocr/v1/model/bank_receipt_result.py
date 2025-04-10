@@ -27,7 +27,7 @@ class BankReceiptResult:
     }
 
     def __init__(self, bank_receipt_count=None, bank_receipt_list=None):
-        """BankReceiptResult
+        r"""BankReceiptResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BankReceiptResult:
 
     @property
     def bank_receipt_count(self):
-        """Gets the bank_receipt_count of this BankReceiptResult.
+        r"""Gets the bank_receipt_count of this BankReceiptResult.
 
         银行回单数量 
 
@@ -61,7 +61,7 @@ class BankReceiptResult:
 
     @bank_receipt_count.setter
     def bank_receipt_count(self, bank_receipt_count):
-        """Sets the bank_receipt_count of this BankReceiptResult.
+        r"""Sets the bank_receipt_count of this BankReceiptResult.
 
         银行回单数量 
 
@@ -72,7 +72,7 @@ class BankReceiptResult:
 
     @property
     def bank_receipt_list(self):
-        """Gets the bank_receipt_list of this BankReceiptResult.
+        r"""Gets the bank_receipt_list of this BankReceiptResult.
 
         银行回单键值对提取结果。 
 
@@ -83,7 +83,7 @@ class BankReceiptResult:
 
     @bank_receipt_list.setter
     def bank_receipt_list(self, bank_receipt_list):
-        """Sets the bank_receipt_list of this BankReceiptResult.
+        r"""Sets the bank_receipt_list of this BankReceiptResult.
 
         银行回单键值对提取结果。 
 

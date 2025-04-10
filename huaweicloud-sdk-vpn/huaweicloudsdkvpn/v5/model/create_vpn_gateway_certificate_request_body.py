@@ -25,7 +25,7 @@ class CreateVpnGatewayCertificateRequestBody:
     }
 
     def __init__(self, certificate=None):
-        """CreateVpnGatewayCertificateRequestBody
+        r"""CreateVpnGatewayCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVpnGatewayCertificateRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this CreateVpnGatewayCertificateRequestBody.
+        r"""Gets the certificate of this CreateVpnGatewayCertificateRequestBody.
 
         :return: The certificate of this CreateVpnGatewayCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBodyContent`
@@ -51,7 +51,7 @@ class CreateVpnGatewayCertificateRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this CreateVpnGatewayCertificateRequestBody.
+        r"""Sets the certificate of this CreateVpnGatewayCertificateRequestBody.
 
         :param certificate: The certificate of this CreateVpnGatewayCertificateRequestBody.
         :type certificate: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBodyContent`

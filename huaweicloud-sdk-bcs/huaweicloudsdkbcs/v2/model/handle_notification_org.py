@@ -25,7 +25,7 @@ class HandleNotificationOrg:
     }
 
     def __init__(self, name=None):
-        """HandleNotificationOrg
+        r"""HandleNotificationOrg
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HandleNotificationOrg:
 
     @property
     def name(self):
-        """Gets the name of this HandleNotificationOrg.
+        r"""Gets the name of this HandleNotificationOrg.
 
         加入的组织
 
@@ -53,7 +53,7 @@ class HandleNotificationOrg:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HandleNotificationOrg.
+        r"""Sets the name of this HandleNotificationOrg.
 
         加入的组织
 

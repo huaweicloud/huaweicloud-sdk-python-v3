@@ -73,7 +73,7 @@ class QueryAlarmResult:
     }
 
     def __init__(self, action_enabled=None, alarm_actions=None, alarm_advice=None, alarm_description=None, alarm_level=None, alarm_rule_id=None, alarm_rule_name=None, comparison_operator=None, dimensions=None, evaluation_periods=None, id_turn_on=None, insufficient_data_actions=None, metric_name=None, namespace=None, ok_actions=None, period=None, policy_name=None, resources=None, state_reason=None, state_updated_timestamp=None, state_value=None, statistic=None, threshold=None, type=None, unit=None):
-        """QueryAlarmResult
+        r"""QueryAlarmResult
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class QueryAlarmResult:
 
     @property
     def action_enabled(self):
-        """Gets the action_enabled of this QueryAlarmResult.
+        r"""Gets the action_enabled of this QueryAlarmResult.
 
         是否启用通知。
 
@@ -222,7 +222,7 @@ class QueryAlarmResult:
 
     @action_enabled.setter
     def action_enabled(self, action_enabled):
-        """Sets the action_enabled of this QueryAlarmResult.
+        r"""Sets the action_enabled of this QueryAlarmResult.
 
         是否启用通知。
 
@@ -233,7 +233,7 @@ class QueryAlarmResult:
 
     @property
     def alarm_actions(self):
-        """Gets the alarm_actions of this QueryAlarmResult.
+        r"""Gets the alarm_actions of this QueryAlarmResult.
 
         告警状态通知列表。
 
@@ -244,7 +244,7 @@ class QueryAlarmResult:
 
     @alarm_actions.setter
     def alarm_actions(self, alarm_actions):
-        """Sets the alarm_actions of this QueryAlarmResult.
+        r"""Sets the alarm_actions of this QueryAlarmResult.
 
         告警状态通知列表。
 
@@ -255,7 +255,7 @@ class QueryAlarmResult:
 
     @property
     def alarm_advice(self):
-        """Gets the alarm_advice of this QueryAlarmResult.
+        r"""Gets the alarm_advice of this QueryAlarmResult.
 
         告警清除建议。
 
@@ -266,7 +266,7 @@ class QueryAlarmResult:
 
     @alarm_advice.setter
     def alarm_advice(self, alarm_advice):
-        """Sets the alarm_advice of this QueryAlarmResult.
+        r"""Sets the alarm_advice of this QueryAlarmResult.
 
         告警清除建议。
 
@@ -277,7 +277,7 @@ class QueryAlarmResult:
 
     @property
     def alarm_description(self):
-        """Gets the alarm_description of this QueryAlarmResult.
+        r"""Gets the alarm_description of this QueryAlarmResult.
 
         阈值规则描述。
 
@@ -288,7 +288,7 @@ class QueryAlarmResult:
 
     @alarm_description.setter
     def alarm_description(self, alarm_description):
-        """Sets the alarm_description of this QueryAlarmResult.
+        r"""Sets the alarm_description of this QueryAlarmResult.
 
         阈值规则描述。
 
@@ -299,7 +299,7 @@ class QueryAlarmResult:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this QueryAlarmResult.
+        r"""Gets the alarm_level of this QueryAlarmResult.
 
         告警级别。
 
@@ -310,7 +310,7 @@ class QueryAlarmResult:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this QueryAlarmResult.
+        r"""Sets the alarm_level of this QueryAlarmResult.
 
         告警级别。
 
@@ -321,7 +321,7 @@ class QueryAlarmResult:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this QueryAlarmResult.
+        r"""Gets the alarm_rule_id of this QueryAlarmResult.
 
         阈值规则ID。
 
@@ -332,7 +332,7 @@ class QueryAlarmResult:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this QueryAlarmResult.
+        r"""Sets the alarm_rule_id of this QueryAlarmResult.
 
         阈值规则ID。
 
@@ -343,7 +343,7 @@ class QueryAlarmResult:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this QueryAlarmResult.
+        r"""Gets the alarm_rule_name of this QueryAlarmResult.
 
         阈值规则名称。
 
@@ -354,7 +354,7 @@ class QueryAlarmResult:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this QueryAlarmResult.
+        r"""Sets the alarm_rule_name of this QueryAlarmResult.
 
         阈值规则名称。
 
@@ -365,7 +365,7 @@ class QueryAlarmResult:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this QueryAlarmResult.
+        r"""Gets the comparison_operator of this QueryAlarmResult.
 
         极限条件。
 
@@ -376,7 +376,7 @@ class QueryAlarmResult:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this QueryAlarmResult.
+        r"""Sets the comparison_operator of this QueryAlarmResult.
 
         极限条件。
 
@@ -387,7 +387,7 @@ class QueryAlarmResult:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this QueryAlarmResult.
+        r"""Gets the dimensions of this QueryAlarmResult.
 
         时间序列维度。
 
@@ -398,7 +398,7 @@ class QueryAlarmResult:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this QueryAlarmResult.
+        r"""Sets the dimensions of this QueryAlarmResult.
 
         时间序列维度。
 
@@ -409,7 +409,7 @@ class QueryAlarmResult:
 
     @property
     def evaluation_periods(self):
-        """Gets the evaluation_periods of this QueryAlarmResult.
+        r"""Gets the evaluation_periods of this QueryAlarmResult.
 
         间隔周期。
 
@@ -420,7 +420,7 @@ class QueryAlarmResult:
 
     @evaluation_periods.setter
     def evaluation_periods(self, evaluation_periods):
-        """Sets the evaluation_periods of this QueryAlarmResult.
+        r"""Sets the evaluation_periods of this QueryAlarmResult.
 
         间隔周期。
 
@@ -431,7 +431,7 @@ class QueryAlarmResult:
 
     @property
     def id_turn_on(self):
-        """Gets the id_turn_on of this QueryAlarmResult.
+        r"""Gets the id_turn_on of this QueryAlarmResult.
 
         阈值规则是否启用。
 
@@ -442,7 +442,7 @@ class QueryAlarmResult:
 
     @id_turn_on.setter
     def id_turn_on(self, id_turn_on):
-        """Sets the id_turn_on of this QueryAlarmResult.
+        r"""Sets the id_turn_on of this QueryAlarmResult.
 
         阈值规则是否启用。
 
@@ -453,7 +453,7 @@ class QueryAlarmResult:
 
     @property
     def insufficient_data_actions(self):
-        """Gets the insufficient_data_actions of this QueryAlarmResult.
+        r"""Gets the insufficient_data_actions of this QueryAlarmResult.
 
         数据不足通知列表。
 
@@ -464,7 +464,7 @@ class QueryAlarmResult:
 
     @insufficient_data_actions.setter
     def insufficient_data_actions(self, insufficient_data_actions):
-        """Sets the insufficient_data_actions of this QueryAlarmResult.
+        r"""Sets the insufficient_data_actions of this QueryAlarmResult.
 
         数据不足通知列表。
 
@@ -475,7 +475,7 @@ class QueryAlarmResult:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this QueryAlarmResult.
+        r"""Gets the metric_name of this QueryAlarmResult.
 
         时间序列名称。
 
@@ -486,7 +486,7 @@ class QueryAlarmResult:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this QueryAlarmResult.
+        r"""Sets the metric_name of this QueryAlarmResult.
 
         时间序列名称。
 
@@ -497,7 +497,7 @@ class QueryAlarmResult:
 
     @property
     def namespace(self):
-        """Gets the namespace of this QueryAlarmResult.
+        r"""Gets the namespace of this QueryAlarmResult.
 
         时间序列命名空间。
 
@@ -508,7 +508,7 @@ class QueryAlarmResult:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this QueryAlarmResult.
+        r"""Sets the namespace of this QueryAlarmResult.
 
         时间序列命名空间。
 
@@ -519,7 +519,7 @@ class QueryAlarmResult:
 
     @property
     def ok_actions(self):
-        """Gets the ok_actions of this QueryAlarmResult.
+        r"""Gets the ok_actions of this QueryAlarmResult.
 
         正常状态通知列表。
 
@@ -530,7 +530,7 @@ class QueryAlarmResult:
 
     @ok_actions.setter
     def ok_actions(self, ok_actions):
-        """Sets the ok_actions of this QueryAlarmResult.
+        r"""Sets the ok_actions of this QueryAlarmResult.
 
         正常状态通知列表。
 
@@ -541,7 +541,7 @@ class QueryAlarmResult:
 
     @property
     def period(self):
-        """Gets the period of this QueryAlarmResult.
+        r"""Gets the period of this QueryAlarmResult.
 
         统计周期。
 
@@ -552,7 +552,7 @@ class QueryAlarmResult:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this QueryAlarmResult.
+        r"""Sets the period of this QueryAlarmResult.
 
         统计周期。
 
@@ -563,7 +563,7 @@ class QueryAlarmResult:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this QueryAlarmResult.
+        r"""Gets the policy_name of this QueryAlarmResult.
 
         阈值规则模板名称。
 
@@ -574,7 +574,7 @@ class QueryAlarmResult:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this QueryAlarmResult.
+        r"""Sets the policy_name of this QueryAlarmResult.
 
         阈值规则模板名称。
 
@@ -585,7 +585,7 @@ class QueryAlarmResult:
 
     @property
     def resources(self):
-        """Gets the resources of this QueryAlarmResult.
+        r"""Gets the resources of this QueryAlarmResult.
 
         资源信息(已废弃)。
 
@@ -596,7 +596,7 @@ class QueryAlarmResult:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this QueryAlarmResult.
+        r"""Sets the resources of this QueryAlarmResult.
 
         资源信息(已废弃)。
 
@@ -607,7 +607,7 @@ class QueryAlarmResult:
 
     @property
     def state_reason(self):
-        """Gets the state_reason of this QueryAlarmResult.
+        r"""Gets the state_reason of this QueryAlarmResult.
 
         原因描述。
 
@@ -618,7 +618,7 @@ class QueryAlarmResult:
 
     @state_reason.setter
     def state_reason(self, state_reason):
-        """Sets the state_reason of this QueryAlarmResult.
+        r"""Sets the state_reason of this QueryAlarmResult.
 
         原因描述。
 
@@ -629,7 +629,7 @@ class QueryAlarmResult:
 
     @property
     def state_updated_timestamp(self):
-        """Gets the state_updated_timestamp of this QueryAlarmResult.
+        r"""Gets the state_updated_timestamp of this QueryAlarmResult.
 
         状态更新时间戳。
 
@@ -640,7 +640,7 @@ class QueryAlarmResult:
 
     @state_updated_timestamp.setter
     def state_updated_timestamp(self, state_updated_timestamp):
-        """Sets the state_updated_timestamp of this QueryAlarmResult.
+        r"""Sets the state_updated_timestamp of this QueryAlarmResult.
 
         状态更新时间戳。
 
@@ -651,7 +651,7 @@ class QueryAlarmResult:
 
     @property
     def state_value(self):
-        """Gets the state_value of this QueryAlarmResult.
+        r"""Gets the state_value of this QueryAlarmResult.
 
         服务状态。
 
@@ -662,7 +662,7 @@ class QueryAlarmResult:
 
     @state_value.setter
     def state_value(self, state_value):
-        """Sets the state_value of this QueryAlarmResult.
+        r"""Sets the state_value of this QueryAlarmResult.
 
         服务状态。
 
@@ -673,7 +673,7 @@ class QueryAlarmResult:
 
     @property
     def statistic(self):
-        """Gets the statistic of this QueryAlarmResult.
+        r"""Gets the statistic of this QueryAlarmResult.
 
         统计方式。
 
@@ -684,7 +684,7 @@ class QueryAlarmResult:
 
     @statistic.setter
     def statistic(self, statistic):
-        """Sets the statistic of this QueryAlarmResult.
+        r"""Sets the statistic of this QueryAlarmResult.
 
         统计方式。
 
@@ -695,7 +695,7 @@ class QueryAlarmResult:
 
     @property
     def threshold(self):
-        """Gets the threshold of this QueryAlarmResult.
+        r"""Gets the threshold of this QueryAlarmResult.
 
         临界值。
 
@@ -706,7 +706,7 @@ class QueryAlarmResult:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this QueryAlarmResult.
+        r"""Sets the threshold of this QueryAlarmResult.
 
         临界值。
 
@@ -717,7 +717,7 @@ class QueryAlarmResult:
 
     @property
     def type(self):
-        """Gets the type of this QueryAlarmResult.
+        r"""Gets the type of this QueryAlarmResult.
 
         阈值规则类型。
 
@@ -728,7 +728,7 @@ class QueryAlarmResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryAlarmResult.
+        r"""Sets the type of this QueryAlarmResult.
 
         阈值规则类型。
 
@@ -739,7 +739,7 @@ class QueryAlarmResult:
 
     @property
     def unit(self):
-        """Gets the unit of this QueryAlarmResult.
+        r"""Gets the unit of this QueryAlarmResult.
 
         阈值单元。
 
@@ -750,7 +750,7 @@ class QueryAlarmResult:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QueryAlarmResult.
+        r"""Sets the unit of this QueryAlarmResult.
 
         阈值单元。
 

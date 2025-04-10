@@ -35,7 +35,7 @@ class CCECreateInfo:
     }
 
     def __init__(self, node_num=None, node_flavor=None, cce_flavor=None, init_node_pwd=None, az=None, cluster_platform_type=None):
-        """CCECreateInfo
+        r"""CCECreateInfo
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CCECreateInfo:
 
     @property
     def node_num(self):
-        """Gets the node_num of this CCECreateInfo.
+        r"""Gets the node_num of this CCECreateInfo.
 
         集群节点数
 
@@ -83,7 +83,7 @@ class CCECreateInfo:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this CCECreateInfo.
+        r"""Sets the node_num of this CCECreateInfo.
 
         集群节点数
 
@@ -94,7 +94,7 @@ class CCECreateInfo:
 
     @property
     def node_flavor(self):
-        """Gets the node_flavor of this CCECreateInfo.
+        r"""Gets the node_flavor of this CCECreateInfo.
 
         集群节点规格ID（支持的规格配置最小为4u8g）
 
@@ -105,7 +105,7 @@ class CCECreateInfo:
 
     @node_flavor.setter
     def node_flavor(self, node_flavor):
-        """Sets the node_flavor of this CCECreateInfo.
+        r"""Sets the node_flavor of this CCECreateInfo.
 
         集群节点规格ID（支持的规格配置最小为4u8g）
 
@@ -116,7 +116,7 @@ class CCECreateInfo:
 
     @property
     def cce_flavor(self):
-        """Gets the cce_flavor of this CCECreateInfo.
+        r"""Gets the cce_flavor of this CCECreateInfo.
 
         CCE集群规格
 
@@ -127,7 +127,7 @@ class CCECreateInfo:
 
     @cce_flavor.setter
     def cce_flavor(self, cce_flavor):
-        """Sets the cce_flavor of this CCECreateInfo.
+        r"""Sets the cce_flavor of this CCECreateInfo.
 
         CCE集群规格
 
@@ -138,7 +138,7 @@ class CCECreateInfo:
 
     @property
     def init_node_pwd(self):
-        """Gets the init_node_pwd of this CCECreateInfo.
+        r"""Gets the init_node_pwd of this CCECreateInfo.
 
         节点初始密码
 
@@ -149,7 +149,7 @@ class CCECreateInfo:
 
     @init_node_pwd.setter
     def init_node_pwd(self, init_node_pwd):
-        """Sets the init_node_pwd of this CCECreateInfo.
+        r"""Sets the init_node_pwd of this CCECreateInfo.
 
         节点初始密码
 
@@ -160,7 +160,7 @@ class CCECreateInfo:
 
     @property
     def az(self):
-        """Gets the az of this CCECreateInfo.
+        r"""Gets the az of this CCECreateInfo.
 
         可用区
 
@@ -171,7 +171,7 @@ class CCECreateInfo:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this CCECreateInfo.
+        r"""Sets the az of this CCECreateInfo.
 
         可用区
 
@@ -182,7 +182,7 @@ class CCECreateInfo:
 
     @property
     def cluster_platform_type(self):
-        """Gets the cluster_platform_type of this CCECreateInfo.
+        r"""Gets the cluster_platform_type of this CCECreateInfo.
 
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 
@@ -193,7 +193,7 @@ class CCECreateInfo:
 
     @cluster_platform_type.setter
     def cluster_platform_type(self, cluster_platform_type):
-        """Sets the cluster_platform_type of this CCECreateInfo.
+        r"""Sets the cluster_platform_type of this CCECreateInfo.
 
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 

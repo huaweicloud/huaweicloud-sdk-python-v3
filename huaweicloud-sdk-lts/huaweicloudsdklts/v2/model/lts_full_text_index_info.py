@@ -33,7 +33,7 @@ class LTSFullTextIndexInfo:
     }
 
     def __init__(self, enable=None, case_sensitive=None, include_chinese=None, tokenizer=None, ascii=None):
-        """LTSFullTextIndexInfo
+        r"""LTSFullTextIndexInfo
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class LTSFullTextIndexInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this LTSFullTextIndexInfo.
+        r"""Gets the enable of this LTSFullTextIndexInfo.
 
         是否开启全文索引
 
@@ -78,7 +78,7 @@ class LTSFullTextIndexInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this LTSFullTextIndexInfo.
+        r"""Sets the enable of this LTSFullTextIndexInfo.
 
         是否开启全文索引
 
@@ -89,7 +89,7 @@ class LTSFullTextIndexInfo:
 
     @property
     def case_sensitive(self):
-        """Gets the case_sensitive of this LTSFullTextIndexInfo.
+        r"""Gets the case_sensitive of this LTSFullTextIndexInfo.
 
         是否大小写敏感
 
@@ -100,7 +100,7 @@ class LTSFullTextIndexInfo:
 
     @case_sensitive.setter
     def case_sensitive(self, case_sensitive):
-        """Sets the case_sensitive of this LTSFullTextIndexInfo.
+        r"""Sets the case_sensitive of this LTSFullTextIndexInfo.
 
         是否大小写敏感
 
@@ -111,7 +111,7 @@ class LTSFullTextIndexInfo:
 
     @property
     def include_chinese(self):
-        """Gets the include_chinese of this LTSFullTextIndexInfo.
+        r"""Gets the include_chinese of this LTSFullTextIndexInfo.
 
         是否包含中文
 
@@ -122,7 +122,7 @@ class LTSFullTextIndexInfo:
 
     @include_chinese.setter
     def include_chinese(self, include_chinese):
-        """Sets the include_chinese of this LTSFullTextIndexInfo.
+        r"""Sets the include_chinese of this LTSFullTextIndexInfo.
 
         是否包含中文
 
@@ -133,7 +133,7 @@ class LTSFullTextIndexInfo:
 
     @property
     def tokenizer(self):
-        """Gets the tokenizer of this LTSFullTextIndexInfo.
+        r"""Gets the tokenizer of this LTSFullTextIndexInfo.
 
         自定义分词符
 
@@ -144,7 +144,7 @@ class LTSFullTextIndexInfo:
 
     @tokenizer.setter
     def tokenizer(self, tokenizer):
-        """Sets the tokenizer of this LTSFullTextIndexInfo.
+        r"""Sets the tokenizer of this LTSFullTextIndexInfo.
 
         自定义分词符
 
@@ -155,7 +155,7 @@ class LTSFullTextIndexInfo:
 
     @property
     def ascii(self):
-        """Gets the ascii of this LTSFullTextIndexInfo.
+        r"""Gets the ascii of this LTSFullTextIndexInfo.
 
         特殊分词符
 
@@ -166,7 +166,7 @@ class LTSFullTextIndexInfo:
 
     @ascii.setter
     def ascii(self, ascii):
-        """Sets the ascii of this LTSFullTextIndexInfo.
+        r"""Sets the ascii of this LTSFullTextIndexInfo.
 
         特殊分词符
 

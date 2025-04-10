@@ -26,7 +26,7 @@ class UpdateReplicationJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateReplicationJobResponse
+        r"""UpdateReplicationJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateReplicationJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateReplicationJobResponse.
+        r"""Gets the body of this UpdateReplicationJobResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class UpdateReplicationJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateReplicationJobResponse.
+        r"""Sets the body of this UpdateReplicationJobResponse.
 
         空响应体。
 

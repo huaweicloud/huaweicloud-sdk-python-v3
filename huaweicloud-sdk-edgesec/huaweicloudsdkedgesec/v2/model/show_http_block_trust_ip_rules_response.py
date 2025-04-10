@@ -30,7 +30,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None, size=None):
-        """ShowHttpBlockTrustIpRulesResponse
+        r"""ShowHttpBlockTrustIpRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpBlockTrustIpRulesResponse.
+        r"""Gets the total of this ShowHttpBlockTrustIpRulesResponse.
 
         策略下防护规则数量
 
@@ -69,7 +69,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpBlockTrustIpRulesResponse.
+        r"""Sets the total of this ShowHttpBlockTrustIpRulesResponse.
 
         策略下防护规则数量
 
@@ -80,7 +80,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpBlockTrustIpRulesResponse.
+        r"""Gets the items of this ShowHttpBlockTrustIpRulesResponse.
 
         防护规则列表
 
@@ -91,7 +91,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpBlockTrustIpRulesResponse.
+        r"""Sets the items of this ShowHttpBlockTrustIpRulesResponse.
 
         防护规则列表
 
@@ -102,7 +102,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowHttpBlockTrustIpRulesResponse.
+        r"""Gets the size of this ShowHttpBlockTrustIpRulesResponse.
 
         防护规则下IP/IP段数量
 
@@ -113,7 +113,7 @@ class ShowHttpBlockTrustIpRulesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowHttpBlockTrustIpRulesResponse.
+        r"""Sets the size of this ShowHttpBlockTrustIpRulesResponse.
 
         防护规则下IP/IP段数量
 

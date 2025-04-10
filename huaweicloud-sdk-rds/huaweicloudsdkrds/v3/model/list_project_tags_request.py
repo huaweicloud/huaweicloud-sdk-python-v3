@@ -25,7 +25,7 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListProjectTagsRequest
+        r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListProjectTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListProjectTagsRequest.
+        r"""Gets the x_language of this ListProjectTagsRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ListProjectTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListProjectTagsRequest.
+        r"""Sets the x_language of this ListProjectTagsRequest.
 
         语言
 

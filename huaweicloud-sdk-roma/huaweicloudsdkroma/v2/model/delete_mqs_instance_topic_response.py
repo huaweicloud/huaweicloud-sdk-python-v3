@@ -26,7 +26,7 @@ class DeleteMqsInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self, topics=None):
-        """DeleteMqsInstanceTopicResponse
+        r"""DeleteMqsInstanceTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMqsInstanceTopicResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this DeleteMqsInstanceTopicResponse.
+        r"""Gets the topics of this DeleteMqsInstanceTopicResponse.
 
         Topic列表。
 
@@ -55,7 +55,7 @@ class DeleteMqsInstanceTopicResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this DeleteMqsInstanceTopicResponse.
+        r"""Sets the topics of this DeleteMqsInstanceTopicResponse.
 
         Topic列表。
 

@@ -31,7 +31,7 @@ class Result:
     }
 
     def __init__(self, message=None, row_count=None, rows=None, schema=None):
-        """Result
+        r"""Result
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Result:
 
     @property
     def message(self):
-        """Gets the message of this Result.
+        r"""Gets the message of this Result.
 
         :return: The message of this Result.
         :rtype: str
@@ -73,7 +73,7 @@ class Result:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Result.
+        r"""Sets the message of this Result.
 
         :param message: The message of this Result.
         :type message: str
@@ -82,7 +82,7 @@ class Result:
 
     @property
     def row_count(self):
-        """Gets the row_count of this Result.
+        r"""Gets the row_count of this Result.
 
         :return: The row_count of this Result.
         :rtype: int
@@ -91,7 +91,7 @@ class Result:
 
     @row_count.setter
     def row_count(self, row_count):
-        """Sets the row_count of this Result.
+        r"""Sets the row_count of this Result.
 
         :param row_count: The row_count of this Result.
         :type row_count: int
@@ -100,7 +100,7 @@ class Result:
 
     @property
     def rows(self):
-        """Gets the rows of this Result.
+        r"""Gets the rows of this Result.
 
         :return: The rows of this Result.
         :rtype: str
@@ -109,7 +109,7 @@ class Result:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this Result.
+        r"""Sets the rows of this Result.
 
         :param rows: The rows of this Result.
         :type rows: str
@@ -118,7 +118,7 @@ class Result:
 
     @property
     def schema(self):
-        """Gets the schema of this Result.
+        r"""Gets the schema of this Result.
 
         :return: The schema of this Result.
         :rtype: str
@@ -127,7 +127,7 @@ class Result:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this Result.
+        r"""Sets the schema of this Result.
 
         :param schema: The schema of this Result.
         :type schema: str

@@ -28,7 +28,7 @@ class PublishImageResponse(SdkResponse):
     }
 
     def __init__(self, id=None, version=None):
-        """PublishImageResponse
+        r"""PublishImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class PublishImageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this PublishImageResponse.
+        r"""Gets the id of this PublishImageResponse.
 
         资产id
 
@@ -62,7 +62,7 @@ class PublishImageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublishImageResponse.
+        r"""Sets the id of this PublishImageResponse.
 
         资产id
 
@@ -73,7 +73,7 @@ class PublishImageResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this PublishImageResponse.
+        r"""Gets the version of this PublishImageResponse.
 
         资产版本
 
@@ -84,7 +84,7 @@ class PublishImageResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishImageResponse.
+        r"""Sets the version of this PublishImageResponse.
 
         资产版本
 

@@ -24,7 +24,7 @@ class CreateStreamResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateStreamResponse
+        r"""CreateStreamResponse
 
         The model defined in huaweicloud sdk
 

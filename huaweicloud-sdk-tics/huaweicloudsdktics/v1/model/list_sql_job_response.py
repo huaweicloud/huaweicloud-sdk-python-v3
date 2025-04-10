@@ -28,7 +28,7 @@ class ListSqlJobResponse(SdkResponse):
     }
 
     def __init__(self, lists=None, total=None):
-        """ListSqlJobResponse
+        r"""ListSqlJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSqlJobResponse(SdkResponse):
 
     @property
     def lists(self):
-        """Gets the lists of this ListSqlJobResponse.
+        r"""Gets the lists of this ListSqlJobResponse.
 
         实例集合
 
@@ -62,7 +62,7 @@ class ListSqlJobResponse(SdkResponse):
 
     @lists.setter
     def lists(self, lists):
-        """Sets the lists of this ListSqlJobResponse.
+        r"""Sets the lists of this ListSqlJobResponse.
 
         实例集合
 
@@ -73,7 +73,7 @@ class ListSqlJobResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSqlJobResponse.
+        r"""Gets the total of this ListSqlJobResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListSqlJobResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSqlJobResponse.
+        r"""Sets the total of this ListSqlJobResponse.
 
         总记录数
 

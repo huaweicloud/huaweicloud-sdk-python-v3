@@ -27,7 +27,7 @@ class CustomizedFieldsVOList:
     }
 
     def __init__(self, type=None, fields=None):
-        """CustomizedFieldsVOList
+        r"""CustomizedFieldsVOList
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CustomizedFieldsVOList:
 
     @property
     def type(self):
-        """Gets the type of this CustomizedFieldsVOList.
+        r"""Gets the type of this CustomizedFieldsVOList.
 
         自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
@@ -60,7 +60,7 @@ class CustomizedFieldsVOList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomizedFieldsVOList.
+        r"""Sets the type of this CustomizedFieldsVOList.
 
         自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
@@ -71,7 +71,7 @@ class CustomizedFieldsVOList:
 
     @property
     def fields(self):
-        """Gets the fields of this CustomizedFieldsVOList.
+        r"""Gets the fields of this CustomizedFieldsVOList.
 
         自定义项列表。
 
@@ -82,7 +82,7 @@ class CustomizedFieldsVOList:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this CustomizedFieldsVOList.
+        r"""Sets the fields of this CustomizedFieldsVOList.
 
         自定义项列表。
 

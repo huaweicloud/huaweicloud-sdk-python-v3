@@ -27,7 +27,7 @@ class ShowDetailsOfOrchestrationRequest:
     }
 
     def __init__(self, instance_id=None, orchestration_id=None):
-        """ShowDetailsOfOrchestrationRequest
+        r"""ShowDetailsOfOrchestrationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfOrchestrationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfOrchestrationRequest.
+        r"""Gets the instance_id of this ShowDetailsOfOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class ShowDetailsOfOrchestrationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfOrchestrationRequest.
+        r"""Sets the instance_id of this ShowDetailsOfOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class ShowDetailsOfOrchestrationRequest:
 
     @property
     def orchestration_id(self):
-        """Gets the orchestration_id of this ShowDetailsOfOrchestrationRequest.
+        r"""Gets the orchestration_id of this ShowDetailsOfOrchestrationRequest.
 
         编排规则编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfOrchestrationRequest:
 
     @orchestration_id.setter
     def orchestration_id(self, orchestration_id):
-        """Sets the orchestration_id of this ShowDetailsOfOrchestrationRequest.
+        r"""Sets the orchestration_id of this ShowDetailsOfOrchestrationRequest.
 
         编排规则编号
 

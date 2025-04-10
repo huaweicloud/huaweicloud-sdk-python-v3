@@ -25,7 +25,7 @@ class TagResourceReqBody:
     }
 
     def __init__(self, tags=None):
-        """TagResourceReqBody
+        r"""TagResourceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TagResourceReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this TagResourceReqBody.
+        r"""Gets the tags of this TagResourceReqBody.
 
         一个或多个标签键值对的列表。标签键必须存在，而不是空字符串。标签值必须存在，但可以是空字符串。
 
@@ -53,7 +53,7 @@ class TagResourceReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagResourceReqBody.
+        r"""Sets the tags of this TagResourceReqBody.
 
         一个或多个标签键值对的列表。标签键必须存在，而不是空字符串。标签值必须存在，但可以是空字符串。
 

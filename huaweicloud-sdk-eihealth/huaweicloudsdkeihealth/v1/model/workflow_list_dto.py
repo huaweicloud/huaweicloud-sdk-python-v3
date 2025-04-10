@@ -45,7 +45,7 @@ class WorkflowListDto:
     }
 
     def __init__(self, id=None, name=None, version=None, summary=None, description=None, labels=None, create_time=None, update_time=None, user_name=None, source_project_name=None, source_resource_id=None):
-        """WorkflowListDto
+        r"""WorkflowListDto
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class WorkflowListDto:
 
     @property
     def id(self):
-        """Gets the id of this WorkflowListDto.
+        r"""Gets the id of this WorkflowListDto.
 
         流程id
 
@@ -124,7 +124,7 @@ class WorkflowListDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkflowListDto.
+        r"""Sets the id of this WorkflowListDto.
 
         流程id
 
@@ -135,7 +135,7 @@ class WorkflowListDto:
 
     @property
     def name(self):
-        """Gets the name of this WorkflowListDto.
+        r"""Gets the name of this WorkflowListDto.
 
         流程名称
 
@@ -146,7 +146,7 @@ class WorkflowListDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkflowListDto.
+        r"""Sets the name of this WorkflowListDto.
 
         流程名称
 
@@ -157,7 +157,7 @@ class WorkflowListDto:
 
     @property
     def version(self):
-        """Gets the version of this WorkflowListDto.
+        r"""Gets the version of this WorkflowListDto.
 
         流程版本
 
@@ -168,7 +168,7 @@ class WorkflowListDto:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this WorkflowListDto.
+        r"""Sets the version of this WorkflowListDto.
 
         流程版本
 
@@ -179,7 +179,7 @@ class WorkflowListDto:
 
     @property
     def summary(self):
-        """Gets the summary of this WorkflowListDto.
+        r"""Gets the summary of this WorkflowListDto.
 
         简短描述信息
 
@@ -190,7 +190,7 @@ class WorkflowListDto:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this WorkflowListDto.
+        r"""Sets the summary of this WorkflowListDto.
 
         简短描述信息
 
@@ -201,7 +201,7 @@ class WorkflowListDto:
 
     @property
     def description(self):
-        """Gets the description of this WorkflowListDto.
+        r"""Gets the description of this WorkflowListDto.
 
         描述信息
 
@@ -212,7 +212,7 @@ class WorkflowListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkflowListDto.
+        r"""Sets the description of this WorkflowListDto.
 
         描述信息
 
@@ -223,7 +223,7 @@ class WorkflowListDto:
 
     @property
     def labels(self):
-        """Gets the labels of this WorkflowListDto.
+        r"""Gets the labels of this WorkflowListDto.
 
         流程标签
 
@@ -234,7 +234,7 @@ class WorkflowListDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this WorkflowListDto.
+        r"""Sets the labels of this WorkflowListDto.
 
         流程标签
 
@@ -245,7 +245,7 @@ class WorkflowListDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WorkflowListDto.
+        r"""Gets the create_time of this WorkflowListDto.
 
         创建流程时间
 
@@ -256,7 +256,7 @@ class WorkflowListDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WorkflowListDto.
+        r"""Sets the create_time of this WorkflowListDto.
 
         创建流程时间
 
@@ -267,7 +267,7 @@ class WorkflowListDto:
 
     @property
     def update_time(self):
-        """Gets the update_time of this WorkflowListDto.
+        r"""Gets the update_time of this WorkflowListDto.
 
         更新流程时间
 
@@ -278,7 +278,7 @@ class WorkflowListDto:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this WorkflowListDto.
+        r"""Sets the update_time of this WorkflowListDto.
 
         更新流程时间
 
@@ -289,7 +289,7 @@ class WorkflowListDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this WorkflowListDto.
+        r"""Gets the user_name of this WorkflowListDto.
 
         创建用户名称
 
@@ -300,7 +300,7 @@ class WorkflowListDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this WorkflowListDto.
+        r"""Sets the user_name of this WorkflowListDto.
 
         创建用户名称
 
@@ -311,7 +311,7 @@ class WorkflowListDto:
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this WorkflowListDto.
+        r"""Gets the source_project_name of this WorkflowListDto.
 
         源项目名称
 
@@ -322,7 +322,7 @@ class WorkflowListDto:
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this WorkflowListDto.
+        r"""Sets the source_project_name of this WorkflowListDto.
 
         源项目名称
 
@@ -333,7 +333,7 @@ class WorkflowListDto:
 
     @property
     def source_resource_id(self):
-        """Gets the source_resource_id of this WorkflowListDto.
+        r"""Gets the source_resource_id of this WorkflowListDto.
 
         源资源id
 
@@ -344,7 +344,7 @@ class WorkflowListDto:
 
     @source_resource_id.setter
     def source_resource_id(self, source_resource_id):
-        """Sets the source_resource_id of this WorkflowListDto.
+        r"""Sets the source_resource_id of this WorkflowListDto.
 
         源资源id
 

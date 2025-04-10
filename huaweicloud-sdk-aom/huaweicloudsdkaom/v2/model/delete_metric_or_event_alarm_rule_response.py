@@ -30,7 +30,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, resources=None):
-        """DeleteMetricOrEventAlarmRuleResponse
+        r"""DeleteMetricOrEventAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteMetricOrEventAlarmRuleResponse.
+        r"""Gets the error_code of this DeleteMetricOrEventAlarmRuleResponse.
 
         错误码。
 
@@ -69,7 +69,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteMetricOrEventAlarmRuleResponse.
+        r"""Sets the error_code of this DeleteMetricOrEventAlarmRuleResponse.
 
         错误码。
 
@@ -80,7 +80,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this DeleteMetricOrEventAlarmRuleResponse.
+        r"""Gets the error_message of this DeleteMetricOrEventAlarmRuleResponse.
 
         错误信息。
 
@@ -91,7 +91,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DeleteMetricOrEventAlarmRuleResponse.
+        r"""Sets the error_message of this DeleteMetricOrEventAlarmRuleResponse.
 
         错误信息。
 
@@ -102,7 +102,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this DeleteMetricOrEventAlarmRuleResponse.
+        r"""Gets the resources of this DeleteMetricOrEventAlarmRuleResponse.
 
         资源列表。
 
@@ -113,7 +113,7 @@ class DeleteMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this DeleteMetricOrEventAlarmRuleResponse.
+        r"""Sets the resources of this DeleteMetricOrEventAlarmRuleResponse.
 
         资源列表。
 

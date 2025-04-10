@@ -39,7 +39,7 @@ class ListStatisticsApiRequest:
     }
 
     def __init__(self, instance_id=None, mode=None, roma_app_id=None, api_id=None, cycle=None, start_time=None, end_time=None, duration=None):
-        """ListStatisticsApiRequest
+        r"""ListStatisticsApiRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListStatisticsApiRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStatisticsApiRequest.
+        r"""Gets the instance_id of this ListStatisticsApiRequest.
 
         实例ID
 
@@ -102,7 +102,7 @@ class ListStatisticsApiRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStatisticsApiRequest.
+        r"""Sets the instance_id of this ListStatisticsApiRequest.
 
         实例ID
 
@@ -113,7 +113,7 @@ class ListStatisticsApiRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this ListStatisticsApiRequest.
+        r"""Gets the mode of this ListStatisticsApiRequest.
 
         查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段  mode = INSTANCE时，若不填写api_id或roma_app_id，则要求主帐号权限才能调用成功
 
@@ -124,7 +124,7 @@ class ListStatisticsApiRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ListStatisticsApiRequest.
+        r"""Sets the mode of this ListStatisticsApiRequest.
 
         查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段  mode = INSTANCE时，若不填写api_id或roma_app_id，则要求主帐号权限才能调用成功
 
@@ -135,7 +135,7 @@ class ListStatisticsApiRequest:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ListStatisticsApiRequest.
+        r"""Gets the roma_app_id of this ListStatisticsApiRequest.
 
         集成应用编号，查询模式为APP时必填
 
@@ -146,7 +146,7 @@ class ListStatisticsApiRequest:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ListStatisticsApiRequest.
+        r"""Sets the roma_app_id of this ListStatisticsApiRequest.
 
         集成应用编号，查询模式为APP时必填
 
@@ -157,7 +157,7 @@ class ListStatisticsApiRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListStatisticsApiRequest.
+        r"""Gets the api_id of this ListStatisticsApiRequest.
 
         API编号，查询模式为API时必填
 
@@ -168,7 +168,7 @@ class ListStatisticsApiRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListStatisticsApiRequest.
+        r"""Sets the api_id of this ListStatisticsApiRequest.
 
         API编号，查询模式为API时必填
 
@@ -179,7 +179,7 @@ class ListStatisticsApiRequest:
 
     @property
     def cycle(self):
-        """Gets the cycle of this ListStatisticsApiRequest.
+        r"""Gets the cycle of this ListStatisticsApiRequest.
 
         查询统计周期 * minute：分钟 * hour：小时 * day：天  例如，cycle=hour，duration=2h是指查询范围两小时以内，一小时一次数据采样，采样到的数据值为一小时内的累计值。
 
@@ -190,7 +190,7 @@ class ListStatisticsApiRequest:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this ListStatisticsApiRequest.
+        r"""Sets the cycle of this ListStatisticsApiRequest.
 
         查询统计周期 * minute：分钟 * hour：小时 * day：天  例如，cycle=hour，duration=2h是指查询范围两小时以内，一小时一次数据采样，采样到的数据值为一小时内的累计值。
 
@@ -201,7 +201,7 @@ class ListStatisticsApiRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListStatisticsApiRequest.
+        r"""Gets the start_time of this ListStatisticsApiRequest.
 
         开始时间，格式：2020-06-18 10:00:01
 
@@ -212,7 +212,7 @@ class ListStatisticsApiRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListStatisticsApiRequest.
+        r"""Sets the start_time of this ListStatisticsApiRequest.
 
         开始时间，格式：2020-06-18 10:00:01
 
@@ -223,7 +223,7 @@ class ListStatisticsApiRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListStatisticsApiRequest.
+        r"""Gets the end_time of this ListStatisticsApiRequest.
 
         结束时间，格式：2020-06-18 23:00:00
 
@@ -234,7 +234,7 @@ class ListStatisticsApiRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListStatisticsApiRequest.
+        r"""Sets the end_time of this ListStatisticsApiRequest.
 
         结束时间，格式：2020-06-18 23:00:00
 
@@ -245,7 +245,7 @@ class ListStatisticsApiRequest:
 
     @property
     def duration(self):
-        """Gets the duration of this ListStatisticsApiRequest.
+        r"""Gets the duration of this ListStatisticsApiRequest.
 
         统计时长格式：整数+单位（m、h），m：分钟，h：小时，可支持小时与分钟的组合。例如：1h或2h45m * 同时给定start_time和end_time优先查询[start_time, end_time] * start_time不存在，end_time和duration存在且合法，则查询区间为[end_time - duration, end_time] * start_time和end_time不存在，duration存在且合法，令end_time=now，则查询区间为[end_time - duration, end_time] * start_time，end_time和duration都不存在，报错missing time range parameters。 * duration最长查询范围：小时最长支持72小时，分钟最长支持90分钟。
 
@@ -256,7 +256,7 @@ class ListStatisticsApiRequest:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ListStatisticsApiRequest.
+        r"""Sets the duration of this ListStatisticsApiRequest.
 
         统计时长格式：整数+单位（m、h），m：分钟，h：小时，可支持小时与分钟的组合。例如：1h或2h45m * 同时给定start_time和end_time优先查询[start_time, end_time] * start_time不存在，end_time和duration存在且合法，则查询区间为[end_time - duration, end_time] * start_time和end_time不存在，duration存在且合法，令end_time=now，则查询区间为[end_time - duration, end_time] * start_time，end_time和duration都不存在，报错missing time range parameters。 * duration最长查询范围：小时最长支持72小时，分钟最长支持90分钟。
 

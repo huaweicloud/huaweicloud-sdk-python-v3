@@ -28,7 +28,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, retention_days=None):
-        """ShowSqlSwitchStatusResponse
+        r"""ShowSqlSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSqlSwitchStatusResponse.
+        r"""Gets the status of this ShowSqlSwitchStatusResponse.
 
         开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
 
@@ -62,7 +62,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSqlSwitchStatusResponse.
+        r"""Sets the status of this ShowSqlSwitchStatusResponse.
 
         开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
 
@@ -73,7 +73,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
 
     @property
     def retention_days(self):
-        """Gets the retention_days of this ShowSqlSwitchStatusResponse.
+        r"""Gets the retention_days of this ShowSqlSwitchStatusResponse.
 
         SQL数据保存天数。
 
@@ -84,7 +84,7 @@ class ShowSqlSwitchStatusResponse(SdkResponse):
 
     @retention_days.setter
     def retention_days(self, retention_days):
-        """Sets the retention_days of this ShowSqlSwitchStatusResponse.
+        r"""Sets the retention_days of this ShowSqlSwitchStatusResponse.
 
         SQL数据保存天数。
 

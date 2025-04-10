@@ -27,7 +27,7 @@ class SearchApplicationRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """SearchApplicationRequest
+        r"""SearchApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SearchApplicationRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this SearchApplicationRequest.
+        r"""Gets the x_business_id of this SearchApplicationRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class SearchApplicationRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this SearchApplicationRequest.
+        r"""Sets the x_business_id of this SearchApplicationRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class SearchApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchApplicationRequest.
+        r"""Gets the body of this SearchApplicationRequest.
 
         :return: The body of this SearchApplicationRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.AppSearchParam`
@@ -80,7 +80,7 @@ class SearchApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchApplicationRequest.
+        r"""Sets the body of this SearchApplicationRequest.
 
         :param body: The body of this SearchApplicationRequest.
         :type body: :class:`huaweicloudsdkapm.v1.AppSearchParam`

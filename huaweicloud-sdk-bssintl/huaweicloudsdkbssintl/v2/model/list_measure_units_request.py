@@ -25,7 +25,7 @@ class ListMeasureUnitsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListMeasureUnitsRequest
+        r"""ListMeasureUnitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListMeasureUnitsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListMeasureUnitsRequest.
+        r"""Gets the x_language of this ListMeasureUnitsRequest.
 
         语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
@@ -54,7 +54,7 @@ class ListMeasureUnitsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListMeasureUnitsRequest.
+        r"""Sets the x_language of this ListMeasureUnitsRequest.
 
         语言。zh_CN：中文en_US：英文缺省为zh_CN。
 

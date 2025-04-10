@@ -27,7 +27,7 @@ class AclPolicyResult:
     }
 
     def __init__(self, allow_address_netmasks=None, allow_ip_ranges=None):
-        """AclPolicyResult
+        r"""AclPolicyResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AclPolicyResult:
 
     @property
     def allow_address_netmasks(self):
-        """Gets the allow_address_netmasks of this AclPolicyResult.
+        r"""Gets the allow_address_netmasks of this AclPolicyResult.
 
         允许访问的IP地址或网段。
 
@@ -61,7 +61,7 @@ class AclPolicyResult:
 
     @allow_address_netmasks.setter
     def allow_address_netmasks(self, allow_address_netmasks):
-        """Sets the allow_address_netmasks of this AclPolicyResult.
+        r"""Sets the allow_address_netmasks of this AclPolicyResult.
 
         允许访问的IP地址或网段。
 
@@ -72,7 +72,7 @@ class AclPolicyResult:
 
     @property
     def allow_ip_ranges(self):
-        """Gets the allow_ip_ranges of this AclPolicyResult.
+        r"""Gets the allow_ip_ranges of this AclPolicyResult.
 
         允许访问的IP地址区间。
 
@@ -83,7 +83,7 @@ class AclPolicyResult:
 
     @allow_ip_ranges.setter
     def allow_ip_ranges(self, allow_ip_ranges):
-        """Sets the allow_ip_ranges of this AclPolicyResult.
+        r"""Sets the allow_ip_ranges of this AclPolicyResult.
 
         允许访问的IP地址区间。
 

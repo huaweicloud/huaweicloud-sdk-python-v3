@@ -25,7 +25,7 @@ class PathRule:
     }
 
     def __init__(self, path=None):
-        """PathRule
+        r"""PathRule
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PathRule:
 
     @property
     def path(self):
-        """Gets the path of this PathRule.
+        r"""Gets the path of this PathRule.
 
         完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。 3. 为空或者*号表示任意匹配。
 
@@ -54,7 +54,7 @@ class PathRule:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PathRule.
+        r"""Sets the path of this PathRule.
 
         完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。 3. 为空或者*号表示任意匹配。
 

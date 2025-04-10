@@ -27,7 +27,7 @@ class ListEnvMonitorItemRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ListEnvMonitorItemRequest
+        r"""ListEnvMonitorItemRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEnvMonitorItemRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ListEnvMonitorItemRequest.
+        r"""Gets the x_business_id of this ListEnvMonitorItemRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ListEnvMonitorItemRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ListEnvMonitorItemRequest.
+        r"""Sets the x_business_id of this ListEnvMonitorItemRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ListEnvMonitorItemRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListEnvMonitorItemRequest.
+        r"""Gets the body of this ListEnvMonitorItemRequest.
 
         :return: The body of this ListEnvMonitorItemRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.GetEnvMonitorItemListParam`
@@ -80,7 +80,7 @@ class ListEnvMonitorItemRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEnvMonitorItemRequest.
+        r"""Sets the body of this ListEnvMonitorItemRequest.
 
         :param body: The body of this ListEnvMonitorItemRequest.
         :type body: :class:`huaweicloudsdkapm.v1.GetEnvMonitorItemListParam`

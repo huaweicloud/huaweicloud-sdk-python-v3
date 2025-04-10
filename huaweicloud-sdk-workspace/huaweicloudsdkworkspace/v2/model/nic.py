@@ -27,7 +27,7 @@ class Nic:
     }
 
     def __init__(self, subnet_id=None, ip_address=None):
-        """Nic
+        r"""Nic
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Nic:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Nic.
+        r"""Gets the subnet_id of this Nic.
 
         网卡对应的子网ID。
 
@@ -60,7 +60,7 @@ class Nic:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Nic.
+        r"""Sets the subnet_id of this Nic.
 
         网卡对应的子网ID。
 
@@ -71,7 +71,7 @@ class Nic:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this Nic.
+        r"""Gets the ip_address of this Nic.
 
         IP地址，不填或空字符串将自动分配。
 
@@ -82,7 +82,7 @@ class Nic:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this Nic.
+        r"""Sets the ip_address of this Nic.
 
         IP地址，不填或空字符串将自动分配。
 

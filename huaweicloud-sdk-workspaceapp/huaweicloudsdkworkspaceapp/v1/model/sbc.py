@@ -27,7 +27,7 @@ class Sbc:
     }
 
     def __init__(self, sbc_automatic_disconnection=None, sbc_automatic_disconnection_options=None):
-        """Sbc
+        r"""Sbc
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Sbc:
 
     @property
     def sbc_automatic_disconnection(self):
-        """Gets the sbc_automatic_disconnection of this Sbc.
+        r"""Gets the sbc_automatic_disconnection of this Sbc.
 
         连接策略： - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
 
@@ -61,7 +61,7 @@ class Sbc:
 
     @sbc_automatic_disconnection.setter
     def sbc_automatic_disconnection(self, sbc_automatic_disconnection):
-        """Sets the sbc_automatic_disconnection of this Sbc.
+        r"""Sets the sbc_automatic_disconnection of this Sbc.
 
         连接策略： - DISABLED：已禁用 - AUTO_DISCONNECT：自动断开 - AUTO_LOCK：自动锁屏
 
@@ -72,7 +72,7 @@ class Sbc:
 
     @property
     def sbc_automatic_disconnection_options(self):
-        """Gets the sbc_automatic_disconnection_options of this Sbc.
+        r"""Gets the sbc_automatic_disconnection_options of this Sbc.
 
         :return: The sbc_automatic_disconnection_options of this Sbc.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SbcAutomaticDisconnectionOptions`
@@ -81,7 +81,7 @@ class Sbc:
 
     @sbc_automatic_disconnection_options.setter
     def sbc_automatic_disconnection_options(self, sbc_automatic_disconnection_options):
-        """Sets the sbc_automatic_disconnection_options of this Sbc.
+        r"""Sets the sbc_automatic_disconnection_options of this Sbc.
 
         :param sbc_automatic_disconnection_options: The sbc_automatic_disconnection_options of this Sbc.
         :type sbc_automatic_disconnection_options: :class:`huaweicloudsdkworkspaceapp.v1.SbcAutomaticDisconnectionOptions`

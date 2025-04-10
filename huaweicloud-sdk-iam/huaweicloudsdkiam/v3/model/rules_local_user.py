@@ -25,7 +25,7 @@ class RulesLocalUser:
     }
 
     def __init__(self, name=None):
-        """RulesLocalUser
+        r"""RulesLocalUser
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RulesLocalUser:
 
     @property
     def name(self):
-        """Gets the name of this RulesLocalUser.
+        r"""Gets the name of this RulesLocalUser.
 
         联邦用户在本系统中的用户名称
 
@@ -53,7 +53,7 @@ class RulesLocalUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RulesLocalUser.
+        r"""Sets the name of this RulesLocalUser.
 
         联邦用户在本系统中的用户名称
 

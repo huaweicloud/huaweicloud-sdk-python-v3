@@ -33,7 +33,7 @@ class SmsDetailResponse:
     }
 
     def __init__(self, to=None, channel_num=None, msg_id=None, send_status=None, create_time=None):
-        """SmsDetailResponse
+        r"""SmsDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class SmsDetailResponse:
 
     @property
     def to(self):
-        """Gets the to of this SmsDetailResponse.
+        r"""Gets the to of this SmsDetailResponse.
 
         短信接收方的号码。
 
@@ -77,7 +77,7 @@ class SmsDetailResponse:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this SmsDetailResponse.
+        r"""Sets the to of this SmsDetailResponse.
 
         短信接收方的号码。
 
@@ -88,7 +88,7 @@ class SmsDetailResponse:
 
     @property
     def channel_num(self):
-        """Gets the channel_num of this SmsDetailResponse.
+        r"""Gets the channel_num of this SmsDetailResponse.
 
         短信发送方的号码。
 
@@ -99,7 +99,7 @@ class SmsDetailResponse:
 
     @channel_num.setter
     def channel_num(self, channel_num):
-        """Sets the channel_num of this SmsDetailResponse.
+        r"""Sets the channel_num of this SmsDetailResponse.
 
         短信发送方的号码。
 
@@ -110,7 +110,7 @@ class SmsDetailResponse:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this SmsDetailResponse.
+        r"""Gets the msg_id of this SmsDetailResponse.
 
         短信的唯一标识。
 
@@ -121,7 +121,7 @@ class SmsDetailResponse:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this SmsDetailResponse.
+        r"""Sets the msg_id of this SmsDetailResponse.
 
         短信的唯一标识。
 
@@ -132,7 +132,7 @@ class SmsDetailResponse:
 
     @property
     def send_status(self):
-        """Gets the send_status of this SmsDetailResponse.
+        r"""Gets the send_status of this SmsDetailResponse.
 
         短信状态码。  以下举例状态码及其说明，具体处理建议请参考[API错误码](https://support.huaweicloud.com/api-msgsms/sms_05_0050.html)。  - 000000：短信平台处理请求成功 - E200015：待发送短信数量太大 - E200028：模板变量校验失败 - E200029：模板类型校验失败 - E200030：模板未激活 - E200031：协议校验失败 - E200033：模板类型不正确 - E200041：同一短信内容接收号码重复
 
@@ -143,7 +143,7 @@ class SmsDetailResponse:
 
     @send_status.setter
     def send_status(self, send_status):
-        """Sets the send_status of this SmsDetailResponse.
+        r"""Sets the send_status of this SmsDetailResponse.
 
         短信状态码。  以下举例状态码及其说明，具体处理建议请参考[API错误码](https://support.huaweicloud.com/api-msgsms/sms_05_0050.html)。  - 000000：短信平台处理请求成功 - E200015：待发送短信数量太大 - E200028：模板变量校验失败 - E200029：模板类型校验失败 - E200030：模板未激活 - E200031：协议校验失败 - E200033：模板类型不正确 - E200041：同一短信内容接收号码重复
 
@@ -154,7 +154,7 @@ class SmsDetailResponse:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsDetailResponse.
+        r"""Gets the create_time of this SmsDetailResponse.
 
         短信资源的创建时间。  即短信平台接收到用户发送短信请求的时间，为UTC时间。 格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -165,7 +165,7 @@ class SmsDetailResponse:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsDetailResponse.
+        r"""Sets the create_time of this SmsDetailResponse.
 
         短信资源的创建时间。  即短信平台接收到用户发送短信请求的时间，为UTC时间。 格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 

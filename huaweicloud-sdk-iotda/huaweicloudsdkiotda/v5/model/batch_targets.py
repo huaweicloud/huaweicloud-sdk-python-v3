@@ -25,7 +25,7 @@ class BatchTargets:
     }
 
     def __init__(self, targets=None):
-        """BatchTargets
+        r"""BatchTargets
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchTargets:
 
     @property
     def targets(self):
-        """Gets the targets of this BatchTargets.
+        r"""Gets the targets of this BatchTargets.
 
         执行批量任务的目标集合，最多支持100个目标，当task_type为firmwareUpgrade，softwareUpgrade时，此处填写device_id
 
@@ -54,7 +54,7 @@ class BatchTargets:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this BatchTargets.
+        r"""Sets the targets of this BatchTargets.
 
         执行批量任务的目标集合，最多支持100个目标，当task_type为firmwareUpgrade，softwareUpgrade时，此处填写device_id
 

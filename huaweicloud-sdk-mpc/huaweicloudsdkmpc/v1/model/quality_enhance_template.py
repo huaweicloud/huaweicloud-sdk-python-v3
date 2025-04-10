@@ -29,7 +29,7 @@ class QualityEnhanceTemplate:
     }
 
     def __init__(self, template_name=None, template_description=None, video=None):
-        """QualityEnhanceTemplate
+        r"""QualityEnhanceTemplate
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class QualityEnhanceTemplate:
 
     @property
     def template_name(self):
-        """Gets the template_name of this QualityEnhanceTemplate.
+        r"""Gets the template_name of this QualityEnhanceTemplate.
 
         模板名称。 
 
@@ -67,7 +67,7 @@ class QualityEnhanceTemplate:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this QualityEnhanceTemplate.
+        r"""Sets the template_name of this QualityEnhanceTemplate.
 
         模板名称。 
 
@@ -78,7 +78,7 @@ class QualityEnhanceTemplate:
 
     @property
     def template_description(self):
-        """Gets the template_description of this QualityEnhanceTemplate.
+        r"""Gets the template_description of this QualityEnhanceTemplate.
 
         模板描述，查询预置模板时才会返回。 
 
@@ -89,7 +89,7 @@ class QualityEnhanceTemplate:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this QualityEnhanceTemplate.
+        r"""Sets the template_description of this QualityEnhanceTemplate.
 
         模板描述，查询预置模板时才会返回。 
 
@@ -100,7 +100,7 @@ class QualityEnhanceTemplate:
 
     @property
     def video(self):
-        """Gets the video of this QualityEnhanceTemplate.
+        r"""Gets the video of this QualityEnhanceTemplate.
 
         :return: The video of this QualityEnhanceTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`
@@ -109,7 +109,7 @@ class QualityEnhanceTemplate:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this QualityEnhanceTemplate.
+        r"""Sets the video of this QualityEnhanceTemplate.
 
         :param video: The video of this QualityEnhanceTemplate.
         :type video: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`

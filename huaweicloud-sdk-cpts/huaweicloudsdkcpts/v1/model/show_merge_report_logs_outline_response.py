@@ -32,7 +32,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """ShowMergeReportLogsOutlineResponse
+        r"""ShowMergeReportLogsOutlineResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMergeReportLogsOutlineResponse.
+        r"""Gets the code of this ShowMergeReportLogsOutlineResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMergeReportLogsOutlineResponse.
+        r"""Sets the code of this ShowMergeReportLogsOutlineResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMergeReportLogsOutlineResponse.
+        r"""Gets the message of this ShowMergeReportLogsOutlineResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMergeReportLogsOutlineResponse.
+        r"""Sets the message of this ShowMergeReportLogsOutlineResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowMergeReportLogsOutlineResponse.
+        r"""Gets the extend of this ShowMergeReportLogsOutlineResponse.
 
         扩展字段
 
@@ -120,7 +120,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowMergeReportLogsOutlineResponse.
+        r"""Sets the extend of this ShowMergeReportLogsOutlineResponse.
 
         扩展字段
 
@@ -131,7 +131,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowMergeReportLogsOutlineResponse.
+        r"""Gets the result of this ShowMergeReportLogsOutlineResponse.
 
         :return: The result of this ShowMergeReportLogsOutlineResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportOutlineResult`
@@ -140,7 +140,7 @@ class ShowMergeReportLogsOutlineResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowMergeReportLogsOutlineResponse.
+        r"""Sets the result of this ShowMergeReportLogsOutlineResponse.
 
         :param result: The result of this ShowMergeReportLogsOutlineResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.ReportOutlineResult`

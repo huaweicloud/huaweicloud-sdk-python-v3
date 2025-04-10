@@ -47,7 +47,7 @@ class CodeTableFieldVO:
     }
 
     def __init__(self, id=None, code_table_id=None, ordinal=None, name_en=None, name_ch=None, description=None, data_type=None, domain_type=None, data_type_extend=None, is_unique_key=None, code_table_field_values=None, count_field_values=None):
-        """CodeTableFieldVO
+        r"""CodeTableFieldVO
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class CodeTableFieldVO:
 
     @property
     def id(self):
-        """Gets the id of this CodeTableFieldVO.
+        r"""Gets the id of this CodeTableFieldVO.
 
         码表字段ID，ID字符串。
 
@@ -127,7 +127,7 @@ class CodeTableFieldVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CodeTableFieldVO.
+        r"""Sets the id of this CodeTableFieldVO.
 
         码表字段ID，ID字符串。
 
@@ -138,7 +138,7 @@ class CodeTableFieldVO:
 
     @property
     def code_table_id(self):
-        """Gets the code_table_id of this CodeTableFieldVO.
+        r"""Gets the code_table_id of this CodeTableFieldVO.
 
         所属码表ID，ID字符串。
 
@@ -149,7 +149,7 @@ class CodeTableFieldVO:
 
     @code_table_id.setter
     def code_table_id(self, code_table_id):
-        """Sets the code_table_id of this CodeTableFieldVO.
+        r"""Sets the code_table_id of this CodeTableFieldVO.
 
         所属码表ID，ID字符串。
 
@@ -160,7 +160,7 @@ class CodeTableFieldVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this CodeTableFieldVO.
+        r"""Gets the ordinal of this CodeTableFieldVO.
 
         序号。
 
@@ -171,7 +171,7 @@ class CodeTableFieldVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this CodeTableFieldVO.
+        r"""Sets the ordinal of this CodeTableFieldVO.
 
         序号。
 
@@ -182,7 +182,7 @@ class CodeTableFieldVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CodeTableFieldVO.
+        r"""Gets the name_en of this CodeTableFieldVO.
 
         字段名，英文。
 
@@ -193,7 +193,7 @@ class CodeTableFieldVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CodeTableFieldVO.
+        r"""Sets the name_en of this CodeTableFieldVO.
 
         字段名，英文。
 
@@ -204,7 +204,7 @@ class CodeTableFieldVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this CodeTableFieldVO.
+        r"""Gets the name_ch of this CodeTableFieldVO.
 
         字段名，中文。
 
@@ -215,7 +215,7 @@ class CodeTableFieldVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this CodeTableFieldVO.
+        r"""Sets the name_ch of this CodeTableFieldVO.
 
         字段名，中文。
 
@@ -226,7 +226,7 @@ class CodeTableFieldVO:
 
     @property
     def description(self):
-        """Gets the description of this CodeTableFieldVO.
+        r"""Gets the description of this CodeTableFieldVO.
 
         描述。
 
@@ -237,7 +237,7 @@ class CodeTableFieldVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CodeTableFieldVO.
+        r"""Sets the description of this CodeTableFieldVO.
 
         描述。
 
@@ -248,7 +248,7 @@ class CodeTableFieldVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CodeTableFieldVO.
+        r"""Gets the data_type of this CodeTableFieldVO.
 
         字段类型。
 
@@ -259,7 +259,7 @@ class CodeTableFieldVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CodeTableFieldVO.
+        r"""Sets the data_type of this CodeTableFieldVO.
 
         字段类型。
 
@@ -270,7 +270,7 @@ class CodeTableFieldVO:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this CodeTableFieldVO.
+        r"""Gets the domain_type of this CodeTableFieldVO.
 
         :return: The domain_type of this CodeTableFieldVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -279,7 +279,7 @@ class CodeTableFieldVO:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this CodeTableFieldVO.
+        r"""Sets the domain_type of this CodeTableFieldVO.
 
         :param domain_type: The domain_type of this CodeTableFieldVO.
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -288,7 +288,7 @@ class CodeTableFieldVO:
 
     @property
     def data_type_extend(self):
-        """Gets the data_type_extend of this CodeTableFieldVO.
+        r"""Gets the data_type_extend of this CodeTableFieldVO.
 
         数据类型扩展字段。
 
@@ -299,7 +299,7 @@ class CodeTableFieldVO:
 
     @data_type_extend.setter
     def data_type_extend(self, data_type_extend):
-        """Sets the data_type_extend of this CodeTableFieldVO.
+        r"""Sets the data_type_extend of this CodeTableFieldVO.
 
         数据类型扩展字段。
 
@@ -310,7 +310,7 @@ class CodeTableFieldVO:
 
     @property
     def is_unique_key(self):
-        """Gets the is_unique_key of this CodeTableFieldVO.
+        r"""Gets the is_unique_key of this CodeTableFieldVO.
 
         是否唯一。
 
@@ -321,7 +321,7 @@ class CodeTableFieldVO:
 
     @is_unique_key.setter
     def is_unique_key(self, is_unique_key):
-        """Sets the is_unique_key of this CodeTableFieldVO.
+        r"""Sets the is_unique_key of this CodeTableFieldVO.
 
         是否唯一。
 
@@ -332,7 +332,7 @@ class CodeTableFieldVO:
 
     @property
     def code_table_field_values(self):
-        """Gets the code_table_field_values of this CodeTableFieldVO.
+        r"""Gets the code_table_field_values of this CodeTableFieldVO.
 
         码表属性值。
 
@@ -343,7 +343,7 @@ class CodeTableFieldVO:
 
     @code_table_field_values.setter
     def code_table_field_values(self, code_table_field_values):
-        """Sets the code_table_field_values of this CodeTableFieldVO.
+        r"""Sets the code_table_field_values of this CodeTableFieldVO.
 
         码表属性值。
 
@@ -354,7 +354,7 @@ class CodeTableFieldVO:
 
     @property
     def count_field_values(self):
-        """Gets the count_field_values of this CodeTableFieldVO.
+        r"""Gets the count_field_values of this CodeTableFieldVO.
 
         码表属性值总数。
 
@@ -365,7 +365,7 @@ class CodeTableFieldVO:
 
     @count_field_values.setter
     def count_field_values(self, count_field_values):
-        """Sets the count_field_values of this CodeTableFieldVO.
+        r"""Sets the count_field_values of this CodeTableFieldVO.
 
         码表属性值总数。
 

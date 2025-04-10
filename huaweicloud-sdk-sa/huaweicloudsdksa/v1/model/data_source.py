@@ -37,7 +37,7 @@ class DataSource:
     }
 
     def __init__(self, type=None, domain_id=None, project_id=None, region_id=None, company_name=None, product_name=None, product_feature=None):
-        """DataSource
+        r"""DataSource
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class DataSource:
 
     @property
     def type(self):
-        """Gets the type of this DataSource.
+        r"""Gets the type of this DataSource.
 
         数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
@@ -94,7 +94,7 @@ class DataSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataSource.
+        r"""Sets the type of this DataSource.
 
         数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
@@ -105,7 +105,7 @@ class DataSource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DataSource.
+        r"""Gets the domain_id of this DataSource.
 
         数据源产品所属管理账号的ID，最大36个字符。
 
@@ -116,7 +116,7 @@ class DataSource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DataSource.
+        r"""Sets the domain_id of this DataSource.
 
         数据源产品所属管理账号的ID，最大36个字符。
 
@@ -127,7 +127,7 @@ class DataSource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataSource.
+        r"""Gets the project_id of this DataSource.
 
         数据源产品所属项目的ID，最大36个字符。
 
@@ -138,7 +138,7 @@ class DataSource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataSource.
+        r"""Sets the project_id of this DataSource.
 
         数据源产品所属项目的ID，最大36个字符。
 
@@ -149,7 +149,7 @@ class DataSource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DataSource.
+        r"""Gets the region_id of this DataSource.
 
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
 
@@ -160,7 +160,7 @@ class DataSource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DataSource.
+        r"""Sets the region_id of this DataSource.
 
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
 
@@ -171,7 +171,7 @@ class DataSource:
 
     @property
     def company_name(self):
-        """Gets the company_name of this DataSource.
+        r"""Gets the company_name of this DataSource.
 
         数据源产品所属公司的名称。
 
@@ -182,7 +182,7 @@ class DataSource:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this DataSource.
+        r"""Sets the company_name of this DataSource.
 
         数据源产品所属公司的名称。
 
@@ -193,7 +193,7 @@ class DataSource:
 
     @property
     def product_name(self):
-        """Gets the product_name of this DataSource.
+        r"""Gets the product_name of this DataSource.
 
         数据源产品的名称。
 
@@ -204,7 +204,7 @@ class DataSource:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this DataSource.
+        r"""Sets the product_name of this DataSource.
 
         数据源产品的名称。
 
@@ -215,7 +215,7 @@ class DataSource:
 
     @property
     def product_feature(self):
-        """Gets the product_feature of this DataSource.
+        r"""Gets the product_feature of this DataSource.
 
         产品功能特性名称，用来指明检测到当前事件的产品的功能特性。
 
@@ -226,7 +226,7 @@ class DataSource:
 
     @product_feature.setter
     def product_feature(self, product_feature):
-        """Sets the product_feature of this DataSource.
+        r"""Sets the product_feature of this DataSource.
 
         产品功能特性名称，用来指明检测到当前事件的产品的功能特性。
 

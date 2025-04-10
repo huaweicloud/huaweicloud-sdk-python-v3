@@ -29,7 +29,7 @@ class InstallKernelPluginRequestBody:
     }
 
     def __init__(self, plugin_name=None, url=None, sha_256=None):
-        """InstallKernelPluginRequestBody
+        r"""InstallKernelPluginRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class InstallKernelPluginRequestBody:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this InstallKernelPluginRequestBody.
+        r"""Gets the plugin_name of this InstallKernelPluginRequestBody.
 
         插件名称
 
@@ -65,7 +65,7 @@ class InstallKernelPluginRequestBody:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this InstallKernelPluginRequestBody.
+        r"""Sets the plugin_name of this InstallKernelPluginRequestBody.
 
         插件名称
 
@@ -76,7 +76,7 @@ class InstallKernelPluginRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this InstallKernelPluginRequestBody.
+        r"""Gets the url of this InstallKernelPluginRequestBody.
 
         插件安装包链接
 
@@ -87,7 +87,7 @@ class InstallKernelPluginRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this InstallKernelPluginRequestBody.
+        r"""Sets the url of this InstallKernelPluginRequestBody.
 
         插件安装包链接
 
@@ -98,7 +98,7 @@ class InstallKernelPluginRequestBody:
 
     @property
     def sha_256(self):
-        """Gets the sha_256 of this InstallKernelPluginRequestBody.
+        r"""Gets the sha_256 of this InstallKernelPluginRequestBody.
 
         插件安装包的sha256值
 
@@ -109,7 +109,7 @@ class InstallKernelPluginRequestBody:
 
     @sha_256.setter
     def sha_256(self, sha_256):
-        """Sets the sha_256 of this InstallKernelPluginRequestBody.
+        r"""Sets the sha_256 of this InstallKernelPluginRequestBody.
 
         插件安装包的sha256值
 

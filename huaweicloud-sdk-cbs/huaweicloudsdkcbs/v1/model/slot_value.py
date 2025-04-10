@@ -31,7 +31,7 @@ class SlotValue:
     }
 
     def __init__(self, word=None, norm_word=None, begin_position=None, end_position=None):
-        """SlotValue
+        r"""SlotValue
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SlotValue:
 
     @property
     def word(self):
-        """Gets the word of this SlotValue.
+        r"""Gets the word of this SlotValue.
 
         词。
 
@@ -71,7 +71,7 @@ class SlotValue:
 
     @word.setter
     def word(self, word):
-        """Sets the word of this SlotValue.
+        r"""Sets the word of this SlotValue.
 
         词。
 
@@ -82,7 +82,7 @@ class SlotValue:
 
     @property
     def norm_word(self):
-        """Gets the norm_word of this SlotValue.
+        r"""Gets the norm_word of this SlotValue.
 
         归一化后的标准词。
 
@@ -93,7 +93,7 @@ class SlotValue:
 
     @norm_word.setter
     def norm_word(self, norm_word):
-        """Sets the norm_word of this SlotValue.
+        r"""Sets the norm_word of this SlotValue.
 
         归一化后的标准词。
 
@@ -104,7 +104,7 @@ class SlotValue:
 
     @property
     def begin_position(self):
-        """Gets the begin_position of this SlotValue.
+        r"""Gets the begin_position of this SlotValue.
 
         词的起始位置。
 
@@ -115,7 +115,7 @@ class SlotValue:
 
     @begin_position.setter
     def begin_position(self, begin_position):
-        """Sets the begin_position of this SlotValue.
+        r"""Sets the begin_position of this SlotValue.
 
         词的起始位置。
 
@@ -126,7 +126,7 @@ class SlotValue:
 
     @property
     def end_position(self):
-        """Gets the end_position of this SlotValue.
+        r"""Gets the end_position of this SlotValue.
 
         词的结束位置。
 
@@ -137,7 +137,7 @@ class SlotValue:
 
     @end_position.setter
     def end_position(self, end_position):
-        """Sets the end_position of this SlotValue.
+        r"""Sets the end_position of this SlotValue.
 
         词的结束位置。
 

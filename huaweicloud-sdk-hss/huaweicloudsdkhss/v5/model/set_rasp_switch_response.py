@@ -24,7 +24,7 @@ class SetRaspSwitchResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetRaspSwitchResponse
+        r"""SetRaspSwitchResponse
 
         The model defined in huaweicloud sdk
 

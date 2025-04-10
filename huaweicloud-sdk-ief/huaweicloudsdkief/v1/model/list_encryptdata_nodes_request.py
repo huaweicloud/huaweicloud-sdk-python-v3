@@ -31,7 +31,7 @@ class ListEncryptdataNodesRequest:
     }
 
     def __init__(self, encryptdata_id=None, limit=None, ief_instance_id=None, offset=None):
-        """ListEncryptdataNodesRequest
+        r"""ListEncryptdataNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListEncryptdataNodesRequest:
 
     @property
     def encryptdata_id(self):
-        """Gets the encryptdata_id of this ListEncryptdataNodesRequest.
+        r"""Gets the encryptdata_id of this ListEncryptdataNodesRequest.
 
         加密数据ID
 
@@ -74,7 +74,7 @@ class ListEncryptdataNodesRequest:
 
     @encryptdata_id.setter
     def encryptdata_id(self, encryptdata_id):
-        """Sets the encryptdata_id of this ListEncryptdataNodesRequest.
+        r"""Sets the encryptdata_id of this ListEncryptdataNodesRequest.
 
         加密数据ID
 
@@ -85,7 +85,7 @@ class ListEncryptdataNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEncryptdataNodesRequest.
+        r"""Gets the limit of this ListEncryptdataNodesRequest.
 
         查询返回记录的数量限制
 
@@ -96,7 +96,7 @@ class ListEncryptdataNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEncryptdataNodesRequest.
+        r"""Sets the limit of this ListEncryptdataNodesRequest.
 
         查询返回记录的数量限制
 
@@ -107,7 +107,7 @@ class ListEncryptdataNodesRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListEncryptdataNodesRequest.
+        r"""Gets the ief_instance_id of this ListEncryptdataNodesRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -118,7 +118,7 @@ class ListEncryptdataNodesRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListEncryptdataNodesRequest.
+        r"""Sets the ief_instance_id of this ListEncryptdataNodesRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -129,7 +129,7 @@ class ListEncryptdataNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEncryptdataNodesRequest.
+        r"""Gets the offset of this ListEncryptdataNodesRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -140,7 +140,7 @@ class ListEncryptdataNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEncryptdataNodesRequest.
+        r"""Sets the offset of this ListEncryptdataNodesRequest.
 
         偏移量，表示查询该偏移量后面的记录
 

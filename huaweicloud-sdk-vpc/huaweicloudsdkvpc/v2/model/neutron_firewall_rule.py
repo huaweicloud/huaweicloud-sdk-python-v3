@@ -51,7 +51,7 @@ class NeutronFirewallRule:
     }
 
     def __init__(self, id=None, name=None, description=None, action=None, protocol=None, ip_version=None, enabled=None, public=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, tenant_id=None, project_id=None):
-        """NeutronFirewallRule
+        r"""NeutronFirewallRule
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class NeutronFirewallRule:
 
     @property
     def id(self):
-        """Gets the id of this NeutronFirewallRule.
+        r"""Gets the id of this NeutronFirewallRule.
 
         功能说明：网络ACL规则的uuid标识。
 
@@ -131,7 +131,7 @@ class NeutronFirewallRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronFirewallRule.
+        r"""Sets the id of this NeutronFirewallRule.
 
         功能说明：网络ACL规则的uuid标识。
 
@@ -142,7 +142,7 @@ class NeutronFirewallRule:
 
     @property
     def name(self):
-        """Gets the name of this NeutronFirewallRule.
+        r"""Gets the name of this NeutronFirewallRule.
 
         功能说明：网络ACL规则名称。 取值范围：0-255个字符
 
@@ -153,7 +153,7 @@ class NeutronFirewallRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronFirewallRule.
+        r"""Sets the name of this NeutronFirewallRule.
 
         功能说明：网络ACL规则名称。 取值范围：0-255个字符
 
@@ -164,7 +164,7 @@ class NeutronFirewallRule:
 
     @property
     def description(self):
-        """Gets the description of this NeutronFirewallRule.
+        r"""Gets the description of this NeutronFirewallRule.
 
         功能说明：网络ACL规则描述 取值范围：0-255个字符长度
 
@@ -175,7 +175,7 @@ class NeutronFirewallRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronFirewallRule.
+        r"""Sets the description of this NeutronFirewallRule.
 
         功能说明：网络ACL规则描述 取值范围：0-255个字符长度
 
@@ -186,7 +186,7 @@ class NeutronFirewallRule:
 
     @property
     def action(self):
-        """Gets the action of this NeutronFirewallRule.
+        r"""Gets the action of this NeutronFirewallRule.
 
         功能说明：对通过网络ACL的流量执行的操作。 取值范围：DENY（拒绝）/ALLOW（允许）
 
@@ -197,7 +197,7 @@ class NeutronFirewallRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this NeutronFirewallRule.
+        r"""Sets the action of this NeutronFirewallRule.
 
         功能说明：对通过网络ACL的流量执行的操作。 取值范围：DENY（拒绝）/ALLOW（允许）
 
@@ -208,7 +208,7 @@ class NeutronFirewallRule:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NeutronFirewallRule.
+        r"""Gets the protocol of this NeutronFirewallRule.
 
         功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
@@ -219,7 +219,7 @@ class NeutronFirewallRule:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NeutronFirewallRule.
+        r"""Sets the protocol of this NeutronFirewallRule.
 
         功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
@@ -230,7 +230,7 @@ class NeutronFirewallRule:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this NeutronFirewallRule.
+        r"""Gets the ip_version of this NeutronFirewallRule.
 
         功能说明：IP协议版本 取值范围：Ipv4/Ipv6
 
@@ -241,7 +241,7 @@ class NeutronFirewallRule:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this NeutronFirewallRule.
+        r"""Sets the ip_version of this NeutronFirewallRule.
 
         功能说明：IP协议版本 取值范围：Ipv4/Ipv6
 
@@ -252,7 +252,7 @@ class NeutronFirewallRule:
 
     @property
     def enabled(self):
-        """Gets the enabled of this NeutronFirewallRule.
+        r"""Gets the enabled of this NeutronFirewallRule.
 
         功能说明：是否使能网络ACL规则。 取值范围：true/false
 
@@ -263,7 +263,7 @@ class NeutronFirewallRule:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this NeutronFirewallRule.
+        r"""Sets the enabled of this NeutronFirewallRule.
 
         功能说明：是否使能网络ACL规则。 取值范围：true/false
 
@@ -274,7 +274,7 @@ class NeutronFirewallRule:
 
     @property
     def public(self):
-        """Gets the public of this NeutronFirewallRule.
+        r"""Gets the public of this NeutronFirewallRule.
 
         功能说明：是否支持跨租户共享 取值范围：true/false
 
@@ -285,7 +285,7 @@ class NeutronFirewallRule:
 
     @public.setter
     def public(self, public):
-        """Sets the public of this NeutronFirewallRule.
+        r"""Sets the public of this NeutronFirewallRule.
 
         功能说明：是否支持跨租户共享 取值范围：true/false
 
@@ -296,7 +296,7 @@ class NeutronFirewallRule:
 
     @property
     def destination_ip_address(self):
-        """Gets the destination_ip_address of this NeutronFirewallRule.
+        r"""Gets the destination_ip_address of this NeutronFirewallRule.
 
         功能说明：目的地址或者CIDR。
 
@@ -307,7 +307,7 @@ class NeutronFirewallRule:
 
     @destination_ip_address.setter
     def destination_ip_address(self, destination_ip_address):
-        """Sets the destination_ip_address of this NeutronFirewallRule.
+        r"""Sets the destination_ip_address of this NeutronFirewallRule.
 
         功能说明：目的地址或者CIDR。
 
@@ -318,7 +318,7 @@ class NeutronFirewallRule:
 
     @property
     def destination_port(self):
-        """Gets the destination_port of this NeutronFirewallRule.
+        r"""Gets the destination_port of this NeutronFirewallRule.
 
         功能说明：目的端口号或者一段端口范围。
 
@@ -329,7 +329,7 @@ class NeutronFirewallRule:
 
     @destination_port.setter
     def destination_port(self, destination_port):
-        """Sets the destination_port of this NeutronFirewallRule.
+        r"""Sets the destination_port of this NeutronFirewallRule.
 
         功能说明：目的端口号或者一段端口范围。
 
@@ -340,7 +340,7 @@ class NeutronFirewallRule:
 
     @property
     def source_ip_address(self):
-        """Gets the source_ip_address of this NeutronFirewallRule.
+        r"""Gets the source_ip_address of this NeutronFirewallRule.
 
         功能说明：源地址或者CIDR。
 
@@ -351,7 +351,7 @@ class NeutronFirewallRule:
 
     @source_ip_address.setter
     def source_ip_address(self, source_ip_address):
-        """Sets the source_ip_address of this NeutronFirewallRule.
+        r"""Sets the source_ip_address of this NeutronFirewallRule.
 
         功能说明：源地址或者CIDR。
 
@@ -362,7 +362,7 @@ class NeutronFirewallRule:
 
     @property
     def source_port(self):
-        """Gets the source_port of this NeutronFirewallRule.
+        r"""Gets the source_port of this NeutronFirewallRule.
 
         功能说明：源端口号或者一段端口范围。
 
@@ -373,7 +373,7 @@ class NeutronFirewallRule:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this NeutronFirewallRule.
+        r"""Sets the source_port of this NeutronFirewallRule.
 
         功能说明：源端口号或者一段端口范围。
 
@@ -384,7 +384,7 @@ class NeutronFirewallRule:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronFirewallRule.
+        r"""Gets the tenant_id of this NeutronFirewallRule.
 
         功能说明：项目ID
 
@@ -395,7 +395,7 @@ class NeutronFirewallRule:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronFirewallRule.
+        r"""Sets the tenant_id of this NeutronFirewallRule.
 
         功能说明：项目ID
 
@@ -406,7 +406,7 @@ class NeutronFirewallRule:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronFirewallRule.
+        r"""Gets the project_id of this NeutronFirewallRule.
 
         功能说明：项目ID
 
@@ -417,7 +417,7 @@ class NeutronFirewallRule:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronFirewallRule.
+        r"""Sets the project_id of this NeutronFirewallRule.
 
         功能说明：项目ID
 

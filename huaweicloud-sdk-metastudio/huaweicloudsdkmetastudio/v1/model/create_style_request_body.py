@@ -39,7 +39,7 @@ class CreateStyleRequestBody:
     }
 
     def __init__(self, name=None, description=None, project_id=None, status=None, sex=None, tags=None, style_assets=None, extra_meta=None):
-        """CreateStyleRequestBody
+        r"""CreateStyleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CreateStyleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateStyleRequestBody.
+        r"""Gets the name of this CreateStyleRequestBody.
 
         数字人风格化名称
 
@@ -102,7 +102,7 @@ class CreateStyleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateStyleRequestBody.
+        r"""Sets the name of this CreateStyleRequestBody.
 
         数字人风格化名称
 
@@ -113,7 +113,7 @@ class CreateStyleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateStyleRequestBody.
+        r"""Gets the description of this CreateStyleRequestBody.
 
         数字人风格化描述
 
@@ -124,7 +124,7 @@ class CreateStyleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateStyleRequestBody.
+        r"""Sets the description of this CreateStyleRequestBody.
 
         数字人风格化描述
 
@@ -135,7 +135,7 @@ class CreateStyleRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateStyleRequestBody.
+        r"""Gets the project_id of this CreateStyleRequestBody.
 
         租户ID
 
@@ -146,7 +146,7 @@ class CreateStyleRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateStyleRequestBody.
+        r"""Sets the project_id of this CreateStyleRequestBody.
 
         租户ID
 
@@ -157,7 +157,7 @@ class CreateStyleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateStyleRequestBody.
+        r"""Gets the status of this CreateStyleRequestBody.
 
         状态
 
@@ -168,7 +168,7 @@ class CreateStyleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateStyleRequestBody.
+        r"""Sets the status of this CreateStyleRequestBody.
 
         状态
 
@@ -179,7 +179,7 @@ class CreateStyleRequestBody:
 
     @property
     def sex(self):
-        """Gets the sex of this CreateStyleRequestBody.
+        r"""Gets the sex of this CreateStyleRequestBody.
 
         性别
 
@@ -190,7 +190,7 @@ class CreateStyleRequestBody:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this CreateStyleRequestBody.
+        r"""Sets the sex of this CreateStyleRequestBody.
 
         性别
 
@@ -201,7 +201,7 @@ class CreateStyleRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateStyleRequestBody.
+        r"""Gets the tags of this CreateStyleRequestBody.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -212,7 +212,7 @@ class CreateStyleRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateStyleRequestBody.
+        r"""Sets the tags of this CreateStyleRequestBody.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -223,7 +223,7 @@ class CreateStyleRequestBody:
 
     @property
     def style_assets(self):
-        """Gets the style_assets of this CreateStyleRequestBody.
+        r"""Gets the style_assets of this CreateStyleRequestBody.
 
         风格化素材资产组合。
 
@@ -234,7 +234,7 @@ class CreateStyleRequestBody:
 
     @style_assets.setter
     def style_assets(self, style_assets):
-        """Sets the style_assets of this CreateStyleRequestBody.
+        r"""Sets the style_assets of this CreateStyleRequestBody.
 
         风格化素材资产组合。
 
@@ -245,7 +245,7 @@ class CreateStyleRequestBody:
 
     @property
     def extra_meta(self):
-        """Gets the extra_meta of this CreateStyleRequestBody.
+        r"""Gets the extra_meta of this CreateStyleRequestBody.
 
         :return: The extra_meta of this CreateStyleRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StyleExtraMeta`
@@ -254,7 +254,7 @@ class CreateStyleRequestBody:
 
     @extra_meta.setter
     def extra_meta(self, extra_meta):
-        """Sets the extra_meta of this CreateStyleRequestBody.
+        r"""Sets the extra_meta of this CreateStyleRequestBody.
 
         :param extra_meta: The extra_meta of this CreateStyleRequestBody.
         :type extra_meta: :class:`huaweicloudsdkmetastudio.v1.StyleExtraMeta`

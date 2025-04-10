@@ -28,7 +28,7 @@ class ListAuthorizedDbUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None):
-        """ListAuthorizedDbUsersResponse
+        r"""ListAuthorizedDbUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuthorizedDbUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListAuthorizedDbUsersResponse.
+        r"""Gets the users of this ListAuthorizedDbUsersResponse.
 
         用户及相关权限。
 
@@ -62,7 +62,7 @@ class ListAuthorizedDbUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListAuthorizedDbUsersResponse.
+        r"""Sets the users of this ListAuthorizedDbUsersResponse.
 
         用户及相关权限。
 
@@ -73,7 +73,7 @@ class ListAuthorizedDbUsersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAuthorizedDbUsersResponse.
+        r"""Gets the total_count of this ListAuthorizedDbUsersResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListAuthorizedDbUsersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAuthorizedDbUsersResponse.
+        r"""Sets the total_count of this ListAuthorizedDbUsersResponse.
 
         总数。
 

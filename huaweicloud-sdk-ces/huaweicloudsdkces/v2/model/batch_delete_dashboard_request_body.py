@@ -25,7 +25,7 @@ class BatchDeleteDashboardRequestBody:
     }
 
     def __init__(self, dashboard_ids=None):
-        """BatchDeleteDashboardRequestBody
+        r"""BatchDeleteDashboardRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteDashboardRequestBody:
 
     @property
     def dashboard_ids(self):
-        """Gets the dashboard_ids of this BatchDeleteDashboardRequestBody.
+        r"""Gets the dashboard_ids of this BatchDeleteDashboardRequestBody.
 
         监控看板id列表
 
@@ -54,7 +54,7 @@ class BatchDeleteDashboardRequestBody:
 
     @dashboard_ids.setter
     def dashboard_ids(self, dashboard_ids):
-        """Sets the dashboard_ids of this BatchDeleteDashboardRequestBody.
+        r"""Sets the dashboard_ids of this BatchDeleteDashboardRequestBody.
 
         监控看板id列表
 

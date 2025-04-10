@@ -27,7 +27,7 @@ class ShowAccessPreviewRequest:
     }
 
     def __init__(self, analyzer_id=None, access_preview_id=None):
-        """ShowAccessPreviewRequest
+        r"""ShowAccessPreviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAccessPreviewRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ShowAccessPreviewRequest.
+        r"""Gets the analyzer_id of this ShowAccessPreviewRequest.
 
         分析器的唯一标识符。
 
@@ -59,7 +59,7 @@ class ShowAccessPreviewRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ShowAccessPreviewRequest.
+        r"""Sets the analyzer_id of this ShowAccessPreviewRequest.
 
         分析器的唯一标识符。
 
@@ -70,7 +70,7 @@ class ShowAccessPreviewRequest:
 
     @property
     def access_preview_id(self):
-        """Gets the access_preview_id of this ShowAccessPreviewRequest.
+        r"""Gets the access_preview_id of this ShowAccessPreviewRequest.
 
         访问预览的唯一标识符。
 
@@ -81,7 +81,7 @@ class ShowAccessPreviewRequest:
 
     @access_preview_id.setter
     def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this ShowAccessPreviewRequest.
+        r"""Sets the access_preview_id of this ShowAccessPreviewRequest.
 
         访问预览的唯一标识符。
 

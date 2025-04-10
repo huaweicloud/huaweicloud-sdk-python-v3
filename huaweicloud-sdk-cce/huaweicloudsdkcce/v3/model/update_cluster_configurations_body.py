@@ -31,7 +31,7 @@ class UpdateClusterConfigurationsBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
-        """UpdateClusterConfigurationsBody
+        r"""UpdateClusterConfigurationsBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateClusterConfigurationsBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateClusterConfigurationsBody.
+        r"""Gets the api_version of this UpdateClusterConfigurationsBody.
 
         API版本，固定值**v3**
 
@@ -71,7 +71,7 @@ class UpdateClusterConfigurationsBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateClusterConfigurationsBody.
+        r"""Sets the api_version of this UpdateClusterConfigurationsBody.
 
         API版本，固定值**v3**
 
@@ -82,7 +82,7 @@ class UpdateClusterConfigurationsBody:
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateClusterConfigurationsBody.
+        r"""Gets the kind of this UpdateClusterConfigurationsBody.
 
         API类型，固定值**Configuration**
 
@@ -93,7 +93,7 @@ class UpdateClusterConfigurationsBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateClusterConfigurationsBody.
+        r"""Sets the kind of this UpdateClusterConfigurationsBody.
 
         API类型，固定值**Configuration**
 
@@ -104,7 +104,7 @@ class UpdateClusterConfigurationsBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateClusterConfigurationsBody.
+        r"""Gets the metadata of this UpdateClusterConfigurationsBody.
 
         :return: The metadata of this UpdateClusterConfigurationsBody.
         :rtype: :class:`huaweicloudsdkcce.v3.ConfigurationMetadata`
@@ -113,7 +113,7 @@ class UpdateClusterConfigurationsBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateClusterConfigurationsBody.
+        r"""Sets the metadata of this UpdateClusterConfigurationsBody.
 
         :param metadata: The metadata of this UpdateClusterConfigurationsBody.
         :type metadata: :class:`huaweicloudsdkcce.v3.ConfigurationMetadata`
@@ -122,7 +122,7 @@ class UpdateClusterConfigurationsBody:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateClusterConfigurationsBody.
+        r"""Gets the spec of this UpdateClusterConfigurationsBody.
 
         :return: The spec of this UpdateClusterConfigurationsBody.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpec`
@@ -131,7 +131,7 @@ class UpdateClusterConfigurationsBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateClusterConfigurationsBody.
+        r"""Sets the spec of this UpdateClusterConfigurationsBody.
 
         :param spec: The spec of this UpdateClusterConfigurationsBody.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpec`

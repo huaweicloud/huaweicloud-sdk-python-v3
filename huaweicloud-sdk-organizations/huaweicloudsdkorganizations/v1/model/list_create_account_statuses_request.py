@@ -32,7 +32,7 @@ class ListCreateAccountStatusesRequest:
     }
 
     def __init__(self, x_security_token=None, states=None, limit=None, marker=None):
-        """ListCreateAccountStatusesRequest
+        r"""ListCreateAccountStatusesRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListCreateAccountStatusesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListCreateAccountStatusesRequest.
+        r"""Gets the x_security_token of this ListCreateAccountStatusesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -76,7 +76,7 @@ class ListCreateAccountStatusesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListCreateAccountStatusesRequest.
+        r"""Sets the x_security_token of this ListCreateAccountStatusesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -87,7 +87,7 @@ class ListCreateAccountStatusesRequest:
 
     @property
     def states(self):
-        """Gets the states of this ListCreateAccountStatusesRequest.
+        r"""Gets the states of this ListCreateAccountStatusesRequest.
 
         要包含在响应中的一个或多个状态的列表。如果此参数不存在，则所有请求都包含在响应中。
 
@@ -98,7 +98,7 @@ class ListCreateAccountStatusesRequest:
 
     @states.setter
     def states(self, states):
-        """Sets the states of this ListCreateAccountStatusesRequest.
+        r"""Sets the states of this ListCreateAccountStatusesRequest.
 
         要包含在响应中的一个或多个状态的列表。如果此参数不存在，则所有请求都包含在响应中。
 
@@ -109,7 +109,7 @@ class ListCreateAccountStatusesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCreateAccountStatusesRequest.
+        r"""Gets the limit of this ListCreateAccountStatusesRequest.
 
         页面中最大结果数量。
 
@@ -120,7 +120,7 @@ class ListCreateAccountStatusesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCreateAccountStatusesRequest.
+        r"""Sets the limit of this ListCreateAccountStatusesRequest.
 
         页面中最大结果数量。
 
@@ -131,7 +131,7 @@ class ListCreateAccountStatusesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCreateAccountStatusesRequest.
+        r"""Gets the marker of this ListCreateAccountStatusesRequest.
 
         分页标记。
 
@@ -142,7 +142,7 @@ class ListCreateAccountStatusesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCreateAccountStatusesRequest.
+        r"""Sets the marker of this ListCreateAccountStatusesRequest.
 
         分页标记。
 

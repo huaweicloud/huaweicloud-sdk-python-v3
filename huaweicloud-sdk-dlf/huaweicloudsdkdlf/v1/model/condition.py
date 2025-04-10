@@ -27,7 +27,7 @@ class Condition:
     }
 
     def __init__(self, pre_node_name=None, expression=None):
-        """Condition
+        r"""Condition
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Condition:
 
     @property
     def pre_node_name(self):
-        """Gets the pre_node_name of this Condition.
+        r"""Gets the pre_node_name of this Condition.
 
         :return: The pre_node_name of this Condition.
         :rtype: str
@@ -59,7 +59,7 @@ class Condition:
 
     @pre_node_name.setter
     def pre_node_name(self, pre_node_name):
-        """Sets the pre_node_name of this Condition.
+        r"""Sets the pre_node_name of this Condition.
 
         :param pre_node_name: The pre_node_name of this Condition.
         :type pre_node_name: str
@@ -68,7 +68,7 @@ class Condition:
 
     @property
     def expression(self):
-        """Gets the expression of this Condition.
+        r"""Gets the expression of this Condition.
 
         :return: The expression of this Condition.
         :rtype: str
@@ -77,7 +77,7 @@ class Condition:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this Condition.
+        r"""Sets the expression of this Condition.
 
         :param expression: The expression of this Condition.
         :type expression: str

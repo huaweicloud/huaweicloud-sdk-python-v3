@@ -25,7 +25,7 @@ class UpdatePackageIpRequestBody:
     }
 
     def __init__(self, protected_ip_list=None):
-        """UpdatePackageIpRequestBody
+        r"""UpdatePackageIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePackageIpRequestBody:
 
     @property
     def protected_ip_list(self):
-        """Gets the protected_ip_list of this UpdatePackageIpRequestBody.
+        r"""Gets the protected_ip_list of this UpdatePackageIpRequestBody.
 
         全量防护ip列表
 
@@ -53,7 +53,7 @@ class UpdatePackageIpRequestBody:
 
     @protected_ip_list.setter
     def protected_ip_list(self, protected_ip_list):
-        """Sets the protected_ip_list of this UpdatePackageIpRequestBody.
+        r"""Sets the protected_ip_list of this UpdatePackageIpRequestBody.
 
         全量防护ip列表
 

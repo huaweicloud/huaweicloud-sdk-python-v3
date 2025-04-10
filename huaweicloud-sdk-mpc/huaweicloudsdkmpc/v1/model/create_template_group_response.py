@@ -26,7 +26,7 @@ class CreateTemplateGroupResponse(SdkResponse):
     }
 
     def __init__(self, template_group=None):
-        """CreateTemplateGroupResponse
+        r"""CreateTemplateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTemplateGroupResponse(SdkResponse):
 
     @property
     def template_group(self):
-        """Gets the template_group of this CreateTemplateGroupResponse.
+        r"""Gets the template_group of this CreateTemplateGroupResponse.
 
         :return: The template_group of this CreateTemplateGroupResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.TemplateGroup`
@@ -53,7 +53,7 @@ class CreateTemplateGroupResponse(SdkResponse):
 
     @template_group.setter
     def template_group(self, template_group):
-        """Sets the template_group of this CreateTemplateGroupResponse.
+        r"""Sets the template_group of this CreateTemplateGroupResponse.
 
         :param template_group: The template_group of this CreateTemplateGroupResponse.
         :type template_group: :class:`huaweicloudsdkmpc.v1.TemplateGroup`

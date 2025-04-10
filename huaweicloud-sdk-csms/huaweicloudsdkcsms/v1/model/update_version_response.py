@@ -26,7 +26,7 @@ class UpdateVersionResponse(SdkResponse):
     }
 
     def __init__(self, version_metadata=None):
-        """UpdateVersionResponse
+        r"""UpdateVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateVersionResponse(SdkResponse):
 
     @property
     def version_metadata(self):
-        """Gets the version_metadata of this UpdateVersionResponse.
+        r"""Gets the version_metadata of this UpdateVersionResponse.
 
         :return: The version_metadata of this UpdateVersionResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
@@ -53,7 +53,7 @@ class UpdateVersionResponse(SdkResponse):
 
     @version_metadata.setter
     def version_metadata(self, version_metadata):
-        """Sets the version_metadata of this UpdateVersionResponse.
+        r"""Sets the version_metadata of this UpdateVersionResponse.
 
         :param version_metadata: The version_metadata of this UpdateVersionResponse.
         :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`

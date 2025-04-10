@@ -45,7 +45,7 @@ class OptionalDiscountRatingResultV2:
     }
 
     def __init__(self, discount_id=None, amount=None, official_website_amount=None, discount_amount=None, discount_type=None, discount_name=None, best_offer=None, installment_official_website_amount=None, installment_official_discount_amount=None, installment_amount=None, installment_period_type=None):
-        """OptionalDiscountRatingResultV2
+        r"""OptionalDiscountRatingResultV2
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def discount_id(self):
-        """Gets the discount_id of this OptionalDiscountRatingResultV2.
+        r"""Gets the discount_id of this OptionalDiscountRatingResultV2.
 
         |参数名称：折扣优惠ID| |参数约束及描述：折扣优惠ID|
 
@@ -124,7 +124,7 @@ class OptionalDiscountRatingResultV2:
 
     @discount_id.setter
     def discount_id(self, discount_id):
-        """Sets the discount_id of this OptionalDiscountRatingResultV2.
+        r"""Sets the discount_id of this OptionalDiscountRatingResultV2.
 
         |参数名称：折扣优惠ID| |参数约束及描述：折扣优惠ID|
 
@@ -135,7 +135,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def amount(self):
-        """Gets the amount of this OptionalDiscountRatingResultV2.
+        r"""Gets the amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount| |参数约束及描述：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount|
 
@@ -146,7 +146,7 @@ class OptionalDiscountRatingResultV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this OptionalDiscountRatingResultV2.
+        r"""Sets the amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount| |参数约束及描述：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount|
 
@@ -157,7 +157,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OptionalDiscountRatingResultV2.
+        r"""Gets the official_website_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：官网价。单位为元| |参数约束及描述：官网价。单位为元|
 
@@ -168,7 +168,7 @@ class OptionalDiscountRatingResultV2:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OptionalDiscountRatingResultV2.
+        r"""Sets the official_website_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：官网价。单位为元| |参数约束及描述：官网价。单位为元|
 
@@ -179,7 +179,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this OptionalDiscountRatingResultV2.
+        r"""Gets the discount_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为| |参数约束及描述：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为|
 
@@ -190,7 +190,7 @@ class OptionalDiscountRatingResultV2:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this OptionalDiscountRatingResultV2.
+        r"""Sets the discount_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为| |参数约束及描述：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为|
 
@@ -201,7 +201,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def discount_type(self):
-        """Gets the discount_type of this OptionalDiscountRatingResultV2.
+        r"""Gets the discount_type of this OptionalDiscountRatingResultV2.
 
         |参数名称：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率| |参数的约束及描述：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率|
 
@@ -212,7 +212,7 @@ class OptionalDiscountRatingResultV2:
 
     @discount_type.setter
     def discount_type(self, discount_type):
-        """Sets the discount_type of this OptionalDiscountRatingResultV2.
+        r"""Sets the discount_type of this OptionalDiscountRatingResultV2.
 
         |参数名称：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率| |参数的约束及描述：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率|
 
@@ -223,7 +223,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def discount_name(self):
-        """Gets the discount_name of this OptionalDiscountRatingResultV2.
+        r"""Gets the discount_name of this OptionalDiscountRatingResultV2.
 
         |参数名称：折扣名称| |参数约束及描述：折扣名称|
 
@@ -234,7 +234,7 @@ class OptionalDiscountRatingResultV2:
 
     @discount_name.setter
     def discount_name(self, discount_name):
-        """Sets the discount_name of this OptionalDiscountRatingResultV2.
+        r"""Sets the discount_name of this OptionalDiscountRatingResultV2.
 
         |参数名称：折扣名称| |参数约束及描述：折扣名称|
 
@@ -245,7 +245,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def best_offer(self):
-        """Gets the best_offer of this OptionalDiscountRatingResultV2.
+        r"""Gets the best_offer of this OptionalDiscountRatingResultV2.
 
         |参数名称：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算| |参数的约束及描述：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
 
@@ -256,7 +256,7 @@ class OptionalDiscountRatingResultV2:
 
     @best_offer.setter
     def best_offer(self, best_offer):
-        """Sets the best_offer of this OptionalDiscountRatingResultV2.
+        r"""Sets the best_offer of this OptionalDiscountRatingResultV2.
 
         |参数名称：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算| |参数的约束及描述：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
 
@@ -267,7 +267,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def installment_official_website_amount(self):
-        """Gets the installment_official_website_amount of this OptionalDiscountRatingResultV2.
+        r"""Gets the installment_official_website_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
 
@@ -278,7 +278,7 @@ class OptionalDiscountRatingResultV2:
 
     @installment_official_website_amount.setter
     def installment_official_website_amount(self, installment_official_website_amount):
-        """Sets the installment_official_website_amount of this OptionalDiscountRatingResultV2.
+        r"""Sets the installment_official_website_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
 
@@ -289,7 +289,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def installment_official_discount_amount(self):
-        """Gets the installment_official_discount_amount of this OptionalDiscountRatingResultV2.
+        r"""Gets the installment_official_discount_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期金额的折扣价。单位为元| |参数约束及描述：分期金额的折扣价。单位为元|
 
@@ -300,7 +300,7 @@ class OptionalDiscountRatingResultV2:
 
     @installment_official_discount_amount.setter
     def installment_official_discount_amount(self, installment_official_discount_amount):
-        """Sets the installment_official_discount_amount of this OptionalDiscountRatingResultV2.
+        r"""Sets the installment_official_discount_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期金额的折扣价。单位为元| |参数约束及描述：分期金额的折扣价。单位为元|
 
@@ -311,7 +311,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def installment_amount(self):
-        """Gets the installment_amount of this OptionalDiscountRatingResultV2.
+        r"""Gets the installment_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期金额的成交价。单位为元| |参数约束及描述：分期金额的成交价。单位为元|
 
@@ -322,7 +322,7 @@ class OptionalDiscountRatingResultV2:
 
     @installment_amount.setter
     def installment_amount(self, installment_amount):
-        """Sets the installment_amount of this OptionalDiscountRatingResultV2.
+        r"""Sets the installment_amount of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期金额的成交价。单位为元| |参数约束及描述：分期金额的成交价。单位为元|
 
@@ -333,7 +333,7 @@ class OptionalDiscountRatingResultV2:
 
     @property
     def installment_period_type(self):
-        """Gets the installment_period_type of this OptionalDiscountRatingResultV2.
+        r"""Gets the installment_period_type of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
 
@@ -344,7 +344,7 @@ class OptionalDiscountRatingResultV2:
 
     @installment_period_type.setter
     def installment_period_type(self, installment_period_type):
-        """Sets the installment_period_type of this OptionalDiscountRatingResultV2.
+        r"""Sets the installment_period_type of this OptionalDiscountRatingResultV2.
 
         |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
 

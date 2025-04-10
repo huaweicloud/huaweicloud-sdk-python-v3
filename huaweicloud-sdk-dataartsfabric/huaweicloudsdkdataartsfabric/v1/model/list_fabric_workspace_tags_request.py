@@ -29,7 +29,7 @@ class ListFabricWorkspaceTagsRequest:
     }
 
     def __init__(self, workspace_id=None, offset=None, limit=None):
-        """ListFabricWorkspaceTagsRequest
+        r"""ListFabricWorkspaceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListFabricWorkspaceTagsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListFabricWorkspaceTagsRequest.
+        r"""Gets the workspace_id of this ListFabricWorkspaceTagsRequest.
 
         Workspace的ID
 
@@ -67,7 +67,7 @@ class ListFabricWorkspaceTagsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListFabricWorkspaceTagsRequest.
+        r"""Sets the workspace_id of this ListFabricWorkspaceTagsRequest.
 
         Workspace的ID
 
@@ -78,7 +78,7 @@ class ListFabricWorkspaceTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFabricWorkspaceTagsRequest.
+        r"""Gets the offset of this ListFabricWorkspaceTagsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -89,7 +89,7 @@ class ListFabricWorkspaceTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFabricWorkspaceTagsRequest.
+        r"""Sets the offset of this ListFabricWorkspaceTagsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -100,7 +100,7 @@ class ListFabricWorkspaceTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFabricWorkspaceTagsRequest.
+        r"""Gets the limit of this ListFabricWorkspaceTagsRequest.
 
         查询记录数默认为1000，limit最多为1000,不能为负数，最小值为1
 
@@ -111,7 +111,7 @@ class ListFabricWorkspaceTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFabricWorkspaceTagsRequest.
+        r"""Sets the limit of this ListFabricWorkspaceTagsRequest.
 
         查询记录数默认为1000，limit最多为1000,不能为负数，最小值为1
 

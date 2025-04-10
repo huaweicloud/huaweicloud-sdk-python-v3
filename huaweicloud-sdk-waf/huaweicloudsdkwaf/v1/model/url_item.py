@@ -29,7 +29,7 @@ class UrlItem:
     }
 
     def __init__(self, key=None, num=None, host=None):
-        """UrlItem
+        r"""UrlItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UrlItem:
 
     @property
     def key(self):
-        """Gets the key of this UrlItem.
+        r"""Gets the key of this UrlItem.
 
         url路径
 
@@ -68,7 +68,7 @@ class UrlItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UrlItem.
+        r"""Sets the key of this UrlItem.
 
         url路径
 
@@ -79,7 +79,7 @@ class UrlItem:
 
     @property
     def num(self):
-        """Gets the num of this UrlItem.
+        r"""Gets the num of this UrlItem.
 
         数量
 
@@ -90,7 +90,7 @@ class UrlItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this UrlItem.
+        r"""Sets the num of this UrlItem.
 
         数量
 
@@ -101,7 +101,7 @@ class UrlItem:
 
     @property
     def host(self):
-        """Gets the host of this UrlItem.
+        r"""Gets the host of this UrlItem.
 
         域名
 
@@ -112,7 +112,7 @@ class UrlItem:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this UrlItem.
+        r"""Sets the host of this UrlItem.
 
         域名
 

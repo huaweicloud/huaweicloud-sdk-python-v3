@@ -26,7 +26,7 @@ class ListClouddcnSubnetsResponse(SdkResponse):
     }
 
     def __init__(self, clouddcn_subnets=None):
-        """ListClouddcnSubnetsResponse
+        r"""ListClouddcnSubnetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClouddcnSubnetsResponse(SdkResponse):
 
     @property
     def clouddcn_subnets(self):
-        """Gets the clouddcn_subnets of this ListClouddcnSubnetsResponse.
+        r"""Gets the clouddcn_subnets of this ListClouddcnSubnetsResponse.
 
         clouddcn subnet对象列表
 
@@ -55,7 +55,7 @@ class ListClouddcnSubnetsResponse(SdkResponse):
 
     @clouddcn_subnets.setter
     def clouddcn_subnets(self, clouddcn_subnets):
-        """Sets the clouddcn_subnets of this ListClouddcnSubnetsResponse.
+        r"""Sets the clouddcn_subnets of this ListClouddcnSubnetsResponse.
 
         clouddcn subnet对象列表
 

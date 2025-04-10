@@ -25,7 +25,7 @@ class ShowInstanceRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowInstanceRequest
+        r"""ShowInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceRequest.
+        r"""Gets the instance_id of this ShowInstanceRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -53,7 +53,7 @@ class ShowInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceRequest.
+        r"""Sets the instance_id of this ShowInstanceRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 

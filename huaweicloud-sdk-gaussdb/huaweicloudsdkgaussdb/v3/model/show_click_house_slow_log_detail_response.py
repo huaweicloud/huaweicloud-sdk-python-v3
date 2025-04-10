@@ -26,7 +26,7 @@ class ShowClickHouseSlowLogDetailResponse(SdkResponse):
     }
 
     def __init__(self, slow_log_list=None):
-        """ShowClickHouseSlowLogDetailResponse
+        r"""ShowClickHouseSlowLogDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClickHouseSlowLogDetailResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ShowClickHouseSlowLogDetailResponse.
+        r"""Gets the slow_log_list of this ShowClickHouseSlowLogDetailResponse.
 
         慢日志列表。
 
@@ -55,7 +55,7 @@ class ShowClickHouseSlowLogDetailResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ShowClickHouseSlowLogDetailResponse.
+        r"""Sets the slow_log_list of this ShowClickHouseSlowLogDetailResponse.
 
         慢日志列表。
 

@@ -28,7 +28,7 @@ class ListMessageResponse(SdkResponse):
     }
 
     def __init__(self, total=None, records=None):
-        """ListMessageResponse
+        r"""ListMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMessageResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMessageResponse.
+        r"""Gets the total of this ListMessageResponse.
 
         符合条件的申请总数
 
@@ -62,7 +62,7 @@ class ListMessageResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMessageResponse.
+        r"""Sets the total of this ListMessageResponse.
 
         符合条件的申请总数
 
@@ -73,7 +73,7 @@ class ListMessageResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListMessageResponse.
+        r"""Gets the records of this ListMessageResponse.
 
         本次返回的申请列表
 
@@ -84,7 +84,7 @@ class ListMessageResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListMessageResponse.
+        r"""Sets the records of this ListMessageResponse.
 
         本次返回的申请列表
 

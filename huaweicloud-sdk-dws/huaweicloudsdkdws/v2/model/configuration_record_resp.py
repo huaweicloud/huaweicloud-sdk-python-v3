@@ -35,7 +35,7 @@ class ConfigurationRecordResp:
     }
 
     def __init__(self, id=None, operator=None, start_time=None, end_time=None, status=None, failed_reason=None):
-        """ConfigurationRecordResp
+        r"""ConfigurationRecordResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigurationRecordResp:
 
     @property
     def id(self):
-        """Gets the id of this ConfigurationRecordResp.
+        r"""Gets the id of this ConfigurationRecordResp.
 
         ID
 
@@ -89,7 +89,7 @@ class ConfigurationRecordResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigurationRecordResp.
+        r"""Sets the id of this ConfigurationRecordResp.
 
         ID
 
@@ -100,7 +100,7 @@ class ConfigurationRecordResp:
 
     @property
     def operator(self):
-        """Gets the operator of this ConfigurationRecordResp.
+        r"""Gets the operator of this ConfigurationRecordResp.
 
         操作
 
@@ -111,7 +111,7 @@ class ConfigurationRecordResp:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ConfigurationRecordResp.
+        r"""Sets the operator of this ConfigurationRecordResp.
 
         操作
 
@@ -122,7 +122,7 @@ class ConfigurationRecordResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ConfigurationRecordResp.
+        r"""Gets the start_time of this ConfigurationRecordResp.
 
         开始时间
 
@@ -133,7 +133,7 @@ class ConfigurationRecordResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ConfigurationRecordResp.
+        r"""Sets the start_time of this ConfigurationRecordResp.
 
         开始时间
 
@@ -144,7 +144,7 @@ class ConfigurationRecordResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ConfigurationRecordResp.
+        r"""Gets the end_time of this ConfigurationRecordResp.
 
         结束时间
 
@@ -155,7 +155,7 @@ class ConfigurationRecordResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ConfigurationRecordResp.
+        r"""Sets the end_time of this ConfigurationRecordResp.
 
         结束时间
 
@@ -166,7 +166,7 @@ class ConfigurationRecordResp:
 
     @property
     def status(self):
-        """Gets the status of this ConfigurationRecordResp.
+        r"""Gets the status of this ConfigurationRecordResp.
 
         状态
 
@@ -177,7 +177,7 @@ class ConfigurationRecordResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConfigurationRecordResp.
+        r"""Sets the status of this ConfigurationRecordResp.
 
         状态
 
@@ -188,7 +188,7 @@ class ConfigurationRecordResp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ConfigurationRecordResp.
+        r"""Gets the failed_reason of this ConfigurationRecordResp.
 
         失败原因
 
@@ -199,7 +199,7 @@ class ConfigurationRecordResp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ConfigurationRecordResp.
+        r"""Sets the failed_reason of this ConfigurationRecordResp.
 
         失败原因
 

@@ -41,7 +41,7 @@ class ListDatasourcesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, datasource_type=None, sort_field=None, sort_type=None, name=None, app_id=None, custom_plugin_id=None):
-        """ListDatasourcesRequest
+        r"""ListDatasourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListDatasourcesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatasourcesRequest.
+        r"""Gets the instance_id of this ListDatasourcesRequest.
 
         实例ID
 
@@ -109,7 +109,7 @@ class ListDatasourcesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatasourcesRequest.
+        r"""Sets the instance_id of this ListDatasourcesRequest.
 
         实例ID
 
@@ -120,7 +120,7 @@ class ListDatasourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatasourcesRequest.
+        r"""Gets the limit of this ListDatasourcesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -131,7 +131,7 @@ class ListDatasourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatasourcesRequest.
+        r"""Sets the limit of this ListDatasourcesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -142,7 +142,7 @@ class ListDatasourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatasourcesRequest.
+        r"""Gets the offset of this ListDatasourcesRequest.
 
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -153,7 +153,7 @@ class ListDatasourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatasourcesRequest.
+        r"""Sets the offset of this ListDatasourcesRequest.
 
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -164,7 +164,7 @@ class ListDatasourcesRequest:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this ListDatasourcesRequest.
+        r"""Gets the datasource_type of this ListDatasourcesRequest.
 
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
@@ -175,7 +175,7 @@ class ListDatasourcesRequest:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this ListDatasourcesRequest.
+        r"""Sets the datasource_type of this ListDatasourcesRequest.
 
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
@@ -186,7 +186,7 @@ class ListDatasourcesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListDatasourcesRequest.
+        r"""Gets the sort_field of this ListDatasourcesRequest.
 
         排序字段（CREATED_DATE）
 
@@ -197,7 +197,7 @@ class ListDatasourcesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListDatasourcesRequest.
+        r"""Sets the sort_field of this ListDatasourcesRequest.
 
         排序字段（CREATED_DATE）
 
@@ -208,7 +208,7 @@ class ListDatasourcesRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListDatasourcesRequest.
+        r"""Gets the sort_type of this ListDatasourcesRequest.
 
         查询数据源排序的类型，增序还是降序，可为空
 
@@ -219,7 +219,7 @@ class ListDatasourcesRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListDatasourcesRequest.
+        r"""Sets the sort_type of this ListDatasourcesRequest.
 
         查询数据源排序的类型，增序还是降序，可为空
 
@@ -230,7 +230,7 @@ class ListDatasourcesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDatasourcesRequest.
+        r"""Gets the name of this ListDatasourcesRequest.
 
         数据源名称,支持模糊匹配
 
@@ -241,7 +241,7 @@ class ListDatasourcesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDatasourcesRequest.
+        r"""Sets the name of this ListDatasourcesRequest.
 
         数据源名称,支持模糊匹配
 
@@ -252,7 +252,7 @@ class ListDatasourcesRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListDatasourcesRequest.
+        r"""Gets the app_id of this ListDatasourcesRequest.
 
         集成应用ID
 
@@ -263,7 +263,7 @@ class ListDatasourcesRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListDatasourcesRequest.
+        r"""Sets the app_id of this ListDatasourcesRequest.
 
         集成应用ID
 
@@ -274,7 +274,7 @@ class ListDatasourcesRequest:
 
     @property
     def custom_plugin_id(self):
-        """Gets the custom_plugin_id of this ListDatasourcesRequest.
+        r"""Gets the custom_plugin_id of this ListDatasourcesRequest.
 
         连接器ID
 
@@ -285,7 +285,7 @@ class ListDatasourcesRequest:
 
     @custom_plugin_id.setter
     def custom_plugin_id(self, custom_plugin_id):
-        """Sets the custom_plugin_id of this ListDatasourcesRequest.
+        r"""Sets the custom_plugin_id of this ListDatasourcesRequest.
 
         连接器ID
 

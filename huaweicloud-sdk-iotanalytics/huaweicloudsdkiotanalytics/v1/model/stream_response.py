@@ -29,7 +29,7 @@ class StreamResponse:
     }
 
     def __init__(self, inputs=None, job_id=None, outputs=None):
-        """StreamResponse
+        r"""StreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StreamResponse:
 
     @property
     def inputs(self):
-        """Gets the inputs of this StreamResponse.
+        r"""Gets the inputs of this StreamResponse.
 
         输入参数
 
@@ -68,7 +68,7 @@ class StreamResponse:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this StreamResponse.
+        r"""Sets the inputs of this StreamResponse.
 
         输入参数
 
@@ -79,7 +79,7 @@ class StreamResponse:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StreamResponse.
+        r"""Gets the job_id of this StreamResponse.
 
         流计算任务ID
 
@@ -90,7 +90,7 @@ class StreamResponse:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StreamResponse.
+        r"""Sets the job_id of this StreamResponse.
 
         流计算任务ID
 
@@ -101,7 +101,7 @@ class StreamResponse:
 
     @property
     def outputs(self):
-        """Gets the outputs of this StreamResponse.
+        r"""Gets the outputs of this StreamResponse.
 
         输出属性，最多支持10个
 
@@ -112,7 +112,7 @@ class StreamResponse:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this StreamResponse.
+        r"""Sets the outputs of this StreamResponse.
 
         输出属性，最多支持10个
 

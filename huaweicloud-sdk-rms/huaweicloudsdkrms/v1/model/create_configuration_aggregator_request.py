@@ -25,7 +25,7 @@ class CreateConfigurationAggregatorRequest:
     }
 
     def __init__(self, body=None):
-        """CreateConfigurationAggregatorRequest
+        r"""CreateConfigurationAggregatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateConfigurationAggregatorRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConfigurationAggregatorRequest.
+        r"""Gets the body of this CreateConfigurationAggregatorRequest.
 
         :return: The body of this CreateConfigurationAggregatorRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.ConfigurationAggregatorRequest`
@@ -52,7 +52,7 @@ class CreateConfigurationAggregatorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConfigurationAggregatorRequest.
+        r"""Sets the body of this CreateConfigurationAggregatorRequest.
 
         :param body: The body of this CreateConfigurationAggregatorRequest.
         :type body: :class:`huaweicloudsdkrms.v1.ConfigurationAggregatorRequest`

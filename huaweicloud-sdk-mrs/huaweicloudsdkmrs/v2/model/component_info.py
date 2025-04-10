@@ -53,7 +53,7 @@ class ComponentInfo:
     }
 
     def __init__(self, id=None, name=None, instance_group_name=None, running_status=None, ha_status=None, config_status=None, role_name=None, role_short_name=None, role_type=None, service_name=None, pair_name=None, relation_pairs=None, support_decom=None, support_reinstall=None, support_collect_stack_info=None):
-        """ComponentInfo
+        r"""ComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ComponentInfo:
 
     @property
     def id(self):
-        """Gets the id of this ComponentInfo.
+        r"""Gets the id of this ComponentInfo.
 
         组件ID。
 
@@ -152,7 +152,7 @@ class ComponentInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentInfo.
+        r"""Sets the id of this ComponentInfo.
 
         组件ID。
 
@@ -163,7 +163,7 @@ class ComponentInfo:
 
     @property
     def name(self):
-        """Gets the name of this ComponentInfo.
+        r"""Gets the name of this ComponentInfo.
 
         组件名。
 
@@ -174,7 +174,7 @@ class ComponentInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentInfo.
+        r"""Sets the name of this ComponentInfo.
 
         组件名。
 
@@ -185,7 +185,7 @@ class ComponentInfo:
 
     @property
     def instance_group_name(self):
-        """Gets the instance_group_name of this ComponentInfo.
+        r"""Gets the instance_group_name of this ComponentInfo.
 
         组件所在组名称。
 
@@ -196,7 +196,7 @@ class ComponentInfo:
 
     @instance_group_name.setter
     def instance_group_name(self, instance_group_name):
-        """Sets the instance_group_name of this ComponentInfo.
+        r"""Sets the instance_group_name of this ComponentInfo.
 
         组件所在组名称。
 
@@ -207,7 +207,7 @@ class ComponentInfo:
 
     @property
     def running_status(self):
-        """Gets the running_status of this ComponentInfo.
+        r"""Gets the running_status of this ComponentInfo.
 
         运行状态。
 
@@ -218,7 +218,7 @@ class ComponentInfo:
 
     @running_status.setter
     def running_status(self, running_status):
-        """Sets the running_status of this ComponentInfo.
+        r"""Sets the running_status of this ComponentInfo.
 
         运行状态。
 
@@ -229,7 +229,7 @@ class ComponentInfo:
 
     @property
     def ha_status(self):
-        """Gets the ha_status of this ComponentInfo.
+        r"""Gets the ha_status of this ComponentInfo.
 
         HA状态。
 
@@ -240,7 +240,7 @@ class ComponentInfo:
 
     @ha_status.setter
     def ha_status(self, ha_status):
-        """Sets the ha_status of this ComponentInfo.
+        r"""Sets the ha_status of this ComponentInfo.
 
         HA状态。
 
@@ -251,7 +251,7 @@ class ComponentInfo:
 
     @property
     def config_status(self):
-        """Gets the config_status of this ComponentInfo.
+        r"""Gets the config_status of this ComponentInfo.
 
         配置状态。
 
@@ -262,7 +262,7 @@ class ComponentInfo:
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ComponentInfo.
+        r"""Sets the config_status of this ComponentInfo.
 
         配置状态。
 
@@ -273,7 +273,7 @@ class ComponentInfo:
 
     @property
     def role_name(self):
-        """Gets the role_name of this ComponentInfo.
+        r"""Gets the role_name of this ComponentInfo.
 
         角色。
 
@@ -284,7 +284,7 @@ class ComponentInfo:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this ComponentInfo.
+        r"""Sets the role_name of this ComponentInfo.
 
         角色。
 
@@ -295,7 +295,7 @@ class ComponentInfo:
 
     @property
     def role_short_name(self):
-        """Gets the role_short_name of this ComponentInfo.
+        r"""Gets the role_short_name of this ComponentInfo.
 
         角色缩写。
 
@@ -306,7 +306,7 @@ class ComponentInfo:
 
     @role_short_name.setter
     def role_short_name(self, role_short_name):
-        """Sets the role_short_name of this ComponentInfo.
+        r"""Sets the role_short_name of this ComponentInfo.
 
         角色缩写。
 
@@ -317,7 +317,7 @@ class ComponentInfo:
 
     @property
     def role_type(self):
-        """Gets the role_type of this ComponentInfo.
+        r"""Gets the role_type of this ComponentInfo.
 
         角色类型。
 
@@ -328,7 +328,7 @@ class ComponentInfo:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this ComponentInfo.
+        r"""Sets the role_type of this ComponentInfo.
 
         角色类型。
 
@@ -339,7 +339,7 @@ class ComponentInfo:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ComponentInfo.
+        r"""Gets the service_name of this ComponentInfo.
 
         服务名。
 
@@ -350,7 +350,7 @@ class ComponentInfo:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ComponentInfo.
+        r"""Sets the service_name of this ComponentInfo.
 
         服务名。
 
@@ -361,7 +361,7 @@ class ComponentInfo:
 
     @property
     def pair_name(self):
-        """Gets the pair_name of this ComponentInfo.
+        r"""Gets the pair_name of this ComponentInfo.
 
         对名。
 
@@ -372,7 +372,7 @@ class ComponentInfo:
 
     @pair_name.setter
     def pair_name(self, pair_name):
-        """Sets the pair_name of this ComponentInfo.
+        r"""Sets the pair_name of this ComponentInfo.
 
         对名。
 
@@ -383,7 +383,7 @@ class ComponentInfo:
 
     @property
     def relation_pairs(self):
-        """Gets the relation_pairs of this ComponentInfo.
+        r"""Gets the relation_pairs of this ComponentInfo.
 
         关联对。
 
@@ -394,7 +394,7 @@ class ComponentInfo:
 
     @relation_pairs.setter
     def relation_pairs(self, relation_pairs):
-        """Sets the relation_pairs of this ComponentInfo.
+        r"""Sets the relation_pairs of this ComponentInfo.
 
         关联对。
 
@@ -405,7 +405,7 @@ class ComponentInfo:
 
     @property
     def support_decom(self):
-        """Gets the support_decom of this ComponentInfo.
+        r"""Gets the support_decom of this ComponentInfo.
 
         是否支持Decom。
 
@@ -416,7 +416,7 @@ class ComponentInfo:
 
     @support_decom.setter
     def support_decom(self, support_decom):
-        """Sets the support_decom of this ComponentInfo.
+        r"""Sets the support_decom of this ComponentInfo.
 
         是否支持Decom。
 
@@ -427,7 +427,7 @@ class ComponentInfo:
 
     @property
     def support_reinstall(self):
-        """Gets the support_reinstall of this ComponentInfo.
+        r"""Gets the support_reinstall of this ComponentInfo.
 
         是否支持重装。
 
@@ -438,7 +438,7 @@ class ComponentInfo:
 
     @support_reinstall.setter
     def support_reinstall(self, support_reinstall):
-        """Sets the support_reinstall of this ComponentInfo.
+        r"""Sets the support_reinstall of this ComponentInfo.
 
         是否支持重装。
 
@@ -449,7 +449,7 @@ class ComponentInfo:
 
     @property
     def support_collect_stack_info(self):
-        """Gets the support_collect_stack_info of this ComponentInfo.
+        r"""Gets the support_collect_stack_info of this ComponentInfo.
 
         是否支持收集堆栈信息。
 
@@ -460,7 +460,7 @@ class ComponentInfo:
 
     @support_collect_stack_info.setter
     def support_collect_stack_info(self, support_collect_stack_info):
-        """Sets the support_collect_stack_info of this ComponentInfo.
+        r"""Sets the support_collect_stack_info of this ComponentInfo.
 
         是否支持收集堆栈信息。
 

@@ -25,7 +25,7 @@ class DeleteEventSchemaRequest:
     }
 
     def __init__(self, schema_id=None):
-        """DeleteEventSchemaRequest
+        r"""DeleteEventSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEventSchemaRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this DeleteEventSchemaRequest.
+        r"""Gets the schema_id of this DeleteEventSchemaRequest.
 
         指定查询的事件模型ID
 
@@ -53,7 +53,7 @@ class DeleteEventSchemaRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this DeleteEventSchemaRequest.
+        r"""Sets the schema_id of this DeleteEventSchemaRequest.
 
         指定查询的事件模型ID
 

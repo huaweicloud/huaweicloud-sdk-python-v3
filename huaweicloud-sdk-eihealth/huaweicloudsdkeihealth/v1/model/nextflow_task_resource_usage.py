@@ -51,7 +51,7 @@ class NextflowTaskResourceUsage:
     }
 
     def __init__(self, cpu_percent=None, mem_percent=None, rchar=None, wchar=None, read_bytes=None, write_bytes=None, vmem=None, rss=None, peak_vmem=None, peak_rss=None, syscr=None, syscw=None, vol_ctxt=None, inv_ctxt=None):
-        """NextflowTaskResourceUsage
+        r"""NextflowTaskResourceUsage
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def cpu_percent(self):
-        """Gets the cpu_percent of this NextflowTaskResourceUsage.
+        r"""Gets the cpu_percent of this NextflowTaskResourceUsage.
 
         cpu占用率
 
@@ -145,7 +145,7 @@ class NextflowTaskResourceUsage:
 
     @cpu_percent.setter
     def cpu_percent(self, cpu_percent):
-        """Sets the cpu_percent of this NextflowTaskResourceUsage.
+        r"""Sets the cpu_percent of this NextflowTaskResourceUsage.
 
         cpu占用率
 
@@ -156,7 +156,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def mem_percent(self):
-        """Gets the mem_percent of this NextflowTaskResourceUsage.
+        r"""Gets the mem_percent of this NextflowTaskResourceUsage.
 
         内存占用率
 
@@ -167,7 +167,7 @@ class NextflowTaskResourceUsage:
 
     @mem_percent.setter
     def mem_percent(self, mem_percent):
-        """Sets the mem_percent of this NextflowTaskResourceUsage.
+        r"""Sets the mem_percent of this NextflowTaskResourceUsage.
 
         内存占用率
 
@@ -178,7 +178,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def rchar(self):
-        """Gets the rchar of this NextflowTaskResourceUsage.
+        r"""Gets the rchar of this NextflowTaskResourceUsage.
 
         读取字符数
 
@@ -189,7 +189,7 @@ class NextflowTaskResourceUsage:
 
     @rchar.setter
     def rchar(self, rchar):
-        """Sets the rchar of this NextflowTaskResourceUsage.
+        r"""Sets the rchar of this NextflowTaskResourceUsage.
 
         读取字符数
 
@@ -200,7 +200,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def wchar(self):
-        """Gets the wchar of this NextflowTaskResourceUsage.
+        r"""Gets the wchar of this NextflowTaskResourceUsage.
 
         写入字符数
 
@@ -211,7 +211,7 @@ class NextflowTaskResourceUsage:
 
     @wchar.setter
     def wchar(self, wchar):
-        """Sets the wchar of this NextflowTaskResourceUsage.
+        r"""Sets the wchar of this NextflowTaskResourceUsage.
 
         写入字符数
 
@@ -222,7 +222,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def read_bytes(self):
-        """Gets the read_bytes of this NextflowTaskResourceUsage.
+        r"""Gets the read_bytes of this NextflowTaskResourceUsage.
 
         读取字节数
 
@@ -233,7 +233,7 @@ class NextflowTaskResourceUsage:
 
     @read_bytes.setter
     def read_bytes(self, read_bytes):
-        """Sets the read_bytes of this NextflowTaskResourceUsage.
+        r"""Sets the read_bytes of this NextflowTaskResourceUsage.
 
         读取字节数
 
@@ -244,7 +244,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def write_bytes(self):
-        """Gets the write_bytes of this NextflowTaskResourceUsage.
+        r"""Gets the write_bytes of this NextflowTaskResourceUsage.
 
         写入字符数
 
@@ -255,7 +255,7 @@ class NextflowTaskResourceUsage:
 
     @write_bytes.setter
     def write_bytes(self, write_bytes):
-        """Sets the write_bytes of this NextflowTaskResourceUsage.
+        r"""Sets the write_bytes of this NextflowTaskResourceUsage.
 
         写入字符数
 
@@ -266,7 +266,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def vmem(self):
-        """Gets the vmem of this NextflowTaskResourceUsage.
+        r"""Gets the vmem of this NextflowTaskResourceUsage.
 
         process虚拟内存大小
 
@@ -277,7 +277,7 @@ class NextflowTaskResourceUsage:
 
     @vmem.setter
     def vmem(self, vmem):
-        """Sets the vmem of this NextflowTaskResourceUsage.
+        r"""Sets the vmem of this NextflowTaskResourceUsage.
 
         process虚拟内存大小
 
@@ -288,7 +288,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def rss(self):
-        """Gets the rss of this NextflowTaskResourceUsage.
+        r"""Gets the rss of this NextflowTaskResourceUsage.
 
         process实际内存大小
 
@@ -299,7 +299,7 @@ class NextflowTaskResourceUsage:
 
     @rss.setter
     def rss(self, rss):
-        """Sets the rss of this NextflowTaskResourceUsage.
+        r"""Sets the rss of this NextflowTaskResourceUsage.
 
         process实际内存大小
 
@@ -310,7 +310,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def peak_vmem(self):
-        """Gets the peak_vmem of this NextflowTaskResourceUsage.
+        r"""Gets the peak_vmem of this NextflowTaskResourceUsage.
 
         process虚拟内存峰值
 
@@ -321,7 +321,7 @@ class NextflowTaskResourceUsage:
 
     @peak_vmem.setter
     def peak_vmem(self, peak_vmem):
-        """Sets the peak_vmem of this NextflowTaskResourceUsage.
+        r"""Sets the peak_vmem of this NextflowTaskResourceUsage.
 
         process虚拟内存峰值
 
@@ -332,7 +332,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def peak_rss(self):
-        """Gets the peak_rss of this NextflowTaskResourceUsage.
+        r"""Gets the peak_rss of this NextflowTaskResourceUsage.
 
         process实际内存峰值
 
@@ -343,7 +343,7 @@ class NextflowTaskResourceUsage:
 
     @peak_rss.setter
     def peak_rss(self, peak_rss):
-        """Sets the peak_rss of this NextflowTaskResourceUsage.
+        r"""Sets the peak_rss of this NextflowTaskResourceUsage.
 
         process实际内存峰值
 
@@ -354,7 +354,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def syscr(self):
-        """Gets the syscr of this NextflowTaskResourceUsage.
+        r"""Gets the syscr of this NextflowTaskResourceUsage.
 
         系统调用次数
 
@@ -365,7 +365,7 @@ class NextflowTaskResourceUsage:
 
     @syscr.setter
     def syscr(self, syscr):
-        """Sets the syscr of this NextflowTaskResourceUsage.
+        r"""Sets the syscr of this NextflowTaskResourceUsage.
 
         系统调用次数
 
@@ -376,7 +376,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def syscw(self):
-        """Gets the syscw of this NextflowTaskResourceUsage.
+        r"""Gets the syscw of this NextflowTaskResourceUsage.
 
         系统调用次数
 
@@ -387,7 +387,7 @@ class NextflowTaskResourceUsage:
 
     @syscw.setter
     def syscw(self, syscw):
-        """Sets the syscw of this NextflowTaskResourceUsage.
+        r"""Sets the syscw of this NextflowTaskResourceUsage.
 
         系统调用次数
 
@@ -398,7 +398,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def vol_ctxt(self):
-        """Gets the vol_ctxt of this NextflowTaskResourceUsage.
+        r"""Gets the vol_ctxt of this NextflowTaskResourceUsage.
 
         自愿上下文切换数
 
@@ -409,7 +409,7 @@ class NextflowTaskResourceUsage:
 
     @vol_ctxt.setter
     def vol_ctxt(self, vol_ctxt):
-        """Sets the vol_ctxt of this NextflowTaskResourceUsage.
+        r"""Sets the vol_ctxt of this NextflowTaskResourceUsage.
 
         自愿上下文切换数
 
@@ -420,7 +420,7 @@ class NextflowTaskResourceUsage:
 
     @property
     def inv_ctxt(self):
-        """Gets the inv_ctxt of this NextflowTaskResourceUsage.
+        r"""Gets the inv_ctxt of this NextflowTaskResourceUsage.
 
         非自愿上下文切换数
 
@@ -431,7 +431,7 @@ class NextflowTaskResourceUsage:
 
     @inv_ctxt.setter
     def inv_ctxt(self, inv_ctxt):
-        """Sets the inv_ctxt of this NextflowTaskResourceUsage.
+        r"""Sets the inv_ctxt of this NextflowTaskResourceUsage.
 
         非自愿上下文切换数
 

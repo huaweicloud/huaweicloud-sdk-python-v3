@@ -33,7 +33,7 @@ class ListPortsRequest:
     }
 
     def __init__(self, marker=None, limit=None, ip_address=None, subnet_id=None, is_used=None):
-        """ListPortsRequest
+        r"""ListPortsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListPortsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPortsRequest.
+        r"""Gets the marker of this ListPortsRequest.
 
         分页查询的起始资源ID。
 
@@ -82,7 +82,7 @@ class ListPortsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPortsRequest.
+        r"""Sets the marker of this ListPortsRequest.
 
         分页查询的起始资源ID。
 
@@ -93,7 +93,7 @@ class ListPortsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortsRequest.
+        r"""Gets the limit of this ListPortsRequest.
 
         分页查询每页返回的记录个数。
 
@@ -104,7 +104,7 @@ class ListPortsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortsRequest.
+        r"""Sets the limit of this ListPortsRequest.
 
         分页查询每页返回的记录个数。
 
@@ -115,7 +115,7 @@ class ListPortsRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ListPortsRequest.
+        r"""Gets the ip_address of this ListPortsRequest.
 
         ip地址。
 
@@ -126,7 +126,7 @@ class ListPortsRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ListPortsRequest.
+        r"""Sets the ip_address of this ListPortsRequest.
 
         ip地址。
 
@@ -137,7 +137,7 @@ class ListPortsRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListPortsRequest.
+        r"""Gets the subnet_id of this ListPortsRequest.
 
         子网ID。
 
@@ -148,7 +148,7 @@ class ListPortsRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListPortsRequest.
+        r"""Sets the subnet_id of this ListPortsRequest.
 
         子网ID。
 
@@ -159,7 +159,7 @@ class ListPortsRequest:
 
     @property
     def is_used(self):
-        """Gets the is_used of this ListPortsRequest.
+        r"""Gets the is_used of this ListPortsRequest.
 
         是否被使用。
 
@@ -170,7 +170,7 @@ class ListPortsRequest:
 
     @is_used.setter
     def is_used(self, is_used):
-        """Sets the is_used of this ListPortsRequest.
+        r"""Sets the is_used of this ListPortsRequest.
 
         是否被使用。
 

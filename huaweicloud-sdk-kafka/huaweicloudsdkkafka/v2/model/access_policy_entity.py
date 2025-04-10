@@ -27,7 +27,7 @@ class AccessPolicyEntity:
     }
 
     def __init__(self, user_name=None, access_policy=None):
-        """AccessPolicyEntity
+        r"""AccessPolicyEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessPolicyEntity:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AccessPolicyEntity.
+        r"""Gets the user_name of this AccessPolicyEntity.
 
         用户名称。  设置用户权限时，为必选参数。
 
@@ -61,7 +61,7 @@ class AccessPolicyEntity:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AccessPolicyEntity.
+        r"""Sets the user_name of this AccessPolicyEntity.
 
         用户名称。  设置用户权限时，为必选参数。
 
@@ -72,7 +72,7 @@ class AccessPolicyEntity:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this AccessPolicyEntity.
+        r"""Gets the access_policy of this AccessPolicyEntity.
 
         权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。  设置用户权限时，为必选参数。
 
@@ -83,7 +83,7 @@ class AccessPolicyEntity:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this AccessPolicyEntity.
+        r"""Sets the access_policy of this AccessPolicyEntity.
 
         权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。  设置用户权限时，为必选参数。
 

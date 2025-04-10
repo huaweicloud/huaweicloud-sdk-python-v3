@@ -25,7 +25,7 @@ class RestartCloudPhoneServerRequestBody:
     }
 
     def __init__(self, server_ids=None):
-        """RestartCloudPhoneServerRequestBody
+        r"""RestartCloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestartCloudPhoneServerRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this RestartCloudPhoneServerRequestBody.
+        r"""Gets the server_ids of this RestartCloudPhoneServerRequestBody.
 
         云手机服务器id列表。传入的服务器id个数范围为[1, 100]
 
@@ -53,7 +53,7 @@ class RestartCloudPhoneServerRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this RestartCloudPhoneServerRequestBody.
+        r"""Sets the server_ids of this RestartCloudPhoneServerRequestBody.
 
         云手机服务器id列表。传入的服务器id个数范围为[1, 100]
 

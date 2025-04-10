@@ -28,7 +28,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
     }
 
     def __init__(self, security_policy=None, request_id=None):
-        """ShowSecurityPolicyResponse
+        r"""ShowSecurityPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
 
     @property
     def security_policy(self):
-        """Gets the security_policy of this ShowSecurityPolicyResponse.
+        r"""Gets the security_policy of this ShowSecurityPolicyResponse.
 
         :return: The security_policy of this ShowSecurityPolicyResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.SecurityPolicy`
@@ -60,7 +60,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
 
     @security_policy.setter
     def security_policy(self, security_policy):
-        """Sets the security_policy of this ShowSecurityPolicyResponse.
+        r"""Sets the security_policy of this ShowSecurityPolicyResponse.
 
         :param security_policy: The security_policy of this ShowSecurityPolicyResponse.
         :type security_policy: :class:`huaweicloudsdkelb.v3.SecurityPolicy`
@@ -69,7 +69,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowSecurityPolicyResponse.
+        r"""Gets the request_id of this ShowSecurityPolicyResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ShowSecurityPolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowSecurityPolicyResponse.
+        r"""Sets the request_id of this ShowSecurityPolicyResponse.
 
         请求ID。  注：自动生成 。
 

@@ -25,7 +25,7 @@ class ShowPipelineJobRequest:
     }
 
     def __init__(self, pipeline_id=None):
-        """ShowPipelineJobRequest
+        r"""ShowPipelineJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPipelineJobRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipelineJobRequest.
+        r"""Gets the pipeline_id of this ShowPipelineJobRequest.
 
         管道ID
 
@@ -53,7 +53,7 @@ class ShowPipelineJobRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipelineJobRequest.
+        r"""Sets the pipeline_id of this ShowPipelineJobRequest.
 
         管道ID
 

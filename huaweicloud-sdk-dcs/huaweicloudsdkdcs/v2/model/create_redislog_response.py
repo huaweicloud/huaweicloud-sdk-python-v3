@@ -24,7 +24,7 @@ class CreateRedislogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateRedislogResponse
+        r"""CreateRedislogResponse
 
         The model defined in huaweicloud sdk
 

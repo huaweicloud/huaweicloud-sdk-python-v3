@@ -29,7 +29,7 @@ class ListEcnRequest:
     }
 
     def __init__(self, limit=None, marker=None, enterprise_project_id=None):
-        """ListEcnRequest
+        r"""ListEcnRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListEcnRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEcnRequest.
+        r"""Gets the limit of this ListEcnRequest.
 
         分页查询时每页返回的记录数量
 
@@ -68,7 +68,7 @@ class ListEcnRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEcnRequest.
+        r"""Sets the limit of this ListEcnRequest.
 
         分页查询时每页返回的记录数量
 
@@ -79,7 +79,7 @@ class ListEcnRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEcnRequest.
+        r"""Gets the marker of this ListEcnRequest.
 
         marker标识，请求此marker之后的数据
 
@@ -90,7 +90,7 @@ class ListEcnRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEcnRequest.
+        r"""Sets the marker of this ListEcnRequest.
 
         marker标识，请求此marker之后的数据
 
@@ -101,7 +101,7 @@ class ListEcnRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEcnRequest.
+        r"""Gets the enterprise_project_id of this ListEcnRequest.
 
         企业项目id
 
@@ -112,7 +112,7 @@ class ListEcnRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEcnRequest.
+        r"""Sets the enterprise_project_id of this ListEcnRequest.
 
         企业项目id
 

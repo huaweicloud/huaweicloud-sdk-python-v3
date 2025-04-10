@@ -53,7 +53,7 @@ class StudentViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, description=None, grade=None, id=None, kiaguid=None, last_update_time=None, modifier=None, name=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, security_level=None, tenant=None):
-        """StudentViewDTO
+        r"""StudentViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class StudentViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this StudentViewDTO.
+        r"""Gets the class_name of this StudentViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -152,7 +152,7 @@ class StudentViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this StudentViewDTO.
+        r"""Sets the class_name of this StudentViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -163,7 +163,7 @@ class StudentViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StudentViewDTO.
+        r"""Gets the create_time of this StudentViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -174,7 +174,7 @@ class StudentViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StudentViewDTO.
+        r"""Sets the create_time of this StudentViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -185,7 +185,7 @@ class StudentViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this StudentViewDTO.
+        r"""Gets the creator of this StudentViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -196,7 +196,7 @@ class StudentViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this StudentViewDTO.
+        r"""Sets the creator of this StudentViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -207,7 +207,7 @@ class StudentViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this StudentViewDTO.
+        r"""Gets the description of this StudentViewDTO.
 
         **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -218,7 +218,7 @@ class StudentViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StudentViewDTO.
+        r"""Sets the description of this StudentViewDTO.
 
         **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -229,7 +229,7 @@ class StudentViewDTO:
 
     @property
     def grade(self):
-        """Gets the grade of this StudentViewDTO.
+        r"""Gets the grade of this StudentViewDTO.
 
         **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -240,7 +240,7 @@ class StudentViewDTO:
 
     @grade.setter
     def grade(self, grade):
-        """Sets the grade of this StudentViewDTO.
+        r"""Sets the grade of this StudentViewDTO.
 
         **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -251,7 +251,7 @@ class StudentViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this StudentViewDTO.
+        r"""Gets the id of this StudentViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -262,7 +262,7 @@ class StudentViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StudentViewDTO.
+        r"""Sets the id of this StudentViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -273,7 +273,7 @@ class StudentViewDTO:
 
     @property
     def kiaguid(self):
-        """Gets the kiaguid of this StudentViewDTO.
+        r"""Gets the kiaguid of this StudentViewDTO.
 
         **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -284,7 +284,7 @@ class StudentViewDTO:
 
     @kiaguid.setter
     def kiaguid(self, kiaguid):
-        """Sets the kiaguid of this StudentViewDTO.
+        r"""Sets the kiaguid of this StudentViewDTO.
 
         **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -295,7 +295,7 @@ class StudentViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this StudentViewDTO.
+        r"""Gets the last_update_time of this StudentViewDTO.
 
         **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -306,7 +306,7 @@ class StudentViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this StudentViewDTO.
+        r"""Sets the last_update_time of this StudentViewDTO.
 
         **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -317,7 +317,7 @@ class StudentViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this StudentViewDTO.
+        r"""Gets the modifier of this StudentViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -328,7 +328,7 @@ class StudentViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this StudentViewDTO.
+        r"""Sets the modifier of this StudentViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -339,7 +339,7 @@ class StudentViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this StudentViewDTO.
+        r"""Gets the name of this StudentViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -350,7 +350,7 @@ class StudentViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StudentViewDTO.
+        r"""Sets the name of this StudentViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -361,7 +361,7 @@ class StudentViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this StudentViewDTO.
+        r"""Gets the rdm_delete_flag of this StudentViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -372,7 +372,7 @@ class StudentViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this StudentViewDTO.
+        r"""Sets the rdm_delete_flag of this StudentViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -383,7 +383,7 @@ class StudentViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this StudentViewDTO.
+        r"""Gets the rdm_extension_type of this StudentViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -394,7 +394,7 @@ class StudentViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this StudentViewDTO.
+        r"""Sets the rdm_extension_type of this StudentViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -405,7 +405,7 @@ class StudentViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this StudentViewDTO.
+        r"""Gets the rdm_version of this StudentViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -416,7 +416,7 @@ class StudentViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this StudentViewDTO.
+        r"""Sets the rdm_version of this StudentViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -427,7 +427,7 @@ class StudentViewDTO:
 
     @property
     def security_level(self):
-        """Gets the security_level of this StudentViewDTO.
+        r"""Gets the security_level of this StudentViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -438,7 +438,7 @@ class StudentViewDTO:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this StudentViewDTO.
+        r"""Sets the security_level of this StudentViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。  - CONFIDENTIAL：机密。  - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -449,7 +449,7 @@ class StudentViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this StudentViewDTO.
+        r"""Gets the tenant of this StudentViewDTO.
 
         :return: The tenant of this StudentViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -458,7 +458,7 @@ class StudentViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this StudentViewDTO.
+        r"""Sets the tenant of this StudentViewDTO.
 
         :param tenant: The tenant of this StudentViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`

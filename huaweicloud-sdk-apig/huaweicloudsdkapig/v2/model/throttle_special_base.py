@@ -33,7 +33,7 @@ class ThrottleSpecialBase:
     }
 
     def __init__(self, id=None, call_limits=None, apply_time=None, app_name=None, app_id=None):
-        """ThrottleSpecialBase
+        r"""ThrottleSpecialBase
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ThrottleSpecialBase:
 
     @property
     def id(self):
-        """Gets the id of this ThrottleSpecialBase.
+        r"""Gets the id of this ThrottleSpecialBase.
 
         特殊配置的编号
 
@@ -82,7 +82,7 @@ class ThrottleSpecialBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ThrottleSpecialBase.
+        r"""Sets the id of this ThrottleSpecialBase.
 
         特殊配置的编号
 
@@ -93,7 +93,7 @@ class ThrottleSpecialBase:
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this ThrottleSpecialBase.
+        r"""Gets the call_limits of this ThrottleSpecialBase.
 
         特殊对象在流控时间内能够访问API的最大次数限制
 
@@ -104,7 +104,7 @@ class ThrottleSpecialBase:
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this ThrottleSpecialBase.
+        r"""Sets the call_limits of this ThrottleSpecialBase.
 
         特殊对象在流控时间内能够访问API的最大次数限制
 
@@ -115,7 +115,7 @@ class ThrottleSpecialBase:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this ThrottleSpecialBase.
+        r"""Gets the apply_time of this ThrottleSpecialBase.
 
         设置时间
 
@@ -126,7 +126,7 @@ class ThrottleSpecialBase:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this ThrottleSpecialBase.
+        r"""Sets the apply_time of this ThrottleSpecialBase.
 
         设置时间
 
@@ -137,7 +137,7 @@ class ThrottleSpecialBase:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ThrottleSpecialBase.
+        r"""Gets the app_name of this ThrottleSpecialBase.
 
         作用的APP名称
 
@@ -148,7 +148,7 @@ class ThrottleSpecialBase:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ThrottleSpecialBase.
+        r"""Sets the app_name of this ThrottleSpecialBase.
 
         作用的APP名称
 
@@ -159,7 +159,7 @@ class ThrottleSpecialBase:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ThrottleSpecialBase.
+        r"""Gets the app_id of this ThrottleSpecialBase.
 
         作用的APP编号
 
@@ -170,7 +170,7 @@ class ThrottleSpecialBase:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ThrottleSpecialBase.
+        r"""Sets the app_id of this ThrottleSpecialBase.
 
         作用的APP编号
 

@@ -27,7 +27,7 @@ class ImportHostToEnvironmentRequestBody:
     }
 
     def __init__(self, group_id=None, host_ids=None):
-        """ImportHostToEnvironmentRequestBody
+        r"""ImportHostToEnvironmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ImportHostToEnvironmentRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ImportHostToEnvironmentRequestBody.
+        r"""Gets the group_id of this ImportHostToEnvironmentRequestBody.
 
         主机集群id
 
@@ -59,7 +59,7 @@ class ImportHostToEnvironmentRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ImportHostToEnvironmentRequestBody.
+        r"""Sets the group_id of this ImportHostToEnvironmentRequestBody.
 
         主机集群id
 
@@ -70,7 +70,7 @@ class ImportHostToEnvironmentRequestBody:
 
     @property
     def host_ids(self):
-        """Gets the host_ids of this ImportHostToEnvironmentRequestBody.
+        r"""Gets the host_ids of this ImportHostToEnvironmentRequestBody.
 
         要导入的主机id列表
 
@@ -81,7 +81,7 @@ class ImportHostToEnvironmentRequestBody:
 
     @host_ids.setter
     def host_ids(self, host_ids):
-        """Sets the host_ids of this ImportHostToEnvironmentRequestBody.
+        r"""Sets the host_ids of this ImportHostToEnvironmentRequestBody.
 
         要导入的主机id列表
 

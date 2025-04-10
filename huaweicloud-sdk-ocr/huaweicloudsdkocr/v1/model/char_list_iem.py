@@ -29,7 +29,7 @@ class CharListIem:
     }
 
     def __init__(self, char=None, char_confidence=None, char_location=None):
-        """CharListIem
+        r"""CharListIem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CharListIem:
 
     @property
     def char(self):
-        """Gets the char of this CharListIem.
+        r"""Gets the char of this CharListIem.
 
         单字符识别结果。 
 
@@ -68,7 +68,7 @@ class CharListIem:
 
     @char.setter
     def char(self, char):
-        """Sets the char of this CharListIem.
+        r"""Sets the char of this CharListIem.
 
         单字符识别结果。 
 
@@ -79,7 +79,7 @@ class CharListIem:
 
     @property
     def char_confidence(self):
-        """Gets the char_confidence of this CharListIem.
+        r"""Gets the char_confidence of this CharListIem.
 
         单字符的置信度，置信度越大，表示本次识别的文字的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -90,7 +90,7 @@ class CharListIem:
 
     @char_confidence.setter
     def char_confidence(self, char_confidence):
-        """Sets the char_confidence of this CharListIem.
+        r"""Sets the char_confidence of this CharListIem.
 
         单字符的置信度，置信度越大，表示本次识别的文字的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -101,7 +101,7 @@ class CharListIem:
 
     @property
     def char_location(self):
-        """Gets the char_location of this CharListIem.
+        r"""Gets the char_location of this CharListIem.
 
         单字符的位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -112,7 +112,7 @@ class CharListIem:
 
     @char_location.setter
     def char_location(self, char_location):
-        """Sets the char_location of this CharListIem.
+        r"""Sets the char_location of this CharListIem.
 
         单字符的位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

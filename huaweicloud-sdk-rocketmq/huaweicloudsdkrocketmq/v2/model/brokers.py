@@ -27,7 +27,7 @@ class Brokers:
     }
 
     def __init__(self, broker_name=None, queues=None):
-        """Brokers
+        r"""Brokers
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Brokers:
 
     @property
     def broker_name(self):
-        """Gets the broker_name of this Brokers.
+        r"""Gets the broker_name of this Brokers.
 
         Topic关联代理名称。
 
@@ -61,7 +61,7 @@ class Brokers:
 
     @broker_name.setter
     def broker_name(self, broker_name):
-        """Sets the broker_name of this Brokers.
+        r"""Sets the broker_name of this Brokers.
 
         Topic关联代理名称。
 
@@ -72,7 +72,7 @@ class Brokers:
 
     @property
     def queues(self):
-        """Gets the queues of this Brokers.
+        r"""Gets the queues of this Brokers.
 
         关联代理的队列详情。
 
@@ -83,7 +83,7 @@ class Brokers:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this Brokers.
+        r"""Sets the queues of this Brokers.
 
         关联代理的队列详情。
 

@@ -26,7 +26,7 @@ class ExecuteScriptResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ExecuteScriptResponse
+        r"""ExecuteScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteScriptResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ExecuteScriptResponse.
+        r"""Gets the data of this ExecuteScriptResponse.
 
         execute_uuid
 
@@ -55,7 +55,7 @@ class ExecuteScriptResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ExecuteScriptResponse.
+        r"""Sets the data of this ExecuteScriptResponse.
 
         execute_uuid
 

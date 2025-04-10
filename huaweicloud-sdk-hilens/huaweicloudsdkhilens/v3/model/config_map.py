@@ -43,7 +43,7 @@ class ConfigMap:
     }
 
     def __init__(self, configs=None, created_at=None, description=None, id=None, name=None, project_id=None, tags=None, type=None, updated_at=None, workspace_id=None):
-        """ConfigMap
+        r"""ConfigMap
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ConfigMap:
 
     @property
     def configs(self):
-        """Gets the configs of this ConfigMap.
+        r"""Gets the configs of this ConfigMap.
 
         配置列表
 
@@ -114,7 +114,7 @@ class ConfigMap:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ConfigMap.
+        r"""Sets the configs of this ConfigMap.
 
         配置列表
 
@@ -125,7 +125,7 @@ class ConfigMap:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ConfigMap.
+        r"""Gets the created_at of this ConfigMap.
 
         创建时间
 
@@ -136,7 +136,7 @@ class ConfigMap:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ConfigMap.
+        r"""Sets the created_at of this ConfigMap.
 
         创建时间
 
@@ -147,7 +147,7 @@ class ConfigMap:
 
     @property
     def description(self):
-        """Gets the description of this ConfigMap.
+        r"""Gets the description of this ConfigMap.
 
         描述
 
@@ -158,7 +158,7 @@ class ConfigMap:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigMap.
+        r"""Sets the description of this ConfigMap.
 
         描述
 
@@ -169,7 +169,7 @@ class ConfigMap:
 
     @property
     def id(self):
-        """Gets the id of this ConfigMap.
+        r"""Gets the id of this ConfigMap.
 
         配置项ID
 
@@ -180,7 +180,7 @@ class ConfigMap:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigMap.
+        r"""Sets the id of this ConfigMap.
 
         配置项ID
 
@@ -191,7 +191,7 @@ class ConfigMap:
 
     @property
     def name(self):
-        """Gets the name of this ConfigMap.
+        r"""Gets the name of this ConfigMap.
 
         名称
 
@@ -202,7 +202,7 @@ class ConfigMap:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigMap.
+        r"""Sets the name of this ConfigMap.
 
         名称
 
@@ -213,7 +213,7 @@ class ConfigMap:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ConfigMap.
+        r"""Gets the project_id of this ConfigMap.
 
         项目ID
 
@@ -224,7 +224,7 @@ class ConfigMap:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ConfigMap.
+        r"""Sets the project_id of this ConfigMap.
 
         项目ID
 
@@ -235,7 +235,7 @@ class ConfigMap:
 
     @property
     def tags(self):
-        """Gets the tags of this ConfigMap.
+        r"""Gets the tags of this ConfigMap.
 
         标签列表
 
@@ -246,7 +246,7 @@ class ConfigMap:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ConfigMap.
+        r"""Sets the tags of this ConfigMap.
 
         标签列表
 
@@ -257,7 +257,7 @@ class ConfigMap:
 
     @property
     def type(self):
-        """Gets the type of this ConfigMap.
+        r"""Gets the type of this ConfigMap.
 
         类型
 
@@ -268,7 +268,7 @@ class ConfigMap:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigMap.
+        r"""Sets the type of this ConfigMap.
 
         类型
 
@@ -279,7 +279,7 @@ class ConfigMap:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ConfigMap.
+        r"""Gets the updated_at of this ConfigMap.
 
         更新时间
 
@@ -290,7 +290,7 @@ class ConfigMap:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ConfigMap.
+        r"""Sets the updated_at of this ConfigMap.
 
         更新时间
 
@@ -301,7 +301,7 @@ class ConfigMap:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ConfigMap.
+        r"""Gets the workspace_id of this ConfigMap.
 
         工作空间ID
 
@@ -312,7 +312,7 @@ class ConfigMap:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ConfigMap.
+        r"""Sets the workspace_id of this ConfigMap.
 
         工作空间ID
 

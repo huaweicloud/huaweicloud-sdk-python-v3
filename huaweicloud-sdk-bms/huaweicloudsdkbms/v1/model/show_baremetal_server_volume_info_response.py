@@ -26,7 +26,7 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
     }
 
     def __init__(self, volume_attachments=None):
-        """ShowBaremetalServerVolumeInfoResponse
+        r"""ShowBaremetalServerVolumeInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
 
     @property
     def volume_attachments(self):
-        """Gets the volume_attachments of this ShowBaremetalServerVolumeInfoResponse.
+        r"""Gets the volume_attachments of this ShowBaremetalServerVolumeInfoResponse.
 
         裸金属服务器挂载信息列表，详情请参见表2 volumeAttachments字段数据结构说明。
 
@@ -55,7 +55,7 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
 
     @volume_attachments.setter
     def volume_attachments(self, volume_attachments):
-        """Sets the volume_attachments of this ShowBaremetalServerVolumeInfoResponse.
+        r"""Sets the volume_attachments of this ShowBaremetalServerVolumeInfoResponse.
 
         裸金属服务器挂载信息列表，详情请参见表2 volumeAttachments字段数据结构说明。
 

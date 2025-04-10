@@ -25,7 +25,7 @@ class CreateProtectionGroupRequestBody:
     }
 
     def __init__(self, server_group=None):
-        """CreateProtectionGroupRequestBody
+        r"""CreateProtectionGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateProtectionGroupRequestBody:
 
     @property
     def server_group(self):
-        """Gets the server_group of this CreateProtectionGroupRequestBody.
+        r"""Gets the server_group of this CreateProtectionGroupRequestBody.
 
         :return: The server_group of this CreateProtectionGroupRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupRequestParams`
@@ -51,7 +51,7 @@ class CreateProtectionGroupRequestBody:
 
     @server_group.setter
     def server_group(self, server_group):
-        """Sets the server_group of this CreateProtectionGroupRequestBody.
+        r"""Sets the server_group of this CreateProtectionGroupRequestBody.
 
         :param server_group: The server_group of this CreateProtectionGroupRequestBody.
         :type server_group: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupRequestParams`

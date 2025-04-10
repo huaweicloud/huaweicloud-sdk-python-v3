@@ -32,7 +32,7 @@ class ListSimCardsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, sim_cards=None):
-        """ListSimCardsResponse
+        r"""ListSimCardsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimCardsResponse.
+        r"""Gets the limit of this ListSimCardsResponse.
 
         每页记录数
 
@@ -76,7 +76,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimCardsResponse.
+        r"""Sets the limit of this ListSimCardsResponse.
 
         每页记录数
 
@@ -87,7 +87,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimCardsResponse.
+        r"""Gets the offset of this ListSimCardsResponse.
 
         页码
 
@@ -98,7 +98,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimCardsResponse.
+        r"""Sets the offset of this ListSimCardsResponse.
 
         页码
 
@@ -109,7 +109,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSimCardsResponse.
+        r"""Gets the count of this ListSimCardsResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSimCardsResponse.
+        r"""Sets the count of this ListSimCardsResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @property
     def sim_cards(self):
-        """Gets the sim_cards of this ListSimCardsResponse.
+        r"""Gets the sim_cards of this ListSimCardsResponse.
 
         sim卡数据集合
 
@@ -142,7 +142,7 @@ class ListSimCardsResponse(SdkResponse):
 
     @sim_cards.setter
     def sim_cards(self, sim_cards):
-        """Sets the sim_cards of this ListSimCardsResponse.
+        r"""Sets the sim_cards of this ListSimCardsResponse.
 
         sim卡数据集合
 

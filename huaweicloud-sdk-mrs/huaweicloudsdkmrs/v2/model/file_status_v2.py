@@ -45,7 +45,7 @@ class FileStatusV2:
     }
 
     def __init__(self, path_suffix=None, owner=None, group=None, permission=None, replication=None, block_size=None, length=None, type=None, children_num=None, access_time=None, modification_time=None):
-        """FileStatusV2
+        r"""FileStatusV2
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class FileStatusV2:
 
     @property
     def path_suffix(self):
-        """Gets the path_suffix of this FileStatusV2.
+        r"""Gets the path_suffix of this FileStatusV2.
 
         文件在当前目录下的后缀，如获取“/tmp”目录，下面的“/tmp/test”文件，此处path_suffix内容为“test”。
 
@@ -124,7 +124,7 @@ class FileStatusV2:
 
     @path_suffix.setter
     def path_suffix(self, path_suffix):
-        """Sets the path_suffix of this FileStatusV2.
+        r"""Sets the path_suffix of this FileStatusV2.
 
         文件在当前目录下的后缀，如获取“/tmp”目录，下面的“/tmp/test”文件，此处path_suffix内容为“test”。
 
@@ -135,7 +135,7 @@ class FileStatusV2:
 
     @property
     def owner(self):
-        """Gets the owner of this FileStatusV2.
+        r"""Gets the owner of this FileStatusV2.
 
         文件拥有者。
 
@@ -146,7 +146,7 @@ class FileStatusV2:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this FileStatusV2.
+        r"""Sets the owner of this FileStatusV2.
 
         文件拥有者。
 
@@ -157,7 +157,7 @@ class FileStatusV2:
 
     @property
     def group(self):
-        """Gets the group of this FileStatusV2.
+        r"""Gets the group of this FileStatusV2.
 
         文件属组。
 
@@ -168,7 +168,7 @@ class FileStatusV2:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this FileStatusV2.
+        r"""Sets the group of this FileStatusV2.
 
         文件属组。
 
@@ -179,7 +179,7 @@ class FileStatusV2:
 
     @property
     def permission(self):
-        """Gets the permission of this FileStatusV2.
+        r"""Gets the permission of this FileStatusV2.
 
         权限信息。
 
@@ -190,7 +190,7 @@ class FileStatusV2:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this FileStatusV2.
+        r"""Sets the permission of this FileStatusV2.
 
         权限信息。
 
@@ -201,7 +201,7 @@ class FileStatusV2:
 
     @property
     def replication(self):
-        """Gets the replication of this FileStatusV2.
+        r"""Gets the replication of this FileStatusV2.
 
         副本数。
 
@@ -212,7 +212,7 @@ class FileStatusV2:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this FileStatusV2.
+        r"""Sets the replication of this FileStatusV2.
 
         副本数。
 
@@ -223,7 +223,7 @@ class FileStatusV2:
 
     @property
     def block_size(self):
-        """Gets the block_size of this FileStatusV2.
+        r"""Gets the block_size of this FileStatusV2.
 
         块大小。
 
@@ -234,7 +234,7 @@ class FileStatusV2:
 
     @block_size.setter
     def block_size(self, block_size):
-        """Sets the block_size of this FileStatusV2.
+        r"""Sets the block_size of this FileStatusV2.
 
         块大小。
 
@@ -245,7 +245,7 @@ class FileStatusV2:
 
     @property
     def length(self):
-        """Gets the length of this FileStatusV2.
+        r"""Gets the length of this FileStatusV2.
 
         文件长度。
 
@@ -256,7 +256,7 @@ class FileStatusV2:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this FileStatusV2.
+        r"""Sets the length of this FileStatusV2.
 
         文件长度。
 
@@ -267,7 +267,7 @@ class FileStatusV2:
 
     @property
     def type(self):
-        """Gets the type of this FileStatusV2.
+        r"""Gets the type of this FileStatusV2.
 
         文件类型： - FILE：文件 - DIRECTORY：目录
 
@@ -278,7 +278,7 @@ class FileStatusV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FileStatusV2.
+        r"""Sets the type of this FileStatusV2.
 
         文件类型： - FILE：文件 - DIRECTORY：目录
 
@@ -289,7 +289,7 @@ class FileStatusV2:
 
     @property
     def children_num(self):
-        """Gets the children_num of this FileStatusV2.
+        r"""Gets the children_num of this FileStatusV2.
 
         该目录下的文件条目数。
 
@@ -300,7 +300,7 @@ class FileStatusV2:
 
     @children_num.setter
     def children_num(self, children_num):
-        """Sets the children_num of this FileStatusV2.
+        r"""Sets the children_num of this FileStatusV2.
 
         该目录下的文件条目数。
 
@@ -311,7 +311,7 @@ class FileStatusV2:
 
     @property
     def access_time(self):
-        """Gets the access_time of this FileStatusV2.
+        r"""Gets the access_time of this FileStatusV2.
 
         文件访问时间。
 
@@ -322,7 +322,7 @@ class FileStatusV2:
 
     @access_time.setter
     def access_time(self, access_time):
-        """Sets the access_time of this FileStatusV2.
+        r"""Sets the access_time of this FileStatusV2.
 
         文件访问时间。
 
@@ -333,7 +333,7 @@ class FileStatusV2:
 
     @property
     def modification_time(self):
-        """Gets the modification_time of this FileStatusV2.
+        r"""Gets the modification_time of this FileStatusV2.
 
         文件修改时间。
 
@@ -344,7 +344,7 @@ class FileStatusV2:
 
     @modification_time.setter
     def modification_time(self, modification_time):
-        """Sets the modification_time of this FileStatusV2.
+        r"""Sets the modification_time of this FileStatusV2.
 
         文件修改时间。
 

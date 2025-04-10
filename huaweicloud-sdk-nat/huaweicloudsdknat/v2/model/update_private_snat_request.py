@@ -27,7 +27,7 @@ class UpdatePrivateSnatRequest:
     }
 
     def __init__(self, snat_rule_id=None, body=None):
-        """UpdatePrivateSnatRequest
+        r"""UpdatePrivateSnatRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePrivateSnatRequest:
 
     @property
     def snat_rule_id(self):
-        """Gets the snat_rule_id of this UpdatePrivateSnatRequest.
+        r"""Gets the snat_rule_id of this UpdatePrivateSnatRequest.
 
         SNAT规则的ID。
 
@@ -60,7 +60,7 @@ class UpdatePrivateSnatRequest:
 
     @snat_rule_id.setter
     def snat_rule_id(self, snat_rule_id):
-        """Sets the snat_rule_id of this UpdatePrivateSnatRequest.
+        r"""Sets the snat_rule_id of this UpdatePrivateSnatRequest.
 
         SNAT规则的ID。
 
@@ -71,7 +71,7 @@ class UpdatePrivateSnatRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrivateSnatRequest.
+        r"""Gets the body of this UpdatePrivateSnatRequest.
 
         :return: The body of this UpdatePrivateSnatRequest.
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateSnatOptionBody`
@@ -80,7 +80,7 @@ class UpdatePrivateSnatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrivateSnatRequest.
+        r"""Sets the body of this UpdatePrivateSnatRequest.
 
         :param body: The body of this UpdatePrivateSnatRequest.
         :type body: :class:`huaweicloudsdknat.v2.UpdatePrivateSnatOptionBody`

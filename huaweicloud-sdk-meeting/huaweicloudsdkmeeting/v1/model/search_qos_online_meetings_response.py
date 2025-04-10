@@ -32,7 +32,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchQosOnlineMeetingsResponse
+        r"""SearchQosOnlineMeetingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchQosOnlineMeetingsResponse.
+        r"""Gets the count of this SearchQosOnlineMeetingsResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchQosOnlineMeetingsResponse.
+        r"""Sets the count of this SearchQosOnlineMeetingsResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchQosOnlineMeetingsResponse.
+        r"""Gets the limit of this SearchQosOnlineMeetingsResponse.
 
         查询条目数量。
 
@@ -98,7 +98,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchQosOnlineMeetingsResponse.
+        r"""Sets the limit of this SearchQosOnlineMeetingsResponse.
 
         查询条目数量。
 
@@ -109,7 +109,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchQosOnlineMeetingsResponse.
+        r"""Gets the offset of this SearchQosOnlineMeetingsResponse.
 
         查询偏移量。
 
@@ -120,7 +120,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchQosOnlineMeetingsResponse.
+        r"""Sets the offset of this SearchQosOnlineMeetingsResponse.
 
         查询偏移量。
 
@@ -131,7 +131,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchQosOnlineMeetingsResponse.
+        r"""Gets the data of this SearchQosOnlineMeetingsResponse.
 
         QoS会议列表，按照会议开始时间降序排序。
 
@@ -142,7 +142,7 @@ class SearchQosOnlineMeetingsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchQosOnlineMeetingsResponse.
+        r"""Sets the data of this SearchQosOnlineMeetingsResponse.
 
         QoS会议列表，按照会议开始时间降序排序。
 

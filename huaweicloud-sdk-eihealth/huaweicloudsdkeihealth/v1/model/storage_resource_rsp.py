@@ -33,7 +33,7 @@ class StorageResourceRsp:
     }
 
     def __init__(self, spec=None, size=None, charge_mode=None, create_time=None, status=None):
-        """StorageResourceRsp
+        r"""StorageResourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class StorageResourceRsp:
 
     @property
     def spec(self):
-        """Gets the spec of this StorageResourceRsp.
+        r"""Gets the spec of this StorageResourceRsp.
 
         :return: The spec of this StorageResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SpecDto`
@@ -75,7 +75,7 @@ class StorageResourceRsp:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this StorageResourceRsp.
+        r"""Sets the spec of this StorageResourceRsp.
 
         :param spec: The spec of this StorageResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.SpecDto`
@@ -84,7 +84,7 @@ class StorageResourceRsp:
 
     @property
     def size(self):
-        """Gets the size of this StorageResourceRsp.
+        r"""Gets the size of this StorageResourceRsp.
 
         使用量
 
@@ -95,7 +95,7 @@ class StorageResourceRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this StorageResourceRsp.
+        r"""Sets the size of this StorageResourceRsp.
 
         使用量
 
@@ -106,7 +106,7 @@ class StorageResourceRsp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this StorageResourceRsp.
+        r"""Gets the charge_mode of this StorageResourceRsp.
 
         计费模式
 
@@ -117,7 +117,7 @@ class StorageResourceRsp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this StorageResourceRsp.
+        r"""Sets the charge_mode of this StorageResourceRsp.
 
         计费模式
 
@@ -128,7 +128,7 @@ class StorageResourceRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StorageResourceRsp.
+        r"""Gets the create_time of this StorageResourceRsp.
 
         购买时间
 
@@ -139,7 +139,7 @@ class StorageResourceRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StorageResourceRsp.
+        r"""Sets the create_time of this StorageResourceRsp.
 
         购买时间
 
@@ -150,7 +150,7 @@ class StorageResourceRsp:
 
     @property
     def status(self):
-        """Gets the status of this StorageResourceRsp.
+        r"""Gets the status of this StorageResourceRsp.
 
         状态
 
@@ -161,7 +161,7 @@ class StorageResourceRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StorageResourceRsp.
+        r"""Sets the status of this StorageResourceRsp.
 
         状态
 

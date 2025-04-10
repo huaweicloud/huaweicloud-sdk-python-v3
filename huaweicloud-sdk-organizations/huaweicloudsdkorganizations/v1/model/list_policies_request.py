@@ -34,7 +34,7 @@ class ListPoliciesRequest:
     }
 
     def __init__(self, x_security_token=None, attached_entity_id=None, limit=None, marker=None, x_language=None):
-        """ListPoliciesRequest
+        r"""ListPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListPoliciesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListPoliciesRequest.
+        r"""Gets the x_security_token of this ListPoliciesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -83,7 +83,7 @@ class ListPoliciesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListPoliciesRequest.
+        r"""Sets the x_security_token of this ListPoliciesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -94,7 +94,7 @@ class ListPoliciesRequest:
 
     @property
     def attached_entity_id(self):
-        """Gets the attached_entity_id of this ListPoliciesRequest.
+        r"""Gets the attached_entity_id of this ListPoliciesRequest.
 
         根、组织单元或账号的唯一标识符（ID）。
 
@@ -105,7 +105,7 @@ class ListPoliciesRequest:
 
     @attached_entity_id.setter
     def attached_entity_id(self, attached_entity_id):
-        """Sets the attached_entity_id of this ListPoliciesRequest.
+        r"""Sets the attached_entity_id of this ListPoliciesRequest.
 
         根、组织单元或账号的唯一标识符（ID）。
 
@@ -116,7 +116,7 @@ class ListPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPoliciesRequest.
+        r"""Gets the limit of this ListPoliciesRequest.
 
         页面中最大结果数量。
 
@@ -127,7 +127,7 @@ class ListPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPoliciesRequest.
+        r"""Sets the limit of this ListPoliciesRequest.
 
         页面中最大结果数量。
 
@@ -138,7 +138,7 @@ class ListPoliciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPoliciesRequest.
+        r"""Gets the marker of this ListPoliciesRequest.
 
         分页标记。
 
@@ -149,7 +149,7 @@ class ListPoliciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPoliciesRequest.
+        r"""Sets the marker of this ListPoliciesRequest.
 
         分页标记。
 
@@ -160,7 +160,7 @@ class ListPoliciesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPoliciesRequest.
+        r"""Gets the x_language of this ListPoliciesRequest.
 
         选择接口返回的信息的语言
 
@@ -171,7 +171,7 @@ class ListPoliciesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPoliciesRequest.
+        r"""Sets the x_language of this ListPoliciesRequest.
 
         选择接口返回的信息的语言
 

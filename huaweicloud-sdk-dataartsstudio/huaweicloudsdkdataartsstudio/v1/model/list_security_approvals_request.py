@@ -45,7 +45,7 @@ class ListSecurityApprovalsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, proposer_name=None, approval_id=None, workspace_id=None, status_list=None, application_start_time=None, application_end_time=None, order_by_desc=None, order_by=None):
-        """ListSecurityApprovalsRequest
+        r"""ListSecurityApprovalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityApprovalsRequest.
+        r"""Gets the workspace of this ListSecurityApprovalsRequest.
 
         DataArts Studio工作空间ID
 
@@ -123,7 +123,7 @@ class ListSecurityApprovalsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityApprovalsRequest.
+        r"""Sets the workspace of this ListSecurityApprovalsRequest.
 
         DataArts Studio工作空间ID
 
@@ -134,7 +134,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityApprovalsRequest.
+        r"""Gets the limit of this ListSecurityApprovalsRequest.
 
         limit
 
@@ -145,7 +145,7 @@ class ListSecurityApprovalsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityApprovalsRequest.
+        r"""Sets the limit of this ListSecurityApprovalsRequest.
 
         limit
 
@@ -156,7 +156,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityApprovalsRequest.
+        r"""Gets the offset of this ListSecurityApprovalsRequest.
 
         offset
 
@@ -167,7 +167,7 @@ class ListSecurityApprovalsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityApprovalsRequest.
+        r"""Sets the offset of this ListSecurityApprovalsRequest.
 
         offset
 
@@ -178,7 +178,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def proposer_name(self):
-        """Gets the proposer_name of this ListSecurityApprovalsRequest.
+        r"""Gets the proposer_name of this ListSecurityApprovalsRequest.
 
         申请人名称
 
@@ -189,7 +189,7 @@ class ListSecurityApprovalsRequest:
 
     @proposer_name.setter
     def proposer_name(self, proposer_name):
-        """Sets the proposer_name of this ListSecurityApprovalsRequest.
+        r"""Sets the proposer_name of this ListSecurityApprovalsRequest.
 
         申请人名称
 
@@ -200,7 +200,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def approval_id(self):
-        """Gets the approval_id of this ListSecurityApprovalsRequest.
+        r"""Gets the approval_id of this ListSecurityApprovalsRequest.
 
         工单id
 
@@ -211,7 +211,7 @@ class ListSecurityApprovalsRequest:
 
     @approval_id.setter
     def approval_id(self, approval_id):
-        """Sets the approval_id of this ListSecurityApprovalsRequest.
+        r"""Sets the approval_id of this ListSecurityApprovalsRequest.
 
         工单id
 
@@ -222,7 +222,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListSecurityApprovalsRequest.
+        r"""Gets the workspace_id of this ListSecurityApprovalsRequest.
 
         工作空间id
 
@@ -233,7 +233,7 @@ class ListSecurityApprovalsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListSecurityApprovalsRequest.
+        r"""Sets the workspace_id of this ListSecurityApprovalsRequest.
 
         工作空间id
 
@@ -244,7 +244,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def status_list(self):
-        """Gets the status_list of this ListSecurityApprovalsRequest.
+        r"""Gets the status_list of this ListSecurityApprovalsRequest.
 
         工单状态
 
@@ -255,7 +255,7 @@ class ListSecurityApprovalsRequest:
 
     @status_list.setter
     def status_list(self, status_list):
-        """Sets the status_list of this ListSecurityApprovalsRequest.
+        r"""Sets the status_list of this ListSecurityApprovalsRequest.
 
         工单状态
 
@@ -266,7 +266,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def application_start_time(self):
-        """Gets the application_start_time of this ListSecurityApprovalsRequest.
+        r"""Gets the application_start_time of this ListSecurityApprovalsRequest.
 
         申请开始时间
 
@@ -277,7 +277,7 @@ class ListSecurityApprovalsRequest:
 
     @application_start_time.setter
     def application_start_time(self, application_start_time):
-        """Sets the application_start_time of this ListSecurityApprovalsRequest.
+        r"""Sets the application_start_time of this ListSecurityApprovalsRequest.
 
         申请开始时间
 
@@ -288,7 +288,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def application_end_time(self):
-        """Gets the application_end_time of this ListSecurityApprovalsRequest.
+        r"""Gets the application_end_time of this ListSecurityApprovalsRequest.
 
         申请结束时间
 
@@ -299,7 +299,7 @@ class ListSecurityApprovalsRequest:
 
     @application_end_time.setter
     def application_end_time(self, application_end_time):
-        """Sets the application_end_time of this ListSecurityApprovalsRequest.
+        r"""Sets the application_end_time of this ListSecurityApprovalsRequest.
 
         申请结束时间
 
@@ -310,7 +310,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def order_by_desc(self):
-        """Gets the order_by_desc of this ListSecurityApprovalsRequest.
+        r"""Gets the order_by_desc of this ListSecurityApprovalsRequest.
 
         升降序
 
@@ -321,7 +321,7 @@ class ListSecurityApprovalsRequest:
 
     @order_by_desc.setter
     def order_by_desc(self, order_by_desc):
-        """Sets the order_by_desc of this ListSecurityApprovalsRequest.
+        r"""Sets the order_by_desc of this ListSecurityApprovalsRequest.
 
         升降序
 
@@ -332,7 +332,7 @@ class ListSecurityApprovalsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityApprovalsRequest.
+        r"""Gets the order_by of this ListSecurityApprovalsRequest.
 
         排序参数, START_TIME,END_TIME
 
@@ -343,7 +343,7 @@ class ListSecurityApprovalsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityApprovalsRequest.
+        r"""Sets the order_by of this ListSecurityApprovalsRequest.
 
         排序参数, START_TIME,END_TIME
 

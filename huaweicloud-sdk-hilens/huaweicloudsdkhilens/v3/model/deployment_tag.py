@@ -27,7 +27,7 @@ class DeploymentTag:
     }
 
     def __init__(self, key=None, value=None):
-        """DeploymentTag
+        r"""DeploymentTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeploymentTag:
 
     @property
     def key(self):
-        """Gets the key of this DeploymentTag.
+        r"""Gets the key of this DeploymentTag.
 
         部署标签的key值，长度取值范围为1~36，由英文字母，数字，中划线和下划线组成，长度1到36个字符
 
@@ -59,7 +59,7 @@ class DeploymentTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeploymentTag.
+        r"""Sets the key of this DeploymentTag.
 
         部署标签的key值，长度取值范围为1~36，由英文字母，数字，中划线和下划线组成，长度1到36个字符
 
@@ -70,7 +70,7 @@ class DeploymentTag:
 
     @property
     def value(self):
-        """Gets the value of this DeploymentTag.
+        r"""Gets the value of this DeploymentTag.
 
         部署标签的value值，长度取值范围为1~43，由英文字母，数字，下划线，点号和中划线组成，长度0到43个字符
 
@@ -81,7 +81,7 @@ class DeploymentTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeploymentTag.
+        r"""Sets the value of this DeploymentTag.
 
         部署标签的value值，长度取值范围为1~43，由英文字母，数字，下划线，点号和中划线组成，长度0到43个字符
 

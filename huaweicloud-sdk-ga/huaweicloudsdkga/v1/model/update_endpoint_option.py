@@ -25,7 +25,7 @@ class UpdateEndpointOption:
     }
 
     def __init__(self, weight=None):
-        """UpdateEndpointOption
+        r"""UpdateEndpointOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateEndpointOption:
 
     @property
     def weight(self):
-        """Gets the weight of this UpdateEndpointOption.
+        r"""Gets the weight of this UpdateEndpointOption.
 
         终端节点权重。
 
@@ -54,7 +54,7 @@ class UpdateEndpointOption:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this UpdateEndpointOption.
+        r"""Sets the weight of this UpdateEndpointOption.
 
         终端节点权重。
 

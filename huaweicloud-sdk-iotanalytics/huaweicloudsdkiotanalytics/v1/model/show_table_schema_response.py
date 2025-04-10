@@ -44,7 +44,7 @@ class ShowTableSchemaResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, table_name=None, table_alias=None, tags=None, column_count=None, columns=None, table_type=None, data_type=None, data_location=None, storage_properties=None):
-        """ShowTableSchemaResponse
+        r"""ShowTableSchemaResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def table_id(self):
-        """Gets the table_id of this ShowTableSchemaResponse.
+        r"""Gets the table_id of this ShowTableSchemaResponse.
 
         表ID。
 
@@ -118,7 +118,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this ShowTableSchemaResponse.
+        r"""Sets the table_id of this ShowTableSchemaResponse.
 
         表ID。
 
@@ -129,7 +129,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowTableSchemaResponse.
+        r"""Gets the table_name of this ShowTableSchemaResponse.
 
         表名。
 
@@ -140,7 +140,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowTableSchemaResponse.
+        r"""Sets the table_name of this ShowTableSchemaResponse.
 
         表名。
 
@@ -151,7 +151,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def table_alias(self):
-        """Gets the table_alias of this ShowTableSchemaResponse.
+        r"""Gets the table_alias of this ShowTableSchemaResponse.
 
         表别名。
 
@@ -162,7 +162,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @table_alias.setter
     def table_alias(self, table_alias):
-        """Sets the table_alias of this ShowTableSchemaResponse.
+        r"""Sets the table_alias of this ShowTableSchemaResponse.
 
         表别名。
 
@@ -173,7 +173,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowTableSchemaResponse.
+        r"""Gets the tags of this ShowTableSchemaResponse.
 
         标签。
 
@@ -184,7 +184,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowTableSchemaResponse.
+        r"""Sets the tags of this ShowTableSchemaResponse.
 
         标签。
 
@@ -195,7 +195,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def column_count(self):
-        """Gets the column_count of this ShowTableSchemaResponse.
+        r"""Gets the column_count of this ShowTableSchemaResponse.
 
         表的总列数。
 
@@ -206,7 +206,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @column_count.setter
     def column_count(self, column_count):
-        """Sets the column_count of this ShowTableSchemaResponse.
+        r"""Sets the column_count of this ShowTableSchemaResponse.
 
         表的总列数。
 
@@ -217,7 +217,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def columns(self):
-        """Gets the columns of this ShowTableSchemaResponse.
+        r"""Gets the columns of this ShowTableSchemaResponse.
 
         表的列信息，包含列名称、类型和描述信息。
 
@@ -228,7 +228,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ShowTableSchemaResponse.
+        r"""Sets the columns of this ShowTableSchemaResponse.
 
         表的列信息，包含列名称、类型和描述信息。
 
@@ -239,7 +239,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def table_type(self):
-        """Gets the table_type of this ShowTableSchemaResponse.
+        r"""Gets the table_type of this ShowTableSchemaResponse.
 
         表类型，包括“MANAGED”，“EXTERNAL”和“VIEW”。
 
@@ -250,7 +250,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this ShowTableSchemaResponse.
+        r"""Sets the table_type of this ShowTableSchemaResponse.
 
         表类型，包括“MANAGED”，“EXTERNAL”和“VIEW”。
 
@@ -261,7 +261,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this ShowTableSchemaResponse.
+        r"""Gets the data_type of this ShowTableSchemaResponse.
 
         数据类型，包括“csv”，“parquet”。
 
@@ -272,7 +272,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ShowTableSchemaResponse.
+        r"""Sets the data_type of this ShowTableSchemaResponse.
 
         数据类型，包括“csv”，“parquet”。
 
@@ -283,7 +283,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def data_location(self):
-        """Gets the data_location of this ShowTableSchemaResponse.
+        r"""Gets the data_location of this ShowTableSchemaResponse.
 
         数据存储的路径，以“s3a”开头。
 
@@ -294,7 +294,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @data_location.setter
     def data_location(self, data_location):
-        """Sets the data_location of this ShowTableSchemaResponse.
+        r"""Sets the data_location of this ShowTableSchemaResponse.
 
         数据存储的路径，以“s3a”开头。
 
@@ -305,7 +305,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @property
     def storage_properties(self):
-        """Gets the storage_properties of this ShowTableSchemaResponse.
+        r"""Gets the storage_properties of this ShowTableSchemaResponse.
 
         :return: The storage_properties of this ShowTableSchemaResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]
@@ -314,7 +314,7 @@ class ShowTableSchemaResponse(SdkResponse):
 
     @storage_properties.setter
     def storage_properties(self, storage_properties):
-        """Sets the storage_properties of this ShowTableSchemaResponse.
+        r"""Sets the storage_properties of this ShowTableSchemaResponse.
 
         :param storage_properties: The storage_properties of this ShowTableSchemaResponse.
         :type storage_properties: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]

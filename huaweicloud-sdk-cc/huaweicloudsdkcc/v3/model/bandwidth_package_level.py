@@ -39,7 +39,7 @@ class BandwidthPackageLevel:
     }
 
     def __init__(self, id=None, level=None, name_cn=None, name_en=None, display_priority=None, description=None, created_at=None, updated_at=None):
-        """BandwidthPackageLevel
+        r"""BandwidthPackageLevel
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BandwidthPackageLevel:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthPackageLevel.
+        r"""Gets the id of this BandwidthPackageLevel.
 
         实例ID。
 
@@ -103,7 +103,7 @@ class BandwidthPackageLevel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthPackageLevel.
+        r"""Sets the id of this BandwidthPackageLevel.
 
         实例ID。
 
@@ -114,7 +114,7 @@ class BandwidthPackageLevel:
 
     @property
     def level(self):
-        """Gets the level of this BandwidthPackageLevel.
+        r"""Gets the level of this BandwidthPackageLevel.
 
         带宽包等级
 
@@ -125,7 +125,7 @@ class BandwidthPackageLevel:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this BandwidthPackageLevel.
+        r"""Sets the level of this BandwidthPackageLevel.
 
         带宽包等级
 
@@ -136,7 +136,7 @@ class BandwidthPackageLevel:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this BandwidthPackageLevel.
+        r"""Gets the name_cn of this BandwidthPackageLevel.
 
         实例名字。
 
@@ -147,7 +147,7 @@ class BandwidthPackageLevel:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this BandwidthPackageLevel.
+        r"""Sets the name_cn of this BandwidthPackageLevel.
 
         实例名字。
 
@@ -158,7 +158,7 @@ class BandwidthPackageLevel:
 
     @property
     def name_en(self):
-        """Gets the name_en of this BandwidthPackageLevel.
+        r"""Gets the name_en of this BandwidthPackageLevel.
 
         实例名字。
 
@@ -169,7 +169,7 @@ class BandwidthPackageLevel:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this BandwidthPackageLevel.
+        r"""Sets the name_en of this BandwidthPackageLevel.
 
         实例名字。
 
@@ -180,7 +180,7 @@ class BandwidthPackageLevel:
 
     @property
     def display_priority(self):
-        """Gets the display_priority of this BandwidthPackageLevel.
+        r"""Gets the display_priority of this BandwidthPackageLevel.
 
         展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50 金牌系列优先级范围：51-100 银牌系列优先级范围：101-150 其他：大于151
 
@@ -191,7 +191,7 @@ class BandwidthPackageLevel:
 
     @display_priority.setter
     def display_priority(self, display_priority):
-        """Sets the display_priority of this BandwidthPackageLevel.
+        r"""Sets the display_priority of this BandwidthPackageLevel.
 
         展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50 金牌系列优先级范围：51-100 银牌系列优先级范围：101-150 其他：大于151
 
@@ -202,7 +202,7 @@ class BandwidthPackageLevel:
 
     @property
     def description(self):
-        """Gets the description of this BandwidthPackageLevel.
+        r"""Gets the description of this BandwidthPackageLevel.
 
         描述。不支持 <>。
 
@@ -213,7 +213,7 @@ class BandwidthPackageLevel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BandwidthPackageLevel.
+        r"""Sets the description of this BandwidthPackageLevel.
 
         描述。不支持 <>。
 
@@ -224,7 +224,7 @@ class BandwidthPackageLevel:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BandwidthPackageLevel.
+        r"""Gets the created_at of this BandwidthPackageLevel.
 
         创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -235,7 +235,7 @@ class BandwidthPackageLevel:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BandwidthPackageLevel.
+        r"""Sets the created_at of this BandwidthPackageLevel.
 
         创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -246,7 +246,7 @@ class BandwidthPackageLevel:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BandwidthPackageLevel.
+        r"""Gets the updated_at of this BandwidthPackageLevel.
 
         更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -257,7 +257,7 @@ class BandwidthPackageLevel:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BandwidthPackageLevel.
+        r"""Sets the updated_at of this BandwidthPackageLevel.
 
         更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 

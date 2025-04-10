@@ -49,7 +49,7 @@ class Table:
     }
 
     def __init__(self, table_id=None, table_name=None, table_alias=None, created_time=None, modified_time=None, data_location=None, data_type=None, data_source=None, table_type=None, description=None, partition_columns=None, data_store_id=None, tags=None):
-        """Table
+        r"""Table
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class Table:
 
     @property
     def table_id(self):
-        """Gets the table_id of this Table.
+        r"""Gets the table_id of this Table.
 
         表ID。
 
@@ -138,7 +138,7 @@ class Table:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this Table.
+        r"""Sets the table_id of this Table.
 
         表ID。
 
@@ -149,7 +149,7 @@ class Table:
 
     @property
     def table_name(self):
-        """Gets the table_name of this Table.
+        r"""Gets the table_name of this Table.
 
         表名称。
 
@@ -160,7 +160,7 @@ class Table:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this Table.
+        r"""Sets the table_name of this Table.
 
         表名称。
 
@@ -171,7 +171,7 @@ class Table:
 
     @property
     def table_alias(self):
-        """Gets the table_alias of this Table.
+        r"""Gets the table_alias of this Table.
 
         表别名。
 
@@ -182,7 +182,7 @@ class Table:
 
     @table_alias.setter
     def table_alias(self, table_alias):
-        """Sets the table_alias of this Table.
+        r"""Sets the table_alias of this Table.
 
         表别名。
 
@@ -193,7 +193,7 @@ class Table:
 
     @property
     def created_time(self):
-        """Gets the created_time of this Table.
+        r"""Gets the created_time of this Table.
 
         表创建时间。
 
@@ -204,7 +204,7 @@ class Table:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this Table.
+        r"""Sets the created_time of this Table.
 
         表创建时间。
 
@@ -215,7 +215,7 @@ class Table:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this Table.
+        r"""Gets the modified_time of this Table.
 
         表更新时间。
 
@@ -226,7 +226,7 @@ class Table:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this Table.
+        r"""Sets the modified_time of this Table.
 
         表更新时间。
 
@@ -237,7 +237,7 @@ class Table:
 
     @property
     def data_location(self):
-        """Gets the data_location of this Table.
+        r"""Gets the data_location of this Table.
 
         数据存储位置，分为IoTA和VIEW
 
@@ -248,7 +248,7 @@ class Table:
 
     @data_location.setter
     def data_location(self, data_location):
-        """Sets the data_location of this Table.
+        r"""Sets the data_location of this Table.
 
         数据存储位置，分为IoTA和VIEW
 
@@ -259,7 +259,7 @@ class Table:
 
     @property
     def data_type(self):
-        """Gets the data_type of this Table.
+        r"""Gets the data_type of this Table.
 
         数据类型，包括“csv”，“parquet”。
 
@@ -270,7 +270,7 @@ class Table:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this Table.
+        r"""Sets the data_type of this Table.
 
         数据类型，包括“csv”，“parquet”。
 
@@ -281,7 +281,7 @@ class Table:
 
     @property
     def data_source(self):
-        """Gets the data_source of this Table.
+        r"""Gets the data_source of this Table.
 
         数据来源。来源类型有：pipeline, default. 默认为default.
 
@@ -292,7 +292,7 @@ class Table:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this Table.
+        r"""Sets the data_source of this Table.
 
         数据来源。来源类型有：pipeline, default. 默认为default.
 
@@ -303,7 +303,7 @@ class Table:
 
     @property
     def table_type(self):
-        """Gets the table_type of this Table.
+        r"""Gets the table_type of this Table.
 
         表类型:IoTA表为MANAGED, View为VIEW
 
@@ -314,7 +314,7 @@ class Table:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this Table.
+        r"""Sets the table_type of this Table.
 
         表类型:IoTA表为MANAGED, View为VIEW
 
@@ -325,7 +325,7 @@ class Table:
 
     @property
     def description(self):
-        """Gets the description of this Table.
+        r"""Gets the description of this Table.
 
         表的描述信息。
 
@@ -336,7 +336,7 @@ class Table:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Table.
+        r"""Sets the description of this Table.
 
         表的描述信息。
 
@@ -347,7 +347,7 @@ class Table:
 
     @property
     def partition_columns(self):
-        """Gets the partition_columns of this Table.
+        r"""Gets the partition_columns of this Table.
 
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
@@ -358,7 +358,7 @@ class Table:
 
     @partition_columns.setter
     def partition_columns(self, partition_columns):
-        """Sets the partition_columns of this Table.
+        r"""Sets the partition_columns of this Table.
 
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
@@ -369,7 +369,7 @@ class Table:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this Table.
+        r"""Gets the data_store_id of this Table.
 
         仅当数据来源为pipeline时返回。Data Store ID.
 
@@ -380,7 +380,7 @@ class Table:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this Table.
+        r"""Sets the data_store_id of this Table.
 
         仅当数据来源为pipeline时返回。Data Store ID.
 
@@ -391,7 +391,7 @@ class Table:
 
     @property
     def tags(self):
-        """Gets the tags of this Table.
+        r"""Gets the tags of this Table.
 
         标签。
 
@@ -402,7 +402,7 @@ class Table:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Table.
+        r"""Sets the tags of this Table.
 
         标签。
 

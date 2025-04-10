@@ -27,7 +27,7 @@ class UpdateTaskGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """UpdateTaskGroupRequest
+        r"""UpdateTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTaskGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateTaskGroupRequest.
+        r"""Gets the group_id of this UpdateTaskGroupRequest.
 
         任务组id
 
@@ -60,7 +60,7 @@ class UpdateTaskGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateTaskGroupRequest.
+        r"""Sets the group_id of this UpdateTaskGroupRequest.
 
         任务组id
 
@@ -71,7 +71,7 @@ class UpdateTaskGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskGroupRequest.
+        r"""Gets the body of this UpdateTaskGroupRequest.
 
         :return: The body of this UpdateTaskGroupRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyReq`
@@ -80,7 +80,7 @@ class UpdateTaskGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskGroupRequest.
+        r"""Sets the body of this UpdateTaskGroupRequest.
 
         :param body: The body of this UpdateTaskGroupRequest.
         :type body: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyReq`

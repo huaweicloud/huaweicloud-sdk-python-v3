@@ -73,7 +73,7 @@ class HostOverviewResponse:
     }
 
     def __init__(self, instance_name=None, host_name=None, host_stat=None, work_ip=None, mem_free=None, mem_total=None, mem_usage=None, mem_cached=None, mem_buffer=None, swap_free=None, swap_total=None, cpu_usage=None, cpu_usage_sys=None, cpu_usage_usr=None, cpu_idle=None, cpu_iowait=None, disk_usage_avg=None, disk_total=None, disk_used=None, disk_available=None, disk_io=None, disk_io_read=None, disk_io_write=None, tcp_resend_rate=None, net_io=None):
-        """HostOverviewResponse
+        r"""HostOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class HostOverviewResponse:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this HostOverviewResponse.
+        r"""Gets the instance_name of this HostOverviewResponse.
 
         实例名称
 
@@ -222,7 +222,7 @@ class HostOverviewResponse:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this HostOverviewResponse.
+        r"""Sets the instance_name of this HostOverviewResponse.
 
         实例名称
 
@@ -233,7 +233,7 @@ class HostOverviewResponse:
 
     @property
     def host_name(self):
-        """Gets the host_name of this HostOverviewResponse.
+        r"""Gets the host_name of this HostOverviewResponse.
 
         主机名称
 
@@ -244,7 +244,7 @@ class HostOverviewResponse:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this HostOverviewResponse.
+        r"""Sets the host_name of this HostOverviewResponse.
 
         主机名称
 
@@ -255,7 +255,7 @@ class HostOverviewResponse:
 
     @property
     def host_stat(self):
-        """Gets the host_stat of this HostOverviewResponse.
+        r"""Gets the host_stat of this HostOverviewResponse.
 
         主机状态
 
@@ -266,7 +266,7 @@ class HostOverviewResponse:
 
     @host_stat.setter
     def host_stat(self, host_stat):
-        """Sets the host_stat of this HostOverviewResponse.
+        r"""Sets the host_stat of this HostOverviewResponse.
 
         主机状态
 
@@ -277,7 +277,7 @@ class HostOverviewResponse:
 
     @property
     def work_ip(self):
-        """Gets the work_ip of this HostOverviewResponse.
+        r"""Gets the work_ip of this HostOverviewResponse.
 
         IP地址
 
@@ -288,7 +288,7 @@ class HostOverviewResponse:
 
     @work_ip.setter
     def work_ip(self, work_ip):
-        """Sets the work_ip of this HostOverviewResponse.
+        r"""Sets the work_ip of this HostOverviewResponse.
 
         IP地址
 
@@ -299,7 +299,7 @@ class HostOverviewResponse:
 
     @property
     def mem_free(self):
-        """Gets the mem_free of this HostOverviewResponse.
+        r"""Gets the mem_free of this HostOverviewResponse.
 
         系统中未使用的内存(GB)。
 
@@ -310,7 +310,7 @@ class HostOverviewResponse:
 
     @mem_free.setter
     def mem_free(self, mem_free):
-        """Sets the mem_free of this HostOverviewResponse.
+        r"""Sets the mem_free of this HostOverviewResponse.
 
         系统中未使用的内存(GB)。
 
@@ -321,7 +321,7 @@ class HostOverviewResponse:
 
     @property
     def mem_total(self):
-        """Gets the mem_total of this HostOverviewResponse.
+        r"""Gets the mem_total of this HostOverviewResponse.
 
         总内存(GB)。
 
@@ -332,7 +332,7 @@ class HostOverviewResponse:
 
     @mem_total.setter
     def mem_total(self, mem_total):
-        """Sets the mem_total of this HostOverviewResponse.
+        r"""Sets the mem_total of this HostOverviewResponse.
 
         总内存(GB)。
 
@@ -343,7 +343,7 @@ class HostOverviewResponse:
 
     @property
     def mem_usage(self):
-        """Gets the mem_usage of this HostOverviewResponse.
+        r"""Gets the mem_usage of this HostOverviewResponse.
 
         内存使用率(GB)。
 
@@ -354,7 +354,7 @@ class HostOverviewResponse:
 
     @mem_usage.setter
     def mem_usage(self, mem_usage):
-        """Sets the mem_usage of this HostOverviewResponse.
+        r"""Sets the mem_usage of this HostOverviewResponse.
 
         内存使用率(GB)。
 
@@ -365,7 +365,7 @@ class HostOverviewResponse:
 
     @property
     def mem_cached(self):
-        """Gets the mem_cached of this HostOverviewResponse.
+        r"""Gets the mem_cached of this HostOverviewResponse.
 
         缓存内存(GB)。
 
@@ -376,7 +376,7 @@ class HostOverviewResponse:
 
     @mem_cached.setter
     def mem_cached(self, mem_cached):
-        """Sets the mem_cached of this HostOverviewResponse.
+        r"""Sets the mem_cached of this HostOverviewResponse.
 
         缓存内存(GB)。
 
@@ -387,7 +387,7 @@ class HostOverviewResponse:
 
     @property
     def mem_buffer(self):
-        """Gets the mem_buffer of this HostOverviewResponse.
+        r"""Gets the mem_buffer of this HostOverviewResponse.
 
         缓冲内存(MB)。
 
@@ -398,7 +398,7 @@ class HostOverviewResponse:
 
     @mem_buffer.setter
     def mem_buffer(self, mem_buffer):
-        """Sets the mem_buffer of this HostOverviewResponse.
+        r"""Sets the mem_buffer of this HostOverviewResponse.
 
         缓冲内存(MB)。
 
@@ -409,7 +409,7 @@ class HostOverviewResponse:
 
     @property
     def swap_free(self):
-        """Gets the swap_free of this HostOverviewResponse.
+        r"""Gets the swap_free of this HostOverviewResponse.
 
         ram暂存在swap中的大小(GB)。
 
@@ -420,7 +420,7 @@ class HostOverviewResponse:
 
     @swap_free.setter
     def swap_free(self, swap_free):
-        """Sets the swap_free of this HostOverviewResponse.
+        r"""Sets the swap_free of this HostOverviewResponse.
 
         ram暂存在swap中的大小(GB)。
 
@@ -431,7 +431,7 @@ class HostOverviewResponse:
 
     @property
     def swap_total(self):
-        """Gets the swap_total of this HostOverviewResponse.
+        r"""Gets the swap_total of this HostOverviewResponse.
 
         交换空间总和(GB)。
 
@@ -442,7 +442,7 @@ class HostOverviewResponse:
 
     @swap_total.setter
     def swap_total(self, swap_total):
-        """Sets the swap_total of this HostOverviewResponse.
+        r"""Sets the swap_total of this HostOverviewResponse.
 
         交换空间总和(GB)。
 
@@ -453,7 +453,7 @@ class HostOverviewResponse:
 
     @property
     def cpu_usage(self):
-        """Gets the cpu_usage of this HostOverviewResponse.
+        r"""Gets the cpu_usage of this HostOverviewResponse.
 
         CPU使用率(%)。
 
@@ -464,7 +464,7 @@ class HostOverviewResponse:
 
     @cpu_usage.setter
     def cpu_usage(self, cpu_usage):
-        """Sets the cpu_usage of this HostOverviewResponse.
+        r"""Sets the cpu_usage of this HostOverviewResponse.
 
         CPU使用率(%)。
 
@@ -475,7 +475,7 @@ class HostOverviewResponse:
 
     @property
     def cpu_usage_sys(self):
-        """Gets the cpu_usage_sys of this HostOverviewResponse.
+        r"""Gets the cpu_usage_sys of this HostOverviewResponse.
 
         系统CPU占用率(%)。
 
@@ -486,7 +486,7 @@ class HostOverviewResponse:
 
     @cpu_usage_sys.setter
     def cpu_usage_sys(self, cpu_usage_sys):
-        """Sets the cpu_usage_sys of this HostOverviewResponse.
+        r"""Sets the cpu_usage_sys of this HostOverviewResponse.
 
         系统CPU占用率(%)。
 
@@ -497,7 +497,7 @@ class HostOverviewResponse:
 
     @property
     def cpu_usage_usr(self):
-        """Gets the cpu_usage_usr of this HostOverviewResponse.
+        r"""Gets the cpu_usage_usr of this HostOverviewResponse.
 
         用户CPU占用率(%)。
 
@@ -508,7 +508,7 @@ class HostOverviewResponse:
 
     @cpu_usage_usr.setter
     def cpu_usage_usr(self, cpu_usage_usr):
-        """Sets the cpu_usage_usr of this HostOverviewResponse.
+        r"""Sets the cpu_usage_usr of this HostOverviewResponse.
 
         用户CPU占用率(%)。
 
@@ -519,7 +519,7 @@ class HostOverviewResponse:
 
     @property
     def cpu_idle(self):
-        """Gets the cpu_idle of this HostOverviewResponse.
+        r"""Gets the cpu_idle of this HostOverviewResponse.
 
         空闲CPU占用率(%)。
 
@@ -530,7 +530,7 @@ class HostOverviewResponse:
 
     @cpu_idle.setter
     def cpu_idle(self, cpu_idle):
-        """Sets the cpu_idle of this HostOverviewResponse.
+        r"""Sets the cpu_idle of this HostOverviewResponse.
 
         空闲CPU占用率(%)。
 
@@ -541,7 +541,7 @@ class HostOverviewResponse:
 
     @property
     def cpu_iowait(self):
-        """Gets the cpu_iowait of this HostOverviewResponse.
+        r"""Gets the cpu_iowait of this HostOverviewResponse.
 
         IO等待(%)。
 
@@ -552,7 +552,7 @@ class HostOverviewResponse:
 
     @cpu_iowait.setter
     def cpu_iowait(self, cpu_iowait):
-        """Sets the cpu_iowait of this HostOverviewResponse.
+        r"""Sets the cpu_iowait of this HostOverviewResponse.
 
         IO等待(%)。
 
@@ -563,7 +563,7 @@ class HostOverviewResponse:
 
     @property
     def disk_usage_avg(self):
-        """Gets the disk_usage_avg of this HostOverviewResponse.
+        r"""Gets the disk_usage_avg of this HostOverviewResponse.
 
         磁盘平均使用率(%)。
 
@@ -574,7 +574,7 @@ class HostOverviewResponse:
 
     @disk_usage_avg.setter
     def disk_usage_avg(self, disk_usage_avg):
-        """Sets the disk_usage_avg of this HostOverviewResponse.
+        r"""Sets the disk_usage_avg of this HostOverviewResponse.
 
         磁盘平均使用率(%)。
 
@@ -585,7 +585,7 @@ class HostOverviewResponse:
 
     @property
     def disk_total(self):
-        """Gets the disk_total of this HostOverviewResponse.
+        r"""Gets the disk_total of this HostOverviewResponse.
 
         磁盘总容量(GB)。
 
@@ -596,7 +596,7 @@ class HostOverviewResponse:
 
     @disk_total.setter
     def disk_total(self, disk_total):
-        """Sets the disk_total of this HostOverviewResponse.
+        r"""Sets the disk_total of this HostOverviewResponse.
 
         磁盘总容量(GB)。
 
@@ -607,7 +607,7 @@ class HostOverviewResponse:
 
     @property
     def disk_used(self):
-        """Gets the disk_used of this HostOverviewResponse.
+        r"""Gets the disk_used of this HostOverviewResponse.
 
         磁盘使用容量(GB)。
 
@@ -618,7 +618,7 @@ class HostOverviewResponse:
 
     @disk_used.setter
     def disk_used(self, disk_used):
-        """Sets the disk_used of this HostOverviewResponse.
+        r"""Sets the disk_used of this HostOverviewResponse.
 
         磁盘使用容量(GB)。
 
@@ -629,7 +629,7 @@ class HostOverviewResponse:
 
     @property
     def disk_available(self):
-        """Gets the disk_available of this HostOverviewResponse.
+        r"""Gets the disk_available of this HostOverviewResponse.
 
         磁盘可用容量(GB)。
 
@@ -640,7 +640,7 @@ class HostOverviewResponse:
 
     @disk_available.setter
     def disk_available(self, disk_available):
-        """Sets the disk_available of this HostOverviewResponse.
+        r"""Sets the disk_available of this HostOverviewResponse.
 
         磁盘可用容量(GB)。
 
@@ -651,7 +651,7 @@ class HostOverviewResponse:
 
     @property
     def disk_io(self):
-        """Gets the disk_io of this HostOverviewResponse.
+        r"""Gets the disk_io of this HostOverviewResponse.
 
         磁盘IO(KB/s)。
 
@@ -662,7 +662,7 @@ class HostOverviewResponse:
 
     @disk_io.setter
     def disk_io(self, disk_io):
-        """Sets the disk_io of this HostOverviewResponse.
+        r"""Sets the disk_io of this HostOverviewResponse.
 
         磁盘IO(KB/s)。
 
@@ -673,7 +673,7 @@ class HostOverviewResponse:
 
     @property
     def disk_io_read(self):
-        """Gets the disk_io_read of this HostOverviewResponse.
+        r"""Gets the disk_io_read of this HostOverviewResponse.
 
         磁盘读速率(KB/s)。
 
@@ -684,7 +684,7 @@ class HostOverviewResponse:
 
     @disk_io_read.setter
     def disk_io_read(self, disk_io_read):
-        """Sets the disk_io_read of this HostOverviewResponse.
+        r"""Sets the disk_io_read of this HostOverviewResponse.
 
         磁盘读速率(KB/s)。
 
@@ -695,7 +695,7 @@ class HostOverviewResponse:
 
     @property
     def disk_io_write(self):
-        """Gets the disk_io_write of this HostOverviewResponse.
+        r"""Gets the disk_io_write of this HostOverviewResponse.
 
         磁盘写速率(KB/s)。
 
@@ -706,7 +706,7 @@ class HostOverviewResponse:
 
     @disk_io_write.setter
     def disk_io_write(self, disk_io_write):
-        """Sets the disk_io_write of this HostOverviewResponse.
+        r"""Sets the disk_io_write of this HostOverviewResponse.
 
         磁盘写速率(KB/s)。
 
@@ -717,7 +717,7 @@ class HostOverviewResponse:
 
     @property
     def tcp_resend_rate(self):
-        """Gets the tcp_resend_rate of this HostOverviewResponse.
+        r"""Gets the tcp_resend_rate of this HostOverviewResponse.
 
         TCP协议栈重传率(%)。
 
@@ -728,7 +728,7 @@ class HostOverviewResponse:
 
     @tcp_resend_rate.setter
     def tcp_resend_rate(self, tcp_resend_rate):
-        """Sets the tcp_resend_rate of this HostOverviewResponse.
+        r"""Sets the tcp_resend_rate of this HostOverviewResponse.
 
         TCP协议栈重传率(%)。
 
@@ -739,7 +739,7 @@ class HostOverviewResponse:
 
     @property
     def net_io(self):
-        """Gets the net_io of this HostOverviewResponse.
+        r"""Gets the net_io of this HostOverviewResponse.
 
         网络IO(KB/s)。
 
@@ -750,7 +750,7 @@ class HostOverviewResponse:
 
     @net_io.setter
     def net_io(self, net_io):
-        """Sets the net_io of this HostOverviewResponse.
+        r"""Sets the net_io of this HostOverviewResponse.
 
         网络IO(KB/s)。
 

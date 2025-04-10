@@ -26,7 +26,7 @@ class HealthCheckProtocol:
     }
 
     def __init__(self):
-        """HealthCheckProtocol
+        r"""HealthCheckProtocol
 
         The model defined in huaweicloud sdk
 

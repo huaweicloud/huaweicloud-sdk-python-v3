@@ -33,7 +33,7 @@ class ResqEpResouce:
     }
 
     def __init__(self, projects=None, resource_types=None, offset=None, limit=None, matches=None):
-        """ResqEpResouce
+        r"""ResqEpResouce
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ResqEpResouce:
 
     @property
     def projects(self):
-        """Gets the projects of this ResqEpResouce.
+        r"""Gets the projects of this ResqEpResouce.
 
         项目ID列表。resource_types中包含region级别服务时为必选项。
 
@@ -81,7 +81,7 @@ class ResqEpResouce:
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ResqEpResouce.
+        r"""Sets the projects of this ResqEpResouce.
 
         项目ID列表。resource_types中包含region级别服务时为必选项。
 
@@ -92,7 +92,7 @@ class ResqEpResouce:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ResqEpResouce.
+        r"""Gets the resource_types of this ResqEpResouce.
 
         资源类型列表， 此参数为可输入的值（区分大小写）。例如：ecs,scaling_group, images, disk, vpcs,security-groups, shared_bandwidth, eip, cdn等。
 
@@ -103,7 +103,7 @@ class ResqEpResouce:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ResqEpResouce.
+        r"""Sets the resource_types of this ResqEpResouce.
 
         资源类型列表， 此参数为可输入的值（区分大小写）。例如：ecs,scaling_group, images, disk, vpcs,security-groups, shared_bandwidth, eip, cdn等。
 
@@ -114,7 +114,7 @@ class ResqEpResouce:
 
     @property
     def offset(self):
-        """Gets the offset of this ResqEpResouce.
+        r"""Gets the offset of this ResqEpResouce.
 
         索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
@@ -125,7 +125,7 @@ class ResqEpResouce:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ResqEpResouce.
+        r"""Sets the offset of this ResqEpResouce.
 
         索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
@@ -136,7 +136,7 @@ class ResqEpResouce:
 
     @property
     def limit(self):
-        """Gets the limit of this ResqEpResouce.
+        r"""Gets the limit of this ResqEpResouce.
 
         查询记录数，不传默认为1000，limit最多为1000, 最小值为1。
 
@@ -147,7 +147,7 @@ class ResqEpResouce:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ResqEpResouce.
+        r"""Sets the limit of this ResqEpResouce.
 
         查询记录数，不传默认为1000，limit最多为1000, 最小值为1。
 
@@ -158,7 +158,7 @@ class ResqEpResouce:
 
     @property
     def matches(self):
-        """Gets the matches of this ResqEpResouce.
+        r"""Gets the matches of this ResqEpResouce.
 
         搜索字段，key为要匹配的字段，固定为resource_name，value为匹配的值，不传则表示无匹配条件。
 
@@ -169,7 +169,7 @@ class ResqEpResouce:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ResqEpResouce.
+        r"""Sets the matches of this ResqEpResouce.
 
         搜索字段，key为要匹配的字段，固定为resource_name，value为匹配的值，不传则表示无匹配条件。
 

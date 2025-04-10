@@ -27,7 +27,7 @@ class MigrateSubNetworkInterfaceRequestBody:
     }
 
     def __init__(self, dry_run=None, migration_info=None):
-        """MigrateSubNetworkInterfaceRequestBody
+        r"""MigrateSubNetworkInterfaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MigrateSubNetworkInterfaceRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this MigrateSubNetworkInterfaceRequestBody.
+        r"""Gets the dry_run of this MigrateSubNetworkInterfaceRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建辅助弹性网卡。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建辅助弹性网卡。
 
@@ -60,7 +60,7 @@ class MigrateSubNetworkInterfaceRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this MigrateSubNetworkInterfaceRequestBody.
+        r"""Sets the dry_run of this MigrateSubNetworkInterfaceRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建辅助弹性网卡。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建辅助弹性网卡。
 
@@ -71,7 +71,7 @@ class MigrateSubNetworkInterfaceRequestBody:
 
     @property
     def migration_info(self):
-        """Gets the migration_info of this MigrateSubNetworkInterfaceRequestBody.
+        r"""Gets the migration_info of this MigrateSubNetworkInterfaceRequestBody.
 
         :return: The migration_info of this MigrateSubNetworkInterfaceRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceOption`
@@ -80,7 +80,7 @@ class MigrateSubNetworkInterfaceRequestBody:
 
     @migration_info.setter
     def migration_info(self, migration_info):
-        """Sets the migration_info of this MigrateSubNetworkInterfaceRequestBody.
+        r"""Sets the migration_info of this MigrateSubNetworkInterfaceRequestBody.
 
         :param migration_info: The migration_info of this MigrateSubNetworkInterfaceRequestBody.
         :type migration_info: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceOption`

@@ -26,7 +26,7 @@ class RevokeRoleFromAgencyOnEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RevokeRoleFromAgencyOnEnterpriseProjectResponse
+        r"""RevokeRoleFromAgencyOnEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RevokeRoleFromAgencyOnEnterpriseProjectResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RevokeRoleFromAgencyOnEnterpriseProjectResponse.
+        r"""Gets the body of this RevokeRoleFromAgencyOnEnterpriseProjectResponse.
 
         :return: The body of this RevokeRoleFromAgencyOnEnterpriseProjectResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RevokeRoleFromAgencyOnEnterpriseProjectResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokeRoleFromAgencyOnEnterpriseProjectResponse.
+        r"""Sets the body of this RevokeRoleFromAgencyOnEnterpriseProjectResponse.
 
         :param body: The body of this RevokeRoleFromAgencyOnEnterpriseProjectResponse.
         :type body: str

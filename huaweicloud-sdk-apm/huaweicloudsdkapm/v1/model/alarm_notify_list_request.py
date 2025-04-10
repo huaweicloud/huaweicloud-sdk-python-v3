@@ -31,7 +31,7 @@ class AlarmNotifyListRequest:
     }
 
     def __init__(self, page=None, page_size=None, alarm_data_id=None, region=None):
-        """AlarmNotifyListRequest
+        r"""AlarmNotifyListRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class AlarmNotifyListRequest:
 
     @property
     def page(self):
-        """Gets the page of this AlarmNotifyListRequest.
+        r"""Gets the page of this AlarmNotifyListRequest.
 
         页码。
 
@@ -73,7 +73,7 @@ class AlarmNotifyListRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AlarmNotifyListRequest.
+        r"""Sets the page of this AlarmNotifyListRequest.
 
         页码。
 
@@ -84,7 +84,7 @@ class AlarmNotifyListRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this AlarmNotifyListRequest.
+        r"""Gets the page_size of this AlarmNotifyListRequest.
 
         每页数量。
 
@@ -95,7 +95,7 @@ class AlarmNotifyListRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this AlarmNotifyListRequest.
+        r"""Sets the page_size of this AlarmNotifyListRequest.
 
         每页数量。
 
@@ -106,7 +106,7 @@ class AlarmNotifyListRequest:
 
     @property
     def alarm_data_id(self):
-        """Gets the alarm_data_id of this AlarmNotifyListRequest.
+        r"""Gets the alarm_data_id of this AlarmNotifyListRequest.
 
         告警事件id。
 
@@ -117,7 +117,7 @@ class AlarmNotifyListRequest:
 
     @alarm_data_id.setter
     def alarm_data_id(self, alarm_data_id):
-        """Sets the alarm_data_id of this AlarmNotifyListRequest.
+        r"""Sets the alarm_data_id of this AlarmNotifyListRequest.
 
         告警事件id。
 
@@ -128,7 +128,7 @@ class AlarmNotifyListRequest:
 
     @property
     def region(self):
-        """Gets the region of this AlarmNotifyListRequest.
+        r"""Gets the region of this AlarmNotifyListRequest.
 
         region英文名称。
 
@@ -139,7 +139,7 @@ class AlarmNotifyListRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AlarmNotifyListRequest.
+        r"""Sets the region of this AlarmNotifyListRequest.
 
         region英文名称。
 

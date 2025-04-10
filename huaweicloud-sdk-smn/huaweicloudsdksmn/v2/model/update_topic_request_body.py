@@ -25,7 +25,7 @@ class UpdateTopicRequestBody:
     }
 
     def __init__(self, display_name=None):
-        """UpdateTopicRequestBody
+        r"""UpdateTopicRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTopicRequestBody:
 
     @property
     def display_name(self):
-        """Gets the display_name of this UpdateTopicRequestBody.
+        r"""Gets the display_name of this UpdateTopicRequestBody.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。
 
@@ -53,7 +53,7 @@ class UpdateTopicRequestBody:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this UpdateTopicRequestBody.
+        r"""Sets the display_name of this UpdateTopicRequestBody.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。
 

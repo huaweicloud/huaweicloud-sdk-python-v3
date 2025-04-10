@@ -41,7 +41,7 @@ class ApiFuncCreate:
     }
 
     def __init__(self, function_urn=None, remark=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, authorizer_id=None, req_protocol=None):
-        """ApiFuncCreate
+        r"""ApiFuncCreate
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class ApiFuncCreate:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ApiFuncCreate.
+        r"""Gets the function_urn of this ApiFuncCreate.
 
         函数URN
 
@@ -106,7 +106,7 @@ class ApiFuncCreate:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ApiFuncCreate.
+        r"""Sets the function_urn of this ApiFuncCreate.
 
         函数URN
 
@@ -117,7 +117,7 @@ class ApiFuncCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiFuncCreate.
+        r"""Gets the remark of this ApiFuncCreate.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -128,7 +128,7 @@ class ApiFuncCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiFuncCreate.
+        r"""Sets the remark of this ApiFuncCreate.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -139,7 +139,7 @@ class ApiFuncCreate:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this ApiFuncCreate.
+        r"""Gets the invocation_type of this ApiFuncCreate.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -150,7 +150,7 @@ class ApiFuncCreate:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this ApiFuncCreate.
+        r"""Sets the invocation_type of this ApiFuncCreate.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -161,7 +161,7 @@ class ApiFuncCreate:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ApiFuncCreate.
+        r"""Gets the network_type of this ApiFuncCreate.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -172,7 +172,7 @@ class ApiFuncCreate:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ApiFuncCreate.
+        r"""Sets the network_type of this ApiFuncCreate.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -183,7 +183,7 @@ class ApiFuncCreate:
 
     @property
     def version(self):
-        """Gets the version of this ApiFuncCreate.
+        r"""Gets the version of this ApiFuncCreate.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -194,7 +194,7 @@ class ApiFuncCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiFuncCreate.
+        r"""Sets the version of this ApiFuncCreate.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -205,7 +205,7 @@ class ApiFuncCreate:
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this ApiFuncCreate.
+        r"""Gets the alias_urn of this ApiFuncCreate.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -216,7 +216,7 @@ class ApiFuncCreate:
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this ApiFuncCreate.
+        r"""Sets the alias_urn of this ApiFuncCreate.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -227,7 +227,7 @@ class ApiFuncCreate:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApiFuncCreate.
+        r"""Gets the timeout of this ApiFuncCreate.
 
         API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
@@ -238,7 +238,7 @@ class ApiFuncCreate:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApiFuncCreate.
+        r"""Sets the timeout of this ApiFuncCreate.
 
         API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
@@ -249,7 +249,7 @@ class ApiFuncCreate:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiFuncCreate.
+        r"""Gets the authorizer_id of this ApiFuncCreate.
 
         后端自定义认证ID
 
@@ -260,7 +260,7 @@ class ApiFuncCreate:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiFuncCreate.
+        r"""Sets the authorizer_id of this ApiFuncCreate.
 
         后端自定义认证ID
 
@@ -271,7 +271,7 @@ class ApiFuncCreate:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiFuncCreate.
+        r"""Gets the req_protocol of this ApiFuncCreate.
 
         函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
 
@@ -282,7 +282,7 @@ class ApiFuncCreate:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiFuncCreate.
+        r"""Sets the req_protocol of this ApiFuncCreate.
 
         函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
 

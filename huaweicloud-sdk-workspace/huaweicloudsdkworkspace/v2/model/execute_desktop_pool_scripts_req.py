@@ -41,7 +41,7 @@ class ExecuteDesktopPoolScriptsReq:
     }
 
     def __init__(self, script_ids=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, pre_start=None, post_finish=None, command_content=None, command_type=None, execution_timeout=None):
-        """ExecuteDesktopPoolScriptsReq
+        r"""ExecuteDesktopPoolScriptsReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def script_ids(self):
-        """Gets the script_ids of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the script_ids of this ExecuteDesktopPoolScriptsReq.
 
         执行的脚本id列表，与command二选一。
 
@@ -110,7 +110,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @script_ids.setter
     def script_ids(self, script_ids):
-        """Sets the script_ids of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the script_ids of this ExecuteDesktopPoolScriptsReq.
 
         执行的脚本id列表，与command二选一。
 
@@ -121,7 +121,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def gray_count(self):
-        """Gets the gray_count of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the gray_count of this ExecuteDesktopPoolScriptsReq.
 
         首批执行的桌面数量，优先级高于gray_desktop_ids。
 
@@ -132,7 +132,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @gray_count.setter
     def gray_count(self, gray_count):
-        """Sets the gray_count of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the gray_count of this ExecuteDesktopPoolScriptsReq.
 
         首批执行的桌面数量，优先级高于gray_desktop_ids。
 
@@ -143,7 +143,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def gray_desktop_ids(self):
-        """Gets the gray_desktop_ids of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the gray_desktop_ids of this ExecuteDesktopPoolScriptsReq.
 
         首批执行的桌面id列表，优先级低于gray_count。
 
@@ -154,7 +154,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @gray_desktop_ids.setter
     def gray_desktop_ids(self, gray_desktop_ids):
-        """Sets the gray_desktop_ids of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the gray_desktop_ids of this ExecuteDesktopPoolScriptsReq.
 
         首批执行的桌面id列表，优先级低于gray_count。
 
@@ -165,7 +165,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def gray_fail_threshold(self):
-        """Gets the gray_fail_threshold of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the gray_fail_threshold of this ExecuteDesktopPoolScriptsReq.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。
 
@@ -176,7 +176,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @gray_fail_threshold.setter
     def gray_fail_threshold(self, gray_fail_threshold):
-        """Sets the gray_fail_threshold of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the gray_fail_threshold of this ExecuteDesktopPoolScriptsReq.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。
 
@@ -187,7 +187,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def pre_start(self):
-        """Gets the pre_start of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the pre_start of this ExecuteDesktopPoolScriptsReq.
 
         执行脚本前置步骤。
 
@@ -198,7 +198,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @pre_start.setter
     def pre_start(self, pre_start):
-        """Sets the pre_start of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the pre_start of this ExecuteDesktopPoolScriptsReq.
 
         执行脚本前置步骤。
 
@@ -209,7 +209,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def post_finish(self):
-        """Gets the post_finish of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the post_finish of this ExecuteDesktopPoolScriptsReq.
 
         执行脚本完成后置步骤，当前支持关机（stop）、重启（reboot）。
 
@@ -220,7 +220,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @post_finish.setter
     def post_finish(self, post_finish):
-        """Sets the post_finish of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the post_finish of this ExecuteDesktopPoolScriptsReq.
 
         执行脚本完成后置步骤，当前支持关机（stop）、重启（reboot）。
 
@@ -231,7 +231,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def command_content(self):
-        """Gets the command_content of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the command_content of this ExecuteDesktopPoolScriptsReq.
 
         执行的命令行，与script_ids二选一。
 
@@ -242,7 +242,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @command_content.setter
     def command_content(self, command_content):
-        """Sets the command_content of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the command_content of this ExecuteDesktopPoolScriptsReq.
 
         执行的命令行，与script_ids二选一。
 
@@ -253,7 +253,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def command_type(self):
-        """Gets the command_type of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the command_type of this ExecuteDesktopPoolScriptsReq.
 
         命令行类型，执行命令行时必传。 - POWERSHELL：WINDOWS系统使用。 - BAT：WINDOWS系统使用。 - SHELL：LINUX系统使用。
 
@@ -264,7 +264,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @command_type.setter
     def command_type(self, command_type):
-        """Sets the command_type of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the command_type of this ExecuteDesktopPoolScriptsReq.
 
         命令行类型，执行命令行时必传。 - POWERSHELL：WINDOWS系统使用。 - BAT：WINDOWS系统使用。 - SHELL：LINUX系统使用。
 
@@ -275,7 +275,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @property
     def execution_timeout(self):
-        """Gets the execution_timeout of this ExecuteDesktopPoolScriptsReq.
+        r"""Gets the execution_timeout of this ExecuteDesktopPoolScriptsReq.
 
         执行脚本的超时时间，单位分钟，默认1分钟。
 
@@ -286,7 +286,7 @@ class ExecuteDesktopPoolScriptsReq:
 
     @execution_timeout.setter
     def execution_timeout(self, execution_timeout):
-        """Sets the execution_timeout of this ExecuteDesktopPoolScriptsReq.
+        r"""Sets the execution_timeout of this ExecuteDesktopPoolScriptsReq.
 
         执行脚本的超时时间，单位分钟，默认1分钟。
 

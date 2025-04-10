@@ -29,7 +29,7 @@ class MysqlDatastoreWithKernelVersion:
     }
 
     def __init__(self, type=None, version=None, kernel_version=None):
-        """MysqlDatastoreWithKernelVersion
+        r"""MysqlDatastoreWithKernelVersion
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MysqlDatastoreWithKernelVersion:
 
     @property
     def type(self):
-        """Gets the type of this MysqlDatastoreWithKernelVersion.
+        r"""Gets the type of this MysqlDatastoreWithKernelVersion.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -65,7 +65,7 @@ class MysqlDatastoreWithKernelVersion:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlDatastoreWithKernelVersion.
+        r"""Sets the type of this MysqlDatastoreWithKernelVersion.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -76,7 +76,7 @@ class MysqlDatastoreWithKernelVersion:
 
     @property
     def version(self):
-        """Gets the version of this MysqlDatastoreWithKernelVersion.
+        r"""Gets the version of this MysqlDatastoreWithKernelVersion.
 
         兼容的开源数据库版本号，返回三位开源版本号。
 
@@ -87,7 +87,7 @@ class MysqlDatastoreWithKernelVersion:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MysqlDatastoreWithKernelVersion.
+        r"""Sets the version of this MysqlDatastoreWithKernelVersion.
 
         兼容的开源数据库版本号，返回三位开源版本号。
 
@@ -98,7 +98,7 @@ class MysqlDatastoreWithKernelVersion:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this MysqlDatastoreWithKernelVersion.
+        r"""Gets the kernel_version of this MysqlDatastoreWithKernelVersion.
 
         数据库内核版本
 
@@ -109,7 +109,7 @@ class MysqlDatastoreWithKernelVersion:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this MysqlDatastoreWithKernelVersion.
+        r"""Sets the kernel_version of this MysqlDatastoreWithKernelVersion.
 
         数据库内核版本
 

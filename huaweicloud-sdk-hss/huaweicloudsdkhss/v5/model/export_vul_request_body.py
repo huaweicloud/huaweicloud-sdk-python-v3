@@ -17,33 +17,47 @@ class ExportVulRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'export_headers': 'list[list[str]]'
+        'export_headers': 'list[list[str]]',
+        'vul_id_list': 'list[str]',
+        'host_id_list': 'list[str]'
     }
 
     attribute_map = {
-        'export_headers': 'export_headers'
+        'export_headers': 'export_headers',
+        'vul_id_list': 'vul_id_list',
+        'host_id_list': 'host_id_list'
     }
 
-    def __init__(self, export_headers=None):
-        """ExportVulRequestBody
+    def __init__(self, export_headers=None, vul_id_list=None, host_id_list=None):
+        r"""ExportVulRequestBody
 
         The model defined in huaweicloud sdk
 
         :param export_headers: 导出漏洞数据的表头信息列表
         :type export_headers: list[list[str]]
+        :param vul_id_list: 指定导出的漏洞id列表
+        :type vul_id_list: list[str]
+        :param host_id_list: 指定导出的主机id列表
+        :type host_id_list: list[str]
         """
         
         
 
         self._export_headers = None
+        self._vul_id_list = None
+        self._host_id_list = None
         self.discriminator = None
 
         if export_headers is not None:
             self.export_headers = export_headers
+        if vul_id_list is not None:
+            self.vul_id_list = vul_id_list
+        if host_id_list is not None:
+            self.host_id_list = host_id_list
 
     @property
     def export_headers(self):
-        """Gets the export_headers of this ExportVulRequestBody.
+        r"""Gets the export_headers of this ExportVulRequestBody.
 
         导出漏洞数据的表头信息列表
 
@@ -54,7 +68,7 @@ class ExportVulRequestBody:
 
     @export_headers.setter
     def export_headers(self, export_headers):
-        """Sets the export_headers of this ExportVulRequestBody.
+        r"""Sets the export_headers of this ExportVulRequestBody.
 
         导出漏洞数据的表头信息列表
 
@@ -62,6 +76,50 @@ class ExportVulRequestBody:
         :type export_headers: list[list[str]]
         """
         self._export_headers = export_headers
+
+    @property
+    def vul_id_list(self):
+        r"""Gets the vul_id_list of this ExportVulRequestBody.
+
+        指定导出的漏洞id列表
+
+        :return: The vul_id_list of this ExportVulRequestBody.
+        :rtype: list[str]
+        """
+        return self._vul_id_list
+
+    @vul_id_list.setter
+    def vul_id_list(self, vul_id_list):
+        r"""Sets the vul_id_list of this ExportVulRequestBody.
+
+        指定导出的漏洞id列表
+
+        :param vul_id_list: The vul_id_list of this ExportVulRequestBody.
+        :type vul_id_list: list[str]
+        """
+        self._vul_id_list = vul_id_list
+
+    @property
+    def host_id_list(self):
+        r"""Gets the host_id_list of this ExportVulRequestBody.
+
+        指定导出的主机id列表
+
+        :return: The host_id_list of this ExportVulRequestBody.
+        :rtype: list[str]
+        """
+        return self._host_id_list
+
+    @host_id_list.setter
+    def host_id_list(self, host_id_list):
+        r"""Sets the host_id_list of this ExportVulRequestBody.
+
+        指定导出的主机id列表
+
+        :param host_id_list: The host_id_list of this ExportVulRequestBody.
+        :type host_id_list: list[str]
+        """
+        self._host_id_list = host_id_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

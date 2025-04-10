@@ -25,7 +25,7 @@ class ListSecurityDatasourceConfigurationsRequest:
     }
 
     def __init__(self, workspace=None):
-        """ListSecurityDatasourceConfigurationsRequest
+        r"""ListSecurityDatasourceConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSecurityDatasourceConfigurationsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDatasourceConfigurationsRequest.
+        r"""Gets the workspace of this ListSecurityDatasourceConfigurationsRequest.
 
         DataArts Studio工作空间ID
 
@@ -53,7 +53,7 @@ class ListSecurityDatasourceConfigurationsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDatasourceConfigurationsRequest.
+        r"""Sets the workspace of this ListSecurityDatasourceConfigurationsRequest.
 
         DataArts Studio工作空间ID
 

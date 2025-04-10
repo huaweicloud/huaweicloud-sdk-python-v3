@@ -28,7 +28,7 @@ class VideoFormatVar:
     }
 
     def __init__(self):
-        """VideoFormatVar
+        r"""VideoFormatVar
 
         The model defined in huaweicloud sdk
 

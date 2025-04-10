@@ -33,7 +33,7 @@ class PPTReadConfigResp:
     }
 
     def __init__(self, read_content=None, image_id=None, resolution=None, image_url=None, name=None):
-        """PPTReadConfigResp
+        r"""PPTReadConfigResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class PPTReadConfigResp:
 
     @property
     def read_content(self):
-        """Gets the read_content of this PPTReadConfigResp.
+        r"""Gets the read_content of this PPTReadConfigResp.
 
         播报内容，长度为3~2500
 
@@ -77,7 +77,7 @@ class PPTReadConfigResp:
 
     @read_content.setter
     def read_content(self, read_content):
-        """Sets the read_content of this PPTReadConfigResp.
+        r"""Sets the read_content of this PPTReadConfigResp.
 
         播报内容，长度为3~2500
 
@@ -88,7 +88,7 @@ class PPTReadConfigResp:
 
     @property
     def image_id(self):
-        """Gets the image_id of this PPTReadConfigResp.
+        r"""Gets the image_id of this PPTReadConfigResp.
 
         PPT转化有的图片id
 
@@ -99,7 +99,7 @@ class PPTReadConfigResp:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this PPTReadConfigResp.
+        r"""Sets the image_id of this PPTReadConfigResp.
 
         PPT转化有的图片id
 
@@ -110,7 +110,7 @@ class PPTReadConfigResp:
 
     @property
     def resolution(self):
-        """Gets the resolution of this PPTReadConfigResp.
+        r"""Gets the resolution of this PPTReadConfigResp.
 
         :return: The resolution of this PPTReadConfigResp.
         :rtype: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -119,7 +119,7 @@ class PPTReadConfigResp:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this PPTReadConfigResp.
+        r"""Sets the resolution of this PPTReadConfigResp.
 
         :param resolution: The resolution of this PPTReadConfigResp.
         :type resolution: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -128,7 +128,7 @@ class PPTReadConfigResp:
 
     @property
     def image_url(self):
-        """Gets the image_url of this PPTReadConfigResp.
+        r"""Gets the image_url of this PPTReadConfigResp.
 
         图片地址
 
@@ -139,7 +139,7 @@ class PPTReadConfigResp:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this PPTReadConfigResp.
+        r"""Sets the image_url of this PPTReadConfigResp.
 
         图片地址
 
@@ -150,7 +150,7 @@ class PPTReadConfigResp:
 
     @property
     def name(self):
-        """Gets the name of this PPTReadConfigResp.
+        r"""Gets the name of this PPTReadConfigResp.
 
         图片名
 
@@ -161,7 +161,7 @@ class PPTReadConfigResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PPTReadConfigResp.
+        r"""Sets the name of this PPTReadConfigResp.
 
         图片名
 

@@ -58,7 +58,7 @@ class GetObjectResponse(SdkStreamResponse):
     }
 
     def __init__(self, response, x_obs_id_2=None, x_obs_request_id=None, x_obs_server_side_encryption=None, x_obs_object_type=None, x_obs_next_append_position=None, connection=None, x_obs_server_side_encryption_customer_key_md5=None, x_obs_expiration=None, date=None, e_tag=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_kms_key_id=None, content_length=None, x_obs_website_redirect_location=None, x_obs_delete_marker=None, x_obs_version_id=None):
-        """GetObjectResponse
+        r"""GetObjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -151,7 +151,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this GetObjectResponse.
+        r"""Gets the x_obs_id_2 of this GetObjectResponse.
 
         :return: The x_obs_id_2 of this GetObjectResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this GetObjectResponse.
+        r"""Sets the x_obs_id_2 of this GetObjectResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this GetObjectResponse.
         :type x_obs_id_2: str
@@ -169,7 +169,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this GetObjectResponse.
+        r"""Gets the x_obs_request_id of this GetObjectResponse.
 
         :return: The x_obs_request_id of this GetObjectResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this GetObjectResponse.
+        r"""Sets the x_obs_request_id of this GetObjectResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this GetObjectResponse.
         :type x_obs_request_id: str
@@ -187,7 +187,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_server_side_encryption(self):
-        """Gets the x_obs_server_side_encryption of this GetObjectResponse.
+        r"""Gets the x_obs_server_side_encryption of this GetObjectResponse.
 
         :return: The x_obs_server_side_encryption of this GetObjectResponse.
         :rtype: str
@@ -196,7 +196,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_server_side_encryption.setter
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
-        """Sets the x_obs_server_side_encryption of this GetObjectResponse.
+        r"""Sets the x_obs_server_side_encryption of this GetObjectResponse.
 
         :param x_obs_server_side_encryption: The x_obs_server_side_encryption of this GetObjectResponse.
         :type x_obs_server_side_encryption: str
@@ -205,7 +205,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_object_type(self):
-        """Gets the x_obs_object_type of this GetObjectResponse.
+        r"""Gets the x_obs_object_type of this GetObjectResponse.
 
         :return: The x_obs_object_type of this GetObjectResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_object_type.setter
     def x_obs_object_type(self, x_obs_object_type):
-        """Sets the x_obs_object_type of this GetObjectResponse.
+        r"""Sets the x_obs_object_type of this GetObjectResponse.
 
         :param x_obs_object_type: The x_obs_object_type of this GetObjectResponse.
         :type x_obs_object_type: str
@@ -223,7 +223,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_next_append_position(self):
-        """Gets the x_obs_next_append_position of this GetObjectResponse.
+        r"""Gets the x_obs_next_append_position of this GetObjectResponse.
 
         :return: The x_obs_next_append_position of this GetObjectResponse.
         :rtype: int
@@ -232,7 +232,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_next_append_position.setter
     def x_obs_next_append_position(self, x_obs_next_append_position):
-        """Sets the x_obs_next_append_position of this GetObjectResponse.
+        r"""Sets the x_obs_next_append_position of this GetObjectResponse.
 
         :param x_obs_next_append_position: The x_obs_next_append_position of this GetObjectResponse.
         :type x_obs_next_append_position: int
@@ -241,7 +241,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this GetObjectResponse.
+        r"""Gets the connection of this GetObjectResponse.
 
         :return: The connection of this GetObjectResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this GetObjectResponse.
+        r"""Sets the connection of this GetObjectResponse.
 
         :param connection: The connection of this GetObjectResponse.
         :type connection: str
@@ -259,7 +259,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectResponse.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectResponse.
         :rtype: str
@@ -268,7 +268,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectResponse.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectResponse.
         :type x_obs_server_side_encryption_customer_key_md5: str
@@ -277,7 +277,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_expiration(self):
-        """Gets the x_obs_expiration of this GetObjectResponse.
+        r"""Gets the x_obs_expiration of this GetObjectResponse.
 
         :return: The x_obs_expiration of this GetObjectResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_expiration.setter
     def x_obs_expiration(self, x_obs_expiration):
-        """Sets the x_obs_expiration of this GetObjectResponse.
+        r"""Sets the x_obs_expiration of this GetObjectResponse.
 
         :param x_obs_expiration: The x_obs_expiration of this GetObjectResponse.
         :type x_obs_expiration: str
@@ -295,7 +295,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def date(self):
-        """Gets the date of this GetObjectResponse.
+        r"""Gets the date of this GetObjectResponse.
 
         :return: The date of this GetObjectResponse.
         :rtype: str
@@ -304,7 +304,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetObjectResponse.
+        r"""Sets the date of this GetObjectResponse.
 
         :param date: The date of this GetObjectResponse.
         :type date: str
@@ -313,7 +313,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this GetObjectResponse.
+        r"""Gets the e_tag of this GetObjectResponse.
 
         :return: The e_tag of this GetObjectResponse.
         :rtype: str
@@ -322,7 +322,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this GetObjectResponse.
+        r"""Sets the e_tag of this GetObjectResponse.
 
         :param e_tag: The e_tag of this GetObjectResponse.
         :type e_tag: str
@@ -331,7 +331,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectResponse.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this GetObjectResponse.
         :rtype: str
@@ -340,7 +340,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectResponse.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this GetObjectResponse.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -349,7 +349,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_server_side_encryption_kms_key_id(self):
-        """Gets the x_obs_server_side_encryption_kms_key_id of this GetObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this GetObjectResponse.
 
         :return: The x_obs_server_side_encryption_kms_key_id of this GetObjectResponse.
         :rtype: str
@@ -358,7 +358,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_server_side_encryption_kms_key_id.setter
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
-        """Sets the x_obs_server_side_encryption_kms_key_id of this GetObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this GetObjectResponse.
 
         :param x_obs_server_side_encryption_kms_key_id: The x_obs_server_side_encryption_kms_key_id of this GetObjectResponse.
         :type x_obs_server_side_encryption_kms_key_id: str
@@ -367,7 +367,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this GetObjectResponse.
+        r"""Gets the content_length of this GetObjectResponse.
 
         :return: The content_length of this GetObjectResponse.
         :rtype: str
@@ -376,7 +376,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this GetObjectResponse.
+        r"""Sets the content_length of this GetObjectResponse.
 
         :param content_length: The content_length of this GetObjectResponse.
         :type content_length: str
@@ -385,7 +385,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_website_redirect_location(self):
-        """Gets the x_obs_website_redirect_location of this GetObjectResponse.
+        r"""Gets the x_obs_website_redirect_location of this GetObjectResponse.
 
         :return: The x_obs_website_redirect_location of this GetObjectResponse.
         :rtype: str
@@ -394,7 +394,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_website_redirect_location.setter
     def x_obs_website_redirect_location(self, x_obs_website_redirect_location):
-        """Sets the x_obs_website_redirect_location of this GetObjectResponse.
+        r"""Sets the x_obs_website_redirect_location of this GetObjectResponse.
 
         :param x_obs_website_redirect_location: The x_obs_website_redirect_location of this GetObjectResponse.
         :type x_obs_website_redirect_location: str
@@ -403,7 +403,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_delete_marker(self):
-        """Gets the x_obs_delete_marker of this GetObjectResponse.
+        r"""Gets the x_obs_delete_marker of this GetObjectResponse.
 
         :return: The x_obs_delete_marker of this GetObjectResponse.
         :rtype: bool
@@ -412,7 +412,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_delete_marker.setter
     def x_obs_delete_marker(self, x_obs_delete_marker):
-        """Sets the x_obs_delete_marker of this GetObjectResponse.
+        r"""Sets the x_obs_delete_marker of this GetObjectResponse.
 
         :param x_obs_delete_marker: The x_obs_delete_marker of this GetObjectResponse.
         :type x_obs_delete_marker: bool
@@ -421,7 +421,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @property
     def x_obs_version_id(self):
-        """Gets the x_obs_version_id of this GetObjectResponse.
+        r"""Gets the x_obs_version_id of this GetObjectResponse.
 
         :return: The x_obs_version_id of this GetObjectResponse.
         :rtype: str
@@ -430,7 +430,7 @@ class GetObjectResponse(SdkStreamResponse):
 
     @x_obs_version_id.setter
     def x_obs_version_id(self, x_obs_version_id):
-        """Sets the x_obs_version_id of this GetObjectResponse.
+        r"""Sets the x_obs_version_id of this GetObjectResponse.
 
         :param x_obs_version_id: The x_obs_version_id of this GetObjectResponse.
         :type x_obs_version_id: str

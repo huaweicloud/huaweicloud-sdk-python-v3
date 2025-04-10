@@ -28,7 +28,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_histories=None, meta_data=None):
-        """ListAlarmHistoriesResponse
+        r"""ListAlarmHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
     @property
     def alarm_histories(self):
-        """Gets the alarm_histories of this ListAlarmHistoriesResponse.
+        r"""Gets the alarm_histories of this ListAlarmHistoriesResponse.
 
         一条或者多条告警历史详细信息
 
@@ -62,7 +62,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
     @alarm_histories.setter
     def alarm_histories(self, alarm_histories):
-        """Sets the alarm_histories of this ListAlarmHistoriesResponse.
+        r"""Sets the alarm_histories of this ListAlarmHistoriesResponse.
 
         一条或者多条告警历史详细信息
 
@@ -73,7 +73,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListAlarmHistoriesResponse.
+        r"""Gets the meta_data of this ListAlarmHistoriesResponse.
 
         :return: The meta_data of this ListAlarmHistoriesResponse.
         :rtype: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
@@ -82,7 +82,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListAlarmHistoriesResponse.
+        r"""Sets the meta_data of this ListAlarmHistoriesResponse.
 
         :param meta_data: The meta_data of this ListAlarmHistoriesResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`

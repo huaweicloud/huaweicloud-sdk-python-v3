@@ -42,7 +42,7 @@ class CreateApplicationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None, description=None, labels=None):
-        """CreateApplicationResponse
+        r"""CreateApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateApplicationResponse.
+        r"""Gets the id of this CreateApplicationResponse.
 
         :return: The id of this CreateApplicationResponse.
         :rtype: str
@@ -109,7 +109,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateApplicationResponse.
+        r"""Sets the id of this CreateApplicationResponse.
 
         :param id: The id of this CreateApplicationResponse.
         :type id: str
@@ -118,7 +118,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateApplicationResponse.
+        r"""Gets the name of this CreateApplicationResponse.
 
         :return: The name of this CreateApplicationResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateApplicationResponse.
+        r"""Sets the name of this CreateApplicationResponse.
 
         :param name: The name of this CreateApplicationResponse.
         :type name: str
@@ -136,7 +136,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreateApplicationResponse.
+        r"""Gets the creator of this CreateApplicationResponse.
 
         :return: The creator of this CreateApplicationResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateApplicationResponse.
+        r"""Sets the creator of this CreateApplicationResponse.
 
         :param creator: The creator of this CreateApplicationResponse.
         :type creator: str
@@ -154,7 +154,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateApplicationResponse.
+        r"""Gets the project_id of this CreateApplicationResponse.
 
         :return: The project_id of this CreateApplicationResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateApplicationResponse.
+        r"""Sets the project_id of this CreateApplicationResponse.
 
         :param project_id: The project_id of this CreateApplicationResponse.
         :type project_id: str
@@ -172,7 +172,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateApplicationResponse.
+        r"""Gets the enterprise_project_id of this CreateApplicationResponse.
 
         :return: The enterprise_project_id of this CreateApplicationResponse.
         :rtype: str
@@ -181,7 +181,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateApplicationResponse.
+        r"""Sets the enterprise_project_id of this CreateApplicationResponse.
 
         :param enterprise_project_id: The enterprise_project_id of this CreateApplicationResponse.
         :type enterprise_project_id: str
@@ -190,7 +190,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateApplicationResponse.
+        r"""Gets the create_time of this CreateApplicationResponse.
 
         创建时间。
 
@@ -201,7 +201,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateApplicationResponse.
+        r"""Sets the create_time of this CreateApplicationResponse.
 
         创建时间。
 
@@ -212,7 +212,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateApplicationResponse.
+        r"""Gets the update_time of this CreateApplicationResponse.
 
         修改时间。
 
@@ -223,7 +223,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateApplicationResponse.
+        r"""Sets the update_time of this CreateApplicationResponse.
 
         修改时间。
 
@@ -234,7 +234,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateApplicationResponse.
+        r"""Gets the description of this CreateApplicationResponse.
 
         :return: The description of this CreateApplicationResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateApplicationResponse.
+        r"""Sets the description of this CreateApplicationResponse.
 
         :param description: The description of this CreateApplicationResponse.
         :type description: str
@@ -252,7 +252,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this CreateApplicationResponse.
+        r"""Gets the labels of this CreateApplicationResponse.
 
         :return: The labels of this CreateApplicationResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
@@ -261,7 +261,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateApplicationResponse.
+        r"""Sets the labels of this CreateApplicationResponse.
 
         :param labels: The labels of this CreateApplicationResponse.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]

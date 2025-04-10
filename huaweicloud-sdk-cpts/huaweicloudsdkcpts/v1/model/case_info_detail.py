@@ -55,7 +55,7 @@ class CaseInfoDetail:
     }
 
     def __init__(self, case_id=None, name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None, directory_id=None, setup_contents=None, user_replicas=None, collect_log_policy=None, link_app_list=None, case_info=None):
-        """CaseInfoDetail
+        r"""CaseInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class CaseInfoDetail:
 
     @property
     def case_id(self):
-        """Gets the case_id of this CaseInfoDetail.
+        r"""Gets the case_id of this CaseInfoDetail.
 
         用例id
 
@@ -159,7 +159,7 @@ class CaseInfoDetail:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this CaseInfoDetail.
+        r"""Sets the case_id of this CaseInfoDetail.
 
         用例id
 
@@ -170,7 +170,7 @@ class CaseInfoDetail:
 
     @property
     def name(self):
-        """Gets the name of this CaseInfoDetail.
+        r"""Gets the name of this CaseInfoDetail.
 
         用例名称
 
@@ -181,7 +181,7 @@ class CaseInfoDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaseInfoDetail.
+        r"""Sets the name of this CaseInfoDetail.
 
         用例名称
 
@@ -192,7 +192,7 @@ class CaseInfoDetail:
 
     @property
     def case_type(self):
-        """Gets the case_type of this CaseInfoDetail.
+        r"""Gets the case_type of this CaseInfoDetail.
 
         用例类型（0：常规用例；）
 
@@ -203,7 +203,7 @@ class CaseInfoDetail:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this CaseInfoDetail.
+        r"""Sets the case_type of this CaseInfoDetail.
 
         用例类型（0：常规用例；）
 
@@ -214,7 +214,7 @@ class CaseInfoDetail:
 
     @property
     def contents(self):
-        """Gets the contents of this CaseInfoDetail.
+        r"""Gets the contents of this CaseInfoDetail.
 
         用例脚本信息
 
@@ -225,7 +225,7 @@ class CaseInfoDetail:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CaseInfoDetail.
+        r"""Sets the contents of this CaseInfoDetail.
 
         用例脚本信息
 
@@ -236,7 +236,7 @@ class CaseInfoDetail:
 
     @property
     def for_loop_params(self):
-        """Gets the for_loop_params of this CaseInfoDetail.
+        r"""Gets the for_loop_params of this CaseInfoDetail.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -247,7 +247,7 @@ class CaseInfoDetail:
 
     @for_loop_params.setter
     def for_loop_params(self, for_loop_params):
-        """Sets the for_loop_params of this CaseInfoDetail.
+        r"""Sets the for_loop_params of this CaseInfoDetail.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -258,7 +258,7 @@ class CaseInfoDetail:
 
     @property
     def increase_setting(self):
-        """Gets the increase_setting of this CaseInfoDetail.
+        r"""Gets the increase_setting of this CaseInfoDetail.
 
         梯度递增
 
@@ -269,7 +269,7 @@ class CaseInfoDetail:
 
     @increase_setting.setter
     def increase_setting(self, increase_setting):
-        """Sets the increase_setting of this CaseInfoDetail.
+        r"""Sets the increase_setting of this CaseInfoDetail.
 
         梯度递增
 
@@ -280,7 +280,7 @@ class CaseInfoDetail:
 
     @property
     def stages(self):
-        """Gets the stages of this CaseInfoDetail.
+        r"""Gets the stages of this CaseInfoDetail.
 
         阶段信息
 
@@ -291,7 +291,7 @@ class CaseInfoDetail:
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this CaseInfoDetail.
+        r"""Sets the stages of this CaseInfoDetail.
 
         阶段信息
 
@@ -302,7 +302,7 @@ class CaseInfoDetail:
 
     @property
     def status(self):
-        """Gets the status of this CaseInfoDetail.
+        r"""Gets the status of this CaseInfoDetail.
 
         状态，0：已删除；1：启用；2：禁用
 
@@ -313,7 +313,7 @@ class CaseInfoDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CaseInfoDetail.
+        r"""Sets the status of this CaseInfoDetail.
 
         状态，0：已删除；1：启用；2：禁用
 
@@ -324,7 +324,7 @@ class CaseInfoDetail:
 
     @property
     def temp_id(self):
-        """Gets the temp_id of this CaseInfoDetail.
+        r"""Gets the temp_id of this CaseInfoDetail.
 
         用例id
 
@@ -335,7 +335,7 @@ class CaseInfoDetail:
 
     @temp_id.setter
     def temp_id(self, temp_id):
-        """Sets the temp_id of this CaseInfoDetail.
+        r"""Sets the temp_id of this CaseInfoDetail.
 
         用例id
 
@@ -346,7 +346,7 @@ class CaseInfoDetail:
 
     @property
     def sort(self):
-        """Gets the sort of this CaseInfoDetail.
+        r"""Gets the sort of this CaseInfoDetail.
 
         排序字段
 
@@ -357,7 +357,7 @@ class CaseInfoDetail:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this CaseInfoDetail.
+        r"""Sets the sort of this CaseInfoDetail.
 
         排序字段
 
@@ -368,7 +368,7 @@ class CaseInfoDetail:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this CaseInfoDetail.
+        r"""Gets the directory_id of this CaseInfoDetail.
 
         用例所属目录id（旧版接口可不传）
 
@@ -379,7 +379,7 @@ class CaseInfoDetail:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this CaseInfoDetail.
+        r"""Sets the directory_id of this CaseInfoDetail.
 
         用例所属目录id（旧版接口可不传）
 
@@ -390,7 +390,7 @@ class CaseInfoDetail:
 
     @property
     def setup_contents(self):
-        """Gets the setup_contents of this CaseInfoDetail.
+        r"""Gets the setup_contents of this CaseInfoDetail.
 
         前置步骤
 
@@ -401,7 +401,7 @@ class CaseInfoDetail:
 
     @setup_contents.setter
     def setup_contents(self, setup_contents):
-        """Sets the setup_contents of this CaseInfoDetail.
+        r"""Sets the setup_contents of this CaseInfoDetail.
 
         前置步骤
 
@@ -412,7 +412,7 @@ class CaseInfoDetail:
 
     @property
     def user_replicas(self):
-        """Gets the user_replicas of this CaseInfoDetail.
+        r"""Gets the user_replicas of this CaseInfoDetail.
 
         执行器个数
 
@@ -423,7 +423,7 @@ class CaseInfoDetail:
 
     @user_replicas.setter
     def user_replicas(self, user_replicas):
-        """Sets the user_replicas of this CaseInfoDetail.
+        r"""Sets the user_replicas of this CaseInfoDetail.
 
         执行器个数
 
@@ -434,7 +434,7 @@ class CaseInfoDetail:
 
     @property
     def collect_log_policy(self):
-        """Gets the collect_log_policy of this CaseInfoDetail.
+        r"""Gets the collect_log_policy of this CaseInfoDetail.
 
         日志采集策略（0-请求模式；1-用例模式）
 
@@ -445,7 +445,7 @@ class CaseInfoDetail:
 
     @collect_log_policy.setter
     def collect_log_policy(self, collect_log_policy):
-        """Sets the collect_log_policy of this CaseInfoDetail.
+        r"""Sets the collect_log_policy of this CaseInfoDetail.
 
         日志采集策略（0-请求模式；1-用例模式）
 
@@ -456,7 +456,7 @@ class CaseInfoDetail:
 
     @property
     def link_app_list(self):
-        """Gets the link_app_list of this CaseInfoDetail.
+        r"""Gets the link_app_list of this CaseInfoDetail.
 
         关联全链路应用列表
 
@@ -467,7 +467,7 @@ class CaseInfoDetail:
 
     @link_app_list.setter
     def link_app_list(self, link_app_list):
-        """Sets the link_app_list of this CaseInfoDetail.
+        r"""Sets the link_app_list of this CaseInfoDetail.
 
         关联全链路应用列表
 
@@ -478,7 +478,7 @@ class CaseInfoDetail:
 
     @property
     def case_info(self):
-        """Gets the case_info of this CaseInfoDetail.
+        r"""Gets the case_info of this CaseInfoDetail.
 
         :return: The case_info of this CaseInfoDetail.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseDoc`
@@ -487,7 +487,7 @@ class CaseInfoDetail:
 
     @case_info.setter
     def case_info(self, case_info):
-        """Sets the case_info of this CaseInfoDetail.
+        r"""Sets the case_info of this CaseInfoDetail.
 
         :param case_info: The case_info of this CaseInfoDetail.
         :type case_info: :class:`huaweicloudsdkcpts.v1.CaseDoc`

@@ -23,7 +23,7 @@ class GetAsymmetricSignatureSwitchV5Request:
     }
 
     def __init__(self):
-        """GetAsymmetricSignatureSwitchV5Request
+        r"""GetAsymmetricSignatureSwitchV5Request
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class HandwritingResult:
     }
 
     def __init__(self, words_block_count=None, words_block_list=None):
-        """HandwritingResult
+        r"""HandwritingResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HandwritingResult:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this HandwritingResult.
+        r"""Gets the words_block_count of this HandwritingResult.
 
         代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。       
 
@@ -59,7 +59,7 @@ class HandwritingResult:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this HandwritingResult.
+        r"""Sets the words_block_count of this HandwritingResult.
 
         代表检测识别出来的文字块数目。 \"segment_digit\" 和\"segment\"默认为1。       
 
@@ -70,7 +70,7 @@ class HandwritingResult:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this HandwritingResult.
+        r"""Gets the words_block_list of this HandwritingResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 
@@ -81,7 +81,7 @@ class HandwritingResult:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this HandwritingResult.
+        r"""Sets the words_block_list of this HandwritingResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 

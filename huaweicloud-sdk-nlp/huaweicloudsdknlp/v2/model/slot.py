@@ -33,7 +33,7 @@ class Slot:
     }
 
     def __init__(self, word=None, tag=None, offset=None, length=None, normalized_word=None):
-        """Slot
+        r"""Slot
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Slot:
 
     @property
     def word(self):
-        """Gets the word of this Slot.
+        r"""Gets the word of this Slot.
 
         实体文本。
 
@@ -77,7 +77,7 @@ class Slot:
 
     @word.setter
     def word(self, word):
-        """Sets the word of this Slot.
+        r"""Sets the word of this Slot.
 
         实体文本。
 
@@ -88,7 +88,7 @@ class Slot:
 
     @property
     def tag(self):
-        """Gets the tag of this Slot.
+        r"""Gets the tag of this Slot.
 
         实体类型。对于每个意图类别所支持的实体类型分别为： weather：date(日期)，time(时间)，location(位置) time：location(位置)，timezone(时区) news：genre(风格) joke：genre(风格) translation：content(内容) notification：content(内容)，date(日期)，time(时间)，singer(歌手) alarm：date(日期)，time:(时间) music：singer(歌手)，song(歌曲)，content(内容)
 
@@ -99,7 +99,7 @@ class Slot:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this Slot.
+        r"""Sets the tag of this Slot.
 
         实体类型。对于每个意图类别所支持的实体类型分别为： weather：date(日期)，time(时间)，location(位置) time：location(位置)，timezone(时区) news：genre(风格) joke：genre(风格) translation：content(内容) notification：content(内容)，date(日期)，time(时间)，singer(歌手) alarm：date(日期)，time:(时间) music：singer(歌手)，song(歌曲)，content(内容)
 
@@ -110,7 +110,7 @@ class Slot:
 
     @property
     def offset(self):
-        """Gets the offset of this Slot.
+        r"""Gets the offset of this Slot.
 
         实体文本在待分析文本中的起始位置。
 
@@ -121,7 +121,7 @@ class Slot:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this Slot.
+        r"""Sets the offset of this Slot.
 
         实体文本在待分析文本中的起始位置。
 
@@ -132,7 +132,7 @@ class Slot:
 
     @property
     def length(self):
-        """Gets the length of this Slot.
+        r"""Gets the length of this Slot.
 
         实体文本长度。
 
@@ -143,7 +143,7 @@ class Slot:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this Slot.
+        r"""Sets the length of this Slot.
 
         实体文本长度。
 
@@ -154,7 +154,7 @@ class Slot:
 
     @property
     def normalized_word(self):
-        """Gets the normalized_word of this Slot.
+        r"""Gets the normalized_word of this Slot.
 
         同义词或者其他标准表达的词，默认为原始的word。
 
@@ -165,7 +165,7 @@ class Slot:
 
     @normalized_word.setter
     def normalized_word(self, normalized_word):
-        """Sets the normalized_word of this Slot.
+        r"""Sets the normalized_word of this Slot.
 
         同义词或者其他标准表达的词，默认为原始的word。
 

@@ -25,7 +25,7 @@ class ListDownloadAddressRequestBody:
     }
 
     def __init__(self, record_ids=None):
-        """ListDownloadAddressRequestBody
+        r"""ListDownloadAddressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDownloadAddressRequestBody:
 
     @property
     def record_ids(self):
-        """Gets the record_ids of this ListDownloadAddressRequestBody.
+        r"""Gets the record_ids of this ListDownloadAddressRequestBody.
 
         录屏记录UUID列表。
 
@@ -54,7 +54,7 @@ class ListDownloadAddressRequestBody:
 
     @record_ids.setter
     def record_ids(self, record_ids):
-        """Sets the record_ids of this ListDownloadAddressRequestBody.
+        r"""Sets the record_ids of this ListDownloadAddressRequestBody.
 
         录屏记录UUID列表。
 

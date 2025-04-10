@@ -28,7 +28,7 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, availability_zones=None, request_id=None):
-        """ListExtendedAvailabilityZonesResponse
+        r"""ListExtendedAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this ListExtendedAvailabilityZonesResponse.
+        r"""Gets the availability_zones of this ListExtendedAvailabilityZonesResponse.
 
         :return: The availability_zones of this ListExtendedAvailabilityZonesResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ExtendedAvailabilityZone`]
@@ -60,7 +60,7 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this ListExtendedAvailabilityZonesResponse.
+        r"""Sets the availability_zones of this ListExtendedAvailabilityZonesResponse.
 
         :param availability_zones: The availability_zones of this ListExtendedAvailabilityZonesResponse.
         :type availability_zones: list[:class:`huaweicloudsdkvpn.v5.ExtendedAvailabilityZone`]
@@ -69,7 +69,7 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListExtendedAvailabilityZonesResponse.
+        r"""Gets the request_id of this ListExtendedAvailabilityZonesResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListExtendedAvailabilityZonesResponse.
+        r"""Sets the request_id of this ListExtendedAvailabilityZonesResponse.
 
         请求id
 

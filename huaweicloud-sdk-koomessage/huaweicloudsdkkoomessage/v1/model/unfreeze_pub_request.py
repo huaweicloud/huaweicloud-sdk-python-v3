@@ -27,7 +27,7 @@ class UnfreezePubRequest:
     }
 
     def __init__(self, pub_id=None, body=None):
-        """UnfreezePubRequest
+        r"""UnfreezePubRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UnfreezePubRequest:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this UnfreezePubRequest.
+        r"""Gets the pub_id of this UnfreezePubRequest.
 
         服务号ID。
 
@@ -60,7 +60,7 @@ class UnfreezePubRequest:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this UnfreezePubRequest.
+        r"""Sets the pub_id of this UnfreezePubRequest.
 
         服务号ID。
 
@@ -71,7 +71,7 @@ class UnfreezePubRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnfreezePubRequest.
+        r"""Gets the body of this UnfreezePubRequest.
 
         :return: The body of this UnfreezePubRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UnfreezePubRequestBody`
@@ -80,7 +80,7 @@ class UnfreezePubRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnfreezePubRequest.
+        r"""Sets the body of this UnfreezePubRequest.
 
         :param body: The body of this UnfreezePubRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UnfreezePubRequestBody`

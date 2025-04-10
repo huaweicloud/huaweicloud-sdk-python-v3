@@ -27,7 +27,7 @@ class CreateLimitTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateLimitTaskRequest
+        r"""CreateLimitTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLimitTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateLimitTaskRequest.
+        r"""Gets the instance_id of this CreateLimitTaskRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateLimitTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateLimitTaskRequest.
+        r"""Sets the instance_id of this CreateLimitTaskRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateLimitTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLimitTaskRequest.
+        r"""Gets the body of this CreateLimitTaskRequest.
 
         :return: The body of this CreateLimitTaskRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskRequestBody`
@@ -80,7 +80,7 @@ class CreateLimitTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLimitTaskRequest.
+        r"""Sets the body of this CreateLimitTaskRequest.
 
         :param body: The body of this CreateLimitTaskRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskRequestBody`

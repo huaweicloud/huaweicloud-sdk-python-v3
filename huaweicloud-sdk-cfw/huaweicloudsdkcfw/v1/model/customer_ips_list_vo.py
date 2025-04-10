@@ -55,7 +55,7 @@ class CustomerIpsListVO:
     }
 
     def __init__(self, action=None, affected_os=None, attack_type=None, config_status=None, content=None, dst_port_type=None, dst_ports=None, group_id=None, ips_cfw_id=None, ips_id=None, ips_name=None, protocol=None, severity=None, software=None, src_port_type=None, src_ports=None):
-        """CustomerIpsListVO
+        r"""CustomerIpsListVO
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class CustomerIpsListVO:
 
     @property
     def action(self):
-        """Gets the action of this CustomerIpsListVO.
+        r"""Gets the action of this CustomerIpsListVO.
 
         动作（0：只记录日志，1：重置/拦截）
 
@@ -159,7 +159,7 @@ class CustomerIpsListVO:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CustomerIpsListVO.
+        r"""Sets the action of this CustomerIpsListVO.
 
         动作（0：只记录日志，1：重置/拦截）
 
@@ -170,7 +170,7 @@ class CustomerIpsListVO:
 
     @property
     def affected_os(self):
-        """Gets the affected_os of this CustomerIpsListVO.
+        r"""Gets the affected_os of this CustomerIpsListVO.
 
         操作系统
 
@@ -181,7 +181,7 @@ class CustomerIpsListVO:
 
     @affected_os.setter
     def affected_os(self, affected_os):
-        """Sets the affected_os of this CustomerIpsListVO.
+        r"""Sets the affected_os of this CustomerIpsListVO.
 
         操作系统
 
@@ -192,7 +192,7 @@ class CustomerIpsListVO:
 
     @property
     def attack_type(self):
-        """Gets the attack_type of this CustomerIpsListVO.
+        r"""Gets the attack_type of this CustomerIpsListVO.
 
         攻击类型
 
@@ -203,7 +203,7 @@ class CustomerIpsListVO:
 
     @attack_type.setter
     def attack_type(self, attack_type):
-        """Sets the attack_type of this CustomerIpsListVO.
+        r"""Sets the attack_type of this CustomerIpsListVO.
 
         攻击类型
 
@@ -214,7 +214,7 @@ class CustomerIpsListVO:
 
     @property
     def config_status(self):
-        """Gets the config_status of this CustomerIpsListVO.
+        r"""Gets the config_status of this CustomerIpsListVO.
 
         规则状态（0：初始化，1：配置中，2：配置成功，3：配置失败）
 
@@ -225,7 +225,7 @@ class CustomerIpsListVO:
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this CustomerIpsListVO.
+        r"""Sets the config_status of this CustomerIpsListVO.
 
         规则状态（0：初始化，1：配置中，2：配置成功，3：配置失败）
 
@@ -236,7 +236,7 @@ class CustomerIpsListVO:
 
     @property
     def content(self):
-        """Gets the content of this CustomerIpsListVO.
+        r"""Gets the content of this CustomerIpsListVO.
 
         内容json存储
 
@@ -247,7 +247,7 @@ class CustomerIpsListVO:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CustomerIpsListVO.
+        r"""Sets the content of this CustomerIpsListVO.
 
         内容json存储
 
@@ -258,7 +258,7 @@ class CustomerIpsListVO:
 
     @property
     def dst_port_type(self):
-        """Gets the dst_port_type of this CustomerIpsListVO.
+        r"""Gets the dst_port_type of this CustomerIpsListVO.
 
         目的端口类型
 
@@ -269,7 +269,7 @@ class CustomerIpsListVO:
 
     @dst_port_type.setter
     def dst_port_type(self, dst_port_type):
-        """Sets the dst_port_type of this CustomerIpsListVO.
+        r"""Sets the dst_port_type of this CustomerIpsListVO.
 
         目的端口类型
 
@@ -280,7 +280,7 @@ class CustomerIpsListVO:
 
     @property
     def dst_ports(self):
-        """Gets the dst_ports of this CustomerIpsListVO.
+        r"""Gets the dst_ports of this CustomerIpsListVO.
 
         目的端口
 
@@ -291,7 +291,7 @@ class CustomerIpsListVO:
 
     @dst_ports.setter
     def dst_ports(self, dst_ports):
-        """Sets the dst_ports of this CustomerIpsListVO.
+        r"""Sets the dst_ports of this CustomerIpsListVO.
 
         目的端口
 
@@ -302,7 +302,7 @@ class CustomerIpsListVO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CustomerIpsListVO.
+        r"""Gets the group_id of this CustomerIpsListVO.
 
         防火墙集群id
 
@@ -313,7 +313,7 @@ class CustomerIpsListVO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CustomerIpsListVO.
+        r"""Sets the group_id of this CustomerIpsListVO.
 
         防火墙集群id
 
@@ -324,7 +324,7 @@ class CustomerIpsListVO:
 
     @property
     def ips_cfw_id(self):
-        """Gets the ips_cfw_id of this CustomerIpsListVO.
+        r"""Gets the ips_cfw_id of this CustomerIpsListVO.
 
         cfw侧自定义ips规则id
 
@@ -335,7 +335,7 @@ class CustomerIpsListVO:
 
     @ips_cfw_id.setter
     def ips_cfw_id(self, ips_cfw_id):
-        """Sets the ips_cfw_id of this CustomerIpsListVO.
+        r"""Sets the ips_cfw_id of this CustomerIpsListVO.
 
         cfw侧自定义ips规则id
 
@@ -346,7 +346,7 @@ class CustomerIpsListVO:
 
     @property
     def ips_id(self):
-        """Gets the ips_id of this CustomerIpsListVO.
+        r"""Gets the ips_id of this CustomerIpsListVO.
 
         山石侧规则id
 
@@ -357,7 +357,7 @@ class CustomerIpsListVO:
 
     @ips_id.setter
     def ips_id(self, ips_id):
-        """Sets the ips_id of this CustomerIpsListVO.
+        r"""Sets the ips_id of this CustomerIpsListVO.
 
         山石侧规则id
 
@@ -368,7 +368,7 @@ class CustomerIpsListVO:
 
     @property
     def ips_name(self):
-        """Gets the ips_name of this CustomerIpsListVO.
+        r"""Gets the ips_name of this CustomerIpsListVO.
 
         ips规则名称
 
@@ -379,7 +379,7 @@ class CustomerIpsListVO:
 
     @ips_name.setter
     def ips_name(self, ips_name):
-        """Sets the ips_name of this CustomerIpsListVO.
+        r"""Sets the ips_name of this CustomerIpsListVO.
 
         ips规则名称
 
@@ -390,7 +390,7 @@ class CustomerIpsListVO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CustomerIpsListVO.
+        r"""Gets the protocol of this CustomerIpsListVO.
 
         协议
 
@@ -401,7 +401,7 @@ class CustomerIpsListVO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CustomerIpsListVO.
+        r"""Sets the protocol of this CustomerIpsListVO.
 
         协议
 
@@ -412,7 +412,7 @@ class CustomerIpsListVO:
 
     @property
     def severity(self):
-        """Gets the severity of this CustomerIpsListVO.
+        r"""Gets the severity of this CustomerIpsListVO.
 
         严重程度（critical：致命，high：高危，medium:中危，low:低危）
 
@@ -423,7 +423,7 @@ class CustomerIpsListVO:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CustomerIpsListVO.
+        r"""Sets the severity of this CustomerIpsListVO.
 
         严重程度（critical：致命，high：高危，medium:中危，low:低危）
 
@@ -434,7 +434,7 @@ class CustomerIpsListVO:
 
     @property
     def software(self):
-        """Gets the software of this CustomerIpsListVO.
+        r"""Gets the software of this CustomerIpsListVO.
 
         影响软件
 
@@ -445,7 +445,7 @@ class CustomerIpsListVO:
 
     @software.setter
     def software(self, software):
-        """Sets the software of this CustomerIpsListVO.
+        r"""Sets the software of this CustomerIpsListVO.
 
         影响软件
 
@@ -456,7 +456,7 @@ class CustomerIpsListVO:
 
     @property
     def src_port_type(self):
-        """Gets the src_port_type of this CustomerIpsListVO.
+        r"""Gets the src_port_type of this CustomerIpsListVO.
 
         源端口类型
 
@@ -467,7 +467,7 @@ class CustomerIpsListVO:
 
     @src_port_type.setter
     def src_port_type(self, src_port_type):
-        """Sets the src_port_type of this CustomerIpsListVO.
+        r"""Sets the src_port_type of this CustomerIpsListVO.
 
         源端口类型
 
@@ -478,7 +478,7 @@ class CustomerIpsListVO:
 
     @property
     def src_ports(self):
-        """Gets the src_ports of this CustomerIpsListVO.
+        r"""Gets the src_ports of this CustomerIpsListVO.
 
         源端口
 
@@ -489,7 +489,7 @@ class CustomerIpsListVO:
 
     @src_ports.setter
     def src_ports(self, src_ports):
-        """Sets the src_ports of this CustomerIpsListVO.
+        r"""Sets the src_ports of this CustomerIpsListVO.
 
         源端口
 

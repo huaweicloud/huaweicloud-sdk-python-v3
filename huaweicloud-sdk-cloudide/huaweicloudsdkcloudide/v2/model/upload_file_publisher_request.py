@@ -28,7 +28,7 @@ class UploadFilePublisherRequest:
     }
 
     def __init__(self, x_publisher_token=None, body=None):
-        """UploadFilePublisherRequest
+        r"""UploadFilePublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UploadFilePublisherRequest:
 
     @property
     def x_publisher_token(self):
-        """Gets the x_publisher_token of this UploadFilePublisherRequest.
+        r"""Gets the x_publisher_token of this UploadFilePublisherRequest.
 
         发布商凭证,x-publisher-token和X-Auth-Token必传一个
 
@@ -62,7 +62,7 @@ class UploadFilePublisherRequest:
 
     @x_publisher_token.setter
     def x_publisher_token(self, x_publisher_token):
-        """Sets the x_publisher_token of this UploadFilePublisherRequest.
+        r"""Sets the x_publisher_token of this UploadFilePublisherRequest.
 
         发布商凭证,x-publisher-token和X-Auth-Token必传一个
 
@@ -73,7 +73,7 @@ class UploadFilePublisherRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadFilePublisherRequest.
+        r"""Gets the body of this UploadFilePublisherRequest.
 
         :return: The body of this UploadFilePublisherRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherRequestBody`
@@ -82,7 +82,7 @@ class UploadFilePublisherRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadFilePublisherRequest.
+        r"""Sets the body of this UploadFilePublisherRequest.
 
         :param body: The body of this UploadFilePublisherRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherRequestBody`

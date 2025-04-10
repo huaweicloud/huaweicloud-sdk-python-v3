@@ -51,7 +51,7 @@ class PipelineLatestRunBuildParams:
     }
 
     def __init__(self, action=None, build_type=None, commit_id=None, event_type=None, merge_id=None, message=None, source_branch=None, tag=None, target_branch=None, codehub_id=None, git_url=None, source_codehub_id=None, source_codehub_url=None, source_codehub_http_url=None):
-        """PipelineLatestRunBuildParams
+        r"""PipelineLatestRunBuildParams
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def action(self):
-        """Gets the action of this PipelineLatestRunBuildParams.
+        r"""Gets the action of this PipelineLatestRunBuildParams.
 
         合并请求的事件类型
 
@@ -145,7 +145,7 @@ class PipelineLatestRunBuildParams:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PipelineLatestRunBuildParams.
+        r"""Sets the action of this PipelineLatestRunBuildParams.
 
         合并请求的事件类型
 
@@ -156,7 +156,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def build_type(self):
-        """Gets the build_type of this PipelineLatestRunBuildParams.
+        r"""Gets the build_type of this PipelineLatestRunBuildParams.
 
         基于分支还是tag触发
 
@@ -167,7 +167,7 @@ class PipelineLatestRunBuildParams:
 
     @build_type.setter
     def build_type(self, build_type):
-        """Sets the build_type of this PipelineLatestRunBuildParams.
+        r"""Sets the build_type of this PipelineLatestRunBuildParams.
 
         基于分支还是tag触发
 
@@ -178,7 +178,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this PipelineLatestRunBuildParams.
+        r"""Gets the commit_id of this PipelineLatestRunBuildParams.
 
         代码库提交ID
 
@@ -189,7 +189,7 @@ class PipelineLatestRunBuildParams:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this PipelineLatestRunBuildParams.
+        r"""Sets the commit_id of this PipelineLatestRunBuildParams.
 
         代码库提交ID
 
@@ -200,7 +200,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def event_type(self):
-        """Gets the event_type of this PipelineLatestRunBuildParams.
+        r"""Gets the event_type of this PipelineLatestRunBuildParams.
 
         触发的事件类型
 
@@ -211,7 +211,7 @@ class PipelineLatestRunBuildParams:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this PipelineLatestRunBuildParams.
+        r"""Sets the event_type of this PipelineLatestRunBuildParams.
 
         触发的事件类型
 
@@ -222,7 +222,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def merge_id(self):
-        """Gets the merge_id of this PipelineLatestRunBuildParams.
+        r"""Gets the merge_id of this PipelineLatestRunBuildParams.
 
         合并请求的ID
 
@@ -233,7 +233,7 @@ class PipelineLatestRunBuildParams:
 
     @merge_id.setter
     def merge_id(self, merge_id):
-        """Sets the merge_id of this PipelineLatestRunBuildParams.
+        r"""Sets the merge_id of this PipelineLatestRunBuildParams.
 
         合并请求的ID
 
@@ -244,7 +244,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def message(self):
-        """Gets the message of this PipelineLatestRunBuildParams.
+        r"""Gets the message of this PipelineLatestRunBuildParams.
 
         代码库提交信息
 
@@ -255,7 +255,7 @@ class PipelineLatestRunBuildParams:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PipelineLatestRunBuildParams.
+        r"""Sets the message of this PipelineLatestRunBuildParams.
 
         代码库提交信息
 
@@ -266,7 +266,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def source_branch(self):
-        """Gets the source_branch of this PipelineLatestRunBuildParams.
+        r"""Gets the source_branch of this PipelineLatestRunBuildParams.
 
         合并请求的源分支
 
@@ -277,7 +277,7 @@ class PipelineLatestRunBuildParams:
 
     @source_branch.setter
     def source_branch(self, source_branch):
-        """Sets the source_branch of this PipelineLatestRunBuildParams.
+        r"""Sets the source_branch of this PipelineLatestRunBuildParams.
 
         合并请求的源分支
 
@@ -288,7 +288,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def tag(self):
-        """Gets the tag of this PipelineLatestRunBuildParams.
+        r"""Gets the tag of this PipelineLatestRunBuildParams.
 
         标签
 
@@ -299,7 +299,7 @@ class PipelineLatestRunBuildParams:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this PipelineLatestRunBuildParams.
+        r"""Sets the tag of this PipelineLatestRunBuildParams.
 
         标签
 
@@ -310,7 +310,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this PipelineLatestRunBuildParams.
+        r"""Gets the target_branch of this PipelineLatestRunBuildParams.
 
         目标分支
 
@@ -321,7 +321,7 @@ class PipelineLatestRunBuildParams:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this PipelineLatestRunBuildParams.
+        r"""Sets the target_branch of this PipelineLatestRunBuildParams.
 
         目标分支
 
@@ -332,7 +332,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this PipelineLatestRunBuildParams.
+        r"""Gets the codehub_id of this PipelineLatestRunBuildParams.
 
         codehub代码仓ID
 
@@ -343,7 +343,7 @@ class PipelineLatestRunBuildParams:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this PipelineLatestRunBuildParams.
+        r"""Sets the codehub_id of this PipelineLatestRunBuildParams.
 
         codehub代码仓ID
 
@@ -354,7 +354,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def git_url(self):
-        """Gets the git_url of this PipelineLatestRunBuildParams.
+        r"""Gets the git_url of this PipelineLatestRunBuildParams.
 
         代码仓https地址
 
@@ -365,7 +365,7 @@ class PipelineLatestRunBuildParams:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this PipelineLatestRunBuildParams.
+        r"""Sets the git_url of this PipelineLatestRunBuildParams.
 
         代码仓https地址
 
@@ -376,7 +376,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def source_codehub_id(self):
-        """Gets the source_codehub_id of this PipelineLatestRunBuildParams.
+        r"""Gets the source_codehub_id of this PipelineLatestRunBuildParams.
 
         源codehub代码仓ID
 
@@ -387,7 +387,7 @@ class PipelineLatestRunBuildParams:
 
     @source_codehub_id.setter
     def source_codehub_id(self, source_codehub_id):
-        """Sets the source_codehub_id of this PipelineLatestRunBuildParams.
+        r"""Sets the source_codehub_id of this PipelineLatestRunBuildParams.
 
         源codehub代码仓ID
 
@@ -398,7 +398,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def source_codehub_url(self):
-        """Gets the source_codehub_url of this PipelineLatestRunBuildParams.
+        r"""Gets the source_codehub_url of this PipelineLatestRunBuildParams.
 
         源codehub代码仓地址
 
@@ -409,7 +409,7 @@ class PipelineLatestRunBuildParams:
 
     @source_codehub_url.setter
     def source_codehub_url(self, source_codehub_url):
-        """Sets the source_codehub_url of this PipelineLatestRunBuildParams.
+        r"""Sets the source_codehub_url of this PipelineLatestRunBuildParams.
 
         源codehub代码仓地址
 
@@ -420,7 +420,7 @@ class PipelineLatestRunBuildParams:
 
     @property
     def source_codehub_http_url(self):
-        """Gets the source_codehub_http_url of this PipelineLatestRunBuildParams.
+        r"""Gets the source_codehub_http_url of this PipelineLatestRunBuildParams.
 
         源codehub代码仓http地址
 
@@ -431,7 +431,7 @@ class PipelineLatestRunBuildParams:
 
     @source_codehub_http_url.setter
     def source_codehub_http_url(self, source_codehub_http_url):
-        """Sets the source_codehub_http_url of this PipelineLatestRunBuildParams.
+        r"""Sets the source_codehub_http_url of this PipelineLatestRunBuildParams.
 
         源codehub代码仓http地址
 

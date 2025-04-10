@@ -29,7 +29,7 @@ class DownloadAttachmentRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, attachment_id=None):
-        """DownloadAttachmentRequest
+        r"""DownloadAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DownloadAttachmentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DownloadAttachmentRequest.
+        r"""Gets the project_id of this DownloadAttachmentRequest.
 
         devcloud项目的32位id
 
@@ -65,7 +65,7 @@ class DownloadAttachmentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DownloadAttachmentRequest.
+        r"""Sets the project_id of this DownloadAttachmentRequest.
 
         devcloud项目的32位id
 
@@ -76,7 +76,7 @@ class DownloadAttachmentRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this DownloadAttachmentRequest.
+        r"""Gets the issue_id of this DownloadAttachmentRequest.
 
         工作项id
 
@@ -87,7 +87,7 @@ class DownloadAttachmentRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this DownloadAttachmentRequest.
+        r"""Sets the issue_id of this DownloadAttachmentRequest.
 
         工作项id
 
@@ -98,7 +98,7 @@ class DownloadAttachmentRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this DownloadAttachmentRequest.
+        r"""Gets the attachment_id of this DownloadAttachmentRequest.
 
         附件id
 
@@ -109,7 +109,7 @@ class DownloadAttachmentRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this DownloadAttachmentRequest.
+        r"""Sets the attachment_id of this DownloadAttachmentRequest.
 
         附件id
 

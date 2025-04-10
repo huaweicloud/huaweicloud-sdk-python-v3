@@ -28,7 +28,7 @@ class ResizeInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ResizeInstanceResponse
+        r"""ResizeInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResizeInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeInstanceResponse.
+        r"""Gets the job_id of this ResizeInstanceResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class ResizeInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeInstanceResponse.
+        r"""Sets the job_id of this ResizeInstanceResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class ResizeInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeInstanceResponse.
+        r"""Gets the order_id of this ResizeInstanceResponse.
 
         订单ID，仅变更包年包月实例的规格时返回该参数。
 
@@ -84,7 +84,7 @@ class ResizeInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeInstanceResponse.
+        r"""Sets the order_id of this ResizeInstanceResponse.
 
         订单ID，仅变更包年包月实例的规格时返回该参数。
 

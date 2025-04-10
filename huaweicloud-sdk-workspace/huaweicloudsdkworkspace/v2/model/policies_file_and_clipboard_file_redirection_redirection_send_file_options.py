@@ -25,7 +25,7 @@ class PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions:
     }
 
     def __init__(self, read_write_speed=None):
-        """PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions
+        r"""PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions:
 
     @property
     def read_write_speed(self):
-        """Gets the read_write_speed of this PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions.
+        r"""Gets the read_write_speed of this PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions.
 
         读写速度（Kbps）。取值范围为[0-2147483647]。默认：0。
 
@@ -54,7 +54,7 @@ class PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions:
 
     @read_write_speed.setter
     def read_write_speed(self, read_write_speed):
-        """Sets the read_write_speed of this PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions.
+        r"""Sets the read_write_speed of this PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions.
 
         读写速度（Kbps）。取值范围为[0-2147483647]。默认：0。
 

@@ -31,7 +31,7 @@ class SendCommandRequestBody:
     }
 
     def __init__(self, service_id=None, command_id=None, is_sync=None, requests=None):
-        """SendCommandRequestBody
+        r"""SendCommandRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class SendCommandRequestBody:
 
     @property
     def service_id(self):
-        """Gets the service_id of this SendCommandRequestBody.
+        r"""Gets the service_id of this SendCommandRequestBody.
 
         服务ID，自动向下取整
 
@@ -72,7 +72,7 @@ class SendCommandRequestBody:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this SendCommandRequestBody.
+        r"""Sets the service_id of this SendCommandRequestBody.
 
         服务ID，自动向下取整
 
@@ -83,7 +83,7 @@ class SendCommandRequestBody:
 
     @property
     def command_id(self):
-        """Gets the command_id of this SendCommandRequestBody.
+        r"""Gets the command_id of this SendCommandRequestBody.
 
         命令ID，自动向下取整
 
@@ -94,7 +94,7 @@ class SendCommandRequestBody:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this SendCommandRequestBody.
+        r"""Sets the command_id of this SendCommandRequestBody.
 
         命令ID，自动向下取整
 
@@ -105,7 +105,7 @@ class SendCommandRequestBody:
 
     @property
     def is_sync(self):
-        """Gets the is_sync of this SendCommandRequestBody.
+        r"""Gets the is_sync of this SendCommandRequestBody.
 
         命令是否同步 true-同步 false-异步 同步命令会将命令以MQTT消息发送给设备后等待设备的MQTT命令响应，收到响应后再回复响应（默认超时5秒），异步命令则以立即返回响应
 
@@ -116,7 +116,7 @@ class SendCommandRequestBody:
 
     @is_sync.setter
     def is_sync(self, is_sync):
-        """Sets the is_sync of this SendCommandRequestBody.
+        r"""Sets the is_sync of this SendCommandRequestBody.
 
         命令是否同步 true-同步 false-异步 同步命令会将命令以MQTT消息发送给设备后等待设备的MQTT命令响应，收到响应后再回复响应（默认超时5秒），异步命令则以立即返回响应
 
@@ -127,7 +127,7 @@ class SendCommandRequestBody:
 
     @property
     def requests(self):
-        """Gets the requests of this SendCommandRequestBody.
+        r"""Gets the requests of this SendCommandRequestBody.
 
         请求参数列表
 
@@ -138,7 +138,7 @@ class SendCommandRequestBody:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this SendCommandRequestBody.
+        r"""Sets the requests of this SendCommandRequestBody.
 
         请求参数列表
 

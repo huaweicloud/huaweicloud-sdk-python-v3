@@ -27,7 +27,7 @@ class UpdateEventStreamingRequest:
     }
 
     def __init__(self, eventstreaming_id=None, body=None):
-        """UpdateEventStreamingRequest
+        r"""UpdateEventStreamingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEventStreamingRequest:
 
     @property
     def eventstreaming_id(self):
-        """Gets the eventstreaming_id of this UpdateEventStreamingRequest.
+        r"""Gets the eventstreaming_id of this UpdateEventStreamingRequest.
 
         事件流ID
 
@@ -60,7 +60,7 @@ class UpdateEventStreamingRequest:
 
     @eventstreaming_id.setter
     def eventstreaming_id(self, eventstreaming_id):
-        """Sets the eventstreaming_id of this UpdateEventStreamingRequest.
+        r"""Sets the eventstreaming_id of this UpdateEventStreamingRequest.
 
         事件流ID
 
@@ -71,7 +71,7 @@ class UpdateEventStreamingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventStreamingRequest.
+        r"""Gets the body of this UpdateEventStreamingRequest.
 
         :return: The body of this UpdateEventStreamingRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingUpdateReq`
@@ -80,7 +80,7 @@ class UpdateEventStreamingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventStreamingRequest.
+        r"""Sets the body of this UpdateEventStreamingRequest.
 
         :param body: The body of this UpdateEventStreamingRequest.
         :type body: :class:`huaweicloudsdkeg.v1.EventStreamingUpdateReq`

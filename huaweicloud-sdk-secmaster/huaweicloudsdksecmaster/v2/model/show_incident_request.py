@@ -29,7 +29,7 @@ class ShowIncidentRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, incident_id=None):
-        """ShowIncidentRequest
+        r"""ShowIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowIncidentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowIncidentRequest.
+        r"""Gets the project_id of this ShowIncidentRequest.
 
         项目id
 
@@ -65,7 +65,7 @@ class ShowIncidentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowIncidentRequest.
+        r"""Sets the project_id of this ShowIncidentRequest.
 
         项目id
 
@@ -76,7 +76,7 @@ class ShowIncidentRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowIncidentRequest.
+        r"""Gets the workspace_id of this ShowIncidentRequest.
 
         工作空间id
 
@@ -87,7 +87,7 @@ class ShowIncidentRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowIncidentRequest.
+        r"""Sets the workspace_id of this ShowIncidentRequest.
 
         工作空间id
 
@@ -98,7 +98,7 @@ class ShowIncidentRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ShowIncidentRequest.
+        r"""Gets the incident_id of this ShowIncidentRequest.
 
         事件ID
 
@@ -109,7 +109,7 @@ class ShowIncidentRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ShowIncidentRequest.
+        r"""Sets the incident_id of this ShowIncidentRequest.
 
         事件ID
 

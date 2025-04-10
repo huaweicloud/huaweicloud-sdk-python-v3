@@ -25,7 +25,7 @@ class UpdateFloatingIpOption:
     }
 
     def __init__(self, port_id=None):
-        """UpdateFloatingIpOption
+        r"""UpdateFloatingIpOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateFloatingIpOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdateFloatingIpOption.
+        r"""Gets the port_id of this UpdateFloatingIpOption.
 
         端口id。
 
@@ -54,7 +54,7 @@ class UpdateFloatingIpOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdateFloatingIpOption.
+        r"""Sets the port_id of this UpdateFloatingIpOption.
 
         端口id。
 

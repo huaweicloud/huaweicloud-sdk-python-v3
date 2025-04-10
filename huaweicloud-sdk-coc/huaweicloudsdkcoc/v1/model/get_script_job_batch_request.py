@@ -39,7 +39,7 @@ class GetScriptJobBatchRequest:
     }
 
     def __init__(self, batch_index=None, execute_uuid=None, status=None, limit=None, marker=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """GetScriptJobBatchRequest
+        r"""GetScriptJobBatchRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def batch_index(self):
-        """Gets the batch_index of this GetScriptJobBatchRequest.
+        r"""Gets the batch_index of this GetScriptJobBatchRequest.
 
         批次index
 
@@ -99,7 +99,7 @@ class GetScriptJobBatchRequest:
 
     @batch_index.setter
     def batch_index(self, batch_index):
-        """Sets the batch_index of this GetScriptJobBatchRequest.
+        r"""Sets the batch_index of this GetScriptJobBatchRequest.
 
         批次index
 
@@ -110,7 +110,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def execute_uuid(self):
-        """Gets the execute_uuid of this GetScriptJobBatchRequest.
+        r"""Gets the execute_uuid of this GetScriptJobBatchRequest.
 
         脚本工单的执行Id，取自executeJobScript和ListJobScriptOrders返回体中
 
@@ -121,7 +121,7 @@ class GetScriptJobBatchRequest:
 
     @execute_uuid.setter
     def execute_uuid(self, execute_uuid):
-        """Sets the execute_uuid of this GetScriptJobBatchRequest.
+        r"""Sets the execute_uuid of this GetScriptJobBatchRequest.
 
         脚本工单的执行Id，取自executeJobScript和ListJobScriptOrders返回体中
 
@@ -132,7 +132,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def status(self):
-        """Gets the status of this GetScriptJobBatchRequest.
+        r"""Gets the status of this GetScriptJobBatchRequest.
 
         实例执行状态 READY：待执行 PROCESSING：执行中 ABNORMAL：异常 CANCELED：已取消 FINISHED：成功
 
@@ -143,7 +143,7 @@ class GetScriptJobBatchRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetScriptJobBatchRequest.
+        r"""Sets the status of this GetScriptJobBatchRequest.
 
         实例执行状态 READY：待执行 PROCESSING：执行中 ABNORMAL：异常 CANCELED：已取消 FINISHED：成功
 
@@ -154,7 +154,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this GetScriptJobBatchRequest.
+        r"""Gets the limit of this GetScriptJobBatchRequest.
 
         分页参数：每页返回记录个数限制
 
@@ -165,7 +165,7 @@ class GetScriptJobBatchRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this GetScriptJobBatchRequest.
+        r"""Sets the limit of this GetScriptJobBatchRequest.
 
         分页参数：每页返回记录个数限制
 
@@ -176,7 +176,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this GetScriptJobBatchRequest.
+        r"""Gets the marker of this GetScriptJobBatchRequest.
 
         分页参数：上一页最后一个记录id
 
@@ -187,7 +187,7 @@ class GetScriptJobBatchRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this GetScriptJobBatchRequest.
+        r"""Sets the marker of this GetScriptJobBatchRequest.
 
         分页参数：上一页最后一个记录id
 
@@ -198,7 +198,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this GetScriptJobBatchRequest.
+        r"""Gets the x_language of this GetScriptJobBatchRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -209,7 +209,7 @@ class GetScriptJobBatchRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this GetScriptJobBatchRequest.
+        r"""Sets the x_language of this GetScriptJobBatchRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -220,7 +220,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this GetScriptJobBatchRequest.
+        r"""Gets the x_project_id of this GetScriptJobBatchRequest.
 
         项目ID，一个项目对应一个region
 
@@ -231,7 +231,7 @@ class GetScriptJobBatchRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this GetScriptJobBatchRequest.
+        r"""Sets the x_project_id of this GetScriptJobBatchRequest.
 
         项目ID，一个项目对应一个region
 
@@ -242,7 +242,7 @@ class GetScriptJobBatchRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this GetScriptJobBatchRequest.
+        r"""Gets the x_user_profile of this GetScriptJobBatchRequest.
 
         IAM5.0用户信息
 
@@ -253,7 +253,7 @@ class GetScriptJobBatchRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this GetScriptJobBatchRequest.
+        r"""Sets the x_user_profile of this GetScriptJobBatchRequest.
 
         IAM5.0用户信息
 

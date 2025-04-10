@@ -29,7 +29,7 @@ class SmsCountryResp:
     }
 
     def __init__(self, country_id=None, country_name_en=None, country_name_zh=None):
-        """SmsCountryResp
+        r"""SmsCountryResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmsCountryResp:
 
     @property
     def country_id(self):
-        """Gets the country_id of this SmsCountryResp.
+        r"""Gets the country_id of this SmsCountryResp.
 
         国家id
 
@@ -68,7 +68,7 @@ class SmsCountryResp:
 
     @country_id.setter
     def country_id(self, country_id):
-        """Sets the country_id of this SmsCountryResp.
+        r"""Sets the country_id of this SmsCountryResp.
 
         国家id
 
@@ -79,7 +79,7 @@ class SmsCountryResp:
 
     @property
     def country_name_en(self):
-        """Gets the country_name_en of this SmsCountryResp.
+        r"""Gets the country_name_en of this SmsCountryResp.
 
         国家(英文)
 
@@ -90,7 +90,7 @@ class SmsCountryResp:
 
     @country_name_en.setter
     def country_name_en(self, country_name_en):
-        """Sets the country_name_en of this SmsCountryResp.
+        r"""Sets the country_name_en of this SmsCountryResp.
 
         国家(英文)
 
@@ -101,7 +101,7 @@ class SmsCountryResp:
 
     @property
     def country_name_zh(self):
-        """Gets the country_name_zh of this SmsCountryResp.
+        r"""Gets the country_name_zh of this SmsCountryResp.
 
         国家(中文)
 
@@ -112,7 +112,7 @@ class SmsCountryResp:
 
     @country_name_zh.setter
     def country_name_zh(self, country_name_zh):
-        """Sets the country_name_zh of this SmsCountryResp.
+        r"""Sets the country_name_zh of this SmsCountryResp.
 
         国家(中文)
 

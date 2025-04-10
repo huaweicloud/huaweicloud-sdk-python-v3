@@ -29,7 +29,7 @@ class ExecuteChatCompletionRequest:
     }
 
     def __init__(self, pool_id=None, deployment_id=None, body=None):
-        """ExecuteChatCompletionRequest
+        r"""ExecuteChatCompletionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteChatCompletionRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ExecuteChatCompletionRequest.
+        r"""Gets the pool_id of this ExecuteChatCompletionRequest.
 
         资源池ID
 
@@ -66,7 +66,7 @@ class ExecuteChatCompletionRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ExecuteChatCompletionRequest.
+        r"""Sets the pool_id of this ExecuteChatCompletionRequest.
 
         资源池ID
 
@@ -77,7 +77,7 @@ class ExecuteChatCompletionRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ExecuteChatCompletionRequest.
+        r"""Gets the deployment_id of this ExecuteChatCompletionRequest.
 
         模型的部署ID
 
@@ -88,7 +88,7 @@ class ExecuteChatCompletionRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ExecuteChatCompletionRequest.
+        r"""Sets the deployment_id of this ExecuteChatCompletionRequest.
 
         模型的部署ID
 
@@ -99,7 +99,7 @@ class ExecuteChatCompletionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteChatCompletionRequest.
+        r"""Gets the body of this ExecuteChatCompletionRequest.
 
         :return: The body of this ExecuteChatCompletionRequest.
         :rtype: :class:`huaweicloudsdkpangulargemodels.v2.ChatCompletionReq`
@@ -108,7 +108,7 @@ class ExecuteChatCompletionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteChatCompletionRequest.
+        r"""Sets the body of this ExecuteChatCompletionRequest.
 
         :param body: The body of this ExecuteChatCompletionRequest.
         :type body: :class:`huaweicloudsdkpangulargemodels.v2.ChatCompletionReq`

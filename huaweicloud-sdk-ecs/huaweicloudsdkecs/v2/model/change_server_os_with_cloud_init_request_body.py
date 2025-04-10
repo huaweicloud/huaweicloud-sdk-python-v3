@@ -25,7 +25,7 @@ class ChangeServerOsWithCloudInitRequestBody:
     }
 
     def __init__(self, os_change=None):
-        """ChangeServerOsWithCloudInitRequestBody
+        r"""ChangeServerOsWithCloudInitRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeServerOsWithCloudInitRequestBody:
 
     @property
     def os_change(self):
-        """Gets the os_change of this ChangeServerOsWithCloudInitRequestBody.
+        r"""Gets the os_change of this ChangeServerOsWithCloudInitRequestBody.
 
         :return: The os_change of this ChangeServerOsWithCloudInitRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitOption`
@@ -51,7 +51,7 @@ class ChangeServerOsWithCloudInitRequestBody:
 
     @os_change.setter
     def os_change(self, os_change):
-        """Sets the os_change of this ChangeServerOsWithCloudInitRequestBody.
+        r"""Sets the os_change of this ChangeServerOsWithCloudInitRequestBody.
 
         :param os_change: The os_change of this ChangeServerOsWithCloudInitRequestBody.
         :type os_change: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitOption`

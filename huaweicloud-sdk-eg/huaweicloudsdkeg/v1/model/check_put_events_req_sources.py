@@ -27,7 +27,7 @@ class CheckPutEventsReqSources:
     }
 
     def __init__(self, channel_id=None, source_name=None):
-        """CheckPutEventsReqSources
+        r"""CheckPutEventsReqSources
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CheckPutEventsReqSources:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this CheckPutEventsReqSources.
+        r"""Gets the channel_id of this CheckPutEventsReqSources.
 
         事件通道ID
 
@@ -61,7 +61,7 @@ class CheckPutEventsReqSources:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this CheckPutEventsReqSources.
+        r"""Sets the channel_id of this CheckPutEventsReqSources.
 
         事件通道ID
 
@@ -72,7 +72,7 @@ class CheckPutEventsReqSources:
 
     @property
     def source_name(self):
-        """Gets the source_name of this CheckPutEventsReqSources.
+        r"""Gets the source_name of this CheckPutEventsReqSources.
 
         事件源名称
 
@@ -83,7 +83,7 @@ class CheckPutEventsReqSources:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this CheckPutEventsReqSources.
+        r"""Sets the source_name of this CheckPutEventsReqSources.
 
         事件源名称
 

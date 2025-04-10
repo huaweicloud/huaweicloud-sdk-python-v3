@@ -29,7 +29,7 @@ class TranscodeDetail:
     }
 
     def __init__(self, multitask_info=None, input_file=None, replace_sub_index=None):
-        """TranscodeDetail
+        r"""TranscodeDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TranscodeDetail:
 
     @property
     def multitask_info(self):
-        """Gets the multitask_info of this TranscodeDetail.
+        r"""Gets the multitask_info of this TranscodeDetail.
 
         一进多出情况下部分转码失败的情况。 
 
@@ -68,7 +68,7 @@ class TranscodeDetail:
 
     @multitask_info.setter
     def multitask_info(self, multitask_info):
-        """Sets the multitask_info of this TranscodeDetail.
+        r"""Sets the multitask_info of this TranscodeDetail.
 
         一进多出情况下部分转码失败的情况。 
 
@@ -79,7 +79,7 @@ class TranscodeDetail:
 
     @property
     def input_file(self):
-        """Gets the input_file of this TranscodeDetail.
+        r"""Gets the input_file of this TranscodeDetail.
 
         :return: The input_file of this TranscodeDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
@@ -88,7 +88,7 @@ class TranscodeDetail:
 
     @input_file.setter
     def input_file(self, input_file):
-        """Sets the input_file of this TranscodeDetail.
+        r"""Sets the input_file of this TranscodeDetail.
 
         :param input_file: The input_file of this TranscodeDetail.
         :type input_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`
@@ -97,7 +97,7 @@ class TranscodeDetail:
 
     @property
     def replace_sub_index(self):
-        """Gets the replace_sub_index of this TranscodeDetail.
+        r"""Gets the replace_sub_index of this TranscodeDetail.
 
         被替换的子索引文件 
 
@@ -108,7 +108,7 @@ class TranscodeDetail:
 
     @replace_sub_index.setter
     def replace_sub_index(self, replace_sub_index):
-        """Sets the replace_sub_index of this TranscodeDetail.
+        r"""Sets the replace_sub_index of this TranscodeDetail.
 
         被替换的子索引文件 
 

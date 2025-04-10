@@ -28,7 +28,7 @@ class AddExtensionStarResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """AddExtensionStarResponse
+        r"""AddExtensionStarResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddExtensionStarResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this AddExtensionStarResponse.
+        r"""Gets the result of this AddExtensionStarResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class AddExtensionStarResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddExtensionStarResponse.
+        r"""Sets the result of this AddExtensionStarResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class AddExtensionStarResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddExtensionStarResponse.
+        r"""Gets the status of this AddExtensionStarResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class AddExtensionStarResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddExtensionStarResponse.
+        r"""Sets the status of this AddExtensionStarResponse.
 
         状态
 

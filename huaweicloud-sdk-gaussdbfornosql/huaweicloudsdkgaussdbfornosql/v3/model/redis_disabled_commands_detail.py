@@ -29,7 +29,7 @@ class RedisDisabledCommandsDetail:
     }
 
     def __init__(self, db_id=None, key=None, commands=None):
-        """RedisDisabledCommandsDetail
+        r"""RedisDisabledCommandsDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RedisDisabledCommandsDetail:
 
     @property
     def db_id(self):
-        """Gets the db_id of this RedisDisabledCommandsDetail.
+        r"""Gets the db_id of this RedisDisabledCommandsDetail.
 
         key所在的DB。
 
@@ -65,7 +65,7 @@ class RedisDisabledCommandsDetail:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this RedisDisabledCommandsDetail.
+        r"""Sets the db_id of this RedisDisabledCommandsDetail.
 
         key所在的DB。
 
@@ -76,7 +76,7 @@ class RedisDisabledCommandsDetail:
 
     @property
     def key(self):
-        """Gets the key of this RedisDisabledCommandsDetail.
+        r"""Gets the key of this RedisDisabledCommandsDetail.
 
         key名。
 
@@ -87,7 +87,7 @@ class RedisDisabledCommandsDetail:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this RedisDisabledCommandsDetail.
+        r"""Sets the key of this RedisDisabledCommandsDetail.
 
         key名。
 
@@ -98,7 +98,7 @@ class RedisDisabledCommandsDetail:
 
     @property
     def commands(self):
-        """Gets the commands of this RedisDisabledCommandsDetail.
+        r"""Gets the commands of this RedisDisabledCommandsDetail.
 
         命令列表。
 
@@ -109,7 +109,7 @@ class RedisDisabledCommandsDetail:
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this RedisDisabledCommandsDetail.
+        r"""Sets the commands of this RedisDisabledCommandsDetail.
 
         命令列表。
 

@@ -34,7 +34,7 @@ class ListGroupMembershipsRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, limit=None, marker=None, group_id=None):
-        """ListGroupMembershipsRequest
+        r"""ListGroupMembershipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListGroupMembershipsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListGroupMembershipsRequest.
+        r"""Gets the x_security_token of this ListGroupMembershipsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -81,7 +81,7 @@ class ListGroupMembershipsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListGroupMembershipsRequest.
+        r"""Sets the x_security_token of this ListGroupMembershipsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -92,7 +92,7 @@ class ListGroupMembershipsRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this ListGroupMembershipsRequest.
+        r"""Gets the identity_store_id of this ListGroupMembershipsRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -103,7 +103,7 @@ class ListGroupMembershipsRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this ListGroupMembershipsRequest.
+        r"""Sets the identity_store_id of this ListGroupMembershipsRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -114,7 +114,7 @@ class ListGroupMembershipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupMembershipsRequest.
+        r"""Gets the limit of this ListGroupMembershipsRequest.
 
         每个请求返回的最大结果数
 
@@ -125,7 +125,7 @@ class ListGroupMembershipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupMembershipsRequest.
+        r"""Sets the limit of this ListGroupMembershipsRequest.
 
         每个请求返回的最大结果数
 
@@ -136,7 +136,7 @@ class ListGroupMembershipsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGroupMembershipsRequest.
+        r"""Gets the marker of this ListGroupMembershipsRequest.
 
         分页标记
 
@@ -147,7 +147,7 @@ class ListGroupMembershipsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGroupMembershipsRequest.
+        r"""Sets the marker of this ListGroupMembershipsRequest.
 
         分页标记
 
@@ -158,7 +158,7 @@ class ListGroupMembershipsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListGroupMembershipsRequest.
+        r"""Gets the group_id of this ListGroupMembershipsRequest.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -169,7 +169,7 @@ class ListGroupMembershipsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListGroupMembershipsRequest.
+        r"""Sets the group_id of this ListGroupMembershipsRequest.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 

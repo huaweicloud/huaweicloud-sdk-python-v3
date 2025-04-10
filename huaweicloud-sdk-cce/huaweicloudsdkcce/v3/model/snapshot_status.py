@@ -29,7 +29,7 @@ class SnapshotStatus:
     }
 
     def __init__(self, phase=None, progress=None, completion_time=None):
-        """SnapshotStatus
+        r"""SnapshotStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SnapshotStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this SnapshotStatus.
+        r"""Gets the phase of this SnapshotStatus.
 
         任务状态
 
@@ -68,7 +68,7 @@ class SnapshotStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this SnapshotStatus.
+        r"""Sets the phase of this SnapshotStatus.
 
         任务状态
 
@@ -79,7 +79,7 @@ class SnapshotStatus:
 
     @property
     def progress(self):
-        """Gets the progress of this SnapshotStatus.
+        r"""Gets the progress of this SnapshotStatus.
 
         任务进度
 
@@ -90,7 +90,7 @@ class SnapshotStatus:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this SnapshotStatus.
+        r"""Sets the progress of this SnapshotStatus.
 
         任务进度
 
@@ -101,7 +101,7 @@ class SnapshotStatus:
 
     @property
     def completion_time(self):
-        """Gets the completion_time of this SnapshotStatus.
+        r"""Gets the completion_time of this SnapshotStatus.
 
         完成时间
 
@@ -112,7 +112,7 @@ class SnapshotStatus:
 
     @completion_time.setter
     def completion_time(self, completion_time):
-        """Sets the completion_time of this SnapshotStatus.
+        r"""Sets the completion_time of this SnapshotStatus.
 
         完成时间
 

@@ -33,7 +33,7 @@ class VideoInfo:
     }
 
     def __init__(self, quality=None, width=None, height=None, bitrate=None, frame_rate=None):
-        """VideoInfo
+        r"""VideoInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class VideoInfo:
 
     @property
     def quality(self):
-        """Gets the quality of this VideoInfo.
+        r"""Gets the quality of this VideoInfo.
 
         画质<br/> 4K默认分辨率3840*2160，码率8000kbit/s<br/> 2K默认分辨率2560*1440，码率7000kbit/s<br/> FULL_HD默认分辨率1920*1080，码率3000kbit/s<br/> HD默认分辨率1280*720，码率1000kbit/s<br/> SD默认分辨率854*480，码率600kbit/s<br/> FLUENT默认分辨率480*270，码率300kbit/s<br/> 
 
@@ -79,7 +79,7 @@ class VideoInfo:
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this VideoInfo.
+        r"""Sets the quality of this VideoInfo.
 
         画质<br/> 4K默认分辨率3840*2160，码率8000kbit/s<br/> 2K默认分辨率2560*1440，码率7000kbit/s<br/> FULL_HD默认分辨率1920*1080，码率3000kbit/s<br/> HD默认分辨率1280*720，码率1000kbit/s<br/> SD默认分辨率854*480，码率600kbit/s<br/> FLUENT默认分辨率480*270，码率300kbit/s<br/> 
 
@@ -90,7 +90,7 @@ class VideoInfo:
 
     @property
     def width(self):
-        """Gets the width of this VideoInfo.
+        r"""Gets the width of this VideoInfo.
 
         视频宽度<br/> 
 
@@ -101,7 +101,7 @@ class VideoInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoInfo.
+        r"""Sets the width of this VideoInfo.
 
         视频宽度<br/> 
 
@@ -112,7 +112,7 @@ class VideoInfo:
 
     @property
     def height(self):
-        """Gets the height of this VideoInfo.
+        r"""Gets the height of this VideoInfo.
 
         视频高度<br/> 
 
@@ -123,7 +123,7 @@ class VideoInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoInfo.
+        r"""Sets the height of this VideoInfo.
 
         视频高度<br/> 
 
@@ -134,7 +134,7 @@ class VideoInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoInfo.
+        r"""Gets the bitrate of this VideoInfo.
 
         码率,单位：kbit/s<br/> 
 
@@ -145,7 +145,7 @@ class VideoInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoInfo.
+        r"""Sets the bitrate of this VideoInfo.
 
         码率,单位：kbit/s<br/> 
 
@@ -156,7 +156,7 @@ class VideoInfo:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoInfo.
+        r"""Gets the frame_rate of this VideoInfo.
 
         帧率（默认为0，0代表自适应，单位是帧每秒）<br/> 
 
@@ -167,7 +167,7 @@ class VideoInfo:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoInfo.
+        r"""Sets the frame_rate of this VideoInfo.
 
         帧率（默认为0，0代表自适应，单位是帧每秒）<br/> 
 

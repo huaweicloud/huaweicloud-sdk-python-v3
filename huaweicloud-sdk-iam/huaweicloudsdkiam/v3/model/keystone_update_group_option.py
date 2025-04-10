@@ -29,7 +29,7 @@ class KeystoneUpdateGroupOption:
     }
 
     def __init__(self, description=None, domain_id=None, name=None):
-        """KeystoneUpdateGroupOption
+        r"""KeystoneUpdateGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class KeystoneUpdateGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneUpdateGroupOption.
+        r"""Gets the description of this KeystoneUpdateGroupOption.
 
         用户组描述信息，长度小于等于255字节。name与description至少填写一个。
 
@@ -68,7 +68,7 @@ class KeystoneUpdateGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneUpdateGroupOption.
+        r"""Sets the description of this KeystoneUpdateGroupOption.
 
         用户组描述信息，长度小于等于255字节。name与description至少填写一个。
 
@@ -79,7 +79,7 @@ class KeystoneUpdateGroupOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneUpdateGroupOption.
+        r"""Gets the domain_id of this KeystoneUpdateGroupOption.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -90,7 +90,7 @@ class KeystoneUpdateGroupOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneUpdateGroupOption.
+        r"""Sets the domain_id of this KeystoneUpdateGroupOption.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -101,7 +101,7 @@ class KeystoneUpdateGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneUpdateGroupOption.
+        r"""Gets the name of this KeystoneUpdateGroupOption.
 
         用户组名，长度小于等于128字符。name与description至少填写一个。
 
@@ -112,7 +112,7 @@ class KeystoneUpdateGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneUpdateGroupOption.
+        r"""Sets the name of this KeystoneUpdateGroupOption.
 
         用户组名，长度小于等于128字符。name与description至少填写一个。
 

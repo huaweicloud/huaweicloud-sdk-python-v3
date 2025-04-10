@@ -28,7 +28,7 @@ class RunCheckDataResponse(SdkResponse):
     }
 
     def __init__(self, result=None, data=None):
-        """RunCheckDataResponse
+        r"""RunCheckDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunCheckDataResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunCheckDataResponse.
+        r"""Gets the result of this RunCheckDataResponse.
 
         检查数据完成返回success。
 
@@ -62,7 +62,7 @@ class RunCheckDataResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunCheckDataResponse.
+        r"""Sets the result of this RunCheckDataResponse.
 
         检查数据完成返回success。
 
@@ -73,7 +73,7 @@ class RunCheckDataResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this RunCheckDataResponse.
+        r"""Gets the data of this RunCheckDataResponse.
 
         :return: The data of this RunCheckDataResponse.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.CheckRestInfo`
@@ -82,7 +82,7 @@ class RunCheckDataResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RunCheckDataResponse.
+        r"""Sets the data of this RunCheckDataResponse.
 
         :param data: The data of this RunCheckDataResponse.
         :type data: :class:`huaweicloudsdkimagesearch.v2.CheckRestInfo`

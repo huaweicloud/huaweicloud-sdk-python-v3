@@ -34,7 +34,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, x_security_token=None, marker=None, limit=None, identity_store_id=None, user_name=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListUsersRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListUsersRequest.
+        r"""Gets the x_security_token of this ListUsersRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListUsersRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListUsersRequest.
+        r"""Sets the x_security_token of this ListUsersRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListUsersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListUsersRequest.
+        r"""Gets the marker of this ListUsersRequest.
 
         分页标记
 
@@ -104,7 +104,7 @@ class ListUsersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListUsersRequest.
+        r"""Sets the marker of this ListUsersRequest.
 
         分页标记
 
@@ -115,7 +115,7 @@ class ListUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersRequest.
+        r"""Gets the limit of this ListUsersRequest.
 
         每个请求返回的最大结果数
 
@@ -126,7 +126,7 @@ class ListUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersRequest.
+        r"""Sets the limit of this ListUsersRequest.
 
         每个请求返回的最大结果数
 
@@ -137,7 +137,7 @@ class ListUsersRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this ListUsersRequest.
+        r"""Gets the identity_store_id of this ListUsersRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -148,7 +148,7 @@ class ListUsersRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this ListUsersRequest.
+        r"""Sets the identity_store_id of this ListUsersRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -159,7 +159,7 @@ class ListUsersRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUsersRequest.
+        r"""Gets the user_name of this ListUsersRequest.
 
         用户名
 
@@ -170,7 +170,7 @@ class ListUsersRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUsersRequest.
+        r"""Sets the user_name of this ListUsersRequest.
 
         用户名
 

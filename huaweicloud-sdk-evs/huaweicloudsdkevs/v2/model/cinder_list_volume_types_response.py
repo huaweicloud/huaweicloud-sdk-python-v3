@@ -26,7 +26,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
     }
 
     def __init__(self, volume_types=None):
-        """CinderListVolumeTypesResponse
+        r"""CinderListVolumeTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
 
     @property
     def volume_types(self):
-        """Gets the volume_types of this CinderListVolumeTypesResponse.
+        r"""Gets the volume_types of this CinderListVolumeTypesResponse.
 
         :return: The volume_types of this CinderListVolumeTypesResponse.
         :rtype: list[:class:`huaweicloudsdkevs.v2.VolumeType`]
@@ -53,7 +53,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
 
     @volume_types.setter
     def volume_types(self, volume_types):
-        """Sets the volume_types of this CinderListVolumeTypesResponse.
+        r"""Sets the volume_types of this CinderListVolumeTypesResponse.
 
         :param volume_types: The volume_types of this CinderListVolumeTypesResponse.
         :type volume_types: list[:class:`huaweicloudsdkevs.v2.VolumeType`]

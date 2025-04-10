@@ -26,7 +26,7 @@ class ListAvailabilityZoneInfosResponse(SdkResponse):
     }
 
     def __init__(self, azs=None):
-        """ListAvailabilityZoneInfosResponse
+        r"""ListAvailabilityZoneInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAvailabilityZoneInfosResponse(SdkResponse):
 
     @property
     def azs(self):
-        """Gets the azs of this ListAvailabilityZoneInfosResponse.
+        r"""Gets the azs of this ListAvailabilityZoneInfosResponse.
 
         可用区集合
 
@@ -55,7 +55,7 @@ class ListAvailabilityZoneInfosResponse(SdkResponse):
 
     @azs.setter
     def azs(self, azs):
-        """Sets the azs of this ListAvailabilityZoneInfosResponse.
+        r"""Sets the azs of this ListAvailabilityZoneInfosResponse.
 
         可用区集合
 

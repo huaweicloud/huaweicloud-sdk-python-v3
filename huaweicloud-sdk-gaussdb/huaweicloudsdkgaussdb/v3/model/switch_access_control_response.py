@@ -26,7 +26,7 @@ class SwitchAccessControlResponse(SdkResponse):
     }
 
     def __init__(self, open_access_control=None):
-        """SwitchAccessControlResponse
+        r"""SwitchAccessControlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchAccessControlResponse(SdkResponse):
 
     @property
     def open_access_control(self):
-        """Gets the open_access_control of this SwitchAccessControlResponse.
+        r"""Gets the open_access_control of this SwitchAccessControlResponse.
 
         是否已开启访问控制。 取值： - true：开启。 - false：关闭。
 
@@ -55,7 +55,7 @@ class SwitchAccessControlResponse(SdkResponse):
 
     @open_access_control.setter
     def open_access_control(self, open_access_control):
-        """Sets the open_access_control of this SwitchAccessControlResponse.
+        r"""Sets the open_access_control of this SwitchAccessControlResponse.
 
         是否已开启访问控制。 取值： - true：开启。 - false：关闭。
 

@@ -29,7 +29,7 @@ class ListRestrictedRuleRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListRestrictedRuleRequest
+        r"""ListRestrictedRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListRestrictedRuleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRestrictedRuleRequest.
+        r"""Gets the offset of this ListRestrictedRuleRequest.
 
         查询的偏移量。
 
@@ -68,7 +68,7 @@ class ListRestrictedRuleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRestrictedRuleRequest.
+        r"""Sets the offset of this ListRestrictedRuleRequest.
 
         查询的偏移量。
 
@@ -79,7 +79,7 @@ class ListRestrictedRuleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRestrictedRuleRequest.
+        r"""Gets the limit of this ListRestrictedRuleRequest.
 
         单次查询的大小[1-100]。
 
@@ -90,7 +90,7 @@ class ListRestrictedRuleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRestrictedRuleRequest.
+        r"""Sets the limit of this ListRestrictedRuleRequest.
 
         单次查询的大小[1-100]。
 
@@ -101,7 +101,7 @@ class ListRestrictedRuleRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRestrictedRuleRequest.
+        r"""Gets the name of this ListRestrictedRuleRequest.
 
         应用规则名称
 
@@ -112,7 +112,7 @@ class ListRestrictedRuleRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRestrictedRuleRequest.
+        r"""Sets the name of this ListRestrictedRuleRequest.
 
         应用规则名称
 

@@ -26,7 +26,7 @@ class SearchCustomizedFieldsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SearchCustomizedFieldsResponse
+        r"""SearchCustomizedFieldsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchCustomizedFieldsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchCustomizedFieldsResponse.
+        r"""Gets the data of this SearchCustomizedFieldsResponse.
 
         :return: The data of this SearchCustomizedFieldsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsResultData`
@@ -53,7 +53,7 @@ class SearchCustomizedFieldsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchCustomizedFieldsResponse.
+        r"""Sets the data of this SearchCustomizedFieldsResponse.
 
         :param data: The data of this SearchCustomizedFieldsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsResultData`

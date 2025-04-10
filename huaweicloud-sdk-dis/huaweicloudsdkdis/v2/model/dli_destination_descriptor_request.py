@@ -41,7 +41,7 @@ class DliDestinationDescriptorRequest:
     }
 
     def __init__(self, task_name=None, agency_name=None, deliver_time_interval=None, consumer_strategy=None, dli_database_name=None, dli_table_name=None, obs_bucket_path=None, file_prefix=None, retry_duration=None):
-        """DliDestinationDescriptorRequest
+        r"""DliDestinationDescriptorRequest
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this DliDestinationDescriptorRequest.
+        r"""Gets the task_name of this DliDestinationDescriptorRequest.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -104,7 +104,7 @@ class DliDestinationDescriptorRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this DliDestinationDescriptorRequest.
+        r"""Sets the task_name of this DliDestinationDescriptorRequest.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -115,7 +115,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this DliDestinationDescriptorRequest.
+        r"""Gets the agency_name of this DliDestinationDescriptorRequest.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -126,7 +126,7 @@ class DliDestinationDescriptorRequest:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this DliDestinationDescriptorRequest.
+        r"""Sets the agency_name of this DliDestinationDescriptorRequest.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -137,7 +137,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def deliver_time_interval(self):
-        """Gets the deliver_time_interval of this DliDestinationDescriptorRequest.
+        r"""Gets the deliver_time_interval of this DliDestinationDescriptorRequest.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -148,7 +148,7 @@ class DliDestinationDescriptorRequest:
 
     @deliver_time_interval.setter
     def deliver_time_interval(self, deliver_time_interval):
-        """Sets the deliver_time_interval of this DliDestinationDescriptorRequest.
+        r"""Sets the deliver_time_interval of this DliDestinationDescriptorRequest.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -159,7 +159,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this DliDestinationDescriptorRequest.
+        r"""Gets the consumer_strategy of this DliDestinationDescriptorRequest.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -170,7 +170,7 @@ class DliDestinationDescriptorRequest:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this DliDestinationDescriptorRequest.
+        r"""Sets the consumer_strategy of this DliDestinationDescriptorRequest.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -181,7 +181,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def dli_database_name(self):
-        """Gets the dli_database_name of this DliDestinationDescriptorRequest.
+        r"""Gets the dli_database_name of this DliDestinationDescriptorRequest.
 
         存储该通道数据的DLI数据库名称。
 
@@ -192,7 +192,7 @@ class DliDestinationDescriptorRequest:
 
     @dli_database_name.setter
     def dli_database_name(self, dli_database_name):
-        """Sets the dli_database_name of this DliDestinationDescriptorRequest.
+        r"""Sets the dli_database_name of this DliDestinationDescriptorRequest.
 
         存储该通道数据的DLI数据库名称。
 
@@ -203,7 +203,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def dli_table_name(self):
-        """Gets the dli_table_name of this DliDestinationDescriptorRequest.
+        r"""Gets the dli_table_name of this DliDestinationDescriptorRequest.
 
         存储该通道数据的DLI表名称。  说明：  仅支持数据位置为DLI的表，且用户需具有该表的插入权限。
 
@@ -214,7 +214,7 @@ class DliDestinationDescriptorRequest:
 
     @dli_table_name.setter
     def dli_table_name(self, dli_table_name):
-        """Sets the dli_table_name of this DliDestinationDescriptorRequest.
+        r"""Sets the dli_table_name of this DliDestinationDescriptorRequest.
 
         存储该通道数据的DLI表名称。  说明：  仅支持数据位置为DLI的表，且用户需具有该表的插入权限。
 
@@ -225,7 +225,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def obs_bucket_path(self):
-        """Gets the obs_bucket_path of this DliDestinationDescriptorRequest.
+        r"""Gets the obs_bucket_path of this DliDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶名称。
 
@@ -236,7 +236,7 @@ class DliDestinationDescriptorRequest:
 
     @obs_bucket_path.setter
     def obs_bucket_path(self, obs_bucket_path):
-        """Sets the obs_bucket_path of this DliDestinationDescriptorRequest.
+        r"""Sets the obs_bucket_path of this DliDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶名称。
 
@@ -247,7 +247,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def file_prefix(self):
-        """Gets the file_prefix of this DliDestinationDescriptorRequest.
+        r"""Gets the file_prefix of this DliDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶下的自定义目录，多级目录可用“/”进行分隔，不可以“/”开头。  取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。  默认配置为空。
 
@@ -258,7 +258,7 @@ class DliDestinationDescriptorRequest:
 
     @file_prefix.setter
     def file_prefix(self, file_prefix):
-        """Sets the file_prefix of this DliDestinationDescriptorRequest.
+        r"""Sets the file_prefix of this DliDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶下的自定义目录，多级目录可用“/”进行分隔，不可以“/”开头。  取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。  默认配置为空。
 
@@ -269,7 +269,7 @@ class DliDestinationDescriptorRequest:
 
     @property
     def retry_duration(self):
-        """Gets the retry_duration of this DliDestinationDescriptorRequest.
+        r"""Gets the retry_duration of this DliDestinationDescriptorRequest.
 
         用户数据导入DLI失败的失效重试时间。重试时间超过该配置项配置的值，则将转储失败的数据备份至“OBS桶/ file_prefix/dli_error”目录下。 取值范围：0~7200。 单位：秒。 默认配置为1800。 配置为“0”表示DIS服务不会在转储失败时进行重试。
 
@@ -280,7 +280,7 @@ class DliDestinationDescriptorRequest:
 
     @retry_duration.setter
     def retry_duration(self, retry_duration):
-        """Sets the retry_duration of this DliDestinationDescriptorRequest.
+        r"""Sets the retry_duration of this DliDestinationDescriptorRequest.
 
         用户数据导入DLI失败的失效重试时间。重试时间超过该配置项配置的值，则将转储失败的数据备份至“OBS桶/ file_prefix/dli_error”目录下。 取值范围：0~7200。 单位：秒。 默认配置为1800。 配置为“0”表示DIS服务不会在转储失败时进行重试。
 

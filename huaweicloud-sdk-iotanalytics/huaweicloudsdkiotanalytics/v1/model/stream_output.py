@@ -27,7 +27,7 @@ class StreamOutput:
     }
 
     def __init__(self, name=None, output_property=None):
-        """StreamOutput
+        r"""StreamOutput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StreamOutput:
 
     @property
     def name(self):
-        """Gets the name of this StreamOutput.
+        r"""Gets the name of this StreamOutput.
 
         输出参数名称，必须是接收数据类型为资产数据的实时分析作业中已定义的
 
@@ -59,7 +59,7 @@ class StreamOutput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StreamOutput.
+        r"""Sets the name of this StreamOutput.
 
         输出参数名称，必须是接收数据类型为资产数据的实时分析作业中已定义的
 
@@ -70,7 +70,7 @@ class StreamOutput:
 
     @property
     def output_property(self):
-        """Gets the output_property of this StreamOutput.
+        r"""Gets the output_property of this StreamOutput.
 
         输出属性名，必须是本模型分析任务类别的属性的属性名
 
@@ -81,7 +81,7 @@ class StreamOutput:
 
     @output_property.setter
     def output_property(self, output_property):
-        """Sets the output_property of this StreamOutput.
+        r"""Sets the output_property of this StreamOutput.
 
         输出属性名，必须是本模型分析任务类别的属性的属性名
 

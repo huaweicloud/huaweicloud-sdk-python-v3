@@ -30,7 +30,7 @@ class ListClientsResponse(SdkResponse):
     }
 
     def __init__(self, time=None, clients=None, count=None):
-        """ListClientsResponse
+        r"""ListClientsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClientsResponse(SdkResponse):
 
     @property
     def time(self):
-        """Gets the time of this ListClientsResponse.
+        r"""Gets the time of this ListClientsResponse.
 
         数据更新时间
 
@@ -69,7 +69,7 @@ class ListClientsResponse(SdkResponse):
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListClientsResponse.
+        r"""Sets the time of this ListClientsResponse.
 
         数据更新时间
 
@@ -80,7 +80,7 @@ class ListClientsResponse(SdkResponse):
 
     @property
     def clients(self):
-        """Gets the clients of this ListClientsResponse.
+        r"""Gets the clients of this ListClientsResponse.
 
         会话列表
 
@@ -91,7 +91,7 @@ class ListClientsResponse(SdkResponse):
 
     @clients.setter
     def clients(self, clients):
-        """Sets the clients of this ListClientsResponse.
+        r"""Sets the clients of this ListClientsResponse.
 
         会话列表
 
@@ -102,7 +102,7 @@ class ListClientsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListClientsResponse.
+        r"""Gets the count of this ListClientsResponse.
 
         会话总数
 
@@ -113,7 +113,7 @@ class ListClientsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListClientsResponse.
+        r"""Sets the count of this ListClientsResponse.
 
         会话总数
 

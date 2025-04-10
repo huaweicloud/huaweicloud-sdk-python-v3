@@ -26,7 +26,7 @@ class ShowJobExesResponse(SdkResponse):
     }
 
     def __init__(self, job_execution=None):
-        """ShowJobExesResponse
+        r"""ShowJobExesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowJobExesResponse(SdkResponse):
 
     @property
     def job_execution(self):
-        """Gets the job_execution of this ShowJobExesResponse.
+        r"""Gets the job_execution of this ShowJobExesResponse.
 
         :return: The job_execution of this ShowJobExesResponse.
         :rtype: :class:`huaweicloudsdkmrs.v1.JobExeResult`
@@ -53,7 +53,7 @@ class ShowJobExesResponse(SdkResponse):
 
     @job_execution.setter
     def job_execution(self, job_execution):
-        """Sets the job_execution of this ShowJobExesResponse.
+        r"""Sets the job_execution of this ShowJobExesResponse.
 
         :param job_execution: The job_execution of this ShowJobExesResponse.
         :type job_execution: :class:`huaweicloudsdkmrs.v1.JobExeResult`

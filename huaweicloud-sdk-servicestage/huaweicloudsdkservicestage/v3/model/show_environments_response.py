@@ -28,7 +28,7 @@ class ShowEnvironmentsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, environments=None):
-        """ShowEnvironmentsResponse
+        r"""ShowEnvironmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEnvironmentsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowEnvironmentsResponse.
+        r"""Gets the count of this ShowEnvironmentsResponse.
 
         total number of enviroment
 
@@ -62,7 +62,7 @@ class ShowEnvironmentsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowEnvironmentsResponse.
+        r"""Sets the count of this ShowEnvironmentsResponse.
 
         total number of enviroment
 
@@ -73,7 +73,7 @@ class ShowEnvironmentsResponse(SdkResponse):
 
     @property
     def environments(self):
-        """Gets the environments of this ShowEnvironmentsResponse.
+        r"""Gets the environments of this ShowEnvironmentsResponse.
 
         :return: The environments of this ShowEnvironmentsResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentListView`]
@@ -82,7 +82,7 @@ class ShowEnvironmentsResponse(SdkResponse):
 
     @environments.setter
     def environments(self, environments):
-        """Sets the environments of this ShowEnvironmentsResponse.
+        r"""Sets the environments of this ShowEnvironmentsResponse.
 
         :param environments: The environments of this ShowEnvironmentsResponse.
         :type environments: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentListView`]

@@ -27,7 +27,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """BatchRemoveEndpointServicePermissionsRequest
+        r"""BatchRemoveEndpointServicePermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this BatchRemoveEndpointServicePermissionsRequest.
+        r"""Gets the vpc_endpoint_service_id of this BatchRemoveEndpointServicePermissionsRequest.
 
         终端节点服务的ID。
 
@@ -60,7 +60,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this BatchRemoveEndpointServicePermissionsRequest.
+        r"""Sets the vpc_endpoint_service_id of this BatchRemoveEndpointServicePermissionsRequest.
 
         终端节点服务的ID。
 
@@ -71,7 +71,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRemoveEndpointServicePermissionsRequest.
+        r"""Gets the body of this BatchRemoveEndpointServicePermissionsRequest.
 
         :return: The body of this BatchRemoveEndpointServicePermissionsRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequestBody`
@@ -80,7 +80,7 @@ class BatchRemoveEndpointServicePermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRemoveEndpointServicePermissionsRequest.
+        r"""Sets the body of this BatchRemoveEndpointServicePermissionsRequest.
 
         :param body: The body of this BatchRemoveEndpointServicePermissionsRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequestBody`

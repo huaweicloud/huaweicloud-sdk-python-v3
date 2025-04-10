@@ -25,7 +25,7 @@ class UpdateQueuePropertyRequestBody:
     }
 
     def __init__(self, properties=None):
-        """UpdateQueuePropertyRequestBody
+        r"""UpdateQueuePropertyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateQueuePropertyRequestBody:
 
     @property
     def properties(self):
-        """Gets the properties of this UpdateQueuePropertyRequestBody.
+        r"""Gets the properties of this UpdateQueuePropertyRequestBody.
 
         :return: The properties of this UpdateQueuePropertyRequestBody.
         :rtype: :class:`huaweicloudsdkdli.v1.AdvancedQueueProperty`
@@ -52,7 +52,7 @@ class UpdateQueuePropertyRequestBody:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this UpdateQueuePropertyRequestBody.
+        r"""Sets the properties of this UpdateQueuePropertyRequestBody.
 
         :param properties: The properties of this UpdateQueuePropertyRequestBody.
         :type properties: :class:`huaweicloudsdkdli.v1.AdvancedQueueProperty`

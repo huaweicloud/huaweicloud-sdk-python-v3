@@ -27,7 +27,7 @@ class ScaleConfigurationDataTrigger:
     }
 
     def __init__(self, type=None, metadata=None):
-        """ScaleConfigurationDataTrigger
+        r"""ScaleConfigurationDataTrigger
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScaleConfigurationDataTrigger:
 
     @property
     def type(self):
-        """Gets the type of this ScaleConfigurationDataTrigger.
+        r"""Gets the type of this ScaleConfigurationDataTrigger.
 
         指标类型。
 
@@ -61,7 +61,7 @@ class ScaleConfigurationDataTrigger:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScaleConfigurationDataTrigger.
+        r"""Sets the type of this ScaleConfigurationDataTrigger.
 
         指标类型。
 
@@ -72,7 +72,7 @@ class ScaleConfigurationDataTrigger:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ScaleConfigurationDataTrigger.
+        r"""Gets the metadata of this ScaleConfigurationDataTrigger.
 
         :return: The metadata of this ScaleConfigurationDataTrigger.
         :rtype: :class:`huaweicloudsdkcae.v1.ScalingTriggerMeta`
@@ -81,7 +81,7 @@ class ScaleConfigurationDataTrigger:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ScaleConfigurationDataTrigger.
+        r"""Sets the metadata of this ScaleConfigurationDataTrigger.
 
         :param metadata: The metadata of this ScaleConfigurationDataTrigger.
         :type metadata: :class:`huaweicloudsdkcae.v1.ScalingTriggerMeta`

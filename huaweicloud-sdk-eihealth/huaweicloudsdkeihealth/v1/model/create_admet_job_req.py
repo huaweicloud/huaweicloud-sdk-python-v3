@@ -33,7 +33,7 @@ class CreateAdmetJobReq:
     }
 
     def __init__(self, basic_info=None, molecule_file=None, base_model_id=None, model_ids=None, save_fingerprint=None):
-        """CreateAdmetJobReq
+        r"""CreateAdmetJobReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateAdmetJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateAdmetJobReq.
+        r"""Gets the basic_info of this CreateAdmetJobReq.
 
         :return: The basic_info of this CreateAdmetJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -78,7 +78,7 @@ class CreateAdmetJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateAdmetJobReq.
+        r"""Sets the basic_info of this CreateAdmetJobReq.
 
         :param basic_info: The basic_info of this CreateAdmetJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -87,7 +87,7 @@ class CreateAdmetJobReq:
 
     @property
     def molecule_file(self):
-        """Gets the molecule_file of this CreateAdmetJobReq.
+        r"""Gets the molecule_file of this CreateAdmetJobReq.
 
         :return: The molecule_file of this CreateAdmetJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MoleculeFileDto`
@@ -96,7 +96,7 @@ class CreateAdmetJobReq:
 
     @molecule_file.setter
     def molecule_file(self, molecule_file):
-        """Sets the molecule_file of this CreateAdmetJobReq.
+        r"""Sets the molecule_file of this CreateAdmetJobReq.
 
         :param molecule_file: The molecule_file of this CreateAdmetJobReq.
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.MoleculeFileDto`
@@ -105,7 +105,7 @@ class CreateAdmetJobReq:
 
     @property
     def base_model_id(self):
-        """Gets the base_model_id of this CreateAdmetJobReq.
+        r"""Gets the base_model_id of this CreateAdmetJobReq.
 
         基模型id
 
@@ -116,7 +116,7 @@ class CreateAdmetJobReq:
 
     @base_model_id.setter
     def base_model_id(self, base_model_id):
-        """Sets the base_model_id of this CreateAdmetJobReq.
+        r"""Sets the base_model_id of this CreateAdmetJobReq.
 
         基模型id
 
@@ -127,7 +127,7 @@ class CreateAdmetJobReq:
 
     @property
     def model_ids(self):
-        """Gets the model_ids of this CreateAdmetJobReq.
+        r"""Gets the model_ids of this CreateAdmetJobReq.
 
         模型id列表
 
@@ -138,7 +138,7 @@ class CreateAdmetJobReq:
 
     @model_ids.setter
     def model_ids(self, model_ids):
-        """Sets the model_ids of this CreateAdmetJobReq.
+        r"""Sets the model_ids of this CreateAdmetJobReq.
 
         模型id列表
 
@@ -149,7 +149,7 @@ class CreateAdmetJobReq:
 
     @property
     def save_fingerprint(self):
-        """Gets the save_fingerprint of this CreateAdmetJobReq.
+        r"""Gets the save_fingerprint of this CreateAdmetJobReq.
 
         是否输出表征，仅专业版平台支持
 
@@ -160,7 +160,7 @@ class CreateAdmetJobReq:
 
     @save_fingerprint.setter
     def save_fingerprint(self, save_fingerprint):
-        """Sets the save_fingerprint of this CreateAdmetJobReq.
+        r"""Sets the save_fingerprint of this CreateAdmetJobReq.
 
         是否输出表征，仅专业版平台支持
 

@@ -24,7 +24,7 @@ class UpdateNotificationMaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateNotificationMaskResponse
+        r"""UpdateNotificationMaskResponse
 
         The model defined in huaweicloud sdk
 

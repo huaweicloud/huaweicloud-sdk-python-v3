@@ -29,7 +29,7 @@ class RevokeGrantRequestBody:
     }
 
     def __init__(self, key_id=None, grant_id=None, sequence=None):
-        """RevokeGrantRequestBody
+        r"""RevokeGrantRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RevokeGrantRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this RevokeGrantRequestBody.
+        r"""Gets the key_id of this RevokeGrantRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -66,7 +66,7 @@ class RevokeGrantRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this RevokeGrantRequestBody.
+        r"""Sets the key_id of this RevokeGrantRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -77,7 +77,7 @@ class RevokeGrantRequestBody:
 
     @property
     def grant_id(self):
-        """Gets the grant_id of this RevokeGrantRequestBody.
+        r"""Gets the grant_id of this RevokeGrantRequestBody.
 
         授权ID，64字节，满足正则匹配“^[A-Fa-f0-9]{64}$”。 例如：7c9a3286af4fcca5f0a385ad13e1d21a50e27b6dbcab50f37f30f93b8939827d
 
@@ -88,7 +88,7 @@ class RevokeGrantRequestBody:
 
     @grant_id.setter
     def grant_id(self, grant_id):
-        """Sets the grant_id of this RevokeGrantRequestBody.
+        r"""Sets the grant_id of this RevokeGrantRequestBody.
 
         授权ID，64字节，满足正则匹配“^[A-Fa-f0-9]{64}$”。 例如：7c9a3286af4fcca5f0a385ad13e1d21a50e27b6dbcab50f37f30f93b8939827d
 
@@ -99,7 +99,7 @@ class RevokeGrantRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this RevokeGrantRequestBody.
+        r"""Gets the sequence of this RevokeGrantRequestBody.
 
         请求消息序列号，36字节序列号。例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -110,7 +110,7 @@ class RevokeGrantRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this RevokeGrantRequestBody.
+        r"""Sets the sequence of this RevokeGrantRequestBody.
 
         请求消息序列号，36字节序列号。例如：919c82d4-8046-4722-9094-35c3c6524cff
 

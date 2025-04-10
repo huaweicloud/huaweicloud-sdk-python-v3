@@ -28,7 +28,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeMvsInvoiceResponse
+        r"""RecognizeMvsInvoiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeMvsInvoiceResponse.
+        r"""Gets the result of this RecognizeMvsInvoiceResponse.
 
         :return: The result of this RecognizeMvsInvoiceResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.MvsInvoiceResult`
@@ -60,7 +60,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeMvsInvoiceResponse.
+        r"""Sets the result of this RecognizeMvsInvoiceResponse.
 
         :param result: The result of this RecognizeMvsInvoiceResponse.
         :type result: :class:`huaweicloudsdkocr.v1.MvsInvoiceResult`
@@ -69,7 +69,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeMvsInvoiceResponse.
+        r"""Gets the x_request_id of this RecognizeMvsInvoiceResponse.
 
         :return: The x_request_id of this RecognizeMvsInvoiceResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeMvsInvoiceResponse.
+        r"""Sets the x_request_id of this RecognizeMvsInvoiceResponse.
 
         :param x_request_id: The x_request_id of this RecognizeMvsInvoiceResponse.
         :type x_request_id: str

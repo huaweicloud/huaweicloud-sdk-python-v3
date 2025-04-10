@@ -27,7 +27,7 @@ class CreateProductRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateProductRequest
+        r"""CreateProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateProductRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateProductRequest.
+        r"""Gets the x_app_user_id of this CreateProductRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateProductRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateProductRequest.
+        r"""Sets the x_app_user_id of this CreateProductRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateProductRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProductRequest.
+        r"""Gets the body of this CreateProductRequest.
 
         :return: The body of this CreateProductRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateProductRequestBody`
@@ -81,7 +81,7 @@ class CreateProductRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProductRequest.
+        r"""Sets the body of this CreateProductRequest.
 
         :param body: The body of this CreateProductRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateProductRequestBody`

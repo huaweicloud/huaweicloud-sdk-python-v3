@@ -55,7 +55,7 @@ class CreateInstanceBody:
     }
 
     def __init__(self, specification=None, instance_name=None, password=None, region=None, availability_zone=None, slave_availability_zone=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, network=None, ipv6_enable=None, enterprise_project_id=None, attach_disk_size=None, tags=None):
-        """CreateInstanceBody
+        r"""CreateInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class CreateInstanceBody:
 
     @property
     def specification(self):
-        """Gets the specification of this CreateInstanceBody.
+        r"""Gets the specification of this CreateInstanceBody.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取。
 
@@ -152,7 +152,7 @@ class CreateInstanceBody:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this CreateInstanceBody.
+        r"""Sets the specification of this CreateInstanceBody.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取。
 
@@ -163,7 +163,7 @@ class CreateInstanceBody:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this CreateInstanceBody.
+        r"""Gets the instance_name of this CreateInstanceBody.
 
         云堡垒机实例名称，取值范围：  只能由中文字符、英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。  例如：CBH-6b8e
 
@@ -174,7 +174,7 @@ class CreateInstanceBody:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this CreateInstanceBody.
+        r"""Sets the instance_name of this CreateInstanceBody.
 
         云堡垒机实例名称，取值范围：  只能由中文字符、英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。  例如：CBH-6b8e
 
@@ -185,7 +185,7 @@ class CreateInstanceBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateInstanceBody.
+        r"""Gets the password of this CreateInstanceBody.
 
         堡垒机实例前端登录密码。  密码规则：8-32位、不能包含amdin或nidma及其大写形式、必须包含大小写数字特殊字符（!@$%^-_=+[{}]:,./?~#*）四种类型中的三种、不能包含超过2个连续的相同字符（区分大小写）。
 
@@ -196,7 +196,7 @@ class CreateInstanceBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateInstanceBody.
+        r"""Sets the password of this CreateInstanceBody.
 
         堡垒机实例前端登录密码。  密码规则：8-32位、不能包含amdin或nidma及其大写形式、必须包含大小写数字特殊字符（!@$%^-_=+[{}]:,./?~#*）四种类型中的三种、不能包含超过2个连续的相同字符（区分大小写）。
 
@@ -207,7 +207,7 @@ class CreateInstanceBody:
 
     @property
     def region(self):
-        """Gets the region of this CreateInstanceBody.
+        r"""Gets the region of this CreateInstanceBody.
 
         创建云堡垒机实例所在局点ID。   可参考接口\"查询云堡垒机规格信息\"获取
 
@@ -218,7 +218,7 @@ class CreateInstanceBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstanceBody.
+        r"""Sets the region of this CreateInstanceBody.
 
         创建云堡垒机实例所在局点ID。   可参考接口\"查询云堡垒机规格信息\"获取
 
@@ -229,7 +229,7 @@ class CreateInstanceBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateInstanceBody.
+        r"""Gets the availability_zone of this CreateInstanceBody.
 
         创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考接口\"获取服务可用区\"获取
 
@@ -240,7 +240,7 @@ class CreateInstanceBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateInstanceBody.
+        r"""Sets the availability_zone of this CreateInstanceBody.
 
         创建云堡垒机所在的可用分区，需要指定可用分区名称。(主备模式是作为主机可用区)  可参考接口\"获取服务可用区\"获取
 
@@ -251,7 +251,7 @@ class CreateInstanceBody:
 
     @property
     def slave_availability_zone(self):
-        """Gets the slave_availability_zone of this CreateInstanceBody.
+        r"""Gets the slave_availability_zone of this CreateInstanceBody.
 
         创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考接口\"获取服务可用区\"获取
 
@@ -262,7 +262,7 @@ class CreateInstanceBody:
 
     @slave_availability_zone.setter
     def slave_availability_zone(self, slave_availability_zone):
-        """Sets the slave_availability_zone of this CreateInstanceBody.
+        r"""Sets the slave_availability_zone of this CreateInstanceBody.
 
         创建云堡垒机备机所在的可用分区，需要指定可用分区名称。(只创建单机时不传此字段)。  可参考接口\"获取服务可用区\"获取
 
@@ -273,7 +273,7 @@ class CreateInstanceBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateInstanceBody.
+        r"""Gets the charging_mode of this CreateInstanceBody.
 
         计费模式。 - 0 包周期计费。
 
@@ -284,7 +284,7 @@ class CreateInstanceBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateInstanceBody.
+        r"""Sets the charging_mode of this CreateInstanceBody.
 
         计费模式。 - 0 包周期计费。
 
@@ -295,7 +295,7 @@ class CreateInstanceBody:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateInstanceBody.
+        r"""Gets the period_type of this CreateInstanceBody.
 
         订购周期类型。（包周期模式必传） - 2：月 - 3：年
 
@@ -306,7 +306,7 @@ class CreateInstanceBody:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateInstanceBody.
+        r"""Sets the period_type of this CreateInstanceBody.
 
         订购周期类型。（包周期模式必传） - 2：月 - 3：年
 
@@ -317,7 +317,7 @@ class CreateInstanceBody:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateInstanceBody.
+        r"""Gets the period_num of this CreateInstanceBody.
 
         订购周期数。（包周期模式必传） - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10]
 
@@ -328,7 +328,7 @@ class CreateInstanceBody:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateInstanceBody.
+        r"""Sets the period_num of this CreateInstanceBody.
 
         订购周期数。（包周期模式必传） - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10]
 
@@ -339,7 +339,7 @@ class CreateInstanceBody:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateInstanceBody.
+        r"""Gets the is_auto_renew of this CreateInstanceBody.
 
         是否自动续订。 - 1，自动续订 - 0，不自动续订  默认值为“0”
 
@@ -350,7 +350,7 @@ class CreateInstanceBody:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateInstanceBody.
+        r"""Sets the is_auto_renew of this CreateInstanceBody.
 
         是否自动续订。 - 1，自动续订 - 0，不自动续订  默认值为“0”
 
@@ -361,7 +361,7 @@ class CreateInstanceBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateInstanceBody.
+        r"""Gets the is_auto_pay of this CreateInstanceBody.
 
         是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
 
@@ -372,7 +372,7 @@ class CreateInstanceBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateInstanceBody.
+        r"""Sets the is_auto_pay of this CreateInstanceBody.
 
         是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
 
@@ -383,7 +383,7 @@ class CreateInstanceBody:
 
     @property
     def network(self):
-        """Gets the network of this CreateInstanceBody.
+        r"""Gets the network of this CreateInstanceBody.
 
         :return: The network of this CreateInstanceBody.
         :rtype: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`
@@ -392,7 +392,7 @@ class CreateInstanceBody:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this CreateInstanceBody.
+        r"""Sets the network of this CreateInstanceBody.
 
         :param network: The network of this CreateInstanceBody.
         :type network: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`
@@ -401,7 +401,7 @@ class CreateInstanceBody:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this CreateInstanceBody.
+        r"""Gets the ipv6_enable of this CreateInstanceBody.
 
         云堡垒机实例是否支持IPV6。  默认值为“false”。
 
@@ -412,7 +412,7 @@ class CreateInstanceBody:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this CreateInstanceBody.
+        r"""Sets the ipv6_enable of this CreateInstanceBody.
 
         云堡垒机实例是否支持IPV6。  默认值为“false”。
 
@@ -423,7 +423,7 @@ class CreateInstanceBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceBody.
+        r"""Gets the enterprise_project_id of this CreateInstanceBody.
 
         企业项目ID。  默认值为“0”。
 
@@ -434,7 +434,7 @@ class CreateInstanceBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceBody.
+        r"""Sets the enterprise_project_id of this CreateInstanceBody.
 
         企业项目ID。  默认值为“0”。
 
@@ -445,7 +445,7 @@ class CreateInstanceBody:
 
     @property
     def attach_disk_size(self):
-        """Gets the attach_disk_size of this CreateInstanceBody.
+        r"""Gets the attach_disk_size of this CreateInstanceBody.
 
         附加磁盘大小。单位TB  > 说明： 附加磁盘和规格自带磁盘大小合起来不能超过300TB。
 
@@ -456,7 +456,7 @@ class CreateInstanceBody:
 
     @attach_disk_size.setter
     def attach_disk_size(self, attach_disk_size):
-        """Sets the attach_disk_size of this CreateInstanceBody.
+        r"""Sets the attach_disk_size of this CreateInstanceBody.
 
         附加磁盘大小。单位TB  > 说明： 附加磁盘和规格自带磁盘大小合起来不能超过300TB。
 
@@ -467,7 +467,7 @@ class CreateInstanceBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstanceBody.
+        r"""Gets the tags of this CreateInstanceBody.
 
         标签信息。
 
@@ -478,7 +478,7 @@ class CreateInstanceBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstanceBody.
+        r"""Sets the tags of this CreateInstanceBody.
 
         标签信息。
 

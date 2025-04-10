@@ -25,7 +25,7 @@ class ShowCeshierarchyRespInstanceIds:
     }
 
     def __init__(self, name=None):
-        """ShowCeshierarchyRespInstanceIds
+        r"""ShowCeshierarchyRespInstanceIds
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespInstanceIds:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespInstanceIds.
+        r"""Gets the name of this ShowCeshierarchyRespInstanceIds.
 
         实例ID。
 
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespInstanceIds:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespInstanceIds.
+        r"""Sets the name of this ShowCeshierarchyRespInstanceIds.
 
         实例ID。
 

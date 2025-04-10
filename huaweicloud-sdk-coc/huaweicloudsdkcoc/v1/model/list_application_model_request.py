@@ -33,7 +33,7 @@ class ListApplicationModelRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, limit=None, marker=None, page_no=None):
-        """ListApplicationModelRequest
+        r"""ListApplicationModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListApplicationModelRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListApplicationModelRequest.
+        r"""Gets the application_id of this ListApplicationModelRequest.
 
         应用id
 
@@ -82,7 +82,7 @@ class ListApplicationModelRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListApplicationModelRequest.
+        r"""Sets the application_id of this ListApplicationModelRequest.
 
         应用id
 
@@ -93,7 +93,7 @@ class ListApplicationModelRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ListApplicationModelRequest.
+        r"""Gets the component_id of this ListApplicationModelRequest.
 
         组件id
 
@@ -104,7 +104,7 @@ class ListApplicationModelRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ListApplicationModelRequest.
+        r"""Sets the component_id of this ListApplicationModelRequest.
 
         组件id
 
@@ -115,7 +115,7 @@ class ListApplicationModelRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplicationModelRequest.
+        r"""Gets the limit of this ListApplicationModelRequest.
 
         最大的返回数量
 
@@ -126,7 +126,7 @@ class ListApplicationModelRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplicationModelRequest.
+        r"""Sets the limit of this ListApplicationModelRequest.
 
         最大的返回数量
 
@@ -137,7 +137,7 @@ class ListApplicationModelRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListApplicationModelRequest.
+        r"""Gets the marker of this ListApplicationModelRequest.
 
         分页参数，上一页请求最后一个id
 
@@ -148,7 +148,7 @@ class ListApplicationModelRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListApplicationModelRequest.
+        r"""Sets the marker of this ListApplicationModelRequest.
 
         分页参数，上一页请求最后一个id
 
@@ -159,7 +159,7 @@ class ListApplicationModelRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListApplicationModelRequest.
+        r"""Gets the page_no of this ListApplicationModelRequest.
 
         分页页码
 
@@ -170,7 +170,7 @@ class ListApplicationModelRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListApplicationModelRequest.
+        r"""Sets the page_no of this ListApplicationModelRequest.
 
         分页页码
 

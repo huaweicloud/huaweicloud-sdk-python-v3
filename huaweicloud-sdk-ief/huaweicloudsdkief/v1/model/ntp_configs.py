@@ -27,7 +27,7 @@ class NtpConfigs:
     }
 
     def __init__(self, ntp_enabled=None, ntp_servers=None):
-        """NtpConfigs
+        r"""NtpConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NtpConfigs:
 
     @property
     def ntp_enabled(self):
-        """Gets the ntp_enabled of this NtpConfigs.
+        r"""Gets the ntp_enabled of this NtpConfigs.
 
         ntp服务是否开启
 
@@ -61,7 +61,7 @@ class NtpConfigs:
 
     @ntp_enabled.setter
     def ntp_enabled(self, ntp_enabled):
-        """Sets the ntp_enabled of this NtpConfigs.
+        r"""Sets the ntp_enabled of this NtpConfigs.
 
         ntp服务是否开启
 
@@ -72,7 +72,7 @@ class NtpConfigs:
 
     @property
     def ntp_servers(self):
-        """Gets the ntp_servers of this NtpConfigs.
+        r"""Gets the ntp_servers of this NtpConfigs.
 
         ntp server地址
 
@@ -83,7 +83,7 @@ class NtpConfigs:
 
     @ntp_servers.setter
     def ntp_servers(self, ntp_servers):
-        """Sets the ntp_servers of this NtpConfigs.
+        r"""Sets the ntp_servers of this NtpConfigs.
 
         ntp server地址
 

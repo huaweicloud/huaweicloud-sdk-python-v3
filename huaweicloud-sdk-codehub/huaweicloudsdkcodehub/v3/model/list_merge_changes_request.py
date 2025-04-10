@@ -37,7 +37,7 @@ class ListMergeChangesRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_iid=None, file_path=None, ignore_whitespace_change=None, force_encode=None, view=None, commit_id=None):
-        """ListMergeChangesRequest
+        r"""ListMergeChangesRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListMergeChangesRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ListMergeChangesRequest.
+        r"""Gets the repository_id of this ListMergeChangesRequest.
 
         仓库主键id
 
@@ -94,7 +94,7 @@ class ListMergeChangesRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ListMergeChangesRequest.
+        r"""Sets the repository_id of this ListMergeChangesRequest.
 
         仓库主键id
 
@@ -105,7 +105,7 @@ class ListMergeChangesRequest:
 
     @property
     def merge_request_iid(self):
-        """Gets the merge_request_iid of this ListMergeChangesRequest.
+        r"""Gets the merge_request_iid of this ListMergeChangesRequest.
 
         MR长id
 
@@ -116,7 +116,7 @@ class ListMergeChangesRequest:
 
     @merge_request_iid.setter
     def merge_request_iid(self, merge_request_iid):
-        """Sets the merge_request_iid of this ListMergeChangesRequest.
+        r"""Sets the merge_request_iid of this ListMergeChangesRequest.
 
         MR长id
 
@@ -127,7 +127,7 @@ class ListMergeChangesRequest:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ListMergeChangesRequest.
+        r"""Gets the file_path of this ListMergeChangesRequest.
 
         文件路径
 
@@ -138,7 +138,7 @@ class ListMergeChangesRequest:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ListMergeChangesRequest.
+        r"""Sets the file_path of this ListMergeChangesRequest.
 
         文件路径
 
@@ -149,7 +149,7 @@ class ListMergeChangesRequest:
 
     @property
     def ignore_whitespace_change(self):
-        """Gets the ignore_whitespace_change of this ListMergeChangesRequest.
+        r"""Gets the ignore_whitespace_change of this ListMergeChangesRequest.
 
         是否无视空格
 
@@ -160,7 +160,7 @@ class ListMergeChangesRequest:
 
     @ignore_whitespace_change.setter
     def ignore_whitespace_change(self, ignore_whitespace_change):
-        """Sets the ignore_whitespace_change of this ListMergeChangesRequest.
+        r"""Sets the ignore_whitespace_change of this ListMergeChangesRequest.
 
         是否无视空格
 
@@ -171,7 +171,7 @@ class ListMergeChangesRequest:
 
     @property
     def force_encode(self):
-        """Gets the force_encode of this ListMergeChangesRequest.
+        r"""Gets the force_encode of this ListMergeChangesRequest.
 
         是否需要编码
 
@@ -182,7 +182,7 @@ class ListMergeChangesRequest:
 
     @force_encode.setter
     def force_encode(self, force_encode):
-        """Sets the force_encode of this ListMergeChangesRequest.
+        r"""Sets the force_encode of this ListMergeChangesRequest.
 
         是否需要编码
 
@@ -193,7 +193,7 @@ class ListMergeChangesRequest:
 
     @property
     def view(self):
-        """Gets the view of this ListMergeChangesRequest.
+        r"""Gets the view of this ListMergeChangesRequest.
 
         是否为建议视图
 
@@ -204,7 +204,7 @@ class ListMergeChangesRequest:
 
     @view.setter
     def view(self, view):
-        """Sets the view of this ListMergeChangesRequest.
+        r"""Sets the view of this ListMergeChangesRequest.
 
         是否为建议视图
 
@@ -215,7 +215,7 @@ class ListMergeChangesRequest:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this ListMergeChangesRequest.
+        r"""Gets the commit_id of this ListMergeChangesRequest.
 
         commit的id
 
@@ -226,7 +226,7 @@ class ListMergeChangesRequest:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this ListMergeChangesRequest.
+        r"""Sets the commit_id of this ListMergeChangesRequest.
 
         commit的id
 

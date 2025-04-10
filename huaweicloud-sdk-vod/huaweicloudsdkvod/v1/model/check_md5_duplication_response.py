@@ -28,7 +28,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
     }
 
     def __init__(self, is_duplicated=None, asset_ids=None):
-        """CheckMd5DuplicationResponse
+        r"""CheckMd5DuplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
 
     @property
     def is_duplicated(self):
-        """Gets the is_duplicated of this CheckMd5DuplicationResponse.
+        r"""Gets the is_duplicated of this CheckMd5DuplicationResponse.
 
         是否重复。  取值如下： - 0：表示不重复。 - 1：表示重复。
 
@@ -62,7 +62,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
 
     @is_duplicated.setter
     def is_duplicated(self, is_duplicated):
-        """Sets the is_duplicated of this CheckMd5DuplicationResponse.
+        r"""Sets the is_duplicated of this CheckMd5DuplicationResponse.
 
         是否重复。  取值如下： - 0：表示不重复。 - 1：表示重复。
 
@@ -73,7 +73,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
 
     @property
     def asset_ids(self):
-        """Gets the asset_ids of this CheckMd5DuplicationResponse.
+        r"""Gets the asset_ids of this CheckMd5DuplicationResponse.
 
         重复的媒资ID
 
@@ -84,7 +84,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
 
     @asset_ids.setter
     def asset_ids(self, asset_ids):
-        """Sets the asset_ids of this CheckMd5DuplicationResponse.
+        r"""Sets the asset_ids of this CheckMd5DuplicationResponse.
 
         重复的媒资ID
 

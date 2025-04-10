@@ -29,7 +29,7 @@ class CheckNoNewAccessReason:
     }
 
     def __init__(self, description=None, statement_id=None, statement_index=None):
-        """CheckNoNewAccessReason
+        r"""CheckNoNewAccessReason
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckNoNewAccessReason:
 
     @property
     def description(self):
-        """Gets the description of this CheckNoNewAccessReason.
+        r"""Gets the description of this CheckNoNewAccessReason.
 
         对访问权限检查结果的推理的描述。
 
@@ -68,7 +68,7 @@ class CheckNoNewAccessReason:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckNoNewAccessReason.
+        r"""Sets the description of this CheckNoNewAccessReason.
 
         对访问权限检查结果的推理的描述。
 
@@ -79,7 +79,7 @@ class CheckNoNewAccessReason:
 
     @property
     def statement_id(self):
-        """Gets the statement_id of this CheckNoNewAccessReason.
+        r"""Gets the statement_id of this CheckNoNewAccessReason.
 
         新增权限statement的sid标识符。
 
@@ -90,7 +90,7 @@ class CheckNoNewAccessReason:
 
     @statement_id.setter
     def statement_id(self, statement_id):
-        """Sets the statement_id of this CheckNoNewAccessReason.
+        r"""Sets the statement_id of this CheckNoNewAccessReason.
 
         新增权限statement的sid标识符。
 
@@ -101,7 +101,7 @@ class CheckNoNewAccessReason:
 
     @property
     def statement_index(self):
-        """Gets the statement_index of this CheckNoNewAccessReason.
+        r"""Gets the statement_index of this CheckNoNewAccessReason.
 
         新增权限statement的index，从0开始。
 
@@ -112,7 +112,7 @@ class CheckNoNewAccessReason:
 
     @statement_index.setter
     def statement_index(self, statement_index):
-        """Sets the statement_index of this CheckNoNewAccessReason.
+        r"""Sets the statement_index of this CheckNoNewAccessReason.
 
         新增权限statement的index，从0开始。
 

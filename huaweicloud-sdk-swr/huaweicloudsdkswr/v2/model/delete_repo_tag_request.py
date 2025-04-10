@@ -29,7 +29,7 @@ class DeleteRepoTagRequest:
     }
 
     def __init__(self, namespace=None, repository=None, tag=None):
-        """DeleteRepoTagRequest
+        r"""DeleteRepoTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteRepoTagRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteRepoTagRequest.
+        r"""Gets the namespace of this DeleteRepoTagRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -65,7 +65,7 @@ class DeleteRepoTagRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteRepoTagRequest.
+        r"""Sets the namespace of this DeleteRepoTagRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -76,7 +76,7 @@ class DeleteRepoTagRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this DeleteRepoTagRequest.
+        r"""Gets the repository of this DeleteRepoTagRequest.
 
         镜像仓库名称
 
@@ -87,7 +87,7 @@ class DeleteRepoTagRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this DeleteRepoTagRequest.
+        r"""Sets the repository of this DeleteRepoTagRequest.
 
         镜像仓库名称
 
@@ -98,7 +98,7 @@ class DeleteRepoTagRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this DeleteRepoTagRequest.
+        r"""Gets the tag of this DeleteRepoTagRequest.
 
         镜像版本名称
 
@@ -109,7 +109,7 @@ class DeleteRepoTagRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this DeleteRepoTagRequest.
+        r"""Sets the tag of this DeleteRepoTagRequest.
 
         镜像版本名称
 

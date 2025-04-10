@@ -23,7 +23,7 @@ class BaseMultiActiveZoneSpec:
     }
 
     def __init__(self):
-        """BaseMultiActiveZoneSpec
+        r"""BaseMultiActiveZoneSpec
 
         The model defined in huaweicloud sdk
 

@@ -39,7 +39,7 @@ class ListSharedReposDetailsRequest:
     }
 
     def __init__(self, namespace=None, name=None, center=None, limit=None, offset=None, order_column=None, order_type=None, filter=None):
-        """ListSharedReposDetailsRequest
+        r"""ListSharedReposDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListSharedReposDetailsRequest.
+        r"""Gets the namespace of this ListSharedReposDetailsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -102,7 +102,7 @@ class ListSharedReposDetailsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListSharedReposDetailsRequest.
+        r"""Sets the namespace of this ListSharedReposDetailsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -113,7 +113,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSharedReposDetailsRequest.
+        r"""Gets the name of this ListSharedReposDetailsRequest.
 
         镜像仓库名称
 
@@ -124,7 +124,7 @@ class ListSharedReposDetailsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSharedReposDetailsRequest.
+        r"""Sets the name of this ListSharedReposDetailsRequest.
 
         镜像仓库名称
 
@@ -135,7 +135,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def center(self):
-        """Gets the center of this ListSharedReposDetailsRequest.
+        r"""Gets the center of this ListSharedReposDetailsRequest.
 
         self: 我共享的镜像。thirdparty: 他人共享给我的镜像
 
@@ -146,7 +146,7 @@ class ListSharedReposDetailsRequest:
 
     @center.setter
     def center(self, center):
-        """Sets the center of this ListSharedReposDetailsRequest.
+        r"""Sets the center of this ListSharedReposDetailsRequest.
 
         self: 我共享的镜像。thirdparty: 他人共享给我的镜像
 
@@ -157,7 +157,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSharedReposDetailsRequest.
+        r"""Gets the limit of this ListSharedReposDetailsRequest.
 
         返回条数。注意：offset和limit参数需要配套使用。
 
@@ -168,7 +168,7 @@ class ListSharedReposDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSharedReposDetailsRequest.
+        r"""Sets the limit of this ListSharedReposDetailsRequest.
 
         返回条数。注意：offset和limit参数需要配套使用。
 
@@ -179,7 +179,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSharedReposDetailsRequest.
+        r"""Gets the offset of this ListSharedReposDetailsRequest.
 
         起始索引。注意：offset和limit参数需要配套使用。
 
@@ -190,7 +190,7 @@ class ListSharedReposDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSharedReposDetailsRequest.
+        r"""Sets the offset of this ListSharedReposDetailsRequest.
 
         起始索引。注意：offset和limit参数需要配套使用。
 
@@ -201,7 +201,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def order_column(self):
-        """Gets the order_column of this ListSharedReposDetailsRequest.
+        r"""Gets the order_column of this ListSharedReposDetailsRequest.
 
         按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
 
@@ -212,7 +212,7 @@ class ListSharedReposDetailsRequest:
 
     @order_column.setter
     def order_column(self, order_column):
-        """Sets the order_column of this ListSharedReposDetailsRequest.
+        r"""Sets the order_column of this ListSharedReposDetailsRequest.
 
         按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
 
@@ -223,7 +223,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def order_type(self):
-        """Gets the order_type of this ListSharedReposDetailsRequest.
+        r"""Gets the order_type of this ListSharedReposDetailsRequest.
 
         排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
 
@@ -234,7 +234,7 @@ class ListSharedReposDetailsRequest:
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this ListSharedReposDetailsRequest.
+        r"""Sets the order_type of this ListSharedReposDetailsRequest.
 
         排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
 
@@ -245,7 +245,7 @@ class ListSharedReposDetailsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListSharedReposDetailsRequest.
+        r"""Gets the filter of this ListSharedReposDetailsRequest.
 
         应填写 center::{center}|name::{name}|limit::{limit}|offset::{offset}|namespace::{namespace}|order_column::{order_column}|order_type::{order_type} ,其中 {center}可选为self: 我共享的镜像。thirdparty: 他人共享给我的镜像，namespace为组织名称，name为镜像仓库名称， {limit}为返回条数,{offset}为起始索引,{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
 
@@ -256,7 +256,7 @@ class ListSharedReposDetailsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListSharedReposDetailsRequest.
+        r"""Sets the filter of this ListSharedReposDetailsRequest.
 
         应填写 center::{center}|name::{name}|limit::{limit}|offset::{offset}|namespace::{namespace}|order_column::{order_column}|order_type::{order_type} ,其中 {center}可选为self: 我共享的镜像。thirdparty: 他人共享给我的镜像，namespace为组织名称，name为镜像仓库名称， {limit}为返回条数,{offset}为起始索引,{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
 

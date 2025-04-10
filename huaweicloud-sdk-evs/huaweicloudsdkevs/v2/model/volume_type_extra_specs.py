@@ -33,7 +33,7 @@ class VolumeTypeExtraSpecs:
     }
 
     def __init__(self, reske_yavailability_zones=None, availability_zone=None, os_vendor_extendedsold_out_availability_zones=None, volume_backend_name=None, h_wavailability_zone=None):
-        """VolumeTypeExtraSpecs
+        r"""VolumeTypeExtraSpecs
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def reske_yavailability_zones(self):
-        """Gets the reske_yavailability_zones of this VolumeTypeExtraSpecs.
+        r"""Gets the reske_yavailability_zones of this VolumeTypeExtraSpecs.
 
         支持当前云硬盘类型的可用区列表，列表的元素以逗号分隔。
 
@@ -82,7 +82,7 @@ class VolumeTypeExtraSpecs:
 
     @reske_yavailability_zones.setter
     def reske_yavailability_zones(self, reske_yavailability_zones):
-        """Sets the reske_yavailability_zones of this VolumeTypeExtraSpecs.
+        r"""Sets the reske_yavailability_zones of this VolumeTypeExtraSpecs.
 
         支持当前云硬盘类型的可用区列表，列表的元素以逗号分隔。
 
@@ -93,7 +93,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this VolumeTypeExtraSpecs.
+        r"""Gets the availability_zone of this VolumeTypeExtraSpecs.
 
         预留属性。
 
@@ -104,7 +104,7 @@ class VolumeTypeExtraSpecs:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this VolumeTypeExtraSpecs.
+        r"""Sets the availability_zone of this VolumeTypeExtraSpecs.
 
         预留属性。
 
@@ -115,7 +115,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def os_vendor_extendedsold_out_availability_zones(self):
-        """Gets the os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
+        r"""Gets the os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
 
         当前云硬盘类型已售罄的可用区列表，列表的元素以逗号分隔。
 
@@ -126,7 +126,7 @@ class VolumeTypeExtraSpecs:
 
     @os_vendor_extendedsold_out_availability_zones.setter
     def os_vendor_extendedsold_out_availability_zones(self, os_vendor_extendedsold_out_availability_zones):
-        """Sets the os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
+        r"""Sets the os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
 
         当前云硬盘类型已售罄的可用区列表，列表的元素以逗号分隔。
 
@@ -137,7 +137,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def volume_backend_name(self):
-        """Gets the volume_backend_name of this VolumeTypeExtraSpecs.
+        r"""Gets the volume_backend_name of this VolumeTypeExtraSpecs.
 
         预留属性。
 
@@ -148,7 +148,7 @@ class VolumeTypeExtraSpecs:
 
     @volume_backend_name.setter
     def volume_backend_name(self, volume_backend_name):
-        """Sets the volume_backend_name of this VolumeTypeExtraSpecs.
+        r"""Sets the volume_backend_name of this VolumeTypeExtraSpecs.
 
         预留属性。
 
@@ -159,7 +159,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def h_wavailability_zone(self):
-        """Gets the h_wavailability_zone of this VolumeTypeExtraSpecs.
+        r"""Gets the h_wavailability_zone of this VolumeTypeExtraSpecs.
 
         预留属性。
 
@@ -170,7 +170,7 @@ class VolumeTypeExtraSpecs:
 
     @h_wavailability_zone.setter
     def h_wavailability_zone(self, h_wavailability_zone):
-        """Sets the h_wavailability_zone of this VolumeTypeExtraSpecs.
+        r"""Sets the h_wavailability_zone of this VolumeTypeExtraSpecs.
 
         预留属性。
 

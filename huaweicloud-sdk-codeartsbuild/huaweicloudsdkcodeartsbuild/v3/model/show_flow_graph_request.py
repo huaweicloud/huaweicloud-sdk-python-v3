@@ -25,7 +25,7 @@ class ShowFlowGraphRequest:
     }
 
     def __init__(self, build_flow_record_id=None):
-        """ShowFlowGraphRequest
+        r"""ShowFlowGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlowGraphRequest:
 
     @property
     def build_flow_record_id(self):
-        """Gets the build_flow_record_id of this ShowFlowGraphRequest.
+        r"""Gets the build_flow_record_id of this ShowFlowGraphRequest.
 
         父任务构建记录ID
 
@@ -53,7 +53,7 @@ class ShowFlowGraphRequest:
 
     @build_flow_record_id.setter
     def build_flow_record_id(self, build_flow_record_id):
-        """Sets the build_flow_record_id of this ShowFlowGraphRequest.
+        r"""Sets the build_flow_record_id of this ShowFlowGraphRequest.
 
         父任务构建记录ID
 

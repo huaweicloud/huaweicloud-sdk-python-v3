@@ -29,7 +29,7 @@ class UpdateTimerRuleReq:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """UpdateTimerRuleReq
+        r"""UpdateTimerRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateTimerRuleReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateTimerRuleReq.
+        r"""Gets the api_version of this UpdateTimerRuleReq.
 
         :return: The api_version of this UpdateTimerRuleReq.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class UpdateTimerRuleReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateTimerRuleReq.
+        r"""Sets the api_version of this UpdateTimerRuleReq.
 
         :param api_version: The api_version of this UpdateTimerRuleReq.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class UpdateTimerRuleReq:
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateTimerRuleReq.
+        r"""Gets the kind of this UpdateTimerRuleReq.
 
         :return: The kind of this UpdateTimerRuleReq.
         :rtype: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
@@ -81,7 +81,7 @@ class UpdateTimerRuleReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateTimerRuleReq.
+        r"""Sets the kind of this UpdateTimerRuleReq.
 
         :param kind: The kind of this UpdateTimerRuleReq.
         :type kind: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
@@ -90,7 +90,7 @@ class UpdateTimerRuleReq:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateTimerRuleReq.
+        r"""Gets the spec of this UpdateTimerRuleReq.
 
         :return: The spec of this UpdateTimerRuleReq.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleDetails`
@@ -99,7 +99,7 @@ class UpdateTimerRuleReq:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateTimerRuleReq.
+        r"""Sets the spec of this UpdateTimerRuleReq.
 
         :param spec: The spec of this UpdateTimerRuleReq.
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleDetails`

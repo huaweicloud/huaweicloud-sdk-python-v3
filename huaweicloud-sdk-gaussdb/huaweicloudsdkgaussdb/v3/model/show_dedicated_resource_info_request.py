@@ -27,7 +27,7 @@ class ShowDedicatedResourceInfoRequest:
     }
 
     def __init__(self, x_language=None, dedicated_resource_id=None):
-        """ShowDedicatedResourceInfoRequest
+        r"""ShowDedicatedResourceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDedicatedResourceInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDedicatedResourceInfoRequest.
+        r"""Gets the x_language of this ShowDedicatedResourceInfoRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowDedicatedResourceInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDedicatedResourceInfoRequest.
+        r"""Sets the x_language of this ShowDedicatedResourceInfoRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowDedicatedResourceInfoRequest:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this ShowDedicatedResourceInfoRequest.
+        r"""Gets the dedicated_resource_id of this ShowDedicatedResourceInfoRequest.
 
         专属资源池ID。
 
@@ -82,7 +82,7 @@ class ShowDedicatedResourceInfoRequest:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this ShowDedicatedResourceInfoRequest.
+        r"""Sets the dedicated_resource_id of this ShowDedicatedResourceInfoRequest.
 
         专属资源池ID。
 

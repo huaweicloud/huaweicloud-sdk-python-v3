@@ -27,7 +27,7 @@ class CreateCertificateDTO:
     }
 
     def __init__(self, content=None, app_id=None):
-        """CreateCertificateDTO
+        r"""CreateCertificateDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCertificateDTO:
 
     @property
     def content(self):
-        """Gets the content of this CreateCertificateDTO.
+        r"""Gets the content of this CreateCertificateDTO.
 
         证书内容信息。
 
@@ -60,7 +60,7 @@ class CreateCertificateDTO:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateCertificateDTO.
+        r"""Sets the content of this CreateCertificateDTO.
 
         证书内容信息。
 
@@ -71,7 +71,7 @@ class CreateCertificateDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateCertificateDTO.
+        r"""Gets the app_id of this CreateCertificateDTO.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的证书归属到哪个资源空间下，否则创建的证书将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。
 
@@ -82,7 +82,7 @@ class CreateCertificateDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateCertificateDTO.
+        r"""Sets the app_id of this CreateCertificateDTO.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的证书归属到哪个资源空间下，否则创建的证书将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。
 

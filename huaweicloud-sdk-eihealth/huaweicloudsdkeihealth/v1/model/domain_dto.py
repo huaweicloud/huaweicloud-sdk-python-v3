@@ -27,7 +27,7 @@ class DomainDto:
     }
 
     def __init__(self, id=None, name=None):
-        """DomainDto
+        r"""DomainDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DomainDto:
 
     @property
     def id(self):
-        """Gets the id of this DomainDto.
+        r"""Gets the id of this DomainDto.
 
         账号id
 
@@ -61,7 +61,7 @@ class DomainDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DomainDto.
+        r"""Sets the id of this DomainDto.
 
         账号id
 
@@ -72,7 +72,7 @@ class DomainDto:
 
     @property
     def name(self):
-        """Gets the name of this DomainDto.
+        r"""Gets the name of this DomainDto.
 
         账号名
 
@@ -83,7 +83,7 @@ class DomainDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DomainDto.
+        r"""Sets the name of this DomainDto.
 
         账号名
 

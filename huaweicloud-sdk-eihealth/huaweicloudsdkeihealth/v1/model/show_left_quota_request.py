@@ -23,7 +23,7 @@ class ShowLeftQuotaRequest:
     }
 
     def __init__(self):
-        """ShowLeftQuotaRequest
+        r"""ShowLeftQuotaRequest
 
         The model defined in huaweicloud sdk
 

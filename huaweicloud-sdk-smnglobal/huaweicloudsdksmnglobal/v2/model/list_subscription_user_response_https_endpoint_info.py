@@ -27,7 +27,7 @@ class ListSubscriptionUserResponseHttpsEndpointInfo:
     }
 
     def __init__(self, endpoint=None, header=None):
-        """ListSubscriptionUserResponseHttpsEndpointInfo
+        r"""ListSubscriptionUserResponseHttpsEndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSubscriptionUserResponseHttpsEndpointInfo:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ListSubscriptionUserResponseHttpsEndpointInfo.
+        r"""Gets the endpoint of this ListSubscriptionUserResponseHttpsEndpointInfo.
 
         终端地址。
 
@@ -60,7 +60,7 @@ class ListSubscriptionUserResponseHttpsEndpointInfo:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ListSubscriptionUserResponseHttpsEndpointInfo.
+        r"""Sets the endpoint of this ListSubscriptionUserResponseHttpsEndpointInfo.
 
         终端地址。
 
@@ -71,7 +71,7 @@ class ListSubscriptionUserResponseHttpsEndpointInfo:
 
     @property
     def header(self):
-        """Gets the header of this ListSubscriptionUserResponseHttpsEndpointInfo.
+        r"""Gets the header of this ListSubscriptionUserResponseHttpsEndpointInfo.
 
         https协议订阅用户的自定义请求头。https协议订阅用户可以自定义请求头。
 
@@ -82,7 +82,7 @@ class ListSubscriptionUserResponseHttpsEndpointInfo:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this ListSubscriptionUserResponseHttpsEndpointInfo.
+        r"""Sets the header of this ListSubscriptionUserResponseHttpsEndpointInfo.
 
         https协议订阅用户的自定义请求头。https协议订阅用户可以自定义请求头。
 

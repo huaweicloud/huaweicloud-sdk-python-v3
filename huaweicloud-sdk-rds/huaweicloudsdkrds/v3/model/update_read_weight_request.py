@@ -29,7 +29,7 @@ class UpdateReadWeightRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateReadWeightRequest
+        r"""UpdateReadWeightRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateReadWeightRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateReadWeightRequest.
+        r"""Gets the x_language of this UpdateReadWeightRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdateReadWeightRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateReadWeightRequest.
+        r"""Sets the x_language of this UpdateReadWeightRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdateReadWeightRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateReadWeightRequest.
+        r"""Gets the instance_id of this UpdateReadWeightRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateReadWeightRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateReadWeightRequest.
+        r"""Sets the instance_id of this UpdateReadWeightRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateReadWeightRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateReadWeightRequest.
+        r"""Gets the body of this UpdateReadWeightRequest.
 
         :return: The body of this UpdateReadWeightRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ModifyProxyWeightRequest`
@@ -109,7 +109,7 @@ class UpdateReadWeightRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateReadWeightRequest.
+        r"""Sets the body of this UpdateReadWeightRequest.
 
         :param body: The body of this UpdateReadWeightRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ModifyProxyWeightRequest`

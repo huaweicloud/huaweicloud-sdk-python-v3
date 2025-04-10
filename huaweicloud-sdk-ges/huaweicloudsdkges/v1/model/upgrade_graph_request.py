@@ -29,7 +29,7 @@ class UpgradeGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """UpgradeGraphRequest
+        r"""UpgradeGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpgradeGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this UpgradeGraphRequest.
+        r"""Gets the graph_id of this UpgradeGraphRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class UpgradeGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this UpgradeGraphRequest.
+        r"""Sets the graph_id of this UpgradeGraphRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class UpgradeGraphRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this UpgradeGraphRequest.
+        r"""Gets the action_id of this UpgradeGraphRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class UpgradeGraphRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this UpgradeGraphRequest.
+        r"""Sets the action_id of this UpgradeGraphRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class UpgradeGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeGraphRequest.
+        r"""Gets the body of this UpgradeGraphRequest.
 
         :return: The body of this UpgradeGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`
@@ -108,7 +108,7 @@ class UpgradeGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeGraphRequest.
+        r"""Sets the body of this UpgradeGraphRequest.
 
         :param body: The body of this UpgradeGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`

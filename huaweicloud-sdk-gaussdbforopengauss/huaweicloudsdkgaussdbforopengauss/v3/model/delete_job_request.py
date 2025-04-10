@@ -27,7 +27,7 @@ class DeleteJobRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """DeleteJobRequest
+        r"""DeleteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteJobRequest.
+        r"""Gets the x_language of this DeleteJobRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class DeleteJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteJobRequest.
+        r"""Sets the x_language of this DeleteJobRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class DeleteJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteJobRequest.
+        r"""Gets the job_id of this DeleteJobRequest.
 
         任务id。
 
@@ -82,7 +82,7 @@ class DeleteJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteJobRequest.
+        r"""Sets the job_id of this DeleteJobRequest.
 
         任务id。
 

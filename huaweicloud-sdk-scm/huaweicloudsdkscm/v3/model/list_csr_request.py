@@ -31,7 +31,7 @@ class ListCsrRequest:
     }
 
     def __init__(self, limit=None, offset=None, name=None, private_key_algo=None):
-        """ListCsrRequest
+        r"""ListCsrRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListCsrRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCsrRequest.
+        r"""Gets the limit of this ListCsrRequest.
 
         每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
 
@@ -75,7 +75,7 @@ class ListCsrRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCsrRequest.
+        r"""Sets the limit of this ListCsrRequest.
 
         每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
 
@@ -86,7 +86,7 @@ class ListCsrRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCsrRequest.
+        r"""Gets the offset of this ListCsrRequest.
 
         偏移量。
 
@@ -97,7 +97,7 @@ class ListCsrRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCsrRequest.
+        r"""Sets the offset of this ListCsrRequest.
 
         偏移量。
 
@@ -108,7 +108,7 @@ class ListCsrRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCsrRequest.
+        r"""Gets the name of this ListCsrRequest.
 
         csr名称。
 
@@ -119,7 +119,7 @@ class ListCsrRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCsrRequest.
+        r"""Sets the name of this ListCsrRequest.
 
         csr名称。
 
@@ -130,7 +130,7 @@ class ListCsrRequest:
 
     @property
     def private_key_algo(self):
-        """Gets the private_key_algo of this ListCsrRequest.
+        r"""Gets the private_key_algo of this ListCsrRequest.
 
         密钥算法的类型。取值如下： - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 
@@ -141,7 +141,7 @@ class ListCsrRequest:
 
     @private_key_algo.setter
     def private_key_algo(self, private_key_algo):
-        """Sets the private_key_algo of this ListCsrRequest.
+        r"""Sets the private_key_algo of this ListCsrRequest.
 
         密钥算法的类型。取值如下： - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 

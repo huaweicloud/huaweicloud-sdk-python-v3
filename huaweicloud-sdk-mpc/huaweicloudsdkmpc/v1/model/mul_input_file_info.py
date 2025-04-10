@@ -27,7 +27,7 @@ class MulInputFileInfo:
     }
 
     def __init__(self, language=None, input=None):
-        """MulInputFileInfo
+        r"""MulInputFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MulInputFileInfo:
 
     @property
     def language(self):
-        """Gets the language of this MulInputFileInfo.
+        r"""Gets the language of this MulInputFileInfo.
 
         语言标签。
 
@@ -61,7 +61,7 @@ class MulInputFileInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this MulInputFileInfo.
+        r"""Sets the language of this MulInputFileInfo.
 
         语言标签。
 
@@ -72,7 +72,7 @@ class MulInputFileInfo:
 
     @property
     def input(self):
-        """Gets the input of this MulInputFileInfo.
+        r"""Gets the input of this MulInputFileInfo.
 
         :return: The input of this MulInputFileInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -81,7 +81,7 @@ class MulInputFileInfo:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this MulInputFileInfo.
+        r"""Sets the input of this MulInputFileInfo.
 
         :param input: The input of this MulInputFileInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

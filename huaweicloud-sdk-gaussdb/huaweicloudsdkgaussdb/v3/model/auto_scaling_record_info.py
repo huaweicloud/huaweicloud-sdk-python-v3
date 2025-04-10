@@ -39,7 +39,7 @@ class AutoScalingRecordInfo:
     }
 
     def __init__(self, id=None, instance_id=None, instance_name=None, scaling_type=None, original_value=None, target_value=None, result=None, create_at=None):
-        """AutoScalingRecordInfo
+        r"""AutoScalingRecordInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AutoScalingRecordInfo:
 
     @property
     def id(self):
-        """Gets the id of this AutoScalingRecordInfo.
+        r"""Gets the id of this AutoScalingRecordInfo.
 
         记录ID。
 
@@ -103,7 +103,7 @@ class AutoScalingRecordInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AutoScalingRecordInfo.
+        r"""Sets the id of this AutoScalingRecordInfo.
 
         记录ID。
 
@@ -114,7 +114,7 @@ class AutoScalingRecordInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AutoScalingRecordInfo.
+        r"""Gets the instance_id of this AutoScalingRecordInfo.
 
         实例ID。
 
@@ -125,7 +125,7 @@ class AutoScalingRecordInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AutoScalingRecordInfo.
+        r"""Sets the instance_id of this AutoScalingRecordInfo.
 
         实例ID。
 
@@ -136,7 +136,7 @@ class AutoScalingRecordInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this AutoScalingRecordInfo.
+        r"""Gets the instance_name of this AutoScalingRecordInfo.
 
         实例名称。
 
@@ -147,7 +147,7 @@ class AutoScalingRecordInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this AutoScalingRecordInfo.
+        r"""Sets the instance_name of this AutoScalingRecordInfo.
 
         实例名称。
 
@@ -158,7 +158,7 @@ class AutoScalingRecordInfo:
 
     @property
     def scaling_type(self):
-        """Gets the scaling_type of this AutoScalingRecordInfo.
+        r"""Gets the scaling_type of this AutoScalingRecordInfo.
 
         变配类型。
 
@@ -169,7 +169,7 @@ class AutoScalingRecordInfo:
 
     @scaling_type.setter
     def scaling_type(self, scaling_type):
-        """Sets the scaling_type of this AutoScalingRecordInfo.
+        r"""Sets the scaling_type of this AutoScalingRecordInfo.
 
         变配类型。
 
@@ -180,7 +180,7 @@ class AutoScalingRecordInfo:
 
     @property
     def original_value(self):
-        """Gets the original_value of this AutoScalingRecordInfo.
+        r"""Gets the original_value of this AutoScalingRecordInfo.
 
         原始值。
 
@@ -191,7 +191,7 @@ class AutoScalingRecordInfo:
 
     @original_value.setter
     def original_value(self, original_value):
-        """Sets the original_value of this AutoScalingRecordInfo.
+        r"""Sets the original_value of this AutoScalingRecordInfo.
 
         原始值。
 
@@ -202,7 +202,7 @@ class AutoScalingRecordInfo:
 
     @property
     def target_value(self):
-        """Gets the target_value of this AutoScalingRecordInfo.
+        r"""Gets the target_value of this AutoScalingRecordInfo.
 
         目标值。
 
@@ -213,7 +213,7 @@ class AutoScalingRecordInfo:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this AutoScalingRecordInfo.
+        r"""Sets the target_value of this AutoScalingRecordInfo.
 
         目标值。
 
@@ -224,7 +224,7 @@ class AutoScalingRecordInfo:
 
     @property
     def result(self):
-        """Gets the result of this AutoScalingRecordInfo.
+        r"""Gets the result of this AutoScalingRecordInfo.
 
         变配结果。
 
@@ -235,7 +235,7 @@ class AutoScalingRecordInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AutoScalingRecordInfo.
+        r"""Sets the result of this AutoScalingRecordInfo.
 
         变配结果。
 
@@ -246,7 +246,7 @@ class AutoScalingRecordInfo:
 
     @property
     def create_at(self):
-        """Gets the create_at of this AutoScalingRecordInfo.
+        r"""Gets the create_at of this AutoScalingRecordInfo.
 
         变配时间。
 
@@ -257,7 +257,7 @@ class AutoScalingRecordInfo:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this AutoScalingRecordInfo.
+        r"""Sets the create_at of this AutoScalingRecordInfo.
 
         变配时间。
 

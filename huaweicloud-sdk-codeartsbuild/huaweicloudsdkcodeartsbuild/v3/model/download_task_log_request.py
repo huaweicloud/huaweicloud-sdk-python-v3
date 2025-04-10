@@ -29,7 +29,7 @@ class DownloadTaskLogRequest:
     }
 
     def __init__(self, record_id=None, task_name=None, log_level=None):
-        """DownloadTaskLogRequest
+        r"""DownloadTaskLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DownloadTaskLogRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this DownloadTaskLogRequest.
+        r"""Gets the record_id of this DownloadTaskLogRequest.
 
         记录ID,36位数字、小写字母、'-'组组合。
 
@@ -66,7 +66,7 @@ class DownloadTaskLogRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this DownloadTaskLogRequest.
+        r"""Sets the record_id of this DownloadTaskLogRequest.
 
         记录ID,36位数字、小写字母、'-'组组合。
 
@@ -77,7 +77,7 @@ class DownloadTaskLogRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this DownloadTaskLogRequest.
+        r"""Gets the task_name of this DownloadTaskLogRequest.
 
         步骤名称
 
@@ -88,7 +88,7 @@ class DownloadTaskLogRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this DownloadTaskLogRequest.
+        r"""Sets the task_name of this DownloadTaskLogRequest.
 
         步骤名称
 
@@ -99,7 +99,7 @@ class DownloadTaskLogRequest:
 
     @property
     def log_level(self):
-        """Gets the log_level of this DownloadTaskLogRequest.
+        r"""Gets the log_level of this DownloadTaskLogRequest.
 
         日志等级 值为INFO | DEBUG。
 
@@ -110,7 +110,7 @@ class DownloadTaskLogRequest:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this DownloadTaskLogRequest.
+        r"""Sets the log_level of this DownloadTaskLogRequest.
 
         日志等级 值为INFO | DEBUG。
 

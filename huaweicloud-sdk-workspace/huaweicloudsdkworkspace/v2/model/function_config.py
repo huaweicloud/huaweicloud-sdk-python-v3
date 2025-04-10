@@ -31,7 +31,7 @@ class FunctionConfig:
     }
 
     def __init__(self, id=None, name=None, status=None, values=None):
-        """FunctionConfig
+        r"""FunctionConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FunctionConfig:
 
     @property
     def id(self):
-        """Gets the id of this FunctionConfig.
+        r"""Gets the id of this FunctionConfig.
 
         功能配置id
 
@@ -75,7 +75,7 @@ class FunctionConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FunctionConfig.
+        r"""Sets the id of this FunctionConfig.
 
         功能配置id
 
@@ -86,7 +86,7 @@ class FunctionConfig:
 
     @property
     def name(self):
-        """Gets the name of this FunctionConfig.
+        r"""Gets the name of this FunctionConfig.
 
         功能配置名称
 
@@ -97,7 +97,7 @@ class FunctionConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FunctionConfig.
+        r"""Sets the name of this FunctionConfig.
 
         功能配置名称
 
@@ -108,7 +108,7 @@ class FunctionConfig:
 
     @property
     def status(self):
-        """Gets the status of this FunctionConfig.
+        r"""Gets the status of this FunctionConfig.
 
         功能配置开关的状态，标识开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能
 
@@ -119,7 +119,7 @@ class FunctionConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FunctionConfig.
+        r"""Sets the status of this FunctionConfig.
 
         功能配置开关的状态，标识开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能
 
@@ -130,7 +130,7 @@ class FunctionConfig:
 
     @property
     def values(self):
-        """Gets the values of this FunctionConfig.
+        r"""Gets the values of this FunctionConfig.
 
         配置项列表，键值对格式
 
@@ -141,7 +141,7 @@ class FunctionConfig:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this FunctionConfig.
+        r"""Sets the values of this FunctionConfig.
 
         配置项列表，键值对格式
 

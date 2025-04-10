@@ -27,7 +27,7 @@ class CreateSimSmScenariosFilesRequest:
     }
 
     def __init__(self, parent_lookup_id=None, body=None):
-        """CreateSimSmScenariosFilesRequest
+        r"""CreateSimSmScenariosFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSimSmScenariosFilesRequest:
 
     @property
     def parent_lookup_id(self):
-        """Gets the parent_lookup_id of this CreateSimSmScenariosFilesRequest.
+        r"""Gets the parent_lookup_id of this CreateSimSmScenariosFilesRequest.
 
         场景ID
 
@@ -60,7 +60,7 @@ class CreateSimSmScenariosFilesRequest:
 
     @parent_lookup_id.setter
     def parent_lookup_id(self, parent_lookup_id):
-        """Sets the parent_lookup_id of this CreateSimSmScenariosFilesRequest.
+        r"""Sets the parent_lookup_id of this CreateSimSmScenariosFilesRequest.
 
         场景ID
 
@@ -71,7 +71,7 @@ class CreateSimSmScenariosFilesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSimSmScenariosFilesRequest.
+        r"""Gets the body of this CreateSimSmScenariosFilesRequest.
 
         :return: The body of this CreateSimSmScenariosFilesRequest.
         :rtype: :class:`huaweicloudsdkoctopus.v2.FileNestedCreateReqSrlz`
@@ -80,7 +80,7 @@ class CreateSimSmScenariosFilesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSimSmScenariosFilesRequest.
+        r"""Sets the body of this CreateSimSmScenariosFilesRequest.
 
         :param body: The body of this CreateSimSmScenariosFilesRequest.
         :type body: :class:`huaweicloudsdkoctopus.v2.FileNestedCreateReqSrlz`

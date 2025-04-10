@@ -31,7 +31,7 @@ class LTSIndexConfigInfo:
     }
 
     def __init__(self, full_text_index=None, fields=None, sql_analysis_enable=None, log_stream_id=None):
-        """LTSIndexConfigInfo
+        r"""LTSIndexConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class LTSIndexConfigInfo:
 
     @property
     def full_text_index(self):
-        """Gets the full_text_index of this LTSIndexConfigInfo.
+        r"""Gets the full_text_index of this LTSIndexConfigInfo.
 
         :return: The full_text_index of this LTSIndexConfigInfo.
         :rtype: :class:`huaweicloudsdklts.v2.LTSFullTextIndexInfo`
@@ -71,7 +71,7 @@ class LTSIndexConfigInfo:
 
     @full_text_index.setter
     def full_text_index(self, full_text_index):
-        """Sets the full_text_index of this LTSIndexConfigInfo.
+        r"""Sets the full_text_index of this LTSIndexConfigInfo.
 
         :param full_text_index: The full_text_index of this LTSIndexConfigInfo.
         :type full_text_index: :class:`huaweicloudsdklts.v2.LTSFullTextIndexInfo`
@@ -80,7 +80,7 @@ class LTSIndexConfigInfo:
 
     @property
     def fields(self):
-        """Gets the fields of this LTSIndexConfigInfo.
+        r"""Gets the fields of this LTSIndexConfigInfo.
 
         字段索引配置
 
@@ -91,7 +91,7 @@ class LTSIndexConfigInfo:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this LTSIndexConfigInfo.
+        r"""Sets the fields of this LTSIndexConfigInfo.
 
         字段索引配置
 
@@ -102,7 +102,7 @@ class LTSIndexConfigInfo:
 
     @property
     def sql_analysis_enable(self):
-        """Gets the sql_analysis_enable of this LTSIndexConfigInfo.
+        r"""Gets the sql_analysis_enable of this LTSIndexConfigInfo.
 
         是否开启可视化
 
@@ -113,7 +113,7 @@ class LTSIndexConfigInfo:
 
     @sql_analysis_enable.setter
     def sql_analysis_enable(self, sql_analysis_enable):
-        """Sets the sql_analysis_enable of this LTSIndexConfigInfo.
+        r"""Sets the sql_analysis_enable of this LTSIndexConfigInfo.
 
         是否开启可视化
 
@@ -124,7 +124,7 @@ class LTSIndexConfigInfo:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this LTSIndexConfigInfo.
+        r"""Gets the log_stream_id of this LTSIndexConfigInfo.
 
         日志流id
 
@@ -135,7 +135,7 @@ class LTSIndexConfigInfo:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LTSIndexConfigInfo.
+        r"""Sets the log_stream_id of this LTSIndexConfigInfo.
 
         日志流id
 

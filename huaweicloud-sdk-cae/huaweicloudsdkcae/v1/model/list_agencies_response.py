@@ -30,7 +30,7 @@ class ListAgenciesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, agencies=None):
-        """ListAgenciesResponse
+        r"""ListAgenciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAgenciesResponse.
+        r"""Gets the api_version of this ListAgenciesResponse.
 
         :return: The api_version of this ListAgenciesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAgenciesResponse.
+        r"""Sets the api_version of this ListAgenciesResponse.
 
         :param api_version: The api_version of this ListAgenciesResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAgenciesResponse.
+        r"""Gets the kind of this ListAgenciesResponse.
 
         :return: The kind of this ListAgenciesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
@@ -85,7 +85,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAgenciesResponse.
+        r"""Sets the kind of this ListAgenciesResponse.
 
         :param kind: The kind of this ListAgenciesResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
@@ -94,7 +94,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def agencies(self):
-        """Gets the agencies of this ListAgenciesResponse.
+        r"""Gets the agencies of this ListAgenciesResponse.
 
         委托列表。
 
@@ -105,7 +105,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @agencies.setter
     def agencies(self, agencies):
-        """Sets the agencies of this ListAgenciesResponse.
+        r"""Sets the agencies of this ListAgenciesResponse.
 
         委托列表。
 

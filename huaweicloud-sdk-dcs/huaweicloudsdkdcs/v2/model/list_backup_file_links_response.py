@@ -30,7 +30,7 @@ class ListBackupFileLinksResponse(SdkResponse):
     }
 
     def __init__(self, file_path=None, bucket_name=None, links=None):
-        """ListBackupFileLinksResponse
+        r"""ListBackupFileLinksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListBackupFileLinksResponse(SdkResponse):
 
     @property
     def file_path(self):
-        """Gets the file_path of this ListBackupFileLinksResponse.
+        r"""Gets the file_path of this ListBackupFileLinksResponse.
 
         OBS桶内文件路径。
 
@@ -69,7 +69,7 @@ class ListBackupFileLinksResponse(SdkResponse):
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ListBackupFileLinksResponse.
+        r"""Sets the file_path of this ListBackupFileLinksResponse.
 
         OBS桶内文件路径。
 
@@ -80,7 +80,7 @@ class ListBackupFileLinksResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ListBackupFileLinksResponse.
+        r"""Gets the bucket_name of this ListBackupFileLinksResponse.
 
         OBS桶名。
 
@@ -91,7 +91,7 @@ class ListBackupFileLinksResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ListBackupFileLinksResponse.
+        r"""Sets the bucket_name of this ListBackupFileLinksResponse.
 
         OBS桶名。
 
@@ -102,7 +102,7 @@ class ListBackupFileLinksResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListBackupFileLinksResponse.
+        r"""Gets the links of this ListBackupFileLinksResponse.
 
         备份文件下链接集合，链接数最大为64个。
 
@@ -113,7 +113,7 @@ class ListBackupFileLinksResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListBackupFileLinksResponse.
+        r"""Sets the links of this ListBackupFileLinksResponse.
 
         备份文件下链接集合，链接数最大为64个。
 

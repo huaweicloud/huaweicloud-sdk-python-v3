@@ -29,7 +29,7 @@ class ListTaskAssignCasesRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, body=None):
-        """ListTaskAssignCasesRequest
+        r"""ListTaskAssignCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListTaskAssignCasesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTaskAssignCasesRequest.
+        r"""Gets the project_id of this ListTaskAssignCasesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ListTaskAssignCasesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTaskAssignCasesRequest.
+        r"""Sets the project_id of this ListTaskAssignCasesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ListTaskAssignCasesRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTaskAssignCasesRequest.
+        r"""Gets the task_id of this ListTaskAssignCasesRequest.
 
         任务uri
 
@@ -88,7 +88,7 @@ class ListTaskAssignCasesRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTaskAssignCasesRequest.
+        r"""Sets the task_id of this ListTaskAssignCasesRequest.
 
         任务uri
 
@@ -99,7 +99,7 @@ class ListTaskAssignCasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTaskAssignCasesRequest.
+        r"""Gets the body of this ListTaskAssignCasesRequest.
 
         :return: The body of this ListTaskAssignCasesRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryTaskAssignCasesInfo`
@@ -108,7 +108,7 @@ class ListTaskAssignCasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTaskAssignCasesRequest.
+        r"""Sets the body of this ListTaskAssignCasesRequest.
 
         :param body: The body of this ListTaskAssignCasesRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.QueryTaskAssignCasesInfo`

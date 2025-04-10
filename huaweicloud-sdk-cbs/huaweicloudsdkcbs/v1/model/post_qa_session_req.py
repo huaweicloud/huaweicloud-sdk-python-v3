@@ -31,7 +31,7 @@ class PostQaSessionReq:
     }
 
     def __init__(self, extends=None, chat_enable=None, user_id=None, question=None):
-        """PostQaSessionReq
+        r"""PostQaSessionReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PostQaSessionReq:
 
     @property
     def extends(self):
-        """Gets the extends of this PostQaSessionReq.
+        r"""Gets the extends of this PostQaSessionReq.
 
         :return: The extends of this PostQaSessionReq.
         :rtype: :class:`huaweicloudsdkcbs.v1.SessionExtends`
@@ -72,7 +72,7 @@ class PostQaSessionReq:
 
     @extends.setter
     def extends(self, extends):
-        """Sets the extends of this PostQaSessionReq.
+        r"""Sets the extends of this PostQaSessionReq.
 
         :param extends: The extends of this PostQaSessionReq.
         :type extends: :class:`huaweicloudsdkcbs.v1.SessionExtends`
@@ -81,7 +81,7 @@ class PostQaSessionReq:
 
     @property
     def chat_enable(self):
-        """Gets the chat_enable of this PostQaSessionReq.
+        r"""Gets the chat_enable of this PostQaSessionReq.
 
         默认true true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
@@ -92,7 +92,7 @@ class PostQaSessionReq:
 
     @chat_enable.setter
     def chat_enable(self, chat_enable):
-        """Sets the chat_enable of this PostQaSessionReq.
+        r"""Sets the chat_enable of this PostQaSessionReq.
 
         默认true true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
@@ -103,7 +103,7 @@ class PostQaSessionReq:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PostQaSessionReq.
+        r"""Gets the user_id of this PostQaSessionReq.
 
         用户id，在日志中用于标识不通用户，可以为任意String。
 
@@ -114,7 +114,7 @@ class PostQaSessionReq:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PostQaSessionReq.
+        r"""Sets the user_id of this PostQaSessionReq.
 
         用户id，在日志中用于标识不通用户，可以为任意String。
 
@@ -125,7 +125,7 @@ class PostQaSessionReq:
 
     @property
     def question(self):
-        """Gets the question of this PostQaSessionReq.
+        r"""Gets the question of this PostQaSessionReq.
 
         用户输入。
 
@@ -136,7 +136,7 @@ class PostQaSessionReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this PostQaSessionReq.
+        r"""Sets the question of this PostQaSessionReq.
 
         用户输入。
 

@@ -67,7 +67,7 @@ class DataClassificationRuleQueryDTO:
     }
 
     def __init__(self, uuid=None, rule_type=None, secrecy_level=None, secrecy_level_num=None, name=None, guid=None, enable=None, method=None, content_expression=None, column_expression=None, commit_expression=None, combine_expression=None, project_id=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, builtin_rule_id=None, category_id=None, instance_id=None, match_type=None):
-        """DataClassificationRuleQueryDTO
+        r"""DataClassificationRuleQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def uuid(self):
-        """Gets the uuid of this DataClassificationRuleQueryDTO.
+        r"""Gets the uuid of this DataClassificationRuleQueryDTO.
 
         规则ID
 
@@ -201,7 +201,7 @@ class DataClassificationRuleQueryDTO:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this DataClassificationRuleQueryDTO.
+        r"""Sets the uuid of this DataClassificationRuleQueryDTO.
 
         规则ID
 
@@ -212,7 +212,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this DataClassificationRuleQueryDTO.
+        r"""Gets the rule_type of this DataClassificationRuleQueryDTO.
 
         规则类型, CUSTOM, BUILTIN
 
@@ -223,7 +223,7 @@ class DataClassificationRuleQueryDTO:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this DataClassificationRuleQueryDTO.
+        r"""Sets the rule_type of this DataClassificationRuleQueryDTO.
 
         规则类型, CUSTOM, BUILTIN
 
@@ -234,7 +234,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def secrecy_level(self):
-        """Gets the secrecy_level of this DataClassificationRuleQueryDTO.
+        r"""Gets the secrecy_level of this DataClassificationRuleQueryDTO.
 
         密级
 
@@ -245,7 +245,7 @@ class DataClassificationRuleQueryDTO:
 
     @secrecy_level.setter
     def secrecy_level(self, secrecy_level):
-        """Sets the secrecy_level of this DataClassificationRuleQueryDTO.
+        r"""Sets the secrecy_level of this DataClassificationRuleQueryDTO.
 
         密级
 
@@ -256,7 +256,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def secrecy_level_num(self):
-        """Gets the secrecy_level_num of this DataClassificationRuleQueryDTO.
+        r"""Gets the secrecy_level_num of this DataClassificationRuleQueryDTO.
 
         密级层级
 
@@ -267,7 +267,7 @@ class DataClassificationRuleQueryDTO:
 
     @secrecy_level_num.setter
     def secrecy_level_num(self, secrecy_level_num):
-        """Sets the secrecy_level_num of this DataClassificationRuleQueryDTO.
+        r"""Sets the secrecy_level_num of this DataClassificationRuleQueryDTO.
 
         密级层级
 
@@ -278,7 +278,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationRuleQueryDTO.
+        r"""Gets the name of this DataClassificationRuleQueryDTO.
 
         规则名称
 
@@ -289,7 +289,7 @@ class DataClassificationRuleQueryDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationRuleQueryDTO.
+        r"""Sets the name of this DataClassificationRuleQueryDTO.
 
         规则名称
 
@@ -300,7 +300,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def guid(self):
-        """Gets the guid of this DataClassificationRuleQueryDTO.
+        r"""Gets the guid of this DataClassificationRuleQueryDTO.
 
         guid
 
@@ -311,7 +311,7 @@ class DataClassificationRuleQueryDTO:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this DataClassificationRuleQueryDTO.
+        r"""Sets the guid of this DataClassificationRuleQueryDTO.
 
         guid
 
@@ -322,7 +322,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def enable(self):
-        """Gets the enable of this DataClassificationRuleQueryDTO.
+        r"""Gets the enable of this DataClassificationRuleQueryDTO.
 
         规则是否开启
 
@@ -333,7 +333,7 @@ class DataClassificationRuleQueryDTO:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this DataClassificationRuleQueryDTO.
+        r"""Sets the enable of this DataClassificationRuleQueryDTO.
 
         规则是否开启
 
@@ -344,7 +344,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def method(self):
-        """Gets the method of this DataClassificationRuleQueryDTO.
+        r"""Gets the method of this DataClassificationRuleQueryDTO.
 
         规则方式, REGULAR, NONE, DEFAULT, COMBINE
 
@@ -355,7 +355,7 @@ class DataClassificationRuleQueryDTO:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this DataClassificationRuleQueryDTO.
+        r"""Sets the method of this DataClassificationRuleQueryDTO.
 
         规则方式, REGULAR, NONE, DEFAULT, COMBINE
 
@@ -366,7 +366,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def content_expression(self):
-        """Gets the content_expression of this DataClassificationRuleQueryDTO.
+        r"""Gets the content_expression of this DataClassificationRuleQueryDTO.
 
         内容表达式
 
@@ -377,7 +377,7 @@ class DataClassificationRuleQueryDTO:
 
     @content_expression.setter
     def content_expression(self, content_expression):
-        """Sets the content_expression of this DataClassificationRuleQueryDTO.
+        r"""Sets the content_expression of this DataClassificationRuleQueryDTO.
 
         内容表达式
 
@@ -388,7 +388,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def column_expression(self):
-        """Gets the column_expression of this DataClassificationRuleQueryDTO.
+        r"""Gets the column_expression of this DataClassificationRuleQueryDTO.
 
         列表达式
 
@@ -399,7 +399,7 @@ class DataClassificationRuleQueryDTO:
 
     @column_expression.setter
     def column_expression(self, column_expression):
-        """Sets the column_expression of this DataClassificationRuleQueryDTO.
+        r"""Sets the column_expression of this DataClassificationRuleQueryDTO.
 
         列表达式
 
@@ -410,7 +410,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def commit_expression(self):
-        """Gets the commit_expression of this DataClassificationRuleQueryDTO.
+        r"""Gets the commit_expression of this DataClassificationRuleQueryDTO.
 
         备注表达式
 
@@ -421,7 +421,7 @@ class DataClassificationRuleQueryDTO:
 
     @commit_expression.setter
     def commit_expression(self, commit_expression):
-        """Sets the commit_expression of this DataClassificationRuleQueryDTO.
+        r"""Sets the commit_expression of this DataClassificationRuleQueryDTO.
 
         备注表达式
 
@@ -432,7 +432,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def combine_expression(self):
-        """Gets the combine_expression of this DataClassificationRuleQueryDTO.
+        r"""Gets the combine_expression of this DataClassificationRuleQueryDTO.
 
         条件表达式
 
@@ -443,7 +443,7 @@ class DataClassificationRuleQueryDTO:
 
     @combine_expression.setter
     def combine_expression(self, combine_expression):
-        """Sets the combine_expression of this DataClassificationRuleQueryDTO.
+        r"""Sets the combine_expression of this DataClassificationRuleQueryDTO.
 
         条件表达式
 
@@ -454,7 +454,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataClassificationRuleQueryDTO.
+        r"""Gets the project_id of this DataClassificationRuleQueryDTO.
 
         项目ID
 
@@ -465,7 +465,7 @@ class DataClassificationRuleQueryDTO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataClassificationRuleQueryDTO.
+        r"""Sets the project_id of this DataClassificationRuleQueryDTO.
 
         项目ID
 
@@ -476,7 +476,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationRuleQueryDTO.
+        r"""Gets the description of this DataClassificationRuleQueryDTO.
 
         规则描述
 
@@ -487,7 +487,7 @@ class DataClassificationRuleQueryDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationRuleQueryDTO.
+        r"""Sets the description of this DataClassificationRuleQueryDTO.
 
         规则描述
 
@@ -498,7 +498,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def created_by(self):
-        """Gets the created_by of this DataClassificationRuleQueryDTO.
+        r"""Gets the created_by of this DataClassificationRuleQueryDTO.
 
         策略创建人
 
@@ -509,7 +509,7 @@ class DataClassificationRuleQueryDTO:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this DataClassificationRuleQueryDTO.
+        r"""Sets the created_by of this DataClassificationRuleQueryDTO.
 
         策略创建人
 
@@ -520,7 +520,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def created_at(self):
-        """Gets the created_at of this DataClassificationRuleQueryDTO.
+        r"""Gets the created_at of this DataClassificationRuleQueryDTO.
 
         策略创建时间
 
@@ -531,7 +531,7 @@ class DataClassificationRuleQueryDTO:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DataClassificationRuleQueryDTO.
+        r"""Sets the created_at of this DataClassificationRuleQueryDTO.
 
         策略创建时间
 
@@ -542,7 +542,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this DataClassificationRuleQueryDTO.
+        r"""Gets the updated_by of this DataClassificationRuleQueryDTO.
 
         策略更新人
 
@@ -553,7 +553,7 @@ class DataClassificationRuleQueryDTO:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this DataClassificationRuleQueryDTO.
+        r"""Sets the updated_by of this DataClassificationRuleQueryDTO.
 
         策略更新人
 
@@ -564,7 +564,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DataClassificationRuleQueryDTO.
+        r"""Gets the updated_at of this DataClassificationRuleQueryDTO.
 
         策略更新时间
 
@@ -575,7 +575,7 @@ class DataClassificationRuleQueryDTO:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DataClassificationRuleQueryDTO.
+        r"""Sets the updated_at of this DataClassificationRuleQueryDTO.
 
         策略更新时间
 
@@ -586,7 +586,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def builtin_rule_id(self):
-        """Gets the builtin_rule_id of this DataClassificationRuleQueryDTO.
+        r"""Gets the builtin_rule_id of this DataClassificationRuleQueryDTO.
 
         内置规则ID
 
@@ -597,7 +597,7 @@ class DataClassificationRuleQueryDTO:
 
     @builtin_rule_id.setter
     def builtin_rule_id(self, builtin_rule_id):
-        """Sets the builtin_rule_id of this DataClassificationRuleQueryDTO.
+        r"""Sets the builtin_rule_id of this DataClassificationRuleQueryDTO.
 
         内置规则ID
 
@@ -608,7 +608,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def category_id(self):
-        """Gets the category_id of this DataClassificationRuleQueryDTO.
+        r"""Gets the category_id of this DataClassificationRuleQueryDTO.
 
         分类ID
 
@@ -619,7 +619,7 @@ class DataClassificationRuleQueryDTO:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this DataClassificationRuleQueryDTO.
+        r"""Sets the category_id of this DataClassificationRuleQueryDTO.
 
         分类ID
 
@@ -630,7 +630,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DataClassificationRuleQueryDTO.
+        r"""Gets the instance_id of this DataClassificationRuleQueryDTO.
 
         实例ID
 
@@ -641,7 +641,7 @@ class DataClassificationRuleQueryDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DataClassificationRuleQueryDTO.
+        r"""Sets the instance_id of this DataClassificationRuleQueryDTO.
 
         实例ID
 
@@ -652,7 +652,7 @@ class DataClassificationRuleQueryDTO:
 
     @property
     def match_type(self):
-        """Gets the match_type of this DataClassificationRuleQueryDTO.
+        r"""Gets the match_type of this DataClassificationRuleQueryDTO.
 
         匹配类型
 
@@ -663,7 +663,7 @@ class DataClassificationRuleQueryDTO:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this DataClassificationRuleQueryDTO.
+        r"""Sets the match_type of this DataClassificationRuleQueryDTO.
 
         匹配类型
 

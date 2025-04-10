@@ -33,7 +33,7 @@ class LtslogInfo:
     }
 
     def __init__(self, status=None, id=None, log_type=None, log_desc=None, access_url=None):
-        """LtslogInfo
+        r"""LtslogInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class LtslogInfo:
 
     @property
     def status(self):
-        """Gets the status of this LtslogInfo.
+        r"""Gets the status of this LtslogInfo.
 
         配置状态
 
@@ -77,7 +77,7 @@ class LtslogInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LtslogInfo.
+        r"""Sets the status of this LtslogInfo.
 
         配置状态
 
@@ -88,7 +88,7 @@ class LtslogInfo:
 
     @property
     def id(self):
-        """Gets the id of this LtslogInfo.
+        r"""Gets the id of this LtslogInfo.
 
         日志ID
 
@@ -99,7 +99,7 @@ class LtslogInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LtslogInfo.
+        r"""Sets the id of this LtslogInfo.
 
         日志ID
 
@@ -110,7 +110,7 @@ class LtslogInfo:
 
     @property
     def log_type(self):
-        """Gets the log_type of this LtslogInfo.
+        r"""Gets the log_type of this LtslogInfo.
 
         日志类型
 
@@ -121,7 +121,7 @@ class LtslogInfo:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this LtslogInfo.
+        r"""Sets the log_type of this LtslogInfo.
 
         日志类型
 
@@ -132,7 +132,7 @@ class LtslogInfo:
 
     @property
     def log_desc(self):
-        """Gets the log_desc of this LtslogInfo.
+        r"""Gets the log_desc of this LtslogInfo.
 
         日志描述
 
@@ -143,7 +143,7 @@ class LtslogInfo:
 
     @log_desc.setter
     def log_desc(self, log_desc):
-        """Sets the log_desc of this LtslogInfo.
+        r"""Sets the log_desc of this LtslogInfo.
 
         日志描述
 
@@ -154,7 +154,7 @@ class LtslogInfo:
 
     @property
     def access_url(self):
-        """Gets the access_url of this LtslogInfo.
+        r"""Gets the access_url of this LtslogInfo.
 
         LTS日志访问URL
 
@@ -165,7 +165,7 @@ class LtslogInfo:
 
     @access_url.setter
     def access_url(self, access_url):
-        """Sets the access_url of this LtslogInfo.
+        r"""Sets the access_url of this LtslogInfo.
 
         LTS日志访问URL
 

@@ -27,7 +27,7 @@ class ListStructuredLogsWithTimeRangeRequest:
     }
 
     def __init__(self, log_stream_id=None, body=None):
-        """ListStructuredLogsWithTimeRangeRequest
+        r"""ListStructuredLogsWithTimeRangeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListStructuredLogsWithTimeRangeRequest.
+        r"""Gets the log_stream_id of this ListStructuredLogsWithTimeRangeRequest.
 
         日志流id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -60,7 +60,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListStructuredLogsWithTimeRangeRequest.
+        r"""Sets the log_stream_id of this ListStructuredLogsWithTimeRangeRequest.
 
         日志流id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -71,7 +71,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListStructuredLogsWithTimeRangeRequest.
+        r"""Gets the body of this ListStructuredLogsWithTimeRangeRequest.
 
         :return: The body of this ListStructuredLogsWithTimeRangeRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`
@@ -80,7 +80,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListStructuredLogsWithTimeRangeRequest.
+        r"""Sets the body of this ListStructuredLogsWithTimeRangeRequest.
 
         :param body: The body of this ListStructuredLogsWithTimeRangeRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`

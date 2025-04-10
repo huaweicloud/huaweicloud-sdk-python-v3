@@ -25,7 +25,7 @@ class StopRedistributionRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopRedistributionRequest
+        r"""StopRedistributionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopRedistributionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopRedistributionRequest.
+        r"""Gets the cluster_id of this StopRedistributionRequest.
 
         指定暂停重分布集群的ID
 
@@ -53,7 +53,7 @@ class StopRedistributionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopRedistributionRequest.
+        r"""Sets the cluster_id of this StopRedistributionRequest.
 
         指定暂停重分布集群的ID
 

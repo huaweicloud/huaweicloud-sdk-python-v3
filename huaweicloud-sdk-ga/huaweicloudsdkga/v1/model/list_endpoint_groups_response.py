@@ -30,7 +30,7 @@ class ListEndpointGroupsResponse(SdkResponse):
     }
 
     def __init__(self, endpoint_groups=None, page_info=None, request_id=None):
-        """ListEndpointGroupsResponse
+        r"""ListEndpointGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEndpointGroupsResponse(SdkResponse):
 
     @property
     def endpoint_groups(self):
-        """Gets the endpoint_groups of this ListEndpointGroupsResponse.
+        r"""Gets the endpoint_groups of this ListEndpointGroupsResponse.
 
         终端节点组列表。
 
@@ -69,7 +69,7 @@ class ListEndpointGroupsResponse(SdkResponse):
 
     @endpoint_groups.setter
     def endpoint_groups(self, endpoint_groups):
-        """Sets the endpoint_groups of this ListEndpointGroupsResponse.
+        r"""Sets the endpoint_groups of this ListEndpointGroupsResponse.
 
         终端节点组列表。
 
@@ -80,7 +80,7 @@ class ListEndpointGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEndpointGroupsResponse.
+        r"""Gets the page_info of this ListEndpointGroupsResponse.
 
         :return: The page_info of this ListEndpointGroupsResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -89,7 +89,7 @@ class ListEndpointGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEndpointGroupsResponse.
+        r"""Sets the page_info of this ListEndpointGroupsResponse.
 
         :param page_info: The page_info of this ListEndpointGroupsResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -98,7 +98,7 @@ class ListEndpointGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListEndpointGroupsResponse.
+        r"""Gets the request_id of this ListEndpointGroupsResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListEndpointGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListEndpointGroupsResponse.
+        r"""Sets the request_id of this ListEndpointGroupsResponse.
 
         请求ID。
 

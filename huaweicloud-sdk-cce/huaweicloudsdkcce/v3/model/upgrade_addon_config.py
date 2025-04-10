@@ -31,7 +31,7 @@ class UpgradeAddonConfig:
     }
 
     def __init__(self, addon_template_name=None, operation=None, version=None, values=None):
-        """UpgradeAddonConfig
+        r"""UpgradeAddonConfig
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpgradeAddonConfig:
 
     @property
     def addon_template_name(self):
-        """Gets the addon_template_name of this UpgradeAddonConfig.
+        r"""Gets the addon_template_name of this UpgradeAddonConfig.
 
         插件名称
 
@@ -72,7 +72,7 @@ class UpgradeAddonConfig:
 
     @addon_template_name.setter
     def addon_template_name(self, addon_template_name):
-        """Sets the addon_template_name of this UpgradeAddonConfig.
+        r"""Sets the addon_template_name of this UpgradeAddonConfig.
 
         插件名称
 
@@ -83,7 +83,7 @@ class UpgradeAddonConfig:
 
     @property
     def operation(self):
-        """Gets the operation of this UpgradeAddonConfig.
+        r"""Gets the operation of this UpgradeAddonConfig.
 
         执行动作，当前升级场景支持操作为\"patch\"
 
@@ -94,7 +94,7 @@ class UpgradeAddonConfig:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this UpgradeAddonConfig.
+        r"""Sets the operation of this UpgradeAddonConfig.
 
         执行动作，当前升级场景支持操作为\"patch\"
 
@@ -105,7 +105,7 @@ class UpgradeAddonConfig:
 
     @property
     def version(self):
-        """Gets the version of this UpgradeAddonConfig.
+        r"""Gets the version of this UpgradeAddonConfig.
 
         目标插件版本号
 
@@ -116,7 +116,7 @@ class UpgradeAddonConfig:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpgradeAddonConfig.
+        r"""Sets the version of this UpgradeAddonConfig.
 
         目标插件版本号
 
@@ -127,7 +127,7 @@ class UpgradeAddonConfig:
 
     @property
     def values(self):
-        """Gets the values of this UpgradeAddonConfig.
+        r"""Gets the values of this UpgradeAddonConfig.
 
         插件参数列表，Key:Value格式
 
@@ -138,7 +138,7 @@ class UpgradeAddonConfig:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpgradeAddonConfig.
+        r"""Sets the values of this UpgradeAddonConfig.
 
         插件参数列表，Key:Value格式
 

@@ -29,7 +29,7 @@ class Statistic:
     }
 
     def __init__(self, name=None, value=None, unit=None):
-        """Statistic
+        r"""Statistic
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Statistic:
 
     @property
     def name(self):
-        """Gets the name of this Statistic.
+        r"""Gets the name of this Statistic.
 
         资源名称。 - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。
 
@@ -65,7 +65,7 @@ class Statistic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Statistic.
+        r"""Sets the name of this Statistic.
 
         资源名称。 - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。
 
@@ -76,7 +76,7 @@ class Statistic:
 
     @property
     def value(self):
-        """Gets the value of this Statistic.
+        r"""Gets the value of this Statistic.
 
         资源数量值。
 
@@ -87,7 +87,7 @@ class Statistic:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Statistic.
+        r"""Sets the value of this Statistic.
 
         资源数量值。
 
@@ -98,7 +98,7 @@ class Statistic:
 
     @property
     def unit(self):
-        """Gets the unit of this Statistic.
+        r"""Gets the unit of this Statistic.
 
         资源数量单位。
 
@@ -109,7 +109,7 @@ class Statistic:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Statistic.
+        r"""Sets the unit of this Statistic.
 
         资源数量单位。
 

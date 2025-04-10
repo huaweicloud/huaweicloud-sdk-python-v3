@@ -27,7 +27,7 @@ class ShowTestCasesChangeStatisticsRequest:
     }
 
     def __init__(self, project_id=None, version_id=None):
-        """ShowTestCasesChangeStatisticsRequest
+        r"""ShowTestCasesChangeStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTestCasesChangeStatisticsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTestCasesChangeStatisticsRequest.
+        r"""Gets the project_id of this ShowTestCasesChangeStatisticsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ShowTestCasesChangeStatisticsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTestCasesChangeStatisticsRequest.
+        r"""Sets the project_id of this ShowTestCasesChangeStatisticsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ShowTestCasesChangeStatisticsRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ShowTestCasesChangeStatisticsRequest.
+        r"""Gets the version_id of this ShowTestCasesChangeStatisticsRequest.
 
         版本uri
 
@@ -81,7 +81,7 @@ class ShowTestCasesChangeStatisticsRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ShowTestCasesChangeStatisticsRequest.
+        r"""Sets the version_id of this ShowTestCasesChangeStatisticsRequest.
 
         版本uri
 

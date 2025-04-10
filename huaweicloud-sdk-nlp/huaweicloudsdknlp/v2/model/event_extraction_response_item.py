@@ -31,7 +31,7 @@ class EventExtractionResponseItem:
     }
 
     def __init__(self, argument=None, event_trigger=None, event_type=None, trigger_span=None):
-        """EventExtractionResponseItem
+        r"""EventExtractionResponseItem
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class EventExtractionResponseItem:
 
     @property
     def argument(self):
-        """Gets the argument of this EventExtractionResponseItem.
+        r"""Gets the argument of this EventExtractionResponseItem.
 
         事件元素列表。
 
@@ -72,7 +72,7 @@ class EventExtractionResponseItem:
 
     @argument.setter
     def argument(self, argument):
-        """Sets the argument of this EventExtractionResponseItem.
+        r"""Sets the argument of this EventExtractionResponseItem.
 
         事件元素列表。
 
@@ -83,7 +83,7 @@ class EventExtractionResponseItem:
 
     @property
     def event_trigger(self):
-        """Gets the event_trigger of this EventExtractionResponseItem.
+        r"""Gets the event_trigger of this EventExtractionResponseItem.
 
         事件触发词。触发词是事件描述中最能代表事件发生的词汇，决定事件类别的重要特征。
 
@@ -94,7 +94,7 @@ class EventExtractionResponseItem:
 
     @event_trigger.setter
     def event_trigger(self, event_trigger):
-        """Sets the event_trigger of this EventExtractionResponseItem.
+        r"""Sets the event_trigger of this EventExtractionResponseItem.
 
         事件触发词。触发词是事件描述中最能代表事件发生的词汇，决定事件类别的重要特征。
 
@@ -105,7 +105,7 @@ class EventExtractionResponseItem:
 
     @property
     def event_type(self):
-        """Gets the event_type of this EventExtractionResponseItem.
+        r"""Gets the event_type of this EventExtractionResponseItem.
 
         事件类型。
 
@@ -116,7 +116,7 @@ class EventExtractionResponseItem:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this EventExtractionResponseItem.
+        r"""Sets the event_type of this EventExtractionResponseItem.
 
         事件类型。
 
@@ -127,7 +127,7 @@ class EventExtractionResponseItem:
 
     @property
     def trigger_span(self):
-        """Gets the trigger_span of this EventExtractionResponseItem.
+        r"""Gets the trigger_span of this EventExtractionResponseItem.
 
         事件触发词在待分析文本中的起始和终止位置。
 
@@ -138,7 +138,7 @@ class EventExtractionResponseItem:
 
     @trigger_span.setter
     def trigger_span(self, trigger_span):
-        """Sets the trigger_span of this EventExtractionResponseItem.
+        r"""Sets the trigger_span of this EventExtractionResponseItem.
 
         事件触发词在待分析文本中的起始和终止位置。
 

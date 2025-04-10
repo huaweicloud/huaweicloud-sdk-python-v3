@@ -32,7 +32,7 @@ class CompareFaceByUrlResponse(SdkResponse):
     }
 
     def __init__(self, image1_face=None, image2_face=None, similarity=None, x_request_id=None):
-        """CompareFaceByUrlResponse
+        r"""CompareFaceByUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @property
     def image1_face(self):
-        """Gets the image1_face of this CompareFaceByUrlResponse.
+        r"""Gets the image1_face of this CompareFaceByUrlResponse.
 
         :return: The image1_face of this CompareFaceByUrlResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFace`
@@ -74,7 +74,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @image1_face.setter
     def image1_face(self, image1_face):
-        """Sets the image1_face of this CompareFaceByUrlResponse.
+        r"""Sets the image1_face of this CompareFaceByUrlResponse.
 
         :param image1_face: The image1_face of this CompareFaceByUrlResponse.
         :type image1_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
@@ -83,7 +83,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @property
     def image2_face(self):
-        """Gets the image2_face of this CompareFaceByUrlResponse.
+        r"""Gets the image2_face of this CompareFaceByUrlResponse.
 
         :return: The image2_face of this CompareFaceByUrlResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFace`
@@ -92,7 +92,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @image2_face.setter
     def image2_face(self, image2_face):
-        """Sets the image2_face of this CompareFaceByUrlResponse.
+        r"""Sets the image2_face of this CompareFaceByUrlResponse.
 
         :param image2_face: The image2_face of this CompareFaceByUrlResponse.
         :type image2_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
@@ -101,7 +101,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @property
     def similarity(self):
-        """Gets the similarity of this CompareFaceByUrlResponse.
+        r"""Gets the similarity of this CompareFaceByUrlResponse.
 
         人脸相似度，1表示最大，0表示最小，值越大表示越相似。一般情况下超过0.93即可认为是同一个人。 调用失败时无此字段。
 
@@ -112,7 +112,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this CompareFaceByUrlResponse.
+        r"""Sets the similarity of this CompareFaceByUrlResponse.
 
         人脸相似度，1表示最大，0表示最小，值越大表示越相似。一般情况下超过0.93即可认为是同一个人。 调用失败时无此字段。
 
@@ -123,7 +123,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CompareFaceByUrlResponse.
+        r"""Gets the x_request_id of this CompareFaceByUrlResponse.
 
         :return: The x_request_id of this CompareFaceByUrlResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CompareFaceByUrlResponse.
+        r"""Sets the x_request_id of this CompareFaceByUrlResponse.
 
         :param x_request_id: The x_request_id of this CompareFaceByUrlResponse.
         :type x_request_id: str

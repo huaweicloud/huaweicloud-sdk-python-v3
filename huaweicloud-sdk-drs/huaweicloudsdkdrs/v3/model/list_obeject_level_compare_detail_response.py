@@ -28,7 +28,7 @@ class ListObejectLevelCompareDetailResponse(SdkResponse):
     }
 
     def __init__(self, count=None, compare_detail=None):
-        """ListObejectLevelCompareDetailResponse
+        r"""ListObejectLevelCompareDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListObejectLevelCompareDetailResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListObejectLevelCompareDetailResponse.
+        r"""Gets the count of this ListObejectLevelCompareDetailResponse.
 
         对比数量。
 
@@ -62,7 +62,7 @@ class ListObejectLevelCompareDetailResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListObejectLevelCompareDetailResponse.
+        r"""Sets the count of this ListObejectLevelCompareDetailResponse.
 
         对比数量。
 
@@ -73,7 +73,7 @@ class ListObejectLevelCompareDetailResponse(SdkResponse):
 
     @property
     def compare_detail(self):
-        """Gets the compare_detail of this ListObejectLevelCompareDetailResponse.
+        r"""Gets the compare_detail of this ListObejectLevelCompareDetailResponse.
 
         对象级对比详情。
 
@@ -84,7 +84,7 @@ class ListObejectLevelCompareDetailResponse(SdkResponse):
 
     @compare_detail.setter
     def compare_detail(self, compare_detail):
-        """Sets the compare_detail of this ListObejectLevelCompareDetailResponse.
+        r"""Sets the compare_detail of this ListObejectLevelCompareDetailResponse.
 
         对象级对比详情。
 

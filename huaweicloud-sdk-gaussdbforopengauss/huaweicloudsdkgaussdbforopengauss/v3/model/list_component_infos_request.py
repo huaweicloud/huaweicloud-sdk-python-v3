@@ -35,7 +35,7 @@ class ListComponentInfosRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, component_type=None, availability_zone_id=None):
-        """ListComponentInfosRequest
+        r"""ListComponentInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListComponentInfosRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListComponentInfosRequest.
+        r"""Gets the x_language of this ListComponentInfosRequest.
 
         语言
 
@@ -88,7 +88,7 @@ class ListComponentInfosRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListComponentInfosRequest.
+        r"""Sets the x_language of this ListComponentInfosRequest.
 
         语言
 
@@ -99,7 +99,7 @@ class ListComponentInfosRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListComponentInfosRequest.
+        r"""Gets the instance_id of this ListComponentInfosRequest.
 
         实例ID。
 
@@ -110,7 +110,7 @@ class ListComponentInfosRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListComponentInfosRequest.
+        r"""Sets the instance_id of this ListComponentInfosRequest.
 
         实例ID。
 
@@ -121,7 +121,7 @@ class ListComponentInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListComponentInfosRequest.
+        r"""Gets the offset of this ListComponentInfosRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -132,7 +132,7 @@ class ListComponentInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListComponentInfosRequest.
+        r"""Sets the offset of this ListComponentInfosRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -143,7 +143,7 @@ class ListComponentInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListComponentInfosRequest.
+        r"""Gets the limit of this ListComponentInfosRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
@@ -154,7 +154,7 @@ class ListComponentInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListComponentInfosRequest.
+        r"""Sets the limit of this ListComponentInfosRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
@@ -165,7 +165,7 @@ class ListComponentInfosRequest:
 
     @property
     def component_type(self):
-        """Gets the component_type of this ListComponentInfosRequest.
+        r"""Gets the component_type of this ListComponentInfosRequest.
 
         组件类型，过滤拿到需要的组件类型的组件信息，默认为ALL，传参数会查询对应组件信息。 枚举值：   \"ALL\": 查询所有组件类型。   \"CN\": 查询CN组件类型。   \"DN\": 查询DN组件类型。   \"CM\": 查询CMS组件类型。   \"GTM\": 查询GTM组件类型。   \"ETCD\": 查询ETCD组件类型。
 
@@ -176,7 +176,7 @@ class ListComponentInfosRequest:
 
     @component_type.setter
     def component_type(self, component_type):
-        """Sets the component_type of this ListComponentInfosRequest.
+        r"""Sets the component_type of this ListComponentInfosRequest.
 
         组件类型，过滤拿到需要的组件类型的组件信息，默认为ALL，传参数会查询对应组件信息。 枚举值：   \"ALL\": 查询所有组件类型。   \"CN\": 查询CN组件类型。   \"DN\": 查询DN组件类型。   \"CM\": 查询CMS组件类型。   \"GTM\": 查询GTM组件类型。   \"ETCD\": 查询ETCD组件类型。
 
@@ -187,7 +187,7 @@ class ListComponentInfosRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListComponentInfosRequest.
+        r"""Gets the availability_zone_id of this ListComponentInfosRequest.
 
         主组件所在可用区编号，筛选符合条件的组件，默认为ALL，查询实例所有可用区上的节点的组件信息。 当调用接口传入可用区编号时：   相对于DN组件，会查询出的DN分片中的主组件在该可用区上的这个分片的所有副本的组件信息。   相对于CN组件，CN组件没有主备关系，会查询出该可用区上的CN组件信息。   相对于其他组件，会查询该可用区上有没有某个组件类型的主组件，有则会返回该组件类型的所有组件信息，没有则不返回该组件类型的信息。
 
@@ -198,7 +198,7 @@ class ListComponentInfosRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListComponentInfosRequest.
+        r"""Sets the availability_zone_id of this ListComponentInfosRequest.
 
         主组件所在可用区编号，筛选符合条件的组件，默认为ALL，查询实例所有可用区上的节点的组件信息。 当调用接口传入可用区编号时：   相对于DN组件，会查询出的DN分片中的主组件在该可用区上的这个分片的所有副本的组件信息。   相对于CN组件，CN组件没有主备关系，会查询出该可用区上的CN组件信息。   相对于其他组件，会查询该可用区上有没有某个组件类型的主组件，有则会返回该组件类型的所有组件信息，没有则不返回该组件类型的信息。
 

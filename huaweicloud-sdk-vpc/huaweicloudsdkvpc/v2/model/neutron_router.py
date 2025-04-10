@@ -43,7 +43,7 @@ class NeutronRouter:
     }
 
     def __init__(self, admin_state_up=None, external_gateway_info=None, id=None, name=None, routes=None, status=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronRouter
+        r"""NeutronRouter
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class NeutronRouter:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronRouter.
+        r"""Gets the admin_state_up of this NeutronRouter.
 
         功能说明：资源的管理状态。只支持true。 取值范围：true、false 约束：只支持true
 
@@ -107,7 +107,7 @@ class NeutronRouter:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronRouter.
+        r"""Sets the admin_state_up of this NeutronRouter.
 
         功能说明：资源的管理状态。只支持true。 取值范围：true、false 约束：只支持true
 
@@ -118,7 +118,7 @@ class NeutronRouter:
 
     @property
     def external_gateway_info(self):
-        """Gets the external_gateway_info of this NeutronRouter.
+        r"""Gets the external_gateway_info of this NeutronRouter.
 
         :return: The external_gateway_info of this NeutronRouter.
         :rtype: :class:`huaweicloudsdkvpc.v2.ExternalGatewayInfo`
@@ -127,7 +127,7 @@ class NeutronRouter:
 
     @external_gateway_info.setter
     def external_gateway_info(self, external_gateway_info):
-        """Sets the external_gateway_info of this NeutronRouter.
+        r"""Sets the external_gateway_info of this NeutronRouter.
 
         :param external_gateway_info: The external_gateway_info of this NeutronRouter.
         :type external_gateway_info: :class:`huaweicloudsdkvpc.v2.ExternalGatewayInfo`
@@ -136,7 +136,7 @@ class NeutronRouter:
 
     @property
     def id(self):
-        """Gets the id of this NeutronRouter.
+        r"""Gets the id of this NeutronRouter.
 
         路由器ID
 
@@ -147,7 +147,7 @@ class NeutronRouter:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronRouter.
+        r"""Sets the id of this NeutronRouter.
 
         路由器ID
 
@@ -158,7 +158,7 @@ class NeutronRouter:
 
     @property
     def name(self):
-        """Gets the name of this NeutronRouter.
+        r"""Gets the name of this NeutronRouter.
 
         功能说明：路由器的名称 取值范围：0-64个字符，仅支持数字、字母、中文、_(下划线)、-（中划线）、.（点）。 约束：如果name非空，则name不能重复。
 
@@ -169,7 +169,7 @@ class NeutronRouter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronRouter.
+        r"""Sets the name of this NeutronRouter.
 
         功能说明：路由器的名称 取值范围：0-64个字符，仅支持数字、字母、中文、_(下划线)、-（中划线）、.（点）。 约束：如果name非空，则name不能重复。
 
@@ -180,7 +180,7 @@ class NeutronRouter:
 
     @property
     def routes(self):
-        """Gets the routes of this NeutronRouter.
+        r"""Gets the routes of this NeutronRouter.
 
         功能说明：路由信息，见Route对象
 
@@ -191,7 +191,7 @@ class NeutronRouter:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this NeutronRouter.
+        r"""Sets the routes of this NeutronRouter.
 
         功能说明：路由信息，见Route对象
 
@@ -202,7 +202,7 @@ class NeutronRouter:
 
     @property
     def status(self):
-        """Gets the status of this NeutronRouter.
+        r"""Gets the status of this NeutronRouter.
 
         功能说明：路由器的状态 取值范围：ACTIVE， DOWN，ERROR
 
@@ -213,7 +213,7 @@ class NeutronRouter:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronRouter.
+        r"""Sets the status of this NeutronRouter.
 
         功能说明：路由器的状态 取值范围：ACTIVE， DOWN，ERROR
 
@@ -224,7 +224,7 @@ class NeutronRouter:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronRouter.
+        r"""Gets the tenant_id of this NeutronRouter.
 
         项目ID
 
@@ -235,7 +235,7 @@ class NeutronRouter:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronRouter.
+        r"""Sets the tenant_id of this NeutronRouter.
 
         项目ID
 
@@ -246,7 +246,7 @@ class NeutronRouter:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronRouter.
+        r"""Gets the project_id of this NeutronRouter.
 
         项目ID
 
@@ -257,7 +257,7 @@ class NeutronRouter:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronRouter.
+        r"""Sets the project_id of this NeutronRouter.
 
         项目ID
 
@@ -268,7 +268,7 @@ class NeutronRouter:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NeutronRouter.
+        r"""Gets the created_at of this NeutronRouter.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -279,7 +279,7 @@ class NeutronRouter:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NeutronRouter.
+        r"""Sets the created_at of this NeutronRouter.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -290,7 +290,7 @@ class NeutronRouter:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NeutronRouter.
+        r"""Gets the updated_at of this NeutronRouter.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -301,7 +301,7 @@ class NeutronRouter:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NeutronRouter.
+        r"""Sets the updated_at of this NeutronRouter.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

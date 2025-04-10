@@ -37,7 +37,7 @@ class CreateInstanceRequestBody:
     }
 
     def __init__(self, name=None, charge_mode=None, enterprise_project_id=None, description=None, shared=None, specs=None, tags=None):
-        """CreateInstanceRequestBody
+        r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateInstanceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceRequestBody.
+        r"""Gets the name of this CreateInstanceRequestBody.
 
         实例名称。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
 
@@ -93,7 +93,7 @@ class CreateInstanceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceRequestBody.
+        r"""Sets the name of this CreateInstanceRequestBody.
 
         实例名称。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
 
@@ -104,7 +104,7 @@ class CreateInstanceRequestBody:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateInstanceRequestBody.
+        r"""Gets the charge_mode of this CreateInstanceRequestBody.
 
         支付类型，postPaid为按需期，prePaid为包周期
 
@@ -115,7 +115,7 @@ class CreateInstanceRequestBody:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateInstanceRequestBody.
+        r"""Sets the charge_mode of this CreateInstanceRequestBody.
 
         支付类型，postPaid为按需期，prePaid为包周期
 
@@ -126,7 +126,7 @@ class CreateInstanceRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceRequestBody.
+        r"""Gets the enterprise_project_id of this CreateInstanceRequestBody.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。
 
@@ -137,7 +137,7 @@ class CreateInstanceRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceRequestBody.
+        r"""Sets the enterprise_project_id of this CreateInstanceRequestBody.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。
 
@@ -148,7 +148,7 @@ class CreateInstanceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateInstanceRequestBody.
+        r"""Gets the description of this CreateInstanceRequestBody.
 
         实例描述。用户输入的描述，最长为255个字符。
 
@@ -159,7 +159,7 @@ class CreateInstanceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateInstanceRequestBody.
+        r"""Sets the description of this CreateInstanceRequestBody.
 
         实例描述。用户输入的描述，最长为255个字符。
 
@@ -170,7 +170,7 @@ class CreateInstanceRequestBody:
 
     @property
     def shared(self):
-        """Gets the shared of this CreateInstanceRequestBody.
+        r"""Gets the shared of this CreateInstanceRequestBody.
 
         false为物理多租；true为逻辑多租。默认为true。
 
@@ -181,7 +181,7 @@ class CreateInstanceRequestBody:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this CreateInstanceRequestBody.
+        r"""Sets the shared of this CreateInstanceRequestBody.
 
         false为物理多租；true为逻辑多租。默认为true。
 
@@ -192,7 +192,7 @@ class CreateInstanceRequestBody:
 
     @property
     def specs(self):
-        """Gets the specs of this CreateInstanceRequestBody.
+        r"""Gets the specs of this CreateInstanceRequestBody.
 
         规格列表
 
@@ -203,7 +203,7 @@ class CreateInstanceRequestBody:
 
     @specs.setter
     def specs(self, specs):
-        """Sets the specs of this CreateInstanceRequestBody.
+        r"""Sets the specs of this CreateInstanceRequestBody.
 
         规格列表
 
@@ -214,7 +214,7 @@ class CreateInstanceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstanceRequestBody.
+        r"""Gets the tags of this CreateInstanceRequestBody.
 
         标签列表，最多添加20个标签。
 
@@ -225,7 +225,7 @@ class CreateInstanceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstanceRequestBody.
+        r"""Sets the tags of this CreateInstanceRequestBody.
 
         标签列表，最多添加20个标签。
 

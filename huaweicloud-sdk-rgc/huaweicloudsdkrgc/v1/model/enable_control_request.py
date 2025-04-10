@@ -25,7 +25,7 @@ class EnableControlRequest:
     }
 
     def __init__(self, body=None):
-        """EnableControlRequest
+        r"""EnableControlRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EnableControlRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableControlRequest.
+        r"""Gets the body of this EnableControlRequest.
 
         :return: The body of this EnableControlRequest.
         :rtype: :class:`huaweicloudsdkrgc.v1.ControlOperateReqBody`
@@ -52,7 +52,7 @@ class EnableControlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableControlRequest.
+        r"""Sets the body of this EnableControlRequest.
 
         :param body: The body of this EnableControlRequest.
         :type body: :class:`huaweicloudsdkrgc.v1.ControlOperateReqBody`

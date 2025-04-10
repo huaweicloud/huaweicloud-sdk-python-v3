@@ -45,7 +45,7 @@ class AssociatedTestCase:
     }
 
     def __init__(self, case_id=None, case_num=None, case_name=None, case_level=None, status=None, creator=None, owner=None, project=None, is_base_line=None, type=None, created_time=None):
-        """AssociatedTestCase
+        r"""AssociatedTestCase
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AssociatedTestCase:
 
     @property
     def case_id(self):
-        """Gets the case_id of this AssociatedTestCase.
+        r"""Gets the case_id of this AssociatedTestCase.
 
         用例ID
 
@@ -124,7 +124,7 @@ class AssociatedTestCase:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this AssociatedTestCase.
+        r"""Sets the case_id of this AssociatedTestCase.
 
         用例ID
 
@@ -135,7 +135,7 @@ class AssociatedTestCase:
 
     @property
     def case_num(self):
-        """Gets the case_num of this AssociatedTestCase.
+        r"""Gets the case_num of this AssociatedTestCase.
 
         用例编号
 
@@ -146,7 +146,7 @@ class AssociatedTestCase:
 
     @case_num.setter
     def case_num(self, case_num):
-        """Sets the case_num of this AssociatedTestCase.
+        r"""Sets the case_num of this AssociatedTestCase.
 
         用例编号
 
@@ -157,7 +157,7 @@ class AssociatedTestCase:
 
     @property
     def case_name(self):
-        """Gets the case_name of this AssociatedTestCase.
+        r"""Gets the case_name of this AssociatedTestCase.
 
         用例名称
 
@@ -168,7 +168,7 @@ class AssociatedTestCase:
 
     @case_name.setter
     def case_name(self, case_name):
-        """Sets the case_name of this AssociatedTestCase.
+        r"""Sets the case_name of this AssociatedTestCase.
 
         用例名称
 
@@ -179,7 +179,7 @@ class AssociatedTestCase:
 
     @property
     def case_level(self):
-        """Gets the case_level of this AssociatedTestCase.
+        r"""Gets the case_level of this AssociatedTestCase.
 
         用例等级
 
@@ -190,7 +190,7 @@ class AssociatedTestCase:
 
     @case_level.setter
     def case_level(self, case_level):
-        """Sets the case_level of this AssociatedTestCase.
+        r"""Sets the case_level of this AssociatedTestCase.
 
         用例等级
 
@@ -201,7 +201,7 @@ class AssociatedTestCase:
 
     @property
     def status(self):
-        """Gets the status of this AssociatedTestCase.
+        r"""Gets the status of this AssociatedTestCase.
 
         :return: The status of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusVo`
@@ -210,7 +210,7 @@ class AssociatedTestCase:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociatedTestCase.
+        r"""Sets the status of this AssociatedTestCase.
 
         :param status: The status of this AssociatedTestCase.
         :type status: :class:`huaweicloudsdkprojectman.v4.StatusVo`
@@ -219,7 +219,7 @@ class AssociatedTestCase:
 
     @property
     def creator(self):
-        """Gets the creator of this AssociatedTestCase.
+        r"""Gets the creator of this AssociatedTestCase.
 
         :return: The creator of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -228,7 +228,7 @@ class AssociatedTestCase:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this AssociatedTestCase.
+        r"""Sets the creator of this AssociatedTestCase.
 
         :param creator: The creator of this AssociatedTestCase.
         :type creator: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -237,7 +237,7 @@ class AssociatedTestCase:
 
     @property
     def owner(self):
-        """Gets the owner of this AssociatedTestCase.
+        r"""Gets the owner of this AssociatedTestCase.
 
         :return: The owner of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -246,7 +246,7 @@ class AssociatedTestCase:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AssociatedTestCase.
+        r"""Sets the owner of this AssociatedTestCase.
 
         :param owner: The owner of this AssociatedTestCase.
         :type owner: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -255,7 +255,7 @@ class AssociatedTestCase:
 
     @property
     def project(self):
-        """Gets the project of this AssociatedTestCase.
+        r"""Gets the project of this AssociatedTestCase.
 
         :return: The project of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -264,7 +264,7 @@ class AssociatedTestCase:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this AssociatedTestCase.
+        r"""Sets the project of this AssociatedTestCase.
 
         :param project: The project of this AssociatedTestCase.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -273,7 +273,7 @@ class AssociatedTestCase:
 
     @property
     def is_base_line(self):
-        """Gets the is_base_line of this AssociatedTestCase.
+        r"""Gets the is_base_line of this AssociatedTestCase.
 
         是否基线
 
@@ -284,7 +284,7 @@ class AssociatedTestCase:
 
     @is_base_line.setter
     def is_base_line(self, is_base_line):
-        """Sets the is_base_line of this AssociatedTestCase.
+        r"""Sets the is_base_line of this AssociatedTestCase.
 
         是否基线
 
@@ -295,7 +295,7 @@ class AssociatedTestCase:
 
     @property
     def type(self):
-        """Gets the type of this AssociatedTestCase.
+        r"""Gets the type of this AssociatedTestCase.
 
         用例类型
 
@@ -306,7 +306,7 @@ class AssociatedTestCase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AssociatedTestCase.
+        r"""Sets the type of this AssociatedTestCase.
 
         用例类型
 
@@ -317,7 +317,7 @@ class AssociatedTestCase:
 
     @property
     def created_time(self):
-        """Gets the created_time of this AssociatedTestCase.
+        r"""Gets the created_time of this AssociatedTestCase.
 
         创建时间
 
@@ -328,7 +328,7 @@ class AssociatedTestCase:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this AssociatedTestCase.
+        r"""Sets the created_time of this AssociatedTestCase.
 
         创建时间
 

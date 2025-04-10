@@ -27,7 +27,7 @@ class CreateShareRequestBody:
     }
 
     def __init__(self, share=None, bss_param=None):
-        """CreateShareRequestBody
+        r"""CreateShareRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateShareRequestBody:
 
     @property
     def share(self):
-        """Gets the share of this CreateShareRequestBody.
+        r"""Gets the share of this CreateShareRequestBody.
 
         :return: The share of this CreateShareRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.Share`
@@ -58,7 +58,7 @@ class CreateShareRequestBody:
 
     @share.setter
     def share(self, share):
-        """Sets the share of this CreateShareRequestBody.
+        r"""Sets the share of this CreateShareRequestBody.
 
         :param share: The share of this CreateShareRequestBody.
         :type share: :class:`huaweicloudsdksfsturbo.v1.Share`
@@ -67,7 +67,7 @@ class CreateShareRequestBody:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this CreateShareRequestBody.
+        r"""Gets the bss_param of this CreateShareRequestBody.
 
         :return: The bss_param of this CreateShareRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.BssInfo`
@@ -76,7 +76,7 @@ class CreateShareRequestBody:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this CreateShareRequestBody.
+        r"""Sets the bss_param of this CreateShareRequestBody.
 
         :param bss_param: The bss_param of this CreateShareRequestBody.
         :type bss_param: :class:`huaweicloudsdksfsturbo.v1.BssInfo`

@@ -26,7 +26,7 @@ class ExecuteJobActionResponse(SdkResponse):
     }
 
     def __init__(self, query_id=None):
-        """ExecuteJobActionResponse
+        r"""ExecuteJobActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteJobActionResponse(SdkResponse):
 
     @property
     def query_id(self):
-        """Gets the query_id of this ExecuteJobActionResponse.
+        r"""Gets the query_id of this ExecuteJobActionResponse.
 
         异步操作任务响应查询ID。
 
@@ -55,7 +55,7 @@ class ExecuteJobActionResponse(SdkResponse):
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ExecuteJobActionResponse.
+        r"""Sets the query_id of this ExecuteJobActionResponse.
 
         异步操作任务响应查询ID。
 

@@ -61,7 +61,7 @@ class QualificationCertificateResult:
     }
 
     def __init__(self, id_number=None, assessment_date=None, certificate_number=None, file_number=None, union_card_number=None, continuing_education_info=None, sex=None, phone_number=None, registration_date=None, work_unit=None, integrity_assessment_info=None, nationality=None, name=None, address=None, driving_class=None, issuing_authority=None, birth_date=None, qualification_category_list=None, confidence=None):
-        """QualificationCertificateResult
+        r"""QualificationCertificateResult
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class QualificationCertificateResult:
 
     @property
     def id_number(self):
-        """Gets the id_number of this QualificationCertificateResult.
+        r"""Gets the id_number of this QualificationCertificateResult.
 
         身份证号（非必有，依赖对应从业资格证板式）。 
 
@@ -180,7 +180,7 @@ class QualificationCertificateResult:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this QualificationCertificateResult.
+        r"""Sets the id_number of this QualificationCertificateResult.
 
         身份证号（非必有，依赖对应从业资格证板式）。 
 
@@ -191,7 +191,7 @@ class QualificationCertificateResult:
 
     @property
     def assessment_date(self):
-        """Gets the assessment_date of this QualificationCertificateResult.
+        r"""Gets the assessment_date of this QualificationCertificateResult.
 
         考核时间（非必有，依赖对应从业资格证板式）。 
 
@@ -202,7 +202,7 @@ class QualificationCertificateResult:
 
     @assessment_date.setter
     def assessment_date(self, assessment_date):
-        """Sets the assessment_date of this QualificationCertificateResult.
+        r"""Sets the assessment_date of this QualificationCertificateResult.
 
         考核时间（非必有，依赖对应从业资格证板式）。 
 
@@ -213,7 +213,7 @@ class QualificationCertificateResult:
 
     @property
     def certificate_number(self):
-        """Gets the certificate_number of this QualificationCertificateResult.
+        r"""Gets the certificate_number of this QualificationCertificateResult.
 
         从业资格证号。 
 
@@ -224,7 +224,7 @@ class QualificationCertificateResult:
 
     @certificate_number.setter
     def certificate_number(self, certificate_number):
-        """Sets the certificate_number of this QualificationCertificateResult.
+        r"""Sets the certificate_number of this QualificationCertificateResult.
 
         从业资格证号。 
 
@@ -235,7 +235,7 @@ class QualificationCertificateResult:
 
     @property
     def file_number(self):
-        """Gets the file_number of this QualificationCertificateResult.
+        r"""Gets the file_number of this QualificationCertificateResult.
 
         档案号（非必有，依赖对应从业资格证板式）。 
 
@@ -246,7 +246,7 @@ class QualificationCertificateResult:
 
     @file_number.setter
     def file_number(self, file_number):
-        """Sets the file_number of this QualificationCertificateResult.
+        r"""Sets the file_number of this QualificationCertificateResult.
 
         档案号（非必有，依赖对应从业资格证板式）。 
 
@@ -257,7 +257,7 @@ class QualificationCertificateResult:
 
     @property
     def union_card_number(self):
-        """Gets the union_card_number of this QualificationCertificateResult.
+        r"""Gets the union_card_number of this QualificationCertificateResult.
 
         福路通号（非必有，依赖对应从业资格证板式）。 
 
@@ -268,7 +268,7 @@ class QualificationCertificateResult:
 
     @union_card_number.setter
     def union_card_number(self, union_card_number):
-        """Sets the union_card_number of this QualificationCertificateResult.
+        r"""Sets the union_card_number of this QualificationCertificateResult.
 
         福路通号（非必有，依赖对应从业资格证板式）。 
 
@@ -279,7 +279,7 @@ class QualificationCertificateResult:
 
     @property
     def continuing_education_info(self):
-        """Gets the continuing_education_info of this QualificationCertificateResult.
+        r"""Gets the continuing_education_info of this QualificationCertificateResult.
 
         继续教育信息（非必有，依赖对应从业资格证板式）。 
 
@@ -290,7 +290,7 @@ class QualificationCertificateResult:
 
     @continuing_education_info.setter
     def continuing_education_info(self, continuing_education_info):
-        """Sets the continuing_education_info of this QualificationCertificateResult.
+        r"""Sets the continuing_education_info of this QualificationCertificateResult.
 
         继续教育信息（非必有，依赖对应从业资格证板式）。 
 
@@ -301,7 +301,7 @@ class QualificationCertificateResult:
 
     @property
     def sex(self):
-        """Gets the sex of this QualificationCertificateResult.
+        r"""Gets the sex of this QualificationCertificateResult.
 
         性别（非必有，依赖对应从业资格证板式）。 
 
@@ -312,7 +312,7 @@ class QualificationCertificateResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this QualificationCertificateResult.
+        r"""Sets the sex of this QualificationCertificateResult.
 
         性别（非必有，依赖对应从业资格证板式）。 
 
@@ -323,7 +323,7 @@ class QualificationCertificateResult:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this QualificationCertificateResult.
+        r"""Gets the phone_number of this QualificationCertificateResult.
 
         联系电话（非必有，依赖对应从业资格证板式）。 
 
@@ -334,7 +334,7 @@ class QualificationCertificateResult:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this QualificationCertificateResult.
+        r"""Sets the phone_number of this QualificationCertificateResult.
 
         联系电话（非必有，依赖对应从业资格证板式）。 
 
@@ -345,7 +345,7 @@ class QualificationCertificateResult:
 
     @property
     def registration_date(self):
-        """Gets the registration_date of this QualificationCertificateResult.
+        r"""Gets the registration_date of this QualificationCertificateResult.
 
         登记时间（非必有，依赖对应从业资格证板式）。 
 
@@ -356,7 +356,7 @@ class QualificationCertificateResult:
 
     @registration_date.setter
     def registration_date(self, registration_date):
-        """Sets the registration_date of this QualificationCertificateResult.
+        r"""Sets the registration_date of this QualificationCertificateResult.
 
         登记时间（非必有，依赖对应从业资格证板式）。 
 
@@ -367,7 +367,7 @@ class QualificationCertificateResult:
 
     @property
     def work_unit(self):
-        """Gets the work_unit of this QualificationCertificateResult.
+        r"""Gets the work_unit of this QualificationCertificateResult.
 
         单位（非必有，依赖对应从业资格证板式）。 
 
@@ -378,7 +378,7 @@ class QualificationCertificateResult:
 
     @work_unit.setter
     def work_unit(self, work_unit):
-        """Sets the work_unit of this QualificationCertificateResult.
+        r"""Sets the work_unit of this QualificationCertificateResult.
 
         单位（非必有，依赖对应从业资格证板式）。 
 
@@ -389,7 +389,7 @@ class QualificationCertificateResult:
 
     @property
     def integrity_assessment_info(self):
-        """Gets the integrity_assessment_info of this QualificationCertificateResult.
+        r"""Gets the integrity_assessment_info of this QualificationCertificateResult.
 
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
@@ -400,7 +400,7 @@ class QualificationCertificateResult:
 
     @integrity_assessment_info.setter
     def integrity_assessment_info(self, integrity_assessment_info):
-        """Sets the integrity_assessment_info of this QualificationCertificateResult.
+        r"""Sets the integrity_assessment_info of this QualificationCertificateResult.
 
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
@@ -411,7 +411,7 @@ class QualificationCertificateResult:
 
     @property
     def nationality(self):
-        """Gets the nationality of this QualificationCertificateResult.
+        r"""Gets the nationality of this QualificationCertificateResult.
 
         国籍（非必有，依赖对应从业资格证板式）。 
 
@@ -422,7 +422,7 @@ class QualificationCertificateResult:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this QualificationCertificateResult.
+        r"""Sets the nationality of this QualificationCertificateResult.
 
         国籍（非必有，依赖对应从业资格证板式）。 
 
@@ -433,7 +433,7 @@ class QualificationCertificateResult:
 
     @property
     def name(self):
-        """Gets the name of this QualificationCertificateResult.
+        r"""Gets the name of this QualificationCertificateResult.
 
         姓名。 
 
@@ -444,7 +444,7 @@ class QualificationCertificateResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QualificationCertificateResult.
+        r"""Sets the name of this QualificationCertificateResult.
 
         姓名。 
 
@@ -455,7 +455,7 @@ class QualificationCertificateResult:
 
     @property
     def address(self):
-        """Gets the address of this QualificationCertificateResult.
+        r"""Gets the address of this QualificationCertificateResult.
 
         住址。 
 
@@ -466,7 +466,7 @@ class QualificationCertificateResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this QualificationCertificateResult.
+        r"""Sets the address of this QualificationCertificateResult.
 
         住址。 
 
@@ -477,7 +477,7 @@ class QualificationCertificateResult:
 
     @property
     def driving_class(self):
-        """Gets the driving_class of this QualificationCertificateResult.
+        r"""Gets the driving_class of this QualificationCertificateResult.
 
         准驾车型（非必有，依赖对应从业资格证板式）。 
 
@@ -488,7 +488,7 @@ class QualificationCertificateResult:
 
     @driving_class.setter
     def driving_class(self, driving_class):
-        """Sets the driving_class of this QualificationCertificateResult.
+        r"""Sets the driving_class of this QualificationCertificateResult.
 
         准驾车型（非必有，依赖对应从业资格证板式）。 
 
@@ -499,7 +499,7 @@ class QualificationCertificateResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this QualificationCertificateResult.
+        r"""Gets the issuing_authority of this QualificationCertificateResult.
 
         发证机关（非必有，依赖对应从业资格证板式）。 
 
@@ -510,7 +510,7 @@ class QualificationCertificateResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this QualificationCertificateResult.
+        r"""Sets the issuing_authority of this QualificationCertificateResult.
 
         发证机关（非必有，依赖对应从业资格证板式）。 
 
@@ -521,7 +521,7 @@ class QualificationCertificateResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this QualificationCertificateResult.
+        r"""Gets the birth_date of this QualificationCertificateResult.
 
         出生日期（非必有，依赖对应从业资格证板式）。 
 
@@ -532,7 +532,7 @@ class QualificationCertificateResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this QualificationCertificateResult.
+        r"""Sets the birth_date of this QualificationCertificateResult.
 
         出生日期（非必有，依赖对应从业资格证板式）。 
 
@@ -543,7 +543,7 @@ class QualificationCertificateResult:
 
     @property
     def qualification_category_list(self):
-        """Gets the qualification_category_list of this QualificationCertificateResult.
+        r"""Gets the qualification_category_list of this QualificationCertificateResult.
 
         从业资格列表。 
 
@@ -554,7 +554,7 @@ class QualificationCertificateResult:
 
     @qualification_category_list.setter
     def qualification_category_list(self, qualification_category_list):
-        """Sets the qualification_category_list of this QualificationCertificateResult.
+        r"""Sets the qualification_category_list of this QualificationCertificateResult.
 
         从业资格列表。 
 
@@ -565,7 +565,7 @@ class QualificationCertificateResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this QualificationCertificateResult.
+        r"""Gets the confidence of this QualificationCertificateResult.
 
         :return: The confidence of this QualificationCertificateResult.
         :rtype: :class:`huaweicloudsdkocr.v1.QualificationConfidence`
@@ -574,7 +574,7 @@ class QualificationCertificateResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this QualificationCertificateResult.
+        r"""Sets the confidence of this QualificationCertificateResult.
 
         :param confidence: The confidence of this QualificationCertificateResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.QualificationConfidence`

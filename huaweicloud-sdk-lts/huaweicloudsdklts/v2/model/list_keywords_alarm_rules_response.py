@@ -26,7 +26,7 @@ class ListKeywordsAlarmRulesResponse(SdkResponse):
     }
 
     def __init__(self, keywords_alarm_rules=None):
-        """ListKeywordsAlarmRulesResponse
+        r"""ListKeywordsAlarmRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListKeywordsAlarmRulesResponse(SdkResponse):
 
     @property
     def keywords_alarm_rules(self):
-        """Gets the keywords_alarm_rules of this ListKeywordsAlarmRulesResponse.
+        r"""Gets the keywords_alarm_rules of this ListKeywordsAlarmRulesResponse.
 
         项目id
 
@@ -55,7 +55,7 @@ class ListKeywordsAlarmRulesResponse(SdkResponse):
 
     @keywords_alarm_rules.setter
     def keywords_alarm_rules(self, keywords_alarm_rules):
-        """Sets the keywords_alarm_rules of this ListKeywordsAlarmRulesResponse.
+        r"""Sets the keywords_alarm_rules of this ListKeywordsAlarmRulesResponse.
 
         项目id
 

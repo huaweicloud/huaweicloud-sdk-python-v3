@@ -27,7 +27,7 @@ class DomainClassificationItem:
     }
 
     def __init__(self, total=None, items=None):
-        """DomainClassificationItem
+        r"""DomainClassificationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DomainClassificationItem:
 
     @property
     def total(self):
-        """Gets the total of this DomainClassificationItem.
+        r"""Gets the total of this DomainClassificationItem.
 
         DomainItem的总数量
 
@@ -61,7 +61,7 @@ class DomainClassificationItem:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DomainClassificationItem.
+        r"""Sets the total of this DomainClassificationItem.
 
         DomainItem的总数量
 
@@ -72,7 +72,7 @@ class DomainClassificationItem:
 
     @property
     def items(self):
-        """Gets the items of this DomainClassificationItem.
+        r"""Gets the items of this DomainClassificationItem.
 
         DomainItem详细信息
 
@@ -83,7 +83,7 @@ class DomainClassificationItem:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this DomainClassificationItem.
+        r"""Sets the items of this DomainClassificationItem.
 
         DomainItem详细信息
 

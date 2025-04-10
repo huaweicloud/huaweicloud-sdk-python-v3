@@ -29,7 +29,7 @@ class NoSqlEpsQuotaUsed:
     }
 
     def __init__(self, instance=None, vcpus=None, ram=None):
-        """NoSqlEpsQuotaUsed
+        r"""NoSqlEpsQuotaUsed
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class NoSqlEpsQuotaUsed:
 
     @property
     def instance(self):
-        """Gets the instance of this NoSqlEpsQuotaUsed.
+        r"""Gets the instance of this NoSqlEpsQuotaUsed.
 
         已使用实例配额。
 
@@ -65,7 +65,7 @@ class NoSqlEpsQuotaUsed:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this NoSqlEpsQuotaUsed.
+        r"""Sets the instance of this NoSqlEpsQuotaUsed.
 
         已使用实例配额。
 
@@ -76,7 +76,7 @@ class NoSqlEpsQuotaUsed:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this NoSqlEpsQuotaUsed.
+        r"""Gets the vcpus of this NoSqlEpsQuotaUsed.
 
         已使用vcpus配额。
 
@@ -87,7 +87,7 @@ class NoSqlEpsQuotaUsed:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this NoSqlEpsQuotaUsed.
+        r"""Sets the vcpus of this NoSqlEpsQuotaUsed.
 
         已使用vcpus配额。
 
@@ -98,7 +98,7 @@ class NoSqlEpsQuotaUsed:
 
     @property
     def ram(self):
-        """Gets the ram of this NoSqlEpsQuotaUsed.
+        r"""Gets the ram of this NoSqlEpsQuotaUsed.
 
         已使用ram配额。
 
@@ -109,7 +109,7 @@ class NoSqlEpsQuotaUsed:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this NoSqlEpsQuotaUsed.
+        r"""Sets the ram of this NoSqlEpsQuotaUsed.
 
         已使用ram配额。
 

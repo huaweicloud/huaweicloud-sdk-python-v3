@@ -28,7 +28,7 @@ class ListDDoSFlowResponse(SdkResponse):
     }
 
     def __init__(self, flow_bps=None, flow_pps=None):
-        """ListDDoSFlowResponse
+        r"""ListDDoSFlowResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDDoSFlowResponse(SdkResponse):
 
     @property
     def flow_bps(self):
-        """Gets the flow_bps of this ListDDoSFlowResponse.
+        r"""Gets the flow_bps of this ListDDoSFlowResponse.
 
         当请求type=bps时必返回
 
@@ -62,7 +62,7 @@ class ListDDoSFlowResponse(SdkResponse):
 
     @flow_bps.setter
     def flow_bps(self, flow_bps):
-        """Sets the flow_bps of this ListDDoSFlowResponse.
+        r"""Sets the flow_bps of this ListDDoSFlowResponse.
 
         当请求type=bps时必返回
 
@@ -73,7 +73,7 @@ class ListDDoSFlowResponse(SdkResponse):
 
     @property
     def flow_pps(self):
-        """Gets the flow_pps of this ListDDoSFlowResponse.
+        r"""Gets the flow_pps of this ListDDoSFlowResponse.
 
         当请求type=pps时必返回
 
@@ -84,7 +84,7 @@ class ListDDoSFlowResponse(SdkResponse):
 
     @flow_pps.setter
     def flow_pps(self, flow_pps):
-        """Sets the flow_pps of this ListDDoSFlowResponse.
+        r"""Sets the flow_pps of this ListDDoSFlowResponse.
 
         当请求type=pps时必返回
 

@@ -28,7 +28,7 @@ class ListEventsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, count=None):
-        """ListEventsResponse
+        r"""ListEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ListEventsResponse.
+        r"""Gets the events of this ListEventsResponse.
 
         事件详情列表
 
@@ -62,7 +62,7 @@ class ListEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ListEventsResponse.
+        r"""Sets the events of this ListEventsResponse.
 
         事件详情列表
 
@@ -73,7 +73,7 @@ class ListEventsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEventsResponse.
+        r"""Gets the count of this ListEventsResponse.
 
         事件总数
 
@@ -84,7 +84,7 @@ class ListEventsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEventsResponse.
+        r"""Sets the count of this ListEventsResponse.
 
         事件总数
 

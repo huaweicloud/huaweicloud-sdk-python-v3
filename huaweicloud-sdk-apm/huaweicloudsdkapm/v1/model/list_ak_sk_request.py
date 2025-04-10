@@ -23,7 +23,7 @@ class ListAkSkRequest:
     }
 
     def __init__(self):
-        """ListAkSkRequest
+        r"""ListAkSkRequest
 
         The model defined in huaweicloud sdk
 

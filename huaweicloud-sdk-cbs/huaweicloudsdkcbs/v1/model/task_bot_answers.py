@@ -29,7 +29,7 @@ class TaskBotAnswers:
     }
 
     def __init__(self, answer=None, skill_id=None, skill_responses=None):
-        """TaskBotAnswers
+        r"""TaskBotAnswers
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TaskBotAnswers:
 
     @property
     def answer(self):
-        """Gets the answer of this TaskBotAnswers.
+        r"""Gets the answer of this TaskBotAnswers.
 
         答案。
 
@@ -65,7 +65,7 @@ class TaskBotAnswers:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this TaskBotAnswers.
+        r"""Sets the answer of this TaskBotAnswers.
 
         答案。
 
@@ -76,7 +76,7 @@ class TaskBotAnswers:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this TaskBotAnswers.
+        r"""Gets the skill_id of this TaskBotAnswers.
 
         技能ID。
 
@@ -87,7 +87,7 @@ class TaskBotAnswers:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this TaskBotAnswers.
+        r"""Sets the skill_id of this TaskBotAnswers.
 
         技能ID。
 
@@ -98,7 +98,7 @@ class TaskBotAnswers:
 
     @property
     def skill_responses(self):
-        """Gets the skill_responses of this TaskBotAnswers.
+        r"""Gets the skill_responses of this TaskBotAnswers.
 
         技能回复信息。
 
@@ -109,7 +109,7 @@ class TaskBotAnswers:
 
     @skill_responses.setter
     def skill_responses(self, skill_responses):
-        """Sets the skill_responses of this TaskBotAnswers.
+        r"""Sets the skill_responses of this TaskBotAnswers.
 
         技能回复信息。
 

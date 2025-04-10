@@ -35,7 +35,7 @@ class ApiMockCreate:
     }
 
     def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None, status_code=None, header=None):
-        """ApiMockCreate
+        r"""ApiMockCreate
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ApiMockCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiMockCreate.
+        r"""Gets the remark of this ApiMockCreate.
 
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -89,7 +89,7 @@ class ApiMockCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiMockCreate.
+        r"""Sets the remark of this ApiMockCreate.
 
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -100,7 +100,7 @@ class ApiMockCreate:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiMockCreate.
+        r"""Gets the result_content of this ApiMockCreate.
 
         返回结果
 
@@ -111,7 +111,7 @@ class ApiMockCreate:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiMockCreate.
+        r"""Sets the result_content of this ApiMockCreate.
 
         返回结果
 
@@ -122,7 +122,7 @@ class ApiMockCreate:
 
     @property
     def version(self):
-        """Gets the version of this ApiMockCreate.
+        r"""Gets the version of this ApiMockCreate.
 
         版本。字符长度不超过64
 
@@ -133,7 +133,7 @@ class ApiMockCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiMockCreate.
+        r"""Sets the version of this ApiMockCreate.
 
         版本。字符长度不超过64
 
@@ -144,7 +144,7 @@ class ApiMockCreate:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiMockCreate.
+        r"""Gets the authorizer_id of this ApiMockCreate.
 
         后端自定义认证ID
 
@@ -155,7 +155,7 @@ class ApiMockCreate:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiMockCreate.
+        r"""Sets the authorizer_id of this ApiMockCreate.
 
         后端自定义认证ID
 
@@ -166,7 +166,7 @@ class ApiMockCreate:
 
     @property
     def status_code(self):
-        """Gets the status_code of this ApiMockCreate.
+        r"""Gets the status_code of this ApiMockCreate.
 
         mock后端自定义状态码： \"200\": \"OK\", \"201\": \"Created\", \"202\": \"Accepted\", \"203\": \"NonAuthoritativeInformation\", \"204\": \"NoContent\", \"205\": \"ResetContent\", \"206\": \"PartialContent\", \"300\": \"MultipleChoices\", \"301\": \"MovedPermanently\", \"302\": \"Found\", \"303\": \"SeeOther\", \"304\": \"NotModified\", \"305\": \"UseProxy\", \"306\": \"Unused\", \"307\": \"TemporaryRedirect\", \"400\": \"BadRequest\", \"401\": \"Unauthorized\", \"402\": \"PaymentRequired\", \"403\": \"Forbidden\", \"404\": \"NotFound\", \"405\": \"MethodNotAllowed\", \"406\": \"NotAcceptable\", \"407\": \"ProxyAuthenticationRequired\", \"408\": \"RequestTimeout\", \"409\": \"Conflict\", \"410\": \"Gone\", \"411\": \"LengthRequired\", \"412\": \"PreconditionFailed\", \"413\": \"RequestEntityTooLarge\", \"414\": \"RequestURITooLong\", \"415\": \"UnsupportedMediaType\", \"416\": \"RequestedRangeNotSatisfiable\", \"417\": \"ExpectationFailed\", \"450\": \"ParameterRequried\", \"451\": \"MethodConnectException\", \"500\": \"InternalServerError\", \"501\": \"NotImplemented\", \"502\": \"BadGateway\", \"503\": \"ServiceUnavailable\", \"504\": \"GatewayTimeout\", \"505\": \"HTTPVersionNotSupported\",
 
@@ -177,7 +177,7 @@ class ApiMockCreate:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this ApiMockCreate.
+        r"""Sets the status_code of this ApiMockCreate.
 
         mock后端自定义状态码： \"200\": \"OK\", \"201\": \"Created\", \"202\": \"Accepted\", \"203\": \"NonAuthoritativeInformation\", \"204\": \"NoContent\", \"205\": \"ResetContent\", \"206\": \"PartialContent\", \"300\": \"MultipleChoices\", \"301\": \"MovedPermanently\", \"302\": \"Found\", \"303\": \"SeeOther\", \"304\": \"NotModified\", \"305\": \"UseProxy\", \"306\": \"Unused\", \"307\": \"TemporaryRedirect\", \"400\": \"BadRequest\", \"401\": \"Unauthorized\", \"402\": \"PaymentRequired\", \"403\": \"Forbidden\", \"404\": \"NotFound\", \"405\": \"MethodNotAllowed\", \"406\": \"NotAcceptable\", \"407\": \"ProxyAuthenticationRequired\", \"408\": \"RequestTimeout\", \"409\": \"Conflict\", \"410\": \"Gone\", \"411\": \"LengthRequired\", \"412\": \"PreconditionFailed\", \"413\": \"RequestEntityTooLarge\", \"414\": \"RequestURITooLong\", \"415\": \"UnsupportedMediaType\", \"416\": \"RequestedRangeNotSatisfiable\", \"417\": \"ExpectationFailed\", \"450\": \"ParameterRequried\", \"451\": \"MethodConnectException\", \"500\": \"InternalServerError\", \"501\": \"NotImplemented\", \"502\": \"BadGateway\", \"503\": \"ServiceUnavailable\", \"504\": \"GatewayTimeout\", \"505\": \"HTTPVersionNotSupported\",
 
@@ -188,7 +188,7 @@ class ApiMockCreate:
 
     @property
     def header(self):
-        """Gets the header of this ApiMockCreate.
+        r"""Gets the header of this ApiMockCreate.
 
         mock后端自定义响应头header  格式：[{\"key\":\"\",\"value\": \"\", \"remark:\"\"}, {\"key2\":\"\",\"value2\": \"\",\"remark2:\"\"}]  参数说明：  key：mock后端自定义响应头header key, 支持英文，数字，中划线，且只能以英文字母或数字开头，1 ~ 64字符  value： mock后端自定义响应头header value，中文字符必须为UTF-8或者unicode编码, 不能为空，最大长度为10240  remark：mock后端自定义响应头header remark，中文字符必须为UTF-8 或者unicode编码，可以为空，最大长度为2048
 
@@ -199,7 +199,7 @@ class ApiMockCreate:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this ApiMockCreate.
+        r"""Sets the header of this ApiMockCreate.
 
         mock后端自定义响应头header  格式：[{\"key\":\"\",\"value\": \"\", \"remark:\"\"}, {\"key2\":\"\",\"value2\": \"\",\"remark2:\"\"}]  参数说明：  key：mock后端自定义响应头header key, 支持英文，数字，中划线，且只能以英文字母或数字开头，1 ~ 64字符  value： mock后端自定义响应头header value，中文字符必须为UTF-8或者unicode编码, 不能为空，最大长度为10240  remark：mock后端自定义响应头header remark，中文字符必须为UTF-8 或者unicode编码，可以为空，最大长度为2048
 

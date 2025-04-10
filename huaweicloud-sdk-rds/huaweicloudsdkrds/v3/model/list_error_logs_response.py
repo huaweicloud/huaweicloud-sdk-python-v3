@@ -28,7 +28,7 @@ class ListErrorLogsResponse(SdkResponse):
     }
 
     def __init__(self, error_log_list=None, total_record=None):
-        """ListErrorLogsResponse
+        r"""ListErrorLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListErrorLogsResponse(SdkResponse):
 
     @property
     def error_log_list(self):
-        """Gets the error_log_list of this ListErrorLogsResponse.
+        r"""Gets the error_log_list of this ListErrorLogsResponse.
 
         :return: The error_log_list of this ListErrorLogsResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]
@@ -60,7 +60,7 @@ class ListErrorLogsResponse(SdkResponse):
 
     @error_log_list.setter
     def error_log_list(self, error_log_list):
-        """Sets the error_log_list of this ListErrorLogsResponse.
+        r"""Sets the error_log_list of this ListErrorLogsResponse.
 
         :param error_log_list: The error_log_list of this ListErrorLogsResponse.
         :type error_log_list: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]
@@ -69,7 +69,7 @@ class ListErrorLogsResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListErrorLogsResponse.
+        r"""Gets the total_record of this ListErrorLogsResponse.
 
         总记录数。
 
@@ -80,7 +80,7 @@ class ListErrorLogsResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListErrorLogsResponse.
+        r"""Sets the total_record of this ListErrorLogsResponse.
 
         总记录数。
 

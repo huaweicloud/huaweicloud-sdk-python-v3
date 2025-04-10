@@ -29,7 +29,7 @@ class ComponentInfo:
     }
 
     def __init__(self, component_name=None, component_type=None, component_desc=None):
-        """ComponentInfo
+        r"""ComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ComponentInfo:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ComponentInfo.
+        r"""Gets the component_name of this ComponentInfo.
 
         **参数解释**： 组件名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -66,7 +66,7 @@ class ComponentInfo:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ComponentInfo.
+        r"""Sets the component_name of this ComponentInfo.
 
         **参数解释**： 组件名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -77,7 +77,7 @@ class ComponentInfo:
 
     @property
     def component_type(self):
-        """Gets the component_type of this ComponentInfo.
+        r"""Gets the component_type of this ComponentInfo.
 
         **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -88,7 +88,7 @@ class ComponentInfo:
 
     @component_type.setter
     def component_type(self, component_type):
-        """Sets the component_type of this ComponentInfo.
+        r"""Sets the component_type of this ComponentInfo.
 
         **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -99,7 +99,7 @@ class ComponentInfo:
 
     @property
     def component_desc(self):
-        """Gets the component_desc of this ComponentInfo.
+        r"""Gets the component_desc of this ComponentInfo.
 
         **参数解释**： 组件描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-512位。 **默认取值**： 不涉及。
 
@@ -110,7 +110,7 @@ class ComponentInfo:
 
     @component_desc.setter
     def component_desc(self, component_desc):
-        """Sets the component_desc of this ComponentInfo.
+        r"""Sets the component_desc of this ComponentInfo.
 
         **参数解释**： 组件描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-512位。 **默认取值**： 不涉及。
 

@@ -25,7 +25,7 @@ class CancelSqlJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """CancelSqlJobRequest
+        r"""CancelSqlJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelSqlJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CancelSqlJobRequest.
+        r"""Gets the job_id of this CancelSqlJobRequest.
 
         作业ID
 
@@ -53,7 +53,7 @@ class CancelSqlJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CancelSqlJobRequest.
+        r"""Sets the job_id of this CancelSqlJobRequest.
 
         作业ID
 

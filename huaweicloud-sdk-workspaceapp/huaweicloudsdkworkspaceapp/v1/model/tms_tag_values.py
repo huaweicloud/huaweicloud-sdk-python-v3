@@ -27,7 +27,7 @@ class TmsTagValues:
     }
 
     def __init__(self, key=None, values=None):
-        """TmsTagValues
+        r"""TmsTagValues
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TmsTagValues:
 
     @property
     def key(self):
-        """Gets the key of this TmsTagValues.
+        r"""Gets the key of this TmsTagValues.
 
         键，最大长度128个unicode字符。
 
@@ -61,7 +61,7 @@ class TmsTagValues:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TmsTagValues.
+        r"""Sets the key of this TmsTagValues.
 
         键，最大长度128个unicode字符。
 
@@ -72,7 +72,7 @@ class TmsTagValues:
 
     @property
     def values(self):
-        """Gets the values of this TmsTagValues.
+        r"""Gets the values of this TmsTagValues.
 
         值列表。
 
@@ -83,7 +83,7 @@ class TmsTagValues:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TmsTagValues.
+        r"""Sets the values of this TmsTagValues.
 
         值列表。
 

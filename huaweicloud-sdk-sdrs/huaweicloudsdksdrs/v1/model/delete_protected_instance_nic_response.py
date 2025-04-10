@@ -26,7 +26,7 @@ class DeleteProtectedInstanceNicResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteProtectedInstanceNicResponse
+        r"""DeleteProtectedInstanceNicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteProtectedInstanceNicResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteProtectedInstanceNicResponse.
+        r"""Gets the job_id of this DeleteProtectedInstanceNicResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class DeleteProtectedInstanceNicResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteProtectedInstanceNicResponse.
+        r"""Sets the job_id of this DeleteProtectedInstanceNicResponse.
 
         成功返回jobId信息
 

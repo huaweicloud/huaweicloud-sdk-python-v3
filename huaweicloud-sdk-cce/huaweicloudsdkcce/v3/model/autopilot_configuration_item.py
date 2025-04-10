@@ -27,7 +27,7 @@ class AutopilotConfigurationItem:
     }
 
     def __init__(self, name=None, value=None):
-        """AutopilotConfigurationItem
+        r"""AutopilotConfigurationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AutopilotConfigurationItem:
 
     @property
     def name(self):
-        """Gets the name of this AutopilotConfigurationItem.
+        r"""Gets the name of this AutopilotConfigurationItem.
 
         组件配置项名称
 
@@ -61,7 +61,7 @@ class AutopilotConfigurationItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AutopilotConfigurationItem.
+        r"""Sets the name of this AutopilotConfigurationItem.
 
         组件配置项名称
 
@@ -72,7 +72,7 @@ class AutopilotConfigurationItem:
 
     @property
     def value(self):
-        """Gets the value of this AutopilotConfigurationItem.
+        r"""Gets the value of this AutopilotConfigurationItem.
 
         组件配置项值
 
@@ -83,7 +83,7 @@ class AutopilotConfigurationItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AutopilotConfigurationItem.
+        r"""Sets the value of this AutopilotConfigurationItem.
 
         组件配置项值
 

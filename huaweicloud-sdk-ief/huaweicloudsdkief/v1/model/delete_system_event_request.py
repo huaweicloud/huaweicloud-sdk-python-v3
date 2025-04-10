@@ -27,7 +27,7 @@ class DeleteSystemEventRequest:
     }
 
     def __init__(self, event_id=None, ief_instance_id=None):
-        """DeleteSystemEventRequest
+        r"""DeleteSystemEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSystemEventRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this DeleteSystemEventRequest.
+        r"""Gets the event_id of this DeleteSystemEventRequest.
 
         系统订阅名称
 
@@ -60,7 +60,7 @@ class DeleteSystemEventRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this DeleteSystemEventRequest.
+        r"""Sets the event_id of this DeleteSystemEventRequest.
 
         系统订阅名称
 
@@ -71,7 +71,7 @@ class DeleteSystemEventRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteSystemEventRequest.
+        r"""Gets the ief_instance_id of this DeleteSystemEventRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class DeleteSystemEventRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteSystemEventRequest.
+        r"""Sets the ief_instance_id of this DeleteSystemEventRequest.
 
         铂金版实例ID，专业版实例为空值
 

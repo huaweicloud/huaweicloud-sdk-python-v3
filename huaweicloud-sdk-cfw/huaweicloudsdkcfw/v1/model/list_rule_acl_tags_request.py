@@ -31,7 +31,7 @@ class ListRuleAclTagsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, fw_instance_id=None, offset=None, limit=None):
-        """ListRuleAclTagsRequest
+        r"""ListRuleAclTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListRuleAclTagsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListRuleAclTagsRequest.
+        r"""Gets the enterprise_project_id of this ListRuleAclTagsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -72,7 +72,7 @@ class ListRuleAclTagsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListRuleAclTagsRequest.
+        r"""Sets the enterprise_project_id of this ListRuleAclTagsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -83,7 +83,7 @@ class ListRuleAclTagsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListRuleAclTagsRequest.
+        r"""Gets the fw_instance_id of this ListRuleAclTagsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -94,7 +94,7 @@ class ListRuleAclTagsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListRuleAclTagsRequest.
+        r"""Sets the fw_instance_id of this ListRuleAclTagsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -105,7 +105,7 @@ class ListRuleAclTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRuleAclTagsRequest.
+        r"""Gets the offset of this ListRuleAclTagsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -116,7 +116,7 @@ class ListRuleAclTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRuleAclTagsRequest.
+        r"""Sets the offset of this ListRuleAclTagsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -127,7 +127,7 @@ class ListRuleAclTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRuleAclTagsRequest.
+        r"""Gets the limit of this ListRuleAclTagsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -138,7 +138,7 @@ class ListRuleAclTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRuleAclTagsRequest.
+        r"""Sets the limit of this ListRuleAclTagsRequest.
 
         每页显示个数，范围为1-1024
 

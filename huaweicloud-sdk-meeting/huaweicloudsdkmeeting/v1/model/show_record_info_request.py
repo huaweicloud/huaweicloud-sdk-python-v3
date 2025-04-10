@@ -25,7 +25,7 @@ class ShowRecordInfoRequest:
     }
 
     def __init__(self, body=None):
-        """ShowRecordInfoRequest
+        r"""ShowRecordInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowRecordInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowRecordInfoRequest.
+        r"""Gets the body of this ShowRecordInfoRequest.
 
         :return: The body of this ShowRecordInfoRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RecordInfoReq`
@@ -52,7 +52,7 @@ class ShowRecordInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowRecordInfoRequest.
+        r"""Sets the body of this ShowRecordInfoRequest.
 
         :param body: The body of this ShowRecordInfoRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RecordInfoReq`

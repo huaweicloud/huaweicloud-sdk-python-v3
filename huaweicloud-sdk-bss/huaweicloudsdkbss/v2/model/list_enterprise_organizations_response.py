@@ -30,7 +30,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
     }
 
     def __init__(self, root_id=None, root_name=None, child_nodes=None):
-        """ListEnterpriseOrganizationsResponse
+        r"""ListEnterpriseOrganizationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
 
     @property
     def root_id(self):
-        """Gets the root_id of this ListEnterpriseOrganizationsResponse.
+        r"""Gets the root_id of this ListEnterpriseOrganizationsResponse.
 
         根节点ID，如果请求有parent_id，则该参数无值。
 
@@ -69,7 +69,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this ListEnterpriseOrganizationsResponse.
+        r"""Sets the root_id of this ListEnterpriseOrganizationsResponse.
 
         根节点ID，如果请求有parent_id，则该参数无值。
 
@@ -80,7 +80,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
 
     @property
     def root_name(self):
-        """Gets the root_name of this ListEnterpriseOrganizationsResponse.
+        r"""Gets the root_name of this ListEnterpriseOrganizationsResponse.
 
         根节点名称，如果请求有parent_id，则该参数无值。  说明： 组织根节点没有设置组织名称时，可能为空。
 
@@ -91,7 +91,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
 
     @root_name.setter
     def root_name(self, root_name):
-        """Sets the root_name of this ListEnterpriseOrganizationsResponse.
+        r"""Sets the root_name of this ListEnterpriseOrganizationsResponse.
 
         根节点名称，如果请求有parent_id，则该参数无值。  说明： 组织根节点没有设置组织名称时，可能为空。
 
@@ -102,7 +102,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
 
     @property
     def child_nodes(self):
-        """Gets the child_nodes of this ListEnterpriseOrganizationsResponse.
+        r"""Gets the child_nodes of this ListEnterpriseOrganizationsResponse.
 
         子节点列表。
 
@@ -113,7 +113,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
 
     @child_nodes.setter
     def child_nodes(self, child_nodes):
-        """Sets the child_nodes of this ListEnterpriseOrganizationsResponse.
+        r"""Sets the child_nodes of this ListEnterpriseOrganizationsResponse.
 
         子节点列表。
 

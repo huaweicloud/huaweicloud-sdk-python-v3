@@ -53,7 +53,7 @@ class FreeResourceRecord:
     }
 
     def __init__(self, deduct_time=None, free_resource_id=None, resource_id=None, resource_type_code=None, resource_type_name=None, resource_tag=None, product_id=None, product_name=None, usage_type_code=None, available_amount=None, remaining_amount=None, used_amount=None, measure_id=None, effective_time=None, expire_time=None):
-        """FreeResourceRecord
+        r"""FreeResourceRecord
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class FreeResourceRecord:
 
     @property
     def deduct_time(self):
-        """Gets the deduct_time of this FreeResourceRecord.
+        r"""Gets the deduct_time of this FreeResourceRecord.
 
         资源抵扣时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如\"2021-10-13T10:01:49Z\"。
 
@@ -152,7 +152,7 @@ class FreeResourceRecord:
 
     @deduct_time.setter
     def deduct_time(self, deduct_time):
-        """Sets the deduct_time of this FreeResourceRecord.
+        r"""Sets the deduct_time of this FreeResourceRecord.
 
         资源抵扣时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如\"2021-10-13T10:01:49Z\"。
 
@@ -163,7 +163,7 @@ class FreeResourceRecord:
 
     @property
     def free_resource_id(self):
-        """Gets the free_resource_id of this FreeResourceRecord.
+        r"""Gets the free_resource_id of this FreeResourceRecord.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
@@ -174,7 +174,7 @@ class FreeResourceRecord:
 
     @free_resource_id.setter
     def free_resource_id(self, free_resource_id):
-        """Sets the free_resource_id of this FreeResourceRecord.
+        r"""Sets the free_resource_id of this FreeResourceRecord.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
@@ -185,7 +185,7 @@ class FreeResourceRecord:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FreeResourceRecord.
+        r"""Gets the resource_id of this FreeResourceRecord.
 
         资源ID。
 
@@ -196,7 +196,7 @@ class FreeResourceRecord:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FreeResourceRecord.
+        r"""Sets the resource_id of this FreeResourceRecord.
 
         资源ID。
 
@@ -207,7 +207,7 @@ class FreeResourceRecord:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this FreeResourceRecord.
+        r"""Gets the resource_type_code of this FreeResourceRecord.
 
         资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
@@ -218,7 +218,7 @@ class FreeResourceRecord:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this FreeResourceRecord.
+        r"""Sets the resource_type_code of this FreeResourceRecord.
 
         资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
@@ -229,7 +229,7 @@ class FreeResourceRecord:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this FreeResourceRecord.
+        r"""Gets the resource_type_name of this FreeResourceRecord.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -240,7 +240,7 @@ class FreeResourceRecord:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this FreeResourceRecord.
+        r"""Sets the resource_type_name of this FreeResourceRecord.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -251,7 +251,7 @@ class FreeResourceRecord:
 
     @property
     def resource_tag(self):
-        """Gets the resource_tag of this FreeResourceRecord.
+        r"""Gets the resource_tag of this FreeResourceRecord.
 
         资源标签。
 
@@ -262,7 +262,7 @@ class FreeResourceRecord:
 
     @resource_tag.setter
     def resource_tag(self, resource_tag):
-        """Sets the resource_tag of this FreeResourceRecord.
+        r"""Sets the resource_tag of this FreeResourceRecord.
 
         资源标签。
 
@@ -273,7 +273,7 @@ class FreeResourceRecord:
 
     @property
     def product_id(self):
-        """Gets the product_id of this FreeResourceRecord.
+        r"""Gets the product_id of this FreeResourceRecord.
 
         产品ID，即资源包ID。
 
@@ -284,7 +284,7 @@ class FreeResourceRecord:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this FreeResourceRecord.
+        r"""Sets the product_id of this FreeResourceRecord.
 
         产品ID，即资源包ID。
 
@@ -295,7 +295,7 @@ class FreeResourceRecord:
 
     @property
     def product_name(self):
-        """Gets the product_name of this FreeResourceRecord.
+        r"""Gets the product_name of this FreeResourceRecord.
 
         产品名称，即资源包名称。
 
@@ -306,7 +306,7 @@ class FreeResourceRecord:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this FreeResourceRecord.
+        r"""Sets the product_name of this FreeResourceRecord.
 
         产品名称，即资源包名称。
 
@@ -317,7 +317,7 @@ class FreeResourceRecord:
 
     @property
     def usage_type_code(self):
-        """Gets the usage_type_code of this FreeResourceRecord.
+        r"""Gets the usage_type_code of this FreeResourceRecord.
 
         使用量类型。
 
@@ -328,7 +328,7 @@ class FreeResourceRecord:
 
     @usage_type_code.setter
     def usage_type_code(self, usage_type_code):
-        """Sets the usage_type_code of this FreeResourceRecord.
+        r"""Sets the usage_type_code of this FreeResourceRecord.
 
         使用量类型。
 
@@ -339,7 +339,7 @@ class FreeResourceRecord:
 
     @property
     def available_amount(self):
-        """Gets the available_amount of this FreeResourceRecord.
+        r"""Gets the available_amount of this FreeResourceRecord.
 
         资源抵扣前余量。
 
@@ -350,7 +350,7 @@ class FreeResourceRecord:
 
     @available_amount.setter
     def available_amount(self, available_amount):
-        """Sets the available_amount of this FreeResourceRecord.
+        r"""Sets the available_amount of this FreeResourceRecord.
 
         资源抵扣前余量。
 
@@ -361,7 +361,7 @@ class FreeResourceRecord:
 
     @property
     def remaining_amount(self):
-        """Gets the remaining_amount of this FreeResourceRecord.
+        r"""Gets the remaining_amount of this FreeResourceRecord.
 
         资源抵扣后余量。
 
@@ -372,7 +372,7 @@ class FreeResourceRecord:
 
     @remaining_amount.setter
     def remaining_amount(self, remaining_amount):
-        """Sets the remaining_amount of this FreeResourceRecord.
+        r"""Sets the remaining_amount of this FreeResourceRecord.
 
         资源抵扣后余量。
 
@@ -383,7 +383,7 @@ class FreeResourceRecord:
 
     @property
     def used_amount(self):
-        """Gets the used_amount of this FreeResourceRecord.
+        r"""Gets the used_amount of this FreeResourceRecord.
 
         抵扣量。
 
@@ -394,7 +394,7 @@ class FreeResourceRecord:
 
     @used_amount.setter
     def used_amount(self, used_amount):
-        """Sets the used_amount of this FreeResourceRecord.
+        r"""Sets the used_amount of this FreeResourceRecord.
 
         抵扣量。
 
@@ -405,7 +405,7 @@ class FreeResourceRecord:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this FreeResourceRecord.
+        r"""Gets the measure_id of this FreeResourceRecord.
 
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
@@ -416,7 +416,7 @@ class FreeResourceRecord:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this FreeResourceRecord.
+        r"""Sets the measure_id of this FreeResourceRecord.
 
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
@@ -427,7 +427,7 @@ class FreeResourceRecord:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this FreeResourceRecord.
+        r"""Gets the effective_time of this FreeResourceRecord.
 
         资源使用的开始时间，UTC时间。
 
@@ -438,7 +438,7 @@ class FreeResourceRecord:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this FreeResourceRecord.
+        r"""Sets the effective_time of this FreeResourceRecord.
 
         资源使用的开始时间，UTC时间。
 
@@ -449,7 +449,7 @@ class FreeResourceRecord:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this FreeResourceRecord.
+        r"""Gets the expire_time of this FreeResourceRecord.
 
         资源使用的结束时间，UTC时间。
 
@@ -460,7 +460,7 @@ class FreeResourceRecord:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this FreeResourceRecord.
+        r"""Sets the expire_time of this FreeResourceRecord.
 
         资源使用的结束时间，UTC时间。
 

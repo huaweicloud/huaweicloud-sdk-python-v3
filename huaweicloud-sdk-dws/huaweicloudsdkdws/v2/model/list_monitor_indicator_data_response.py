@@ -26,7 +26,7 @@ class ListMonitorIndicatorDataResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListMonitorIndicatorDataResponse
+        r"""ListMonitorIndicatorDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMonitorIndicatorDataResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListMonitorIndicatorDataResponse.
+        r"""Gets the body of this ListMonitorIndicatorDataResponse.
 
         :return: The body of this ListMonitorIndicatorDataResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TrendQueryDataResp`]
@@ -53,7 +53,7 @@ class ListMonitorIndicatorDataResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMonitorIndicatorDataResponse.
+        r"""Sets the body of this ListMonitorIndicatorDataResponse.
 
         :param body: The body of this ListMonitorIndicatorDataResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.TrendQueryDataResp`]

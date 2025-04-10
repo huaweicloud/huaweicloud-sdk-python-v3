@@ -25,7 +25,7 @@ class GlanceShowImageRequest:
     }
 
     def __init__(self, image_id=None):
-        """GlanceShowImageRequest
+        r"""GlanceShowImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GlanceShowImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceShowImageRequest.
+        r"""Gets the image_id of this GlanceShowImageRequest.
 
         镜像ID
 
@@ -53,7 +53,7 @@ class GlanceShowImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceShowImageRequest.
+        r"""Sets the image_id of this GlanceShowImageRequest.
 
         镜像ID
 

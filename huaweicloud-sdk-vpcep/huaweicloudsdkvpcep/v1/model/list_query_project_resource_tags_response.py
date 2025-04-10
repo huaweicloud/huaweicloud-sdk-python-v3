@@ -26,7 +26,7 @@ class ListQueryProjectResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListQueryProjectResourceTagsResponse
+        r"""ListQueryProjectResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListQueryProjectResourceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListQueryProjectResourceTagsResponse.
+        r"""Gets the tags of this ListQueryProjectResourceTagsResponse.
 
         包含标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。 Key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表， key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -55,7 +55,7 @@ class ListQueryProjectResourceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListQueryProjectResourceTagsResponse.
+        r"""Sets the tags of this ListQueryProjectResourceTagsResponse.
 
         包含标签，最多包含10个key，每个key下面的value最多10个， 每个key对应的value可以为空数组但结构体不能缺失。 Key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表， key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 

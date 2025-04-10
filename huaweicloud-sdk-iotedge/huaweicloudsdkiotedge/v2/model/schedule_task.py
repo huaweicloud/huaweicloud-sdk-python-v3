@@ -29,7 +29,7 @@ class ScheduleTask:
     }
 
     def __init__(self, device_ids=None, action=None, paras=None):
-        """ScheduleTask
+        r"""ScheduleTask
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ScheduleTask:
 
     @property
     def device_ids(self):
-        """Gets the device_ids of this ScheduleTask.
+        r"""Gets the device_ids of this ScheduleTask.
 
         设备id数组
 
@@ -65,7 +65,7 @@ class ScheduleTask:
 
     @device_ids.setter
     def device_ids(self, device_ids):
-        """Sets the device_ids of this ScheduleTask.
+        r"""Sets the device_ids of this ScheduleTask.
 
         设备id数组
 
@@ -76,7 +76,7 @@ class ScheduleTask:
 
     @property
     def action(self):
-        """Gets the action of this ScheduleTask.
+        r"""Gets the action of this ScheduleTask.
 
         任务执行的动作，当前支持SetProperties
 
@@ -87,7 +87,7 @@ class ScheduleTask:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ScheduleTask.
+        r"""Sets the action of this ScheduleTask.
 
         任务执行的动作，当前支持SetProperties
 
@@ -98,7 +98,7 @@ class ScheduleTask:
 
     @property
     def paras(self):
-        """Gets the paras of this ScheduleTask.
+        r"""Gets the paras of this ScheduleTask.
 
         对应action的参数
 
@@ -109,7 +109,7 @@ class ScheduleTask:
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this ScheduleTask.
+        r"""Sets the paras of this ScheduleTask.
 
         对应action的参数
 

@@ -40,7 +40,7 @@ class UpdateDataStoreResponse(SdkResponse):
     }
 
     def __init__(self, data_store_id=None, name=None, group_id=None, tags=None, metrics=None, properties=None, created_time=None, modified_time=None):
-        """UpdateDataStoreResponse
+        r"""UpdateDataStoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this UpdateDataStoreResponse.
+        r"""Gets the data_store_id of this UpdateDataStoreResponse.
 
         存储 ID
 
@@ -104,7 +104,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this UpdateDataStoreResponse.
+        r"""Sets the data_store_id of this UpdateDataStoreResponse.
 
         存储 ID
 
@@ -115,7 +115,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateDataStoreResponse.
+        r"""Gets the name of this UpdateDataStoreResponse.
 
         存储名称
 
@@ -126,7 +126,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDataStoreResponse.
+        r"""Sets the name of this UpdateDataStoreResponse.
 
         存储名称
 
@@ -137,7 +137,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDataStoreResponse.
+        r"""Gets the group_id of this UpdateDataStoreResponse.
 
         存储 ID
 
@@ -148,7 +148,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDataStoreResponse.
+        r"""Sets the group_id of this UpdateDataStoreResponse.
 
         存储 ID
 
@@ -159,7 +159,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDataStoreResponse.
+        r"""Gets the tags of this UpdateDataStoreResponse.
 
         标签
 
@@ -170,7 +170,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDataStoreResponse.
+        r"""Sets the tags of this UpdateDataStoreResponse.
 
         标签
 
@@ -181,7 +181,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this UpdateDataStoreResponse.
+        r"""Gets the metrics of this UpdateDataStoreResponse.
 
         指标
 
@@ -192,7 +192,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this UpdateDataStoreResponse.
+        r"""Sets the metrics of this UpdateDataStoreResponse.
 
         指标
 
@@ -203,7 +203,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this UpdateDataStoreResponse.
+        r"""Gets the properties of this UpdateDataStoreResponse.
 
         属性
 
@@ -214,7 +214,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this UpdateDataStoreResponse.
+        r"""Sets the properties of this UpdateDataStoreResponse.
 
         属性
 
@@ -225,7 +225,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateDataStoreResponse.
+        r"""Gets the created_time of this UpdateDataStoreResponse.
 
         创建时间
 
@@ -236,7 +236,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateDataStoreResponse.
+        r"""Sets the created_time of this UpdateDataStoreResponse.
 
         创建时间
 
@@ -247,7 +247,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this UpdateDataStoreResponse.
+        r"""Gets the modified_time of this UpdateDataStoreResponse.
 
         更新时间
 
@@ -258,7 +258,7 @@ class UpdateDataStoreResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this UpdateDataStoreResponse.
+        r"""Sets the modified_time of this UpdateDataStoreResponse.
 
         更新时间
 

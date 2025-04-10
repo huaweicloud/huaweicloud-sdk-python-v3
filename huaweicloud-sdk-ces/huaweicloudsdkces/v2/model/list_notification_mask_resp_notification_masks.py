@@ -47,7 +47,7 @@ class ListNotificationMaskRespNotificationMasks:
     }
 
     def __init__(self, notification_mask_id=None, mask_name=None, relation_type=None, relation_id=None, resources=None, mask_status=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None, policies=None):
-        """ListNotificationMaskRespNotificationMasks
+        r"""ListNotificationMaskRespNotificationMasks
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def notification_mask_id(self):
-        """Gets the notification_mask_id of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the notification_mask_id of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽规则ID
 
@@ -127,7 +127,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @notification_mask_id.setter
     def notification_mask_id(self, notification_mask_id):
-        """Sets the notification_mask_id of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the notification_mask_id of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽规则ID
 
@@ -138,7 +138,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def mask_name(self):
-        """Gets the mask_name of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the mask_name of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
 
@@ -149,7 +149,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @mask_name.setter
     def mask_name(self, mask_name):
-        """Sets the mask_name of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the mask_name of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
 
@@ -160,7 +160,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the relation_type of this ListNotificationMaskRespNotificationMasks.
 
         :return: The relation_type of this ListNotificationMaskRespNotificationMasks.
         :rtype: :class:`huaweicloudsdkces.v2.RelationType`
@@ -169,7 +169,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the relation_type of this ListNotificationMaskRespNotificationMasks.
 
         :param relation_type: The relation_type of this ListNotificationMaskRespNotificationMasks.
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
@@ -178,7 +178,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the relation_id of this ListNotificationMaskRespNotificationMasks.
 
         关联编号
 
@@ -189,7 +189,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the relation_id of this ListNotificationMaskRespNotificationMasks.
 
         关联编号
 
@@ -200,7 +200,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def resources(self):
-        """Gets the resources of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the resources of this ListNotificationMaskRespNotificationMasks.
 
         关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可
 
@@ -211,7 +211,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the resources of this ListNotificationMaskRespNotificationMasks.
 
         关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可
 
@@ -222,7 +222,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def mask_status(self):
-        """Gets the mask_status of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the mask_status of this ListNotificationMaskRespNotificationMasks.
 
         :return: The mask_status of this ListNotificationMaskRespNotificationMasks.
         :rtype: :class:`huaweicloudsdkces.v2.MaskStatus`
@@ -231,7 +231,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @mask_status.setter
     def mask_status(self, mask_status):
-        """Sets the mask_status of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the mask_status of this ListNotificationMaskRespNotificationMasks.
 
         :param mask_status: The mask_status of this ListNotificationMaskRespNotificationMasks.
         :type mask_status: :class:`huaweicloudsdkces.v2.MaskStatus`
@@ -240,7 +240,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def mask_type(self):
-        """Gets the mask_type of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the mask_type of this ListNotificationMaskRespNotificationMasks.
 
         :return: The mask_type of this ListNotificationMaskRespNotificationMasks.
         :rtype: :class:`huaweicloudsdkces.v2.MaskType`
@@ -249,7 +249,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @mask_type.setter
     def mask_type(self, mask_type):
-        """Sets the mask_type of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the mask_type of this ListNotificationMaskRespNotificationMasks.
 
         :param mask_type: The mask_type of this ListNotificationMaskRespNotificationMasks.
         :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
@@ -258,7 +258,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the start_date of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽起始日期，yyyy-MM-dd。
 
@@ -269,7 +269,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the start_date of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽起始日期，yyyy-MM-dd。
 
@@ -280,7 +280,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the start_time of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽起始时间，HH:mm:ss。
 
@@ -291,7 +291,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the start_time of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽起始时间，HH:mm:ss。
 
@@ -302,7 +302,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the end_date of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽截止日期，yyyy-MM-dd。
 
@@ -313,7 +313,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the end_date of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽截止日期，yyyy-MM-dd。
 
@@ -324,7 +324,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the end_time of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽截止时间，HH:mm:ss。
 
@@ -335,7 +335,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the end_time of this ListNotificationMaskRespNotificationMasks.
 
         屏蔽截止时间，HH:mm:ss。
 
@@ -346,7 +346,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @property
     def policies(self):
-        """Gets the policies of this ListNotificationMaskRespNotificationMasks.
+        r"""Gets the policies of this ListNotificationMaskRespNotificationMasks.
 
         告警策略列表。
 
@@ -357,7 +357,7 @@ class ListNotificationMaskRespNotificationMasks:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListNotificationMaskRespNotificationMasks.
+        r"""Sets the policies of this ListNotificationMaskRespNotificationMasks.
 
         告警策略列表。
 

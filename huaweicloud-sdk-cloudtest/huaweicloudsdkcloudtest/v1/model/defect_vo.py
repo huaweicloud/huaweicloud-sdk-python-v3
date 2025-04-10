@@ -29,7 +29,7 @@ class DefectVo:
     }
 
     def __init__(self, total=None, not_solved=None, severity_number_list=None):
-        """DefectVo
+        r"""DefectVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DefectVo:
 
     @property
     def total(self):
-        """Gets the total of this DefectVo.
+        r"""Gets the total of this DefectVo.
 
         缺陷数
 
@@ -68,7 +68,7 @@ class DefectVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DefectVo.
+        r"""Sets the total of this DefectVo.
 
         缺陷数
 
@@ -79,7 +79,7 @@ class DefectVo:
 
     @property
     def not_solved(self):
-        """Gets the not_solved of this DefectVo.
+        r"""Gets the not_solved of this DefectVo.
 
         未关闭缺陷数
 
@@ -90,7 +90,7 @@ class DefectVo:
 
     @not_solved.setter
     def not_solved(self, not_solved):
-        """Sets the not_solved of this DefectVo.
+        r"""Sets the not_solved of this DefectVo.
 
         未关闭缺陷数
 
@@ -101,7 +101,7 @@ class DefectVo:
 
     @property
     def severity_number_list(self):
-        """Gets the severity_number_list of this DefectVo.
+        r"""Gets the severity_number_list of this DefectVo.
 
         组装缺陷每种重要程度的名称和对应的数目
 
@@ -112,7 +112,7 @@ class DefectVo:
 
     @severity_number_list.setter
     def severity_number_list(self, severity_number_list):
-        """Sets the severity_number_list of this DefectVo.
+        r"""Sets the severity_number_list of this DefectVo.
 
         组装缺陷每种重要程度的名称和对应的数目
 

@@ -23,7 +23,7 @@ class ShowDliAgencyRequest:
     }
 
     def __init__(self):
-        """ShowDliAgencyRequest
+        r"""ShowDliAgencyRequest
 
         The model defined in huaweicloud sdk
 

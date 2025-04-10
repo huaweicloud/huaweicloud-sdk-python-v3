@@ -27,7 +27,7 @@ class ShowDeviceTemplateRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_template_id=None):
-        """ShowDeviceTemplateRequest
+        r"""ShowDeviceTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDeviceTemplateRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowDeviceTemplateRequest.
+        r"""Gets the ief_instance_id of this ShowDeviceTemplateRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ShowDeviceTemplateRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowDeviceTemplateRequest.
+        r"""Sets the ief_instance_id of this ShowDeviceTemplateRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ShowDeviceTemplateRequest:
 
     @property
     def device_template_id(self):
-        """Gets the device_template_id of this ShowDeviceTemplateRequest.
+        r"""Gets the device_template_id of this ShowDeviceTemplateRequest.
 
         设备模板ID
 
@@ -82,7 +82,7 @@ class ShowDeviceTemplateRequest:
 
     @device_template_id.setter
     def device_template_id(self, device_template_id):
-        """Sets the device_template_id of this ShowDeviceTemplateRequest.
+        r"""Sets the device_template_id of this ShowDeviceTemplateRequest.
 
         设备模板ID
 

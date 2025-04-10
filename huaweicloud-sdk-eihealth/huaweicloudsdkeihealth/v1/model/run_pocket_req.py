@@ -29,7 +29,7 @@ class RunPocketReq:
     }
 
     def __init__(self, center=None, size=None, padding=None):
-        """RunPocketReq
+        r"""RunPocketReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RunPocketReq:
 
     @property
     def center(self):
-        """Gets the center of this RunPocketReq.
+        r"""Gets the center of this RunPocketReq.
 
         口袋中心坐标
 
@@ -65,7 +65,7 @@ class RunPocketReq:
 
     @center.setter
     def center(self, center):
-        """Sets the center of this RunPocketReq.
+        r"""Sets the center of this RunPocketReq.
 
         口袋中心坐标
 
@@ -76,7 +76,7 @@ class RunPocketReq:
 
     @property
     def size(self):
-        """Gets the size of this RunPocketReq.
+        r"""Gets the size of this RunPocketReq.
 
         口袋大小
 
@@ -87,7 +87,7 @@ class RunPocketReq:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this RunPocketReq.
+        r"""Sets the size of this RunPocketReq.
 
         口袋大小
 
@@ -98,7 +98,7 @@ class RunPocketReq:
 
     @property
     def padding(self):
-        """Gets the padding of this RunPocketReq.
+        r"""Gets the padding of this RunPocketReq.
 
         口袋的padding值
 
@@ -109,7 +109,7 @@ class RunPocketReq:
 
     @padding.setter
     def padding(self, padding):
-        """Sets the padding of this RunPocketReq.
+        r"""Sets the padding of this RunPocketReq.
 
         口袋的padding值
 

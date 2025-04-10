@@ -29,7 +29,7 @@ class SlideVerifyCodeSendDTO:
     }
 
     def __init__(self, user=None, client_type=None, check_type=None):
-        """SlideVerifyCodeSendDTO
+        r"""SlideVerifyCodeSendDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SlideVerifyCodeSendDTO:
 
     @property
     def user(self):
-        """Gets the user of this SlideVerifyCodeSendDTO.
+        r"""Gets the user of this SlideVerifyCodeSendDTO.
 
         用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
 
@@ -66,7 +66,7 @@ class SlideVerifyCodeSendDTO:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this SlideVerifyCodeSendDTO.
+        r"""Sets the user of this SlideVerifyCodeSendDTO.
 
         用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
 
@@ -77,7 +77,7 @@ class SlideVerifyCodeSendDTO:
 
     @property
     def client_type(self):
-        """Gets the client_type of this SlideVerifyCodeSendDTO.
+        r"""Gets the client_type of this SlideVerifyCodeSendDTO.
 
         登录客户端类型。 * 0：Web客户端类型 * 5：cloudlink pc * 6：cloudlink mobile 
 
@@ -88,7 +88,7 @@ class SlideVerifyCodeSendDTO:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this SlideVerifyCodeSendDTO.
+        r"""Sets the client_type of this SlideVerifyCodeSendDTO.
 
         登录客户端类型。 * 0：Web客户端类型 * 5：cloudlink pc * 6：cloudlink mobile 
 
@@ -99,7 +99,7 @@ class SlideVerifyCodeSendDTO:
 
     @property
     def check_type(self):
-        """Gets the check_type of this SlideVerifyCodeSendDTO.
+        r"""Gets the check_type of this SlideVerifyCodeSendDTO.
 
         校验类型。默认值：0。 * 0：登录 * 1：忘记密码 
 
@@ -110,7 +110,7 @@ class SlideVerifyCodeSendDTO:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this SlideVerifyCodeSendDTO.
+        r"""Sets the check_type of this SlideVerifyCodeSendDTO.
 
         校验类型。默认值：0。 * 0：登录 * 1：忘记密码 
 

@@ -25,7 +25,7 @@ class ModifyOttChannelEncoderSettingsEncoderSettings:
     }
 
     def __init__(self, template_id=None):
-        """ModifyOttChannelEncoderSettingsEncoderSettings
+        r"""ModifyOttChannelEncoderSettingsEncoderSettings
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyOttChannelEncoderSettingsEncoderSettings:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ModifyOttChannelEncoderSettingsEncoderSettings.
+        r"""Gets the template_id of this ModifyOttChannelEncoderSettingsEncoderSettings.
 
         转码模板ID
 
@@ -54,7 +54,7 @@ class ModifyOttChannelEncoderSettingsEncoderSettings:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ModifyOttChannelEncoderSettingsEncoderSettings.
+        r"""Sets the template_id of this ModifyOttChannelEncoderSettingsEncoderSettings.
 
         转码模板ID
 

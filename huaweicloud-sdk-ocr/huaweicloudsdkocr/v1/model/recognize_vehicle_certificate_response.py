@@ -28,7 +28,7 @@ class RecognizeVehicleCertificateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeVehicleCertificateResponse
+        r"""RecognizeVehicleCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeVehicleCertificateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeVehicleCertificateResponse.
+        r"""Gets the result of this RecognizeVehicleCertificateResponse.
 
         :return: The result of this RecognizeVehicleCertificateResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.VehicleCertificateResult`
@@ -60,7 +60,7 @@ class RecognizeVehicleCertificateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeVehicleCertificateResponse.
+        r"""Sets the result of this RecognizeVehicleCertificateResponse.
 
         :param result: The result of this RecognizeVehicleCertificateResponse.
         :type result: :class:`huaweicloudsdkocr.v1.VehicleCertificateResult`
@@ -69,7 +69,7 @@ class RecognizeVehicleCertificateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeVehicleCertificateResponse.
+        r"""Gets the x_request_id of this RecognizeVehicleCertificateResponse.
 
         :return: The x_request_id of this RecognizeVehicleCertificateResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeVehicleCertificateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeVehicleCertificateResponse.
+        r"""Sets the x_request_id of this RecognizeVehicleCertificateResponse.
 
         :param x_request_id: The x_request_id of this RecognizeVehicleCertificateResponse.
         :type x_request_id: str

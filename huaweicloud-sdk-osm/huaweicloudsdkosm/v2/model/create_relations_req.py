@@ -27,7 +27,7 @@ class CreateRelationsReq:
     }
 
     def __init__(self, related_id_list=None, group_id=None):
-        """CreateRelationsReq
+        r"""CreateRelationsReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRelationsReq:
 
     @property
     def related_id_list(self):
-        """Gets the related_id_list of this CreateRelationsReq.
+        r"""Gets the related_id_list of this CreateRelationsReq.
 
         要关联的工单id列表，最多3个
 
@@ -60,7 +60,7 @@ class CreateRelationsReq:
 
     @related_id_list.setter
     def related_id_list(self, related_id_list):
-        """Sets the related_id_list of this CreateRelationsReq.
+        r"""Sets the related_id_list of this CreateRelationsReq.
 
         要关联的工单id列表，最多3个
 
@@ -71,7 +71,7 @@ class CreateRelationsReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateRelationsReq.
+        r"""Gets the group_id of this CreateRelationsReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -82,7 +82,7 @@ class CreateRelationsReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateRelationsReq.
+        r"""Sets the group_id of this CreateRelationsReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

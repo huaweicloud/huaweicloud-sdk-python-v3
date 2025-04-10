@@ -26,7 +26,7 @@ class UpdateServiceResponse(SdkResponse):
     }
 
     def __init__(self, service=None):
-        """UpdateServiceResponse
+        r"""UpdateServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def service(self):
-        """Gets the service of this UpdateServiceResponse.
+        r"""Gets the service of this UpdateServiceResponse.
 
         :return: The service of this UpdateServiceResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ServiceRespDetail`
@@ -53,7 +53,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @service.setter
     def service(self, service):
-        """Sets the service of this UpdateServiceResponse.
+        r"""Sets the service of this UpdateServiceResponse.
 
         :param service: The service of this UpdateServiceResponse.
         :type service: :class:`huaweicloudsdkief.v1.ServiceRespDetail`

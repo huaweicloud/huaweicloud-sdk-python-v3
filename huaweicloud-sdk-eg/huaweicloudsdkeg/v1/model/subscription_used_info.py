@@ -29,7 +29,7 @@ class SubscriptionUsedInfo:
     }
 
     def __init__(self, resource_id=None, owner=None, description=None):
-        """SubscriptionUsedInfo
+        r"""SubscriptionUsedInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SubscriptionUsedInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SubscriptionUsedInfo.
+        r"""Gets the resource_id of this SubscriptionUsedInfo.
 
         关联资源ID
 
@@ -68,7 +68,7 @@ class SubscriptionUsedInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SubscriptionUsedInfo.
+        r"""Sets the resource_id of this SubscriptionUsedInfo.
 
         关联资源ID
 
@@ -79,7 +79,7 @@ class SubscriptionUsedInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this SubscriptionUsedInfo.
+        r"""Gets the owner of this SubscriptionUsedInfo.
 
         管理租户账号
 
@@ -90,7 +90,7 @@ class SubscriptionUsedInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SubscriptionUsedInfo.
+        r"""Sets the owner of this SubscriptionUsedInfo.
 
         管理租户账号
 
@@ -101,7 +101,7 @@ class SubscriptionUsedInfo:
 
     @property
     def description(self):
-        """Gets the description of this SubscriptionUsedInfo.
+        r"""Gets the description of this SubscriptionUsedInfo.
 
         描述
 
@@ -112,7 +112,7 @@ class SubscriptionUsedInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubscriptionUsedInfo.
+        r"""Sets the description of this SubscriptionUsedInfo.
 
         描述
 

@@ -53,7 +53,7 @@ class VersionModel:
     }
 
     def __init__(self, branch=None, check_out_time=None, check_out_user_name=None, create_time=None, creator=None, description=None, id=None, kiaguid=None, last_update_time=None, master=None, modifier=None, name=None, need_set_null_attrs=None, rdm_extension_type=None, security_level=None):
-        """VersionModel
+        r"""VersionModel
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class VersionModel:
 
     @property
     def branch(self):
-        """Gets the branch of this VersionModel.
+        r"""Gets the branch of this VersionModel.
 
         :return: The branch of this VersionModel.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranch`
@@ -150,7 +150,7 @@ class VersionModel:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this VersionModel.
+        r"""Sets the branch of this VersionModel.
 
         :param branch: The branch of this VersionModel.
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranch`
@@ -159,7 +159,7 @@ class VersionModel:
 
     @property
     def check_out_time(self):
-        """Gets the check_out_time of this VersionModel.
+        r"""Gets the check_out_time of this VersionModel.
 
         **参数解释：**  检出时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -170,7 +170,7 @@ class VersionModel:
 
     @check_out_time.setter
     def check_out_time(self, check_out_time):
-        """Sets the check_out_time of this VersionModel.
+        r"""Sets the check_out_time of this VersionModel.
 
         **参数解释：**  检出时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -181,7 +181,7 @@ class VersionModel:
 
     @property
     def check_out_user_name(self):
-        """Gets the check_out_user_name of this VersionModel.
+        r"""Gets the check_out_user_name of this VersionModel.
 
         **参数解释：**  检出用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -192,7 +192,7 @@ class VersionModel:
 
     @check_out_user_name.setter
     def check_out_user_name(self, check_out_user_name):
-        """Sets the check_out_user_name of this VersionModel.
+        r"""Sets the check_out_user_name of this VersionModel.
 
         **参数解释：**  检出用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -203,7 +203,7 @@ class VersionModel:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VersionModel.
+        r"""Gets the create_time of this VersionModel.
 
         **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -214,7 +214,7 @@ class VersionModel:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VersionModel.
+        r"""Sets the create_time of this VersionModel.
 
         **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -225,7 +225,7 @@ class VersionModel:
 
     @property
     def creator(self):
-        """Gets the creator of this VersionModel.
+        r"""Gets the creator of this VersionModel.
 
         **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -236,7 +236,7 @@ class VersionModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this VersionModel.
+        r"""Sets the creator of this VersionModel.
 
         **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -247,7 +247,7 @@ class VersionModel:
 
     @property
     def description(self):
-        """Gets the description of this VersionModel.
+        r"""Gets the description of this VersionModel.
 
         **参数解释：**  描述信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -258,7 +258,7 @@ class VersionModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VersionModel.
+        r"""Sets the description of this VersionModel.
 
         **参数解释：**  描述信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -269,7 +269,7 @@ class VersionModel:
 
     @property
     def id(self):
-        """Gets the id of this VersionModel.
+        r"""Gets the id of this VersionModel.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -280,7 +280,7 @@ class VersionModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionModel.
+        r"""Sets the id of this VersionModel.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -291,7 +291,7 @@ class VersionModel:
 
     @property
     def kiaguid(self):
-        """Gets the kiaguid of this VersionModel.
+        r"""Gets the kiaguid of this VersionModel.
 
         **参数解释：**  关键信息资产ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -302,7 +302,7 @@ class VersionModel:
 
     @kiaguid.setter
     def kiaguid(self, kiaguid):
-        """Sets the kiaguid of this VersionModel.
+        r"""Sets the kiaguid of this VersionModel.
 
         **参数解释：**  关键信息资产ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -313,7 +313,7 @@ class VersionModel:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this VersionModel.
+        r"""Gets the last_update_time of this VersionModel.
 
         **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -324,7 +324,7 @@ class VersionModel:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this VersionModel.
+        r"""Sets the last_update_time of this VersionModel.
 
         **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -335,7 +335,7 @@ class VersionModel:
 
     @property
     def master(self):
-        """Gets the master of this VersionModel.
+        r"""Gets the master of this VersionModel.
 
         :return: The master of this VersionModel.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMaster`
@@ -344,7 +344,7 @@ class VersionModel:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this VersionModel.
+        r"""Sets the master of this VersionModel.
 
         :param master: The master of this VersionModel.
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMaster`
@@ -353,7 +353,7 @@ class VersionModel:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModel.
+        r"""Gets the modifier of this VersionModel.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -364,7 +364,7 @@ class VersionModel:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModel.
+        r"""Sets the modifier of this VersionModel.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -375,7 +375,7 @@ class VersionModel:
 
     @property
     def name(self):
-        """Gets the name of this VersionModel.
+        r"""Gets the name of this VersionModel.
 
         **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -386,7 +386,7 @@ class VersionModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VersionModel.
+        r"""Sets the name of this VersionModel.
 
         **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -397,7 +397,7 @@ class VersionModel:
 
     @property
     def need_set_null_attrs(self):
-        """Gets the need_set_null_attrs of this VersionModel.
+        r"""Gets the need_set_null_attrs of this VersionModel.
 
         **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -408,7 +408,7 @@ class VersionModel:
 
     @need_set_null_attrs.setter
     def need_set_null_attrs(self, need_set_null_attrs):
-        """Sets the need_set_null_attrs of this VersionModel.
+        r"""Sets the need_set_null_attrs of this VersionModel.
 
         **参数解释：**  设置NULL值的属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -419,7 +419,7 @@ class VersionModel:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this VersionModel.
+        r"""Gets the rdm_extension_type of this VersionModel.
 
         **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -430,7 +430,7 @@ class VersionModel:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this VersionModel.
+        r"""Sets the rdm_extension_type of this VersionModel.
 
         **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -441,7 +441,7 @@ class VersionModel:
 
     @property
     def security_level(self):
-        """Gets the security_level of this VersionModel.
+        r"""Gets the security_level of this VersionModel.
 
         **参数解释：**  安全密级。  **约束限制：**  不涉及。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -452,7 +452,7 @@ class VersionModel:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this VersionModel.
+        r"""Sets the security_level of this VersionModel.
 
         **参数解释：**  安全密级。  **约束限制：**  不涉及。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 

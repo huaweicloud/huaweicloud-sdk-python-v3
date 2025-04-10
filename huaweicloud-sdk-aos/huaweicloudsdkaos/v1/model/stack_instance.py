@@ -45,7 +45,7 @@ class StackInstance:
     }
 
     def __init__(self, stack_set_id=None, stack_set_name=None, status=None, status_message=None, stack_id=None, stack_name=None, stack_domain_id=None, latest_stack_set_operation_id=None, region=None, create_time=None, update_time=None):
-        """StackInstance
+        r"""StackInstance
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class StackInstance:
 
     @property
     def stack_set_id(self):
-        """Gets the stack_set_id of this StackInstance.
+        r"""Gets the stack_set_id of this StackInstance.
 
         资源栈集（stack_set）的唯一ID。  此ID由资源编排服务在生成资源栈集的时候生成，为UUID。  由于资源栈集名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈集，删除，再重新创建一个同名资源栈集。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈集就是我以为的那个，而不是被其他队友删除后创建的同名资源栈集。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈集所对应的ID都不相同，更新不会影响ID。如果给予的stack_set_id和当前资源栈集的ID不一致，则返回400
 
@@ -123,7 +123,7 @@ class StackInstance:
 
     @stack_set_id.setter
     def stack_set_id(self, stack_set_id):
-        """Sets the stack_set_id of this StackInstance.
+        r"""Sets the stack_set_id of this StackInstance.
 
         资源栈集（stack_set）的唯一ID。  此ID由资源编排服务在生成资源栈集的时候生成，为UUID。  由于资源栈集名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈集，删除，再重新创建一个同名资源栈集。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈集就是我以为的那个，而不是被其他队友删除后创建的同名资源栈集。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈集所对应的ID都不相同，更新不会影响ID。如果给予的stack_set_id和当前资源栈集的ID不一致，则返回400
 
@@ -134,7 +134,7 @@ class StackInstance:
 
     @property
     def stack_set_name(self):
-        """Gets the stack_set_name of this StackInstance.
+        r"""Gets the stack_set_name of this StackInstance.
 
         资源栈集（stack_set）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -145,7 +145,7 @@ class StackInstance:
 
     @stack_set_name.setter
     def stack_set_name(self, stack_set_name):
-        """Sets the stack_set_name of this StackInstance.
+        r"""Sets the stack_set_name of this StackInstance.
 
         资源栈集（stack_set）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -156,7 +156,7 @@ class StackInstance:
 
     @property
     def status(self):
-        """Gets the status of this StackInstance.
+        r"""Gets the status of this StackInstance.
 
         资源栈实例的状态  * `WAIT_IN_PROGRESS` - 资源栈实例等待操作中 * `CANCEL_COMPLETE` - 资源栈实例操作取消完成 * `OPERATION_IN_PROGRESS` - 资源栈实例操作中 * `OPERATION_FAILED` - 资源栈实例操作失败 * `INOPERABLE` - 资源栈实例不可操作 * `OPERATION_COMPLETE` - 资源栈实例操作完成
 
@@ -167,7 +167,7 @@ class StackInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StackInstance.
+        r"""Sets the status of this StackInstance.
 
         资源栈实例的状态  * `WAIT_IN_PROGRESS` - 资源栈实例等待操作中 * `CANCEL_COMPLETE` - 资源栈实例操作取消完成 * `OPERATION_IN_PROGRESS` - 资源栈实例操作中 * `OPERATION_FAILED` - 资源栈实例操作失败 * `INOPERABLE` - 资源栈实例不可操作 * `OPERATION_COMPLETE` - 资源栈实例操作完成
 
@@ -178,7 +178,7 @@ class StackInstance:
 
     @property
     def status_message(self):
-        """Gets the status_message of this StackInstance.
+        r"""Gets the status_message of this StackInstance.
 
         在资源栈实例状态为`INOPERABLE`或`OPERATION_FAILED`时，会显示简要的错误信息总结以供debug
 
@@ -189,7 +189,7 @@ class StackInstance:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this StackInstance.
+        r"""Sets the status_message of this StackInstance.
 
         在资源栈实例状态为`INOPERABLE`或`OPERATION_FAILED`时，会显示简要的错误信息总结以供debug
 
@@ -200,7 +200,7 @@ class StackInstance:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this StackInstance.
+        r"""Gets the stack_id of this StackInstance.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -211,7 +211,7 @@ class StackInstance:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this StackInstance.
+        r"""Sets the stack_id of this StackInstance.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -222,7 +222,7 @@ class StackInstance:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this StackInstance.
+        r"""Gets the stack_name of this StackInstance.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -233,7 +233,7 @@ class StackInstance:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this StackInstance.
+        r"""Sets the stack_name of this StackInstance.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -244,7 +244,7 @@ class StackInstance:
 
     @property
     def stack_domain_id(self):
-        """Gets the stack_domain_id of this StackInstance.
+        r"""Gets the stack_domain_id of this StackInstance.
 
         资源栈实例所关联的资源栈所在的租户ID
 
@@ -255,7 +255,7 @@ class StackInstance:
 
     @stack_domain_id.setter
     def stack_domain_id(self, stack_domain_id):
-        """Sets the stack_domain_id of this StackInstance.
+        r"""Sets the stack_domain_id of this StackInstance.
 
         资源栈实例所关联的资源栈所在的租户ID
 
@@ -266,7 +266,7 @@ class StackInstance:
 
     @property
     def latest_stack_set_operation_id(self):
-        """Gets the latest_stack_set_operation_id of this StackInstance.
+        r"""Gets the latest_stack_set_operation_id of this StackInstance.
 
         最新一次部署该资源栈实例的资源栈集操作ID。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
@@ -277,7 +277,7 @@ class StackInstance:
 
     @latest_stack_set_operation_id.setter
     def latest_stack_set_operation_id(self, latest_stack_set_operation_id):
-        """Sets the latest_stack_set_operation_id of this StackInstance.
+        r"""Sets the latest_stack_set_operation_id of this StackInstance.
 
         最新一次部署该资源栈实例的资源栈集操作ID。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
@@ -288,7 +288,7 @@ class StackInstance:
 
     @property
     def region(self):
-        """Gets the region of this StackInstance.
+        r"""Gets the region of this StackInstance.
 
         资源栈实例所关联的资源栈所在的区域
 
@@ -299,7 +299,7 @@ class StackInstance:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this StackInstance.
+        r"""Sets the region of this StackInstance.
 
         资源栈实例所关联的资源栈所在的区域
 
@@ -310,7 +310,7 @@ class StackInstance:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StackInstance.
+        r"""Gets the create_time of this StackInstance.
 
         资源栈实例的创建时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -321,7 +321,7 @@ class StackInstance:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StackInstance.
+        r"""Sets the create_time of this StackInstance.
 
         资源栈实例的创建时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -332,7 +332,7 @@ class StackInstance:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StackInstance.
+        r"""Gets the update_time of this StackInstance.
 
         资源栈实例的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -343,7 +343,7 @@ class StackInstance:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StackInstance.
+        r"""Sets the update_time of this StackInstance.
 
         资源栈实例的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

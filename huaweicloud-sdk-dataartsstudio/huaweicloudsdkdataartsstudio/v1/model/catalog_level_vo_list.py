@@ -25,7 +25,7 @@ class CatalogLevelVOList:
     }
 
     def __init__(self, levels=None):
-        """CatalogLevelVOList
+        r"""CatalogLevelVOList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CatalogLevelVOList:
 
     @property
     def levels(self):
-        """Gets the levels of this CatalogLevelVOList.
+        r"""Gets the levels of this CatalogLevelVOList.
 
         主题层级信息。
 
@@ -54,7 +54,7 @@ class CatalogLevelVOList:
 
     @levels.setter
     def levels(self, levels):
-        """Sets the levels of this CatalogLevelVOList.
+        r"""Sets the levels of this CatalogLevelVOList.
 
         主题层级信息。
 

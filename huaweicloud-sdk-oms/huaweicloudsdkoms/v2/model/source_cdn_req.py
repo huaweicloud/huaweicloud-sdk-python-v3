@@ -31,7 +31,7 @@ class SourceCdnReq:
     }
 
     def __init__(self, authentication_key=None, authentication_type=None, domain=None, protocol=None):
-        """SourceCdnReq
+        r"""SourceCdnReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class SourceCdnReq:
 
     @property
     def authentication_key(self):
-        """Gets the authentication_key of this SourceCdnReq.
+        r"""Gets the authentication_key of this SourceCdnReq.
 
         CDN鉴权秘钥，如果CDN需要进行鉴权，则此选项为必选。  无需授权：无需配置此项。 Qiniu：无需配置此项。 Aliyun：根据authentication_type指定的鉴权方式配置此项。 KingsoftCloud：无需配置此项。
 
@@ -72,7 +72,7 @@ class SourceCdnReq:
 
     @authentication_key.setter
     def authentication_key(self, authentication_key):
-        """Sets the authentication_key of this SourceCdnReq.
+        r"""Sets the authentication_key of this SourceCdnReq.
 
         CDN鉴权秘钥，如果CDN需要进行鉴权，则此选项为必选。  无需授权：无需配置此项。 Qiniu：无需配置此项。 Aliyun：根据authentication_type指定的鉴权方式配置此项。 KingsoftCloud：无需配置此项。
 
@@ -83,7 +83,7 @@ class SourceCdnReq:
 
     @property
     def authentication_type(self):
-        """Gets the authentication_type of this SourceCdnReq.
+        r"""Gets the authentication_type of this SourceCdnReq.
 
         鉴权类型: NONE, QINIU_PRIVATE_AUTHENTICATION, ALIYUN_OSS_A, ALIYUN_OSS_B, ALIYUN_OSS_C, KSYUN_PRIVATE_AUTHENTICATION, AZURE_SAS_TOKEN, TENCENT_COS_A, TENCENT_COS_B, TENCENT_COS_C, TENCENT_COS_D
 
@@ -94,7 +94,7 @@ class SourceCdnReq:
 
     @authentication_type.setter
     def authentication_type(self, authentication_type):
-        """Sets the authentication_type of this SourceCdnReq.
+        r"""Sets the authentication_type of this SourceCdnReq.
 
         鉴权类型: NONE, QINIU_PRIVATE_AUTHENTICATION, ALIYUN_OSS_A, ALIYUN_OSS_B, ALIYUN_OSS_C, KSYUN_PRIVATE_AUTHENTICATION, AZURE_SAS_TOKEN, TENCENT_COS_A, TENCENT_COS_B, TENCENT_COS_C, TENCENT_COS_D
 
@@ -105,7 +105,7 @@ class SourceCdnReq:
 
     @property
     def domain(self):
-        """Gets the domain of this SourceCdnReq.
+        r"""Gets the domain of this SourceCdnReq.
 
           从指定域名获取对象。
 
@@ -116,7 +116,7 @@ class SourceCdnReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this SourceCdnReq.
+        r"""Sets the domain of this SourceCdnReq.
 
           从指定域名获取对象。
 
@@ -127,7 +127,7 @@ class SourceCdnReq:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SourceCdnReq.
+        r"""Gets the protocol of this SourceCdnReq.
 
         协议类型，支持http和https协议。
 
@@ -138,7 +138,7 @@ class SourceCdnReq:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SourceCdnReq.
+        r"""Sets the protocol of this SourceCdnReq.
 
         协议类型，支持http和https协议。
 

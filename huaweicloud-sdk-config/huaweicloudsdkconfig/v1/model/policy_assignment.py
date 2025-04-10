@@ -55,7 +55,7 @@ class PolicyAssignment:
     }
 
     def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None, target_type=None, target_id=None):
-        """PolicyAssignment
+        r"""PolicyAssignment
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class PolicyAssignment:
 
     @property
     def policy_assignment_type(self):
-        """Gets the policy_assignment_type of this PolicyAssignment.
+        r"""Gets the policy_assignment_type of this PolicyAssignment.
 
         规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
 
@@ -159,7 +159,7 @@ class PolicyAssignment:
 
     @policy_assignment_type.setter
     def policy_assignment_type(self, policy_assignment_type):
-        """Sets the policy_assignment_type of this PolicyAssignment.
+        r"""Sets the policy_assignment_type of this PolicyAssignment.
 
         规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
 
@@ -170,7 +170,7 @@ class PolicyAssignment:
 
     @property
     def id(self):
-        """Gets the id of this PolicyAssignment.
+        r"""Gets the id of this PolicyAssignment.
 
         规则ID
 
@@ -181,7 +181,7 @@ class PolicyAssignment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyAssignment.
+        r"""Sets the id of this PolicyAssignment.
 
         规则ID
 
@@ -192,7 +192,7 @@ class PolicyAssignment:
 
     @property
     def name(self):
-        """Gets the name of this PolicyAssignment.
+        r"""Gets the name of this PolicyAssignment.
 
         规则名字
 
@@ -203,7 +203,7 @@ class PolicyAssignment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyAssignment.
+        r"""Sets the name of this PolicyAssignment.
 
         规则名字
 
@@ -214,7 +214,7 @@ class PolicyAssignment:
 
     @property
     def description(self):
-        """Gets the description of this PolicyAssignment.
+        r"""Gets the description of this PolicyAssignment.
 
         规则描述
 
@@ -225,7 +225,7 @@ class PolicyAssignment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyAssignment.
+        r"""Sets the description of this PolicyAssignment.
 
         规则描述
 
@@ -236,7 +236,7 @@ class PolicyAssignment:
 
     @property
     def policy_filter(self):
-        """Gets the policy_filter of this PolicyAssignment.
+        r"""Gets the policy_filter of this PolicyAssignment.
 
         :return: The policy_filter of this PolicyAssignment.
         :rtype: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -245,7 +245,7 @@ class PolicyAssignment:
 
     @policy_filter.setter
     def policy_filter(self, policy_filter):
-        """Sets the policy_filter of this PolicyAssignment.
+        r"""Sets the policy_filter of this PolicyAssignment.
 
         :param policy_filter: The policy_filter of this PolicyAssignment.
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -254,7 +254,7 @@ class PolicyAssignment:
 
     @property
     def period(self):
-        """Gets the period of this PolicyAssignment.
+        r"""Gets the period of this PolicyAssignment.
 
         触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
 
@@ -265,7 +265,7 @@ class PolicyAssignment:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this PolicyAssignment.
+        r"""Sets the period of this PolicyAssignment.
 
         触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
 
@@ -276,7 +276,7 @@ class PolicyAssignment:
 
     @property
     def state(self):
-        """Gets the state of this PolicyAssignment.
+        r"""Gets the state of this PolicyAssignment.
 
         规则状态
 
@@ -287,7 +287,7 @@ class PolicyAssignment:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PolicyAssignment.
+        r"""Sets the state of this PolicyAssignment.
 
         规则状态
 
@@ -298,7 +298,7 @@ class PolicyAssignment:
 
     @property
     def created(self):
-        """Gets the created of this PolicyAssignment.
+        r"""Gets the created of this PolicyAssignment.
 
         规则创建时间
 
@@ -309,7 +309,7 @@ class PolicyAssignment:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this PolicyAssignment.
+        r"""Sets the created of this PolicyAssignment.
 
         规则创建时间
 
@@ -320,7 +320,7 @@ class PolicyAssignment:
 
     @property
     def updated(self):
-        """Gets the updated of this PolicyAssignment.
+        r"""Gets the updated of this PolicyAssignment.
 
         规则更新时间
 
@@ -331,7 +331,7 @@ class PolicyAssignment:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this PolicyAssignment.
+        r"""Sets the updated of this PolicyAssignment.
 
         规则更新时间
 
@@ -342,7 +342,7 @@ class PolicyAssignment:
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this PolicyAssignment.
+        r"""Gets the policy_definition_id of this PolicyAssignment.
 
         规则的策略ID
 
@@ -353,7 +353,7 @@ class PolicyAssignment:
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this PolicyAssignment.
+        r"""Sets the policy_definition_id of this PolicyAssignment.
 
         规则的策略ID
 
@@ -364,7 +364,7 @@ class PolicyAssignment:
 
     @property
     def custom_policy(self):
-        """Gets the custom_policy of this PolicyAssignment.
+        r"""Gets the custom_policy of this PolicyAssignment.
 
         :return: The custom_policy of this PolicyAssignment.
         :rtype: :class:`huaweicloudsdkconfig.v1.CustomPolicy`
@@ -373,7 +373,7 @@ class PolicyAssignment:
 
     @custom_policy.setter
     def custom_policy(self, custom_policy):
-        """Sets the custom_policy of this PolicyAssignment.
+        r"""Sets the custom_policy of this PolicyAssignment.
 
         :param custom_policy: The custom_policy of this PolicyAssignment.
         :type custom_policy: :class:`huaweicloudsdkconfig.v1.CustomPolicy`
@@ -382,7 +382,7 @@ class PolicyAssignment:
 
     @property
     def parameters(self):
-        """Gets the parameters of this PolicyAssignment.
+        r"""Gets the parameters of this PolicyAssignment.
 
         规则参数
 
@@ -393,7 +393,7 @@ class PolicyAssignment:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this PolicyAssignment.
+        r"""Sets the parameters of this PolicyAssignment.
 
         规则参数
 
@@ -404,7 +404,7 @@ class PolicyAssignment:
 
     @property
     def tags(self):
-        """Gets the tags of this PolicyAssignment.
+        r"""Gets the tags of this PolicyAssignment.
 
         :return: The tags of this PolicyAssignment.
         :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
@@ -413,7 +413,7 @@ class PolicyAssignment:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PolicyAssignment.
+        r"""Sets the tags of this PolicyAssignment.
 
         :param tags: The tags of this PolicyAssignment.
         :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
@@ -422,7 +422,7 @@ class PolicyAssignment:
 
     @property
     def created_by(self):
-        """Gets the created_by of this PolicyAssignment.
+        r"""Gets the created_by of this PolicyAssignment.
 
         规则的创建者
 
@@ -433,7 +433,7 @@ class PolicyAssignment:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this PolicyAssignment.
+        r"""Sets the created_by of this PolicyAssignment.
 
         规则的创建者
 
@@ -444,7 +444,7 @@ class PolicyAssignment:
 
     @property
     def target_type(self):
-        """Gets the target_type of this PolicyAssignment.
+        r"""Gets the target_type of this PolicyAssignment.
 
         合规规则修正方式。
 
@@ -455,7 +455,7 @@ class PolicyAssignment:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this PolicyAssignment.
+        r"""Sets the target_type of this PolicyAssignment.
 
         合规规则修正方式。
 
@@ -466,7 +466,7 @@ class PolicyAssignment:
 
     @property
     def target_id(self):
-        """Gets the target_id of this PolicyAssignment.
+        r"""Gets the target_id of this PolicyAssignment.
 
         修正执行的目标id。
 
@@ -477,7 +477,7 @@ class PolicyAssignment:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this PolicyAssignment.
+        r"""Sets the target_id of this PolicyAssignment.
 
         修正执行的目标id。
 

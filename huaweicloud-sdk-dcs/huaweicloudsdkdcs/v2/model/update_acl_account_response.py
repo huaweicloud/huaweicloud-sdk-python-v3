@@ -28,7 +28,7 @@ class UpdateAclAccountResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, job_id=None):
-        """UpdateAclAccountResponse
+        r"""UpdateAclAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAclAccountResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAclAccountResponse.
+        r"""Gets the instance_id of this UpdateAclAccountResponse.
 
         账号所属实例ID
 
@@ -62,7 +62,7 @@ class UpdateAclAccountResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAclAccountResponse.
+        r"""Sets the instance_id of this UpdateAclAccountResponse.
 
         账号所属实例ID
 
@@ -73,7 +73,7 @@ class UpdateAclAccountResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateAclAccountResponse.
+        r"""Gets the job_id of this UpdateAclAccountResponse.
 
         修改ACL账号访问权限JOB的ID
 
@@ -84,7 +84,7 @@ class UpdateAclAccountResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateAclAccountResponse.
+        r"""Sets the job_id of this UpdateAclAccountResponse.
 
         修改ACL账号访问权限JOB的ID
 

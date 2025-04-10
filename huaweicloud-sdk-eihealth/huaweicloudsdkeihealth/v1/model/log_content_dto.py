@@ -27,7 +27,7 @@ class LogContentDto:
     }
 
     def __init__(self, collect_time=None, content=None):
-        """LogContentDto
+        r"""LogContentDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LogContentDto:
 
     @property
     def collect_time(self):
-        """Gets the collect_time of this LogContentDto.
+        r"""Gets the collect_time of this LogContentDto.
 
         作业日志采集时间
 
@@ -61,7 +61,7 @@ class LogContentDto:
 
     @collect_time.setter
     def collect_time(self, collect_time):
-        """Sets the collect_time of this LogContentDto.
+        r"""Sets the collect_time of this LogContentDto.
 
         作业日志采集时间
 
@@ -72,7 +72,7 @@ class LogContentDto:
 
     @property
     def content(self):
-        """Gets the content of this LogContentDto.
+        r"""Gets the content of this LogContentDto.
 
         作业日志内容
 
@@ -83,7 +83,7 @@ class LogContentDto:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this LogContentDto.
+        r"""Sets the content of this LogContentDto.
 
         作业日志内容
 

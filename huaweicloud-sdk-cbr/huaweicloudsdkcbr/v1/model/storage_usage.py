@@ -35,7 +35,7 @@ class StorageUsage:
     }
 
     def __init__(self, backup_count=None, backup_size=None, resource_id=None, resource_name=None, resource_type=None, backup_size_multiaz=None):
-        """StorageUsage
+        r"""StorageUsage
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class StorageUsage:
 
     @property
     def backup_count(self):
-        """Gets the backup_count of this StorageUsage.
+        r"""Gets the backup_count of this StorageUsage.
 
         备份数量
 
@@ -86,7 +86,7 @@ class StorageUsage:
 
     @backup_count.setter
     def backup_count(self, backup_count):
-        """Sets the backup_count of this StorageUsage.
+        r"""Sets the backup_count of this StorageUsage.
 
         备份数量
 
@@ -97,7 +97,7 @@ class StorageUsage:
 
     @property
     def backup_size(self):
-        """Gets the backup_size of this StorageUsage.
+        r"""Gets the backup_size of this StorageUsage.
 
         备份容量
 
@@ -108,7 +108,7 @@ class StorageUsage:
 
     @backup_size.setter
     def backup_size(self, backup_size):
-        """Sets the backup_size of this StorageUsage.
+        r"""Sets the backup_size of this StorageUsage.
 
         备份容量
 
@@ -119,7 +119,7 @@ class StorageUsage:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this StorageUsage.
+        r"""Gets the resource_id of this StorageUsage.
 
         资源ID
 
@@ -130,7 +130,7 @@ class StorageUsage:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this StorageUsage.
+        r"""Sets the resource_id of this StorageUsage.
 
         资源ID
 
@@ -141,7 +141,7 @@ class StorageUsage:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this StorageUsage.
+        r"""Gets the resource_name of this StorageUsage.
 
         资源名称
 
@@ -152,7 +152,7 @@ class StorageUsage:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this StorageUsage.
+        r"""Sets the resource_name of this StorageUsage.
 
         资源名称
 
@@ -163,7 +163,7 @@ class StorageUsage:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this StorageUsage.
+        r"""Gets the resource_type of this StorageUsage.
 
         资源类型
 
@@ -174,7 +174,7 @@ class StorageUsage:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this StorageUsage.
+        r"""Sets the resource_type of this StorageUsage.
 
         资源类型
 
@@ -185,7 +185,7 @@ class StorageUsage:
 
     @property
     def backup_size_multiaz(self):
-        """Gets the backup_size_multiaz of this StorageUsage.
+        r"""Gets the backup_size_multiaz of this StorageUsage.
 
         多AZ备份大小
 
@@ -196,7 +196,7 @@ class StorageUsage:
 
     @backup_size_multiaz.setter
     def backup_size_multiaz(self, backup_size_multiaz):
-        """Sets the backup_size_multiaz of this StorageUsage.
+        r"""Sets the backup_size_multiaz of this StorageUsage.
 
         多AZ备份大小
 

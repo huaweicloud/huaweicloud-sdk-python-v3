@@ -27,7 +27,7 @@ class ApproveOpinionDetail:
     }
 
     def __init__(self, result=None, content=None):
-        """ApproveOpinionDetail
+        r"""ApproveOpinionDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApproveOpinionDetail:
 
     @property
     def result(self):
-        """Gets the result of this ApproveOpinionDetail.
+        r"""Gets the result of this ApproveOpinionDetail.
 
         Approve Result.
 
@@ -61,7 +61,7 @@ class ApproveOpinionDetail:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ApproveOpinionDetail.
+        r"""Sets the result of this ApproveOpinionDetail.
 
         Approve Result.
 
@@ -72,7 +72,7 @@ class ApproveOpinionDetail:
 
     @property
     def content(self):
-        """Gets the content of this ApproveOpinionDetail.
+        r"""Gets the content of this ApproveOpinionDetail.
 
         Approve content.
 
@@ -83,7 +83,7 @@ class ApproveOpinionDetail:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ApproveOpinionDetail.
+        r"""Sets the content of this ApproveOpinionDetail.
 
         Approve content.
 

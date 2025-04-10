@@ -25,7 +25,7 @@ class TaskProgress:
     }
 
     def __init__(self, overall=None):
-        """TaskProgress
+        r"""TaskProgress
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskProgress:
 
     @property
     def overall(self):
-        """Gets the overall of this TaskProgress.
+        r"""Gets the overall of this TaskProgress.
 
         整体进度
 
@@ -54,7 +54,7 @@ class TaskProgress:
 
     @overall.setter
     def overall(self, overall):
-        """Sets the overall of this TaskProgress.
+        r"""Sets the overall of this TaskProgress.
 
         整体进度
 

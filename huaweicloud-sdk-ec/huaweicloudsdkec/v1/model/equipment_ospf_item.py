@@ -43,7 +43,7 @@ class EquipmentOspfItem:
     }
 
     def __init__(self, ospf_enabled=None, area_id=None, post_to_cloud=None, hello_timer=None, router_id=None, interfaces=None, filter_enabled=None, trust_list=None, block_list=None, cloud_subnet_list=None):
-        """EquipmentOspfItem
+        r"""EquipmentOspfItem
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class EquipmentOspfItem:
 
     @property
     def ospf_enabled(self):
-        """Gets the ospf_enabled of this EquipmentOspfItem.
+        r"""Gets the ospf_enabled of this EquipmentOspfItem.
 
         是否启用OSPF
 
@@ -116,7 +116,7 @@ class EquipmentOspfItem:
 
     @ospf_enabled.setter
     def ospf_enabled(self, ospf_enabled):
-        """Sets the ospf_enabled of this EquipmentOspfItem.
+        r"""Sets the ospf_enabled of this EquipmentOspfItem.
 
         是否启用OSPF
 
@@ -127,7 +127,7 @@ class EquipmentOspfItem:
 
     @property
     def area_id(self):
-        """Gets the area_id of this EquipmentOspfItem.
+        r"""Gets the area_id of this EquipmentOspfItem.
 
         区域标识
 
@@ -138,7 +138,7 @@ class EquipmentOspfItem:
 
     @area_id.setter
     def area_id(self, area_id):
-        """Sets the area_id of this EquipmentOspfItem.
+        r"""Sets the area_id of this EquipmentOspfItem.
 
         区域标识
 
@@ -149,7 +149,7 @@ class EquipmentOspfItem:
 
     @property
     def post_to_cloud(self):
-        """Gets the post_to_cloud of this EquipmentOspfItem.
+        r"""Gets the post_to_cloud of this EquipmentOspfItem.
 
         发布到企业连接网络
 
@@ -160,7 +160,7 @@ class EquipmentOspfItem:
 
     @post_to_cloud.setter
     def post_to_cloud(self, post_to_cloud):
-        """Sets the post_to_cloud of this EquipmentOspfItem.
+        r"""Sets the post_to_cloud of this EquipmentOspfItem.
 
         发布到企业连接网络
 
@@ -171,7 +171,7 @@ class EquipmentOspfItem:
 
     @property
     def hello_timer(self):
-        """Gets the hello_timer of this EquipmentOspfItem.
+        r"""Gets the hello_timer of this EquipmentOspfItem.
 
         发送Hello报文的时间间隔，单位是秒
 
@@ -182,7 +182,7 @@ class EquipmentOspfItem:
 
     @hello_timer.setter
     def hello_timer(self, hello_timer):
-        """Sets the hello_timer of this EquipmentOspfItem.
+        r"""Sets the hello_timer of this EquipmentOspfItem.
 
         发送Hello报文的时间间隔，单位是秒
 
@@ -193,7 +193,7 @@ class EquipmentOspfItem:
 
     @property
     def router_id(self):
-        """Gets the router_id of this EquipmentOspfItem.
+        r"""Gets the router_id of this EquipmentOspfItem.
 
         点分十进制格式，OSPF协议使用全网唯一的Router ID
 
@@ -204,7 +204,7 @@ class EquipmentOspfItem:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this EquipmentOspfItem.
+        r"""Sets the router_id of this EquipmentOspfItem.
 
         点分十进制格式，OSPF协议使用全网唯一的Router ID
 
@@ -215,7 +215,7 @@ class EquipmentOspfItem:
 
     @property
     def interfaces(self):
-        """Gets the interfaces of this EquipmentOspfItem.
+        r"""Gets the interfaces of this EquipmentOspfItem.
 
         启用OSPF协议的接口列表
 
@@ -226,7 +226,7 @@ class EquipmentOspfItem:
 
     @interfaces.setter
     def interfaces(self, interfaces):
-        """Sets the interfaces of this EquipmentOspfItem.
+        r"""Sets the interfaces of this EquipmentOspfItem.
 
         启用OSPF协议的接口列表
 
@@ -237,7 +237,7 @@ class EquipmentOspfItem:
 
     @property
     def filter_enabled(self):
-        """Gets the filter_enabled of this EquipmentOspfItem.
+        r"""Gets the filter_enabled of this EquipmentOspfItem.
 
         是否启用前缀过滤
 
@@ -248,7 +248,7 @@ class EquipmentOspfItem:
 
     @filter_enabled.setter
     def filter_enabled(self, filter_enabled):
-        """Sets the filter_enabled of this EquipmentOspfItem.
+        r"""Sets the filter_enabled of this EquipmentOspfItem.
 
         是否启用前缀过滤
 
@@ -259,7 +259,7 @@ class EquipmentOspfItem:
 
     @property
     def trust_list(self):
-        """Gets the trust_list of this EquipmentOspfItem.
+        r"""Gets the trust_list of this EquipmentOspfItem.
 
         白名单列表
 
@@ -270,7 +270,7 @@ class EquipmentOspfItem:
 
     @trust_list.setter
     def trust_list(self, trust_list):
-        """Sets the trust_list of this EquipmentOspfItem.
+        r"""Sets the trust_list of this EquipmentOspfItem.
 
         白名单列表
 
@@ -281,7 +281,7 @@ class EquipmentOspfItem:
 
     @property
     def block_list(self):
-        """Gets the block_list of this EquipmentOspfItem.
+        r"""Gets the block_list of this EquipmentOspfItem.
 
         黑名单列表
 
@@ -292,7 +292,7 @@ class EquipmentOspfItem:
 
     @block_list.setter
     def block_list(self, block_list):
-        """Sets the block_list of this EquipmentOspfItem.
+        r"""Sets the block_list of this EquipmentOspfItem.
 
         黑名单列表
 
@@ -303,7 +303,7 @@ class EquipmentOspfItem:
 
     @property
     def cloud_subnet_list(self):
-        """Gets the cloud_subnet_list of this EquipmentOspfItem.
+        r"""Gets the cloud_subnet_list of this EquipmentOspfItem.
 
         上云子网列表
 
@@ -314,7 +314,7 @@ class EquipmentOspfItem:
 
     @cloud_subnet_list.setter
     def cloud_subnet_list(self, cloud_subnet_list):
-        """Sets the cloud_subnet_list of this EquipmentOspfItem.
+        r"""Sets the cloud_subnet_list of this EquipmentOspfItem.
 
         上云子网列表
 

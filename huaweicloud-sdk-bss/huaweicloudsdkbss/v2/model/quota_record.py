@@ -47,7 +47,7 @@ class QuotaRecord:
     }
 
     def __init__(self, id=None, operator=None, operation_type=None, quota_id=None, parent_quota_id=None, amount=None, operation_time=None, result=None, indirect_partner_account_name=None, indirect_partner_id=None, indirect_partner_name=None, remark=None):
-        """QuotaRecord
+        r"""QuotaRecord
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class QuotaRecord:
 
     @property
     def id(self):
-        """Gets the id of this QuotaRecord.
+        r"""Gets the id of this QuotaRecord.
 
         记录ID。
 
@@ -131,7 +131,7 @@ class QuotaRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QuotaRecord.
+        r"""Sets the id of this QuotaRecord.
 
         记录ID。
 
@@ -142,7 +142,7 @@ class QuotaRecord:
 
     @property
     def operator(self):
-        """Gets the operator of this QuotaRecord.
+        r"""Gets the operator of this QuotaRecord.
 
         操作员的账号名称。
 
@@ -153,7 +153,7 @@ class QuotaRecord:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this QuotaRecord.
+        r"""Sets the operator of this QuotaRecord.
 
         操作员的账号名称。
 
@@ -164,7 +164,7 @@ class QuotaRecord:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this QuotaRecord.
+        r"""Gets the operation_type of this QuotaRecord.
 
         操作类型。 10：发放额度11：回收额度
 
@@ -175,7 +175,7 @@ class QuotaRecord:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this QuotaRecord.
+        r"""Sets the operation_type of this QuotaRecord.
 
         操作类型。 10：发放额度11：回收额度
 
@@ -186,7 +186,7 @@ class QuotaRecord:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this QuotaRecord.
+        r"""Gets the quota_id of this QuotaRecord.
 
         云经销商的代金券额度ID。 即华为云总经销商给云经销商发放代金券额度时，产生的云经销商的代金券额度ID，或者从云经销商回收代金券额度时，云经销商的代金券额度ID。
 
@@ -197,7 +197,7 @@ class QuotaRecord:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this QuotaRecord.
+        r"""Sets the quota_id of this QuotaRecord.
 
         云经销商的代金券额度ID。 即华为云总经销商给云经销商发放代金券额度时，产生的云经销商的代金券额度ID，或者从云经销商回收代金券额度时，云经销商的代金券额度ID。
 
@@ -208,7 +208,7 @@ class QuotaRecord:
 
     @property
     def parent_quota_id(self):
-        """Gets the parent_quota_id of this QuotaRecord.
+        r"""Gets the parent_quota_id of this QuotaRecord.
 
         父额度ID。 这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。
 
@@ -219,7 +219,7 @@ class QuotaRecord:
 
     @parent_quota_id.setter
     def parent_quota_id(self, parent_quota_id):
-        """Sets the parent_quota_id of this QuotaRecord.
+        r"""Sets the parent_quota_id of this QuotaRecord.
 
         父额度ID。 这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。
 
@@ -230,7 +230,7 @@ class QuotaRecord:
 
     @property
     def amount(self):
-        """Gets the amount of this QuotaRecord.
+        r"""Gets the amount of this QuotaRecord.
 
         发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
@@ -241,7 +241,7 @@ class QuotaRecord:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this QuotaRecord.
+        r"""Sets the amount of this QuotaRecord.
 
         发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
@@ -252,7 +252,7 @@ class QuotaRecord:
 
     @property
     def operation_time(self):
-        """Gets the operation_time of this QuotaRecord.
+        r"""Gets the operation_time of this QuotaRecord.
 
         操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -263,7 +263,7 @@ class QuotaRecord:
 
     @operation_time.setter
     def operation_time(self, operation_time):
-        """Sets the operation_time of this QuotaRecord.
+        r"""Sets the operation_time of this QuotaRecord.
 
         操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -274,7 +274,7 @@ class QuotaRecord:
 
     @property
     def result(self):
-        """Gets the result of this QuotaRecord.
+        r"""Gets the result of this QuotaRecord.
 
         操作结果。 0：成功-1：失败
 
@@ -285,7 +285,7 @@ class QuotaRecord:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this QuotaRecord.
+        r"""Sets the result of this QuotaRecord.
 
         操作结果。 0：成功-1：失败
 
@@ -296,7 +296,7 @@ class QuotaRecord:
 
     @property
     def indirect_partner_account_name(self):
-        """Gets the indirect_partner_account_name of this QuotaRecord.
+        r"""Gets the indirect_partner_account_name of this QuotaRecord.
 
         云经销商的账号名。
 
@@ -307,7 +307,7 @@ class QuotaRecord:
 
     @indirect_partner_account_name.setter
     def indirect_partner_account_name(self, indirect_partner_account_name):
-        """Sets the indirect_partner_account_name of this QuotaRecord.
+        r"""Sets the indirect_partner_account_name of this QuotaRecord.
 
         云经销商的账号名。
 
@@ -318,7 +318,7 @@ class QuotaRecord:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QuotaRecord.
+        r"""Gets the indirect_partner_id of this QuotaRecord.
 
         云经销商ID。
 
@@ -329,7 +329,7 @@ class QuotaRecord:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QuotaRecord.
+        r"""Sets the indirect_partner_id of this QuotaRecord.
 
         云经销商ID。
 
@@ -340,7 +340,7 @@ class QuotaRecord:
 
     @property
     def indirect_partner_name(self):
-        """Gets the indirect_partner_name of this QuotaRecord.
+        r"""Gets the indirect_partner_name of this QuotaRecord.
 
         云经销商的公司名称。
 
@@ -351,7 +351,7 @@ class QuotaRecord:
 
     @indirect_partner_name.setter
     def indirect_partner_name(self, indirect_partner_name):
-        """Sets the indirect_partner_name of this QuotaRecord.
+        r"""Sets the indirect_partner_name of this QuotaRecord.
 
         云经销商的公司名称。
 
@@ -362,7 +362,7 @@ class QuotaRecord:
 
     @property
     def remark(self):
-        """Gets the remark of this QuotaRecord.
+        r"""Gets the remark of this QuotaRecord.
 
         备注。
 
@@ -373,7 +373,7 @@ class QuotaRecord:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this QuotaRecord.
+        r"""Sets the remark of this QuotaRecord.
 
         备注。
 

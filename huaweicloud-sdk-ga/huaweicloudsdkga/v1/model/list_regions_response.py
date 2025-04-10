@@ -28,7 +28,7 @@ class ListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, regions=None, request_id=None):
-        """ListRegionsResponse
+        r"""ListRegionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRegionsResponse(SdkResponse):
 
     @property
     def regions(self):
-        """Gets the regions of this ListRegionsResponse.
+        r"""Gets the regions of this ListRegionsResponse.
 
         区域列表。
 
@@ -62,7 +62,7 @@ class ListRegionsResponse(SdkResponse):
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ListRegionsResponse.
+        r"""Sets the regions of this ListRegionsResponse.
 
         区域列表。
 
@@ -73,7 +73,7 @@ class ListRegionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListRegionsResponse.
+        r"""Gets the request_id of this ListRegionsResponse.
 
         请求ID。
 
@@ -84,7 +84,7 @@ class ListRegionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListRegionsResponse.
+        r"""Sets the request_id of this ListRegionsResponse.
 
         请求ID。
 

@@ -25,7 +25,7 @@ class CdmStartJobReq:
     }
 
     def __init__(self, variables=None):
-        """CdmStartJobReq
+        r"""CdmStartJobReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CdmStartJobReq:
 
     @property
     def variables(self):
-        """Gets the variables of this CdmStartJobReq.
+        r"""Gets the variables of this CdmStartJobReq.
 
         启动作业，配置变量参数，作业配置无变量时，为空对象
 
@@ -54,7 +54,7 @@ class CdmStartJobReq:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this CdmStartJobReq.
+        r"""Sets the variables of this CdmStartJobReq.
 
         启动作业，配置变量参数，作业配置无变量时，为空对象
 

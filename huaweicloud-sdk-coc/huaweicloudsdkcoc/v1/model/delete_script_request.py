@@ -31,7 +31,7 @@ class DeleteScriptRequest:
     }
 
     def __init__(self, script_uuid=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """DeleteScriptRequest
+        r"""DeleteScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteScriptRequest:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this DeleteScriptRequest.
+        r"""Gets the script_uuid of this DeleteScriptRequest.
 
         脚本uuid
 
@@ -74,7 +74,7 @@ class DeleteScriptRequest:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this DeleteScriptRequest.
+        r"""Sets the script_uuid of this DeleteScriptRequest.
 
         脚本uuid
 
@@ -85,7 +85,7 @@ class DeleteScriptRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteScriptRequest.
+        r"""Gets the x_language of this DeleteScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -96,7 +96,7 @@ class DeleteScriptRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteScriptRequest.
+        r"""Sets the x_language of this DeleteScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -107,7 +107,7 @@ class DeleteScriptRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this DeleteScriptRequest.
+        r"""Gets the x_project_id of this DeleteScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -118,7 +118,7 @@ class DeleteScriptRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this DeleteScriptRequest.
+        r"""Sets the x_project_id of this DeleteScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -129,7 +129,7 @@ class DeleteScriptRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this DeleteScriptRequest.
+        r"""Gets the x_user_profile of this DeleteScriptRequest.
 
         IAM5.0用户信息
 
@@ -140,7 +140,7 @@ class DeleteScriptRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this DeleteScriptRequest.
+        r"""Sets the x_user_profile of this DeleteScriptRequest.
 
         IAM5.0用户信息
 

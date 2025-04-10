@@ -25,7 +25,7 @@ class ListAz2MigrateRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListAz2MigrateRequest
+        r"""ListAz2MigrateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAz2MigrateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAz2MigrateRequest.
+        r"""Gets the instance_id of this ListAz2MigrateRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ListAz2MigrateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAz2MigrateRequest.
+        r"""Sets the instance_id of this ListAz2MigrateRequest.
 
         实例ID。
 

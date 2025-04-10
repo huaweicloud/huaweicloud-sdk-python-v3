@@ -25,7 +25,7 @@ class CreateScalingConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScalingConfigRequest
+        r"""CreateScalingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateScalingConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScalingConfigRequest.
+        r"""Gets the body of this CreateScalingConfigRequest.
 
         :return: The body of this CreateScalingConfigRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingConfigOption`
@@ -52,7 +52,7 @@ class CreateScalingConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScalingConfigRequest.
+        r"""Sets the body of this CreateScalingConfigRequest.
 
         :param body: The body of this CreateScalingConfigRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateScalingConfigOption`

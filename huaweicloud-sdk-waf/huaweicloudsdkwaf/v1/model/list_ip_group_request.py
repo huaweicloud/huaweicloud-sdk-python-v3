@@ -33,7 +33,7 @@ class ListIpGroupRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, ip=None):
-        """ListIpGroupRequest
+        r"""ListIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListIpGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListIpGroupRequest.
+        r"""Gets the enterprise_project_id of this ListIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -82,7 +82,7 @@ class ListIpGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListIpGroupRequest.
+        r"""Sets the enterprise_project_id of this ListIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -93,7 +93,7 @@ class ListIpGroupRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListIpGroupRequest.
+        r"""Gets the page of this ListIpGroupRequest.
 
         页码，默认值为1
 
@@ -104,7 +104,7 @@ class ListIpGroupRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListIpGroupRequest.
+        r"""Sets the page of this ListIpGroupRequest.
 
         页码，默认值为1
 
@@ -115,7 +115,7 @@ class ListIpGroupRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListIpGroupRequest.
+        r"""Gets the pagesize of this ListIpGroupRequest.
 
         每页的条数，单页条数限制100，默认值为10
 
@@ -126,7 +126,7 @@ class ListIpGroupRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListIpGroupRequest.
+        r"""Sets the pagesize of this ListIpGroupRequest.
 
         每页的条数，单页条数限制100，默认值为10
 
@@ -137,7 +137,7 @@ class ListIpGroupRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListIpGroupRequest.
+        r"""Gets the name of this ListIpGroupRequest.
 
         ip地址组名称，支持模糊查询
 
@@ -148,7 +148,7 @@ class ListIpGroupRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListIpGroupRequest.
+        r"""Sets the name of this ListIpGroupRequest.
 
         ip地址组名称，支持模糊查询
 
@@ -159,7 +159,7 @@ class ListIpGroupRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListIpGroupRequest.
+        r"""Gets the ip of this ListIpGroupRequest.
 
         ip地址或ip段，传入该参数将查询包含传入的ip地址或ip段的地址组
 
@@ -170,7 +170,7 @@ class ListIpGroupRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListIpGroupRequest.
+        r"""Sets the ip of this ListIpGroupRequest.
 
         ip地址或ip段，传入该参数将查询包含传入的ip地址或ip段的地址组
 

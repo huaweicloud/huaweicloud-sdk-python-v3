@@ -32,7 +32,7 @@ class ShowSubmissionsResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None, total=None, page_no=None, page_size=None):
-        """ShowSubmissionsResponse
+        r"""ShowSubmissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @property
     def submissions(self):
-        """Gets the submissions of this ShowSubmissionsResponse.
+        r"""Gets the submissions of this ShowSubmissionsResponse.
 
         作业运行信息，详见submissions参数说明。
 
@@ -76,7 +76,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @submissions.setter
     def submissions(self, submissions):
-        """Sets the submissions of this ShowSubmissionsResponse.
+        r"""Sets the submissions of this ShowSubmissionsResponse.
 
         作业运行信息，详见submissions参数说明。
 
@@ -87,7 +87,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowSubmissionsResponse.
+        r"""Gets the total of this ShowSubmissionsResponse.
 
         查询该作业总的历史记录数。
 
@@ -98,7 +98,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowSubmissionsResponse.
+        r"""Sets the total of this ShowSubmissionsResponse.
 
         查询该作业总的历史记录数。
 
@@ -109,7 +109,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @property
     def page_no(self):
-        """Gets the page_no of this ShowSubmissionsResponse.
+        r"""Gets the page_no of this ShowSubmissionsResponse.
 
         查询作业记录时，分页数。
 
@@ -120,7 +120,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ShowSubmissionsResponse.
+        r"""Sets the page_no of this ShowSubmissionsResponse.
 
         查询作业记录时，分页数。
 
@@ -131,7 +131,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowSubmissionsResponse.
+        r"""Gets the page_size of this ShowSubmissionsResponse.
 
         分页查询，每页返回的记录数。默认值：10。
 
@@ -142,7 +142,7 @@ class ShowSubmissionsResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowSubmissionsResponse.
+        r"""Sets the page_size of this ShowSubmissionsResponse.
 
         分页查询，每页返回的记录数。默认值：10。
 

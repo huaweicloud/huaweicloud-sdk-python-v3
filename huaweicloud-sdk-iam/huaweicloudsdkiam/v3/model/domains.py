@@ -33,7 +33,7 @@ class Domains:
     }
 
     def __init__(self, enabled=None, id=None, name=None, links=None, description=None):
-        """Domains
+        r"""Domains
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Domains:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Domains.
+        r"""Gets the enabled of this Domains.
 
         是否启用账号，true为启用，false为停用，默认为true。
 
@@ -77,7 +77,7 @@ class Domains:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Domains.
+        r"""Sets the enabled of this Domains.
 
         是否启用账号，true为启用，false为停用，默认为true。
 
@@ -88,7 +88,7 @@ class Domains:
 
     @property
     def id(self):
-        """Gets the id of this Domains.
+        r"""Gets the id of this Domains.
 
         账号ID。
 
@@ -99,7 +99,7 @@ class Domains:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Domains.
+        r"""Sets the id of this Domains.
 
         账号ID。
 
@@ -110,7 +110,7 @@ class Domains:
 
     @property
     def name(self):
-        """Gets the name of this Domains.
+        r"""Gets the name of this Domains.
 
         账号名。
 
@@ -121,7 +121,7 @@ class Domains:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Domains.
+        r"""Sets the name of this Domains.
 
         账号名。
 
@@ -132,7 +132,7 @@ class Domains:
 
     @property
     def links(self):
-        """Gets the links of this Domains.
+        r"""Gets the links of this Domains.
 
         :return: The links of this Domains.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -141,7 +141,7 @@ class Domains:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Domains.
+        r"""Sets the links of this Domains.
 
         :param links: The links of this Domains.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -150,7 +150,7 @@ class Domains:
 
     @property
     def description(self):
-        """Gets the description of this Domains.
+        r"""Gets the description of this Domains.
 
         账号的描述信息。
 
@@ -161,7 +161,7 @@ class Domains:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Domains.
+        r"""Sets the description of this Domains.
 
         账号的描述信息。
 

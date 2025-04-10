@@ -25,7 +25,7 @@ class RequiredDuringScheduling:
     }
 
     def __init__(self, node_selector_terms=None):
-        """RequiredDuringScheduling
+        r"""RequiredDuringScheduling
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RequiredDuringScheduling:
 
     @property
     def node_selector_terms(self):
-        """Gets the node_selector_terms of this RequiredDuringScheduling.
+        r"""Gets the node_selector_terms of this RequiredDuringScheduling.
 
         节点选择规则
 
@@ -54,7 +54,7 @@ class RequiredDuringScheduling:
 
     @node_selector_terms.setter
     def node_selector_terms(self, node_selector_terms):
-        """Sets the node_selector_terms of this RequiredDuringScheduling.
+        r"""Sets the node_selector_terms of this RequiredDuringScheduling.
 
         节点选择规则
 

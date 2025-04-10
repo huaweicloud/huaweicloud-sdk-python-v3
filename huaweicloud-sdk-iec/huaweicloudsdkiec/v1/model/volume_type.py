@@ -29,7 +29,7 @@ class VolumeType:
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """VolumeType
+        r"""VolumeType
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VolumeType:
 
     @property
     def id(self):
-        """Gets the id of this VolumeType.
+        r"""Gets the id of this VolumeType.
 
         硬盘类型的ID。
 
@@ -68,7 +68,7 @@ class VolumeType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeType.
+        r"""Sets the id of this VolumeType.
 
         硬盘类型的ID。
 
@@ -79,7 +79,7 @@ class VolumeType:
 
     @property
     def name(self):
-        """Gets the name of this VolumeType.
+        r"""Gets the name of this VolumeType.
 
         硬盘类型名称。
 
@@ -90,7 +90,7 @@ class VolumeType:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeType.
+        r"""Sets the name of this VolumeType.
 
         硬盘类型名称。
 
@@ -101,7 +101,7 @@ class VolumeType:
 
     @property
     def status(self):
-        """Gets the status of this VolumeType.
+        r"""Gets the status of this VolumeType.
 
         磁盘类型的状态： 取值范围：normal(当前磁盘类型存在未售罄站点)，sellout(当前磁盘类型所有站点均售罄)
 
@@ -112,7 +112,7 @@ class VolumeType:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VolumeType.
+        r"""Sets the status of this VolumeType.
 
         磁盘类型的状态： 取值范围：normal(当前磁盘类型存在未售罄站点)，sellout(当前磁盘类型所有站点均售罄)
 

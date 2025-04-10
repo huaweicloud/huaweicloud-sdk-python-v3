@@ -26,7 +26,7 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateGatewayResponseTypeV2Response
+        r"""UpdateGatewayResponseTypeV2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateGatewayResponseTypeV2Response.
+        r"""Gets the body of this UpdateGatewayResponseTypeV2Response.
 
         :return: The body of this UpdateGatewayResponseTypeV2Response.
         :rtype: dict(str, ResponseInfoResp)
@@ -53,7 +53,7 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGatewayResponseTypeV2Response.
+        r"""Sets the body of this UpdateGatewayResponseTypeV2Response.
 
         :param body: The body of this UpdateGatewayResponseTypeV2Response.
         :type body: dict(str, ResponseInfoResp)

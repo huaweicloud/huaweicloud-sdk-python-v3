@@ -25,7 +25,7 @@ class ShowCloudPhoneServerDetailRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowCloudPhoneServerDetailRequest
+        r"""ShowCloudPhoneServerDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCloudPhoneServerDetailRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowCloudPhoneServerDetailRequest.
+        r"""Gets the server_id of this ShowCloudPhoneServerDetailRequest.
 
         云手机服务器的唯一标识。
 
@@ -53,7 +53,7 @@ class ShowCloudPhoneServerDetailRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowCloudPhoneServerDetailRequest.
+        r"""Sets the server_id of this ShowCloudPhoneServerDetailRequest.
 
         云手机服务器的唯一标识。
 

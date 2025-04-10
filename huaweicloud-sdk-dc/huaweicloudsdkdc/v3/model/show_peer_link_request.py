@@ -31,7 +31,7 @@ class ShowPeerLinkRequest:
     }
 
     def __init__(self, fields=None, ext_fields=None, global_dc_gateway_id=None, peer_link_id=None):
-        """ShowPeerLinkRequest
+        r"""ShowPeerLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowPeerLinkRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowPeerLinkRequest.
+        r"""Gets the fields of this ShowPeerLinkRequest.
 
         显示字段列表
 
@@ -73,7 +73,7 @@ class ShowPeerLinkRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowPeerLinkRequest.
+        r"""Sets the fields of this ShowPeerLinkRequest.
 
         显示字段列表
 
@@ -84,7 +84,7 @@ class ShowPeerLinkRequest:
 
     @property
     def ext_fields(self):
-        """Gets the ext_fields of this ShowPeerLinkRequest.
+        r"""Gets the ext_fields of this ShowPeerLinkRequest.
 
         show response ext-fields
 
@@ -95,7 +95,7 @@ class ShowPeerLinkRequest:
 
     @ext_fields.setter
     def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ShowPeerLinkRequest.
+        r"""Sets the ext_fields of this ShowPeerLinkRequest.
 
         show response ext-fields
 
@@ -106,7 +106,7 @@ class ShowPeerLinkRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ShowPeerLinkRequest.
+        r"""Gets the global_dc_gateway_id of this ShowPeerLinkRequest.
 
         全域接入网关ID
 
@@ -117,7 +117,7 @@ class ShowPeerLinkRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ShowPeerLinkRequest.
+        r"""Sets the global_dc_gateway_id of this ShowPeerLinkRequest.
 
         全域接入网关ID
 
@@ -128,7 +128,7 @@ class ShowPeerLinkRequest:
 
     @property
     def peer_link_id(self):
-        """Gets the peer_link_id of this ShowPeerLinkRequest.
+        r"""Gets the peer_link_id of this ShowPeerLinkRequest.
 
         全域接入网关对等体
 
@@ -139,7 +139,7 @@ class ShowPeerLinkRequest:
 
     @peer_link_id.setter
     def peer_link_id(self, peer_link_id):
-        """Sets the peer_link_id of this ShowPeerLinkRequest.
+        r"""Sets the peer_link_id of this ShowPeerLinkRequest.
 
         全域接入网关对等体
 

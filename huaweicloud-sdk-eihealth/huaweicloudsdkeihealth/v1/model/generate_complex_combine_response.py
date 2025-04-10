@@ -26,7 +26,7 @@ class GenerateComplexCombineResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """GenerateComplexCombineResponse
+        r"""GenerateComplexCombineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GenerateComplexCombineResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this GenerateComplexCombineResponse.
+        r"""Gets the body of this GenerateComplexCombineResponse.
 
         :return: The body of this GenerateComplexCombineResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class GenerateComplexCombineResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateComplexCombineResponse.
+        r"""Sets the body of this GenerateComplexCombineResponse.
 
         :param body: The body of this GenerateComplexCombineResponse.
         :type body: str

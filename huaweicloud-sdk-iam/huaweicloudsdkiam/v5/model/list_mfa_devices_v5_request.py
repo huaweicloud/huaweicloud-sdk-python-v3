@@ -29,7 +29,7 @@ class ListMfaDevicesV5Request:
     }
 
     def __init__(self, user_id=None, limit=None, marker=None):
-        """ListMfaDevicesV5Request
+        r"""ListMfaDevicesV5Request
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListMfaDevicesV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListMfaDevicesV5Request.
+        r"""Gets the user_id of this ListMfaDevicesV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -68,7 +68,7 @@ class ListMfaDevicesV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListMfaDevicesV5Request.
+        r"""Sets the user_id of this ListMfaDevicesV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -79,7 +79,7 @@ class ListMfaDevicesV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMfaDevicesV5Request.
+        r"""Gets the limit of this ListMfaDevicesV5Request.
 
         每页显示的条目数量。
 
@@ -90,7 +90,7 @@ class ListMfaDevicesV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMfaDevicesV5Request.
+        r"""Sets the limit of this ListMfaDevicesV5Request.
 
         每页显示的条目数量。
 
@@ -101,7 +101,7 @@ class ListMfaDevicesV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListMfaDevicesV5Request.
+        r"""Gets the marker of this ListMfaDevicesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -112,7 +112,7 @@ class ListMfaDevicesV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListMfaDevicesV5Request.
+        r"""Sets the marker of this ListMfaDevicesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 

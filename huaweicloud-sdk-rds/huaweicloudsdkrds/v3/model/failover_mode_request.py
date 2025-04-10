@@ -25,7 +25,7 @@ class FailoverModeRequest:
     }
 
     def __init__(self, mode=None):
-        """FailoverModeRequest
+        r"""FailoverModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FailoverModeRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this FailoverModeRequest.
+        r"""Gets the mode of this FailoverModeRequest.
 
         同步模式，各引擎可选择方式具体如下： MySQL： - async：异步。 - semisync：半同步。
 
@@ -53,7 +53,7 @@ class FailoverModeRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this FailoverModeRequest.
+        r"""Sets the mode of this FailoverModeRequest.
 
         同步模式，各引擎可选择方式具体如下： MySQL： - async：异步。 - semisync：半同步。
 

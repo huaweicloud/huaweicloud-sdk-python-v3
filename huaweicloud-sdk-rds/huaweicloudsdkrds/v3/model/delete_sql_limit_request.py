@@ -27,7 +27,7 @@ class DeleteSqlLimitRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteSqlLimitRequest
+        r"""DeleteSqlLimitRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSqlLimitRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSqlLimitRequest.
+        r"""Gets the instance_id of this DeleteSqlLimitRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class DeleteSqlLimitRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSqlLimitRequest.
+        r"""Sets the instance_id of this DeleteSqlLimitRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class DeleteSqlLimitRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSqlLimitRequest.
+        r"""Gets the body of this DeleteSqlLimitRequest.
 
         :return: The body of this DeleteSqlLimitRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlLimitRuleReqV3`
@@ -80,7 +80,7 @@ class DeleteSqlLimitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSqlLimitRequest.
+        r"""Sets the body of this DeleteSqlLimitRequest.
 
         :param body: The body of this DeleteSqlLimitRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DeleteSqlLimitRuleReqV3`

@@ -29,7 +29,7 @@ class FailedObjectRecordDto:
     }
 
     def __init__(self, result=None, list_file_key=None, error_code=None):
-        """FailedObjectRecordDto
+        r"""FailedObjectRecordDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FailedObjectRecordDto:
 
     @property
     def result(self):
-        """Gets the result of this FailedObjectRecordDto.
+        r"""Gets the result of this FailedObjectRecordDto.
 
         是否支持失败对象重传。
 
@@ -68,7 +68,7 @@ class FailedObjectRecordDto:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this FailedObjectRecordDto.
+        r"""Sets the result of this FailedObjectRecordDto.
 
         是否支持失败对象重传。
 
@@ -79,7 +79,7 @@ class FailedObjectRecordDto:
 
     @property
     def list_file_key(self):
-        """Gets the list_file_key of this FailedObjectRecordDto.
+        r"""Gets the list_file_key of this FailedObjectRecordDto.
 
         失败对象列表文件路径。
 
@@ -90,7 +90,7 @@ class FailedObjectRecordDto:
 
     @list_file_key.setter
     def list_file_key(self, list_file_key):
-        """Sets the list_file_key of this FailedObjectRecordDto.
+        r"""Sets the list_file_key of this FailedObjectRecordDto.
 
         失败对象列表文件路径。
 
@@ -101,7 +101,7 @@ class FailedObjectRecordDto:
 
     @property
     def error_code(self):
-        """Gets the error_code of this FailedObjectRecordDto.
+        r"""Gets the error_code of this FailedObjectRecordDto.
 
         失败对象列表上传失败的错误码。
 
@@ -112,7 +112,7 @@ class FailedObjectRecordDto:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this FailedObjectRecordDto.
+        r"""Sets the error_code of this FailedObjectRecordDto.
 
         失败对象列表上传失败的错误码。
 

@@ -33,7 +33,7 @@ class VideoAndTemplate:
     }
 
     def __init__(self, template_id=None, width=None, height=None, bitrate=None, stream_name=None):
-        """VideoAndTemplate
+        r"""VideoAndTemplate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VideoAndTemplate:
 
     @property
     def template_id(self):
-        """Gets the template_id of this VideoAndTemplate.
+        r"""Gets the template_id of this VideoAndTemplate.
 
         模板ID 
 
@@ -82,7 +82,7 @@ class VideoAndTemplate:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this VideoAndTemplate.
+        r"""Sets the template_id of this VideoAndTemplate.
 
         模板ID 
 
@@ -93,7 +93,7 @@ class VideoAndTemplate:
 
     @property
     def width(self):
-        """Gets the width of this VideoAndTemplate.
+        r"""Gets the width of this VideoAndTemplate.
 
         视频宽度（单位：像素） - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
@@ -104,7 +104,7 @@ class VideoAndTemplate:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoAndTemplate.
+        r"""Sets the width of this VideoAndTemplate.
 
         视频宽度（单位：像素） - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
@@ -115,7 +115,7 @@ class VideoAndTemplate:
 
     @property
     def height(self):
-        """Gets the height of this VideoAndTemplate.
+        r"""Gets the height of this VideoAndTemplate.
 
         视频高度（单位：像素） - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880]，必须是4的倍数 
 
@@ -126,7 +126,7 @@ class VideoAndTemplate:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoAndTemplate.
+        r"""Sets the height of this VideoAndTemplate.
 
         视频高度（单位：像素） - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880]，必须是4的倍数 
 
@@ -137,7 +137,7 @@ class VideoAndTemplate:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoAndTemplate.
+        r"""Gets the bitrate of this VideoAndTemplate.
 
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
@@ -148,7 +148,7 @@ class VideoAndTemplate:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoAndTemplate.
+        r"""Sets the bitrate of this VideoAndTemplate.
 
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
@@ -159,7 +159,7 @@ class VideoAndTemplate:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this VideoAndTemplate.
+        r"""Gets the stream_name of this VideoAndTemplate.
 
         流名称 
 
@@ -170,7 +170,7 @@ class VideoAndTemplate:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this VideoAndTemplate.
+        r"""Sets the stream_name of this VideoAndTemplate.
 
         流名称 
 

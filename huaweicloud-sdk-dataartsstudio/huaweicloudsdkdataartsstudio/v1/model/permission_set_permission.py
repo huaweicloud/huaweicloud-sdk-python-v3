@@ -63,7 +63,7 @@ class PermissionSetPermission:
     }
 
     def __init__(self, id=None, permission_set_id=None, project_id=None, instance_id=None, permission_type=None, permission_action=None, permission_actions=None, permission_action_code=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, sync_status=None, sync_msg=None, url=None):
-        """PermissionSetPermission
+        r"""PermissionSetPermission
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class PermissionSetPermission:
 
     @property
     def id(self):
-        """Gets the id of this PermissionSetPermission.
+        r"""Gets the id of this PermissionSetPermission.
 
         id
 
@@ -187,7 +187,7 @@ class PermissionSetPermission:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionSetPermission.
+        r"""Sets the id of this PermissionSetPermission.
 
         id
 
@@ -198,7 +198,7 @@ class PermissionSetPermission:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PermissionSetPermission.
+        r"""Gets the permission_set_id of this PermissionSetPermission.
 
         权限集id
 
@@ -209,7 +209,7 @@ class PermissionSetPermission:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PermissionSetPermission.
+        r"""Sets the permission_set_id of this PermissionSetPermission.
 
         权限集id
 
@@ -220,7 +220,7 @@ class PermissionSetPermission:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PermissionSetPermission.
+        r"""Gets the project_id of this PermissionSetPermission.
 
         项目id
 
@@ -231,7 +231,7 @@ class PermissionSetPermission:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PermissionSetPermission.
+        r"""Sets the project_id of this PermissionSetPermission.
 
         项目id
 
@@ -242,7 +242,7 @@ class PermissionSetPermission:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PermissionSetPermission.
+        r"""Gets the instance_id of this PermissionSetPermission.
 
         实例id
 
@@ -253,7 +253,7 @@ class PermissionSetPermission:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PermissionSetPermission.
+        r"""Sets the instance_id of this PermissionSetPermission.
 
         实例id
 
@@ -264,7 +264,7 @@ class PermissionSetPermission:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this PermissionSetPermission.
+        r"""Gets the permission_type of this PermissionSetPermission.
 
         权限类型, DENY, ALLOW
 
@@ -275,7 +275,7 @@ class PermissionSetPermission:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this PermissionSetPermission.
+        r"""Sets the permission_type of this PermissionSetPermission.
 
         权限类型, DENY, ALLOW
 
@@ -286,7 +286,7 @@ class PermissionSetPermission:
 
     @property
     def permission_action(self):
-        """Gets the permission_action of this PermissionSetPermission.
+        r"""Gets the permission_action of this PermissionSetPermission.
 
         权限操作列表
 
@@ -297,7 +297,7 @@ class PermissionSetPermission:
 
     @permission_action.setter
     def permission_action(self, permission_action):
-        """Sets the permission_action of this PermissionSetPermission.
+        r"""Sets the permission_action of this PermissionSetPermission.
 
         权限操作列表
 
@@ -308,7 +308,7 @@ class PermissionSetPermission:
 
     @property
     def permission_actions(self):
-        """Gets the permission_actions of this PermissionSetPermission.
+        r"""Gets the permission_actions of this PermissionSetPermission.
 
         权限操作列表
 
@@ -319,7 +319,7 @@ class PermissionSetPermission:
 
     @permission_actions.setter
     def permission_actions(self, permission_actions):
-        """Sets the permission_actions of this PermissionSetPermission.
+        r"""Sets the permission_actions of this PermissionSetPermission.
 
         权限操作列表
 
@@ -330,7 +330,7 @@ class PermissionSetPermission:
 
     @property
     def permission_action_code(self):
-        """Gets the permission_action_code of this PermissionSetPermission.
+        r"""Gets the permission_action_code of this PermissionSetPermission.
 
         权限操作编码, 位图
 
@@ -341,7 +341,7 @@ class PermissionSetPermission:
 
     @permission_action_code.setter
     def permission_action_code(self, permission_action_code):
-        """Sets the permission_action_code of this PermissionSetPermission.
+        r"""Sets the permission_action_code of this PermissionSetPermission.
 
         权限操作编码, 位图
 
@@ -352,7 +352,7 @@ class PermissionSetPermission:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PermissionSetPermission.
+        r"""Gets the cluster_id of this PermissionSetPermission.
 
         集群id
 
@@ -363,7 +363,7 @@ class PermissionSetPermission:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PermissionSetPermission.
+        r"""Sets the cluster_id of this PermissionSetPermission.
 
         集群id
 
@@ -374,7 +374,7 @@ class PermissionSetPermission:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this PermissionSetPermission.
+        r"""Gets the cluster_name of this PermissionSetPermission.
 
         集群名称
 
@@ -385,7 +385,7 @@ class PermissionSetPermission:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this PermissionSetPermission.
+        r"""Sets the cluster_name of this PermissionSetPermission.
 
         集群名称
 
@@ -396,7 +396,7 @@ class PermissionSetPermission:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this PermissionSetPermission.
+        r"""Gets the datasource_type of this PermissionSetPermission.
 
         数据源类型, HIVE
 
@@ -407,7 +407,7 @@ class PermissionSetPermission:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this PermissionSetPermission.
+        r"""Sets the datasource_type of this PermissionSetPermission.
 
         数据源类型, HIVE
 
@@ -418,7 +418,7 @@ class PermissionSetPermission:
 
     @property
     def database_name(self):
-        """Gets the database_name of this PermissionSetPermission.
+        r"""Gets the database_name of this PermissionSetPermission.
 
         数据库名称
 
@@ -429,7 +429,7 @@ class PermissionSetPermission:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this PermissionSetPermission.
+        r"""Sets the database_name of this PermissionSetPermission.
 
         数据库名称
 
@@ -440,7 +440,7 @@ class PermissionSetPermission:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PermissionSetPermission.
+        r"""Gets the schema_name of this PermissionSetPermission.
 
         模式名称
 
@@ -451,7 +451,7 @@ class PermissionSetPermission:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PermissionSetPermission.
+        r"""Sets the schema_name of this PermissionSetPermission.
 
         模式名称
 
@@ -462,7 +462,7 @@ class PermissionSetPermission:
 
     @property
     def namespace(self):
-        """Gets the namespace of this PermissionSetPermission.
+        r"""Gets the namespace of this PermissionSetPermission.
 
         命名空间
 
@@ -473,7 +473,7 @@ class PermissionSetPermission:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this PermissionSetPermission.
+        r"""Sets the namespace of this PermissionSetPermission.
 
         命名空间
 
@@ -484,7 +484,7 @@ class PermissionSetPermission:
 
     @property
     def table_name(self):
-        """Gets the table_name of this PermissionSetPermission.
+        r"""Gets the table_name of this PermissionSetPermission.
 
         表名称
 
@@ -495,7 +495,7 @@ class PermissionSetPermission:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PermissionSetPermission.
+        r"""Sets the table_name of this PermissionSetPermission.
 
         表名称
 
@@ -506,7 +506,7 @@ class PermissionSetPermission:
 
     @property
     def column_name(self):
-        """Gets the column_name of this PermissionSetPermission.
+        r"""Gets the column_name of this PermissionSetPermission.
 
         列名称
 
@@ -517,7 +517,7 @@ class PermissionSetPermission:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this PermissionSetPermission.
+        r"""Sets the column_name of this PermissionSetPermission.
 
         列名称
 
@@ -528,7 +528,7 @@ class PermissionSetPermission:
 
     @property
     def row_level_security(self):
-        """Gets the row_level_security of this PermissionSetPermission.
+        r"""Gets the row_level_security of this PermissionSetPermission.
 
         行级策略
 
@@ -539,7 +539,7 @@ class PermissionSetPermission:
 
     @row_level_security.setter
     def row_level_security(self, row_level_security):
-        """Sets the row_level_security of this PermissionSetPermission.
+        r"""Sets the row_level_security of this PermissionSetPermission.
 
         行级策略
 
@@ -550,7 +550,7 @@ class PermissionSetPermission:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this PermissionSetPermission.
+        r"""Gets the sync_status of this PermissionSetPermission.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -561,7 +561,7 @@ class PermissionSetPermission:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this PermissionSetPermission.
+        r"""Sets the sync_status of this PermissionSetPermission.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -572,7 +572,7 @@ class PermissionSetPermission:
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this PermissionSetPermission.
+        r"""Gets the sync_msg of this PermissionSetPermission.
 
         同步信息
 
@@ -583,7 +583,7 @@ class PermissionSetPermission:
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this PermissionSetPermission.
+        r"""Sets the sync_msg of this PermissionSetPermission.
 
         同步信息
 
@@ -594,7 +594,7 @@ class PermissionSetPermission:
 
     @property
     def url(self):
-        """Gets the url of this PermissionSetPermission.
+        r"""Gets the url of this PermissionSetPermission.
 
         url路径名称。
 
@@ -605,7 +605,7 @@ class PermissionSetPermission:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PermissionSetPermission.
+        r"""Sets the url of this PermissionSetPermission.
 
         url路径名称。
 

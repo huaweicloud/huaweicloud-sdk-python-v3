@@ -34,7 +34,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """UpdateNodePoolConfigurationResponse
+        r"""UpdateNodePoolConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateNodePoolConfigurationResponse.
+        r"""Gets the api_version of this UpdateNodePoolConfigurationResponse.
 
         API版本
 
@@ -83,7 +83,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateNodePoolConfigurationResponse.
+        r"""Sets the api_version of this UpdateNodePoolConfigurationResponse.
 
         API版本
 
@@ -94,7 +94,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateNodePoolConfigurationResponse.
+        r"""Gets the kind of this UpdateNodePoolConfigurationResponse.
 
         API类型，固定值**Configuration**
 
@@ -105,7 +105,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateNodePoolConfigurationResponse.
+        r"""Sets the kind of this UpdateNodePoolConfigurationResponse.
 
         API类型，固定值**Configuration**
 
@@ -116,7 +116,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateNodePoolConfigurationResponse.
+        r"""Gets the metadata of this UpdateNodePoolConfigurationResponse.
 
         :return: The metadata of this UpdateNodePoolConfigurationResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ConfigurationMetadata`
@@ -125,7 +125,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateNodePoolConfigurationResponse.
+        r"""Sets the metadata of this UpdateNodePoolConfigurationResponse.
 
         :param metadata: The metadata of this UpdateNodePoolConfigurationResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.ConfigurationMetadata`
@@ -134,7 +134,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateNodePoolConfigurationResponse.
+        r"""Gets the spec of this UpdateNodePoolConfigurationResponse.
 
         :return: The spec of this UpdateNodePoolConfigurationResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpec`
@@ -143,7 +143,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateNodePoolConfigurationResponse.
+        r"""Sets the spec of this UpdateNodePoolConfigurationResponse.
 
         :param spec: The spec of this UpdateNodePoolConfigurationResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterConfigurationsSpec`
@@ -152,7 +152,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateNodePoolConfigurationResponse.
+        r"""Gets the status of this UpdateNodePoolConfigurationResponse.
 
         Configuration的状态信息
 
@@ -163,7 +163,7 @@ class UpdateNodePoolConfigurationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateNodePoolConfigurationResponse.
+        r"""Sets the status of this UpdateNodePoolConfigurationResponse.
 
         Configuration的状态信息
 

@@ -27,7 +27,7 @@ class ShowDataSetsRequest:
     }
 
     def __init__(self, instance=None, body=None):
-        """ShowDataSetsRequest
+        r"""ShowDataSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDataSetsRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowDataSetsRequest.
+        r"""Gets the instance of this ShowDataSetsRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ShowDataSetsRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowDataSetsRequest.
+        r"""Sets the instance of this ShowDataSetsRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ShowDataSetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowDataSetsRequest.
+        r"""Gets the body of this ShowDataSetsRequest.
 
         :return: The body of this ShowDataSetsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchParameter`
@@ -80,7 +80,7 @@ class ShowDataSetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDataSetsRequest.
+        r"""Sets the body of this ShowDataSetsRequest.
 
         :param body: The body of this ShowDataSetsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.SearchParameter`

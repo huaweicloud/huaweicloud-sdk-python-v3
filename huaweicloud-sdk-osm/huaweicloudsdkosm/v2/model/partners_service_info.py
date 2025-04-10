@@ -33,7 +33,7 @@ class PartnersServiceInfo:
     }
 
     def __init__(self, customer_id=None, customer_name=None, service_time_zone=None, service_time_day=None, service_time_hour=None):
-        """PartnersServiceInfo
+        r"""PartnersServiceInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PartnersServiceInfo:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this PartnersServiceInfo.
+        r"""Gets the customer_id of this PartnersServiceInfo.
 
         客户id
 
@@ -82,7 +82,7 @@ class PartnersServiceInfo:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this PartnersServiceInfo.
+        r"""Sets the customer_id of this PartnersServiceInfo.
 
         客户id
 
@@ -93,7 +93,7 @@ class PartnersServiceInfo:
 
     @property
     def customer_name(self):
-        """Gets the customer_name of this PartnersServiceInfo.
+        r"""Gets the customer_name of this PartnersServiceInfo.
 
         客户名称
 
@@ -104,7 +104,7 @@ class PartnersServiceInfo:
 
     @customer_name.setter
     def customer_name(self, customer_name):
-        """Sets the customer_name of this PartnersServiceInfo.
+        r"""Sets the customer_name of this PartnersServiceInfo.
 
         客户名称
 
@@ -115,7 +115,7 @@ class PartnersServiceInfo:
 
     @property
     def service_time_zone(self):
-        """Gets the service_time_zone of this PartnersServiceInfo.
+        r"""Gets the service_time_zone of this PartnersServiceInfo.
 
         服务时区，GMT+08:00
 
@@ -126,7 +126,7 @@ class PartnersServiceInfo:
 
     @service_time_zone.setter
     def service_time_zone(self, service_time_zone):
-        """Sets the service_time_zone of this PartnersServiceInfo.
+        r"""Sets the service_time_zone of this PartnersServiceInfo.
 
         服务时区，GMT+08:00
 
@@ -137,7 +137,7 @@ class PartnersServiceInfo:
 
     @property
     def service_time_day(self):
-        """Gets the service_time_day of this PartnersServiceInfo.
+        r"""Gets the service_time_day of this PartnersServiceInfo.
 
         每周服务天数
 
@@ -148,7 +148,7 @@ class PartnersServiceInfo:
 
     @service_time_day.setter
     def service_time_day(self, service_time_day):
-        """Sets the service_time_day of this PartnersServiceInfo.
+        r"""Sets the service_time_day of this PartnersServiceInfo.
 
         每周服务天数
 
@@ -159,7 +159,7 @@ class PartnersServiceInfo:
 
     @property
     def service_time_hour(self):
-        """Gets the service_time_hour of this PartnersServiceInfo.
+        r"""Gets the service_time_hour of this PartnersServiceInfo.
 
         每天服务小时
 
@@ -170,7 +170,7 @@ class PartnersServiceInfo:
 
     @service_time_hour.setter
     def service_time_hour(self, service_time_hour):
-        """Sets the service_time_hour of this PartnersServiceInfo.
+        r"""Sets the service_time_hour of this PartnersServiceInfo.
 
         每天服务小时
 

@@ -25,7 +25,7 @@ class ShowWorkflowInfoRequest:
     }
 
     def __init__(self, graph_name=None):
-        """ShowWorkflowInfoRequest
+        r"""ShowWorkflowInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowWorkflowInfoRequest:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this ShowWorkflowInfoRequest.
+        r"""Gets the graph_name of this ShowWorkflowInfoRequest.
 
         工作流名。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符。
 
@@ -53,7 +53,7 @@ class ShowWorkflowInfoRequest:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this ShowWorkflowInfoRequest.
+        r"""Sets the graph_name of this ShowWorkflowInfoRequest.
 
         工作流名。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符。
 

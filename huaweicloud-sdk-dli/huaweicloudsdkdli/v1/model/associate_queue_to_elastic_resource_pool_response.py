@@ -28,7 +28,7 @@ class AssociateQueueToElasticResourcePoolResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None):
-        """AssociateQueueToElasticResourcePoolResponse
+        r"""AssociateQueueToElasticResourcePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AssociateQueueToElasticResourcePoolResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this AssociateQueueToElasticResourcePoolResponse.
+        r"""Gets the is_success of this AssociateQueueToElasticResourcePoolResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -62,7 +62,7 @@ class AssociateQueueToElasticResourcePoolResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this AssociateQueueToElasticResourcePoolResponse.
+        r"""Sets the is_success of this AssociateQueueToElasticResourcePoolResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -73,7 +73,7 @@ class AssociateQueueToElasticResourcePoolResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this AssociateQueueToElasticResourcePoolResponse.
+        r"""Gets the message of this AssociateQueueToElasticResourcePoolResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -84,7 +84,7 @@ class AssociateQueueToElasticResourcePoolResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AssociateQueueToElasticResourcePoolResponse.
+        r"""Sets the message of this AssociateQueueToElasticResourcePoolResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 

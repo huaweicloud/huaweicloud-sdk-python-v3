@@ -43,7 +43,7 @@ class ApplicationView:
     }
 
     def __init__(self, component_count=None, unified_model=None, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
-        """ApplicationView
+        r"""ApplicationView
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ApplicationView:
 
     @property
     def component_count(self):
-        """Gets the component_count of this ApplicationView.
+        r"""Gets the component_count of this ApplicationView.
 
         组件个数。
 
@@ -117,7 +117,7 @@ class ApplicationView:
 
     @component_count.setter
     def component_count(self, component_count):
-        """Sets the component_count of this ApplicationView.
+        r"""Sets the component_count of this ApplicationView.
 
         组件个数。
 
@@ -128,7 +128,7 @@ class ApplicationView:
 
     @property
     def unified_model(self):
-        """Gets the unified_model of this ApplicationView.
+        r"""Gets the unified_model of this ApplicationView.
 
         是否开启统一模型
 
@@ -139,7 +139,7 @@ class ApplicationView:
 
     @unified_model.setter
     def unified_model(self, unified_model):
-        """Sets the unified_model of this ApplicationView.
+        r"""Sets the unified_model of this ApplicationView.
 
         是否开启统一模型
 
@@ -150,7 +150,7 @@ class ApplicationView:
 
     @property
     def id(self):
-        """Gets the id of this ApplicationView.
+        r"""Gets the id of this ApplicationView.
 
         应用ID。
 
@@ -161,7 +161,7 @@ class ApplicationView:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicationView.
+        r"""Sets the id of this ApplicationView.
 
         应用ID。
 
@@ -172,7 +172,7 @@ class ApplicationView:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationView.
+        r"""Gets the name of this ApplicationView.
 
         应用名称。
 
@@ -183,7 +183,7 @@ class ApplicationView:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationView.
+        r"""Sets the name of this ApplicationView.
 
         应用名称。
 
@@ -194,7 +194,7 @@ class ApplicationView:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationView.
+        r"""Gets the description of this ApplicationView.
 
         应用描述。
 
@@ -205,7 +205,7 @@ class ApplicationView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationView.
+        r"""Sets the description of this ApplicationView.
 
         应用描述。
 
@@ -216,7 +216,7 @@ class ApplicationView:
 
     @property
     def creator(self):
-        """Gets the creator of this ApplicationView.
+        r"""Gets the creator of this ApplicationView.
 
         创建人。
 
@@ -227,7 +227,7 @@ class ApplicationView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ApplicationView.
+        r"""Sets the creator of this ApplicationView.
 
         创建人。
 
@@ -238,7 +238,7 @@ class ApplicationView:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ApplicationView.
+        r"""Gets the project_id of this ApplicationView.
 
         项目ID。
 
@@ -249,7 +249,7 @@ class ApplicationView:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ApplicationView.
+        r"""Sets the project_id of this ApplicationView.
 
         项目ID。
 
@@ -260,7 +260,7 @@ class ApplicationView:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplicationView.
+        r"""Gets the enterprise_project_id of this ApplicationView.
 
         企业项目ID。
 
@@ -271,7 +271,7 @@ class ApplicationView:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplicationView.
+        r"""Sets the enterprise_project_id of this ApplicationView.
 
         企业项目ID。
 
@@ -282,7 +282,7 @@ class ApplicationView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApplicationView.
+        r"""Gets the create_time of this ApplicationView.
 
         创建时间。
 
@@ -293,7 +293,7 @@ class ApplicationView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApplicationView.
+        r"""Sets the create_time of this ApplicationView.
 
         创建时间。
 
@@ -304,7 +304,7 @@ class ApplicationView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApplicationView.
+        r"""Gets the update_time of this ApplicationView.
 
         修改时间。
 
@@ -315,7 +315,7 @@ class ApplicationView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApplicationView.
+        r"""Sets the update_time of this ApplicationView.
 
         修改时间。
 

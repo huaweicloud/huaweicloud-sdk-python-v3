@@ -30,7 +30,7 @@ class ListRequestPropertiesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListRequestPropertiesResponse
+        r"""ListRequestPropertiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRequestPropertiesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRequestPropertiesResponse.
+        r"""Gets the total of this ListRequestPropertiesResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListRequestPropertiesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRequestPropertiesResponse.
+        r"""Sets the total of this ListRequestPropertiesResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListRequestPropertiesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListRequestPropertiesResponse.
+        r"""Gets the size of this ListRequestPropertiesResponse.
 
         本次返回数量
 
@@ -91,7 +91,7 @@ class ListRequestPropertiesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListRequestPropertiesResponse.
+        r"""Sets the size of this ListRequestPropertiesResponse.
 
         本次返回数量
 
@@ -102,7 +102,7 @@ class ListRequestPropertiesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListRequestPropertiesResponse.
+        r"""Gets the items of this ListRequestPropertiesResponse.
 
         属性列表
 
@@ -113,7 +113,7 @@ class ListRequestPropertiesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListRequestPropertiesResponse.
+        r"""Sets the items of this ListRequestPropertiesResponse.
 
         属性列表
 

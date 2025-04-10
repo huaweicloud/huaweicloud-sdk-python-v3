@@ -33,7 +33,7 @@ class ShowHttpBlockTrustIpRulesRequest:
     }
 
     def __init__(self, policy_id=None, name=None, addr=None, page=None, pagesize=None):
-        """ShowHttpBlockTrustIpRulesRequest
+        r"""ShowHttpBlockTrustIpRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Gets the policy_id of this ShowHttpBlockTrustIpRulesRequest.
 
         策略id
 
@@ -81,7 +81,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Sets the policy_id of this ShowHttpBlockTrustIpRulesRequest.
 
         策略id
 
@@ -92,7 +92,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Gets the name of this ShowHttpBlockTrustIpRulesRequest.
 
         规则名称
 
@@ -103,7 +103,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Sets the name of this ShowHttpBlockTrustIpRulesRequest.
 
         规则名称
 
@@ -114,7 +114,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @property
     def addr(self):
-        """Gets the addr of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Gets the addr of this ShowHttpBlockTrustIpRulesRequest.
 
         ip/ip段
 
@@ -125,7 +125,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Sets the addr of this ShowHttpBlockTrustIpRulesRequest.
 
         ip/ip段
 
@@ -136,7 +136,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Gets the page of this ShowHttpBlockTrustIpRulesRequest.
 
         分页查询参数，第page页
 
@@ -147,7 +147,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Sets the page of this ShowHttpBlockTrustIpRulesRequest.
 
         分页查询参数，第page页
 
@@ -158,7 +158,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Gets the pagesize of this ShowHttpBlockTrustIpRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -169,7 +169,7 @@ class ShowHttpBlockTrustIpRulesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpBlockTrustIpRulesRequest.
+        r"""Sets the pagesize of this ShowHttpBlockTrustIpRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 

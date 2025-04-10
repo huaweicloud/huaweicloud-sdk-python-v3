@@ -35,7 +35,7 @@ class ShowClusterRedistributionRequest:
     }
 
     def __init__(self, cluster_id=None, limit=None, offset=None, db_name=None, table_name=None, type=None):
-        """ShowClusterRedistributionRequest
+        r"""ShowClusterRedistributionRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowClusterRedistributionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterRedistributionRequest.
+        r"""Gets the cluster_id of this ShowClusterRedistributionRequest.
 
         集群ID
 
@@ -88,7 +88,7 @@ class ShowClusterRedistributionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterRedistributionRequest.
+        r"""Sets the cluster_id of this ShowClusterRedistributionRequest.
 
         集群ID
 
@@ -99,7 +99,7 @@ class ShowClusterRedistributionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowClusterRedistributionRequest.
+        r"""Gets the limit of this ShowClusterRedistributionRequest.
 
         分页查询，每页大小
 
@@ -110,7 +110,7 @@ class ShowClusterRedistributionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowClusterRedistributionRequest.
+        r"""Sets the limit of this ShowClusterRedistributionRequest.
 
         分页查询，每页大小
 
@@ -121,7 +121,7 @@ class ShowClusterRedistributionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowClusterRedistributionRequest.
+        r"""Gets the offset of this ShowClusterRedistributionRequest.
 
         分页查询，偏移
 
@@ -132,7 +132,7 @@ class ShowClusterRedistributionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowClusterRedistributionRequest.
+        r"""Sets the offset of this ShowClusterRedistributionRequest.
 
         分页查询，偏移
 
@@ -143,7 +143,7 @@ class ShowClusterRedistributionRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ShowClusterRedistributionRequest.
+        r"""Gets the db_name of this ShowClusterRedistributionRequest.
 
         数据库名称
 
@@ -154,7 +154,7 @@ class ShowClusterRedistributionRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ShowClusterRedistributionRequest.
+        r"""Sets the db_name of this ShowClusterRedistributionRequest.
 
         数据库名称
 
@@ -165,7 +165,7 @@ class ShowClusterRedistributionRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowClusterRedistributionRequest.
+        r"""Gets the table_name of this ShowClusterRedistributionRequest.
 
         表名称
 
@@ -176,7 +176,7 @@ class ShowClusterRedistributionRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowClusterRedistributionRequest.
+        r"""Sets the table_name of this ShowClusterRedistributionRequest.
 
         表名称
 
@@ -187,7 +187,7 @@ class ShowClusterRedistributionRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowClusterRedistributionRequest.
+        r"""Gets the type of this ShowClusterRedistributionRequest.
 
         类型
 
@@ -198,7 +198,7 @@ class ShowClusterRedistributionRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowClusterRedistributionRequest.
+        r"""Sets the type of this ShowClusterRedistributionRequest.
 
         类型
 

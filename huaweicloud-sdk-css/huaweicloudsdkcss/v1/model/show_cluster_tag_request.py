@@ -27,7 +27,7 @@ class ShowClusterTagRequest:
     }
 
     def __init__(self, cluster_id=None, resource_type=None):
-        """ShowClusterTagRequest
+        r"""ShowClusterTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowClusterTagRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterTagRequest.
+        r"""Gets the cluster_id of this ShowClusterTagRequest.
 
         指定待查询的集群ID。
 
@@ -59,7 +59,7 @@ class ShowClusterTagRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterTagRequest.
+        r"""Sets the cluster_id of this ShowClusterTagRequest.
 
         指定待查询的集群ID。
 
@@ -70,7 +70,7 @@ class ShowClusterTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowClusterTagRequest.
+        r"""Gets the resource_type of this ShowClusterTagRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -81,7 +81,7 @@ class ShowClusterTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowClusterTagRequest.
+        r"""Sets the resource_type of this ShowClusterTagRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 

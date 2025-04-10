@@ -25,7 +25,7 @@ class CreateSiteInformationPair:
     }
 
     def __init__(self, sites=None):
-        """CreateSiteInformationPair
+        r"""CreateSiteInformationPair
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSiteInformationPair:
 
     @property
     def sites(self):
-        """Gets the sites of this CreateSiteInformationPair.
+        r"""Gets the sites of this CreateSiteInformationPair.
 
         端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
 
@@ -53,7 +53,7 @@ class CreateSiteInformationPair:
 
     @sites.setter
     def sites(self, sites):
-        """Sets the sites of this CreateSiteInformationPair.
+        r"""Sets the sites of this CreateSiteInformationPair.
 
         端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
 

@@ -29,7 +29,7 @@ class KnowledgePointsListRequestBody:
     }
 
     def __init__(self, name=None, page_size=None, start_index=None):
-        """KnowledgePointsListRequestBody
+        r"""KnowledgePointsListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class KnowledgePointsListRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this KnowledgePointsListRequestBody.
+        r"""Gets the name of this KnowledgePointsListRequestBody.
 
         名称模糊查询
 
@@ -68,7 +68,7 @@ class KnowledgePointsListRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KnowledgePointsListRequestBody.
+        r"""Sets the name of this KnowledgePointsListRequestBody.
 
         名称模糊查询
 
@@ -79,7 +79,7 @@ class KnowledgePointsListRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this KnowledgePointsListRequestBody.
+        r"""Gets the page_size of this KnowledgePointsListRequestBody.
 
         每页数量
 
@@ -90,7 +90,7 @@ class KnowledgePointsListRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this KnowledgePointsListRequestBody.
+        r"""Sets the page_size of this KnowledgePointsListRequestBody.
 
         每页数量
 
@@ -101,7 +101,7 @@ class KnowledgePointsListRequestBody:
 
     @property
     def start_index(self):
-        """Gets the start_index of this KnowledgePointsListRequestBody.
+        r"""Gets the start_index of this KnowledgePointsListRequestBody.
 
         起始页
 
@@ -112,7 +112,7 @@ class KnowledgePointsListRequestBody:
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this KnowledgePointsListRequestBody.
+        r"""Sets the start_index of this KnowledgePointsListRequestBody.
 
         起始页
 

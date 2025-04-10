@@ -29,7 +29,7 @@ class SendVerifyCodeReq:
     }
 
     def __init__(self, contact_value=None, contact_way=None, area_code=None):
-        """SendVerifyCodeReq
+        r"""SendVerifyCodeReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SendVerifyCodeReq:
 
     @property
     def contact_value(self):
-        """Gets the contact_value of this SendVerifyCodeReq.
+        r"""Gets the contact_value of this SendVerifyCodeReq.
 
         联系方式的值
 
@@ -65,7 +65,7 @@ class SendVerifyCodeReq:
 
     @contact_value.setter
     def contact_value(self, contact_value):
-        """Sets the contact_value of this SendVerifyCodeReq.
+        r"""Sets the contact_value of this SendVerifyCodeReq.
 
         联系方式的值
 
@@ -76,7 +76,7 @@ class SendVerifyCodeReq:
 
     @property
     def contact_way(self):
-        """Gets the contact_way of this SendVerifyCodeReq.
+        r"""Gets the contact_way of this SendVerifyCodeReq.
 
         联系方式的类型，0：短信；1：邮件
 
@@ -87,7 +87,7 @@ class SendVerifyCodeReq:
 
     @contact_way.setter
     def contact_way(self, contact_way):
-        """Sets the contact_way of this SendVerifyCodeReq.
+        r"""Sets the contact_way of this SendVerifyCodeReq.
 
         联系方式的类型，0：短信；1：邮件
 
@@ -98,7 +98,7 @@ class SendVerifyCodeReq:
 
     @property
     def area_code(self):
-        """Gets the area_code of this SendVerifyCodeReq.
+        r"""Gets the area_code of this SendVerifyCodeReq.
 
         国家码
 
@@ -109,7 +109,7 @@ class SendVerifyCodeReq:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this SendVerifyCodeReq.
+        r"""Sets the area_code of this SendVerifyCodeReq.
 
         国家码
 

@@ -31,7 +31,7 @@ class MysqlEngineVersionInfo:
     }
 
     def __init__(self, id=None, name=None, version=None, kernel_version=None):
-        """MysqlEngineVersionInfo
+        r"""MysqlEngineVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class MysqlEngineVersionInfo:
 
     @property
     def id(self):
-        """Gets the id of this MysqlEngineVersionInfo.
+        r"""Gets the id of this MysqlEngineVersionInfo.
 
         数据库版本ID，该字段不会有重复
 
@@ -73,7 +73,7 @@ class MysqlEngineVersionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlEngineVersionInfo.
+        r"""Sets the id of this MysqlEngineVersionInfo.
 
         数据库版本ID，该字段不会有重复
 
@@ -84,7 +84,7 @@ class MysqlEngineVersionInfo:
 
     @property
     def name(self):
-        """Gets the name of this MysqlEngineVersionInfo.
+        r"""Gets the name of this MysqlEngineVersionInfo.
 
         数据库版本号，只返回两位数的大版本号
 
@@ -95,7 +95,7 @@ class MysqlEngineVersionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlEngineVersionInfo.
+        r"""Sets the name of this MysqlEngineVersionInfo.
 
         数据库版本号，只返回两位数的大版本号
 
@@ -106,7 +106,7 @@ class MysqlEngineVersionInfo:
 
     @property
     def version(self):
-        """Gets the version of this MysqlEngineVersionInfo.
+        r"""Gets the version of this MysqlEngineVersionInfo.
 
         兼容的开源数据库版本号，返回三位开源版本号。
 
@@ -117,7 +117,7 @@ class MysqlEngineVersionInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MysqlEngineVersionInfo.
+        r"""Sets the version of this MysqlEngineVersionInfo.
 
         兼容的开源数据库版本号，返回三位开源版本号。
 
@@ -128,7 +128,7 @@ class MysqlEngineVersionInfo:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this MysqlEngineVersionInfo.
+        r"""Gets the kernel_version of this MysqlEngineVersionInfo.
 
         数据库版本号，返回完整的四位版本号。
 
@@ -139,7 +139,7 @@ class MysqlEngineVersionInfo:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this MysqlEngineVersionInfo.
+        r"""Sets the kernel_version of this MysqlEngineVersionInfo.
 
         数据库版本号，返回完整的四位版本号。
 

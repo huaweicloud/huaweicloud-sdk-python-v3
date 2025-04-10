@@ -26,7 +26,7 @@ class CancelScheduledTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CancelScheduledTaskResponse
+        r"""CancelScheduledTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelScheduledTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CancelScheduledTaskResponse.
+        r"""Gets the body of this CancelScheduledTaskResponse.
 
         :return: The body of this CancelScheduledTaskResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CancelScheduledTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelScheduledTaskResponse.
+        r"""Sets the body of this CancelScheduledTaskResponse.
 
         :param body: The body of this CancelScheduledTaskResponse.
         :type body: str

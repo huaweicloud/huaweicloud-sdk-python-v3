@@ -27,7 +27,7 @@ class NetworkTrafficStats:
     }
 
     def __init__(self, output_throughput=None, input_throughput=None):
-        """NetworkTrafficStats
+        r"""NetworkTrafficStats
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NetworkTrafficStats:
 
     @property
     def output_throughput(self):
-        """Gets the output_throughput of this NetworkTrafficStats.
+        r"""Gets the output_throughput of this NetworkTrafficStats.
 
         下行吞吐量（byte）
 
@@ -61,7 +61,7 @@ class NetworkTrafficStats:
 
     @output_throughput.setter
     def output_throughput(self, output_throughput):
-        """Sets the output_throughput of this NetworkTrafficStats.
+        r"""Sets the output_throughput of this NetworkTrafficStats.
 
         下行吞吐量（byte）
 
@@ -72,7 +72,7 @@ class NetworkTrafficStats:
 
     @property
     def input_throughput(self):
-        """Gets the input_throughput of this NetworkTrafficStats.
+        r"""Gets the input_throughput of this NetworkTrafficStats.
 
         上行吞吐量（byte）
 
@@ -83,7 +83,7 @@ class NetworkTrafficStats:
 
     @input_throughput.setter
     def input_throughput(self, input_throughput):
-        """Sets the input_throughput of this NetworkTrafficStats.
+        r"""Sets the input_throughput of this NetworkTrafficStats.
 
         上行吞吐量（byte）
 

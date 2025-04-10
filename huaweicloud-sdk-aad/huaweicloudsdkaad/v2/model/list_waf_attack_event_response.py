@@ -28,7 +28,7 @@ class ListWafAttackEventResponse(SdkResponse):
     }
 
     def __init__(self, total=None, list=None):
-        """ListWafAttackEventResponse
+        r"""ListWafAttackEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWafAttackEventResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWafAttackEventResponse.
+        r"""Gets the total of this ListWafAttackEventResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ListWafAttackEventResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWafAttackEventResponse.
+        r"""Sets the total of this ListWafAttackEventResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ListWafAttackEventResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ListWafAttackEventResponse.
+        r"""Gets the list of this ListWafAttackEventResponse.
 
         list
 
@@ -84,7 +84,7 @@ class ListWafAttackEventResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListWafAttackEventResponse.
+        r"""Sets the list of this ListWafAttackEventResponse.
 
         list
 

@@ -29,7 +29,7 @@ class PipelineTemplateInfo:
     }
 
     def __init__(self, id=None, name=None, detail=None):
-        """PipelineTemplateInfo
+        r"""PipelineTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PipelineTemplateInfo:
 
     @property
     def id(self):
-        """Gets the id of this PipelineTemplateInfo.
+        r"""Gets the id of this PipelineTemplateInfo.
 
         流水线模板的id。
 
@@ -68,7 +68,7 @@ class PipelineTemplateInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineTemplateInfo.
+        r"""Sets the id of this PipelineTemplateInfo.
 
         流水线模板的id。
 
@@ -79,7 +79,7 @@ class PipelineTemplateInfo:
 
     @property
     def name(self):
-        """Gets the name of this PipelineTemplateInfo.
+        r"""Gets the name of this PipelineTemplateInfo.
 
         流水线模板的名称。
 
@@ -90,7 +90,7 @@ class PipelineTemplateInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineTemplateInfo.
+        r"""Sets the name of this PipelineTemplateInfo.
 
         流水线模板的名称。
 
@@ -101,7 +101,7 @@ class PipelineTemplateInfo:
 
     @property
     def detail(self):
-        """Gets the detail of this PipelineTemplateInfo.
+        r"""Gets the detail of this PipelineTemplateInfo.
 
         流水线模板的详细信息。
 
@@ -112,7 +112,7 @@ class PipelineTemplateInfo:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this PipelineTemplateInfo.
+        r"""Sets the detail of this PipelineTemplateInfo.
 
         流水线模板的详细信息。
 

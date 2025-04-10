@@ -27,7 +27,7 @@ class QualityInfoList:
     }
 
     def __init__(self, video=None, audio=None):
-        """QualityInfoList
+        r"""QualityInfoList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QualityInfoList:
 
     @property
     def video(self):
-        """Gets the video of this QualityInfoList.
+        r"""Gets the video of this QualityInfoList.
 
         :return: The video of this QualityInfoList.
         :rtype: :class:`huaweicloudsdkvod.v1.VideoInfo`
@@ -59,7 +59,7 @@ class QualityInfoList:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this QualityInfoList.
+        r"""Sets the video of this QualityInfoList.
 
         :param video: The video of this QualityInfoList.
         :type video: :class:`huaweicloudsdkvod.v1.VideoInfo`
@@ -68,7 +68,7 @@ class QualityInfoList:
 
     @property
     def audio(self):
-        """Gets the audio of this QualityInfoList.
+        r"""Gets the audio of this QualityInfoList.
 
         :return: The audio of this QualityInfoList.
         :rtype: :class:`huaweicloudsdkvod.v1.AudioInfo`
@@ -77,7 +77,7 @@ class QualityInfoList:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this QualityInfoList.
+        r"""Sets the audio of this QualityInfoList.
 
         :param audio: The audio of this QualityInfoList.
         :type audio: :class:`huaweicloudsdkvod.v1.AudioInfo`

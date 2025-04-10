@@ -29,7 +29,7 @@ class UpdatePeerLinkRequest:
     }
 
     def __init__(self, global_dc_gateway_id=None, peer_link_id=None, body=None):
-        """UpdatePeerLinkRequest
+        r"""UpdatePeerLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePeerLinkRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this UpdatePeerLinkRequest.
+        r"""Gets the global_dc_gateway_id of this UpdatePeerLinkRequest.
 
         全域接入网关ID
 
@@ -66,7 +66,7 @@ class UpdatePeerLinkRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this UpdatePeerLinkRequest.
+        r"""Sets the global_dc_gateway_id of this UpdatePeerLinkRequest.
 
         全域接入网关ID
 
@@ -77,7 +77,7 @@ class UpdatePeerLinkRequest:
 
     @property
     def peer_link_id(self):
-        """Gets the peer_link_id of this UpdatePeerLinkRequest.
+        r"""Gets the peer_link_id of this UpdatePeerLinkRequest.
 
         全域接入网关对等体
 
@@ -88,7 +88,7 @@ class UpdatePeerLinkRequest:
 
     @peer_link_id.setter
     def peer_link_id(self, peer_link_id):
-        """Sets the peer_link_id of this UpdatePeerLinkRequest.
+        r"""Sets the peer_link_id of this UpdatePeerLinkRequest.
 
         全域接入网关对等体
 
@@ -99,7 +99,7 @@ class UpdatePeerLinkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePeerLinkRequest.
+        r"""Gets the body of this UpdatePeerLinkRequest.
 
         :return: The body of this UpdatePeerLinkRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBody`
@@ -108,7 +108,7 @@ class UpdatePeerLinkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePeerLinkRequest.
+        r"""Sets the body of this UpdatePeerLinkRequest.
 
         :param body: The body of this UpdatePeerLinkRequest.
         :type body: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBody`

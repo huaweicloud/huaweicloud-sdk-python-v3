@@ -27,7 +27,7 @@ class ServerModelExtendSpecOsVolume:
     }
 
     def __init__(self, size=None, volume_type=None):
-        """ServerModelExtendSpecOsVolume
+        r"""ServerModelExtendSpecOsVolume
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServerModelExtendSpecOsVolume:
 
     @property
     def size(self):
-        """Gets the size of this ServerModelExtendSpecOsVolume.
+        r"""Gets the size of this ServerModelExtendSpecOsVolume.
 
         操作系统盘大小
 
@@ -61,7 +61,7 @@ class ServerModelExtendSpecOsVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ServerModelExtendSpecOsVolume.
+        r"""Sets the size of this ServerModelExtendSpecOsVolume.
 
         操作系统盘大小
 
@@ -72,7 +72,7 @@ class ServerModelExtendSpecOsVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ServerModelExtendSpecOsVolume.
+        r"""Gets the volume_type of this ServerModelExtendSpecOsVolume.
 
         操作系统盘类型
 
@@ -83,7 +83,7 @@ class ServerModelExtendSpecOsVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ServerModelExtendSpecOsVolume.
+        r"""Sets the volume_type of this ServerModelExtendSpecOsVolume.
 
         操作系统盘类型
 

@@ -25,7 +25,7 @@ class DeleteVpnConnectionsLogConfigRequest:
     }
 
     def __init__(self, p2c_vgw_id=None):
-        """DeleteVpnConnectionsLogConfigRequest
+        r"""DeleteVpnConnectionsLogConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVpnConnectionsLogConfigRequest:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this DeleteVpnConnectionsLogConfigRequest.
+        r"""Gets the p2c_vgw_id of this DeleteVpnConnectionsLogConfigRequest.
 
         P2C VPN网关实例ID
 
@@ -53,7 +53,7 @@ class DeleteVpnConnectionsLogConfigRequest:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this DeleteVpnConnectionsLogConfigRequest.
+        r"""Sets the p2c_vgw_id of this DeleteVpnConnectionsLogConfigRequest.
 
         P2C VPN网关实例ID
 

@@ -27,7 +27,7 @@ class RDMParamVOGetTokenDto:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOGetTokenDto
+        r"""RDMParamVOGetTokenDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RDMParamVOGetTokenDto:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOGetTokenDto.
+        r"""Gets the application_id of this RDMParamVOGetTokenDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -60,7 +60,7 @@ class RDMParamVOGetTokenDto:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOGetTokenDto.
+        r"""Sets the application_id of this RDMParamVOGetTokenDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -71,7 +71,7 @@ class RDMParamVOGetTokenDto:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOGetTokenDto.
+        r"""Gets the params of this RDMParamVOGetTokenDto.
 
         :return: The params of this RDMParamVOGetTokenDto.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.GetTokenDto`
@@ -80,7 +80,7 @@ class RDMParamVOGetTokenDto:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOGetTokenDto.
+        r"""Sets the params of this RDMParamVOGetTokenDto.
 
         :param params: The params of this RDMParamVOGetTokenDto.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.GetTokenDto`

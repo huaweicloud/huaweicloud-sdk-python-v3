@@ -27,7 +27,7 @@ class GlanceShowImageMemberRequest:
     }
 
     def __init__(self, image_id=None, member_id=None):
-        """GlanceShowImageMemberRequest
+        r"""GlanceShowImageMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GlanceShowImageMemberRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceShowImageMemberRequest.
+        r"""Gets the image_id of this GlanceShowImageMemberRequest.
 
         镜像id
 
@@ -59,7 +59,7 @@ class GlanceShowImageMemberRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceShowImageMemberRequest.
+        r"""Sets the image_id of this GlanceShowImageMemberRequest.
 
         镜像id
 
@@ -70,7 +70,7 @@ class GlanceShowImageMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this GlanceShowImageMemberRequest.
+        r"""Gets the member_id of this GlanceShowImageMemberRequest.
 
         成员id
 
@@ -81,7 +81,7 @@ class GlanceShowImageMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GlanceShowImageMemberRequest.
+        r"""Sets the member_id of this GlanceShowImageMemberRequest.
 
         成员id
 

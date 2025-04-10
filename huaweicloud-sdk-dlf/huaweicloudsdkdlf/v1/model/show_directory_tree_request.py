@@ -35,7 +35,7 @@ class ShowDirectoryTreeRequest:
     }
 
     def __init__(self, workspace=None, category=None, directory_id=None, name=None, offset=None, limit=None):
-        """ShowDirectoryTreeRequest
+        r"""ShowDirectoryTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowDirectoryTreeRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowDirectoryTreeRequest.
+        r"""Gets the workspace of this ShowDirectoryTreeRequest.
 
         工作空间id
 
@@ -89,7 +89,7 @@ class ShowDirectoryTreeRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowDirectoryTreeRequest.
+        r"""Sets the workspace of this ShowDirectoryTreeRequest.
 
         工作空间id
 
@@ -100,7 +100,7 @@ class ShowDirectoryTreeRequest:
 
     @property
     def category(self):
-        """Gets the category of this ShowDirectoryTreeRequest.
+        r"""Gets the category of this ShowDirectoryTreeRequest.
 
         查询的目录节点类型.
 
@@ -111,7 +111,7 @@ class ShowDirectoryTreeRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowDirectoryTreeRequest.
+        r"""Sets the category of this ShowDirectoryTreeRequest.
 
         查询的目录节点类型.
 
@@ -122,7 +122,7 @@ class ShowDirectoryTreeRequest:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this ShowDirectoryTreeRequest.
+        r"""Gets the directory_id of this ShowDirectoryTreeRequest.
 
         目录编号.
 
@@ -133,7 +133,7 @@ class ShowDirectoryTreeRequest:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this ShowDirectoryTreeRequest.
+        r"""Sets the directory_id of this ShowDirectoryTreeRequest.
 
         目录编号.
 
@@ -144,7 +144,7 @@ class ShowDirectoryTreeRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowDirectoryTreeRequest.
+        r"""Gets the name of this ShowDirectoryTreeRequest.
 
         目标元素名称.
 
@@ -155,7 +155,7 @@ class ShowDirectoryTreeRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDirectoryTreeRequest.
+        r"""Sets the name of this ShowDirectoryTreeRequest.
 
         目标元素名称.
 
@@ -166,7 +166,7 @@ class ShowDirectoryTreeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDirectoryTreeRequest.
+        r"""Gets the offset of this ShowDirectoryTreeRequest.
 
         查询偏移量.
 
@@ -177,7 +177,7 @@ class ShowDirectoryTreeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDirectoryTreeRequest.
+        r"""Sets the offset of this ShowDirectoryTreeRequest.
 
         查询偏移量.
 
@@ -188,7 +188,7 @@ class ShowDirectoryTreeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDirectoryTreeRequest.
+        r"""Gets the limit of this ShowDirectoryTreeRequest.
 
         每页显示的条目数量.
 
@@ -199,7 +199,7 @@ class ShowDirectoryTreeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDirectoryTreeRequest.
+        r"""Sets the limit of this ShowDirectoryTreeRequest.
 
         每页显示的条目数量.
 

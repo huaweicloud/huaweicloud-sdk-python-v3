@@ -33,7 +33,7 @@ class OrganizationV2:
     }
 
     def __init__(self, name=None, name_hash=None, node_count=None, status=None, status_detail=None):
-        """OrganizationV2
+        r"""OrganizationV2
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OrganizationV2:
 
     @property
     def name(self):
-        """Gets the name of this OrganizationV2.
+        r"""Gets the name of this OrganizationV2.
 
         组织名称
 
@@ -82,7 +82,7 @@ class OrganizationV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrganizationV2.
+        r"""Sets the name of this OrganizationV2.
 
         组织名称
 
@@ -93,7 +93,7 @@ class OrganizationV2:
 
     @property
     def name_hash(self):
-        """Gets the name_hash of this OrganizationV2.
+        r"""Gets the name_hash of this OrganizationV2.
 
         组织hash
 
@@ -104,7 +104,7 @@ class OrganizationV2:
 
     @name_hash.setter
     def name_hash(self, name_hash):
-        """Sets the name_hash of this OrganizationV2.
+        r"""Sets the name_hash of this OrganizationV2.
 
         组织hash
 
@@ -115,7 +115,7 @@ class OrganizationV2:
 
     @property
     def node_count(self):
-        """Gets the node_count of this OrganizationV2.
+        r"""Gets the node_count of this OrganizationV2.
 
         组织节点
 
@@ -126,7 +126,7 @@ class OrganizationV2:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this OrganizationV2.
+        r"""Sets the node_count of this OrganizationV2.
 
         组织节点
 
@@ -137,7 +137,7 @@ class OrganizationV2:
 
     @property
     def status(self):
-        """Gets the status of this OrganizationV2.
+        r"""Gets the status of this OrganizationV2.
 
         状态
 
@@ -148,7 +148,7 @@ class OrganizationV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OrganizationV2.
+        r"""Sets the status of this OrganizationV2.
 
         状态
 
@@ -159,7 +159,7 @@ class OrganizationV2:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this OrganizationV2.
+        r"""Gets the status_detail of this OrganizationV2.
 
         状态描述
 
@@ -170,7 +170,7 @@ class OrganizationV2:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this OrganizationV2.
+        r"""Sets the status_detail of this OrganizationV2.
 
         状态描述
 

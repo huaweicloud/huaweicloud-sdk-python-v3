@@ -25,7 +25,7 @@ class DeleteTagsDto:
     }
 
     def __init__(self, tags=None):
-        """DeleteTagsDto
+        r"""DeleteTagsDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTagsDto:
 
     @property
     def tags(self):
-        """Gets the tags of this DeleteTagsDto.
+        r"""Gets the tags of this DeleteTagsDto.
 
         防火墙标签列表
 
@@ -54,7 +54,7 @@ class DeleteTagsDto:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeleteTagsDto.
+        r"""Sets the tags of this DeleteTagsDto.
 
         防火墙标签列表
 

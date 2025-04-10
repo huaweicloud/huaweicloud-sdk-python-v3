@@ -30,7 +30,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowRepositoryStatisticsResponse
+        r"""ShowRepositoryStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowRepositoryStatisticsResponse.
+        r"""Gets the error of this ShowRepositoryStatisticsResponse.
 
         :return: The error of this ShowRepositoryStatisticsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowRepositoryStatisticsResponse.
+        r"""Sets the error of this ShowRepositoryStatisticsResponse.
 
         :param error: The error of this ShowRepositoryStatisticsResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowRepositoryStatisticsResponse.
+        r"""Gets the result of this ShowRepositoryStatisticsResponse.
 
         :return: The result of this ShowRepositoryStatisticsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsLaunch`
@@ -85,7 +85,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowRepositoryStatisticsResponse.
+        r"""Sets the result of this ShowRepositoryStatisticsResponse.
 
         :param result: The result of this ShowRepositoryStatisticsResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsLaunch`
@@ -94,7 +94,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRepositoryStatisticsResponse.
+        r"""Gets the status of this ShowRepositoryStatisticsResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowRepositoryStatisticsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRepositoryStatisticsResponse.
+        r"""Sets the status of this ShowRepositoryStatisticsResponse.
 
         响应状态
 

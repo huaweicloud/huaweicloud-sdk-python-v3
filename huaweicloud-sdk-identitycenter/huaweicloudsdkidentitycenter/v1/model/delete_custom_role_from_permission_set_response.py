@@ -24,7 +24,7 @@ class DeleteCustomRoleFromPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteCustomRoleFromPermissionSetResponse
+        r"""DeleteCustomRoleFromPermissionSetResponse
 
         The model defined in huaweicloud sdk
 

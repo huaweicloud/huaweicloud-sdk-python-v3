@@ -30,7 +30,7 @@ class MapVersionEnum:
     }
 
     def __init__(self):
-        """MapVersionEnum
+        r"""MapVersionEnum
 
         The model defined in huaweicloud sdk
 

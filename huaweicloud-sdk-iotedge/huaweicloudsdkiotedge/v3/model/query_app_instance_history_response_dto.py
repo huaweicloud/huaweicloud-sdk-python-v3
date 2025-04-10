@@ -33,7 +33,7 @@ class QueryAppInstanceHistoryResponseDTO:
     }
 
     def __init__(self, app_id=None, app_version=None, version=None, values=None, update_time=None):
-        """QueryAppInstanceHistoryResponseDTO
+        r"""QueryAppInstanceHistoryResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this QueryAppInstanceHistoryResponseDTO.
+        r"""Gets the app_id of this QueryAppInstanceHistoryResponseDTO.
 
         应用ID
 
@@ -82,7 +82,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this QueryAppInstanceHistoryResponseDTO.
+        r"""Sets the app_id of this QueryAppInstanceHistoryResponseDTO.
 
         应用ID
 
@@ -93,7 +93,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this QueryAppInstanceHistoryResponseDTO.
+        r"""Gets the app_version of this QueryAppInstanceHistoryResponseDTO.
 
         应用版本号
 
@@ -104,7 +104,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this QueryAppInstanceHistoryResponseDTO.
+        r"""Sets the app_version of this QueryAppInstanceHistoryResponseDTO.
 
         应用版本号
 
@@ -115,7 +115,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @property
     def version(self):
-        """Gets the version of this QueryAppInstanceHistoryResponseDTO.
+        r"""Gets the version of this QueryAppInstanceHistoryResponseDTO.
 
         应用实例历史版本号
 
@@ -126,7 +126,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QueryAppInstanceHistoryResponseDTO.
+        r"""Sets the version of this QueryAppInstanceHistoryResponseDTO.
 
         应用实例历史版本号
 
@@ -137,7 +137,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @property
     def values(self):
-        """Gets the values of this QueryAppInstanceHistoryResponseDTO.
+        r"""Gets the values of this QueryAppInstanceHistoryResponseDTO.
 
         应用实例chart配置
 
@@ -148,7 +148,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this QueryAppInstanceHistoryResponseDTO.
+        r"""Sets the values of this QueryAppInstanceHistoryResponseDTO.
 
         应用实例chart配置
 
@@ -159,7 +159,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryAppInstanceHistoryResponseDTO.
+        r"""Gets the update_time of this QueryAppInstanceHistoryResponseDTO.
 
         更新时间
 
@@ -170,7 +170,7 @@ class QueryAppInstanceHistoryResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryAppInstanceHistoryResponseDTO.
+        r"""Sets the update_time of this QueryAppInstanceHistoryResponseDTO.
 
         更新时间
 

@@ -24,6 +24,9 @@ class Host:
         'public_ip': 'str',
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
+        'os_name': 'str',
+        'os_version': 'str',
+        'kernel_version': 'str',
         'host_status': 'str',
         'agent_status': 'str',
         'install_result_code': 'str',
@@ -54,7 +57,18 @@ class Host:
         'upgrade_result_code': 'str',
         'upgradable': 'bool',
         'open_time': 'int',
-        'protect_interrupt': 'bool'
+        'protect_interrupt': 'bool',
+        'protect_degradation': 'bool',
+        'host_sources': 'str',
+        'interrupt_reason': 'str',
+        'degradation_reason': 'str',
+        'key_name': 'str',
+        'auto_open_version': 'str',
+        'install_progress': 'int',
+        'vpc_id': 'str',
+        'common_login_area_codes': 'list[int]',
+        'cluster_name': 'str',
+        'cluster_id': 'str'
     }
 
     attribute_map = {
@@ -65,6 +79,9 @@ class Host:
         'public_ip': 'public_ip',
         'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name',
+        'os_name': 'os_name',
+        'os_version': 'os_version',
+        'kernel_version': 'kernel_version',
         'host_status': 'host_status',
         'agent_status': 'agent_status',
         'install_result_code': 'install_result_code',
@@ -95,11 +112,22 @@ class Host:
         'upgrade_result_code': 'upgrade_result_code',
         'upgradable': 'upgradable',
         'open_time': 'open_time',
-        'protect_interrupt': 'protect_interrupt'
+        'protect_interrupt': 'protect_interrupt',
+        'protect_degradation': 'protect_degradation',
+        'host_sources': 'host_sources',
+        'interrupt_reason': 'interrupt_reason',
+        'degradation_reason': 'degradation_reason',
+        'key_name': 'key_name',
+        'auto_open_version': 'auto_open_version',
+        'install_progress': 'install_progress',
+        'vpc_id': 'vpc_id',
+        'common_login_area_codes': 'common_login_area_codes',
+        'cluster_name': 'cluster_name',
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, expire_time=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None, protect_interrupt=None):
-        """Host
+    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, os_name=None, os_version=None, kernel_version=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, expire_time=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None, protect_interrupt=None, protect_degradation=None, host_sources=None, interrupt_reason=None, degradation_reason=None, key_name=None, auto_open_version=None, install_progress=None, vpc_id=None, common_login_area_codes=None, cluster_name=None, cluster_id=None):
+        r"""Host
 
         The model defined in huaweicloud sdk
 
@@ -117,6 +145,12 @@ class Host:
         :type enterprise_project_id: str
         :param enterprise_project_name: 所属企业项目名称
         :type enterprise_project_name: str
+        :param os_name: 系统名称
+        :type os_name: str
+        :param os_version: 系统版本
+        :type os_version: str
+        :param kernel_version: 内核版本
+        :type kernel_version: str
         :param host_status: 服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
         :type host_status: str
         :param agent_status: Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
@@ -125,7 +159,7 @@ class Host:
         :type install_result_code: str
         :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
         :type version: str
-        :param protect_status: 防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
+        :param protect_status: 防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。 - protection_exception ：防护异常。
         :type protect_status: str
         :param os_image: 系统镜像
         :type os_image: str
@@ -179,6 +213,28 @@ class Host:
         :type open_time: int
         :param protect_interrupt: 防护是否中断
         :type protect_interrupt: bool
+        :param protect_degradation: 防护是否降级
+        :type protect_degradation: bool
+        :param host_sources: 服务器来源
+        :type host_sources: str
+        :param interrupt_reason: 防护中断原因
+        :type interrupt_reason: str
+        :param degradation_reason: 防护降级原因
+        :type degradation_reason: str
+        :param key_name: 使用的密钥对名称
+        :type key_name: str
+        :param auto_open_version: cce购买主机
+        :type auto_open_version: str
+        :param install_progress: 安装进度
+        :type install_progress: int
+        :param vpc_id: vpc id
+        :type vpc_id: str
+        :param common_login_area_codes: 后台识别服务器常用登录地编号
+        :type common_login_area_codes: list[int]
+        :param cluster_name: 集群名称
+        :type cluster_name: str
+        :param cluster_id: 集群id
+        :type cluster_id: str
         """
         
         
@@ -190,6 +246,9 @@ class Host:
         self._public_ip = None
         self._enterprise_project_id = None
         self._enterprise_project_name = None
+        self._os_name = None
+        self._os_version = None
+        self._kernel_version = None
         self._host_status = None
         self._agent_status = None
         self._install_result_code = None
@@ -221,6 +280,17 @@ class Host:
         self._upgradable = None
         self._open_time = None
         self._protect_interrupt = None
+        self._protect_degradation = None
+        self._host_sources = None
+        self._interrupt_reason = None
+        self._degradation_reason = None
+        self._key_name = None
+        self._auto_open_version = None
+        self._install_progress = None
+        self._vpc_id = None
+        self._common_login_area_codes = None
+        self._cluster_name = None
+        self._cluster_id = None
         self.discriminator = None
 
         if host_name is not None:
@@ -237,6 +307,12 @@ class Host:
             self.enterprise_project_id = enterprise_project_id
         if enterprise_project_name is not None:
             self.enterprise_project_name = enterprise_project_name
+        if os_name is not None:
+            self.os_name = os_name
+        if os_version is not None:
+            self.os_version = os_version
+        if kernel_version is not None:
+            self.kernel_version = kernel_version
         if host_status is not None:
             self.host_status = host_status
         if agent_status is not None:
@@ -299,10 +375,32 @@ class Host:
             self.open_time = open_time
         if protect_interrupt is not None:
             self.protect_interrupt = protect_interrupt
+        if protect_degradation is not None:
+            self.protect_degradation = protect_degradation
+        if host_sources is not None:
+            self.host_sources = host_sources
+        if interrupt_reason is not None:
+            self.interrupt_reason = interrupt_reason
+        if degradation_reason is not None:
+            self.degradation_reason = degradation_reason
+        if key_name is not None:
+            self.key_name = key_name
+        if auto_open_version is not None:
+            self.auto_open_version = auto_open_version
+        if install_progress is not None:
+            self.install_progress = install_progress
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if common_login_area_codes is not None:
+            self.common_login_area_codes = common_login_area_codes
+        if cluster_name is not None:
+            self.cluster_name = cluster_name
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
     def host_name(self):
-        """Gets the host_name of this Host.
+        r"""Gets the host_name of this Host.
 
         服务器名称
 
@@ -313,7 +411,7 @@ class Host:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this Host.
+        r"""Sets the host_name of this Host.
 
         服务器名称
 
@@ -324,7 +422,7 @@ class Host:
 
     @property
     def host_id(self):
-        """Gets the host_id of this Host.
+        r"""Gets the host_id of this Host.
 
         服务器ID
 
@@ -335,7 +433,7 @@ class Host:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this Host.
+        r"""Sets the host_id of this Host.
 
         服务器ID
 
@@ -346,7 +444,7 @@ class Host:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this Host.
+        r"""Gets the agent_id of this Host.
 
         Agent ID
 
@@ -357,7 +455,7 @@ class Host:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this Host.
+        r"""Sets the agent_id of this Host.
 
         Agent ID
 
@@ -368,7 +466,7 @@ class Host:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this Host.
+        r"""Gets the private_ip of this Host.
 
         私有IP地址
 
@@ -379,7 +477,7 @@ class Host:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this Host.
+        r"""Sets the private_ip of this Host.
 
         私有IP地址
 
@@ -390,7 +488,7 @@ class Host:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this Host.
+        r"""Gets the public_ip of this Host.
 
         弹性公网IP地址
 
@@ -401,7 +499,7 @@ class Host:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this Host.
+        r"""Sets the public_ip of this Host.
 
         弹性公网IP地址
 
@@ -412,7 +510,7 @@ class Host:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Host.
+        r"""Gets the enterprise_project_id of this Host.
 
         企业项目ID
 
@@ -423,7 +521,7 @@ class Host:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Host.
+        r"""Sets the enterprise_project_id of this Host.
 
         企业项目ID
 
@@ -434,7 +532,7 @@ class Host:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this Host.
+        r"""Gets the enterprise_project_name of this Host.
 
         所属企业项目名称
 
@@ -445,7 +543,7 @@ class Host:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this Host.
+        r"""Sets the enterprise_project_name of this Host.
 
         所属企业项目名称
 
@@ -455,8 +553,74 @@ class Host:
         self._enterprise_project_name = enterprise_project_name
 
     @property
+    def os_name(self):
+        r"""Gets the os_name of this Host.
+
+        系统名称
+
+        :return: The os_name of this Host.
+        :rtype: str
+        """
+        return self._os_name
+
+    @os_name.setter
+    def os_name(self, os_name):
+        r"""Sets the os_name of this Host.
+
+        系统名称
+
+        :param os_name: The os_name of this Host.
+        :type os_name: str
+        """
+        self._os_name = os_name
+
+    @property
+    def os_version(self):
+        r"""Gets the os_version of this Host.
+
+        系统版本
+
+        :return: The os_version of this Host.
+        :rtype: str
+        """
+        return self._os_version
+
+    @os_version.setter
+    def os_version(self, os_version):
+        r"""Sets the os_version of this Host.
+
+        系统版本
+
+        :param os_version: The os_version of this Host.
+        :type os_version: str
+        """
+        self._os_version = os_version
+
+    @property
+    def kernel_version(self):
+        r"""Gets the kernel_version of this Host.
+
+        内核版本
+
+        :return: The kernel_version of this Host.
+        :rtype: str
+        """
+        return self._kernel_version
+
+    @kernel_version.setter
+    def kernel_version(self, kernel_version):
+        r"""Sets the kernel_version of this Host.
+
+        内核版本
+
+        :param kernel_version: The kernel_version of this Host.
+        :type kernel_version: str
+        """
+        self._kernel_version = kernel_version
+
+    @property
     def host_status(self):
-        """Gets the host_status of this Host.
+        r"""Gets the host_status of this Host.
 
         服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
@@ -467,7 +631,7 @@ class Host:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this Host.
+        r"""Sets the host_status of this Host.
 
         服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
@@ -478,7 +642,7 @@ class Host:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this Host.
+        r"""Gets the agent_status of this Host.
 
         Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
 
@@ -489,7 +653,7 @@ class Host:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this Host.
+        r"""Sets the agent_status of this Host.
 
         Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
 
@@ -500,7 +664,7 @@ class Host:
 
     @property
     def install_result_code(self):
-        """Gets the install_result_code of this Host.
+        r"""Gets the install_result_code of this Host.
 
         安装结果，包含如下12种。   - install_succeed ：安装成功。   - network_access_timeout ：网络不通，访问超时。   - invalid_port ：无效端口。   - auth_failed ：认证错误，口令不正确。   - permission_denied ：权限错误，被拒绝。   - no_available_vpc ：没有相同VPC的agent在线虚拟机。   - install_exception ：安装异常。   - invalid_param ：参数错误。   - install_failed ：安装失败。   - package_unavailable ：安装包失效。   - os_type_not_support ：系统类型错误。   - os_arch_not_support ：架构类型错误。
 
@@ -511,7 +675,7 @@ class Host:
 
     @install_result_code.setter
     def install_result_code(self, install_result_code):
-        """Sets the install_result_code of this Host.
+        r"""Sets the install_result_code of this Host.
 
         安装结果，包含如下12种。   - install_succeed ：安装成功。   - network_access_timeout ：网络不通，访问超时。   - invalid_port ：无效端口。   - auth_failed ：认证错误，口令不正确。   - permission_denied ：权限错误，被拒绝。   - no_available_vpc ：没有相同VPC的agent在线虚拟机。   - install_exception ：安装异常。   - invalid_param ：参数错误。   - install_failed ：安装失败。   - package_unavailable ：安装包失效。   - os_type_not_support ：系统类型错误。   - os_arch_not_support ：架构类型错误。
 
@@ -522,7 +686,7 @@ class Host:
 
     @property
     def version(self):
-        """Gets the version of this Host.
+        r"""Gets the version of this Host.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
@@ -533,7 +697,7 @@ class Host:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Host.
+        r"""Sets the version of this Host.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
@@ -544,9 +708,9 @@ class Host:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this Host.
+        r"""Gets the protect_status of this Host.
 
-        防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
+        防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。 - protection_exception ：防护异常。
 
         :return: The protect_status of this Host.
         :rtype: str
@@ -555,9 +719,9 @@ class Host:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this Host.
+        r"""Sets the protect_status of this Host.
 
-        防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
+        防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。 - protection_exception ：防护异常。
 
         :param protect_status: The protect_status of this Host.
         :type protect_status: str
@@ -566,7 +730,7 @@ class Host:
 
     @property
     def os_image(self):
-        """Gets the os_image of this Host.
+        r"""Gets the os_image of this Host.
 
         系统镜像
 
@@ -577,7 +741,7 @@ class Host:
 
     @os_image.setter
     def os_image(self, os_image):
-        """Sets the os_image of this Host.
+        r"""Sets the os_image of this Host.
 
         系统镜像
 
@@ -588,7 +752,7 @@ class Host:
 
     @property
     def os_type(self):
-        """Gets the os_type of this Host.
+        r"""Gets the os_type of this Host.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -599,7 +763,7 @@ class Host:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this Host.
+        r"""Sets the os_type of this Host.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -610,7 +774,7 @@ class Host:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this Host.
+        r"""Gets the os_bit of this Host.
 
         操作系统位数
 
@@ -621,7 +785,7 @@ class Host:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this Host.
+        r"""Sets the os_bit of this Host.
 
         操作系统位数
 
@@ -632,7 +796,7 @@ class Host:
 
     @property
     def detect_result(self):
-        """Gets the detect_result of this Host.
+        r"""Gets the detect_result of this Host.
 
         云主机安全检测结果，包含如下4种。 - undetected ：未检测。 - clean ：无风险。 - risk ：有风险。 - scanning ：检测中。
 
@@ -643,7 +807,7 @@ class Host:
 
     @detect_result.setter
     def detect_result(self, detect_result):
-        """Sets the detect_result of this Host.
+        r"""Sets the detect_result of this Host.
 
         云主机安全检测结果，包含如下4种。 - undetected ：未检测。 - clean ：无风险。 - risk ：有风险。 - scanning ：检测中。
 
@@ -654,7 +818,7 @@ class Host:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this Host.
+        r"""Gets the expire_time of this Host.
 
         试用版到期时间（-1表示非试用版配额，当值不为-1时为试用版本过期时间）
 
@@ -665,7 +829,7 @@ class Host:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this Host.
+        r"""Sets the expire_time of this Host.
 
         试用版到期时间（-1表示非试用版配额，当值不为-1时为试用版本过期时间）
 
@@ -676,7 +840,7 @@ class Host:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this Host.
+        r"""Gets the charging_mode of this Host.
 
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
@@ -687,7 +851,7 @@ class Host:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this Host.
+        r"""Sets the charging_mode of this Host.
 
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
@@ -698,7 +862,7 @@ class Host:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Host.
+        r"""Gets the resource_id of this Host.
 
         主机安全配额ID（UUID）
 
@@ -709,7 +873,7 @@ class Host:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Host.
+        r"""Sets the resource_id of this Host.
 
         主机安全配额ID（UUID）
 
@@ -720,7 +884,7 @@ class Host:
 
     @property
     def outside_host(self):
-        """Gets the outside_host of this Host.
+        r"""Gets the outside_host of this Host.
 
         是否非华为云机器
 
@@ -731,7 +895,7 @@ class Host:
 
     @outside_host.setter
     def outside_host(self, outside_host):
-        """Sets the outside_host of this Host.
+        r"""Sets the outside_host of this Host.
 
         是否非华为云机器
 
@@ -742,7 +906,7 @@ class Host:
 
     @property
     def group_id(self):
-        """Gets the group_id of this Host.
+        r"""Gets the group_id of this Host.
 
         服务器组ID
 
@@ -753,7 +917,7 @@ class Host:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this Host.
+        r"""Sets the group_id of this Host.
 
         服务器组ID
 
@@ -764,7 +928,7 @@ class Host:
 
     @property
     def group_name(self):
-        """Gets the group_name of this Host.
+        r"""Gets the group_name of this Host.
 
         服务器组名称
 
@@ -775,7 +939,7 @@ class Host:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this Host.
+        r"""Sets the group_name of this Host.
 
         服务器组名称
 
@@ -786,7 +950,7 @@ class Host:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this Host.
+        r"""Gets the policy_group_id of this Host.
 
         策略组ID
 
@@ -797,7 +961,7 @@ class Host:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this Host.
+        r"""Sets the policy_group_id of this Host.
 
         策略组ID
 
@@ -808,7 +972,7 @@ class Host:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this Host.
+        r"""Gets the policy_group_name of this Host.
 
         策略组名称
 
@@ -819,7 +983,7 @@ class Host:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this Host.
+        r"""Sets the policy_group_name of this Host.
 
         策略组名称
 
@@ -830,7 +994,7 @@ class Host:
 
     @property
     def asset(self):
-        """Gets the asset of this Host.
+        r"""Gets the asset of this Host.
 
         资产风险
 
@@ -841,7 +1005,7 @@ class Host:
 
     @asset.setter
     def asset(self, asset):
-        """Sets the asset of this Host.
+        r"""Sets the asset of this Host.
 
         资产风险
 
@@ -852,7 +1016,7 @@ class Host:
 
     @property
     def vulnerability(self):
-        """Gets the vulnerability of this Host.
+        r"""Gets the vulnerability of this Host.
 
         漏洞风险总数，包含Linux软件漏洞、Windows系统漏洞、Web-CMS漏洞、应用漏洞
 
@@ -863,7 +1027,7 @@ class Host:
 
     @vulnerability.setter
     def vulnerability(self, vulnerability):
-        """Sets the vulnerability of this Host.
+        r"""Sets the vulnerability of this Host.
 
         漏洞风险总数，包含Linux软件漏洞、Windows系统漏洞、Web-CMS漏洞、应用漏洞
 
@@ -874,7 +1038,7 @@ class Host:
 
     @property
     def baseline(self):
-        """Gets the baseline of this Host.
+        r"""Gets the baseline of this Host.
 
         基线风险总数，包含配置风险、弱口令
 
@@ -885,7 +1049,7 @@ class Host:
 
     @baseline.setter
     def baseline(self, baseline):
-        """Sets the baseline of this Host.
+        r"""Sets the baseline of this Host.
 
         基线风险总数，包含配置风险、弱口令
 
@@ -896,7 +1060,7 @@ class Host:
 
     @property
     def intrusion(self):
-        """Gets the intrusion of this Host.
+        r"""Gets the intrusion of this Host.
 
         入侵风险总数
 
@@ -907,7 +1071,7 @@ class Host:
 
     @intrusion.setter
     def intrusion(self, intrusion):
-        """Sets the intrusion of this Host.
+        r"""Sets the intrusion of this Host.
 
         入侵风险总数
 
@@ -918,7 +1082,7 @@ class Host:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this Host.
+        r"""Gets the asset_value of this Host.
 
         资产重要性，包含如下4种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -929,7 +1093,7 @@ class Host:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this Host.
+        r"""Sets the asset_value of this Host.
 
         资产重要性，包含如下4种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -940,7 +1104,7 @@ class Host:
 
     @property
     def labels(self):
-        """Gets the labels of this Host.
+        r"""Gets the labels of this Host.
 
         标签列表
 
@@ -951,7 +1115,7 @@ class Host:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this Host.
+        r"""Sets the labels of this Host.
 
         标签列表
 
@@ -962,7 +1126,7 @@ class Host:
 
     @property
     def agent_create_time(self):
-        """Gets the agent_create_time of this Host.
+        r"""Gets the agent_create_time of this Host.
 
         agent安装时间，采用时间戳，默认毫秒，
 
@@ -973,7 +1137,7 @@ class Host:
 
     @agent_create_time.setter
     def agent_create_time(self, agent_create_time):
-        """Sets the agent_create_time of this Host.
+        r"""Sets the agent_create_time of this Host.
 
         agent安装时间，采用时间戳，默认毫秒，
 
@@ -984,7 +1148,7 @@ class Host:
 
     @property
     def agent_update_time(self):
-        """Gets the agent_update_time of this Host.
+        r"""Gets the agent_update_time of this Host.
 
         agent状态修改时间，采用时间戳，默认毫秒，
 
@@ -995,7 +1159,7 @@ class Host:
 
     @agent_update_time.setter
     def agent_update_time(self, agent_update_time):
-        """Sets the agent_update_time of this Host.
+        r"""Sets the agent_update_time of this Host.
 
         agent状态修改时间，采用时间戳，默认毫秒，
 
@@ -1006,7 +1170,7 @@ class Host:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this Host.
+        r"""Gets the agent_version of this Host.
 
         agent版本
 
@@ -1017,7 +1181,7 @@ class Host:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this Host.
+        r"""Sets the agent_version of this Host.
 
         agent版本
 
@@ -1028,7 +1192,7 @@ class Host:
 
     @property
     def upgrade_status(self):
-        """Gets the upgrade_status of this Host.
+        r"""Gets the upgrade_status of this Host.
 
         升级状态，包含如下4种。   - not_upgrade ：未升级，也就是默认状态，客户还没有给这台机器下发过升级。   - upgrading ：正在升级中。   - upgrade_failed ：升级失败。   - upgrade_succeed ：升级成功。
 
@@ -1039,7 +1203,7 @@ class Host:
 
     @upgrade_status.setter
     def upgrade_status(self, upgrade_status):
-        """Sets the upgrade_status of this Host.
+        r"""Sets the upgrade_status of this Host.
 
         升级状态，包含如下4种。   - not_upgrade ：未升级，也就是默认状态，客户还没有给这台机器下发过升级。   - upgrading ：正在升级中。   - upgrade_failed ：升级失败。   - upgrade_succeed ：升级成功。
 
@@ -1050,7 +1214,7 @@ class Host:
 
     @property
     def upgrade_result_code(self):
-        """Gets the upgrade_result_code of this Host.
+        r"""Gets the upgrade_result_code of this Host.
 
         升级失败原因，只有当 upgrade_status 为 upgrade_failed 时才显示，包含如下6种。   - package_unavailable ：升级包解析失败，升级文件有错误。   - network_access_timeout ：下载升级包失败，网络异常。   - agent_offline ：agent离线。   - hostguard_abnormal ：agent工作进程异常。   - insufficient_disk_space ：磁盘空间不足。   - failed_to_replace_file ：替换文件失败。
 
@@ -1061,7 +1225,7 @@ class Host:
 
     @upgrade_result_code.setter
     def upgrade_result_code(self, upgrade_result_code):
-        """Sets the upgrade_result_code of this Host.
+        r"""Sets the upgrade_result_code of this Host.
 
         升级失败原因，只有当 upgrade_status 为 upgrade_failed 时才显示，包含如下6种。   - package_unavailable ：升级包解析失败，升级文件有错误。   - network_access_timeout ：下载升级包失败，网络异常。   - agent_offline ：agent离线。   - hostguard_abnormal ：agent工作进程异常。   - insufficient_disk_space ：磁盘空间不足。   - failed_to_replace_file ：替换文件失败。
 
@@ -1072,7 +1236,7 @@ class Host:
 
     @property
     def upgradable(self):
-        """Gets the upgradable of this Host.
+        r"""Gets the upgradable of this Host.
 
         该服务器agent是否可升级
 
@@ -1083,7 +1247,7 @@ class Host:
 
     @upgradable.setter
     def upgradable(self, upgradable):
-        """Sets the upgradable of this Host.
+        r"""Sets the upgradable of this Host.
 
         该服务器agent是否可升级
 
@@ -1094,7 +1258,7 @@ class Host:
 
     @property
     def open_time(self):
-        """Gets the open_time of this Host.
+        r"""Gets the open_time of this Host.
 
         开启防护时间，采用时间戳，默认毫秒，
 
@@ -1105,7 +1269,7 @@ class Host:
 
     @open_time.setter
     def open_time(self, open_time):
-        """Sets the open_time of this Host.
+        r"""Sets the open_time of this Host.
 
         开启防护时间，采用时间戳，默认毫秒，
 
@@ -1116,7 +1280,7 @@ class Host:
 
     @property
     def protect_interrupt(self):
-        """Gets the protect_interrupt of this Host.
+        r"""Gets the protect_interrupt of this Host.
 
         防护是否中断
 
@@ -1127,7 +1291,7 @@ class Host:
 
     @protect_interrupt.setter
     def protect_interrupt(self, protect_interrupt):
-        """Sets the protect_interrupt of this Host.
+        r"""Sets the protect_interrupt of this Host.
 
         防护是否中断
 
@@ -1135,6 +1299,248 @@ class Host:
         :type protect_interrupt: bool
         """
         self._protect_interrupt = protect_interrupt
+
+    @property
+    def protect_degradation(self):
+        r"""Gets the protect_degradation of this Host.
+
+        防护是否降级
+
+        :return: The protect_degradation of this Host.
+        :rtype: bool
+        """
+        return self._protect_degradation
+
+    @protect_degradation.setter
+    def protect_degradation(self, protect_degradation):
+        r"""Sets the protect_degradation of this Host.
+
+        防护是否降级
+
+        :param protect_degradation: The protect_degradation of this Host.
+        :type protect_degradation: bool
+        """
+        self._protect_degradation = protect_degradation
+
+    @property
+    def host_sources(self):
+        r"""Gets the host_sources of this Host.
+
+        服务器来源
+
+        :return: The host_sources of this Host.
+        :rtype: str
+        """
+        return self._host_sources
+
+    @host_sources.setter
+    def host_sources(self, host_sources):
+        r"""Sets the host_sources of this Host.
+
+        服务器来源
+
+        :param host_sources: The host_sources of this Host.
+        :type host_sources: str
+        """
+        self._host_sources = host_sources
+
+    @property
+    def interrupt_reason(self):
+        r"""Gets the interrupt_reason of this Host.
+
+        防护中断原因
+
+        :return: The interrupt_reason of this Host.
+        :rtype: str
+        """
+        return self._interrupt_reason
+
+    @interrupt_reason.setter
+    def interrupt_reason(self, interrupt_reason):
+        r"""Sets the interrupt_reason of this Host.
+
+        防护中断原因
+
+        :param interrupt_reason: The interrupt_reason of this Host.
+        :type interrupt_reason: str
+        """
+        self._interrupt_reason = interrupt_reason
+
+    @property
+    def degradation_reason(self):
+        r"""Gets the degradation_reason of this Host.
+
+        防护降级原因
+
+        :return: The degradation_reason of this Host.
+        :rtype: str
+        """
+        return self._degradation_reason
+
+    @degradation_reason.setter
+    def degradation_reason(self, degradation_reason):
+        r"""Sets the degradation_reason of this Host.
+
+        防护降级原因
+
+        :param degradation_reason: The degradation_reason of this Host.
+        :type degradation_reason: str
+        """
+        self._degradation_reason = degradation_reason
+
+    @property
+    def key_name(self):
+        r"""Gets the key_name of this Host.
+
+        使用的密钥对名称
+
+        :return: The key_name of this Host.
+        :rtype: str
+        """
+        return self._key_name
+
+    @key_name.setter
+    def key_name(self, key_name):
+        r"""Sets the key_name of this Host.
+
+        使用的密钥对名称
+
+        :param key_name: The key_name of this Host.
+        :type key_name: str
+        """
+        self._key_name = key_name
+
+    @property
+    def auto_open_version(self):
+        r"""Gets the auto_open_version of this Host.
+
+        cce购买主机
+
+        :return: The auto_open_version of this Host.
+        :rtype: str
+        """
+        return self._auto_open_version
+
+    @auto_open_version.setter
+    def auto_open_version(self, auto_open_version):
+        r"""Sets the auto_open_version of this Host.
+
+        cce购买主机
+
+        :param auto_open_version: The auto_open_version of this Host.
+        :type auto_open_version: str
+        """
+        self._auto_open_version = auto_open_version
+
+    @property
+    def install_progress(self):
+        r"""Gets the install_progress of this Host.
+
+        安装进度
+
+        :return: The install_progress of this Host.
+        :rtype: int
+        """
+        return self._install_progress
+
+    @install_progress.setter
+    def install_progress(self, install_progress):
+        r"""Sets the install_progress of this Host.
+
+        安装进度
+
+        :param install_progress: The install_progress of this Host.
+        :type install_progress: int
+        """
+        self._install_progress = install_progress
+
+    @property
+    def vpc_id(self):
+        r"""Gets the vpc_id of this Host.
+
+        vpc id
+
+        :return: The vpc_id of this Host.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        r"""Sets the vpc_id of this Host.
+
+        vpc id
+
+        :param vpc_id: The vpc_id of this Host.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def common_login_area_codes(self):
+        r"""Gets the common_login_area_codes of this Host.
+
+        后台识别服务器常用登录地编号
+
+        :return: The common_login_area_codes of this Host.
+        :rtype: list[int]
+        """
+        return self._common_login_area_codes
+
+    @common_login_area_codes.setter
+    def common_login_area_codes(self, common_login_area_codes):
+        r"""Sets the common_login_area_codes of this Host.
+
+        后台识别服务器常用登录地编号
+
+        :param common_login_area_codes: The common_login_area_codes of this Host.
+        :type common_login_area_codes: list[int]
+        """
+        self._common_login_area_codes = common_login_area_codes
+
+    @property
+    def cluster_name(self):
+        r"""Gets the cluster_name of this Host.
+
+        集群名称
+
+        :return: The cluster_name of this Host.
+        :rtype: str
+        """
+        return self._cluster_name
+
+    @cluster_name.setter
+    def cluster_name(self, cluster_name):
+        r"""Sets the cluster_name of this Host.
+
+        集群名称
+
+        :param cluster_name: The cluster_name of this Host.
+        :type cluster_name: str
+        """
+        self._cluster_name = cluster_name
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this Host.
+
+        集群id
+
+        :return: The cluster_id of this Host.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this Host.
+
+        集群id
+
+        :param cluster_id: The cluster_id of this Host.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

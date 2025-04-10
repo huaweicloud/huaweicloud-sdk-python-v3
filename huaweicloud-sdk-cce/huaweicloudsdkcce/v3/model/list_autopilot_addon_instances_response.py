@@ -30,7 +30,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAutopilotAddonInstancesResponse
+        r"""ListAutopilotAddonInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotAddonInstancesResponse.
+        r"""Gets the kind of this ListAutopilotAddonInstancesResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotAddonInstancesResponse.
+        r"""Sets the kind of this ListAutopilotAddonInstancesResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotAddonInstancesResponse.
+        r"""Gets the api_version of this ListAutopilotAddonInstancesResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -91,7 +91,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotAddonInstancesResponse.
+        r"""Sets the api_version of this ListAutopilotAddonInstancesResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -102,7 +102,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAutopilotAddonInstancesResponse.
+        r"""Gets the items of this ListAutopilotAddonInstancesResponse.
 
         插件实例列表
 
@@ -113,7 +113,7 @@ class ListAutopilotAddonInstancesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAutopilotAddonInstancesResponse.
+        r"""Sets the items of this ListAutopilotAddonInstancesResponse.
 
         插件实例列表
 

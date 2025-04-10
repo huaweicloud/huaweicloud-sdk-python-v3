@@ -33,7 +33,7 @@ class BackupJobBaseInfo:
     }
 
     def __init__(self, name=None, engine_type=None, description=None, tags=None, enterprise_project_id=None):
-        """BackupJobBaseInfo
+        r"""BackupJobBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BackupJobBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this BackupJobBaseInfo.
+        r"""Gets the name of this BackupJobBaseInfo.
 
         任务名称。 约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。   - 最小长度：4     - 最大长度：50
 
@@ -80,7 +80,7 @@ class BackupJobBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupJobBaseInfo.
+        r"""Sets the name of this BackupJobBaseInfo.
 
         任务名称。 约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。   - 最小长度：4     - 最大长度：50
 
@@ -91,7 +91,7 @@ class BackupJobBaseInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this BackupJobBaseInfo.
+        r"""Gets the engine_type of this BackupJobBaseInfo.
 
         数据库引擎。  - sqlserver：RDS for SQL Server引擎
 
@@ -102,7 +102,7 @@ class BackupJobBaseInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this BackupJobBaseInfo.
+        r"""Sets the engine_type of this BackupJobBaseInfo.
 
         数据库引擎。  - sqlserver：RDS for SQL Server引擎
 
@@ -113,7 +113,7 @@ class BackupJobBaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this BackupJobBaseInfo.
+        r"""Gets the description of this BackupJobBaseInfo.
 
         任务描述。
 
@@ -124,7 +124,7 @@ class BackupJobBaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupJobBaseInfo.
+        r"""Sets the description of this BackupJobBaseInfo.
 
         任务描述。
 
@@ -135,7 +135,7 @@ class BackupJobBaseInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this BackupJobBaseInfo.
+        r"""Gets the tags of this BackupJobBaseInfo.
 
         标签信息。 标签的值可以包含任意语种字母、数字、空格和_ . : / = + - @。
 
@@ -146,7 +146,7 @@ class BackupJobBaseInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BackupJobBaseInfo.
+        r"""Sets the tags of this BackupJobBaseInfo.
 
         标签信息。 标签的值可以包含任意语种字母、数字、空格和_ . : / = + - @。
 
@@ -157,7 +157,7 @@ class BackupJobBaseInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BackupJobBaseInfo.
+        r"""Gets the enterprise_project_id of this BackupJobBaseInfo.
 
         企业项目ID。
 
@@ -168,7 +168,7 @@ class BackupJobBaseInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BackupJobBaseInfo.
+        r"""Sets the enterprise_project_id of this BackupJobBaseInfo.
 
         企业项目ID。
 

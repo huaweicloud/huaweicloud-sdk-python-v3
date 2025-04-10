@@ -29,7 +29,7 @@ class FailureResources:
     }
 
     def __init__(self, id=None, code=None, message=None):
-        """FailureResources
+        r"""FailureResources
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FailureResources:
 
     @property
     def id(self):
-        """Gets the id of this FailureResources.
+        r"""Gets the id of this FailureResources.
 
         - 功能说明：更新失败的带宽id
 
@@ -68,7 +68,7 @@ class FailureResources:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FailureResources.
+        r"""Sets the id of this FailureResources.
 
         - 功能说明：更新失败的带宽id
 
@@ -79,7 +79,7 @@ class FailureResources:
 
     @property
     def code(self):
-        """Gets the code of this FailureResources.
+        r"""Gets the code of this FailureResources.
 
         - 功能说明：错误码
 
@@ -90,7 +90,7 @@ class FailureResources:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this FailureResources.
+        r"""Sets the code of this FailureResources.
 
         - 功能说明：错误码
 
@@ -101,7 +101,7 @@ class FailureResources:
 
     @property
     def message(self):
-        """Gets the message of this FailureResources.
+        r"""Gets the message of this FailureResources.
 
         - 功能说明：错误信息
 
@@ -112,7 +112,7 @@ class FailureResources:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this FailureResources.
+        r"""Sets the message of this FailureResources.
 
         - 功能说明：错误信息
 

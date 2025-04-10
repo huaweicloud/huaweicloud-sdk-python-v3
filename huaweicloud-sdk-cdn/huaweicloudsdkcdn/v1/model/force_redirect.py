@@ -27,7 +27,7 @@ class ForceRedirect:
     }
 
     def __init__(self, switch=None, redirect_type=None):
-        """ForceRedirect
+        r"""ForceRedirect
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ForceRedirect:
 
     @property
     def switch(self):
-        """Gets the switch of this ForceRedirect.
+        r"""Gets the switch of this ForceRedirect.
 
         强制跳转开关。1打开。0关闭。
 
@@ -60,7 +60,7 @@ class ForceRedirect:
 
     @switch.setter
     def switch(self, switch):
-        """Sets the switch of this ForceRedirect.
+        r"""Sets the switch of this ForceRedirect.
 
         强制跳转开关。1打开。0关闭。
 
@@ -71,7 +71,7 @@ class ForceRedirect:
 
     @property
     def redirect_type(self):
-        """Gets the redirect_type of this ForceRedirect.
+        r"""Gets the redirect_type of this ForceRedirect.
 
         强制跳转类型。http：强制跳转HTTP。https：强制跳转HTTPS。
 
@@ -82,7 +82,7 @@ class ForceRedirect:
 
     @redirect_type.setter
     def redirect_type(self, redirect_type):
-        """Sets the redirect_type of this ForceRedirect.
+        r"""Sets the redirect_type of this ForceRedirect.
 
         强制跳转类型。http：强制跳转HTTP。https：强制跳转HTTPS。
 

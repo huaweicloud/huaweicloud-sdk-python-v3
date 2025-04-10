@@ -29,7 +29,7 @@ class MaterialComponentInfo:
     }
 
     def __init__(self, component_name=None, component_type=None, component_desc=None):
-        """MaterialComponentInfo
+        r"""MaterialComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MaterialComponentInfo:
 
     @property
     def component_name(self):
-        """Gets the component_name of this MaterialComponentInfo.
+        r"""Gets the component_name of this MaterialComponentInfo.
 
         素材组件名称。
 
@@ -66,7 +66,7 @@ class MaterialComponentInfo:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this MaterialComponentInfo.
+        r"""Sets the component_name of this MaterialComponentInfo.
 
         素材组件名称。
 
@@ -77,7 +77,7 @@ class MaterialComponentInfo:
 
     @property
     def component_type(self):
-        """Gets the component_type of this MaterialComponentInfo.
+        r"""Gets the component_type of this MaterialComponentInfo.
 
         素材组件类型。 * CLOTHES：衣服 * PANTS：裤子 * SHOES：鞋子 * HAIR：头发 * EYELASH：睫毛 * EYEBROW：眉毛
 
@@ -88,7 +88,7 @@ class MaterialComponentInfo:
 
     @component_type.setter
     def component_type(self, component_type):
-        """Sets the component_type of this MaterialComponentInfo.
+        r"""Sets the component_type of this MaterialComponentInfo.
 
         素材组件类型。 * CLOTHES：衣服 * PANTS：裤子 * SHOES：鞋子 * HAIR：头发 * EYELASH：睫毛 * EYEBROW：眉毛
 
@@ -99,7 +99,7 @@ class MaterialComponentInfo:
 
     @property
     def component_desc(self):
-        """Gets the component_desc of this MaterialComponentInfo.
+        r"""Gets the component_desc of this MaterialComponentInfo.
 
         素材组件描述。
 
@@ -110,7 +110,7 @@ class MaterialComponentInfo:
 
     @component_desc.setter
     def component_desc(self, component_desc):
-        """Sets the component_desc of this MaterialComponentInfo.
+        r"""Sets the component_desc of this MaterialComponentInfo.
 
         素材组件描述。
 

@@ -27,7 +27,7 @@ class SealResult:
     }
 
     def __init__(self, seal_list=None, erased_seal_image=None):
-        """SealResult
+        r"""SealResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SealResult:
 
     @property
     def seal_list(self):
-        """Gets the seal_list of this SealResult.
+        r"""Gets the seal_list of this SealResult.
 
         印章信息列表。 
 
@@ -61,7 +61,7 @@ class SealResult:
 
     @seal_list.setter
     def seal_list(self, seal_list):
-        """Sets the seal_list of this SealResult.
+        r"""Sets the seal_list of this SealResult.
 
         印章信息列表。 
 
@@ -72,7 +72,7 @@ class SealResult:
 
     @property
     def erased_seal_image(self):
-        """Gets the erased_seal_image of this SealResult.
+        r"""Gets the erased_seal_image of this SealResult.
 
         在输入图片基础上进行印章擦除后的base64编码图片。 
 
@@ -83,7 +83,7 @@ class SealResult:
 
     @erased_seal_image.setter
     def erased_seal_image(self, erased_seal_image):
-        """Sets the erased_seal_image of this SealResult.
+        r"""Sets the erased_seal_image of this SealResult.
 
         在输入图片基础上进行印章擦除后的base64编码图片。 
 

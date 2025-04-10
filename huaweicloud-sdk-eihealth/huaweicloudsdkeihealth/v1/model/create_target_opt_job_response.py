@@ -28,7 +28,7 @@ class CreateTargetOptJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, limit_concurrency=None):
-        """CreateTargetOptJobResponse
+        r"""CreateTargetOptJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateTargetOptJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTargetOptJobResponse.
+        r"""Gets the id of this CreateTargetOptJobResponse.
 
         作业id
 
@@ -62,7 +62,7 @@ class CreateTargetOptJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTargetOptJobResponse.
+        r"""Sets the id of this CreateTargetOptJobResponse.
 
         作业id
 
@@ -73,7 +73,7 @@ class CreateTargetOptJobResponse(SdkResponse):
 
     @property
     def limit_concurrency(self):
-        """Gets the limit_concurrency of this CreateTargetOptJobResponse.
+        r"""Gets the limit_concurrency of this CreateTargetOptJobResponse.
 
         限制的并发量
 
@@ -84,7 +84,7 @@ class CreateTargetOptJobResponse(SdkResponse):
 
     @limit_concurrency.setter
     def limit_concurrency(self, limit_concurrency):
-        """Sets the limit_concurrency of this CreateTargetOptJobResponse.
+        r"""Sets the limit_concurrency of this CreateTargetOptJobResponse.
 
         限制的并发量
 

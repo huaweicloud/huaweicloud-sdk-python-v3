@@ -41,7 +41,7 @@ class ListBlackWhiteListsRequest:
     }
 
     def __init__(self, object_id=None, list_type=None, address_type=None, address=None, port=None, limit=None, offset=None, enterprise_project_id=None, fw_instance_id=None):
-        """ListBlackWhiteListsRequest
+        r"""ListBlackWhiteListsRequest
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListBlackWhiteListsRequest.
+        r"""Gets the object_id of this ListBlackWhiteListsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -106,7 +106,7 @@ class ListBlackWhiteListsRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListBlackWhiteListsRequest.
+        r"""Sets the object_id of this ListBlackWhiteListsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -117,7 +117,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def list_type(self):
-        """Gets the list_type of this ListBlackWhiteListsRequest.
+        r"""Gets the list_type of this ListBlackWhiteListsRequest.
 
         黑白名单类型4：黑名单，5：白名单
 
@@ -128,7 +128,7 @@ class ListBlackWhiteListsRequest:
 
     @list_type.setter
     def list_type(self, list_type):
-        """Sets the list_type of this ListBlackWhiteListsRequest.
+        r"""Sets the list_type of this ListBlackWhiteListsRequest.
 
         黑白名单类型4：黑名单，5：白名单
 
@@ -139,7 +139,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this ListBlackWhiteListsRequest.
+        r"""Gets the address_type of this ListBlackWhiteListsRequest.
 
         ip地址类型0：ipv4，1:ipv6
 
@@ -150,7 +150,7 @@ class ListBlackWhiteListsRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this ListBlackWhiteListsRequest.
+        r"""Sets the address_type of this ListBlackWhiteListsRequest.
 
         ip地址类型0：ipv4，1:ipv6
 
@@ -161,7 +161,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def address(self):
-        """Gets the address of this ListBlackWhiteListsRequest.
+        r"""Gets the address of this ListBlackWhiteListsRequest.
 
         ip地址
 
@@ -172,7 +172,7 @@ class ListBlackWhiteListsRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListBlackWhiteListsRequest.
+        r"""Sets the address of this ListBlackWhiteListsRequest.
 
         ip地址
 
@@ -183,7 +183,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def port(self):
-        """Gets the port of this ListBlackWhiteListsRequest.
+        r"""Gets the port of this ListBlackWhiteListsRequest.
 
         端口
 
@@ -194,7 +194,7 @@ class ListBlackWhiteListsRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListBlackWhiteListsRequest.
+        r"""Sets the port of this ListBlackWhiteListsRequest.
 
         端口
 
@@ -205,7 +205,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBlackWhiteListsRequest.
+        r"""Gets the limit of this ListBlackWhiteListsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -216,7 +216,7 @@ class ListBlackWhiteListsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBlackWhiteListsRequest.
+        r"""Sets the limit of this ListBlackWhiteListsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -227,7 +227,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBlackWhiteListsRequest.
+        r"""Gets the offset of this ListBlackWhiteListsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -238,7 +238,7 @@ class ListBlackWhiteListsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBlackWhiteListsRequest.
+        r"""Sets the offset of this ListBlackWhiteListsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -249,7 +249,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListBlackWhiteListsRequest.
+        r"""Gets the enterprise_project_id of this ListBlackWhiteListsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -260,7 +260,7 @@ class ListBlackWhiteListsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListBlackWhiteListsRequest.
+        r"""Sets the enterprise_project_id of this ListBlackWhiteListsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -271,7 +271,7 @@ class ListBlackWhiteListsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListBlackWhiteListsRequest.
+        r"""Gets the fw_instance_id of this ListBlackWhiteListsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -282,7 +282,7 @@ class ListBlackWhiteListsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListBlackWhiteListsRequest.
+        r"""Sets the fw_instance_id of this ListBlackWhiteListsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 

@@ -25,7 +25,7 @@ class JobScriptOrderListProp:
     }
 
     def __init__(self, region_ids=None):
-        """JobScriptOrderListProp
+        r"""JobScriptOrderListProp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class JobScriptOrderListProp:
 
     @property
     def region_ids(self):
-        """Gets the region_ids of this JobScriptOrderListProp.
+        r"""Gets the region_ids of this JobScriptOrderListProp.
 
         CMDB服务实例区域id，可能有多个
 
@@ -54,7 +54,7 @@ class JobScriptOrderListProp:
 
     @region_ids.setter
     def region_ids(self, region_ids):
-        """Sets the region_ids of this JobScriptOrderListProp.
+        r"""Sets the region_ids of this JobScriptOrderListProp.
 
         CMDB服务实例区域id，可能有多个
 

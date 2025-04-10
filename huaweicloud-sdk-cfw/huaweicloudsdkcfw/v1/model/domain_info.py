@@ -29,7 +29,7 @@ class DomainInfo:
     }
 
     def __init__(self, domain_address_id=None, domain_name=None, description=None):
-        """DomainInfo
+        r"""DomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DomainInfo:
 
     @property
     def domain_address_id(self):
-        """Gets the domain_address_id of this DomainInfo.
+        r"""Gets the domain_address_id of this DomainInfo.
 
         域名地址id
 
@@ -68,7 +68,7 @@ class DomainInfo:
 
     @domain_address_id.setter
     def domain_address_id(self, domain_address_id):
-        """Sets the domain_address_id of this DomainInfo.
+        r"""Sets the domain_address_id of this DomainInfo.
 
         域名地址id
 
@@ -79,7 +79,7 @@ class DomainInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainInfo.
+        r"""Gets the domain_name of this DomainInfo.
 
         域名，如www.test.com
 
@@ -90,7 +90,7 @@ class DomainInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainInfo.
+        r"""Sets the domain_name of this DomainInfo.
 
         域名，如www.test.com
 
@@ -101,7 +101,7 @@ class DomainInfo:
 
     @property
     def description(self):
-        """Gets the description of this DomainInfo.
+        r"""Gets the description of this DomainInfo.
 
         域名描述
 
@@ -112,7 +112,7 @@ class DomainInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DomainInfo.
+        r"""Sets the description of this DomainInfo.
 
         域名描述
 

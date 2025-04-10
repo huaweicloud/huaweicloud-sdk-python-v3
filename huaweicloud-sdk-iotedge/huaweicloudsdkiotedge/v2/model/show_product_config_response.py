@@ -32,7 +32,7 @@ class ShowProductConfigResponse(SdkResponse):
     }
 
     def __init__(self, service_id=None, service_type=None, description=None, properties=None):
-        """ShowProductConfigResponse
+        r"""ShowProductConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowProductConfigResponse.
+        r"""Gets the service_id of this ShowProductConfigResponse.
 
         服务id
 
@@ -76,7 +76,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowProductConfigResponse.
+        r"""Sets the service_id of this ShowProductConfigResponse.
 
         服务id
 
@@ -87,7 +87,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @property
     def service_type(self):
-        """Gets the service_type of this ShowProductConfigResponse.
+        r"""Gets the service_type of this ShowProductConfigResponse.
 
         服务类型
 
@@ -98,7 +98,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ShowProductConfigResponse.
+        r"""Sets the service_type of this ShowProductConfigResponse.
 
         服务类型
 
@@ -109,7 +109,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowProductConfigResponse.
+        r"""Gets the description of this ShowProductConfigResponse.
 
         描述
 
@@ -120,7 +120,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProductConfigResponse.
+        r"""Sets the description of this ShowProductConfigResponse.
 
         描述
 
@@ -131,7 +131,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowProductConfigResponse.
+        r"""Gets the properties of this ShowProductConfigResponse.
 
         属性
 
@@ -142,7 +142,7 @@ class ShowProductConfigResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowProductConfigResponse.
+        r"""Sets the properties of this ShowProductConfigResponse.
 
         属性
 

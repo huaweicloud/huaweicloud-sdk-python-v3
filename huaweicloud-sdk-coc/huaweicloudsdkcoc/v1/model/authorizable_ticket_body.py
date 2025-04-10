@@ -29,7 +29,7 @@ class AuthorizableTicketBody:
     }
 
     def __init__(self, type=None, scope_id=None, target_id=None):
-        """AuthorizableTicketBody
+        r"""AuthorizableTicketBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AuthorizableTicketBody:
 
     @property
     def type(self):
-        """Gets the type of this AuthorizableTicketBody.
+        r"""Gets the type of this AuthorizableTicketBody.
 
         可授权单类型
 
@@ -68,7 +68,7 @@ class AuthorizableTicketBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AuthorizableTicketBody.
+        r"""Sets the type of this AuthorizableTicketBody.
 
         可授权单类型
 
@@ -79,7 +79,7 @@ class AuthorizableTicketBody:
 
     @property
     def scope_id(self):
-        """Gets the scope_id of this AuthorizableTicketBody.
+        r"""Gets the scope_id of this AuthorizableTicketBody.
 
         scope ID，一般为region id
 
@@ -90,7 +90,7 @@ class AuthorizableTicketBody:
 
     @scope_id.setter
     def scope_id(self, scope_id):
-        """Sets the scope_id of this AuthorizableTicketBody.
+        r"""Sets the scope_id of this AuthorizableTicketBody.
 
         scope ID，一般为region id
 
@@ -101,7 +101,7 @@ class AuthorizableTicketBody:
 
     @property
     def target_id(self):
-        """Gets the target_id of this AuthorizableTicketBody.
+        r"""Gets the target_id of this AuthorizableTicketBody.
 
         目标 ID，一般为应用id
 
@@ -112,7 +112,7 @@ class AuthorizableTicketBody:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this AuthorizableTicketBody.
+        r"""Sets the target_id of this AuthorizableTicketBody.
 
         目标 ID，一般为应用id
 

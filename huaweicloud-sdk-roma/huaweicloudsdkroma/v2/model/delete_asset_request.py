@@ -27,7 +27,7 @@ class DeleteAssetRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteAssetRequest
+        r"""DeleteAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteAssetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAssetRequest.
+        r"""Gets the instance_id of this DeleteAssetRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class DeleteAssetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAssetRequest.
+        r"""Sets the instance_id of this DeleteAssetRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class DeleteAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAssetRequest.
+        r"""Gets the body of this DeleteAssetRequest.
 
         :return: The body of this DeleteAssetRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AssetOperateRequest`
@@ -80,7 +80,7 @@ class DeleteAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAssetRequest.
+        r"""Sets the body of this DeleteAssetRequest.
 
         :param body: The body of this DeleteAssetRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AssetOperateRequest`

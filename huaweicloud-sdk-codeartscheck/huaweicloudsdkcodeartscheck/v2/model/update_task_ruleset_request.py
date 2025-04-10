@@ -27,7 +27,7 @@ class UpdateTaskRulesetRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateTaskRulesetRequest
+        r"""UpdateTaskRulesetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTaskRulesetRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskRulesetRequest.
+        r"""Gets the task_id of this UpdateTaskRulesetRequest.
 
         任务ID
 
@@ -60,7 +60,7 @@ class UpdateTaskRulesetRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskRulesetRequest.
+        r"""Sets the task_id of this UpdateTaskRulesetRequest.
 
         任务ID
 
@@ -71,7 +71,7 @@ class UpdateTaskRulesetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskRulesetRequest.
+        r"""Gets the body of this UpdateTaskRulesetRequest.
 
         修改任务规则集
 
@@ -82,7 +82,7 @@ class UpdateTaskRulesetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskRulesetRequest.
+        r"""Sets the body of this UpdateTaskRulesetRequest.
 
         修改任务规则集
 

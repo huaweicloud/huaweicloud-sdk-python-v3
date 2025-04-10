@@ -27,7 +27,7 @@ class UpdateL7PolicyRequest:
     }
 
     def __init__(self, l7policy_id=None, body=None):
-        """UpdateL7PolicyRequest
+        r"""UpdateL7PolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateL7PolicyRequest:
 
     @property
     def l7policy_id(self):
-        """Gets the l7policy_id of this UpdateL7PolicyRequest.
+        r"""Gets the l7policy_id of this UpdateL7PolicyRequest.
 
         参数解释：转发策略ID。
 
@@ -60,7 +60,7 @@ class UpdateL7PolicyRequest:
 
     @l7policy_id.setter
     def l7policy_id(self, l7policy_id):
-        """Sets the l7policy_id of this UpdateL7PolicyRequest.
+        r"""Sets the l7policy_id of this UpdateL7PolicyRequest.
 
         参数解释：转发策略ID。
 
@@ -71,7 +71,7 @@ class UpdateL7PolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateL7PolicyRequest.
+        r"""Gets the body of this UpdateL7PolicyRequest.
 
         :return: The body of this UpdateL7PolicyRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateL7PolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateL7PolicyRequest.
+        r"""Sets the body of this UpdateL7PolicyRequest.
 
         :param body: The body of this UpdateL7PolicyRequest.
         :type body: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequestBody`

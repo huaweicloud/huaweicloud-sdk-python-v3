@@ -46,7 +46,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
     }
 
     def __init__(self, id=None, member_account_id=None, member_project_id=None, create_time=None, update_time=None, status=None, organization_id=None, management_account_id=None, management_project_id=None, version=None, log_mapping_config=None):
-        """ShowLogConvergeConfigResponse
+        r"""ShowLogConvergeConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowLogConvergeConfigResponse.
+        r"""Gets the id of this ShowLogConvergeConfigResponse.
 
         ID
 
@@ -125,7 +125,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowLogConvergeConfigResponse.
+        r"""Sets the id of this ShowLogConvergeConfigResponse.
 
         ID
 
@@ -136,7 +136,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def member_account_id(self):
-        """Gets the member_account_id of this ShowLogConvergeConfigResponse.
+        r"""Gets the member_account_id of this ShowLogConvergeConfigResponse.
 
         组织成员账号id
 
@@ -147,7 +147,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @member_account_id.setter
     def member_account_id(self, member_account_id):
-        """Sets the member_account_id of this ShowLogConvergeConfigResponse.
+        r"""Sets the member_account_id of this ShowLogConvergeConfigResponse.
 
         组织成员账号id
 
@@ -158,7 +158,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def member_project_id(self):
-        """Gets the member_project_id of this ShowLogConvergeConfigResponse.
+        r"""Gets the member_project_id of this ShowLogConvergeConfigResponse.
 
         管理员或者委托管理员项目id
 
@@ -169,7 +169,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @member_project_id.setter
     def member_project_id(self, member_project_id):
-        """Sets the member_project_id of this ShowLogConvergeConfigResponse.
+        r"""Sets the member_project_id of this ShowLogConvergeConfigResponse.
 
         管理员或者委托管理员项目id
 
@@ -180,7 +180,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowLogConvergeConfigResponse.
+        r"""Gets the create_time of this ShowLogConvergeConfigResponse.
 
         创建时间
 
@@ -191,7 +191,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowLogConvergeConfigResponse.
+        r"""Sets the create_time of this ShowLogConvergeConfigResponse.
 
         创建时间
 
@@ -202,7 +202,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowLogConvergeConfigResponse.
+        r"""Gets the update_time of this ShowLogConvergeConfigResponse.
 
         更新时间
 
@@ -213,7 +213,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowLogConvergeConfigResponse.
+        r"""Sets the update_time of this ShowLogConvergeConfigResponse.
 
         更新时间
 
@@ -224,7 +224,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowLogConvergeConfigResponse.
+        r"""Gets the status of this ShowLogConvergeConfigResponse.
 
         creating: 配置创建中   done：配置创建完成
 
@@ -235,7 +235,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowLogConvergeConfigResponse.
+        r"""Sets the status of this ShowLogConvergeConfigResponse.
 
         creating: 配置创建中   done：配置创建完成
 
@@ -246,7 +246,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ShowLogConvergeConfigResponse.
+        r"""Gets the organization_id of this ShowLogConvergeConfigResponse.
 
         组织id
 
@@ -257,7 +257,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ShowLogConvergeConfigResponse.
+        r"""Sets the organization_id of this ShowLogConvergeConfigResponse.
 
         组织id
 
@@ -268,7 +268,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def management_account_id(self):
-        """Gets the management_account_id of this ShowLogConvergeConfigResponse.
+        r"""Gets the management_account_id of this ShowLogConvergeConfigResponse.
 
         管理员或者委托管理员账号id
 
@@ -279,7 +279,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @management_account_id.setter
     def management_account_id(self, management_account_id):
-        """Sets the management_account_id of this ShowLogConvergeConfigResponse.
+        r"""Sets the management_account_id of this ShowLogConvergeConfigResponse.
 
         管理员或者委托管理员账号id
 
@@ -290,7 +290,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def management_project_id(self):
-        """Gets the management_project_id of this ShowLogConvergeConfigResponse.
+        r"""Gets the management_project_id of this ShowLogConvergeConfigResponse.
 
         管理员项目id
 
@@ -301,7 +301,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @management_project_id.setter
     def management_project_id(self, management_project_id):
-        """Sets the management_project_id of this ShowLogConvergeConfigResponse.
+        r"""Sets the management_project_id of this ShowLogConvergeConfigResponse.
 
         管理员项目id
 
@@ -312,7 +312,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowLogConvergeConfigResponse.
+        r"""Gets the version of this ShowLogConvergeConfigResponse.
 
         版本
 
@@ -323,7 +323,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowLogConvergeConfigResponse.
+        r"""Sets the version of this ShowLogConvergeConfigResponse.
 
         版本
 
@@ -334,7 +334,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @property
     def log_mapping_config(self):
-        """Gets the log_mapping_config of this ShowLogConvergeConfigResponse.
+        r"""Gets the log_mapping_config of this ShowLogConvergeConfigResponse.
 
         日志汇聚配置
 
@@ -345,7 +345,7 @@ class ShowLogConvergeConfigResponse(SdkResponse):
 
     @log_mapping_config.setter
     def log_mapping_config(self, log_mapping_config):
-        """Sets the log_mapping_config of this ShowLogConvergeConfigResponse.
+        r"""Sets the log_mapping_config of this ShowLogConvergeConfigResponse.
 
         日志汇聚配置
 

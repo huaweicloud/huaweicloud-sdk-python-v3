@@ -27,7 +27,7 @@ class UpdateRequestPolicyTemplate:
     }
 
     def __init__(self, ike_policy=None, ipsec_policy=None):
-        """UpdateRequestPolicyTemplate
+        r"""UpdateRequestPolicyTemplate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateRequestPolicyTemplate:
 
     @property
     def ike_policy(self):
-        """Gets the ike_policy of this UpdateRequestPolicyTemplate.
+        r"""Gets the ike_policy of this UpdateRequestPolicyTemplate.
 
         :return: The ike_policy of this UpdateRequestPolicyTemplate.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwIkePolicy`
@@ -59,7 +59,7 @@ class UpdateRequestPolicyTemplate:
 
     @ike_policy.setter
     def ike_policy(self, ike_policy):
-        """Sets the ike_policy of this UpdateRequestPolicyTemplate.
+        r"""Sets the ike_policy of this UpdateRequestPolicyTemplate.
 
         :param ike_policy: The ike_policy of this UpdateRequestPolicyTemplate.
         :type ike_policy: :class:`huaweicloudsdkvpn.v5.UpdateVgwIkePolicy`
@@ -68,7 +68,7 @@ class UpdateRequestPolicyTemplate:
 
     @property
     def ipsec_policy(self):
-        """Gets the ipsec_policy of this UpdateRequestPolicyTemplate.
+        r"""Gets the ipsec_policy of this UpdateRequestPolicyTemplate.
 
         :return: The ipsec_policy of this UpdateRequestPolicyTemplate.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwIpsecPolicy`
@@ -77,7 +77,7 @@ class UpdateRequestPolicyTemplate:
 
     @ipsec_policy.setter
     def ipsec_policy(self, ipsec_policy):
-        """Sets the ipsec_policy of this UpdateRequestPolicyTemplate.
+        r"""Sets the ipsec_policy of this UpdateRequestPolicyTemplate.
 
         :param ipsec_policy: The ipsec_policy of this UpdateRequestPolicyTemplate.
         :type ipsec_policy: :class:`huaweicloudsdkvpn.v5.UpdateVgwIpsecPolicy`

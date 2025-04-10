@@ -28,7 +28,7 @@ class CreateOnceCodeResponse(SdkResponse):
     }
 
     def __init__(self, once_code=None, x_request_id=None):
-        """CreateOnceCodeResponse
+        r"""CreateOnceCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateOnceCodeResponse(SdkResponse):
 
     @property
     def once_code(self):
-        """Gets the once_code of this CreateOnceCodeResponse.
+        r"""Gets the once_code of this CreateOnceCodeResponse.
 
         一次性鉴权码。
 
@@ -62,7 +62,7 @@ class CreateOnceCodeResponse(SdkResponse):
 
     @once_code.setter
     def once_code(self, once_code):
-        """Sets the once_code of this CreateOnceCodeResponse.
+        r"""Sets the once_code of this CreateOnceCodeResponse.
 
         一次性鉴权码。
 
@@ -73,7 +73,7 @@ class CreateOnceCodeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateOnceCodeResponse.
+        r"""Gets the x_request_id of this CreateOnceCodeResponse.
 
         :return: The x_request_id of this CreateOnceCodeResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateOnceCodeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateOnceCodeResponse.
+        r"""Sets the x_request_id of this CreateOnceCodeResponse.
 
         :param x_request_id: The x_request_id of this CreateOnceCodeResponse.
         :type x_request_id: str

@@ -31,7 +31,7 @@ class FuncLogConfig:
     }
 
     def __init__(self, group_name=None, group_id=None, stream_name=None, stream_id=None):
-        """FuncLogConfig
+        r"""FuncLogConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FuncLogConfig:
 
     @property
     def group_name(self):
-        """Gets the group_name of this FuncLogConfig.
+        r"""Gets the group_name of this FuncLogConfig.
 
         函数绑定日志组名。
 
@@ -75,7 +75,7 @@ class FuncLogConfig:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this FuncLogConfig.
+        r"""Sets the group_name of this FuncLogConfig.
 
         函数绑定日志组名。
 
@@ -86,7 +86,7 @@ class FuncLogConfig:
 
     @property
     def group_id(self):
-        """Gets the group_id of this FuncLogConfig.
+        r"""Gets the group_id of this FuncLogConfig.
 
         函数绑定日志组ID。
 
@@ -97,7 +97,7 @@ class FuncLogConfig:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this FuncLogConfig.
+        r"""Sets the group_id of this FuncLogConfig.
 
         函数绑定日志组ID。
 
@@ -108,7 +108,7 @@ class FuncLogConfig:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this FuncLogConfig.
+        r"""Gets the stream_name of this FuncLogConfig.
 
         函数绑定日志流名。
 
@@ -119,7 +119,7 @@ class FuncLogConfig:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this FuncLogConfig.
+        r"""Sets the stream_name of this FuncLogConfig.
 
         函数绑定日志流名。
 
@@ -130,7 +130,7 @@ class FuncLogConfig:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this FuncLogConfig.
+        r"""Gets the stream_id of this FuncLogConfig.
 
         函数绑定日志流ID。
 
@@ -141,7 +141,7 @@ class FuncLogConfig:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this FuncLogConfig.
+        r"""Sets the stream_id of this FuncLogConfig.
 
         函数绑定日志流ID。
 

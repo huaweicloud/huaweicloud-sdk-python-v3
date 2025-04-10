@@ -37,7 +37,7 @@ class ListEnterpriseProjectRequest:
     }
 
     def __init__(self, id=None, limit=None, name=None, offset=None, sort_dir=None, sort_key=None, status=None):
-        """ListEnterpriseProjectRequest
+        r"""ListEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEnterpriseProjectRequest.
+        r"""Gets the id of this ListEnterpriseProjectRequest.
 
         企业项目ID，0表示默认企业项目
 
@@ -96,7 +96,7 @@ class ListEnterpriseProjectRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEnterpriseProjectRequest.
+        r"""Sets the id of this ListEnterpriseProjectRequest.
 
         企业项目ID，0表示默认企业项目
 
@@ -107,7 +107,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnterpriseProjectRequest.
+        r"""Gets the limit of this ListEnterpriseProjectRequest.
 
         查询记录数默认为1000，limit最多为1000, 最小值为1
 
@@ -118,7 +118,7 @@ class ListEnterpriseProjectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnterpriseProjectRequest.
+        r"""Sets the limit of this ListEnterpriseProjectRequest.
 
         查询记录数默认为1000，limit最多为1000, 最小值为1
 
@@ -129,7 +129,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEnterpriseProjectRequest.
+        r"""Gets the name of this ListEnterpriseProjectRequest.
 
         企业项目名称，支持模糊搜索
 
@@ -140,7 +140,7 @@ class ListEnterpriseProjectRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEnterpriseProjectRequest.
+        r"""Sets the name of this ListEnterpriseProjectRequest.
 
         企业项目名称，支持模糊搜索
 
@@ -151,7 +151,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnterpriseProjectRequest.
+        r"""Gets the offset of this ListEnterpriseProjectRequest.
 
         索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
 
@@ -162,7 +162,7 @@ class ListEnterpriseProjectRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnterpriseProjectRequest.
+        r"""Sets the offset of this ListEnterpriseProjectRequest.
 
         索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
 
@@ -173,7 +173,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListEnterpriseProjectRequest.
+        r"""Gets the sort_dir of this ListEnterpriseProjectRequest.
 
         降序或升序,默认为“desc” 。desc表示降序 。asc 表示升序
 
@@ -184,7 +184,7 @@ class ListEnterpriseProjectRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListEnterpriseProjectRequest.
+        r"""Sets the sort_dir of this ListEnterpriseProjectRequest.
 
         降序或升序,默认为“desc” 。desc表示降序 。asc 表示升序
 
@@ -195,7 +195,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListEnterpriseProjectRequest.
+        r"""Gets the sort_key of this ListEnterpriseProjectRequest.
 
         返回结果按该关键字排序（支持updated_at等关键字，默认为“created_at”）
 
@@ -206,7 +206,7 @@ class ListEnterpriseProjectRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListEnterpriseProjectRequest.
+        r"""Sets the sort_key of this ListEnterpriseProjectRequest.
 
         返回结果按该关键字排序（支持updated_at等关键字，默认为“created_at”）
 
@@ -217,7 +217,7 @@ class ListEnterpriseProjectRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEnterpriseProjectRequest.
+        r"""Gets the status of this ListEnterpriseProjectRequest.
 
         企业项目状态。 1--启用，2--停用
 
@@ -228,7 +228,7 @@ class ListEnterpriseProjectRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEnterpriseProjectRequest.
+        r"""Sets the status of this ListEnterpriseProjectRequest.
 
         企业项目状态。 1--启用，2--停用
 

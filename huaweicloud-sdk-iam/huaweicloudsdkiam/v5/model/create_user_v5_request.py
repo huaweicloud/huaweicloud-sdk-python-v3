@@ -25,7 +25,7 @@ class CreateUserV5Request:
     }
 
     def __init__(self, body=None):
-        """CreateUserV5Request
+        r"""CreateUserV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateUserV5Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateUserV5Request.
+        r"""Gets the body of this CreateUserV5Request.
 
         :return: The body of this CreateUserV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.CreateUserReqBody`
@@ -52,7 +52,7 @@ class CreateUserV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUserV5Request.
+        r"""Sets the body of this CreateUserV5Request.
 
         :param body: The body of this CreateUserV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.CreateUserReqBody`

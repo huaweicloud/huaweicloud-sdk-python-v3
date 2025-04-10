@@ -33,7 +33,7 @@ class AddFlowControlPolicy:
     }
 
     def __init__(self, policy_name=None, description=None, scope=None, scope_value=None, limit=None):
-        """AddFlowControlPolicy
+        r"""AddFlowControlPolicy
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AddFlowControlPolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this AddFlowControlPolicy.
+        r"""Gets the policy_name of this AddFlowControlPolicy.
 
         **参数说明**：数据流转流控策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -82,7 +82,7 @@ class AddFlowControlPolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this AddFlowControlPolicy.
+        r"""Sets the policy_name of this AddFlowControlPolicy.
 
         **参数说明**：数据流转流控策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -93,7 +93,7 @@ class AddFlowControlPolicy:
 
     @property
     def description(self):
-        """Gets the description of this AddFlowControlPolicy.
+        r"""Gets the description of this AddFlowControlPolicy.
 
         **参数说明**：用户自定义的数据流转流控策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -104,7 +104,7 @@ class AddFlowControlPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddFlowControlPolicy.
+        r"""Sets the description of this AddFlowControlPolicy.
 
         **参数说明**：用户自定义的数据流转流控策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -115,7 +115,7 @@ class AddFlowControlPolicy:
 
     @property
     def scope(self):
-        """Gets the scope of this AddFlowControlPolicy.
+        r"""Gets the scope of this AddFlowControlPolicy.
 
         **参数说明**：流控策略作用域. **取值范围**： - USER：租户级流控策略。 - CHANNEL：转发通道级流控策略。 - RULE：转发规则级流控策略。 - ACTION：转发动作级流控策略。
 
@@ -126,7 +126,7 @@ class AddFlowControlPolicy:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this AddFlowControlPolicy.
+        r"""Sets the scope of this AddFlowControlPolicy.
 
         **参数说明**：流控策略作用域. **取值范围**： - USER：租户级流控策略。 - CHANNEL：转发通道级流控策略。 - RULE：转发规则级流控策略。 - ACTION：转发动作级流控策略。
 
@@ -137,7 +137,7 @@ class AddFlowControlPolicy:
 
     @property
     def scope_value(self):
-        """Gets the scope_value of this AddFlowControlPolicy.
+        r"""Gets the scope_value of this AddFlowControlPolicy.
 
         **参数说明**：流控策略作用域附加值。 scope取值为USER时，可不携带该字段，表示租户级流控。 scope取值为CHANNEL时，**取值范围**：HTTP_FORWARDING、DIS_FORWARDING、OBS_FORWARDING、AMQP_FORWARDING、DMS_KAFKA_FORWARDING。 scope取值为RULE时，该字段为对应的ruleId。 scope取值为ACTION时，该字段为对应的actionId。
 
@@ -148,7 +148,7 @@ class AddFlowControlPolicy:
 
     @scope_value.setter
     def scope_value(self, scope_value):
-        """Sets the scope_value of this AddFlowControlPolicy.
+        r"""Sets the scope_value of this AddFlowControlPolicy.
 
         **参数说明**：流控策略作用域附加值。 scope取值为USER时，可不携带该字段，表示租户级流控。 scope取值为CHANNEL时，**取值范围**：HTTP_FORWARDING、DIS_FORWARDING、OBS_FORWARDING、AMQP_FORWARDING、DMS_KAFKA_FORWARDING。 scope取值为RULE时，该字段为对应的ruleId。 scope取值为ACTION时，该字段为对应的actionId。
 
@@ -159,7 +159,7 @@ class AddFlowControlPolicy:
 
     @property
     def limit(self):
-        """Gets the limit of this AddFlowControlPolicy.
+        r"""Gets the limit of this AddFlowControlPolicy.
 
         **参数说明**：数据转发流控大小。单位为tps，取值范围为1~1000的整数，默认为1000.
 
@@ -170,7 +170,7 @@ class AddFlowControlPolicy:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this AddFlowControlPolicy.
+        r"""Sets the limit of this AddFlowControlPolicy.
 
         **参数说明**：数据转发流控大小。单位为tps，取值范围为1~1000的整数，默认为1000.
 

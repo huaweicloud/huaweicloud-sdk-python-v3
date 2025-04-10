@@ -27,7 +27,7 @@ class AttachServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """AttachServerVolumeRequest
+        r"""AttachServerVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachServerVolumeRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this AttachServerVolumeRequest.
+        r"""Gets the server_id of this AttachServerVolumeRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class AttachServerVolumeRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AttachServerVolumeRequest.
+        r"""Sets the server_id of this AttachServerVolumeRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class AttachServerVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachServerVolumeRequest.
+        r"""Gets the body of this AttachServerVolumeRequest.
 
         :return: The body of this AttachServerVolumeRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequestBody`
@@ -80,7 +80,7 @@ class AttachServerVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachServerVolumeRequest.
+        r"""Sets the body of this AttachServerVolumeRequest.
 
         :param body: The body of this AttachServerVolumeRequest.
         :type body: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequestBody`

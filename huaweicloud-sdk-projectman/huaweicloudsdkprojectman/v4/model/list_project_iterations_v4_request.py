@@ -29,7 +29,7 @@ class ListProjectIterationsV4Request:
     }
 
     def __init__(self, project_id=None, updated_time_interval=None, include_deleted=None):
-        """ListProjectIterationsV4Request
+        r"""ListProjectIterationsV4Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProjectIterationsV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectIterationsV4Request.
+        r"""Gets the project_id of this ListProjectIterationsV4Request.
 
         devcloud项目的32位id
 
@@ -67,7 +67,7 @@ class ListProjectIterationsV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectIterationsV4Request.
+        r"""Sets the project_id of this ListProjectIterationsV4Request.
 
         devcloud项目的32位id
 
@@ -78,7 +78,7 @@ class ListProjectIterationsV4Request:
 
     @property
     def updated_time_interval(self):
-        """Gets the updated_time_interval of this ListProjectIterationsV4Request.
+        r"""Gets the updated_time_interval of this ListProjectIterationsV4Request.
 
         更新迭代的时间(查询的起始时间,查询的结束时间)
 
@@ -89,7 +89,7 @@ class ListProjectIterationsV4Request:
 
     @updated_time_interval.setter
     def updated_time_interval(self, updated_time_interval):
-        """Sets the updated_time_interval of this ListProjectIterationsV4Request.
+        r"""Sets the updated_time_interval of this ListProjectIterationsV4Request.
 
         更新迭代的时间(查询的起始时间,查询的结束时间)
 
@@ -100,7 +100,7 @@ class ListProjectIterationsV4Request:
 
     @property
     def include_deleted(self):
-        """Gets the include_deleted of this ListProjectIterationsV4Request.
+        r"""Gets the include_deleted of this ListProjectIterationsV4Request.
 
         是否包含被删除的迭代,默认false不包含被删除的迭代
 
@@ -111,7 +111,7 @@ class ListProjectIterationsV4Request:
 
     @include_deleted.setter
     def include_deleted(self, include_deleted):
-        """Sets the include_deleted of this ListProjectIterationsV4Request.
+        r"""Sets the include_deleted of this ListProjectIterationsV4Request.
 
         是否包含被删除的迭代,默认false不包含被删除的迭代
 

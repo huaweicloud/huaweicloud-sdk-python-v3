@@ -31,7 +31,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
     }
 
     def __init__(self, instance_id=None, topic_name=None, offset=None, limit=None):
-        """ShowMqsInstanceTopicAccessPolicyRequest
+        r"""ShowMqsInstanceTopicAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Gets the instance_id of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Sets the instance_id of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Gets the topic_name of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         topic名称。
 
@@ -95,7 +95,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Sets the topic_name of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         topic名称。
 
@@ -106,7 +106,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Gets the offset of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         分页查询偏移量。
 
@@ -117,7 +117,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Sets the offset of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         分页查询偏移量。
 
@@ -128,7 +128,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Gets the limit of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         分页查询大小。
 
@@ -139,7 +139,7 @@ class ShowMqsInstanceTopicAccessPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowMqsInstanceTopicAccessPolicyRequest.
+        r"""Sets the limit of this ShowMqsInstanceTopicAccessPolicyRequest.
 
         分页查询大小。
 

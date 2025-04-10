@@ -27,7 +27,7 @@ class ApiVersionInfo:
     }
 
     def __init__(self, id=None, status=None):
-        """ApiVersionInfo
+        r"""ApiVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ApiVersionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ApiVersionInfo.
+        r"""Gets the id of this ApiVersionInfo.
 
         API版本号。  取值：由高到低版本分别为v3，v2，v2.0。
 
@@ -59,7 +59,7 @@ class ApiVersionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiVersionInfo.
+        r"""Sets the id of this ApiVersionInfo.
 
         API版本号。  取值：由高到低版本分别为v3，v2，v2.0。
 
@@ -70,7 +70,7 @@ class ApiVersionInfo:
 
     @property
     def status(self):
-        """Gets the status of this ApiVersionInfo.
+        r"""Gets the status of this ApiVersionInfo.
 
         API版本的状态。  取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
 
@@ -81,7 +81,7 @@ class ApiVersionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiVersionInfo.
+        r"""Sets the status of this ApiVersionInfo.
 
         API版本的状态。  取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
 

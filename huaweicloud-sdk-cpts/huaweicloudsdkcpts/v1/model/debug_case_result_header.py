@@ -29,7 +29,7 @@ class DebugCaseResultHeader:
     }
 
     def __init__(self, connection=None, content_type=None, host=None):
-        """DebugCaseResultHeader
+        r"""DebugCaseResultHeader
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DebugCaseResultHeader:
 
     @property
     def connection(self):
-        """Gets the connection of this DebugCaseResultHeader.
+        r"""Gets the connection of this DebugCaseResultHeader.
 
         连接
 
@@ -68,7 +68,7 @@ class DebugCaseResultHeader:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this DebugCaseResultHeader.
+        r"""Sets the connection of this DebugCaseResultHeader.
 
         连接
 
@@ -79,7 +79,7 @@ class DebugCaseResultHeader:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DebugCaseResultHeader.
+        r"""Gets the content_type of this DebugCaseResultHeader.
 
         内容类型
 
@@ -90,7 +90,7 @@ class DebugCaseResultHeader:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DebugCaseResultHeader.
+        r"""Sets the content_type of this DebugCaseResultHeader.
 
         内容类型
 
@@ -101,7 +101,7 @@ class DebugCaseResultHeader:
 
     @property
     def host(self):
-        """Gets the host of this DebugCaseResultHeader.
+        r"""Gets the host of this DebugCaseResultHeader.
 
         主机
 
@@ -112,7 +112,7 @@ class DebugCaseResultHeader:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this DebugCaseResultHeader.
+        r"""Sets the host of this DebugCaseResultHeader.
 
         主机
 

@@ -29,7 +29,7 @@ class ListNotificationMasksRequest:
     }
 
     def __init__(self, offset=None, limit=None, body=None):
-        """ListNotificationMasksRequest
+        r"""ListNotificationMasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListNotificationMasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNotificationMasksRequest.
+        r"""Gets the offset of this ListNotificationMasksRequest.
 
         分页偏移量
 
@@ -68,7 +68,7 @@ class ListNotificationMasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNotificationMasksRequest.
+        r"""Sets the offset of this ListNotificationMasksRequest.
 
         分页偏移量
 
@@ -79,7 +79,7 @@ class ListNotificationMasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNotificationMasksRequest.
+        r"""Gets the limit of this ListNotificationMasksRequest.
 
         分页大小
 
@@ -90,7 +90,7 @@ class ListNotificationMasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNotificationMasksRequest.
+        r"""Sets the limit of this ListNotificationMasksRequest.
 
         分页大小
 
@@ -101,7 +101,7 @@ class ListNotificationMasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListNotificationMasksRequest.
+        r"""Gets the body of this ListNotificationMasksRequest.
 
         :return: The body of this ListNotificationMasksRequest.
         :rtype: :class:`huaweicloudsdkces.v2.ListNotificationMaskRequestBody`
@@ -110,7 +110,7 @@ class ListNotificationMasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListNotificationMasksRequest.
+        r"""Sets the body of this ListNotificationMasksRequest.
 
         :param body: The body of this ListNotificationMasksRequest.
         :type body: :class:`huaweicloudsdkces.v2.ListNotificationMaskRequestBody`

@@ -37,7 +37,7 @@ class PublishAppReq:
     }
 
     def __init__(self, name=None, version=None, title=None, picture=None, summary=None, description=None, labels=None):
-        """PublishAppReq
+        r"""PublishAppReq
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class PublishAppReq:
 
     @property
     def name(self):
-        """Gets the name of this PublishAppReq.
+        r"""Gets the name of this PublishAppReq.
 
         资产名称
 
@@ -94,7 +94,7 @@ class PublishAppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublishAppReq.
+        r"""Sets the name of this PublishAppReq.
 
         资产名称
 
@@ -105,7 +105,7 @@ class PublishAppReq:
 
     @property
     def version(self):
-        """Gets the version of this PublishAppReq.
+        r"""Gets the version of this PublishAppReq.
 
         资产版本
 
@@ -116,7 +116,7 @@ class PublishAppReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishAppReq.
+        r"""Sets the version of this PublishAppReq.
 
         资产版本
 
@@ -127,7 +127,7 @@ class PublishAppReq:
 
     @property
     def title(self):
-        """Gets the title of this PublishAppReq.
+        r"""Gets the title of this PublishAppReq.
 
         展示名
 
@@ -138,7 +138,7 @@ class PublishAppReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this PublishAppReq.
+        r"""Sets the title of this PublishAppReq.
 
         展示名
 
@@ -149,7 +149,7 @@ class PublishAppReq:
 
     @property
     def picture(self):
-        """Gets the picture of this PublishAppReq.
+        r"""Gets the picture of this PublishAppReq.
 
         封面图片base64编码
 
@@ -160,7 +160,7 @@ class PublishAppReq:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this PublishAppReq.
+        r"""Sets the picture of this PublishAppReq.
 
         封面图片base64编码
 
@@ -171,7 +171,7 @@ class PublishAppReq:
 
     @property
     def summary(self):
-        """Gets the summary of this PublishAppReq.
+        r"""Gets the summary of this PublishAppReq.
 
         短描述
 
@@ -182,7 +182,7 @@ class PublishAppReq:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this PublishAppReq.
+        r"""Sets the summary of this PublishAppReq.
 
         短描述
 
@@ -193,7 +193,7 @@ class PublishAppReq:
 
     @property
     def description(self):
-        """Gets the description of this PublishAppReq.
+        r"""Gets the description of this PublishAppReq.
 
         长描述
 
@@ -204,7 +204,7 @@ class PublishAppReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishAppReq.
+        r"""Sets the description of this PublishAppReq.
 
         长描述
 
@@ -215,7 +215,7 @@ class PublishAppReq:
 
     @property
     def labels(self):
-        """Gets the labels of this PublishAppReq.
+        r"""Gets the labels of this PublishAppReq.
 
         标签列表
 
@@ -226,7 +226,7 @@ class PublishAppReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this PublishAppReq.
+        r"""Sets the labels of this PublishAppReq.
 
         标签列表
 

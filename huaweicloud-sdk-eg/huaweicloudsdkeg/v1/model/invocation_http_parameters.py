@@ -25,7 +25,7 @@ class InvocationHttpParameters:
     }
 
     def __init__(self, header_parameters=None):
-        """InvocationHttpParameters
+        r"""InvocationHttpParameters
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InvocationHttpParameters:
 
     @property
     def header_parameters(self):
-        """Gets the header_parameters of this InvocationHttpParameters.
+        r"""Gets the header_parameters of this InvocationHttpParameters.
 
         对象列表
 
@@ -54,7 +54,7 @@ class InvocationHttpParameters:
 
     @header_parameters.setter
     def header_parameters(self, header_parameters):
-        """Sets the header_parameters of this InvocationHttpParameters.
+        r"""Sets the header_parameters of this InvocationHttpParameters.
 
         对象列表
 

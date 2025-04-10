@@ -29,7 +29,7 @@ class UpdateStreamingJobRequest:
     }
 
     def __init__(self, check=None, job_id=None, body=None):
-        """UpdateStreamingJobRequest
+        r"""UpdateStreamingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateStreamingJobRequest:
 
     @property
     def check(self):
-        """Gets the check of this UpdateStreamingJobRequest.
+        r"""Gets the check of this UpdateStreamingJobRequest.
 
         是否需要校验配置是否正确
 
@@ -67,7 +67,7 @@ class UpdateStreamingJobRequest:
 
     @check.setter
     def check(self, check):
-        """Sets the check of this UpdateStreamingJobRequest.
+        r"""Sets the check of this UpdateStreamingJobRequest.
 
         是否需要校验配置是否正确
 
@@ -78,7 +78,7 @@ class UpdateStreamingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateStreamingJobRequest.
+        r"""Gets the job_id of this UpdateStreamingJobRequest.
 
         作业ID
 
@@ -89,7 +89,7 @@ class UpdateStreamingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateStreamingJobRequest.
+        r"""Sets the job_id of this UpdateStreamingJobRequest.
 
         作业ID
 
@@ -100,7 +100,7 @@ class UpdateStreamingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStreamingJobRequest.
+        r"""Gets the body of this UpdateStreamingJobRequest.
 
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 
@@ -111,7 +111,7 @@ class UpdateStreamingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStreamingJobRequest.
+        r"""Sets the body of this UpdateStreamingJobRequest.
 
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 

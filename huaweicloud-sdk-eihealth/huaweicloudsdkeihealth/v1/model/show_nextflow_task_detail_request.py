@@ -29,7 +29,7 @@ class ShowNextflowTaskDetailRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None, task_id=None):
-        """ShowNextflowTaskDetailRequest
+        r"""ShowNextflowTaskDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowNextflowTaskDetailRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowNextflowTaskDetailRequest.
+        r"""Gets the eihealth_project_id of this ShowNextflowTaskDetailRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -65,7 +65,7 @@ class ShowNextflowTaskDetailRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowNextflowTaskDetailRequest.
+        r"""Sets the eihealth_project_id of this ShowNextflowTaskDetailRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -76,7 +76,7 @@ class ShowNextflowTaskDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowNextflowTaskDetailRequest.
+        r"""Gets the job_id of this ShowNextflowTaskDetailRequest.
 
         作业id
 
@@ -87,7 +87,7 @@ class ShowNextflowTaskDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowNextflowTaskDetailRequest.
+        r"""Sets the job_id of this ShowNextflowTaskDetailRequest.
 
         作业id
 
@@ -98,7 +98,7 @@ class ShowNextflowTaskDetailRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowNextflowTaskDetailRequest.
+        r"""Gets the task_id of this ShowNextflowTaskDetailRequest.
 
         task id
 
@@ -109,7 +109,7 @@ class ShowNextflowTaskDetailRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowNextflowTaskDetailRequest.
+        r"""Sets the task_id of this ShowNextflowTaskDetailRequest.
 
         task id
 

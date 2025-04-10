@@ -41,7 +41,7 @@ class IncidentOperateLogV2:
     }
 
     def __init__(self, incident_log_id=None, incident_id=None, operate_type=None, operator_type=None, operator_id=None, operator_name=None, operate_desc=None, operate_time=None, timestamp_operate_time=None):
-        """IncidentOperateLogV2
+        r"""IncidentOperateLogV2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class IncidentOperateLogV2:
 
     @property
     def incident_log_id(self):
-        """Gets the incident_log_id of this IncidentOperateLogV2.
+        r"""Gets the incident_log_id of this IncidentOperateLogV2.
 
         工单日志id
 
@@ -110,7 +110,7 @@ class IncidentOperateLogV2:
 
     @incident_log_id.setter
     def incident_log_id(self, incident_log_id):
-        """Sets the incident_log_id of this IncidentOperateLogV2.
+        r"""Sets the incident_log_id of this IncidentOperateLogV2.
 
         工单日志id
 
@@ -121,7 +121,7 @@ class IncidentOperateLogV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this IncidentOperateLogV2.
+        r"""Gets the incident_id of this IncidentOperateLogV2.
 
         工单id
 
@@ -132,7 +132,7 @@ class IncidentOperateLogV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this IncidentOperateLogV2.
+        r"""Sets the incident_id of this IncidentOperateLogV2.
 
         工单id
 
@@ -143,7 +143,7 @@ class IncidentOperateLogV2:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this IncidentOperateLogV2.
+        r"""Gets the operate_type of this IncidentOperateLogV2.
 
         操作类型
 
@@ -154,7 +154,7 @@ class IncidentOperateLogV2:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this IncidentOperateLogV2.
+        r"""Sets the operate_type of this IncidentOperateLogV2.
 
         操作类型
 
@@ -165,7 +165,7 @@ class IncidentOperateLogV2:
 
     @property
     def operator_type(self):
-        """Gets the operator_type of this IncidentOperateLogV2.
+        r"""Gets the operator_type of this IncidentOperateLogV2.
 
         操作员类型
 
@@ -176,7 +176,7 @@ class IncidentOperateLogV2:
 
     @operator_type.setter
     def operator_type(self, operator_type):
-        """Sets the operator_type of this IncidentOperateLogV2.
+        r"""Sets the operator_type of this IncidentOperateLogV2.
 
         操作员类型
 
@@ -187,7 +187,7 @@ class IncidentOperateLogV2:
 
     @property
     def operator_id(self):
-        """Gets the operator_id of this IncidentOperateLogV2.
+        r"""Gets the operator_id of this IncidentOperateLogV2.
 
         操作员id
 
@@ -198,7 +198,7 @@ class IncidentOperateLogV2:
 
     @operator_id.setter
     def operator_id(self, operator_id):
-        """Sets the operator_id of this IncidentOperateLogV2.
+        r"""Sets the operator_id of this IncidentOperateLogV2.
 
         操作员id
 
@@ -209,7 +209,7 @@ class IncidentOperateLogV2:
 
     @property
     def operator_name(self):
-        """Gets the operator_name of this IncidentOperateLogV2.
+        r"""Gets the operator_name of this IncidentOperateLogV2.
 
         操作员名称
 
@@ -220,7 +220,7 @@ class IncidentOperateLogV2:
 
     @operator_name.setter
     def operator_name(self, operator_name):
-        """Sets the operator_name of this IncidentOperateLogV2.
+        r"""Sets the operator_name of this IncidentOperateLogV2.
 
         操作员名称
 
@@ -231,7 +231,7 @@ class IncidentOperateLogV2:
 
     @property
     def operate_desc(self):
-        """Gets the operate_desc of this IncidentOperateLogV2.
+        r"""Gets the operate_desc of this IncidentOperateLogV2.
 
         操作描述
 
@@ -242,7 +242,7 @@ class IncidentOperateLogV2:
 
     @operate_desc.setter
     def operate_desc(self, operate_desc):
-        """Sets the operate_desc of this IncidentOperateLogV2.
+        r"""Sets the operate_desc of this IncidentOperateLogV2.
 
         操作描述
 
@@ -253,7 +253,7 @@ class IncidentOperateLogV2:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this IncidentOperateLogV2.
+        r"""Gets the operate_time of this IncidentOperateLogV2.
 
         操作时间
 
@@ -264,7 +264,7 @@ class IncidentOperateLogV2:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this IncidentOperateLogV2.
+        r"""Sets the operate_time of this IncidentOperateLogV2.
 
         操作时间
 
@@ -275,7 +275,7 @@ class IncidentOperateLogV2:
 
     @property
     def timestamp_operate_time(self):
-        """Gets the timestamp_operate_time of this IncidentOperateLogV2.
+        r"""Gets the timestamp_operate_time of this IncidentOperateLogV2.
 
         工单操作时间
 
@@ -286,7 +286,7 @@ class IncidentOperateLogV2:
 
     @timestamp_operate_time.setter
     def timestamp_operate_time(self, timestamp_operate_time):
-        """Sets the timestamp_operate_time of this IncidentOperateLogV2.
+        r"""Sets the timestamp_operate_time of this IncidentOperateLogV2.
 
         工单操作时间
 

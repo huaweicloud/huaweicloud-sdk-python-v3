@@ -27,7 +27,7 @@ class BatchDeleteSubnetTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteSubnetTagsRequestBody
+        r"""BatchDeleteSubnetTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteSubnetTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteSubnetTagsRequestBody.
+        r"""Gets the action of this BatchDeleteSubnetTagsRequestBody.
 
         功能说明：操作标识 取值范围：delete
 
@@ -59,7 +59,7 @@ class BatchDeleteSubnetTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteSubnetTagsRequestBody.
+        r"""Sets the action of this BatchDeleteSubnetTagsRequestBody.
 
         功能说明：操作标识 取值范围：delete
 
@@ -70,7 +70,7 @@ class BatchDeleteSubnetTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteSubnetTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteSubnetTagsRequestBody.
 
         标签列表
 
@@ -81,7 +81,7 @@ class BatchDeleteSubnetTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteSubnetTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteSubnetTagsRequestBody.
 
         标签列表
 

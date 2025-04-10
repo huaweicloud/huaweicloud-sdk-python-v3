@@ -27,7 +27,7 @@ class ParamGroupDiffRequestBody:
     }
 
     def __init__(self, source_id=None, target_id=None):
-        """ParamGroupDiffRequestBody
+        r"""ParamGroupDiffRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ParamGroupDiffRequestBody:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ParamGroupDiffRequestBody.
+        r"""Gets the source_id of this ParamGroupDiffRequestBody.
 
         需要进行比较的参数组模板ID。
 
@@ -59,7 +59,7 @@ class ParamGroupDiffRequestBody:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ParamGroupDiffRequestBody.
+        r"""Sets the source_id of this ParamGroupDiffRequestBody.
 
         需要进行比较的参数组模板ID。
 
@@ -70,7 +70,7 @@ class ParamGroupDiffRequestBody:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ParamGroupDiffRequestBody.
+        r"""Gets the target_id of this ParamGroupDiffRequestBody.
 
         需要进行比较的参数组模板ID，需要与源参数组模板的部署形态相同才可比较。
 
@@ -81,7 +81,7 @@ class ParamGroupDiffRequestBody:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ParamGroupDiffRequestBody.
+        r"""Sets the target_id of this ParamGroupDiffRequestBody.
 
         需要进行比较的参数组模板ID，需要与源参数组模板的部署形态相同才可比较。
 

@@ -33,7 +33,7 @@ class ListBackPoolMembersRequest:
     }
 
     def __init__(self, back_pool_id=None, cid=None, limit=None, offset=None, billing_cycle=None):
-        """ListBackPoolMembersRequest
+        r"""ListBackPoolMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListBackPoolMembersRequest:
 
     @property
     def back_pool_id(self):
-        """Gets the back_pool_id of this ListBackPoolMembersRequest.
+        r"""Gets the back_pool_id of this ListBackPoolMembersRequest.
 
         流量池标识
 
@@ -80,7 +80,7 @@ class ListBackPoolMembersRequest:
 
     @back_pool_id.setter
     def back_pool_id(self, back_pool_id):
-        """Sets the back_pool_id of this ListBackPoolMembersRequest.
+        r"""Sets the back_pool_id of this ListBackPoolMembersRequest.
 
         流量池标识
 
@@ -91,7 +91,7 @@ class ListBackPoolMembersRequest:
 
     @property
     def cid(self):
-        """Gets the cid of this ListBackPoolMembersRequest.
+        r"""Gets the cid of this ListBackPoolMembersRequest.
 
         容器ID
 
@@ -102,7 +102,7 @@ class ListBackPoolMembersRequest:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this ListBackPoolMembersRequest.
+        r"""Sets the cid of this ListBackPoolMembersRequest.
 
         容器ID
 
@@ -113,7 +113,7 @@ class ListBackPoolMembersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackPoolMembersRequest.
+        r"""Gets the limit of this ListBackPoolMembersRequest.
 
         每页记录数
 
@@ -124,7 +124,7 @@ class ListBackPoolMembersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackPoolMembersRequest.
+        r"""Sets the limit of this ListBackPoolMembersRequest.
 
         每页记录数
 
@@ -135,7 +135,7 @@ class ListBackPoolMembersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackPoolMembersRequest.
+        r"""Gets the offset of this ListBackPoolMembersRequest.
 
         页码
 
@@ -146,7 +146,7 @@ class ListBackPoolMembersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackPoolMembersRequest.
+        r"""Sets the offset of this ListBackPoolMembersRequest.
 
         页码
 
@@ -157,7 +157,7 @@ class ListBackPoolMembersRequest:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this ListBackPoolMembersRequest.
+        r"""Gets the billing_cycle of this ListBackPoolMembersRequest.
 
         账期，例如：2021-04
 
@@ -168,7 +168,7 @@ class ListBackPoolMembersRequest:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this ListBackPoolMembersRequest.
+        r"""Sets the billing_cycle of this ListBackPoolMembersRequest.
 
         账期，例如：2021-04
 

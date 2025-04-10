@@ -25,7 +25,7 @@ class ZoneState:
     }
 
     def __init__(self, available=None):
-        """ZoneState
+        r"""ZoneState
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ZoneState:
 
     @property
     def available(self):
-        """Gets the available of this ZoneState.
+        r"""Gets the available of this ZoneState.
 
         可用分区是否可用。
 
@@ -54,7 +54,7 @@ class ZoneState:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this ZoneState.
+        r"""Sets the available of this ZoneState.
 
         可用分区是否可用。
 

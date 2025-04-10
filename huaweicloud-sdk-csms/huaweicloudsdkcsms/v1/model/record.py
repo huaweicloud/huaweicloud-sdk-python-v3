@@ -41,7 +41,7 @@ class Record:
     }
 
     def __init__(self, event_name=None, trigger_event_type=None, create_time=None, secret_name=None, secret_type=None, notification_target_name=None, notification_target_id=None, notification_content=None, notification_status=None):
-        """Record
+        r"""Record
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Record:
 
     @property
     def event_name(self):
-        """Gets the event_name of this Record.
+        r"""Gets the event_name of this Record.
 
         凭据名称。
 
@@ -110,7 +110,7 @@ class Record:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this Record.
+        r"""Sets the event_name of this Record.
 
         凭据名称。
 
@@ -121,7 +121,7 @@ class Record:
 
     @property
     def trigger_event_type(self):
-        """Gets the trigger_event_type of this Record.
+        r"""Gets the trigger_event_type of this Record.
 
         事件类型。 - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败
 
@@ -132,7 +132,7 @@ class Record:
 
     @trigger_event_type.setter
     def trigger_event_type(self, trigger_event_type):
-        """Sets the trigger_event_type of this Record.
+        r"""Sets the trigger_event_type of this Record.
 
         事件类型。 - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败
 
@@ -143,7 +143,7 @@ class Record:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Record.
+        r"""Gets the create_time of this Record.
 
         事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -154,7 +154,7 @@ class Record:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Record.
+        r"""Sets the create_time of this Record.
 
         事件通知记录的创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -165,7 +165,7 @@ class Record:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this Record.
+        r"""Gets the secret_name of this Record.
 
         凭据名称。
 
@@ -176,7 +176,7 @@ class Record:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this Record.
+        r"""Sets the secret_name of this Record.
 
         凭据名称。
 
@@ -187,7 +187,7 @@ class Record:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this Record.
+        r"""Gets the secret_type of this Record.
 
         凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：TaurusDB凭据。专门针对TaurusDB的凭据，用于存储TaurusDB的账号信息。
 
@@ -198,7 +198,7 @@ class Record:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this Record.
+        r"""Sets the secret_type of this Record.
 
         凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：TaurusDB凭据。专门针对TaurusDB的凭据，用于存储TaurusDB的账号信息。
 
@@ -209,7 +209,7 @@ class Record:
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this Record.
+        r"""Gets the notification_target_name of this Record.
 
         事件通知的对象名称。
 
@@ -220,7 +220,7 @@ class Record:
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this Record.
+        r"""Sets the notification_target_name of this Record.
 
         事件通知的对象名称。
 
@@ -231,7 +231,7 @@ class Record:
 
     @property
     def notification_target_id(self):
-        """Gets the notification_target_id of this Record.
+        r"""Gets the notification_target_id of this Record.
 
         事件通知的对象ID。
 
@@ -242,7 +242,7 @@ class Record:
 
     @notification_target_id.setter
     def notification_target_id(self, notification_target_id):
-        """Sets the notification_target_id of this Record.
+        r"""Sets the notification_target_id of this Record.
 
         事件通知的对象ID。
 
@@ -253,7 +253,7 @@ class Record:
 
     @property
     def notification_content(self):
-        """Gets the notification_content of this Record.
+        r"""Gets the notification_content of this Record.
 
         事件通知的内容。
 
@@ -264,7 +264,7 @@ class Record:
 
     @notification_content.setter
     def notification_content(self, notification_content):
-        """Sets the notification_content of this Record.
+        r"""Sets the notification_content of this Record.
 
         事件通知的内容。
 
@@ -275,7 +275,7 @@ class Record:
 
     @property
     def notification_status(self):
-        """Gets the notification_status of this Record.
+        r"""Gets the notification_status of this Record.
 
         事件通知状态。  - SUCCESS：事件通知成功。 - FAIL：事件通知失败。 - INVALID：事件通知配置主题信息无效或不正确，无法触发通知。
 
@@ -286,7 +286,7 @@ class Record:
 
     @notification_status.setter
     def notification_status(self, notification_status):
-        """Sets the notification_status of this Record.
+        r"""Sets the notification_status of this Record.
 
         事件通知状态。  - SUCCESS：事件通知成功。 - FAIL：事件通知失败。 - INVALID：事件通知配置主题信息无效或不正确，无法触发通知。
 

@@ -30,7 +30,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowBranchesByTwoRepositoryIdResponse
+        r"""ShowBranchesByTwoRepositoryIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowBranchesByTwoRepositoryIdResponse.
+        r"""Gets the error of this ShowBranchesByTwoRepositoryIdResponse.
 
         :return: The error of this ShowBranchesByTwoRepositoryIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowBranchesByTwoRepositoryIdResponse.
+        r"""Sets the error of this ShowBranchesByTwoRepositoryIdResponse.
 
         :param error: The error of this ShowBranchesByTwoRepositoryIdResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowBranchesByTwoRepositoryIdResponse.
+        r"""Gets the result of this ShowBranchesByTwoRepositoryIdResponse.
 
         :return: The result of this ShowBranchesByTwoRepositoryIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TagList`
@@ -85,7 +85,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowBranchesByTwoRepositoryIdResponse.
+        r"""Sets the result of this ShowBranchesByTwoRepositoryIdResponse.
 
         :param result: The result of this ShowBranchesByTwoRepositoryIdResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TagList`
@@ -94,7 +94,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowBranchesByTwoRepositoryIdResponse.
+        r"""Gets the status of this ShowBranchesByTwoRepositoryIdResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowBranchesByTwoRepositoryIdResponse.
+        r"""Sets the status of this ShowBranchesByTwoRepositoryIdResponse.
 
         响应状态
 

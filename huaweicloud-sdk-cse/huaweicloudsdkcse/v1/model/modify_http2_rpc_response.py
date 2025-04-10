@@ -36,7 +36,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
     }
 
     def __init__(self, gateway_id=None, plugin_config=None, name=None, route_name=None, route_destination_name=None, dubbo=None):
-        """ModifyHttp2RpcResponse
+        r"""ModifyHttp2RpcResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ModifyHttp2RpcResponse.
+        r"""Gets the gateway_id of this ModifyHttp2RpcResponse.
 
         网关的ID。
 
@@ -90,7 +90,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ModifyHttp2RpcResponse.
+        r"""Sets the gateway_id of this ModifyHttp2RpcResponse.
 
         网关的ID。
 
@@ -101,7 +101,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @property
     def plugin_config(self):
-        """Gets the plugin_config of this ModifyHttp2RpcResponse.
+        r"""Gets the plugin_config of this ModifyHttp2RpcResponse.
 
         传递给插件的配置。
 
@@ -112,7 +112,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @plugin_config.setter
     def plugin_config(self, plugin_config):
-        """Sets the plugin_config of this ModifyHttp2RpcResponse.
+        r"""Sets the plugin_config of this ModifyHttp2RpcResponse.
 
         传递给插件的配置。
 
@@ -123,7 +123,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ModifyHttp2RpcResponse.
+        r"""Gets the name of this ModifyHttp2RpcResponse.
 
         :return: The name of this ModifyHttp2RpcResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyHttp2RpcResponse.
+        r"""Sets the name of this ModifyHttp2RpcResponse.
 
         :param name: The name of this ModifyHttp2RpcResponse.
         :type name: str
@@ -141,7 +141,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @property
     def route_name(self):
-        """Gets the route_name of this ModifyHttp2RpcResponse.
+        r"""Gets the route_name of this ModifyHttp2RpcResponse.
 
         路由的名称。
 
@@ -152,7 +152,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @route_name.setter
     def route_name(self, route_name):
-        """Sets the route_name of this ModifyHttp2RpcResponse.
+        r"""Sets the route_name of this ModifyHttp2RpcResponse.
 
         路由的名称。
 
@@ -163,7 +163,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @property
     def route_destination_name(self):
-        """Gets the route_destination_name of this ModifyHttp2RpcResponse.
+        r"""Gets the route_destination_name of this ModifyHttp2RpcResponse.
 
         目标路由的名称。
 
@@ -174,7 +174,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @route_destination_name.setter
     def route_destination_name(self, route_destination_name):
-        """Sets the route_destination_name of this ModifyHttp2RpcResponse.
+        r"""Sets the route_destination_name of this ModifyHttp2RpcResponse.
 
         目标路由的名称。
 
@@ -185,7 +185,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @property
     def dubbo(self):
-        """Gets the dubbo of this ModifyHttp2RpcResponse.
+        r"""Gets the dubbo of this ModifyHttp2RpcResponse.
 
         :return: The dubbo of this ModifyHttp2RpcResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.Dubbo`
@@ -194,7 +194,7 @@ class ModifyHttp2RpcResponse(SdkResponse):
 
     @dubbo.setter
     def dubbo(self, dubbo):
-        """Sets the dubbo of this ModifyHttp2RpcResponse.
+        r"""Sets the dubbo of this ModifyHttp2RpcResponse.
 
         :param dubbo: The dubbo of this ModifyHttp2RpcResponse.
         :type dubbo: :class:`huaweicloudsdkcse.v1.Dubbo`

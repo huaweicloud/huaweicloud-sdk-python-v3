@@ -31,7 +31,7 @@ class ListBindedEipsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None):
-        """ListBindedEipsRequest
+        r"""ListBindedEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListBindedEipsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListBindedEipsRequest.
+        r"""Gets the x_language of this ListBindedEipsRequest.
 
         语言
 
@@ -74,7 +74,7 @@ class ListBindedEipsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListBindedEipsRequest.
+        r"""Sets the x_language of this ListBindedEipsRequest.
 
         语言
 
@@ -85,7 +85,7 @@ class ListBindedEipsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBindedEipsRequest.
+        r"""Gets the instance_id of this ListBindedEipsRequest.
 
         实例ID。
 
@@ -96,7 +96,7 @@ class ListBindedEipsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBindedEipsRequest.
+        r"""Sets the instance_id of this ListBindedEipsRequest.
 
         实例ID。
 
@@ -107,7 +107,7 @@ class ListBindedEipsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBindedEipsRequest.
+        r"""Gets the offset of this ListBindedEipsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -118,7 +118,7 @@ class ListBindedEipsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBindedEipsRequest.
+        r"""Sets the offset of this ListBindedEipsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -129,7 +129,7 @@ class ListBindedEipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBindedEipsRequest.
+        r"""Gets the limit of this ListBindedEipsRequest.
 
         查询记录数。默认为50，不能为负数，最小值为1，最大值为50。
 
@@ -140,7 +140,7 @@ class ListBindedEipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBindedEipsRequest.
+        r"""Sets the limit of this ListBindedEipsRequest.
 
         查询记录数。默认为50，不能为负数，最小值为1，最大值为50。
 

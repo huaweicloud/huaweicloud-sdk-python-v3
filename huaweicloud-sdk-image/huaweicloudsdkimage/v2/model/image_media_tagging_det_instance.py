@@ -27,7 +27,7 @@ class ImageMediaTaggingDetInstance:
     }
 
     def __init__(self, bounding_box=None, confidence=None):
-        """ImageMediaTaggingDetInstance
+        r"""ImageMediaTaggingDetInstance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageMediaTaggingDetInstance:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this ImageMediaTaggingDetInstance.
+        r"""Gets the bounding_box of this ImageMediaTaggingDetInstance.
 
         :return: The bounding_box of this ImageMediaTaggingDetInstance.
         :rtype: :class:`huaweicloudsdkimage.v2.BoundingBox`
@@ -59,7 +59,7 @@ class ImageMediaTaggingDetInstance:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this ImageMediaTaggingDetInstance.
+        r"""Sets the bounding_box of this ImageMediaTaggingDetInstance.
 
         :param bounding_box: The bounding_box of this ImageMediaTaggingDetInstance.
         :type bounding_box: :class:`huaweicloudsdkimage.v2.BoundingBox`
@@ -68,7 +68,7 @@ class ImageMediaTaggingDetInstance:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageMediaTaggingDetInstance.
+        r"""Gets the confidence of this ImageMediaTaggingDetInstance.
 
         检测标签的置信度，将Float型置信度转为String类型返回，Float取值范围（0~100）。
 
@@ -79,7 +79,7 @@ class ImageMediaTaggingDetInstance:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageMediaTaggingDetInstance.
+        r"""Sets the confidence of this ImageMediaTaggingDetInstance.
 
         检测标签的置信度，将Float型置信度转为String类型返回，Float取值范围（0~100）。
 

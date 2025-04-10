@@ -25,7 +25,7 @@ class PropertyReferenceReq:
     }
 
     def __init__(self, asset_id=None):
-        """PropertyReferenceReq
+        r"""PropertyReferenceReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PropertyReferenceReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this PropertyReferenceReq.
+        r"""Gets the asset_id of this PropertyReferenceReq.
 
         引用的资产ID，只有single型参数才能填写，可填写null置空
 
@@ -54,7 +54,7 @@ class PropertyReferenceReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this PropertyReferenceReq.
+        r"""Sets the asset_id of this PropertyReferenceReq.
 
         引用的资产ID，只有single型参数才能填写，可填写null置空
 

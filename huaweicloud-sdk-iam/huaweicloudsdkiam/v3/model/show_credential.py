@@ -35,7 +35,7 @@ class ShowCredential:
     }
 
     def __init__(self, user_id=None, access=None, status=None, create_time=None, last_use_time=None, description=None):
-        """ShowCredential
+        r"""ShowCredential
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowCredential:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowCredential.
+        r"""Gets the user_id of this ShowCredential.
 
         IAM用户ID。
 
@@ -83,7 +83,7 @@ class ShowCredential:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowCredential.
+        r"""Sets the user_id of this ShowCredential.
 
         IAM用户ID。
 
@@ -94,7 +94,7 @@ class ShowCredential:
 
     @property
     def access(self):
-        """Gets the access of this ShowCredential.
+        r"""Gets the access of this ShowCredential.
 
         查询的AK。
 
@@ -105,7 +105,7 @@ class ShowCredential:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this ShowCredential.
+        r"""Sets the access of this ShowCredential.
 
         查询的AK。
 
@@ -116,7 +116,7 @@ class ShowCredential:
 
     @property
     def status(self):
-        """Gets the status of this ShowCredential.
+        r"""Gets the status of this ShowCredential.
 
         访问密钥状态。
 
@@ -127,7 +127,7 @@ class ShowCredential:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCredential.
+        r"""Sets the status of this ShowCredential.
 
         访问密钥状态。
 
@@ -138,7 +138,7 @@ class ShowCredential:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCredential.
+        r"""Gets the create_time of this ShowCredential.
 
         访问密钥创建时间。
 
@@ -149,7 +149,7 @@ class ShowCredential:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCredential.
+        r"""Sets the create_time of this ShowCredential.
 
         访问密钥创建时间。
 
@@ -160,7 +160,7 @@ class ShowCredential:
 
     @property
     def last_use_time(self):
-        """Gets the last_use_time of this ShowCredential.
+        r"""Gets the last_use_time of this ShowCredential.
 
         访问密钥的上次使用时间。
 
@@ -171,7 +171,7 @@ class ShowCredential:
 
     @last_use_time.setter
     def last_use_time(self, last_use_time):
-        """Sets the last_use_time of this ShowCredential.
+        r"""Sets the last_use_time of this ShowCredential.
 
         访问密钥的上次使用时间。
 
@@ -182,7 +182,7 @@ class ShowCredential:
 
     @property
     def description(self):
-        """Gets the description of this ShowCredential.
+        r"""Gets the description of this ShowCredential.
 
         访问密钥描述信息。
 
@@ -193,7 +193,7 @@ class ShowCredential:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCredential.
+        r"""Sets the description of this ShowCredential.
 
         访问密钥描述信息。
 

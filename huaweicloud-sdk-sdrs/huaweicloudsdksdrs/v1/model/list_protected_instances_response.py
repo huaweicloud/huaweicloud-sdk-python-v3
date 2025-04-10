@@ -28,7 +28,7 @@ class ListProtectedInstancesResponse(SdkResponse):
     }
 
     def __init__(self, protected_instances=None, count=None):
-        """ListProtectedInstancesResponse
+        r"""ListProtectedInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProtectedInstancesResponse(SdkResponse):
 
     @property
     def protected_instances(self):
-        """Gets the protected_instances of this ListProtectedInstancesResponse.
+        r"""Gets the protected_instances of this ListProtectedInstancesResponse.
 
         保护实例的信息列表。
 
@@ -62,7 +62,7 @@ class ListProtectedInstancesResponse(SdkResponse):
 
     @protected_instances.setter
     def protected_instances(self, protected_instances):
-        """Sets the protected_instances of this ListProtectedInstancesResponse.
+        r"""Sets the protected_instances of this ListProtectedInstancesResponse.
 
         保护实例的信息列表。
 
@@ -73,7 +73,7 @@ class ListProtectedInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProtectedInstancesResponse.
+        r"""Gets the count of this ListProtectedInstancesResponse.
 
         列表中包含的保护实例个数。
 
@@ -84,7 +84,7 @@ class ListProtectedInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProtectedInstancesResponse.
+        r"""Sets the count of this ListProtectedInstancesResponse.
 
         列表中包含的保护实例个数。
 

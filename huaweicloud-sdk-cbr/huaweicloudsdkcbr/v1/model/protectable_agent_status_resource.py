@@ -29,7 +29,7 @@ class ProtectableAgentStatusResource:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_type=None):
-        """ProtectableAgentStatusResource
+        r"""ProtectableAgentStatusResource
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ProtectableAgentStatusResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ProtectableAgentStatusResource.
+        r"""Gets the resource_id of this ProtectableAgentStatusResource.
 
         待检查资源ID
 
@@ -66,7 +66,7 @@ class ProtectableAgentStatusResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ProtectableAgentStatusResource.
+        r"""Sets the resource_id of this ProtectableAgentStatusResource.
 
         待检查资源ID
 
@@ -77,7 +77,7 @@ class ProtectableAgentStatusResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ProtectableAgentStatusResource.
+        r"""Gets the resource_name of this ProtectableAgentStatusResource.
 
         待检查资源name
 
@@ -88,7 +88,7 @@ class ProtectableAgentStatusResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ProtectableAgentStatusResource.
+        r"""Sets the resource_name of this ProtectableAgentStatusResource.
 
         待检查资源name
 
@@ -99,7 +99,7 @@ class ProtectableAgentStatusResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProtectableAgentStatusResource.
+        r"""Gets the resource_type of this ProtectableAgentStatusResource.
 
         待检查的资源类型。当前支持的取值包含两个：OS::Nova::Server，该值代表保护的资源为云服务器，OS::Ironic::BareMetalServer，该值代表保护的资源为裸金属服务器。
 
@@ -110,7 +110,7 @@ class ProtectableAgentStatusResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProtectableAgentStatusResource.
+        r"""Sets the resource_type of this ProtectableAgentStatusResource.
 
         待检查的资源类型。当前支持的取值包含两个：OS::Nova::Server，该值代表保护的资源为云服务器，OS::Ironic::BareMetalServer，该值代表保护的资源为裸金属服务器。
 

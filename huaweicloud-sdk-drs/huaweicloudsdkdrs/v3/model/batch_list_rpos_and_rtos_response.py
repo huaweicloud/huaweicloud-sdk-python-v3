@@ -28,7 +28,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchListRposAndRtosResponse
+        r"""BatchListRposAndRtosResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListRposAndRtosResponse.
+        r"""Gets the count of this BatchListRposAndRtosResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListRposAndRtosResponse.
+        r"""Sets the count of this BatchListRposAndRtosResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchListRposAndRtosResponse.
+        r"""Gets the results of this BatchListRposAndRtosResponse.
 
         批量查询RPO&RTO的响应体集合
 
@@ -84,7 +84,7 @@ class BatchListRposAndRtosResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchListRposAndRtosResponse.
+        r"""Sets the results of this BatchListRposAndRtosResponse.
 
         批量查询RPO&RTO的响应体集合
 

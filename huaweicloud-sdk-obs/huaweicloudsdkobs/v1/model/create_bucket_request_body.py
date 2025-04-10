@@ -27,7 +27,7 @@ class CreateBucketRequestBody:
     }
 
     def __init__(self, location=None):
-        """CreateBucketRequestBody
+        r"""CreateBucketRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class CreateBucketRequestBody:
 
     @property
     def location(self):
-        """Gets the location of this CreateBucketRequestBody.
+        r"""Gets the location of this CreateBucketRequestBody.
 
         Region where the bucket will be created. When the endpoint of the CN North-Beijing1 region is used for bucket creation: If **location** is not specified, the bucket will be created in CN North-Beijing1 (cn-north-1) by default. If another region, for example, CN North-Beijing4 (cn-north-4), is specified for **location**, the bucket will be created in the CN North-Beijing4 region. When the endpoint of a region other than CN North-Beijing1 is used for bucket creation, **location** must be set to the region that the used endpoint corresponds to. For example, if **obs.cn-north-4.myhuaweicloud.com is used**, you must set **location** to **cn-north-4**.  For more information, see [Regions and Endpoints](https://developer.huaweicloud.com/intl/en-us/endpoint?all).
 
@@ -56,7 +56,7 @@ class CreateBucketRequestBody:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this CreateBucketRequestBody.
+        r"""Sets the location of this CreateBucketRequestBody.
 
         Region where the bucket will be created. When the endpoint of the CN North-Beijing1 region is used for bucket creation: If **location** is not specified, the bucket will be created in CN North-Beijing1 (cn-north-1) by default. If another region, for example, CN North-Beijing4 (cn-north-4), is specified for **location**, the bucket will be created in the CN North-Beijing4 region. When the endpoint of a region other than CN North-Beijing1 is used for bucket creation, **location** must be set to the region that the used endpoint corresponds to. For example, if **obs.cn-north-4.myhuaweicloud.com is used**, you must set **location** to **cn-north-4**.  For more information, see [Regions and Endpoints](https://developer.huaweicloud.com/intl/en-us/endpoint?all).
 

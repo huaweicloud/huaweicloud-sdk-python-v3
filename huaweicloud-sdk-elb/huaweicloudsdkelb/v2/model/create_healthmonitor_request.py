@@ -25,7 +25,7 @@ class CreateHealthmonitorRequest:
     }
 
     def __init__(self, body=None):
-        """CreateHealthmonitorRequest
+        r"""CreateHealthmonitorRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateHealthmonitorRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHealthmonitorRequest.
+        r"""Gets the body of this CreateHealthmonitorRequest.
 
         :return: The body of this CreateHealthmonitorRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateHealthmonitorRequestBody`
@@ -52,7 +52,7 @@ class CreateHealthmonitorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHealthmonitorRequest.
+        r"""Sets the body of this CreateHealthmonitorRequest.
 
         :param body: The body of this CreateHealthmonitorRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateHealthmonitorRequestBody`

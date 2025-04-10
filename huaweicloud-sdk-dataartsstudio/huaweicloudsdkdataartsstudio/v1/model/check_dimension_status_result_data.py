@@ -25,7 +25,7 @@ class CheckDimensionStatusResultData:
     }
 
     def __init__(self, value=None):
-        """CheckDimensionStatusResultData
+        r"""CheckDimensionStatusResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckDimensionStatusResultData:
 
     @property
     def value(self):
-        """Gets the value of this CheckDimensionStatusResultData.
+        r"""Gets the value of this CheckDimensionStatusResultData.
 
         :return: The value of this CheckDimensionStatusResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -52,7 +52,7 @@ class CheckDimensionStatusResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CheckDimensionStatusResultData.
+        r"""Sets the value of this CheckDimensionStatusResultData.
 
         :param value: The value of this CheckDimensionStatusResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`

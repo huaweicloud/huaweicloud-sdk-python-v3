@@ -27,7 +27,7 @@ class TopicAttribute:
     }
 
     def __init__(self, access_policy=None, introduction=None):
-        """TopicAttribute
+        r"""TopicAttribute
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TopicAttribute:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this TopicAttribute.
+        r"""Gets the access_policy of this TopicAttribute.
 
         topic的访问策略
 
@@ -61,7 +61,7 @@ class TopicAttribute:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this TopicAttribute.
+        r"""Sets the access_policy of this TopicAttribute.
 
         topic的访问策略
 
@@ -72,7 +72,7 @@ class TopicAttribute:
 
     @property
     def introduction(self):
-        """Gets the introduction of this TopicAttribute.
+        r"""Gets the introduction of this TopicAttribute.
 
         topic的简介
 
@@ -83,7 +83,7 @@ class TopicAttribute:
 
     @introduction.setter
     def introduction(self, introduction):
-        """Sets the introduction of this TopicAttribute.
+        r"""Sets the introduction of this TopicAttribute.
 
         topic的简介
 

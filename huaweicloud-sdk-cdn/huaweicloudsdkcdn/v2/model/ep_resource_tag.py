@@ -27,7 +27,7 @@ class EpResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """EpResourceTag
+        r"""EpResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EpResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this EpResourceTag.
+        r"""Gets the key of this EpResourceTag.
 
         资源标签key。
 
@@ -59,7 +59,7 @@ class EpResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this EpResourceTag.
+        r"""Sets the key of this EpResourceTag.
 
         资源标签key。
 
@@ -70,7 +70,7 @@ class EpResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this EpResourceTag.
+        r"""Gets the value of this EpResourceTag.
 
         资源标签value值。
 
@@ -81,7 +81,7 @@ class EpResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EpResourceTag.
+        r"""Sets the value of this EpResourceTag.
 
         资源标签value值。
 

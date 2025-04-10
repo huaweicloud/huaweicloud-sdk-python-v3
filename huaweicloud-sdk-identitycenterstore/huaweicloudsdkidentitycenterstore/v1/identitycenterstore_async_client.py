@@ -34,7 +34,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return client_builder
 
     def create_group_async(self, request):
-        """创建用户组
+        r"""创建用户组
 
         在指定的身份源中创建一个IAM身份中心用户组。
         
@@ -103,7 +103,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def delete_group_async(self, request):
-        """删除用户组
+        r"""删除用户组
 
         根据用户组ID，删除对应的IAM身份中心用户组。
         
@@ -172,7 +172,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def describe_group_async(self, request):
-        """查询用户组详情
+        r"""查询用户组详情
 
         根据用户组ID，查询IAM身份中心用户组的详情信息。
         
@@ -241,7 +241,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def get_group_id_async(self, request):
-        """查询用户组ID
+        r"""查询用户组ID
 
         根据显示名或外部身份源ID，以精确匹配的方式查询用户组ID。显示名和外部身份源ID两种查询方式二选一，不支持同时传入。
         
@@ -310,7 +310,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def list_groups_async(self, request):
-        """列出用户组
+        r"""列出用户组
 
         查询指定身份源下的IAM身份中心用户组列表。
         
@@ -383,7 +383,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def update_group_async(self, request):
-        """更新用户组
+        r"""更新用户组
 
         根据用户组ID，更新对应IAM身份中心用户组的属性。
         
@@ -454,7 +454,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def create_group_membership_async(self, request):
-        """绑定用户和组
+        r"""绑定用户和组
 
         将用户添加到用户组中，用户和用户组必须在同一身份源下。
         
@@ -523,7 +523,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def delete_group_membership_async(self, request):
-        """解绑用户和组
+        r"""解绑用户和组
 
         根据关联关系ID解绑用户和用户组，也就是将用户移出用户组。
         
@@ -592,7 +592,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def describe_group_membership_async(self, request):
-        """查询绑定关系详情
+        r"""查询绑定关系详情
 
         根据关联关系ID，查询此关联关系的详情信息。
         
@@ -661,7 +661,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def get_group_membership_id_async(self, request):
-        """查询绑定关系ID
+        r"""查询绑定关系ID
 
         根据用户ID和用户组ID，查询对应的关联关系ID。
         
@@ -730,7 +730,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def is_member_in_groups_async(self, request):
-        """查询用户是否为用户组成员
+        r"""查询用户是否为用户组成员
 
         根据用户ID和用户组ID列表，查询用户是否为用户组的成员。
         
@@ -799,7 +799,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def list_group_memberships_async(self, request):
-        """列出组中的用户
+        r"""列出组中的用户
 
         根据用户组ID，列出用户组中的用户。
         
@@ -872,7 +872,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def list_group_memberships_for_member_async(self, request):
-        """列出用户加入的组
+        r"""列出用户加入的组
 
         根据用户ID，列出用户加入的用户组。
         
@@ -945,7 +945,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def create_user_async(self, request):
-        """创建用户
+        r"""创建用户
 
         在指定的身份源中创建一个IAM身份中心用户。
         
@@ -1014,7 +1014,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def delete_user_async(self, request):
-        """删除用户
+        r"""删除用户
 
         根据用户ID，删除对应的IAM身份中心用户。
         
@@ -1083,7 +1083,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def describe_user_async(self, request):
-        """查询用户详情
+        r"""查询用户详情
 
         根据用户ID，查询对应IAM身份中心用户的详情信息。
         
@@ -1152,7 +1152,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def get_user_id_async(self, request):
-        """查询用户ID
+        r"""查询用户ID
 
         根据用户名或外部身份源ID，以精确匹配的方式查询用户ID。用户名和外部身份源ID两种查询方式二选一，不支持同时传入。
         
@@ -1221,7 +1221,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def list_users_async(self, request):
-        """列出用户
+        r"""列出用户
 
         查询指定身份源下的IAM身份中心用户列表。
         
@@ -1294,7 +1294,7 @@ class IdentityCenterStoreAsyncClient(Client):
         return http_info
 
     def update_user_async(self, request):
-        """更新用户
+        r"""更新用户
 
         根据用户ID，更新对应IAM身份中心用户的属性。
         

@@ -30,7 +30,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, currency=None, records=None):
-        """ListPartnerAccountChangeRecordsResponse
+        r"""ListPartnerAccountChangeRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPartnerAccountChangeRecordsResponse.
+        r"""Gets the total_count of this ListPartnerAccountChangeRecordsResponse.
 
         返回总条数。
 
@@ -69,7 +69,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPartnerAccountChangeRecordsResponse.
+        r"""Sets the total_count of this ListPartnerAccountChangeRecordsResponse.
 
         返回总条数。
 
@@ -80,7 +80,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListPartnerAccountChangeRecordsResponse.
+        r"""Gets the currency of this ListPartnerAccountChangeRecordsResponse.
 
         币种。 CNY：人民币。
 
@@ -91,7 +91,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListPartnerAccountChangeRecordsResponse.
+        r"""Sets the currency of this ListPartnerAccountChangeRecordsResponse.
 
         币种。 CNY：人民币。
 
@@ -102,7 +102,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListPartnerAccountChangeRecordsResponse.
+        r"""Gets the records of this ListPartnerAccountChangeRecordsResponse.
 
         调账记录列表。 具体请参见表2。
 
@@ -113,7 +113,7 @@ class ListPartnerAccountChangeRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListPartnerAccountChangeRecordsResponse.
+        r"""Sets the records of this ListPartnerAccountChangeRecordsResponse.
 
         调账记录列表。 具体请参见表2。
 

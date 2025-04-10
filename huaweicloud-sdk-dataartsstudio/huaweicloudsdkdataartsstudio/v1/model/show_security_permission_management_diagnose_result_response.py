@@ -34,7 +34,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, check_time=None, scanning=None, high_permission=None, unreasonable_permission=None):
-        """ShowSecurityPermissionManagementDiagnoseResultResponse
+        r"""ShowSecurityPermissionManagementDiagnoseResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Gets the task_id of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         诊断任务id。
 
@@ -83,7 +83,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Sets the task_id of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         诊断任务id。
 
@@ -94,7 +94,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @property
     def check_time(self):
-        """Gets the check_time of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Gets the check_time of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         最新检测时间。
 
@@ -105,7 +105,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @check_time.setter
     def check_time(self, check_time):
-        """Sets the check_time of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Sets the check_time of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         最新检测时间。
 
@@ -116,7 +116,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @property
     def scanning(self):
-        """Gets the scanning of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Gets the scanning of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         是否正在诊断。
 
@@ -127,7 +127,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @scanning.setter
     def scanning(self, scanning):
-        """Sets the scanning of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Sets the scanning of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         是否正在诊断。
 
@@ -138,7 +138,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @property
     def high_permission(self):
-        """Gets the high_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Gets the high_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         :return: The high_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.HighPermission`
@@ -147,7 +147,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @high_permission.setter
     def high_permission(self, high_permission):
-        """Sets the high_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Sets the high_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         :param high_permission: The high_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
         :type high_permission: :class:`huaweicloudsdkdataartsstudio.v1.HighPermission`
@@ -156,7 +156,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @property
     def unreasonable_permission(self):
-        """Gets the unreasonable_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Gets the unreasonable_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         :return: The unreasonable_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UnreasonablePermission`
@@ -165,7 +165,7 @@ class ShowSecurityPermissionManagementDiagnoseResultResponse(SdkResponse):
 
     @unreasonable_permission.setter
     def unreasonable_permission(self, unreasonable_permission):
-        """Sets the unreasonable_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
+        r"""Sets the unreasonable_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
 
         :param unreasonable_permission: The unreasonable_permission of this ShowSecurityPermissionManagementDiagnoseResultResponse.
         :type unreasonable_permission: :class:`huaweicloudsdkdataartsstudio.v1.UnreasonablePermission`

@@ -27,7 +27,7 @@ class CountItem:
     }
 
     def __init__(self, key=None, num=None):
-        """CountItem
+        r"""CountItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CountItem:
 
     @property
     def key(self):
-        """Gets the key of this CountItem.
+        r"""Gets the key of this CountItem.
 
         类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
 
@@ -61,7 +61,7 @@ class CountItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CountItem.
+        r"""Sets the key of this CountItem.
 
         类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
 
@@ -72,7 +72,7 @@ class CountItem:
 
     @property
     def num(self):
-        """Gets the num of this CountItem.
+        r"""Gets the num of this CountItem.
 
         数量
 
@@ -83,7 +83,7 @@ class CountItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this CountItem.
+        r"""Sets the num of this CountItem.
 
         数量
 

@@ -25,7 +25,7 @@ class ObsDataRepositoryPolicy:
     }
 
     def __init__(self, auto_export_policy=None):
-        """ObsDataRepositoryPolicy
+        r"""ObsDataRepositoryPolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ObsDataRepositoryPolicy:
 
     @property
     def auto_export_policy(self):
-        """Gets the auto_export_policy of this ObsDataRepositoryPolicy.
+        r"""Gets the auto_export_policy of this ObsDataRepositoryPolicy.
 
         :return: The auto_export_policy of this ObsDataRepositoryPolicy.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.AutoExportPolicy`
@@ -52,7 +52,7 @@ class ObsDataRepositoryPolicy:
 
     @auto_export_policy.setter
     def auto_export_policy(self, auto_export_policy):
-        """Sets the auto_export_policy of this ObsDataRepositoryPolicy.
+        r"""Sets the auto_export_policy of this ObsDataRepositoryPolicy.
 
         :param auto_export_policy: The auto_export_policy of this ObsDataRepositoryPolicy.
         :type auto_export_policy: :class:`huaweicloudsdksfsturbo.v1.AutoExportPolicy`

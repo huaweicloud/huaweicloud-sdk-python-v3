@@ -28,7 +28,7 @@ class ShowDrugLigandSimilarityGraphTaskResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ShowDrugLigandSimilarityGraphTaskResponse
+        r"""ShowDrugLigandSimilarityGraphTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDrugLigandSimilarityGraphTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDrugLigandSimilarityGraphTaskResponse.
+        r"""Gets the status of this ShowDrugLigandSimilarityGraphTaskResponse.
 
         任务状态
 
@@ -62,7 +62,7 @@ class ShowDrugLigandSimilarityGraphTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDrugLigandSimilarityGraphTaskResponse.
+        r"""Sets the status of this ShowDrugLigandSimilarityGraphTaskResponse.
 
         任务状态
 
@@ -73,7 +73,7 @@ class ShowDrugLigandSimilarityGraphTaskResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowDrugLigandSimilarityGraphTaskResponse.
+        r"""Gets the result of this ShowDrugLigandSimilarityGraphTaskResponse.
 
         :return: The result of this ShowDrugLigandSimilarityGraphTaskResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphTaskResultDto`
@@ -82,7 +82,7 @@ class ShowDrugLigandSimilarityGraphTaskResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowDrugLigandSimilarityGraphTaskResponse.
+        r"""Sets the result of this ShowDrugLigandSimilarityGraphTaskResponse.
 
         :param result: The result of this ShowDrugLigandSimilarityGraphTaskResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphTaskResultDto`

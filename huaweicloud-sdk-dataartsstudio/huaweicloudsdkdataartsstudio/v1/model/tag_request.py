@@ -43,7 +43,7 @@ class TagRequest:
     }
 
     def __init__(self, tag_ids=None, type=None, name=None, create_user=None, start=None, end=None, offset=None, limit=None, sort_by=None, sort_order=None):
-        """TagRequest
+        r"""TagRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class TagRequest:
 
     @property
     def tag_ids(self):
-        """Gets the tag_ids of this TagRequest.
+        r"""Gets the tag_ids of this TagRequest.
 
         标签id
 
@@ -117,7 +117,7 @@ class TagRequest:
 
     @tag_ids.setter
     def tag_ids(self, tag_ids):
-        """Sets the tag_ids of this TagRequest.
+        r"""Sets the tag_ids of this TagRequest.
 
         标签id
 
@@ -128,7 +128,7 @@ class TagRequest:
 
     @property
     def type(self):
-        """Gets the type of this TagRequest.
+        r"""Gets the type of this TagRequest.
 
         类型
 
@@ -139,7 +139,7 @@ class TagRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TagRequest.
+        r"""Sets the type of this TagRequest.
 
         类型
 
@@ -150,7 +150,7 @@ class TagRequest:
 
     @property
     def name(self):
-        """Gets the name of this TagRequest.
+        r"""Gets the name of this TagRequest.
 
         标签名称，用作搜索框筛选
 
@@ -161,7 +161,7 @@ class TagRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TagRequest.
+        r"""Sets the name of this TagRequest.
 
         标签名称，用作搜索框筛选
 
@@ -172,7 +172,7 @@ class TagRequest:
 
     @property
     def create_user(self):
-        """Gets the create_user of this TagRequest.
+        r"""Gets the create_user of this TagRequest.
 
         创建者，用作搜索框筛选
 
@@ -183,7 +183,7 @@ class TagRequest:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this TagRequest.
+        r"""Sets the create_user of this TagRequest.
 
         创建者，用作搜索框筛选
 
@@ -194,7 +194,7 @@ class TagRequest:
 
     @property
     def start(self):
-        """Gets the start of this TagRequest.
+        r"""Gets the start of this TagRequest.
 
         开始时间
 
@@ -205,7 +205,7 @@ class TagRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this TagRequest.
+        r"""Sets the start of this TagRequest.
 
         开始时间
 
@@ -216,7 +216,7 @@ class TagRequest:
 
     @property
     def end(self):
-        """Gets the end of this TagRequest.
+        r"""Gets the end of this TagRequest.
 
         结束时间
 
@@ -227,7 +227,7 @@ class TagRequest:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this TagRequest.
+        r"""Sets the end of this TagRequest.
 
         结束时间
 
@@ -238,7 +238,7 @@ class TagRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this TagRequest.
+        r"""Gets the offset of this TagRequest.
 
         页码
 
@@ -249,7 +249,7 @@ class TagRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this TagRequest.
+        r"""Sets the offset of this TagRequest.
 
         页码
 
@@ -260,7 +260,7 @@ class TagRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this TagRequest.
+        r"""Gets the limit of this TagRequest.
 
         每页大小
 
@@ -271,7 +271,7 @@ class TagRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this TagRequest.
+        r"""Sets the limit of this TagRequest.
 
         每页大小
 
@@ -282,7 +282,7 @@ class TagRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this TagRequest.
+        r"""Gets the sort_by of this TagRequest.
 
         根据xx排序
 
@@ -293,7 +293,7 @@ class TagRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this TagRequest.
+        r"""Sets the sort_by of this TagRequest.
 
         根据xx排序
 
@@ -304,7 +304,7 @@ class TagRequest:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this TagRequest.
+        r"""Gets the sort_order of this TagRequest.
 
         升序/降序
 
@@ -315,7 +315,7 @@ class TagRequest:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this TagRequest.
+        r"""Sets the sort_order of this TagRequest.
 
         升序/降序
 

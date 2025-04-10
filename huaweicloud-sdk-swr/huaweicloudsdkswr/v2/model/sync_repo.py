@@ -45,7 +45,7 @@ class SyncRepo:
     }
 
     def __init__(self, created_at=None, domain_id=None, domain_name=None, id=None, namespace=None, override=None, remote_namespace=None, remote_region_id=None, repo_name=None, sync_auto=None, updated_at=None):
-        """SyncRepo
+        r"""SyncRepo
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class SyncRepo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SyncRepo.
+        r"""Gets the created_at of this SyncRepo.
 
         创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -113,7 +113,7 @@ class SyncRepo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SyncRepo.
+        r"""Sets the created_at of this SyncRepo.
 
         创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -124,7 +124,7 @@ class SyncRepo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SyncRepo.
+        r"""Gets the domain_id of this SyncRepo.
 
         租户ID
 
@@ -135,7 +135,7 @@ class SyncRepo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SyncRepo.
+        r"""Sets the domain_id of this SyncRepo.
 
         租户ID
 
@@ -146,7 +146,7 @@ class SyncRepo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this SyncRepo.
+        r"""Gets the domain_name of this SyncRepo.
 
         租户名
 
@@ -157,7 +157,7 @@ class SyncRepo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this SyncRepo.
+        r"""Sets the domain_name of this SyncRepo.
 
         租户名
 
@@ -168,7 +168,7 @@ class SyncRepo:
 
     @property
     def id(self):
-        """Gets the id of this SyncRepo.
+        r"""Gets the id of this SyncRepo.
 
         ID
 
@@ -179,7 +179,7 @@ class SyncRepo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SyncRepo.
+        r"""Sets the id of this SyncRepo.
 
         ID
 
@@ -190,7 +190,7 @@ class SyncRepo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this SyncRepo.
+        r"""Gets the namespace of this SyncRepo.
 
         组织名
 
@@ -201,7 +201,7 @@ class SyncRepo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this SyncRepo.
+        r"""Sets the namespace of this SyncRepo.
 
         组织名
 
@@ -212,7 +212,7 @@ class SyncRepo:
 
     @property
     def override(self):
-        """Gets the override of this SyncRepo.
+        r"""Gets the override of this SyncRepo.
 
         是否覆盖
 
@@ -223,7 +223,7 @@ class SyncRepo:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this SyncRepo.
+        r"""Sets the override of this SyncRepo.
 
         是否覆盖
 
@@ -234,7 +234,7 @@ class SyncRepo:
 
     @property
     def remote_namespace(self):
-        """Gets the remote_namespace of this SyncRepo.
+        r"""Gets the remote_namespace of this SyncRepo.
 
         目的组织
 
@@ -245,7 +245,7 @@ class SyncRepo:
 
     @remote_namespace.setter
     def remote_namespace(self, remote_namespace):
-        """Sets the remote_namespace of this SyncRepo.
+        r"""Sets the remote_namespace of this SyncRepo.
 
         目的组织
 
@@ -256,7 +256,7 @@ class SyncRepo:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this SyncRepo.
+        r"""Gets the remote_region_id of this SyncRepo.
 
         目的region
 
@@ -267,7 +267,7 @@ class SyncRepo:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this SyncRepo.
+        r"""Sets the remote_region_id of this SyncRepo.
 
         目的region
 
@@ -278,7 +278,7 @@ class SyncRepo:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this SyncRepo.
+        r"""Gets the repo_name of this SyncRepo.
 
         仓库名
 
@@ -289,7 +289,7 @@ class SyncRepo:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this SyncRepo.
+        r"""Sets the repo_name of this SyncRepo.
 
         仓库名
 
@@ -300,7 +300,7 @@ class SyncRepo:
 
     @property
     def sync_auto(self):
-        """Gets the sync_auto of this SyncRepo.
+        r"""Gets the sync_auto of this SyncRepo.
 
         自动同步
 
@@ -311,7 +311,7 @@ class SyncRepo:
 
     @sync_auto.setter
     def sync_auto(self, sync_auto):
-        """Sets the sync_auto of this SyncRepo.
+        r"""Sets the sync_auto of this SyncRepo.
 
         自动同步
 
@@ -322,7 +322,7 @@ class SyncRepo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SyncRepo.
+        r"""Gets the updated_at of this SyncRepo.
 
         更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -333,7 +333,7 @@ class SyncRepo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SyncRepo.
+        r"""Sets the updated_at of this SyncRepo.
 
         更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 

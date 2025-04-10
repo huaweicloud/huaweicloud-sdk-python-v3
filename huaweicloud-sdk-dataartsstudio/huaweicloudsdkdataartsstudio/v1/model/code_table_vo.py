@@ -51,7 +51,7 @@ class CodeTableVO:
     }
 
     def __init__(self, id=None, name_en=None, name_ch=None, tb_version=None, directory_id=None, directory_path=None, description=None, create_by=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, code_table_fields=None):
-        """CodeTableVO
+        r"""CodeTableVO
 
         The model defined in huaweicloud sdk
 
@@ -130,7 +130,7 @@ class CodeTableVO:
 
     @property
     def id(self):
-        """Gets the id of this CodeTableVO.
+        r"""Gets the id of this CodeTableVO.
 
         码表ID，ID字符串。
 
@@ -141,7 +141,7 @@ class CodeTableVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CodeTableVO.
+        r"""Sets the id of this CodeTableVO.
 
         码表ID，ID字符串。
 
@@ -152,7 +152,7 @@ class CodeTableVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CodeTableVO.
+        r"""Gets the name_en of this CodeTableVO.
 
         表名称，英文名。
 
@@ -163,7 +163,7 @@ class CodeTableVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CodeTableVO.
+        r"""Sets the name_en of this CodeTableVO.
 
         表名称，英文名。
 
@@ -174,7 +174,7 @@ class CodeTableVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this CodeTableVO.
+        r"""Gets the name_ch of this CodeTableVO.
 
         表名称，中文名。
 
@@ -185,7 +185,7 @@ class CodeTableVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this CodeTableVO.
+        r"""Sets the name_ch of this CodeTableVO.
 
         表名称，中文名。
 
@@ -196,7 +196,7 @@ class CodeTableVO:
 
     @property
     def tb_version(self):
-        """Gets the tb_version of this CodeTableVO.
+        r"""Gets the tb_version of this CodeTableVO.
 
         表版本。
 
@@ -207,7 +207,7 @@ class CodeTableVO:
 
     @tb_version.setter
     def tb_version(self, tb_version):
-        """Sets the tb_version of this CodeTableVO.
+        r"""Sets the tb_version of this CodeTableVO.
 
         表版本。
 
@@ -218,7 +218,7 @@ class CodeTableVO:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this CodeTableVO.
+        r"""Gets the directory_id of this CodeTableVO.
 
         目录ID，ID字符串。
 
@@ -229,7 +229,7 @@ class CodeTableVO:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this CodeTableVO.
+        r"""Sets the directory_id of this CodeTableVO.
 
         目录ID，ID字符串。
 
@@ -240,7 +240,7 @@ class CodeTableVO:
 
     @property
     def directory_path(self):
-        """Gets the directory_path of this CodeTableVO.
+        r"""Gets the directory_path of this CodeTableVO.
 
         目录树。
 
@@ -251,7 +251,7 @@ class CodeTableVO:
 
     @directory_path.setter
     def directory_path(self, directory_path):
-        """Sets the directory_path of this CodeTableVO.
+        r"""Sets the directory_path of this CodeTableVO.
 
         目录树。
 
@@ -262,7 +262,7 @@ class CodeTableVO:
 
     @property
     def description(self):
-        """Gets the description of this CodeTableVO.
+        r"""Gets the description of this CodeTableVO.
 
         描述。
 
@@ -273,7 +273,7 @@ class CodeTableVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CodeTableVO.
+        r"""Sets the description of this CodeTableVO.
 
         描述。
 
@@ -284,7 +284,7 @@ class CodeTableVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this CodeTableVO.
+        r"""Gets the create_by of this CodeTableVO.
 
         创建人。
 
@@ -295,7 +295,7 @@ class CodeTableVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CodeTableVO.
+        r"""Sets the create_by of this CodeTableVO.
 
         创建人。
 
@@ -306,7 +306,7 @@ class CodeTableVO:
 
     @property
     def status(self):
-        """Gets the status of this CodeTableVO.
+        r"""Gets the status of this CodeTableVO.
 
         :return: The status of this CodeTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -315,7 +315,7 @@ class CodeTableVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CodeTableVO.
+        r"""Sets the status of this CodeTableVO.
 
         :param status: The status of this CodeTableVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -324,7 +324,7 @@ class CodeTableVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CodeTableVO.
+        r"""Gets the create_time of this CodeTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -335,7 +335,7 @@ class CodeTableVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CodeTableVO.
+        r"""Sets the create_time of this CodeTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -346,7 +346,7 @@ class CodeTableVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CodeTableVO.
+        r"""Gets the update_time of this CodeTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -357,7 +357,7 @@ class CodeTableVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CodeTableVO.
+        r"""Sets the update_time of this CodeTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -368,7 +368,7 @@ class CodeTableVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this CodeTableVO.
+        r"""Gets the approval_info of this CodeTableVO.
 
         :return: The approval_info of this CodeTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -377,7 +377,7 @@ class CodeTableVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this CodeTableVO.
+        r"""Sets the approval_info of this CodeTableVO.
 
         :param approval_info: The approval_info of this CodeTableVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -386,7 +386,7 @@ class CodeTableVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this CodeTableVO.
+        r"""Gets the new_biz of this CodeTableVO.
 
         :return: The new_biz of this CodeTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -395,7 +395,7 @@ class CodeTableVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this CodeTableVO.
+        r"""Sets the new_biz of this CodeTableVO.
 
         :param new_biz: The new_biz of this CodeTableVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -404,7 +404,7 @@ class CodeTableVO:
 
     @property
     def code_table_fields(self):
-        """Gets the code_table_fields of this CodeTableVO.
+        r"""Gets the code_table_fields of this CodeTableVO.
 
         码表属性信息。
 
@@ -415,7 +415,7 @@ class CodeTableVO:
 
     @code_table_fields.setter
     def code_table_fields(self, code_table_fields):
-        """Sets the code_table_fields of this CodeTableVO.
+        r"""Sets the code_table_fields of this CodeTableVO.
 
         码表属性信息。
 

@@ -27,7 +27,7 @@ class CreateObsTransferTaskRequest:
     }
 
     def __init__(self, stream_name=None, body=None):
-        """CreateObsTransferTaskRequest
+        r"""CreateObsTransferTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateObsTransferTaskRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this CreateObsTransferTaskRequest.
+        r"""Gets the stream_name of this CreateObsTransferTaskRequest.
 
         已创建的通道名称。
 
@@ -60,7 +60,7 @@ class CreateObsTransferTaskRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this CreateObsTransferTaskRequest.
+        r"""Sets the stream_name of this CreateObsTransferTaskRequest.
 
         已创建的通道名称。
 
@@ -71,7 +71,7 @@ class CreateObsTransferTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateObsTransferTaskRequest.
+        r"""Gets the body of this CreateObsTransferTaskRequest.
 
         :return: The body of this CreateObsTransferTaskRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.CreateTransferTaskReq`
@@ -80,7 +80,7 @@ class CreateObsTransferTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateObsTransferTaskRequest.
+        r"""Sets the body of this CreateObsTransferTaskRequest.
 
         :param body: The body of this CreateObsTransferTaskRequest.
         :type body: :class:`huaweicloudsdkdis.v2.CreateTransferTaskReq`

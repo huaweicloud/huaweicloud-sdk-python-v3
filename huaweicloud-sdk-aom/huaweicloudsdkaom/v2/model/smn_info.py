@@ -29,7 +29,7 @@ class SmnInfo:
     }
 
     def __init__(self, smn_notified_content=None, smn_subscription_status=None, smn_subscription_type=None):
-        """SmnInfo
+        r"""SmnInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmnInfo:
 
     @property
     def smn_notified_content(self):
-        """Gets the smn_notified_content of this SmnInfo.
+        r"""Gets the smn_notified_content of this SmnInfo.
 
         smn发送消息的内容
 
@@ -68,7 +68,7 @@ class SmnInfo:
 
     @smn_notified_content.setter
     def smn_notified_content(self, smn_notified_content):
-        """Sets the smn_notified_content of this SmnInfo.
+        r"""Sets the smn_notified_content of this SmnInfo.
 
         smn发送消息的内容
 
@@ -79,7 +79,7 @@ class SmnInfo:
 
     @property
     def smn_subscription_status(self):
-        """Gets the smn_subscription_status of this SmnInfo.
+        r"""Gets the smn_subscription_status of this SmnInfo.
 
         smn的订阅的状态
 
@@ -90,7 +90,7 @@ class SmnInfo:
 
     @smn_subscription_status.setter
     def smn_subscription_status(self, smn_subscription_status):
-        """Sets the smn_subscription_status of this SmnInfo.
+        r"""Sets the smn_subscription_status of this SmnInfo.
 
         smn的订阅的状态
 
@@ -101,7 +101,7 @@ class SmnInfo:
 
     @property
     def smn_subscription_type(self):
-        """Gets the smn_subscription_type of this SmnInfo.
+        r"""Gets the smn_subscription_type of this SmnInfo.
 
         smn的订阅类型
 
@@ -112,7 +112,7 @@ class SmnInfo:
 
     @smn_subscription_type.setter
     def smn_subscription_type(self, smn_subscription_type):
-        """Sets the smn_subscription_type of this SmnInfo.
+        r"""Sets the smn_subscription_type of this SmnInfo.
 
         smn的订阅类型
 

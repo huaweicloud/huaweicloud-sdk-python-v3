@@ -25,7 +25,7 @@ class CreateSecAppTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSecAppTaskRequest
+        r"""CreateSecAppTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSecAppTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecAppTaskRequest.
+        r"""Gets the body of this CreateSecAppTaskRequest.
 
         :return: The body of this CreateSecAppTaskRequest.
         :rtype: :class:`huaweicloudsdkcodeartsgovernance.v1.CreateSecAppTaskRequestBody`
@@ -52,7 +52,7 @@ class CreateSecAppTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecAppTaskRequest.
+        r"""Sets the body of this CreateSecAppTaskRequest.
 
         :param body: The body of this CreateSecAppTaskRequest.
         :type body: :class:`huaweicloudsdkcodeartsgovernance.v1.CreateSecAppTaskRequestBody`

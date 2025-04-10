@@ -30,7 +30,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowRepositoryByUuidResponse
+        r"""ShowRepositoryByUuidResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowRepositoryByUuidResponse.
+        r"""Gets the error of this ShowRepositoryByUuidResponse.
 
         :return: The error of this ShowRepositoryByUuidResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowRepositoryByUuidResponse.
+        r"""Sets the error of this ShowRepositoryByUuidResponse.
 
         :param error: The error of this ShowRepositoryByUuidResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowRepositoryByUuidResponse.
+        r"""Gets the result of this ShowRepositoryByUuidResponse.
 
         :return: The result of this ShowRepositoryByUuidResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoInfoV2`
@@ -85,7 +85,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowRepositoryByUuidResponse.
+        r"""Sets the result of this ShowRepositoryByUuidResponse.
 
         :param result: The result of this ShowRepositoryByUuidResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoInfoV2`
@@ -94,7 +94,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRepositoryByUuidResponse.
+        r"""Gets the status of this ShowRepositoryByUuidResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowRepositoryByUuidResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRepositoryByUuidResponse.
+        r"""Sets the status of this ShowRepositoryByUuidResponse.
 
         响应状态
 

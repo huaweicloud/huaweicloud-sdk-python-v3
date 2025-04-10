@@ -25,7 +25,7 @@ class ShowRegionInfoOfMeetingRequest:
     }
 
     def __init__(self, conference_id=None):
-        """ShowRegionInfoOfMeetingRequest
+        r"""ShowRegionInfoOfMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRegionInfoOfMeetingRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ShowRegionInfoOfMeetingRequest.
+        r"""Gets the conference_id of this ShowRegionInfoOfMeetingRequest.
 
         会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -53,7 +53,7 @@ class ShowRegionInfoOfMeetingRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ShowRegionInfoOfMeetingRequest.
+        r"""Sets the conference_id of this ShowRegionInfoOfMeetingRequest.
 
         会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 

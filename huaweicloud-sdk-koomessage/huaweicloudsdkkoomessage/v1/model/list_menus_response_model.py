@@ -27,7 +27,7 @@ class ListMenusResponseModel:
     }
 
     def __init__(self, data=None, page_info=None):
-        """ListMenusResponseModel
+        r"""ListMenusResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListMenusResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this ListMenusResponseModel.
+        r"""Gets the data of this ListMenusResponseModel.
 
         菜单信息。
 
@@ -61,7 +61,7 @@ class ListMenusResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListMenusResponseModel.
+        r"""Sets the data of this ListMenusResponseModel.
 
         菜单信息。
 
@@ -72,7 +72,7 @@ class ListMenusResponseModel:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListMenusResponseModel.
+        r"""Gets the page_info of this ListMenusResponseModel.
 
         :return: The page_info of this ListMenusResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PageOffSet`
@@ -81,7 +81,7 @@ class ListMenusResponseModel:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListMenusResponseModel.
+        r"""Sets the page_info of this ListMenusResponseModel.
 
         :param page_info: The page_info of this ListMenusResponseModel.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.PageOffSet`

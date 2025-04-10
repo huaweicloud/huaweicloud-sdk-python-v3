@@ -25,7 +25,7 @@ class ShowVocabularyRequest:
     }
 
     def __init__(self, vocabulary_id=None):
-        """ShowVocabularyRequest
+        r"""ShowVocabularyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVocabularyRequest:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this ShowVocabularyRequest.
+        r"""Gets the vocabulary_id of this ShowVocabularyRequest.
 
         热词表id。
 
@@ -53,7 +53,7 @@ class ShowVocabularyRequest:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this ShowVocabularyRequest.
+        r"""Sets the vocabulary_id of this ShowVocabularyRequest.
 
         热词表id。
 

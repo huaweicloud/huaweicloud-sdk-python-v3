@@ -33,7 +33,7 @@ class AutoClassificationResult:
     }
 
     def __init__(self, status=None, content=None, type=None, location=None, seal_mark=None):
-        """AutoClassificationResult
+        r"""AutoClassificationResult
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class AutoClassificationResult:
 
     @property
     def status(self):
-        """Gets the status of this AutoClassificationResult.
+        r"""Gets the status of this AutoClassificationResult.
 
         :return: The status of this AutoClassificationResult.
         :rtype: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
@@ -76,7 +76,7 @@ class AutoClassificationResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AutoClassificationResult.
+        r"""Sets the status of this AutoClassificationResult.
 
         :param status: The status of this AutoClassificationResult.
         :type status: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
@@ -85,7 +85,7 @@ class AutoClassificationResult:
 
     @property
     def content(self):
-        """Gets the content of this AutoClassificationResult.
+        r"""Gets the content of this AutoClassificationResult.
 
         对应票证具体结构化识别的结果。 
 
@@ -96,7 +96,7 @@ class AutoClassificationResult:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this AutoClassificationResult.
+        r"""Sets the content of this AutoClassificationResult.
 
         对应票证具体结构化识别的结果。 
 
@@ -107,7 +107,7 @@ class AutoClassificationResult:
 
     @property
     def type(self):
-        """Gets the type of this AutoClassificationResult.
+        r"""Gets the type of this AutoClassificationResult.
 
         对应票证的类别。         
 
@@ -118,7 +118,7 @@ class AutoClassificationResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AutoClassificationResult.
+        r"""Sets the type of this AutoClassificationResult.
 
         对应票证的类别。         
 
@@ -129,7 +129,7 @@ class AutoClassificationResult:
 
     @property
     def location(self):
-        """Gets the location of this AutoClassificationResult.
+        r"""Gets the location of this AutoClassificationResult.
 
         票证的区域位置信息，列表形式，包含票证区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -140,7 +140,7 @@ class AutoClassificationResult:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this AutoClassificationResult.
+        r"""Sets the location of this AutoClassificationResult.
 
         票证的区域位置信息，列表形式，包含票证区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -151,7 +151,7 @@ class AutoClassificationResult:
 
     @property
     def seal_mark(self):
-        """Gets the seal_mark of this AutoClassificationResult.
+        r"""Gets the seal_mark of this AutoClassificationResult.
 
         对应票证中是否含有印章。可选值包括： -  true：该票证中含有印章。 -  false：该票证中不含有印章。 
 
@@ -162,7 +162,7 @@ class AutoClassificationResult:
 
     @seal_mark.setter
     def seal_mark(self, seal_mark):
-        """Sets the seal_mark of this AutoClassificationResult.
+        r"""Sets the seal_mark of this AutoClassificationResult.
 
         对应票证中是否含有印章。可选值包括： -  true：该票证中含有印章。 -  false：该票证中不含有印章。 
 

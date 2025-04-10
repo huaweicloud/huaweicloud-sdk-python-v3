@@ -27,7 +27,7 @@ class CmdbInfo:
     }
 
     def __init__(self, app_id=None, node_ids=None):
-        """CmdbInfo
+        r"""CmdbInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CmdbInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CmdbInfo.
+        r"""Gets the app_id of this CmdbInfo.
 
         应用id。
 
@@ -61,7 +61,7 @@ class CmdbInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CmdbInfo.
+        r"""Sets the app_id of this CmdbInfo.
 
         应用id。
 
@@ -72,7 +72,7 @@ class CmdbInfo:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this CmdbInfo.
+        r"""Gets the node_ids of this CmdbInfo.
 
         节点信息列表。
 
@@ -83,7 +83,7 @@ class CmdbInfo:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this CmdbInfo.
+        r"""Sets the node_ids of this CmdbInfo.
 
         节点信息列表。
 

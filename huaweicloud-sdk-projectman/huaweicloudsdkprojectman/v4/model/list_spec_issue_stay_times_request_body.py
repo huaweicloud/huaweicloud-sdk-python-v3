@@ -27,7 +27,7 @@ class ListSpecIssueStayTimesRequestBody:
     }
 
     def __init__(self, project_id=None, issue_ids=None):
-        """ListSpecIssueStayTimesRequestBody
+        r"""ListSpecIssueStayTimesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSpecIssueStayTimesRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListSpecIssueStayTimesRequestBody.
+        r"""Gets the project_id of this ListSpecIssueStayTimesRequestBody.
 
         项目uuid
 
@@ -61,7 +61,7 @@ class ListSpecIssueStayTimesRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListSpecIssueStayTimesRequestBody.
+        r"""Sets the project_id of this ListSpecIssueStayTimesRequestBody.
 
         项目uuid
 
@@ -72,7 +72,7 @@ class ListSpecIssueStayTimesRequestBody:
 
     @property
     def issue_ids(self):
-        """Gets the issue_ids of this ListSpecIssueStayTimesRequestBody.
+        r"""Gets the issue_ids of this ListSpecIssueStayTimesRequestBody.
 
         工作项id字符串列表
 
@@ -83,7 +83,7 @@ class ListSpecIssueStayTimesRequestBody:
 
     @issue_ids.setter
     def issue_ids(self, issue_ids):
-        """Sets the issue_ids of this ListSpecIssueStayTimesRequestBody.
+        r"""Sets the issue_ids of this ListSpecIssueStayTimesRequestBody.
 
         工作项id字符串列表
 

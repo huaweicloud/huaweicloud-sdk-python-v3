@@ -26,7 +26,7 @@ class DisableAttributeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DisableAttributeResponse
+        r"""DisableAttributeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisableAttributeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DisableAttributeResponse.
+        r"""Gets the body of this DisableAttributeResponse.
 
         :return: The body of this DisableAttributeResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DisableAttributeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisableAttributeResponse.
+        r"""Sets the body of this DisableAttributeResponse.
 
         :param body: The body of this DisableAttributeResponse.
         :type body: str

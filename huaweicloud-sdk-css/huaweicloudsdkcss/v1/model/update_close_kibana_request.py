@@ -27,7 +27,7 @@ class UpdateCloseKibanaRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateCloseKibanaRequest
+        r"""UpdateCloseKibanaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCloseKibanaRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateCloseKibanaRequest.
+        r"""Gets the cluster_id of this UpdateCloseKibanaRequest.
 
         指定待关闭的kibana公网访问的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateCloseKibanaRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateCloseKibanaRequest.
+        r"""Sets the cluster_id of this UpdateCloseKibanaRequest.
 
         指定待关闭的kibana公网访问的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateCloseKibanaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCloseKibanaRequest.
+        r"""Gets the body of this UpdateCloseKibanaRequest.
 
         :return: The body of this UpdateCloseKibanaRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.CloseKibanaPublicReq`
@@ -80,7 +80,7 @@ class UpdateCloseKibanaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCloseKibanaRequest.
+        r"""Sets the body of this UpdateCloseKibanaRequest.
 
         :param body: The body of this UpdateCloseKibanaRequest.
         :type body: :class:`huaweicloudsdkcss.v1.CloseKibanaPublicReq`

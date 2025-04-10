@@ -29,7 +29,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
     }
 
     def __init__(self, service_name=None, count=None, resp_data=None):
-        """IvsExtentionByIdCardImageResponseBodyResult
+        r"""IvsExtentionByIdCardImageResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
 
     @property
     def service_name(self):
-        """Gets the service_name of this IvsExtentionByIdCardImageResponseBodyResult.
+        r"""Gets the service_name of this IvsExtentionByIdCardImageResponseBodyResult.
 
         子服务名称。
 
@@ -68,7 +68,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this IvsExtentionByIdCardImageResponseBodyResult.
+        r"""Sets the service_name of this IvsExtentionByIdCardImageResponseBodyResult.
 
         子服务名称。
 
@@ -79,7 +79,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
 
     @property
     def count(self):
-        """Gets the count of this IvsExtentionByIdCardImageResponseBodyResult.
+        r"""Gets the count of this IvsExtentionByIdCardImageResponseBodyResult.
 
         成功的结果数量，与resp_data字段对应。
 
@@ -90,7 +90,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this IvsExtentionByIdCardImageResponseBodyResult.
+        r"""Sets the count of this IvsExtentionByIdCardImageResponseBodyResult.
 
         成功的结果数量，与resp_data字段对应。
 
@@ -101,7 +101,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
 
     @property
     def resp_data(self):
-        """Gets the resp_data of this IvsExtentionByIdCardImageResponseBodyResult.
+        r"""Gets the resp_data of this IvsExtentionByIdCardImageResponseBodyResult.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
@@ -112,7 +112,7 @@ class IvsExtentionByIdCardImageResponseBodyResult:
 
     @resp_data.setter
     def resp_data(self, resp_data):
-        """Sets the resp_data of this IvsExtentionByIdCardImageResponseBodyResult.
+        r"""Sets the resp_data of this IvsExtentionByIdCardImageResponseBodyResult.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 

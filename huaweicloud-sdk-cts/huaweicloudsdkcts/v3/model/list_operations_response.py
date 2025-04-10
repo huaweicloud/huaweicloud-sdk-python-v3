@@ -26,7 +26,7 @@ class ListOperationsResponse(SdkResponse):
     }
 
     def __init__(self, operations=None):
-        """ListOperationsResponse
+        r"""ListOperationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOperationsResponse(SdkResponse):
 
     @property
     def operations(self):
-        """Gets the operations of this ListOperationsResponse.
+        r"""Gets the operations of this ListOperationsResponse.
 
         全量云服务的操作事件列表。
 
@@ -55,7 +55,7 @@ class ListOperationsResponse(SdkResponse):
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this ListOperationsResponse.
+        r"""Sets the operations of this ListOperationsResponse.
 
         全量云服务的操作事件列表。
 

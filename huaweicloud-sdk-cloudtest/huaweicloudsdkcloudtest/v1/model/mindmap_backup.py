@@ -43,7 +43,7 @@ class MindmapBackup:
     }
 
     def __init__(self, bak_name=None, create_time=None, creator_name=None, creator_num=None, id=None, memo=None, mindmap=None, mindmap_id=None, type=None, update_time=None):
-        """MindmapBackup
+        r"""MindmapBackup
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class MindmapBackup:
 
     @property
     def bak_name(self):
-        """Gets the bak_name of this MindmapBackup.
+        r"""Gets the bak_name of this MindmapBackup.
 
         备份名称
 
@@ -117,7 +117,7 @@ class MindmapBackup:
 
     @bak_name.setter
     def bak_name(self, bak_name):
-        """Sets the bak_name of this MindmapBackup.
+        r"""Sets the bak_name of this MindmapBackup.
 
         备份名称
 
@@ -128,7 +128,7 @@ class MindmapBackup:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MindmapBackup.
+        r"""Gets the create_time of this MindmapBackup.
 
         创建时间
 
@@ -139,7 +139,7 @@ class MindmapBackup:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MindmapBackup.
+        r"""Sets the create_time of this MindmapBackup.
 
         创建时间
 
@@ -150,7 +150,7 @@ class MindmapBackup:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this MindmapBackup.
+        r"""Gets the creator_name of this MindmapBackup.
 
         创建人名称
 
@@ -161,7 +161,7 @@ class MindmapBackup:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this MindmapBackup.
+        r"""Sets the creator_name of this MindmapBackup.
 
         创建人名称
 
@@ -172,7 +172,7 @@ class MindmapBackup:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this MindmapBackup.
+        r"""Gets the creator_num of this MindmapBackup.
 
         创建人工号
 
@@ -183,7 +183,7 @@ class MindmapBackup:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this MindmapBackup.
+        r"""Sets the creator_num of this MindmapBackup.
 
         创建人工号
 
@@ -194,7 +194,7 @@ class MindmapBackup:
 
     @property
     def id(self):
-        """Gets the id of this MindmapBackup.
+        r"""Gets the id of this MindmapBackup.
 
         id 主键
 
@@ -205,7 +205,7 @@ class MindmapBackup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MindmapBackup.
+        r"""Sets the id of this MindmapBackup.
 
         id 主键
 
@@ -216,7 +216,7 @@ class MindmapBackup:
 
     @property
     def memo(self):
-        """Gets the memo of this MindmapBackup.
+        r"""Gets the memo of this MindmapBackup.
 
         备注
 
@@ -227,7 +227,7 @@ class MindmapBackup:
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this MindmapBackup.
+        r"""Sets the memo of this MindmapBackup.
 
         备注
 
@@ -238,7 +238,7 @@ class MindmapBackup:
 
     @property
     def mindmap(self):
-        """Gets the mindmap of this MindmapBackup.
+        r"""Gets the mindmap of this MindmapBackup.
 
         脑图JSON
 
@@ -249,7 +249,7 @@ class MindmapBackup:
 
     @mindmap.setter
     def mindmap(self, mindmap):
-        """Sets the mindmap of this MindmapBackup.
+        r"""Sets the mindmap of this MindmapBackup.
 
         脑图JSON
 
@@ -260,7 +260,7 @@ class MindmapBackup:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this MindmapBackup.
+        r"""Gets the mindmap_id of this MindmapBackup.
 
         脑图Id
 
@@ -271,7 +271,7 @@ class MindmapBackup:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this MindmapBackup.
+        r"""Sets the mindmap_id of this MindmapBackup.
 
         脑图Id
 
@@ -282,7 +282,7 @@ class MindmapBackup:
 
     @property
     def type(self):
-        """Gets the type of this MindmapBackup.
+        r"""Gets the type of this MindmapBackup.
 
         备份类型
 
@@ -293,7 +293,7 @@ class MindmapBackup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MindmapBackup.
+        r"""Sets the type of this MindmapBackup.
 
         备份类型
 
@@ -304,7 +304,7 @@ class MindmapBackup:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MindmapBackup.
+        r"""Gets the update_time of this MindmapBackup.
 
         更新时间
 
@@ -315,7 +315,7 @@ class MindmapBackup:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MindmapBackup.
+        r"""Sets the update_time of this MindmapBackup.
 
         更新时间
 

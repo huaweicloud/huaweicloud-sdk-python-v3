@@ -29,7 +29,7 @@ class DeleteQueueUserListRequest:
     }
 
     def __init__(self, cluster_id=None, queue_name=None, body=None):
-        """DeleteQueueUserListRequest
+        r"""DeleteQueueUserListRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteQueueUserListRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteQueueUserListRequest.
+        r"""Gets the cluster_id of this DeleteQueueUserListRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class DeleteQueueUserListRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteQueueUserListRequest.
+        r"""Sets the cluster_id of this DeleteQueueUserListRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class DeleteQueueUserListRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this DeleteQueueUserListRequest.
+        r"""Gets the queue_name of this DeleteQueueUserListRequest.
 
         队列名称
 
@@ -88,7 +88,7 @@ class DeleteQueueUserListRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this DeleteQueueUserListRequest.
+        r"""Sets the queue_name of this DeleteQueueUserListRequest.
 
         队列名称
 
@@ -99,7 +99,7 @@ class DeleteQueueUserListRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteQueueUserListRequest.
+        r"""Gets the body of this DeleteQueueUserListRequest.
 
         :return: The body of this DeleteQueueUserListRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueueUserReq`
@@ -108,7 +108,7 @@ class DeleteQueueUserListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteQueueUserListRequest.
+        r"""Sets the body of this DeleteQueueUserListRequest.
 
         :param body: The body of this DeleteQueueUserListRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueueUserReq`

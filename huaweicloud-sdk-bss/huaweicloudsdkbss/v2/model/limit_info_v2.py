@@ -37,7 +37,7 @@ class LimitInfoV2:
     }
 
     def __init__(self, use_limiti_info_id=None, limit_key=None, value1=None, value2=None, value_unit=None, limit_type=None, promotion_plan_id=None):
-        """LimitInfoV2
+        r"""LimitInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class LimitInfoV2:
 
     @property
     def use_limiti_info_id(self):
-        """Gets the use_limiti_info_id of this LimitInfoV2.
+        r"""Gets the use_limiti_info_id of this LimitInfoV2.
 
         使用限制ID，主键。
 
@@ -96,7 +96,7 @@ class LimitInfoV2:
 
     @use_limiti_info_id.setter
     def use_limiti_info_id(self, use_limiti_info_id):
-        """Sets the use_limiti_info_id of this LimitInfoV2.
+        r"""Sets the use_limiti_info_id of this LimitInfoV2.
 
         使用限制ID，主键。
 
@@ -107,7 +107,7 @@ class LimitInfoV2:
 
     @property
     def limit_key(self):
-        """Gets the limit_key of this LimitInfoV2.
+        r"""Gets the limit_key of this LimitInfoV2.
 
         折扣限制，key的取值请参考表5。
 
@@ -118,7 +118,7 @@ class LimitInfoV2:
 
     @limit_key.setter
     def limit_key(self, limit_key):
-        """Sets the limit_key of this LimitInfoV2.
+        r"""Sets the limit_key of this LimitInfoV2.
 
         折扣限制，key的取值请参考表5。
 
@@ -129,7 +129,7 @@ class LimitInfoV2:
 
     @property
     def value1(self):
-        """Gets the value1 of this LimitInfoV2.
+        r"""Gets the value1 of this LimitInfoV2.
 
         value1。
 
@@ -140,7 +140,7 @@ class LimitInfoV2:
 
     @value1.setter
     def value1(self, value1):
-        """Sets the value1 of this LimitInfoV2.
+        r"""Sets the value1 of this LimitInfoV2.
 
         value1。
 
@@ -151,7 +151,7 @@ class LimitInfoV2:
 
     @property
     def value2(self):
-        """Gets the value2 of this LimitInfoV2.
+        r"""Gets the value2 of this LimitInfoV2.
 
         value2。
 
@@ -162,7 +162,7 @@ class LimitInfoV2:
 
     @value2.setter
     def value2(self, value2):
-        """Sets the value2 of this LimitInfoV2.
+        r"""Sets the value2 of this LimitInfoV2.
 
         value2。
 
@@ -173,7 +173,7 @@ class LimitInfoV2:
 
     @property
     def value_unit(self):
-        """Gets the value_unit of this LimitInfoV2.
+        r"""Gets the value_unit of this LimitInfoV2.
 
         value单位。
 
@@ -184,7 +184,7 @@ class LimitInfoV2:
 
     @value_unit.setter
     def value_unit(self, value_unit):
-        """Sets the value_unit of this LimitInfoV2.
+        r"""Sets the value_unit of this LimitInfoV2.
 
         value单位。
 
@@ -195,7 +195,7 @@ class LimitInfoV2:
 
     @property
     def limit_type(self):
-        """Gets the limit_type of this LimitInfoV2.
+        r"""Gets the limit_type of this LimitInfoV2.
 
         限制类型。
 
@@ -206,7 +206,7 @@ class LimitInfoV2:
 
     @limit_type.setter
     def limit_type(self, limit_type):
-        """Sets the limit_type of this LimitInfoV2.
+        r"""Sets the limit_type of this LimitInfoV2.
 
         限制类型。
 
@@ -217,7 +217,7 @@ class LimitInfoV2:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this LimitInfoV2.
+        r"""Gets the promotion_plan_id of this LimitInfoV2.
 
         促销计划ID。
 
@@ -228,7 +228,7 @@ class LimitInfoV2:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this LimitInfoV2.
+        r"""Sets the promotion_plan_id of this LimitInfoV2.
 
         促销计划ID。
 

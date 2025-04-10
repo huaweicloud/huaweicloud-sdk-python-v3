@@ -25,7 +25,7 @@ class DeleteDirectConnectRequest:
     }
 
     def __init__(self, direct_connect_id=None):
-        """DeleteDirectConnectRequest
+        r"""DeleteDirectConnectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDirectConnectRequest:
 
     @property
     def direct_connect_id(self):
-        """Gets the direct_connect_id of this DeleteDirectConnectRequest.
+        r"""Gets the direct_connect_id of this DeleteDirectConnectRequest.
 
         物理专线连接ID。
 
@@ -53,7 +53,7 @@ class DeleteDirectConnectRequest:
 
     @direct_connect_id.setter
     def direct_connect_id(self, direct_connect_id):
-        """Sets the direct_connect_id of this DeleteDirectConnectRequest.
+        r"""Sets the direct_connect_id of this DeleteDirectConnectRequest.
 
         物理专线连接ID。
 

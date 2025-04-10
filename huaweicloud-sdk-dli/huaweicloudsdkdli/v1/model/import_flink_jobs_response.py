@@ -30,7 +30,7 @@ class ImportFlinkJobsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_mapping=None):
-        """ImportFlinkJobsResponse
+        r"""ImportFlinkJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ImportFlinkJobsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ImportFlinkJobsResponse.
+        r"""Gets the is_success of this ImportFlinkJobsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ImportFlinkJobsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ImportFlinkJobsResponse.
+        r"""Sets the is_success of this ImportFlinkJobsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ImportFlinkJobsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ImportFlinkJobsResponse.
+        r"""Gets the message of this ImportFlinkJobsResponse.
 
         消息内容。
 
@@ -91,7 +91,7 @@ class ImportFlinkJobsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ImportFlinkJobsResponse.
+        r"""Sets the message of this ImportFlinkJobsResponse.
 
         消息内容。
 
@@ -102,7 +102,7 @@ class ImportFlinkJobsResponse(SdkResponse):
 
     @property
     def job_mapping(self):
-        """Gets the job_mapping of this ImportFlinkJobsResponse.
+        r"""Gets the job_mapping of this ImportFlinkJobsResponse.
 
         作业导入结果。
 
@@ -113,7 +113,7 @@ class ImportFlinkJobsResponse(SdkResponse):
 
     @job_mapping.setter
     def job_mapping(self, job_mapping):
-        """Sets the job_mapping of this ImportFlinkJobsResponse.
+        r"""Sets the job_mapping of this ImportFlinkJobsResponse.
 
         作业导入结果。
 

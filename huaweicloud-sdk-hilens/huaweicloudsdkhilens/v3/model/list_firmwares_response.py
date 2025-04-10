@@ -28,7 +28,7 @@ class ListFirmwaresResponse(SdkResponse):
     }
 
     def __init__(self, count=None, firmwares=None):
-        """ListFirmwaresResponse
+        r"""ListFirmwaresResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFirmwaresResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFirmwaresResponse.
+        r"""Gets the count of this ListFirmwaresResponse.
 
         固件数
 
@@ -62,7 +62,7 @@ class ListFirmwaresResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFirmwaresResponse.
+        r"""Sets the count of this ListFirmwaresResponse.
 
         固件数
 
@@ -73,7 +73,7 @@ class ListFirmwaresResponse(SdkResponse):
 
     @property
     def firmwares(self):
-        """Gets the firmwares of this ListFirmwaresResponse.
+        r"""Gets the firmwares of this ListFirmwaresResponse.
 
         固件列表
 
@@ -84,7 +84,7 @@ class ListFirmwaresResponse(SdkResponse):
 
     @firmwares.setter
     def firmwares(self, firmwares):
-        """Sets the firmwares of this ListFirmwaresResponse.
+        r"""Sets the firmwares of this ListFirmwaresResponse.
 
         固件列表
 

@@ -51,7 +51,7 @@ class PreviewFinding:
     }
 
     def __init__(self, action=None, change_type=None, condition=None, created_at=None, existing_finding_id=None, existing_finding_status=None, id=None, is_public=None, principal=None, resource=None, resource_owner_account=None, resource_type=None, sources=None, status=None):
-        """PreviewFinding
+        r"""PreviewFinding
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class PreviewFinding:
 
     @property
     def action(self):
-        """Gets the action of this PreviewFinding.
+        r"""Gets the action of this PreviewFinding.
 
         允许外部主体使用的操作。
 
@@ -134,7 +134,7 @@ class PreviewFinding:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PreviewFinding.
+        r"""Sets the action of this PreviewFinding.
 
         允许外部主体使用的操作。
 
@@ -145,7 +145,7 @@ class PreviewFinding:
 
     @property
     def change_type(self):
-        """Gets the change_type of this PreviewFinding.
+        r"""Gets the change_type of this PreviewFinding.
 
         结果状态的变化。
 
@@ -156,7 +156,7 @@ class PreviewFinding:
 
     @change_type.setter
     def change_type(self, change_type):
-        """Sets the change_type of this PreviewFinding.
+        r"""Sets the change_type of this PreviewFinding.
 
         结果状态的变化。
 
@@ -167,7 +167,7 @@ class PreviewFinding:
 
     @property
     def condition(self):
-        """Gets the condition of this PreviewFinding.
+        r"""Gets the condition of this PreviewFinding.
 
         分析的策略语句中导致访问预览分析结果的条件。
 
@@ -178,7 +178,7 @@ class PreviewFinding:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this PreviewFinding.
+        r"""Sets the condition of this PreviewFinding.
 
         分析的策略语句中导致访问预览分析结果的条件。
 
@@ -189,7 +189,7 @@ class PreviewFinding:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PreviewFinding.
+        r"""Gets the created_at of this PreviewFinding.
 
         生成访问预览分析结果的时间。
 
@@ -200,7 +200,7 @@ class PreviewFinding:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PreviewFinding.
+        r"""Sets the created_at of this PreviewFinding.
 
         生成访问预览分析结果的时间。
 
@@ -211,7 +211,7 @@ class PreviewFinding:
 
     @property
     def existing_finding_id(self):
-        """Gets the existing_finding_id of this PreviewFinding.
+        r"""Gets the existing_finding_id of this PreviewFinding.
 
         访问分析结果的唯一标识符。
 
@@ -222,7 +222,7 @@ class PreviewFinding:
 
     @existing_finding_id.setter
     def existing_finding_id(self, existing_finding_id):
-        """Sets the existing_finding_id of this PreviewFinding.
+        r"""Sets the existing_finding_id of this PreviewFinding.
 
         访问分析结果的唯一标识符。
 
@@ -233,7 +233,7 @@ class PreviewFinding:
 
     @property
     def existing_finding_status(self):
-        """Gets the existing_finding_status of this PreviewFinding.
+        r"""Gets the existing_finding_status of this PreviewFinding.
 
         访问分析结果当前状态。
 
@@ -244,7 +244,7 @@ class PreviewFinding:
 
     @existing_finding_status.setter
     def existing_finding_status(self, existing_finding_status):
-        """Sets the existing_finding_status of this PreviewFinding.
+        r"""Sets the existing_finding_status of this PreviewFinding.
 
         访问分析结果当前状态。
 
@@ -255,7 +255,7 @@ class PreviewFinding:
 
     @property
     def id(self):
-        """Gets the id of this PreviewFinding.
+        r"""Gets the id of this PreviewFinding.
 
         访问分析结果的唯一标识符。
 
@@ -266,7 +266,7 @@ class PreviewFinding:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PreviewFinding.
+        r"""Sets the id of this PreviewFinding.
 
         访问分析结果的唯一标识符。
 
@@ -277,7 +277,7 @@ class PreviewFinding:
 
     @property
     def is_public(self):
-        """Gets the is_public of this PreviewFinding.
+        r"""Gets the is_public of this PreviewFinding.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -288,7 +288,7 @@ class PreviewFinding:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this PreviewFinding.
+        r"""Sets the is_public of this PreviewFinding.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -299,7 +299,7 @@ class PreviewFinding:
 
     @property
     def principal(self):
-        """Gets the principal of this PreviewFinding.
+        r"""Gets the principal of this PreviewFinding.
 
         :return: The principal of this PreviewFinding.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -308,7 +308,7 @@ class PreviewFinding:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this PreviewFinding.
+        r"""Sets the principal of this PreviewFinding.
 
         :param principal: The principal of this PreviewFinding.
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -317,7 +317,7 @@ class PreviewFinding:
 
     @property
     def resource(self):
-        """Gets the resource of this PreviewFinding.
+        r"""Gets the resource of this PreviewFinding.
 
         资源的唯一资源标识符。
 
@@ -328,7 +328,7 @@ class PreviewFinding:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this PreviewFinding.
+        r"""Sets the resource of this PreviewFinding.
 
         资源的唯一资源标识符。
 
@@ -339,7 +339,7 @@ class PreviewFinding:
 
     @property
     def resource_owner_account(self):
-        """Gets the resource_owner_account of this PreviewFinding.
+        r"""Gets the resource_owner_account of this PreviewFinding.
 
         拥有资源的账号ID。
 
@@ -350,7 +350,7 @@ class PreviewFinding:
 
     @resource_owner_account.setter
     def resource_owner_account(self, resource_owner_account):
-        """Sets the resource_owner_account of this PreviewFinding.
+        r"""Sets the resource_owner_account of this PreviewFinding.
 
         拥有资源的账号ID。
 
@@ -361,7 +361,7 @@ class PreviewFinding:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PreviewFinding.
+        r"""Gets the resource_type of this PreviewFinding.
 
         :return: The resource_type of this PreviewFinding.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
@@ -370,7 +370,7 @@ class PreviewFinding:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PreviewFinding.
+        r"""Sets the resource_type of this PreviewFinding.
 
         :param resource_type: The resource_type of this PreviewFinding.
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
@@ -379,7 +379,7 @@ class PreviewFinding:
 
     @property
     def sources(self):
-        """Gets the sources of this PreviewFinding.
+        r"""Gets the sources of this PreviewFinding.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -390,7 +390,7 @@ class PreviewFinding:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this PreviewFinding.
+        r"""Sets the sources of this PreviewFinding.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -401,7 +401,7 @@ class PreviewFinding:
 
     @property
     def status(self):
-        """Gets the status of this PreviewFinding.
+        r"""Gets the status of this PreviewFinding.
 
         变化后的状态。
 
@@ -412,7 +412,7 @@ class PreviewFinding:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PreviewFinding.
+        r"""Sets the status of this PreviewFinding.
 
         变化后的状态。
 

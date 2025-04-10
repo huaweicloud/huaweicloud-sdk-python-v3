@@ -25,7 +25,7 @@ class LdApiTest:
     }
 
     def __init__(self, parameters=None):
-        """LdApiTest
+        r"""LdApiTest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LdApiTest:
 
     @property
     def parameters(self):
-        """Gets the parameters of this LdApiTest.
+        r"""Gets the parameters of this LdApiTest.
 
         后端API请求参数
 
@@ -54,7 +54,7 @@ class LdApiTest:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this LdApiTest.
+        r"""Sets the parameters of this LdApiTest.
 
         后端API请求参数
 

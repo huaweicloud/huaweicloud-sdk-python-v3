@@ -29,7 +29,7 @@ class RuleContent:
     }
 
     def __init__(self, group_name=None, can_modify_when_inherit=None, properties=None):
-        """RuleContent
+        r"""RuleContent
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RuleContent:
 
     @property
     def group_name(self):
-        """Gets the group_name of this RuleContent.
+        r"""Gets the group_name of this RuleContent.
 
         分组名称
 
@@ -66,7 +66,7 @@ class RuleContent:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this RuleContent.
+        r"""Sets the group_name of this RuleContent.
 
         分组名称
 
@@ -77,7 +77,7 @@ class RuleContent:
 
     @property
     def can_modify_when_inherit(self):
-        """Gets the can_modify_when_inherit of this RuleContent.
+        r"""Gets the can_modify_when_inherit of this RuleContent.
 
         继承后的子策略是否可以修改阈值
 
@@ -88,7 +88,7 @@ class RuleContent:
 
     @can_modify_when_inherit.setter
     def can_modify_when_inherit(self, can_modify_when_inherit):
-        """Sets the can_modify_when_inherit of this RuleContent.
+        r"""Sets the can_modify_when_inherit of this RuleContent.
 
         继承后的子策略是否可以修改阈值
 
@@ -99,7 +99,7 @@ class RuleContent:
 
     @property
     def properties(self):
-        """Gets the properties of this RuleContent.
+        r"""Gets the properties of this RuleContent.
 
         规则属性列表
 
@@ -110,7 +110,7 @@ class RuleContent:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this RuleContent.
+        r"""Sets the properties of this RuleContent.
 
         规则属性列表
 

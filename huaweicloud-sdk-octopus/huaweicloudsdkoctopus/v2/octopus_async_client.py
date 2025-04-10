@@ -34,7 +34,7 @@ class OctopusAsyncClient(Client):
         return client_builder
 
     def create_sim_sm_maps_async(self, request):
-        """创建场景地图
+        r"""创建场景地图
 
         创建场景地图.
         
@@ -99,7 +99,7 @@ class OctopusAsyncClient(Client):
         return http_info
 
     def create_sim_sm_scenarios_async(self, request):
-        """创建仿真场景
+        r"""创建仿真场景
 
         创建仿真场景.
         
@@ -164,7 +164,7 @@ class OctopusAsyncClient(Client):
         return http_info
 
     def create_sim_sm_scenarios_files_async(self, request):
-        """创建场景文件
+        r"""创建场景文件
 
         创建场景文件.
         
@@ -231,7 +231,7 @@ class OctopusAsyncClient(Client):
         return http_info
 
     def list_sim_sm_scenarios_async(self, request):
-        """场景列表
+        r"""场景列表
 
         A DRF ViewSet for Scenario.
         
@@ -329,7 +329,7 @@ class OctopusAsyncClient(Client):
         return http_info
 
     def update_sim_sm_maps_files_async(self, request):
-        """修改场景地图文件
+        r"""修改场景地图文件
 
         修改场景地图文件.
         
@@ -398,7 +398,7 @@ class OctopusAsyncClient(Client):
         return http_info
 
     def update_sim_sm_scenarios_files_async(self, request):
-        """修改场景文件
+        r"""修改场景文件
 
         修改场景文件.
         

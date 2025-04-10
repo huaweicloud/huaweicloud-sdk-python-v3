@@ -25,7 +25,7 @@ class DeleteTranscodingTaskByConsoleRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteTranscodingTaskByConsoleRequest
+        r"""DeleteTranscodingTaskByConsoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTranscodingTaskByConsoleRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteTranscodingTaskByConsoleRequest.
+        r"""Gets the task_id of this DeleteTranscodingTaskByConsoleRequest.
 
         任务ID 
 
@@ -53,7 +53,7 @@ class DeleteTranscodingTaskByConsoleRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteTranscodingTaskByConsoleRequest.
+        r"""Sets the task_id of this DeleteTranscodingTaskByConsoleRequest.
 
         任务ID 
 

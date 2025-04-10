@@ -25,7 +25,7 @@ class ListWorkspacesResultData:
     }
 
     def __init__(self, value=None):
-        """ListWorkspacesResultData
+        r"""ListWorkspacesResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListWorkspacesResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListWorkspacesResultData.
+        r"""Gets the value of this ListWorkspacesResultData.
 
         :return: The value of this ListWorkspacesResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspacesResultDataValue`
@@ -52,7 +52,7 @@ class ListWorkspacesResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListWorkspacesResultData.
+        r"""Sets the value of this ListWorkspacesResultData.
 
         :param value: The value of this ListWorkspacesResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspacesResultDataValue`

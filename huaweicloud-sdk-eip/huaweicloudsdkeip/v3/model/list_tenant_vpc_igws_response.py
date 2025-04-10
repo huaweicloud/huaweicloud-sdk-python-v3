@@ -28,7 +28,7 @@ class ListTenantVpcIgwsResponse(SdkResponse):
     }
 
     def __init__(self, vpc_igws=None, request_id=None):
-        """ListTenantVpcIgwsResponse
+        r"""ListTenantVpcIgwsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTenantVpcIgwsResponse(SdkResponse):
 
     @property
     def vpc_igws(self):
-        """Gets the vpc_igws of this ListTenantVpcIgwsResponse.
+        r"""Gets the vpc_igws of this ListTenantVpcIgwsResponse.
 
         虚拟IGW列表对象
 
@@ -62,7 +62,7 @@ class ListTenantVpcIgwsResponse(SdkResponse):
 
     @vpc_igws.setter
     def vpc_igws(self, vpc_igws):
-        """Sets the vpc_igws of this ListTenantVpcIgwsResponse.
+        r"""Sets the vpc_igws of this ListTenantVpcIgwsResponse.
 
         虚拟IGW列表对象
 
@@ -73,7 +73,7 @@ class ListTenantVpcIgwsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTenantVpcIgwsResponse.
+        r"""Gets the request_id of this ListTenantVpcIgwsResponse.
 
         本次请求编号
 
@@ -84,7 +84,7 @@ class ListTenantVpcIgwsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTenantVpcIgwsResponse.
+        r"""Sets the request_id of this ListTenantVpcIgwsResponse.
 
         本次请求编号
 

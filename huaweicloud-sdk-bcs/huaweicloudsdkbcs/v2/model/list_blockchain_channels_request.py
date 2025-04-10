@@ -25,7 +25,7 @@ class ListBlockchainChannelsRequest:
     }
 
     def __init__(self, blockchain_id=None):
-        """ListBlockchainChannelsRequest
+        r"""ListBlockchainChannelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListBlockchainChannelsRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this ListBlockchainChannelsRequest.
+        r"""Gets the blockchain_id of this ListBlockchainChannelsRequest.
 
         blockchainID
 
@@ -53,7 +53,7 @@ class ListBlockchainChannelsRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this ListBlockchainChannelsRequest.
+        r"""Sets the blockchain_id of this ListBlockchainChannelsRequest.
 
         blockchainID
 

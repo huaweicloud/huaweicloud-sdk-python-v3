@@ -29,7 +29,7 @@ class UpdateAppReq:
     }
 
     def __init__(self, name=None, remark=None, favorite=None):
-        """UpdateAppReq
+        r"""UpdateAppReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAppReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppReq.
+        r"""Gets the name of this UpdateAppReq.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -68,7 +68,7 @@ class UpdateAppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppReq.
+        r"""Sets the name of this UpdateAppReq.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -79,7 +79,7 @@ class UpdateAppReq:
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateAppReq.
+        r"""Gets the remark of this UpdateAppReq.
 
         应用描述
 
@@ -90,7 +90,7 @@ class UpdateAppReq:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateAppReq.
+        r"""Sets the remark of this UpdateAppReq.
 
         应用描述
 
@@ -101,7 +101,7 @@ class UpdateAppReq:
 
     @property
     def favorite(self):
-        """Gets the favorite of this UpdateAppReq.
+        r"""Gets the favorite of this UpdateAppReq.
 
         是否收藏应用，收藏的应用会在列表里优先显示
 
@@ -112,7 +112,7 @@ class UpdateAppReq:
 
     @favorite.setter
     def favorite(self, favorite):
-        """Sets the favorite of this UpdateAppReq.
+        r"""Sets the favorite of this UpdateAppReq.
 
         是否收藏应用，收藏的应用会在列表里优先显示
 

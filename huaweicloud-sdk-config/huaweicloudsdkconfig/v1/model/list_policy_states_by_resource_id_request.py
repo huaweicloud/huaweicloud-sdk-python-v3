@@ -31,7 +31,7 @@ class ListPolicyStatesByResourceIdRequest:
     }
 
     def __init__(self, resource_id=None, compliance_state=None, limit=None, marker=None):
-        """ListPolicyStatesByResourceIdRequest
+        r"""ListPolicyStatesByResourceIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListPolicyStatesByResourceIdRequest.
+        r"""Gets the resource_id of this ListPolicyStatesByResourceIdRequest.
 
         资源ID
 
@@ -74,7 +74,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListPolicyStatesByResourceIdRequest.
+        r"""Sets the resource_id of this ListPolicyStatesByResourceIdRequest.
 
         资源ID
 
@@ -85,7 +85,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this ListPolicyStatesByResourceIdRequest.
+        r"""Gets the compliance_state of this ListPolicyStatesByResourceIdRequest.
 
         合规状态
 
@@ -96,7 +96,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this ListPolicyStatesByResourceIdRequest.
+        r"""Sets the compliance_state of this ListPolicyStatesByResourceIdRequest.
 
         合规状态
 
@@ -107,7 +107,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyStatesByResourceIdRequest.
+        r"""Gets the limit of this ListPolicyStatesByResourceIdRequest.
 
         最大的返回数量
 
@@ -118,7 +118,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyStatesByResourceIdRequest.
+        r"""Sets the limit of this ListPolicyStatesByResourceIdRequest.
 
         最大的返回数量
 
@@ -129,7 +129,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPolicyStatesByResourceIdRequest.
+        r"""Gets the marker of this ListPolicyStatesByResourceIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -140,7 +140,7 @@ class ListPolicyStatesByResourceIdRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPolicyStatesByResourceIdRequest.
+        r"""Sets the marker of this ListPolicyStatesByResourceIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

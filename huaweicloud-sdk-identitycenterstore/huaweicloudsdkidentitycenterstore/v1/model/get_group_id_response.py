@@ -28,7 +28,7 @@ class GetGroupIdResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, identity_store_id=None):
-        """GetGroupIdResponse
+        r"""GetGroupIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class GetGroupIdResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this GetGroupIdResponse.
+        r"""Gets the group_id of this GetGroupIdResponse.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -62,7 +62,7 @@ class GetGroupIdResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GetGroupIdResponse.
+        r"""Sets the group_id of this GetGroupIdResponse.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -73,7 +73,7 @@ class GetGroupIdResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this GetGroupIdResponse.
+        r"""Gets the identity_store_id of this GetGroupIdResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -84,7 +84,7 @@ class GetGroupIdResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this GetGroupIdResponse.
+        r"""Sets the identity_store_id of this GetGroupIdResponse.
 
         身份源的全局唯一标识符（ID）
 

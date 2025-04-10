@@ -37,7 +37,7 @@ class OpenClassification:
     }
 
     def __init__(self, name=None, description=None, create_user=None, create_time=None, update_time=None, update_user=None, guid=None):
-        """OpenClassification
+        r"""OpenClassification
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class OpenClassification:
 
     @property
     def name(self):
-        """Gets the name of this OpenClassification.
+        r"""Gets the name of this OpenClassification.
 
         分类名称
 
@@ -95,7 +95,7 @@ class OpenClassification:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OpenClassification.
+        r"""Sets the name of this OpenClassification.
 
         分类名称
 
@@ -106,7 +106,7 @@ class OpenClassification:
 
     @property
     def description(self):
-        """Gets the description of this OpenClassification.
+        r"""Gets the description of this OpenClassification.
 
         分类描述
 
@@ -117,7 +117,7 @@ class OpenClassification:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenClassification.
+        r"""Sets the description of this OpenClassification.
 
         分类描述
 
@@ -128,7 +128,7 @@ class OpenClassification:
 
     @property
     def create_user(self):
-        """Gets the create_user of this OpenClassification.
+        r"""Gets the create_user of this OpenClassification.
 
         分类创建者
 
@@ -139,7 +139,7 @@ class OpenClassification:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this OpenClassification.
+        r"""Sets the create_user of this OpenClassification.
 
         分类创建者
 
@@ -150,7 +150,7 @@ class OpenClassification:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OpenClassification.
+        r"""Gets the create_time of this OpenClassification.
 
         分类创建时间
 
@@ -161,7 +161,7 @@ class OpenClassification:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OpenClassification.
+        r"""Sets the create_time of this OpenClassification.
 
         分类创建时间
 
@@ -172,7 +172,7 @@ class OpenClassification:
 
     @property
     def update_time(self):
-        """Gets the update_time of this OpenClassification.
+        r"""Gets the update_time of this OpenClassification.
 
         分类更新时间
 
@@ -183,7 +183,7 @@ class OpenClassification:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this OpenClassification.
+        r"""Sets the update_time of this OpenClassification.
 
         分类更新时间
 
@@ -194,7 +194,7 @@ class OpenClassification:
 
     @property
     def update_user(self):
-        """Gets the update_user of this OpenClassification.
+        r"""Gets the update_user of this OpenClassification.
 
         分类更新者
 
@@ -205,7 +205,7 @@ class OpenClassification:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this OpenClassification.
+        r"""Sets the update_user of this OpenClassification.
 
         分类更新者
 
@@ -216,7 +216,7 @@ class OpenClassification:
 
     @property
     def guid(self):
-        """Gets the guid of this OpenClassification.
+        r"""Gets the guid of this OpenClassification.
 
         分类的guid标志
 
@@ -227,7 +227,7 @@ class OpenClassification:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this OpenClassification.
+        r"""Sets the guid of this OpenClassification.
 
         分类的guid标志
 

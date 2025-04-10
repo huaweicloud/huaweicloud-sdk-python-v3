@@ -25,7 +25,7 @@ class ModifyAliasRequest:
     }
 
     def __init__(self, alias=None):
-        """ModifyAliasRequest
+        r"""ModifyAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyAliasRequest:
 
     @property
     def alias(self):
-        """Gets the alias of this ModifyAliasRequest.
+        r"""Gets the alias of this ModifyAliasRequest.
 
         实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。 
 
@@ -53,7 +53,7 @@ class ModifyAliasRequest:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ModifyAliasRequest.
+        r"""Sets the alias of this ModifyAliasRequest.
 
         实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。 
 

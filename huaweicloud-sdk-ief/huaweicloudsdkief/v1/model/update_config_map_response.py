@@ -26,7 +26,7 @@ class UpdateConfigMapResponse(SdkResponse):
     }
 
     def __init__(self, configmap=None):
-        """UpdateConfigMapResponse
+        r"""UpdateConfigMapResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateConfigMapResponse(SdkResponse):
 
     @property
     def configmap(self):
-        """Gets the configmap of this UpdateConfigMapResponse.
+        r"""Gets the configmap of this UpdateConfigMapResponse.
 
         :return: The configmap of this UpdateConfigMapResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ConfigMapResp`
@@ -53,7 +53,7 @@ class UpdateConfigMapResponse(SdkResponse):
 
     @configmap.setter
     def configmap(self, configmap):
-        """Sets the configmap of this UpdateConfigMapResponse.
+        r"""Sets the configmap of this UpdateConfigMapResponse.
 
         :param configmap: The configmap of this UpdateConfigMapResponse.
         :type configmap: :class:`huaweicloudsdkief.v1.ConfigMapResp`

@@ -23,7 +23,7 @@ class UserPasswordOld:
     }
 
     def __init__(self):
-        """UserPasswordOld
+        r"""UserPasswordOld
 
         The model defined in huaweicloud sdk
 

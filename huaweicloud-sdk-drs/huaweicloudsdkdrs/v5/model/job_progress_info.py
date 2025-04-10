@@ -39,7 +39,7 @@ class JobProgressInfo:
     }
 
     def __init__(self, progress=None, incr_trans_delay=None, incr_trans_delay_millis=None, task_mode=None, transfer_status=None, process_time=None, remaining_time=None, progress_map=None):
-        """JobProgressInfo
+        r"""JobProgressInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class JobProgressInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this JobProgressInfo.
+        r"""Gets the progress of this JobProgressInfo.
 
         迁移对比百分比。
 
@@ -103,7 +103,7 @@ class JobProgressInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobProgressInfo.
+        r"""Sets the progress of this JobProgressInfo.
 
         迁移对比百分比。
 
@@ -114,7 +114,7 @@ class JobProgressInfo:
 
     @property
     def incr_trans_delay(self):
-        """Gets the incr_trans_delay of this JobProgressInfo.
+        r"""Gets the incr_trans_delay of this JobProgressInfo.
 
         增量迁移时延（单位：s）。
 
@@ -125,7 +125,7 @@ class JobProgressInfo:
 
     @incr_trans_delay.setter
     def incr_trans_delay(self, incr_trans_delay):
-        """Sets the incr_trans_delay of this JobProgressInfo.
+        r"""Sets the incr_trans_delay of this JobProgressInfo.
 
         增量迁移时延（单位：s）。
 
@@ -136,7 +136,7 @@ class JobProgressInfo:
 
     @property
     def incr_trans_delay_millis(self):
-        """Gets the incr_trans_delay_millis of this JobProgressInfo.
+        r"""Gets the incr_trans_delay_millis of this JobProgressInfo.
 
         增量迁移时延（单位：ms）。
 
@@ -147,7 +147,7 @@ class JobProgressInfo:
 
     @incr_trans_delay_millis.setter
     def incr_trans_delay_millis(self, incr_trans_delay_millis):
-        """Sets the incr_trans_delay_millis of this JobProgressInfo.
+        r"""Sets the incr_trans_delay_millis of this JobProgressInfo.
 
         增量迁移时延（单位：ms）。
 
@@ -158,7 +158,7 @@ class JobProgressInfo:
 
     @property
     def task_mode(self):
-        """Gets the task_mode of this JobProgressInfo.
+        r"""Gets the task_mode of this JobProgressInfo.
 
         迁移模式。
 
@@ -169,7 +169,7 @@ class JobProgressInfo:
 
     @task_mode.setter
     def task_mode(self, task_mode):
-        """Sets the task_mode of this JobProgressInfo.
+        r"""Sets the task_mode of this JobProgressInfo.
 
         迁移模式。
 
@@ -180,7 +180,7 @@ class JobProgressInfo:
 
     @property
     def transfer_status(self):
-        """Gets the transfer_status of this JobProgressInfo.
+        r"""Gets the transfer_status of this JobProgressInfo.
 
         迁移状态。
 
@@ -191,7 +191,7 @@ class JobProgressInfo:
 
     @transfer_status.setter
     def transfer_status(self, transfer_status):
-        """Sets the transfer_status of this JobProgressInfo.
+        r"""Sets the transfer_status of this JobProgressInfo.
 
         迁移状态。
 
@@ -202,7 +202,7 @@ class JobProgressInfo:
 
     @property
     def process_time(self):
-        """Gets the process_time of this JobProgressInfo.
+        r"""Gets the process_time of this JobProgressInfo.
 
         迁移时间。
 
@@ -213,7 +213,7 @@ class JobProgressInfo:
 
     @process_time.setter
     def process_time(self, process_time):
-        """Sets the process_time of this JobProgressInfo.
+        r"""Sets the process_time of this JobProgressInfo.
 
         迁移时间。
 
@@ -224,7 +224,7 @@ class JobProgressInfo:
 
     @property
     def remaining_time(self):
-        """Gets the remaining_time of this JobProgressInfo.
+        r"""Gets the remaining_time of this JobProgressInfo.
 
         预计剩余时间。
 
@@ -235,7 +235,7 @@ class JobProgressInfo:
 
     @remaining_time.setter
     def remaining_time(self, remaining_time):
-        """Sets the remaining_time of this JobProgressInfo.
+        r"""Sets the remaining_time of this JobProgressInfo.
 
         预计剩余时间。
 
@@ -246,7 +246,7 @@ class JobProgressInfo:
 
     @property
     def progress_map(self):
-        """Gets the progress_map of this JobProgressInfo.
+        r"""Gets the progress_map of this JobProgressInfo.
 
         全量迁移进度详情。
 
@@ -257,7 +257,7 @@ class JobProgressInfo:
 
     @progress_map.setter
     def progress_map(self, progress_map):
-        """Sets the progress_map of this JobProgressInfo.
+        r"""Sets the progress_map of this JobProgressInfo.
 
         全量迁移进度详情。
 

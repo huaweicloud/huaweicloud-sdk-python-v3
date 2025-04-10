@@ -25,7 +25,7 @@ class UpdateNodeCertRequest:
     }
 
     def __init__(self, node_id=None):
-        """UpdateNodeCertRequest
+        r"""UpdateNodeCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNodeCertRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateNodeCertRequest.
+        r"""Gets the node_id of this UpdateNodeCertRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -53,7 +53,7 @@ class UpdateNodeCertRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateNodeCertRequest.
+        r"""Sets the node_id of this UpdateNodeCertRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 

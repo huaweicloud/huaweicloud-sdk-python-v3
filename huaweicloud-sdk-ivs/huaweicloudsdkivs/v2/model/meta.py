@@ -25,7 +25,7 @@ class Meta:
     }
 
     def __init__(self, uuid=None):
-        """Meta
+        r"""Meta
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Meta:
 
     @property
     def uuid(self):
-        """Gets the uuid of this Meta.
+        r"""Gets the uuid of this Meta.
 
         唯一标识此次请求的ID，用户自定义，不超过64位。
 
@@ -54,7 +54,7 @@ class Meta:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this Meta.
+        r"""Sets the uuid of this Meta.
 
         唯一标识此次请求的ID，用户自定义，不超过64位。
 

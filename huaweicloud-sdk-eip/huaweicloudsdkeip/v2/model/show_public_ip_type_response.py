@@ -26,7 +26,7 @@ class ShowPublicIpTypeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowPublicIpTypeResponse
+        r"""ShowPublicIpTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPublicIpTypeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowPublicIpTypeResponse.
+        r"""Gets the body of this ShowPublicIpTypeResponse.
 
         :return: The body of this ShowPublicIpTypeResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowPublicIpTypeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPublicIpTypeResponse.
+        r"""Sets the body of this ShowPublicIpTypeResponse.
 
         :param body: The body of this ShowPublicIpTypeResponse.
         :type body: str

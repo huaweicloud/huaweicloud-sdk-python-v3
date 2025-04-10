@@ -29,7 +29,7 @@ class IssueProjectResponseV4:
     }
 
     def __init__(self, project_id=None, project_name=None, project_num_id=None):
-        """IssueProjectResponseV4
+        r"""IssueProjectResponseV4
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IssueProjectResponseV4:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IssueProjectResponseV4.
+        r"""Gets the project_id of this IssueProjectResponseV4.
 
         项目id
 
@@ -68,7 +68,7 @@ class IssueProjectResponseV4:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IssueProjectResponseV4.
+        r"""Sets the project_id of this IssueProjectResponseV4.
 
         项目id
 
@@ -79,7 +79,7 @@ class IssueProjectResponseV4:
 
     @property
     def project_name(self):
-        """Gets the project_name of this IssueProjectResponseV4.
+        r"""Gets the project_name of this IssueProjectResponseV4.
 
         项目名称
 
@@ -90,7 +90,7 @@ class IssueProjectResponseV4:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this IssueProjectResponseV4.
+        r"""Sets the project_name of this IssueProjectResponseV4.
 
         项目名称
 
@@ -101,7 +101,7 @@ class IssueProjectResponseV4:
 
     @property
     def project_num_id(self):
-        """Gets the project_num_id of this IssueProjectResponseV4.
+        r"""Gets the project_num_id of this IssueProjectResponseV4.
 
         项目数字id
 
@@ -112,7 +112,7 @@ class IssueProjectResponseV4:
 
     @project_num_id.setter
     def project_num_id(self, project_num_id):
-        """Sets the project_num_id of this IssueProjectResponseV4.
+        r"""Sets the project_num_id of this IssueProjectResponseV4.
 
         项目数字id
 

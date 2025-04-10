@@ -28,7 +28,7 @@ class ListContentCompareOverviewResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, content_compare_result_infos=None):
-        """ListContentCompareOverviewResponse
+        r"""ListContentCompareOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListContentCompareOverviewResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListContentCompareOverviewResponse.
+        r"""Gets the total_count of this ListContentCompareOverviewResponse.
 
         对比数量
 
@@ -62,7 +62,7 @@ class ListContentCompareOverviewResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListContentCompareOverviewResponse.
+        r"""Sets the total_count of this ListContentCompareOverviewResponse.
 
         对比数量
 
@@ -73,7 +73,7 @@ class ListContentCompareOverviewResponse(SdkResponse):
 
     @property
     def content_compare_result_infos(self):
-        """Gets the content_compare_result_infos of this ListContentCompareOverviewResponse.
+        r"""Gets the content_compare_result_infos of this ListContentCompareOverviewResponse.
 
         信息列表
 
@@ -84,7 +84,7 @@ class ListContentCompareOverviewResponse(SdkResponse):
 
     @content_compare_result_infos.setter
     def content_compare_result_infos(self, content_compare_result_infos):
-        """Sets the content_compare_result_infos of this ListContentCompareOverviewResponse.
+        r"""Sets the content_compare_result_infos of this ListContentCompareOverviewResponse.
 
         信息列表
 

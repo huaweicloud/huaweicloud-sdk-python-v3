@@ -27,7 +27,7 @@ class AddEcnWithVpcRequest:
     }
 
     def __init__(self, ecn_id=None, body=None):
-        """AddEcnWithVpcRequest
+        r"""AddEcnWithVpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddEcnWithVpcRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this AddEcnWithVpcRequest.
+        r"""Gets the ecn_id of this AddEcnWithVpcRequest.
 
         企业连接网络ID
 
@@ -60,7 +60,7 @@ class AddEcnWithVpcRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this AddEcnWithVpcRequest.
+        r"""Sets the ecn_id of this AddEcnWithVpcRequest.
 
         企业连接网络ID
 
@@ -71,7 +71,7 @@ class AddEcnWithVpcRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddEcnWithVpcRequest.
+        r"""Gets the body of this AddEcnWithVpcRequest.
 
         :return: The body of this AddEcnWithVpcRequest.
         :rtype: :class:`huaweicloudsdkec.v1.AddEcnWithVpcRequestBody`
@@ -80,7 +80,7 @@ class AddEcnWithVpcRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddEcnWithVpcRequest.
+        r"""Sets the body of this AddEcnWithVpcRequest.
 
         :param body: The body of this AddEcnWithVpcRequest.
         :type body: :class:`huaweicloudsdkec.v1.AddEcnWithVpcRequestBody`

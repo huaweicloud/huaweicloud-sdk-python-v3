@@ -31,7 +31,7 @@ class RestorePoint:
     }
 
     def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None):
-        """RestorePoint
+        r"""RestorePoint
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RestorePoint:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestorePoint.
+        r"""Gets the instance_id of this RestorePoint.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。当type为“backup”，为非必选。当type为“timestamp”，为必选。
 
@@ -75,7 +75,7 @@ class RestorePoint:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestorePoint.
+        r"""Sets the instance_id of this RestorePoint.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。当type为“backup”，为非必选。当type为“timestamp”，为必选。
 
@@ -86,7 +86,7 @@ class RestorePoint:
 
     @property
     def type(self):
-        """Gets the type of this RestorePoint.
+        r"""Gets the type of this RestorePoint.
 
         恢复方式，枚举值： - “backup”，表示使用备份文件恢复，按照此方式恢复时，当“type”字段为非必选时，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，当“type”字段必选时，“restore_time”必选。
 
@@ -97,7 +97,7 @@ class RestorePoint:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RestorePoint.
+        r"""Sets the type of this RestorePoint.
 
         恢复方式，枚举值： - “backup”，表示使用备份文件恢复，按照此方式恢复时，当“type”字段为非必选时，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，当“type”字段必选时，“restore_time”必选。
 
@@ -108,7 +108,7 @@ class RestorePoint:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestorePoint.
+        r"""Gets the backup_id of this RestorePoint.
 
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。当“type”字段为非必选时，“backup_id”必选。
 
@@ -119,7 +119,7 @@ class RestorePoint:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestorePoint.
+        r"""Sets the backup_id of this RestorePoint.
 
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。当“type”字段为非必选时，“backup_id”必选。
 
@@ -130,7 +130,7 @@ class RestorePoint:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestorePoint.
+        r"""Gets the restore_time of this RestorePoint.
 
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。须知：当“type”字段必选时，“restore_time”必选。
 
@@ -141,7 +141,7 @@ class RestorePoint:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestorePoint.
+        r"""Sets the restore_time of this RestorePoint.
 
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。须知：当“type”字段必选时，“restore_time”必选。
 

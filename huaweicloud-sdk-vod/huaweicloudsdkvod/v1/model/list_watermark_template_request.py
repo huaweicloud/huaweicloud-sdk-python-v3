@@ -29,7 +29,7 @@ class ListWatermarkTemplateRequest:
     }
 
     def __init__(self, id=None, page=None, size=None):
-        """ListWatermarkTemplateRequest
+        r"""ListWatermarkTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListWatermarkTemplateRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListWatermarkTemplateRequest.
+        r"""Gets the id of this ListWatermarkTemplateRequest.
 
         水印模板配置id，一次最多10个。
 
@@ -68,7 +68,7 @@ class ListWatermarkTemplateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListWatermarkTemplateRequest.
+        r"""Sets the id of this ListWatermarkTemplateRequest.
 
         水印模板配置id，一次最多10个。
 
@@ -79,7 +79,7 @@ class ListWatermarkTemplateRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListWatermarkTemplateRequest.
+        r"""Gets the page of this ListWatermarkTemplateRequest.
 
         分页编号。  默认为0。指定id时该参数无效。
 
@@ -90,7 +90,7 @@ class ListWatermarkTemplateRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListWatermarkTemplateRequest.
+        r"""Sets the page of this ListWatermarkTemplateRequest.
 
         分页编号。  默认为0。指定id时该参数无效。
 
@@ -101,7 +101,7 @@ class ListWatermarkTemplateRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListWatermarkTemplateRequest.
+        r"""Gets the size of this ListWatermarkTemplateRequest.
 
         每页记录数。  默认为10，范围[1,100]。指定id时该参数无效。
 
@@ -112,7 +112,7 @@ class ListWatermarkTemplateRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListWatermarkTemplateRequest.
+        r"""Sets the size of this ListWatermarkTemplateRequest.
 
         每页记录数。  默认为10，范围[1,100]。指定id时该参数无效。
 

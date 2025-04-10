@@ -28,7 +28,7 @@ class ShowPriceResponse(SdkResponse):
     }
 
     def __init__(self, prices=None, status=None):
-        """ShowPriceResponse
+        r"""ShowPriceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPriceResponse(SdkResponse):
 
     @property
     def prices(self):
-        """Gets the prices of this ShowPriceResponse.
+        r"""Gets the prices of this ShowPriceResponse.
 
         技术栈价格列表
 
@@ -62,7 +62,7 @@ class ShowPriceResponse(SdkResponse):
 
     @prices.setter
     def prices(self, prices):
-        """Sets the prices of this ShowPriceResponse.
+        r"""Sets the prices of this ShowPriceResponse.
 
         技术栈价格列表
 
@@ -73,7 +73,7 @@ class ShowPriceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPriceResponse.
+        r"""Gets the status of this ShowPriceResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class ShowPriceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPriceResponse.
+        r"""Sets the status of this ShowPriceResponse.
 
         状态
 

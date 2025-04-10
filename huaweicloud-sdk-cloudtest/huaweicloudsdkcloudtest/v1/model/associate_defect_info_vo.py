@@ -27,7 +27,7 @@ class AssociateDefectInfoVo:
     }
 
     def __init__(self, associate=None, associate_count=None):
-        """AssociateDefectInfoVo
+        r"""AssociateDefectInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociateDefectInfoVo:
 
     @property
     def associate(self):
-        """Gets the associate of this AssociateDefectInfoVo.
+        r"""Gets the associate of this AssociateDefectInfoVo.
 
         是否已关联
 
@@ -61,7 +61,7 @@ class AssociateDefectInfoVo:
 
     @associate.setter
     def associate(self, associate):
-        """Sets the associate of this AssociateDefectInfoVo.
+        r"""Sets the associate of this AssociateDefectInfoVo.
 
         是否已关联
 
@@ -72,7 +72,7 @@ class AssociateDefectInfoVo:
 
     @property
     def associate_count(self):
-        """Gets the associate_count of this AssociateDefectInfoVo.
+        r"""Gets the associate_count of this AssociateDefectInfoVo.
 
         关联缺陷数
 
@@ -83,7 +83,7 @@ class AssociateDefectInfoVo:
 
     @associate_count.setter
     def associate_count(self, associate_count):
-        """Sets the associate_count of this AssociateDefectInfoVo.
+        r"""Sets the associate_count of this AssociateDefectInfoVo.
 
         关联缺陷数
 

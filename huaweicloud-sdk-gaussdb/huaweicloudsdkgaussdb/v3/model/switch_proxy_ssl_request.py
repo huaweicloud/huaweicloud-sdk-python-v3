@@ -25,7 +25,7 @@ class SwitchProxySSLRequest:
     }
 
     def __init__(self, ssl_option=None):
-        """SwitchProxySSLRequest
+        r"""SwitchProxySSLRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchProxySSLRequest:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this SwitchProxySSLRequest.
+        r"""Gets the ssl_option of this SwitchProxySSLRequest.
 
         SSL数据加密开关设置。    取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
 
@@ -53,7 +53,7 @@ class SwitchProxySSLRequest:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this SwitchProxySSLRequest.
+        r"""Sets the ssl_option of this SwitchProxySSLRequest.
 
         SSL数据加密开关设置。    取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
 

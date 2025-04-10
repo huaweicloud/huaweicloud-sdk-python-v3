@@ -31,7 +31,7 @@ class ComponentStorage:
     }
 
     def __init__(self, type=None, name=None, parameters=None, mounts=None):
-        """ComponentStorage
+        r"""ComponentStorage
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ComponentStorage:
 
     @property
     def type(self):
-        """Gets the type of this ComponentStorage.
+        r"""Gets the type of this ComponentStorage.
 
         :return: The type of this ComponentStorage.
         :rtype: str
@@ -69,7 +69,7 @@ class ComponentStorage:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ComponentStorage.
+        r"""Sets the type of this ComponentStorage.
 
         :param type: The type of this ComponentStorage.
         :type type: str
@@ -78,7 +78,7 @@ class ComponentStorage:
 
     @property
     def name(self):
-        """Gets the name of this ComponentStorage.
+        r"""Gets the name of this ComponentStorage.
 
         存储盘的名字
 
@@ -89,7 +89,7 @@ class ComponentStorage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentStorage.
+        r"""Sets the name of this ComponentStorage.
 
         存储盘的名字
 
@@ -100,7 +100,7 @@ class ComponentStorage:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ComponentStorage.
+        r"""Gets the parameters of this ComponentStorage.
 
         :return: The parameters of this ComponentStorage.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentStorageParameters`
@@ -109,7 +109,7 @@ class ComponentStorage:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ComponentStorage.
+        r"""Sets the parameters of this ComponentStorage.
 
         :param parameters: The parameters of this ComponentStorage.
         :type parameters: :class:`huaweicloudsdkservicestage.v3.ComponentStorageParameters`
@@ -118,7 +118,7 @@ class ComponentStorage:
 
     @property
     def mounts(self):
-        """Gets the mounts of this ComponentStorage.
+        r"""Gets the mounts of this ComponentStorage.
 
         :return: The mounts of this ComponentStorage.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentMount`]
@@ -127,7 +127,7 @@ class ComponentStorage:
 
     @mounts.setter
     def mounts(self, mounts):
-        """Sets the mounts of this ComponentStorage.
+        r"""Sets the mounts of this ComponentStorage.
 
         :param mounts: The mounts of this ComponentStorage.
         :type mounts: list[:class:`huaweicloudsdkservicestage.v3.ComponentMount`]

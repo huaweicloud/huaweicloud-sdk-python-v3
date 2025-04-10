@@ -29,7 +29,7 @@ class ListP2cVgwConnectionsRequest:
     }
 
     def __init__(self, p2c_vgw_id=None, limit=None, offset=None):
-        """ListP2cVgwConnectionsRequest
+        r"""ListP2cVgwConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListP2cVgwConnectionsRequest:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this ListP2cVgwConnectionsRequest.
+        r"""Gets the p2c_vgw_id of this ListP2cVgwConnectionsRequest.
 
         P2C VPN网关实例ID
 
@@ -67,7 +67,7 @@ class ListP2cVgwConnectionsRequest:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this ListP2cVgwConnectionsRequest.
+        r"""Sets the p2c_vgw_id of this ListP2cVgwConnectionsRequest.
 
         P2C VPN网关实例ID
 
@@ -78,7 +78,7 @@ class ListP2cVgwConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListP2cVgwConnectionsRequest.
+        r"""Gets the limit of this ListP2cVgwConnectionsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -89,7 +89,7 @@ class ListP2cVgwConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListP2cVgwConnectionsRequest.
+        r"""Sets the limit of this ListP2cVgwConnectionsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -100,7 +100,7 @@ class ListP2cVgwConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListP2cVgwConnectionsRequest.
+        r"""Gets the offset of this ListP2cVgwConnectionsRequest.
 
         分页查询的偏移量
 
@@ -111,7 +111,7 @@ class ListP2cVgwConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListP2cVgwConnectionsRequest.
+        r"""Sets the offset of this ListP2cVgwConnectionsRequest.
 
         分页查询的偏移量
 

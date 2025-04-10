@@ -43,7 +43,7 @@ class LockInfo:
     }
 
     def __init__(self, id=None, resource_type=None, resource_id=None, scene=None, source_type=None, source_id=None, check_url=None, action=None, created_at=None, updated_at=None):
-        """LockInfo
+        r"""LockInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class LockInfo:
 
     @property
     def id(self):
-        """Gets the id of this LockInfo.
+        r"""Gets the id of this LockInfo.
 
         锁id
 
@@ -117,7 +117,7 @@ class LockInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LockInfo.
+        r"""Sets the id of this LockInfo.
 
         锁id
 
@@ -128,7 +128,7 @@ class LockInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this LockInfo.
+        r"""Gets the resource_type of this LockInfo.
 
         资源类型
 
@@ -139,7 +139,7 @@ class LockInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this LockInfo.
+        r"""Sets the resource_type of this LockInfo.
 
         资源类型
 
@@ -150,7 +150,7 @@ class LockInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this LockInfo.
+        r"""Gets the resource_id of this LockInfo.
 
         资源id
 
@@ -161,7 +161,7 @@ class LockInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this LockInfo.
+        r"""Sets the resource_id of this LockInfo.
 
         资源id
 
@@ -172,7 +172,7 @@ class LockInfo:
 
     @property
     def scene(self):
-        """Gets the scene of this LockInfo.
+        r"""Gets the scene of this LockInfo.
 
         场景类型
 
@@ -183,7 +183,7 @@ class LockInfo:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this LockInfo.
+        r"""Sets the scene of this LockInfo.
 
         场景类型
 
@@ -194,7 +194,7 @@ class LockInfo:
 
     @property
     def source_type(self):
-        """Gets the source_type of this LockInfo.
+        r"""Gets the source_type of this LockInfo.
 
         源类型
 
@@ -205,7 +205,7 @@ class LockInfo:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this LockInfo.
+        r"""Sets the source_type of this LockInfo.
 
         源类型
 
@@ -216,7 +216,7 @@ class LockInfo:
 
     @property
     def source_id(self):
-        """Gets the source_id of this LockInfo.
+        r"""Gets the source_id of this LockInfo.
 
         源id
 
@@ -227,7 +227,7 @@ class LockInfo:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this LockInfo.
+        r"""Sets the source_id of this LockInfo.
 
         源id
 
@@ -238,7 +238,7 @@ class LockInfo:
 
     @property
     def check_url(self):
-        """Gets the check_url of this LockInfo.
+        r"""Gets the check_url of this LockInfo.
 
         check地址
 
@@ -249,7 +249,7 @@ class LockInfo:
 
     @check_url.setter
     def check_url(self, check_url):
-        """Sets the check_url of this LockInfo.
+        r"""Sets the check_url of this LockInfo.
 
         check地址
 
@@ -260,7 +260,7 @@ class LockInfo:
 
     @property
     def action(self):
-        """Gets the action of this LockInfo.
+        r"""Gets the action of this LockInfo.
 
         动作类型
 
@@ -271,7 +271,7 @@ class LockInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this LockInfo.
+        r"""Sets the action of this LockInfo.
 
         动作类型
 
@@ -282,7 +282,7 @@ class LockInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this LockInfo.
+        r"""Gets the created_at of this LockInfo.
 
         创建时间
 
@@ -293,7 +293,7 @@ class LockInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this LockInfo.
+        r"""Sets the created_at of this LockInfo.
 
         创建时间
 
@@ -304,7 +304,7 @@ class LockInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this LockInfo.
+        r"""Gets the updated_at of this LockInfo.
 
         更新时间
 
@@ -315,7 +315,7 @@ class LockInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this LockInfo.
+        r"""Sets the updated_at of this LockInfo.
 
         更新时间
 

@@ -26,7 +26,7 @@ class UpdateOrganizationalUnitResponse(SdkResponse):
     }
 
     def __init__(self, organizational_unit=None):
-        """UpdateOrganizationalUnitResponse
+        r"""UpdateOrganizationalUnitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateOrganizationalUnitResponse(SdkResponse):
 
     @property
     def organizational_unit(self):
-        """Gets the organizational_unit of this UpdateOrganizationalUnitResponse.
+        r"""Gets the organizational_unit of this UpdateOrganizationalUnitResponse.
 
         :return: The organizational_unit of this UpdateOrganizationalUnitResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.OrganizationalUnitDto`
@@ -53,7 +53,7 @@ class UpdateOrganizationalUnitResponse(SdkResponse):
 
     @organizational_unit.setter
     def organizational_unit(self, organizational_unit):
-        """Sets the organizational_unit of this UpdateOrganizationalUnitResponse.
+        r"""Sets the organizational_unit of this UpdateOrganizationalUnitResponse.
 
         :param organizational_unit: The organizational_unit of this UpdateOrganizationalUnitResponse.
         :type organizational_unit: :class:`huaweicloudsdkorganizations.v1.OrganizationalUnitDto`

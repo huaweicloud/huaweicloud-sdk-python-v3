@@ -27,7 +27,7 @@ class ImStatusV2:
     }
 
     def __init__(self, status=None, incident_id=None):
-        """ImStatusV2
+        r"""ImStatusV2
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImStatusV2:
 
     @property
     def status(self):
-        """Gets the status of this ImStatusV2.
+        r"""Gets the status of this ImStatusV2.
 
         状态
 
@@ -61,7 +61,7 @@ class ImStatusV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImStatusV2.
+        r"""Sets the status of this ImStatusV2.
 
         状态
 
@@ -72,7 +72,7 @@ class ImStatusV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ImStatusV2.
+        r"""Gets the incident_id of this ImStatusV2.
 
         工单id
 
@@ -83,7 +83,7 @@ class ImStatusV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ImStatusV2.
+        r"""Sets the incident_id of this ImStatusV2.
 
         工单id
 

@@ -31,7 +31,7 @@ class UrlDomainBase:
     }
 
     def __init__(self, min_ssl_version=None, is_http_redirect_to_https=None, ingress_http_port=None, ingress_https_port=None):
-        """UrlDomainBase
+        r"""UrlDomainBase
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UrlDomainBase:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomainBase.
+        r"""Gets the min_ssl_version of this UrlDomainBase.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -75,7 +75,7 @@ class UrlDomainBase:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomainBase.
+        r"""Sets the min_ssl_version of this UrlDomainBase.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -86,7 +86,7 @@ class UrlDomainBase:
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this UrlDomainBase.
+        r"""Gets the is_http_redirect_to_https of this UrlDomainBase.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -97,7 +97,7 @@ class UrlDomainBase:
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this UrlDomainBase.
+        r"""Sets the is_http_redirect_to_https of this UrlDomainBase.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -108,7 +108,7 @@ class UrlDomainBase:
 
     @property
     def ingress_http_port(self):
-        """Gets the ingress_http_port of this UrlDomainBase.
+        r"""Gets the ingress_http_port of this UrlDomainBase.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -119,7 +119,7 @@ class UrlDomainBase:
 
     @ingress_http_port.setter
     def ingress_http_port(self, ingress_http_port):
-        """Sets the ingress_http_port of this UrlDomainBase.
+        r"""Sets the ingress_http_port of this UrlDomainBase.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -130,7 +130,7 @@ class UrlDomainBase:
 
     @property
     def ingress_https_port(self):
-        """Gets the ingress_https_port of this UrlDomainBase.
+        r"""Gets the ingress_https_port of this UrlDomainBase.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -141,7 +141,7 @@ class UrlDomainBase:
 
     @ingress_https_port.setter
     def ingress_https_port(self, ingress_https_port):
-        """Sets the ingress_https_port of this UrlDomainBase.
+        r"""Sets the ingress_https_port of this UrlDomainBase.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 

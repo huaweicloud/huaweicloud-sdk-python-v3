@@ -31,7 +31,7 @@ class AttachedPolicy:
     }
 
     def __init__(self, policy_name=None, policy_id=None, urn=None, attached_at=None):
-        """AttachedPolicy
+        r"""AttachedPolicy
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AttachedPolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this AttachedPolicy.
+        r"""Gets the policy_name of this AttachedPolicy.
 
         身份策略名称，长度为1到128个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class AttachedPolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this AttachedPolicy.
+        r"""Sets the policy_name of this AttachedPolicy.
 
         身份策略名称，长度为1到128个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -82,7 +82,7 @@ class AttachedPolicy:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this AttachedPolicy.
+        r"""Gets the policy_id of this AttachedPolicy.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -93,7 +93,7 @@ class AttachedPolicy:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this AttachedPolicy.
+        r"""Sets the policy_id of this AttachedPolicy.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -104,7 +104,7 @@ class AttachedPolicy:
 
     @property
     def urn(self):
-        """Gets the urn of this AttachedPolicy.
+        r"""Gets the urn of this AttachedPolicy.
 
         统一资源名称。
 
@@ -115,7 +115,7 @@ class AttachedPolicy:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this AttachedPolicy.
+        r"""Sets the urn of this AttachedPolicy.
 
         统一资源名称。
 
@@ -126,7 +126,7 @@ class AttachedPolicy:
 
     @property
     def attached_at(self):
-        """Gets the attached_at of this AttachedPolicy.
+        r"""Gets the attached_at of this AttachedPolicy.
 
         身份策略的附加时间。
 
@@ -137,7 +137,7 @@ class AttachedPolicy:
 
     @attached_at.setter
     def attached_at(self, attached_at):
-        """Sets the attached_at of this AttachedPolicy.
+        r"""Sets the attached_at of this AttachedPolicy.
 
         身份策略的附加时间。
 

@@ -36,7 +36,7 @@ class CollectReplyRatesResponse(SdkResponse):
     }
 
     def __init__(self, interval=None, time_zone=None, total=None, intervals=None, startutc=None, endutc=None):
-        """CollectReplyRatesResponse
+        r"""CollectReplyRatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this CollectReplyRatesResponse.
+        r"""Gets the interval of this CollectReplyRatesResponse.
 
         统计周期目前支持year、month、week、day。 调用失败时无此字段。
 
@@ -90,7 +90,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this CollectReplyRatesResponse.
+        r"""Sets the interval of this CollectReplyRatesResponse.
 
         统计周期目前支持year、month、week、day。 调用失败时无此字段。
 
@@ -101,7 +101,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CollectReplyRatesResponse.
+        r"""Gets the time_zone of this CollectReplyRatesResponse.
 
         所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\";默认为\"UTC\"。 调用失败时无此字段。
 
@@ -112,7 +112,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CollectReplyRatesResponse.
+        r"""Sets the time_zone of this CollectReplyRatesResponse.
 
         所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\";默认为\"UTC\"。 调用失败时无此字段。
 
@@ -123,7 +123,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CollectReplyRatesResponse.
+        r"""Gets the total of this CollectReplyRatesResponse.
 
         :return: The total of this CollectReplyRatesResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
@@ -132,7 +132,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CollectReplyRatesResponse.
+        r"""Sets the total of this CollectReplyRatesResponse.
 
         :param total: The total of this CollectReplyRatesResponse.
         :type total: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
@@ -141,7 +141,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @property
     def intervals(self):
-        """Gets the intervals of this CollectReplyRatesResponse.
+        r"""Gets the intervals of this CollectReplyRatesResponse.
 
         会话间隔统计数据。
 
@@ -152,7 +152,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @intervals.setter
     def intervals(self, intervals):
-        """Sets the intervals of this CollectReplyRatesResponse.
+        r"""Sets the intervals of this CollectReplyRatesResponse.
 
         会话间隔统计数据。
 
@@ -163,7 +163,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @property
     def startutc(self):
-        """Gets the startutc of this CollectReplyRatesResponse.
+        r"""Gets the startutc of this CollectReplyRatesResponse.
 
         统计开始的utc时间。
 
@@ -174,7 +174,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @startutc.setter
     def startutc(self, startutc):
-        """Sets the startutc of this CollectReplyRatesResponse.
+        r"""Sets the startutc of this CollectReplyRatesResponse.
 
         统计开始的utc时间。
 
@@ -185,7 +185,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @property
     def endutc(self):
-        """Gets the endutc of this CollectReplyRatesResponse.
+        r"""Gets the endutc of this CollectReplyRatesResponse.
 
         统计结束的utc时间。
 
@@ -196,7 +196,7 @@ class CollectReplyRatesResponse(SdkResponse):
 
     @endutc.setter
     def endutc(self, endutc):
-        """Sets the endutc of this CollectReplyRatesResponse.
+        r"""Sets the endutc of this CollectReplyRatesResponse.
 
         统计结束的utc时间。
 

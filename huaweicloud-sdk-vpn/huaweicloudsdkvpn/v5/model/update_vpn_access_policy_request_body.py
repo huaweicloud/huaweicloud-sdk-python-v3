@@ -25,7 +25,7 @@ class UpdateVpnAccessPolicyRequestBody:
     }
 
     def __init__(self, access_policy=None):
-        """UpdateVpnAccessPolicyRequestBody
+        r"""UpdateVpnAccessPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpnAccessPolicyRequestBody:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this UpdateVpnAccessPolicyRequestBody.
+        r"""Gets the access_policy of this UpdateVpnAccessPolicyRequestBody.
 
         :return: The access_policy of this UpdateVpnAccessPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnAccessPolicyRequestBodyContent`
@@ -51,7 +51,7 @@ class UpdateVpnAccessPolicyRequestBody:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this UpdateVpnAccessPolicyRequestBody.
+        r"""Sets the access_policy of this UpdateVpnAccessPolicyRequestBody.
 
         :param access_policy: The access_policy of this UpdateVpnAccessPolicyRequestBody.
         :type access_policy: :class:`huaweicloudsdkvpn.v5.UpdateVpnAccessPolicyRequestBodyContent`

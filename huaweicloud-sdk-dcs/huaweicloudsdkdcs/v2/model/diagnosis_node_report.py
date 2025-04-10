@@ -39,7 +39,7 @@ class DiagnosisNodeReport:
     }
 
     def __init__(self, node_ip=None, az_code=None, group_name=None, abnormal_sum=None, failed_sum=None, role=None, diagnosis_dimension_list=None, command_time_taken_list=None):
-        """DiagnosisNodeReport
+        r"""DiagnosisNodeReport
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class DiagnosisNodeReport:
 
     @property
     def node_ip(self):
-        """Gets the node_ip of this DiagnosisNodeReport.
+        r"""Gets the node_ip of this DiagnosisNodeReport.
 
         节点IP。例如：192.168.0.234:6379
 
@@ -95,7 +95,7 @@ class DiagnosisNodeReport:
 
     @node_ip.setter
     def node_ip(self, node_ip):
-        """Sets the node_ip of this DiagnosisNodeReport.
+        r"""Sets the node_ip of this DiagnosisNodeReport.
 
         节点IP。例如：192.168.0.234:6379
 
@@ -106,7 +106,7 @@ class DiagnosisNodeReport:
 
     @property
     def az_code(self):
-        """Gets the az_code of this DiagnosisNodeReport.
+        r"""Gets the az_code of this DiagnosisNodeReport.
 
         节点所在可用区Code
 
@@ -117,7 +117,7 @@ class DiagnosisNodeReport:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this DiagnosisNodeReport.
+        r"""Sets the az_code of this DiagnosisNodeReport.
 
         节点所在可用区Code
 
@@ -128,7 +128,7 @@ class DiagnosisNodeReport:
 
     @property
     def group_name(self):
-        """Gets the group_name of this DiagnosisNodeReport.
+        r"""Gets the group_name of this DiagnosisNodeReport.
 
         节点所在分片的名称
 
@@ -139,7 +139,7 @@ class DiagnosisNodeReport:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this DiagnosisNodeReport.
+        r"""Sets the group_name of this DiagnosisNodeReport.
 
         节点所在分片的名称
 
@@ -150,7 +150,7 @@ class DiagnosisNodeReport:
 
     @property
     def abnormal_sum(self):
-        """Gets the abnormal_sum of this DiagnosisNodeReport.
+        r"""Gets the abnormal_sum of this DiagnosisNodeReport.
 
         诊断结果为异常的诊断项总数
 
@@ -161,7 +161,7 @@ class DiagnosisNodeReport:
 
     @abnormal_sum.setter
     def abnormal_sum(self, abnormal_sum):
-        """Sets the abnormal_sum of this DiagnosisNodeReport.
+        r"""Sets the abnormal_sum of this DiagnosisNodeReport.
 
         诊断结果为异常的诊断项总数
 
@@ -172,7 +172,7 @@ class DiagnosisNodeReport:
 
     @property
     def failed_sum(self):
-        """Gets the failed_sum of this DiagnosisNodeReport.
+        r"""Gets the failed_sum of this DiagnosisNodeReport.
 
         诊断失败的诊断项总数
 
@@ -183,7 +183,7 @@ class DiagnosisNodeReport:
 
     @failed_sum.setter
     def failed_sum(self, failed_sum):
-        """Sets the failed_sum of this DiagnosisNodeReport.
+        r"""Sets the failed_sum of this DiagnosisNodeReport.
 
         诊断失败的诊断项总数
 
@@ -194,7 +194,7 @@ class DiagnosisNodeReport:
 
     @property
     def role(self):
-        """Gets the role of this DiagnosisNodeReport.
+        r"""Gets the role of this DiagnosisNodeReport.
 
         节点角色
 
@@ -205,7 +205,7 @@ class DiagnosisNodeReport:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this DiagnosisNodeReport.
+        r"""Sets the role of this DiagnosisNodeReport.
 
         节点角色
 
@@ -216,7 +216,7 @@ class DiagnosisNodeReport:
 
     @property
     def diagnosis_dimension_list(self):
-        """Gets the diagnosis_dimension_list of this DiagnosisNodeReport.
+        r"""Gets the diagnosis_dimension_list of this DiagnosisNodeReport.
 
         诊断维度列表
 
@@ -227,7 +227,7 @@ class DiagnosisNodeReport:
 
     @diagnosis_dimension_list.setter
     def diagnosis_dimension_list(self, diagnosis_dimension_list):
-        """Sets the diagnosis_dimension_list of this DiagnosisNodeReport.
+        r"""Sets the diagnosis_dimension_list of this DiagnosisNodeReport.
 
         诊断维度列表
 
@@ -238,7 +238,7 @@ class DiagnosisNodeReport:
 
     @property
     def command_time_taken_list(self):
-        """Gets the command_time_taken_list of this DiagnosisNodeReport.
+        r"""Gets the command_time_taken_list of this DiagnosisNodeReport.
 
         :return: The command_time_taken_list of this DiagnosisNodeReport.
         :rtype: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`
@@ -247,7 +247,7 @@ class DiagnosisNodeReport:
 
     @command_time_taken_list.setter
     def command_time_taken_list(self, command_time_taken_list):
-        """Sets the command_time_taken_list of this DiagnosisNodeReport.
+        r"""Sets the command_time_taken_list of this DiagnosisNodeReport.
 
         :param command_time_taken_list: The command_time_taken_list of this DiagnosisNodeReport.
         :type command_time_taken_list: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`

@@ -29,7 +29,7 @@ class DeleteDisasterRecoveryRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """DeleteDisasterRecoveryRequest
+        r"""DeleteDisasterRecoveryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDisasterRecoveryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDisasterRecoveryRequest.
+        r"""Gets the instance_id of this DeleteDisasterRecoveryRequest.
 
         实例id
 
@@ -67,7 +67,7 @@ class DeleteDisasterRecoveryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDisasterRecoveryRequest.
+        r"""Sets the instance_id of this DeleteDisasterRecoveryRequest.
 
         实例id
 
@@ -78,7 +78,7 @@ class DeleteDisasterRecoveryRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteDisasterRecoveryRequest.
+        r"""Gets the x_language of this DeleteDisasterRecoveryRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class DeleteDisasterRecoveryRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteDisasterRecoveryRequest.
+        r"""Sets the x_language of this DeleteDisasterRecoveryRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class DeleteDisasterRecoveryRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDisasterRecoveryRequest.
+        r"""Gets the body of this DeleteDisasterRecoveryRequest.
 
         :return: The body of this DeleteDisasterRecoveryRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteDisasterRecoveryRequestBody`
@@ -109,7 +109,7 @@ class DeleteDisasterRecoveryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDisasterRecoveryRequest.
+        r"""Sets the body of this DeleteDisasterRecoveryRequest.
 
         :param body: The body of this DeleteDisasterRecoveryRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DeleteDisasterRecoveryRequestBody`

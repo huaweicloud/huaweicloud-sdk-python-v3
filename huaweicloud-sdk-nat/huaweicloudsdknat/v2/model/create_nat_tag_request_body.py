@@ -25,7 +25,7 @@ class CreateNatTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateNatTagRequestBody
+        r"""CreateNatTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateNatTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateNatTagRequestBody.
+        r"""Gets the tag of this CreateNatTagRequestBody.
 
         :return: The tag of this CreateNatTagRequestBody.
         :rtype: :class:`huaweicloudsdknat.v2.TagBody`
@@ -51,7 +51,7 @@ class CreateNatTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateNatTagRequestBody.
+        r"""Sets the tag of this CreateNatTagRequestBody.
 
         :param tag: The tag of this CreateNatTagRequestBody.
         :type tag: :class:`huaweicloudsdknat.v2.TagBody`

@@ -26,7 +26,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
     }
 
     def __init__(self, version=None):
-        """ListSpecifiedVersionDetailsResponse
+        r"""ListSpecifiedVersionDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ListSpecifiedVersionDetailsResponse.
+        r"""Gets the version of this ListSpecifiedVersionDetailsResponse.
 
         :return: The version of this ListSpecifiedVersionDetailsResponse.
         :rtype: :class:`huaweicloudsdkvpcep.v1.VersionObject`
@@ -53,7 +53,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListSpecifiedVersionDetailsResponse.
+        r"""Sets the version of this ListSpecifiedVersionDetailsResponse.
 
         :param version: The version of this ListSpecifiedVersionDetailsResponse.
         :type version: :class:`huaweicloudsdkvpcep.v1.VersionObject`

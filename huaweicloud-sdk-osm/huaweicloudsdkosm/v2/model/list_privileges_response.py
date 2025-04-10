@@ -26,7 +26,7 @@ class ListPrivilegesResponse(SdkResponse):
     }
 
     def __init__(self, has_privilege=None):
-        """ListPrivilegesResponse
+        r"""ListPrivilegesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPrivilegesResponse(SdkResponse):
 
     @property
     def has_privilege(self):
-        """Gets the has_privilege of this ListPrivilegesResponse.
+        r"""Gets the has_privilege of this ListPrivilegesResponse.
 
         是否有权限
 
@@ -55,7 +55,7 @@ class ListPrivilegesResponse(SdkResponse):
 
     @has_privilege.setter
     def has_privilege(self, has_privilege):
-        """Sets the has_privilege of this ListPrivilegesResponse.
+        r"""Sets the has_privilege of this ListPrivilegesResponse.
 
         是否有权限
 

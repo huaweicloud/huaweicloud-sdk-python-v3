@@ -29,7 +29,7 @@ class CustomFeildRecord:
     }
 
     def __init__(self, key=None, name=None, value=None):
-        """CustomFeildRecord
+        r"""CustomFeildRecord
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CustomFeildRecord:
 
     @property
     def key(self):
-        """Gets the key of this CustomFeildRecord.
+        r"""Gets the key of this CustomFeildRecord.
 
         自定义工作项属性
 
@@ -68,7 +68,7 @@ class CustomFeildRecord:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CustomFeildRecord.
+        r"""Sets the key of this CustomFeildRecord.
 
         自定义工作项属性
 
@@ -79,7 +79,7 @@ class CustomFeildRecord:
 
     @property
     def name(self):
-        """Gets the name of this CustomFeildRecord.
+        r"""Gets the name of this CustomFeildRecord.
 
         自定义工作项名称
 
@@ -90,7 +90,7 @@ class CustomFeildRecord:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomFeildRecord.
+        r"""Sets the name of this CustomFeildRecord.
 
         自定义工作项名称
 
@@ -101,7 +101,7 @@ class CustomFeildRecord:
 
     @property
     def value(self):
-        """Gets the value of this CustomFeildRecord.
+        r"""Gets the value of this CustomFeildRecord.
 
         自定义工作项值
 
@@ -112,7 +112,7 @@ class CustomFeildRecord:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomFeildRecord.
+        r"""Sets the value of this CustomFeildRecord.
 
         自定义工作项值
 

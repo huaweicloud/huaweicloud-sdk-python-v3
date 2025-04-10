@@ -24,7 +24,7 @@ class AttachAgencyPolicyV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """AttachAgencyPolicyV5Response
+        r"""AttachAgencyPolicyV5Response
 
         The model defined in huaweicloud sdk
 

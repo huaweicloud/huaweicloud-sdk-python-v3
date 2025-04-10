@@ -25,7 +25,7 @@ class BatchCopyErrorRsp:
     }
 
     def __init__(self, error=None):
-        """BatchCopyErrorRsp
+        r"""BatchCopyErrorRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCopyErrorRsp:
 
     @property
     def error(self):
-        """Gets the error of this BatchCopyErrorRsp.
+        r"""Gets the error of this BatchCopyErrorRsp.
 
         :return: The error of this BatchCopyErrorRsp.
         :rtype: :class:`huaweicloudsdkcdn.v2.BatchCopyErrorRspError`
@@ -52,7 +52,7 @@ class BatchCopyErrorRsp:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this BatchCopyErrorRsp.
+        r"""Sets the error of this BatchCopyErrorRsp.
 
         :param error: The error of this BatchCopyErrorRsp.
         :type error: :class:`huaweicloudsdkcdn.v2.BatchCopyErrorRspError`

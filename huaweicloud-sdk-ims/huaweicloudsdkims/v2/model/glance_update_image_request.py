@@ -27,7 +27,7 @@ class GlanceUpdateImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """GlanceUpdateImageRequest
+        r"""GlanceUpdateImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GlanceUpdateImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceUpdateImageRequest.
+        r"""Gets the image_id of this GlanceUpdateImageRequest.
 
         镜像ID
 
@@ -60,7 +60,7 @@ class GlanceUpdateImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceUpdateImageRequest.
+        r"""Sets the image_id of this GlanceUpdateImageRequest.
 
         镜像ID
 
@@ -71,7 +71,7 @@ class GlanceUpdateImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this GlanceUpdateImageRequest.
+        r"""Gets the body of this GlanceUpdateImageRequest.
 
         :return: The body of this GlanceUpdateImageRequest.
         :rtype: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]
@@ -80,7 +80,7 @@ class GlanceUpdateImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GlanceUpdateImageRequest.
+        r"""Sets the body of this GlanceUpdateImageRequest.
 
         :param body: The body of this GlanceUpdateImageRequest.
         :type body: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]

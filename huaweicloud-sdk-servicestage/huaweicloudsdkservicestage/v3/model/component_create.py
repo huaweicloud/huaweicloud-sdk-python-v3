@@ -87,7 +87,7 @@ class ComponentCreate:
     }
 
     def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, swimlane_id=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, mesher=None, timezone=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, external_accesses=None):
-        """ComponentCreate
+        r"""ComponentCreate
 
         The model defined in huaweicloud sdk
 
@@ -254,7 +254,7 @@ class ComponentCreate:
 
     @property
     def name(self):
-        """Gets the name of this ComponentCreate.
+        r"""Gets the name of this ComponentCreate.
 
         :return: The name of this ComponentCreate.
         :rtype: str
@@ -263,7 +263,7 @@ class ComponentCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentCreate.
+        r"""Sets the name of this ComponentCreate.
 
         :param name: The name of this ComponentCreate.
         :type name: str
@@ -272,7 +272,7 @@ class ComponentCreate:
 
     @property
     def description(self):
-        """Gets the description of this ComponentCreate.
+        r"""Gets the description of this ComponentCreate.
 
         :return: The description of this ComponentCreate.
         :rtype: str
@@ -281,7 +281,7 @@ class ComponentCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentCreate.
+        r"""Sets the description of this ComponentCreate.
 
         :param description: The description of this ComponentCreate.
         :type description: str
@@ -290,7 +290,7 @@ class ComponentCreate:
 
     @property
     def labels(self):
-        """Gets the labels of this ComponentCreate.
+        r"""Gets the labels of this ComponentCreate.
 
         :return: The labels of this ComponentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -299,7 +299,7 @@ class ComponentCreate:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ComponentCreate.
+        r"""Sets the labels of this ComponentCreate.
 
         :param labels: The labels of this ComponentCreate.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -308,7 +308,7 @@ class ComponentCreate:
 
     @property
     def runtime_stack(self):
-        """Gets the runtime_stack of this ComponentCreate.
+        r"""Gets the runtime_stack of this ComponentCreate.
 
         :return: The runtime_stack of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -317,7 +317,7 @@ class ComponentCreate:
 
     @runtime_stack.setter
     def runtime_stack(self, runtime_stack):
-        """Sets the runtime_stack of this ComponentCreate.
+        r"""Sets the runtime_stack of this ComponentCreate.
 
         :param runtime_stack: The runtime_stack of this ComponentCreate.
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -326,7 +326,7 @@ class ComponentCreate:
 
     @property
     def source(self):
-        """Gets the source of this ComponentCreate.
+        r"""Gets the source of this ComponentCreate.
 
         :return: The source of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -335,7 +335,7 @@ class ComponentCreate:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentCreate.
+        r"""Sets the source of this ComponentCreate.
 
         :param source: The source of this ComponentCreate.
         :type source: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -344,7 +344,7 @@ class ComponentCreate:
 
     @property
     def build(self):
-        """Gets the build of this ComponentCreate.
+        r"""Gets the build of this ComponentCreate.
 
         :return: The build of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.Build`
@@ -353,7 +353,7 @@ class ComponentCreate:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentCreate.
+        r"""Sets the build of this ComponentCreate.
 
         :param build: The build of this ComponentCreate.
         :type build: :class:`huaweicloudsdkservicestage.v3.Build`
@@ -362,7 +362,7 @@ class ComponentCreate:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ComponentCreate.
+        r"""Gets the environment_id of this ComponentCreate.
 
         :return: The environment_id of this ComponentCreate.
         :rtype: str
@@ -371,7 +371,7 @@ class ComponentCreate:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ComponentCreate.
+        r"""Sets the environment_id of this ComponentCreate.
 
         :param environment_id: The environment_id of this ComponentCreate.
         :type environment_id: str
@@ -380,7 +380,7 @@ class ComponentCreate:
 
     @property
     def limit_cpu(self):
-        """Gets the limit_cpu of this ComponentCreate.
+        r"""Gets the limit_cpu of this ComponentCreate.
 
         单位为Core
 
@@ -391,7 +391,7 @@ class ComponentCreate:
 
     @limit_cpu.setter
     def limit_cpu(self, limit_cpu):
-        """Sets the limit_cpu of this ComponentCreate.
+        r"""Sets the limit_cpu of this ComponentCreate.
 
         单位为Core
 
@@ -402,7 +402,7 @@ class ComponentCreate:
 
     @property
     def limit_memory(self):
-        """Gets the limit_memory of this ComponentCreate.
+        r"""Gets the limit_memory of this ComponentCreate.
 
         单位为GiB
 
@@ -413,7 +413,7 @@ class ComponentCreate:
 
     @limit_memory.setter
     def limit_memory(self, limit_memory):
-        """Sets the limit_memory of this ComponentCreate.
+        r"""Sets the limit_memory of this ComponentCreate.
 
         单位为GiB
 
@@ -424,7 +424,7 @@ class ComponentCreate:
 
     @property
     def request_cpu(self):
-        """Gets the request_cpu of this ComponentCreate.
+        r"""Gets the request_cpu of this ComponentCreate.
 
         单位为Core
 
@@ -435,7 +435,7 @@ class ComponentCreate:
 
     @request_cpu.setter
     def request_cpu(self, request_cpu):
-        """Sets the request_cpu of this ComponentCreate.
+        r"""Sets the request_cpu of this ComponentCreate.
 
         单位为Core
 
@@ -446,7 +446,7 @@ class ComponentCreate:
 
     @property
     def request_memory(self):
-        """Gets the request_memory of this ComponentCreate.
+        r"""Gets the request_memory of this ComponentCreate.
 
         单位为GiB
 
@@ -457,7 +457,7 @@ class ComponentCreate:
 
     @request_memory.setter
     def request_memory(self, request_memory):
-        """Sets the request_memory of this ComponentCreate.
+        r"""Sets the request_memory of this ComponentCreate.
 
         单位为GiB
 
@@ -468,7 +468,7 @@ class ComponentCreate:
 
     @property
     def replica(self):
-        """Gets the replica of this ComponentCreate.
+        r"""Gets the replica of this ComponentCreate.
 
         :return: The replica of this ComponentCreate.
         :rtype: int
@@ -477,7 +477,7 @@ class ComponentCreate:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ComponentCreate.
+        r"""Sets the replica of this ComponentCreate.
 
         :param replica: The replica of this ComponentCreate.
         :type replica: int
@@ -486,7 +486,7 @@ class ComponentCreate:
 
     @property
     def version(self):
-        """Gets the version of this ComponentCreate.
+        r"""Gets the version of this ComponentCreate.
 
         :return: The version of this ComponentCreate.
         :rtype: str
@@ -495,7 +495,7 @@ class ComponentCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentCreate.
+        r"""Sets the version of this ComponentCreate.
 
         :param version: The version of this ComponentCreate.
         :type version: str
@@ -504,7 +504,7 @@ class ComponentCreate:
 
     @property
     def swimlane_id(self):
-        """Gets the swimlane_id of this ComponentCreate.
+        r"""Gets the swimlane_id of this ComponentCreate.
 
         泳道id
 
@@ -515,7 +515,7 @@ class ComponentCreate:
 
     @swimlane_id.setter
     def swimlane_id(self, swimlane_id):
-        """Sets the swimlane_id of this ComponentCreate.
+        r"""Sets the swimlane_id of this ComponentCreate.
 
         泳道id
 
@@ -526,7 +526,7 @@ class ComponentCreate:
 
     @property
     def envs(self):
-        """Gets the envs of this ComponentCreate.
+        r"""Gets the envs of this ComponentCreate.
 
         :return: The envs of this ComponentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
@@ -535,7 +535,7 @@ class ComponentCreate:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ComponentCreate.
+        r"""Sets the envs of this ComponentCreate.
 
         :param envs: The envs of this ComponentCreate.
         :type envs: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
@@ -544,7 +544,7 @@ class ComponentCreate:
 
     @property
     def storages(self):
-        """Gets the storages of this ComponentCreate.
+        r"""Gets the storages of this ComponentCreate.
 
         :return: The storages of this ComponentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentStorage`]
@@ -553,7 +553,7 @@ class ComponentCreate:
 
     @storages.setter
     def storages(self, storages):
-        """Sets the storages of this ComponentCreate.
+        r"""Sets the storages of this ComponentCreate.
 
         :param storages: The storages of this ComponentCreate.
         :type storages: list[:class:`huaweicloudsdkservicestage.v3.ComponentStorage`]
@@ -562,7 +562,7 @@ class ComponentCreate:
 
     @property
     def deploy_strategy(self):
-        """Gets the deploy_strategy of this ComponentCreate.
+        r"""Gets the deploy_strategy of this ComponentCreate.
 
         :return: The deploy_strategy of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
@@ -571,7 +571,7 @@ class ComponentCreate:
 
     @deploy_strategy.setter
     def deploy_strategy(self, deploy_strategy):
-        """Sets the deploy_strategy of this ComponentCreate.
+        r"""Sets the deploy_strategy of this ComponentCreate.
 
         :param deploy_strategy: The deploy_strategy of this ComponentCreate.
         :type deploy_strategy: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
@@ -580,7 +580,7 @@ class ComponentCreate:
 
     @property
     def command(self):
-        """Gets the command of this ComponentCreate.
+        r"""Gets the command of this ComponentCreate.
 
         :return: The command of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCommand`
@@ -589,7 +589,7 @@ class ComponentCreate:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ComponentCreate.
+        r"""Sets the command of this ComponentCreate.
 
         :param command: The command of this ComponentCreate.
         :type command: :class:`huaweicloudsdkservicestage.v3.ComponentCommand`
@@ -598,7 +598,7 @@ class ComponentCreate:
 
     @property
     def post_start(self):
-        """Gets the post_start of this ComponentCreate.
+        r"""Gets the post_start of this ComponentCreate.
 
         :return: The post_start of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -607,7 +607,7 @@ class ComponentCreate:
 
     @post_start.setter
     def post_start(self, post_start):
-        """Sets the post_start of this ComponentCreate.
+        r"""Sets the post_start of this ComponentCreate.
 
         :param post_start: The post_start of this ComponentCreate.
         :type post_start: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -616,7 +616,7 @@ class ComponentCreate:
 
     @property
     def pre_stop(self):
-        """Gets the pre_stop of this ComponentCreate.
+        r"""Gets the pre_stop of this ComponentCreate.
 
         :return: The pre_stop of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -625,7 +625,7 @@ class ComponentCreate:
 
     @pre_stop.setter
     def pre_stop(self, pre_stop):
-        """Sets the pre_stop of this ComponentCreate.
+        r"""Sets the pre_stop of this ComponentCreate.
 
         :param pre_stop: The pre_stop of this ComponentCreate.
         :type pre_stop: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -634,7 +634,7 @@ class ComponentCreate:
 
     @property
     def mesher(self):
-        """Gets the mesher of this ComponentCreate.
+        r"""Gets the mesher of this ComponentCreate.
 
         :return: The mesher of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.Mesher`
@@ -643,7 +643,7 @@ class ComponentCreate:
 
     @mesher.setter
     def mesher(self, mesher):
-        """Sets the mesher of this ComponentCreate.
+        r"""Sets the mesher of this ComponentCreate.
 
         :param mesher: The mesher of this ComponentCreate.
         :type mesher: :class:`huaweicloudsdkservicestage.v3.Mesher`
@@ -652,7 +652,7 @@ class ComponentCreate:
 
     @property
     def timezone(self):
-        """Gets the timezone of this ComponentCreate.
+        r"""Gets the timezone of this ComponentCreate.
 
         指定组件运行的时区，比如Asia/Shanghai
 
@@ -663,7 +663,7 @@ class ComponentCreate:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this ComponentCreate.
+        r"""Sets the timezone of this ComponentCreate.
 
         指定组件运行的时区，比如Asia/Shanghai
 
@@ -674,7 +674,7 @@ class ComponentCreate:
 
     @property
     def jvm_opts(self):
-        """Gets the jvm_opts of this ComponentCreate.
+        r"""Gets the jvm_opts of this ComponentCreate.
 
         jvm参数
 
@@ -685,7 +685,7 @@ class ComponentCreate:
 
     @jvm_opts.setter
     def jvm_opts(self, jvm_opts):
-        """Sets the jvm_opts of this ComponentCreate.
+        r"""Sets the jvm_opts of this ComponentCreate.
 
         jvm参数
 
@@ -696,7 +696,7 @@ class ComponentCreate:
 
     @property
     def tomcat_opts(self):
-        """Gets the tomcat_opts of this ComponentCreate.
+        r"""Gets the tomcat_opts of this ComponentCreate.
 
         :return: The tomcat_opts of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
@@ -705,7 +705,7 @@ class ComponentCreate:
 
     @tomcat_opts.setter
     def tomcat_opts(self, tomcat_opts):
-        """Sets the tomcat_opts of this ComponentCreate.
+        r"""Sets the tomcat_opts of this ComponentCreate.
 
         :param tomcat_opts: The tomcat_opts of this ComponentCreate.
         :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
@@ -714,7 +714,7 @@ class ComponentCreate:
 
     @property
     def logs(self):
-        """Gets the logs of this ComponentCreate.
+        r"""Gets the logs of this ComponentCreate.
 
         :return: The logs of this ComponentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
@@ -723,7 +723,7 @@ class ComponentCreate:
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ComponentCreate.
+        r"""Sets the logs of this ComponentCreate.
 
         :param logs: The logs of this ComponentCreate.
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
@@ -732,7 +732,7 @@ class ComponentCreate:
 
     @property
     def custom_metric(self):
-        """Gets the custom_metric of this ComponentCreate.
+        r"""Gets the custom_metric of this ComponentCreate.
 
         :return: The custom_metric of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
@@ -741,7 +741,7 @@ class ComponentCreate:
 
     @custom_metric.setter
     def custom_metric(self, custom_metric):
-        """Sets the custom_metric of this ComponentCreate.
+        r"""Sets the custom_metric of this ComponentCreate.
 
         :param custom_metric: The custom_metric of this ComponentCreate.
         :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
@@ -750,7 +750,7 @@ class ComponentCreate:
 
     @property
     def affinity(self):
-        """Gets the affinity of this ComponentCreate.
+        r"""Gets the affinity of this ComponentCreate.
 
         :return: The affinity of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -759,7 +759,7 @@ class ComponentCreate:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this ComponentCreate.
+        r"""Sets the affinity of this ComponentCreate.
 
         :param affinity: The affinity of this ComponentCreate.
         :type affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -768,7 +768,7 @@ class ComponentCreate:
 
     @property
     def anti_affinity(self):
-        """Gets the anti_affinity of this ComponentCreate.
+        r"""Gets the anti_affinity of this ComponentCreate.
 
         :return: The anti_affinity of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -777,7 +777,7 @@ class ComponentCreate:
 
     @anti_affinity.setter
     def anti_affinity(self, anti_affinity):
-        """Sets the anti_affinity of this ComponentCreate.
+        r"""Sets the anti_affinity of this ComponentCreate.
 
         :param anti_affinity: The anti_affinity of this ComponentCreate.
         :type anti_affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -786,7 +786,7 @@ class ComponentCreate:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ComponentCreate.
+        r"""Gets the liveness_probe of this ComponentCreate.
 
         :return: The liveness_probe of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -795,7 +795,7 @@ class ComponentCreate:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ComponentCreate.
+        r"""Sets the liveness_probe of this ComponentCreate.
 
         :param liveness_probe: The liveness_probe of this ComponentCreate.
         :type liveness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -804,7 +804,7 @@ class ComponentCreate:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ComponentCreate.
+        r"""Gets the readiness_probe of this ComponentCreate.
 
         :return: The readiness_probe of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -813,7 +813,7 @@ class ComponentCreate:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ComponentCreate.
+        r"""Sets the readiness_probe of this ComponentCreate.
 
         :param readiness_probe: The readiness_probe of this ComponentCreate.
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -822,7 +822,7 @@ class ComponentCreate:
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this ComponentCreate.
+        r"""Gets the refer_resources of this ComponentCreate.
 
         :return: The refer_resources of this ComponentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
@@ -831,7 +831,7 @@ class ComponentCreate:
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this ComponentCreate.
+        r"""Sets the refer_resources of this ComponentCreate.
 
         :param refer_resources: The refer_resources of this ComponentCreate.
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
@@ -840,7 +840,7 @@ class ComponentCreate:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this ComponentCreate.
+        r"""Gets the external_accesses of this ComponentCreate.
 
         :return: The external_accesses of this ComponentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
@@ -849,7 +849,7 @@ class ComponentCreate:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this ComponentCreate.
+        r"""Sets the external_accesses of this ComponentCreate.
 
         :param external_accesses: The external_accesses of this ComponentCreate.
         :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]

@@ -26,7 +26,7 @@ class UpdateClusterScalingResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateClusterScalingResponse
+        r"""UpdateClusterScalingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateClusterScalingResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateClusterScalingResponse.
+        r"""Gets the result of this UpdateClusterScalingResponse.
 
         操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
 
@@ -55,7 +55,7 @@ class UpdateClusterScalingResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateClusterScalingResponse.
+        r"""Sets the result of this UpdateClusterScalingResponse.
 
         操作结果。 - succeeded：操作成功 - 操作失败时返回的错误码信息如[错误码](https://support.huaweicloud.com/api-mrs/ErrorCode.html)所示。
 

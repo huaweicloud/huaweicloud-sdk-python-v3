@@ -32,7 +32,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
     }
 
     def __init__(self, command_id=None, command=None, result=None, x_request_id=None):
-        """ExecuteSmartLiveCommandResponse
+        r"""ExecuteSmartLiveCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @property
     def command_id(self):
-        """Gets the command_id of this ExecuteSmartLiveCommandResponse.
+        r"""Gets the command_id of this ExecuteSmartLiveCommandResponse.
 
         控制命令ID
 
@@ -76,7 +76,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ExecuteSmartLiveCommandResponse.
+        r"""Sets the command_id of this ExecuteSmartLiveCommandResponse.
 
         控制命令ID
 
@@ -87,7 +87,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @property
     def command(self):
-        """Gets the command of this ExecuteSmartLiveCommandResponse.
+        r"""Gets the command of this ExecuteSmartLiveCommandResponse.
 
         命令名称。 - INSERT_PLAY_SCRIPT：插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript。 - REWRITE_PLAY_SCRIPT：动态编辑未播放剧本。params结构定义：scene_scripts。 - INSERT_PLAY_AUDIO：插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo。 - GET_CURRENT_PLAYING_SCRIPTS：查询本轮剧本列表。响应为LivePlayingScriptList结构。 - REFRESH_OUTPUT_URL：更新当前任务的rtmp推流信息。params结构定义： RefreshOutputUrlConfig。 - REWRITE_INTERACTION_RULES：动态修改互动规则。params结构定义：interaction_rules。 - GET_LIVE_JOB_CONFIG_INFO：获取任务中的房间信息。params结构定义：SmartLiveRoomInfo。 - CLEAN_UP_INSERT_COMMAND：清理未播放的插入命令。params结构定义：[CleanUpInsertCommand](metastudio_02_0014.xml) - RESET_EXIT_CONFIG: 重置退出参数。params结构定义：LiveExitConfig
 
@@ -98,7 +98,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ExecuteSmartLiveCommandResponse.
+        r"""Sets the command of this ExecuteSmartLiveCommandResponse.
 
         命令名称。 - INSERT_PLAY_SCRIPT：插入表演脚本。用于互动回复。数字人不变，背景不变。params结构定义：ShootScript。 - REWRITE_PLAY_SCRIPT：动态编辑未播放剧本。params结构定义：scene_scripts。 - INSERT_PLAY_AUDIO：插入驱动音频。用于音频直接驱动。数字人不变，背景不变。params结构定义：PlayAudioInfo。 - GET_CURRENT_PLAYING_SCRIPTS：查询本轮剧本列表。响应为LivePlayingScriptList结构。 - REFRESH_OUTPUT_URL：更新当前任务的rtmp推流信息。params结构定义： RefreshOutputUrlConfig。 - REWRITE_INTERACTION_RULES：动态修改互动规则。params结构定义：interaction_rules。 - GET_LIVE_JOB_CONFIG_INFO：获取任务中的房间信息。params结构定义：SmartLiveRoomInfo。 - CLEAN_UP_INSERT_COMMAND：清理未播放的插入命令。params结构定义：[CleanUpInsertCommand](metastudio_02_0014.xml) - RESET_EXIT_CONFIG: 重置退出参数。params结构定义：LiveExitConfig
 
@@ -109,7 +109,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ExecuteSmartLiveCommandResponse.
+        r"""Gets the result of this ExecuteSmartLiveCommandResponse.
 
         命令执行结果
 
@@ -120,7 +120,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ExecuteSmartLiveCommandResponse.
+        r"""Sets the result of this ExecuteSmartLiveCommandResponse.
 
         命令执行结果
 
@@ -131,7 +131,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ExecuteSmartLiveCommandResponse.
+        r"""Gets the x_request_id of this ExecuteSmartLiveCommandResponse.
 
         :return: The x_request_id of this ExecuteSmartLiveCommandResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ExecuteSmartLiveCommandResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ExecuteSmartLiveCommandResponse.
+        r"""Sets the x_request_id of this ExecuteSmartLiveCommandResponse.
 
         :param x_request_id: The x_request_id of this ExecuteSmartLiveCommandResponse.
         :type x_request_id: str

@@ -26,7 +26,7 @@ class BatchChangeServerImageResponse(SdkResponse):
     }
 
     def __init__(self, items=None):
-        """BatchChangeServerImageResponse
+        r"""BatchChangeServerImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchChangeServerImageResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this BatchChangeServerImageResponse.
+        r"""Gets the items of this BatchChangeServerImageResponse.
 
         服务器任务信息。
 
@@ -55,7 +55,7 @@ class BatchChangeServerImageResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchChangeServerImageResponse.
+        r"""Sets the items of this BatchChangeServerImageResponse.
 
         服务器任务信息。
 

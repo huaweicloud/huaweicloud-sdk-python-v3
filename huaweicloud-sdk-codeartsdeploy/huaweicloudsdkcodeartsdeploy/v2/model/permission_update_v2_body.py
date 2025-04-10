@@ -31,7 +31,7 @@ class PermissionUpdateV2Body:
     }
 
     def __init__(self, project_id=None, role_id=None, permission_name=None, permission_value=None):
-        """PermissionUpdateV2Body
+        r"""PermissionUpdateV2Body
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class PermissionUpdateV2Body:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PermissionUpdateV2Body.
+        r"""Gets the project_id of this PermissionUpdateV2Body.
 
         项目id
 
@@ -71,7 +71,7 @@ class PermissionUpdateV2Body:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PermissionUpdateV2Body.
+        r"""Sets the project_id of this PermissionUpdateV2Body.
 
         项目id
 
@@ -82,7 +82,7 @@ class PermissionUpdateV2Body:
 
     @property
     def role_id(self):
-        """Gets the role_id of this PermissionUpdateV2Body.
+        r"""Gets the role_id of this PermissionUpdateV2Body.
 
         角色id
 
@@ -93,7 +93,7 @@ class PermissionUpdateV2Body:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this PermissionUpdateV2Body.
+        r"""Sets the role_id of this PermissionUpdateV2Body.
 
         角色id
 
@@ -104,7 +104,7 @@ class PermissionUpdateV2Body:
 
     @property
     def permission_name(self):
-        """Gets the permission_name of this PermissionUpdateV2Body.
+        r"""Gets the permission_name of this PermissionUpdateV2Body.
 
         权限名称，can_view：查看权限；can_edit：编辑权限；can_delete：删除权限；can_add_host：添加主机权限；can_manage：权限管理权限；can_copy：复制主机权限
 
@@ -115,7 +115,7 @@ class PermissionUpdateV2Body:
 
     @permission_name.setter
     def permission_name(self, permission_name):
-        """Sets the permission_name of this PermissionUpdateV2Body.
+        r"""Sets the permission_name of this PermissionUpdateV2Body.
 
         权限名称，can_view：查看权限；can_edit：编辑权限；can_delete：删除权限；can_add_host：添加主机权限；can_manage：权限管理权限；can_copy：复制主机权限
 
@@ -126,7 +126,7 @@ class PermissionUpdateV2Body:
 
     @property
     def permission_value(self):
-        """Gets the permission_value of this PermissionUpdateV2Body.
+        r"""Gets the permission_value of this PermissionUpdateV2Body.
 
         true 有权限，false 无权限
 
@@ -137,7 +137,7 @@ class PermissionUpdateV2Body:
 
     @permission_value.setter
     def permission_value(self, permission_value):
-        """Sets the permission_value of this PermissionUpdateV2Body.
+        r"""Sets the permission_value of this PermissionUpdateV2Body.
 
         true 有权限，false 无权限
 

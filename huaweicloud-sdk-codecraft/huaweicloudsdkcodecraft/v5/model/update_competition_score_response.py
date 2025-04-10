@@ -24,7 +24,7 @@ class UpdateCompetitionScoreResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateCompetitionScoreResponse
+        r"""UpdateCompetitionScoreResponse
 
         The model defined in huaweicloud sdk
 

@@ -39,7 +39,7 @@ class ResourceShareInvitation:
     }
 
     def __init__(self, receiver_account_id=None, resource_share_id=None, resource_share_name=None, resource_share_invitation_id=None, sender_account_id=None, status=None, created_at=None, updated_at=None):
-        """ResourceShareInvitation
+        r"""ResourceShareInvitation
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ResourceShareInvitation:
 
     @property
     def receiver_account_id(self):
-        """Gets the receiver_account_id of this ResourceShareInvitation.
+        r"""Gets the receiver_account_id of this ResourceShareInvitation.
 
         接收资源共享邀请的账号ID。
 
@@ -103,7 +103,7 @@ class ResourceShareInvitation:
 
     @receiver_account_id.setter
     def receiver_account_id(self, receiver_account_id):
-        """Sets the receiver_account_id of this ResourceShareInvitation.
+        r"""Sets the receiver_account_id of this ResourceShareInvitation.
 
         接收资源共享邀请的账号ID。
 
@@ -114,7 +114,7 @@ class ResourceShareInvitation:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this ResourceShareInvitation.
+        r"""Gets the resource_share_id of this ResourceShareInvitation.
 
         资源共享实例的ID。
 
@@ -125,7 +125,7 @@ class ResourceShareInvitation:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this ResourceShareInvitation.
+        r"""Sets the resource_share_id of this ResourceShareInvitation.
 
         资源共享实例的ID。
 
@@ -136,7 +136,7 @@ class ResourceShareInvitation:
 
     @property
     def resource_share_name(self):
-        """Gets the resource_share_name of this ResourceShareInvitation.
+        r"""Gets the resource_share_name of this ResourceShareInvitation.
 
         资源共享实例的名称。
 
@@ -147,7 +147,7 @@ class ResourceShareInvitation:
 
     @resource_share_name.setter
     def resource_share_name(self, resource_share_name):
-        """Sets the resource_share_name of this ResourceShareInvitation.
+        r"""Sets the resource_share_name of this ResourceShareInvitation.
 
         资源共享实例的名称。
 
@@ -158,7 +158,7 @@ class ResourceShareInvitation:
 
     @property
     def resource_share_invitation_id(self):
-        """Gets the resource_share_invitation_id of this ResourceShareInvitation.
+        r"""Gets the resource_share_invitation_id of this ResourceShareInvitation.
 
         资源共享邀请的ID。
 
@@ -169,7 +169,7 @@ class ResourceShareInvitation:
 
     @resource_share_invitation_id.setter
     def resource_share_invitation_id(self, resource_share_invitation_id):
-        """Sets the resource_share_invitation_id of this ResourceShareInvitation.
+        r"""Sets the resource_share_invitation_id of this ResourceShareInvitation.
 
         资源共享邀请的ID。
 
@@ -180,7 +180,7 @@ class ResourceShareInvitation:
 
     @property
     def sender_account_id(self):
-        """Gets the sender_account_id of this ResourceShareInvitation.
+        r"""Gets the sender_account_id of this ResourceShareInvitation.
 
         发送资源共享邀请的账号ID。
 
@@ -191,7 +191,7 @@ class ResourceShareInvitation:
 
     @sender_account_id.setter
     def sender_account_id(self, sender_account_id):
-        """Sets the sender_account_id of this ResourceShareInvitation.
+        r"""Sets the sender_account_id of this ResourceShareInvitation.
 
         发送资源共享邀请的账号ID。
 
@@ -202,7 +202,7 @@ class ResourceShareInvitation:
 
     @property
     def status(self):
-        """Gets the status of this ResourceShareInvitation.
+        r"""Gets the status of this ResourceShareInvitation.
 
         资源共享邀请的当前状态。
 
@@ -213,7 +213,7 @@ class ResourceShareInvitation:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResourceShareInvitation.
+        r"""Sets the status of this ResourceShareInvitation.
 
         资源共享邀请的当前状态。
 
@@ -224,7 +224,7 @@ class ResourceShareInvitation:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ResourceShareInvitation.
+        r"""Gets the created_at of this ResourceShareInvitation.
 
         创建邀请的时间。
 
@@ -235,7 +235,7 @@ class ResourceShareInvitation:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ResourceShareInvitation.
+        r"""Sets the created_at of this ResourceShareInvitation.
 
         创建邀请的时间。
 
@@ -246,7 +246,7 @@ class ResourceShareInvitation:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ResourceShareInvitation.
+        r"""Gets the updated_at of this ResourceShareInvitation.
 
         最后一次更新邀请的时间。
 
@@ -257,7 +257,7 @@ class ResourceShareInvitation:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ResourceShareInvitation.
+        r"""Sets the updated_at of this ResourceShareInvitation.
 
         最后一次更新邀请的时间。
 

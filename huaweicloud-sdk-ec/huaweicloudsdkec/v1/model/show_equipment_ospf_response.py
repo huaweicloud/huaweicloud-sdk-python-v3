@@ -44,7 +44,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
     }
 
     def __init__(self, ospf_enabled=None, area_id=None, post_to_cloud=None, hello_timer=None, router_id=None, interfaces=None, filter_enabled=None, trust_list=None, block_list=None, cloud_subnet_list=None):
-        """ShowEquipmentOspfResponse
+        r"""ShowEquipmentOspfResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def ospf_enabled(self):
-        """Gets the ospf_enabled of this ShowEquipmentOspfResponse.
+        r"""Gets the ospf_enabled of this ShowEquipmentOspfResponse.
 
         是否启用OSPF
 
@@ -118,7 +118,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @ospf_enabled.setter
     def ospf_enabled(self, ospf_enabled):
-        """Sets the ospf_enabled of this ShowEquipmentOspfResponse.
+        r"""Sets the ospf_enabled of this ShowEquipmentOspfResponse.
 
         是否启用OSPF
 
@@ -129,7 +129,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def area_id(self):
-        """Gets the area_id of this ShowEquipmentOspfResponse.
+        r"""Gets the area_id of this ShowEquipmentOspfResponse.
 
         区域标识
 
@@ -140,7 +140,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @area_id.setter
     def area_id(self, area_id):
-        """Sets the area_id of this ShowEquipmentOspfResponse.
+        r"""Sets the area_id of this ShowEquipmentOspfResponse.
 
         区域标识
 
@@ -151,7 +151,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def post_to_cloud(self):
-        """Gets the post_to_cloud of this ShowEquipmentOspfResponse.
+        r"""Gets the post_to_cloud of this ShowEquipmentOspfResponse.
 
         发布到企业连接网络
 
@@ -162,7 +162,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @post_to_cloud.setter
     def post_to_cloud(self, post_to_cloud):
-        """Sets the post_to_cloud of this ShowEquipmentOspfResponse.
+        r"""Sets the post_to_cloud of this ShowEquipmentOspfResponse.
 
         发布到企业连接网络
 
@@ -173,7 +173,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def hello_timer(self):
-        """Gets the hello_timer of this ShowEquipmentOspfResponse.
+        r"""Gets the hello_timer of this ShowEquipmentOspfResponse.
 
         发送Hello报文的时间间隔，单位是秒
 
@@ -184,7 +184,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @hello_timer.setter
     def hello_timer(self, hello_timer):
-        """Sets the hello_timer of this ShowEquipmentOspfResponse.
+        r"""Sets the hello_timer of this ShowEquipmentOspfResponse.
 
         发送Hello报文的时间间隔，单位是秒
 
@@ -195,7 +195,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def router_id(self):
-        """Gets the router_id of this ShowEquipmentOspfResponse.
+        r"""Gets the router_id of this ShowEquipmentOspfResponse.
 
         点分十进制格式，OSPF协议使用全网唯一的Router ID
 
@@ -206,7 +206,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this ShowEquipmentOspfResponse.
+        r"""Sets the router_id of this ShowEquipmentOspfResponse.
 
         点分十进制格式，OSPF协议使用全网唯一的Router ID
 
@@ -217,7 +217,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def interfaces(self):
-        """Gets the interfaces of this ShowEquipmentOspfResponse.
+        r"""Gets the interfaces of this ShowEquipmentOspfResponse.
 
         启用OSPF协议的接口列表
 
@@ -228,7 +228,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @interfaces.setter
     def interfaces(self, interfaces):
-        """Sets the interfaces of this ShowEquipmentOspfResponse.
+        r"""Sets the interfaces of this ShowEquipmentOspfResponse.
 
         启用OSPF协议的接口列表
 
@@ -239,7 +239,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def filter_enabled(self):
-        """Gets the filter_enabled of this ShowEquipmentOspfResponse.
+        r"""Gets the filter_enabled of this ShowEquipmentOspfResponse.
 
         是否启用前缀过滤
 
@@ -250,7 +250,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @filter_enabled.setter
     def filter_enabled(self, filter_enabled):
-        """Sets the filter_enabled of this ShowEquipmentOspfResponse.
+        r"""Sets the filter_enabled of this ShowEquipmentOspfResponse.
 
         是否启用前缀过滤
 
@@ -261,7 +261,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def trust_list(self):
-        """Gets the trust_list of this ShowEquipmentOspfResponse.
+        r"""Gets the trust_list of this ShowEquipmentOspfResponse.
 
         白名单列表
 
@@ -272,7 +272,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @trust_list.setter
     def trust_list(self, trust_list):
-        """Sets the trust_list of this ShowEquipmentOspfResponse.
+        r"""Sets the trust_list of this ShowEquipmentOspfResponse.
 
         白名单列表
 
@@ -283,7 +283,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def block_list(self):
-        """Gets the block_list of this ShowEquipmentOspfResponse.
+        r"""Gets the block_list of this ShowEquipmentOspfResponse.
 
         黑名单列表
 
@@ -294,7 +294,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @block_list.setter
     def block_list(self, block_list):
-        """Sets the block_list of this ShowEquipmentOspfResponse.
+        r"""Sets the block_list of this ShowEquipmentOspfResponse.
 
         黑名单列表
 
@@ -305,7 +305,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @property
     def cloud_subnet_list(self):
-        """Gets the cloud_subnet_list of this ShowEquipmentOspfResponse.
+        r"""Gets the cloud_subnet_list of this ShowEquipmentOspfResponse.
 
         上云子网列表
 
@@ -316,7 +316,7 @@ class ShowEquipmentOspfResponse(SdkResponse):
 
     @cloud_subnet_list.setter
     def cloud_subnet_list(self, cloud_subnet_list):
-        """Sets the cloud_subnet_list of this ShowEquipmentOspfResponse.
+        r"""Sets the cloud_subnet_list of this ShowEquipmentOspfResponse.
 
         上云子网列表
 

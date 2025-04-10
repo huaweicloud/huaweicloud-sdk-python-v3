@@ -37,7 +37,7 @@ class TicsAgentDeployBcs:
     }
 
     def __init__(self, agent_id=None, bcs_ip=None, block_chain_id=None, block_chain_name=None, channel_name=None, org_name=None, org_name_hash=None):
-        """TicsAgentDeployBcs
+        r"""TicsAgentDeployBcs
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TicsAgentDeployBcs:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this TicsAgentDeployBcs.
+        r"""Gets the agent_id of this TicsAgentDeployBcs.
 
         可信节点Id
 
@@ -96,7 +96,7 @@ class TicsAgentDeployBcs:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this TicsAgentDeployBcs.
+        r"""Sets the agent_id of this TicsAgentDeployBcs.
 
         可信节点Id
 
@@ -107,7 +107,7 @@ class TicsAgentDeployBcs:
 
     @property
     def bcs_ip(self):
-        """Gets the bcs_ip of this TicsAgentDeployBcs.
+        r"""Gets the bcs_ip of this TicsAgentDeployBcs.
 
         区块链ip
 
@@ -118,7 +118,7 @@ class TicsAgentDeployBcs:
 
     @bcs_ip.setter
     def bcs_ip(self, bcs_ip):
-        """Sets the bcs_ip of this TicsAgentDeployBcs.
+        r"""Sets the bcs_ip of this TicsAgentDeployBcs.
 
         区块链ip
 
@@ -129,7 +129,7 @@ class TicsAgentDeployBcs:
 
     @property
     def block_chain_id(self):
-        """Gets the block_chain_id of this TicsAgentDeployBcs.
+        r"""Gets the block_chain_id of this TicsAgentDeployBcs.
 
         区块链Id
 
@@ -140,7 +140,7 @@ class TicsAgentDeployBcs:
 
     @block_chain_id.setter
     def block_chain_id(self, block_chain_id):
-        """Sets the block_chain_id of this TicsAgentDeployBcs.
+        r"""Sets the block_chain_id of this TicsAgentDeployBcs.
 
         区块链Id
 
@@ -151,7 +151,7 @@ class TicsAgentDeployBcs:
 
     @property
     def block_chain_name(self):
-        """Gets the block_chain_name of this TicsAgentDeployBcs.
+        r"""Gets the block_chain_name of this TicsAgentDeployBcs.
 
         区块链名称
 
@@ -162,7 +162,7 @@ class TicsAgentDeployBcs:
 
     @block_chain_name.setter
     def block_chain_name(self, block_chain_name):
-        """Sets the block_chain_name of this TicsAgentDeployBcs.
+        r"""Sets the block_chain_name of this TicsAgentDeployBcs.
 
         区块链名称
 
@@ -173,7 +173,7 @@ class TicsAgentDeployBcs:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this TicsAgentDeployBcs.
+        r"""Gets the channel_name of this TicsAgentDeployBcs.
 
         通道名称
 
@@ -184,7 +184,7 @@ class TicsAgentDeployBcs:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this TicsAgentDeployBcs.
+        r"""Sets the channel_name of this TicsAgentDeployBcs.
 
         通道名称
 
@@ -195,7 +195,7 @@ class TicsAgentDeployBcs:
 
     @property
     def org_name(self):
-        """Gets the org_name of this TicsAgentDeployBcs.
+        r"""Gets the org_name of this TicsAgentDeployBcs.
 
         组织名称
 
@@ -206,7 +206,7 @@ class TicsAgentDeployBcs:
 
     @org_name.setter
     def org_name(self, org_name):
-        """Sets the org_name of this TicsAgentDeployBcs.
+        r"""Sets the org_name of this TicsAgentDeployBcs.
 
         组织名称
 
@@ -217,7 +217,7 @@ class TicsAgentDeployBcs:
 
     @property
     def org_name_hash(self):
-        """Gets the org_name_hash of this TicsAgentDeployBcs.
+        r"""Gets the org_name_hash of this TicsAgentDeployBcs.
 
         组织名称的hash
 
@@ -228,7 +228,7 @@ class TicsAgentDeployBcs:
 
     @org_name_hash.setter
     def org_name_hash(self, org_name_hash):
-        """Sets the org_name_hash of this TicsAgentDeployBcs.
+        r"""Sets the org_name_hash of this TicsAgentDeployBcs.
 
         组织名称的hash
 

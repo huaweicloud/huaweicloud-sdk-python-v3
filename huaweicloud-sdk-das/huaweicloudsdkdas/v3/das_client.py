@@ -34,7 +34,7 @@ class DasClient(Client):
         return client_builder
 
     def cancel_share_connections(self, request):
-        """删除共享链接
+        r"""删除共享链接
 
         删除共享链接，
         用于用户删除共享链接
@@ -102,7 +102,7 @@ class DasClient(Client):
         return http_info
 
     def create_instance_connection(self, request):
-        """创建实例连接
+        r"""创建实例连接
 
         创建实例连接
         
@@ -171,7 +171,7 @@ class DasClient(Client):
         return http_info
 
     def create_share_connections(self, request):
-        """设置共享链接
+        r"""设置共享链接
 
         设置共享链接，
         用于用户添加共享链接
@@ -239,7 +239,7 @@ class DasClient(Client):
         return http_info
 
     def list_connections(self, request):
-        """查询实例连接列表
+        r"""查询实例连接列表
 
         查询实例连接列表
         
@@ -318,7 +318,7 @@ class DasClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询API版本列表
+        r"""查询API版本列表
 
         查询API版本列表
         
@@ -381,7 +381,7 @@ class DasClient(Client):
         return http_info
 
     def show_api_version(self, request):
-        """查询指定的API版本信息
+        r"""查询指定的API版本信息
 
         查询指定的API版本信息
         
@@ -446,7 +446,7 @@ class DasClient(Client):
         return http_info
 
     def change_sql_limit_switch_status(self, request):
-        """设置SQL限流开关状态
+        r"""设置SQL限流开关状态
 
         设置SQL限流开关状态。目前仅支持MySQL数据库。
         
@@ -515,7 +515,7 @@ class DasClient(Client):
         return http_info
 
     def change_sql_switch(self, request):
-        """开启/关闭全量SQL、慢SQL开关
+        r"""开启/关闭全量SQL、慢SQL开关
 
         打开或者关闭DAS收集全量SQL开关，开启后，实例的性能损耗在5%以内。开启全量SQL后，本服务会对SQL的文本内容进行存储，以便进行分析。用户可自行设置全量SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。
         打开或者关闭DAS收集慢SQL开关。开启慢SQL后，本服务会对慢SQL的文本内容进行存储，以便进行分析。用户可自行设置慢SQL的保存时间范围，到期后会自动删除；如果未设置，数据默认保留7天。该功能仅支持付费实例。
@@ -585,7 +585,7 @@ class DasClient(Client):
         return http_info
 
     def change_transaction_switch_status(self, request):
-        """开启/关闭历史事务开关
+        r"""开启/关闭历史事务开关
 
         开启/关闭历史事务开关，仅支持MySQL引擎，并且依赖开启全量SQL或者慢SQL功能
         
@@ -654,7 +654,7 @@ class DasClient(Client):
         return http_info
 
     def create_health_report_task(self, request):
-        """创建实例健康诊断任务
+        r"""创建实例健康诊断任务
 
         创建实例健康诊断任务。
         
@@ -723,7 +723,7 @@ class DasClient(Client):
         return http_info
 
     def create_space_analysis_task(self, request):
-        """创建空间分析任务
+        r"""创建空间分析任务
 
         创建空间分析任务，如触发重新分析，支持MySQL和GaussDB(for MySQL)引擎
         
@@ -792,7 +792,7 @@ class DasClient(Client):
         return http_info
 
     def create_sql_limit_rules(self, request):
-        """创建SQL限流规则
+        r"""创建SQL限流规则
 
         添加SQL限流规则。目前仅支持MySQL和PostgreSQL数据库。
         MySQL使用限制如下：
@@ -871,7 +871,7 @@ class DasClient(Client):
         return http_info
 
     def create_tuning(self, request):
-        """执行SQL诊断
+        r"""执行SQL诊断
 
         执行SQL诊断，
         用于用户执行SQL诊断。
@@ -941,7 +941,7 @@ class DasClient(Client):
         return http_info
 
     def delete_db_user(self, request):
-        """删除数据库用户
+        r"""删除数据库用户
 
         删除注册在DAS里的数据库用户。此接口只是将注册的数据库用户在DAS系统里删除，不会真正删除数据库用户对象。
         目前仅支持MySQL实例。
@@ -1011,7 +1011,7 @@ class DasClient(Client):
         return http_info
 
     def delete_process(self, request):
-        """查杀会话
+        r"""查杀会话
 
         查杀会话。支持按照用户、数据库、会话列表查杀会话，三个条件至少指定一个。
         目前仅支持MySQL实例。
@@ -1081,7 +1081,7 @@ class DasClient(Client):
         return http_info
 
     def delete_sql_limit_rules(self, request):
-        """删除SQL限流规则
+        r"""删除SQL限流规则
 
         删除SQL限流规则。目前仅支持MySQL和PostgreSQL数据库
         
@@ -1150,7 +1150,7 @@ class DasClient(Client):
         return http_info
 
     def export_full_sql_details(self, request):
-        """导出全量SQL明细
+        r"""导出全量SQL明细
 
         全量SQL开关打开后，创建SQL洞察任务，支持按节点、用户名、数据库、操作类型等导出全量SQL明细数据。该功能仅支持付费实例。
         
@@ -1272,7 +1272,7 @@ class DasClient(Client):
         return http_info
 
     def export_slow_query_logs(self, request):
-        """导出慢SQL数据
+        r"""导出慢SQL数据
 
         DAS收集慢SQL开关打开后，一次性导出指定时间范围内的慢SQL数据，支持分页滚动获取。免费实例仅支持查看最近一小时数据。
         
@@ -1349,7 +1349,7 @@ class DasClient(Client):
         return http_info
 
     def export_slow_sql_statistics(self, request):
-        """导出慢SQL统计数据
+        r"""导出慢SQL统计数据
 
         慢SQL开关打开后，导出慢SQL统计数据。
         
@@ -1418,7 +1418,7 @@ class DasClient(Client):
         return http_info
 
     def export_slow_sql_templates_details(self, request):
-        """导出慢SQL模板列表
+        r"""导出慢SQL模板列表
 
         慢SQL开关打开后，导出慢SQL模板列表。免费实例仅支持查看最近一小时数据。查询时间间隔最长一天。
         
@@ -1497,7 +1497,7 @@ class DasClient(Client):
         return http_info
 
     def export_slow_sql_trend_details(self, request):
-        """导出慢SQL数量趋势
+        r"""导出慢SQL数量趋势
 
         慢SQL开关打开后，导出慢SQL数量趋势。免费实例仅支持查看最近一小时数据。查询时间间隔最长一天。
         
@@ -1576,7 +1576,7 @@ class DasClient(Client):
         return http_info
 
     def export_sql_statements(self, request):
-        """导出全量SQL
+        r"""导出全量SQL
 
         全量SQL开关打开后，一次性导出指定时间范围内的全量SQL数据，支持分页滚动获取。该功能仅支持付费实例。
         
@@ -1653,7 +1653,7 @@ class DasClient(Client):
         return http_info
 
     def export_top_risk_instances(self, request):
-        """导出TOP风险实例列表
+        r"""导出TOP风险实例列表
 
         导出TOP风险实例列表，支持查看最近24小时数据。
         
@@ -1728,7 +1728,7 @@ class DasClient(Client):
         return http_info
 
     def export_top_sql_templates_details(self, request):
-        """导出TopSQL模板列表
+        r"""导出TopSQL模板列表
 
         TopSQL开关打开后，导出TopSQL模板列表。该功能仅支持付费实例。查询时间间隔最长一小时。
         
@@ -1811,7 +1811,7 @@ class DasClient(Client):
         return http_info
 
     def export_top_sql_trend_details(self, request):
-        """导出SQL执行耗时区间数据
+        r"""导出SQL执行耗时区间数据
 
         TopSQL开关打开后，导出SQL执行耗时区间数据。该功能仅支持付费实例。查询时间间隔最长六小时。
         
@@ -1886,7 +1886,7 @@ class DasClient(Client):
         return http_info
 
     def list_cloud_dba_instances(self, request):
-        """获取DAS云DBA实例列表
+        r"""获取DAS云DBA实例列表
 
         获取DAS云DBA实例列表。
         
@@ -1957,7 +1957,7 @@ class DasClient(Client):
         return http_info
 
     def list_db_users(self, request):
-        """查询数据库用户列表
+        r"""查询数据库用户列表
 
         查询注册在DAS里的数据库用户列表，后续调用其他接口时(如查询实例会话列表接口)需要用到此接口返回的db_user_id。此接口不会返回数据库实例上的数据库用户对象。
         目前仅支持MySQL实例。
@@ -2033,7 +2033,7 @@ class DasClient(Client):
         return http_info
 
     def list_full_sql_tasks(self, request):
-        """查询SQL洞察任务列表
+        r"""查询SQL洞察任务列表
 
         全量SQL开关打开后，查询SQL洞察任务列表。该功能仅支持付费实例。
         
@@ -2132,7 +2132,7 @@ class DasClient(Client):
         return http_info
 
     def list_health_report_task(self, request):
-        """查询实例健康诊断报告列表
+        r"""查询实例健康诊断报告列表
 
         查询实例健康诊断报告列表。
         
@@ -2207,7 +2207,7 @@ class DasClient(Client):
         return http_info
 
     def list_innodb_locks(self, request):
-        """查询InnoDB锁等待列表
+        r"""查询InnoDB锁等待列表
 
         查询InnoDB锁等待列表。
         目前仅支持MySQL实例。
@@ -2277,7 +2277,7 @@ class DasClient(Client):
         return http_info
 
     def list_instance_distribution(self, request):
-        """查询实例分布情况
+        r"""查询实例分布情况
 
         查询实例分布情况
         
@@ -2344,7 +2344,7 @@ class DasClient(Client):
         return http_info
 
     def list_instance_multi_nodes_single_metric(self, request):
-        """获取多节点单指标数据
+        r"""获取多节点单指标数据
 
         获取多节点单指标数据
         
@@ -2411,7 +2411,7 @@ class DasClient(Client):
         return http_info
 
     def list_instance_nodes_info(self, request):
-        """获取单个实例节点信息
+        r"""获取单个实例节点信息
 
         获取单个实例节点信息
         
@@ -2480,7 +2480,7 @@ class DasClient(Client):
         return http_info
 
     def list_instance_top_slow_log(self, request):
-        """查询实例的TOP慢SQL列表
+        r"""查询实例的TOP慢SQL列表
 
         查询实例的TOP慢SQL列表
         
@@ -2553,7 +2553,7 @@ class DasClient(Client):
         return http_info
 
     def list_metadata_locks(self, request):
-        """查询元数据锁列表
+        r"""查询元数据锁列表
 
         查询元数据锁列表。
         目前仅支持MySQL实例。
@@ -2629,7 +2629,7 @@ class DasClient(Client):
         return http_info
 
     def list_processes(self, request):
-        """查询实例会话列表
+        r"""查询实例会话列表
 
         支持根据数据库、用户查询实例会话列表。
         目前仅支持MySQL实例。
@@ -2709,7 +2709,7 @@ class DasClient(Client):
         return http_info
 
     def list_risk_items(self, request):
-        """查询资源风险实例风险项
+        r"""查询资源风险实例风险项
 
         查询资源风险实例风险项
         
@@ -2776,7 +2776,7 @@ class DasClient(Client):
         return http_info
 
     def list_risk_trend(self, request):
-        """查询资源风险实例风险趋势
+        r"""查询资源风险实例风险趋势
 
         查询资源风险实例风险趋势
         
@@ -2849,7 +2849,7 @@ class DasClient(Client):
         return http_info
 
     def list_space_analysis(self, request):
-        """获取空间分析数据列表
+        r"""获取空间分析数据列表
 
         获取空间分析数据列表。实例级别数据来源于文件系统，库级别和表级别数据来源于information_schema.tables表。空间&amp;元数据分析最多分析10000张表，若缺少库表空间数据，可能是因为数据库实例表个数过多或者账号未保存密码。如果为保存密码，请使用用户管理接口或页面录入数据库账号。 支持MySQL、GaussDB(for MySQL)和SQLServer引擎。
         
@@ -2928,7 +2928,7 @@ class DasClient(Client):
         return http_info
 
     def list_sql_limit_rules(self, request):
-        """查询SQL限流规则列表
+        r"""查询SQL限流规则列表
 
         查询SQL限流规则。目前仅支持MySQL和PostgreSQL数据库。
         
@@ -3003,7 +3003,7 @@ class DasClient(Client):
         return http_info
 
     def list_top_slow_log(self, request):
-        """查询TOP慢SQL列表
+        r"""查询TOP慢SQL列表
 
         查询TOP慢SQL列表
         
@@ -3074,7 +3074,7 @@ class DasClient(Client):
         return http_info
 
     def list_transactions(self, request):
-        """查询历史事务列表
+        r"""查询历史事务列表
 
         查询历史事务列表。
         目前仅支持MySQL实例，仅支持查看最近7天的历史事务。
@@ -3160,7 +3160,7 @@ class DasClient(Client):
         return http_info
 
     def parse_sql_limit_rules(self, request):
-        """根据原始SQL生成SQL限流关键字
+        r"""根据原始SQL生成SQL限流关键字
 
         根据原始SQL生成SQL限流关键字，目前支持MySQL、MariaDB、GaussDB(for MySQL)三种引擎。
         
@@ -3229,7 +3229,7 @@ class DasClient(Client):
         return http_info
 
     def register_db_user(self, request):
-        """注册数据库用户
+        r"""注册数据库用户
 
         此接口是将数据库用户和密码注册进DAS系统，同时会返回一个数据库用户ID ，后续调用其他接口时（如查询实例会话列表接口）需要用到此数据库用户ID。密码为加密存储，且仅用于DAS API相关功能。此接口不会在数据库实例上创建数据库用户对象。请确保输入的用户名和密码是已经存在并且是正确的。
         目前仅支持MySQL实例。
@@ -3299,7 +3299,7 @@ class DasClient(Client):
         return http_info
 
     def set_threshold_for_metric(self, request):
-        """设置指标阈值
+        r"""设置指标阈值
 
         设置指标阈值
         
@@ -3366,7 +3366,7 @@ class DasClient(Client):
         return http_info
 
     def show_db_user(self, request):
-        """查询数据库用户信息
+        r"""查询数据库用户信息
 
         查询注册在DAS里的数据库用户信息。此接口不能查询数据库实例上的数据库用户对象。
         目前仅支持MySQL实例。
@@ -3436,7 +3436,7 @@ class DasClient(Client):
         return http_info
 
     def show_instance_health_report(self, request):
-        """获取实例健康诊断报告内容
+        r"""获取实例健康诊断报告内容
 
         获取实例健康诊断报告内容。
         
@@ -3505,7 +3505,7 @@ class DasClient(Client):
         return http_info
 
     def show_metric_names_support(self, request):
-        """多节点单指标支持指标信息
+        r"""多节点单指标支持指标信息
 
         多节点单指标支持指标信息
         
@@ -3570,7 +3570,7 @@ class DasClient(Client):
         return http_info
 
     def show_quotas(self, request):
-        """查询云DBA配额
+        r"""查询云DBA配额
 
         查询云DBA配额
         
@@ -3635,7 +3635,7 @@ class DasClient(Client):
         return http_info
 
     def show_sql_execution_plan(self, request):
-        """查询SQL执行计划
+        r"""查询SQL执行计划
 
         查询SQL执行计划。
         目前仅支持MySQL实例。
@@ -3709,7 +3709,7 @@ class DasClient(Client):
         return http_info
 
     def show_sql_explain(self, request):
-        """查询SQL执行计划
+        r"""查询SQL执行计划
 
         查询SQL执行计划。
         目前仅支持MySQL实例。
@@ -3780,7 +3780,7 @@ class DasClient(Client):
         return http_info
 
     def show_sql_limit_job_info(self, request):
-        """查询SQL限流任务
+        r"""查询SQL限流任务
 
         查询指定ID的SQL限流任务信息
         
@@ -3849,7 +3849,7 @@ class DasClient(Client):
         return http_info
 
     def show_sql_limit_switch_status(self, request):
-        """查看SQL限流开关状态
+        r"""查看SQL限流开关状态
 
         查询SQL限流的开关状态。目前仅支持MySQL实例
         
@@ -3918,7 +3918,7 @@ class DasClient(Client):
         return http_info
 
     def show_sql_switch_status(self, request):
-        """查询全量SQL和慢SQL的开关状态
+        r"""查询全量SQL和慢SQL的开关状态
 
         查询DAS收集全量SQL和慢SQL的开关状态。该功能仅支持付费实例。
         
@@ -3989,7 +3989,7 @@ class DasClient(Client):
         return http_info
 
     def show_transaction_switch_status(self, request):
-        """查询历史事务开关
+        r"""查询历史事务开关
 
         查询历史事务开关。
         目前仅支持MySQL实例。
@@ -4059,7 +4059,7 @@ class DasClient(Client):
         return http_info
 
     def show_tuning(self, request):
-        """获取诊断结果
+        r"""获取诊断结果
 
         获取诊断结果
         
@@ -4128,7 +4128,7 @@ class DasClient(Client):
         return http_info
 
     def synchronize_instances(self, request):
-        """同步实例列表
+        r"""同步实例列表
 
         同步实例列表。
         
@@ -4195,7 +4195,7 @@ class DasClient(Client):
         return http_info
 
     def update_db_user(self, request):
-        """修改数据库用户
+        r"""修改数据库用户
 
         修改注册在DAS里的数据库用户名和密码。此接口不会修改数据库实例上的数据库用户对象的用户名和密码。请确保输入的用户名和密码是已经存在并且是正确的。
         目前仅支持MySQL实例。
@@ -4267,7 +4267,7 @@ class DasClient(Client):
         return http_info
 
     def update_sql_limit_rules(self, request):
-        """修改SQL限流规则
+        r"""修改SQL限流规则
 
         修改SQL限流规则。目前仅支持PostgreSQL数据库
         

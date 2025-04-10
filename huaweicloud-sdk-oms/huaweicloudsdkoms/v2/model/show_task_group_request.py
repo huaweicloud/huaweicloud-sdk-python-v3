@@ -25,7 +25,7 @@ class ShowTaskGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """ShowTaskGroupRequest
+        r"""ShowTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTaskGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowTaskGroupRequest.
+        r"""Gets the group_id of this ShowTaskGroupRequest.
 
         任务组id
 
@@ -53,7 +53,7 @@ class ShowTaskGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowTaskGroupRequest.
+        r"""Sets the group_id of this ShowTaskGroupRequest.
 
         任务组id
 

@@ -43,7 +43,7 @@ class PeriodProductRatingResult:
     }
 
     def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, installment_official_website_amount=None, installment_official_discount_amount=None, installment_amount=None, installment_period_type=None):
-        """PeriodProductRatingResult
+        r"""PeriodProductRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PeriodProductRatingResult:
 
     @property
     def id(self):
-        """Gets the id of this PeriodProductRatingResult.
+        r"""Gets the id of this PeriodProductRatingResult.
 
         ID标识，来源于请求中的ID。
 
@@ -117,7 +117,7 @@ class PeriodProductRatingResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PeriodProductRatingResult.
+        r"""Sets the id of this PeriodProductRatingResult.
 
         ID标识，来源于请求中的ID。
 
@@ -128,7 +128,7 @@ class PeriodProductRatingResult:
 
     @property
     def product_id(self):
-        """Gets the product_id of this PeriodProductRatingResult.
+        r"""Gets the product_id of this PeriodProductRatingResult.
 
         包年/包月产品的ID。
 
@@ -139,7 +139,7 @@ class PeriodProductRatingResult:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this PeriodProductRatingResult.
+        r"""Sets the product_id of this PeriodProductRatingResult.
 
         包年/包月产品的ID。
 
@@ -150,7 +150,7 @@ class PeriodProductRatingResult:
 
     @property
     def amount(self):
-        """Gets the amount of this PeriodProductRatingResult.
+        r"""Gets the amount of this PeriodProductRatingResult.
 
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
@@ -161,7 +161,7 @@ class PeriodProductRatingResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this PeriodProductRatingResult.
+        r"""Sets the amount of this PeriodProductRatingResult.
 
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
@@ -172,7 +172,7 @@ class PeriodProductRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this PeriodProductRatingResult.
+        r"""Gets the official_website_amount of this PeriodProductRatingResult.
 
         包年/包月产品的官网价。
 
@@ -183,7 +183,7 @@ class PeriodProductRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this PeriodProductRatingResult.
+        r"""Sets the official_website_amount of this PeriodProductRatingResult.
 
         包年/包月产品的官网价。
 
@@ -194,7 +194,7 @@ class PeriodProductRatingResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this PeriodProductRatingResult.
+        r"""Gets the discount_amount of this PeriodProductRatingResult.
 
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
@@ -205,7 +205,7 @@ class PeriodProductRatingResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this PeriodProductRatingResult.
+        r"""Sets the discount_amount of this PeriodProductRatingResult.
 
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
@@ -216,7 +216,7 @@ class PeriodProductRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this PeriodProductRatingResult.
+        r"""Gets the measure_id of this PeriodProductRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -227,7 +227,7 @@ class PeriodProductRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this PeriodProductRatingResult.
+        r"""Sets the measure_id of this PeriodProductRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -238,7 +238,7 @@ class PeriodProductRatingResult:
 
     @property
     def installment_official_website_amount(self):
-        """Gets the installment_official_website_amount of this PeriodProductRatingResult.
+        r"""Gets the installment_official_website_amount of this PeriodProductRatingResult.
 
         分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
@@ -249,7 +249,7 @@ class PeriodProductRatingResult:
 
     @installment_official_website_amount.setter
     def installment_official_website_amount(self, installment_official_website_amount):
-        """Sets the installment_official_website_amount of this PeriodProductRatingResult.
+        r"""Sets the installment_official_website_amount of this PeriodProductRatingResult.
 
         分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
@@ -260,7 +260,7 @@ class PeriodProductRatingResult:
 
     @property
     def installment_official_discount_amount(self):
-        """Gets the installment_official_discount_amount of this PeriodProductRatingResult.
+        r"""Gets the installment_official_discount_amount of this PeriodProductRatingResult.
 
         分期金额的折扣价。  说明： 暂只支持CloudPond产品。
 
@@ -271,7 +271,7 @@ class PeriodProductRatingResult:
 
     @installment_official_discount_amount.setter
     def installment_official_discount_amount(self, installment_official_discount_amount):
-        """Sets the installment_official_discount_amount of this PeriodProductRatingResult.
+        r"""Sets the installment_official_discount_amount of this PeriodProductRatingResult.
 
         分期金额的折扣价。  说明： 暂只支持CloudPond产品。
 
@@ -282,7 +282,7 @@ class PeriodProductRatingResult:
 
     @property
     def installment_amount(self):
-        """Gets the installment_amount of this PeriodProductRatingResult.
+        r"""Gets the installment_amount of this PeriodProductRatingResult.
 
         分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持CloudPond产品。
 
@@ -293,7 +293,7 @@ class PeriodProductRatingResult:
 
     @installment_amount.setter
     def installment_amount(self, installment_amount):
-        """Sets the installment_amount of this PeriodProductRatingResult.
+        r"""Sets the installment_amount of this PeriodProductRatingResult.
 
         分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持CloudPond产品。
 
@@ -304,7 +304,7 @@ class PeriodProductRatingResult:
 
     @property
     def installment_period_type(self):
-        """Gets the installment_period_type of this PeriodProductRatingResult.
+        r"""Gets the installment_period_type of this PeriodProductRatingResult.
 
         分期付款的周期类型。 2：月 3：年 说明： 暂只支持CloudPond产品。
 
@@ -315,7 +315,7 @@ class PeriodProductRatingResult:
 
     @installment_period_type.setter
     def installment_period_type(self, installment_period_type):
-        """Sets the installment_period_type of this PeriodProductRatingResult.
+        r"""Sets the installment_period_type of this PeriodProductRatingResult.
 
         分期付款的周期类型。 2：月 3：年 说明： 暂只支持CloudPond产品。
 

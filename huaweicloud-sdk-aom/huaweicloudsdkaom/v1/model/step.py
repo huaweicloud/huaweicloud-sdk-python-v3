@@ -35,7 +35,7 @@ class Step:
     }
 
     def __init__(self, id=None, name=None, type=None, input=None, ignore_error=None, description=None):
-        """Step
+        r"""Step
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class Step:
 
     @property
     def id(self):
-        """Gets the id of this Step.
+        r"""Gets the id of this Step.
 
         步骤id。
 
@@ -88,7 +88,7 @@ class Step:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Step.
+        r"""Sets the id of this Step.
 
         步骤id。
 
@@ -99,7 +99,7 @@ class Step:
 
     @property
     def name(self):
-        """Gets the name of this Step.
+        r"""Gets the name of this Step.
 
         步骤名称。
 
@@ -110,7 +110,7 @@ class Step:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Step.
+        r"""Sets the name of this Step.
 
         步骤名称。
 
@@ -121,7 +121,7 @@ class Step:
 
     @property
     def type(self):
-        """Gets the type of this Step.
+        r"""Gets the type of this Step.
 
         步骤类型。
 
@@ -132,7 +132,7 @@ class Step:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Step.
+        r"""Sets the type of this Step.
 
         步骤类型。
 
@@ -143,7 +143,7 @@ class Step:
 
     @property
     def input(self):
-        """Gets the input of this Step.
+        r"""Gets the input of this Step.
 
         步骤参数。
 
@@ -154,7 +154,7 @@ class Step:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this Step.
+        r"""Sets the input of this Step.
 
         步骤参数。
 
@@ -165,7 +165,7 @@ class Step:
 
     @property
     def ignore_error(self):
-        """Gets the ignore_error of this Step.
+        r"""Gets the ignore_error of this Step.
 
         是否自动忽略错误。
 
@@ -176,7 +176,7 @@ class Step:
 
     @ignore_error.setter
     def ignore_error(self, ignore_error):
-        """Sets the ignore_error of this Step.
+        r"""Sets the ignore_error of this Step.
 
         是否自动忽略错误。
 
@@ -187,7 +187,7 @@ class Step:
 
     @property
     def description(self):
-        """Gets the description of this Step.
+        r"""Gets the description of this Step.
 
         步骤说明。
 
@@ -198,7 +198,7 @@ class Step:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Step.
+        r"""Sets the description of this Step.
 
         步骤说明。
 

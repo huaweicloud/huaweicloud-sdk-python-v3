@@ -29,7 +29,7 @@ class DBSInstanceHostInfoResult:
     }
 
     def __init__(self, id=None, host=None, host_name=None):
-        """DBSInstanceHostInfoResult
+        r"""DBSInstanceHostInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DBSInstanceHostInfoResult:
 
     @property
     def id(self):
-        """Gets the id of this DBSInstanceHostInfoResult.
+        r"""Gets the id of this DBSInstanceHostInfoResult.
 
         host  id
 
@@ -68,7 +68,7 @@ class DBSInstanceHostInfoResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DBSInstanceHostInfoResult.
+        r"""Sets the id of this DBSInstanceHostInfoResult.
 
         host  id
 
@@ -79,7 +79,7 @@ class DBSInstanceHostInfoResult:
 
     @property
     def host(self):
-        """Gets the host of this DBSInstanceHostInfoResult.
+        r"""Gets the host of this DBSInstanceHostInfoResult.
 
         host地址
 
@@ -90,7 +90,7 @@ class DBSInstanceHostInfoResult:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this DBSInstanceHostInfoResult.
+        r"""Sets the host of this DBSInstanceHostInfoResult.
 
         host地址
 
@@ -101,7 +101,7 @@ class DBSInstanceHostInfoResult:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DBSInstanceHostInfoResult.
+        r"""Gets the host_name of this DBSInstanceHostInfoResult.
 
         host 名称
 
@@ -112,7 +112,7 @@ class DBSInstanceHostInfoResult:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DBSInstanceHostInfoResult.
+        r"""Sets the host_name of this DBSInstanceHostInfoResult.
 
         host 名称
 

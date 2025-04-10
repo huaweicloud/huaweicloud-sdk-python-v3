@@ -31,7 +31,7 @@ class Fault:
     }
 
     def __init__(self, message=None, code=None, details=None, created=None):
-        """Fault
+        r"""Fault
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Fault:
 
     @property
     def message(self):
-        """Gets the message of this Fault.
+        r"""Gets the message of this Fault.
 
         故障信息
 
@@ -75,7 +75,7 @@ class Fault:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Fault.
+        r"""Sets the message of this Fault.
 
         故障信息
 
@@ -86,7 +86,7 @@ class Fault:
 
     @property
     def code(self):
-        """Gets the code of this Fault.
+        r"""Gets the code of this Fault.
 
         故障code
 
@@ -97,7 +97,7 @@ class Fault:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Fault.
+        r"""Sets the code of this Fault.
 
         故障code
 
@@ -108,7 +108,7 @@ class Fault:
 
     @property
     def details(self):
-        """Gets the details of this Fault.
+        r"""Gets the details of this Fault.
 
         故障详情
 
@@ -119,7 +119,7 @@ class Fault:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this Fault.
+        r"""Sets the details of this Fault.
 
         故障详情
 
@@ -130,7 +130,7 @@ class Fault:
 
     @property
     def created(self):
-        """Gets the created of this Fault.
+        r"""Gets the created of this Fault.
 
         故障时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
@@ -141,7 +141,7 @@ class Fault:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this Fault.
+        r"""Sets the created of this Fault.
 
         故障时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 

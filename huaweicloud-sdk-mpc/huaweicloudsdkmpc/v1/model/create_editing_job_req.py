@@ -43,7 +43,7 @@ class CreateEditingJobReq:
     }
 
     def __init__(self, edit_type=None, clips=None, concats=None, concat=None, mix=None, input=None, output_setting=None, image_watermark_settings=None, edit_settings=None, user_data=None):
-        """CreateEditingJobReq
+        r"""CreateEditingJobReq
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CreateEditingJobReq:
 
     @property
     def edit_type(self):
-        """Gets the edit_type of this CreateEditingJobReq.
+        r"""Gets the edit_type of this CreateEditingJobReq.
 
         剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
@@ -117,7 +117,7 @@ class CreateEditingJobReq:
 
     @edit_type.setter
     def edit_type(self, edit_type):
-        """Sets the edit_type of this CreateEditingJobReq.
+        r"""Sets the edit_type of this CreateEditingJobReq.
 
         剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
@@ -128,7 +128,7 @@ class CreateEditingJobReq:
 
     @property
     def clips(self):
-        """Gets the clips of this CreateEditingJobReq.
+        r"""Gets the clips of this CreateEditingJobReq.
 
         剪切信息
 
@@ -139,7 +139,7 @@ class CreateEditingJobReq:
 
     @clips.setter
     def clips(self, clips):
-        """Sets the clips of this CreateEditingJobReq.
+        r"""Sets the clips of this CreateEditingJobReq.
 
         剪切信息
 
@@ -150,7 +150,7 @@ class CreateEditingJobReq:
 
     @property
     def concats(self):
-        """Gets the concats of this CreateEditingJobReq.
+        r"""Gets the concats of this CreateEditingJobReq.
 
         多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
 
@@ -161,7 +161,7 @@ class CreateEditingJobReq:
 
     @concats.setter
     def concats(self, concats):
-        """Sets the concats of this CreateEditingJobReq.
+        r"""Sets the concats of this CreateEditingJobReq.
 
         多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
 
@@ -172,7 +172,7 @@ class CreateEditingJobReq:
 
     @property
     def concat(self):
-        """Gets the concat of this CreateEditingJobReq.
+        r"""Gets the concat of this CreateEditingJobReq.
 
         :return: The concat of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
@@ -181,7 +181,7 @@ class CreateEditingJobReq:
 
     @concat.setter
     def concat(self, concat):
-        """Sets the concat of this CreateEditingJobReq.
+        r"""Sets the concat of this CreateEditingJobReq.
 
         :param concat: The concat of this CreateEditingJobReq.
         :type concat: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
@@ -190,7 +190,7 @@ class CreateEditingJobReq:
 
     @property
     def mix(self):
-        """Gets the mix of this CreateEditingJobReq.
+        r"""Gets the mix of this CreateEditingJobReq.
 
         :return: The mix of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MixInfo`
@@ -199,7 +199,7 @@ class CreateEditingJobReq:
 
     @mix.setter
     def mix(self, mix):
-        """Sets the mix of this CreateEditingJobReq.
+        r"""Sets the mix of this CreateEditingJobReq.
 
         :param mix: The mix of this CreateEditingJobReq.
         :type mix: :class:`huaweicloudsdkmpc.v1.MixInfo`
@@ -208,7 +208,7 @@ class CreateEditingJobReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateEditingJobReq.
+        r"""Gets the input of this CreateEditingJobReq.
 
         :return: The input of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -217,7 +217,7 @@ class CreateEditingJobReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateEditingJobReq.
+        r"""Sets the input of this CreateEditingJobReq.
 
         :param input: The input of this CreateEditingJobReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -226,7 +226,7 @@ class CreateEditingJobReq:
 
     @property
     def output_setting(self):
-        """Gets the output_setting of this CreateEditingJobReq.
+        r"""Gets the output_setting of this CreateEditingJobReq.
 
         :return: The output_setting of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.OutputSetting`
@@ -235,7 +235,7 @@ class CreateEditingJobReq:
 
     @output_setting.setter
     def output_setting(self, output_setting):
-        """Sets the output_setting of this CreateEditingJobReq.
+        r"""Sets the output_setting of this CreateEditingJobReq.
 
         :param output_setting: The output_setting of this CreateEditingJobReq.
         :type output_setting: :class:`huaweicloudsdkmpc.v1.OutputSetting`
@@ -244,7 +244,7 @@ class CreateEditingJobReq:
 
     @property
     def image_watermark_settings(self):
-        """Gets the image_watermark_settings of this CreateEditingJobReq.
+        r"""Gets the image_watermark_settings of this CreateEditingJobReq.
 
         水印信息。
 
@@ -255,7 +255,7 @@ class CreateEditingJobReq:
 
     @image_watermark_settings.setter
     def image_watermark_settings(self, image_watermark_settings):
-        """Sets the image_watermark_settings of this CreateEditingJobReq.
+        r"""Sets the image_watermark_settings of this CreateEditingJobReq.
 
         水印信息。
 
@@ -266,7 +266,7 @@ class CreateEditingJobReq:
 
     @property
     def edit_settings(self):
-        """Gets the edit_settings of this CreateEditingJobReq.
+        r"""Gets the edit_settings of this CreateEditingJobReq.
 
         媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
 
@@ -277,7 +277,7 @@ class CreateEditingJobReq:
 
     @edit_settings.setter
     def edit_settings(self, edit_settings):
-        """Sets the edit_settings of this CreateEditingJobReq.
+        r"""Sets the edit_settings of this CreateEditingJobReq.
 
         媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
 
@@ -288,7 +288,7 @@ class CreateEditingJobReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateEditingJobReq.
+        r"""Gets the user_data of this CreateEditingJobReq.
 
         用户自定义数据。
 
@@ -299,7 +299,7 @@ class CreateEditingJobReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateEditingJobReq.
+        r"""Sets the user_data of this CreateEditingJobReq.
 
         用户自定义数据。
 

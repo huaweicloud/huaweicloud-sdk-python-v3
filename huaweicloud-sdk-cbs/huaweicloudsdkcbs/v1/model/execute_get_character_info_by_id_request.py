@@ -25,7 +25,7 @@ class ExecuteGetCharacterInfoByIdRequest:
     }
 
     def __init__(self, character_id=None):
-        """ExecuteGetCharacterInfoByIdRequest
+        r"""ExecuteGetCharacterInfoByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteGetCharacterInfoByIdRequest:
 
     @property
     def character_id(self):
-        """Gets the character_id of this ExecuteGetCharacterInfoByIdRequest.
+        r"""Gets the character_id of this ExecuteGetCharacterInfoByIdRequest.
 
         形象id
 
@@ -53,7 +53,7 @@ class ExecuteGetCharacterInfoByIdRequest:
 
     @character_id.setter
     def character_id(self, character_id):
-        """Sets the character_id of this ExecuteGetCharacterInfoByIdRequest.
+        r"""Sets the character_id of this ExecuteGetCharacterInfoByIdRequest.
 
         形象id
 

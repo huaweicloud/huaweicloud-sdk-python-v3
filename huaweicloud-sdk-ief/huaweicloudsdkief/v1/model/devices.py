@@ -25,7 +25,7 @@ class Devices:
     }
 
     def __init__(self, devices=None):
-        """Devices
+        r"""Devices
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Devices:
 
     @property
     def devices(self):
-        """Gets the devices of this Devices.
+        r"""Gets the devices of this Devices.
 
         :return: The devices of this Devices.
         :rtype: :class:`huaweicloudsdkief.v1.DevicesDevices`
@@ -51,7 +51,7 @@ class Devices:
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this Devices.
+        r"""Sets the devices of this Devices.
 
         :param devices: The devices of this Devices.
         :type devices: :class:`huaweicloudsdkief.v1.DevicesDevices`

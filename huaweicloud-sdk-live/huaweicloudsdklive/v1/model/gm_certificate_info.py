@@ -37,7 +37,7 @@ class GmCertificateInfo:
     }
 
     def __init__(self, source=None, cert_name=None, cert_id=None, sign_certificate=None, sign_certificate_key=None, enc_certificate=None, enc_certificate_key=None):
-        """GmCertificateInfo
+        r"""GmCertificateInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GmCertificateInfo:
 
     @property
     def source(self):
-        """Gets the source of this GmCertificateInfo.
+        r"""Gets the source of this GmCertificateInfo.
 
         证书来源， 可选,  scm: 云证书管理服务，user：默认，用户自有
 
@@ -96,7 +96,7 @@ class GmCertificateInfo:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this GmCertificateInfo.
+        r"""Sets the source of this GmCertificateInfo.
 
         证书来源， 可选,  scm: 云证书管理服务，user：默认，用户自有
 
@@ -107,7 +107,7 @@ class GmCertificateInfo:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this GmCertificateInfo.
+        r"""Gets the cert_name of this GmCertificateInfo.
 
         SCM证书名， 可选
 
@@ -118,7 +118,7 @@ class GmCertificateInfo:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this GmCertificateInfo.
+        r"""Sets the cert_name of this GmCertificateInfo.
 
         SCM证书名， 可选
 
@@ -129,7 +129,7 @@ class GmCertificateInfo:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this GmCertificateInfo.
+        r"""Gets the cert_id of this GmCertificateInfo.
 
         SCM证书ID, 证书来源为scm时必选
 
@@ -140,7 +140,7 @@ class GmCertificateInfo:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this GmCertificateInfo.
+        r"""Sets the cert_id of this GmCertificateInfo.
 
         SCM证书ID, 证书来源为scm时必选
 
@@ -151,7 +151,7 @@ class GmCertificateInfo:
 
     @property
     def sign_certificate(self):
-        """Gets the sign_certificate of this GmCertificateInfo.
+        r"""Gets the sign_certificate of this GmCertificateInfo.
 
         国密签名证书内容
 
@@ -162,7 +162,7 @@ class GmCertificateInfo:
 
     @sign_certificate.setter
     def sign_certificate(self, sign_certificate):
-        """Sets the sign_certificate of this GmCertificateInfo.
+        r"""Sets the sign_certificate of this GmCertificateInfo.
 
         国密签名证书内容
 
@@ -173,7 +173,7 @@ class GmCertificateInfo:
 
     @property
     def sign_certificate_key(self):
-        """Gets the sign_certificate_key of this GmCertificateInfo.
+        r"""Gets the sign_certificate_key of this GmCertificateInfo.
 
         国密签名私钥内容
 
@@ -184,7 +184,7 @@ class GmCertificateInfo:
 
     @sign_certificate_key.setter
     def sign_certificate_key(self, sign_certificate_key):
-        """Sets the sign_certificate_key of this GmCertificateInfo.
+        r"""Sets the sign_certificate_key of this GmCertificateInfo.
 
         国密签名私钥内容
 
@@ -195,7 +195,7 @@ class GmCertificateInfo:
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this GmCertificateInfo.
+        r"""Gets the enc_certificate of this GmCertificateInfo.
 
         国密加密证书内容
 
@@ -206,7 +206,7 @@ class GmCertificateInfo:
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this GmCertificateInfo.
+        r"""Sets the enc_certificate of this GmCertificateInfo.
 
         国密加密证书内容
 
@@ -217,7 +217,7 @@ class GmCertificateInfo:
 
     @property
     def enc_certificate_key(self):
-        """Gets the enc_certificate_key of this GmCertificateInfo.
+        r"""Gets the enc_certificate_key of this GmCertificateInfo.
 
         国密加密私钥内容
 
@@ -228,7 +228,7 @@ class GmCertificateInfo:
 
     @enc_certificate_key.setter
     def enc_certificate_key(self, enc_certificate_key):
-        """Sets the enc_certificate_key of this GmCertificateInfo.
+        r"""Sets the enc_certificate_key of this GmCertificateInfo.
 
         国密加密私钥内容
 

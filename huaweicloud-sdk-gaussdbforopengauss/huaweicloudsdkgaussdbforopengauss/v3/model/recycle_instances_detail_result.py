@@ -57,7 +57,7 @@ class RecycleInstancesDetailResult:
     }
 
     def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, created_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None, mode=None):
-        """RecycleInstancesDetailResult
+        r"""RecycleInstancesDetailResult
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def id(self):
-        """Gets the id of this RecycleInstancesDetailResult.
+        r"""Gets the id of this RecycleInstancesDetailResult.
 
         实例ID。
 
@@ -153,7 +153,7 @@ class RecycleInstancesDetailResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecycleInstancesDetailResult.
+        r"""Sets the id of this RecycleInstancesDetailResult.
 
         实例ID。
 
@@ -164,7 +164,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def name(self):
-        """Gets the name of this RecycleInstancesDetailResult.
+        r"""Gets the name of this RecycleInstancesDetailResult.
 
         实例名称。
 
@@ -175,7 +175,7 @@ class RecycleInstancesDetailResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecycleInstancesDetailResult.
+        r"""Sets the name of this RecycleInstancesDetailResult.
 
         实例名称。
 
@@ -186,7 +186,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this RecycleInstancesDetailResult.
+        r"""Gets the ha_mode of this RecycleInstancesDetailResult.
 
         部署形态(Ha:主备版;Independent:独立部署;Combined:混合部署)。
 
@@ -197,7 +197,7 @@ class RecycleInstancesDetailResult:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this RecycleInstancesDetailResult.
+        r"""Sets the ha_mode of this RecycleInstancesDetailResult.
 
         部署形态(Ha:主备版;Independent:独立部署;Combined:混合部署)。
 
@@ -208,7 +208,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this RecycleInstancesDetailResult.
+        r"""Gets the engine_name of this RecycleInstancesDetailResult.
 
         引擎名称
 
@@ -219,7 +219,7 @@ class RecycleInstancesDetailResult:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this RecycleInstancesDetailResult.
+        r"""Sets the engine_name of this RecycleInstancesDetailResult.
 
         引擎名称
 
@@ -230,7 +230,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this RecycleInstancesDetailResult.
+        r"""Gets the engine_version of this RecycleInstancesDetailResult.
 
         引擎版本号。
 
@@ -241,7 +241,7 @@ class RecycleInstancesDetailResult:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this RecycleInstancesDetailResult.
+        r"""Sets the engine_version of this RecycleInstancesDetailResult.
 
         引擎版本号。
 
@@ -252,7 +252,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this RecycleInstancesDetailResult.
+        r"""Gets the pay_model of this RecycleInstancesDetailResult.
 
         计费模式（0：按需计费；1：包年/包月）。
 
@@ -263,7 +263,7 @@ class RecycleInstancesDetailResult:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this RecycleInstancesDetailResult.
+        r"""Sets the pay_model of this RecycleInstancesDetailResult.
 
         计费模式（0：按需计费；1：包年/包月）。
 
@@ -274,7 +274,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RecycleInstancesDetailResult.
+        r"""Gets the created_at of this RecycleInstancesDetailResult.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -285,7 +285,7 @@ class RecycleInstancesDetailResult:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RecycleInstancesDetailResult.
+        r"""Sets the created_at of this RecycleInstancesDetailResult.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -296,7 +296,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this RecycleInstancesDetailResult.
+        r"""Gets the deleted_at of this RecycleInstancesDetailResult.
 
         删除时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -307,7 +307,7 @@ class RecycleInstancesDetailResult:
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this RecycleInstancesDetailResult.
+        r"""Sets the deleted_at of this RecycleInstancesDetailResult.
 
         删除时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -318,7 +318,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this RecycleInstancesDetailResult.
+        r"""Gets the volume_type of this RecycleInstancesDetailResult.
 
         磁盘类型。（SAS：high；SSD：ultrahigh；ESSD：essd）。
 
@@ -329,7 +329,7 @@ class RecycleInstancesDetailResult:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this RecycleInstancesDetailResult.
+        r"""Sets the volume_type of this RecycleInstancesDetailResult.
 
         磁盘类型。（SAS：high；SSD：ultrahigh；ESSD：essd）。
 
@@ -340,7 +340,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this RecycleInstancesDetailResult.
+        r"""Gets the volume_size of this RecycleInstancesDetailResult.
 
         磁盘大小
 
@@ -351,7 +351,7 @@ class RecycleInstancesDetailResult:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this RecycleInstancesDetailResult.
+        r"""Sets the volume_size of this RecycleInstancesDetailResult.
 
         磁盘大小
 
@@ -362,7 +362,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def data_vip(self):
-        """Gets the data_vip of this RecycleInstancesDetailResult.
+        r"""Gets the data_vip of this RecycleInstancesDetailResult.
 
         数据vip。
 
@@ -373,7 +373,7 @@ class RecycleInstancesDetailResult:
 
     @data_vip.setter
     def data_vip(self, data_vip):
-        """Sets the data_vip of this RecycleInstancesDetailResult.
+        r"""Sets the data_vip of this RecycleInstancesDetailResult.
 
         数据vip。
 
@@ -384,7 +384,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RecycleInstancesDetailResult.
+        r"""Gets the enterprise_project_id of this RecycleInstancesDetailResult.
 
         企业项目ID。
 
@@ -395,7 +395,7 @@ class RecycleInstancesDetailResult:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RecycleInstancesDetailResult.
+        r"""Sets the enterprise_project_id of this RecycleInstancesDetailResult.
 
         企业项目ID。
 
@@ -406,7 +406,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this RecycleInstancesDetailResult.
+        r"""Gets the enterprise_project_name of this RecycleInstancesDetailResult.
 
         企业项目名称
 
@@ -417,7 +417,7 @@ class RecycleInstancesDetailResult:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this RecycleInstancesDetailResult.
+        r"""Sets the enterprise_project_name of this RecycleInstancesDetailResult.
 
         企业项目名称
 
@@ -428,7 +428,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this RecycleInstancesDetailResult.
+        r"""Gets the backup_level of this RecycleInstancesDetailResult.
 
         备份级别
 
@@ -439,7 +439,7 @@ class RecycleInstancesDetailResult:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this RecycleInstancesDetailResult.
+        r"""Sets the backup_level of this RecycleInstancesDetailResult.
 
         备份级别
 
@@ -450,7 +450,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def recycle_backup_id(self):
-        """Gets the recycle_backup_id of this RecycleInstancesDetailResult.
+        r"""Gets the recycle_backup_id of this RecycleInstancesDetailResult.
 
         备份ID。（指删除实例时产生备份信息中的备份ID）。
 
@@ -461,7 +461,7 @@ class RecycleInstancesDetailResult:
 
     @recycle_backup_id.setter
     def recycle_backup_id(self, recycle_backup_id):
-        """Sets the recycle_backup_id of this RecycleInstancesDetailResult.
+        r"""Sets the recycle_backup_id of this RecycleInstancesDetailResult.
 
         备份ID。（指删除实例时产生备份信息中的备份ID）。
 
@@ -472,7 +472,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def recycle_status(self):
-        """Gets the recycle_status of this RecycleInstancesDetailResult.
+        r"""Gets the recycle_status of this RecycleInstancesDetailResult.
 
         回收站备份状态。（Running：运行中；Active：有效的）。
 
@@ -483,7 +483,7 @@ class RecycleInstancesDetailResult:
 
     @recycle_status.setter
     def recycle_status(self, recycle_status):
-        """Sets the recycle_status of this RecycleInstancesDetailResult.
+        r"""Sets the recycle_status of this RecycleInstancesDetailResult.
 
         回收站备份状态。（Running：运行中；Active：有效的）。
 
@@ -494,7 +494,7 @@ class RecycleInstancesDetailResult:
 
     @property
     def mode(self):
-        """Gets the mode of this RecycleInstancesDetailResult.
+        r"""Gets the mode of this RecycleInstancesDetailResult.
 
         产品类型（basic：基础版；standard：标准版；enterprise：企业版）。
 
@@ -505,7 +505,7 @@ class RecycleInstancesDetailResult:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RecycleInstancesDetailResult.
+        r"""Sets the mode of this RecycleInstancesDetailResult.
 
         产品类型（basic：基础版；standard：标准版；enterprise：企业版）。
 

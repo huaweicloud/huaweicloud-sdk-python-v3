@@ -27,7 +27,7 @@ class ShowOneTopicRequest:
     }
 
     def __init__(self, instance_id=None, topic=None):
-        """ShowOneTopicRequest
+        r"""ShowOneTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowOneTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowOneTopicRequest.
+        r"""Gets the instance_id of this ShowOneTopicRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowOneTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowOneTopicRequest.
+        r"""Sets the instance_id of this ShowOneTopicRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowOneTopicRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowOneTopicRequest.
+        r"""Gets the topic of this ShowOneTopicRequest.
 
         主题名称。
 
@@ -81,7 +81,7 @@ class ShowOneTopicRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowOneTopicRequest.
+        r"""Sets the topic of this ShowOneTopicRequest.
 
         主题名称。
 

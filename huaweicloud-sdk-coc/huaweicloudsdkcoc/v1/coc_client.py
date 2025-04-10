@@ -34,7 +34,7 @@ class CocClient(Client):
         return client_builder
 
     def show_account(self, request):
-        """查询客户账号
+        r"""查询客户账号
 
         show account ，使用场景：托管功能 sre 账号使用，查询自己管理的客户账号
         
@@ -107,7 +107,7 @@ class CocClient(Client):
         return http_info
 
     def list_alarm_handle_histories(self, request):
-        """查询告警工单历史
+        r"""查询告警工单历史
 
         查询告警工单历史
         
@@ -176,7 +176,7 @@ class CocClient(Client):
         return http_info
 
     def show_alarm(self, request):
-        """查询Alarm
+        r"""查询Alarm
 
         Get alarm info by id
         
@@ -241,7 +241,7 @@ class CocClient(Client):
         return http_info
 
     def create_report_custom_event(self, request):
-        """支持用户自主接入告警数据
+        r"""支持用户自主接入告警数据
 
         支持租户将自开发的监控系统按照标准化集成至COC，集成后告警会按照标准格式上报至COC告警中心
         
@@ -308,7 +308,7 @@ class CocClient(Client):
         return http_info
 
     def create_report_prometheus_event(self, request):
-        """Prometheus事件接入
+        r"""Prometheus事件接入
 
         Prometheus事件接入
         
@@ -375,7 +375,7 @@ class CocClient(Client):
         return http_info
 
     def create_coc_incident(self, request):
-        """CreateExternalIncident 创建事件单
+        r"""CreateExternalIncident 创建事件单
 
         CreateExternalIncident 创建事件单
         
@@ -440,7 +440,7 @@ class CocClient(Client):
         return http_info
 
     def handle_coc_incident(self, request):
-        """HandleCocIncident处理事件单
+        r"""HandleCocIncident处理事件单
 
         HandleCocIncident 处理事件单
         
@@ -505,7 +505,7 @@ class CocClient(Client):
         return http_info
 
     def list_coc_ticket_operation_histories(self, request):
-        """GetCocTicketOperationHistories 获取事件单历史
+        r"""GetCocTicketOperationHistories 获取事件单历史
 
         ListCocTicketOperationHistories  获取事件单历史
         
@@ -572,7 +572,7 @@ class CocClient(Client):
         return http_info
 
     def show_coc_incident_detail(self, request):
-        """GetCocIncidentDetail 获取事件单详细
+        r"""GetCocIncidentDetail 获取事件单详细
 
         ShowCocIncidentDetail  获取事件单详细
         
@@ -637,7 +637,7 @@ class CocClient(Client):
         return http_info
 
     def create_coc_issues(self, request):
-        """CreateExternalIssues 创建问题单
+        r"""CreateExternalIssues 创建问题单
 
         CreateExternalIssues 创建问题单
         
@@ -702,7 +702,7 @@ class CocClient(Client):
         return http_info
 
     def show_coc_issues_detail(self, request):
-        """GetCocIssuesDetail 获取事件单详细
+        r"""GetCocIssuesDetail 获取事件单详细
 
         ShowCocIssuesDetail  获取事件单详细
         
@@ -767,7 +767,7 @@ class CocClient(Client):
         return http_info
 
     def list_authorizable_tickets_external(self, request):
-        """查询COC可授权单列表
+        r"""查询COC可授权单列表
 
         查询COC可授权单列表（变更单号、事件单号、warroom和告警）
         
@@ -832,7 +832,7 @@ class CocClient(Client):
         return http_info
 
     def list_personnel(self, request):
-        """查询人员列表
+        r"""查询人员列表
 
         获取人员列表（公网调用）
         
@@ -903,7 +903,7 @@ class CocClient(Client):
         return http_info
 
     def sync_add_personnel(self, request):
-        """同步人员
+        r"""同步人员
 
         同步人员
         
@@ -968,7 +968,7 @@ class CocClient(Client):
         return http_info
 
     def create_scheduled_task(self, request):
-        """新建定时运维
+        r"""新建定时运维
 
         Create Scheduled Task
         
@@ -1033,7 +1033,7 @@ class CocClient(Client):
         return http_info
 
     def delete_scheduled_task(self, request):
-        """删除ScheduledTask
+        r"""删除ScheduledTask
 
         Delete scheduled task by id
         
@@ -1098,7 +1098,7 @@ class CocClient(Client):
         return http_info
 
     def disable_scheduled_task(self, request):
-        """禁用ScheduledTask
+        r"""禁用ScheduledTask
 
         Disable scheduled task by id
         
@@ -1163,7 +1163,7 @@ class CocClient(Client):
         return http_info
 
     def enable_scheduled_task(self, request):
-        """启用ScheduledTask
+        r"""启用ScheduledTask
 
         Enable scheduled task by id
         
@@ -1230,7 +1230,7 @@ class CocClient(Client):
         return http_info
 
     def list_scheduled_task(self, request):
-        """查询ScheduledTask列表
+        r"""查询ScheduledTask列表
 
         Get ScheduledTask infos
         
@@ -1331,7 +1331,7 @@ class CocClient(Client):
         return http_info
 
     def list_scheduled_task_history(self, request):
-        """查询定时运维历史记录
+        r"""查询定时运维历史记录
 
         get scheduled task history list
         
@@ -1420,7 +1420,7 @@ class CocClient(Client):
         return http_info
 
     def show_scheduled_task(self, request):
-        """查询ScheduledTask
+        r"""查询ScheduledTask
 
         Get ScheduledTask info by id
         
@@ -1485,7 +1485,7 @@ class CocClient(Client):
         return http_info
 
     def update_scheduled_task(self, request):
-        """修改ScheduledTask
+        r"""修改ScheduledTask
 
         Update ScheduledTask
         
@@ -1552,7 +1552,7 @@ class CocClient(Client):
         return http_info
 
     def get_script_job_batch(self, request):
-        """展示批次详情
+        r"""展示批次详情
 
         查询：批次详情，分页获取批次中的实例列表。
         过滤条件：分页参数
@@ -1632,7 +1632,7 @@ class CocClient(Client):
         return http_info
 
     def get_script_job_info(self, request):
-        """展示脚本工单基本信息
+        r"""展示脚本工单基本信息
 
         查询执行：基本信息
         执行类型、执行名称、创建人、创建时间、结束时间、执行状态、标签（脚本id，脚本名，执行脚本参数，执行用户，超时时长、成功率阈值）
@@ -1706,7 +1706,7 @@ class CocClient(Client):
         return http_info
 
     def get_script_job_statistics(self, request):
-        """展示实例状态统计信息
+        r"""展示实例状态统计信息
 
         查询：实例状态统计信息。
         
@@ -1777,7 +1777,7 @@ class CocClient(Client):
         return http_info
 
     def list_script_job_batches(self, request):
-        """展示批次列表
+        r"""展示批次列表
 
         查询：批次列表
         返回：批次index、批次标签
@@ -1849,7 +1849,7 @@ class CocClient(Client):
         return http_info
 
     def list_script_jobs(self, request):
-        """展示工单列表
+        r"""展示工单列表
 
         查询作业工单列表，分页查询
         过滤：创建时间开始，创建时间结束、创建人
@@ -1932,7 +1932,7 @@ class CocClient(Client):
         return http_info
 
     def operate_script_job(self, request):
-        """操作脚本工单
+        r"""操作脚本工单
 
         操作类型：取消实例、跳过批次、取消整个工单、暂停整个工单、继续整个工单
         
@@ -2005,7 +2005,7 @@ class CocClient(Client):
         return http_info
 
     def create_script(self, request):
-        """创建脚本
+        r"""创建脚本
 
         创建作业脚本：自定义脚本
         - 脚本有标签属性，表示是高危脚本。创建时候不需要对脚本进行是否是高危的二次校验。
@@ -2087,7 +2087,7 @@ class CocClient(Client):
         return http_info
 
     def delete_script(self, request):
-        """删除自定义脚本
+        r"""删除自定义脚本
 
         删除作业脚本：自定义脚本。
         
@@ -2158,7 +2158,7 @@ class CocClient(Client):
         return http_info
 
     def execute_script(self, request):
-        """执行自定义脚本
+        r"""执行自定义脚本
 
         执行脚本
         
@@ -2238,7 +2238,7 @@ class CocClient(Client):
         return http_info
 
     def get_script(self, request):
-        """获取自定义脚本详情
+        r"""获取自定义脚本详情
 
         获取脚本详情
         约束条件：
@@ -2311,7 +2311,7 @@ class CocClient(Client):
         return http_info
 
     def list_scripts(self, request):
-        """查询脚本列表
+        r"""查询脚本列表
 
         作业脚本列表：自定义脚本
         
@@ -2396,7 +2396,7 @@ class CocClient(Client):
         return http_info
 
     def update_script(self, request):
-        """修改脚本
+        r"""修改脚本
 
         修改作业脚本：自定义脚本
         约束条件：
@@ -2477,7 +2477,7 @@ class CocClient(Client):
         return http_info
 
     def execute_public_script(self, request):
-        """执行公共脚本
+        r"""执行公共脚本
 
         执行公共脚本
         脚本入参、超时时间、执行用户、资源受限
@@ -2555,7 +2555,7 @@ class CocClient(Client):
         return http_info
 
     def get_public_script(self, request):
-        """展示公共脚本详情
+        r"""展示公共脚本详情
 
         展示公共脚本详情
         
@@ -2626,7 +2626,7 @@ class CocClient(Client):
         return http_info
 
     def list_public_scripts(self, request):
-        """获取公共脚本列表
+        r"""获取公共脚本列表
 
         获取公共脚本列表，分页逻辑：采用limit+marker方式，提高分页效率。用自增id作为marker参数
         
@@ -2707,7 +2707,7 @@ class CocClient(Client):
         return http_info
 
     def show_sla_customized_template(self, request):
-        """查询Sla模板详情
+        r"""查询Sla模板详情
 
         Get Sla Template info by id
         
@@ -2772,7 +2772,7 @@ class CocClient(Client):
         return http_info
 
     def show_sla_order(self, request):
-        """查询SLA工单信息
+        r"""查询SLA工单信息
 
         SLA 工单信息
         
@@ -2837,7 +2837,7 @@ class CocClient(Client):
         return http_info
 
     def list_interrupt_records(self, request):
-        """查询中断记录
+        r"""查询中断记录
 
         查询中断记录
         
@@ -2914,7 +2914,7 @@ class CocClient(Client):
         return http_info
 
     def show_slo_detail(self, request):
-        """查询SLO详情
+        r"""查询SLO详情
 
         查询SLO详情
         
@@ -2979,7 +2979,7 @@ class CocClient(Client):
         return http_info
 
     def create_war_room(self, request):
-        """创建租户区WarRoom
+        r"""创建租户区WarRoom
 
         创建租户区WarRoom
         
@@ -3044,7 +3044,7 @@ class CocClient(Client):
         return http_info
 
     def list_war_rooms(self, request):
-        """查询租户区WarRoom信息列表
+        r"""查询租户区WarRoom信息列表
 
         查询租户区WarRoom信息列表
         
@@ -3109,7 +3109,7 @@ class CocClient(Client):
         return http_info
 
     def list_applications(self, request):
-        """查询应用
+        r"""查询应用
 
         查询应用
         
@@ -3185,7 +3185,7 @@ class CocClient(Client):
         return http_info
 
     def list_application_model(self, request):
-        """查询下一级的子应用、组件、分组
+        r"""查询下一级的子应用、组件、分组
 
         查询下一级的子应用、组件、分组
         
@@ -3258,7 +3258,7 @@ class CocClient(Client):
         return http_info
 
     def batch_create_application_view(self, request):
-        """批量创建应用视图
+        r"""批量创建应用视图
 
         批量创建应用视图
         
@@ -3323,7 +3323,7 @@ class CocClient(Client):
         return http_info
 
     def show_patch_baseline(self, request):
-        """查询Baseline
+        r"""查询Baseline
 
         Get baseline info by id
         
@@ -3388,7 +3388,7 @@ class CocClient(Client):
         return http_info
 
     def list_cce_compliant(self, request):
-        """获取合规性报告cce信息
+        r"""获取合规性报告cce信息
 
         分页获取合规性报告cce信息
         
@@ -3455,7 +3455,7 @@ class CocClient(Client):
         return http_info
 
     def list_instance_compliant(self, request):
-        """获取节点合规性报告
+        r"""获取节点合规性报告
 
         分页获取节点合规性报告
         
@@ -3550,7 +3550,7 @@ class CocClient(Client):
         return http_info
 
     def show_instance_patch_items(self, request):
-        """分页获取节点补丁详情
+        r"""分页获取节点补丁详情
 
         分页获取节点补丁详情
         
@@ -3633,7 +3633,7 @@ class CocClient(Client):
         return http_info
 
     def list_multi_cloud_resources(self, request):
-        """查询用户在云厂商中的资源
+        r"""查询用户在云厂商中的资源
 
         查询用户在云厂商中的资源
         
@@ -3713,7 +3713,7 @@ class CocClient(Client):
         return http_info
 
     def count_multi_resources(self, request):
-        """查询用户各种资源总数
+        r"""查询用户各种资源总数
 
         查询用户各种资源总数
         
@@ -3784,7 +3784,7 @@ class CocClient(Client):
         return http_info
 
     def list_resource(self, request):
-        """查询用户所有资源
+        r"""查询用户所有资源
 
         查询用户所有资源
         
@@ -3894,7 +3894,7 @@ class CocClient(Client):
         return http_info
 
     def sync_resource(self, request):
-        """从RMS同步用户所有资源
+        r"""从RMS同步用户所有资源
 
         从RMS同步用户所有资源
         

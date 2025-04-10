@@ -23,7 +23,7 @@ class IsAutoPay:
     }
 
     def __init__(self):
-        """IsAutoPay
+        r"""IsAutoPay
 
         The model defined in huaweicloud sdk
 

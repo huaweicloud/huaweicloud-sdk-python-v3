@@ -27,7 +27,7 @@ class CommandParam:
     }
 
     def __init__(self, task_id=None, bucket=None):
-        """CommandParam
+        r"""CommandParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CommandParam:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CommandParam.
+        r"""Gets the task_id of this CommandParam.
 
         任务ID
 
@@ -61,7 +61,7 @@ class CommandParam:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CommandParam.
+        r"""Sets the task_id of this CommandParam.
 
         任务ID
 
@@ -72,7 +72,7 @@ class CommandParam:
 
     @property
     def bucket(self):
-        """Gets the bucket of this CommandParam.
+        r"""Gets the bucket of this CommandParam.
 
         桶名
 
@@ -83,7 +83,7 @@ class CommandParam:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this CommandParam.
+        r"""Sets the bucket of this CommandParam.
 
         桶名
 

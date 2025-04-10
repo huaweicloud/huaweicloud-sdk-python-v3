@@ -25,7 +25,7 @@ class BatchRetryReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchRetryReq
+        r"""BatchRetryReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchRetryReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchRetryReq.
+        r"""Gets the jobs of this BatchRetryReq.
 
         批量续传任务请求列表
 
@@ -53,7 +53,7 @@ class BatchRetryReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchRetryReq.
+        r"""Sets the jobs of this BatchRetryReq.
 
         批量续传任务请求列表
 

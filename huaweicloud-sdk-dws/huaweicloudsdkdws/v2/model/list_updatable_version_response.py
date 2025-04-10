@@ -28,7 +28,7 @@ class ListUpdatableVersionResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListUpdatableVersionResponse
+        r"""ListUpdatableVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUpdatableVersionResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListUpdatableVersionResponse.
+        r"""Gets the count of this ListUpdatableVersionResponse.
 
         集群升级路径总条数
 
@@ -62,7 +62,7 @@ class ListUpdatableVersionResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListUpdatableVersionResponse.
+        r"""Sets the count of this ListUpdatableVersionResponse.
 
         集群升级路径总条数
 
@@ -73,7 +73,7 @@ class ListUpdatableVersionResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListUpdatableVersionResponse.
+        r"""Gets the items of this ListUpdatableVersionResponse.
 
         集群升级路径列表
 
@@ -84,7 +84,7 @@ class ListUpdatableVersionResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListUpdatableVersionResponse.
+        r"""Sets the items of this ListUpdatableVersionResponse.
 
         集群升级路径列表
 

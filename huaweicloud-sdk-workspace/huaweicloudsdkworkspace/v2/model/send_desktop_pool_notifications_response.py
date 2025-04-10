@@ -26,7 +26,7 @@ class SendDesktopPoolNotificationsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SendDesktopPoolNotificationsResponse
+        r"""SendDesktopPoolNotificationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SendDesktopPoolNotificationsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SendDesktopPoolNotificationsResponse.
+        r"""Gets the job_id of this SendDesktopPoolNotificationsResponse.
 
         发送桌面消息任务id
 
@@ -55,7 +55,7 @@ class SendDesktopPoolNotificationsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SendDesktopPoolNotificationsResponse.
+        r"""Sets the job_id of this SendDesktopPoolNotificationsResponse.
 
         发送桌面消息任务id
 

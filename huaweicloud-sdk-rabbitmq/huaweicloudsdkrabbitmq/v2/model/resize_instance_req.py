@@ -27,7 +27,7 @@ class ResizeInstanceReq:
     }
 
     def __init__(self, new_spec_code=None, new_storage_space=None):
-        """ResizeInstanceReq
+        r"""ResizeInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResizeInstanceReq:
 
     @property
     def new_spec_code(self):
-        """Gets the new_spec_code of this ResizeInstanceReq.
+        r"""Gets the new_spec_code of this ResizeInstanceReq.
 
         规格变更后的规格ID。
 
@@ -59,7 +59,7 @@ class ResizeInstanceReq:
 
     @new_spec_code.setter
     def new_spec_code(self, new_spec_code):
-        """Sets the new_spec_code of this ResizeInstanceReq.
+        r"""Sets the new_spec_code of this ResizeInstanceReq.
 
         规格变更后的规格ID。
 
@@ -70,7 +70,7 @@ class ResizeInstanceReq:
 
     @property
     def new_storage_space(self):
-        """Gets the new_storage_space of this ResizeInstanceReq.
+        r"""Gets the new_storage_space of this ResizeInstanceReq.
 
         规格变更后的消息存储空间，单位：GB。
 
@@ -81,7 +81,7 @@ class ResizeInstanceReq:
 
     @new_storage_space.setter
     def new_storage_space(self, new_storage_space):
-        """Sets the new_storage_space of this ResizeInstanceReq.
+        r"""Sets the new_storage_space of this ResizeInstanceReq.
 
         规格变更后的消息存储空间，单位：GB。
 

@@ -23,7 +23,7 @@ class ListSqlAlarmRulesRequest:
     }
 
     def __init__(self):
-        """ListSqlAlarmRulesRequest
+        r"""ListSqlAlarmRulesRequest
 
         The model defined in huaweicloud sdk
 

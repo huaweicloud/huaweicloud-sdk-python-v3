@@ -27,7 +27,7 @@ class CreateRunRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """CreateRunRequest
+        r"""CreateRunRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRunRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateRunRequest.
+        r"""Gets the job_id of this CreateRunRequest.
 
         作业ID。
 
@@ -60,7 +60,7 @@ class CreateRunRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateRunRequest.
+        r"""Sets the job_id of this CreateRunRequest.
 
         作业ID。
 
@@ -71,7 +71,7 @@ class CreateRunRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRunRequest.
+        r"""Gets the body of this CreateRunRequest.
 
         :return: The body of this CreateRunRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequestBody`
@@ -80,7 +80,7 @@ class CreateRunRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRunRequest.
+        r"""Sets the body of this CreateRunRequest.
 
         :param body: The body of this CreateRunRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequestBody`

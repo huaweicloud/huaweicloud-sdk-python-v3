@@ -51,7 +51,7 @@ class PrivateDnat:
     }
 
     def __init__(self, id=None, project_id=None, description=None, transit_ip_id=None, gateway_id=None, network_interface_id=None, type=None, protocol=None, private_ip_address=None, internal_service_port=None, transit_service_port=None, enterprise_project_id=None, created_at=None, updated_at=None):
-        """PrivateDnat
+        r"""PrivateDnat
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PrivateDnat:
 
     @property
     def id(self):
-        """Gets the id of this PrivateDnat.
+        r"""Gets the id of this PrivateDnat.
 
         DNAT规则的ID。
 
@@ -145,7 +145,7 @@ class PrivateDnat:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrivateDnat.
+        r"""Sets the id of this PrivateDnat.
 
         DNAT规则的ID。
 
@@ -156,7 +156,7 @@ class PrivateDnat:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PrivateDnat.
+        r"""Gets the project_id of this PrivateDnat.
 
         项目的ID。
 
@@ -167,7 +167,7 @@ class PrivateDnat:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PrivateDnat.
+        r"""Sets the project_id of this PrivateDnat.
 
         项目的ID。
 
@@ -178,7 +178,7 @@ class PrivateDnat:
 
     @property
     def description(self):
-        """Gets the description of this PrivateDnat.
+        r"""Gets the description of this PrivateDnat.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -189,7 +189,7 @@ class PrivateDnat:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PrivateDnat.
+        r"""Sets the description of this PrivateDnat.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -200,7 +200,7 @@ class PrivateDnat:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this PrivateDnat.
+        r"""Gets the transit_ip_id of this PrivateDnat.
 
         中转IP的ID。
 
@@ -211,7 +211,7 @@ class PrivateDnat:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this PrivateDnat.
+        r"""Sets the transit_ip_id of this PrivateDnat.
 
         中转IP的ID。
 
@@ -222,7 +222,7 @@ class PrivateDnat:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this PrivateDnat.
+        r"""Gets the gateway_id of this PrivateDnat.
 
         私网NAT网关实例的ID。
 
@@ -233,7 +233,7 @@ class PrivateDnat:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this PrivateDnat.
+        r"""Sets the gateway_id of this PrivateDnat.
 
         私网NAT网关实例的ID。
 
@@ -244,7 +244,7 @@ class PrivateDnat:
 
     @property
     def network_interface_id(self):
-        """Gets the network_interface_id of this PrivateDnat.
+        r"""Gets the network_interface_id of this PrivateDnat.
 
         网络接口ID，支持计算、ELB、VIP等实例的端口。
 
@@ -255,7 +255,7 @@ class PrivateDnat:
 
     @network_interface_id.setter
     def network_interface_id(self, network_interface_id):
-        """Sets the network_interface_id of this PrivateDnat.
+        r"""Sets the network_interface_id of this PrivateDnat.
 
         网络接口ID，支持计算、ELB、VIP等实例的端口。
 
@@ -266,7 +266,7 @@ class PrivateDnat:
 
     @property
     def type(self):
-        """Gets the type of this PrivateDnat.
+        r"""Gets the type of this PrivateDnat.
 
         DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
@@ -277,7 +277,7 @@ class PrivateDnat:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PrivateDnat.
+        r"""Sets the type of this PrivateDnat.
 
         DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
@@ -288,7 +288,7 @@ class PrivateDnat:
 
     @property
     def protocol(self):
-        """Gets the protocol of this PrivateDnat.
+        r"""Gets the protocol of this PrivateDnat.
 
         协议类型。 目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -299,7 +299,7 @@ class PrivateDnat:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this PrivateDnat.
+        r"""Sets the protocol of this PrivateDnat.
 
         协议类型。 目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -310,7 +310,7 @@ class PrivateDnat:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this PrivateDnat.
+        r"""Gets the private_ip_address of this PrivateDnat.
 
         后端实例的私网IP地址。
 
@@ -321,7 +321,7 @@ class PrivateDnat:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this PrivateDnat.
+        r"""Sets the private_ip_address of this PrivateDnat.
 
         后端实例的私网IP地址。
 
@@ -332,7 +332,7 @@ class PrivateDnat:
 
     @property
     def internal_service_port(self):
-        """Gets the internal_service_port of this PrivateDnat.
+        r"""Gets the internal_service_port of this PrivateDnat.
 
         后端实例的端口号。
 
@@ -343,7 +343,7 @@ class PrivateDnat:
 
     @internal_service_port.setter
     def internal_service_port(self, internal_service_port):
-        """Sets the internal_service_port of this PrivateDnat.
+        r"""Sets the internal_service_port of this PrivateDnat.
 
         后端实例的端口号。
 
@@ -354,7 +354,7 @@ class PrivateDnat:
 
     @property
     def transit_service_port(self):
-        """Gets the transit_service_port of this PrivateDnat.
+        r"""Gets the transit_service_port of this PrivateDnat.
 
         中转IP的端口号。
 
@@ -365,7 +365,7 @@ class PrivateDnat:
 
     @transit_service_port.setter
     def transit_service_port(self, transit_service_port):
-        """Sets the transit_service_port of this PrivateDnat.
+        r"""Sets the transit_service_port of this PrivateDnat.
 
         中转IP的端口号。
 
@@ -376,7 +376,7 @@ class PrivateDnat:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PrivateDnat.
+        r"""Gets the enterprise_project_id of this PrivateDnat.
 
         企业项目ID。创建DNAT规则时，关联的企业项目ID。
 
@@ -387,7 +387,7 @@ class PrivateDnat:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PrivateDnat.
+        r"""Sets the enterprise_project_id of this PrivateDnat.
 
         企业项目ID。创建DNAT规则时，关联的企业项目ID。
 
@@ -398,7 +398,7 @@ class PrivateDnat:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PrivateDnat.
+        r"""Gets the created_at of this PrivateDnat.
 
         DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -409,7 +409,7 @@ class PrivateDnat:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PrivateDnat.
+        r"""Sets the created_at of this PrivateDnat.
 
         DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -420,7 +420,7 @@ class PrivateDnat:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PrivateDnat.
+        r"""Gets the updated_at of this PrivateDnat.
 
         DNAT规则的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -431,7 +431,7 @@ class PrivateDnat:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PrivateDnat.
+        r"""Sets the updated_at of this PrivateDnat.
 
         DNAT规则的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 

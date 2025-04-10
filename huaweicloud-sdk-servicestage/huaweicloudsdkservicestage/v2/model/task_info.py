@@ -41,7 +41,7 @@ class TaskInfo:
     }
 
     def __init__(self, created_at=None, last_health_check=None, messages=None, owner_id=None, task_id=None, task_index=None, task_name=None, task_status=None, task_type=None):
-        """TaskInfo
+        r"""TaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TaskInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TaskInfo.
+        r"""Gets the created_at of this TaskInfo.
 
         创建时间。
 
@@ -110,7 +110,7 @@ class TaskInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TaskInfo.
+        r"""Sets the created_at of this TaskInfo.
 
         创建时间。
 
@@ -121,7 +121,7 @@ class TaskInfo:
 
     @property
     def last_health_check(self):
-        """Gets the last_health_check of this TaskInfo.
+        r"""Gets the last_health_check of this TaskInfo.
 
         健康检查时间。
 
@@ -132,7 +132,7 @@ class TaskInfo:
 
     @last_health_check.setter
     def last_health_check(self, last_health_check):
-        """Sets the last_health_check of this TaskInfo.
+        r"""Sets the last_health_check of this TaskInfo.
 
         健康检查时间。
 
@@ -143,7 +143,7 @@ class TaskInfo:
 
     @property
     def messages(self):
-        """Gets the messages of this TaskInfo.
+        r"""Gets the messages of this TaskInfo.
 
         消息。
 
@@ -154,7 +154,7 @@ class TaskInfo:
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this TaskInfo.
+        r"""Sets the messages of this TaskInfo.
 
         消息。
 
@@ -165,7 +165,7 @@ class TaskInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this TaskInfo.
+        r"""Gets the owner_id of this TaskInfo.
 
         创建用户ID。
 
@@ -176,7 +176,7 @@ class TaskInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this TaskInfo.
+        r"""Sets the owner_id of this TaskInfo.
 
         创建用户ID。
 
@@ -187,7 +187,7 @@ class TaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskInfo.
+        r"""Gets the task_id of this TaskInfo.
 
         任务ID。
 
@@ -198,7 +198,7 @@ class TaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskInfo.
+        r"""Sets the task_id of this TaskInfo.
 
         任务ID。
 
@@ -209,7 +209,7 @@ class TaskInfo:
 
     @property
     def task_index(self):
-        """Gets the task_index of this TaskInfo.
+        r"""Gets the task_index of this TaskInfo.
 
         任务序号。
 
@@ -220,7 +220,7 @@ class TaskInfo:
 
     @task_index.setter
     def task_index(self, task_index):
-        """Sets the task_index of this TaskInfo.
+        r"""Sets the task_index of this TaskInfo.
 
         任务序号。
 
@@ -231,7 +231,7 @@ class TaskInfo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskInfo.
+        r"""Gets the task_name of this TaskInfo.
 
         任务名称。
 
@@ -242,7 +242,7 @@ class TaskInfo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskInfo.
+        r"""Sets the task_name of this TaskInfo.
 
         任务名称。
 
@@ -253,7 +253,7 @@ class TaskInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this TaskInfo.
+        r"""Gets the task_status of this TaskInfo.
 
         任务状态。
 
@@ -264,7 +264,7 @@ class TaskInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this TaskInfo.
+        r"""Sets the task_status of this TaskInfo.
 
         任务状态。
 
@@ -275,7 +275,7 @@ class TaskInfo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TaskInfo.
+        r"""Gets the task_type of this TaskInfo.
 
         任务类型。
 
@@ -286,7 +286,7 @@ class TaskInfo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TaskInfo.
+        r"""Sets the task_type of this TaskInfo.
 
         任务类型。
 

@@ -27,7 +27,7 @@ class SwitchRiskRuleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchRiskRuleRequest
+        r"""SwitchRiskRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchRiskRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchRiskRuleRequest.
+        r"""Gets the instance_id of this SwitchRiskRuleRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class SwitchRiskRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchRiskRuleRequest.
+        r"""Sets the instance_id of this SwitchRiskRuleRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class SwitchRiskRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchRiskRuleRequest.
+        r"""Gets the body of this SwitchRiskRuleRequest.
 
         :return: The body of this SwitchRiskRuleRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`
@@ -80,7 +80,7 @@ class SwitchRiskRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchRiskRuleRequest.
+        r"""Sets the body of this SwitchRiskRuleRequest.
 
         :param body: The body of this SwitchRiskRuleRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`

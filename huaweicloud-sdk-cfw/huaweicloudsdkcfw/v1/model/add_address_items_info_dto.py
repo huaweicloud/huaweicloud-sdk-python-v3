@@ -27,7 +27,7 @@ class AddAddressItemsInfoDto:
     }
 
     def __init__(self, set_id=None, address_items=None):
-        """AddAddressItemsInfoDto
+        r"""AddAddressItemsInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddAddressItemsInfoDto:
 
     @property
     def set_id(self):
-        """Gets the set_id of this AddAddressItemsInfoDto.
+        r"""Gets the set_id of this AddAddressItemsInfoDto.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -61,7 +61,7 @@ class AddAddressItemsInfoDto:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this AddAddressItemsInfoDto.
+        r"""Sets the set_id of this AddAddressItemsInfoDto.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -72,7 +72,7 @@ class AddAddressItemsInfoDto:
 
     @property
     def address_items(self):
-        """Gets the address_items of this AddAddressItemsInfoDto.
+        r"""Gets the address_items of this AddAddressItemsInfoDto.
 
         地址组成员列表
 
@@ -83,7 +83,7 @@ class AddAddressItemsInfoDto:
 
     @address_items.setter
     def address_items(self, address_items):
-        """Sets the address_items of this AddAddressItemsInfoDto.
+        r"""Sets the address_items of this AddAddressItemsInfoDto.
 
         地址组成员列表
 

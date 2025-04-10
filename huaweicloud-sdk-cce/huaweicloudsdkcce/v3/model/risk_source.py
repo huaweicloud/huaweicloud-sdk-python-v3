@@ -31,7 +31,7 @@ class RiskSource:
     }
 
     def __init__(self, configuration_risks=None, deprecated_api_risks=None, node_risks=None, addon_risks=None):
-        """RiskSource
+        r"""RiskSource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RiskSource:
 
     @property
     def configuration_risks(self):
-        """Gets the configuration_risks of this RiskSource.
+        r"""Gets the configuration_risks of this RiskSource.
 
         配置风险项
 
@@ -75,7 +75,7 @@ class RiskSource:
 
     @configuration_risks.setter
     def configuration_risks(self, configuration_risks):
-        """Sets the configuration_risks of this RiskSource.
+        r"""Sets the configuration_risks of this RiskSource.
 
         配置风险项
 
@@ -86,7 +86,7 @@ class RiskSource:
 
     @property
     def deprecated_api_risks(self):
-        """Gets the deprecated_api_risks of this RiskSource.
+        r"""Gets the deprecated_api_risks of this RiskSource.
 
         废弃API风险
 
@@ -97,7 +97,7 @@ class RiskSource:
 
     @deprecated_api_risks.setter
     def deprecated_api_risks(self, deprecated_api_risks):
-        """Sets the deprecated_api_risks of this RiskSource.
+        r"""Sets the deprecated_api_risks of this RiskSource.
 
         废弃API风险
 
@@ -108,7 +108,7 @@ class RiskSource:
 
     @property
     def node_risks(self):
-        """Gets the node_risks of this RiskSource.
+        r"""Gets the node_risks of this RiskSource.
 
         节点风险
 
@@ -119,7 +119,7 @@ class RiskSource:
 
     @node_risks.setter
     def node_risks(self, node_risks):
-        """Sets the node_risks of this RiskSource.
+        r"""Sets the node_risks of this RiskSource.
 
         节点风险
 
@@ -130,7 +130,7 @@ class RiskSource:
 
     @property
     def addon_risks(self):
-        """Gets the addon_risks of this RiskSource.
+        r"""Gets the addon_risks of this RiskSource.
 
         插件风险
 
@@ -141,7 +141,7 @@ class RiskSource:
 
     @addon_risks.setter
     def addon_risks(self, addon_risks):
-        """Sets the addon_risks of this RiskSource.
+        r"""Sets the addon_risks of this RiskSource.
 
         插件风险
 

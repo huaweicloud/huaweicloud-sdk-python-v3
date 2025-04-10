@@ -29,7 +29,7 @@ class QueryDiagnosisResultItem:
     }
 
     def __init__(self, category=None, name=None, weight=None):
-        """QueryDiagnosisResultItem
+        r"""QueryDiagnosisResultItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryDiagnosisResultItem:
 
     @property
     def category(self):
-        """Gets the category of this QueryDiagnosisResultItem.
+        r"""Gets the category of this QueryDiagnosisResultItem.
 
         诊断项类别。
 
@@ -68,7 +68,7 @@ class QueryDiagnosisResultItem:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this QueryDiagnosisResultItem.
+        r"""Sets the category of this QueryDiagnosisResultItem.
 
         诊断项类别。
 
@@ -79,7 +79,7 @@ class QueryDiagnosisResultItem:
 
     @property
     def name(self):
-        """Gets the name of this QueryDiagnosisResultItem.
+        r"""Gets the name of this QueryDiagnosisResultItem.
 
         诊断项名称。
 
@@ -90,7 +90,7 @@ class QueryDiagnosisResultItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryDiagnosisResultItem.
+        r"""Sets the name of this QueryDiagnosisResultItem.
 
         诊断项名称。
 
@@ -101,7 +101,7 @@ class QueryDiagnosisResultItem:
 
     @property
     def weight(self):
-        """Gets the weight of this QueryDiagnosisResultItem.
+        r"""Gets the weight of this QueryDiagnosisResultItem.
 
         诊断项权重。
 
@@ -112,7 +112,7 @@ class QueryDiagnosisResultItem:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this QueryDiagnosisResultItem.
+        r"""Sets the weight of this QueryDiagnosisResultItem.
 
         诊断项权重。
 

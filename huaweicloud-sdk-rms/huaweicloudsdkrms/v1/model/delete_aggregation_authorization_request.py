@@ -25,7 +25,7 @@ class DeleteAggregationAuthorizationRequest:
     }
 
     def __init__(self, authorized_account_id=None):
-        """DeleteAggregationAuthorizationRequest
+        r"""DeleteAggregationAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAggregationAuthorizationRequest:
 
     @property
     def authorized_account_id(self):
-        """Gets the authorized_account_id of this DeleteAggregationAuthorizationRequest.
+        r"""Gets the authorized_account_id of this DeleteAggregationAuthorizationRequest.
 
         授权的资源聚合器的帐号ID。
 
@@ -53,7 +53,7 @@ class DeleteAggregationAuthorizationRequest:
 
     @authorized_account_id.setter
     def authorized_account_id(self, authorized_account_id):
-        """Sets the authorized_account_id of this DeleteAggregationAuthorizationRequest.
+        r"""Sets the authorized_account_id of this DeleteAggregationAuthorizationRequest.
 
         授权的资源聚合器的帐号ID。
 

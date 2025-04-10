@@ -29,7 +29,7 @@ class ChangePasswordReq:
     }
 
     def __init__(self, original_password=None, new_password=None, ticket=None):
-        """ChangePasswordReq
+        r"""ChangePasswordReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChangePasswordReq:
 
     @property
     def original_password(self):
-        """Gets the original_password of this ChangePasswordReq.
+        r"""Gets the original_password of this ChangePasswordReq.
 
         原始密码
 
@@ -66,7 +66,7 @@ class ChangePasswordReq:
 
     @original_password.setter
     def original_password(self, original_password):
-        """Sets the original_password of this ChangePasswordReq.
+        r"""Sets the original_password of this ChangePasswordReq.
 
         原始密码
 
@@ -77,7 +77,7 @@ class ChangePasswordReq:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ChangePasswordReq.
+        r"""Gets the new_password of this ChangePasswordReq.
 
         新密码
 
@@ -88,7 +88,7 @@ class ChangePasswordReq:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ChangePasswordReq.
+        r"""Sets the new_password of this ChangePasswordReq.
 
         新密码
 
@@ -99,7 +99,7 @@ class ChangePasswordReq:
 
     @property
     def ticket(self):
-        """Gets the ticket of this ChangePasswordReq.
+        r"""Gets the ticket of this ChangePasswordReq.
 
         预验证凭证
 
@@ -110,7 +110,7 @@ class ChangePasswordReq:
 
     @ticket.setter
     def ticket(self, ticket):
-        """Sets the ticket of this ChangePasswordReq.
+        r"""Sets the ticket of this ChangePasswordReq.
 
         预验证凭证
 

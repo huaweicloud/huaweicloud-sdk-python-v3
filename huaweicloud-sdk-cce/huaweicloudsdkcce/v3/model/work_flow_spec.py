@@ -29,7 +29,7 @@ class WorkFlowSpec:
     }
 
     def __init__(self, cluster_id=None, cluster_version=None, target_version=None):
-        """WorkFlowSpec
+        r"""WorkFlowSpec
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class WorkFlowSpec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this WorkFlowSpec.
+        r"""Gets the cluster_id of this WorkFlowSpec.
 
         集群ID，资源唯一标识，创建成功后自动生成，填写无效
 
@@ -67,7 +67,7 @@ class WorkFlowSpec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this WorkFlowSpec.
+        r"""Sets the cluster_id of this WorkFlowSpec.
 
         集群ID，资源唯一标识，创建成功后自动生成，填写无效
 
@@ -78,7 +78,7 @@ class WorkFlowSpec:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this WorkFlowSpec.
+        r"""Gets the cluster_version of this WorkFlowSpec.
 
         本次集群升级的当前版本 
 
@@ -89,7 +89,7 @@ class WorkFlowSpec:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this WorkFlowSpec.
+        r"""Sets the cluster_version of this WorkFlowSpec.
 
         本次集群升级的当前版本 
 
@@ -100,7 +100,7 @@ class WorkFlowSpec:
 
     @property
     def target_version(self):
-        """Gets the target_version of this WorkFlowSpec.
+        r"""Gets the target_version of this WorkFlowSpec.
 
         本次集群升级的目标版本 
 
@@ -111,7 +111,7 @@ class WorkFlowSpec:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this WorkFlowSpec.
+        r"""Sets the target_version of this WorkFlowSpec.
 
         本次集群升级的目标版本 
 

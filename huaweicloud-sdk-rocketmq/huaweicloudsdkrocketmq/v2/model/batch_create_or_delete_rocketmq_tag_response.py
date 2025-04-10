@@ -24,7 +24,7 @@ class BatchCreateOrDeleteRocketmqTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateOrDeleteRocketmqTagResponse
+        r"""BatchCreateOrDeleteRocketmqTagResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class ListSecurityDataCategoriesRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None):
-        """ListSecurityDataCategoriesRequest
+        r"""ListSecurityDataCategoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSecurityDataCategoriesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDataCategoriesRequest.
+        r"""Gets the workspace of this ListSecurityDataCategoriesRequest.
 
         DataArts Studio工作空间ID
 
@@ -67,7 +67,7 @@ class ListSecurityDataCategoriesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDataCategoriesRequest.
+        r"""Sets the workspace of this ListSecurityDataCategoriesRequest.
 
         DataArts Studio工作空间ID
 
@@ -78,7 +78,7 @@ class ListSecurityDataCategoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityDataCategoriesRequest.
+        r"""Gets the limit of this ListSecurityDataCategoriesRequest.
 
         limit
 
@@ -89,7 +89,7 @@ class ListSecurityDataCategoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityDataCategoriesRequest.
+        r"""Sets the limit of this ListSecurityDataCategoriesRequest.
 
         limit
 
@@ -100,7 +100,7 @@ class ListSecurityDataCategoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityDataCategoriesRequest.
+        r"""Gets the offset of this ListSecurityDataCategoriesRequest.
 
         offset
 
@@ -111,7 +111,7 @@ class ListSecurityDataCategoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityDataCategoriesRequest.
+        r"""Sets the offset of this ListSecurityDataCategoriesRequest.
 
         offset
 

@@ -30,7 +30,7 @@ class ShowEntitiesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, entities=None, scroll_id=None):
-        """ShowEntitiesResponse
+        r"""ShowEntitiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowEntitiesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowEntitiesResponse.
+        r"""Gets the count of this ShowEntitiesResponse.
 
         技术资产总数
 
@@ -69,7 +69,7 @@ class ShowEntitiesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowEntitiesResponse.
+        r"""Sets the count of this ShowEntitiesResponse.
 
         技术资产总数
 
@@ -80,7 +80,7 @@ class ShowEntitiesResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowEntitiesResponse.
+        r"""Gets the entities of this ShowEntitiesResponse.
 
         技术资产列表
 
@@ -91,7 +91,7 @@ class ShowEntitiesResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowEntitiesResponse.
+        r"""Sets the entities of this ShowEntitiesResponse.
 
         技术资产列表
 
@@ -102,7 +102,7 @@ class ShowEntitiesResponse(SdkResponse):
 
     @property
     def scroll_id(self):
-        """Gets the scroll_id of this ShowEntitiesResponse.
+        r"""Gets the scroll_id of this ShowEntitiesResponse.
 
         scroll_id
 
@@ -113,7 +113,7 @@ class ShowEntitiesResponse(SdkResponse):
 
     @scroll_id.setter
     def scroll_id(self, scroll_id):
-        """Sets the scroll_id of this ShowEntitiesResponse.
+        r"""Sets the scroll_id of this ShowEntitiesResponse.
 
         scroll_id
 

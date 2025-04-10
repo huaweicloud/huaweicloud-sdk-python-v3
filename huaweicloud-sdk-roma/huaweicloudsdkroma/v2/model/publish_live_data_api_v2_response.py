@@ -38,7 +38,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, ld_api_id=None, group_id=None, env_id=None, api_id=None, deploy_time=None, api_definition=None):
-        """PublishLiveDataApiV2Response
+        r"""PublishLiveDataApiV2Response
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this PublishLiveDataApiV2Response.
+        r"""Gets the id of this PublishLiveDataApiV2Response.
 
         部署的编号
 
@@ -97,7 +97,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublishLiveDataApiV2Response.
+        r"""Sets the id of this PublishLiveDataApiV2Response.
 
         部署的编号
 
@@ -108,7 +108,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this PublishLiveDataApiV2Response.
+        r"""Gets the ld_api_id of this PublishLiveDataApiV2Response.
 
         部署的后端API编号
 
@@ -119,7 +119,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this PublishLiveDataApiV2Response.
+        r"""Sets the ld_api_id of this PublishLiveDataApiV2Response.
 
         部署的后端API编号
 
@@ -130,7 +130,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this PublishLiveDataApiV2Response.
+        r"""Gets the group_id of this PublishLiveDataApiV2Response.
 
         部署的前端API分组编号
 
@@ -141,7 +141,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PublishLiveDataApiV2Response.
+        r"""Sets the group_id of this PublishLiveDataApiV2Response.
 
         部署的前端API分组编号
 
@@ -152,7 +152,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def env_id(self):
-        """Gets the env_id of this PublishLiveDataApiV2Response.
+        r"""Gets the env_id of this PublishLiveDataApiV2Response.
 
         部署的环境编号
 
@@ -163,7 +163,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this PublishLiveDataApiV2Response.
+        r"""Sets the env_id of this PublishLiveDataApiV2Response.
 
         部署的环境编号
 
@@ -174,7 +174,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def api_id(self):
-        """Gets the api_id of this PublishLiveDataApiV2Response.
+        r"""Gets the api_id of this PublishLiveDataApiV2Response.
 
         部署的前端API编号
 
@@ -185,7 +185,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this PublishLiveDataApiV2Response.
+        r"""Sets the api_id of this PublishLiveDataApiV2Response.
 
         部署的前端API编号
 
@@ -196,7 +196,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def deploy_time(self):
-        """Gets the deploy_time of this PublishLiveDataApiV2Response.
+        r"""Gets the deploy_time of this PublishLiveDataApiV2Response.
 
         部署时间
 
@@ -207,7 +207,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @deploy_time.setter
     def deploy_time(self, deploy_time):
-        """Sets the deploy_time of this PublishLiveDataApiV2Response.
+        r"""Sets the deploy_time of this PublishLiveDataApiV2Response.
 
         部署时间
 
@@ -218,7 +218,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @property
     def api_definition(self):
-        """Gets the api_definition of this PublishLiveDataApiV2Response.
+        r"""Gets the api_definition of this PublishLiveDataApiV2Response.
 
         :return: The api_definition of this PublishLiveDataApiV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.LdApiInfo`
@@ -227,7 +227,7 @@ class PublishLiveDataApiV2Response(SdkResponse):
 
     @api_definition.setter
     def api_definition(self, api_definition):
-        """Sets the api_definition of this PublishLiveDataApiV2Response.
+        r"""Sets the api_definition of this PublishLiveDataApiV2Response.
 
         :param api_definition: The api_definition of this PublishLiveDataApiV2Response.
         :type api_definition: :class:`huaweicloudsdkroma.v2.LdApiInfo`

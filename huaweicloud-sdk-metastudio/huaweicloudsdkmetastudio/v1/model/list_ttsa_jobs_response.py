@@ -30,7 +30,7 @@ class ListTtsaJobsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, ttsa_jobs=None, x_request_id=None):
-        """ListTtsaJobsResponse
+        r"""ListTtsaJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTtsaJobsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTtsaJobsResponse.
+        r"""Gets the total of this ListTtsaJobsResponse.
 
         语音驱动任务总数。
 
@@ -69,7 +69,7 @@ class ListTtsaJobsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTtsaJobsResponse.
+        r"""Sets the total of this ListTtsaJobsResponse.
 
         语音驱动任务总数。
 
@@ -80,7 +80,7 @@ class ListTtsaJobsResponse(SdkResponse):
 
     @property
     def ttsa_jobs(self):
-        """Gets the ttsa_jobs of this ListTtsaJobsResponse.
+        r"""Gets the ttsa_jobs of this ListTtsaJobsResponse.
 
         语音驱动任务列表。
 
@@ -91,7 +91,7 @@ class ListTtsaJobsResponse(SdkResponse):
 
     @ttsa_jobs.setter
     def ttsa_jobs(self, ttsa_jobs):
-        """Sets the ttsa_jobs of this ListTtsaJobsResponse.
+        r"""Sets the ttsa_jobs of this ListTtsaJobsResponse.
 
         语音驱动任务列表。
 
@@ -102,7 +102,7 @@ class ListTtsaJobsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTtsaJobsResponse.
+        r"""Gets the x_request_id of this ListTtsaJobsResponse.
 
         :return: The x_request_id of this ListTtsaJobsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListTtsaJobsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTtsaJobsResponse.
+        r"""Sets the x_request_id of this ListTtsaJobsResponse.
 
         :param x_request_id: The x_request_id of this ListTtsaJobsResponse.
         :type x_request_id: str

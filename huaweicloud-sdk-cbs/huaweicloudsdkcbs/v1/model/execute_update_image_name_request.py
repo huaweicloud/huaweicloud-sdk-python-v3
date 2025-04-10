@@ -27,7 +27,7 @@ class ExecuteUpdateImageNameRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """ExecuteUpdateImageNameRequest
+        r"""ExecuteUpdateImageNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteUpdateImageNameRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ExecuteUpdateImageNameRequest.
+        r"""Gets the image_id of this ExecuteUpdateImageNameRequest.
 
         图片id
 
@@ -60,7 +60,7 @@ class ExecuteUpdateImageNameRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ExecuteUpdateImageNameRequest.
+        r"""Sets the image_id of this ExecuteUpdateImageNameRequest.
 
         图片id
 
@@ -71,7 +71,7 @@ class ExecuteUpdateImageNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteUpdateImageNameRequest.
+        r"""Gets the body of this ExecuteUpdateImageNameRequest.
 
         :return: The body of this ExecuteUpdateImageNameRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.UpdateImageNameReq`
@@ -80,7 +80,7 @@ class ExecuteUpdateImageNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteUpdateImageNameRequest.
+        r"""Sets the body of this ExecuteUpdateImageNameRequest.
 
         :param body: The body of this ExecuteUpdateImageNameRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.UpdateImageNameReq`

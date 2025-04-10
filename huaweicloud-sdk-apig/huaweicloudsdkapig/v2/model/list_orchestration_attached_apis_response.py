@@ -30,7 +30,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apis=None):
-        """ListOrchestrationAttachedApisResponse
+        r"""ListOrchestrationAttachedApisResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListOrchestrationAttachedApisResponse.
+        r"""Gets the size of this ListOrchestrationAttachedApisResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListOrchestrationAttachedApisResponse.
+        r"""Sets the size of this ListOrchestrationAttachedApisResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListOrchestrationAttachedApisResponse.
+        r"""Gets the total of this ListOrchestrationAttachedApisResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListOrchestrationAttachedApisResponse.
+        r"""Sets the total of this ListOrchestrationAttachedApisResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
 
     @property
     def apis(self):
-        """Gets the apis of this ListOrchestrationAttachedApisResponse.
+        r"""Gets the apis of this ListOrchestrationAttachedApisResponse.
 
         编排规则绑定的API列表。
 
@@ -111,7 +111,7 @@ class ListOrchestrationAttachedApisResponse(SdkResponse):
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ListOrchestrationAttachedApisResponse.
+        r"""Sets the apis of this ListOrchestrationAttachedApisResponse.
 
         编排规则绑定的API列表。
 

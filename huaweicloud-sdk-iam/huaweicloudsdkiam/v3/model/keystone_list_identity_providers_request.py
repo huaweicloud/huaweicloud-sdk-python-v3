@@ -23,7 +23,7 @@ class KeystoneListIdentityProvidersRequest:
     }
 
     def __init__(self):
-        """KeystoneListIdentityProvidersRequest
+        r"""KeystoneListIdentityProvidersRequest
 
         The model defined in huaweicloud sdk
 

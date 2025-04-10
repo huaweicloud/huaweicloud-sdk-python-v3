@@ -26,7 +26,11 @@ class ListIsolatedFileRequest:
         'file_hash': 'str',
         'asset_value': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'isolation_status': 'str',
+        'last_days': 'int',
+        'begin_time': 'int',
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -39,17 +43,21 @@ class ListIsolatedFileRequest:
         'file_hash': 'file_hash',
         'asset_value': 'asset_value',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'isolation_status': 'isolation_status',
+        'last_days': 'last_days',
+        'begin_time': 'begin_time',
+        'end_time': 'end_time'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, file_path=None, host_name=None, private_ip=None, public_ip=None, file_hash=None, asset_value=None, offset=None, limit=None):
-        """ListIsolatedFileRequest
+    def __init__(self, region=None, enterprise_project_id=None, file_path=None, host_name=None, private_ip=None, public_ip=None, file_hash=None, asset_value=None, offset=None, limit=None, isolation_status=None, last_days=None, begin_time=None, end_time=None):
+        r"""ListIsolatedFileRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param file_path: 文件路径
         :type file_path: str
@@ -67,6 +75,14 @@ class ListIsolatedFileRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
+        :param isolation_status: 隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
+        :type isolation_status: str
+        :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
+        :type last_days: int
+        :param begin_time: 自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        :type begin_time: int
+        :param end_time: 自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        :type end_time: int
         """
         
         
@@ -81,6 +97,10 @@ class ListIsolatedFileRequest:
         self._asset_value = None
         self._offset = None
         self._limit = None
+        self._isolation_status = None
+        self._last_days = None
+        self._begin_time = None
+        self._end_time = None
         self.discriminator = None
 
         self.region = region
@@ -102,10 +122,18 @@ class ListIsolatedFileRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if isolation_status is not None:
+            self.isolation_status = isolation_status
+        if last_days is not None:
+            self.last_days = last_days
+        if begin_time is not None:
+            self.begin_time = begin_time
+        if end_time is not None:
+            self.end_time = end_time
 
     @property
     def region(self):
-        """Gets the region of this ListIsolatedFileRequest.
+        r"""Gets the region of this ListIsolatedFileRequest.
 
         Region ID
 
@@ -116,7 +144,7 @@ class ListIsolatedFileRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListIsolatedFileRequest.
+        r"""Sets the region of this ListIsolatedFileRequest.
 
         Region ID
 
@@ -127,9 +155,9 @@ class ListIsolatedFileRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListIsolatedFileRequest.
+        r"""Gets the enterprise_project_id of this ListIsolatedFileRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListIsolatedFileRequest.
         :rtype: str
@@ -138,9 +166,9 @@ class ListIsolatedFileRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListIsolatedFileRequest.
+        r"""Sets the enterprise_project_id of this ListIsolatedFileRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListIsolatedFileRequest.
         :type enterprise_project_id: str
@@ -149,7 +177,7 @@ class ListIsolatedFileRequest:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ListIsolatedFileRequest.
+        r"""Gets the file_path of this ListIsolatedFileRequest.
 
         文件路径
 
@@ -160,7 +188,7 @@ class ListIsolatedFileRequest:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ListIsolatedFileRequest.
+        r"""Sets the file_path of this ListIsolatedFileRequest.
 
         文件路径
 
@@ -171,7 +199,7 @@ class ListIsolatedFileRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListIsolatedFileRequest.
+        r"""Gets the host_name of this ListIsolatedFileRequest.
 
         服务器名称
 
@@ -182,7 +210,7 @@ class ListIsolatedFileRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListIsolatedFileRequest.
+        r"""Sets the host_name of this ListIsolatedFileRequest.
 
         服务器名称
 
@@ -193,7 +221,7 @@ class ListIsolatedFileRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListIsolatedFileRequest.
+        r"""Gets the private_ip of this ListIsolatedFileRequest.
 
         服务器私有IP
 
@@ -204,7 +232,7 @@ class ListIsolatedFileRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListIsolatedFileRequest.
+        r"""Sets the private_ip of this ListIsolatedFileRequest.
 
         服务器私有IP
 
@@ -215,7 +243,7 @@ class ListIsolatedFileRequest:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListIsolatedFileRequest.
+        r"""Gets the public_ip of this ListIsolatedFileRequest.
 
         服务器公网IP
 
@@ -226,7 +254,7 @@ class ListIsolatedFileRequest:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListIsolatedFileRequest.
+        r"""Sets the public_ip of this ListIsolatedFileRequest.
 
         服务器公网IP
 
@@ -237,7 +265,7 @@ class ListIsolatedFileRequest:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this ListIsolatedFileRequest.
+        r"""Gets the file_hash of this ListIsolatedFileRequest.
 
         文件hash,当前为sha256
 
@@ -248,7 +276,7 @@ class ListIsolatedFileRequest:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this ListIsolatedFileRequest.
+        r"""Sets the file_hash of this ListIsolatedFileRequest.
 
         文件hash,当前为sha256
 
@@ -259,7 +287,7 @@ class ListIsolatedFileRequest:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this ListIsolatedFileRequest.
+        r"""Gets the asset_value of this ListIsolatedFileRequest.
 
         资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -270,7 +298,7 @@ class ListIsolatedFileRequest:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this ListIsolatedFileRequest.
+        r"""Sets the asset_value of this ListIsolatedFileRequest.
 
         资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -281,7 +309,7 @@ class ListIsolatedFileRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIsolatedFileRequest.
+        r"""Gets the offset of this ListIsolatedFileRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -292,7 +320,7 @@ class ListIsolatedFileRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIsolatedFileRequest.
+        r"""Sets the offset of this ListIsolatedFileRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -303,7 +331,7 @@ class ListIsolatedFileRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIsolatedFileRequest.
+        r"""Gets the limit of this ListIsolatedFileRequest.
 
         每页显示个数
 
@@ -314,7 +342,7 @@ class ListIsolatedFileRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIsolatedFileRequest.
+        r"""Sets the limit of this ListIsolatedFileRequest.
 
         每页显示个数
 
@@ -322,6 +350,94 @@ class ListIsolatedFileRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def isolation_status(self):
+        r"""Gets the isolation_status of this ListIsolatedFileRequest.
+
+        隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
+
+        :return: The isolation_status of this ListIsolatedFileRequest.
+        :rtype: str
+        """
+        return self._isolation_status
+
+    @isolation_status.setter
+    def isolation_status(self, isolation_status):
+        r"""Sets the isolation_status of this ListIsolatedFileRequest.
+
+        隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
+
+        :param isolation_status: The isolation_status of this ListIsolatedFileRequest.
+        :type isolation_status: str
+        """
+        self._isolation_status = isolation_status
+
+    @property
+    def last_days(self):
+        r"""Gets the last_days of this ListIsolatedFileRequest.
+
+        查询时间范围天数，与自定义查询时间begin_time，end_time互斥
+
+        :return: The last_days of this ListIsolatedFileRequest.
+        :rtype: int
+        """
+        return self._last_days
+
+    @last_days.setter
+    def last_days(self, last_days):
+        r"""Sets the last_days of this ListIsolatedFileRequest.
+
+        查询时间范围天数，与自定义查询时间begin_time，end_time互斥
+
+        :param last_days: The last_days of this ListIsolatedFileRequest.
+        :type last_days: int
+        """
+        self._last_days = last_days
+
+    @property
+    def begin_time(self):
+        r"""Gets the begin_time of this ListIsolatedFileRequest.
+
+        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+
+        :return: The begin_time of this ListIsolatedFileRequest.
+        :rtype: int
+        """
+        return self._begin_time
+
+    @begin_time.setter
+    def begin_time(self, begin_time):
+        r"""Sets the begin_time of this ListIsolatedFileRequest.
+
+        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+
+        :param begin_time: The begin_time of this ListIsolatedFileRequest.
+        :type begin_time: int
+        """
+        self._begin_time = begin_time
+
+    @property
+    def end_time(self):
+        r"""Gets the end_time of this ListIsolatedFileRequest.
+
+        自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+
+        :return: The end_time of this ListIsolatedFileRequest.
+        :rtype: int
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        r"""Sets the end_time of this ListIsolatedFileRequest.
+
+        自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+
+        :param end_time: The end_time of this ListIsolatedFileRequest.
+        :type end_time: int
+        """
+        self._end_time = end_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

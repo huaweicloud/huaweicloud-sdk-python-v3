@@ -31,7 +31,7 @@ class ObsLocation:
     }
 
     def __init__(self, region_name=None, bucket_name=None, object_key=None, sign=None):
-        """ObsLocation
+        r"""ObsLocation
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ObsLocation:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ObsLocation.
+        r"""Gets the region_name of this ObsLocation.
 
         **参数说明**：OBS所在区域。您可以从[[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?OBS)](tag:hws_hk)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
 
@@ -72,7 +72,7 @@ class ObsLocation:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ObsLocation.
+        r"""Sets the region_name of this ObsLocation.
 
         **参数说明**：OBS所在区域。您可以从[[地区和终端节点](https://developer.huaweicloud.com/endpoint?OBS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?OBS)](tag:hws_hk)中查询服务的终端节点。 **取值范围**：长度不超过256，只允许字母、数字、连接符（-）的组合。
 
@@ -83,7 +83,7 @@ class ObsLocation:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ObsLocation.
+        r"""Gets the bucket_name of this ObsLocation.
 
         **参数说明**：OBS桶名称。 **取值范围**：长度最小为3，最大为63，只允许小写字母、数字、连接符（-）、英文点（.）的组合。
 
@@ -94,7 +94,7 @@ class ObsLocation:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ObsLocation.
+        r"""Sets the bucket_name of this ObsLocation.
 
         **参数说明**：OBS桶名称。 **取值范围**：长度最小为3，最大为63，只允许小写字母、数字、连接符（-）、英文点（.）的组合。
 
@@ -105,7 +105,7 @@ class ObsLocation:
 
     @property
     def object_key(self):
-        """Gets the object_key of this ObsLocation.
+        r"""Gets the object_key of this ObsLocation.
 
         **参数说明**：OBS对象名称(包含文件夹路径)。 **取值范围**：长度不超过1024。
 
@@ -116,7 +116,7 @@ class ObsLocation:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this ObsLocation.
+        r"""Sets the object_key of this ObsLocation.
 
         **参数说明**：OBS对象名称(包含文件夹路径)。 **取值范围**：长度不超过1024。
 
@@ -127,7 +127,7 @@ class ObsLocation:
 
     @property
     def sign(self):
-        """Gets the sign of this ObsLocation.
+        r"""Gets the sign of this ObsLocation.
 
         **参数说明**：SHA256算法计算出的升级包签名值。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该签名给设备。 **取值范围**：长度为64，只允许大小写字母a到f、数字的组合。
 
@@ -138,7 +138,7 @@ class ObsLocation:
 
     @sign.setter
     def sign(self, sign):
-        """Sets the sign of this ObsLocation.
+        r"""Sets the sign of this ObsLocation.
 
         **参数说明**：SHA256算法计算出的升级包签名值。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该签名给设备。 **取值范围**：长度为64，只允许大小写字母a到f、数字的组合。
 

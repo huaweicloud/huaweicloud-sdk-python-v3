@@ -27,7 +27,7 @@ class AddonCheckStatus:
     }
 
     def __init__(self, phase=None, items_status=None):
-        """AddonCheckStatus
+        r"""AddonCheckStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddonCheckStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this AddonCheckStatus.
+        r"""Gets the phase of this AddonCheckStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
 
@@ -61,7 +61,7 @@ class AddonCheckStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this AddonCheckStatus.
+        r"""Sets the phase of this AddonCheckStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
 
@@ -72,7 +72,7 @@ class AddonCheckStatus:
 
     @property
     def items_status(self):
-        """Gets the items_status of this AddonCheckStatus.
+        r"""Gets the items_status of this AddonCheckStatus.
 
         检查项状态集合
 
@@ -83,7 +83,7 @@ class AddonCheckStatus:
 
     @items_status.setter
     def items_status(self, items_status):
-        """Sets the items_status of this AddonCheckStatus.
+        r"""Sets the items_status of this AddonCheckStatus.
 
         检查项状态集合
 

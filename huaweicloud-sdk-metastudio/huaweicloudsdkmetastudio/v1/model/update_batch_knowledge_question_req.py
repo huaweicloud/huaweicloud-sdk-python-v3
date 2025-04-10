@@ -25,7 +25,7 @@ class UpdateBatchKnowledgeQuestionReq:
     }
 
     def __init__(self, question_list=None):
-        """UpdateBatchKnowledgeQuestionReq
+        r"""UpdateBatchKnowledgeQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBatchKnowledgeQuestionReq:
 
     @property
     def question_list(self):
-        """Gets the question_list of this UpdateBatchKnowledgeQuestionReq.
+        r"""Gets the question_list of this UpdateBatchKnowledgeQuestionReq.
 
         问法列表
 
@@ -53,7 +53,7 @@ class UpdateBatchKnowledgeQuestionReq:
 
     @question_list.setter
     def question_list(self, question_list):
-        """Sets the question_list of this UpdateBatchKnowledgeQuestionReq.
+        r"""Sets the question_list of this UpdateBatchKnowledgeQuestionReq.
 
         问法列表
 

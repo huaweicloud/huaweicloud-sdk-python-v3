@@ -35,7 +35,7 @@ class ConsumerCheckpointInfo:
     }
 
     def __init__(self, checkpoint=None, consumer_group_name=None, consumer_name=None, project_id=None, shard_id=None, update_time=None):
-        """ConsumerCheckpointInfo
+        r"""ConsumerCheckpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConsumerCheckpointInfo:
 
     @property
     def checkpoint(self):
-        """Gets the checkpoint of this ConsumerCheckpointInfo.
+        r"""Gets the checkpoint of this ConsumerCheckpointInfo.
 
         游标值
 
@@ -89,7 +89,7 @@ class ConsumerCheckpointInfo:
 
     @checkpoint.setter
     def checkpoint(self, checkpoint):
-        """Sets the checkpoint of this ConsumerCheckpointInfo.
+        r"""Sets the checkpoint of this ConsumerCheckpointInfo.
 
         游标值
 
@@ -100,7 +100,7 @@ class ConsumerCheckpointInfo:
 
     @property
     def consumer_group_name(self):
-        """Gets the consumer_group_name of this ConsumerCheckpointInfo.
+        r"""Gets the consumer_group_name of this ConsumerCheckpointInfo.
 
         消费组名
 
@@ -111,7 +111,7 @@ class ConsumerCheckpointInfo:
 
     @consumer_group_name.setter
     def consumer_group_name(self, consumer_group_name):
-        """Sets the consumer_group_name of this ConsumerCheckpointInfo.
+        r"""Sets the consumer_group_name of this ConsumerCheckpointInfo.
 
         消费组名
 
@@ -122,7 +122,7 @@ class ConsumerCheckpointInfo:
 
     @property
     def consumer_name(self):
-        """Gets the consumer_name of this ConsumerCheckpointInfo.
+        r"""Gets the consumer_name of this ConsumerCheckpointInfo.
 
         消费者名
 
@@ -133,7 +133,7 @@ class ConsumerCheckpointInfo:
 
     @consumer_name.setter
     def consumer_name(self, consumer_name):
-        """Sets the consumer_name of this ConsumerCheckpointInfo.
+        r"""Sets the consumer_name of this ConsumerCheckpointInfo.
 
         消费者名
 
@@ -144,7 +144,7 @@ class ConsumerCheckpointInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ConsumerCheckpointInfo.
+        r"""Gets the project_id of this ConsumerCheckpointInfo.
 
         项目ID
 
@@ -155,7 +155,7 @@ class ConsumerCheckpointInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ConsumerCheckpointInfo.
+        r"""Sets the project_id of this ConsumerCheckpointInfo.
 
         项目ID
 
@@ -166,7 +166,7 @@ class ConsumerCheckpointInfo:
 
     @property
     def shard_id(self):
-        """Gets the shard_id of this ConsumerCheckpointInfo.
+        r"""Gets the shard_id of this ConsumerCheckpointInfo.
 
         日志Shard ID
 
@@ -177,7 +177,7 @@ class ConsumerCheckpointInfo:
 
     @shard_id.setter
     def shard_id(self, shard_id):
-        """Sets the shard_id of this ConsumerCheckpointInfo.
+        r"""Sets the shard_id of this ConsumerCheckpointInfo.
 
         日志Shard ID
 
@@ -188,7 +188,7 @@ class ConsumerCheckpointInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ConsumerCheckpointInfo.
+        r"""Gets the update_time of this ConsumerCheckpointInfo.
 
         更新时间
 
@@ -199,7 +199,7 @@ class ConsumerCheckpointInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ConsumerCheckpointInfo.
+        r"""Sets the update_time of this ConsumerCheckpointInfo.
 
         更新时间
 

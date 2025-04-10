@@ -29,7 +29,7 @@ class UpdateVpnAccessPolicyRequest:
     }
 
     def __init__(self, vpn_server_id=None, policy_id=None, body=None):
-        """UpdateVpnAccessPolicyRequest
+        r"""UpdateVpnAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVpnAccessPolicyRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this UpdateVpnAccessPolicyRequest.
+        r"""Gets the vpn_server_id of this UpdateVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class UpdateVpnAccessPolicyRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this UpdateVpnAccessPolicyRequest.
+        r"""Sets the vpn_server_id of this UpdateVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class UpdateVpnAccessPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateVpnAccessPolicyRequest.
+        r"""Gets the policy_id of this UpdateVpnAccessPolicyRequest.
 
         VPN访问策略ID
 
@@ -88,7 +88,7 @@ class UpdateVpnAccessPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateVpnAccessPolicyRequest.
+        r"""Sets the policy_id of this UpdateVpnAccessPolicyRequest.
 
         VPN访问策略ID
 
@@ -99,7 +99,7 @@ class UpdateVpnAccessPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpnAccessPolicyRequest.
+        r"""Gets the body of this UpdateVpnAccessPolicyRequest.
 
         :return: The body of this UpdateVpnAccessPolicyRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnAccessPolicyRequestBody`
@@ -108,7 +108,7 @@ class UpdateVpnAccessPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpnAccessPolicyRequest.
+        r"""Sets the body of this UpdateVpnAccessPolicyRequest.
 
         :param body: The body of this UpdateVpnAccessPolicyRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVpnAccessPolicyRequestBody`

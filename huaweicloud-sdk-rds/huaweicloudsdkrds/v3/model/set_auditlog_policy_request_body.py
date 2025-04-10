@@ -29,7 +29,7 @@ class SetAuditlogPolicyRequestBody:
     }
 
     def __init__(self, keep_days=None, reserve_auditlogs=None, audit_types=None):
-        """SetAuditlogPolicyRequestBody
+        r"""SetAuditlogPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this SetAuditlogPolicyRequestBody.
+        r"""Gets the keep_days of this SetAuditlogPolicyRequestBody.
 
         审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
 
@@ -67,7 +67,7 @@ class SetAuditlogPolicyRequestBody:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this SetAuditlogPolicyRequestBody.
+        r"""Sets the keep_days of this SetAuditlogPolicyRequestBody.
 
         审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
 
@@ -78,7 +78,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def reserve_auditlogs(self):
-        """Gets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
+        r"""Gets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
 
         仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
@@ -89,7 +89,7 @@ class SetAuditlogPolicyRequestBody:
 
     @reserve_auditlogs.setter
     def reserve_auditlogs(self, reserve_auditlogs):
-        """Sets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
+        r"""Sets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
 
         仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
@@ -100,7 +100,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def audit_types(self):
-        """Gets the audit_types of this SetAuditlogPolicyRequestBody.
+        r"""Gets the audit_types of this SetAuditlogPolicyRequestBody.
 
         审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
 
@@ -111,7 +111,7 @@ class SetAuditlogPolicyRequestBody:
 
     @audit_types.setter
     def audit_types(self, audit_types):
-        """Sets the audit_types of this SetAuditlogPolicyRequestBody.
+        r"""Sets the audit_types of this SetAuditlogPolicyRequestBody.
 
         审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
 

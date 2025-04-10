@@ -32,7 +32,7 @@ class MigrateNodeResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None, status=None):
-        """MigrateNodeResponse
+        r"""MigrateNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this MigrateNodeResponse.
+        r"""Gets the api_version of this MigrateNodeResponse.
 
         API版本，固定值“v3”。
 
@@ -76,7 +76,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this MigrateNodeResponse.
+        r"""Sets the api_version of this MigrateNodeResponse.
 
         API版本，固定值“v3”。
 
@@ -87,7 +87,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this MigrateNodeResponse.
+        r"""Gets the kind of this MigrateNodeResponse.
 
         API类型，固定值“MigrateNodesTask”。
 
@@ -98,7 +98,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this MigrateNodeResponse.
+        r"""Sets the kind of this MigrateNodeResponse.
 
         API类型，固定值“MigrateNodesTask”。
 
@@ -109,7 +109,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this MigrateNodeResponse.
+        r"""Gets the spec of this MigrateNodeResponse.
 
         :return: The spec of this MigrateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
@@ -118,7 +118,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this MigrateNodeResponse.
+        r"""Sets the spec of this MigrateNodeResponse.
 
         :param spec: The spec of this MigrateNodeResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
@@ -127,7 +127,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this MigrateNodeResponse.
+        r"""Gets the status of this MigrateNodeResponse.
 
         :return: The status of this MigrateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
@@ -136,7 +136,7 @@ class MigrateNodeResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MigrateNodeResponse.
+        r"""Sets the status of this MigrateNodeResponse.
 
         :param status: The status of this MigrateNodeResponse.
         :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`

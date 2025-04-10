@@ -25,7 +25,7 @@ class PoliciesPeripheralsDriverInterfaceRedirection:
     }
 
     def __init__(self, api_redir_driver_list=None):
-        """PoliciesPeripheralsDriverInterfaceRedirection
+        r"""PoliciesPeripheralsDriverInterfaceRedirection
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesPeripheralsDriverInterfaceRedirection:
 
     @property
     def api_redir_driver_list(self):
-        """Gets the api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
+        r"""Gets the api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
 
         自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\";\"隔开）。
 
@@ -54,7 +54,7 @@ class PoliciesPeripheralsDriverInterfaceRedirection:
 
     @api_redir_driver_list.setter
     def api_redir_driver_list(self, api_redir_driver_list):
-        """Sets the api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
+        r"""Sets the api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
 
         自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\";\"隔开）。
 

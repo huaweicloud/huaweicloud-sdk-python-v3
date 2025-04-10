@@ -26,7 +26,7 @@ class DeleteDcDsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDcDsResponse
+        r"""DeleteDcDsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDcDsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDcDsResponse.
+        r"""Gets the body of this DeleteDcDsResponse.
 
         :return: The body of this DeleteDcDsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDcDsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDcDsResponse.
+        r"""Sets the body of this DeleteDcDsResponse.
 
         :param body: The body of this DeleteDcDsResponse.
         :type body: str

@@ -27,7 +27,7 @@ class ShowVpcAttachmentRequest:
     }
 
     def __init__(self, er_id=None, vpc_attachment_id=None):
-        """ShowVpcAttachmentRequest
+        r"""ShowVpcAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowVpcAttachmentRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ShowVpcAttachmentRequest.
+        r"""Gets the er_id of this ShowVpcAttachmentRequest.
 
         企业路由器实例ID
 
@@ -59,7 +59,7 @@ class ShowVpcAttachmentRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ShowVpcAttachmentRequest.
+        r"""Sets the er_id of this ShowVpcAttachmentRequest.
 
         企业路由器实例ID
 
@@ -70,7 +70,7 @@ class ShowVpcAttachmentRequest:
 
     @property
     def vpc_attachment_id(self):
-        """Gets the vpc_attachment_id of this ShowVpcAttachmentRequest.
+        r"""Gets the vpc_attachment_id of this ShowVpcAttachmentRequest.
 
         VPC连接ID
 
@@ -81,7 +81,7 @@ class ShowVpcAttachmentRequest:
 
     @vpc_attachment_id.setter
     def vpc_attachment_id(self, vpc_attachment_id):
-        """Sets the vpc_attachment_id of this ShowVpcAttachmentRequest.
+        r"""Sets the vpc_attachment_id of this ShowVpcAttachmentRequest.
 
         VPC连接ID
 

@@ -63,7 +63,7 @@ class ListAppConnectionReq:
     }
 
     def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, failed_code=None, connection_failure_reason=None, client_name=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, public_ip=None, tenant_id=None, brokering_start_time=None, brokering_end_time=None, virtual_ip=None):
-        """ListAppConnectionReq
+        r"""ListAppConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ListAppConnectionReq:
 
     @property
     def id(self):
-        """Gets the id of this ListAppConnectionReq.
+        r"""Gets the id of this ListAppConnectionReq.
 
         主键。
 
@@ -187,7 +187,7 @@ class ListAppConnectionReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAppConnectionReq.
+        r"""Sets the id of this ListAppConnectionReq.
 
         主键。
 
@@ -198,7 +198,7 @@ class ListAppConnectionReq:
 
     @property
     def sid(self):
-        """Gets the sid of this ListAppConnectionReq.
+        r"""Gets the sid of this ListAppConnectionReq.
 
         应用服务器sid。
 
@@ -209,7 +209,7 @@ class ListAppConnectionReq:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this ListAppConnectionReq.
+        r"""Sets the sid of this ListAppConnectionReq.
 
         应用服务器sid。
 
@@ -220,7 +220,7 @@ class ListAppConnectionReq:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ListAppConnectionReq.
+        r"""Gets the machine_name of this ListAppConnectionReq.
 
         应用服务器名称。
 
@@ -231,7 +231,7 @@ class ListAppConnectionReq:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ListAppConnectionReq.
+        r"""Sets the machine_name of this ListAppConnectionReq.
 
         应用服务器名称。
 
@@ -242,7 +242,7 @@ class ListAppConnectionReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListAppConnectionReq.
+        r"""Gets the user_name of this ListAppConnectionReq.
 
         登录用户，模糊查询。
 
@@ -253,7 +253,7 @@ class ListAppConnectionReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListAppConnectionReq.
+        r"""Sets the user_name of this ListAppConnectionReq.
 
         登录用户，模糊查询。
 
@@ -264,7 +264,7 @@ class ListAppConnectionReq:
 
     @property
     def app_group_name(self):
-        """Gets the app_group_name of this ListAppConnectionReq.
+        r"""Gets the app_group_name of this ListAppConnectionReq.
 
         应用组名称。
 
@@ -275,7 +275,7 @@ class ListAppConnectionReq:
 
     @app_group_name.setter
     def app_group_name(self, app_group_name):
-        """Sets the app_group_name of this ListAppConnectionReq.
+        r"""Sets the app_group_name of this ListAppConnectionReq.
 
         应用组名称。
 
@@ -286,7 +286,7 @@ class ListAppConnectionReq:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ListAppConnectionReq.
+        r"""Gets the app_group_id of this ListAppConnectionReq.
 
         应用组id。
 
@@ -297,7 +297,7 @@ class ListAppConnectionReq:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ListAppConnectionReq.
+        r"""Sets the app_group_id of this ListAppConnectionReq.
 
         应用组id。
 
@@ -308,7 +308,7 @@ class ListAppConnectionReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppConnectionReq.
+        r"""Gets the app_name of this ListAppConnectionReq.
 
         应用名称，模糊查询。
 
@@ -319,7 +319,7 @@ class ListAppConnectionReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppConnectionReq.
+        r"""Sets the app_name of this ListAppConnectionReq.
 
         应用名称，模糊查询。
 
@@ -330,7 +330,7 @@ class ListAppConnectionReq:
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this ListAppConnectionReq.
+        r"""Gets the failed_code of this ListAppConnectionReq.
 
         连接失败状态码。
 
@@ -341,7 +341,7 @@ class ListAppConnectionReq:
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this ListAppConnectionReq.
+        r"""Sets the failed_code of this ListAppConnectionReq.
 
         连接失败状态码。
 
@@ -352,7 +352,7 @@ class ListAppConnectionReq:
 
     @property
     def connection_failure_reason(self):
-        """Gets the connection_failure_reason of this ListAppConnectionReq.
+        r"""Gets the connection_failure_reason of this ListAppConnectionReq.
 
         连接失败原因。
 
@@ -363,7 +363,7 @@ class ListAppConnectionReq:
 
     @connection_failure_reason.setter
     def connection_failure_reason(self, connection_failure_reason):
-        """Sets the connection_failure_reason of this ListAppConnectionReq.
+        r"""Sets the connection_failure_reason of this ListAppConnectionReq.
 
         连接失败原因。
 
@@ -374,7 +374,7 @@ class ListAppConnectionReq:
 
     @property
     def client_name(self):
-        """Gets the client_name of this ListAppConnectionReq.
+        r"""Gets the client_name of this ListAppConnectionReq.
 
         客户端名称。
 
@@ -385,7 +385,7 @@ class ListAppConnectionReq:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this ListAppConnectionReq.
+        r"""Sets the client_name of this ListAppConnectionReq.
 
         客户端名称。
 
@@ -396,7 +396,7 @@ class ListAppConnectionReq:
 
     @property
     def client_version(self):
-        """Gets the client_version of this ListAppConnectionReq.
+        r"""Gets the client_version of this ListAppConnectionReq.
 
         客户端版本。
 
@@ -407,7 +407,7 @@ class ListAppConnectionReq:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this ListAppConnectionReq.
+        r"""Sets the client_version of this ListAppConnectionReq.
 
         客户端版本。
 
@@ -418,7 +418,7 @@ class ListAppConnectionReq:
 
     @property
     def client_type(self):
-        """Gets the client_type of this ListAppConnectionReq.
+        r"""Gets the client_type of this ListAppConnectionReq.
 
         客户端操作系统类型。
 
@@ -429,7 +429,7 @@ class ListAppConnectionReq:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this ListAppConnectionReq.
+        r"""Sets the client_type of this ListAppConnectionReq.
 
         客户端操作系统类型。
 
@@ -440,7 +440,7 @@ class ListAppConnectionReq:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this ListAppConnectionReq.
+        r"""Gets the agent_version of this ListAppConnectionReq.
 
         aps hda版本。
 
@@ -451,7 +451,7 @@ class ListAppConnectionReq:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this ListAppConnectionReq.
+        r"""Sets the agent_version of this ListAppConnectionReq.
 
         aps hda版本。
 
@@ -462,7 +462,7 @@ class ListAppConnectionReq:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this ListAppConnectionReq.
+        r"""Gets the vm_ip of this ListAppConnectionReq.
 
         应用服务器ip。
 
@@ -473,7 +473,7 @@ class ListAppConnectionReq:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this ListAppConnectionReq.
+        r"""Sets the vm_ip of this ListAppConnectionReq.
 
         应用服务器ip。
 
@@ -484,7 +484,7 @@ class ListAppConnectionReq:
 
     @property
     def wi_ip(self):
-        """Gets the wi_ip of this ListAppConnectionReq.
+        r"""Gets the wi_ip of this ListAppConnectionReq.
 
         连接IP。
 
@@ -495,7 +495,7 @@ class ListAppConnectionReq:
 
     @wi_ip.setter
     def wi_ip(self, wi_ip):
-        """Sets the wi_ip of this ListAppConnectionReq.
+        r"""Sets the wi_ip of this ListAppConnectionReq.
 
         连接IP。
 
@@ -506,7 +506,7 @@ class ListAppConnectionReq:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListAppConnectionReq.
+        r"""Gets the public_ip of this ListAppConnectionReq.
 
         客户端出口ip。
 
@@ -517,7 +517,7 @@ class ListAppConnectionReq:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListAppConnectionReq.
+        r"""Sets the public_ip of this ListAppConnectionReq.
 
         客户端出口ip。
 
@@ -528,7 +528,7 @@ class ListAppConnectionReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListAppConnectionReq.
+        r"""Gets the tenant_id of this ListAppConnectionReq.
 
         租户id。
 
@@ -539,7 +539,7 @@ class ListAppConnectionReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListAppConnectionReq.
+        r"""Sets the tenant_id of this ListAppConnectionReq.
 
         租户id。
 
@@ -550,7 +550,7 @@ class ListAppConnectionReq:
 
     @property
     def brokering_start_time(self):
-        """Gets the brokering_start_time of this ListAppConnectionReq.
+        r"""Gets the brokering_start_time of this ListAppConnectionReq.
 
         登录应用开始时间，格式 2022-10-31 08:07:39。
 
@@ -561,7 +561,7 @@ class ListAppConnectionReq:
 
     @brokering_start_time.setter
     def brokering_start_time(self, brokering_start_time):
-        """Sets the brokering_start_time of this ListAppConnectionReq.
+        r"""Sets the brokering_start_time of this ListAppConnectionReq.
 
         登录应用开始时间，格式 2022-10-31 08:07:39。
 
@@ -572,7 +572,7 @@ class ListAppConnectionReq:
 
     @property
     def brokering_end_time(self):
-        """Gets the brokering_end_time of this ListAppConnectionReq.
+        r"""Gets the brokering_end_time of this ListAppConnectionReq.
 
         登录应用结束时间，格式 2022-10-31 08:07:39。
 
@@ -583,7 +583,7 @@ class ListAppConnectionReq:
 
     @brokering_end_time.setter
     def brokering_end_time(self, brokering_end_time):
-        """Sets the brokering_end_time of this ListAppConnectionReq.
+        r"""Sets the brokering_end_time of this ListAppConnectionReq.
 
         登录应用结束时间，格式 2022-10-31 08:07:39。
 
@@ -594,7 +594,7 @@ class ListAppConnectionReq:
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this ListAppConnectionReq.
+        r"""Gets the virtual_ip of this ListAppConnectionReq.
 
         会话虚拟ip。
 
@@ -605,7 +605,7 @@ class ListAppConnectionReq:
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this ListAppConnectionReq.
+        r"""Sets the virtual_ip of this ListAppConnectionReq.
 
         会话虚拟ip。
 

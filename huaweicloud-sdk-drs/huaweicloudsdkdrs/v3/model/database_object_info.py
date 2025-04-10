@@ -33,7 +33,7 @@ class DatabaseObjectInfo:
     }
 
     def __init__(self, id=None, parent_id=None, type=None, name=None, alias_name=None):
-        """DatabaseObjectInfo
+        r"""DatabaseObjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DatabaseObjectInfo:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseObjectInfo.
+        r"""Gets the id of this DatabaseObjectInfo.
 
         type为database时，为库名；type为table或者view时，字段值参考示例
 
@@ -82,7 +82,7 @@ class DatabaseObjectInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseObjectInfo.
+        r"""Sets the id of this DatabaseObjectInfo.
 
         type为database时，为库名；type为table或者view时，字段值参考示例
 
@@ -93,7 +93,7 @@ class DatabaseObjectInfo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this DatabaseObjectInfo.
+        r"""Gets the parent_id of this DatabaseObjectInfo.
 
         type为table或view时需要填写，为库名
 
@@ -104,7 +104,7 @@ class DatabaseObjectInfo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this DatabaseObjectInfo.
+        r"""Sets the parent_id of this DatabaseObjectInfo.
 
         type为table或view时需要填写，为库名
 
@@ -115,7 +115,7 @@ class DatabaseObjectInfo:
 
     @property
     def type(self):
-        """Gets the type of this DatabaseObjectInfo.
+        r"""Gets the type of this DatabaseObjectInfo.
 
         类型。
 
@@ -126,7 +126,7 @@ class DatabaseObjectInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatabaseObjectInfo.
+        r"""Sets the type of this DatabaseObjectInfo.
 
         类型。
 
@@ -137,7 +137,7 @@ class DatabaseObjectInfo:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseObjectInfo.
+        r"""Gets the name of this DatabaseObjectInfo.
 
         数据库对象名称，库名、表名、视图名
 
@@ -148,7 +148,7 @@ class DatabaseObjectInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseObjectInfo.
+        r"""Sets the name of this DatabaseObjectInfo.
 
         数据库对象名称，库名、表名、视图名
 
@@ -159,7 +159,7 @@ class DatabaseObjectInfo:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this DatabaseObjectInfo.
+        r"""Gets the alias_name of this DatabaseObjectInfo.
 
         别名，映射的新名称
 
@@ -170,7 +170,7 @@ class DatabaseObjectInfo:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this DatabaseObjectInfo.
+        r"""Sets the alias_name of this DatabaseObjectInfo.
 
         别名，映射的新名称
 

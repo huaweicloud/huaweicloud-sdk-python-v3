@@ -26,7 +26,7 @@ class ListTreesResponse(SdkResponse):
     }
 
     def __init__(self, paths=None):
-        """ListTreesResponse
+        r"""ListTreesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTreesResponse(SdkResponse):
 
     @property
     def paths(self):
-        """Gets the paths of this ListTreesResponse.
+        r"""Gets the paths of this ListTreesResponse.
 
         仓库文件列表。
 
@@ -55,7 +55,7 @@ class ListTreesResponse(SdkResponse):
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this ListTreesResponse.
+        r"""Sets the paths of this ListTreesResponse.
 
         仓库文件列表。
 

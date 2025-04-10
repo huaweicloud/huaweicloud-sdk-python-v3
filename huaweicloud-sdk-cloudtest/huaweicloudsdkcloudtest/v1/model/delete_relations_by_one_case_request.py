@@ -27,7 +27,7 @@ class DeleteRelationsByOneCaseRequest:
     }
 
     def __init__(self, case_id=None, body=None):
-        """DeleteRelationsByOneCaseRequest
+        r"""DeleteRelationsByOneCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteRelationsByOneCaseRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this DeleteRelationsByOneCaseRequest.
+        r"""Gets the case_id of this DeleteRelationsByOneCaseRequest.
 
         用例id
 
@@ -60,7 +60,7 @@ class DeleteRelationsByOneCaseRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this DeleteRelationsByOneCaseRequest.
+        r"""Sets the case_id of this DeleteRelationsByOneCaseRequest.
 
         用例id
 
@@ -71,7 +71,7 @@ class DeleteRelationsByOneCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRelationsByOneCaseRequest.
+        r"""Gets the body of this DeleteRelationsByOneCaseRequest.
 
         :return: The body of this DeleteRelationsByOneCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteRelationsByOneCaseInfo`
@@ -80,7 +80,7 @@ class DeleteRelationsByOneCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRelationsByOneCaseRequest.
+        r"""Sets the body of this DeleteRelationsByOneCaseRequest.
 
         :param body: The body of this DeleteRelationsByOneCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.DeleteRelationsByOneCaseInfo`

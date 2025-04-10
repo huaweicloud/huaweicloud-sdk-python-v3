@@ -26,7 +26,7 @@ class CreatePolicyVersionV5Response(SdkResponse):
     }
 
     def __init__(self, policy_version=None):
-        """CreatePolicyVersionV5Response
+        r"""CreatePolicyVersionV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePolicyVersionV5Response(SdkResponse):
 
     @property
     def policy_version(self):
-        """Gets the policy_version of this CreatePolicyVersionV5Response.
+        r"""Gets the policy_version of this CreatePolicyVersionV5Response.
 
         :return: The policy_version of this CreatePolicyVersionV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PolicyVersion`
@@ -53,7 +53,7 @@ class CreatePolicyVersionV5Response(SdkResponse):
 
     @policy_version.setter
     def policy_version(self, policy_version):
-        """Sets the policy_version of this CreatePolicyVersionV5Response.
+        r"""Sets the policy_version of this CreatePolicyVersionV5Response.
 
         :param policy_version: The policy_version of this CreatePolicyVersionV5Response.
         :type policy_version: :class:`huaweicloudsdkiam.v5.PolicyVersion`

@@ -25,7 +25,7 @@ class ImportClientCaCertificateRequestBody:
     }
 
     def __init__(self, client_ca_certificate=None):
-        """ImportClientCaCertificateRequestBody
+        r"""ImportClientCaCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportClientCaCertificateRequestBody:
 
     @property
     def client_ca_certificate(self):
-        """Gets the client_ca_certificate of this ImportClientCaCertificateRequestBody.
+        r"""Gets the client_ca_certificate of this ImportClientCaCertificateRequestBody.
 
         :return: The client_ca_certificate of this ImportClientCaCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateRequestBodyClientCaCertificate`
@@ -51,7 +51,7 @@ class ImportClientCaCertificateRequestBody:
 
     @client_ca_certificate.setter
     def client_ca_certificate(self, client_ca_certificate):
-        """Sets the client_ca_certificate of this ImportClientCaCertificateRequestBody.
+        r"""Sets the client_ca_certificate of this ImportClientCaCertificateRequestBody.
 
         :param client_ca_certificate: The client_ca_certificate of this ImportClientCaCertificateRequestBody.
         :type client_ca_certificate: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateRequestBodyClientCaCertificate`

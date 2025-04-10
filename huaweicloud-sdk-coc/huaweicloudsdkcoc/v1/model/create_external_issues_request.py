@@ -57,7 +57,7 @@ class CreateExternalIssuesRequest:
     }
 
     def __init__(self, creator=None, title=None, description=None, regions=None, enterprise_project=None, source=None, source_id=None, fount_time=None, impacted_cloud_services=None, level=None, ticket_type=None, reproduce_probability=None, root_cause_cloud_service=None, virtual_schedule_type=None, schedule_scenes=None, virtual_schedule_role=None, issue_contact_person=None):
-        """CreateExternalIssuesRequest
+        r"""CreateExternalIssuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this CreateExternalIssuesRequest.
+        r"""Gets the creator of this CreateExternalIssuesRequest.
 
         创建人id
 
@@ -158,7 +158,7 @@ class CreateExternalIssuesRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateExternalIssuesRequest.
+        r"""Sets the creator of this CreateExternalIssuesRequest.
 
         创建人id
 
@@ -169,7 +169,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def title(self):
-        """Gets the title of this CreateExternalIssuesRequest.
+        r"""Gets the title of this CreateExternalIssuesRequest.
 
         标题
 
@@ -180,7 +180,7 @@ class CreateExternalIssuesRequest:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateExternalIssuesRequest.
+        r"""Sets the title of this CreateExternalIssuesRequest.
 
         标题
 
@@ -191,7 +191,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def description(self):
-        """Gets the description of this CreateExternalIssuesRequest.
+        r"""Gets the description of this CreateExternalIssuesRequest.
 
         描述
 
@@ -202,7 +202,7 @@ class CreateExternalIssuesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateExternalIssuesRequest.
+        r"""Sets the description of this CreateExternalIssuesRequest.
 
         描述
 
@@ -213,7 +213,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def regions(self):
-        """Gets the regions of this CreateExternalIssuesRequest.
+        r"""Gets the regions of this CreateExternalIssuesRequest.
 
         区域Code,最大100个
 
@@ -224,7 +224,7 @@ class CreateExternalIssuesRequest:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this CreateExternalIssuesRequest.
+        r"""Sets the regions of this CreateExternalIssuesRequest.
 
         区域Code,最大100个
 
@@ -235,7 +235,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this CreateExternalIssuesRequest.
+        r"""Gets the enterprise_project of this CreateExternalIssuesRequest.
 
         企业项目id
 
@@ -246,7 +246,7 @@ class CreateExternalIssuesRequest:
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this CreateExternalIssuesRequest.
+        r"""Sets the enterprise_project of this CreateExternalIssuesRequest.
 
         企业项目id
 
@@ -257,7 +257,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def source(self):
-        """Gets the source of this CreateExternalIssuesRequest.
+        r"""Gets the source of this CreateExternalIssuesRequest.
 
         问题来源 issues_source_1000 事件 issues_source_2000 Warroom issues_source_3000 告警
 
@@ -268,7 +268,7 @@ class CreateExternalIssuesRequest:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateExternalIssuesRequest.
+        r"""Sets the source of this CreateExternalIssuesRequest.
 
         问题来源 issues_source_1000 事件 issues_source_2000 Warroom issues_source_3000 告警
 
@@ -279,7 +279,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this CreateExternalIssuesRequest.
+        r"""Gets the source_id of this CreateExternalIssuesRequest.
 
         问题来源id
 
@@ -290,7 +290,7 @@ class CreateExternalIssuesRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this CreateExternalIssuesRequest.
+        r"""Sets the source_id of this CreateExternalIssuesRequest.
 
         问题来源id
 
@@ -301,7 +301,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def fount_time(self):
-        """Gets the fount_time of this CreateExternalIssuesRequest.
+        r"""Gets the fount_time of this CreateExternalIssuesRequest.
 
         发现时间
 
@@ -312,7 +312,7 @@ class CreateExternalIssuesRequest:
 
     @fount_time.setter
     def fount_time(self, fount_time):
-        """Sets the fount_time of this CreateExternalIssuesRequest.
+        r"""Sets the fount_time of this CreateExternalIssuesRequest.
 
         发现时间
 
@@ -323,7 +323,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def impacted_cloud_services(self):
-        """Gets the impacted_cloud_services of this CreateExternalIssuesRequest.
+        r"""Gets the impacted_cloud_services of this CreateExternalIssuesRequest.
 
         影响应用ID，最多10条
 
@@ -334,7 +334,7 @@ class CreateExternalIssuesRequest:
 
     @impacted_cloud_services.setter
     def impacted_cloud_services(self, impacted_cloud_services):
-        """Sets the impacted_cloud_services of this CreateExternalIssuesRequest.
+        r"""Sets the impacted_cloud_services of this CreateExternalIssuesRequest.
 
         影响应用ID，最多10条
 
@@ -345,7 +345,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def level(self):
-        """Gets the level of this CreateExternalIssuesRequest.
+        r"""Gets the level of this CreateExternalIssuesRequest.
 
         问题级别 issues_level_1000 致命 issues_level_2000 严重 issues_level_3000 一般
 
@@ -356,7 +356,7 @@ class CreateExternalIssuesRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this CreateExternalIssuesRequest.
+        r"""Sets the level of this CreateExternalIssuesRequest.
 
         问题级别 issues_level_1000 致命 issues_level_2000 严重 issues_level_3000 一般
 
@@ -367,7 +367,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def ticket_type(self):
-        """Gets the ticket_type of this CreateExternalIssuesRequest.
+        r"""Gets the ticket_type of this CreateExternalIssuesRequest.
 
         问题类型 issues_type_1000  功能性问题 issues_type_2000  性能问题 issues_type_3000  可靠性问题 issues_type_4000  兼容性问题 issues_type_5000  用户体验问题 issues_type_6000  可维护性问题 issues_type_7000  变更类问题 issues_type_8000  安全问题 issues_type_9000  工程实施类 issues_type_10000 交付部署问题 issues_type_11000 LLD规划问题 issues_type_12000 供用商问题 issues_type_13000 咨询类问题 issues_type_14000 需求类问题 issues_type_15000 其他问题
 
@@ -378,7 +378,7 @@ class CreateExternalIssuesRequest:
 
     @ticket_type.setter
     def ticket_type(self, ticket_type):
-        """Sets the ticket_type of this CreateExternalIssuesRequest.
+        r"""Sets the ticket_type of this CreateExternalIssuesRequest.
 
         问题类型 issues_type_1000  功能性问题 issues_type_2000  性能问题 issues_type_3000  可靠性问题 issues_type_4000  兼容性问题 issues_type_5000  用户体验问题 issues_type_6000  可维护性问题 issues_type_7000  变更类问题 issues_type_8000  安全问题 issues_type_9000  工程实施类 issues_type_10000 交付部署问题 issues_type_11000 LLD规划问题 issues_type_12000 供用商问题 issues_type_13000 咨询类问题 issues_type_14000 需求类问题 issues_type_15000 其他问题
 
@@ -389,7 +389,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def reproduce_probability(self):
-        """Gets the reproduce_probability of this CreateExternalIssuesRequest.
+        r"""Gets the reproduce_probability of this CreateExternalIssuesRequest.
 
         重现概率 issues_reproduce_probability_1000 有条件必现 issues_reproduce_probability_2000 有条件概率重现 issues_reproduce_probability_3000 无规律重现 issues_reproduce_probability_4000 很难重现
 
@@ -400,7 +400,7 @@ class CreateExternalIssuesRequest:
 
     @reproduce_probability.setter
     def reproduce_probability(self, reproduce_probability):
-        """Sets the reproduce_probability of this CreateExternalIssuesRequest.
+        r"""Sets the reproduce_probability of this CreateExternalIssuesRequest.
 
         重现概率 issues_reproduce_probability_1000 有条件必现 issues_reproduce_probability_2000 有条件概率重现 issues_reproduce_probability_3000 无规律重现 issues_reproduce_probability_4000 很难重现
 
@@ -411,7 +411,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def root_cause_cloud_service(self):
-        """Gets the root_cause_cloud_service of this CreateExternalIssuesRequest.
+        r"""Gets the root_cause_cloud_service of this CreateExternalIssuesRequest.
 
         责任应用ID，必填,限1条
 
@@ -422,7 +422,7 @@ class CreateExternalIssuesRequest:
 
     @root_cause_cloud_service.setter
     def root_cause_cloud_service(self, root_cause_cloud_service):
-        """Sets the root_cause_cloud_service of this CreateExternalIssuesRequest.
+        r"""Sets the root_cause_cloud_service of this CreateExternalIssuesRequest.
 
         责任应用ID，必填,限1条
 
@@ -433,7 +433,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def virtual_schedule_type(self):
-        """Gets the virtual_schedule_type of this CreateExternalIssuesRequest.
+        r"""Gets the virtual_schedule_type of this CreateExternalIssuesRequest.
 
         排班类型 参考：枚举 issues_mgmt_virtual_schedule_type_1000 排班,schedule_scenes排班场景,virtual_schedule_role排班角色必填,指定排班 issues_mgmt_virtual_schedule_type_2000 个人,issue_contact_person字段必填,指定责任人
 
@@ -444,7 +444,7 @@ class CreateExternalIssuesRequest:
 
     @virtual_schedule_type.setter
     def virtual_schedule_type(self, virtual_schedule_type):
-        """Sets the virtual_schedule_type of this CreateExternalIssuesRequest.
+        r"""Sets the virtual_schedule_type of this CreateExternalIssuesRequest.
 
         排班类型 参考：枚举 issues_mgmt_virtual_schedule_type_1000 排班,schedule_scenes排班场景,virtual_schedule_role排班角色必填,指定排班 issues_mgmt_virtual_schedule_type_2000 个人,issue_contact_person字段必填,指定责任人
 
@@ -455,7 +455,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def schedule_scenes(self):
-        """Gets the schedule_scenes of this CreateExternalIssuesRequest.
+        r"""Gets the schedule_scenes of this CreateExternalIssuesRequest.
 
         排班场景id
 
@@ -466,7 +466,7 @@ class CreateExternalIssuesRequest:
 
     @schedule_scenes.setter
     def schedule_scenes(self, schedule_scenes):
-        """Sets the schedule_scenes of this CreateExternalIssuesRequest.
+        r"""Sets the schedule_scenes of this CreateExternalIssuesRequest.
 
         排班场景id
 
@@ -477,7 +477,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def virtual_schedule_role(self):
-        """Gets the virtual_schedule_role of this CreateExternalIssuesRequest.
+        r"""Gets the virtual_schedule_role of this CreateExternalIssuesRequest.
 
         排班角色id
 
@@ -488,7 +488,7 @@ class CreateExternalIssuesRequest:
 
     @virtual_schedule_role.setter
     def virtual_schedule_role(self, virtual_schedule_role):
-        """Sets the virtual_schedule_role of this CreateExternalIssuesRequest.
+        r"""Sets the virtual_schedule_role of this CreateExternalIssuesRequest.
 
         排班角色id
 
@@ -499,7 +499,7 @@ class CreateExternalIssuesRequest:
 
     @property
     def issue_contact_person(self):
-        """Gets the issue_contact_person of this CreateExternalIssuesRequest.
+        r"""Gets the issue_contact_person of this CreateExternalIssuesRequest.
 
         问题责任人id
 
@@ -510,7 +510,7 @@ class CreateExternalIssuesRequest:
 
     @issue_contact_person.setter
     def issue_contact_person(self, issue_contact_person):
-        """Sets the issue_contact_person of this CreateExternalIssuesRequest.
+        r"""Sets the issue_contact_person of this CreateExternalIssuesRequest.
 
         问题责任人id
 

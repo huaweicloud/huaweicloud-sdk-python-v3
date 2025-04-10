@@ -25,7 +25,7 @@ class InstanceId:
     }
 
     def __init__(self, instance_id=None):
-        """InstanceId
+        r"""InstanceId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InstanceId:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceId.
+        r"""Gets the instance_id of this InstanceId.
 
         网络实例（VPC，VGW）的ID。
 
@@ -53,7 +53,7 @@ class InstanceId:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceId.
+        r"""Sets the instance_id of this InstanceId.
 
         网络实例（VPC，VGW）的ID。
 

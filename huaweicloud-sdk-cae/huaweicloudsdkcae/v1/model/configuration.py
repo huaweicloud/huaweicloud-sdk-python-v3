@@ -35,7 +35,7 @@ class Configuration:
     }
 
     def __init__(self, data=None, operated_at=None, operation_id=None, type=None, is_activated=None, is_using=None):
-        """Configuration
+        r"""Configuration
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Configuration:
 
     @property
     def data(self):
-        """Gets the data of this Configuration.
+        r"""Gets the data of this Configuration.
 
         :return: The data of this Configuration.
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponseData`
@@ -87,7 +87,7 @@ class Configuration:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this Configuration.
+        r"""Sets the data of this Configuration.
 
         :param data: The data of this Configuration.
         :type data: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponseData`
@@ -96,7 +96,7 @@ class Configuration:
 
     @property
     def operated_at(self):
-        """Gets the operated_at of this Configuration.
+        r"""Gets the operated_at of this Configuration.
 
         操作时间。
 
@@ -107,7 +107,7 @@ class Configuration:
 
     @operated_at.setter
     def operated_at(self, operated_at):
-        """Sets the operated_at of this Configuration.
+        r"""Sets the operated_at of this Configuration.
 
         操作时间。
 
@@ -118,7 +118,7 @@ class Configuration:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this Configuration.
+        r"""Gets the operation_id of this Configuration.
 
         操作ID。
 
@@ -129,7 +129,7 @@ class Configuration:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this Configuration.
+        r"""Sets the operation_id of this Configuration.
 
         操作ID。
 
@@ -140,7 +140,7 @@ class Configuration:
 
     @property
     def type(self):
-        """Gets the type of this Configuration.
+        r"""Gets the type of this Configuration.
 
         组件配置类型。
 
@@ -151,7 +151,7 @@ class Configuration:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Configuration.
+        r"""Sets the type of this Configuration.
 
         组件配置类型。
 
@@ -162,7 +162,7 @@ class Configuration:
 
     @property
     def is_activated(self):
-        """Gets the is_activated of this Configuration.
+        r"""Gets the is_activated of this Configuration.
 
         配置是否生效过。
 
@@ -173,7 +173,7 @@ class Configuration:
 
     @is_activated.setter
     def is_activated(self, is_activated):
-        """Sets the is_activated of this Configuration.
+        r"""Sets the is_activated of this Configuration.
 
         配置是否生效过。
 
@@ -184,7 +184,7 @@ class Configuration:
 
     @property
     def is_using(self):
-        """Gets the is_using of this Configuration.
+        r"""Gets the is_using of this Configuration.
 
         配置是否正在使用。
 
@@ -195,7 +195,7 @@ class Configuration:
 
     @is_using.setter
     def is_using(self, is_using):
-        """Sets the is_using of this Configuration.
+        r"""Sets the is_using of this Configuration.
 
         配置是否正在使用。
 

@@ -37,7 +37,7 @@ class ConfigInfoDO:
     }
 
     def __init__(self, name=None, type=None, description=None, value=None, task_id=None, static_status=None, limits=None):
-        """ConfigInfoDO
+        r"""ConfigInfoDO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfigInfoDO:
 
     @property
     def name(self):
-        """Gets the name of this ConfigInfoDO.
+        r"""Gets the name of this ConfigInfoDO.
 
         部署参数名称，用户可自定义
 
@@ -96,7 +96,7 @@ class ConfigInfoDO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigInfoDO.
+        r"""Sets the name of this ConfigInfoDO.
 
         部署参数名称，用户可自定义
 
@@ -107,7 +107,7 @@ class ConfigInfoDO:
 
     @property
     def type(self):
-        """Gets the type of this ConfigInfoDO.
+        r"""Gets the type of this ConfigInfoDO.
 
         类型，如果填写name字段，则type必选,若type为空则默认为text
 
@@ -118,7 +118,7 @@ class ConfigInfoDO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigInfoDO.
+        r"""Sets the type of this ConfigInfoDO.
 
         类型，如果填写name字段，则type必选,若type为空则默认为text
 
@@ -129,7 +129,7 @@ class ConfigInfoDO:
 
     @property
     def description(self):
-        """Gets the description of this ConfigInfoDO.
+        r"""Gets the description of this ConfigInfoDO.
 
         描述
 
@@ -140,7 +140,7 @@ class ConfigInfoDO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigInfoDO.
+        r"""Sets the description of this ConfigInfoDO.
 
         描述
 
@@ -151,7 +151,7 @@ class ConfigInfoDO:
 
     @property
     def value(self):
-        """Gets the value of this ConfigInfoDO.
+        r"""Gets the value of this ConfigInfoDO.
 
         部署参数值
 
@@ -162,7 +162,7 @@ class ConfigInfoDO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigInfoDO.
+        r"""Sets the value of this ConfigInfoDO.
 
         部署参数值
 
@@ -173,7 +173,7 @@ class ConfigInfoDO:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ConfigInfoDO.
+        r"""Gets the task_id of this ConfigInfoDO.
 
         部署任务id，创建应用后由系统自动生成
 
@@ -184,7 +184,7 @@ class ConfigInfoDO:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ConfigInfoDO.
+        r"""Sets the task_id of this ConfigInfoDO.
 
         部署任务id，创建应用后由系统自动生成
 
@@ -195,7 +195,7 @@ class ConfigInfoDO:
 
     @property
     def static_status(self):
-        """Gets the static_status of this ConfigInfoDO.
+        r"""Gets the static_status of this ConfigInfoDO.
 
         表示是否为静态参数，值为1时不支持部署时变更参数，值为0时支持，并且也会把该参数上报流水线
 
@@ -206,7 +206,7 @@ class ConfigInfoDO:
 
     @static_status.setter
     def static_status(self, static_status):
-        """Sets the static_status of this ConfigInfoDO.
+        r"""Sets the static_status of this ConfigInfoDO.
 
         表示是否为静态参数，值为1时不支持部署时变更参数，值为0时支持，并且也会把该参数上报流水线
 
@@ -217,7 +217,7 @@ class ConfigInfoDO:
 
     @property
     def limits(self):
-        """Gets the limits of this ConfigInfoDO.
+        r"""Gets the limits of this ConfigInfoDO.
 
         当参数类型为enum枚举类型时，必须填写可选值
 
@@ -228,7 +228,7 @@ class ConfigInfoDO:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this ConfigInfoDO.
+        r"""Sets the limits of this ConfigInfoDO.
 
         当参数类型为enum枚举类型时，必须填写可选值
 

@@ -27,7 +27,7 @@ class ShowRuleActionRequest:
     }
 
     def __init__(self, instance_id=None, action_id=None):
-        """ShowRuleActionRequest
+        r"""ShowRuleActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRuleActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRuleActionRequest.
+        r"""Gets the instance_id of this ShowRuleActionRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -60,7 +60,7 @@ class ShowRuleActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRuleActionRequest.
+        r"""Sets the instance_id of this ShowRuleActionRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -71,7 +71,7 @@ class ShowRuleActionRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ShowRuleActionRequest.
+        r"""Gets the action_id of this ShowRuleActionRequest.
 
         **参数说明**：规则动作ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -82,7 +82,7 @@ class ShowRuleActionRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ShowRuleActionRequest.
+        r"""Sets the action_id of this ShowRuleActionRequest.
 
         **参数说明**：规则动作ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 

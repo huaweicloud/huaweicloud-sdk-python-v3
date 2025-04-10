@@ -25,7 +25,7 @@ class DeleteIkThesaurusRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """DeleteIkThesaurusRequest
+        r"""DeleteIkThesaurusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteIkThesaurusRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteIkThesaurusRequest.
+        r"""Gets the cluster_id of this DeleteIkThesaurusRequest.
 
         指定要删除自定义词库的集群ID。
 
@@ -53,7 +53,7 @@ class DeleteIkThesaurusRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteIkThesaurusRequest.
+        r"""Sets the cluster_id of this DeleteIkThesaurusRequest.
 
         指定要删除自定义词库的集群ID。
 

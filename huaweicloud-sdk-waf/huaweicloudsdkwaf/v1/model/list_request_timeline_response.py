@@ -26,7 +26,7 @@ class ListRequestTimelineResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListRequestTimelineResponse
+        r"""ListRequestTimelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRequestTimelineResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListRequestTimelineResponse.
+        r"""Gets the body of this ListRequestTimelineResponse.
 
         安全统计的请求时间线数据
 
@@ -55,7 +55,7 @@ class ListRequestTimelineResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRequestTimelineResponse.
+        r"""Sets the body of this ListRequestTimelineResponse.
 
         安全统计的请求时间线数据
 

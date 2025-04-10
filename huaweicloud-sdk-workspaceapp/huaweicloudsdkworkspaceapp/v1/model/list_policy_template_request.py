@@ -29,7 +29,7 @@ class ListPolicyTemplateRequest:
     }
 
     def __init__(self, offset=None, limit=None, policy_group_name=None):
-        """ListPolicyTemplateRequest
+        r"""ListPolicyTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListPolicyTemplateRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPolicyTemplateRequest.
+        r"""Gets the offset of this ListPolicyTemplateRequest.
 
         查询的偏移量。
 
@@ -68,7 +68,7 @@ class ListPolicyTemplateRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPolicyTemplateRequest.
+        r"""Sets the offset of this ListPolicyTemplateRequest.
 
         查询的偏移量。
 
@@ -79,7 +79,7 @@ class ListPolicyTemplateRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyTemplateRequest.
+        r"""Gets the limit of this ListPolicyTemplateRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -90,7 +90,7 @@ class ListPolicyTemplateRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyTemplateRequest.
+        r"""Sets the limit of this ListPolicyTemplateRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -101,7 +101,7 @@ class ListPolicyTemplateRequest:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this ListPolicyTemplateRequest.
+        r"""Gets the policy_group_name of this ListPolicyTemplateRequest.
 
         根据策略模板名字过滤结果。
 
@@ -112,7 +112,7 @@ class ListPolicyTemplateRequest:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this ListPolicyTemplateRequest.
+        r"""Sets the policy_group_name of this ListPolicyTemplateRequest.
 
         根据策略模板名字过滤结果。
 

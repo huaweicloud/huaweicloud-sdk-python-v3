@@ -27,7 +27,7 @@ class SingleNodeInfo:
     }
 
     def __init__(self, node_id=None, name=None):
-        """SingleNodeInfo
+        r"""SingleNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SingleNodeInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SingleNodeInfo.
+        r"""Gets the node_id of this SingleNodeInfo.
 
         节点ID。
 
@@ -59,7 +59,7 @@ class SingleNodeInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SingleNodeInfo.
+        r"""Sets the node_id of this SingleNodeInfo.
 
         节点ID。
 
@@ -70,7 +70,7 @@ class SingleNodeInfo:
 
     @property
     def name(self):
-        """Gets the name of this SingleNodeInfo.
+        r"""Gets the name of this SingleNodeInfo.
 
         节点名称。支持中文、数字、字母、连接符-和_，长度为4-128。
 
@@ -81,7 +81,7 @@ class SingleNodeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SingleNodeInfo.
+        r"""Sets the name of this SingleNodeInfo.
 
         节点名称。支持中文、数字、字母、连接符-和_，长度为4-128。
 

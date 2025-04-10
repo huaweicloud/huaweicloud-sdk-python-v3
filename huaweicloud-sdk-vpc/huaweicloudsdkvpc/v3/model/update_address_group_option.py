@@ -33,7 +33,7 @@ class UpdateAddressGroupOption:
     }
 
     def __init__(self, name=None, description=None, ip_set=None, max_capacity=None, ip_extra_set=None):
-        """UpdateAddressGroupOption
+        r"""UpdateAddressGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateAddressGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAddressGroupOption.
+        r"""Gets the name of this UpdateAddressGroupOption.
 
         功能说明：地址组名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -82,7 +82,7 @@ class UpdateAddressGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAddressGroupOption.
+        r"""Sets the name of this UpdateAddressGroupOption.
 
         功能说明：地址组名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -93,7 +93,7 @@ class UpdateAddressGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAddressGroupOption.
+        r"""Gets the description of this UpdateAddressGroupOption.
 
         功能说明：IP地址组描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。 
 
@@ -104,7 +104,7 @@ class UpdateAddressGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAddressGroupOption.
+        r"""Sets the description of this UpdateAddressGroupOption.
 
         功能说明：IP地址组描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。 
 
@@ -115,7 +115,7 @@ class UpdateAddressGroupOption:
 
     @property
     def ip_set(self):
-        """Gets the ip_set of this UpdateAddressGroupOption.
+        r"""Gets the ip_set of this UpdateAddressGroupOption.
 
         功能说明：IP地址组可包含地址集 取值范围：可以是单个ip地址，ip地址范围，ip地址cidr 约束：当前一个地址组ip_set数量限制默认值为20，即配置的ip地址、ip地址范围或ip地址cidr的总数默认限制20
 
@@ -126,7 +126,7 @@ class UpdateAddressGroupOption:
 
     @ip_set.setter
     def ip_set(self, ip_set):
-        """Sets the ip_set of this UpdateAddressGroupOption.
+        r"""Sets the ip_set of this UpdateAddressGroupOption.
 
         功能说明：IP地址组可包含地址集 取值范围：可以是单个ip地址，ip地址范围，ip地址cidr 约束：当前一个地址组ip_set数量限制默认值为20，即配置的ip地址、ip地址范围或ip地址cidr的总数默认限制20
 
@@ -137,7 +137,7 @@ class UpdateAddressGroupOption:
 
     @property
     def max_capacity(self):
-        """Gets the max_capacity of this UpdateAddressGroupOption.
+        r"""Gets the max_capacity of this UpdateAddressGroupOption.
 
         功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20
 
@@ -148,7 +148,7 @@ class UpdateAddressGroupOption:
 
     @max_capacity.setter
     def max_capacity(self, max_capacity):
-        """Sets the max_capacity of this UpdateAddressGroupOption.
+        r"""Sets the max_capacity of this UpdateAddressGroupOption.
 
         功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20
 
@@ -159,7 +159,7 @@ class UpdateAddressGroupOption:
 
     @property
     def ip_extra_set(self):
-        """Gets the ip_extra_set of this UpdateAddressGroupOption.
+        r"""Gets the ip_extra_set of this UpdateAddressGroupOption.
 
         功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
 
@@ -170,7 +170,7 @@ class UpdateAddressGroupOption:
 
     @ip_extra_set.setter
     def ip_extra_set(self, ip_extra_set):
-        """Sets the ip_extra_set of this UpdateAddressGroupOption.
+        r"""Sets the ip_extra_set of this UpdateAddressGroupOption.
 
         功能说明：IP地址组包含的IP列表及其备注信息 约束：ip数量限制默认20, 与ip_set参数只能二选一
 

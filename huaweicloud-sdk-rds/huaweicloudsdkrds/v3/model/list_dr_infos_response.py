@@ -28,7 +28,7 @@ class ListDrInfosResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, instance_dr_infos=None):
-        """ListDrInfosResponse
+        r"""ListDrInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDrInfosResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDrInfosResponse.
+        r"""Gets the total_count of this ListDrInfosResponse.
 
         总记录数
 
@@ -62,7 +62,7 @@ class ListDrInfosResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDrInfosResponse.
+        r"""Sets the total_count of this ListDrInfosResponse.
 
         总记录数
 
@@ -73,7 +73,7 @@ class ListDrInfosResponse(SdkResponse):
 
     @property
     def instance_dr_infos(self):
-        """Gets the instance_dr_infos of this ListDrInfosResponse.
+        r"""Gets the instance_dr_infos of this ListDrInfosResponse.
 
         实例容灾信息
 
@@ -84,7 +84,7 @@ class ListDrInfosResponse(SdkResponse):
 
     @instance_dr_infos.setter
     def instance_dr_infos(self, instance_dr_infos):
-        """Sets the instance_dr_infos of this ListDrInfosResponse.
+        r"""Sets the instance_dr_infos of this ListDrInfosResponse.
 
         实例容灾信息
 

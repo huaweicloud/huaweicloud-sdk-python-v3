@@ -25,7 +25,7 @@ class CameraBandwidthPercentageOptions:
     }
 
     def __init__(self, camera_bandwidth_percentage_value=None):
-        """CameraBandwidthPercentageOptions
+        r"""CameraBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CameraBandwidthPercentageOptions:
 
     @property
     def camera_bandwidth_percentage_value(self):
-        """Gets the camera_bandwidth_percentage_value of this CameraBandwidthPercentageOptions.
+        r"""Gets the camera_bandwidth_percentage_value of this CameraBandwidthPercentageOptions.
 
         摄像头带宽百分比控制量（%）。取值范围为[0-100]。默认：30。
 
@@ -54,7 +54,7 @@ class CameraBandwidthPercentageOptions:
 
     @camera_bandwidth_percentage_value.setter
     def camera_bandwidth_percentage_value(self, camera_bandwidth_percentage_value):
-        """Sets the camera_bandwidth_percentage_value of this CameraBandwidthPercentageOptions.
+        r"""Sets the camera_bandwidth_percentage_value of this CameraBandwidthPercentageOptions.
 
         摄像头带宽百分比控制量（%）。取值范围为[0-100]。默认：30。
 

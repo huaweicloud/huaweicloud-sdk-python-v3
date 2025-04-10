@@ -25,7 +25,7 @@ class CreateVpcPeeringRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVpcPeeringRequest
+        r"""CreateVpcPeeringRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVpcPeeringRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpcPeeringRequest.
+        r"""Gets the body of this CreateVpcPeeringRequest.
 
         :return: The body of this CreateVpcPeeringRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringRequestBody`
@@ -52,7 +52,7 @@ class CreateVpcPeeringRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpcPeeringRequest.
+        r"""Sets the body of this CreateVpcPeeringRequest.
 
         :param body: The body of this CreateVpcPeeringRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringRequestBody`

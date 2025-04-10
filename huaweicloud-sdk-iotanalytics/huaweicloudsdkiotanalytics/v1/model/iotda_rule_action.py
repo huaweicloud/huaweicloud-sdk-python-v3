@@ -27,7 +27,7 @@ class IotdaRuleAction:
     }
 
     def __init__(self, rule_id=None, action_id=None):
-        """IotdaRuleAction
+        r"""IotdaRuleAction
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IotdaRuleAction:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this IotdaRuleAction.
+        r"""Gets the rule_id of this IotdaRuleAction.
 
         IoTDA中的规则Id
 
@@ -59,7 +59,7 @@ class IotdaRuleAction:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this IotdaRuleAction.
+        r"""Sets the rule_id of this IotdaRuleAction.
 
         IoTDA中的规则Id
 
@@ -70,7 +70,7 @@ class IotdaRuleAction:
 
     @property
     def action_id(self):
-        """Gets the action_id of this IotdaRuleAction.
+        r"""Gets the action_id of this IotdaRuleAction.
 
         IoTDA中推送数据动作ID
 
@@ -81,7 +81,7 @@ class IotdaRuleAction:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this IotdaRuleAction.
+        r"""Sets the action_id of this IotdaRuleAction.
 
         IoTDA中推送数据动作ID
 

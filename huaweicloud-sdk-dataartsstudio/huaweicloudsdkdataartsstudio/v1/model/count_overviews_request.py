@@ -27,7 +27,7 @@ class CountOverviewsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None):
-        """CountOverviewsRequest
+        r"""CountOverviewsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CountOverviewsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CountOverviewsRequest.
+        r"""Gets the workspace of this CountOverviewsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -60,7 +60,7 @@ class CountOverviewsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CountOverviewsRequest.
+        r"""Sets the workspace of this CountOverviewsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -71,7 +71,7 @@ class CountOverviewsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this CountOverviewsRequest.
+        r"""Gets the x_project_id of this CountOverviewsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -82,7 +82,7 @@ class CountOverviewsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this CountOverviewsRequest.
+        r"""Sets the x_project_id of this CountOverviewsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 

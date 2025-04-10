@@ -27,7 +27,7 @@ class ListLtsConfigsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListLtsConfigsRequest
+        r"""ListLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListLtsConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLtsConfigsRequest.
+        r"""Gets the offset of this ListLtsConfigsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -61,7 +61,7 @@ class ListLtsConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLtsConfigsRequest.
+        r"""Sets the offset of this ListLtsConfigsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -72,7 +72,7 @@ class ListLtsConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLtsConfigsRequest.
+        r"""Gets the limit of this ListLtsConfigsRequest.
 
         查询记录数。取值范围：0~50。不传该参数时，默认查询前50条实例的云服务日志配置信息。
 
@@ -83,7 +83,7 @@ class ListLtsConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLtsConfigsRequest.
+        r"""Sets the limit of this ListLtsConfigsRequest.
 
         查询记录数。取值范围：0~50。不传该参数时，默认查询前50条实例的云服务日志配置信息。
 

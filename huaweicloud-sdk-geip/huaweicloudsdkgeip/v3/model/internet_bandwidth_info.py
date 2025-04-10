@@ -27,7 +27,7 @@ class InternetBandwidthInfo:
     }
 
     def __init__(self, id=None, size=None):
-        """InternetBandwidthInfo
+        r"""InternetBandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InternetBandwidthInfo:
 
     @property
     def id(self):
-        """Gets the id of this InternetBandwidthInfo.
+        r"""Gets the id of this InternetBandwidthInfo.
 
         全域公网带宽的ID
 
@@ -61,7 +61,7 @@ class InternetBandwidthInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InternetBandwidthInfo.
+        r"""Sets the id of this InternetBandwidthInfo.
 
         全域公网带宽的ID
 
@@ -72,7 +72,7 @@ class InternetBandwidthInfo:
 
     @property
     def size(self):
-        """Gets the size of this InternetBandwidthInfo.
+        r"""Gets the size of this InternetBandwidthInfo.
 
         全域公网带宽大小（出云方向）
 
@@ -83,7 +83,7 @@ class InternetBandwidthInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this InternetBandwidthInfo.
+        r"""Sets the size of this InternetBandwidthInfo.
 
         全域公网带宽大小（出云方向）
 

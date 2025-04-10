@@ -35,7 +35,7 @@ class SuppressDuration:
     }
 
     def __init__(self):
-        """SuppressDuration
+        r"""SuppressDuration
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ModifyPortRequest:
     }
 
     def __init__(self, port=None):
-        """ModifyPortRequest
+        r"""ModifyPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyPortRequest:
 
     @property
     def port(self):
-        """Gets the port of this ModifyPortRequest.
+        r"""Gets the port of this ModifyPortRequest.
 
         端口号。  TaurusDB端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
 
@@ -53,7 +53,7 @@ class ModifyPortRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ModifyPortRequest.
+        r"""Sets the port of this ModifyPortRequest.
 
         端口号。  TaurusDB端口号范围：大于等于1024，小于等于65535，不包含端口5342-5345、12017、20000、20201、20202、33062。 
 

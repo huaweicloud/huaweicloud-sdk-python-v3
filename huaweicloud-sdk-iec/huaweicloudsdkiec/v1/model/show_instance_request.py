@@ -25,7 +25,7 @@ class ShowInstanceRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowInstanceRequest
+        r"""ShowInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowInstanceRequest.
+        r"""Gets the server_id of this ShowInstanceRequest.
 
         边缘实例ID。
 
@@ -53,7 +53,7 @@ class ShowInstanceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowInstanceRequest.
+        r"""Sets the server_id of this ShowInstanceRequest.
 
         边缘实例ID。
 

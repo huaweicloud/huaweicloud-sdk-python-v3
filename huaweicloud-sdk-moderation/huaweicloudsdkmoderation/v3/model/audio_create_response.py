@@ -27,7 +27,7 @@ class AudioCreateResponse:
     }
 
     def __init__(self, request_id=None, job_id=None):
-        """AudioCreateResponse
+        r"""AudioCreateResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AudioCreateResponse:
 
     @property
     def request_id(self):
-        """Gets the request_id of this AudioCreateResponse.
+        r"""Gets the request_id of this AudioCreateResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -61,7 +61,7 @@ class AudioCreateResponse:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AudioCreateResponse.
+        r"""Sets the request_id of this AudioCreateResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -72,7 +72,7 @@ class AudioCreateResponse:
 
     @property
     def job_id(self):
-        """Gets the job_id of this AudioCreateResponse.
+        r"""Gets the job_id of this AudioCreateResponse.
 
         作业唯一标识。
 
@@ -83,7 +83,7 @@ class AudioCreateResponse:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AudioCreateResponse.
+        r"""Sets the job_id of this AudioCreateResponse.
 
         作业唯一标识。
 

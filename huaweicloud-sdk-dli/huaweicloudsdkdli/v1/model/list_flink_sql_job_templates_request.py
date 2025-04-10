@@ -33,7 +33,7 @@ class ListFlinkSqlJobTemplatesRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, order=None, tags=None):
-        """ListFlinkSqlJobTemplatesRequest
+        r"""ListFlinkSqlJobTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlinkSqlJobTemplatesRequest.
+        r"""Gets the limit of this ListFlinkSqlJobTemplatesRequest.
 
         返回的数据条数。默认为10。
 
@@ -82,7 +82,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlinkSqlJobTemplatesRequest.
+        r"""Sets the limit of this ListFlinkSqlJobTemplatesRequest.
 
         返回的数据条数。默认为10。
 
@@ -93,7 +93,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFlinkSqlJobTemplatesRequest.
+        r"""Gets the name of this ListFlinkSqlJobTemplatesRequest.
 
         模板名字
 
@@ -104,7 +104,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFlinkSqlJobTemplatesRequest.
+        r"""Sets the name of this ListFlinkSqlJobTemplatesRequest.
 
         模板名字
 
@@ -115,7 +115,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlinkSqlJobTemplatesRequest.
+        r"""Gets the offset of this ListFlinkSqlJobTemplatesRequest.
 
         作业偏移量。
 
@@ -126,7 +126,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlinkSqlJobTemplatesRequest.
+        r"""Sets the offset of this ListFlinkSqlJobTemplatesRequest.
 
         作业偏移量。
 
@@ -137,7 +137,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListFlinkSqlJobTemplatesRequest.
+        r"""Gets the order of this ListFlinkSqlJobTemplatesRequest.
 
         查询结果排序，升序asc和降序desc两种可选，默认降序。
 
@@ -148,7 +148,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListFlinkSqlJobTemplatesRequest.
+        r"""Sets the order of this ListFlinkSqlJobTemplatesRequest.
 
         查询结果排序，升序asc和降序desc两种可选，默认降序。
 
@@ -159,7 +159,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListFlinkSqlJobTemplatesRequest.
+        r"""Gets the tags of this ListFlinkSqlJobTemplatesRequest.
 
         :return: The tags of this ListFlinkSqlJobTemplatesRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListFlinkSqlJobTemplatesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFlinkSqlJobTemplatesRequest.
+        r"""Sets the tags of this ListFlinkSqlJobTemplatesRequest.
 
         :param tags: The tags of this ListFlinkSqlJobTemplatesRequest.
         :type tags: str

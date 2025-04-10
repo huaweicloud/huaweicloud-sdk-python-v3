@@ -31,7 +31,7 @@ class DeliverDetail:
     }
 
     def __init__(self, deliver_time=None, deliver_status=None, deliver_consuming=None, deliver_rsp_code=None):
-        """DeliverDetail
+        r"""DeliverDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeliverDetail:
 
     @property
     def deliver_time(self):
-        """Gets the deliver_time of this DeliverDetail.
+        r"""Gets the deliver_time of this DeliverDetail.
 
         投递时间 格式 yyyy/mm/dd xx:yy:zz
 
@@ -75,7 +75,7 @@ class DeliverDetail:
 
     @deliver_time.setter
     def deliver_time(self, deliver_time):
-        """Sets the deliver_time of this DeliverDetail.
+        r"""Sets the deliver_time of this DeliverDetail.
 
         投递时间 格式 yyyy/mm/dd xx:yy:zz
 
@@ -86,7 +86,7 @@ class DeliverDetail:
 
     @property
     def deliver_status(self):
-        """Gets the deliver_status of this DeliverDetail.
+        r"""Gets the deliver_status of this DeliverDetail.
 
         投递状态 SUCCESS Or FAILED
 
@@ -97,7 +97,7 @@ class DeliverDetail:
 
     @deliver_status.setter
     def deliver_status(self, deliver_status):
-        """Sets the deliver_status of this DeliverDetail.
+        r"""Sets the deliver_status of this DeliverDetail.
 
         投递状态 SUCCESS Or FAILED
 
@@ -108,7 +108,7 @@ class DeliverDetail:
 
     @property
     def deliver_consuming(self):
-        """Gets the deliver_consuming of this DeliverDetail.
+        r"""Gets the deliver_consuming of this DeliverDetail.
 
         投递耗时，单位ms
 
@@ -119,7 +119,7 @@ class DeliverDetail:
 
     @deliver_consuming.setter
     def deliver_consuming(self, deliver_consuming):
-        """Sets the deliver_consuming of this DeliverDetail.
+        r"""Sets the deliver_consuming of this DeliverDetail.
 
         投递耗时，单位ms
 
@@ -130,7 +130,7 @@ class DeliverDetail:
 
     @property
     def deliver_rsp_code(self):
-        """Gets the deliver_rsp_code of this DeliverDetail.
+        r"""Gets the deliver_rsp_code of this DeliverDetail.
 
         投递响应码
 
@@ -141,7 +141,7 @@ class DeliverDetail:
 
     @deliver_rsp_code.setter
     def deliver_rsp_code(self, deliver_rsp_code):
-        """Sets the deliver_rsp_code of this DeliverDetail.
+        r"""Sets the deliver_rsp_code of this DeliverDetail.
 
         投递响应码
 

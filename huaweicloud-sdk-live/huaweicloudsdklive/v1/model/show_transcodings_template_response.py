@@ -30,7 +30,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain=None, templates=None):
-        """ShowTranscodingsTemplateResponse
+        r"""ShowTranscodingsTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTranscodingsTemplateResponse.
+        r"""Gets the total of this ShowTranscodingsTemplateResponse.
 
         查询结果的总元素数量
 
@@ -69,7 +69,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTranscodingsTemplateResponse.
+        r"""Sets the total of this ShowTranscodingsTemplateResponse.
 
         查询结果的总元素数量
 
@@ -80,7 +80,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowTranscodingsTemplateResponse.
+        r"""Gets the domain of this ShowTranscodingsTemplateResponse.
 
         播放域名
 
@@ -91,7 +91,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowTranscodingsTemplateResponse.
+        r"""Sets the domain of this ShowTranscodingsTemplateResponse.
 
         播放域名
 
@@ -102,7 +102,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ShowTranscodingsTemplateResponse.
+        r"""Gets the templates of this ShowTranscodingsTemplateResponse.
 
         转码模板
 
@@ -113,7 +113,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ShowTranscodingsTemplateResponse.
+        r"""Sets the templates of this ShowTranscodingsTemplateResponse.
 
         转码模板
 

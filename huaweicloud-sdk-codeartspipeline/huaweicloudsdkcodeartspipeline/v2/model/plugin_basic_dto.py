@@ -47,7 +47,7 @@ class PluginBasicDTO:
     }
 
     def __init__(self, unique_id=None, icon_url=None, runtime_attribution=None, plugin_name=None, display_name=None, business_type=None, business_type_display_name=None, description=None, is_private=None, region=None, maintainers=None, plugin_composition_type=None):
-        """PluginBasicDTO
+        r"""PluginBasicDTO
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class PluginBasicDTO:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PluginBasicDTO.
+        r"""Gets the unique_id of this PluginBasicDTO.
 
         唯一ID
 
@@ -127,7 +127,7 @@ class PluginBasicDTO:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PluginBasicDTO.
+        r"""Sets the unique_id of this PluginBasicDTO.
 
         唯一ID
 
@@ -138,7 +138,7 @@ class PluginBasicDTO:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this PluginBasicDTO.
+        r"""Gets the icon_url of this PluginBasicDTO.
 
         图标URL
 
@@ -149,7 +149,7 @@ class PluginBasicDTO:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this PluginBasicDTO.
+        r"""Sets the icon_url of this PluginBasicDTO.
 
         图标URL
 
@@ -160,7 +160,7 @@ class PluginBasicDTO:
 
     @property
     def runtime_attribution(self):
-        """Gets the runtime_attribution of this PluginBasicDTO.
+        r"""Gets the runtime_attribution of this PluginBasicDTO.
 
         运行属性
 
@@ -171,7 +171,7 @@ class PluginBasicDTO:
 
     @runtime_attribution.setter
     def runtime_attribution(self, runtime_attribution):
-        """Sets the runtime_attribution of this PluginBasicDTO.
+        r"""Sets the runtime_attribution of this PluginBasicDTO.
 
         运行属性
 
@@ -182,7 +182,7 @@ class PluginBasicDTO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginBasicDTO.
+        r"""Gets the plugin_name of this PluginBasicDTO.
 
         插件名
 
@@ -193,7 +193,7 @@ class PluginBasicDTO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginBasicDTO.
+        r"""Sets the plugin_name of this PluginBasicDTO.
 
         插件名
 
@@ -204,7 +204,7 @@ class PluginBasicDTO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PluginBasicDTO.
+        r"""Gets the display_name of this PluginBasicDTO.
 
         展示名
 
@@ -215,7 +215,7 @@ class PluginBasicDTO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PluginBasicDTO.
+        r"""Sets the display_name of this PluginBasicDTO.
 
         展示名
 
@@ -226,7 +226,7 @@ class PluginBasicDTO:
 
     @property
     def business_type(self):
-        """Gets the business_type of this PluginBasicDTO.
+        r"""Gets the business_type of this PluginBasicDTO.
 
         业务类型
 
@@ -237,7 +237,7 @@ class PluginBasicDTO:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this PluginBasicDTO.
+        r"""Sets the business_type of this PluginBasicDTO.
 
         业务类型
 
@@ -248,7 +248,7 @@ class PluginBasicDTO:
 
     @property
     def business_type_display_name(self):
-        """Gets the business_type_display_name of this PluginBasicDTO.
+        r"""Gets the business_type_display_name of this PluginBasicDTO.
 
         业务类型展示名
 
@@ -259,7 +259,7 @@ class PluginBasicDTO:
 
     @business_type_display_name.setter
     def business_type_display_name(self, business_type_display_name):
-        """Sets the business_type_display_name of this PluginBasicDTO.
+        r"""Sets the business_type_display_name of this PluginBasicDTO.
 
         业务类型展示名
 
@@ -270,7 +270,7 @@ class PluginBasicDTO:
 
     @property
     def description(self):
-        """Gets the description of this PluginBasicDTO.
+        r"""Gets the description of this PluginBasicDTO.
 
         描述
 
@@ -281,7 +281,7 @@ class PluginBasicDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PluginBasicDTO.
+        r"""Sets the description of this PluginBasicDTO.
 
         描述
 
@@ -292,7 +292,7 @@ class PluginBasicDTO:
 
     @property
     def is_private(self):
-        """Gets the is_private of this PluginBasicDTO.
+        r"""Gets the is_private of this PluginBasicDTO.
 
         是否私有
 
@@ -303,7 +303,7 @@ class PluginBasicDTO:
 
     @is_private.setter
     def is_private(self, is_private):
-        """Sets the is_private of this PluginBasicDTO.
+        r"""Sets the is_private of this PluginBasicDTO.
 
         是否私有
 
@@ -314,7 +314,7 @@ class PluginBasicDTO:
 
     @property
     def region(self):
-        """Gets the region of this PluginBasicDTO.
+        r"""Gets the region of this PluginBasicDTO.
 
         局点
 
@@ -325,7 +325,7 @@ class PluginBasicDTO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this PluginBasicDTO.
+        r"""Sets the region of this PluginBasicDTO.
 
         局点
 
@@ -336,7 +336,7 @@ class PluginBasicDTO:
 
     @property
     def maintainers(self):
-        """Gets the maintainers of this PluginBasicDTO.
+        r"""Gets the maintainers of this PluginBasicDTO.
 
         维护者
 
@@ -347,7 +347,7 @@ class PluginBasicDTO:
 
     @maintainers.setter
     def maintainers(self, maintainers):
-        """Sets the maintainers of this PluginBasicDTO.
+        r"""Sets the maintainers of this PluginBasicDTO.
 
         维护者
 
@@ -358,7 +358,7 @@ class PluginBasicDTO:
 
     @property
     def plugin_composition_type(self):
-        """Gets the plugin_composition_type of this PluginBasicDTO.
+        r"""Gets the plugin_composition_type of this PluginBasicDTO.
 
         组合插件类型
 
@@ -369,7 +369,7 @@ class PluginBasicDTO:
 
     @plugin_composition_type.setter
     def plugin_composition_type(self, plugin_composition_type):
-        """Sets the plugin_composition_type of this PluginBasicDTO.
+        r"""Sets the plugin_composition_type of this PluginBasicDTO.
 
         组合插件类型
 

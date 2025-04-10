@@ -30,7 +30,7 @@ class ShowFlinkMetricResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, metrics=None):
-        """ShowFlinkMetricResponse
+        r"""ShowFlinkMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFlinkMetricResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowFlinkMetricResponse.
+        r"""Gets the is_success of this ShowFlinkMetricResponse.
 
         请求是否成功
 
@@ -69,7 +69,7 @@ class ShowFlinkMetricResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowFlinkMetricResponse.
+        r"""Sets the is_success of this ShowFlinkMetricResponse.
 
         请求是否成功
 
@@ -80,7 +80,7 @@ class ShowFlinkMetricResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowFlinkMetricResponse.
+        r"""Gets the message of this ShowFlinkMetricResponse.
 
         消息内容。
 
@@ -91,7 +91,7 @@ class ShowFlinkMetricResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowFlinkMetricResponse.
+        r"""Sets the message of this ShowFlinkMetricResponse.
 
         消息内容。
 
@@ -102,7 +102,7 @@ class ShowFlinkMetricResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowFlinkMetricResponse.
+        r"""Gets the metrics of this ShowFlinkMetricResponse.
 
         :return: The metrics of this ShowFlinkMetricResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkMetric`
@@ -111,7 +111,7 @@ class ShowFlinkMetricResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowFlinkMetricResponse.
+        r"""Sets the metrics of this ShowFlinkMetricResponse.
 
         :param metrics: The metrics of this ShowFlinkMetricResponse.
         :type metrics: :class:`huaweicloudsdkdli.v1.FlinkMetric`

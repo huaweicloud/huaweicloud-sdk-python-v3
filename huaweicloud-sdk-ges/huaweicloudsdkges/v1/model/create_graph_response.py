@@ -32,7 +32,7 @@ class CreateGraphResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, error_message=None, error_code=None):
-        """CreateGraphResponse
+        r"""CreateGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateGraphResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateGraphResponse.
+        r"""Gets the id of this CreateGraphResponse.
 
         图ID。
 
@@ -76,7 +76,7 @@ class CreateGraphResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateGraphResponse.
+        r"""Sets the id of this CreateGraphResponse.
 
         图ID。
 
@@ -87,7 +87,7 @@ class CreateGraphResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateGraphResponse.
+        r"""Gets the name of this CreateGraphResponse.
 
         图名称。
 
@@ -98,7 +98,7 @@ class CreateGraphResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGraphResponse.
+        r"""Sets the name of this CreateGraphResponse.
 
         图名称。
 
@@ -109,7 +109,7 @@ class CreateGraphResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this CreateGraphResponse.
+        r"""Gets the error_message of this CreateGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -120,7 +120,7 @@ class CreateGraphResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CreateGraphResponse.
+        r"""Sets the error_message of this CreateGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -131,7 +131,7 @@ class CreateGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateGraphResponse.
+        r"""Gets the error_code of this CreateGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -142,7 +142,7 @@ class CreateGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateGraphResponse.
+        r"""Sets the error_code of this CreateGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 

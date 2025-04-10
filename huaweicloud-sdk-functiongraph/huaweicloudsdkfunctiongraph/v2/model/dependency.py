@@ -47,7 +47,7 @@ class Dependency:
     }
 
     def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, dep_id=None, last_modified=None):
-        """Dependency
+        r"""Dependency
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Dependency:
 
     @property
     def id(self):
-        """Gets the id of this Dependency.
+        r"""Gets the id of this Dependency.
 
         依赖包版本ID。
 
@@ -124,7 +124,7 @@ class Dependency:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Dependency.
+        r"""Sets the id of this Dependency.
 
         依赖包版本ID。
 
@@ -135,7 +135,7 @@ class Dependency:
 
     @property
     def owner(self):
-        """Gets the owner of this Dependency.
+        r"""Gets the owner of this Dependency.
 
         依赖包属主的domainId。
 
@@ -146,7 +146,7 @@ class Dependency:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Dependency.
+        r"""Sets the owner of this Dependency.
 
         依赖包属主的domainId。
 
@@ -157,7 +157,7 @@ class Dependency:
 
     @property
     def link(self):
-        """Gets the link of this Dependency.
+        r"""Gets the link of this Dependency.
 
         依赖包在OBS上的链接。
 
@@ -168,7 +168,7 @@ class Dependency:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this Dependency.
+        r"""Sets the link of this Dependency.
 
         依赖包在OBS上的链接。
 
@@ -179,7 +179,7 @@ class Dependency:
 
     @property
     def runtime(self):
-        """Gets the runtime of this Dependency.
+        r"""Gets the runtime of this Dependency.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -190,7 +190,7 @@ class Dependency:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this Dependency.
+        r"""Sets the runtime of this Dependency.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -201,7 +201,7 @@ class Dependency:
 
     @property
     def etag(self):
-        """Gets the etag of this Dependency.
+        r"""Gets the etag of this Dependency.
 
         依赖包的md5值
 
@@ -212,7 +212,7 @@ class Dependency:
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this Dependency.
+        r"""Sets the etag of this Dependency.
 
         依赖包的md5值
 
@@ -223,7 +223,7 @@ class Dependency:
 
     @property
     def size(self):
-        """Gets the size of this Dependency.
+        r"""Gets the size of this Dependency.
 
         依赖包大小。
 
@@ -234,7 +234,7 @@ class Dependency:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Dependency.
+        r"""Sets the size of this Dependency.
 
         依赖包大小。
 
@@ -245,7 +245,7 @@ class Dependency:
 
     @property
     def name(self):
-        """Gets the name of this Dependency.
+        r"""Gets the name of this Dependency.
 
         依赖包名称。
 
@@ -256,7 +256,7 @@ class Dependency:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Dependency.
+        r"""Sets the name of this Dependency.
 
         依赖包名称。
 
@@ -267,7 +267,7 @@ class Dependency:
 
     @property
     def description(self):
-        """Gets the description of this Dependency.
+        r"""Gets the description of this Dependency.
 
         依赖包描述。
 
@@ -278,7 +278,7 @@ class Dependency:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Dependency.
+        r"""Sets the description of this Dependency.
 
         依赖包描述。
 
@@ -289,7 +289,7 @@ class Dependency:
 
     @property
     def file_name(self):
-        """Gets the file_name of this Dependency.
+        r"""Gets the file_name of this Dependency.
 
         依赖包文件名，如果创建方式为zip时。
 
@@ -300,7 +300,7 @@ class Dependency:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this Dependency.
+        r"""Sets the file_name of this Dependency.
 
         依赖包文件名，如果创建方式为zip时。
 
@@ -311,7 +311,7 @@ class Dependency:
 
     @property
     def version(self):
-        """Gets the version of this Dependency.
+        r"""Gets the version of this Dependency.
 
         依赖包版本编号。
 
@@ -322,7 +322,7 @@ class Dependency:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Dependency.
+        r"""Sets the version of this Dependency.
 
         依赖包版本编号。
 
@@ -333,7 +333,7 @@ class Dependency:
 
     @property
     def dep_id(self):
-        """Gets the dep_id of this Dependency.
+        r"""Gets the dep_id of this Dependency.
 
         依赖包ID
 
@@ -344,7 +344,7 @@ class Dependency:
 
     @dep_id.setter
     def dep_id(self, dep_id):
-        """Sets the dep_id of this Dependency.
+        r"""Sets the dep_id of this Dependency.
 
         依赖包ID
 
@@ -355,7 +355,7 @@ class Dependency:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this Dependency.
+        r"""Gets the last_modified of this Dependency.
 
         依赖包最后一次更新时间。
 
@@ -366,7 +366,7 @@ class Dependency:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this Dependency.
+        r"""Sets the last_modified of this Dependency.
 
         依赖包最后一次更新时间。
 

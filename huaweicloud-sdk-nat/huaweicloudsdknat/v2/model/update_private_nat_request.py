@@ -27,7 +27,7 @@ class UpdatePrivateNatRequest:
     }
 
     def __init__(self, gateway_id=None, body=None):
-        """UpdatePrivateNatRequest
+        r"""UpdatePrivateNatRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePrivateNatRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this UpdatePrivateNatRequest.
+        r"""Gets the gateway_id of this UpdatePrivateNatRequest.
 
         私网NAT网关实例的ID。
 
@@ -60,7 +60,7 @@ class UpdatePrivateNatRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this UpdatePrivateNatRequest.
+        r"""Sets the gateway_id of this UpdatePrivateNatRequest.
 
         私网NAT网关实例的ID。
 
@@ -71,7 +71,7 @@ class UpdatePrivateNatRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrivateNatRequest.
+        r"""Gets the body of this UpdatePrivateNatRequest.
 
         :return: The body of this UpdatePrivateNatRequest.
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateNatRequestBody`
@@ -80,7 +80,7 @@ class UpdatePrivateNatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrivateNatRequest.
+        r"""Sets the body of this UpdatePrivateNatRequest.
 
         :param body: The body of this UpdatePrivateNatRequest.
         :type body: :class:`huaweicloudsdknat.v2.UpdatePrivateNatRequestBody`

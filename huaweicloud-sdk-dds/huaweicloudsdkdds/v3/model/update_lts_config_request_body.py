@@ -25,7 +25,7 @@ class UpdateLtsConfigRequestBody:
     }
 
     def __init__(self, lts_configs=None):
-        """UpdateLtsConfigRequestBody
+        r"""UpdateLtsConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateLtsConfigRequestBody:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this UpdateLtsConfigRequestBody.
+        r"""Gets the lts_configs of this UpdateLtsConfigRequestBody.
 
         每个Item是实例需要设置的LTS策略。
 
@@ -53,7 +53,7 @@ class UpdateLtsConfigRequestBody:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this UpdateLtsConfigRequestBody.
+        r"""Sets the lts_configs of this UpdateLtsConfigRequestBody.
 
         每个Item是实例需要设置的LTS策略。
 

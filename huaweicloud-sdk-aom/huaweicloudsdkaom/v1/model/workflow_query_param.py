@@ -47,7 +47,7 @@ class WorkflowQueryParam:
     }
 
     def __init__(self, search=None, type=None, tags=None, page=None, size=None, enterprise_project_id=None, create_by=None, sort_field=None, sort_type=None, search_time_start=None, search_time_end=None, status=None):
-        """WorkflowQueryParam
+        r"""WorkflowQueryParam
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class WorkflowQueryParam:
 
     @property
     def search(self):
-        """Gets the search of this WorkflowQueryParam.
+        r"""Gets the search of this WorkflowQueryParam.
 
         搜索内容，可以针对工作流名称和描述内容进行搜索。
 
@@ -129,7 +129,7 @@ class WorkflowQueryParam:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this WorkflowQueryParam.
+        r"""Sets the search of this WorkflowQueryParam.
 
         搜索内容，可以针对工作流名称和描述内容进行搜索。
 
@@ -140,7 +140,7 @@ class WorkflowQueryParam:
 
     @property
     def type(self):
-        """Gets the type of this WorkflowQueryParam.
+        r"""Gets the type of this WorkflowQueryParam.
 
         工作流分类，可以取值[\"cron\",\"event\",\"manual\"]。
 
@@ -151,7 +151,7 @@ class WorkflowQueryParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WorkflowQueryParam.
+        r"""Sets the type of this WorkflowQueryParam.
 
         工作流分类，可以取值[\"cron\",\"event\",\"manual\"]。
 
@@ -162,7 +162,7 @@ class WorkflowQueryParam:
 
     @property
     def tags(self):
-        """Gets the tags of this WorkflowQueryParam.
+        r"""Gets the tags of this WorkflowQueryParam.
 
         工作流标签，最多支持10个。
 
@@ -173,7 +173,7 @@ class WorkflowQueryParam:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this WorkflowQueryParam.
+        r"""Sets the tags of this WorkflowQueryParam.
 
         工作流标签，最多支持10个。
 
@@ -184,7 +184,7 @@ class WorkflowQueryParam:
 
     @property
     def page(self):
-        """Gets the page of this WorkflowQueryParam.
+        r"""Gets the page of this WorkflowQueryParam.
 
         查询当前的页数，默认值为0。
 
@@ -195,7 +195,7 @@ class WorkflowQueryParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this WorkflowQueryParam.
+        r"""Sets the page of this WorkflowQueryParam.
 
         查询当前的页数，默认值为0。
 
@@ -206,7 +206,7 @@ class WorkflowQueryParam:
 
     @property
     def size(self):
-        """Gets the size of this WorkflowQueryParam.
+        r"""Gets the size of this WorkflowQueryParam.
 
         查询当前页的大小，默认值为10。
 
@@ -217,7 +217,7 @@ class WorkflowQueryParam:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this WorkflowQueryParam.
+        r"""Sets the size of this WorkflowQueryParam.
 
         查询当前页的大小，默认值为10。
 
@@ -228,7 +228,7 @@ class WorkflowQueryParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this WorkflowQueryParam.
+        r"""Gets the enterprise_project_id of this WorkflowQueryParam.
 
         企业项目id。
 
@@ -239,7 +239,7 @@ class WorkflowQueryParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this WorkflowQueryParam.
+        r"""Sets the enterprise_project_id of this WorkflowQueryParam.
 
         企业项目id。
 
@@ -250,7 +250,7 @@ class WorkflowQueryParam:
 
     @property
     def create_by(self):
-        """Gets the create_by of this WorkflowQueryParam.
+        r"""Gets the create_by of this WorkflowQueryParam.
 
         工作流创建人。
 
@@ -261,7 +261,7 @@ class WorkflowQueryParam:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this WorkflowQueryParam.
+        r"""Sets the create_by of this WorkflowQueryParam.
 
         工作流创建人。
 
@@ -272,7 +272,7 @@ class WorkflowQueryParam:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this WorkflowQueryParam.
+        r"""Gets the sort_field of this WorkflowQueryParam.
 
         排序字段，取值[\"create_time\"，\"last_execution_start_time\"，\"update_time\"]。
 
@@ -283,7 +283,7 @@ class WorkflowQueryParam:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this WorkflowQueryParam.
+        r"""Sets the sort_field of this WorkflowQueryParam.
 
         排序字段，取值[\"create_time\"，\"last_execution_start_time\"，\"update_time\"]。
 
@@ -294,7 +294,7 @@ class WorkflowQueryParam:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this WorkflowQueryParam.
+        r"""Gets the sort_type of this WorkflowQueryParam.
 
         排序类型，取值[\"ASC\"，\"DESC\"]。
 
@@ -305,7 +305,7 @@ class WorkflowQueryParam:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this WorkflowQueryParam.
+        r"""Sets the sort_type of this WorkflowQueryParam.
 
         排序类型，取值[\"ASC\"，\"DESC\"]。
 
@@ -316,7 +316,7 @@ class WorkflowQueryParam:
 
     @property
     def search_time_start(self):
-        """Gets the search_time_start of this WorkflowQueryParam.
+        r"""Gets the search_time_start of this WorkflowQueryParam.
 
         时间范围查询的开始时间。
 
@@ -327,7 +327,7 @@ class WorkflowQueryParam:
 
     @search_time_start.setter
     def search_time_start(self, search_time_start):
-        """Sets the search_time_start of this WorkflowQueryParam.
+        r"""Sets the search_time_start of this WorkflowQueryParam.
 
         时间范围查询的开始时间。
 
@@ -338,7 +338,7 @@ class WorkflowQueryParam:
 
     @property
     def search_time_end(self):
-        """Gets the search_time_end of this WorkflowQueryParam.
+        r"""Gets the search_time_end of this WorkflowQueryParam.
 
         时间范围查询的结束时间。
 
@@ -349,7 +349,7 @@ class WorkflowQueryParam:
 
     @search_time_end.setter
     def search_time_end(self, search_time_end):
-        """Sets the search_time_end of this WorkflowQueryParam.
+        r"""Sets the search_time_end of this WorkflowQueryParam.
 
         时间范围查询的结束时间。
 
@@ -360,7 +360,7 @@ class WorkflowQueryParam:
 
     @property
     def status(self):
-        """Gets the status of this WorkflowQueryParam.
+        r"""Gets the status of this WorkflowQueryParam.
 
         任务的状态 [\"success\",\"fail\",\"executing\",\"cancel\",\"waitExecute\",\"waitApproval\",\"approvalFailed\",\"pausing\",\"canceling\"]
 
@@ -371,7 +371,7 @@ class WorkflowQueryParam:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkflowQueryParam.
+        r"""Sets the status of this WorkflowQueryParam.
 
         任务的状态 [\"success\",\"fail\",\"executing\",\"cancel\",\"waitExecute\",\"waitApproval\",\"approvalFailed\",\"pausing\",\"canceling\"]
 

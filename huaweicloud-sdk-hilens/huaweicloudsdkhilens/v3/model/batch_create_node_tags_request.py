@@ -25,7 +25,7 @@ class BatchCreateNodeTagsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateNodeTagsRequest
+        r"""BatchCreateNodeTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateNodeTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateNodeTagsRequest.
+        r"""Gets the body of this BatchCreateNodeTagsRequest.
 
         :return: The body of this BatchCreateNodeTagsRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.MultiResourcesMultiTags`
@@ -52,7 +52,7 @@ class BatchCreateNodeTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateNodeTagsRequest.
+        r"""Sets the body of this BatchCreateNodeTagsRequest.
 
         :param body: The body of this BatchCreateNodeTagsRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.MultiResourcesMultiTags`

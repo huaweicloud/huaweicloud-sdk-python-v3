@@ -27,7 +27,7 @@ class CreateClusterLoadBalance:
     }
 
     def __init__(self, endpoint_with_dns_name=None, vpc_permissions=None):
-        """CreateClusterLoadBalance
+        r"""CreateClusterLoadBalance
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusterLoadBalance:
 
     @property
     def endpoint_with_dns_name(self):
-        """Gets the endpoint_with_dns_name of this CreateClusterLoadBalance.
+        r"""Gets the endpoint_with_dns_name of this CreateClusterLoadBalance.
 
         是否开启内网域名。 - true： 开启内网域名。 - false： 关闭内网域名。
 
@@ -60,7 +60,7 @@ class CreateClusterLoadBalance:
 
     @endpoint_with_dns_name.setter
     def endpoint_with_dns_name(self, endpoint_with_dns_name):
-        """Sets the endpoint_with_dns_name of this CreateClusterLoadBalance.
+        r"""Sets the endpoint_with_dns_name of this CreateClusterLoadBalance.
 
         是否开启内网域名。 - true： 开启内网域名。 - false： 关闭内网域名。
 
@@ -71,7 +71,7 @@ class CreateClusterLoadBalance:
 
     @property
     def vpc_permissions(self):
-        """Gets the vpc_permissions of this CreateClusterLoadBalance.
+        r"""Gets the vpc_permissions of this CreateClusterLoadBalance.
 
         访问控制。
 
@@ -82,7 +82,7 @@ class CreateClusterLoadBalance:
 
     @vpc_permissions.setter
     def vpc_permissions(self, vpc_permissions):
-        """Sets the vpc_permissions of this CreateClusterLoadBalance.
+        r"""Sets the vpc_permissions of this CreateClusterLoadBalance.
 
         访问控制。
 

@@ -27,7 +27,7 @@ class WorkitemsIteration:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkitemsIteration
+        r"""WorkitemsIteration
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkitemsIteration:
 
     @property
     def id(self):
-        """Gets the id of this WorkitemsIteration.
+        r"""Gets the id of this WorkitemsIteration.
 
         迭代id
 
@@ -61,7 +61,7 @@ class WorkitemsIteration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkitemsIteration.
+        r"""Sets the id of this WorkitemsIteration.
 
         迭代id
 
@@ -72,7 +72,7 @@ class WorkitemsIteration:
 
     @property
     def name(self):
-        """Gets the name of this WorkitemsIteration.
+        r"""Gets the name of this WorkitemsIteration.
 
         迭代名
 
@@ -83,7 +83,7 @@ class WorkitemsIteration:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkitemsIteration.
+        r"""Sets the name of this WorkitemsIteration.
 
         迭代名
 

@@ -28,7 +28,7 @@ class ListBucketResponse(SdkResponse):
     }
 
     def __init__(self, count=None, buckets=None):
-        """ListBucketResponse
+        r"""ListBucketResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBucketResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBucketResponse.
+        r"""Gets the count of this ListBucketResponse.
 
         桶个数
 
@@ -62,7 +62,7 @@ class ListBucketResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBucketResponse.
+        r"""Sets the count of this ListBucketResponse.
 
         桶个数
 
@@ -73,7 +73,7 @@ class ListBucketResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this ListBucketResponse.
+        r"""Gets the buckets of this ListBucketResponse.
 
         桶列表
 
@@ -84,7 +84,7 @@ class ListBucketResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this ListBucketResponse.
+        r"""Sets the buckets of this ListBucketResponse.
 
         桶列表
 

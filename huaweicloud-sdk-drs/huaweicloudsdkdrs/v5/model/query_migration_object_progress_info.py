@@ -35,7 +35,7 @@ class QueryMigrationObjectProgressInfo:
     }
 
     def __init__(self, migration_object_overview=None, create_time=None, full_start_time=None, full_complete_time=None, incr_start_time=None, end_time=None):
-        """QueryMigrationObjectProgressInfo
+        r"""QueryMigrationObjectProgressInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryMigrationObjectProgressInfo:
 
     @property
     def migration_object_overview(self):
-        """Gets the migration_object_overview of this QueryMigrationObjectProgressInfo.
+        r"""Gets the migration_object_overview of this QueryMigrationObjectProgressInfo.
 
         概览详情。
 
@@ -89,7 +89,7 @@ class QueryMigrationObjectProgressInfo:
 
     @migration_object_overview.setter
     def migration_object_overview(self, migration_object_overview):
-        """Sets the migration_object_overview of this QueryMigrationObjectProgressInfo.
+        r"""Sets the migration_object_overview of this QueryMigrationObjectProgressInfo.
 
         概览详情。
 
@@ -100,7 +100,7 @@ class QueryMigrationObjectProgressInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryMigrationObjectProgressInfo.
+        r"""Gets the create_time of this QueryMigrationObjectProgressInfo.
 
         数据生成时间。
 
@@ -111,7 +111,7 @@ class QueryMigrationObjectProgressInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryMigrationObjectProgressInfo.
+        r"""Sets the create_time of this QueryMigrationObjectProgressInfo.
 
         数据生成时间。
 
@@ -122,7 +122,7 @@ class QueryMigrationObjectProgressInfo:
 
     @property
     def full_start_time(self):
-        """Gets the full_start_time of this QueryMigrationObjectProgressInfo.
+        r"""Gets the full_start_time of this QueryMigrationObjectProgressInfo.
 
         全量开始时间。
 
@@ -133,7 +133,7 @@ class QueryMigrationObjectProgressInfo:
 
     @full_start_time.setter
     def full_start_time(self, full_start_time):
-        """Sets the full_start_time of this QueryMigrationObjectProgressInfo.
+        r"""Sets the full_start_time of this QueryMigrationObjectProgressInfo.
 
         全量开始时间。
 
@@ -144,7 +144,7 @@ class QueryMigrationObjectProgressInfo:
 
     @property
     def full_complete_time(self):
-        """Gets the full_complete_time of this QueryMigrationObjectProgressInfo.
+        r"""Gets the full_complete_time of this QueryMigrationObjectProgressInfo.
 
         全量完成时间。
 
@@ -155,7 +155,7 @@ class QueryMigrationObjectProgressInfo:
 
     @full_complete_time.setter
     def full_complete_time(self, full_complete_time):
-        """Sets the full_complete_time of this QueryMigrationObjectProgressInfo.
+        r"""Sets the full_complete_time of this QueryMigrationObjectProgressInfo.
 
         全量完成时间。
 
@@ -166,7 +166,7 @@ class QueryMigrationObjectProgressInfo:
 
     @property
     def incr_start_time(self):
-        """Gets the incr_start_time of this QueryMigrationObjectProgressInfo.
+        r"""Gets the incr_start_time of this QueryMigrationObjectProgressInfo.
 
         增量开始时间。
 
@@ -177,7 +177,7 @@ class QueryMigrationObjectProgressInfo:
 
     @incr_start_time.setter
     def incr_start_time(self, incr_start_time):
-        """Sets the incr_start_time of this QueryMigrationObjectProgressInfo.
+        r"""Sets the incr_start_time of this QueryMigrationObjectProgressInfo.
 
         增量开始时间。
 
@@ -188,7 +188,7 @@ class QueryMigrationObjectProgressInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryMigrationObjectProgressInfo.
+        r"""Gets the end_time of this QueryMigrationObjectProgressInfo.
 
         结束时间。
 
@@ -199,7 +199,7 @@ class QueryMigrationObjectProgressInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryMigrationObjectProgressInfo.
+        r"""Sets the end_time of this QueryMigrationObjectProgressInfo.
 
         结束时间。
 

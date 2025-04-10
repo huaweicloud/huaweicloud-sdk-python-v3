@@ -25,7 +25,7 @@ class ListGraphMetadatasRequest:
     }
 
     def __init__(self, metadata_id=None):
-        """ListGraphMetadatasRequest
+        r"""ListGraphMetadatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListGraphMetadatasRequest:
 
     @property
     def metadata_id(self):
-        """Gets the metadata_id of this ListGraphMetadatasRequest.
+        r"""Gets the metadata_id of this ListGraphMetadatasRequest.
 
         元数据ID。
 
@@ -53,7 +53,7 @@ class ListGraphMetadatasRequest:
 
     @metadata_id.setter
     def metadata_id(self, metadata_id):
-        """Sets the metadata_id of this ListGraphMetadatasRequest.
+        r"""Sets the metadata_id of this ListGraphMetadatasRequest.
 
         元数据ID。
 

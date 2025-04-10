@@ -26,7 +26,7 @@ class ListHooksResponse(SdkResponse):
     }
 
     def __init__(self, hooks=None):
-        """ListHooksResponse
+        r"""ListHooksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHooksResponse(SdkResponse):
 
     @property
     def hooks(self):
-        """Gets the hooks of this ListHooksResponse.
+        r"""Gets the hooks of this ListHooksResponse.
 
         hook列表。
 
@@ -55,7 +55,7 @@ class ListHooksResponse(SdkResponse):
 
     @hooks.setter
     def hooks(self, hooks):
-        """Sets the hooks of this ListHooksResponse.
+        r"""Sets the hooks of this ListHooksResponse.
 
         hook列表。
 

@@ -29,7 +29,7 @@ class ContentCompareResultOverview:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, content_compare_result=None):
-        """ContentCompareResultOverview
+        r"""ContentCompareResultOverview
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ContentCompareResultOverview:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this ContentCompareResultOverview.
+        r"""Gets the source_db_name of this ContentCompareResultOverview.
 
         源库名称。
 
@@ -65,7 +65,7 @@ class ContentCompareResultOverview:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this ContentCompareResultOverview.
+        r"""Sets the source_db_name of this ContentCompareResultOverview.
 
         源库名称。
 
@@ -76,7 +76,7 @@ class ContentCompareResultOverview:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this ContentCompareResultOverview.
+        r"""Gets the target_db_name of this ContentCompareResultOverview.
 
         目标库名称。
 
@@ -87,7 +87,7 @@ class ContentCompareResultOverview:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this ContentCompareResultOverview.
+        r"""Sets the target_db_name of this ContentCompareResultOverview.
 
         目标库名称。
 
@@ -98,7 +98,7 @@ class ContentCompareResultOverview:
 
     @property
     def content_compare_result(self):
-        """Gets the content_compare_result of this ContentCompareResultOverview.
+        r"""Gets the content_compare_result of this ContentCompareResultOverview.
 
         对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
@@ -109,7 +109,7 @@ class ContentCompareResultOverview:
 
     @content_compare_result.setter
     def content_compare_result(self, content_compare_result):
-        """Sets the content_compare_result of this ContentCompareResultOverview.
+        r"""Sets the content_compare_result of this ContentCompareResultOverview.
 
         对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 

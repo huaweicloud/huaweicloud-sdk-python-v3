@@ -43,7 +43,7 @@ class CustomerAccountChangeRecord:
     }
 
     def __init__(self, account_change_id=None, trade_detail_type=None, trade_time=None, trade_id=None, change_amount=None, balance_after_change=None, revenue_expense_type=None, bill_cycle=None, payment_channel_id=None, payment_channel_no=None):
-        """CustomerAccountChangeRecord
+        r"""CustomerAccountChangeRecord
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def account_change_id(self):
-        """Gets the account_change_id of this CustomerAccountChangeRecord.
+        r"""Gets the account_change_id of this CustomerAccountChangeRecord.
 
         |参数名称：收支明细流水号| |参数约束及描述：收支明细流水号|
 
@@ -117,7 +117,7 @@ class CustomerAccountChangeRecord:
 
     @account_change_id.setter
     def account_change_id(self, account_change_id):
-        """Sets the account_change_id of this CustomerAccountChangeRecord.
+        r"""Sets the account_change_id of this CustomerAccountChangeRecord.
 
         |参数名称：收支明细流水号| |参数约束及描述：收支明细流水号|
 
@@ -128,7 +128,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def trade_detail_type(self):
-        """Gets the trade_detail_type of this CustomerAccountChangeRecord.
+        r"""Gets the trade_detail_type of this CustomerAccountChangeRecord.
 
         |参数名称：交易详细类型| |参数约束及描述：交易详细类型|
 
@@ -139,7 +139,7 @@ class CustomerAccountChangeRecord:
 
     @trade_detail_type.setter
     def trade_detail_type(self, trade_detail_type):
-        """Sets the trade_detail_type of this CustomerAccountChangeRecord.
+        r"""Sets the trade_detail_type of this CustomerAccountChangeRecord.
 
         |参数名称：交易详细类型| |参数约束及描述：交易详细类型|
 
@@ -150,7 +150,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def trade_time(self):
-        """Gets the trade_time of this CustomerAccountChangeRecord.
+        r"""Gets the trade_time of this CustomerAccountChangeRecord.
 
         |参数名称：交易时间| |参数约束及描述：交易时间|
 
@@ -161,7 +161,7 @@ class CustomerAccountChangeRecord:
 
     @trade_time.setter
     def trade_time(self, trade_time):
-        """Sets the trade_time of this CustomerAccountChangeRecord.
+        r"""Sets the trade_time of this CustomerAccountChangeRecord.
 
         |参数名称：交易时间| |参数约束及描述：交易时间|
 
@@ -172,7 +172,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this CustomerAccountChangeRecord.
+        r"""Gets the trade_id of this CustomerAccountChangeRecord.
 
         |参数名称：交易ID/订单ID| |参数约束及描述：交易ID/订单ID|
 
@@ -183,7 +183,7 @@ class CustomerAccountChangeRecord:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this CustomerAccountChangeRecord.
+        r"""Sets the trade_id of this CustomerAccountChangeRecord.
 
         |参数名称：交易ID/订单ID| |参数约束及描述：交易ID/订单ID|
 
@@ -194,7 +194,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def change_amount(self):
-        """Gets the change_amount of this CustomerAccountChangeRecord.
+        r"""Gets the change_amount of this CustomerAccountChangeRecord.
 
         |参数名称：变更金额| |参数约束及描述：变更金额|
 
@@ -205,7 +205,7 @@ class CustomerAccountChangeRecord:
 
     @change_amount.setter
     def change_amount(self, change_amount):
-        """Sets the change_amount of this CustomerAccountChangeRecord.
+        r"""Sets the change_amount of this CustomerAccountChangeRecord.
 
         |参数名称：变更金额| |参数约束及描述：变更金额|
 
@@ -216,7 +216,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def balance_after_change(self):
-        """Gets the balance_after_change of this CustomerAccountChangeRecord.
+        r"""Gets the balance_after_change of this CustomerAccountChangeRecord.
 
         |参数名称：变更后余额| |参数约束及描述：变更后余额|
 
@@ -227,7 +227,7 @@ class CustomerAccountChangeRecord:
 
     @balance_after_change.setter
     def balance_after_change(self, balance_after_change):
-        """Sets the balance_after_change of this CustomerAccountChangeRecord.
+        r"""Sets the balance_after_change of this CustomerAccountChangeRecord.
 
         |参数名称：变更后余额| |参数约束及描述：变更后余额|
 
@@ -238,7 +238,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def revenue_expense_type(self):
-        """Gets the revenue_expense_type of this CustomerAccountChangeRecord.
+        r"""Gets the revenue_expense_type of this CustomerAccountChangeRecord.
 
         |参数名称：收支类型| |参数约束及描述：收支类型|
 
@@ -249,7 +249,7 @@ class CustomerAccountChangeRecord:
 
     @revenue_expense_type.setter
     def revenue_expense_type(self, revenue_expense_type):
-        """Sets the revenue_expense_type of this CustomerAccountChangeRecord.
+        r"""Sets the revenue_expense_type of this CustomerAccountChangeRecord.
 
         |参数名称：收支类型| |参数约束及描述：收支类型|
 
@@ -260,7 +260,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this CustomerAccountChangeRecord.
+        r"""Gets the bill_cycle of this CustomerAccountChangeRecord.
 
         |参数名称：账期| |参数约束及描述：账期|
 
@@ -271,7 +271,7 @@ class CustomerAccountChangeRecord:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this CustomerAccountChangeRecord.
+        r"""Sets the bill_cycle of this CustomerAccountChangeRecord.
 
         |参数名称：账期| |参数约束及描述：账期|
 
@@ -282,7 +282,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def payment_channel_id(self):
-        """Gets the payment_channel_id of this CustomerAccountChangeRecord.
+        r"""Gets the payment_channel_id of this CustomerAccountChangeRecord.
 
         |参数名称：交易渠道| |参数约束及描述：交易渠道|
 
@@ -293,7 +293,7 @@ class CustomerAccountChangeRecord:
 
     @payment_channel_id.setter
     def payment_channel_id(self, payment_channel_id):
-        """Sets the payment_channel_id of this CustomerAccountChangeRecord.
+        r"""Sets the payment_channel_id of this CustomerAccountChangeRecord.
 
         |参数名称：交易渠道| |参数约束及描述：交易渠道|
 
@@ -304,7 +304,7 @@ class CustomerAccountChangeRecord:
 
     @property
     def payment_channel_no(self):
-        """Gets the payment_channel_no of this CustomerAccountChangeRecord.
+        r"""Gets the payment_channel_no of this CustomerAccountChangeRecord.
 
         |参数名称：交易渠道流水号| |参数约束及描述：交易渠道流水号|
 
@@ -315,7 +315,7 @@ class CustomerAccountChangeRecord:
 
     @payment_channel_no.setter
     def payment_channel_no(self, payment_channel_no):
-        """Sets the payment_channel_no of this CustomerAccountChangeRecord.
+        r"""Sets the payment_channel_no of this CustomerAccountChangeRecord.
 
         |参数名称：交易渠道流水号| |参数约束及描述：交易渠道流水号|
 

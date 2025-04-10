@@ -25,7 +25,7 @@ class ShowScalingConfigRequest:
     }
 
     def __init__(self, scaling_configuration_id=None):
-        """ShowScalingConfigRequest
+        r"""ShowScalingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScalingConfigRequest:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this ShowScalingConfigRequest.
+        r"""Gets the scaling_configuration_id of this ShowScalingConfigRequest.
 
         伸缩配置ID，查询唯一配置。
 
@@ -53,7 +53,7 @@ class ShowScalingConfigRequest:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this ShowScalingConfigRequest.
+        r"""Sets the scaling_configuration_id of this ShowScalingConfigRequest.
 
         伸缩配置ID，查询唯一配置。
 

@@ -43,7 +43,7 @@ class Policy:
     }
 
     def __init__(self, policy_type=None, policy_name=None, policy_id=None, urn=None, path=None, default_version_id=None, attachment_count=None, description=None, created_at=None, updated_at=None):
-        """Policy
+        r"""Policy
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class Policy:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this Policy.
+        r"""Gets the policy_type of this Policy.
 
         :return: The policy_type of this Policy.
         :rtype: :class:`huaweicloudsdkiam.v5.PolicyType`
@@ -106,7 +106,7 @@ class Policy:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this Policy.
+        r"""Sets the policy_type of this Policy.
 
         :param policy_type: The policy_type of this Policy.
         :type policy_type: :class:`huaweicloudsdkiam.v5.PolicyType`
@@ -115,7 +115,7 @@ class Policy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this Policy.
+        r"""Gets the policy_name of this Policy.
 
         身份策略名称，长度为1到128个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -126,7 +126,7 @@ class Policy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this Policy.
+        r"""Sets the policy_name of this Policy.
 
         身份策略名称，长度为1到128个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -137,7 +137,7 @@ class Policy:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this Policy.
+        r"""Gets the policy_id of this Policy.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -148,7 +148,7 @@ class Policy:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this Policy.
+        r"""Sets the policy_id of this Policy.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -159,7 +159,7 @@ class Policy:
 
     @property
     def urn(self):
-        """Gets the urn of this Policy.
+        r"""Gets the urn of this Policy.
 
         统一资源名称。
 
@@ -170,7 +170,7 @@ class Policy:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this Policy.
+        r"""Sets the urn of this Policy.
 
         统一资源名称。
 
@@ -181,7 +181,7 @@ class Policy:
 
     @property
     def path(self):
-        """Gets the path of this Policy.
+        r"""Gets the path of this Policy.
 
         资源路径，默认为空串。由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -192,7 +192,7 @@ class Policy:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Policy.
+        r"""Sets the path of this Policy.
 
         资源路径，默认为空串。由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -203,7 +203,7 @@ class Policy:
 
     @property
     def default_version_id(self):
-        """Gets the default_version_id of this Policy.
+        r"""Gets the default_version_id of this Policy.
 
         默认版本号。
 
@@ -214,7 +214,7 @@ class Policy:
 
     @default_version_id.setter
     def default_version_id(self, default_version_id):
-        """Sets the default_version_id of this Policy.
+        r"""Sets the default_version_id of this Policy.
 
         默认版本号。
 
@@ -225,7 +225,7 @@ class Policy:
 
     @property
     def attachment_count(self):
-        """Gets the attachment_count of this Policy.
+        r"""Gets the attachment_count of this Policy.
 
         附加了本身份策略的实体数量。
 
@@ -236,7 +236,7 @@ class Policy:
 
     @attachment_count.setter
     def attachment_count(self, attachment_count):
-        """Sets the attachment_count of this Policy.
+        r"""Sets the attachment_count of this Policy.
 
         附加了本身份策略的实体数量。
 
@@ -247,7 +247,7 @@ class Policy:
 
     @property
     def description(self):
-        """Gets the description of this Policy.
+        r"""Gets the description of this Policy.
 
         身份策略描述。
 
@@ -258,7 +258,7 @@ class Policy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Policy.
+        r"""Sets the description of this Policy.
 
         身份策略描述。
 
@@ -269,7 +269,7 @@ class Policy:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Policy.
+        r"""Gets the created_at of this Policy.
 
         身份策略创建时间。
 
@@ -280,7 +280,7 @@ class Policy:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Policy.
+        r"""Sets the created_at of this Policy.
 
         身份策略创建时间。
 
@@ -291,7 +291,7 @@ class Policy:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Policy.
+        r"""Gets the updated_at of this Policy.
 
         身份策略默认版本最近一次的更新时间。
 
@@ -302,7 +302,7 @@ class Policy:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Policy.
+        r"""Sets the updated_at of this Policy.
 
         身份策略默认版本最近一次的更新时间。
 

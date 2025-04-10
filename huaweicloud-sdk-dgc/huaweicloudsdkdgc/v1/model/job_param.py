@@ -29,7 +29,7 @@ class JobParam:
     }
 
     def __init__(self, name=None, value=None, type=None):
-        """JobParam
+        r"""JobParam
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class JobParam:
 
     @property
     def name(self):
-        """Gets the name of this JobParam.
+        r"""Gets the name of this JobParam.
 
         参数名称，只能包含英文字母、数字、中划线和下划线。
 
@@ -66,7 +66,7 @@ class JobParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobParam.
+        r"""Sets the name of this JobParam.
 
         参数名称，只能包含英文字母、数字、中划线和下划线。
 
@@ -77,7 +77,7 @@ class JobParam:
 
     @property
     def value(self):
-        """Gets the value of this JobParam.
+        r"""Gets the value of this JobParam.
 
         参数值
 
@@ -88,7 +88,7 @@ class JobParam:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this JobParam.
+        r"""Sets the value of this JobParam.
 
         参数值
 
@@ -99,7 +99,7 @@ class JobParam:
 
     @property
     def type(self):
-        """Gets the type of this JobParam.
+        r"""Gets the type of this JobParam.
 
         参数类型
 
@@ -110,7 +110,7 @@ class JobParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this JobParam.
+        r"""Sets the type of this JobParam.
 
         参数类型
 

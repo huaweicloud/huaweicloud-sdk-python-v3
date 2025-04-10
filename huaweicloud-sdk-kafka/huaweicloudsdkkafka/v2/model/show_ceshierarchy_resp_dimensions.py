@@ -33,7 +33,7 @@ class ShowCeshierarchyRespDimensions:
     }
 
     def __init__(self, name=None, metrics=None, key_name=None, dim_router=None, children=None):
-        """ShowCeshierarchyRespDimensions
+        r"""ShowCeshierarchyRespDimensions
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowCeshierarchyRespDimensions:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespDimensions.
+        r"""Gets the name of this ShowCeshierarchyRespDimensions.
 
         监控维度名称。
 
@@ -82,7 +82,7 @@ class ShowCeshierarchyRespDimensions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespDimensions.
+        r"""Sets the name of this ShowCeshierarchyRespDimensions.
 
         监控维度名称。
 
@@ -93,7 +93,7 @@ class ShowCeshierarchyRespDimensions:
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowCeshierarchyRespDimensions.
+        r"""Gets the metrics of this ShowCeshierarchyRespDimensions.
 
         监控指标名称。
 
@@ -104,7 +104,7 @@ class ShowCeshierarchyRespDimensions:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowCeshierarchyRespDimensions.
+        r"""Sets the metrics of this ShowCeshierarchyRespDimensions.
 
         监控指标名称。
 
@@ -115,7 +115,7 @@ class ShowCeshierarchyRespDimensions:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ShowCeshierarchyRespDimensions.
+        r"""Gets the key_name of this ShowCeshierarchyRespDimensions.
 
         监控查询使用的key。
 
@@ -126,7 +126,7 @@ class ShowCeshierarchyRespDimensions:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ShowCeshierarchyRespDimensions.
+        r"""Sets the key_name of this ShowCeshierarchyRespDimensions.
 
         监控查询使用的key。
 
@@ -137,7 +137,7 @@ class ShowCeshierarchyRespDimensions:
 
     @property
     def dim_router(self):
-        """Gets the dim_router of this ShowCeshierarchyRespDimensions.
+        r"""Gets the dim_router of this ShowCeshierarchyRespDimensions.
 
         监控维度路由。
 
@@ -148,7 +148,7 @@ class ShowCeshierarchyRespDimensions:
 
     @dim_router.setter
     def dim_router(self, dim_router):
-        """Sets the dim_router of this ShowCeshierarchyRespDimensions.
+        r"""Sets the dim_router of this ShowCeshierarchyRespDimensions.
 
         监控维度路由。
 
@@ -159,7 +159,7 @@ class ShowCeshierarchyRespDimensions:
 
     @property
     def children(self):
-        """Gets the children of this ShowCeshierarchyRespDimensions.
+        r"""Gets the children of this ShowCeshierarchyRespDimensions.
 
         子维度列表。
 
@@ -170,7 +170,7 @@ class ShowCeshierarchyRespDimensions:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ShowCeshierarchyRespDimensions.
+        r"""Sets the children of this ShowCeshierarchyRespDimensions.
 
         子维度列表。
 

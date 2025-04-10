@@ -25,7 +25,7 @@ class AddCallBackRequest:
     }
 
     def __init__(self, body=None):
-        """AddCallBackRequest
+        r"""AddCallBackRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddCallBackRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddCallBackRequest.
+        r"""Gets the body of this AddCallBackRequest.
 
         :return: The body of this AddCallBackRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AddCallbackRequestBody`
@@ -52,7 +52,7 @@ class AddCallBackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddCallBackRequest.
+        r"""Sets the body of this AddCallBackRequest.
 
         :param body: The body of this AddCallBackRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.AddCallbackRequestBody`

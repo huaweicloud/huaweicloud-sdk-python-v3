@@ -35,7 +35,7 @@ class QueryColumnInfo:
     }
 
     def __init__(self, column_name=None, column_type=None, primary_key_or_unique_index=None, column_mapped_name=None, is_filtered=None, is_partition_key=None):
-        """QueryColumnInfo
+        r"""QueryColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryColumnInfo:
 
     @property
     def column_name(self):
-        """Gets the column_name of this QueryColumnInfo.
+        r"""Gets the column_name of this QueryColumnInfo.
 
         列名
 
@@ -89,7 +89,7 @@ class QueryColumnInfo:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this QueryColumnInfo.
+        r"""Sets the column_name of this QueryColumnInfo.
 
         列名
 
@@ -100,7 +100,7 @@ class QueryColumnInfo:
 
     @property
     def column_type(self):
-        """Gets the column_type of this QueryColumnInfo.
+        r"""Gets the column_type of this QueryColumnInfo.
 
         列类型
 
@@ -111,7 +111,7 @@ class QueryColumnInfo:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this QueryColumnInfo.
+        r"""Sets the column_type of this QueryColumnInfo.
 
         列类型
 
@@ -122,7 +122,7 @@ class QueryColumnInfo:
 
     @property
     def primary_key_or_unique_index(self):
-        """Gets the primary_key_or_unique_index of this QueryColumnInfo.
+        r"""Gets the primary_key_or_unique_index of this QueryColumnInfo.
 
         主键或者唯一索引
 
@@ -133,7 +133,7 @@ class QueryColumnInfo:
 
     @primary_key_or_unique_index.setter
     def primary_key_or_unique_index(self, primary_key_or_unique_index):
-        """Sets the primary_key_or_unique_index of this QueryColumnInfo.
+        r"""Sets the primary_key_or_unique_index of this QueryColumnInfo.
 
         主键或者唯一索引
 
@@ -144,7 +144,7 @@ class QueryColumnInfo:
 
     @property
     def column_mapped_name(self):
-        """Gets the column_mapped_name of this QueryColumnInfo.
+        r"""Gets the column_mapped_name of this QueryColumnInfo.
 
         列映射后的名称
 
@@ -155,7 +155,7 @@ class QueryColumnInfo:
 
     @column_mapped_name.setter
     def column_mapped_name(self, column_mapped_name):
-        """Sets the column_mapped_name of this QueryColumnInfo.
+        r"""Sets the column_mapped_name of this QueryColumnInfo.
 
         列映射后的名称
 
@@ -166,7 +166,7 @@ class QueryColumnInfo:
 
     @property
     def is_filtered(self):
-        """Gets the is_filtered of this QueryColumnInfo.
+        r"""Gets the is_filtered of this QueryColumnInfo.
 
         该列是否过滤
 
@@ -177,7 +177,7 @@ class QueryColumnInfo:
 
     @is_filtered.setter
     def is_filtered(self, is_filtered):
-        """Sets the is_filtered of this QueryColumnInfo.
+        r"""Sets the is_filtered of this QueryColumnInfo.
 
         该列是否过滤
 
@@ -188,7 +188,7 @@ class QueryColumnInfo:
 
     @property
     def is_partition_key(self):
-        """Gets the is_partition_key of this QueryColumnInfo.
+        r"""Gets the is_partition_key of this QueryColumnInfo.
 
         该列是否partitionKey
 
@@ -199,7 +199,7 @@ class QueryColumnInfo:
 
     @is_partition_key.setter
     def is_partition_key(self, is_partition_key):
-        """Sets the is_partition_key of this QueryColumnInfo.
+        r"""Sets the is_partition_key of this QueryColumnInfo.
 
         该列是否partitionKey
 

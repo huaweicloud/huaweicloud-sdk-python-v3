@@ -26,7 +26,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, active_code=None):
-        """ResetVisionActiveCodeResponse
+        r"""ResetVisionActiveCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
 
     @property
     def active_code(self):
-        """Gets the active_code of this ResetVisionActiveCodeResponse.
+        r"""Gets the active_code of this ResetVisionActiveCodeResponse.
 
         激活码。
 
@@ -55,7 +55,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
 
     @active_code.setter
     def active_code(self, active_code):
-        """Sets the active_code of this ResetVisionActiveCodeResponse.
+        r"""Sets the active_code of this ResetVisionActiveCodeResponse.
 
         激活码。
 

@@ -24,7 +24,7 @@ class RebootNodeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RebootNodeResponse
+        r"""RebootNodeResponse
 
         The model defined in huaweicloud sdk
 

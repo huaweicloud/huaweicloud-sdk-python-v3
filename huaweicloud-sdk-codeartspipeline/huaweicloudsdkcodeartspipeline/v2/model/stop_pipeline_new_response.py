@@ -28,7 +28,7 @@ class StopPipelineNewResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, pipeline_name=None):
-        """StopPipelineNewResponse
+        r"""StopPipelineNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StopPipelineNewResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StopPipelineNewResponse.
+        r"""Gets the pipeline_id of this StopPipelineNewResponse.
 
         流水线ID
 
@@ -62,7 +62,7 @@ class StopPipelineNewResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StopPipelineNewResponse.
+        r"""Sets the pipeline_id of this StopPipelineNewResponse.
 
         流水线ID
 
@@ -73,7 +73,7 @@ class StopPipelineNewResponse(SdkResponse):
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this StopPipelineNewResponse.
+        r"""Gets the pipeline_name of this StopPipelineNewResponse.
 
         流水线名字
 
@@ -84,7 +84,7 @@ class StopPipelineNewResponse(SdkResponse):
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this StopPipelineNewResponse.
+        r"""Sets the pipeline_name of this StopPipelineNewResponse.
 
         流水线名字
 

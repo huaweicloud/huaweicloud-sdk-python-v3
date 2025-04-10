@@ -67,7 +67,7 @@ class SmsAppQueryResp:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, resource_id=None, developer_account=None, app_name=None, omp_app_name=None, app_key=None, up_link_addr=None, status=None, industry=None, region=None, intl_channel_num=None, enterprise_project_id=None, enterprise_project_name=None, ip_white_list=None, app_access_addr=None, protocol=None, platform=None, is_support_multiomp=None, tenant=None):
-        """SmsAppQueryResp
+        r"""SmsAppQueryResp
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class SmsAppQueryResp:
 
     @property
     def id(self):
-        """Gets the id of this SmsAppQueryResp.
+        r"""Gets the id of this SmsAppQueryResp.
 
         应用主键ID，用于获取、修改应用的唯一标识
 
@@ -201,7 +201,7 @@ class SmsAppQueryResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SmsAppQueryResp.
+        r"""Sets the id of this SmsAppQueryResp.
 
         应用主键ID，用于获取、修改应用的唯一标识
 
@@ -212,7 +212,7 @@ class SmsAppQueryResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsAppQueryResp.
+        r"""Gets the create_time of this SmsAppQueryResp.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -223,7 +223,7 @@ class SmsAppQueryResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsAppQueryResp.
+        r"""Sets the create_time of this SmsAppQueryResp.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -234,7 +234,7 @@ class SmsAppQueryResp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SmsAppQueryResp.
+        r"""Gets the update_time of this SmsAppQueryResp.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -245,7 +245,7 @@ class SmsAppQueryResp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SmsAppQueryResp.
+        r"""Sets the update_time of this SmsAppQueryResp.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -256,7 +256,7 @@ class SmsAppQueryResp:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SmsAppQueryResp.
+        r"""Gets the customer_id of this SmsAppQueryResp.
 
         租户customer id
 
@@ -267,7 +267,7 @@ class SmsAppQueryResp:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SmsAppQueryResp.
+        r"""Sets the customer_id of this SmsAppQueryResp.
 
         租户customer id
 
@@ -278,7 +278,7 @@ class SmsAppQueryResp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SmsAppQueryResp.
+        r"""Gets the resource_id of this SmsAppQueryResp.
 
         租户resource id
 
@@ -289,7 +289,7 @@ class SmsAppQueryResp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SmsAppQueryResp.
+        r"""Sets the resource_id of this SmsAppQueryResp.
 
         租户resource id
 
@@ -300,7 +300,7 @@ class SmsAppQueryResp:
 
     @property
     def developer_account(self):
-        """Gets the developer_account of this SmsAppQueryResp.
+        r"""Gets the developer_account of this SmsAppQueryResp.
 
         租户开发者账号
 
@@ -311,7 +311,7 @@ class SmsAppQueryResp:
 
     @developer_account.setter
     def developer_account(self, developer_account):
-        """Sets the developer_account of this SmsAppQueryResp.
+        r"""Sets the developer_account of this SmsAppQueryResp.
 
         租户开发者账号
 
@@ -322,7 +322,7 @@ class SmsAppQueryResp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsAppQueryResp.
+        r"""Gets the app_name of this SmsAppQueryResp.
 
         应用名称
 
@@ -333,7 +333,7 @@ class SmsAppQueryResp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsAppQueryResp.
+        r"""Sets the app_name of this SmsAppQueryResp.
 
         应用名称
 
@@ -344,7 +344,7 @@ class SmsAppQueryResp:
 
     @property
     def omp_app_name(self):
-        """Gets the omp_app_name of this SmsAppQueryResp.
+        r"""Gets the omp_app_name of this SmsAppQueryResp.
 
         omp应用名称
 
@@ -355,7 +355,7 @@ class SmsAppQueryResp:
 
     @omp_app_name.setter
     def omp_app_name(self, omp_app_name):
-        """Sets the omp_app_name of this SmsAppQueryResp.
+        r"""Sets the omp_app_name of this SmsAppQueryResp.
 
         omp应用名称
 
@@ -366,7 +366,7 @@ class SmsAppQueryResp:
 
     @property
     def app_key(self):
-        """Gets the app_key of this SmsAppQueryResp.
+        r"""Gets the app_key of this SmsAppQueryResp.
 
         应用key
 
@@ -377,7 +377,7 @@ class SmsAppQueryResp:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this SmsAppQueryResp.
+        r"""Sets the app_key of this SmsAppQueryResp.
 
         应用key
 
@@ -388,7 +388,7 @@ class SmsAppQueryResp:
 
     @property
     def up_link_addr(self):
-        """Gets the up_link_addr of this SmsAppQueryResp.
+        r"""Gets the up_link_addr of this SmsAppQueryResp.
 
         上行短信地址
 
@@ -399,7 +399,7 @@ class SmsAppQueryResp:
 
     @up_link_addr.setter
     def up_link_addr(self, up_link_addr):
-        """Sets the up_link_addr of this SmsAppQueryResp.
+        r"""Sets the up_link_addr of this SmsAppQueryResp.
 
         上行短信地址
 
@@ -410,7 +410,7 @@ class SmsAppQueryResp:
 
     @property
     def status(self):
-        """Gets the status of this SmsAppQueryResp.
+        r"""Gets the status of this SmsAppQueryResp.
 
         应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。   PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
@@ -421,7 +421,7 @@ class SmsAppQueryResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsAppQueryResp.
+        r"""Sets the status of this SmsAppQueryResp.
 
         应用状态   CREATED：待上线。应用暂未创建成功，请稍候。   SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   LAUNCHED：正常。应用添加成功，可以正常使用。   PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
@@ -432,7 +432,7 @@ class SmsAppQueryResp:
 
     @property
     def industry(self):
-        """Gets the industry of this SmsAppQueryResp.
+        r"""Gets the industry of this SmsAppQueryResp.
 
         行业类型
 
@@ -443,7 +443,7 @@ class SmsAppQueryResp:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this SmsAppQueryResp.
+        r"""Sets the industry of this SmsAppQueryResp.
 
         行业类型
 
@@ -454,7 +454,7 @@ class SmsAppQueryResp:
 
     @property
     def region(self):
-        """Gets the region of this SmsAppQueryResp.
+        r"""Gets the region of this SmsAppQueryResp.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -465,7 +465,7 @@ class SmsAppQueryResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SmsAppQueryResp.
+        r"""Sets the region of this SmsAppQueryResp.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -476,7 +476,7 @@ class SmsAppQueryResp:
 
     @property
     def intl_channel_num(self):
-        """Gets the intl_channel_num of this SmsAppQueryResp.
+        r"""Gets the intl_channel_num of this SmsAppQueryResp.
 
         国际/港澳台短信通道号
 
@@ -487,7 +487,7 @@ class SmsAppQueryResp:
 
     @intl_channel_num.setter
     def intl_channel_num(self, intl_channel_num):
-        """Sets the intl_channel_num of this SmsAppQueryResp.
+        r"""Sets the intl_channel_num of this SmsAppQueryResp.
 
         国际/港澳台短信通道号
 
@@ -498,7 +498,7 @@ class SmsAppQueryResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SmsAppQueryResp.
+        r"""Gets the enterprise_project_id of this SmsAppQueryResp.
 
         企业项目ID
 
@@ -509,7 +509,7 @@ class SmsAppQueryResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SmsAppQueryResp.
+        r"""Sets the enterprise_project_id of this SmsAppQueryResp.
 
         企业项目ID
 
@@ -520,7 +520,7 @@ class SmsAppQueryResp:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this SmsAppQueryResp.
+        r"""Gets the enterprise_project_name of this SmsAppQueryResp.
 
         企业项目名称
 
@@ -531,7 +531,7 @@ class SmsAppQueryResp:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this SmsAppQueryResp.
+        r"""Sets the enterprise_project_name of this SmsAppQueryResp.
 
         企业项目名称
 
@@ -542,7 +542,7 @@ class SmsAppQueryResp:
 
     @property
     def ip_white_list(self):
-        """Gets the ip_white_list of this SmsAppQueryResp.
+        r"""Gets the ip_white_list of this SmsAppQueryResp.
 
         IP白名单
 
@@ -553,7 +553,7 @@ class SmsAppQueryResp:
 
     @ip_white_list.setter
     def ip_white_list(self, ip_white_list):
-        """Sets the ip_white_list of this SmsAppQueryResp.
+        r"""Sets the ip_white_list of this SmsAppQueryResp.
 
         IP白名单
 
@@ -564,7 +564,7 @@ class SmsAppQueryResp:
 
     @property
     def app_access_addr(self):
-        """Gets the app_access_addr of this SmsAppQueryResp.
+        r"""Gets the app_access_addr of this SmsAppQueryResp.
 
         接入地址
 
@@ -575,7 +575,7 @@ class SmsAppQueryResp:
 
     @app_access_addr.setter
     def app_access_addr(self, app_access_addr):
-        """Sets the app_access_addr of this SmsAppQueryResp.
+        r"""Sets the app_access_addr of this SmsAppQueryResp.
 
         接入地址
 
@@ -586,7 +586,7 @@ class SmsAppQueryResp:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SmsAppQueryResp.
+        r"""Gets the protocol of this SmsAppQueryResp.
 
         协议
 
@@ -597,7 +597,7 @@ class SmsAppQueryResp:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SmsAppQueryResp.
+        r"""Sets the protocol of this SmsAppQueryResp.
 
         协议
 
@@ -608,7 +608,7 @@ class SmsAppQueryResp:
 
     @property
     def platform(self):
-        """Gets the platform of this SmsAppQueryResp.
+        r"""Gets the platform of this SmsAppQueryResp.
 
         平台
 
@@ -619,7 +619,7 @@ class SmsAppQueryResp:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this SmsAppQueryResp.
+        r"""Sets the platform of this SmsAppQueryResp.
 
         平台
 
@@ -630,7 +630,7 @@ class SmsAppQueryResp:
 
     @property
     def is_support_multiomp(self):
-        """Gets the is_support_multiomp of this SmsAppQueryResp.
+        r"""Gets the is_support_multiomp of this SmsAppQueryResp.
 
         是否支持多OMP
 
@@ -641,7 +641,7 @@ class SmsAppQueryResp:
 
     @is_support_multiomp.setter
     def is_support_multiomp(self, is_support_multiomp):
-        """Sets the is_support_multiomp of this SmsAppQueryResp.
+        r"""Sets the is_support_multiomp of this SmsAppQueryResp.
 
         是否支持多OMP
 
@@ -652,7 +652,7 @@ class SmsAppQueryResp:
 
     @property
     def tenant(self):
-        """Gets the tenant of this SmsAppQueryResp.
+        r"""Gets the tenant of this SmsAppQueryResp.
 
         :return: The tenant of this SmsAppQueryResp.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -661,7 +661,7 @@ class SmsAppQueryResp:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this SmsAppQueryResp.
+        r"""Sets the tenant of this SmsAppQueryResp.
 
         :param tenant: The tenant of this SmsAppQueryResp.
         :type tenant: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`

@@ -27,7 +27,7 @@ class DeleteResourceRequest:
     }
 
     def __init__(self, workspace=None, resource_id=None):
-        """DeleteResourceRequest
+        r"""DeleteResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteResourceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteResourceRequest.
+        r"""Gets the workspace of this DeleteResourceRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class DeleteResourceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteResourceRequest.
+        r"""Sets the workspace of this DeleteResourceRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class DeleteResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResourceRequest.
+        r"""Gets the resource_id of this DeleteResourceRequest.
 
         资源id.
 
@@ -82,7 +82,7 @@ class DeleteResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResourceRequest.
+        r"""Sets the resource_id of this DeleteResourceRequest.
 
         资源id.
 

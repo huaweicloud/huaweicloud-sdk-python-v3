@@ -31,7 +31,7 @@ class BudgetInfo:
     }
 
     def __init__(self, customer_id=None, budget_amount=None, used_amount=None, budget_type=None):
-        """BudgetInfo
+        r"""BudgetInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BudgetInfo:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this BudgetInfo.
+        r"""Gets the customer_id of this BudgetInfo.
 
         |参数名称：客户账号ID||参数的约束及描述：必填参数，范围限制:1-64|
 
@@ -75,7 +75,7 @@ class BudgetInfo:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this BudgetInfo.
+        r"""Sets the customer_id of this BudgetInfo.
 
         |参数名称：客户账号ID||参数的约束及描述：必填参数，范围限制:1-64|
 
@@ -86,7 +86,7 @@ class BudgetInfo:
 
     @property
     def budget_amount(self):
-        """Gets the budget_amount of this BudgetInfo.
+        r"""Gets the budget_amount of this BudgetInfo.
 
         |参数名称：初始预算金额。| |参数的约束及描述：非必填，初始预算金额。|
 
@@ -97,7 +97,7 @@ class BudgetInfo:
 
     @budget_amount.setter
     def budget_amount(self, budget_amount):
-        """Sets the budget_amount of this BudgetInfo.
+        r"""Sets the budget_amount of this BudgetInfo.
 
         |参数名称：初始预算金额。| |参数的约束及描述：非必填，初始预算金额。|
 
@@ -108,7 +108,7 @@ class BudgetInfo:
 
     @property
     def used_amount(self):
-        """Gets the used_amount of this BudgetInfo.
+        r"""Gets the used_amount of this BudgetInfo.
 
         |参数名称：已经使用的预算。| |参数的约束及描述：已经使用的预算。非必填，该预算存在一定的时延和误差。|
 
@@ -119,7 +119,7 @@ class BudgetInfo:
 
     @used_amount.setter
     def used_amount(self, used_amount):
-        """Sets the used_amount of this BudgetInfo.
+        r"""Sets the used_amount of this BudgetInfo.
 
         |参数名称：已经使用的预算。| |参数的约束及描述：已经使用的预算。非必填，该预算存在一定的时延和误差。|
 
@@ -130,7 +130,7 @@ class BudgetInfo:
 
     @property
     def budget_type(self):
-        """Gets the budget_type of this BudgetInfo.
+        r"""Gets the budget_type of this BudgetInfo.
 
         |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
 
@@ -141,7 +141,7 @@ class BudgetInfo:
 
     @budget_type.setter
     def budget_type(self, budget_type):
-        """Sets the budget_type of this BudgetInfo.
+        r"""Sets the budget_type of this BudgetInfo.
 
         |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
 

@@ -30,7 +30,7 @@ class ListScriptResultsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, results=None, message=None):
-        """ListScriptResultsResponse
+        r"""ListScriptResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListScriptResultsResponse.
+        r"""Gets the status of this ListScriptResultsResponse.
 
         执行状态。 - LAUNCHING ：提交中 - RUNNING ： 运行中 - FINISHED：执行成功 - FAILED：执行失败
 
@@ -69,7 +69,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScriptResultsResponse.
+        r"""Sets the status of this ListScriptResultsResponse.
 
         执行状态。 - LAUNCHING ：提交中 - RUNNING ： 运行中 - FINISHED：执行成功 - FAILED：执行失败
 
@@ -80,7 +80,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListScriptResultsResponse.
+        r"""Gets the results of this ListScriptResultsResponse.
 
         执行结果
 
@@ -91,7 +91,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListScriptResultsResponse.
+        r"""Sets the results of this ListScriptResultsResponse.
 
         执行结果
 
@@ -102,7 +102,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListScriptResultsResponse.
+        r"""Gets the message of this ListScriptResultsResponse.
 
         执行失败消息
 
@@ -113,7 +113,7 @@ class ListScriptResultsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListScriptResultsResponse.
+        r"""Sets the message of this ListScriptResultsResponse.
 
         执行失败消息
 

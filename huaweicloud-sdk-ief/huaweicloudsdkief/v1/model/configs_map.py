@@ -27,7 +27,7 @@ class ConfigsMap:
     }
 
     def __init__(self, name=None, key=None):
-        """ConfigsMap
+        r"""ConfigsMap
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfigsMap:
 
     @property
     def name(self):
-        """Gets the name of this ConfigsMap.
+        r"""Gets the name of this ConfigsMap.
 
         配置项的名称
 
@@ -59,7 +59,7 @@ class ConfigsMap:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigsMap.
+        r"""Sets the name of this ConfigsMap.
 
         配置项的名称
 
@@ -70,7 +70,7 @@ class ConfigsMap:
 
     @property
     def key(self):
-        """Gets the key of this ConfigsMap.
+        r"""Gets the key of this ConfigsMap.
 
         配置项的属性名
 
@@ -81,7 +81,7 @@ class ConfigsMap:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ConfigsMap.
+        r"""Sets the key of this ConfigsMap.
 
         配置项的属性名
 

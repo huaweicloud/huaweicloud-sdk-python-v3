@@ -26,7 +26,7 @@ class SetProductAssetResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """SetProductAssetResponse
+        r"""SetProductAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetProductAssetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SetProductAssetResponse.
+        r"""Gets the x_request_id of this SetProductAssetResponse.
 
         :return: The x_request_id of this SetProductAssetResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SetProductAssetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SetProductAssetResponse.
+        r"""Sets the x_request_id of this SetProductAssetResponse.
 
         :param x_request_id: The x_request_id of this SetProductAssetResponse.
         :type x_request_id: str

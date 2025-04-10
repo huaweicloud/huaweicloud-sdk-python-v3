@@ -27,7 +27,7 @@ class TemplateResource:
     }
 
     def __init__(self, device=None, policy=None):
-        """TemplateResource
+        r"""TemplateResource
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TemplateResource:
 
     @property
     def device(self):
-        """Gets the device of this TemplateResource.
+        r"""Gets the device of this TemplateResource.
 
         :return: The device of this TemplateResource.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceResource`
@@ -58,7 +58,7 @@ class TemplateResource:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this TemplateResource.
+        r"""Sets the device of this TemplateResource.
 
         :param device: The device of this TemplateResource.
         :type device: :class:`huaweicloudsdkiotda.v5.DeviceResource`
@@ -67,7 +67,7 @@ class TemplateResource:
 
     @property
     def policy(self):
-        """Gets the policy of this TemplateResource.
+        r"""Gets the policy of this TemplateResource.
 
         :return: The policy of this TemplateResource.
         :rtype: :class:`huaweicloudsdkiotda.v5.PolicyResource`
@@ -76,7 +76,7 @@ class TemplateResource:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this TemplateResource.
+        r"""Sets the policy of this TemplateResource.
 
         :param policy: The policy of this TemplateResource.
         :type policy: :class:`huaweicloudsdkiotda.v5.PolicyResource`

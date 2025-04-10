@@ -29,7 +29,7 @@ class Resource:
     }
 
     def __init__(self, id=None, name=None, type=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Resource:
 
     @property
     def id(self):
-        """Gets the id of this Resource.
+        r"""Gets the id of this Resource.
 
         :return: The id of this Resource.
         :rtype: str
@@ -64,7 +64,7 @@ class Resource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Resource.
+        r"""Sets the id of this Resource.
 
         :param id: The id of this Resource.
         :type id: str
@@ -73,7 +73,7 @@ class Resource:
 
     @property
     def name(self):
-        """Gets the name of this Resource.
+        r"""Gets the name of this Resource.
 
         :return: The name of this Resource.
         :rtype: str
@@ -82,7 +82,7 @@ class Resource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Resource.
+        r"""Sets the name of this Resource.
 
         :param name: The name of this Resource.
         :type name: str
@@ -91,7 +91,7 @@ class Resource:
 
     @property
     def type(self):
-        """Gets the type of this Resource.
+        r"""Gets the type of this Resource.
 
         :return: The type of this Resource.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ResourceType`
@@ -100,7 +100,7 @@ class Resource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resource.
+        r"""Sets the type of this Resource.
 
         :param type: The type of this Resource.
         :type type: :class:`huaweicloudsdkservicestage.v3.ResourceType`

@@ -26,7 +26,7 @@ class ChangeToPeriodResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """ChangeToPeriodResponse
+        r"""ChangeToPeriodResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeToPeriodResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeToPeriodResponse.
+        r"""Gets the order_id of this ChangeToPeriodResponse.
 
         订单ID。
 
@@ -55,7 +55,7 @@ class ChangeToPeriodResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeToPeriodResponse.
+        r"""Sets the order_id of this ChangeToPeriodResponse.
 
         订单ID。
 

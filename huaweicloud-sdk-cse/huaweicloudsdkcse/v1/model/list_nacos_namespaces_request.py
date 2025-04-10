@@ -31,7 +31,7 @@ class ListNacosNamespacesRequest:
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, offset=None, limit=None):
-        """ListNacosNamespacesRequest
+        r"""ListNacosNamespacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListNacosNamespacesRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this ListNacosNamespacesRequest.
+        r"""Gets the x_engine_id of this ListNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -71,7 +71,7 @@ class ListNacosNamespacesRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this ListNacosNamespacesRequest.
+        r"""Sets the x_engine_id of this ListNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -82,7 +82,7 @@ class ListNacosNamespacesRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListNacosNamespacesRequest.
+        r"""Gets the x_enterprise_project_id of this ListNacosNamespacesRequest.
 
         企业项目ID
 
@@ -93,7 +93,7 @@ class ListNacosNamespacesRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListNacosNamespacesRequest.
+        r"""Sets the x_enterprise_project_id of this ListNacosNamespacesRequest.
 
         企业项目ID
 
@@ -104,7 +104,7 @@ class ListNacosNamespacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNacosNamespacesRequest.
+        r"""Gets the offset of this ListNacosNamespacesRequest.
 
         分页参数，偏移量，从0开始
 
@@ -115,7 +115,7 @@ class ListNacosNamespacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNacosNamespacesRequest.
+        r"""Sets the offset of this ListNacosNamespacesRequest.
 
         分页参数，偏移量，从0开始
 
@@ -126,7 +126,7 @@ class ListNacosNamespacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNacosNamespacesRequest.
+        r"""Gets the limit of this ListNacosNamespacesRequest.
 
         分页参数，分页大小，0表示不分页
 
@@ -137,7 +137,7 @@ class ListNacosNamespacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNacosNamespacesRequest.
+        r"""Sets the limit of this ListNacosNamespacesRequest.
 
         分页参数，分页大小，0表示不分页
 

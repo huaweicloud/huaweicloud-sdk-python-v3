@@ -28,7 +28,7 @@ class ListSlowLogResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, slow_log_list=None):
-        """ListSlowLogResponse
+        r"""ListSlowLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSlowLogResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListSlowLogResponse.
+        r"""Gets the total_record of this ListSlowLogResponse.
 
         DDM慢sql日志条数。
 
@@ -62,7 +62,7 @@ class ListSlowLogResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListSlowLogResponse.
+        r"""Sets the total_record of this ListSlowLogResponse.
 
         DDM慢sql日志条数。
 
@@ -73,7 +73,7 @@ class ListSlowLogResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ListSlowLogResponse.
+        r"""Gets the slow_log_list of this ListSlowLogResponse.
 
         DDM慢sql日志信息列表的集合。
 
@@ -84,7 +84,7 @@ class ListSlowLogResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ListSlowLogResponse.
+        r"""Sets the slow_log_list of this ListSlowLogResponse.
 
         DDM慢sql日志信息列表的集合。
 

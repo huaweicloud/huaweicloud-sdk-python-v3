@@ -32,7 +32,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
     }
 
     def __init__(self, policy_agencies=None, policy_groups=None, policy_users=None, page_info=None):
-        """ListEntitiesForPolicyV5Response
+        r"""ListEntitiesForPolicyV5Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @property
     def policy_agencies(self):
-        """Gets the policy_agencies of this ListEntitiesForPolicyV5Response.
+        r"""Gets the policy_agencies of this ListEntitiesForPolicyV5Response.
 
         委托及信任委托列表。
 
@@ -76,7 +76,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @policy_agencies.setter
     def policy_agencies(self, policy_agencies):
-        """Sets the policy_agencies of this ListEntitiesForPolicyV5Response.
+        r"""Sets the policy_agencies of this ListEntitiesForPolicyV5Response.
 
         委托及信任委托列表。
 
@@ -87,7 +87,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @property
     def policy_groups(self):
-        """Gets the policy_groups of this ListEntitiesForPolicyV5Response.
+        r"""Gets the policy_groups of this ListEntitiesForPolicyV5Response.
 
         用户组列表。
 
@@ -98,7 +98,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @policy_groups.setter
     def policy_groups(self, policy_groups):
-        """Sets the policy_groups of this ListEntitiesForPolicyV5Response.
+        r"""Sets the policy_groups of this ListEntitiesForPolicyV5Response.
 
         用户组列表。
 
@@ -109,7 +109,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @property
     def policy_users(self):
-        """Gets the policy_users of this ListEntitiesForPolicyV5Response.
+        r"""Gets the policy_users of this ListEntitiesForPolicyV5Response.
 
         IAM用户列表。
 
@@ -120,7 +120,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @policy_users.setter
     def policy_users(self, policy_users):
-        """Sets the policy_users of this ListEntitiesForPolicyV5Response.
+        r"""Sets the policy_users of this ListEntitiesForPolicyV5Response.
 
         IAM用户列表。
 
@@ -131,7 +131,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEntitiesForPolicyV5Response.
+        r"""Gets the page_info of this ListEntitiesForPolicyV5Response.
 
         :return: The page_info of this ListEntitiesForPolicyV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -140,7 +140,7 @@ class ListEntitiesForPolicyV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEntitiesForPolicyV5Response.
+        r"""Sets the page_info of this ListEntitiesForPolicyV5Response.
 
         :param page_info: The page_info of this ListEntitiesForPolicyV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

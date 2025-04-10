@@ -25,7 +25,7 @@ class AutopilotServiceNetwork:
     }
 
     def __init__(self, i_pv4_cidr=None):
-        """AutopilotServiceNetwork
+        r"""AutopilotServiceNetwork
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AutopilotServiceNetwork:
 
     @property
     def i_pv4_cidr(self):
-        """Gets the i_pv4_cidr of this AutopilotServiceNetwork.
+        r"""Gets the i_pv4_cidr of this AutopilotServiceNetwork.
 
         kubernetes clusterIP IPv4 CIDR取值范围。创建集群时若未传参，默认为\"10.247.0.0/16\"。
 
@@ -54,7 +54,7 @@ class AutopilotServiceNetwork:
 
     @i_pv4_cidr.setter
     def i_pv4_cidr(self, i_pv4_cidr):
-        """Sets the i_pv4_cidr of this AutopilotServiceNetwork.
+        r"""Sets the i_pv4_cidr of this AutopilotServiceNetwork.
 
         kubernetes clusterIP IPv4 CIDR取值范围。创建集群时若未传参，默认为\"10.247.0.0/16\"。
 

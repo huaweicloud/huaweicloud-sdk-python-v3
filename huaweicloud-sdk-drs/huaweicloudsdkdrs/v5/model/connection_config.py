@@ -25,7 +25,7 @@ class ConnectionConfig:
     }
 
     def __init__(self, driver_name=None):
-        """ConnectionConfig
+        r"""ConnectionConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConnectionConfig:
 
     @property
     def driver_name(self):
-        """Gets the driver_name of this ConnectionConfig.
+        r"""Gets the driver_name of this ConnectionConfig.
 
         驱动程序名称。
 
@@ -54,7 +54,7 @@ class ConnectionConfig:
 
     @driver_name.setter
     def driver_name(self, driver_name):
-        """Sets the driver_name of this ConnectionConfig.
+        r"""Sets the driver_name of this ConnectionConfig.
 
         驱动程序名称。
 

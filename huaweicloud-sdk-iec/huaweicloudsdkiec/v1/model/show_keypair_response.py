@@ -32,7 +32,7 @@ class ShowKeypairResponse(SdkResponse):
     }
 
     def __init__(self, name=None, public_key=None, user_id=None, fingerprint=None):
-        """ShowKeypairResponse
+        r"""ShowKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowKeypairResponse.
+        r"""Gets the name of this ShowKeypairResponse.
 
         密钥名称。
 
@@ -76,7 +76,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowKeypairResponse.
+        r"""Sets the name of this ShowKeypairResponse.
 
         密钥名称。
 
@@ -87,7 +87,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @property
     def public_key(self):
-        """Gets the public_key of this ShowKeypairResponse.
+        r"""Gets the public_key of this ShowKeypairResponse.
 
           密钥对应publicKey信息。
 
@@ -98,7 +98,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this ShowKeypairResponse.
+        r"""Sets the public_key of this ShowKeypairResponse.
 
           密钥对应publicKey信息。
 
@@ -109,7 +109,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowKeypairResponse.
+        r"""Gets the user_id of this ShowKeypairResponse.
 
         用户ID。
 
@@ -120,7 +120,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowKeypairResponse.
+        r"""Sets the user_id of this ShowKeypairResponse.
 
         用户ID。
 
@@ -131,7 +131,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this ShowKeypairResponse.
+        r"""Gets the fingerprint of this ShowKeypairResponse.
 
           密钥对应指纹信息。
 
@@ -142,7 +142,7 @@ class ShowKeypairResponse(SdkResponse):
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this ShowKeypairResponse.
+        r"""Sets the fingerprint of this ShowKeypairResponse.
 
           密钥对应指纹信息。
 

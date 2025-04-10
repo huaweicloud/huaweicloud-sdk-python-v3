@@ -26,7 +26,7 @@ class ChangeServerOsWithCloudInitResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeServerOsWithCloudInitResponse
+        r"""ChangeServerOsWithCloudInitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeServerOsWithCloudInitResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeServerOsWithCloudInitResponse.
+        r"""Gets the job_id of this ChangeServerOsWithCloudInitResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -55,7 +55,7 @@ class ChangeServerOsWithCloudInitResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeServerOsWithCloudInitResponse.
+        r"""Sets the job_id of this ChangeServerOsWithCloudInitResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 

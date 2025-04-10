@@ -23,7 +23,7 @@ class KeystoneListMappingsRequest:
     }
 
     def __init__(self):
-        """KeystoneListMappingsRequest
+        r"""KeystoneListMappingsRequest
 
         The model defined in huaweicloud sdk
 

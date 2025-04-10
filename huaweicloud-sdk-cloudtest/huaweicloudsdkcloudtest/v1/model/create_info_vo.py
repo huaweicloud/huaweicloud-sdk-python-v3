@@ -31,7 +31,7 @@ class CreateInfoVo:
     }
 
     def __init__(self, time=None, timestamp=None, user_id=None, user_name=None):
-        """CreateInfoVo
+        r"""CreateInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateInfoVo:
 
     @property
     def time(self):
-        """Gets the time of this CreateInfoVo.
+        r"""Gets the time of this CreateInfoVo.
 
         创建时间
 
@@ -75,7 +75,7 @@ class CreateInfoVo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this CreateInfoVo.
+        r"""Sets the time of this CreateInfoVo.
 
         创建时间
 
@@ -86,7 +86,7 @@ class CreateInfoVo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateInfoVo.
+        r"""Gets the timestamp of this CreateInfoVo.
 
         创建时间时间戳
 
@@ -97,7 +97,7 @@ class CreateInfoVo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateInfoVo.
+        r"""Sets the timestamp of this CreateInfoVo.
 
         创建时间时间戳
 
@@ -108,7 +108,7 @@ class CreateInfoVo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateInfoVo.
+        r"""Gets the user_id of this CreateInfoVo.
 
         用户ID
 
@@ -119,7 +119,7 @@ class CreateInfoVo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateInfoVo.
+        r"""Sets the user_id of this CreateInfoVo.
 
         用户ID
 
@@ -130,7 +130,7 @@ class CreateInfoVo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateInfoVo.
+        r"""Gets the user_name of this CreateInfoVo.
 
         用户名称
 
@@ -141,7 +141,7 @@ class CreateInfoVo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateInfoVo.
+        r"""Sets the user_name of this CreateInfoVo.
 
         用户名称
 

@@ -27,7 +27,7 @@ class StartWorkloadPlanRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None):
-        """StartWorkloadPlanRequest
+        r"""StartWorkloadPlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StartWorkloadPlanRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartWorkloadPlanRequest.
+        r"""Gets the cluster_id of this StartWorkloadPlanRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class StartWorkloadPlanRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartWorkloadPlanRequest.
+        r"""Sets the cluster_id of this StartWorkloadPlanRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class StartWorkloadPlanRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this StartWorkloadPlanRequest.
+        r"""Gets the plan_id of this StartWorkloadPlanRequest.
 
         计划ID
 
@@ -81,7 +81,7 @@ class StartWorkloadPlanRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this StartWorkloadPlanRequest.
+        r"""Sets the plan_id of this StartWorkloadPlanRequest.
 
         计划ID
 

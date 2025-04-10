@@ -26,7 +26,7 @@ class ListExternalEntityResponse(SdkResponse):
     }
 
     def __init__(self, externals=None):
-        """ListExternalEntityResponse
+        r"""ListExternalEntityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListExternalEntityResponse(SdkResponse):
 
     @property
     def externals(self):
-        """Gets the externals of this ListExternalEntityResponse.
+        r"""Gets the externals of this ListExternalEntityResponse.
 
         外部实体列表
 
@@ -55,7 +55,7 @@ class ListExternalEntityResponse(SdkResponse):
 
     @externals.setter
     def externals(self, externals):
-        """Sets the externals of this ListExternalEntityResponse.
+        r"""Sets the externals of this ListExternalEntityResponse.
 
         外部实体列表
 

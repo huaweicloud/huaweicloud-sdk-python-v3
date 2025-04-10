@@ -25,7 +25,7 @@ class NodeTemplateExtendParam:
     }
 
     def __init__(self, user_id=None):
-        """NodeTemplateExtendParam
+        r"""NodeTemplateExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeTemplateExtendParam:
 
     @property
     def user_id(self):
-        """Gets the user_id of this NodeTemplateExtendParam.
+        r"""Gets the user_id of this NodeTemplateExtendParam.
 
         :return: The user_id of this NodeTemplateExtendParam.
         :rtype: str
@@ -52,7 +52,7 @@ class NodeTemplateExtendParam:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this NodeTemplateExtendParam.
+        r"""Sets the user_id of this NodeTemplateExtendParam.
 
         :param user_id: The user_id of this NodeTemplateExtendParam.
         :type user_id: str

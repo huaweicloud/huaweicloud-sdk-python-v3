@@ -47,7 +47,7 @@ class ImageInfo:
     }
 
     def __init__(self, id=None, image_type=None, os_platform=None, os_type=None, architecture=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None, created_at=None):
-        """ImageInfo
+        r"""ImageInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ImageInfo:
 
     @property
     def id(self):
-        """Gets the id of this ImageInfo.
+        r"""Gets the id of this ImageInfo.
 
         镜像ID。
 
@@ -131,7 +131,7 @@ class ImageInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageInfo.
+        r"""Sets the id of this ImageInfo.
 
         镜像ID。
 
@@ -142,7 +142,7 @@ class ImageInfo:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ImageInfo.
+        r"""Gets the image_type of this ImageInfo.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private。
 
@@ -153,7 +153,7 @@ class ImageInfo:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ImageInfo.
+        r"""Sets the image_type of this ImageInfo.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private。
 
@@ -164,7 +164,7 @@ class ImageInfo:
 
     @property
     def os_platform(self):
-        """Gets the os_platform of this ImageInfo.
+        r"""Gets the os_platform of this ImageInfo.
 
         镜像平台分类，取值为Windows。
 
@@ -175,7 +175,7 @@ class ImageInfo:
 
     @os_platform.setter
     def os_platform(self, os_platform):
-        """Sets the os_platform of this ImageInfo.
+        r"""Sets the os_platform of this ImageInfo.
 
         镜像平台分类，取值为Windows。
 
@@ -186,7 +186,7 @@ class ImageInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ImageInfo.
+        r"""Gets the os_type of this ImageInfo.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
@@ -197,7 +197,7 @@ class ImageInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ImageInfo.
+        r"""Sets the os_type of this ImageInfo.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
@@ -208,7 +208,7 @@ class ImageInfo:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ImageInfo.
+        r"""Gets the architecture of this ImageInfo.
 
         操作系统架构，目前取值arm，x86
 
@@ -219,7 +219,7 @@ class ImageInfo:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ImageInfo.
+        r"""Sets the architecture of this ImageInfo.
 
         操作系统架构，目前取值arm，x86
 
@@ -230,7 +230,7 @@ class ImageInfo:
 
     @property
     def os_version(self):
-        """Gets the os_version of this ImageInfo.
+        r"""Gets the os_version of this ImageInfo.
 
         操作系统具体版本。
 
@@ -241,7 +241,7 @@ class ImageInfo:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ImageInfo.
+        r"""Sets the os_version of this ImageInfo.
 
         操作系统具体版本。
 
@@ -252,7 +252,7 @@ class ImageInfo:
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this ImageInfo.
+        r"""Gets the disk_format of this ImageInfo.
 
         镜像格式，目前支持vhd，raw，qcow2，zvhd2格式。
 
@@ -263,7 +263,7 @@ class ImageInfo:
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this ImageInfo.
+        r"""Sets the disk_format of this ImageInfo.
 
         镜像格式，目前支持vhd，raw，qcow2，zvhd2格式。
 
@@ -274,7 +274,7 @@ class ImageInfo:
 
     @property
     def name(self):
-        """Gets the name of this ImageInfo.
+        r"""Gets the name of this ImageInfo.
 
         镜像名称。
 
@@ -285,7 +285,7 @@ class ImageInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageInfo.
+        r"""Sets the name of this ImageInfo.
 
         镜像名称。
 
@@ -296,7 +296,7 @@ class ImageInfo:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this ImageInfo.
+        r"""Gets the min_ram of this ImageInfo.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，一般设置为0。
 
@@ -307,7 +307,7 @@ class ImageInfo:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this ImageInfo.
+        r"""Sets the min_ram of this ImageInfo.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，一般设置为0。
 
@@ -318,7 +318,7 @@ class ImageInfo:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this ImageInfo.
+        r"""Gets the min_disk of this ImageInfo.
 
         镜像运行需要的最小磁盘，单位为GB 。取值为40～1024GB。
 
@@ -329,7 +329,7 @@ class ImageInfo:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this ImageInfo.
+        r"""Sets the min_disk of this ImageInfo.
 
         镜像运行需要的最小磁盘，单位为GB 。取值为40～1024GB。
 
@@ -340,7 +340,7 @@ class ImageInfo:
 
     @property
     def product_code(self):
-        """Gets the product_code of this ImageInfo.
+        r"""Gets the product_code of this ImageInfo.
 
         镜像的产品编码。
 
@@ -351,7 +351,7 @@ class ImageInfo:
 
     @product_code.setter
     def product_code(self, product_code):
-        """Sets the product_code of this ImageInfo.
+        r"""Sets the product_code of this ImageInfo.
 
         镜像的产品编码。
 
@@ -362,7 +362,7 @@ class ImageInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ImageInfo.
+        r"""Gets the created_at of this ImageInfo.
 
         创建时间。格式为UTC时间。
 
@@ -373,7 +373,7 @@ class ImageInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ImageInfo.
+        r"""Sets the created_at of this ImageInfo.
 
         创建时间。格式为UTC时间。
 

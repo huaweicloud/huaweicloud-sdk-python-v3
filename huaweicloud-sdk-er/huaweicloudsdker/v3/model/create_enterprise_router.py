@@ -43,7 +43,7 @@ class CreateEnterpriseRouter:
     }
 
     def __init__(self, name=None, description=None, asn=None, enterprise_project_id=None, charge_mode=None, tags=None, enable_default_propagation=None, enable_default_association=None, availability_zone_ids=None, auto_accept_shared_attachments=None):
-        """CreateEnterpriseRouter
+        r"""CreateEnterpriseRouter
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class CreateEnterpriseRouter:
 
     @property
     def name(self):
-        """Gets the name of this CreateEnterpriseRouter.
+        r"""Gets the name of this CreateEnterpriseRouter.
 
         企业路由器实例名称
 
@@ -114,7 +114,7 @@ class CreateEnterpriseRouter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEnterpriseRouter.
+        r"""Sets the name of this CreateEnterpriseRouter.
 
         企业路由器实例名称
 
@@ -125,7 +125,7 @@ class CreateEnterpriseRouter:
 
     @property
     def description(self):
-        """Gets the description of this CreateEnterpriseRouter.
+        r"""Gets the description of this CreateEnterpriseRouter.
 
         企业路由器实例描述信息
 
@@ -136,7 +136,7 @@ class CreateEnterpriseRouter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEnterpriseRouter.
+        r"""Sets the description of this CreateEnterpriseRouter.
 
         企业路由器实例描述信息
 
@@ -147,7 +147,7 @@ class CreateEnterpriseRouter:
 
     @property
     def asn(self):
-        """Gets the asn of this CreateEnterpriseRouter.
+        r"""Gets the asn of this CreateEnterpriseRouter.
 
         企业路由器实例的BGP AS号
 
@@ -158,7 +158,7 @@ class CreateEnterpriseRouter:
 
     @asn.setter
     def asn(self, asn):
-        """Sets the asn of this CreateEnterpriseRouter.
+        r"""Sets the asn of this CreateEnterpriseRouter.
 
         企业路由器实例的BGP AS号
 
@@ -169,7 +169,7 @@ class CreateEnterpriseRouter:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateEnterpriseRouter.
+        r"""Gets the enterprise_project_id of this CreateEnterpriseRouter.
 
         企业项目ID
 
@@ -180,7 +180,7 @@ class CreateEnterpriseRouter:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateEnterpriseRouter.
+        r"""Sets the enterprise_project_id of this CreateEnterpriseRouter.
 
         企业项目ID
 
@@ -191,7 +191,7 @@ class CreateEnterpriseRouter:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateEnterpriseRouter.
+        r"""Gets the charge_mode of this CreateEnterpriseRouter.
 
         计费模式 按需
 
@@ -202,7 +202,7 @@ class CreateEnterpriseRouter:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateEnterpriseRouter.
+        r"""Sets the charge_mode of this CreateEnterpriseRouter.
 
         计费模式 按需
 
@@ -213,7 +213,7 @@ class CreateEnterpriseRouter:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateEnterpriseRouter.
+        r"""Gets the tags of this CreateEnterpriseRouter.
 
         标签信息
 
@@ -224,7 +224,7 @@ class CreateEnterpriseRouter:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateEnterpriseRouter.
+        r"""Sets the tags of this CreateEnterpriseRouter.
 
         标签信息
 
@@ -235,7 +235,7 @@ class CreateEnterpriseRouter:
 
     @property
     def enable_default_propagation(self):
-        """Gets the enable_default_propagation of this CreateEnterpriseRouter.
+        r"""Gets the enable_default_propagation of this CreateEnterpriseRouter.
 
         是否开启默认路由表传播，默认false不开启
 
@@ -246,7 +246,7 @@ class CreateEnterpriseRouter:
 
     @enable_default_propagation.setter
     def enable_default_propagation(self, enable_default_propagation):
-        """Sets the enable_default_propagation of this CreateEnterpriseRouter.
+        r"""Sets the enable_default_propagation of this CreateEnterpriseRouter.
 
         是否开启默认路由表传播，默认false不开启
 
@@ -257,7 +257,7 @@ class CreateEnterpriseRouter:
 
     @property
     def enable_default_association(self):
-        """Gets the enable_default_association of this CreateEnterpriseRouter.
+        r"""Gets the enable_default_association of this CreateEnterpriseRouter.
 
         是否开启默认路由表关联，默认false不开启
 
@@ -268,7 +268,7 @@ class CreateEnterpriseRouter:
 
     @enable_default_association.setter
     def enable_default_association(self, enable_default_association):
-        """Sets the enable_default_association of this CreateEnterpriseRouter.
+        r"""Sets the enable_default_association of this CreateEnterpriseRouter.
 
         是否开启默认路由表关联，默认false不开启
 
@@ -279,7 +279,7 @@ class CreateEnterpriseRouter:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this CreateEnterpriseRouter.
+        r"""Gets the availability_zone_ids of this CreateEnterpriseRouter.
 
         企业路由器所在的可用区列表
 
@@ -290,7 +290,7 @@ class CreateEnterpriseRouter:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this CreateEnterpriseRouter.
+        r"""Sets the availability_zone_ids of this CreateEnterpriseRouter.
 
         企业路由器所在的可用区列表
 
@@ -301,7 +301,7 @@ class CreateEnterpriseRouter:
 
     @property
     def auto_accept_shared_attachments(self):
-        """Gets the auto_accept_shared_attachments of this CreateEnterpriseRouter.
+        r"""Gets the auto_accept_shared_attachments of this CreateEnterpriseRouter.
 
         是否开启自动接受共享连接创建，默认false不开启
 
@@ -312,7 +312,7 @@ class CreateEnterpriseRouter:
 
     @auto_accept_shared_attachments.setter
     def auto_accept_shared_attachments(self, auto_accept_shared_attachments):
-        """Sets the auto_accept_shared_attachments of this CreateEnterpriseRouter.
+        r"""Sets the auto_accept_shared_attachments of this CreateEnterpriseRouter.
 
         是否开启自动接受共享连接创建，默认false不开启
 

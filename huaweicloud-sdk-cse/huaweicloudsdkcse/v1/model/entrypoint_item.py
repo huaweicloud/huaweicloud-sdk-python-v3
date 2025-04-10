@@ -33,7 +33,7 @@ class EntrypointItem:
     }
 
     def __init__(self, master_entrypoint=None, master_entrypoint_ipv6=None, slave_entrypoint=None, slave_entrypoint_ipv6=None, type=None):
-        """EntrypointItem
+        r"""EntrypointItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EntrypointItem:
 
     @property
     def master_entrypoint(self):
-        """Gets the master_entrypoint of this EntrypointItem.
+        r"""Gets the master_entrypoint of this EntrypointItem.
 
         微服务引擎组件的ipv4主接入地址
 
@@ -82,7 +82,7 @@ class EntrypointItem:
 
     @master_entrypoint.setter
     def master_entrypoint(self, master_entrypoint):
-        """Sets the master_entrypoint of this EntrypointItem.
+        r"""Sets the master_entrypoint of this EntrypointItem.
 
         微服务引擎组件的ipv4主接入地址
 
@@ -93,7 +93,7 @@ class EntrypointItem:
 
     @property
     def master_entrypoint_ipv6(self):
-        """Gets the master_entrypoint_ipv6 of this EntrypointItem.
+        r"""Gets the master_entrypoint_ipv6 of this EntrypointItem.
 
         微服务引擎组件的ipv6主接入地址
 
@@ -104,7 +104,7 @@ class EntrypointItem:
 
     @master_entrypoint_ipv6.setter
     def master_entrypoint_ipv6(self, master_entrypoint_ipv6):
-        """Sets the master_entrypoint_ipv6 of this EntrypointItem.
+        r"""Sets the master_entrypoint_ipv6 of this EntrypointItem.
 
         微服务引擎组件的ipv6主接入地址
 
@@ -115,7 +115,7 @@ class EntrypointItem:
 
     @property
     def slave_entrypoint(self):
-        """Gets the slave_entrypoint of this EntrypointItem.
+        r"""Gets the slave_entrypoint of this EntrypointItem.
 
         微服务引擎组件的ipv4备接入地址
 
@@ -126,7 +126,7 @@ class EntrypointItem:
 
     @slave_entrypoint.setter
     def slave_entrypoint(self, slave_entrypoint):
-        """Sets the slave_entrypoint of this EntrypointItem.
+        r"""Sets the slave_entrypoint of this EntrypointItem.
 
         微服务引擎组件的ipv4备接入地址
 
@@ -137,7 +137,7 @@ class EntrypointItem:
 
     @property
     def slave_entrypoint_ipv6(self):
-        """Gets the slave_entrypoint_ipv6 of this EntrypointItem.
+        r"""Gets the slave_entrypoint_ipv6 of this EntrypointItem.
 
         微服务引擎组件的ipv6备接入地址
 
@@ -148,7 +148,7 @@ class EntrypointItem:
 
     @slave_entrypoint_ipv6.setter
     def slave_entrypoint_ipv6(self, slave_entrypoint_ipv6):
-        """Sets the slave_entrypoint_ipv6 of this EntrypointItem.
+        r"""Sets the slave_entrypoint_ipv6 of this EntrypointItem.
 
         微服务引擎组件的ipv6备接入地址
 
@@ -159,7 +159,7 @@ class EntrypointItem:
 
     @property
     def type(self):
-        """Gets the type of this EntrypointItem.
+        r"""Gets the type of this EntrypointItem.
 
         微服务引擎组件类型
 
@@ -170,7 +170,7 @@ class EntrypointItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EntrypointItem.
+        r"""Sets the type of this EntrypointItem.
 
         微服务引擎组件类型
 

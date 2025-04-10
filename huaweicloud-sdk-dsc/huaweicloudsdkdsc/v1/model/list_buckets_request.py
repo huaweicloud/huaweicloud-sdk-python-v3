@@ -29,7 +29,7 @@ class ListBucketsRequest:
     }
 
     def __init__(self, added=None, offset=None, limit=None):
-        """ListBucketsRequest
+        r"""ListBucketsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListBucketsRequest:
 
     @property
     def added(self):
-        """Gets the added of this ListBucketsRequest.
+        r"""Gets the added of this ListBucketsRequest.
 
         已授权
 
@@ -68,7 +68,7 @@ class ListBucketsRequest:
 
     @added.setter
     def added(self, added):
-        """Sets the added of this ListBucketsRequest.
+        r"""Sets the added of this ListBucketsRequest.
 
         已授权
 
@@ -79,7 +79,7 @@ class ListBucketsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBucketsRequest.
+        r"""Gets the offset of this ListBucketsRequest.
 
         页码
 
@@ -90,7 +90,7 @@ class ListBucketsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBucketsRequest.
+        r"""Sets the offset of this ListBucketsRequest.
 
         页码
 
@@ -101,7 +101,7 @@ class ListBucketsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBucketsRequest.
+        r"""Gets the limit of this ListBucketsRequest.
 
         分页大小
 
@@ -112,7 +112,7 @@ class ListBucketsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBucketsRequest.
+        r"""Sets the limit of this ListBucketsRequest.
 
         分页大小
 

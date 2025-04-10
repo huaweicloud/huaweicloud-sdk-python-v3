@@ -27,7 +27,7 @@ class ImageMediaTaggingItemBodyI18nType:
     }
 
     def __init__(self, zh=None, en=None):
-        """ImageMediaTaggingItemBodyI18nType
+        r"""ImageMediaTaggingItemBodyI18nType
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageMediaTaggingItemBodyI18nType:
 
     @property
     def zh(self):
-        """Gets the zh of this ImageMediaTaggingItemBodyI18nType.
+        r"""Gets the zh of this ImageMediaTaggingItemBodyI18nType.
 
         中文标签类别。
 
@@ -61,7 +61,7 @@ class ImageMediaTaggingItemBodyI18nType:
 
     @zh.setter
     def zh(self, zh):
-        """Sets the zh of this ImageMediaTaggingItemBodyI18nType.
+        r"""Sets the zh of this ImageMediaTaggingItemBodyI18nType.
 
         中文标签类别。
 
@@ -72,7 +72,7 @@ class ImageMediaTaggingItemBodyI18nType:
 
     @property
     def en(self):
-        """Gets the en of this ImageMediaTaggingItemBodyI18nType.
+        r"""Gets the en of this ImageMediaTaggingItemBodyI18nType.
 
         英文标签类别。
 
@@ -83,7 +83,7 @@ class ImageMediaTaggingItemBodyI18nType:
 
     @en.setter
     def en(self, en):
-        """Sets the en of this ImageMediaTaggingItemBodyI18nType.
+        r"""Sets the en of this ImageMediaTaggingItemBodyI18nType.
 
         英文标签类别。
 

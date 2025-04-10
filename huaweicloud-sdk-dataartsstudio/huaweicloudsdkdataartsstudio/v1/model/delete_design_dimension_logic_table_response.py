@@ -26,7 +26,7 @@ class DeleteDesignDimensionLogicTableResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignDimensionLogicTableResponse
+        r"""DeleteDesignDimensionLogicTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignDimensionLogicTableResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignDimensionLogicTableResponse.
+        r"""Gets the data of this DeleteDesignDimensionLogicTableResponse.
 
         :return: The data of this DeleteDesignDimensionLogicTableResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignDimensionLogicTableResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignDimensionLogicTableResponse.
+        r"""Sets the data of this DeleteDesignDimensionLogicTableResponse.
 
         :param data: The data of this DeleteDesignDimensionLogicTableResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

@@ -25,7 +25,7 @@ class StringSet:
     }
 
     def __init__(self, items=None):
-        """StringSet
+        r"""StringSet
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StringSet:
 
     @property
     def items(self):
-        """Gets the items of this StringSet.
+        r"""Gets the items of this StringSet.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 
@@ -53,7 +53,7 @@ class StringSet:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this StringSet.
+        r"""Sets the items of this StringSet.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 

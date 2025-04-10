@@ -30,7 +30,7 @@ class CheckPutEventsResponse(SdkResponse):
     }
 
     def __init__(self, failed_count=None, sources=None, x_request_id=None):
-        """CheckPutEventsResponse
+        r"""CheckPutEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckPutEventsResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this CheckPutEventsResponse.
+        r"""Gets the failed_count of this CheckPutEventsResponse.
 
         预校验发布事件失败的个数
 
@@ -69,7 +69,7 @@ class CheckPutEventsResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this CheckPutEventsResponse.
+        r"""Sets the failed_count of this CheckPutEventsResponse.
 
         预校验发布事件失败的个数
 
@@ -80,7 +80,7 @@ class CheckPutEventsResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this CheckPutEventsResponse.
+        r"""Gets the sources of this CheckPutEventsResponse.
 
         :return: The sources of this CheckPutEventsResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.CheckPutEventsResult`]
@@ -89,7 +89,7 @@ class CheckPutEventsResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this CheckPutEventsResponse.
+        r"""Sets the sources of this CheckPutEventsResponse.
 
         :param sources: The sources of this CheckPutEventsResponse.
         :type sources: list[:class:`huaweicloudsdkeg.v1.CheckPutEventsResult`]
@@ -98,7 +98,7 @@ class CheckPutEventsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CheckPutEventsResponse.
+        r"""Gets the x_request_id of this CheckPutEventsResponse.
 
         :return: The x_request_id of this CheckPutEventsResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CheckPutEventsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CheckPutEventsResponse.
+        r"""Sets the x_request_id of this CheckPutEventsResponse.
 
         :param x_request_id: The x_request_id of this CheckPutEventsResponse.
         :type x_request_id: str

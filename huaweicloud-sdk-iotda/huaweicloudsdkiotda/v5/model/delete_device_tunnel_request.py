@@ -27,7 +27,7 @@ class DeleteDeviceTunnelRequest:
     }
 
     def __init__(self, instance_id=None, tunnel_id=None):
-        """DeleteDeviceTunnelRequest
+        r"""DeleteDeviceTunnelRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDeviceTunnelRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDeviceTunnelRequest.
+        r"""Gets the instance_id of this DeleteDeviceTunnelRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0121.html)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0121.html)](tag:hws_hk)。
 
@@ -60,7 +60,7 @@ class DeleteDeviceTunnelRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDeviceTunnelRequest.
+        r"""Sets the instance_id of this DeleteDeviceTunnelRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0121.html)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0121.html)](tag:hws_hk)。
 
@@ -71,7 +71,7 @@ class DeleteDeviceTunnelRequest:
 
     @property
     def tunnel_id(self):
-        """Gets the tunnel_id of this DeleteDeviceTunnelRequest.
+        r"""Gets the tunnel_id of this DeleteDeviceTunnelRequest.
 
         隧道ID
 
@@ -82,7 +82,7 @@ class DeleteDeviceTunnelRequest:
 
     @tunnel_id.setter
     def tunnel_id(self, tunnel_id):
-        """Sets the tunnel_id of this DeleteDeviceTunnelRequest.
+        r"""Sets the tunnel_id of this DeleteDeviceTunnelRequest.
 
         隧道ID
 

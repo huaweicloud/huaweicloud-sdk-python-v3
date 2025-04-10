@@ -29,7 +29,7 @@ class Encryption:
     }
 
     def __init__(self, type=None, kms_key_name=None, kms_key_id=None):
-        """Encryption
+        r"""Encryption
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Encryption:
 
     @property
     def type(self):
-        """Gets the type of this Encryption.
+        r"""Gets the type of this Encryption.
 
         取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
 
@@ -67,7 +67,7 @@ class Encryption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Encryption.
+        r"""Sets the type of this Encryption.
 
         取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
 
@@ -78,7 +78,7 @@ class Encryption:
 
     @property
     def kms_key_name(self):
-        """Gets the kms_key_name of this Encryption.
+        r"""Gets the kms_key_name of this Encryption.
 
         kms密钥的名称。  - 若“type”为“kms”，则必须填入\"kms_key_name\"或\"kms_key_id\"。
 
@@ -89,7 +89,7 @@ class Encryption:
 
     @kms_key_name.setter
     def kms_key_name(self, kms_key_name):
-        """Sets the kms_key_name of this Encryption.
+        r"""Sets the kms_key_name of this Encryption.
 
         kms密钥的名称。  - 若“type”为“kms”，则必须填入\"kms_key_name\"或\"kms_key_id\"。
 
@@ -100,7 +100,7 @@ class Encryption:
 
     @property
     def kms_key_id(self):
-        """Gets the kms_key_id of this Encryption.
+        r"""Gets the kms_key_id of this Encryption.
 
         kms密钥的ID。  - 若“type”为“kms”，则必须填入\"kms_key_name\"或\"kms_key_id\"。
 
@@ -111,7 +111,7 @@ class Encryption:
 
     @kms_key_id.setter
     def kms_key_id(self, kms_key_id):
-        """Sets the kms_key_id of this Encryption.
+        r"""Sets the kms_key_id of this Encryption.
 
         kms密钥的ID。  - 若“type”为“kms”，则必须填入\"kms_key_name\"或\"kms_key_id\"。
 

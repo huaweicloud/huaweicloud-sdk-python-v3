@@ -37,7 +37,7 @@ class ForkProjectRepoRequest:
     }
 
     def __init__(self, import_members=None, project_name=None, repo_name=None, template_id=None, type=None, visibility_level=None, external_project_info=None):
-        """ForkProjectRepoRequest
+        r"""ForkProjectRepoRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ForkProjectRepoRequest:
 
     @property
     def import_members(self):
-        """Gets the import_members of this ForkProjectRepoRequest.
+        r"""Gets the import_members of this ForkProjectRepoRequest.
 
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
@@ -93,7 +93,7 @@ class ForkProjectRepoRequest:
 
     @import_members.setter
     def import_members(self, import_members):
-        """Sets the import_members of this ForkProjectRepoRequest.
+        r"""Sets the import_members of this ForkProjectRepoRequest.
 
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
@@ -104,7 +104,7 @@ class ForkProjectRepoRequest:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ForkProjectRepoRequest.
+        r"""Gets the project_name of this ForkProjectRepoRequest.
 
         项目名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
@@ -115,7 +115,7 @@ class ForkProjectRepoRequest:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ForkProjectRepoRequest.
+        r"""Sets the project_name of this ForkProjectRepoRequest.
 
         项目名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
@@ -126,7 +126,7 @@ class ForkProjectRepoRequest:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this ForkProjectRepoRequest.
+        r"""Gets the repo_name of this ForkProjectRepoRequest.
 
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
@@ -137,7 +137,7 @@ class ForkProjectRepoRequest:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this ForkProjectRepoRequest.
+        r"""Sets the repo_name of this ForkProjectRepoRequest.
 
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
@@ -148,7 +148,7 @@ class ForkProjectRepoRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ForkProjectRepoRequest.
+        r"""Gets the template_id of this ForkProjectRepoRequest.
 
         复制模板的ID
 
@@ -159,7 +159,7 @@ class ForkProjectRepoRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ForkProjectRepoRequest.
+        r"""Sets the template_id of this ForkProjectRepoRequest.
 
         复制模板的ID
 
@@ -170,7 +170,7 @@ class ForkProjectRepoRequest:
 
     @property
     def type(self):
-        """Gets the type of this ForkProjectRepoRequest.
+        r"""Gets the type of this ForkProjectRepoRequest.
 
         项目类型，scrum
 
@@ -181,7 +181,7 @@ class ForkProjectRepoRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ForkProjectRepoRequest.
+        r"""Sets the type of this ForkProjectRepoRequest.
 
         项目类型，scrum
 
@@ -192,7 +192,7 @@ class ForkProjectRepoRequest:
 
     @property
     def visibility_level(self):
-        """Gets the visibility_level of this ForkProjectRepoRequest.
+        r"""Gets the visibility_level of this ForkProjectRepoRequest.
 
         仓库可见性：  *私有仓库：仓库仅对仓库成员可见，仓库成员可读写和访问仓库，取值范围为0  *公开仓库：   1.项目内成员只读仓库：仓库对项目内成员公开只读，并项目内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   2.租户内成员只读仓库：仓库对租户内成员公开只读，并租户内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   3.所有访客只读仓库：仓库对所有访客公开只读，并所有访客可在项目下和代码组下的仓库列表中查看和搜索，取值范围为20
 
@@ -203,7 +203,7 @@ class ForkProjectRepoRequest:
 
     @visibility_level.setter
     def visibility_level(self, visibility_level):
-        """Sets the visibility_level of this ForkProjectRepoRequest.
+        r"""Sets the visibility_level of this ForkProjectRepoRequest.
 
         仓库可见性：  *私有仓库：仓库仅对仓库成员可见，仓库成员可读写和访问仓库，取值范围为0  *公开仓库：   1.项目内成员只读仓库：仓库对项目内成员公开只读，并项目内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   2.租户内成员只读仓库：仓库对租户内成员公开只读，并租户内成员可在项目下和代码组下的仓库列表中查看和搜索，取值范围为10   3.所有访客只读仓库：仓库对所有访客公开只读，并所有访客可在项目下和代码组下的仓库列表中查看和搜索，取值范围为20
 
@@ -214,7 +214,7 @@ class ForkProjectRepoRequest:
 
     @property
     def external_project_info(self):
-        """Gets the external_project_info of this ForkProjectRepoRequest.
+        r"""Gets the external_project_info of this ForkProjectRepoRequest.
 
         :return: The external_project_info of this ForkProjectRepoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
@@ -223,7 +223,7 @@ class ForkProjectRepoRequest:
 
     @external_project_info.setter
     def external_project_info(self, external_project_info):
-        """Sets the external_project_info of this ForkProjectRepoRequest.
+        r"""Sets the external_project_info of this ForkProjectRepoRequest.
 
         :param external_project_info: The external_project_info of this ForkProjectRepoRequest.
         :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`

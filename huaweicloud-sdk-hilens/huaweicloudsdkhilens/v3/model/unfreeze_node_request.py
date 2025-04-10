@@ -27,7 +27,7 @@ class UnfreezeNodeRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """UnfreezeNodeRequest
+        r"""UnfreezeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UnfreezeNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UnfreezeNodeRequest.
+        r"""Gets the node_id of this UnfreezeNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -60,7 +60,7 @@ class UnfreezeNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UnfreezeNodeRequest.
+        r"""Sets the node_id of this UnfreezeNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -71,7 +71,7 @@ class UnfreezeNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnfreezeNodeRequest.
+        r"""Gets the body of this UnfreezeNodeRequest.
 
         :return: The body of this UnfreezeNodeRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.ActivateNodeRequestBody`
@@ -80,7 +80,7 @@ class UnfreezeNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnfreezeNodeRequest.
+        r"""Sets the body of this UnfreezeNodeRequest.
 
         :param body: The body of this UnfreezeNodeRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.ActivateNodeRequestBody`

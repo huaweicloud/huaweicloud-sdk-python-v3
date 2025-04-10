@@ -28,7 +28,7 @@ class ListAssetListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, assets=None):
-        """ListAssetListResponse
+        r"""ListAssetListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssetListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAssetListResponse.
+        r"""Gets the total of this ListAssetListResponse.
 
         媒资总数  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
 
@@ -62,7 +62,7 @@ class ListAssetListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAssetListResponse.
+        r"""Sets the total of this ListAssetListResponse.
 
         媒资总数  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
 
@@ -73,7 +73,7 @@ class ListAssetListResponse(SdkResponse):
 
     @property
     def assets(self):
-        """Gets the assets of this ListAssetListResponse.
+        r"""Gets the assets of this ListAssetListResponse.
 
         媒资列表
 
@@ -84,7 +84,7 @@ class ListAssetListResponse(SdkResponse):
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this ListAssetListResponse.
+        r"""Sets the assets of this ListAssetListResponse.
 
         媒资列表
 

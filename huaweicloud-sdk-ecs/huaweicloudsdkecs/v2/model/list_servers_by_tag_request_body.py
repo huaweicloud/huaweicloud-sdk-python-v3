@@ -35,7 +35,7 @@ class ListServersByTagRequestBody:
     }
 
     def __init__(self, action=None, limit=None, offset=None, tags=None, not_tags=None, matches=None):
-        """ListServersByTagRequestBody
+        r"""ListServersByTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListServersByTagRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListServersByTagRequestBody.
+        r"""Gets the action of this ListServersByTagRequestBody.
 
         值为filter：表示按标签过滤弹性云服务器，返回符合条件的云服务器列表。
 
@@ -88,7 +88,7 @@ class ListServersByTagRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListServersByTagRequestBody.
+        r"""Sets the action of this ListServersByTagRequestBody.
 
         值为filter：表示按标签过滤弹性云服务器，返回符合条件的云服务器列表。
 
@@ -99,7 +99,7 @@ class ListServersByTagRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServersByTagRequestBody.
+        r"""Gets the limit of this ListServersByTagRequestBody.
 
         查询返回的云服务器数量限制，最多为1000，不能为负数。  - 如果action的值为count时，此参数无效。 - 如果action的值为filter时，limit必填，取值范围[0-1000]，如果不传值，系统默认limit值为1000。
 
@@ -110,7 +110,7 @@ class ListServersByTagRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServersByTagRequestBody.
+        r"""Sets the limit of this ListServersByTagRequestBody.
 
         查询返回的云服务器数量限制，最多为1000，不能为负数。  - 如果action的值为count时，此参数无效。 - 如果action的值为filter时，limit必填，取值范围[0-1000]，如果不传值，系统默认limit值为1000。
 
@@ -121,7 +121,7 @@ class ListServersByTagRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServersByTagRequestBody.
+        r"""Gets the offset of this ListServersByTagRequestBody.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。  查询第一页数据时，可以不传入此参数。  - 如果action的值为count，此参数无效。 - 如果action的值为filter时，必填，如果用户不传值，系统默认offset值为0。
 
@@ -132,7 +132,7 @@ class ListServersByTagRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServersByTagRequestBody.
+        r"""Sets the offset of this ListServersByTagRequestBody.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0。  查询第一页数据时，可以不传入此参数。  - 如果action的值为count，此参数无效。 - 如果action的值为filter时，必填，如果用户不传值，系统默认offset值为0。
 
@@ -143,7 +143,7 @@ class ListServersByTagRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListServersByTagRequestBody.
+        r"""Gets the tags of this ListServersByTagRequestBody.
 
         查询包含所有指定标签的弹性云服务器。  - 最多包含10个key，每个key下面的value最多10个。 - 结构体不能缺失。 - key不能为空或者空字符串。 - key不能重复。 - 同一个key中values不能重复。
 
@@ -154,7 +154,7 @@ class ListServersByTagRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListServersByTagRequestBody.
+        r"""Sets the tags of this ListServersByTagRequestBody.
 
         查询包含所有指定标签的弹性云服务器。  - 最多包含10个key，每个key下面的value最多10个。 - 结构体不能缺失。 - key不能为空或者空字符串。 - key不能重复。 - 同一个key中values不能重复。
 
@@ -165,7 +165,7 @@ class ListServersByTagRequestBody:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ListServersByTagRequestBody.
+        r"""Gets the not_tags of this ListServersByTagRequestBody.
 
         查询不包含所有指定标签的弹性云服务器。  - 最多包含10个key，每个key下面的value最多10个。 - 结构体不能缺失。 - key不能为空或者空字符串。 - key不能重复。 - 同一个key中values不能重复。
 
@@ -176,7 +176,7 @@ class ListServersByTagRequestBody:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ListServersByTagRequestBody.
+        r"""Sets the not_tags of this ListServersByTagRequestBody.
 
         查询不包含所有指定标签的弹性云服务器。  - 最多包含10个key，每个key下面的value最多10个。 - 结构体不能缺失。 - key不能为空或者空字符串。 - key不能重复。 - 同一个key中values不能重复。
 
@@ -187,7 +187,7 @@ class ListServersByTagRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListServersByTagRequestBody.
+        r"""Gets the matches of this ListServersByTagRequestBody.
 
         搜索字段，用于按条件搜索弹性云服务器。  当前仅支持按resource_name进行搜索
 
@@ -198,7 +198,7 @@ class ListServersByTagRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListServersByTagRequestBody.
+        r"""Sets the matches of this ListServersByTagRequestBody.
 
         搜索字段，用于按条件搜索弹性云服务器。  当前仅支持按resource_name进行搜索
 

@@ -26,7 +26,7 @@ class UpdateNewNodeAutoAddSwitchResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateNewNodeAutoAddSwitchResponse
+        r"""UpdateNewNodeAutoAddSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateNewNodeAutoAddSwitchResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateNewNodeAutoAddSwitchResponse.
+        r"""Gets the result of this UpdateNewNodeAutoAddSwitchResponse.
 
         开启或关闭新增节点自动加入该Proxy的操作结果。
 
@@ -55,7 +55,7 @@ class UpdateNewNodeAutoAddSwitchResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateNewNodeAutoAddSwitchResponse.
+        r"""Sets the result of this UpdateNewNodeAutoAddSwitchResponse.
 
         开启或关闭新增节点自动加入该Proxy的操作结果。
 

@@ -43,7 +43,7 @@ class ProtectionProxyInfoRequestInfo:
     }
 
     def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, operating_system=None, process_whitelist=None):
-        """ProtectionProxyInfoRequestInfo
+        r"""ProtectionProxyInfoRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the policy_id of this ProtectionProxyInfoRequestInfo.
 
         策略ID，新建策略可不填
 
@@ -117,7 +117,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the policy_id of this ProtectionProxyInfoRequestInfo.
 
         策略ID，新建策略可不填
 
@@ -128,7 +128,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the policy_name of this ProtectionProxyInfoRequestInfo.
 
         策略名称，新建防护策略则必填
 
@@ -139,7 +139,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the policy_name of this ProtectionProxyInfoRequestInfo.
 
         策略名称，新建防护策略则必填
 
@@ -150,7 +150,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def protection_mode(self):
-        """Gets the protection_mode of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the protection_mode of this ProtectionProxyInfoRequestInfo.
 
         防护动作，新建防护策略则必填。包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
@@ -161,7 +161,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @protection_mode.setter
     def protection_mode(self, protection_mode):
-        """Sets the protection_mode of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the protection_mode of this ProtectionProxyInfoRequestInfo.
 
         防护动作，新建防护策略则必填。包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
@@ -172,7 +172,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def bait_protection_status(self):
-        """Gets the bait_protection_status of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the bait_protection_status of this ProtectionProxyInfoRequestInfo.
 
         是否开启诱饵防护，新建防护策略则必填。包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -183,7 +183,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @bait_protection_status.setter
     def bait_protection_status(self, bait_protection_status):
-        """Sets the bait_protection_status of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the bait_protection_status of this ProtectionProxyInfoRequestInfo.
 
         是否开启诱饵防护，新建防护策略则必填。包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -194,7 +194,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def protection_directory(self):
-        """Gets the protection_directory of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the protection_directory of this ProtectionProxyInfoRequestInfo.
 
         防护目录，新建防护策略则必填
 
@@ -205,7 +205,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @protection_directory.setter
     def protection_directory(self, protection_directory):
-        """Sets the protection_directory of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the protection_directory of this ProtectionProxyInfoRequestInfo.
 
         防护目录，新建防护策略则必填
 
@@ -216,7 +216,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def protection_type(self):
-        """Gets the protection_type of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the protection_type of this ProtectionProxyInfoRequestInfo.
 
         防护类型，新建防护策略则必填
 
@@ -227,7 +227,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @protection_type.setter
     def protection_type(self, protection_type):
-        """Sets the protection_type of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the protection_type of this ProtectionProxyInfoRequestInfo.
 
         防护类型，新建防护策略则必填
 
@@ -238,7 +238,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def exclude_directory(self):
-        """Gets the exclude_directory of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the exclude_directory of this ProtectionProxyInfoRequestInfo.
 
         排除目录，可选填
 
@@ -249,7 +249,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @exclude_directory.setter
     def exclude_directory(self, exclude_directory):
-        """Sets the exclude_directory of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the exclude_directory of this ProtectionProxyInfoRequestInfo.
 
         排除目录，可选填
 
@@ -260,7 +260,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def runtime_detection_status(self):
-        """Gets the runtime_detection_status of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the runtime_detection_status of this ProtectionProxyInfoRequestInfo.
 
         是否运行时检测，选填。包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
@@ -271,7 +271,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @runtime_detection_status.setter
     def runtime_detection_status(self, runtime_detection_status):
-        """Sets the runtime_detection_status of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the runtime_detection_status of this ProtectionProxyInfoRequestInfo.
 
         是否运行时检测，选填。包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
@@ -282,7 +282,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the operating_system of this ProtectionProxyInfoRequestInfo.
 
         操作系统，新建防护策略则必填。包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
@@ -293,7 +293,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the operating_system of this ProtectionProxyInfoRequestInfo.
 
         操作系统，新建防护策略则必填。包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
@@ -304,7 +304,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @property
     def process_whitelist(self):
-        """Gets the process_whitelist of this ProtectionProxyInfoRequestInfo.
+        r"""Gets the process_whitelist of this ProtectionProxyInfoRequestInfo.
 
         进程白名单
 
@@ -315,7 +315,7 @@ class ProtectionProxyInfoRequestInfo:
 
     @process_whitelist.setter
     def process_whitelist(self, process_whitelist):
-        """Sets the process_whitelist of this ProtectionProxyInfoRequestInfo.
+        r"""Sets the process_whitelist of this ProtectionProxyInfoRequestInfo.
 
         进程白名单
 

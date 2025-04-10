@@ -24,7 +24,7 @@ class NovaDeleteKeypairResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NovaDeleteKeypairResponse
+        r"""NovaDeleteKeypairResponse
 
         The model defined in huaweicloud sdk
 

@@ -35,7 +35,7 @@ class ResourceInfo:
     }
 
     def __init__(self, name=None, type=None, location=None, depend_files=None, desc=None, directory=None):
-        """ResourceInfo
+        r"""ResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ResourceInfo:
 
     @property
     def name(self):
-        """Gets the name of this ResourceInfo.
+        r"""Gets the name of this ResourceInfo.
 
         :return: The name of this ResourceInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class ResourceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceInfo.
+        r"""Sets the name of this ResourceInfo.
 
         :param name: The name of this ResourceInfo.
         :type name: str
@@ -96,7 +96,7 @@ class ResourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this ResourceInfo.
+        r"""Gets the type of this ResourceInfo.
 
         :return: The type of this ResourceInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class ResourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceInfo.
+        r"""Sets the type of this ResourceInfo.
 
         :param type: The type of this ResourceInfo.
         :type type: str
@@ -114,7 +114,7 @@ class ResourceInfo:
 
     @property
     def location(self):
-        """Gets the location of this ResourceInfo.
+        r"""Gets the location of this ResourceInfo.
 
         资源文件所在OBS路径
 
@@ -125,7 +125,7 @@ class ResourceInfo:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ResourceInfo.
+        r"""Sets the location of this ResourceInfo.
 
         资源文件所在OBS路径
 
@@ -136,7 +136,7 @@ class ResourceInfo:
 
     @property
     def depend_files(self):
-        """Gets the depend_files of this ResourceInfo.
+        r"""Gets the depend_files of this ResourceInfo.
 
         :return: The depend_files of this ResourceInfo.
         :rtype: list[str]
@@ -145,7 +145,7 @@ class ResourceInfo:
 
     @depend_files.setter
     def depend_files(self, depend_files):
-        """Sets the depend_files of this ResourceInfo.
+        r"""Sets the depend_files of this ResourceInfo.
 
         :param depend_files: The depend_files of this ResourceInfo.
         :type depend_files: list[str]
@@ -154,7 +154,7 @@ class ResourceInfo:
 
     @property
     def desc(self):
-        """Gets the desc of this ResourceInfo.
+        r"""Gets the desc of this ResourceInfo.
 
         :return: The desc of this ResourceInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class ResourceInfo:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ResourceInfo.
+        r"""Sets the desc of this ResourceInfo.
 
         :param desc: The desc of this ResourceInfo.
         :type desc: str
@@ -172,7 +172,7 @@ class ResourceInfo:
 
     @property
     def directory(self):
-        """Gets the directory of this ResourceInfo.
+        r"""Gets the directory of this ResourceInfo.
 
         资源所在目录
 
@@ -183,7 +183,7 @@ class ResourceInfo:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ResourceInfo.
+        r"""Sets the directory of this ResourceInfo.
 
         资源所在目录
 

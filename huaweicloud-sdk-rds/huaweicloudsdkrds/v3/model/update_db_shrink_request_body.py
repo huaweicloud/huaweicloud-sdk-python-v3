@@ -25,7 +25,7 @@ class UpdateDBShrinkRequestBody:
     }
 
     def __init__(self, db_name=None):
-        """UpdateDBShrinkRequestBody
+        r"""UpdateDBShrinkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDBShrinkRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this UpdateDBShrinkRequestBody.
+        r"""Gets the db_name of this UpdateDBShrinkRequestBody.
 
         数据库名称。
 
@@ -53,7 +53,7 @@ class UpdateDBShrinkRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this UpdateDBShrinkRequestBody.
+        r"""Sets the db_name of this UpdateDBShrinkRequestBody.
 
         数据库名称。
 

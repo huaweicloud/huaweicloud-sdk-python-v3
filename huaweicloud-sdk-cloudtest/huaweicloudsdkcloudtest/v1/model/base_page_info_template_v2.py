@@ -35,7 +35,7 @@ class BasePageInfoTemplateV2:
     }
 
     def __init__(self, limit=None, list=None, offset=None, pages=None, size=None, total=None):
-        """BasePageInfoTemplateV2
+        r"""BasePageInfoTemplateV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasePageInfoTemplateV2:
 
     @property
     def limit(self):
-        """Gets the limit of this BasePageInfoTemplateV2.
+        r"""Gets the limit of this BasePageInfoTemplateV2.
 
         每页显示的条目数量，最大支持200条
 
@@ -89,7 +89,7 @@ class BasePageInfoTemplateV2:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BasePageInfoTemplateV2.
+        r"""Sets the limit of this BasePageInfoTemplateV2.
 
         每页显示的条目数量，最大支持200条
 
@@ -100,7 +100,7 @@ class BasePageInfoTemplateV2:
 
     @property
     def list(self):
-        """Gets the list of this BasePageInfoTemplateV2.
+        r"""Gets the list of this BasePageInfoTemplateV2.
 
         :return: The list of this BasePageInfoTemplateV2.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TemplateV2`]
@@ -109,7 +109,7 @@ class BasePageInfoTemplateV2:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this BasePageInfoTemplateV2.
+        r"""Sets the list of this BasePageInfoTemplateV2.
 
         :param list: The list of this BasePageInfoTemplateV2.
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.TemplateV2`]
@@ -118,7 +118,7 @@ class BasePageInfoTemplateV2:
 
     @property
     def offset(self):
-        """Gets the offset of this BasePageInfoTemplateV2.
+        r"""Gets the offset of this BasePageInfoTemplateV2.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -129,7 +129,7 @@ class BasePageInfoTemplateV2:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasePageInfoTemplateV2.
+        r"""Sets the offset of this BasePageInfoTemplateV2.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -140,7 +140,7 @@ class BasePageInfoTemplateV2:
 
     @property
     def pages(self):
-        """Gets the pages of this BasePageInfoTemplateV2.
+        r"""Gets the pages of this BasePageInfoTemplateV2.
 
         :return: The pages of this BasePageInfoTemplateV2.
         :rtype: int
@@ -149,7 +149,7 @@ class BasePageInfoTemplateV2:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this BasePageInfoTemplateV2.
+        r"""Sets the pages of this BasePageInfoTemplateV2.
 
         :param pages: The pages of this BasePageInfoTemplateV2.
         :type pages: int
@@ -158,7 +158,7 @@ class BasePageInfoTemplateV2:
 
     @property
     def size(self):
-        """Gets the size of this BasePageInfoTemplateV2.
+        r"""Gets the size of this BasePageInfoTemplateV2.
 
         :return: The size of this BasePageInfoTemplateV2.
         :rtype: int
@@ -167,7 +167,7 @@ class BasePageInfoTemplateV2:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePageInfoTemplateV2.
+        r"""Sets the size of this BasePageInfoTemplateV2.
 
         :param size: The size of this BasePageInfoTemplateV2.
         :type size: int
@@ -176,7 +176,7 @@ class BasePageInfoTemplateV2:
 
     @property
     def total(self):
-        """Gets the total of this BasePageInfoTemplateV2.
+        r"""Gets the total of this BasePageInfoTemplateV2.
 
         :return: The total of this BasePageInfoTemplateV2.
         :rtype: int
@@ -185,7 +185,7 @@ class BasePageInfoTemplateV2:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePageInfoTemplateV2.
+        r"""Sets the total of this BasePageInfoTemplateV2.
 
         :param total: The total of this BasePageInfoTemplateV2.
         :type total: int

@@ -29,7 +29,7 @@ class ReplicationEncInfo:
     }
 
     def __init__(self, algorithm=None, key_id=None, iv=None):
-        """ReplicationEncInfo
+        r"""ReplicationEncInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReplicationEncInfo:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this ReplicationEncInfo.
+        r"""Gets the algorithm of this ReplicationEncInfo.
 
         加密算法
 
@@ -68,7 +68,7 @@ class ReplicationEncInfo:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this ReplicationEncInfo.
+        r"""Sets the algorithm of this ReplicationEncInfo.
 
         加密算法
 
@@ -79,7 +79,7 @@ class ReplicationEncInfo:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ReplicationEncInfo.
+        r"""Gets the key_id of this ReplicationEncInfo.
 
         秘钥id
 
@@ -90,7 +90,7 @@ class ReplicationEncInfo:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ReplicationEncInfo.
+        r"""Sets the key_id of this ReplicationEncInfo.
 
         秘钥id
 
@@ -101,7 +101,7 @@ class ReplicationEncInfo:
 
     @property
     def iv(self):
-        """Gets the iv of this ReplicationEncInfo.
+        r"""Gets the iv of this ReplicationEncInfo.
 
         初始化向量
 
@@ -112,7 +112,7 @@ class ReplicationEncInfo:
 
     @iv.setter
     def iv(self, iv):
-        """Sets the iv of this ReplicationEncInfo.
+        r"""Sets the iv of this ReplicationEncInfo.
 
         初始化向量
 

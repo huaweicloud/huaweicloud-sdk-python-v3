@@ -28,7 +28,7 @@ class ShowOnlineMeetingDetailResponse(SdkResponse):
     }
 
     def __init__(self, conference_data=None, data=None):
-        """ShowOnlineMeetingDetailResponse
+        r"""ShowOnlineMeetingDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowOnlineMeetingDetailResponse(SdkResponse):
 
     @property
     def conference_data(self):
-        """Gets the conference_data of this ShowOnlineMeetingDetailResponse.
+        r"""Gets the conference_data of this ShowOnlineMeetingDetailResponse.
 
         :return: The conference_data of this ShowOnlineMeetingDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
@@ -60,7 +60,7 @@ class ShowOnlineMeetingDetailResponse(SdkResponse):
 
     @conference_data.setter
     def conference_data(self, conference_data):
-        """Sets the conference_data of this ShowOnlineMeetingDetailResponse.
+        r"""Sets the conference_data of this ShowOnlineMeetingDetailResponse.
 
         :param conference_data: The conference_data of this ShowOnlineMeetingDetailResponse.
         :type conference_data: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
@@ -69,7 +69,7 @@ class ShowOnlineMeetingDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowOnlineMeetingDetailResponse.
+        r"""Gets the data of this ShowOnlineMeetingDetailResponse.
 
         :return: The data of this ShowOnlineMeetingDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.PageParticipant`
@@ -78,7 +78,7 @@ class ShowOnlineMeetingDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowOnlineMeetingDetailResponse.
+        r"""Sets the data of this ShowOnlineMeetingDetailResponse.
 
         :param data: The data of this ShowOnlineMeetingDetailResponse.
         :type data: :class:`huaweicloudsdkmeeting.v1.PageParticipant`

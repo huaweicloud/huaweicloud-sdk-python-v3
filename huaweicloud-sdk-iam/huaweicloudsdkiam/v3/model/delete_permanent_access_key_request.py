@@ -25,7 +25,7 @@ class DeletePermanentAccessKeyRequest:
     }
 
     def __init__(self, access_key=None):
-        """DeletePermanentAccessKeyRequest
+        r"""DeletePermanentAccessKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePermanentAccessKeyRequest:
 
     @property
     def access_key(self):
-        """Gets the access_key of this DeletePermanentAccessKeyRequest.
+        r"""Gets the access_key of this DeletePermanentAccessKeyRequest.
 
         待删除的指定AK。
 
@@ -53,7 +53,7 @@ class DeletePermanentAccessKeyRequest:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this DeletePermanentAccessKeyRequest.
+        r"""Sets the access_key of this DeletePermanentAccessKeyRequest.
 
         待删除的指定AK。
 

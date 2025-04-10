@@ -23,7 +23,7 @@ class ListClusterUpgradeFeatureGatesRequest:
     }
 
     def __init__(self):
-        """ListClusterUpgradeFeatureGatesRequest
+        r"""ListClusterUpgradeFeatureGatesRequest
 
         The model defined in huaweicloud sdk
 

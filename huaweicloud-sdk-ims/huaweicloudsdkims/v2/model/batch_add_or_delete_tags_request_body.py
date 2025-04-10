@@ -27,7 +27,7 @@ class BatchAddOrDeleteTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchAddOrDeleteTagsRequestBody
+        r"""BatchAddOrDeleteTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchAddOrDeleteTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchAddOrDeleteTagsRequestBody.
+        r"""Gets the action of this BatchAddOrDeleteTagsRequestBody.
 
         要进行的标签操作，区分大小写。支持create、delete，分别用于批量地创建/更新、删除标签。
 
@@ -59,7 +59,7 @@ class BatchAddOrDeleteTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchAddOrDeleteTagsRequestBody.
+        r"""Sets the action of this BatchAddOrDeleteTagsRequestBody.
 
         要进行的标签操作，区分大小写。支持create、delete，分别用于批量地创建/更新、删除标签。
 
@@ -70,7 +70,7 @@ class BatchAddOrDeleteTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchAddOrDeleteTagsRequestBody.
+        r"""Gets the tags of this BatchAddOrDeleteTagsRequestBody.
 
         需要增加、修改或者删除的标签键值对集合。
 
@@ -81,7 +81,7 @@ class BatchAddOrDeleteTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchAddOrDeleteTagsRequestBody.
+        r"""Sets the tags of this BatchAddOrDeleteTagsRequestBody.
 
         需要增加、修改或者删除的标签键值对集合。
 

@@ -28,7 +28,7 @@ class ShowJobAuditResultResponse(SdkResponse):
     }
 
     def __init__(self, system_audit_result=None, admin_audit_result=None):
-        """ShowJobAuditResultResponse
+        r"""ShowJobAuditResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobAuditResultResponse(SdkResponse):
 
     @property
     def system_audit_result(self):
-        """Gets the system_audit_result of this ShowJobAuditResultResponse.
+        r"""Gets the system_audit_result of this ShowJobAuditResultResponse.
 
         :return: The system_audit_result of this ShowJobAuditResultResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AuditResultSystemAuditResult`
@@ -60,7 +60,7 @@ class ShowJobAuditResultResponse(SdkResponse):
 
     @system_audit_result.setter
     def system_audit_result(self, system_audit_result):
-        """Sets the system_audit_result of this ShowJobAuditResultResponse.
+        r"""Sets the system_audit_result of this ShowJobAuditResultResponse.
 
         :param system_audit_result: The system_audit_result of this ShowJobAuditResultResponse.
         :type system_audit_result: :class:`huaweicloudsdkmetastudio.v1.AuditResultSystemAuditResult`
@@ -69,7 +69,7 @@ class ShowJobAuditResultResponse(SdkResponse):
 
     @property
     def admin_audit_result(self):
-        """Gets the admin_audit_result of this ShowJobAuditResultResponse.
+        r"""Gets the admin_audit_result of this ShowJobAuditResultResponse.
 
         :return: The admin_audit_result of this ShowJobAuditResultResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AuditResultAdminAuditResult`
@@ -78,7 +78,7 @@ class ShowJobAuditResultResponse(SdkResponse):
 
     @admin_audit_result.setter
     def admin_audit_result(self, admin_audit_result):
-        """Sets the admin_audit_result of this ShowJobAuditResultResponse.
+        r"""Sets the admin_audit_result of this ShowJobAuditResultResponse.
 
         :param admin_audit_result: The admin_audit_result of this ShowJobAuditResultResponse.
         :type admin_audit_result: :class:`huaweicloudsdkmetastudio.v1.AuditResultAdminAuditResult`

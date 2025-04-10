@@ -27,7 +27,7 @@ class ShowReplicationJobRequest:
     }
 
     def __init__(self, job_id=None, x_language=None):
-        """ShowReplicationJobRequest
+        r"""ShowReplicationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowReplicationJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowReplicationJobRequest.
+        r"""Gets the job_id of this ShowReplicationJobRequest.
 
         备份迁移任务ID。
 
@@ -60,7 +60,7 @@ class ShowReplicationJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowReplicationJobRequest.
+        r"""Sets the job_id of this ShowReplicationJobRequest.
 
         备份迁移任务ID。
 
@@ -71,7 +71,7 @@ class ShowReplicationJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowReplicationJobRequest.
+        r"""Gets the x_language of this ShowReplicationJobRequest.
 
         请求语言类型。 en-us：英文 zh-cn：中文
 
@@ -82,7 +82,7 @@ class ShowReplicationJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowReplicationJobRequest.
+        r"""Sets the x_language of this ShowReplicationJobRequest.
 
         请求语言类型。 en-us：英文 zh-cn：中文
 

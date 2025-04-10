@@ -81,7 +81,7 @@ class AuditInstanceListBean:
     }
 
     def __init__(self, charge_model=None, comment=None, config_num=None, connect_ip=None, connect_ipv6=None, cpu=None, created=None, database_limit=None, effect=None, expired=None, id=None, keep_days=None, name=None, new_version=None, port_id=None, ram=None, region=None, remain_days=None, resource_id=None, resource_spec_code=None, scene=None, security_group_id=None, specification=None, status=None, subnet_id=None, task=None, version=None, vpc_id=None, zone=None):
-        """AuditInstanceListBean
+        r"""AuditInstanceListBean
 
         The model defined in huaweicloud sdk
 
@@ -210,7 +210,7 @@ class AuditInstanceListBean:
 
     @property
     def charge_model(self):
-        """Gets the charge_model of this AuditInstanceListBean.
+        r"""Gets the charge_model of this AuditInstanceListBean.
 
         付费模式  - Period：包周期 - Demand：按需。
 
@@ -221,7 +221,7 @@ class AuditInstanceListBean:
 
     @charge_model.setter
     def charge_model(self, charge_model):
-        """Sets the charge_model of this AuditInstanceListBean.
+        r"""Sets the charge_model of this AuditInstanceListBean.
 
         付费模式  - Period：包周期 - Demand：按需。
 
@@ -232,7 +232,7 @@ class AuditInstanceListBean:
 
     @property
     def comment(self):
-        """Gets the comment of this AuditInstanceListBean.
+        r"""Gets the comment of this AuditInstanceListBean.
 
         备注信息。
 
@@ -243,7 +243,7 @@ class AuditInstanceListBean:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this AuditInstanceListBean.
+        r"""Sets the comment of this AuditInstanceListBean.
 
         备注信息。
 
@@ -254,7 +254,7 @@ class AuditInstanceListBean:
 
     @property
     def config_num(self):
-        """Gets the config_num of this AuditInstanceListBean.
+        r"""Gets the config_num of this AuditInstanceListBean.
 
         配置的数据库总数。
 
@@ -265,7 +265,7 @@ class AuditInstanceListBean:
 
     @config_num.setter
     def config_num(self, config_num):
-        """Sets the config_num of this AuditInstanceListBean.
+        r"""Sets the config_num of this AuditInstanceListBean.
 
         配置的数据库总数。
 
@@ -276,7 +276,7 @@ class AuditInstanceListBean:
 
     @property
     def connect_ip(self):
-        """Gets the connect_ip of this AuditInstanceListBean.
+        r"""Gets the connect_ip of this AuditInstanceListBean.
 
         连接地址。
 
@@ -287,7 +287,7 @@ class AuditInstanceListBean:
 
     @connect_ip.setter
     def connect_ip(self, connect_ip):
-        """Sets the connect_ip of this AuditInstanceListBean.
+        r"""Sets the connect_ip of this AuditInstanceListBean.
 
         连接地址。
 
@@ -298,7 +298,7 @@ class AuditInstanceListBean:
 
     @property
     def connect_ipv6(self):
-        """Gets the connect_ipv6 of this AuditInstanceListBean.
+        r"""Gets the connect_ipv6 of this AuditInstanceListBean.
 
         ipv6连接地址。
 
@@ -309,7 +309,7 @@ class AuditInstanceListBean:
 
     @connect_ipv6.setter
     def connect_ipv6(self, connect_ipv6):
-        """Sets the connect_ipv6 of this AuditInstanceListBean.
+        r"""Sets the connect_ipv6 of this AuditInstanceListBean.
 
         ipv6连接地址。
 
@@ -320,7 +320,7 @@ class AuditInstanceListBean:
 
     @property
     def cpu(self):
-        """Gets the cpu of this AuditInstanceListBean.
+        r"""Gets the cpu of this AuditInstanceListBean.
 
         CPU个数
 
@@ -331,7 +331,7 @@ class AuditInstanceListBean:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this AuditInstanceListBean.
+        r"""Sets the cpu of this AuditInstanceListBean.
 
         CPU个数
 
@@ -342,7 +342,7 @@ class AuditInstanceListBean:
 
     @property
     def created(self):
-        """Gets the created of this AuditInstanceListBean.
+        r"""Gets the created of this AuditInstanceListBean.
 
         创建时间
 
@@ -353,7 +353,7 @@ class AuditInstanceListBean:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this AuditInstanceListBean.
+        r"""Sets the created of this AuditInstanceListBean.
 
         创建时间
 
@@ -364,7 +364,7 @@ class AuditInstanceListBean:
 
     @property
     def database_limit(self):
-        """Gets the database_limit of this AuditInstanceListBean.
+        r"""Gets the database_limit of this AuditInstanceListBean.
 
         支持的数据库总数
 
@@ -375,7 +375,7 @@ class AuditInstanceListBean:
 
     @database_limit.setter
     def database_limit(self, database_limit):
-        """Sets the database_limit of this AuditInstanceListBean.
+        r"""Sets the database_limit of this AuditInstanceListBean.
 
         支持的数据库总数
 
@@ -386,7 +386,7 @@ class AuditInstanceListBean:
 
     @property
     def effect(self):
-        """Gets the effect of this AuditInstanceListBean.
+        r"""Gets the effect of this AuditInstanceListBean.
 
         实例结果状态 - 1:冻结可释放  - 2:冻结不可释放 - 3:冻结后不可续费
 
@@ -397,7 +397,7 @@ class AuditInstanceListBean:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this AuditInstanceListBean.
+        r"""Sets the effect of this AuditInstanceListBean.
 
         实例结果状态 - 1:冻结可释放  - 2:冻结不可释放 - 3:冻结后不可续费
 
@@ -408,7 +408,7 @@ class AuditInstanceListBean:
 
     @property
     def expired(self):
-        """Gets the expired of this AuditInstanceListBean.
+        r"""Gets the expired of this AuditInstanceListBean.
 
         过期时间
 
@@ -419,7 +419,7 @@ class AuditInstanceListBean:
 
     @expired.setter
     def expired(self, expired):
-        """Sets the expired of this AuditInstanceListBean.
+        r"""Sets the expired of this AuditInstanceListBean.
 
         过期时间
 
@@ -430,7 +430,7 @@ class AuditInstanceListBean:
 
     @property
     def id(self):
-        """Gets the id of this AuditInstanceListBean.
+        r"""Gets the id of this AuditInstanceListBean.
 
         ID
 
@@ -441,7 +441,7 @@ class AuditInstanceListBean:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AuditInstanceListBean.
+        r"""Sets the id of this AuditInstanceListBean.
 
         ID
 
@@ -452,7 +452,7 @@ class AuditInstanceListBean:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this AuditInstanceListBean.
+        r"""Gets the keep_days of this AuditInstanceListBean.
 
         剩余天数
 
@@ -463,7 +463,7 @@ class AuditInstanceListBean:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this AuditInstanceListBean.
+        r"""Sets the keep_days of this AuditInstanceListBean.
 
         剩余天数
 
@@ -474,7 +474,7 @@ class AuditInstanceListBean:
 
     @property
     def name(self):
-        """Gets the name of this AuditInstanceListBean.
+        r"""Gets the name of this AuditInstanceListBean.
 
         实例别名
 
@@ -485,7 +485,7 @@ class AuditInstanceListBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuditInstanceListBean.
+        r"""Sets the name of this AuditInstanceListBean.
 
         实例别名
 
@@ -496,7 +496,7 @@ class AuditInstanceListBean:
 
     @property
     def new_version(self):
-        """Gets the new_version of this AuditInstanceListBean.
+        r"""Gets the new_version of this AuditInstanceListBean.
 
         如果有返回，则需要升级，如果没有，则为null。
 
@@ -507,7 +507,7 @@ class AuditInstanceListBean:
 
     @new_version.setter
     def new_version(self, new_version):
-        """Sets the new_version of this AuditInstanceListBean.
+        r"""Sets the new_version of this AuditInstanceListBean.
 
         如果有返回，则需要升级，如果没有，则为null。
 
@@ -518,7 +518,7 @@ class AuditInstanceListBean:
 
     @property
     def port_id(self):
-        """Gets the port_id of this AuditInstanceListBean.
+        r"""Gets the port_id of this AuditInstanceListBean.
 
         绑定弹性IP的port ID
 
@@ -529,7 +529,7 @@ class AuditInstanceListBean:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this AuditInstanceListBean.
+        r"""Sets the port_id of this AuditInstanceListBean.
 
         绑定弹性IP的port ID
 
@@ -540,7 +540,7 @@ class AuditInstanceListBean:
 
     @property
     def ram(self):
-        """Gets the ram of this AuditInstanceListBean.
+        r"""Gets the ram of this AuditInstanceListBean.
 
         内存
 
@@ -551,7 +551,7 @@ class AuditInstanceListBean:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this AuditInstanceListBean.
+        r"""Sets the ram of this AuditInstanceListBean.
 
         内存
 
@@ -562,7 +562,7 @@ class AuditInstanceListBean:
 
     @property
     def region(self):
-        """Gets the region of this AuditInstanceListBean.
+        r"""Gets the region of this AuditInstanceListBean.
 
         实例所在region
 
@@ -573,7 +573,7 @@ class AuditInstanceListBean:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AuditInstanceListBean.
+        r"""Sets the region of this AuditInstanceListBean.
 
         实例所在region
 
@@ -584,7 +584,7 @@ class AuditInstanceListBean:
 
     @property
     def remain_days(self):
-        """Gets the remain_days of this AuditInstanceListBean.
+        r"""Gets the remain_days of this AuditInstanceListBean.
 
         到期天数
 
@@ -595,7 +595,7 @@ class AuditInstanceListBean:
 
     @remain_days.setter
     def remain_days(self, remain_days):
-        """Sets the remain_days of this AuditInstanceListBean.
+        r"""Sets the remain_days of this AuditInstanceListBean.
 
         到期天数
 
@@ -606,7 +606,7 @@ class AuditInstanceListBean:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AuditInstanceListBean.
+        r"""Gets the resource_id of this AuditInstanceListBean.
 
         资源ID
 
@@ -617,7 +617,7 @@ class AuditInstanceListBean:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AuditInstanceListBean.
+        r"""Sets the resource_id of this AuditInstanceListBean.
 
         资源ID
 
@@ -628,7 +628,7 @@ class AuditInstanceListBean:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this AuditInstanceListBean.
+        r"""Gets the resource_spec_code of this AuditInstanceListBean.
 
         实例的规格
 
@@ -639,7 +639,7 @@ class AuditInstanceListBean:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this AuditInstanceListBean.
+        r"""Sets the resource_spec_code of this AuditInstanceListBean.
 
         实例的规格
 
@@ -650,7 +650,7 @@ class AuditInstanceListBean:
 
     @property
     def scene(self):
-        """Gets the scene of this AuditInstanceListBean.
+        r"""Gets the scene of this AuditInstanceListBean.
 
         场景
 
@@ -661,7 +661,7 @@ class AuditInstanceListBean:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this AuditInstanceListBean.
+        r"""Sets the scene of this AuditInstanceListBean.
 
         场景
 
@@ -672,7 +672,7 @@ class AuditInstanceListBean:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this AuditInstanceListBean.
+        r"""Gets the security_group_id of this AuditInstanceListBean.
 
         安全组
 
@@ -683,7 +683,7 @@ class AuditInstanceListBean:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this AuditInstanceListBean.
+        r"""Sets the security_group_id of this AuditInstanceListBean.
 
         安全组
 
@@ -694,7 +694,7 @@ class AuditInstanceListBean:
 
     @property
     def specification(self):
-        """Gets the specification of this AuditInstanceListBean.
+        r"""Gets the specification of this AuditInstanceListBean.
 
         实例规格
 
@@ -705,7 +705,7 @@ class AuditInstanceListBean:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this AuditInstanceListBean.
+        r"""Sets the specification of this AuditInstanceListBean.
 
         实例规格
 
@@ -716,7 +716,7 @@ class AuditInstanceListBean:
 
     @property
     def status(self):
-        """Gets the status of this AuditInstanceListBean.
+        r"""Gets the status of this AuditInstanceListBean.
 
         实例状态  - SHUTOFF :已关闭  - ACTIVE: 运行中，允许任何操作   - DELETING: 删除中，不允许任何操作  - BUILD: 创建中，不允许任何操作  - DELETED: 已删除，不需要展示  - ERROR: 故障，只允许删除  - HAWAIT: 等待备机创建成功，不允许任何操作  - FROZEN: 已冻结，只允许续费、绑定/解绑  - UPGRADING: 升级中，不允许升级操作
 
@@ -727,7 +727,7 @@ class AuditInstanceListBean:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuditInstanceListBean.
+        r"""Sets the status of this AuditInstanceListBean.
 
         实例状态  - SHUTOFF :已关闭  - ACTIVE: 运行中，允许任何操作   - DELETING: 删除中，不允许任何操作  - BUILD: 创建中，不允许任何操作  - DELETED: 已删除，不需要展示  - ERROR: 故障，只允许删除  - HAWAIT: 等待备机创建成功，不允许任何操作  - FROZEN: 已冻结，只允许续费、绑定/解绑  - UPGRADING: 升级中，不允许升级操作
 
@@ -738,7 +738,7 @@ class AuditInstanceListBean:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AuditInstanceListBean.
+        r"""Gets the subnet_id of this AuditInstanceListBean.
 
         子网ID
 
@@ -749,7 +749,7 @@ class AuditInstanceListBean:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AuditInstanceListBean.
+        r"""Sets the subnet_id of this AuditInstanceListBean.
 
         子网ID
 
@@ -760,7 +760,7 @@ class AuditInstanceListBean:
 
     @property
     def task(self):
-        """Gets the task of this AuditInstanceListBean.
+        r"""Gets the task of this AuditInstanceListBean.
 
         任务状态  - powering-on: 正在开启，实例可以绑定、解绑  - powering-off: 正在关闭，实例可以绑定、解绑  - rebooting: 正在重启，实例可以绑定、解绑  - delete_wait: 等待删除，集群与实例不允许任何操作  - NO_TASK: 不展示
 
@@ -771,7 +771,7 @@ class AuditInstanceListBean:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this AuditInstanceListBean.
+        r"""Sets the task of this AuditInstanceListBean.
 
         任务状态  - powering-on: 正在开启，实例可以绑定、解绑  - powering-off: 正在关闭，实例可以绑定、解绑  - rebooting: 正在重启，实例可以绑定、解绑  - delete_wait: 等待删除，集群与实例不允许任何操作  - NO_TASK: 不展示
 
@@ -782,7 +782,7 @@ class AuditInstanceListBean:
 
     @property
     def version(self):
-        """Gets the version of this AuditInstanceListBean.
+        r"""Gets the version of this AuditInstanceListBean.
 
         实例的当前版本
 
@@ -793,7 +793,7 @@ class AuditInstanceListBean:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AuditInstanceListBean.
+        r"""Sets the version of this AuditInstanceListBean.
 
         实例的当前版本
 
@@ -804,7 +804,7 @@ class AuditInstanceListBean:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AuditInstanceListBean.
+        r"""Gets the vpc_id of this AuditInstanceListBean.
 
         虚拟私有云
 
@@ -815,7 +815,7 @@ class AuditInstanceListBean:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AuditInstanceListBean.
+        r"""Sets the vpc_id of this AuditInstanceListBean.
 
         虚拟私有云
 
@@ -826,7 +826,7 @@ class AuditInstanceListBean:
 
     @property
     def zone(self):
-        """Gets the zone of this AuditInstanceListBean.
+        r"""Gets the zone of this AuditInstanceListBean.
 
         可用区
 
@@ -837,7 +837,7 @@ class AuditInstanceListBean:
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this AuditInstanceListBean.
+        r"""Sets the zone of this AuditInstanceListBean.
 
         可用区
 

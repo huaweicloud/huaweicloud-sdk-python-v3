@@ -27,7 +27,7 @@ class CreateModuleRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """CreateModuleRequest
+        r"""CreateModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateModuleRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateModuleRequest.
+        r"""Gets the edge_node_id of this CreateModuleRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class CreateModuleRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateModuleRequest.
+        r"""Sets the edge_node_id of this CreateModuleRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class CreateModuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateModuleRequest.
+        r"""Gets the body of this CreateModuleRequest.
 
         :return: The body of this CreateModuleRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeModuleReqDTO`
@@ -80,7 +80,7 @@ class CreateModuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateModuleRequest.
+        r"""Sets the body of this CreateModuleRequest.
 
         :param body: The body of this CreateModuleRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateEdgeModuleReqDTO`

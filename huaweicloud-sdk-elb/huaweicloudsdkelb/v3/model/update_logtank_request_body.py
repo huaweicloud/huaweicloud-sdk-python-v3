@@ -25,7 +25,7 @@ class UpdateLogtankRequestBody:
     }
 
     def __init__(self, logtank=None):
-        """UpdateLogtankRequestBody
+        r"""UpdateLogtankRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateLogtankRequestBody:
 
     @property
     def logtank(self):
-        """Gets the logtank of this UpdateLogtankRequestBody.
+        r"""Gets the logtank of this UpdateLogtankRequestBody.
 
         :return: The logtank of this UpdateLogtankRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateLogtankOption`
@@ -51,7 +51,7 @@ class UpdateLogtankRequestBody:
 
     @logtank.setter
     def logtank(self, logtank):
-        """Sets the logtank of this UpdateLogtankRequestBody.
+        r"""Sets the logtank of this UpdateLogtankRequestBody.
 
         :param logtank: The logtank of this UpdateLogtankRequestBody.
         :type logtank: :class:`huaweicloudsdkelb.v3.UpdateLogtankOption`

@@ -30,7 +30,7 @@ class ListTaskCasesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, test_cases=None):
-        """ListTaskCasesResponse
+        r"""ListTaskCasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTaskCasesResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListTaskCasesResponse.
+        r"""Gets the code of this ListTaskCasesResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ListTaskCasesResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListTaskCasesResponse.
+        r"""Sets the code of this ListTaskCasesResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ListTaskCasesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListTaskCasesResponse.
+        r"""Gets the message of this ListTaskCasesResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ListTaskCasesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListTaskCasesResponse.
+        r"""Sets the message of this ListTaskCasesResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ListTaskCasesResponse(SdkResponse):
 
     @property
     def test_cases(self):
-        """Gets the test_cases of this ListTaskCasesResponse.
+        r"""Gets the test_cases of this ListTaskCasesResponse.
 
         用例列表
 
@@ -113,7 +113,7 @@ class ListTaskCasesResponse(SdkResponse):
 
     @test_cases.setter
     def test_cases(self, test_cases):
-        """Sets the test_cases of this ListTaskCasesResponse.
+        r"""Sets the test_cases of this ListTaskCasesResponse.
 
         用例列表
 

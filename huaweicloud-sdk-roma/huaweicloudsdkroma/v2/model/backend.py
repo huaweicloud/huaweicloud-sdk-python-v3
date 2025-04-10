@@ -29,7 +29,7 @@ class Backend:
     }
 
     def __init__(self, ip=None, port=None, health_check=None):
-        """Backend
+        r"""Backend
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Backend:
 
     @property
     def ip(self):
-        """Gets the ip of this Backend.
+        r"""Gets the ip of this Backend.
 
         后端主机地址列表
 
@@ -68,7 +68,7 @@ class Backend:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Backend.
+        r"""Sets the ip of this Backend.
 
         后端主机地址列表
 
@@ -79,7 +79,7 @@ class Backend:
 
     @property
     def port(self):
-        """Gets the port of this Backend.
+        r"""Gets the port of this Backend.
 
         后端服务端口，不存在时使用监听器端口
 
@@ -90,7 +90,7 @@ class Backend:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Backend.
+        r"""Sets the port of this Backend.
 
         后端服务端口，不存在时使用监听器端口
 
@@ -101,7 +101,7 @@ class Backend:
 
     @property
     def health_check(self):
-        """Gets the health_check of this Backend.
+        r"""Gets the health_check of this Backend.
 
         :return: The health_check of this Backend.
         :rtype: :class:`huaweicloudsdkroma.v2.HealthCheck`
@@ -110,7 +110,7 @@ class Backend:
 
     @health_check.setter
     def health_check(self, health_check):
-        """Sets the health_check of this Backend.
+        r"""Sets the health_check of this Backend.
 
         :param health_check: The health_check of this Backend.
         :type health_check: :class:`huaweicloudsdkroma.v2.HealthCheck`

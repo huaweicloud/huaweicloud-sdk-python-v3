@@ -29,7 +29,7 @@ class DeleteModelVersionRequest:
     }
 
     def __init__(self, workspace_id=None, model_id=None, version_id=None):
-        """DeleteModelVersionRequest
+        r"""DeleteModelVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteModelVersionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteModelVersionRequest.
+        r"""Gets the workspace_id of this DeleteModelVersionRequest.
 
         工作空间ID
 
@@ -65,7 +65,7 @@ class DeleteModelVersionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteModelVersionRequest.
+        r"""Sets the workspace_id of this DeleteModelVersionRequest.
 
         工作空间ID
 
@@ -76,7 +76,7 @@ class DeleteModelVersionRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this DeleteModelVersionRequest.
+        r"""Gets the model_id of this DeleteModelVersionRequest.
 
         Service ID
 
@@ -87,7 +87,7 @@ class DeleteModelVersionRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this DeleteModelVersionRequest.
+        r"""Sets the model_id of this DeleteModelVersionRequest.
 
         Service ID
 
@@ -98,7 +98,7 @@ class DeleteModelVersionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeleteModelVersionRequest.
+        r"""Gets the version_id of this DeleteModelVersionRequest.
 
         Version ID
 
@@ -109,7 +109,7 @@ class DeleteModelVersionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeleteModelVersionRequest.
+        r"""Sets the version_id of this DeleteModelVersionRequest.
 
         Version ID
 

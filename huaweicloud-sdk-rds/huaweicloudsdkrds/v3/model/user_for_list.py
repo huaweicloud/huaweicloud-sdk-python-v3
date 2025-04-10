@@ -29,7 +29,7 @@ class UserForList:
     }
 
     def __init__(self, name=None, databases=None, hosts=None):
-        """UserForList
+        r"""UserForList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UserForList:
 
     @property
     def name(self):
-        """Gets the name of this UserForList.
+        r"""Gets the name of this UserForList.
 
         数据库用户名称。
 
@@ -65,7 +65,7 @@ class UserForList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserForList.
+        r"""Sets the name of this UserForList.
 
         数据库用户名称。
 
@@ -76,7 +76,7 @@ class UserForList:
 
     @property
     def databases(self):
-        """Gets the databases of this UserForList.
+        r"""Gets the databases of this UserForList.
 
         数据库及其权限。
 
@@ -87,7 +87,7 @@ class UserForList:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this UserForList.
+        r"""Sets the databases of this UserForList.
 
         数据库及其权限。
 
@@ -98,7 +98,7 @@ class UserForList:
 
     @property
     def hosts(self):
-        """Gets the hosts of this UserForList.
+        r"""Gets the hosts of this UserForList.
 
         授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
 
@@ -109,7 +109,7 @@ class UserForList:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this UserForList.
+        r"""Sets the hosts of this UserForList.
 
         授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
 

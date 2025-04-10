@@ -29,7 +29,7 @@ class ListWorkspaceusersRequest:
     }
 
     def __init__(self, workspace_id=None, limit=None, offset=None):
-        """ListWorkspaceusersRequest
+        r"""ListWorkspaceusersRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListWorkspaceusersRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListWorkspaceusersRequest.
+        r"""Gets the workspace_id of this ListWorkspaceusersRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class ListWorkspaceusersRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListWorkspaceusersRequest.
+        r"""Sets the workspace_id of this ListWorkspaceusersRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class ListWorkspaceusersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkspaceusersRequest.
+        r"""Gets the limit of this ListWorkspaceusersRequest.
 
         数据条数限制
 
@@ -89,7 +89,7 @@ class ListWorkspaceusersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkspaceusersRequest.
+        r"""Sets the limit of this ListWorkspaceusersRequest.
 
         数据条数限制
 
@@ -100,7 +100,7 @@ class ListWorkspaceusersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkspaceusersRequest.
+        r"""Gets the offset of this ListWorkspaceusersRequest.
 
         偏移量
 
@@ -111,7 +111,7 @@ class ListWorkspaceusersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkspaceusersRequest.
+        r"""Sets the offset of this ListWorkspaceusersRequest.
 
         偏移量
 

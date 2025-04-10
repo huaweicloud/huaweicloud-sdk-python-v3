@@ -30,7 +30,7 @@ class DetachPolicyRequest:
     }
 
     def __init__(self, x_security_token=None, policy_id=None, body=None):
-        """DetachPolicyRequest
+        r"""DetachPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DetachPolicyRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DetachPolicyRequest.
+        r"""Gets the x_security_token of this DetachPolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class DetachPolicyRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DetachPolicyRequest.
+        r"""Sets the x_security_token of this DetachPolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class DetachPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DetachPolicyRequest.
+        r"""Gets the policy_id of this DetachPolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class DetachPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DetachPolicyRequest.
+        r"""Sets the policy_id of this DetachPolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class DetachPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DetachPolicyRequest.
+        r"""Gets the body of this DetachPolicyRequest.
 
         :return: The body of this DetachPolicyRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PolicyTachReqBody`
@@ -110,7 +110,7 @@ class DetachPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachPolicyRequest.
+        r"""Sets the body of this DetachPolicyRequest.
 
         :param body: The body of this DetachPolicyRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.PolicyTachReqBody`

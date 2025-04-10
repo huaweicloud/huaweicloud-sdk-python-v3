@@ -29,7 +29,7 @@ class ListComputingResourcesRequest:
     }
 
     def __init__(self, computing_resource_name=None, offset=None, limit=None):
-        """ListComputingResourcesRequest
+        r"""ListComputingResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListComputingResourcesRequest:
 
     @property
     def computing_resource_name(self):
-        """Gets the computing_resource_name of this ListComputingResourcesRequest.
+        r"""Gets the computing_resource_name of this ListComputingResourcesRequest.
 
         计算资源名称。
 
@@ -68,7 +68,7 @@ class ListComputingResourcesRequest:
 
     @computing_resource_name.setter
     def computing_resource_name(self, computing_resource_name):
-        """Sets the computing_resource_name of this ListComputingResourcesRequest.
+        r"""Sets the computing_resource_name of this ListComputingResourcesRequest.
 
         计算资源名称。
 
@@ -79,7 +79,7 @@ class ListComputingResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListComputingResourcesRequest.
+        r"""Gets the offset of this ListComputingResourcesRequest.
 
         当前偏移量，默认为0。
 
@@ -90,7 +90,7 @@ class ListComputingResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListComputingResourcesRequest.
+        r"""Sets the offset of this ListComputingResourcesRequest.
 
         当前偏移量，默认为0。
 
@@ -101,7 +101,7 @@ class ListComputingResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListComputingResourcesRequest.
+        r"""Gets the limit of this ListComputingResourcesRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -112,7 +112,7 @@ class ListComputingResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListComputingResourcesRequest.
+        r"""Sets the limit of this ListComputingResourcesRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 

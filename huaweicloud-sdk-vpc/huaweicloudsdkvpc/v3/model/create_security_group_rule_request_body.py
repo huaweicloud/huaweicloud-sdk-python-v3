@@ -27,7 +27,7 @@ class CreateSecurityGroupRuleRequestBody:
     }
 
     def __init__(self, dry_run=None, security_group_rule=None):
-        """CreateSecurityGroupRuleRequestBody
+        r"""CreateSecurityGroupRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecurityGroupRuleRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this CreateSecurityGroupRuleRequestBody.
+        r"""Gets the dry_run of this CreateSecurityGroupRuleRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建安全组规则。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建安全组规则。
 
@@ -60,7 +60,7 @@ class CreateSecurityGroupRuleRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this CreateSecurityGroupRuleRequestBody.
+        r"""Sets the dry_run of this CreateSecurityGroupRuleRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建安全组规则。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建安全组规则。
 
@@ -71,7 +71,7 @@ class CreateSecurityGroupRuleRequestBody:
 
     @property
     def security_group_rule(self):
-        """Gets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
+        r"""Gets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
 
         :return: The security_group_rule of this CreateSecurityGroupRuleRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleOption`
@@ -80,7 +80,7 @@ class CreateSecurityGroupRuleRequestBody:
 
     @security_group_rule.setter
     def security_group_rule(self, security_group_rule):
-        """Sets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
+        r"""Sets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
 
         :param security_group_rule: The security_group_rule of this CreateSecurityGroupRuleRequestBody.
         :type security_group_rule: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleOption`

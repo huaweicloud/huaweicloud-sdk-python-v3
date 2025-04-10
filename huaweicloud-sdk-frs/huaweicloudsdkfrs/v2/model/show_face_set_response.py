@@ -28,7 +28,7 @@ class ShowFaceSetResponse(SdkResponse):
     }
 
     def __init__(self, face_set_info=None, x_request_id=None):
-        """ShowFaceSetResponse
+        r"""ShowFaceSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFaceSetResponse(SdkResponse):
 
     @property
     def face_set_info(self):
-        """Gets the face_set_info of this ShowFaceSetResponse.
+        r"""Gets the face_set_info of this ShowFaceSetResponse.
 
         :return: The face_set_info of this ShowFaceSetResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
@@ -60,7 +60,7 @@ class ShowFaceSetResponse(SdkResponse):
 
     @face_set_info.setter
     def face_set_info(self, face_set_info):
-        """Sets the face_set_info of this ShowFaceSetResponse.
+        r"""Sets the face_set_info of this ShowFaceSetResponse.
 
         :param face_set_info: The face_set_info of this ShowFaceSetResponse.
         :type face_set_info: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
@@ -69,7 +69,7 @@ class ShowFaceSetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowFaceSetResponse.
+        r"""Gets the x_request_id of this ShowFaceSetResponse.
 
         :return: The x_request_id of this ShowFaceSetResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowFaceSetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowFaceSetResponse.
+        r"""Sets the x_request_id of this ShowFaceSetResponse.
 
         :param x_request_id: The x_request_id of this ShowFaceSetResponse.
         :type x_request_id: str

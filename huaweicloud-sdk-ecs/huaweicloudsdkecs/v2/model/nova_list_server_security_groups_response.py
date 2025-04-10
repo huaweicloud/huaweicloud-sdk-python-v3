@@ -26,7 +26,7 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None):
-        """NovaListServerSecurityGroupsResponse
+        r"""NovaListServerSecurityGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NovaListServerSecurityGroupsResponse.
+        r"""Gets the security_groups of this NovaListServerSecurityGroupsResponse.
 
         security_group列表
 
@@ -55,7 +55,7 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NovaListServerSecurityGroupsResponse.
+        r"""Sets the security_groups of this NovaListServerSecurityGroupsResponse.
 
         security_group列表
 

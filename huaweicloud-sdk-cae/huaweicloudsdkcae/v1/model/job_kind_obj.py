@@ -26,7 +26,7 @@ class JobKindObj:
     }
 
     def __init__(self):
-        """JobKindObj
+        r"""JobKindObj
 
         The model defined in huaweicloud sdk
 

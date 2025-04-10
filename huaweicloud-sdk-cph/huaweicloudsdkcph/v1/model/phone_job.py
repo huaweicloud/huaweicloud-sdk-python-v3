@@ -31,7 +31,7 @@ class PhoneJob:
     }
 
     def __init__(self, phone_id=None, job_id=None, error_code=None, error_msg=None):
-        """PhoneJob
+        r"""PhoneJob
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PhoneJob:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this PhoneJob.
+        r"""Gets the phone_id of this PhoneJob.
 
         云手机的唯一标识ID，云手机相关任务包含此字段。
 
@@ -75,7 +75,7 @@ class PhoneJob:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this PhoneJob.
+        r"""Sets the phone_id of this PhoneJob.
 
         云手机的唯一标识ID，云手机相关任务包含此字段。
 
@@ -86,7 +86,7 @@ class PhoneJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this PhoneJob.
+        r"""Gets the job_id of this PhoneJob.
 
         任务的唯一标识。
 
@@ -97,7 +97,7 @@ class PhoneJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PhoneJob.
+        r"""Sets the job_id of this PhoneJob.
 
         任务的唯一标识。
 
@@ -108,7 +108,7 @@ class PhoneJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this PhoneJob.
+        r"""Gets the error_code of this PhoneJob.
 
         错误码。
 
@@ -119,7 +119,7 @@ class PhoneJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this PhoneJob.
+        r"""Sets the error_code of this PhoneJob.
 
         错误码。
 
@@ -130,7 +130,7 @@ class PhoneJob:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this PhoneJob.
+        r"""Gets the error_msg of this PhoneJob.
 
         错误说明。
 
@@ -141,7 +141,7 @@ class PhoneJob:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this PhoneJob.
+        r"""Sets the error_msg of this PhoneJob.
 
         错误说明。
 

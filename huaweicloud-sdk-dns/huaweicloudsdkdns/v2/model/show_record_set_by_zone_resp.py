@@ -59,7 +59,7 @@ class ShowRecordSetByZoneResp:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
-        """ShowRecordSetByZoneResp
+        r"""ShowRecordSetByZoneResp
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def id(self):
-        """Gets the id of this ShowRecordSetByZoneResp.
+        r"""Gets the id of this ShowRecordSetByZoneResp.
 
         Record Set的ID。
 
@@ -173,7 +173,7 @@ class ShowRecordSetByZoneResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRecordSetByZoneResp.
+        r"""Sets the id of this ShowRecordSetByZoneResp.
 
         Record Set的ID。
 
@@ -184,7 +184,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def name(self):
-        """Gets the name of this ShowRecordSetByZoneResp.
+        r"""Gets the name of this ShowRecordSetByZoneResp.
 
         Record Set的名称。
 
@@ -195,7 +195,7 @@ class ShowRecordSetByZoneResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowRecordSetByZoneResp.
+        r"""Sets the name of this ShowRecordSetByZoneResp.
 
         Record Set的名称。
 
@@ -206,7 +206,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def description(self):
-        """Gets the description of this ShowRecordSetByZoneResp.
+        r"""Gets the description of this ShowRecordSetByZoneResp.
 
         Record Set的描述信息。
 
@@ -217,7 +217,7 @@ class ShowRecordSetByZoneResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowRecordSetByZoneResp.
+        r"""Sets the description of this ShowRecordSetByZoneResp.
 
         Record Set的描述信息。
 
@@ -228,7 +228,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ShowRecordSetByZoneResp.
+        r"""Gets the zone_id of this ShowRecordSetByZoneResp.
 
         托管该记录的zone_id。
 
@@ -239,7 +239,7 @@ class ShowRecordSetByZoneResp:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ShowRecordSetByZoneResp.
+        r"""Sets the zone_id of this ShowRecordSetByZoneResp.
 
         托管该记录的zone_id。
 
@@ -250,7 +250,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this ShowRecordSetByZoneResp.
+        r"""Gets the zone_name of this ShowRecordSetByZoneResp.
 
         托管该记录的zone_name。
 
@@ -261,7 +261,7 @@ class ShowRecordSetByZoneResp:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this ShowRecordSetByZoneResp.
+        r"""Sets the zone_name of this ShowRecordSetByZoneResp.
 
         托管该记录的zone_name。
 
@@ -272,7 +272,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def type(self):
-        """Gets the type of this ShowRecordSetByZoneResp.
+        r"""Gets the type of this ShowRecordSetByZoneResp.
 
         记录类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
@@ -283,7 +283,7 @@ class ShowRecordSetByZoneResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowRecordSetByZoneResp.
+        r"""Sets the type of this ShowRecordSetByZoneResp.
 
         记录类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
@@ -294,7 +294,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ShowRecordSetByZoneResp.
+        r"""Gets the ttl of this ShowRecordSetByZoneResp.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -305,7 +305,7 @@ class ShowRecordSetByZoneResp:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ShowRecordSetByZoneResp.
+        r"""Sets the ttl of this ShowRecordSetByZoneResp.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -316,7 +316,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def records(self):
-        """Gets the records of this ShowRecordSetByZoneResp.
+        r"""Gets the records of this ShowRecordSetByZoneResp.
 
         域名解析后的值。
 
@@ -327,7 +327,7 @@ class ShowRecordSetByZoneResp:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowRecordSetByZoneResp.
+        r"""Sets the records of this ShowRecordSetByZoneResp.
 
         域名解析后的值。
 
@@ -338,7 +338,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowRecordSetByZoneResp.
+        r"""Gets the created_at of this ShowRecordSetByZoneResp.
 
         创建时间。
 
@@ -349,7 +349,7 @@ class ShowRecordSetByZoneResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowRecordSetByZoneResp.
+        r"""Sets the created_at of this ShowRecordSetByZoneResp.
 
         创建时间。
 
@@ -360,7 +360,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowRecordSetByZoneResp.
+        r"""Gets the updated_at of this ShowRecordSetByZoneResp.
 
         更新时间。
 
@@ -371,7 +371,7 @@ class ShowRecordSetByZoneResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowRecordSetByZoneResp.
+        r"""Sets the updated_at of this ShowRecordSetByZoneResp.
 
         更新时间。
 
@@ -382,7 +382,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def status(self):
-        """Gets the status of this ShowRecordSetByZoneResp.
+        r"""Gets the status of this ShowRecordSetByZoneResp.
 
         资源状态。
 
@@ -393,7 +393,7 @@ class ShowRecordSetByZoneResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRecordSetByZoneResp.
+        r"""Sets the status of this ShowRecordSetByZoneResp.
 
         资源状态。
 
@@ -404,7 +404,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def default(self):
-        """Gets the default of this ShowRecordSetByZoneResp.
+        r"""Gets the default of this ShowRecordSetByZoneResp.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -415,7 +415,7 @@ class ShowRecordSetByZoneResp:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ShowRecordSetByZoneResp.
+        r"""Sets the default of this ShowRecordSetByZoneResp.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -426,7 +426,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowRecordSetByZoneResp.
+        r"""Gets the project_id of this ShowRecordSetByZoneResp.
 
         该Record Set所属的项目ID。
 
@@ -437,7 +437,7 @@ class ShowRecordSetByZoneResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowRecordSetByZoneResp.
+        r"""Sets the project_id of this ShowRecordSetByZoneResp.
 
         该Record Set所属的项目ID。
 
@@ -448,7 +448,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def links(self):
-        """Gets the links of this ShowRecordSetByZoneResp.
+        r"""Gets the links of this ShowRecordSetByZoneResp.
 
         :return: The links of this ShowRecordSetByZoneResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -457,7 +457,7 @@ class ShowRecordSetByZoneResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowRecordSetByZoneResp.
+        r"""Sets the links of this ShowRecordSetByZoneResp.
 
         :param links: The links of this ShowRecordSetByZoneResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -466,7 +466,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def line(self):
-        """Gets the line of this ShowRecordSetByZoneResp.
+        r"""Gets the line of this ShowRecordSetByZoneResp.
 
         解析线路ID。
 
@@ -477,7 +477,7 @@ class ShowRecordSetByZoneResp:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this ShowRecordSetByZoneResp.
+        r"""Sets the line of this ShowRecordSetByZoneResp.
 
         解析线路ID。
 
@@ -488,7 +488,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def weight(self):
-        """Gets the weight of this ShowRecordSetByZoneResp.
+        r"""Gets the weight of this ShowRecordSetByZoneResp.
 
         解析记录的权重。
 
@@ -499,7 +499,7 @@ class ShowRecordSetByZoneResp:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ShowRecordSetByZoneResp.
+        r"""Sets the weight of this ShowRecordSetByZoneResp.
 
         解析记录的权重。
 
@@ -510,7 +510,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this ShowRecordSetByZoneResp.
+        r"""Gets the health_check_id of this ShowRecordSetByZoneResp.
 
         健康检查ID。
 
@@ -521,7 +521,7 @@ class ShowRecordSetByZoneResp:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this ShowRecordSetByZoneResp.
+        r"""Sets the health_check_id of this ShowRecordSetByZoneResp.
 
         健康检查ID。
 
@@ -532,7 +532,7 @@ class ShowRecordSetByZoneResp:
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this ShowRecordSetByZoneResp.
+        r"""Gets the alias_target of this ShowRecordSetByZoneResp.
 
         :return: The alias_target of this ShowRecordSetByZoneResp.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -541,7 +541,7 @@ class ShowRecordSetByZoneResp:
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this ShowRecordSetByZoneResp.
+        r"""Sets the alias_target of this ShowRecordSetByZoneResp.
 
         :param alias_target: The alias_target of this ShowRecordSetByZoneResp.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

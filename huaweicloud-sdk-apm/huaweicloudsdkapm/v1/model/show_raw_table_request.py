@@ -27,7 +27,7 @@ class ShowRawTableRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ShowRawTableRequest
+        r"""ShowRawTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRawTableRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowRawTableRequest.
+        r"""Gets the x_business_id of this ShowRawTableRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ShowRawTableRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowRawTableRequest.
+        r"""Sets the x_business_id of this ShowRawTableRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ShowRawTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowRawTableRequest.
+        r"""Gets the body of this ShowRawTableRequest.
 
         :return: The body of this ShowRawTableRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.RawTableParam`
@@ -80,7 +80,7 @@ class ShowRawTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowRawTableRequest.
+        r"""Sets the body of this ShowRawTableRequest.
 
         :param body: The body of this ShowRawTableRequest.
         :type body: :class:`huaweicloudsdkapm.v1.RawTableParam`

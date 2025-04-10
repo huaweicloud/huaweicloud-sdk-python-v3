@@ -28,7 +28,7 @@ class CreateVolumeRequest:
     }
 
     def __init__(self, x_client_token=None, body=None):
-        """CreateVolumeRequest
+        r"""CreateVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateVolumeRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVolumeRequest.
+        r"""Gets the x_client_token of this CreateVolumeRequest.
 
         请求的幂等标识。
 
@@ -62,7 +62,7 @@ class CreateVolumeRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVolumeRequest.
+        r"""Sets the x_client_token of this CreateVolumeRequest.
 
         请求的幂等标识。
 
@@ -73,7 +73,7 @@ class CreateVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVolumeRequest.
+        r"""Gets the body of this CreateVolumeRequest.
 
         :return: The body of this CreateVolumeRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeRequestBody`
@@ -82,7 +82,7 @@ class CreateVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVolumeRequest.
+        r"""Sets the body of this CreateVolumeRequest.
 
         :param body: The body of this CreateVolumeRequest.
         :type body: :class:`huaweicloudsdkevs.v2.CreateVolumeRequestBody`

@@ -27,7 +27,7 @@ class ShowPackageDetailRespReleasePackagePackageApprovers:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """ShowPackageDetailRespReleasePackagePackageApprovers
+        r"""ShowPackageDetailRespReleasePackagePackageApprovers
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowPackageDetailRespReleasePackagePackageApprovers:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowPackageDetailRespReleasePackagePackageApprovers.
+        r"""Gets the user_id of this ShowPackageDetailRespReleasePackagePackageApprovers.
 
         发布包审批人id
 
@@ -61,7 +61,7 @@ class ShowPackageDetailRespReleasePackagePackageApprovers:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowPackageDetailRespReleasePackagePackageApprovers.
+        r"""Sets the user_id of this ShowPackageDetailRespReleasePackagePackageApprovers.
 
         发布包审批人id
 
@@ -72,7 +72,7 @@ class ShowPackageDetailRespReleasePackagePackageApprovers:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowPackageDetailRespReleasePackagePackageApprovers.
+        r"""Gets the user_name of this ShowPackageDetailRespReleasePackagePackageApprovers.
 
         发布包审批人id
 
@@ -83,7 +83,7 @@ class ShowPackageDetailRespReleasePackagePackageApprovers:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowPackageDetailRespReleasePackagePackageApprovers.
+        r"""Sets the user_name of this ShowPackageDetailRespReleasePackagePackageApprovers.
 
         发布包审批人id
 

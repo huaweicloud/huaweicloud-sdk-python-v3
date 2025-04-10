@@ -24,7 +24,7 @@ class UpdateIpWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateIpWhitelistResponse
+        r"""UpdateIpWhitelistResponse
 
         The model defined in huaweicloud sdk
 

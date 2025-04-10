@@ -43,7 +43,7 @@ class ListProjectVpcChannelsV2Request:
     }
 
     def __init__(self, offset=None, limit=None, id=None, name=None, precise_search=None, member_host=None, member_port=None, member_group_name=None, member_group_id=None, members_return=None):
-        """ListProjectVpcChannelsV2Request
+        r"""ListProjectVpcChannelsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectVpcChannelsV2Request.
+        r"""Gets the offset of this ListProjectVpcChannelsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -117,7 +117,7 @@ class ListProjectVpcChannelsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectVpcChannelsV2Request.
+        r"""Sets the offset of this ListProjectVpcChannelsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -128,7 +128,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectVpcChannelsV2Request.
+        r"""Gets the limit of this ListProjectVpcChannelsV2Request.
 
         每页显示的条目数量
 
@@ -139,7 +139,7 @@ class ListProjectVpcChannelsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectVpcChannelsV2Request.
+        r"""Sets the limit of this ListProjectVpcChannelsV2Request.
 
         每页显示的条目数量
 
@@ -150,7 +150,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def id(self):
-        """Gets the id of this ListProjectVpcChannelsV2Request.
+        r"""Gets the id of this ListProjectVpcChannelsV2Request.
 
         VPC通道的编号
 
@@ -161,7 +161,7 @@ class ListProjectVpcChannelsV2Request:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListProjectVpcChannelsV2Request.
+        r"""Sets the id of this ListProjectVpcChannelsV2Request.
 
         VPC通道的编号
 
@@ -172,7 +172,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListProjectVpcChannelsV2Request.
+        r"""Gets the name of this ListProjectVpcChannelsV2Request.
 
         VPC通道的名称
 
@@ -183,7 +183,7 @@ class ListProjectVpcChannelsV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProjectVpcChannelsV2Request.
+        r"""Sets the name of this ListProjectVpcChannelsV2Request.
 
         VPC通道的名称
 
@@ -194,7 +194,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListProjectVpcChannelsV2Request.
+        r"""Gets the precise_search of this ListProjectVpcChannelsV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
 
@@ -205,7 +205,7 @@ class ListProjectVpcChannelsV2Request:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListProjectVpcChannelsV2Request.
+        r"""Sets the precise_search of this ListProjectVpcChannelsV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
 
@@ -216,7 +216,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def member_host(self):
-        """Gets the member_host of this ListProjectVpcChannelsV2Request.
+        r"""Gets the member_host of this ListProjectVpcChannelsV2Request.
 
         后端服务地址。默认精确查询，不支持模糊查询。
 
@@ -227,7 +227,7 @@ class ListProjectVpcChannelsV2Request:
 
     @member_host.setter
     def member_host(self, member_host):
-        """Sets the member_host of this ListProjectVpcChannelsV2Request.
+        r"""Sets the member_host of this ListProjectVpcChannelsV2Request.
 
         后端服务地址。默认精确查询，不支持模糊查询。
 
@@ -238,7 +238,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def member_port(self):
-        """Gets the member_port of this ListProjectVpcChannelsV2Request.
+        r"""Gets the member_port of this ListProjectVpcChannelsV2Request.
 
         后端服务器端口
 
@@ -249,7 +249,7 @@ class ListProjectVpcChannelsV2Request:
 
     @member_port.setter
     def member_port(self, member_port):
-        """Sets the member_port of this ListProjectVpcChannelsV2Request.
+        r"""Sets the member_port of this ListProjectVpcChannelsV2Request.
 
         后端服务器端口
 
@@ -260,7 +260,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def member_group_name(self):
-        """Gets the member_group_name of this ListProjectVpcChannelsV2Request.
+        r"""Gets the member_group_name of this ListProjectVpcChannelsV2Request.
 
         后端服务器组名称
 
@@ -271,7 +271,7 @@ class ListProjectVpcChannelsV2Request:
 
     @member_group_name.setter
     def member_group_name(self, member_group_name):
-        """Sets the member_group_name of this ListProjectVpcChannelsV2Request.
+        r"""Sets the member_group_name of this ListProjectVpcChannelsV2Request.
 
         后端服务器组名称
 
@@ -282,7 +282,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def member_group_id(self):
-        """Gets the member_group_id of this ListProjectVpcChannelsV2Request.
+        r"""Gets the member_group_id of this ListProjectVpcChannelsV2Request.
 
         后端服务器组编号
 
@@ -293,7 +293,7 @@ class ListProjectVpcChannelsV2Request:
 
     @member_group_id.setter
     def member_group_id(self, member_group_id):
-        """Sets the member_group_id of this ListProjectVpcChannelsV2Request.
+        r"""Sets the member_group_id of this ListProjectVpcChannelsV2Request.
 
         后端服务器组编号
 
@@ -304,7 +304,7 @@ class ListProjectVpcChannelsV2Request:
 
     @property
     def members_return(self):
-        """Gets the members_return of this ListProjectVpcChannelsV2Request.
+        r"""Gets the members_return of this ListProjectVpcChannelsV2Request.
 
         是否返回后端实例列表
 
@@ -315,7 +315,7 @@ class ListProjectVpcChannelsV2Request:
 
     @members_return.setter
     def members_return(self, members_return):
-        """Sets the members_return of this ListProjectVpcChannelsV2Request.
+        r"""Sets the members_return of this ListProjectVpcChannelsV2Request.
 
         是否返回后端实例列表
 

@@ -29,7 +29,7 @@ class SearchDepartmentByNameRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, dept_name=None):
-        """SearchDepartmentByNameRequest
+        r"""SearchDepartmentByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SearchDepartmentByNameRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchDepartmentByNameRequest.
+        r"""Gets the x_request_id of this SearchDepartmentByNameRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class SearchDepartmentByNameRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchDepartmentByNameRequest.
+        r"""Sets the x_request_id of this SearchDepartmentByNameRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class SearchDepartmentByNameRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchDepartmentByNameRequest.
+        r"""Gets the accept_language of this SearchDepartmentByNameRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class SearchDepartmentByNameRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchDepartmentByNameRequest.
+        r"""Sets the accept_language of this SearchDepartmentByNameRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class SearchDepartmentByNameRequest:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this SearchDepartmentByNameRequest.
+        r"""Gets the dept_name of this SearchDepartmentByNameRequest.
 
         部门名称。 长度： 1-128位。
 
@@ -111,7 +111,7 @@ class SearchDepartmentByNameRequest:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this SearchDepartmentByNameRequest.
+        r"""Sets the dept_name of this SearchDepartmentByNameRequest.
 
         部门名称。 长度： 1-128位。
 

@@ -25,7 +25,7 @@ class CreateSparkJobTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSparkJobTemplateRequest
+        r"""CreateSparkJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSparkJobTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSparkJobTemplateRequest.
+        r"""Gets the body of this CreateSparkJobTemplateRequest.
 
         :return: The body of this CreateSparkJobTemplateRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequestBody`
@@ -52,7 +52,7 @@ class CreateSparkJobTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSparkJobTemplateRequest.
+        r"""Sets the body of this CreateSparkJobTemplateRequest.
 
         :param body: The body of this CreateSparkJobTemplateRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateSparkJobTemplateRequestBody`

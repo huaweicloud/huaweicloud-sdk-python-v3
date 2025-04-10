@@ -29,7 +29,7 @@ class ListOffSiteRestoreTimesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, date=None):
-        """ListOffSiteRestoreTimesRequest
+        r"""ListOffSiteRestoreTimesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListOffSiteRestoreTimesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListOffSiteRestoreTimesRequest.
+        r"""Gets the x_language of this ListOffSiteRestoreTimesRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ListOffSiteRestoreTimesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListOffSiteRestoreTimesRequest.
+        r"""Sets the x_language of this ListOffSiteRestoreTimesRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ListOffSiteRestoreTimesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListOffSiteRestoreTimesRequest.
+        r"""Gets the instance_id of this ListOffSiteRestoreTimesRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ListOffSiteRestoreTimesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListOffSiteRestoreTimesRequest.
+        r"""Sets the instance_id of this ListOffSiteRestoreTimesRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ListOffSiteRestoreTimesRequest:
 
     @property
     def date(self):
-        """Gets the date of this ListOffSiteRestoreTimesRequest.
+        r"""Gets the date of this ListOffSiteRestoreTimesRequest.
 
         所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 
@@ -111,7 +111,7 @@ class ListOffSiteRestoreTimesRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListOffSiteRestoreTimesRequest.
+        r"""Sets the date of this ListOffSiteRestoreTimesRequest.
 
         所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 

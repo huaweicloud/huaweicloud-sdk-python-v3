@@ -25,7 +25,7 @@ class BindInstanceTags:
     }
 
     def __init__(self, tags=None):
-        """BindInstanceTags
+        r"""BindInstanceTags
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BindInstanceTags:
 
     @property
     def tags(self):
-        """Gets the tags of this BindInstanceTags.
+        r"""Gets the tags of this BindInstanceTags.
 
         实例标签
 
@@ -53,7 +53,7 @@ class BindInstanceTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BindInstanceTags.
+        r"""Sets the tags of this BindInstanceTags.
 
         实例标签
 

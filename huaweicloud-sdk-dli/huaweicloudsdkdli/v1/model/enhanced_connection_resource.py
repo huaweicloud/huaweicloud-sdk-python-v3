@@ -33,7 +33,7 @@ class EnhancedConnectionResource:
     }
 
     def __init__(self, peer_id=None, status=None, name=None, err_msg=None, update_time=None):
-        """EnhancedConnectionResource
+        r"""EnhancedConnectionResource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EnhancedConnectionResource:
 
     @property
     def peer_id(self):
-        """Gets the peer_id of this EnhancedConnectionResource.
+        r"""Gets the peer_id of this EnhancedConnectionResource.
 
         对等连接ID。
 
@@ -82,7 +82,7 @@ class EnhancedConnectionResource:
 
     @peer_id.setter
     def peer_id(self, peer_id):
-        """Sets the peer_id of this EnhancedConnectionResource.
+        r"""Sets the peer_id of this EnhancedConnectionResource.
 
         对等连接ID。
 
@@ -93,7 +93,7 @@ class EnhancedConnectionResource:
 
     @property
     def status(self):
-        """Gets the status of this EnhancedConnectionResource.
+        r"""Gets the status of this EnhancedConnectionResource.
 
         连接状态。CREATING：跨源连接正在创建中；ACTIVE：跨源连接创建成功，与目的地址连接正常；FAILED：跨源连接创建失败。
 
@@ -104,7 +104,7 @@ class EnhancedConnectionResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnhancedConnectionResource.
+        r"""Sets the status of this EnhancedConnectionResource.
 
         连接状态。CREATING：跨源连接正在创建中；ACTIVE：跨源连接创建成功，与目的地址连接正常；FAILED：跨源连接创建失败。
 
@@ -115,7 +115,7 @@ class EnhancedConnectionResource:
 
     @property
     def name(self):
-        """Gets the name of this EnhancedConnectionResource.
+        r"""Gets the name of this EnhancedConnectionResource.
 
         队列名称。
 
@@ -126,7 +126,7 @@ class EnhancedConnectionResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnhancedConnectionResource.
+        r"""Sets the name of this EnhancedConnectionResource.
 
         队列名称。
 
@@ -137,7 +137,7 @@ class EnhancedConnectionResource:
 
     @property
     def err_msg(self):
-        """Gets the err_msg of this EnhancedConnectionResource.
+        r"""Gets the err_msg of this EnhancedConnectionResource.
 
         状态为失败时的详细报错信息。
 
@@ -148,7 +148,7 @@ class EnhancedConnectionResource:
 
     @err_msg.setter
     def err_msg(self, err_msg):
-        """Sets the err_msg of this EnhancedConnectionResource.
+        r"""Sets the err_msg of this EnhancedConnectionResource.
 
         状态为失败时的详细报错信息。
 
@@ -159,7 +159,7 @@ class EnhancedConnectionResource:
 
     @property
     def update_time(self):
-        """Gets the update_time of this EnhancedConnectionResource.
+        r"""Gets the update_time of this EnhancedConnectionResource.
 
         更新时间。
 
@@ -170,7 +170,7 @@ class EnhancedConnectionResource:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this EnhancedConnectionResource.
+        r"""Sets the update_time of this EnhancedConnectionResource.
 
         更新时间。
 

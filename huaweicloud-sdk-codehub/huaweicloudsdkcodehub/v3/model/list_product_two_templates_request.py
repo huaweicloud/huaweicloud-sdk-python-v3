@@ -29,7 +29,7 @@ class ListProductTwoTemplatesRequest:
     }
 
     def __init__(self, project_uuid=None, page_no=None, page_size=None):
-        """ListProductTwoTemplatesRequest
+        r"""ListProductTwoTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProductTwoTemplatesRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ListProductTwoTemplatesRequest.
+        r"""Gets the project_uuid of this ListProductTwoTemplatesRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -67,7 +67,7 @@ class ListProductTwoTemplatesRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ListProductTwoTemplatesRequest.
+        r"""Sets the project_uuid of this ListProductTwoTemplatesRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -78,7 +78,7 @@ class ListProductTwoTemplatesRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListProductTwoTemplatesRequest.
+        r"""Gets the page_no of this ListProductTwoTemplatesRequest.
 
         分页页数
 
@@ -89,7 +89,7 @@ class ListProductTwoTemplatesRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListProductTwoTemplatesRequest.
+        r"""Sets the page_no of this ListProductTwoTemplatesRequest.
 
         分页页数
 
@@ -100,7 +100,7 @@ class ListProductTwoTemplatesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListProductTwoTemplatesRequest.
+        r"""Gets the page_size of this ListProductTwoTemplatesRequest.
 
         每页数据数
 
@@ -111,7 +111,7 @@ class ListProductTwoTemplatesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListProductTwoTemplatesRequest.
+        r"""Sets the page_size of this ListProductTwoTemplatesRequest.
 
         每页数据数
 

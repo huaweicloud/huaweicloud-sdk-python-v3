@@ -29,7 +29,7 @@ class MessageResult:
     }
 
     def __init__(self, status=None, created_time=None, finished_time=None):
-        """MessageResult
+        r"""MessageResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MessageResult:
 
     @property
     def status(self):
-        """Gets the status of this MessageResult.
+        r"""Gets the status of this MessageResult.
 
         消息状态, PENDING，DELIVERED，FAILED和TIMEOUT。如果设备不在线，则平台缓存消息，并且返回PENDING，等设备数据上报之后再下发；如果设备在线，则消息直接进行下发，下发成功后接口返回DELIVERED，失败返回FAILED；如果消息在平台默认时间内（1天）还没有下发给设备，则平台会将消息设置为超时，状态为TIMEOUT。另外应用可以订阅消息的执行结果，平台会将消息结果推送给订阅的应用。
 
@@ -68,7 +68,7 @@ class MessageResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MessageResult.
+        r"""Sets the status of this MessageResult.
 
         消息状态, PENDING，DELIVERED，FAILED和TIMEOUT。如果设备不在线，则平台缓存消息，并且返回PENDING，等设备数据上报之后再下发；如果设备在线，则消息直接进行下发，下发成功后接口返回DELIVERED，失败返回FAILED；如果消息在平台默认时间内（1天）还没有下发给设备，则平台会将消息设置为超时，状态为TIMEOUT。另外应用可以订阅消息的执行结果，平台会将消息结果推送给订阅的应用。
 
@@ -79,7 +79,7 @@ class MessageResult:
 
     @property
     def created_time(self):
-        """Gets the created_time of this MessageResult.
+        r"""Gets the created_time of this MessageResult.
 
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -90,7 +90,7 @@ class MessageResult:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this MessageResult.
+        r"""Sets the created_time of this MessageResult.
 
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -101,7 +101,7 @@ class MessageResult:
 
     @property
     def finished_time(self):
-        """Gets the finished_time of this MessageResult.
+        r"""Gets the finished_time of this MessageResult.
 
         消息结束时间, \"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串，包含消息转换到DELIVERED，FAILED和TIMEOUT状态的时间。
 
@@ -112,7 +112,7 @@ class MessageResult:
 
     @finished_time.setter
     def finished_time(self, finished_time):
-        """Sets the finished_time of this MessageResult.
+        r"""Sets the finished_time of this MessageResult.
 
         消息结束时间, \"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串，包含消息转换到DELIVERED，FAILED和TIMEOUT状态的时间。
 

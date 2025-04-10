@@ -26,7 +26,7 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
     }
 
     def __init__(self, nameservers=None):
-        """ShowPrivateZoneNameServerResponse
+        r"""ShowPrivateZoneNameServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
 
     @property
     def nameservers(self):
-        """Gets the nameservers of this ShowPrivateZoneNameServerResponse.
+        r"""Gets the nameservers of this ShowPrivateZoneNameServerResponse.
 
         名称服务器列表信息。
 
@@ -55,7 +55,7 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
 
     @nameservers.setter
     def nameservers(self, nameservers):
-        """Sets the nameservers of this ShowPrivateZoneNameServerResponse.
+        r"""Sets the nameservers of this ShowPrivateZoneNameServerResponse.
 
         名称服务器列表信息。
 

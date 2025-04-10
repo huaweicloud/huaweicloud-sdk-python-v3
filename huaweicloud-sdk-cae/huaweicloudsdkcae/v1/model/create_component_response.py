@@ -32,7 +32,7 @@ class CreateComponentResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
-        """CreateComponentResponse
+        r"""CreateComponentResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateComponentResponse.
+        r"""Gets the api_version of this CreateComponentResponse.
 
         :return: The api_version of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -74,7 +74,7 @@ class CreateComponentResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateComponentResponse.
+        r"""Sets the api_version of this CreateComponentResponse.
 
         :param api_version: The api_version of this CreateComponentResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -83,7 +83,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateComponentResponse.
+        r"""Gets the kind of this CreateComponentResponse.
 
         :return: The kind of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -92,7 +92,7 @@ class CreateComponentResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateComponentResponse.
+        r"""Sets the kind of this CreateComponentResponse.
 
         :param kind: The kind of this CreateComponentResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -101,7 +101,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateComponentResponse.
+        r"""Gets the metadata of this CreateComponentResponse.
 
         :return: The metadata of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.MetadataResponse`
@@ -110,7 +110,7 @@ class CreateComponentResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateComponentResponse.
+        r"""Sets the metadata of this CreateComponentResponse.
 
         :param metadata: The metadata of this CreateComponentResponse.
         :type metadata: :class:`huaweicloudsdkcae.v1.MetadataResponse`
@@ -119,7 +119,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateComponentResponse.
+        r"""Gets the spec of this CreateComponentResponse.
 
         :return: The spec of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentSpec`
@@ -128,7 +128,7 @@ class CreateComponentResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateComponentResponse.
+        r"""Sets the spec of this CreateComponentResponse.
 
         :param spec: The spec of this CreateComponentResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateComponentSpec`

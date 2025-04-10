@@ -28,7 +28,7 @@ class SwitchStrategyResponse(SdkResponse):
     }
 
     def __init__(self, status=None, rule_set_id=None):
-        """SwitchStrategyResponse
+        r"""SwitchStrategyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SwitchStrategyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SwitchStrategyResponse.
+        r"""Gets the status of this SwitchStrategyResponse.
 
         状态
 
@@ -62,7 +62,7 @@ class SwitchStrategyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SwitchStrategyResponse.
+        r"""Sets the status of this SwitchStrategyResponse.
 
         状态
 
@@ -73,7 +73,7 @@ class SwitchStrategyResponse(SdkResponse):
 
     @property
     def rule_set_id(self):
-        """Gets the rule_set_id of this SwitchStrategyResponse.
+        r"""Gets the rule_set_id of this SwitchStrategyResponse.
 
         策略ID
 
@@ -84,7 +84,7 @@ class SwitchStrategyResponse(SdkResponse):
 
     @rule_set_id.setter
     def rule_set_id(self, rule_set_id):
-        """Sets the rule_set_id of this SwitchStrategyResponse.
+        r"""Sets the rule_set_id of this SwitchStrategyResponse.
 
         策略ID
 

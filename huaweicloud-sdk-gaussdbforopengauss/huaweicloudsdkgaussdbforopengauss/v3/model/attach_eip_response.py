@@ -26,7 +26,7 @@ class AttachEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """AttachEipResponse
+        r"""AttachEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AttachEipResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AttachEipResponse.
+        r"""Gets the job_id of this AttachEipResponse.
 
         工作流id
 
@@ -55,7 +55,7 @@ class AttachEipResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AttachEipResponse.
+        r"""Sets the job_id of this AttachEipResponse.
 
         工作流id
 

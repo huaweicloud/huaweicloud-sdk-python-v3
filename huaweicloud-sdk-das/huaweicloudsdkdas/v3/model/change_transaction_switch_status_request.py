@@ -29,7 +29,7 @@ class ChangeTransactionSwitchStatusRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ChangeTransactionSwitchStatusRequest
+        r"""ChangeTransactionSwitchStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeTransactionSwitchStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeTransactionSwitchStatusRequest.
+        r"""Gets the instance_id of this ChangeTransactionSwitchStatusRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ChangeTransactionSwitchStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeTransactionSwitchStatusRequest.
+        r"""Sets the instance_id of this ChangeTransactionSwitchStatusRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ChangeTransactionSwitchStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeTransactionSwitchStatusRequest.
+        r"""Gets the x_language of this ChangeTransactionSwitchStatusRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ChangeTransactionSwitchStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeTransactionSwitchStatusRequest.
+        r"""Sets the x_language of this ChangeTransactionSwitchStatusRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ChangeTransactionSwitchStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeTransactionSwitchStatusRequest.
+        r"""Gets the body of this ChangeTransactionSwitchStatusRequest.
 
         :return: The body of this ChangeTransactionSwitchStatusRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.TransactionSwitchReq`
@@ -109,7 +109,7 @@ class ChangeTransactionSwitchStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeTransactionSwitchStatusRequest.
+        r"""Sets the body of this ChangeTransactionSwitchStatusRequest.
 
         :param body: The body of this ChangeTransactionSwitchStatusRequest.
         :type body: :class:`huaweicloudsdkdas.v3.TransactionSwitchReq`

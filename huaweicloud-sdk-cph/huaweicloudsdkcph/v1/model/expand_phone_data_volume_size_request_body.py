@@ -25,7 +25,7 @@ class ExpandPhoneDataVolumeSizeRequestBody:
     }
 
     def __init__(self, phones=None):
-        """ExpandPhoneDataVolumeSizeRequestBody
+        r"""ExpandPhoneDataVolumeSizeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExpandPhoneDataVolumeSizeRequestBody:
 
     @property
     def phones(self):
-        """Gets the phones of this ExpandPhoneDataVolumeSizeRequestBody.
+        r"""Gets the phones of this ExpandPhoneDataVolumeSizeRequestBody.
 
         云手机列表。
 
@@ -53,7 +53,7 @@ class ExpandPhoneDataVolumeSizeRequestBody:
 
     @phones.setter
     def phones(self, phones):
-        """Sets the phones of this ExpandPhoneDataVolumeSizeRequestBody.
+        r"""Sets the phones of this ExpandPhoneDataVolumeSizeRequestBody.
 
         云手机列表。
 

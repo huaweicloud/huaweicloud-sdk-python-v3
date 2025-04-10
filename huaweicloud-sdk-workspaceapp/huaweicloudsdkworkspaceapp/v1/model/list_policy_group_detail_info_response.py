@@ -28,7 +28,7 @@ class ListPolicyGroupDetailInfoResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListPolicyGroupDetailInfoResponse
+        r"""ListPolicyGroupDetailInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPolicyGroupDetailInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPolicyGroupDetailInfoResponse.
+        r"""Gets the count of this ListPolicyGroupDetailInfoResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListPolicyGroupDetailInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPolicyGroupDetailInfoResponse.
+        r"""Sets the count of this ListPolicyGroupDetailInfoResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListPolicyGroupDetailInfoResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPolicyGroupDetailInfoResponse.
+        r"""Gets the items of this ListPolicyGroupDetailInfoResponse.
 
         策略组列表，返回列表条目数量上限为分页的最大上限值。
 
@@ -84,7 +84,7 @@ class ListPolicyGroupDetailInfoResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPolicyGroupDetailInfoResponse.
+        r"""Sets the items of this ListPolicyGroupDetailInfoResponse.
 
         策略组列表，返回列表条目数量上限为分页的最大上限值。
 

@@ -28,7 +28,7 @@ class CreateInteractionRuleGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, x_request_id=None):
-        """CreateInteractionRuleGroupResponse
+        r"""CreateInteractionRuleGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateInteractionRuleGroupResponse.
+        r"""Gets the group_id of this CreateInteractionRuleGroupResponse.
 
         互动规则库ID
 
@@ -62,7 +62,7 @@ class CreateInteractionRuleGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateInteractionRuleGroupResponse.
+        r"""Sets the group_id of this CreateInteractionRuleGroupResponse.
 
         互动规则库ID
 
@@ -73,7 +73,7 @@ class CreateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateInteractionRuleGroupResponse.
+        r"""Gets the x_request_id of this CreateInteractionRuleGroupResponse.
 
         :return: The x_request_id of this CreateInteractionRuleGroupResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateInteractionRuleGroupResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateInteractionRuleGroupResponse.
+        r"""Sets the x_request_id of this CreateInteractionRuleGroupResponse.
 
         :param x_request_id: The x_request_id of this CreateInteractionRuleGroupResponse.
         :type x_request_id: str

@@ -35,7 +35,7 @@ class SmsApp:
     }
 
     def __init__(self, app_id=None, app_name=None, status=None, region=None, create_time=None, up_link_addr=None):
-        """SmsApp
+        r"""SmsApp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SmsApp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SmsApp.
+        r"""Gets the app_id of this SmsApp.
 
         应用ID，用于获取、修改应用的唯一标识。
 
@@ -89,7 +89,7 @@ class SmsApp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SmsApp.
+        r"""Sets the app_id of this SmsApp.
 
         应用ID，用于获取、修改应用的唯一标识。
 
@@ -100,7 +100,7 @@ class SmsApp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsApp.
+        r"""Gets the app_name of this SmsApp.
 
         应用名称。
 
@@ -111,7 +111,7 @@ class SmsApp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsApp.
+        r"""Sets the app_name of this SmsApp.
 
         应用名称。
 
@@ -122,7 +122,7 @@ class SmsApp:
 
     @property
     def status(self):
-        """Gets the status of this SmsApp.
+        r"""Gets the status of this SmsApp.
 
         状态。
 
@@ -133,7 +133,7 @@ class SmsApp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsApp.
+        r"""Sets the status of this SmsApp.
 
         状态。
 
@@ -144,7 +144,7 @@ class SmsApp:
 
     @property
     def region(self):
-        """Gets the region of this SmsApp.
+        r"""Gets the region of this SmsApp.
 
         地域。
 
@@ -155,7 +155,7 @@ class SmsApp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SmsApp.
+        r"""Sets the region of this SmsApp.
 
         地域。
 
@@ -166,7 +166,7 @@ class SmsApp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsApp.
+        r"""Gets the create_time of this SmsApp.
 
         创建时间，格式：yyyy-MM-dd'T'HH:mm:ss。
 
@@ -177,7 +177,7 @@ class SmsApp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsApp.
+        r"""Sets the create_time of this SmsApp.
 
         创建时间，格式：yyyy-MM-dd'T'HH:mm:ss。
 
@@ -188,7 +188,7 @@ class SmsApp:
 
     @property
     def up_link_addr(self):
-        """Gets the up_link_addr of this SmsApp.
+        r"""Gets the up_link_addr of this SmsApp.
 
         上行短信地址。
 
@@ -199,7 +199,7 @@ class SmsApp:
 
     @up_link_addr.setter
     def up_link_addr(self, up_link_addr):
-        """Sets the up_link_addr of this SmsApp.
+        r"""Sets the up_link_addr of this SmsApp.
 
         上行短信地址。
 

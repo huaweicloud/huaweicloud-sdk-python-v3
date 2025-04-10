@@ -67,7 +67,7 @@ class ProjectFieldConfigVo:
     }
 
     def __init__(self, uri=None, updator=None, description=None, custom_name=None, table_field_name=None, value_type=None, value_type_name=None, is_system=None, is_display=None, is_required=None, sort_numb=None, default_value=None, custom_field_uri=None, resource_type=None, creator=None, create_time_stamp=None, update_time_stamp=None, project_uuid=None, option_vos=None, custom_field_id=None, custom_field_name=None, custom_field_param=None):
-        """ProjectFieldConfigVo
+        r"""ProjectFieldConfigVo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ProjectFieldConfigVo:
 
     @property
     def uri(self):
-        """Gets the uri of this ProjectFieldConfigVo.
+        r"""Gets the uri of this ProjectFieldConfigVo.
 
         字段配置URI标识
 
@@ -201,7 +201,7 @@ class ProjectFieldConfigVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ProjectFieldConfigVo.
+        r"""Sets the uri of this ProjectFieldConfigVo.
 
         字段配置URI标识
 
@@ -212,7 +212,7 @@ class ProjectFieldConfigVo:
 
     @property
     def updator(self):
-        """Gets the updator of this ProjectFieldConfigVo.
+        r"""Gets the updator of this ProjectFieldConfigVo.
 
         :return: The updator of this ProjectFieldConfigVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -221,7 +221,7 @@ class ProjectFieldConfigVo:
 
     @updator.setter
     def updator(self, updator):
-        """Sets the updator of this ProjectFieldConfigVo.
+        r"""Sets the updator of this ProjectFieldConfigVo.
 
         :param updator: The updator of this ProjectFieldConfigVo.
         :type updator: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -230,7 +230,7 @@ class ProjectFieldConfigVo:
 
     @property
     def description(self):
-        """Gets the description of this ProjectFieldConfigVo.
+        r"""Gets the description of this ProjectFieldConfigVo.
 
         描述
 
@@ -241,7 +241,7 @@ class ProjectFieldConfigVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectFieldConfigVo.
+        r"""Sets the description of this ProjectFieldConfigVo.
 
         描述
 
@@ -252,7 +252,7 @@ class ProjectFieldConfigVo:
 
     @property
     def custom_name(self):
-        """Gets the custom_name of this ProjectFieldConfigVo.
+        r"""Gets the custom_name of this ProjectFieldConfigVo.
 
         项目用例自定义字段名称
 
@@ -263,7 +263,7 @@ class ProjectFieldConfigVo:
 
     @custom_name.setter
     def custom_name(self, custom_name):
-        """Sets the custom_name of this ProjectFieldConfigVo.
+        r"""Sets the custom_name of this ProjectFieldConfigVo.
 
         项目用例自定义字段名称
 
@@ -274,7 +274,7 @@ class ProjectFieldConfigVo:
 
     @property
     def table_field_name(self):
-        """Gets the table_field_name of this ProjectFieldConfigVo.
+        r"""Gets the table_field_name of this ProjectFieldConfigVo.
 
         字段名（对应后端参数名）
 
@@ -285,7 +285,7 @@ class ProjectFieldConfigVo:
 
     @table_field_name.setter
     def table_field_name(self, table_field_name):
-        """Sets the table_field_name of this ProjectFieldConfigVo.
+        r"""Sets the table_field_name of this ProjectFieldConfigVo.
 
         字段名（对应后端参数名）
 
@@ -296,7 +296,7 @@ class ProjectFieldConfigVo:
 
     @property
     def value_type(self):
-        """Gets the value_type of this ProjectFieldConfigVo.
+        r"""Gets the value_type of this ProjectFieldConfigVo.
 
         字段类型(单行文本text、多行文本textArea、单选框radio、多选框checkbox、日期date、数字number、用户user)。
 
@@ -307,7 +307,7 @@ class ProjectFieldConfigVo:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this ProjectFieldConfigVo.
+        r"""Sets the value_type of this ProjectFieldConfigVo.
 
         字段类型(单行文本text、多行文本textArea、单选框radio、多选框checkbox、日期date、数字number、用户user)。
 
@@ -318,7 +318,7 @@ class ProjectFieldConfigVo:
 
     @property
     def value_type_name(self):
-        """Gets the value_type_name of this ProjectFieldConfigVo.
+        r"""Gets the value_type_name of this ProjectFieldConfigVo.
 
         字段类型国际化名称
 
@@ -329,7 +329,7 @@ class ProjectFieldConfigVo:
 
     @value_type_name.setter
     def value_type_name(self, value_type_name):
-        """Sets the value_type_name of this ProjectFieldConfigVo.
+        r"""Sets the value_type_name of this ProjectFieldConfigVo.
 
         字段类型国际化名称
 
@@ -340,7 +340,7 @@ class ProjectFieldConfigVo:
 
     @property
     def is_system(self):
-        """Gets the is_system of this ProjectFieldConfigVo.
+        r"""Gets the is_system of this ProjectFieldConfigVo.
 
         是否系统字段
 
@@ -351,7 +351,7 @@ class ProjectFieldConfigVo:
 
     @is_system.setter
     def is_system(self, is_system):
-        """Sets the is_system of this ProjectFieldConfigVo.
+        r"""Sets the is_system of this ProjectFieldConfigVo.
 
         是否系统字段
 
@@ -362,7 +362,7 @@ class ProjectFieldConfigVo:
 
     @property
     def is_display(self):
-        """Gets the is_display of this ProjectFieldConfigVo.
+        r"""Gets the is_display of this ProjectFieldConfigVo.
 
         是否显示
 
@@ -373,7 +373,7 @@ class ProjectFieldConfigVo:
 
     @is_display.setter
     def is_display(self, is_display):
-        """Sets the is_display of this ProjectFieldConfigVo.
+        r"""Sets the is_display of this ProjectFieldConfigVo.
 
         是否显示
 
@@ -384,7 +384,7 @@ class ProjectFieldConfigVo:
 
     @property
     def is_required(self):
-        """Gets the is_required of this ProjectFieldConfigVo.
+        r"""Gets the is_required of this ProjectFieldConfigVo.
 
         是否必填
 
@@ -395,7 +395,7 @@ class ProjectFieldConfigVo:
 
     @is_required.setter
     def is_required(self, is_required):
-        """Sets the is_required of this ProjectFieldConfigVo.
+        r"""Sets the is_required of this ProjectFieldConfigVo.
 
         是否必填
 
@@ -406,7 +406,7 @@ class ProjectFieldConfigVo:
 
     @property
     def sort_numb(self):
-        """Gets the sort_numb of this ProjectFieldConfigVo.
+        r"""Gets the sort_numb of this ProjectFieldConfigVo.
 
         顺序数值
 
@@ -417,7 +417,7 @@ class ProjectFieldConfigVo:
 
     @sort_numb.setter
     def sort_numb(self, sort_numb):
-        """Sets the sort_numb of this ProjectFieldConfigVo.
+        r"""Sets the sort_numb of this ProjectFieldConfigVo.
 
         顺序数值
 
@@ -428,7 +428,7 @@ class ProjectFieldConfigVo:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ProjectFieldConfigVo.
+        r"""Gets the default_value of this ProjectFieldConfigVo.
 
         默认值
 
@@ -439,7 +439,7 @@ class ProjectFieldConfigVo:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ProjectFieldConfigVo.
+        r"""Sets the default_value of this ProjectFieldConfigVo.
 
         默认值
 
@@ -450,7 +450,7 @@ class ProjectFieldConfigVo:
 
     @property
     def custom_field_uri(self):
-        """Gets the custom_field_uri of this ProjectFieldConfigVo.
+        r"""Gets the custom_field_uri of this ProjectFieldConfigVo.
 
         扩展字段uri(用于连表查扩展字段)
 
@@ -461,7 +461,7 @@ class ProjectFieldConfigVo:
 
     @custom_field_uri.setter
     def custom_field_uri(self, custom_field_uri):
-        """Sets the custom_field_uri of this ProjectFieldConfigVo.
+        r"""Sets the custom_field_uri of this ProjectFieldConfigVo.
 
         扩展字段uri(用于连表查扩展字段)
 
@@ -472,7 +472,7 @@ class ProjectFieldConfigVo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProjectFieldConfigVo.
+        r"""Gets the resource_type of this ProjectFieldConfigVo.
 
         资源类型
 
@@ -483,7 +483,7 @@ class ProjectFieldConfigVo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProjectFieldConfigVo.
+        r"""Sets the resource_type of this ProjectFieldConfigVo.
 
         资源类型
 
@@ -494,7 +494,7 @@ class ProjectFieldConfigVo:
 
     @property
     def creator(self):
-        """Gets the creator of this ProjectFieldConfigVo.
+        r"""Gets the creator of this ProjectFieldConfigVo.
 
         :return: The creator of this ProjectFieldConfigVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -503,7 +503,7 @@ class ProjectFieldConfigVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ProjectFieldConfigVo.
+        r"""Sets the creator of this ProjectFieldConfigVo.
 
         :param creator: The creator of this ProjectFieldConfigVo.
         :type creator: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -512,7 +512,7 @@ class ProjectFieldConfigVo:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this ProjectFieldConfigVo.
+        r"""Gets the create_time_stamp of this ProjectFieldConfigVo.
 
         创建时间时间戳
 
@@ -523,7 +523,7 @@ class ProjectFieldConfigVo:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this ProjectFieldConfigVo.
+        r"""Sets the create_time_stamp of this ProjectFieldConfigVo.
 
         创建时间时间戳
 
@@ -534,7 +534,7 @@ class ProjectFieldConfigVo:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this ProjectFieldConfigVo.
+        r"""Gets the update_time_stamp of this ProjectFieldConfigVo.
 
         更新时间时间戳
 
@@ -545,7 +545,7 @@ class ProjectFieldConfigVo:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this ProjectFieldConfigVo.
+        r"""Sets the update_time_stamp of this ProjectFieldConfigVo.
 
         更新时间时间戳
 
@@ -556,7 +556,7 @@ class ProjectFieldConfigVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ProjectFieldConfigVo.
+        r"""Gets the project_uuid of this ProjectFieldConfigVo.
 
         项目ID
 
@@ -567,7 +567,7 @@ class ProjectFieldConfigVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ProjectFieldConfigVo.
+        r"""Sets the project_uuid of this ProjectFieldConfigVo.
 
         项目ID
 
@@ -578,7 +578,7 @@ class ProjectFieldConfigVo:
 
     @property
     def option_vos(self):
-        """Gets the option_vos of this ProjectFieldConfigVo.
+        r"""Gets the option_vos of this ProjectFieldConfigVo.
 
         可选项
 
@@ -589,7 +589,7 @@ class ProjectFieldConfigVo:
 
     @option_vos.setter
     def option_vos(self, option_vos):
-        """Sets the option_vos of this ProjectFieldConfigVo.
+        r"""Sets the option_vos of this ProjectFieldConfigVo.
 
         可选项
 
@@ -600,7 +600,7 @@ class ProjectFieldConfigVo:
 
     @property
     def custom_field_id(self):
-        """Gets the custom_field_id of this ProjectFieldConfigVo.
+        r"""Gets the custom_field_id of this ProjectFieldConfigVo.
 
         项目用例自定义字段id（1-25数字）
 
@@ -611,7 +611,7 @@ class ProjectFieldConfigVo:
 
     @custom_field_id.setter
     def custom_field_id(self, custom_field_id):
-        """Sets the custom_field_id of this ProjectFieldConfigVo.
+        r"""Sets the custom_field_id of this ProjectFieldConfigVo.
 
         项目用例自定义字段id（1-25数字）
 
@@ -622,7 +622,7 @@ class ProjectFieldConfigVo:
 
     @property
     def custom_field_name(self):
-        """Gets the custom_field_name of this ProjectFieldConfigVo.
+        r"""Gets the custom_field_name of this ProjectFieldConfigVo.
 
         项目用例自定义字段名称
 
@@ -633,7 +633,7 @@ class ProjectFieldConfigVo:
 
     @custom_field_name.setter
     def custom_field_name(self, custom_field_name):
-        """Sets the custom_field_name of this ProjectFieldConfigVo.
+        r"""Sets the custom_field_name of this ProjectFieldConfigVo.
 
         项目用例自定义字段名称
 
@@ -644,7 +644,7 @@ class ProjectFieldConfigVo:
 
     @property
     def custom_field_param(self):
-        """Gets the custom_field_param of this ProjectFieldConfigVo.
+        r"""Gets the custom_field_param of this ProjectFieldConfigVo.
 
         项目用例自定义字段入参或者返回参数名称
 
@@ -655,7 +655,7 @@ class ProjectFieldConfigVo:
 
     @custom_field_param.setter
     def custom_field_param(self, custom_field_param):
-        """Sets the custom_field_param of this ProjectFieldConfigVo.
+        r"""Sets the custom_field_param of this ProjectFieldConfigVo.
 
         项目用例自定义字段入参或者返回参数名称
 

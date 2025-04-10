@@ -25,7 +25,7 @@ class ExpandGraphReqExpand:
     }
 
     def __init__(self, replication=None):
-        """ExpandGraphReqExpand
+        r"""ExpandGraphReqExpand
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExpandGraphReqExpand:
 
     @property
     def replication(self):
-        """Gets the replication of this ExpandGraphReqExpand.
+        r"""Gets the replication of this ExpandGraphReqExpand.
 
         新扩副本数量。
 
@@ -53,7 +53,7 @@ class ExpandGraphReqExpand:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this ExpandGraphReqExpand.
+        r"""Sets the replication of this ExpandGraphReqExpand.
 
         新扩副本数量。
 

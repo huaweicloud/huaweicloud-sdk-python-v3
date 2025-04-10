@@ -25,7 +25,7 @@ class ResponseData:
     }
 
     def __init__(self, id=None):
-        """ResponseData
+        r"""ResponseData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResponseData:
 
     @property
     def id(self):
-        """Gets the id of this ResponseData.
+        r"""Gets the id of this ResponseData.
 
         数据id
 
@@ -54,7 +54,7 @@ class ResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseData.
+        r"""Sets the id of this ResponseData.
 
         数据id
 

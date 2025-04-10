@@ -27,7 +27,7 @@ class ChangeBaremetalServerOsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ChangeBaremetalServerOsRequest
+        r"""ChangeBaremetalServerOsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeBaremetalServerOsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeBaremetalServerOsRequest.
+        r"""Gets the server_id of this ChangeBaremetalServerOsRequest.
 
         裸金属服务器ID
 
@@ -60,7 +60,7 @@ class ChangeBaremetalServerOsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeBaremetalServerOsRequest.
+        r"""Sets the server_id of this ChangeBaremetalServerOsRequest.
 
         裸金属服务器ID
 
@@ -71,7 +71,7 @@ class ChangeBaremetalServerOsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeBaremetalServerOsRequest.
+        r"""Gets the body of this ChangeBaremetalServerOsRequest.
 
         :return: The body of this ChangeBaremetalServerOsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.OSChangeReq`
@@ -80,7 +80,7 @@ class ChangeBaremetalServerOsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeBaremetalServerOsRequest.
+        r"""Sets the body of this ChangeBaremetalServerOsRequest.
 
         :param body: The body of this ChangeBaremetalServerOsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.OSChangeReq`

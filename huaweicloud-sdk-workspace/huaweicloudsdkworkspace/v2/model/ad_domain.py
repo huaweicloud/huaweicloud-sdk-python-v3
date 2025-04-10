@@ -49,7 +49,7 @@ class AdDomain:
     }
 
     def __init__(self, domain_type=None, domain_name=None, domain_admin_account=None, domain_password=None, active_domain_ip=None, active_domain_name=None, standby_domain_ip=None, standby_domain_name=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None):
-        """AdDomain
+        r"""AdDomain
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class AdDomain:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this AdDomain.
+        r"""Gets the domain_type of this AdDomain.
 
         域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
 
@@ -137,7 +137,7 @@ class AdDomain:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this AdDomain.
+        r"""Sets the domain_type of this AdDomain.
 
         域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与AD所属网络可连通。
 
@@ -148,7 +148,7 @@ class AdDomain:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AdDomain.
+        r"""Gets the domain_name of this AdDomain.
 
         域名称。域类型为LOCAL_AD时需要配置。 域名必须为AD服务器上已经存在的域名，且长度不超过55。
 
@@ -159,7 +159,7 @@ class AdDomain:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AdDomain.
+        r"""Sets the domain_name of this AdDomain.
 
         域名称。域类型为LOCAL_AD时需要配置。 域名必须为AD服务器上已经存在的域名，且长度不超过55。
 
@@ -170,7 +170,7 @@ class AdDomain:
 
     @property
     def domain_admin_account(self):
-        """Gets the domain_admin_account of this AdDomain.
+        r"""Gets the domain_admin_account of this AdDomain.
 
         域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
 
@@ -181,7 +181,7 @@ class AdDomain:
 
     @domain_admin_account.setter
     def domain_admin_account(self, domain_admin_account):
-        """Sets the domain_admin_account of this AdDomain.
+        r"""Sets the domain_admin_account of this AdDomain.
 
         域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
 
@@ -192,7 +192,7 @@ class AdDomain:
 
     @property
     def domain_password(self):
-        """Gets the domain_password of this AdDomain.
+        r"""Gets the domain_password of this AdDomain.
 
         域管理员账号密码。域类型为LOCAL_AD时需要配置。
 
@@ -203,7 +203,7 @@ class AdDomain:
 
     @domain_password.setter
     def domain_password(self, domain_password):
-        """Sets the domain_password of this AdDomain.
+        r"""Sets the domain_password of this AdDomain.
 
         域管理员账号密码。域类型为LOCAL_AD时需要配置。
 
@@ -214,7 +214,7 @@ class AdDomain:
 
     @property
     def active_domain_ip(self):
-        """Gets the active_domain_ip of this AdDomain.
+        r"""Gets the active_domain_ip of this AdDomain.
 
         主域控制器IP地址。域类型为LOCAL_AD时需要配置。
 
@@ -225,7 +225,7 @@ class AdDomain:
 
     @active_domain_ip.setter
     def active_domain_ip(self, active_domain_ip):
-        """Sets the active_domain_ip of this AdDomain.
+        r"""Sets the active_domain_ip of this AdDomain.
 
         主域控制器IP地址。域类型为LOCAL_AD时需要配置。
 
@@ -236,7 +236,7 @@ class AdDomain:
 
     @property
     def active_domain_name(self):
-        """Gets the active_domain_name of this AdDomain.
+        r"""Gets the active_domain_name of this AdDomain.
 
         主域控制器名称。域类型为LOCAL_AD时需要配置。
 
@@ -247,7 +247,7 @@ class AdDomain:
 
     @active_domain_name.setter
     def active_domain_name(self, active_domain_name):
-        """Sets the active_domain_name of this AdDomain.
+        r"""Sets the active_domain_name of this AdDomain.
 
         主域控制器名称。域类型为LOCAL_AD时需要配置。
 
@@ -258,7 +258,7 @@ class AdDomain:
 
     @property
     def standby_domain_ip(self):
-        """Gets the standby_domain_ip of this AdDomain.
+        r"""Gets the standby_domain_ip of this AdDomain.
 
         备域控制器IP地址。域类型为LOCAL_AD时且配置备节点时需要配置。
 
@@ -269,7 +269,7 @@ class AdDomain:
 
     @standby_domain_ip.setter
     def standby_domain_ip(self, standby_domain_ip):
-        """Sets the standby_domain_ip of this AdDomain.
+        r"""Sets the standby_domain_ip of this AdDomain.
 
         备域控制器IP地址。域类型为LOCAL_AD时且配置备节点时需要配置。
 
@@ -280,7 +280,7 @@ class AdDomain:
 
     @property
     def standby_domain_name(self):
-        """Gets the standby_domain_name of this AdDomain.
+        r"""Gets the standby_domain_name of this AdDomain.
 
         备域控制器名称。域类型为LOCAL_AD时且配置备节点时需要配置。
 
@@ -291,7 +291,7 @@ class AdDomain:
 
     @standby_domain_name.setter
     def standby_domain_name(self, standby_domain_name):
-        """Sets the standby_domain_name of this AdDomain.
+        r"""Sets the standby_domain_name of this AdDomain.
 
         备域控制器名称。域类型为LOCAL_AD时且配置备节点时需要配置。
 
@@ -302,7 +302,7 @@ class AdDomain:
 
     @property
     def active_dns_ip(self):
-        """Gets the active_dns_ip of this AdDomain.
+        r"""Gets the active_dns_ip of this AdDomain.
 
         主DNS IP地址。域类型为LOCAL_AD时需要配置。
 
@@ -313,7 +313,7 @@ class AdDomain:
 
     @active_dns_ip.setter
     def active_dns_ip(self, active_dns_ip):
-        """Sets the active_dns_ip of this AdDomain.
+        r"""Sets the active_dns_ip of this AdDomain.
 
         主DNS IP地址。域类型为LOCAL_AD时需要配置。
 
@@ -324,7 +324,7 @@ class AdDomain:
 
     @property
     def standby_dns_ip(self):
-        """Gets the standby_dns_ip of this AdDomain.
+        r"""Gets the standby_dns_ip of this AdDomain.
 
         备DNS IP地址。域类型为LOCAL_AD时且配置备节点时需要配置。
 
@@ -335,7 +335,7 @@ class AdDomain:
 
     @standby_dns_ip.setter
     def standby_dns_ip(self, standby_dns_ip):
-        """Sets the standby_dns_ip of this AdDomain.
+        r"""Sets the standby_dns_ip of this AdDomain.
 
         备DNS IP地址。域类型为LOCAL_AD时且配置备节点时需要配置。
 
@@ -346,7 +346,7 @@ class AdDomain:
 
     @property
     def delete_computer_object(self):
-        """Gets the delete_computer_object of this AdDomain.
+        r"""Gets the delete_computer_object of this AdDomain.
 
         是否在删除桌面的同时删除AD上对应的计算机对象，0代表不删除，1代表删除。
 
@@ -357,7 +357,7 @@ class AdDomain:
 
     @delete_computer_object.setter
     def delete_computer_object(self, delete_computer_object):
-        """Sets the delete_computer_object of this AdDomain.
+        r"""Sets the delete_computer_object of this AdDomain.
 
         是否在删除桌面的同时删除AD上对应的计算机对象，0代表不删除，1代表删除。
 
@@ -368,7 +368,7 @@ class AdDomain:
 
     @property
     def use_ldaps(self):
-        """Gets the use_ldaps of this AdDomain.
+        r"""Gets the use_ldaps of this AdDomain.
 
         是否开启LDAPS。
 
@@ -379,7 +379,7 @@ class AdDomain:
 
     @use_ldaps.setter
     def use_ldaps(self, use_ldaps):
-        """Sets the use_ldaps of this AdDomain.
+        r"""Sets the use_ldaps of this AdDomain.
 
         是否开启LDAPS。
 
@@ -390,7 +390,7 @@ class AdDomain:
 
     @property
     def tls_config(self):
-        """Gets the tls_config of this AdDomain.
+        r"""Gets the tls_config of this AdDomain.
 
         :return: The tls_config of this AdDomain.
         :rtype: :class:`huaweicloudsdkworkspace.v2.TlsConfig`
@@ -399,7 +399,7 @@ class AdDomain:
 
     @tls_config.setter
     def tls_config(self, tls_config):
-        """Sets the tls_config of this AdDomain.
+        r"""Sets the tls_config of this AdDomain.
 
         :param tls_config: The tls_config of this AdDomain.
         :type tls_config: :class:`huaweicloudsdkworkspace.v2.TlsConfig`

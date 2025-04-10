@@ -25,7 +25,7 @@ class BatchDeleteCn:
     }
 
     def __init__(self, instances=None):
-        """BatchDeleteCn
+        r"""BatchDeleteCn
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteCn:
 
     @property
     def instances(self):
-        """Gets the instances of this BatchDeleteCn.
+        r"""Gets the instances of this BatchDeleteCn.
 
         批量删除CN节点ID
 
@@ -54,7 +54,7 @@ class BatchDeleteCn:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this BatchDeleteCn.
+        r"""Sets the instances of this BatchDeleteCn.
 
         批量删除CN节点ID
 

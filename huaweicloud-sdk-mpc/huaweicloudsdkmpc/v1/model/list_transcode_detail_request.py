@@ -25,7 +25,7 @@ class ListTranscodeDetailRequest:
     }
 
     def __init__(self, task_id=None):
-        """ListTranscodeDetailRequest
+        r"""ListTranscodeDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTranscodeDetailRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTranscodeDetailRequest.
+        r"""Gets the task_id of this ListTranscodeDetailRequest.
 
         转码服务接受任务后产生的任务ID。一次最多10个 
 
@@ -54,7 +54,7 @@ class ListTranscodeDetailRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTranscodeDetailRequest.
+        r"""Sets the task_id of this ListTranscodeDetailRequest.
 
         转码服务接受任务后产生的任务ID。一次最多10个 
 

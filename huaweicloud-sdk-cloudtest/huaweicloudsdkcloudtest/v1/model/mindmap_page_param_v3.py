@@ -47,7 +47,7 @@ class MindmapPageParamV3:
     }
 
     def __init__(self, folder_id_collection=None, creator_num_collection=None, updater_num_collection=None, folder_root_id=None, id_collection=None, offset=None, limit=None, name=None, project_id=None, branch_uri=None, is_master=None, iterator_uri=None):
-        """MindmapPageParamV3
+        r"""MindmapPageParamV3
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class MindmapPageParamV3:
 
     @property
     def folder_id_collection(self):
-        """Gets the folder_id_collection of this MindmapPageParamV3.
+        r"""Gets the folder_id_collection of this MindmapPageParamV3.
 
         目录ID集合
 
@@ -130,7 +130,7 @@ class MindmapPageParamV3:
 
     @folder_id_collection.setter
     def folder_id_collection(self, folder_id_collection):
-        """Sets the folder_id_collection of this MindmapPageParamV3.
+        r"""Sets the folder_id_collection of this MindmapPageParamV3.
 
         目录ID集合
 
@@ -141,7 +141,7 @@ class MindmapPageParamV3:
 
     @property
     def creator_num_collection(self):
-        """Gets the creator_num_collection of this MindmapPageParamV3.
+        r"""Gets the creator_num_collection of this MindmapPageParamV3.
 
         创建者ID集合
 
@@ -152,7 +152,7 @@ class MindmapPageParamV3:
 
     @creator_num_collection.setter
     def creator_num_collection(self, creator_num_collection):
-        """Sets the creator_num_collection of this MindmapPageParamV3.
+        r"""Sets the creator_num_collection of this MindmapPageParamV3.
 
         创建者ID集合
 
@@ -163,7 +163,7 @@ class MindmapPageParamV3:
 
     @property
     def updater_num_collection(self):
-        """Gets the updater_num_collection of this MindmapPageParamV3.
+        r"""Gets the updater_num_collection of this MindmapPageParamV3.
 
         更新人ID集合
 
@@ -174,7 +174,7 @@ class MindmapPageParamV3:
 
     @updater_num_collection.setter
     def updater_num_collection(self, updater_num_collection):
-        """Sets the updater_num_collection of this MindmapPageParamV3.
+        r"""Sets the updater_num_collection of this MindmapPageParamV3.
 
         更新人ID集合
 
@@ -185,7 +185,7 @@ class MindmapPageParamV3:
 
     @property
     def folder_root_id(self):
-        """Gets the folder_root_id of this MindmapPageParamV3.
+        r"""Gets the folder_root_id of this MindmapPageParamV3.
 
         根目录ID
 
@@ -196,7 +196,7 @@ class MindmapPageParamV3:
 
     @folder_root_id.setter
     def folder_root_id(self, folder_root_id):
-        """Sets the folder_root_id of this MindmapPageParamV3.
+        r"""Sets the folder_root_id of this MindmapPageParamV3.
 
         根目录ID
 
@@ -207,7 +207,7 @@ class MindmapPageParamV3:
 
     @property
     def id_collection(self):
-        """Gets the id_collection of this MindmapPageParamV3.
+        r"""Gets the id_collection of this MindmapPageParamV3.
 
         主键ID集合
 
@@ -218,7 +218,7 @@ class MindmapPageParamV3:
 
     @id_collection.setter
     def id_collection(self, id_collection):
-        """Sets the id_collection of this MindmapPageParamV3.
+        r"""Sets the id_collection of this MindmapPageParamV3.
 
         主键ID集合
 
@@ -229,7 +229,7 @@ class MindmapPageParamV3:
 
     @property
     def offset(self):
-        """Gets the offset of this MindmapPageParamV3.
+        r"""Gets the offset of this MindmapPageParamV3.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -240,7 +240,7 @@ class MindmapPageParamV3:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this MindmapPageParamV3.
+        r"""Sets the offset of this MindmapPageParamV3.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -251,7 +251,7 @@ class MindmapPageParamV3:
 
     @property
     def limit(self):
-        """Gets the limit of this MindmapPageParamV3.
+        r"""Gets the limit of this MindmapPageParamV3.
 
         每页显示的条目数量，最大支持200条
 
@@ -262,7 +262,7 @@ class MindmapPageParamV3:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this MindmapPageParamV3.
+        r"""Sets the limit of this MindmapPageParamV3.
 
         每页显示的条目数量，最大支持200条
 
@@ -273,7 +273,7 @@ class MindmapPageParamV3:
 
     @property
     def name(self):
-        """Gets the name of this MindmapPageParamV3.
+        r"""Gets the name of this MindmapPageParamV3.
 
         脑图名称
 
@@ -284,7 +284,7 @@ class MindmapPageParamV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MindmapPageParamV3.
+        r"""Sets the name of this MindmapPageParamV3.
 
         脑图名称
 
@@ -295,7 +295,7 @@ class MindmapPageParamV3:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MindmapPageParamV3.
+        r"""Gets the project_id of this MindmapPageParamV3.
 
         项目ID
 
@@ -306,7 +306,7 @@ class MindmapPageParamV3:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MindmapPageParamV3.
+        r"""Sets the project_id of this MindmapPageParamV3.
 
         项目ID
 
@@ -317,7 +317,7 @@ class MindmapPageParamV3:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this MindmapPageParamV3.
+        r"""Gets the branch_uri of this MindmapPageParamV3.
 
         分支uri
 
@@ -328,7 +328,7 @@ class MindmapPageParamV3:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this MindmapPageParamV3.
+        r"""Sets the branch_uri of this MindmapPageParamV3.
 
         分支uri
 
@@ -339,7 +339,7 @@ class MindmapPageParamV3:
 
     @property
     def is_master(self):
-        """Gets the is_master of this MindmapPageParamV3.
+        r"""Gets the is_master of this MindmapPageParamV3.
 
         是否基线
 
@@ -350,7 +350,7 @@ class MindmapPageParamV3:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this MindmapPageParamV3.
+        r"""Sets the is_master of this MindmapPageParamV3.
 
         是否基线
 
@@ -361,7 +361,7 @@ class MindmapPageParamV3:
 
     @property
     def iterator_uri(self):
-        """Gets the iterator_uri of this MindmapPageParamV3.
+        r"""Gets the iterator_uri of this MindmapPageParamV3.
 
         计划uri
 
@@ -372,7 +372,7 @@ class MindmapPageParamV3:
 
     @iterator_uri.setter
     def iterator_uri(self, iterator_uri):
-        """Sets the iterator_uri of this MindmapPageParamV3.
+        r"""Sets the iterator_uri of this MindmapPageParamV3.
 
         计划uri
 

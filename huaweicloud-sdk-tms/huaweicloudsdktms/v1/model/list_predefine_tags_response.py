@@ -30,7 +30,7 @@ class ListPredefineTagsResponse(SdkResponse):
     }
 
     def __init__(self, marker=None, total_count=None, tags=None):
-        """ListPredefineTagsResponse
+        r"""ListPredefineTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPredefineTagsResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListPredefineTagsResponse.
+        r"""Gets the marker of this ListPredefineTagsResponse.
 
         分页位置标识（索引）。
 
@@ -69,7 +69,7 @@ class ListPredefineTagsResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPredefineTagsResponse.
+        r"""Sets the marker of this ListPredefineTagsResponse.
 
         分页位置标识（索引）。
 
@@ -80,7 +80,7 @@ class ListPredefineTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPredefineTagsResponse.
+        r"""Gets the total_count of this ListPredefineTagsResponse.
 
         查询到的标签总数
 
@@ -91,7 +91,7 @@ class ListPredefineTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPredefineTagsResponse.
+        r"""Sets the total_count of this ListPredefineTagsResponse.
 
         查询到的标签总数
 
@@ -102,7 +102,7 @@ class ListPredefineTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListPredefineTagsResponse.
+        r"""Gets the tags of this ListPredefineTagsResponse.
 
         查询到的标签列表
 
@@ -113,7 +113,7 @@ class ListPredefineTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPredefineTagsResponse.
+        r"""Sets the tags of this ListPredefineTagsResponse.
 
         查询到的标签列表
 

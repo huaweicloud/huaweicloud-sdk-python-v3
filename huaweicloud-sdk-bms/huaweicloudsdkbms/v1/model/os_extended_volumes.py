@@ -27,7 +27,7 @@ class OsExtendedVolumes:
     }
 
     def __init__(self, id=None, delete_on_termination=None):
-        """OsExtendedVolumes
+        r"""OsExtendedVolumes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OsExtendedVolumes:
 
     @property
     def id(self):
-        """Gets the id of this OsExtendedVolumes.
+        r"""Gets the id of this OsExtendedVolumes.
 
         云硬盘ID
 
@@ -61,7 +61,7 @@ class OsExtendedVolumes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OsExtendedVolumes.
+        r"""Sets the id of this OsExtendedVolumes.
 
         云硬盘ID
 
@@ -72,7 +72,7 @@ class OsExtendedVolumes:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this OsExtendedVolumes.
+        r"""Gets the delete_on_termination of this OsExtendedVolumes.
 
         删裸金属服务器时是否一并删除该卷。true：是false：否
 
@@ -83,7 +83,7 @@ class OsExtendedVolumes:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this OsExtendedVolumes.
+        r"""Sets the delete_on_termination of this OsExtendedVolumes.
 
         删裸金属服务器时是否一并删除该卷。true：是false：否
 

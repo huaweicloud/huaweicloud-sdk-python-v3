@@ -41,11 +41,11 @@ class ListHostVulsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, type=None, vul_name=None, limit=None, offset=None, handle_status=None, status=None, repair_priority=None):
-        """ListHostVulsRequest
+        r"""ListHostVulsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_id: 服务器id
         :type host_id: str
@@ -98,9 +98,9 @@ class ListHostVulsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHostVulsRequest.
+        r"""Gets the enterprise_project_id of this ListHostVulsRequest.
 
-        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListHostVulsRequest.
         :rtype: str
@@ -109,9 +109,9 @@ class ListHostVulsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHostVulsRequest.
+        r"""Sets the enterprise_project_id of this ListHostVulsRequest.
 
-        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostVulsRequest.
         :type enterprise_project_id: str
@@ -120,7 +120,7 @@ class ListHostVulsRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListHostVulsRequest.
+        r"""Gets the host_id of this ListHostVulsRequest.
 
         服务器id
 
@@ -131,7 +131,7 @@ class ListHostVulsRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListHostVulsRequest.
+        r"""Sets the host_id of this ListHostVulsRequest.
 
         服务器id
 
@@ -142,7 +142,7 @@ class ListHostVulsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListHostVulsRequest.
+        r"""Gets the type of this ListHostVulsRequest.
 
         漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
@@ -153,7 +153,7 @@ class ListHostVulsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListHostVulsRequest.
+        r"""Sets the type of this ListHostVulsRequest.
 
         漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
@@ -164,7 +164,7 @@ class ListHostVulsRequest:
 
     @property
     def vul_name(self):
-        """Gets the vul_name of this ListHostVulsRequest.
+        r"""Gets the vul_name of this ListHostVulsRequest.
 
         漏洞名称
 
@@ -175,7 +175,7 @@ class ListHostVulsRequest:
 
     @vul_name.setter
     def vul_name(self, vul_name):
-        """Sets the vul_name of this ListHostVulsRequest.
+        r"""Sets the vul_name of this ListHostVulsRequest.
 
         漏洞名称
 
@@ -186,7 +186,7 @@ class ListHostVulsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostVulsRequest.
+        r"""Gets the limit of this ListHostVulsRequest.
 
         每页显示个数
 
@@ -197,7 +197,7 @@ class ListHostVulsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostVulsRequest.
+        r"""Sets the limit of this ListHostVulsRequest.
 
         每页显示个数
 
@@ -208,7 +208,7 @@ class ListHostVulsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostVulsRequest.
+        r"""Gets the offset of this ListHostVulsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -219,7 +219,7 @@ class ListHostVulsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostVulsRequest.
+        r"""Sets the offset of this ListHostVulsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -230,7 +230,7 @@ class ListHostVulsRequest:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this ListHostVulsRequest.
+        r"""Gets the handle_status of this ListHostVulsRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -241,7 +241,7 @@ class ListHostVulsRequest:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this ListHostVulsRequest.
+        r"""Sets the handle_status of this ListHostVulsRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -252,7 +252,7 @@ class ListHostVulsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListHostVulsRequest.
+        r"""Gets the status of this ListHostVulsRequest.
 
         漏洞状态，包含如下：   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
 
@@ -263,7 +263,7 @@ class ListHostVulsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListHostVulsRequest.
+        r"""Sets the status of this ListHostVulsRequest.
 
         漏洞状态，包含如下：   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
 
@@ -274,7 +274,7 @@ class ListHostVulsRequest:
 
     @property
     def repair_priority(self):
-        """Gets the repair_priority of this ListHostVulsRequest.
+        r"""Gets the repair_priority of this ListHostVulsRequest.
 
         修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
 
@@ -285,7 +285,7 @@ class ListHostVulsRequest:
 
     @repair_priority.setter
     def repair_priority(self, repair_priority):
-        """Sets the repair_priority of this ListHostVulsRequest.
+        r"""Sets the repair_priority of this ListHostVulsRequest.
 
         修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
 

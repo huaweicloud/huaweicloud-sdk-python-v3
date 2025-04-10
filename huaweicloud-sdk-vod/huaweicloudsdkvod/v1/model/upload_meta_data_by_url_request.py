@@ -25,7 +25,7 @@ class UploadMetaDataByUrlRequest:
     }
 
     def __init__(self, body=None):
-        """UploadMetaDataByUrlRequest
+        r"""UploadMetaDataByUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadMetaDataByUrlRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadMetaDataByUrlRequest.
+        r"""Gets the body of this UploadMetaDataByUrlRequest.
 
         :return: The body of this UploadMetaDataByUrlRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlReq`
@@ -52,7 +52,7 @@ class UploadMetaDataByUrlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadMetaDataByUrlRequest.
+        r"""Sets the body of this UploadMetaDataByUrlRequest.
 
         :param body: The body of this UploadMetaDataByUrlRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlReq`

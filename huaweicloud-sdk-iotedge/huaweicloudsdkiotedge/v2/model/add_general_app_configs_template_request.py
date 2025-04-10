@@ -23,7 +23,7 @@ class AddGeneralAppConfigsTemplateRequest:
     }
 
     def __init__(self):
-        """AddGeneralAppConfigsTemplateRequest
+        r"""AddGeneralAppConfigsTemplateRequest
 
         The model defined in huaweicloud sdk
 

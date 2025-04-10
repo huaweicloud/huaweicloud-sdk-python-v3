@@ -25,7 +25,7 @@ class AttachmentInstanceType:
     }
 
     def __init__(self, attachment_instance_type=None):
-        """AttachmentInstanceType
+        r"""AttachmentInstanceType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachmentInstanceType:
 
     @property
     def attachment_instance_type(self):
-        """Gets the attachment_instance_type of this AttachmentInstanceType.
+        r"""Gets the attachment_instance_type of this AttachmentInstanceType.
 
         :return: The attachment_instance_type of this AttachmentInstanceType.
         :rtype: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
@@ -51,7 +51,7 @@ class AttachmentInstanceType:
 
     @attachment_instance_type.setter
     def attachment_instance_type(self, attachment_instance_type):
-        """Sets the attachment_instance_type of this AttachmentInstanceType.
+        r"""Sets the attachment_instance_type of this AttachmentInstanceType.
 
         :param attachment_instance_type: The attachment_instance_type of this AttachmentInstanceType.
         :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`

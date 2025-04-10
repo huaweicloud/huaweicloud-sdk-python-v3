@@ -31,7 +31,7 @@ class PackageInfo:
     }
 
     def __init__(self, name=None, package_type=None, version=None, download_url=None):
-        """PackageInfo
+        r"""PackageInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PackageInfo:
 
     @property
     def name(self):
-        """Gets the name of this PackageInfo.
+        r"""Gets the name of this PackageInfo.
 
         产物名
 
@@ -75,7 +75,7 @@ class PackageInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageInfo.
+        r"""Sets the name of this PackageInfo.
 
         产物名
 
@@ -86,7 +86,7 @@ class PackageInfo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this PackageInfo.
+        r"""Gets the package_type of this PackageInfo.
 
         产物类型
 
@@ -97,7 +97,7 @@ class PackageInfo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this PackageInfo.
+        r"""Sets the package_type of this PackageInfo.
 
         产物类型
 
@@ -108,7 +108,7 @@ class PackageInfo:
 
     @property
     def version(self):
-        """Gets the version of this PackageInfo.
+        r"""Gets the version of this PackageInfo.
 
         产物版本号
 
@@ -119,7 +119,7 @@ class PackageInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PackageInfo.
+        r"""Sets the version of this PackageInfo.
 
         产物版本号
 
@@ -130,7 +130,7 @@ class PackageInfo:
 
     @property
     def download_url(self):
-        """Gets the download_url of this PackageInfo.
+        r"""Gets the download_url of this PackageInfo.
 
         产物下载地址
 
@@ -141,7 +141,7 @@ class PackageInfo:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this PackageInfo.
+        r"""Sets the download_url of this PackageInfo.
 
         产物下载地址
 

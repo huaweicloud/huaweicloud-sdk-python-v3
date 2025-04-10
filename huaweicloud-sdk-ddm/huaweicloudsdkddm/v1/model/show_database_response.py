@@ -26,7 +26,7 @@ class ShowDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, database=None):
-        """ShowDatabaseResponse
+        r"""ShowDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def database(self):
-        """Gets the database of this ShowDatabaseResponse.
+        r"""Gets the database of this ShowDatabaseResponse.
 
         :return: The database of this ShowDatabaseResponse.
         :rtype: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`
@@ -53,7 +53,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowDatabaseResponse.
+        r"""Sets the database of this ShowDatabaseResponse.
 
         :param database: The database of this ShowDatabaseResponse.
         :type database: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`

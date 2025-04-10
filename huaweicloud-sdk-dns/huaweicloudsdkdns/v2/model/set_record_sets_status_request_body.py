@@ -25,7 +25,7 @@ class SetRecordSetsStatusRequestBody:
     }
 
     def __init__(self, status=None):
-        """SetRecordSetsStatusRequestBody
+        r"""SetRecordSetsStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetRecordSetsStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this SetRecordSetsStatusRequestBody.
+        r"""Gets the status of this SetRecordSetsStatusRequestBody.
 
         解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
 
@@ -53,7 +53,7 @@ class SetRecordSetsStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetRecordSetsStatusRequestBody.
+        r"""Sets the status of this SetRecordSetsStatusRequestBody.
 
         解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
 

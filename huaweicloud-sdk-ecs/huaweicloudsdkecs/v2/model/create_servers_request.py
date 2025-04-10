@@ -28,7 +28,7 @@ class CreateServersRequest:
     }
 
     def __init__(self, x_client_token=None, body=None):
-        """CreateServersRequest
+        r"""CreateServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateServersRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateServersRequest.
+        r"""Gets the x_client_token of this CreateServersRequest.
 
         保证客户端请求幂等性的标识
 
@@ -62,7 +62,7 @@ class CreateServersRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateServersRequest.
+        r"""Sets the x_client_token of this CreateServersRequest.
 
         保证客户端请求幂等性的标识
 
@@ -73,7 +73,7 @@ class CreateServersRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateServersRequest.
+        r"""Gets the body of this CreateServersRequest.
 
         :return: The body of this CreateServersRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServersRequestBody`
@@ -82,7 +82,7 @@ class CreateServersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateServersRequest.
+        r"""Sets the body of this CreateServersRequest.
 
         :param body: The body of this CreateServersRequest.
         :type body: :class:`huaweicloudsdkecs.v2.CreateServersRequestBody`

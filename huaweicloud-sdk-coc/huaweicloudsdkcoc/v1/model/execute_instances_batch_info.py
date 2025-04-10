@@ -29,7 +29,7 @@ class ExecuteInstancesBatchInfo:
     }
 
     def __init__(self, batch_index=None, target_instances=None, rotation_strategy=None):
-        """ExecuteInstancesBatchInfo
+        r"""ExecuteInstancesBatchInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExecuteInstancesBatchInfo:
 
     @property
     def batch_index(self):
-        """Gets the batch_index of this ExecuteInstancesBatchInfo.
+        r"""Gets the batch_index of this ExecuteInstancesBatchInfo.
 
         批次索引，从1开始，未校验：最大值
 
@@ -65,7 +65,7 @@ class ExecuteInstancesBatchInfo:
 
     @batch_index.setter
     def batch_index(self, batch_index):
-        """Sets the batch_index of this ExecuteInstancesBatchInfo.
+        r"""Sets the batch_index of this ExecuteInstancesBatchInfo.
 
         批次索引，从1开始，未校验：最大值
 
@@ -76,7 +76,7 @@ class ExecuteInstancesBatchInfo:
 
     @property
     def target_instances(self):
-        """Gets the target_instances of this ExecuteInstancesBatchInfo.
+        r"""Gets the target_instances of this ExecuteInstancesBatchInfo.
 
         目标节点列表
 
@@ -87,7 +87,7 @@ class ExecuteInstancesBatchInfo:
 
     @target_instances.setter
     def target_instances(self, target_instances):
-        """Sets the target_instances of this ExecuteInstancesBatchInfo.
+        r"""Sets the target_instances of this ExecuteInstancesBatchInfo.
 
         目标节点列表
 
@@ -98,7 +98,7 @@ class ExecuteInstancesBatchInfo:
 
     @property
     def rotation_strategy(self):
-        """Gets the rotation_strategy of this ExecuteInstancesBatchInfo.
+        r"""Gets the rotation_strategy of this ExecuteInstancesBatchInfo.
 
         暂停继续策略
 
@@ -109,7 +109,7 @@ class ExecuteInstancesBatchInfo:
 
     @rotation_strategy.setter
     def rotation_strategy(self, rotation_strategy):
-        """Sets the rotation_strategy of this ExecuteInstancesBatchInfo.
+        r"""Sets the rotation_strategy of this ExecuteInstancesBatchInfo.
 
         暂停继续策略
 

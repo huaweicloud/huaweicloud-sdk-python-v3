@@ -38,7 +38,7 @@ class CreateLineGroupResponse(SdkResponse):
     }
 
     def __init__(self, name=None, lines=None, status=None, description=None, line_id=None, created_at=None, updated_at=None):
-        """CreateLineGroupResponse
+        r"""CreateLineGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateLineGroupResponse.
+        r"""Gets the name of this CreateLineGroupResponse.
 
         线路分组名称。
 
@@ -97,7 +97,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLineGroupResponse.
+        r"""Sets the name of this CreateLineGroupResponse.
 
         线路分组名称。
 
@@ -108,7 +108,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def lines(self):
-        """Gets the lines of this CreateLineGroupResponse.
+        r"""Gets the lines of this CreateLineGroupResponse.
 
         线路分组包含的线路列表。 解析线路ID。
 
@@ -119,7 +119,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @lines.setter
     def lines(self, lines):
-        """Sets the lines of this CreateLineGroupResponse.
+        r"""Sets the lines of this CreateLineGroupResponse.
 
         线路分组包含的线路列表。 解析线路ID。
 
@@ -130,7 +130,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateLineGroupResponse.
+        r"""Gets the status of this CreateLineGroupResponse.
 
         资源状态。 取值范围：PENDING_CREATE，ACTIVE，PENDING_DELETE，PENDING_UPDATE，ERROR，FREEZE，DISABLE。
 
@@ -141,7 +141,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateLineGroupResponse.
+        r"""Sets the status of this CreateLineGroupResponse.
 
         资源状态。 取值范围：PENDING_CREATE，ACTIVE，PENDING_DELETE，PENDING_UPDATE，ERROR，FREEZE，DISABLE。
 
@@ -152,7 +152,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateLineGroupResponse.
+        r"""Gets the description of this CreateLineGroupResponse.
 
         线路分组的描述信息
 
@@ -163,7 +163,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLineGroupResponse.
+        r"""Sets the description of this CreateLineGroupResponse.
 
         线路分组的描述信息
 
@@ -174,7 +174,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def line_id(self):
-        """Gets the line_id of this CreateLineGroupResponse.
+        r"""Gets the line_id of this CreateLineGroupResponse.
 
         线路分组的id。
 
@@ -185,7 +185,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this CreateLineGroupResponse.
+        r"""Sets the line_id of this CreateLineGroupResponse.
 
         线路分组的id。
 
@@ -196,7 +196,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateLineGroupResponse.
+        r"""Gets the created_at of this CreateLineGroupResponse.
 
         创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -207,7 +207,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateLineGroupResponse.
+        r"""Sets the created_at of this CreateLineGroupResponse.
 
         创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -218,7 +218,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateLineGroupResponse.
+        r"""Gets the updated_at of this CreateLineGroupResponse.
 
         更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -229,7 +229,7 @@ class CreateLineGroupResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateLineGroupResponse.
+        r"""Sets the updated_at of this CreateLineGroupResponse.
 
         更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 

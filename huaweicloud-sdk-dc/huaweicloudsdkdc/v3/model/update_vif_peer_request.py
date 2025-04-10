@@ -27,7 +27,7 @@ class UpdateVifPeerRequest:
     }
 
     def __init__(self, vif_peer_id=None, body=None):
-        """UpdateVifPeerRequest
+        r"""UpdateVifPeerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVifPeerRequest:
 
     @property
     def vif_peer_id(self):
-        """Gets the vif_peer_id of this UpdateVifPeerRequest.
+        r"""Gets the vif_peer_id of this UpdateVifPeerRequest.
 
         虚拟接口对等体ID
 
@@ -60,7 +60,7 @@ class UpdateVifPeerRequest:
 
     @vif_peer_id.setter
     def vif_peer_id(self, vif_peer_id):
-        """Sets the vif_peer_id of this UpdateVifPeerRequest.
+        r"""Sets the vif_peer_id of this UpdateVifPeerRequest.
 
         虚拟接口对等体ID
 
@@ -71,7 +71,7 @@ class UpdateVifPeerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVifPeerRequest.
+        r"""Gets the body of this UpdateVifPeerRequest.
 
         :return: The body of this UpdateVifPeerRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVifPeerRequestBody`
@@ -80,7 +80,7 @@ class UpdateVifPeerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVifPeerRequest.
+        r"""Sets the body of this UpdateVifPeerRequest.
 
         :param body: The body of this UpdateVifPeerRequest.
         :type body: :class:`huaweicloudsdkdc.v3.UpdateVifPeerRequestBody`

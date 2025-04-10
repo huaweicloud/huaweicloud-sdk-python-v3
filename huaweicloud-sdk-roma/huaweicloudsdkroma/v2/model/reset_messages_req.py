@@ -31,7 +31,7 @@ class ResetMessagesReq:
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, consumer_key=None):
-        """ResetMessagesReq
+        r"""ResetMessagesReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ResetMessagesReq:
 
     @property
     def topic(self):
-        """Gets the topic of this ResetMessagesReq.
+        r"""Gets the topic of this ResetMessagesReq.
 
         topic名称。
 
@@ -72,7 +72,7 @@ class ResetMessagesReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ResetMessagesReq.
+        r"""Sets the topic of this ResetMessagesReq.
 
         topic名称。
 
@@ -83,7 +83,7 @@ class ResetMessagesReq:
 
     @property
     def partition(self):
-        """Gets the partition of this ResetMessagesReq.
+        r"""Gets the partition of this ResetMessagesReq.
 
         分区。
 
@@ -94,7 +94,7 @@ class ResetMessagesReq:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ResetMessagesReq.
+        r"""Sets the partition of this ResetMessagesReq.
 
         分区。
 
@@ -105,7 +105,7 @@ class ResetMessagesReq:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ResetMessagesReq.
+        r"""Gets the message_offset of this ResetMessagesReq.
 
         消息偏移量。
 
@@ -116,7 +116,7 @@ class ResetMessagesReq:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ResetMessagesReq.
+        r"""Sets the message_offset of this ResetMessagesReq.
 
         消息偏移量。
 
@@ -127,7 +127,7 @@ class ResetMessagesReq:
 
     @property
     def consumer_key(self):
-        """Gets the consumer_key of this ResetMessagesReq.
+        r"""Gets the consumer_key of this ResetMessagesReq.
 
         应用key。在该消息头中添加一个consumer_key的消息头。
 
@@ -138,7 +138,7 @@ class ResetMessagesReq:
 
     @consumer_key.setter
     def consumer_key(self, consumer_key):
-        """Sets the consumer_key of this ResetMessagesReq.
+        r"""Sets the consumer_key of this ResetMessagesReq.
 
         应用key。在该消息头中添加一个consumer_key的消息头。
 

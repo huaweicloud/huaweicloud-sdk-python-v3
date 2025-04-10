@@ -29,7 +29,7 @@ class RTCCause:
     }
 
     def __init__(self, ts=None, event_id=None, peer_id=None):
-        """RTCCause
+        r"""RTCCause
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RTCCause:
 
     @property
     def ts(self):
-        """Gets the ts of this RTCCause.
+        r"""Gets the ts of this RTCCause.
 
         异常事件的时间戳 
 
@@ -68,7 +68,7 @@ class RTCCause:
 
     @ts.setter
     def ts(self, ts):
-        """Sets the ts of this RTCCause.
+        r"""Sets the ts of this RTCCause.
 
         异常事件的时间戳 
 
@@ -79,7 +79,7 @@ class RTCCause:
 
     @property
     def event_id(self):
-        """Gets the event_id of this RTCCause.
+        r"""Gets the event_id of this RTCCause.
 
         异常事件ID 
 
@@ -90,7 +90,7 @@ class RTCCause:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this RTCCause.
+        r"""Sets the event_id of this RTCCause.
 
         异常事件ID 
 
@@ -101,7 +101,7 @@ class RTCCause:
 
     @property
     def peer_id(self):
-        """Gets the peer_id of this RTCCause.
+        r"""Gets the peer_id of this RTCCause.
 
         对端的用户ID 
 
@@ -112,7 +112,7 @@ class RTCCause:
 
     @peer_id.setter
     def peer_id(self, peer_id):
-        """Sets the peer_id of this RTCCause.
+        r"""Sets the peer_id of this RTCCause.
 
         对端的用户ID 
 

@@ -29,7 +29,7 @@ class ListValueListRequest:
     }
 
     def __init__(self, page=None, pagesize=None, name=None):
-        """ListValueListRequest
+        r"""ListValueListRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListValueListRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListValueListRequest.
+        r"""Gets the page of this ListValueListRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -68,7 +68,7 @@ class ListValueListRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListValueListRequest.
+        r"""Sets the page of this ListValueListRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -79,7 +79,7 @@ class ListValueListRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListValueListRequest.
+        r"""Gets the pagesize of this ListValueListRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -90,7 +90,7 @@ class ListValueListRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListValueListRequest.
+        r"""Sets the pagesize of this ListValueListRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -101,7 +101,7 @@ class ListValueListRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListValueListRequest.
+        r"""Gets the name of this ListValueListRequest.
 
         引用表名称
 
@@ -112,7 +112,7 @@ class ListValueListRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListValueListRequest.
+        r"""Sets the name of this ListValueListRequest.
 
         引用表名称
 

@@ -30,7 +30,7 @@ class AuthorizeDomainsResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None, usage_notice=None):
-        """AuthorizeDomainsResponse
+        r"""AuthorizeDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     @property
     def info_code(self):
-        """Gets the info_code of this AuthorizeDomainsResponse.
+        r"""Gets the info_code of this AuthorizeDomainsResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -69,7 +69,7 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     @info_code.setter
     def info_code(self, info_code):
-        """Sets the info_code of this AuthorizeDomainsResponse.
+        r"""Sets the info_code of this AuthorizeDomainsResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -80,7 +80,7 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     @property
     def info_description(self):
-        """Gets the info_description of this AuthorizeDomainsResponse.
+        r"""Gets the info_description of this AuthorizeDomainsResponse.
 
         返回的提示信息
 
@@ -91,7 +91,7 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     @info_description.setter
     def info_description(self, info_description):
-        """Sets the info_description of this AuthorizeDomainsResponse.
+        r"""Sets the info_description of this AuthorizeDomainsResponse.
 
         返回的提示信息
 
@@ -102,7 +102,7 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     @property
     def usage_notice(self):
-        """Gets the usage_notice of this AuthorizeDomainsResponse.
+        r"""Gets the usage_notice of this AuthorizeDomainsResponse.
 
         网站域名认证使用须知
 
@@ -113,7 +113,7 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     @usage_notice.setter
     def usage_notice(self, usage_notice):
-        """Sets the usage_notice of this AuthorizeDomainsResponse.
+        r"""Sets the usage_notice of this AuthorizeDomainsResponse.
 
         网站域名认证使用须知
 

@@ -26,7 +26,7 @@ class SetSpeedValueResponse(SdkResponse):
     }
 
     def __init__(self, work_order_id=None):
-        """SetSpeedValueResponse
+        r"""SetSpeedValueResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetSpeedValueResponse(SdkResponse):
 
     @property
     def work_order_id(self):
-        """Gets the work_order_id of this SetSpeedValueResponse.
+        r"""Gets the work_order_id of this SetSpeedValueResponse.
 
         业务受理单号
 
@@ -55,7 +55,7 @@ class SetSpeedValueResponse(SdkResponse):
 
     @work_order_id.setter
     def work_order_id(self, work_order_id):
-        """Sets the work_order_id of this SetSpeedValueResponse.
+        r"""Sets the work_order_id of this SetSpeedValueResponse.
 
         业务受理单号
 

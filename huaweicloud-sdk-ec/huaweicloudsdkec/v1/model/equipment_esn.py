@@ -25,7 +25,7 @@ class EquipmentEsn:
     }
 
     def __init__(self, esn=None):
-        """EquipmentEsn
+        r"""EquipmentEsn
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EquipmentEsn:
 
     @property
     def esn(self):
-        """Gets the esn of this EquipmentEsn.
+        r"""Gets the esn of this EquipmentEsn.
 
         esn
 
@@ -53,7 +53,7 @@ class EquipmentEsn:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this EquipmentEsn.
+        r"""Sets the esn of this EquipmentEsn.
 
         esn
 

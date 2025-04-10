@@ -27,7 +27,7 @@ class AttachServerAppInfo:
     }
 
     def __init__(self, id=None, app_id=None):
-        """AttachServerAppInfo
+        r"""AttachServerAppInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttachServerAppInfo:
 
     @property
     def id(self):
-        """Gets the id of this AttachServerAppInfo.
+        r"""Gets the id of this AttachServerAppInfo.
 
         分发软件版本ID。
 
@@ -61,7 +61,7 @@ class AttachServerAppInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AttachServerAppInfo.
+        r"""Sets the id of this AttachServerAppInfo.
 
         分发软件版本ID。
 
@@ -72,7 +72,7 @@ class AttachServerAppInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AttachServerAppInfo.
+        r"""Gets the app_id of this AttachServerAppInfo.
 
         分发软件ID。
 
@@ -83,7 +83,7 @@ class AttachServerAppInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AttachServerAppInfo.
+        r"""Sets the app_id of this AttachServerAppInfo.
 
         分发软件ID。
 

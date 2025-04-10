@@ -29,7 +29,7 @@ class ShowProjectRequest:
     }
 
     def __init__(self, x_bucket_name=None, x_namespace_name=None, eihealth_project_id=None):
-        """ShowProjectRequest
+        r"""ShowProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowProjectRequest:
 
     @property
     def x_bucket_name(self):
-        """Gets the x_bucket_name of this ShowProjectRequest.
+        r"""Gets the x_bucket_name of this ShowProjectRequest.
 
         X-Bucket-Name
 
@@ -67,7 +67,7 @@ class ShowProjectRequest:
 
     @x_bucket_name.setter
     def x_bucket_name(self, x_bucket_name):
-        """Sets the x_bucket_name of this ShowProjectRequest.
+        r"""Sets the x_bucket_name of this ShowProjectRequest.
 
         X-Bucket-Name
 
@@ -78,7 +78,7 @@ class ShowProjectRequest:
 
     @property
     def x_namespace_name(self):
-        """Gets the x_namespace_name of this ShowProjectRequest.
+        r"""Gets the x_namespace_name of this ShowProjectRequest.
 
         X-Namespace
 
@@ -89,7 +89,7 @@ class ShowProjectRequest:
 
     @x_namespace_name.setter
     def x_namespace_name(self, x_namespace_name):
-        """Sets the x_namespace_name of this ShowProjectRequest.
+        r"""Sets the x_namespace_name of this ShowProjectRequest.
 
         X-Namespace
 
@@ -100,7 +100,7 @@ class ShowProjectRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowProjectRequest.
+        r"""Gets the eihealth_project_id of this ShowProjectRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -111,7 +111,7 @@ class ShowProjectRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowProjectRequest.
+        r"""Sets the eihealth_project_id of this ShowProjectRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 

@@ -30,7 +30,7 @@ class ListQueuesResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, items=None):
-        """ListQueuesResponse
+        r"""ListQueuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListQueuesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListQueuesResponse.
+        r"""Gets the size of this ListQueuesResponse.
 
         当前显示数量
 
@@ -69,7 +69,7 @@ class ListQueuesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListQueuesResponse.
+        r"""Sets the size of this ListQueuesResponse.
 
         当前显示数量
 
@@ -80,7 +80,7 @@ class ListQueuesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListQueuesResponse.
+        r"""Gets the total of this ListQueuesResponse.
 
         查询结果总数
 
@@ -91,7 +91,7 @@ class ListQueuesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListQueuesResponse.
+        r"""Sets the total of this ListQueuesResponse.
 
         查询结果总数
 
@@ -102,7 +102,7 @@ class ListQueuesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListQueuesResponse.
+        r"""Gets the items of this ListQueuesResponse.
 
         查询详情
 
@@ -113,7 +113,7 @@ class ListQueuesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListQueuesResponse.
+        r"""Sets the items of this ListQueuesResponse.
 
         查询详情
 

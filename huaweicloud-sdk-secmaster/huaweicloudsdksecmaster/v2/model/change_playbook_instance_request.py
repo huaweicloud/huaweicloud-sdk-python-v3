@@ -31,7 +31,7 @@ class ChangePlaybookInstanceRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, instance_id=None, body=None):
-        """ChangePlaybookInstanceRequest
+        r"""ChangePlaybookInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangePlaybookInstanceRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ChangePlaybookInstanceRequest.
+        r"""Gets the project_id of this ChangePlaybookInstanceRequest.
 
         项目ID
 
@@ -72,7 +72,7 @@ class ChangePlaybookInstanceRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ChangePlaybookInstanceRequest.
+        r"""Sets the project_id of this ChangePlaybookInstanceRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class ChangePlaybookInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ChangePlaybookInstanceRequest.
+        r"""Gets the workspace_id of this ChangePlaybookInstanceRequest.
 
         工作空间ID
 
@@ -94,7 +94,7 @@ class ChangePlaybookInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ChangePlaybookInstanceRequest.
+        r"""Sets the workspace_id of this ChangePlaybookInstanceRequest.
 
         工作空间ID
 
@@ -105,7 +105,7 @@ class ChangePlaybookInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangePlaybookInstanceRequest.
+        r"""Gets the instance_id of this ChangePlaybookInstanceRequest.
 
         剧本实例ID
 
@@ -116,7 +116,7 @@ class ChangePlaybookInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangePlaybookInstanceRequest.
+        r"""Sets the instance_id of this ChangePlaybookInstanceRequest.
 
         剧本实例ID
 
@@ -127,7 +127,7 @@ class ChangePlaybookInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangePlaybookInstanceRequest.
+        r"""Gets the body of this ChangePlaybookInstanceRequest.
 
         :return: The body of this ChangePlaybookInstanceRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.OperationPlaybookInfo`
@@ -136,7 +136,7 @@ class ChangePlaybookInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangePlaybookInstanceRequest.
+        r"""Sets the body of this ChangePlaybookInstanceRequest.
 
         :param body: The body of this ChangePlaybookInstanceRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.OperationPlaybookInfo`

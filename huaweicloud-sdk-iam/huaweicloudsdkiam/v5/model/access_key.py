@@ -33,7 +33,7 @@ class AccessKey:
     }
 
     def __init__(self, user_id=None, access_key_id=None, created_at=None, secret_access_key=None, status=None):
-        """AccessKey
+        r"""AccessKey
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AccessKey:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AccessKey.
+        r"""Gets the user_id of this AccessKey.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -77,7 +77,7 @@ class AccessKey:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AccessKey.
+        r"""Sets the user_id of this AccessKey.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -88,7 +88,7 @@ class AccessKey:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this AccessKey.
+        r"""Gets the access_key_id of this AccessKey.
 
         创建的永久访问密钥ID，即AK。
 
@@ -99,7 +99,7 @@ class AccessKey:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this AccessKey.
+        r"""Sets the access_key_id of this AccessKey.
 
         创建的永久访问密钥ID，即AK。
 
@@ -110,7 +110,7 @@ class AccessKey:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AccessKey.
+        r"""Gets the created_at of this AccessKey.
 
         访问密钥创建时间。
 
@@ -121,7 +121,7 @@ class AccessKey:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AccessKey.
+        r"""Sets the created_at of this AccessKey.
 
         访问密钥创建时间。
 
@@ -132,7 +132,7 @@ class AccessKey:
 
     @property
     def secret_access_key(self):
-        """Gets the secret_access_key of this AccessKey.
+        r"""Gets the secret_access_key of this AccessKey.
 
         创建的SK。
 
@@ -143,7 +143,7 @@ class AccessKey:
 
     @secret_access_key.setter
     def secret_access_key(self, secret_access_key):
-        """Sets the secret_access_key of this AccessKey.
+        r"""Sets the secret_access_key of this AccessKey.
 
         创建的SK。
 
@@ -154,7 +154,7 @@ class AccessKey:
 
     @property
     def status(self):
-        """Gets the status of this AccessKey.
+        r"""Gets the status of this AccessKey.
 
         :return: The status of this AccessKey.
         :rtype: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
@@ -163,7 +163,7 @@ class AccessKey:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessKey.
+        r"""Sets the status of this AccessKey.
 
         :param status: The status of this AccessKey.
         :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`

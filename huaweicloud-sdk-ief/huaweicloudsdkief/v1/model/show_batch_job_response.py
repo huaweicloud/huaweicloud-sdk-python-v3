@@ -52,7 +52,7 @@ class ShowBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, job_type=None, description=None, created_at=None, status=None, task_total_count=None, task_failed_count=None, task_success_count=None, target_type=None, task_data=None, tasks=None, targets=None, status_last_updated_at=None):
-        """ShowBatchJobResponse
+        r"""ShowBatchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowBatchJobResponse.
+        r"""Gets the job_id of this ShowBatchJobResponse.
 
         批量处理作业ID
 
@@ -146,7 +146,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowBatchJobResponse.
+        r"""Sets the job_id of this ShowBatchJobResponse.
 
         批量处理作业ID
 
@@ -157,7 +157,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowBatchJobResponse.
+        r"""Gets the job_name of this ShowBatchJobResponse.
 
         批量处理作业名称
 
@@ -168,7 +168,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowBatchJobResponse.
+        r"""Sets the job_name of this ShowBatchJobResponse.
 
         批量处理作业名称
 
@@ -179,7 +179,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowBatchJobResponse.
+        r"""Gets the job_type of this ShowBatchJobResponse.
 
         批量作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -190,7 +190,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowBatchJobResponse.
+        r"""Sets the job_type of this ShowBatchJobResponse.
 
         批量作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -201,7 +201,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowBatchJobResponse.
+        r"""Gets the description of this ShowBatchJobResponse.
 
         描述
 
@@ -212,7 +212,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowBatchJobResponse.
+        r"""Sets the description of this ShowBatchJobResponse.
 
         描述
 
@@ -223,7 +223,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowBatchJobResponse.
+        r"""Gets the created_at of this ShowBatchJobResponse.
 
         创建时间戳
 
@@ -234,7 +234,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowBatchJobResponse.
+        r"""Sets the created_at of this ShowBatchJobResponse.
 
         创建时间戳
 
@@ -245,7 +245,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowBatchJobResponse.
+        r"""Gets the status of this ShowBatchJobResponse.
 
         执行状态
 
@@ -256,7 +256,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowBatchJobResponse.
+        r"""Sets the status of this ShowBatchJobResponse.
 
         执行状态
 
@@ -267,7 +267,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def task_total_count(self):
-        """Gets the task_total_count of this ShowBatchJobResponse.
+        r"""Gets the task_total_count of this ShowBatchJobResponse.
 
         任务总数
 
@@ -278,7 +278,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @task_total_count.setter
     def task_total_count(self, task_total_count):
-        """Sets the task_total_count of this ShowBatchJobResponse.
+        r"""Sets the task_total_count of this ShowBatchJobResponse.
 
         任务总数
 
@@ -289,7 +289,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def task_failed_count(self):
-        """Gets the task_failed_count of this ShowBatchJobResponse.
+        r"""Gets the task_failed_count of this ShowBatchJobResponse.
 
         任务项执行成功数
 
@@ -300,7 +300,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @task_failed_count.setter
     def task_failed_count(self, task_failed_count):
-        """Sets the task_failed_count of this ShowBatchJobResponse.
+        r"""Sets the task_failed_count of this ShowBatchJobResponse.
 
         任务项执行成功数
 
@@ -311,7 +311,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def task_success_count(self):
-        """Gets the task_success_count of this ShowBatchJobResponse.
+        r"""Gets the task_success_count of this ShowBatchJobResponse.
 
         任务项执行失败数
 
@@ -322,7 +322,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @task_success_count.setter
     def task_success_count(self, task_success_count):
-        """Sets the task_success_count of this ShowBatchJobResponse.
+        r"""Sets the task_success_count of this ShowBatchJobResponse.
 
         任务项执行失败数
 
@@ -333,7 +333,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def target_type(self):
-        """Gets the target_type of this ShowBatchJobResponse.
+        r"""Gets the target_type of this ShowBatchJobResponse.
 
         批量作业对象类型，支持如下选项： - node：边缘节点 - node_group：边缘节点组 - deployment：边缘应用
 
@@ -344,7 +344,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ShowBatchJobResponse.
+        r"""Sets the target_type of this ShowBatchJobResponse.
 
         批量作业对象类型，支持如下选项： - node：边缘节点 - node_group：边缘节点组 - deployment：边缘应用
 
@@ -355,7 +355,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowBatchJobResponse.
+        r"""Gets the task_data of this ShowBatchJobResponse.
 
         批量作业内容，仅在批量应用部署和批量应用升级时需要填写，填入的内容为：使用json结构体编写的创建应用部署接口请求体deployment参数，并将其转换为字符串
 
@@ -366,7 +366,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowBatchJobResponse.
+        r"""Sets the task_data of this ShowBatchJobResponse.
 
         批量作业内容，仅在批量应用部署和批量应用升级时需要填写，填入的内容为：使用json结构体编写的创建应用部署接口请求体deployment参数，并将其转换为字符串
 
@@ -377,7 +377,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowBatchJobResponse.
+        r"""Gets the tasks of this ShowBatchJobResponse.
 
         任务项详情
 
@@ -388,7 +388,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowBatchJobResponse.
+        r"""Sets the tasks of this ShowBatchJobResponse.
 
         任务项详情
 
@@ -399,7 +399,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this ShowBatchJobResponse.
+        r"""Gets the targets of this ShowBatchJobResponse.
 
         批量处理对象详情
 
@@ -410,7 +410,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this ShowBatchJobResponse.
+        r"""Sets the targets of this ShowBatchJobResponse.
 
         批量处理对象详情
 
@@ -421,7 +421,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @property
     def status_last_updated_at(self):
-        """Gets the status_last_updated_at of this ShowBatchJobResponse.
+        r"""Gets the status_last_updated_at of this ShowBatchJobResponse.
 
         状态更新时间戳
 
@@ -432,7 +432,7 @@ class ShowBatchJobResponse(SdkResponse):
 
     @status_last_updated_at.setter
     def status_last_updated_at(self, status_last_updated_at):
-        """Sets the status_last_updated_at of this ShowBatchJobResponse.
+        r"""Sets the status_last_updated_at of this ShowBatchJobResponse.
 
         状态更新时间戳
 

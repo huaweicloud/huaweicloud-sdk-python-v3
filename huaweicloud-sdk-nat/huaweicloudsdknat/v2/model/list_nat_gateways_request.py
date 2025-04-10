@@ -47,7 +47,7 @@ class ListNatGatewaysRequest:
     }
 
     def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None, marker=None):
-        """ListNatGatewaysRequest
+        r"""ListNatGatewaysRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListNatGatewaysRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListNatGatewaysRequest.
+        r"""Gets the id of this ListNatGatewaysRequest.
 
         公网NAT网关实例的ID。
 
@@ -131,7 +131,7 @@ class ListNatGatewaysRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListNatGatewaysRequest.
+        r"""Sets the id of this ListNatGatewaysRequest.
 
         公网NAT网关实例的ID。
 
@@ -142,7 +142,7 @@ class ListNatGatewaysRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListNatGatewaysRequest.
+        r"""Gets the enterprise_project_id of this ListNatGatewaysRequest.
 
         企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 
@@ -153,7 +153,7 @@ class ListNatGatewaysRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListNatGatewaysRequest.
+        r"""Sets the enterprise_project_id of this ListNatGatewaysRequest.
 
         企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 
@@ -164,7 +164,7 @@ class ListNatGatewaysRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListNatGatewaysRequest.
+        r"""Gets the description of this ListNatGatewaysRequest.
 
         公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -175,7 +175,7 @@ class ListNatGatewaysRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListNatGatewaysRequest.
+        r"""Sets the description of this ListNatGatewaysRequest.
 
         公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -186,7 +186,7 @@ class ListNatGatewaysRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListNatGatewaysRequest.
+        r"""Gets the created_at of this ListNatGatewaysRequest.
 
         公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -197,7 +197,7 @@ class ListNatGatewaysRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListNatGatewaysRequest.
+        r"""Sets the created_at of this ListNatGatewaysRequest.
 
         公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -208,7 +208,7 @@ class ListNatGatewaysRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListNatGatewaysRequest.
+        r"""Gets the name of this ListNatGatewaysRequest.
 
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
 
@@ -219,7 +219,7 @@ class ListNatGatewaysRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListNatGatewaysRequest.
+        r"""Sets the name of this ListNatGatewaysRequest.
 
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
 
@@ -230,7 +230,7 @@ class ListNatGatewaysRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListNatGatewaysRequest.
+        r"""Gets the status of this ListNatGatewaysRequest.
 
         公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
@@ -241,7 +241,7 @@ class ListNatGatewaysRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNatGatewaysRequest.
+        r"""Sets the status of this ListNatGatewaysRequest.
 
         公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
@@ -252,7 +252,7 @@ class ListNatGatewaysRequest:
 
     @property
     def spec(self):
-        """Gets the spec of this ListNatGatewaysRequest.
+        r"""Gets the spec of this ListNatGatewaysRequest.
 
         公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
@@ -263,7 +263,7 @@ class ListNatGatewaysRequest:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ListNatGatewaysRequest.
+        r"""Sets the spec of this ListNatGatewaysRequest.
 
         公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
@@ -274,7 +274,7 @@ class ListNatGatewaysRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListNatGatewaysRequest.
+        r"""Gets the admin_state_up of this ListNatGatewaysRequest.
 
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -285,7 +285,7 @@ class ListNatGatewaysRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListNatGatewaysRequest.
+        r"""Sets the admin_state_up of this ListNatGatewaysRequest.
 
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -296,7 +296,7 @@ class ListNatGatewaysRequest:
 
     @property
     def internal_network_id(self):
-        """Gets the internal_network_id of this ListNatGatewaysRequest.
+        r"""Gets the internal_network_id of this ListNatGatewaysRequest.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -307,7 +307,7 @@ class ListNatGatewaysRequest:
 
     @internal_network_id.setter
     def internal_network_id(self, internal_network_id):
-        """Sets the internal_network_id of this ListNatGatewaysRequest.
+        r"""Sets the internal_network_id of this ListNatGatewaysRequest.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -318,7 +318,7 @@ class ListNatGatewaysRequest:
 
     @property
     def router_id(self):
-        """Gets the router_id of this ListNatGatewaysRequest.
+        r"""Gets the router_id of this ListNatGatewaysRequest.
 
         VPC的id。
 
@@ -329,7 +329,7 @@ class ListNatGatewaysRequest:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this ListNatGatewaysRequest.
+        r"""Sets the router_id of this ListNatGatewaysRequest.
 
         VPC的id。
 
@@ -340,7 +340,7 @@ class ListNatGatewaysRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNatGatewaysRequest.
+        r"""Gets the limit of this ListNatGatewaysRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -351,7 +351,7 @@ class ListNatGatewaysRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNatGatewaysRequest.
+        r"""Sets the limit of this ListNatGatewaysRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -362,7 +362,7 @@ class ListNatGatewaysRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListNatGatewaysRequest.
+        r"""Gets the marker of this ListNatGatewaysRequest.
 
         分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
 
@@ -373,7 +373,7 @@ class ListNatGatewaysRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListNatGatewaysRequest.
+        r"""Sets the marker of this ListNatGatewaysRequest.
 
         分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
 

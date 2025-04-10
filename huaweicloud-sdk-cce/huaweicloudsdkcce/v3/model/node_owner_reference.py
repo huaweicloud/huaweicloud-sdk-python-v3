@@ -27,7 +27,7 @@ class NodeOwnerReference:
     }
 
     def __init__(self, nodepool_name=None, nodepool_id=None):
-        """NodeOwnerReference
+        r"""NodeOwnerReference
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeOwnerReference:
 
     @property
     def nodepool_name(self):
-        """Gets the nodepool_name of this NodeOwnerReference.
+        r"""Gets the nodepool_name of this NodeOwnerReference.
 
         节点池名称
 
@@ -61,7 +61,7 @@ class NodeOwnerReference:
 
     @nodepool_name.setter
     def nodepool_name(self, nodepool_name):
-        """Sets the nodepool_name of this NodeOwnerReference.
+        r"""Sets the nodepool_name of this NodeOwnerReference.
 
         节点池名称
 
@@ -72,7 +72,7 @@ class NodeOwnerReference:
 
     @property
     def nodepool_id(self):
-        """Gets the nodepool_id of this NodeOwnerReference.
+        r"""Gets the nodepool_id of this NodeOwnerReference.
 
         节点池UID
 
@@ -83,7 +83,7 @@ class NodeOwnerReference:
 
     @nodepool_id.setter
     def nodepool_id(self, nodepool_id):
-        """Sets the nodepool_id of this NodeOwnerReference.
+        r"""Sets the nodepool_id of this NodeOwnerReference.
 
         节点池UID
 

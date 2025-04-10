@@ -25,7 +25,7 @@ class CreateNetworkInstanceRequestBody:
     }
 
     def __init__(self, network_instance=None):
-        """CreateNetworkInstanceRequestBody
+        r"""CreateNetworkInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateNetworkInstanceRequestBody:
 
     @property
     def network_instance(self):
-        """Gets the network_instance of this CreateNetworkInstanceRequestBody.
+        r"""Gets the network_instance of this CreateNetworkInstanceRequestBody.
 
         :return: The network_instance of this CreateNetworkInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstance`
@@ -51,7 +51,7 @@ class CreateNetworkInstanceRequestBody:
 
     @network_instance.setter
     def network_instance(self, network_instance):
-        """Sets the network_instance of this CreateNetworkInstanceRequestBody.
+        r"""Sets the network_instance of this CreateNetworkInstanceRequestBody.
 
         :param network_instance: The network_instance of this CreateNetworkInstanceRequestBody.
         :type network_instance: :class:`huaweicloudsdkcc.v3.CreateNetworkInstance`

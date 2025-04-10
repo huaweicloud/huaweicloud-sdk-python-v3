@@ -26,7 +26,7 @@ class CreateLoginResponse(SdkResponse):
     }
 
     def __init__(self, login_id=None):
-        """CreateLoginResponse
+        r"""CreateLoginResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateLoginResponse(SdkResponse):
 
     @property
     def login_id(self):
-        """Gets the login_id of this CreateLoginResponse.
+        r"""Gets the login_id of this CreateLoginResponse.
 
         login_id
 
@@ -55,7 +55,7 @@ class CreateLoginResponse(SdkResponse):
 
     @login_id.setter
     def login_id(self, login_id):
-        """Sets the login_id of this CreateLoginResponse.
+        r"""Sets the login_id of this CreateLoginResponse.
 
         login_id
 

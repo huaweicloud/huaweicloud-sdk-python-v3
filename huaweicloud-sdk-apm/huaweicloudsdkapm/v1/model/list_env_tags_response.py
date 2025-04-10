@@ -28,7 +28,7 @@ class ListEnvTagsResponse(SdkResponse):
     }
 
     def __init__(self, env_tags=None, total_count=None):
-        """ListEnvTagsResponse
+        r"""ListEnvTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEnvTagsResponse(SdkResponse):
 
     @property
     def env_tags(self):
-        """Gets the env_tags of this ListEnvTagsResponse.
+        r"""Gets the env_tags of this ListEnvTagsResponse.
 
         环境标签数据列表。
 
@@ -62,7 +62,7 @@ class ListEnvTagsResponse(SdkResponse):
 
     @env_tags.setter
     def env_tags(self, env_tags):
-        """Sets the env_tags of this ListEnvTagsResponse.
+        r"""Sets the env_tags of this ListEnvTagsResponse.
 
         环境标签数据列表。
 
@@ -73,7 +73,7 @@ class ListEnvTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEnvTagsResponse.
+        r"""Gets the total_count of this ListEnvTagsResponse.
 
         总条数。
 
@@ -84,7 +84,7 @@ class ListEnvTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEnvTagsResponse.
+        r"""Sets the total_count of this ListEnvTagsResponse.
 
         总条数。
 

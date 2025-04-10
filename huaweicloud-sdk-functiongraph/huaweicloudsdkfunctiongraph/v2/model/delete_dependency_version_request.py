@@ -27,7 +27,7 @@ class DeleteDependencyVersionRequest:
     }
 
     def __init__(self, depend_id=None, version=None):
-        """DeleteDependencyVersionRequest
+        r"""DeleteDependencyVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDependencyVersionRequest:
 
     @property
     def depend_id(self):
-        """Gets the depend_id of this DeleteDependencyVersionRequest.
+        r"""Gets the depend_id of this DeleteDependencyVersionRequest.
 
         依赖包的ID。
 
@@ -59,7 +59,7 @@ class DeleteDependencyVersionRequest:
 
     @depend_id.setter
     def depend_id(self, depend_id):
-        """Sets the depend_id of this DeleteDependencyVersionRequest.
+        r"""Sets the depend_id of this DeleteDependencyVersionRequest.
 
         依赖包的ID。
 
@@ -70,7 +70,7 @@ class DeleteDependencyVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeleteDependencyVersionRequest.
+        r"""Gets the version of this DeleteDependencyVersionRequest.
 
         依赖包版本号。
 
@@ -81,7 +81,7 @@ class DeleteDependencyVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeleteDependencyVersionRequest.
+        r"""Sets the version of this DeleteDependencyVersionRequest.
 
         依赖包版本号。
 

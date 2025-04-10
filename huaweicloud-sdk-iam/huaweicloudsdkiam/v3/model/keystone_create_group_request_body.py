@@ -25,7 +25,7 @@ class KeystoneCreateGroupRequestBody:
     }
 
     def __init__(self, group=None):
-        """KeystoneCreateGroupRequestBody
+        r"""KeystoneCreateGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneCreateGroupRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this KeystoneCreateGroupRequestBody.
+        r"""Gets the group of this KeystoneCreateGroupRequestBody.
 
         :return: The group of this KeystoneCreateGroupRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`
@@ -51,7 +51,7 @@ class KeystoneCreateGroupRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this KeystoneCreateGroupRequestBody.
+        r"""Sets the group of this KeystoneCreateGroupRequestBody.
 
         :param group: The group of this KeystoneCreateGroupRequestBody.
         :type group: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`

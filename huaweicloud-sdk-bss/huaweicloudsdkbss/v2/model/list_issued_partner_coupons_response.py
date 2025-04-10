@@ -28,7 +28,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, user_coupons=None):
-        """ListIssuedPartnerCouponsResponse
+        r"""ListIssuedPartnerCouponsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListIssuedPartnerCouponsResponse.
+        r"""Gets the total_count of this ListIssuedPartnerCouponsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListIssuedPartnerCouponsResponse.
+        r"""Sets the total_count of this ListIssuedPartnerCouponsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
 
     @property
     def user_coupons(self):
-        """Gets the user_coupons of this ListIssuedPartnerCouponsResponse.
+        r"""Gets the user_coupons of this ListIssuedPartnerCouponsResponse.
 
         发放的优惠券记录。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
 
     @user_coupons.setter
     def user_coupons(self, user_coupons):
-        """Sets the user_coupons of this ListIssuedPartnerCouponsResponse.
+        r"""Sets the user_coupons of this ListIssuedPartnerCouponsResponse.
 
         发放的优惠券记录。 具体请参见表2。
 

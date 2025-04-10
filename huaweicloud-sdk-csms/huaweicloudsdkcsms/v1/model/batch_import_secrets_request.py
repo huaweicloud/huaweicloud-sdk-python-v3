@@ -25,7 +25,7 @@ class BatchImportSecretsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchImportSecretsRequest
+        r"""BatchImportSecretsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchImportSecretsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchImportSecretsRequest.
+        r"""Gets the body of this BatchImportSecretsRequest.
 
         :return: The body of this BatchImportSecretsRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.ImportSecretsRequest`
@@ -52,7 +52,7 @@ class BatchImportSecretsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchImportSecretsRequest.
+        r"""Sets the body of this BatchImportSecretsRequest.
 
         :param body: The body of this BatchImportSecretsRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.ImportSecretsRequest`

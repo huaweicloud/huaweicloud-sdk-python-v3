@@ -27,7 +27,7 @@ class ShowIncrementComponentsDetailRequest:
     }
 
     def __init__(self, job_id=None, x_language=None):
-        """ShowIncrementComponentsDetailRequest
+        r"""ShowIncrementComponentsDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowIncrementComponentsDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowIncrementComponentsDetailRequest.
+        r"""Gets the job_id of this ShowIncrementComponentsDetailRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class ShowIncrementComponentsDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowIncrementComponentsDetailRequest.
+        r"""Sets the job_id of this ShowIncrementComponentsDetailRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class ShowIncrementComponentsDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowIncrementComponentsDetailRequest.
+        r"""Gets the x_language of this ShowIncrementComponentsDetailRequest.
 
         请求语言类型。
 
@@ -82,7 +82,7 @@ class ShowIncrementComponentsDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowIncrementComponentsDetailRequest.
+        r"""Sets the x_language of this ShowIncrementComponentsDetailRequest.
 
         请求语言类型。
 

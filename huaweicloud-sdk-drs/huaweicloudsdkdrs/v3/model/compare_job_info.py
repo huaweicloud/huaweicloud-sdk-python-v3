@@ -43,7 +43,7 @@ class CompareJobInfo:
     }
 
     def __init__(self, id=None, type=None, options=None, start_time=None, end_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_tag=None, proportion_value=None):
-        """CompareJobInfo
+        r"""CompareJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CompareJobInfo:
 
     @property
     def id(self):
-        """Gets the id of this CompareJobInfo.
+        r"""Gets the id of this CompareJobInfo.
 
         对比任务ID。
 
@@ -117,7 +117,7 @@ class CompareJobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CompareJobInfo.
+        r"""Sets the id of this CompareJobInfo.
 
         对比任务ID。
 
@@ -128,7 +128,7 @@ class CompareJobInfo:
 
     @property
     def type(self):
-        """Gets the type of this CompareJobInfo.
+        r"""Gets the type of this CompareJobInfo.
 
         对比类型。 - lines：行数对比 - contents：内容对比 - random：抽样对比，当前仅支持gaussdbv5、gaussdbv5-to-postgresql、gaussdbv5ha-to-postgresql链路。
 
@@ -139,7 +139,7 @@ class CompareJobInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CompareJobInfo.
+        r"""Sets the type of this CompareJobInfo.
 
         对比类型。 - lines：行数对比 - contents：内容对比 - random：抽样对比，当前仅支持gaussdbv5、gaussdbv5-to-postgresql、gaussdbv5ha-to-postgresql链路。
 
@@ -150,7 +150,7 @@ class CompareJobInfo:
 
     @property
     def options(self):
-        """Gets the options of this CompareJobInfo.
+        r"""Gets the options of this CompareJobInfo.
 
         对比配置项，key-value形式。 内容对比支持以下配置项： - 对比方式配置，key：contentCompareType，value：dynamic表示动态对比，static表示静态对比。 - lob字段对比类型配置，key：lobCompare，value：ignore表示忽略，length表示长度对比。  行数对比支持以下配置项： - 对比策略配置，多表归一情况下适用，key：comparePolicy，value：normal表示正常对比，manyToOne表示多对一对比。
 
@@ -161,7 +161,7 @@ class CompareJobInfo:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this CompareJobInfo.
+        r"""Sets the options of this CompareJobInfo.
 
         对比配置项，key-value形式。 内容对比支持以下配置项： - 对比方式配置，key：contentCompareType，value：dynamic表示动态对比，static表示静态对比。 - lob字段对比类型配置，key：lobCompare，value：ignore表示忽略，length表示长度对比。  行数对比支持以下配置项： - 对比策略配置，多表归一情况下适用，key：comparePolicy，value：normal表示正常对比，manyToOne表示多对一对比。
 
@@ -172,7 +172,7 @@ class CompareJobInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CompareJobInfo.
+        r"""Gets the start_time of this CompareJobInfo.
 
         开始时间，UTC时间，例如：2020-09-01T18:50:20Z。
 
@@ -183,7 +183,7 @@ class CompareJobInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CompareJobInfo.
+        r"""Sets the start_time of this CompareJobInfo.
 
         开始时间，UTC时间，例如：2020-09-01T18:50:20Z。
 
@@ -194,7 +194,7 @@ class CompareJobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CompareJobInfo.
+        r"""Gets the end_time of this CompareJobInfo.
 
         结束时间，UTC时间，例如：2020-09-01T18:50:20Z。
 
@@ -205,7 +205,7 @@ class CompareJobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CompareJobInfo.
+        r"""Sets the end_time of this CompareJobInfo.
 
         结束时间，UTC时间，例如：2020-09-01T18:50:20Z。
 
@@ -216,7 +216,7 @@ class CompareJobInfo:
 
     @property
     def status(self):
-        """Gets the status of this CompareJobInfo.
+        r"""Gets the status of this CompareJobInfo.
 
         对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 
@@ -227,7 +227,7 @@ class CompareJobInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CompareJobInfo.
+        r"""Sets the status of this CompareJobInfo.
 
         对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 
@@ -238,7 +238,7 @@ class CompareJobInfo:
 
     @property
     def export_status(self):
-        """Gets the export_status of this CompareJobInfo.
+        r"""Gets the export_status of this CompareJobInfo.
 
         导出对比结果状态。 - INIT：初始状态 - EXPORTING：对比结果导出中 - EXPORT_COMPLETE：对比结果导出完成 - EXPORT_COMMON_FAILED：对比结果导出失败
 
@@ -249,7 +249,7 @@ class CompareJobInfo:
 
     @export_status.setter
     def export_status(self, export_status):
-        """Sets the export_status of this CompareJobInfo.
+        r"""Sets the export_status of this CompareJobInfo.
 
         导出对比结果状态。 - INIT：初始状态 - EXPORTING：对比结果导出中 - EXPORT_COMPLETE：对比结果导出完成 - EXPORT_COMMON_FAILED：对比结果导出失败
 
@@ -260,7 +260,7 @@ class CompareJobInfo:
 
     @property
     def report_remain_seconds(self):
-        """Gets the report_remain_seconds of this CompareJobInfo.
+        r"""Gets the report_remain_seconds of this CompareJobInfo.
 
         导出比对结果有效期剩余时间。
 
@@ -271,7 +271,7 @@ class CompareJobInfo:
 
     @report_remain_seconds.setter
     def report_remain_seconds(self, report_remain_seconds):
-        """Sets the report_remain_seconds of this CompareJobInfo.
+        r"""Sets the report_remain_seconds of this CompareJobInfo.
 
         导出比对结果有效期剩余时间。
 
@@ -282,7 +282,7 @@ class CompareJobInfo:
 
     @property
     def compare_job_tag(self):
-        """Gets the compare_job_tag of this CompareJobInfo.
+        r"""Gets the compare_job_tag of this CompareJobInfo.
 
         对比任务的标签，当前仅涉及对比策略时返回。
 
@@ -293,7 +293,7 @@ class CompareJobInfo:
 
     @compare_job_tag.setter
     def compare_job_tag(self, compare_job_tag):
-        """Sets the compare_job_tag of this CompareJobInfo.
+        r"""Sets the compare_job_tag of this CompareJobInfo.
 
         对比任务的标签，当前仅涉及对比策略时返回。
 
@@ -304,7 +304,7 @@ class CompareJobInfo:
 
     @property
     def proportion_value(self):
-        """Gets the proportion_value of this CompareJobInfo.
+        r"""Gets the proportion_value of this CompareJobInfo.
 
         抽样比例，对比类型为抽样对比时填写。
 
@@ -315,7 +315,7 @@ class CompareJobInfo:
 
     @proportion_value.setter
     def proportion_value(self, proportion_value):
-        """Sets the proportion_value of this CompareJobInfo.
+        r"""Sets the proportion_value of this CompareJobInfo.
 
         抽样比例，对比类型为抽样对比时填写。
 

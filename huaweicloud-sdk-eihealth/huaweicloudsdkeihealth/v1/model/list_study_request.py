@@ -23,7 +23,7 @@ class ListStudyRequest:
     }
 
     def __init__(self):
-        """ListStudyRequest
+        r"""ListStudyRequest
 
         The model defined in huaweicloud sdk
 

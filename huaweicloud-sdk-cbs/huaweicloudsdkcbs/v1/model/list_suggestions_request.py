@@ -27,7 +27,7 @@ class ListSuggestionsRequest:
     }
 
     def __init__(self, qabot_id=None, body=None):
-        """ListSuggestionsRequest
+        r"""ListSuggestionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSuggestionsRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this ListSuggestionsRequest.
+        r"""Gets the qabot_id of this ListSuggestionsRequest.
 
         qabot编号，UUID格式。
 
@@ -60,7 +60,7 @@ class ListSuggestionsRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this ListSuggestionsRequest.
+        r"""Sets the qabot_id of this ListSuggestionsRequest.
 
         qabot编号，UUID格式。
 
@@ -71,7 +71,7 @@ class ListSuggestionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSuggestionsRequest.
+        r"""Gets the body of this ListSuggestionsRequest.
 
         :return: The body of this ListSuggestionsRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostSuggestionsReq`
@@ -80,7 +80,7 @@ class ListSuggestionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSuggestionsRequest.
+        r"""Sets the body of this ListSuggestionsRequest.
 
         :param body: The body of this ListSuggestionsRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostSuggestionsReq`

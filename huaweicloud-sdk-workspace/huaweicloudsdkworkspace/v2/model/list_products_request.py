@@ -47,7 +47,7 @@ class ListProductsRequest:
     }
 
     def __init__(self, product_id=None, flavor_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, deh_product_id=None, is_deh=None, package_type=None, products_range=None, limit=None, offset=None):
-        """ListProductsRequest
+        r"""ListProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListProductsRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListProductsRequest.
+        r"""Gets the product_id of this ListProductsRequest.
 
         产品ID。
 
@@ -131,7 +131,7 @@ class ListProductsRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListProductsRequest.
+        r"""Sets the product_id of this ListProductsRequest.
 
         产品ID。
 
@@ -142,7 +142,7 @@ class ListProductsRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ListProductsRequest.
+        r"""Gets the flavor_id of this ListProductsRequest.
 
         产品flavor_id。
 
@@ -153,7 +153,7 @@ class ListProductsRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ListProductsRequest.
+        r"""Sets the flavor_id of this ListProductsRequest.
 
         产品flavor_id。
 
@@ -164,7 +164,7 @@ class ListProductsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListProductsRequest.
+        r"""Gets the availability_zone of this ListProductsRequest.
 
         可用分区。
 
@@ -175,7 +175,7 @@ class ListProductsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListProductsRequest.
+        r"""Sets the availability_zone of this ListProductsRequest.
 
         可用分区。
 
@@ -186,7 +186,7 @@ class ListProductsRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListProductsRequest.
+        r"""Gets the os_type of this ListProductsRequest.
 
         产品套餐的操作系统类型，当前支持：Windows、Linux。
 
@@ -197,7 +197,7 @@ class ListProductsRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListProductsRequest.
+        r"""Sets the os_type of this ListProductsRequest.
 
         产品套餐的操作系统类型，当前支持：Windows、Linux。
 
@@ -208,7 +208,7 @@ class ListProductsRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListProductsRequest.
+        r"""Gets the charge_mode of this ListProductsRequest.
 
         周期套餐标识。0表示包周期，1表示按需。
 
@@ -219,7 +219,7 @@ class ListProductsRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListProductsRequest.
+        r"""Sets the charge_mode of this ListProductsRequest.
 
         周期套餐标识。0表示包周期，1表示按需。
 
@@ -230,7 +230,7 @@ class ListProductsRequest:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListProductsRequest.
+        r"""Gets the architecture of this ListProductsRequest.
 
         架构类型，当前支持：arm、x86。
 
@@ -241,7 +241,7 @@ class ListProductsRequest:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListProductsRequest.
+        r"""Sets the architecture of this ListProductsRequest.
 
         架构类型，当前支持：arm、x86。
 
@@ -252,7 +252,7 @@ class ListProductsRequest:
 
     @property
     def deh_product_id(self):
-        """Gets the deh_product_id of this ListProductsRequest.
+        r"""Gets the deh_product_id of this ListProductsRequest.
 
         wdh套餐id。
 
@@ -263,7 +263,7 @@ class ListProductsRequest:
 
     @deh_product_id.setter
     def deh_product_id(self, deh_product_id):
-        """Sets the deh_product_id of this ListProductsRequest.
+        r"""Sets the deh_product_id of this ListProductsRequest.
 
         wdh套餐id。
 
@@ -274,7 +274,7 @@ class ListProductsRequest:
 
     @property
     def is_deh(self):
-        """Gets the is_deh of this ListProductsRequest.
+        r"""Gets the is_deh of this ListProductsRequest.
 
         是否为wdh产品。
 
@@ -285,7 +285,7 @@ class ListProductsRequest:
 
     @is_deh.setter
     def is_deh(self, is_deh):
-        """Sets the is_deh of this ListProductsRequest.
+        r"""Sets the is_deh of this ListProductsRequest.
 
         是否为wdh产品。
 
@@ -296,7 +296,7 @@ class ListProductsRequest:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ListProductsRequest.
+        r"""Gets the package_type of this ListProductsRequest.
 
         套餐系列。
 
@@ -307,7 +307,7 @@ class ListProductsRequest:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ListProductsRequest.
+        r"""Sets the package_type of this ListProductsRequest.
 
         套餐系列。
 
@@ -318,7 +318,7 @@ class ListProductsRequest:
 
     @property
     def products_range(self):
-        """Gets the products_range of this ListProductsRequest.
+        r"""Gets the products_range of this ListProductsRequest.
 
         查询套餐的范围(all：查询所有套餐，包括培训版；若为null则不包含培训版套餐）
 
@@ -329,7 +329,7 @@ class ListProductsRequest:
 
     @products_range.setter
     def products_range(self, products_range):
-        """Sets the products_range of this ListProductsRequest.
+        r"""Sets the products_range of this ListProductsRequest.
 
         查询套餐的范围(all：查询所有套餐，包括培训版；若为null则不包含培训版套餐）
 
@@ -340,7 +340,7 @@ class ListProductsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProductsRequest.
+        r"""Gets the limit of this ListProductsRequest.
 
         每页数量，范围0-100，默认100。
 
@@ -351,7 +351,7 @@ class ListProductsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProductsRequest.
+        r"""Sets the limit of this ListProductsRequest.
 
         每页数量，范围0-100，默认100。
 
@@ -362,7 +362,7 @@ class ListProductsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProductsRequest.
+        r"""Gets the offset of this ListProductsRequest.
 
         偏移量，默认0。
 
@@ -373,7 +373,7 @@ class ListProductsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProductsRequest.
+        r"""Sets the offset of this ListProductsRequest.
 
         偏移量，默认0。
 

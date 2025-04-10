@@ -27,7 +27,7 @@ class ListConnectionNumberData:
     }
 
     def __init__(self, name=None, list=None):
-        """ListConnectionNumberData
+        r"""ListConnectionNumberData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConnectionNumberData:
 
     @property
     def name(self):
-        """Gets the name of this ListConnectionNumberData.
+        r"""Gets the name of this ListConnectionNumberData.
 
         连接数名称
 
@@ -61,7 +61,7 @@ class ListConnectionNumberData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConnectionNumberData.
+        r"""Sets the name of this ListConnectionNumberData.
 
         连接数名称
 
@@ -72,7 +72,7 @@ class ListConnectionNumberData:
 
     @property
     def list(self):
-        """Gets the list of this ListConnectionNumberData.
+        r"""Gets the list of this ListConnectionNumberData.
 
         items
 
@@ -83,7 +83,7 @@ class ListConnectionNumberData:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListConnectionNumberData.
+        r"""Sets the list of this ListConnectionNumberData.
 
         items
 

@@ -26,7 +26,7 @@ class ShowExtensionDetailResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ShowExtensionDetailResponse
+        r"""ShowExtensionDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowExtensionDetailResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ShowExtensionDetailResponse.
+        r"""Gets the results of this ShowExtensionDetailResponse.
 
         插件列表查询结果集合
 
@@ -55,7 +55,7 @@ class ShowExtensionDetailResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ShowExtensionDetailResponse.
+        r"""Sets the results of this ShowExtensionDetailResponse.
 
         插件列表查询结果集合
 

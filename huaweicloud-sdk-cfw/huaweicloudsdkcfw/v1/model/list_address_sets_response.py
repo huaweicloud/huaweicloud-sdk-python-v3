@@ -26,7 +26,7 @@ class ListAddressSetsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAddressSetsResponse
+        r"""ListAddressSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAddressSetsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAddressSetsResponse.
+        r"""Gets the data of this ListAddressSetsResponse.
 
         :return: The data of this ListAddressSetsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.AddressSetListResponseDTOData`
@@ -53,7 +53,7 @@ class ListAddressSetsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAddressSetsResponse.
+        r"""Sets the data of this ListAddressSetsResponse.
 
         :param data: The data of this ListAddressSetsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.AddressSetListResponseDTOData`

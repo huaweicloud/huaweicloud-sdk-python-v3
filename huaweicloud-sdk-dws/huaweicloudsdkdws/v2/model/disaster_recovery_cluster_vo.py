@@ -27,7 +27,7 @@ class DisasterRecoveryClusterVo:
     }
 
     def __init__(self, id=None, name=None):
-        """DisasterRecoveryClusterVo
+        r"""DisasterRecoveryClusterVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DisasterRecoveryClusterVo:
 
     @property
     def id(self):
-        """Gets the id of this DisasterRecoveryClusterVo.
+        r"""Gets the id of this DisasterRecoveryClusterVo.
 
         集群ID
 
@@ -61,7 +61,7 @@ class DisasterRecoveryClusterVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisasterRecoveryClusterVo.
+        r"""Sets the id of this DisasterRecoveryClusterVo.
 
         集群ID
 
@@ -72,7 +72,7 @@ class DisasterRecoveryClusterVo:
 
     @property
     def name(self):
-        """Gets the name of this DisasterRecoveryClusterVo.
+        r"""Gets the name of this DisasterRecoveryClusterVo.
 
         集群名称
 
@@ -83,7 +83,7 @@ class DisasterRecoveryClusterVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DisasterRecoveryClusterVo.
+        r"""Sets the name of this DisasterRecoveryClusterVo.
 
         集群名称
 

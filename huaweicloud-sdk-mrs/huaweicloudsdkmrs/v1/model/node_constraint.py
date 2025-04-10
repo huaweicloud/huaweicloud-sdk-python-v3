@@ -43,7 +43,7 @@ class NodeConstraint:
     }
 
     def __init__(self, other=None, min_node_num=None, max_node_num=None, min_core_num=None, min_mem_size=None, min_disk_size=None, max_node_group_num=None, min_data_volume_total_size=None, disk_type_constraint=None, min_root_disk_size=None):
-        """NodeConstraint
+        r"""NodeConstraint
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NodeConstraint:
 
     @property
     def other(self):
-        """Gets the other of this NodeConstraint.
+        r"""Gets the other of this NodeConstraint.
 
         其他限制
 
@@ -117,7 +117,7 @@ class NodeConstraint:
 
     @other.setter
     def other(self, other):
-        """Sets the other of this NodeConstraint.
+        r"""Sets the other of this NodeConstraint.
 
         其他限制
 
@@ -128,7 +128,7 @@ class NodeConstraint:
 
     @property
     def min_node_num(self):
-        """Gets the min_node_num of this NodeConstraint.
+        r"""Gets the min_node_num of this NodeConstraint.
 
         最少节点数
 
@@ -139,7 +139,7 @@ class NodeConstraint:
 
     @min_node_num.setter
     def min_node_num(self, min_node_num):
-        """Sets the min_node_num of this NodeConstraint.
+        r"""Sets the min_node_num of this NodeConstraint.
 
         最少节点数
 
@@ -150,7 +150,7 @@ class NodeConstraint:
 
     @property
     def max_node_num(self):
-        """Gets the max_node_num of this NodeConstraint.
+        r"""Gets the max_node_num of this NodeConstraint.
 
         最多节点数
 
@@ -161,7 +161,7 @@ class NodeConstraint:
 
     @max_node_num.setter
     def max_node_num(self, max_node_num):
-        """Sets the max_node_num of this NodeConstraint.
+        r"""Sets the max_node_num of this NodeConstraint.
 
         最多节点数
 
@@ -172,7 +172,7 @@ class NodeConstraint:
 
     @property
     def min_core_num(self):
-        """Gets the min_core_num of this NodeConstraint.
+        r"""Gets the min_core_num of this NodeConstraint.
 
         最少核心数
 
@@ -183,7 +183,7 @@ class NodeConstraint:
 
     @min_core_num.setter
     def min_core_num(self, min_core_num):
-        """Sets the min_core_num of this NodeConstraint.
+        r"""Sets the min_core_num of this NodeConstraint.
 
         最少核心数
 
@@ -194,7 +194,7 @@ class NodeConstraint:
 
     @property
     def min_mem_size(self):
-        """Gets the min_mem_size of this NodeConstraint.
+        r"""Gets the min_mem_size of this NodeConstraint.
 
         最小内存容量
 
@@ -205,7 +205,7 @@ class NodeConstraint:
 
     @min_mem_size.setter
     def min_mem_size(self, min_mem_size):
-        """Sets the min_mem_size of this NodeConstraint.
+        r"""Sets the min_mem_size of this NodeConstraint.
 
         最小内存容量
 
@@ -216,7 +216,7 @@ class NodeConstraint:
 
     @property
     def min_disk_size(self):
-        """Gets the min_disk_size of this NodeConstraint.
+        r"""Gets the min_disk_size of this NodeConstraint.
 
         最小磁盘容量
 
@@ -227,7 +227,7 @@ class NodeConstraint:
 
     @min_disk_size.setter
     def min_disk_size(self, min_disk_size):
-        """Sets the min_disk_size of this NodeConstraint.
+        r"""Sets the min_disk_size of this NodeConstraint.
 
         最小磁盘容量
 
@@ -238,7 +238,7 @@ class NodeConstraint:
 
     @property
     def max_node_group_num(self):
-        """Gets the max_node_group_num of this NodeConstraint.
+        r"""Gets the max_node_group_num of this NodeConstraint.
 
         最大节点组数
 
@@ -249,7 +249,7 @@ class NodeConstraint:
 
     @max_node_group_num.setter
     def max_node_group_num(self, max_node_group_num):
-        """Sets the max_node_group_num of this NodeConstraint.
+        r"""Sets the max_node_group_num of this NodeConstraint.
 
         最大节点组数
 
@@ -260,7 +260,7 @@ class NodeConstraint:
 
     @property
     def min_data_volume_total_size(self):
-        """Gets the min_data_volume_total_size of this NodeConstraint.
+        r"""Gets the min_data_volume_total_size of this NodeConstraint.
 
         最小数据卷容量
 
@@ -271,7 +271,7 @@ class NodeConstraint:
 
     @min_data_volume_total_size.setter
     def min_data_volume_total_size(self, min_data_volume_total_size):
-        """Sets the min_data_volume_total_size of this NodeConstraint.
+        r"""Sets the min_data_volume_total_size of this NodeConstraint.
 
         最小数据卷容量
 
@@ -282,7 +282,7 @@ class NodeConstraint:
 
     @property
     def disk_type_constraint(self):
-        """Gets the disk_type_constraint of this NodeConstraint.
+        r"""Gets the disk_type_constraint of this NodeConstraint.
 
         磁盘类型限制，包含当前节点组所支持的磁盘类型
 
@@ -293,7 +293,7 @@ class NodeConstraint:
 
     @disk_type_constraint.setter
     def disk_type_constraint(self, disk_type_constraint):
-        """Sets the disk_type_constraint of this NodeConstraint.
+        r"""Sets the disk_type_constraint of this NodeConstraint.
 
         磁盘类型限制，包含当前节点组所支持的磁盘类型
 
@@ -304,7 +304,7 @@ class NodeConstraint:
 
     @property
     def min_root_disk_size(self):
-        """Gets the min_root_disk_size of this NodeConstraint.
+        r"""Gets the min_root_disk_size of this NodeConstraint.
 
         最小系统磁盘大小
 
@@ -315,7 +315,7 @@ class NodeConstraint:
 
     @min_root_disk_size.setter
     def min_root_disk_size(self, min_root_disk_size):
-        """Sets the min_root_disk_size of this NodeConstraint.
+        r"""Sets the min_root_disk_size of this NodeConstraint.
 
         最小系统磁盘大小
 

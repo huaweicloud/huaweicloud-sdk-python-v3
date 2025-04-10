@@ -25,7 +25,7 @@ class UnpublishAppReq:
     }
 
     def __init__(self, ids=None):
-        """UnpublishAppReq
+        r"""UnpublishAppReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnpublishAppReq:
 
     @property
     def ids(self):
-        """Gets the ids of this UnpublishAppReq.
+        r"""Gets the ids of this UnpublishAppReq.
 
         应用ID列表,单次最多允许操作50个应用。
 
@@ -53,7 +53,7 @@ class UnpublishAppReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this UnpublishAppReq.
+        r"""Sets the ids of this UnpublishAppReq.
 
         应用ID列表,单次最多允许操作50个应用。
 

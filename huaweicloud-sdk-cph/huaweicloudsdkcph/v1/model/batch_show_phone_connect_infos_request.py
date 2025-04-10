@@ -25,7 +25,7 @@ class BatchShowPhoneConnectInfosRequest:
     }
 
     def __init__(self, body=None):
-        """BatchShowPhoneConnectInfosRequest
+        r"""BatchShowPhoneConnectInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchShowPhoneConnectInfosRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchShowPhoneConnectInfosRequest.
+        r"""Gets the body of this BatchShowPhoneConnectInfosRequest.
 
         :return: The body of this BatchShowPhoneConnectInfosRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.ConnectionRequestBody`
@@ -52,7 +52,7 @@ class BatchShowPhoneConnectInfosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowPhoneConnectInfosRequest.
+        r"""Sets the body of this BatchShowPhoneConnectInfosRequest.
 
         :param body: The body of this BatchShowPhoneConnectInfosRequest.
         :type body: :class:`huaweicloudsdkcph.v1.ConnectionRequestBody`

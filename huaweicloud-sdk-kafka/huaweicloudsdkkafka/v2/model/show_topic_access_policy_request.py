@@ -27,7 +27,7 @@ class ShowTopicAccessPolicyRequest:
     }
 
     def __init__(self, instance_id=None, topic_name=None):
-        """ShowTopicAccessPolicyRequest
+        r"""ShowTopicAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTopicAccessPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowTopicAccessPolicyRequest.
+        r"""Gets the instance_id of this ShowTopicAccessPolicyRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowTopicAccessPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowTopicAccessPolicyRequest.
+        r"""Sets the instance_id of this ShowTopicAccessPolicyRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowTopicAccessPolicyRequest:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this ShowTopicAccessPolicyRequest.
+        r"""Gets the topic_name of this ShowTopicAccessPolicyRequest.
 
         Topic名称。
 
@@ -81,7 +81,7 @@ class ShowTopicAccessPolicyRequest:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this ShowTopicAccessPolicyRequest.
+        r"""Sets the topic_name of this ShowTopicAccessPolicyRequest.
 
         Topic名称。
 

@@ -38,7 +38,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None, id=None, mode=None, configuration_parameters=None):
-        """ShowInstanceConfigurationResponse
+        r"""ShowInstanceConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         :type updated: str
         :param id: 参数模板ID。
         :type id: str
-        :param mode: 数据库实例类型。 GeminiDB Cassandra集群类型为\&quot;Cluster\&quot;。 GeminiDB Mongo副本集类型为\&quot;ReplicaSet\&quot;。 GeminiDB Mongo集群类型为\&quot;Sharding\&quot;。 GeminiDB Influx集群类型为\&quot;Cluster\&quot;。 GeminiDB Influx单节点类型为\&quot;InfluxdbSingle\&quot;。 GeminiDB Redis集群类型为“Cluster”。 GeminiDB Redis主备类型为“Replication”。
+        :param mode: 数据库实例类型。 取值范围: GeminiDB Cassandra经典部署模式集群类型为\&quot;Cluster\&quot;。 GeminiDB Cassandra云原生部署模式集群类型为\&quot;CloudNativeCluster\&quot;。 GeminiDB Mongo副本集类型为\&quot;ReplicaSet\&quot;。 GeminiDB Mongo集群类型为\&quot;Sharding\&quot;。 GeminiDB Influx经典部署模式集群类型为\&quot;Cluster\&quot;。 GeminiDB Influx经典部署模式单节点类型为\&quot;InfluxdbSingle\&quot;。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
         :type mode: str
         :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
         :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationParameterResult`]
@@ -86,7 +86,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this ShowInstanceConfigurationResponse.
+        r"""Gets the datastore_version_name of this ShowInstanceConfigurationResponse.
 
         数据库版本名称。
 
@@ -97,7 +97,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this ShowInstanceConfigurationResponse.
+        r"""Sets the datastore_version_name of this ShowInstanceConfigurationResponse.
 
         数据库版本名称。
 
@@ -108,7 +108,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ShowInstanceConfigurationResponse.
+        r"""Gets the datastore_name of this ShowInstanceConfigurationResponse.
 
         数据库名称。
 
@@ -119,7 +119,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ShowInstanceConfigurationResponse.
+        r"""Sets the datastore_name of this ShowInstanceConfigurationResponse.
 
         数据库名称。
 
@@ -130,7 +130,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowInstanceConfigurationResponse.
+        r"""Gets the created of this ShowInstanceConfigurationResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -141,7 +141,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowInstanceConfigurationResponse.
+        r"""Sets the created of this ShowInstanceConfigurationResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -152,7 +152,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowInstanceConfigurationResponse.
+        r"""Gets the updated of this ShowInstanceConfigurationResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -163,7 +163,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowInstanceConfigurationResponse.
+        r"""Sets the updated of this ShowInstanceConfigurationResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -174,7 +174,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceConfigurationResponse.
+        r"""Gets the id of this ShowInstanceConfigurationResponse.
 
         参数模板ID。
 
@@ -185,7 +185,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceConfigurationResponse.
+        r"""Sets the id of this ShowInstanceConfigurationResponse.
 
         参数模板ID。
 
@@ -196,9 +196,9 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this ShowInstanceConfigurationResponse.
+        r"""Gets the mode of this ShowInstanceConfigurationResponse.
 
-        数据库实例类型。 GeminiDB Cassandra集群类型为\"Cluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx集群类型为\"Cluster\"。 GeminiDB Influx单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis集群类型为“Cluster”。 GeminiDB Redis主备类型为“Replication”。
+        数据库实例类型。 取值范围: GeminiDB Cassandra经典部署模式集群类型为\"Cluster\"。 GeminiDB Cassandra云原生部署模式集群类型为\"CloudNativeCluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx经典部署模式集群类型为\"Cluster\"。 GeminiDB Influx经典部署模式单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
 
         :return: The mode of this ShowInstanceConfigurationResponse.
         :rtype: str
@@ -207,9 +207,9 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowInstanceConfigurationResponse.
+        r"""Sets the mode of this ShowInstanceConfigurationResponse.
 
-        数据库实例类型。 GeminiDB Cassandra集群类型为\"Cluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx集群类型为\"Cluster\"。 GeminiDB Influx单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis集群类型为“Cluster”。 GeminiDB Redis主备类型为“Replication”。
+        数据库实例类型。 取值范围: GeminiDB Cassandra经典部署模式集群类型为\"Cluster\"。 GeminiDB Cassandra云原生部署模式集群类型为\"CloudNativeCluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx经典部署模式集群类型为\"Cluster\"。 GeminiDB Influx经典部署模式单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
 
         :param mode: The mode of this ShowInstanceConfigurationResponse.
         :type mode: str
@@ -218,7 +218,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def configuration_parameters(self):
-        """Gets the configuration_parameters of this ShowInstanceConfigurationResponse.
+        r"""Gets the configuration_parameters of this ShowInstanceConfigurationResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 
@@ -229,7 +229,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @configuration_parameters.setter
     def configuration_parameters(self, configuration_parameters):
-        """Sets the configuration_parameters of this ShowInstanceConfigurationResponse.
+        r"""Sets the configuration_parameters of this ShowInstanceConfigurationResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 

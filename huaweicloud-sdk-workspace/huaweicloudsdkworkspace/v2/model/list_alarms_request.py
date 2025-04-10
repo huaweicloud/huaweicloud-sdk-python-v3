@@ -29,7 +29,7 @@ class ListAlarmsRequest:
     }
 
     def __init__(self, level=None, offset=None, limit=None):
-        """ListAlarmsRequest
+        r"""ListAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAlarmsRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListAlarmsRequest.
+        r"""Gets the level of this ListAlarmsRequest.
 
         告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示
 
@@ -68,7 +68,7 @@ class ListAlarmsRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListAlarmsRequest.
+        r"""Sets the level of this ListAlarmsRequest.
 
         告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示
 
@@ -79,7 +79,7 @@ class ListAlarmsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmsRequest.
+        r"""Gets the offset of this ListAlarmsRequest.
 
         分页偏移量
 
@@ -90,7 +90,7 @@ class ListAlarmsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmsRequest.
+        r"""Sets the offset of this ListAlarmsRequest.
 
         分页偏移量
 
@@ -101,7 +101,7 @@ class ListAlarmsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmsRequest.
+        r"""Gets the limit of this ListAlarmsRequest.
 
         分页大小
 
@@ -112,7 +112,7 @@ class ListAlarmsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmsRequest.
+        r"""Sets the limit of this ListAlarmsRequest.
 
         分页大小
 

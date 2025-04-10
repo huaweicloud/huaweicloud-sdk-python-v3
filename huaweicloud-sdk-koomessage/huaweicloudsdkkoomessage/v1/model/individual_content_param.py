@@ -31,7 +31,7 @@ class IndividualContentParam:
     }
 
     def __init__(self, param_name=None, content_type=None, content_source=None, content_detail=None):
-        """IndividualContentParam
+        r"""IndividualContentParam
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class IndividualContentParam:
 
     @property
     def param_name(self):
-        """Gets the param_name of this IndividualContentParam.
+        r"""Gets the param_name of this IndividualContentParam.
 
         智能信息基础版参数名称。
 
@@ -71,7 +71,7 @@ class IndividualContentParam:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this IndividualContentParam.
+        r"""Sets the param_name of this IndividualContentParam.
 
         智能信息基础版参数名称。
 
@@ -82,7 +82,7 @@ class IndividualContentParam:
 
     @property
     def content_type(self):
-        """Gets the content_type of this IndividualContentParam.
+        r"""Gets the content_type of this IndividualContentParam.
 
         智能信息基础版参数类型。txt：纯文字动参。 
 
@@ -93,7 +93,7 @@ class IndividualContentParam:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this IndividualContentParam.
+        r"""Sets the content_type of this IndividualContentParam.
 
         智能信息基础版参数类型。txt：纯文字动参。 
 
@@ -104,7 +104,7 @@ class IndividualContentParam:
 
     @property
     def content_source(self):
-        """Gets the content_source of this IndividualContentParam.
+        r"""Gets the content_source of this IndividualContentParam.
 
         智能信息基础版参数源。txt：内容源自纯文字。 
 
@@ -115,7 +115,7 @@ class IndividualContentParam:
 
     @content_source.setter
     def content_source(self, content_source):
-        """Sets the content_source of this IndividualContentParam.
+        r"""Sets the content_source of this IndividualContentParam.
 
         智能信息基础版参数源。txt：内容源自纯文字。 
 
@@ -126,7 +126,7 @@ class IndividualContentParam:
 
     @property
     def content_detail(self):
-        """Gets the content_detail of this IndividualContentParam.
+        r"""Gets the content_detail of this IndividualContentParam.
 
         智能信息基础版参数内容，填写经过utf-8编码的文字。 
 
@@ -137,7 +137,7 @@ class IndividualContentParam:
 
     @content_detail.setter
     def content_detail(self, content_detail):
-        """Sets the content_detail of this IndividualContentParam.
+        r"""Sets the content_detail of this IndividualContentParam.
 
         智能信息基础版参数内容，填写经过utf-8编码的文字。 
 

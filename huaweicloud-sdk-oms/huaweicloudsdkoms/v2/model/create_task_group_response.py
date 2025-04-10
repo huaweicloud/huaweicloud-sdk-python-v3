@@ -26,7 +26,7 @@ class CreateTaskGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None):
-        """CreateTaskGroupResponse
+        r"""CreateTaskGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTaskGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateTaskGroupResponse.
+        r"""Gets the group_id of this CreateTaskGroupResponse.
 
         创建的迁移任务组id
 
@@ -55,7 +55,7 @@ class CreateTaskGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateTaskGroupResponse.
+        r"""Sets the group_id of this CreateTaskGroupResponse.
 
         创建的迁移任务组id
 

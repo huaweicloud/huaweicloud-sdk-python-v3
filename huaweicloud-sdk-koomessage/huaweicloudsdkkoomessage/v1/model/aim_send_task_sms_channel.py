@@ -31,7 +31,7 @@ class AIMSendTaskSmsChannel:
     }
 
     def __init__(self, channel_number=None, sms_tpl_id=None, sms_sign=None, sms_app_name=None):
-        """AIMSendTaskSmsChannel
+        r"""AIMSendTaskSmsChannel
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AIMSendTaskSmsChannel:
 
     @property
     def channel_number(self):
-        """Gets the channel_number of this AIMSendTaskSmsChannel.
+        r"""Gets the channel_number of this AIMSendTaskSmsChannel.
 
         短信通道号。  > 预留字段，暂时为空。 
 
@@ -75,7 +75,7 @@ class AIMSendTaskSmsChannel:
 
     @channel_number.setter
     def channel_number(self, channel_number):
-        """Sets the channel_number of this AIMSendTaskSmsChannel.
+        r"""Sets the channel_number of this AIMSendTaskSmsChannel.
 
         短信通道号。  > 预留字段，暂时为空。 
 
@@ -86,7 +86,7 @@ class AIMSendTaskSmsChannel:
 
     @property
     def sms_tpl_id(self):
-        """Gets the sms_tpl_id of this AIMSendTaskSmsChannel.
+        r"""Gets the sms_tpl_id of this AIMSendTaskSmsChannel.
 
         短信模板ID。
 
@@ -97,7 +97,7 @@ class AIMSendTaskSmsChannel:
 
     @sms_tpl_id.setter
     def sms_tpl_id(self, sms_tpl_id):
-        """Sets the sms_tpl_id of this AIMSendTaskSmsChannel.
+        r"""Sets the sms_tpl_id of this AIMSendTaskSmsChannel.
 
         短信模板ID。
 
@@ -108,7 +108,7 @@ class AIMSendTaskSmsChannel:
 
     @property
     def sms_sign(self):
-        """Gets the sms_sign of this AIMSendTaskSmsChannel.
+        r"""Gets the sms_sign of this AIMSendTaskSmsChannel.
 
         短信签名。
 
@@ -119,7 +119,7 @@ class AIMSendTaskSmsChannel:
 
     @sms_sign.setter
     def sms_sign(self, sms_sign):
-        """Sets the sms_sign of this AIMSendTaskSmsChannel.
+        r"""Sets the sms_sign of this AIMSendTaskSmsChannel.
 
         短信签名。
 
@@ -130,7 +130,7 @@ class AIMSendTaskSmsChannel:
 
     @property
     def sms_app_name(self):
-        """Gets the sms_app_name of this AIMSendTaskSmsChannel.
+        r"""Gets the sms_app_name of this AIMSendTaskSmsChannel.
 
         短信应用名称。  > 预留字段，暂时为空。 
 
@@ -141,7 +141,7 @@ class AIMSendTaskSmsChannel:
 
     @sms_app_name.setter
     def sms_app_name(self, sms_app_name):
-        """Sets the sms_app_name of this AIMSendTaskSmsChannel.
+        r"""Sets the sms_app_name of this AIMSendTaskSmsChannel.
 
         短信应用名称。  > 预留字段，暂时为空。 
 

@@ -29,7 +29,7 @@ class MatchExpression:
     }
 
     def __init__(self, key=None, operator=None, values=None):
-        """MatchExpression
+        r"""MatchExpression
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MatchExpression:
 
     @property
     def key(self):
-        """Gets the key of this MatchExpression.
+        r"""Gets the key of this MatchExpression.
 
         规则的标签
 
@@ -68,7 +68,7 @@ class MatchExpression:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MatchExpression.
+        r"""Sets the key of this MatchExpression.
 
         规则的标签
 
@@ -79,7 +79,7 @@ class MatchExpression:
 
     @property
     def operator(self):
-        """Gets the operator of this MatchExpression.
+        r"""Gets the operator of this MatchExpression.
 
         操作符，取值如下： - In：标签值需要在values的列表中 - NotIn：标签的值不在某个列表中 - Exists：某个标签存在 - DoesNotExist：某个标签不存在 - Gt：标签的值大于某个值（字符串比较） - Lt：标签的值小于某个值（字符串比较）
 
@@ -90,7 +90,7 @@ class MatchExpression:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this MatchExpression.
+        r"""Sets the operator of this MatchExpression.
 
         操作符，取值如下： - In：标签值需要在values的列表中 - NotIn：标签的值不在某个列表中 - Exists：某个标签存在 - DoesNotExist：某个标签不存在 - Gt：标签的值大于某个值（字符串比较） - Lt：标签的值小于某个值（字符串比较）
 
@@ -101,7 +101,7 @@ class MatchExpression:
 
     @property
     def values(self):
-        """Gets the values of this MatchExpression.
+        r"""Gets the values of this MatchExpression.
 
         一组标签值。 - 如果运算符为In或NotIn，则值数组必须非空。 - 如果运算符为Exists 或DoesNotExist，则值数组必须为空。 - 如果运算符是Gt或Lt，则值数组必须具有单个元素，该元素将被解释为整数。
 
@@ -112,7 +112,7 @@ class MatchExpression:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this MatchExpression.
+        r"""Sets the values of this MatchExpression.
 
         一组标签值。 - 如果运算符为In或NotIn，则值数组必须非空。 - 如果运算符为Exists 或DoesNotExist，则值数组必须为空。 - 如果运算符是Gt或Lt，则值数组必须具有单个元素，该元素将被解释为整数。
 

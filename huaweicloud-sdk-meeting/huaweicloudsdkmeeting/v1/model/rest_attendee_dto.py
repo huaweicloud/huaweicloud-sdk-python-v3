@@ -57,7 +57,7 @@ class RestAttendeeDTO:
     }
 
     def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=None, is_auto_invite=None, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None, unique_type=None):
-        """RestAttendeeDTO
+        r"""RestAttendeeDTO
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class RestAttendeeDTO:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this RestAttendeeDTO.
+        r"""Gets the user_uuid of this RestAttendeeDTO.
 
         与会者的用户UUID。
 
@@ -166,7 +166,7 @@ class RestAttendeeDTO:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this RestAttendeeDTO.
+        r"""Sets the user_uuid of this RestAttendeeDTO.
 
         与会者的用户UUID。
 
@@ -177,7 +177,7 @@ class RestAttendeeDTO:
 
     @property
     def account_id(self):
-        """Gets the account_id of this RestAttendeeDTO.
+        r"""Gets the account_id of this RestAttendeeDTO.
 
         与会者的帐号。 * 如果是帐号/密码鉴权场景：选填，表示华为云会议帐号 * 如果是APPID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId
 
@@ -188,7 +188,7 @@ class RestAttendeeDTO:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this RestAttendeeDTO.
+        r"""Sets the account_id of this RestAttendeeDTO.
 
         与会者的帐号。 * 如果是帐号/密码鉴权场景：选填，表示华为云会议帐号 * 如果是APPID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId
 
@@ -199,7 +199,7 @@ class RestAttendeeDTO:
 
     @property
     def name(self):
-        """Gets the name of this RestAttendeeDTO.
+        r"""Gets the name of this RestAttendeeDTO.
 
         与会者名称。长度限制为96个字符。
 
@@ -210,7 +210,7 @@ class RestAttendeeDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RestAttendeeDTO.
+        r"""Sets the name of this RestAttendeeDTO.
 
         与会者名称。长度限制为96个字符。
 
@@ -221,7 +221,7 @@ class RestAttendeeDTO:
 
     @property
     def role(self):
-        """Gets the role of this RestAttendeeDTO.
+        r"""Gets the role of this RestAttendeeDTO.
 
         会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
@@ -232,7 +232,7 @@ class RestAttendeeDTO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this RestAttendeeDTO.
+        r"""Sets the role of this RestAttendeeDTO.
 
         会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
@@ -243,7 +243,7 @@ class RestAttendeeDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this RestAttendeeDTO.
+        r"""Gets the phone of this RestAttendeeDTO.
 
         号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫
 
@@ -254,7 +254,7 @@ class RestAttendeeDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this RestAttendeeDTO.
+        r"""Sets the phone of this RestAttendeeDTO.
 
         号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫
 
@@ -265,7 +265,7 @@ class RestAttendeeDTO:
 
     @property
     def phone2(self):
-        """Gets the phone2 of this RestAttendeeDTO.
+        r"""Gets the phone2 of this RestAttendeeDTO.
 
         预留字段，取值类型同phone。
 
@@ -276,7 +276,7 @@ class RestAttendeeDTO:
 
     @phone2.setter
     def phone2(self, phone2):
-        """Sets the phone2 of this RestAttendeeDTO.
+        r"""Sets the phone2 of this RestAttendeeDTO.
 
         预留字段，取值类型同phone。
 
@@ -287,7 +287,7 @@ class RestAttendeeDTO:
 
     @property
     def phone3(self):
-        """Gets the phone3 of this RestAttendeeDTO.
+        r"""Gets the phone3 of this RestAttendeeDTO.
 
         预留字段，取值类型同phone。
 
@@ -298,7 +298,7 @@ class RestAttendeeDTO:
 
     @phone3.setter
     def phone3(self, phone3):
-        """Sets the phone3 of this RestAttendeeDTO.
+        r"""Sets the phone3 of this RestAttendeeDTO.
 
         预留字段，取值类型同phone。
 
@@ -309,7 +309,7 @@ class RestAttendeeDTO:
 
     @property
     def email(self):
-        """Gets the email of this RestAttendeeDTO.
+        r"""Gets the email of this RestAttendeeDTO.
 
         邮箱地址。需要发邮件通知时填写。
 
@@ -320,7 +320,7 @@ class RestAttendeeDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this RestAttendeeDTO.
+        r"""Sets the email of this RestAttendeeDTO.
 
         邮箱地址。需要发邮件通知时填写。
 
@@ -331,7 +331,7 @@ class RestAttendeeDTO:
 
     @property
     def sms(self):
-        """Gets the sms of this RestAttendeeDTO.
+        r"""Gets the sms of this RestAttendeeDTO.
 
         短信通知的手机号码。需要发短信通知时填写。
 
@@ -342,7 +342,7 @@ class RestAttendeeDTO:
 
     @sms.setter
     def sms(self, sms):
-        """Sets the sms of this RestAttendeeDTO.
+        r"""Sets the sms of this RestAttendeeDTO.
 
         短信通知的手机号码。需要发短信通知时填写。
 
@@ -353,7 +353,7 @@ class RestAttendeeDTO:
 
     @property
     def is_mute(self):
-        """Gets the is_mute of this RestAttendeeDTO.
+        r"""Gets the is_mute of this RestAttendeeDTO.
 
         用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音 - 1: 需要静音 > 仅会中邀请与会者时生效。
 
@@ -364,7 +364,7 @@ class RestAttendeeDTO:
 
     @is_mute.setter
     def is_mute(self, is_mute):
-        """Sets the is_mute of this RestAttendeeDTO.
+        r"""Sets the is_mute of this RestAttendeeDTO.
 
         用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音 - 1: 需要静音 > 仅会中邀请与会者时生效。
 
@@ -375,7 +375,7 @@ class RestAttendeeDTO:
 
     @property
     def is_auto_invite(self):
-        """Gets the is_auto_invite of this RestAttendeeDTO.
+        r"""Gets the is_auto_invite of this RestAttendeeDTO.
 
         会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请 > 仅并发会议资源的随机会议ID会议才生效。
 
@@ -386,7 +386,7 @@ class RestAttendeeDTO:
 
     @is_auto_invite.setter
     def is_auto_invite(self, is_auto_invite):
-        """Sets the is_auto_invite of this RestAttendeeDTO.
+        r"""Sets the is_auto_invite of this RestAttendeeDTO.
 
         会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请 > 仅并发会议资源的随机会议ID会议才生效。
 
@@ -397,7 +397,7 @@ class RestAttendeeDTO:
 
     @property
     def type(self):
-        """Gets the type of this RestAttendeeDTO.
+        r"""Gets the type of this RestAttendeeDTO.
 
         终端类型，类型枚举如下： * normal: 软终端 * terminal: 会议室或硬终端 * outside: 外部与会人 * mobile: 用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms），含Maxhub、海信大屏、IdeaHub B2 * hwvision：华为智慧屏TV
 
@@ -408,7 +408,7 @@ class RestAttendeeDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RestAttendeeDTO.
+        r"""Sets the type of this RestAttendeeDTO.
 
         终端类型，类型枚举如下： * normal: 软终端 * terminal: 会议室或硬终端 * outside: 外部与会人 * mobile: 用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms），含Maxhub、海信大屏、IdeaHub B2 * hwvision：华为智慧屏TV
 
@@ -419,7 +419,7 @@ class RestAttendeeDTO:
 
     @property
     def address(self):
-        """Gets the address of this RestAttendeeDTO.
+        r"""Gets the address of this RestAttendeeDTO.
 
         预留字段，终端所在会议室信息。
 
@@ -430,7 +430,7 @@ class RestAttendeeDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this RestAttendeeDTO.
+        r"""Sets the address of this RestAttendeeDTO.
 
         预留字段，终端所在会议室信息。
 
@@ -441,7 +441,7 @@ class RestAttendeeDTO:
 
     @property
     def dept_uuid(self):
-        """Gets the dept_uuid of this RestAttendeeDTO.
+        r"""Gets the dept_uuid of this RestAttendeeDTO.
 
         部门ID。
 
@@ -452,7 +452,7 @@ class RestAttendeeDTO:
 
     @dept_uuid.setter
     def dept_uuid(self, dept_uuid):
-        """Sets the dept_uuid of this RestAttendeeDTO.
+        r"""Sets the dept_uuid of this RestAttendeeDTO.
 
         部门ID。
 
@@ -463,7 +463,7 @@ class RestAttendeeDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this RestAttendeeDTO.
+        r"""Gets the dept_name of this RestAttendeeDTO.
 
         部门名称。最大不超过128个字符。
 
@@ -474,7 +474,7 @@ class RestAttendeeDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this RestAttendeeDTO.
+        r"""Sets the dept_name of this RestAttendeeDTO.
 
         部门名称。最大不超过128个字符。
 
@@ -485,7 +485,7 @@ class RestAttendeeDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RestAttendeeDTO.
+        r"""Gets the app_id of this RestAttendeeDTO.
 
         App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
@@ -496,7 +496,7 @@ class RestAttendeeDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RestAttendeeDTO.
+        r"""Sets the app_id of this RestAttendeeDTO.
 
         App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
@@ -507,7 +507,7 @@ class RestAttendeeDTO:
 
     @property
     def unique_type(self):
-        """Gets the unique_type of this RestAttendeeDTO.
+        r"""Gets the unique_type of this RestAttendeeDTO.
 
         企业内唯一会场标识, 0标识为普通与会者，1标识为企业内唯一会场; uniqueType 为1， 同时type要指定为customnumber
 
@@ -518,7 +518,7 @@ class RestAttendeeDTO:
 
     @unique_type.setter
     def unique_type(self, unique_type):
-        """Sets the unique_type of this RestAttendeeDTO.
+        r"""Sets the unique_type of this RestAttendeeDTO.
 
         企业内唯一会场标识, 0标识为普通与会者，1标识为企业内唯一会场; uniqueType 为1， 同时type要指定为customnumber
 

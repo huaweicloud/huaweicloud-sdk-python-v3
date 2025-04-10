@@ -27,7 +27,7 @@ class AggregationLogicTableVOSearchResultDataValue:
     }
 
     def __init__(self, records=None, total=None):
-        """AggregationLogicTableVOSearchResultDataValue
+        r"""AggregationLogicTableVOSearchResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AggregationLogicTableVOSearchResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this AggregationLogicTableVOSearchResultDataValue.
+        r"""Gets the records of this AggregationLogicTableVOSearchResultDataValue.
 
         查询到的汇总表值对象（AggregationLogicTableVO）数组。
 
@@ -61,7 +61,7 @@ class AggregationLogicTableVOSearchResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this AggregationLogicTableVOSearchResultDataValue.
+        r"""Sets the records of this AggregationLogicTableVOSearchResultDataValue.
 
         查询到的汇总表值对象（AggregationLogicTableVO）数组。
 
@@ -72,7 +72,7 @@ class AggregationLogicTableVOSearchResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this AggregationLogicTableVOSearchResultDataValue.
+        r"""Gets the total of this AggregationLogicTableVOSearchResultDataValue.
 
         符合搜索条件的记录总数。
 
@@ -83,7 +83,7 @@ class AggregationLogicTableVOSearchResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AggregationLogicTableVOSearchResultDataValue.
+        r"""Sets the total of this AggregationLogicTableVOSearchResultDataValue.
 
         符合搜索条件的记录总数。
 

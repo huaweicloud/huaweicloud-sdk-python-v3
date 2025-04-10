@@ -25,7 +25,7 @@ class TaskInstanceSpecContainersRsp:
     }
 
     def __init__(self, resources=None):
-        """TaskInstanceSpecContainersRsp
+        r"""TaskInstanceSpecContainersRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskInstanceSpecContainersRsp:
 
     @property
     def resources(self):
-        """Gets the resources of this TaskInstanceSpecContainersRsp.
+        r"""Gets the resources of this TaskInstanceSpecContainersRsp.
 
         :return: The resources of this TaskInstanceSpecContainersRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResourceRsp`
@@ -52,7 +52,7 @@ class TaskInstanceSpecContainersRsp:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this TaskInstanceSpecContainersRsp.
+        r"""Sets the resources of this TaskInstanceSpecContainersRsp.
 
         :param resources: The resources of this TaskInstanceSpecContainersRsp.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResourceRsp`

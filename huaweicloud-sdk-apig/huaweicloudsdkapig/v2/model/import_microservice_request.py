@@ -27,7 +27,7 @@ class ImportMicroserviceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ImportMicroserviceRequest
+        r"""ImportMicroserviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportMicroserviceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ImportMicroserviceRequest.
+        r"""Gets the instance_id of this ImportMicroserviceRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class ImportMicroserviceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ImportMicroserviceRequest.
+        r"""Sets the instance_id of this ImportMicroserviceRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class ImportMicroserviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportMicroserviceRequest.
+        r"""Gets the body of this ImportMicroserviceRequest.
 
         :return: The body of this ImportMicroserviceRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroserviceImportReq`
@@ -80,7 +80,7 @@ class ImportMicroserviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportMicroserviceRequest.
+        r"""Sets the body of this ImportMicroserviceRequest.
 
         :param body: The body of this ImportMicroserviceRequest.
         :type body: :class:`huaweicloudsdkapig.v2.MicroserviceImportReq`

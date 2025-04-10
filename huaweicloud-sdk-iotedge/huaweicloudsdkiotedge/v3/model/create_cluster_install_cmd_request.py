@@ -29,7 +29,7 @@ class CreateClusterInstallCmdRequest:
     }
 
     def __init__(self, cluster_id=None, arch=None, os=None):
-        """CreateClusterInstallCmdRequest
+        r"""CreateClusterInstallCmdRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateClusterInstallCmdRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterInstallCmdRequest.
+        r"""Gets the cluster_id of this CreateClusterInstallCmdRequest.
 
         边缘集群ID
 
@@ -66,7 +66,7 @@ class CreateClusterInstallCmdRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterInstallCmdRequest.
+        r"""Sets the cluster_id of this CreateClusterInstallCmdRequest.
 
         边缘集群ID
 
@@ -77,7 +77,7 @@ class CreateClusterInstallCmdRequest:
 
     @property
     def arch(self):
-        """Gets the arch of this CreateClusterInstallCmdRequest.
+        r"""Gets the arch of this CreateClusterInstallCmdRequest.
 
         边缘集群架构
 
@@ -88,7 +88,7 @@ class CreateClusterInstallCmdRequest:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this CreateClusterInstallCmdRequest.
+        r"""Sets the arch of this CreateClusterInstallCmdRequest.
 
         边缘集群架构
 
@@ -99,7 +99,7 @@ class CreateClusterInstallCmdRequest:
 
     @property
     def os(self):
-        """Gets the os of this CreateClusterInstallCmdRequest.
+        r"""Gets the os of this CreateClusterInstallCmdRequest.
 
         集群操作系统内核
 
@@ -110,7 +110,7 @@ class CreateClusterInstallCmdRequest:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this CreateClusterInstallCmdRequest.
+        r"""Sets the os of this CreateClusterInstallCmdRequest.
 
         集群操作系统内核
 

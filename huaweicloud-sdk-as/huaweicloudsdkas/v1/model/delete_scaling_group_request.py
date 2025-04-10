@@ -27,7 +27,7 @@ class DeleteScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None, force_delete=None):
-        """DeleteScalingGroupRequest
+        r"""DeleteScalingGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteScalingGroupRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this DeleteScalingGroupRequest.
+        r"""Gets the scaling_group_id of this DeleteScalingGroupRequest.
 
         伸缩组ID。
 
@@ -60,7 +60,7 @@ class DeleteScalingGroupRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this DeleteScalingGroupRequest.
+        r"""Sets the scaling_group_id of this DeleteScalingGroupRequest.
 
         伸缩组ID。
 
@@ -71,7 +71,7 @@ class DeleteScalingGroupRequest:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this DeleteScalingGroupRequest.
+        r"""Gets the force_delete of this DeleteScalingGroupRequest.
 
         是否强制删除伸缩组。默认为no；可选值为yes或no。
 
@@ -82,7 +82,7 @@ class DeleteScalingGroupRequest:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this DeleteScalingGroupRequest.
+        r"""Sets the force_delete of this DeleteScalingGroupRequest.
 
         是否强制删除伸缩组。默认为no；可选值为yes或no。
 

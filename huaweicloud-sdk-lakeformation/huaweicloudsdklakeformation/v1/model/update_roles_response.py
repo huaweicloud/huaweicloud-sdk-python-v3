@@ -26,7 +26,7 @@ class UpdateRolesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateRolesResponse
+        r"""UpdateRolesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateRolesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateRolesResponse.
+        r"""Gets the body of this UpdateRolesResponse.
 
         :return: The body of this UpdateRolesResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Role`]
@@ -53,7 +53,7 @@ class UpdateRolesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRolesResponse.
+        r"""Sets the body of this UpdateRolesResponse.
 
         :param body: The body of this UpdateRolesResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Role`]

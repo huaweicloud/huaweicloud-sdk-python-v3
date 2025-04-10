@@ -35,7 +35,7 @@ class EcnIegItem:
     }
 
     def __init__(self, id=None, ieg_id=None, region_id=None, status=None, health_status=None, created_at=None):
-        """EcnIegItem
+        r"""EcnIegItem
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class EcnIegItem:
 
     @property
     def id(self):
-        """Gets the id of this EcnIegItem.
+        r"""Gets the id of this EcnIegItem.
 
         企业连接网络绑定智能企业网关ID
 
@@ -87,7 +87,7 @@ class EcnIegItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EcnIegItem.
+        r"""Sets the id of this EcnIegItem.
 
         企业连接网络绑定智能企业网关ID
 
@@ -98,7 +98,7 @@ class EcnIegItem:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this EcnIegItem.
+        r"""Gets the ieg_id of this EcnIegItem.
 
         智能企业网关ID
 
@@ -109,7 +109,7 @@ class EcnIegItem:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this EcnIegItem.
+        r"""Sets the ieg_id of this EcnIegItem.
 
         智能企业网关ID
 
@@ -120,7 +120,7 @@ class EcnIegItem:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EcnIegItem.
+        r"""Gets the region_id of this EcnIegItem.
 
         区域ID
 
@@ -131,7 +131,7 @@ class EcnIegItem:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EcnIegItem.
+        r"""Sets the region_id of this EcnIegItem.
 
         区域ID
 
@@ -142,7 +142,7 @@ class EcnIegItem:
 
     @property
     def status(self):
-        """Gets the status of this EcnIegItem.
+        r"""Gets the status of this EcnIegItem.
 
         状态
 
@@ -153,7 +153,7 @@ class EcnIegItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EcnIegItem.
+        r"""Sets the status of this EcnIegItem.
 
         状态
 
@@ -164,7 +164,7 @@ class EcnIegItem:
 
     @property
     def health_status(self):
-        """Gets the health_status of this EcnIegItem.
+        r"""Gets the health_status of this EcnIegItem.
 
         健康状态
 
@@ -175,7 +175,7 @@ class EcnIegItem:
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this EcnIegItem.
+        r"""Sets the health_status of this EcnIegItem.
 
         健康状态
 
@@ -186,7 +186,7 @@ class EcnIegItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EcnIegItem.
+        r"""Gets the created_at of this EcnIegItem.
 
         创建时间
 
@@ -197,7 +197,7 @@ class EcnIegItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EcnIegItem.
+        r"""Sets the created_at of this EcnIegItem.
 
         创建时间
 

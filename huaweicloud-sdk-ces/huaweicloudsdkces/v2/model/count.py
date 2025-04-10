@@ -23,7 +23,7 @@ class Count:
     }
 
     def __init__(self):
-        """Count
+        r"""Count
 
         The model defined in huaweicloud sdk
 

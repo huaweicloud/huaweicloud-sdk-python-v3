@@ -33,7 +33,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, offset=None, limit=None, marker=None, name=None, instance_type=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。 - 限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 取值范围：0-500的整数，默认为0。 
 
@@ -82,7 +82,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。 - 限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 取值范围：0-500的整数，默认为0。 
 
@@ -93,7 +93,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-500的整数，默认为500。 
 
@@ -104,7 +104,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-500的整数，默认为500。 
 
@@ -115,7 +115,7 @@ class ListInstancesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListInstancesRequest.
+        r"""Gets the marker of this ListInstancesRequest.
 
         上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 
 
@@ -126,7 +126,7 @@ class ListInstancesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListInstancesRequest.
+        r"""Sets the marker of this ListInstancesRequest.
 
         上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 
 
@@ -137,7 +137,7 @@ class ListInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesRequest.
+        r"""Gets the name of this ListInstancesRequest.
 
         **参数说明**：设备接入实例名称，匹配规则为模糊匹配。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -148,7 +148,7 @@ class ListInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesRequest.
+        r"""Sets the name of this ListInstancesRequest.
 
         **参数说明**：设备接入实例名称，匹配规则为模糊匹配。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -159,7 +159,7 @@ class ListInstancesRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListInstancesRequest.
+        r"""Gets the instance_type of this ListInstancesRequest.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -170,7 +170,7 @@ class ListInstancesRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListInstancesRequest.
+        r"""Sets the instance_type of this ListInstancesRequest.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 

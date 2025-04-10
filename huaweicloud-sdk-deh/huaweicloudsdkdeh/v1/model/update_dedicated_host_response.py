@@ -24,7 +24,7 @@ class UpdateDedicatedHostResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDedicatedHostResponse
+        r"""UpdateDedicatedHostResponse
 
         The model defined in huaweicloud sdk
 

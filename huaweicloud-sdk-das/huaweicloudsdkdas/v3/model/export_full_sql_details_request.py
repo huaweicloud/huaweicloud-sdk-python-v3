@@ -81,7 +81,7 @@ class ExportFullSqlDetailsRequest:
     }
 
     def __init__(self, instance_id=None, start_at=None, end_at=None, task_ids=None, node_id=None, keyword=None, fuzzy=None, user_list=None, db_list=None, operation_list=None, client_ip_list=None, thread_id_list=None, trx_id_list=None, session_id_list=None, status_list=None, sql_template_ids=None, cost_min=None, cost_max=None, scan_min=None, scan_max=None, affect_min=None, affect_max=None, return_min=None, return_max=None, sort_field=None, asc=None, page=None, limit=None, x_language=None):
-        """ExportFullSqlDetailsRequest
+        r"""ExportFullSqlDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -236,7 +236,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportFullSqlDetailsRequest.
+        r"""Gets the instance_id of this ExportFullSqlDetailsRequest.
 
         实例ID。
 
@@ -247,7 +247,7 @@ class ExportFullSqlDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportFullSqlDetailsRequest.
+        r"""Sets the instance_id of this ExportFullSqlDetailsRequest.
 
         实例ID。
 
@@ -258,7 +258,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportFullSqlDetailsRequest.
+        r"""Gets the start_at of this ExportFullSqlDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -269,7 +269,7 @@ class ExportFullSqlDetailsRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportFullSqlDetailsRequest.
+        r"""Sets the start_at of this ExportFullSqlDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -280,7 +280,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportFullSqlDetailsRequest.
+        r"""Gets the end_at of this ExportFullSqlDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -291,7 +291,7 @@ class ExportFullSqlDetailsRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportFullSqlDetailsRequest.
+        r"""Sets the end_at of this ExportFullSqlDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -302,7 +302,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def task_ids(self):
-        """Gets the task_ids of this ExportFullSqlDetailsRequest.
+        r"""Gets the task_ids of this ExportFullSqlDetailsRequest.
 
         SQL洞察任务ID列表，时间范围大于1天的SQL洞察任务后台将拆分为多个任务解析，该场景支持多任务过滤导出。
 
@@ -313,7 +313,7 @@ class ExportFullSqlDetailsRequest:
 
     @task_ids.setter
     def task_ids(self, task_ids):
-        """Sets the task_ids of this ExportFullSqlDetailsRequest.
+        r"""Sets the task_ids of this ExportFullSqlDetailsRequest.
 
         SQL洞察任务ID列表，时间范围大于1天的SQL洞察任务后台将拆分为多个任务解析，该场景支持多任务过滤导出。
 
@@ -324,7 +324,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ExportFullSqlDetailsRequest.
+        r"""Gets the node_id of this ExportFullSqlDetailsRequest.
 
         节点ID。
 
@@ -335,7 +335,7 @@ class ExportFullSqlDetailsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ExportFullSqlDetailsRequest.
+        r"""Sets the node_id of this ExportFullSqlDetailsRequest.
 
         节点ID。
 
@@ -346,7 +346,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ExportFullSqlDetailsRequest.
+        r"""Gets the keyword of this ExportFullSqlDetailsRequest.
 
         关键字（可组合，用逗号分隔）。
 
@@ -357,7 +357,7 @@ class ExportFullSqlDetailsRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ExportFullSqlDetailsRequest.
+        r"""Sets the keyword of this ExportFullSqlDetailsRequest.
 
         关键字（可组合，用逗号分隔）。
 
@@ -368,7 +368,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def fuzzy(self):
-        """Gets the fuzzy of this ExportFullSqlDetailsRequest.
+        r"""Gets the fuzzy of this ExportFullSqlDetailsRequest.
 
         是否模糊匹配。
 
@@ -379,7 +379,7 @@ class ExportFullSqlDetailsRequest:
 
     @fuzzy.setter
     def fuzzy(self, fuzzy):
-        """Sets the fuzzy of this ExportFullSqlDetailsRequest.
+        r"""Sets the fuzzy of this ExportFullSqlDetailsRequest.
 
         是否模糊匹配。
 
@@ -390,7 +390,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def user_list(self):
-        """Gets the user_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the user_list of this ExportFullSqlDetailsRequest.
 
         用户名（可组合，用空格分隔）。
 
@@ -401,7 +401,7 @@ class ExportFullSqlDetailsRequest:
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the user_list of this ExportFullSqlDetailsRequest.
 
         用户名（可组合，用空格分隔）。
 
@@ -412,7 +412,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def db_list(self):
-        """Gets the db_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the db_list of this ExportFullSqlDetailsRequest.
 
         数据库（可组合，用空格分隔）。
 
@@ -423,7 +423,7 @@ class ExportFullSqlDetailsRequest:
 
     @db_list.setter
     def db_list(self, db_list):
-        """Sets the db_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the db_list of this ExportFullSqlDetailsRequest.
 
         数据库（可组合，用空格分隔）。
 
@@ -434,7 +434,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def operation_list(self):
-        """Gets the operation_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the operation_list of this ExportFullSqlDetailsRequest.
 
         操作类型（可组合，用空格分隔）。
 
@@ -445,7 +445,7 @@ class ExportFullSqlDetailsRequest:
 
     @operation_list.setter
     def operation_list(self, operation_list):
-        """Sets the operation_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the operation_list of this ExportFullSqlDetailsRequest.
 
         操作类型（可组合，用空格分隔）。
 
@@ -456,7 +456,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def client_ip_list(self):
-        """Gets the client_ip_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the client_ip_list of this ExportFullSqlDetailsRequest.
 
         客户端IP（可组合，用空格分隔）。
 
@@ -467,7 +467,7 @@ class ExportFullSqlDetailsRequest:
 
     @client_ip_list.setter
     def client_ip_list(self, client_ip_list):
-        """Sets the client_ip_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the client_ip_list of this ExportFullSqlDetailsRequest.
 
         客户端IP（可组合，用空格分隔）。
 
@@ -478,7 +478,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def thread_id_list(self):
-        """Gets the thread_id_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the thread_id_list of this ExportFullSqlDetailsRequest.
 
         线程ID（可组合，用空格分隔）。
 
@@ -489,7 +489,7 @@ class ExportFullSqlDetailsRequest:
 
     @thread_id_list.setter
     def thread_id_list(self, thread_id_list):
-        """Sets the thread_id_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the thread_id_list of this ExportFullSqlDetailsRequest.
 
         线程ID（可组合，用空格分隔）。
 
@@ -500,7 +500,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def trx_id_list(self):
-        """Gets the trx_id_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the trx_id_list of this ExportFullSqlDetailsRequest.
 
         事务ID（可组合，用空格分隔）。
 
@@ -511,7 +511,7 @@ class ExportFullSqlDetailsRequest:
 
     @trx_id_list.setter
     def trx_id_list(self, trx_id_list):
-        """Sets the trx_id_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the trx_id_list of this ExportFullSqlDetailsRequest.
 
         事务ID（可组合，用空格分隔）。
 
@@ -522,7 +522,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def session_id_list(self):
-        """Gets the session_id_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the session_id_list of this ExportFullSqlDetailsRequest.
 
         会话ID（可组合，用空格分隔）。
 
@@ -533,7 +533,7 @@ class ExportFullSqlDetailsRequest:
 
     @session_id_list.setter
     def session_id_list(self, session_id_list):
-        """Sets the session_id_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the session_id_list of this ExportFullSqlDetailsRequest.
 
         会话ID（可组合，用空格分隔）。
 
@@ -544,7 +544,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def status_list(self):
-        """Gets the status_list of this ExportFullSqlDetailsRequest.
+        r"""Gets the status_list of this ExportFullSqlDetailsRequest.
 
         执行状态（0:成功，1:失败，可组合，用空格分隔）。
 
@@ -555,7 +555,7 @@ class ExportFullSqlDetailsRequest:
 
     @status_list.setter
     def status_list(self, status_list):
-        """Sets the status_list of this ExportFullSqlDetailsRequest.
+        r"""Sets the status_list of this ExportFullSqlDetailsRequest.
 
         执行状态（0:成功，1:失败，可组合，用空格分隔）。
 
@@ -566,7 +566,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def sql_template_ids(self):
-        """Gets the sql_template_ids of this ExportFullSqlDetailsRequest.
+        r"""Gets the sql_template_ids of this ExportFullSqlDetailsRequest.
 
         SQL模板ID（可组合，用空格分隔）。
 
@@ -577,7 +577,7 @@ class ExportFullSqlDetailsRequest:
 
     @sql_template_ids.setter
     def sql_template_ids(self, sql_template_ids):
-        """Sets the sql_template_ids of this ExportFullSqlDetailsRequest.
+        r"""Sets the sql_template_ids of this ExportFullSqlDetailsRequest.
 
         SQL模板ID（可组合，用空格分隔）。
 
@@ -588,7 +588,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def cost_min(self):
-        """Gets the cost_min of this ExportFullSqlDetailsRequest.
+        r"""Gets the cost_min of this ExportFullSqlDetailsRequest.
 
         最小执行耗时（毫秒）。
 
@@ -599,7 +599,7 @@ class ExportFullSqlDetailsRequest:
 
     @cost_min.setter
     def cost_min(self, cost_min):
-        """Sets the cost_min of this ExportFullSqlDetailsRequest.
+        r"""Sets the cost_min of this ExportFullSqlDetailsRequest.
 
         最小执行耗时（毫秒）。
 
@@ -610,7 +610,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def cost_max(self):
-        """Gets the cost_max of this ExportFullSqlDetailsRequest.
+        r"""Gets the cost_max of this ExportFullSqlDetailsRequest.
 
         最大执行耗时（毫秒）。
 
@@ -621,7 +621,7 @@ class ExportFullSqlDetailsRequest:
 
     @cost_max.setter
     def cost_max(self, cost_max):
-        """Sets the cost_max of this ExportFullSqlDetailsRequest.
+        r"""Sets the cost_max of this ExportFullSqlDetailsRequest.
 
         最大执行耗时（毫秒）。
 
@@ -632,7 +632,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def scan_min(self):
-        """Gets the scan_min of this ExportFullSqlDetailsRequest.
+        r"""Gets the scan_min of this ExportFullSqlDetailsRequest.
 
         最小扫描行数。
 
@@ -643,7 +643,7 @@ class ExportFullSqlDetailsRequest:
 
     @scan_min.setter
     def scan_min(self, scan_min):
-        """Sets the scan_min of this ExportFullSqlDetailsRequest.
+        r"""Sets the scan_min of this ExportFullSqlDetailsRequest.
 
         最小扫描行数。
 
@@ -654,7 +654,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def scan_max(self):
-        """Gets the scan_max of this ExportFullSqlDetailsRequest.
+        r"""Gets the scan_max of this ExportFullSqlDetailsRequest.
 
         最大扫描行数。
 
@@ -665,7 +665,7 @@ class ExportFullSqlDetailsRequest:
 
     @scan_max.setter
     def scan_max(self, scan_max):
-        """Sets the scan_max of this ExportFullSqlDetailsRequest.
+        r"""Sets the scan_max of this ExportFullSqlDetailsRequest.
 
         最大扫描行数。
 
@@ -676,7 +676,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def affect_min(self):
-        """Gets the affect_min of this ExportFullSqlDetailsRequest.
+        r"""Gets the affect_min of this ExportFullSqlDetailsRequest.
 
         最小影响行数。
 
@@ -687,7 +687,7 @@ class ExportFullSqlDetailsRequest:
 
     @affect_min.setter
     def affect_min(self, affect_min):
-        """Sets the affect_min of this ExportFullSqlDetailsRequest.
+        r"""Sets the affect_min of this ExportFullSqlDetailsRequest.
 
         最小影响行数。
 
@@ -698,7 +698,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def affect_max(self):
-        """Gets the affect_max of this ExportFullSqlDetailsRequest.
+        r"""Gets the affect_max of this ExportFullSqlDetailsRequest.
 
         最大影响行数。
 
@@ -709,7 +709,7 @@ class ExportFullSqlDetailsRequest:
 
     @affect_max.setter
     def affect_max(self, affect_max):
-        """Sets the affect_max of this ExportFullSqlDetailsRequest.
+        r"""Sets the affect_max of this ExportFullSqlDetailsRequest.
 
         最大影响行数。
 
@@ -720,7 +720,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def return_min(self):
-        """Gets the return_min of this ExportFullSqlDetailsRequest.
+        r"""Gets the return_min of this ExportFullSqlDetailsRequest.
 
         最小返回行数。
 
@@ -731,7 +731,7 @@ class ExportFullSqlDetailsRequest:
 
     @return_min.setter
     def return_min(self, return_min):
-        """Sets the return_min of this ExportFullSqlDetailsRequest.
+        r"""Sets the return_min of this ExportFullSqlDetailsRequest.
 
         最小返回行数。
 
@@ -742,7 +742,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def return_max(self):
-        """Gets the return_max of this ExportFullSqlDetailsRequest.
+        r"""Gets the return_max of this ExportFullSqlDetailsRequest.
 
         最大返回行数。
 
@@ -753,7 +753,7 @@ class ExportFullSqlDetailsRequest:
 
     @return_max.setter
     def return_max(self, return_max):
-        """Sets the return_max of this ExportFullSqlDetailsRequest.
+        r"""Sets the return_max of this ExportFullSqlDetailsRequest.
 
         最大返回行数。
 
@@ -764,7 +764,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ExportFullSqlDetailsRequest.
+        r"""Gets the sort_field of this ExportFullSqlDetailsRequest.
 
         排序字段（execute_at:执行时间, execute_cost:执行耗时, lock_wait_time:锁等待时间, rows_examined:扫描行数, rows_returned:返回行数）。
 
@@ -775,7 +775,7 @@ class ExportFullSqlDetailsRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ExportFullSqlDetailsRequest.
+        r"""Sets the sort_field of this ExportFullSqlDetailsRequest.
 
         排序字段（execute_at:执行时间, execute_cost:执行耗时, lock_wait_time:锁等待时间, rows_examined:扫描行数, rows_returned:返回行数）。
 
@@ -786,7 +786,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def asc(self):
-        """Gets the asc of this ExportFullSqlDetailsRequest.
+        r"""Gets the asc of this ExportFullSqlDetailsRequest.
 
         排序顺序（true:正序, false:逆序）。
 
@@ -797,7 +797,7 @@ class ExportFullSqlDetailsRequest:
 
     @asc.setter
     def asc(self, asc):
-        """Sets the asc of this ExportFullSqlDetailsRequest.
+        r"""Sets the asc of this ExportFullSqlDetailsRequest.
 
         排序顺序（true:正序, false:逆序）。
 
@@ -808,7 +808,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ExportFullSqlDetailsRequest.
+        r"""Gets the page of this ExportFullSqlDetailsRequest.
 
         页码。
 
@@ -819,7 +819,7 @@ class ExportFullSqlDetailsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ExportFullSqlDetailsRequest.
+        r"""Sets the page of this ExportFullSqlDetailsRequest.
 
         页码。
 
@@ -830,7 +830,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExportFullSqlDetailsRequest.
+        r"""Gets the limit of this ExportFullSqlDetailsRequest.
 
         每页记录数。最大为100。
 
@@ -841,7 +841,7 @@ class ExportFullSqlDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExportFullSqlDetailsRequest.
+        r"""Sets the limit of this ExportFullSqlDetailsRequest.
 
         每页记录数。最大为100。
 
@@ -852,7 +852,7 @@ class ExportFullSqlDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportFullSqlDetailsRequest.
+        r"""Gets the x_language of this ExportFullSqlDetailsRequest.
 
         请求语言类型。
 
@@ -863,7 +863,7 @@ class ExportFullSqlDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportFullSqlDetailsRequest.
+        r"""Sets the x_language of this ExportFullSqlDetailsRequest.
 
         请求语言类型。
 

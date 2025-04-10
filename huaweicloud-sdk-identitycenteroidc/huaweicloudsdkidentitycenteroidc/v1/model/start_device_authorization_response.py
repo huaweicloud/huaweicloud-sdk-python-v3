@@ -36,7 +36,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self, device_code=None, expires_in=None, interval=None, user_code=None, verification_uri=None, verification_uri_complete=None):
-        """StartDeviceAuthorizationResponse
+        r"""StartDeviceAuthorizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @property
     def device_code(self):
-        """Gets the device_code of this StartDeviceAuthorizationResponse.
+        r"""Gets the device_code of this StartDeviceAuthorizationResponse.
 
         设备在轮询会话令牌时使用的设备码
 
@@ -90,7 +90,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @device_code.setter
     def device_code(self, device_code):
-        """Sets the device_code of this StartDeviceAuthorizationResponse.
+        r"""Sets the device_code of this StartDeviceAuthorizationResponse.
 
         设备在轮询会话令牌时使用的设备码
 
@@ -101,7 +101,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @property
     def expires_in(self):
-        """Gets the expires_in of this StartDeviceAuthorizationResponse.
+        r"""Gets the expires_in of this StartDeviceAuthorizationResponse.
 
         设备码失效时间（以秒为单位）
 
@@ -112,7 +112,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @expires_in.setter
     def expires_in(self, expires_in):
-        """Sets the expires_in of this StartDeviceAuthorizationResponse.
+        r"""Sets the expires_in of this StartDeviceAuthorizationResponse.
 
         设备码失效时间（以秒为单位）
 
@@ -123,7 +123,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this StartDeviceAuthorizationResponse.
+        r"""Gets the interval of this StartDeviceAuthorizationResponse.
 
         指示轮询会话时，客户端在两次尝试之间必须等待的秒数
 
@@ -134,7 +134,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this StartDeviceAuthorizationResponse.
+        r"""Sets the interval of this StartDeviceAuthorizationResponse.
 
         指示轮询会话时，客户端在两次尝试之间必须等待的秒数
 
@@ -145,7 +145,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @property
     def user_code(self):
-        """Gets the user_code of this StartDeviceAuthorizationResponse.
+        r"""Gets the user_code of this StartDeviceAuthorizationResponse.
 
         一次性用户验证码。授权正在使用的设备时需要此操作
 
@@ -156,7 +156,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @user_code.setter
     def user_code(self, user_code):
-        """Sets the user_code of this StartDeviceAuthorizationResponse.
+        r"""Sets the user_code of this StartDeviceAuthorizationResponse.
 
         一次性用户验证码。授权正在使用的设备时需要此操作
 
@@ -167,7 +167,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @property
     def verification_uri(self):
-        """Gets the verification_uri of this StartDeviceAuthorizationResponse.
+        r"""Gets the verification_uri of this StartDeviceAuthorizationResponse.
 
         使用一次性用户验证码授权设备的验证页面的URI
 
@@ -178,7 +178,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @verification_uri.setter
     def verification_uri(self, verification_uri):
-        """Sets the verification_uri of this StartDeviceAuthorizationResponse.
+        r"""Sets the verification_uri of this StartDeviceAuthorizationResponse.
 
         使用一次性用户验证码授权设备的验证页面的URI
 
@@ -189,7 +189,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @property
     def verification_uri_complete(self):
-        """Gets the verification_uri_complete of this StartDeviceAuthorizationResponse.
+        r"""Gets the verification_uri_complete of this StartDeviceAuthorizationResponse.
 
         客户端可用于自动启动浏览器的备用URL。此过程跳过用户访问验证页面并输入代码的手动步骤
 
@@ -200,7 +200,7 @@ class StartDeviceAuthorizationResponse(SdkResponse):
 
     @verification_uri_complete.setter
     def verification_uri_complete(self, verification_uri_complete):
-        """Sets the verification_uri_complete of this StartDeviceAuthorizationResponse.
+        r"""Sets the verification_uri_complete of this StartDeviceAuthorizationResponse.
 
         客户端可用于自动启动浏览器的备用URL。此过程跳过用户访问验证页面并输入代码的手动步骤
 

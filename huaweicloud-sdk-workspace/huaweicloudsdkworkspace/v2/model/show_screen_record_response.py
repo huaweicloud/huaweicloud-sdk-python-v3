@@ -52,7 +52,7 @@ class ShowScreenRecordResponse(SdkResponse):
     }
 
     def __init__(self, id=None, desktop_id=None, desktop_name=None, desktop_pool_id=None, username=None, size=None, type=None, status=None, video_filename=None, event_filename=None, start_time=None, end_time=None, update_time=None, duration=None):
-        """ShowScreenRecordResponse
+        r"""ShowScreenRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowScreenRecordResponse.
+        r"""Gets the id of this ShowScreenRecordResponse.
 
         主键UUID。
 
@@ -146,7 +146,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScreenRecordResponse.
+        r"""Sets the id of this ShowScreenRecordResponse.
 
         主键UUID。
 
@@ -157,7 +157,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ShowScreenRecordResponse.
+        r"""Gets the desktop_id of this ShowScreenRecordResponse.
 
         桌面ID。
 
@@ -168,7 +168,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ShowScreenRecordResponse.
+        r"""Sets the desktop_id of this ShowScreenRecordResponse.
 
         桌面ID。
 
@@ -179,7 +179,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ShowScreenRecordResponse.
+        r"""Gets the desktop_name of this ShowScreenRecordResponse.
 
         桌面名称。
 
@@ -190,7 +190,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ShowScreenRecordResponse.
+        r"""Sets the desktop_name of this ShowScreenRecordResponse.
 
         桌面名称。
 
@@ -201,7 +201,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this ShowScreenRecordResponse.
+        r"""Gets the desktop_pool_id of this ShowScreenRecordResponse.
 
         桌面池ID。
 
@@ -212,7 +212,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this ShowScreenRecordResponse.
+        r"""Sets the desktop_pool_id of this ShowScreenRecordResponse.
 
         桌面池ID。
 
@@ -223,7 +223,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def username(self):
-        """Gets the username of this ShowScreenRecordResponse.
+        r"""Gets the username of this ShowScreenRecordResponse.
 
         用户名称。
 
@@ -234,7 +234,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ShowScreenRecordResponse.
+        r"""Sets the username of this ShowScreenRecordResponse.
 
         用户名称。
 
@@ -245,7 +245,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowScreenRecordResponse.
+        r"""Gets the size of this ShowScreenRecordResponse.
 
         文件大小（Byte）。
 
@@ -256,7 +256,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowScreenRecordResponse.
+        r"""Sets the size of this ShowScreenRecordResponse.
 
         文件大小（Byte）。
 
@@ -267,7 +267,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowScreenRecordResponse.
+        r"""Gets the type of this ShowScreenRecordResponse.
 
         录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
 
@@ -278,7 +278,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowScreenRecordResponse.
+        r"""Sets the type of this ShowScreenRecordResponse.
 
         录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
 
@@ -289,7 +289,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowScreenRecordResponse.
+        r"""Gets the status of this ShowScreenRecordResponse.
 
         录屏状态。 - RECORDING：录制中。 - REC_COMPLETED：录制完成。 - REC_FAILED：录制失败。 - UPLOADING：上传中。 - UPLOAD_COMPLETED：上传完成。 - UPLOAD_FAILED：上传失败。
 
@@ -300,7 +300,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowScreenRecordResponse.
+        r"""Sets the status of this ShowScreenRecordResponse.
 
         录屏状态。 - RECORDING：录制中。 - REC_COMPLETED：录制完成。 - REC_FAILED：录制失败。 - UPLOADING：上传中。 - UPLOAD_COMPLETED：上传完成。 - UPLOAD_FAILED：上传失败。
 
@@ -311,7 +311,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def video_filename(self):
-        """Gets the video_filename of this ShowScreenRecordResponse.
+        r"""Gets the video_filename of this ShowScreenRecordResponse.
 
         录屏文件名称。
 
@@ -322,7 +322,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @video_filename.setter
     def video_filename(self, video_filename):
-        """Sets the video_filename of this ShowScreenRecordResponse.
+        r"""Sets the video_filename of this ShowScreenRecordResponse.
 
         录屏文件名称。
 
@@ -333,7 +333,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def event_filename(self):
-        """Gets the event_filename of this ShowScreenRecordResponse.
+        r"""Gets the event_filename of this ShowScreenRecordResponse.
 
         事件文件名称。
 
@@ -344,7 +344,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @event_filename.setter
     def event_filename(self, event_filename):
-        """Sets the event_filename of this ShowScreenRecordResponse.
+        r"""Sets the event_filename of this ShowScreenRecordResponse.
 
         事件文件名称。
 
@@ -355,7 +355,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowScreenRecordResponse.
+        r"""Gets the start_time of this ShowScreenRecordResponse.
 
         开始时间（2024-10-15T10:04:41.263Z）。
 
@@ -366,7 +366,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowScreenRecordResponse.
+        r"""Sets the start_time of this ShowScreenRecordResponse.
 
         开始时间（2024-10-15T10:04:41.263Z）。
 
@@ -377,7 +377,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowScreenRecordResponse.
+        r"""Gets the end_time of this ShowScreenRecordResponse.
 
         结束时间（2024-10-15T11:04:41.263Z）。
 
@@ -388,7 +388,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowScreenRecordResponse.
+        r"""Sets the end_time of this ShowScreenRecordResponse.
 
         结束时间（2024-10-15T11:04:41.263Z）。
 
@@ -399,7 +399,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowScreenRecordResponse.
+        r"""Gets the update_time of this ShowScreenRecordResponse.
 
         更新时间（2024-10-15T11:04:41.263Z）。
 
@@ -410,7 +410,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowScreenRecordResponse.
+        r"""Sets the update_time of this ShowScreenRecordResponse.
 
         更新时间（2024-10-15T11:04:41.263Z）。
 
@@ -421,7 +421,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowScreenRecordResponse.
+        r"""Gets the duration of this ShowScreenRecordResponse.
 
         视频时长（秒）。
 
@@ -432,7 +432,7 @@ class ShowScreenRecordResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowScreenRecordResponse.
+        r"""Sets the duration of this ShowScreenRecordResponse.
 
         视频时长（秒）。
 

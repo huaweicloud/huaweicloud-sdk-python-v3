@@ -24,7 +24,7 @@ class CreateDrugLigandInteraction2dSvgResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """CreateDrugLigandInteraction2dSvgResponse
+        r"""CreateDrugLigandInteraction2dSvgResponse
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class ShowHostClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ShowHostClusterDetailResponse
+        r"""ShowHostClusterDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHostClusterDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHostClusterDetailResponse.
+        r"""Gets the status of this ShowHostClusterDetailResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class ShowHostClusterDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHostClusterDetailResponse.
+        r"""Sets the status of this ShowHostClusterDetailResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class ShowHostClusterDetailResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowHostClusterDetailResponse.
+        r"""Gets the result of this ShowHostClusterDetailResponse.
 
         :return: The result of this ShowHostClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.HostClusterInfoDetail`
@@ -82,7 +82,7 @@ class ShowHostClusterDetailResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowHostClusterDetailResponse.
+        r"""Sets the result of this ShowHostClusterDetailResponse.
 
         :param result: The result of this ShowHostClusterDetailResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.HostClusterInfoDetail`

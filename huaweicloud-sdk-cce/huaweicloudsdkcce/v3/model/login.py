@@ -27,7 +27,7 @@ class Login:
     }
 
     def __init__(self, ssh_key=None, user_password=None):
-        """Login
+        r"""Login
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Login:
 
     @property
     def ssh_key(self):
-        """Gets the ssh_key of this Login.
+        r"""Gets the ssh_key of this Login.
 
         选择密钥对方式登录时的密钥对名称。
 
@@ -61,7 +61,7 @@ class Login:
 
     @ssh_key.setter
     def ssh_key(self, ssh_key):
-        """Sets the ssh_key of this Login.
+        r"""Sets the ssh_key of this Login.
 
         选择密钥对方式登录时的密钥对名称。
 
@@ -72,7 +72,7 @@ class Login:
 
     @property
     def user_password(self):
-        """Gets the user_password of this Login.
+        r"""Gets the user_password of this Login.
 
         :return: The user_password of this Login.
         :rtype: :class:`huaweicloudsdkcce.v3.UserPassword`
@@ -81,7 +81,7 @@ class Login:
 
     @user_password.setter
     def user_password(self, user_password):
-        """Sets the user_password of this Login.
+        r"""Sets the user_password of this Login.
 
         :param user_password: The user_password of this Login.
         :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`

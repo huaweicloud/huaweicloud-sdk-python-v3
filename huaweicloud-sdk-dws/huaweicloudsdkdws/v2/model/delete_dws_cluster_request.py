@@ -29,7 +29,7 @@ class DeleteDwsClusterRequest:
     }
 
     def __init__(self, cluster_id=None, keep_last_manual_backup=None, release_eip_type=None):
-        """DeleteDwsClusterRequest
+        r"""DeleteDwsClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDwsClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteDwsClusterRequest.
+        r"""Gets the cluster_id of this DeleteDwsClusterRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class DeleteDwsClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteDwsClusterRequest.
+        r"""Sets the cluster_id of this DeleteDwsClusterRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class DeleteDwsClusterRequest:
 
     @property
     def keep_last_manual_backup(self):
-        """Gets the keep_last_manual_backup of this DeleteDwsClusterRequest.
+        r"""Gets the keep_last_manual_backup of this DeleteDwsClusterRequest.
 
         集群需要保留的快照数
 
@@ -89,7 +89,7 @@ class DeleteDwsClusterRequest:
 
     @keep_last_manual_backup.setter
     def keep_last_manual_backup(self, keep_last_manual_backup):
-        """Sets the keep_last_manual_backup of this DeleteDwsClusterRequest.
+        r"""Sets the keep_last_manual_backup of this DeleteDwsClusterRequest.
 
         集群需要保留的快照数
 
@@ -100,7 +100,7 @@ class DeleteDwsClusterRequest:
 
     @property
     def release_eip_type(self):
-        """Gets the release_eip_type of this DeleteDwsClusterRequest.
+        r"""Gets the release_eip_type of this DeleteDwsClusterRequest.
 
         集群是否释放弹性公网IP，默认是NO_RELEASE不释放绑定的弹性公网IP，RELEASE_BINDING释放绑定的弹性公网IP
 
@@ -111,7 +111,7 @@ class DeleteDwsClusterRequest:
 
     @release_eip_type.setter
     def release_eip_type(self, release_eip_type):
-        """Sets the release_eip_type of this DeleteDwsClusterRequest.
+        r"""Sets the release_eip_type of this DeleteDwsClusterRequest.
 
         集群是否释放弹性公网IP，默认是NO_RELEASE不释放绑定的弹性公网IP，RELEASE_BINDING释放绑定的弹性公网IP
 

@@ -26,7 +26,7 @@ class SwitchGaussMySqlInstanceSslResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchGaussMySqlInstanceSslResponse
+        r"""SwitchGaussMySqlInstanceSslResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchGaussMySqlInstanceSslResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchGaussMySqlInstanceSslResponse.
+        r"""Gets the job_id of this SwitchGaussMySqlInstanceSslResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class SwitchGaussMySqlInstanceSslResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchGaussMySqlInstanceSslResponse.
+        r"""Sets the job_id of this SwitchGaussMySqlInstanceSslResponse.
 
         任务ID。
 

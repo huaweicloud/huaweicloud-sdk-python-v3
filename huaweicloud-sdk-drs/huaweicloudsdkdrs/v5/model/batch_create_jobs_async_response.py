@@ -26,7 +26,7 @@ class BatchCreateJobsAsyncResponse(SdkResponse):
     }
 
     def __init__(self, job=None):
-        """BatchCreateJobsAsyncResponse
+        r"""BatchCreateJobsAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateJobsAsyncResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this BatchCreateJobsAsyncResponse.
+        r"""Gets the job of this BatchCreateJobsAsyncResponse.
 
         :return: The job of this BatchCreateJobsAsyncResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.AsyncCreateJobResp`
@@ -53,7 +53,7 @@ class BatchCreateJobsAsyncResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this BatchCreateJobsAsyncResponse.
+        r"""Sets the job of this BatchCreateJobsAsyncResponse.
 
         :param job: The job of this BatchCreateJobsAsyncResponse.
         :type job: :class:`huaweicloudsdkdrs.v5.AsyncCreateJobResp`

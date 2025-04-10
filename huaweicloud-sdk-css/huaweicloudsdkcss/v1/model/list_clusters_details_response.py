@@ -28,7 +28,7 @@ class ListClustersDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total_size=None, clusters=None):
-        """ListClustersDetailsResponse
+        r"""ListClustersDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListClustersDetailsResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ListClustersDetailsResponse.
+        r"""Gets the total_size of this ListClustersDetailsResponse.
 
         集群个数。
 
@@ -62,7 +62,7 @@ class ListClustersDetailsResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ListClustersDetailsResponse.
+        r"""Sets the total_size of this ListClustersDetailsResponse.
 
         集群个数。
 
@@ -73,7 +73,7 @@ class ListClustersDetailsResponse(SdkResponse):
 
     @property
     def clusters(self):
-        """Gets the clusters of this ListClustersDetailsResponse.
+        r"""Gets the clusters of this ListClustersDetailsResponse.
 
         集群对象列表。
 
@@ -84,7 +84,7 @@ class ListClustersDetailsResponse(SdkResponse):
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this ListClustersDetailsResponse.
+        r"""Sets the clusters of this ListClustersDetailsResponse.
 
         集群对象列表。
 

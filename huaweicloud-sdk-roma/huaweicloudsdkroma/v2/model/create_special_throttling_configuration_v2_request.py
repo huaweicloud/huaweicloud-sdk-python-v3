@@ -29,7 +29,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, body=None):
-        """CreateSpecialThrottlingConfigurationV2Request
+        r"""CreateSpecialThrottlingConfigurationV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the instance_id of this CreateSpecialThrottlingConfigurationV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the instance_id of this CreateSpecialThrottlingConfigurationV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
 
         流控策略的编号
 
@@ -88,7 +88,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
 
         流控策略的编号
 
@@ -99,7 +99,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the body of this CreateSpecialThrottlingConfigurationV2Request.
 
         :return: The body of this CreateSpecialThrottlingConfigurationV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.ThrottleSpecialCreate`
@@ -108,7 +108,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the body of this CreateSpecialThrottlingConfigurationV2Request.
 
         :param body: The body of this CreateSpecialThrottlingConfigurationV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.ThrottleSpecialCreate`

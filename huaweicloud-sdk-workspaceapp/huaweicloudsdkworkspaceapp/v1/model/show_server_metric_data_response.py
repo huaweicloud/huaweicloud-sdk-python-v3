@@ -48,7 +48,7 @@ class ShowServerMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, cpu_info=None, memory_info=None, disk_util_inband=None, disk_read_bytes_rate=None, disk_write_bytes_rate=None, disk_read_requests_rate=None, disk_write_requests_rate=None, network_incoming_bytes_rate_inband=None, network_outgoing_bytes_rate_inband=None, network_incoming_bytes_aggregate_rate=None, network_outgoing_bytes_aggregate_rate=None, network_vm_connections=None):
-        """ShowServerMetricDataResponse
+        r"""ShowServerMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def cpu_info(self):
-        """Gets the cpu_info of this ShowServerMetricDataResponse.
+        r"""Gets the cpu_info of this ShowServerMetricDataResponse.
 
         cpu使用率信息。
 
@@ -132,7 +132,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @cpu_info.setter
     def cpu_info(self, cpu_info):
-        """Sets the cpu_info of this ShowServerMetricDataResponse.
+        r"""Sets the cpu_info of this ShowServerMetricDataResponse.
 
         cpu使用率信息。
 
@@ -143,7 +143,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def memory_info(self):
-        """Gets the memory_info of this ShowServerMetricDataResponse.
+        r"""Gets the memory_info of this ShowServerMetricDataResponse.
 
         内存使用率信息。
 
@@ -154,7 +154,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @memory_info.setter
     def memory_info(self, memory_info):
-        """Sets the memory_info of this ShowServerMetricDataResponse.
+        r"""Sets the memory_info of this ShowServerMetricDataResponse.
 
         内存使用率信息。
 
@@ -165,7 +165,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def disk_util_inband(self):
-        """Gets the disk_util_inband of this ShowServerMetricDataResponse.
+        r"""Gets the disk_util_inband of this ShowServerMetricDataResponse.
 
         磁盘使用率。
 
@@ -176,7 +176,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @disk_util_inband.setter
     def disk_util_inband(self, disk_util_inband):
-        """Sets the disk_util_inband of this ShowServerMetricDataResponse.
+        r"""Sets the disk_util_inband of this ShowServerMetricDataResponse.
 
         磁盘使用率。
 
@@ -187,7 +187,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def disk_read_bytes_rate(self):
-        """Gets the disk_read_bytes_rate of this ShowServerMetricDataResponse.
+        r"""Gets the disk_read_bytes_rate of this ShowServerMetricDataResponse.
 
         磁盘读带宽。
 
@@ -198,7 +198,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @disk_read_bytes_rate.setter
     def disk_read_bytes_rate(self, disk_read_bytes_rate):
-        """Sets the disk_read_bytes_rate of this ShowServerMetricDataResponse.
+        r"""Sets the disk_read_bytes_rate of this ShowServerMetricDataResponse.
 
         磁盘读带宽。
 
@@ -209,7 +209,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def disk_write_bytes_rate(self):
-        """Gets the disk_write_bytes_rate of this ShowServerMetricDataResponse.
+        r"""Gets the disk_write_bytes_rate of this ShowServerMetricDataResponse.
 
         磁盘写带宽。
 
@@ -220,7 +220,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @disk_write_bytes_rate.setter
     def disk_write_bytes_rate(self, disk_write_bytes_rate):
-        """Sets the disk_write_bytes_rate of this ShowServerMetricDataResponse.
+        r"""Sets the disk_write_bytes_rate of this ShowServerMetricDataResponse.
 
         磁盘写带宽。
 
@@ -231,7 +231,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def disk_read_requests_rate(self):
-        """Gets the disk_read_requests_rate of this ShowServerMetricDataResponse.
+        r"""Gets the disk_read_requests_rate of this ShowServerMetricDataResponse.
 
         磁盘读IOPS。
 
@@ -242,7 +242,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @disk_read_requests_rate.setter
     def disk_read_requests_rate(self, disk_read_requests_rate):
-        """Sets the disk_read_requests_rate of this ShowServerMetricDataResponse.
+        r"""Sets the disk_read_requests_rate of this ShowServerMetricDataResponse.
 
         磁盘读IOPS。
 
@@ -253,7 +253,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def disk_write_requests_rate(self):
-        """Gets the disk_write_requests_rate of this ShowServerMetricDataResponse.
+        r"""Gets the disk_write_requests_rate of this ShowServerMetricDataResponse.
 
         磁盘写IOPS。
 
@@ -264,7 +264,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @disk_write_requests_rate.setter
     def disk_write_requests_rate(self, disk_write_requests_rate):
-        """Sets the disk_write_requests_rate of this ShowServerMetricDataResponse.
+        r"""Sets the disk_write_requests_rate of this ShowServerMetricDataResponse.
 
         磁盘写IOPS。
 
@@ -275,7 +275,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def network_incoming_bytes_rate_inband(self):
-        """Gets the network_incoming_bytes_rate_inband of this ShowServerMetricDataResponse.
+        r"""Gets the network_incoming_bytes_rate_inband of this ShowServerMetricDataResponse.
 
         带内网络流入速率。
 
@@ -286,7 +286,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @network_incoming_bytes_rate_inband.setter
     def network_incoming_bytes_rate_inband(self, network_incoming_bytes_rate_inband):
-        """Sets the network_incoming_bytes_rate_inband of this ShowServerMetricDataResponse.
+        r"""Sets the network_incoming_bytes_rate_inband of this ShowServerMetricDataResponse.
 
         带内网络流入速率。
 
@@ -297,7 +297,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def network_outgoing_bytes_rate_inband(self):
-        """Gets the network_outgoing_bytes_rate_inband of this ShowServerMetricDataResponse.
+        r"""Gets the network_outgoing_bytes_rate_inband of this ShowServerMetricDataResponse.
 
         带内网络流出速率。
 
@@ -308,7 +308,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @network_outgoing_bytes_rate_inband.setter
     def network_outgoing_bytes_rate_inband(self, network_outgoing_bytes_rate_inband):
-        """Sets the network_outgoing_bytes_rate_inband of this ShowServerMetricDataResponse.
+        r"""Sets the network_outgoing_bytes_rate_inband of this ShowServerMetricDataResponse.
 
         带内网络流出速率。
 
@@ -319,7 +319,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def network_incoming_bytes_aggregate_rate(self):
-        """Gets the network_incoming_bytes_aggregate_rate of this ShowServerMetricDataResponse.
+        r"""Gets the network_incoming_bytes_aggregate_rate of this ShowServerMetricDataResponse.
 
         带外网络流入速率。
 
@@ -330,7 +330,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @network_incoming_bytes_aggregate_rate.setter
     def network_incoming_bytes_aggregate_rate(self, network_incoming_bytes_aggregate_rate):
-        """Sets the network_incoming_bytes_aggregate_rate of this ShowServerMetricDataResponse.
+        r"""Sets the network_incoming_bytes_aggregate_rate of this ShowServerMetricDataResponse.
 
         带外网络流入速率。
 
@@ -341,7 +341,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def network_outgoing_bytes_aggregate_rate(self):
-        """Gets the network_outgoing_bytes_aggregate_rate of this ShowServerMetricDataResponse.
+        r"""Gets the network_outgoing_bytes_aggregate_rate of this ShowServerMetricDataResponse.
 
         带外网络流出速率。
 
@@ -352,7 +352,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @network_outgoing_bytes_aggregate_rate.setter
     def network_outgoing_bytes_aggregate_rate(self, network_outgoing_bytes_aggregate_rate):
-        """Sets the network_outgoing_bytes_aggregate_rate of this ShowServerMetricDataResponse.
+        r"""Sets the network_outgoing_bytes_aggregate_rate of this ShowServerMetricDataResponse.
 
         带外网络流出速率。
 
@@ -363,7 +363,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @property
     def network_vm_connections(self):
-        """Gets the network_vm_connections of this ShowServerMetricDataResponse.
+        r"""Gets the network_vm_connections of this ShowServerMetricDataResponse.
 
         网络连接数。
 
@@ -374,7 +374,7 @@ class ShowServerMetricDataResponse(SdkResponse):
 
     @network_vm_connections.setter
     def network_vm_connections(self, network_vm_connections):
-        """Sets the network_vm_connections of this ShowServerMetricDataResponse.
+        r"""Sets the network_vm_connections of this ShowServerMetricDataResponse.
 
         网络连接数。
 

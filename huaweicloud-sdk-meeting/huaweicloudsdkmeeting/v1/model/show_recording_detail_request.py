@@ -31,7 +31,7 @@ class ShowRecordingDetailRequest:
     }
 
     def __init__(self, conf_uuid=None, user_uuid=None, x_authorization_type=None, x_site_id=None):
-        """ShowRecordingDetailRequest
+        r"""ShowRecordingDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowRecordingDetailRequest:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this ShowRecordingDetailRequest.
+        r"""Gets the conf_uuid of this ShowRecordingDetailRequest.
 
         会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
 
@@ -74,7 +74,7 @@ class ShowRecordingDetailRequest:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this ShowRecordingDetailRequest.
+        r"""Sets the conf_uuid of this ShowRecordingDetailRequest.
 
         会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
 
@@ -85,7 +85,7 @@ class ShowRecordingDetailRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this ShowRecordingDetailRequest.
+        r"""Gets the user_uuid of this ShowRecordingDetailRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -96,7 +96,7 @@ class ShowRecordingDetailRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this ShowRecordingDetailRequest.
+        r"""Sets the user_uuid of this ShowRecordingDetailRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -107,7 +107,7 @@ class ShowRecordingDetailRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this ShowRecordingDetailRequest.
+        r"""Gets the x_authorization_type of this ShowRecordingDetailRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -118,7 +118,7 @@ class ShowRecordingDetailRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this ShowRecordingDetailRequest.
+        r"""Sets the x_authorization_type of this ShowRecordingDetailRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -129,7 +129,7 @@ class ShowRecordingDetailRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this ShowRecordingDetailRequest.
+        r"""Gets the x_site_id of this ShowRecordingDetailRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -140,7 +140,7 @@ class ShowRecordingDetailRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this ShowRecordingDetailRequest.
+        r"""Sets the x_site_id of this ShowRecordingDetailRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

@@ -28,7 +28,7 @@ class ListStudyResponse(SdkResponse):
     }
 
     def __init__(self, count=None, studies=None):
-        """ListStudyResponse
+        r"""ListStudyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStudyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListStudyResponse.
+        r"""Gets the count of this ListStudyResponse.
 
         study总数
 
@@ -62,7 +62,7 @@ class ListStudyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListStudyResponse.
+        r"""Sets the count of this ListStudyResponse.
 
         study总数
 
@@ -73,7 +73,7 @@ class ListStudyResponse(SdkResponse):
 
     @property
     def studies(self):
-        """Gets the studies of this ListStudyResponse.
+        r"""Gets the studies of this ListStudyResponse.
 
         study列表
 
@@ -84,7 +84,7 @@ class ListStudyResponse(SdkResponse):
 
     @studies.setter
     def studies(self, studies):
-        """Sets the studies of this ListStudyResponse.
+        r"""Sets the studies of this ListStudyResponse.
 
         study列表
 

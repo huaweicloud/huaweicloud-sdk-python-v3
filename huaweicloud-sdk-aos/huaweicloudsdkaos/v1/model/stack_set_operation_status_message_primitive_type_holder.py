@@ -25,7 +25,7 @@ class StackSetOperationStatusMessagePrimitiveTypeHolder:
     }
 
     def __init__(self, status_message=None):
-        """StackSetOperationStatusMessagePrimitiveTypeHolder
+        r"""StackSetOperationStatusMessagePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetOperationStatusMessagePrimitiveTypeHolder:
 
     @property
     def status_message(self):
-        """Gets the status_message of this StackSetOperationStatusMessagePrimitiveTypeHolder.
+        r"""Gets the status_message of this StackSetOperationStatusMessagePrimitiveTypeHolder.
 
         资源栈集操作失败时会展示此次操作失败的原因，例如，资源栈实例部署或删除失败个数超过上限或资源栈集操作超时。  如果需要查看详细失败信息，可通过ListStackInstances API获取查看资源栈实例的status_message。
 
@@ -54,7 +54,7 @@ class StackSetOperationStatusMessagePrimitiveTypeHolder:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this StackSetOperationStatusMessagePrimitiveTypeHolder.
+        r"""Sets the status_message of this StackSetOperationStatusMessagePrimitiveTypeHolder.
 
         资源栈集操作失败时会展示此次操作失败的原因，例如，资源栈实例部署或删除失败个数超过上限或资源栈集操作超时。  如果需要查看详细失败信息，可通过ListStackInstances API获取查看资源栈实例的status_message。
 

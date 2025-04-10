@@ -27,7 +27,7 @@ class CustomPolicy:
     }
 
     def __init__(self, version=None, statement=None):
-        """CustomPolicy
+        r"""CustomPolicy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CustomPolicy:
 
     @property
     def version(self):
-        """Gets the version of this CustomPolicy.
+        r"""Gets the version of this CustomPolicy.
 
         权限版本号，创建自定义策略时，该字段值填为“1.1”。 > - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 > - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
 
@@ -59,7 +59,7 @@ class CustomPolicy:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CustomPolicy.
+        r"""Sets the version of this CustomPolicy.
 
         权限版本号，创建自定义策略时，该字段值填为“1.1”。 > - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 > - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
 
@@ -70,7 +70,7 @@ class CustomPolicy:
 
     @property
     def statement(self):
-        """Gets the statement of this CustomPolicy.
+        r"""Gets the statement of this CustomPolicy.
 
         授权语句，描述自定义策略的具体内容。
 
@@ -81,7 +81,7 @@ class CustomPolicy:
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this CustomPolicy.
+        r"""Sets the statement of this CustomPolicy.
 
         授权语句，描述自定义策略的具体内容。
 

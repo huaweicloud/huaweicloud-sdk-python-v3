@@ -38,7 +38,7 @@ class ListResourceUsageResponse(SdkResponse):
     }
 
     def __init__(self, actual_days=None, band_width=None, monthly_guaranteed_band_width=None, monthly_peak_band_width=None, band_width_measure_id=None, total_count=None, usage_info_list=None):
-        """ListResourceUsageResponse
+        r"""ListResourceUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def actual_days(self):
-        """Gets the actual_days of this ListResourceUsageResponse.
+        r"""Gets the actual_days of this ListResourceUsageResponse.
 
         有效天数，精度最高返回小数点后20位。  说明： 计算方式为上报的点数/288所得出的值。其中288为一天的点数，5分钟为一个点数单位。计算95费用时，因95费用是按月定价，若实际不足月，则是使用官网价*折扣*actual_days/当月天数，来计算费用明细。
 
@@ -97,7 +97,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @actual_days.setter
     def actual_days(self, actual_days):
-        """Sets the actual_days of this ListResourceUsageResponse.
+        r"""Sets the actual_days of this ListResourceUsageResponse.
 
         有效天数，精度最高返回小数点后20位。  说明： 计算方式为上报的点数/288所得出的值。其中288为一天的点数，5分钟为一个点数单位。计算95费用时，因95费用是按月定价，若实际不足月，则是使用官网价*折扣*actual_days/当月天数，来计算费用明细。
 
@@ -108,7 +108,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def band_width(self):
-        """Gets the band_width of this ListResourceUsageResponse.
+        r"""Gets the band_width of this ListResourceUsageResponse.
 
         计费带宽的按月汇总。 说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。
 
@@ -119,7 +119,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this ListResourceUsageResponse.
+        r"""Sets the band_width of this ListResourceUsageResponse.
 
         计费带宽的按月汇总。 说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。
 
@@ -130,7 +130,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def monthly_guaranteed_band_width(self):
-        """Gets the monthly_guaranteed_band_width of this ListResourceUsageResponse.
+        r"""Gets the monthly_guaranteed_band_width of this ListResourceUsageResponse.
 
         月保底带宽的按月汇总。 说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -141,7 +141,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @monthly_guaranteed_band_width.setter
     def monthly_guaranteed_band_width(self, monthly_guaranteed_band_width):
-        """Sets the monthly_guaranteed_band_width of this ListResourceUsageResponse.
+        r"""Sets the monthly_guaranteed_band_width of this ListResourceUsageResponse.
 
         月保底带宽的按月汇总。 说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -152,7 +152,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def monthly_peak_band_width(self):
-        """Gets the monthly_peak_band_width of this ListResourceUsageResponse.
+        r"""Gets the monthly_peak_band_width of this ListResourceUsageResponse.
 
         月峰值带宽。 说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -163,7 +163,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @monthly_peak_band_width.setter
     def monthly_peak_band_width(self, monthly_peak_band_width):
-        """Sets the monthly_peak_band_width of this ListResourceUsageResponse.
+        r"""Sets the monthly_peak_band_width of this ListResourceUsageResponse.
 
         月峰值带宽。 说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -174,7 +174,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def band_width_measure_id(self):
-        """Gets the band_width_measure_id of this ListResourceUsageResponse.
+        r"""Gets the band_width_measure_id of this ListResourceUsageResponse.
 
         带宽单位，您可以调用查询度量单位列表接口获取。若所有带宽为空，则该字段为空。
 
@@ -185,7 +185,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @band_width_measure_id.setter
     def band_width_measure_id(self, band_width_measure_id):
-        """Sets the band_width_measure_id of this ListResourceUsageResponse.
+        r"""Sets the band_width_measure_id of this ListResourceUsageResponse.
 
         带宽单位，您可以调用查询度量单位列表接口获取。若所有带宽为空，则该字段为空。
 
@@ -196,7 +196,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourceUsageResponse.
+        r"""Gets the total_count of this ListResourceUsageResponse.
 
         总条数。
 
@@ -207,7 +207,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourceUsageResponse.
+        r"""Sets the total_count of this ListResourceUsageResponse.
 
         总条数。
 
@@ -218,7 +218,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @property
     def usage_info_list(self):
-        """Gets the usage_info_list of this ListResourceUsageResponse.
+        r"""Gets the usage_info_list of this ListResourceUsageResponse.
 
         使用量明细（5分钟统计值）。具体请参见表3。
 
@@ -229,7 +229,7 @@ class ListResourceUsageResponse(SdkResponse):
 
     @usage_info_list.setter
     def usage_info_list(self, usage_info_list):
-        """Sets the usage_info_list of this ListResourceUsageResponse.
+        r"""Sets the usage_info_list of this ListResourceUsageResponse.
 
         使用量明细（5分钟统计值）。具体请参见表3。
 

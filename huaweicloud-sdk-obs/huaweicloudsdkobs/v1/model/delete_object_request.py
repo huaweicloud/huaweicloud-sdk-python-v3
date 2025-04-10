@@ -33,7 +33,7 @@ class DeleteObjectRequest:
     }
 
     def __init__(self, bucket_name=None, object_key=None, date=None, version_id=None):
-        """DeleteObjectRequest
+        r"""DeleteObjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeleteObjectRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this DeleteObjectRequest.
+        r"""Gets the bucket_name of this DeleteObjectRequest.
 
         Name of the bucket.
 
@@ -75,7 +75,7 @@ class DeleteObjectRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this DeleteObjectRequest.
+        r"""Sets the bucket_name of this DeleteObjectRequest.
 
         Name of the bucket.
 
@@ -86,7 +86,7 @@ class DeleteObjectRequest:
 
     @property
     def object_key(self):
-        """Gets the object_key of this DeleteObjectRequest.
+        r"""Gets the object_key of this DeleteObjectRequest.
 
         Name of the object to be deleted.
 
@@ -97,7 +97,7 @@ class DeleteObjectRequest:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this DeleteObjectRequest.
+        r"""Sets the object_key of this DeleteObjectRequest.
 
         Name of the object to be deleted.
 
@@ -108,7 +108,7 @@ class DeleteObjectRequest:
 
     @property
     def date(self):
-        """Gets the date of this DeleteObjectRequest.
+        r"""Gets the date of this DeleteObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -119,7 +119,7 @@ class DeleteObjectRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteObjectRequest.
+        r"""Sets the date of this DeleteObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -130,7 +130,7 @@ class DeleteObjectRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeleteObjectRequest.
+        r"""Gets the version_id of this DeleteObjectRequest.
 
         Version ID of the object to be deleted.
 
@@ -141,7 +141,7 @@ class DeleteObjectRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeleteObjectRequest.
+        r"""Sets the version_id of this DeleteObjectRequest.
 
         Version ID of the object to be deleted.
 

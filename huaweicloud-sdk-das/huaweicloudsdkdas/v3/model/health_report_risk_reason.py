@@ -29,7 +29,7 @@ class HealthReportRiskReason:
     }
 
     def __init__(self, reason_code=None, reason_content=None, suggestions=None):
-        """HealthReportRiskReason
+        r"""HealthReportRiskReason
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class HealthReportRiskReason:
 
     @property
     def reason_code(self):
-        """Gets the reason_code of this HealthReportRiskReason.
+        r"""Gets the reason_code of this HealthReportRiskReason.
 
         可能原因编码。
 
@@ -65,7 +65,7 @@ class HealthReportRiskReason:
 
     @reason_code.setter
     def reason_code(self, reason_code):
-        """Sets the reason_code of this HealthReportRiskReason.
+        r"""Sets the reason_code of this HealthReportRiskReason.
 
         可能原因编码。
 
@@ -76,7 +76,7 @@ class HealthReportRiskReason:
 
     @property
     def reason_content(self):
-        """Gets the reason_content of this HealthReportRiskReason.
+        r"""Gets the reason_content of this HealthReportRiskReason.
 
         可能原因内容。
 
@@ -87,7 +87,7 @@ class HealthReportRiskReason:
 
     @reason_content.setter
     def reason_content(self, reason_content):
-        """Sets the reason_content of this HealthReportRiskReason.
+        r"""Sets the reason_content of this HealthReportRiskReason.
 
         可能原因内容。
 
@@ -98,7 +98,7 @@ class HealthReportRiskReason:
 
     @property
     def suggestions(self):
-        """Gets the suggestions of this HealthReportRiskReason.
+        r"""Gets the suggestions of this HealthReportRiskReason.
 
         建议优化措施列表。
 
@@ -109,7 +109,7 @@ class HealthReportRiskReason:
 
     @suggestions.setter
     def suggestions(self, suggestions):
-        """Sets the suggestions of this HealthReportRiskReason.
+        r"""Sets the suggestions of this HealthReportRiskReason.
 
         建议优化措施列表。
 

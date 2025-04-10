@@ -26,7 +26,7 @@ class ShowRackResponse(SdkResponse):
     }
 
     def __init__(self, rack=None):
-        """ShowRackResponse
+        r"""ShowRackResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRackResponse(SdkResponse):
 
     @property
     def rack(self):
-        """Gets the rack of this ShowRackResponse.
+        r"""Gets the rack of this ShowRackResponse.
 
         :return: The rack of this ShowRackResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.Rack`
@@ -53,7 +53,7 @@ class ShowRackResponse(SdkResponse):
 
     @rack.setter
     def rack(self, rack):
-        """Sets the rack of this ShowRackResponse.
+        r"""Sets the rack of this ShowRackResponse.
 
         :param rack: The rack of this ShowRackResponse.
         :type rack: :class:`huaweicloudsdkcloudpond.v1.Rack`

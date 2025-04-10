@@ -34,7 +34,7 @@ class GesClient(Client):
         return client_builder
 
     def attach_eip2(self, request):
-        """绑定EIP
+        r"""绑定EIP
 
         可以通过绑定弹性公网IP（简称EIP）访问GES服务。
         
@@ -101,7 +101,7 @@ class GesClient(Client):
         return http_info
 
     def change_security_group(self, request):
-        """切换安全组
+        r"""切换安全组
 
         该接口可以在图创建成功后，修改图的安全组。
         
@@ -168,7 +168,7 @@ class GesClient(Client):
         return http_info
 
     def clear_graph2(self, request):
-        """清空图
+        r"""清空图
 
         清空图中所有数据。
         
@@ -235,7 +235,7 @@ class GesClient(Client):
         return http_info
 
     def create_backup2(self, request):
-        """新增备份
+        r"""新增备份
 
         新增备份。当前图数据出现错误或故障时，可以启动备份图进行恢复。
         
@@ -300,7 +300,7 @@ class GesClient(Client):
         return http_info
 
     def create_graph2(self, request):
-        """创建图
+        r"""创建图
 
         创建一个图。
         
@@ -365,7 +365,7 @@ class GesClient(Client):
         return http_info
 
     def create_metadata2(self, request):
-        """新增元数据
+        r"""新增元数据
 
         新增元数据。
         
@@ -430,7 +430,7 @@ class GesClient(Client):
         return http_info
 
     def delete_backup2(self, request):
-        """删除备份
+        r"""删除备份
 
         删除备份。
         
@@ -497,7 +497,7 @@ class GesClient(Client):
         return http_info
 
     def delete_graph2(self, request):
-        """删除图
+        r"""删除图
 
         删除一个图。
         
@@ -566,7 +566,7 @@ class GesClient(Client):
         return http_info
 
     def delete_metadata2(self, request):
-        """删除元数据
+        r"""删除元数据
 
         删除元数据。
         
@@ -631,7 +631,7 @@ class GesClient(Client):
         return http_info
 
     def detach_eip2(self, request):
-        """解绑EIP
+        r"""解绑EIP
 
         当无需继续使用EIP时，您可通过解绑EIP来释放网络资源。
         
@@ -698,7 +698,7 @@ class GesClient(Client):
         return http_info
 
     def expand_graph2(self, request):
-        """扩副本
+        r"""扩副本
 
         扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。
         &gt; 1.一万边和百亿边规格的图暂不支持扩副本。
@@ -768,7 +768,7 @@ class GesClient(Client):
         return http_info
 
     def export_backup2(self, request):
-        """导出备份
+        r"""导出备份
 
         导出备份
         
@@ -835,7 +835,7 @@ class GesClient(Client):
         return http_info
 
     def export_graph2(self, request):
-        """导出图
+        r"""导出图
 
         导出图。
         
@@ -902,7 +902,7 @@ class GesClient(Client):
         return http_info
 
     def import_backup2(self, request):
-        """导入备份
+        r"""导入备份
 
         导入备份
         
@@ -969,7 +969,7 @@ class GesClient(Client):
         return http_info
 
     def import_graph2(self, request):
-        """增量导入图
+        r"""增量导入图
 
         增量导入图数据。
         &gt; 为防止系统重启时，不能正常恢复导入图数据，建议在使用图期间，不要删除存储在OBS中的数据。
@@ -1037,7 +1037,7 @@ class GesClient(Client):
         return http_info
 
     def list_backups2(self, request):
-        """查看所有备份列表
+        r"""查看所有备份列表
 
         查询备份列表。
         
@@ -1104,7 +1104,7 @@ class GesClient(Client):
         return http_info
 
     def list_graph_backups2(self, request):
-        """查看某个图的备份列表
+        r"""查看某个图的备份列表
 
         查询某个图下的备份列表。
         
@@ -1173,7 +1173,7 @@ class GesClient(Client):
         return http_info
 
     def list_graphs2(self, request):
-        """查询图列表
+        r"""查询图列表
 
         查询当前租户所有的图。
         
@@ -1240,7 +1240,7 @@ class GesClient(Client):
         return http_info
 
     def list_jobs2(self, request):
-        """查询任务中心
+        r"""查询任务中心
 
         查询管理面任务中心。当前创建图、关闭图、启动图、删除图、增加备份、导入图、导出图、升级图等操作为异步任务，该API用于查询这些任务的详情。
         
@@ -1315,7 +1315,7 @@ class GesClient(Client):
         return http_info
 
     def list_metadatas2(self, request):
-        """查询元数据列表
+        r"""查询元数据列表
 
         查询元数据列表。
         
@@ -1382,7 +1382,7 @@ class GesClient(Client):
         return http_info
 
     def list_quotas2(self, request):
-        """查询配额
+        r"""查询配额
 
         查询租户配额。
         
@@ -1445,7 +1445,7 @@ class GesClient(Client):
         return http_info
 
     def resize_graph2(self, request):
-        """变更图规格
+        r"""变更图规格
 
         变更图规格规格。
         &gt; 变更图规格以后所有索引（复合索引和全文索引）都需要重新创建。
@@ -1513,7 +1513,7 @@ class GesClient(Client):
         return http_info
 
     def restart_graph2(self, request):
-        """强制重启图
+        r"""强制重启图
 
         强制启动一个图。针对导入、导出 、运行中 、清空中的图。强制重启图，会将该图执行中的异步任务变为失败，然后停止图、启动图到运行状态。
         
@@ -1578,7 +1578,7 @@ class GesClient(Client):
         return http_info
 
     def show_backup_download_link(self, request):
-        """获取备份下载链接
+        r"""获取备份下载链接
 
         获取备份下载链接
         
@@ -1645,7 +1645,7 @@ class GesClient(Client):
         return http_info
 
     def show_graph2(self, request):
-        """查询图详情
+        r"""查询图详情
 
         根据图ID查询某个图详情。
         
@@ -1710,7 +1710,7 @@ class GesClient(Client):
         return http_info
 
     def show_job2(self, request):
-        """查询Job状态-管理面
+        r"""查询Job状态-管理面
 
         查询Job的执行状态。对创建图、关闭图、启动图、删除图、导入图等异步API命令下发后，会返回jobId，通过jobId查询任务的执行状态。
         
@@ -1777,7 +1777,7 @@ class GesClient(Client):
         return http_info
 
     def show_metadata2(self, request):
-        """查询元数据
+        r"""查询元数据
 
         查询某个元数据。
         
@@ -1842,7 +1842,7 @@ class GesClient(Client):
         return http_info
 
     def start_graph2(self, request):
-        """启动图
+        r"""启动图
 
         启动一个图。暂时不用的图可以先关闭，需要使用时再启动。
         
@@ -1909,7 +1909,7 @@ class GesClient(Client):
         return http_info
 
     def stop_graph2(self, request):
-        """关闭图
+        r"""关闭图
 
         关闭一个图。如果图创建好了，暂时不用可以先关闭，需要使用时再启用。
         &gt; 处于关闭状态的图不计算实例费用。
@@ -1975,7 +1975,7 @@ class GesClient(Client):
         return http_info
 
     def upgrade_graph2(self, request):
-        """升级图
+        r"""升级图
 
         升级图。图引擎服务会定期升级版本，用户可根据需要升级图。
         
@@ -2042,7 +2042,7 @@ class GesClient(Client):
         return http_info
 
     def upload_from_obs2(self, request):
-        """从OBS导入元数据
+        r"""从OBS导入元数据
 
         从OBS导入元数据。
         
@@ -2107,7 +2107,7 @@ class GesClient(Client):
         return http_info
 
     def deregister_scenes2(self, request):
-        """取消订阅场景分析插件
+        r"""取消订阅场景分析插件
 
         取消订阅scenes场景应用分析能力，取消订阅后对应scene下的application业务面API将不能使用。
         
@@ -2174,7 +2174,7 @@ class GesClient(Client):
         return http_info
 
     def list_scenes2(self, request):
-        """查询获取场景应用分析插件
+        r"""查询获取场景应用分析插件
 
         查询scenes场景下的应用分析能力详情，可以获得对应场景下的application、参数和功能介绍详情。
         
@@ -2243,7 +2243,7 @@ class GesClient(Client):
         return http_info
 
     def register_scenes2(self, request):
-        """订阅场景分析插件
+        r"""订阅场景分析插件
 
         订阅scenes应用场景分析能力，便于业务面API使用对应功能。
         &gt; 已订阅的不可以重复订阅，需要更新请先取消原有订购，重新订购。

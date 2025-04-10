@@ -30,7 +30,7 @@ class CreatePlanResponse(SdkResponse):
     }
 
     def __init__(self, plan_id=None, error_code=None, error_msg=None):
-        """CreatePlanResponse
+        r"""CreatePlanResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreatePlanResponse(SdkResponse):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this CreatePlanResponse.
+        r"""Gets the plan_id of this CreatePlanResponse.
 
         接口调用成功返回的计划id
 
@@ -69,7 +69,7 @@ class CreatePlanResponse(SdkResponse):
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this CreatePlanResponse.
+        r"""Sets the plan_id of this CreatePlanResponse.
 
         接口调用成功返回的计划id
 
@@ -80,7 +80,7 @@ class CreatePlanResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreatePlanResponse.
+        r"""Gets the error_code of this CreatePlanResponse.
 
         接口调用成功不返回，调用失败错误码
 
@@ -91,7 +91,7 @@ class CreatePlanResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreatePlanResponse.
+        r"""Sets the error_code of this CreatePlanResponse.
 
         接口调用成功不返回，调用失败错误码
 
@@ -102,7 +102,7 @@ class CreatePlanResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreatePlanResponse.
+        r"""Gets the error_msg of this CreatePlanResponse.
 
         接口调用成功不返回，调用失败错误信息
 
@@ -113,7 +113,7 @@ class CreatePlanResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreatePlanResponse.
+        r"""Sets the error_msg of this CreatePlanResponse.
 
         接口调用成功不返回，调用失败错误信息
 

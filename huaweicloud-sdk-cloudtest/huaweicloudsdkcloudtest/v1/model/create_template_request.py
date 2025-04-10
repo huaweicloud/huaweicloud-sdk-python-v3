@@ -27,7 +27,7 @@ class CreateTemplateRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateTemplateRequest
+        r"""CreateTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTemplateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTemplateRequest.
+        r"""Gets the project_id of this CreateTemplateRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class CreateTemplateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTemplateRequest.
+        r"""Sets the project_id of this CreateTemplateRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class CreateTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTemplateRequest.
+        r"""Gets the body of this CreateTemplateRequest.
 
         :return: The body of this CreateTemplateRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestSaveTemplateParam`
@@ -80,7 +80,7 @@ class CreateTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTemplateRequest.
+        r"""Sets the body of this CreateTemplateRequest.
 
         :param body: The body of this CreateTemplateRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestSaveTemplateParam`

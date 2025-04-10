@@ -29,7 +29,7 @@ class RunDataAuthorizationActionRequestBody:
     }
 
     def __init__(self, user_name=None, action=None, privileges=None):
-        """RunDataAuthorizationActionRequestBody
+        r"""RunDataAuthorizationActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RunDataAuthorizationActionRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RunDataAuthorizationActionRequestBody.
+        r"""Gets the user_name of this RunDataAuthorizationActionRequestBody.
 
         被赋权的用户名称，该用户将有权访问指定的数据库或数据表，被收回或者更新访问权限。
 
@@ -65,7 +65,7 @@ class RunDataAuthorizationActionRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RunDataAuthorizationActionRequestBody.
+        r"""Sets the user_name of this RunDataAuthorizationActionRequestBody.
 
         被赋权的用户名称，该用户将有权访问指定的数据库或数据表，被收回或者更新访问权限。
 
@@ -76,7 +76,7 @@ class RunDataAuthorizationActionRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this RunDataAuthorizationActionRequestBody.
+        r"""Gets the action of this RunDataAuthorizationActionRequestBody.
 
         指定赋权或回收。值为：grant，revoke或update。 说明： 当用户同时拥有grant和revoke权限的时候才有权限使用update操作。
 
@@ -87,7 +87,7 @@ class RunDataAuthorizationActionRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RunDataAuthorizationActionRequestBody.
+        r"""Sets the action of this RunDataAuthorizationActionRequestBody.
 
         指定赋权或回收。值为：grant，revoke或update。 说明： 当用户同时拥有grant和revoke权限的时候才有权限使用update操作。
 
@@ -98,7 +98,7 @@ class RunDataAuthorizationActionRequestBody:
 
     @property
     def privileges(self):
-        """Gets the privileges of this RunDataAuthorizationActionRequestBody.
+        r"""Gets the privileges of this RunDataAuthorizationActionRequestBody.
 
         赋权信息。
 
@@ -109,7 +109,7 @@ class RunDataAuthorizationActionRequestBody:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this RunDataAuthorizationActionRequestBody.
+        r"""Sets the privileges of this RunDataAuthorizationActionRequestBody.
 
         赋权信息。
 

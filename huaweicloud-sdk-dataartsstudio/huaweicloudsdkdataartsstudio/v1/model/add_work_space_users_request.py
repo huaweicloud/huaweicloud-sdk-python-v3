@@ -27,7 +27,7 @@ class AddWorkSpaceUsersRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """AddWorkSpaceUsersRequest
+        r"""AddWorkSpaceUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddWorkSpaceUsersRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AddWorkSpaceUsersRequest.
+        r"""Gets the workspace_id of this AddWorkSpaceUsersRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class AddWorkSpaceUsersRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AddWorkSpaceUsersRequest.
+        r"""Sets the workspace_id of this AddWorkSpaceUsersRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class AddWorkSpaceUsersRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddWorkSpaceUsersRequest.
+        r"""Gets the body of this AddWorkSpaceUsersRequest.
 
         :return: The body of this AddWorkSpaceUsersRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigWorkspaceUserDto`
@@ -80,7 +80,7 @@ class AddWorkSpaceUsersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddWorkSpaceUsersRequest.
+        r"""Sets the body of this AddWorkSpaceUsersRequest.
 
         :param body: The body of this AddWorkSpaceUsersRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigWorkspaceUserDto`

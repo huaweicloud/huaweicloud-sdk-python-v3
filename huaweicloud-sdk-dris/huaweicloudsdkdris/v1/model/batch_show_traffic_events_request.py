@@ -49,7 +49,7 @@ class BatchShowTrafficEventsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, area_code=None, status=None, event_type=None, event_source_type=None, event_class=None, event_id=None, from_time=None, to_time=None, sort_key=None, sort_dir=None):
-        """BatchShowTrafficEventsRequest
+        r"""BatchShowTrafficEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowTrafficEventsRequest.
+        r"""Gets the instance_id of this BatchShowTrafficEventsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -138,7 +138,7 @@ class BatchShowTrafficEventsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowTrafficEventsRequest.
+        r"""Sets the instance_id of this BatchShowTrafficEventsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -149,7 +149,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowTrafficEventsRequest.
+        r"""Gets the offset of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询事件列表的页码。
 
@@ -160,7 +160,7 @@ class BatchShowTrafficEventsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowTrafficEventsRequest.
+        r"""Sets the offset of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询事件列表的页码。
 
@@ -171,7 +171,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowTrafficEventsRequest.
+        r"""Gets the limit of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询时每页显示的记录数。
 
@@ -182,7 +182,7 @@ class BatchShowTrafficEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowTrafficEventsRequest.
+        r"""Sets the limit of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询时每页显示的记录数。
 
@@ -193,7 +193,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def area_code(self):
-        """Gets the area_code of this BatchShowTrafficEventsRequest.
+        r"""Gets the area_code of this BatchShowTrafficEventsRequest.
 
         **参数说明**：区域码，参考[区域码查询](http://xzqh.mca.gov.cn/map)。
 
@@ -204,7 +204,7 @@ class BatchShowTrafficEventsRequest:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this BatchShowTrafficEventsRequest.
+        r"""Sets the area_code of this BatchShowTrafficEventsRequest.
 
         **参数说明**：区域码，参考[区域码查询](http://xzqh.mca.gov.cn/map)。
 
@@ -215,7 +215,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchShowTrafficEventsRequest.
+        r"""Gets the status of this BatchShowTrafficEventsRequest.
 
          **参数说明**：事件状态。  **取值范围**：  - Invalid：为过期事件，事件结束时间（end_time）在当前时间之前。  - Active：为活动事件，事件开始时间（start_time）在当前时间之前，并且事件结束时间（end_time）在当前时间之后。  - Future：为未来事件，事件开始时间（start_time）在当前时间之前。 
 
@@ -226,7 +226,7 @@ class BatchShowTrafficEventsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchShowTrafficEventsRequest.
+        r"""Sets the status of this BatchShowTrafficEventsRequest.
 
          **参数说明**：事件状态。  **取值范围**：  - Invalid：为过期事件，事件结束时间（end_time）在当前时间之前。  - Active：为活动事件，事件开始时间（start_time）在当前时间之前，并且事件结束时间（end_time）在当前时间之后。  - Future：为未来事件，事件开始时间（start_time）在当前时间之前。 
 
@@ -237,7 +237,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this BatchShowTrafficEventsRequest.
+        r"""Gets the event_type of this BatchShowTrafficEventsRequest.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -248,7 +248,7 @@ class BatchShowTrafficEventsRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this BatchShowTrafficEventsRequest.
+        r"""Sets the event_type of this BatchShowTrafficEventsRequest.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -259,7 +259,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def event_source_type(self):
-        """Gets the event_source_type of this BatchShowTrafficEventsRequest.
+        r"""Gets the event_source_type of this BatchShowTrafficEventsRequest.
 
          **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据 
 
@@ -270,7 +270,7 @@ class BatchShowTrafficEventsRequest:
 
     @event_source_type.setter
     def event_source_type(self, event_source_type):
-        """Sets the event_source_type of this BatchShowTrafficEventsRequest.
+        r"""Sets the event_source_type of this BatchShowTrafficEventsRequest.
 
          **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据 
 
@@ -281,7 +281,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def event_class(self):
-        """Gets the event_class of this BatchShowTrafficEventsRequest.
+        r"""Gets the event_class of this BatchShowTrafficEventsRequest.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -292,7 +292,7 @@ class BatchShowTrafficEventsRequest:
 
     @event_class.setter
     def event_class(self, event_class):
-        """Sets the event_class of this BatchShowTrafficEventsRequest.
+        r"""Sets the event_class of this BatchShowTrafficEventsRequest.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -303,7 +303,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this BatchShowTrafficEventsRequest.
+        r"""Gets the event_id of this BatchShowTrafficEventsRequest.
 
         **参数说明**：事件ID，创建事件后获得。方法参见 [新增交通事件](https://support.huaweicloud.com/api-v2x/v2x_04_0048.html)。
 
@@ -314,7 +314,7 @@ class BatchShowTrafficEventsRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this BatchShowTrafficEventsRequest.
+        r"""Sets the event_id of this BatchShowTrafficEventsRequest.
 
         **参数说明**：事件ID，创建事件后获得。方法参见 [新增交通事件](https://support.huaweicloud.com/api-v2x/v2x_04_0048.html)。
 
@@ -325,7 +325,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def from_time(self):
-        """Gets the from_time of this BatchShowTrafficEventsRequest.
+        r"""Gets the from_time of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询事件开始时间段的起始时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'。  例如 2020-09-01T01:37:01Z。 
 
@@ -336,7 +336,7 @@ class BatchShowTrafficEventsRequest:
 
     @from_time.setter
     def from_time(self, from_time):
-        """Sets the from_time of this BatchShowTrafficEventsRequest.
+        r"""Sets the from_time of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询事件开始时间段的起始时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'。  例如 2020-09-01T01:37:01Z。 
 
@@ -347,7 +347,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def to_time(self):
-        """Gets the to_time of this BatchShowTrafficEventsRequest.
+        r"""Gets the to_time of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询事件开始时间段的结束时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'。  例如 2020-09-01T01:37:01Z。 
 
@@ -358,7 +358,7 @@ class BatchShowTrafficEventsRequest:
 
     @to_time.setter
     def to_time(self, to_time):
-        """Sets the to_time of this BatchShowTrafficEventsRequest.
+        r"""Sets the to_time of this BatchShowTrafficEventsRequest.
 
         **参数说明**：查询事件开始时间段的结束时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'。  例如 2020-09-01T01:37:01Z。 
 
@@ -369,7 +369,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this BatchShowTrafficEventsRequest.
+        r"""Gets the sort_key of this BatchShowTrafficEventsRequest.
 
         **参数说明**：按照哪一个字段排序,默认按事件开始时间。
 
@@ -380,7 +380,7 @@ class BatchShowTrafficEventsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this BatchShowTrafficEventsRequest.
+        r"""Sets the sort_key of this BatchShowTrafficEventsRequest.
 
         **参数说明**：按照哪一个字段排序,默认按事件开始时间。
 
@@ -391,7 +391,7 @@ class BatchShowTrafficEventsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this BatchShowTrafficEventsRequest.
+        r"""Gets the sort_dir of this BatchShowTrafficEventsRequest.
 
         **参数说明**：升序或降序，升序为ASC, 降序为DESC，默认降序。
 
@@ -402,7 +402,7 @@ class BatchShowTrafficEventsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this BatchShowTrafficEventsRequest.
+        r"""Sets the sort_dir of this BatchShowTrafficEventsRequest.
 
         **参数说明**：升序或降序，升序为ASC, 降序为DESC，默认降序。
 

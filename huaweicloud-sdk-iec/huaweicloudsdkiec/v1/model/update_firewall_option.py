@@ -31,7 +31,7 @@ class UpdateFirewallOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, description=None, subnets=None):
-        """UpdateFirewallOption
+        r"""UpdateFirewallOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateFirewallOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFirewallOption.
+        r"""Gets the name of this UpdateFirewallOption.
 
         网络ACL名称。更新时name不能为空。  中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
 
@@ -74,7 +74,7 @@ class UpdateFirewallOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFirewallOption.
+        r"""Sets the name of this UpdateFirewallOption.
 
         网络ACL名称。更新时name不能为空。  中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
 
@@ -85,7 +85,7 @@ class UpdateFirewallOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateFirewallOption.
+        r"""Gets the admin_state_up of this UpdateFirewallOption.
 
         网络ACL的使能开关。  取值范围：true（开启），false（关闭） 
 
@@ -96,7 +96,7 @@ class UpdateFirewallOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateFirewallOption.
+        r"""Sets the admin_state_up of this UpdateFirewallOption.
 
         网络ACL的使能开关。  取值范围：true（开启），false（关闭） 
 
@@ -107,7 +107,7 @@ class UpdateFirewallOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateFirewallOption.
+        r"""Gets the description of this UpdateFirewallOption.
 
         网络ACL描述。
 
@@ -118,7 +118,7 @@ class UpdateFirewallOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFirewallOption.
+        r"""Sets the description of this UpdateFirewallOption.
 
         网络ACL描述。
 
@@ -129,7 +129,7 @@ class UpdateFirewallOption:
 
     @property
     def subnets(self):
-        """Gets the subnets of this UpdateFirewallOption.
+        r"""Gets the subnets of this UpdateFirewallOption.
 
         关联子网列表。
 
@@ -140,7 +140,7 @@ class UpdateFirewallOption:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this UpdateFirewallOption.
+        r"""Sets the subnets of this UpdateFirewallOption.
 
         关联子网列表。
 

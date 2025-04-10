@@ -53,7 +53,7 @@ class QueryDeviceSimplify:
     }
 
     def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, status=None, tags=None):
-        """QueryDeviceSimplify
+        r"""QueryDeviceSimplify
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class QueryDeviceSimplify:
 
     @property
     def app_id(self):
-        """Gets the app_id of this QueryDeviceSimplify.
+        r"""Gets the app_id of this QueryDeviceSimplify.
 
         资源空间ID。
 
@@ -152,7 +152,7 @@ class QueryDeviceSimplify:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this QueryDeviceSimplify.
+        r"""Sets the app_id of this QueryDeviceSimplify.
 
         资源空间ID。
 
@@ -163,7 +163,7 @@ class QueryDeviceSimplify:
 
     @property
     def app_name(self):
-        """Gets the app_name of this QueryDeviceSimplify.
+        r"""Gets the app_name of this QueryDeviceSimplify.
 
         资源空间名称。
 
@@ -174,7 +174,7 @@ class QueryDeviceSimplify:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this QueryDeviceSimplify.
+        r"""Sets the app_name of this QueryDeviceSimplify.
 
         资源空间名称。
 
@@ -185,7 +185,7 @@ class QueryDeviceSimplify:
 
     @property
     def device_id(self):
-        """Gets the device_id of this QueryDeviceSimplify.
+        r"""Gets the device_id of this QueryDeviceSimplify.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -196,7 +196,7 @@ class QueryDeviceSimplify:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this QueryDeviceSimplify.
+        r"""Sets the device_id of this QueryDeviceSimplify.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -207,7 +207,7 @@ class QueryDeviceSimplify:
 
     @property
     def node_id(self):
-        """Gets the node_id of this QueryDeviceSimplify.
+        r"""Gets the node_id of this QueryDeviceSimplify.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
@@ -218,7 +218,7 @@ class QueryDeviceSimplify:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this QueryDeviceSimplify.
+        r"""Sets the node_id of this QueryDeviceSimplify.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
@@ -229,7 +229,7 @@ class QueryDeviceSimplify:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this QueryDeviceSimplify.
+        r"""Gets the gateway_id of this QueryDeviceSimplify.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
@@ -240,7 +240,7 @@ class QueryDeviceSimplify:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this QueryDeviceSimplify.
+        r"""Sets the gateway_id of this QueryDeviceSimplify.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
@@ -251,7 +251,7 @@ class QueryDeviceSimplify:
 
     @property
     def device_name(self):
-        """Gets the device_name of this QueryDeviceSimplify.
+        r"""Gets the device_name of this QueryDeviceSimplify.
 
         设备名称。
 
@@ -262,7 +262,7 @@ class QueryDeviceSimplify:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this QueryDeviceSimplify.
+        r"""Sets the device_name of this QueryDeviceSimplify.
 
         设备名称。
 
@@ -273,7 +273,7 @@ class QueryDeviceSimplify:
 
     @property
     def node_type(self):
-        """Gets the node_type of this QueryDeviceSimplify.
+        r"""Gets the node_type of this QueryDeviceSimplify.
 
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
@@ -284,7 +284,7 @@ class QueryDeviceSimplify:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this QueryDeviceSimplify.
+        r"""Sets the node_type of this QueryDeviceSimplify.
 
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
@@ -295,7 +295,7 @@ class QueryDeviceSimplify:
 
     @property
     def description(self):
-        """Gets the description of this QueryDeviceSimplify.
+        r"""Gets the description of this QueryDeviceSimplify.
 
         设备的描述信息。
 
@@ -306,7 +306,7 @@ class QueryDeviceSimplify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryDeviceSimplify.
+        r"""Sets the description of this QueryDeviceSimplify.
 
         设备的描述信息。
 
@@ -317,7 +317,7 @@ class QueryDeviceSimplify:
 
     @property
     def fw_version(self):
-        """Gets the fw_version of this QueryDeviceSimplify.
+        r"""Gets the fw_version of this QueryDeviceSimplify.
 
         设备的固件版本。
 
@@ -328,7 +328,7 @@ class QueryDeviceSimplify:
 
     @fw_version.setter
     def fw_version(self, fw_version):
-        """Sets the fw_version of this QueryDeviceSimplify.
+        r"""Sets the fw_version of this QueryDeviceSimplify.
 
         设备的固件版本。
 
@@ -339,7 +339,7 @@ class QueryDeviceSimplify:
 
     @property
     def sw_version(self):
-        """Gets the sw_version of this QueryDeviceSimplify.
+        r"""Gets the sw_version of this QueryDeviceSimplify.
 
         设备的软件版本。
 
@@ -350,7 +350,7 @@ class QueryDeviceSimplify:
 
     @sw_version.setter
     def sw_version(self, sw_version):
-        """Sets the sw_version of this QueryDeviceSimplify.
+        r"""Sets the sw_version of this QueryDeviceSimplify.
 
         设备的软件版本。
 
@@ -361,7 +361,7 @@ class QueryDeviceSimplify:
 
     @property
     def device_sdk_version(self):
-        """Gets the device_sdk_version of this QueryDeviceSimplify.
+        r"""Gets the device_sdk_version of this QueryDeviceSimplify.
 
         设备的sdk信息。
 
@@ -372,7 +372,7 @@ class QueryDeviceSimplify:
 
     @device_sdk_version.setter
     def device_sdk_version(self, device_sdk_version):
-        """Sets the device_sdk_version of this QueryDeviceSimplify.
+        r"""Sets the device_sdk_version of this QueryDeviceSimplify.
 
         设备的sdk信息。
 
@@ -383,7 +383,7 @@ class QueryDeviceSimplify:
 
     @property
     def product_id(self):
-        """Gets the product_id of this QueryDeviceSimplify.
+        r"""Gets the product_id of this QueryDeviceSimplify.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -394,7 +394,7 @@ class QueryDeviceSimplify:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this QueryDeviceSimplify.
+        r"""Sets the product_id of this QueryDeviceSimplify.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -405,7 +405,7 @@ class QueryDeviceSimplify:
 
     @property
     def product_name(self):
-        """Gets the product_name of this QueryDeviceSimplify.
+        r"""Gets the product_name of this QueryDeviceSimplify.
 
         设备关联的产品名称。
 
@@ -416,7 +416,7 @@ class QueryDeviceSimplify:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this QueryDeviceSimplify.
+        r"""Sets the product_name of this QueryDeviceSimplify.
 
         设备关联的产品名称。
 
@@ -427,7 +427,7 @@ class QueryDeviceSimplify:
 
     @property
     def status(self):
-        """Gets the status of this QueryDeviceSimplify.
+        r"""Gets the status of this QueryDeviceSimplify.
 
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
@@ -438,7 +438,7 @@ class QueryDeviceSimplify:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryDeviceSimplify.
+        r"""Sets the status of this QueryDeviceSimplify.
 
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
@@ -449,7 +449,7 @@ class QueryDeviceSimplify:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryDeviceSimplify.
+        r"""Gets the tags of this QueryDeviceSimplify.
 
         设备的标签列表。
 
@@ -460,7 +460,7 @@ class QueryDeviceSimplify:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryDeviceSimplify.
+        r"""Sets the tags of this QueryDeviceSimplify.
 
         设备的标签列表。
 

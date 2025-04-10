@@ -25,7 +25,7 @@ class DeployStrategyRollingRelease:
     }
 
     def __init__(self, batches=None):
-        """DeployStrategyRollingRelease
+        r"""DeployStrategyRollingRelease
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeployStrategyRollingRelease:
 
     @property
     def batches(self):
-        """Gets the batches of this DeployStrategyRollingRelease.
+        r"""Gets the batches of this DeployStrategyRollingRelease.
 
         :return: The batches of this DeployStrategyRollingRelease.
         :rtype: int
@@ -51,7 +51,7 @@ class DeployStrategyRollingRelease:
 
     @batches.setter
     def batches(self, batches):
-        """Sets the batches of this DeployStrategyRollingRelease.
+        r"""Sets the batches of this DeployStrategyRollingRelease.
 
         :param batches: The batches of this DeployStrategyRollingRelease.
         :type batches: int

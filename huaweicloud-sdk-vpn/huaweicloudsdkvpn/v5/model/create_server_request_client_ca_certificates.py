@@ -28,7 +28,7 @@ class CreateServerRequestClientCaCertificates:
     }
 
     def __init__(self, name=None, content=None):
-        """CreateServerRequestClientCaCertificates
+        r"""CreateServerRequestClientCaCertificates
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateServerRequestClientCaCertificates:
 
     @property
     def name(self):
-        """Gets the name of this CreateServerRequestClientCaCertificates.
+        r"""Gets the name of this CreateServerRequestClientCaCertificates.
 
         证书名
 
@@ -61,7 +61,7 @@ class CreateServerRequestClientCaCertificates:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateServerRequestClientCaCertificates.
+        r"""Sets the name of this CreateServerRequestClientCaCertificates.
 
         证书名
 
@@ -72,7 +72,7 @@ class CreateServerRequestClientCaCertificates:
 
     @property
     def content(self):
-        """Gets the content of this CreateServerRequestClientCaCertificates.
+        r"""Gets the content of this CreateServerRequestClientCaCertificates.
 
         证书内容
 
@@ -83,7 +83,7 @@ class CreateServerRequestClientCaCertificates:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateServerRequestClientCaCertificates.
+        r"""Sets the content of this CreateServerRequestClientCaCertificates.
 
         证书内容
 

@@ -33,7 +33,7 @@ class CreateManualBackupRequestBody:
     }
 
     def __init__(self, instance_id=None, name=None, description=None, databases=None, backup_database_individually=None):
-        """CreateManualBackupRequestBody
+        r"""CreateManualBackupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateManualBackupRequestBody.
+        r"""Gets the instance_id of this CreateManualBackupRequestBody.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class CreateManualBackupRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateManualBackupRequestBody.
+        r"""Sets the instance_id of this CreateManualBackupRequestBody.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateManualBackupRequestBody.
+        r"""Gets the name of this CreateManualBackupRequestBody.
 
         备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
@@ -102,7 +102,7 @@ class CreateManualBackupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateManualBackupRequestBody.
+        r"""Sets the name of this CreateManualBackupRequestBody.
 
         备份名称，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
@@ -113,7 +113,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateManualBackupRequestBody.
+        r"""Gets the description of this CreateManualBackupRequestBody.
 
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 
@@ -124,7 +124,7 @@ class CreateManualBackupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateManualBackupRequestBody.
+        r"""Sets the description of this CreateManualBackupRequestBody.
 
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 
@@ -135,7 +135,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def databases(self):
-        """Gets the databases of this CreateManualBackupRequestBody.
+        r"""Gets the databases of this CreateManualBackupRequestBody.
 
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
@@ -146,7 +146,7 @@ class CreateManualBackupRequestBody:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateManualBackupRequestBody.
+        r"""Sets the databases of this CreateManualBackupRequestBody.
 
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
@@ -157,7 +157,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def backup_database_individually(self):
-        """Gets the backup_database_individually of this CreateManualBackupRequestBody.
+        r"""Gets the backup_database_individually of this CreateManualBackupRequestBody.
 
         是否分库备份，只适用于SQLServer，默认为false
 
@@ -168,7 +168,7 @@ class CreateManualBackupRequestBody:
 
     @backup_database_individually.setter
     def backup_database_individually(self, backup_database_individually):
-        """Sets the backup_database_individually of this CreateManualBackupRequestBody.
+        r"""Sets the backup_database_individually of this CreateManualBackupRequestBody.
 
         是否分库备份，只适用于SQLServer，默认为false
 

@@ -29,7 +29,7 @@ class ScheduleTaskStatus:
     }
 
     def __init__(self):
-        """ScheduleTaskStatus
+        r"""ScheduleTaskStatus
 
         The model defined in huaweicloud sdk
 

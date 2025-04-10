@@ -30,7 +30,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """DeleteAimPersonalTemplateResponse
+        r"""DeleteAimPersonalTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteAimPersonalTemplateResponse.
+        r"""Gets the status of this DeleteAimPersonalTemplateResponse.
 
         响应状态。
 
@@ -69,7 +69,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteAimPersonalTemplateResponse.
+        r"""Sets the status of this DeleteAimPersonalTemplateResponse.
 
         响应状态。
 
@@ -80,7 +80,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteAimPersonalTemplateResponse.
+        r"""Gets the message of this DeleteAimPersonalTemplateResponse.
 
         响应消息。
 
@@ -91,7 +91,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteAimPersonalTemplateResponse.
+        r"""Sets the message of this DeleteAimPersonalTemplateResponse.
 
         响应消息。
 
@@ -102,7 +102,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteAimPersonalTemplateResponse.
+        r"""Gets the data of this DeleteAimPersonalTemplateResponse.
 
         固定为null
 
@@ -113,7 +113,7 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteAimPersonalTemplateResponse.
+        r"""Sets the data of this DeleteAimPersonalTemplateResponse.
 
         固定为null
 

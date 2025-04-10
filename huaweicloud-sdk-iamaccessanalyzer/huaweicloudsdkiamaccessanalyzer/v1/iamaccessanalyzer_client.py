@@ -34,7 +34,7 @@ class IAMAccessAnalyzerClient(Client):
         return client_builder
 
     def create_analyzer(self, request):
-        """创建分析器
+        r"""创建分析器
 
         为您的账号或者组织创建分析器。
         
@@ -99,7 +99,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def delete_analyzer(self, request):
-        """删除指定的分析器
+        r"""删除指定的分析器
 
         删除指定的分析器。分析器生成的所有检查结果都将被删除。
         
@@ -164,7 +164,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def list_analyzers(self, request):
-        """检索分析器的列表
+        r"""检索分析器的列表
 
         检索分析器的列表。
         
@@ -233,7 +233,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def show_analyzer(self, request):
-        """显示指定的分析器
+        r"""显示指定的分析器
 
         检索有关指定分析器的信息。
         
@@ -298,7 +298,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def start_resource_scan(self, request):
-        """立即开始扫描应用于指定资源的策略
+        r"""立即开始扫描应用于指定资源的策略
 
         立即开始扫描应用于指定资源的策略。
         
@@ -365,7 +365,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def apply_archive_rule(self, request):
-        """应用存档规则
+        r"""应用存档规则
 
         以追溯方式将存档规则应用于符合存档规则条件的现有结果。
         
@@ -432,7 +432,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def create_archive_rule(self, request):
-        """为指定的分析器创建存档规则
+        r"""为指定的分析器创建存档规则
 
         为指定的分析器创建存档规则。存档规则会自动存档符合您在创建规则时所定义条件的新结果。
         
@@ -499,7 +499,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def delete_archive_rule(self, request):
-        """删除指定的存档规则
+        r"""删除指定的存档规则
 
         删除指定的存档规则。
         
@@ -566,7 +566,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def list_archive_rules(self, request):
-        """检索为指定分析器创建的存档规则的列表
+        r"""检索为指定分析器创建的存档规则的列表
 
         检索为指定分析器创建的存档规则列表。
         
@@ -635,7 +635,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def show_archive_rule(self, request):
-        """检索有关存档规则的信息
+        r"""检索有关存档规则的信息
 
         检索有关存档规则的信息。
         
@@ -702,7 +702,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def update_archive_rule(self, request):
-        """更新指定存档规则的条件和值
+        r"""更新指定存档规则的条件和值
 
         更新指定存档规则的条件和值。
         
@@ -771,7 +771,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def list_findings(self, request):
-        """检索指定分析器生成的访问分析结果列表
+        r"""检索指定分析器生成的访问分析结果列表
 
         检索指定分析器生成的访问分析结果列表。
         
@@ -838,7 +838,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def show_finding(self, request):
-        """检索有关指定结果的信息
+        r"""检索有关指定结果的信息
 
         检索有关指定结果的信息。
         
@@ -905,7 +905,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def update_findings(self, request):
-        """更新指定结果的状态
+        r"""更新指定结果的状态
 
         更新指定访问分析结果的状态。
         
@@ -972,7 +972,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def create_access_preview(self, request):
-        """创建访问预览
+        r"""创建访问预览
 
         创建访问预览。
         
@@ -1039,7 +1039,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def list_access_preview_findings(self, request):
-        """获取相关预览生成的分析结果
+        r"""获取相关预览生成的分析结果
 
         获取相关预览生成的分析结果。
         
@@ -1108,7 +1108,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def list_access_previews(self, request):
-        """获取所有访问预览
+        r"""获取所有访问预览
 
         获取所有访问预览。
         
@@ -1177,7 +1177,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def show_access_preview(self, request):
-        """获取相关访问预览的信息
+        r"""获取相关访问预览的信息
 
         获取相关访问预览的信息。
         
@@ -1244,7 +1244,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def tag_resource(self, request):
-        """向指定资源添加标签
+        r"""向指定资源添加标签
 
         向指定资源添加标签。
         
@@ -1313,7 +1313,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def untag_resource(self, request):
-        """从指定资源中删除标签
+        r"""从指定资源中删除标签
 
         从指定资源中删除标签。
         
@@ -1382,7 +1382,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def check_no_new_access(self, request):
-        """校验策略是否有新访问权限
+        r"""校验策略是否有新访问权限
 
         校验策略是否有新访问权限。
         
@@ -1447,7 +1447,7 @@ class IAMAccessAnalyzerClient(Client):
         return http_info
 
     def validate_policy(self, request):
-        """校验策略
+        r"""校验策略
 
         校验策略并返回结果列表。
         

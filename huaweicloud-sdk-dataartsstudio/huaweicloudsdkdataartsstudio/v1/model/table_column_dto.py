@@ -31,7 +31,7 @@ class TableColumnDTO:
     }
 
     def __init__(self, column_name=None, description=None, type=None, is_partition_column=None):
-        """TableColumnDTO
+        r"""TableColumnDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TableColumnDTO:
 
     @property
     def column_name(self):
-        """Gets the column_name of this TableColumnDTO.
+        r"""Gets the column_name of this TableColumnDTO.
 
         字段名称
 
@@ -75,7 +75,7 @@ class TableColumnDTO:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this TableColumnDTO.
+        r"""Sets the column_name of this TableColumnDTO.
 
         字段名称
 
@@ -86,7 +86,7 @@ class TableColumnDTO:
 
     @property
     def description(self):
-        """Gets the description of this TableColumnDTO.
+        r"""Gets the description of this TableColumnDTO.
 
         字段描述
 
@@ -97,7 +97,7 @@ class TableColumnDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TableColumnDTO.
+        r"""Sets the description of this TableColumnDTO.
 
         字段描述
 
@@ -108,7 +108,7 @@ class TableColumnDTO:
 
     @property
     def type(self):
-        """Gets the type of this TableColumnDTO.
+        r"""Gets the type of this TableColumnDTO.
 
         字段类型
 
@@ -119,7 +119,7 @@ class TableColumnDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TableColumnDTO.
+        r"""Sets the type of this TableColumnDTO.
 
         字段类型
 
@@ -130,7 +130,7 @@ class TableColumnDTO:
 
     @property
     def is_partition_column(self):
-        """Gets the is_partition_column of this TableColumnDTO.
+        r"""Gets the is_partition_column of this TableColumnDTO.
 
         是否是分区字段
 
@@ -141,7 +141,7 @@ class TableColumnDTO:
 
     @is_partition_column.setter
     def is_partition_column(self, is_partition_column):
-        """Sets the is_partition_column of this TableColumnDTO.
+        r"""Sets the is_partition_column of this TableColumnDTO.
 
         是否是分区字段
 

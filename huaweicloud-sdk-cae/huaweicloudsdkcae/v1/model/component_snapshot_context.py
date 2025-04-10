@@ -67,7 +67,7 @@ class ComponentSnapshotContext:
     }
 
     def __init__(self, app_id=None, available_replica=None, build=None, build_id=None, build_log_id=None, env_id=None, id=None, image_url=None, job_id=None, log_group_id=None, log_stream_id=None, name=None, operation=None, operation_status=None, replica=None, resource_limit=None, runtime=None, source=None, status=None, version=None, created_at=None, updated_at=None):
-        """ComponentSnapshotContext
+        r"""ComponentSnapshotContext
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ComponentSnapshotContext:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ComponentSnapshotContext.
+        r"""Gets the app_id of this ComponentSnapshotContext.
 
         应用ID。
 
@@ -201,7 +201,7 @@ class ComponentSnapshotContext:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ComponentSnapshotContext.
+        r"""Sets the app_id of this ComponentSnapshotContext.
 
         应用ID。
 
@@ -212,7 +212,7 @@ class ComponentSnapshotContext:
 
     @property
     def available_replica(self):
-        """Gets the available_replica of this ComponentSnapshotContext.
+        r"""Gets the available_replica of this ComponentSnapshotContext.
 
         可用实例个数。
 
@@ -223,7 +223,7 @@ class ComponentSnapshotContext:
 
     @available_replica.setter
     def available_replica(self, available_replica):
-        """Sets the available_replica of this ComponentSnapshotContext.
+        r"""Sets the available_replica of this ComponentSnapshotContext.
 
         可用实例个数。
 
@@ -234,7 +234,7 @@ class ComponentSnapshotContext:
 
     @property
     def build(self):
-        """Gets the build of this ComponentSnapshotContext.
+        r"""Gets the build of this ComponentSnapshotContext.
 
         组件构建信息。
 
@@ -245,7 +245,7 @@ class ComponentSnapshotContext:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentSnapshotContext.
+        r"""Sets the build of this ComponentSnapshotContext.
 
         组件构建信息。
 
@@ -256,7 +256,7 @@ class ComponentSnapshotContext:
 
     @property
     def build_id(self):
-        """Gets the build_id of this ComponentSnapshotContext.
+        r"""Gets the build_id of this ComponentSnapshotContext.
 
         构建任务ID。
 
@@ -267,7 +267,7 @@ class ComponentSnapshotContext:
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this ComponentSnapshotContext.
+        r"""Sets the build_id of this ComponentSnapshotContext.
 
         构建任务ID。
 
@@ -278,7 +278,7 @@ class ComponentSnapshotContext:
 
     @property
     def build_log_id(self):
-        """Gets the build_log_id of this ComponentSnapshotContext.
+        r"""Gets the build_log_id of this ComponentSnapshotContext.
 
         构建日志ID。
 
@@ -289,7 +289,7 @@ class ComponentSnapshotContext:
 
     @build_log_id.setter
     def build_log_id(self, build_log_id):
-        """Sets the build_log_id of this ComponentSnapshotContext.
+        r"""Sets the build_log_id of this ComponentSnapshotContext.
 
         构建日志ID。
 
@@ -300,7 +300,7 @@ class ComponentSnapshotContext:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ComponentSnapshotContext.
+        r"""Gets the env_id of this ComponentSnapshotContext.
 
         环境ID。
 
@@ -311,7 +311,7 @@ class ComponentSnapshotContext:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ComponentSnapshotContext.
+        r"""Sets the env_id of this ComponentSnapshotContext.
 
         环境ID。
 
@@ -322,7 +322,7 @@ class ComponentSnapshotContext:
 
     @property
     def id(self):
-        """Gets the id of this ComponentSnapshotContext.
+        r"""Gets the id of this ComponentSnapshotContext.
 
         组件ID。
 
@@ -333,7 +333,7 @@ class ComponentSnapshotContext:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentSnapshotContext.
+        r"""Sets the id of this ComponentSnapshotContext.
 
         组件ID。
 
@@ -344,7 +344,7 @@ class ComponentSnapshotContext:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ComponentSnapshotContext.
+        r"""Gets the image_url of this ComponentSnapshotContext.
 
         镜像地址。
 
@@ -355,7 +355,7 @@ class ComponentSnapshotContext:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ComponentSnapshotContext.
+        r"""Sets the image_url of this ComponentSnapshotContext.
 
         镜像地址。
 
@@ -366,7 +366,7 @@ class ComponentSnapshotContext:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ComponentSnapshotContext.
+        r"""Gets the job_id of this ComponentSnapshotContext.
 
         任务ID。
 
@@ -377,7 +377,7 @@ class ComponentSnapshotContext:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ComponentSnapshotContext.
+        r"""Sets the job_id of this ComponentSnapshotContext.
 
         任务ID。
 
@@ -388,7 +388,7 @@ class ComponentSnapshotContext:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ComponentSnapshotContext.
+        r"""Gets the log_group_id of this ComponentSnapshotContext.
 
         LTS日志组的ID。
 
@@ -399,7 +399,7 @@ class ComponentSnapshotContext:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ComponentSnapshotContext.
+        r"""Sets the log_group_id of this ComponentSnapshotContext.
 
         LTS日志组的ID。
 
@@ -410,7 +410,7 @@ class ComponentSnapshotContext:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ComponentSnapshotContext.
+        r"""Gets the log_stream_id of this ComponentSnapshotContext.
 
         LTS日志流的ID
 
@@ -421,7 +421,7 @@ class ComponentSnapshotContext:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ComponentSnapshotContext.
+        r"""Sets the log_stream_id of this ComponentSnapshotContext.
 
         LTS日志流的ID
 
@@ -432,7 +432,7 @@ class ComponentSnapshotContext:
 
     @property
     def name(self):
-        """Gets the name of this ComponentSnapshotContext.
+        r"""Gets the name of this ComponentSnapshotContext.
 
         组件名称。
 
@@ -443,7 +443,7 @@ class ComponentSnapshotContext:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentSnapshotContext.
+        r"""Sets the name of this ComponentSnapshotContext.
 
         组件名称。
 
@@ -454,7 +454,7 @@ class ComponentSnapshotContext:
 
     @property
     def operation(self):
-        """Gets the operation of this ComponentSnapshotContext.
+        r"""Gets the operation of this ComponentSnapshotContext.
 
         组件操作。
 
@@ -465,7 +465,7 @@ class ComponentSnapshotContext:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ComponentSnapshotContext.
+        r"""Sets the operation of this ComponentSnapshotContext.
 
         组件操作。
 
@@ -476,7 +476,7 @@ class ComponentSnapshotContext:
 
     @property
     def operation_status(self):
-        """Gets the operation_status of this ComponentSnapshotContext.
+        r"""Gets the operation_status of this ComponentSnapshotContext.
 
         组件操作状态。
 
@@ -487,7 +487,7 @@ class ComponentSnapshotContext:
 
     @operation_status.setter
     def operation_status(self, operation_status):
-        """Sets the operation_status of this ComponentSnapshotContext.
+        r"""Sets the operation_status of this ComponentSnapshotContext.
 
         组件操作状态。
 
@@ -498,7 +498,7 @@ class ComponentSnapshotContext:
 
     @property
     def replica(self):
-        """Gets the replica of this ComponentSnapshotContext.
+        r"""Gets the replica of this ComponentSnapshotContext.
 
         实例个数。
 
@@ -509,7 +509,7 @@ class ComponentSnapshotContext:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ComponentSnapshotContext.
+        r"""Sets the replica of this ComponentSnapshotContext.
 
         实例个数。
 
@@ -520,7 +520,7 @@ class ComponentSnapshotContext:
 
     @property
     def resource_limit(self):
-        """Gets the resource_limit of this ComponentSnapshotContext.
+        r"""Gets the resource_limit of this ComponentSnapshotContext.
 
         组件规格。
 
@@ -531,7 +531,7 @@ class ComponentSnapshotContext:
 
     @resource_limit.setter
     def resource_limit(self, resource_limit):
-        """Sets the resource_limit of this ComponentSnapshotContext.
+        r"""Sets the resource_limit of this ComponentSnapshotContext.
 
         组件规格。
 
@@ -542,7 +542,7 @@ class ComponentSnapshotContext:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ComponentSnapshotContext.
+        r"""Gets the runtime of this ComponentSnapshotContext.
 
         语言/运行时。
 
@@ -553,7 +553,7 @@ class ComponentSnapshotContext:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ComponentSnapshotContext.
+        r"""Sets the runtime of this ComponentSnapshotContext.
 
         语言/运行时。
 
@@ -564,7 +564,7 @@ class ComponentSnapshotContext:
 
     @property
     def source(self):
-        """Gets the source of this ComponentSnapshotContext.
+        r"""Gets the source of this ComponentSnapshotContext.
 
         组件源信息。
 
@@ -575,7 +575,7 @@ class ComponentSnapshotContext:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentSnapshotContext.
+        r"""Sets the source of this ComponentSnapshotContext.
 
         组件源信息。
 
@@ -586,7 +586,7 @@ class ComponentSnapshotContext:
 
     @property
     def status(self):
-        """Gets the status of this ComponentSnapshotContext.
+        r"""Gets the status of this ComponentSnapshotContext.
 
         组件状态。
 
@@ -597,7 +597,7 @@ class ComponentSnapshotContext:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentSnapshotContext.
+        r"""Sets the status of this ComponentSnapshotContext.
 
         组件状态。
 
@@ -608,7 +608,7 @@ class ComponentSnapshotContext:
 
     @property
     def version(self):
-        """Gets the version of this ComponentSnapshotContext.
+        r"""Gets the version of this ComponentSnapshotContext.
 
         组件版本。
 
@@ -619,7 +619,7 @@ class ComponentSnapshotContext:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentSnapshotContext.
+        r"""Sets the version of this ComponentSnapshotContext.
 
         组件版本。
 
@@ -630,7 +630,7 @@ class ComponentSnapshotContext:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ComponentSnapshotContext.
+        r"""Gets the created_at of this ComponentSnapshotContext.
 
         创建时间。
 
@@ -641,7 +641,7 @@ class ComponentSnapshotContext:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ComponentSnapshotContext.
+        r"""Sets the created_at of this ComponentSnapshotContext.
 
         创建时间。
 
@@ -652,7 +652,7 @@ class ComponentSnapshotContext:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ComponentSnapshotContext.
+        r"""Gets the updated_at of this ComponentSnapshotContext.
 
         更新时间。
 
@@ -663,7 +663,7 @@ class ComponentSnapshotContext:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ComponentSnapshotContext.
+        r"""Sets the updated_at of this ComponentSnapshotContext.
 
         更新时间。
 

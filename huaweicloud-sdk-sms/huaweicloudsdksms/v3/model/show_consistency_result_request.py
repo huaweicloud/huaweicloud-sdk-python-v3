@@ -25,7 +25,7 @@ class ShowConsistencyResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowConsistencyResultRequest
+        r"""ShowConsistencyResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConsistencyResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowConsistencyResultRequest.
+        r"""Gets the task_id of this ShowConsistencyResultRequest.
 
         任务id
 
@@ -53,7 +53,7 @@ class ShowConsistencyResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowConsistencyResultRequest.
+        r"""Sets the task_id of this ShowConsistencyResultRequest.
 
         任务id
 

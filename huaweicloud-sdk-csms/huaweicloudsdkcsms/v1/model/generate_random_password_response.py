@@ -26,7 +26,7 @@ class GenerateRandomPasswordResponse(SdkResponse):
     }
 
     def __init__(self, password=None):
-        """GenerateRandomPasswordResponse
+        r"""GenerateRandomPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GenerateRandomPasswordResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this GenerateRandomPasswordResponse.
+        r"""Gets the password of this GenerateRandomPasswordResponse.
 
         :return: The password of this GenerateRandomPasswordResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class GenerateRandomPasswordResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this GenerateRandomPasswordResponse.
+        r"""Sets the password of this GenerateRandomPasswordResponse.
 
         :param password: The password of this GenerateRandomPasswordResponse.
         :type password: str

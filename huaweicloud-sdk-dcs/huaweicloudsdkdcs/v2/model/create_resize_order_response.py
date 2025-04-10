@@ -26,7 +26,7 @@ class CreateResizeOrderResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """CreateResizeOrderResponse
+        r"""CreateResizeOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateResizeOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateResizeOrderResponse.
+        r"""Gets the order_id of this CreateResizeOrderResponse.
 
         订单ID，仅在创建包周期实例时返回。
 
@@ -55,7 +55,7 @@ class CreateResizeOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateResizeOrderResponse.
+        r"""Sets the order_id of this CreateResizeOrderResponse.
 
         订单ID，仅在创建包周期实例时返回。
 

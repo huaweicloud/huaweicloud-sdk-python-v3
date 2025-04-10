@@ -38,7 +38,7 @@ class SetBucketNotificationResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """SetBucketNotificationResponse
+        r"""SetBucketNotificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this SetBucketNotificationResponse.
+        r"""Gets the x_obs_id_2 of this SetBucketNotificationResponse.
 
         :return: The x_obs_id_2 of this SetBucketNotificationResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this SetBucketNotificationResponse.
+        r"""Sets the x_obs_id_2 of this SetBucketNotificationResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this SetBucketNotificationResponse.
         :type x_obs_id_2: str
@@ -99,7 +99,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this SetBucketNotificationResponse.
+        r"""Gets the x_obs_request_id of this SetBucketNotificationResponse.
 
         :return: The x_obs_request_id of this SetBucketNotificationResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this SetBucketNotificationResponse.
+        r"""Sets the x_obs_request_id of this SetBucketNotificationResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this SetBucketNotificationResponse.
         :type x_obs_request_id: str
@@ -117,7 +117,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this SetBucketNotificationResponse.
+        r"""Gets the e_tag of this SetBucketNotificationResponse.
 
         :return: The e_tag of this SetBucketNotificationResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this SetBucketNotificationResponse.
+        r"""Sets the e_tag of this SetBucketNotificationResponse.
 
         :param e_tag: The e_tag of this SetBucketNotificationResponse.
         :type e_tag: str
@@ -135,7 +135,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this SetBucketNotificationResponse.
+        r"""Gets the connection of this SetBucketNotificationResponse.
 
         :return: The connection of this SetBucketNotificationResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this SetBucketNotificationResponse.
+        r"""Sets the connection of this SetBucketNotificationResponse.
 
         :param connection: The connection of this SetBucketNotificationResponse.
         :type connection: str
@@ -153,7 +153,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this SetBucketNotificationResponse.
+        r"""Gets the content_length of this SetBucketNotificationResponse.
 
         :return: The content_length of this SetBucketNotificationResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this SetBucketNotificationResponse.
+        r"""Sets the content_length of this SetBucketNotificationResponse.
 
         :param content_length: The content_length of this SetBucketNotificationResponse.
         :type content_length: str
@@ -171,7 +171,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this SetBucketNotificationResponse.
+        r"""Gets the date of this SetBucketNotificationResponse.
 
         :return: The date of this SetBucketNotificationResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class SetBucketNotificationResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SetBucketNotificationResponse.
+        r"""Sets the date of this SetBucketNotificationResponse.
 
         :param date: The date of this SetBucketNotificationResponse.
         :type date: str

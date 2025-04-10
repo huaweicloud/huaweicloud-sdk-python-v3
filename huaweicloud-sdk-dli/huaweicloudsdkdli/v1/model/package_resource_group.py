@@ -39,7 +39,7 @@ class PackageResourceGroup:
     }
 
     def __init__(self, group_name=None, status=None, resources=None, details=None, create_time=None, update_time=None, owner=None, is_async=None):
-        """PackageResourceGroup
+        r"""PackageResourceGroup
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PackageResourceGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PackageResourceGroup.
+        r"""Gets the group_name of this PackageResourceGroup.
 
         :return: The group_name of this PackageResourceGroup.
         :rtype: str
@@ -101,7 +101,7 @@ class PackageResourceGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PackageResourceGroup.
+        r"""Sets the group_name of this PackageResourceGroup.
 
         :param group_name: The group_name of this PackageResourceGroup.
         :type group_name: str
@@ -110,7 +110,7 @@ class PackageResourceGroup:
 
     @property
     def status(self):
-        """Gets the status of this PackageResourceGroup.
+        r"""Gets the status of this PackageResourceGroup.
 
         :return: The status of this PackageResourceGroup.
         :rtype: str
@@ -119,7 +119,7 @@ class PackageResourceGroup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PackageResourceGroup.
+        r"""Sets the status of this PackageResourceGroup.
 
         :param status: The status of this PackageResourceGroup.
         :type status: str
@@ -128,7 +128,7 @@ class PackageResourceGroup:
 
     @property
     def resources(self):
-        """Gets the resources of this PackageResourceGroup.
+        r"""Gets the resources of this PackageResourceGroup.
 
         :return: The resources of this PackageResourceGroup.
         :rtype: list[str]
@@ -137,7 +137,7 @@ class PackageResourceGroup:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this PackageResourceGroup.
+        r"""Sets the resources of this PackageResourceGroup.
 
         :param resources: The resources of this PackageResourceGroup.
         :type resources: list[str]
@@ -146,7 +146,7 @@ class PackageResourceGroup:
 
     @property
     def details(self):
-        """Gets the details of this PackageResourceGroup.
+        r"""Gets the details of this PackageResourceGroup.
 
         :return: The details of this PackageResourceGroup.
         :rtype: list[:class:`huaweicloudsdkdli.v1.PackageResource`]
@@ -155,7 +155,7 @@ class PackageResourceGroup:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this PackageResourceGroup.
+        r"""Sets the details of this PackageResourceGroup.
 
         :param details: The details of this PackageResourceGroup.
         :type details: list[:class:`huaweicloudsdkdli.v1.PackageResource`]
@@ -164,7 +164,7 @@ class PackageResourceGroup:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PackageResourceGroup.
+        r"""Gets the create_time of this PackageResourceGroup.
 
         :return: The create_time of this PackageResourceGroup.
         :rtype: int
@@ -173,7 +173,7 @@ class PackageResourceGroup:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PackageResourceGroup.
+        r"""Sets the create_time of this PackageResourceGroup.
 
         :param create_time: The create_time of this PackageResourceGroup.
         :type create_time: int
@@ -182,7 +182,7 @@ class PackageResourceGroup:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PackageResourceGroup.
+        r"""Gets the update_time of this PackageResourceGroup.
 
         :return: The update_time of this PackageResourceGroup.
         :rtype: int
@@ -191,7 +191,7 @@ class PackageResourceGroup:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PackageResourceGroup.
+        r"""Sets the update_time of this PackageResourceGroup.
 
         :param update_time: The update_time of this PackageResourceGroup.
         :type update_time: int
@@ -200,7 +200,7 @@ class PackageResourceGroup:
 
     @property
     def owner(self):
-        """Gets the owner of this PackageResourceGroup.
+        r"""Gets the owner of this PackageResourceGroup.
 
         :return: The owner of this PackageResourceGroup.
         :rtype: str
@@ -209,7 +209,7 @@ class PackageResourceGroup:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PackageResourceGroup.
+        r"""Sets the owner of this PackageResourceGroup.
 
         :param owner: The owner of this PackageResourceGroup.
         :type owner: str
@@ -218,7 +218,7 @@ class PackageResourceGroup:
 
     @property
     def is_async(self):
-        """Gets the is_async of this PackageResourceGroup.
+        r"""Gets the is_async of this PackageResourceGroup.
 
         :return: The is_async of this PackageResourceGroup.
         :rtype: bool
@@ -227,7 +227,7 @@ class PackageResourceGroup:
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this PackageResourceGroup.
+        r"""Sets the is_async of this PackageResourceGroup.
 
         :param is_async: The is_async of this PackageResourceGroup.
         :type is_async: bool

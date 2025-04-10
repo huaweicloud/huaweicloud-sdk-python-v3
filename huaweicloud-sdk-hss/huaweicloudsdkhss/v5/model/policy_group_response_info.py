@@ -39,7 +39,7 @@ class PolicyGroupResponseInfo:
     }
 
     def __init__(self, group_name=None, group_id=None, description=None, deletable=None, host_num=None, default_group=None, support_os=None, support_version=None):
-        """PolicyGroupResponseInfo
+        r"""PolicyGroupResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PolicyGroupResponseInfo.
+        r"""Gets the group_name of this PolicyGroupResponseInfo.
 
         策略组名
 
@@ -103,7 +103,7 @@ class PolicyGroupResponseInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PolicyGroupResponseInfo.
+        r"""Sets the group_name of this PolicyGroupResponseInfo.
 
         策略组名
 
@@ -114,7 +114,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PolicyGroupResponseInfo.
+        r"""Gets the group_id of this PolicyGroupResponseInfo.
 
         策略组ID
 
@@ -125,7 +125,7 @@ class PolicyGroupResponseInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PolicyGroupResponseInfo.
+        r"""Sets the group_id of this PolicyGroupResponseInfo.
 
         策略组ID
 
@@ -136,7 +136,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def description(self):
-        """Gets the description of this PolicyGroupResponseInfo.
+        r"""Gets the description of this PolicyGroupResponseInfo.
 
         策略组的描述信息
 
@@ -147,7 +147,7 @@ class PolicyGroupResponseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyGroupResponseInfo.
+        r"""Sets the description of this PolicyGroupResponseInfo.
 
         策略组的描述信息
 
@@ -158,7 +158,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def deletable(self):
-        """Gets the deletable of this PolicyGroupResponseInfo.
+        r"""Gets the deletable of this PolicyGroupResponseInfo.
 
         是否允许删除该策略组
 
@@ -169,7 +169,7 @@ class PolicyGroupResponseInfo:
 
     @deletable.setter
     def deletable(self, deletable):
-        """Sets the deletable of this PolicyGroupResponseInfo.
+        r"""Sets the deletable of this PolicyGroupResponseInfo.
 
         是否允许删除该策略组
 
@@ -180,7 +180,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this PolicyGroupResponseInfo.
+        r"""Gets the host_num of this PolicyGroupResponseInfo.
 
         关联服务器数
 
@@ -191,7 +191,7 @@ class PolicyGroupResponseInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this PolicyGroupResponseInfo.
+        r"""Sets the host_num of this PolicyGroupResponseInfo.
 
         关联服务器数
 
@@ -202,7 +202,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def default_group(self):
-        """Gets the default_group of this PolicyGroupResponseInfo.
+        r"""Gets the default_group of this PolicyGroupResponseInfo.
 
         是否是默认策略组
 
@@ -213,7 +213,7 @@ class PolicyGroupResponseInfo:
 
     @default_group.setter
     def default_group(self, default_group):
-        """Sets the default_group of this PolicyGroupResponseInfo.
+        r"""Sets the default_group of this PolicyGroupResponseInfo.
 
         是否是默认策略组
 
@@ -224,7 +224,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def support_os(self):
-        """Gets the support_os of this PolicyGroupResponseInfo.
+        r"""Gets the support_os of this PolicyGroupResponseInfo.
 
         支持的操作系统，包含如下:   - Linux ：支持Linux系统   - Windows : 支持Windows系统
 
@@ -235,7 +235,7 @@ class PolicyGroupResponseInfo:
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this PolicyGroupResponseInfo.
+        r"""Sets the support_os of this PolicyGroupResponseInfo.
 
         支持的操作系统，包含如下:   - Linux ：支持Linux系统   - Windows : 支持Windows系统
 
@@ -246,7 +246,7 @@ class PolicyGroupResponseInfo:
 
     @property
     def support_version(self):
-        """Gets the support_version of this PolicyGroupResponseInfo.
+        r"""Gets the support_version of this PolicyGroupResponseInfo.
 
         支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.advanced : 专业版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
 
@@ -257,7 +257,7 @@ class PolicyGroupResponseInfo:
 
     @support_version.setter
     def support_version(self, support_version):
-        """Sets the support_version of this PolicyGroupResponseInfo.
+        r"""Sets the support_version of this PolicyGroupResponseInfo.
 
         支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.advanced : 专业版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
 

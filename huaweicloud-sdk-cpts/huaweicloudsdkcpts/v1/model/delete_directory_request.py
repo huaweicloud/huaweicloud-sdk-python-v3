@@ -27,7 +27,7 @@ class DeleteDirectoryRequest:
     }
 
     def __init__(self, directory_id=None, test_suite_id=None):
-        """DeleteDirectoryRequest
+        r"""DeleteDirectoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDirectoryRequest:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this DeleteDirectoryRequest.
+        r"""Gets the directory_id of this DeleteDirectoryRequest.
 
         目录id
 
@@ -59,7 +59,7 @@ class DeleteDirectoryRequest:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this DeleteDirectoryRequest.
+        r"""Sets the directory_id of this DeleteDirectoryRequest.
 
         目录id
 
@@ -70,7 +70,7 @@ class DeleteDirectoryRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this DeleteDirectoryRequest.
+        r"""Gets the test_suite_id of this DeleteDirectoryRequest.
 
         测试工程id
 
@@ -81,7 +81,7 @@ class DeleteDirectoryRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this DeleteDirectoryRequest.
+        r"""Sets the test_suite_id of this DeleteDirectoryRequest.
 
         测试工程id
 

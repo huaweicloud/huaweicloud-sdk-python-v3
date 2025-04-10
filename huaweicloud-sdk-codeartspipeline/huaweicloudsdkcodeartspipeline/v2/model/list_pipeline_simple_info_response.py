@@ -32,7 +32,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, result=None):
-        """ListPipelineSimpleInfoResponse
+        r"""ListPipelineSimpleInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineSimpleInfoResponse.
+        r"""Gets the offset of this ListPipelineSimpleInfoResponse.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -76,7 +76,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineSimpleInfoResponse.
+        r"""Sets the offset of this ListPipelineSimpleInfoResponse.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -87,7 +87,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineSimpleInfoResponse.
+        r"""Gets the limit of this ListPipelineSimpleInfoResponse.
 
         每次查询的条目数量
 
@@ -98,7 +98,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineSimpleInfoResponse.
+        r"""Sets the limit of this ListPipelineSimpleInfoResponse.
 
         每次查询的条目数量
 
@@ -109,7 +109,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPipelineSimpleInfoResponse.
+        r"""Gets the total of this ListPipelineSimpleInfoResponse.
 
         总条目数量
 
@@ -120,7 +120,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPipelineSimpleInfoResponse.
+        r"""Sets the total of this ListPipelineSimpleInfoResponse.
 
         总条目数量
 
@@ -131,7 +131,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListPipelineSimpleInfoResponse.
+        r"""Gets the result of this ListPipelineSimpleInfoResponse.
 
         执行状况数据列表
 
@@ -142,7 +142,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListPipelineSimpleInfoResponse.
+        r"""Sets the result of this ListPipelineSimpleInfoResponse.
 
         执行状况数据列表
 

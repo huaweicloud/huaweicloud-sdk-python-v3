@@ -25,7 +25,7 @@ class CancelCertificateRequestRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """CancelCertificateRequestRequest
+        r"""CancelCertificateRequestRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelCertificateRequestRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this CancelCertificateRequestRequest.
+        r"""Gets the certificate_id of this CancelCertificateRequestRequest.
 
         证书ID。
 
@@ -53,7 +53,7 @@ class CancelCertificateRequestRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this CancelCertificateRequestRequest.
+        r"""Sets the certificate_id of this CancelCertificateRequestRequest.
 
         证书ID。
 

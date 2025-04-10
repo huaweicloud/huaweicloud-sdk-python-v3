@@ -25,7 +25,7 @@ class CreateDbCacheRuleRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDbCacheRuleRequest
+        r"""CreateDbCacheRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDbCacheRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDbCacheRuleRequest.
+        r"""Gets the body of this CreateDbCacheRuleRequest.
 
         :return: The body of this CreateDbCacheRuleRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbCacheRuleRequestBody`
@@ -52,7 +52,7 @@ class CreateDbCacheRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDbCacheRuleRequest.
+        r"""Sets the body of this CreateDbCacheRuleRequest.
 
         :param body: The body of this CreateDbCacheRuleRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbCacheRuleRequestBody`

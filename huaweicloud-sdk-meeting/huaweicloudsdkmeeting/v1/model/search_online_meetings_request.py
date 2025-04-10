@@ -37,7 +37,7 @@ class SearchOnlineMeetingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, query_all=None, search_key=None, x_authorization_type=None, x_site_id=None):
-        """SearchOnlineMeetingsRequest
+        r"""SearchOnlineMeetingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this SearchOnlineMeetingsRequest.
+        r"""Gets the user_uuid of this SearchOnlineMeetingsRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。
 
@@ -96,7 +96,7 @@ class SearchOnlineMeetingsRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this SearchOnlineMeetingsRequest.
+        r"""Sets the user_uuid of this SearchOnlineMeetingsRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。
 
@@ -107,7 +107,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchOnlineMeetingsRequest.
+        r"""Gets the offset of this SearchOnlineMeetingsRequest.
 
         查询偏移量。默认为0。
 
@@ -118,7 +118,7 @@ class SearchOnlineMeetingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchOnlineMeetingsRequest.
+        r"""Sets the offset of this SearchOnlineMeetingsRequest.
 
         查询偏移量。默认为0。
 
@@ -129,7 +129,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchOnlineMeetingsRequest.
+        r"""Gets the limit of this SearchOnlineMeetingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -140,7 +140,7 @@ class SearchOnlineMeetingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchOnlineMeetingsRequest.
+        r"""Sets the limit of this SearchOnlineMeetingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -151,7 +151,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def query_all(self):
-        """Gets the query_all of this SearchOnlineMeetingsRequest.
+        r"""Gets the query_all of this SearchOnlineMeetingsRequest.
 
         指定是否查询企业下所有用户的在线会议。默认值是false。 * true：查询所有用户的在线会议 * false：仅查询管理员自己的在线会议 > 仅对企业管理员生效。
 
@@ -162,7 +162,7 @@ class SearchOnlineMeetingsRequest:
 
     @query_all.setter
     def query_all(self, query_all):
-        """Sets the query_all of this SearchOnlineMeetingsRequest.
+        r"""Sets the query_all of this SearchOnlineMeetingsRequest.
 
         指定是否查询企业下所有用户的在线会议。默认值是false。 * true：查询所有用户的在线会议 * false：仅查询管理员自己的在线会议 > 仅对企业管理员生效。
 
@@ -173,7 +173,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchOnlineMeetingsRequest.
+        r"""Gets the search_key of this SearchOnlineMeetingsRequest.
 
         查询条件 。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-128个字符。
 
@@ -184,7 +184,7 @@ class SearchOnlineMeetingsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchOnlineMeetingsRequest.
+        r"""Sets the search_key of this SearchOnlineMeetingsRequest.
 
         查询条件 。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-128个字符。
 
@@ -195,7 +195,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this SearchOnlineMeetingsRequest.
+        r"""Gets the x_authorization_type of this SearchOnlineMeetingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -206,7 +206,7 @@ class SearchOnlineMeetingsRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this SearchOnlineMeetingsRequest.
+        r"""Sets the x_authorization_type of this SearchOnlineMeetingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -217,7 +217,7 @@ class SearchOnlineMeetingsRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this SearchOnlineMeetingsRequest.
+        r"""Gets the x_site_id of this SearchOnlineMeetingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -228,7 +228,7 @@ class SearchOnlineMeetingsRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this SearchOnlineMeetingsRequest.
+        r"""Sets the x_site_id of this SearchOnlineMeetingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

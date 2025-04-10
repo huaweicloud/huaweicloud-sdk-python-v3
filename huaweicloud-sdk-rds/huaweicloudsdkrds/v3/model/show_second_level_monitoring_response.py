@@ -28,7 +28,7 @@ class ShowSecondLevelMonitoringResponse(SdkResponse):
     }
 
     def __init__(self, switch_option=None, interval=None):
-        """ShowSecondLevelMonitoringResponse
+        r"""ShowSecondLevelMonitoringResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSecondLevelMonitoringResponse(SdkResponse):
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this ShowSecondLevelMonitoringResponse.
+        r"""Gets the switch_option of this ShowSecondLevelMonitoringResponse.
 
         秒级监控开关
 
@@ -62,7 +62,7 @@ class ShowSecondLevelMonitoringResponse(SdkResponse):
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this ShowSecondLevelMonitoringResponse.
+        r"""Sets the switch_option of this ShowSecondLevelMonitoringResponse.
 
         秒级监控开关
 
@@ -73,7 +73,7 @@ class ShowSecondLevelMonitoringResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowSecondLevelMonitoringResponse.
+        r"""Gets the interval of this ShowSecondLevelMonitoringResponse.
 
         监控间隔, 支持1秒和5秒
 
@@ -84,7 +84,7 @@ class ShowSecondLevelMonitoringResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowSecondLevelMonitoringResponse.
+        r"""Sets the interval of this ShowSecondLevelMonitoringResponse.
 
         监控间隔, 支持1秒和5秒
 

@@ -25,7 +25,7 @@ class DeleteEnlargeFailNodeRequestBody:
     }
 
     def __init__(self, node_id=None):
-        """DeleteEnlargeFailNodeRequestBody
+        r"""DeleteEnlargeFailNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEnlargeFailNodeRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteEnlargeFailNodeRequestBody.
+        r"""Gets the node_id of this DeleteEnlargeFailNodeRequestBody.
 
         节点ID
 
@@ -53,7 +53,7 @@ class DeleteEnlargeFailNodeRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteEnlargeFailNodeRequestBody.
+        r"""Sets the node_id of this DeleteEnlargeFailNodeRequestBody.
 
         节点ID
 

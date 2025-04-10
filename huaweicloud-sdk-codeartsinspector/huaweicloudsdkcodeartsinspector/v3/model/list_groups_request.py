@@ -27,7 +27,7 @@ class ListGroupsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListGroupsRequest
+        r"""ListGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGroupsRequest.
+        r"""Gets the offset of this ListGroupsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -61,7 +61,7 @@ class ListGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGroupsRequest.
+        r"""Sets the offset of this ListGroupsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -72,7 +72,7 @@ class ListGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupsRequest.
+        r"""Gets the limit of this ListGroupsRequest.
 
         分页查询，每页显示的条目数量
 
@@ -83,7 +83,7 @@ class ListGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupsRequest.
+        r"""Sets the limit of this ListGroupsRequest.
 
         分页查询，每页显示的条目数量
 

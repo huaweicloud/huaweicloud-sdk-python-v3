@@ -26,7 +26,7 @@ class ShowNodesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowNodesResponse
+        r"""ShowNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNodesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowNodesResponse.
+        r"""Gets the body of this ShowNodesResponse.
 
         作业算子基本信息列表
 
@@ -55,7 +55,7 @@ class ShowNodesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowNodesResponse.
+        r"""Sets the body of this ShowNodesResponse.
 
         作业算子基本信息列表
 

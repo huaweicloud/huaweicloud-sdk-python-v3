@@ -29,7 +29,7 @@ class DbOrTableRenameRule:
     }
 
     def __init__(self, prefix_name=None, suffix_name=None, type=None):
-        """DbOrTableRenameRule
+        r"""DbOrTableRenameRule
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DbOrTableRenameRule:
 
     @property
     def prefix_name(self):
-        """Gets the prefix_name of this DbOrTableRenameRule.
+        r"""Gets the prefix_name of this DbOrTableRenameRule.
 
         前缀名称 当type为prefixAndSuffix， 填写prefix_name，库表名称仅增加前缀，若同时也填写suffix_name, 库表名称增加前后缀
 
@@ -68,7 +68,7 @@ class DbOrTableRenameRule:
 
     @prefix_name.setter
     def prefix_name(self, prefix_name):
-        """Sets the prefix_name of this DbOrTableRenameRule.
+        r"""Sets the prefix_name of this DbOrTableRenameRule.
 
         前缀名称 当type为prefixAndSuffix， 填写prefix_name，库表名称仅增加前缀，若同时也填写suffix_name, 库表名称增加前后缀
 
@@ -79,7 +79,7 @@ class DbOrTableRenameRule:
 
     @property
     def suffix_name(self):
-        """Gets the suffix_name of this DbOrTableRenameRule.
+        r"""Gets the suffix_name of this DbOrTableRenameRule.
 
         后缀名称 当type为prefixAndSuffix， 填写suffix_name，库表名称仅增加后缀，若同时也填写prefix_name, 库表名称同时增加前后缀
 
@@ -90,7 +90,7 @@ class DbOrTableRenameRule:
 
     @suffix_name.setter
     def suffix_name(self, suffix_name):
-        """Sets the suffix_name of this DbOrTableRenameRule.
+        r"""Sets the suffix_name of this DbOrTableRenameRule.
 
         后缀名称 当type为prefixAndSuffix， 填写suffix_name，库表名称仅增加后缀，若同时也填写prefix_name, 库表名称同时增加前后缀
 
@@ -101,7 +101,7 @@ class DbOrTableRenameRule:
 
     @property
     def type(self):
-        """Gets the type of this DbOrTableRenameRule.
+        r"""Gets the type of this DbOrTableRenameRule.
 
         库表映射类型 prefixAndSuffix:前缀、后缀或者前后缀
 
@@ -112,7 +112,7 @@ class DbOrTableRenameRule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DbOrTableRenameRule.
+        r"""Sets the type of this DbOrTableRenameRule.
 
         库表映射类型 prefixAndSuffix:前缀、后缀或者前后缀
 

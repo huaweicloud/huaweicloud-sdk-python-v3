@@ -31,7 +31,7 @@ class ActivateRecordRecords:
     }
 
     def __init__(self, update_time=None, active_status=None, project_id=None, node_id=None):
-        """ActivateRecordRecords
+        r"""ActivateRecordRecords
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ActivateRecordRecords:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ActivateRecordRecords.
+        r"""Gets the update_time of this ActivateRecordRecords.
 
         更新时间
 
@@ -75,7 +75,7 @@ class ActivateRecordRecords:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ActivateRecordRecords.
+        r"""Sets the update_time of this ActivateRecordRecords.
 
         更新时间
 
@@ -86,7 +86,7 @@ class ActivateRecordRecords:
 
     @property
     def active_status(self):
-        """Gets the active_status of this ActivateRecordRecords.
+        r"""Gets the active_status of this ActivateRecordRecords.
 
         激活状态
 
@@ -97,7 +97,7 @@ class ActivateRecordRecords:
 
     @active_status.setter
     def active_status(self, active_status):
-        """Sets the active_status of this ActivateRecordRecords.
+        r"""Sets the active_status of this ActivateRecordRecords.
 
         激活状态
 
@@ -108,7 +108,7 @@ class ActivateRecordRecords:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ActivateRecordRecords.
+        r"""Gets the project_id of this ActivateRecordRecords.
 
         项目ID
 
@@ -119,7 +119,7 @@ class ActivateRecordRecords:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ActivateRecordRecords.
+        r"""Sets the project_id of this ActivateRecordRecords.
 
         项目ID
 
@@ -130,7 +130,7 @@ class ActivateRecordRecords:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ActivateRecordRecords.
+        r"""Gets the node_id of this ActivateRecordRecords.
 
         节点ID
 
@@ -141,7 +141,7 @@ class ActivateRecordRecords:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ActivateRecordRecords.
+        r"""Sets the node_id of this ActivateRecordRecords.
 
         节点ID
 

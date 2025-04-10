@@ -30,7 +30,7 @@ class StartResJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """StartResJobResponse
+        r"""StartResJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class StartResJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this StartResJobResponse.
+        r"""Gets the is_success of this StartResJobResponse.
 
         是否成功。
 
@@ -69,7 +69,7 @@ class StartResJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this StartResJobResponse.
+        r"""Sets the is_success of this StartResJobResponse.
 
         是否成功。
 
@@ -80,7 +80,7 @@ class StartResJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this StartResJobResponse.
+        r"""Gets the message of this StartResJobResponse.
 
         返回消息。
 
@@ -91,7 +91,7 @@ class StartResJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this StartResJobResponse.
+        r"""Sets the message of this StartResJobResponse.
 
         返回消息。
 
@@ -102,7 +102,7 @@ class StartResJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this StartResJobResponse.
+        r"""Gets the error_code of this StartResJobResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -113,7 +113,7 @@ class StartResJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this StartResJobResponse.
+        r"""Sets the error_code of this StartResJobResponse.
 
         错误码（请求成功时，不返回此字段）。
 

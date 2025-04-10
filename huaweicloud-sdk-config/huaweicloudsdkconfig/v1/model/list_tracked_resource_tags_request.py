@@ -31,7 +31,7 @@ class ListTrackedResourceTagsRequest:
     }
 
     def __init__(self, key=None, marker=None, limit=None, resource_deleted=None):
-        """ListTrackedResourceTagsRequest
+        r"""ListTrackedResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTrackedResourceTagsRequest:
 
     @property
     def key(self):
-        """Gets the key of this ListTrackedResourceTagsRequest.
+        r"""Gets the key of this ListTrackedResourceTagsRequest.
 
         标签键名
 
@@ -75,7 +75,7 @@ class ListTrackedResourceTagsRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListTrackedResourceTagsRequest.
+        r"""Sets the key of this ListTrackedResourceTagsRequest.
 
         标签键名
 
@@ -86,7 +86,7 @@ class ListTrackedResourceTagsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTrackedResourceTagsRequest.
+        r"""Gets the marker of this ListTrackedResourceTagsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -97,7 +97,7 @@ class ListTrackedResourceTagsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTrackedResourceTagsRequest.
+        r"""Sets the marker of this ListTrackedResourceTagsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -108,7 +108,7 @@ class ListTrackedResourceTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTrackedResourceTagsRequest.
+        r"""Gets the limit of this ListTrackedResourceTagsRequest.
 
         最大的返回数量。
 
@@ -119,7 +119,7 @@ class ListTrackedResourceTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTrackedResourceTagsRequest.
+        r"""Sets the limit of this ListTrackedResourceTagsRequest.
 
         最大的返回数量。
 
@@ -130,7 +130,7 @@ class ListTrackedResourceTagsRequest:
 
     @property
     def resource_deleted(self):
-        """Gets the resource_deleted of this ListTrackedResourceTagsRequest.
+        r"""Gets the resource_deleted of this ListTrackedResourceTagsRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 
@@ -141,7 +141,7 @@ class ListTrackedResourceTagsRequest:
 
     @resource_deleted.setter
     def resource_deleted(self, resource_deleted):
-        """Sets the resource_deleted of this ListTrackedResourceTagsRequest.
+        r"""Sets the resource_deleted of this ListTrackedResourceTagsRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 

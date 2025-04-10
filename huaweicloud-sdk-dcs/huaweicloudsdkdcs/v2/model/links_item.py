@@ -27,7 +27,7 @@ class LinksItem:
     }
 
     def __init__(self, file_name=None, link=None):
-        """LinksItem
+        r"""LinksItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LinksItem:
 
     @property
     def file_name(self):
-        """Gets the file_name of this LinksItem.
+        r"""Gets the file_name of this LinksItem.
 
         备份文件名称。
 
@@ -61,7 +61,7 @@ class LinksItem:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this LinksItem.
+        r"""Sets the file_name of this LinksItem.
 
         备份文件名称。
 
@@ -72,7 +72,7 @@ class LinksItem:
 
     @property
     def link(self):
-        """Gets the link of this LinksItem.
+        r"""Gets the link of this LinksItem.
 
         备份文件下载链接地址。
 
@@ -83,7 +83,7 @@ class LinksItem:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this LinksItem.
+        r"""Sets the link of this LinksItem.
 
         备份文件下载链接地址。
 

@@ -28,7 +28,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListPostgresqlDatabasesResponse
+        r"""ListPostgresqlDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListPostgresqlDatabasesResponse.
+        r"""Gets the databases of this ListPostgresqlDatabasesResponse.
 
         列表中每个元素表示一个数据库。
 
@@ -62,7 +62,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListPostgresqlDatabasesResponse.
+        r"""Sets the databases of this ListPostgresqlDatabasesResponse.
 
         列表中每个元素表示一个数据库。
 
@@ -73,7 +73,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPostgresqlDatabasesResponse.
+        r"""Gets the total_count of this ListPostgresqlDatabasesResponse.
 
         数据库总数。
 
@@ -84,7 +84,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPostgresqlDatabasesResponse.
+        r"""Sets the total_count of this ListPostgresqlDatabasesResponse.
 
         数据库总数。
 

@@ -35,7 +35,7 @@ class IdentityprovidersResult:
     }
 
     def __init__(self, sso_type=None, id=None, description=None, enabled=None, remote_ids=None, links=None):
-        """IdentityprovidersResult
+        r"""IdentityprovidersResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class IdentityprovidersResult:
 
     @property
     def sso_type(self):
-        """Gets the sso_type of this IdentityprovidersResult.
+        r"""Gets the sso_type of this IdentityprovidersResult.
 
         身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种。当返回为空字符串或者null时，默认为缺省类型virtual_user_sso类型。
 
@@ -83,7 +83,7 @@ class IdentityprovidersResult:
 
     @sso_type.setter
     def sso_type(self, sso_type):
-        """Sets the sso_type of this IdentityprovidersResult.
+        r"""Sets the sso_type of this IdentityprovidersResult.
 
         身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种。当返回为空字符串或者null时，默认为缺省类型virtual_user_sso类型。
 
@@ -94,7 +94,7 @@ class IdentityprovidersResult:
 
     @property
     def id(self):
-        """Gets the id of this IdentityprovidersResult.
+        r"""Gets the id of this IdentityprovidersResult.
 
         身份提供商ID。
 
@@ -105,7 +105,7 @@ class IdentityprovidersResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IdentityprovidersResult.
+        r"""Sets the id of this IdentityprovidersResult.
 
         身份提供商ID。
 
@@ -116,7 +116,7 @@ class IdentityprovidersResult:
 
     @property
     def description(self):
-        """Gets the description of this IdentityprovidersResult.
+        r"""Gets the description of this IdentityprovidersResult.
 
         身份提供商描述信息。
 
@@ -127,7 +127,7 @@ class IdentityprovidersResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IdentityprovidersResult.
+        r"""Sets the description of this IdentityprovidersResult.
 
         身份提供商描述信息。
 
@@ -138,7 +138,7 @@ class IdentityprovidersResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this IdentityprovidersResult.
+        r"""Gets the enabled of this IdentityprovidersResult.
 
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
@@ -149,7 +149,7 @@ class IdentityprovidersResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this IdentityprovidersResult.
+        r"""Sets the enabled of this IdentityprovidersResult.
 
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
@@ -160,7 +160,7 @@ class IdentityprovidersResult:
 
     @property
     def remote_ids(self):
-        """Gets the remote_ids of this IdentityprovidersResult.
+        r"""Gets the remote_ids of this IdentityprovidersResult.
 
         身份提供商的联邦用户ID列表。
 
@@ -171,7 +171,7 @@ class IdentityprovidersResult:
 
     @remote_ids.setter
     def remote_ids(self, remote_ids):
-        """Sets the remote_ids of this IdentityprovidersResult.
+        r"""Sets the remote_ids of this IdentityprovidersResult.
 
         身份提供商的联邦用户ID列表。
 
@@ -182,7 +182,7 @@ class IdentityprovidersResult:
 
     @property
     def links(self):
-        """Gets the links of this IdentityprovidersResult.
+        r"""Gets the links of this IdentityprovidersResult.
 
         :return: The links of this IdentityprovidersResult.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityprovidersLinks`
@@ -191,7 +191,7 @@ class IdentityprovidersResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this IdentityprovidersResult.
+        r"""Sets the links of this IdentityprovidersResult.
 
         :param links: The links of this IdentityprovidersResult.
         :type links: :class:`huaweicloudsdkiam.v3.IdentityprovidersLinks`

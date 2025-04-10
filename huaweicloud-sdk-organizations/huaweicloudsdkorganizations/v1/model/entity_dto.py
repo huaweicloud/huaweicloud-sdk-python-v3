@@ -29,7 +29,7 @@ class EntityDto:
     }
 
     def __init__(self, name=None, id=None, type=None):
-        """EntityDto
+        r"""EntityDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EntityDto:
 
     @property
     def name(self):
-        """Gets the name of this EntityDto.
+        r"""Gets the name of this EntityDto.
 
         实体的名称。
 
@@ -65,7 +65,7 @@ class EntityDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EntityDto.
+        r"""Sets the name of this EntityDto.
 
         实体的名称。
 
@@ -76,7 +76,7 @@ class EntityDto:
 
     @property
     def id(self):
-        """Gets the id of this EntityDto.
+        r"""Gets the id of this EntityDto.
 
         实体的唯一标识符（ID）。
 
@@ -87,7 +87,7 @@ class EntityDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EntityDto.
+        r"""Sets the id of this EntityDto.
 
         实体的唯一标识符（ID）。
 
@@ -98,7 +98,7 @@ class EntityDto:
 
     @property
     def type(self):
-        """Gets the type of this EntityDto.
+        r"""Gets the type of this EntityDto.
 
         实体的类型。account：账号；organizational_unit：组织单元；root：根。
 
@@ -109,7 +109,7 @@ class EntityDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EntityDto.
+        r"""Sets the type of this EntityDto.
 
         实体的类型。account：账号；organizational_unit：组织单元；root：根。
 

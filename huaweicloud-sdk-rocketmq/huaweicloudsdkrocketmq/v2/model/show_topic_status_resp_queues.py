@@ -31,7 +31,7 @@ class ShowTopicStatusRespQueues:
     }
 
     def __init__(self, id=None, min_offset=None, max_offset=None, last_message_time=None):
-        """ShowTopicStatusRespQueues
+        r"""ShowTopicStatusRespQueues
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowTopicStatusRespQueues:
 
     @property
     def id(self):
-        """Gets the id of this ShowTopicStatusRespQueues.
+        r"""Gets the id of this ShowTopicStatusRespQueues.
 
         队列ID。
 
@@ -75,7 +75,7 @@ class ShowTopicStatusRespQueues:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTopicStatusRespQueues.
+        r"""Sets the id of this ShowTopicStatusRespQueues.
 
         队列ID。
 
@@ -86,7 +86,7 @@ class ShowTopicStatusRespQueues:
 
     @property
     def min_offset(self):
-        """Gets the min_offset of this ShowTopicStatusRespQueues.
+        r"""Gets the min_offset of this ShowTopicStatusRespQueues.
 
         最小偏移量。
 
@@ -97,7 +97,7 @@ class ShowTopicStatusRespQueues:
 
     @min_offset.setter
     def min_offset(self, min_offset):
-        """Sets the min_offset of this ShowTopicStatusRespQueues.
+        r"""Sets the min_offset of this ShowTopicStatusRespQueues.
 
         最小偏移量。
 
@@ -108,7 +108,7 @@ class ShowTopicStatusRespQueues:
 
     @property
     def max_offset(self):
-        """Gets the max_offset of this ShowTopicStatusRespQueues.
+        r"""Gets the max_offset of this ShowTopicStatusRespQueues.
 
         最大偏移量。
 
@@ -119,7 +119,7 @@ class ShowTopicStatusRespQueues:
 
     @max_offset.setter
     def max_offset(self, max_offset):
-        """Sets the max_offset of this ShowTopicStatusRespQueues.
+        r"""Sets the max_offset of this ShowTopicStatusRespQueues.
 
         最大偏移量。
 
@@ -130,7 +130,7 @@ class ShowTopicStatusRespQueues:
 
     @property
     def last_message_time(self):
-        """Gets the last_message_time of this ShowTopicStatusRespQueues.
+        r"""Gets the last_message_time of this ShowTopicStatusRespQueues.
 
         最后一条消息的时间。
 
@@ -141,7 +141,7 @@ class ShowTopicStatusRespQueues:
 
     @last_message_time.setter
     def last_message_time(self, last_message_time):
-        """Sets the last_message_time of this ShowTopicStatusRespQueues.
+        r"""Sets the last_message_time of this ShowTopicStatusRespQueues.
 
         最后一条消息的时间。
 

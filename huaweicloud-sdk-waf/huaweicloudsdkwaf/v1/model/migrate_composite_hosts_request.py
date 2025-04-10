@@ -29,7 +29,7 @@ class MigrateCompositeHostsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, target_enterprise_project_id=None, body=None):
-        """MigrateCompositeHostsRequest
+        r"""MigrateCompositeHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MigrateCompositeHostsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MigrateCompositeHostsRequest.
+        r"""Gets the enterprise_project_id of this MigrateCompositeHostsRequest.
 
         当前企业项目ID
 
@@ -66,7 +66,7 @@ class MigrateCompositeHostsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MigrateCompositeHostsRequest.
+        r"""Sets the enterprise_project_id of this MigrateCompositeHostsRequest.
 
         当前企业项目ID
 
@@ -77,7 +77,7 @@ class MigrateCompositeHostsRequest:
 
     @property
     def target_enterprise_project_id(self):
-        """Gets the target_enterprise_project_id of this MigrateCompositeHostsRequest.
+        r"""Gets the target_enterprise_project_id of this MigrateCompositeHostsRequest.
 
         迁移的目标企业项目ID
 
@@ -88,7 +88,7 @@ class MigrateCompositeHostsRequest:
 
     @target_enterprise_project_id.setter
     def target_enterprise_project_id(self, target_enterprise_project_id):
-        """Sets the target_enterprise_project_id of this MigrateCompositeHostsRequest.
+        r"""Sets the target_enterprise_project_id of this MigrateCompositeHostsRequest.
 
         迁移的目标企业项目ID
 
@@ -99,7 +99,7 @@ class MigrateCompositeHostsRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateCompositeHostsRequest.
+        r"""Gets the body of this MigrateCompositeHostsRequest.
 
         :return: The body of this MigrateCompositeHostsRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsRequestBody`
@@ -108,7 +108,7 @@ class MigrateCompositeHostsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateCompositeHostsRequest.
+        r"""Sets the body of this MigrateCompositeHostsRequest.
 
         :param body: The body of this MigrateCompositeHostsRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsRequestBody`

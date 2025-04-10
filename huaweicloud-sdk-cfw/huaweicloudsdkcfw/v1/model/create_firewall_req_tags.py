@@ -27,7 +27,7 @@ class CreateFirewallReqTags:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateFirewallReqTags
+        r"""CreateFirewallReqTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateFirewallReqTags:
 
     @property
     def key(self):
-        """Gets the key of this CreateFirewallReqTags.
+        r"""Gets the key of this CreateFirewallReqTags.
 
         资源标签键
 
@@ -61,7 +61,7 @@ class CreateFirewallReqTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateFirewallReqTags.
+        r"""Sets the key of this CreateFirewallReqTags.
 
         资源标签键
 
@@ -72,7 +72,7 @@ class CreateFirewallReqTags:
 
     @property
     def value(self):
-        """Gets the value of this CreateFirewallReqTags.
+        r"""Gets the value of this CreateFirewallReqTags.
 
         资源标签值
 
@@ -83,7 +83,7 @@ class CreateFirewallReqTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateFirewallReqTags.
+        r"""Sets the value of this CreateFirewallReqTags.
 
         资源标签值
 

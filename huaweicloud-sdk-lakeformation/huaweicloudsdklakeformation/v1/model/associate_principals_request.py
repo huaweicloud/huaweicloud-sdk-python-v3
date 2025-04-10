@@ -29,7 +29,7 @@ class AssociatePrincipalsRequest:
     }
 
     def __init__(self, instance_id=None, role_name=None, body=None):
-        """AssociatePrincipalsRequest
+        r"""AssociatePrincipalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AssociatePrincipalsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AssociatePrincipalsRequest.
+        r"""Gets the instance_id of this AssociatePrincipalsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -66,7 +66,7 @@ class AssociatePrincipalsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AssociatePrincipalsRequest.
+        r"""Sets the instance_id of this AssociatePrincipalsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -77,7 +77,7 @@ class AssociatePrincipalsRequest:
 
     @property
     def role_name(self):
-        """Gets the role_name of this AssociatePrincipalsRequest.
+        r"""Gets the role_name of this AssociatePrincipalsRequest.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -88,7 +88,7 @@ class AssociatePrincipalsRequest:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this AssociatePrincipalsRequest.
+        r"""Sets the role_name of this AssociatePrincipalsRequest.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -99,7 +99,7 @@ class AssociatePrincipalsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociatePrincipalsRequest.
+        r"""Gets the body of this AssociatePrincipalsRequest.
 
         :return: The body of this AssociatePrincipalsRequest.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Principal`]
@@ -108,7 +108,7 @@ class AssociatePrincipalsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociatePrincipalsRequest.
+        r"""Sets the body of this AssociatePrincipalsRequest.
 
         :param body: The body of this AssociatePrincipalsRequest.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Principal`]

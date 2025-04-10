@@ -27,7 +27,7 @@ class CreateCommonTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateCommonTaskRequest
+        r"""CreateCommonTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCommonTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateCommonTaskRequest.
+        r"""Gets the instance_id of this CreateCommonTaskRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateCommonTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateCommonTaskRequest.
+        r"""Sets the instance_id of this CreateCommonTaskRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateCommonTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCommonTaskRequest.
+        r"""Gets the body of this CreateCommonTaskRequest.
 
         :return: The body of this CreateCommonTaskRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`
@@ -80,7 +80,7 @@ class CreateCommonTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCommonTaskRequest.
+        r"""Sets the body of this CreateCommonTaskRequest.
 
         :param body: The body of this CreateCommonTaskRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`

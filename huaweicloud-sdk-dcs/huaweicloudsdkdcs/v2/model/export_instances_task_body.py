@@ -55,7 +55,7 @@ class ExportInstancesTaskBody:
     }
 
     def __init__(self, included_instances=None, region=None, name=None, capacity=None, instance_id=None, ip=None, available_zone=None, status=None, product_type=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, enterprise_project_id=None, charging_mode=None, tags=None):
-        """ExportInstancesTaskBody
+        r"""ExportInstancesTaskBody
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class ExportInstancesTaskBody:
 
     @property
     def included_instances(self):
-        """Gets the included_instances of this ExportInstancesTaskBody.
+        r"""Gets the included_instances of this ExportInstancesTaskBody.
 
         导出实例列表，如果为空，则会导出满足其余参数条件的所有实例
 
@@ -158,7 +158,7 @@ class ExportInstancesTaskBody:
 
     @included_instances.setter
     def included_instances(self, included_instances):
-        """Sets the included_instances of this ExportInstancesTaskBody.
+        r"""Sets the included_instances of this ExportInstancesTaskBody.
 
         导出实例列表，如果为空，则会导出满足其余参数条件的所有实例
 
@@ -169,7 +169,7 @@ class ExportInstancesTaskBody:
 
     @property
     def region(self):
-        """Gets the region of this ExportInstancesTaskBody.
+        r"""Gets the region of this ExportInstancesTaskBody.
 
         局点名称，用于导出的文件名命名
 
@@ -180,7 +180,7 @@ class ExportInstancesTaskBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ExportInstancesTaskBody.
+        r"""Sets the region of this ExportInstancesTaskBody.
 
         局点名称，用于导出的文件名命名
 
@@ -191,7 +191,7 @@ class ExportInstancesTaskBody:
 
     @property
     def name(self):
-        """Gets the name of this ExportInstancesTaskBody.
+        r"""Gets the name of this ExportInstancesTaskBody.
 
         按照实例名称筛选实例
 
@@ -202,7 +202,7 @@ class ExportInstancesTaskBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExportInstancesTaskBody.
+        r"""Sets the name of this ExportInstancesTaskBody.
 
         按照实例名称筛选实例
 
@@ -213,7 +213,7 @@ class ExportInstancesTaskBody:
 
     @property
     def capacity(self):
-        """Gets the capacity of this ExportInstancesTaskBody.
+        r"""Gets the capacity of this ExportInstancesTaskBody.
 
         按照实例规格筛选实例
 
@@ -224,7 +224,7 @@ class ExportInstancesTaskBody:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this ExportInstancesTaskBody.
+        r"""Sets the capacity of this ExportInstancesTaskBody.
 
         按照实例规格筛选实例
 
@@ -235,7 +235,7 @@ class ExportInstancesTaskBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportInstancesTaskBody.
+        r"""Gets the instance_id of this ExportInstancesTaskBody.
 
         按照实例ID筛选实例
 
@@ -246,7 +246,7 @@ class ExportInstancesTaskBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportInstancesTaskBody.
+        r"""Sets the instance_id of this ExportInstancesTaskBody.
 
         按照实例ID筛选实例
 
@@ -257,7 +257,7 @@ class ExportInstancesTaskBody:
 
     @property
     def ip(self):
-        """Gets the ip of this ExportInstancesTaskBody.
+        r"""Gets the ip of this ExportInstancesTaskBody.
 
         按照ip筛选实例
 
@@ -268,7 +268,7 @@ class ExportInstancesTaskBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ExportInstancesTaskBody.
+        r"""Sets the ip of this ExportInstancesTaskBody.
 
         按照ip筛选实例
 
@@ -279,7 +279,7 @@ class ExportInstancesTaskBody:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this ExportInstancesTaskBody.
+        r"""Gets the available_zone of this ExportInstancesTaskBody.
 
         按照可用区筛选实例
 
@@ -290,7 +290,7 @@ class ExportInstancesTaskBody:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this ExportInstancesTaskBody.
+        r"""Sets the available_zone of this ExportInstancesTaskBody.
 
         按照可用区筛选实例
 
@@ -301,7 +301,7 @@ class ExportInstancesTaskBody:
 
     @property
     def status(self):
-        """Gets the status of this ExportInstancesTaskBody.
+        r"""Gets the status of this ExportInstancesTaskBody.
 
         按照实例状态筛选实例
 
@@ -312,7 +312,7 @@ class ExportInstancesTaskBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExportInstancesTaskBody.
+        r"""Sets the status of this ExportInstancesTaskBody.
 
         按照实例状态筛选实例
 
@@ -323,7 +323,7 @@ class ExportInstancesTaskBody:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ExportInstancesTaskBody.
+        r"""Gets the product_type of this ExportInstancesTaskBody.
 
         按照产品类型筛选实例，generic-普通版本，enterprise-企业版
 
@@ -334,7 +334,7 @@ class ExportInstancesTaskBody:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ExportInstancesTaskBody.
+        r"""Sets the product_type of this ExportInstancesTaskBody.
 
         按照产品类型筛选实例，generic-普通版本，enterprise-企业版
 
@@ -345,7 +345,7 @@ class ExportInstancesTaskBody:
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this ExportInstancesTaskBody.
+        r"""Gets the cache_mode of this ExportInstancesTaskBody.
 
         按照实例类型筛选实例
 
@@ -356,7 +356,7 @@ class ExportInstancesTaskBody:
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this ExportInstancesTaskBody.
+        r"""Sets the cache_mode of this ExportInstancesTaskBody.
 
         按照实例类型筛选实例
 
@@ -367,7 +367,7 @@ class ExportInstancesTaskBody:
 
     @property
     def engine(self):
-        """Gets the engine of this ExportInstancesTaskBody.
+        r"""Gets the engine of this ExportInstancesTaskBody.
 
         按照缓存引擎筛选实例
 
@@ -378,7 +378,7 @@ class ExportInstancesTaskBody:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ExportInstancesTaskBody.
+        r"""Sets the engine of this ExportInstancesTaskBody.
 
         按照缓存引擎筛选实例
 
@@ -389,7 +389,7 @@ class ExportInstancesTaskBody:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ExportInstancesTaskBody.
+        r"""Gets the engine_version of this ExportInstancesTaskBody.
 
         按照缓存引擎版本筛选实例
 
@@ -400,7 +400,7 @@ class ExportInstancesTaskBody:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ExportInstancesTaskBody.
+        r"""Sets the engine_version of this ExportInstancesTaskBody.
 
         按照缓存引擎版本筛选实例
 
@@ -411,7 +411,7 @@ class ExportInstancesTaskBody:
 
     @property
     def cpu_type(self):
-        """Gets the cpu_type of this ExportInstancesTaskBody.
+        r"""Gets the cpu_type of this ExportInstancesTaskBody.
 
         按照CPU类型筛选实例
 
@@ -422,7 +422,7 @@ class ExportInstancesTaskBody:
 
     @cpu_type.setter
     def cpu_type(self, cpu_type):
-        """Sets the cpu_type of this ExportInstancesTaskBody.
+        r"""Sets the cpu_type of this ExportInstancesTaskBody.
 
         按照CPU类型筛选实例
 
@@ -433,7 +433,7 @@ class ExportInstancesTaskBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ExportInstancesTaskBody.
+        r"""Gets the enterprise_project_id of this ExportInstancesTaskBody.
 
         按照企业项目ID筛选实例
 
@@ -444,7 +444,7 @@ class ExportInstancesTaskBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ExportInstancesTaskBody.
+        r"""Sets the enterprise_project_id of this ExportInstancesTaskBody.
 
         按照企业项目ID筛选实例
 
@@ -455,7 +455,7 @@ class ExportInstancesTaskBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ExportInstancesTaskBody.
+        r"""Gets the charging_mode of this ExportInstancesTaskBody.
 
         按照计费方式筛选实例
 
@@ -466,7 +466,7 @@ class ExportInstancesTaskBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ExportInstancesTaskBody.
+        r"""Sets the charging_mode of this ExportInstancesTaskBody.
 
         按照计费方式筛选实例
 
@@ -477,7 +477,7 @@ class ExportInstancesTaskBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ExportInstancesTaskBody.
+        r"""Gets the tags of this ExportInstancesTaskBody.
 
         按照标签筛选实例
 
@@ -488,7 +488,7 @@ class ExportInstancesTaskBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ExportInstancesTaskBody.
+        r"""Sets the tags of this ExportInstancesTaskBody.
 
         按照标签筛选实例
 

@@ -25,7 +25,7 @@ class UpdateKeypairDescriptionReq:
     }
 
     def __init__(self, description=None):
-        """UpdateKeypairDescriptionReq
+        r"""UpdateKeypairDescriptionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateKeypairDescriptionReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateKeypairDescriptionReq.
+        r"""Gets the description of this UpdateKeypairDescriptionReq.
 
         描述信息
 
@@ -53,7 +53,7 @@ class UpdateKeypairDescriptionReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateKeypairDescriptionReq.
+        r"""Sets the description of this UpdateKeypairDescriptionReq.
 
         描述信息
 

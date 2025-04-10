@@ -25,7 +25,7 @@ class SerialPortRedirectionOptions:
     }
 
     def __init__(self, auto_connect_enable=None):
-        """SerialPortRedirectionOptions
+        r"""SerialPortRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SerialPortRedirectionOptions:
 
     @property
     def auto_connect_enable(self):
-        """Gets the auto_connect_enable of this SerialPortRedirectionOptions.
+        r"""Gets the auto_connect_enable of this SerialPortRedirectionOptions.
 
         是否自动连接客户端串口。取值为： false：表示关闭。 true：表示开启。
 
@@ -54,7 +54,7 @@ class SerialPortRedirectionOptions:
 
     @auto_connect_enable.setter
     def auto_connect_enable(self, auto_connect_enable):
-        """Sets the auto_connect_enable of this SerialPortRedirectionOptions.
+        r"""Sets the auto_connect_enable of this SerialPortRedirectionOptions.
 
         是否自动连接客户端串口。取值为： false：表示关闭。 true：表示开启。
 

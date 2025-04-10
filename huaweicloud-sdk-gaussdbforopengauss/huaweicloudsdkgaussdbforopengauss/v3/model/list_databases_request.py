@@ -31,7 +31,7 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None):
-        """ListDatabasesRequest
+        r"""ListDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListDatabasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDatabasesRequest.
+        r"""Gets the x_language of this ListDatabasesRequest.
 
         语言
 
@@ -74,7 +74,7 @@ class ListDatabasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDatabasesRequest.
+        r"""Sets the x_language of this ListDatabasesRequest.
 
         语言
 
@@ -85,7 +85,7 @@ class ListDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabasesRequest.
+        r"""Gets the instance_id of this ListDatabasesRequest.
 
         实例ID。
 
@@ -96,7 +96,7 @@ class ListDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabasesRequest.
+        r"""Sets the instance_id of this ListDatabasesRequest.
 
         实例ID。
 
@@ -107,7 +107,7 @@ class ListDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatabasesRequest.
+        r"""Gets the offset of this ListDatabasesRequest.
 
         偏移量表示从此偏移量开始查询, offset大于等于0，默认0。
 
@@ -118,7 +118,7 @@ class ListDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatabasesRequest.
+        r"""Sets the offset of this ListDatabasesRequest.
 
         偏移量表示从此偏移量开始查询, offset大于等于0，默认0。
 
@@ -129,7 +129,7 @@ class ListDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabasesRequest.
+        r"""Gets the limit of this ListDatabasesRequest.
 
         每页显示的条目数量,取值范围[1, 100]，默认10。
 
@@ -140,7 +140,7 @@ class ListDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabasesRequest.
+        r"""Sets the limit of this ListDatabasesRequest.
 
         每页显示的条目数量,取值范围[1, 100]，默认10。
 

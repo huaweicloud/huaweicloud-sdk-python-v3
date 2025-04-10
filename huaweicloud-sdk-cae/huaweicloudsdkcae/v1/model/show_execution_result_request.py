@@ -29,7 +29,7 @@ class ShowExecutionResultRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, x_environment_id=None, timer_rule_id=None):
-        """ShowExecutionResultRequest
+        r"""ShowExecutionResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowExecutionResultRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ShowExecutionResultRequest.
+        r"""Gets the x_enterprise_project_id of this ShowExecutionResultRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -66,7 +66,7 @@ class ShowExecutionResultRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ShowExecutionResultRequest.
+        r"""Sets the x_enterprise_project_id of this ShowExecutionResultRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -77,7 +77,7 @@ class ShowExecutionResultRequest:
 
     @property
     def x_environment_id(self):
-        """Gets the x_environment_id of this ShowExecutionResultRequest.
+        r"""Gets the x_environment_id of this ShowExecutionResultRequest.
 
         环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
 
@@ -88,7 +88,7 @@ class ShowExecutionResultRequest:
 
     @x_environment_id.setter
     def x_environment_id(self, x_environment_id):
-        """Sets the x_environment_id of this ShowExecutionResultRequest.
+        r"""Sets the x_environment_id of this ShowExecutionResultRequest.
 
         环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
 
@@ -99,7 +99,7 @@ class ShowExecutionResultRequest:
 
     @property
     def timer_rule_id(self):
-        """Gets the timer_rule_id of this ShowExecutionResultRequest.
+        r"""Gets the timer_rule_id of this ShowExecutionResultRequest.
 
         定时启停规则ID。
 
@@ -110,7 +110,7 @@ class ShowExecutionResultRequest:
 
     @timer_rule_id.setter
     def timer_rule_id(self, timer_rule_id):
-        """Sets the timer_rule_id of this ShowExecutionResultRequest.
+        r"""Sets the timer_rule_id of this ShowExecutionResultRequest.
 
         定时启停规则ID。
 

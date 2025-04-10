@@ -30,7 +30,7 @@ class ListColumnsResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, total_count=None, columns=None):
-        """ListColumnsResponse
+        r"""ListColumnsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListColumnsResponse(SdkResponse):
 
     @property
     def table_id(self):
-        """Gets the table_id of this ListColumnsResponse.
+        r"""Gets the table_id of this ListColumnsResponse.
 
         表id
 
@@ -69,7 +69,7 @@ class ListColumnsResponse(SdkResponse):
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this ListColumnsResponse.
+        r"""Sets the table_id of this ListColumnsResponse.
 
         表id
 
@@ -80,7 +80,7 @@ class ListColumnsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListColumnsResponse.
+        r"""Gets the total_count of this ListColumnsResponse.
 
         当前表中字段记录数
 
@@ -91,7 +91,7 @@ class ListColumnsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListColumnsResponse.
+        r"""Sets the total_count of this ListColumnsResponse.
 
         当前表中字段记录数
 
@@ -102,7 +102,7 @@ class ListColumnsResponse(SdkResponse):
 
     @property
     def columns(self):
-        """Gets the columns of this ListColumnsResponse.
+        r"""Gets the columns of this ListColumnsResponse.
 
         字段列表
 
@@ -113,7 +113,7 @@ class ListColumnsResponse(SdkResponse):
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ListColumnsResponse.
+        r"""Sets the columns of this ListColumnsResponse.
 
         字段列表
 

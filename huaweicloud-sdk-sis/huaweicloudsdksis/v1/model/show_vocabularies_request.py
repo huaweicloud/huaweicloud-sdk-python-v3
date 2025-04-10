@@ -29,7 +29,7 @@ class ShowVocabulariesRequest:
     }
 
     def __init__(self, offset=None, limit=None, body=None):
-        """ShowVocabulariesRequest
+        r"""ShowVocabulariesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowVocabulariesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowVocabulariesRequest.
+        r"""Gets the offset of this ShowVocabulariesRequest.
 
         页码偏移量，表示从此页码偏移量开始查询，offset大于等于0。
 
@@ -68,7 +68,7 @@ class ShowVocabulariesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowVocabulariesRequest.
+        r"""Sets the offset of this ShowVocabulariesRequest.
 
         页码偏移量，表示从此页码偏移量开始查询，offset大于等于0。
 
@@ -79,7 +79,7 @@ class ShowVocabulariesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowVocabulariesRequest.
+        r"""Gets the limit of this ShowVocabulariesRequest.
 
         每页显示的条目数量。
 
@@ -90,7 +90,7 @@ class ShowVocabulariesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowVocabulariesRequest.
+        r"""Sets the limit of this ShowVocabulariesRequest.
 
         每页显示的条目数量。
 
@@ -101,7 +101,7 @@ class ShowVocabulariesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowVocabulariesRequest.
+        r"""Gets the body of this ShowVocabulariesRequest.
 
         :return: The body of this ShowVocabulariesRequest.
         :rtype: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`
@@ -110,7 +110,7 @@ class ShowVocabulariesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowVocabulariesRequest.
+        r"""Sets the body of this ShowVocabulariesRequest.
 
         :param body: The body of this ShowVocabulariesRequest.
         :type body: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`

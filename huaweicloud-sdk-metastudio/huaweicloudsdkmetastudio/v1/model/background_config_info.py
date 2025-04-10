@@ -33,7 +33,7 @@ class BackgroundConfigInfo:
     }
 
     def __init__(self, background_type=None, background_config=None, background_color_config=None, background_asset_id=None, background_image_config=None):
-        """BackgroundConfigInfo
+        r"""BackgroundConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BackgroundConfigInfo:
 
     @property
     def background_type(self):
-        """Gets the background_type of this BackgroundConfigInfo.
+        r"""Gets the background_type of this BackgroundConfigInfo.
 
         **参数解释**： 背景类型。 **约束限制**： 不涉及。 **取值范围**： * IMAGE：图片背景，指定图片用作分身数字人背景。 * COLOR：纯色背景，指定颜色RGB值作为分身数字人背景。  **默认取值**： 不涉及
 
@@ -81,7 +81,7 @@ class BackgroundConfigInfo:
 
     @background_type.setter
     def background_type(self, background_type):
-        """Sets the background_type of this BackgroundConfigInfo.
+        r"""Sets the background_type of this BackgroundConfigInfo.
 
         **参数解释**： 背景类型。 **约束限制**： 不涉及。 **取值范围**： * IMAGE：图片背景，指定图片用作分身数字人背景。 * COLOR：纯色背景，指定颜色RGB值作为分身数字人背景。  **默认取值**： 不涉及
 
@@ -92,7 +92,7 @@ class BackgroundConfigInfo:
 
     @property
     def background_config(self):
-        """Gets the background_config of this BackgroundConfigInfo.
+        r"""Gets the background_config of this BackgroundConfigInfo.
 
         **参数解释**： 背景文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 * background_type=IMAGE时需要填写。  **取值范围**： 字符长度1-2048位 **默认取值**： 不涉及。
 
@@ -103,7 +103,7 @@ class BackgroundConfigInfo:
 
     @background_config.setter
     def background_config(self, background_config):
-        """Sets the background_config of this BackgroundConfigInfo.
+        r"""Sets the background_config of this BackgroundConfigInfo.
 
         **参数解释**： 背景文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 * background_type=IMAGE时需要填写。  **取值范围**： 字符长度1-2048位 **默认取值**： 不涉及。
 
@@ -114,7 +114,7 @@ class BackgroundConfigInfo:
 
     @property
     def background_color_config(self):
-        """Gets the background_color_config of this BackgroundConfigInfo.
+        r"""Gets the background_color_config of this BackgroundConfigInfo.
 
         **参数解释**： 纯色背景的RGB颜色值。 **约束限制**： background_type=COLOR时需要填写。 **取值范围**： 字符长度0-16位
 
@@ -125,7 +125,7 @@ class BackgroundConfigInfo:
 
     @background_color_config.setter
     def background_color_config(self, background_color_config):
-        """Sets the background_color_config of this BackgroundConfigInfo.
+        r"""Sets the background_color_config of this BackgroundConfigInfo.
 
         **参数解释**： 纯色背景的RGB颜色值。 **约束限制**： background_type=COLOR时需要填写。 **取值范围**： 字符长度0-16位
 
@@ -136,7 +136,7 @@ class BackgroundConfigInfo:
 
     @property
     def background_asset_id(self):
-        """Gets the background_asset_id of this BackgroundConfigInfo.
+        r"""Gets the background_asset_id of this BackgroundConfigInfo.
 
         **参数解释**： 背景资产ID。 > 背景是背景图片时，填图片资产ID。  **约束限制**： 不涉及 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -147,7 +147,7 @@ class BackgroundConfigInfo:
 
     @background_asset_id.setter
     def background_asset_id(self, background_asset_id):
-        """Sets the background_asset_id of this BackgroundConfigInfo.
+        r"""Sets the background_asset_id of this BackgroundConfigInfo.
 
         **参数解释**： 背景资产ID。 > 背景是背景图片时，填图片资产ID。  **约束限制**： 不涉及 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -158,7 +158,7 @@ class BackgroundConfigInfo:
 
     @property
     def background_image_config(self):
-        """Gets the background_image_config of this BackgroundConfigInfo.
+        r"""Gets the background_image_config of this BackgroundConfigInfo.
 
         :return: The background_image_config of this BackgroundConfigInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundImageConfig`
@@ -167,7 +167,7 @@ class BackgroundConfigInfo:
 
     @background_image_config.setter
     def background_image_config(self, background_image_config):
-        """Sets the background_image_config of this BackgroundConfigInfo.
+        r"""Sets the background_image_config of this BackgroundConfigInfo.
 
         :param background_image_config: The background_image_config of this BackgroundConfigInfo.
         :type background_image_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundImageConfig`

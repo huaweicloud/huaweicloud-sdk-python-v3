@@ -29,7 +29,7 @@ class ServiceTypes:
     }
 
     def __init__(self, service_type_name=None, service_type_code=None, abbreviation=None):
-        """ServiceTypes
+        r"""ServiceTypes
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ServiceTypes:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this ServiceTypes.
+        r"""Gets the service_type_name of this ServiceTypes.
 
         云服务类型的名称。
 
@@ -68,7 +68,7 @@ class ServiceTypes:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this ServiceTypes.
+        r"""Sets the service_type_name of this ServiceTypes.
 
         云服务类型的名称。
 
@@ -79,7 +79,7 @@ class ServiceTypes:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ServiceTypes.
+        r"""Gets the service_type_code of this ServiceTypes.
 
         云服务类型的编码。
 
@@ -90,7 +90,7 @@ class ServiceTypes:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ServiceTypes.
+        r"""Sets the service_type_code of this ServiceTypes.
 
         云服务类型的编码。
 
@@ -101,7 +101,7 @@ class ServiceTypes:
 
     @property
     def abbreviation(self):
-        """Gets the abbreviation of this ServiceTypes.
+        r"""Gets the abbreviation of this ServiceTypes.
 
         云服务类型的缩写。
 
@@ -112,7 +112,7 @@ class ServiceTypes:
 
     @abbreviation.setter
     def abbreviation(self, abbreviation):
-        """Sets the abbreviation of this ServiceTypes.
+        r"""Sets the abbreviation of this ServiceTypes.
 
         云服务类型的缩写。
 

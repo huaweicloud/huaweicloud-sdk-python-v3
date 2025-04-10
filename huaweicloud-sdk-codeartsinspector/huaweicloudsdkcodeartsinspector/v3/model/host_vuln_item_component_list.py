@@ -29,7 +29,7 @@ class HostVulnItemComponentList:
     }
 
     def __init__(self, component_name=None, component_install_version=None, component_fixed_version=None):
-        """HostVulnItemComponentList
+        r"""HostVulnItemComponentList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HostVulnItemComponentList:
 
     @property
     def component_name(self):
-        """Gets the component_name of this HostVulnItemComponentList.
+        r"""Gets the component_name of this HostVulnItemComponentList.
 
         内容名称
 
@@ -68,7 +68,7 @@ class HostVulnItemComponentList:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this HostVulnItemComponentList.
+        r"""Sets the component_name of this HostVulnItemComponentList.
 
         内容名称
 
@@ -79,7 +79,7 @@ class HostVulnItemComponentList:
 
     @property
     def component_install_version(self):
-        """Gets the component_install_version of this HostVulnItemComponentList.
+        r"""Gets the component_install_version of this HostVulnItemComponentList.
 
         安装版本
 
@@ -90,7 +90,7 @@ class HostVulnItemComponentList:
 
     @component_install_version.setter
     def component_install_version(self, component_install_version):
-        """Sets the component_install_version of this HostVulnItemComponentList.
+        r"""Sets the component_install_version of this HostVulnItemComponentList.
 
         安装版本
 
@@ -101,7 +101,7 @@ class HostVulnItemComponentList:
 
     @property
     def component_fixed_version(self):
-        """Gets the component_fixed_version of this HostVulnItemComponentList.
+        r"""Gets the component_fixed_version of this HostVulnItemComponentList.
 
         已经修复版本
 
@@ -112,7 +112,7 @@ class HostVulnItemComponentList:
 
     @component_fixed_version.setter
     def component_fixed_version(self, component_fixed_version):
-        """Sets the component_fixed_version of this HostVulnItemComponentList.
+        r"""Sets the component_fixed_version of this HostVulnItemComponentList.
 
         已经修复版本
 

@@ -25,7 +25,7 @@ class DeleteBucketRequest:
     }
 
     def __init__(self, bucket_id=None):
-        """DeleteBucketRequest
+        r"""DeleteBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteBucketRequest:
 
     @property
     def bucket_id(self):
-        """Gets the bucket_id of this DeleteBucketRequest.
+        r"""Gets the bucket_id of this DeleteBucketRequest.
 
         桶ID
 
@@ -53,7 +53,7 @@ class DeleteBucketRequest:
 
     @bucket_id.setter
     def bucket_id(self, bucket_id):
-        """Sets the bucket_id of this DeleteBucketRequest.
+        r"""Sets the bucket_id of this DeleteBucketRequest.
 
         桶ID
 

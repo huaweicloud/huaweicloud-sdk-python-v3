@@ -43,7 +43,7 @@ class Service:
     }
 
     def __init__(self, product_template_id=None, product_id=None, service_id=None, service_name=None, description=None, status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """Service
+        r"""Service
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Service:
 
     @property
     def product_template_id(self):
-        """Gets the product_template_id of this Service.
+        r"""Gets the product_template_id of this Service.
 
         服务归属的产品模板ID
 
@@ -117,7 +117,7 @@ class Service:
 
     @product_template_id.setter
     def product_template_id(self, product_template_id):
-        """Sets the product_template_id of this Service.
+        r"""Sets the product_template_id of this Service.
 
         服务归属的产品模板ID
 
@@ -128,7 +128,7 @@ class Service:
 
     @property
     def product_id(self):
-        """Gets the product_id of this Service.
+        r"""Gets the product_id of this Service.
 
         服务归属的产品ID
 
@@ -139,7 +139,7 @@ class Service:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this Service.
+        r"""Sets the product_id of this Service.
 
         服务归属的产品ID
 
@@ -150,7 +150,7 @@ class Service:
 
     @property
     def service_id(self):
-        """Gets the service_id of this Service.
+        r"""Gets the service_id of this Service.
 
         服务ID
 
@@ -161,7 +161,7 @@ class Service:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this Service.
+        r"""Sets the service_id of this Service.
 
         服务ID
 
@@ -172,7 +172,7 @@ class Service:
 
     @property
     def service_name(self):
-        """Gets the service_name of this Service.
+        r"""Gets the service_name of this Service.
 
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -183,7 +183,7 @@ class Service:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this Service.
+        r"""Sets the service_name of this Service.
 
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -194,7 +194,7 @@ class Service:
 
     @property
     def description(self):
-        """Gets the description of this Service.
+        r"""Gets the description of this Service.
 
         服务描述，长度0-200
 
@@ -205,7 +205,7 @@ class Service:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Service.
+        r"""Sets the description of this Service.
 
         服务描述，长度0-200
 
@@ -216,7 +216,7 @@ class Service:
 
     @property
     def status(self):
-        """Gets the status of this Service.
+        r"""Gets the status of this Service.
 
         服务状态 0-启用 1-停用
 
@@ -227,7 +227,7 @@ class Service:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Service.
+        r"""Sets the status of this Service.
 
         服务状态 0-启用 1-停用
 
@@ -238,7 +238,7 @@ class Service:
 
     @property
     def created_user(self):
-        """Gets the created_user of this Service.
+        r"""Gets the created_user of this Service.
 
         :return: The created_user of this Service.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -247,7 +247,7 @@ class Service:
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this Service.
+        r"""Sets the created_user of this Service.
 
         :param created_user: The created_user of this Service.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -256,7 +256,7 @@ class Service:
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this Service.
+        r"""Gets the last_updated_user of this Service.
 
         :return: The last_updated_user of this Service.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -265,7 +265,7 @@ class Service:
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this Service.
+        r"""Sets the last_updated_user of this Service.
 
         :param last_updated_user: The last_updated_user of this Service.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -274,7 +274,7 @@ class Service:
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this Service.
+        r"""Gets the created_datetime of this Service.
 
         创建时间止，格式timestamp(ms)，使用UTC时区
 
@@ -285,7 +285,7 @@ class Service:
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this Service.
+        r"""Sets the created_datetime of this Service.
 
         创建时间止，格式timestamp(ms)，使用UTC时区
 
@@ -296,7 +296,7 @@ class Service:
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this Service.
+        r"""Gets the last_updated_datetime of this Service.
 
         最后修改时间止，格式timestamp(ms)，使用UTC时区
 
@@ -307,7 +307,7 @@ class Service:
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this Service.
+        r"""Sets the last_updated_datetime of this Service.
 
         最后修改时间止，格式timestamp(ms)，使用UTC时区
 

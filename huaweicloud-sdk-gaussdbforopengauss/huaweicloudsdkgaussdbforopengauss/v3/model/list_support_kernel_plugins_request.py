@@ -25,7 +25,7 @@ class ListSupportKernelPluginsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListSupportKernelPluginsRequest
+        r"""ListSupportKernelPluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSupportKernelPluginsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSupportKernelPluginsRequest.
+        r"""Gets the x_language of this ListSupportKernelPluginsRequest.
 
         语言。
 
@@ -54,7 +54,7 @@ class ListSupportKernelPluginsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSupportKernelPluginsRequest.
+        r"""Sets the x_language of this ListSupportKernelPluginsRequest.
 
         语言。
 

@@ -27,7 +27,7 @@ class AdditionalManifests:
     }
 
     def __init__(self, manifest_name_modifier=None, selected_outputs=None):
-        """AdditionalManifests
+        r"""AdditionalManifests
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AdditionalManifests:
 
     @property
     def manifest_name_modifier(self):
-        """Gets the manifest_name_modifier of this AdditionalManifests.
+        r"""Gets the manifest_name_modifier of this AdditionalManifests.
 
         定制的索引后缀名 
 
@@ -61,7 +61,7 @@ class AdditionalManifests:
 
     @manifest_name_modifier.setter
     def manifest_name_modifier(self, manifest_name_modifier):
-        """Sets the manifest_name_modifier of this AdditionalManifests.
+        r"""Sets the manifest_name_modifier of this AdditionalManifests.
 
         定制的索引后缀名 
 
@@ -72,7 +72,7 @@ class AdditionalManifests:
 
     @property
     def selected_outputs(self):
-        """Gets the selected_outputs of this AdditionalManifests.
+        r"""Gets the selected_outputs of this AdditionalManifests.
 
         选择的流名称
 
@@ -83,7 +83,7 @@ class AdditionalManifests:
 
     @selected_outputs.setter
     def selected_outputs(self, selected_outputs):
-        """Sets the selected_outputs of this AdditionalManifests.
+        r"""Sets the selected_outputs of this AdditionalManifests.
 
         选择的流名称
 

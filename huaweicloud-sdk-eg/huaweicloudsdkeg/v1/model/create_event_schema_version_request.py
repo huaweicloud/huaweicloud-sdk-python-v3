@@ -27,7 +27,7 @@ class CreateEventSchemaVersionRequest:
     }
 
     def __init__(self, schema_id=None, body=None):
-        """CreateEventSchemaVersionRequest
+        r"""CreateEventSchemaVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEventSchemaVersionRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this CreateEventSchemaVersionRequest.
+        r"""Gets the schema_id of this CreateEventSchemaVersionRequest.
 
         指定查询的事件模型ID
 
@@ -60,7 +60,7 @@ class CreateEventSchemaVersionRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this CreateEventSchemaVersionRequest.
+        r"""Sets the schema_id of this CreateEventSchemaVersionRequest.
 
         指定查询的事件模型ID
 
@@ -71,7 +71,7 @@ class CreateEventSchemaVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEventSchemaVersionRequest.
+        r"""Gets the body of this CreateEventSchemaVersionRequest.
 
         :return: The body of this CreateEventSchemaVersionRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CustomizeSchemaVersionCreateReq`
@@ -80,7 +80,7 @@ class CreateEventSchemaVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEventSchemaVersionRequest.
+        r"""Sets the body of this CreateEventSchemaVersionRequest.
 
         :param body: The body of this CreateEventSchemaVersionRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CustomizeSchemaVersionCreateReq`

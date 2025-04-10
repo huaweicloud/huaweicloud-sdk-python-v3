@@ -27,7 +27,7 @@ class DeleteClouddcnSubnetsTagRequest:
     }
 
     def __init__(self, resource_id=None, tag_key=None):
-        """DeleteClouddcnSubnetsTagRequest
+        r"""DeleteClouddcnSubnetsTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteClouddcnSubnetsTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteClouddcnSubnetsTagRequest.
+        r"""Gets the resource_id of this DeleteClouddcnSubnetsTagRequest.
 
         Clouddcn子网的id
 
@@ -59,7 +59,7 @@ class DeleteClouddcnSubnetsTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteClouddcnSubnetsTagRequest.
+        r"""Sets the resource_id of this DeleteClouddcnSubnetsTagRequest.
 
         Clouddcn子网的id
 
@@ -70,7 +70,7 @@ class DeleteClouddcnSubnetsTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteClouddcnSubnetsTagRequest.
+        r"""Gets the tag_key of this DeleteClouddcnSubnetsTagRequest.
 
         待删除标签的key
 
@@ -81,7 +81,7 @@ class DeleteClouddcnSubnetsTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteClouddcnSubnetsTagRequest.
+        r"""Sets the tag_key of this DeleteClouddcnSubnetsTagRequest.
 
         待删除标签的key
 

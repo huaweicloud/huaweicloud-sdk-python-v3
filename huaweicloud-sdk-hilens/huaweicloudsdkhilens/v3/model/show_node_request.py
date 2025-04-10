@@ -25,7 +25,7 @@ class ShowNodeRequest:
     }
 
     def __init__(self, node_id=None):
-        """ShowNodeRequest
+        r"""ShowNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowNodeRequest.
+        r"""Gets the node_id of this ShowNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -53,7 +53,7 @@ class ShowNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowNodeRequest.
+        r"""Sets the node_id of this ShowNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 

@@ -45,7 +45,7 @@ class ScheduledTasksRecordsDetails:
     }
 
     def __init__(self, id=None, record_id=None, desktop_id=None, desktop_name=None, exec_status=None, exec_script_id=None, result_code=None, fail_reason=None, start_time=None, end_time=None, time_zone=None):
-        """ScheduledTasksRecordsDetails
+        r"""ScheduledTasksRecordsDetails
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def id(self):
-        """Gets the id of this ScheduledTasksRecordsDetails.
+        r"""Gets the id of this ScheduledTasksRecordsDetails.
 
         任务执行记录详情id
 
@@ -124,7 +124,7 @@ class ScheduledTasksRecordsDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduledTasksRecordsDetails.
+        r"""Sets the id of this ScheduledTasksRecordsDetails.
 
         任务执行记录详情id
 
@@ -135,7 +135,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ScheduledTasksRecordsDetails.
+        r"""Gets the record_id of this ScheduledTasksRecordsDetails.
 
         任务执行记录id
 
@@ -146,7 +146,7 @@ class ScheduledTasksRecordsDetails:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ScheduledTasksRecordsDetails.
+        r"""Sets the record_id of this ScheduledTasksRecordsDetails.
 
         任务执行记录id
 
@@ -157,7 +157,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ScheduledTasksRecordsDetails.
+        r"""Gets the desktop_id of this ScheduledTasksRecordsDetails.
 
         桌面id
 
@@ -168,7 +168,7 @@ class ScheduledTasksRecordsDetails:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ScheduledTasksRecordsDetails.
+        r"""Sets the desktop_id of this ScheduledTasksRecordsDetails.
 
         桌面id
 
@@ -179,7 +179,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ScheduledTasksRecordsDetails.
+        r"""Gets the desktop_name of this ScheduledTasksRecordsDetails.
 
         桌面名称。
 
@@ -190,7 +190,7 @@ class ScheduledTasksRecordsDetails:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ScheduledTasksRecordsDetails.
+        r"""Sets the desktop_name of this ScheduledTasksRecordsDetails.
 
         桌面名称。
 
@@ -201,7 +201,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def exec_status(self):
-        """Gets the exec_status of this ScheduledTasksRecordsDetails.
+        r"""Gets the exec_status of this ScheduledTasksRecordsDetails.
 
         执行状态。
 
@@ -212,7 +212,7 @@ class ScheduledTasksRecordsDetails:
 
     @exec_status.setter
     def exec_status(self, exec_status):
-        """Sets the exec_status of this ScheduledTasksRecordsDetails.
+        r"""Sets the exec_status of this ScheduledTasksRecordsDetails.
 
         执行状态。
 
@@ -223,7 +223,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def exec_script_id(self):
-        """Gets the exec_script_id of this ScheduledTasksRecordsDetails.
+        r"""Gets the exec_script_id of this ScheduledTasksRecordsDetails.
 
         执行脚本id。
 
@@ -234,7 +234,7 @@ class ScheduledTasksRecordsDetails:
 
     @exec_script_id.setter
     def exec_script_id(self, exec_script_id):
-        """Sets the exec_script_id of this ScheduledTasksRecordsDetails.
+        r"""Sets the exec_script_id of this ScheduledTasksRecordsDetails.
 
         执行脚本id。
 
@@ -245,7 +245,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def result_code(self):
-        """Gets the result_code of this ScheduledTasksRecordsDetails.
+        r"""Gets the result_code of this ScheduledTasksRecordsDetails.
 
         失败或者跳过原因的错误码。
 
@@ -256,7 +256,7 @@ class ScheduledTasksRecordsDetails:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ScheduledTasksRecordsDetails.
+        r"""Sets the result_code of this ScheduledTasksRecordsDetails.
 
         失败或者跳过原因的错误码。
 
@@ -267,7 +267,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ScheduledTasksRecordsDetails.
+        r"""Gets the fail_reason of this ScheduledTasksRecordsDetails.
 
         失败或者跳过原因。
 
@@ -278,7 +278,7 @@ class ScheduledTasksRecordsDetails:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ScheduledTasksRecordsDetails.
+        r"""Sets the fail_reason of this ScheduledTasksRecordsDetails.
 
         失败或者跳过原因。
 
@@ -289,7 +289,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduledTasksRecordsDetails.
+        r"""Gets the start_time of this ScheduledTasksRecordsDetails.
 
         执行开始时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -300,7 +300,7 @@ class ScheduledTasksRecordsDetails:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduledTasksRecordsDetails.
+        r"""Sets the start_time of this ScheduledTasksRecordsDetails.
 
         执行开始时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -311,7 +311,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduledTasksRecordsDetails.
+        r"""Gets the end_time of this ScheduledTasksRecordsDetails.
 
         执行结束时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -322,7 +322,7 @@ class ScheduledTasksRecordsDetails:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduledTasksRecordsDetails.
+        r"""Sets the end_time of this ScheduledTasksRecordsDetails.
 
         执行结束时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -333,7 +333,7 @@ class ScheduledTasksRecordsDetails:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduledTasksRecordsDetails.
+        r"""Gets the time_zone of this ScheduledTasksRecordsDetails.
 
         时区
 
@@ -344,7 +344,7 @@ class ScheduledTasksRecordsDetails:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduledTasksRecordsDetails.
+        r"""Sets the time_zone of this ScheduledTasksRecordsDetails.
 
         时区
 

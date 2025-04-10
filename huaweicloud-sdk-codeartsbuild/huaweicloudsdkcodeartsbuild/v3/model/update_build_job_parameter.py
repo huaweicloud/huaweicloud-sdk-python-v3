@@ -27,7 +27,7 @@ class UpdateBuildJobParameter:
     }
 
     def __init__(self, name=None, params=None):
-        """UpdateBuildJobParameter
+        r"""UpdateBuildJobParameter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateBuildJobParameter:
 
     @property
     def name(self):
-        """Gets the name of this UpdateBuildJobParameter.
+        r"""Gets the name of this UpdateBuildJobParameter.
 
         参数定义名，默认为hudson.model.StringParameterDefinition
 
@@ -61,7 +61,7 @@ class UpdateBuildJobParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateBuildJobParameter.
+        r"""Sets the name of this UpdateBuildJobParameter.
 
         参数定义名，默认为hudson.model.StringParameterDefinition
 
@@ -72,7 +72,7 @@ class UpdateBuildJobParameter:
 
     @property
     def params(self):
-        """Gets the params of this UpdateBuildJobParameter.
+        r"""Gets the params of this UpdateBuildJobParameter.
 
         构建执行参数子参数
 
@@ -83,7 +83,7 @@ class UpdateBuildJobParameter:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this UpdateBuildJobParameter.
+        r"""Sets the params of this UpdateBuildJobParameter.
 
         构建执行参数子参数
 

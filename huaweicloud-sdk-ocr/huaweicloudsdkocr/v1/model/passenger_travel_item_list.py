@@ -37,7 +37,7 @@ class PassengerTravelItemList:
     }
 
     def __init__(self, traveler_name=None, id_number=None, travel_date=None, departure_location=None, arrival_location=None, _class=None, transportation_type=None):
-        """PassengerTravelItemList
+        r"""PassengerTravelItemList
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PassengerTravelItemList:
 
     @property
     def traveler_name(self):
-        """Gets the traveler_name of this PassengerTravelItemList.
+        r"""Gets the traveler_name of this PassengerTravelItemList.
 
         出行人。 
 
@@ -96,7 +96,7 @@ class PassengerTravelItemList:
 
     @traveler_name.setter
     def traveler_name(self, traveler_name):
-        """Sets the traveler_name of this PassengerTravelItemList.
+        r"""Sets the traveler_name of this PassengerTravelItemList.
 
         出行人。 
 
@@ -107,7 +107,7 @@ class PassengerTravelItemList:
 
     @property
     def id_number(self):
-        """Gets the id_number of this PassengerTravelItemList.
+        r"""Gets the id_number of this PassengerTravelItemList.
 
         有效身份证件号。 
 
@@ -118,7 +118,7 @@ class PassengerTravelItemList:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this PassengerTravelItemList.
+        r"""Sets the id_number of this PassengerTravelItemList.
 
         有效身份证件号。 
 
@@ -129,7 +129,7 @@ class PassengerTravelItemList:
 
     @property
     def travel_date(self):
-        """Gets the travel_date of this PassengerTravelItemList.
+        r"""Gets the travel_date of this PassengerTravelItemList.
 
         出行日期。 
 
@@ -140,7 +140,7 @@ class PassengerTravelItemList:
 
     @travel_date.setter
     def travel_date(self, travel_date):
-        """Sets the travel_date of this PassengerTravelItemList.
+        r"""Sets the travel_date of this PassengerTravelItemList.
 
         出行日期。 
 
@@ -151,7 +151,7 @@ class PassengerTravelItemList:
 
     @property
     def departure_location(self):
-        """Gets the departure_location of this PassengerTravelItemList.
+        r"""Gets the departure_location of this PassengerTravelItemList.
 
         出发地。 
 
@@ -162,7 +162,7 @@ class PassengerTravelItemList:
 
     @departure_location.setter
     def departure_location(self, departure_location):
-        """Sets the departure_location of this PassengerTravelItemList.
+        r"""Sets the departure_location of this PassengerTravelItemList.
 
         出发地。 
 
@@ -173,7 +173,7 @@ class PassengerTravelItemList:
 
     @property
     def arrival_location(self):
-        """Gets the arrival_location of this PassengerTravelItemList.
+        r"""Gets the arrival_location of this PassengerTravelItemList.
 
         到达地。 
 
@@ -184,7 +184,7 @@ class PassengerTravelItemList:
 
     @arrival_location.setter
     def arrival_location(self, arrival_location):
-        """Sets the arrival_location of this PassengerTravelItemList.
+        r"""Sets the arrival_location of this PassengerTravelItemList.
 
         到达地。 
 
@@ -195,7 +195,7 @@ class PassengerTravelItemList:
 
     @property
     def _class(self):
-        """Gets the _class of this PassengerTravelItemList.
+        r"""Gets the _class of this PassengerTravelItemList.
 
         等级。 
 
@@ -206,7 +206,7 @@ class PassengerTravelItemList:
 
     @_class.setter
     def _class(self, _class):
-        """Sets the _class of this PassengerTravelItemList.
+        r"""Sets the _class of this PassengerTravelItemList.
 
         等级。 
 
@@ -217,7 +217,7 @@ class PassengerTravelItemList:
 
     @property
     def transportation_type(self):
-        """Gets the transportation_type of this PassengerTravelItemList.
+        r"""Gets the transportation_type of this PassengerTravelItemList.
 
         交通工具类型。 
 
@@ -228,7 +228,7 @@ class PassengerTravelItemList:
 
     @transportation_type.setter
     def transportation_type(self, transportation_type):
-        """Sets the transportation_type of this PassengerTravelItemList.
+        r"""Sets the transportation_type of this PassengerTravelItemList.
 
         交通工具类型。 
 

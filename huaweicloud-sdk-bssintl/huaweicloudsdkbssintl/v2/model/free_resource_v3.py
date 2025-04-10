@@ -33,7 +33,7 @@ class FreeResourceV3:
     }
 
     def __init__(self, free_resource_id=None, usage_type_name=None, amount=None, original_amount=None, measure_id=None):
-        """FreeResourceV3
+        r"""FreeResourceV3
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class FreeResourceV3:
 
     @property
     def free_resource_id(self):
-        """Gets the free_resource_id of this FreeResourceV3.
+        r"""Gets the free_resource_id of this FreeResourceV3.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
@@ -82,7 +82,7 @@ class FreeResourceV3:
 
     @free_resource_id.setter
     def free_resource_id(self, free_resource_id):
-        """Sets the free_resource_id of this FreeResourceV3.
+        r"""Sets the free_resource_id of this FreeResourceV3.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
@@ -93,7 +93,7 @@ class FreeResourceV3:
 
     @property
     def usage_type_name(self):
-        """Gets the usage_type_name of this FreeResourceV3.
+        r"""Gets the usage_type_name of this FreeResourceV3.
 
         使用量类型名称。
 
@@ -104,7 +104,7 @@ class FreeResourceV3:
 
     @usage_type_name.setter
     def usage_type_name(self, usage_type_name):
-        """Sets the usage_type_name of this FreeResourceV3.
+        r"""Sets the usage_type_name of this FreeResourceV3.
 
         使用量类型名称。
 
@@ -115,7 +115,7 @@ class FreeResourceV3:
 
     @property
     def amount(self):
-        """Gets the amount of this FreeResourceV3.
+        r"""Gets the amount of this FreeResourceV3.
 
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
@@ -126,7 +126,7 @@ class FreeResourceV3:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this FreeResourceV3.
+        r"""Sets the amount of this FreeResourceV3.
 
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
@@ -137,7 +137,7 @@ class FreeResourceV3:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this FreeResourceV3.
+        r"""Gets the original_amount of this FreeResourceV3.
 
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
@@ -148,7 +148,7 @@ class FreeResourceV3:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this FreeResourceV3.
+        r"""Sets the original_amount of this FreeResourceV3.
 
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
@@ -159,7 +159,7 @@ class FreeResourceV3:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this FreeResourceV3.
+        r"""Gets the measure_id of this FreeResourceV3.
 
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
@@ -170,7 +170,7 @@ class FreeResourceV3:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this FreeResourceV3.
+        r"""Sets the measure_id of this FreeResourceV3.
 
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 

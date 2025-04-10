@@ -26,7 +26,7 @@ class CreateTagsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """CreateTagsResponse
+        r"""CreateTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateTagsResponse.
+        r"""Gets the x_request_id of this CreateTagsResponse.
 
         :return: The x_request_id of this CreateTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateTagsResponse.
+        r"""Sets the x_request_id of this CreateTagsResponse.
 
         :param x_request_id: The x_request_id of this CreateTagsResponse.
         :type x_request_id: str

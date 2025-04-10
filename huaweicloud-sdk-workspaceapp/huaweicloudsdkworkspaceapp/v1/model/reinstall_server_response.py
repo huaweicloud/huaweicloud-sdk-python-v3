@@ -26,7 +26,7 @@ class ReinstallServerResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ReinstallServerResponse
+        r"""ReinstallServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ReinstallServerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ReinstallServerResponse.
+        r"""Gets the job_id of this ReinstallServerResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class ReinstallServerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ReinstallServerResponse.
+        r"""Sets the job_id of this ReinstallServerResponse.
 
         任务ID。
 

@@ -32,7 +32,7 @@ class ListTablesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, table_count=None, tables=None):
-        """ListTablesResponse
+        r"""ListTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTablesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListTablesResponse.
+        r"""Gets the is_success of this ListTablesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListTablesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListTablesResponse.
+        r"""Sets the is_success of this ListTablesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListTablesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListTablesResponse.
+        r"""Gets the message of this ListTablesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListTablesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListTablesResponse.
+        r"""Sets the message of this ListTablesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListTablesResponse(SdkResponse):
 
     @property
     def table_count(self):
-        """Gets the table_count of this ListTablesResponse.
+        r"""Gets the table_count of this ListTablesResponse.
 
         表的总个数。
 
@@ -120,7 +120,7 @@ class ListTablesResponse(SdkResponse):
 
     @table_count.setter
     def table_count(self, table_count):
-        """Sets the table_count of this ListTablesResponse.
+        r"""Sets the table_count of this ListTablesResponse.
 
         表的总个数。
 
@@ -131,7 +131,7 @@ class ListTablesResponse(SdkResponse):
 
     @property
     def tables(self):
-        """Gets the tables of this ListTablesResponse.
+        r"""Gets the tables of this ListTablesResponse.
 
         表的信息。
 
@@ -142,7 +142,7 @@ class ListTablesResponse(SdkResponse):
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ListTablesResponse.
+        r"""Sets the tables of this ListTablesResponse.
 
         表的信息。
 

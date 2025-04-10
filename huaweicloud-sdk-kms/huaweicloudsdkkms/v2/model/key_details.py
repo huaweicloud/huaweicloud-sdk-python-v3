@@ -57,7 +57,7 @@ class KeyDetails:
     }
 
     def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None, keystore_id=None):
-        """KeyDetails
+        r"""KeyDetails
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class KeyDetails:
 
     @property
     def key_id(self):
-        """Gets the key_id of this KeyDetails.
+        r"""Gets the key_id of this KeyDetails.
 
         密钥ID。
 
@@ -166,7 +166,7 @@ class KeyDetails:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this KeyDetails.
+        r"""Sets the key_id of this KeyDetails.
 
         密钥ID。
 
@@ -177,7 +177,7 @@ class KeyDetails:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeyDetails.
+        r"""Gets the domain_id of this KeyDetails.
 
         用户域ID。
 
@@ -188,7 +188,7 @@ class KeyDetails:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeyDetails.
+        r"""Sets the domain_id of this KeyDetails.
 
         用户域ID。
 
@@ -199,7 +199,7 @@ class KeyDetails:
 
     @property
     def key_alias(self):
-        """Gets the key_alias of this KeyDetails.
+        r"""Gets the key_alias of this KeyDetails.
 
         密钥别名。
 
@@ -210,7 +210,7 @@ class KeyDetails:
 
     @key_alias.setter
     def key_alias(self, key_alias):
-        """Sets the key_alias of this KeyDetails.
+        r"""Sets the key_alias of this KeyDetails.
 
         密钥别名。
 
@@ -221,7 +221,7 @@ class KeyDetails:
 
     @property
     def realm(self):
-        """Gets the realm of this KeyDetails.
+        r"""Gets the realm of this KeyDetails.
 
         密钥区域。
 
@@ -232,7 +232,7 @@ class KeyDetails:
 
     @realm.setter
     def realm(self, realm):
-        """Sets the realm of this KeyDetails.
+        r"""Sets the realm of this KeyDetails.
 
         密钥区域。
 
@@ -243,7 +243,7 @@ class KeyDetails:
 
     @property
     def key_spec(self):
-        """Gets the key_spec of this KeyDetails.
+        r"""Gets the key_spec of this KeyDetails.
 
         密钥生成算法。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2
 
@@ -254,7 +254,7 @@ class KeyDetails:
 
     @key_spec.setter
     def key_spec(self, key_spec):
-        """Sets the key_spec of this KeyDetails.
+        r"""Sets the key_spec of this KeyDetails.
 
         密钥生成算法。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2
 
@@ -265,7 +265,7 @@ class KeyDetails:
 
     @property
     def key_usage(self):
-        """Gets the key_usage of this KeyDetails.
+        r"""Gets the key_usage of this KeyDetails.
 
         密钥用途。 - ENCRYPT_DECRYPT - SIGN_VERIFY
 
@@ -276,7 +276,7 @@ class KeyDetails:
 
     @key_usage.setter
     def key_usage(self, key_usage):
-        """Sets the key_usage of this KeyDetails.
+        r"""Sets the key_usage of this KeyDetails.
 
         密钥用途。 - ENCRYPT_DECRYPT - SIGN_VERIFY
 
@@ -287,7 +287,7 @@ class KeyDetails:
 
     @property
     def key_description(self):
-        """Gets the key_description of this KeyDetails.
+        r"""Gets the key_description of this KeyDetails.
 
         密钥描述。
 
@@ -298,7 +298,7 @@ class KeyDetails:
 
     @key_description.setter
     def key_description(self, key_description):
-        """Sets the key_description of this KeyDetails.
+        r"""Sets the key_description of this KeyDetails.
 
         密钥描述。
 
@@ -309,7 +309,7 @@ class KeyDetails:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this KeyDetails.
+        r"""Gets the creation_date of this KeyDetails.
 
         密钥创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -320,7 +320,7 @@ class KeyDetails:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this KeyDetails.
+        r"""Sets the creation_date of this KeyDetails.
 
         密钥创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -331,7 +331,7 @@ class KeyDetails:
 
     @property
     def scheduled_deletion_date(self):
-        """Gets the scheduled_deletion_date of this KeyDetails.
+        r"""Gets the scheduled_deletion_date of this KeyDetails.
 
         密钥计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -342,7 +342,7 @@ class KeyDetails:
 
     @scheduled_deletion_date.setter
     def scheduled_deletion_date(self, scheduled_deletion_date):
-        """Sets the scheduled_deletion_date of this KeyDetails.
+        r"""Sets the scheduled_deletion_date of this KeyDetails.
 
         密钥计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -353,7 +353,7 @@ class KeyDetails:
 
     @property
     def key_state(self):
-        """Gets the key_state of this KeyDetails.
+        r"""Gets the key_state of this KeyDetails.
 
         密钥状态，满足正则匹配“^[1-5]{1}$”，枚举如下：  - “1”表示待激活状态  - “2”表示启用状态  - “3”表示禁用状态  - “4”表示计划删除状态  - “5”表示等待导入状态
 
@@ -364,7 +364,7 @@ class KeyDetails:
 
     @key_state.setter
     def key_state(self, key_state):
-        """Sets the key_state of this KeyDetails.
+        r"""Sets the key_state of this KeyDetails.
 
         密钥状态，满足正则匹配“^[1-5]{1}$”，枚举如下：  - “1”表示待激活状态  - “2”表示启用状态  - “3”表示禁用状态  - “4”表示计划删除状态  - “5”表示等待导入状态
 
@@ -375,7 +375,7 @@ class KeyDetails:
 
     @property
     def default_key_flag(self):
-        """Gets the default_key_flag of this KeyDetails.
+        r"""Gets the default_key_flag of this KeyDetails.
 
         默认主密钥标识，默认主密钥标识为1，非默认标识为0。
 
@@ -386,7 +386,7 @@ class KeyDetails:
 
     @default_key_flag.setter
     def default_key_flag(self, default_key_flag):
-        """Sets the default_key_flag of this KeyDetails.
+        r"""Sets the default_key_flag of this KeyDetails.
 
         默认主密钥标识，默认主密钥标识为1，非默认标识为0。
 
@@ -397,7 +397,7 @@ class KeyDetails:
 
     @property
     def key_type(self):
-        """Gets the key_type of this KeyDetails.
+        r"""Gets the key_type of this KeyDetails.
 
         密钥类型。
 
@@ -408,7 +408,7 @@ class KeyDetails:
 
     @key_type.setter
     def key_type(self, key_type):
-        """Sets the key_type of this KeyDetails.
+        r"""Sets the key_type of this KeyDetails.
 
         密钥类型。
 
@@ -419,7 +419,7 @@ class KeyDetails:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this KeyDetails.
+        r"""Gets the expiration_time of this KeyDetails.
 
         密钥材料失效时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -430,7 +430,7 @@ class KeyDetails:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this KeyDetails.
+        r"""Sets the expiration_time of this KeyDetails.
 
         密钥材料失效时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -441,7 +441,7 @@ class KeyDetails:
 
     @property
     def origin(self):
-        """Gets the origin of this KeyDetails.
+        r"""Gets the origin of this KeyDetails.
 
         密钥来源，默认为“kms”，枚举如下：  - kms表示密钥材料由kms生成kms表示密钥材料由kms生成  - external表示密钥材料由外部导入
 
@@ -452,7 +452,7 @@ class KeyDetails:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this KeyDetails.
+        r"""Sets the origin of this KeyDetails.
 
         密钥来源，默认为“kms”，枚举如下：  - kms表示密钥材料由kms生成kms表示密钥材料由kms生成  - external表示密钥材料由外部导入
 
@@ -463,7 +463,7 @@ class KeyDetails:
 
     @property
     def key_rotation_enabled(self):
-        """Gets the key_rotation_enabled of this KeyDetails.
+        r"""Gets the key_rotation_enabled of this KeyDetails.
 
         密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
 
@@ -474,7 +474,7 @@ class KeyDetails:
 
     @key_rotation_enabled.setter
     def key_rotation_enabled(self, key_rotation_enabled):
-        """Sets the key_rotation_enabled of this KeyDetails.
+        r"""Sets the key_rotation_enabled of this KeyDetails.
 
         密钥轮换状态，默认为“false”，表示关闭密钥轮换功能。
 
@@ -485,7 +485,7 @@ class KeyDetails:
 
     @property
     def sys_enterprise_project_id(self):
-        """Gets the sys_enterprise_project_id of this KeyDetails.
+        r"""Gets the sys_enterprise_project_id of this KeyDetails.
 
         企业项目ID，默认为“0”。  - 对于开通企业项目的用户，表示资源处于默认企业项目下。  - 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -496,7 +496,7 @@ class KeyDetails:
 
     @sys_enterprise_project_id.setter
     def sys_enterprise_project_id(self, sys_enterprise_project_id):
-        """Sets the sys_enterprise_project_id of this KeyDetails.
+        r"""Sets the sys_enterprise_project_id of this KeyDetails.
 
         企业项目ID，默认为“0”。  - 对于开通企业项目的用户，表示资源处于默认企业项目下。  - 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -507,7 +507,7 @@ class KeyDetails:
 
     @property
     def keystore_id(self):
-        """Gets the keystore_id of this KeyDetails.
+        r"""Gets the keystore_id of this KeyDetails.
 
         密钥库ID
 
@@ -518,7 +518,7 @@ class KeyDetails:
 
     @keystore_id.setter
     def keystore_id(self, keystore_id):
-        """Sets the keystore_id of this KeyDetails.
+        r"""Sets the keystore_id of this KeyDetails.
 
         密钥库ID
 

@@ -27,7 +27,7 @@ class DeleteMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, name=None):
-        """DeleteMqsInstanceTopicRequest
+        r"""DeleteMqsInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteMqsInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteMqsInstanceTopicRequest.
+        r"""Gets the instance_id of this DeleteMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteMqsInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteMqsInstanceTopicRequest.
+        r"""Sets the instance_id of this DeleteMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteMqsInstanceTopicRequest:
 
     @property
     def name(self):
-        """Gets the name of this DeleteMqsInstanceTopicRequest.
+        r"""Gets the name of this DeleteMqsInstanceTopicRequest.
 
         待删除的topic，多个topic以“,”分割。
 
@@ -81,7 +81,7 @@ class DeleteMqsInstanceTopicRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteMqsInstanceTopicRequest.
+        r"""Sets the name of this DeleteMqsInstanceTopicRequest.
 
         待删除的topic，多个topic以“,”分割。
 

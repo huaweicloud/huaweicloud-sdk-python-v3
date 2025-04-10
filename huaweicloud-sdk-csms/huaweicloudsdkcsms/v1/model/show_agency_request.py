@@ -25,7 +25,7 @@ class ShowAgencyRequest:
     }
 
     def __init__(self, secret_type=None):
-        """ShowAgencyRequest
+        r"""ShowAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAgencyRequest:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this ShowAgencyRequest.
+        r"""Gets the secret_type of this ShowAgencyRequest.
 
         凭据类型。
 
@@ -53,7 +53,7 @@ class ShowAgencyRequest:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this ShowAgencyRequest.
+        r"""Sets the secret_type of this ShowAgencyRequest.
 
         凭据类型。
 

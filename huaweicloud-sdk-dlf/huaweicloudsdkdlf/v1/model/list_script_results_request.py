@@ -29,7 +29,7 @@ class ListScriptResultsRequest:
     }
 
     def __init__(self, workspace=None, script_name=None, instance_id=None):
-        """ListScriptResultsRequest
+        r"""ListScriptResultsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListScriptResultsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListScriptResultsRequest.
+        r"""Gets the workspace of this ListScriptResultsRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class ListScriptResultsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListScriptResultsRequest.
+        r"""Sets the workspace of this ListScriptResultsRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class ListScriptResultsRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ListScriptResultsRequest.
+        r"""Gets the script_name of this ListScriptResultsRequest.
 
         :return: The script_name of this ListScriptResultsRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ListScriptResultsRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ListScriptResultsRequest.
+        r"""Sets the script_name of this ListScriptResultsRequest.
 
         :param script_name: The script_name of this ListScriptResultsRequest.
         :type script_name: str
@@ -95,7 +95,7 @@ class ListScriptResultsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListScriptResultsRequest.
+        r"""Gets the instance_id of this ListScriptResultsRequest.
 
         :return: The instance_id of this ListScriptResultsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListScriptResultsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListScriptResultsRequest.
+        r"""Sets the instance_id of this ListScriptResultsRequest.
 
         :param instance_id: The instance_id of this ListScriptResultsRequest.
         :type instance_id: str

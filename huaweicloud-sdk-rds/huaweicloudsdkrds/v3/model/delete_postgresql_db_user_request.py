@@ -29,7 +29,7 @@ class DeletePostgresqlDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, user_name=None):
-        """DeletePostgresqlDbUserRequest
+        r"""DeletePostgresqlDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeletePostgresqlDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeletePostgresqlDbUserRequest.
+        r"""Gets the x_language of this DeletePostgresqlDbUserRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class DeletePostgresqlDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeletePostgresqlDbUserRequest.
+        r"""Sets the x_language of this DeletePostgresqlDbUserRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class DeletePostgresqlDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePostgresqlDbUserRequest.
+        r"""Gets the instance_id of this DeletePostgresqlDbUserRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class DeletePostgresqlDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePostgresqlDbUserRequest.
+        r"""Sets the instance_id of this DeletePostgresqlDbUserRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class DeletePostgresqlDbUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DeletePostgresqlDbUserRequest.
+        r"""Gets the user_name of this DeletePostgresqlDbUserRequest.
 
         需要删除的帐号名。
 
@@ -110,7 +110,7 @@ class DeletePostgresqlDbUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DeletePostgresqlDbUserRequest.
+        r"""Sets the user_name of this DeletePostgresqlDbUserRequest.
 
         需要删除的帐号名。
 

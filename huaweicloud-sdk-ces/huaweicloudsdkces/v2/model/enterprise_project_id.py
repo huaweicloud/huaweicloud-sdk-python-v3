@@ -23,7 +23,7 @@ class EnterpriseProjectID:
     }
 
     def __init__(self):
-        """EnterpriseProjectID
+        r"""EnterpriseProjectID
 
         The model defined in huaweicloud sdk
 

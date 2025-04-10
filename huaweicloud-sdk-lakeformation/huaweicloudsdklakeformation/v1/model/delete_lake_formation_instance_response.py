@@ -26,7 +26,7 @@ class DeleteLakeFormationInstanceResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteLakeFormationInstanceResponse
+        r"""DeleteLakeFormationInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteLakeFormationInstanceResponse.
+        r"""Gets the x_request_id of this DeleteLakeFormationInstanceResponse.
 
         :return: The x_request_id of this DeleteLakeFormationInstanceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteLakeFormationInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteLakeFormationInstanceResponse.
+        r"""Sets the x_request_id of this DeleteLakeFormationInstanceResponse.
 
         :param x_request_id: The x_request_id of this DeleteLakeFormationInstanceResponse.
         :type x_request_id: str

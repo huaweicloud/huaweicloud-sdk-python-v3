@@ -29,7 +29,7 @@ class UpdateDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """UpdateDeviceGroupRequest
+        r"""UpdateDeviceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDeviceGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDeviceGroupRequest.
+        r"""Gets the instance_id of this UpdateDeviceGroupRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateDeviceGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDeviceGroupRequest.
+        r"""Sets the instance_id of this UpdateDeviceGroupRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateDeviceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDeviceGroupRequest.
+        r"""Gets the group_id of this UpdateDeviceGroupRequest.
 
         设备分组ID
 
@@ -88,7 +88,7 @@ class UpdateDeviceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDeviceGroupRequest.
+        r"""Sets the group_id of this UpdateDeviceGroupRequest.
 
         设备分组ID
 
@@ -99,7 +99,7 @@ class UpdateDeviceGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceGroupRequest.
+        r"""Gets the body of this UpdateDeviceGroupRequest.
 
         :return: The body of this UpdateDeviceGroupRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequestBody`
@@ -108,7 +108,7 @@ class UpdateDeviceGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceGroupRequest.
+        r"""Sets the body of this UpdateDeviceGroupRequest.
 
         :param body: The body of this UpdateDeviceGroupRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequestBody`

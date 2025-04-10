@@ -35,7 +35,7 @@ class ShowComponentRecordsRequest:
     }
 
     def __init__(self, component_id=None, application_id=None, limit=None, offset=None, order_by=None, order=None):
-        """ShowComponentRecordsRequest
+        r"""ShowComponentRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowComponentRecordsRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowComponentRecordsRequest.
+        r"""Gets the component_id of this ShowComponentRecordsRequest.
 
         组件id
 
@@ -87,7 +87,7 @@ class ShowComponentRecordsRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowComponentRecordsRequest.
+        r"""Sets the component_id of this ShowComponentRecordsRequest.
 
         组件id
 
@@ -98,7 +98,7 @@ class ShowComponentRecordsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowComponentRecordsRequest.
+        r"""Gets the application_id of this ShowComponentRecordsRequest.
 
         应用id
 
@@ -109,7 +109,7 @@ class ShowComponentRecordsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowComponentRecordsRequest.
+        r"""Sets the application_id of this ShowComponentRecordsRequest.
 
         应用id
 
@@ -120,7 +120,7 @@ class ShowComponentRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowComponentRecordsRequest.
+        r"""Gets the limit of this ShowComponentRecordsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -131,7 +131,7 @@ class ShowComponentRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowComponentRecordsRequest.
+        r"""Sets the limit of this ShowComponentRecordsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -142,7 +142,7 @@ class ShowComponentRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowComponentRecordsRequest.
+        r"""Gets the offset of this ShowComponentRecordsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -153,7 +153,7 @@ class ShowComponentRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowComponentRecordsRequest.
+        r"""Sets the offset of this ShowComponentRecordsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -164,7 +164,7 @@ class ShowComponentRecordsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ShowComponentRecordsRequest.
+        r"""Gets the order_by of this ShowComponentRecordsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -175,7 +175,7 @@ class ShowComponentRecordsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ShowComponentRecordsRequest.
+        r"""Sets the order_by of this ShowComponentRecordsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -186,7 +186,7 @@ class ShowComponentRecordsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ShowComponentRecordsRequest.
+        r"""Gets the order of this ShowComponentRecordsRequest.
 
         desc/asc，默认desc。
 
@@ -197,7 +197,7 @@ class ShowComponentRecordsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ShowComponentRecordsRequest.
+        r"""Sets the order of this ShowComponentRecordsRequest.
 
         desc/asc，默认desc。
 

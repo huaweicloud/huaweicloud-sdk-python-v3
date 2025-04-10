@@ -27,7 +27,7 @@ class UpdateImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """UpdateImageRequest
+        r"""UpdateImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this UpdateImageRequest.
+        r"""Gets the image_id of this UpdateImageRequest.
 
         镜像ID
 
@@ -60,7 +60,7 @@ class UpdateImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this UpdateImageRequest.
+        r"""Sets the image_id of this UpdateImageRequest.
 
         镜像ID
 
@@ -71,7 +71,7 @@ class UpdateImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateImageRequest.
+        r"""Gets the body of this UpdateImageRequest.
 
         :return: The body of this UpdateImageRequest.
         :rtype: list[:class:`huaweicloudsdkims.v2.UpdateImageRequestBody`]
@@ -80,7 +80,7 @@ class UpdateImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateImageRequest.
+        r"""Sets the body of this UpdateImageRequest.
 
         :param body: The body of this UpdateImageRequest.
         :type body: list[:class:`huaweicloudsdkims.v2.UpdateImageRequestBody`]

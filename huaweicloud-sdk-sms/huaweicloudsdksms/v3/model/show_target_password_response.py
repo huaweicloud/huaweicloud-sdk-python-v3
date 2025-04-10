@@ -28,7 +28,7 @@ class ShowTargetPasswordResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, target_password=None):
-        """ShowTargetPasswordResponse
+        r"""ShowTargetPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTargetPasswordResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTargetPasswordResponse.
+        r"""Gets the template_id of this ShowTargetPasswordResponse.
 
         模板ID
 
@@ -62,7 +62,7 @@ class ShowTargetPasswordResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTargetPasswordResponse.
+        r"""Sets the template_id of this ShowTargetPasswordResponse.
 
         模板ID
 
@@ -73,7 +73,7 @@ class ShowTargetPasswordResponse(SdkResponse):
 
     @property
     def target_password(self):
-        """Gets the target_password of this ShowTargetPasswordResponse.
+        r"""Gets the target_password of this ShowTargetPasswordResponse.
 
         目的端密码
 
@@ -84,7 +84,7 @@ class ShowTargetPasswordResponse(SdkResponse):
 
     @target_password.setter
     def target_password(self, target_password):
-        """Sets the target_password of this ShowTargetPasswordResponse.
+        r"""Sets the target_password of this ShowTargetPasswordResponse.
 
         目的端密码
 

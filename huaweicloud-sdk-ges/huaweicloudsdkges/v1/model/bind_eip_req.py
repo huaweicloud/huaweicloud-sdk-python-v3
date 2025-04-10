@@ -25,7 +25,7 @@ class BindEipReq:
     }
 
     def __init__(self, eip_id=None):
-        """BindEipReq
+        r"""BindEipReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BindEipReq:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this BindEipReq.
+        r"""Gets the eip_id of this BindEipReq.
 
         弹性公网IP的ID。
 
@@ -53,7 +53,7 @@ class BindEipReq:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this BindEipReq.
+        r"""Sets the eip_id of this BindEipReq.
 
         弹性公网IP的ID。
 

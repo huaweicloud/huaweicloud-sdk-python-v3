@@ -27,7 +27,7 @@ class CreateFactoryJobRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateFactoryJobRequest
+        r"""CreateFactoryJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFactoryJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateFactoryJobRequest.
+        r"""Gets the workspace of this CreateFactoryJobRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -60,7 +60,7 @@ class CreateFactoryJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateFactoryJobRequest.
+        r"""Sets the workspace of this CreateFactoryJobRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -71,7 +71,7 @@ class CreateFactoryJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFactoryJobRequest.
+        r"""Gets the body of this CreateFactoryJobRequest.
 
         :return: The body of this CreateFactoryJobRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.JobInfoRequest`
@@ -80,7 +80,7 @@ class CreateFactoryJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFactoryJobRequest.
+        r"""Sets the body of this CreateFactoryJobRequest.
 
         :param body: The body of this CreateFactoryJobRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.JobInfoRequest`

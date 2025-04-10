@@ -27,7 +27,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
     }
 
     def __init__(self, printer_enable=None, options=None):
-        """PoliciesPeripheralsDeviceRedirectionPrinterRedirection
+        r"""PoliciesPeripheralsDeviceRedirectionPrinterRedirection
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
 
     @property
     def printer_enable(self):
-        """Gets the printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
+        r"""Gets the printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
 
         是否开启打印机设备重定向。取值为： - false：表示关闭。 - true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
 
     @printer_enable.setter
     def printer_enable(self, printer_enable):
-        """Sets the printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
+        r"""Sets the printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
 
         是否开启打印机设备重定向。取值为： - false：表示关闭。 - true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
+        r"""Gets the options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PrinterRedirectionOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
+        r"""Sets the options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
         :type options: :class:`huaweicloudsdkworkspaceapp.v1.PrinterRedirectionOptions`

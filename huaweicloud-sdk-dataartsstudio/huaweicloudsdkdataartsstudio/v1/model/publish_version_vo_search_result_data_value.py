@@ -27,7 +27,7 @@ class PublishVersionVOSearchResultDataValue:
     }
 
     def __init__(self, records=None, total=None):
-        """PublishVersionVOSearchResultDataValue
+        r"""PublishVersionVOSearchResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublishVersionVOSearchResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this PublishVersionVOSearchResultDataValue.
+        r"""Gets the records of this PublishVersionVOSearchResultDataValue.
 
         查询到的版本值对象（PublishVersionVO）数组。
 
@@ -61,7 +61,7 @@ class PublishVersionVOSearchResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this PublishVersionVOSearchResultDataValue.
+        r"""Sets the records of this PublishVersionVOSearchResultDataValue.
 
         查询到的版本值对象（PublishVersionVO）数组。
 
@@ -72,7 +72,7 @@ class PublishVersionVOSearchResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this PublishVersionVOSearchResultDataValue.
+        r"""Gets the total of this PublishVersionVOSearchResultDataValue.
 
         符合搜索条件的记录总数。
 
@@ -83,7 +83,7 @@ class PublishVersionVOSearchResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PublishVersionVOSearchResultDataValue.
+        r"""Sets the total of this PublishVersionVOSearchResultDataValue.
 
         符合搜索条件的记录总数。
 

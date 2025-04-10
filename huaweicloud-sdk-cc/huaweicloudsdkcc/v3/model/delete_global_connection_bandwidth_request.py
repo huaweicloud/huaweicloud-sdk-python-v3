@@ -25,7 +25,7 @@ class DeleteGlobalConnectionBandwidthRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteGlobalConnectionBandwidthRequest
+        r"""DeleteGlobalConnectionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteGlobalConnectionBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteGlobalConnectionBandwidthRequest.
+        r"""Gets the id of this DeleteGlobalConnectionBandwidthRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DeleteGlobalConnectionBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteGlobalConnectionBandwidthRequest.
+        r"""Sets the id of this DeleteGlobalConnectionBandwidthRequest.
 
         实例ID。
 

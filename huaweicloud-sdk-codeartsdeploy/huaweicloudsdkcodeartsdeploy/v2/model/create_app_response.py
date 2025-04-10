@@ -28,7 +28,7 @@ class CreateAppResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """CreateAppResponse
+        r"""CreateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAppResponse.
+        r"""Gets the status of this CreateAppResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class CreateAppResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAppResponse.
+        r"""Sets the status of this CreateAppResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateAppResponse.
+        r"""Gets the result of this CreateAppResponse.
 
         :return: The result of this CreateAppResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseResponse`
@@ -82,7 +82,7 @@ class CreateAppResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateAppResponse.
+        r"""Sets the result of this CreateAppResponse.
 
         :param result: The result of this CreateAppResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseResponse`

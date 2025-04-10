@@ -32,7 +32,7 @@ class CheckTokenVerificationResponse(SdkResponse):
     }
 
     def __init__(self, expires_time=None, project=None, roles=None, user=None):
-        """CheckTokenVerificationResponse
+        r"""CheckTokenVerificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @property
     def expires_time(self):
-        """Gets the expires_time of this CheckTokenVerificationResponse.
+        r"""Gets the expires_time of this CheckTokenVerificationResponse.
 
         过期时间
 
@@ -76,7 +76,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @expires_time.setter
     def expires_time(self, expires_time):
-        """Sets the expires_time of this CheckTokenVerificationResponse.
+        r"""Sets the expires_time of this CheckTokenVerificationResponse.
 
         过期时间
 
@@ -87,7 +87,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this CheckTokenVerificationResponse.
+        r"""Gets the project of this CheckTokenVerificationResponse.
 
         :return: The project of this CheckTokenVerificationResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectDto`
@@ -96,7 +96,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this CheckTokenVerificationResponse.
+        r"""Sets the project of this CheckTokenVerificationResponse.
 
         :param project: The project of this CheckTokenVerificationResponse.
         :type project: :class:`huaweicloudsdkeihealth.v1.ProjectDto`
@@ -105,7 +105,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this CheckTokenVerificationResponse.
+        r"""Gets the roles of this CheckTokenVerificationResponse.
 
         角色
 
@@ -116,7 +116,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this CheckTokenVerificationResponse.
+        r"""Sets the roles of this CheckTokenVerificationResponse.
 
         角色
 
@@ -127,7 +127,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this CheckTokenVerificationResponse.
+        r"""Gets the user of this CheckTokenVerificationResponse.
 
         :return: The user of this CheckTokenVerificationResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserDto`
@@ -136,7 +136,7 @@ class CheckTokenVerificationResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CheckTokenVerificationResponse.
+        r"""Sets the user of this CheckTokenVerificationResponse.
 
         :param user: The user of this CheckTokenVerificationResponse.
         :type user: :class:`huaweicloudsdkeihealth.v1.UserDto`

@@ -42,7 +42,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, database_info=None, table_infos=None, table_repl_config=None, new_table_repl_config=None, target_database_name=None, is_tables_change=None, last_error_of_alter_table=None):
-        """ListStarRocksDataReplicationConfigByDataBaseResponse
+        r"""ListStarRocksDataReplicationConfigByDataBaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the source_instance_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         TaurusDB实例ID。
 
@@ -111,7 +111,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the source_instance_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         TaurusDB实例ID。
 
@@ -122,7 +122,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the source_node_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         TaurusDB节点ID。
 
@@ -133,7 +133,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the source_node_id of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         TaurusDB节点ID。
 
@@ -144,7 +144,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def database_info(self):
-        """Gets the database_info of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the database_info of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         :return: The database_info of this ListStarRocksDataReplicationConfigByDataBaseResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DataBaseInfo`
@@ -153,7 +153,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @database_info.setter
     def database_info(self, database_info):
-        """Sets the database_info of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the database_info of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         :param database_info: The database_info of this ListStarRocksDataReplicationConfigByDataBaseResponse.
         :type database_info: :class:`huaweicloudsdkgaussdb.v3.DataBaseInfo`
@@ -162,7 +162,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def table_infos(self):
-        """Gets the table_infos of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the table_infos of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         表配置信息。
 
@@ -173,7 +173,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @table_infos.setter
     def table_infos(self, table_infos):
-        """Sets the table_infos of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the table_infos of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         表配置信息。
 
@@ -184,7 +184,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def table_repl_config(self):
-        """Gets the table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         :return: The table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -193,7 +193,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @table_repl_config.setter
     def table_repl_config(self, table_repl_config):
-        """Sets the table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         :param table_repl_config: The table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -202,7 +202,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def new_table_repl_config(self):
-        """Gets the new_table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the new_table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         :return: The new_table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -211,7 +211,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @new_table_repl_config.setter
     def new_table_repl_config(self, new_table_repl_config):
-        """Sets the new_table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the new_table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         :param new_table_repl_config: The new_table_repl_config of this ListStarRocksDataReplicationConfigByDataBaseResponse.
         :type new_table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -220,7 +220,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def target_database_name(self):
-        """Gets the target_database_name of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the target_database_name of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         目标数据库名。
 
@@ -231,7 +231,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @target_database_name.setter
     def target_database_name(self, target_database_name):
-        """Sets the target_database_name of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the target_database_name of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         目标数据库名。
 
@@ -242,7 +242,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def is_tables_change(self):
-        """Gets the is_tables_change of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the is_tables_change of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         同步任务表是否变化。
 
@@ -253,7 +253,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @is_tables_change.setter
     def is_tables_change(self, is_tables_change):
-        """Sets the is_tables_change of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the is_tables_change of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         同步任务表是否变化。
 
@@ -264,7 +264,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @property
     def last_error_of_alter_table(self):
-        """Gets the last_error_of_alter_table of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Gets the last_error_of_alter_table of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         最近一次alter table的异常信息。
 
@@ -275,7 +275,7 @@ class ListStarRocksDataReplicationConfigByDataBaseResponse(SdkResponse):
 
     @last_error_of_alter_table.setter
     def last_error_of_alter_table(self, last_error_of_alter_table):
-        """Sets the last_error_of_alter_table of this ListStarRocksDataReplicationConfigByDataBaseResponse.
+        r"""Sets the last_error_of_alter_table of this ListStarRocksDataReplicationConfigByDataBaseResponse.
 
         最近一次alter table的异常信息。
 

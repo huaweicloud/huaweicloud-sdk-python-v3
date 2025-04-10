@@ -31,7 +31,7 @@ class PatchGroupRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, group_id=None, body=None):
-        """PatchGroupRequest
+        r"""PatchGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PatchGroupRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this PatchGroupRequest.
+        r"""Gets the authorization of this PatchGroupRequest.
 
         承载令牌
 
@@ -72,7 +72,7 @@ class PatchGroupRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this PatchGroupRequest.
+        r"""Sets the authorization of this PatchGroupRequest.
 
         承载令牌
 
@@ -83,7 +83,7 @@ class PatchGroupRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PatchGroupRequest.
+        r"""Gets the tenant_id of this PatchGroupRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -94,7 +94,7 @@ class PatchGroupRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PatchGroupRequest.
+        r"""Sets the tenant_id of this PatchGroupRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -105,7 +105,7 @@ class PatchGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PatchGroupRequest.
+        r"""Gets the group_id of this PatchGroupRequest.
 
         用户组的全局唯一标识符（ID）
 
@@ -116,7 +116,7 @@ class PatchGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PatchGroupRequest.
+        r"""Sets the group_id of this PatchGroupRequest.
 
         用户组的全局唯一标识符（ID）
 
@@ -127,7 +127,7 @@ class PatchGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this PatchGroupRequest.
+        r"""Gets the body of this PatchGroupRequest.
 
         :return: The body of this PatchGroupRequest.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.PatchGroupReqBody`
@@ -136,7 +136,7 @@ class PatchGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PatchGroupRequest.
+        r"""Sets the body of this PatchGroupRequest.
 
         :param body: The body of this PatchGroupRequest.
         :type body: :class:`huaweicloudsdkidentitycenterscim.v1.PatchGroupReqBody`

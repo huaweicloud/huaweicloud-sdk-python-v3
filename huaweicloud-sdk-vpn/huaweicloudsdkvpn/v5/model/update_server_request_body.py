@@ -25,7 +25,7 @@ class UpdateServerRequestBody:
     }
 
     def __init__(self, vpn_server=None):
-        """UpdateServerRequestBody
+        r"""UpdateServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateServerRequestBody:
 
     @property
     def vpn_server(self):
-        """Gets the vpn_server of this UpdateServerRequestBody.
+        r"""Gets the vpn_server of this UpdateServerRequestBody.
 
         :return: The vpn_server of this UpdateServerRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateServerRequest`
@@ -52,7 +52,7 @@ class UpdateServerRequestBody:
 
     @vpn_server.setter
     def vpn_server(self, vpn_server):
-        """Sets the vpn_server of this UpdateServerRequestBody.
+        r"""Sets the vpn_server of this UpdateServerRequestBody.
 
         :param vpn_server: The vpn_server of this UpdateServerRequestBody.
         :type vpn_server: :class:`huaweicloudsdkvpn.v5.UpdateServerRequest`

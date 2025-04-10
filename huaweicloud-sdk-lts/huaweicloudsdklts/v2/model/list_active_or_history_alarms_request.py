@@ -33,7 +33,7 @@ class ListActiveOrHistoryAlarmsRequest:
     }
 
     def __init__(self, domain_id=None, type=None, marker=None, limit=None, body=None):
-        """ListActiveOrHistoryAlarmsRequest
+        r"""ListActiveOrHistoryAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListActiveOrHistoryAlarmsRequest.
+        r"""Gets the domain_id of this ListActiveOrHistoryAlarmsRequest.
 
         domainId
 
@@ -80,7 +80,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListActiveOrHistoryAlarmsRequest.
+        r"""Sets the domain_id of this ListActiveOrHistoryAlarmsRequest.
 
         domainId
 
@@ -91,7 +91,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListActiveOrHistoryAlarmsRequest.
+        r"""Gets the type of this ListActiveOrHistoryAlarmsRequest.
 
         是活动告警还是历史告警
 
@@ -102,7 +102,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListActiveOrHistoryAlarmsRequest.
+        r"""Sets the type of this ListActiveOrHistoryAlarmsRequest.
 
         是活动告警还是历史告警
 
@@ -113,7 +113,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListActiveOrHistoryAlarmsRequest.
+        r"""Gets the marker of this ListActiveOrHistoryAlarmsRequest.
 
         取值为上一页数据的最后一条记录的id(填写上一页数据返回得previous_marker或者next_marker值。)
 
@@ -124,7 +124,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListActiveOrHistoryAlarmsRequest.
+        r"""Sets the marker of this ListActiveOrHistoryAlarmsRequest.
 
         取值为上一页数据的最后一条记录的id(填写上一页数据返回得previous_marker或者next_marker值。)
 
@@ -135,7 +135,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListActiveOrHistoryAlarmsRequest.
+        r"""Gets the limit of this ListActiveOrHistoryAlarmsRequest.
 
         每页数据量
 
@@ -146,7 +146,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListActiveOrHistoryAlarmsRequest.
+        r"""Sets the limit of this ListActiveOrHistoryAlarmsRequest.
 
         每页数据量
 
@@ -157,7 +157,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListActiveOrHistoryAlarmsRequest.
+        r"""Gets the body of this ListActiveOrHistoryAlarmsRequest.
 
         :return: The body of this ListActiveOrHistoryAlarmsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`
@@ -166,7 +166,7 @@ class ListActiveOrHistoryAlarmsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListActiveOrHistoryAlarmsRequest.
+        r"""Sets the body of this ListActiveOrHistoryAlarmsRequest.
 
         :param body: The body of this ListActiveOrHistoryAlarmsRequest.
         :type body: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`

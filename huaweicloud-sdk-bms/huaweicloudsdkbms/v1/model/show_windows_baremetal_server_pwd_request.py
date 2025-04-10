@@ -25,7 +25,7 @@ class ShowWindowsBaremetalServerPwdRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowWindowsBaremetalServerPwdRequest
+        r"""ShowWindowsBaremetalServerPwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowWindowsBaremetalServerPwdRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowWindowsBaremetalServerPwdRequest.
+        r"""Gets the server_id of this ShowWindowsBaremetalServerPwdRequest.
 
         裸金属服务器ID
 
@@ -53,7 +53,7 @@ class ShowWindowsBaremetalServerPwdRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowWindowsBaremetalServerPwdRequest.
+        r"""Sets the server_id of this ShowWindowsBaremetalServerPwdRequest.
 
         裸金属服务器ID
 

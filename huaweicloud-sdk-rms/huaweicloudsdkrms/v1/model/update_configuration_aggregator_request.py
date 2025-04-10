@@ -27,7 +27,7 @@ class UpdateConfigurationAggregatorRequest:
     }
 
     def __init__(self, aggregator_id=None, body=None):
-        """UpdateConfigurationAggregatorRequest
+        r"""UpdateConfigurationAggregatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConfigurationAggregatorRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this UpdateConfigurationAggregatorRequest.
+        r"""Gets the aggregator_id of this UpdateConfigurationAggregatorRequest.
 
         资源聚合器ID。
 
@@ -60,7 +60,7 @@ class UpdateConfigurationAggregatorRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this UpdateConfigurationAggregatorRequest.
+        r"""Sets the aggregator_id of this UpdateConfigurationAggregatorRequest.
 
         资源聚合器ID。
 
@@ -71,7 +71,7 @@ class UpdateConfigurationAggregatorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigurationAggregatorRequest.
+        r"""Gets the body of this UpdateConfigurationAggregatorRequest.
 
         :return: The body of this UpdateConfigurationAggregatorRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.ConfigurationAggregatorRequest`
@@ -80,7 +80,7 @@ class UpdateConfigurationAggregatorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigurationAggregatorRequest.
+        r"""Sets the body of this UpdateConfigurationAggregatorRequest.
 
         :param body: The body of this UpdateConfigurationAggregatorRequest.
         :type body: :class:`huaweicloudsdkrms.v1.ConfigurationAggregatorRequest`

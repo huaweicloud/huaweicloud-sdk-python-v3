@@ -27,7 +27,7 @@ class RestoreAssetRequest:
     }
 
     def __init__(self, x_app_user_id=None, asset_id=None):
-        """RestoreAssetRequest
+        r"""RestoreAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreAssetRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this RestoreAssetRequest.
+        r"""Gets the x_app_user_id of this RestoreAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class RestoreAssetRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this RestoreAssetRequest.
+        r"""Sets the x_app_user_id of this RestoreAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class RestoreAssetRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this RestoreAssetRequest.
+        r"""Gets the asset_id of this RestoreAssetRequest.
 
         资产ID。
 
@@ -82,7 +82,7 @@ class RestoreAssetRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this RestoreAssetRequest.
+        r"""Sets the asset_id of this RestoreAssetRequest.
 
         资产ID。
 

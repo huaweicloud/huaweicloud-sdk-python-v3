@@ -27,7 +27,7 @@ class DisassociateRouteTableRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """DisassociateRouteTableRequest
+        r"""DisassociateRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateRouteTableRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this DisassociateRouteTableRequest.
+        r"""Gets the routetable_id of this DisassociateRouteTableRequest.
 
         路由表ID
 
@@ -60,7 +60,7 @@ class DisassociateRouteTableRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this DisassociateRouteTableRequest.
+        r"""Sets the routetable_id of this DisassociateRouteTableRequest.
 
         路由表ID
 
@@ -71,7 +71,7 @@ class DisassociateRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateRouteTableRequest.
+        r"""Gets the body of this DisassociateRouteTableRequest.
 
         :return: The body of this DisassociateRouteTableRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.RoutetableAssociateReqbody`
@@ -80,7 +80,7 @@ class DisassociateRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateRouteTableRequest.
+        r"""Sets the body of this DisassociateRouteTableRequest.
 
         :param body: The body of this DisassociateRouteTableRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.RoutetableAssociateReqbody`

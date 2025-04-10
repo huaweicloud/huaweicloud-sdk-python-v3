@@ -26,7 +26,7 @@ class ListIssueCustomFieldsResponse(SdkResponse):
     }
 
     def __init__(self, datas=None):
-        """ListIssueCustomFieldsResponse
+        r"""ListIssueCustomFieldsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListIssueCustomFieldsResponse(SdkResponse):
 
     @property
     def datas(self):
-        """Gets the datas of this ListIssueCustomFieldsResponse.
+        r"""Gets the datas of this ListIssueCustomFieldsResponse.
 
         自定义字段返回数据
 
@@ -55,7 +55,7 @@ class ListIssueCustomFieldsResponse(SdkResponse):
 
     @datas.setter
     def datas(self, datas):
-        """Sets the datas of this ListIssueCustomFieldsResponse.
+        r"""Sets the datas of this ListIssueCustomFieldsResponse.
 
         自定义字段返回数据
 

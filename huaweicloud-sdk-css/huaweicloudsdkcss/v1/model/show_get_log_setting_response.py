@@ -26,7 +26,7 @@ class ShowGetLogSettingResponse(SdkResponse):
     }
 
     def __init__(self, log_configuration=None):
-        """ShowGetLogSettingResponse
+        r"""ShowGetLogSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGetLogSettingResponse(SdkResponse):
 
     @property
     def log_configuration(self):
-        """Gets the log_configuration of this ShowGetLogSettingResponse.
+        r"""Gets the log_configuration of this ShowGetLogSettingResponse.
 
         :return: The log_configuration of this ShowGetLogSettingResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.LogConfiguration`
@@ -53,7 +53,7 @@ class ShowGetLogSettingResponse(SdkResponse):
 
     @log_configuration.setter
     def log_configuration(self, log_configuration):
-        """Sets the log_configuration of this ShowGetLogSettingResponse.
+        r"""Sets the log_configuration of this ShowGetLogSettingResponse.
 
         :param log_configuration: The log_configuration of this ShowGetLogSettingResponse.
         :type log_configuration: :class:`huaweicloudsdkcss.v1.LogConfiguration`

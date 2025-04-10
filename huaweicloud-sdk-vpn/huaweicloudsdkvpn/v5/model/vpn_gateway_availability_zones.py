@@ -27,7 +27,7 @@ class VpnGatewayAvailabilityZones:
     }
 
     def __init__(self, vpc=None, er=None):
-        """VpnGatewayAvailabilityZones
+        r"""VpnGatewayAvailabilityZones
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VpnGatewayAvailabilityZones:
 
     @property
     def vpc(self):
-        """Gets the vpc of this VpnGatewayAvailabilityZones.
+        r"""Gets the vpc of this VpnGatewayAvailabilityZones.
 
         VPC关联类型的可用区列表
 
@@ -61,7 +61,7 @@ class VpnGatewayAvailabilityZones:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this VpnGatewayAvailabilityZones.
+        r"""Sets the vpc of this VpnGatewayAvailabilityZones.
 
         VPC关联类型的可用区列表
 
@@ -72,7 +72,7 @@ class VpnGatewayAvailabilityZones:
 
     @property
     def er(self):
-        """Gets the er of this VpnGatewayAvailabilityZones.
+        r"""Gets the er of this VpnGatewayAvailabilityZones.
 
         ER关联类型的可用区列表
 
@@ -83,7 +83,7 @@ class VpnGatewayAvailabilityZones:
 
     @er.setter
     def er(self, er):
-        """Sets the er of this VpnGatewayAvailabilityZones.
+        r"""Sets the er of this VpnGatewayAvailabilityZones.
 
         ER关联类型的可用区列表
 

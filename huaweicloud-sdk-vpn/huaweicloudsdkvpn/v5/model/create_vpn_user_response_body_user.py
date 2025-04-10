@@ -25,7 +25,7 @@ class CreateVpnUserResponseBodyUser:
     }
 
     def __init__(self, id=None):
-        """CreateVpnUserResponseBodyUser
+        r"""CreateVpnUserResponseBodyUser
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVpnUserResponseBodyUser:
 
     @property
     def id(self):
-        """Gets the id of this CreateVpnUserResponseBodyUser.
+        r"""Gets the id of this CreateVpnUserResponseBodyUser.
 
         VPN用户ID
 
@@ -54,7 +54,7 @@ class CreateVpnUserResponseBodyUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateVpnUserResponseBodyUser.
+        r"""Sets the id of this CreateVpnUserResponseBodyUser.
 
         VPN用户ID
 

@@ -25,7 +25,7 @@ class CreateUsersDatabases:
     }
 
     def __init__(self, name=None):
-        """CreateUsersDatabases
+        r"""CreateUsersDatabases
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateUsersDatabases:
 
     @property
     def name(self):
-        """Gets the name of this CreateUsersDatabases.
+        r"""Gets the name of this CreateUsersDatabases.
 
         关联逻辑库名称。
 
@@ -53,7 +53,7 @@ class CreateUsersDatabases:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUsersDatabases.
+        r"""Sets the name of this CreateUsersDatabases.
 
         关联逻辑库名称。
 

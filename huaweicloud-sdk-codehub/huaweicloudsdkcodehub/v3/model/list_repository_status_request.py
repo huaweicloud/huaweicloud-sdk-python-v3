@@ -25,7 +25,7 @@ class ListRepositoryStatusRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """ListRepositoryStatusRequest
+        r"""ListRepositoryStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListRepositoryStatusRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ListRepositoryStatusRequest.
+        r"""Gets the repository_uuid of this ListRepositoryStatusRequest.
 
         仓库的uuid,用来指定需要查看的仓库
 
@@ -53,7 +53,7 @@ class ListRepositoryStatusRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ListRepositoryStatusRequest.
+        r"""Sets the repository_uuid of this ListRepositoryStatusRequest.
 
         仓库的uuid,用来指定需要查看的仓库
 

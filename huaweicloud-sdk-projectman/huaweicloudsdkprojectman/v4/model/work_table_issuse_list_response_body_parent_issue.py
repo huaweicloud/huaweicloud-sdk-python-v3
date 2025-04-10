@@ -27,7 +27,7 @@ class WorkTableIssuseListResponseBodyParentIssue:
     }
 
     def __init__(self, id=None, subject=None):
-        """WorkTableIssuseListResponseBodyParentIssue
+        r"""WorkTableIssuseListResponseBodyParentIssue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkTableIssuseListResponseBodyParentIssue:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyParentIssue.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyParentIssue.
 
         父工作项id
 
@@ -61,7 +61,7 @@ class WorkTableIssuseListResponseBodyParentIssue:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyParentIssue.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyParentIssue.
 
         父工作项id
 
@@ -72,7 +72,7 @@ class WorkTableIssuseListResponseBodyParentIssue:
 
     @property
     def subject(self):
-        """Gets the subject of this WorkTableIssuseListResponseBodyParentIssue.
+        r"""Gets the subject of this WorkTableIssuseListResponseBodyParentIssue.
 
         父工作项标题
 
@@ -83,7 +83,7 @@ class WorkTableIssuseListResponseBodyParentIssue:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this WorkTableIssuseListResponseBodyParentIssue.
+        r"""Sets the subject of this WorkTableIssuseListResponseBodyParentIssue.
 
         父工作项标题
 

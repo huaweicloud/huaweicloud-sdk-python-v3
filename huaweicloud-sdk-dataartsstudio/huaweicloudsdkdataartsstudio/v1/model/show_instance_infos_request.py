@@ -39,7 +39,7 @@ class ShowInstanceInfosRequest:
     }
 
     def __init__(self, instance=None, workspace_id=None, task_id=None, job_name=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ShowInstanceInfosRequest
+        r"""ShowInstanceInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowInstanceInfosRequest.
+        r"""Gets the instance of this ShowInstanceInfosRequest.
 
         实例id
 
@@ -96,7 +96,7 @@ class ShowInstanceInfosRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowInstanceInfosRequest.
+        r"""Sets the instance of this ShowInstanceInfosRequest.
 
         实例id
 
@@ -107,7 +107,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowInstanceInfosRequest.
+        r"""Gets the workspace_id of this ShowInstanceInfosRequest.
 
         空间id
 
@@ -118,7 +118,7 @@ class ShowInstanceInfosRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowInstanceInfosRequest.
+        r"""Sets the workspace_id of this ShowInstanceInfosRequest.
 
         空间id
 
@@ -129,7 +129,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowInstanceInfosRequest.
+        r"""Gets the task_id of this ShowInstanceInfosRequest.
 
         作业算子id
 
@@ -140,7 +140,7 @@ class ShowInstanceInfosRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowInstanceInfosRequest.
+        r"""Sets the task_id of this ShowInstanceInfosRequest.
 
         作业算子id
 
@@ -151,7 +151,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowInstanceInfosRequest.
+        r"""Gets the job_name of this ShowInstanceInfosRequest.
 
         作业算子名称
 
@@ -162,7 +162,7 @@ class ShowInstanceInfosRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowInstanceInfosRequest.
+        r"""Sets the job_name of this ShowInstanceInfosRequest.
 
         作业算子名称
 
@@ -173,7 +173,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowInstanceInfosRequest.
+        r"""Gets the start_time of this ShowInstanceInfosRequest.
 
         搜索参数时间范围的开始时间，例：1705248000000
 
@@ -184,7 +184,7 @@ class ShowInstanceInfosRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowInstanceInfosRequest.
+        r"""Sets the start_time of this ShowInstanceInfosRequest.
 
         搜索参数时间范围的开始时间，例：1705248000000
 
@@ -195,7 +195,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowInstanceInfosRequest.
+        r"""Gets the end_time of this ShowInstanceInfosRequest.
 
         搜索参数时间范围的结束时间,例：1705311669796
 
@@ -206,7 +206,7 @@ class ShowInstanceInfosRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowInstanceInfosRequest.
+        r"""Sets the end_time of this ShowInstanceInfosRequest.
 
         搜索参数时间范围的结束时间,例：1705311669796
 
@@ -217,7 +217,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowInstanceInfosRequest.
+        r"""Gets the offset of this ShowInstanceInfosRequest.
 
         分页参数偏移量
 
@@ -228,7 +228,7 @@ class ShowInstanceInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowInstanceInfosRequest.
+        r"""Sets the offset of this ShowInstanceInfosRequest.
 
         分页参数偏移量
 
@@ -239,7 +239,7 @@ class ShowInstanceInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowInstanceInfosRequest.
+        r"""Gets the limit of this ShowInstanceInfosRequest.
 
         分页参每页数量
 
@@ -250,7 +250,7 @@ class ShowInstanceInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowInstanceInfosRequest.
+        r"""Sets the limit of this ShowInstanceInfosRequest.
 
         分页参每页数量
 

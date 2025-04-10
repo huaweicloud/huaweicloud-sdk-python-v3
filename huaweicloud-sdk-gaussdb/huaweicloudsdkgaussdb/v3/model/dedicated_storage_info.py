@@ -27,7 +27,7 @@ class DedicatedStorageInfo:
     }
 
     def __init__(self, spec_code=None, host_num=None):
-        """DedicatedStorageInfo
+        r"""DedicatedStorageInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DedicatedStorageInfo:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this DedicatedStorageInfo.
+        r"""Gets the spec_code of this DedicatedStorageInfo.
 
         专属资源池存储资源规格码。
 
@@ -59,7 +59,7 @@ class DedicatedStorageInfo:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this DedicatedStorageInfo.
+        r"""Sets the spec_code of this DedicatedStorageInfo.
 
         专属资源池存储资源规格码。
 
@@ -70,7 +70,7 @@ class DedicatedStorageInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this DedicatedStorageInfo.
+        r"""Gets the host_num of this DedicatedStorageInfo.
 
         专属资源池存储主机数量。
 
@@ -81,7 +81,7 @@ class DedicatedStorageInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this DedicatedStorageInfo.
+        r"""Sets the host_num of this DedicatedStorageInfo.
 
         专属资源池存储主机数量。
 

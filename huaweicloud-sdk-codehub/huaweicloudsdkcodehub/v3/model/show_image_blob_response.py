@@ -24,7 +24,7 @@ class ShowImageBlobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ShowImageBlobResponse
+        r"""ShowImageBlobResponse
 
         The model defined in huaweicloud sdk
 

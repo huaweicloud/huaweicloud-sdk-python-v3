@@ -41,7 +41,7 @@ class HumanModel2DAssetMeta:
     }
 
     def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None, is_with_action_library=None, action_tag_map=None, is_flexus=None):
-        """HumanModel2DAssetMeta
+        r"""HumanModel2DAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def is_action_editable(self):
-        """Gets the is_action_editable of this HumanModel2DAssetMeta.
+        r"""Gets the is_action_editable of this HumanModel2DAssetMeta.
 
         **参数解释**： 分身数字人的动作是否可编辑 **约束限制**： 不涉及 **取值范围**： * true: 动作可编辑 * false: 动作不可编辑
 
@@ -110,7 +110,7 @@ class HumanModel2DAssetMeta:
 
     @is_action_editable.setter
     def is_action_editable(self, is_action_editable):
-        """Sets the is_action_editable of this HumanModel2DAssetMeta.
+        r"""Sets the is_action_editable of this HumanModel2DAssetMeta.
 
         **参数解释**： 分身数字人的动作是否可编辑 **约束限制**： 不涉及 **取值范围**： * true: 动作可编辑 * false: 动作不可编辑
 
@@ -121,7 +121,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def is_real_background(self):
-        """Gets the is_real_background of this HumanModel2DAssetMeta.
+        r"""Gets the is_real_background of this HumanModel2DAssetMeta.
 
         **参数解释**： 是否是实景分身数字人 **约束限制**： 实景分身数字人不做背景替换。 **取值范围**： * true: 实景分身数字人 * false: 普通分身数字人，不带背景。
 
@@ -132,7 +132,7 @@ class HumanModel2DAssetMeta:
 
     @is_real_background.setter
     def is_real_background(self, is_real_background):
-        """Sets the is_real_background of this HumanModel2DAssetMeta.
+        r"""Sets the is_real_background of this HumanModel2DAssetMeta.
 
         **参数解释**： 是否是实景分身数字人 **约束限制**： 实景分身数字人不做背景替换。 **取值范围**： * true: 实景分身数字人 * false: 普通分身数字人，不带背景。
 
@@ -143,7 +143,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def support_live(self):
-        """Gets the support_live of this HumanModel2DAssetMeta.
+        r"""Gets the support_live of this HumanModel2DAssetMeta.
 
         **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
 
@@ -154,7 +154,7 @@ class HumanModel2DAssetMeta:
 
     @support_live.setter
     def support_live(self, support_live):
-        """Sets the support_live of this HumanModel2DAssetMeta.
+        r"""Sets the support_live of this HumanModel2DAssetMeta.
 
         **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
 
@@ -165,7 +165,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def model_version(self):
-        """Gets the model_version of this HumanModel2DAssetMeta.
+        r"""Gets the model_version of this HumanModel2DAssetMeta.
 
         **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
 
@@ -176,7 +176,7 @@ class HumanModel2DAssetMeta:
 
     @model_version.setter
     def model_version(self, model_version):
-        """Sets the model_version of this HumanModel2DAssetMeta.
+        r"""Sets the model_version of this HumanModel2DAssetMeta.
 
         **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
 
@@ -187,7 +187,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def model_resolution(self):
-        """Gets the model_resolution of this HumanModel2DAssetMeta.
+        r"""Gets the model_resolution of this HumanModel2DAssetMeta.
 
         **参数解释**： 分身数字人模型分辨率。 **约束限制**： 不涉及 **取值范围**： * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
@@ -198,7 +198,7 @@ class HumanModel2DAssetMeta:
 
     @model_resolution.setter
     def model_resolution(self, model_resolution):
-        """Sets the model_resolution of this HumanModel2DAssetMeta.
+        r"""Sets the model_resolution of this HumanModel2DAssetMeta.
 
         **参数解释**： 分身数字人模型分辨率。 **约束限制**： 不涉及 **取值范围**： * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
@@ -209,7 +209,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def device_names(self):
-        """Gets the device_names of this HumanModel2DAssetMeta.
+        r"""Gets the device_names of this HumanModel2DAssetMeta.
 
         **参数解释**： 已执行编译任务设备类型列表。 **约束限制**： 支持走动的数字人，当前仅用于视频制作，不能用于直播和智能交互 **取值范围**： 设备名称列表最多16个。 设备名称字符长度1-64位。 **默认取值**： false
 
@@ -220,7 +220,7 @@ class HumanModel2DAssetMeta:
 
     @device_names.setter
     def device_names(self, device_names):
-        """Sets the device_names of this HumanModel2DAssetMeta.
+        r"""Sets the device_names of this HumanModel2DAssetMeta.
 
         **参数解释**： 已执行编译任务设备类型列表。 **约束限制**： 支持走动的数字人，当前仅用于视频制作，不能用于直播和智能交互 **取值范围**： 设备名称列表最多16个。 设备名称字符长度1-64位。 **默认取值**： false
 
@@ -231,7 +231,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def is_with_action_library(self):
-        """Gets the is_with_action_library of this HumanModel2DAssetMeta.
+        r"""Gets the is_with_action_library of this HumanModel2DAssetMeta.
 
         分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
 
@@ -242,7 +242,7 @@ class HumanModel2DAssetMeta:
 
     @is_with_action_library.setter
     def is_with_action_library(self, is_with_action_library):
-        """Sets the is_with_action_library of this HumanModel2DAssetMeta.
+        r"""Sets the is_with_action_library of this HumanModel2DAssetMeta.
 
         分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
 
@@ -253,7 +253,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def action_tag_map(self):
-        """Gets the action_tag_map of this HumanModel2DAssetMeta.
+        r"""Gets the action_tag_map of this HumanModel2DAssetMeta.
 
         动作标签映射。
 
@@ -264,7 +264,7 @@ class HumanModel2DAssetMeta:
 
     @action_tag_map.setter
     def action_tag_map(self, action_tag_map):
-        """Sets the action_tag_map of this HumanModel2DAssetMeta.
+        r"""Sets the action_tag_map of this HumanModel2DAssetMeta.
 
         动作标签映射。
 
@@ -275,7 +275,7 @@ class HumanModel2DAssetMeta:
 
     @property
     def is_flexus(self):
-        """Gets the is_flexus of this HumanModel2DAssetMeta.
+        r"""Gets the is_flexus of this HumanModel2DAssetMeta.
 
         是否是Flexus版本分身数字人。
 
@@ -286,7 +286,7 @@ class HumanModel2DAssetMeta:
 
     @is_flexus.setter
     def is_flexus(self, is_flexus):
-        """Sets the is_flexus of this HumanModel2DAssetMeta.
+        r"""Sets the is_flexus of this HumanModel2DAssetMeta.
 
         是否是Flexus版本分身数字人。
 

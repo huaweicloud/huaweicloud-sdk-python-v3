@@ -28,7 +28,7 @@ class ListSecurityDataCategoriesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, category_groups=None):
-        """ListSecurityDataCategoriesResponse
+        r"""ListSecurityDataCategoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityDataCategoriesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityDataCategoriesResponse.
+        r"""Gets the total of this ListSecurityDataCategoriesResponse.
 
         数据分类总的数量
 
@@ -62,7 +62,7 @@ class ListSecurityDataCategoriesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityDataCategoriesResponse.
+        r"""Sets the total of this ListSecurityDataCategoriesResponse.
 
         数据分类总的数量
 
@@ -73,7 +73,7 @@ class ListSecurityDataCategoriesResponse(SdkResponse):
 
     @property
     def category_groups(self):
-        """Gets the category_groups of this ListSecurityDataCategoriesResponse.
+        r"""Gets the category_groups of this ListSecurityDataCategoriesResponse.
 
         数据分类列表
 
@@ -84,7 +84,7 @@ class ListSecurityDataCategoriesResponse(SdkResponse):
 
     @category_groups.setter
     def category_groups(self, category_groups):
-        """Sets the category_groups of this ListSecurityDataCategoriesResponse.
+        r"""Sets the category_groups of this ListSecurityDataCategoriesResponse.
 
         数据分类列表
 

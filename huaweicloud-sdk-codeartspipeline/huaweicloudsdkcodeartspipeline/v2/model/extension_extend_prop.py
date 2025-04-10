@@ -33,7 +33,7 @@ class ExtensionExtendProp:
     }
 
     def __init__(self, api_options=None, api_type=None, options=None, disabled_conditions=None, visible_conditions=None):
-        """ExtensionExtendProp
+        r"""ExtensionExtendProp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExtensionExtendProp:
 
     @property
     def api_options(self):
-        """Gets the api_options of this ExtensionExtendProp.
+        r"""Gets the api_options of this ExtensionExtendProp.
 
         API 选项
 
@@ -82,7 +82,7 @@ class ExtensionExtendProp:
 
     @api_options.setter
     def api_options(self, api_options):
-        """Sets the api_options of this ExtensionExtendProp.
+        r"""Sets the api_options of this ExtensionExtendProp.
 
         API 选项
 
@@ -93,7 +93,7 @@ class ExtensionExtendProp:
 
     @property
     def api_type(self):
-        """Gets the api_type of this ExtensionExtendProp.
+        r"""Gets the api_type of this ExtensionExtendProp.
 
         API 类型
 
@@ -104,7 +104,7 @@ class ExtensionExtendProp:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this ExtensionExtendProp.
+        r"""Sets the api_type of this ExtensionExtendProp.
 
         API 类型
 
@@ -115,7 +115,7 @@ class ExtensionExtendProp:
 
     @property
     def options(self):
-        """Gets the options of this ExtensionExtendProp.
+        r"""Gets the options of this ExtensionExtendProp.
 
         选项
 
@@ -126,7 +126,7 @@ class ExtensionExtendProp:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this ExtensionExtendProp.
+        r"""Sets the options of this ExtensionExtendProp.
 
         选项
 
@@ -137,7 +137,7 @@ class ExtensionExtendProp:
 
     @property
     def disabled_conditions(self):
-        """Gets the disabled_conditions of this ExtensionExtendProp.
+        r"""Gets the disabled_conditions of this ExtensionExtendProp.
 
         禁用条件
 
@@ -148,7 +148,7 @@ class ExtensionExtendProp:
 
     @disabled_conditions.setter
     def disabled_conditions(self, disabled_conditions):
-        """Sets the disabled_conditions of this ExtensionExtendProp.
+        r"""Sets the disabled_conditions of this ExtensionExtendProp.
 
         禁用条件
 
@@ -159,7 +159,7 @@ class ExtensionExtendProp:
 
     @property
     def visible_conditions(self):
-        """Gets the visible_conditions of this ExtensionExtendProp.
+        r"""Gets the visible_conditions of this ExtensionExtendProp.
 
         可见条件
 
@@ -170,7 +170,7 @@ class ExtensionExtendProp:
 
     @visible_conditions.setter
     def visible_conditions(self, visible_conditions):
-        """Sets the visible_conditions of this ExtensionExtendProp.
+        r"""Sets the visible_conditions of this ExtensionExtendProp.
 
         可见条件
 

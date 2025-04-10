@@ -28,7 +28,7 @@ class BatchDeleteIpListResponse(SdkResponse):
     }
 
     def __init__(self, ipgroup=None, request_id=None):
-        """BatchDeleteIpListResponse
+        r"""BatchDeleteIpListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteIpListResponse(SdkResponse):
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this BatchDeleteIpListResponse.
+        r"""Gets the ipgroup of this BatchDeleteIpListResponse.
 
         :return: The ipgroup of this BatchDeleteIpListResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.IpGroup`
@@ -60,7 +60,7 @@ class BatchDeleteIpListResponse(SdkResponse):
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this BatchDeleteIpListResponse.
+        r"""Sets the ipgroup of this BatchDeleteIpListResponse.
 
         :param ipgroup: The ipgroup of this BatchDeleteIpListResponse.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`
@@ -69,7 +69,7 @@ class BatchDeleteIpListResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchDeleteIpListResponse.
+        r"""Gets the request_id of this BatchDeleteIpListResponse.
 
         参数解释：请求ID。 注：自动生成 。
 
@@ -80,7 +80,7 @@ class BatchDeleteIpListResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchDeleteIpListResponse.
+        r"""Sets the request_id of this BatchDeleteIpListResponse.
 
         参数解释：请求ID。 注：自动生成 。
 

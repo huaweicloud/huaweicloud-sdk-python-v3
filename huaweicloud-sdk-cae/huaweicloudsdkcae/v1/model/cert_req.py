@@ -31,7 +31,7 @@ class CertReq:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
-        """CertReq
+        r"""CertReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CertReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CertReq.
+        r"""Gets the api_version of this CertReq.
 
         :return: The api_version of this CertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -69,7 +69,7 @@ class CertReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CertReq.
+        r"""Sets the api_version of this CertReq.
 
         :param api_version: The api_version of this CertReq.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -78,7 +78,7 @@ class CertReq:
 
     @property
     def kind(self):
-        """Gets the kind of this CertReq.
+        r"""Gets the kind of this CertReq.
 
         :return: The kind of this CertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -87,7 +87,7 @@ class CertReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CertReq.
+        r"""Sets the kind of this CertReq.
 
         :param kind: The kind of this CertReq.
         :type kind: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -96,7 +96,7 @@ class CertReq:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CertReq.
+        r"""Gets the metadata of this CertReq.
 
         :return: The metadata of this CertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateMetaCert`
@@ -105,7 +105,7 @@ class CertReq:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CertReq.
+        r"""Sets the metadata of this CertReq.
 
         :param metadata: The metadata of this CertReq.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateMetaCert`
@@ -114,7 +114,7 @@ class CertReq:
 
     @property
     def spec(self):
-        """Gets the spec of this CertReq.
+        r"""Gets the spec of this CertReq.
 
         :return: The spec of this CertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateSpecCert`
@@ -123,7 +123,7 @@ class CertReq:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CertReq.
+        r"""Sets the spec of this CertReq.
 
         :param spec: The spec of this CertReq.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateSpecCert`

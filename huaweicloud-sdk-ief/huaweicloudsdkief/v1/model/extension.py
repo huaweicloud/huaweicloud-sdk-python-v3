@@ -27,7 +27,7 @@ class Extension:
     }
 
     def __init__(self, key=None, value=None):
-        """Extension
+        r"""Extension
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Extension:
 
     @property
     def key(self):
-        """Gets the key of this Extension.
+        r"""Gets the key of this Extension.
 
         属性名，可填：node_name
 
@@ -61,7 +61,7 @@ class Extension:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Extension.
+        r"""Sets the key of this Extension.
 
         属性名，可填：node_name
 
@@ -72,7 +72,7 @@ class Extension:
 
     @property
     def value(self):
-        """Gets the value of this Extension.
+        r"""Gets the value of this Extension.
 
         属性值
 
@@ -83,7 +83,7 @@ class Extension:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Extension.
+        r"""Sets the value of this Extension.
 
         属性值
 

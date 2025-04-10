@@ -40,7 +40,7 @@ class DmsKafkaForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, addresses=None, topic=None, username=None, password=None, mechanism=None, security_protocol=None):
-        """DmsKafkaForwarding
+        r"""DmsKafkaForwarding
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class DmsKafkaForwarding:
 
     @property
     def region_name(self):
-        """Gets the region_name of this DmsKafkaForwarding.
+        r"""Gets the region_name of this DmsKafkaForwarding.
 
         **参数说明**：Kafka服务对应的region区域
 
@@ -100,7 +100,7 @@ class DmsKafkaForwarding:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this DmsKafkaForwarding.
+        r"""Sets the region_name of this DmsKafkaForwarding.
 
         **参数说明**：Kafka服务对应的region区域
 
@@ -111,7 +111,7 @@ class DmsKafkaForwarding:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DmsKafkaForwarding.
+        r"""Gets the project_id of this DmsKafkaForwarding.
 
         **参数说明**：Kafka服务对应的projectId信息
 
@@ -122,7 +122,7 @@ class DmsKafkaForwarding:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DmsKafkaForwarding.
+        r"""Sets the project_id of this DmsKafkaForwarding.
 
         **参数说明**：Kafka服务对应的projectId信息
 
@@ -133,7 +133,7 @@ class DmsKafkaForwarding:
 
     @property
     def addresses(self):
-        """Gets the addresses of this DmsKafkaForwarding.
+        r"""Gets the addresses of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka消息对应的地址列表
 
@@ -144,7 +144,7 @@ class DmsKafkaForwarding:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this DmsKafkaForwarding.
+        r"""Sets the addresses of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka消息对应的地址列表
 
@@ -155,7 +155,7 @@ class DmsKafkaForwarding:
 
     @property
     def topic(self):
-        """Gets the topic of this DmsKafkaForwarding.
+        r"""Gets the topic of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka消息关联的topic信息。
 
@@ -166,7 +166,7 @@ class DmsKafkaForwarding:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this DmsKafkaForwarding.
+        r"""Sets the topic of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka消息关联的topic信息。
 
@@ -177,7 +177,7 @@ class DmsKafkaForwarding:
 
     @property
     def username(self):
-        """Gets the username of this DmsKafkaForwarding.
+        r"""Gets the username of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka关联的用户名信息。
 
@@ -188,7 +188,7 @@ class DmsKafkaForwarding:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this DmsKafkaForwarding.
+        r"""Sets the username of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka关联的用户名信息。
 
@@ -199,7 +199,7 @@ class DmsKafkaForwarding:
 
     @property
     def password(self):
-        """Gets the password of this DmsKafkaForwarding.
+        r"""Gets the password of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka关联的密码信息。
 
@@ -210,7 +210,7 @@ class DmsKafkaForwarding:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this DmsKafkaForwarding.
+        r"""Sets the password of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka关联的密码信息。
 
@@ -221,7 +221,7 @@ class DmsKafkaForwarding:
 
     @property
     def mechanism(self):
-        """Gets the mechanism of this DmsKafkaForwarding.
+        r"""Gets the mechanism of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka关联的SASL认证机制。 **取值范围**： - PAAS：明文传输，此模式下为非数据加密传输模式，数据传输不安全，建议您使用更安全的数据加密模式。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。一种简单的用户名密码校验机制，在SASL_PLAINTEXT场景下，不建议使用。 - SCRAM-SHA-512：SASL/SCRAM-SHA-512模式。需要填写对应的用户名密码信息。采用哈希算法对用户名与密码生成凭证，进行身份校验的安全认证机制，比PLAIN机制安全性更高。
 
@@ -232,7 +232,7 @@ class DmsKafkaForwarding:
 
     @mechanism.setter
     def mechanism(self, mechanism):
-        """Sets the mechanism of this DmsKafkaForwarding.
+        r"""Sets the mechanism of this DmsKafkaForwarding.
 
         **参数说明**：转发kafka关联的SASL认证机制。 **取值范围**： - PAAS：明文传输，此模式下为非数据加密传输模式，数据传输不安全，建议您使用更安全的数据加密模式。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。一种简单的用户名密码校验机制，在SASL_PLAINTEXT场景下，不建议使用。 - SCRAM-SHA-512：SASL/SCRAM-SHA-512模式。需要填写对应的用户名密码信息。采用哈希算法对用户名与密码生成凭证，进行身份校验的安全认证机制，比PLAIN机制安全性更高。
 
@@ -243,7 +243,7 @@ class DmsKafkaForwarding:
 
     @property
     def security_protocol(self):
-        """Gets the security_protocol of this DmsKafkaForwarding.
+        r"""Gets the security_protocol of this DmsKafkaForwarding.
 
         **参数说明**：kafka传输安全协议，此字段不填默认为SASL_SSL。当mechanism为PAAS或不填时，该字段不生效。 **取值范围**： - SASL_SSL：采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持帐号密码认证，性能更好，建议mechanism使用SCRAM-SHA-512机制。
 
@@ -254,7 +254,7 @@ class DmsKafkaForwarding:
 
     @security_protocol.setter
     def security_protocol(self, security_protocol):
-        """Sets the security_protocol of this DmsKafkaForwarding.
+        r"""Sets the security_protocol of this DmsKafkaForwarding.
 
         **参数说明**：kafka传输安全协议，此字段不填默认为SASL_SSL。当mechanism为PAAS或不填时，该字段不生效。 **取值范围**： - SASL_SSL：采用SSL证书进行加密传输，支持帐号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持帐号密码认证，性能更好，建议mechanism使用SCRAM-SHA-512机制。
 

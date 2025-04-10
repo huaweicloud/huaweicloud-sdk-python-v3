@@ -26,7 +26,7 @@ class UpdateSwitchResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateSwitchResponse
+        r"""UpdateSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSwitchResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateSwitchResponse.
+        r"""Gets the result of this UpdateSwitchResponse.
 
         :return: The result of this UpdateSwitchResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateSwitchResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateSwitchResponse.
+        r"""Sets the result of this UpdateSwitchResponse.
 
         :param result: The result of this UpdateSwitchResponse.
         :type result: str

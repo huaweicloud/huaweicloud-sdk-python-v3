@@ -33,7 +33,7 @@ class UpdateResponsePropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, property_id=None, body=None):
-        """UpdateResponsePropertyRequest
+        r"""UpdateResponsePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateResponsePropertyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateResponsePropertyRequest.
+        r"""Gets the instance_id of this UpdateResponsePropertyRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class UpdateResponsePropertyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateResponsePropertyRequest.
+        r"""Sets the instance_id of this UpdateResponsePropertyRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class UpdateResponsePropertyRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateResponsePropertyRequest.
+        r"""Gets the service_id of this UpdateResponsePropertyRequest.
 
         服务ID
 
@@ -100,7 +100,7 @@ class UpdateResponsePropertyRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateResponsePropertyRequest.
+        r"""Sets the service_id of this UpdateResponsePropertyRequest.
 
         服务ID
 
@@ -111,7 +111,7 @@ class UpdateResponsePropertyRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this UpdateResponsePropertyRequest.
+        r"""Gets the command_id of this UpdateResponsePropertyRequest.
 
         命令ID
 
@@ -122,7 +122,7 @@ class UpdateResponsePropertyRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this UpdateResponsePropertyRequest.
+        r"""Sets the command_id of this UpdateResponsePropertyRequest.
 
         命令ID
 
@@ -133,7 +133,7 @@ class UpdateResponsePropertyRequest:
 
     @property
     def property_id(self):
-        """Gets the property_id of this UpdateResponsePropertyRequest.
+        r"""Gets the property_id of this UpdateResponsePropertyRequest.
 
         属性/请求属性/响应属性ID
 
@@ -144,7 +144,7 @@ class UpdateResponsePropertyRequest:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this UpdateResponsePropertyRequest.
+        r"""Sets the property_id of this UpdateResponsePropertyRequest.
 
         属性/请求属性/响应属性ID
 
@@ -155,7 +155,7 @@ class UpdateResponsePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResponsePropertyRequest.
+        r"""Gets the body of this UpdateResponsePropertyRequest.
 
         :return: The body of this UpdateResponsePropertyRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`
@@ -164,7 +164,7 @@ class UpdateResponsePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResponsePropertyRequest.
+        r"""Sets the body of this UpdateResponsePropertyRequest.
 
         :param body: The body of this UpdateResponsePropertyRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`

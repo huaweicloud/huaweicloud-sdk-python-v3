@@ -30,7 +30,7 @@ class ListSubscriptionUserResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, count=None, subscription_users=None):
-        """ListSubscriptionUserResponse
+        r"""ListSubscriptionUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubscriptionUserResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSubscriptionUserResponse.
+        r"""Gets the request_id of this ListSubscriptionUserResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListSubscriptionUserResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSubscriptionUserResponse.
+        r"""Sets the request_id of this ListSubscriptionUserResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListSubscriptionUserResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSubscriptionUserResponse.
+        r"""Gets the count of this ListSubscriptionUserResponse.
 
         订阅用户数量。
 
@@ -91,7 +91,7 @@ class ListSubscriptionUserResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSubscriptionUserResponse.
+        r"""Sets the count of this ListSubscriptionUserResponse.
 
         订阅用户数量。
 
@@ -102,7 +102,7 @@ class ListSubscriptionUserResponse(SdkResponse):
 
     @property
     def subscription_users(self):
-        """Gets the subscription_users of this ListSubscriptionUserResponse.
+        r"""Gets the subscription_users of this ListSubscriptionUserResponse.
 
         订阅用户信息列表。
 
@@ -113,7 +113,7 @@ class ListSubscriptionUserResponse(SdkResponse):
 
     @subscription_users.setter
     def subscription_users(self, subscription_users):
-        """Sets the subscription_users of this ListSubscriptionUserResponse.
+        r"""Sets the subscription_users of this ListSubscriptionUserResponse.
 
         订阅用户信息列表。
 

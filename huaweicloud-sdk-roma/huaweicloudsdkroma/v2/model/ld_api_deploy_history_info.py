@@ -37,7 +37,7 @@ class LdApiDeployHistoryInfo:
     }
 
     def __init__(self, id=None, ld_api_id=None, group_id=None, env_id=None, api_id=None, deploy_time=None, api_definition=None):
-        """LdApiDeployHistoryInfo
+        r"""LdApiDeployHistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def id(self):
-        """Gets the id of this LdApiDeployHistoryInfo.
+        r"""Gets the id of this LdApiDeployHistoryInfo.
 
         部署的编号
 
@@ -96,7 +96,7 @@ class LdApiDeployHistoryInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LdApiDeployHistoryInfo.
+        r"""Sets the id of this LdApiDeployHistoryInfo.
 
         部署的编号
 
@@ -107,7 +107,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this LdApiDeployHistoryInfo.
+        r"""Gets the ld_api_id of this LdApiDeployHistoryInfo.
 
         部署的后端API编号
 
@@ -118,7 +118,7 @@ class LdApiDeployHistoryInfo:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this LdApiDeployHistoryInfo.
+        r"""Sets the ld_api_id of this LdApiDeployHistoryInfo.
 
         部署的后端API编号
 
@@ -129,7 +129,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this LdApiDeployHistoryInfo.
+        r"""Gets the group_id of this LdApiDeployHistoryInfo.
 
         部署的前端API分组编号
 
@@ -140,7 +140,7 @@ class LdApiDeployHistoryInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this LdApiDeployHistoryInfo.
+        r"""Sets the group_id of this LdApiDeployHistoryInfo.
 
         部署的前端API分组编号
 
@@ -151,7 +151,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this LdApiDeployHistoryInfo.
+        r"""Gets the env_id of this LdApiDeployHistoryInfo.
 
         部署的环境编号
 
@@ -162,7 +162,7 @@ class LdApiDeployHistoryInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this LdApiDeployHistoryInfo.
+        r"""Sets the env_id of this LdApiDeployHistoryInfo.
 
         部署的环境编号
 
@@ -173,7 +173,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this LdApiDeployHistoryInfo.
+        r"""Gets the api_id of this LdApiDeployHistoryInfo.
 
         部署的前端API编号
 
@@ -184,7 +184,7 @@ class LdApiDeployHistoryInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this LdApiDeployHistoryInfo.
+        r"""Sets the api_id of this LdApiDeployHistoryInfo.
 
         部署的前端API编号
 
@@ -195,7 +195,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def deploy_time(self):
-        """Gets the deploy_time of this LdApiDeployHistoryInfo.
+        r"""Gets the deploy_time of this LdApiDeployHistoryInfo.
 
         部署时间
 
@@ -206,7 +206,7 @@ class LdApiDeployHistoryInfo:
 
     @deploy_time.setter
     def deploy_time(self, deploy_time):
-        """Sets the deploy_time of this LdApiDeployHistoryInfo.
+        r"""Sets the deploy_time of this LdApiDeployHistoryInfo.
 
         部署时间
 
@@ -217,7 +217,7 @@ class LdApiDeployHistoryInfo:
 
     @property
     def api_definition(self):
-        """Gets the api_definition of this LdApiDeployHistoryInfo.
+        r"""Gets the api_definition of this LdApiDeployHistoryInfo.
 
         :return: The api_definition of this LdApiDeployHistoryInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.LdApiInfo`
@@ -226,7 +226,7 @@ class LdApiDeployHistoryInfo:
 
     @api_definition.setter
     def api_definition(self, api_definition):
-        """Sets the api_definition of this LdApiDeployHistoryInfo.
+        r"""Sets the api_definition of this LdApiDeployHistoryInfo.
 
         :param api_definition: The api_definition of this LdApiDeployHistoryInfo.
         :type api_definition: :class:`huaweicloudsdkroma.v2.LdApiInfo`

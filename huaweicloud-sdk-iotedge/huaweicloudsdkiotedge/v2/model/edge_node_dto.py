@@ -43,7 +43,7 @@ class EdgeNodeDTO:
     }
 
     def __init__(self, edge_node_id=None, name=None, state=None, instance_id=None, space_id=None, type=None, resource_ids=None, resource_spec_types=None, ips=None, create_time=None):
-        """EdgeNodeDTO
+        r"""EdgeNodeDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class EdgeNodeDTO:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this EdgeNodeDTO.
+        r"""Gets the edge_node_id of this EdgeNodeDTO.
 
         边缘节点ID
 
@@ -117,7 +117,7 @@ class EdgeNodeDTO:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this EdgeNodeDTO.
+        r"""Sets the edge_node_id of this EdgeNodeDTO.
 
         边缘节点ID
 
@@ -128,7 +128,7 @@ class EdgeNodeDTO:
 
     @property
     def name(self):
-        """Gets the name of this EdgeNodeDTO.
+        r"""Gets the name of this EdgeNodeDTO.
 
         边缘节点名称
 
@@ -139,7 +139,7 @@ class EdgeNodeDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeNodeDTO.
+        r"""Sets the name of this EdgeNodeDTO.
 
         边缘节点名称
 
@@ -150,7 +150,7 @@ class EdgeNodeDTO:
 
     @property
     def state(self):
-        """Gets the state of this EdgeNodeDTO.
+        r"""Gets the state of this EdgeNodeDTO.
 
         边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
@@ -161,7 +161,7 @@ class EdgeNodeDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this EdgeNodeDTO.
+        r"""Sets the state of this EdgeNodeDTO.
 
         边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
@@ -172,7 +172,7 @@ class EdgeNodeDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this EdgeNodeDTO.
+        r"""Gets the instance_id of this EdgeNodeDTO.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -183,7 +183,7 @@ class EdgeNodeDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this EdgeNodeDTO.
+        r"""Sets the instance_id of this EdgeNodeDTO.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -194,7 +194,7 @@ class EdgeNodeDTO:
 
     @property
     def space_id(self):
-        """Gets the space_id of this EdgeNodeDTO.
+        r"""Gets the space_id of this EdgeNodeDTO.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -205,7 +205,7 @@ class EdgeNodeDTO:
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this EdgeNodeDTO.
+        r"""Sets the space_id of this EdgeNodeDTO.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -216,7 +216,7 @@ class EdgeNodeDTO:
 
     @property
     def type(self):
-        """Gets the type of this EdgeNodeDTO.
+        r"""Gets the type of this EdgeNodeDTO.
 
         节点所属资源类型：advanced|standard
 
@@ -227,7 +227,7 @@ class EdgeNodeDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EdgeNodeDTO.
+        r"""Sets the type of this EdgeNodeDTO.
 
         节点所属资源类型：advanced|standard
 
@@ -238,7 +238,7 @@ class EdgeNodeDTO:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this EdgeNodeDTO.
+        r"""Gets the resource_ids of this EdgeNodeDTO.
 
         节点所购买的资源类型的列表
 
@@ -249,7 +249,7 @@ class EdgeNodeDTO:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this EdgeNodeDTO.
+        r"""Sets the resource_ids of this EdgeNodeDTO.
 
         节点所购买的资源类型的列表
 
@@ -260,7 +260,7 @@ class EdgeNodeDTO:
 
     @property
     def resource_spec_types(self):
-        """Gets the resource_spec_types of this EdgeNodeDTO.
+        r"""Gets the resource_spec_types of this EdgeNodeDTO.
 
         节点所购买的资源类型的列表
 
@@ -271,7 +271,7 @@ class EdgeNodeDTO:
 
     @resource_spec_types.setter
     def resource_spec_types(self, resource_spec_types):
-        """Sets the resource_spec_types of this EdgeNodeDTO.
+        r"""Sets the resource_spec_types of this EdgeNodeDTO.
 
         节点所购买的资源类型的列表
 
@@ -282,7 +282,7 @@ class EdgeNodeDTO:
 
     @property
     def ips(self):
-        """Gets the ips of this EdgeNodeDTO.
+        r"""Gets the ips of this EdgeNodeDTO.
 
         边缘节点ip列表
 
@@ -293,7 +293,7 @@ class EdgeNodeDTO:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this EdgeNodeDTO.
+        r"""Sets the ips of this EdgeNodeDTO.
 
         边缘节点ip列表
 
@@ -304,7 +304,7 @@ class EdgeNodeDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EdgeNodeDTO.
+        r"""Gets the create_time of this EdgeNodeDTO.
 
         边缘节点创建时间
 
@@ -315,7 +315,7 @@ class EdgeNodeDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EdgeNodeDTO.
+        r"""Sets the create_time of this EdgeNodeDTO.
 
         边缘节点创建时间
 

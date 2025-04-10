@@ -28,7 +28,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
     }
 
     def __init__(self, security_group_rules=None, count=None):
-        """ListSecurityGroupRulesResponse
+        r"""ListSecurityGroupRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this ListSecurityGroupRulesResponse.
+        r"""Gets the security_group_rules of this ListSecurityGroupRulesResponse.
 
         安全组规则列表对象。
 
@@ -62,7 +62,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this ListSecurityGroupRulesResponse.
+        r"""Sets the security_group_rules of this ListSecurityGroupRulesResponse.
 
         安全组规则列表对象。
 
@@ -73,7 +73,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSecurityGroupRulesResponse.
+        r"""Gets the count of this ListSecurityGroupRulesResponse.
 
         安全组规则数目。
 
@@ -84,7 +84,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSecurityGroupRulesResponse.
+        r"""Sets the count of this ListSecurityGroupRulesResponse.
 
         安全组规则数目。
 

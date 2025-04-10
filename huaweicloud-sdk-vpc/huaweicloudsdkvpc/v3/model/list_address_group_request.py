@@ -37,7 +37,7 @@ class ListAddressGroupRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, ip_version=None, description=None, enterprise_project_id=None):
-        """ListAddressGroupRequest
+        r"""ListAddressGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListAddressGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAddressGroupRequest.
+        r"""Gets the limit of this ListAddressGroupRequest.
 
         功能说明：每页返回的个数 取值范围：0~2000
 
@@ -96,7 +96,7 @@ class ListAddressGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAddressGroupRequest.
+        r"""Sets the limit of this ListAddressGroupRequest.
 
         功能说明：每页返回的个数 取值范围：0~2000
 
@@ -107,7 +107,7 @@ class ListAddressGroupRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAddressGroupRequest.
+        r"""Gets the marker of this ListAddressGroupRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -118,7 +118,7 @@ class ListAddressGroupRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAddressGroupRequest.
+        r"""Sets the marker of this ListAddressGroupRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -129,7 +129,7 @@ class ListAddressGroupRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListAddressGroupRequest.
+        r"""Gets the id of this ListAddressGroupRequest.
 
         地址组唯一标识，填写后接口按照id进行过滤，支持多ID同时过滤
 
@@ -140,7 +140,7 @@ class ListAddressGroupRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAddressGroupRequest.
+        r"""Sets the id of this ListAddressGroupRequest.
 
         地址组唯一标识，填写后接口按照id进行过滤，支持多ID同时过滤
 
@@ -151,7 +151,7 @@ class ListAddressGroupRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAddressGroupRequest.
+        r"""Gets the name of this ListAddressGroupRequest.
 
         地址组名称，填写后按照名称进行过滤，支持多名称同时过滤
 
@@ -162,7 +162,7 @@ class ListAddressGroupRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAddressGroupRequest.
+        r"""Sets the name of this ListAddressGroupRequest.
 
         地址组名称，填写后按照名称进行过滤，支持多名称同时过滤
 
@@ -173,7 +173,7 @@ class ListAddressGroupRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListAddressGroupRequest.
+        r"""Gets the ip_version of this ListAddressGroupRequest.
 
         IP地址组ip版本，当前只支持ipv4，填写后按照ip版本进行过滤
 
@@ -184,7 +184,7 @@ class ListAddressGroupRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListAddressGroupRequest.
+        r"""Sets the ip_version of this ListAddressGroupRequest.
 
         IP地址组ip版本，当前只支持ipv4，填写后按照ip版本进行过滤
 
@@ -195,7 +195,7 @@ class ListAddressGroupRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListAddressGroupRequest.
+        r"""Gets the description of this ListAddressGroupRequest.
 
         地址组描述信息，填写后按照地址组描述信息过滤，支持多描述同时过滤
 
@@ -206,7 +206,7 @@ class ListAddressGroupRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListAddressGroupRequest.
+        r"""Sets the description of this ListAddressGroupRequest.
 
         地址组描述信息，填写后按照地址组描述信息过滤，支持多描述同时过滤
 
@@ -217,7 +217,7 @@ class ListAddressGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAddressGroupRequest.
+        r"""Gets the enterprise_project_id of this ListAddressGroupRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的IP地址组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的IP地址组，请传参all_granted_eps。
 
@@ -228,7 +228,7 @@ class ListAddressGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAddressGroupRequest.
+        r"""Sets the enterprise_project_id of this ListAddressGroupRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的IP地址组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的IP地址组，请传参all_granted_eps。
 

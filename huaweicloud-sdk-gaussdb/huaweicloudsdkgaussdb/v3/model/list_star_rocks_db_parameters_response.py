@@ -26,7 +26,7 @@ class ListStarRocksDbParametersResponse(SdkResponse):
     }
 
     def __init__(self, db_parameters=None):
-        """ListStarRocksDbParametersResponse
+        r"""ListStarRocksDbParametersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStarRocksDbParametersResponse(SdkResponse):
 
     @property
     def db_parameters(self):
-        """Gets the db_parameters of this ListStarRocksDbParametersResponse.
+        r"""Gets the db_parameters of this ListStarRocksDbParametersResponse.
 
         库参数信息。
 
@@ -55,7 +55,7 @@ class ListStarRocksDbParametersResponse(SdkResponse):
 
     @db_parameters.setter
     def db_parameters(self, db_parameters):
-        """Sets the db_parameters of this ListStarRocksDbParametersResponse.
+        r"""Sets the db_parameters of this ListStarRocksDbParametersResponse.
 
         库参数信息。
 

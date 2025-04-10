@@ -49,7 +49,7 @@ class TriggerHistories:
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, created_at=None, creator_name=None, detail=None, result=None, tag=None):
-        """TriggerHistories
+        r"""TriggerHistories
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class TriggerHistories:
 
     @property
     def action(self):
-        """Gets the action of this TriggerHistories.
+        r"""Gets the action of this TriggerHistories.
 
         触发动作，update
 
@@ -125,7 +125,7 @@ class TriggerHistories:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this TriggerHistories.
+        r"""Sets the action of this TriggerHistories.
 
         触发动作，update
 
@@ -136,7 +136,7 @@ class TriggerHistories:
 
     @property
     def app_type(self):
-        """Gets the app_type of this TriggerHistories.
+        r"""Gets the app_type of this TriggerHistories.
 
         应用类型，deployments、statefulsets
 
@@ -147,7 +147,7 @@ class TriggerHistories:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this TriggerHistories.
+        r"""Sets the app_type of this TriggerHistories.
 
         应用类型，deployments、statefulsets
 
@@ -158,7 +158,7 @@ class TriggerHistories:
 
     @property
     def application(self):
-        """Gets the application of this TriggerHistories.
+        r"""Gets the application of this TriggerHistories.
 
         应用名
 
@@ -169,7 +169,7 @@ class TriggerHistories:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this TriggerHistories.
+        r"""Sets the application of this TriggerHistories.
 
         应用名
 
@@ -180,7 +180,7 @@ class TriggerHistories:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this TriggerHistories.
+        r"""Gets the cluster_id of this TriggerHistories.
 
         集群ID（cci时为空）
 
@@ -191,7 +191,7 @@ class TriggerHistories:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this TriggerHistories.
+        r"""Sets the cluster_id of this TriggerHistories.
 
         集群ID（cci时为空）
 
@@ -202,7 +202,7 @@ class TriggerHistories:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this TriggerHistories.
+        r"""Gets the cluster_name of this TriggerHistories.
 
         集群名（cci时为空）
 
@@ -213,7 +213,7 @@ class TriggerHistories:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this TriggerHistories.
+        r"""Sets the cluster_name of this TriggerHistories.
 
         集群名（cci时为空）
 
@@ -224,7 +224,7 @@ class TriggerHistories:
 
     @property
     def cluster_ns(self):
-        """Gets the cluster_ns of this TriggerHistories.
+        r"""Gets the cluster_ns of this TriggerHistories.
 
         应用名所在的namespace
 
@@ -235,7 +235,7 @@ class TriggerHistories:
 
     @cluster_ns.setter
     def cluster_ns(self, cluster_ns):
-        """Sets the cluster_ns of this TriggerHistories.
+        r"""Sets the cluster_ns of this TriggerHistories.
 
         应用名所在的namespace
 
@@ -246,7 +246,7 @@ class TriggerHistories:
 
     @property
     def condition(self):
-        """Gets the condition of this TriggerHistories.
+        r"""Gets the condition of this TriggerHistories.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -257,7 +257,7 @@ class TriggerHistories:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this TriggerHistories.
+        r"""Sets the condition of this TriggerHistories.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -268,7 +268,7 @@ class TriggerHistories:
 
     @property
     def container(self):
-        """Gets the container of this TriggerHistories.
+        r"""Gets the container of this TriggerHistories.
 
         需更新的container名，默认为所有container
 
@@ -279,7 +279,7 @@ class TriggerHistories:
 
     @container.setter
     def container(self, container):
-        """Sets the container of this TriggerHistories.
+        r"""Sets the container of this TriggerHistories.
 
         需更新的container名，默认为所有container
 
@@ -290,7 +290,7 @@ class TriggerHistories:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TriggerHistories.
+        r"""Gets the created_at of this TriggerHistories.
 
         创建时间
 
@@ -301,7 +301,7 @@ class TriggerHistories:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TriggerHistories.
+        r"""Sets the created_at of this TriggerHistories.
 
         创建时间
 
@@ -312,7 +312,7 @@ class TriggerHistories:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TriggerHistories.
+        r"""Gets the creator_name of this TriggerHistories.
 
         创建人
 
@@ -323,7 +323,7 @@ class TriggerHistories:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TriggerHistories.
+        r"""Sets the creator_name of this TriggerHistories.
 
         创建人
 
@@ -334,7 +334,7 @@ class TriggerHistories:
 
     @property
     def detail(self):
-        """Gets the detail of this TriggerHistories.
+        r"""Gets the detail of this TriggerHistories.
 
         详情
 
@@ -345,7 +345,7 @@ class TriggerHistories:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this TriggerHistories.
+        r"""Sets the detail of this TriggerHistories.
 
         详情
 
@@ -356,7 +356,7 @@ class TriggerHistories:
 
     @property
     def result(self):
-        """Gets the result of this TriggerHistories.
+        r"""Gets the result of this TriggerHistories.
 
         更新结果，success、failed
 
@@ -367,7 +367,7 @@ class TriggerHistories:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this TriggerHistories.
+        r"""Sets the result of this TriggerHistories.
 
         更新结果，success、failed
 
@@ -378,7 +378,7 @@ class TriggerHistories:
 
     @property
     def tag(self):
-        """Gets the tag of this TriggerHistories.
+        r"""Gets the tag of this TriggerHistories.
 
         触发的版本号
 
@@ -389,7 +389,7 @@ class TriggerHistories:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this TriggerHistories.
+        r"""Sets the tag of this TriggerHistories.
 
         触发的版本号
 

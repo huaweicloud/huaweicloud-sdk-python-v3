@@ -29,7 +29,7 @@ class Retry:
     }
 
     def __init__(self, name=None, delay=None, max_attempts=None):
-        """Retry
+        r"""Retry
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Retry:
 
     @property
     def name(self):
-        """Gets the name of this Retry.
+        r"""Gets the name of this Retry.
 
         重试策略名称，在单个流程中，名称需要唯一
 
@@ -67,7 +67,7 @@ class Retry:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Retry.
+        r"""Sets the name of this Retry.
 
         重试策略名称，在单个流程中，名称需要唯一
 
@@ -78,7 +78,7 @@ class Retry:
 
     @property
     def delay(self):
-        """Gets the delay of this Retry.
+        r"""Gets the delay of this Retry.
 
         重试间隔，单位：秒。若不传，默认为1
 
@@ -89,7 +89,7 @@ class Retry:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this Retry.
+        r"""Sets the delay of this Retry.
 
         重试间隔，单位：秒。若不传，默认为1
 
@@ -100,7 +100,7 @@ class Retry:
 
     @property
     def max_attempts(self):
-        """Gets the max_attempts of this Retry.
+        r"""Gets the max_attempts of this Retry.
 
         最大重试次数，。若不传，默认为3
 
@@ -111,7 +111,7 @@ class Retry:
 
     @max_attempts.setter
     def max_attempts(self, max_attempts):
-        """Sets the max_attempts of this Retry.
+        r"""Sets the max_attempts of this Retry.
 
         最大重试次数，。若不传，默认为3
 

@@ -24,7 +24,7 @@ class UpdatePublishTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePublishTemplateResponse
+        r"""UpdatePublishTemplateResponse
 
         The model defined in huaweicloud sdk
 

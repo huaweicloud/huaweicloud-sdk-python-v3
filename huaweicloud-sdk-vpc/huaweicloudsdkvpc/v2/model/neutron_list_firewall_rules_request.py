@@ -37,7 +37,7 @@ class NeutronListFirewallRulesRequest:
     }
 
     def __init__(self, marker=None, limit=None, id=None, name=None, description=None, action=None, tenant_id=None):
-        """NeutronListFirewallRulesRequest
+        r"""NeutronListFirewallRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListFirewallRulesRequest.
+        r"""Gets the marker of this NeutronListFirewallRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -96,7 +96,7 @@ class NeutronListFirewallRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListFirewallRulesRequest.
+        r"""Sets the marker of this NeutronListFirewallRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -107,7 +107,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListFirewallRulesRequest.
+        r"""Gets the limit of this NeutronListFirewallRulesRequest.
 
         每页返回的个数
 
@@ -118,7 +118,7 @@ class NeutronListFirewallRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListFirewallRulesRequest.
+        r"""Sets the limit of this NeutronListFirewallRulesRequest.
 
         每页返回的个数
 
@@ -129,7 +129,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListFirewallRulesRequest.
+        r"""Gets the id of this NeutronListFirewallRulesRequest.
 
         使用网络ACL规则ID过滤网络ACL规则
 
@@ -140,7 +140,7 @@ class NeutronListFirewallRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListFirewallRulesRequest.
+        r"""Sets the id of this NeutronListFirewallRulesRequest.
 
         使用网络ACL规则ID过滤网络ACL规则
 
@@ -151,7 +151,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this NeutronListFirewallRulesRequest.
+        r"""Gets the name of this NeutronListFirewallRulesRequest.
 
         使用网络ACL规则name过滤网络ACL规则
 
@@ -162,7 +162,7 @@ class NeutronListFirewallRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronListFirewallRulesRequest.
+        r"""Sets the name of this NeutronListFirewallRulesRequest.
 
         使用网络ACL规则name过滤网络ACL规则
 
@@ -173,7 +173,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def description(self):
-        """Gets the description of this NeutronListFirewallRulesRequest.
+        r"""Gets the description of this NeutronListFirewallRulesRequest.
 
         使用网络ACL规则的description过滤网络ACL规则
 
@@ -184,7 +184,7 @@ class NeutronListFirewallRulesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronListFirewallRulesRequest.
+        r"""Sets the description of this NeutronListFirewallRulesRequest.
 
         使用网络ACL规则的description过滤网络ACL规则
 
@@ -195,7 +195,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def action(self):
-        """Gets the action of this NeutronListFirewallRulesRequest.
+        r"""Gets the action of this NeutronListFirewallRulesRequest.
 
         使用action过滤查询网络ACL规则
 
@@ -206,7 +206,7 @@ class NeutronListFirewallRulesRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this NeutronListFirewallRulesRequest.
+        r"""Sets the action of this NeutronListFirewallRulesRequest.
 
         使用action过滤查询网络ACL规则
 
@@ -217,7 +217,7 @@ class NeutronListFirewallRulesRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListFirewallRulesRequest.
+        r"""Gets the tenant_id of this NeutronListFirewallRulesRequest.
 
         使用tenant_id过滤查询网络ACL规则
 
@@ -228,7 +228,7 @@ class NeutronListFirewallRulesRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListFirewallRulesRequest.
+        r"""Sets the tenant_id of this NeutronListFirewallRulesRequest.
 
         使用tenant_id过滤查询网络ACL规则
 

@@ -27,7 +27,7 @@ class Area:
     }
 
     def __init__(self):
-        """Area
+        r"""Area
 
         The model defined in huaweicloud sdk
 

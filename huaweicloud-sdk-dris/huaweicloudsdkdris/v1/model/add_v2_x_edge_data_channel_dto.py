@@ -27,7 +27,7 @@ class AddV2XEdgeDataChannelDTO:
     }
 
     def __init__(self, platform_type=None, platform_para=None):
-        """AddV2XEdgeDataChannelDTO
+        r"""AddV2XEdgeDataChannelDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddV2XEdgeDataChannelDTO:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this AddV2XEdgeDataChannelDTO.
+        r"""Gets the platform_type of this AddV2XEdgeDataChannelDTO.
 
         **参数说明**：平台类型。  **取值范围**： - DRIS：华为路网数字化平台 - LITONG：利通 - ZHONGQIYAN：中汽研
 
@@ -60,7 +60,7 @@ class AddV2XEdgeDataChannelDTO:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this AddV2XEdgeDataChannelDTO.
+        r"""Sets the platform_type of this AddV2XEdgeDataChannelDTO.
 
         **参数说明**：平台类型。  **取值范围**： - DRIS：华为路网数字化平台 - LITONG：利通 - ZHONGQIYAN：中汽研
 
@@ -71,7 +71,7 @@ class AddV2XEdgeDataChannelDTO:
 
     @property
     def platform_para(self):
-        """Gets the platform_para of this AddV2XEdgeDataChannelDTO.
+        r"""Gets the platform_para of this AddV2XEdgeDataChannelDTO.
 
         :return: The platform_para of this AddV2XEdgeDataChannelDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.PlatformPara`
@@ -80,7 +80,7 @@ class AddV2XEdgeDataChannelDTO:
 
     @platform_para.setter
     def platform_para(self, platform_para):
-        """Sets the platform_para of this AddV2XEdgeDataChannelDTO.
+        r"""Sets the platform_para of this AddV2XEdgeDataChannelDTO.
 
         :param platform_para: The platform_para of this AddV2XEdgeDataChannelDTO.
         :type platform_para: :class:`huaweicloudsdkdris.v1.PlatformPara`

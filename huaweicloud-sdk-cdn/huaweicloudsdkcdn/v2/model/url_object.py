@@ -39,7 +39,7 @@ class UrlObject:
     }
 
     def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, task_type=None, fail_classify=None, fail_desc=None):
-        """UrlObject
+        r"""UrlObject
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UrlObject:
 
     @property
     def id(self):
-        """Gets the id of this UrlObject.
+        r"""Gets the id of this UrlObject.
 
         url的id
 
@@ -103,7 +103,7 @@ class UrlObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UrlObject.
+        r"""Sets the id of this UrlObject.
 
         url的id
 
@@ -114,7 +114,7 @@ class UrlObject:
 
     @property
     def url(self):
-        """Gets the url of this UrlObject.
+        r"""Gets the url of this UrlObject.
 
         url的地址。
 
@@ -125,7 +125,7 @@ class UrlObject:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UrlObject.
+        r"""Sets the url of this UrlObject.
 
         url的地址。
 
@@ -136,7 +136,7 @@ class UrlObject:
 
     @property
     def status(self):
-        """Gets the status of this UrlObject.
+        r"""Gets the status of this UrlObject.
 
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
@@ -147,7 +147,7 @@ class UrlObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlObject.
+        r"""Sets the status of this UrlObject.
 
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
@@ -158,7 +158,7 @@ class UrlObject:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UrlObject.
+        r"""Gets the create_time of this UrlObject.
 
         url创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -169,7 +169,7 @@ class UrlObject:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UrlObject.
+        r"""Sets the create_time of this UrlObject.
 
         url创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -180,7 +180,7 @@ class UrlObject:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UrlObject.
+        r"""Gets the task_id of this UrlObject.
 
         任务id。
 
@@ -191,7 +191,7 @@ class UrlObject:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UrlObject.
+        r"""Sets the task_id of this UrlObject.
 
         任务id。
 
@@ -202,7 +202,7 @@ class UrlObject:
 
     @property
     def task_type(self):
-        """Gets the task_type of this UrlObject.
+        r"""Gets the task_type of this UrlObject.
 
         任务的类型， 其值可以为REFRESH：刷新任务、PREHEATING：预热任务、REFRESH_AFTER_PREHEATING：预热后刷新
 
@@ -213,7 +213,7 @@ class UrlObject:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this UrlObject.
+        r"""Sets the task_type of this UrlObject.
 
         任务的类型， 其值可以为REFRESH：刷新任务、PREHEATING：预热任务、REFRESH_AFTER_PREHEATING：预热后刷新
 
@@ -224,7 +224,7 @@ class UrlObject:
 
     @property
     def fail_classify(self):
-        """Gets the fail_classify of this UrlObject.
+        r"""Gets the fail_classify of this UrlObject.
 
         失败原因，url状态为failed时返回。   - ORIGIN_ERROR：源站错误。   - INNER_ERROR：内部错误。   - UNKNOWN_ERROR：未知错误。
 
@@ -235,7 +235,7 @@ class UrlObject:
 
     @fail_classify.setter
     def fail_classify(self, fail_classify):
-        """Sets the fail_classify of this UrlObject.
+        r"""Sets the fail_classify of this UrlObject.
 
         失败原因，url状态为failed时返回。   - ORIGIN_ERROR：源站错误。   - INNER_ERROR：内部错误。   - UNKNOWN_ERROR：未知错误。
 
@@ -246,7 +246,7 @@ class UrlObject:
 
     @property
     def fail_desc(self):
-        """Gets the fail_desc of this UrlObject.
+        r"""Gets the fail_desc of this UrlObject.
 
         刷新预热失败描述。
 
@@ -257,7 +257,7 @@ class UrlObject:
 
     @fail_desc.setter
     def fail_desc(self, fail_desc):
-        """Sets the fail_desc of this UrlObject.
+        r"""Sets the fail_desc of this UrlObject.
 
         刷新预热失败描述。
 

@@ -39,7 +39,7 @@ class CreateKeyRequestBody:
     }
 
     def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None, keystore_id=None):
-        """CreateKeyRequestBody
+        r"""CreateKeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CreateKeyRequestBody:
 
     @property
     def key_alias(self):
-        """Gets the key_alias of this CreateKeyRequestBody.
+        r"""Gets the key_alias of this CreateKeyRequestBody.
 
         非默认主密钥别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与系统服务创建的默认主密钥别名重名。
 
@@ -102,7 +102,7 @@ class CreateKeyRequestBody:
 
     @key_alias.setter
     def key_alias(self, key_alias):
-        """Sets the key_alias of this CreateKeyRequestBody.
+        r"""Sets the key_alias of this CreateKeyRequestBody.
 
         非默认主密钥别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与系统服务创建的默认主密钥别名重名。
 
@@ -113,7 +113,7 @@ class CreateKeyRequestBody:
 
     @property
     def key_spec(self):
-        """Gets the key_spec of this CreateKeyRequestBody.
+        r"""Gets the key_spec of this CreateKeyRequestBody.
 
         密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 
@@ -124,7 +124,7 @@ class CreateKeyRequestBody:
 
     @key_spec.setter
     def key_spec(self, key_spec):
-        """Sets the key_spec of this CreateKeyRequestBody.
+        r"""Sets the key_spec of this CreateKeyRequestBody.
 
         密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 
@@ -135,7 +135,7 @@ class CreateKeyRequestBody:
 
     @property
     def key_usage(self):
-        """Gets the key_usage of this CreateKeyRequestBody.
+        r"""Gets the key_usage of this CreateKeyRequestBody.
 
         密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
 
@@ -146,7 +146,7 @@ class CreateKeyRequestBody:
 
     @key_usage.setter
     def key_usage(self, key_usage):
-        """Sets the key_usage of this CreateKeyRequestBody.
+        r"""Sets the key_usage of this CreateKeyRequestBody.
 
         密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
 
@@ -157,7 +157,7 @@ class CreateKeyRequestBody:
 
     @property
     def key_description(self):
-        """Gets the key_description of this CreateKeyRequestBody.
+        r"""Gets the key_description of this CreateKeyRequestBody.
 
         密钥描述，取值0到255字符。
 
@@ -168,7 +168,7 @@ class CreateKeyRequestBody:
 
     @key_description.setter
     def key_description(self, key_description):
-        """Sets the key_description of this CreateKeyRequestBody.
+        r"""Sets the key_description of this CreateKeyRequestBody.
 
         密钥描述，取值0到255字符。
 
@@ -179,7 +179,7 @@ class CreateKeyRequestBody:
 
     @property
     def origin(self):
-        """Gets the origin of this CreateKeyRequestBody.
+        r"""Gets the origin of this CreateKeyRequestBody.
 
         密钥来源，默认为“kms”，枚举如下： - kms：表示密钥材料由kms生成。 - external：表示密钥材料由外部导入。
 
@@ -190,7 +190,7 @@ class CreateKeyRequestBody:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this CreateKeyRequestBody.
+        r"""Sets the origin of this CreateKeyRequestBody.
 
         密钥来源，默认为“kms”，枚举如下： - kms：表示密钥材料由kms生成。 - external：表示密钥材料由外部导入。
 
@@ -201,7 +201,7 @@ class CreateKeyRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateKeyRequestBody.
+        r"""Gets the enterprise_project_id of this CreateKeyRequestBody.
 
         企业多项目ID。 - 用户未开通企业多项目时，不需要输入该字段。 - 用户开通企业多项目时，创建资源可以输入该字段。若用户户不输入该字段，默认创建属于默认企业多项目ID（ID为“0”）的资源。 注意：若用户没有默认企业多项目ID（ID为“0”）下的创建权限，则接口报错。
 
@@ -212,7 +212,7 @@ class CreateKeyRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateKeyRequestBody.
+        r"""Sets the enterprise_project_id of this CreateKeyRequestBody.
 
         企业多项目ID。 - 用户未开通企业多项目时，不需要输入该字段。 - 用户开通企业多项目时，创建资源可以输入该字段。若用户户不输入该字段，默认创建属于默认企业多项目ID（ID为“0”）的资源。 注意：若用户没有默认企业多项目ID（ID为“0”）下的创建权限，则接口报错。
 
@@ -223,7 +223,7 @@ class CreateKeyRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CreateKeyRequestBody.
+        r"""Gets the sequence of this CreateKeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -234,7 +234,7 @@ class CreateKeyRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CreateKeyRequestBody.
+        r"""Sets the sequence of this CreateKeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -245,7 +245,7 @@ class CreateKeyRequestBody:
 
     @property
     def keystore_id(self):
-        """Gets the keystore_id of this CreateKeyRequestBody.
+        r"""Gets the keystore_id of this CreateKeyRequestBody.
 
         密钥库ID，默认使用KMS默认密钥库
 
@@ -256,7 +256,7 @@ class CreateKeyRequestBody:
 
     @keystore_id.setter
     def keystore_id(self, keystore_id):
-        """Sets the keystore_id of this CreateKeyRequestBody.
+        r"""Sets the keystore_id of this CreateKeyRequestBody.
 
         密钥库ID，默认使用KMS默认密钥库
 

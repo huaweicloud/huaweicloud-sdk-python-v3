@@ -31,7 +31,7 @@ class AppCreate:
     }
 
     def __init__(self, name=None, remark=None, app_key=None, app_secret=None):
-        """AppCreate
+        r"""AppCreate
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AppCreate:
 
     @property
     def name(self):
-        """Gets the name of this AppCreate.
+        r"""Gets the name of this AppCreate.
 
         APP的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -74,7 +74,7 @@ class AppCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppCreate.
+        r"""Sets the name of this AppCreate.
 
         APP的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -85,7 +85,7 @@ class AppCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this AppCreate.
+        r"""Gets the remark of this AppCreate.
 
         APP描述。字符长度不能大于255。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -96,7 +96,7 @@ class AppCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AppCreate.
+        r"""Sets the remark of this AppCreate.
 
         APP描述。字符长度不能大于255。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -107,7 +107,7 @@ class AppCreate:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AppCreate.
+        r"""Gets the app_key of this AppCreate.
 
         APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
 
@@ -118,7 +118,7 @@ class AppCreate:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AppCreate.
+        r"""Sets the app_key of this AppCreate.
 
         APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
 
@@ -129,7 +129,7 @@ class AppCreate:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this AppCreate.
+        r"""Gets the app_secret of this AppCreate.
 
         密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。
 
@@ -140,7 +140,7 @@ class AppCreate:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this AppCreate.
+        r"""Sets the app_secret of this AppCreate.
 
         密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。
 

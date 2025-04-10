@@ -31,7 +31,7 @@ class UpdateReleaseRequest:
     }
 
     def __init__(self, name=None, namespace=None, cluster_id=None, body=None):
-        """UpdateReleaseRequest
+        r"""UpdateReleaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateReleaseRequest:
 
     @property
     def name(self):
-        """Gets the name of this UpdateReleaseRequest.
+        r"""Gets the name of this UpdateReleaseRequest.
 
         模板实例名称
 
@@ -72,7 +72,7 @@ class UpdateReleaseRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateReleaseRequest.
+        r"""Sets the name of this UpdateReleaseRequest.
 
         模板实例名称
 
@@ -83,7 +83,7 @@ class UpdateReleaseRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateReleaseRequest.
+        r"""Gets the namespace of this UpdateReleaseRequest.
 
         模板实例所在的命名空间
 
@@ -94,7 +94,7 @@ class UpdateReleaseRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateReleaseRequest.
+        r"""Sets the namespace of this UpdateReleaseRequest.
 
         模板实例所在的命名空间
 
@@ -105,7 +105,7 @@ class UpdateReleaseRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateReleaseRequest.
+        r"""Gets the cluster_id of this UpdateReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -116,7 +116,7 @@ class UpdateReleaseRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateReleaseRequest.
+        r"""Sets the cluster_id of this UpdateReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -127,7 +127,7 @@ class UpdateReleaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateReleaseRequest.
+        r"""Gets the body of this UpdateReleaseRequest.
 
         :return: The body of this UpdateReleaseRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateReleaseReqBody`
@@ -136,7 +136,7 @@ class UpdateReleaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateReleaseRequest.
+        r"""Sets the body of this UpdateReleaseRequest.
 
         :param body: The body of this UpdateReleaseRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpdateReleaseReqBody`

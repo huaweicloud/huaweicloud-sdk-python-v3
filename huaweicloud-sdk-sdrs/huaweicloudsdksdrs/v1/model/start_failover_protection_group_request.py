@@ -27,7 +27,7 @@ class StartFailoverProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """StartFailoverProtectionGroupRequest
+        r"""StartFailoverProtectionGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartFailoverProtectionGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this StartFailoverProtectionGroupRequest.
+        r"""Gets the server_group_id of this StartFailoverProtectionGroupRequest.
 
         保护组的ID。
 
@@ -60,7 +60,7 @@ class StartFailoverProtectionGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this StartFailoverProtectionGroupRequest.
+        r"""Sets the server_group_id of this StartFailoverProtectionGroupRequest.
 
         保护组的ID。
 
@@ -71,7 +71,7 @@ class StartFailoverProtectionGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartFailoverProtectionGroupRequest.
+        r"""Gets the body of this StartFailoverProtectionGroupRequest.
 
         :return: The body of this StartFailoverProtectionGroupRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.FailoverProtectionGroupRequestBody`
@@ -80,7 +80,7 @@ class StartFailoverProtectionGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartFailoverProtectionGroupRequest.
+        r"""Sets the body of this StartFailoverProtectionGroupRequest.
 
         :param body: The body of this StartFailoverProtectionGroupRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.FailoverProtectionGroupRequestBody`

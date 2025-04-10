@@ -31,7 +31,7 @@ class CreateEdgeModuleReqDTO:
     }
 
     def __init__(self, edge_app_id=None, app_version=None, module_name=None, container_settings=None):
-        """CreateEdgeModuleReqDTO
+        r"""CreateEdgeModuleReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateEdgeModuleReqDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateEdgeModuleReqDTO.
+        r"""Gets the edge_app_id of this CreateEdgeModuleReqDTO.
 
         边缘应用名称
 
@@ -73,7 +73,7 @@ class CreateEdgeModuleReqDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateEdgeModuleReqDTO.
+        r"""Sets the edge_app_id of this CreateEdgeModuleReqDTO.
 
         边缘应用名称
 
@@ -84,7 +84,7 @@ class CreateEdgeModuleReqDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this CreateEdgeModuleReqDTO.
+        r"""Gets the app_version of this CreateEdgeModuleReqDTO.
 
         边缘应用版本
 
@@ -95,7 +95,7 @@ class CreateEdgeModuleReqDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this CreateEdgeModuleReqDTO.
+        r"""Sets the app_version of this CreateEdgeModuleReqDTO.
 
         边缘应用版本
 
@@ -106,7 +106,7 @@ class CreateEdgeModuleReqDTO:
 
     @property
     def module_name(self):
-        """Gets the module_name of this CreateEdgeModuleReqDTO.
+        r"""Gets the module_name of this CreateEdgeModuleReqDTO.
 
         边缘模块名称
 
@@ -117,7 +117,7 @@ class CreateEdgeModuleReqDTO:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this CreateEdgeModuleReqDTO.
+        r"""Sets the module_name of this CreateEdgeModuleReqDTO.
 
         边缘模块名称
 
@@ -128,7 +128,7 @@ class CreateEdgeModuleReqDTO:
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this CreateEdgeModuleReqDTO.
+        r"""Gets the container_settings of this CreateEdgeModuleReqDTO.
 
         :return: The container_settings of this CreateEdgeModuleReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
@@ -137,7 +137,7 @@ class CreateEdgeModuleReqDTO:
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this CreateEdgeModuleReqDTO.
+        r"""Sets the container_settings of this CreateEdgeModuleReqDTO.
 
         :param container_settings: The container_settings of this CreateEdgeModuleReqDTO.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`

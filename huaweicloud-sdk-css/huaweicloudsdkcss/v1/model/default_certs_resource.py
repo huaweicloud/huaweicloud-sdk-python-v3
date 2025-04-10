@@ -33,7 +33,7 @@ class DefaultCertsResource:
     }
 
     def __init__(self, file_name=None, file_location=None, status=None, column=None, desc=None):
-        """DefaultCertsResource
+        r"""DefaultCertsResource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DefaultCertsResource:
 
     @property
     def file_name(self):
-        """Gets the file_name of this DefaultCertsResource.
+        r"""Gets the file_name of this DefaultCertsResource.
 
         证书名称。
 
@@ -82,7 +82,7 @@ class DefaultCertsResource:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this DefaultCertsResource.
+        r"""Sets the file_name of this DefaultCertsResource.
 
         证书名称。
 
@@ -93,7 +93,7 @@ class DefaultCertsResource:
 
     @property
     def file_location(self):
-        """Gets the file_location of this DefaultCertsResource.
+        r"""Gets the file_location of this DefaultCertsResource.
 
         证书路径。
 
@@ -104,7 +104,7 @@ class DefaultCertsResource:
 
     @file_location.setter
     def file_location(self, file_location):
-        """Sets the file_location of this DefaultCertsResource.
+        r"""Sets the file_location of this DefaultCertsResource.
 
         证书路径。
 
@@ -115,7 +115,7 @@ class DefaultCertsResource:
 
     @property
     def status(self):
-        """Gets the status of this DefaultCertsResource.
+        r"""Gets the status of this DefaultCertsResource.
 
         证书状态。
 
@@ -126,7 +126,7 @@ class DefaultCertsResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DefaultCertsResource.
+        r"""Sets the status of this DefaultCertsResource.
 
         证书状态。
 
@@ -137,7 +137,7 @@ class DefaultCertsResource:
 
     @property
     def column(self):
-        """Gets the column of this DefaultCertsResource.
+        r"""Gets the column of this DefaultCertsResource.
 
         描述列。
 
@@ -148,7 +148,7 @@ class DefaultCertsResource:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this DefaultCertsResource.
+        r"""Sets the column of this DefaultCertsResource.
 
         描述列。
 
@@ -159,7 +159,7 @@ class DefaultCertsResource:
 
     @property
     def desc(self):
-        """Gets the desc of this DefaultCertsResource.
+        r"""Gets the desc of this DefaultCertsResource.
 
         证书描述。
 
@@ -170,7 +170,7 @@ class DefaultCertsResource:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this DefaultCertsResource.
+        r"""Sets the desc of this DefaultCertsResource.
 
         证书描述。
 

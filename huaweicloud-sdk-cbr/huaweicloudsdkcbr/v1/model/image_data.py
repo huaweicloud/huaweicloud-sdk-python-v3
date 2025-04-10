@@ -25,7 +25,7 @@ class ImageData:
     }
 
     def __init__(self, image_id=None):
-        """ImageData
+        r"""ImageData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImageData:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ImageData.
+        r"""Gets the image_id of this ImageData.
 
         镜像ID
 
@@ -54,7 +54,7 @@ class ImageData:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ImageData.
+        r"""Sets the image_id of this ImageData.
 
         镜像ID
 

@@ -25,7 +25,7 @@ class ResultValueListIntegerIdAndNameVo:
     }
 
     def __init__(self, value=None):
-        """ResultValueListIntegerIdAndNameVo
+        r"""ResultValueListIntegerIdAndNameVo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResultValueListIntegerIdAndNameVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueListIntegerIdAndNameVo.
+        r"""Gets the value of this ResultValueListIntegerIdAndNameVo.
 
         :return: The value of this ResultValueListIntegerIdAndNameVo.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.IntegerIdAndNameVo`]
@@ -52,7 +52,7 @@ class ResultValueListIntegerIdAndNameVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueListIntegerIdAndNameVo.
+        r"""Sets the value of this ResultValueListIntegerIdAndNameVo.
 
         :param value: The value of this ResultValueListIntegerIdAndNameVo.
         :type value: list[:class:`huaweicloudsdkcloudtest.v1.IntegerIdAndNameVo`]

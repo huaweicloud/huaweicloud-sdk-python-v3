@@ -27,7 +27,7 @@ class ShowCompositeHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None):
-        """ShowCompositeHostRequest
+        r"""ShowCompositeHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCompositeHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCompositeHostRequest.
+        r"""Gets the enterprise_project_id of this ShowCompositeHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -60,7 +60,7 @@ class ShowCompositeHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCompositeHostRequest.
+        r"""Sets the enterprise_project_id of this ShowCompositeHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -71,7 +71,7 @@ class ShowCompositeHostRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowCompositeHostRequest.
+        r"""Gets the host_id of this ShowCompositeHostRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -82,7 +82,7 @@ class ShowCompositeHostRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowCompositeHostRequest.
+        r"""Sets the host_id of this ShowCompositeHostRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 

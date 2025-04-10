@@ -33,7 +33,7 @@ class CreateVpcOption:
     }
 
     def __init__(self, cidr=None, name=None, description=None, enterprise_project_id=None, tags=None):
-        """CreateVpcOption
+        r"""CreateVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateVpcOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateVpcOption.
+        r"""Gets the cidr of this CreateVpcOption.
 
         功能说明：虚拟私有云下可用子网的范围 取值范围： - 10.0.0.0/8 ~ 10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
 
@@ -82,7 +82,7 @@ class CreateVpcOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateVpcOption.
+        r"""Sets the cidr of this CreateVpcOption.
 
         功能说明：虚拟私有云下可用子网的范围 取值范围： - 10.0.0.0/8 ~ 10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
 
@@ -93,7 +93,7 @@ class CreateVpcOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpcOption.
+        r"""Gets the name of this CreateVpcOption.
 
         功能说明：虚拟私有云名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果名称不为空，则同一个租户下的名称不能重复
 
@@ -104,7 +104,7 @@ class CreateVpcOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpcOption.
+        r"""Sets the name of this CreateVpcOption.
 
         功能说明：虚拟私有云名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果名称不为空，则同一个租户下的名称不能重复
 
@@ -115,7 +115,7 @@ class CreateVpcOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateVpcOption.
+        r"""Gets the description of this CreateVpcOption.
 
         功能说明：虚拟私有云的描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -126,7 +126,7 @@ class CreateVpcOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVpcOption.
+        r"""Sets the description of this CreateVpcOption.
 
         功能说明：虚拟私有云的描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -137,7 +137,7 @@ class CreateVpcOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateVpcOption.
+        r"""Gets the enterprise_project_id of this CreateVpcOption.
 
         功能说明：企业项目ID。创建虚拟私有云时，给虚拟私有云绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 默认值：\"0\"
 
@@ -148,7 +148,7 @@ class CreateVpcOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateVpcOption.
+        r"""Sets the enterprise_project_id of this CreateVpcOption.
 
         功能说明：企业项目ID。创建虚拟私有云时，给虚拟私有云绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 默认值：\"0\"
 
@@ -159,7 +159,7 @@ class CreateVpcOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateVpcOption.
+        r"""Gets the tags of this CreateVpcOption.
 
         功能说明：VPC资源标签。创建VPC时，给VPC添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
 
@@ -170,7 +170,7 @@ class CreateVpcOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateVpcOption.
+        r"""Sets the tags of this CreateVpcOption.
 
         功能说明：VPC资源标签。创建VPC时，给VPC添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
 

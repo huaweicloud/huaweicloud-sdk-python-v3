@@ -25,7 +25,7 @@ class FileExtraMeta:
     }
 
     def __init__(self, video_transcoding_status=None):
-        """FileExtraMeta
+        r"""FileExtraMeta
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FileExtraMeta:
 
     @property
     def video_transcoding_status(self):
-        """Gets the video_transcoding_status of this FileExtraMeta.
+        r"""Gets the video_transcoding_status of this FileExtraMeta.
 
         视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
 
@@ -54,7 +54,7 @@ class FileExtraMeta:
 
     @video_transcoding_status.setter
     def video_transcoding_status(self, video_transcoding_status):
-        """Sets the video_transcoding_status of this FileExtraMeta.
+        r"""Sets the video_transcoding_status of this FileExtraMeta.
 
         视频转码状态。 * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功
 

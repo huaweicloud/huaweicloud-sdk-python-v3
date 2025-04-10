@@ -27,7 +27,7 @@ class JudgementCaseResult:
     }
 
     def __init__(self, output=None, case_status=None):
-        """JudgementCaseResult
+        r"""JudgementCaseResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class JudgementCaseResult:
 
     @property
     def output(self):
-        """Gets the output of this JudgementCaseResult.
+        r"""Gets the output of this JudgementCaseResult.
 
         用例实际运行结果输出
 
@@ -59,7 +59,7 @@ class JudgementCaseResult:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this JudgementCaseResult.
+        r"""Sets the output of this JudgementCaseResult.
 
         用例实际运行结果输出
 
@@ -70,7 +70,7 @@ class JudgementCaseResult:
 
     @property
     def case_status(self):
-        """Gets the case_status of this JudgementCaseResult.
+        r"""Gets the case_status of this JudgementCaseResult.
 
         用例运行结果状态： judgeout判题类型对应：pass（用例比对成功）、failed（用例比对失败）； caseout判题类型对应：success（用例运行成功）、error（用例运行失败）；run_timeout（用例运行超时）
 
@@ -81,7 +81,7 @@ class JudgementCaseResult:
 
     @case_status.setter
     def case_status(self, case_status):
-        """Sets the case_status of this JudgementCaseResult.
+        r"""Sets the case_status of this JudgementCaseResult.
 
         用例运行结果状态： judgeout判题类型对应：pass（用例比对成功）、failed（用例比对失败）； caseout判题类型对应：success（用例运行成功）、error（用例运行失败）；run_timeout（用例运行超时）
 

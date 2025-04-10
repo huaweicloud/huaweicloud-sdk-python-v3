@@ -35,7 +35,7 @@ class UpdateCbcOrderRequestBody:
     }
 
     def __init__(self, change_mode=None, is_auto_pay=None, cloud_service_type=None, project_id=None, resource_id=None, product_info=None):
-        """UpdateCbcOrderRequestBody
+        r"""UpdateCbcOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateCbcOrderRequestBody:
 
     @property
     def change_mode(self):
-        """Gets the change_mode of this UpdateCbcOrderRequestBody.
+        r"""Gets the change_mode of this UpdateCbcOrderRequestBody.
 
         change_mode
 
@@ -83,7 +83,7 @@ class UpdateCbcOrderRequestBody:
 
     @change_mode.setter
     def change_mode(self, change_mode):
-        """Sets the change_mode of this UpdateCbcOrderRequestBody.
+        r"""Sets the change_mode of this UpdateCbcOrderRequestBody.
 
         change_mode
 
@@ -94,7 +94,7 @@ class UpdateCbcOrderRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this UpdateCbcOrderRequestBody.
+        r"""Gets the is_auto_pay of this UpdateCbcOrderRequestBody.
 
         该请求参数为预留参数，当前不支持自动支付，使用接口时该参数请使用0 0：不自动支付 1：自动支付
 
@@ -105,7 +105,7 @@ class UpdateCbcOrderRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this UpdateCbcOrderRequestBody.
+        r"""Sets the is_auto_pay of this UpdateCbcOrderRequestBody.
 
         该请求参数为预留参数，当前不支持自动支付，使用接口时该参数请使用0 0：不自动支付 1：自动支付
 
@@ -116,7 +116,7 @@ class UpdateCbcOrderRequestBody:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this UpdateCbcOrderRequestBody.
+        r"""Gets the cloud_service_type of this UpdateCbcOrderRequestBody.
 
         发起规格变更操作的云服务类型
 
@@ -127,7 +127,7 @@ class UpdateCbcOrderRequestBody:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this UpdateCbcOrderRequestBody.
+        r"""Sets the cloud_service_type of this UpdateCbcOrderRequestBody.
 
         发起规格变更操作的云服务类型
 
@@ -138,7 +138,7 @@ class UpdateCbcOrderRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateCbcOrderRequestBody.
+        r"""Gets the project_id of this UpdateCbcOrderRequestBody.
 
         project_id
 
@@ -149,7 +149,7 @@ class UpdateCbcOrderRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateCbcOrderRequestBody.
+        r"""Sets the project_id of this UpdateCbcOrderRequestBody.
 
         project_id
 
@@ -160,7 +160,7 @@ class UpdateCbcOrderRequestBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UpdateCbcOrderRequestBody.
+        r"""Gets the resource_id of this UpdateCbcOrderRequestBody.
 
         资源标识ID
 
@@ -171,7 +171,7 @@ class UpdateCbcOrderRequestBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UpdateCbcOrderRequestBody.
+        r"""Sets the resource_id of this UpdateCbcOrderRequestBody.
 
         资源标识ID
 
@@ -182,7 +182,7 @@ class UpdateCbcOrderRequestBody:
 
     @property
     def product_info(self):
-        """Gets the product_info of this UpdateCbcOrderRequestBody.
+        r"""Gets the product_info of this UpdateCbcOrderRequestBody.
 
         :return: The product_info of this UpdateCbcOrderRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v2.UpdateCbcOrderRequestBodyProductInfo`
@@ -191,7 +191,7 @@ class UpdateCbcOrderRequestBody:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this UpdateCbcOrderRequestBody.
+        r"""Sets the product_info of this UpdateCbcOrderRequestBody.
 
         :param product_info: The product_info of this UpdateCbcOrderRequestBody.
         :type product_info: :class:`huaweicloudsdkcodeartsinspector.v2.UpdateCbcOrderRequestBodyProductInfo`

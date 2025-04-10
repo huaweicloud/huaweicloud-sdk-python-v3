@@ -27,7 +27,7 @@ class LogsTreeList:
     }
 
     def __init__(self, trees=None, total=None):
-        """LogsTreeList
+        r"""LogsTreeList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LogsTreeList:
 
     @property
     def trees(self):
-        """Gets the trees of this LogsTreeList.
+        r"""Gets the trees of this LogsTreeList.
 
         文件日志树
 
@@ -61,7 +61,7 @@ class LogsTreeList:
 
     @trees.setter
     def trees(self, trees):
-        """Sets the trees of this LogsTreeList.
+        r"""Sets the trees of this LogsTreeList.
 
         文件日志树
 
@@ -72,7 +72,7 @@ class LogsTreeList:
 
     @property
     def total(self):
-        """Gets the total of this LogsTreeList.
+        r"""Gets the total of this LogsTreeList.
 
         记录总数
 
@@ -83,7 +83,7 @@ class LogsTreeList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this LogsTreeList.
+        r"""Sets the total of this LogsTreeList.
 
         记录总数
 

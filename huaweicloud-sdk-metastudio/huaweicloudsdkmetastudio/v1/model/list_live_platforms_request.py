@@ -29,7 +29,7 @@ class ListLivePlatformsRequest:
     }
 
     def __init__(self, offset=None, limit=None, access_type=None):
-        """ListLivePlatformsRequest
+        r"""ListLivePlatformsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListLivePlatformsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLivePlatformsRequest.
+        r"""Gets the offset of this ListLivePlatformsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -68,7 +68,7 @@ class ListLivePlatformsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLivePlatformsRequest.
+        r"""Sets the offset of this ListLivePlatformsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -79,7 +79,7 @@ class ListLivePlatformsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLivePlatformsRequest.
+        r"""Gets the limit of this ListLivePlatformsRequest.
 
         每页显示的条目数量。
 
@@ -90,7 +90,7 @@ class ListLivePlatformsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLivePlatformsRequest.
+        r"""Sets the limit of this ListLivePlatformsRequest.
 
         每页显示的条目数量。
 
@@ -101,7 +101,7 @@ class ListLivePlatformsRequest:
 
     @property
     def access_type(self):
-        """Gets the access_type of this ListLivePlatformsRequest.
+        r"""Gets the access_type of this ListLivePlatformsRequest.
 
         平台对接类型。
 
@@ -112,7 +112,7 @@ class ListLivePlatformsRequest:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this ListLivePlatformsRequest.
+        r"""Sets the access_type of this ListLivePlatformsRequest.
 
         平台对接类型。
 

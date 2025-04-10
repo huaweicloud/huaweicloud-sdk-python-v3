@@ -25,7 +25,7 @@ class CreateObjectCompareJobReq:
     }
 
     def __init__(self, compare_task_num=None):
-        """CreateObjectCompareJobReq
+        r"""CreateObjectCompareJobReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateObjectCompareJobReq:
 
     @property
     def compare_task_num(self):
-        """Gets the compare_task_num of this CreateObjectCompareJobReq.
+        r"""Gets the compare_task_num of this CreateObjectCompareJobReq.
 
         对比任务线程数量，当前仅cloudDataGuard-cassandra和cloudDataGuard-gausscassandra-to-gausscassandra链路支持。
 
@@ -54,7 +54,7 @@ class CreateObjectCompareJobReq:
 
     @compare_task_num.setter
     def compare_task_num(self, compare_task_num):
-        """Sets the compare_task_num of this CreateObjectCompareJobReq.
+        r"""Sets the compare_task_num of this CreateObjectCompareJobReq.
 
         对比任务线程数量，当前仅cloudDataGuard-cassandra和cloudDataGuard-gausscassandra-to-gausscassandra链路支持。
 

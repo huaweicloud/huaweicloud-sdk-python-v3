@@ -43,7 +43,7 @@ class CreateLdapConfigRequestBody:
     }
 
     def __init__(self, url=None, base_dn=None, user_dn=None, password=None, vpc_id=None, filter_condition=None, backup_url=None, schema=None, search_timeout=None, allow_local_user=None):
-        """CreateLdapConfigRequestBody
+        r"""CreateLdapConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this CreateLdapConfigRequestBody.
+        r"""Gets the url of this CreateLdapConfigRequestBody.
 
         ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -115,7 +115,7 @@ class CreateLdapConfigRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateLdapConfigRequestBody.
+        r"""Sets the url of this CreateLdapConfigRequestBody.
 
         ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -126,7 +126,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def base_dn(self):
-        """Gets the base_dn of this CreateLdapConfigRequestBody.
+        r"""Gets the base_dn of this CreateLdapConfigRequestBody.
 
         数据库中的域
 
@@ -137,7 +137,7 @@ class CreateLdapConfigRequestBody:
 
     @base_dn.setter
     def base_dn(self, base_dn):
-        """Sets the base_dn of this CreateLdapConfigRequestBody.
+        r"""Sets the base_dn of this CreateLdapConfigRequestBody.
 
         数据库中的域
 
@@ -148,7 +148,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def user_dn(self):
-        """Gets the user_dn of this CreateLdapConfigRequestBody.
+        r"""Gets the user_dn of this CreateLdapConfigRequestBody.
 
         用户区别名
 
@@ -159,7 +159,7 @@ class CreateLdapConfigRequestBody:
 
     @user_dn.setter
     def user_dn(self, user_dn):
-        """Sets the user_dn of this CreateLdapConfigRequestBody.
+        r"""Sets the user_dn of this CreateLdapConfigRequestBody.
 
         用户区别名
 
@@ -170,7 +170,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateLdapConfigRequestBody.
+        r"""Gets the password of this CreateLdapConfigRequestBody.
 
         ldap认证密码
 
@@ -181,7 +181,7 @@ class CreateLdapConfigRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateLdapConfigRequestBody.
+        r"""Sets the password of this CreateLdapConfigRequestBody.
 
         ldap认证密码
 
@@ -192,7 +192,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateLdapConfigRequestBody.
+        r"""Gets the vpc_id of this CreateLdapConfigRequestBody.
 
         一般不涉及。仅在SFSTurbo支持多VPC的场景下，需要指定LDAP服务器可连通的VPC的id。
 
@@ -203,7 +203,7 @@ class CreateLdapConfigRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateLdapConfigRequestBody.
+        r"""Sets the vpc_id of this CreateLdapConfigRequestBody.
 
         一般不涉及。仅在SFSTurbo支持多VPC的场景下，需要指定LDAP服务器可连通的VPC的id。
 
@@ -214,7 +214,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def filter_condition(self):
-        """Gets the filter_condition of this CreateLdapConfigRequestBody.
+        r"""Gets the filter_condition of this CreateLdapConfigRequestBody.
 
         过滤条件。保留字段，暂不支持
 
@@ -225,7 +225,7 @@ class CreateLdapConfigRequestBody:
 
     @filter_condition.setter
     def filter_condition(self, filter_condition):
-        """Sets the filter_condition of this CreateLdapConfigRequestBody.
+        r"""Sets the filter_condition of this CreateLdapConfigRequestBody.
 
         过滤条件。保留字段，暂不支持
 
@@ -236,7 +236,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def backup_url(self):
-        """Gets the backup_url of this CreateLdapConfigRequestBody.
+        r"""Gets the backup_url of this CreateLdapConfigRequestBody.
 
         ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -247,7 +247,7 @@ class CreateLdapConfigRequestBody:
 
     @backup_url.setter
     def backup_url(self, backup_url):
-        """Sets the backup_url of this CreateLdapConfigRequestBody.
+        r"""Sets the backup_url of this CreateLdapConfigRequestBody.
 
         ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -258,7 +258,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def schema(self):
-        """Gets the schema of this CreateLdapConfigRequestBody.
+        r"""Gets the schema of this CreateLdapConfigRequestBody.
 
         ldap的schema，不填写则默认为RFC2307
 
@@ -269,7 +269,7 @@ class CreateLdapConfigRequestBody:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this CreateLdapConfigRequestBody.
+        r"""Sets the schema of this CreateLdapConfigRequestBody.
 
         ldap的schema，不填写则默认为RFC2307
 
@@ -280,7 +280,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def search_timeout(self):
-        """Gets the search_timeout of this CreateLdapConfigRequestBody.
+        r"""Gets the search_timeout of this CreateLdapConfigRequestBody.
 
         ldap搜索的超时时间，单位为秒。不填写则默认为3秒
 
@@ -291,7 +291,7 @@ class CreateLdapConfigRequestBody:
 
     @search_timeout.setter
     def search_timeout(self, search_timeout):
-        """Sets the search_timeout of this CreateLdapConfigRequestBody.
+        r"""Sets the search_timeout of this CreateLdapConfigRequestBody.
 
         ldap搜索的超时时间，单位为秒。不填写则默认为3秒
 
@@ -302,7 +302,7 @@ class CreateLdapConfigRequestBody:
 
     @property
     def allow_local_user(self):
-        """Gets the allow_local_user of this CreateLdapConfigRequestBody.
+        r"""Gets the allow_local_user of this CreateLdapConfigRequestBody.
 
         访问ldap服务器失败后是否允许使用本地用户鉴权
 
@@ -313,7 +313,7 @@ class CreateLdapConfigRequestBody:
 
     @allow_local_user.setter
     def allow_local_user(self, allow_local_user):
-        """Sets the allow_local_user of this CreateLdapConfigRequestBody.
+        r"""Sets the allow_local_user of this CreateLdapConfigRequestBody.
 
         访问ldap服务器失败后是否允许使用本地用户鉴权
 

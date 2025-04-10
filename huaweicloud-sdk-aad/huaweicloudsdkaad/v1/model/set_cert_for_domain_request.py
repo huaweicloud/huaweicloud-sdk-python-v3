@@ -25,7 +25,7 @@ class SetCertForDomainRequest:
     }
 
     def __init__(self, body=None):
-        """SetCertForDomainRequest
+        r"""SetCertForDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetCertForDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetCertForDomainRequest.
+        r"""Gets the body of this SetCertForDomainRequest.
 
         :return: The body of this SetCertForDomainRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.CertificateBody`
@@ -52,7 +52,7 @@ class SetCertForDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetCertForDomainRequest.
+        r"""Sets the body of this SetCertForDomainRequest.
 
         :param body: The body of this SetCertForDomainRequest.
         :type body: :class:`huaweicloudsdkaad.v1.CertificateBody`

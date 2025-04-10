@@ -31,7 +31,7 @@ class ComponentModify:
     }
 
     def __init__(self, name=None, description=None, source=None, build=None):
-        """ComponentModify
+        r"""ComponentModify
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ComponentModify:
 
     @property
     def name(self):
-        """Gets the name of this ComponentModify.
+        r"""Gets the name of this ComponentModify.
 
         应用组件名称。
 
@@ -75,7 +75,7 @@ class ComponentModify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentModify.
+        r"""Sets the name of this ComponentModify.
 
         应用组件名称。
 
@@ -86,7 +86,7 @@ class ComponentModify:
 
     @property
     def description(self):
-        """Gets the description of this ComponentModify.
+        r"""Gets the description of this ComponentModify.
 
         描述。
 
@@ -97,7 +97,7 @@ class ComponentModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentModify.
+        r"""Sets the description of this ComponentModify.
 
         描述。
 
@@ -108,7 +108,7 @@ class ComponentModify:
 
     @property
     def source(self):
-        """Gets the source of this ComponentModify.
+        r"""Gets the source of this ComponentModify.
 
         :return: The source of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -117,7 +117,7 @@ class ComponentModify:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentModify.
+        r"""Sets the source of this ComponentModify.
 
         :param source: The source of this ComponentModify.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -126,7 +126,7 @@ class ComponentModify:
 
     @property
     def build(self):
-        """Gets the build of this ComponentModify.
+        r"""Gets the build of this ComponentModify.
 
         :return: The build of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.Build`
@@ -135,7 +135,7 @@ class ComponentModify:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentModify.
+        r"""Sets the build of this ComponentModify.
 
         :param build: The build of this ComponentModify.
         :type build: :class:`huaweicloudsdkservicestage.v2.Build`

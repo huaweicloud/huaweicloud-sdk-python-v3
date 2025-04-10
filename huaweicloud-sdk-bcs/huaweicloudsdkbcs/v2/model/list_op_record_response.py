@@ -28,7 +28,7 @@ class ListOpRecordResponse(SdkResponse):
     }
 
     def __init__(self, count=None, operation_records=None):
-        """ListOpRecordResponse
+        r"""ListOpRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOpRecordResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListOpRecordResponse.
+        r"""Gets the count of this ListOpRecordResponse.
 
         操作记录总数
 
@@ -62,7 +62,7 @@ class ListOpRecordResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListOpRecordResponse.
+        r"""Sets the count of this ListOpRecordResponse.
 
         操作记录总数
 
@@ -73,7 +73,7 @@ class ListOpRecordResponse(SdkResponse):
 
     @property
     def operation_records(self):
-        """Gets the operation_records of this ListOpRecordResponse.
+        r"""Gets the operation_records of this ListOpRecordResponse.
 
         操作记录列表
 
@@ -84,7 +84,7 @@ class ListOpRecordResponse(SdkResponse):
 
     @operation_records.setter
     def operation_records(self, operation_records):
-        """Sets the operation_records of this ListOpRecordResponse.
+        r"""Sets the operation_records of this ListOpRecordResponse.
 
         操作记录列表
 

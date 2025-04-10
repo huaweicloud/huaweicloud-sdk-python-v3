@@ -37,7 +37,7 @@ class SqlLimitObject:
     }
 
     def __init__(self, id=None, query_id=None, query_string=None, max_concurrency=None, is_effective=None, max_waiting=None, search_path=None):
-        """SqlLimitObject
+        r"""SqlLimitObject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SqlLimitObject:
 
     @property
     def id(self):
-        """Gets the id of this SqlLimitObject.
+        r"""Gets the id of this SqlLimitObject.
 
         SQL限流ID。
 
@@ -89,7 +89,7 @@ class SqlLimitObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SqlLimitObject.
+        r"""Sets the id of this SqlLimitObject.
 
         SQL限流ID。
 
@@ -100,7 +100,7 @@ class SqlLimitObject:
 
     @property
     def query_id(self):
-        """Gets the query_id of this SqlLimitObject.
+        r"""Gets the query_id of this SqlLimitObject.
 
         由SQL的语法解析树计算出的内部哈希码，默认为0，取值范围（-9223372036854775808~ 9223372036854775807）。
 
@@ -111,7 +111,7 @@ class SqlLimitObject:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this SqlLimitObject.
+        r"""Sets the query_id of this SqlLimitObject.
 
         由SQL的语法解析树计算出的内部哈希码，默认为0，取值范围（-9223372036854775808~ 9223372036854775807）。
 
@@ -122,7 +122,7 @@ class SqlLimitObject:
 
     @property
     def query_string(self):
-        """Gets the query_string of this SqlLimitObject.
+        r"""Gets the query_string of this SqlLimitObject.
 
         SQL语句的文本形式。
 
@@ -133,7 +133,7 @@ class SqlLimitObject:
 
     @query_string.setter
     def query_string(self, query_string):
-        """Sets the query_string of this SqlLimitObject.
+        r"""Sets the query_string of this SqlLimitObject.
 
         SQL语句的文本形式。
 
@@ -144,7 +144,7 @@ class SqlLimitObject:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this SqlLimitObject.
+        r"""Gets the max_concurrency of this SqlLimitObject.
 
         同时执行的SQL数量，小于等于0表示不限制，默认为0，取值范围（-1~50000）。
 
@@ -155,7 +155,7 @@ class SqlLimitObject:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this SqlLimitObject.
+        r"""Sets the max_concurrency of this SqlLimitObject.
 
         同时执行的SQL数量，小于等于0表示不限制，默认为0，取值范围（-1~50000）。
 
@@ -166,7 +166,7 @@ class SqlLimitObject:
 
     @property
     def is_effective(self):
-        """Gets the is_effective of this SqlLimitObject.
+        r"""Gets the is_effective of this SqlLimitObject.
 
         是否生效
 
@@ -177,7 +177,7 @@ class SqlLimitObject:
 
     @is_effective.setter
     def is_effective(self, is_effective):
-        """Sets the is_effective of this SqlLimitObject.
+        r"""Sets the is_effective of this SqlLimitObject.
 
         是否生效
 
@@ -188,7 +188,7 @@ class SqlLimitObject:
 
     @property
     def max_waiting(self):
-        """Gets the max_waiting of this SqlLimitObject.
+        r"""Gets the max_waiting of this SqlLimitObject.
 
         最大等待时间，单位为秒。
 
@@ -199,7 +199,7 @@ class SqlLimitObject:
 
     @max_waiting.setter
     def max_waiting(self, max_waiting):
-        """Sets the max_waiting of this SqlLimitObject.
+        r"""Sets the max_waiting of this SqlLimitObject.
 
         最大等待时间，单位为秒。
 
@@ -210,7 +210,7 @@ class SqlLimitObject:
 
     @property
     def search_path(self):
-        """Gets the search_path of this SqlLimitObject.
+        r"""Gets the search_path of this SqlLimitObject.
 
         为不是模式限定的名称设置模式搜索顺序，默认为public。
 
@@ -221,7 +221,7 @@ class SqlLimitObject:
 
     @search_path.setter
     def search_path(self, search_path):
-        """Sets the search_path of this SqlLimitObject.
+        r"""Sets the search_path of this SqlLimitObject.
 
         为不是模式限定的名称设置模式搜索顺序，默认为public。
 

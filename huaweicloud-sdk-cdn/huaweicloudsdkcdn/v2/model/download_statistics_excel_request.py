@@ -39,7 +39,7 @@ class DownloadStatisticsExcelRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, domain_name=None, excel_language=None, service_area=None, interval=None, enterprise_project_id=None, excel_type=None):
-        """DownloadStatisticsExcelRequest
+        r"""DownloadStatisticsExcelRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DownloadStatisticsExcelRequest.
+        r"""Gets the start_time of this DownloadStatisticsExcelRequest.
 
         查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
@@ -99,7 +99,7 @@ class DownloadStatisticsExcelRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DownloadStatisticsExcelRequest.
+        r"""Sets the start_time of this DownloadStatisticsExcelRequest.
 
         查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
@@ -110,7 +110,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DownloadStatisticsExcelRequest.
+        r"""Gets the end_time of this DownloadStatisticsExcelRequest.
 
         查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
@@ -121,7 +121,7 @@ class DownloadStatisticsExcelRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DownloadStatisticsExcelRequest.
+        r"""Sets the end_time of this DownloadStatisticsExcelRequest.
 
         查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
@@ -132,7 +132,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DownloadStatisticsExcelRequest.
+        r"""Gets the domain_name of this DownloadStatisticsExcelRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -143,7 +143,7 @@ class DownloadStatisticsExcelRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DownloadStatisticsExcelRequest.
+        r"""Sets the domain_name of this DownloadStatisticsExcelRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -154,7 +154,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def excel_language(self):
-        """Gets the excel_language of this DownloadStatisticsExcelRequest.
+        r"""Gets the excel_language of this DownloadStatisticsExcelRequest.
 
         创建表格语言，支持zh(中文)，en(英文)两种，如果不传默认为zh
 
@@ -165,7 +165,7 @@ class DownloadStatisticsExcelRequest:
 
     @excel_language.setter
     def excel_language(self, excel_language):
-        """Sets the excel_language of this DownloadStatisticsExcelRequest.
+        r"""Sets the excel_language of this DownloadStatisticsExcelRequest.
 
         创建表格语言，支持zh(中文)，en(英文)两种，如果不传默认为zh
 
@@ -176,7 +176,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def service_area(self):
-        """Gets the service_area of this DownloadStatisticsExcelRequest.
+        r"""Gets the service_area of this DownloadStatisticsExcelRequest.
 
         服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china，当查询回源类指标时该参数无效。
 
@@ -187,7 +187,7 @@ class DownloadStatisticsExcelRequest:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this DownloadStatisticsExcelRequest.
+        r"""Sets the service_area of this DownloadStatisticsExcelRequest.
 
         服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china，当查询回源类指标时该参数无效。
 
@@ -198,7 +198,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this DownloadStatisticsExcelRequest.
+        r"""Gets the interval of this DownloadStatisticsExcelRequest.
 
         - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
@@ -209,7 +209,7 @@ class DownloadStatisticsExcelRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this DownloadStatisticsExcelRequest.
+        r"""Sets the interval of this DownloadStatisticsExcelRequest.
 
         - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
@@ -220,7 +220,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DownloadStatisticsExcelRequest.
+        r"""Gets the enterprise_project_id of this DownloadStatisticsExcelRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -231,7 +231,7 @@ class DownloadStatisticsExcelRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DownloadStatisticsExcelRequest.
+        r"""Sets the enterprise_project_id of this DownloadStatisticsExcelRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -242,7 +242,7 @@ class DownloadStatisticsExcelRequest:
 
     @property
     def excel_type(self):
-        """Gets the excel_type of this DownloadStatisticsExcelRequest.
+        r"""Gets the excel_type of this DownloadStatisticsExcelRequest.
 
         统计数据表格类型,目前支持 - 用量统计数据(excel_type_usage) - 访问情况统计数据(excel_type_access) - 回源情况统计数据（excel_type_origin） - http_code统计数据(excel_type_http_code)
 
@@ -253,7 +253,7 @@ class DownloadStatisticsExcelRequest:
 
     @excel_type.setter
     def excel_type(self, excel_type):
-        """Sets the excel_type of this DownloadStatisticsExcelRequest.
+        r"""Sets the excel_type of this DownloadStatisticsExcelRequest.
 
         统计数据表格类型,目前支持 - 用量统计数据(excel_type_usage) - 访问情况统计数据(excel_type_access) - 回源情况统计数据（excel_type_origin） - http_code统计数据(excel_type_http_code)
 

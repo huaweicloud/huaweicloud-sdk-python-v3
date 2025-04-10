@@ -25,7 +25,7 @@ class KeystoneUpdateProtocolRequestBody:
     }
 
     def __init__(self, protocol=None):
-        """KeystoneUpdateProtocolRequestBody
+        r"""KeystoneUpdateProtocolRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneUpdateProtocolRequestBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this KeystoneUpdateProtocolRequestBody.
+        r"""Gets the protocol of this KeystoneUpdateProtocolRequestBody.
 
         :return: The protocol of this KeystoneUpdateProtocolRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolOption`
@@ -51,7 +51,7 @@ class KeystoneUpdateProtocolRequestBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this KeystoneUpdateProtocolRequestBody.
+        r"""Sets the protocol of this KeystoneUpdateProtocolRequestBody.
 
         :param protocol: The protocol of this KeystoneUpdateProtocolRequestBody.
         :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolOption`

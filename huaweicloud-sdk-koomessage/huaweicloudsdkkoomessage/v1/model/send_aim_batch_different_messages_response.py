@@ -30,7 +30,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, status=None, result=None):
-        """SendAimBatchDifferentMessagesResponse
+        r"""SendAimBatchDifferentMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this SendAimBatchDifferentMessagesResponse.
+        r"""Gets the task_id of this SendAimBatchDifferentMessagesResponse.
 
         任务ID。
 
@@ -69,7 +69,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this SendAimBatchDifferentMessagesResponse.
+        r"""Sets the task_id of this SendAimBatchDifferentMessagesResponse.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SendAimBatchDifferentMessagesResponse.
+        r"""Gets the status of this SendAimBatchDifferentMessagesResponse.
 
         任务状态。  - Success：发送成功 - Failed：发送失败  > 此状态仅代表任务提交状态，不代表智能信息发送结果。用户手机接收智能信息结果请以收到的回执结果为准，也可通过查询智能信息发送明细API获取或登录KooMessage控制台查看。
 
@@ -91,7 +91,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SendAimBatchDifferentMessagesResponse.
+        r"""Sets the status of this SendAimBatchDifferentMessagesResponse.
 
         任务状态。  - Success：发送成功 - Failed：发送失败  > 此状态仅代表任务提交状态，不代表智能信息发送结果。用户手机接收智能信息结果请以收到的回执结果为准，也可通过查询智能信息发送明细API获取或登录KooMessage控制台查看。
 
@@ -102,7 +102,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this SendAimBatchDifferentMessagesResponse.
+        r"""Gets the result of this SendAimBatchDifferentMessagesResponse.
 
         短信ID列表，当目标号码存在多个时，每个号码都会返回一个SmsID。  当返回异常响应时不携带此字段。
 
@@ -113,7 +113,7 @@ class SendAimBatchDifferentMessagesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SendAimBatchDifferentMessagesResponse.
+        r"""Sets the result of this SendAimBatchDifferentMessagesResponse.
 
         短信ID列表，当目标号码存在多个时，每个号码都会返回一个SmsID。  当返回异常响应时不携带此字段。
 

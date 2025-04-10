@@ -49,7 +49,7 @@ class ListenerDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, protocol=None, status=None, port_ranges=None, client_affinity=None, accelerator_id=None, created_at=None, updated_at=None, domain_id=None, frozen_info=None, tags=None):
-        """ListenerDetail
+        r"""ListenerDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListenerDetail:
 
     @property
     def id(self):
-        """Gets the id of this ListenerDetail.
+        r"""Gets the id of this ListenerDetail.
 
         监听器ID。
 
@@ -138,7 +138,7 @@ class ListenerDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListenerDetail.
+        r"""Sets the id of this ListenerDetail.
 
         监听器ID。
 
@@ -149,7 +149,7 @@ class ListenerDetail:
 
     @property
     def name(self):
-        """Gets the name of this ListenerDetail.
+        r"""Gets the name of this ListenerDetail.
 
         监听器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -160,7 +160,7 @@ class ListenerDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListenerDetail.
+        r"""Sets the name of this ListenerDetail.
 
         监听器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -171,7 +171,7 @@ class ListenerDetail:
 
     @property
     def description(self):
-        """Gets the description of this ListenerDetail.
+        r"""Gets the description of this ListenerDetail.
 
         监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -182,7 +182,7 @@ class ListenerDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListenerDetail.
+        r"""Sets the description of this ListenerDetail.
 
         监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -193,7 +193,7 @@ class ListenerDetail:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListenerDetail.
+        r"""Gets the protocol of this ListenerDetail.
 
         :return: The protocol of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ListenerProtocol`
@@ -202,7 +202,7 @@ class ListenerDetail:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListenerDetail.
+        r"""Sets the protocol of this ListenerDetail.
 
         :param protocol: The protocol of this ListenerDetail.
         :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
@@ -211,7 +211,7 @@ class ListenerDetail:
 
     @property
     def status(self):
-        """Gets the status of this ListenerDetail.
+        r"""Gets the status of this ListenerDetail.
 
         :return: The status of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -220,7 +220,7 @@ class ListenerDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListenerDetail.
+        r"""Sets the status of this ListenerDetail.
 
         :param status: The status of this ListenerDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -229,7 +229,7 @@ class ListenerDetail:
 
     @property
     def port_ranges(self):
-        """Gets the port_ranges of this ListenerDetail.
+        r"""Gets the port_ranges of this ListenerDetail.
 
         监听端口范围列表。
 
@@ -240,7 +240,7 @@ class ListenerDetail:
 
     @port_ranges.setter
     def port_ranges(self, port_ranges):
-        """Sets the port_ranges of this ListenerDetail.
+        r"""Sets the port_ranges of this ListenerDetail.
 
         监听端口范围列表。
 
@@ -251,7 +251,7 @@ class ListenerDetail:
 
     @property
     def client_affinity(self):
-        """Gets the client_affinity of this ListenerDetail.
+        r"""Gets the client_affinity of this ListenerDetail.
 
         :return: The client_affinity of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
@@ -260,7 +260,7 @@ class ListenerDetail:
 
     @client_affinity.setter
     def client_affinity(self, client_affinity):
-        """Sets the client_affinity of this ListenerDetail.
+        r"""Sets the client_affinity of this ListenerDetail.
 
         :param client_affinity: The client_affinity of this ListenerDetail.
         :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
@@ -269,7 +269,7 @@ class ListenerDetail:
 
     @property
     def accelerator_id(self):
-        """Gets the accelerator_id of this ListenerDetail.
+        r"""Gets the accelerator_id of this ListenerDetail.
 
         全球加速实例ID。
 
@@ -280,7 +280,7 @@ class ListenerDetail:
 
     @accelerator_id.setter
     def accelerator_id(self, accelerator_id):
-        """Sets the accelerator_id of this ListenerDetail.
+        r"""Sets the accelerator_id of this ListenerDetail.
 
         全球加速实例ID。
 
@@ -291,7 +291,7 @@ class ListenerDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListenerDetail.
+        r"""Gets the created_at of this ListenerDetail.
 
         创建时间。
 
@@ -302,7 +302,7 @@ class ListenerDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListenerDetail.
+        r"""Sets the created_at of this ListenerDetail.
 
         创建时间。
 
@@ -313,7 +313,7 @@ class ListenerDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListenerDetail.
+        r"""Gets the updated_at of this ListenerDetail.
 
         更新时间。
 
@@ -324,7 +324,7 @@ class ListenerDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListenerDetail.
+        r"""Sets the updated_at of this ListenerDetail.
 
         更新时间。
 
@@ -335,7 +335,7 @@ class ListenerDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListenerDetail.
+        r"""Gets the domain_id of this ListenerDetail.
 
         租户ID。
 
@@ -346,7 +346,7 @@ class ListenerDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListenerDetail.
+        r"""Sets the domain_id of this ListenerDetail.
 
         租户ID。
 
@@ -357,7 +357,7 @@ class ListenerDetail:
 
     @property
     def frozen_info(self):
-        """Gets the frozen_info of this ListenerDetail.
+        r"""Gets the frozen_info of this ListenerDetail.
 
         :return: The frozen_info of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -366,7 +366,7 @@ class ListenerDetail:
 
     @frozen_info.setter
     def frozen_info(self, frozen_info):
-        """Sets the frozen_info of this ListenerDetail.
+        r"""Sets the frozen_info of this ListenerDetail.
 
         :param frozen_info: The frozen_info of this ListenerDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -375,7 +375,7 @@ class ListenerDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this ListenerDetail.
+        r"""Gets the tags of this ListenerDetail.
 
         标签列表。
 
@@ -386,7 +386,7 @@ class ListenerDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListenerDetail.
+        r"""Sets the tags of this ListenerDetail.
 
         标签列表。
 

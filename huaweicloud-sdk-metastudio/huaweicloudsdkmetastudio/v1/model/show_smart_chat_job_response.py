@@ -64,7 +64,7 @@ class ShowSmartChatJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_state=None, language=None, chat_video_type=None, chat_access_address=None, chat_access_rest_address=None, is_transparent=None, default_language=None, x_request_id=None):
-        """ShowSmartChatJobResponse
+        r"""ShowSmartChatJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSmartChatJobResponse.
+        r"""Gets the job_id of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务ID。
 
@@ -188,7 +188,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSmartChatJobResponse.
+        r"""Sets the job_id of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务ID。
 
@@ -199,7 +199,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowSmartChatJobResponse.
+        r"""Gets the state of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳
 
@@ -210,7 +210,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowSmartChatJobResponse.
+        r"""Sets the state of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳
 
@@ -221,7 +221,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowSmartChatJobResponse.
+        r"""Gets the duration of this ShowSmartChatJobResponse.
 
         数字人智能交互对话时长，单位秒。
 
@@ -232,7 +232,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowSmartChatJobResponse.
+        r"""Sets the duration of this ShowSmartChatJobResponse.
 
         数字人智能交互对话时长，单位秒。
 
@@ -243,7 +243,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowSmartChatJobResponse.
+        r"""Gets the start_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -254,7 +254,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowSmartChatJobResponse.
+        r"""Sets the start_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -265,7 +265,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowSmartChatJobResponse.
+        r"""Gets the end_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -276,7 +276,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowSmartChatJobResponse.
+        r"""Sets the end_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -287,7 +287,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowSmartChatJobResponse.
+        r"""Gets the error_info of this ShowSmartChatJobResponse.
 
         :return: The error_info of this ShowSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -296,7 +296,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowSmartChatJobResponse.
+        r"""Sets the error_info of this ShowSmartChatJobResponse.
 
         :param error_info: The error_info of this ShowSmartChatJobResponse.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -305,7 +305,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSmartChatJobResponse.
+        r"""Gets the create_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务创建时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -316,7 +316,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSmartChatJobResponse.
+        r"""Sets the create_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务创建时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -327,7 +327,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this ShowSmartChatJobResponse.
+        r"""Gets the lastupdate_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务最后更新时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -338,7 +338,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this ShowSmartChatJobResponse.
+        r"""Sets the lastupdate_time of this ShowSmartChatJobResponse.
 
         数字人智能交互对话任务最后更新时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -349,7 +349,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def rtc_room_info(self):
-        """Gets the rtc_room_info of this ShowSmartChatJobResponse.
+        r"""Gets the rtc_room_info of this ShowSmartChatJobResponse.
 
         :return: The rtc_room_info of this ShowSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -358,7 +358,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @rtc_room_info.setter
     def rtc_room_info(self, rtc_room_info):
-        """Sets the rtc_room_info of this ShowSmartChatJobResponse.
+        r"""Sets the rtc_room_info of this ShowSmartChatJobResponse.
 
         :param rtc_room_info: The rtc_room_info of this ShowSmartChatJobResponse.
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -367,7 +367,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_subtitle_config(self):
-        """Gets the chat_subtitle_config of this ShowSmartChatJobResponse.
+        r"""Gets the chat_subtitle_config of this ShowSmartChatJobResponse.
 
         :return: The chat_subtitle_config of this ShowSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
@@ -376,7 +376,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @chat_subtitle_config.setter
     def chat_subtitle_config(self, chat_subtitle_config):
-        """Sets the chat_subtitle_config of this ShowSmartChatJobResponse.
+        r"""Sets the chat_subtitle_config of this ShowSmartChatJobResponse.
 
         :param chat_subtitle_config: The chat_subtitle_config of this ShowSmartChatJobResponse.
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
@@ -385,7 +385,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this ShowSmartChatJobResponse.
+        r"""Gets the video_config of this ShowSmartChatJobResponse.
 
         :return: The video_config of this ShowSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
@@ -394,7 +394,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this ShowSmartChatJobResponse.
+        r"""Sets the video_config of this ShowSmartChatJobResponse.
 
         :param video_config: The video_config of this ShowSmartChatJobResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
@@ -403,7 +403,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def voice_config_list(self):
-        """Gets the voice_config_list of this ShowSmartChatJobResponse.
+        r"""Gets the voice_config_list of this ShowSmartChatJobResponse.
 
         语音配置参数列表。
 
@@ -414,7 +414,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @voice_config_list.setter
     def voice_config_list(self, voice_config_list):
-        """Sets the voice_config_list of this ShowSmartChatJobResponse.
+        r"""Sets the voice_config_list of this ShowSmartChatJobResponse.
 
         语音配置参数列表。
 
@@ -425,7 +425,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_state(self):
-        """Gets the chat_state of this ShowSmartChatJobResponse.
+        r"""Gets the chat_state of this ShowSmartChatJobResponse.
 
         数字人智能交互对话的状态。 0: 等待建链 1: 等待关闭链路 2: 建链成功 3: 进入休眠 4: 等待休眠
 
@@ -436,7 +436,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @chat_state.setter
     def chat_state(self, chat_state):
-        """Sets the chat_state of this ShowSmartChatJobResponse.
+        r"""Sets the chat_state of this ShowSmartChatJobResponse.
 
         数字人智能交互对话的状态。 0: 等待建链 1: 等待关闭链路 2: 建链成功 3: 进入休眠 4: 等待休眠
 
@@ -447,7 +447,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowSmartChatJobResponse.
+        r"""Gets the language of this ShowSmartChatJobResponse.
 
         :return: The language of this ShowSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -456,7 +456,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowSmartChatJobResponse.
+        r"""Sets the language of this ShowSmartChatJobResponse.
 
         :param language: The language of this ShowSmartChatJobResponse.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -465,7 +465,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_video_type(self):
-        """Gets the chat_video_type of this ShowSmartChatJobResponse.
+        r"""Gets the chat_video_type of this ShowSmartChatJobResponse.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -476,7 +476,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @chat_video_type.setter
     def chat_video_type(self, chat_video_type):
-        """Sets the chat_video_type of this ShowSmartChatJobResponse.
+        r"""Sets the chat_video_type of this ShowSmartChatJobResponse.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -487,7 +487,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_access_address(self):
-        """Gets the chat_access_address of this ShowSmartChatJobResponse.
+        r"""Gets the chat_access_address of this ShowSmartChatJobResponse.
 
         智能交互接入地址。
 
@@ -498,7 +498,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @chat_access_address.setter
     def chat_access_address(self, chat_access_address):
-        """Sets the chat_access_address of this ShowSmartChatJobResponse.
+        r"""Sets the chat_access_address of this ShowSmartChatJobResponse.
 
         智能交互接入地址。
 
@@ -509,7 +509,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_access_rest_address(self):
-        """Gets the chat_access_rest_address of this ShowSmartChatJobResponse.
+        r"""Gets the chat_access_rest_address of this ShowSmartChatJobResponse.
 
         智能交互Rest接口接入地址。
 
@@ -520,7 +520,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @chat_access_rest_address.setter
     def chat_access_rest_address(self, chat_access_rest_address):
-        """Sets the chat_access_rest_address of this ShowSmartChatJobResponse.
+        r"""Sets the chat_access_rest_address of this ShowSmartChatJobResponse.
 
         智能交互Rest接口接入地址。
 
@@ -531,7 +531,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def is_transparent(self):
-        """Gets the is_transparent of this ShowSmartChatJobResponse.
+        r"""Gets the is_transparent of this ShowSmartChatJobResponse.
 
         是否透明背景
 
@@ -542,7 +542,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @is_transparent.setter
     def is_transparent(self, is_transparent):
-        """Sets the is_transparent of this ShowSmartChatJobResponse.
+        r"""Sets the is_transparent of this ShowSmartChatJobResponse.
 
         是否透明背景
 
@@ -553,7 +553,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def default_language(self):
-        """Gets the default_language of this ShowSmartChatJobResponse.
+        r"""Gets the default_language of this ShowSmartChatJobResponse.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
 
@@ -564,7 +564,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this ShowSmartChatJobResponse.
+        r"""Sets the default_language of this ShowSmartChatJobResponse.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
 
@@ -575,7 +575,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowSmartChatJobResponse.
+        r"""Gets the x_request_id of this ShowSmartChatJobResponse.
 
         :return: The x_request_id of this ShowSmartChatJobResponse.
         :rtype: str
@@ -584,7 +584,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowSmartChatJobResponse.
+        r"""Sets the x_request_id of this ShowSmartChatJobResponse.
 
         :param x_request_id: The x_request_id of this ShowSmartChatJobResponse.
         :type x_request_id: str

@@ -57,7 +57,7 @@ class ModelDto:
     }
 
     def __init__(self, name=None, id=None, type=None, create_time=None, finish_time=None, creator=None, status=None, shareable=None, data_quantity=None, file=None, value_range=None, description=None, failed_message=None, losses=None, metrics=None, base_model_id=None, base_model_name=None):
-        """ModelDto
+        r"""ModelDto
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ModelDto:
 
     @property
     def name(self):
-        """Gets the name of this ModelDto.
+        r"""Gets the name of this ModelDto.
 
         模型名称
 
@@ -166,7 +166,7 @@ class ModelDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModelDto.
+        r"""Sets the name of this ModelDto.
 
         模型名称
 
@@ -177,7 +177,7 @@ class ModelDto:
 
     @property
     def id(self):
-        """Gets the id of this ModelDto.
+        r"""Gets the id of this ModelDto.
 
         模型ID
 
@@ -188,7 +188,7 @@ class ModelDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModelDto.
+        r"""Sets the id of this ModelDto.
 
         模型ID
 
@@ -199,7 +199,7 @@ class ModelDto:
 
     @property
     def type(self):
-        """Gets the type of this ModelDto.
+        r"""Gets the type of this ModelDto.
 
         模型类型
 
@@ -210,7 +210,7 @@ class ModelDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ModelDto.
+        r"""Sets the type of this ModelDto.
 
         模型类型
 
@@ -221,7 +221,7 @@ class ModelDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ModelDto.
+        r"""Gets the create_time of this ModelDto.
 
         模型创建时间
 
@@ -232,7 +232,7 @@ class ModelDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ModelDto.
+        r"""Sets the create_time of this ModelDto.
 
         模型创建时间
 
@@ -243,7 +243,7 @@ class ModelDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this ModelDto.
+        r"""Gets the finish_time of this ModelDto.
 
         模型结束时间
 
@@ -254,7 +254,7 @@ class ModelDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this ModelDto.
+        r"""Sets the finish_time of this ModelDto.
 
         模型结束时间
 
@@ -265,7 +265,7 @@ class ModelDto:
 
     @property
     def creator(self):
-        """Gets the creator of this ModelDto.
+        r"""Gets the creator of this ModelDto.
 
         创建模型的用户名称
 
@@ -276,7 +276,7 @@ class ModelDto:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ModelDto.
+        r"""Sets the creator of this ModelDto.
 
         创建模型的用户名称
 
@@ -287,7 +287,7 @@ class ModelDto:
 
     @property
     def status(self):
-        """Gets the status of this ModelDto.
+        r"""Gets the status of this ModelDto.
 
         作业状态
 
@@ -298,7 +298,7 @@ class ModelDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModelDto.
+        r"""Sets the status of this ModelDto.
 
         作业状态
 
@@ -309,7 +309,7 @@ class ModelDto:
 
     @property
     def shareable(self):
-        """Gets the shareable of this ModelDto.
+        r"""Gets the shareable of this ModelDto.
 
         是否打开组织共享
 
@@ -320,7 +320,7 @@ class ModelDto:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this ModelDto.
+        r"""Sets the shareable of this ModelDto.
 
         是否打开组织共享
 
@@ -331,7 +331,7 @@ class ModelDto:
 
     @property
     def data_quantity(self):
-        """Gets the data_quantity of this ModelDto.
+        r"""Gets the data_quantity of this ModelDto.
 
         模型数据量
 
@@ -342,7 +342,7 @@ class ModelDto:
 
     @data_quantity.setter
     def data_quantity(self, data_quantity):
-        """Sets the data_quantity of this ModelDto.
+        r"""Sets the data_quantity of this ModelDto.
 
         模型数据量
 
@@ -353,7 +353,7 @@ class ModelDto:
 
     @property
     def file(self):
-        """Gets the file of this ModelDto.
+        r"""Gets the file of this ModelDto.
 
         :return: The file of this ModelDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ModelFile`
@@ -362,7 +362,7 @@ class ModelDto:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ModelDto.
+        r"""Sets the file of this ModelDto.
 
         :param file: The file of this ModelDto.
         :type file: :class:`huaweicloudsdkeihealth.v1.ModelFile`
@@ -371,7 +371,7 @@ class ModelDto:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ModelDto.
+        r"""Gets the value_range of this ModelDto.
 
         :return: The value_range of this ModelDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
@@ -380,7 +380,7 @@ class ModelDto:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ModelDto.
+        r"""Sets the value_range of this ModelDto.
 
         :param value_range: The value_range of this ModelDto.
         :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
@@ -389,7 +389,7 @@ class ModelDto:
 
     @property
     def description(self):
-        """Gets the description of this ModelDto.
+        r"""Gets the description of this ModelDto.
 
         模型描述信息
 
@@ -400,7 +400,7 @@ class ModelDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModelDto.
+        r"""Sets the description of this ModelDto.
 
         模型描述信息
 
@@ -411,7 +411,7 @@ class ModelDto:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this ModelDto.
+        r"""Gets the failed_message of this ModelDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -422,7 +422,7 @@ class ModelDto:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this ModelDto.
+        r"""Sets the failed_message of this ModelDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -433,7 +433,7 @@ class ModelDto:
 
     @property
     def losses(self):
-        """Gets the losses of this ModelDto.
+        r"""Gets the losses of this ModelDto.
 
         模型训练loss信息
 
@@ -444,7 +444,7 @@ class ModelDto:
 
     @losses.setter
     def losses(self, losses):
-        """Sets the losses of this ModelDto.
+        r"""Sets the losses of this ModelDto.
 
         模型训练loss信息
 
@@ -455,7 +455,7 @@ class ModelDto:
 
     @property
     def metrics(self):
-        """Gets the metrics of this ModelDto.
+        r"""Gets the metrics of this ModelDto.
 
         模型评估指标
 
@@ -466,7 +466,7 @@ class ModelDto:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ModelDto.
+        r"""Sets the metrics of this ModelDto.
 
         模型评估指标
 
@@ -477,7 +477,7 @@ class ModelDto:
 
     @property
     def base_model_id(self):
-        """Gets the base_model_id of this ModelDto.
+        r"""Gets the base_model_id of this ModelDto.
 
         基模型id
 
@@ -488,7 +488,7 @@ class ModelDto:
 
     @base_model_id.setter
     def base_model_id(self, base_model_id):
-        """Sets the base_model_id of this ModelDto.
+        r"""Sets the base_model_id of this ModelDto.
 
         基模型id
 
@@ -499,7 +499,7 @@ class ModelDto:
 
     @property
     def base_model_name(self):
-        """Gets the base_model_name of this ModelDto.
+        r"""Gets the base_model_name of this ModelDto.
 
         基模型名称
 
@@ -510,7 +510,7 @@ class ModelDto:
 
     @base_model_name.setter
     def base_model_name(self, base_model_name):
-        """Sets the base_model_name of this ModelDto.
+        r"""Sets the base_model_name of this ModelDto.
 
         基模型名称
 

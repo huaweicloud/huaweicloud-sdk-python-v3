@@ -25,7 +25,7 @@ class BatchReplaceDefinerReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchReplaceDefinerReq
+        r"""BatchReplaceDefinerReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchReplaceDefinerReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchReplaceDefinerReq.
+        r"""Gets the jobs of this BatchReplaceDefinerReq.
 
         批量设置replaceDefiner请求列表
 
@@ -53,7 +53,7 @@ class BatchReplaceDefinerReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchReplaceDefinerReq.
+        r"""Sets the jobs of this BatchReplaceDefinerReq.
 
         批量设置replaceDefiner请求列表
 

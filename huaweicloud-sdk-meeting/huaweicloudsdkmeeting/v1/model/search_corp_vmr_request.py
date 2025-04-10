@@ -37,7 +37,7 @@ class SearchCorpVmrRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, vmr_mode=None, status=None):
-        """SearchCorpVmrRequest
+        r"""SearchCorpVmrRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SearchCorpVmrRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchCorpVmrRequest.
+        r"""Gets the x_request_id of this SearchCorpVmrRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -96,7 +96,7 @@ class SearchCorpVmrRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchCorpVmrRequest.
+        r"""Sets the x_request_id of this SearchCorpVmrRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -107,7 +107,7 @@ class SearchCorpVmrRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchCorpVmrRequest.
+        r"""Gets the accept_language of this SearchCorpVmrRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -118,7 +118,7 @@ class SearchCorpVmrRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchCorpVmrRequest.
+        r"""Sets the accept_language of this SearchCorpVmrRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -129,7 +129,7 @@ class SearchCorpVmrRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpVmrRequest.
+        r"""Gets the offset of this SearchCorpVmrRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -140,7 +140,7 @@ class SearchCorpVmrRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpVmrRequest.
+        r"""Sets the offset of this SearchCorpVmrRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -151,7 +151,7 @@ class SearchCorpVmrRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpVmrRequest.
+        r"""Gets the limit of this SearchCorpVmrRequest.
 
         查询数量。 默认值：10。 
 
@@ -162,7 +162,7 @@ class SearchCorpVmrRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpVmrRequest.
+        r"""Sets the limit of this SearchCorpVmrRequest.
 
         查询数量。 默认值：10。 
 
@@ -173,7 +173,7 @@ class SearchCorpVmrRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchCorpVmrRequest.
+        r"""Gets the search_key of this SearchCorpVmrRequest.
 
         搜索条件。支持云会议室名称、ID及分配的用户、硬终端名称模糊搜索。
 
@@ -184,7 +184,7 @@ class SearchCorpVmrRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchCorpVmrRequest.
+        r"""Sets the search_key of this SearchCorpVmrRequest.
 
         搜索条件。支持云会议室名称、ID及分配的用户、硬终端名称模糊搜索。
 
@@ -195,7 +195,7 @@ class SearchCorpVmrRequest:
 
     @property
     def vmr_mode(self):
-        """Gets the vmr_mode of this SearchCorpVmrRequest.
+        r"""Gets the vmr_mode of this SearchCorpVmrRequest.
 
         VMR模式。不填则默认为云会议室。 - 1：云会议室 - 2：网络研讨会 
 
@@ -206,7 +206,7 @@ class SearchCorpVmrRequest:
 
     @vmr_mode.setter
     def vmr_mode(self, vmr_mode):
-        """Sets the vmr_mode of this SearchCorpVmrRequest.
+        r"""Sets the vmr_mode of this SearchCorpVmrRequest.
 
         VMR模式。不填则默认为云会议室。 - 1：云会议室 - 2：网络研讨会 
 
@@ -217,7 +217,7 @@ class SearchCorpVmrRequest:
 
     @property
     def status(self):
-        """Gets the status of this SearchCorpVmrRequest.
+        r"""Gets the status of this SearchCorpVmrRequest.
 
         云会议室状态。不填则查询所有。 * 0：正常 * 1：停用 * 2：未分配 
 
@@ -228,7 +228,7 @@ class SearchCorpVmrRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchCorpVmrRequest.
+        r"""Sets the status of this SearchCorpVmrRequest.
 
         云会议室状态。不填则查询所有。 * 0：正常 * 1：停用 * 2：未分配 
 

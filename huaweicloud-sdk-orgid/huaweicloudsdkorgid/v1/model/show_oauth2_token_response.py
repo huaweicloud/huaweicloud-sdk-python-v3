@@ -34,7 +34,7 @@ class ShowOauth2TokenResponse(SdkResponse):
     }
 
     def __init__(self, access_token=None, refresh_token=None, scope=None, token_type=None, expires_in=None):
-        """ShowOauth2TokenResponse
+        r"""ShowOauth2TokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @property
     def access_token(self):
-        """Gets the access_token of this ShowOauth2TokenResponse.
+        r"""Gets the access_token of this ShowOauth2TokenResponse.
 
         用户级接入token
 
@@ -83,7 +83,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this ShowOauth2TokenResponse.
+        r"""Sets the access_token of this ShowOauth2TokenResponse.
 
         用户级接入token
 
@@ -94,7 +94,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @property
     def refresh_token(self):
-        """Gets the refresh_token of this ShowOauth2TokenResponse.
+        r"""Gets the refresh_token of this ShowOauth2TokenResponse.
 
         用户级刷新token，离线模式适用，用于服务端主动刷新用户token
 
@@ -105,7 +105,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @refresh_token.setter
     def refresh_token(self, refresh_token):
-        """Sets the refresh_token of this ShowOauth2TokenResponse.
+        r"""Sets the refresh_token of this ShowOauth2TokenResponse.
 
         用户级刷新token，离线模式适用，用于服务端主动刷新用户token
 
@@ -116,7 +116,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @property
     def scope(self):
-        """Gets the scope of this ShowOauth2TokenResponse.
+        r"""Gets the scope of this ShowOauth2TokenResponse.
 
         授权信息范围
 
@@ -127,7 +127,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowOauth2TokenResponse.
+        r"""Sets the scope of this ShowOauth2TokenResponse.
 
         授权信息范围
 
@@ -138,7 +138,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @property
     def token_type(self):
-        """Gets the token_type of this ShowOauth2TokenResponse.
+        r"""Gets the token_type of this ShowOauth2TokenResponse.
 
         token类型，固定值“Bearer”，消息头传入token时前缀填入方式
 
@@ -149,7 +149,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this ShowOauth2TokenResponse.
+        r"""Sets the token_type of this ShowOauth2TokenResponse.
 
         token类型，固定值“Bearer”，消息头传入token时前缀填入方式
 
@@ -160,7 +160,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @property
     def expires_in(self):
-        """Gets the expires_in of this ShowOauth2TokenResponse.
+        r"""Gets the expires_in of this ShowOauth2TokenResponse.
 
         token失效时长
 
@@ -171,7 +171,7 @@ class ShowOauth2TokenResponse(SdkResponse):
 
     @expires_in.setter
     def expires_in(self, expires_in):
-        """Sets the expires_in of this ShowOauth2TokenResponse.
+        r"""Sets the expires_in of this ShowOauth2TokenResponse.
 
         token失效时长
 

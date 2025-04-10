@@ -25,7 +25,7 @@ class ReverseProtectionGroupRequestParams:
     }
 
     def __init__(self, priority_station=None):
-        """ReverseProtectionGroupRequestParams
+        r"""ReverseProtectionGroupRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReverseProtectionGroupRequestParams:
 
     @property
     def priority_station(self):
-        """Gets the priority_station of this ReverseProtectionGroupRequestParams.
+        r"""Gets the priority_station of this ReverseProtectionGroupRequestParams.
 
         切换方向。target：表示从创建保护组时指定的生产站点切换到创建保护组时指定的容灾站点。source：表示从创建保护组时指定的容灾站点切换到创建保护组时指定的生产站点。
 
@@ -53,7 +53,7 @@ class ReverseProtectionGroupRequestParams:
 
     @priority_station.setter
     def priority_station(self, priority_station):
-        """Sets the priority_station of this ReverseProtectionGroupRequestParams.
+        r"""Sets the priority_station of this ReverseProtectionGroupRequestParams.
 
         切换方向。target：表示从创建保护组时指定的生产站点切换到创建保护组时指定的容灾站点。source：表示从创建保护组时指定的容灾站点切换到创建保护组时指定的生产站点。
 

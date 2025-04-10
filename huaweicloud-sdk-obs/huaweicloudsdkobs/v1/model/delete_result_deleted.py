@@ -33,7 +33,7 @@ class DeleteResultDeleted:
     }
 
     def __init__(self, key=None, version_id=None, delete_marker=None, delete_marker_version_id=None):
-        """DeleteResultDeleted
+        r"""DeleteResultDeleted
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DeleteResultDeleted:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResultDeleted.
+        r"""Gets the key of this DeleteResultDeleted.
 
         Object names in a deletion result
 
@@ -77,7 +77,7 @@ class DeleteResultDeleted:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResultDeleted.
+        r"""Sets the key of this DeleteResultDeleted.
 
         Object names in a deletion result
 
@@ -88,7 +88,7 @@ class DeleteResultDeleted:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeleteResultDeleted.
+        r"""Gets the version_id of this DeleteResultDeleted.
 
         Version IDs of objects to be deleted
 
@@ -99,7 +99,7 @@ class DeleteResultDeleted:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeleteResultDeleted.
+        r"""Sets the version_id of this DeleteResultDeleted.
 
         Version IDs of objects to be deleted
 
@@ -110,7 +110,7 @@ class DeleteResultDeleted:
 
     @property
     def delete_marker(self):
-        """Gets the delete_marker of this DeleteResultDeleted.
+        r"""Gets the delete_marker of this DeleteResultDeleted.
 
         If this element is specified, **true** will be returned when you create or delete a deletion marker in the requested bucket with versioning enabled.
 
@@ -121,7 +121,7 @@ class DeleteResultDeleted:
 
     @delete_marker.setter
     def delete_marker(self, delete_marker):
-        """Sets the delete_marker of this DeleteResultDeleted.
+        r"""Sets the delete_marker of this DeleteResultDeleted.
 
         If this element is specified, **true** will be returned when you create or delete a deletion marker in the requested bucket with versioning enabled.
 
@@ -132,7 +132,7 @@ class DeleteResultDeleted:
 
     @property
     def delete_marker_version_id(self):
-        """Gets the delete_marker_version_id of this DeleteResultDeleted.
+        r"""Gets the delete_marker_version_id of this DeleteResultDeleted.
 
         Version ID of the delete marker to create or delete.  If the request either creates or deletes a delete marker, OBS returns this element in response with the version ID of the delete marker. This element will be returned in either of the following cases:  You send a delete request with no version ID specified. You send a request with a version ID specified, but this version ID represents a delete marker. In this case, OBS deletes the delete marker and returns its version ID in the response.
 
@@ -143,7 +143,7 @@ class DeleteResultDeleted:
 
     @delete_marker_version_id.setter
     def delete_marker_version_id(self, delete_marker_version_id):
-        """Sets the delete_marker_version_id of this DeleteResultDeleted.
+        r"""Sets the delete_marker_version_id of this DeleteResultDeleted.
 
         Version ID of the delete marker to create or delete.  If the request either creates or deletes a delete marker, OBS returns this element in response with the version ID of the delete marker. This element will be returned in either of the following cases:  You send a delete request with no version ID specified. You send a request with a version ID specified, but this version ID represents a delete marker. In this case, OBS deletes the delete marker and returns its version ID in the response.
 

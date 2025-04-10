@@ -34,7 +34,7 @@ class ListEnvInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instance_info_list=None, total_count=None, online_count=None, offline_count=None, disable_count=None):
-        """ListEnvInstancesResponse
+        r"""ListEnvInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @property
     def instance_info_list(self):
-        """Gets the instance_info_list of this ListEnvInstancesResponse.
+        r"""Gets the instance_info_list of this ListEnvInstancesResponse.
 
         实例信息列表。
 
@@ -83,7 +83,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @instance_info_list.setter
     def instance_info_list(self, instance_info_list):
-        """Sets the instance_info_list of this ListEnvInstancesResponse.
+        r"""Sets the instance_info_list of this ListEnvInstancesResponse.
 
         实例信息列表。
 
@@ -94,7 +94,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEnvInstancesResponse.
+        r"""Gets the total_count of this ListEnvInstancesResponse.
 
         实例总数。
 
@@ -105,7 +105,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEnvInstancesResponse.
+        r"""Sets the total_count of this ListEnvInstancesResponse.
 
         实例总数。
 
@@ -116,7 +116,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @property
     def online_count(self):
-        """Gets the online_count of this ListEnvInstancesResponse.
+        r"""Gets the online_count of this ListEnvInstancesResponse.
 
         在线实例总数。
 
@@ -127,7 +127,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @online_count.setter
     def online_count(self, online_count):
-        """Sets the online_count of this ListEnvInstancesResponse.
+        r"""Sets the online_count of this ListEnvInstancesResponse.
 
         在线实例总数。
 
@@ -138,7 +138,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @property
     def offline_count(self):
-        """Gets the offline_count of this ListEnvInstancesResponse.
+        r"""Gets the offline_count of this ListEnvInstancesResponse.
 
         离线实例总数。
 
@@ -149,7 +149,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @offline_count.setter
     def offline_count(self, offline_count):
-        """Sets the offline_count of this ListEnvInstancesResponse.
+        r"""Sets the offline_count of this ListEnvInstancesResponse.
 
         离线实例总数。
 
@@ -160,7 +160,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @property
     def disable_count(self):
-        """Gets the disable_count of this ListEnvInstancesResponse.
+        r"""Gets the disable_count of this ListEnvInstancesResponse.
 
         停止实例总数。
 
@@ -171,7 +171,7 @@ class ListEnvInstancesResponse(SdkResponse):
 
     @disable_count.setter
     def disable_count(self, disable_count):
-        """Sets the disable_count of this ListEnvInstancesResponse.
+        r"""Sets the disable_count of this ListEnvInstancesResponse.
 
         停止实例总数。
 

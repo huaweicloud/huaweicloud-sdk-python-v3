@@ -39,7 +39,7 @@ class ListServiceConnectionsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, id=None, marker_id=None, status=None, sort_key=None, sort_dir=None, limit=None, offset=None):
-        """ListServiceConnectionsRequest
+        r"""ListServiceConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this ListServiceConnectionsRequest.
+        r"""Gets the vpc_endpoint_service_id of this ListServiceConnectionsRequest.
 
         终端节点服务的ID。
 
@@ -102,7 +102,7 @@ class ListServiceConnectionsRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this ListServiceConnectionsRequest.
+        r"""Sets the vpc_endpoint_service_id of this ListServiceConnectionsRequest.
 
         终端节点服务的ID。
 
@@ -113,7 +113,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListServiceConnectionsRequest.
+        r"""Gets the id of this ListServiceConnectionsRequest.
 
         终端节点的ID，唯一标识。
 
@@ -124,7 +124,7 @@ class ListServiceConnectionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServiceConnectionsRequest.
+        r"""Sets the id of this ListServiceConnectionsRequest.
 
         终端节点的ID，唯一标识。
 
@@ -135,7 +135,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this ListServiceConnectionsRequest.
+        r"""Gets the marker_id of this ListServiceConnectionsRequest.
 
         终端节点的报文标识。
 
@@ -146,7 +146,7 @@ class ListServiceConnectionsRequest:
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this ListServiceConnectionsRequest.
+        r"""Sets the marker_id of this ListServiceConnectionsRequest.
 
         终端节点的报文标识。
 
@@ -157,7 +157,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListServiceConnectionsRequest.
+        r"""Gets the status of this ListServiceConnectionsRequest.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - accepted：已接受  - rejected：已拒绝  - failed：失败
 
@@ -168,7 +168,7 @@ class ListServiceConnectionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListServiceConnectionsRequest.
+        r"""Sets the status of this ListServiceConnectionsRequest.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - accepted：已接受  - rejected：已拒绝  - failed：失败
 
@@ -179,7 +179,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListServiceConnectionsRequest.
+        r"""Gets the sort_key of this ListServiceConnectionsRequest.
 
         查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
@@ -190,7 +190,7 @@ class ListServiceConnectionsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListServiceConnectionsRequest.
+        r"""Sets the sort_key of this ListServiceConnectionsRequest.
 
         查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
@@ -201,7 +201,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListServiceConnectionsRequest.
+        r"""Gets the sort_dir of this ListServiceConnectionsRequest.
 
         查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -212,7 +212,7 @@ class ListServiceConnectionsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListServiceConnectionsRequest.
+        r"""Sets the sort_dir of this ListServiceConnectionsRequest.
 
         查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -223,7 +223,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServiceConnectionsRequest.
+        r"""Gets the limit of this ListServiceConnectionsRequest.
 
         查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -234,7 +234,7 @@ class ListServiceConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServiceConnectionsRequest.
+        r"""Sets the limit of this ListServiceConnectionsRequest.
 
         查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -245,7 +245,7 @@ class ListServiceConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServiceConnectionsRequest.
+        r"""Gets the offset of this ListServiceConnectionsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -256,7 +256,7 @@ class ListServiceConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServiceConnectionsRequest.
+        r"""Sets the offset of this ListServiceConnectionsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 

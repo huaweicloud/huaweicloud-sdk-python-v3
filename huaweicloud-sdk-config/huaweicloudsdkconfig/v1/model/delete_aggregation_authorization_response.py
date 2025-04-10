@@ -24,7 +24,7 @@ class DeleteAggregationAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAggregationAuthorizationResponse
+        r"""DeleteAggregationAuthorizationResponse
 
         The model defined in huaweicloud sdk
 

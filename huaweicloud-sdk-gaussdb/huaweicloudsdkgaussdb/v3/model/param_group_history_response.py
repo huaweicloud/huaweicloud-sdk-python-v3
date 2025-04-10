@@ -37,7 +37,7 @@ class ParamGroupHistoryResponse:
     }
 
     def __init__(self, parameter_name=None, old_value=None, new_value=None, update_result=None, is_applied=None, updated=None, applied=None):
-        """ParamGroupHistoryResponse
+        r"""ParamGroupHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ParamGroupHistoryResponse.
+        r"""Gets the parameter_name of this ParamGroupHistoryResponse.
 
         参数名称。
 
@@ -96,7 +96,7 @@ class ParamGroupHistoryResponse:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ParamGroupHistoryResponse.
+        r"""Sets the parameter_name of this ParamGroupHistoryResponse.
 
         参数名称。
 
@@ -107,7 +107,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ParamGroupHistoryResponse.
+        r"""Gets the old_value of this ParamGroupHistoryResponse.
 
         修改前参数值。
 
@@ -118,7 +118,7 @@ class ParamGroupHistoryResponse:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ParamGroupHistoryResponse.
+        r"""Sets the old_value of this ParamGroupHistoryResponse.
 
         修改前参数值。
 
@@ -129,7 +129,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def new_value(self):
-        """Gets the new_value of this ParamGroupHistoryResponse.
+        r"""Gets the new_value of this ParamGroupHistoryResponse.
 
         修改后参数值。
 
@@ -140,7 +140,7 @@ class ParamGroupHistoryResponse:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this ParamGroupHistoryResponse.
+        r"""Sets the new_value of this ParamGroupHistoryResponse.
 
         修改后参数值。
 
@@ -151,7 +151,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def update_result(self):
-        """Gets the update_result of this ParamGroupHistoryResponse.
+        r"""Gets the update_result of this ParamGroupHistoryResponse.
 
         更新结果。
 
@@ -162,7 +162,7 @@ class ParamGroupHistoryResponse:
 
     @update_result.setter
     def update_result(self, update_result):
-        """Sets the update_result of this ParamGroupHistoryResponse.
+        r"""Sets the update_result of this ParamGroupHistoryResponse.
 
         更新结果。
 
@@ -173,7 +173,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def is_applied(self):
-        """Gets the is_applied of this ParamGroupHistoryResponse.
+        r"""Gets the is_applied of this ParamGroupHistoryResponse.
 
         是否应用。 - true：是。 - false：否。
 
@@ -184,7 +184,7 @@ class ParamGroupHistoryResponse:
 
     @is_applied.setter
     def is_applied(self, is_applied):
-        """Sets the is_applied of this ParamGroupHistoryResponse.
+        r"""Sets the is_applied of this ParamGroupHistoryResponse.
 
         是否应用。 - true：是。 - false：否。
 
@@ -195,7 +195,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this ParamGroupHistoryResponse.
+        r"""Gets the updated of this ParamGroupHistoryResponse.
 
         修改时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -206,7 +206,7 @@ class ParamGroupHistoryResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ParamGroupHistoryResponse.
+        r"""Sets the updated of this ParamGroupHistoryResponse.
 
         修改时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -217,7 +217,7 @@ class ParamGroupHistoryResponse:
 
     @property
     def applied(self):
-        """Gets the applied of this ParamGroupHistoryResponse.
+        r"""Gets the applied of this ParamGroupHistoryResponse.
 
         应用时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -228,7 +228,7 @@ class ParamGroupHistoryResponse:
 
     @applied.setter
     def applied(self, applied):
-        """Sets the applied of this ParamGroupHistoryResponse.
+        r"""Sets the applied of this ParamGroupHistoryResponse.
 
         应用时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 

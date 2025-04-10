@@ -27,7 +27,7 @@ class BatchDeleteRequestBodyTags:
     }
 
     def __init__(self, key=None, value=None):
-        """BatchDeleteRequestBodyTags
+        r"""BatchDeleteRequestBodyTags
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteRequestBodyTags:
 
     @property
     def key(self):
-        """Gets the key of this BatchDeleteRequestBodyTags.
+        r"""Gets the key of this BatchDeleteRequestBodyTags.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -60,7 +60,7 @@ class BatchDeleteRequestBodyTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BatchDeleteRequestBodyTags.
+        r"""Sets the key of this BatchDeleteRequestBodyTags.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -71,7 +71,7 @@ class BatchDeleteRequestBodyTags:
 
     @property
     def value(self):
-        """Gets the value of this BatchDeleteRequestBodyTags.
+        r"""Gets the value of this BatchDeleteRequestBodyTags.
 
         标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 
@@ -82,7 +82,7 @@ class BatchDeleteRequestBodyTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchDeleteRequestBodyTags.
+        r"""Sets the value of this BatchDeleteRequestBodyTags.
 
         标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 

@@ -39,7 +39,7 @@ class ResourceInstanceProp:
     }
 
     def __init__(self, host_name=None, fixed_ip=None, floating_ip=None, region_id=None, zone_id=None, application=None, group=None, project_id=None):
-        """ResourceInstanceProp
+        r"""ResourceInstanceProp
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ResourceInstanceProp:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ResourceInstanceProp.
+        r"""Gets the host_name of this ResourceInstanceProp.
 
         主机名 未校验：长度
 
@@ -99,7 +99,7 @@ class ResourceInstanceProp:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ResourceInstanceProp.
+        r"""Sets the host_name of this ResourceInstanceProp.
 
         主机名 未校验：长度
 
@@ -110,7 +110,7 @@ class ResourceInstanceProp:
 
     @property
     def fixed_ip(self):
-        """Gets the fixed_ip of this ResourceInstanceProp.
+        r"""Gets the fixed_ip of this ResourceInstanceProp.
 
         内网ip 未校验： 格式，长度
 
@@ -121,7 +121,7 @@ class ResourceInstanceProp:
 
     @fixed_ip.setter
     def fixed_ip(self, fixed_ip):
-        """Sets the fixed_ip of this ResourceInstanceProp.
+        r"""Sets the fixed_ip of this ResourceInstanceProp.
 
         内网ip 未校验： 格式，长度
 
@@ -132,7 +132,7 @@ class ResourceInstanceProp:
 
     @property
     def floating_ip(self):
-        """Gets the floating_ip of this ResourceInstanceProp.
+        r"""Gets the floating_ip of this ResourceInstanceProp.
 
         弹性公网ip 未校验： 格式，长度
 
@@ -143,7 +143,7 @@ class ResourceInstanceProp:
 
     @floating_ip.setter
     def floating_ip(self, floating_ip):
-        """Sets the floating_ip of this ResourceInstanceProp.
+        r"""Sets the floating_ip of this ResourceInstanceProp.
 
         弹性公网ip 未校验： 格式，长度
 
@@ -154,7 +154,7 @@ class ResourceInstanceProp:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceInstanceProp.
+        r"""Gets the region_id of this ResourceInstanceProp.
 
         区域 未校验： 长度
 
@@ -165,7 +165,7 @@ class ResourceInstanceProp:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceInstanceProp.
+        r"""Sets the region_id of this ResourceInstanceProp.
 
         区域 未校验： 长度
 
@@ -176,7 +176,7 @@ class ResourceInstanceProp:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ResourceInstanceProp.
+        r"""Gets the zone_id of this ResourceInstanceProp.
 
         可用区
 
@@ -187,7 +187,7 @@ class ResourceInstanceProp:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ResourceInstanceProp.
+        r"""Sets the zone_id of this ResourceInstanceProp.
 
         可用区
 
@@ -198,7 +198,7 @@ class ResourceInstanceProp:
 
     @property
     def application(self):
-        """Gets the application of this ResourceInstanceProp.
+        r"""Gets the application of this ResourceInstanceProp.
 
         CMDB应用，CMDB应用视图才有值。类似管理面的云服务
 
@@ -209,7 +209,7 @@ class ResourceInstanceProp:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this ResourceInstanceProp.
+        r"""Sets the application of this ResourceInstanceProp.
 
         CMDB应用，CMDB应用视图才有值。类似管理面的云服务
 
@@ -220,7 +220,7 @@ class ResourceInstanceProp:
 
     @property
     def group(self):
-        """Gets the group of this ResourceInstanceProp.
+        r"""Gets the group of this ResourceInstanceProp.
 
         CMDB分组，CMDB应用视图才有值。类似管理面的schema
 
@@ -231,7 +231,7 @@ class ResourceInstanceProp:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ResourceInstanceProp.
+        r"""Sets the group of this ResourceInstanceProp.
 
         CMDB分组，CMDB应用视图才有值。类似管理面的schema
 
@@ -242,7 +242,7 @@ class ResourceInstanceProp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ResourceInstanceProp.
+        r"""Gets the project_id of this ResourceInstanceProp.
 
         实例的 project_id  需要消费，建议必填 未校验长度
 
@@ -253,7 +253,7 @@ class ResourceInstanceProp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ResourceInstanceProp.
+        r"""Sets the project_id of this ResourceInstanceProp.
 
         实例的 project_id  需要消费，建议必填 未校验长度
 

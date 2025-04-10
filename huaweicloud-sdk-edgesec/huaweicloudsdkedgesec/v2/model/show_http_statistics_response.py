@@ -26,7 +26,7 @@ class ShowHttpStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowHttpStatisticsResponse
+        r"""ShowHttpStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowHttpStatisticsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowHttpStatisticsResponse.
+        r"""Gets the body of this ShowHttpStatisticsResponse.
 
         安全统计数据
 
@@ -55,7 +55,7 @@ class ShowHttpStatisticsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowHttpStatisticsResponse.
+        r"""Sets the body of this ShowHttpStatisticsResponse.
 
         安全统计数据
 

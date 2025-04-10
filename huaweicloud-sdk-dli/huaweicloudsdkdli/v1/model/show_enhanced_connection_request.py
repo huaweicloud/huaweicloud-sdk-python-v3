@@ -25,7 +25,7 @@ class ShowEnhancedConnectionRequest:
     }
 
     def __init__(self, connection_id=None):
-        """ShowEnhancedConnectionRequest
+        r"""ShowEnhancedConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEnhancedConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowEnhancedConnectionRequest.
+        r"""Gets the connection_id of this ShowEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -53,7 +53,7 @@ class ShowEnhancedConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowEnhancedConnectionRequest.
+        r"""Sets the connection_id of this ShowEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 

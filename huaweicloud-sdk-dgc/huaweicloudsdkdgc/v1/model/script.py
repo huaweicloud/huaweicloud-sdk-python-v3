@@ -27,7 +27,7 @@ class Script:
     }
 
     def __init__(self, name=None, path=None):
-        """Script
+        r"""Script
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Script:
 
     @property
     def name(self):
-        """Gets the name of this Script.
+        r"""Gets the name of this Script.
 
         :return: The name of this Script.
         :rtype: str
@@ -59,7 +59,7 @@ class Script:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Script.
+        r"""Sets the name of this Script.
 
         :param name: The name of this Script.
         :type name: str
@@ -68,7 +68,7 @@ class Script:
 
     @property
     def path(self):
-        """Gets the path of this Script.
+        r"""Gets the path of this Script.
 
         :return: The path of this Script.
         :rtype: str
@@ -77,7 +77,7 @@ class Script:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Script.
+        r"""Sets the path of this Script.
 
         :param path: The path of this Script.
         :type path: str

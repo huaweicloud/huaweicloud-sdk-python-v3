@@ -47,7 +47,7 @@ class ListHasVerifiedContactsRequest:
     }
 
     def __init__(self, contact_way=None, customer_id=None, sub_customer_id=None, expired_time=None, verified_id=None, contact_value=None, area_code=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListHasVerifiedContactsRequest
+        r"""ListHasVerifiedContactsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def contact_way(self):
-        """Gets the contact_way of this ListHasVerifiedContactsRequest.
+        r"""Gets the contact_way of this ListHasVerifiedContactsRequest.
 
         联系方式类型，0: 手机; 1: 邮箱
 
@@ -131,7 +131,7 @@ class ListHasVerifiedContactsRequest:
 
     @contact_way.setter
     def contact_way(self, contact_way):
-        """Sets the contact_way of this ListHasVerifiedContactsRequest.
+        r"""Sets the contact_way of this ListHasVerifiedContactsRequest.
 
         联系方式类型，0: 手机; 1: 邮箱
 
@@ -142,7 +142,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ListHasVerifiedContactsRequest.
+        r"""Gets the customer_id of this ListHasVerifiedContactsRequest.
 
         客户id
 
@@ -153,7 +153,7 @@ class ListHasVerifiedContactsRequest:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ListHasVerifiedContactsRequest.
+        r"""Sets the customer_id of this ListHasVerifiedContactsRequest.
 
         客户id
 
@@ -164,7 +164,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this ListHasVerifiedContactsRequest.
+        r"""Gets the sub_customer_id of this ListHasVerifiedContactsRequest.
 
         子用户id
 
@@ -175,7 +175,7 @@ class ListHasVerifiedContactsRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this ListHasVerifiedContactsRequest.
+        r"""Sets the sub_customer_id of this ListHasVerifiedContactsRequest.
 
         子用户id
 
@@ -186,7 +186,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this ListHasVerifiedContactsRequest.
+        r"""Gets the expired_time of this ListHasVerifiedContactsRequest.
 
         过期时间
 
@@ -197,7 +197,7 @@ class ListHasVerifiedContactsRequest:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this ListHasVerifiedContactsRequest.
+        r"""Sets the expired_time of this ListHasVerifiedContactsRequest.
 
         过期时间
 
@@ -208,7 +208,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def verified_id(self):
-        """Gets the verified_id of this ListHasVerifiedContactsRequest.
+        r"""Gets the verified_id of this ListHasVerifiedContactsRequest.
 
         验证序列号
 
@@ -219,7 +219,7 @@ class ListHasVerifiedContactsRequest:
 
     @verified_id.setter
     def verified_id(self, verified_id):
-        """Sets the verified_id of this ListHasVerifiedContactsRequest.
+        r"""Sets the verified_id of this ListHasVerifiedContactsRequest.
 
         验证序列号
 
@@ -230,7 +230,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def contact_value(self):
-        """Gets the contact_value of this ListHasVerifiedContactsRequest.
+        r"""Gets the contact_value of this ListHasVerifiedContactsRequest.
 
         联系方式的值
 
@@ -241,7 +241,7 @@ class ListHasVerifiedContactsRequest:
 
     @contact_value.setter
     def contact_value(self, contact_value):
-        """Sets the contact_value of this ListHasVerifiedContactsRequest.
+        r"""Sets the contact_value of this ListHasVerifiedContactsRequest.
 
         联系方式的值
 
@@ -252,7 +252,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def area_code(self):
-        """Gets the area_code of this ListHasVerifiedContactsRequest.
+        r"""Gets the area_code of this ListHasVerifiedContactsRequest.
 
         国家码
 
@@ -263,7 +263,7 @@ class ListHasVerifiedContactsRequest:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this ListHasVerifiedContactsRequest.
+        r"""Sets the area_code of this ListHasVerifiedContactsRequest.
 
         国家码
 
@@ -274,7 +274,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHasVerifiedContactsRequest.
+        r"""Gets the offset of this ListHasVerifiedContactsRequest.
 
         查询偏移量
 
@@ -285,7 +285,7 @@ class ListHasVerifiedContactsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHasVerifiedContactsRequest.
+        r"""Sets the offset of this ListHasVerifiedContactsRequest.
 
         查询偏移量
 
@@ -296,7 +296,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHasVerifiedContactsRequest.
+        r"""Gets the limit of this ListHasVerifiedContactsRequest.
 
         查询数量
 
@@ -307,7 +307,7 @@ class ListHasVerifiedContactsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHasVerifiedContactsRequest.
+        r"""Sets the limit of this ListHasVerifiedContactsRequest.
 
         查询数量
 
@@ -318,7 +318,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListHasVerifiedContactsRequest.
+        r"""Gets the x_site of this ListHasVerifiedContactsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -329,7 +329,7 @@ class ListHasVerifiedContactsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListHasVerifiedContactsRequest.
+        r"""Sets the x_site of this ListHasVerifiedContactsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -340,7 +340,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHasVerifiedContactsRequest.
+        r"""Gets the x_language of this ListHasVerifiedContactsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -351,7 +351,7 @@ class ListHasVerifiedContactsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHasVerifiedContactsRequest.
+        r"""Sets the x_language of this ListHasVerifiedContactsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -362,7 +362,7 @@ class ListHasVerifiedContactsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListHasVerifiedContactsRequest.
+        r"""Gets the x_time_zone of this ListHasVerifiedContactsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -373,7 +373,7 @@ class ListHasVerifiedContactsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListHasVerifiedContactsRequest.
+        r"""Sets the x_time_zone of this ListHasVerifiedContactsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

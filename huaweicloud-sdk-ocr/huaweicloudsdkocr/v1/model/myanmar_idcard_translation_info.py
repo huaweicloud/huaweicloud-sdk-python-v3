@@ -31,7 +31,7 @@ class MyanmarIdcardTranslationInfo:
     }
 
     def __init__(self, name_translation=None, father_name_translation=None, nrc_id_translation=None, birth_translation=None):
-        """MyanmarIdcardTranslationInfo
+        r"""MyanmarIdcardTranslationInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MyanmarIdcardTranslationInfo:
 
     @property
     def name_translation(self):
-        """Gets the name_translation of this MyanmarIdcardTranslationInfo.
+        r"""Gets the name_translation of this MyanmarIdcardTranslationInfo.
 
         名字转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -75,7 +75,7 @@ class MyanmarIdcardTranslationInfo:
 
     @name_translation.setter
     def name_translation(self, name_translation):
-        """Sets the name_translation of this MyanmarIdcardTranslationInfo.
+        r"""Sets the name_translation of this MyanmarIdcardTranslationInfo.
 
         名字转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -86,7 +86,7 @@ class MyanmarIdcardTranslationInfo:
 
     @property
     def father_name_translation(self):
-        """Gets the father_name_translation of this MyanmarIdcardTranslationInfo.
+        r"""Gets the father_name_translation of this MyanmarIdcardTranslationInfo.
 
         父亲名字的转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -97,7 +97,7 @@ class MyanmarIdcardTranslationInfo:
 
     @father_name_translation.setter
     def father_name_translation(self, father_name_translation):
-        """Sets the father_name_translation of this MyanmarIdcardTranslationInfo.
+        r"""Sets the father_name_translation of this MyanmarIdcardTranslationInfo.
 
         父亲名字的转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -108,7 +108,7 @@ class MyanmarIdcardTranslationInfo:
 
     @property
     def nrc_id_translation(self):
-        """Gets the nrc_id_translation of this MyanmarIdcardTranslationInfo.
+        r"""Gets the nrc_id_translation of this MyanmarIdcardTranslationInfo.
 
         身份证号码转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -119,7 +119,7 @@ class MyanmarIdcardTranslationInfo:
 
     @nrc_id_translation.setter
     def nrc_id_translation(self, nrc_id_translation):
-        """Sets the nrc_id_translation of this MyanmarIdcardTranslationInfo.
+        r"""Sets the nrc_id_translation of this MyanmarIdcardTranslationInfo.
 
         身份证号码转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -130,7 +130,7 @@ class MyanmarIdcardTranslationInfo:
 
     @property
     def birth_translation(self):
-        """Gets the birth_translation of this MyanmarIdcardTranslationInfo.
+        r"""Gets the birth_translation of this MyanmarIdcardTranslationInfo.
 
         出生日期转译。仅当输入参数return_translation为true时，返回该字段。 
 
@@ -141,7 +141,7 @@ class MyanmarIdcardTranslationInfo:
 
     @birth_translation.setter
     def birth_translation(self, birth_translation):
-        """Sets the birth_translation of this MyanmarIdcardTranslationInfo.
+        r"""Sets the birth_translation of this MyanmarIdcardTranslationInfo.
 
         出生日期转译。仅当输入参数return_translation为true时，返回该字段。 
 

@@ -27,7 +27,7 @@ class SetProfileImageRequest:
     }
 
     def __init__(self, x_request_id=None, body=None):
-        """SetProfileImageRequest
+        r"""SetProfileImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetProfileImageRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SetProfileImageRequest.
+        r"""Gets the x_request_id of this SetProfileImageRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -61,7 +61,7 @@ class SetProfileImageRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SetProfileImageRequest.
+        r"""Sets the x_request_id of this SetProfileImageRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -72,7 +72,7 @@ class SetProfileImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetProfileImageRequest.
+        r"""Gets the body of this SetProfileImageRequest.
 
         :return: The body of this SetProfileImageRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetProfileImageRequestBody`
@@ -81,7 +81,7 @@ class SetProfileImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetProfileImageRequest.
+        r"""Sets the body of this SetProfileImageRequest.
 
         :param body: The body of this SetProfileImageRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.SetProfileImageRequestBody`

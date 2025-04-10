@@ -43,7 +43,7 @@ class OrderRefundInfoV2:
     }
 
     def __init__(self, id=None, amount=None, measure_id=None, customer_id=None, resource_type_code=None, service_type_code=None, resource_type_name=None, service_type_name=None, region_code=None, base_order_id=None):
-        """OrderRefundInfoV2
+        r"""OrderRefundInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class OrderRefundInfoV2:
 
     @property
     def id(self):
-        """Gets the id of this OrderRefundInfoV2.
+        r"""Gets the id of this OrderRefundInfoV2.
 
         该记录的ID。
 
@@ -110,7 +110,7 @@ class OrderRefundInfoV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrderRefundInfoV2.
+        r"""Sets the id of this OrderRefundInfoV2.
 
         该记录的ID。
 
@@ -121,7 +121,7 @@ class OrderRefundInfoV2:
 
     @property
     def amount(self):
-        """Gets the amount of this OrderRefundInfoV2.
+        r"""Gets the amount of this OrderRefundInfoV2.
 
         金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
@@ -132,7 +132,7 @@ class OrderRefundInfoV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this OrderRefundInfoV2.
+        r"""Sets the amount of this OrderRefundInfoV2.
 
         金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
@@ -143,7 +143,7 @@ class OrderRefundInfoV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this OrderRefundInfoV2.
+        r"""Gets the measure_id of this OrderRefundInfoV2.
 
         金额的度量单位。 1：元
 
@@ -154,7 +154,7 @@ class OrderRefundInfoV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this OrderRefundInfoV2.
+        r"""Sets the measure_id of this OrderRefundInfoV2.
 
         金额的度量单位。 1：元
 
@@ -165,7 +165,7 @@ class OrderRefundInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this OrderRefundInfoV2.
+        r"""Gets the customer_id of this OrderRefundInfoV2.
 
         客户账号ID。
 
@@ -176,7 +176,7 @@ class OrderRefundInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this OrderRefundInfoV2.
+        r"""Sets the customer_id of this OrderRefundInfoV2.
 
         客户账号ID。
 
@@ -187,7 +187,7 @@ class OrderRefundInfoV2:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this OrderRefundInfoV2.
+        r"""Gets the resource_type_code of this OrderRefundInfoV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -198,7 +198,7 @@ class OrderRefundInfoV2:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this OrderRefundInfoV2.
+        r"""Sets the resource_type_code of this OrderRefundInfoV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -209,7 +209,7 @@ class OrderRefundInfoV2:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this OrderRefundInfoV2.
+        r"""Gets the service_type_code of this OrderRefundInfoV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -220,7 +220,7 @@ class OrderRefundInfoV2:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this OrderRefundInfoV2.
+        r"""Sets the service_type_code of this OrderRefundInfoV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -231,7 +231,7 @@ class OrderRefundInfoV2:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this OrderRefundInfoV2.
+        r"""Gets the resource_type_name of this OrderRefundInfoV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -242,7 +242,7 @@ class OrderRefundInfoV2:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this OrderRefundInfoV2.
+        r"""Sets the resource_type_name of this OrderRefundInfoV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -253,7 +253,7 @@ class OrderRefundInfoV2:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this OrderRefundInfoV2.
+        r"""Gets the service_type_name of this OrderRefundInfoV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -264,7 +264,7 @@ class OrderRefundInfoV2:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this OrderRefundInfoV2.
+        r"""Sets the service_type_name of this OrderRefundInfoV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -275,7 +275,7 @@ class OrderRefundInfoV2:
 
     @property
     def region_code(self):
-        """Gets the region_code of this OrderRefundInfoV2.
+        r"""Gets the region_code of this OrderRefundInfoV2.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -286,7 +286,7 @@ class OrderRefundInfoV2:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this OrderRefundInfoV2.
+        r"""Sets the region_code of this OrderRefundInfoV2.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -297,7 +297,7 @@ class OrderRefundInfoV2:
 
     @property
     def base_order_id(self):
-        """Gets the base_order_id of this OrderRefundInfoV2.
+        r"""Gets the base_order_id of this OrderRefundInfoV2.
 
         退订金额、已消费金额或收取退订手续费对应的原订单ID。
 
@@ -308,7 +308,7 @@ class OrderRefundInfoV2:
 
     @base_order_id.setter
     def base_order_id(self, base_order_id):
-        """Sets the base_order_id of this OrderRefundInfoV2.
+        r"""Sets the base_order_id of this OrderRefundInfoV2.
 
         退订金额、已消费金额或收取退订手续费对应的原订单ID。
 

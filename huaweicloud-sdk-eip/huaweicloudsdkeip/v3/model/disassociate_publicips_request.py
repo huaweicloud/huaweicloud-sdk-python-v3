@@ -25,7 +25,7 @@ class DisassociatePublicipsRequest:
     }
 
     def __init__(self, publicip_id=None):
-        """DisassociatePublicipsRequest
+        r"""DisassociatePublicipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociatePublicipsRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this DisassociatePublicipsRequest.
+        r"""Gets the publicip_id of this DisassociatePublicipsRequest.
 
         弹性公网IP的ID
 
@@ -53,7 +53,7 @@ class DisassociatePublicipsRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this DisassociatePublicipsRequest.
+        r"""Sets the publicip_id of this DisassociatePublicipsRequest.
 
         弹性公网IP的ID
 

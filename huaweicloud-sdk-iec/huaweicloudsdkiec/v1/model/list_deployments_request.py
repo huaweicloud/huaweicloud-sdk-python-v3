@@ -33,7 +33,7 @@ class ListDeploymentsRequest:
     }
 
     def __init__(self, offset=None, limit=None, status=None, id=None, edgecloud_id=None):
-        """ListDeploymentsRequest
+        r"""ListDeploymentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListDeploymentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDeploymentsRequest.
+        r"""Gets the offset of this ListDeploymentsRequest.
 
         偏移量。 当前偏移量，默认为0。
 
@@ -82,7 +82,7 @@ class ListDeploymentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDeploymentsRequest.
+        r"""Sets the offset of this ListDeploymentsRequest.
 
         偏移量。 当前偏移量，默认为0。
 
@@ -93,7 +93,7 @@ class ListDeploymentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDeploymentsRequest.
+        r"""Gets the limit of this ListDeploymentsRequest.
 
         查询返回部署计划列表当前页面的数量。
 
@@ -104,7 +104,7 @@ class ListDeploymentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDeploymentsRequest.
+        r"""Sets the limit of this ListDeploymentsRequest.
 
         查询返回部署计划列表当前页面的数量。
 
@@ -115,7 +115,7 @@ class ListDeploymentsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDeploymentsRequest.
+        r"""Gets the status of this ListDeploymentsRequest.
 
         查询条件，部署计划状态，现只包含如下值： - open:部署计划处于未执行状态，可执行部署计划进行部署 - closed:部署计划已关闭，不可部署。
 
@@ -126,7 +126,7 @@ class ListDeploymentsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDeploymentsRequest.
+        r"""Sets the status of this ListDeploymentsRequest.
 
         查询条件，部署计划状态，现只包含如下值： - open:部署计划处于未执行状态，可执行部署计划进行部署 - closed:部署计划已关闭，不可部署。
 
@@ -137,7 +137,7 @@ class ListDeploymentsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListDeploymentsRequest.
+        r"""Gets the id of this ListDeploymentsRequest.
 
         查询条件，部署计划ID。
 
@@ -148,7 +148,7 @@ class ListDeploymentsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListDeploymentsRequest.
+        r"""Sets the id of this ListDeploymentsRequest.
 
         查询条件，部署计划ID。
 
@@ -159,7 +159,7 @@ class ListDeploymentsRequest:
 
     @property
     def edgecloud_id(self):
-        """Gets the edgecloud_id of this ListDeploymentsRequest.
+        r"""Gets the edgecloud_id of this ListDeploymentsRequest.
 
         查询条件，边缘业务ID。
 
@@ -170,7 +170,7 @@ class ListDeploymentsRequest:
 
     @edgecloud_id.setter
     def edgecloud_id(self, edgecloud_id):
-        """Sets the edgecloud_id of this ListDeploymentsRequest.
+        r"""Sets the edgecloud_id of this ListDeploymentsRequest.
 
         查询条件，边缘业务ID。
 

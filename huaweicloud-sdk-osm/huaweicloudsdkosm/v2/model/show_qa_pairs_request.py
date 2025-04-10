@@ -33,7 +33,7 @@ class ShowQaPairsRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, search_type=None, body=None):
-        """ShowQaPairsRequest
+        r"""ShowQaPairsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowQaPairsRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ShowQaPairsRequest.
+        r"""Gets the x_service_key of this ShowQaPairsRequest.
 
         调用智能客服服务标志。
 
@@ -80,7 +80,7 @@ class ShowQaPairsRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ShowQaPairsRequest.
+        r"""Sets the x_service_key of this ShowQaPairsRequest.
 
         调用智能客服服务标志。
 
@@ -91,7 +91,7 @@ class ShowQaPairsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowQaPairsRequest.
+        r"""Gets the x_site of this ShowQaPairsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -102,7 +102,7 @@ class ShowQaPairsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowQaPairsRequest.
+        r"""Sets the x_site of this ShowQaPairsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -113,7 +113,7 @@ class ShowQaPairsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowQaPairsRequest.
+        r"""Gets the x_language of this ShowQaPairsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -124,7 +124,7 @@ class ShowQaPairsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowQaPairsRequest.
+        r"""Sets the x_language of this ShowQaPairsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -135,7 +135,7 @@ class ShowQaPairsRequest:
 
     @property
     def search_type(self):
-        """Gets the search_type of this ShowQaPairsRequest.
+        r"""Gets the search_type of this ShowQaPairsRequest.
 
         - HOT:  - RECOMMEND:  
 
@@ -146,7 +146,7 @@ class ShowQaPairsRequest:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this ShowQaPairsRequest.
+        r"""Sets the search_type of this ShowQaPairsRequest.
 
         - HOT:  - RECOMMEND:  
 
@@ -157,7 +157,7 @@ class ShowQaPairsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowQaPairsRequest.
+        r"""Gets the body of this ShowQaPairsRequest.
 
         :return: The body of this ShowQaPairsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SearchQaPairsReq`
@@ -166,7 +166,7 @@ class ShowQaPairsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowQaPairsRequest.
+        r"""Sets the body of this ShowQaPairsRequest.
 
         :param body: The body of this ShowQaPairsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SearchQaPairsReq`

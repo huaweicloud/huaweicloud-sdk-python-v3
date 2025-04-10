@@ -47,7 +47,7 @@ class CreateScoresRequestModel:
     }
 
     def __init__(self, competition_id=None, stage_id=None, works_id=None, name=None, works_kind=None, score=None, status=None, created_time=None, note=None, message=None, domain_id=None, user_id=None):
-        """CreateScoresRequestModel
+        r"""CreateScoresRequestModel
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CreateScoresRequestModel:
 
     @property
     def competition_id(self):
-        """Gets the competition_id of this CreateScoresRequestModel.
+        r"""Gets the competition_id of this CreateScoresRequestModel.
 
         大赛ID，大赛平台提供
 
@@ -123,7 +123,7 @@ class CreateScoresRequestModel:
 
     @competition_id.setter
     def competition_id(self, competition_id):
-        """Sets the competition_id of this CreateScoresRequestModel.
+        r"""Sets the competition_id of this CreateScoresRequestModel.
 
         大赛ID，大赛平台提供
 
@@ -134,7 +134,7 @@ class CreateScoresRequestModel:
 
     @property
     def stage_id(self):
-        """Gets the stage_id of this CreateScoresRequestModel.
+        r"""Gets the stage_id of this CreateScoresRequestModel.
 
         大赛阶段ID，大赛平台提供
 
@@ -145,7 +145,7 @@ class CreateScoresRequestModel:
 
     @stage_id.setter
     def stage_id(self, stage_id):
-        """Sets the stage_id of this CreateScoresRequestModel.
+        r"""Sets the stage_id of this CreateScoresRequestModel.
 
         大赛阶段ID，大赛平台提供
 
@@ -156,7 +156,7 @@ class CreateScoresRequestModel:
 
     @property
     def works_id(self):
-        """Gets the works_id of this CreateScoresRequestModel.
+        r"""Gets the works_id of this CreateScoresRequestModel.
 
         第三方服务作品ID
 
@@ -167,7 +167,7 @@ class CreateScoresRequestModel:
 
     @works_id.setter
     def works_id(self, works_id):
-        """Sets the works_id of this CreateScoresRequestModel.
+        r"""Sets the works_id of this CreateScoresRequestModel.
 
         第三方服务作品ID
 
@@ -178,7 +178,7 @@ class CreateScoresRequestModel:
 
     @property
     def name(self):
-        """Gets the name of this CreateScoresRequestModel.
+        r"""Gets the name of this CreateScoresRequestModel.
 
         作品名称，名称最大字符数为75，并且不能有含有特殊符号
 
@@ -189,7 +189,7 @@ class CreateScoresRequestModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateScoresRequestModel.
+        r"""Sets the name of this CreateScoresRequestModel.
 
         作品名称，名称最大字符数为75，并且不能有含有特殊符号
 
@@ -200,7 +200,7 @@ class CreateScoresRequestModel:
 
     @property
     def works_kind(self):
-        """Gets the works_kind of this CreateScoresRequestModel.
+        r"""Gets the works_kind of this CreateScoresRequestModel.
 
         作品类型,例如docx、png、zip等
 
@@ -211,7 +211,7 @@ class CreateScoresRequestModel:
 
     @works_kind.setter
     def works_kind(self, works_kind):
-        """Sets the works_kind of this CreateScoresRequestModel.
+        r"""Sets the works_kind of this CreateScoresRequestModel.
 
         作品类型,例如docx、png、zip等
 
@@ -222,7 +222,7 @@ class CreateScoresRequestModel:
 
     @property
     def score(self):
-        """Gets the score of this CreateScoresRequestModel.
+        r"""Gets the score of this CreateScoresRequestModel.
 
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
@@ -233,7 +233,7 @@ class CreateScoresRequestModel:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this CreateScoresRequestModel.
+        r"""Sets the score of this CreateScoresRequestModel.
 
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
@@ -244,7 +244,7 @@ class CreateScoresRequestModel:
 
     @property
     def status(self):
-        """Gets the status of this CreateScoresRequestModel.
+        r"""Gets the status of this CreateScoresRequestModel.
 
         作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
 
@@ -255,7 +255,7 @@ class CreateScoresRequestModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateScoresRequestModel.
+        r"""Sets the status of this CreateScoresRequestModel.
 
         作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
 
@@ -266,7 +266,7 @@ class CreateScoresRequestModel:
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateScoresRequestModel.
+        r"""Gets the created_time of this CreateScoresRequestModel.
 
         作品创建时间
 
@@ -277,7 +277,7 @@ class CreateScoresRequestModel:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateScoresRequestModel.
+        r"""Sets the created_time of this CreateScoresRequestModel.
 
         作品创建时间
 
@@ -288,7 +288,7 @@ class CreateScoresRequestModel:
 
     @property
     def note(self):
-        """Gets the note of this CreateScoresRequestModel.
+        r"""Gets the note of this CreateScoresRequestModel.
 
         作品备注信息
 
@@ -299,7 +299,7 @@ class CreateScoresRequestModel:
 
     @note.setter
     def note(self, note):
-        """Sets the note of this CreateScoresRequestModel.
+        r"""Sets the note of this CreateScoresRequestModel.
 
         作品备注信息
 
@@ -310,7 +310,7 @@ class CreateScoresRequestModel:
 
     @property
     def message(self):
-        """Gets the message of this CreateScoresRequestModel.
+        r"""Gets the message of this CreateScoresRequestModel.
 
         作品描述信息
 
@@ -321,7 +321,7 @@ class CreateScoresRequestModel:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateScoresRequestModel.
+        r"""Sets the message of this CreateScoresRequestModel.
 
         作品描述信息
 
@@ -332,7 +332,7 @@ class CreateScoresRequestModel:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateScoresRequestModel.
+        r"""Gets the domain_id of this CreateScoresRequestModel.
 
         租户ID
 
@@ -343,7 +343,7 @@ class CreateScoresRequestModel:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateScoresRequestModel.
+        r"""Sets the domain_id of this CreateScoresRequestModel.
 
         租户ID
 
@@ -354,7 +354,7 @@ class CreateScoresRequestModel:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateScoresRequestModel.
+        r"""Gets the user_id of this CreateScoresRequestModel.
 
         用户ID
 
@@ -365,7 +365,7 @@ class CreateScoresRequestModel:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateScoresRequestModel.
+        r"""Sets the user_id of this CreateScoresRequestModel.
 
         用户ID
 

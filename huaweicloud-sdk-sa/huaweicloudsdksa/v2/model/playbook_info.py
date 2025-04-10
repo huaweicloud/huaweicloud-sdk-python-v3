@@ -59,7 +59,7 @@ class PlaybookInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, create_time=None, update_time=None, project_id=None, version_id=None, enabled=None, workspace_id=None, approve_role=None, user_role=None, edit_role=None, owner_id=None, version=None, dataclass_name=None, dataclass_id=None, unaudited_version_id=None, reject_version_id=None):
-        """PlaybookInfo
+        r"""PlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class PlaybookInfo:
 
     @property
     def id(self):
-        """Gets the id of this PlaybookInfo.
+        r"""Gets the id of this PlaybookInfo.
 
         Id value
 
@@ -173,7 +173,7 @@ class PlaybookInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlaybookInfo.
+        r"""Sets the id of this PlaybookInfo.
 
         Id value
 
@@ -184,7 +184,7 @@ class PlaybookInfo:
 
     @property
     def name(self):
-        """Gets the name of this PlaybookInfo.
+        r"""Gets the name of this PlaybookInfo.
 
         The name, display only
 
@@ -195,7 +195,7 @@ class PlaybookInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlaybookInfo.
+        r"""Sets the name of this PlaybookInfo.
 
         The name, display only
 
@@ -206,7 +206,7 @@ class PlaybookInfo:
 
     @property
     def description(self):
-        """Gets the description of this PlaybookInfo.
+        r"""Gets the description of this PlaybookInfo.
 
         The description, display only
 
@@ -217,7 +217,7 @@ class PlaybookInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PlaybookInfo.
+        r"""Sets the description of this PlaybookInfo.
 
         The description, display only
 
@@ -228,7 +228,7 @@ class PlaybookInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PlaybookInfo.
+        r"""Gets the create_time of this PlaybookInfo.
 
         Create time
 
@@ -239,7 +239,7 @@ class PlaybookInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PlaybookInfo.
+        r"""Sets the create_time of this PlaybookInfo.
 
         Create time
 
@@ -250,7 +250,7 @@ class PlaybookInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PlaybookInfo.
+        r"""Gets the update_time of this PlaybookInfo.
 
         Update time
 
@@ -261,7 +261,7 @@ class PlaybookInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PlaybookInfo.
+        r"""Sets the update_time of this PlaybookInfo.
 
         Update time
 
@@ -272,7 +272,7 @@ class PlaybookInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PlaybookInfo.
+        r"""Gets the project_id of this PlaybookInfo.
 
         Project id value
 
@@ -283,7 +283,7 @@ class PlaybookInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PlaybookInfo.
+        r"""Sets the project_id of this PlaybookInfo.
 
         Project id value
 
@@ -294,7 +294,7 @@ class PlaybookInfo:
 
     @property
     def version_id(self):
-        """Gets the version_id of this PlaybookInfo.
+        r"""Gets the version_id of this PlaybookInfo.
 
         version Id value
 
@@ -305,7 +305,7 @@ class PlaybookInfo:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this PlaybookInfo.
+        r"""Sets the version_id of this PlaybookInfo.
 
         version Id value
 
@@ -316,7 +316,7 @@ class PlaybookInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this PlaybookInfo.
+        r"""Gets the enabled of this PlaybookInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -327,7 +327,7 @@ class PlaybookInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this PlaybookInfo.
+        r"""Sets the enabled of this PlaybookInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -338,7 +338,7 @@ class PlaybookInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this PlaybookInfo.
+        r"""Gets the workspace_id of this PlaybookInfo.
 
         工作空间id
 
@@ -349,7 +349,7 @@ class PlaybookInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this PlaybookInfo.
+        r"""Sets the workspace_id of this PlaybookInfo.
 
         工作空间id
 
@@ -360,7 +360,7 @@ class PlaybookInfo:
 
     @property
     def approve_role(self):
-        """Gets the approve_role of this PlaybookInfo.
+        r"""Gets the approve_role of this PlaybookInfo.
 
         Role required for approve
 
@@ -371,7 +371,7 @@ class PlaybookInfo:
 
     @approve_role.setter
     def approve_role(self, approve_role):
-        """Sets the approve_role of this PlaybookInfo.
+        r"""Sets the approve_role of this PlaybookInfo.
 
         Role required for approve
 
@@ -382,7 +382,7 @@ class PlaybookInfo:
 
     @property
     def user_role(self):
-        """Gets the user_role of this PlaybookInfo.
+        r"""Gets the user_role of this PlaybookInfo.
 
         用户角色
 
@@ -393,7 +393,7 @@ class PlaybookInfo:
 
     @user_role.setter
     def user_role(self, user_role):
-        """Sets the user_role of this PlaybookInfo.
+        r"""Sets the user_role of this PlaybookInfo.
 
         用户角色
 
@@ -404,7 +404,7 @@ class PlaybookInfo:
 
     @property
     def edit_role(self):
-        """Gets the edit_role of this PlaybookInfo.
+        r"""Gets the edit_role of this PlaybookInfo.
 
         Role required for edit
 
@@ -415,7 +415,7 @@ class PlaybookInfo:
 
     @edit_role.setter
     def edit_role(self, edit_role):
-        """Sets the edit_role of this PlaybookInfo.
+        r"""Sets the edit_role of this PlaybookInfo.
 
         Role required for edit
 
@@ -426,7 +426,7 @@ class PlaybookInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this PlaybookInfo.
+        r"""Gets the owner_id of this PlaybookInfo.
 
         Owner id
 
@@ -437,7 +437,7 @@ class PlaybookInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this PlaybookInfo.
+        r"""Sets the owner_id of this PlaybookInfo.
 
         Owner id
 
@@ -448,7 +448,7 @@ class PlaybookInfo:
 
     @property
     def version(self):
-        """Gets the version of this PlaybookInfo.
+        r"""Gets the version of this PlaybookInfo.
 
         version
 
@@ -459,7 +459,7 @@ class PlaybookInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PlaybookInfo.
+        r"""Sets the version of this PlaybookInfo.
 
         version
 
@@ -470,7 +470,7 @@ class PlaybookInfo:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this PlaybookInfo.
+        r"""Gets the dataclass_name of this PlaybookInfo.
 
         数据类名称
 
@@ -481,7 +481,7 @@ class PlaybookInfo:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this PlaybookInfo.
+        r"""Sets the dataclass_name of this PlaybookInfo.
 
         数据类名称
 
@@ -492,7 +492,7 @@ class PlaybookInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this PlaybookInfo.
+        r"""Gets the dataclass_id of this PlaybookInfo.
 
         数据类ID
 
@@ -503,7 +503,7 @@ class PlaybookInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this PlaybookInfo.
+        r"""Sets the dataclass_id of this PlaybookInfo.
 
         数据类ID
 
@@ -514,7 +514,7 @@ class PlaybookInfo:
 
     @property
     def unaudited_version_id(self):
-        """Gets the unaudited_version_id of this PlaybookInfo.
+        r"""Gets the unaudited_version_id of this PlaybookInfo.
 
         待审核剧本版本ID
 
@@ -525,7 +525,7 @@ class PlaybookInfo:
 
     @unaudited_version_id.setter
     def unaudited_version_id(self, unaudited_version_id):
-        """Sets the unaudited_version_id of this PlaybookInfo.
+        r"""Sets the unaudited_version_id of this PlaybookInfo.
 
         待审核剧本版本ID
 
@@ -536,7 +536,7 @@ class PlaybookInfo:
 
     @property
     def reject_version_id(self):
-        """Gets the reject_version_id of this PlaybookInfo.
+        r"""Gets the reject_version_id of this PlaybookInfo.
 
         已驳回剧本版本ID
 
@@ -547,7 +547,7 @@ class PlaybookInfo:
 
     @reject_version_id.setter
     def reject_version_id(self, reject_version_id):
-        """Sets the reject_version_id of this PlaybookInfo.
+        r"""Sets the reject_version_id of this PlaybookInfo.
 
         已驳回剧本版本ID
 

@@ -41,7 +41,7 @@ class QueryMessageInfoV2:
     }
 
     def __init__(self, type=None, replier_type=None, replier=None, content=None, create_time=None, replier_name=None, is_first_message=None, iam_user_type=None, accessory_list=None):
-        """QueryMessageInfoV2
+        r"""QueryMessageInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryMessageInfoV2:
 
     @property
     def type(self):
-        """Gets the type of this QueryMessageInfoV2.
+        r"""Gets the type of this QueryMessageInfoV2.
 
         类型，0客户留言 1华为工程师留言
 
@@ -110,7 +110,7 @@ class QueryMessageInfoV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryMessageInfoV2.
+        r"""Sets the type of this QueryMessageInfoV2.
 
         类型，0客户留言 1华为工程师留言
 
@@ -121,7 +121,7 @@ class QueryMessageInfoV2:
 
     @property
     def replier_type(self):
-        """Gets the replier_type of this QueryMessageInfoV2.
+        r"""Gets the replier_type of this QueryMessageInfoV2.
 
         回复人类型，0客户留言 1华为工程师留言 2第三方留言
 
@@ -132,7 +132,7 @@ class QueryMessageInfoV2:
 
     @replier_type.setter
     def replier_type(self, replier_type):
-        """Sets the replier_type of this QueryMessageInfoV2.
+        r"""Sets the replier_type of this QueryMessageInfoV2.
 
         回复人类型，0客户留言 1华为工程师留言 2第三方留言
 
@@ -143,7 +143,7 @@ class QueryMessageInfoV2:
 
     @property
     def replier(self):
-        """Gets the replier of this QueryMessageInfoV2.
+        r"""Gets the replier of this QueryMessageInfoV2.
 
         回复人id
 
@@ -154,7 +154,7 @@ class QueryMessageInfoV2:
 
     @replier.setter
     def replier(self, replier):
-        """Sets the replier of this QueryMessageInfoV2.
+        r"""Sets the replier of this QueryMessageInfoV2.
 
         回复人id
 
@@ -165,7 +165,7 @@ class QueryMessageInfoV2:
 
     @property
     def content(self):
-        """Gets the content of this QueryMessageInfoV2.
+        r"""Gets the content of this QueryMessageInfoV2.
 
         留言内容
 
@@ -176,7 +176,7 @@ class QueryMessageInfoV2:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this QueryMessageInfoV2.
+        r"""Sets the content of this QueryMessageInfoV2.
 
         留言内容
 
@@ -187,7 +187,7 @@ class QueryMessageInfoV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryMessageInfoV2.
+        r"""Gets the create_time of this QueryMessageInfoV2.
 
         创建时间
 
@@ -198,7 +198,7 @@ class QueryMessageInfoV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryMessageInfoV2.
+        r"""Sets the create_time of this QueryMessageInfoV2.
 
         创建时间
 
@@ -209,7 +209,7 @@ class QueryMessageInfoV2:
 
     @property
     def replier_name(self):
-        """Gets the replier_name of this QueryMessageInfoV2.
+        r"""Gets the replier_name of this QueryMessageInfoV2.
 
         回复人名称
 
@@ -220,7 +220,7 @@ class QueryMessageInfoV2:
 
     @replier_name.setter
     def replier_name(self, replier_name):
-        """Sets the replier_name of this QueryMessageInfoV2.
+        r"""Sets the replier_name of this QueryMessageInfoV2.
 
         回复人名称
 
@@ -231,7 +231,7 @@ class QueryMessageInfoV2:
 
     @property
     def is_first_message(self):
-        """Gets the is_first_message of this QueryMessageInfoV2.
+        r"""Gets the is_first_message of this QueryMessageInfoV2.
 
         是否是第一条留言
 
@@ -242,7 +242,7 @@ class QueryMessageInfoV2:
 
     @is_first_message.setter
     def is_first_message(self, is_first_message):
-        """Sets the is_first_message of this QueryMessageInfoV2.
+        r"""Sets the is_first_message of this QueryMessageInfoV2.
 
         是否是第一条留言
 
@@ -253,7 +253,7 @@ class QueryMessageInfoV2:
 
     @property
     def iam_user_type(self):
-        """Gets the iam_user_type of this QueryMessageInfoV2.
+        r"""Gets the iam_user_type of this QueryMessageInfoV2.
 
         子用户类型
 
@@ -264,7 +264,7 @@ class QueryMessageInfoV2:
 
     @iam_user_type.setter
     def iam_user_type(self, iam_user_type):
-        """Sets the iam_user_type of this QueryMessageInfoV2.
+        r"""Sets the iam_user_type of this QueryMessageInfoV2.
 
         子用户类型
 
@@ -275,7 +275,7 @@ class QueryMessageInfoV2:
 
     @property
     def accessory_list(self):
-        """Gets the accessory_list of this QueryMessageInfoV2.
+        r"""Gets the accessory_list of this QueryMessageInfoV2.
 
         附件列表
 
@@ -286,7 +286,7 @@ class QueryMessageInfoV2:
 
     @accessory_list.setter
     def accessory_list(self, accessory_list):
-        """Sets the accessory_list of this QueryMessageInfoV2.
+        r"""Sets the accessory_list of this QueryMessageInfoV2.
 
         附件列表
 

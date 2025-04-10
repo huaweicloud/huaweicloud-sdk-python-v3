@@ -31,7 +31,7 @@ class CreateSecurityGroupOption:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, tags=None):
-        """CreateSecurityGroupOption
+        r"""CreateSecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateSecurityGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateSecurityGroupOption.
+        r"""Gets the name of this CreateSecurityGroupOption.
 
         功能描述：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -74,7 +74,7 @@ class CreateSecurityGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSecurityGroupOption.
+        r"""Sets the name of this CreateSecurityGroupOption.
 
         功能描述：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -85,7 +85,7 @@ class CreateSecurityGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateSecurityGroupOption.
+        r"""Gets the description of this CreateSecurityGroupOption.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -96,7 +96,7 @@ class CreateSecurityGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSecurityGroupOption.
+        r"""Sets the description of this CreateSecurityGroupOption.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -107,7 +107,7 @@ class CreateSecurityGroupOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateSecurityGroupOption.
+        r"""Gets the enterprise_project_id of this CreateSecurityGroupOption.
 
         功能说明：企业项目ID。创建安全组时，给安全组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -118,7 +118,7 @@ class CreateSecurityGroupOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateSecurityGroupOption.
+        r"""Sets the enterprise_project_id of this CreateSecurityGroupOption.
 
         功能说明：企业项目ID。创建安全组时，给安全组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -129,7 +129,7 @@ class CreateSecurityGroupOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateSecurityGroupOption.
+        r"""Gets the tags of this CreateSecurityGroupOption.
 
         功能描述：安全组的标签信息
 
@@ -140,7 +140,7 @@ class CreateSecurityGroupOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateSecurityGroupOption.
+        r"""Sets the tags of this CreateSecurityGroupOption.
 
         功能描述：安全组的标签信息
 

@@ -31,7 +31,7 @@ class RuleInstanceContent:
     }
 
     def __init__(self, group_name=None, type=None, can_modify_when_inherit=None, properties=None):
-        """RuleInstanceContent
+        r"""RuleInstanceContent
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RuleInstanceContent:
 
     @property
     def group_name(self):
-        """Gets the group_name of this RuleInstanceContent.
+        r"""Gets the group_name of this RuleInstanceContent.
 
         分组名称
 
@@ -72,7 +72,7 @@ class RuleInstanceContent:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this RuleInstanceContent.
+        r"""Sets the group_name of this RuleInstanceContent.
 
         分组名称
 
@@ -83,7 +83,7 @@ class RuleInstanceContent:
 
     @property
     def type(self):
-        """Gets the type of this RuleInstanceContent.
+        r"""Gets the type of this RuleInstanceContent.
 
         分组类型
 
@@ -94,7 +94,7 @@ class RuleInstanceContent:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleInstanceContent.
+        r"""Sets the type of this RuleInstanceContent.
 
         分组类型
 
@@ -105,7 +105,7 @@ class RuleInstanceContent:
 
     @property
     def can_modify_when_inherit(self):
-        """Gets the can_modify_when_inherit of this RuleInstanceContent.
+        r"""Gets the can_modify_when_inherit of this RuleInstanceContent.
 
         继承后的子策略是否可以修改阈值
 
@@ -116,7 +116,7 @@ class RuleInstanceContent:
 
     @can_modify_when_inherit.setter
     def can_modify_when_inherit(self, can_modify_when_inherit):
-        """Sets the can_modify_when_inherit of this RuleInstanceContent.
+        r"""Sets the can_modify_when_inherit of this RuleInstanceContent.
 
         继承后的子策略是否可以修改阈值
 
@@ -127,7 +127,7 @@ class RuleInstanceContent:
 
     @property
     def properties(self):
-        """Gets the properties of this RuleInstanceContent.
+        r"""Gets the properties of this RuleInstanceContent.
 
         规则属性列表
 
@@ -138,7 +138,7 @@ class RuleInstanceContent:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this RuleInstanceContent.
+        r"""Sets the properties of this RuleInstanceContent.
 
         规则属性列表
 

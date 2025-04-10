@@ -25,7 +25,7 @@ class ListAgenciesRequest:
     }
 
     def __init__(self, type=None):
-        """ListAgenciesRequest
+        r"""ListAgenciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAgenciesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAgenciesRequest.
+        r"""Gets the type of this ListAgenciesRequest.
 
         服务委托授权场景类型
 
@@ -53,7 +53,7 @@ class ListAgenciesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAgenciesRequest.
+        r"""Sets the type of this ListAgenciesRequest.
 
         服务委托授权场景类型
 

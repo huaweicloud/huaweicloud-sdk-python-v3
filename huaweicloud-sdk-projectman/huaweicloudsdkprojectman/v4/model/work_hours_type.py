@@ -29,7 +29,7 @@ class WorkHoursType:
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """WorkHoursType
+        r"""WorkHoursType
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WorkHoursType:
 
     @property
     def id(self):
-        """Gets the id of this WorkHoursType.
+        r"""Gets the id of this WorkHoursType.
 
         工时类型id
 
@@ -68,7 +68,7 @@ class WorkHoursType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkHoursType.
+        r"""Sets the id of this WorkHoursType.
 
         工时类型id
 
@@ -79,7 +79,7 @@ class WorkHoursType:
 
     @property
     def name(self):
-        """Gets the name of this WorkHoursType.
+        r"""Gets the name of this WorkHoursType.
 
         工时类型名称
 
@@ -90,7 +90,7 @@ class WorkHoursType:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkHoursType.
+        r"""Sets the name of this WorkHoursType.
 
         工时类型名称
 
@@ -101,7 +101,7 @@ class WorkHoursType:
 
     @property
     def status(self):
-        """Gets the status of this WorkHoursType.
+        r"""Gets the status of this WorkHoursType.
 
         工时类型状态，1表示启用中，2表示未启用
 
@@ -112,7 +112,7 @@ class WorkHoursType:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkHoursType.
+        r"""Sets the status of this WorkHoursType.
 
         工时类型状态，1表示启用中，2表示未启用
 

@@ -36,7 +36,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     }
 
     def __init__(self, enabled=None, id=None, name=None, operation_type=None, operation_definition=None, trigger=None):
-        """ShowBackupPolicyInfoResponse
+        r"""ShowBackupPolicyInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -46,7 +46,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
         :type id: str
         :param name: 策略名称
         :type name: str
-        :param operation_type: 备份类型。备份（backup）、复制(replication)，包含如下2种。   - backup ：备份。   - replication ：复制。
+        :param operation_type: 备份类型。当前包含如下1种。   - backup ：备份
         :type operation_type: str
         :param operation_definition: 
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionInfo`
@@ -79,7 +79,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowBackupPolicyInfoResponse.
+        r"""Gets the enabled of this ShowBackupPolicyInfoResponse.
 
         策略是否启用
 
@@ -90,7 +90,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowBackupPolicyInfoResponse.
+        r"""Sets the enabled of this ShowBackupPolicyInfoResponse.
 
         策略是否启用
 
@@ -101,7 +101,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowBackupPolicyInfoResponse.
+        r"""Gets the id of this ShowBackupPolicyInfoResponse.
 
         策略ID
 
@@ -112,7 +112,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBackupPolicyInfoResponse.
+        r"""Sets the id of this ShowBackupPolicyInfoResponse.
 
         策略ID
 
@@ -123,7 +123,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowBackupPolicyInfoResponse.
+        r"""Gets the name of this ShowBackupPolicyInfoResponse.
 
         策略名称
 
@@ -134,7 +134,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowBackupPolicyInfoResponse.
+        r"""Sets the name of this ShowBackupPolicyInfoResponse.
 
         策略名称
 
@@ -145,9 +145,9 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ShowBackupPolicyInfoResponse.
+        r"""Gets the operation_type of this ShowBackupPolicyInfoResponse.
 
-        备份类型。备份（backup）、复制(replication)，包含如下2种。   - backup ：备份。   - replication ：复制。
+        备份类型。当前包含如下1种。   - backup ：备份
 
         :return: The operation_type of this ShowBackupPolicyInfoResponse.
         :rtype: str
@@ -156,9 +156,9 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ShowBackupPolicyInfoResponse.
+        r"""Sets the operation_type of this ShowBackupPolicyInfoResponse.
 
-        备份类型。备份（backup）、复制(replication)，包含如下2种。   - backup ：备份。   - replication ：复制。
+        备份类型。当前包含如下1种。   - backup ：备份
 
         :param operation_type: The operation_type of this ShowBackupPolicyInfoResponse.
         :type operation_type: str
@@ -167,7 +167,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @property
     def operation_definition(self):
-        """Gets the operation_definition of this ShowBackupPolicyInfoResponse.
+        r"""Gets the operation_definition of this ShowBackupPolicyInfoResponse.
 
         :return: The operation_definition of this ShowBackupPolicyInfoResponse.
         :rtype: :class:`huaweicloudsdkhss.v5.OperationDefinitionInfo`
@@ -176,7 +176,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @operation_definition.setter
     def operation_definition(self, operation_definition):
-        """Sets the operation_definition of this ShowBackupPolicyInfoResponse.
+        r"""Sets the operation_definition of this ShowBackupPolicyInfoResponse.
 
         :param operation_definition: The operation_definition of this ShowBackupPolicyInfoResponse.
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionInfo`
@@ -185,7 +185,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @property
     def trigger(self):
-        """Gets the trigger of this ShowBackupPolicyInfoResponse.
+        r"""Gets the trigger of this ShowBackupPolicyInfoResponse.
 
         :return: The trigger of this ShowBackupPolicyInfoResponse.
         :rtype: :class:`huaweicloudsdkhss.v5.BackupTriggerInfo`
@@ -194,7 +194,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this ShowBackupPolicyInfoResponse.
+        r"""Sets the trigger of this ShowBackupPolicyInfoResponse.
 
         :param trigger: The trigger of this ShowBackupPolicyInfoResponse.
         :type trigger: :class:`huaweicloudsdkhss.v5.BackupTriggerInfo`

@@ -43,7 +43,7 @@ class ListCustomerAccountChangeRecordsRequest:
     }
 
     def __init__(self, balance_type=None, revenue_expense_type=None, trade_type=None, trade_time_begin=None, trade_time_end=None, trade_id=None, payment_channel_id=None, payment_channel_no=None, offset=None, limit=None):
-        """ListCustomerAccountChangeRecordsRequest
+        r"""ListCustomerAccountChangeRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def balance_type(self):
-        """Gets the balance_type of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the balance_type of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户| |参数的约束及描述：必填|
 
@@ -116,7 +116,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @balance_type.setter
     def balance_type(self, balance_type):
-        """Sets the balance_type of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the balance_type of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户| |参数的约束及描述：必填|
 
@@ -127,7 +127,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def revenue_expense_type(self):
-        """Gets the revenue_expense_type of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the revenue_expense_type of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：收支类型。REVENUE：收入EXPENSE：支出| |参数的约束及描述：非必填|
 
@@ -138,7 +138,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @revenue_expense_type.setter
     def revenue_expense_type(self, revenue_expense_type):
-        """Sets the revenue_expense_type of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the revenue_expense_type of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：收支类型。REVENUE：收入EXPENSE：支出| |参数的约束及描述：非必填|
 
@@ -149,7 +149,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def trade_type(self):
-        """Gets the trade_type of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the trade_type of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更DEPOSIT：保证金| |参数的约束及描述：非必填|
 
@@ -160,7 +160,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @trade_type.setter
     def trade_type(self, trade_type):
-        """Sets the trade_type of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the trade_type of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更DEPOSIT：保证金| |参数的约束及描述：非必填|
 
@@ -171,7 +171,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def trade_time_begin(self):
-        """Gets the trade_time_begin of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the trade_time_begin of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：查询收支明细的开始日期| |参数的约束及描述：非必填|
 
@@ -182,7 +182,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @trade_time_begin.setter
     def trade_time_begin(self, trade_time_begin):
-        """Sets the trade_time_begin of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the trade_time_begin of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：查询收支明细的开始日期| |参数的约束及描述：非必填|
 
@@ -193,7 +193,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def trade_time_end(self):
-        """Gets the trade_time_end of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the trade_time_end of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：查询收支明细的结束日期| |参数的约束及描述：非必填|
 
@@ -204,7 +204,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @trade_time_end.setter
     def trade_time_end(self, trade_time_end):
-        """Sets the trade_time_end of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the trade_time_end of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：查询收支明细的结束日期| |参数的约束及描述：非必填|
 
@@ -215,7 +215,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the trade_id of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易ID/订单ID| |参数的约束及描述：非必填|
 
@@ -226,7 +226,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the trade_id of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易ID/订单ID| |参数的约束及描述：非必填|
 
@@ -237,7 +237,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def payment_channel_id(self):
-        """Gets the payment_channel_id of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the payment_channel_id of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易渠道。可以一次查询多个，用逗号分隔。1：支付宝2：银行转账4：支付宝/网银5：微信支付6：提现7：激励返点10：交易模式变更11：调账317：银联（统一支付平台）319：Huawei Pay320：华为支付| |参数的约束及描述：非必填|
 
@@ -248,7 +248,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @payment_channel_id.setter
     def payment_channel_id(self, payment_channel_id):
-        """Sets the payment_channel_id of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the payment_channel_id of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易渠道。可以一次查询多个，用逗号分隔。1：支付宝2：银行转账4：支付宝/网银5：微信支付6：提现7：激励返点10：交易模式变更11：调账317：银联（统一支付平台）319：Huawei Pay320：华为支付| |参数的约束及描述：非必填|
 
@@ -259,7 +259,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def payment_channel_no(self):
-        """Gets the payment_channel_no of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the payment_channel_no of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易渠道流水号| |参数的约束及描述：非必填|
 
@@ -270,7 +270,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @payment_channel_no.setter
     def payment_channel_no(self, payment_channel_no):
-        """Sets the payment_channel_no of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the payment_channel_no of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：交易渠道流水号| |参数的约束及描述：非必填|
 
@@ -281,7 +281,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the offset of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：偏移量| |参数的约束及描述：非必填|
 
@@ -292,7 +292,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the offset of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：偏移量| |参数的约束及描述：非必填|
 
@@ -303,7 +303,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomerAccountChangeRecordsRequest.
+        r"""Gets the limit of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：每页的显示条数| |参数的约束及描述：非必填|
 
@@ -314,7 +314,7 @@ class ListCustomerAccountChangeRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomerAccountChangeRecordsRequest.
+        r"""Sets the limit of this ListCustomerAccountChangeRecordsRequest.
 
         |参数名称：每页的显示条数| |参数的约束及描述：非必填|
 

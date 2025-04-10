@@ -29,7 +29,7 @@ class UpdatePublicZoneInfo:
     }
 
     def __init__(self, description=None, email=None, ttl=None):
-        """UpdatePublicZoneInfo
+        r"""UpdatePublicZoneInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePublicZoneInfo:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePublicZoneInfo.
+        r"""Gets the description of this UpdatePublicZoneInfo.
 
         域名的描述信息。长度不超过255个字符。
 
@@ -68,7 +68,7 @@ class UpdatePublicZoneInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePublicZoneInfo.
+        r"""Sets the description of this UpdatePublicZoneInfo.
 
         域名的描述信息。长度不超过255个字符。
 
@@ -79,7 +79,7 @@ class UpdatePublicZoneInfo:
 
     @property
     def email(self):
-        """Gets the email of this UpdatePublicZoneInfo.
+        r"""Gets the email of this UpdatePublicZoneInfo.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。  如果为空，表示维持原值。  默认值为空。
 
@@ -90,7 +90,7 @@ class UpdatePublicZoneInfo:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdatePublicZoneInfo.
+        r"""Sets the email of this UpdatePublicZoneInfo.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。  如果为空，表示维持原值。  默认值为空。
 
@@ -101,7 +101,7 @@ class UpdatePublicZoneInfo:
 
     @property
     def ttl(self):
-        """Gets the ttl of this UpdatePublicZoneInfo.
+        r"""Gets the ttl of this UpdatePublicZoneInfo.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
@@ -112,7 +112,7 @@ class UpdatePublicZoneInfo:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this UpdatePublicZoneInfo.
+        r"""Sets the ttl of this UpdatePublicZoneInfo.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 

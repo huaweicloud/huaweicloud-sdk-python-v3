@@ -25,7 +25,7 @@ class CreateProjectDomainRequestBody:
     }
 
     def __init__(self, domain_name=None):
-        """CreateProjectDomainRequestBody
+        r"""CreateProjectDomainRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateProjectDomainRequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateProjectDomainRequestBody.
+        r"""Gets the domain_name of this CreateProjectDomainRequestBody.
 
         领域名称
 
@@ -53,7 +53,7 @@ class CreateProjectDomainRequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateProjectDomainRequestBody.
+        r"""Sets the domain_name of this CreateProjectDomainRequestBody.
 
         领域名称
 

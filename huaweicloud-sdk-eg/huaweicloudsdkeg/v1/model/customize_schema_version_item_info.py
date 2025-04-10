@@ -31,7 +31,7 @@ class CustomizeSchemaVersionItemInfo:
     }
 
     def __init__(self, id=None, version=None, created_time=None, updated_time=None):
-        """CustomizeSchemaVersionItemInfo
+        r"""CustomizeSchemaVersionItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @property
     def id(self):
-        """Gets the id of this CustomizeSchemaVersionItemInfo.
+        r"""Gets the id of this CustomizeSchemaVersionItemInfo.
 
         事件模型版本ID
 
@@ -75,7 +75,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomizeSchemaVersionItemInfo.
+        r"""Sets the id of this CustomizeSchemaVersionItemInfo.
 
         事件模型版本ID
 
@@ -86,7 +86,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @property
     def version(self):
-        """Gets the version of this CustomizeSchemaVersionItemInfo.
+        r"""Gets the version of this CustomizeSchemaVersionItemInfo.
 
         事件模型版本号
 
@@ -97,7 +97,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CustomizeSchemaVersionItemInfo.
+        r"""Sets the version of this CustomizeSchemaVersionItemInfo.
 
         事件模型版本号
 
@@ -108,7 +108,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this CustomizeSchemaVersionItemInfo.
+        r"""Gets the created_time of this CustomizeSchemaVersionItemInfo.
 
         创建时间
 
@@ -119,7 +119,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CustomizeSchemaVersionItemInfo.
+        r"""Sets the created_time of this CustomizeSchemaVersionItemInfo.
 
         创建时间
 
@@ -130,7 +130,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this CustomizeSchemaVersionItemInfo.
+        r"""Gets the updated_time of this CustomizeSchemaVersionItemInfo.
 
         更新时间
 
@@ -141,7 +141,7 @@ class CustomizeSchemaVersionItemInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this CustomizeSchemaVersionItemInfo.
+        r"""Sets the updated_time of this CustomizeSchemaVersionItemInfo.
 
         更新时间
 

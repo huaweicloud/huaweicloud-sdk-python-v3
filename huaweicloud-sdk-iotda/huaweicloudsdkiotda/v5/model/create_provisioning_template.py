@@ -29,7 +29,7 @@ class CreateProvisioningTemplate:
     }
 
     def __init__(self, template_name=None, description=None, template_body=None):
-        """CreateProvisioningTemplate
+        r"""CreateProvisioningTemplate
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateProvisioningTemplate:
 
     @property
     def template_name(self):
-        """Gets the template_name of this CreateProvisioningTemplate.
+        r"""Gets the template_name of this CreateProvisioningTemplate.
 
         **参数说明**：预调配模板名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -66,7 +66,7 @@ class CreateProvisioningTemplate:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this CreateProvisioningTemplate.
+        r"""Sets the template_name of this CreateProvisioningTemplate.
 
         **参数说明**：预调配模板名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -77,7 +77,7 @@ class CreateProvisioningTemplate:
 
     @property
     def description(self):
-        """Gets the description of this CreateProvisioningTemplate.
+        r"""Gets the description of this CreateProvisioningTemplate.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -88,7 +88,7 @@ class CreateProvisioningTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProvisioningTemplate.
+        r"""Sets the description of this CreateProvisioningTemplate.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -99,7 +99,7 @@ class CreateProvisioningTemplate:
 
     @property
     def template_body(self):
-        """Gets the template_body of this CreateProvisioningTemplate.
+        r"""Gets the template_body of this CreateProvisioningTemplate.
 
         :return: The template_body of this CreateProvisioningTemplate.
         :rtype: :class:`huaweicloudsdkiotda.v5.ProvisioningTemplateBody`
@@ -108,7 +108,7 @@ class CreateProvisioningTemplate:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this CreateProvisioningTemplate.
+        r"""Sets the template_body of this CreateProvisioningTemplate.
 
         :param template_body: The template_body of this CreateProvisioningTemplate.
         :type template_body: :class:`huaweicloudsdkiotda.v5.ProvisioningTemplateBody`

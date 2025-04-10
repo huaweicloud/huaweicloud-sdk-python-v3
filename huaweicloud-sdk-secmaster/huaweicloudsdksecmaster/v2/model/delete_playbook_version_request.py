@@ -29,7 +29,7 @@ class DeletePlaybookVersionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None):
-        """DeletePlaybookVersionRequest
+        r"""DeletePlaybookVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeletePlaybookVersionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeletePlaybookVersionRequest.
+        r"""Gets the project_id of this DeletePlaybookVersionRequest.
 
         项目ID
 
@@ -65,7 +65,7 @@ class DeletePlaybookVersionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeletePlaybookVersionRequest.
+        r"""Sets the project_id of this DeletePlaybookVersionRequest.
 
         项目ID
 
@@ -76,7 +76,7 @@ class DeletePlaybookVersionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeletePlaybookVersionRequest.
+        r"""Gets the workspace_id of this DeletePlaybookVersionRequest.
 
         工作空间ID
 
@@ -87,7 +87,7 @@ class DeletePlaybookVersionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeletePlaybookVersionRequest.
+        r"""Sets the workspace_id of this DeletePlaybookVersionRequest.
 
         工作空间ID
 
@@ -98,7 +98,7 @@ class DeletePlaybookVersionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeletePlaybookVersionRequest.
+        r"""Gets the version_id of this DeletePlaybookVersionRequest.
 
         剧本版本ID
 
@@ -109,7 +109,7 @@ class DeletePlaybookVersionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeletePlaybookVersionRequest.
+        r"""Sets the version_id of this DeletePlaybookVersionRequest.
 
         剧本版本ID
 

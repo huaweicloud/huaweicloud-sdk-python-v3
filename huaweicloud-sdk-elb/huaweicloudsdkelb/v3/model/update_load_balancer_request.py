@@ -27,7 +27,7 @@ class UpdateLoadBalancerRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """UpdateLoadBalancerRequest
+        r"""UpdateLoadBalancerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLoadBalancerRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this UpdateLoadBalancerRequest.
+        r"""Gets the loadbalancer_id of this UpdateLoadBalancerRequest.
 
         负载均衡器ID。
 
@@ -60,7 +60,7 @@ class UpdateLoadBalancerRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this UpdateLoadBalancerRequest.
+        r"""Sets the loadbalancer_id of this UpdateLoadBalancerRequest.
 
         负载均衡器ID。
 
@@ -71,7 +71,7 @@ class UpdateLoadBalancerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLoadBalancerRequest.
+        r"""Gets the body of this UpdateLoadBalancerRequest.
 
         :return: The body of this UpdateLoadBalancerRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerRequestBody`
@@ -80,7 +80,7 @@ class UpdateLoadBalancerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLoadBalancerRequest.
+        r"""Sets the body of this UpdateLoadBalancerRequest.
 
         :param body: The body of this UpdateLoadBalancerRequest.
         :type body: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerRequestBody`

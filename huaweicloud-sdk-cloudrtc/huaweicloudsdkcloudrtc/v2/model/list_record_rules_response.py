@@ -28,7 +28,7 @@ class ListRecordRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, x_request_id=None):
-        """ListRecordRulesResponse
+        r"""ListRecordRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListRecordRulesResponse.
+        r"""Gets the rules of this ListRecordRulesResponse.
 
         录制规则列表
 
@@ -62,7 +62,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListRecordRulesResponse.
+        r"""Sets the rules of this ListRecordRulesResponse.
 
         录制规则列表
 
@@ -73,7 +73,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRecordRulesResponse.
+        r"""Gets the x_request_id of this ListRecordRulesResponse.
 
         :return: The x_request_id of this ListRecordRulesResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRecordRulesResponse.
+        r"""Sets the x_request_id of this ListRecordRulesResponse.
 
         :param x_request_id: The x_request_id of this ListRecordRulesResponse.
         :type x_request_id: str

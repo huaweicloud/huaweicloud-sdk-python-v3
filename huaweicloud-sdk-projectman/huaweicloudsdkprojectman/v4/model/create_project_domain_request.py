@@ -27,7 +27,7 @@ class CreateProjectDomainRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateProjectDomainRequest
+        r"""CreateProjectDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateProjectDomainRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateProjectDomainRequest.
+        r"""Gets the project_id of this CreateProjectDomainRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class CreateProjectDomainRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateProjectDomainRequest.
+        r"""Sets the project_id of this CreateProjectDomainRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class CreateProjectDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectDomainRequest.
+        r"""Gets the body of this CreateProjectDomainRequest.
 
         :return: The body of this CreateProjectDomainRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequestBody`
@@ -80,7 +80,7 @@ class CreateProjectDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectDomainRequest.
+        r"""Sets the body of this CreateProjectDomainRequest.
 
         :param body: The body of this CreateProjectDomainRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequestBody`

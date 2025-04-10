@@ -29,7 +29,7 @@ class BatchCopyResultVo:
     }
 
     def __init__(self, reason=None, status=None, domain_name=None):
-        """BatchCopyResultVo
+        r"""BatchCopyResultVo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCopyResultVo:
 
     @property
     def reason(self):
-        """Gets the reason of this BatchCopyResultVo.
+        r"""Gets the reason of this BatchCopyResultVo.
 
         失败原因,成功时没有该字段
 
@@ -66,7 +66,7 @@ class BatchCopyResultVo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this BatchCopyResultVo.
+        r"""Sets the reason of this BatchCopyResultVo.
 
         失败原因,成功时没有该字段
 
@@ -77,7 +77,7 @@ class BatchCopyResultVo:
 
     @property
     def status(self):
-        """Gets the status of this BatchCopyResultVo.
+        r"""Gets the status of this BatchCopyResultVo.
 
         批量操作结果。
 
@@ -88,7 +88,7 @@ class BatchCopyResultVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchCopyResultVo.
+        r"""Sets the status of this BatchCopyResultVo.
 
         批量操作结果。
 
@@ -99,7 +99,7 @@ class BatchCopyResultVo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this BatchCopyResultVo.
+        r"""Gets the domain_name of this BatchCopyResultVo.
 
         域名。
 
@@ -110,7 +110,7 @@ class BatchCopyResultVo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this BatchCopyResultVo.
+        r"""Sets the domain_name of this BatchCopyResultVo.
 
         域名。
 

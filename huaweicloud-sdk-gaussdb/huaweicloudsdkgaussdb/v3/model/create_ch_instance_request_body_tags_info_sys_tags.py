@@ -27,7 +27,7 @@ class CreateChInstanceRequestBodyTagsInfoSysTags:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateChInstanceRequestBodyTagsInfoSysTags
+        r"""CreateChInstanceRequestBodyTagsInfoSysTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateChInstanceRequestBodyTagsInfoSysTags:
 
     @property
     def key(self):
-        """Gets the key of this CreateChInstanceRequestBodyTagsInfoSysTags.
+        r"""Gets the key of this CreateChInstanceRequestBodyTagsInfoSysTags.
 
         标签键。
 
@@ -59,7 +59,7 @@ class CreateChInstanceRequestBodyTagsInfoSysTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateChInstanceRequestBodyTagsInfoSysTags.
+        r"""Sets the key of this CreateChInstanceRequestBodyTagsInfoSysTags.
 
         标签键。
 
@@ -70,7 +70,7 @@ class CreateChInstanceRequestBodyTagsInfoSysTags:
 
     @property
     def value(self):
-        """Gets the value of this CreateChInstanceRequestBodyTagsInfoSysTags.
+        r"""Gets the value of this CreateChInstanceRequestBodyTagsInfoSysTags.
 
         标签值。
 
@@ -81,7 +81,7 @@ class CreateChInstanceRequestBodyTagsInfoSysTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateChInstanceRequestBodyTagsInfoSysTags.
+        r"""Sets the value of this CreateChInstanceRequestBodyTagsInfoSysTags.
 
         标签值。
 

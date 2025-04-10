@@ -27,7 +27,7 @@ class DemoFieldAccess:
     }
 
     def __init__(self, field_name=None, field_value=None):
-        """DemoFieldAccess
+        r"""DemoFieldAccess
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DemoFieldAccess:
 
     @property
     def field_name(self):
-        """Gets the field_name of this DemoFieldAccess.
+        r"""Gets the field_name of this DemoFieldAccess.
 
         字段名称需和keys中字段保持一致
 
@@ -61,7 +61,7 @@ class DemoFieldAccess:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this DemoFieldAccess.
+        r"""Sets the field_name of this DemoFieldAccess.
 
         字段名称需和keys中字段保持一致
 
@@ -72,7 +72,7 @@ class DemoFieldAccess:
 
     @property
     def field_value(self):
-        """Gets the field_value of this DemoFieldAccess.
+        r"""Gets the field_value of this DemoFieldAccess.
 
         字段值
 
@@ -83,7 +83,7 @@ class DemoFieldAccess:
 
     @field_value.setter
     def field_value(self, field_value):
-        """Sets the field_value of this DemoFieldAccess.
+        r"""Sets the field_value of this DemoFieldAccess.
 
         字段值
 

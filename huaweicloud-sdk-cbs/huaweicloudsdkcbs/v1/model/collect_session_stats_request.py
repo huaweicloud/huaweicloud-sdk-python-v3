@@ -33,7 +33,7 @@ class CollectSessionStatsRequest:
     }
 
     def __init__(self, qabot_id=None, start_time=None, end_time=None, interval=None, time_zone=None):
-        """CollectSessionStatsRequest
+        r"""CollectSessionStatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CollectSessionStatsRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this CollectSessionStatsRequest.
+        r"""Gets the qabot_id of this CollectSessionStatsRequest.
 
         qabot编号，UUID格式。
 
@@ -81,7 +81,7 @@ class CollectSessionStatsRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this CollectSessionStatsRequest.
+        r"""Sets the qabot_id of this CollectSessionStatsRequest.
 
         qabot编号，UUID格式。
 
@@ -92,7 +92,7 @@ class CollectSessionStatsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CollectSessionStatsRequest.
+        r"""Gets the start_time of this CollectSessionStatsRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -103,7 +103,7 @@ class CollectSessionStatsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CollectSessionStatsRequest.
+        r"""Sets the start_time of this CollectSessionStatsRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -114,7 +114,7 @@ class CollectSessionStatsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CollectSessionStatsRequest.
+        r"""Gets the end_time of this CollectSessionStatsRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -125,7 +125,7 @@ class CollectSessionStatsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CollectSessionStatsRequest.
+        r"""Sets the end_time of this CollectSessionStatsRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -136,7 +136,7 @@ class CollectSessionStatsRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this CollectSessionStatsRequest.
+        r"""Gets the interval of this CollectSessionStatsRequest.
 
         统计周期目前支持month,week,day。
 
@@ -147,7 +147,7 @@ class CollectSessionStatsRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this CollectSessionStatsRequest.
+        r"""Sets the interval of this CollectSessionStatsRequest.
 
         统计周期目前支持month,week,day。
 
@@ -158,7 +158,7 @@ class CollectSessionStatsRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CollectSessionStatsRequest.
+        r"""Gets the time_zone of this CollectSessionStatsRequest.
 
         请求所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\"；默认为\"UTC\"。
 
@@ -169,7 +169,7 @@ class CollectSessionStatsRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CollectSessionStatsRequest.
+        r"""Sets the time_zone of this CollectSessionStatsRequest.
 
         请求所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\"；默认为\"UTC\"。
 

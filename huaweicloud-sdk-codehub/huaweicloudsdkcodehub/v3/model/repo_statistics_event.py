@@ -39,7 +39,7 @@ class RepoStatisticsEvent:
     }
 
     def __init__(self, branch=None, created_at=None, date=None, id=None, project_id=None, status=None, updated_at=None, user_id=None):
-        """RepoStatisticsEvent
+        r"""RepoStatisticsEvent
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RepoStatisticsEvent:
 
     @property
     def branch(self):
-        """Gets the branch of this RepoStatisticsEvent.
+        r"""Gets the branch of this RepoStatisticsEvent.
 
         分支名
 
@@ -103,7 +103,7 @@ class RepoStatisticsEvent:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this RepoStatisticsEvent.
+        r"""Sets the branch of this RepoStatisticsEvent.
 
         分支名
 
@@ -114,7 +114,7 @@ class RepoStatisticsEvent:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RepoStatisticsEvent.
+        r"""Gets the created_at of this RepoStatisticsEvent.
 
         仓库统计创建的时间
 
@@ -125,7 +125,7 @@ class RepoStatisticsEvent:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RepoStatisticsEvent.
+        r"""Sets the created_at of this RepoStatisticsEvent.
 
         仓库统计创建的时间
 
@@ -136,7 +136,7 @@ class RepoStatisticsEvent:
 
     @property
     def date(self):
-        """Gets the date of this RepoStatisticsEvent.
+        r"""Gets the date of this RepoStatisticsEvent.
 
         仓库统计的日期
 
@@ -147,7 +147,7 @@ class RepoStatisticsEvent:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this RepoStatisticsEvent.
+        r"""Sets the date of this RepoStatisticsEvent.
 
         仓库统计的日期
 
@@ -158,7 +158,7 @@ class RepoStatisticsEvent:
 
     @property
     def id(self):
-        """Gets the id of this RepoStatisticsEvent.
+        r"""Gets the id of this RepoStatisticsEvent.
 
         仓库统计事件的id
 
@@ -169,7 +169,7 @@ class RepoStatisticsEvent:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RepoStatisticsEvent.
+        r"""Sets the id of this RepoStatisticsEvent.
 
         仓库统计事件的id
 
@@ -180,7 +180,7 @@ class RepoStatisticsEvent:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RepoStatisticsEvent.
+        r"""Gets the project_id of this RepoStatisticsEvent.
 
         仓库id
 
@@ -191,7 +191,7 @@ class RepoStatisticsEvent:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RepoStatisticsEvent.
+        r"""Sets the project_id of this RepoStatisticsEvent.
 
         仓库id
 
@@ -202,7 +202,7 @@ class RepoStatisticsEvent:
 
     @property
     def status(self):
-        """Gets the status of this RepoStatisticsEvent.
+        r"""Gets the status of this RepoStatisticsEvent.
 
         仓库统计的状态: 等待统计waiting  正在统计active  完成统计finish
 
@@ -213,7 +213,7 @@ class RepoStatisticsEvent:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RepoStatisticsEvent.
+        r"""Sets the status of this RepoStatisticsEvent.
 
         仓库统计的状态: 等待统计waiting  正在统计active  完成统计finish
 
@@ -224,7 +224,7 @@ class RepoStatisticsEvent:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RepoStatisticsEvent.
+        r"""Gets the updated_at of this RepoStatisticsEvent.
 
         仓库统计更新的时间
 
@@ -235,7 +235,7 @@ class RepoStatisticsEvent:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RepoStatisticsEvent.
+        r"""Sets the updated_at of this RepoStatisticsEvent.
 
         仓库统计更新的时间
 
@@ -246,7 +246,7 @@ class RepoStatisticsEvent:
 
     @property
     def user_id(self):
-        """Gets the user_id of this RepoStatisticsEvent.
+        r"""Gets the user_id of this RepoStatisticsEvent.
 
         用户id
 
@@ -257,7 +257,7 @@ class RepoStatisticsEvent:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this RepoStatisticsEvent.
+        r"""Sets the user_id of this RepoStatisticsEvent.
 
         用户id
 

@@ -31,7 +31,7 @@ class SmartDocumentRecognizerKVBlock:
     }
 
     def __init__(self, key=None, value=None, words_block_count=None, words_block_list=None):
-        """SmartDocumentRecognizerKVBlock
+        r"""SmartDocumentRecognizerKVBlock
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @property
     def key(self):
-        """Gets the key of this SmartDocumentRecognizerKVBlock.
+        r"""Gets the key of this SmartDocumentRecognizerKVBlock.
 
         key-value对（键值对）中的key，例如“姓名：小明”中的“姓名” 
 
@@ -75,7 +75,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SmartDocumentRecognizerKVBlock.
+        r"""Sets the key of this SmartDocumentRecognizerKVBlock.
 
         key-value对（键值对）中的key，例如“姓名：小明”中的“姓名” 
 
@@ -86,7 +86,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @property
     def value(self):
-        """Gets the value of this SmartDocumentRecognizerKVBlock.
+        r"""Gets the value of this SmartDocumentRecognizerKVBlock.
 
         key-value对（键值对）中的value，例如“姓名：小明”中的“小明” 
 
@@ -97,7 +97,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SmartDocumentRecognizerKVBlock.
+        r"""Sets the value of this SmartDocumentRecognizerKVBlock.
 
         key-value对（键值对）中的value，例如“姓名：小明”中的“小明” 
 
@@ -108,7 +108,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this SmartDocumentRecognizerKVBlock.
+        r"""Gets the words_block_count of this SmartDocumentRecognizerKVBlock.
 
         该键值对中所包含的文本框数量。   
 
@@ -119,7 +119,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this SmartDocumentRecognizerKVBlock.
+        r"""Sets the words_block_count of this SmartDocumentRecognizerKVBlock.
 
         该键值对中所包含的文本框数量。   
 
@@ -130,7 +130,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this SmartDocumentRecognizerKVBlock.
+        r"""Gets the words_block_list of this SmartDocumentRecognizerKVBlock.
 
         文本框识别结果列表。 
 
@@ -141,7 +141,7 @@ class SmartDocumentRecognizerKVBlock:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this SmartDocumentRecognizerKVBlock.
+        r"""Sets the words_block_list of this SmartDocumentRecognizerKVBlock.
 
         文本框识别结果列表。 
 

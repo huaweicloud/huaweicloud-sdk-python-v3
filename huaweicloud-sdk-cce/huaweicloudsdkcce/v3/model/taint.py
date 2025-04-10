@@ -29,7 +29,7 @@ class Taint:
     }
 
     def __init__(self, key=None, value=None, effect=None):
-        """Taint
+        r"""Taint
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Taint:
 
     @property
     def key(self):
-        """Gets the key of this Taint.
+        r"""Gets the key of this Taint.
 
         键
 
@@ -66,7 +66,7 @@ class Taint:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Taint.
+        r"""Sets the key of this Taint.
 
         键
 
@@ -77,7 +77,7 @@ class Taint:
 
     @property
     def value(self):
-        """Gets the value of this Taint.
+        r"""Gets the value of this Taint.
 
         值
 
@@ -88,7 +88,7 @@ class Taint:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Taint.
+        r"""Sets the value of this Taint.
 
         值
 
@@ -99,7 +99,7 @@ class Taint:
 
     @property
     def effect(self):
-        """Gets the effect of this Taint.
+        r"""Gets the effect of this Taint.
 
         作用效果
 
@@ -110,7 +110,7 @@ class Taint:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this Taint.
+        r"""Sets the effect of this Taint.
 
         作用效果
 

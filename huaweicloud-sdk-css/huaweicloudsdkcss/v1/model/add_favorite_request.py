@@ -27,7 +27,7 @@ class AddFavoriteRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """AddFavoriteRequest
+        r"""AddFavoriteRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddFavoriteRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddFavoriteRequest.
+        r"""Gets the cluster_id of this AddFavoriteRequest.
 
         指定添加自定义模板的集群ID。
 
@@ -60,7 +60,7 @@ class AddFavoriteRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddFavoriteRequest.
+        r"""Sets the cluster_id of this AddFavoriteRequest.
 
         指定添加自定义模板的集群ID。
 
@@ -71,7 +71,7 @@ class AddFavoriteRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddFavoriteRequest.
+        r"""Gets the body of this AddFavoriteRequest.
 
         :return: The body of this AddFavoriteRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteReq`
@@ -80,7 +80,7 @@ class AddFavoriteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddFavoriteRequest.
+        r"""Sets the body of this AddFavoriteRequest.
 
         :param body: The body of this AddFavoriteRequest.
         :type body: :class:`huaweicloudsdkcss.v1.AddFavoriteReq`

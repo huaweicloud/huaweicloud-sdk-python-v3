@@ -30,7 +30,7 @@ class CreateVgwResponse(SdkResponse):
     }
 
     def __init__(self, vpn_gateway=None, request_id=None, header_response_token=None):
-        """CreateVgwResponse
+        r"""CreateVgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVgwResponse(SdkResponse):
 
     @property
     def vpn_gateway(self):
-        """Gets the vpn_gateway of this CreateVgwResponse.
+        r"""Gets the vpn_gateway of this CreateVgwResponse.
 
         :return: The vpn_gateway of this CreateVgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateResponseVpnGateway`
@@ -67,7 +67,7 @@ class CreateVgwResponse(SdkResponse):
 
     @vpn_gateway.setter
     def vpn_gateway(self, vpn_gateway):
-        """Sets the vpn_gateway of this CreateVgwResponse.
+        r"""Sets the vpn_gateway of this CreateVgwResponse.
 
         :param vpn_gateway: The vpn_gateway of this CreateVgwResponse.
         :type vpn_gateway: :class:`huaweicloudsdkvpn.v5.CreateResponseVpnGateway`
@@ -76,7 +76,7 @@ class CreateVgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateVgwResponse.
+        r"""Gets the request_id of this CreateVgwResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class CreateVgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateVgwResponse.
+        r"""Sets the request_id of this CreateVgwResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class CreateVgwResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateVgwResponse.
+        r"""Gets the header_response_token of this CreateVgwResponse.
 
         :return: The header_response_token of this CreateVgwResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVgwResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateVgwResponse.
+        r"""Sets the header_response_token of this CreateVgwResponse.
 
         :param header_response_token: The header_response_token of this CreateVgwResponse.
         :type header_response_token: str

@@ -26,7 +26,7 @@ class ResetPasswordResponse(SdkResponse):
     }
 
     def __init__(self, request_info=None):
-        """ResetPasswordResponse
+        r"""ResetPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def request_info(self):
-        """Gets the request_info of this ResetPasswordResponse.
+        r"""Gets the request_info of this ResetPasswordResponse.
 
         请求得到的信息
 
@@ -55,7 +55,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @request_info.setter
     def request_info(self, request_info):
-        """Sets the request_info of this ResetPasswordResponse.
+        r"""Sets the request_info of this ResetPasswordResponse.
 
         请求得到的信息
 

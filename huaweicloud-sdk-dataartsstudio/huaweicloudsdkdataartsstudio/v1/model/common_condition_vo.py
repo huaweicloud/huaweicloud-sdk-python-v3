@@ -37,7 +37,7 @@ class CommonConditionVO:
     }
 
     def __init__(self, name=None, field_ids=None, field_names=None, cal_exp=None, cal_fn_ids=None, front_configs=None, id=None):
-        """CommonConditionVO
+        r"""CommonConditionVO
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CommonConditionVO:
 
     @property
     def name(self):
-        """Gets the name of this CommonConditionVO.
+        r"""Gets the name of this CommonConditionVO.
 
         名称。
 
@@ -92,7 +92,7 @@ class CommonConditionVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CommonConditionVO.
+        r"""Sets the name of this CommonConditionVO.
 
         名称。
 
@@ -103,7 +103,7 @@ class CommonConditionVO:
 
     @property
     def field_ids(self):
-        """Gets the field_ids of this CommonConditionVO.
+        r"""Gets the field_ids of this CommonConditionVO.
 
         字段id信息，格式：table_id.field_id。
 
@@ -114,7 +114,7 @@ class CommonConditionVO:
 
     @field_ids.setter
     def field_ids(self, field_ids):
-        """Sets the field_ids of this CommonConditionVO.
+        r"""Sets the field_ids of this CommonConditionVO.
 
         字段id信息，格式：table_id.field_id。
 
@@ -125,7 +125,7 @@ class CommonConditionVO:
 
     @property
     def field_names(self):
-        """Gets the field_names of this CommonConditionVO.
+        r"""Gets the field_names of this CommonConditionVO.
 
         字段名称信息，格式：表名称.字段名称。
 
@@ -136,7 +136,7 @@ class CommonConditionVO:
 
     @field_names.setter
     def field_names(self, field_names):
-        """Sets the field_names of this CommonConditionVO.
+        r"""Sets the field_names of this CommonConditionVO.
 
         字段名称信息，格式：表名称.字段名称。
 
@@ -147,7 +147,7 @@ class CommonConditionVO:
 
     @property
     def cal_exp(self):
-        """Gets the cal_exp of this CommonConditionVO.
+        r"""Gets the cal_exp of this CommonConditionVO.
 
         计算表达式，形如'${table_id.column_id} > 1'，其中table_id表示引用字段所属表ID，column_id表示引用字段ID。
 
@@ -158,7 +158,7 @@ class CommonConditionVO:
 
     @cal_exp.setter
     def cal_exp(self, cal_exp):
-        """Sets the cal_exp of this CommonConditionVO.
+        r"""Sets the cal_exp of this CommonConditionVO.
 
         计算表达式，形如'${table_id.column_id} > 1'，其中table_id表示引用字段所属表ID，column_id表示引用字段ID。
 
@@ -169,7 +169,7 @@ class CommonConditionVO:
 
     @property
     def cal_fn_ids(self):
-        """Gets the cal_fn_ids of this CommonConditionVO.
+        r"""Gets the cal_fn_ids of this CommonConditionVO.
 
         引用函数ID，ID字符串。
 
@@ -180,7 +180,7 @@ class CommonConditionVO:
 
     @cal_fn_ids.setter
     def cal_fn_ids(self, cal_fn_ids):
-        """Sets the cal_fn_ids of this CommonConditionVO.
+        r"""Sets the cal_fn_ids of this CommonConditionVO.
 
         引用函数ID，ID字符串。
 
@@ -191,7 +191,7 @@ class CommonConditionVO:
 
     @property
     def front_configs(self):
-        """Gets the front_configs of this CommonConditionVO.
+        r"""Gets the front_configs of this CommonConditionVO.
 
         前端表达式配置，用于前端数据恢复。
 
@@ -202,7 +202,7 @@ class CommonConditionVO:
 
     @front_configs.setter
     def front_configs(self, front_configs):
-        """Sets the front_configs of this CommonConditionVO.
+        r"""Sets the front_configs of this CommonConditionVO.
 
         前端表达式配置，用于前端数据恢复。
 
@@ -213,7 +213,7 @@ class CommonConditionVO:
 
     @property
     def id(self):
-        """Gets the id of this CommonConditionVO.
+        r"""Gets the id of this CommonConditionVO.
 
         通用限定ID，只读，ID字符串。
 
@@ -224,7 +224,7 @@ class CommonConditionVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CommonConditionVO.
+        r"""Sets the id of this CommonConditionVO.
 
         通用限定ID，只读，ID字符串。
 

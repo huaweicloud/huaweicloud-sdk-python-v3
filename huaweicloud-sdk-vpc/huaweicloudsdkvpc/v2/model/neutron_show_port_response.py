@@ -26,7 +26,7 @@ class NeutronShowPortResponse(SdkResponse):
     }
 
     def __init__(self, port=None):
-        """NeutronShowPortResponse
+        r"""NeutronShowPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronShowPortResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this NeutronShowPortResponse.
+        r"""Gets the port of this NeutronShowPortResponse.
 
         :return: The port of this NeutronShowPortResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronPort`
@@ -53,7 +53,7 @@ class NeutronShowPortResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this NeutronShowPortResponse.
+        r"""Sets the port of this NeutronShowPortResponse.
 
         :param port: The port of this NeutronShowPortResponse.
         :type port: :class:`huaweicloudsdkvpc.v2.NeutronPort`

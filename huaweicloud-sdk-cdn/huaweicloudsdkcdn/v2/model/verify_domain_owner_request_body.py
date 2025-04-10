@@ -25,7 +25,7 @@ class VerifyDomainOwnerRequestBody:
     }
 
     def __init__(self, verify_type=None):
-        """VerifyDomainOwnerRequestBody
+        r"""VerifyDomainOwnerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VerifyDomainOwnerRequestBody:
 
     @property
     def verify_type(self):
-        """Gets the verify_type of this VerifyDomainOwnerRequestBody.
+        r"""Gets the verify_type of this VerifyDomainOwnerRequestBody.
 
         校验类型： - dns：DNS解析校验； - file：文件校验； - all：DNS与文件都会进行探测，默认为all。
 
@@ -54,7 +54,7 @@ class VerifyDomainOwnerRequestBody:
 
     @verify_type.setter
     def verify_type(self, verify_type):
-        """Sets the verify_type of this VerifyDomainOwnerRequestBody.
+        r"""Sets the verify_type of this VerifyDomainOwnerRequestBody.
 
         校验类型： - dns：DNS解析校验； - file：文件校验； - all：DNS与文件都会进行探测，默认为all。
 

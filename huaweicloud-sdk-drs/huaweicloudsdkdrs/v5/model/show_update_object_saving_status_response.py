@@ -30,7 +30,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, job_id=None):
-        """ShowUpdateObjectSavingStatusResponse
+        r"""ShowUpdateObjectSavingStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowUpdateObjectSavingStatusResponse.
+        r"""Gets the id of this ShowUpdateObjectSavingStatusResponse.
 
         查询结果id
 
@@ -69,7 +69,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowUpdateObjectSavingStatusResponse.
+        r"""Sets the id of this ShowUpdateObjectSavingStatusResponse.
 
         查询结果id
 
@@ -80,7 +80,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowUpdateObjectSavingStatusResponse.
+        r"""Gets the status of this ShowUpdateObjectSavingStatusResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -91,7 +91,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUpdateObjectSavingStatusResponse.
+        r"""Sets the status of this ShowUpdateObjectSavingStatusResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -102,7 +102,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowUpdateObjectSavingStatusResponse.
+        r"""Gets the job_id of this ShowUpdateObjectSavingStatusResponse.
 
         任务ID
 
@@ -113,7 +113,7 @@ class ShowUpdateObjectSavingStatusResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowUpdateObjectSavingStatusResponse.
+        r"""Sets the job_id of this ShowUpdateObjectSavingStatusResponse.
 
         任务ID
 

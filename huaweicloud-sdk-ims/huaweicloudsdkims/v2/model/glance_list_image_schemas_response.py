@@ -30,7 +30,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, properties=None, links=None):
-        """GlanceListImageSchemasResponse
+        r"""GlanceListImageSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GlanceListImageSchemasResponse.
+        r"""Gets the name of this GlanceListImageSchemasResponse.
 
         视图名称。
 
@@ -69,7 +69,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceListImageSchemasResponse.
+        r"""Sets the name of this GlanceListImageSchemasResponse.
 
         视图名称。
 
@@ -80,7 +80,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this GlanceListImageSchemasResponse.
+        r"""Gets the properties of this GlanceListImageSchemasResponse.
 
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
@@ -91,7 +91,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this GlanceListImageSchemasResponse.
+        r"""Sets the properties of this GlanceListImageSchemasResponse.
 
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
@@ -102,7 +102,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this GlanceListImageSchemasResponse.
+        r"""Gets the links of this GlanceListImageSchemasResponse.
 
         视图链接。
 
@@ -113,7 +113,7 @@ class GlanceListImageSchemasResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this GlanceListImageSchemasResponse.
+        r"""Sets the links of this GlanceListImageSchemasResponse.
 
         视图链接。
 

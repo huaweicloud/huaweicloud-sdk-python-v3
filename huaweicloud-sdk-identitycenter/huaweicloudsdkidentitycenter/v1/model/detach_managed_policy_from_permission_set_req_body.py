@@ -25,7 +25,7 @@ class DetachManagedPolicyFromPermissionSetReqBody:
     }
 
     def __init__(self, managed_policy_id=None):
-        """DetachManagedPolicyFromPermissionSetReqBody
+        r"""DetachManagedPolicyFromPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetachManagedPolicyFromPermissionSetReqBody:
 
     @property
     def managed_policy_id(self):
-        """Gets the managed_policy_id of this DetachManagedPolicyFromPermissionSetReqBody.
+        r"""Gets the managed_policy_id of this DetachManagedPolicyFromPermissionSetReqBody.
 
         IAM系统身份策略唯一标识
 
@@ -53,7 +53,7 @@ class DetachManagedPolicyFromPermissionSetReqBody:
 
     @managed_policy_id.setter
     def managed_policy_id(self, managed_policy_id):
-        """Sets the managed_policy_id of this DetachManagedPolicyFromPermissionSetReqBody.
+        r"""Sets the managed_policy_id of this DetachManagedPolicyFromPermissionSetReqBody.
 
         IAM系统身份策略唯一标识
 

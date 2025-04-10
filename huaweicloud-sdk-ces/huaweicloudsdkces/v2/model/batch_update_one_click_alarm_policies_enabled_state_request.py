@@ -29,7 +29,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
     }
 
     def __init__(self, one_click_alarm_id=None, alarm_id=None, body=None):
-        """BatchUpdateOneClickAlarmPoliciesEnabledStateRequest
+        r"""BatchUpdateOneClickAlarmPoliciesEnabledStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
 
     @property
     def one_click_alarm_id(self):
-        """Gets the one_click_alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
+        r"""Gets the one_click_alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
 
         一键告警ID
 
@@ -66,7 +66,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
 
     @one_click_alarm_id.setter
     def one_click_alarm_id(self, one_click_alarm_id):
-        """Sets the one_click_alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
+        r"""Sets the one_click_alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
 
         一键告警ID
 
@@ -77,7 +77,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
+        r"""Gets the alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
 
         告警规则ID
 
@@ -88,7 +88,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
+        r"""Sets the alarm_id of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
 
         告警规则ID
 
@@ -99,7 +99,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
+        r"""Gets the body of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
 
         :return: The body of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchEnableAlarmPoliciesRequestBody`
@@ -108,7 +108,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
+        r"""Sets the body of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
 
         :param body: The body of this BatchUpdateOneClickAlarmPoliciesEnabledStateRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmPoliciesRequestBody`

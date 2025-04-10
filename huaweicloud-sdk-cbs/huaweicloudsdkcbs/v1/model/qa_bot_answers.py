@@ -27,7 +27,7 @@ class QaBotAnswers:
     }
 
     def __init__(self, answers=None, request_id=None):
-        """QaBotAnswers
+        r"""QaBotAnswers
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class QaBotAnswers:
 
     @property
     def answers(self):
-        """Gets the answers of this QaBotAnswers.
+        r"""Gets the answers of this QaBotAnswers.
 
         问答机器人回复。
 
@@ -60,7 +60,7 @@ class QaBotAnswers:
 
     @answers.setter
     def answers(self, answers):
-        """Sets the answers of this QaBotAnswers.
+        r"""Sets the answers of this QaBotAnswers.
 
         问答机器人回复。
 
@@ -71,7 +71,7 @@ class QaBotAnswers:
 
     @property
     def request_id(self):
-        """Gets the request_id of this QaBotAnswers.
+        r"""Gets the request_id of this QaBotAnswers.
 
         请求ID。
 
@@ -82,7 +82,7 @@ class QaBotAnswers:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this QaBotAnswers.
+        r"""Sets the request_id of this QaBotAnswers.
 
         请求ID。
 

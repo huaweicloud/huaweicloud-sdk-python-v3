@@ -41,7 +41,7 @@ class KeywordsRequest:
     }
 
     def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None):
-        """KeywordsRequest
+        r"""KeywordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class KeywordsRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this KeywordsRequest.
+        r"""Gets the log_stream_id of this KeywordsRequest.
 
         日志流id
 
@@ -103,7 +103,7 @@ class KeywordsRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this KeywordsRequest.
+        r"""Sets the log_stream_id of this KeywordsRequest.
 
         日志流id
 
@@ -114,7 +114,7 @@ class KeywordsRequest:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this KeywordsRequest.
+        r"""Gets the log_stream_name of this KeywordsRequest.
 
         日志流名称
 
@@ -125,7 +125,7 @@ class KeywordsRequest:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this KeywordsRequest.
+        r"""Sets the log_stream_name of this KeywordsRequest.
 
         日志流名称
 
@@ -136,7 +136,7 @@ class KeywordsRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this KeywordsRequest.
+        r"""Gets the log_group_id of this KeywordsRequest.
 
         日志组id
 
@@ -147,7 +147,7 @@ class KeywordsRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this KeywordsRequest.
+        r"""Sets the log_group_id of this KeywordsRequest.
 
         日志组id
 
@@ -158,7 +158,7 @@ class KeywordsRequest:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this KeywordsRequest.
+        r"""Gets the log_group_name of this KeywordsRequest.
 
         日志组名称
 
@@ -169,7 +169,7 @@ class KeywordsRequest:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this KeywordsRequest.
+        r"""Sets the log_group_name of this KeywordsRequest.
 
         日志组名称
 
@@ -180,7 +180,7 @@ class KeywordsRequest:
 
     @property
     def keywords(self):
-        """Gets the keywords of this KeywordsRequest.
+        r"""Gets the keywords of this KeywordsRequest.
 
         关键词
 
@@ -191,7 +191,7 @@ class KeywordsRequest:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this KeywordsRequest.
+        r"""Sets the keywords of this KeywordsRequest.
 
         关键词
 
@@ -202,7 +202,7 @@ class KeywordsRequest:
 
     @property
     def condition(self):
-        """Gets the condition of this KeywordsRequest.
+        r"""Gets the condition of this KeywordsRequest.
 
         条件
 
@@ -213,7 +213,7 @@ class KeywordsRequest:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this KeywordsRequest.
+        r"""Sets the condition of this KeywordsRequest.
 
         条件
 
@@ -224,7 +224,7 @@ class KeywordsRequest:
 
     @property
     def number(self):
-        """Gets the number of this KeywordsRequest.
+        r"""Gets the number of this KeywordsRequest.
 
         行数
 
@@ -235,7 +235,7 @@ class KeywordsRequest:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this KeywordsRequest.
+        r"""Sets the number of this KeywordsRequest.
 
         行数
 
@@ -246,7 +246,7 @@ class KeywordsRequest:
 
     @property
     def search_time_range(self):
-        """Gets the search_time_range of this KeywordsRequest.
+        r"""Gets the search_time_range of this KeywordsRequest.
 
         查询执行任务时最近数据的时间范围，最大值为60
 
@@ -257,7 +257,7 @@ class KeywordsRequest:
 
     @search_time_range.setter
     def search_time_range(self, search_time_range):
-        """Sets the search_time_range of this KeywordsRequest.
+        r"""Sets the search_time_range of this KeywordsRequest.
 
         查询执行任务时最近数据的时间范围，最大值为60
 
@@ -268,7 +268,7 @@ class KeywordsRequest:
 
     @property
     def search_time_range_unit(self):
-        """Gets the search_time_range_unit of this KeywordsRequest.
+        r"""Gets the search_time_range_unit of this KeywordsRequest.
 
         查询时间单位
 
@@ -279,7 +279,7 @@ class KeywordsRequest:
 
     @search_time_range_unit.setter
     def search_time_range_unit(self, search_time_range_unit):
-        """Sets the search_time_range_unit of this KeywordsRequest.
+        r"""Sets the search_time_range_unit of this KeywordsRequest.
 
         查询时间单位
 

@@ -33,7 +33,7 @@ class ComputeFlavorGroupsInfo:
     }
 
     def __init__(self, group_type=None, compute_flavors=None, offset=None, limit=None, total=None):
-        """ComputeFlavorGroupsInfo
+        r"""ComputeFlavorGroupsInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ComputeFlavorGroupsInfo:
 
     @property
     def group_type(self):
-        """Gets the group_type of this ComputeFlavorGroupsInfo.
+        r"""Gets the group_type of this ComputeFlavorGroupsInfo.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -82,7 +82,7 @@ class ComputeFlavorGroupsInfo:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this ComputeFlavorGroupsInfo.
+        r"""Sets the group_type of this ComputeFlavorGroupsInfo.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -93,7 +93,7 @@ class ComputeFlavorGroupsInfo:
 
     @property
     def compute_flavors(self):
-        """Gets the compute_flavors of this ComputeFlavorGroupsInfo.
+        r"""Gets the compute_flavors of this ComputeFlavorGroupsInfo.
 
         计算类型规格详情。
 
@@ -104,7 +104,7 @@ class ComputeFlavorGroupsInfo:
 
     @compute_flavors.setter
     def compute_flavors(self, compute_flavors):
-        """Sets the compute_flavors of this ComputeFlavorGroupsInfo.
+        r"""Sets the compute_flavors of this ComputeFlavorGroupsInfo.
 
         计算类型规格详情。
 
@@ -115,7 +115,7 @@ class ComputeFlavorGroupsInfo:
 
     @property
     def offset(self):
-        """Gets the offset of this ComputeFlavorGroupsInfo.
+        r"""Gets the offset of this ComputeFlavorGroupsInfo.
 
         分页参数: 起始值。
 
@@ -126,7 +126,7 @@ class ComputeFlavorGroupsInfo:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ComputeFlavorGroupsInfo.
+        r"""Sets the offset of this ComputeFlavorGroupsInfo.
 
         分页参数: 起始值。
 
@@ -137,7 +137,7 @@ class ComputeFlavorGroupsInfo:
 
     @property
     def limit(self):
-        """Gets the limit of this ComputeFlavorGroupsInfo.
+        r"""Gets the limit of this ComputeFlavorGroupsInfo.
 
         分页参数：每页多少条。
 
@@ -148,7 +148,7 @@ class ComputeFlavorGroupsInfo:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ComputeFlavorGroupsInfo.
+        r"""Sets the limit of this ComputeFlavorGroupsInfo.
 
         分页参数：每页多少条。
 
@@ -159,7 +159,7 @@ class ComputeFlavorGroupsInfo:
 
     @property
     def total(self):
-        """Gets the total of this ComputeFlavorGroupsInfo.
+        r"""Gets the total of this ComputeFlavorGroupsInfo.
 
         计算类型规格总数。
 
@@ -170,7 +170,7 @@ class ComputeFlavorGroupsInfo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ComputeFlavorGroupsInfo.
+        r"""Sets the total of this ComputeFlavorGroupsInfo.
 
         计算类型规格总数。
 

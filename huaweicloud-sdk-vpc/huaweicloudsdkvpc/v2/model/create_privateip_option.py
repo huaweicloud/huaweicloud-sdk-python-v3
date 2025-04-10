@@ -27,7 +27,7 @@ class CreatePrivateipOption:
     }
 
     def __init__(self, subnet_id=None, ip_address=None):
-        """CreatePrivateipOption
+        r"""CreatePrivateipOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePrivateipOption:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreatePrivateipOption.
+        r"""Gets the subnet_id of this CreatePrivateipOption.
 
         分配IP的子网标识
 
@@ -60,7 +60,7 @@ class CreatePrivateipOption:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreatePrivateipOption.
+        r"""Sets the subnet_id of this CreatePrivateipOption.
 
         分配IP的子网标识
 
@@ -71,7 +71,7 @@ class CreatePrivateipOption:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this CreatePrivateipOption.
+        r"""Gets the ip_address of this CreatePrivateipOption.
 
         功能说明：指定IP地址申请 取值范围：子网段中的可以使用且未分配的IP地址，不指定时由系统自动分配
 
@@ -82,7 +82,7 @@ class CreatePrivateipOption:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this CreatePrivateipOption.
+        r"""Sets the ip_address of this CreatePrivateipOption.
 
         功能说明：指定IP地址申请 取值范围：子网段中的可以使用且未分配的IP地址，不指定时由系统自动分配
 

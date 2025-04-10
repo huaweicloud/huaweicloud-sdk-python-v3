@@ -26,7 +26,7 @@ class ListListenersResponse(SdkResponse):
     }
 
     def __init__(self, listeners=None):
-        """ListListenersResponse
+        r"""ListListenersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListListenersResponse(SdkResponse):
 
     @property
     def listeners(self):
-        """Gets the listeners of this ListListenersResponse.
+        r"""Gets the listeners of this ListListenersResponse.
 
         监听器对象列表
 
@@ -55,7 +55,7 @@ class ListListenersResponse(SdkResponse):
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this ListListenersResponse.
+        r"""Sets the listeners of this ListListenersResponse.
 
         监听器对象列表
 

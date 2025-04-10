@@ -28,7 +28,7 @@ class ListRpoStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, resource_rpo_statistics=None, count=None):
-        """ListRpoStatisticsResponse
+        r"""ListRpoStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRpoStatisticsResponse(SdkResponse):
 
     @property
     def resource_rpo_statistics(self):
-        """Gets the resource_rpo_statistics of this ListRpoStatisticsResponse.
+        r"""Gets the resource_rpo_statistics of this ListRpoStatisticsResponse.
 
         资源的RPO超标趋势记录列表。
 
@@ -62,7 +62,7 @@ class ListRpoStatisticsResponse(SdkResponse):
 
     @resource_rpo_statistics.setter
     def resource_rpo_statistics(self, resource_rpo_statistics):
-        """Sets the resource_rpo_statistics of this ListRpoStatisticsResponse.
+        r"""Sets the resource_rpo_statistics of this ListRpoStatisticsResponse.
 
         资源的RPO超标趋势记录列表。
 
@@ -73,7 +73,7 @@ class ListRpoStatisticsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRpoStatisticsResponse.
+        r"""Gets the count of this ListRpoStatisticsResponse.
 
         列表中包含的资源的RPO超标趋势记录个数。
 
@@ -84,7 +84,7 @@ class ListRpoStatisticsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRpoStatisticsResponse.
+        r"""Sets the count of this ListRpoStatisticsResponse.
 
         列表中包含的资源的RPO超标趋势记录个数。
 

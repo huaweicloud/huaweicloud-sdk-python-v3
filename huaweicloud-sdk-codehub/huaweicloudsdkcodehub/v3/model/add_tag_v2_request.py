@@ -27,7 +27,7 @@ class AddTagV2Request:
     }
 
     def __init__(self, repository_id=None, body=None):
-        """AddTagV2Request
+        r"""AddTagV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddTagV2Request:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this AddTagV2Request.
+        r"""Gets the repository_id of this AddTagV2Request.
 
         仓库主键id
 
@@ -60,7 +60,7 @@ class AddTagV2Request:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this AddTagV2Request.
+        r"""Sets the repository_id of this AddTagV2Request.
 
         仓库主键id
 
@@ -71,7 +71,7 @@ class AddTagV2Request:
 
     @property
     def body(self):
-        """Gets the body of this AddTagV2Request.
+        r"""Gets the body of this AddTagV2Request.
 
         :return: The body of this AddTagV2Request.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddTagsRequest`
@@ -80,7 +80,7 @@ class AddTagV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddTagV2Request.
+        r"""Sets the body of this AddTagV2Request.
 
         :param body: The body of this AddTagV2Request.
         :type body: :class:`huaweicloudsdkcodehub.v3.AddTagsRequest`

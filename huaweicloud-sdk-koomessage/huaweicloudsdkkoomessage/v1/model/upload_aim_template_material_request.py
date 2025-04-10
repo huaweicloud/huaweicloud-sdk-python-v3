@@ -25,7 +25,7 @@ class UploadAimTemplateMaterialRequest:
     }
 
     def __init__(self, body=None):
-        """UploadAimTemplateMaterialRequest
+        r"""UploadAimTemplateMaterialRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadAimTemplateMaterialRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadAimTemplateMaterialRequest.
+        r"""Gets the body of this UploadAimTemplateMaterialRequest.
 
         :return: The body of this UploadAimTemplateMaterialRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadAimTemplateMaterialRequestBody`
@@ -52,7 +52,7 @@ class UploadAimTemplateMaterialRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadAimTemplateMaterialRequest.
+        r"""Sets the body of this UploadAimTemplateMaterialRequest.
 
         :param body: The body of this UploadAimTemplateMaterialRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UploadAimTemplateMaterialRequestBody`

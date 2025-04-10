@@ -27,7 +27,7 @@ class Attributes:
     }
 
     def __init__(self, key=None, value=None):
-        """Attributes
+        r"""Attributes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Attributes:
 
     @property
     def key(self):
-        """Gets the key of this Attributes.
+        r"""Gets the key of this Attributes.
 
         节点属性的key值，长度取值范围为1~128， 仅允许大小写英文字母、数字、下划线、中划线
 
@@ -61,7 +61,7 @@ class Attributes:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Attributes.
+        r"""Sets the key of this Attributes.
 
         节点属性的key值，长度取值范围为1~128， 仅允许大小写英文字母、数字、下划线、中划线
 
@@ -72,7 +72,7 @@ class Attributes:
 
     @property
     def value(self):
-        """Gets the value of this Attributes.
+        r"""Gets the value of this Attributes.
 
         节点属性的value值，长度取值范围为1~256， 仅允许大小写英文字母、数字、下划线、中划线
 
@@ -83,7 +83,7 @@ class Attributes:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Attributes.
+        r"""Sets the value of this Attributes.
 
         节点属性的value值，长度取值范围为1~256， 仅允许大小写英文字母、数字、下划线、中划线
 

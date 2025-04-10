@@ -28,7 +28,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, ops_list=None):
-        """ListHistoryOperateLogsResponse
+        r"""ListHistoryOperateLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListHistoryOperateLogsResponse.
+        r"""Gets the total_count of this ListHistoryOperateLogsResponse.
 
         总记录数
 
@@ -62,7 +62,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListHistoryOperateLogsResponse.
+        r"""Sets the total_count of this ListHistoryOperateLogsResponse.
 
         总记录数
 
@@ -73,7 +73,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
 
     @property
     def ops_list(self):
-        """Gets the ops_list of this ListHistoryOperateLogsResponse.
+        r"""Gets the ops_list of this ListHistoryOperateLogsResponse.
 
         操作列表
 
@@ -84,7 +84,7 @@ class ListHistoryOperateLogsResponse(SdkResponse):
 
     @ops_list.setter
     def ops_list(self, ops_list):
-        """Sets the ops_list of this ListHistoryOperateLogsResponse.
+        r"""Sets the ops_list of this ListHistoryOperateLogsResponse.
 
         操作列表
 

@@ -27,7 +27,7 @@ class CreatePersistentStorageReq:
     }
 
     def __init__(self, name=None, storage_metadata=None):
-        """CreatePersistentStorageReq
+        r"""CreatePersistentStorageReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreatePersistentStorageReq:
 
     @property
     def name(self):
-        """Gets the name of this CreatePersistentStorageReq.
+        r"""Gets the name of this CreatePersistentStorageReq.
 
         WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
 
@@ -59,7 +59,7 @@ class CreatePersistentStorageReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePersistentStorageReq.
+        r"""Sets the name of this CreatePersistentStorageReq.
 
         WKS存储名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
 
@@ -70,7 +70,7 @@ class CreatePersistentStorageReq:
 
     @property
     def storage_metadata(self):
-        """Gets the storage_metadata of this CreatePersistentStorageReq.
+        r"""Gets the storage_metadata of this CreatePersistentStorageReq.
 
         :return: The storage_metadata of this CreatePersistentStorageReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Storage`
@@ -79,7 +79,7 @@ class CreatePersistentStorageReq:
 
     @storage_metadata.setter
     def storage_metadata(self, storage_metadata):
-        """Sets the storage_metadata of this CreatePersistentStorageReq.
+        r"""Sets the storage_metadata of this CreatePersistentStorageReq.
 
         :param storage_metadata: The storage_metadata of this CreatePersistentStorageReq.
         :type storage_metadata: :class:`huaweicloudsdkworkspaceapp.v1.Storage`

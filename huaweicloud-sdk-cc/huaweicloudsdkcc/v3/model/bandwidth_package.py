@@ -67,7 +67,7 @@ class BandwidthPackage:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, project_id=None, created_at=None, updated_at=None, resource_id=None, resource_type=None, local_area_id=None, remote_area_id=None, spec_code=None, billing_mode=None, tags=None, status=None, admin_state_up=None, order_id=None, product_id=None, charge_mode=None, bandwidth=None, interflow_mode=None):
-        """BandwidthPackage
+        r"""BandwidthPackage
 
         The model defined in huaweicloud sdk
 
@@ -178,7 +178,7 @@ class BandwidthPackage:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthPackage.
+        r"""Gets the id of this BandwidthPackage.
 
         实例ID。
 
@@ -189,7 +189,7 @@ class BandwidthPackage:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthPackage.
+        r"""Sets the id of this BandwidthPackage.
 
         实例ID。
 
@@ -200,7 +200,7 @@ class BandwidthPackage:
 
     @property
     def name(self):
-        """Gets the name of this BandwidthPackage.
+        r"""Gets the name of this BandwidthPackage.
 
         实例名字。
 
@@ -211,7 +211,7 @@ class BandwidthPackage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BandwidthPackage.
+        r"""Sets the name of this BandwidthPackage.
 
         实例名字。
 
@@ -222,7 +222,7 @@ class BandwidthPackage:
 
     @property
     def description(self):
-        """Gets the description of this BandwidthPackage.
+        r"""Gets the description of this BandwidthPackage.
 
         实例描述。不支持 <>。
 
@@ -233,7 +233,7 @@ class BandwidthPackage:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BandwidthPackage.
+        r"""Sets the description of this BandwidthPackage.
 
         实例描述。不支持 <>。
 
@@ -244,7 +244,7 @@ class BandwidthPackage:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this BandwidthPackage.
+        r"""Gets the domain_id of this BandwidthPackage.
 
         实例所属账号ID。
 
@@ -255,7 +255,7 @@ class BandwidthPackage:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this BandwidthPackage.
+        r"""Sets the domain_id of this BandwidthPackage.
 
         实例所属账号ID。
 
@@ -266,7 +266,7 @@ class BandwidthPackage:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BandwidthPackage.
+        r"""Gets the enterprise_project_id of this BandwidthPackage.
 
         实例所属企业项目ID。
 
@@ -277,7 +277,7 @@ class BandwidthPackage:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BandwidthPackage.
+        r"""Sets the enterprise_project_id of this BandwidthPackage.
 
         实例所属企业项目ID。
 
@@ -288,7 +288,7 @@ class BandwidthPackage:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BandwidthPackage.
+        r"""Gets the project_id of this BandwidthPackage.
 
         实例所属项目ID。
 
@@ -299,7 +299,7 @@ class BandwidthPackage:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BandwidthPackage.
+        r"""Sets the project_id of this BandwidthPackage.
 
         实例所属项目ID。
 
@@ -310,7 +310,7 @@ class BandwidthPackage:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BandwidthPackage.
+        r"""Gets the created_at of this BandwidthPackage.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -321,7 +321,7 @@ class BandwidthPackage:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BandwidthPackage.
+        r"""Sets the created_at of this BandwidthPackage.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -332,7 +332,7 @@ class BandwidthPackage:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BandwidthPackage.
+        r"""Gets the updated_at of this BandwidthPackage.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -343,7 +343,7 @@ class BandwidthPackage:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BandwidthPackage.
+        r"""Sets the updated_at of this BandwidthPackage.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -354,7 +354,7 @@ class BandwidthPackage:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BandwidthPackage.
+        r"""Gets the resource_id of this BandwidthPackage.
 
         带宽包实例绑定的资源ID。
 
@@ -365,7 +365,7 @@ class BandwidthPackage:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BandwidthPackage.
+        r"""Sets the resource_id of this BandwidthPackage.
 
         带宽包实例绑定的资源ID。
 
@@ -376,7 +376,7 @@ class BandwidthPackage:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BandwidthPackage.
+        r"""Gets the resource_type of this BandwidthPackage.
 
         带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 
@@ -387,7 +387,7 @@ class BandwidthPackage:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BandwidthPackage.
+        r"""Sets the resource_type of this BandwidthPackage.
 
         带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 
@@ -398,7 +398,7 @@ class BandwidthPackage:
 
     @property
     def local_area_id(self):
-        """Gets the local_area_id of this BandwidthPackage.
+        r"""Gets the local_area_id of this BandwidthPackage.
 
         :return: The local_area_id of this BandwidthPackage.
         :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
@@ -407,7 +407,7 @@ class BandwidthPackage:
 
     @local_area_id.setter
     def local_area_id(self, local_area_id):
-        """Sets the local_area_id of this BandwidthPackage.
+        r"""Sets the local_area_id of this BandwidthPackage.
 
         :param local_area_id: The local_area_id of this BandwidthPackage.
         :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
@@ -416,7 +416,7 @@ class BandwidthPackage:
 
     @property
     def remote_area_id(self):
-        """Gets the remote_area_id of this BandwidthPackage.
+        r"""Gets the remote_area_id of this BandwidthPackage.
 
         :return: The remote_area_id of this BandwidthPackage.
         :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
@@ -425,7 +425,7 @@ class BandwidthPackage:
 
     @remote_area_id.setter
     def remote_area_id(self, remote_area_id):
-        """Sets the remote_area_id of this BandwidthPackage.
+        r"""Sets the remote_area_id of this BandwidthPackage.
 
         :param remote_area_id: The remote_area_id of this BandwidthPackage.
         :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
@@ -434,7 +434,7 @@ class BandwidthPackage:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this BandwidthPackage.
+        r"""Gets the spec_code of this BandwidthPackage.
 
         带宽包实例的规格编码。 bandwidth.aftoela：大陆站+国际站南非-拉美东 bandwidth.aftonla：大陆站+国际站南非-拉美北 bandwidth.aftowla：大陆站+国际站南非-拉美西 bandwidth.aptoaf：国际站亚太-南非 bandwidth.aptoap：国际站亚太-亚太 bandwidth.aptoela：大陆站+国际站亚太-拉美东 bandwidth.aptonla：大陆站+国际站亚太-拉美北 bandwidth.aptowla：大陆站+国际站亚太-拉美西 bandwidth.cmtoaf：国际站中国大陆-南非 bandwidth.cmtoap：国际站中国大陆-亚太 bandwidth.cmtocm：国际站中国大陆-中国大陆 bandwidth.cmtoela：大陆站+国际站中国大陆-拉美东 bandwidth.cmtonla：大陆站+国际站中国大陆-拉美北 bandwidth.cmtowla：大陆站+国际站中国大陆-拉美西 bandwidth.elatoela：大陆站+国际站拉美东-拉美东 bandwidth.elatonla：大陆站+国际站拉美东-拉美北 bandwidth.wlatoela：大陆站+国际站拉美西-拉美东 bandwidth.wlatonla：大陆站+国际站拉美西-拉美北 bandwidth.wlatowla：大陆站+国际站拉美西-拉美西
 
@@ -445,7 +445,7 @@ class BandwidthPackage:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this BandwidthPackage.
+        r"""Sets the spec_code of this BandwidthPackage.
 
         带宽包实例的规格编码。 bandwidth.aftoela：大陆站+国际站南非-拉美东 bandwidth.aftonla：大陆站+国际站南非-拉美北 bandwidth.aftowla：大陆站+国际站南非-拉美西 bandwidth.aptoaf：国际站亚太-南非 bandwidth.aptoap：国际站亚太-亚太 bandwidth.aptoela：大陆站+国际站亚太-拉美东 bandwidth.aptonla：大陆站+国际站亚太-拉美北 bandwidth.aptowla：大陆站+国际站亚太-拉美西 bandwidth.cmtoaf：国际站中国大陆-南非 bandwidth.cmtoap：国际站中国大陆-亚太 bandwidth.cmtocm：国际站中国大陆-中国大陆 bandwidth.cmtoela：大陆站+国际站中国大陆-拉美东 bandwidth.cmtonla：大陆站+国际站中国大陆-拉美北 bandwidth.cmtowla：大陆站+国际站中国大陆-拉美西 bandwidth.elatoela：大陆站+国际站拉美东-拉美东 bandwidth.elatonla：大陆站+国际站拉美东-拉美北 bandwidth.wlatoela：大陆站+国际站拉美西-拉美东 bandwidth.wlatonla：大陆站+国际站拉美西-拉美北 bandwidth.wlatowla：大陆站+国际站拉美西-拉美西
 
@@ -456,7 +456,7 @@ class BandwidthPackage:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this BandwidthPackage.
+        r"""Gets the billing_mode of this BandwidthPackage.
 
         :return: The billing_mode of this BandwidthPackage.
         :rtype: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
@@ -465,7 +465,7 @@ class BandwidthPackage:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this BandwidthPackage.
+        r"""Sets the billing_mode of this BandwidthPackage.
 
         :param billing_mode: The billing_mode of this BandwidthPackage.
         :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
@@ -474,7 +474,7 @@ class BandwidthPackage:
 
     @property
     def tags(self):
-        """Gets the tags of this BandwidthPackage.
+        r"""Gets the tags of this BandwidthPackage.
 
         实例标签。
 
@@ -485,7 +485,7 @@ class BandwidthPackage:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BandwidthPackage.
+        r"""Sets the tags of this BandwidthPackage.
 
         实例标签。
 
@@ -496,7 +496,7 @@ class BandwidthPackage:
 
     @property
     def status(self):
-        """Gets the status of this BandwidthPackage.
+        r"""Gets the status of this BandwidthPackage.
 
         带宽包实例的状态。ACTIVE表示状态
 
@@ -507,7 +507,7 @@ class BandwidthPackage:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BandwidthPackage.
+        r"""Sets the status of this BandwidthPackage.
 
         带宽包实例的状态。ACTIVE表示状态
 
@@ -518,7 +518,7 @@ class BandwidthPackage:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this BandwidthPackage.
+        r"""Gets the admin_state_up of this BandwidthPackage.
 
         带宽包实例的管理状态。
 
@@ -529,7 +529,7 @@ class BandwidthPackage:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this BandwidthPackage.
+        r"""Sets the admin_state_up of this BandwidthPackage.
 
         带宽包实例的管理状态。
 
@@ -540,7 +540,7 @@ class BandwidthPackage:
 
     @property
     def order_id(self):
-        """Gets the order_id of this BandwidthPackage.
+        r"""Gets the order_id of this BandwidthPackage.
 
         带宽包实例的订单ID。
 
@@ -551,7 +551,7 @@ class BandwidthPackage:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this BandwidthPackage.
+        r"""Sets the order_id of this BandwidthPackage.
 
         带宽包实例的订单ID。
 
@@ -562,7 +562,7 @@ class BandwidthPackage:
 
     @property
     def product_id(self):
-        """Gets the product_id of this BandwidthPackage.
+        r"""Gets the product_id of this BandwidthPackage.
 
         带宽包实例的产品ID。
 
@@ -573,7 +573,7 @@ class BandwidthPackage:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this BandwidthPackage.
+        r"""Sets the product_id of this BandwidthPackage.
 
         带宽包实例的产品ID。
 
@@ -584,7 +584,7 @@ class BandwidthPackage:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BandwidthPackage.
+        r"""Gets the charge_mode of this BandwidthPackage.
 
         带宽包实例的计费方式。 bandwidth是按带宽计费。
 
@@ -595,7 +595,7 @@ class BandwidthPackage:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BandwidthPackage.
+        r"""Sets the charge_mode of this BandwidthPackage.
 
         带宽包实例的计费方式。 bandwidth是按带宽计费。
 
@@ -606,7 +606,7 @@ class BandwidthPackage:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this BandwidthPackage.
+        r"""Gets the bandwidth of this BandwidthPackage.
 
         带宽包实例中的带宽值。
 
@@ -617,7 +617,7 @@ class BandwidthPackage:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this BandwidthPackage.
+        r"""Sets the bandwidth of this BandwidthPackage.
 
         带宽包实例中的带宽值。
 
@@ -628,7 +628,7 @@ class BandwidthPackage:
 
     @property
     def interflow_mode(self):
-        """Gets the interflow_mode of this BandwidthPackage.
+        r"""Gets the interflow_mode of this BandwidthPackage.
 
         互通类型: - Area: 大区互通 - Region: 城域互通
 
@@ -639,7 +639,7 @@ class BandwidthPackage:
 
     @interflow_mode.setter
     def interflow_mode(self, interflow_mode):
-        """Sets the interflow_mode of this BandwidthPackage.
+        r"""Sets the interflow_mode of this BandwidthPackage.
 
         互通类型: - Area: 大区互通 - Region: 城域互通
 

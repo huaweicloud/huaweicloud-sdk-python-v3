@@ -35,7 +35,7 @@ class AdvancedIpsRuleDto:
     }
 
     def __init__(self, action=None, ips_rule_id=None, ips_rule_type=None, object_id=None, param=None, status=None):
-        """AdvancedIpsRuleDto
+        r"""AdvancedIpsRuleDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AdvancedIpsRuleDto:
 
     @property
     def action(self):
-        """Gets the action of this AdvancedIpsRuleDto.
+        r"""Gets the action of this AdvancedIpsRuleDto.
 
         动作：0表示仅记录日志、1表示拦截session、2表示拦截ip
 
@@ -89,7 +89,7 @@ class AdvancedIpsRuleDto:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this AdvancedIpsRuleDto.
+        r"""Sets the action of this AdvancedIpsRuleDto.
 
         动作：0表示仅记录日志、1表示拦截session、2表示拦截ip
 
@@ -100,7 +100,7 @@ class AdvancedIpsRuleDto:
 
     @property
     def ips_rule_id(self):
-        """Gets the ips_rule_id of this AdvancedIpsRuleDto.
+        r"""Gets the ips_rule_id of this AdvancedIpsRuleDto.
 
         高级ips规则id
 
@@ -111,7 +111,7 @@ class AdvancedIpsRuleDto:
 
     @ips_rule_id.setter
     def ips_rule_id(self, ips_rule_id):
-        """Sets the ips_rule_id of this AdvancedIpsRuleDto.
+        r"""Sets the ips_rule_id of this AdvancedIpsRuleDto.
 
         高级ips规则id
 
@@ -122,7 +122,7 @@ class AdvancedIpsRuleDto:
 
     @property
     def ips_rule_type(self):
-        """Gets the ips_rule_type of this AdvancedIpsRuleDto.
+        r"""Gets the ips_rule_type of this AdvancedIpsRuleDto.
 
         ips规则类型：0表示敏感目录扫描、1表示反弹xshell
 
@@ -133,7 +133,7 @@ class AdvancedIpsRuleDto:
 
     @ips_rule_type.setter
     def ips_rule_type(self, ips_rule_type):
-        """Sets the ips_rule_type of this AdvancedIpsRuleDto.
+        r"""Sets the ips_rule_type of this AdvancedIpsRuleDto.
 
         ips规则类型：0表示敏感目录扫描、1表示反弹xshell
 
@@ -144,7 +144,7 @@ class AdvancedIpsRuleDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AdvancedIpsRuleDto.
+        r"""Gets the object_id of this AdvancedIpsRuleDto.
 
         防护对象id
 
@@ -155,7 +155,7 @@ class AdvancedIpsRuleDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AdvancedIpsRuleDto.
+        r"""Sets the object_id of this AdvancedIpsRuleDto.
 
         防护对象id
 
@@ -166,7 +166,7 @@ class AdvancedIpsRuleDto:
 
     @property
     def param(self):
-        """Gets the param of this AdvancedIpsRuleDto.
+        r"""Gets the param of this AdvancedIpsRuleDto.
 
         包含特殊参数的JSON字符串
 
@@ -177,7 +177,7 @@ class AdvancedIpsRuleDto:
 
     @param.setter
     def param(self, param):
-        """Sets the param of this AdvancedIpsRuleDto.
+        r"""Sets the param of this AdvancedIpsRuleDto.
 
         包含特殊参数的JSON字符串
 
@@ -188,7 +188,7 @@ class AdvancedIpsRuleDto:
 
     @property
     def status(self):
-        """Gets the status of this AdvancedIpsRuleDto.
+        r"""Gets the status of this AdvancedIpsRuleDto.
 
         :return: The status of this AdvancedIpsRuleDto.
         :rtype: int
@@ -197,7 +197,7 @@ class AdvancedIpsRuleDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AdvancedIpsRuleDto.
+        r"""Sets the status of this AdvancedIpsRuleDto.
 
         :param status: The status of this AdvancedIpsRuleDto.
         :type status: int

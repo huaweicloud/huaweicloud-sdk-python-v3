@@ -25,7 +25,7 @@ class UpdateEndpointConnectionsDescRequestBody:
     }
 
     def __init__(self, connections=None):
-        """UpdateEndpointConnectionsDescRequestBody
+        r"""UpdateEndpointConnectionsDescRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEndpointConnectionsDescRequestBody:
 
     @property
     def connections(self):
-        """Gets the connections of this UpdateEndpointConnectionsDescRequestBody.
+        r"""Gets the connections of this UpdateEndpointConnectionsDescRequestBody.
 
         连接管理描述字段列表
 
@@ -53,7 +53,7 @@ class UpdateEndpointConnectionsDescRequestBody:
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this UpdateEndpointConnectionsDescRequestBody.
+        r"""Sets the connections of this UpdateEndpointConnectionsDescRequestBody.
 
         连接管理描述字段列表
 

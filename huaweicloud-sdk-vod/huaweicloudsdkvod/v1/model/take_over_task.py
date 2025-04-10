@@ -47,7 +47,7 @@ class TakeOverTask:
     }
 
     def __init__(self, bucket=None, object=None, host_type=None, output_bucket=None, output_path=None, task_id=None, suffix=None, template_group_name=None, create_time=None, end_time=None, status=None, exec_desc=None):
-        """TakeOverTask
+        r"""TakeOverTask
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TakeOverTask:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TakeOverTask.
+        r"""Gets the bucket of this TakeOverTask.
 
         桶名。
 
@@ -131,7 +131,7 @@ class TakeOverTask:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TakeOverTask.
+        r"""Sets the bucket of this TakeOverTask.
 
         桶名。
 
@@ -142,7 +142,7 @@ class TakeOverTask:
 
     @property
     def object(self):
-        """Gets the object of this TakeOverTask.
+        r"""Gets the object of this TakeOverTask.
 
         目录/文件名。
 
@@ -153,7 +153,7 @@ class TakeOverTask:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this TakeOverTask.
+        r"""Sets the object of this TakeOverTask.
 
         目录/文件名。
 
@@ -164,7 +164,7 @@ class TakeOverTask:
 
     @property
     def host_type(self):
-        """Gets the host_type of this TakeOverTask.
+        r"""Gets the host_type of this TakeOverTask.
 
         托管类型。  取值如下： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户OBS桶中，且输出目录与源文件的存储目录相同。
 
@@ -175,7 +175,7 @@ class TakeOverTask:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this TakeOverTask.
+        r"""Sets the host_type of this TakeOverTask.
 
         托管类型。  取值如下： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户OBS桶中，且输出目录与源文件的存储目录相同。
 
@@ -186,7 +186,7 @@ class TakeOverTask:
 
     @property
     def output_bucket(self):
-        """Gets the output_bucket of this TakeOverTask.
+        r"""Gets the output_bucket of this TakeOverTask.
 
         输出桶 。
 
@@ -197,7 +197,7 @@ class TakeOverTask:
 
     @output_bucket.setter
     def output_bucket(self, output_bucket):
-        """Sets the output_bucket of this TakeOverTask.
+        r"""Sets the output_bucket of this TakeOverTask.
 
         输出桶 。
 
@@ -208,7 +208,7 @@ class TakeOverTask:
 
     @property
     def output_path(self):
-        """Gets the output_path of this TakeOverTask.
+        r"""Gets the output_path of this TakeOverTask.
 
         输出路径 。
 
@@ -219,7 +219,7 @@ class TakeOverTask:
 
     @output_path.setter
     def output_path(self, output_path):
-        """Sets the output_path of this TakeOverTask.
+        r"""Sets the output_path of this TakeOverTask.
 
         输出路径 。
 
@@ -230,7 +230,7 @@ class TakeOverTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TakeOverTask.
+        r"""Gets the task_id of this TakeOverTask.
 
         任务ID。
 
@@ -241,7 +241,7 @@ class TakeOverTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TakeOverTask.
+        r"""Sets the task_id of this TakeOverTask.
 
         任务ID。
 
@@ -252,7 +252,7 @@ class TakeOverTask:
 
     @property
     def suffix(self):
-        """Gets the suffix of this TakeOverTask.
+        r"""Gets the suffix of this TakeOverTask.
 
         托管文件类型。
 
@@ -263,7 +263,7 @@ class TakeOverTask:
 
     @suffix.setter
     def suffix(self, suffix):
-        """Sets the suffix of this TakeOverTask.
+        r"""Sets the suffix of this TakeOverTask.
 
         托管文件类型。
 
@@ -274,7 +274,7 @@ class TakeOverTask:
 
     @property
     def template_group_name(self):
-        """Gets the template_group_name of this TakeOverTask.
+        r"""Gets the template_group_name of this TakeOverTask.
 
         转码模板组 。
 
@@ -285,7 +285,7 @@ class TakeOverTask:
 
     @template_group_name.setter
     def template_group_name(self, template_group_name):
-        """Sets the template_group_name of this TakeOverTask.
+        r"""Sets the template_group_name of this TakeOverTask.
 
         转码模板组 。
 
@@ -296,7 +296,7 @@ class TakeOverTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TakeOverTask.
+        r"""Gets the create_time of this TakeOverTask.
 
         创建时间。
 
@@ -307,7 +307,7 @@ class TakeOverTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TakeOverTask.
+        r"""Sets the create_time of this TakeOverTask.
 
         创建时间。
 
@@ -318,7 +318,7 @@ class TakeOverTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TakeOverTask.
+        r"""Gets the end_time of this TakeOverTask.
 
         结束时间。
 
@@ -329,7 +329,7 @@ class TakeOverTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TakeOverTask.
+        r"""Sets the end_time of this TakeOverTask.
 
         结束时间。
 
@@ -340,7 +340,7 @@ class TakeOverTask:
 
     @property
     def status(self):
-        """Gets the status of this TakeOverTask.
+        r"""Gets the status of this TakeOverTask.
 
         任务状态。
 
@@ -351,7 +351,7 @@ class TakeOverTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TakeOverTask.
+        r"""Sets the status of this TakeOverTask.
 
         任务状态。
 
@@ -362,7 +362,7 @@ class TakeOverTask:
 
     @property
     def exec_desc(self):
-        """Gets the exec_desc of this TakeOverTask.
+        r"""Gets the exec_desc of this TakeOverTask.
 
         媒资的任务执行描述汇总。
 
@@ -373,7 +373,7 @@ class TakeOverTask:
 
     @exec_desc.setter
     def exec_desc(self, exec_desc):
-        """Sets the exec_desc of this TakeOverTask.
+        r"""Sets the exec_desc of this TakeOverTask.
 
         媒资的任务执行描述汇总。
 

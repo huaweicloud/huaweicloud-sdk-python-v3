@@ -27,7 +27,7 @@ class CheckObsBucketsRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """CheckObsBucketsRequest
+        r"""CheckObsBucketsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CheckObsBucketsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CheckObsBucketsRequest.
+        r"""Gets the domain_id of this CheckObsBucketsRequest.
 
         账户id，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -60,7 +60,7 @@ class CheckObsBucketsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CheckObsBucketsRequest.
+        r"""Sets the domain_id of this CheckObsBucketsRequest.
 
         账户id，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -71,7 +71,7 @@ class CheckObsBucketsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckObsBucketsRequest.
+        r"""Gets the body of this CheckObsBucketsRequest.
 
         :return: The body of this CheckObsBucketsRequest.
         :rtype: :class:`huaweicloudsdkcts.v3.CheckObsBucketsRequestBody`
@@ -80,7 +80,7 @@ class CheckObsBucketsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckObsBucketsRequest.
+        r"""Sets the body of this CheckObsBucketsRequest.
 
         :param body: The body of this CheckObsBucketsRequest.
         :type body: :class:`huaweicloudsdkcts.v3.CheckObsBucketsRequestBody`

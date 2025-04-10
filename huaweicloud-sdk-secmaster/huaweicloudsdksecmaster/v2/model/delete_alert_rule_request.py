@@ -29,7 +29,7 @@ class DeleteAlertRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """DeleteAlertRuleRequest
+        r"""DeleteAlertRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteAlertRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteAlertRuleRequest.
+        r"""Gets the project_id of this DeleteAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -66,7 +66,7 @@ class DeleteAlertRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteAlertRuleRequest.
+        r"""Sets the project_id of this DeleteAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -77,7 +77,7 @@ class DeleteAlertRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteAlertRuleRequest.
+        r"""Gets the workspace_id of this DeleteAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -88,7 +88,7 @@ class DeleteAlertRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteAlertRuleRequest.
+        r"""Sets the workspace_id of this DeleteAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -99,7 +99,7 @@ class DeleteAlertRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAlertRuleRequest.
+        r"""Gets the body of this DeleteAlertRuleRequest.
 
         :return: The body of this DeleteAlertRuleRequest.
         :rtype: list[str]
@@ -108,7 +108,7 @@ class DeleteAlertRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAlertRuleRequest.
+        r"""Sets the body of this DeleteAlertRuleRequest.
 
         :param body: The body of this DeleteAlertRuleRequest.
         :type body: list[str]

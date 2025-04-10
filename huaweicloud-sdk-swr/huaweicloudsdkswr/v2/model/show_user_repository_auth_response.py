@@ -32,7 +32,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, self_auth=None, others_auths=None):
-        """ShowUserRepositoryAuthResponse
+        r"""ShowUserRepositoryAuthResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowUserRepositoryAuthResponse.
+        r"""Gets the id of this ShowUserRepositoryAuthResponse.
 
         id
 
@@ -76,7 +76,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowUserRepositoryAuthResponse.
+        r"""Sets the id of this ShowUserRepositoryAuthResponse.
 
         id
 
@@ -87,7 +87,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowUserRepositoryAuthResponse.
+        r"""Gets the name of this ShowUserRepositoryAuthResponse.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -98,7 +98,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowUserRepositoryAuthResponse.
+        r"""Sets the name of this ShowUserRepositoryAuthResponse.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -109,7 +109,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @property
     def self_auth(self):
-        """Gets the self_auth of this ShowUserRepositoryAuthResponse.
+        r"""Gets the self_auth of this ShowUserRepositoryAuthResponse.
 
         :return: The self_auth of this ShowUserRepositoryAuthResponse.
         :rtype: :class:`huaweicloudsdkswr.v2.UserAuth`
@@ -118,7 +118,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @self_auth.setter
     def self_auth(self, self_auth):
-        """Sets the self_auth of this ShowUserRepositoryAuthResponse.
+        r"""Sets the self_auth of this ShowUserRepositoryAuthResponse.
 
         :param self_auth: The self_auth of this ShowUserRepositoryAuthResponse.
         :type self_auth: :class:`huaweicloudsdkswr.v2.UserAuth`
@@ -127,7 +127,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @property
     def others_auths(self):
-        """Gets the others_auths of this ShowUserRepositoryAuthResponse.
+        r"""Gets the others_auths of this ShowUserRepositoryAuthResponse.
 
         其他用户的权限
 
@@ -138,7 +138,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
 
     @others_auths.setter
     def others_auths(self, others_auths):
-        """Sets the others_auths of this ShowUserRepositoryAuthResponse.
+        r"""Sets the others_auths of this ShowUserRepositoryAuthResponse.
 
         其他用户的权限
 

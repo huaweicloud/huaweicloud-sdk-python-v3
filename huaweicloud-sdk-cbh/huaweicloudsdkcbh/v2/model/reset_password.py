@@ -27,7 +27,7 @@ class ResetPassword:
     }
 
     def __init__(self, new_password=None, server_id=None):
-        """ResetPassword
+        r"""ResetPassword
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResetPassword:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ResetPassword.
+        r"""Gets the new_password of this ResetPassword.
 
         admin用户修改后的新密码，8-32位，大写字母、小写字母、数字和特殊字符。
 
@@ -59,7 +59,7 @@ class ResetPassword:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ResetPassword.
+        r"""Sets the new_password of this ResetPassword.
 
         admin用户修改后的新密码，8-32位，大写字母、小写字母、数字和特殊字符。
 
@@ -70,7 +70,7 @@ class ResetPassword:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ResetPassword.
+        r"""Gets the server_id of this ResetPassword.
 
         云堡垒机实例ID，使用UUID格式表示。
 
@@ -81,7 +81,7 @@ class ResetPassword:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ResetPassword.
+        r"""Sets the server_id of this ResetPassword.
 
         云堡垒机实例ID，使用UUID格式表示。
 

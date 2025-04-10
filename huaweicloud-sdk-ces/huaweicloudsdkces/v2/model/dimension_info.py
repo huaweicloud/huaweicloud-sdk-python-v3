@@ -29,7 +29,7 @@ class DimensionInfo:
     }
 
     def __init__(self, name=None, filter_type=None, values=None):
-        """DimensionInfo
+        r"""DimensionInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DimensionInfo:
 
     @property
     def name(self):
-        """Gets the name of this DimensionInfo.
+        r"""Gets the name of this DimensionInfo.
 
         维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”
 
@@ -66,7 +66,7 @@ class DimensionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DimensionInfo.
+        r"""Sets the name of this DimensionInfo.
 
         维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”
 
@@ -77,7 +77,7 @@ class DimensionInfo:
 
     @property
     def filter_type(self):
-        """Gets the filter_type of this DimensionInfo.
+        r"""Gets the filter_type of this DimensionInfo.
 
         资源类型, all_instances: 全部资源, specific_instances: 指定资源
 
@@ -88,7 +88,7 @@ class DimensionInfo:
 
     @filter_type.setter
     def filter_type(self, filter_type):
-        """Sets the filter_type of this DimensionInfo.
+        r"""Sets the filter_type of this DimensionInfo.
 
         资源类型, all_instances: 全部资源, specific_instances: 指定资源
 
@@ -99,7 +99,7 @@ class DimensionInfo:
 
     @property
     def values(self):
-        """Gets the values of this DimensionInfo.
+        r"""Gets the values of this DimensionInfo.
 
         维度值列表
 
@@ -110,7 +110,7 @@ class DimensionInfo:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this DimensionInfo.
+        r"""Sets the values of this DimensionInfo.
 
         维度值列表
 

@@ -29,7 +29,7 @@ class BatchCreateResourceTagsRequest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, body=None):
-        """BatchCreateResourceTagsRequest
+        r"""BatchCreateResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCreateResourceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateResourceTagsRequest.
+        r"""Gets the resource_id of this BatchCreateResourceTagsRequest.
 
         资源实例ID
 
@@ -66,7 +66,7 @@ class BatchCreateResourceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateResourceTagsRequest.
+        r"""Sets the resource_id of this BatchCreateResourceTagsRequest.
 
         资源实例ID
 
@@ -77,7 +77,7 @@ class BatchCreateResourceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchCreateResourceTagsRequest.
+        r"""Gets the resource_type of this BatchCreateResourceTagsRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -88,7 +88,7 @@ class BatchCreateResourceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchCreateResourceTagsRequest.
+        r"""Sets the resource_type of this BatchCreateResourceTagsRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -99,7 +99,7 @@ class BatchCreateResourceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateResourceTagsRequest.
+        r"""Gets the body of this BatchCreateResourceTagsRequest.
 
         :return: The body of this BatchCreateResourceTagsRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.BatchOperateResourceTagsRequestBody`
@@ -108,7 +108,7 @@ class BatchCreateResourceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateResourceTagsRequest.
+        r"""Sets the body of this BatchCreateResourceTagsRequest.
 
         :param body: The body of this BatchCreateResourceTagsRequest.
         :type body: :class:`huaweicloudsdkdc.v3.BatchOperateResourceTagsRequestBody`

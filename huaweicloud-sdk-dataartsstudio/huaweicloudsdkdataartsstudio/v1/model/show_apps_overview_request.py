@@ -33,7 +33,7 @@ class ShowAppsOverviewRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, start_time=None, end_time=None, time_unit=None):
-        """ShowAppsOverviewRequest
+        r"""ShowAppsOverviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ShowAppsOverviewRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowAppsOverviewRequest.
+        r"""Gets the workspace of this ShowAppsOverviewRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class ShowAppsOverviewRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowAppsOverviewRequest.
+        r"""Sets the workspace of this ShowAppsOverviewRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -89,7 +89,7 @@ class ShowAppsOverviewRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowAppsOverviewRequest.
+        r"""Gets the dlm_type of this ShowAppsOverviewRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class ShowAppsOverviewRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowAppsOverviewRequest.
+        r"""Sets the dlm_type of this ShowAppsOverviewRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -111,7 +111,7 @@ class ShowAppsOverviewRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowAppsOverviewRequest.
+        r"""Gets the start_time of this ShowAppsOverviewRequest.
 
         开始时间（13位时间戳）。
 
@@ -122,7 +122,7 @@ class ShowAppsOverviewRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowAppsOverviewRequest.
+        r"""Sets the start_time of this ShowAppsOverviewRequest.
 
         开始时间（13位时间戳）。
 
@@ -133,7 +133,7 @@ class ShowAppsOverviewRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowAppsOverviewRequest.
+        r"""Gets the end_time of this ShowAppsOverviewRequest.
 
         结束时间（13位时间戳）。
 
@@ -144,7 +144,7 @@ class ShowAppsOverviewRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowAppsOverviewRequest.
+        r"""Sets the end_time of this ShowAppsOverviewRequest.
 
         结束时间（13位时间戳）。
 
@@ -155,7 +155,7 @@ class ShowAppsOverviewRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ShowAppsOverviewRequest.
+        r"""Gets the time_unit of this ShowAppsOverviewRequest.
 
         时间单位。
 
@@ -166,7 +166,7 @@ class ShowAppsOverviewRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ShowAppsOverviewRequest.
+        r"""Sets the time_unit of this ShowAppsOverviewRequest.
 
         时间单位。
 

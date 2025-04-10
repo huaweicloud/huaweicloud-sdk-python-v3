@@ -27,7 +27,7 @@ class ResourceTagInfo:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTagInfo
+        r"""ResourceTagInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceTagInfo:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTagInfo.
+        r"""Gets the key of this ResourceTagInfo.
 
         标签键。
 
@@ -61,7 +61,7 @@ class ResourceTagInfo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTagInfo.
+        r"""Sets the key of this ResourceTagInfo.
 
         标签键。
 
@@ -72,7 +72,7 @@ class ResourceTagInfo:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTagInfo.
+        r"""Gets the value of this ResourceTagInfo.
 
         标签值。
 
@@ -83,7 +83,7 @@ class ResourceTagInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTagInfo.
+        r"""Sets the value of this ResourceTagInfo.
 
         标签值。
 

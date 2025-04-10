@@ -29,7 +29,7 @@ class ResourceTags:
     }
 
     def __init__(self, resource_id=None, resource_name=None, tags=None):
-        """ResourceTags
+        r"""ResourceTags
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourceTags:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceTags.
+        r"""Gets the resource_id of this ResourceTags.
 
         资源ID。
 
@@ -68,7 +68,7 @@ class ResourceTags:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceTags.
+        r"""Sets the resource_id of this ResourceTags.
 
         资源ID。
 
@@ -79,7 +79,7 @@ class ResourceTags:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceTags.
+        r"""Gets the resource_name of this ResourceTags.
 
         资源名称。
 
@@ -90,7 +90,7 @@ class ResourceTags:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceTags.
+        r"""Sets the resource_name of this ResourceTags.
 
         资源名称。
 
@@ -101,7 +101,7 @@ class ResourceTags:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceTags.
+        r"""Gets the tags of this ResourceTags.
 
         :return: The tags of this ResourceTags.
         :rtype: list[:class:`huaweicloudsdkga.v1.ResourceTag`]
@@ -110,7 +110,7 @@ class ResourceTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceTags.
+        r"""Sets the tags of this ResourceTags.
 
         :param tags: The tags of this ResourceTags.
         :type tags: list[:class:`huaweicloudsdkga.v1.ResourceTag`]

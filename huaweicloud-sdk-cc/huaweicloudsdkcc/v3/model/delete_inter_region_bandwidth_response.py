@@ -24,7 +24,7 @@ class DeleteInterRegionBandwidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteInterRegionBandwidthResponse
+        r"""DeleteInterRegionBandwidthResponse
 
         The model defined in huaweicloud sdk
 

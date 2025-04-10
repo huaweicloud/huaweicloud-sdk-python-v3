@@ -25,7 +25,7 @@ class StartPublicWhitelistReq:
     }
 
     def __init__(self, white_list=None):
-        """StartPublicWhitelistReq
+        r"""StartPublicWhitelistReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartPublicWhitelistReq:
 
     @property
     def white_list(self):
-        """Gets the white_list of this StartPublicWhitelistReq.
+        r"""Gets the white_list of this StartPublicWhitelistReq.
 
         开启白名单的用户IP。
 
@@ -53,7 +53,7 @@ class StartPublicWhitelistReq:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this StartPublicWhitelistReq.
+        r"""Sets the white_list of this StartPublicWhitelistReq.
 
         开启白名单的用户IP。
 

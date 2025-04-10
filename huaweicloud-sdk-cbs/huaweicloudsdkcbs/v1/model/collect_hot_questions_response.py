@@ -26,7 +26,7 @@ class CollectHotQuestionsResponse(SdkResponse):
     }
 
     def __init__(self, questions=None):
-        """CollectHotQuestionsResponse
+        r"""CollectHotQuestionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CollectHotQuestionsResponse(SdkResponse):
 
     @property
     def questions(self):
-        """Gets the questions of this CollectHotQuestionsResponse.
+        r"""Gets the questions of this CollectHotQuestionsResponse.
 
         指定时间范围内，热点问题列表。
 
@@ -55,7 +55,7 @@ class CollectHotQuestionsResponse(SdkResponse):
 
     @questions.setter
     def questions(self, questions):
-        """Sets the questions of this CollectHotQuestionsResponse.
+        r"""Sets the questions of this CollectHotQuestionsResponse.
 
         指定时间范围内，热点问题列表。
 

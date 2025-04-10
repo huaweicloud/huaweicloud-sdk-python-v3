@@ -27,7 +27,7 @@ class UpdatePackageIpRequest:
     }
 
     def __init__(self, package_id=None, body=None):
-        """UpdatePackageIpRequest
+        r"""UpdatePackageIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePackageIpRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this UpdatePackageIpRequest.
+        r"""Gets the package_id of this UpdatePackageIpRequest.
 
         防护包id
 
@@ -60,7 +60,7 @@ class UpdatePackageIpRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this UpdatePackageIpRequest.
+        r"""Sets the package_id of this UpdatePackageIpRequest.
 
         防护包id
 
@@ -71,7 +71,7 @@ class UpdatePackageIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePackageIpRequest.
+        r"""Gets the body of this UpdatePackageIpRequest.
 
         :return: The body of this UpdatePackageIpRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.UpdatePackageIpRequestBody`
@@ -80,7 +80,7 @@ class UpdatePackageIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePackageIpRequest.
+        r"""Sets the body of this UpdatePackageIpRequest.
 
         :param body: The body of this UpdatePackageIpRequest.
         :type body: :class:`huaweicloudsdkaad.v1.UpdatePackageIpRequestBody`

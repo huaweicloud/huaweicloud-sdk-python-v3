@@ -31,7 +31,7 @@ class StarRocksCreateRequestPayInfo:
     }
 
     def __init__(self, pay_model=None, period=None, period_type=None, is_auto_renew=None):
-        """StarRocksCreateRequestPayInfo
+        r"""StarRocksCreateRequestPayInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StarRocksCreateRequestPayInfo:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this StarRocksCreateRequestPayInfo.
+        r"""Gets the pay_model of this StarRocksCreateRequestPayInfo.
 
         计费模式，默认0。包周期场景必填。 取值范围： - 0：按需计费 - 1：包周期
 
@@ -75,7 +75,7 @@ class StarRocksCreateRequestPayInfo:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this StarRocksCreateRequestPayInfo.
+        r"""Sets the pay_model of this StarRocksCreateRequestPayInfo.
 
         计费模式，默认0。包周期场景必填。 取值范围： - 0：按需计费 - 1：包周期
 
@@ -86,7 +86,7 @@ class StarRocksCreateRequestPayInfo:
 
     @property
     def period(self):
-        """Gets the period of this StarRocksCreateRequestPayInfo.
+        r"""Gets the period of this StarRocksCreateRequestPayInfo.
 
         包周期周期。包周期场景必填。
 
@@ -97,7 +97,7 @@ class StarRocksCreateRequestPayInfo:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this StarRocksCreateRequestPayInfo.
+        r"""Sets the period of this StarRocksCreateRequestPayInfo.
 
         包周期周期。包周期场景必填。
 
@@ -108,7 +108,7 @@ class StarRocksCreateRequestPayInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this StarRocksCreateRequestPayInfo.
+        r"""Gets the period_type of this StarRocksCreateRequestPayInfo.
 
         包周期周期类型。包周期场景必填。 取值范围： - 2：包月 - 3：包年
 
@@ -119,7 +119,7 @@ class StarRocksCreateRequestPayInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this StarRocksCreateRequestPayInfo.
+        r"""Sets the period_type of this StarRocksCreateRequestPayInfo.
 
         包周期周期类型。包周期场景必填。 取值范围： - 2：包月 - 3：包年
 
@@ -130,7 +130,7 @@ class StarRocksCreateRequestPayInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this StarRocksCreateRequestPayInfo.
+        r"""Gets the is_auto_renew of this StarRocksCreateRequestPayInfo.
 
         包周期是否自动续费。包周期场景必填。 取值范围： - 1：自动续费 - 0：不自动续费
 
@@ -141,7 +141,7 @@ class StarRocksCreateRequestPayInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this StarRocksCreateRequestPayInfo.
+        r"""Sets the is_auto_renew of this StarRocksCreateRequestPayInfo.
 
         包周期是否自动续费。包周期场景必填。 取值范围： - 1：自动续费 - 0：不自动续费
 

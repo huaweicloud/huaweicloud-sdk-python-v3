@@ -26,7 +26,7 @@ class ShowVolumeTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowVolumeTagsResponse
+        r"""ShowVolumeTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVolumeTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowVolumeTagsResponse.
+        r"""Gets the tags of this ShowVolumeTagsResponse.
 
         标签列表。
 
@@ -55,7 +55,7 @@ class ShowVolumeTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowVolumeTagsResponse.
+        r"""Sets the tags of this ShowVolumeTagsResponse.
 
         标签列表。
 

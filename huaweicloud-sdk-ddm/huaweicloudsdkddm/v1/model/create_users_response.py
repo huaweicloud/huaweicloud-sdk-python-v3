@@ -26,7 +26,7 @@ class CreateUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """CreateUsersResponse
+        r"""CreateUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this CreateUsersResponse.
+        r"""Gets the users of this CreateUsersResponse.
 
         DDM实例帐号相关信息的集合。
 
@@ -55,7 +55,7 @@ class CreateUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateUsersResponse.
+        r"""Sets the users of this CreateUsersResponse.
 
         DDM实例帐号相关信息的集合。
 

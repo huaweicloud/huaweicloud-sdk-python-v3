@@ -37,7 +37,7 @@ class SlaTriggeringRuleInfo:
     }
 
     def __init__(self, day=None, hour=None, minute=None, protocol=None, is_ongoing_notification=None, notification_interval=None, notification_obj_configuration=None):
-        """SlaTriggeringRuleInfo
+        r"""SlaTriggeringRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def day(self):
-        """Gets the day of this SlaTriggeringRuleInfo.
+        r"""Gets the day of this SlaTriggeringRuleInfo.
 
         天
 
@@ -96,7 +96,7 @@ class SlaTriggeringRuleInfo:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this SlaTriggeringRuleInfo.
+        r"""Sets the day of this SlaTriggeringRuleInfo.
 
         天
 
@@ -107,7 +107,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def hour(self):
-        """Gets the hour of this SlaTriggeringRuleInfo.
+        r"""Gets the hour of this SlaTriggeringRuleInfo.
 
         小时
 
@@ -118,7 +118,7 @@ class SlaTriggeringRuleInfo:
 
     @hour.setter
     def hour(self, hour):
-        """Sets the hour of this SlaTriggeringRuleInfo.
+        r"""Sets the hour of this SlaTriggeringRuleInfo.
 
         小时
 
@@ -129,7 +129,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def minute(self):
-        """Gets the minute of this SlaTriggeringRuleInfo.
+        r"""Gets the minute of this SlaTriggeringRuleInfo.
 
         分钟
 
@@ -140,7 +140,7 @@ class SlaTriggeringRuleInfo:
 
     @minute.setter
     def minute(self, minute):
-        """Sets the minute of this SlaTriggeringRuleInfo.
+        r"""Sets the minute of this SlaTriggeringRuleInfo.
 
         分钟
 
@@ -151,7 +151,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SlaTriggeringRuleInfo.
+        r"""Gets the protocol of this SlaTriggeringRuleInfo.
 
         通知类型
 
@@ -162,7 +162,7 @@ class SlaTriggeringRuleInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SlaTriggeringRuleInfo.
+        r"""Sets the protocol of this SlaTriggeringRuleInfo.
 
         通知类型
 
@@ -173,7 +173,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def is_ongoing_notification(self):
-        """Gets the is_ongoing_notification of this SlaTriggeringRuleInfo.
+        r"""Gets the is_ongoing_notification of this SlaTriggeringRuleInfo.
 
         是否持续通知
 
@@ -184,7 +184,7 @@ class SlaTriggeringRuleInfo:
 
     @is_ongoing_notification.setter
     def is_ongoing_notification(self, is_ongoing_notification):
-        """Sets the is_ongoing_notification of this SlaTriggeringRuleInfo.
+        r"""Sets the is_ongoing_notification of this SlaTriggeringRuleInfo.
 
         是否持续通知
 
@@ -195,7 +195,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def notification_interval(self):
-        """Gets the notification_interval of this SlaTriggeringRuleInfo.
+        r"""Gets the notification_interval of this SlaTriggeringRuleInfo.
 
         通知间隔
 
@@ -206,7 +206,7 @@ class SlaTriggeringRuleInfo:
 
     @notification_interval.setter
     def notification_interval(self, notification_interval):
-        """Sets the notification_interval of this SlaTriggeringRuleInfo.
+        r"""Sets the notification_interval of this SlaTriggeringRuleInfo.
 
         通知间隔
 
@@ -217,7 +217,7 @@ class SlaTriggeringRuleInfo:
 
     @property
     def notification_obj_configuration(self):
-        """Gets the notification_obj_configuration of this SlaTriggeringRuleInfo.
+        r"""Gets the notification_obj_configuration of this SlaTriggeringRuleInfo.
 
         通知配置
 
@@ -228,7 +228,7 @@ class SlaTriggeringRuleInfo:
 
     @notification_obj_configuration.setter
     def notification_obj_configuration(self, notification_obj_configuration):
-        """Sets the notification_obj_configuration of this SlaTriggeringRuleInfo.
+        r"""Sets the notification_obj_configuration of this SlaTriggeringRuleInfo.
 
         通知配置
 

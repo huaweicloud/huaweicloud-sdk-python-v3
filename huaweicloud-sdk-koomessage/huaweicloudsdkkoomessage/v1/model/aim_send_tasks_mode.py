@@ -47,7 +47,7 @@ class AIMSendTasksMode:
     }
 
     def __init__(self, task_name=None, sms_channel=None, resolve_task=None, task_id=None, task_state=None, creation_time=None, submission_count=None, send_count=None, resolve_count=None, support_resolve_count=None, failed_short_chains=None, success_number=None):
-        """AIMSendTasksMode
+        r"""AIMSendTasksMode
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AIMSendTasksMode:
 
     @property
     def task_name(self):
-        """Gets the task_name of this AIMSendTasksMode.
+        r"""Gets the task_name of this AIMSendTasksMode.
 
         智能信息发送任务名称。
 
@@ -131,7 +131,7 @@ class AIMSendTasksMode:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this AIMSendTasksMode.
+        r"""Sets the task_name of this AIMSendTasksMode.
 
         智能信息发送任务名称。
 
@@ -142,7 +142,7 @@ class AIMSendTasksMode:
 
     @property
     def sms_channel(self):
-        """Gets the sms_channel of this AIMSendTasksMode.
+        r"""Gets the sms_channel of this AIMSendTasksMode.
 
         :return: The sms_channel of this AIMSendTasksMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMSendTaskSmsChannel`
@@ -151,7 +151,7 @@ class AIMSendTasksMode:
 
     @sms_channel.setter
     def sms_channel(self, sms_channel):
-        """Sets the sms_channel of this AIMSendTasksMode.
+        r"""Sets the sms_channel of this AIMSendTasksMode.
 
         :param sms_channel: The sms_channel of this AIMSendTasksMode.
         :type sms_channel: :class:`huaweicloudsdkkoomessage.v1.AIMSendTaskSmsChannel`
@@ -160,7 +160,7 @@ class AIMSendTasksMode:
 
     @property
     def resolve_task(self):
-        """Gets the resolve_task of this AIMSendTasksMode.
+        r"""Gets the resolve_task of this AIMSendTasksMode.
 
         :return: The resolve_task of this AIMSendTasksMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskMode`
@@ -169,7 +169,7 @@ class AIMSendTasksMode:
 
     @resolve_task.setter
     def resolve_task(self, resolve_task):
-        """Sets the resolve_task of this AIMSendTasksMode.
+        r"""Sets the resolve_task of this AIMSendTasksMode.
 
         :param resolve_task: The resolve_task of this AIMSendTasksMode.
         :type resolve_task: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskMode`
@@ -178,7 +178,7 @@ class AIMSendTasksMode:
 
     @property
     def task_id(self):
-        """Gets the task_id of this AIMSendTasksMode.
+        r"""Gets the task_id of this AIMSendTasksMode.
 
         任务ID。
 
@@ -189,7 +189,7 @@ class AIMSendTasksMode:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AIMSendTasksMode.
+        r"""Sets the task_id of this AIMSendTasksMode.
 
         任务ID。
 
@@ -200,7 +200,7 @@ class AIMSendTasksMode:
 
     @property
     def task_state(self):
-        """Gets the task_state of this AIMSendTasksMode.
+        r"""Gets the task_state of this AIMSendTasksMode.
 
         任务状态。  - Success：发送成功 - Failed：发送失败  > 此状态仅代表任务提交状态，不代表智能信息发送结果。用户手机接收智能信息结果请以收到的回执结果为准，也可通过查询智能信息发送明细API获取或登录KooMessage控制台查看。 
 
@@ -211,7 +211,7 @@ class AIMSendTasksMode:
 
     @task_state.setter
     def task_state(self, task_state):
-        """Sets the task_state of this AIMSendTasksMode.
+        r"""Sets the task_state of this AIMSendTasksMode.
 
         任务状态。  - Success：发送成功 - Failed：发送失败  > 此状态仅代表任务提交状态，不代表智能信息发送结果。用户手机接收智能信息结果请以收到的回执结果为准，也可通过查询智能信息发送明细API获取或登录KooMessage控制台查看。 
 
@@ -222,7 +222,7 @@ class AIMSendTasksMode:
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this AIMSendTasksMode.
+        r"""Gets the creation_time of this AIMSendTasksMode.
 
         创建时间。样例：2019-10-12T07:20:50.522Z。
 
@@ -233,7 +233,7 @@ class AIMSendTasksMode:
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this AIMSendTasksMode.
+        r"""Sets the creation_time of this AIMSendTasksMode.
 
         创建时间。样例：2019-10-12T07:20:50.522Z。
 
@@ -244,7 +244,7 @@ class AIMSendTasksMode:
 
     @property
     def submission_count(self):
-        """Gets the submission_count of this AIMSendTasksMode.
+        r"""Gets the submission_count of this AIMSendTasksMode.
 
         提交的手机号码总数。
 
@@ -255,7 +255,7 @@ class AIMSendTasksMode:
 
     @submission_count.setter
     def submission_count(self, submission_count):
-        """Sets the submission_count of this AIMSendTasksMode.
+        r"""Sets the submission_count of this AIMSendTasksMode.
 
         提交的手机号码总数。
 
@@ -266,7 +266,7 @@ class AIMSendTasksMode:
 
     @property
     def send_count(self):
-        """Gets the send_count of this AIMSendTasksMode.
+        r"""Gets the send_count of this AIMSendTasksMode.
 
         发送数量。
 
@@ -277,7 +277,7 @@ class AIMSendTasksMode:
 
     @send_count.setter
     def send_count(self, send_count):
-        """Sets the send_count of this AIMSendTasksMode.
+        r"""Sets the send_count of this AIMSendTasksMode.
 
         发送数量。
 
@@ -288,7 +288,7 @@ class AIMSendTasksMode:
 
     @property
     def resolve_count(self):
-        """Gets the resolve_count of this AIMSendTasksMode.
+        r"""Gets the resolve_count of this AIMSendTasksMode.
 
         智能信息解析成功的手机号码总数。
 
@@ -299,7 +299,7 @@ class AIMSendTasksMode:
 
     @resolve_count.setter
     def resolve_count(self, resolve_count):
-        """Sets the resolve_count of this AIMSendTasksMode.
+        r"""Sets the resolve_count of this AIMSendTasksMode.
 
         智能信息解析成功的手机号码总数。
 
@@ -310,7 +310,7 @@ class AIMSendTasksMode:
 
     @property
     def support_resolve_count(self):
-        """Gets the support_resolve_count of this AIMSendTasksMode.
+        r"""Gets the support_resolve_count of this AIMSendTasksMode.
 
         支持智能信息解析的手机号码总数。  >通过API发送的智能信息任务不做解析能力判断，返回-1作为标识。 
 
@@ -321,7 +321,7 @@ class AIMSendTasksMode:
 
     @support_resolve_count.setter
     def support_resolve_count(self, support_resolve_count):
-        """Sets the support_resolve_count of this AIMSendTasksMode.
+        r"""Sets the support_resolve_count of this AIMSendTasksMode.
 
         支持智能信息解析的手机号码总数。  >通过API发送的智能信息任务不做解析能力判断，返回-1作为标识。 
 
@@ -332,7 +332,7 @@ class AIMSendTasksMode:
 
     @property
     def failed_short_chains(self):
-        """Gets the failed_short_chains of this AIMSendTasksMode.
+        r"""Gets the failed_short_chains of this AIMSendTasksMode.
 
         短链生成失败列表。  > 预留字段。 
 
@@ -343,7 +343,7 @@ class AIMSendTasksMode:
 
     @failed_short_chains.setter
     def failed_short_chains(self, failed_short_chains):
-        """Sets the failed_short_chains of this AIMSendTasksMode.
+        r"""Sets the failed_short_chains of this AIMSendTasksMode.
 
         短链生成失败列表。  > 预留字段。 
 
@@ -354,7 +354,7 @@ class AIMSendTasksMode:
 
     @property
     def success_number(self):
-        """Gets the success_number of this AIMSendTasksMode.
+        r"""Gets the success_number of this AIMSendTasksMode.
 
         发送成功的智能信息数。
 
@@ -365,7 +365,7 @@ class AIMSendTasksMode:
 
     @success_number.setter
     def success_number(self, success_number):
-        """Sets the success_number of this AIMSendTasksMode.
+        r"""Sets the success_number of this AIMSendTasksMode.
 
         发送成功的智能信息数。
 

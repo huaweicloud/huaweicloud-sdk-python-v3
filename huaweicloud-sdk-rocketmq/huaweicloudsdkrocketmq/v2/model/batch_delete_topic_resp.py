@@ -25,7 +25,7 @@ class BatchDeleteTopicResp:
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteTopicResp
+        r"""BatchDeleteTopicResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteTopicResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteTopicResp.
+        r"""Gets the job_id of this BatchDeleteTopicResp.
 
         删除主题任务ID。
 
@@ -54,7 +54,7 @@ class BatchDeleteTopicResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteTopicResp.
+        r"""Sets the job_id of this BatchDeleteTopicResp.
 
         删除主题任务ID。
 

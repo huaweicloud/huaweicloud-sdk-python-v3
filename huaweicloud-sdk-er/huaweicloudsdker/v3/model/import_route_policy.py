@@ -25,7 +25,7 @@ class ImportRoutePolicy:
     }
 
     def __init__(self, import_policy_id=None):
-        """ImportRoutePolicy
+        r"""ImportRoutePolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportRoutePolicy:
 
     @property
     def import_policy_id(self):
-        """Gets the import_policy_id of this ImportRoutePolicy.
+        r"""Gets the import_policy_id of this ImportRoutePolicy.
 
         入方向Ipv4协议路由策略id
 
@@ -54,7 +54,7 @@ class ImportRoutePolicy:
 
     @import_policy_id.setter
     def import_policy_id(self, import_policy_id):
-        """Sets the import_policy_id of this ImportRoutePolicy.
+        r"""Sets the import_policy_id of this ImportRoutePolicy.
 
         入方向Ipv4协议路由策略id
 

@@ -25,7 +25,7 @@ class StopHotPipelineRequestBody:
     }
 
     def __init__(self, name=None):
-        """StopHotPipelineRequestBody
+        r"""StopHotPipelineRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopHotPipelineRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this StopHotPipelineRequestBody.
+        r"""Gets the name of this StopHotPipelineRequestBody.
 
         配置文件名称。
 
@@ -53,7 +53,7 @@ class StopHotPipelineRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StopHotPipelineRequestBody.
+        r"""Sets the name of this StopHotPipelineRequestBody.
 
         配置文件名称。
 

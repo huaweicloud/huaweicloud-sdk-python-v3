@@ -54,7 +54,7 @@ class ShowTriggerResponse(SdkResponse):
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, created_at=None, creator_name=None, enable=None, name=None, trigger_history=None, trigger_mode=None, trigger_type=None):
-        """ShowTriggerResponse
+        r"""ShowTriggerResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this ShowTriggerResponse.
+        r"""Gets the action of this ShowTriggerResponse.
 
         触发动作，update
 
@@ -153,7 +153,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowTriggerResponse.
+        r"""Sets the action of this ShowTriggerResponse.
 
         触发动作，update
 
@@ -164,7 +164,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowTriggerResponse.
+        r"""Gets the app_type of this ShowTriggerResponse.
 
         应用类型，deployments、statefulsets
 
@@ -175,7 +175,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowTriggerResponse.
+        r"""Sets the app_type of this ShowTriggerResponse.
 
         应用类型，deployments、statefulsets
 
@@ -186,7 +186,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def application(self):
-        """Gets the application of this ShowTriggerResponse.
+        r"""Gets the application of this ShowTriggerResponse.
 
         应用名
 
@@ -197,7 +197,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @application.setter
     def application(self, application):
-        """Sets the application of this ShowTriggerResponse.
+        r"""Sets the application of this ShowTriggerResponse.
 
         应用名
 
@@ -208,7 +208,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowTriggerResponse.
+        r"""Gets the cluster_id of this ShowTriggerResponse.
 
         集群ID（cci时为空）
 
@@ -219,7 +219,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowTriggerResponse.
+        r"""Sets the cluster_id of this ShowTriggerResponse.
 
         集群ID（cci时为空）
 
@@ -230,7 +230,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowTriggerResponse.
+        r"""Gets the cluster_name of this ShowTriggerResponse.
 
         集群名（cci时为空）
 
@@ -241,7 +241,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowTriggerResponse.
+        r"""Sets the cluster_name of this ShowTriggerResponse.
 
         集群名（cci时为空）
 
@@ -252,7 +252,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def cluster_ns(self):
-        """Gets the cluster_ns of this ShowTriggerResponse.
+        r"""Gets the cluster_ns of this ShowTriggerResponse.
 
         应用名所在的namespace
 
@@ -263,7 +263,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @cluster_ns.setter
     def cluster_ns(self, cluster_ns):
-        """Sets the cluster_ns of this ShowTriggerResponse.
+        r"""Sets the cluster_ns of this ShowTriggerResponse.
 
         应用名所在的namespace
 
@@ -274,7 +274,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def condition(self):
-        """Gets the condition of this ShowTriggerResponse.
+        r"""Gets the condition of this ShowTriggerResponse.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -285,7 +285,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this ShowTriggerResponse.
+        r"""Sets the condition of this ShowTriggerResponse.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -296,7 +296,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def container(self):
-        """Gets the container of this ShowTriggerResponse.
+        r"""Gets the container of this ShowTriggerResponse.
 
         需更新的container名，默认为所有container
 
@@ -307,7 +307,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @container.setter
     def container(self, container):
-        """Sets the container of this ShowTriggerResponse.
+        r"""Sets the container of this ShowTriggerResponse.
 
         需更新的container名，默认为所有container
 
@@ -318,7 +318,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowTriggerResponse.
+        r"""Gets the created_at of this ShowTriggerResponse.
 
         创建时间
 
@@ -329,7 +329,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowTriggerResponse.
+        r"""Sets the created_at of this ShowTriggerResponse.
 
         创建时间
 
@@ -340,7 +340,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowTriggerResponse.
+        r"""Gets the creator_name of this ShowTriggerResponse.
 
         创建人
 
@@ -351,7 +351,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowTriggerResponse.
+        r"""Sets the creator_name of this ShowTriggerResponse.
 
         创建人
 
@@ -362,7 +362,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this ShowTriggerResponse.
+        r"""Gets the enable of this ShowTriggerResponse.
 
         是否生效
 
@@ -373,7 +373,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ShowTriggerResponse.
+        r"""Sets the enable of this ShowTriggerResponse.
 
         是否生效
 
@@ -384,7 +384,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTriggerResponse.
+        r"""Gets the name of this ShowTriggerResponse.
 
         触发器名
 
@@ -395,7 +395,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTriggerResponse.
+        r"""Sets the name of this ShowTriggerResponse.
 
         触发器名
 
@@ -406,7 +406,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def trigger_history(self):
-        """Gets the trigger_history of this ShowTriggerResponse.
+        r"""Gets the trigger_history of this ShowTriggerResponse.
 
         触发器历史
 
@@ -417,7 +417,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @trigger_history.setter
     def trigger_history(self, trigger_history):
-        """Sets the trigger_history of this ShowTriggerResponse.
+        r"""Sets the trigger_history of this ShowTriggerResponse.
 
         触发器历史
 
@@ -428,7 +428,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def trigger_mode(self):
-        """Gets the trigger_mode of this ShowTriggerResponse.
+        r"""Gets the trigger_mode of this ShowTriggerResponse.
 
         触发器类型，cce、cci
 
@@ -439,7 +439,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @trigger_mode.setter
     def trigger_mode(self, trigger_mode):
-        """Sets the trigger_mode of this ShowTriggerResponse.
+        r"""Sets the trigger_mode of this ShowTriggerResponse.
 
         触发器类型，cce、cci
 
@@ -450,7 +450,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ShowTriggerResponse.
+        r"""Gets the trigger_type of this ShowTriggerResponse.
 
         触发条件，all、tag、regular
 
@@ -461,7 +461,7 @@ class ShowTriggerResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ShowTriggerResponse.
+        r"""Sets the trigger_type of this ShowTriggerResponse.
 
         触发条件，all、tag、regular
 

@@ -31,7 +31,7 @@ class ChangeSqlSwitchBody:
     }
 
     def __init__(self, type=None, status=None, datastore_type=None, retention_days=None):
-        """ChangeSqlSwitchBody
+        r"""ChangeSqlSwitchBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangeSqlSwitchBody:
 
     @property
     def type(self):
-        """Gets the type of this ChangeSqlSwitchBody.
+        r"""Gets the type of this ChangeSqlSwitchBody.
 
         开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
 
@@ -72,7 +72,7 @@ class ChangeSqlSwitchBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChangeSqlSwitchBody.
+        r"""Sets the type of this ChangeSqlSwitchBody.
 
         开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
 
@@ -83,7 +83,7 @@ class ChangeSqlSwitchBody:
 
     @property
     def status(self):
-        """Gets the status of this ChangeSqlSwitchBody.
+        r"""Gets the status of this ChangeSqlSwitchBody.
 
         开关状态，取值0和1，分别代表要关闭和开启。
 
@@ -94,7 +94,7 @@ class ChangeSqlSwitchBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeSqlSwitchBody.
+        r"""Sets the status of this ChangeSqlSwitchBody.
 
         开关状态，取值0和1，分别代表要关闭和开启。
 
@@ -105,7 +105,7 @@ class ChangeSqlSwitchBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ChangeSqlSwitchBody.
+        r"""Gets the datastore_type of this ChangeSqlSwitchBody.
 
         数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
 
@@ -116,7 +116,7 @@ class ChangeSqlSwitchBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ChangeSqlSwitchBody.
+        r"""Sets the datastore_type of this ChangeSqlSwitchBody.
 
         数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
 
@@ -127,7 +127,7 @@ class ChangeSqlSwitchBody:
 
     @property
     def retention_days(self):
-        """Gets the retention_days of this ChangeSqlSwitchBody.
+        r"""Gets the retention_days of this ChangeSqlSwitchBody.
 
         SQL数据保存时长（天）。默认为7天，最长可保留30天，到期后数据自动删除。如果要保留30天以上，请到DAS页面进行操作。
 
@@ -138,7 +138,7 @@ class ChangeSqlSwitchBody:
 
     @retention_days.setter
     def retention_days(self, retention_days):
-        """Sets the retention_days of this ChangeSqlSwitchBody.
+        r"""Sets the retention_days of this ChangeSqlSwitchBody.
 
         SQL数据保存时长（天）。默认为7天，最长可保留30天，到期后数据自动删除。如果要保留30天以上，请到DAS页面进行操作。
 

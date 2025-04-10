@@ -33,7 +33,7 @@ class UpdateScriptRequest:
     }
 
     def __init__(self, script_uuid=None, x_language=None, x_project_id=None, x_user_profile=None, body=None):
-        """UpdateScriptRequest
+        r"""UpdateScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UpdateScriptRequest:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this UpdateScriptRequest.
+        r"""Gets the script_uuid of this UpdateScriptRequest.
 
         脚本uuid
 
@@ -81,7 +81,7 @@ class UpdateScriptRequest:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this UpdateScriptRequest.
+        r"""Sets the script_uuid of this UpdateScriptRequest.
 
         脚本uuid
 
@@ -92,7 +92,7 @@ class UpdateScriptRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateScriptRequest.
+        r"""Gets the x_language of this UpdateScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -103,7 +103,7 @@ class UpdateScriptRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateScriptRequest.
+        r"""Sets the x_language of this UpdateScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -114,7 +114,7 @@ class UpdateScriptRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this UpdateScriptRequest.
+        r"""Gets the x_project_id of this UpdateScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -125,7 +125,7 @@ class UpdateScriptRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this UpdateScriptRequest.
+        r"""Sets the x_project_id of this UpdateScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -136,7 +136,7 @@ class UpdateScriptRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this UpdateScriptRequest.
+        r"""Gets the x_user_profile of this UpdateScriptRequest.
 
         IAM5.0用户信息
 
@@ -147,7 +147,7 @@ class UpdateScriptRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this UpdateScriptRequest.
+        r"""Sets the x_user_profile of this UpdateScriptRequest.
 
         IAM5.0用户信息
 
@@ -158,7 +158,7 @@ class UpdateScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScriptRequest.
+        r"""Gets the body of this UpdateScriptRequest.
 
         :return: The body of this UpdateScriptRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.EditScriptModel`
@@ -167,7 +167,7 @@ class UpdateScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScriptRequest.
+        r"""Sets the body of this UpdateScriptRequest.
 
         :param body: The body of this UpdateScriptRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.EditScriptModel`

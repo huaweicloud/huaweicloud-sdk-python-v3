@@ -29,7 +29,7 @@ class ListFunctionAsyncInvokeConfigRequest:
     }
 
     def __init__(self, function_urn=None, marker=None, limit=None):
-        """ListFunctionAsyncInvokeConfigRequest
+        r"""ListFunctionAsyncInvokeConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListFunctionAsyncInvokeConfigRequest.
+        r"""Gets the function_urn of this ListFunctionAsyncInvokeConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -67,7 +67,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListFunctionAsyncInvokeConfigRequest.
+        r"""Sets the function_urn of this ListFunctionAsyncInvokeConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -78,7 +78,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionAsyncInvokeConfigRequest.
+        r"""Gets the marker of this ListFunctionAsyncInvokeConfigRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -89,7 +89,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionAsyncInvokeConfigRequest.
+        r"""Sets the marker of this ListFunctionAsyncInvokeConfigRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -100,7 +100,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFunctionAsyncInvokeConfigRequest.
+        r"""Gets the limit of this ListFunctionAsyncInvokeConfigRequest.
 
         每页显示的条目数量。 - 如果不提供该值或者提供的值等于0，则使用默认值：10，最大值100，大于100取值100。 - 如果该值小于0，则返回参数错误。
 
@@ -111,7 +111,7 @@ class ListFunctionAsyncInvokeConfigRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFunctionAsyncInvokeConfigRequest.
+        r"""Sets the limit of this ListFunctionAsyncInvokeConfigRequest.
 
         每页显示的条目数量。 - 如果不提供该值或者提供的值等于0，则使用默认值：10，最大值100，大于100取值100。 - 如果该值小于0，则返回参数错误。
 

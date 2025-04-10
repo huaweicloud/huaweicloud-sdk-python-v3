@@ -27,7 +27,7 @@ class VersionMediatypes:
     }
 
     def __init__(self, type=None, base=None):
-        """VersionMediatypes
+        r"""VersionMediatypes
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VersionMediatypes:
 
     @property
     def type(self):
-        """Gets the type of this VersionMediatypes.
+        r"""Gets the type of this VersionMediatypes.
 
         媒体类型。
 
@@ -59,7 +59,7 @@ class VersionMediatypes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VersionMediatypes.
+        r"""Sets the type of this VersionMediatypes.
 
         媒体类型。
 
@@ -70,7 +70,7 @@ class VersionMediatypes:
 
     @property
     def base(self):
-        """Gets the base of this VersionMediatypes.
+        r"""Gets the base of this VersionMediatypes.
 
         基础类型。
 
@@ -81,7 +81,7 @@ class VersionMediatypes:
 
     @base.setter
     def base(self, base):
-        """Sets the base of this VersionMediatypes.
+        r"""Sets the base of this VersionMediatypes.
 
         基础类型。
 

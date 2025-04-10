@@ -25,7 +25,7 @@ class ShowLakeFormationInstanceRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowLakeFormationInstanceRequest
+        r"""ShowLakeFormationInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLakeFormationInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowLakeFormationInstanceRequest.
+        r"""Gets the instance_id of this ShowLakeFormationInstanceRequest.
 
         LakeFormation实例ID
 
@@ -53,7 +53,7 @@ class ShowLakeFormationInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowLakeFormationInstanceRequest.
+        r"""Sets the instance_id of this ShowLakeFormationInstanceRequest.
 
         LakeFormation实例ID
 

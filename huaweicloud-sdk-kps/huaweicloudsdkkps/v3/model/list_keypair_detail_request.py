@@ -25,7 +25,7 @@ class ListKeypairDetailRequest:
     }
 
     def __init__(self, keypair_name=None):
-        """ListKeypairDetailRequest
+        r"""ListKeypairDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListKeypairDetailRequest:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this ListKeypairDetailRequest.
+        r"""Gets the keypair_name of this ListKeypairDetailRequest.
 
         密钥对名称
 
@@ -53,7 +53,7 @@ class ListKeypairDetailRequest:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this ListKeypairDetailRequest.
+        r"""Sets the keypair_name of this ListKeypairDetailRequest.
 
         密钥对名称
 

@@ -29,7 +29,7 @@ class QuerySqlPlanBody:
     }
 
     def __init__(self, db_user_id=None, database=None, sql=None):
-        """QuerySqlPlanBody
+        r"""QuerySqlPlanBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QuerySqlPlanBody:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this QuerySqlPlanBody.
+        r"""Gets the db_user_id of this QuerySqlPlanBody.
 
         数据库用户ID
 
@@ -68,7 +68,7 @@ class QuerySqlPlanBody:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this QuerySqlPlanBody.
+        r"""Sets the db_user_id of this QuerySqlPlanBody.
 
         数据库用户ID
 
@@ -79,7 +79,7 @@ class QuerySqlPlanBody:
 
     @property
     def database(self):
-        """Gets the database of this QuerySqlPlanBody.
+        r"""Gets the database of this QuerySqlPlanBody.
 
         数据库名称
 
@@ -90,7 +90,7 @@ class QuerySqlPlanBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this QuerySqlPlanBody.
+        r"""Sets the database of this QuerySqlPlanBody.
 
         数据库名称
 
@@ -101,7 +101,7 @@ class QuerySqlPlanBody:
 
     @property
     def sql(self):
-        """Gets the sql of this QuerySqlPlanBody.
+        r"""Gets the sql of this QuerySqlPlanBody.
 
         SQL语句
 
@@ -112,7 +112,7 @@ class QuerySqlPlanBody:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this QuerySqlPlanBody.
+        r"""Sets the sql of this QuerySqlPlanBody.
 
         SQL语句
 

@@ -25,7 +25,7 @@ class BatchRestartOrDeleteInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRestartOrDeleteInstancesRequest
+        r"""BatchRestartOrDeleteInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRestartOrDeleteInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRestartOrDeleteInstancesRequest.
+        r"""Gets the body of this BatchRestartOrDeleteInstancesRequest.
 
         :return: The body of this BatchRestartOrDeleteInstancesRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceReq`
@@ -52,7 +52,7 @@ class BatchRestartOrDeleteInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRestartOrDeleteInstancesRequest.
+        r"""Sets the body of this BatchRestartOrDeleteInstancesRequest.
 
         :param body: The body of this BatchRestartOrDeleteInstancesRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstanceReq`

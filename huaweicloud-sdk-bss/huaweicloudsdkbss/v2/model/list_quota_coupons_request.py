@@ -25,7 +25,7 @@ class ListQuotaCouponsRequest:
     }
 
     def __init__(self, body=None):
-        """ListQuotaCouponsRequest
+        r"""ListQuotaCouponsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListQuotaCouponsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListQuotaCouponsRequest.
+        r"""Gets the body of this ListQuotaCouponsRequest.
 
         :return: The body of this ListQuotaCouponsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`
@@ -52,7 +52,7 @@ class ListQuotaCouponsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListQuotaCouponsRequest.
+        r"""Sets the body of this ListQuotaCouponsRequest.
 
         :param body: The body of this ListQuotaCouponsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`

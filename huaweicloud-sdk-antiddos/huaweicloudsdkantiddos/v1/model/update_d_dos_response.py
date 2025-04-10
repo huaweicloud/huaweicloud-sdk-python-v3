@@ -30,7 +30,7 @@ class UpdateDDosResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, task_id=None):
-        """UpdateDDosResponse
+        r"""UpdateDDosResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateDDosResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateDDosResponse.
+        r"""Gets the error_code of this UpdateDDosResponse.
 
         内部错误码
 
@@ -69,7 +69,7 @@ class UpdateDDosResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateDDosResponse.
+        r"""Sets the error_code of this UpdateDDosResponse.
 
         内部错误码
 
@@ -80,7 +80,7 @@ class UpdateDDosResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UpdateDDosResponse.
+        r"""Gets the error_msg of this UpdateDDosResponse.
 
         内部错误描述
 
@@ -91,7 +91,7 @@ class UpdateDDosResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdateDDosResponse.
+        r"""Sets the error_msg of this UpdateDDosResponse.
 
         内部错误描述
 
@@ -102,7 +102,7 @@ class UpdateDDosResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateDDosResponse.
+        r"""Gets the task_id of this UpdateDDosResponse.
 
         任务ID，后续可根据该ID查询本任务状态。 本字段为后续的任务审计扩展，暂时不需要，先保留。
 
@@ -113,7 +113,7 @@ class UpdateDDosResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateDDosResponse.
+        r"""Sets the task_id of this UpdateDDosResponse.
 
         任务ID，后续可根据该ID查询本任务状态。 本字段为后续的任务审计扩展，暂时不需要，先保留。
 

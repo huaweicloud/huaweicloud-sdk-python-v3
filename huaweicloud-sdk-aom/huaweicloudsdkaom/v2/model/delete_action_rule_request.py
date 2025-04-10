@@ -25,7 +25,7 @@ class DeleteActionRuleRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteActionRuleRequest
+        r"""DeleteActionRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteActionRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteActionRuleRequest.
+        r"""Gets the body of this DeleteActionRuleRequest.
 
         :return: The body of this DeleteActionRuleRequest.
         :rtype: list[str]
@@ -52,7 +52,7 @@ class DeleteActionRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteActionRuleRequest.
+        r"""Sets the body of this DeleteActionRuleRequest.
 
         :param body: The body of this DeleteActionRuleRequest.
         :type body: list[str]

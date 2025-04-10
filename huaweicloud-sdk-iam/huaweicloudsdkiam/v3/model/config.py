@@ -25,7 +25,7 @@ class Config:
     }
 
     def __init__(self, security_compliance=None):
-        """Config
+        r"""Config
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Config:
 
     @property
     def security_compliance(self):
-        """Gets the security_compliance of this Config.
+        r"""Gets the security_compliance of this Config.
 
         :return: The security_compliance of this Config.
         :rtype: :class:`huaweicloudsdkiam.v3.SecurityCompliance`
@@ -51,7 +51,7 @@ class Config:
 
     @security_compliance.setter
     def security_compliance(self, security_compliance):
-        """Sets the security_compliance of this Config.
+        r"""Sets the security_compliance of this Config.
 
         :param security_compliance: The security_compliance of this Config.
         :type security_compliance: :class:`huaweicloudsdkiam.v3.SecurityCompliance`

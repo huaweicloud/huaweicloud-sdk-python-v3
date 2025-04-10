@@ -29,7 +29,7 @@ class CreateVmsTaskResponseMode:
     }
 
     def __init__(self, ret_code=None, task_id=None, desc=None):
-        """CreateVmsTaskResponseMode
+        r"""CreateVmsTaskResponseMode
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVmsTaskResponseMode:
 
     @property
     def ret_code(self):
-        """Gets the ret_code of this CreateVmsTaskResponseMode.
+        r"""Gets the ret_code of this CreateVmsTaskResponseMode.
 
         智能信息基础版下发结果返回码。
 
@@ -68,7 +68,7 @@ class CreateVmsTaskResponseMode:
 
     @ret_code.setter
     def ret_code(self, ret_code):
-        """Sets the ret_code of this CreateVmsTaskResponseMode.
+        r"""Sets the ret_code of this CreateVmsTaskResponseMode.
 
         智能信息基础版下发结果返回码。
 
@@ -79,7 +79,7 @@ class CreateVmsTaskResponseMode:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateVmsTaskResponseMode.
+        r"""Gets the task_id of this CreateVmsTaskResponseMode.
 
         智能信息基础版下发任务批次ID。
 
@@ -90,7 +90,7 @@ class CreateVmsTaskResponseMode:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateVmsTaskResponseMode.
+        r"""Sets the task_id of this CreateVmsTaskResponseMode.
 
         智能信息基础版下发任务批次ID。
 
@@ -101,7 +101,7 @@ class CreateVmsTaskResponseMode:
 
     @property
     def desc(self):
-        """Gets the desc of this CreateVmsTaskResponseMode.
+        r"""Gets the desc of this CreateVmsTaskResponseMode.
 
         智能信息基础版下发描述信息。
 
@@ -112,7 +112,7 @@ class CreateVmsTaskResponseMode:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this CreateVmsTaskResponseMode.
+        r"""Sets the desc of this CreateVmsTaskResponseMode.
 
         智能信息基础版下发描述信息。
 

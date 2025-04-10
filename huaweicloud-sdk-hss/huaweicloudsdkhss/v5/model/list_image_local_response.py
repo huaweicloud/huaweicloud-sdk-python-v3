@@ -28,7 +28,7 @@ class ListImageLocalResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListImageLocalResponse
+        r"""ListImageLocalResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImageLocalResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListImageLocalResponse.
+        r"""Gets the total_num of this ListImageLocalResponse.
 
         本地镜像总数
 
@@ -62,7 +62,7 @@ class ListImageLocalResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListImageLocalResponse.
+        r"""Sets the total_num of this ListImageLocalResponse.
 
         本地镜像总数
 
@@ -73,7 +73,7 @@ class ListImageLocalResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListImageLocalResponse.
+        r"""Gets the data_list of this ListImageLocalResponse.
 
         本地镜像数据列表
 
@@ -84,7 +84,7 @@ class ListImageLocalResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListImageLocalResponse.
+        r"""Sets the data_list of this ListImageLocalResponse.
 
         本地镜像数据列表
 

@@ -37,7 +37,7 @@ class PostOldRequestsReq:
     }
 
     def __init__(self, extends=None, chat_enable=None, threshold_enable=None, user_id=None, question=None, operate_type=None, session_id=None):
-        """PostOldRequestsReq
+        r"""PostOldRequestsReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class PostOldRequestsReq:
 
     @property
     def extends(self):
-        """Gets the extends of this PostOldRequestsReq.
+        r"""Gets the extends of this PostOldRequestsReq.
 
         :return: The extends of this PostOldRequestsReq.
         :rtype: :class:`huaweicloudsdkcbs.v1.OldExtends`
@@ -93,7 +93,7 @@ class PostOldRequestsReq:
 
     @extends.setter
     def extends(self, extends):
-        """Sets the extends of this PostOldRequestsReq.
+        r"""Sets the extends of this PostOldRequestsReq.
 
         :param extends: The extends of this PostOldRequestsReq.
         :type extends: :class:`huaweicloudsdkcbs.v1.OldExtends`
@@ -102,7 +102,7 @@ class PostOldRequestsReq:
 
     @property
     def chat_enable(self):
-        """Gets the chat_enable of this PostOldRequestsReq.
+        r"""Gets the chat_enable of this PostOldRequestsReq.
 
         默认false true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
@@ -113,7 +113,7 @@ class PostOldRequestsReq:
 
     @chat_enable.setter
     def chat_enable(self, chat_enable):
-        """Sets the chat_enable of this PostOldRequestsReq.
+        r"""Sets the chat_enable of this PostOldRequestsReq.
 
         默认false true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
@@ -124,7 +124,7 @@ class PostOldRequestsReq:
 
     @property
     def threshold_enable(self):
-        """Gets the threshold_enable of this PostOldRequestsReq.
+        r"""Gets the threshold_enable of this PostOldRequestsReq.
 
         true：启动内部阈值 返回经过阈值处理之后的答案。 false：不启用内部阈值 返回原答案。
 
@@ -135,7 +135,7 @@ class PostOldRequestsReq:
 
     @threshold_enable.setter
     def threshold_enable(self, threshold_enable):
-        """Sets the threshold_enable of this PostOldRequestsReq.
+        r"""Sets the threshold_enable of this PostOldRequestsReq.
 
         true：启动内部阈值 返回经过阈值处理之后的答案。 false：不启用内部阈值 返回原答案。
 
@@ -146,7 +146,7 @@ class PostOldRequestsReq:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PostOldRequestsReq.
+        r"""Gets the user_id of this PostOldRequestsReq.
 
         用户id，在日志中用于标识不通用户，可以为任意String
 
@@ -157,7 +157,7 @@ class PostOldRequestsReq:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PostOldRequestsReq.
+        r"""Sets the user_id of this PostOldRequestsReq.
 
         用户id，在日志中用于标识不通用户，可以为任意String
 
@@ -168,7 +168,7 @@ class PostOldRequestsReq:
 
     @property
     def question(self):
-        """Gets the question of this PostOldRequestsReq.
+        r"""Gets the question of this PostOldRequestsReq.
 
         用户输入
 
@@ -179,7 +179,7 @@ class PostOldRequestsReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this PostOldRequestsReq.
+        r"""Sets the question of this PostOldRequestsReq.
 
         用户输入
 
@@ -190,7 +190,7 @@ class PostOldRequestsReq:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this PostOldRequestsReq.
+        r"""Gets the operate_type of this PostOldRequestsReq.
 
         调用接口时候传入，用以标记的问答的行为，默认为0，最终会展示在问答日志里。 0 用户输入 1 单击热点问题 3 单击推荐问题 4 单击问题提示
 
@@ -201,7 +201,7 @@ class PostOldRequestsReq:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this PostOldRequestsReq.
+        r"""Sets the operate_type of this PostOldRequestsReq.
 
         调用接口时候传入，用以标记的问答的行为，默认为0，最终会展示在问答日志里。 0 用户输入 1 单击热点问题 3 单击推荐问题 4 单击问题提示
 
@@ -212,7 +212,7 @@ class PostOldRequestsReq:
 
     @property
     def session_id(self):
-        """Gets the session_id of this PostOldRequestsReq.
+        r"""Gets the session_id of this PostOldRequestsReq.
 
         会话标识符，UUID格式。如：c04e6f7b-61d7-4a2d-a0c8-f9ecd2f62359。  每次对话开启，机器人创建会话id，下次请求中传入该id表示继续该轮对话，每轮会话有效时间为2分钟。 若传入的会话id已过期或者为空，则机器人会重新创建新的会话id（重新创建会话id会消耗一定时间）。
 
@@ -223,7 +223,7 @@ class PostOldRequestsReq:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this PostOldRequestsReq.
+        r"""Sets the session_id of this PostOldRequestsReq.
 
         会话标识符，UUID格式。如：c04e6f7b-61d7-4a2d-a0c8-f9ecd2f62359。  每次对话开启，机器人创建会话id，下次请求中传入该id表示继续该轮对话，每轮会话有效时间为2分钟。 若传入的会话id已过期或者为空，则机器人会重新创建新的会话id（重新创建会话id会消耗一定时间）。
 

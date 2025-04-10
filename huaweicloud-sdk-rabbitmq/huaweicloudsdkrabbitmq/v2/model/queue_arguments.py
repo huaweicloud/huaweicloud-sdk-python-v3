@@ -31,7 +31,7 @@ class QueueArguments:
     }
 
     def __init__(self, x_message_ttl=None, x_dead_letter_exchange=None, x_dead_letter_routing_key=None, x_queue_mode=None):
-        """QueueArguments
+        r"""QueueArguments
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QueueArguments:
 
     @property
     def x_message_ttl(self):
-        """Gets the x_message_ttl of this QueueArguments.
+        r"""Gets the x_message_ttl of this QueueArguments.
 
         消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。
 
@@ -75,7 +75,7 @@ class QueueArguments:
 
     @x_message_ttl.setter
     def x_message_ttl(self, x_message_ttl):
-        """Sets the x_message_ttl of this QueueArguments.
+        r"""Sets the x_message_ttl of this QueueArguments.
 
         消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。
 
@@ -86,7 +86,7 @@ class QueueArguments:
 
     @property
     def x_dead_letter_exchange(self):
-        """Gets the x_dead_letter_exchange of this QueueArguments.
+        r"""Gets the x_dead_letter_exchange of this QueueArguments.
 
         死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
 
@@ -97,7 +97,7 @@ class QueueArguments:
 
     @x_dead_letter_exchange.setter
     def x_dead_letter_exchange(self, x_dead_letter_exchange):
-        """Sets the x_dead_letter_exchange of this QueueArguments.
+        r"""Sets the x_dead_letter_exchange of this QueueArguments.
 
         死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
 
@@ -108,7 +108,7 @@ class QueueArguments:
 
     @property
     def x_dead_letter_routing_key(self):
-        """Gets the x_dead_letter_routing_key of this QueueArguments.
+        r"""Gets the x_dead_letter_routing_key of this QueueArguments.
 
         死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
 
@@ -119,7 +119,7 @@ class QueueArguments:
 
     @x_dead_letter_routing_key.setter
     def x_dead_letter_routing_key(self, x_dead_letter_routing_key):
-        """Sets the x_dead_letter_routing_key of this QueueArguments.
+        r"""Sets the x_dead_letter_routing_key of this QueueArguments.
 
         死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
 
@@ -130,7 +130,7 @@ class QueueArguments:
 
     @property
     def x_queue_mode(self):
-        """Gets the x_queue_mode of this QueueArguments.
+        r"""Gets the x_queue_mode of this QueueArguments.
 
         惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
 
@@ -141,7 +141,7 @@ class QueueArguments:
 
     @x_queue_mode.setter
     def x_queue_mode(self, x_queue_mode):
-        """Sets the x_queue_mode of this QueueArguments.
+        r"""Sets the x_queue_mode of this QueueArguments.
 
         惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
 

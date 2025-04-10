@@ -29,7 +29,7 @@ class ListPermRulesRequest:
     }
 
     def __init__(self, share_id=None, limit=None, offset=None):
-        """ListPermRulesRequest
+        r"""ListPermRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPermRulesRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ListPermRulesRequest.
+        r"""Gets the share_id of this ListPermRulesRequest.
 
         文件系统id
 
@@ -67,7 +67,7 @@ class ListPermRulesRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ListPermRulesRequest.
+        r"""Sets the share_id of this ListPermRulesRequest.
 
         文件系统id
 
@@ -78,7 +78,7 @@ class ListPermRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermRulesRequest.
+        r"""Gets the limit of this ListPermRulesRequest.
 
         返回的权限规则个数
 
@@ -89,7 +89,7 @@ class ListPermRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermRulesRequest.
+        r"""Sets the limit of this ListPermRulesRequest.
 
         返回的权限规则个数
 
@@ -100,7 +100,7 @@ class ListPermRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPermRulesRequest.
+        r"""Gets the offset of this ListPermRulesRequest.
 
         返回的权限规则的偏移量
 
@@ -111,7 +111,7 @@ class ListPermRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPermRulesRequest.
+        r"""Sets the offset of this ListPermRulesRequest.
 
         返回的权限规则的偏移量
 

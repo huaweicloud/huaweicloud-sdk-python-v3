@@ -27,7 +27,7 @@ class UpdateInstanceSecurityGroupRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateInstanceSecurityGroupRequest
+        r"""UpdateInstanceSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateInstanceSecurityGroupRequest.
+        r"""Gets the server_id of this UpdateInstanceSecurityGroupRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -60,7 +60,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateInstanceSecurityGroupRequest.
+        r"""Sets the server_id of this UpdateInstanceSecurityGroupRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -71,7 +71,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceSecurityGroupRequest.
+        r"""Gets the body of this UpdateInstanceSecurityGroupRequest.
 
         :return: The body of this UpdateInstanceSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.ChangeInstanceSecurityGroups`
@@ -80,7 +80,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceSecurityGroupRequest.
+        r"""Sets the body of this UpdateInstanceSecurityGroupRequest.
 
         :param body: The body of this UpdateInstanceSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.ChangeInstanceSecurityGroups`

@@ -41,7 +41,7 @@ class InfluxdbSlowLogDetail:
     }
 
     def __init__(self, node_id=None, node_name=None, whole_message=None, operate_type=None, cost_time=None, log_time=None, database=None, retention_policy=None, line_num=None):
-        """InfluxdbSlowLogDetail
+        r"""InfluxdbSlowLogDetail
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this InfluxdbSlowLogDetail.
+        r"""Gets the node_id of this InfluxdbSlowLogDetail.
 
         节点ID。
 
@@ -101,7 +101,7 @@ class InfluxdbSlowLogDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this InfluxdbSlowLogDetail.
+        r"""Sets the node_id of this InfluxdbSlowLogDetail.
 
         节点ID。
 
@@ -112,7 +112,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this InfluxdbSlowLogDetail.
+        r"""Gets the node_name of this InfluxdbSlowLogDetail.
 
         节点名称。
 
@@ -123,7 +123,7 @@ class InfluxdbSlowLogDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this InfluxdbSlowLogDetail.
+        r"""Sets the node_name of this InfluxdbSlowLogDetail.
 
         节点名称。
 
@@ -134,7 +134,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def whole_message(self):
-        """Gets the whole_message of this InfluxdbSlowLogDetail.
+        r"""Gets the whole_message of this InfluxdbSlowLogDetail.
 
         执行语句。
 
@@ -145,7 +145,7 @@ class InfluxdbSlowLogDetail:
 
     @whole_message.setter
     def whole_message(self, whole_message):
-        """Sets the whole_message of this InfluxdbSlowLogDetail.
+        r"""Sets the whole_message of this InfluxdbSlowLogDetail.
 
         执行语句。
 
@@ -156,7 +156,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this InfluxdbSlowLogDetail.
+        r"""Gets the operate_type of this InfluxdbSlowLogDetail.
 
         语句类型。
 
@@ -167,7 +167,7 @@ class InfluxdbSlowLogDetail:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this InfluxdbSlowLogDetail.
+        r"""Sets the operate_type of this InfluxdbSlowLogDetail.
 
         语句类型。
 
@@ -178,7 +178,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this InfluxdbSlowLogDetail.
+        r"""Gets the cost_time of this InfluxdbSlowLogDetail.
 
         执行时间。单位：ms
 
@@ -189,7 +189,7 @@ class InfluxdbSlowLogDetail:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this InfluxdbSlowLogDetail.
+        r"""Sets the cost_time of this InfluxdbSlowLogDetail.
 
         执行时间。单位：ms
 
@@ -200,7 +200,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def log_time(self):
-        """Gets the log_time of this InfluxdbSlowLogDetail.
+        r"""Gets the log_time of this InfluxdbSlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -211,7 +211,7 @@ class InfluxdbSlowLogDetail:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this InfluxdbSlowLogDetail.
+        r"""Sets the log_time of this InfluxdbSlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -222,7 +222,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def database(self):
-        """Gets the database of this InfluxdbSlowLogDetail.
+        r"""Gets the database of this InfluxdbSlowLogDetail.
 
         数据库名称。
 
@@ -233,7 +233,7 @@ class InfluxdbSlowLogDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this InfluxdbSlowLogDetail.
+        r"""Sets the database of this InfluxdbSlowLogDetail.
 
         数据库名称。
 
@@ -244,7 +244,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def retention_policy(self):
-        """Gets the retention_policy of this InfluxdbSlowLogDetail.
+        r"""Gets the retention_policy of this InfluxdbSlowLogDetail.
 
         保留策略。
 
@@ -255,7 +255,7 @@ class InfluxdbSlowLogDetail:
 
     @retention_policy.setter
     def retention_policy(self, retention_policy):
-        """Sets the retention_policy of this InfluxdbSlowLogDetail.
+        r"""Sets the retention_policy of this InfluxdbSlowLogDetail.
 
         保留策略。
 
@@ -266,7 +266,7 @@ class InfluxdbSlowLogDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this InfluxdbSlowLogDetail.
+        r"""Gets the line_num of this InfluxdbSlowLogDetail.
 
         日志单行序列号。
 
@@ -277,7 +277,7 @@ class InfluxdbSlowLogDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this InfluxdbSlowLogDetail.
+        r"""Sets the line_num of this InfluxdbSlowLogDetail.
 
         日志单行序列号。
 

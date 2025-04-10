@@ -31,7 +31,7 @@ class CreateCompareResultFileRequest:
     }
 
     def __init__(self, x_language=None, region=None, job_id=None, body=None):
-        """CreateCompareResultFileRequest
+        r"""CreateCompareResultFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateCompareResultFileRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateCompareResultFileRequest.
+        r"""Gets the x_language of this CreateCompareResultFileRequest.
 
         请求语言类型。
 
@@ -73,7 +73,7 @@ class CreateCompareResultFileRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateCompareResultFileRequest.
+        r"""Sets the x_language of this CreateCompareResultFileRequest.
 
         请求语言类型。
 
@@ -84,7 +84,7 @@ class CreateCompareResultFileRequest:
 
     @property
     def region(self):
-        """Gets the region of this CreateCompareResultFileRequest.
+        r"""Gets the region of this CreateCompareResultFileRequest.
 
         区域ID，例如：cn-north-4。
 
@@ -95,7 +95,7 @@ class CreateCompareResultFileRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateCompareResultFileRequest.
+        r"""Sets the region of this CreateCompareResultFileRequest.
 
         区域ID，例如：cn-north-4。
 
@@ -106,7 +106,7 @@ class CreateCompareResultFileRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateCompareResultFileRequest.
+        r"""Gets the job_id of this CreateCompareResultFileRequest.
 
         任务ID。
 
@@ -117,7 +117,7 @@ class CreateCompareResultFileRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateCompareResultFileRequest.
+        r"""Sets the job_id of this CreateCompareResultFileRequest.
 
         任务ID。
 
@@ -128,7 +128,7 @@ class CreateCompareResultFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCompareResultFileRequest.
+        r"""Gets the body of this CreateCompareResultFileRequest.
 
         :return: The body of this CreateCompareResultFileRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.ExportCompareResultReq`
@@ -137,7 +137,7 @@ class CreateCompareResultFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCompareResultFileRequest.
+        r"""Sets the body of this CreateCompareResultFileRequest.
 
         :param body: The body of this CreateCompareResultFileRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.ExportCompareResultReq`

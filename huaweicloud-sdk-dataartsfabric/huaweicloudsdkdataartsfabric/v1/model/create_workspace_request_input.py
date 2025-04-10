@@ -31,7 +31,7 @@ class CreateWorkspaceRequestInput:
     }
 
     def __init__(self, name=None, description=None, metastore_id=None, enterprise_project_id=None):
-        """CreateWorkspaceRequestInput
+        r"""CreateWorkspaceRequestInput
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateWorkspaceRequestInput:
 
     @property
     def name(self):
-        """Gets the name of this CreateWorkspaceRequestInput.
+        r"""Gets the name of this CreateWorkspaceRequestInput.
 
         工作空间名称。
 
@@ -74,7 +74,7 @@ class CreateWorkspaceRequestInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWorkspaceRequestInput.
+        r"""Sets the name of this CreateWorkspaceRequestInput.
 
         工作空间名称。
 
@@ -85,7 +85,7 @@ class CreateWorkspaceRequestInput:
 
     @property
     def description(self):
-        """Gets the description of this CreateWorkspaceRequestInput.
+        r"""Gets the description of this CreateWorkspaceRequestInput.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -96,7 +96,7 @@ class CreateWorkspaceRequestInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWorkspaceRequestInput.
+        r"""Sets the description of this CreateWorkspaceRequestInput.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -107,7 +107,7 @@ class CreateWorkspaceRequestInput:
 
     @property
     def metastore_id(self):
-        """Gets the metastore_id of this CreateWorkspaceRequestInput.
+        r"""Gets the metastore_id of this CreateWorkspaceRequestInput.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -118,7 +118,7 @@ class CreateWorkspaceRequestInput:
 
     @metastore_id.setter
     def metastore_id(self, metastore_id):
-        """Sets the metastore_id of this CreateWorkspaceRequestInput.
+        r"""Sets the metastore_id of this CreateWorkspaceRequestInput.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -129,7 +129,7 @@ class CreateWorkspaceRequestInput:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateWorkspaceRequestInput.
+        r"""Gets the enterprise_project_id of this CreateWorkspaceRequestInput.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。默认是0，即default
 
@@ -140,7 +140,7 @@ class CreateWorkspaceRequestInput:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateWorkspaceRequestInput.
+        r"""Sets the enterprise_project_id of this CreateWorkspaceRequestInput.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。默认是0，即default
 

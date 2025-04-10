@@ -25,7 +25,7 @@ class CheckObsBucketsRequestBody:
     }
 
     def __init__(self, buckets=None):
-        """CheckObsBucketsRequestBody
+        r"""CheckObsBucketsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckObsBucketsRequestBody:
 
     @property
     def buckets(self):
-        """Gets the buckets of this CheckObsBucketsRequestBody.
+        r"""Gets the buckets of this CheckObsBucketsRequestBody.
 
         请求检查的OBS桶列表。
 
@@ -54,7 +54,7 @@ class CheckObsBucketsRequestBody:
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this CheckObsBucketsRequestBody.
+        r"""Sets the buckets of this CheckObsBucketsRequestBody.
 
         请求检查的OBS桶列表。
 

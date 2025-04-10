@@ -43,7 +43,7 @@ class ListIncidentDetail:
     }
 
     def __init__(self, data_object=None, create_time=None, update_time=None, project_id=None, workspace_id=None, dataclass_id=None, layout_id=None, name=None, type=None, dataclass=None):
-        """ListIncidentDetail
+        r"""ListIncidentDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListIncidentDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this ListIncidentDetail.
+        r"""Gets the data_object of this ListIncidentDetail.
 
         :return: The data_object of this ListIncidentDetail.
         :rtype: :class:`huaweicloudsdksa.v2.Incident`
@@ -115,7 +115,7 @@ class ListIncidentDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this ListIncidentDetail.
+        r"""Sets the data_object of this ListIncidentDetail.
 
         :param data_object: The data_object of this ListIncidentDetail.
         :type data_object: :class:`huaweicloudsdksa.v2.Incident`
@@ -124,7 +124,7 @@ class ListIncidentDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListIncidentDetail.
+        r"""Gets the create_time of this ListIncidentDetail.
 
         Create time
 
@@ -135,7 +135,7 @@ class ListIncidentDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListIncidentDetail.
+        r"""Sets the create_time of this ListIncidentDetail.
 
         Create time
 
@@ -146,7 +146,7 @@ class ListIncidentDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListIncidentDetail.
+        r"""Gets the update_time of this ListIncidentDetail.
 
         Update time
 
@@ -157,7 +157,7 @@ class ListIncidentDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListIncidentDetail.
+        r"""Sets the update_time of this ListIncidentDetail.
 
         Update time
 
@@ -168,7 +168,7 @@ class ListIncidentDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIncidentDetail.
+        r"""Gets the project_id of this ListIncidentDetail.
 
         Id value
 
@@ -179,7 +179,7 @@ class ListIncidentDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIncidentDetail.
+        r"""Sets the project_id of this ListIncidentDetail.
 
         Id value
 
@@ -190,7 +190,7 @@ class ListIncidentDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListIncidentDetail.
+        r"""Gets the workspace_id of this ListIncidentDetail.
 
         Id value
 
@@ -201,7 +201,7 @@ class ListIncidentDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListIncidentDetail.
+        r"""Sets the workspace_id of this ListIncidentDetail.
 
         Id value
 
@@ -212,7 +212,7 @@ class ListIncidentDetail:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this ListIncidentDetail.
+        r"""Gets the dataclass_id of this ListIncidentDetail.
 
         Id value
 
@@ -223,7 +223,7 @@ class ListIncidentDetail:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this ListIncidentDetail.
+        r"""Sets the dataclass_id of this ListIncidentDetail.
 
         Id value
 
@@ -234,7 +234,7 @@ class ListIncidentDetail:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this ListIncidentDetail.
+        r"""Gets the layout_id of this ListIncidentDetail.
 
         Id value
 
@@ -245,7 +245,7 @@ class ListIncidentDetail:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this ListIncidentDetail.
+        r"""Sets the layout_id of this ListIncidentDetail.
 
         Id value
 
@@ -256,7 +256,7 @@ class ListIncidentDetail:
 
     @property
     def name(self):
-        """Gets the name of this ListIncidentDetail.
+        r"""Gets the name of this ListIncidentDetail.
 
         The name, display only
 
@@ -267,7 +267,7 @@ class ListIncidentDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListIncidentDetail.
+        r"""Sets the name of this ListIncidentDetail.
 
         The name, display only
 
@@ -278,7 +278,7 @@ class ListIncidentDetail:
 
     @property
     def type(self):
-        """Gets the type of this ListIncidentDetail.
+        r"""Gets the type of this ListIncidentDetail.
 
         The name, display only
 
@@ -289,7 +289,7 @@ class ListIncidentDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListIncidentDetail.
+        r"""Sets the type of this ListIncidentDetail.
 
         The name, display only
 
@@ -300,7 +300,7 @@ class ListIncidentDetail:
 
     @property
     def dataclass(self):
-        """Gets the dataclass of this ListIncidentDetail.
+        r"""Gets the dataclass of this ListIncidentDetail.
 
         :return: The dataclass of this ListIncidentDetail.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertDetailDataclassRef`
@@ -309,7 +309,7 @@ class ListIncidentDetail:
 
     @dataclass.setter
     def dataclass(self, dataclass):
-        """Sets the dataclass of this ListIncidentDetail.
+        r"""Sets the dataclass of this ListIncidentDetail.
 
         :param dataclass: The dataclass of this ListIncidentDetail.
         :type dataclass: :class:`huaweicloudsdksa.v2.ShowAlertDetailDataclassRef`

@@ -25,7 +25,7 @@ class StartMeetingRequest:
     }
 
     def __init__(self, body=None):
-        """StartMeetingRequest
+        r"""StartMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartMeetingRequest.
+        r"""Gets the body of this StartMeetingRequest.
 
         :return: The body of this StartMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.StartRequest`
@@ -52,7 +52,7 @@ class StartMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartMeetingRequest.
+        r"""Sets the body of this StartMeetingRequest.
 
         :param body: The body of this StartMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.StartRequest`

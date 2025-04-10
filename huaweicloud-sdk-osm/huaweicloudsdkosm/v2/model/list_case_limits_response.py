@@ -26,7 +26,7 @@ class ListCaseLimitsResponse(SdkResponse):
     }
 
     def __init__(self, config=None):
-        """ListCaseLimitsResponse
+        r"""ListCaseLimitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCaseLimitsResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this ListCaseLimitsResponse.
+        r"""Gets the config of this ListCaseLimitsResponse.
 
         :return: The config of this ListCaseLimitsResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.TenantConfigV2`
@@ -53,7 +53,7 @@ class ListCaseLimitsResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ListCaseLimitsResponse.
+        r"""Sets the config of this ListCaseLimitsResponse.
 
         :param config: The config of this ListCaseLimitsResponse.
         :type config: :class:`huaweicloudsdkosm.v2.TenantConfigV2`

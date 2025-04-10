@@ -37,7 +37,7 @@ class UpdateScaleInPolicyReq:
     }
 
     def __init__(self, idle_time=None, threshold=None, delay_after_add=None, delay_after_delete=None, delay_after_failure=None, max_nodes_batch_deletion=None, check_interval=None):
-        """UpdateScaleInPolicyReq
+        r"""UpdateScaleInPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def idle_time(self):
-        """Gets the idle_time of this UpdateScaleInPolicyReq.
+        r"""Gets the idle_time of this UpdateScaleInPolicyReq.
 
         空置时间
 
@@ -96,7 +96,7 @@ class UpdateScaleInPolicyReq:
 
     @idle_time.setter
     def idle_time(self, idle_time):
-        """Sets the idle_time of this UpdateScaleInPolicyReq.
+        r"""Sets the idle_time of this UpdateScaleInPolicyReq.
 
         空置时间
 
@@ -107,7 +107,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def threshold(self):
-        """Gets the threshold of this UpdateScaleInPolicyReq.
+        r"""Gets the threshold of this UpdateScaleInPolicyReq.
 
         缩容阈值
 
@@ -118,7 +118,7 @@ class UpdateScaleInPolicyReq:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this UpdateScaleInPolicyReq.
+        r"""Sets the threshold of this UpdateScaleInPolicyReq.
 
         缩容阈值
 
@@ -129,7 +129,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def delay_after_add(self):
-        """Gets the delay_after_add of this UpdateScaleInPolicyReq.
+        r"""Gets the delay_after_add of this UpdateScaleInPolicyReq.
 
         扩容后多久再次判断缩容
 
@@ -140,7 +140,7 @@ class UpdateScaleInPolicyReq:
 
     @delay_after_add.setter
     def delay_after_add(self, delay_after_add):
-        """Sets the delay_after_add of this UpdateScaleInPolicyReq.
+        r"""Sets the delay_after_add of this UpdateScaleInPolicyReq.
 
         扩容后多久再次判断缩容
 
@@ -151,7 +151,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def delay_after_delete(self):
-        """Gets the delay_after_delete of this UpdateScaleInPolicyReq.
+        r"""Gets the delay_after_delete of this UpdateScaleInPolicyReq.
 
         节点删除后多久再次判断缩容
 
@@ -162,7 +162,7 @@ class UpdateScaleInPolicyReq:
 
     @delay_after_delete.setter
     def delay_after_delete(self, delay_after_delete):
-        """Sets the delay_after_delete of this UpdateScaleInPolicyReq.
+        r"""Sets the delay_after_delete of this UpdateScaleInPolicyReq.
 
         节点删除后多久再次判断缩容
 
@@ -173,7 +173,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def delay_after_failure(self):
-        """Gets the delay_after_failure of this UpdateScaleInPolicyReq.
+        r"""Gets the delay_after_failure of this UpdateScaleInPolicyReq.
 
         缩容失败后多久再次判断缩容
 
@@ -184,7 +184,7 @@ class UpdateScaleInPolicyReq:
 
     @delay_after_failure.setter
     def delay_after_failure(self, delay_after_failure):
-        """Sets the delay_after_failure of this UpdateScaleInPolicyReq.
+        r"""Sets the delay_after_failure of this UpdateScaleInPolicyReq.
 
         缩容失败后多久再次判断缩容
 
@@ -195,7 +195,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def max_nodes_batch_deletion(self):
-        """Gets the max_nodes_batch_deletion of this UpdateScaleInPolicyReq.
+        r"""Gets the max_nodes_batch_deletion of this UpdateScaleInPolicyReq.
 
         缩容并发数
 
@@ -206,7 +206,7 @@ class UpdateScaleInPolicyReq:
 
     @max_nodes_batch_deletion.setter
     def max_nodes_batch_deletion(self, max_nodes_batch_deletion):
-        """Sets the max_nodes_batch_deletion of this UpdateScaleInPolicyReq.
+        r"""Sets the max_nodes_batch_deletion of this UpdateScaleInPolicyReq.
 
         缩容并发数
 
@@ -217,7 +217,7 @@ class UpdateScaleInPolicyReq:
 
     @property
     def check_interval(self):
-        """Gets the check_interval of this UpdateScaleInPolicyReq.
+        r"""Gets the check_interval of this UpdateScaleInPolicyReq.
 
         检查间隔
 
@@ -228,7 +228,7 @@ class UpdateScaleInPolicyReq:
 
     @check_interval.setter
     def check_interval(self, check_interval):
-        """Sets the check_interval of this UpdateScaleInPolicyReq.
+        r"""Sets the check_interval of this UpdateScaleInPolicyReq.
 
         检查间隔
 

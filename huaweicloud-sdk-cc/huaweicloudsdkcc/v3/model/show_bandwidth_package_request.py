@@ -25,7 +25,7 @@ class ShowBandwidthPackageRequest:
     }
 
     def __init__(self, id=None):
-        """ShowBandwidthPackageRequest
+        r"""ShowBandwidthPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBandwidthPackageRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowBandwidthPackageRequest.
+        r"""Gets the id of this ShowBandwidthPackageRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowBandwidthPackageRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBandwidthPackageRequest.
+        r"""Sets the id of this ShowBandwidthPackageRequest.
 
         实例ID。
 

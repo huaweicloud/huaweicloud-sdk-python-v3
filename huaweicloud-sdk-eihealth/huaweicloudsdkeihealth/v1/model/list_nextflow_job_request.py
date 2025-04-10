@@ -51,7 +51,7 @@ class ListNextflowJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, limit=None, offset=None, sort_dir=None, sort_key=None, job_name=None, labels=None, status=None, workflow_name=None, user_name=None, create_start_time=None, create_end_time=None, finish_start_time=None, finish_end_time=None):
-        """ListNextflowJobRequest
+        r"""ListNextflowJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class ListNextflowJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListNextflowJobRequest.
+        r"""Gets the eihealth_project_id of this ListNextflowJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -144,7 +144,7 @@ class ListNextflowJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListNextflowJobRequest.
+        r"""Sets the eihealth_project_id of this ListNextflowJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -155,7 +155,7 @@ class ListNextflowJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNextflowJobRequest.
+        r"""Gets the limit of this ListNextflowJobRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -166,7 +166,7 @@ class ListNextflowJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNextflowJobRequest.
+        r"""Sets the limit of this ListNextflowJobRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -177,7 +177,7 @@ class ListNextflowJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNextflowJobRequest.
+        r"""Gets the offset of this ListNextflowJobRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -188,7 +188,7 @@ class ListNextflowJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNextflowJobRequest.
+        r"""Sets the offset of this ListNextflowJobRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -199,7 +199,7 @@ class ListNextflowJobRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListNextflowJobRequest.
+        r"""Gets the sort_dir of this ListNextflowJobRequest.
 
         排序规则 目前默认时间降序
 
@@ -210,7 +210,7 @@ class ListNextflowJobRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListNextflowJobRequest.
+        r"""Sets the sort_dir of this ListNextflowJobRequest.
 
         排序规则 目前默认时间降序
 
@@ -221,7 +221,7 @@ class ListNextflowJobRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListNextflowJobRequest.
+        r"""Gets the sort_key of this ListNextflowJobRequest.
 
         排序规则 目前默认时间降序，支持根据status
 
@@ -232,7 +232,7 @@ class ListNextflowJobRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListNextflowJobRequest.
+        r"""Sets the sort_key of this ListNextflowJobRequest.
 
         排序规则 目前默认时间降序，支持根据status
 
@@ -243,7 +243,7 @@ class ListNextflowJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListNextflowJobRequest.
+        r"""Gets the job_name of this ListNextflowJobRequest.
 
         作业名称
 
@@ -254,7 +254,7 @@ class ListNextflowJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListNextflowJobRequest.
+        r"""Sets the job_name of this ListNextflowJobRequest.
 
         作业名称
 
@@ -265,7 +265,7 @@ class ListNextflowJobRequest:
 
     @property
     def labels(self):
-        """Gets the labels of this ListNextflowJobRequest.
+        r"""Gets the labels of this ListNextflowJobRequest.
 
         标签列表
 
@@ -276,7 +276,7 @@ class ListNextflowJobRequest:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ListNextflowJobRequest.
+        r"""Sets the labels of this ListNextflowJobRequest.
 
         标签列表
 
@@ -287,7 +287,7 @@ class ListNextflowJobRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListNextflowJobRequest.
+        r"""Gets the status of this ListNextflowJobRequest.
 
         作业运行状态 取值（SUBMITTED|RUNNING|COMPLETED|FAILED|CANCELLED|UNKNOWN）
 
@@ -298,7 +298,7 @@ class ListNextflowJobRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNextflowJobRequest.
+        r"""Sets the status of this ListNextflowJobRequest.
 
         作业运行状态 取值（SUBMITTED|RUNNING|COMPLETED|FAILED|CANCELLED|UNKNOWN）
 
@@ -309,7 +309,7 @@ class ListNextflowJobRequest:
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this ListNextflowJobRequest.
+        r"""Gets the workflow_name of this ListNextflowJobRequest.
 
         workflow名称
 
@@ -320,7 +320,7 @@ class ListNextflowJobRequest:
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this ListNextflowJobRequest.
+        r"""Sets the workflow_name of this ListNextflowJobRequest.
 
         workflow名称
 
@@ -331,7 +331,7 @@ class ListNextflowJobRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListNextflowJobRequest.
+        r"""Gets the user_name of this ListNextflowJobRequest.
 
         作业创建者
 
@@ -342,7 +342,7 @@ class ListNextflowJobRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListNextflowJobRequest.
+        r"""Sets the user_name of this ListNextflowJobRequest.
 
         作业创建者
 
@@ -353,7 +353,7 @@ class ListNextflowJobRequest:
 
     @property
     def create_start_time(self):
-        """Gets the create_start_time of this ListNextflowJobRequest.
+        r"""Gets the create_start_time of this ListNextflowJobRequest.
 
         最小创建时间
 
@@ -364,7 +364,7 @@ class ListNextflowJobRequest:
 
     @create_start_time.setter
     def create_start_time(self, create_start_time):
-        """Sets the create_start_time of this ListNextflowJobRequest.
+        r"""Sets the create_start_time of this ListNextflowJobRequest.
 
         最小创建时间
 
@@ -375,7 +375,7 @@ class ListNextflowJobRequest:
 
     @property
     def create_end_time(self):
-        """Gets the create_end_time of this ListNextflowJobRequest.
+        r"""Gets the create_end_time of this ListNextflowJobRequest.
 
         最大创建时间
 
@@ -386,7 +386,7 @@ class ListNextflowJobRequest:
 
     @create_end_time.setter
     def create_end_time(self, create_end_time):
-        """Sets the create_end_time of this ListNextflowJobRequest.
+        r"""Sets the create_end_time of this ListNextflowJobRequest.
 
         最大创建时间
 
@@ -397,7 +397,7 @@ class ListNextflowJobRequest:
 
     @property
     def finish_start_time(self):
-        """Gets the finish_start_time of this ListNextflowJobRequest.
+        r"""Gets the finish_start_time of this ListNextflowJobRequest.
 
         最小结束时间
 
@@ -408,7 +408,7 @@ class ListNextflowJobRequest:
 
     @finish_start_time.setter
     def finish_start_time(self, finish_start_time):
-        """Sets the finish_start_time of this ListNextflowJobRequest.
+        r"""Sets the finish_start_time of this ListNextflowJobRequest.
 
         最小结束时间
 
@@ -419,7 +419,7 @@ class ListNextflowJobRequest:
 
     @property
     def finish_end_time(self):
-        """Gets the finish_end_time of this ListNextflowJobRequest.
+        r"""Gets the finish_end_time of this ListNextflowJobRequest.
 
         最大结束时间
 
@@ -430,7 +430,7 @@ class ListNextflowJobRequest:
 
     @finish_end_time.setter
     def finish_end_time(self, finish_end_time):
-        """Sets the finish_end_time of this ListNextflowJobRequest.
+        r"""Sets the finish_end_time of this ListNextflowJobRequest.
 
         最大结束时间
 

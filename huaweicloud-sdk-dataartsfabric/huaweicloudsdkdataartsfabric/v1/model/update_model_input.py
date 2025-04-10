@@ -31,7 +31,7 @@ class UpdateModelInput:
     }
 
     def __init__(self, name=None, description=None, current_version_id=None, version=None):
-        """UpdateModelInput
+        r"""UpdateModelInput
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateModelInput:
 
     @property
     def name(self):
-        """Gets the name of this UpdateModelInput.
+        r"""Gets the name of this UpdateModelInput.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -75,7 +75,7 @@ class UpdateModelInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateModelInput.
+        r"""Sets the name of this UpdateModelInput.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -86,7 +86,7 @@ class UpdateModelInput:
 
     @property
     def description(self):
-        """Gets the description of this UpdateModelInput.
+        r"""Gets the description of this UpdateModelInput.
 
         描述信息
 
@@ -97,7 +97,7 @@ class UpdateModelInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateModelInput.
+        r"""Sets the description of this UpdateModelInput.
 
         描述信息
 
@@ -108,7 +108,7 @@ class UpdateModelInput:
 
     @property
     def current_version_id(self):
-        """Gets the current_version_id of this UpdateModelInput.
+        r"""Gets the current_version_id of this UpdateModelInput.
 
         模型版本ID，32~36位的英文、数字、短横组合，系统自动生成无法修改，输入不生效。
 
@@ -119,7 +119,7 @@ class UpdateModelInput:
 
     @current_version_id.setter
     def current_version_id(self, current_version_id):
-        """Sets the current_version_id of this UpdateModelInput.
+        r"""Sets the current_version_id of this UpdateModelInput.
 
         模型版本ID，32~36位的英文、数字、短横组合，系统自动生成无法修改，输入不生效。
 
@@ -130,7 +130,7 @@ class UpdateModelInput:
 
     @property
     def version(self):
-        """Gets the version of this UpdateModelInput.
+        r"""Gets the version of this UpdateModelInput.
 
         :return: The version of this UpdateModelInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInput`
@@ -139,7 +139,7 @@ class UpdateModelInput:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateModelInput.
+        r"""Sets the version of this UpdateModelInput.
 
         :param version: The version of this UpdateModelInput.
         :type version: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInput`

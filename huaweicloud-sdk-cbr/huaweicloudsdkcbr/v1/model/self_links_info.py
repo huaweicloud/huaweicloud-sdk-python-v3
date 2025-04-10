@@ -25,7 +25,7 @@ class SelfLinksInfo:
     }
 
     def __init__(self, _self=None):
-        """SelfLinksInfo
+        r"""SelfLinksInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SelfLinksInfo:
 
     @property
     def _self(self):
-        """Gets the _self of this SelfLinksInfo.
+        r"""Gets the _self of this SelfLinksInfo.
 
         连接地址
 
@@ -54,7 +54,7 @@ class SelfLinksInfo:
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this SelfLinksInfo.
+        r"""Sets the _self of this SelfLinksInfo.
 
         连接地址
 

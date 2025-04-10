@@ -29,7 +29,7 @@ class CreateDataChannelRequest:
     }
 
     def __init__(self, instance_id=None, v2x_edge_id=None, body=None):
-        """CreateDataChannelRequest
+        r"""CreateDataChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDataChannelRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDataChannelRequest.
+        r"""Gets the instance_id of this CreateDataChannelRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。
 
@@ -67,7 +67,7 @@ class CreateDataChannelRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDataChannelRequest.
+        r"""Sets the instance_id of this CreateDataChannelRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。
 
@@ -78,7 +78,7 @@ class CreateDataChannelRequest:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this CreateDataChannelRequest.
+        r"""Gets the v2x_edge_id of this CreateDataChannelRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -89,7 +89,7 @@ class CreateDataChannelRequest:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this CreateDataChannelRequest.
+        r"""Sets the v2x_edge_id of this CreateDataChannelRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -100,7 +100,7 @@ class CreateDataChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDataChannelRequest.
+        r"""Gets the body of this CreateDataChannelRequest.
 
         :return: The body of this CreateDataChannelRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.AddV2XEdgeDataChannelDTO`
@@ -109,7 +109,7 @@ class CreateDataChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDataChannelRequest.
+        r"""Sets the body of this CreateDataChannelRequest.
 
         :param body: The body of this CreateDataChannelRequest.
         :type body: :class:`huaweicloudsdkdris.v1.AddV2XEdgeDataChannelDTO`

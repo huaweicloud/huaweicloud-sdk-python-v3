@@ -31,7 +31,7 @@ class SimpleKeypair:
     }
 
     def __init__(self, name=None, public_key=None, user_id=None, fingerprint=None):
-        """SimpleKeypair
+        r"""SimpleKeypair
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SimpleKeypair:
 
     @property
     def name(self):
-        """Gets the name of this SimpleKeypair.
+        r"""Gets the name of this SimpleKeypair.
 
         密钥名称。
 
@@ -75,7 +75,7 @@ class SimpleKeypair:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SimpleKeypair.
+        r"""Sets the name of this SimpleKeypair.
 
         密钥名称。
 
@@ -86,7 +86,7 @@ class SimpleKeypair:
 
     @property
     def public_key(self):
-        """Gets the public_key of this SimpleKeypair.
+        r"""Gets the public_key of this SimpleKeypair.
 
           密钥对应publicKey信息。
 
@@ -97,7 +97,7 @@ class SimpleKeypair:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this SimpleKeypair.
+        r"""Sets the public_key of this SimpleKeypair.
 
           密钥对应publicKey信息。
 
@@ -108,7 +108,7 @@ class SimpleKeypair:
 
     @property
     def user_id(self):
-        """Gets the user_id of this SimpleKeypair.
+        r"""Gets the user_id of this SimpleKeypair.
 
         用户ID。
 
@@ -119,7 +119,7 @@ class SimpleKeypair:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this SimpleKeypair.
+        r"""Sets the user_id of this SimpleKeypair.
 
         用户ID。
 
@@ -130,7 +130,7 @@ class SimpleKeypair:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this SimpleKeypair.
+        r"""Gets the fingerprint of this SimpleKeypair.
 
           密钥对应指纹信息。
 
@@ -141,7 +141,7 @@ class SimpleKeypair:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this SimpleKeypair.
+        r"""Sets the fingerprint of this SimpleKeypair.
 
           密钥对应指纹信息。
 

@@ -33,7 +33,7 @@ class NodePoolMetadata:
     }
 
     def __init__(self, name=None, uid=None, annotations=None, update_timestamp=None, creation_timestamp=None):
-        """NodePoolMetadata
+        r"""NodePoolMetadata
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class NodePoolMetadata:
 
     @property
     def name(self):
-        """Gets the name of this NodePoolMetadata.
+        r"""Gets the name of this NodePoolMetadata.
 
         节点名池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
@@ -81,7 +81,7 @@ class NodePoolMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodePoolMetadata.
+        r"""Sets the name of this NodePoolMetadata.
 
         节点名池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
@@ -92,7 +92,7 @@ class NodePoolMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this NodePoolMetadata.
+        r"""Gets the uid of this NodePoolMetadata.
 
         节点池的uid。创建成功后自动生成，填写无效
 
@@ -103,7 +103,7 @@ class NodePoolMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this NodePoolMetadata.
+        r"""Sets the uid of this NodePoolMetadata.
 
         节点池的uid。创建成功后自动生成，填写无效
 
@@ -114,7 +114,7 @@ class NodePoolMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this NodePoolMetadata.
+        r"""Gets the annotations of this NodePoolMetadata.
 
         节点池的注解，以key value对表示。仅用于查询，不支持请求时传入，填写无效。 
 
@@ -125,7 +125,7 @@ class NodePoolMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this NodePoolMetadata.
+        r"""Sets the annotations of this NodePoolMetadata.
 
         节点池的注解，以key value对表示。仅用于查询，不支持请求时传入，填写无效。 
 
@@ -136,7 +136,7 @@ class NodePoolMetadata:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this NodePoolMetadata.
+        r"""Gets the update_timestamp of this NodePoolMetadata.
 
         更新时间
 
@@ -147,7 +147,7 @@ class NodePoolMetadata:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this NodePoolMetadata.
+        r"""Sets the update_timestamp of this NodePoolMetadata.
 
         更新时间
 
@@ -158,7 +158,7 @@ class NodePoolMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this NodePoolMetadata.
+        r"""Gets the creation_timestamp of this NodePoolMetadata.
 
         创建时间
 
@@ -169,7 +169,7 @@ class NodePoolMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this NodePoolMetadata.
+        r"""Sets the creation_timestamp of this NodePoolMetadata.
 
         创建时间
 

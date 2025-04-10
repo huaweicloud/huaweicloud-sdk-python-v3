@@ -29,7 +29,7 @@ class ResetRomaAppSecretRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, body=None):
-        """ResetRomaAppSecretRequest
+        r"""ResetRomaAppSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetRomaAppSecretRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ResetRomaAppSecretRequest.
+        r"""Gets the app_id of this ResetRomaAppSecretRequest.
 
         应用ID
 
@@ -66,7 +66,7 @@ class ResetRomaAppSecretRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ResetRomaAppSecretRequest.
+        r"""Sets the app_id of this ResetRomaAppSecretRequest.
 
         应用ID
 
@@ -77,7 +77,7 @@ class ResetRomaAppSecretRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetRomaAppSecretRequest.
+        r"""Gets the instance_id of this ResetRomaAppSecretRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ResetRomaAppSecretRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetRomaAppSecretRequest.
+        r"""Sets the instance_id of this ResetRomaAppSecretRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ResetRomaAppSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetRomaAppSecretRequest.
+        r"""Gets the body of this ResetRomaAppSecretRequest.
 
         :return: The body of this ResetRomaAppSecretRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`
@@ -108,7 +108,7 @@ class ResetRomaAppSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetRomaAppSecretRequest.
+        r"""Sets the body of this ResetRomaAppSecretRequest.
 
         :param body: The body of this ResetRomaAppSecretRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`

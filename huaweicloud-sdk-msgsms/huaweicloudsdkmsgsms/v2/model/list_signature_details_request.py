@@ -47,7 +47,7 @@ class ListSignatureDetailsRequest:
     }
 
     def __init__(self, app_name=None, start_time=None, end_time=None, limit=None, offset=None, signature_id=None, signature_name=None, signature_type=None, site=None, sort_dir=None, sort_key=None, status=None):
-        """ListSignatureDetailsRequest
+        r"""ListSignatureDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListSignatureDetailsRequest.
+        r"""Gets the app_name of this ListSignatureDetailsRequest.
 
         应用名称
 
@@ -131,7 +131,7 @@ class ListSignatureDetailsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListSignatureDetailsRequest.
+        r"""Sets the app_name of this ListSignatureDetailsRequest.
 
         应用名称
 
@@ -142,7 +142,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSignatureDetailsRequest.
+        r"""Gets the start_time of this ListSignatureDetailsRequest.
 
         开始时间
 
@@ -153,7 +153,7 @@ class ListSignatureDetailsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSignatureDetailsRequest.
+        r"""Sets the start_time of this ListSignatureDetailsRequest.
 
         开始时间
 
@@ -164,7 +164,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSignatureDetailsRequest.
+        r"""Gets the end_time of this ListSignatureDetailsRequest.
 
         结束时间
 
@@ -175,7 +175,7 @@ class ListSignatureDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSignatureDetailsRequest.
+        r"""Sets the end_time of this ListSignatureDetailsRequest.
 
         结束时间
 
@@ -186,7 +186,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSignatureDetailsRequest.
+        r"""Gets the limit of this ListSignatureDetailsRequest.
 
         数量
 
@@ -197,7 +197,7 @@ class ListSignatureDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSignatureDetailsRequest.
+        r"""Sets the limit of this ListSignatureDetailsRequest.
 
         数量
 
@@ -208,7 +208,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSignatureDetailsRequest.
+        r"""Gets the offset of this ListSignatureDetailsRequest.
 
         偏移量
 
@@ -219,7 +219,7 @@ class ListSignatureDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSignatureDetailsRequest.
+        r"""Sets the offset of this ListSignatureDetailsRequest.
 
         偏移量
 
@@ -230,7 +230,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this ListSignatureDetailsRequest.
+        r"""Gets the signature_id of this ListSignatureDetailsRequest.
 
         签名ID
 
@@ -241,7 +241,7 @@ class ListSignatureDetailsRequest:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this ListSignatureDetailsRequest.
+        r"""Sets the signature_id of this ListSignatureDetailsRequest.
 
         签名ID
 
@@ -252,7 +252,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this ListSignatureDetailsRequest.
+        r"""Gets the signature_name of this ListSignatureDetailsRequest.
 
         签名名称
 
@@ -263,7 +263,7 @@ class ListSignatureDetailsRequest:
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this ListSignatureDetailsRequest.
+        r"""Sets the signature_name of this ListSignatureDetailsRequest.
 
         签名名称
 
@@ -274,7 +274,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this ListSignatureDetailsRequest.
+        r"""Gets the signature_type of this ListSignatureDetailsRequest.
 
         签名类型。支持枚举值： 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -285,7 +285,7 @@ class ListSignatureDetailsRequest:
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this ListSignatureDetailsRequest.
+        r"""Sets the signature_type of this ListSignatureDetailsRequest.
 
         签名类型。支持枚举值： 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -296,7 +296,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def site(self):
-        """Gets the site of this ListSignatureDetailsRequest.
+        r"""Gets the site of this ListSignatureDetailsRequest.
 
         地域
 
@@ -307,7 +307,7 @@ class ListSignatureDetailsRequest:
 
     @site.setter
     def site(self, site):
-        """Sets the site of this ListSignatureDetailsRequest.
+        r"""Sets the site of this ListSignatureDetailsRequest.
 
         地域
 
@@ -318,7 +318,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSignatureDetailsRequest.
+        r"""Gets the sort_dir of this ListSignatureDetailsRequest.
 
         排序方式 1. desc：降序 2. asc：升序
 
@@ -329,7 +329,7 @@ class ListSignatureDetailsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSignatureDetailsRequest.
+        r"""Sets the sort_dir of this ListSignatureDetailsRequest.
 
         排序方式 1. desc：降序 2. asc：升序
 
@@ -340,7 +340,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSignatureDetailsRequest.
+        r"""Gets the sort_key of this ListSignatureDetailsRequest.
 
         排序字段
 
@@ -351,7 +351,7 @@ class ListSignatureDetailsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSignatureDetailsRequest.
+        r"""Sets the sort_key of this ListSignatureDetailsRequest.
 
         排序字段
 
@@ -362,7 +362,7 @@ class ListSignatureDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSignatureDetailsRequest.
+        r"""Gets the status of this ListSignatureDetailsRequest.
 
         状态 1. PENDING_REVIEW：待签名审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕(待补充资质)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中 7. PENDING_QUALIFICATION_REVIEW：待资质审核，该状态下，用户不可发送短信 8. REAL_NAME_REGISTRATING：实名报备中，该状态下，用户不可发送短信 9. REVIEW_PASSED_QUALIFICATION_PROCESSING：处理完毕(资质审核中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 10. REVIEW_PASSED_REAL_NAME_REGISTRATING：处理完毕(实名报备中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 11. REVIEW_PASSED_REAL_NAME_REGISTRATE_FAIL：处理完毕(实名报备失败)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 12. REVIEW_PROCESSING_COMPLETED：处理完毕
 
@@ -373,7 +373,7 @@ class ListSignatureDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSignatureDetailsRequest.
+        r"""Sets the status of this ListSignatureDetailsRequest.
 
         状态 1. PENDING_REVIEW：待签名审核 2. PROCESSING：内容审核通过，签名处理中 3. REVIEW_PASSED：处理完毕(待补充资质)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 4. REVIEW_NOT_PASS：审核不通过 5. TO_BE_ACTIVATED：待激活 6. PENDING_ACTIVATE：激活审核中 7. PENDING_QUALIFICATION_REVIEW：待资质审核，该状态下，用户不可发送短信 8. REAL_NAME_REGISTRATING：实名报备中，该状态下，用户不可发送短信 9. REVIEW_PASSED_QUALIFICATION_PROCESSING：处理完毕(资质审核中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 10. REVIEW_PASSED_REAL_NAME_REGISTRATING：处理完毕(实名报备中)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 11. REVIEW_PASSED_REAL_NAME_REGISTRATE_FAIL：处理完毕(实名报备失败)，该状态仅针对存量签名补充资质有效。在该状态下，用户可发送短信，但发送短信可能会由于运营商资质管控而失败 12. REVIEW_PROCESSING_COMPLETED：处理完毕
 

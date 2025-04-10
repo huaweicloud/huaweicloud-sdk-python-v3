@@ -29,7 +29,7 @@ class ImportNetworkDataReq:
     }
 
     def __init__(self, target_folder=None, urls=None, md5s=None):
-        """ImportNetworkDataReq
+        r"""ImportNetworkDataReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ImportNetworkDataReq:
 
     @property
     def target_folder(self):
-        """Gets the target_folder of this ImportNetworkDataReq.
+        r"""Gets the target_folder of this ImportNetworkDataReq.
 
         所在文件夹
 
@@ -67,7 +67,7 @@ class ImportNetworkDataReq:
 
     @target_folder.setter
     def target_folder(self, target_folder):
-        """Sets the target_folder of this ImportNetworkDataReq.
+        r"""Sets the target_folder of this ImportNetworkDataReq.
 
         所在文件夹
 
@@ -78,7 +78,7 @@ class ImportNetworkDataReq:
 
     @property
     def urls(self):
-        """Gets the urls of this ImportNetworkDataReq.
+        r"""Gets the urls of this ImportNetworkDataReq.
 
         导入网上数据的url集
 
@@ -89,7 +89,7 @@ class ImportNetworkDataReq:
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this ImportNetworkDataReq.
+        r"""Sets the urls of this ImportNetworkDataReq.
 
         导入网上数据的url集
 
@@ -100,7 +100,7 @@ class ImportNetworkDataReq:
 
     @property
     def md5s(self):
-        """Gets the md5s of this ImportNetworkDataReq.
+        r"""Gets the md5s of this ImportNetworkDataReq.
 
         导入网上数据的md5集
 
@@ -111,7 +111,7 @@ class ImportNetworkDataReq:
 
     @md5s.setter
     def md5s(self, md5s):
-        """Sets the md5s of this ImportNetworkDataReq.
+        r"""Sets the md5s of this ImportNetworkDataReq.
 
         导入网上数据的md5集
 

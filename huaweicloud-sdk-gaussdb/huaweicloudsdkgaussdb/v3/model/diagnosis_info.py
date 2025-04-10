@@ -27,7 +27,7 @@ class DiagnosisInfo:
     }
 
     def __init__(self, metric_name=None, count=None):
-        """DiagnosisInfo
+        r"""DiagnosisInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DiagnosisInfo:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this DiagnosisInfo.
+        r"""Gets the metric_name of this DiagnosisInfo.
 
         指标名称。
 
@@ -59,7 +59,7 @@ class DiagnosisInfo:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this DiagnosisInfo.
+        r"""Sets the metric_name of this DiagnosisInfo.
 
         指标名称。
 
@@ -70,7 +70,7 @@ class DiagnosisInfo:
 
     @property
     def count(self):
-        """Gets the count of this DiagnosisInfo.
+        r"""Gets the count of this DiagnosisInfo.
 
         实例数量。
 
@@ -81,7 +81,7 @@ class DiagnosisInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DiagnosisInfo.
+        r"""Sets the count of this DiagnosisInfo.
 
         实例数量。
 

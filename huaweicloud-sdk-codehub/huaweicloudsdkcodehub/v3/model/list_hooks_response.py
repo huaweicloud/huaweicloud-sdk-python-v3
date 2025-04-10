@@ -30,7 +30,7 @@ class ListHooksResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListHooksResponse
+        r"""ListHooksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHooksResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListHooksResponse.
+        r"""Gets the error of this ListHooksResponse.
 
         :return: The error of this ListHooksResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListHooksResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListHooksResponse.
+        r"""Sets the error of this ListHooksResponse.
 
         :param error: The error of this ListHooksResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListHooksResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListHooksResponse.
+        r"""Gets the result of this ListHooksResponse.
 
         :return: The result of this ListHooksResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoListHook`
@@ -85,7 +85,7 @@ class ListHooksResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListHooksResponse.
+        r"""Sets the result of this ListHooksResponse.
 
         :param result: The result of this ListHooksResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoListHook`
@@ -94,7 +94,7 @@ class ListHooksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListHooksResponse.
+        r"""Gets the status of this ListHooksResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListHooksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListHooksResponse.
+        r"""Sets the status of this ListHooksResponse.
 
         响应状态
 

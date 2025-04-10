@@ -35,7 +35,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, instance_id=None, user_source=None, limit=None, marker=None, reverse_page=None, user_name_pattern=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListUsersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListUsersRequest.
+        r"""Gets the instance_id of this ListUsersRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -88,7 +88,7 @@ class ListUsersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListUsersRequest.
+        r"""Sets the instance_id of this ListUsersRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -99,7 +99,7 @@ class ListUsersRequest:
 
     @property
     def user_source(self):
-        """Gets the user_source of this ListUsersRequest.
+        r"""Gets the user_source of this ListUsersRequest.
 
         查询的用户来源。只能为IAM或SAML或LDAP或LOCAL或AGENTTENANT或OTHER。默认为IAM。
 
@@ -110,7 +110,7 @@ class ListUsersRequest:
 
     @user_source.setter
     def user_source(self, user_source):
-        """Sets the user_source of this ListUsersRequest.
+        r"""Sets the user_source of this ListUsersRequest.
 
         查询的用户来源。只能为IAM或SAML或LDAP或LOCAL或AGENTTENANT或OTHER。默认为IAM。
 
@@ -121,7 +121,7 @@ class ListUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersRequest.
+        r"""Gets the limit of this ListUsersRequest.
 
         查询返回条数。默认值为1000。最小值为1，最大值为2000。
 
@@ -132,7 +132,7 @@ class ListUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersRequest.
+        r"""Sets the limit of this ListUsersRequest.
 
         查询返回条数。默认值为1000。最小值为1，最大值为2000。
 
@@ -143,7 +143,7 @@ class ListUsersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListUsersRequest.
+        r"""Gets the marker of this ListUsersRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为256。
 
@@ -154,7 +154,7 @@ class ListUsersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListUsersRequest.
+        r"""Sets the marker of this ListUsersRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为256。
 
@@ -165,7 +165,7 @@ class ListUsersRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListUsersRequest.
+        r"""Gets the reverse_page of this ListUsersRequest.
 
         是否查询上一页。默认为false。
 
@@ -176,7 +176,7 @@ class ListUsersRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListUsersRequest.
+        r"""Sets the reverse_page of this ListUsersRequest.
 
         是否查询上一页。默认为false。
 
@@ -187,7 +187,7 @@ class ListUsersRequest:
 
     @property
     def user_name_pattern(self):
-        """Gets the user_name_pattern of this ListUsersRequest.
+        r"""Gets the user_name_pattern of this ListUsersRequest.
 
         用户模糊查询。只能包含字母、数字和_|*.特殊字符，且长度为1~255个字符。
 
@@ -198,7 +198,7 @@ class ListUsersRequest:
 
     @user_name_pattern.setter
     def user_name_pattern(self, user_name_pattern):
-        """Sets the user_name_pattern of this ListUsersRequest.
+        r"""Sets the user_name_pattern of this ListUsersRequest.
 
         用户模糊查询。只能包含字母、数字和_|*.特殊字符，且长度为1~255个字符。
 

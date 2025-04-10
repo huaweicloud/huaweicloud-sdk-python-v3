@@ -36,7 +36,7 @@ class UpdateValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, values=None, producer=None):
-        """UpdateValueListResponse
+        r"""UpdateValueListResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateValueListResponse.
+        r"""Gets the id of this UpdateValueListResponse.
 
         引用表id
 
@@ -90,7 +90,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateValueListResponse.
+        r"""Sets the id of this UpdateValueListResponse.
 
         引用表id
 
@@ -101,7 +101,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateValueListResponse.
+        r"""Gets the name of this UpdateValueListResponse.
 
         引用表名称
 
@@ -112,7 +112,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateValueListResponse.
+        r"""Sets the name of this UpdateValueListResponse.
 
         引用表名称
 
@@ -123,7 +123,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateValueListResponse.
+        r"""Gets the type of this UpdateValueListResponse.
 
         引用表类型
 
@@ -134,7 +134,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateValueListResponse.
+        r"""Sets the type of this UpdateValueListResponse.
 
         引用表类型
 
@@ -145,7 +145,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateValueListResponse.
+        r"""Gets the description of this UpdateValueListResponse.
 
         引用表描述
 
@@ -156,7 +156,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateValueListResponse.
+        r"""Sets the description of this UpdateValueListResponse.
 
         引用表描述
 
@@ -167,7 +167,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this UpdateValueListResponse.
+        r"""Gets the values of this UpdateValueListResponse.
 
         引用表的值
 
@@ -178,7 +178,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateValueListResponse.
+        r"""Sets the values of this UpdateValueListResponse.
 
         引用表的值
 
@@ -189,7 +189,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this UpdateValueListResponse.
+        r"""Gets the producer of this UpdateValueListResponse.
 
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 
@@ -200,7 +200,7 @@ class UpdateValueListResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this UpdateValueListResponse.
+        r"""Sets the producer of this UpdateValueListResponse.
 
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 

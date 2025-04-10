@@ -33,7 +33,7 @@ class SearchCustomizedFieldsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, limit=None, offset=None, type=None):
-        """SearchCustomizedFieldsRequest
+        r"""SearchCustomizedFieldsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchCustomizedFieldsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchCustomizedFieldsRequest.
+        r"""Gets the workspace of this SearchCustomizedFieldsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class SearchCustomizedFieldsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchCustomizedFieldsRequest.
+        r"""Sets the workspace of this SearchCustomizedFieldsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class SearchCustomizedFieldsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this SearchCustomizedFieldsRequest.
+        r"""Gets the x_project_id of this SearchCustomizedFieldsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -102,7 +102,7 @@ class SearchCustomizedFieldsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this SearchCustomizedFieldsRequest.
+        r"""Sets the x_project_id of this SearchCustomizedFieldsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -113,7 +113,7 @@ class SearchCustomizedFieldsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCustomizedFieldsRequest.
+        r"""Gets the limit of this SearchCustomizedFieldsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -124,7 +124,7 @@ class SearchCustomizedFieldsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCustomizedFieldsRequest.
+        r"""Sets the limit of this SearchCustomizedFieldsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -135,7 +135,7 @@ class SearchCustomizedFieldsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCustomizedFieldsRequest.
+        r"""Gets the offset of this SearchCustomizedFieldsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -146,7 +146,7 @@ class SearchCustomizedFieldsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCustomizedFieldsRequest.
+        r"""Sets the offset of this SearchCustomizedFieldsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -157,7 +157,7 @@ class SearchCustomizedFieldsRequest:
 
     @property
     def type(self):
-        """Gets the type of this SearchCustomizedFieldsRequest.
+        r"""Gets the type of this SearchCustomizedFieldsRequest.
 
         自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
@@ -168,7 +168,7 @@ class SearchCustomizedFieldsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SearchCustomizedFieldsRequest.
+        r"""Sets the type of this SearchCustomizedFieldsRequest.
 
         自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 

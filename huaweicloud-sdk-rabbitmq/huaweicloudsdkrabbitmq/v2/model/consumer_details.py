@@ -31,7 +31,7 @@ class ConsumerDetails:
     }
 
     def __init__(self, consumer_tag=None, channel_details=None, ack_required=None, prefetch_count=None):
-        """ConsumerDetails
+        r"""ConsumerDetails
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConsumerDetails:
 
     @property
     def consumer_tag(self):
-        """Gets the consumer_tag of this ConsumerDetails.
+        r"""Gets the consumer_tag of this ConsumerDetails.
 
         消费者标识
 
@@ -75,7 +75,7 @@ class ConsumerDetails:
 
     @consumer_tag.setter
     def consumer_tag(self, consumer_tag):
-        """Sets the consumer_tag of this ConsumerDetails.
+        r"""Sets the consumer_tag of this ConsumerDetails.
 
         消费者标识
 
@@ -86,7 +86,7 @@ class ConsumerDetails:
 
     @property
     def channel_details(self):
-        """Gets the channel_details of this ConsumerDetails.
+        r"""Gets the channel_details of this ConsumerDetails.
 
         :return: The channel_details of this ConsumerDetails.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ChannelDetails`
@@ -95,7 +95,7 @@ class ConsumerDetails:
 
     @channel_details.setter
     def channel_details(self, channel_details):
-        """Sets the channel_details of this ConsumerDetails.
+        r"""Sets the channel_details of this ConsumerDetails.
 
         :param channel_details: The channel_details of this ConsumerDetails.
         :type channel_details: :class:`huaweicloudsdkrabbitmq.v2.ChannelDetails`
@@ -104,7 +104,7 @@ class ConsumerDetails:
 
     @property
     def ack_required(self):
-        """Gets the ack_required of this ConsumerDetails.
+        r"""Gets the ack_required of this ConsumerDetails.
 
         消费者客户端是否设置手动ack
 
@@ -115,7 +115,7 @@ class ConsumerDetails:
 
     @ack_required.setter
     def ack_required(self, ack_required):
-        """Sets the ack_required of this ConsumerDetails.
+        r"""Sets the ack_required of this ConsumerDetails.
 
         消费者客户端是否设置手动ack
 
@@ -126,7 +126,7 @@ class ConsumerDetails:
 
     @property
     def prefetch_count(self):
-        """Gets the prefetch_count of this ConsumerDetails.
+        r"""Gets the prefetch_count of this ConsumerDetails.
 
         消费者客户端预取值
 
@@ -137,7 +137,7 @@ class ConsumerDetails:
 
     @prefetch_count.setter
     def prefetch_count(self, prefetch_count):
-        """Sets the prefetch_count of this ConsumerDetails.
+        r"""Sets the prefetch_count of this ConsumerDetails.
 
         消费者客户端预取值
 

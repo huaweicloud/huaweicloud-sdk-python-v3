@@ -25,7 +25,7 @@ class CreateCentralNetworkGdgwAttachmentRequestBody:
     }
 
     def __init__(self, central_network_gdgw_attachment=None):
-        """CreateCentralNetworkGdgwAttachmentRequestBody
+        r"""CreateCentralNetworkGdgwAttachmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateCentralNetworkGdgwAttachmentRequestBody:
 
     @property
     def central_network_gdgw_attachment(self):
-        """Gets the central_network_gdgw_attachment of this CreateCentralNetworkGdgwAttachmentRequestBody.
+        r"""Gets the central_network_gdgw_attachment of this CreateCentralNetworkGdgwAttachmentRequestBody.
 
         :return: The central_network_gdgw_attachment of this CreateCentralNetworkGdgwAttachmentRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkGdgwAttachment`
@@ -51,7 +51,7 @@ class CreateCentralNetworkGdgwAttachmentRequestBody:
 
     @central_network_gdgw_attachment.setter
     def central_network_gdgw_attachment(self, central_network_gdgw_attachment):
-        """Sets the central_network_gdgw_attachment of this CreateCentralNetworkGdgwAttachmentRequestBody.
+        r"""Sets the central_network_gdgw_attachment of this CreateCentralNetworkGdgwAttachmentRequestBody.
 
         :param central_network_gdgw_attachment: The central_network_gdgw_attachment of this CreateCentralNetworkGdgwAttachmentRequestBody.
         :type central_network_gdgw_attachment: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkGdgwAttachment`

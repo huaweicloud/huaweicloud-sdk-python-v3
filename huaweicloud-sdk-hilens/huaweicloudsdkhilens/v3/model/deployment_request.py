@@ -27,7 +27,7 @@ class DeploymentRequest:
     }
 
     def __init__(self, replicas=None, template=None):
-        """DeploymentRequest
+        r"""DeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeploymentRequest:
 
     @property
     def replicas(self):
-        """Gets the replicas of this DeploymentRequest.
+        r"""Gets the replicas of this DeploymentRequest.
 
         应用部署副本数，小于100。
 
@@ -59,7 +59,7 @@ class DeploymentRequest:
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this DeploymentRequest.
+        r"""Sets the replicas of this DeploymentRequest.
 
         应用部署副本数，小于100。
 
@@ -70,7 +70,7 @@ class DeploymentRequest:
 
     @property
     def template(self):
-        """Gets the template of this DeploymentRequest.
+        r"""Gets the template of this DeploymentRequest.
 
         :return: The template of this DeploymentRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.PodRequest`
@@ -79,7 +79,7 @@ class DeploymentRequest:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this DeploymentRequest.
+        r"""Sets the template of this DeploymentRequest.
 
         :param template: The template of this DeploymentRequest.
         :type template: :class:`huaweicloudsdkhilens.v3.PodRequest`

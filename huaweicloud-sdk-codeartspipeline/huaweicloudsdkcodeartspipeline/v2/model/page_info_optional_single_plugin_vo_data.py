@@ -37,7 +37,7 @@ class PageInfoOptionalSinglePluginVOData:
     }
 
     def __init__(self, name=None, display_name=None, plugin_attribution=None, icon_url=None, description=None, publisher_id=None, manifest_version=None):
-        """PageInfoOptionalSinglePluginVOData
+        r"""PageInfoOptionalSinglePluginVOData
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def name(self):
-        """Gets the name of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the name of this PageInfoOptionalSinglePluginVOData.
 
         名称
 
@@ -96,7 +96,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the name of this PageInfoOptionalSinglePluginVOData.
 
         名称
 
@@ -107,7 +107,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the display_name of this PageInfoOptionalSinglePluginVOData.
 
         展示名
 
@@ -118,7 +118,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the display_name of this PageInfoOptionalSinglePluginVOData.
 
         展示名
 
@@ -129,7 +129,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the plugin_attribution of this PageInfoOptionalSinglePluginVOData.
 
         属性
 
@@ -140,7 +140,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the plugin_attribution of this PageInfoOptionalSinglePluginVOData.
 
         属性
 
@@ -151,7 +151,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the icon_url of this PageInfoOptionalSinglePluginVOData.
 
         图标URL
 
@@ -162,7 +162,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the icon_url of this PageInfoOptionalSinglePluginVOData.
 
         图标URL
 
@@ -173,7 +173,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def description(self):
-        """Gets the description of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the description of this PageInfoOptionalSinglePluginVOData.
 
         描述
 
@@ -184,7 +184,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the description of this PageInfoOptionalSinglePluginVOData.
 
         描述
 
@@ -195,7 +195,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def publisher_id(self):
-        """Gets the publisher_id of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the publisher_id of this PageInfoOptionalSinglePluginVOData.
 
         发布商ID
 
@@ -206,7 +206,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @publisher_id.setter
     def publisher_id(self, publisher_id):
-        """Sets the publisher_id of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the publisher_id of this PageInfoOptionalSinglePluginVOData.
 
         发布商ID
 
@@ -217,7 +217,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this PageInfoOptionalSinglePluginVOData.
+        r"""Gets the manifest_version of this PageInfoOptionalSinglePluginVOData.
 
         版本
 
@@ -228,7 +228,7 @@ class PageInfoOptionalSinglePluginVOData:
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this PageInfoOptionalSinglePluginVOData.
+        r"""Sets the manifest_version of this PageInfoOptionalSinglePluginVOData.
 
         版本
 

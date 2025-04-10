@@ -25,7 +25,7 @@ class GcbShowLocalArea:
     }
 
     def __init__(self, local_area=None):
-        """GcbShowLocalArea
+        r"""GcbShowLocalArea
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbShowLocalArea:
 
     @property
     def local_area(self):
-        """Gets the local_area of this GcbShowLocalArea.
+        r"""Gets the local_area of this GcbShowLocalArea.
 
         功能说明：本端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 
@@ -54,7 +54,7 @@ class GcbShowLocalArea:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this GcbShowLocalArea.
+        r"""Sets the local_area of this GcbShowLocalArea.
 
         功能说明：本端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 

@@ -28,7 +28,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
     }
 
     def __init__(self, region_ip=None, region_url=None):
-        """ShowRegionInfoOfMeetingResponse
+        r"""ShowRegionInfoOfMeetingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
 
     @property
     def region_ip(self):
-        """Gets the region_ip of this ShowRegionInfoOfMeetingResponse.
+        r"""Gets the region_ip of this ShowRegionInfoOfMeetingResponse.
 
         会议所在区域的公网IP地址。
 
@@ -62,7 +62,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
 
     @region_ip.setter
     def region_ip(self, region_ip):
-        """Sets the region_ip of this ShowRegionInfoOfMeetingResponse.
+        r"""Sets the region_ip of this ShowRegionInfoOfMeetingResponse.
 
         会议所在区域的公网IP地址。
 
@@ -73,7 +73,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
 
     @property
     def region_url(self):
-        """Gets the region_url of this ShowRegionInfoOfMeetingResponse.
+        r"""Gets the region_url of this ShowRegionInfoOfMeetingResponse.
 
         会议所在区域的公网域名。
 
@@ -84,7 +84,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
 
     @region_url.setter
     def region_url(self, region_url):
-        """Sets the region_url of this ShowRegionInfoOfMeetingResponse.
+        r"""Sets the region_url of this ShowRegionInfoOfMeetingResponse.
 
         会议所在区域的公网域名。
 

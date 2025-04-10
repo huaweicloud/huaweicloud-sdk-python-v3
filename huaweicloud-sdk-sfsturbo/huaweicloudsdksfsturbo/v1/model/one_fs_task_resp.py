@@ -33,7 +33,7 @@ class OneFsTaskResp:
     }
 
     def __init__(self, task_id=None, status=None, dir_usage=None, begin_time=None, end_time=None):
-        """OneFsTaskResp
+        r"""OneFsTaskResp
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class OneFsTaskResp:
 
     @property
     def task_id(self):
-        """Gets the task_id of this OneFsTaskResp.
+        r"""Gets the task_id of this OneFsTaskResp.
 
         任务ID
 
@@ -78,7 +78,7 @@ class OneFsTaskResp:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this OneFsTaskResp.
+        r"""Sets the task_id of this OneFsTaskResp.
 
         任务ID
 
@@ -89,7 +89,7 @@ class OneFsTaskResp:
 
     @property
     def status(self):
-        """Gets the status of this OneFsTaskResp.
+        r"""Gets the status of this OneFsTaskResp.
 
         任务状态, SUCCESS表示成功，DOING表示正在执行，FAIL表示失败
 
@@ -100,7 +100,7 @@ class OneFsTaskResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OneFsTaskResp.
+        r"""Sets the status of this OneFsTaskResp.
 
         任务状态, SUCCESS表示成功，DOING表示正在执行，FAIL表示失败
 
@@ -111,7 +111,7 @@ class OneFsTaskResp:
 
     @property
     def dir_usage(self):
-        """Gets the dir_usage of this OneFsTaskResp.
+        r"""Gets the dir_usage of this OneFsTaskResp.
 
         :return: The dir_usage of this OneFsTaskResp.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`
@@ -120,7 +120,7 @@ class OneFsTaskResp:
 
     @dir_usage.setter
     def dir_usage(self, dir_usage):
-        """Sets the dir_usage of this OneFsTaskResp.
+        r"""Sets the dir_usage of this OneFsTaskResp.
 
         :param dir_usage: The dir_usage of this OneFsTaskResp.
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`
@@ -129,7 +129,7 @@ class OneFsTaskResp:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this OneFsTaskResp.
+        r"""Gets the begin_time of this OneFsTaskResp.
 
         任务开始时间，UTC时间，例如：2006-01-02 15:04:05'
 
@@ -140,7 +140,7 @@ class OneFsTaskResp:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this OneFsTaskResp.
+        r"""Sets the begin_time of this OneFsTaskResp.
 
         任务开始时间，UTC时间，例如：2006-01-02 15:04:05'
 
@@ -151,7 +151,7 @@ class OneFsTaskResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OneFsTaskResp.
+        r"""Gets the end_time of this OneFsTaskResp.
 
         任务结束时间，UTC时间，例如：2006-01-02 15:04:06'
 
@@ -162,7 +162,7 @@ class OneFsTaskResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OneFsTaskResp.
+        r"""Sets the end_time of this OneFsTaskResp.
 
         任务结束时间，UTC时间，例如：2006-01-02 15:04:06'
 

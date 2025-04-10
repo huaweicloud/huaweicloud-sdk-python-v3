@@ -29,7 +29,7 @@ class DeleteJobReq:
     }
 
     def __init__(self, delete_type=None, job_id=None, is_show_breakpoint_position=None):
-        """DeleteJobReq
+        r"""DeleteJobReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteJobReq:
 
     @property
     def delete_type(self):
-        """Gets the delete_type of this DeleteJobReq.
+        r"""Gets the delete_type of this DeleteJobReq.
 
         terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务
 
@@ -66,7 +66,7 @@ class DeleteJobReq:
 
     @delete_type.setter
     def delete_type(self, delete_type):
-        """Sets the delete_type of this DeleteJobReq.
+        r"""Sets the delete_type of this DeleteJobReq.
 
         terminate:结束迁移任务,force_terminate:强制结束迁移任务,delete:删除迁移任务
 
@@ -77,7 +77,7 @@ class DeleteJobReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteJobReq.
+        r"""Gets the job_id of this DeleteJobReq.
 
         任务ID
 
@@ -88,7 +88,7 @@ class DeleteJobReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteJobReq.
+        r"""Sets the job_id of this DeleteJobReq.
 
         任务ID
 
@@ -99,7 +99,7 @@ class DeleteJobReq:
 
     @property
     def is_show_breakpoint_position(self):
-        """Gets the is_show_breakpoint_position of this DeleteJobReq.
+        r"""Gets the is_show_breakpoint_position of this DeleteJobReq.
 
         MySQL为源，实时迁移，实时同步，数据订阅，实时灾备结束任务时是否展示断点信息
 
@@ -110,7 +110,7 @@ class DeleteJobReq:
 
     @is_show_breakpoint_position.setter
     def is_show_breakpoint_position(self, is_show_breakpoint_position):
-        """Sets the is_show_breakpoint_position of this DeleteJobReq.
+        r"""Sets the is_show_breakpoint_position of this DeleteJobReq.
 
         MySQL为源，实时迁移，实时同步，数据订阅，实时灾备结束任务时是否展示断点信息
 

@@ -36,7 +36,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, max=None, remaining=None, next_offset=None, previous_offset=None, topics=None):
-        """ListRocketInstanceTopicsResponse
+        r"""ListRocketInstanceTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRocketInstanceTopicsResponse.
+        r"""Gets the total of this ListRocketInstanceTopicsResponse.
 
         Topic总数。
 
@@ -90,7 +90,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRocketInstanceTopicsResponse.
+        r"""Sets the total of this ListRocketInstanceTopicsResponse.
 
         Topic总数。
 
@@ -101,7 +101,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @property
     def max(self):
-        """Gets the max of this ListRocketInstanceTopicsResponse.
+        r"""Gets the max of this ListRocketInstanceTopicsResponse.
 
         最大可创建Topic数量。
 
@@ -112,7 +112,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ListRocketInstanceTopicsResponse.
+        r"""Sets the max of this ListRocketInstanceTopicsResponse.
 
         最大可创建Topic数量。
 
@@ -123,7 +123,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @property
     def remaining(self):
-        """Gets the remaining of this ListRocketInstanceTopicsResponse.
+        r"""Gets the remaining of this ListRocketInstanceTopicsResponse.
 
         剩余可创建Topic数量。
 
@@ -134,7 +134,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @remaining.setter
     def remaining(self, remaining):
-        """Sets the remaining of this ListRocketInstanceTopicsResponse.
+        r"""Sets the remaining of this ListRocketInstanceTopicsResponse.
 
         剩余可创建Topic数量。
 
@@ -145,7 +145,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @property
     def next_offset(self):
-        """Gets the next_offset of this ListRocketInstanceTopicsResponse.
+        r"""Gets the next_offset of this ListRocketInstanceTopicsResponse.
 
         下个分页的offset。
 
@@ -156,7 +156,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @next_offset.setter
     def next_offset(self, next_offset):
-        """Sets the next_offset of this ListRocketInstanceTopicsResponse.
+        r"""Sets the next_offset of this ListRocketInstanceTopicsResponse.
 
         下个分页的offset。
 
@@ -167,7 +167,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @property
     def previous_offset(self):
-        """Gets the previous_offset of this ListRocketInstanceTopicsResponse.
+        r"""Gets the previous_offset of this ListRocketInstanceTopicsResponse.
 
         上个分页的offset。
 
@@ -178,7 +178,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @previous_offset.setter
     def previous_offset(self, previous_offset):
-        """Sets the previous_offset of this ListRocketInstanceTopicsResponse.
+        r"""Sets the previous_offset of this ListRocketInstanceTopicsResponse.
 
         上个分页的offset。
 
@@ -189,7 +189,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ListRocketInstanceTopicsResponse.
+        r"""Gets the topics of this ListRocketInstanceTopicsResponse.
 
         Topic列表。
 
@@ -200,7 +200,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ListRocketInstanceTopicsResponse.
+        r"""Sets the topics of this ListRocketInstanceTopicsResponse.
 
         Topic列表。
 

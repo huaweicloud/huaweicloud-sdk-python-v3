@@ -35,7 +35,7 @@ class HealthCompareJob:
     }
 
     def __init__(self, id=None, type=None, status=None, start_time=None, end_time=None, compute_type=None):
-        """HealthCompareJob
+        r"""HealthCompareJob
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HealthCompareJob:
 
     @property
     def id(self):
-        """Gets the id of this HealthCompareJob.
+        r"""Gets the id of this HealthCompareJob.
 
         对比任务ID。
 
@@ -89,7 +89,7 @@ class HealthCompareJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HealthCompareJob.
+        r"""Sets the id of this HealthCompareJob.
 
         对比任务ID。
 
@@ -100,7 +100,7 @@ class HealthCompareJob:
 
     @property
     def type(self):
-        """Gets the type of this HealthCompareJob.
+        r"""Gets the type of this HealthCompareJob.
 
         对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
@@ -111,7 +111,7 @@ class HealthCompareJob:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HealthCompareJob.
+        r"""Sets the type of this HealthCompareJob.
 
         对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
@@ -122,7 +122,7 @@ class HealthCompareJob:
 
     @property
     def status(self):
-        """Gets the status of this HealthCompareJob.
+        r"""Gets the status of this HealthCompareJob.
 
         状态。 - WAITING_FOR_RUNNING：等待启动中 - RUNNING：运行中 - SUCCESSFUL：完成 - FAILED：失败 - CANCELLED：已取消 - TIMEOUT_INTERRUPT：超时中断 - FULL_DOING：全量校验中 - INCRE_DOING：增量校验中
 
@@ -133,7 +133,7 @@ class HealthCompareJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HealthCompareJob.
+        r"""Sets the status of this HealthCompareJob.
 
         状态。 - WAITING_FOR_RUNNING：等待启动中 - RUNNING：运行中 - SUCCESSFUL：完成 - FAILED：失败 - CANCELLED：已取消 - TIMEOUT_INTERRUPT：超时中断 - FULL_DOING：全量校验中 - INCRE_DOING：增量校验中
 
@@ -144,7 +144,7 @@ class HealthCompareJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this HealthCompareJob.
+        r"""Gets the start_time of this HealthCompareJob.
 
         对比开始时间，UTC时间。
 
@@ -155,7 +155,7 @@ class HealthCompareJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this HealthCompareJob.
+        r"""Sets the start_time of this HealthCompareJob.
 
         对比开始时间，UTC时间。
 
@@ -166,7 +166,7 @@ class HealthCompareJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this HealthCompareJob.
+        r"""Gets the end_time of this HealthCompareJob.
 
         对比结束时间，UTC时间。
 
@@ -177,7 +177,7 @@ class HealthCompareJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this HealthCompareJob.
+        r"""Sets the end_time of this HealthCompareJob.
 
         对比结束时间，UTC时间。
 
@@ -188,7 +188,7 @@ class HealthCompareJob:
 
     @property
     def compute_type(self):
-        """Gets the compute_type of this HealthCompareJob.
+        r"""Gets the compute_type of this HealthCompareJob.
 
         对比计算资源。
 
@@ -199,7 +199,7 @@ class HealthCompareJob:
 
     @compute_type.setter
     def compute_type(self, compute_type):
-        """Sets the compute_type of this HealthCompareJob.
+        r"""Sets the compute_type of this HealthCompareJob.
 
         对比计算资源。
 

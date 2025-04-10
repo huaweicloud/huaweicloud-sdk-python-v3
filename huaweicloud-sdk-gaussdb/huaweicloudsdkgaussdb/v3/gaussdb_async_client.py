@@ -34,7 +34,7 @@ class GaussDBAsyncClient(Client):
         return client_builder
 
     def add_database_permission_async(self, request):
-        """授予数据库用户数据库权限
+        r"""授予数据库用户数据库权限
 
         授予云数据库 TaurusDB实例数据库用户数据库权限。
         
@@ -103,7 +103,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def batch_tag_action_async(self, request):
-        """批量添加或删除标签
+        r"""批量添加或删除标签
 
         批量添加或删除指定实例的标签。
         
@@ -172,7 +172,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def cancel_gauss_my_sql_instance_eip_async(self, request):
-        """解绑弹性公网IP
+        r"""解绑弹性公网IP
 
         实例解绑弹性公网IP。
         
@@ -239,7 +239,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def cancel_schedule_task_async(self, request):
-        """取消定时任务
+        r"""取消定时任务
 
         取消定时任务
         
@@ -306,7 +306,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def change_gauss_my_sql_instance_specification_async(self, request):
-        """变更实例规格
+        r"""变更实例规格
 
         变更数据库实例的规格。
         
@@ -375,7 +375,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def change_gauss_my_sql_proxy_specification_async(self, request):
-        """数据库代理规格变更
+        r"""数据库代理规格变更
 
         数据库代理规格变更。
         
@@ -446,7 +446,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_resource_async(self, request):
-        """资源预校验
+        r"""资源预校验
 
         资源预校验。
         
@@ -513,7 +513,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def copy_configurations_async(self, request):
-        """复制参数组
+        r"""复制参数组
 
         复制参数组。
         
@@ -582,7 +582,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def copy_instance_configurations_async(self, request):
-        """复制实例参数组
+        r"""复制实例参数组
 
         复制实例参数组。
         
@@ -653,7 +653,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_access_control_async(self, request):
-        """设置访问控制规则
+        r"""设置访问控制规则
 
         设置访问控制规则。
         
@@ -724,7 +724,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_backup_async(self, request):
-        """创建手动备份
+        r"""创建手动备份
 
         创建手动备份。
         
@@ -791,7 +791,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_configuration_async(self, request):
-        """创建参数模板
+        r"""创建参数模板
 
         创建参数模板信息，包含参数模板名称、描述、数据库版本信息、参数值。
         
@@ -858,7 +858,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_database_async(self, request):
-        """创建数据库
+        r"""创建数据库
 
         创建云数据库 TaurusDB实例数据库。
         
@@ -927,7 +927,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_database_user_async(self, request):
-        """创建数据库用户
+        r"""创建数据库用户
 
         创建云数据库TaurusDB实例数据库用户。
         
@@ -996,7 +996,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_instance_async(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建云数据库TaurusDB实例。
         
@@ -1063,7 +1063,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_proxy_async(self, request):
-        """开启数据库代理
+        r"""开启数据库代理
 
         开启数据库代理，只支持ELB模式。
         
@@ -1132,7 +1132,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_my_sql_readonly_node_async(self, request):
-        """创建只读节点
+        r"""创建只读节点
 
         创建只读节点。
         
@@ -1201,7 +1201,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_gauss_mysql_dns_async(self, request):
-        """申请内网域名
+        r"""申请内网域名
 
         申请内网域名。
         
@@ -1270,7 +1270,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_lts_configs_async(self, request):
-        """批量创建LTS日志配置
+        r"""批量创建LTS日志配置
 
         批量创建LTS日志配置
         
@@ -1337,7 +1337,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_restore_tables_async(self, request):
-        """表级时间点恢复
+        r"""表级时间点恢复
 
         表级时间点恢复。
         
@@ -1406,7 +1406,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_database_permission_async(self, request):
-        """删除数据库用户的数据库权限
+        r"""删除数据库用户的数据库权限
 
         删除云数据库 TaurusDB实例数据库用户的数据库权限。
         
@@ -1475,7 +1475,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_backup_async(self, request):
-        """删除手动备份
+        r"""删除手动备份
 
         删除手动备份。
         
@@ -1542,7 +1542,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_configuration_async(self, request):
-        """删除参数模板
+        r"""删除参数模板
 
         删除指定参数模板。
         
@@ -1609,7 +1609,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_database_async(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除云数据库 TaurusDB实例数据库。
         
@@ -1678,7 +1678,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_database_user_async(self, request):
-        """删除数据库用户
+        r"""删除数据库用户
 
         删除云数据库 TaurusDB实例数据库用户。
         
@@ -1747,7 +1747,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_instance_async(self, request):
-        """删除/退订数据库实例
+        r"""删除/退订数据库实例
 
         删除/退订数据库实例。
         
@@ -1814,7 +1814,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_proxy_async(self, request):
-        """关闭数据库代理
+        r"""关闭数据库代理
 
         关闭数据库代理。
         
@@ -1883,7 +1883,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_gauss_my_sql_readonly_node_async(self, request):
-        """删除/退订只读节点
+        r"""删除/退订只读节点
 
         删除/退订实例的只读节点。多可用区模式删除/退订只读节点时，要保证删除/退订后，剩余的只读节点和主节点在不同的可用区中，否则无法删除/退订该只读节点。
         
@@ -1952,7 +1952,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_lts_configs_async(self, request):
-        """批量删除LTS日志配置
+        r"""批量删除LTS日志配置
 
         批量删除LTS日志配置
         
@@ -2019,7 +2019,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_schedule_tas_k_async(self, request):
-        """删除定时任务
+        r"""删除定时任务
 
         删除定时任务。
         
@@ -2088,7 +2088,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_task_record_async(self, request):
-        """删除指定任务记录
+        r"""删除指定任务记录
 
         删除指定任务记录。
         
@@ -2155,7 +2155,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def describe_backup_encrypt_status_async(self, request):
-        """查询实例是否开启备份加密功能
+        r"""查询实例是否开启备份加密功能
 
         查询实例是否开启备份加密功能。
         
@@ -2222,7 +2222,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def download_slow_log_file_async(self, request):
-        """获取慢日志下载链接
+        r"""获取慢日志下载链接
 
         获取慢日志下载链接
         
@@ -2291,7 +2291,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def expand_gauss_my_sql_instance_volume_async(self, request):
-        """包周期存储扩容
+        r"""包周期存储扩容
 
         包周期存储扩容。
         
@@ -2360,7 +2360,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def expand_gauss_my_sql_proxy_async(self, request):
-        """扩容数据库代理节点的数量
+        r"""扩容数据库代理节点的数量
 
         扩容数据库代理节点的数量。
         DeC专属云账号暂不支持数据库代理。
@@ -2430,7 +2430,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def invoke_gauss_my_sql_instance_switch_over_async(self, request):
-        """手动主备倒换
+        r"""手动主备倒换
 
         用户手动进行主备倒换。
         
@@ -2499,7 +2499,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_audit_log_download_link_async(self, request):
-        """获取全量SQL的临时下载链接
+        r"""获取全量SQL的临时下载链接
 
         获取全量SQL的临时下载链接。
         
@@ -2576,7 +2576,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_configurations_differences_async(self, request):
-        """对比参数模板
+        r"""对比参数模板
 
         比较两个参数模板之间的差异。
         
@@ -2643,7 +2643,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_configurations_instances_async(self, request):
-        """查询可应用的实例列表
+        r"""查询可应用的实例列表
 
         查询指定参数模板可被应用的实例。
         
@@ -2714,7 +2714,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_enterprise_projects_async(self, request):
-        """查询企业项目
+        r"""查询企业项目
 
         查询企业项目。
         
@@ -2783,7 +2783,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_configurations_async(self, request):
-        """查询参数模板
+        r"""查询参数模板
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -2852,7 +2852,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_database_async(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询 TaurusDB实例数据库。
         
@@ -2927,7 +2927,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_database_charsets_async(self, request):
-        """查询数据库可用字符集
+        r"""查询数据库可用字符集
 
         查询云数据库 TaurusDB实例数据库可用字符集。
         
@@ -2994,7 +2994,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_database_user_async(self, request):
-        """查询数据库用户
+        r"""查询数据库用户
 
         查询云数据库 TaurusDB实例数据库用户。
         
@@ -3065,7 +3065,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_dedicated_resources_async(self, request):
-        """查询专属资源池列表
+        r"""查询专属资源池列表
 
         获取专属资源池列表，包括用户开通的所有专属资源池信息。
         
@@ -3134,7 +3134,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_instance_detail_info_async(self, request):
-        """批量查询实例详情
+        r"""批量查询实例详情
 
         批量查询实例详情。
         
@@ -3201,7 +3201,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_instance_detail_info_unify_status_async(self, request):
-        """批量查询实例详情
+        r"""批量查询实例详情
 
         批量查询实例详情。
         
@@ -3268,7 +3268,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_instances_async(self, request):
-        """查询实例列表
+        r"""查询实例列表
 
         根据指定条件查询实例列表。
         
@@ -3357,7 +3357,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_gauss_my_sql_instances_unify_status_async(self, request):
-        """查询实例列表
+        r"""查询实例列表
 
         根据指定条件查询实例列表。
         
@@ -3446,7 +3446,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_immediate_jobs_async(self, request):
-        """获取即时任务列表
+        r"""获取即时任务列表
 
         获取即时任务列表。
         
@@ -3525,7 +3525,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_instance_configurations_async(self, request):
-        """获取指定实例的参数信息
+        r"""获取指定实例的参数信息
 
         获取指定实例的参数信息。
         
@@ -3596,7 +3596,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_instance_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息。
         
@@ -3667,7 +3667,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_lts_error_log_details_async(self, request):
-        """获取错误日志详情列表
+        r"""获取错误日志详情列表
 
         获取指定实例的错误日志详情列表。
         
@@ -3736,7 +3736,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_lts_slowlog_details_async(self, request):
-        """获取慢日志详情列表
+        r"""获取慢日志详情列表
 
         获取指定实例的慢日志详情列表。
         
@@ -3805,7 +3805,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_modify_history_async(self, request):
-        """查询参数修改历史
+        r"""查询参数修改历史
 
         查询参数修改历史。
         
@@ -3876,7 +3876,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_params_template_apply_history_async(self, request):
-        """查询参数模板应用记录。
+        r"""查询参数模板应用记录。
 
         查询参数模板应用记录。
         
@@ -3945,7 +3945,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询指定project ID下实例的所有标签集合。
         
@@ -4014,7 +4014,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_recycle_instances_async(self, request):
-        """查询回收站实例信息
+        r"""查询回收站实例信息
 
         查询回收站实例信息
         
@@ -4083,7 +4083,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_schedule_jobs_async(self, request):
-        """获取定时任务列表
+        r"""获取定时任务列表
 
         获取定时任务列表。
         
@@ -4162,7 +4162,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def modify_backup_encrypt_status_async(self, request):
-        """打开或关闭备份加密
+        r"""打开或关闭备份加密
 
         打开或关闭备份加密。
         
@@ -4231,7 +4231,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def modify_gauss_my_sql_proxy_route_mode_async(self, request):
-        """设置读写分离路由模式
+        r"""设置读写分离路由模式
 
         设置读写分离路由模式。
         
@@ -4302,7 +4302,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def modify_gauss_mysql_dns_async(self, request):
-        """修改内网域名
+        r"""修改内网域名
 
         修改内网域名。
         
@@ -4371,7 +4371,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def modify_node_priority_async(self, request):
-        """修改节点故障倒换优先级。
+        r"""修改节点故障倒换优先级。
 
         修改节点故障倒换优先级。
         
@@ -4442,7 +4442,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def rename_instance_node_async(self, request):
-        """批量修改节点名称.
+        r"""批量修改节点名称.
 
         批量修改节点名称.
         
@@ -4511,7 +4511,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def reset_gauss_my_sql_database_password_async(self, request):
-        """修改数据库用户密码
+        r"""修改数据库用户密码
 
         修改云数据库 TaurusDB实例数据库用户密码。
         
@@ -4580,7 +4580,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def reset_gauss_my_sql_password_async(self, request):
-        """重置数据库密码
+        r"""重置数据库密码
 
         重置数据库密码。
         
@@ -4649,7 +4649,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def restart_gauss_my_sql_instance_async(self, request):
-        """重启数据库实例
+        r"""重启数据库实例
 
         重启数据库实例。
         
@@ -4718,7 +4718,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def restart_gauss_my_sql_node_async(self, request):
-        """节点重启
+        r"""节点重启
 
         节点重启。
         
@@ -4789,7 +4789,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def restart_proxy_instance_async(self, request):
-        """重启数据库代理.
+        r"""重启数据库代理.
 
         重启数据库代理.
         
@@ -4858,7 +4858,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def restore_old_instance_async(self, request):
-        """备份恢复到当前实例或已有实例
+        r"""备份恢复到当前实例或已有实例
 
         备份恢复到当前实例或已有实例。
         
@@ -4925,7 +4925,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def set_gauss_my_sql_proxy_weight_async(self, request):
-        """设置读写分离权重
+        r"""设置读写分离权重
 
         设置读写分离权重。
         
@@ -4996,7 +4996,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def set_gauss_my_sql_quotas_async(self, request):
-        """设置租户基于企业项目的资源配额
+        r"""设置租户基于企业项目的资源配额
 
         设置指定企业项目的资源配额。
         
@@ -5063,7 +5063,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def set_recycle_policy_async(self, request):
-        """设置回收站策略
+        r"""设置回收站策略
 
         设置回收站策略
         
@@ -5130,7 +5130,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_audit_log_async(self, request):
-        """查询全量SQL开关状态
+        r"""查询全量SQL开关状态
 
         查询全量SQL开关状态。
         
@@ -5197,7 +5197,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_auto_scaling_history_async(self, request):
-        """查询自动变配历史记录.
+        r"""查询自动变配历史记录.
 
         查询自动变配历史记录.
         
@@ -5268,7 +5268,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_auto_scaling_policy_async(self, request):
-        """查询自动变配
+        r"""查询自动变配
 
         查询自动变配。
         
@@ -5335,7 +5335,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_backup_restore_time_async(self, request):
-        """查询可恢复时间段
+        r"""查询可恢复时间段
 
         查询实例的可恢复时间段。
         
@@ -5404,7 +5404,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_dedicated_resource_info_async(self, request):
-        """查询专属资源信息详情
+        r"""查询专属资源信息详情
 
         查询专属资源信息详情。
         
@@ -5471,7 +5471,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_backup_list_async(self, request):
-        """查询全量备份列表
+        r"""查询全量备份列表
 
         查询全量备份列表。
         
@@ -5554,7 +5554,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_backup_policy_async(self, request):
-        """查询自动备份策略
+        r"""查询自动备份策略
 
         查询自动备份策略。
         
@@ -5621,7 +5621,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_configuration_async(self, request):
-        """获取参数模板详情
+        r"""获取参数模板详情
 
         获取指定参数模板的参数信息。
         
@@ -5688,7 +5688,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_engine_version_async(self, request):
-        """查询数据库引擎的版本
+        r"""查询数据库引擎的版本
 
         获取指定数据库引擎对应的数据库版本信息。
         
@@ -5755,7 +5755,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_flavors_async(self, request):
-        """查询数据库规格
+        r"""查询数据库规格
 
         获取指定数据库引擎版本对应的规格信息。
         
@@ -5828,7 +5828,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_incremental_backup_list_async(self, request):
-        """查询增量备份列表
+        r"""查询增量备份列表
 
         查询增量备份列表。
         
@@ -5903,7 +5903,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_instance_info_async(self, request):
-        """查询实例详情信息
+        r"""查询实例详情信息
 
         查询实例详情信息。
         
@@ -5970,7 +5970,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_instance_info_unify_status_async(self, request):
-        """查询实例详情信息
+        r"""查询实例详情信息
 
         查询实例详情信息。
         
@@ -6037,7 +6037,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_job_info_async(self, request):
-        """获取指定ID的任务信息
+        r"""获取指定ID的任务信息
 
         获取TaurusDB任务中心指定ID的任务信息。
         
@@ -6104,7 +6104,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_project_quotas_async(self, request):
-        """查询租户的实例配额
+        r"""查询租户的实例配额
 
         获取指定租户的资源配额。
         
@@ -6171,7 +6171,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_proxy_flavors_async(self, request):
-        """查询数据库代理规格信息
+        r"""查询数据库代理规格信息
 
         查询数据库代理规格信息。
         
@@ -6238,7 +6238,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_proxy_list_async(self, request):
-        """查询数据库代理信息列表
+        r"""查询数据库代理信息列表
 
         查询数据库代理信息列表。
         
@@ -6309,7 +6309,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_gauss_my_sql_quotas_async(self, request):
-        """查询租户基于企业项目的资源配额
+        r"""查询租户基于企业项目的资源配额
 
         获取指定企业项目的资源配额。
         
@@ -6380,7 +6380,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_instance_database_version_async(self, request):
-        """查询内核版本信息
+        r"""查询内核版本信息
 
         查询内核版本信息。
         
@@ -6447,7 +6447,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_instance_eip_async(self, request):
-        """查询弹性公网IP。
+        r"""查询弹性公网IP。
 
         查询弹性公网IP。
         
@@ -6514,7 +6514,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_instance_monitor_extend_async(self, request):
-        """查询实例秒级监控
+        r"""查询实例秒级监控
 
         查询实例秒级监控信息。
         
@@ -6581,7 +6581,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_intelligent_diagnosis_abnormal_count_of_instances_async(self, request):
-        """获取各指标的异常实例数
+        r"""获取各指标的异常实例数
 
         获取各指标的异常实例数。
         
@@ -6646,7 +6646,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_intelligent_diagnosis_instance_infos_per_metric_async(self, request):
-        """获取某个指标的异常实例信息
+        r"""获取某个指标的异常实例信息
 
         获取某个指标的异常实例信息。
         
@@ -6717,7 +6717,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_lts_configs_async(self, request):
-        """查询实例LTS日志配置列表
+        r"""查询实例LTS日志配置列表
 
         查询实例LTS日志配置列表
         
@@ -6792,7 +6792,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_multi_tenant_async(self, request):
-        """查询多租特性开关状态
+        r"""查询多租特性开关状态
 
         查询多租特性开关状态。
         
@@ -6859,7 +6859,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_proxy_configurations_async(self, request):
-        """查询数据库代理内核参数。
+        r"""查询数据库代理内核参数。
 
         查询数据库代理内核参数。
         
@@ -6934,7 +6934,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_proxy_ipgroup_async(self, request):
-        """查询代理实例访问控制
+        r"""查询代理实例访问控制
 
         查询代理实例访问控制
         
@@ -7003,7 +7003,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_proxy_version_async(self, request):
-        """查询代理实例小版本
+        r"""查询代理实例小版本
 
         查询代理实例小版本
         
@@ -7074,7 +7074,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_recycle_policy_async(self, request):
-        """查询回收站策略
+        r"""查询回收站策略
 
         查询回收站策略
         
@@ -7139,7 +7139,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_restore_tables_async(self, request):
-        """查询表级时间点恢复可选表
+        r"""查询表级时间点恢复可选表
 
         查询表级时间点恢复可选表。
         
@@ -7214,7 +7214,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_slow_log_statistics_async(self, request):
-        """查询慢日志统计信息
+        r"""查询慢日志统计信息
 
         查询慢日志统计信息
         
@@ -7283,7 +7283,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_slowlog_sensitive_status_async(self, request):
-        """查询慢日志脱敏状态
+        r"""查询慢日志脱敏状态
 
         查询慢日志脱敏状态
         
@@ -7350,7 +7350,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def shrink_gauss_my_sql_proxy_async(self, request):
-        """减少数据库代理节点的数量
+        r"""减少数据库代理节点的数量
 
         缩容数据库代理节点的数量。
         DeC专属云账号暂不支持数据库代理。
@@ -7422,7 +7422,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def switch_access_control_async(self, request):
-        """开启或关闭访问控制
+        r"""开启或关闭访问控制
 
         开启或关闭访问控制。
         
@@ -7493,7 +7493,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def switch_gauss_my_sql_configuration_async(self, request):
-        """应用参数模板
+        r"""应用参数模板
 
         指定实例变更参数模板。
         
@@ -7562,7 +7562,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def switch_gauss_my_sql_instance_ssl_async(self, request):
-        """开关SSL
+        r"""开关SSL
 
         为实例设置SSL数据加密。
         
@@ -7631,7 +7631,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def switch_gauss_my_sql_proxy_ssl_async(self, request):
-        """开关数据库代理SSL
+        r"""开关数据库代理SSL
 
         为数据库代理设置SSL数据加密。
         
@@ -7702,7 +7702,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_audit_log_async(self, request):
-        """开启或者关闭全量SQL
+        r"""开启或者关闭全量SQL
 
         开启或者关闭全量SQL。
         
@@ -7771,7 +7771,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_auto_scaling_policy_async(self, request):
-        """设置自动变配
+        r"""设置自动变配
 
         设置自动变配。
         
@@ -7840,7 +7840,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_backup_offsite_policy_async(self, request):
-        """设置跨区备份策略
+        r"""设置跨区备份策略
 
         设置跨区备份策略。
         
@@ -7909,7 +7909,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_backup_policy_async(self, request):
-        """设置备份策略
+        r"""设置备份策略
 
         设置自动备份策略。
         
@@ -7978,7 +7978,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_configuration_async(self, request):
-        """修改参数模板
+        r"""修改参数模板
 
         修改指定参数模板的参数信息，包括名称、描述、指定参数的值。
         
@@ -8047,7 +8047,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_database_comment_async(self, request):
-        """修改数据库备注
+        r"""修改数据库备注
 
         修改云数据库 TaurusDB实例数据库备注。
         
@@ -8116,7 +8116,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_database_user_comment_async(self, request):
-        """修改数据库用户备注
+        r"""修改数据库用户备注
 
         修改云数据库 TaurusDB实例数据库用户备注。
         
@@ -8185,7 +8185,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_alias_async(self, request):
-        """修改实例备注
+        r"""修改实例备注
 
         修改实例备注。
         
@@ -8254,7 +8254,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_eip_async(self, request):
-        """绑定弹性公网IP
+        r"""绑定弹性公网IP
 
         实例绑定弹性公网IP，供外网连接使用。
         
@@ -8323,7 +8323,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_internal_ip_async(self, request):
-        """修改内网地址
+        r"""修改内网地址
 
         修改实例内网地址。
         
@@ -8392,7 +8392,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_name_async(self, request):
-        """修改实例名称
+        r"""修改实例名称
 
         修改实例名称。
         
@@ -8461,7 +8461,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_ops_window_async(self, request):
-        """设置可维护时间段
+        r"""设置可维护时间段
 
         设置可维护时间段。建议将可维护时间段设置在业务低峰期，避免业务在维护过程中异常中断。
         
@@ -8530,7 +8530,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_port_async(self, request):
-        """修改实例端口
+        r"""修改实例端口
 
         修改实例数据库端口。
         
@@ -8599,7 +8599,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_instance_security_group_async(self, request):
-        """修改安全组
+        r"""修改安全组
 
         修改指定实例安全组。
         
@@ -8668,7 +8668,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_gauss_my_sql_quotas_async(self, request):
-        """修改租户基于企业项目的资源配额
+        r"""修改租户基于企业项目的资源配额
 
         修改指定企业项目的资源配额。
         
@@ -8735,7 +8735,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_instance_configurations_async(self, request):
-        """修改指定实例的参数
+        r"""修改指定实例的参数
 
         修改指定实例的参数。
         
@@ -8804,7 +8804,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_instance_monitor_async(self, request):
-        """设置实例秒级监控
+        r"""设置实例秒级监控
 
         设置实例秒级监控，包括1秒监控和5秒监控。
         
@@ -8873,7 +8873,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_multi_tenant_async(self, request):
-        """开启或者关闭多租特性
+        r"""开启或者关闭多租特性
 
         开启或者关闭多租特性。
         
@@ -8942,7 +8942,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_new_node_auto_add_switch_async(self, request):
-        """开启或关闭新增节点自动加入该Proxy
+        r"""开启或关闭新增节点自动加入该Proxy
 
         开启或关闭新增节点自动加入该Proxy。
         
@@ -9013,7 +9013,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_proxy_connection_pool_type_async(self, request):
-        """更改数据库代理连接池类型
+        r"""更改数据库代理连接池类型
 
         更改数据库代理连接池类型。
         
@@ -9084,7 +9084,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_proxy_name_async(self, request):
-        """修改代理实例名称
+        r"""修改代理实例名称
 
         修改代理实例名称
         
@@ -9155,7 +9155,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_proxy_new_configurations_async(self, request):
-        """修改代理实例参数
+        r"""修改代理实例参数
 
         修改数据库代理参数。
         
@@ -9226,7 +9226,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_proxy_port_async(self, request):
-        """修改读写分离端口号
+        r"""修改读写分离端口号
 
         修改读写分离端口号。
         
@@ -9297,7 +9297,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_proxy_session_consistence_async(self, request):
-        """修改代理会话一致性
+        r"""修改代理会话一致性
 
         修改代理会话一致性。
         
@@ -9368,7 +9368,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_serverless_policy_async(self, request):
-        """设置Serverless配置策略
+        r"""设置Serverless配置策略
 
         设置Serverless配置策略。
         
@@ -9437,7 +9437,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_slowlog_sensitive_switch_async(self, request):
-        """开启或关闭慢日志脱敏状态
+        r"""开启或关闭慢日志脱敏状态
 
         开启或关闭慢日志脱敏状态
         
@@ -9506,7 +9506,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_taurus_node_data_ip_async(self, request):
-        """修改只读节点的读内网地址
+        r"""修改只读节点的读内网地址
 
         修改只读节点的读内网地址。
         
@@ -9577,7 +9577,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_transaction_split_status_async(self, request):
-        """设置proxy事务拆分
+        r"""设置proxy事务拆分
 
         设置proxy事务拆分。
         
@@ -9646,7 +9646,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def upgrade_gauss_my_sql_instance_database_async(self, request):
-        """内核版本升级
+        r"""内核版本升级
 
         内核版本升级。
         
@@ -9715,7 +9715,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def upgrade_proxy_version_async(self, request):
-        """升级数据库代理实例内核版本
+        r"""升级数据库代理实例内核版本
 
         升级数据库代理实例内核版本。
         
@@ -9786,7 +9786,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_click_house_data_base_config_async(self, request):
-        """数据同步库配置校验
+        r"""数据同步库配置校验
 
         数据同步库配置校验。
         
@@ -9855,7 +9855,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_click_house_table_config_async(self, request):
-        """数据同步表配置校验
+        r"""数据同步表配置校验
 
         数据同步表配置校验。
         
@@ -9924,7 +9924,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_data_base_config_async(self, request):
-        """HTAP数据同步库配置校验
+        r"""HTAP数据同步库配置校验
 
         HTAP数据同步库配置校验。
         
@@ -9993,7 +9993,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_star_rocks_resource_async(self, request):
-        """StarRocks资源检查
+        r"""StarRocks资源检查
 
         StarRocks资源检查。
         
@@ -10060,7 +10060,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_starrocks_params_async(self, request):
-        """参数对比
+        r"""参数对比
 
         对比实例参数和默认模板的差异
         
@@ -10127,7 +10127,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def check_table_config_async(self, request):
-        """HTAP数据同步表配置校验
+        r"""HTAP数据同步表配置校验
 
         HTAP数据同步表配置校验。
         
@@ -10196,7 +10196,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_click_house_data_base_replication_async(self, request):
-        """创建数据同步
+        r"""创建数据同步
 
         创建数据同步。
         
@@ -10265,7 +10265,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_click_house_database_user_async(self, request):
-        """创建数据库账号
+        r"""创建数据库账号
 
         创建数据库账号。
         
@@ -10334,7 +10334,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_click_house_instance_async(self, request):
-        """创建实例
+        r"""创建实例
 
         创建实例。
         
@@ -10403,7 +10403,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_star_rocks_data_replication_async(self, request):
-        """创建StarRocks数据同步
+        r"""创建StarRocks数据同步
 
         创建StarRocks数据同步。
         
@@ -10472,7 +10472,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_star_rocks_database_user_async(self, request):
-        """创建数据库账号
+        r"""创建数据库账号
 
         创建StarRocks数据库账号。
         
@@ -10541,7 +10541,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def create_starrocks_instance_async(self, request):
-        """创建StarRocks实例
+        r"""创建StarRocks实例
 
         创建StarRocks实例。
         
@@ -10610,7 +10610,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_click_house_data_base_config_async(self, request):
-        """停止修改数据同步
+        r"""停止修改数据同步
 
         停止修改数据同步。
         
@@ -10679,7 +10679,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_click_house_data_base_replication_async(self, request):
-        """删除数据同步
+        r"""删除数据同步
 
         删除数据同步。
         
@@ -10748,7 +10748,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_click_house_database_user_async(self, request):
-        """删除数据库账户
+        r"""删除数据库账户
 
         删除数据库账户。
         
@@ -10817,7 +10817,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_click_house_instance_async(self, request):
-        """删除实例
+        r"""删除实例
 
         删除实例。
         
@@ -10886,7 +10886,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_click_house_lts_config_async(self, request):
-        """批量解除LTS日志配置
+        r"""批量解除LTS日志配置
 
         批量解除LTS日志配置。
         
@@ -10953,7 +10953,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_star_rocks_data_replication_async(self, request):
-        """删除StarRocks数据同步
+        r"""删除StarRocks数据同步
 
         删除StarRocks数据同步。
         
@@ -11022,7 +11022,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_star_rocks_database_user_async(self, request):
-        """删除数据库账户
+        r"""删除数据库账户
 
         删除StarRocks数据库账户。
         
@@ -11091,7 +11091,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_starrocks_instance_async(self, request):
-        """删除StarRocks实例
+        r"""删除StarRocks实例
 
         删除StarRocks实例。
         
@@ -11160,7 +11160,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_click_house_data_base_async(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询数据库列表。
         
@@ -11233,7 +11233,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_click_house_data_base_parameter_async(self, request):
-        """查询数据同步的库参数配置
+        r"""查询数据同步的库参数配置
 
         查询数据同步的库参数配置。
         
@@ -11300,7 +11300,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_click_house_data_base_replication_async(self, request):
-        """查询数据同步信息
+        r"""查询数据同步信息
 
         查询数据同步信息。
         
@@ -11371,7 +11371,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_click_house_data_base_replication_config_async(self, request):
-        """查看数据同步配置
+        r"""查看数据同步配置
 
         查看数据同步配置。
         
@@ -11440,7 +11440,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_click_house_instance_async(self, request):
-        """查询实例详情
+        r"""查询实例详情
 
         查询实例详情。
         
@@ -11509,7 +11509,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_click_house_instance_node_async(self, request):
-        """查询错误日志、慢日志节点信息
+        r"""查询错误日志、慢日志节点信息
 
         查询错误日志、慢日志节点信息。
         
@@ -11576,7 +11576,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_htap_data_store_async(self, request):
-        """HTAP引擎资源查询
+        r"""HTAP引擎资源查询
 
         HTAP引擎资源查询。
         
@@ -11643,7 +11643,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_htap_flavor_async(self, request):
-        """HTAP查询规格信息
+        r"""HTAP查询规格信息
 
         HTAP查询规格信息。
         
@@ -11716,7 +11716,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_htap_instance_info_async(self, request):
-        """查询HTAP实例列表
+        r"""查询HTAP实例列表
 
         查询HTAP实例列表。
         
@@ -11783,7 +11783,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_htap_storage_type_async(self, request):
-        """获取HTAP实例存储类型
+        r"""获取HTAP实例存储类型
 
         获取HTAP实例存储类型。
         
@@ -11852,7 +11852,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_star_rocks_data_bases_async(self, request):
-        """查询StarRocks数据库
+        r"""查询StarRocks数据库
 
         查询StarRocks数据库。
         
@@ -11925,7 +11925,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_star_rocks_data_replication_config_async(self, request):
-        """查询StarRocks数据同步配置信息
+        r"""查询StarRocks数据同步配置信息
 
         查询StarRocks数据同步配置信息。
         
@@ -11994,7 +11994,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_star_rocks_data_replication_config_by_data_base_async(self, request):
-        """按目标库查询StarRocks数据同步配置信息
+        r"""按目标库查询StarRocks数据同步配置信息
 
         按目标库查询StarRocks数据同步配置信息。
         
@@ -12063,7 +12063,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_star_rocks_data_replications_async(self, request):
-        """查询StarRocks数据同步状态信息
+        r"""查询StarRocks数据同步状态信息
 
         查询StarRocks数据同步状态信息。
         
@@ -12134,7 +12134,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_star_rocks_db_parameters_async(self, request):
-        """查询StarRocks数据同步的库参数配置
+        r"""查询StarRocks数据同步的库参数配置
 
         查询StarRocks数据同步的库参数配置。
         
@@ -12205,7 +12205,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def list_starrocks_instance_info_async(self, request):
-        """查询StarRocks实例
+        r"""查询StarRocks实例
 
         查询StarRocks实例。
         
@@ -12274,7 +12274,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def modify_data_sync_async(self, request):
-        """修改StarRocks数据同步配置
+        r"""修改StarRocks数据同步配置
 
         修改StarRocks数据同步配置。
         
@@ -12343,7 +12343,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def pause_star_rocks_data_replication_async(self, request):
-        """暂停StarRocks数据同步
+        r"""暂停StarRocks数据同步
 
         暂停StarRocks数据同步。
         
@@ -12412,7 +12412,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def reboot_click_house_instance_async(self, request):
-        """重启实例
+        r"""重启实例
 
         重启实例。
         
@@ -12479,7 +12479,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def resize_click_house_flavor_async(self, request):
-        """实例规格变更
+        r"""实例规格变更
 
         实例规格变更。
         
@@ -12548,7 +12548,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def resize_click_house_instance_async(self, request):
-        """实例磁盘扩容
+        r"""实例磁盘扩容
 
         实例磁盘扩容。
         
@@ -12617,7 +12617,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def resize_star_rocks_flavor_async(self, request):
-        """StarRocks实例规格变更
+        r"""StarRocks实例规格变更
 
         StarRocks实例规格变更。
         
@@ -12686,7 +12686,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def restart_starrocks_instance_async(self, request):
-        """重启StarRocks实例
+        r"""重启StarRocks实例
 
         重启StarRocks实例。
         
@@ -12753,7 +12753,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def restart_starrocks_node_async(self, request):
-        """重启StarRocks节点
+        r"""重启StarRocks节点
 
         重启StarRocks节点。
         
@@ -12822,7 +12822,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def resume_star_rocks_data_replication_async(self, request):
-        """恢复StarRocks数据同步
+        r"""恢复StarRocks数据同步
 
         恢复StarRocks数据同步。
         
@@ -12891,7 +12891,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_click_house_database_user_async(self, request):
-        """查询数据库账户
+        r"""查询数据库账户
 
         查询数据库账户。
         
@@ -12964,7 +12964,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_click_house_lts_config_async(self, request):
-        """查询实例LTS日志配置列表
+        r"""查询实例LTS日志配置列表
 
         查询实例LTS日志配置列表。
         
@@ -13039,7 +13039,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_click_house_slow_log_detail_async(self, request):
-        """查询慢日志
+        r"""查询慢日志
 
         获取内核慢日志信息。
         
@@ -13108,7 +13108,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_click_house_slow_log_sensitive_status_async(self, request):
-        """查询慢日志脱敏状态
+        r"""查询慢日志脱敏状态
 
         查询慢日志脱敏状态。
         
@@ -13175,7 +13175,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_star_rocks_database_user_async(self, request):
-        """查询数据库账户
+        r"""查询数据库账户
 
         查询StarRocks数据库账户。
         
@@ -13248,7 +13248,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_starrocks_params_async(self, request):
-        """查询参数
+        r"""查询参数
 
         按节点类型查询参数
         
@@ -13321,7 +13321,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def sync_star_rocks_users_async(self, request):
-        """StarRocks实例开启行列分流
+        r"""StarRocks实例开启行列分流
 
         StarRocks实例开启行列分流。
         
@@ -13390,7 +13390,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_click_house_data_base_config_async(self, request):
-        """修改数据同步
+        r"""修改数据同步
 
         修改数据同步。
         
@@ -13459,7 +13459,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_click_house_database_user_password_async(self, request):
-        """修改数据库账号密码
+        r"""修改数据库账号密码
 
         修改数据库账号密码。
         
@@ -13528,7 +13528,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_click_house_database_user_permission_async(self, request):
-        """修改数据库账号权限
+        r"""修改数据库账号权限
 
         修改数据库账号权限。
         
@@ -13597,7 +13597,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_click_house_lts_config_async(self, request):
-        """批量创建LTS日志配置
+        r"""批量创建LTS日志配置
 
         批量创建LTS日志配置。
         
@@ -13664,7 +13664,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_click_house_slow_log_sensitive_status_async(self, request):
-        """修改慢日志脱敏状态
+        r"""修改慢日志脱敏状态
 
         修改慢日志脱敏状态。
         
@@ -13733,7 +13733,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_star_rocks_database_user_password_async(self, request):
-        """修改数据库账号密码
+        r"""修改数据库账号密码
 
         修改StarRocks数据库账号密码。
         
@@ -13802,7 +13802,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_star_rocks_database_user_permission_async(self, request):
-        """修改数据库账号权限
+        r"""修改数据库账号权限
 
         修改StarRocks数据库账号权限。
         
@@ -13871,7 +13871,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_starrocks_params_async(self, request):
-        """修改参数
+        r"""修改参数
 
         按节点类型修改节点参数
         
@@ -13940,7 +13940,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def upgrade_sr_kernel_version_async(self, request):
-        """StarRocks内核版本升级
+        r"""StarRocks内核版本升级
 
         StarRocks内核版本升级。
         
@@ -14009,7 +14009,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def delete_sql_filter_rule_async(self, request):
-        """删除SQL限流规则
+        r"""删除SQL限流规则
 
         删除SQL限流规则。
         
@@ -14078,7 +14078,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def set_sql_filter_rule_async(self, request):
-        """设置SQL限流规则
+        r"""设置SQL限流规则
 
         设置SQL限流规则。
         
@@ -14147,7 +14147,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_sql_filter_control_async(self, request):
-        """查询SQL限流开关状态
+        r"""查询SQL限流开关状态
 
         查询SQL限流开关状态。
         
@@ -14214,7 +14214,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def show_sql_filter_rule_async(self, request):
-        """查询SQL限流规则
+        r"""查询SQL限流规则
 
         查询SQL限流规则。
         
@@ -14285,7 +14285,7 @@ class GaussDBAsyncClient(Client):
         return http_info
 
     def update_sql_filter_control_async(self, request):
-        """开启或者关闭SQL限流
+        r"""开启或者关闭SQL限流
 
         开启或者关闭SQL限流。
         

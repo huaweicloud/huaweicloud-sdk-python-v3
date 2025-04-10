@@ -27,7 +27,7 @@ class CancelGaussMySqlInstanceEipRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """CancelGaussMySqlInstanceEipRequest
+        r"""CancelGaussMySqlInstanceEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CancelGaussMySqlInstanceEipRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CancelGaussMySqlInstanceEipRequest.
+        r"""Gets the x_language of this CancelGaussMySqlInstanceEipRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class CancelGaussMySqlInstanceEipRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CancelGaussMySqlInstanceEipRequest.
+        r"""Sets the x_language of this CancelGaussMySqlInstanceEipRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class CancelGaussMySqlInstanceEipRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CancelGaussMySqlInstanceEipRequest.
+        r"""Gets the instance_id of this CancelGaussMySqlInstanceEipRequest.
 
         租户在某一project下的实例ID。
 
@@ -82,7 +82,7 @@ class CancelGaussMySqlInstanceEipRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CancelGaussMySqlInstanceEipRequest.
+        r"""Sets the instance_id of this CancelGaussMySqlInstanceEipRequest.
 
         租户在某一project下的实例ID。
 

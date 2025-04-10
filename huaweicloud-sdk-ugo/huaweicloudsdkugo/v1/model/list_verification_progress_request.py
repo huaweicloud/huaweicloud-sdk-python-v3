@@ -25,7 +25,7 @@ class ListVerificationProgressRequest:
     }
 
     def __init__(self, migration_project_id=None):
-        """ListVerificationProgressRequest
+        r"""ListVerificationProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListVerificationProgressRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this ListVerificationProgressRequest.
+        r"""Gets the migration_project_id of this ListVerificationProgressRequest.
 
         迁移项目ID。
 
@@ -53,7 +53,7 @@ class ListVerificationProgressRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this ListVerificationProgressRequest.
+        r"""Sets the migration_project_id of this ListVerificationProgressRequest.
 
         迁移项目ID。
 

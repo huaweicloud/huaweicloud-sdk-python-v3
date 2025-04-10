@@ -27,7 +27,7 @@ class ListCssClusterRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListCssClusterRequest
+        r"""ListCssClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCssClusterRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCssClusterRequest.
+        r"""Gets the limit of this ListCssClusterRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -61,7 +61,7 @@ class ListCssClusterRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCssClusterRequest.
+        r"""Sets the limit of this ListCssClusterRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -72,7 +72,7 @@ class ListCssClusterRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCssClusterRequest.
+        r"""Gets the offset of this ListCssClusterRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -83,7 +83,7 @@ class ListCssClusterRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCssClusterRequest.
+        r"""Sets the offset of this ListCssClusterRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 

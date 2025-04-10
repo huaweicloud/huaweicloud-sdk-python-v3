@@ -36,7 +36,7 @@ class CreateFeatureV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, enable=None, config=None, instance_id=None, update_time=None):
-        """CreateFeatureV2Response
+        r"""CreateFeatureV2Response
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateFeatureV2Response.
+        r"""Gets the id of this CreateFeatureV2Response.
 
         特性编号
 
@@ -90,7 +90,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateFeatureV2Response.
+        r"""Sets the id of this CreateFeatureV2Response.
 
         特性编号
 
@@ -101,7 +101,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateFeatureV2Response.
+        r"""Gets the name of this CreateFeatureV2Response.
 
         特性名称
 
@@ -112,7 +112,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFeatureV2Response.
+        r"""Sets the name of this CreateFeatureV2Response.
 
         特性名称
 
@@ -123,7 +123,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this CreateFeatureV2Response.
+        r"""Gets the enable of this CreateFeatureV2Response.
 
         是否开启特性
 
@@ -134,7 +134,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateFeatureV2Response.
+        r"""Sets the enable of this CreateFeatureV2Response.
 
         是否开启特性
 
@@ -145,7 +145,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this CreateFeatureV2Response.
+        r"""Gets the config of this CreateFeatureV2Response.
 
         特性参数配置
 
@@ -156,7 +156,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this CreateFeatureV2Response.
+        r"""Sets the config of this CreateFeatureV2Response.
 
         特性参数配置
 
@@ -167,7 +167,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateFeatureV2Response.
+        r"""Gets the instance_id of this CreateFeatureV2Response.
 
         实例编号
 
@@ -178,7 +178,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateFeatureV2Response.
+        r"""Sets the instance_id of this CreateFeatureV2Response.
 
         实例编号
 
@@ -189,7 +189,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateFeatureV2Response.
+        r"""Gets the update_time of this CreateFeatureV2Response.
 
         实例特性更新时间
 
@@ -200,7 +200,7 @@ class CreateFeatureV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateFeatureV2Response.
+        r"""Sets the update_time of this CreateFeatureV2Response.
 
         实例特性更新时间
 

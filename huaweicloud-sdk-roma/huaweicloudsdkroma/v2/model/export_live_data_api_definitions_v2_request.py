@@ -27,7 +27,7 @@ class ExportLiveDataApiDefinitionsV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExportLiveDataApiDefinitionsV2Request
+        r"""ExportLiveDataApiDefinitionsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportLiveDataApiDefinitionsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportLiveDataApiDefinitionsV2Request.
+        r"""Gets the instance_id of this ExportLiveDataApiDefinitionsV2Request.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ExportLiveDataApiDefinitionsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportLiveDataApiDefinitionsV2Request.
+        r"""Sets the instance_id of this ExportLiveDataApiDefinitionsV2Request.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ExportLiveDataApiDefinitionsV2Request:
 
     @property
     def body(self):
-        """Gets the body of this ExportLiveDataApiDefinitionsV2Request.
+        r"""Gets the body of this ExportLiveDataApiDefinitionsV2Request.
 
         :return: The body of this ExportLiveDataApiDefinitionsV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.LiveDataExportReq`
@@ -80,7 +80,7 @@ class ExportLiveDataApiDefinitionsV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportLiveDataApiDefinitionsV2Request.
+        r"""Sets the body of this ExportLiveDataApiDefinitionsV2Request.
 
         :param body: The body of this ExportLiveDataApiDefinitionsV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.LiveDataExportReq`

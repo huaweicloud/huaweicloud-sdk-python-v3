@@ -28,7 +28,7 @@ class CreateAgencyWithRoleTypeResponse(SdkResponse):
     }
 
     def __init__(self, agency_id=None, x_request_id=None):
-        """CreateAgencyWithRoleTypeResponse
+        r"""CreateAgencyWithRoleTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAgencyWithRoleTypeResponse(SdkResponse):
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CreateAgencyWithRoleTypeResponse.
+        r"""Gets the agency_id of this CreateAgencyWithRoleTypeResponse.
 
         委托ID。
 
@@ -62,7 +62,7 @@ class CreateAgencyWithRoleTypeResponse(SdkResponse):
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CreateAgencyWithRoleTypeResponse.
+        r"""Sets the agency_id of this CreateAgencyWithRoleTypeResponse.
 
         委托ID。
 
@@ -73,7 +73,7 @@ class CreateAgencyWithRoleTypeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateAgencyWithRoleTypeResponse.
+        r"""Gets the x_request_id of this CreateAgencyWithRoleTypeResponse.
 
         :return: The x_request_id of this CreateAgencyWithRoleTypeResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateAgencyWithRoleTypeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateAgencyWithRoleTypeResponse.
+        r"""Sets the x_request_id of this CreateAgencyWithRoleTypeResponse.
 
         :param x_request_id: The x_request_id of this CreateAgencyWithRoleTypeResponse.
         :type x_request_id: str

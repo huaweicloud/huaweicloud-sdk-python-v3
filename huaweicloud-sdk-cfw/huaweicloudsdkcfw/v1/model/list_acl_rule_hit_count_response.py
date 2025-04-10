@@ -26,7 +26,7 @@ class ListAclRuleHitCountResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAclRuleHitCountResponse
+        r"""ListAclRuleHitCountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAclRuleHitCountResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAclRuleHitCountResponse.
+        r"""Gets the data of this ListAclRuleHitCountResponse.
 
         :return: The data of this ListAclRuleHitCountResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleHitCountRecords`
@@ -53,7 +53,7 @@ class ListAclRuleHitCountResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAclRuleHitCountResponse.
+        r"""Sets the data of this ListAclRuleHitCountResponse.
 
         :param data: The data of this ListAclRuleHitCountResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.RuleHitCountRecords`

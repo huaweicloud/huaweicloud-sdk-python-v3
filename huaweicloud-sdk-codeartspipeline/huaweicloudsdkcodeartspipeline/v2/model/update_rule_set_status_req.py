@@ -25,7 +25,7 @@ class UpdateRuleSetStatusReq:
     }
 
     def __init__(self, is_valid=None):
-        """UpdateRuleSetStatusReq
+        r"""UpdateRuleSetStatusReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateRuleSetStatusReq:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this UpdateRuleSetStatusReq.
+        r"""Gets the is_valid of this UpdateRuleSetStatusReq.
 
         规则模版实例状态
 
@@ -53,7 +53,7 @@ class UpdateRuleSetStatusReq:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this UpdateRuleSetStatusReq.
+        r"""Sets the is_valid of this UpdateRuleSetStatusReq.
 
         规则模版实例状态
 

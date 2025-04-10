@@ -39,7 +39,7 @@ class CreateUpdateSecretRespSecret:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, secrets=None, tags=None):
-        """CreateUpdateSecretRespSecret
+        r"""CreateUpdateSecretRespSecret
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def id(self):
-        """Gets the id of this CreateUpdateSecretRespSecret.
+        r"""Gets the id of this CreateUpdateSecretRespSecret.
 
         密钥ID
 
@@ -103,7 +103,7 @@ class CreateUpdateSecretRespSecret:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateUpdateSecretRespSecret.
+        r"""Sets the id of this CreateUpdateSecretRespSecret.
 
         密钥ID
 
@@ -114,7 +114,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def name(self):
-        """Gets the name of this CreateUpdateSecretRespSecret.
+        r"""Gets the name of this CreateUpdateSecretRespSecret.
 
         密钥名称
 
@@ -125,7 +125,7 @@ class CreateUpdateSecretRespSecret:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUpdateSecretRespSecret.
+        r"""Sets the name of this CreateUpdateSecretRespSecret.
 
         密钥名称
 
@@ -136,7 +136,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def description(self):
-        """Gets the description of this CreateUpdateSecretRespSecret.
+        r"""Gets the description of this CreateUpdateSecretRespSecret.
 
         密钥描述
 
@@ -147,7 +147,7 @@ class CreateUpdateSecretRespSecret:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUpdateSecretRespSecret.
+        r"""Sets the description of this CreateUpdateSecretRespSecret.
 
         密钥描述
 
@@ -158,7 +158,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateUpdateSecretRespSecret.
+        r"""Gets the project_id of this CreateUpdateSecretRespSecret.
 
         项目ID
 
@@ -169,7 +169,7 @@ class CreateUpdateSecretRespSecret:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateUpdateSecretRespSecret.
+        r"""Sets the project_id of this CreateUpdateSecretRespSecret.
 
         项目ID
 
@@ -180,7 +180,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateUpdateSecretRespSecret.
+        r"""Gets the created_at of this CreateUpdateSecretRespSecret.
 
         密钥创建时间
 
@@ -191,7 +191,7 @@ class CreateUpdateSecretRespSecret:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateUpdateSecretRespSecret.
+        r"""Sets the created_at of this CreateUpdateSecretRespSecret.
 
         密钥创建时间
 
@@ -202,7 +202,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateUpdateSecretRespSecret.
+        r"""Gets the updated_at of this CreateUpdateSecretRespSecret.
 
         密钥更新时间
 
@@ -213,7 +213,7 @@ class CreateUpdateSecretRespSecret:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateUpdateSecretRespSecret.
+        r"""Sets the updated_at of this CreateUpdateSecretRespSecret.
 
         密钥更新时间
 
@@ -224,7 +224,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def secrets(self):
-        """Gets the secrets of this CreateUpdateSecretRespSecret.
+        r"""Gets the secrets of this CreateUpdateSecretRespSecret.
 
         密钥列表
 
@@ -235,7 +235,7 @@ class CreateUpdateSecretRespSecret:
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this CreateUpdateSecretRespSecret.
+        r"""Sets the secrets of this CreateUpdateSecretRespSecret.
 
         密钥列表
 
@@ -246,7 +246,7 @@ class CreateUpdateSecretRespSecret:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateUpdateSecretRespSecret.
+        r"""Gets the tags of this CreateUpdateSecretRespSecret.
 
         标签列表
 
@@ -257,7 +257,7 @@ class CreateUpdateSecretRespSecret:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateUpdateSecretRespSecret.
+        r"""Sets the tags of this CreateUpdateSecretRespSecret.
 
         标签列表
 

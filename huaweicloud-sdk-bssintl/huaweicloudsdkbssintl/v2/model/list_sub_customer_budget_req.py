@@ -27,7 +27,7 @@ class ListSubCustomerBudgetReq:
     }
 
     def __init__(self, customer_ids=None, indirect_partner_id=None):
-        """ListSubCustomerBudgetReq
+        r"""ListSubCustomerBudgetReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSubCustomerBudgetReq:
 
     @property
     def customer_ids(self):
-        """Gets the customer_ids of this ListSubCustomerBudgetReq.
+        r"""Gets the customer_ids of this ListSubCustomerBudgetReq.
 
         |参数名称：客户ID列表| |参数的约束及描述：必填，最大支持100个客户ID，如果其中有存在不是该伙伴的客户ID或者其中有存在与该伙伴不是转售关联类型的客户ID，在响应中不返回该客户信息。|
 
@@ -60,7 +60,7 @@ class ListSubCustomerBudgetReq:
 
     @customer_ids.setter
     def customer_ids(self, customer_ids):
-        """Sets the customer_ids of this ListSubCustomerBudgetReq.
+        r"""Sets the customer_ids of this ListSubCustomerBudgetReq.
 
         |参数名称：客户ID列表| |参数的约束及描述：必填，最大支持100个客户ID，如果其中有存在不是该伙伴的客户ID或者其中有存在与该伙伴不是转售关联类型的客户ID，在响应中不返回该客户信息。|
 
@@ -71,7 +71,7 @@ class ListSubCustomerBudgetReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ListSubCustomerBudgetReq.
+        r"""Gets the indirect_partner_id of this ListSubCustomerBudgetReq.
 
         |参数名称：云经销商ID| |参数约束及描述：非必填，范围限制:0-64，如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。|
 
@@ -82,7 +82,7 @@ class ListSubCustomerBudgetReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ListSubCustomerBudgetReq.
+        r"""Sets the indirect_partner_id of this ListSubCustomerBudgetReq.
 
         |参数名称：云经销商ID| |参数约束及描述：非必填，范围限制:0-64，如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。|
 

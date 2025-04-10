@@ -29,7 +29,7 @@ class ResetPwdRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ResetPwdRequest
+        r"""ResetPwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResetPwdRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ResetPwdRequest.
+        r"""Gets the x_language of this ResetPwdRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ResetPwdRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ResetPwdRequest.
+        r"""Sets the x_language of this ResetPwdRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ResetPwdRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetPwdRequest.
+        r"""Gets the instance_id of this ResetPwdRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class ResetPwdRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetPwdRequest.
+        r"""Sets the instance_id of this ResetPwdRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class ResetPwdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetPwdRequest.
+        r"""Gets the body of this ResetPwdRequest.
 
         :return: The body of this ResetPwdRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.PwdResetRequest`
@@ -109,7 +109,7 @@ class ResetPwdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetPwdRequest.
+        r"""Sets the body of this ResetPwdRequest.
 
         :param body: The body of this ResetPwdRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.PwdResetRequest`

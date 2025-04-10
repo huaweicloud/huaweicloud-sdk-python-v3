@@ -27,7 +27,7 @@ class TaskInput:
     }
 
     def __init__(self, data=None, type=None):
-        """TaskInput
+        r"""TaskInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TaskInput:
 
     @property
     def data(self):
-        """Gets the data of this TaskInput.
+        r"""Gets the data of this TaskInput.
 
         输入数据
 
@@ -59,7 +59,7 @@ class TaskInput:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TaskInput.
+        r"""Sets the data of this TaskInput.
 
         输入数据
 
@@ -70,7 +70,7 @@ class TaskInput:
 
     @property
     def type(self):
-        """Gets the type of this TaskInput.
+        r"""Gets the type of this TaskInput.
 
         输入类型
 
@@ -81,7 +81,7 @@ class TaskInput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskInput.
+        r"""Sets the type of this TaskInput.
 
         输入类型
 

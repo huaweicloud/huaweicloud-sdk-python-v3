@@ -41,7 +41,7 @@ class TemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, status=None, type=None, auto_encrypt=None, quality_info_list=None, watermark_template_ids=None, description=None, common=None):
-        """TemplateGroup
+        r"""TemplateGroup
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TemplateGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this TemplateGroup.
+        r"""Gets the group_id of this TemplateGroup.
 
         模板组id<br/> 
 
@@ -110,7 +110,7 @@ class TemplateGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this TemplateGroup.
+        r"""Sets the group_id of this TemplateGroup.
 
         模板组id<br/> 
 
@@ -121,7 +121,7 @@ class TemplateGroup:
 
     @property
     def name(self):
-        """Gets the name of this TemplateGroup.
+        r"""Gets the name of this TemplateGroup.
 
         模板组名称<br/> 
 
@@ -132,7 +132,7 @@ class TemplateGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateGroup.
+        r"""Sets the name of this TemplateGroup.
 
         模板组名称<br/> 
 
@@ -143,7 +143,7 @@ class TemplateGroup:
 
     @property
     def status(self):
-        """Gets the status of this TemplateGroup.
+        r"""Gets the status of this TemplateGroup.
 
         是否默认<br/> 
 
@@ -154,7 +154,7 @@ class TemplateGroup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TemplateGroup.
+        r"""Sets the status of this TemplateGroup.
 
         是否默认<br/> 
 
@@ -165,7 +165,7 @@ class TemplateGroup:
 
     @property
     def type(self):
-        """Gets the type of this TemplateGroup.
+        r"""Gets the type of this TemplateGroup.
 
         模板组类型<br/> 
 
@@ -176,7 +176,7 @@ class TemplateGroup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TemplateGroup.
+        r"""Sets the type of this TemplateGroup.
 
         模板组类型<br/> 
 
@@ -187,7 +187,7 @@ class TemplateGroup:
 
     @property
     def auto_encrypt(self):
-        """Gets the auto_encrypt of this TemplateGroup.
+        r"""Gets the auto_encrypt of this TemplateGroup.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -198,7 +198,7 @@ class TemplateGroup:
 
     @auto_encrypt.setter
     def auto_encrypt(self, auto_encrypt):
-        """Sets the auto_encrypt of this TemplateGroup.
+        r"""Sets the auto_encrypt of this TemplateGroup.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -209,7 +209,7 @@ class TemplateGroup:
 
     @property
     def quality_info_list(self):
-        """Gets the quality_info_list of this TemplateGroup.
+        r"""Gets the quality_info_list of this TemplateGroup.
 
         画质配置信息列表<br/> 
 
@@ -220,7 +220,7 @@ class TemplateGroup:
 
     @quality_info_list.setter
     def quality_info_list(self, quality_info_list):
-        """Sets the quality_info_list of this TemplateGroup.
+        r"""Sets the quality_info_list of this TemplateGroup.
 
         画质配置信息列表<br/> 
 
@@ -231,7 +231,7 @@ class TemplateGroup:
 
     @property
     def watermark_template_ids(self):
-        """Gets the watermark_template_ids of this TemplateGroup.
+        r"""Gets the watermark_template_ids of this TemplateGroup.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -242,7 +242,7 @@ class TemplateGroup:
 
     @watermark_template_ids.setter
     def watermark_template_ids(self, watermark_template_ids):
-        """Sets the watermark_template_ids of this TemplateGroup.
+        r"""Sets the watermark_template_ids of this TemplateGroup.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -253,7 +253,7 @@ class TemplateGroup:
 
     @property
     def description(self):
-        """Gets the description of this TemplateGroup.
+        r"""Gets the description of this TemplateGroup.
 
         模板介绍<br/> 
 
@@ -264,7 +264,7 @@ class TemplateGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateGroup.
+        r"""Sets the description of this TemplateGroup.
 
         模板介绍<br/> 
 
@@ -275,7 +275,7 @@ class TemplateGroup:
 
     @property
     def common(self):
-        """Gets the common of this TemplateGroup.
+        r"""Gets the common of this TemplateGroup.
 
         :return: The common of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkvod.v1.Common`
@@ -284,7 +284,7 @@ class TemplateGroup:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TemplateGroup.
+        r"""Sets the common of this TemplateGroup.
 
         :param common: The common of this TemplateGroup.
         :type common: :class:`huaweicloudsdkvod.v1.Common`

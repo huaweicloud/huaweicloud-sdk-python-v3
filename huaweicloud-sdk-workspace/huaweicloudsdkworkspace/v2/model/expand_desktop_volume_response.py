@@ -36,7 +36,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, bss_job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
-        """ExpandDesktopVolumeResponse
+        r"""ExpandDesktopVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExpandDesktopVolumeResponse.
+        r"""Gets the job_id of this ExpandDesktopVolumeResponse.
 
         扩容磁盘任务id
 
@@ -90,7 +90,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExpandDesktopVolumeResponse.
+        r"""Sets the job_id of this ExpandDesktopVolumeResponse.
 
         扩容磁盘任务id
 
@@ -101,7 +101,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @property
     def bss_job_id(self):
-        """Gets the bss_job_id of this ExpandDesktopVolumeResponse.
+        r"""Gets the bss_job_id of this ExpandDesktopVolumeResponse.
 
         【BSS移动云回调】包周期扩容磁盘的任务ID
 
@@ -112,7 +112,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @bss_job_id.setter
     def bss_job_id(self, bss_job_id):
-        """Sets the bss_job_id of this ExpandDesktopVolumeResponse.
+        r"""Sets the bss_job_id of this ExpandDesktopVolumeResponse.
 
         【BSS移动云回调】包周期扩容磁盘的任务ID
 
@@ -123,7 +123,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @property
     def get_job_endpoint(self):
-        """Gets the get_job_endpoint of this ExpandDesktopVolumeResponse.
+        r"""Gets the get_job_endpoint of this ExpandDesktopVolumeResponse.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
 
@@ -134,7 +134,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @get_job_endpoint.setter
     def get_job_endpoint(self, get_job_endpoint):
-        """Sets the get_job_endpoint of this ExpandDesktopVolumeResponse.
+        r"""Sets the get_job_endpoint of this ExpandDesktopVolumeResponse.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
 
@@ -145,7 +145,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @property
     def max_provision_time(self):
-        """Gets the max_provision_time of this ExpandDesktopVolumeResponse.
+        r"""Gets the max_provision_time of this ExpandDesktopVolumeResponse.
 
         在线开通最大时间
 
@@ -156,7 +156,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @max_provision_time.setter
     def max_provision_time(self, max_provision_time):
-        """Sets the max_provision_time of this ExpandDesktopVolumeResponse.
+        r"""Sets the max_provision_time of this ExpandDesktopVolumeResponse.
 
         在线开通最大时间
 
@@ -167,7 +167,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @property
     def min_provision_time(self):
-        """Gets the min_provision_time of this ExpandDesktopVolumeResponse.
+        r"""Gets the min_provision_time of this ExpandDesktopVolumeResponse.
 
         开通最小时间（云服务最快开通时长，或一般开通时长）
 
@@ -178,7 +178,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @min_provision_time.setter
     def min_provision_time(self, min_provision_time):
-        """Sets the min_provision_time of this ExpandDesktopVolumeResponse.
+        r"""Sets the min_provision_time of this ExpandDesktopVolumeResponse.
 
         开通最小时间（云服务最快开通时长，或一般开通时长）
 
@@ -189,7 +189,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @property
     def periodic_query_time(self):
-        """Gets the periodic_query_time of this ExpandDesktopVolumeResponse.
+        r"""Gets the periodic_query_time of this ExpandDesktopVolumeResponse.
 
         Job周期性查询时间，默认1分钟查询一次
 
@@ -200,7 +200,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     @periodic_query_time.setter
     def periodic_query_time(self, periodic_query_time):
-        """Sets the periodic_query_time of this ExpandDesktopVolumeResponse.
+        r"""Sets the periodic_query_time of this ExpandDesktopVolumeResponse.
 
         Job周期性查询时间，默认1分钟查询一次
 

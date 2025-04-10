@@ -45,7 +45,7 @@ class CreateNatGatewayDnatOption:
     }
 
     def __init__(self, description=None, port_id=None, private_ip=None, nat_gateway_id=None, internal_service_port=None, floating_ip_id=None, external_service_port=None, protocol=None, internal_service_port_range=None, external_service_port_range=None, global_eip_id=None):
-        """CreateNatGatewayDnatOption
+        r"""CreateNatGatewayDnatOption
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateNatGatewayDnatOption.
+        r"""Gets the description of this CreateNatGatewayDnatOption.
 
         DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -119,7 +119,7 @@ class CreateNatGatewayDnatOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNatGatewayDnatOption.
+        r"""Sets the description of this CreateNatGatewayDnatOption.
 
         DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -130,7 +130,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this CreateNatGatewayDnatOption.
+        r"""Gets the port_id of this CreateNatGatewayDnatOption.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -141,7 +141,7 @@ class CreateNatGatewayDnatOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this CreateNatGatewayDnatOption.
+        r"""Sets the port_id of this CreateNatGatewayDnatOption.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -152,7 +152,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this CreateNatGatewayDnatOption.
+        r"""Gets the private_ip of this CreateNatGatewayDnatOption.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -163,7 +163,7 @@ class CreateNatGatewayDnatOption:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this CreateNatGatewayDnatOption.
+        r"""Sets the private_ip of this CreateNatGatewayDnatOption.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -174,7 +174,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this CreateNatGatewayDnatOption.
+        r"""Gets the nat_gateway_id of this CreateNatGatewayDnatOption.
 
         公网NAT网关实例的ID。
 
@@ -185,7 +185,7 @@ class CreateNatGatewayDnatOption:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this CreateNatGatewayDnatOption.
+        r"""Sets the nat_gateway_id of this CreateNatGatewayDnatOption.
 
         公网NAT网关实例的ID。
 
@@ -196,7 +196,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def internal_service_port(self):
-        """Gets the internal_service_port of this CreateNatGatewayDnatOption.
+        r"""Gets the internal_service_port of this CreateNatGatewayDnatOption.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -207,7 +207,7 @@ class CreateNatGatewayDnatOption:
 
     @internal_service_port.setter
     def internal_service_port(self, internal_service_port):
-        """Sets the internal_service_port of this CreateNatGatewayDnatOption.
+        r"""Sets the internal_service_port of this CreateNatGatewayDnatOption.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -218,7 +218,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this CreateNatGatewayDnatOption.
+        r"""Gets the floating_ip_id of this CreateNatGatewayDnatOption.
 
         弹性公网IP的id。
 
@@ -229,7 +229,7 @@ class CreateNatGatewayDnatOption:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this CreateNatGatewayDnatOption.
+        r"""Sets the floating_ip_id of this CreateNatGatewayDnatOption.
 
         弹性公网IP的id。
 
@@ -240,7 +240,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def external_service_port(self):
-        """Gets the external_service_port of this CreateNatGatewayDnatOption.
+        r"""Gets the external_service_port of this CreateNatGatewayDnatOption.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -251,7 +251,7 @@ class CreateNatGatewayDnatOption:
 
     @external_service_port.setter
     def external_service_port(self, external_service_port):
-        """Sets the external_service_port of this CreateNatGatewayDnatOption.
+        r"""Sets the external_service_port of this CreateNatGatewayDnatOption.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -262,7 +262,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateNatGatewayDnatOption.
+        r"""Gets the protocol of this CreateNatGatewayDnatOption.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -273,7 +273,7 @@ class CreateNatGatewayDnatOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateNatGatewayDnatOption.
+        r"""Sets the protocol of this CreateNatGatewayDnatOption.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -284,7 +284,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def internal_service_port_range(self):
-        """Gets the internal_service_port_range of this CreateNatGatewayDnatOption.
+        r"""Gets the internal_service_port_range of this CreateNatGatewayDnatOption.
 
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
@@ -295,7 +295,7 @@ class CreateNatGatewayDnatOption:
 
     @internal_service_port_range.setter
     def internal_service_port_range(self, internal_service_port_range):
-        """Sets the internal_service_port_range of this CreateNatGatewayDnatOption.
+        r"""Sets the internal_service_port_range of this CreateNatGatewayDnatOption.
 
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
@@ -306,7 +306,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def external_service_port_range(self):
-        """Gets the external_service_port_range of this CreateNatGatewayDnatOption.
+        r"""Gets the external_service_port_range of this CreateNatGatewayDnatOption.
 
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
@@ -317,7 +317,7 @@ class CreateNatGatewayDnatOption:
 
     @external_service_port_range.setter
     def external_service_port_range(self, external_service_port_range):
-        """Sets the external_service_port_range of this CreateNatGatewayDnatOption.
+        r"""Sets the external_service_port_range of this CreateNatGatewayDnatOption.
 
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
@@ -328,7 +328,7 @@ class CreateNatGatewayDnatOption:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this CreateNatGatewayDnatOption.
+        r"""Gets the global_eip_id of this CreateNatGatewayDnatOption.
 
         全域弹性公网IP的id。
 
@@ -339,7 +339,7 @@ class CreateNatGatewayDnatOption:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this CreateNatGatewayDnatOption.
+        r"""Sets the global_eip_id of this CreateNatGatewayDnatOption.
 
         全域弹性公网IP的id。
 

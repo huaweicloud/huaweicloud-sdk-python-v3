@@ -30,7 +30,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, log_list=None):
-        """ShowHistoryRunInfoResponse
+        r"""ShowHistoryRunInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowHistoryRunInfoResponse.
+        r"""Gets the code of this ShowHistoryRunInfoResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowHistoryRunInfoResponse.
+        r"""Sets the code of this ShowHistoryRunInfoResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowHistoryRunInfoResponse.
+        r"""Gets the message of this ShowHistoryRunInfoResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowHistoryRunInfoResponse.
+        r"""Sets the message of this ShowHistoryRunInfoResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
     @property
     def log_list(self):
-        """Gets the log_list of this ShowHistoryRunInfoResponse.
+        r"""Gets the log_list of this ShowHistoryRunInfoResponse.
 
         报告列表
 
@@ -113,7 +113,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
 
     @log_list.setter
     def log_list(self, log_list):
-        """Sets the log_list of this ShowHistoryRunInfoResponse.
+        r"""Sets the log_list of this ShowHistoryRunInfoResponse.
 
         报告列表
 

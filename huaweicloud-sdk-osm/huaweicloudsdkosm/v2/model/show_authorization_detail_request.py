@@ -33,7 +33,7 @@ class ShowAuthorizationDetailRequest:
     }
 
     def __init__(self, authorization_id=None, group_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ShowAuthorizationDetailRequest
+        r"""ShowAuthorizationDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowAuthorizationDetailRequest:
 
     @property
     def authorization_id(self):
-        """Gets the authorization_id of this ShowAuthorizationDetailRequest.
+        r"""Gets the authorization_id of this ShowAuthorizationDetailRequest.
 
         授权id
 
@@ -81,7 +81,7 @@ class ShowAuthorizationDetailRequest:
 
     @authorization_id.setter
     def authorization_id(self, authorization_id):
-        """Sets the authorization_id of this ShowAuthorizationDetailRequest.
+        r"""Sets the authorization_id of this ShowAuthorizationDetailRequest.
 
         授权id
 
@@ -92,7 +92,7 @@ class ShowAuthorizationDetailRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowAuthorizationDetailRequest.
+        r"""Gets the group_id of this ShowAuthorizationDetailRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -103,7 +103,7 @@ class ShowAuthorizationDetailRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowAuthorizationDetailRequest.
+        r"""Sets the group_id of this ShowAuthorizationDetailRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -114,7 +114,7 @@ class ShowAuthorizationDetailRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowAuthorizationDetailRequest.
+        r"""Gets the x_site of this ShowAuthorizationDetailRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -125,7 +125,7 @@ class ShowAuthorizationDetailRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowAuthorizationDetailRequest.
+        r"""Sets the x_site of this ShowAuthorizationDetailRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -136,7 +136,7 @@ class ShowAuthorizationDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowAuthorizationDetailRequest.
+        r"""Gets the x_language of this ShowAuthorizationDetailRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -147,7 +147,7 @@ class ShowAuthorizationDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowAuthorizationDetailRequest.
+        r"""Sets the x_language of this ShowAuthorizationDetailRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -158,7 +158,7 @@ class ShowAuthorizationDetailRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ShowAuthorizationDetailRequest.
+        r"""Gets the x_time_zone of this ShowAuthorizationDetailRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -169,7 +169,7 @@ class ShowAuthorizationDetailRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ShowAuthorizationDetailRequest.
+        r"""Sets the x_time_zone of this ShowAuthorizationDetailRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

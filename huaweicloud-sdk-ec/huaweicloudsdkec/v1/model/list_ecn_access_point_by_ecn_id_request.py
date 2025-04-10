@@ -25,7 +25,7 @@ class ListEcnAccessPointByEcnIdRequest:
     }
 
     def __init__(self, ecn_id=None):
-        """ListEcnAccessPointByEcnIdRequest
+        r"""ListEcnAccessPointByEcnIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEcnAccessPointByEcnIdRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this ListEcnAccessPointByEcnIdRequest.
+        r"""Gets the ecn_id of this ListEcnAccessPointByEcnIdRequest.
 
         企业连接网络ID
 
@@ -53,7 +53,7 @@ class ListEcnAccessPointByEcnIdRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this ListEcnAccessPointByEcnIdRequest.
+        r"""Sets the ecn_id of this ListEcnAccessPointByEcnIdRequest.
 
         企业连接网络ID
 

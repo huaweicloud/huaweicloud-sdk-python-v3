@@ -27,7 +27,7 @@ class ShowTemplateDetailRequest:
     }
 
     def __init__(self, x_language=None, template_id=None):
-        """ShowTemplateDetailRequest
+        r"""ShowTemplateDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTemplateDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowTemplateDetailRequest.
+        r"""Gets the x_language of this ShowTemplateDetailRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -60,7 +60,7 @@ class ShowTemplateDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowTemplateDetailRequest.
+        r"""Sets the x_language of this ShowTemplateDetailRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -71,7 +71,7 @@ class ShowTemplateDetailRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateDetailRequest.
+        r"""Gets the template_id of this ShowTemplateDetailRequest.
 
         模板ID，通过查询模板列表接口可获取相应模板ID。
 
@@ -82,7 +82,7 @@ class ShowTemplateDetailRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateDetailRequest.
+        r"""Sets the template_id of this ShowTemplateDetailRequest.
 
         模板ID，通过查询模板列表接口可获取相应模板ID。
 

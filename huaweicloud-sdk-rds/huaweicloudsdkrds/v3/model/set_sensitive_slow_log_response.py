@@ -24,7 +24,7 @@ class SetSensitiveSlowLogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetSensitiveSlowLogResponse
+        r"""SetSensitiveSlowLogResponse
 
         The model defined in huaweicloud sdk
 

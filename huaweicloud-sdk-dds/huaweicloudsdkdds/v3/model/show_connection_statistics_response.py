@@ -34,7 +34,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, total_connections=None, total_inner_connections=None, total_outer_connections=None, inner_connections=None, outer_connections=None):
-        """ShowConnectionStatisticsResponse
+        r"""ShowConnectionStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @property
     def total_connections(self):
-        """Gets the total_connections of this ShowConnectionStatisticsResponse.
+        r"""Gets the total_connections of this ShowConnectionStatisticsResponse.
 
         总连接数，包括内部连接与外部连接。
 
@@ -83,7 +83,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @total_connections.setter
     def total_connections(self, total_connections):
-        """Sets the total_connections of this ShowConnectionStatisticsResponse.
+        r"""Sets the total_connections of this ShowConnectionStatisticsResponse.
 
         总连接数，包括内部连接与外部连接。
 
@@ -94,7 +94,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @property
     def total_inner_connections(self):
-        """Gets the total_inner_connections of this ShowConnectionStatisticsResponse.
+        r"""Gets the total_inner_connections of this ShowConnectionStatisticsResponse.
 
         内部总连接数。
 
@@ -105,7 +105,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @total_inner_connections.setter
     def total_inner_connections(self, total_inner_connections):
-        """Sets the total_inner_connections of this ShowConnectionStatisticsResponse.
+        r"""Sets the total_inner_connections of this ShowConnectionStatisticsResponse.
 
         内部总连接数。
 
@@ -116,7 +116,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @property
     def total_outer_connections(self):
-        """Gets the total_outer_connections of this ShowConnectionStatisticsResponse.
+        r"""Gets the total_outer_connections of this ShowConnectionStatisticsResponse.
 
         外部总连接数。
 
@@ -127,7 +127,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @total_outer_connections.setter
     def total_outer_connections(self, total_outer_connections):
-        """Sets the total_outer_connections of this ShowConnectionStatisticsResponse.
+        r"""Sets the total_outer_connections of this ShowConnectionStatisticsResponse.
 
         外部总连接数。
 
@@ -138,7 +138,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @property
     def inner_connections(self):
-        """Gets the inner_connections of this ShowConnectionStatisticsResponse.
+        r"""Gets the inner_connections of this ShowConnectionStatisticsResponse.
 
         内部连接统计信息数组，最大记录数为200条。
 
@@ -149,7 +149,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @inner_connections.setter
     def inner_connections(self, inner_connections):
-        """Sets the inner_connections of this ShowConnectionStatisticsResponse.
+        r"""Sets the inner_connections of this ShowConnectionStatisticsResponse.
 
         内部连接统计信息数组，最大记录数为200条。
 
@@ -160,7 +160,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @property
     def outer_connections(self):
-        """Gets the outer_connections of this ShowConnectionStatisticsResponse.
+        r"""Gets the outer_connections of this ShowConnectionStatisticsResponse.
 
         外部连接统计信息数组，最大记录数为200条。
 
@@ -171,7 +171,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
 
     @outer_connections.setter
     def outer_connections(self, outer_connections):
-        """Sets the outer_connections of this ShowConnectionStatisticsResponse.
+        r"""Sets the outer_connections of this ShowConnectionStatisticsResponse.
 
         外部连接统计信息数组，最大记录数为200条。
 

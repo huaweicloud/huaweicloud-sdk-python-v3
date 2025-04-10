@@ -27,7 +27,7 @@ class RDMParamVOPersistableModelSaveAsDTO:
     }
 
     def __init__(self, params=None, application_id=None):
-        """RDMParamVOPersistableModelSaveAsDTO
+        r"""RDMParamVOPersistableModelSaveAsDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOPersistableModelSaveAsDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOPersistableModelSaveAsDTO.
+        r"""Gets the params of this RDMParamVOPersistableModelSaveAsDTO.
 
         :return: The params of this RDMParamVOPersistableModelSaveAsDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAsDTO`
@@ -59,7 +59,7 @@ class RDMParamVOPersistableModelSaveAsDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOPersistableModelSaveAsDTO.
+        r"""Sets the params of this RDMParamVOPersistableModelSaveAsDTO.
 
         :param params: The params of this RDMParamVOPersistableModelSaveAsDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAsDTO`
@@ -68,7 +68,7 @@ class RDMParamVOPersistableModelSaveAsDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
+        r"""Gets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -79,7 +79,7 @@ class RDMParamVOPersistableModelSaveAsDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
+        r"""Sets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 

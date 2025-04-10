@@ -25,7 +25,7 @@ class DownloadKieReqBody:
     }
 
     def __init__(self, ids=None):
-        """DownloadKieReqBody
+        r"""DownloadKieReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadKieReqBody:
 
     @property
     def ids(self):
-        """Gets the ids of this DownloadKieReqBody.
+        r"""Gets the ids of this DownloadKieReqBody.
 
         配置ID的集合
 
@@ -53,7 +53,7 @@ class DownloadKieReqBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DownloadKieReqBody.
+        r"""Sets the ids of this DownloadKieReqBody.
 
         配置ID的集合
 

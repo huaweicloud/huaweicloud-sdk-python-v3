@@ -27,7 +27,7 @@ class ListNodePoolsRequest:
     }
 
     def __init__(self, cluster_id=None, show_default_node_pool=None):
-        """ListNodePoolsRequest
+        r"""ListNodePoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListNodePoolsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListNodePoolsRequest.
+        r"""Gets the cluster_id of this ListNodePoolsRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class ListNodePoolsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListNodePoolsRequest.
+        r"""Sets the cluster_id of this ListNodePoolsRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class ListNodePoolsRequest:
 
     @property
     def show_default_node_pool(self):
-        """Gets the show_default_node_pool of this ListNodePoolsRequest.
+        r"""Gets the show_default_node_pool of this ListNodePoolsRequest.
 
         是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
 
@@ -82,7 +82,7 @@ class ListNodePoolsRequest:
 
     @show_default_node_pool.setter
     def show_default_node_pool(self, show_default_node_pool):
-        """Sets the show_default_node_pool of this ListNodePoolsRequest.
+        r"""Sets the show_default_node_pool of this ListNodePoolsRequest.
 
         是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
 

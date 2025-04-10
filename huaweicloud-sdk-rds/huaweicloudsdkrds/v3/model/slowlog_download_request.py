@@ -25,7 +25,7 @@ class SlowlogDownloadRequest:
     }
 
     def __init__(self, file_name=None):
-        """SlowlogDownloadRequest
+        r"""SlowlogDownloadRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SlowlogDownloadRequest:
 
     @property
     def file_name(self):
-        """Gets the file_name of this SlowlogDownloadRequest.
+        r"""Gets the file_name of this SlowlogDownloadRequest.
 
         - 需要下载的文件的文件名, 当引擎为SQL Server时为必选。
 
@@ -54,7 +54,7 @@ class SlowlogDownloadRequest:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this SlowlogDownloadRequest.
+        r"""Sets the file_name of this SlowlogDownloadRequest.
 
         - 需要下载的文件的文件名, 当引擎为SQL Server时为必选。
 

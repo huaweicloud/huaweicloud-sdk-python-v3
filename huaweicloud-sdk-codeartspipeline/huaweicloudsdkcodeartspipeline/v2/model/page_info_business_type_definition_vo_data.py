@@ -41,7 +41,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     }
 
     def __init__(self, business_type=None, display_name=None, unique_id=None, editable=None, removable=None, cloneable=None, disabled=None, conditions=None, plugins_list=None):
-        """PageInfoBusinessTypeDefinitionVOData
+        r"""PageInfoBusinessTypeDefinitionVOData
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def business_type(self):
-        """Gets the business_type of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the business_type of this PageInfoBusinessTypeDefinitionVOData.
 
         业务类型
 
@@ -110,7 +110,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the business_type of this PageInfoBusinessTypeDefinitionVOData.
 
         业务类型
 
@@ -121,7 +121,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the display_name of this PageInfoBusinessTypeDefinitionVOData.
 
         展示名
 
@@ -132,7 +132,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the display_name of this PageInfoBusinessTypeDefinitionVOData.
 
         展示名
 
@@ -143,7 +143,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the unique_id of this PageInfoBusinessTypeDefinitionVOData.
 
         唯一ID
 
@@ -154,7 +154,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the unique_id of this PageInfoBusinessTypeDefinitionVOData.
 
         唯一ID
 
@@ -165,7 +165,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def editable(self):
-        """Gets the editable of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the editable of this PageInfoBusinessTypeDefinitionVOData.
 
         可编辑
 
@@ -176,7 +176,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @editable.setter
     def editable(self, editable):
-        """Sets the editable of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the editable of this PageInfoBusinessTypeDefinitionVOData.
 
         可编辑
 
@@ -187,7 +187,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def removable(self):
-        """Gets the removable of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the removable of this PageInfoBusinessTypeDefinitionVOData.
 
         可移除
 
@@ -198,7 +198,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @removable.setter
     def removable(self, removable):
-        """Sets the removable of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the removable of this PageInfoBusinessTypeDefinitionVOData.
 
         可移除
 
@@ -209,7 +209,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def cloneable(self):
-        """Gets the cloneable of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the cloneable of this PageInfoBusinessTypeDefinitionVOData.
 
         可复制
 
@@ -220,7 +220,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @cloneable.setter
     def cloneable(self, cloneable):
-        """Sets the cloneable of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the cloneable of this PageInfoBusinessTypeDefinitionVOData.
 
         可复制
 
@@ -231,7 +231,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def disabled(self):
-        """Gets the disabled of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the disabled of this PageInfoBusinessTypeDefinitionVOData.
 
         禁用
 
@@ -242,7 +242,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the disabled of this PageInfoBusinessTypeDefinitionVOData.
 
         禁用
 
@@ -253,7 +253,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def conditions(self):
-        """Gets the conditions of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the conditions of this PageInfoBusinessTypeDefinitionVOData.
 
         条件
 
@@ -264,7 +264,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the conditions of this PageInfoBusinessTypeDefinitionVOData.
 
         条件
 
@@ -275,7 +275,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @property
     def plugins_list(self):
-        """Gets the plugins_list of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Gets the plugins_list of this PageInfoBusinessTypeDefinitionVOData.
 
         插件列表
 
@@ -286,7 +286,7 @@ class PageInfoBusinessTypeDefinitionVOData:
 
     @plugins_list.setter
     def plugins_list(self, plugins_list):
-        """Sets the plugins_list of this PageInfoBusinessTypeDefinitionVOData.
+        r"""Sets the plugins_list of this PageInfoBusinessTypeDefinitionVOData.
 
         插件列表
 

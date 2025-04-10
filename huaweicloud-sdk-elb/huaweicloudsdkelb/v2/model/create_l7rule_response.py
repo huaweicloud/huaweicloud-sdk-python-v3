@@ -26,7 +26,7 @@ class CreateL7ruleResponse(SdkResponse):
     }
 
     def __init__(self, rule=None):
-        """CreateL7ruleResponse
+        r"""CreateL7ruleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateL7ruleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this CreateL7ruleResponse.
+        r"""Gets the rule of this CreateL7ruleResponse.
 
         :return: The rule of this CreateL7ruleResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.L7ruleResp`
@@ -53,7 +53,7 @@ class CreateL7ruleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateL7ruleResponse.
+        r"""Sets the rule of this CreateL7ruleResponse.
 
         :param rule: The rule of this CreateL7ruleResponse.
         :type rule: :class:`huaweicloudsdkelb.v2.L7ruleResp`

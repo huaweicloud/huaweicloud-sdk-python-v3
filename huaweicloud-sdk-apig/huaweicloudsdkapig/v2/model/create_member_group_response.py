@@ -30,7 +30,7 @@ class CreateMemberGroupResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, member_groups=None):
-        """CreateMemberGroupResponse
+        r"""CreateMemberGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateMemberGroupResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this CreateMemberGroupResponse.
+        r"""Gets the size of this CreateMemberGroupResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class CreateMemberGroupResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateMemberGroupResponse.
+        r"""Sets the size of this CreateMemberGroupResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class CreateMemberGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CreateMemberGroupResponse.
+        r"""Gets the total of this CreateMemberGroupResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class CreateMemberGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CreateMemberGroupResponse.
+        r"""Sets the total of this CreateMemberGroupResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class CreateMemberGroupResponse(SdkResponse):
 
     @property
     def member_groups(self):
-        """Gets the member_groups of this CreateMemberGroupResponse.
+        r"""Gets the member_groups of this CreateMemberGroupResponse.
 
         VPC通道后端服务器组列表
 
@@ -111,7 +111,7 @@ class CreateMemberGroupResponse(SdkResponse):
 
     @member_groups.setter
     def member_groups(self, member_groups):
-        """Sets the member_groups of this CreateMemberGroupResponse.
+        r"""Sets the member_groups of this CreateMemberGroupResponse.
 
         VPC通道后端服务器组列表
 

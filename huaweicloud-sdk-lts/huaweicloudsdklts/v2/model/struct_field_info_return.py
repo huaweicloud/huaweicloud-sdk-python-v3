@@ -33,7 +33,7 @@ class StructFieldInfoReturn:
     }
 
     def __init__(self, field_name=None, type=None, content=None, is_analysis=None, index=None):
-        """StructFieldInfoReturn
+        r"""StructFieldInfoReturn
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class StructFieldInfoReturn:
 
     @property
     def field_name(self):
-        """Gets the field_name of this StructFieldInfoReturn.
+        r"""Gets the field_name of this StructFieldInfoReturn.
 
         字段名称
 
@@ -82,7 +82,7 @@ class StructFieldInfoReturn:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this StructFieldInfoReturn.
+        r"""Sets the field_name of this StructFieldInfoReturn.
 
         字段名称
 
@@ -93,7 +93,7 @@ class StructFieldInfoReturn:
 
     @property
     def type(self):
-        """Gets the type of this StructFieldInfoReturn.
+        r"""Gets the type of this StructFieldInfoReturn.
 
         字段数据类型
 
@@ -104,7 +104,7 @@ class StructFieldInfoReturn:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StructFieldInfoReturn.
+        r"""Sets the type of this StructFieldInfoReturn.
 
         字段数据类型
 
@@ -115,7 +115,7 @@ class StructFieldInfoReturn:
 
     @property
     def content(self):
-        """Gets the content of this StructFieldInfoReturn.
+        r"""Gets the content of this StructFieldInfoReturn.
 
         字段内容
 
@@ -126,7 +126,7 @@ class StructFieldInfoReturn:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this StructFieldInfoReturn.
+        r"""Sets the content of this StructFieldInfoReturn.
 
         字段内容
 
@@ -137,7 +137,7 @@ class StructFieldInfoReturn:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this StructFieldInfoReturn.
+        r"""Gets the is_analysis of this StructFieldInfoReturn.
 
         结构化方式
 
@@ -148,7 +148,7 @@ class StructFieldInfoReturn:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this StructFieldInfoReturn.
+        r"""Sets the is_analysis of this StructFieldInfoReturn.
 
         结构化方式
 
@@ -159,7 +159,7 @@ class StructFieldInfoReturn:
 
     @property
     def index(self):
-        """Gets the index of this StructFieldInfoReturn.
+        r"""Gets the index of this StructFieldInfoReturn.
 
         序号
 
@@ -170,7 +170,7 @@ class StructFieldInfoReturn:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this StructFieldInfoReturn.
+        r"""Sets the index of this StructFieldInfoReturn.
 
         序号
 

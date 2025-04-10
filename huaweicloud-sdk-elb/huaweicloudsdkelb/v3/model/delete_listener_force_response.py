@@ -24,7 +24,7 @@ class DeleteListenerForceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteListenerForceResponse
+        r"""DeleteListenerForceResponse
 
         The model defined in huaweicloud sdk
 

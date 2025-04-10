@@ -25,7 +25,7 @@ class ListPartnerBalancesRequest:
     }
 
     def __init__(self, indirect_partner_id=None):
-        """ListPartnerBalancesRequest
+        r"""ListPartnerBalancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPartnerBalancesRequest:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ListPartnerBalancesRequest.
+        r"""Gets the indirect_partner_id of this ListPartnerBalancesRequest.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商（二级经销商）余额时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己的账户余额。
 
@@ -54,7 +54,7 @@ class ListPartnerBalancesRequest:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ListPartnerBalancesRequest.
+        r"""Sets the indirect_partner_id of this ListPartnerBalancesRequest.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商（二级经销商）余额时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己的账户余额。
 

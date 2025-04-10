@@ -28,7 +28,7 @@ class ShowMetricValueResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, metrics=None):
-        """ShowMetricValueResponse
+        r"""ShowMetricValueResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMetricValueResponse(SdkResponse):
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this ShowMetricValueResponse.
+        r"""Gets the timestamps of this ShowMetricValueResponse.
 
         时间序列,使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -62,7 +62,7 @@ class ShowMetricValueResponse(SdkResponse):
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this ShowMetricValueResponse.
+        r"""Sets the timestamps of this ShowMetricValueResponse.
 
         时间序列,使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -73,7 +73,7 @@ class ShowMetricValueResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowMetricValueResponse.
+        r"""Gets the metrics of this ShowMetricValueResponse.
 
         指标计算结果列表
 
@@ -84,7 +84,7 @@ class ShowMetricValueResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowMetricValueResponse.
+        r"""Sets the metrics of this ShowMetricValueResponse.
 
         指标计算结果列表
 

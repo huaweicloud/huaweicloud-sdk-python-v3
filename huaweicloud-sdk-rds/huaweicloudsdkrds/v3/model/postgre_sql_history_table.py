@@ -25,7 +25,7 @@ class PostgreSQLHistoryTable:
     }
 
     def __init__(self, name=None):
-        """PostgreSQLHistoryTable
+        r"""PostgreSQLHistoryTable
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PostgreSQLHistoryTable:
 
     @property
     def name(self):
-        """Gets the name of this PostgreSQLHistoryTable.
+        r"""Gets the name of this PostgreSQLHistoryTable.
 
         表名
 
@@ -54,7 +54,7 @@ class PostgreSQLHistoryTable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgreSQLHistoryTable.
+        r"""Sets the name of this PostgreSQLHistoryTable.
 
         表名
 

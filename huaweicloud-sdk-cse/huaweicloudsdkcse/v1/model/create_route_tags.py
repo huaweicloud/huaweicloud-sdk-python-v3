@@ -25,7 +25,7 @@ class CreateRouteTags:
     }
 
     def __init__(self, tag=None):
-        """CreateRouteTags
+        r"""CreateRouteTags
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRouteTags:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateRouteTags.
+        r"""Gets the tag of this CreateRouteTags.
 
         实例标记。满足标记条件的实例放到这一组。
 
@@ -54,7 +54,7 @@ class CreateRouteTags:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateRouteTags.
+        r"""Sets the tag of this CreateRouteTags.
 
         实例标记。满足标记条件的实例放到这一组。
 

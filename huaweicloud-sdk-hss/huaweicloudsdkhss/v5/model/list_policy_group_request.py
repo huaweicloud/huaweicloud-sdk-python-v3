@@ -22,7 +22,8 @@ class ListPolicyGroupRequest:
         'group_name': 'str',
         'offset': 'int',
         'limit': 'int',
-        'container_mode': 'bool'
+        'container_mode': 'bool',
+        'group_id': 'str'
     }
 
     attribute_map = {
@@ -31,17 +32,18 @@ class ListPolicyGroupRequest:
         'group_name': 'group_name',
         'offset': 'offset',
         'limit': 'limit',
-        'container_mode': 'container_mode'
+        'container_mode': 'container_mode',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, group_name=None, offset=None, limit=None, container_mode=None):
-        """ListPolicyGroupRequest
+    def __init__(self, region=None, enterprise_project_id=None, group_name=None, offset=None, limit=None, container_mode=None, group_id=None):
+        r"""ListPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param group_name: 策略组名
         :type group_name: str
@@ -51,6 +53,8 @@ class ListPolicyGroupRequest:
         :type limit: int
         :param container_mode: 是否查询容器版策略
         :type container_mode: bool
+        :param group_id: 策略组id
+        :type group_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ListPolicyGroupRequest:
         self._offset = None
         self._limit = None
         self._container_mode = None
+        self._group_id = None
         self.discriminator = None
 
         self.region = region
@@ -74,10 +79,12 @@ class ListPolicyGroupRequest:
             self.limit = limit
         if container_mode is not None:
             self.container_mode = container_mode
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def region(self):
-        """Gets the region of this ListPolicyGroupRequest.
+        r"""Gets the region of this ListPolicyGroupRequest.
 
         Region ID
 
@@ -88,7 +95,7 @@ class ListPolicyGroupRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListPolicyGroupRequest.
+        r"""Sets the region of this ListPolicyGroupRequest.
 
         Region ID
 
@@ -99,9 +106,9 @@ class ListPolicyGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPolicyGroupRequest.
+        r"""Gets the enterprise_project_id of this ListPolicyGroupRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListPolicyGroupRequest.
         :rtype: str
@@ -110,9 +117,9 @@ class ListPolicyGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPolicyGroupRequest.
+        r"""Sets the enterprise_project_id of this ListPolicyGroupRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPolicyGroupRequest.
         :type enterprise_project_id: str
@@ -121,7 +128,7 @@ class ListPolicyGroupRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListPolicyGroupRequest.
+        r"""Gets the group_name of this ListPolicyGroupRequest.
 
         策略组名
 
@@ -132,7 +139,7 @@ class ListPolicyGroupRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListPolicyGroupRequest.
+        r"""Sets the group_name of this ListPolicyGroupRequest.
 
         策略组名
 
@@ -143,7 +150,7 @@ class ListPolicyGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPolicyGroupRequest.
+        r"""Gets the offset of this ListPolicyGroupRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -154,7 +161,7 @@ class ListPolicyGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPolicyGroupRequest.
+        r"""Sets the offset of this ListPolicyGroupRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -165,7 +172,7 @@ class ListPolicyGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyGroupRequest.
+        r"""Gets the limit of this ListPolicyGroupRequest.
 
         每页显示个数
 
@@ -176,7 +183,7 @@ class ListPolicyGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyGroupRequest.
+        r"""Sets the limit of this ListPolicyGroupRequest.
 
         每页显示个数
 
@@ -187,7 +194,7 @@ class ListPolicyGroupRequest:
 
     @property
     def container_mode(self):
-        """Gets the container_mode of this ListPolicyGroupRequest.
+        r"""Gets the container_mode of this ListPolicyGroupRequest.
 
         是否查询容器版策略
 
@@ -198,7 +205,7 @@ class ListPolicyGroupRequest:
 
     @container_mode.setter
     def container_mode(self, container_mode):
-        """Sets the container_mode of this ListPolicyGroupRequest.
+        r"""Sets the container_mode of this ListPolicyGroupRequest.
 
         是否查询容器版策略
 
@@ -206,6 +213,28 @@ class ListPolicyGroupRequest:
         :type container_mode: bool
         """
         self._container_mode = container_mode
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this ListPolicyGroupRequest.
+
+        策略组id
+
+        :return: The group_id of this ListPolicyGroupRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this ListPolicyGroupRequest.
+
+        策略组id
+
+        :param group_id: The group_id of this ListPolicyGroupRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

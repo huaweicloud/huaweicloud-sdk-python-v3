@@ -25,7 +25,7 @@ class ShowJobUploadingAddressRspPackageUrl:
     }
 
     def __init__(self, training_data_uploading_url=None):
-        """ShowJobUploadingAddressRspPackageUrl
+        r"""ShowJobUploadingAddressRspPackageUrl
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowJobUploadingAddressRspPackageUrl:
 
     @property
     def training_data_uploading_url(self):
-        """Gets the training_data_uploading_url of this ShowJobUploadingAddressRspPackageUrl.
+        r"""Gets the training_data_uploading_url of this ShowJobUploadingAddressRspPackageUrl.
 
         上传的训练数据地址,用户需要将训练数据打成zip包后上传到该url。 > * 通过该obs地址上传时需要设置content-type为application/zip
 
@@ -54,7 +54,7 @@ class ShowJobUploadingAddressRspPackageUrl:
 
     @training_data_uploading_url.setter
     def training_data_uploading_url(self, training_data_uploading_url):
-        """Sets the training_data_uploading_url of this ShowJobUploadingAddressRspPackageUrl.
+        r"""Sets the training_data_uploading_url of this ShowJobUploadingAddressRspPackageUrl.
 
         上传的训练数据地址,用户需要将训练数据打成zip包后上传到该url。 > * 通过该obs地址上传时需要设置content-type为application/zip
 

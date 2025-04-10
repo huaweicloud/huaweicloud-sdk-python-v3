@@ -77,7 +77,7 @@ class AppExecutionInfo:
     }
 
     def __init__(self, id=None, name=None, duration=None, is_disable=None, project_id=None, project_name=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, deploy_system=None, create_user_id=None, create_tenant_id=None, create_time=None, update_time=None, execution_time=None, end_time=None, execution_state=None, release_id=None, executor_id=None, executor_nick_name=None, arrange_infos=None):
-        """AppExecutionInfo
+        r"""AppExecutionInfo
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class AppExecutionInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppExecutionInfo.
+        r"""Gets the id of this AppExecutionInfo.
 
         应用id
 
@@ -236,7 +236,7 @@ class AppExecutionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppExecutionInfo.
+        r"""Sets the id of this AppExecutionInfo.
 
         应用id
 
@@ -247,7 +247,7 @@ class AppExecutionInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppExecutionInfo.
+        r"""Gets the name of this AppExecutionInfo.
 
         应用名称
 
@@ -258,7 +258,7 @@ class AppExecutionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppExecutionInfo.
+        r"""Sets the name of this AppExecutionInfo.
 
         应用名称
 
@@ -269,7 +269,7 @@ class AppExecutionInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this AppExecutionInfo.
+        r"""Gets the duration of this AppExecutionInfo.
 
         部署时间
 
@@ -280,7 +280,7 @@ class AppExecutionInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this AppExecutionInfo.
+        r"""Sets the duration of this AppExecutionInfo.
 
         部署时间
 
@@ -291,7 +291,7 @@ class AppExecutionInfo:
 
     @property
     def is_disable(self):
-        """Gets the is_disable of this AppExecutionInfo.
+        r"""Gets the is_disable of this AppExecutionInfo.
 
         当前应用是否被禁用
 
@@ -302,7 +302,7 @@ class AppExecutionInfo:
 
     @is_disable.setter
     def is_disable(self, is_disable):
-        """Sets the is_disable of this AppExecutionInfo.
+        r"""Sets the is_disable of this AppExecutionInfo.
 
         当前应用是否被禁用
 
@@ -313,7 +313,7 @@ class AppExecutionInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppExecutionInfo.
+        r"""Gets the project_id of this AppExecutionInfo.
 
         项目id
 
@@ -324,7 +324,7 @@ class AppExecutionInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppExecutionInfo.
+        r"""Sets the project_id of this AppExecutionInfo.
 
         项目id
 
@@ -335,7 +335,7 @@ class AppExecutionInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this AppExecutionInfo.
+        r"""Gets the project_name of this AppExecutionInfo.
 
         项目名称
 
@@ -346,7 +346,7 @@ class AppExecutionInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this AppExecutionInfo.
+        r"""Sets the project_name of this AppExecutionInfo.
 
         项目名称
 
@@ -357,7 +357,7 @@ class AppExecutionInfo:
 
     @property
     def is_care(self):
-        """Gets the is_care of this AppExecutionInfo.
+        r"""Gets the is_care of this AppExecutionInfo.
 
         当前用户是否已收藏
 
@@ -368,7 +368,7 @@ class AppExecutionInfo:
 
     @is_care.setter
     def is_care(self, is_care):
-        """Sets the is_care of this AppExecutionInfo.
+        r"""Sets the is_care of this AppExecutionInfo.
 
         当前用户是否已收藏
 
@@ -379,7 +379,7 @@ class AppExecutionInfo:
 
     @property
     def can_modify(self):
-        """Gets the can_modify of this AppExecutionInfo.
+        r"""Gets the can_modify of this AppExecutionInfo.
 
         是否有编辑权限
 
@@ -390,7 +390,7 @@ class AppExecutionInfo:
 
     @can_modify.setter
     def can_modify(self, can_modify):
-        """Sets the can_modify of this AppExecutionInfo.
+        r"""Sets the can_modify of this AppExecutionInfo.
 
         是否有编辑权限
 
@@ -401,7 +401,7 @@ class AppExecutionInfo:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this AppExecutionInfo.
+        r"""Gets the can_delete of this AppExecutionInfo.
 
         是否有删除的权限
 
@@ -412,7 +412,7 @@ class AppExecutionInfo:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this AppExecutionInfo.
+        r"""Sets the can_delete of this AppExecutionInfo.
 
         是否有删除的权限
 
@@ -423,7 +423,7 @@ class AppExecutionInfo:
 
     @property
     def can_view(self):
-        """Gets the can_view of this AppExecutionInfo.
+        r"""Gets the can_view of this AppExecutionInfo.
 
         是否有查看权限
 
@@ -434,7 +434,7 @@ class AppExecutionInfo:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this AppExecutionInfo.
+        r"""Sets the can_view of this AppExecutionInfo.
 
         是否有查看权限
 
@@ -445,7 +445,7 @@ class AppExecutionInfo:
 
     @property
     def can_execute(self):
-        """Gets the can_execute of this AppExecutionInfo.
+        r"""Gets the can_execute of this AppExecutionInfo.
 
         是否有部署权限
 
@@ -456,7 +456,7 @@ class AppExecutionInfo:
 
     @can_execute.setter
     def can_execute(self, can_execute):
-        """Sets the can_execute of this AppExecutionInfo.
+        r"""Sets the can_execute of this AppExecutionInfo.
 
         是否有部署权限
 
@@ -467,7 +467,7 @@ class AppExecutionInfo:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this AppExecutionInfo.
+        r"""Gets the can_copy of this AppExecutionInfo.
 
         是否有复制权限
 
@@ -478,7 +478,7 @@ class AppExecutionInfo:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this AppExecutionInfo.
+        r"""Sets the can_copy of this AppExecutionInfo.
 
         是否有复制权限
 
@@ -489,7 +489,7 @@ class AppExecutionInfo:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this AppExecutionInfo.
+        r"""Gets the can_manage of this AppExecutionInfo.
 
         是否有编辑应用权限矩阵的权限
 
@@ -500,7 +500,7 @@ class AppExecutionInfo:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this AppExecutionInfo.
+        r"""Sets the can_manage of this AppExecutionInfo.
 
         是否有编辑应用权限矩阵的权限
 
@@ -511,7 +511,7 @@ class AppExecutionInfo:
 
     @property
     def can_create_env(self):
-        """Gets the can_create_env of this AppExecutionInfo.
+        r"""Gets the can_create_env of this AppExecutionInfo.
 
         是否有创建环境的权限
 
@@ -522,7 +522,7 @@ class AppExecutionInfo:
 
     @can_create_env.setter
     def can_create_env(self, can_create_env):
-        """Sets the can_create_env of this AppExecutionInfo.
+        r"""Sets the can_create_env of this AppExecutionInfo.
 
         是否有创建环境的权限
 
@@ -533,7 +533,7 @@ class AppExecutionInfo:
 
     @property
     def can_disable(self):
-        """Gets the can_disable of this AppExecutionInfo.
+        r"""Gets the can_disable of this AppExecutionInfo.
 
         是否有禁用应用的权限
 
@@ -544,7 +544,7 @@ class AppExecutionInfo:
 
     @can_disable.setter
     def can_disable(self, can_disable):
-        """Sets the can_disable of this AppExecutionInfo.
+        r"""Sets the can_disable of this AppExecutionInfo.
 
         是否有禁用应用的权限
 
@@ -555,7 +555,7 @@ class AppExecutionInfo:
 
     @property
     def deploy_system(self):
-        """Gets the deploy_system of this AppExecutionInfo.
+        r"""Gets the deploy_system of this AppExecutionInfo.
 
         部署类型模式，包括deployTemplate、ansible、shell
 
@@ -566,7 +566,7 @@ class AppExecutionInfo:
 
     @deploy_system.setter
     def deploy_system(self, deploy_system):
-        """Sets the deploy_system of this AppExecutionInfo.
+        r"""Sets the deploy_system of this AppExecutionInfo.
 
         部署类型模式，包括deployTemplate、ansible、shell
 
@@ -577,7 +577,7 @@ class AppExecutionInfo:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this AppExecutionInfo.
+        r"""Gets the create_user_id of this AppExecutionInfo.
 
         应用创建者用户id
 
@@ -588,7 +588,7 @@ class AppExecutionInfo:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this AppExecutionInfo.
+        r"""Sets the create_user_id of this AppExecutionInfo.
 
         应用创建者用户id
 
@@ -599,7 +599,7 @@ class AppExecutionInfo:
 
     @property
     def create_tenant_id(self):
-        """Gets the create_tenant_id of this AppExecutionInfo.
+        r"""Gets the create_tenant_id of this AppExecutionInfo.
 
         应用创建者租户id
 
@@ -610,7 +610,7 @@ class AppExecutionInfo:
 
     @create_tenant_id.setter
     def create_tenant_id(self, create_tenant_id):
-        """Sets the create_tenant_id of this AppExecutionInfo.
+        r"""Sets the create_tenant_id of this AppExecutionInfo.
 
         应用创建者租户id
 
@@ -621,7 +621,7 @@ class AppExecutionInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppExecutionInfo.
+        r"""Gets the create_time of this AppExecutionInfo.
 
         创建时间
 
@@ -632,7 +632,7 @@ class AppExecutionInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppExecutionInfo.
+        r"""Sets the create_time of this AppExecutionInfo.
 
         创建时间
 
@@ -643,7 +643,7 @@ class AppExecutionInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppExecutionInfo.
+        r"""Gets the update_time of this AppExecutionInfo.
 
         修改时间
 
@@ -654,7 +654,7 @@ class AppExecutionInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppExecutionInfo.
+        r"""Sets the update_time of this AppExecutionInfo.
 
         修改时间
 
@@ -665,7 +665,7 @@ class AppExecutionInfo:
 
     @property
     def execution_time(self):
-        """Gets the execution_time of this AppExecutionInfo.
+        r"""Gets the execution_time of this AppExecutionInfo.
 
         最后一次部署时间
 
@@ -676,7 +676,7 @@ class AppExecutionInfo:
 
     @execution_time.setter
     def execution_time(self, execution_time):
-        """Sets the execution_time of this AppExecutionInfo.
+        r"""Sets the execution_time of this AppExecutionInfo.
 
         最后一次部署时间
 
@@ -687,7 +687,7 @@ class AppExecutionInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AppExecutionInfo.
+        r"""Gets the end_time of this AppExecutionInfo.
 
         部署结束时间
 
@@ -698,7 +698,7 @@ class AppExecutionInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AppExecutionInfo.
+        r"""Sets the end_time of this AppExecutionInfo.
 
         部署结束时间
 
@@ -709,7 +709,7 @@ class AppExecutionInfo:
 
     @property
     def execution_state(self):
-        """Gets the execution_state of this AppExecutionInfo.
+        r"""Gets the execution_state of this AppExecutionInfo.
 
         部署状态
 
@@ -720,7 +720,7 @@ class AppExecutionInfo:
 
     @execution_state.setter
     def execution_state(self, execution_state):
-        """Sets the execution_state of this AppExecutionInfo.
+        r"""Sets the execution_state of this AppExecutionInfo.
 
         部署状态
 
@@ -731,7 +731,7 @@ class AppExecutionInfo:
 
     @property
     def release_id(self):
-        """Gets the release_id of this AppExecutionInfo.
+        r"""Gets the release_id of this AppExecutionInfo.
 
         部署记录序列号
 
@@ -742,7 +742,7 @@ class AppExecutionInfo:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this AppExecutionInfo.
+        r"""Sets the release_id of this AppExecutionInfo.
 
         部署记录序列号
 
@@ -753,7 +753,7 @@ class AppExecutionInfo:
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this AppExecutionInfo.
+        r"""Gets the executor_id of this AppExecutionInfo.
 
         部署者id
 
@@ -764,7 +764,7 @@ class AppExecutionInfo:
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this AppExecutionInfo.
+        r"""Sets the executor_id of this AppExecutionInfo.
 
         部署者id
 
@@ -775,7 +775,7 @@ class AppExecutionInfo:
 
     @property
     def executor_nick_name(self):
-        """Gets the executor_nick_name of this AppExecutionInfo.
+        r"""Gets the executor_nick_name of this AppExecutionInfo.
 
         部署者名称
 
@@ -786,7 +786,7 @@ class AppExecutionInfo:
 
     @executor_nick_name.setter
     def executor_nick_name(self, executor_nick_name):
-        """Sets the executor_nick_name of this AppExecutionInfo.
+        r"""Sets the executor_nick_name of this AppExecutionInfo.
 
         部署者名称
 
@@ -797,7 +797,7 @@ class AppExecutionInfo:
 
     @property
     def arrange_infos(self):
-        """Gets the arrange_infos of this AppExecutionInfo.
+        r"""Gets the arrange_infos of this AppExecutionInfo.
 
         部署任务信息
 
@@ -808,7 +808,7 @@ class AppExecutionInfo:
 
     @arrange_infos.setter
     def arrange_infos(self, arrange_infos):
-        """Sets the arrange_infos of this AppExecutionInfo.
+        r"""Sets the arrange_infos of this AppExecutionInfo.
 
         部署任务信息
 

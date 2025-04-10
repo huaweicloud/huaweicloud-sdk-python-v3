@@ -27,7 +27,7 @@ class UpdatePortRequest:
     }
 
     def __init__(self, port_id=None, body=None):
-        """UpdatePortRequest
+        r"""UpdatePortRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePortRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdatePortRequest.
+        r"""Gets the port_id of this UpdatePortRequest.
 
         端口ID
 
@@ -60,7 +60,7 @@ class UpdatePortRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdatePortRequest.
+        r"""Sets the port_id of this UpdatePortRequest.
 
         端口ID
 
@@ -71,7 +71,7 @@ class UpdatePortRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePortRequest.
+        r"""Gets the body of this UpdatePortRequest.
 
         :return: The body of this UpdatePortRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdatePortRequestBody`
@@ -80,7 +80,7 @@ class UpdatePortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePortRequest.
+        r"""Sets the body of this UpdatePortRequest.
 
         :param body: The body of this UpdatePortRequest.
         :type body: :class:`huaweicloudsdkiec.v1.UpdatePortRequestBody`

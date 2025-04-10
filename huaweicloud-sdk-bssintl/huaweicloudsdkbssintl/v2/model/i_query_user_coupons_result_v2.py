@@ -79,7 +79,7 @@ class IQueryUserCouponsResultV2:
     }
 
     def __init__(self, coupon_id=None, coupon_code=None, status=None, customer_id=None, coupon_type=None, measure_id=None, face_value=None, valid_time=None, expire_time=None, order_id=None, promotion_plan_id=None, plan_name=None, plan_desc=None, media_type=None, fetch_method=None, use_limits=None, active_time=None, reserve_time=None, promotion_id=None, create_time=None, coupon_version=None, balance=None, lock_order_id=None, coupon_usage=None, is_frozen=None, currency=None, extend_param1=None, source_id=None):
-        """IQueryUserCouponsResultV2
+        r"""IQueryUserCouponsResultV2
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this IQueryUserCouponsResultV2.
+        r"""Gets the coupon_id of this IQueryUserCouponsResultV2.
 
         优惠券实例ID。
 
@@ -243,7 +243,7 @@ class IQueryUserCouponsResultV2:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this IQueryUserCouponsResultV2.
+        r"""Sets the coupon_id of this IQueryUserCouponsResultV2.
 
         优惠券实例ID。
 
@@ -254,7 +254,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def coupon_code(self):
-        """Gets the coupon_code of this IQueryUserCouponsResultV2.
+        r"""Gets the coupon_code of this IQueryUserCouponsResultV2.
 
         优惠券编码。
 
@@ -265,7 +265,7 @@ class IQueryUserCouponsResultV2:
 
     @coupon_code.setter
     def coupon_code(self, coupon_code):
-        """Sets the coupon_code of this IQueryUserCouponsResultV2.
+        r"""Sets the coupon_code of this IQueryUserCouponsResultV2.
 
         优惠券编码。
 
@@ -276,7 +276,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def status(self):
-        """Gets the status of this IQueryUserCouponsResultV2.
+        r"""Gets the status of this IQueryUserCouponsResultV2.
 
         优惠券状态： 1：未激活2：待使用3：已使用4：已过期5：已回收
 
@@ -287,7 +287,7 @@ class IQueryUserCouponsResultV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IQueryUserCouponsResultV2.
+        r"""Sets the status of this IQueryUserCouponsResultV2.
 
         优惠券状态： 1：未激活2：待使用3：已使用4：已过期5：已回收
 
@@ -298,7 +298,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this IQueryUserCouponsResultV2.
+        r"""Gets the customer_id of this IQueryUserCouponsResultV2.
 
         客户账号ID。
 
@@ -309,7 +309,7 @@ class IQueryUserCouponsResultV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this IQueryUserCouponsResultV2.
+        r"""Sets the customer_id of this IQueryUserCouponsResultV2.
 
         客户账号ID。
 
@@ -320,7 +320,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def coupon_type(self):
-        """Gets the coupon_type of this IQueryUserCouponsResultV2.
+        r"""Gets the coupon_type of this IQueryUserCouponsResultV2.
 
         优惠券类型： 1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
 
@@ -331,7 +331,7 @@ class IQueryUserCouponsResultV2:
 
     @coupon_type.setter
     def coupon_type(self, coupon_type):
-        """Sets the coupon_type of this IQueryUserCouponsResultV2.
+        r"""Sets the coupon_type of this IQueryUserCouponsResultV2.
 
         优惠券类型： 1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
 
@@ -342,7 +342,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this IQueryUserCouponsResultV2.
+        r"""Gets the measure_id of this IQueryUserCouponsResultV2.
 
         度量单位。 1：元
 
@@ -353,7 +353,7 @@ class IQueryUserCouponsResultV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this IQueryUserCouponsResultV2.
+        r"""Sets the measure_id of this IQueryUserCouponsResultV2.
 
         度量单位。 1：元
 
@@ -364,7 +364,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def face_value(self):
-        """Gets the face_value of this IQueryUserCouponsResultV2.
+        r"""Gets the face_value of this IQueryUserCouponsResultV2.
 
         优惠券金额。
 
@@ -375,7 +375,7 @@ class IQueryUserCouponsResultV2:
 
     @face_value.setter
     def face_value(self, face_value):
-        """Sets the face_value of this IQueryUserCouponsResultV2.
+        r"""Sets the face_value of this IQueryUserCouponsResultV2.
 
         优惠券金额。
 
@@ -386,7 +386,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def valid_time(self):
-        """Gets the valid_time of this IQueryUserCouponsResultV2.
+        r"""Gets the valid_time of this IQueryUserCouponsResultV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -397,7 +397,7 @@ class IQueryUserCouponsResultV2:
 
     @valid_time.setter
     def valid_time(self, valid_time):
-        """Sets the valid_time of this IQueryUserCouponsResultV2.
+        r"""Sets the valid_time of this IQueryUserCouponsResultV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -408,7 +408,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this IQueryUserCouponsResultV2.
+        r"""Gets the expire_time of this IQueryUserCouponsResultV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -419,7 +419,7 @@ class IQueryUserCouponsResultV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this IQueryUserCouponsResultV2.
+        r"""Sets the expire_time of this IQueryUserCouponsResultV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -430,7 +430,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def order_id(self):
-        """Gets the order_id of this IQueryUserCouponsResultV2.
+        r"""Gets the order_id of this IQueryUserCouponsResultV2.
 
         订单ID。
 
@@ -441,7 +441,7 @@ class IQueryUserCouponsResultV2:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this IQueryUserCouponsResultV2.
+        r"""Sets the order_id of this IQueryUserCouponsResultV2.
 
         订单ID。
 
@@ -452,7 +452,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this IQueryUserCouponsResultV2.
+        r"""Gets the promotion_plan_id of this IQueryUserCouponsResultV2.
 
         促销计划ID。
 
@@ -463,7 +463,7 @@ class IQueryUserCouponsResultV2:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this IQueryUserCouponsResultV2.
+        r"""Sets the promotion_plan_id of this IQueryUserCouponsResultV2.
 
         促销计划ID。
 
@@ -474,7 +474,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this IQueryUserCouponsResultV2.
+        r"""Gets the plan_name of this IQueryUserCouponsResultV2.
 
         促销计划名称。
 
@@ -485,7 +485,7 @@ class IQueryUserCouponsResultV2:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this IQueryUserCouponsResultV2.
+        r"""Sets the plan_name of this IQueryUserCouponsResultV2.
 
         促销计划名称。
 
@@ -496,7 +496,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def plan_desc(self):
-        """Gets the plan_desc of this IQueryUserCouponsResultV2.
+        r"""Gets the plan_desc of this IQueryUserCouponsResultV2.
 
         促销计划描述。
 
@@ -507,7 +507,7 @@ class IQueryUserCouponsResultV2:
 
     @plan_desc.setter
     def plan_desc(self, plan_desc):
-        """Sets the plan_desc of this IQueryUserCouponsResultV2.
+        r"""Sets the plan_desc of this IQueryUserCouponsResultV2.
 
         促销计划描述。
 
@@ -518,7 +518,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def media_type(self):
-        """Gets the media_type of this IQueryUserCouponsResultV2.
+        r"""Gets the media_type of this IQueryUserCouponsResultV2.
 
         介质类型。 1：电子券2：纸质券
 
@@ -529,7 +529,7 @@ class IQueryUserCouponsResultV2:
 
     @media_type.setter
     def media_type(self, media_type):
-        """Sets the media_type of this IQueryUserCouponsResultV2.
+        r"""Sets the media_type of this IQueryUserCouponsResultV2.
 
         介质类型。 1：电子券2：纸质券
 
@@ -540,7 +540,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def fetch_method(self):
-        """Gets the fetch_method of this IQueryUserCouponsResultV2.
+        r"""Gets the fetch_method of this IQueryUserCouponsResultV2.
 
         获取方式： 1：线上领取2：线上兑换3：线上发放4：线下获取5：事件赠送
 
@@ -551,7 +551,7 @@ class IQueryUserCouponsResultV2:
 
     @fetch_method.setter
     def fetch_method(self, fetch_method):
-        """Sets the fetch_method of this IQueryUserCouponsResultV2.
+        r"""Sets the fetch_method of this IQueryUserCouponsResultV2.
 
         获取方式： 1：线上领取2：线上兑换3：线上发放4：线下获取5：事件赠送
 
@@ -562,7 +562,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def use_limits(self):
-        """Gets the use_limits of this IQueryUserCouponsResultV2.
+        r"""Gets the use_limits of this IQueryUserCouponsResultV2.
 
         优惠券使用限制。 具体请参见表3。
 
@@ -573,7 +573,7 @@ class IQueryUserCouponsResultV2:
 
     @use_limits.setter
     def use_limits(self, use_limits):
-        """Sets the use_limits of this IQueryUserCouponsResultV2.
+        r"""Sets the use_limits of this IQueryUserCouponsResultV2.
 
         优惠券使用限制。 具体请参见表3。
 
@@ -584,7 +584,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def active_time(self):
-        """Gets the active_time of this IQueryUserCouponsResultV2.
+        r"""Gets the active_time of this IQueryUserCouponsResultV2.
 
         激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -595,7 +595,7 @@ class IQueryUserCouponsResultV2:
 
     @active_time.setter
     def active_time(self, active_time):
-        """Sets the active_time of this IQueryUserCouponsResultV2.
+        r"""Sets the active_time of this IQueryUserCouponsResultV2.
 
         激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -606,7 +606,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def reserve_time(self):
-        """Gets the reserve_time of this IQueryUserCouponsResultV2.
+        r"""Gets the reserve_time of this IQueryUserCouponsResultV2.
 
         使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -617,7 +617,7 @@ class IQueryUserCouponsResultV2:
 
     @reserve_time.setter
     def reserve_time(self, reserve_time):
-        """Sets the reserve_time of this IQueryUserCouponsResultV2.
+        r"""Sets the reserve_time of this IQueryUserCouponsResultV2.
 
         使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -628,7 +628,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def promotion_id(self):
-        """Gets the promotion_id of this IQueryUserCouponsResultV2.
+        r"""Gets the promotion_id of this IQueryUserCouponsResultV2.
 
         促销ID。
 
@@ -639,7 +639,7 @@ class IQueryUserCouponsResultV2:
 
     @promotion_id.setter
     def promotion_id(self, promotion_id):
-        """Sets the promotion_id of this IQueryUserCouponsResultV2.
+        r"""Sets the promotion_id of this IQueryUserCouponsResultV2.
 
         促销ID。
 
@@ -650,7 +650,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IQueryUserCouponsResultV2.
+        r"""Gets the create_time of this IQueryUserCouponsResultV2.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -661,7 +661,7 @@ class IQueryUserCouponsResultV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IQueryUserCouponsResultV2.
+        r"""Sets the create_time of this IQueryUserCouponsResultV2.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -672,7 +672,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def coupon_version(self):
-        """Gets the coupon_version of this IQueryUserCouponsResultV2.
+        r"""Gets the coupon_version of this IQueryUserCouponsResultV2.
 
         优惠券版本： 1：老版本，老版本优惠券只能使用一次2：新版本，新版本优惠券可以反复使用
 
@@ -683,7 +683,7 @@ class IQueryUserCouponsResultV2:
 
     @coupon_version.setter
     def coupon_version(self, coupon_version):
-        """Sets the coupon_version of this IQueryUserCouponsResultV2.
+        r"""Sets the coupon_version of this IQueryUserCouponsResultV2.
 
         优惠券版本： 1：老版本，老版本优惠券只能使用一次2：新版本，新版本优惠券可以反复使用
 
@@ -694,7 +694,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def balance(self):
-        """Gets the balance of this IQueryUserCouponsResultV2.
+        r"""Gets the balance of this IQueryUserCouponsResultV2.
 
         优惠券余额。单位：元。 如果为老版本优惠券，该值为空。
 
@@ -705,7 +705,7 @@ class IQueryUserCouponsResultV2:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this IQueryUserCouponsResultV2.
+        r"""Sets the balance of this IQueryUserCouponsResultV2.
 
         优惠券余额。单位：元。 如果为老版本优惠券，该值为空。
 
@@ -716,7 +716,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def lock_order_id(self):
-        """Gets the lock_order_id of this IQueryUserCouponsResultV2.
+        r"""Gets the lock_order_id of this IQueryUserCouponsResultV2.
 
         锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
 
@@ -727,7 +727,7 @@ class IQueryUserCouponsResultV2:
 
     @lock_order_id.setter
     def lock_order_id(self, lock_order_id):
-        """Sets the lock_order_id of this IQueryUserCouponsResultV2.
+        r"""Sets the lock_order_id of this IQueryUserCouponsResultV2.
 
         锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
 
@@ -738,7 +738,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def coupon_usage(self):
-        """Gets the coupon_usage of this IQueryUserCouponsResultV2.
+        r"""Gets the coupon_usage of this IQueryUserCouponsResultV2.
 
         优惠券用途。
 
@@ -749,7 +749,7 @@ class IQueryUserCouponsResultV2:
 
     @coupon_usage.setter
     def coupon_usage(self, coupon_usage):
-        """Sets the coupon_usage of this IQueryUserCouponsResultV2.
+        r"""Sets the coupon_usage of this IQueryUserCouponsResultV2.
 
         优惠券用途。
 
@@ -760,7 +760,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this IQueryUserCouponsResultV2.
+        r"""Gets the is_frozen of this IQueryUserCouponsResultV2.
 
         优惠券是否冻结： 0：否1：是
 
@@ -771,7 +771,7 @@ class IQueryUserCouponsResultV2:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this IQueryUserCouponsResultV2.
+        r"""Sets the is_frozen of this IQueryUserCouponsResultV2.
 
         优惠券是否冻结： 0：否1：是
 
@@ -782,7 +782,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def currency(self):
-        """Gets the currency of this IQueryUserCouponsResultV2.
+        r"""Gets the currency of this IQueryUserCouponsResultV2.
 
         币种。 USD：美元
 
@@ -793,7 +793,7 @@ class IQueryUserCouponsResultV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this IQueryUserCouponsResultV2.
+        r"""Sets the currency of this IQueryUserCouponsResultV2.
 
         币种。 USD：美元
 
@@ -804,7 +804,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def extend_param1(self):
-        """Gets the extend_param1 of this IQueryUserCouponsResultV2.
+        r"""Gets the extend_param1 of this IQueryUserCouponsResultV2.
 
         扩展字段。
 
@@ -815,7 +815,7 @@ class IQueryUserCouponsResultV2:
 
     @extend_param1.setter
     def extend_param1(self, extend_param1):
-        """Sets the extend_param1 of this IQueryUserCouponsResultV2.
+        r"""Sets the extend_param1 of this IQueryUserCouponsResultV2.
 
         扩展字段。
 
@@ -826,7 +826,7 @@ class IQueryUserCouponsResultV2:
 
     @property
     def source_id(self):
-        """Gets the source_id of this IQueryUserCouponsResultV2.
+        r"""Gets the source_id of this IQueryUserCouponsResultV2.
 
         发券来源。 如果是合作伙伴发送的券，此处为伙伴ID。如果是活动发券，此处为活动ID：云豆兑换优惠券：云豆计划ID累计送优惠券：累计送计划ID抽奖送优惠券：抽奖计划ID事件送优惠券：事件计划ID定制优惠券：创建人ID
 
@@ -837,7 +837,7 @@ class IQueryUserCouponsResultV2:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this IQueryUserCouponsResultV2.
+        r"""Sets the source_id of this IQueryUserCouponsResultV2.
 
         发券来源。 如果是合作伙伴发送的券，此处为伙伴ID。如果是活动发券，此处为活动ID：云豆兑换优惠券：云豆计划ID累计送优惠券：累计送计划ID抽奖送优惠券：抽奖计划ID事件送优惠券：事件计划ID定制优惠券：创建人ID
 

@@ -28,7 +28,7 @@ class UpdateStaticRouteResponse(SdkResponse):
     }
 
     def __init__(self, route=None, request_id=None):
-        """UpdateStaticRouteResponse
+        r"""UpdateStaticRouteResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateStaticRouteResponse(SdkResponse):
 
     @property
     def route(self):
-        """Gets the route of this UpdateStaticRouteResponse.
+        r"""Gets the route of this UpdateStaticRouteResponse.
 
         :return: The route of this UpdateStaticRouteResponse.
         :rtype: :class:`huaweicloudsdker.v3.Route`
@@ -60,7 +60,7 @@ class UpdateStaticRouteResponse(SdkResponse):
 
     @route.setter
     def route(self, route):
-        """Sets the route of this UpdateStaticRouteResponse.
+        r"""Sets the route of this UpdateStaticRouteResponse.
 
         :param route: The route of this UpdateStaticRouteResponse.
         :type route: :class:`huaweicloudsdker.v3.Route`
@@ -69,7 +69,7 @@ class UpdateStaticRouteResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateStaticRouteResponse.
+        r"""Gets the request_id of this UpdateStaticRouteResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class UpdateStaticRouteResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateStaticRouteResponse.
+        r"""Sets the request_id of this UpdateStaticRouteResponse.
 
         请求ID
 

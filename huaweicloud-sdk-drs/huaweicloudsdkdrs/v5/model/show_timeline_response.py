@@ -28,7 +28,7 @@ class ShowTimelineResponse(SdkResponse):
     }
 
     def __init__(self, count=None, timelines=None):
-        """ShowTimelineResponse
+        r"""ShowTimelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTimelineResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowTimelineResponse.
+        r"""Gets the count of this ShowTimelineResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ShowTimelineResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowTimelineResponse.
+        r"""Sets the count of this ShowTimelineResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ShowTimelineResponse(SdkResponse):
 
     @property
     def timelines(self):
-        """Gets the timelines of this ShowTimelineResponse.
+        r"""Gets the timelines of this ShowTimelineResponse.
 
         时间轴列表。
 
@@ -84,7 +84,7 @@ class ShowTimelineResponse(SdkResponse):
 
     @timelines.setter
     def timelines(self, timelines):
-        """Sets the timelines of this ShowTimelineResponse.
+        r"""Sets the timelines of this ShowTimelineResponse.
 
         时间轴列表。
 

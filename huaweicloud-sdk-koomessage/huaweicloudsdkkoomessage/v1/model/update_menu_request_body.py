@@ -27,7 +27,7 @@ class UpdateMenuRequestBody:
     }
 
     def __init__(self, menu=None, change_reason=None):
-        """UpdateMenuRequestBody
+        r"""UpdateMenuRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateMenuRequestBody:
 
     @property
     def menu(self):
-        """Gets the menu of this UpdateMenuRequestBody.
+        r"""Gets the menu of this UpdateMenuRequestBody.
 
         :return: The menu of this UpdateMenuRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Menus`
@@ -57,7 +57,7 @@ class UpdateMenuRequestBody:
 
     @menu.setter
     def menu(self, menu):
-        """Sets the menu of this UpdateMenuRequestBody.
+        r"""Sets the menu of this UpdateMenuRequestBody.
 
         :param menu: The menu of this UpdateMenuRequestBody.
         :type menu: :class:`huaweicloudsdkkoomessage.v1.Menus`
@@ -66,7 +66,7 @@ class UpdateMenuRequestBody:
 
     @property
     def change_reason(self):
-        """Gets the change_reason of this UpdateMenuRequestBody.
+        r"""Gets the change_reason of this UpdateMenuRequestBody.
 
         修改原因。
 
@@ -77,7 +77,7 @@ class UpdateMenuRequestBody:
 
     @change_reason.setter
     def change_reason(self, change_reason):
-        """Sets the change_reason of this UpdateMenuRequestBody.
+        r"""Sets the change_reason of this UpdateMenuRequestBody.
 
         修改原因。
 

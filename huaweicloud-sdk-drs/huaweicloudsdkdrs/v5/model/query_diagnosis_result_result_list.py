@@ -33,7 +33,7 @@ class QueryDiagnosisResultResultList:
     }
 
     def __init__(self, key=None, value=None, is_multi_language=None, module_name=None, level=None):
-        """QueryDiagnosisResultResultList
+        r"""QueryDiagnosisResultResultList
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryDiagnosisResultResultList:
 
     @property
     def key(self):
-        """Gets the key of this QueryDiagnosisResultResultList.
+        r"""Gets the key of this QueryDiagnosisResultResultList.
 
         内容key。
 
@@ -82,7 +82,7 @@ class QueryDiagnosisResultResultList:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this QueryDiagnosisResultResultList.
+        r"""Sets the key of this QueryDiagnosisResultResultList.
 
         内容key。
 
@@ -93,7 +93,7 @@ class QueryDiagnosisResultResultList:
 
     @property
     def value(self):
-        """Gets the value of this QueryDiagnosisResultResultList.
+        r"""Gets the value of this QueryDiagnosisResultResultList.
 
         结果值。
 
@@ -104,7 +104,7 @@ class QueryDiagnosisResultResultList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QueryDiagnosisResultResultList.
+        r"""Sets the value of this QueryDiagnosisResultResultList.
 
         结果值。
 
@@ -115,7 +115,7 @@ class QueryDiagnosisResultResultList:
 
     @property
     def is_multi_language(self):
-        """Gets the is_multi_language of this QueryDiagnosisResultResultList.
+        r"""Gets the is_multi_language of this QueryDiagnosisResultResultList.
 
         结果值是否需要国际化。
 
@@ -126,7 +126,7 @@ class QueryDiagnosisResultResultList:
 
     @is_multi_language.setter
     def is_multi_language(self, is_multi_language):
-        """Sets the is_multi_language of this QueryDiagnosisResultResultList.
+        r"""Sets the is_multi_language of this QueryDiagnosisResultResultList.
 
         结果值是否需要国际化。
 
@@ -137,7 +137,7 @@ class QueryDiagnosisResultResultList:
 
     @property
     def module_name(self):
-        """Gets the module_name of this QueryDiagnosisResultResultList.
+        r"""Gets the module_name of this QueryDiagnosisResultResultList.
 
         模块名称。
 
@@ -148,7 +148,7 @@ class QueryDiagnosisResultResultList:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this QueryDiagnosisResultResultList.
+        r"""Sets the module_name of this QueryDiagnosisResultResultList.
 
         模块名称。
 
@@ -159,7 +159,7 @@ class QueryDiagnosisResultResultList:
 
     @property
     def level(self):
-        """Gets the level of this QueryDiagnosisResultResultList.
+        r"""Gets the level of this QueryDiagnosisResultResultList.
 
         等级。
 
@@ -170,7 +170,7 @@ class QueryDiagnosisResultResultList:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this QueryDiagnosisResultResultList.
+        r"""Sets the level of this QueryDiagnosisResultResultList.
 
         等级。
 

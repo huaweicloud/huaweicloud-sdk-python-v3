@@ -27,7 +27,7 @@ class UpdateProjectRequestV4:
     }
 
     def __init__(self, description=None, project_name=None):
-        """UpdateProjectRequestV4
+        r"""UpdateProjectRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateProjectRequestV4:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProjectRequestV4.
+        r"""Gets the description of this UpdateProjectRequestV4.
 
         项目描述
 
@@ -60,7 +60,7 @@ class UpdateProjectRequestV4:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProjectRequestV4.
+        r"""Sets the description of this UpdateProjectRequestV4.
 
         项目描述
 
@@ -71,7 +71,7 @@ class UpdateProjectRequestV4:
 
     @property
     def project_name(self):
-        """Gets the project_name of this UpdateProjectRequestV4.
+        r"""Gets the project_name of this UpdateProjectRequestV4.
 
         项目名
 
@@ -82,7 +82,7 @@ class UpdateProjectRequestV4:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this UpdateProjectRequestV4.
+        r"""Sets the project_name of this UpdateProjectRequestV4.
 
         项目名
 

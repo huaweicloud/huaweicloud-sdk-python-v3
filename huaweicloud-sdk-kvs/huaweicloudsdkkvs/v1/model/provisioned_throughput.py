@@ -27,7 +27,7 @@ class ProvisionedThroughput:
     }
 
     def __init__(self, rcu=None, wcu=None):
-        """ProvisionedThroughput
+        r"""ProvisionedThroughput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProvisionedThroughput:
 
     @property
     def rcu(self):
-        """Gets the rcu of this ProvisionedThroughput.
+        r"""Gets the rcu of this ProvisionedThroughput.
 
         预置表级读请求单元数
 
@@ -59,7 +59,7 @@ class ProvisionedThroughput:
 
     @rcu.setter
     def rcu(self, rcu):
-        """Sets the rcu of this ProvisionedThroughput.
+        r"""Sets the rcu of this ProvisionedThroughput.
 
         预置表级读请求单元数
 
@@ -70,7 +70,7 @@ class ProvisionedThroughput:
 
     @property
     def wcu(self):
-        """Gets the wcu of this ProvisionedThroughput.
+        r"""Gets the wcu of this ProvisionedThroughput.
 
         预置表级写请求单元数
 
@@ -81,7 +81,7 @@ class ProvisionedThroughput:
 
     @wcu.setter
     def wcu(self, wcu):
-        """Sets the wcu of this ProvisionedThroughput.
+        r"""Sets the wcu of this ProvisionedThroughput.
 
         预置表级写请求单元数
 

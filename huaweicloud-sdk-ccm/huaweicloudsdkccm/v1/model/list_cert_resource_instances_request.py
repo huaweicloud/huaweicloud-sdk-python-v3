@@ -25,7 +25,7 @@ class ListCertResourceInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """ListCertResourceInstancesRequest
+        r"""ListCertResourceInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCertResourceInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCertResourceInstancesRequest.
+        r"""Gets the body of this ListCertResourceInstancesRequest.
 
         :return: The body of this ListCertResourceInstancesRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ListResourceInstancesRequestBody`
@@ -52,7 +52,7 @@ class ListCertResourceInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCertResourceInstancesRequest.
+        r"""Sets the body of this ListCertResourceInstancesRequest.
 
         :param body: The body of this ListCertResourceInstancesRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ListResourceInstancesRequestBody`

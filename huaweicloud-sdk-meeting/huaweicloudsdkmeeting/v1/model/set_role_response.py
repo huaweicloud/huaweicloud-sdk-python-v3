@@ -24,7 +24,7 @@ class SetRoleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetRoleResponse
+        r"""SetRoleResponse
 
         The model defined in huaweicloud sdk
 

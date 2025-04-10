@@ -31,7 +31,7 @@ class CbcUpdate:
     }
 
     def __init__(self, cloud_service_console_url=None, product_info=None, resource_id=None, promotion_info=None):
-        """CbcUpdate
+        r"""CbcUpdate
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CbcUpdate:
 
     @property
     def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this CbcUpdate.
+        r"""Gets the cloud_service_console_url of this CbcUpdate.
 
         云服务ConsoleURL。订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息
 
@@ -73,7 +73,7 @@ class CbcUpdate:
 
     @cloud_service_console_url.setter
     def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this CbcUpdate.
+        r"""Sets the cloud_service_console_url of this CbcUpdate.
 
         云服务ConsoleURL。订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息
 
@@ -84,7 +84,7 @@ class CbcUpdate:
 
     @property
     def product_info(self):
-        """Gets the product_info of this CbcUpdate.
+        r"""Gets the product_info of this CbcUpdate.
 
         :return: The product_info of this CbcUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.CbcProductInfoUpdate`
@@ -93,7 +93,7 @@ class CbcUpdate:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this CbcUpdate.
+        r"""Sets the product_info of this CbcUpdate.
 
         :param product_info: The product_info of this CbcUpdate.
         :type product_info: :class:`huaweicloudsdkcbr.v1.CbcProductInfoUpdate`
@@ -102,7 +102,7 @@ class CbcUpdate:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CbcUpdate.
+        r"""Gets the resource_id of this CbcUpdate.
 
         待变更的资源ID
 
@@ -113,7 +113,7 @@ class CbcUpdate:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CbcUpdate.
+        r"""Sets the resource_id of this CbcUpdate.
 
         待变更的资源ID
 
@@ -124,7 +124,7 @@ class CbcUpdate:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CbcUpdate.
+        r"""Gets the promotion_info of this CbcUpdate.
 
         购买折扣
 
@@ -135,7 +135,7 @@ class CbcUpdate:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CbcUpdate.
+        r"""Sets the promotion_info of this CbcUpdate.
 
         购买折扣
 

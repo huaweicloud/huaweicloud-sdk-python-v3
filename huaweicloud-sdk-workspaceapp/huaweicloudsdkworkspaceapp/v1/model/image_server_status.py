@@ -32,7 +32,7 @@ class ImageServerStatus:
     }
 
     def __init__(self):
-        """ImageServerStatus
+        r"""ImageServerStatus
 
         The model defined in huaweicloud sdk
 

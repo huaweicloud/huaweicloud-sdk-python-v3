@@ -47,7 +47,7 @@ class CommonInfo:
     }
 
     def __init__(self, pvc=None, video_codec=None, audio_codec=None, is_black_cut=None, format=None, hls_interval=None, upsample=None, adaptation=None, preset=None, max_iframes_interval=None, hls_audio_separate=None, hls_segment_type=None):
-        """CommonInfo
+        r"""CommonInfo
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class CommonInfo:
 
     @property
     def pvc(self):
-        """Gets the pvc of this CommonInfo.
+        r"""Gets the pvc of this CommonInfo.
 
         高清低码开关<br/> 
 
@@ -130,7 +130,7 @@ class CommonInfo:
 
     @pvc.setter
     def pvc(self, pvc):
-        """Sets the pvc of this CommonInfo.
+        r"""Sets the pvc of this CommonInfo.
 
         高清低码开关<br/> 
 
@@ -141,7 +141,7 @@ class CommonInfo:
 
     @property
     def video_codec(self):
-        """Gets the video_codec of this CommonInfo.
+        r"""Gets the video_codec of this CommonInfo.
 
         视频编码格式<br/> 
 
@@ -152,7 +152,7 @@ class CommonInfo:
 
     @video_codec.setter
     def video_codec(self, video_codec):
-        """Sets the video_codec of this CommonInfo.
+        r"""Sets the video_codec of this CommonInfo.
 
         视频编码格式<br/> 
 
@@ -163,7 +163,7 @@ class CommonInfo:
 
     @property
     def audio_codec(self):
-        """Gets the audio_codec of this CommonInfo.
+        r"""Gets the audio_codec of this CommonInfo.
 
         音频编码格式<br/> AAC：AAC格式 (default)<br/> HEAAC1：HEAAC1格式<br/> HEAAC2：HEAAC2格式<br/> MP3：MP3格式<br/> 
 
@@ -174,7 +174,7 @@ class CommonInfo:
 
     @audio_codec.setter
     def audio_codec(self, audio_codec):
-        """Sets the audio_codec of this CommonInfo.
+        r"""Sets the audio_codec of this CommonInfo.
 
         音频编码格式<br/> AAC：AAC格式 (default)<br/> HEAAC1：HEAAC1格式<br/> HEAAC2：HEAAC2格式<br/> MP3：MP3格式<br/> 
 
@@ -185,7 +185,7 @@ class CommonInfo:
 
     @property
     def is_black_cut(self):
-        """Gets the is_black_cut of this CommonInfo.
+        r"""Gets the is_black_cut of this CommonInfo.
 
         黑边剪裁类型<br/> 
 
@@ -196,7 +196,7 @@ class CommonInfo:
 
     @is_black_cut.setter
     def is_black_cut(self, is_black_cut):
-        """Sets the is_black_cut of this CommonInfo.
+        r"""Sets the is_black_cut of this CommonInfo.
 
         黑边剪裁类型<br/> 
 
@@ -207,7 +207,7 @@ class CommonInfo:
 
     @property
     def format(self):
-        """Gets the format of this CommonInfo.
+        r"""Gets the format of this CommonInfo.
 
         格式<br/> 
 
@@ -218,7 +218,7 @@ class CommonInfo:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CommonInfo.
+        r"""Sets the format of this CommonInfo.
 
         格式<br/> 
 
@@ -229,7 +229,7 @@ class CommonInfo:
 
     @property
     def hls_interval(self):
-        """Gets the hls_interval of this CommonInfo.
+        r"""Gets the hls_interval of this CommonInfo.
 
         分片时长(默认为5秒)<br/> 
 
@@ -240,7 +240,7 @@ class CommonInfo:
 
     @hls_interval.setter
     def hls_interval(self, hls_interval):
-        """Sets the hls_interval of this CommonInfo.
+        r"""Sets the hls_interval of this CommonInfo.
 
         分片时长(默认为5秒)<br/> 
 
@@ -251,7 +251,7 @@ class CommonInfo:
 
     @property
     def upsample(self):
-        """Gets the upsample of this CommonInfo.
+        r"""Gets the upsample of this CommonInfo.
 
         上采样<br/> 
 
@@ -262,7 +262,7 @@ class CommonInfo:
 
     @upsample.setter
     def upsample(self, upsample):
-        """Sets the upsample of this CommonInfo.
+        r"""Sets the upsample of this CommonInfo.
 
         上采样<br/> 
 
@@ -273,7 +273,7 @@ class CommonInfo:
 
     @property
     def adaptation(self):
-        """Gets the adaptation of this CommonInfo.
+        r"""Gets the adaptation of this CommonInfo.
 
         SHORT：短边自适应<br/> LONG：长边自适应<br/> NONE：宽高自适应<br/> 
 
@@ -284,7 +284,7 @@ class CommonInfo:
 
     @adaptation.setter
     def adaptation(self, adaptation):
-        """Sets the adaptation of this CommonInfo.
+        r"""Sets the adaptation of this CommonInfo.
 
         SHORT：短边自适应<br/> LONG：长边自适应<br/> NONE：宽高自适应<br/> 
 
@@ -295,7 +295,7 @@ class CommonInfo:
 
     @property
     def preset(self):
-        """Gets the preset of this CommonInfo.
+        r"""Gets the preset of this CommonInfo.
 
         编码质量等级，取值[0,2] 0表示当前现网方式默认方式，1表示转码效率优先，2表示转码质量优先。<br/> 
 
@@ -306,7 +306,7 @@ class CommonInfo:
 
     @preset.setter
     def preset(self, preset):
-        """Sets the preset of this CommonInfo.
+        r"""Sets the preset of this CommonInfo.
 
         编码质量等级，取值[0,2] 0表示当前现网方式默认方式，1表示转码效率优先，2表示转码质量优先。<br/> 
 
@@ -317,7 +317,7 @@ class CommonInfo:
 
     @property
     def max_iframes_interval(self):
-        """Gets the max_iframes_interval of this CommonInfo.
+        r"""Gets the max_iframes_interval of this CommonInfo.
 
         I帧最大间隔，取值范围：[2，10]。默认值：5，单位秒。<br/> 
 
@@ -328,7 +328,7 @@ class CommonInfo:
 
     @max_iframes_interval.setter
     def max_iframes_interval(self, max_iframes_interval):
-        """Sets the max_iframes_interval of this CommonInfo.
+        r"""Sets the max_iframes_interval of this CommonInfo.
 
         I帧最大间隔，取值范围：[2，10]。默认值：5，单位秒。<br/> 
 
@@ -339,7 +339,7 @@ class CommonInfo:
 
     @property
     def hls_audio_separate(self):
-        """Gets the hls_audio_separate of this CommonInfo.
+        r"""Gets the hls_audio_separate of this CommonInfo.
 
         转码后音频是否独立存储。<br/> 
 
@@ -350,7 +350,7 @@ class CommonInfo:
 
     @hls_audio_separate.setter
     def hls_audio_separate(self, hls_audio_separate):
-        """Sets the hls_audio_separate of this CommonInfo.
+        r"""Sets the hls_audio_separate of this CommonInfo.
 
         转码后音频是否独立存储。<br/> 
 
@@ -361,7 +361,7 @@ class CommonInfo:
 
     @property
     def hls_segment_type(self):
-        """Gets the hls_segment_type of this CommonInfo.
+        r"""Gets the hls_segment_type of this CommonInfo.
 
         分片的封装格式，目前支持TS和FMP4，默认TS格式。 
 
@@ -372,7 +372,7 @@ class CommonInfo:
 
     @hls_segment_type.setter
     def hls_segment_type(self, hls_segment_type):
-        """Sets the hls_segment_type of this CommonInfo.
+        r"""Sets the hls_segment_type of this CommonInfo.
 
         分片的封装格式，目前支持TS和FMP4，默认TS格式。 
 

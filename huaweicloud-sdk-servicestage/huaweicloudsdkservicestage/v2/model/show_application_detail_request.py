@@ -25,7 +25,7 @@ class ShowApplicationDetailRequest:
     }
 
     def __init__(self, application_id=None):
-        """ShowApplicationDetailRequest
+        r"""ShowApplicationDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowApplicationDetailRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowApplicationDetailRequest.
+        r"""Gets the application_id of this ShowApplicationDetailRequest.
 
         应用ID。
 
@@ -53,7 +53,7 @@ class ShowApplicationDetailRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowApplicationDetailRequest.
+        r"""Sets the application_id of this ShowApplicationDetailRequest.
 
         应用ID。
 

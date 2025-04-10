@@ -31,7 +31,7 @@ class ExecutionPlanSummary:
     }
 
     def __init__(self, resource_add=None, resource_update=None, resource_delete=None, resource_import=None):
-        """ExecutionPlanSummary
+        r"""ExecutionPlanSummary
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ExecutionPlanSummary:
 
     @property
     def resource_add(self):
-        """Gets the resource_add of this ExecutionPlanSummary.
+        r"""Gets the resource_add of this ExecutionPlanSummary.
 
         新增资源数
 
@@ -75,7 +75,7 @@ class ExecutionPlanSummary:
 
     @resource_add.setter
     def resource_add(self, resource_add):
-        """Sets the resource_add of this ExecutionPlanSummary.
+        r"""Sets the resource_add of this ExecutionPlanSummary.
 
         新增资源数
 
@@ -86,7 +86,7 @@ class ExecutionPlanSummary:
 
     @property
     def resource_update(self):
-        """Gets the resource_update of this ExecutionPlanSummary.
+        r"""Gets the resource_update of this ExecutionPlanSummary.
 
         更新资源数
 
@@ -97,7 +97,7 @@ class ExecutionPlanSummary:
 
     @resource_update.setter
     def resource_update(self, resource_update):
-        """Sets the resource_update of this ExecutionPlanSummary.
+        r"""Sets the resource_update of this ExecutionPlanSummary.
 
         更新资源数
 
@@ -108,7 +108,7 @@ class ExecutionPlanSummary:
 
     @property
     def resource_delete(self):
-        """Gets the resource_delete of this ExecutionPlanSummary.
+        r"""Gets the resource_delete of this ExecutionPlanSummary.
 
         删除资源数
 
@@ -119,7 +119,7 @@ class ExecutionPlanSummary:
 
     @resource_delete.setter
     def resource_delete(self, resource_delete):
-        """Sets the resource_delete of this ExecutionPlanSummary.
+        r"""Sets the resource_delete of this ExecutionPlanSummary.
 
         删除资源数
 
@@ -130,7 +130,7 @@ class ExecutionPlanSummary:
 
     @property
     def resource_import(self):
-        """Gets the resource_import of this ExecutionPlanSummary.
+        r"""Gets the resource_import of this ExecutionPlanSummary.
 
         导入资源数
 
@@ -141,7 +141,7 @@ class ExecutionPlanSummary:
 
     @resource_import.setter
     def resource_import(self, resource_import):
-        """Sets the resource_import of this ExecutionPlanSummary.
+        r"""Sets the resource_import of this ExecutionPlanSummary.
 
         导入资源数
 

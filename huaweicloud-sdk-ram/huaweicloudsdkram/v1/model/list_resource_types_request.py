@@ -30,7 +30,7 @@ class ListResourceTypesRequest:
     }
 
     def __init__(self, x_security_token=None, limit=None, marker=None):
-        """ListResourceTypesRequest
+        r"""ListResourceTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListResourceTypesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListResourceTypesRequest.
+        r"""Gets the x_security_token of this ListResourceTypesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -69,7 +69,7 @@ class ListResourceTypesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListResourceTypesRequest.
+        r"""Sets the x_security_token of this ListResourceTypesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -80,7 +80,7 @@ class ListResourceTypesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceTypesRequest.
+        r"""Gets the limit of this ListResourceTypesRequest.
 
         分页页面的最大值。
 
@@ -91,7 +91,7 @@ class ListResourceTypesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceTypesRequest.
+        r"""Sets the limit of this ListResourceTypesRequest.
 
         分页页面的最大值。
 
@@ -102,7 +102,7 @@ class ListResourceTypesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListResourceTypesRequest.
+        r"""Gets the marker of this ListResourceTypesRequest.
 
         页面标记。
 
@@ -113,7 +113,7 @@ class ListResourceTypesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListResourceTypesRequest.
+        r"""Sets the marker of this ListResourceTypesRequest.
 
         页面标记。
 

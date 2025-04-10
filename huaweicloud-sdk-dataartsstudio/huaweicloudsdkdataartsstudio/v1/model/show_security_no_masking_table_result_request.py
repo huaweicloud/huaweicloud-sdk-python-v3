@@ -37,7 +37,7 @@ class ShowSecurityNoMaskingTableResultRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, diagnose_id=None, datasource_type=None, database=None, cluster_name=None):
-        """ShowSecurityNoMaskingTableResultRequest
+        r"""ShowSecurityNoMaskingTableResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the workspace of this ShowSecurityNoMaskingTableResultRequest.
 
         DataArts Studio工作空间ID
 
@@ -94,7 +94,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the workspace of this ShowSecurityNoMaskingTableResultRequest.
 
         DataArts Studio工作空间ID
 
@@ -105,7 +105,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the limit of this ShowSecurityNoMaskingTableResultRequest.
 
         limit
 
@@ -116,7 +116,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the limit of this ShowSecurityNoMaskingTableResultRequest.
 
         limit
 
@@ -127,7 +127,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the offset of this ShowSecurityNoMaskingTableResultRequest.
 
         offset
 
@@ -138,7 +138,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the offset of this ShowSecurityNoMaskingTableResultRequest.
 
         offset
 
@@ -149,7 +149,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def diagnose_id(self):
-        """Gets the diagnose_id of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the diagnose_id of this ShowSecurityNoMaskingTableResultRequest.
 
         诊断任务id，通过调用查询数据权限控制模块诊断结果接口获取。
 
@@ -160,7 +160,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @diagnose_id.setter
     def diagnose_id(self, diagnose_id):
-        """Sets the diagnose_id of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the diagnose_id of this ShowSecurityNoMaskingTableResultRequest.
 
         诊断任务id，通过调用查询数据权限控制模块诊断结果接口获取。
 
@@ -171,7 +171,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the datasource_type of this ShowSecurityNoMaskingTableResultRequest.
 
         数据源类型,HIVE
 
@@ -182,7 +182,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the datasource_type of this ShowSecurityNoMaskingTableResultRequest.
 
         数据源类型,HIVE
 
@@ -193,7 +193,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def database(self):
-        """Gets the database of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the database of this ShowSecurityNoMaskingTableResultRequest.
 
         数据库名称
 
@@ -204,7 +204,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the database of this ShowSecurityNoMaskingTableResultRequest.
 
         数据库名称
 
@@ -215,7 +215,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Gets the cluster_name of this ShowSecurityNoMaskingTableResultRequest.
 
         集群名称
 
@@ -226,7 +226,7 @@ class ShowSecurityNoMaskingTableResultRequest:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowSecurityNoMaskingTableResultRequest.
+        r"""Sets the cluster_name of this ShowSecurityNoMaskingTableResultRequest.
 
         集群名称
 

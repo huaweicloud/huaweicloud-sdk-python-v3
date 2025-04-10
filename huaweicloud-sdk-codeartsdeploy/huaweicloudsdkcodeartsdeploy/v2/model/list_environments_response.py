@@ -30,7 +30,7 @@ class ListEnvironmentsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, total=None, result=None):
-        """ListEnvironmentsResponse
+        r"""ListEnvironmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListEnvironmentsResponse.
+        r"""Gets the status of this ListEnvironmentsResponse.
 
         请求成功失败状态
 
@@ -69,7 +69,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEnvironmentsResponse.
+        r"""Sets the status of this ListEnvironmentsResponse.
 
         请求成功失败状态
 
@@ -80,7 +80,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEnvironmentsResponse.
+        r"""Gets the total of this ListEnvironmentsResponse.
 
         应用下环境总数
 
@@ -91,7 +91,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEnvironmentsResponse.
+        r"""Sets the total of this ListEnvironmentsResponse.
 
         应用下环境总数
 
@@ -102,7 +102,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListEnvironmentsResponse.
+        r"""Gets the result of this ListEnvironmentsResponse.
 
         环境列表信息
 
@@ -113,7 +113,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListEnvironmentsResponse.
+        r"""Sets the result of this ListEnvironmentsResponse.
 
         环境列表信息
 

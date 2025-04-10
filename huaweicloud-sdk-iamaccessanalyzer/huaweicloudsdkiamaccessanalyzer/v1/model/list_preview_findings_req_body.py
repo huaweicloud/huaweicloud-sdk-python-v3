@@ -29,7 +29,7 @@ class ListPreviewFindingsReqBody:
     }
 
     def __init__(self, filters=None, limit=None, marker=None):
-        """ListPreviewFindingsReqBody
+        r"""ListPreviewFindingsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListPreviewFindingsReqBody:
 
     @property
     def filters(self):
-        """Gets the filters of this ListPreviewFindingsReqBody.
+        r"""Gets the filters of this ListPreviewFindingsReqBody.
 
         匹配要返回的分析结果的筛选项。
 
@@ -68,7 +68,7 @@ class ListPreviewFindingsReqBody:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this ListPreviewFindingsReqBody.
+        r"""Sets the filters of this ListPreviewFindingsReqBody.
 
         匹配要返回的分析结果的筛选项。
 
@@ -79,7 +79,7 @@ class ListPreviewFindingsReqBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPreviewFindingsReqBody.
+        r"""Gets the limit of this ListPreviewFindingsReqBody.
 
         单页最大结果数。
 
@@ -90,7 +90,7 @@ class ListPreviewFindingsReqBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPreviewFindingsReqBody.
+        r"""Sets the limit of this ListPreviewFindingsReqBody.
 
         单页最大结果数。
 
@@ -101,7 +101,7 @@ class ListPreviewFindingsReqBody:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPreviewFindingsReqBody.
+        r"""Gets the marker of this ListPreviewFindingsReqBody.
 
         页面标记。
 
@@ -112,7 +112,7 @@ class ListPreviewFindingsReqBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPreviewFindingsReqBody.
+        r"""Sets the marker of this ListPreviewFindingsReqBody.
 
         页面标记。
 

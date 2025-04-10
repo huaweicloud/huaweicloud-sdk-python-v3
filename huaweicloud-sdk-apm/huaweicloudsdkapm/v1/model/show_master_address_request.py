@@ -25,7 +25,7 @@ class ShowMasterAddressRequest:
     }
 
     def __init__(self, region_name=None):
-        """ShowMasterAddressRequest
+        r"""ShowMasterAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMasterAddressRequest:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ShowMasterAddressRequest.
+        r"""Gets the region_name of this ShowMasterAddressRequest.
 
         region英文名称。
 
@@ -53,7 +53,7 @@ class ShowMasterAddressRequest:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ShowMasterAddressRequest.
+        r"""Sets the region_name of this ShowMasterAddressRequest.
 
         region英文名称。
 

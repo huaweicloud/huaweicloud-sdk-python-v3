@@ -27,7 +27,7 @@ class SaslPlainAuthInfo:
     }
 
     def __init__(self, username=None, password=None):
-        """SaslPlainAuthInfo
+        r"""SaslPlainAuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SaslPlainAuthInfo:
 
     @property
     def username(self):
-        """Gets the username of this SaslPlainAuthInfo.
+        r"""Gets the username of this SaslPlainAuthInfo.
 
         用户名。支持大小写字母、数字、“.”、“-” 、“_”
 
@@ -61,7 +61,7 @@ class SaslPlainAuthInfo:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this SaslPlainAuthInfo.
+        r"""Sets the username of this SaslPlainAuthInfo.
 
         用户名。支持大小写字母、数字、“.”、“-” 、“_”
 
@@ -72,7 +72,7 @@ class SaslPlainAuthInfo:
 
     @property
     def password(self):
-        """Gets the password of this SaslPlainAuthInfo.
+        r"""Gets the password of this SaslPlainAuthInfo.
 
         密码
 
@@ -83,7 +83,7 @@ class SaslPlainAuthInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this SaslPlainAuthInfo.
+        r"""Sets the password of this SaslPlainAuthInfo.
 
         密码
 

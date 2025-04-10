@@ -26,7 +26,7 @@ class ListActionRuleResponse(SdkResponse):
     }
 
     def __init__(self, action_rules=None):
-        """ListActionRuleResponse
+        r"""ListActionRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListActionRuleResponse(SdkResponse):
 
     @property
     def action_rules(self):
-        """Gets the action_rules of this ListActionRuleResponse.
+        r"""Gets the action_rules of this ListActionRuleResponse.
 
         告警行动规则列表
 
@@ -55,7 +55,7 @@ class ListActionRuleResponse(SdkResponse):
 
     @action_rules.setter
     def action_rules(self, action_rules):
-        """Sets the action_rules of this ListActionRuleResponse.
+        r"""Sets the action_rules of this ListActionRuleResponse.
 
         告警行动规则列表
 

@@ -26,7 +26,7 @@ class CreateHealthReportTaskResponse(SdkResponse):
     }
 
     def __init__(self, create_success=None):
-        """CreateHealthReportTaskResponse
+        r"""CreateHealthReportTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateHealthReportTaskResponse(SdkResponse):
 
     @property
     def create_success(self):
-        """Gets the create_success of this CreateHealthReportTaskResponse.
+        r"""Gets the create_success of this CreateHealthReportTaskResponse.
 
         诊断任务创建是否成功
 
@@ -55,7 +55,7 @@ class CreateHealthReportTaskResponse(SdkResponse):
 
     @create_success.setter
     def create_success(self, create_success):
-        """Sets the create_success of this CreateHealthReportTaskResponse.
+        r"""Sets the create_success of this CreateHealthReportTaskResponse.
 
         诊断任务创建是否成功
 

@@ -27,7 +27,7 @@ class ResetRandomPasswordRequest:
     }
 
     def __init__(self, user_id=None, notification_type=None):
-        """ResetRandomPasswordRequest
+        r"""ResetRandomPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetRandomPasswordRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ResetRandomPasswordRequest.
+        r"""Gets the user_id of this ResetRandomPasswordRequest.
 
         用户ID。
 
@@ -60,7 +60,7 @@ class ResetRandomPasswordRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ResetRandomPasswordRequest.
+        r"""Sets the user_id of this ResetRandomPasswordRequest.
 
         用户ID。
 
@@ -71,7 +71,7 @@ class ResetRandomPasswordRequest:
 
     @property
     def notification_type(self):
-        """Gets the notification_type of this ResetRandomPasswordRequest.
+        r"""Gets the notification_type of this ResetRandomPasswordRequest.
 
         通知用户类型，现在有“email”和“phone”两种，用\",\"分开，用户为用户激活模式时必须要带上通知类型，以便接收到密码通知。
 
@@ -82,7 +82,7 @@ class ResetRandomPasswordRequest:
 
     @notification_type.setter
     def notification_type(self, notification_type):
-        """Sets the notification_type of this ResetRandomPasswordRequest.
+        r"""Sets the notification_type of this ResetRandomPasswordRequest.
 
         通知用户类型，现在有“email”和“phone”两种，用\",\"分开，用户为用户激活模式时必须要带上通知类型，以便接收到密码通知。
 

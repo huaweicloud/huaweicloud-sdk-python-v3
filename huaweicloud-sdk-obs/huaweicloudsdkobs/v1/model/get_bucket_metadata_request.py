@@ -33,7 +33,7 @@ class GetBucketMetadataRequest:
     }
 
     def __init__(self, bucket_name=None, date=None, origin=None, access_control_request_headers=None):
-        """GetBucketMetadataRequest
+        r"""GetBucketMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class GetBucketMetadataRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this GetBucketMetadataRequest.
+        r"""Gets the bucket_name of this GetBucketMetadataRequest.
 
         Name of the bucket.
 
@@ -76,7 +76,7 @@ class GetBucketMetadataRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this GetBucketMetadataRequest.
+        r"""Sets the bucket_name of this GetBucketMetadataRequest.
 
         Name of the bucket.
 
@@ -87,7 +87,7 @@ class GetBucketMetadataRequest:
 
     @property
     def date(self):
-        """Gets the date of this GetBucketMetadataRequest.
+        r"""Gets the date of this GetBucketMetadataRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -98,7 +98,7 @@ class GetBucketMetadataRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetBucketMetadataRequest.
+        r"""Sets the date of this GetBucketMetadataRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -109,7 +109,7 @@ class GetBucketMetadataRequest:
 
     @property
     def origin(self):
-        """Gets the origin of this GetBucketMetadataRequest.
+        r"""Gets the origin of this GetBucketMetadataRequest.
 
         Origin (usually a domain name) specified by the pre-request (a cross-origin request). To obtain the CORS configuration information, you must add this header.
 
@@ -120,7 +120,7 @@ class GetBucketMetadataRequest:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this GetBucketMetadataRequest.
+        r"""Sets the origin of this GetBucketMetadataRequest.
 
         Origin (usually a domain name) specified by the pre-request (a cross-origin request). To obtain the CORS configuration information, you must add this header.
 
@@ -131,7 +131,7 @@ class GetBucketMetadataRequest:
 
     @property
     def access_control_request_headers(self):
-        """Gets the access_control_request_headers of this GetBucketMetadataRequest.
+        r"""Gets the access_control_request_headers of this GetBucketMetadataRequest.
 
         HTTP headers that can be contained in a request. To obtain the CORS configuration information, you can add this header.
 
@@ -142,7 +142,7 @@ class GetBucketMetadataRequest:
 
     @access_control_request_headers.setter
     def access_control_request_headers(self, access_control_request_headers):
-        """Sets the access_control_request_headers of this GetBucketMetadataRequest.
+        r"""Sets the access_control_request_headers of this GetBucketMetadataRequest.
 
         HTTP headers that can be contained in a request. To obtain the CORS configuration information, you can add this header.
 

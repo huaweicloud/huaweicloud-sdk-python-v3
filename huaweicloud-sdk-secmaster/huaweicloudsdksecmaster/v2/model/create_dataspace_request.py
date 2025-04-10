@@ -29,7 +29,7 @@ class CreateDataspaceRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreateDataspaceRequest
+        r"""CreateDataspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDataspaceRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateDataspaceRequest.
+        r"""Gets the project_id of this CreateDataspaceRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class CreateDataspaceRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateDataspaceRequest.
+        r"""Sets the project_id of this CreateDataspaceRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class CreateDataspaceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateDataspaceRequest.
+        r"""Gets the workspace_id of this CreateDataspaceRequest.
 
         工作空间id
 
@@ -88,7 +88,7 @@ class CreateDataspaceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateDataspaceRequest.
+        r"""Sets the workspace_id of this CreateDataspaceRequest.
 
         工作空间id
 
@@ -99,7 +99,7 @@ class CreateDataspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDataspaceRequest.
+        r"""Gets the body of this CreateDataspaceRequest.
 
         :return: The body of this CreateDataspaceRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataspaceRequestBody`
@@ -108,7 +108,7 @@ class CreateDataspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDataspaceRequest.
+        r"""Sets the body of this CreateDataspaceRequest.
 
         :param body: The body of this CreateDataspaceRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.CreateDataspaceRequestBody`

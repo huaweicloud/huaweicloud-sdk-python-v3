@@ -25,7 +25,7 @@ class UpdateMixJobReq:
     }
 
     def __init__(self, mix_param=None):
-        """UpdateMixJobReq
+        r"""UpdateMixJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMixJobReq:
 
     @property
     def mix_param(self):
-        """Gets the mix_param of this UpdateMixJobReq.
+        r"""Gets the mix_param of this UpdateMixJobReq.
 
         :return: The mix_param of this UpdateMixJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixParam`
@@ -51,7 +51,7 @@ class UpdateMixJobReq:
 
     @mix_param.setter
     def mix_param(self, mix_param):
-        """Sets the mix_param of this UpdateMixJobReq.
+        r"""Sets the mix_param of this UpdateMixJobReq.
 
         :param mix_param: The mix_param of this UpdateMixJobReq.
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixParam`

@@ -25,7 +25,7 @@ class UpdateTenantConfigReq:
     }
 
     def __init__(self, function_config=None):
-        """UpdateTenantConfigReq
+        r"""UpdateTenantConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTenantConfigReq:
 
     @property
     def function_config(self):
-        """Gets the function_config of this UpdateTenantConfigReq.
+        r"""Gets the function_config of this UpdateTenantConfigReq.
 
         :return: The function_config of this UpdateTenantConfigReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FunctionConfig`
@@ -52,7 +52,7 @@ class UpdateTenantConfigReq:
 
     @function_config.setter
     def function_config(self, function_config):
-        """Sets the function_config of this UpdateTenantConfigReq.
+        r"""Sets the function_config of this UpdateTenantConfigReq.
 
         :param function_config: The function_config of this UpdateTenantConfigReq.
         :type function_config: :class:`huaweicloudsdkworkspace.v2.FunctionConfig`

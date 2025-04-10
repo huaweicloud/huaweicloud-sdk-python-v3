@@ -27,7 +27,7 @@ class BackupResources:
     }
 
     def __init__(self, vault_id=None, resource_list=None):
-        """BackupResources
+        r"""BackupResources
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BackupResources:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this BackupResources.
+        r"""Gets the vault_id of this BackupResources.
 
         选择需要绑定的存储库ID，不为空
 
@@ -61,7 +61,7 @@ class BackupResources:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this BackupResources.
+        r"""Sets the vault_id of this BackupResources.
 
         选择需要绑定的存储库ID，不为空
 
@@ -72,7 +72,7 @@ class BackupResources:
 
     @property
     def resource_list(self):
-        """Gets the resource_list of this BackupResources.
+        r"""Gets the resource_list of this BackupResources.
 
         需要开启备份功能的主机情况列表
 
@@ -83,7 +83,7 @@ class BackupResources:
 
     @resource_list.setter
     def resource_list(self, resource_list):
-        """Sets the resource_list of this BackupResources.
+        r"""Sets the resource_list of this BackupResources.
 
         需要开启备份功能的主机情况列表
 

@@ -26,7 +26,7 @@ class ListTransfersResponse(SdkResponse):
     }
 
     def __init__(self, log_transfers=None):
-        """ListTransfersResponse
+        r"""ListTransfersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTransfersResponse(SdkResponse):
 
     @property
     def log_transfers(self):
-        """Gets the log_transfers of this ListTransfersResponse.
+        r"""Gets the log_transfers of this ListTransfersResponse.
 
         查询日志转储信息数组
 
@@ -55,7 +55,7 @@ class ListTransfersResponse(SdkResponse):
 
     @log_transfers.setter
     def log_transfers(self, log_transfers):
-        """Sets the log_transfers of this ListTransfersResponse.
+        r"""Sets the log_transfers of this ListTransfersResponse.
 
         查询日志转储信息数组
 

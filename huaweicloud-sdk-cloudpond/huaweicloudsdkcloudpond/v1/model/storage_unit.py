@@ -33,7 +33,7 @@ class StorageUnit:
     }
 
     def __init__(self, storage_type=None, capacity=None, gears=None, flavor_type=None, count=None):
-        """StorageUnit
+        r"""StorageUnit
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class StorageUnit:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this StorageUnit.
+        r"""Gets the storage_type of this StorageUnit.
 
         :return: The storage_type of this StorageUnit.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.StorageType`
@@ -75,7 +75,7 @@ class StorageUnit:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this StorageUnit.
+        r"""Sets the storage_type of this StorageUnit.
 
         :param storage_type: The storage_type of this StorageUnit.
         :type storage_type: :class:`huaweicloudsdkcloudpond.v1.StorageType`
@@ -84,7 +84,7 @@ class StorageUnit:
 
     @property
     def capacity(self):
-        """Gets the capacity of this StorageUnit.
+        r"""Gets the capacity of this StorageUnit.
 
         存储池大小，单位：TB。
 
@@ -95,7 +95,7 @@ class StorageUnit:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this StorageUnit.
+        r"""Sets the capacity of this StorageUnit.
 
         存储池大小，单位：TB。
 
@@ -106,7 +106,7 @@ class StorageUnit:
 
     @property
     def gears(self):
-        """Gets the gears of this StorageUnit.
+        r"""Gets the gears of this StorageUnit.
 
         存储池销售档位
 
@@ -117,7 +117,7 @@ class StorageUnit:
 
     @gears.setter
     def gears(self, gears):
-        """Sets the gears of this StorageUnit.
+        r"""Sets the gears of this StorageUnit.
 
         存储池销售档位
 
@@ -128,7 +128,7 @@ class StorageUnit:
 
     @property
     def flavor_type(self):
-        """Gets the flavor_type of this StorageUnit.
+        r"""Gets the flavor_type of this StorageUnit.
 
         规格类型。例如：highio-4T
 
@@ -139,7 +139,7 @@ class StorageUnit:
 
     @flavor_type.setter
     def flavor_type(self, flavor_type):
-        """Sets the flavor_type of this StorageUnit.
+        r"""Sets the flavor_type of this StorageUnit.
 
         规格类型。例如：highio-4T
 
@@ -150,7 +150,7 @@ class StorageUnit:
 
     @property
     def count(self):
-        """Gets the count of this StorageUnit.
+        r"""Gets the count of this StorageUnit.
 
         存储节点台数。
 
@@ -161,7 +161,7 @@ class StorageUnit:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this StorageUnit.
+        r"""Sets the count of this StorageUnit.
 
         存储节点台数。
 

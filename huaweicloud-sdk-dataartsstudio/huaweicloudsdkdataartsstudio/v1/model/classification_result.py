@@ -29,7 +29,7 @@ class ClassificationResult:
     }
 
     def __init__(self, result=None, security_level=None, classification=None):
-        """ClassificationResult
+        r"""ClassificationResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ClassificationResult:
 
     @property
     def result(self):
-        """Gets the result of this ClassificationResult.
+        r"""Gets the result of this ClassificationResult.
 
         :return: The result of this ClassificationResult.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -66,7 +66,7 @@ class ClassificationResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ClassificationResult.
+        r"""Sets the result of this ClassificationResult.
 
         :param result: The result of this ClassificationResult.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -75,7 +75,7 @@ class ClassificationResult:
 
     @property
     def security_level(self):
-        """Gets the security_level of this ClassificationResult.
+        r"""Gets the security_level of this ClassificationResult.
 
         是否配置了密级
 
@@ -86,7 +86,7 @@ class ClassificationResult:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this ClassificationResult.
+        r"""Sets the security_level of this ClassificationResult.
 
         是否配置了密级
 
@@ -97,7 +97,7 @@ class ClassificationResult:
 
     @property
     def classification(self):
-        """Gets the classification of this ClassificationResult.
+        r"""Gets the classification of this ClassificationResult.
 
         是否配置了分类
 
@@ -108,7 +108,7 @@ class ClassificationResult:
 
     @classification.setter
     def classification(self, classification):
-        """Sets the classification of this ClassificationResult.
+        r"""Sets the classification of this ClassificationResult.
 
         是否配置了分类
 

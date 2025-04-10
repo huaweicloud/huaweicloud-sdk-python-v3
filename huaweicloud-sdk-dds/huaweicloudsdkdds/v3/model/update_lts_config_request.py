@@ -25,7 +25,7 @@ class UpdateLtsConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateLtsConfigRequest
+        r"""UpdateLtsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateLtsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLtsConfigRequest.
+        r"""Gets the body of this UpdateLtsConfigRequest.
 
         :return: The body of this UpdateLtsConfigRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateLtsConfigRequestBody`
@@ -52,7 +52,7 @@ class UpdateLtsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLtsConfigRequest.
+        r"""Sets the body of this UpdateLtsConfigRequest.
 
         :param body: The body of this UpdateLtsConfigRequest.
         :type body: :class:`huaweicloudsdkdds.v3.UpdateLtsConfigRequestBody`

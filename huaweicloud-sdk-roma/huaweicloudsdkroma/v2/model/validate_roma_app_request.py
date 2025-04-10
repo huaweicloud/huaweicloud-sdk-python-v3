@@ -31,7 +31,7 @@ class ValidateRomaAppRequest:
     }
 
     def __init__(self, instance_id=None, name=None, id=None, key=None):
-        """ValidateRomaAppRequest
+        r"""ValidateRomaAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ValidateRomaAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ValidateRomaAppRequest.
+        r"""Gets the instance_id of this ValidateRomaAppRequest.
 
         实例ID
 
@@ -74,7 +74,7 @@ class ValidateRomaAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ValidateRomaAppRequest.
+        r"""Sets the instance_id of this ValidateRomaAppRequest.
 
         实例ID
 
@@ -85,7 +85,7 @@ class ValidateRomaAppRequest:
 
     @property
     def name(self):
-        """Gets the name of this ValidateRomaAppRequest.
+        r"""Gets the name of this ValidateRomaAppRequest.
 
         应用名称，不支持模糊匹配
 
@@ -96,7 +96,7 @@ class ValidateRomaAppRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValidateRomaAppRequest.
+        r"""Sets the name of this ValidateRomaAppRequest.
 
         应用名称，不支持模糊匹配
 
@@ -107,7 +107,7 @@ class ValidateRomaAppRequest:
 
     @property
     def id(self):
-        """Gets the id of this ValidateRomaAppRequest.
+        r"""Gets the id of this ValidateRomaAppRequest.
 
         应用ID
 
@@ -118,7 +118,7 @@ class ValidateRomaAppRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ValidateRomaAppRequest.
+        r"""Sets the id of this ValidateRomaAppRequest.
 
         应用ID
 
@@ -129,7 +129,7 @@ class ValidateRomaAppRequest:
 
     @property
     def key(self):
-        """Gets the key of this ValidateRomaAppRequest.
+        r"""Gets the key of this ValidateRomaAppRequest.
 
         应用key
 
@@ -140,7 +140,7 @@ class ValidateRomaAppRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ValidateRomaAppRequest.
+        r"""Sets the key of this ValidateRomaAppRequest.
 
         应用key
 

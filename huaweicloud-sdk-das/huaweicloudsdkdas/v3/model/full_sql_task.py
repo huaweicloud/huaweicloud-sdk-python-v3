@@ -63,7 +63,7 @@ class FullSqlTask:
     }
 
     def __init__(self, id=None, instance_id=None, instance_name=None, node_id=None, start_at=None, end_at=None, batch_id=None, user_list=None, keyword=None, db_list=None, operation_list=None, thread_id_list=None, trx_id_list=None, status_list=None, sql_template_ids=None, status=None, progress=None, reason=None, create_at=None, update_at=None):
-        """FullSqlTask
+        r"""FullSqlTask
 
         The model defined in huaweicloud sdk
 
@@ -157,7 +157,7 @@ class FullSqlTask:
 
     @property
     def id(self):
-        """Gets the id of this FullSqlTask.
+        r"""Gets the id of this FullSqlTask.
 
         任务ID。
 
@@ -168,7 +168,7 @@ class FullSqlTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FullSqlTask.
+        r"""Sets the id of this FullSqlTask.
 
         任务ID。
 
@@ -179,7 +179,7 @@ class FullSqlTask:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this FullSqlTask.
+        r"""Gets the instance_id of this FullSqlTask.
 
         实例ID。
 
@@ -190,7 +190,7 @@ class FullSqlTask:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this FullSqlTask.
+        r"""Sets the instance_id of this FullSqlTask.
 
         实例ID。
 
@@ -201,7 +201,7 @@ class FullSqlTask:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this FullSqlTask.
+        r"""Gets the instance_name of this FullSqlTask.
 
         实例名称。
 
@@ -212,7 +212,7 @@ class FullSqlTask:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this FullSqlTask.
+        r"""Sets the instance_name of this FullSqlTask.
 
         实例名称。
 
@@ -223,7 +223,7 @@ class FullSqlTask:
 
     @property
     def node_id(self):
-        """Gets the node_id of this FullSqlTask.
+        r"""Gets the node_id of this FullSqlTask.
 
         节点ID。
 
@@ -234,7 +234,7 @@ class FullSqlTask:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this FullSqlTask.
+        r"""Sets the node_id of this FullSqlTask.
 
         节点ID。
 
@@ -245,7 +245,7 @@ class FullSqlTask:
 
     @property
     def start_at(self):
-        """Gets the start_at of this FullSqlTask.
+        r"""Gets the start_at of this FullSqlTask.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -256,7 +256,7 @@ class FullSqlTask:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this FullSqlTask.
+        r"""Sets the start_at of this FullSqlTask.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -267,7 +267,7 @@ class FullSqlTask:
 
     @property
     def end_at(self):
-        """Gets the end_at of this FullSqlTask.
+        r"""Gets the end_at of this FullSqlTask.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -278,7 +278,7 @@ class FullSqlTask:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this FullSqlTask.
+        r"""Sets the end_at of this FullSqlTask.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -289,7 +289,7 @@ class FullSqlTask:
 
     @property
     def batch_id(self):
-        """Gets the batch_id of this FullSqlTask.
+        r"""Gets the batch_id of this FullSqlTask.
 
         批次ID。
 
@@ -300,7 +300,7 @@ class FullSqlTask:
 
     @batch_id.setter
     def batch_id(self, batch_id):
-        """Sets the batch_id of this FullSqlTask.
+        r"""Sets the batch_id of this FullSqlTask.
 
         批次ID。
 
@@ -311,7 +311,7 @@ class FullSqlTask:
 
     @property
     def user_list(self):
-        """Gets the user_list of this FullSqlTask.
+        r"""Gets the user_list of this FullSqlTask.
 
         用户名。
 
@@ -322,7 +322,7 @@ class FullSqlTask:
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this FullSqlTask.
+        r"""Sets the user_list of this FullSqlTask.
 
         用户名。
 
@@ -333,7 +333,7 @@ class FullSqlTask:
 
     @property
     def keyword(self):
-        """Gets the keyword of this FullSqlTask.
+        r"""Gets the keyword of this FullSqlTask.
 
         关键字。
 
@@ -344,7 +344,7 @@ class FullSqlTask:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this FullSqlTask.
+        r"""Sets the keyword of this FullSqlTask.
 
         关键字。
 
@@ -355,7 +355,7 @@ class FullSqlTask:
 
     @property
     def db_list(self):
-        """Gets the db_list of this FullSqlTask.
+        r"""Gets the db_list of this FullSqlTask.
 
         数据库。
 
@@ -366,7 +366,7 @@ class FullSqlTask:
 
     @db_list.setter
     def db_list(self, db_list):
-        """Sets the db_list of this FullSqlTask.
+        r"""Sets the db_list of this FullSqlTask.
 
         数据库。
 
@@ -377,7 +377,7 @@ class FullSqlTask:
 
     @property
     def operation_list(self):
-        """Gets the operation_list of this FullSqlTask.
+        r"""Gets the operation_list of this FullSqlTask.
 
         操作类型。
 
@@ -388,7 +388,7 @@ class FullSqlTask:
 
     @operation_list.setter
     def operation_list(self, operation_list):
-        """Sets the operation_list of this FullSqlTask.
+        r"""Sets the operation_list of this FullSqlTask.
 
         操作类型。
 
@@ -399,7 +399,7 @@ class FullSqlTask:
 
     @property
     def thread_id_list(self):
-        """Gets the thread_id_list of this FullSqlTask.
+        r"""Gets the thread_id_list of this FullSqlTask.
 
         线程ID。
 
@@ -410,7 +410,7 @@ class FullSqlTask:
 
     @thread_id_list.setter
     def thread_id_list(self, thread_id_list):
-        """Sets the thread_id_list of this FullSqlTask.
+        r"""Sets the thread_id_list of this FullSqlTask.
 
         线程ID。
 
@@ -421,7 +421,7 @@ class FullSqlTask:
 
     @property
     def trx_id_list(self):
-        """Gets the trx_id_list of this FullSqlTask.
+        r"""Gets the trx_id_list of this FullSqlTask.
 
         事务ID。
 
@@ -432,7 +432,7 @@ class FullSqlTask:
 
     @trx_id_list.setter
     def trx_id_list(self, trx_id_list):
-        """Sets the trx_id_list of this FullSqlTask.
+        r"""Sets the trx_id_list of this FullSqlTask.
 
         事务ID。
 
@@ -443,7 +443,7 @@ class FullSqlTask:
 
     @property
     def status_list(self):
-        """Gets the status_list of this FullSqlTask.
+        r"""Gets the status_list of this FullSqlTask.
 
         执行状态（0:成功，1:失败）。
 
@@ -454,7 +454,7 @@ class FullSqlTask:
 
     @status_list.setter
     def status_list(self, status_list):
-        """Sets the status_list of this FullSqlTask.
+        r"""Sets the status_list of this FullSqlTask.
 
         执行状态（0:成功，1:失败）。
 
@@ -465,7 +465,7 @@ class FullSqlTask:
 
     @property
     def sql_template_ids(self):
-        """Gets the sql_template_ids of this FullSqlTask.
+        r"""Gets the sql_template_ids of this FullSqlTask.
 
         SQL模板ID。
 
@@ -476,7 +476,7 @@ class FullSqlTask:
 
     @sql_template_ids.setter
     def sql_template_ids(self, sql_template_ids):
-        """Sets the sql_template_ids of this FullSqlTask.
+        r"""Sets the sql_template_ids of this FullSqlTask.
 
         SQL模板ID。
 
@@ -487,7 +487,7 @@ class FullSqlTask:
 
     @property
     def status(self):
-        """Gets the status of this FullSqlTask.
+        r"""Gets the status of this FullSqlTask.
 
         任务状态（0:等待解析，1:解析中，2:解析完成，-1:失败）。
 
@@ -498,7 +498,7 @@ class FullSqlTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FullSqlTask.
+        r"""Sets the status of this FullSqlTask.
 
         任务状态（0:等待解析，1:解析中，2:解析完成，-1:失败）。
 
@@ -509,7 +509,7 @@ class FullSqlTask:
 
     @property
     def progress(self):
-        """Gets the progress of this FullSqlTask.
+        r"""Gets the progress of this FullSqlTask.
 
         任务进度，取值为0-100。
 
@@ -520,7 +520,7 @@ class FullSqlTask:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this FullSqlTask.
+        r"""Sets the progress of this FullSqlTask.
 
         任务进度，取值为0-100。
 
@@ -531,7 +531,7 @@ class FullSqlTask:
 
     @property
     def reason(self):
-        """Gets the reason of this FullSqlTask.
+        r"""Gets the reason of this FullSqlTask.
 
         失败原因。
 
@@ -542,7 +542,7 @@ class FullSqlTask:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this FullSqlTask.
+        r"""Sets the reason of this FullSqlTask.
 
         失败原因。
 
@@ -553,7 +553,7 @@ class FullSqlTask:
 
     @property
     def create_at(self):
-        """Gets the create_at of this FullSqlTask.
+        r"""Gets the create_at of this FullSqlTask.
 
         创建时间（Unix timestamp），单位：毫秒。
 
@@ -564,7 +564,7 @@ class FullSqlTask:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this FullSqlTask.
+        r"""Sets the create_at of this FullSqlTask.
 
         创建时间（Unix timestamp），单位：毫秒。
 
@@ -575,7 +575,7 @@ class FullSqlTask:
 
     @property
     def update_at(self):
-        """Gets the update_at of this FullSqlTask.
+        r"""Gets the update_at of this FullSqlTask.
 
         更新时间（Unix timestamp），单位：毫秒。
 
@@ -586,7 +586,7 @@ class FullSqlTask:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this FullSqlTask.
+        r"""Sets the update_at of this FullSqlTask.
 
         更新时间（Unix timestamp），单位：毫秒。
 

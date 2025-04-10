@@ -27,7 +27,7 @@ class ResourceTags:
     }
 
     def __init__(self, key=None, values=None):
-        """ResourceTags
+        r"""ResourceTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceTags:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTags.
+        r"""Gets the key of this ResourceTags.
 
         键。  - 最大长度127个unicode字符。  - key不能为空。
 
@@ -59,7 +59,7 @@ class ResourceTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTags.
+        r"""Sets the key of this ResourceTags.
 
         键。  - 最大长度127个unicode字符。  - key不能为空。
 
@@ -70,7 +70,7 @@ class ResourceTags:
 
     @property
     def values(self):
-        """Gets the values of this ResourceTags.
+        r"""Gets the values of this ResourceTags.
 
         值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 
@@ -81,7 +81,7 @@ class ResourceTags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ResourceTags.
+        r"""Sets the values of this ResourceTags.
 
         值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 

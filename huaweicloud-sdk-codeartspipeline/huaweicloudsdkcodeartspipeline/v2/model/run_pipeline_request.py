@@ -29,7 +29,7 @@ class RunPipelineRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, body=None):
-        """RunPipelineRequest
+        r"""RunPipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RunPipelineRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RunPipelineRequest.
+        r"""Gets the project_id of this RunPipelineRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class RunPipelineRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RunPipelineRequest.
+        r"""Sets the project_id of this RunPipelineRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class RunPipelineRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this RunPipelineRequest.
+        r"""Gets the pipeline_id of this RunPipelineRequest.
 
         流水线ID
 
@@ -88,7 +88,7 @@ class RunPipelineRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this RunPipelineRequest.
+        r"""Sets the pipeline_id of this RunPipelineRequest.
 
         流水线ID
 
@@ -99,7 +99,7 @@ class RunPipelineRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunPipelineRequest.
+        r"""Gets the body of this RunPipelineRequest.
 
         :return: The body of this RunPipelineRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTO`
@@ -108,7 +108,7 @@ class RunPipelineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunPipelineRequest.
+        r"""Sets the body of this RunPipelineRequest.
 
         :param body: The body of this RunPipelineRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTO`

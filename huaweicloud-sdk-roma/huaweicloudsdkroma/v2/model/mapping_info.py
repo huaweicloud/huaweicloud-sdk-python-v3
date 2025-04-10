@@ -35,7 +35,7 @@ class MappingInfo:
     }
 
     def __init__(self, source_column=None, source_column_type=None, source_column_length=None, target_column=None, target_column_type=None, target_column_length=None):
-        """MappingInfo
+        r"""MappingInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MappingInfo:
 
     @property
     def source_column(self):
-        """Gets the source_column of this MappingInfo.
+        r"""Gets the source_column of this MappingInfo.
 
         源端字段
 
@@ -89,7 +89,7 @@ class MappingInfo:
 
     @source_column.setter
     def source_column(self, source_column):
-        """Sets the source_column of this MappingInfo.
+        r"""Sets the source_column of this MappingInfo.
 
         源端字段
 
@@ -100,7 +100,7 @@ class MappingInfo:
 
     @property
     def source_column_type(self):
-        """Gets the source_column_type of this MappingInfo.
+        r"""Gets the source_column_type of this MappingInfo.
 
         源端字段类型
 
@@ -111,7 +111,7 @@ class MappingInfo:
 
     @source_column_type.setter
     def source_column_type(self, source_column_type):
-        """Sets the source_column_type of this MappingInfo.
+        r"""Sets the source_column_type of this MappingInfo.
 
         源端字段类型
 
@@ -122,7 +122,7 @@ class MappingInfo:
 
     @property
     def source_column_length(self):
-        """Gets the source_column_length of this MappingInfo.
+        r"""Gets the source_column_length of this MappingInfo.
 
         源端字段长度
 
@@ -133,7 +133,7 @@ class MappingInfo:
 
     @source_column_length.setter
     def source_column_length(self, source_column_length):
-        """Sets the source_column_length of this MappingInfo.
+        r"""Sets the source_column_length of this MappingInfo.
 
         源端字段长度
 
@@ -144,7 +144,7 @@ class MappingInfo:
 
     @property
     def target_column(self):
-        """Gets the target_column of this MappingInfo.
+        r"""Gets the target_column of this MappingInfo.
 
         目标端字段
 
@@ -155,7 +155,7 @@ class MappingInfo:
 
     @target_column.setter
     def target_column(self, target_column):
-        """Sets the target_column of this MappingInfo.
+        r"""Sets the target_column of this MappingInfo.
 
         目标端字段
 
@@ -166,7 +166,7 @@ class MappingInfo:
 
     @property
     def target_column_type(self):
-        """Gets the target_column_type of this MappingInfo.
+        r"""Gets the target_column_type of this MappingInfo.
 
         目标端字段类型
 
@@ -177,7 +177,7 @@ class MappingInfo:
 
     @target_column_type.setter
     def target_column_type(self, target_column_type):
-        """Sets the target_column_type of this MappingInfo.
+        r"""Sets the target_column_type of this MappingInfo.
 
         目标端字段类型
 
@@ -188,7 +188,7 @@ class MappingInfo:
 
     @property
     def target_column_length(self):
-        """Gets the target_column_length of this MappingInfo.
+        r"""Gets the target_column_length of this MappingInfo.
 
         目标端字段长度
 
@@ -199,7 +199,7 @@ class MappingInfo:
 
     @target_column_length.setter
     def target_column_length(self, target_column_length):
-        """Sets the target_column_length of this MappingInfo.
+        r"""Sets the target_column_length of this MappingInfo.
 
         目标端字段长度
 

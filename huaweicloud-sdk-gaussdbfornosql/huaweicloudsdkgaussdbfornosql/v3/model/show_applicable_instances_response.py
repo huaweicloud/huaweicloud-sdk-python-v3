@@ -28,7 +28,7 @@ class ShowApplicableInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, count=None):
-        """ShowApplicableInstancesResponse
+        r"""ShowApplicableInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowApplicableInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ShowApplicableInstancesResponse.
+        r"""Gets the instances of this ShowApplicableInstancesResponse.
 
         实例列表
 
@@ -62,7 +62,7 @@ class ShowApplicableInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ShowApplicableInstancesResponse.
+        r"""Sets the instances of this ShowApplicableInstancesResponse.
 
         实例列表
 
@@ -73,7 +73,7 @@ class ShowApplicableInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowApplicableInstancesResponse.
+        r"""Gets the count of this ShowApplicableInstancesResponse.
 
         应用参数的实例数量限制。
 
@@ -84,7 +84,7 @@ class ShowApplicableInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowApplicableInstancesResponse.
+        r"""Sets the count of this ShowApplicableInstancesResponse.
 
         应用参数的实例数量限制。
 

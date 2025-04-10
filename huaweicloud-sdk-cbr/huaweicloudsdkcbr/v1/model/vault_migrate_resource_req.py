@@ -27,7 +27,7 @@ class VaultMigrateResourceReq:
     }
 
     def __init__(self, destination_vault_id=None, resource_ids=None):
-        """VaultMigrateResourceReq
+        r"""VaultMigrateResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VaultMigrateResourceReq:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this VaultMigrateResourceReq.
+        r"""Gets the destination_vault_id of this VaultMigrateResourceReq.
 
         目标存储库
 
@@ -59,7 +59,7 @@ class VaultMigrateResourceReq:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this VaultMigrateResourceReq.
+        r"""Sets the destination_vault_id of this VaultMigrateResourceReq.
 
         目标存储库
 
@@ -70,7 +70,7 @@ class VaultMigrateResourceReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this VaultMigrateResourceReq.
+        r"""Gets the resource_ids of this VaultMigrateResourceReq.
 
         待迁移的资源ID
 
@@ -81,7 +81,7 @@ class VaultMigrateResourceReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this VaultMigrateResourceReq.
+        r"""Sets the resource_ids of this VaultMigrateResourceReq.
 
         待迁移的资源ID
 

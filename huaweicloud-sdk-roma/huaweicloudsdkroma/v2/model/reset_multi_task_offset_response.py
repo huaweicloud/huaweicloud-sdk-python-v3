@@ -26,7 +26,7 @@ class ResetMultiTaskOffsetResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """ResetMultiTaskOffsetResponse
+        r"""ResetMultiTaskOffsetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetMultiTaskOffsetResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ResetMultiTaskOffsetResponse.
+        r"""Gets the message of this ResetMultiTaskOffsetResponse.
 
         任务重置结果
 
@@ -55,7 +55,7 @@ class ResetMultiTaskOffsetResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ResetMultiTaskOffsetResponse.
+        r"""Sets the message of this ResetMultiTaskOffsetResponse.
 
         任务重置结果
 

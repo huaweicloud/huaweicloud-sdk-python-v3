@@ -26,7 +26,7 @@ class UpdateAnticrawlerRuleTypeResponse(SdkResponse):
     }
 
     def __init__(self, anticrawler_type=None):
-        """UpdateAnticrawlerRuleTypeResponse
+        r"""UpdateAnticrawlerRuleTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAnticrawlerRuleTypeResponse(SdkResponse):
 
     @property
     def anticrawler_type(self):
-        """Gets the anticrawler_type of this UpdateAnticrawlerRuleTypeResponse.
+        r"""Gets the anticrawler_type of this UpdateAnticrawlerRuleTypeResponse.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -55,7 +55,7 @@ class UpdateAnticrawlerRuleTypeResponse(SdkResponse):
 
     @anticrawler_type.setter
     def anticrawler_type(self, anticrawler_type):
-        """Sets the anticrawler_type of this UpdateAnticrawlerRuleTypeResponse.
+        r"""Sets the anticrawler_type of this UpdateAnticrawlerRuleTypeResponse.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 

@@ -26,7 +26,7 @@ class UpdateFeaturesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateFeaturesResponse
+        r"""UpdateFeaturesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateFeaturesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateFeaturesResponse.
+        r"""Gets the job_id of this UpdateFeaturesResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class UpdateFeaturesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateFeaturesResponse.
+        r"""Sets the job_id of this UpdateFeaturesResponse.
 
         工作流ID。
 

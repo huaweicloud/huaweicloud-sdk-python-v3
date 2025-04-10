@@ -29,7 +29,7 @@ class ShowInstanceDetailRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None):
-        """ShowInstanceDetailRequest
+        r"""ShowInstanceDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowInstanceDetailRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowInstanceDetailRequest.
+        r"""Gets the application_id of this ShowInstanceDetailRequest.
 
         应用ID。
 
@@ -65,7 +65,7 @@ class ShowInstanceDetailRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowInstanceDetailRequest.
+        r"""Sets the application_id of this ShowInstanceDetailRequest.
 
         应用ID。
 
@@ -76,7 +76,7 @@ class ShowInstanceDetailRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowInstanceDetailRequest.
+        r"""Gets the component_id of this ShowInstanceDetailRequest.
 
         组件ID。
 
@@ -87,7 +87,7 @@ class ShowInstanceDetailRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowInstanceDetailRequest.
+        r"""Sets the component_id of this ShowInstanceDetailRequest.
 
         组件ID。
 
@@ -98,7 +98,7 @@ class ShowInstanceDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceDetailRequest.
+        r"""Gets the instance_id of this ShowInstanceDetailRequest.
 
         组件实例ID。
 
@@ -109,7 +109,7 @@ class ShowInstanceDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceDetailRequest.
+        r"""Sets the instance_id of this ShowInstanceDetailRequest.
 
         组件实例ID。
 

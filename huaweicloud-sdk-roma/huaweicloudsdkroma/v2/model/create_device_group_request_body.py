@@ -31,7 +31,7 @@ class CreateDeviceGroupRequestBody:
     }
 
     def __init__(self, parent_id=None, name=None, description=None, app_id=None):
-        """CreateDeviceGroupRequestBody
+        r"""CreateDeviceGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateDeviceGroupRequestBody:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateDeviceGroupRequestBody.
+        r"""Gets the parent_id of this CreateDeviceGroupRequestBody.
 
         父分组ID，自动向下取整
 
@@ -72,7 +72,7 @@ class CreateDeviceGroupRequestBody:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateDeviceGroupRequestBody.
+        r"""Sets the parent_id of this CreateDeviceGroupRequestBody.
 
         父分组ID，自动向下取整
 
@@ -83,7 +83,7 @@ class CreateDeviceGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDeviceGroupRequestBody.
+        r"""Gets the name of this CreateDeviceGroupRequestBody.
 
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
@@ -94,7 +94,7 @@ class CreateDeviceGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDeviceGroupRequestBody.
+        r"""Sets the name of this CreateDeviceGroupRequestBody.
 
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
@@ -105,7 +105,7 @@ class CreateDeviceGroupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateDeviceGroupRequestBody.
+        r"""Gets the description of this CreateDeviceGroupRequestBody.
 
         分组描述
 
@@ -116,7 +116,7 @@ class CreateDeviceGroupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDeviceGroupRequestBody.
+        r"""Sets the description of this CreateDeviceGroupRequestBody.
 
         分组描述
 
@@ -127,7 +127,7 @@ class CreateDeviceGroupRequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateDeviceGroupRequestBody.
+        r"""Gets the app_id of this CreateDeviceGroupRequestBody.
 
         分组归属应用ID
 
@@ -138,7 +138,7 @@ class CreateDeviceGroupRequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateDeviceGroupRequestBody.
+        r"""Sets the app_id of this CreateDeviceGroupRequestBody.
 
         分组归属应用ID
 

@@ -25,7 +25,7 @@ class CreateMasterSlavePoolRequestBody:
     }
 
     def __init__(self, pool=None):
-        """CreateMasterSlavePoolRequestBody
+        r"""CreateMasterSlavePoolRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMasterSlavePoolRequestBody:
 
     @property
     def pool(self):
-        """Gets the pool of this CreateMasterSlavePoolRequestBody.
+        r"""Gets the pool of this CreateMasterSlavePoolRequestBody.
 
         :return: The pool of this CreateMasterSlavePoolRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateMasterSlavePoolOption`
@@ -51,7 +51,7 @@ class CreateMasterSlavePoolRequestBody:
 
     @pool.setter
     def pool(self, pool):
-        """Sets the pool of this CreateMasterSlavePoolRequestBody.
+        r"""Sets the pool of this CreateMasterSlavePoolRequestBody.
 
         :param pool: The pool of this CreateMasterSlavePoolRequestBody.
         :type pool: :class:`huaweicloudsdkelb.v3.CreateMasterSlavePoolOption`

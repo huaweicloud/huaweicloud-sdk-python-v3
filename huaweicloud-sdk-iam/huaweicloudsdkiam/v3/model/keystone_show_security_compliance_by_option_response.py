@@ -26,7 +26,7 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
     }
 
     def __init__(self, config=None):
-        """KeystoneShowSecurityComplianceByOptionResponse
+        r"""KeystoneShowSecurityComplianceByOptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this KeystoneShowSecurityComplianceByOptionResponse.
+        r"""Gets the config of this KeystoneShowSecurityComplianceByOptionResponse.
 
         :return: The config of this KeystoneShowSecurityComplianceByOptionResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ConfigByOption`
@@ -53,7 +53,7 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this KeystoneShowSecurityComplianceByOptionResponse.
+        r"""Sets the config of this KeystoneShowSecurityComplianceByOptionResponse.
 
         :param config: The config of this KeystoneShowSecurityComplianceByOptionResponse.
         :type config: :class:`huaweicloudsdkiam.v3.ConfigByOption`

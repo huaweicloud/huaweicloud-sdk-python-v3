@@ -64,7 +64,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, permission_set_id=None, project_id=None, instance_id=None, permission_type=None, permission_action=None, permission_actions=None, permission_action_code=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, sync_status=None, sync_msg=None, url=None):
-        """UpdateSecurityPermissionSetPermissionResponse
+        r"""UpdateSecurityPermissionSetPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the id of this UpdateSecurityPermissionSetPermissionResponse.
 
         id
 
@@ -188,7 +188,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the id of this UpdateSecurityPermissionSetPermissionResponse.
 
         id
 
@@ -199,7 +199,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the permission_set_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限集id
 
@@ -210,7 +210,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the permission_set_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限集id
 
@@ -221,7 +221,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the project_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         项目id
 
@@ -232,7 +232,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the project_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         项目id
 
@@ -243,7 +243,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the instance_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         实例id
 
@@ -254,7 +254,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the instance_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         实例id
 
@@ -265,7 +265,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the permission_type of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限类型, DENY, ALLOW
 
@@ -276,7 +276,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the permission_type of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限类型, DENY, ALLOW
 
@@ -287,7 +287,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def permission_action(self):
-        """Gets the permission_action of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the permission_action of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限操作列表
 
@@ -298,7 +298,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @permission_action.setter
     def permission_action(self, permission_action):
-        """Sets the permission_action of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the permission_action of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限操作列表
 
@@ -309,7 +309,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def permission_actions(self):
-        """Gets the permission_actions of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the permission_actions of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限操作列表
 
@@ -320,7 +320,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @permission_actions.setter
     def permission_actions(self, permission_actions):
-        """Sets the permission_actions of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the permission_actions of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限操作列表
 
@@ -331,7 +331,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def permission_action_code(self):
-        """Gets the permission_action_code of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the permission_action_code of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限操作编码, 位图
 
@@ -342,7 +342,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @permission_action_code.setter
     def permission_action_code(self, permission_action_code):
-        """Sets the permission_action_code of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the permission_action_code of this UpdateSecurityPermissionSetPermissionResponse.
 
         权限操作编码, 位图
 
@@ -353,7 +353,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the cluster_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         集群id
 
@@ -364,7 +364,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the cluster_id of this UpdateSecurityPermissionSetPermissionResponse.
 
         集群id
 
@@ -375,7 +375,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the cluster_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         集群名称
 
@@ -386,7 +386,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the cluster_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         集群名称
 
@@ -397,7 +397,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the datasource_type of this UpdateSecurityPermissionSetPermissionResponse.
 
         数据源类型, HIVE
 
@@ -408,7 +408,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the datasource_type of this UpdateSecurityPermissionSetPermissionResponse.
 
         数据源类型, HIVE
 
@@ -419,7 +419,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the database_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         数据库名称
 
@@ -430,7 +430,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the database_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         数据库名称
 
@@ -441,7 +441,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the schema_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         模式名称
 
@@ -452,7 +452,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the schema_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         模式名称
 
@@ -463,7 +463,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the namespace of this UpdateSecurityPermissionSetPermissionResponse.
 
         命名空间
 
@@ -474,7 +474,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the namespace of this UpdateSecurityPermissionSetPermissionResponse.
 
         命名空间
 
@@ -485,7 +485,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the table_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         表名称
 
@@ -496,7 +496,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the table_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         表名称
 
@@ -507,7 +507,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def column_name(self):
-        """Gets the column_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the column_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         列名称
 
@@ -518,7 +518,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the column_name of this UpdateSecurityPermissionSetPermissionResponse.
 
         列名称
 
@@ -529,7 +529,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def row_level_security(self):
-        """Gets the row_level_security of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the row_level_security of this UpdateSecurityPermissionSetPermissionResponse.
 
         行级策略
 
@@ -540,7 +540,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @row_level_security.setter
     def row_level_security(self, row_level_security):
-        """Sets the row_level_security of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the row_level_security of this UpdateSecurityPermissionSetPermissionResponse.
 
         行级策略
 
@@ -551,7 +551,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the sync_status of this UpdateSecurityPermissionSetPermissionResponse.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -562,7 +562,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the sync_status of this UpdateSecurityPermissionSetPermissionResponse.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -573,7 +573,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the sync_msg of this UpdateSecurityPermissionSetPermissionResponse.
 
         同步信息
 
@@ -584,7 +584,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the sync_msg of this UpdateSecurityPermissionSetPermissionResponse.
 
         同步信息
 
@@ -595,7 +595,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Gets the url of this UpdateSecurityPermissionSetPermissionResponse.
 
         url路径名称。
 
@@ -606,7 +606,7 @@ class UpdateSecurityPermissionSetPermissionResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateSecurityPermissionSetPermissionResponse.
+        r"""Sets the url of this UpdateSecurityPermissionSetPermissionResponse.
 
         url路径名称。
 

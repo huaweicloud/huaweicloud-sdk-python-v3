@@ -35,7 +35,7 @@ class ContainerSettingsDTO:
     }
 
     def __init__(self, configs=None, image_url=None, envs=None, volumes=None, resources=None, ext_devices=None):
-        """ContainerSettingsDTO
+        r"""ContainerSettingsDTO
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ContainerSettingsDTO:
 
     @property
     def configs(self):
-        """Gets the configs of this ContainerSettingsDTO.
+        r"""Gets the configs of this ContainerSettingsDTO.
 
         :return: The configs of this ContainerSettingsDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ContainerConfigsDTO`
@@ -86,7 +86,7 @@ class ContainerSettingsDTO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ContainerSettingsDTO.
+        r"""Sets the configs of this ContainerSettingsDTO.
 
         :param configs: The configs of this ContainerSettingsDTO.
         :type configs: :class:`huaweicloudsdkdris.v1.ContainerConfigsDTO`
@@ -95,7 +95,7 @@ class ContainerSettingsDTO:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ContainerSettingsDTO.
+        r"""Gets the image_url of this ContainerSettingsDTO.
 
         **参数说明**：镜像存储地址。
 
@@ -106,7 +106,7 @@ class ContainerSettingsDTO:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ContainerSettingsDTO.
+        r"""Sets the image_url of this ContainerSettingsDTO.
 
         **参数说明**：镜像存储地址。
 
@@ -117,7 +117,7 @@ class ContainerSettingsDTO:
 
     @property
     def envs(self):
-        """Gets the envs of this ContainerSettingsDTO.
+        r"""Gets the envs of this ContainerSettingsDTO.
 
         **参数说明**：环境变量。
 
@@ -128,7 +128,7 @@ class ContainerSettingsDTO:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ContainerSettingsDTO.
+        r"""Sets the envs of this ContainerSettingsDTO.
 
         **参数说明**：环境变量。
 
@@ -139,7 +139,7 @@ class ContainerSettingsDTO:
 
     @property
     def volumes(self):
-        """Gets the volumes of this ContainerSettingsDTO.
+        r"""Gets the volumes of this ContainerSettingsDTO.
 
         **参数说明**：卷配置。
 
@@ -150,7 +150,7 @@ class ContainerSettingsDTO:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ContainerSettingsDTO.
+        r"""Sets the volumes of this ContainerSettingsDTO.
 
         **参数说明**：卷配置。
 
@@ -161,7 +161,7 @@ class ContainerSettingsDTO:
 
     @property
     def resources(self):
-        """Gets the resources of this ContainerSettingsDTO.
+        r"""Gets the resources of this ContainerSettingsDTO.
 
         :return: The resources of this ContainerSettingsDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ResourceDTO`
@@ -170,7 +170,7 @@ class ContainerSettingsDTO:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ContainerSettingsDTO.
+        r"""Sets the resources of this ContainerSettingsDTO.
 
         :param resources: The resources of this ContainerSettingsDTO.
         :type resources: :class:`huaweicloudsdkdris.v1.ResourceDTO`
@@ -179,7 +179,7 @@ class ContainerSettingsDTO:
 
     @property
     def ext_devices(self):
-        """Gets the ext_devices of this ContainerSettingsDTO.
+        r"""Gets the ext_devices of this ContainerSettingsDTO.
 
         **参数说明**：外挂设备配置。
 
@@ -190,7 +190,7 @@ class ContainerSettingsDTO:
 
     @ext_devices.setter
     def ext_devices(self, ext_devices):
-        """Sets the ext_devices of this ContainerSettingsDTO.
+        r"""Sets the ext_devices of this ContainerSettingsDTO.
 
         **参数说明**：外挂设备配置。
 

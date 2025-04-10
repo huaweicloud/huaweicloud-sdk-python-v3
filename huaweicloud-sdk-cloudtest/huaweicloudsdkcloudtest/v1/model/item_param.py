@@ -57,7 +57,7 @@ class ItemParam:
     }
 
     def __init__(self, basic_value=None, default_value=None, enum_type=None, enum_type_selected=None, format=None, is_big_field=None, max_items=None, max_length=None, maximum=None, min_items=None, min_length=None, minimum=None, pattern=None, type=None, validate_rule=None, value_type=None, x_choice_value=None):
-        """ItemParam
+        r"""ItemParam
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ItemParam:
 
     @property
     def basic_value(self):
-        """Gets the basic_value of this ItemParam.
+        r"""Gets the basic_value of this ItemParam.
 
         :return: The basic_value of this ItemParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AwParamBasicValue`
@@ -164,7 +164,7 @@ class ItemParam:
 
     @basic_value.setter
     def basic_value(self, basic_value):
-        """Sets the basic_value of this ItemParam.
+        r"""Sets the basic_value of this ItemParam.
 
         :param basic_value: The basic_value of this ItemParam.
         :type basic_value: :class:`huaweicloudsdkcloudtest.v1.AwParamBasicValue`
@@ -173,7 +173,7 @@ class ItemParam:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ItemParam.
+        r"""Gets the default_value of this ItemParam.
 
         默认值
 
@@ -184,7 +184,7 @@ class ItemParam:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ItemParam.
+        r"""Sets the default_value of this ItemParam.
 
         默认值
 
@@ -195,7 +195,7 @@ class ItemParam:
 
     @property
     def enum_type(self):
-        """Gets the enum_type of this ItemParam.
+        r"""Gets the enum_type of this ItemParam.
 
         枚举类型
 
@@ -206,7 +206,7 @@ class ItemParam:
 
     @enum_type.setter
     def enum_type(self, enum_type):
-        """Sets the enum_type of this ItemParam.
+        r"""Sets the enum_type of this ItemParam.
 
         枚举类型
 
@@ -217,7 +217,7 @@ class ItemParam:
 
     @property
     def enum_type_selected(self):
-        """Gets the enum_type_selected of this ItemParam.
+        r"""Gets the enum_type_selected of this ItemParam.
 
         当前选中的枚举类型
 
@@ -228,7 +228,7 @@ class ItemParam:
 
     @enum_type_selected.setter
     def enum_type_selected(self, enum_type_selected):
-        """Sets the enum_type_selected of this ItemParam.
+        r"""Sets the enum_type_selected of this ItemParam.
 
         当前选中的枚举类型
 
@@ -239,7 +239,7 @@ class ItemParam:
 
     @property
     def format(self):
-        """Gets the format of this ItemParam.
+        r"""Gets the format of this ItemParam.
 
         num和String有效
 
@@ -250,7 +250,7 @@ class ItemParam:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ItemParam.
+        r"""Sets the format of this ItemParam.
 
         num和String有效
 
@@ -261,7 +261,7 @@ class ItemParam:
 
     @property
     def is_big_field(self):
-        """Gets the is_big_field of this ItemParam.
+        r"""Gets the is_big_field of this ItemParam.
 
         是否是大字段参数
 
@@ -272,7 +272,7 @@ class ItemParam:
 
     @is_big_field.setter
     def is_big_field(self, is_big_field):
-        """Sets the is_big_field of this ItemParam.
+        r"""Sets the is_big_field of this ItemParam.
 
         是否是大字段参数
 
@@ -283,7 +283,7 @@ class ItemParam:
 
     @property
     def max_items(self):
-        """Gets the max_items of this ItemParam.
+        r"""Gets the max_items of this ItemParam.
 
         Array类型最大元素数
 
@@ -294,7 +294,7 @@ class ItemParam:
 
     @max_items.setter
     def max_items(self, max_items):
-        """Sets the max_items of this ItemParam.
+        r"""Sets the max_items of this ItemParam.
 
         Array类型最大元素数
 
@@ -305,7 +305,7 @@ class ItemParam:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ItemParam.
+        r"""Gets the max_length of this ItemParam.
 
         String类型最大长度
 
@@ -316,7 +316,7 @@ class ItemParam:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ItemParam.
+        r"""Sets the max_length of this ItemParam.
 
         String类型最大长度
 
@@ -327,7 +327,7 @@ class ItemParam:
 
     @property
     def maximum(self):
-        """Gets the maximum of this ItemParam.
+        r"""Gets the maximum of this ItemParam.
 
         :return: The maximum of this ItemParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.Number`
@@ -336,7 +336,7 @@ class ItemParam:
 
     @maximum.setter
     def maximum(self, maximum):
-        """Sets the maximum of this ItemParam.
+        r"""Sets the maximum of this ItemParam.
 
         :param maximum: The maximum of this ItemParam.
         :type maximum: :class:`huaweicloudsdkcloudtest.v1.Number`
@@ -345,7 +345,7 @@ class ItemParam:
 
     @property
     def min_items(self):
-        """Gets the min_items of this ItemParam.
+        r"""Gets the min_items of this ItemParam.
 
         Array类型最小元素数
 
@@ -356,7 +356,7 @@ class ItemParam:
 
     @min_items.setter
     def min_items(self, min_items):
-        """Sets the min_items of this ItemParam.
+        r"""Sets the min_items of this ItemParam.
 
         Array类型最小元素数
 
@@ -367,7 +367,7 @@ class ItemParam:
 
     @property
     def min_length(self):
-        """Gets the min_length of this ItemParam.
+        r"""Gets the min_length of this ItemParam.
 
         String类型最小长度
 
@@ -378,7 +378,7 @@ class ItemParam:
 
     @min_length.setter
     def min_length(self, min_length):
-        """Sets the min_length of this ItemParam.
+        r"""Sets the min_length of this ItemParam.
 
         String类型最小长度
 
@@ -389,7 +389,7 @@ class ItemParam:
 
     @property
     def minimum(self):
-        """Gets the minimum of this ItemParam.
+        r"""Gets the minimum of this ItemParam.
 
         :return: The minimum of this ItemParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.Number`
@@ -398,7 +398,7 @@ class ItemParam:
 
     @minimum.setter
     def minimum(self, minimum):
-        """Sets the minimum of this ItemParam.
+        r"""Sets the minimum of this ItemParam.
 
         :param minimum: The minimum of this ItemParam.
         :type minimum: :class:`huaweicloudsdkcloudtest.v1.Number`
@@ -407,7 +407,7 @@ class ItemParam:
 
     @property
     def pattern(self):
-        """Gets the pattern of this ItemParam.
+        r"""Gets the pattern of this ItemParam.
 
         num和String有效
 
@@ -418,7 +418,7 @@ class ItemParam:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this ItemParam.
+        r"""Sets the pattern of this ItemParam.
 
         num和String有效
 
@@ -429,7 +429,7 @@ class ItemParam:
 
     @property
     def type(self):
-        """Gets the type of this ItemParam.
+        r"""Gets the type of this ItemParam.
 
         参数类型
 
@@ -440,7 +440,7 @@ class ItemParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ItemParam.
+        r"""Sets the type of this ItemParam.
 
         参数类型
 
@@ -451,7 +451,7 @@ class ItemParam:
 
     @property
     def validate_rule(self):
-        """Gets the validate_rule of this ItemParam.
+        r"""Gets the validate_rule of this ItemParam.
 
         :return: The validate_rule of this ItemParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ValidateRule`
@@ -460,7 +460,7 @@ class ItemParam:
 
     @validate_rule.setter
     def validate_rule(self, validate_rule):
-        """Sets the validate_rule of this ItemParam.
+        r"""Sets the validate_rule of this ItemParam.
 
         :param validate_rule: The validate_rule of this ItemParam.
         :type validate_rule: :class:`huaweicloudsdkcloudtest.v1.ValidateRule`
@@ -469,7 +469,7 @@ class ItemParam:
 
     @property
     def value_type(self):
-        """Gets the value_type of this ItemParam.
+        r"""Gets the value_type of this ItemParam.
 
         参数值类型 0-基本类型，type字段为String,Integer等基本类型 1-基本类型数组,type字段为List<String>,List<Integer>等基本类型List 2-结构体，type字段为除了基本类型以外的结构体 3-结构体数组，type字段为List<结构体> 5-前端枚举类型
 
@@ -480,7 +480,7 @@ class ItemParam:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this ItemParam.
+        r"""Sets the value_type of this ItemParam.
 
         参数值类型 0-基本类型，type字段为String,Integer等基本类型 1-基本类型数组,type字段为List<String>,List<Integer>等基本类型List 2-结构体，type字段为除了基本类型以外的结构体 3-结构体数组，type字段为List<结构体> 5-前端枚举类型
 
@@ -491,7 +491,7 @@ class ItemParam:
 
     @property
     def x_choice_value(self):
-        """Gets the x_choice_value of this ItemParam.
+        r"""Gets the x_choice_value of this ItemParam.
 
         choice选择关系
 
@@ -502,7 +502,7 @@ class ItemParam:
 
     @x_choice_value.setter
     def x_choice_value(self, x_choice_value):
-        """Sets the x_choice_value of this ItemParam.
+        r"""Sets the x_choice_value of this ItemParam.
 
         choice选择关系
 

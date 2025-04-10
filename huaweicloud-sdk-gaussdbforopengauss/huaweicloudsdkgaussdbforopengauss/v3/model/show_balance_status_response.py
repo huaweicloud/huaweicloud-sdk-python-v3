@@ -26,7 +26,7 @@ class ShowBalanceStatusResponse(SdkResponse):
     }
 
     def __init__(self, balanced=None):
-        """ShowBalanceStatusResponse
+        r"""ShowBalanceStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBalanceStatusResponse(SdkResponse):
 
     @property
     def balanced(self):
-        """Gets the balanced of this ShowBalanceStatusResponse.
+        r"""Gets the balanced of this ShowBalanceStatusResponse.
 
         平衡状态。
 
@@ -55,7 +55,7 @@ class ShowBalanceStatusResponse(SdkResponse):
 
     @balanced.setter
     def balanced(self, balanced):
-        """Sets the balanced of this ShowBalanceStatusResponse.
+        r"""Sets the balanced of this ShowBalanceStatusResponse.
 
         平衡状态。
 

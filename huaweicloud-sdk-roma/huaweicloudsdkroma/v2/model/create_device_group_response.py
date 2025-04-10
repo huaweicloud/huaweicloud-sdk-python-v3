@@ -44,7 +44,7 @@ class CreateDeviceGroupResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, parent_id=None, id=None, name=None, description=None, app_id=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """CreateDeviceGroupResponse
+        r"""CreateDeviceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this CreateDeviceGroupResponse.
+        r"""Gets the permissions of this CreateDeviceGroupResponse.
 
         权限
 
@@ -118,7 +118,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this CreateDeviceGroupResponse.
+        r"""Sets the permissions of this CreateDeviceGroupResponse.
 
         权限
 
@@ -129,7 +129,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateDeviceGroupResponse.
+        r"""Gets the parent_id of this CreateDeviceGroupResponse.
 
         父分组ID
 
@@ -140,7 +140,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateDeviceGroupResponse.
+        r"""Sets the parent_id of this CreateDeviceGroupResponse.
 
         父分组ID
 
@@ -151,7 +151,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDeviceGroupResponse.
+        r"""Gets the id of this CreateDeviceGroupResponse.
 
         分组ID
 
@@ -162,7 +162,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDeviceGroupResponse.
+        r"""Sets the id of this CreateDeviceGroupResponse.
 
         分组ID
 
@@ -173,7 +173,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateDeviceGroupResponse.
+        r"""Gets the name of this CreateDeviceGroupResponse.
 
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
@@ -184,7 +184,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDeviceGroupResponse.
+        r"""Sets the name of this CreateDeviceGroupResponse.
 
         分组名称，支持中文，英文大小写，数字，下划线和中划线,长度2-64
 
@@ -195,7 +195,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateDeviceGroupResponse.
+        r"""Gets the description of this CreateDeviceGroupResponse.
 
         分组描述，长度0-200
 
@@ -206,7 +206,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDeviceGroupResponse.
+        r"""Sets the description of this CreateDeviceGroupResponse.
 
         分组描述，长度0-200
 
@@ -217,7 +217,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateDeviceGroupResponse.
+        r"""Gets the app_id of this CreateDeviceGroupResponse.
 
         分组归属应用ID
 
@@ -228,7 +228,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateDeviceGroupResponse.
+        r"""Sets the app_id of this CreateDeviceGroupResponse.
 
         分组归属应用ID
 
@@ -239,7 +239,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def created_user(self):
-        """Gets the created_user of this CreateDeviceGroupResponse.
+        r"""Gets the created_user of this CreateDeviceGroupResponse.
 
         :return: The created_user of this CreateDeviceGroupResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -248,7 +248,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this CreateDeviceGroupResponse.
+        r"""Sets the created_user of this CreateDeviceGroupResponse.
 
         :param created_user: The created_user of this CreateDeviceGroupResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -257,7 +257,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this CreateDeviceGroupResponse.
+        r"""Gets the last_updated_user of this CreateDeviceGroupResponse.
 
         :return: The last_updated_user of this CreateDeviceGroupResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -266,7 +266,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this CreateDeviceGroupResponse.
+        r"""Sets the last_updated_user of this CreateDeviceGroupResponse.
 
         :param last_updated_user: The last_updated_user of this CreateDeviceGroupResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -275,7 +275,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this CreateDeviceGroupResponse.
+        r"""Gets the created_datetime of this CreateDeviceGroupResponse.
 
         创建时间
 
@@ -286,7 +286,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this CreateDeviceGroupResponse.
+        r"""Sets the created_datetime of this CreateDeviceGroupResponse.
 
         创建时间
 
@@ -297,7 +297,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this CreateDeviceGroupResponse.
+        r"""Gets the last_updated_datetime of this CreateDeviceGroupResponse.
 
         最后修改时间
 
@@ -308,7 +308,7 @@ class CreateDeviceGroupResponse(SdkResponse):
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this CreateDeviceGroupResponse.
+        r"""Sets the last_updated_datetime of this CreateDeviceGroupResponse.
 
         最后修改时间
 

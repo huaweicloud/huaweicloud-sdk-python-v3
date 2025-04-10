@@ -25,7 +25,7 @@ class UpdateReq:
     }
 
     def __init__(self, name=None):
-        """UpdateReq
+        r"""UpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateReq.
+        r"""Gets the name of this UpdateReq.
 
         视频名，长度3~63位。 大小写字母，数字，汉字及部分符号(“_”、“-”、“#”)组成
 
@@ -53,7 +53,7 @@ class UpdateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateReq.
+        r"""Sets the name of this UpdateReq.
 
         视频名，长度3~63位。 大小写字母，数字，汉字及部分符号(“_”、“-”、“#”)组成
 

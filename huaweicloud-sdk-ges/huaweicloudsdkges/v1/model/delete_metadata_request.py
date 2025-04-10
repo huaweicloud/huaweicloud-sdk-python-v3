@@ -25,7 +25,7 @@ class DeleteMetadataRequest:
     }
 
     def __init__(self, metadata_id=None):
-        """DeleteMetadataRequest
+        r"""DeleteMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMetadataRequest:
 
     @property
     def metadata_id(self):
-        """Gets the metadata_id of this DeleteMetadataRequest.
+        r"""Gets the metadata_id of this DeleteMetadataRequest.
 
         元数据ID。
 
@@ -53,7 +53,7 @@ class DeleteMetadataRequest:
 
     @metadata_id.setter
     def metadata_id(self, metadata_id):
-        """Sets the metadata_id of this DeleteMetadataRequest.
+        r"""Sets the metadata_id of this DeleteMetadataRequest.
 
         元数据ID。
 

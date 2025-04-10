@@ -28,7 +28,7 @@ class ListResourcesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, page=None):
-        """ListResourcesByTagsResponse
+        r"""ListResourcesByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourcesByTagsResponse.
+        r"""Gets the resources of this ListResourcesByTagsResponse.
 
         资源列表。
 
@@ -62,7 +62,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourcesByTagsResponse.
+        r"""Sets the resources of this ListResourcesByTagsResponse.
 
         资源列表。
 
@@ -73,7 +73,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListResourcesByTagsResponse.
+        r"""Gets the page of this ListResourcesByTagsResponse.
 
         :return: The page of this ListResourcesByTagsResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListResourcesByTagsResponse.
+        r"""Sets the page of this ListResourcesByTagsResponse.
 
         :param page: The page of this ListResourcesByTagsResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

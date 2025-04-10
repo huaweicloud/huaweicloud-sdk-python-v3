@@ -41,7 +41,7 @@ class NetworkCheckInfoRequestBody:
     }
 
     def __init__(self, domain_connectivity=None, destination_connectivity=None, network_delay=None, network_jitter=None, migration_speed=None, loss_percentage=None, cpu_usage=None, mem_usage=None, evaluation_result=None):
-        """NetworkCheckInfoRequestBody
+        r"""NetworkCheckInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def domain_connectivity(self):
-        """Gets the domain_connectivity of this NetworkCheckInfoRequestBody.
+        r"""Gets the domain_connectivity of this NetworkCheckInfoRequestBody.
 
         域名连通性
 
@@ -103,7 +103,7 @@ class NetworkCheckInfoRequestBody:
 
     @domain_connectivity.setter
     def domain_connectivity(self, domain_connectivity):
-        """Sets the domain_connectivity of this NetworkCheckInfoRequestBody.
+        r"""Sets the domain_connectivity of this NetworkCheckInfoRequestBody.
 
         域名连通性
 
@@ -114,7 +114,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def destination_connectivity(self):
-        """Gets the destination_connectivity of this NetworkCheckInfoRequestBody.
+        r"""Gets the destination_connectivity of this NetworkCheckInfoRequestBody.
 
         目的端连通性
 
@@ -125,7 +125,7 @@ class NetworkCheckInfoRequestBody:
 
     @destination_connectivity.setter
     def destination_connectivity(self, destination_connectivity):
-        """Sets the destination_connectivity of this NetworkCheckInfoRequestBody.
+        r"""Sets the destination_connectivity of this NetworkCheckInfoRequestBody.
 
         目的端连通性
 
@@ -136,7 +136,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def network_delay(self):
-        """Gets the network_delay of this NetworkCheckInfoRequestBody.
+        r"""Gets the network_delay of this NetworkCheckInfoRequestBody.
 
         网络时延
 
@@ -147,7 +147,7 @@ class NetworkCheckInfoRequestBody:
 
     @network_delay.setter
     def network_delay(self, network_delay):
-        """Sets the network_delay of this NetworkCheckInfoRequestBody.
+        r"""Sets the network_delay of this NetworkCheckInfoRequestBody.
 
         网络时延
 
@@ -158,7 +158,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def network_jitter(self):
-        """Gets the network_jitter of this NetworkCheckInfoRequestBody.
+        r"""Gets the network_jitter of this NetworkCheckInfoRequestBody.
 
         网络抖动
 
@@ -169,7 +169,7 @@ class NetworkCheckInfoRequestBody:
 
     @network_jitter.setter
     def network_jitter(self, network_jitter):
-        """Sets the network_jitter of this NetworkCheckInfoRequestBody.
+        r"""Sets the network_jitter of this NetworkCheckInfoRequestBody.
 
         网络抖动
 
@@ -180,7 +180,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def migration_speed(self):
-        """Gets the migration_speed of this NetworkCheckInfoRequestBody.
+        r"""Gets the migration_speed of this NetworkCheckInfoRequestBody.
 
         带宽
 
@@ -191,7 +191,7 @@ class NetworkCheckInfoRequestBody:
 
     @migration_speed.setter
     def migration_speed(self, migration_speed):
-        """Sets the migration_speed of this NetworkCheckInfoRequestBody.
+        r"""Sets the migration_speed of this NetworkCheckInfoRequestBody.
 
         带宽
 
@@ -202,7 +202,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def loss_percentage(self):
-        """Gets the loss_percentage of this NetworkCheckInfoRequestBody.
+        r"""Gets the loss_percentage of this NetworkCheckInfoRequestBody.
 
         丢包
 
@@ -213,7 +213,7 @@ class NetworkCheckInfoRequestBody:
 
     @loss_percentage.setter
     def loss_percentage(self, loss_percentage):
-        """Sets the loss_percentage of this NetworkCheckInfoRequestBody.
+        r"""Sets the loss_percentage of this NetworkCheckInfoRequestBody.
 
         丢包
 
@@ -224,7 +224,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def cpu_usage(self):
-        """Gets the cpu_usage of this NetworkCheckInfoRequestBody.
+        r"""Gets the cpu_usage of this NetworkCheckInfoRequestBody.
 
         CPU占用
 
@@ -235,7 +235,7 @@ class NetworkCheckInfoRequestBody:
 
     @cpu_usage.setter
     def cpu_usage(self, cpu_usage):
-        """Sets the cpu_usage of this NetworkCheckInfoRequestBody.
+        r"""Sets the cpu_usage of this NetworkCheckInfoRequestBody.
 
         CPU占用
 
@@ -246,7 +246,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def mem_usage(self):
-        """Gets the mem_usage of this NetworkCheckInfoRequestBody.
+        r"""Gets the mem_usage of this NetworkCheckInfoRequestBody.
 
         内存占用
 
@@ -257,7 +257,7 @@ class NetworkCheckInfoRequestBody:
 
     @mem_usage.setter
     def mem_usage(self, mem_usage):
-        """Sets the mem_usage of this NetworkCheckInfoRequestBody.
+        r"""Sets the mem_usage of this NetworkCheckInfoRequestBody.
 
         内存占用
 
@@ -268,7 +268,7 @@ class NetworkCheckInfoRequestBody:
 
     @property
     def evaluation_result(self):
-        """Gets the evaluation_result of this NetworkCheckInfoRequestBody.
+        r"""Gets the evaluation_result of this NetworkCheckInfoRequestBody.
 
         评估结果
 
@@ -279,7 +279,7 @@ class NetworkCheckInfoRequestBody:
 
     @evaluation_result.setter
     def evaluation_result(self, evaluation_result):
-        """Sets the evaluation_result of this NetworkCheckInfoRequestBody.
+        r"""Sets the evaluation_result of this NetworkCheckInfoRequestBody.
 
         评估结果
 

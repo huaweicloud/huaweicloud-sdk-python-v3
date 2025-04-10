@@ -25,7 +25,7 @@ class ListLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None):
-        """ListLogStreamRequest
+        r"""ListLogStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLogStreamRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListLogStreamRequest.
+        r"""Gets the log_group_id of this ListLogStreamRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。
 
@@ -53,7 +53,7 @@ class ListLogStreamRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListLogStreamRequest.
+        r"""Sets the log_group_id of this ListLogStreamRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。
 

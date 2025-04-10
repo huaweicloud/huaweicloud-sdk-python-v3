@@ -27,7 +27,7 @@ class UpdateTopicRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """UpdateTopicRequest
+        r"""UpdateTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTopicRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateTopicRequest.
+        r"""Gets the topic_urn of this UpdateTopicRequest.
 
         Topic的唯一的资源标识。可以通过[查看主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class UpdateTopicRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateTopicRequest.
+        r"""Sets the topic_urn of this UpdateTopicRequest.
 
         Topic的唯一的资源标识。可以通过[查看主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class UpdateTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTopicRequest.
+        r"""Gets the body of this UpdateTopicRequest.
 
         :return: The body of this UpdateTopicRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicRequestBody`
@@ -80,7 +80,7 @@ class UpdateTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTopicRequest.
+        r"""Sets the body of this UpdateTopicRequest.
 
         :param body: The body of this UpdateTopicRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateTopicRequestBody`

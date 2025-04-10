@@ -43,7 +43,7 @@ class RabbitMQExtendProductInfoEntity:
     }
 
     def __init__(self, type=None, product_id=None, ecs_flavor_id=None, arch_types=None, charging_mode=None, ios=None, properties=None, available_zones=None, unavailable_zones=None, support_features=None):
-        """RabbitMQExtendProductInfoEntity
+        r"""RabbitMQExtendProductInfoEntity
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def type(self):
-        """Gets the type of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the type of this RabbitMQExtendProductInfoEntity.
 
         实例类型
 
@@ -117,7 +117,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the type of this RabbitMQExtendProductInfoEntity.
 
         实例类型
 
@@ -128,7 +128,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def product_id(self):
-        """Gets the product_id of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the product_id of this RabbitMQExtendProductInfoEntity.
 
         产品ID。
 
@@ -139,7 +139,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the product_id of this RabbitMQExtendProductInfoEntity.
 
         产品ID。
 
@@ -150,7 +150,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def ecs_flavor_id(self):
-        """Gets the ecs_flavor_id of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the ecs_flavor_id of this RabbitMQExtendProductInfoEntity.
 
         该产品使用的ECS规格。
 
@@ -161,7 +161,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @ecs_flavor_id.setter
     def ecs_flavor_id(self, ecs_flavor_id):
-        """Sets the ecs_flavor_id of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the ecs_flavor_id of this RabbitMQExtendProductInfoEntity.
 
         该产品使用的ECS规格。
 
@@ -172,7 +172,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def arch_types(self):
-        """Gets the arch_types of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the arch_types of this RabbitMQExtendProductInfoEntity.
 
         支持的CPU架构类型
 
@@ -183,7 +183,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @arch_types.setter
     def arch_types(self, arch_types):
-        """Sets the arch_types of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the arch_types of this RabbitMQExtendProductInfoEntity.
 
         支持的CPU架构类型
 
@@ -194,7 +194,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the charging_mode of this RabbitMQExtendProductInfoEntity.
 
         支持的计费模式类型。
 
@@ -205,7 +205,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the charging_mode of this RabbitMQExtendProductInfoEntity.
 
         支持的计费模式类型。
 
@@ -216,7 +216,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def ios(self):
-        """Gets the ios of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the ios of this RabbitMQExtendProductInfoEntity.
 
         磁盘IO信息。
 
@@ -227,7 +227,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @ios.setter
     def ios(self, ios):
-        """Sets the ios of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the ios of this RabbitMQExtendProductInfoEntity.
 
         磁盘IO信息。
 
@@ -238,7 +238,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the properties of this RabbitMQExtendProductInfoEntity.
 
         :return: The properties of this RabbitMQExtendProductInfoEntity.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.RabbitMQExtendProductPropertiesEntity`
@@ -247,7 +247,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the properties of this RabbitMQExtendProductInfoEntity.
 
         :param properties: The properties of this RabbitMQExtendProductInfoEntity.
         :type properties: :class:`huaweicloudsdkrabbitmq.v2.RabbitMQExtendProductPropertiesEntity`
@@ -256,7 +256,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the available_zones of this RabbitMQExtendProductInfoEntity.
 
         有可用资源的可用区列表。
 
@@ -267,7 +267,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the available_zones of this RabbitMQExtendProductInfoEntity.
 
         有可用资源的可用区列表。
 
@@ -278,7 +278,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the unavailable_zones of this RabbitMQExtendProductInfoEntity.
 
         资源售罄的可用区列表
 
@@ -289,7 +289,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the unavailable_zones of this RabbitMQExtendProductInfoEntity.
 
         资源售罄的可用区列表
 
@@ -300,7 +300,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @property
     def support_features(self):
-        """Gets the support_features of this RabbitMQExtendProductInfoEntity.
+        r"""Gets the support_features of this RabbitMQExtendProductInfoEntity.
 
         支持的特性功能。
 
@@ -311,7 +311,7 @@ class RabbitMQExtendProductInfoEntity:
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this RabbitMQExtendProductInfoEntity.
+        r"""Sets the support_features of this RabbitMQExtendProductInfoEntity.
 
         支持的特性功能。
 

@@ -27,7 +27,7 @@ class ParamGroup:
     }
 
     def __init__(self, id=None, name=None):
-        """ParamGroup
+        r"""ParamGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ParamGroup:
 
     @property
     def id(self):
-        """Gets the id of this ParamGroup.
+        r"""Gets the id of this ParamGroup.
 
         参数组ID。
 
@@ -61,7 +61,7 @@ class ParamGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ParamGroup.
+        r"""Sets the id of this ParamGroup.
 
         参数组ID。
 
@@ -72,7 +72,7 @@ class ParamGroup:
 
     @property
     def name(self):
-        """Gets the name of this ParamGroup.
+        r"""Gets the name of this ParamGroup.
 
         参数组名。
 
@@ -83,7 +83,7 @@ class ParamGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParamGroup.
+        r"""Sets the name of this ParamGroup.
 
         参数组名。
 

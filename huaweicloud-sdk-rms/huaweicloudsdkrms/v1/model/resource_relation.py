@@ -33,7 +33,7 @@ class ResourceRelation:
     }
 
     def __init__(self, relation_type=None, from_resource_type=None, to_resource_type=None, from_resource_id=None, to_resource_id=None):
-        """ResourceRelation
+        r"""ResourceRelation
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResourceRelation:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this ResourceRelation.
+        r"""Gets the relation_type of this ResourceRelation.
 
         关系类型
 
@@ -82,7 +82,7 @@ class ResourceRelation:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this ResourceRelation.
+        r"""Sets the relation_type of this ResourceRelation.
 
         关系类型
 
@@ -93,7 +93,7 @@ class ResourceRelation:
 
     @property
     def from_resource_type(self):
-        """Gets the from_resource_type of this ResourceRelation.
+        r"""Gets the from_resource_type of this ResourceRelation.
 
         源资源类型
 
@@ -104,7 +104,7 @@ class ResourceRelation:
 
     @from_resource_type.setter
     def from_resource_type(self, from_resource_type):
-        """Sets the from_resource_type of this ResourceRelation.
+        r"""Sets the from_resource_type of this ResourceRelation.
 
         源资源类型
 
@@ -115,7 +115,7 @@ class ResourceRelation:
 
     @property
     def to_resource_type(self):
-        """Gets the to_resource_type of this ResourceRelation.
+        r"""Gets the to_resource_type of this ResourceRelation.
 
         目的资源类型
 
@@ -126,7 +126,7 @@ class ResourceRelation:
 
     @to_resource_type.setter
     def to_resource_type(self, to_resource_type):
-        """Sets the to_resource_type of this ResourceRelation.
+        r"""Sets the to_resource_type of this ResourceRelation.
 
         目的资源类型
 
@@ -137,7 +137,7 @@ class ResourceRelation:
 
     @property
     def from_resource_id(self):
-        """Gets the from_resource_id of this ResourceRelation.
+        r"""Gets the from_resource_id of this ResourceRelation.
 
         源资源ID
 
@@ -148,7 +148,7 @@ class ResourceRelation:
 
     @from_resource_id.setter
     def from_resource_id(self, from_resource_id):
-        """Sets the from_resource_id of this ResourceRelation.
+        r"""Sets the from_resource_id of this ResourceRelation.
 
         源资源ID
 
@@ -159,7 +159,7 @@ class ResourceRelation:
 
     @property
     def to_resource_id(self):
-        """Gets the to_resource_id of this ResourceRelation.
+        r"""Gets the to_resource_id of this ResourceRelation.
 
         目的资源ID
 
@@ -170,7 +170,7 @@ class ResourceRelation:
 
     @to_resource_id.setter
     def to_resource_id(self, to_resource_id):
-        """Sets the to_resource_id of this ResourceRelation.
+        r"""Sets the to_resource_id of this ResourceRelation.
 
         目的资源ID
 

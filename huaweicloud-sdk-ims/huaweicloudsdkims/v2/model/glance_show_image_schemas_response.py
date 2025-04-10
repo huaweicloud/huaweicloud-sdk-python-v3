@@ -32,7 +32,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
     }
 
     def __init__(self, additional_properties=None, name=None, properties=None, links=None):
-        """GlanceShowImageSchemasResponse
+        r"""GlanceShowImageSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @property
     def additional_properties(self):
-        """Gets the additional_properties of this GlanceShowImageSchemasResponse.
+        r"""Gets the additional_properties of this GlanceShowImageSchemasResponse.
 
         :return: The additional_properties of this GlanceShowImageSchemasResponse.
         :rtype: :class:`huaweicloudsdkims.v2.AdditionalProperties`
@@ -74,7 +74,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @additional_properties.setter
     def additional_properties(self, additional_properties):
-        """Sets the additional_properties of this GlanceShowImageSchemasResponse.
+        r"""Sets the additional_properties of this GlanceShowImageSchemasResponse.
 
         :param additional_properties: The additional_properties of this GlanceShowImageSchemasResponse.
         :type additional_properties: :class:`huaweicloudsdkims.v2.AdditionalProperties`
@@ -83,7 +83,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GlanceShowImageSchemasResponse.
+        r"""Gets the name of this GlanceShowImageSchemasResponse.
 
         视图名称。
 
@@ -94,7 +94,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceShowImageSchemasResponse.
+        r"""Sets the name of this GlanceShowImageSchemasResponse.
 
         视图名称。
 
@@ -105,7 +105,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this GlanceShowImageSchemasResponse.
+        r"""Gets the properties of this GlanceShowImageSchemasResponse.
 
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
@@ -116,7 +116,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this GlanceShowImageSchemasResponse.
+        r"""Sets the properties of this GlanceShowImageSchemasResponse.
 
         镜像属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
@@ -127,7 +127,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this GlanceShowImageSchemasResponse.
+        r"""Gets the links of this GlanceShowImageSchemasResponse.
 
         视图链接。
 
@@ -138,7 +138,7 @@ class GlanceShowImageSchemasResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this GlanceShowImageSchemasResponse.
+        r"""Sets the links of this GlanceShowImageSchemasResponse.
 
         视图链接。
 

@@ -27,7 +27,7 @@ class CreateDialogUrlRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateDialogUrlRequest
+        r"""CreateDialogUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDialogUrlRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateDialogUrlRequest.
+        r"""Gets the x_app_user_id of this CreateDialogUrlRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateDialogUrlRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateDialogUrlRequest.
+        r"""Sets the x_app_user_id of this CreateDialogUrlRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateDialogUrlRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDialogUrlRequest.
+        r"""Gets the body of this CreateDialogUrlRequest.
 
         :return: The body of this CreateDialogUrlRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDialogUrlReq`
@@ -81,7 +81,7 @@ class CreateDialogUrlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDialogUrlRequest.
+        r"""Sets the body of this CreateDialogUrlRequest.
 
         :param body: The body of this CreateDialogUrlRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateDialogUrlReq`

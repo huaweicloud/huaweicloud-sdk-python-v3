@@ -27,7 +27,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
     }
 
     def __init__(self, audio_uploading_url=None, txt_uploading_url=None):
-        """CreateTrainingJobRspSegmentUploadingUrl
+        r"""CreateTrainingJobRspSegmentUploadingUrl
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
 
     @property
     def audio_uploading_url(self):
-        """Gets the audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
+        r"""Gets the audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
         音频上传的地址。  通过该obs地址上传时，需设置content-type为audio/wav
 
@@ -61,7 +61,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
 
     @audio_uploading_url.setter
     def audio_uploading_url(self, audio_uploading_url):
-        """Sets the audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
+        r"""Sets the audio_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
         音频上传的地址。  通过该obs地址上传时，需设置content-type为audio/wav
 
@@ -72,7 +72,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
 
     @property
     def txt_uploading_url(self):
-        """Gets the txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
+        r"""Gets the txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
         文本上传的地址。  通过该obs地址上传时需设置content-type为text/plain
 
@@ -83,7 +83,7 @@ class CreateTrainingJobRspSegmentUploadingUrl:
 
     @txt_uploading_url.setter
     def txt_uploading_url(self, txt_uploading_url):
-        """Sets the txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
+        r"""Sets the txt_uploading_url of this CreateTrainingJobRspSegmentUploadingUrl.
 
         文本上传的地址。  通过该obs地址上传时需设置content-type为text/plain
 

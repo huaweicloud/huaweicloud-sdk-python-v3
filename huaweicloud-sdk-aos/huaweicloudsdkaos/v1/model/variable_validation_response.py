@@ -27,7 +27,7 @@ class VariableValidationResponse:
     }
 
     def __init__(self, condition=None, error_message=None):
-        """VariableValidationResponse
+        r"""VariableValidationResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VariableValidationResponse:
 
     @property
     def condition(self):
-        """Gets the condition of this VariableValidationResponse.
+        r"""Gets the condition of this VariableValidationResponse.
 
         校验表达式
 
@@ -61,7 +61,7 @@ class VariableValidationResponse:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this VariableValidationResponse.
+        r"""Sets the condition of this VariableValidationResponse.
 
         校验表达式
 
@@ -72,7 +72,7 @@ class VariableValidationResponse:
 
     @property
     def error_message(self):
-        """Gets the error_message of this VariableValidationResponse.
+        r"""Gets the error_message of this VariableValidationResponse.
 
         校验失败后的错误信息
 
@@ -83,7 +83,7 @@ class VariableValidationResponse:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this VariableValidationResponse.
+        r"""Sets the error_message of this VariableValidationResponse.
 
         校验失败后的错误信息
 

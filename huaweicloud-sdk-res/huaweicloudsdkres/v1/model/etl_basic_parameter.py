@@ -29,7 +29,7 @@ class EtlBasicParameter:
     }
 
     def __init__(self, user_features=None, item_features=None, rank_etl_filter=None):
-        """EtlBasicParameter
+        r"""EtlBasicParameter
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EtlBasicParameter:
 
     @property
     def user_features(self):
-        """Gets the user_features of this EtlBasicParameter.
+        r"""Gets the user_features of this EtlBasicParameter.
 
         用户特征。
 
@@ -68,7 +68,7 @@ class EtlBasicParameter:
 
     @user_features.setter
     def user_features(self, user_features):
-        """Sets the user_features of this EtlBasicParameter.
+        r"""Sets the user_features of this EtlBasicParameter.
 
         用户特征。
 
@@ -79,7 +79,7 @@ class EtlBasicParameter:
 
     @property
     def item_features(self):
-        """Gets the item_features of this EtlBasicParameter.
+        r"""Gets the item_features of this EtlBasicParameter.
 
         物品特征。
 
@@ -90,7 +90,7 @@ class EtlBasicParameter:
 
     @item_features.setter
     def item_features(self, item_features):
-        """Sets the item_features of this EtlBasicParameter.
+        r"""Sets the item_features of this EtlBasicParameter.
 
         物品特征。
 
@@ -101,7 +101,7 @@ class EtlBasicParameter:
 
     @property
     def rank_etl_filter(self):
-        """Gets the rank_etl_filter of this EtlBasicParameter.
+        r"""Gets the rank_etl_filter of this EtlBasicParameter.
 
         :return: The rank_etl_filter of this EtlBasicParameter.
         :rtype: :class:`huaweicloudsdkres.v1.RankETLFilter`
@@ -110,7 +110,7 @@ class EtlBasicParameter:
 
     @rank_etl_filter.setter
     def rank_etl_filter(self, rank_etl_filter):
-        """Sets the rank_etl_filter of this EtlBasicParameter.
+        r"""Sets the rank_etl_filter of this EtlBasicParameter.
 
         :param rank_etl_filter: The rank_etl_filter of this EtlBasicParameter.
         :type rank_etl_filter: :class:`huaweicloudsdkres.v1.RankETLFilter`

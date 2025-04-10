@@ -33,7 +33,7 @@ class CreateTuningReq:
     }
 
     def __init__(self, database_name=None, schema_name=None, sql_script=None, node_type=None, node_id=None):
-        """CreateTuningReq
+        r"""CreateTuningReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateTuningReq:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateTuningReq.
+        r"""Gets the database_name of this CreateTuningReq.
 
         数据库名称
 
@@ -80,7 +80,7 @@ class CreateTuningReq:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateTuningReq.
+        r"""Sets the database_name of this CreateTuningReq.
 
         数据库名称
 
@@ -91,7 +91,7 @@ class CreateTuningReq:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this CreateTuningReq.
+        r"""Gets the schema_name of this CreateTuningReq.
 
         schema名称
 
@@ -102,7 +102,7 @@ class CreateTuningReq:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this CreateTuningReq.
+        r"""Sets the schema_name of this CreateTuningReq.
 
         schema名称
 
@@ -113,7 +113,7 @@ class CreateTuningReq:
 
     @property
     def sql_script(self):
-        """Gets the sql_script of this CreateTuningReq.
+        r"""Gets the sql_script of this CreateTuningReq.
 
         sql脚本
 
@@ -124,7 +124,7 @@ class CreateTuningReq:
 
     @sql_script.setter
     def sql_script(self, sql_script):
-        """Sets the sql_script of this CreateTuningReq.
+        r"""Sets the sql_script of this CreateTuningReq.
 
         sql脚本
 
@@ -135,7 +135,7 @@ class CreateTuningReq:
 
     @property
     def node_type(self):
-        """Gets the node_type of this CreateTuningReq.
+        r"""Gets the node_type of this CreateTuningReq.
 
         节点类型
 
@@ -146,7 +146,7 @@ class CreateTuningReq:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this CreateTuningReq.
+        r"""Sets the node_type of this CreateTuningReq.
 
         节点类型
 
@@ -157,7 +157,7 @@ class CreateTuningReq:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateTuningReq.
+        r"""Gets the node_id of this CreateTuningReq.
 
         节点Id
 
@@ -168,7 +168,7 @@ class CreateTuningReq:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateTuningReq.
+        r"""Sets the node_id of this CreateTuningReq.
 
         节点Id
 

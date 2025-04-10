@@ -27,7 +27,7 @@ class ReceiveModeEnum:
     }
 
     def __init__(self):
-        """ReceiveModeEnum
+        r"""ReceiveModeEnum
 
         The model defined in huaweicloud sdk
 

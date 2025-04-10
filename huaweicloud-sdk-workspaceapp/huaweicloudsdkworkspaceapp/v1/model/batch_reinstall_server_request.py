@@ -25,7 +25,7 @@ class BatchReinstallServerRequest:
     }
 
     def __init__(self, body=None):
-        """BatchReinstallServerRequest
+        r"""BatchReinstallServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchReinstallServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchReinstallServerRequest.
+        r"""Gets the body of this BatchReinstallServerRequest.
 
         :return: The body of this BatchReinstallServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchReinstallServerReq`
@@ -52,7 +52,7 @@ class BatchReinstallServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchReinstallServerRequest.
+        r"""Sets the body of this BatchReinstallServerRequest.
 
         :param body: The body of this BatchReinstallServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchReinstallServerReq`

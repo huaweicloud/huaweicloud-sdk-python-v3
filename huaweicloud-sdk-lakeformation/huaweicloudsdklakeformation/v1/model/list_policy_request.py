@@ -31,7 +31,7 @@ class ListPolicyRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, marker=None, reverse_page=None):
-        """ListPolicyRequest
+        r"""ListPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPolicyRequest.
+        r"""Gets the instance_id of this ListPolicyRequest.
 
         instance id
 
@@ -74,7 +74,7 @@ class ListPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPolicyRequest.
+        r"""Sets the instance_id of this ListPolicyRequest.
 
         instance id
 
@@ -85,7 +85,7 @@ class ListPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyRequest.
+        r"""Gets the limit of this ListPolicyRequest.
 
         limit
 
@@ -96,7 +96,7 @@ class ListPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyRequest.
+        r"""Sets the limit of this ListPolicyRequest.
 
         limit
 
@@ -107,7 +107,7 @@ class ListPolicyRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPolicyRequest.
+        r"""Gets the marker of this ListPolicyRequest.
 
         marker
 
@@ -118,7 +118,7 @@ class ListPolicyRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPolicyRequest.
+        r"""Sets the marker of this ListPolicyRequest.
 
         marker
 
@@ -129,7 +129,7 @@ class ListPolicyRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListPolicyRequest.
+        r"""Gets the reverse_page of this ListPolicyRequest.
 
         是否查询上一页
 
@@ -140,7 +140,7 @@ class ListPolicyRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListPolicyRequest.
+        r"""Sets the reverse_page of this ListPolicyRequest.
 
         是否查询上一页
 

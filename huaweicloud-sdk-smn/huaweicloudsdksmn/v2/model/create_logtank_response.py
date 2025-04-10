@@ -28,7 +28,7 @@ class CreateLogtankResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, id=None):
-        """CreateLogtankResponse
+        r"""CreateLogtankResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateLogtankResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateLogtankResponse.
+        r"""Gets the request_id of this CreateLogtankResponse.
 
         请求的唯一标识。
 
@@ -62,7 +62,7 @@ class CreateLogtankResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateLogtankResponse.
+        r"""Sets the request_id of this CreateLogtankResponse.
 
         请求的唯一标识。
 
@@ -73,7 +73,7 @@ class CreateLogtankResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateLogtankResponse.
+        r"""Gets the id of this CreateLogtankResponse.
 
         云日志信息唯一的资源标识。
 
@@ -84,7 +84,7 @@ class CreateLogtankResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateLogtankResponse.
+        r"""Sets the id of this CreateLogtankResponse.
 
         云日志信息唯一的资源标识。
 

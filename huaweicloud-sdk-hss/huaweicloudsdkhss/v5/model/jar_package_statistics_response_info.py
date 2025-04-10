@@ -27,7 +27,7 @@ class JarPackageStatisticsResponseInfo:
     }
 
     def __init__(self, file_name=None, num=None):
-        """JarPackageStatisticsResponseInfo
+        r"""JarPackageStatisticsResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JarPackageStatisticsResponseInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this JarPackageStatisticsResponseInfo.
+        r"""Gets the file_name of this JarPackageStatisticsResponseInfo.
 
         Jar包名称
 
@@ -61,7 +61,7 @@ class JarPackageStatisticsResponseInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this JarPackageStatisticsResponseInfo.
+        r"""Sets the file_name of this JarPackageStatisticsResponseInfo.
 
         Jar包名称
 
@@ -72,7 +72,7 @@ class JarPackageStatisticsResponseInfo:
 
     @property
     def num(self):
-        """Gets the num of this JarPackageStatisticsResponseInfo.
+        r"""Gets the num of this JarPackageStatisticsResponseInfo.
 
         Jar包统计信息总数
 
@@ -83,7 +83,7 @@ class JarPackageStatisticsResponseInfo:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this JarPackageStatisticsResponseInfo.
+        r"""Sets the num of this JarPackageStatisticsResponseInfo.
 
         Jar包统计信息总数
 

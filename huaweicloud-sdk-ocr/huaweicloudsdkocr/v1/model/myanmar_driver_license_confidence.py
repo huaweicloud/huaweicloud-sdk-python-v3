@@ -47,7 +47,7 @@ class MyanmarDriverLicenseConfidence:
     }
 
     def __init__(self, card_number=None, card_number_en=None, name=None, name_en=None, nrc_id=None, nrc_id_en=None, birth=None, birth_en=None, blood_group=None, blood_group_en=None, expiried_date=None, expiried_date_en=None):
-        """MyanmarDriverLicenseConfidence
+        r"""MyanmarDriverLicenseConfidence
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def card_number(self):
-        """Gets the card_number of this MyanmarDriverLicenseConfidence.
+        r"""Gets the card_number of this MyanmarDriverLicenseConfidence.
 
         缅文驾驶证号置信度。 
 
@@ -131,7 +131,7 @@ class MyanmarDriverLicenseConfidence:
 
     @card_number.setter
     def card_number(self, card_number):
-        """Sets the card_number of this MyanmarDriverLicenseConfidence.
+        r"""Sets the card_number of this MyanmarDriverLicenseConfidence.
 
         缅文驾驶证号置信度。 
 
@@ -142,7 +142,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def card_number_en(self):
-        """Gets the card_number_en of this MyanmarDriverLicenseConfidence.
+        r"""Gets the card_number_en of this MyanmarDriverLicenseConfidence.
 
         英文驾驶证号置信度。 
 
@@ -153,7 +153,7 @@ class MyanmarDriverLicenseConfidence:
 
     @card_number_en.setter
     def card_number_en(self, card_number_en):
-        """Sets the card_number_en of this MyanmarDriverLicenseConfidence.
+        r"""Sets the card_number_en of this MyanmarDriverLicenseConfidence.
 
         英文驾驶证号置信度。 
 
@@ -164,7 +164,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def name(self):
-        """Gets the name of this MyanmarDriverLicenseConfidence.
+        r"""Gets the name of this MyanmarDriverLicenseConfidence.
 
         缅文名字置信度。 
 
@@ -175,7 +175,7 @@ class MyanmarDriverLicenseConfidence:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MyanmarDriverLicenseConfidence.
+        r"""Sets the name of this MyanmarDriverLicenseConfidence.
 
         缅文名字置信度。 
 
@@ -186,7 +186,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def name_en(self):
-        """Gets the name_en of this MyanmarDriverLicenseConfidence.
+        r"""Gets the name_en of this MyanmarDriverLicenseConfidence.
 
         英文名字置信度。 
 
@@ -197,7 +197,7 @@ class MyanmarDriverLicenseConfidence:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this MyanmarDriverLicenseConfidence.
+        r"""Sets the name_en of this MyanmarDriverLicenseConfidence.
 
         英文名字置信度。 
 
@@ -208,7 +208,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def nrc_id(self):
-        """Gets the nrc_id of this MyanmarDriverLicenseConfidence.
+        r"""Gets the nrc_id of this MyanmarDriverLicenseConfidence.
 
         缅文nrc号码置信度。 
 
@@ -219,7 +219,7 @@ class MyanmarDriverLicenseConfidence:
 
     @nrc_id.setter
     def nrc_id(self, nrc_id):
-        """Sets the nrc_id of this MyanmarDriverLicenseConfidence.
+        r"""Sets the nrc_id of this MyanmarDriverLicenseConfidence.
 
         缅文nrc号码置信度。 
 
@@ -230,7 +230,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def nrc_id_en(self):
-        """Gets the nrc_id_en of this MyanmarDriverLicenseConfidence.
+        r"""Gets the nrc_id_en of this MyanmarDriverLicenseConfidence.
 
         英文nrc号码置信度。 
 
@@ -241,7 +241,7 @@ class MyanmarDriverLicenseConfidence:
 
     @nrc_id_en.setter
     def nrc_id_en(self, nrc_id_en):
-        """Sets the nrc_id_en of this MyanmarDriverLicenseConfidence.
+        r"""Sets the nrc_id_en of this MyanmarDriverLicenseConfidence.
 
         英文nrc号码置信度。 
 
@@ -252,7 +252,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def birth(self):
-        """Gets the birth of this MyanmarDriverLicenseConfidence.
+        r"""Gets the birth of this MyanmarDriverLicenseConfidence.
 
         缅文出生日期置信度。 
 
@@ -263,7 +263,7 @@ class MyanmarDriverLicenseConfidence:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this MyanmarDriverLicenseConfidence.
+        r"""Sets the birth of this MyanmarDriverLicenseConfidence.
 
         缅文出生日期置信度。 
 
@@ -274,7 +274,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def birth_en(self):
-        """Gets the birth_en of this MyanmarDriverLicenseConfidence.
+        r"""Gets the birth_en of this MyanmarDriverLicenseConfidence.
 
         英文出生日期置信度。 
 
@@ -285,7 +285,7 @@ class MyanmarDriverLicenseConfidence:
 
     @birth_en.setter
     def birth_en(self, birth_en):
-        """Sets the birth_en of this MyanmarDriverLicenseConfidence.
+        r"""Sets the birth_en of this MyanmarDriverLicenseConfidence.
 
         英文出生日期置信度。 
 
@@ -296,7 +296,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def blood_group(self):
-        """Gets the blood_group of this MyanmarDriverLicenseConfidence.
+        r"""Gets the blood_group of this MyanmarDriverLicenseConfidence.
 
         缅文血型置信度。 
 
@@ -307,7 +307,7 @@ class MyanmarDriverLicenseConfidence:
 
     @blood_group.setter
     def blood_group(self, blood_group):
-        """Sets the blood_group of this MyanmarDriverLicenseConfidence.
+        r"""Sets the blood_group of this MyanmarDriverLicenseConfidence.
 
         缅文血型置信度。 
 
@@ -318,7 +318,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def blood_group_en(self):
-        """Gets the blood_group_en of this MyanmarDriverLicenseConfidence.
+        r"""Gets the blood_group_en of this MyanmarDriverLicenseConfidence.
 
         英文血型置信度。 
 
@@ -329,7 +329,7 @@ class MyanmarDriverLicenseConfidence:
 
     @blood_group_en.setter
     def blood_group_en(self, blood_group_en):
-        """Sets the blood_group_en of this MyanmarDriverLicenseConfidence.
+        r"""Sets the blood_group_en of this MyanmarDriverLicenseConfidence.
 
         英文血型置信度。 
 
@@ -340,7 +340,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def expiried_date(self):
-        """Gets the expiried_date of this MyanmarDriverLicenseConfidence.
+        r"""Gets the expiried_date of this MyanmarDriverLicenseConfidence.
 
         缅文有效期置信度。 
 
@@ -351,7 +351,7 @@ class MyanmarDriverLicenseConfidence:
 
     @expiried_date.setter
     def expiried_date(self, expiried_date):
-        """Sets the expiried_date of this MyanmarDriverLicenseConfidence.
+        r"""Sets the expiried_date of this MyanmarDriverLicenseConfidence.
 
         缅文有效期置信度。 
 
@@ -362,7 +362,7 @@ class MyanmarDriverLicenseConfidence:
 
     @property
     def expiried_date_en(self):
-        """Gets the expiried_date_en of this MyanmarDriverLicenseConfidence.
+        r"""Gets the expiried_date_en of this MyanmarDriverLicenseConfidence.
 
         英文有效期置信度。 
 
@@ -373,7 +373,7 @@ class MyanmarDriverLicenseConfidence:
 
     @expiried_date_en.setter
     def expiried_date_en(self, expiried_date_en):
-        """Sets the expiried_date_en of this MyanmarDriverLicenseConfidence.
+        r"""Sets the expiried_date_en of this MyanmarDriverLicenseConfidence.
 
         英文有效期置信度。 
 

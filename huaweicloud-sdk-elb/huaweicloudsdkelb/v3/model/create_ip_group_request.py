@@ -25,7 +25,7 @@ class CreateIpGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateIpGroupRequest
+        r"""CreateIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateIpGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateIpGroupRequest.
+        r"""Gets the body of this CreateIpGroupRequest.
 
         :return: The body of this CreateIpGroupRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateIpGroupRequestBody`
@@ -52,7 +52,7 @@ class CreateIpGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateIpGroupRequest.
+        r"""Sets the body of this CreateIpGroupRequest.
 
         :param body: The body of this CreateIpGroupRequest.
         :type body: :class:`huaweicloudsdkelb.v3.CreateIpGroupRequestBody`

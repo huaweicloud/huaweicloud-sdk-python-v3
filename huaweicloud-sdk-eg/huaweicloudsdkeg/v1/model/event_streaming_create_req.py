@@ -35,7 +35,7 @@ class EventStreamingCreateReq:
     }
 
     def __init__(self, name=None, description=None, source=None, sink=None, rule_config=None, option=None):
-        """EventStreamingCreateReq
+        r"""EventStreamingCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class EventStreamingCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this EventStreamingCreateReq.
+        r"""Gets the name of this EventStreamingCreateReq.
 
         事件流名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -86,7 +86,7 @@ class EventStreamingCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventStreamingCreateReq.
+        r"""Sets the name of this EventStreamingCreateReq.
 
         事件流名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -97,7 +97,7 @@ class EventStreamingCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this EventStreamingCreateReq.
+        r"""Gets the description of this EventStreamingCreateReq.
 
         事件流描述
 
@@ -108,7 +108,7 @@ class EventStreamingCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EventStreamingCreateReq.
+        r"""Sets the description of this EventStreamingCreateReq.
 
         事件流描述
 
@@ -119,7 +119,7 @@ class EventStreamingCreateReq:
 
     @property
     def source(self):
-        """Gets the source of this EventStreamingCreateReq.
+        r"""Gets the source of this EventStreamingCreateReq.
 
         :return: The source of this EventStreamingCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingSource`
@@ -128,7 +128,7 @@ class EventStreamingCreateReq:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this EventStreamingCreateReq.
+        r"""Sets the source of this EventStreamingCreateReq.
 
         :param source: The source of this EventStreamingCreateReq.
         :type source: :class:`huaweicloudsdkeg.v1.EventStreamingSource`
@@ -137,7 +137,7 @@ class EventStreamingCreateReq:
 
     @property
     def sink(self):
-        """Gets the sink of this EventStreamingCreateReq.
+        r"""Gets the sink of this EventStreamingCreateReq.
 
         :return: The sink of this EventStreamingCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingSink`
@@ -146,7 +146,7 @@ class EventStreamingCreateReq:
 
     @sink.setter
     def sink(self, sink):
-        """Sets the sink of this EventStreamingCreateReq.
+        r"""Sets the sink of this EventStreamingCreateReq.
 
         :param sink: The sink of this EventStreamingCreateReq.
         :type sink: :class:`huaweicloudsdkeg.v1.EventStreamingSink`
@@ -155,7 +155,7 @@ class EventStreamingCreateReq:
 
     @property
     def rule_config(self):
-        """Gets the rule_config of this EventStreamingCreateReq.
+        r"""Gets the rule_config of this EventStreamingCreateReq.
 
         :return: The rule_config of this EventStreamingCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReqRuleConfig`
@@ -164,7 +164,7 @@ class EventStreamingCreateReq:
 
     @rule_config.setter
     def rule_config(self, rule_config):
-        """Sets the rule_config of this EventStreamingCreateReq.
+        r"""Sets the rule_config of this EventStreamingCreateReq.
 
         :param rule_config: The rule_config of this EventStreamingCreateReq.
         :type rule_config: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReqRuleConfig`
@@ -173,7 +173,7 @@ class EventStreamingCreateReq:
 
     @property
     def option(self):
-        """Gets the option of this EventStreamingCreateReq.
+        r"""Gets the option of this EventStreamingCreateReq.
 
         :return: The option of this EventStreamingCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.RunOption`
@@ -182,7 +182,7 @@ class EventStreamingCreateReq:
 
     @option.setter
     def option(self, option):
-        """Sets the option of this EventStreamingCreateReq.
+        r"""Sets the option of this EventStreamingCreateReq.
 
         :param option: The option of this EventStreamingCreateReq.
         :type option: :class:`huaweicloudsdkeg.v1.RunOption`

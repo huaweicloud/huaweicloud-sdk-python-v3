@@ -25,7 +25,7 @@ class ShowLoadbalancerRequest:
     }
 
     def __init__(self, loadbalancer_id=None):
-        """ShowLoadbalancerRequest
+        r"""ShowLoadbalancerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLoadbalancerRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ShowLoadbalancerRequest.
+        r"""Gets the loadbalancer_id of this ShowLoadbalancerRequest.
 
         负载均衡器ID
 
@@ -53,7 +53,7 @@ class ShowLoadbalancerRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ShowLoadbalancerRequest.
+        r"""Sets the loadbalancer_id of this ShowLoadbalancerRequest.
 
         负载均衡器ID
 

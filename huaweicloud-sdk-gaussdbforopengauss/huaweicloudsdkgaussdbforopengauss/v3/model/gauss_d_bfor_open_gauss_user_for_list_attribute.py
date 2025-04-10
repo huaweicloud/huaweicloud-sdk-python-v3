@@ -41,7 +41,7 @@ class GaussDBforOpenGaussUserForListAttribute:
     }
 
     def __init__(self, rolsuper=None, rolinherit=None, rolcreaterole=None, rolcreatedb=None, rolcanlogin=None, rolconnlimit=None, rolreplication=None, rolbypassrls=None, rolpassworddeadline=None):
-        """GaussDBforOpenGaussUserForListAttribute
+        r"""GaussDBforOpenGaussUserForListAttribute
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolsuper(self):
-        """Gets the rolsuper of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolsuper of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否具有超级用户权限，取值为“true”或“false”。
 
@@ -110,7 +110,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolsuper.setter
     def rolsuper(self, rolsuper):
-        """Sets the rolsuper of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolsuper of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否具有超级用户权限，取值为“true”或“false”。
 
@@ -121,7 +121,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolinherit(self):
-        """Gets the rolinherit of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolinherit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否自动继承其所属角色的权限，取值为“true”或“false”。
 
@@ -132,7 +132,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolinherit.setter
     def rolinherit(self, rolinherit):
-        """Sets the rolinherit of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolinherit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否自动继承其所属角色的权限，取值为“true”或“false”。
 
@@ -143,7 +143,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolcreaterole(self):
-        """Gets the rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否支持创建其他子用户，取值为“true”或“false”。
 
@@ -154,7 +154,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolcreaterole.setter
     def rolcreaterole(self, rolcreaterole):
-        """Sets the rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolcreaterole of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否支持创建其他子用户，取值为“true”或“false”。
 
@@ -165,7 +165,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolcreatedb(self):
-        """Gets the rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以创建数据库，取值为“true”或“false”。
 
@@ -176,7 +176,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolcreatedb.setter
     def rolcreatedb(self, rolcreatedb):
-        """Sets the rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolcreatedb of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以创建数据库，取值为“true”或“false”。
 
@@ -187,7 +187,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolcanlogin(self):
-        """Gets the rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以登录数据库，取值为“true”或“false”。
 
@@ -198,7 +198,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolcanlogin.setter
     def rolcanlogin(self, rolcanlogin):
-        """Sets the rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolcanlogin of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否可以登录数据库，取值为“true”或“false”。
 
@@ -209,7 +209,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolconnlimit(self):
-        """Gets the rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户连接实例的最大并发连接数。-1表示没有限制。
 
@@ -220,7 +220,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolconnlimit.setter
     def rolconnlimit(self, rolconnlimit):
-        """Sets the rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolconnlimit of this GaussDBforOpenGaussUserForListAttribute.
 
         用户连接实例的最大并发连接数。-1表示没有限制。
 
@@ -231,7 +231,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolreplication(self):
-        """Gets the rolreplication of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolreplication of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否属于复制角色，取值为“true”或“false”。
 
@@ -242,7 +242,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolreplication.setter
     def rolreplication(self, rolreplication):
-        """Sets the rolreplication of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolreplication of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否属于复制角色，取值为“true”或“false”。
 
@@ -253,7 +253,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolbypassrls(self):
-        """Gets the rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否绕过每个行级安全策略，取值为“true”或“false”。
 
@@ -264,7 +264,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolbypassrls.setter
     def rolbypassrls(self, rolbypassrls):
-        """Sets the rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolbypassrls of this GaussDBforOpenGaussUserForListAttribute.
 
         用户是否绕过每个行级安全策略，取值为“true”或“false”。
 
@@ -275,7 +275,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @property
     def rolpassworddeadline(self):
-        """Gets the rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Gets the rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
 
         用户密码过期时间。
 
@@ -286,7 +286,7 @@ class GaussDBforOpenGaussUserForListAttribute:
 
     @rolpassworddeadline.setter
     def rolpassworddeadline(self, rolpassworddeadline):
-        """Sets the rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
+        r"""Sets the rolpassworddeadline of this GaussDBforOpenGaussUserForListAttribute.
 
         用户密码过期时间。
 

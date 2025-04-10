@@ -44,7 +44,7 @@ class UpdateAppInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, namespace=None, version=None, app_id=None, app_version=None, status=None, status_description=None, values=None, create_time=None, update_time=None):
-        """UpdateAppInstanceResponse
+        r"""UpdateAppInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAppInstanceResponse.
+        r"""Gets the id of this UpdateAppInstanceResponse.
 
         应用实例ID
 
@@ -118,7 +118,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAppInstanceResponse.
+        r"""Sets the id of this UpdateAppInstanceResponse.
 
         应用实例ID
 
@@ -129,7 +129,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateAppInstanceResponse.
+        r"""Gets the namespace of this UpdateAppInstanceResponse.
 
         边缘集群命名空间
 
@@ -140,7 +140,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateAppInstanceResponse.
+        r"""Sets the namespace of this UpdateAppInstanceResponse.
 
         边缘集群命名空间
 
@@ -151,7 +151,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateAppInstanceResponse.
+        r"""Gets the version of this UpdateAppInstanceResponse.
 
         应用实例版本
 
@@ -162,7 +162,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateAppInstanceResponse.
+        r"""Sets the version of this UpdateAppInstanceResponse.
 
         应用实例版本
 
@@ -173,7 +173,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppInstanceResponse.
+        r"""Gets the app_id of this UpdateAppInstanceResponse.
 
         应用ID
 
@@ -184,7 +184,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppInstanceResponse.
+        r"""Sets the app_id of this UpdateAppInstanceResponse.
 
         应用ID
 
@@ -195,7 +195,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def app_version(self):
-        """Gets the app_version of this UpdateAppInstanceResponse.
+        r"""Gets the app_version of this UpdateAppInstanceResponse.
 
         应用版本
 
@@ -206,7 +206,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this UpdateAppInstanceResponse.
+        r"""Sets the app_version of this UpdateAppInstanceResponse.
 
         应用版本
 
@@ -217,7 +217,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAppInstanceResponse.
+        r"""Gets the status of this UpdateAppInstanceResponse.
 
         应用实例状态
 
@@ -228,7 +228,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAppInstanceResponse.
+        r"""Sets the status of this UpdateAppInstanceResponse.
 
         应用实例状态
 
@@ -239,7 +239,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def status_description(self):
-        """Gets the status_description of this UpdateAppInstanceResponse.
+        r"""Gets the status_description of this UpdateAppInstanceResponse.
 
         状态描述
 
@@ -250,7 +250,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @status_description.setter
     def status_description(self, status_description):
-        """Sets the status_description of this UpdateAppInstanceResponse.
+        r"""Sets the status_description of this UpdateAppInstanceResponse.
 
         状态描述
 
@@ -261,7 +261,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this UpdateAppInstanceResponse.
+        r"""Gets the values of this UpdateAppInstanceResponse.
 
         应用实例chart配置
 
@@ -272,7 +272,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateAppInstanceResponse.
+        r"""Sets the values of this UpdateAppInstanceResponse.
 
         应用实例chart配置
 
@@ -283,7 +283,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateAppInstanceResponse.
+        r"""Gets the create_time of this UpdateAppInstanceResponse.
 
         创建时间
 
@@ -294,7 +294,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateAppInstanceResponse.
+        r"""Sets the create_time of this UpdateAppInstanceResponse.
 
         创建时间
 
@@ -305,7 +305,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateAppInstanceResponse.
+        r"""Gets the update_time of this UpdateAppInstanceResponse.
 
         最后一次更新时间
 
@@ -316,7 +316,7 @@ class UpdateAppInstanceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateAppInstanceResponse.
+        r"""Sets the update_time of this UpdateAppInstanceResponse.
 
         最后一次更新时间
 

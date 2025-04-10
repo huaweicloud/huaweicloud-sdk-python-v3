@@ -26,7 +26,7 @@ class ListScalingTagInfosByTenantIdResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListScalingTagInfosByTenantIdResponse
+        r"""ListScalingTagInfosByTenantIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListScalingTagInfosByTenantIdResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListScalingTagInfosByTenantIdResponse.
+        r"""Gets the tags of this ListScalingTagInfosByTenantIdResponse.
 
         资源标签。
 
@@ -55,7 +55,7 @@ class ListScalingTagInfosByTenantIdResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListScalingTagInfosByTenantIdResponse.
+        r"""Sets the tags of this ListScalingTagInfosByTenantIdResponse.
 
         资源标签。
 

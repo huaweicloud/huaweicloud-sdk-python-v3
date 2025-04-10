@@ -31,7 +31,7 @@ class ShowGaussMySqlQuotasRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, enterprise_project_name=None):
-        """ShowGaussMySqlQuotasRequest
+        r"""ShowGaussMySqlQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlQuotasRequest.
+        r"""Gets the x_language of this ShowGaussMySqlQuotasRequest.
 
         语言。
 
@@ -75,7 +75,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlQuotasRequest.
+        r"""Sets the x_language of this ShowGaussMySqlQuotasRequest.
 
         语言。
 
@@ -86,7 +86,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowGaussMySqlQuotasRequest.
+        r"""Gets the offset of this ShowGaussMySqlQuotasRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
@@ -97,7 +97,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowGaussMySqlQuotasRequest.
+        r"""Sets the offset of this ShowGaussMySqlQuotasRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
@@ -108,7 +108,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowGaussMySqlQuotasRequest.
+        r"""Gets the limit of this ShowGaussMySqlQuotasRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -119,7 +119,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowGaussMySqlQuotasRequest.
+        r"""Sets the limit of this ShowGaussMySqlQuotasRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -130,7 +130,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this ShowGaussMySqlQuotasRequest.
+        r"""Gets the enterprise_project_name of this ShowGaussMySqlQuotasRequest.
 
         企业项目名称。
 
@@ -141,7 +141,7 @@ class ShowGaussMySqlQuotasRequest:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this ShowGaussMySqlQuotasRequest.
+        r"""Sets the enterprise_project_name of this ShowGaussMySqlQuotasRequest.
 
         企业项目名称。
 

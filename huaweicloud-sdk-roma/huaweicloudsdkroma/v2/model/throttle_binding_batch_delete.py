@@ -25,7 +25,7 @@ class ThrottleBindingBatchDelete:
     }
 
     def __init__(self, throttle_bindings=None):
-        """ThrottleBindingBatchDelete
+        r"""ThrottleBindingBatchDelete
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ThrottleBindingBatchDelete:
 
     @property
     def throttle_bindings(self):
-        """Gets the throttle_bindings of this ThrottleBindingBatchDelete.
+        r"""Gets the throttle_bindings of this ThrottleBindingBatchDelete.
 
         需要解除绑定的API和流控策略绑定关系ID列表
 
@@ -54,7 +54,7 @@ class ThrottleBindingBatchDelete:
 
     @throttle_bindings.setter
     def throttle_bindings(self, throttle_bindings):
-        """Sets the throttle_bindings of this ThrottleBindingBatchDelete.
+        r"""Sets the throttle_bindings of this ThrottleBindingBatchDelete.
 
         需要解除绑定的API和流控策略绑定关系ID列表
 

@@ -39,7 +39,7 @@ class ShowDatamapLineageRequest:
     }
 
     def __init__(self, instance=None, guid=None, direction=None, relationship_types=None, relationship_type_categories=None, related_entity_types=None, extend_process_data_flow=None, include_parent_entity=None):
-        """ShowDatamapLineageRequest
+        r"""ShowDatamapLineageRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowDatamapLineageRequest.
+        r"""Gets the instance of this ShowDatamapLineageRequest.
 
         实例id
 
@@ -101,7 +101,7 @@ class ShowDatamapLineageRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowDatamapLineageRequest.
+        r"""Sets the instance of this ShowDatamapLineageRequest.
 
         实例id
 
@@ -112,7 +112,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowDatamapLineageRequest.
+        r"""Gets the guid of this ShowDatamapLineageRequest.
 
         资产guid
 
@@ -123,7 +123,7 @@ class ShowDatamapLineageRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowDatamapLineageRequest.
+        r"""Sets the guid of this ShowDatamapLineageRequest.
 
         资产guid
 
@@ -134,7 +134,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ShowDatamapLineageRequest.
+        r"""Gets the direction of this ShowDatamapLineageRequest.
 
         血缘查询方向，默认值:BOTH。枚举值[IN OUT BOTH]
 
@@ -145,7 +145,7 @@ class ShowDatamapLineageRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ShowDatamapLineageRequest.
+        r"""Sets the direction of this ShowDatamapLineageRequest.
 
         血缘查询方向，默认值:BOTH。枚举值[IN OUT BOTH]
 
@@ -156,7 +156,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def relationship_types(self):
-        """Gets the relationship_types of this ShowDatamapLineageRequest.
+        r"""Gets the relationship_types of this ShowDatamapLineageRequest.
 
         关联关系类型列表，默认空
 
@@ -167,7 +167,7 @@ class ShowDatamapLineageRequest:
 
     @relationship_types.setter
     def relationship_types(self, relationship_types):
-        """Sets the relationship_types of this ShowDatamapLineageRequest.
+        r"""Sets the relationship_types of this ShowDatamapLineageRequest.
 
         关联关系类型列表，默认空
 
@@ -178,7 +178,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def relationship_type_categories(self):
-        """Gets the relationship_type_categories of this ShowDatamapLineageRequest.
+        r"""Gets the relationship_type_categories of this ShowDatamapLineageRequest.
 
         关联关系类型类别，默认空。血缘查询使用DATA_FLOW
 
@@ -189,7 +189,7 @@ class ShowDatamapLineageRequest:
 
     @relationship_type_categories.setter
     def relationship_type_categories(self, relationship_type_categories):
-        """Sets the relationship_type_categories of this ShowDatamapLineageRequest.
+        r"""Sets the relationship_type_categories of this ShowDatamapLineageRequest.
 
         关联关系类型类别，默认空。血缘查询使用DATA_FLOW
 
@@ -200,7 +200,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def related_entity_types(self):
-        """Gets the related_entity_types of this ShowDatamapLineageRequest.
+        r"""Gets the related_entity_types of this ShowDatamapLineageRequest.
 
         关联实体类型，默认空
 
@@ -211,7 +211,7 @@ class ShowDatamapLineageRequest:
 
     @related_entity_types.setter
     def related_entity_types(self, related_entity_types):
-        """Sets the related_entity_types of this ShowDatamapLineageRequest.
+        r"""Sets the related_entity_types of this ShowDatamapLineageRequest.
 
         关联实体类型，默认空
 
@@ -222,7 +222,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def extend_process_data_flow(self):
-        """Gets the extend_process_data_flow of this ShowDatamapLineageRequest.
+        r"""Gets the extend_process_data_flow of this ShowDatamapLineageRequest.
 
         是否扩展数据，默认false
 
@@ -233,7 +233,7 @@ class ShowDatamapLineageRequest:
 
     @extend_process_data_flow.setter
     def extend_process_data_flow(self, extend_process_data_flow):
-        """Sets the extend_process_data_flow of this ShowDatamapLineageRequest.
+        r"""Sets the extend_process_data_flow of this ShowDatamapLineageRequest.
 
         是否扩展数据，默认false
 
@@ -244,7 +244,7 @@ class ShowDatamapLineageRequest:
 
     @property
     def include_parent_entity(self):
-        """Gets the include_parent_entity of this ShowDatamapLineageRequest.
+        r"""Gets the include_parent_entity of this ShowDatamapLineageRequest.
 
         是否包含父类实体，默认false
 
@@ -255,7 +255,7 @@ class ShowDatamapLineageRequest:
 
     @include_parent_entity.setter
     def include_parent_entity(self, include_parent_entity):
-        """Sets the include_parent_entity of this ShowDatamapLineageRequest.
+        r"""Sets the include_parent_entity of this ShowDatamapLineageRequest.
 
         是否包含父类实体，默认false
 

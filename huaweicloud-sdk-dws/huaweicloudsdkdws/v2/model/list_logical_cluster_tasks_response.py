@@ -28,7 +28,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
     }
 
     def __init__(self, logical_cluster_tasks=None, count=None):
-        """ListLogicalClusterTasksResponse
+        r"""ListLogicalClusterTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
 
     @property
     def logical_cluster_tasks(self):
-        """Gets the logical_cluster_tasks of this ListLogicalClusterTasksResponse.
+        r"""Gets the logical_cluster_tasks of this ListLogicalClusterTasksResponse.
 
         逻辑集群任务信息
 
@@ -62,7 +62,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
 
     @logical_cluster_tasks.setter
     def logical_cluster_tasks(self, logical_cluster_tasks):
-        """Sets the logical_cluster_tasks of this ListLogicalClusterTasksResponse.
+        r"""Sets the logical_cluster_tasks of this ListLogicalClusterTasksResponse.
 
         逻辑集群任务信息
 
@@ -73,7 +73,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLogicalClusterTasksResponse.
+        r"""Gets the count of this ListLogicalClusterTasksResponse.
 
         逻辑集群任务总数
 
@@ -84,7 +84,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLogicalClusterTasksResponse.
+        r"""Sets the count of this ListLogicalClusterTasksResponse.
 
         逻辑集群任务总数
 

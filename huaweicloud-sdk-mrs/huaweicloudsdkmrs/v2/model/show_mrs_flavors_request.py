@@ -27,7 +27,7 @@ class ShowMrsFlavorsRequest:
     }
 
     def __init__(self, version_name=None, availability_zone=None):
-        """ShowMrsFlavorsRequest
+        r"""ShowMrsFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowMrsFlavorsRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ShowMrsFlavorsRequest.
+        r"""Gets the version_name of this ShowMrsFlavorsRequest.
 
         MRS集群版本，不支持多版本查询 ，例如 MRS%203.1.5.1
 
@@ -60,7 +60,7 @@ class ShowMrsFlavorsRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ShowMrsFlavorsRequest.
+        r"""Sets the version_name of this ShowMrsFlavorsRequest.
 
         MRS集群版本，不支持多版本查询 ，例如 MRS%203.1.5.1
 
@@ -71,7 +71,7 @@ class ShowMrsFlavorsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowMrsFlavorsRequest.
+        r"""Gets the availability_zone of this ShowMrsFlavorsRequest.
 
         可用区id，用于查询指定可用区的可用规格
 
@@ -82,7 +82,7 @@ class ShowMrsFlavorsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowMrsFlavorsRequest.
+        r"""Sets the availability_zone of this ShowMrsFlavorsRequest.
 
         可用区id，用于查询指定可用区的可用规格
 

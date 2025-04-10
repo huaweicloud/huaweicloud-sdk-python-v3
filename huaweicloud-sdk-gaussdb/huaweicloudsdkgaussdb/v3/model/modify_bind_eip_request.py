@@ -27,7 +27,7 @@ class ModifyBindEipRequest:
     }
 
     def __init__(self, public_ip=None, public_ip_id=None):
-        """ModifyBindEipRequest
+        r"""ModifyBindEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyBindEipRequest:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ModifyBindEipRequest.
+        r"""Gets the public_ip of this ModifyBindEipRequest.
 
         待绑定的弹性公网IP地址。
 
@@ -59,7 +59,7 @@ class ModifyBindEipRequest:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ModifyBindEipRequest.
+        r"""Sets the public_ip of this ModifyBindEipRequest.
 
         待绑定的弹性公网IP地址。
 
@@ -70,7 +70,7 @@ class ModifyBindEipRequest:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this ModifyBindEipRequest.
+        r"""Gets the public_ip_id of this ModifyBindEipRequest.
 
         弹性公网IP地址对应的ID。
 
@@ -81,7 +81,7 @@ class ModifyBindEipRequest:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this ModifyBindEipRequest.
+        r"""Sets the public_ip_id of this ModifyBindEipRequest.
 
         弹性公网IP地址对应的ID。
 

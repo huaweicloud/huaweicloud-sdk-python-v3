@@ -31,7 +31,7 @@ class OccupyResource:
     }
 
     def __init__(self, resource_name=None, resource_value=None, value_unit=None, resource_description=None):
-        """OccupyResource
+        r"""OccupyResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OccupyResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this OccupyResource.
+        r"""Gets the resource_name of this OccupyResource.
 
         资源项名称
 
@@ -75,7 +75,7 @@ class OccupyResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this OccupyResource.
+        r"""Sets the resource_name of this OccupyResource.
 
         资源项名称
 
@@ -86,7 +86,7 @@ class OccupyResource:
 
     @property
     def resource_value(self):
-        """Gets the resource_value of this OccupyResource.
+        r"""Gets the resource_value of this OccupyResource.
 
         资源属性数值
 
@@ -97,7 +97,7 @@ class OccupyResource:
 
     @resource_value.setter
     def resource_value(self, resource_value):
-        """Sets the resource_value of this OccupyResource.
+        r"""Sets the resource_value of this OccupyResource.
 
         资源属性数值
 
@@ -108,7 +108,7 @@ class OccupyResource:
 
     @property
     def value_unit(self):
-        """Gets the value_unit of this OccupyResource.
+        r"""Gets the value_unit of this OccupyResource.
 
         资源属性单位
 
@@ -119,7 +119,7 @@ class OccupyResource:
 
     @value_unit.setter
     def value_unit(self, value_unit):
-        """Sets the value_unit of this OccupyResource.
+        r"""Sets the value_unit of this OccupyResource.
 
         资源属性单位
 
@@ -130,7 +130,7 @@ class OccupyResource:
 
     @property
     def resource_description(self):
-        """Gets the resource_description of this OccupyResource.
+        r"""Gets the resource_description of this OccupyResource.
 
         资源附加描述
 
@@ -141,7 +141,7 @@ class OccupyResource:
 
     @resource_description.setter
     def resource_description(self, resource_description):
-        """Sets the resource_description of this OccupyResource.
+        r"""Sets the resource_description of this OccupyResource.
 
         资源附加描述
 

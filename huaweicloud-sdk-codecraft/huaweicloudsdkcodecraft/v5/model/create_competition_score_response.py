@@ -26,7 +26,7 @@ class CreateCompetitionScoreResponse(SdkResponse):
     }
 
     def __init__(self, works_id=None):
-        """CreateCompetitionScoreResponse
+        r"""CreateCompetitionScoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCompetitionScoreResponse(SdkResponse):
 
     @property
     def works_id(self):
-        """Gets the works_id of this CreateCompetitionScoreResponse.
+        r"""Gets the works_id of this CreateCompetitionScoreResponse.
 
         作品ID
 
@@ -55,7 +55,7 @@ class CreateCompetitionScoreResponse(SdkResponse):
 
     @works_id.setter
     def works_id(self, works_id):
-        """Sets the works_id of this CreateCompetitionScoreResponse.
+        r"""Sets the works_id of this CreateCompetitionScoreResponse.
 
         作品ID
 

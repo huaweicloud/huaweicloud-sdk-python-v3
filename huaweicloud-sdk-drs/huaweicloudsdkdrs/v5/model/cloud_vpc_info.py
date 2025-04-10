@@ -29,7 +29,7 @@ class CloudVpcInfo:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, security_group_id=None):
-        """CloudVpcInfo
+        r"""CloudVpcInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CloudVpcInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CloudVpcInfo.
+        r"""Gets the vpc_id of this CloudVpcInfo.
 
         数据库实例所在的虚拟私有云ID，获取方法如下： 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
 
@@ -66,7 +66,7 @@ class CloudVpcInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CloudVpcInfo.
+        r"""Sets the vpc_id of this CloudVpcInfo.
 
         数据库实例所在的虚拟私有云ID，获取方法如下： 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
 
@@ -77,7 +77,7 @@ class CloudVpcInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CloudVpcInfo.
+        r"""Gets the subnet_id of this CloudVpcInfo.
 
         数据库实例所在子网ID，获取方法如下： 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
 
@@ -88,7 +88,7 @@ class CloudVpcInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CloudVpcInfo.
+        r"""Sets the subnet_id of this CloudVpcInfo.
 
         数据库实例所在子网ID，获取方法如下： 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
 
@@ -99,7 +99,7 @@ class CloudVpcInfo:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CloudVpcInfo.
+        r"""Gets the security_group_id of this CloudVpcInfo.
 
         数据库实例所在的安全组ID，获取方法如下： 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
 
@@ -110,7 +110,7 @@ class CloudVpcInfo:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CloudVpcInfo.
+        r"""Sets the security_group_id of this CloudVpcInfo.
 
         数据库实例所在的安全组ID，获取方法如下： 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
 

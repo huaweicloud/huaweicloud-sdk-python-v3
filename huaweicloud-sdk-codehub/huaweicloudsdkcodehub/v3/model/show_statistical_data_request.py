@@ -25,7 +25,7 @@ class ShowStatisticalDataRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """ShowStatisticalDataRequest
+        r"""ShowStatisticalDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowStatisticalDataRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShowStatisticalDataRequest.
+        r"""Gets the repository_uuid of this ShowStatisticalDataRequest.
 
         仓库id
 
@@ -53,7 +53,7 @@ class ShowStatisticalDataRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShowStatisticalDataRequest.
+        r"""Sets the repository_uuid of this ShowStatisticalDataRequest.
 
         仓库id
 

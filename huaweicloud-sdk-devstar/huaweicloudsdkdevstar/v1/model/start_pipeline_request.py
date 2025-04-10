@@ -27,7 +27,7 @@ class StartPipelineRequest:
     }
 
     def __init__(self, x_language=None, pipeline_id=None):
-        """StartPipelineRequest
+        r"""StartPipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartPipelineRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartPipelineRequest.
+        r"""Gets the x_language of this StartPipelineRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -60,7 +60,7 @@ class StartPipelineRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartPipelineRequest.
+        r"""Sets the x_language of this StartPipelineRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -71,7 +71,7 @@ class StartPipelineRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StartPipelineRequest.
+        r"""Gets the pipeline_id of this StartPipelineRequest.
 
         流水线ID
 
@@ -82,7 +82,7 @@ class StartPipelineRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StartPipelineRequest.
+        r"""Sets the pipeline_id of this StartPipelineRequest.
 
         流水线ID
 

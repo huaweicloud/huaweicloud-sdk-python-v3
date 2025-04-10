@@ -47,7 +47,7 @@ class ItemList:
     }
 
     def __init__(self, name=None, specification=None, unit=None, quantity=None, unit_price=None, license_plate_number=None, amount=None, tax_rate=None, tax=None, end_date=None, start_date=None, vehicle_type=None):
-        """ItemList
+        r"""ItemList
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ItemList:
 
     @property
     def name(self):
-        """Gets the name of this ItemList.
+        r"""Gets the name of this ItemList.
 
         货物或应税劳务、服务名称。 
 
@@ -131,7 +131,7 @@ class ItemList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ItemList.
+        r"""Sets the name of this ItemList.
 
         货物或应税劳务、服务名称。 
 
@@ -142,7 +142,7 @@ class ItemList:
 
     @property
     def specification(self):
-        """Gets the specification of this ItemList.
+        r"""Gets the specification of this ItemList.
 
         规格型号。 
 
@@ -153,7 +153,7 @@ class ItemList:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ItemList.
+        r"""Sets the specification of this ItemList.
 
         规格型号。 
 
@@ -164,7 +164,7 @@ class ItemList:
 
     @property
     def unit(self):
-        """Gets the unit of this ItemList.
+        r"""Gets the unit of this ItemList.
 
         单位。 
 
@@ -175,7 +175,7 @@ class ItemList:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ItemList.
+        r"""Sets the unit of this ItemList.
 
         单位。 
 
@@ -186,7 +186,7 @@ class ItemList:
 
     @property
     def quantity(self):
-        """Gets the quantity of this ItemList.
+        r"""Gets the quantity of this ItemList.
 
         数量。 
 
@@ -197,7 +197,7 @@ class ItemList:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this ItemList.
+        r"""Sets the quantity of this ItemList.
 
         数量。 
 
@@ -208,7 +208,7 @@ class ItemList:
 
     @property
     def unit_price(self):
-        """Gets the unit_price of this ItemList.
+        r"""Gets the unit_price of this ItemList.
 
         单价。 
 
@@ -219,7 +219,7 @@ class ItemList:
 
     @unit_price.setter
     def unit_price(self, unit_price):
-        """Sets the unit_price of this ItemList.
+        r"""Sets the unit_price of this ItemList.
 
         单价。 
 
@@ -230,7 +230,7 @@ class ItemList:
 
     @property
     def license_plate_number(self):
-        """Gets the license_plate_number of this ItemList.
+        r"""Gets the license_plate_number of this ItemList.
 
         车牌号码。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -241,7 +241,7 @@ class ItemList:
 
     @license_plate_number.setter
     def license_plate_number(self, license_plate_number):
-        """Sets the license_plate_number of this ItemList.
+        r"""Sets the license_plate_number of this ItemList.
 
         车牌号码。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -252,7 +252,7 @@ class ItemList:
 
     @property
     def amount(self):
-        """Gets the amount of this ItemList.
+        r"""Gets the amount of this ItemList.
 
         金额。 
 
@@ -263,7 +263,7 @@ class ItemList:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ItemList.
+        r"""Sets the amount of this ItemList.
 
         金额。 
 
@@ -274,7 +274,7 @@ class ItemList:
 
     @property
     def tax_rate(self):
-        """Gets the tax_rate of this ItemList.
+        r"""Gets the tax_rate of this ItemList.
 
         税率。 
 
@@ -285,7 +285,7 @@ class ItemList:
 
     @tax_rate.setter
     def tax_rate(self, tax_rate):
-        """Sets the tax_rate of this ItemList.
+        r"""Sets the tax_rate of this ItemList.
 
         税率。 
 
@@ -296,7 +296,7 @@ class ItemList:
 
     @property
     def tax(self):
-        """Gets the tax of this ItemList.
+        r"""Gets the tax of this ItemList.
 
         税额。 
 
@@ -307,7 +307,7 @@ class ItemList:
 
     @tax.setter
     def tax(self, tax):
-        """Sets the tax of this ItemList.
+        r"""Sets the tax of this ItemList.
 
         税额。 
 
@@ -318,7 +318,7 @@ class ItemList:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ItemList.
+        r"""Gets the end_date of this ItemList.
 
         通行日期止。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -329,7 +329,7 @@ class ItemList:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ItemList.
+        r"""Sets the end_date of this ItemList.
 
         通行日期止。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -340,7 +340,7 @@ class ItemList:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ItemList.
+        r"""Gets the start_date of this ItemList.
 
         通行日期起。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -351,7 +351,7 @@ class ItemList:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ItemList.
+        r"""Sets the start_date of this ItemList.
 
         通行日期起。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -362,7 +362,7 @@ class ItemList:
 
     @property
     def vehicle_type(self):
-        """Gets the vehicle_type of this ItemList.
+        r"""Gets the vehicle_type of this ItemList.
 
         车辆类型。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 
@@ -373,7 +373,7 @@ class ItemList:
 
     @vehicle_type.setter
     def vehicle_type(self, vehicle_type):
-        """Sets the vehicle_type of this ItemList.
+        r"""Sets the vehicle_type of this ItemList.
 
         车辆类型。 当\"type\"被识别为\"toll\"且\"advanced_mode\"设置为“true”时才返回。 
 

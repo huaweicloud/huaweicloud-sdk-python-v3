@@ -23,7 +23,7 @@ class ListActionRuleRequest:
     }
 
     def __init__(self):
-        """ListActionRuleRequest
+        r"""ListActionRuleRequest
 
         The model defined in huaweicloud sdk
 

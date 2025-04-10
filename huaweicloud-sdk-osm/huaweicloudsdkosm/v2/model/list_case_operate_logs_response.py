@@ -28,7 +28,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_operate_log_list=None):
-        """ListCaseOperateLogsResponse
+        r"""ListCaseOperateLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCaseOperateLogsResponse.
+        r"""Gets the total_count of this ListCaseOperateLogsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCaseOperateLogsResponse.
+        r"""Sets the total_count of this ListCaseOperateLogsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
 
     @property
     def incident_operate_log_list(self):
-        """Gets the incident_operate_log_list of this ListCaseOperateLogsResponse.
+        r"""Gets the incident_operate_log_list of this ListCaseOperateLogsResponse.
 
         工单操作日志列表
 
@@ -84,7 +84,7 @@ class ListCaseOperateLogsResponse(SdkResponse):
 
     @incident_operate_log_list.setter
     def incident_operate_log_list(self, incident_operate_log_list):
-        """Sets the incident_operate_log_list of this ListCaseOperateLogsResponse.
+        r"""Sets the incident_operate_log_list of this ListCaseOperateLogsResponse.
 
         工单操作日志列表
 

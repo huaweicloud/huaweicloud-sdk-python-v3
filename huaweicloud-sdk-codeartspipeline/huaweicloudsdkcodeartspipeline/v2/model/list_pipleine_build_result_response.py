@@ -32,7 +32,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, build_results=None):
-        """ListPipleineBuildResultResponse
+        r"""ListPipleineBuildResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipleineBuildResultResponse.
+        r"""Gets the offset of this ListPipleineBuildResultResponse.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -76,7 +76,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipleineBuildResultResponse.
+        r"""Sets the offset of this ListPipleineBuildResultResponse.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -87,7 +87,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipleineBuildResultResponse.
+        r"""Gets the limit of this ListPipleineBuildResultResponse.
 
         每次查询的条目数量
 
@@ -98,7 +98,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipleineBuildResultResponse.
+        r"""Sets the limit of this ListPipleineBuildResultResponse.
 
         每次查询的条目数量
 
@@ -109,7 +109,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPipleineBuildResultResponse.
+        r"""Gets the total of this ListPipleineBuildResultResponse.
 
         总条目数量
 
@@ -120,7 +120,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPipleineBuildResultResponse.
+        r"""Sets the total of this ListPipleineBuildResultResponse.
 
         总条目数量
 
@@ -131,7 +131,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @property
     def build_results(self):
-        """Gets the build_results of this ListPipleineBuildResultResponse.
+        r"""Gets the build_results of this ListPipleineBuildResultResponse.
 
         执行状况数据列表
 
@@ -142,7 +142,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
     @build_results.setter
     def build_results(self, build_results):
-        """Sets the build_results of this ListPipleineBuildResultResponse.
+        r"""Sets the build_results of this ListPipleineBuildResultResponse.
 
         执行状况数据列表
 

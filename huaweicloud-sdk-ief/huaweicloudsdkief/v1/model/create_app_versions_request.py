@@ -29,7 +29,7 @@ class CreateAppVersionsRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None, body=None):
-        """CreateAppVersionsRequest
+        r"""CreateAppVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateAppVersionsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateAppVersionsRequest.
+        r"""Gets the ief_instance_id of this CreateAppVersionsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class CreateAppVersionsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateAppVersionsRequest.
+        r"""Sets the ief_instance_id of this CreateAppVersionsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class CreateAppVersionsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppVersionsRequest.
+        r"""Gets the app_id of this CreateAppVersionsRequest.
 
         应用模板ID
 
@@ -89,7 +89,7 @@ class CreateAppVersionsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppVersionsRequest.
+        r"""Sets the app_id of this CreateAppVersionsRequest.
 
         应用模板ID
 
@@ -100,7 +100,7 @@ class CreateAppVersionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppVersionsRequest.
+        r"""Gets the body of this CreateAppVersionsRequest.
 
         :return: The body of this CreateAppVersionsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Version`
@@ -109,7 +109,7 @@ class CreateAppVersionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppVersionsRequest.
+        r"""Sets the body of this CreateAppVersionsRequest.
 
         :param body: The body of this CreateAppVersionsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Version`

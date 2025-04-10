@@ -28,7 +28,7 @@ class ShowGaussMySqlConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None, parameter_values=None):
-        """ShowGaussMySqlConfigurationResponse
+        r"""ShowGaussMySqlConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ShowGaussMySqlConfigurationResponse.
+        r"""Gets the configurations of this ShowGaussMySqlConfigurationResponse.
 
         :return: The configurations of this ShowGaussMySqlConfigurationResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary2`
@@ -60,7 +60,7 @@ class ShowGaussMySqlConfigurationResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ShowGaussMySqlConfigurationResponse.
+        r"""Sets the configurations of this ShowGaussMySqlConfigurationResponse.
 
         :param configurations: The configurations of this ShowGaussMySqlConfigurationResponse.
         :type configurations: :class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary2`
@@ -69,7 +69,7 @@ class ShowGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this ShowGaussMySqlConfigurationResponse.
+        r"""Gets the parameter_values of this ShowGaussMySqlConfigurationResponse.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。
 
@@ -80,7 +80,7 @@ class ShowGaussMySqlConfigurationResponse(SdkResponse):
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this ShowGaussMySqlConfigurationResponse.
+        r"""Sets the parameter_values of this ShowGaussMySqlConfigurationResponse.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。
 

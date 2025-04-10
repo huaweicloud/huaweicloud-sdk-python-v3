@@ -37,7 +37,7 @@ class ListMultiCloudResourcesRequest:
     }
 
     def __init__(self, vendor=None, type=None, limit=None, marker=None, resource_id_list=None, name_list=None, region_id_list=None):
-        """ListMultiCloudResourcesRequest
+        r"""ListMultiCloudResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def vendor(self):
-        """Gets the vendor of this ListMultiCloudResourcesRequest.
+        r"""Gets the vendor of this ListMultiCloudResourcesRequest.
 
         云厂商
 
@@ -94,7 +94,7 @@ class ListMultiCloudResourcesRequest:
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this ListMultiCloudResourcesRequest.
+        r"""Sets the vendor of this ListMultiCloudResourcesRequest.
 
         云厂商
 
@@ -105,7 +105,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListMultiCloudResourcesRequest.
+        r"""Gets the type of this ListMultiCloudResourcesRequest.
 
         资源类型
 
@@ -116,7 +116,7 @@ class ListMultiCloudResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListMultiCloudResourcesRequest.
+        r"""Sets the type of this ListMultiCloudResourcesRequest.
 
         资源类型
 
@@ -127,7 +127,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMultiCloudResourcesRequest.
+        r"""Gets the limit of this ListMultiCloudResourcesRequest.
 
         最大的返回数量
 
@@ -138,7 +138,7 @@ class ListMultiCloudResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMultiCloudResourcesRequest.
+        r"""Sets the limit of this ListMultiCloudResourcesRequest.
 
         最大的返回数量
 
@@ -149,7 +149,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListMultiCloudResourcesRequest.
+        r"""Gets the marker of this ListMultiCloudResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -160,7 +160,7 @@ class ListMultiCloudResourcesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListMultiCloudResourcesRequest.
+        r"""Sets the marker of this ListMultiCloudResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -171,7 +171,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def resource_id_list(self):
-        """Gets the resource_id_list of this ListMultiCloudResourcesRequest.
+        r"""Gets the resource_id_list of this ListMultiCloudResourcesRequest.
 
         资源id列表
 
@@ -182,7 +182,7 @@ class ListMultiCloudResourcesRequest:
 
     @resource_id_list.setter
     def resource_id_list(self, resource_id_list):
-        """Sets the resource_id_list of this ListMultiCloudResourcesRequest.
+        r"""Sets the resource_id_list of this ListMultiCloudResourcesRequest.
 
         资源id列表
 
@@ -193,7 +193,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def name_list(self):
-        """Gets the name_list of this ListMultiCloudResourcesRequest.
+        r"""Gets the name_list of this ListMultiCloudResourcesRequest.
 
         资源名称
 
@@ -204,7 +204,7 @@ class ListMultiCloudResourcesRequest:
 
     @name_list.setter
     def name_list(self, name_list):
-        """Sets the name_list of this ListMultiCloudResourcesRequest.
+        r"""Sets the name_list of this ListMultiCloudResourcesRequest.
 
         资源名称
 
@@ -215,7 +215,7 @@ class ListMultiCloudResourcesRequest:
 
     @property
     def region_id_list(self):
-        """Gets the region_id_list of this ListMultiCloudResourcesRequest.
+        r"""Gets the region_id_list of this ListMultiCloudResourcesRequest.
 
         region id列表
 
@@ -226,7 +226,7 @@ class ListMultiCloudResourcesRequest:
 
     @region_id_list.setter
     def region_id_list(self, region_id_list):
-        """Sets the region_id_list of this ListMultiCloudResourcesRequest.
+        r"""Sets the region_id_list of this ListMultiCloudResourcesRequest.
 
         region id列表
 

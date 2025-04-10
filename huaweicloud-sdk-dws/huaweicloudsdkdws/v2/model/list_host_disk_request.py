@@ -33,7 +33,7 @@ class ListHostDiskRequest:
     }
 
     def __init__(self, cluster_id=None, instance_id=None, instance_name=None, limit=None, offset=None):
-        """ListHostDiskRequest
+        r"""ListHostDiskRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListHostDiskRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListHostDiskRequest.
+        r"""Gets the cluster_id of this ListHostDiskRequest.
 
         集群ID。获取方法，请参见9.6-获取集群ID。
 
@@ -80,7 +80,7 @@ class ListHostDiskRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListHostDiskRequest.
+        r"""Sets the cluster_id of this ListHostDiskRequest.
 
         集群ID。获取方法，请参见9.6-获取集群ID。
 
@@ -91,7 +91,7 @@ class ListHostDiskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListHostDiskRequest.
+        r"""Gets the instance_id of this ListHostDiskRequest.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class ListHostDiskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListHostDiskRequest.
+        r"""Sets the instance_id of this ListHostDiskRequest.
 
         实例ID。
 
@@ -113,7 +113,7 @@ class ListHostDiskRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListHostDiskRequest.
+        r"""Gets the instance_name of this ListHostDiskRequest.
 
         实例名称。
 
@@ -124,7 +124,7 @@ class ListHostDiskRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListHostDiskRequest.
+        r"""Sets the instance_name of this ListHostDiskRequest.
 
         实例名称。
 
@@ -135,7 +135,7 @@ class ListHostDiskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostDiskRequest.
+        r"""Gets the limit of this ListHostDiskRequest.
 
         数据条目数。
 
@@ -146,7 +146,7 @@ class ListHostDiskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostDiskRequest.
+        r"""Sets the limit of this ListHostDiskRequest.
 
         数据条目数。
 
@@ -157,7 +157,7 @@ class ListHostDiskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostDiskRequest.
+        r"""Gets the offset of this ListHostDiskRequest.
 
         数据偏移量。
 
@@ -168,7 +168,7 @@ class ListHostDiskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostDiskRequest.
+        r"""Sets the offset of this ListHostDiskRequest.
 
         数据偏移量。
 

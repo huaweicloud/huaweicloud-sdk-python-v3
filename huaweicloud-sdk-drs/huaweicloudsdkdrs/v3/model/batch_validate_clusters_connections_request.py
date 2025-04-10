@@ -27,7 +27,7 @@ class BatchValidateClustersConnectionsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchValidateClustersConnectionsRequest
+        r"""BatchValidateClustersConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchValidateClustersConnectionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchValidateClustersConnectionsRequest.
+        r"""Gets the x_language of this BatchValidateClustersConnectionsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchValidateClustersConnectionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchValidateClustersConnectionsRequest.
+        r"""Sets the x_language of this BatchValidateClustersConnectionsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchValidateClustersConnectionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchValidateClustersConnectionsRequest.
+        r"""Gets the body of this BatchValidateClustersConnectionsRequest.
 
         :return: The body of this BatchValidateClustersConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSpecialTestConnectionReq`
@@ -81,7 +81,7 @@ class BatchValidateClustersConnectionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchValidateClustersConnectionsRequest.
+        r"""Sets the body of this BatchValidateClustersConnectionsRequest.
 
         :param body: The body of this BatchValidateClustersConnectionsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchSpecialTestConnectionReq`

@@ -26,7 +26,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateWatermarkTemplateResponse
+        r"""CreateWatermarkTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateWatermarkTemplateResponse.
+        r"""Gets the template_id of this CreateWatermarkTemplateResponse.
 
         水印模板Id
 
@@ -55,7 +55,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateWatermarkTemplateResponse.
+        r"""Sets the template_id of this CreateWatermarkTemplateResponse.
 
         水印模板Id
 

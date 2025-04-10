@@ -26,7 +26,7 @@ class SwitchConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchConfigurationResponse
+        r"""SwitchConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchConfigurationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchConfigurationResponse.
+        r"""Gets the job_id of this SwitchConfigurationResponse.
 
         应用参数模板的异步任务ID。
 
@@ -55,7 +55,7 @@ class SwitchConfigurationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchConfigurationResponse.
+        r"""Sets the job_id of this SwitchConfigurationResponse.
 
         应用参数模板的异步任务ID。
 

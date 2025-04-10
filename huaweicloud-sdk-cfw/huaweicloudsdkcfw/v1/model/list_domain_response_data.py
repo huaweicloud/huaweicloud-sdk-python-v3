@@ -35,7 +35,7 @@ class ListDomainResponseData:
     }
 
     def __init__(self, limit=None, offset=None, project_id=None, records=None, set_id=None, total=None):
-        """ListDomainResponseData
+        r"""ListDomainResponseData
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListDomainResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDomainResponseData.
+        r"""Gets the limit of this ListDomainResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -89,7 +89,7 @@ class ListDomainResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDomainResponseData.
+        r"""Sets the limit of this ListDomainResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -100,7 +100,7 @@ class ListDomainResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDomainResponseData.
+        r"""Gets the offset of this ListDomainResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -111,7 +111,7 @@ class ListDomainResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDomainResponseData.
+        r"""Sets the offset of this ListDomainResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -122,7 +122,7 @@ class ListDomainResponseData:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDomainResponseData.
+        r"""Gets the project_id of this ListDomainResponseData.
 
         项目ID
 
@@ -133,7 +133,7 @@ class ListDomainResponseData:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDomainResponseData.
+        r"""Sets the project_id of this ListDomainResponseData.
 
         项目ID
 
@@ -144,7 +144,7 @@ class ListDomainResponseData:
 
     @property
     def records(self):
-        """Gets the records of this ListDomainResponseData.
+        r"""Gets the records of this ListDomainResponseData.
 
         域名信息列表
 
@@ -155,7 +155,7 @@ class ListDomainResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListDomainResponseData.
+        r"""Sets the records of this ListDomainResponseData.
 
         域名信息列表
 
@@ -166,7 +166,7 @@ class ListDomainResponseData:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ListDomainResponseData.
+        r"""Gets the set_id of this ListDomainResponseData.
 
         域名组id
 
@@ -177,7 +177,7 @@ class ListDomainResponseData:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ListDomainResponseData.
+        r"""Sets the set_id of this ListDomainResponseData.
 
         域名组id
 
@@ -188,7 +188,7 @@ class ListDomainResponseData:
 
     @property
     def total(self):
-        """Gets the total of this ListDomainResponseData.
+        r"""Gets the total of this ListDomainResponseData.
 
         域名总数
 
@@ -199,7 +199,7 @@ class ListDomainResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDomainResponseData.
+        r"""Sets the total of this ListDomainResponseData.
 
         域名总数
 

@@ -27,7 +27,7 @@ class AssociateRouteTableRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """AssociateRouteTableRequest
+        r"""AssociateRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateRouteTableRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this AssociateRouteTableRequest.
+        r"""Gets the routetable_id of this AssociateRouteTableRequest.
 
         路由表ID
 
@@ -60,7 +60,7 @@ class AssociateRouteTableRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this AssociateRouteTableRequest.
+        r"""Sets the routetable_id of this AssociateRouteTableRequest.
 
         路由表ID
 
@@ -71,7 +71,7 @@ class AssociateRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateRouteTableRequest.
+        r"""Gets the body of this AssociateRouteTableRequest.
 
         :return: The body of this AssociateRouteTableRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.RoutetableAssociateReqbody`
@@ -80,7 +80,7 @@ class AssociateRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateRouteTableRequest.
+        r"""Sets the body of this AssociateRouteTableRequest.
 
         :param body: The body of this AssociateRouteTableRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.RoutetableAssociateReqbody`

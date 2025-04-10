@@ -27,7 +27,7 @@ class DrillServerParams:
     }
 
     def __init__(self, protected_instance=None, drill_server_id=None):
-        """DrillServerParams
+        r"""DrillServerParams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DrillServerParams:
 
     @property
     def protected_instance(self):
-        """Gets the protected_instance of this DrillServerParams.
+        r"""Gets the protected_instance of this DrillServerParams.
 
         演练云服务器对应的保护实例ID。
 
@@ -59,7 +59,7 @@ class DrillServerParams:
 
     @protected_instance.setter
     def protected_instance(self, protected_instance):
-        """Sets the protected_instance of this DrillServerParams.
+        r"""Sets the protected_instance of this DrillServerParams.
 
         演练云服务器对应的保护实例ID。
 
@@ -70,7 +70,7 @@ class DrillServerParams:
 
     @property
     def drill_server_id(self):
-        """Gets the drill_server_id of this DrillServerParams.
+        r"""Gets the drill_server_id of this DrillServerParams.
 
         演练云服务器ID。
 
@@ -81,7 +81,7 @@ class DrillServerParams:
 
     @drill_server_id.setter
     def drill_server_id(self, drill_server_id):
-        """Sets the drill_server_id of this DrillServerParams.
+        r"""Sets the drill_server_id of this DrillServerParams.
 
         演练云服务器ID。
 

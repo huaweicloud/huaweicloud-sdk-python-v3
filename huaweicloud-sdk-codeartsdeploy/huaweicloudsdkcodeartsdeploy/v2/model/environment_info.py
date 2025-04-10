@@ -33,7 +33,7 @@ class EnvironmentInfo:
     }
 
     def __init__(self, id=None, name=None, app_id=None, app_name=None, project_id=None):
-        """EnvironmentInfo
+        r"""EnvironmentInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EnvironmentInfo:
 
     @property
     def id(self):
-        """Gets the id of this EnvironmentInfo.
+        r"""Gets the id of this EnvironmentInfo.
 
         环境id
 
@@ -82,7 +82,7 @@ class EnvironmentInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvironmentInfo.
+        r"""Sets the id of this EnvironmentInfo.
 
         环境id
 
@@ -93,7 +93,7 @@ class EnvironmentInfo:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentInfo.
+        r"""Gets the name of this EnvironmentInfo.
 
         环境名称
 
@@ -104,7 +104,7 @@ class EnvironmentInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentInfo.
+        r"""Sets the name of this EnvironmentInfo.
 
         环境名称
 
@@ -115,7 +115,7 @@ class EnvironmentInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this EnvironmentInfo.
+        r"""Gets the app_id of this EnvironmentInfo.
 
         应用id
 
@@ -126,7 +126,7 @@ class EnvironmentInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this EnvironmentInfo.
+        r"""Sets the app_id of this EnvironmentInfo.
 
         应用id
 
@@ -137,7 +137,7 @@ class EnvironmentInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this EnvironmentInfo.
+        r"""Gets the app_name of this EnvironmentInfo.
 
         应用名称
 
@@ -148,7 +148,7 @@ class EnvironmentInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this EnvironmentInfo.
+        r"""Sets the app_name of this EnvironmentInfo.
 
         应用名称
 
@@ -159,7 +159,7 @@ class EnvironmentInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EnvironmentInfo.
+        r"""Gets the project_id of this EnvironmentInfo.
 
         项目id
 
@@ -170,7 +170,7 @@ class EnvironmentInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EnvironmentInfo.
+        r"""Sets the project_id of this EnvironmentInfo.
 
         项目id
 

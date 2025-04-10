@@ -26,7 +26,7 @@ class StopVideoMotionCaptureJobResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """StopVideoMotionCaptureJobResponse
+        r"""StopVideoMotionCaptureJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StopVideoMotionCaptureJobResponse.
+        r"""Gets the x_request_id of this StopVideoMotionCaptureJobResponse.
 
         :return: The x_request_id of this StopVideoMotionCaptureJobResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopVideoMotionCaptureJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StopVideoMotionCaptureJobResponse.
+        r"""Sets the x_request_id of this StopVideoMotionCaptureJobResponse.
 
         :param x_request_id: The x_request_id of this StopVideoMotionCaptureJobResponse.
         :type x_request_id: str

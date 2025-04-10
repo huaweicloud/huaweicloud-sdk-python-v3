@@ -27,7 +27,7 @@ class RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel
+        r"""RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Gets the application_id of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         ``` **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -61,7 +61,7 @@ class RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Sets the application_id of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         ``` **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -72,7 +72,7 @@ class RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Gets the params of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -83,7 +83,7 @@ class RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Sets the params of this RDMParamVOListVersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

@@ -29,7 +29,7 @@ class UrlDomainCreate:
     }
 
     def __init__(self, min_ssl_version=None, is_http_redirect_to_https=None, url_domain=None):
-        """UrlDomainCreate
+        r"""UrlDomainCreate
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UrlDomainCreate:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomainCreate.
+        r"""Gets the min_ssl_version of this UrlDomainCreate.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -68,7 +68,7 @@ class UrlDomainCreate:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomainCreate.
+        r"""Sets the min_ssl_version of this UrlDomainCreate.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -79,7 +79,7 @@ class UrlDomainCreate:
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this UrlDomainCreate.
+        r"""Gets the is_http_redirect_to_https of this UrlDomainCreate.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -90,7 +90,7 @@ class UrlDomainCreate:
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this UrlDomainCreate.
+        r"""Sets the is_http_redirect_to_https of this UrlDomainCreate.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -101,7 +101,7 @@ class UrlDomainCreate:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this UrlDomainCreate.
+        r"""Gets the url_domain of this UrlDomainCreate.
 
         自定义域名。长度为0-255位的字符串，需要符合域名规范。
 
@@ -112,7 +112,7 @@ class UrlDomainCreate:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this UrlDomainCreate.
+        r"""Sets the url_domain of this UrlDomainCreate.
 
         自定义域名。长度为0-255位的字符串，需要符合域名规范。
 

@@ -27,7 +27,7 @@ class UpdatePluginDraftRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdatePluginDraftRequest
+        r"""UpdatePluginDraftRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePluginDraftRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdatePluginDraftRequest.
+        r"""Gets the domain_id of this UpdatePluginDraftRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class UpdatePluginDraftRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdatePluginDraftRequest.
+        r"""Sets the domain_id of this UpdatePluginDraftRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class UpdatePluginDraftRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePluginDraftRequest.
+        r"""Gets the body of this UpdatePluginDraftRequest.
 
         :return: The body of this UpdatePluginDraftRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTO`
@@ -80,7 +80,7 @@ class UpdatePluginDraftRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePluginDraftRequest.
+        r"""Sets the body of this UpdatePluginDraftRequest.
 
         :param body: The body of this UpdatePluginDraftRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTO`

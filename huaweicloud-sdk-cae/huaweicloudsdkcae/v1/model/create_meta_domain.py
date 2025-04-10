@@ -25,7 +25,7 @@ class CreateMetaDomain:
     }
 
     def __init__(self, name=None):
-        """CreateMetaDomain
+        r"""CreateMetaDomain
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMetaDomain:
 
     @property
     def name(self):
-        """Gets the name of this CreateMetaDomain.
+        r"""Gets the name of this CreateMetaDomain.
 
         域名名称。
 
@@ -53,7 +53,7 @@ class CreateMetaDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMetaDomain.
+        r"""Sets the name of this CreateMetaDomain.
 
         域名名称。
 

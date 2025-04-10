@@ -27,7 +27,7 @@ class NovaCreateKeypairRequest:
     }
 
     def __init__(self, open_stack_api_version=None, body=None):
-        """NovaCreateKeypairRequest
+        r"""NovaCreateKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NovaCreateKeypairRequest:
 
     @property
     def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaCreateKeypairRequest.
+        r"""Gets the open_stack_api_version of this NovaCreateKeypairRequest.
 
         微版本头
 
@@ -61,7 +61,7 @@ class NovaCreateKeypairRequest:
 
     @open_stack_api_version.setter
     def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaCreateKeypairRequest.
+        r"""Sets the open_stack_api_version of this NovaCreateKeypairRequest.
 
         微版本头
 
@@ -72,7 +72,7 @@ class NovaCreateKeypairRequest:
 
     @property
     def body(self):
-        """Gets the body of this NovaCreateKeypairRequest.
+        r"""Gets the body of this NovaCreateKeypairRequest.
 
         :return: The body of this NovaCreateKeypairRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`
@@ -81,7 +81,7 @@ class NovaCreateKeypairRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NovaCreateKeypairRequest.
+        r"""Sets the body of this NovaCreateKeypairRequest.
 
         :param body: The body of this NovaCreateKeypairRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`

@@ -27,7 +27,7 @@ class BatchCreateDedicatedHostTagsRequest:
     }
 
     def __init__(self, dedicated_host_id=None, body=None):
-        """BatchCreateDedicatedHostTagsRequest
+        r"""BatchCreateDedicatedHostTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateDedicatedHostTagsRequest:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this BatchCreateDedicatedHostTagsRequest.
+        r"""Gets the dedicated_host_id of this BatchCreateDedicatedHostTagsRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -60,7 +60,7 @@ class BatchCreateDedicatedHostTagsRequest:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this BatchCreateDedicatedHostTagsRequest.
+        r"""Sets the dedicated_host_id of this BatchCreateDedicatedHostTagsRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -71,7 +71,7 @@ class BatchCreateDedicatedHostTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateDedicatedHostTagsRequest.
+        r"""Gets the body of this BatchCreateDedicatedHostTagsRequest.
 
         :return: The body of this BatchCreateDedicatedHostTagsRequest.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`
@@ -80,7 +80,7 @@ class BatchCreateDedicatedHostTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateDedicatedHostTagsRequest.
+        r"""Sets the body of this BatchCreateDedicatedHostTagsRequest.
 
         :param body: The body of this BatchCreateDedicatedHostTagsRequest.
         :type body: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`

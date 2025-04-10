@@ -30,7 +30,7 @@ class CreateAccountAssignmentRequest:
     }
 
     def __init__(self, instance_id=None, x_security_token=None, body=None):
-        """CreateAccountAssignmentRequest
+        r"""CreateAccountAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateAccountAssignmentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAccountAssignmentRequest.
+        r"""Gets the instance_id of this CreateAccountAssignmentRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -68,7 +68,7 @@ class CreateAccountAssignmentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAccountAssignmentRequest.
+        r"""Sets the instance_id of this CreateAccountAssignmentRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -79,7 +79,7 @@ class CreateAccountAssignmentRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CreateAccountAssignmentRequest.
+        r"""Gets the x_security_token of this CreateAccountAssignmentRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -90,7 +90,7 @@ class CreateAccountAssignmentRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CreateAccountAssignmentRequest.
+        r"""Sets the x_security_token of this CreateAccountAssignmentRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -101,7 +101,7 @@ class CreateAccountAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAccountAssignmentRequest.
+        r"""Gets the body of this CreateAccountAssignmentRequest.
 
         :return: The body of this CreateAccountAssignmentRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.CreateAccountAssignmentReqBody`
@@ -110,7 +110,7 @@ class CreateAccountAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAccountAssignmentRequest.
+        r"""Sets the body of this CreateAccountAssignmentRequest.
 
         :param body: The body of this CreateAccountAssignmentRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.CreateAccountAssignmentReqBody`

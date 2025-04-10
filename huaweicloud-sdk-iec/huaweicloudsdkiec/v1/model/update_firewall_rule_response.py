@@ -26,7 +26,7 @@ class UpdateFirewallRuleResponse(SdkResponse):
     }
 
     def __init__(self, firewall=None):
-        """UpdateFirewallRuleResponse
+        r"""UpdateFirewallRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateFirewallRuleResponse(SdkResponse):
 
     @property
     def firewall(self):
-        """Gets the firewall of this UpdateFirewallRuleResponse.
+        r"""Gets the firewall of this UpdateFirewallRuleResponse.
 
         :return: The firewall of this UpdateFirewallRuleResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleResp`
@@ -53,7 +53,7 @@ class UpdateFirewallRuleResponse(SdkResponse):
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this UpdateFirewallRuleResponse.
+        r"""Sets the firewall of this UpdateFirewallRuleResponse.
 
         :param firewall: The firewall of this UpdateFirewallRuleResponse.
         :type firewall: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleResp`

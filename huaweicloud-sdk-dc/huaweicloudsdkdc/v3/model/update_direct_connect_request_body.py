@@ -25,7 +25,7 @@ class UpdateDirectConnectRequestBody:
     }
 
     def __init__(self, direct_connect=None):
-        """UpdateDirectConnectRequestBody
+        r"""UpdateDirectConnectRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDirectConnectRequestBody:
 
     @property
     def direct_connect(self):
-        """Gets the direct_connect of this UpdateDirectConnectRequestBody.
+        r"""Gets the direct_connect of this UpdateDirectConnectRequestBody.
 
         :return: The direct_connect of this UpdateDirectConnectRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateDirectConnect`
@@ -52,7 +52,7 @@ class UpdateDirectConnectRequestBody:
 
     @direct_connect.setter
     def direct_connect(self, direct_connect):
-        """Sets the direct_connect of this UpdateDirectConnectRequestBody.
+        r"""Sets the direct_connect of this UpdateDirectConnectRequestBody.
 
         :param direct_connect: The direct_connect of this UpdateDirectConnectRequestBody.
         :type direct_connect: :class:`huaweicloudsdkdc.v3.UpdateDirectConnect`

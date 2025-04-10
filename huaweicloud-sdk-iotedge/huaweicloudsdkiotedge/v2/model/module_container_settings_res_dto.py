@@ -25,7 +25,7 @@ class ModuleContainerSettingsResDTO:
     }
 
     def __init__(self, configs=None):
-        """ModuleContainerSettingsResDTO
+        r"""ModuleContainerSettingsResDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModuleContainerSettingsResDTO:
 
     @property
     def configs(self):
-        """Gets the configs of this ModuleContainerSettingsResDTO.
+        r"""Gets the configs of this ModuleContainerSettingsResDTO.
 
         :return: The configs of this ModuleContainerSettingsResDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsResDTO`
@@ -52,7 +52,7 @@ class ModuleContainerSettingsResDTO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ModuleContainerSettingsResDTO.
+        r"""Sets the configs of this ModuleContainerSettingsResDTO.
 
         :param configs: The configs of this ModuleContainerSettingsResDTO.
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsResDTO`

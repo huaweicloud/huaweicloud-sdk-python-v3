@@ -27,7 +27,7 @@ class UpdateVpnConnectionRequest:
     }
 
     def __init__(self, vpn_connection_id=None, body=None):
-        """UpdateVpnConnectionRequest
+        r"""UpdateVpnConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVpnConnectionRequest:
 
     @property
     def vpn_connection_id(self):
-        """Gets the vpn_connection_id of this UpdateVpnConnectionRequest.
+        r"""Gets the vpn_connection_id of this UpdateVpnConnectionRequest.
 
         vpn连接ID
 
@@ -60,7 +60,7 @@ class UpdateVpnConnectionRequest:
 
     @vpn_connection_id.setter
     def vpn_connection_id(self, vpn_connection_id):
-        """Sets the vpn_connection_id of this UpdateVpnConnectionRequest.
+        r"""Sets the vpn_connection_id of this UpdateVpnConnectionRequest.
 
         vpn连接ID
 
@@ -71,7 +71,7 @@ class UpdateVpnConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpnConnectionRequest.
+        r"""Gets the body of this UpdateVpnConnectionRequest.
 
         :return: The body of this UpdateVpnConnectionRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnConnectionRequestBody`
@@ -80,7 +80,7 @@ class UpdateVpnConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpnConnectionRequest.
+        r"""Sets the body of this UpdateVpnConnectionRequest.
 
         :param body: The body of this UpdateVpnConnectionRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVpnConnectionRequestBody`

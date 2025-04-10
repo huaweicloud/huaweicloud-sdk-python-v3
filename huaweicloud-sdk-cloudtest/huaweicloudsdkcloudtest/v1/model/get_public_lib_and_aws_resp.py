@@ -41,7 +41,7 @@ class GetPublicLibAndAwsResp:
     }
 
     def __init__(self, aw_tag=None, document_link=None, is_favorite=None, public_aw_description=None, public_aw_id=None, public_aw_lib_id=None, public_aw_lib_name=None, public_aw_mark=None, public_aw_name=None):
-        """GetPublicLibAndAwsResp
+        r"""GetPublicLibAndAwsResp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def aw_tag(self):
-        """Gets the aw_tag of this GetPublicLibAndAwsResp.
+        r"""Gets the aw_tag of this GetPublicLibAndAwsResp.
 
         公共关键字分组信息
 
@@ -110,7 +110,7 @@ class GetPublicLibAndAwsResp:
 
     @aw_tag.setter
     def aw_tag(self, aw_tag):
-        """Sets the aw_tag of this GetPublicLibAndAwsResp.
+        r"""Sets the aw_tag of this GetPublicLibAndAwsResp.
 
         公共关键字分组信息
 
@@ -121,7 +121,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def document_link(self):
-        """Gets the document_link of this GetPublicLibAndAwsResp.
+        r"""Gets the document_link of this GetPublicLibAndAwsResp.
 
         公共关键字帮助文档链接
 
@@ -132,7 +132,7 @@ class GetPublicLibAndAwsResp:
 
     @document_link.setter
     def document_link(self, document_link):
-        """Sets the document_link of this GetPublicLibAndAwsResp.
+        r"""Sets the document_link of this GetPublicLibAndAwsResp.
 
         公共关键字帮助文档链接
 
@@ -143,7 +143,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def is_favorite(self):
-        """Gets the is_favorite of this GetPublicLibAndAwsResp.
+        r"""Gets the is_favorite of this GetPublicLibAndAwsResp.
 
         保留字段
 
@@ -154,7 +154,7 @@ class GetPublicLibAndAwsResp:
 
     @is_favorite.setter
     def is_favorite(self, is_favorite):
-        """Sets the is_favorite of this GetPublicLibAndAwsResp.
+        r"""Sets the is_favorite of this GetPublicLibAndAwsResp.
 
         保留字段
 
@@ -165,7 +165,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def public_aw_description(self):
-        """Gets the public_aw_description of this GetPublicLibAndAwsResp.
+        r"""Gets the public_aw_description of this GetPublicLibAndAwsResp.
 
         公共关键字描述
 
@@ -176,7 +176,7 @@ class GetPublicLibAndAwsResp:
 
     @public_aw_description.setter
     def public_aw_description(self, public_aw_description):
-        """Sets the public_aw_description of this GetPublicLibAndAwsResp.
+        r"""Sets the public_aw_description of this GetPublicLibAndAwsResp.
 
         公共关键字描述
 
@@ -187,7 +187,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def public_aw_id(self):
-        """Gets the public_aw_id of this GetPublicLibAndAwsResp.
+        r"""Gets the public_aw_id of this GetPublicLibAndAwsResp.
 
         公共关键字唯一ID
 
@@ -198,7 +198,7 @@ class GetPublicLibAndAwsResp:
 
     @public_aw_id.setter
     def public_aw_id(self, public_aw_id):
-        """Sets the public_aw_id of this GetPublicLibAndAwsResp.
+        r"""Sets the public_aw_id of this GetPublicLibAndAwsResp.
 
         公共关键字唯一ID
 
@@ -209,7 +209,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def public_aw_lib_id(self):
-        """Gets the public_aw_lib_id of this GetPublicLibAndAwsResp.
+        r"""Gets the public_aw_lib_id of this GetPublicLibAndAwsResp.
 
         公共关键库唯一ID
 
@@ -220,7 +220,7 @@ class GetPublicLibAndAwsResp:
 
     @public_aw_lib_id.setter
     def public_aw_lib_id(self, public_aw_lib_id):
-        """Sets the public_aw_lib_id of this GetPublicLibAndAwsResp.
+        r"""Sets the public_aw_lib_id of this GetPublicLibAndAwsResp.
 
         公共关键库唯一ID
 
@@ -231,7 +231,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def public_aw_lib_name(self):
-        """Gets the public_aw_lib_name of this GetPublicLibAndAwsResp.
+        r"""Gets the public_aw_lib_name of this GetPublicLibAndAwsResp.
 
         公共关键字库名称
 
@@ -242,7 +242,7 @@ class GetPublicLibAndAwsResp:
 
     @public_aw_lib_name.setter
     def public_aw_lib_name(self, public_aw_lib_name):
-        """Sets the public_aw_lib_name of this GetPublicLibAndAwsResp.
+        r"""Sets the public_aw_lib_name of this GetPublicLibAndAwsResp.
 
         公共关键字库名称
 
@@ -253,7 +253,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def public_aw_mark(self):
-        """Gets the public_aw_mark of this GetPublicLibAndAwsResp.
+        r"""Gets the public_aw_mark of this GetPublicLibAndAwsResp.
 
         保留字段
 
@@ -264,7 +264,7 @@ class GetPublicLibAndAwsResp:
 
     @public_aw_mark.setter
     def public_aw_mark(self, public_aw_mark):
-        """Sets the public_aw_mark of this GetPublicLibAndAwsResp.
+        r"""Sets the public_aw_mark of this GetPublicLibAndAwsResp.
 
         保留字段
 
@@ -275,7 +275,7 @@ class GetPublicLibAndAwsResp:
 
     @property
     def public_aw_name(self):
-        """Gets the public_aw_name of this GetPublicLibAndAwsResp.
+        r"""Gets the public_aw_name of this GetPublicLibAndAwsResp.
 
         公共关键字名称
 
@@ -286,7 +286,7 @@ class GetPublicLibAndAwsResp:
 
     @public_aw_name.setter
     def public_aw_name(self, public_aw_name):
-        """Sets the public_aw_name of this GetPublicLibAndAwsResp.
+        r"""Sets the public_aw_name of this GetPublicLibAndAwsResp.
 
         公共关键字名称
 

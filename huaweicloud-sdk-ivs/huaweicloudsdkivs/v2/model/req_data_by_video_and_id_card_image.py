@@ -35,7 +35,7 @@ class ReqDataByVideoAndIdCardImage:
     }
 
     def __init__(self, idcard_image1=None, idcard_image2=None, video=None, actions=None, nod_threshold=None, detail=None):
-        """ReqDataByVideoAndIdCardImage
+        r"""ReqDataByVideoAndIdCardImage
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @property
     def idcard_image1(self):
-        """Gets the idcard_image1 of this ReqDataByVideoAndIdCardImage.
+        r"""Gets the idcard_image1 of this ReqDataByVideoAndIdCardImage.
 
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -86,7 +86,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @idcard_image1.setter
     def idcard_image1(self, idcard_image1):
-        """Sets the idcard_image1 of this ReqDataByVideoAndIdCardImage.
+        r"""Sets the idcard_image1 of this ReqDataByVideoAndIdCardImage.
 
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -97,7 +97,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @property
     def idcard_image2(self):
-        """Gets the idcard_image2 of this ReqDataByVideoAndIdCardImage.
+        r"""Gets the idcard_image2 of this ReqDataByVideoAndIdCardImage.
 
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -108,7 +108,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @idcard_image2.setter
     def idcard_image2(self, idcard_image2):
-        """Sets the idcard_image2 of this ReqDataByVideoAndIdCardImage.
+        r"""Sets the idcard_image2 of this ReqDataByVideoAndIdCardImage.
 
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -119,7 +119,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @property
     def video(self):
-        """Gets the video of this ReqDataByVideoAndIdCardImage.
+        r"""Gets the video of this ReqDataByVideoAndIdCardImage.
 
         现场拍摄人像视频数据，使用base64编码，要求base64编码后大小不超过10M。
 
@@ -130,7 +130,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this ReqDataByVideoAndIdCardImage.
+        r"""Sets the video of this ReqDataByVideoAndIdCardImage.
 
         现场拍摄人像视频数据，使用base64编码，要求base64编码后大小不超过10M。
 
@@ -141,7 +141,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @property
     def actions(self):
-        """Gets the actions of this ReqDataByVideoAndIdCardImage.
+        r"""Gets the actions of this ReqDataByVideoAndIdCardImage.
 
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
 
@@ -152,7 +152,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ReqDataByVideoAndIdCardImage.
+        r"""Sets the actions of this ReqDataByVideoAndIdCardImage.
 
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
 
@@ -163,7 +163,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @property
     def nod_threshold(self):
-        """Gets the nod_threshold of this ReqDataByVideoAndIdCardImage.
+        r"""Gets the nod_threshold of this ReqDataByVideoAndIdCardImage.
 
         该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
 
@@ -174,7 +174,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @nod_threshold.setter
     def nod_threshold(self, nod_threshold):
-        """Sets the nod_threshold of this ReqDataByVideoAndIdCardImage.
+        r"""Sets the nod_threshold of this ReqDataByVideoAndIdCardImage.
 
         该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
 
@@ -185,7 +185,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @property
     def detail(self):
-        """Gets the detail of this ReqDataByVideoAndIdCardImage.
+        r"""Gets the detail of this ReqDataByVideoAndIdCardImage.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 
@@ -196,7 +196,7 @@ class ReqDataByVideoAndIdCardImage:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ReqDataByVideoAndIdCardImage.
+        r"""Sets the detail of this ReqDataByVideoAndIdCardImage.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 

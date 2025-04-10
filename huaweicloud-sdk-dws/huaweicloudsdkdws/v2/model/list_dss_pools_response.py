@@ -28,7 +28,7 @@ class ListDssPoolsResponse(SdkResponse):
     }
 
     def __init__(self, pools=None, count=None):
-        """ListDssPoolsResponse
+        r"""ListDssPoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDssPoolsResponse(SdkResponse):
 
     @property
     def pools(self):
-        """Gets the pools of this ListDssPoolsResponse.
+        r"""Gets the pools of this ListDssPoolsResponse.
 
         专属分布式存储池详情列表。
 
@@ -62,7 +62,7 @@ class ListDssPoolsResponse(SdkResponse):
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this ListDssPoolsResponse.
+        r"""Sets the pools of this ListDssPoolsResponse.
 
         专属分布式存储池详情列表。
 
@@ -73,7 +73,7 @@ class ListDssPoolsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDssPoolsResponse.
+        r"""Gets the count of this ListDssPoolsResponse.
 
         专属分布式存储池个数。
 
@@ -84,7 +84,7 @@ class ListDssPoolsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDssPoolsResponse.
+        r"""Sets the count of this ListDssPoolsResponse.
 
         专属分布式存储池个数。
 

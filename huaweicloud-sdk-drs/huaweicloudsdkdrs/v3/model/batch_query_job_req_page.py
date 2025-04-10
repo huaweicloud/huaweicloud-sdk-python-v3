@@ -27,7 +27,7 @@ class BatchQueryJobReqPage:
     }
 
     def __init__(self, jobs=None, page_req=None):
-        """BatchQueryJobReqPage
+        r"""BatchQueryJobReqPage
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchQueryJobReqPage:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchQueryJobReqPage.
+        r"""Gets the jobs of this BatchQueryJobReqPage.
 
         批量查询任务详情
 
@@ -60,7 +60,7 @@ class BatchQueryJobReqPage:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchQueryJobReqPage.
+        r"""Sets the jobs of this BatchQueryJobReqPage.
 
         批量查询任务详情
 
@@ -71,7 +71,7 @@ class BatchQueryJobReqPage:
 
     @property
     def page_req(self):
-        """Gets the page_req of this BatchQueryJobReqPage.
+        r"""Gets the page_req of this BatchQueryJobReqPage.
 
         :return: The page_req of this BatchQueryJobReqPage.
         :rtype: :class:`huaweicloudsdkdrs.v3.PageReq`
@@ -80,7 +80,7 @@ class BatchQueryJobReqPage:
 
     @page_req.setter
     def page_req(self, page_req):
-        """Sets the page_req of this BatchQueryJobReqPage.
+        r"""Sets the page_req of this BatchQueryJobReqPage.
 
         :param page_req: The page_req of this BatchQueryJobReqPage.
         :type page_req: :class:`huaweicloudsdkdrs.v3.PageReq`

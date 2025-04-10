@@ -28,7 +28,7 @@ class ListUsedDesktopInfoResponse(SdkResponse):
     }
 
     def __init__(self, desktop_used_info_list=None, total_count=None):
-        """ListUsedDesktopInfoResponse
+        r"""ListUsedDesktopInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUsedDesktopInfoResponse(SdkResponse):
 
     @property
     def desktop_used_info_list(self):
-        """Gets the desktop_used_info_list of this ListUsedDesktopInfoResponse.
+        r"""Gets the desktop_used_info_list of this ListUsedDesktopInfoResponse.
 
         桌面使用信息（以桌面Id划分）。
 
@@ -62,7 +62,7 @@ class ListUsedDesktopInfoResponse(SdkResponse):
 
     @desktop_used_info_list.setter
     def desktop_used_info_list(self, desktop_used_info_list):
-        """Sets the desktop_used_info_list of this ListUsedDesktopInfoResponse.
+        r"""Sets the desktop_used_info_list of this ListUsedDesktopInfoResponse.
 
         桌面使用信息（以桌面Id划分）。
 
@@ -73,7 +73,7 @@ class ListUsedDesktopInfoResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListUsedDesktopInfoResponse.
+        r"""Gets the total_count of this ListUsedDesktopInfoResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListUsedDesktopInfoResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListUsedDesktopInfoResponse.
+        r"""Sets the total_count of this ListUsedDesktopInfoResponse.
 
         总数。
 

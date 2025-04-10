@@ -25,7 +25,7 @@ class ShowAssetModelRequest:
     }
 
     def __init__(self, model_id=None):
-        """ShowAssetModelRequest
+        r"""ShowAssetModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAssetModelRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ShowAssetModelRequest.
+        r"""Gets the model_id of this ShowAssetModelRequest.
 
         模型ID
 
@@ -53,7 +53,7 @@ class ShowAssetModelRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ShowAssetModelRequest.
+        r"""Sets the model_id of this ShowAssetModelRequest.
 
         模型ID
 

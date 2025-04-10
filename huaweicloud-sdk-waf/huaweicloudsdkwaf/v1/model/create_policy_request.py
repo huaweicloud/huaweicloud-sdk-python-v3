@@ -27,7 +27,7 @@ class CreatePolicyRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreatePolicyRequest
+        r"""CreatePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePolicyRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePolicyRequest.
+        r"""Gets the enterprise_project_id of this CreatePolicyRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -61,7 +61,7 @@ class CreatePolicyRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePolicyRequest.
+        r"""Sets the enterprise_project_id of this CreatePolicyRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -72,7 +72,7 @@ class CreatePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePolicyRequest.
+        r"""Gets the body of this CreatePolicyRequest.
 
         :return: The body of this CreatePolicyRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequestBody`
@@ -81,7 +81,7 @@ class CreatePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePolicyRequest.
+        r"""Sets the body of this CreatePolicyRequest.
 
         :param body: The body of this CreatePolicyRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequestBody`

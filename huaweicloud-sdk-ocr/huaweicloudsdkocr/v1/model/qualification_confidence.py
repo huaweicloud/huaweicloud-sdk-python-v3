@@ -59,7 +59,7 @@ class QualificationConfidence:
     }
 
     def __init__(self, id_number=None, assessment_date=None, certificate_number=None, file_number=None, union_card_number=None, continuing_education_info=None, sex=None, phone_number=None, registration_date=None, work_unit=None, integrity_assessment_info=None, nationality=None, name=None, address=None, driving_class=None, issuing_authority=None, birth_date=None, qualification_category_list=None):
-        """QualificationConfidence
+        r"""QualificationConfidence
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class QualificationConfidence:
 
     @property
     def id_number(self):
-        """Gets the id_number of this QualificationConfidence.
+        r"""Gets the id_number of this QualificationConfidence.
 
         身份证号置信度。 
 
@@ -173,7 +173,7 @@ class QualificationConfidence:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this QualificationConfidence.
+        r"""Sets the id_number of this QualificationConfidence.
 
         身份证号置信度。 
 
@@ -184,7 +184,7 @@ class QualificationConfidence:
 
     @property
     def assessment_date(self):
-        """Gets the assessment_date of this QualificationConfidence.
+        r"""Gets the assessment_date of this QualificationConfidence.
 
         考核时间置信度。 
 
@@ -195,7 +195,7 @@ class QualificationConfidence:
 
     @assessment_date.setter
     def assessment_date(self, assessment_date):
-        """Sets the assessment_date of this QualificationConfidence.
+        r"""Sets the assessment_date of this QualificationConfidence.
 
         考核时间置信度。 
 
@@ -206,7 +206,7 @@ class QualificationConfidence:
 
     @property
     def certificate_number(self):
-        """Gets the certificate_number of this QualificationConfidence.
+        r"""Gets the certificate_number of this QualificationConfidence.
 
         从业资格证号置信度。 
 
@@ -217,7 +217,7 @@ class QualificationConfidence:
 
     @certificate_number.setter
     def certificate_number(self, certificate_number):
-        """Sets the certificate_number of this QualificationConfidence.
+        r"""Sets the certificate_number of this QualificationConfidence.
 
         从业资格证号置信度。 
 
@@ -228,7 +228,7 @@ class QualificationConfidence:
 
     @property
     def file_number(self):
-        """Gets the file_number of this QualificationConfidence.
+        r"""Gets the file_number of this QualificationConfidence.
 
         档案号置信度。 
 
@@ -239,7 +239,7 @@ class QualificationConfidence:
 
     @file_number.setter
     def file_number(self, file_number):
-        """Sets the file_number of this QualificationConfidence.
+        r"""Sets the file_number of this QualificationConfidence.
 
         档案号置信度。 
 
@@ -250,7 +250,7 @@ class QualificationConfidence:
 
     @property
     def union_card_number(self):
-        """Gets the union_card_number of this QualificationConfidence.
+        r"""Gets the union_card_number of this QualificationConfidence.
 
         福路通号置信度。 
 
@@ -261,7 +261,7 @@ class QualificationConfidence:
 
     @union_card_number.setter
     def union_card_number(self, union_card_number):
-        """Sets the union_card_number of this QualificationConfidence.
+        r"""Sets the union_card_number of this QualificationConfidence.
 
         福路通号置信度。 
 
@@ -272,7 +272,7 @@ class QualificationConfidence:
 
     @property
     def continuing_education_info(self):
-        """Gets the continuing_education_info of this QualificationConfidence.
+        r"""Gets the continuing_education_info of this QualificationConfidence.
 
         继续教育信息置信度。 
 
@@ -283,7 +283,7 @@ class QualificationConfidence:
 
     @continuing_education_info.setter
     def continuing_education_info(self, continuing_education_info):
-        """Sets the continuing_education_info of this QualificationConfidence.
+        r"""Sets the continuing_education_info of this QualificationConfidence.
 
         继续教育信息置信度。 
 
@@ -294,7 +294,7 @@ class QualificationConfidence:
 
     @property
     def sex(self):
-        """Gets the sex of this QualificationConfidence.
+        r"""Gets the sex of this QualificationConfidence.
 
         性别置信度。 
 
@@ -305,7 +305,7 @@ class QualificationConfidence:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this QualificationConfidence.
+        r"""Sets the sex of this QualificationConfidence.
 
         性别置信度。 
 
@@ -316,7 +316,7 @@ class QualificationConfidence:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this QualificationConfidence.
+        r"""Gets the phone_number of this QualificationConfidence.
 
         联系电话置信度。 
 
@@ -327,7 +327,7 @@ class QualificationConfidence:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this QualificationConfidence.
+        r"""Sets the phone_number of this QualificationConfidence.
 
         联系电话置信度。 
 
@@ -338,7 +338,7 @@ class QualificationConfidence:
 
     @property
     def registration_date(self):
-        """Gets the registration_date of this QualificationConfidence.
+        r"""Gets the registration_date of this QualificationConfidence.
 
         登记时间置信度。 
 
@@ -349,7 +349,7 @@ class QualificationConfidence:
 
     @registration_date.setter
     def registration_date(self, registration_date):
-        """Sets the registration_date of this QualificationConfidence.
+        r"""Sets the registration_date of this QualificationConfidence.
 
         登记时间置信度。 
 
@@ -360,7 +360,7 @@ class QualificationConfidence:
 
     @property
     def work_unit(self):
-        """Gets the work_unit of this QualificationConfidence.
+        r"""Gets the work_unit of this QualificationConfidence.
 
         单位置信度。 
 
@@ -371,7 +371,7 @@ class QualificationConfidence:
 
     @work_unit.setter
     def work_unit(self, work_unit):
-        """Sets the work_unit of this QualificationConfidence.
+        r"""Sets the work_unit of this QualificationConfidence.
 
         单位置信度。 
 
@@ -382,7 +382,7 @@ class QualificationConfidence:
 
     @property
     def integrity_assessment_info(self):
-        """Gets the integrity_assessment_info of this QualificationConfidence.
+        r"""Gets the integrity_assessment_info of this QualificationConfidence.
 
         诚信考核信息置信度。 
 
@@ -393,7 +393,7 @@ class QualificationConfidence:
 
     @integrity_assessment_info.setter
     def integrity_assessment_info(self, integrity_assessment_info):
-        """Sets the integrity_assessment_info of this QualificationConfidence.
+        r"""Sets the integrity_assessment_info of this QualificationConfidence.
 
         诚信考核信息置信度。 
 
@@ -404,7 +404,7 @@ class QualificationConfidence:
 
     @property
     def nationality(self):
-        """Gets the nationality of this QualificationConfidence.
+        r"""Gets the nationality of this QualificationConfidence.
 
         国籍置信度。 
 
@@ -415,7 +415,7 @@ class QualificationConfidence:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this QualificationConfidence.
+        r"""Sets the nationality of this QualificationConfidence.
 
         国籍置信度。 
 
@@ -426,7 +426,7 @@ class QualificationConfidence:
 
     @property
     def name(self):
-        """Gets the name of this QualificationConfidence.
+        r"""Gets the name of this QualificationConfidence.
 
         姓名置信度。 
 
@@ -437,7 +437,7 @@ class QualificationConfidence:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QualificationConfidence.
+        r"""Sets the name of this QualificationConfidence.
 
         姓名置信度。 
 
@@ -448,7 +448,7 @@ class QualificationConfidence:
 
     @property
     def address(self):
-        """Gets the address of this QualificationConfidence.
+        r"""Gets the address of this QualificationConfidence.
 
         住址置信度。 
 
@@ -459,7 +459,7 @@ class QualificationConfidence:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this QualificationConfidence.
+        r"""Sets the address of this QualificationConfidence.
 
         住址置信度。 
 
@@ -470,7 +470,7 @@ class QualificationConfidence:
 
     @property
     def driving_class(self):
-        """Gets the driving_class of this QualificationConfidence.
+        r"""Gets the driving_class of this QualificationConfidence.
 
         准驾车型置信度。 
 
@@ -481,7 +481,7 @@ class QualificationConfidence:
 
     @driving_class.setter
     def driving_class(self, driving_class):
-        """Sets the driving_class of this QualificationConfidence.
+        r"""Sets the driving_class of this QualificationConfidence.
 
         准驾车型置信度。 
 
@@ -492,7 +492,7 @@ class QualificationConfidence:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this QualificationConfidence.
+        r"""Gets the issuing_authority of this QualificationConfidence.
 
         发证机关置信度。 
 
@@ -503,7 +503,7 @@ class QualificationConfidence:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this QualificationConfidence.
+        r"""Sets the issuing_authority of this QualificationConfidence.
 
         发证机关置信度。 
 
@@ -514,7 +514,7 @@ class QualificationConfidence:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this QualificationConfidence.
+        r"""Gets the birth_date of this QualificationConfidence.
 
         出生日期置信度。 
 
@@ -525,7 +525,7 @@ class QualificationConfidence:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this QualificationConfidence.
+        r"""Sets the birth_date of this QualificationConfidence.
 
         出生日期置信度。 
 
@@ -536,7 +536,7 @@ class QualificationConfidence:
 
     @property
     def qualification_category_list(self):
-        """Gets the qualification_category_list of this QualificationConfidence.
+        r"""Gets the qualification_category_list of this QualificationConfidence.
 
         从业资格列表置信度。 
 
@@ -547,7 +547,7 @@ class QualificationConfidence:
 
     @qualification_category_list.setter
     def qualification_category_list(self, qualification_category_list):
-        """Sets the qualification_category_list of this QualificationConfidence.
+        r"""Sets the qualification_category_list of this QualificationConfidence.
 
         从业资格列表置信度。 
 

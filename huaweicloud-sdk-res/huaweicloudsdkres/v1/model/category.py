@@ -27,7 +27,7 @@ class Category:
     }
 
     def __init__(self, user_meta_list=None, item_meta_list=None):
-        """Category
+        r"""Category
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Category:
 
     @property
     def user_meta_list(self):
-        """Gets the user_meta_list of this Category.
+        r"""Gets the user_meta_list of this Category.
 
         用户特征。
 
@@ -61,7 +61,7 @@ class Category:
 
     @user_meta_list.setter
     def user_meta_list(self, user_meta_list):
-        """Sets the user_meta_list of this Category.
+        r"""Sets the user_meta_list of this Category.
 
         用户特征。
 
@@ -72,7 +72,7 @@ class Category:
 
     @property
     def item_meta_list(self):
-        """Gets the item_meta_list of this Category.
+        r"""Gets the item_meta_list of this Category.
 
         物品特征。
 
@@ -83,7 +83,7 @@ class Category:
 
     @item_meta_list.setter
     def item_meta_list(self, item_meta_list):
-        """Sets the item_meta_list of this Category.
+        r"""Sets the item_meta_list of this Category.
 
         物品特征。
 

@@ -32,7 +32,7 @@ class UpdatePermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None, body=None):
-        """UpdatePermissionSetRequest
+        r"""UpdatePermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdatePermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this UpdatePermissionSetRequest.
+        r"""Gets the x_security_token of this UpdatePermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -74,7 +74,7 @@ class UpdatePermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this UpdatePermissionSetRequest.
+        r"""Sets the x_security_token of this UpdatePermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -85,7 +85,7 @@ class UpdatePermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePermissionSetRequest.
+        r"""Gets the instance_id of this UpdatePermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -96,7 +96,7 @@ class UpdatePermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePermissionSetRequest.
+        r"""Sets the instance_id of this UpdatePermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -107,7 +107,7 @@ class UpdatePermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this UpdatePermissionSetRequest.
+        r"""Gets the permission_set_id of this UpdatePermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -118,7 +118,7 @@ class UpdatePermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this UpdatePermissionSetRequest.
+        r"""Sets the permission_set_id of this UpdatePermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -129,7 +129,7 @@ class UpdatePermissionSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePermissionSetRequest.
+        r"""Gets the body of this UpdatePermissionSetRequest.
 
         :return: The body of this UpdatePermissionSetRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.UpdatePermissionSetReqBody`
@@ -138,7 +138,7 @@ class UpdatePermissionSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePermissionSetRequest.
+        r"""Sets the body of this UpdatePermissionSetRequest.
 
         :param body: The body of this UpdatePermissionSetRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.UpdatePermissionSetReqBody`

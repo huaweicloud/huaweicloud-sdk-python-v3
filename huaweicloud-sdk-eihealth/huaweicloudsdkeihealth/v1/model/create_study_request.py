@@ -27,7 +27,7 @@ class CreateStudyRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateStudyRequest
+        r"""CreateStudyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateStudyRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateStudyRequest.
+        r"""Gets the eihealth_project_id of this CreateStudyRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateStudyRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateStudyRequest.
+        r"""Sets the eihealth_project_id of this CreateStudyRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateStudyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStudyRequest.
+        r"""Gets the body of this CreateStudyRequest.
 
         :return: The body of this CreateStudyRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyReq`
@@ -80,7 +80,7 @@ class CreateStudyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStudyRequest.
+        r"""Sets the body of this CreateStudyRequest.
 
         :param body: The body of this CreateStudyRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateStudyReq`

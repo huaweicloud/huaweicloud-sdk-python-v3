@@ -29,7 +29,7 @@ class QuotaInfo:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """QuotaInfo
+        r"""QuotaInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QuotaInfo:
 
     @property
     def type(self):
-        """Gets the type of this QuotaInfo.
+        r"""Gets the type of this QuotaInfo.
 
         资源类型
 
@@ -68,7 +68,7 @@ class QuotaInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaInfo.
+        r"""Sets the type of this QuotaInfo.
 
         资源类型
 
@@ -79,7 +79,7 @@ class QuotaInfo:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaInfo.
+        r"""Gets the quota of this QuotaInfo.
 
         配额上限
 
@@ -90,7 +90,7 @@ class QuotaInfo:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaInfo.
+        r"""Sets the quota of this QuotaInfo.
 
         配额上限
 
@@ -101,7 +101,7 @@ class QuotaInfo:
 
     @property
     def used(self):
-        """Gets the used of this QuotaInfo.
+        r"""Gets the used of this QuotaInfo.
 
         已使用数
 
@@ -112,7 +112,7 @@ class QuotaInfo:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaInfo.
+        r"""Sets the used of this QuotaInfo.
 
         已使用数
 

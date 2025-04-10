@@ -51,7 +51,7 @@ class ComponentList:
     }
 
     def __init__(self, name=None, labels=None, runtime_stack=None, status=None, environment_name=None, application_name=None, environment_id=None, application_id=None, id=None, creator=None, source=None, version=None, platform_type=None, external_accesses=None):
-        """ComponentList
+        r"""ComponentList
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class ComponentList:
 
     @property
     def name(self):
-        """Gets the name of this ComponentList.
+        r"""Gets the name of this ComponentList.
 
         :return: The name of this ComponentList.
         :rtype: str
@@ -141,7 +141,7 @@ class ComponentList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentList.
+        r"""Sets the name of this ComponentList.
 
         :param name: The name of this ComponentList.
         :type name: str
@@ -150,7 +150,7 @@ class ComponentList:
 
     @property
     def labels(self):
-        """Gets the labels of this ComponentList.
+        r"""Gets the labels of this ComponentList.
 
         :return: The labels of this ComponentList.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -159,7 +159,7 @@ class ComponentList:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ComponentList.
+        r"""Sets the labels of this ComponentList.
 
         :param labels: The labels of this ComponentList.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -168,7 +168,7 @@ class ComponentList:
 
     @property
     def runtime_stack(self):
-        """Gets the runtime_stack of this ComponentList.
+        r"""Gets the runtime_stack of this ComponentList.
 
         :return: The runtime_stack of this ComponentList.
         :rtype: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -177,7 +177,7 @@ class ComponentList:
 
     @runtime_stack.setter
     def runtime_stack(self, runtime_stack):
-        """Sets the runtime_stack of this ComponentList.
+        r"""Sets the runtime_stack of this ComponentList.
 
         :param runtime_stack: The runtime_stack of this ComponentList.
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -186,7 +186,7 @@ class ComponentList:
 
     @property
     def status(self):
-        """Gets the status of this ComponentList.
+        r"""Gets the status of this ComponentList.
 
         :return: The status of this ComponentList.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentStatusView`
@@ -195,7 +195,7 @@ class ComponentList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentList.
+        r"""Sets the status of this ComponentList.
 
         :param status: The status of this ComponentList.
         :type status: :class:`huaweicloudsdkservicestage.v3.ComponentStatusView`
@@ -204,7 +204,7 @@ class ComponentList:
 
     @property
     def environment_name(self):
-        """Gets the environment_name of this ComponentList.
+        r"""Gets the environment_name of this ComponentList.
 
         :return: The environment_name of this ComponentList.
         :rtype: str
@@ -213,7 +213,7 @@ class ComponentList:
 
     @environment_name.setter
     def environment_name(self, environment_name):
-        """Sets the environment_name of this ComponentList.
+        r"""Sets the environment_name of this ComponentList.
 
         :param environment_name: The environment_name of this ComponentList.
         :type environment_name: str
@@ -222,7 +222,7 @@ class ComponentList:
 
     @property
     def application_name(self):
-        """Gets the application_name of this ComponentList.
+        r"""Gets the application_name of this ComponentList.
 
         :return: The application_name of this ComponentList.
         :rtype: str
@@ -231,7 +231,7 @@ class ComponentList:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this ComponentList.
+        r"""Sets the application_name of this ComponentList.
 
         :param application_name: The application_name of this ComponentList.
         :type application_name: str
@@ -240,7 +240,7 @@ class ComponentList:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ComponentList.
+        r"""Gets the environment_id of this ComponentList.
 
         :return: The environment_id of this ComponentList.
         :rtype: str
@@ -249,7 +249,7 @@ class ComponentList:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ComponentList.
+        r"""Sets the environment_id of this ComponentList.
 
         :param environment_id: The environment_id of this ComponentList.
         :type environment_id: str
@@ -258,7 +258,7 @@ class ComponentList:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ComponentList.
+        r"""Gets the application_id of this ComponentList.
 
         :return: The application_id of this ComponentList.
         :rtype: str
@@ -267,7 +267,7 @@ class ComponentList:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ComponentList.
+        r"""Sets the application_id of this ComponentList.
 
         :param application_id: The application_id of this ComponentList.
         :type application_id: str
@@ -276,7 +276,7 @@ class ComponentList:
 
     @property
     def id(self):
-        """Gets the id of this ComponentList.
+        r"""Gets the id of this ComponentList.
 
         :return: The id of this ComponentList.
         :rtype: str
@@ -285,7 +285,7 @@ class ComponentList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentList.
+        r"""Sets the id of this ComponentList.
 
         :param id: The id of this ComponentList.
         :type id: str
@@ -294,7 +294,7 @@ class ComponentList:
 
     @property
     def creator(self):
-        """Gets the creator of this ComponentList.
+        r"""Gets the creator of this ComponentList.
 
         :return: The creator of this ComponentList.
         :rtype: str
@@ -303,7 +303,7 @@ class ComponentList:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ComponentList.
+        r"""Sets the creator of this ComponentList.
 
         :param creator: The creator of this ComponentList.
         :type creator: str
@@ -312,7 +312,7 @@ class ComponentList:
 
     @property
     def source(self):
-        """Gets the source of this ComponentList.
+        r"""Gets the source of this ComponentList.
 
         :return: The source of this ComponentList.
         :rtype: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -321,7 +321,7 @@ class ComponentList:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentList.
+        r"""Sets the source of this ComponentList.
 
         :param source: The source of this ComponentList.
         :type source: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -330,7 +330,7 @@ class ComponentList:
 
     @property
     def version(self):
-        """Gets the version of this ComponentList.
+        r"""Gets the version of this ComponentList.
 
         :return: The version of this ComponentList.
         :rtype: str
@@ -339,7 +339,7 @@ class ComponentList:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentList.
+        r"""Sets the version of this ComponentList.
 
         :param version: The version of this ComponentList.
         :type version: str
@@ -348,7 +348,7 @@ class ComponentList:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this ComponentList.
+        r"""Gets the platform_type of this ComponentList.
 
         :return: The platform_type of this ComponentList.
         :rtype: str
@@ -357,7 +357,7 @@ class ComponentList:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this ComponentList.
+        r"""Sets the platform_type of this ComponentList.
 
         :param platform_type: The platform_type of this ComponentList.
         :type platform_type: str
@@ -366,7 +366,7 @@ class ComponentList:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this ComponentList.
+        r"""Gets the external_accesses of this ComponentList.
 
         :return: The external_accesses of this ComponentList.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
@@ -375,7 +375,7 @@ class ComponentList:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this ComponentList.
+        r"""Sets the external_accesses of this ComponentList.
 
         :param external_accesses: The external_accesses of this ComponentList.
         :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]

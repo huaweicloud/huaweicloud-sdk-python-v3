@@ -29,7 +29,7 @@ class ListSubnetsRequest:
     }
 
     def __init__(self, limit=None, marker=None, vpc_id=None):
-        """ListSubnetsRequest
+        r"""ListSubnetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSubnetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubnetsRequest.
+        r"""Gets the limit of this ListSubnetsRequest.
 
         每页返回的个数
 
@@ -68,7 +68,7 @@ class ListSubnetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubnetsRequest.
+        r"""Sets the limit of this ListSubnetsRequest.
 
         每页返回的个数
 
@@ -79,7 +79,7 @@ class ListSubnetsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSubnetsRequest.
+        r"""Gets the marker of this ListSubnetsRequest.
 
         分页查询起始的资源id，为空时查询第一页
 
@@ -90,7 +90,7 @@ class ListSubnetsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSubnetsRequest.
+        r"""Sets the marker of this ListSubnetsRequest.
 
         分页查询起始的资源id，为空时查询第一页
 
@@ -101,7 +101,7 @@ class ListSubnetsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListSubnetsRequest.
+        r"""Gets the vpc_id of this ListSubnetsRequest.
 
         按照vpc_id过滤查询  企业项目细粒度授权场景下，该字段必传
 
@@ -112,7 +112,7 @@ class ListSubnetsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListSubnetsRequest.
+        r"""Sets the vpc_id of this ListSubnetsRequest.
 
         按照vpc_id过滤查询  企业项目细粒度授权场景下，该字段必传
 

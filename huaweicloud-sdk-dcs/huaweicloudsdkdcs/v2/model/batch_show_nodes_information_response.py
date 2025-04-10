@@ -28,7 +28,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
     }
 
     def __init__(self, count=None, instances=None):
-        """BatchShowNodesInformationResponse
+        r"""BatchShowNodesInformationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowNodesInformationResponse.
+        r"""Gets the count of this BatchShowNodesInformationResponse.
 
         查询结果的实例总数
 
@@ -62,7 +62,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowNodesInformationResponse.
+        r"""Sets the count of this BatchShowNodesInformationResponse.
 
         查询结果的实例总数
 
@@ -73,7 +73,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this BatchShowNodesInformationResponse.
+        r"""Gets the instances of this BatchShowNodesInformationResponse.
 
         实例列表。
 
@@ -84,7 +84,7 @@ class BatchShowNodesInformationResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this BatchShowNodesInformationResponse.
+        r"""Sets the instances of this BatchShowNodesInformationResponse.
 
         实例列表。
 

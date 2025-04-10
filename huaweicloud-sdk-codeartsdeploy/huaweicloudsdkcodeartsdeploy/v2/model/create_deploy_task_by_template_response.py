@@ -28,7 +28,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
     }
 
     def __init__(self, task_name=None, task_id=None):
-        """CreateDeployTaskByTemplateResponse
+        r"""CreateDeployTaskByTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateDeployTaskByTemplateResponse.
+        r"""Gets the task_name of this CreateDeployTaskByTemplateResponse.
 
         应用名称
 
@@ -62,7 +62,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateDeployTaskByTemplateResponse.
+        r"""Sets the task_name of this CreateDeployTaskByTemplateResponse.
 
         应用名称
 
@@ -73,7 +73,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateDeployTaskByTemplateResponse.
+        r"""Gets the task_id of this CreateDeployTaskByTemplateResponse.
 
         部署任务id
 
@@ -84,7 +84,7 @@ class CreateDeployTaskByTemplateResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateDeployTaskByTemplateResponse.
+        r"""Sets the task_id of this CreateDeployTaskByTemplateResponse.
 
         部署任务id
 

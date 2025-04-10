@@ -27,7 +27,7 @@ class LeftRightPosition:
     }
 
     def __init__(self, left=None, right=None):
-        """LeftRightPosition
+        r"""LeftRightPosition
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LeftRightPosition:
 
     @property
     def left(self):
-        """Gets the left of this LeftRightPosition.
+        r"""Gets the left of this LeftRightPosition.
 
         :return: The left of this LeftRightPosition.
         :rtype: :class:`huaweicloudsdkcbs.v1.Position`
@@ -57,7 +57,7 @@ class LeftRightPosition:
 
     @left.setter
     def left(self, left):
-        """Sets the left of this LeftRightPosition.
+        r"""Sets the left of this LeftRightPosition.
 
         :param left: The left of this LeftRightPosition.
         :type left: :class:`huaweicloudsdkcbs.v1.Position`
@@ -66,7 +66,7 @@ class LeftRightPosition:
 
     @property
     def right(self):
-        """Gets the right of this LeftRightPosition.
+        r"""Gets the right of this LeftRightPosition.
 
         :return: The right of this LeftRightPosition.
         :rtype: :class:`huaweicloudsdkcbs.v1.Position`
@@ -75,7 +75,7 @@ class LeftRightPosition:
 
     @right.setter
     def right(self, right):
-        """Sets the right of this LeftRightPosition.
+        r"""Sets the right of this LeftRightPosition.
 
         :param right: The right of this LeftRightPosition.
         :type right: :class:`huaweicloudsdkcbs.v1.Position`

@@ -31,7 +31,7 @@ class V2XEdgeAppResponseDTO:
     }
 
     def __init__(self, v2x_edge_id=None, edge_app_id=None, app_version=None, status=None):
-        """V2XEdgeAppResponseDTO
+        r"""V2XEdgeAppResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class V2XEdgeAppResponseDTO:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this V2XEdgeAppResponseDTO.
+        r"""Gets the v2x_edge_id of this V2XEdgeAppResponseDTO.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -75,7 +75,7 @@ class V2XEdgeAppResponseDTO:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this V2XEdgeAppResponseDTO.
+        r"""Sets the v2x_edge_id of this V2XEdgeAppResponseDTO.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -86,7 +86,7 @@ class V2XEdgeAppResponseDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this V2XEdgeAppResponseDTO.
+        r"""Gets the edge_app_id of this V2XEdgeAppResponseDTO.
 
         **参数说明**：用户自定义应用唯一ID。
 
@@ -97,7 +97,7 @@ class V2XEdgeAppResponseDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this V2XEdgeAppResponseDTO.
+        r"""Sets the edge_app_id of this V2XEdgeAppResponseDTO.
 
         **参数说明**：用户自定义应用唯一ID。
 
@@ -108,7 +108,7 @@ class V2XEdgeAppResponseDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this V2XEdgeAppResponseDTO.
+        r"""Gets the app_version of this V2XEdgeAppResponseDTO.
 
         **参数说明**：应用版本，比如1.0.0。
 
@@ -119,7 +119,7 @@ class V2XEdgeAppResponseDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this V2XEdgeAppResponseDTO.
+        r"""Sets the app_version of this V2XEdgeAppResponseDTO.
 
         **参数说明**：应用版本，比如1.0.0。
 
@@ -130,7 +130,7 @@ class V2XEdgeAppResponseDTO:
 
     @property
     def status(self):
-        """Gets the status of this V2XEdgeAppResponseDTO.
+        r"""Gets the status of this V2XEdgeAppResponseDTO.
 
         **参数说明**：应用部署状态。  **取值范围**：  - UNINSTALLED：待部署  - INSTALLED：部署中  - OFFLINE：离线  - ONLINE：在线  - UPGRADING：升级中  - DELETING：删除中  - RUNNING：运行中
 
@@ -141,7 +141,7 @@ class V2XEdgeAppResponseDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this V2XEdgeAppResponseDTO.
+        r"""Sets the status of this V2XEdgeAppResponseDTO.
 
         **参数说明**：应用部署状态。  **取值范围**：  - UNINSTALLED：待部署  - INSTALLED：部署中  - OFFLINE：离线  - ONLINE：在线  - UPGRADING：升级中  - DELETING：删除中  - RUNNING：运行中
 

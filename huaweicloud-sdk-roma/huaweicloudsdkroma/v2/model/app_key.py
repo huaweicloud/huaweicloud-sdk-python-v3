@@ -23,7 +23,7 @@ class AppKey:
     }
 
     def __init__(self):
-        """AppKey
+        r"""AppKey
 
         The model defined in huaweicloud sdk
 

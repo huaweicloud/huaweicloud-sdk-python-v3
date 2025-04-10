@@ -26,7 +26,7 @@ class ListGrantsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListGrantsResponse
+        r"""ListGrantsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListGrantsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListGrantsResponse.
+        r"""Gets the data of this ListGrantsResponse.
 
         :return: The data of this ListGrantsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.GrantDTO`
@@ -53,7 +53,7 @@ class ListGrantsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListGrantsResponse.
+        r"""Sets the data of this ListGrantsResponse.
 
         :param data: The data of this ListGrantsResponse.
         :type data: :class:`huaweicloudsdkcsms.v1.GrantDTO`

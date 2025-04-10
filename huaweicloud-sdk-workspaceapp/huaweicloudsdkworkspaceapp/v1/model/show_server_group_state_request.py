@@ -25,7 +25,7 @@ class ShowServerGroupStateRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """ShowServerGroupStateRequest
+        r"""ShowServerGroupStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerGroupStateRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowServerGroupStateRequest.
+        r"""Gets the server_group_id of this ShowServerGroupStateRequest.
 
         服务器组唯一标识。
 
@@ -53,7 +53,7 @@ class ShowServerGroupStateRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowServerGroupStateRequest.
+        r"""Sets the server_group_id of this ShowServerGroupStateRequest.
 
         服务器组唯一标识。
 

@@ -35,7 +35,7 @@ class GlobalSecondaryIndex:
     }
 
     def __init__(self, index_name=None, shard_key_fields=None, shard_mode=None, sort_key_fields=None, abstract_fields=None, provisioned_throughput=None):
-        """GlobalSecondaryIndex
+        r"""GlobalSecondaryIndex
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class GlobalSecondaryIndex:
 
     @property
     def index_name(self):
-        """Gets the index_name of this GlobalSecondaryIndex.
+        r"""Gets the index_name of this GlobalSecondaryIndex.
 
         二级索引名称，表内唯一。
 
@@ -87,7 +87,7 @@ class GlobalSecondaryIndex:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this GlobalSecondaryIndex.
+        r"""Sets the index_name of this GlobalSecondaryIndex.
 
         二级索引名称，表内唯一。
 
@@ -98,7 +98,7 @@ class GlobalSecondaryIndex:
 
     @property
     def shard_key_fields(self):
-        """Gets the shard_key_fields of this GlobalSecondaryIndex.
+        r"""Gets the shard_key_fields of this GlobalSecondaryIndex.
 
         分区键字段名数组，顺序组合。
 
@@ -109,7 +109,7 @@ class GlobalSecondaryIndex:
 
     @shard_key_fields.setter
     def shard_key_fields(self, shard_key_fields):
-        """Sets the shard_key_fields of this GlobalSecondaryIndex.
+        r"""Sets the shard_key_fields of this GlobalSecondaryIndex.
 
         分区键字段名数组，顺序组合。
 
@@ -120,7 +120,7 @@ class GlobalSecondaryIndex:
 
     @property
     def shard_mode(self):
-        """Gets the shard_mode of this GlobalSecondaryIndex.
+        r"""Gets the shard_mode of this GlobalSecondaryIndex.
 
         分区模式。
 
@@ -131,7 +131,7 @@ class GlobalSecondaryIndex:
 
     @shard_mode.setter
     def shard_mode(self, shard_mode):
-        """Sets the shard_mode of this GlobalSecondaryIndex.
+        r"""Sets the shard_mode of this GlobalSecondaryIndex.
 
         分区模式。
 
@@ -142,7 +142,7 @@ class GlobalSecondaryIndex:
 
     @property
     def sort_key_fields(self):
-        """Gets the sort_key_fields of this GlobalSecondaryIndex.
+        r"""Gets the sort_key_fields of this GlobalSecondaryIndex.
 
         排序键字段名数组，顺序组合。
 
@@ -153,7 +153,7 @@ class GlobalSecondaryIndex:
 
     @sort_key_fields.setter
     def sort_key_fields(self, sort_key_fields):
-        """Sets the sort_key_fields of this GlobalSecondaryIndex.
+        r"""Sets the sort_key_fields of this GlobalSecondaryIndex.
 
         排序键字段名数组，顺序组合。
 
@@ -164,7 +164,7 @@ class GlobalSecondaryIndex:
 
     @property
     def abstract_fields(self):
-        """Gets the abstract_fields of this GlobalSecondaryIndex.
+        r"""Gets the abstract_fields of this GlobalSecondaryIndex.
 
         摘要字段名数组。
 
@@ -175,7 +175,7 @@ class GlobalSecondaryIndex:
 
     @abstract_fields.setter
     def abstract_fields(self, abstract_fields):
-        """Sets the abstract_fields of this GlobalSecondaryIndex.
+        r"""Sets the abstract_fields of this GlobalSecondaryIndex.
 
         摘要字段名数组。
 
@@ -186,7 +186,7 @@ class GlobalSecondaryIndex:
 
     @property
     def provisioned_throughput(self):
-        """Gets the provisioned_throughput of this GlobalSecondaryIndex.
+        r"""Gets the provisioned_throughput of this GlobalSecondaryIndex.
 
         :return: The provisioned_throughput of this GlobalSecondaryIndex.
         :rtype: :class:`huaweicloudsdkkvs.v1.ProvisionedThroughput`
@@ -195,7 +195,7 @@ class GlobalSecondaryIndex:
 
     @provisioned_throughput.setter
     def provisioned_throughput(self, provisioned_throughput):
-        """Sets the provisioned_throughput of this GlobalSecondaryIndex.
+        r"""Sets the provisioned_throughput of this GlobalSecondaryIndex.
 
         :param provisioned_throughput: The provisioned_throughput of this GlobalSecondaryIndex.
         :type provisioned_throughput: :class:`huaweicloudsdkkvs.v1.ProvisionedThroughput`

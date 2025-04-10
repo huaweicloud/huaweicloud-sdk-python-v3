@@ -31,7 +31,7 @@ class CreateAssetTreeRequest:
     }
 
     def __init__(self, project_id=None, asset_id=None, parent_id=None, body=None):
-        """CreateAssetTreeRequest
+        r"""CreateAssetTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateAssetTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAssetTreeRequest.
+        r"""Gets the project_id of this CreateAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -72,7 +72,7 @@ class CreateAssetTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAssetTreeRequest.
+        r"""Sets the project_id of this CreateAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -83,7 +83,7 @@ class CreateAssetTreeRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreateAssetTreeRequest.
+        r"""Gets the asset_id of this CreateAssetTreeRequest.
 
         资产ID
 
@@ -94,7 +94,7 @@ class CreateAssetTreeRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreateAssetTreeRequest.
+        r"""Sets the asset_id of this CreateAssetTreeRequest.
 
         资产ID
 
@@ -105,7 +105,7 @@ class CreateAssetTreeRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateAssetTreeRequest.
+        r"""Gets the parent_id of this CreateAssetTreeRequest.
 
         父目录ID
 
@@ -116,7 +116,7 @@ class CreateAssetTreeRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateAssetTreeRequest.
+        r"""Sets the parent_id of this CreateAssetTreeRequest.
 
         父目录ID
 
@@ -127,7 +127,7 @@ class CreateAssetTreeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAssetTreeRequest.
+        r"""Gets the body of this CreateAssetTreeRequest.
 
         :return: The body of this CreateAssetTreeRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestAssetTree`
@@ -136,7 +136,7 @@ class CreateAssetTreeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAssetTreeRequest.
+        r"""Sets the body of this CreateAssetTreeRequest.
 
         :param body: The body of this CreateAssetTreeRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestAssetTree`

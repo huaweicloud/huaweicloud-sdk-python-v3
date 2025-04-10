@@ -26,7 +26,7 @@ class ListBusinessResponse(SdkResponse):
     }
 
     def __init__(self, business_nodes=None):
-        """ListBusinessResponse
+        r"""ListBusinessResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBusinessResponse(SdkResponse):
 
     @property
     def business_nodes(self):
-        """Gets the business_nodes of this ListBusinessResponse.
+        r"""Gets the business_nodes of this ListBusinessResponse.
 
         获取应用列表数据结构。
 
@@ -55,7 +55,7 @@ class ListBusinessResponse(SdkResponse):
 
     @business_nodes.setter
     def business_nodes(self, business_nodes):
-        """Sets the business_nodes of this ListBusinessResponse.
+        r"""Sets the business_nodes of this ListBusinessResponse.
 
         获取应用列表数据结构。
 

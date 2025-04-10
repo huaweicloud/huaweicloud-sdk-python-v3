@@ -31,7 +31,7 @@ class CouponUnsubscribeResult:
     }
 
     def __init__(self, coupon_id=None, coupon_type=None, amount=None, measure_id=None):
-        """CouponUnsubscribeResult
+        r"""CouponUnsubscribeResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CouponUnsubscribeResult:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this CouponUnsubscribeResult.
+        r"""Gets the coupon_id of this CouponUnsubscribeResult.
 
         券ID
 
@@ -75,7 +75,7 @@ class CouponUnsubscribeResult:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this CouponUnsubscribeResult.
+        r"""Sets the coupon_id of this CouponUnsubscribeResult.
 
         券ID
 
@@ -86,7 +86,7 @@ class CouponUnsubscribeResult:
 
     @property
     def coupon_type(self):
-        """Gets the coupon_type of this CouponUnsubscribeResult.
+        r"""Gets the coupon_type of this CouponUnsubscribeResult.
 
         券类型 302：现金券 303：储值卡
 
@@ -97,7 +97,7 @@ class CouponUnsubscribeResult:
 
     @coupon_type.setter
     def coupon_type(self, coupon_type):
-        """Sets the coupon_type of this CouponUnsubscribeResult.
+        r"""Sets the coupon_type of this CouponUnsubscribeResult.
 
         券类型 302：现金券 303：储值卡
 
@@ -108,7 +108,7 @@ class CouponUnsubscribeResult:
 
     @property
     def amount(self):
-        """Gets the amount of this CouponUnsubscribeResult.
+        r"""Gets the amount of this CouponUnsubscribeResult.
 
         券退的金额
 
@@ -119,7 +119,7 @@ class CouponUnsubscribeResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this CouponUnsubscribeResult.
+        r"""Sets the amount of this CouponUnsubscribeResult.
 
         券退的金额
 
@@ -130,7 +130,7 @@ class CouponUnsubscribeResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this CouponUnsubscribeResult.
+        r"""Gets the measure_id of this CouponUnsubscribeResult.
 
         度量单位'
 
@@ -141,7 +141,7 @@ class CouponUnsubscribeResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this CouponUnsubscribeResult.
+        r"""Sets the measure_id of this CouponUnsubscribeResult.
 
         度量单位'
 

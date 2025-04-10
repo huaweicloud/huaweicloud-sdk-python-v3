@@ -27,7 +27,7 @@ class AccessRomaInfo:
     }
 
     def __init__(self, app_key=None, app_secret=None):
-        """AccessRomaInfo
+        r"""AccessRomaInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessRomaInfo:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AccessRomaInfo.
+        r"""Gets the app_key of this AccessRomaInfo.
 
         认证key，加密存储
 
@@ -61,7 +61,7 @@ class AccessRomaInfo:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AccessRomaInfo.
+        r"""Sets the app_key of this AccessRomaInfo.
 
         认证key，加密存储
 
@@ -72,7 +72,7 @@ class AccessRomaInfo:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this AccessRomaInfo.
+        r"""Gets the app_secret of this AccessRomaInfo.
 
         认证secret，加密存储
 
@@ -83,7 +83,7 @@ class AccessRomaInfo:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this AccessRomaInfo.
+        r"""Sets the app_secret of this AccessRomaInfo.
 
         认证secret，加密存储
 

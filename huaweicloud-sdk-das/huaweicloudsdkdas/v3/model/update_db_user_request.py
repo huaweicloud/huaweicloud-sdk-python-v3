@@ -31,7 +31,7 @@ class UpdateDbUserRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, x_language=None, body=None):
-        """UpdateDbUserRequest
+        r"""UpdateDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDbUserRequest.
+        r"""Gets the instance_id of this UpdateDbUserRequest.
 
         实例ID
 
@@ -73,7 +73,7 @@ class UpdateDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDbUserRequest.
+        r"""Sets the instance_id of this UpdateDbUserRequest.
 
         实例ID
 
@@ -84,7 +84,7 @@ class UpdateDbUserRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this UpdateDbUserRequest.
+        r"""Gets the db_user_id of this UpdateDbUserRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -95,7 +95,7 @@ class UpdateDbUserRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this UpdateDbUserRequest.
+        r"""Sets the db_user_id of this UpdateDbUserRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -106,7 +106,7 @@ class UpdateDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateDbUserRequest.
+        r"""Gets the x_language of this UpdateDbUserRequest.
 
         语言
 
@@ -117,7 +117,7 @@ class UpdateDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateDbUserRequest.
+        r"""Sets the x_language of this UpdateDbUserRequest.
 
         语言
 
@@ -128,7 +128,7 @@ class UpdateDbUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDbUserRequest.
+        r"""Gets the body of this UpdateDbUserRequest.
 
         :return: The body of this UpdateDbUserRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`
@@ -137,7 +137,7 @@ class UpdateDbUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDbUserRequest.
+        r"""Sets the body of this UpdateDbUserRequest.
 
         :param body: The body of this UpdateDbUserRequest.
         :type body: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`

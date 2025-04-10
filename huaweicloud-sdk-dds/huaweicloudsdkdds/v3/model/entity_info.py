@@ -27,7 +27,7 @@ class EntityInfo:
     }
 
     def __init__(self, entity_id=None, entity_name=None):
-        """EntityInfo
+        r"""EntityInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EntityInfo:
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this EntityInfo.
+        r"""Gets the entity_id of this EntityInfo.
 
         组ID或节点ID。
 
@@ -59,7 +59,7 @@ class EntityInfo:
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this EntityInfo.
+        r"""Sets the entity_id of this EntityInfo.
 
         组ID或节点ID。
 
@@ -70,7 +70,7 @@ class EntityInfo:
 
     @property
     def entity_name(self):
-        """Gets the entity_name of this EntityInfo.
+        r"""Gets the entity_name of this EntityInfo.
 
         组名称或节点名称。
 
@@ -81,7 +81,7 @@ class EntityInfo:
 
     @entity_name.setter
     def entity_name(self, entity_name):
-        """Sets the entity_name of this EntityInfo.
+        r"""Sets the entity_name of this EntityInfo.
 
         组名称或节点名称。
 

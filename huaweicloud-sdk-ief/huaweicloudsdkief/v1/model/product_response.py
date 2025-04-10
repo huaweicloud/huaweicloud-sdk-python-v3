@@ -47,7 +47,7 @@ class ProductResponse:
     }
 
     def __init__(self, id=None, name=None, description=None, attributes=None, project_id=None, created_at=None, tags=None, private_key=None, certificate=None, ca=None, package=None, identifier=None):
-        """ProductResponse
+        r"""ProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class ProductResponse:
 
     @property
     def id(self):
-        """Gets the id of this ProductResponse.
+        r"""Gets the id of this ProductResponse.
 
         产品id
 
@@ -129,7 +129,7 @@ class ProductResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProductResponse.
+        r"""Sets the id of this ProductResponse.
 
         产品id
 
@@ -140,7 +140,7 @@ class ProductResponse:
 
     @property
     def name(self):
-        """Gets the name of this ProductResponse.
+        r"""Gets the name of this ProductResponse.
 
         产品名称
 
@@ -151,7 +151,7 @@ class ProductResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProductResponse.
+        r"""Sets the name of this ProductResponse.
 
         产品名称
 
@@ -162,7 +162,7 @@ class ProductResponse:
 
     @property
     def description(self):
-        """Gets the description of this ProductResponse.
+        r"""Gets the description of this ProductResponse.
 
         产品描述
 
@@ -173,7 +173,7 @@ class ProductResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProductResponse.
+        r"""Sets the description of this ProductResponse.
 
         产品描述
 
@@ -184,7 +184,7 @@ class ProductResponse:
 
     @property
     def attributes(self):
-        """Gets the attributes of this ProductResponse.
+        r"""Gets the attributes of this ProductResponse.
 
         产品属性值
 
@@ -195,7 +195,7 @@ class ProductResponse:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ProductResponse.
+        r"""Sets the attributes of this ProductResponse.
 
         产品属性值
 
@@ -206,7 +206,7 @@ class ProductResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ProductResponse.
+        r"""Gets the project_id of this ProductResponse.
 
         产品所属账号的项目ID
 
@@ -217,7 +217,7 @@ class ProductResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ProductResponse.
+        r"""Sets the project_id of this ProductResponse.
 
         产品所属账号的项目ID
 
@@ -228,7 +228,7 @@ class ProductResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ProductResponse.
+        r"""Gets the created_at of this ProductResponse.
 
         产品创建时间戳
 
@@ -239,7 +239,7 @@ class ProductResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ProductResponse.
+        r"""Sets the created_at of this ProductResponse.
 
         产品创建时间戳
 
@@ -250,7 +250,7 @@ class ProductResponse:
 
     @property
     def tags(self):
-        """Gets the tags of this ProductResponse.
+        r"""Gets the tags of this ProductResponse.
 
         产品标签
 
@@ -261,7 +261,7 @@ class ProductResponse:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProductResponse.
+        r"""Sets the tags of this ProductResponse.
 
         产品标签
 
@@ -272,7 +272,7 @@ class ProductResponse:
 
     @property
     def private_key(self):
-        """Gets the private_key of this ProductResponse.
+        r"""Gets the private_key of this ProductResponse.
 
         产品私钥
 
@@ -283,7 +283,7 @@ class ProductResponse:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ProductResponse.
+        r"""Sets the private_key of this ProductResponse.
 
         产品私钥
 
@@ -294,7 +294,7 @@ class ProductResponse:
 
     @property
     def certificate(self):
-        """Gets the certificate of this ProductResponse.
+        r"""Gets the certificate of this ProductResponse.
 
         产品证书
 
@@ -305,7 +305,7 @@ class ProductResponse:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ProductResponse.
+        r"""Sets the certificate of this ProductResponse.
 
         产品证书
 
@@ -316,7 +316,7 @@ class ProductResponse:
 
     @property
     def ca(self):
-        """Gets the ca of this ProductResponse.
+        r"""Gets the ca of this ProductResponse.
 
         产品根证书
 
@@ -327,7 +327,7 @@ class ProductResponse:
 
     @ca.setter
     def ca(self, ca):
-        """Sets the ca of this ProductResponse.
+        r"""Sets the ca of this ProductResponse.
 
         产品根证书
 
@@ -338,7 +338,7 @@ class ProductResponse:
 
     @property
     def package(self):
-        """Gets the package of this ProductResponse.
+        r"""Gets the package of this ProductResponse.
 
         将产品证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -349,7 +349,7 @@ class ProductResponse:
 
     @package.setter
     def package(self, package):
-        """Sets the package of this ProductResponse.
+        r"""Sets the package of this ProductResponse.
 
         将产品证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -360,7 +360,7 @@ class ProductResponse:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ProductResponse.
+        r"""Gets the identifier of this ProductResponse.
 
         产品使用token注册时的凭证
 
@@ -371,7 +371,7 @@ class ProductResponse:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ProductResponse.
+        r"""Sets the identifier of this ProductResponse.
 
         产品使用token注册时的凭证
 

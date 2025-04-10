@@ -41,7 +41,7 @@ class ListApiTopNRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, instance_id=None, start_time=None, end_time=None, time_unit=None, top_num=None, order_by=None):
-        """ListApiTopNRequest
+        r"""ListApiTopNRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListApiTopNRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListApiTopNRequest.
+        r"""Gets the workspace of this ListApiTopNRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -103,7 +103,7 @@ class ListApiTopNRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListApiTopNRequest.
+        r"""Sets the workspace of this ListApiTopNRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -114,7 +114,7 @@ class ListApiTopNRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListApiTopNRequest.
+        r"""Gets the dlm_type of this ListApiTopNRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -125,7 +125,7 @@ class ListApiTopNRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListApiTopNRequest.
+        r"""Sets the dlm_type of this ListApiTopNRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -136,7 +136,7 @@ class ListApiTopNRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListApiTopNRequest.
+        r"""Gets the api_id of this ListApiTopNRequest.
 
         api编号。
 
@@ -147,7 +147,7 @@ class ListApiTopNRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListApiTopNRequest.
+        r"""Sets the api_id of this ListApiTopNRequest.
 
         api编号。
 
@@ -158,7 +158,7 @@ class ListApiTopNRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApiTopNRequest.
+        r"""Gets the instance_id of this ListApiTopNRequest.
 
         集群编号。
 
@@ -169,7 +169,7 @@ class ListApiTopNRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApiTopNRequest.
+        r"""Sets the instance_id of this ListApiTopNRequest.
 
         集群编号。
 
@@ -180,7 +180,7 @@ class ListApiTopNRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListApiTopNRequest.
+        r"""Gets the start_time of this ListApiTopNRequest.
 
         开始时间（13位时间戳）。
 
@@ -191,7 +191,7 @@ class ListApiTopNRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListApiTopNRequest.
+        r"""Sets the start_time of this ListApiTopNRequest.
 
         开始时间（13位时间戳）。
 
@@ -202,7 +202,7 @@ class ListApiTopNRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListApiTopNRequest.
+        r"""Gets the end_time of this ListApiTopNRequest.
 
         结束时间（13位时间戳）。
 
@@ -213,7 +213,7 @@ class ListApiTopNRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListApiTopNRequest.
+        r"""Sets the end_time of this ListApiTopNRequest.
 
         结束时间（13位时间戳）。
 
@@ -224,7 +224,7 @@ class ListApiTopNRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ListApiTopNRequest.
+        r"""Gets the time_unit of this ListApiTopNRequest.
 
         时间单位。
 
@@ -235,7 +235,7 @@ class ListApiTopNRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ListApiTopNRequest.
+        r"""Sets the time_unit of this ListApiTopNRequest.
 
         时间单位。
 
@@ -246,7 +246,7 @@ class ListApiTopNRequest:
 
     @property
     def top_num(self):
-        """Gets the top_num of this ListApiTopNRequest.
+        r"""Gets the top_num of this ListApiTopNRequest.
 
         前几名。
 
@@ -257,7 +257,7 @@ class ListApiTopNRequest:
 
     @top_num.setter
     def top_num(self, top_num):
-        """Sets the top_num of this ListApiTopNRequest.
+        r"""Sets the top_num of this ListApiTopNRequest.
 
         前几名。
 
@@ -268,7 +268,7 @@ class ListApiTopNRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListApiTopNRequest.
+        r"""Gets the order_by of this ListApiTopNRequest.
 
         排序条件。
 
@@ -279,7 +279,7 @@ class ListApiTopNRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListApiTopNRequest.
+        r"""Sets the order_by of this ListApiTopNRequest.
 
         排序条件。
 

@@ -33,7 +33,7 @@ class DataVolumes:
     }
 
     def __init__(self, volumetype=None, size=None, shareable=None, cluster_id=None, cluster_type=None):
-        """DataVolumes
+        r"""DataVolumes
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DataVolumes:
 
     @property
     def volumetype(self):
-        """Gets the volumetype of this DataVolumes.
+        r"""Gets the volumetype of this DataVolumes.
 
         裸金属服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型SAS：高IO磁盘类型SSD：超高IO磁盘类型约束：在专属云中申请裸金属服务器时，须使用专属企业存储，此时该字段前缀必须是DESS_ 。枚举值如下：DESS_SAS_ISCSI：普通I/O企业存储DESS_SAS_FC：普通I/O企业存储（低延时）DESS_MIX_ISCSI：高I/O企业存储DESS_MIX_FC：高I/O企业存储（低延时）DESS_SSD_ISCSI：超高I/O企业存储DESS_SSD_FC：超高I/O企业存储（低延时）所有用户，包年包月场景下，不能挂载DESS卷。 说明：企业存储支持的存储类型说明可以从管理控制台或参考《专属企业存储服务用户指南》的“申请专属企业存储”“申请专属企业存储”章节获取。
 
@@ -80,7 +80,7 @@ class DataVolumes:
 
     @volumetype.setter
     def volumetype(self, volumetype):
-        """Sets the volumetype of this DataVolumes.
+        r"""Sets the volumetype of this DataVolumes.
 
         裸金属服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型SAS：高IO磁盘类型SSD：超高IO磁盘类型约束：在专属云中申请裸金属服务器时，须使用专属企业存储，此时该字段前缀必须是DESS_ 。枚举值如下：DESS_SAS_ISCSI：普通I/O企业存储DESS_SAS_FC：普通I/O企业存储（低延时）DESS_MIX_ISCSI：高I/O企业存储DESS_MIX_FC：高I/O企业存储（低延时）DESS_SSD_ISCSI：超高I/O企业存储DESS_SSD_FC：超高I/O企业存储（低延时）所有用户，包年包月场景下，不能挂载DESS卷。 说明：企业存储支持的存储类型说明可以从管理控制台或参考《专属企业存储服务用户指南》的“申请专属企业存储”“申请专属企业存储”章节获取。
 
@@ -91,7 +91,7 @@ class DataVolumes:
 
     @property
     def size(self):
-        """Gets the size of this DataVolumes.
+        r"""Gets the size of this DataVolumes.
 
         数据盘大小，容量单位为GB，输入大小范围为[10-32768]。
 
@@ -102,7 +102,7 @@ class DataVolumes:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DataVolumes.
+        r"""Sets the size of this DataVolumes.
 
         数据盘大小，容量单位为GB，输入大小范围为[10-32768]。
 
@@ -113,7 +113,7 @@ class DataVolumes:
 
     @property
     def shareable(self):
-        """Gets the shareable of this DataVolumes.
+        r"""Gets the shareable of this DataVolumes.
 
         是否为共享磁盘。true为共享盘，false为普通云硬盘
 
@@ -124,7 +124,7 @@ class DataVolumes:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this DataVolumes.
+        r"""Sets the shareable of this DataVolumes.
 
         是否为共享磁盘。true为共享盘，false为普通云硬盘
 
@@ -135,7 +135,7 @@ class DataVolumes:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DataVolumes.
+        r"""Gets the cluster_id of this DataVolumes.
 
         裸金属服务器数据盘对应的存储池ID。 说明：使用专属分布式存储时需要该字段。存储池ID可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
@@ -146,7 +146,7 @@ class DataVolumes:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DataVolumes.
+        r"""Sets the cluster_id of this DataVolumes.
 
         裸金属服务器数据盘对应的存储池ID。 说明：使用专属分布式存储时需要该字段。存储池ID可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
@@ -157,7 +157,7 @@ class DataVolumes:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this DataVolumes.
+        r"""Gets the cluster_type of this DataVolumes.
 
         裸金属服务器数据盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
@@ -168,7 +168,7 @@ class DataVolumes:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this DataVolumes.
+        r"""Sets the cluster_type of this DataVolumes.
 
         裸金属服务器数据盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 

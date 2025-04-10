@@ -39,7 +39,7 @@ class PoliciesClientClientTypeOptions:
     }
 
     def __init__(self, sc_type_window=None, sc_type_mac=None, sc_type_android=None, sc_type_linux=None, sc_type_h5=None, sc_type_ios=None, sc_type_harmony_os=None, tc_type_all=None):
-        """PoliciesClientClientTypeOptions
+        r"""PoliciesClientClientTypeOptions
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_window(self):
-        """Gets the sc_type_window of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_window of this PoliciesClientClientTypeOptions.
 
         是否勾选Windows客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -103,7 +103,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_window.setter
     def sc_type_window(self, sc_type_window):
-        """Sets the sc_type_window of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_window of this PoliciesClientClientTypeOptions.
 
         是否勾选Windows客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -114,7 +114,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_mac(self):
-        """Gets the sc_type_mac of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_mac of this PoliciesClientClientTypeOptions.
 
         是否勾选macOS客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -125,7 +125,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_mac.setter
     def sc_type_mac(self, sc_type_mac):
-        """Sets the sc_type_mac of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_mac of this PoliciesClientClientTypeOptions.
 
         是否勾选macOS客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -136,7 +136,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_android(self):
-        """Gets the sc_type_android of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_android of this PoliciesClientClientTypeOptions.
 
         是否勾选Android客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -147,7 +147,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_android.setter
     def sc_type_android(self, sc_type_android):
-        """Sets the sc_type_android of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_android of this PoliciesClientClientTypeOptions.
 
         是否勾选Android客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -158,7 +158,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_linux(self):
-        """Gets the sc_type_linux of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_linux of this PoliciesClientClientTypeOptions.
 
         是否勾选Linux客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -169,7 +169,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_linux.setter
     def sc_type_linux(self, sc_type_linux):
-        """Sets the sc_type_linux of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_linux of this PoliciesClientClientTypeOptions.
 
         是否勾选Linux客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -180,7 +180,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_h5(self):
-        """Gets the sc_type_h5 of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_h5 of this PoliciesClientClientTypeOptions.
 
         是否勾选Web客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -191,7 +191,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_h5.setter
     def sc_type_h5(self, sc_type_h5):
-        """Sets the sc_type_h5 of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_h5 of this PoliciesClientClientTypeOptions.
 
         是否勾选Web客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -202,7 +202,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_ios(self):
-        """Gets the sc_type_ios of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_ios of this PoliciesClientClientTypeOptions.
 
         是否勾选ios客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -213,7 +213,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_ios.setter
     def sc_type_ios(self, sc_type_ios):
-        """Sets the sc_type_ios of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_ios of this PoliciesClientClientTypeOptions.
 
         是否勾选ios客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -224,7 +224,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def sc_type_harmony_os(self):
-        """Gets the sc_type_harmony_os of this PoliciesClientClientTypeOptions.
+        r"""Gets the sc_type_harmony_os of this PoliciesClientClientTypeOptions.
 
         是否勾选鸿蒙客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -235,7 +235,7 @@ class PoliciesClientClientTypeOptions:
 
     @sc_type_harmony_os.setter
     def sc_type_harmony_os(self, sc_type_harmony_os):
-        """Sets the sc_type_harmony_os of this PoliciesClientClientTypeOptions.
+        r"""Sets the sc_type_harmony_os of this PoliciesClientClientTypeOptions.
 
         是否勾选鸿蒙客户端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -246,7 +246,7 @@ class PoliciesClientClientTypeOptions:
 
     @property
     def tc_type_all(self):
-        """Gets the tc_type_all of this PoliciesClientClientTypeOptions.
+        r"""Gets the tc_type_all of this PoliciesClientClientTypeOptions.
 
         是否勾选全部硬件终端。取值为： false：表示未勾选。 true：表示勾选。
 
@@ -257,7 +257,7 @@ class PoliciesClientClientTypeOptions:
 
     @tc_type_all.setter
     def tc_type_all(self, tc_type_all):
-        """Sets the tc_type_all of this PoliciesClientClientTypeOptions.
+        r"""Sets the tc_type_all of this PoliciesClientClientTypeOptions.
 
         是否勾选全部硬件终端。取值为： false：表示未勾选。 true：表示勾选。
 

@@ -43,7 +43,7 @@ class ListNodesRequest:
     }
 
     def __init__(self, cluster_id=None, node_group=None, limit=None, offset=None, node_name=None, sort_key=None, sort_dir=None, query_node_detail=None, query_ecs_detail=None, internal_ip=None):
-        """ListNodesRequest
+        r"""ListNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListNodesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListNodesRequest.
+        r"""Gets the cluster_id of this ListNodesRequest.
 
         集群ID。
 
@@ -116,7 +116,7 @@ class ListNodesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListNodesRequest.
+        r"""Sets the cluster_id of this ListNodesRequest.
 
         集群ID。
 
@@ -127,7 +127,7 @@ class ListNodesRequest:
 
     @property
     def node_group(self):
-        """Gets the node_group of this ListNodesRequest.
+        r"""Gets the node_group of this ListNodesRequest.
 
         要查询的节点组名称。
 
@@ -138,7 +138,7 @@ class ListNodesRequest:
 
     @node_group.setter
     def node_group(self, node_group):
-        """Sets the node_group of this ListNodesRequest.
+        r"""Sets the node_group of this ListNodesRequest.
 
         要查询的节点组名称。
 
@@ -149,7 +149,7 @@ class ListNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNodesRequest.
+        r"""Gets the limit of this ListNodesRequest.
 
         返回结果中每页显示条数。缺省值：10。
 
@@ -160,7 +160,7 @@ class ListNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNodesRequest.
+        r"""Sets the limit of this ListNodesRequest.
 
         返回结果中每页显示条数。缺省值：10。
 
@@ -171,7 +171,7 @@ class ListNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNodesRequest.
+        r"""Gets the offset of this ListNodesRequest.
 
         表示作业列表从该偏移量开始查询。缺省值：1。
 
@@ -182,7 +182,7 @@ class ListNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNodesRequest.
+        r"""Sets the offset of this ListNodesRequest.
 
         表示作业列表从该偏移量开始查询。缺省值：1。
 
@@ -193,7 +193,7 @@ class ListNodesRequest:
 
     @property
     def node_name(self):
-        """Gets the node_name of this ListNodesRequest.
+        r"""Gets the node_name of this ListNodesRequest.
 
         指定节点名称，支持模糊搜索。
 
@@ -204,7 +204,7 @@ class ListNodesRequest:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this ListNodesRequest.
+        r"""Sets the node_name of this ListNodesRequest.
 
         指定节点名称，支持模糊搜索。
 
@@ -215,7 +215,7 @@ class ListNodesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListNodesRequest.
+        r"""Gets the sort_key of this ListNodesRequest.
 
         排序键，支持对节点名称排序。
 
@@ -226,7 +226,7 @@ class ListNodesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListNodesRequest.
+        r"""Sets the sort_key of this ListNodesRequest.
 
         排序键，支持对节点名称排序。
 
@@ -237,7 +237,7 @@ class ListNodesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListNodesRequest.
+        r"""Gets the sort_dir of this ListNodesRequest.
 
         列表排序方式，desc为降序，asc为升序。
 
@@ -248,7 +248,7 @@ class ListNodesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListNodesRequest.
+        r"""Sets the sort_dir of this ListNodesRequest.
 
         列表排序方式，desc为降序，asc为升序。
 
@@ -259,7 +259,7 @@ class ListNodesRequest:
 
     @property
     def query_node_detail(self):
-        """Gets the query_node_detail of this ListNodesRequest.
+        r"""Gets the query_node_detail of this ListNodesRequest.
 
         是否查询节点详情。该字段设为true时可能会影响接口性能。
 
@@ -270,7 +270,7 @@ class ListNodesRequest:
 
     @query_node_detail.setter
     def query_node_detail(self, query_node_detail):
-        """Sets the query_node_detail of this ListNodesRequest.
+        r"""Sets the query_node_detail of this ListNodesRequest.
 
         是否查询节点详情。该字段设为true时可能会影响接口性能。
 
@@ -281,7 +281,7 @@ class ListNodesRequest:
 
     @property
     def query_ecs_detail(self):
-        """Gets the query_ecs_detail of this ListNodesRequest.
+        r"""Gets the query_ecs_detail of this ListNodesRequest.
 
         是否查询ECS详情信息，会涉及对ECS接口调用。
 
@@ -292,7 +292,7 @@ class ListNodesRequest:
 
     @query_ecs_detail.setter
     def query_ecs_detail(self, query_ecs_detail):
-        """Sets the query_ecs_detail of this ListNodesRequest.
+        r"""Sets the query_ecs_detail of this ListNodesRequest.
 
         是否查询ECS详情信息，会涉及对ECS接口调用。
 
@@ -303,7 +303,7 @@ class ListNodesRequest:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this ListNodesRequest.
+        r"""Gets the internal_ip of this ListNodesRequest.
 
         指定内网IP。
 
@@ -314,7 +314,7 @@ class ListNodesRequest:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this ListNodesRequest.
+        r"""Sets the internal_ip of this ListNodesRequest.
 
         指定内网IP。
 

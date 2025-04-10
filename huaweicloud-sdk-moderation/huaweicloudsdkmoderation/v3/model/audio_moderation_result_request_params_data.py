@@ -25,7 +25,7 @@ class AudioModerationResultRequestParamsData:
     }
 
     def __init__(self, url=None):
-        """AudioModerationResultRequestParamsData
+        r"""AudioModerationResultRequestParamsData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AudioModerationResultRequestParamsData:
 
     @property
     def url(self):
-        """Gets the url of this AudioModerationResultRequestParamsData.
+        r"""Gets the url of this AudioModerationResultRequestParamsData.
 
         :return: The url of this AudioModerationResultRequestParamsData.
         :rtype: str
@@ -52,7 +52,7 @@ class AudioModerationResultRequestParamsData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AudioModerationResultRequestParamsData.
+        r"""Sets the url of this AudioModerationResultRequestParamsData.
 
         :param url: The url of this AudioModerationResultRequestParamsData.
         :type url: str

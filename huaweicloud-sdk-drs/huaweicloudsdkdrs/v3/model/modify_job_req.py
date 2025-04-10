@@ -59,7 +59,7 @@ class ModifyJobReq:
     }
 
     def __init__(self, job_id=None, description=None, name=None, alarm_notify=None, task_type=None, source_endpoint=None, target_endpoint=None, node_type=None, engine_type=None, net_type=None, store_db_info=None, is_recreate=None, job_direction=None, is_target_readonly=None, replace_definer=None, tags=None, db_use_type=None, product_id=None):
-        """ModifyJobReq
+        r"""ModifyJobReq
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class ModifyJobReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyJobReq.
+        r"""Gets the job_id of this ModifyJobReq.
 
         任务id
 
@@ -172,7 +172,7 @@ class ModifyJobReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyJobReq.
+        r"""Sets the job_id of this ModifyJobReq.
 
         任务id
 
@@ -183,7 +183,7 @@ class ModifyJobReq:
 
     @property
     def description(self):
-        """Gets the description of this ModifyJobReq.
+        r"""Gets the description of this ModifyJobReq.
 
         任务描述，修改任务描述时必填。
 
@@ -194,7 +194,7 @@ class ModifyJobReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyJobReq.
+        r"""Sets the description of this ModifyJobReq.
 
         任务描述，修改任务描述时必填。
 
@@ -205,7 +205,7 @@ class ModifyJobReq:
 
     @property
     def name(self):
-        """Gets the name of this ModifyJobReq.
+        r"""Gets the name of this ModifyJobReq.
 
         任务名称，修改任务名称时必填
 
@@ -216,7 +216,7 @@ class ModifyJobReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyJobReq.
+        r"""Sets the name of this ModifyJobReq.
 
         任务名称，修改任务名称时必填
 
@@ -227,7 +227,7 @@ class ModifyJobReq:
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this ModifyJobReq.
+        r"""Gets the alarm_notify of this ModifyJobReq.
 
         :return: The alarm_notify of this ModifyJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
@@ -236,7 +236,7 @@ class ModifyJobReq:
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this ModifyJobReq.
+        r"""Sets the alarm_notify of this ModifyJobReq.
 
         :param alarm_notify: The alarm_notify of this ModifyJobReq.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
@@ -245,7 +245,7 @@ class ModifyJobReq:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ModifyJobReq.
+        r"""Gets the task_type of this ModifyJobReq.
 
         任务模式，FULL_TRANS：全量；FULL_INCR_TRANS：全量+增量；INCR_TRANS：增量。
 
@@ -256,7 +256,7 @@ class ModifyJobReq:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ModifyJobReq.
+        r"""Sets the task_type of this ModifyJobReq.
 
         任务模式，FULL_TRANS：全量；FULL_INCR_TRANS：全量+增量；INCR_TRANS：增量。
 
@@ -267,7 +267,7 @@ class ModifyJobReq:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this ModifyJobReq.
+        r"""Gets the source_endpoint of this ModifyJobReq.
 
         :return: The source_endpoint of this ModifyJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -276,7 +276,7 @@ class ModifyJobReq:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this ModifyJobReq.
+        r"""Sets the source_endpoint of this ModifyJobReq.
 
         :param source_endpoint: The source_endpoint of this ModifyJobReq.
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -285,7 +285,7 @@ class ModifyJobReq:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this ModifyJobReq.
+        r"""Gets the target_endpoint of this ModifyJobReq.
 
         :return: The target_endpoint of this ModifyJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -294,7 +294,7 @@ class ModifyJobReq:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this ModifyJobReq.
+        r"""Sets the target_endpoint of this ModifyJobReq.
 
         :param target_endpoint: The target_endpoint of this ModifyJobReq.
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -303,7 +303,7 @@ class ModifyJobReq:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ModifyJobReq.
+        r"""Gets the node_type of this ModifyJobReq.
 
         node规格类型，测试连接之后修改调用时必填。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。
 
@@ -314,7 +314,7 @@ class ModifyJobReq:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ModifyJobReq.
+        r"""Sets the node_type of this ModifyJobReq.
 
         node规格类型，测试连接之后修改调用时必填。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。
 
@@ -325,7 +325,7 @@ class ModifyJobReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this ModifyJobReq.
+        r"""Gets the engine_type of this ModifyJobReq.
 
         引擎类型，测试连接之后修改调用时必填。mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用
 
@@ -336,7 +336,7 @@ class ModifyJobReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this ModifyJobReq.
+        r"""Sets the engine_type of this ModifyJobReq.
 
         引擎类型，测试连接之后修改调用时必填。mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用
 
@@ -347,7 +347,7 @@ class ModifyJobReq:
 
     @property
     def net_type(self):
-        """Gets the net_type of this ModifyJobReq.
+        r"""Gets the net_type of this ModifyJobReq.
 
         网络类型，测试连接之后修改调用时必填。
 
@@ -358,7 +358,7 @@ class ModifyJobReq:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this ModifyJobReq.
+        r"""Sets the net_type of this ModifyJobReq.
 
         网络类型，测试连接之后修改调用时必填。
 
@@ -369,7 +369,7 @@ class ModifyJobReq:
 
     @property
     def store_db_info(self):
-        """Gets the store_db_info of this ModifyJobReq.
+        r"""Gets the store_db_info of this ModifyJobReq.
 
         保存数据库信息，测试连接之后修改调用时必填为true。
 
@@ -380,7 +380,7 @@ class ModifyJobReq:
 
     @store_db_info.setter
     def store_db_info(self, store_db_info):
-        """Sets the store_db_info of this ModifyJobReq.
+        r"""Sets the store_db_info of this ModifyJobReq.
 
         保存数据库信息，测试连接之后修改调用时必填为true。
 
@@ -391,7 +391,7 @@ class ModifyJobReq:
 
     @property
     def is_recreate(self):
-        """Gets the is_recreate of this ModifyJobReq.
+        r"""Gets the is_recreate of this ModifyJobReq.
 
         是否为重建任务。
 
@@ -402,7 +402,7 @@ class ModifyJobReq:
 
     @is_recreate.setter
     def is_recreate(self, is_recreate):
-        """Sets the is_recreate of this ModifyJobReq.
+        r"""Sets the is_recreate of this ModifyJobReq.
 
         是否为重建任务。
 
@@ -413,7 +413,7 @@ class ModifyJobReq:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this ModifyJobReq.
+        r"""Gets the job_direction of this ModifyJobReq.
 
         迁移方向,up 入云 灾备场景时对应本云为备,down 出云 灾备场景时对应本云为主,non-dbs 自建
 
@@ -424,7 +424,7 @@ class ModifyJobReq:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this ModifyJobReq.
+        r"""Sets the job_direction of this ModifyJobReq.
 
         迁移方向,up 入云 灾备场景时对应本云为备,down 出云 灾备场景时对应本云为主,non-dbs 自建
 
@@ -435,7 +435,7 @@ class ModifyJobReq:
 
     @property
     def is_target_readonly(self):
-        """Gets the is_target_readonly of this ModifyJobReq.
+        r"""Gets the is_target_readonly of this ModifyJobReq.
 
         目标实例是否限制为只读。
 
@@ -446,7 +446,7 @@ class ModifyJobReq:
 
     @is_target_readonly.setter
     def is_target_readonly(self, is_target_readonly):
-        """Sets the is_target_readonly of this ModifyJobReq.
+        r"""Sets the is_target_readonly of this ModifyJobReq.
 
         目标实例是否限制为只读。
 
@@ -457,7 +457,7 @@ class ModifyJobReq:
 
     @property
     def replace_definer(self):
-        """Gets the replace_definer of this ModifyJobReq.
+        r"""Gets the replace_definer of this ModifyJobReq.
 
         所有Definer是否迁移到该用户下，MySQL数据库支持该设置，测试连接之后修改调用时必填。 - true：迁移后，所有源数据库对象的Definer都会迁移至该用户下，其他用户需要授权后才具有数据库对象权限 - false：迁移后，将保持源数据库对象Definer定义不变，选择此选项，需要配合下一步用户权限迁移功能，将源数据库的用户全部迁移，这样才能保持源数据库的权限体系完全不变。
 
@@ -468,7 +468,7 @@ class ModifyJobReq:
 
     @replace_definer.setter
     def replace_definer(self, replace_definer):
-        """Sets the replace_definer of this ModifyJobReq.
+        r"""Sets the replace_definer of this ModifyJobReq.
 
         所有Definer是否迁移到该用户下，MySQL数据库支持该设置，测试连接之后修改调用时必填。 - true：迁移后，所有源数据库对象的Definer都会迁移至该用户下，其他用户需要授权后才具有数据库对象权限 - false：迁移后，将保持源数据库对象Definer定义不变，选择此选项，需要配合下一步用户权限迁移功能，将源数据库的用户全部迁移，这样才能保持源数据库的权限体系完全不变。
 
@@ -479,7 +479,7 @@ class ModifyJobReq:
 
     @property
     def tags(self):
-        """Gets the tags of this ModifyJobReq.
+        r"""Gets the tags of this ModifyJobReq.
 
         标签信息
 
@@ -490,7 +490,7 @@ class ModifyJobReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ModifyJobReq.
+        r"""Sets the tags of this ModifyJobReq.
 
         标签信息
 
@@ -501,7 +501,7 @@ class ModifyJobReq:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this ModifyJobReq.
+        r"""Gets the db_use_type of this ModifyJobReq.
 
         迁移类型，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
@@ -512,7 +512,7 @@ class ModifyJobReq:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this ModifyJobReq.
+        r"""Sets the db_use_type of this ModifyJobReq.
 
         迁移类型，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
@@ -523,7 +523,7 @@ class ModifyJobReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ModifyJobReq.
+        r"""Gets the product_id of this ModifyJobReq.
 
         产品ID。
 
@@ -534,7 +534,7 @@ class ModifyJobReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ModifyJobReq.
+        r"""Sets the product_id of this ModifyJobReq.
 
         产品ID。
 

@@ -32,7 +32,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
     }
 
     def __init__(self, fails=None, data=None, total_stay_time=None, total=None):
-        """ListSpecIssueStayTimesResponse
+        r"""ListSpecIssueStayTimesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @property
     def fails(self):
-        """Gets the fails of this ListSpecIssueStayTimesResponse.
+        r"""Gets the fails of this ListSpecIssueStayTimesResponse.
 
         计算失败的工作项id,一般指未关闭的工作项
 
@@ -76,7 +76,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @fails.setter
     def fails(self, fails):
-        """Sets the fails of this ListSpecIssueStayTimesResponse.
+        r"""Sets the fails of this ListSpecIssueStayTimesResponse.
 
         计算失败的工作项id,一般指未关闭的工作项
 
@@ -87,7 +87,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListSpecIssueStayTimesResponse.
+        r"""Gets the data of this ListSpecIssueStayTimesResponse.
 
         工作项时间数据（创建时间-关闭时间）
 
@@ -98,7 +98,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListSpecIssueStayTimesResponse.
+        r"""Sets the data of this ListSpecIssueStayTimesResponse.
 
         工作项时间数据（创建时间-关闭时间）
 
@@ -109,7 +109,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @property
     def total_stay_time(self):
-        """Gets the total_stay_time of this ListSpecIssueStayTimesResponse.
+        r"""Gets the total_stay_time of this ListSpecIssueStayTimesResponse.
 
         停留时间求和（单位：秒）
 
@@ -120,7 +120,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @total_stay_time.setter
     def total_stay_time(self, total_stay_time):
-        """Sets the total_stay_time of this ListSpecIssueStayTimesResponse.
+        r"""Sets the total_stay_time of this ListSpecIssueStayTimesResponse.
 
         停留时间求和（单位：秒）
 
@@ -131,7 +131,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSpecIssueStayTimesResponse.
+        r"""Gets the total of this ListSpecIssueStayTimesResponse.
 
         停留时间求和的工作项个数
 
@@ -142,7 +142,7 @@ class ListSpecIssueStayTimesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSpecIssueStayTimesResponse.
+        r"""Sets the total of this ListSpecIssueStayTimesResponse.
 
         停留时间求和的工作项个数
 

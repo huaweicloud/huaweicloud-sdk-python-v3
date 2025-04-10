@@ -29,7 +29,7 @@ class CreateResWorkspaceRequestBody:
     }
 
     def __init__(self, name=None, enterprise_project_id=None, description=None):
-        """CreateResWorkspaceRequestBody
+        r"""CreateResWorkspaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResWorkspaceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateResWorkspaceRequestBody.
+        r"""Gets the name of this CreateResWorkspaceRequestBody.
 
         工作空间名称，1-64位的数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
 
@@ -66,7 +66,7 @@ class CreateResWorkspaceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateResWorkspaceRequestBody.
+        r"""Sets the name of this CreateResWorkspaceRequestBody.
 
         工作空间名称，1-64位的数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
 
@@ -77,7 +77,7 @@ class CreateResWorkspaceRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateResWorkspaceRequestBody.
+        r"""Gets the enterprise_project_id of this CreateResWorkspaceRequestBody.
 
         企业项目编号。
 
@@ -88,7 +88,7 @@ class CreateResWorkspaceRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateResWorkspaceRequestBody.
+        r"""Sets the enterprise_project_id of this CreateResWorkspaceRequestBody.
 
         企业项目编号。
 
@@ -99,7 +99,7 @@ class CreateResWorkspaceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateResWorkspaceRequestBody.
+        r"""Gets the description of this CreateResWorkspaceRequestBody.
 
         描述。
 
@@ -110,7 +110,7 @@ class CreateResWorkspaceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateResWorkspaceRequestBody.
+        r"""Sets the description of this CreateResWorkspaceRequestBody.
 
         描述。
 

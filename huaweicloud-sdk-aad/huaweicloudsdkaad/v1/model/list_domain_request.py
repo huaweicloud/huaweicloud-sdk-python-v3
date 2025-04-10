@@ -23,7 +23,7 @@ class ListDomainRequest:
     }
 
     def __init__(self):
-        """ListDomainRequest
+        r"""ListDomainRequest
 
         The model defined in huaweicloud sdk
 

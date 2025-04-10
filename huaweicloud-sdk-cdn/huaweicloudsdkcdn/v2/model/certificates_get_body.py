@@ -37,7 +37,7 @@ class CertificatesGetBody:
     }
 
     def __init__(self, certificate_source=None, scm_certificate_id=None, certificate_type=None, certificate_name=None, certificate_value=None, enc_certificate_value=None, expire_time=None):
-        """CertificatesGetBody
+        r"""CertificatesGetBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CertificatesGetBody:
 
     @property
     def certificate_source(self):
-        """Gets the certificate_source of this CertificatesGetBody.
+        r"""Gets the certificate_source of this CertificatesGetBody.
 
         证书来源,0：自有证书。2：SCM证书。
 
@@ -96,7 +96,7 @@ class CertificatesGetBody:
 
     @certificate_source.setter
     def certificate_source(self, certificate_source):
-        """Sets the certificate_source of this CertificatesGetBody.
+        r"""Sets the certificate_source of this CertificatesGetBody.
 
         证书来源,0：自有证书。2：SCM证书。
 
@@ -107,7 +107,7 @@ class CertificatesGetBody:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this CertificatesGetBody.
+        r"""Gets the scm_certificate_id of this CertificatesGetBody.
 
         SCM证书id
 
@@ -118,7 +118,7 @@ class CertificatesGetBody:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this CertificatesGetBody.
+        r"""Sets the scm_certificate_id of this CertificatesGetBody.
 
         SCM证书id
 
@@ -129,7 +129,7 @@ class CertificatesGetBody:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this CertificatesGetBody.
+        r"""Gets the certificate_type of this CertificatesGetBody.
 
         证书类型，server：国际证书；server_sm：国密证书。
 
@@ -140,7 +140,7 @@ class CertificatesGetBody:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this CertificatesGetBody.
+        r"""Sets the certificate_type of this CertificatesGetBody.
 
         证书类型，server：国际证书；server_sm：国密证书。
 
@@ -151,7 +151,7 @@ class CertificatesGetBody:
 
     @property
     def certificate_name(self):
-        """Gets the certificate_name of this CertificatesGetBody.
+        r"""Gets the certificate_name of this CertificatesGetBody.
 
         证书名字。
 
@@ -162,7 +162,7 @@ class CertificatesGetBody:
 
     @certificate_name.setter
     def certificate_name(self, certificate_name):
-        """Sets the certificate_name of this CertificatesGetBody.
+        r"""Sets the certificate_name of this CertificatesGetBody.
 
         证书名字。
 
@@ -173,7 +173,7 @@ class CertificatesGetBody:
 
     @property
     def certificate_value(self):
-        """Gets the certificate_value of this CertificatesGetBody.
+        r"""Gets the certificate_value of this CertificatesGetBody.
 
         HTTPS协议使用的证书内容，PEM编码格式。
 
@@ -184,7 +184,7 @@ class CertificatesGetBody:
 
     @certificate_value.setter
     def certificate_value(self, certificate_value):
-        """Sets the certificate_value of this CertificatesGetBody.
+        r"""Sets the certificate_value of this CertificatesGetBody.
 
         HTTPS协议使用的证书内容，PEM编码格式。
 
@@ -195,7 +195,7 @@ class CertificatesGetBody:
 
     @property
     def enc_certificate_value(self):
-        """Gets the enc_certificate_value of this CertificatesGetBody.
+        r"""Gets the enc_certificate_value of this CertificatesGetBody.
 
         国密证书加密证书内容，PEM编码格式。
 
@@ -206,7 +206,7 @@ class CertificatesGetBody:
 
     @enc_certificate_value.setter
     def enc_certificate_value(self, enc_certificate_value):
-        """Sets the enc_certificate_value of this CertificatesGetBody.
+        r"""Sets the enc_certificate_value of this CertificatesGetBody.
 
         国密证书加密证书内容，PEM编码格式。
 
@@ -217,7 +217,7 @@ class CertificatesGetBody:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CertificatesGetBody.
+        r"""Gets the expire_time of this CertificatesGetBody.
 
         证书过期时间。  > UTC时间。
 
@@ -228,7 +228,7 @@ class CertificatesGetBody:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CertificatesGetBody.
+        r"""Sets the expire_time of this CertificatesGetBody.
 
         证书过期时间。  > UTC时间。
 

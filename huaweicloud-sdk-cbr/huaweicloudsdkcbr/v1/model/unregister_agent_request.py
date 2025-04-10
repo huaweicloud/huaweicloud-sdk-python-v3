@@ -25,7 +25,7 @@ class UnregisterAgentRequest:
     }
 
     def __init__(self, agent_id=None):
-        """UnregisterAgentRequest
+        r"""UnregisterAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnregisterAgentRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this UnregisterAgentRequest.
+        r"""Gets the agent_id of this UnregisterAgentRequest.
 
         客户端ID
 
@@ -53,7 +53,7 @@ class UnregisterAgentRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this UnregisterAgentRequest.
+        r"""Sets the agent_id of this UnregisterAgentRequest.
 
         客户端ID
 

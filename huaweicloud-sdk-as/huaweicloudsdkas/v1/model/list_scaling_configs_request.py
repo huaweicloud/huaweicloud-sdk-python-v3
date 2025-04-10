@@ -31,7 +31,7 @@ class ListScalingConfigsRequest:
     }
 
     def __init__(self, scaling_configuration_name=None, image_id=None, start_number=None, limit=None):
-        """ListScalingConfigsRequest
+        r"""ListScalingConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListScalingConfigsRequest:
 
     @property
     def scaling_configuration_name(self):
-        """Gets the scaling_configuration_name of this ListScalingConfigsRequest.
+        r"""Gets the scaling_configuration_name of this ListScalingConfigsRequest.
 
         伸缩配置名称。
 
@@ -75,7 +75,7 @@ class ListScalingConfigsRequest:
 
     @scaling_configuration_name.setter
     def scaling_configuration_name(self, scaling_configuration_name):
-        """Sets the scaling_configuration_name of this ListScalingConfigsRequest.
+        r"""Sets the scaling_configuration_name of this ListScalingConfigsRequest.
 
         伸缩配置名称。
 
@@ -86,7 +86,7 @@ class ListScalingConfigsRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListScalingConfigsRequest.
+        r"""Gets the image_id of this ListScalingConfigsRequest.
 
         镜像ID，同imageRef。
 
@@ -97,7 +97,7 @@ class ListScalingConfigsRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListScalingConfigsRequest.
+        r"""Sets the image_id of this ListScalingConfigsRequest.
 
         镜像ID，同imageRef。
 
@@ -108,7 +108,7 @@ class ListScalingConfigsRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingConfigsRequest.
+        r"""Gets the start_number of this ListScalingConfigsRequest.
 
         查询的起始行号，默认为0。
 
@@ -119,7 +119,7 @@ class ListScalingConfigsRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingConfigsRequest.
+        r"""Sets the start_number of this ListScalingConfigsRequest.
 
         查询的起始行号，默认为0。
 
@@ -130,7 +130,7 @@ class ListScalingConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingConfigsRequest.
+        r"""Gets the limit of this ListScalingConfigsRequest.
 
         查询的记录条数，默认为20。
 
@@ -141,7 +141,7 @@ class ListScalingConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingConfigsRequest.
+        r"""Sets the limit of this ListScalingConfigsRequest.
 
         查询的记录条数，默认为20。
 

@@ -28,7 +28,7 @@ class ListDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, page_info=None):
-        """ListDatabasesResponse
+        r"""ListDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListDatabasesResponse.
+        r"""Gets the databases of this ListDatabasesResponse.
 
         :return: The databases of this ListDatabasesResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Database`]
@@ -60,7 +60,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListDatabasesResponse.
+        r"""Sets the databases of this ListDatabasesResponse.
 
         :param databases: The databases of this ListDatabasesResponse.
         :type databases: list[:class:`huaweicloudsdklakeformation.v1.Database`]
@@ -69,7 +69,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListDatabasesResponse.
+        r"""Gets the page_info of this ListDatabasesResponse.
 
         :return: The page_info of this ListDatabasesResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -78,7 +78,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListDatabasesResponse.
+        r"""Sets the page_info of this ListDatabasesResponse.
 
         :param page_info: The page_info of this ListDatabasesResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

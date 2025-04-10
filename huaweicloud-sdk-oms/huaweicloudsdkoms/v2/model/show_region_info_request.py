@@ -23,7 +23,7 @@ class ShowRegionInfoRequest:
     }
 
     def __init__(self):
-        """ShowRegionInfoRequest
+        r"""ShowRegionInfoRequest
 
         The model defined in huaweicloud sdk
 

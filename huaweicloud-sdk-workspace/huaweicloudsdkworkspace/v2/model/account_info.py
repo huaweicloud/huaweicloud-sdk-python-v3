@@ -31,7 +31,7 @@ class AccountInfo:
     }
 
     def __init__(self, account=None, domain=None, account_type=None, platform_type=None):
-        """AccountInfo
+        r"""AccountInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class AccountInfo:
 
     @property
     def account(self):
-        """Gets the account of this AccountInfo.
+        r"""Gets the account of this AccountInfo.
 
         账户，账户的格式必须为:<i>账户(组)</i>的形式。
 
@@ -73,7 +73,7 @@ class AccountInfo:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AccountInfo.
+        r"""Sets the account of this AccountInfo.
 
         账户，账户的格式必须为:<i>账户(组)</i>的形式。
 
@@ -84,7 +84,7 @@ class AccountInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this AccountInfo.
+        r"""Gets the domain of this AccountInfo.
 
         域名(用户组必填，不填时使用默认值 local.com)。
 
@@ -95,7 +95,7 @@ class AccountInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AccountInfo.
+        r"""Sets the domain of this AccountInfo.
 
         域名(用户组必填，不填时使用默认值 local.com)。
 
@@ -106,7 +106,7 @@ class AccountInfo:
 
     @property
     def account_type(self):
-        """Gets the account_type of this AccountInfo.
+        r"""Gets the account_type of this AccountInfo.
 
         :return: The account_type of this AccountInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AccountTypeEnum`
@@ -115,7 +115,7 @@ class AccountInfo:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this AccountInfo.
+        r"""Sets the account_type of this AccountInfo.
 
         :param account_type: The account_type of this AccountInfo.
         :type account_type: :class:`huaweicloudsdkworkspace.v2.AccountTypeEnum`
@@ -124,7 +124,7 @@ class AccountInfo:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this AccountInfo.
+        r"""Gets the platform_type of this AccountInfo.
 
         :return: The platform_type of this AccountInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PlatformTypeEnum`
@@ -133,7 +133,7 @@ class AccountInfo:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this AccountInfo.
+        r"""Sets the platform_type of this AccountInfo.
 
         :param platform_type: The platform_type of this AccountInfo.
         :type platform_type: :class:`huaweicloudsdkworkspace.v2.PlatformTypeEnum`

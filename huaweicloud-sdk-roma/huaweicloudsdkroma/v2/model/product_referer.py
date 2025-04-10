@@ -35,7 +35,7 @@ class ProductReferer:
     }
 
     def __init__(self, product_id=None, product_name=None, manufacturer_id=None, model=None, protocol_type=None, product_type=None):
-        """ProductReferer
+        r"""ProductReferer
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProductReferer:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductReferer.
+        r"""Gets the product_id of this ProductReferer.
 
         产品ID，未填写厂商ID+型号时产品ID必填
 
@@ -89,7 +89,7 @@ class ProductReferer:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductReferer.
+        r"""Sets the product_id of this ProductReferer.
 
         产品ID，未填写厂商ID+型号时产品ID必填
 
@@ -100,7 +100,7 @@ class ProductReferer:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ProductReferer.
+        r"""Gets the product_name of this ProductReferer.
 
         产品名称
 
@@ -111,7 +111,7 @@ class ProductReferer:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ProductReferer.
+        r"""Sets the product_name of this ProductReferer.
 
         产品名称
 
@@ -122,7 +122,7 @@ class ProductReferer:
 
     @property
     def manufacturer_id(self):
-        """Gets the manufacturer_id of this ProductReferer.
+        r"""Gets the manufacturer_id of this ProductReferer.
 
         厂商ID，未填写产品ID时厂商ID和型号必填
 
@@ -133,7 +133,7 @@ class ProductReferer:
 
     @manufacturer_id.setter
     def manufacturer_id(self, manufacturer_id):
-        """Sets the manufacturer_id of this ProductReferer.
+        r"""Sets the manufacturer_id of this ProductReferer.
 
         厂商ID，未填写产品ID时厂商ID和型号必填
 
@@ -144,7 +144,7 @@ class ProductReferer:
 
     @property
     def model(self):
-        """Gets the model of this ProductReferer.
+        r"""Gets the model of this ProductReferer.
 
         型号，未填写产品ID时厂商ID和型号必填
 
@@ -155,7 +155,7 @@ class ProductReferer:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ProductReferer.
+        r"""Sets the model of this ProductReferer.
 
         型号，未填写产品ID时厂商ID和型号必填
 
@@ -166,7 +166,7 @@ class ProductReferer:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ProductReferer.
+        r"""Gets the protocol_type of this ProductReferer.
 
         产品的协议类型：0-mqtt，1-coap，2-modbus，3-http, 4-opcua
 
@@ -177,7 +177,7 @@ class ProductReferer:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ProductReferer.
+        r"""Sets the protocol_type of this ProductReferer.
 
         产品的协议类型：0-mqtt，1-coap，2-modbus，3-http, 4-opcua
 
@@ -188,7 +188,7 @@ class ProductReferer:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ProductReferer.
+        r"""Gets the product_type of this ProductReferer.
 
         产品类型：0-普通产品 1-网关产品
 
@@ -199,7 +199,7 @@ class ProductReferer:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ProductReferer.
+        r"""Sets the product_type of this ProductReferer.
 
         产品类型：0-普通产品 1-网关产品
 

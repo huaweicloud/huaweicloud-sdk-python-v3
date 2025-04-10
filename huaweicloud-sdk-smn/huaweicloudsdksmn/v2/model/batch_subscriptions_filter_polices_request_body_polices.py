@@ -27,7 +27,7 @@ class BatchSubscriptionsFilterPolicesRequestBodyPolices:
     }
 
     def __init__(self, subscription_urn=None, filter_polices=None):
-        """BatchSubscriptionsFilterPolicesRequestBodyPolices
+        r"""BatchSubscriptionsFilterPolicesRequestBodyPolices
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchSubscriptionsFilterPolicesRequestBodyPolices:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
+        r"""Gets the subscription_urn of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
@@ -59,7 +59,7 @@ class BatchSubscriptionsFilterPolicesRequestBodyPolices:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
+        r"""Sets the subscription_urn of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
@@ -70,7 +70,7 @@ class BatchSubscriptionsFilterPolicesRequestBodyPolices:
 
     @property
     def filter_polices(self):
-        """Gets the filter_polices of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
+        r"""Gets the filter_polices of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
 
         订阅者的过滤策略。策略name不能重复
 
@@ -81,7 +81,7 @@ class BatchSubscriptionsFilterPolicesRequestBodyPolices:
 
     @filter_polices.setter
     def filter_polices(self, filter_polices):
-        """Sets the filter_polices of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
+        r"""Sets the filter_polices of this BatchSubscriptionsFilterPolicesRequestBodyPolices.
 
         订阅者的过滤策略。策略name不能重复
 

@@ -33,7 +33,7 @@ class UpdateNextflowWorkflowRequestBody:
     }
 
     def __init__(self, workflow_file=None, description=None, labels=None, main_file=None, params=None):
-        """UpdateNextflowWorkflowRequestBody
+        r"""UpdateNextflowWorkflowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @property
     def workflow_file(self):
-        """Gets the workflow_file of this UpdateNextflowWorkflowRequestBody.
+        r"""Gets the workflow_file of this UpdateNextflowWorkflowRequestBody.
 
         流程文件，文件大小[0,10M]
 
@@ -82,7 +82,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @workflow_file.setter
     def workflow_file(self, workflow_file):
-        """Sets the workflow_file of this UpdateNextflowWorkflowRequestBody.
+        r"""Sets the workflow_file of this UpdateNextflowWorkflowRequestBody.
 
         流程文件，文件大小[0,10M]
 
@@ -93,7 +93,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNextflowWorkflowRequestBody.
+        r"""Gets the description of this UpdateNextflowWorkflowRequestBody.
 
         流程描述 取值范围[0,65535]
 
@@ -104,7 +104,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNextflowWorkflowRequestBody.
+        r"""Sets the description of this UpdateNextflowWorkflowRequestBody.
 
         流程描述 取值范围[0,65535]
 
@@ -115,7 +115,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @property
     def labels(self):
-        """Gets the labels of this UpdateNextflowWorkflowRequestBody.
+        r"""Gets the labels of this UpdateNextflowWorkflowRequestBody.
 
         流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -126,7 +126,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this UpdateNextflowWorkflowRequestBody.
+        r"""Sets the labels of this UpdateNextflowWorkflowRequestBody.
 
         流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -137,7 +137,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @property
     def main_file(self):
-        """Gets the main_file of this UpdateNextflowWorkflowRequestBody.
+        r"""Gets the main_file of this UpdateNextflowWorkflowRequestBody.
 
         主文件名
 
@@ -148,7 +148,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @main_file.setter
     def main_file(self, main_file):
-        """Sets the main_file of this UpdateNextflowWorkflowRequestBody.
+        r"""Sets the main_file of this UpdateNextflowWorkflowRequestBody.
 
         主文件名
 
@@ -159,7 +159,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this UpdateNextflowWorkflowRequestBody.
+        r"""Gets the params of this UpdateNextflowWorkflowRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 
@@ -170,7 +170,7 @@ class UpdateNextflowWorkflowRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this UpdateNextflowWorkflowRequestBody.
+        r"""Sets the params of this UpdateNextflowWorkflowRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 

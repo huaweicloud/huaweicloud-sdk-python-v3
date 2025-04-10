@@ -25,7 +25,7 @@ class ValidateConfigurationNameRequest:
     }
 
     def __init__(self, name=None):
-        """ValidateConfigurationNameRequest
+        r"""ValidateConfigurationNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ValidateConfigurationNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this ValidateConfigurationNameRequest.
+        r"""Gets the name of this ValidateConfigurationNameRequest.
 
         参数模板名称。
 
@@ -53,7 +53,7 @@ class ValidateConfigurationNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValidateConfigurationNameRequest.
+        r"""Sets the name of this ValidateConfigurationNameRequest.
 
         参数模板名称。
 

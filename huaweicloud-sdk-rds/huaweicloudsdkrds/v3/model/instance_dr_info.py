@@ -49,7 +49,7 @@ class InstanceDrInfo:
     }
 
     def __init__(self, id=None, status=None, failed_message=None, replica_state=None, wal_write_receive_delay_in_mb=None, wal_write_replay_delay_in_mb=None, wal_receive_replay_delay_in_ms=None, master_instance_id=None, master_region=None, slave_instance_id=None, slave_region=None, build_process=None, time=None):
-        """InstanceDrInfo
+        r"""InstanceDrInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class InstanceDrInfo:
 
     @property
     def id(self):
-        """Gets the id of this InstanceDrInfo.
+        r"""Gets the id of this InstanceDrInfo.
 
         容灾关系id
 
@@ -131,7 +131,7 @@ class InstanceDrInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceDrInfo.
+        r"""Sets the id of this InstanceDrInfo.
 
         容灾关系id
 
@@ -142,7 +142,7 @@ class InstanceDrInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceDrInfo.
+        r"""Gets the status of this InstanceDrInfo.
 
         容灾搭建状态
 
@@ -153,7 +153,7 @@ class InstanceDrInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceDrInfo.
+        r"""Sets the status of this InstanceDrInfo.
 
         容灾搭建状态
 
@@ -164,7 +164,7 @@ class InstanceDrInfo:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this InstanceDrInfo.
+        r"""Gets the failed_message of this InstanceDrInfo.
 
         失败消息
 
@@ -175,7 +175,7 @@ class InstanceDrInfo:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this InstanceDrInfo.
+        r"""Sets the failed_message of this InstanceDrInfo.
 
         失败消息
 
@@ -186,7 +186,7 @@ class InstanceDrInfo:
 
     @property
     def replica_state(self):
-        """Gets the replica_state of this InstanceDrInfo.
+        r"""Gets the replica_state of this InstanceDrInfo.
 
         同步状态，取值范围是0或-1，0表示正常，-1表示异常。
 
@@ -197,7 +197,7 @@ class InstanceDrInfo:
 
     @replica_state.setter
     def replica_state(self, replica_state):
-        """Sets the replica_state of this InstanceDrInfo.
+        r"""Sets the replica_state of this InstanceDrInfo.
 
         同步状态，取值范围是0或-1，0表示正常，-1表示异常。
 
@@ -208,7 +208,7 @@ class InstanceDrInfo:
 
     @property
     def wal_write_receive_delay_in_mb(self):
-        """Gets the wal_write_receive_delay_in_mb of this InstanceDrInfo.
+        r"""Gets the wal_write_receive_delay_in_mb of this InstanceDrInfo.
 
         发送延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前接收wal日志位点的差值。
 
@@ -219,7 +219,7 @@ class InstanceDrInfo:
 
     @wal_write_receive_delay_in_mb.setter
     def wal_write_receive_delay_in_mb(self, wal_write_receive_delay_in_mb):
-        """Sets the wal_write_receive_delay_in_mb of this InstanceDrInfo.
+        r"""Sets the wal_write_receive_delay_in_mb of this InstanceDrInfo.
 
         发送延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前接收wal日志位点的差值。
 
@@ -230,7 +230,7 @@ class InstanceDrInfo:
 
     @property
     def wal_write_replay_delay_in_mb(self):
-        """Gets the wal_write_replay_delay_in_mb of this InstanceDrInfo.
+        r"""Gets the wal_write_replay_delay_in_mb of this InstanceDrInfo.
 
         端到端延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前回放wal日志位点的差值。
 
@@ -241,7 +241,7 @@ class InstanceDrInfo:
 
     @wal_write_replay_delay_in_mb.setter
     def wal_write_replay_delay_in_mb(self, wal_write_replay_delay_in_mb):
-        """Sets the wal_write_replay_delay_in_mb of this InstanceDrInfo.
+        r"""Sets the wal_write_replay_delay_in_mb of this InstanceDrInfo.
 
         端到端延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前回放wal日志位点的差值。
 
@@ -252,7 +252,7 @@ class InstanceDrInfo:
 
     @property
     def wal_receive_replay_delay_in_ms(self):
-        """Gets the wal_receive_replay_delay_in_ms of this InstanceDrInfo.
+        r"""Gets the wal_receive_replay_delay_in_ms of this InstanceDrInfo.
 
         回放延迟时间（ms），即数据在灾备上回放的延迟时间。
 
@@ -263,7 +263,7 @@ class InstanceDrInfo:
 
     @wal_receive_replay_delay_in_ms.setter
     def wal_receive_replay_delay_in_ms(self, wal_receive_replay_delay_in_ms):
-        """Sets the wal_receive_replay_delay_in_ms of this InstanceDrInfo.
+        r"""Sets the wal_receive_replay_delay_in_ms of this InstanceDrInfo.
 
         回放延迟时间（ms），即数据在灾备上回放的延迟时间。
 
@@ -274,7 +274,7 @@ class InstanceDrInfo:
 
     @property
     def master_instance_id(self):
-        """Gets the master_instance_id of this InstanceDrInfo.
+        r"""Gets the master_instance_id of this InstanceDrInfo.
 
         主实例ID
 
@@ -285,7 +285,7 @@ class InstanceDrInfo:
 
     @master_instance_id.setter
     def master_instance_id(self, master_instance_id):
-        """Sets the master_instance_id of this InstanceDrInfo.
+        r"""Sets the master_instance_id of this InstanceDrInfo.
 
         主实例ID
 
@@ -296,7 +296,7 @@ class InstanceDrInfo:
 
     @property
     def master_region(self):
-        """Gets the master_region of this InstanceDrInfo.
+        r"""Gets the master_region of this InstanceDrInfo.
 
         主实例所在region
 
@@ -307,7 +307,7 @@ class InstanceDrInfo:
 
     @master_region.setter
     def master_region(self, master_region):
-        """Sets the master_region of this InstanceDrInfo.
+        r"""Sets the master_region of this InstanceDrInfo.
 
         主实例所在region
 
@@ -318,7 +318,7 @@ class InstanceDrInfo:
 
     @property
     def slave_instance_id(self):
-        """Gets the slave_instance_id of this InstanceDrInfo.
+        r"""Gets the slave_instance_id of this InstanceDrInfo.
 
         灾备实例ID
 
@@ -329,7 +329,7 @@ class InstanceDrInfo:
 
     @slave_instance_id.setter
     def slave_instance_id(self, slave_instance_id):
-        """Sets the slave_instance_id of this InstanceDrInfo.
+        r"""Sets the slave_instance_id of this InstanceDrInfo.
 
         灾备实例ID
 
@@ -340,7 +340,7 @@ class InstanceDrInfo:
 
     @property
     def slave_region(self):
-        """Gets the slave_region of this InstanceDrInfo.
+        r"""Gets the slave_region of this InstanceDrInfo.
 
         灾备实例所在region
 
@@ -351,7 +351,7 @@ class InstanceDrInfo:
 
     @slave_region.setter
     def slave_region(self, slave_region):
-        """Sets the slave_region of this InstanceDrInfo.
+        r"""Sets the slave_region of this InstanceDrInfo.
 
         灾备实例所在region
 
@@ -362,7 +362,7 @@ class InstanceDrInfo:
 
     @property
     def build_process(self):
-        """Gets the build_process of this InstanceDrInfo.
+        r"""Gets the build_process of this InstanceDrInfo.
 
         搭建流程。master表示配置主实例容灾能力流程。slave表示配置灾备实例容灾能力流程。
 
@@ -373,7 +373,7 @@ class InstanceDrInfo:
 
     @build_process.setter
     def build_process(self, build_process):
-        """Sets the build_process of this InstanceDrInfo.
+        r"""Sets the build_process of this InstanceDrInfo.
 
         搭建流程。master表示配置主实例容灾能力流程。slave表示配置灾备实例容灾能力流程。
 
@@ -384,7 +384,7 @@ class InstanceDrInfo:
 
     @property
     def time(self):
-        """Gets the time of this InstanceDrInfo.
+        r"""Gets the time of this InstanceDrInfo.
 
         灾备搭建时间
 
@@ -395,7 +395,7 @@ class InstanceDrInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this InstanceDrInfo.
+        r"""Sets the time of this InstanceDrInfo.
 
         灾备搭建时间
 

@@ -28,7 +28,7 @@ class UpdateInstancePortResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, port=None):
-        """UpdateInstancePortResponse
+        r"""UpdateInstancePortResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateInstancePortResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateInstancePortResponse.
+        r"""Gets the job_id of this UpdateInstancePortResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class UpdateInstancePortResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateInstancePortResponse.
+        r"""Sets the job_id of this UpdateInstancePortResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class UpdateInstancePortResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this UpdateInstancePortResponse.
+        r"""Gets the port of this UpdateInstancePortResponse.
 
         实例当前端口号。
 
@@ -84,7 +84,7 @@ class UpdateInstancePortResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateInstancePortResponse.
+        r"""Sets the port of this UpdateInstancePortResponse.
 
         实例当前端口号。
 

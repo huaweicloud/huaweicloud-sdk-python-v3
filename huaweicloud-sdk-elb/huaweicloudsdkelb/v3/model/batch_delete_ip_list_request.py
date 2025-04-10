@@ -27,7 +27,7 @@ class BatchDeleteIpListRequest:
     }
 
     def __init__(self, ipgroup_id=None, body=None):
-        """BatchDeleteIpListRequest
+        r"""BatchDeleteIpListRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteIpListRequest:
 
     @property
     def ipgroup_id(self):
-        """Gets the ipgroup_id of this BatchDeleteIpListRequest.
+        r"""Gets the ipgroup_id of this BatchDeleteIpListRequest.
 
         参数解释：IP地址组ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteIpListRequest:
 
     @ipgroup_id.setter
     def ipgroup_id(self, ipgroup_id):
-        """Sets the ipgroup_id of this BatchDeleteIpListRequest.
+        r"""Sets the ipgroup_id of this BatchDeleteIpListRequest.
 
         参数解释：IP地址组ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteIpListRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteIpListRequest.
+        r"""Gets the body of this BatchDeleteIpListRequest.
 
         :return: The body of this BatchDeleteIpListRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteIpListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteIpListRequest.
+        r"""Sets the body of this BatchDeleteIpListRequest.
 
         :param body: The body of this BatchDeleteIpListRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequestBody`

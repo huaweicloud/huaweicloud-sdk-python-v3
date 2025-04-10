@@ -30,7 +30,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None, total_count=None, parameter_values=None):
-        """ListInstanceConfigurationsResponse
+        r"""ListInstanceConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListInstanceConfigurationsResponse.
+        r"""Gets the configurations of this ListInstanceConfigurationsResponse.
 
         :return: The configurations of this ListInstanceConfigurationsResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ParameterConfigurationInfo`
@@ -67,7 +67,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListInstanceConfigurationsResponse.
+        r"""Sets the configurations of this ListInstanceConfigurationsResponse.
 
         :param configurations: The configurations of this ListInstanceConfigurationsResponse.
         :type configurations: :class:`huaweicloudsdkgaussdb.v3.ParameterConfigurationInfo`
@@ -76,7 +76,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInstanceConfigurationsResponse.
+        r"""Gets the total_count of this ListInstanceConfigurationsResponse.
 
         参数信息的总数。
 
@@ -87,7 +87,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInstanceConfigurationsResponse.
+        r"""Sets the total_count of this ListInstanceConfigurationsResponse.
 
         参数信息的总数。
 
@@ -98,7 +98,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this ListInstanceConfigurationsResponse.
+        r"""Gets the parameter_values of this ListInstanceConfigurationsResponse.
 
         参数对象。
 
@@ -109,7 +109,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this ListInstanceConfigurationsResponse.
+        r"""Sets the parameter_values of this ListInstanceConfigurationsResponse.
 
         参数对象。
 

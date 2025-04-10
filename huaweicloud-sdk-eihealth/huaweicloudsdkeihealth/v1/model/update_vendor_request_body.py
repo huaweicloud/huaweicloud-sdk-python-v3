@@ -27,7 +27,7 @@ class UpdateVendorRequestBody:
     }
 
     def __init__(self, file=None, name=None):
-        """UpdateVendorRequestBody
+        r"""UpdateVendorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateVendorRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UpdateVendorRequestBody.
+        r"""Gets the file of this UpdateVendorRequestBody.
 
         文件流对象
 
@@ -59,7 +59,7 @@ class UpdateVendorRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UpdateVendorRequestBody.
+        r"""Sets the file of this UpdateVendorRequestBody.
 
         文件流对象
 
@@ -70,7 +70,7 @@ class UpdateVendorRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVendorRequestBody.
+        r"""Gets the name of this UpdateVendorRequestBody.
 
         供应商名称
 
@@ -81,7 +81,7 @@ class UpdateVendorRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVendorRequestBody.
+        r"""Sets the name of this UpdateVendorRequestBody.
 
         供应商名称
 

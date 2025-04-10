@@ -33,7 +33,7 @@ class ResizeEngineInstanceReq:
     }
 
     def __init__(self, oper_type=None, new_storage_space=None, new_product_id=None, new_broker_num=None, new_spec_code=None):
-        """ResizeEngineInstanceReq
+        r"""ResizeEngineInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def oper_type(self):
-        """Gets the oper_type of this ResizeEngineInstanceReq.
+        r"""Gets the oper_type of this ResizeEngineInstanceReq.
 
         变更类型。  取值范围：  [storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm)  horizontal：代理数量扩容，每个broker的存储空间不变。  [vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm)
 
@@ -81,7 +81,7 @@ class ResizeEngineInstanceReq:
 
     @oper_type.setter
     def oper_type(self, oper_type):
-        """Sets the oper_type of this ResizeEngineInstanceReq.
+        r"""Sets the oper_type of this ResizeEngineInstanceReq.
 
         变更类型。  取值范围：  [storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm)  horizontal：代理数量扩容，每个broker的存储空间不变。  [vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm)
 
@@ -92,7 +92,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_storage_space(self):
-        """Gets the new_storage_space of this ResizeEngineInstanceReq.
+        r"""Gets the new_storage_space of this ResizeEngineInstanceReq.
 
         扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs)
 
@@ -103,7 +103,7 @@ class ResizeEngineInstanceReq:
 
     @new_storage_space.setter
     def new_storage_space(self, new_storage_space):
-        """Sets the new_storage_space of this ResizeEngineInstanceReq.
+        r"""Sets the new_storage_space of this ResizeEngineInstanceReq.
 
         扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs)
 
@@ -114,7 +114,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_product_id(self):
-        """Gets the new_product_id of this ResizeEngineInstanceReq.
+        r"""Gets the new_product_id of this ResizeEngineInstanceReq.
 
         规格，例如c6.8u16g.cluster，当oper_type类型是vertical时，该参数才有效且必填。
 
@@ -125,7 +125,7 @@ class ResizeEngineInstanceReq:
 
     @new_product_id.setter
     def new_product_id(self, new_product_id):
-        """Sets the new_product_id of this ResizeEngineInstanceReq.
+        r"""Sets the new_product_id of this ResizeEngineInstanceReq.
 
         规格，例如c6.8u16g.cluster，当oper_type类型是vertical时，该参数才有效且必填。
 
@@ -136,7 +136,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_broker_num(self):
-        """Gets the new_broker_num of this ResizeEngineInstanceReq.
+        r"""Gets the new_broker_num of this ResizeEngineInstanceReq.
 
         当oper_type参数为horizontal时，该参数有效。
 
@@ -147,7 +147,7 @@ class ResizeEngineInstanceReq:
 
     @new_broker_num.setter
     def new_broker_num(self, new_broker_num):
-        """Sets the new_broker_num of this ResizeEngineInstanceReq.
+        r"""Sets the new_broker_num of this ResizeEngineInstanceReq.
 
         当oper_type参数为horizontal时，该参数有效。
 
@@ -158,7 +158,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_spec_code(self):
-        """Gets the new_spec_code of this ResizeEngineInstanceReq.
+        r"""Gets the new_spec_code of this ResizeEngineInstanceReq.
 
         老规格，例如dms.instance.rabbitmq.cluster.c3.8u16g，当oper_type类型horizontal时，为dms.instance.rabbitmq.cluster.c3.8u16g.5，最后的数字5为代理数
 
@@ -169,7 +169,7 @@ class ResizeEngineInstanceReq:
 
     @new_spec_code.setter
     def new_spec_code(self, new_spec_code):
-        """Sets the new_spec_code of this ResizeEngineInstanceReq.
+        r"""Sets the new_spec_code of this ResizeEngineInstanceReq.
 
         老规格，例如dms.instance.rabbitmq.cluster.c3.8u16g，当oper_type类型horizontal时，为dms.instance.rabbitmq.cluster.c3.8u16g.5，最后的数字5为代理数
 

@@ -41,7 +41,7 @@ class SearchParameter:
     }
 
     def __init__(self, query=None, filter=None, facets=None, limit=None, offset=None, relationship_attributes=None, sort=None, owner=None, query_privilege=None):
-        """SearchParameter
+        r"""SearchParameter
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class SearchParameter:
 
     @property
     def query(self):
-        """Gets the query of this SearchParameter.
+        r"""Gets the query of this SearchParameter.
 
         查询关键字
 
@@ -108,7 +108,7 @@ class SearchParameter:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this SearchParameter.
+        r"""Sets the query of this SearchParameter.
 
         查询关键字
 
@@ -119,7 +119,7 @@ class SearchParameter:
 
     @property
     def filter(self):
-        """Gets the filter of this SearchParameter.
+        r"""Gets the filter of this SearchParameter.
 
         :return: The filter of this SearchParameter.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataMapFilterCriteria`
@@ -128,7 +128,7 @@ class SearchParameter:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this SearchParameter.
+        r"""Sets the filter of this SearchParameter.
 
         :param filter: The filter of this SearchParameter.
         :type filter: :class:`huaweicloudsdkdataartsstudio.v1.DataMapFilterCriteria`
@@ -137,7 +137,7 @@ class SearchParameter:
 
     @property
     def facets(self):
-        """Gets the facets of this SearchParameter.
+        r"""Gets the facets of this SearchParameter.
 
         条件参数列表
 
@@ -148,7 +148,7 @@ class SearchParameter:
 
     @facets.setter
     def facets(self, facets):
-        """Sets the facets of this SearchParameter.
+        r"""Sets the facets of this SearchParameter.
 
         条件参数列表
 
@@ -159,7 +159,7 @@ class SearchParameter:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchParameter.
+        r"""Gets the limit of this SearchParameter.
 
         分页显示每页返回结果数。默认值100
 
@@ -170,7 +170,7 @@ class SearchParameter:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchParameter.
+        r"""Sets the limit of this SearchParameter.
 
         分页显示每页返回结果数。默认值100
 
@@ -181,7 +181,7 @@ class SearchParameter:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchParameter.
+        r"""Gets the offset of this SearchParameter.
 
         偏移量，默认值0
 
@@ -192,7 +192,7 @@ class SearchParameter:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchParameter.
+        r"""Sets the offset of this SearchParameter.
 
         偏移量，默认值0
 
@@ -203,7 +203,7 @@ class SearchParameter:
 
     @property
     def relationship_attributes(self):
-        """Gets the relationship_attributes of this SearchParameter.
+        r"""Gets the relationship_attributes of this SearchParameter.
 
         关联关系属性
 
@@ -214,7 +214,7 @@ class SearchParameter:
 
     @relationship_attributes.setter
     def relationship_attributes(self, relationship_attributes):
-        """Sets the relationship_attributes of this SearchParameter.
+        r"""Sets the relationship_attributes of this SearchParameter.
 
         关联关系属性
 
@@ -225,7 +225,7 @@ class SearchParameter:
 
     @property
     def sort(self):
-        """Gets the sort of this SearchParameter.
+        r"""Gets the sort of this SearchParameter.
 
         排序信息
 
@@ -236,7 +236,7 @@ class SearchParameter:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this SearchParameter.
+        r"""Sets the sort of this SearchParameter.
 
         排序信息
 
@@ -247,7 +247,7 @@ class SearchParameter:
 
     @property
     def owner(self):
-        """Gets the owner of this SearchParameter.
+        r"""Gets the owner of this SearchParameter.
 
         所有者
 
@@ -258,7 +258,7 @@ class SearchParameter:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SearchParameter.
+        r"""Sets the owner of this SearchParameter.
 
         所有者
 
@@ -269,7 +269,7 @@ class SearchParameter:
 
     @property
     def query_privilege(self):
-        """Gets the query_privilege of this SearchParameter.
+        r"""Gets the query_privilege of this SearchParameter.
 
         是否校验权限，默认值false
 
@@ -280,7 +280,7 @@ class SearchParameter:
 
     @query_privilege.setter
     def query_privilege(self, query_privilege):
-        """Sets the query_privilege of this SearchParameter.
+        r"""Sets the query_privilege of this SearchParameter.
 
         是否校验权限，默认值false
 

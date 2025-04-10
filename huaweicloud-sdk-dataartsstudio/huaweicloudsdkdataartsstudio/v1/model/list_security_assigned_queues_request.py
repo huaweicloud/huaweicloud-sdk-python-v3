@@ -33,7 +33,7 @@ class ListSecurityAssignedQueuesRequest:
     }
 
     def __init__(self, workspace=None, type=None, cluster_id=None, limit=None, offset=None):
-        """ListSecurityAssignedQueuesRequest
+        r"""ListSecurityAssignedQueuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityAssignedQueuesRequest.
+        r"""Gets the workspace of this ListSecurityAssignedQueuesRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityAssignedQueuesRequest.
+        r"""Sets the workspace of this ListSecurityAssignedQueuesRequest.
 
         DataArts Studio工作空间ID
 
@@ -92,7 +92,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListSecurityAssignedQueuesRequest.
+        r"""Gets the type of this ListSecurityAssignedQueuesRequest.
 
         队列类型，MRS、DLI。
 
@@ -103,7 +103,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListSecurityAssignedQueuesRequest.
+        r"""Sets the type of this ListSecurityAssignedQueuesRequest.
 
         队列类型，MRS、DLI。
 
@@ -114,7 +114,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSecurityAssignedQueuesRequest.
+        r"""Gets the cluster_id of this ListSecurityAssignedQueuesRequest.
 
         集群id
 
@@ -125,7 +125,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSecurityAssignedQueuesRequest.
+        r"""Sets the cluster_id of this ListSecurityAssignedQueuesRequest.
 
         集群id
 
@@ -136,7 +136,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityAssignedQueuesRequest.
+        r"""Gets the limit of this ListSecurityAssignedQueuesRequest.
 
         limit
 
@@ -147,7 +147,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityAssignedQueuesRequest.
+        r"""Sets the limit of this ListSecurityAssignedQueuesRequest.
 
         limit
 
@@ -158,7 +158,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityAssignedQueuesRequest.
+        r"""Gets the offset of this ListSecurityAssignedQueuesRequest.
 
         offset
 
@@ -169,7 +169,7 @@ class ListSecurityAssignedQueuesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityAssignedQueuesRequest.
+        r"""Sets the offset of this ListSecurityAssignedQueuesRequest.
 
         offset
 

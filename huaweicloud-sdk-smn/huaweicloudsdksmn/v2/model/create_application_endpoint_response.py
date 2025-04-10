@@ -28,7 +28,7 @@ class CreateApplicationEndpointResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, endpoint_urn=None):
-        """CreateApplicationEndpointResponse
+        r"""CreateApplicationEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateApplicationEndpointResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateApplicationEndpointResponse.
+        r"""Gets the request_id of this CreateApplicationEndpointResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class CreateApplicationEndpointResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateApplicationEndpointResponse.
+        r"""Sets the request_id of this CreateApplicationEndpointResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class CreateApplicationEndpointResponse(SdkResponse):
 
     @property
     def endpoint_urn(self):
-        """Gets the endpoint_urn of this CreateApplicationEndpointResponse.
+        r"""Gets the endpoint_urn of this CreateApplicationEndpointResponse.
 
         Endpoint的唯一资源标识。
 
@@ -84,7 +84,7 @@ class CreateApplicationEndpointResponse(SdkResponse):
 
     @endpoint_urn.setter
     def endpoint_urn(self, endpoint_urn):
-        """Sets the endpoint_urn of this CreateApplicationEndpointResponse.
+        r"""Sets the endpoint_urn of this CreateApplicationEndpointResponse.
 
         Endpoint的唯一资源标识。
 

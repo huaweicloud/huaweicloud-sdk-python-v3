@@ -29,7 +29,7 @@ class ConfigInfo:
     }
 
     def __init__(self, name=None, type=None, value=None):
-        """ConfigInfo
+        r"""ConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConfigInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConfigInfo.
+        r"""Gets the name of this ConfigInfo.
 
         参数名
 
@@ -68,7 +68,7 @@ class ConfigInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigInfo.
+        r"""Sets the name of this ConfigInfo.
 
         参数名
 
@@ -79,7 +79,7 @@ class ConfigInfo:
 
     @property
     def type(self):
-        """Gets the type of this ConfigInfo.
+        r"""Gets the type of this ConfigInfo.
 
         参数类型
 
@@ -90,7 +90,7 @@ class ConfigInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigInfo.
+        r"""Sets the type of this ConfigInfo.
 
         参数类型
 
@@ -101,7 +101,7 @@ class ConfigInfo:
 
     @property
     def value(self):
-        """Gets the value of this ConfigInfo.
+        r"""Gets the value of this ConfigInfo.
 
         参数值
 
@@ -112,7 +112,7 @@ class ConfigInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigInfo.
+        r"""Sets the value of this ConfigInfo.
 
         参数值
 

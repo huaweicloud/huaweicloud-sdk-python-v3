@@ -29,7 +29,7 @@ class MockInfo:
     }
 
     def __init__(self, mock_id=None, mock_switch=None, mock_url=None):
-        """MockInfo
+        r"""MockInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MockInfo:
 
     @property
     def mock_id(self):
-        """Gets the mock_id of this MockInfo.
+        r"""Gets the mock_id of this MockInfo.
 
         mock id
 
@@ -68,7 +68,7 @@ class MockInfo:
 
     @mock_id.setter
     def mock_id(self, mock_id):
-        """Sets the mock_id of this MockInfo.
+        r"""Sets the mock_id of this MockInfo.
 
         mock id
 
@@ -79,7 +79,7 @@ class MockInfo:
 
     @property
     def mock_switch(self):
-        """Gets the mock_switch of this MockInfo.
+        r"""Gets the mock_switch of this MockInfo.
 
         mock开关
 
@@ -90,7 +90,7 @@ class MockInfo:
 
     @mock_switch.setter
     def mock_switch(self, mock_switch):
-        """Sets the mock_switch of this MockInfo.
+        r"""Sets the mock_switch of this MockInfo.
 
         mock开关
 
@@ -101,7 +101,7 @@ class MockInfo:
 
     @property
     def mock_url(self):
-        """Gets the mock_url of this MockInfo.
+        r"""Gets the mock_url of this MockInfo.
 
         mock url
 
@@ -112,7 +112,7 @@ class MockInfo:
 
     @mock_url.setter
     def mock_url(self, mock_url):
-        """Sets the mock_url of this MockInfo.
+        r"""Sets the mock_url of this MockInfo.
 
         mock url
 

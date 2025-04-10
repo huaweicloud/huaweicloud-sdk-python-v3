@@ -29,7 +29,7 @@ class DatastoreItem:
     }
 
     def __init__(self, type=None, version=None, patch_available=None):
-        """DatastoreItem
+        r"""DatastoreItem
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DatastoreItem:
 
     @property
     def type(self):
-        """Gets the type of this DatastoreItem.
+        r"""Gets the type of this DatastoreItem.
 
         数据库引擎。
 
@@ -65,7 +65,7 @@ class DatastoreItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatastoreItem.
+        r"""Sets the type of this DatastoreItem.
 
         数据库引擎。
 
@@ -76,7 +76,7 @@ class DatastoreItem:
 
     @property
     def version(self):
-        """Gets the version of this DatastoreItem.
+        r"""Gets the version of this DatastoreItem.
 
         数据库版本号。
 
@@ -87,7 +87,7 @@ class DatastoreItem:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DatastoreItem.
+        r"""Sets the version of this DatastoreItem.
 
         数据库版本号。
 
@@ -98,7 +98,7 @@ class DatastoreItem:
 
     @property
     def patch_available(self):
-        """Gets the patch_available of this DatastoreItem.
+        r"""Gets the patch_available of this DatastoreItem.
 
         是否有补丁版本的数据库支持升级，返回true时可以通过升级补丁接口进行数据库升级，否则不允许升级补丁。
 
@@ -109,7 +109,7 @@ class DatastoreItem:
 
     @patch_available.setter
     def patch_available(self, patch_available):
-        """Sets the patch_available of this DatastoreItem.
+        r"""Sets the patch_available of this DatastoreItem.
 
         是否有补丁版本的数据库支持升级，返回true时可以通过升级补丁接口进行数据库升级，否则不允许升级补丁。
 

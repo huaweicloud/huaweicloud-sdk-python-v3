@@ -25,7 +25,7 @@ class ShowGetLogSettingRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowGetLogSettingRequest
+        r"""ShowGetLogSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowGetLogSettingRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowGetLogSettingRequest.
+        r"""Gets the cluster_id of this ShowGetLogSettingRequest.
 
         指定查询集群ID。
 
@@ -53,7 +53,7 @@ class ShowGetLogSettingRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowGetLogSettingRequest.
+        r"""Sets the cluster_id of this ShowGetLogSettingRequest.
 
         指定查询集群ID。
 

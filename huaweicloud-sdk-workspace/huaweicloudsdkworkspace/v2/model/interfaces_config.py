@@ -41,7 +41,7 @@ class InterfacesConfig:
     }
 
     def __init__(self, apply_platform=None, id=None, name=None, type=None, results=None, pagination=None, request=None, response=None, result_check=None):
-        """InterfacesConfig
+        r"""InterfacesConfig
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InterfacesConfig:
 
     @property
     def apply_platform(self):
-        """Gets the apply_platform of this InterfacesConfig.
+        r"""Gets the apply_platform of this InterfacesConfig.
 
         应用平台
 
@@ -110,7 +110,7 @@ class InterfacesConfig:
 
     @apply_platform.setter
     def apply_platform(self, apply_platform):
-        """Sets the apply_platform of this InterfacesConfig.
+        r"""Sets the apply_platform of this InterfacesConfig.
 
         应用平台
 
@@ -121,7 +121,7 @@ class InterfacesConfig:
 
     @property
     def id(self):
-        """Gets the id of this InterfacesConfig.
+        r"""Gets the id of this InterfacesConfig.
 
         ID
 
@@ -132,7 +132,7 @@ class InterfacesConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InterfacesConfig.
+        r"""Sets the id of this InterfacesConfig.
 
         ID
 
@@ -143,7 +143,7 @@ class InterfacesConfig:
 
     @property
     def name(self):
-        """Gets the name of this InterfacesConfig.
+        r"""Gets the name of this InterfacesConfig.
 
         名称
 
@@ -154,7 +154,7 @@ class InterfacesConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InterfacesConfig.
+        r"""Sets the name of this InterfacesConfig.
 
         名称
 
@@ -165,7 +165,7 @@ class InterfacesConfig:
 
     @property
     def type(self):
-        """Gets the type of this InterfacesConfig.
+        r"""Gets the type of this InterfacesConfig.
 
         类型
 
@@ -176,7 +176,7 @@ class InterfacesConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InterfacesConfig.
+        r"""Sets the type of this InterfacesConfig.
 
         类型
 
@@ -187,7 +187,7 @@ class InterfacesConfig:
 
     @property
     def results(self):
-        """Gets the results of this InterfacesConfig.
+        r"""Gets the results of this InterfacesConfig.
 
         结果
 
@@ -198,7 +198,7 @@ class InterfacesConfig:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this InterfacesConfig.
+        r"""Sets the results of this InterfacesConfig.
 
         结果
 
@@ -209,7 +209,7 @@ class InterfacesConfig:
 
     @property
     def pagination(self):
-        """Gets the pagination of this InterfacesConfig.
+        r"""Gets the pagination of this InterfacesConfig.
 
         分页信息
 
@@ -220,7 +220,7 @@ class InterfacesConfig:
 
     @pagination.setter
     def pagination(self, pagination):
-        """Sets the pagination of this InterfacesConfig.
+        r"""Sets the pagination of this InterfacesConfig.
 
         分页信息
 
@@ -231,7 +231,7 @@ class InterfacesConfig:
 
     @property
     def request(self):
-        """Gets the request of this InterfacesConfig.
+        r"""Gets the request of this InterfacesConfig.
 
         :return: The request of this InterfacesConfig.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InterfacesRequest`
@@ -240,7 +240,7 @@ class InterfacesConfig:
 
     @request.setter
     def request(self, request):
-        """Sets the request of this InterfacesConfig.
+        r"""Sets the request of this InterfacesConfig.
 
         :param request: The request of this InterfacesConfig.
         :type request: :class:`huaweicloudsdkworkspace.v2.InterfacesRequest`
@@ -249,7 +249,7 @@ class InterfacesConfig:
 
     @property
     def response(self):
-        """Gets the response of this InterfacesConfig.
+        r"""Gets the response of this InterfacesConfig.
 
         响应
 
@@ -260,7 +260,7 @@ class InterfacesConfig:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this InterfacesConfig.
+        r"""Sets the response of this InterfacesConfig.
 
         响应
 
@@ -271,7 +271,7 @@ class InterfacesConfig:
 
     @property
     def result_check(self):
-        """Gets the result_check of this InterfacesConfig.
+        r"""Gets the result_check of this InterfacesConfig.
 
         检查结果
 
@@ -282,7 +282,7 @@ class InterfacesConfig:
 
     @result_check.setter
     def result_check(self, result_check):
-        """Sets the result_check of this InterfacesConfig.
+        r"""Sets the result_check of this InterfacesConfig.
 
         检查结果
 

@@ -43,7 +43,7 @@ class FreeResourceDetail:
     }
 
     def __init__(self, free_resource_id=None, free_resource_type_name=None, quota_reuse_cycle=None, quota_reuse_cycle_type=None, usage_type_name=None, start_time=None, end_time=None, amount=None, original_amount=None, measure_id=None):
-        """FreeResourceDetail
+        r"""FreeResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class FreeResourceDetail:
 
     @property
     def free_resource_id(self):
-        """Gets the free_resource_id of this FreeResourceDetail.
+        r"""Gets the free_resource_id of this FreeResourceDetail.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
@@ -117,7 +117,7 @@ class FreeResourceDetail:
 
     @free_resource_id.setter
     def free_resource_id(self, free_resource_id):
-        """Sets the free_resource_id of this FreeResourceDetail.
+        r"""Sets the free_resource_id of this FreeResourceDetail.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
@@ -128,7 +128,7 @@ class FreeResourceDetail:
 
     @property
     def free_resource_type_name(self):
-        """Gets the free_resource_type_name of this FreeResourceDetail.
+        r"""Gets the free_resource_type_name of this FreeResourceDetail.
 
         资源项类型名称。
 
@@ -139,7 +139,7 @@ class FreeResourceDetail:
 
     @free_resource_type_name.setter
     def free_resource_type_name(self, free_resource_type_name):
-        """Sets the free_resource_type_name of this FreeResourceDetail.
+        r"""Sets the free_resource_type_name of this FreeResourceDetail.
 
         资源项类型名称。
 
@@ -150,7 +150,7 @@ class FreeResourceDetail:
 
     @property
     def quota_reuse_cycle(self):
-        """Gets the quota_reuse_cycle of this FreeResourceDetail.
+        r"""Gets the quota_reuse_cycle of this FreeResourceDetail.
 
         重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年
 
@@ -161,7 +161,7 @@ class FreeResourceDetail:
 
     @quota_reuse_cycle.setter
     def quota_reuse_cycle(self, quota_reuse_cycle):
-        """Sets the quota_reuse_cycle of this FreeResourceDetail.
+        r"""Sets the quota_reuse_cycle of this FreeResourceDetail.
 
         重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年
 
@@ -172,7 +172,7 @@ class FreeResourceDetail:
 
     @property
     def quota_reuse_cycle_type(self):
-        """Gets the quota_reuse_cycle_type of this FreeResourceDetail.
+        r"""Gets the quota_reuse_cycle_type of this FreeResourceDetail.
 
         重置周期类别，只有quota_reuse_mode为可重置，该字段才有意义。 1：按自然周期重置是指重置周期是按照自然月/年来重置，例如如果周期是月，按自然周期重置，表示每个月的1号重置。 2：按订购周期重置。是指重置周期是按照订购时间来重置，例如如果周期是月，按订购周期重置，15号订购了该套餐，表示每个月的15号重置。
 
@@ -183,7 +183,7 @@ class FreeResourceDetail:
 
     @quota_reuse_cycle_type.setter
     def quota_reuse_cycle_type(self, quota_reuse_cycle_type):
-        """Sets the quota_reuse_cycle_type of this FreeResourceDetail.
+        r"""Sets the quota_reuse_cycle_type of this FreeResourceDetail.
 
         重置周期类别，只有quota_reuse_mode为可重置，该字段才有意义。 1：按自然周期重置是指重置周期是按照自然月/年来重置，例如如果周期是月，按自然周期重置，表示每个月的1号重置。 2：按订购周期重置。是指重置周期是按照订购时间来重置，例如如果周期是月，按订购周期重置，15号订购了该套餐，表示每个月的15号重置。
 
@@ -194,7 +194,7 @@ class FreeResourceDetail:
 
     @property
     def usage_type_name(self):
-        """Gets the usage_type_name of this FreeResourceDetail.
+        r"""Gets the usage_type_name of this FreeResourceDetail.
 
         使用量类型名称。
 
@@ -205,7 +205,7 @@ class FreeResourceDetail:
 
     @usage_type_name.setter
     def usage_type_name(self, usage_type_name):
-        """Sets the usage_type_name of this FreeResourceDetail.
+        r"""Sets the usage_type_name of this FreeResourceDetail.
 
         使用量类型名称。
 
@@ -216,7 +216,7 @@ class FreeResourceDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this FreeResourceDetail.
+        r"""Gets the start_time of this FreeResourceDetail.
 
         开始时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的开始时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的生效时间。
 
@@ -227,7 +227,7 @@ class FreeResourceDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this FreeResourceDetail.
+        r"""Sets the start_time of this FreeResourceDetail.
 
         开始时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的开始时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的生效时间。
 
@@ -238,7 +238,7 @@ class FreeResourceDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this FreeResourceDetail.
+        r"""Gets the end_time of this FreeResourceDetail.
 
         结束时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的结束时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的失效时间。
 
@@ -249,7 +249,7 @@ class FreeResourceDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this FreeResourceDetail.
+        r"""Sets the end_time of this FreeResourceDetail.
 
         结束时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的结束时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的失效时间。
 
@@ -260,7 +260,7 @@ class FreeResourceDetail:
 
     @property
     def amount(self):
-        """Gets the amount of this FreeResourceDetail.
+        r"""Gets the amount of this FreeResourceDetail.
 
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
@@ -271,7 +271,7 @@ class FreeResourceDetail:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this FreeResourceDetail.
+        r"""Sets the amount of this FreeResourceDetail.
 
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
@@ -282,7 +282,7 @@ class FreeResourceDetail:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this FreeResourceDetail.
+        r"""Gets the original_amount of this FreeResourceDetail.
 
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
@@ -293,7 +293,7 @@ class FreeResourceDetail:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this FreeResourceDetail.
+        r"""Sets the original_amount of this FreeResourceDetail.
 
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
@@ -304,7 +304,7 @@ class FreeResourceDetail:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this FreeResourceDetail.
+        r"""Gets the measure_id of this FreeResourceDetail.
 
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
@@ -315,7 +315,7 @@ class FreeResourceDetail:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this FreeResourceDetail.
+        r"""Sets the measure_id of this FreeResourceDetail.
 
         度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 

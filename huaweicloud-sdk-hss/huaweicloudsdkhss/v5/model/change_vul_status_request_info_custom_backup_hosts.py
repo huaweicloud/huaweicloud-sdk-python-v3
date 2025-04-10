@@ -29,7 +29,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     }
 
     def __init__(self, host_id=None, vault_id=None, backup_name=None):
-        """ChangeVulStatusRequestInfoCustomBackupHosts
+        r"""ChangeVulStatusRequestInfoCustomBackupHosts
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
+        r"""Gets the host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
         主机id
 
@@ -68,7 +68,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
+        r"""Sets the host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
         主机id
 
@@ -79,7 +79,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
+        r"""Gets the vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
         存储库id
 
@@ -90,7 +90,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
+        r"""Sets the vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
         存储库id
 
@@ -101,7 +101,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
+        r"""Gets the backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
         备份名称
 
@@ -112,7 +112,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
+        r"""Sets the backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
         备份名称
 

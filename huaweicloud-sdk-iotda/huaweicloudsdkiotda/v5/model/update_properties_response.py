@@ -32,7 +32,7 @@ class UpdatePropertiesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, response=None, error_code=None, error_msg=None):
-        """UpdatePropertiesResponse
+        r"""UpdatePropertiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdatePropertiesResponse.
+        r"""Gets the request_id of this UpdatePropertiesResponse.
 
         设备属性更新ID，用于唯一标识一条属性更新，在下发更新属性时由物联网平台分配获得。
 
@@ -76,7 +76,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdatePropertiesResponse.
+        r"""Sets the request_id of this UpdatePropertiesResponse.
 
         设备属性更新ID，用于唯一标识一条属性更新，在下发更新属性时由物联网平台分配获得。
 
@@ -87,7 +87,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this UpdatePropertiesResponse.
+        r"""Gets the response of this UpdatePropertiesResponse.
 
         设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
 
@@ -98,7 +98,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this UpdatePropertiesResponse.
+        r"""Sets the response of this UpdatePropertiesResponse.
 
         设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
 
@@ -109,7 +109,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdatePropertiesResponse.
+        r"""Gets the error_code of this UpdatePropertiesResponse.
 
         属性更新异常错误码。
 
@@ -120,7 +120,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdatePropertiesResponse.
+        r"""Sets the error_code of this UpdatePropertiesResponse.
 
         属性更新异常错误码。
 
@@ -131,7 +131,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UpdatePropertiesResponse.
+        r"""Gets the error_msg of this UpdatePropertiesResponse.
 
         属性更新异常错误信息。
 
@@ -142,7 +142,7 @@ class UpdatePropertiesResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdatePropertiesResponse.
+        r"""Sets the error_msg of this UpdatePropertiesResponse.
 
         属性更新异常错误信息。
 

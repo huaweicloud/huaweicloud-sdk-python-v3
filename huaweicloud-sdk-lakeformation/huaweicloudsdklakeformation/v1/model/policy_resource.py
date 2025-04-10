@@ -29,7 +29,7 @@ class PolicyResource:
     }
 
     def __init__(self, is_excludes=None, is_recursive=None, values=None):
-        """PolicyResource
+        r"""PolicyResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PolicyResource:
 
     @property
     def is_excludes(self):
-        """Gets the is_excludes of this PolicyResource.
+        r"""Gets the is_excludes of this PolicyResource.
 
         是否排除
 
@@ -68,7 +68,7 @@ class PolicyResource:
 
     @is_excludes.setter
     def is_excludes(self, is_excludes):
-        """Sets the is_excludes of this PolicyResource.
+        r"""Sets the is_excludes of this PolicyResource.
 
         是否排除
 
@@ -79,7 +79,7 @@ class PolicyResource:
 
     @property
     def is_recursive(self):
-        """Gets the is_recursive of this PolicyResource.
+        r"""Gets the is_recursive of this PolicyResource.
 
         是否递归
 
@@ -90,7 +90,7 @@ class PolicyResource:
 
     @is_recursive.setter
     def is_recursive(self, is_recursive):
-        """Sets the is_recursive of this PolicyResource.
+        r"""Sets the is_recursive of this PolicyResource.
 
         是否递归
 
@@ -101,7 +101,7 @@ class PolicyResource:
 
     @property
     def values(self):
-        """Gets the values of this PolicyResource.
+        r"""Gets the values of this PolicyResource.
 
         值
 
@@ -112,7 +112,7 @@ class PolicyResource:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this PolicyResource.
+        r"""Sets the values of this PolicyResource.
 
         值
 

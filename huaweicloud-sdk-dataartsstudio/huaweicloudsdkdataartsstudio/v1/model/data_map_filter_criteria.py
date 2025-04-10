@@ -33,7 +33,7 @@ class DataMapFilterCriteria:
     }
 
     def __init__(self, attribute=None, operator=None, value=None, condition=None, criterion=None):
-        """DataMapFilterCriteria
+        r"""DataMapFilterCriteria
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DataMapFilterCriteria:
 
     @property
     def attribute(self):
-        """Gets the attribute of this DataMapFilterCriteria.
+        r"""Gets the attribute of this DataMapFilterCriteria.
 
         过滤属性维度，枚举值：typeName、base.DataAsset.sourceType、classifications.name、tags.name、securityLevel.name、workspaceId
 
@@ -82,7 +82,7 @@ class DataMapFilterCriteria:
 
     @attribute.setter
     def attribute(self, attribute):
-        """Sets the attribute of this DataMapFilterCriteria.
+        r"""Sets the attribute of this DataMapFilterCriteria.
 
         过滤属性维度，枚举值：typeName、base.DataAsset.sourceType、classifications.name、tags.name、securityLevel.name、workspaceId
 
@@ -93,7 +93,7 @@ class DataMapFilterCriteria:
 
     @property
     def operator(self):
-        """Gets the operator of this DataMapFilterCriteria.
+        r"""Gets the operator of this DataMapFilterCriteria.
 
         操作表示，枚举值：EQ、IN
 
@@ -104,7 +104,7 @@ class DataMapFilterCriteria:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this DataMapFilterCriteria.
+        r"""Sets the operator of this DataMapFilterCriteria.
 
         操作表示，枚举值：EQ、IN
 
@@ -115,7 +115,7 @@ class DataMapFilterCriteria:
 
     @property
     def value(self):
-        """Gets the value of this DataMapFilterCriteria.
+        r"""Gets the value of this DataMapFilterCriteria.
 
         属性过滤值，根据attribute变化。如attribute为数据源：base.DataAsset.sourceType，则值可为[\"dws\", \"hive\"]
 
@@ -126,7 +126,7 @@ class DataMapFilterCriteria:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DataMapFilterCriteria.
+        r"""Sets the value of this DataMapFilterCriteria.
 
         属性过滤值，根据attribute变化。如attribute为数据源：base.DataAsset.sourceType，则值可为[\"dws\", \"hive\"]
 
@@ -137,7 +137,7 @@ class DataMapFilterCriteria:
 
     @property
     def condition(self):
-        """Gets the condition of this DataMapFilterCriteria.
+        r"""Gets the condition of this DataMapFilterCriteria.
 
         条件拼接准则，取值范围 AND,OR
 
@@ -148,7 +148,7 @@ class DataMapFilterCriteria:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this DataMapFilterCriteria.
+        r"""Sets the condition of this DataMapFilterCriteria.
 
         条件拼接准则，取值范围 AND,OR
 
@@ -159,7 +159,7 @@ class DataMapFilterCriteria:
 
     @property
     def criterion(self):
-        """Gets the criterion of this DataMapFilterCriteria.
+        r"""Gets the criterion of this DataMapFilterCriteria.
 
         条件准则
 
@@ -170,7 +170,7 @@ class DataMapFilterCriteria:
 
     @criterion.setter
     def criterion(self, criterion):
-        """Sets the criterion of this DataMapFilterCriteria.
+        r"""Sets the criterion of this DataMapFilterCriteria.
 
         条件准则
 

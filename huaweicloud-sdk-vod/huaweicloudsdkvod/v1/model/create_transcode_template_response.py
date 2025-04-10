@@ -26,7 +26,7 @@ class CreateTranscodeTemplateResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None):
-        """CreateTranscodeTemplateResponse
+        r"""CreateTranscodeTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTranscodeTemplateResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateTranscodeTemplateResponse.
+        r"""Gets the group_id of this CreateTranscodeTemplateResponse.
 
         模板组ID<br/> 
 
@@ -55,7 +55,7 @@ class CreateTranscodeTemplateResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateTranscodeTemplateResponse.
+        r"""Sets the group_id of this CreateTranscodeTemplateResponse.
 
         模板组ID<br/> 
 

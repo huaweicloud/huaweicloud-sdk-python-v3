@@ -26,7 +26,7 @@ class ShowPipelineArtifactsResponse(SdkResponse):
     }
 
     def __init__(self, artifacts=None):
-        """ShowPipelineArtifactsResponse
+        r"""ShowPipelineArtifactsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPipelineArtifactsResponse(SdkResponse):
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this ShowPipelineArtifactsResponse.
+        r"""Gets the artifacts of this ShowPipelineArtifactsResponse.
 
         产物列表
 
@@ -55,7 +55,7 @@ class ShowPipelineArtifactsResponse(SdkResponse):
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this ShowPipelineArtifactsResponse.
+        r"""Sets the artifacts of this ShowPipelineArtifactsResponse.
 
         产物列表
 

@@ -50,7 +50,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
     }
 
     def __init__(self, other=None, name=None, template_type=None, image_id=None, status=None, features=None, cluster_types=None, version_type=None, components=None, resource_requirement=None, constraints=None, flavors=None, role_deploy_meta=None):
-        """ShowMrsVersionMetadataResponse
+        r"""ShowMrsVersionMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def other(self):
-        """Gets the other of this ShowMrsVersionMetadataResponse.
+        r"""Gets the other of this ShowMrsVersionMetadataResponse.
 
         其他
 
@@ -139,7 +139,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @other.setter
     def other(self, other):
-        """Sets the other of this ShowMrsVersionMetadataResponse.
+        r"""Sets the other of this ShowMrsVersionMetadataResponse.
 
         其他
 
@@ -150,7 +150,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowMrsVersionMetadataResponse.
+        r"""Gets the name of this ShowMrsVersionMetadataResponse.
 
         镜像版本名称
 
@@ -161,7 +161,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowMrsVersionMetadataResponse.
+        r"""Sets the name of this ShowMrsVersionMetadataResponse.
 
         镜像版本名称
 
@@ -172,7 +172,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def template_type(self):
-        """Gets the template_type of this ShowMrsVersionMetadataResponse.
+        r"""Gets the template_type of this ShowMrsVersionMetadataResponse.
 
         模板类型
 
@@ -183,7 +183,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ShowMrsVersionMetadataResponse.
+        r"""Sets the template_type of this ShowMrsVersionMetadataResponse.
 
         模板类型
 
@@ -194,7 +194,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowMrsVersionMetadataResponse.
+        r"""Gets the image_id of this ShowMrsVersionMetadataResponse.
 
         镜像ID
 
@@ -205,7 +205,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowMrsVersionMetadataResponse.
+        r"""Sets the image_id of this ShowMrsVersionMetadataResponse.
 
         镜像ID
 
@@ -216,7 +216,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowMrsVersionMetadataResponse.
+        r"""Gets the status of this ShowMrsVersionMetadataResponse.
 
         版本状态
 
@@ -227,7 +227,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMrsVersionMetadataResponse.
+        r"""Sets the status of this ShowMrsVersionMetadataResponse.
 
         版本状态
 
@@ -238,7 +238,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def features(self):
-        """Gets the features of this ShowMrsVersionMetadataResponse.
+        r"""Gets the features of this ShowMrsVersionMetadataResponse.
 
         特性列表
 
@@ -249,7 +249,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @features.setter
     def features(self, features):
-        """Sets the features of this ShowMrsVersionMetadataResponse.
+        r"""Sets the features of this ShowMrsVersionMetadataResponse.
 
         特性列表
 
@@ -260,7 +260,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def cluster_types(self):
-        """Gets the cluster_types of this ShowMrsVersionMetadataResponse.
+        r"""Gets the cluster_types of this ShowMrsVersionMetadataResponse.
 
         集群类型列表
 
@@ -271,7 +271,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @cluster_types.setter
     def cluster_types(self, cluster_types):
-        """Sets the cluster_types of this ShowMrsVersionMetadataResponse.
+        r"""Sets the cluster_types of this ShowMrsVersionMetadataResponse.
 
         集群类型列表
 
@@ -282,7 +282,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def version_type(self):
-        """Gets the version_type of this ShowMrsVersionMetadataResponse.
+        r"""Gets the version_type of this ShowMrsVersionMetadataResponse.
 
         版本类型
 
@@ -293,7 +293,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this ShowMrsVersionMetadataResponse.
+        r"""Sets the version_type of this ShowMrsVersionMetadataResponse.
 
         版本类型
 
@@ -304,7 +304,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def components(self):
-        """Gets the components of this ShowMrsVersionMetadataResponse.
+        r"""Gets the components of this ShowMrsVersionMetadataResponse.
 
         组件列表
 
@@ -315,7 +315,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @components.setter
     def components(self, components):
-        """Sets the components of this ShowMrsVersionMetadataResponse.
+        r"""Sets the components of this ShowMrsVersionMetadataResponse.
 
         组件列表
 
@@ -326,7 +326,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def resource_requirement(self):
-        """Gets the resource_requirement of this ShowMrsVersionMetadataResponse.
+        r"""Gets the resource_requirement of this ShowMrsVersionMetadataResponse.
 
         版本所需的ip等资源说明
 
@@ -337,7 +337,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @resource_requirement.setter
     def resource_requirement(self, resource_requirement):
-        """Sets the resource_requirement of this ShowMrsVersionMetadataResponse.
+        r"""Sets the resource_requirement of this ShowMrsVersionMetadataResponse.
 
         版本所需的ip等资源说明
 
@@ -348,7 +348,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def constraints(self):
-        """Gets the constraints of this ShowMrsVersionMetadataResponse.
+        r"""Gets the constraints of this ShowMrsVersionMetadataResponse.
 
         :return: The constraints of this ShowMrsVersionMetadataResponse.
         :rtype: :class:`huaweicloudsdkmrs.v1.VersionConstraint`
@@ -357,7 +357,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @constraints.setter
     def constraints(self, constraints):
-        """Sets the constraints of this ShowMrsVersionMetadataResponse.
+        r"""Sets the constraints of this ShowMrsVersionMetadataResponse.
 
         :param constraints: The constraints of this ShowMrsVersionMetadataResponse.
         :type constraints: :class:`huaweicloudsdkmrs.v1.VersionConstraint`
@@ -366,7 +366,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ShowMrsVersionMetadataResponse.
+        r"""Gets the flavors of this ShowMrsVersionMetadataResponse.
 
         :return: The flavors of this ShowMrsVersionMetadataResponse.
         :rtype: :class:`huaweicloudsdkmrs.v1.FlavorLists`
@@ -375,7 +375,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ShowMrsVersionMetadataResponse.
+        r"""Sets the flavors of this ShowMrsVersionMetadataResponse.
 
         :param flavors: The flavors of this ShowMrsVersionMetadataResponse.
         :type flavors: :class:`huaweicloudsdkmrs.v1.FlavorLists`
@@ -384,7 +384,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @property
     def role_deploy_meta(self):
-        """Gets the role_deploy_meta of this ShowMrsVersionMetadataResponse.
+        r"""Gets the role_deploy_meta of this ShowMrsVersionMetadataResponse.
 
         版本组件实例角色部署策略
 
@@ -395,7 +395,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
 
     @role_deploy_meta.setter
     def role_deploy_meta(self, role_deploy_meta):
-        """Sets the role_deploy_meta of this ShowMrsVersionMetadataResponse.
+        r"""Sets the role_deploy_meta of this ShowMrsVersionMetadataResponse.
 
         版本组件实例角色部署策略
 

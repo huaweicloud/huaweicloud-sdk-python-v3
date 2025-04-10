@@ -28,7 +28,7 @@ class CreateApplyResponse(SdkResponse):
     }
 
     def __init__(self, message=None, status=None):
-        """CreateApplyResponse
+        r"""CreateApplyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateApplyResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateApplyResponse.
+        r"""Gets the message of this CreateApplyResponse.
 
         the message of join-request
 
@@ -62,7 +62,7 @@ class CreateApplyResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateApplyResponse.
+        r"""Sets the message of this CreateApplyResponse.
 
         the message of join-request
 
@@ -73,7 +73,7 @@ class CreateApplyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateApplyResponse.
+        r"""Gets the status of this CreateApplyResponse.
 
         the status of join-request(success/error/conflict)
 
@@ -84,7 +84,7 @@ class CreateApplyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateApplyResponse.
+        r"""Sets the status of this CreateApplyResponse.
 
         the status of join-request(success/error/conflict)
 

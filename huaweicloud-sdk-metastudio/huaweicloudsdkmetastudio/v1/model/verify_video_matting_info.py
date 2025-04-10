@@ -33,7 +33,7 @@ class VerifyVideoMattingInfo:
     }
 
     def __init__(self, dx=None, dy=None, width=None, height=None, method=None):
-        """VerifyVideoMattingInfo
+        r"""VerifyVideoMattingInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VerifyVideoMattingInfo:
 
     @property
     def dx(self):
-        """Gets the dx of this VerifyVideoMattingInfo.
+        r"""Gets the dx of this VerifyVideoMattingInfo.
 
         区域左上角像素点的X轴位置值。
 
@@ -82,7 +82,7 @@ class VerifyVideoMattingInfo:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this VerifyVideoMattingInfo.
+        r"""Sets the dx of this VerifyVideoMattingInfo.
 
         区域左上角像素点的X轴位置值。
 
@@ -93,7 +93,7 @@ class VerifyVideoMattingInfo:
 
     @property
     def dy(self):
-        """Gets the dy of this VerifyVideoMattingInfo.
+        r"""Gets the dy of this VerifyVideoMattingInfo.
 
         区域左上角像素点的Y轴位置值。
 
@@ -104,7 +104,7 @@ class VerifyVideoMattingInfo:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this VerifyVideoMattingInfo.
+        r"""Sets the dy of this VerifyVideoMattingInfo.
 
         区域左上角像素点的Y轴位置值。
 
@@ -115,7 +115,7 @@ class VerifyVideoMattingInfo:
 
     @property
     def width(self):
-        """Gets the width of this VerifyVideoMattingInfo.
+        r"""Gets the width of this VerifyVideoMattingInfo.
 
         区域宽度像素值。
 
@@ -126,7 +126,7 @@ class VerifyVideoMattingInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VerifyVideoMattingInfo.
+        r"""Sets the width of this VerifyVideoMattingInfo.
 
         区域宽度像素值。
 
@@ -137,7 +137,7 @@ class VerifyVideoMattingInfo:
 
     @property
     def height(self):
-        """Gets the height of this VerifyVideoMattingInfo.
+        r"""Gets the height of this VerifyVideoMattingInfo.
 
         区域高度像素值。
 
@@ -148,7 +148,7 @@ class VerifyVideoMattingInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VerifyVideoMattingInfo.
+        r"""Sets the height of this VerifyVideoMattingInfo.
 
         区域高度像素值。
 
@@ -159,7 +159,7 @@ class VerifyVideoMattingInfo:
 
     @property
     def method(self):
-        """Gets the method of this VerifyVideoMattingInfo.
+        r"""Gets the method of this VerifyVideoMattingInfo.
 
         资源操作类型。 * RESERVED: 视频不需要抠绿的区域。 * DELETE：视频需要抠绿的区域。 * NO_DEGREEN：视频不需要去绿的区域。
 
@@ -170,7 +170,7 @@ class VerifyVideoMattingInfo:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this VerifyVideoMattingInfo.
+        r"""Sets the method of this VerifyVideoMattingInfo.
 
         资源操作类型。 * RESERVED: 视频不需要抠绿的区域。 * DELETE：视频需要抠绿的区域。 * NO_DEGREEN：视频不需要去绿的区域。
 

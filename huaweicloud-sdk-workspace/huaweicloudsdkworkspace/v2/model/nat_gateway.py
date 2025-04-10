@@ -45,7 +45,7 @@ class NatGateway:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None):
-        """NatGateway
+        r"""NatGateway
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class NatGateway:
 
     @property
     def id(self):
-        """Gets the id of this NatGateway.
+        r"""Gets the id of this NatGateway.
 
         网关实例的ID
 
@@ -124,7 +124,7 @@ class NatGateway:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NatGateway.
+        r"""Sets the id of this NatGateway.
 
         网关实例的ID
 
@@ -135,7 +135,7 @@ class NatGateway:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NatGateway.
+        r"""Gets the tenant_id of this NatGateway.
 
         项目的ID。
 
@@ -146,7 +146,7 @@ class NatGateway:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NatGateway.
+        r"""Sets the tenant_id of this NatGateway.
 
         项目的ID。
 
@@ -157,7 +157,7 @@ class NatGateway:
 
     @property
     def name(self):
-        """Gets the name of this NatGateway.
+        r"""Gets the name of this NatGateway.
 
         公网NAT网关实例的名字，长度限制为64。
 
@@ -168,7 +168,7 @@ class NatGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NatGateway.
+        r"""Sets the name of this NatGateway.
 
         公网NAT网关实例的名字，长度限制为64。
 
@@ -179,7 +179,7 @@ class NatGateway:
 
     @property
     def description(self):
-        """Gets the description of this NatGateway.
+        r"""Gets the description of this NatGateway.
 
         公网NAT网关实例的描述，长度限制为255。
 
@@ -190,7 +190,7 @@ class NatGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NatGateway.
+        r"""Sets the description of this NatGateway.
 
         公网NAT网关实例的描述，长度限制为255。
 
@@ -201,7 +201,7 @@ class NatGateway:
 
     @property
     def spec(self):
-        """Gets the spec of this NatGateway.
+        r"""Gets the spec of this NatGateway.
 
         公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000
 
@@ -212,7 +212,7 @@ class NatGateway:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this NatGateway.
+        r"""Sets the spec of this NatGateway.
 
         公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000
 
@@ -223,7 +223,7 @@ class NatGateway:
 
     @property
     def status(self):
-        """Gets the status of this NatGateway.
+        r"""Gets the status of this NatGateway.
 
         公网NAT网关实例的状态。 枚举值： ACTIVE PENDING_CREATE PENDING_UPDATE PENDING_DELETE INACTIVE
 
@@ -234,7 +234,7 @@ class NatGateway:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NatGateway.
+        r"""Sets the status of this NatGateway.
 
         公网NAT网关实例的状态。 枚举值： ACTIVE PENDING_CREATE PENDING_UPDATE PENDING_DELETE INACTIVE
 
@@ -245,7 +245,7 @@ class NatGateway:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NatGateway.
+        r"""Gets the admin_state_up of this NatGateway.
 
         公网NAT网关实例的名字，长度限制为64。 解冻/冻结状态。取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -256,7 +256,7 @@ class NatGateway:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NatGateway.
+        r"""Sets the admin_state_up of this NatGateway.
 
         公网NAT网关实例的名字，长度限制为64。 解冻/冻结状态。取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -267,7 +267,7 @@ class NatGateway:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NatGateway.
+        r"""Gets the created_at of this NatGateway.
 
         公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -278,7 +278,7 @@ class NatGateway:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NatGateway.
+        r"""Sets the created_at of this NatGateway.
 
         公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -289,7 +289,7 @@ class NatGateway:
 
     @property
     def router_id(self):
-        """Gets the router_id of this NatGateway.
+        r"""Gets the router_id of this NatGateway.
 
         VPC的id。
 
@@ -300,7 +300,7 @@ class NatGateway:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this NatGateway.
+        r"""Sets the router_id of this NatGateway.
 
         VPC的id。
 
@@ -311,7 +311,7 @@ class NatGateway:
 
     @property
     def internal_network_id(self):
-        """Gets the internal_network_id of this NatGateway.
+        r"""Gets the internal_network_id of this NatGateway.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -322,7 +322,7 @@ class NatGateway:
 
     @internal_network_id.setter
     def internal_network_id(self, internal_network_id):
-        """Sets the internal_network_id of this NatGateway.
+        r"""Sets the internal_network_id of this NatGateway.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -333,7 +333,7 @@ class NatGateway:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NatGateway.
+        r"""Gets the enterprise_project_id of this NatGateway.
 
         企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 
@@ -344,7 +344,7 @@ class NatGateway:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NatGateway.
+        r"""Sets the enterprise_project_id of this NatGateway.
 
         企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 

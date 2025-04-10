@@ -29,7 +29,7 @@ class TaskOutputObs:
     }
 
     def __init__(self, bucket=None, path=None, data_category=None):
-        """TaskOutputObs
+        r"""TaskOutputObs
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TaskOutputObs:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskOutputObs.
+        r"""Gets the bucket of this TaskOutputObs.
 
         OBS桶名
 
@@ -66,7 +66,7 @@ class TaskOutputObs:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskOutputObs.
+        r"""Sets the bucket of this TaskOutputObs.
 
         OBS桶名
 
@@ -77,7 +77,7 @@ class TaskOutputObs:
 
     @property
     def path(self):
-        """Gets the path of this TaskOutputObs.
+        r"""Gets the path of this TaskOutputObs.
 
         OBS的路径
 
@@ -88,7 +88,7 @@ class TaskOutputObs:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this TaskOutputObs.
+        r"""Sets the path of this TaskOutputObs.
 
         OBS的路径
 
@@ -99,7 +99,7 @@ class TaskOutputObs:
 
     @property
     def data_category(self):
-        """Gets the data_category of this TaskOutputObs.
+        r"""Gets the data_category of this TaskOutputObs.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
@@ -110,7 +110,7 @@ class TaskOutputObs:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this TaskOutputObs.
+        r"""Sets the data_category of this TaskOutputObs.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 

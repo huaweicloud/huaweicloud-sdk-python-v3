@@ -25,7 +25,7 @@ class DeleteKillOpRuleListRequestBody:
     }
 
     def __init__(self, ids=None):
-        """DeleteKillOpRuleListRequestBody
+        r"""DeleteKillOpRuleListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteKillOpRuleListRequestBody:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteKillOpRuleListRequestBody.
+        r"""Gets the ids of this DeleteKillOpRuleListRequestBody.
 
         killOp规则ID列表。
 
@@ -53,7 +53,7 @@ class DeleteKillOpRuleListRequestBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteKillOpRuleListRequestBody.
+        r"""Sets the ids of this DeleteKillOpRuleListRequestBody.
 
         killOp规则ID列表。
 

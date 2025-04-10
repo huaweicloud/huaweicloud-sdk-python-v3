@@ -29,7 +29,7 @@ class ShowStreamCountRequest:
     }
 
     def __init__(self, publish_domains=None, start_time=None, end_time=None):
-        """ShowStreamCountRequest
+        r"""ShowStreamCountRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowStreamCountRequest:
 
     @property
     def publish_domains(self):
-        """Gets the publish_domains of this ShowStreamCountRequest.
+        r"""Gets the publish_domains of this ShowStreamCountRequest.
 
         推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
@@ -67,7 +67,7 @@ class ShowStreamCountRequest:
 
     @publish_domains.setter
     def publish_domains(self, publish_domains):
-        """Sets the publish_domains of this ShowStreamCountRequest.
+        r"""Sets the publish_domains of this ShowStreamCountRequest.
 
         推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
@@ -78,7 +78,7 @@ class ShowStreamCountRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowStreamCountRequest.
+        r"""Gets the start_time of this ShowStreamCountRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
@@ -89,7 +89,7 @@ class ShowStreamCountRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowStreamCountRequest.
+        r"""Sets the start_time of this ShowStreamCountRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
@@ -100,7 +100,7 @@ class ShowStreamCountRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowStreamCountRequest.
+        r"""Gets the end_time of this ShowStreamCountRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天， 最大查询跨度31天，最大查询周期1年。 
 
@@ -111,7 +111,7 @@ class ShowStreamCountRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowStreamCountRequest.
+        r"""Sets the end_time of this ShowStreamCountRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天， 最大查询跨度31天，最大查询周期1年。 
 

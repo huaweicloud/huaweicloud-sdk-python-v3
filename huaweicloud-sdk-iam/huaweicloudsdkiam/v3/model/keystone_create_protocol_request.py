@@ -29,7 +29,7 @@ class KeystoneCreateProtocolRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, body=None):
-        """KeystoneCreateProtocolRequest
+        r"""KeystoneCreateProtocolRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class KeystoneCreateProtocolRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this KeystoneCreateProtocolRequest.
+        r"""Gets the idp_id of this KeystoneCreateProtocolRequest.
 
         身份提供商ID。
 
@@ -66,7 +66,7 @@ class KeystoneCreateProtocolRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this KeystoneCreateProtocolRequest.
+        r"""Sets the idp_id of this KeystoneCreateProtocolRequest.
 
         身份提供商ID。
 
@@ -77,7 +77,7 @@ class KeystoneCreateProtocolRequest:
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this KeystoneCreateProtocolRequest.
+        r"""Gets the protocol_id of this KeystoneCreateProtocolRequest.
 
         待注册的协议ID。
 
@@ -88,7 +88,7 @@ class KeystoneCreateProtocolRequest:
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this KeystoneCreateProtocolRequest.
+        r"""Sets the protocol_id of this KeystoneCreateProtocolRequest.
 
         待注册的协议ID。
 
@@ -99,7 +99,7 @@ class KeystoneCreateProtocolRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateProtocolRequest.
+        r"""Gets the body of this KeystoneCreateProtocolRequest.
 
         :return: The body of this KeystoneCreateProtocolRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequestBody`
@@ -108,7 +108,7 @@ class KeystoneCreateProtocolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateProtocolRequest.
+        r"""Sets the body of this KeystoneCreateProtocolRequest.
 
         :param body: The body of this KeystoneCreateProtocolRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequestBody`

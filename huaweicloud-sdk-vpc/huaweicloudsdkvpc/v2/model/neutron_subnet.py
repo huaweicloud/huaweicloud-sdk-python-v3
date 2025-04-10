@@ -57,7 +57,7 @@ class NeutronSubnet:
     }
 
     def __init__(self, allocation_pools=None, cidr=None, dns_nameservers=None, enable_dhcp=None, gateway_ip=None, host_routes=None, id=None, ip_version=None, ipv6_address_mode=None, ipv6_ra_mode=None, name=None, network_id=None, tenant_id=None, project_id=None, created_at=None, updated_at=None, subnetpool_id=None):
-        """NeutronSubnet
+        r"""NeutronSubnet
 
         The model defined in huaweicloud sdk
 
@@ -139,7 +139,7 @@ class NeutronSubnet:
 
     @property
     def allocation_pools(self):
-        """Gets the allocation_pools of this NeutronSubnet.
+        r"""Gets the allocation_pools of this NeutronSubnet.
 
         功能说明：可用的IP池，allocation_pool对象参见 allocation_pool对象 例如：[ { \"start\": \"10.0.0.2\", \"end\": \"10.0.0.251\"} ]每个子网的第1个和最后4个IP地址为系统保留地址。以192.168.1.0/24为例，192.168.1.0、 192.168.1.252、192.168.1.253、192.168.1.254和192.168.1.255这些地址是系统保留地址。系统预留地址默认不在allocation_pool范围内 约束：更新时allocation_pool范围不能包含网关和广播地址的所有IP。
 
@@ -150,7 +150,7 @@ class NeutronSubnet:
 
     @allocation_pools.setter
     def allocation_pools(self, allocation_pools):
-        """Sets the allocation_pools of this NeutronSubnet.
+        r"""Sets the allocation_pools of this NeutronSubnet.
 
         功能说明：可用的IP池，allocation_pool对象参见 allocation_pool对象 例如：[ { \"start\": \"10.0.0.2\", \"end\": \"10.0.0.251\"} ]每个子网的第1个和最后4个IP地址为系统保留地址。以192.168.1.0/24为例，192.168.1.0、 192.168.1.252、192.168.1.253、192.168.1.254和192.168.1.255这些地址是系统保留地址。系统预留地址默认不在allocation_pool范围内 约束：更新时allocation_pool范围不能包含网关和广播地址的所有IP。
 
@@ -161,7 +161,7 @@ class NeutronSubnet:
 
     @property
     def cidr(self):
-        """Gets the cidr of this NeutronSubnet.
+        r"""Gets the cidr of this NeutronSubnet.
 
         功能说明：子网网段 取值范围：CIDR格式，只支持10.0.0.0/8,172.16.0.0/12,192.168.0.0/16三个网段内的地址，掩码长度不能大于28 约束：当ip_version=6时，该字段不支持设置
 
@@ -172,7 +172,7 @@ class NeutronSubnet:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this NeutronSubnet.
+        r"""Sets the cidr of this NeutronSubnet.
 
         功能说明：子网网段 取值范围：CIDR格式，只支持10.0.0.0/8,172.16.0.0/12,192.168.0.0/16三个网段内的地址，掩码长度不能大于28 约束：当ip_version=6时，该字段不支持设置
 
@@ -183,7 +183,7 @@ class NeutronSubnet:
 
     @property
     def dns_nameservers(self):
-        """Gets the dns_nameservers of this NeutronSubnet.
+        r"""Gets the dns_nameservers of this NeutronSubnet.
 
         功能说明：子网关联的DNS名称服务器列表 取值范围：IP地址格式例如：\"dns_nameservers\": [\"8.xx.xx.8\",\"8.xx.xx.4\"]； 默认值：不填时为空，无法使用云内网DNS功能
 
@@ -194,7 +194,7 @@ class NeutronSubnet:
 
     @dns_nameservers.setter
     def dns_nameservers(self, dns_nameservers):
-        """Sets the dns_nameservers of this NeutronSubnet.
+        r"""Sets the dns_nameservers of this NeutronSubnet.
 
         功能说明：子网关联的DNS名称服务器列表 取值范围：IP地址格式例如：\"dns_nameservers\": [\"8.xx.xx.8\",\"8.xx.xx.4\"]； 默认值：不填时为空，无法使用云内网DNS功能
 
@@ -205,7 +205,7 @@ class NeutronSubnet:
 
     @property
     def enable_dhcp(self):
-        """Gets the enable_dhcp of this NeutronSubnet.
+        r"""Gets the enable_dhcp of this NeutronSubnet.
 
         功能说明：是否启动dhcp 取值范围：只支持true
 
@@ -216,7 +216,7 @@ class NeutronSubnet:
 
     @enable_dhcp.setter
     def enable_dhcp(self, enable_dhcp):
-        """Sets the enable_dhcp of this NeutronSubnet.
+        r"""Sets the enable_dhcp of this NeutronSubnet.
 
         功能说明：是否启动dhcp 取值范围：只支持true
 
@@ -227,7 +227,7 @@ class NeutronSubnet:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this NeutronSubnet.
+        r"""Gets the gateway_ip of this NeutronSubnet.
 
         功能说明：子网网关IP  取值范围：本子网网段内的可用IP  约束：不允许和allocation_pools地址块冲突；ip_version=6时该字段不支持设置 默认值：本子网网段内第一个可用IP
 
@@ -238,7 +238,7 @@ class NeutronSubnet:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this NeutronSubnet.
+        r"""Sets the gateway_ip of this NeutronSubnet.
 
         功能说明：子网网关IP  取值范围：本子网网段内的可用IP  约束：不允许和allocation_pools地址块冲突；ip_version=6时该字段不支持设置 默认值：本子网网段内第一个可用IP
 
@@ -249,7 +249,7 @@ class NeutronSubnet:
 
     @property
     def host_routes(self):
-        """Gets the host_routes of this NeutronSubnet.
+        r"""Gets the host_routes of this NeutronSubnet.
 
         虚拟机静态路由，参见“host_route对象”表
 
@@ -260,7 +260,7 @@ class NeutronSubnet:
 
     @host_routes.setter
     def host_routes(self, host_routes):
-        """Sets the host_routes of this NeutronSubnet.
+        r"""Sets the host_routes of this NeutronSubnet.
 
         虚拟机静态路由，参见“host_route对象”表
 
@@ -271,7 +271,7 @@ class NeutronSubnet:
 
     @property
     def id(self):
-        """Gets the id of this NeutronSubnet.
+        r"""Gets the id of this NeutronSubnet.
 
         子网ID
 
@@ -282,7 +282,7 @@ class NeutronSubnet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronSubnet.
+        r"""Sets the id of this NeutronSubnet.
 
         子网ID
 
@@ -293,7 +293,7 @@ class NeutronSubnet:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this NeutronSubnet.
+        r"""Gets the ip_version of this NeutronSubnet.
 
         功能说明：IP协议版本 取值范围：4或6(支持后)
 
@@ -304,7 +304,7 @@ class NeutronSubnet:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this NeutronSubnet.
+        r"""Sets the ip_version of this NeutronSubnet.
 
         功能说明：IP协议版本 取值范围：4或6(支持后)
 
@@ -315,7 +315,7 @@ class NeutronSubnet:
 
     @property
     def ipv6_address_mode(self):
-        """Gets the ipv6_address_mode of this NeutronSubnet.
+        r"""Gets the ipv6_address_mode of this NeutronSubnet.
 
         功能说明：IPv6寻址模式 取值范围：dhcpv6-stateful
 
@@ -326,7 +326,7 @@ class NeutronSubnet:
 
     @ipv6_address_mode.setter
     def ipv6_address_mode(self, ipv6_address_mode):
-        """Sets the ipv6_address_mode of this NeutronSubnet.
+        r"""Sets the ipv6_address_mode of this NeutronSubnet.
 
         功能说明：IPv6寻址模式 取值范围：dhcpv6-stateful
 
@@ -337,7 +337,7 @@ class NeutronSubnet:
 
     @property
     def ipv6_ra_mode(self):
-        """Gets the ipv6_ra_mode of this NeutronSubnet.
+        r"""Gets the ipv6_ra_mode of this NeutronSubnet.
 
         功能说明：IPv6路由广播模式 取值范围：dhcpv6-stateful
 
@@ -348,7 +348,7 @@ class NeutronSubnet:
 
     @ipv6_ra_mode.setter
     def ipv6_ra_mode(self, ipv6_ra_mode):
-        """Sets the ipv6_ra_mode of this NeutronSubnet.
+        r"""Sets the ipv6_ra_mode of this NeutronSubnet.
 
         功能说明：IPv6路由广播模式 取值范围：dhcpv6-stateful
 
@@ -359,7 +359,7 @@ class NeutronSubnet:
 
     @property
     def name(self):
-        """Gets the name of this NeutronSubnet.
+        r"""Gets the name of this NeutronSubnet.
 
         功能说明：子网的名称 取值范围：0-255个字符
 
@@ -370,7 +370,7 @@ class NeutronSubnet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronSubnet.
+        r"""Sets the name of this NeutronSubnet.
 
         功能说明：子网的名称 取值范围：0-255个字符
 
@@ -381,7 +381,7 @@ class NeutronSubnet:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronSubnet.
+        r"""Gets the network_id of this NeutronSubnet.
 
         所属网络的ID
 
@@ -392,7 +392,7 @@ class NeutronSubnet:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronSubnet.
+        r"""Sets the network_id of this NeutronSubnet.
 
         所属网络的ID
 
@@ -403,7 +403,7 @@ class NeutronSubnet:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronSubnet.
+        r"""Gets the tenant_id of this NeutronSubnet.
 
         项目ID
 
@@ -414,7 +414,7 @@ class NeutronSubnet:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronSubnet.
+        r"""Sets the tenant_id of this NeutronSubnet.
 
         项目ID
 
@@ -425,7 +425,7 @@ class NeutronSubnet:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronSubnet.
+        r"""Gets the project_id of this NeutronSubnet.
 
         项目ID
 
@@ -436,7 +436,7 @@ class NeutronSubnet:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronSubnet.
+        r"""Sets the project_id of this NeutronSubnet.
 
         项目ID
 
@@ -447,7 +447,7 @@ class NeutronSubnet:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NeutronSubnet.
+        r"""Gets the created_at of this NeutronSubnet.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -458,7 +458,7 @@ class NeutronSubnet:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NeutronSubnet.
+        r"""Sets the created_at of this NeutronSubnet.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -469,7 +469,7 @@ class NeutronSubnet:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NeutronSubnet.
+        r"""Gets the updated_at of this NeutronSubnet.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -480,7 +480,7 @@ class NeutronSubnet:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NeutronSubnet.
+        r"""Sets the updated_at of this NeutronSubnet.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -491,7 +491,7 @@ class NeutronSubnet:
 
     @property
     def subnetpool_id(self):
-        """Gets the subnetpool_id of this NeutronSubnet.
+        r"""Gets the subnetpool_id of this NeutronSubnet.
 
         子网池id 【使用说明】目前IPv4不支持，IPv6支持
 
@@ -502,7 +502,7 @@ class NeutronSubnet:
 
     @subnetpool_id.setter
     def subnetpool_id(self, subnetpool_id):
-        """Sets the subnetpool_id of this NeutronSubnet.
+        r"""Sets the subnetpool_id of this NeutronSubnet.
 
         子网池id 【使用说明】目前IPv4不支持，IPv6支持
 

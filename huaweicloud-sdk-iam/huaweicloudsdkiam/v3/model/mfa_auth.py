@@ -27,7 +27,7 @@ class MfaAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """MfaAuth
+        r"""MfaAuth
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MfaAuth:
 
     @property
     def identity(self):
-        """Gets the identity of this MfaAuth.
+        r"""Gets the identity of this MfaAuth.
 
         :return: The identity of this MfaAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaIdentity`
@@ -57,7 +57,7 @@ class MfaAuth:
 
     @identity.setter
     def identity(self, identity):
-        """Sets the identity of this MfaAuth.
+        r"""Sets the identity of this MfaAuth.
 
         :param identity: The identity of this MfaAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.MfaIdentity`
@@ -66,7 +66,7 @@ class MfaAuth:
 
     @property
     def scope(self):
-        """Gets the scope of this MfaAuth.
+        r"""Gets the scope of this MfaAuth.
 
         :return: The scope of this MfaAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScope`
@@ -75,7 +75,7 @@ class MfaAuth:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this MfaAuth.
+        r"""Sets the scope of this MfaAuth.
 
         :param scope: The scope of this MfaAuth.
         :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`

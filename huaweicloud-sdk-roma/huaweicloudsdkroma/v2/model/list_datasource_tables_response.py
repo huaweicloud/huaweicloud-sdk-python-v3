@@ -26,7 +26,7 @@ class ListDatasourceTablesResponse(SdkResponse):
     }
 
     def __init__(self, tables=None):
-        """ListDatasourceTablesResponse
+        r"""ListDatasourceTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDatasourceTablesResponse(SdkResponse):
 
     @property
     def tables(self):
-        """Gets the tables of this ListDatasourceTablesResponse.
+        r"""Gets the tables of this ListDatasourceTablesResponse.
 
         数据源中所有的表名称
 
@@ -55,7 +55,7 @@ class ListDatasourceTablesResponse(SdkResponse):
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ListDatasourceTablesResponse.
+        r"""Sets the tables of this ListDatasourceTablesResponse.
 
         数据源中所有的表名称
 

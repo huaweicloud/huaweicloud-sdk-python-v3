@@ -31,7 +31,7 @@ class ListVariablesRequest:
     }
 
     def __init__(self, group_id=None, page_no=None, page_size=None, project_id=None):
-        """ListVariablesRequest
+        r"""ListVariablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListVariablesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListVariablesRequest.
+        r"""Gets the group_id of this ListVariablesRequest.
 
         group_id
 
@@ -74,7 +74,7 @@ class ListVariablesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListVariablesRequest.
+        r"""Sets the group_id of this ListVariablesRequest.
 
         group_id
 
@@ -85,7 +85,7 @@ class ListVariablesRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListVariablesRequest.
+        r"""Gets the page_no of this ListVariablesRequest.
 
         当前页数
 
@@ -96,7 +96,7 @@ class ListVariablesRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListVariablesRequest.
+        r"""Sets the page_no of this ListVariablesRequest.
 
         当前页数
 
@@ -107,7 +107,7 @@ class ListVariablesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListVariablesRequest.
+        r"""Gets the page_size of this ListVariablesRequest.
 
         每页多少记录
 
@@ -118,7 +118,7 @@ class ListVariablesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListVariablesRequest.
+        r"""Sets the page_size of this ListVariablesRequest.
 
         每页多少记录
 
@@ -129,7 +129,7 @@ class ListVariablesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListVariablesRequest.
+        r"""Gets the project_id of this ListVariablesRequest.
 
         工程id
 
@@ -140,7 +140,7 @@ class ListVariablesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListVariablesRequest.
+        r"""Sets the project_id of this ListVariablesRequest.
 
         工程id
 

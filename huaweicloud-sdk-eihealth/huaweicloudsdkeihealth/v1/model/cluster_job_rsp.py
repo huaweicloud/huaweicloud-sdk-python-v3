@@ -31,7 +31,7 @@ class ClusterJobRsp:
     }
 
     def __init__(self, method=None, output_dir=None, status=None, failed_reasons=None):
-        """ClusterJobRsp
+        r"""ClusterJobRsp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ClusterJobRsp:
 
     @property
     def method(self):
-        """Gets the method of this ClusterJobRsp.
+        r"""Gets the method of this ClusterJobRsp.
 
         分子聚类方法
 
@@ -71,7 +71,7 @@ class ClusterJobRsp:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ClusterJobRsp.
+        r"""Sets the method of this ClusterJobRsp.
 
         分子聚类方法
 
@@ -82,7 +82,7 @@ class ClusterJobRsp:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this ClusterJobRsp.
+        r"""Gets the output_dir of this ClusterJobRsp.
 
         分子聚类输出结果
 
@@ -93,7 +93,7 @@ class ClusterJobRsp:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this ClusterJobRsp.
+        r"""Sets the output_dir of this ClusterJobRsp.
 
         分子聚类输出结果
 
@@ -104,7 +104,7 @@ class ClusterJobRsp:
 
     @property
     def status(self):
-        """Gets the status of this ClusterJobRsp.
+        r"""Gets the status of this ClusterJobRsp.
 
         作业结果信息
 
@@ -115,7 +115,7 @@ class ClusterJobRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterJobRsp.
+        r"""Sets the status of this ClusterJobRsp.
 
         作业结果信息
 
@@ -126,7 +126,7 @@ class ClusterJobRsp:
 
     @property
     def failed_reasons(self):
-        """Gets the failed_reasons of this ClusterJobRsp.
+        r"""Gets the failed_reasons of this ClusterJobRsp.
 
         部分失败原因和数量
 
@@ -137,7 +137,7 @@ class ClusterJobRsp:
 
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this ClusterJobRsp.
+        r"""Sets the failed_reasons of this ClusterJobRsp.
 
         部分失败原因和数量
 

@@ -48,7 +48,7 @@ class AnalyzerSummary:
     }
 
     def __init__(self, configuration=None, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, name=None, organization_id=None, status=None, status_reason=None, tags=None, type=None, urn=None):
-        """AnalyzerSummary
+        r"""AnalyzerSummary
 
         The model defined in huaweicloud sdk
 
@@ -115,7 +115,7 @@ class AnalyzerSummary:
 
     @property
     def configuration(self):
-        """Gets the configuration of this AnalyzerSummary.
+        r"""Gets the configuration of this AnalyzerSummary.
 
         :return: The configuration of this AnalyzerSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
@@ -124,7 +124,7 @@ class AnalyzerSummary:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this AnalyzerSummary.
+        r"""Sets the configuration of this AnalyzerSummary.
 
         :param configuration: The configuration of this AnalyzerSummary.
         :type configuration: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
@@ -133,7 +133,7 @@ class AnalyzerSummary:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AnalyzerSummary.
+        r"""Gets the created_at of this AnalyzerSummary.
 
         分析器创建的时间。
 
@@ -144,7 +144,7 @@ class AnalyzerSummary:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AnalyzerSummary.
+        r"""Sets the created_at of this AnalyzerSummary.
 
         分析器创建的时间。
 
@@ -155,7 +155,7 @@ class AnalyzerSummary:
 
     @property
     def id(self):
-        """Gets the id of this AnalyzerSummary.
+        r"""Gets the id of this AnalyzerSummary.
 
         分析器的唯一标识符。
 
@@ -166,7 +166,7 @@ class AnalyzerSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AnalyzerSummary.
+        r"""Sets the id of this AnalyzerSummary.
 
         分析器的唯一标识符。
 
@@ -177,7 +177,7 @@ class AnalyzerSummary:
 
     @property
     def last_analyzed_resource(self):
-        """Gets the last_analyzed_resource of this AnalyzerSummary.
+        r"""Gets the last_analyzed_resource of this AnalyzerSummary.
 
         最近分析的资源的唯一资源标识符。
 
@@ -188,7 +188,7 @@ class AnalyzerSummary:
 
     @last_analyzed_resource.setter
     def last_analyzed_resource(self, last_analyzed_resource):
-        """Sets the last_analyzed_resource of this AnalyzerSummary.
+        r"""Sets the last_analyzed_resource of this AnalyzerSummary.
 
         最近分析的资源的唯一资源标识符。
 
@@ -199,7 +199,7 @@ class AnalyzerSummary:
 
     @property
     def last_resource_analyzed_at(self):
-        """Gets the last_resource_analyzed_at of this AnalyzerSummary.
+        r"""Gets the last_resource_analyzed_at of this AnalyzerSummary.
 
         最近一次分析资源的时间。
 
@@ -210,7 +210,7 @@ class AnalyzerSummary:
 
     @last_resource_analyzed_at.setter
     def last_resource_analyzed_at(self, last_resource_analyzed_at):
-        """Sets the last_resource_analyzed_at of this AnalyzerSummary.
+        r"""Sets the last_resource_analyzed_at of this AnalyzerSummary.
 
         最近一次分析资源的时间。
 
@@ -221,7 +221,7 @@ class AnalyzerSummary:
 
     @property
     def name(self):
-        """Gets the name of this AnalyzerSummary.
+        r"""Gets the name of this AnalyzerSummary.
 
         分析器的名称。
 
@@ -232,7 +232,7 @@ class AnalyzerSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AnalyzerSummary.
+        r"""Sets the name of this AnalyzerSummary.
 
         分析器的名称。
 
@@ -243,7 +243,7 @@ class AnalyzerSummary:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this AnalyzerSummary.
+        r"""Gets the organization_id of this AnalyzerSummary.
 
         组织ID。
 
@@ -254,7 +254,7 @@ class AnalyzerSummary:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this AnalyzerSummary.
+        r"""Sets the organization_id of this AnalyzerSummary.
 
         组织ID。
 
@@ -265,7 +265,7 @@ class AnalyzerSummary:
 
     @property
     def status(self):
-        """Gets the status of this AnalyzerSummary.
+        r"""Gets the status of this AnalyzerSummary.
 
         分析器的状态。
 
@@ -276,7 +276,7 @@ class AnalyzerSummary:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AnalyzerSummary.
+        r"""Sets the status of this AnalyzerSummary.
 
         分析器的状态。
 
@@ -287,7 +287,7 @@ class AnalyzerSummary:
 
     @property
     def status_reason(self):
-        """Gets the status_reason of this AnalyzerSummary.
+        r"""Gets the status_reason of this AnalyzerSummary.
 
         :return: The status_reason of this AnalyzerSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.StatusReason`
@@ -296,7 +296,7 @@ class AnalyzerSummary:
 
     @status_reason.setter
     def status_reason(self, status_reason):
-        """Sets the status_reason of this AnalyzerSummary.
+        r"""Sets the status_reason of this AnalyzerSummary.
 
         :param status_reason: The status_reason of this AnalyzerSummary.
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.StatusReason`
@@ -305,7 +305,7 @@ class AnalyzerSummary:
 
     @property
     def tags(self):
-        """Gets the tags of this AnalyzerSummary.
+        r"""Gets the tags of this AnalyzerSummary.
 
         自定义标签列表。
 
@@ -316,7 +316,7 @@ class AnalyzerSummary:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AnalyzerSummary.
+        r"""Sets the tags of this AnalyzerSummary.
 
         自定义标签列表。
 
@@ -327,7 +327,7 @@ class AnalyzerSummary:
 
     @property
     def type(self):
-        """Gets the type of this AnalyzerSummary.
+        r"""Gets the type of this AnalyzerSummary.
 
         :return: The type of this AnalyzerSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
@@ -336,7 +336,7 @@ class AnalyzerSummary:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AnalyzerSummary.
+        r"""Sets the type of this AnalyzerSummary.
 
         :param type: The type of this AnalyzerSummary.
         :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
@@ -345,7 +345,7 @@ class AnalyzerSummary:
 
     @property
     def urn(self):
-        """Gets the urn of this AnalyzerSummary.
+        r"""Gets the urn of this AnalyzerSummary.
 
         分析器的唯一资源标识符。
 
@@ -356,7 +356,7 @@ class AnalyzerSummary:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this AnalyzerSummary.
+        r"""Sets the urn of this AnalyzerSummary.
 
         分析器的唯一资源标识符。
 

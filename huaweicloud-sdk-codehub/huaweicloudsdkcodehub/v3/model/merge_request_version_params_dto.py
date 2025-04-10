@@ -29,7 +29,7 @@ class MergeRequestVersionParamsDto:
     }
 
     def __init__(self, diff_id=None, start_sha=None, commit_id=None):
-        """MergeRequestVersionParamsDto
+        r"""MergeRequestVersionParamsDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MergeRequestVersionParamsDto:
 
     @property
     def diff_id(self):
-        """Gets the diff_id of this MergeRequestVersionParamsDto.
+        r"""Gets the diff_id of this MergeRequestVersionParamsDto.
 
         MR最新变更id
 
@@ -68,7 +68,7 @@ class MergeRequestVersionParamsDto:
 
     @diff_id.setter
     def diff_id(self, diff_id):
-        """Sets the diff_id of this MergeRequestVersionParamsDto.
+        r"""Sets the diff_id of this MergeRequestVersionParamsDto.
 
         MR最新变更id
 
@@ -79,7 +79,7 @@ class MergeRequestVersionParamsDto:
 
     @property
     def start_sha(self):
-        """Gets the start_sha of this MergeRequestVersionParamsDto.
+        r"""Gets the start_sha of this MergeRequestVersionParamsDto.
 
         目标分支最新提交
 
@@ -90,7 +90,7 @@ class MergeRequestVersionParamsDto:
 
     @start_sha.setter
     def start_sha(self, start_sha):
-        """Sets the start_sha of this MergeRequestVersionParamsDto.
+        r"""Sets the start_sha of this MergeRequestVersionParamsDto.
 
         目标分支最新提交
 
@@ -101,7 +101,7 @@ class MergeRequestVersionParamsDto:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this MergeRequestVersionParamsDto.
+        r"""Gets the commit_id of this MergeRequestVersionParamsDto.
 
         源分支最新提交
 
@@ -112,7 +112,7 @@ class MergeRequestVersionParamsDto:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this MergeRequestVersionParamsDto.
+        r"""Sets the commit_id of this MergeRequestVersionParamsDto.
 
         源分支最新提交
 

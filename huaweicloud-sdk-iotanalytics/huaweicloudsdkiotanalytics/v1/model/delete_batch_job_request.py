@@ -25,7 +25,7 @@ class DeleteBatchJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """DeleteBatchJobRequest
+        r"""DeleteBatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteBatchJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteBatchJobRequest.
+        r"""Gets the job_id of this DeleteBatchJobRequest.
 
         数据开发任务ID。
 
@@ -53,7 +53,7 @@ class DeleteBatchJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteBatchJobRequest.
+        r"""Sets the job_id of this DeleteBatchJobRequest.
 
         数据开发任务ID。
 

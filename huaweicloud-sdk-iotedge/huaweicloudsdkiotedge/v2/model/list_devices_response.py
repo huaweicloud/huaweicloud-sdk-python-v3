@@ -30,7 +30,7 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, devices=None, count=None, page_info=None):
-        """ListDevicesResponse
+        r"""ListDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this ListDevicesResponse.
+        r"""Gets the devices of this ListDevicesResponse.
 
         查询设备列表响应结构体
 
@@ -69,7 +69,7 @@ class ListDevicesResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this ListDevicesResponse.
+        r"""Sets the devices of this ListDevicesResponse.
 
         查询设备列表响应结构体
 
@@ -80,7 +80,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDevicesResponse.
+        r"""Gets the count of this ListDevicesResponse.
 
         满足查询条件的记录总数。
 
@@ -91,7 +91,7 @@ class ListDevicesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDevicesResponse.
+        r"""Sets the count of this ListDevicesResponse.
 
         满足查询条件的记录总数。
 
@@ -102,7 +102,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListDevicesResponse.
+        r"""Gets the page_info of this ListDevicesResponse.
 
         :return: The page_info of this ListDevicesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -111,7 +111,7 @@ class ListDevicesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListDevicesResponse.
+        r"""Sets the page_info of this ListDevicesResponse.
 
         :param page_info: The page_info of this ListDevicesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`

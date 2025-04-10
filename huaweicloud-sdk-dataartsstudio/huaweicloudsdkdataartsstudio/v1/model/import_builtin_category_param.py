@@ -25,7 +25,7 @@ class ImportBuiltinCategoryParam:
     }
 
     def __init__(self, rule_secrecy_level_list=None):
-        """ImportBuiltinCategoryParam
+        r"""ImportBuiltinCategoryParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportBuiltinCategoryParam:
 
     @property
     def rule_secrecy_level_list(self):
-        """Gets the rule_secrecy_level_list of this ImportBuiltinCategoryParam.
+        r"""Gets the rule_secrecy_level_list of this ImportBuiltinCategoryParam.
 
         规则对应密级的列表，需要将所有未导入的内置规则导入。
 
@@ -54,7 +54,7 @@ class ImportBuiltinCategoryParam:
 
     @rule_secrecy_level_list.setter
     def rule_secrecy_level_list(self, rule_secrecy_level_list):
-        """Sets the rule_secrecy_level_list of this ImportBuiltinCategoryParam.
+        r"""Sets the rule_secrecy_level_list of this ImportBuiltinCategoryParam.
 
         规则对应密级的列表，需要将所有未导入的内置规则导入。
 

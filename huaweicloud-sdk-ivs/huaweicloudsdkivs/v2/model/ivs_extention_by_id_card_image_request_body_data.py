@@ -25,7 +25,7 @@ class IvsExtentionByIdCardImageRequestBodyData:
     }
 
     def __init__(self, req_data=None):
-        """IvsExtentionByIdCardImageRequestBodyData
+        r"""IvsExtentionByIdCardImageRequestBodyData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class IvsExtentionByIdCardImageRequestBodyData:
 
     @property
     def req_data(self):
-        """Gets the req_data of this IvsExtentionByIdCardImageRequestBodyData.
+        r"""Gets the req_data of this IvsExtentionByIdCardImageRequestBodyData.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
@@ -54,7 +54,7 @@ class IvsExtentionByIdCardImageRequestBodyData:
 
     @req_data.setter
     def req_data(self, req_data):
-        """Sets the req_data of this IvsExtentionByIdCardImageRequestBodyData.
+        r"""Sets the req_data of this IvsExtentionByIdCardImageRequestBodyData.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 

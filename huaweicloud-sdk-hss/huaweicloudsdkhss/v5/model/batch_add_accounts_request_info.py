@@ -25,7 +25,7 @@ class BatchAddAccountsRequestInfo:
     }
 
     def __init__(self, data_list=None):
-        """BatchAddAccountsRequestInfo
+        r"""BatchAddAccountsRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAddAccountsRequestInfo:
 
     @property
     def data_list(self):
-        """Gets the data_list of this BatchAddAccountsRequestInfo.
+        r"""Gets the data_list of this BatchAddAccountsRequestInfo.
 
         账号列表表详情
 
@@ -54,7 +54,7 @@ class BatchAddAccountsRequestInfo:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this BatchAddAccountsRequestInfo.
+        r"""Sets the data_list of this BatchAddAccountsRequestInfo.
 
         账号列表表详情
 

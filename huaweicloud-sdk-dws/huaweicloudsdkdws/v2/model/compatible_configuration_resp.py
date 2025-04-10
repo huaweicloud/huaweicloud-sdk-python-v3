@@ -29,7 +29,7 @@ class CompatibleConfigurationResp:
     }
 
     def __init__(self, id=None, name=None, links=None):
-        """CompatibleConfigurationResp
+        r"""CompatibleConfigurationResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CompatibleConfigurationResp:
 
     @property
     def id(self):
-        """Gets the id of this CompatibleConfigurationResp.
+        r"""Gets the id of this CompatibleConfigurationResp.
 
         ID
 
@@ -68,7 +68,7 @@ class CompatibleConfigurationResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CompatibleConfigurationResp.
+        r"""Sets the id of this CompatibleConfigurationResp.
 
         ID
 
@@ -79,7 +79,7 @@ class CompatibleConfigurationResp:
 
     @property
     def name(self):
-        """Gets the name of this CompatibleConfigurationResp.
+        r"""Gets the name of this CompatibleConfigurationResp.
 
         名称
 
@@ -90,7 +90,7 @@ class CompatibleConfigurationResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CompatibleConfigurationResp.
+        r"""Sets the name of this CompatibleConfigurationResp.
 
         名称
 
@@ -101,7 +101,7 @@ class CompatibleConfigurationResp:
 
     @property
     def links(self):
-        """Gets the links of this CompatibleConfigurationResp.
+        r"""Gets the links of this CompatibleConfigurationResp.
 
         连接
 
@@ -112,7 +112,7 @@ class CompatibleConfigurationResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CompatibleConfigurationResp.
+        r"""Sets the links of this CompatibleConfigurationResp.
 
         连接
 

@@ -27,7 +27,7 @@ class DeleteClientCaRequest:
     }
 
     def __init__(self, vpn_server_id=None, client_ca_certificate_id=None):
-        """DeleteClientCaRequest
+        r"""DeleteClientCaRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteClientCaRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this DeleteClientCaRequest.
+        r"""Gets the vpn_server_id of this DeleteClientCaRequest.
 
         VPN服务端 ID
 
@@ -59,7 +59,7 @@ class DeleteClientCaRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this DeleteClientCaRequest.
+        r"""Sets the vpn_server_id of this DeleteClientCaRequest.
 
         VPN服务端 ID
 
@@ -70,7 +70,7 @@ class DeleteClientCaRequest:
 
     @property
     def client_ca_certificate_id(self):
-        """Gets the client_ca_certificate_id of this DeleteClientCaRequest.
+        r"""Gets the client_ca_certificate_id of this DeleteClientCaRequest.
 
         客户端 CA 证书 ID
 
@@ -81,7 +81,7 @@ class DeleteClientCaRequest:
 
     @client_ca_certificate_id.setter
     def client_ca_certificate_id(self, client_ca_certificate_id):
-        """Sets the client_ca_certificate_id of this DeleteClientCaRequest.
+        r"""Sets the client_ca_certificate_id of this DeleteClientCaRequest.
 
         客户端 CA 证书 ID
 

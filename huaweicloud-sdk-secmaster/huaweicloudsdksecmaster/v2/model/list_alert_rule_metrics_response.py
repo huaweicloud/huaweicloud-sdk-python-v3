@@ -30,7 +30,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
     }
 
     def __init__(self, category=None, metric=None, x_request_id=None):
-        """ListAlertRuleMetricsResponse
+        r"""ListAlertRuleMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ListAlertRuleMetricsResponse.
+        r"""Gets the category of this ListAlertRuleMetricsResponse.
 
         指标类型，分组数量。Metric category. GROUP_COUNT.
 
@@ -69,7 +69,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListAlertRuleMetricsResponse.
+        r"""Sets the category of this ListAlertRuleMetricsResponse.
 
         指标类型，分组数量。Metric category. GROUP_COUNT.
 
@@ -80,7 +80,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @property
     def metric(self):
-        """Gets the metric of this ListAlertRuleMetricsResponse.
+        r"""Gets the metric of this ListAlertRuleMetricsResponse.
 
         指标值。Metric value.
 
@@ -91,7 +91,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListAlertRuleMetricsResponse.
+        r"""Sets the metric of this ListAlertRuleMetricsResponse.
 
         指标值。Metric value.
 
@@ -102,7 +102,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAlertRuleMetricsResponse.
+        r"""Gets the x_request_id of this ListAlertRuleMetricsResponse.
 
         :return: The x_request_id of this ListAlertRuleMetricsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAlertRuleMetricsResponse.
+        r"""Sets the x_request_id of this ListAlertRuleMetricsResponse.
 
         :param x_request_id: The x_request_id of this ListAlertRuleMetricsResponse.
         :type x_request_id: str

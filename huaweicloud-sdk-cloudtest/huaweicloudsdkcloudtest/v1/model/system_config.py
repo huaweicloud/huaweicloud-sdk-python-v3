@@ -41,7 +41,7 @@ class SystemConfig:
     }
 
     def __init__(self, id=None, key=None, value=None, remark=None, region_id=None, project_id=None, update_time=None, update_name=None, update_num=None):
-        """SystemConfig
+        r"""SystemConfig
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SystemConfig:
 
     @property
     def id(self):
-        """Gets the id of this SystemConfig.
+        r"""Gets the id of this SystemConfig.
 
         配置项主键
 
@@ -110,7 +110,7 @@ class SystemConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SystemConfig.
+        r"""Sets the id of this SystemConfig.
 
         配置项主键
 
@@ -121,7 +121,7 @@ class SystemConfig:
 
     @property
     def key(self):
-        """Gets the key of this SystemConfig.
+        r"""Gets the key of this SystemConfig.
 
         系统配置名称
 
@@ -132,7 +132,7 @@ class SystemConfig:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SystemConfig.
+        r"""Sets the key of this SystemConfig.
 
         系统配置名称
 
@@ -143,7 +143,7 @@ class SystemConfig:
 
     @property
     def value(self):
-        """Gets the value of this SystemConfig.
+        r"""Gets the value of this SystemConfig.
 
         系统配置状态
 
@@ -154,7 +154,7 @@ class SystemConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SystemConfig.
+        r"""Sets the value of this SystemConfig.
 
         系统配置状态
 
@@ -165,7 +165,7 @@ class SystemConfig:
 
     @property
     def remark(self):
-        """Gets the remark of this SystemConfig.
+        r"""Gets the remark of this SystemConfig.
 
         描述
 
@@ -176,7 +176,7 @@ class SystemConfig:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this SystemConfig.
+        r"""Sets the remark of this SystemConfig.
 
         描述
 
@@ -187,7 +187,7 @@ class SystemConfig:
 
     @property
     def region_id(self):
-        """Gets the region_id of this SystemConfig.
+        r"""Gets the region_id of this SystemConfig.
 
         region_id
 
@@ -198,7 +198,7 @@ class SystemConfig:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this SystemConfig.
+        r"""Sets the region_id of this SystemConfig.
 
         region_id
 
@@ -209,7 +209,7 @@ class SystemConfig:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SystemConfig.
+        r"""Gets the project_id of this SystemConfig.
 
         项目ID
 
@@ -220,7 +220,7 @@ class SystemConfig:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SystemConfig.
+        r"""Sets the project_id of this SystemConfig.
 
         项目ID
 
@@ -231,7 +231,7 @@ class SystemConfig:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SystemConfig.
+        r"""Gets the update_time of this SystemConfig.
 
         更新时间
 
@@ -242,7 +242,7 @@ class SystemConfig:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SystemConfig.
+        r"""Sets the update_time of this SystemConfig.
 
         更新时间
 
@@ -253,7 +253,7 @@ class SystemConfig:
 
     @property
     def update_name(self):
-        """Gets the update_name of this SystemConfig.
+        r"""Gets the update_name of this SystemConfig.
 
         更新人名称
 
@@ -264,7 +264,7 @@ class SystemConfig:
 
     @update_name.setter
     def update_name(self, update_name):
-        """Sets the update_name of this SystemConfig.
+        r"""Sets the update_name of this SystemConfig.
 
         更新人名称
 
@@ -275,7 +275,7 @@ class SystemConfig:
 
     @property
     def update_num(self):
-        """Gets the update_num of this SystemConfig.
+        r"""Gets the update_num of this SystemConfig.
 
         更新人编号
 
@@ -286,7 +286,7 @@ class SystemConfig:
 
     @update_num.setter
     def update_num(self, update_num):
-        """Sets the update_num of this SystemConfig.
+        r"""Sets the update_num of this SystemConfig.
 
         更新人编号
 

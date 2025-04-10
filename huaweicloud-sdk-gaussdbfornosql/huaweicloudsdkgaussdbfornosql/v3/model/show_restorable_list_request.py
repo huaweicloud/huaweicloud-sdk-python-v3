@@ -29,7 +29,7 @@ class ShowRestorableListRequest:
     }
 
     def __init__(self, backup_id=None, offset=None, limit=None):
-        """ShowRestorableListRequest
+        r"""ShowRestorableListRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowRestorableListRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowRestorableListRequest.
+        r"""Gets the backup_id of this ShowRestorableListRequest.
 
         备份文件ID
 
@@ -67,7 +67,7 @@ class ShowRestorableListRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowRestorableListRequest.
+        r"""Sets the backup_id of this ShowRestorableListRequest.
 
         备份文件ID
 
@@ -78,7 +78,7 @@ class ShowRestorableListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRestorableListRequest.
+        r"""Gets the offset of this ShowRestorableListRequest.
 
         索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -89,7 +89,7 @@ class ShowRestorableListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRestorableListRequest.
+        r"""Sets the offset of this ShowRestorableListRequest.
 
         索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -100,7 +100,7 @@ class ShowRestorableListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRestorableListRequest.
+        r"""Gets the limit of this ShowRestorableListRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
@@ -111,7 +111,7 @@ class ShowRestorableListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRestorableListRequest.
+        r"""Sets the limit of this ShowRestorableListRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 

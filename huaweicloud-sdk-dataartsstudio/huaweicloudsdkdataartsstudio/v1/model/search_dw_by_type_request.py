@@ -35,7 +35,7 @@ class SearchDwByTypeRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, force_refresh=None, dw_type=None, limit=None, offset=None):
-        """SearchDwByTypeRequest
+        r"""SearchDwByTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class SearchDwByTypeRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchDwByTypeRequest.
+        r"""Gets the workspace of this SearchDwByTypeRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -87,7 +87,7 @@ class SearchDwByTypeRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchDwByTypeRequest.
+        r"""Sets the workspace of this SearchDwByTypeRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -98,7 +98,7 @@ class SearchDwByTypeRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this SearchDwByTypeRequest.
+        r"""Gets the x_project_id of this SearchDwByTypeRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -109,7 +109,7 @@ class SearchDwByTypeRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this SearchDwByTypeRequest.
+        r"""Sets the x_project_id of this SearchDwByTypeRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -120,7 +120,7 @@ class SearchDwByTypeRequest:
 
     @property
     def force_refresh(self):
-        """Gets the force_refresh of this SearchDwByTypeRequest.
+        r"""Gets the force_refresh of this SearchDwByTypeRequest.
 
         是否查询最新的。
 
@@ -131,7 +131,7 @@ class SearchDwByTypeRequest:
 
     @force_refresh.setter
     def force_refresh(self, force_refresh):
-        """Sets the force_refresh of this SearchDwByTypeRequest.
+        r"""Sets the force_refresh of this SearchDwByTypeRequest.
 
         是否查询最新的。
 
@@ -142,7 +142,7 @@ class SearchDwByTypeRequest:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this SearchDwByTypeRequest.
+        r"""Gets the dw_type of this SearchDwByTypeRequest.
 
         数据连接类型。
 
@@ -153,7 +153,7 @@ class SearchDwByTypeRequest:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this SearchDwByTypeRequest.
+        r"""Sets the dw_type of this SearchDwByTypeRequest.
 
         数据连接类型。
 
@@ -164,7 +164,7 @@ class SearchDwByTypeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchDwByTypeRequest.
+        r"""Gets the limit of this SearchDwByTypeRequest.
 
         limit
 
@@ -175,7 +175,7 @@ class SearchDwByTypeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchDwByTypeRequest.
+        r"""Sets the limit of this SearchDwByTypeRequest.
 
         limit
 
@@ -186,7 +186,7 @@ class SearchDwByTypeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchDwByTypeRequest.
+        r"""Gets the offset of this SearchDwByTypeRequest.
 
         limit
 
@@ -197,7 +197,7 @@ class SearchDwByTypeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchDwByTypeRequest.
+        r"""Sets the offset of this SearchDwByTypeRequest.
 
         limit
 

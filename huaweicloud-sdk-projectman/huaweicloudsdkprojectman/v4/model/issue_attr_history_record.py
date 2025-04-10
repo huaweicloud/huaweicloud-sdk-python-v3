@@ -43,7 +43,7 @@ class IssueAttrHistoryRecord:
     }
 
     def __init__(self, field_key=None, field_name=None, id=None, issue_id=None, new_value=None, old_value=None, operated_time=None, operation=None, operator=None, _property=None):
-        """IssueAttrHistoryRecord
+        r"""IssueAttrHistoryRecord
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def field_key(self):
-        """Gets the field_key of this IssueAttrHistoryRecord.
+        r"""Gets the field_key of this IssueAttrHistoryRecord.
 
         操作的字段
 
@@ -117,7 +117,7 @@ class IssueAttrHistoryRecord:
 
     @field_key.setter
     def field_key(self, field_key):
-        """Sets the field_key of this IssueAttrHistoryRecord.
+        r"""Sets the field_key of this IssueAttrHistoryRecord.
 
         操作的字段
 
@@ -128,7 +128,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def field_name(self):
-        """Gets the field_name of this IssueAttrHistoryRecord.
+        r"""Gets the field_name of this IssueAttrHistoryRecord.
 
         操作字段的含义
 
@@ -139,7 +139,7 @@ class IssueAttrHistoryRecord:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this IssueAttrHistoryRecord.
+        r"""Sets the field_name of this IssueAttrHistoryRecord.
 
         操作字段的含义
 
@@ -150,7 +150,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def id(self):
-        """Gets the id of this IssueAttrHistoryRecord.
+        r"""Gets the id of this IssueAttrHistoryRecord.
 
         历史记录id
 
@@ -161,7 +161,7 @@ class IssueAttrHistoryRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueAttrHistoryRecord.
+        r"""Sets the id of this IssueAttrHistoryRecord.
 
         历史记录id
 
@@ -172,7 +172,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this IssueAttrHistoryRecord.
+        r"""Gets the issue_id of this IssueAttrHistoryRecord.
 
         工作项id
 
@@ -183,7 +183,7 @@ class IssueAttrHistoryRecord:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this IssueAttrHistoryRecord.
+        r"""Sets the issue_id of this IssueAttrHistoryRecord.
 
         工作项id
 
@@ -194,7 +194,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def new_value(self):
-        """Gets the new_value of this IssueAttrHistoryRecord.
+        r"""Gets the new_value of this IssueAttrHistoryRecord.
 
         变更后的值,json字符串
 
@@ -205,7 +205,7 @@ class IssueAttrHistoryRecord:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this IssueAttrHistoryRecord.
+        r"""Sets the new_value of this IssueAttrHistoryRecord.
 
         变更后的值,json字符串
 
@@ -216,7 +216,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def old_value(self):
-        """Gets the old_value of this IssueAttrHistoryRecord.
+        r"""Gets the old_value of this IssueAttrHistoryRecord.
 
         变更前的值,json字符串
 
@@ -227,7 +227,7 @@ class IssueAttrHistoryRecord:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this IssueAttrHistoryRecord.
+        r"""Sets the old_value of this IssueAttrHistoryRecord.
 
         变更前的值,json字符串
 
@@ -238,7 +238,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def operated_time(self):
-        """Gets the operated_time of this IssueAttrHistoryRecord.
+        r"""Gets the operated_time of this IssueAttrHistoryRecord.
 
         变更的时间
 
@@ -249,7 +249,7 @@ class IssueAttrHistoryRecord:
 
     @operated_time.setter
     def operated_time(self, operated_time):
-        """Sets the operated_time of this IssueAttrHistoryRecord.
+        r"""Sets the operated_time of this IssueAttrHistoryRecord.
 
         变更的时间
 
@@ -260,7 +260,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def operation(self):
-        """Gets the operation of this IssueAttrHistoryRecord.
+        r"""Gets the operation of this IssueAttrHistoryRecord.
 
         操作类型,新建，修改，删除
 
@@ -271,7 +271,7 @@ class IssueAttrHistoryRecord:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this IssueAttrHistoryRecord.
+        r"""Sets the operation of this IssueAttrHistoryRecord.
 
         操作类型,新建，修改，删除
 
@@ -282,7 +282,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def operator(self):
-        """Gets the operator of this IssueAttrHistoryRecord.
+        r"""Gets the operator of this IssueAttrHistoryRecord.
 
         :return: The operator of this IssueAttrHistoryRecord.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -291,7 +291,7 @@ class IssueAttrHistoryRecord:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this IssueAttrHistoryRecord.
+        r"""Sets the operator of this IssueAttrHistoryRecord.
 
         :param operator: The operator of this IssueAttrHistoryRecord.
         :type operator: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -300,7 +300,7 @@ class IssueAttrHistoryRecord:
 
     @property
     def _property(self):
-        """Gets the _property of this IssueAttrHistoryRecord.
+        r"""Gets the _property of this IssueAttrHistoryRecord.
 
         变更的属性
 
@@ -311,7 +311,7 @@ class IssueAttrHistoryRecord:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this IssueAttrHistoryRecord.
+        r"""Sets the _property of this IssueAttrHistoryRecord.
 
         变更的属性
 

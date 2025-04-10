@@ -25,7 +25,7 @@ class CheckMaliciousExtensionEvaluationRequest:
     }
 
     def __init__(self, body=None):
-        """CheckMaliciousExtensionEvaluationRequest
+        r"""CheckMaliciousExtensionEvaluationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckMaliciousExtensionEvaluationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckMaliciousExtensionEvaluationRequest.
+        r"""Gets the body of this CheckMaliciousExtensionEvaluationRequest.
 
         :return: The body of this CheckMaliciousExtensionEvaluationRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.EvaluationAccusation`
@@ -52,7 +52,7 @@ class CheckMaliciousExtensionEvaluationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckMaliciousExtensionEvaluationRequest.
+        r"""Sets the body of this CheckMaliciousExtensionEvaluationRequest.
 
         :param body: The body of this CheckMaliciousExtensionEvaluationRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.EvaluationAccusation`

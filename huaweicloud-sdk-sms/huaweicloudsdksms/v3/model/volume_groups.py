@@ -33,7 +33,7 @@ class VolumeGroups:
     }
 
     def __init__(self, components=None, free_size=None, logical_volumes=None, name=None, size=None):
-        """VolumeGroups
+        r"""VolumeGroups
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VolumeGroups:
 
     @property
     def components(self):
-        """Gets the components of this VolumeGroups.
+        r"""Gets the components of this VolumeGroups.
 
         Pv信息
 
@@ -82,7 +82,7 @@ class VolumeGroups:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this VolumeGroups.
+        r"""Sets the components of this VolumeGroups.
 
         Pv信息
 
@@ -93,7 +93,7 @@ class VolumeGroups:
 
     @property
     def free_size(self):
-        """Gets the free_size of this VolumeGroups.
+        r"""Gets the free_size of this VolumeGroups.
 
         剩余空间
 
@@ -104,7 +104,7 @@ class VolumeGroups:
 
     @free_size.setter
     def free_size(self, free_size):
-        """Sets the free_size of this VolumeGroups.
+        r"""Sets the free_size of this VolumeGroups.
 
         剩余空间
 
@@ -115,7 +115,7 @@ class VolumeGroups:
 
     @property
     def logical_volumes(self):
-        """Gets the logical_volumes of this VolumeGroups.
+        r"""Gets the logical_volumes of this VolumeGroups.
 
         lv信息
 
@@ -126,7 +126,7 @@ class VolumeGroups:
 
     @logical_volumes.setter
     def logical_volumes(self, logical_volumes):
-        """Sets the logical_volumes of this VolumeGroups.
+        r"""Sets the logical_volumes of this VolumeGroups.
 
         lv信息
 
@@ -137,7 +137,7 @@ class VolumeGroups:
 
     @property
     def name(self):
-        """Gets the name of this VolumeGroups.
+        r"""Gets the name of this VolumeGroups.
 
         名称
 
@@ -148,7 +148,7 @@ class VolumeGroups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeGroups.
+        r"""Sets the name of this VolumeGroups.
 
         名称
 
@@ -159,7 +159,7 @@ class VolumeGroups:
 
     @property
     def size(self):
-        """Gets the size of this VolumeGroups.
+        r"""Gets the size of this VolumeGroups.
 
         大小
 
@@ -170,7 +170,7 @@ class VolumeGroups:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeGroups.
+        r"""Sets the size of this VolumeGroups.
 
         大小
 

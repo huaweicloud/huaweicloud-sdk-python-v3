@@ -28,7 +28,7 @@ class UpdateMyActionTemplateToDeprecatedResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None, content_length=None):
-        """UpdateMyActionTemplateToDeprecatedResponse
+        r"""UpdateMyActionTemplateToDeprecatedResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateMyActionTemplateToDeprecatedResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateMyActionTemplateToDeprecatedResponse.
+        r"""Gets the x_request_id of this UpdateMyActionTemplateToDeprecatedResponse.
 
         :return: The x_request_id of this UpdateMyActionTemplateToDeprecatedResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateMyActionTemplateToDeprecatedResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateMyActionTemplateToDeprecatedResponse.
+        r"""Sets the x_request_id of this UpdateMyActionTemplateToDeprecatedResponse.
 
         :param x_request_id: The x_request_id of this UpdateMyActionTemplateToDeprecatedResponse.
         :type x_request_id: str
@@ -69,7 +69,7 @@ class UpdateMyActionTemplateToDeprecatedResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this UpdateMyActionTemplateToDeprecatedResponse.
+        r"""Gets the content_length of this UpdateMyActionTemplateToDeprecatedResponse.
 
         :return: The content_length of this UpdateMyActionTemplateToDeprecatedResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateMyActionTemplateToDeprecatedResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this UpdateMyActionTemplateToDeprecatedResponse.
+        r"""Sets the content_length of this UpdateMyActionTemplateToDeprecatedResponse.
 
         :param content_length: The content_length of this UpdateMyActionTemplateToDeprecatedResponse.
         :type content_length: str

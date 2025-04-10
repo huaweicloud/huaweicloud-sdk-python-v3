@@ -28,7 +28,7 @@ class ListLabelPageResponse(SdkResponse):
     }
 
     def __init__(self, label_pages=None, count=None):
-        """ListLabelPageResponse
+        r"""ListLabelPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLabelPageResponse(SdkResponse):
 
     @property
     def label_pages(self):
-        """Gets the label_pages of this ListLabelPageResponse.
+        r"""Gets the label_pages of this ListLabelPageResponse.
 
         标签页面列表
 
@@ -62,7 +62,7 @@ class ListLabelPageResponse(SdkResponse):
 
     @label_pages.setter
     def label_pages(self, label_pages):
-        """Sets the label_pages of this ListLabelPageResponse.
+        r"""Sets the label_pages of this ListLabelPageResponse.
 
         标签页面列表
 
@@ -73,7 +73,7 @@ class ListLabelPageResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLabelPageResponse.
+        r"""Gets the count of this ListLabelPageResponse.
 
         标签页面总条数
 
@@ -84,7 +84,7 @@ class ListLabelPageResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLabelPageResponse.
+        r"""Sets the count of this ListLabelPageResponse.
 
         标签页面总条数
 

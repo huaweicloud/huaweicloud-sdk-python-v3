@@ -26,7 +26,7 @@ class ShowOpenIdConnectConfigResponse(SdkResponse):
     }
 
     def __init__(self, openid_connect_config=None):
-        """ShowOpenIdConnectConfigResponse
+        r"""ShowOpenIdConnectConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowOpenIdConnectConfigResponse(SdkResponse):
 
     @property
     def openid_connect_config(self):
-        """Gets the openid_connect_config of this ShowOpenIdConnectConfigResponse.
+        r"""Gets the openid_connect_config of this ShowOpenIdConnectConfigResponse.
 
         :return: The openid_connect_config of this ShowOpenIdConnectConfigResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`
@@ -53,7 +53,7 @@ class ShowOpenIdConnectConfigResponse(SdkResponse):
 
     @openid_connect_config.setter
     def openid_connect_config(self, openid_connect_config):
-        """Sets the openid_connect_config of this ShowOpenIdConnectConfigResponse.
+        r"""Sets the openid_connect_config of this ShowOpenIdConnectConfigResponse.
 
         :param openid_connect_config: The openid_connect_config of this ShowOpenIdConnectConfigResponse.
         :type openid_connect_config: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`

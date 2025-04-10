@@ -35,7 +35,7 @@ class InspectionReports:
     }
 
     def __init__(self, id=None, check_time=None, expiration_time=None, target_version=None, result=None, detail=None):
-        """InspectionReports
+        r"""InspectionReports
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class InspectionReports:
 
     @property
     def id(self):
-        """Gets the id of this InspectionReports.
+        r"""Gets the id of this InspectionReports.
 
         检查报告ID。
 
@@ -83,7 +83,7 @@ class InspectionReports:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InspectionReports.
+        r"""Sets the id of this InspectionReports.
 
         检查报告ID。
 
@@ -94,7 +94,7 @@ class InspectionReports:
 
     @property
     def check_time(self):
-        """Gets the check_time of this InspectionReports.
+        r"""Gets the check_time of this InspectionReports.
 
         检查时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -105,7 +105,7 @@ class InspectionReports:
 
     @check_time.setter
     def check_time(self, check_time):
-        """Sets the check_time of this InspectionReports.
+        r"""Sets the check_time of this InspectionReports.
 
         检查时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -116,7 +116,7 @@ class InspectionReports:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this InspectionReports.
+        r"""Gets the expiration_time of this InspectionReports.
 
         到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -127,7 +127,7 @@ class InspectionReports:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this InspectionReports.
+        r"""Sets the expiration_time of this InspectionReports.
 
         到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -138,7 +138,7 @@ class InspectionReports:
 
     @property
     def target_version(self):
-        """Gets the target_version of this InspectionReports.
+        r"""Gets the target_version of this InspectionReports.
 
         目标版本。
 
@@ -149,7 +149,7 @@ class InspectionReports:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this InspectionReports.
+        r"""Sets the target_version of this InspectionReports.
 
         目标版本。
 
@@ -160,7 +160,7 @@ class InspectionReports:
 
     @property
     def result(self):
-        """Gets the result of this InspectionReports.
+        r"""Gets the result of this InspectionReports.
 
         检查结果。 success，表示成功。 failed，表示失败。 running， 表示检查中。
 
@@ -171,7 +171,7 @@ class InspectionReports:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this InspectionReports.
+        r"""Sets the result of this InspectionReports.
 
         检查结果。 success，表示成功。 failed，表示失败。 running， 表示检查中。
 
@@ -182,7 +182,7 @@ class InspectionReports:
 
     @property
     def detail(self):
-        """Gets the detail of this InspectionReports.
+        r"""Gets the detail of this InspectionReports.
 
         检查报告详情。
 
@@ -193,7 +193,7 @@ class InspectionReports:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this InspectionReports.
+        r"""Sets the detail of this InspectionReports.
 
         检查报告详情。
 

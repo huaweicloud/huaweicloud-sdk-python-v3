@@ -23,7 +23,7 @@ class ListListenerTagsRequest:
     }
 
     def __init__(self):
-        """ListListenerTagsRequest
+        r"""ListListenerTagsRequest
 
         The model defined in huaweicloud sdk
 

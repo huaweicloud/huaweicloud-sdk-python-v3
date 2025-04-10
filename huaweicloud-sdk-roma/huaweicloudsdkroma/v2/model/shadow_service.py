@@ -29,7 +29,7 @@ class ShadowService:
     }
 
     def __init__(self, service_id=None, service_name=None, properties=None):
-        """ShadowService
+        r"""ShadowService
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShadowService:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShadowService.
+        r"""Gets the service_id of this ShadowService.
 
         服务ID
 
@@ -68,7 +68,7 @@ class ShadowService:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShadowService.
+        r"""Sets the service_id of this ShadowService.
 
         服务ID
 
@@ -79,7 +79,7 @@ class ShadowService:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ShadowService.
+        r"""Gets the service_name of this ShadowService.
 
         服务名称
 
@@ -90,7 +90,7 @@ class ShadowService:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ShadowService.
+        r"""Sets the service_name of this ShadowService.
 
         服务名称
 
@@ -101,7 +101,7 @@ class ShadowService:
 
     @property
     def properties(self):
-        """Gets the properties of this ShadowService.
+        r"""Gets the properties of this ShadowService.
 
         影子值
 
@@ -112,7 +112,7 @@ class ShadowService:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShadowService.
+        r"""Sets the properties of this ShadowService.
 
         影子值
 

@@ -23,7 +23,7 @@ class PublicIp:
     }
 
     def __init__(self):
-        """PublicIp
+        r"""PublicIp
 
         The model defined in huaweicloud sdk
 

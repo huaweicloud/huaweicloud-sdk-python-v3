@@ -25,7 +25,7 @@ class QueryTemplate:
     }
 
     def __init__(self, steps=None):
-        """QueryTemplate
+        r"""QueryTemplate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QueryTemplate:
 
     @property
     def steps(self):
-        """Gets the steps of this QueryTemplate.
+        r"""Gets the steps of this QueryTemplate.
 
         构建执行的步骤
 
@@ -53,7 +53,7 @@ class QueryTemplate:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this QueryTemplate.
+        r"""Sets the steps of this QueryTemplate.
 
         构建执行的步骤
 

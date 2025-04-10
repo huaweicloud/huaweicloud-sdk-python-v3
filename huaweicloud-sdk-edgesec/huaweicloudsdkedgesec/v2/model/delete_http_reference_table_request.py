@@ -25,7 +25,7 @@ class DeleteHttpReferenceTableRequest:
     }
 
     def __init__(self, table_id=None):
-        """DeleteHttpReferenceTableRequest
+        r"""DeleteHttpReferenceTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteHttpReferenceTableRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this DeleteHttpReferenceTableRequest.
+        r"""Gets the table_id of this DeleteHttpReferenceTableRequest.
 
         引用表id
 
@@ -53,7 +53,7 @@ class DeleteHttpReferenceTableRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DeleteHttpReferenceTableRequest.
+        r"""Sets the table_id of this DeleteHttpReferenceTableRequest.
 
         引用表id
 

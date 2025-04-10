@@ -65,7 +65,7 @@ class ModifyWorkspaceAttributesReq:
     }
 
     def __init__(self, operate_type=None, auth_type=None, ad_info=None, third_gateway_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, adn_conflict_network=None, subnet_ids=None, vpc_config_infos=None, internet_access_port=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None, authorized_collect_log=None, authorized_hda_upgrade=None, apply_shared_vpc_dedicated_param=None, apply_dedicated_standby_network_param=None, is_authorized_install_agent=None, enable_user_create_snapshot=None, is_support_ipv6=None):
-        """ModifyWorkspaceAttributesReq
+        r"""ModifyWorkspaceAttributesReq
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this ModifyWorkspaceAttributesReq.
+        r"""Gets the operate_type of this ModifyWorkspaceAttributesReq.
 
         操作类型，做如下修改操作需要指定该参数。 - applyDedicatedStandbyNetwork: 开通专线备用线路 - cancelDedicatedStandbyNetwork: 关闭专线备用线路
 
@@ -194,7 +194,7 @@ class ModifyWorkspaceAttributesReq:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this ModifyWorkspaceAttributesReq.
+        r"""Sets the operate_type of this ModifyWorkspaceAttributesReq.
 
         操作类型，做如下修改操作需要指定该参数。 - applyDedicatedStandbyNetwork: 开通专线备用线路 - cancelDedicatedStandbyNetwork: 关闭专线备用线路
 
@@ -205,7 +205,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ModifyWorkspaceAttributesReq.
+        r"""Gets the auth_type of this ModifyWorkspaceAttributesReq.
 
         主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
 
@@ -216,7 +216,7 @@ class ModifyWorkspaceAttributesReq:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ModifyWorkspaceAttributesReq.
+        r"""Sets the auth_type of this ModifyWorkspaceAttributesReq.
 
         主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
 
@@ -227,7 +227,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def ad_info(self):
-        """Gets the ad_info of this ModifyWorkspaceAttributesReq.
+        r"""Gets the ad_info of this ModifyWorkspaceAttributesReq.
 
         :return: The ad_info of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomainInfo`
@@ -236,7 +236,7 @@ class ModifyWorkspaceAttributesReq:
 
     @ad_info.setter
     def ad_info(self, ad_info):
-        """Sets the ad_info of this ModifyWorkspaceAttributesReq.
+        r"""Sets the ad_info of this ModifyWorkspaceAttributesReq.
 
         :param ad_info: The ad_info of this ModifyWorkspaceAttributesReq.
         :type ad_info: :class:`huaweicloudsdkworkspace.v2.AdDomainInfo`
@@ -245,7 +245,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def third_gateway_info(self):
-        """Gets the third_gateway_info of this ModifyWorkspaceAttributesReq.
+        r"""Gets the third_gateway_info of this ModifyWorkspaceAttributesReq.
 
         :return: The third_gateway_info of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
@@ -254,7 +254,7 @@ class ModifyWorkspaceAttributesReq:
 
     @third_gateway_info.setter
     def third_gateway_info(self, third_gateway_info):
-        """Sets the third_gateway_info of this ModifyWorkspaceAttributesReq.
+        r"""Sets the third_gateway_info of this ModifyWorkspaceAttributesReq.
 
         :param third_gateway_info: The third_gateway_info of this ModifyWorkspaceAttributesReq.
         :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
@@ -263,7 +263,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def ad_domains(self):
-        """Gets the ad_domains of this ModifyWorkspaceAttributesReq.
+        r"""Gets the ad_domains of this ModifyWorkspaceAttributesReq.
 
         :return: The ad_domains of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -272,7 +272,7 @@ class ModifyWorkspaceAttributesReq:
 
     @ad_domains.setter
     def ad_domains(self, ad_domains):
-        """Sets the ad_domains of this ModifyWorkspaceAttributesReq.
+        r"""Sets the ad_domains of this ModifyWorkspaceAttributesReq.
 
         :param ad_domains: The ad_domains of this ModifyWorkspaceAttributesReq.
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -281,7 +281,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this ModifyWorkspaceAttributesReq.
+        r"""Gets the access_mode of this ModifyWorkspaceAttributesReq.
 
         接入模式。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
 
@@ -292,7 +292,7 @@ class ModifyWorkspaceAttributesReq:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this ModifyWorkspaceAttributesReq.
+        r"""Sets the access_mode of this ModifyWorkspaceAttributesReq.
 
         接入模式。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
 
@@ -303,7 +303,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def dedicated_subnets(self):
-        """Gets the dedicated_subnets of this ModifyWorkspaceAttributesReq.
+        r"""Gets the dedicated_subnets of this ModifyWorkspaceAttributesReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -314,7 +314,7 @@ class ModifyWorkspaceAttributesReq:
 
     @dedicated_subnets.setter
     def dedicated_subnets(self, dedicated_subnets):
-        """Sets the dedicated_subnets of this ModifyWorkspaceAttributesReq.
+        r"""Sets the dedicated_subnets of this ModifyWorkspaceAttributesReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -325,7 +325,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def adn_conflict_network(self):
-        """Gets the adn_conflict_network of this ModifyWorkspaceAttributesReq.
+        r"""Gets the adn_conflict_network of this ModifyWorkspaceAttributesReq.
 
         ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
 
@@ -336,7 +336,7 @@ class ModifyWorkspaceAttributesReq:
 
     @adn_conflict_network.setter
     def adn_conflict_network(self, adn_conflict_network):
-        """Sets the adn_conflict_network of this ModifyWorkspaceAttributesReq.
+        r"""Sets the adn_conflict_network of this ModifyWorkspaceAttributesReq.
 
         ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
 
@@ -347,7 +347,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this ModifyWorkspaceAttributesReq.
+        r"""Gets the subnet_ids of this ModifyWorkspaceAttributesReq.
 
         子网的网络ID列表。
 
@@ -358,7 +358,7 @@ class ModifyWorkspaceAttributesReq:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this ModifyWorkspaceAttributesReq.
+        r"""Sets the subnet_ids of this ModifyWorkspaceAttributesReq.
 
         子网的网络ID列表。
 
@@ -369,7 +369,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def vpc_config_infos(self):
-        """Gets the vpc_config_infos of this ModifyWorkspaceAttributesReq.
+        r"""Gets the vpc_config_infos of this ModifyWorkspaceAttributesReq.
 
         VPC配置信息列表。
 
@@ -380,7 +380,7 @@ class ModifyWorkspaceAttributesReq:
 
     @vpc_config_infos.setter
     def vpc_config_infos(self, vpc_config_infos):
-        """Sets the vpc_config_infos of this ModifyWorkspaceAttributesReq.
+        r"""Sets the vpc_config_infos of this ModifyWorkspaceAttributesReq.
 
         VPC配置信息列表。
 
@@ -391,7 +391,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def internet_access_port(self):
-        """Gets the internet_access_port of this ModifyWorkspaceAttributesReq.
+        r"""Gets the internet_access_port of this ModifyWorkspaceAttributesReq.
 
         互联网接入端口。
 
@@ -402,7 +402,7 @@ class ModifyWorkspaceAttributesReq:
 
     @internet_access_port.setter
     def internet_access_port(self, internet_access_port):
-        """Sets the internet_access_port of this ModifyWorkspaceAttributesReq.
+        r"""Sets the internet_access_port of this ModifyWorkspaceAttributesReq.
 
         互联网接入端口。
 
@@ -413,7 +413,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this ModifyWorkspaceAttributesReq.
+        r"""Gets the enterprise_id of this ModifyWorkspaceAttributesReq.
 
         企业ID。
 
@@ -424,7 +424,7 @@ class ModifyWorkspaceAttributesReq:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this ModifyWorkspaceAttributesReq.
+        r"""Sets the enterprise_id of this ModifyWorkspaceAttributesReq.
 
         企业ID。
 
@@ -435,7 +435,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def is_send_email(self):
-        """Gets the is_send_email of this ModifyWorkspaceAttributesReq.
+        r"""Gets the is_send_email of this ModifyWorkspaceAttributesReq.
 
         桌面退订是否发送邮件通知。
 
@@ -446,7 +446,7 @@ class ModifyWorkspaceAttributesReq:
 
     @is_send_email.setter
     def is_send_email(self, is_send_email):
-        """Sets the is_send_email of this ModifyWorkspaceAttributesReq.
+        r"""Sets the is_send_email of this ModifyWorkspaceAttributesReq.
 
         桌面退订是否发送邮件通知。
 
@@ -457,7 +457,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def dc_vnc_ip(self):
-        """Gets the dc_vnc_ip of this ModifyWorkspaceAttributesReq.
+        r"""Gets the dc_vnc_ip of this ModifyWorkspaceAttributesReq.
 
         开通专线访问VNC功能，如果传入的是default则自动创建，如果传入的自定义的dc_vnc_ip则直接使用，如果传入的是close表示关闭自定义VNC
 
@@ -468,7 +468,7 @@ class ModifyWorkspaceAttributesReq:
 
     @dc_vnc_ip.setter
     def dc_vnc_ip(self, dc_vnc_ip):
-        """Sets the dc_vnc_ip of this ModifyWorkspaceAttributesReq.
+        r"""Sets the dc_vnc_ip of this ModifyWorkspaceAttributesReq.
 
         开通专线访问VNC功能，如果传入的是default则自动创建，如果传入的自定义的dc_vnc_ip则直接使用，如果传入的是close表示关闭自定义VNC
 
@@ -479,7 +479,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def authorized_collect_log(self):
-        """Gets the authorized_collect_log of this ModifyWorkspaceAttributesReq.
+        r"""Gets the authorized_collect_log of this ModifyWorkspaceAttributesReq.
 
         是否授权收集日志。
 
@@ -490,7 +490,7 @@ class ModifyWorkspaceAttributesReq:
 
     @authorized_collect_log.setter
     def authorized_collect_log(self, authorized_collect_log):
-        """Sets the authorized_collect_log of this ModifyWorkspaceAttributesReq.
+        r"""Sets the authorized_collect_log of this ModifyWorkspaceAttributesReq.
 
         是否授权收集日志。
 
@@ -501,7 +501,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def authorized_hda_upgrade(self):
-        """Gets the authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
+        r"""Gets the authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
 
         是否授权hda升级。
 
@@ -512,7 +512,7 @@ class ModifyWorkspaceAttributesReq:
 
     @authorized_hda_upgrade.setter
     def authorized_hda_upgrade(self, authorized_hda_upgrade):
-        """Sets the authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
+        r"""Sets the authorized_hda_upgrade of this ModifyWorkspaceAttributesReq.
 
         是否授权hda升级。
 
@@ -523,7 +523,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def apply_shared_vpc_dedicated_param(self):
-        """Gets the apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
+        r"""Gets the apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
 
         :return: The apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -532,7 +532,7 @@ class ModifyWorkspaceAttributesReq:
 
     @apply_shared_vpc_dedicated_param.setter
     def apply_shared_vpc_dedicated_param(self, apply_shared_vpc_dedicated_param):
-        """Sets the apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
+        r"""Sets the apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
 
         :param apply_shared_vpc_dedicated_param: The apply_shared_vpc_dedicated_param of this ModifyWorkspaceAttributesReq.
         :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -541,7 +541,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def apply_dedicated_standby_network_param(self):
-        """Gets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
+        r"""Gets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
 
         :return: The apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
@@ -550,7 +550,7 @@ class ModifyWorkspaceAttributesReq:
 
     @apply_dedicated_standby_network_param.setter
     def apply_dedicated_standby_network_param(self, apply_dedicated_standby_network_param):
-        """Sets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
+        r"""Sets the apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
 
         :param apply_dedicated_standby_network_param: The apply_dedicated_standby_network_param of this ModifyWorkspaceAttributesReq.
         :type apply_dedicated_standby_network_param: :class:`huaweicloudsdkworkspace.v2.ApplyDedicatedStandbyNetworkParam`
@@ -559,7 +559,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def is_authorized_install_agent(self):
-        """Gets the is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
+        r"""Gets the is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
 
         是否授权桌面自动安装agent插件。
 
@@ -570,7 +570,7 @@ class ModifyWorkspaceAttributesReq:
 
     @is_authorized_install_agent.setter
     def is_authorized_install_agent(self, is_authorized_install_agent):
-        """Sets the is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
+        r"""Sets the is_authorized_install_agent of this ModifyWorkspaceAttributesReq.
 
         是否授权桌面自动安装agent插件。
 
@@ -581,7 +581,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def enable_user_create_snapshot(self):
-        """Gets the enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
+        r"""Gets the enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
 
         是否授权最终租户创建快照。
 
@@ -592,7 +592,7 @@ class ModifyWorkspaceAttributesReq:
 
     @enable_user_create_snapshot.setter
     def enable_user_create_snapshot(self, enable_user_create_snapshot):
-        """Sets the enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
+        r"""Sets the enable_user_create_snapshot of this ModifyWorkspaceAttributesReq.
 
         是否授权最终租户创建快照。
 
@@ -603,7 +603,7 @@ class ModifyWorkspaceAttributesReq:
 
     @property
     def is_support_ipv6(self):
-        """Gets the is_support_ipv6 of this ModifyWorkspaceAttributesReq.
+        r"""Gets the is_support_ipv6 of this ModifyWorkspaceAttributesReq.
 
         是否开启ipv6。
 
@@ -614,7 +614,7 @@ class ModifyWorkspaceAttributesReq:
 
     @is_support_ipv6.setter
     def is_support_ipv6(self, is_support_ipv6):
-        """Sets the is_support_ipv6 of this ModifyWorkspaceAttributesReq.
+        r"""Sets the is_support_ipv6 of this ModifyWorkspaceAttributesReq.
 
         是否开启ipv6。
 

@@ -31,7 +31,7 @@ class TaskAdvancedSettings:
     }
 
     def __init__(self, key=None, value=None, option_value=None, description=None):
-        """TaskAdvancedSettings
+        r"""TaskAdvancedSettings
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskAdvancedSettings:
 
     @property
     def key(self):
-        """Gets the key of this TaskAdvancedSettings.
+        r"""Gets the key of this TaskAdvancedSettings.
 
         高级选项对应的名称
 
@@ -75,7 +75,7 @@ class TaskAdvancedSettings:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TaskAdvancedSettings.
+        r"""Sets the key of this TaskAdvancedSettings.
 
         高级选项对应的名称
 
@@ -86,7 +86,7 @@ class TaskAdvancedSettings:
 
     @property
     def value(self):
-        """Gets the value of this TaskAdvancedSettings.
+        r"""Gets the value of this TaskAdvancedSettings.
 
         高级选项对应的取值
 
@@ -97,7 +97,7 @@ class TaskAdvancedSettings:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TaskAdvancedSettings.
+        r"""Sets the value of this TaskAdvancedSettings.
 
         高级选项对应的取值
 
@@ -108,7 +108,7 @@ class TaskAdvancedSettings:
 
     @property
     def option_value(self):
-        """Gets the option_value of this TaskAdvancedSettings.
+        r"""Gets the option_value of this TaskAdvancedSettings.
 
         高级选项对应的可选项
 
@@ -119,7 +119,7 @@ class TaskAdvancedSettings:
 
     @option_value.setter
     def option_value(self, option_value):
-        """Sets the option_value of this TaskAdvancedSettings.
+        r"""Sets the option_value of this TaskAdvancedSettings.
 
         高级选项对应的可选项
 
@@ -130,7 +130,7 @@ class TaskAdvancedSettings:
 
     @property
     def description(self):
-        """Gets the description of this TaskAdvancedSettings.
+        r"""Gets the description of this TaskAdvancedSettings.
 
         高级选项对应的中文描述
 
@@ -141,7 +141,7 @@ class TaskAdvancedSettings:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskAdvancedSettings.
+        r"""Sets the description of this TaskAdvancedSettings.
 
         高级选项对应的中文描述
 

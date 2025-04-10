@@ -26,7 +26,7 @@ class CreateResourceTagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateResourceTagResponse
+        r"""CreateResourceTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateResourceTagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceTagResponse.
+        r"""Gets the body of this CreateResourceTagResponse.
 
         :return: The body of this CreateResourceTagResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateResourceTagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceTagResponse.
+        r"""Sets the body of this CreateResourceTagResponse.
 
         :param body: The body of this CreateResourceTagResponse.
         :type body: str

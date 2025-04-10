@@ -57,7 +57,7 @@ class Backup:
     }
 
     def __init__(self, id=None, name=None, backup_method=None, graph_id=None, graph_name=None, graph_status=None, graph_size_type_index=None, data_store_version=None, arch=None, status=None, start_timestamp=None, start_time=None, end_timestamp=None, end_time=None, size=None, duration=None, encrypted=None):
-        """Backup
+        r"""Backup
 
         The model defined in huaweicloud sdk
 
@@ -139,7 +139,7 @@ class Backup:
 
     @property
     def id(self):
-        """Gets the id of this Backup.
+        r"""Gets the id of this Backup.
 
         备份ID。
 
@@ -150,7 +150,7 @@ class Backup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Backup.
+        r"""Sets the id of this Backup.
 
         备份ID。
 
@@ -161,7 +161,7 @@ class Backup:
 
     @property
     def name(self):
-        """Gets the name of this Backup.
+        r"""Gets the name of this Backup.
 
         备份名称。
 
@@ -172,7 +172,7 @@ class Backup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Backup.
+        r"""Sets the name of this Backup.
 
         备份名称。
 
@@ -183,7 +183,7 @@ class Backup:
 
     @property
     def backup_method(self):
-        """Gets the backup_method of this Backup.
+        r"""Gets the backup_method of this Backup.
 
         备份方法，取值为auto或manual。
 
@@ -194,7 +194,7 @@ class Backup:
 
     @backup_method.setter
     def backup_method(self, backup_method):
-        """Sets the backup_method of this Backup.
+        r"""Sets the backup_method of this Backup.
 
         备份方法，取值为auto或manual。
 
@@ -205,7 +205,7 @@ class Backup:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this Backup.
+        r"""Gets the graph_id of this Backup.
 
         备份关联的图ID。
 
@@ -216,7 +216,7 @@ class Backup:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this Backup.
+        r"""Sets the graph_id of this Backup.
 
         备份关联的图ID。
 
@@ -227,7 +227,7 @@ class Backup:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this Backup.
+        r"""Gets the graph_name of this Backup.
 
         备份关联的图Name。
 
@@ -238,7 +238,7 @@ class Backup:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this Backup.
+        r"""Sets the graph_name of this Backup.
 
         备份关联的图Name。
 
@@ -249,7 +249,7 @@ class Backup:
 
     @property
     def graph_status(self):
-        """Gets the graph_status of this Backup.
+        r"""Gets the graph_status of this Backup.
 
         备份关联的图状态。
 
@@ -260,7 +260,7 @@ class Backup:
 
     @graph_status.setter
     def graph_status(self, graph_status):
-        """Sets the graph_status of this Backup.
+        r"""Sets the graph_status of this Backup.
 
         备份关联的图状态。
 
@@ -271,7 +271,7 @@ class Backup:
 
     @property
     def graph_size_type_index(self):
-        """Gets the graph_size_type_index of this Backup.
+        r"""Gets the graph_size_type_index of this Backup.
 
         备份关联的图规格。
 
@@ -282,7 +282,7 @@ class Backup:
 
     @graph_size_type_index.setter
     def graph_size_type_index(self, graph_size_type_index):
-        """Sets the graph_size_type_index of this Backup.
+        r"""Sets the graph_size_type_index of this Backup.
 
         备份关联的图规格。
 
@@ -293,7 +293,7 @@ class Backup:
 
     @property
     def data_store_version(self):
-        """Gets the data_store_version of this Backup.
+        r"""Gets the data_store_version of this Backup.
 
         备份关联的图版本。
 
@@ -304,7 +304,7 @@ class Backup:
 
     @data_store_version.setter
     def data_store_version(self, data_store_version):
-        """Sets the data_store_version of this Backup.
+        r"""Sets the data_store_version of this Backup.
 
         备份关联的图版本。
 
@@ -315,7 +315,7 @@ class Backup:
 
     @property
     def arch(self):
-        """Gets the arch of this Backup.
+        r"""Gets the arch of this Backup.
 
         备份关联的图CPU架构。
 
@@ -326,7 +326,7 @@ class Backup:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this Backup.
+        r"""Sets the arch of this Backup.
 
         备份关联的图CPU架构。
 
@@ -337,7 +337,7 @@ class Backup:
 
     @property
     def status(self):
-        """Gets the status of this Backup.
+        r"""Gets the status of this Backup.
 
         备份状态。  - backing_up：备份中 - success：备份成功 - failed：备份失败
 
@@ -348,7 +348,7 @@ class Backup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Backup.
+        r"""Sets the status of this Backup.
 
         备份状态。  - backing_up：备份中 - success：备份成功 - failed：备份失败
 
@@ -359,7 +359,7 @@ class Backup:
 
     @property
     def start_timestamp(self):
-        """Gets the start_timestamp of this Backup.
+        r"""Gets the start_timestamp of this Backup.
 
         备份开始时间戳。
 
@@ -370,7 +370,7 @@ class Backup:
 
     @start_timestamp.setter
     def start_timestamp(self, start_timestamp):
-        """Sets the start_timestamp of this Backup.
+        r"""Sets the start_timestamp of this Backup.
 
         备份开始时间戳。
 
@@ -381,7 +381,7 @@ class Backup:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Backup.
+        r"""Gets the start_time of this Backup.
 
         备份时间。
 
@@ -392,7 +392,7 @@ class Backup:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Backup.
+        r"""Sets the start_time of this Backup.
 
         备份时间。
 
@@ -403,7 +403,7 @@ class Backup:
 
     @property
     def end_timestamp(self):
-        """Gets the end_timestamp of this Backup.
+        r"""Gets the end_timestamp of this Backup.
 
         备份结束时间戳。
 
@@ -414,7 +414,7 @@ class Backup:
 
     @end_timestamp.setter
     def end_timestamp(self, end_timestamp):
-        """Sets the end_timestamp of this Backup.
+        r"""Sets the end_timestamp of this Backup.
 
         备份结束时间戳。
 
@@ -425,7 +425,7 @@ class Backup:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Backup.
+        r"""Gets the end_time of this Backup.
 
         备份时间。
 
@@ -436,7 +436,7 @@ class Backup:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Backup.
+        r"""Sets the end_time of this Backup.
 
         备份时间。
 
@@ -447,7 +447,7 @@ class Backup:
 
     @property
     def size(self):
-        """Gets the size of this Backup.
+        r"""Gets the size of this Backup.
 
         备份文件大小，单位为MB。
 
@@ -458,7 +458,7 @@ class Backup:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Backup.
+        r"""Sets the size of this Backup.
 
         备份文件大小，单位为MB。
 
@@ -469,7 +469,7 @@ class Backup:
 
     @property
     def duration(self):
-        """Gets the duration of this Backup.
+        r"""Gets the duration of this Backup.
 
         备份时间，单位为秒。
 
@@ -480,7 +480,7 @@ class Backup:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this Backup.
+        r"""Sets the duration of this Backup.
 
         备份时间，单位为秒。
 
@@ -491,7 +491,7 @@ class Backup:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this Backup.
+        r"""Gets the encrypted of this Backup.
 
         是否加密。true表示加密，默认值为\"false\"，不加密。
 
@@ -502,7 +502,7 @@ class Backup:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this Backup.
+        r"""Sets the encrypted of this Backup.
 
         是否加密。true表示加密，默认值为\"false\"，不加密。
 

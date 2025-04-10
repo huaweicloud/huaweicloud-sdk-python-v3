@@ -25,7 +25,7 @@ class CorpAdminDTO:
     }
 
     def __init__(self, account=None):
-        """CorpAdminDTO
+        r"""CorpAdminDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CorpAdminDTO:
 
     @property
     def account(self):
-        """Gets the account of this CorpAdminDTO.
+        r"""Gets the account of this CorpAdminDTO.
 
         企业用户帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID
 
@@ -53,7 +53,7 @@ class CorpAdminDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this CorpAdminDTO.
+        r"""Sets the account of this CorpAdminDTO.
 
         企业用户帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID
 

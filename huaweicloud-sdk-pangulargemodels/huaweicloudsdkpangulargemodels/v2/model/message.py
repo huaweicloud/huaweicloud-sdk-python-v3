@@ -27,7 +27,7 @@ class Message:
     }
 
     def __init__(self, role=None, content=None):
-        """Message
+        r"""Message
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Message:
 
     @property
     def role(self):
-        """Gets the role of this Message.
+        r"""Gets the role of this Message.
 
         角色
 
@@ -60,7 +60,7 @@ class Message:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this Message.
+        r"""Sets the role of this Message.
 
         角色
 
@@ -71,7 +71,7 @@ class Message:
 
     @property
     def content(self):
-        """Gets the content of this Message.
+        r"""Gets the content of this Message.
 
         问答对文本内容，最小长度：1，最大长度：模型支持的max_tokens数量乘以系数，默认系数为1.5，并且所有content的总长度不能超过该最大长度
 
@@ -82,7 +82,7 @@ class Message:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Message.
+        r"""Sets the content of this Message.
 
         问答对文本内容，最小长度：1，最大长度：模型支持的max_tokens数量乘以系数，默认系数为1.5，并且所有content的总长度不能超过该最大长度
 

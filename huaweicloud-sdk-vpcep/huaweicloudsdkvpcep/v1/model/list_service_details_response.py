@@ -64,7 +64,7 @@ class ListServiceDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, supported_editions=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ip=None, ports=None, tcp_proxy=None, tags=None, error=None, enable_policy=None, description=None):
-        """ListServiceDetailsResponse
+        r"""ListServiceDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListServiceDetailsResponse.
+        r"""Gets the id of this ListServiceDetailsResponse.
 
         终端节点服务的ID，唯一标识。
 
@@ -188,7 +188,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServiceDetailsResponse.
+        r"""Sets the id of this ListServiceDetailsResponse.
 
         终端节点服务的ID，唯一标识。
 
@@ -199,7 +199,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def port_id(self):
-        """Gets the port_id of this ListServiceDetailsResponse.
+        r"""Gets the port_id of this ListServiceDetailsResponse.
 
         标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
@@ -210,7 +210,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ListServiceDetailsResponse.
+        r"""Sets the port_id of this ListServiceDetailsResponse.
 
         标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
@@ -221,7 +221,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def service_name(self):
-        """Gets the service_name of this ListServiceDetailsResponse.
+        r"""Gets the service_name of this ListServiceDetailsResponse.
 
         终端节点服务的名称。
 
@@ -232,7 +232,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ListServiceDetailsResponse.
+        r"""Sets the service_name of this ListServiceDetailsResponse.
 
         终端节点服务的名称。
 
@@ -243,7 +243,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def server_type(self):
-        """Gets the server_type of this ListServiceDetailsResponse.
+        r"""Gets the server_type of this ListServiceDetailsResponse.
 
         资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
 
@@ -254,7 +254,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this ListServiceDetailsResponse.
+        r"""Sets the server_type of this ListServiceDetailsResponse.
 
         资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
 
@@ -265,7 +265,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListServiceDetailsResponse.
+        r"""Gets the vpc_id of this ListServiceDetailsResponse.
 
         终端节点服务对应后端资源所在的VPC的ID。
 
@@ -276,7 +276,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListServiceDetailsResponse.
+        r"""Sets the vpc_id of this ListServiceDetailsResponse.
 
         终端节点服务对应后端资源所在的VPC的ID。
 
@@ -287,7 +287,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def approval_enabled(self):
-        """Gets the approval_enabled of this ListServiceDetailsResponse.
+        r"""Gets the approval_enabled of this ListServiceDetailsResponse.
 
         是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
@@ -298,7 +298,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @approval_enabled.setter
     def approval_enabled(self, approval_enabled):
-        """Sets the approval_enabled of this ListServiceDetailsResponse.
+        r"""Sets the approval_enabled of this ListServiceDetailsResponse.
 
         是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
@@ -309,7 +309,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListServiceDetailsResponse.
+        r"""Gets the status of this ListServiceDetailsResponse.
 
         终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
@@ -320,7 +320,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListServiceDetailsResponse.
+        r"""Sets the status of this ListServiceDetailsResponse.
 
         终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
@@ -331,7 +331,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListServiceDetailsResponse.
+        r"""Gets the service_type of this ListServiceDetailsResponse.
 
         终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节。
 
@@ -342,7 +342,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListServiceDetailsResponse.
+        r"""Sets the service_type of this ListServiceDetailsResponse.
 
         终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节。
 
@@ -353,7 +353,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def supported_editions(self):
-        """Gets the supported_editions of this ListServiceDetailsResponse.
+        r"""Gets the supported_editions of this ListServiceDetailsResponse.
 
         终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
 
@@ -364,7 +364,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @supported_editions.setter
     def supported_editions(self, supported_editions):
-        """Sets the supported_editions of this ListServiceDetailsResponse.
+        r"""Sets the supported_editions of this ListServiceDetailsResponse.
 
         终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
 
@@ -375,7 +375,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListServiceDetailsResponse.
+        r"""Gets the created_at of this ListServiceDetailsResponse.
 
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -386,7 +386,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListServiceDetailsResponse.
+        r"""Sets the created_at of this ListServiceDetailsResponse.
 
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -397,7 +397,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListServiceDetailsResponse.
+        r"""Gets the updated_at of this ListServiceDetailsResponse.
 
         终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -408,7 +408,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListServiceDetailsResponse.
+        r"""Sets the updated_at of this ListServiceDetailsResponse.
 
         终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -419,7 +419,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListServiceDetailsResponse.
+        r"""Gets the project_id of this ListServiceDetailsResponse.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -430,7 +430,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListServiceDetailsResponse.
+        r"""Sets the project_id of this ListServiceDetailsResponse.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -441,7 +441,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def cidr_type(self):
-        """Gets the cidr_type of this ListServiceDetailsResponse.
+        r"""Gets the cidr_type of this ListServiceDetailsResponse.
 
         网段类型。 public：公网网段 internal：内网网段 默认值为internal。
 
@@ -452,7 +452,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @cidr_type.setter
     def cidr_type(self, cidr_type):
-        """Sets the cidr_type of this ListServiceDetailsResponse.
+        r"""Sets the cidr_type of this ListServiceDetailsResponse.
 
         网段类型。 public：公网网段 internal：内网网段 默认值为internal。
 
@@ -463,7 +463,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ListServiceDetailsResponse.
+        r"""Gets the ip of this ListServiceDetailsResponse.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -474,7 +474,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListServiceDetailsResponse.
+        r"""Sets the ip of this ListServiceDetailsResponse.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -485,7 +485,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def ports(self):
-        """Gets the ports of this ListServiceDetailsResponse.
+        r"""Gets the ports of this ListServiceDetailsResponse.
 
         服务开放的端口映射列表，详细内容请参见表4-17 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
 
@@ -496,7 +496,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ListServiceDetailsResponse.
+        r"""Sets the ports of this ListServiceDetailsResponse.
 
         服务开放的端口映射列表，详细内容请参见表4-17 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
 
@@ -507,7 +507,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def tcp_proxy(self):
-        """Gets the tcp_proxy of this ListServiceDetailsResponse.
+        r"""Gets the tcp_proxy of this ListServiceDetailsResponse.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -518,7 +518,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @tcp_proxy.setter
     def tcp_proxy(self, tcp_proxy):
-        """Sets the tcp_proxy of this ListServiceDetailsResponse.
+        r"""Sets the tcp_proxy of this ListServiceDetailsResponse.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -529,7 +529,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListServiceDetailsResponse.
+        r"""Gets the tags of this ListServiceDetailsResponse.
 
         资源标签列表
 
@@ -540,7 +540,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListServiceDetailsResponse.
+        r"""Sets the tags of this ListServiceDetailsResponse.
 
         资源标签列表
 
@@ -551,7 +551,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListServiceDetailsResponse.
+        r"""Gets the error of this ListServiceDetailsResponse.
 
         提交任务异常时返回的异常信息
 
@@ -562,7 +562,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListServiceDetailsResponse.
+        r"""Sets the error of this ListServiceDetailsResponse.
 
         提交任务异常时返回的异常信息
 
@@ -573,7 +573,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def enable_policy(self):
-        """Gets the enable_policy of this ListServiceDetailsResponse.
+        r"""Gets the enable_policy of this ListServiceDetailsResponse.
 
         是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
@@ -584,7 +584,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @enable_policy.setter
     def enable_policy(self, enable_policy):
-        """Sets the enable_policy of this ListServiceDetailsResponse.
+        r"""Sets the enable_policy of this ListServiceDetailsResponse.
 
         是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
@@ -595,7 +595,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ListServiceDetailsResponse.
+        r"""Gets the description of this ListServiceDetailsResponse.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -606,7 +606,7 @@ class ListServiceDetailsResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListServiceDetailsResponse.
+        r"""Sets the description of this ListServiceDetailsResponse.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 

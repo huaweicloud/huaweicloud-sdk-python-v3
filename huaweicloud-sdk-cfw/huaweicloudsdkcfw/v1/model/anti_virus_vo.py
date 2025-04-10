@@ -29,7 +29,7 @@ class AntiVirusVO:
     }
 
     def __init__(self, anti_virus_status=None, id=None, name=None):
-        """AntiVirusVO
+        r"""AntiVirusVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AntiVirusVO:
 
     @property
     def anti_virus_status(self):
-        """Gets the anti_virus_status of this AntiVirusVO.
+        r"""Gets the anti_virus_status of this AntiVirusVO.
 
         反病毒开关状态，0表示关闭，1表示开启
 
@@ -68,7 +68,7 @@ class AntiVirusVO:
 
     @anti_virus_status.setter
     def anti_virus_status(self, anti_virus_status):
-        """Sets the anti_virus_status of this AntiVirusVO.
+        r"""Sets the anti_virus_status of this AntiVirusVO.
 
         反病毒开关状态，0表示关闭，1表示开启
 
@@ -79,7 +79,7 @@ class AntiVirusVO:
 
     @property
     def id(self):
-        """Gets the id of this AntiVirusVO.
+        r"""Gets the id of this AntiVirusVO.
 
         防护对象id
 
@@ -90,7 +90,7 @@ class AntiVirusVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AntiVirusVO.
+        r"""Sets the id of this AntiVirusVO.
 
         防护对象id
 
@@ -101,7 +101,7 @@ class AntiVirusVO:
 
     @property
     def name(self):
-        """Gets the name of this AntiVirusVO.
+        r"""Gets the name of this AntiVirusVO.
 
         :return: The name of this AntiVirusVO.
         :rtype: str
@@ -110,7 +110,7 @@ class AntiVirusVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AntiVirusVO.
+        r"""Sets the name of this AntiVirusVO.
 
         :param name: The name of this AntiVirusVO.
         :type name: str

@@ -30,7 +30,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowTestcaseByIdResponse
+        r"""ShowTestcaseByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTestcaseByIdResponse.
+        r"""Gets the code of this ShowTestcaseByIdResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTestcaseByIdResponse.
+        r"""Sets the code of this ShowTestcaseByIdResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowTestcaseByIdResponse.
+        r"""Gets the data of this ShowTestcaseByIdResponse.
 
         :return: The data of this ShowTestcaseByIdResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCase`
@@ -89,7 +89,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowTestcaseByIdResponse.
+        r"""Sets the data of this ShowTestcaseByIdResponse.
 
         :param data: The data of this ShowTestcaseByIdResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.TestCase`
@@ -98,7 +98,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTestcaseByIdResponse.
+        r"""Gets the message of this ShowTestcaseByIdResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class ShowTestcaseByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTestcaseByIdResponse.
+        r"""Sets the message of this ShowTestcaseByIdResponse.
 
         错误信息
 

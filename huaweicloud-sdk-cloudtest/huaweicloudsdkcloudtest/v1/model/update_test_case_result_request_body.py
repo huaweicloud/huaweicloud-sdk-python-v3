@@ -27,7 +27,7 @@ class UpdateTestCaseResultRequestBody:
     }
 
     def __init__(self, service_id=None, execute_list=None):
-        """UpdateTestCaseResultRequestBody
+        r"""UpdateTestCaseResultRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateTestCaseResultRequestBody:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateTestCaseResultRequestBody.
+        r"""Gets the service_id of this UpdateTestCaseResultRequestBody.
 
         注册测试类型服务接口返回的服务id
 
@@ -59,7 +59,7 @@ class UpdateTestCaseResultRequestBody:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateTestCaseResultRequestBody.
+        r"""Sets the service_id of this UpdateTestCaseResultRequestBody.
 
         注册测试类型服务接口返回的服务id
 
@@ -70,7 +70,7 @@ class UpdateTestCaseResultRequestBody:
 
     @property
     def execute_list(self):
-        """Gets the execute_list of this UpdateTestCaseResultRequestBody.
+        r"""Gets the execute_list of this UpdateTestCaseResultRequestBody.
 
         测试用例状态信息，数组长度小于等于50
 
@@ -81,7 +81,7 @@ class UpdateTestCaseResultRequestBody:
 
     @execute_list.setter
     def execute_list(self, execute_list):
-        """Sets the execute_list of this UpdateTestCaseResultRequestBody.
+        r"""Sets the execute_list of this UpdateTestCaseResultRequestBody.
 
         测试用例状态信息，数组长度小于等于50
 

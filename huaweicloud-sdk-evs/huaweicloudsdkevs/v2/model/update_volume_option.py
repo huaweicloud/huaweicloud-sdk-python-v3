@@ -27,7 +27,7 @@ class UpdateVolumeOption:
     }
 
     def __init__(self, description=None, name=None):
-        """UpdateVolumeOption
+        r"""UpdateVolumeOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateVolumeOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVolumeOption.
+        r"""Gets the description of this UpdateVolumeOption.
 
         新的云硬盘的描述，name和description不能同时为null。最大支持255个字节。
 
@@ -61,7 +61,7 @@ class UpdateVolumeOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVolumeOption.
+        r"""Sets the description of this UpdateVolumeOption.
 
         新的云硬盘的描述，name和description不能同时为null。最大支持255个字节。
 
@@ -72,7 +72,7 @@ class UpdateVolumeOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVolumeOption.
+        r"""Gets the name of this UpdateVolumeOption.
 
         新的云硬盘的名字，name和description不能同时为null。最大支持255个字节。
 
@@ -83,7 +83,7 @@ class UpdateVolumeOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVolumeOption.
+        r"""Sets the name of this UpdateVolumeOption.
 
         新的云硬盘的名字，name和description不能同时为null。最大支持255个字节。
 

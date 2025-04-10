@@ -27,7 +27,7 @@ class InstanceLogConfig:
     }
 
     def __init__(self, instance=None, lts_configs=None):
-        """InstanceLogConfig
+        r"""InstanceLogConfig
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InstanceLogConfig:
 
     @property
     def instance(self):
-        """Gets the instance of this InstanceLogConfig.
+        r"""Gets the instance of this InstanceLogConfig.
 
         :return: The instance of this InstanceLogConfig.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.LogInstanceInfo`
@@ -57,7 +57,7 @@ class InstanceLogConfig:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this InstanceLogConfig.
+        r"""Sets the instance of this InstanceLogConfig.
 
         :param instance: The instance of this InstanceLogConfig.
         :type instance: :class:`huaweicloudsdkgaussdbfornosql.v3.LogInstanceInfo`
@@ -66,7 +66,7 @@ class InstanceLogConfig:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this InstanceLogConfig.
+        r"""Gets the lts_configs of this InstanceLogConfig.
 
         LTS日志配置明细。从未设置LTS日志流，不返回该字段。
 
@@ -77,7 +77,7 @@ class InstanceLogConfig:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this InstanceLogConfig.
+        r"""Sets the lts_configs of this InstanceLogConfig.
 
         LTS日志配置明细。从未设置LTS日志流，不返回该字段。
 

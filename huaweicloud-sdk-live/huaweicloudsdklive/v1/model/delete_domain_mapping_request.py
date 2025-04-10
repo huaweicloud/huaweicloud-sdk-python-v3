@@ -27,7 +27,7 @@ class DeleteDomainMappingRequest:
     }
 
     def __init__(self, pull_domain=None, push_domain=None):
-        """DeleteDomainMappingRequest
+        r"""DeleteDomainMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDomainMappingRequest:
 
     @property
     def pull_domain(self):
-        """Gets the pull_domain of this DeleteDomainMappingRequest.
+        r"""Gets the pull_domain of this DeleteDomainMappingRequest.
 
         直播播放域名
 
@@ -59,7 +59,7 @@ class DeleteDomainMappingRequest:
 
     @pull_domain.setter
     def pull_domain(self, pull_domain):
-        """Sets the pull_domain of this DeleteDomainMappingRequest.
+        r"""Sets the pull_domain of this DeleteDomainMappingRequest.
 
         直播播放域名
 
@@ -70,7 +70,7 @@ class DeleteDomainMappingRequest:
 
     @property
     def push_domain(self):
-        """Gets the push_domain of this DeleteDomainMappingRequest.
+        r"""Gets the push_domain of this DeleteDomainMappingRequest.
 
         直播推流域名
 
@@ -81,7 +81,7 @@ class DeleteDomainMappingRequest:
 
     @push_domain.setter
     def push_domain(self, push_domain):
-        """Sets the push_domain of this DeleteDomainMappingRequest.
+        r"""Sets the push_domain of this DeleteDomainMappingRequest.
 
         直播推流域名
 

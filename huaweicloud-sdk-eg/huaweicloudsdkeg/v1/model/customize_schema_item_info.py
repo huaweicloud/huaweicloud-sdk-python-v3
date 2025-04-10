@@ -51,7 +51,7 @@ class CustomizeSchemaItemInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, compatibility=None, provider_type=None, format=None, number_of_versions=None, event_type_id=None, event_type_name=None, event_source_id=None, event_source_name=None, event_source_label=None, created_time=None, updated_time=None):
-        """CustomizeSchemaItemInfo
+        r"""CustomizeSchemaItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def id(self):
-        """Gets the id of this CustomizeSchemaItemInfo.
+        r"""Gets the id of this CustomizeSchemaItemInfo.
 
         事件模型ID
 
@@ -145,7 +145,7 @@ class CustomizeSchemaItemInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomizeSchemaItemInfo.
+        r"""Sets the id of this CustomizeSchemaItemInfo.
 
         事件模型ID
 
@@ -156,7 +156,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def name(self):
-        """Gets the name of this CustomizeSchemaItemInfo.
+        r"""Gets the name of this CustomizeSchemaItemInfo.
 
         事件模型名称，租户下唯一
 
@@ -167,7 +167,7 @@ class CustomizeSchemaItemInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomizeSchemaItemInfo.
+        r"""Sets the name of this CustomizeSchemaItemInfo.
 
         事件模型名称，租户下唯一
 
@@ -178,7 +178,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def description(self):
-        """Gets the description of this CustomizeSchemaItemInfo.
+        r"""Gets the description of this CustomizeSchemaItemInfo.
 
         事件模型描述
 
@@ -189,7 +189,7 @@ class CustomizeSchemaItemInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizeSchemaItemInfo.
+        r"""Sets the description of this CustomizeSchemaItemInfo.
 
         事件模型描述
 
@@ -200,7 +200,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def compatibility(self):
-        """Gets the compatibility of this CustomizeSchemaItemInfo.
+        r"""Gets the compatibility of this CustomizeSchemaItemInfo.
 
         事件模型兼容性
 
@@ -211,7 +211,7 @@ class CustomizeSchemaItemInfo:
 
     @compatibility.setter
     def compatibility(self, compatibility):
-        """Sets the compatibility of this CustomizeSchemaItemInfo.
+        r"""Sets the compatibility of this CustomizeSchemaItemInfo.
 
         事件模型兼容性
 
@@ -222,7 +222,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this CustomizeSchemaItemInfo.
+        r"""Gets the provider_type of this CustomizeSchemaItemInfo.
 
         提供方类型，OFFICIAL：官方事件源；CUSTOM：自定义事件源
 
@@ -233,7 +233,7 @@ class CustomizeSchemaItemInfo:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this CustomizeSchemaItemInfo.
+        r"""Sets the provider_type of this CustomizeSchemaItemInfo.
 
         提供方类型，OFFICIAL：官方事件源；CUSTOM：自定义事件源
 
@@ -244,7 +244,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def format(self):
-        """Gets the format of this CustomizeSchemaItemInfo.
+        r"""Gets the format of this CustomizeSchemaItemInfo.
 
         事件模型格式
 
@@ -255,7 +255,7 @@ class CustomizeSchemaItemInfo:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CustomizeSchemaItemInfo.
+        r"""Sets the format of this CustomizeSchemaItemInfo.
 
         事件模型格式
 
@@ -266,7 +266,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def number_of_versions(self):
-        """Gets the number_of_versions of this CustomizeSchemaItemInfo.
+        r"""Gets the number_of_versions of this CustomizeSchemaItemInfo.
 
         事件模型版本数
 
@@ -277,7 +277,7 @@ class CustomizeSchemaItemInfo:
 
     @number_of_versions.setter
     def number_of_versions(self, number_of_versions):
-        """Sets the number_of_versions of this CustomizeSchemaItemInfo.
+        r"""Sets the number_of_versions of this CustomizeSchemaItemInfo.
 
         事件模型版本数
 
@@ -288,7 +288,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def event_type_id(self):
-        """Gets the event_type_id of this CustomizeSchemaItemInfo.
+        r"""Gets the event_type_id of this CustomizeSchemaItemInfo.
 
         事件类型ID
 
@@ -299,7 +299,7 @@ class CustomizeSchemaItemInfo:
 
     @event_type_id.setter
     def event_type_id(self, event_type_id):
-        """Sets the event_type_id of this CustomizeSchemaItemInfo.
+        r"""Sets the event_type_id of this CustomizeSchemaItemInfo.
 
         事件类型ID
 
@@ -310,7 +310,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def event_type_name(self):
-        """Gets the event_type_name of this CustomizeSchemaItemInfo.
+        r"""Gets the event_type_name of this CustomizeSchemaItemInfo.
 
         事件类型名称
 
@@ -321,7 +321,7 @@ class CustomizeSchemaItemInfo:
 
     @event_type_name.setter
     def event_type_name(self, event_type_name):
-        """Sets the event_type_name of this CustomizeSchemaItemInfo.
+        r"""Sets the event_type_name of this CustomizeSchemaItemInfo.
 
         事件类型名称
 
@@ -332,7 +332,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def event_source_id(self):
-        """Gets the event_source_id of this CustomizeSchemaItemInfo.
+        r"""Gets the event_source_id of this CustomizeSchemaItemInfo.
 
         事件源ID
 
@@ -343,7 +343,7 @@ class CustomizeSchemaItemInfo:
 
     @event_source_id.setter
     def event_source_id(self, event_source_id):
-        """Sets the event_source_id of this CustomizeSchemaItemInfo.
+        r"""Sets the event_source_id of this CustomizeSchemaItemInfo.
 
         事件源ID
 
@@ -354,7 +354,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def event_source_name(self):
-        """Gets the event_source_name of this CustomizeSchemaItemInfo.
+        r"""Gets the event_source_name of this CustomizeSchemaItemInfo.
 
         事件源名称
 
@@ -365,7 +365,7 @@ class CustomizeSchemaItemInfo:
 
     @event_source_name.setter
     def event_source_name(self, event_source_name):
-        """Sets the event_source_name of this CustomizeSchemaItemInfo.
+        r"""Sets the event_source_name of this CustomizeSchemaItemInfo.
 
         事件源名称
 
@@ -376,7 +376,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def event_source_label(self):
-        """Gets the event_source_label of this CustomizeSchemaItemInfo.
+        r"""Gets the event_source_label of this CustomizeSchemaItemInfo.
 
         事件源标签
 
@@ -387,7 +387,7 @@ class CustomizeSchemaItemInfo:
 
     @event_source_label.setter
     def event_source_label(self, event_source_label):
-        """Sets the event_source_label of this CustomizeSchemaItemInfo.
+        r"""Sets the event_source_label of this CustomizeSchemaItemInfo.
 
         事件源标签
 
@@ -398,7 +398,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this CustomizeSchemaItemInfo.
+        r"""Gets the created_time of this CustomizeSchemaItemInfo.
 
         创建时间
 
@@ -409,7 +409,7 @@ class CustomizeSchemaItemInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CustomizeSchemaItemInfo.
+        r"""Sets the created_time of this CustomizeSchemaItemInfo.
 
         创建时间
 
@@ -420,7 +420,7 @@ class CustomizeSchemaItemInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this CustomizeSchemaItemInfo.
+        r"""Gets the updated_time of this CustomizeSchemaItemInfo.
 
         更新时间
 
@@ -431,7 +431,7 @@ class CustomizeSchemaItemInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this CustomizeSchemaItemInfo.
+        r"""Sets the updated_time of this CustomizeSchemaItemInfo.
 
         更新时间
 

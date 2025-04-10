@@ -35,7 +35,7 @@ class GroupInfoSimple:
     }
 
     def __init__(self, created_at=None, group_id=None, state=None, coordinator_id=None, group_desc=None, lag=None):
-        """GroupInfoSimple
+        r"""GroupInfoSimple
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GroupInfoSimple:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GroupInfoSimple.
+        r"""Gets the created_at of this GroupInfoSimple.
 
         创建时间。
 
@@ -89,7 +89,7 @@ class GroupInfoSimple:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GroupInfoSimple.
+        r"""Sets the created_at of this GroupInfoSimple.
 
         创建时间。
 
@@ -100,7 +100,7 @@ class GroupInfoSimple:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GroupInfoSimple.
+        r"""Gets the group_id of this GroupInfoSimple.
 
         消费组ID。
 
@@ -111,7 +111,7 @@ class GroupInfoSimple:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GroupInfoSimple.
+        r"""Sets the group_id of this GroupInfoSimple.
 
         消费组ID。
 
@@ -122,7 +122,7 @@ class GroupInfoSimple:
 
     @property
     def state(self):
-        """Gets the state of this GroupInfoSimple.
+        r"""Gets the state of this GroupInfoSimple.
 
         消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
@@ -133,7 +133,7 @@ class GroupInfoSimple:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this GroupInfoSimple.
+        r"""Sets the state of this GroupInfoSimple.
 
         消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
@@ -144,7 +144,7 @@ class GroupInfoSimple:
 
     @property
     def coordinator_id(self):
-        """Gets the coordinator_id of this GroupInfoSimple.
+        r"""Gets the coordinator_id of this GroupInfoSimple.
 
         协调器编号。
 
@@ -155,7 +155,7 @@ class GroupInfoSimple:
 
     @coordinator_id.setter
     def coordinator_id(self, coordinator_id):
-        """Sets the coordinator_id of this GroupInfoSimple.
+        r"""Sets the coordinator_id of this GroupInfoSimple.
 
         协调器编号。
 
@@ -166,7 +166,7 @@ class GroupInfoSimple:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this GroupInfoSimple.
+        r"""Gets the group_desc of this GroupInfoSimple.
 
         消费组描述。
 
@@ -177,7 +177,7 @@ class GroupInfoSimple:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this GroupInfoSimple.
+        r"""Sets the group_desc of this GroupInfoSimple.
 
         消费组描述。
 
@@ -188,7 +188,7 @@ class GroupInfoSimple:
 
     @property
     def lag(self):
-        """Gets the lag of this GroupInfoSimple.
+        r"""Gets the lag of this GroupInfoSimple.
 
         堆积数。
 
@@ -199,7 +199,7 @@ class GroupInfoSimple:
 
     @lag.setter
     def lag(self, lag):
-        """Sets the lag of this GroupInfoSimple.
+        r"""Sets the lag of this GroupInfoSimple.
 
         堆积数。
 

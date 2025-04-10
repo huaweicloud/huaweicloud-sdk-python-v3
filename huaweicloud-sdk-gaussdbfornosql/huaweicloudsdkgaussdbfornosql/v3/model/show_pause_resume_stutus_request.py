@@ -25,7 +25,7 @@ class ShowPauseResumeStutusRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowPauseResumeStutusRequest
+        r"""ShowPauseResumeStutusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPauseResumeStutusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPauseResumeStutusRequest.
+        r"""Gets the instance_id of this ShowPauseResumeStutusRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowPauseResumeStutusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPauseResumeStutusRequest.
+        r"""Sets the instance_id of this ShowPauseResumeStutusRequest.
 
         实例ID。
 

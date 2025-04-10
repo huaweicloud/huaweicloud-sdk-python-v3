@@ -31,7 +31,7 @@ class PlatformAuthorizationInfo:
     }
 
     def __init__(self, authorize_state=None, authorized_time=None, expire_time=None, account=None):
-        """PlatformAuthorizationInfo
+        r"""PlatformAuthorizationInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PlatformAuthorizationInfo:
 
     @property
     def authorize_state(self):
-        """Gets the authorize_state of this PlatformAuthorizationInfo.
+        r"""Gets the authorize_state of this PlatformAuthorizationInfo.
 
         授权状态。 * AUTHORIZED: 已授权 * UNAUTHORIZED: 未授权
 
@@ -75,7 +75,7 @@ class PlatformAuthorizationInfo:
 
     @authorize_state.setter
     def authorize_state(self, authorize_state):
-        """Sets the authorize_state of this PlatformAuthorizationInfo.
+        r"""Sets the authorize_state of this PlatformAuthorizationInfo.
 
         授权状态。 * AUTHORIZED: 已授权 * UNAUTHORIZED: 未授权
 
@@ -86,7 +86,7 @@ class PlatformAuthorizationInfo:
 
     @property
     def authorized_time(self):
-        """Gets the authorized_time of this PlatformAuthorizationInfo.
+        r"""Gets the authorized_time of this PlatformAuthorizationInfo.
 
         授权时间
 
@@ -97,7 +97,7 @@ class PlatformAuthorizationInfo:
 
     @authorized_time.setter
     def authorized_time(self, authorized_time):
-        """Sets the authorized_time of this PlatformAuthorizationInfo.
+        r"""Sets the authorized_time of this PlatformAuthorizationInfo.
 
         授权时间
 
@@ -108,7 +108,7 @@ class PlatformAuthorizationInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this PlatformAuthorizationInfo.
+        r"""Gets the expire_time of this PlatformAuthorizationInfo.
 
         过期时间
 
@@ -119,7 +119,7 @@ class PlatformAuthorizationInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this PlatformAuthorizationInfo.
+        r"""Sets the expire_time of this PlatformAuthorizationInfo.
 
         过期时间
 
@@ -130,7 +130,7 @@ class PlatformAuthorizationInfo:
 
     @property
     def account(self):
-        """Gets the account of this PlatformAuthorizationInfo.
+        r"""Gets the account of this PlatformAuthorizationInfo.
 
         授权账号信息。 美团平台对应：opBizCode
 
@@ -141,7 +141,7 @@ class PlatformAuthorizationInfo:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this PlatformAuthorizationInfo.
+        r"""Sets the account of this PlatformAuthorizationInfo.
 
         授权账号信息。 美团平台对应：opBizCode
 

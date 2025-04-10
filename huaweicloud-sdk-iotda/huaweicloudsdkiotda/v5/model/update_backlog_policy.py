@@ -31,7 +31,7 @@ class UpdateBacklogPolicy:
     }
 
     def __init__(self, policy_name=None, description=None, backlog_size=None, backlog_time=None):
-        """UpdateBacklogPolicy
+        r"""UpdateBacklogPolicy
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateBacklogPolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateBacklogPolicy.
+        r"""Gets the policy_name of this UpdateBacklogPolicy.
 
         **参数说明**：数据流转积压策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -75,7 +75,7 @@ class UpdateBacklogPolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateBacklogPolicy.
+        r"""Sets the policy_name of this UpdateBacklogPolicy.
 
         **参数说明**：数据流转积压策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -86,7 +86,7 @@ class UpdateBacklogPolicy:
 
     @property
     def description(self):
-        """Gets the description of this UpdateBacklogPolicy.
+        r"""Gets the description of this UpdateBacklogPolicy.
 
         **参数说明**：用户自定义的数据流转积压策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -97,7 +97,7 @@ class UpdateBacklogPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateBacklogPolicy.
+        r"""Sets the description of this UpdateBacklogPolicy.
 
         **参数说明**：用户自定义的数据流转积压策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -108,7 +108,7 @@ class UpdateBacklogPolicy:
 
     @property
     def backlog_size(self):
-        """Gets the backlog_size of this UpdateBacklogPolicy.
+        r"""Gets the backlog_size of this UpdateBacklogPolicy.
 
         **参数说明**：数据积压大小。单位为B（字节），取值范围为0~1073741823的整数，默认为1073741823（即1GB）。当backlog_size为0时，表示不积压。若同时配置了backlog_size和backlog_time两个维度，则以最先达到阈值的维度为准。
 
@@ -119,7 +119,7 @@ class UpdateBacklogPolicy:
 
     @backlog_size.setter
     def backlog_size(self, backlog_size):
-        """Sets the backlog_size of this UpdateBacklogPolicy.
+        r"""Sets the backlog_size of this UpdateBacklogPolicy.
 
         **参数说明**：数据积压大小。单位为B（字节），取值范围为0~1073741823的整数，默认为1073741823（即1GB）。当backlog_size为0时，表示不积压。若同时配置了backlog_size和backlog_time两个维度，则以最先达到阈值的维度为准。
 
@@ -130,7 +130,7 @@ class UpdateBacklogPolicy:
 
     @property
     def backlog_time(self):
-        """Gets the backlog_time of this UpdateBacklogPolicy.
+        r"""Gets the backlog_time of this UpdateBacklogPolicy.
 
         **参数说明**：数据积压时间。单位为s（秒），取值范围为0~86399的整数，默认为86399（即1天）。当backlog_time为0时，表示不积压。若同时配置了backlog_size和backlog_time两个维度，则以最先达到阈值的维度为准。
 
@@ -141,7 +141,7 @@ class UpdateBacklogPolicy:
 
     @backlog_time.setter
     def backlog_time(self, backlog_time):
-        """Sets the backlog_time of this UpdateBacklogPolicy.
+        r"""Sets the backlog_time of this UpdateBacklogPolicy.
 
         **参数说明**：数据积压时间。单位为s（秒），取值范围为0~86399的整数，默认为86399（即1天）。当backlog_time为0时，表示不积压。若同时配置了backlog_size和backlog_time两个维度，则以最先达到阈值的维度为准。
 

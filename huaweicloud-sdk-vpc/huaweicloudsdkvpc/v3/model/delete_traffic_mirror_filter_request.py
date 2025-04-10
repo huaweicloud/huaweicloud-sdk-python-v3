@@ -25,7 +25,7 @@ class DeleteTrafficMirrorFilterRequest:
     }
 
     def __init__(self, traffic_mirror_filter_id=None):
-        """DeleteTrafficMirrorFilterRequest
+        r"""DeleteTrafficMirrorFilterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTrafficMirrorFilterRequest:
 
     @property
     def traffic_mirror_filter_id(self):
-        """Gets the traffic_mirror_filter_id of this DeleteTrafficMirrorFilterRequest.
+        r"""Gets the traffic_mirror_filter_id of this DeleteTrafficMirrorFilterRequest.
 
         流量镜像筛选条件ID
 
@@ -53,7 +53,7 @@ class DeleteTrafficMirrorFilterRequest:
 
     @traffic_mirror_filter_id.setter
     def traffic_mirror_filter_id(self, traffic_mirror_filter_id):
-        """Sets the traffic_mirror_filter_id of this DeleteTrafficMirrorFilterRequest.
+        r"""Sets the traffic_mirror_filter_id of this DeleteTrafficMirrorFilterRequest.
 
         流量镜像筛选条件ID
 

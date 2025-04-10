@@ -24,7 +24,7 @@ class BatchDeleteQueuesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteQueuesResponse
+        r"""BatchDeleteQueuesResponse
 
         The model defined in huaweicloud sdk
 

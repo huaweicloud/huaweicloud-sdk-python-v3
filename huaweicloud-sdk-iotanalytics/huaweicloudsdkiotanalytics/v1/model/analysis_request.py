@@ -31,7 +31,7 @@ class AnalysisRequest:
     }
 
     def __init__(self, name=None, transform=None, aggregate=None, stream=None):
-        """AnalysisRequest
+        r"""AnalysisRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AnalysisRequest:
 
     @property
     def name(self):
-        """Gets the name of this AnalysisRequest.
+        r"""Gets the name of this AnalysisRequest.
 
         分析任务名，必须是模型中已存在的
 
@@ -74,7 +74,7 @@ class AnalysisRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AnalysisRequest.
+        r"""Sets the name of this AnalysisRequest.
 
         分析任务名，必须是模型中已存在的
 
@@ -85,7 +85,7 @@ class AnalysisRequest:
 
     @property
     def transform(self):
-        """Gets the transform of this AnalysisRequest.
+        r"""Gets the transform of this AnalysisRequest.
 
         :return: The transform of this AnalysisRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTTransformRequest`
@@ -94,7 +94,7 @@ class AnalysisRequest:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this AnalysisRequest.
+        r"""Sets the transform of this AnalysisRequest.
 
         :param transform: The transform of this AnalysisRequest.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.DTTransformRequest`
@@ -103,7 +103,7 @@ class AnalysisRequest:
 
     @property
     def aggregate(self):
-        """Gets the aggregate of this AnalysisRequest.
+        r"""Gets the aggregate of this AnalysisRequest.
 
         :return: The aggregate of this AnalysisRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTAggregateRequest`
@@ -112,7 +112,7 @@ class AnalysisRequest:
 
     @aggregate.setter
     def aggregate(self, aggregate):
-        """Sets the aggregate of this AnalysisRequest.
+        r"""Sets the aggregate of this AnalysisRequest.
 
         :param aggregate: The aggregate of this AnalysisRequest.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.DTAggregateRequest`
@@ -121,7 +121,7 @@ class AnalysisRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this AnalysisRequest.
+        r"""Gets the stream of this AnalysisRequest.
 
         :return: The stream of this AnalysisRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTStreamRequest`
@@ -130,7 +130,7 @@ class AnalysisRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this AnalysisRequest.
+        r"""Sets the stream of this AnalysisRequest.
 
         :param stream: The stream of this AnalysisRequest.
         :type stream: :class:`huaweicloudsdkiotanalytics.v1.DTStreamRequest`

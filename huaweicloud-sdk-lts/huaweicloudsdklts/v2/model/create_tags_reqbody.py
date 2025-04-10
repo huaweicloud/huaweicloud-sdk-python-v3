@@ -29,7 +29,7 @@ class CreateTagsReqbody:
     }
 
     def __init__(self, action=None, is_open=None, tags=None):
-        """CreateTagsReqbody
+        r"""CreateTagsReqbody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateTagsReqbody:
 
     @property
     def action(self):
-        """Gets the action of this CreateTagsReqbody.
+        r"""Gets the action of this CreateTagsReqbody.
 
         添加标签方式
 
@@ -65,7 +65,7 @@ class CreateTagsReqbody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateTagsReqbody.
+        r"""Sets the action of this CreateTagsReqbody.
 
         添加标签方式
 
@@ -76,7 +76,7 @@ class CreateTagsReqbody:
 
     @property
     def is_open(self):
-        """Gets the is_open of this CreateTagsReqbody.
+        r"""Gets the is_open of this CreateTagsReqbody.
 
         是否对外接口调用
 
@@ -87,7 +87,7 @@ class CreateTagsReqbody:
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this CreateTagsReqbody.
+        r"""Sets the is_open of this CreateTagsReqbody.
 
         是否对外接口调用
 
@@ -98,7 +98,7 @@ class CreateTagsReqbody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTagsReqbody.
+        r"""Gets the tags of this CreateTagsReqbody.
 
         标签字段信息
 
@@ -109,7 +109,7 @@ class CreateTagsReqbody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTagsReqbody.
+        r"""Sets the tags of this CreateTagsReqbody.
 
         标签字段信息
 

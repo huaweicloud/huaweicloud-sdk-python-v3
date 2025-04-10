@@ -24,7 +24,7 @@ class DeleteScalingInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteScalingInstanceResponse
+        r"""DeleteScalingInstanceResponse
 
         The model defined in huaweicloud sdk
 

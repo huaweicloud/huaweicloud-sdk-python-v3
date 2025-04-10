@@ -28,7 +28,7 @@ class AddEndpointPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, x_request_id=None):
-        """AddEndpointPermissionsResponse
+        r"""AddEndpointPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddEndpointPermissionsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this AddEndpointPermissionsResponse.
+        r"""Gets the permissions of this AddEndpointPermissionsResponse.
 
         白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
@@ -62,7 +62,7 @@ class AddEndpointPermissionsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this AddEndpointPermissionsResponse.
+        r"""Sets the permissions of this AddEndpointPermissionsResponse.
 
         白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
@@ -73,7 +73,7 @@ class AddEndpointPermissionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AddEndpointPermissionsResponse.
+        r"""Gets the x_request_id of this AddEndpointPermissionsResponse.
 
         :return: The x_request_id of this AddEndpointPermissionsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class AddEndpointPermissionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AddEndpointPermissionsResponse.
+        r"""Sets the x_request_id of this AddEndpointPermissionsResponse.
 
         :param x_request_id: The x_request_id of this AddEndpointPermissionsResponse.
         :type x_request_id: str

@@ -43,7 +43,7 @@ class OneHpcCacheTaskInfoResp:
     }
 
     def __init__(self, task_id=None, type=None, status=None, src_target=None, src_prefix=None, dest_target=None, dest_prefix=None, start_time=None, end_time=None, message=None):
-        """OneHpcCacheTaskInfoResp
+        r"""OneHpcCacheTaskInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def task_id(self):
-        """Gets the task_id of this OneHpcCacheTaskInfoResp.
+        r"""Gets the task_id of this OneHpcCacheTaskInfoResp.
 
         任务ID
 
@@ -107,7 +107,7 @@ class OneHpcCacheTaskInfoResp:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this OneHpcCacheTaskInfoResp.
+        r"""Sets the task_id of this OneHpcCacheTaskInfoResp.
 
         任务ID
 
@@ -118,7 +118,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def type(self):
-        """Gets the type of this OneHpcCacheTaskInfoResp.
+        r"""Gets the type of this OneHpcCacheTaskInfoResp.
 
         任务类型
 
@@ -129,7 +129,7 @@ class OneHpcCacheTaskInfoResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OneHpcCacheTaskInfoResp.
+        r"""Sets the type of this OneHpcCacheTaskInfoResp.
 
         任务类型
 
@@ -140,7 +140,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def status(self):
-        """Gets the status of this OneHpcCacheTaskInfoResp.
+        r"""Gets the status of this OneHpcCacheTaskInfoResp.
 
         任务状态
 
@@ -151,7 +151,7 @@ class OneHpcCacheTaskInfoResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OneHpcCacheTaskInfoResp.
+        r"""Sets the status of this OneHpcCacheTaskInfoResp.
 
         任务状态
 
@@ -162,7 +162,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def src_target(self):
-        """Gets the src_target of this OneHpcCacheTaskInfoResp.
+        r"""Gets the src_target of this OneHpcCacheTaskInfoResp.
 
         联动目录名称
 
@@ -173,7 +173,7 @@ class OneHpcCacheTaskInfoResp:
 
     @src_target.setter
     def src_target(self, src_target):
-        """Sets the src_target of this OneHpcCacheTaskInfoResp.
+        r"""Sets the src_target of this OneHpcCacheTaskInfoResp.
 
         联动目录名称
 
@@ -184,7 +184,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def src_prefix(self):
-        """Gets the src_prefix of this OneHpcCacheTaskInfoResp.
+        r"""Gets the src_prefix of this OneHpcCacheTaskInfoResp.
 
         导入导出任务的源端路径前缀
 
@@ -195,7 +195,7 @@ class OneHpcCacheTaskInfoResp:
 
     @src_prefix.setter
     def src_prefix(self, src_prefix):
-        """Sets the src_prefix of this OneHpcCacheTaskInfoResp.
+        r"""Sets the src_prefix of this OneHpcCacheTaskInfoResp.
 
         导入导出任务的源端路径前缀
 
@@ -206,7 +206,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def dest_target(self):
-        """Gets the dest_target of this OneHpcCacheTaskInfoResp.
+        r"""Gets the dest_target of this OneHpcCacheTaskInfoResp.
 
         和src_target保持一致
 
@@ -217,7 +217,7 @@ class OneHpcCacheTaskInfoResp:
 
     @dest_target.setter
     def dest_target(self, dest_target):
-        """Sets the dest_target of this OneHpcCacheTaskInfoResp.
+        r"""Sets the dest_target of this OneHpcCacheTaskInfoResp.
 
         和src_target保持一致
 
@@ -228,7 +228,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def dest_prefix(self):
-        """Gets the dest_prefix of this OneHpcCacheTaskInfoResp.
+        r"""Gets the dest_prefix of this OneHpcCacheTaskInfoResp.
 
         和src_prefix保持一致
 
@@ -239,7 +239,7 @@ class OneHpcCacheTaskInfoResp:
 
     @dest_prefix.setter
     def dest_prefix(self, dest_prefix):
-        """Sets the dest_prefix of this OneHpcCacheTaskInfoResp.
+        r"""Sets the dest_prefix of this OneHpcCacheTaskInfoResp.
 
         和src_prefix保持一致
 
@@ -250,7 +250,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OneHpcCacheTaskInfoResp.
+        r"""Gets the start_time of this OneHpcCacheTaskInfoResp.
 
         任务开始时间
 
@@ -261,7 +261,7 @@ class OneHpcCacheTaskInfoResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OneHpcCacheTaskInfoResp.
+        r"""Sets the start_time of this OneHpcCacheTaskInfoResp.
 
         任务开始时间
 
@@ -272,7 +272,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OneHpcCacheTaskInfoResp.
+        r"""Gets the end_time of this OneHpcCacheTaskInfoResp.
 
         任务结束时间
 
@@ -283,7 +283,7 @@ class OneHpcCacheTaskInfoResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OneHpcCacheTaskInfoResp.
+        r"""Sets the end_time of this OneHpcCacheTaskInfoResp.
 
         任务结束时间
 
@@ -294,7 +294,7 @@ class OneHpcCacheTaskInfoResp:
 
     @property
     def message(self):
-        """Gets the message of this OneHpcCacheTaskInfoResp.
+        r"""Gets the message of this OneHpcCacheTaskInfoResp.
 
         任务执行结果信息
 
@@ -305,7 +305,7 @@ class OneHpcCacheTaskInfoResp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this OneHpcCacheTaskInfoResp.
+        r"""Sets the message of this OneHpcCacheTaskInfoResp.
 
         任务执行结果信息
 

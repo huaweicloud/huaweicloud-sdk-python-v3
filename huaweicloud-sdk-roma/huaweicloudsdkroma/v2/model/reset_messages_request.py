@@ -29,7 +29,7 @@ class ResetMessagesRequest:
     }
 
     def __init__(self, instance_id=None, action_id=None, body=None):
-        """ResetMessagesRequest
+        r"""ResetMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetMessagesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetMessagesRequest.
+        r"""Gets the instance_id of this ResetMessagesRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ResetMessagesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetMessagesRequest.
+        r"""Sets the instance_id of this ResetMessagesRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ResetMessagesRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ResetMessagesRequest.
+        r"""Gets the action_id of this ResetMessagesRequest.
 
         重发类型。当前只支持“resend”。
 
@@ -88,7 +88,7 @@ class ResetMessagesRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ResetMessagesRequest.
+        r"""Sets the action_id of this ResetMessagesRequest.
 
         重发类型。当前只支持“resend”。
 
@@ -99,7 +99,7 @@ class ResetMessagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetMessagesRequest.
+        r"""Gets the body of this ResetMessagesRequest.
 
         :return: The body of this ResetMessagesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`
@@ -108,7 +108,7 @@ class ResetMessagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetMessagesRequest.
+        r"""Sets the body of this ResetMessagesRequest.
 
         :param body: The body of this ResetMessagesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`

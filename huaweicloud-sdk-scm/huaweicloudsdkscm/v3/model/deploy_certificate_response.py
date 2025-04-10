@@ -26,7 +26,7 @@ class DeployCertificateResponse(SdkResponse):
     }
 
     def __init__(self, failure_list=None):
-        """DeployCertificateResponse
+        r"""DeployCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeployCertificateResponse(SdkResponse):
 
     @property
     def failure_list(self):
-        """Gets the failure_list of this DeployCertificateResponse.
+        r"""Gets the failure_list of this DeployCertificateResponse.
 
         部署失败的资源列表。
 
@@ -55,7 +55,7 @@ class DeployCertificateResponse(SdkResponse):
 
     @failure_list.setter
     def failure_list(self, failure_list):
-        """Sets the failure_list of this DeployCertificateResponse.
+        r"""Sets the failure_list of this DeployCertificateResponse.
 
         部署失败的资源列表。
 

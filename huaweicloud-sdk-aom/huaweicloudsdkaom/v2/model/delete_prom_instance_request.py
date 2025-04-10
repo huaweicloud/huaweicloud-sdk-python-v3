@@ -27,7 +27,7 @@ class DeletePromInstanceRequest:
     }
 
     def __init__(self, prom_id=None, enterprise_project_id=None):
-        """DeletePromInstanceRequest
+        r"""DeletePromInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePromInstanceRequest:
 
     @property
     def prom_id(self):
-        """Gets the prom_id of this DeletePromInstanceRequest.
+        r"""Gets the prom_id of this DeletePromInstanceRequest.
 
         Prometheus实例id。
 
@@ -59,7 +59,7 @@ class DeletePromInstanceRequest:
 
     @prom_id.setter
     def prom_id(self, prom_id):
-        """Sets the prom_id of this DeletePromInstanceRequest.
+        r"""Sets the prom_id of this DeletePromInstanceRequest.
 
         Prometheus实例id。
 
@@ -70,7 +70,7 @@ class DeletePromInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeletePromInstanceRequest.
+        r"""Gets the enterprise_project_id of this DeletePromInstanceRequest.
 
         企业项目id。 - 删除单个企业项目下实例，填写企业项目id。
 
@@ -81,7 +81,7 @@ class DeletePromInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeletePromInstanceRequest.
+        r"""Sets the enterprise_project_id of this DeletePromInstanceRequest.
 
         企业项目id。 - 删除单个企业项目下实例，填写企业项目id。
 

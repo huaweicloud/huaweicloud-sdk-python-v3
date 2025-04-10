@@ -35,7 +35,7 @@ class CreateDatasourceConnectionRequestBody:
     }
 
     def __init__(self, name=None, service=None, security_group_id=None, network_id=None, url=None, tags=None):
-        """CreateDatasourceConnectionRequestBody
+        r"""CreateDatasourceConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatasourceConnectionRequestBody.
+        r"""Gets the name of this CreateDatasourceConnectionRequestBody.
 
         连接名称。
 
@@ -84,7 +84,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatasourceConnectionRequestBody.
+        r"""Sets the name of this CreateDatasourceConnectionRequestBody.
 
         连接名称。
 
@@ -95,7 +95,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @property
     def service(self):
-        """Gets the service of this CreateDatasourceConnectionRequestBody.
+        r"""Gets the service of this CreateDatasourceConnectionRequestBody.
 
         服务名称，目前为CloudTable.OpenTSDB/CloudTable，MRS.OPENTSDB，DWS，RDS，CSS。 说明： 大小写不敏感。
 
@@ -106,7 +106,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this CreateDatasourceConnectionRequestBody.
+        r"""Sets the service of this CreateDatasourceConnectionRequestBody.
 
         服务名称，目前为CloudTable.OpenTSDB/CloudTable，MRS.OPENTSDB，DWS，RDS，CSS。 说明： 大小写不敏感。
 
@@ -117,7 +117,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateDatasourceConnectionRequestBody.
+        r"""Gets the security_group_id of this CreateDatasourceConnectionRequestBody.
 
         用户指定安全组ID，即为需要建立连接的服务所在的安全组。
 
@@ -128,7 +128,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateDatasourceConnectionRequestBody.
+        r"""Sets the security_group_id of this CreateDatasourceConnectionRequestBody.
 
         用户指定安全组ID，即为需要建立连接的服务所在的安全组。
 
@@ -139,7 +139,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @property
     def network_id(self):
-        """Gets the network_id of this CreateDatasourceConnectionRequestBody.
+        r"""Gets the network_id of this CreateDatasourceConnectionRequestBody.
 
         对应服务的子网网络ID，即为需要建立连接的服务所在的子网。
 
@@ -150,7 +150,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this CreateDatasourceConnectionRequestBody.
+        r"""Sets the network_id of this CreateDatasourceConnectionRequestBody.
 
         对应服务的子网网络ID，即为需要建立连接的服务所在的子网。
 
@@ -161,7 +161,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this CreateDatasourceConnectionRequestBody.
+        r"""Gets the url of this CreateDatasourceConnectionRequestBody.
 
         对应服务对外提供的访问url。长度不能超过512个字符。
 
@@ -172,7 +172,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateDatasourceConnectionRequestBody.
+        r"""Sets the url of this CreateDatasourceConnectionRequestBody.
 
         对应服务对外提供的访问url。长度不能超过512个字符。
 
@@ -183,7 +183,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDatasourceConnectionRequestBody.
+        r"""Gets the tags of this CreateDatasourceConnectionRequestBody.
 
         标签
 
@@ -194,7 +194,7 @@ class CreateDatasourceConnectionRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDatasourceConnectionRequestBody.
+        r"""Sets the tags of this CreateDatasourceConnectionRequestBody.
 
         标签
 

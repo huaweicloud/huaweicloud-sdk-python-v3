@@ -27,7 +27,7 @@ class UpdateInitPasswordRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateInitPasswordRequest
+        r"""UpdateInitPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInitPasswordRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateInitPasswordRequest.
+        r"""Gets the user_id of this UpdateInitPasswordRequest.
 
         用户id
 
@@ -60,7 +60,7 @@ class UpdateInitPasswordRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateInitPasswordRequest.
+        r"""Sets the user_id of this UpdateInitPasswordRequest.
 
         用户id
 
@@ -71,7 +71,7 @@ class UpdateInitPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInitPasswordRequest.
+        r"""Gets the body of this UpdateInitPasswordRequest.
 
         :return: The body of this UpdateInitPasswordRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ResetPasswordReq`
@@ -80,7 +80,7 @@ class UpdateInitPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInitPasswordRequest.
+        r"""Sets the body of this UpdateInitPasswordRequest.
 
         :param body: The body of this UpdateInitPasswordRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ResetPasswordReq`

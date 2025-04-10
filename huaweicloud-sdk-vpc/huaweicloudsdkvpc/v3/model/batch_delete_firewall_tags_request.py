@@ -27,7 +27,7 @@ class BatchDeleteFirewallTagsRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """BatchDeleteFirewallTagsRequest
+        r"""BatchDeleteFirewallTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteFirewallTagsRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this BatchDeleteFirewallTagsRequest.
+        r"""Gets the firewall_id of this BatchDeleteFirewallTagsRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -60,7 +60,7 @@ class BatchDeleteFirewallTagsRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this BatchDeleteFirewallTagsRequest.
+        r"""Sets the firewall_id of this BatchDeleteFirewallTagsRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -71,7 +71,7 @@ class BatchDeleteFirewallTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteFirewallTagsRequest.
+        r"""Gets the body of this BatchDeleteFirewallTagsRequest.
 
         :return: The body of this BatchDeleteFirewallTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchDeleteFirewallTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteFirewallTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteFirewallTagsRequest.
+        r"""Sets the body of this BatchDeleteFirewallTagsRequest.
 
         :param body: The body of this BatchDeleteFirewallTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.BatchDeleteFirewallTagsRequestBody`

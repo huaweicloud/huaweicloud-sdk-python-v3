@@ -30,7 +30,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, rtc_room_info=None, x_request_id=None):
-        """CreateVideoMotionCaptureJobResponse
+        r"""CreateVideoMotionCaptureJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateVideoMotionCaptureJobResponse.
+        r"""Gets the job_id of this CreateVideoMotionCaptureJobResponse.
 
         视频驱动动作任务ID
 
@@ -69,7 +69,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateVideoMotionCaptureJobResponse.
+        r"""Sets the job_id of this CreateVideoMotionCaptureJobResponse.
 
         视频驱动动作任务ID
 
@@ -80,7 +80,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def rtc_room_info(self):
-        """Gets the rtc_room_info of this CreateVideoMotionCaptureJobResponse.
+        r"""Gets the rtc_room_info of this CreateVideoMotionCaptureJobResponse.
 
         :return: The rtc_room_info of this CreateVideoMotionCaptureJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -89,7 +89,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     @rtc_room_info.setter
     def rtc_room_info(self, rtc_room_info):
-        """Sets the rtc_room_info of this CreateVideoMotionCaptureJobResponse.
+        r"""Sets the rtc_room_info of this CreateVideoMotionCaptureJobResponse.
 
         :param rtc_room_info: The rtc_room_info of this CreateVideoMotionCaptureJobResponse.
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -98,7 +98,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateVideoMotionCaptureJobResponse.
+        r"""Gets the x_request_id of this CreateVideoMotionCaptureJobResponse.
 
         :return: The x_request_id of this CreateVideoMotionCaptureJobResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateVideoMotionCaptureJobResponse.
+        r"""Sets the x_request_id of this CreateVideoMotionCaptureJobResponse.
 
         :param x_request_id: The x_request_id of this CreateVideoMotionCaptureJobResponse.
         :type x_request_id: str

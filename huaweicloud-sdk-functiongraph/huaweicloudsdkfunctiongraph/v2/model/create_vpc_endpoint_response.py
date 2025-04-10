@@ -28,7 +28,7 @@ class CreateVpcEndpointResponse(SdkResponse):
     }
 
     def __init__(self, endpoints=None, address=None):
-        """CreateVpcEndpointResponse
+        r"""CreateVpcEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateVpcEndpointResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this CreateVpcEndpointResponse.
+        r"""Gets the endpoints of this CreateVpcEndpointResponse.
 
         Ip列表
 
@@ -62,7 +62,7 @@ class CreateVpcEndpointResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this CreateVpcEndpointResponse.
+        r"""Sets the endpoints of this CreateVpcEndpointResponse.
 
         Ip列表
 
@@ -73,7 +73,7 @@ class CreateVpcEndpointResponse(SdkResponse):
 
     @property
     def address(self):
-        """Gets the address of this CreateVpcEndpointResponse.
+        r"""Gets the address of this CreateVpcEndpointResponse.
 
         域名地址
 
@@ -84,7 +84,7 @@ class CreateVpcEndpointResponse(SdkResponse):
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CreateVpcEndpointResponse.
+        r"""Sets the address of this CreateVpcEndpointResponse.
 
         域名地址
 

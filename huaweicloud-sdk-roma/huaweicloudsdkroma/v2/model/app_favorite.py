@@ -23,7 +23,7 @@ class AppFavorite:
     }
 
     def __init__(self):
-        """AppFavorite
+        r"""AppFavorite
 
         The model defined in huaweicloud sdk
 

@@ -32,7 +32,7 @@ class ShowSparkJobLogResponse(SdkResponse):
     }
 
     def __init__(self, id=None, _from=None, total=None, log=None):
-        """ShowSparkJobLogResponse
+        r"""ShowSparkJobLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSparkJobLogResponse.
+        r"""Gets the id of this ShowSparkJobLogResponse.
 
         批处理作业的id。
 
@@ -76,7 +76,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSparkJobLogResponse.
+        r"""Sets the id of this ShowSparkJobLogResponse.
 
         批处理作业的id。
 
@@ -87,7 +87,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @property
     def _from(self):
-        """Gets the _from of this ShowSparkJobLogResponse.
+        r"""Gets the _from of this ShowSparkJobLogResponse.
 
         日志起始索引。
 
@@ -98,7 +98,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ShowSparkJobLogResponse.
+        r"""Sets the _from of this ShowSparkJobLogResponse.
 
         日志起始索引。
 
@@ -109,7 +109,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowSparkJobLogResponse.
+        r"""Gets the total of this ShowSparkJobLogResponse.
 
         日志的总记录数。
 
@@ -120,7 +120,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowSparkJobLogResponse.
+        r"""Sets the total of this ShowSparkJobLogResponse.
 
         日志的总记录数。
 
@@ -131,7 +131,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @property
     def log(self):
-        """Gets the log of this ShowSparkJobLogResponse.
+        r"""Gets the log of this ShowSparkJobLogResponse.
 
         显示当前批处理作业日志。
 
@@ -142,7 +142,7 @@ class ShowSparkJobLogResponse(SdkResponse):
 
     @log.setter
     def log(self, log):
-        """Sets the log of this ShowSparkJobLogResponse.
+        r"""Sets the log of this ShowSparkJobLogResponse.
 
         显示当前批处理作业日志。
 

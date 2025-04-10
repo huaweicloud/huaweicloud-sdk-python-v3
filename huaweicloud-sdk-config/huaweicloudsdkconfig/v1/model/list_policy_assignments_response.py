@@ -28,7 +28,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListPolicyAssignmentsResponse
+        r"""ListPolicyAssignmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListPolicyAssignmentsResponse.
+        r"""Gets the value of this ListPolicyAssignmentsResponse.
 
         规则列表
 
@@ -62,7 +62,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListPolicyAssignmentsResponse.
+        r"""Sets the value of this ListPolicyAssignmentsResponse.
 
         规则列表
 
@@ -73,7 +73,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPolicyAssignmentsResponse.
+        r"""Gets the page_info of this ListPolicyAssignmentsResponse.
 
         :return: The page_info of this ListPolicyAssignmentsResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPolicyAssignmentsResponse.
+        r"""Sets the page_info of this ListPolicyAssignmentsResponse.
 
         :param page_info: The page_info of this ListPolicyAssignmentsResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

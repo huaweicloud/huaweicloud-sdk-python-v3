@@ -37,7 +37,7 @@ class VisionActiveCodeDTO:
     }
 
     def __init__(self, dev_type=None, dept_code=None, dev_name=None, description=None, sms_number=None, country=None, email_addr=None):
-        """VisionActiveCodeDTO
+        r"""VisionActiveCodeDTO
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class VisionActiveCodeDTO:
 
     @property
     def dev_type(self):
-        """Gets the dev_type of this VisionActiveCodeDTO.
+        r"""Gets the dev_type of this VisionActiveCodeDTO.
 
         终端类型。 - idea-hub：智能协作大屏 - huawei-vision：智慧屏TV - welink-desktop(iwb)：SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
@@ -94,7 +94,7 @@ class VisionActiveCodeDTO:
 
     @dev_type.setter
     def dev_type(self, dev_type):
-        """Sets the dev_type of this VisionActiveCodeDTO.
+        r"""Sets the dev_type of this VisionActiveCodeDTO.
 
         终端类型。 - idea-hub：智能协作大屏 - huawei-vision：智慧屏TV - welink-desktop(iwb)：SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
@@ -105,7 +105,7 @@ class VisionActiveCodeDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this VisionActiveCodeDTO.
+        r"""Gets the dept_code of this VisionActiveCodeDTO.
 
         部门编码，若不携带则默认根部门。
 
@@ -116,7 +116,7 @@ class VisionActiveCodeDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this VisionActiveCodeDTO.
+        r"""Sets the dept_code of this VisionActiveCodeDTO.
 
         部门编码，若不携带则默认根部门。
 
@@ -127,7 +127,7 @@ class VisionActiveCodeDTO:
 
     @property
     def dev_name(self):
-        """Gets the dev_name of this VisionActiveCodeDTO.
+        r"""Gets the dev_name of this VisionActiveCodeDTO.
 
         终端的名称。
 
@@ -138,7 +138,7 @@ class VisionActiveCodeDTO:
 
     @dev_name.setter
     def dev_name(self, dev_name):
-        """Sets the dev_name of this VisionActiveCodeDTO.
+        r"""Sets the dev_name of this VisionActiveCodeDTO.
 
         终端的名称。
 
@@ -149,7 +149,7 @@ class VisionActiveCodeDTO:
 
     @property
     def description(self):
-        """Gets the description of this VisionActiveCodeDTO.
+        r"""Gets the description of this VisionActiveCodeDTO.
 
         描述信息。
 
@@ -160,7 +160,7 @@ class VisionActiveCodeDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VisionActiveCodeDTO.
+        r"""Sets the description of this VisionActiveCodeDTO.
 
         描述信息。
 
@@ -171,7 +171,7 @@ class VisionActiveCodeDTO:
 
     @property
     def sms_number(self):
-        """Gets the sms_number of this VisionActiveCodeDTO.
+        r"""Gets the sms_number of this VisionActiveCodeDTO.
 
         号码信息，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$) 
 
@@ -182,7 +182,7 @@ class VisionActiveCodeDTO:
 
     @sms_number.setter
     def sms_number(self, sms_number):
-        """Sets the sms_number of this VisionActiveCodeDTO.
+        r"""Sets the sms_number of this VisionActiveCodeDTO.
 
         号码信息，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$) 
 
@@ -193,7 +193,7 @@ class VisionActiveCodeDTO:
 
     @property
     def country(self):
-        """Gets the country of this VisionActiveCodeDTO.
+        r"""Gets the country of this VisionActiveCodeDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -204,7 +204,7 @@ class VisionActiveCodeDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this VisionActiveCodeDTO.
+        r"""Sets the country of this VisionActiveCodeDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -215,7 +215,7 @@ class VisionActiveCodeDTO:
 
     @property
     def email_addr(self):
-        """Gets the email_addr of this VisionActiveCodeDTO.
+        r"""Gets the email_addr of this VisionActiveCodeDTO.
 
         邮箱地址。 > 如无中国大陆手机号，则邮箱必填。 
 
@@ -226,7 +226,7 @@ class VisionActiveCodeDTO:
 
     @email_addr.setter
     def email_addr(self, email_addr):
-        """Sets the email_addr of this VisionActiveCodeDTO.
+        r"""Sets the email_addr of this VisionActiveCodeDTO.
 
         邮箱地址。 > 如无中国大陆手机号，则邮箱必填。 
 

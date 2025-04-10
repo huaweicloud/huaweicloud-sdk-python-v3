@@ -27,7 +27,7 @@ class CreateBindPublicRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateBindPublicRequest
+        r"""CreateBindPublicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateBindPublicRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateBindPublicRequest.
+        r"""Gets the cluster_id of this CreateBindPublicRequest.
 
         指定开启公网访问的集群ID。
 
@@ -60,7 +60,7 @@ class CreateBindPublicRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateBindPublicRequest.
+        r"""Sets the cluster_id of this CreateBindPublicRequest.
 
         指定开启公网访问的集群ID。
 
@@ -71,7 +71,7 @@ class CreateBindPublicRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBindPublicRequest.
+        r"""Gets the body of this CreateBindPublicRequest.
 
         :return: The body of this CreateBindPublicRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReq`
@@ -80,7 +80,7 @@ class CreateBindPublicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBindPublicRequest.
+        r"""Sets the body of this CreateBindPublicRequest.
 
         :param body: The body of this CreateBindPublicRequest.
         :type body: :class:`huaweicloudsdkcss.v1.BindPublicReq`

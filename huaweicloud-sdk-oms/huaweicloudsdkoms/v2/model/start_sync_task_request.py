@@ -27,7 +27,7 @@ class StartSyncTaskRequest:
     }
 
     def __init__(self, sync_task_id=None, body=None):
-        """StartSyncTaskRequest
+        r"""StartSyncTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartSyncTaskRequest:
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this StartSyncTaskRequest.
+        r"""Gets the sync_task_id of this StartSyncTaskRequest.
 
         同步任务ID。
 
@@ -60,7 +60,7 @@ class StartSyncTaskRequest:
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this StartSyncTaskRequest.
+        r"""Sets the sync_task_id of this StartSyncTaskRequest.
 
         同步任务ID。
 
@@ -71,7 +71,7 @@ class StartSyncTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartSyncTaskRequest.
+        r"""Gets the body of this StartSyncTaskRequest.
 
         :return: The body of this StartSyncTaskRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.StartSyncTaskReq`
@@ -80,7 +80,7 @@ class StartSyncTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartSyncTaskRequest.
+        r"""Sets the body of this StartSyncTaskRequest.
 
         :param body: The body of this StartSyncTaskRequest.
         :type body: :class:`huaweicloudsdkoms.v2.StartSyncTaskReq`

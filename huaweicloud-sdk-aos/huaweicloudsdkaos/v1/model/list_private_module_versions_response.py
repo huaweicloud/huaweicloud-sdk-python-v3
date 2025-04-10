@@ -26,7 +26,7 @@ class ListPrivateModuleVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """ListPrivateModuleVersionsResponse
+        r"""ListPrivateModuleVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPrivateModuleVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListPrivateModuleVersionsResponse.
+        r"""Gets the versions of this ListPrivateModuleVersionsResponse.
 
         私有模块版本的列表。默认以创建时间升序排序。
 
@@ -55,7 +55,7 @@ class ListPrivateModuleVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListPrivateModuleVersionsResponse.
+        r"""Sets the versions of this ListPrivateModuleVersionsResponse.
 
         私有模块版本的列表。默认以创建时间升序排序。
 

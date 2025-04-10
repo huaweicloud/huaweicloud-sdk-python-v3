@@ -29,7 +29,7 @@ class LiveDetectRespVideoresult:
     }
 
     def __init__(self, alive=None, actions=None, picture=None):
-        """LiveDetectRespVideoresult
+        r"""LiveDetectRespVideoresult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LiveDetectRespVideoresult:
 
     @property
     def alive(self):
-        """Gets the alive of this LiveDetectRespVideoresult.
+        r"""Gets the alive of this LiveDetectRespVideoresult.
 
         是否是活体。
 
@@ -68,7 +68,7 @@ class LiveDetectRespVideoresult:
 
     @alive.setter
     def alive(self, alive):
-        """Sets the alive of this LiveDetectRespVideoresult.
+        r"""Sets the alive of this LiveDetectRespVideoresult.
 
         是否是活体。
 
@@ -79,7 +79,7 @@ class LiveDetectRespVideoresult:
 
     @property
     def actions(self):
-        """Gets the actions of this LiveDetectRespVideoresult.
+        r"""Gets the actions of this LiveDetectRespVideoresult.
 
         动作列表。
 
@@ -90,7 +90,7 @@ class LiveDetectRespVideoresult:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this LiveDetectRespVideoresult.
+        r"""Sets the actions of this LiveDetectRespVideoresult.
 
         动作列表。
 
@@ -101,7 +101,7 @@ class LiveDetectRespVideoresult:
 
     @property
     def picture(self):
-        """Gets the picture of this LiveDetectRespVideoresult.
+        r"""Gets the picture of this LiveDetectRespVideoresult.
 
         检测出最大人脸的图片base64。
 
@@ -112,7 +112,7 @@ class LiveDetectRespVideoresult:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this LiveDetectRespVideoresult.
+        r"""Sets the picture of this LiveDetectRespVideoresult.
 
         检测出最大人脸的图片base64。
 

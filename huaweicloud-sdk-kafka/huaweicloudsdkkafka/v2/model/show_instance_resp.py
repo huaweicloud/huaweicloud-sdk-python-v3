@@ -191,7 +191,7 @@ class ShowInstanceResp:
     }
 
     def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, broker_ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, new_auth_cert=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
-        """ShowInstanceResp
+        r"""ShowInstanceResp
 
         The model defined in huaweicloud sdk
 
@@ -624,7 +624,7 @@ class ShowInstanceResp:
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceResp.
+        r"""Gets the name of this ShowInstanceResp.
 
         实例名称。
 
@@ -635,7 +635,7 @@ class ShowInstanceResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceResp.
+        r"""Sets the name of this ShowInstanceResp.
 
         实例名称。
 
@@ -646,7 +646,7 @@ class ShowInstanceResp:
 
     @property
     def engine(self):
-        """Gets the engine of this ShowInstanceResp.
+        r"""Gets the engine of this ShowInstanceResp.
 
         引擎。
 
@@ -657,7 +657,7 @@ class ShowInstanceResp:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowInstanceResp.
+        r"""Sets the engine of this ShowInstanceResp.
 
         引擎。
 
@@ -668,7 +668,7 @@ class ShowInstanceResp:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowInstanceResp.
+        r"""Gets the engine_version of this ShowInstanceResp.
 
         版本。
 
@@ -679,7 +679,7 @@ class ShowInstanceResp:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowInstanceResp.
+        r"""Sets the engine_version of this ShowInstanceResp.
 
         版本。
 
@@ -690,7 +690,7 @@ class ShowInstanceResp:
 
     @property
     def description(self):
-        """Gets the description of this ShowInstanceResp.
+        r"""Gets the description of this ShowInstanceResp.
 
         实例描述。
 
@@ -701,7 +701,7 @@ class ShowInstanceResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowInstanceResp.
+        r"""Sets the description of this ShowInstanceResp.
 
         实例描述。
 
@@ -712,7 +712,7 @@ class ShowInstanceResp:
 
     @property
     def specification(self):
-        """Gets the specification of this ShowInstanceResp.
+        r"""Gets the specification of this ShowInstanceResp.
 
         实例规格。
 
@@ -723,7 +723,7 @@ class ShowInstanceResp:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ShowInstanceResp.
+        r"""Sets the specification of this ShowInstanceResp.
 
         实例规格。
 
@@ -734,7 +734,7 @@ class ShowInstanceResp:
 
     @property
     def storage_space(self):
-        """Gets the storage_space of this ShowInstanceResp.
+        r"""Gets the storage_space of this ShowInstanceResp.
 
         消息存储空间，单位：GB。
 
@@ -745,7 +745,7 @@ class ShowInstanceResp:
 
     @storage_space.setter
     def storage_space(self, storage_space):
-        """Sets the storage_space of this ShowInstanceResp.
+        r"""Sets the storage_space of this ShowInstanceResp.
 
         消息存储空间，单位：GB。
 
@@ -756,7 +756,7 @@ class ShowInstanceResp:
 
     @property
     def partition_num(self):
-        """Gets the partition_num of this ShowInstanceResp.
+        r"""Gets the partition_num of this ShowInstanceResp.
 
         Kafka实例的分区数量。
 
@@ -767,7 +767,7 @@ class ShowInstanceResp:
 
     @partition_num.setter
     def partition_num(self, partition_num):
-        """Sets the partition_num of this ShowInstanceResp.
+        r"""Sets the partition_num of this ShowInstanceResp.
 
         Kafka实例的分区数量。
 
@@ -778,7 +778,7 @@ class ShowInstanceResp:
 
     @property
     def used_storage_space(self):
-        """Gets the used_storage_space of this ShowInstanceResp.
+        r"""Gets the used_storage_space of this ShowInstanceResp.
 
         已使用的消息存储空间，单位：GB。
 
@@ -789,7 +789,7 @@ class ShowInstanceResp:
 
     @used_storage_space.setter
     def used_storage_space(self, used_storage_space):
-        """Sets the used_storage_space of this ShowInstanceResp.
+        r"""Sets the used_storage_space of this ShowInstanceResp.
 
         已使用的消息存储空间，单位：GB。
 
@@ -800,7 +800,7 @@ class ShowInstanceResp:
 
     @property
     def connect_address(self):
-        """Gets the connect_address of this ShowInstanceResp.
+        r"""Gets the connect_address of this ShowInstanceResp.
 
         实例连接IP地址。
 
@@ -811,7 +811,7 @@ class ShowInstanceResp:
 
     @connect_address.setter
     def connect_address(self, connect_address):
-        """Sets the connect_address of this ShowInstanceResp.
+        r"""Sets the connect_address of this ShowInstanceResp.
 
         实例连接IP地址。
 
@@ -822,7 +822,7 @@ class ShowInstanceResp:
 
     @property
     def port(self):
-        """Gets the port of this ShowInstanceResp.
+        r"""Gets the port of this ShowInstanceResp.
 
         实例连接端口。
 
@@ -833,7 +833,7 @@ class ShowInstanceResp:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowInstanceResp.
+        r"""Sets the port of this ShowInstanceResp.
 
         实例连接端口。
 
@@ -844,7 +844,7 @@ class ShowInstanceResp:
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceResp.
+        r"""Gets the status of this ShowInstanceResp.
 
         实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
 
@@ -855,7 +855,7 @@ class ShowInstanceResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceResp.
+        r"""Sets the status of this ShowInstanceResp.
 
         实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
 
@@ -866,7 +866,7 @@ class ShowInstanceResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceResp.
+        r"""Gets the instance_id of this ShowInstanceResp.
 
         实例ID。
 
@@ -877,7 +877,7 @@ class ShowInstanceResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceResp.
+        r"""Sets the instance_id of this ShowInstanceResp.
 
         实例ID。
 
@@ -888,7 +888,7 @@ class ShowInstanceResp:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowInstanceResp.
+        r"""Gets the resource_spec_code of this ShowInstanceResp.
 
         资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
@@ -899,7 +899,7 @@ class ShowInstanceResp:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowInstanceResp.
+        r"""Sets the resource_spec_code of this ShowInstanceResp.
 
         资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
@@ -910,7 +910,7 @@ class ShowInstanceResp:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowInstanceResp.
+        r"""Gets the charging_mode of this ShowInstanceResp.
 
         [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
 
@@ -921,7 +921,7 @@ class ShowInstanceResp:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowInstanceResp.
+        r"""Sets the charging_mode of this ShowInstanceResp.
 
         [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
 
@@ -932,7 +932,7 @@ class ShowInstanceResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowInstanceResp.
+        r"""Gets the vpc_id of this ShowInstanceResp.
 
         VPC ID。
 
@@ -943,7 +943,7 @@ class ShowInstanceResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowInstanceResp.
+        r"""Sets the vpc_id of this ShowInstanceResp.
 
         VPC ID。
 
@@ -954,7 +954,7 @@ class ShowInstanceResp:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this ShowInstanceResp.
+        r"""Gets the vpc_name of this ShowInstanceResp.
 
         VPC的名称。
 
@@ -965,7 +965,7 @@ class ShowInstanceResp:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this ShowInstanceResp.
+        r"""Sets the vpc_name of this ShowInstanceResp.
 
         VPC的名称。
 
@@ -976,7 +976,7 @@ class ShowInstanceResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowInstanceResp.
+        r"""Gets the created_at of this ShowInstanceResp.
 
         完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
@@ -987,7 +987,7 @@ class ShowInstanceResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowInstanceResp.
+        r"""Sets the created_at of this ShowInstanceResp.
 
         完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
@@ -998,7 +998,7 @@ class ShowInstanceResp:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this ShowInstanceResp.
+        r"""Gets the subnet_name of this ShowInstanceResp.
 
         子网名称。
 
@@ -1009,7 +1009,7 @@ class ShowInstanceResp:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ShowInstanceResp.
+        r"""Sets the subnet_name of this ShowInstanceResp.
 
         子网名称。
 
@@ -1020,7 +1020,7 @@ class ShowInstanceResp:
 
     @property
     def subnet_cidr(self):
-        """Gets the subnet_cidr of this ShowInstanceResp.
+        r"""Gets the subnet_cidr of this ShowInstanceResp.
 
         子网网段。
 
@@ -1031,7 +1031,7 @@ class ShowInstanceResp:
 
     @subnet_cidr.setter
     def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this ShowInstanceResp.
+        r"""Sets the subnet_cidr of this ShowInstanceResp.
 
         子网网段。
 
@@ -1042,7 +1042,7 @@ class ShowInstanceResp:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowInstanceResp.
+        r"""Gets the user_id of this ShowInstanceResp.
 
         用户ID。
 
@@ -1053,7 +1053,7 @@ class ShowInstanceResp:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowInstanceResp.
+        r"""Sets the user_id of this ShowInstanceResp.
 
         用户ID。
 
@@ -1064,7 +1064,7 @@ class ShowInstanceResp:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowInstanceResp.
+        r"""Gets the user_name of this ShowInstanceResp.
 
         用户名。
 
@@ -1075,7 +1075,7 @@ class ShowInstanceResp:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowInstanceResp.
+        r"""Sets the user_name of this ShowInstanceResp.
 
         用户名。
 
@@ -1086,7 +1086,7 @@ class ShowInstanceResp:
 
     @property
     def access_user(self):
-        """Gets the access_user of this ShowInstanceResp.
+        r"""Gets the access_user of this ShowInstanceResp.
 
         实例访问用户名。
 
@@ -1097,7 +1097,7 @@ class ShowInstanceResp:
 
     @access_user.setter
     def access_user(self, access_user):
-        """Sets the access_user of this ShowInstanceResp.
+        r"""Sets the access_user of this ShowInstanceResp.
 
         实例访问用户名。
 
@@ -1108,7 +1108,7 @@ class ShowInstanceResp:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowInstanceResp.
+        r"""Gets the order_id of this ShowInstanceResp.
 
         订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
 
@@ -1119,7 +1119,7 @@ class ShowInstanceResp:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowInstanceResp.
+        r"""Sets the order_id of this ShowInstanceResp.
 
         订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
 
@@ -1130,7 +1130,7 @@ class ShowInstanceResp:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this ShowInstanceResp.
+        r"""Gets the maintain_begin of this ShowInstanceResp.
 
         维护时间窗开始时间，格式为HH:mm:ss。
 
@@ -1141,7 +1141,7 @@ class ShowInstanceResp:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this ShowInstanceResp.
+        r"""Sets the maintain_begin of this ShowInstanceResp.
 
         维护时间窗开始时间，格式为HH:mm:ss。
 
@@ -1152,7 +1152,7 @@ class ShowInstanceResp:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this ShowInstanceResp.
+        r"""Gets the maintain_end of this ShowInstanceResp.
 
         维护时间窗结束时间，格式为HH:mm:ss。
 
@@ -1163,7 +1163,7 @@ class ShowInstanceResp:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this ShowInstanceResp.
+        r"""Sets the maintain_end of this ShowInstanceResp.
 
         维护时间窗结束时间，格式为HH:mm:ss。
 
@@ -1174,7 +1174,7 @@ class ShowInstanceResp:
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this ShowInstanceResp.
+        r"""Gets the enable_publicip of this ShowInstanceResp.
 
         实例是否开启公网访问功能。 - true：开启 - false：未开启
 
@@ -1185,7 +1185,7 @@ class ShowInstanceResp:
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this ShowInstanceResp.
+        r"""Sets the enable_publicip of this ShowInstanceResp.
 
         实例是否开启公网访问功能。 - true：开启 - false：未开启
 
@@ -1196,7 +1196,7 @@ class ShowInstanceResp:
 
     @property
     def management_connect_address(self):
-        """Gets the management_connect_address of this ShowInstanceResp.
+        r"""Gets the management_connect_address of this ShowInstanceResp.
 
         Kafka实例的Kafka Manager连接地址。
 
@@ -1207,7 +1207,7 @@ class ShowInstanceResp:
 
     @management_connect_address.setter
     def management_connect_address(self, management_connect_address):
-        """Sets the management_connect_address of this ShowInstanceResp.
+        r"""Sets the management_connect_address of this ShowInstanceResp.
 
         Kafka实例的Kafka Manager连接地址。
 
@@ -1218,7 +1218,7 @@ class ShowInstanceResp:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this ShowInstanceResp.
+        r"""Gets the ssl_enable of this ShowInstanceResp.
 
         是否开启安全认证。 - true：开启 - false：未开启
 
@@ -1229,7 +1229,7 @@ class ShowInstanceResp:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this ShowInstanceResp.
+        r"""Sets the ssl_enable of this ShowInstanceResp.
 
         是否开启安全认证。 - true：开启 - false：未开启
 
@@ -1240,7 +1240,7 @@ class ShowInstanceResp:
 
     @property
     def broker_ssl_enable(self):
-        """Gets the broker_ssl_enable of this ShowInstanceResp.
+        r"""Gets the broker_ssl_enable of this ShowInstanceResp.
 
         是否开启broker间副本加密传输。 - true：开启 - false：未开启
 
@@ -1251,7 +1251,7 @@ class ShowInstanceResp:
 
     @broker_ssl_enable.setter
     def broker_ssl_enable(self, broker_ssl_enable):
-        """Sets the broker_ssl_enable of this ShowInstanceResp.
+        r"""Sets the broker_ssl_enable of this ShowInstanceResp.
 
         是否开启broker间副本加密传输。 - true：开启 - false：未开启
 
@@ -1262,7 +1262,7 @@ class ShowInstanceResp:
 
     @property
     def kafka_security_protocol(self):
-        """Gets the kafka_security_protocol of this ShowInstanceResp.
+        r"""Gets the kafka_security_protocol of this ShowInstanceResp.
 
         开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
@@ -1273,7 +1273,7 @@ class ShowInstanceResp:
 
     @kafka_security_protocol.setter
     def kafka_security_protocol(self, kafka_security_protocol):
-        """Sets the kafka_security_protocol of this ShowInstanceResp.
+        r"""Sets the kafka_security_protocol of this ShowInstanceResp.
 
         开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
 
@@ -1284,7 +1284,7 @@ class ShowInstanceResp:
 
     @property
     def sasl_enabled_mechanisms(self):
-        """Gets the sasl_enabled_mechanisms of this ShowInstanceResp.
+        r"""Gets the sasl_enabled_mechanisms of this ShowInstanceResp.
 
         开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
 
@@ -1295,7 +1295,7 @@ class ShowInstanceResp:
 
     @sasl_enabled_mechanisms.setter
     def sasl_enabled_mechanisms(self, sasl_enabled_mechanisms):
-        """Sets the sasl_enabled_mechanisms of this ShowInstanceResp.
+        r"""Sets the sasl_enabled_mechanisms of this ShowInstanceResp.
 
         开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
 
@@ -1306,7 +1306,7 @@ class ShowInstanceResp:
 
     @property
     def ssl_two_way_enable(self):
-        """Gets the ssl_two_way_enable of this ShowInstanceResp.
+        r"""Gets the ssl_two_way_enable of this ShowInstanceResp.
 
         是否开启双向认证。
 
@@ -1317,7 +1317,7 @@ class ShowInstanceResp:
 
     @ssl_two_way_enable.setter
     def ssl_two_way_enable(self, ssl_two_way_enable):
-        """Sets the ssl_two_way_enable of this ShowInstanceResp.
+        r"""Sets the ssl_two_way_enable of this ShowInstanceResp.
 
         是否开启双向认证。
 
@@ -1328,7 +1328,7 @@ class ShowInstanceResp:
 
     @property
     def cert_replaced(self):
-        """Gets the cert_replaced of this ShowInstanceResp.
+        r"""Gets the cert_replaced of this ShowInstanceResp.
 
         是否能够证书替换。
 
@@ -1339,7 +1339,7 @@ class ShowInstanceResp:
 
     @cert_replaced.setter
     def cert_replaced(self, cert_replaced):
-        """Sets the cert_replaced of this ShowInstanceResp.
+        r"""Sets the cert_replaced of this ShowInstanceResp.
 
         是否能够证书替换。
 
@@ -1350,7 +1350,7 @@ class ShowInstanceResp:
 
     @property
     def public_management_connect_address(self):
-        """Gets the public_management_connect_address of this ShowInstanceResp.
+        r"""Gets the public_management_connect_address of this ShowInstanceResp.
 
         公网访问Kafka Manager连接地址。
 
@@ -1361,7 +1361,7 @@ class ShowInstanceResp:
 
     @public_management_connect_address.setter
     def public_management_connect_address(self, public_management_connect_address):
-        """Sets the public_management_connect_address of this ShowInstanceResp.
+        r"""Sets the public_management_connect_address of this ShowInstanceResp.
 
         公网访问Kafka Manager连接地址。
 
@@ -1372,7 +1372,7 @@ class ShowInstanceResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowInstanceResp.
+        r"""Gets the enterprise_project_id of this ShowInstanceResp.
 
         企业项目ID。
 
@@ -1383,7 +1383,7 @@ class ShowInstanceResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowInstanceResp.
+        r"""Sets the enterprise_project_id of this ShowInstanceResp.
 
         企业项目ID。
 
@@ -1394,7 +1394,7 @@ class ShowInstanceResp:
 
     @property
     def is_logical_volume(self):
-        """Gets the is_logical_volume of this ShowInstanceResp.
+        r"""Gets the is_logical_volume of this ShowInstanceResp.
 
         实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
 
@@ -1405,7 +1405,7 @@ class ShowInstanceResp:
 
     @is_logical_volume.setter
     def is_logical_volume(self, is_logical_volume):
-        """Sets the is_logical_volume of this ShowInstanceResp.
+        r"""Sets the is_logical_volume of this ShowInstanceResp.
 
         实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
 
@@ -1416,7 +1416,7 @@ class ShowInstanceResp:
 
     @property
     def extend_times(self):
-        """Gets the extend_times of this ShowInstanceResp.
+        r"""Gets the extend_times of this ShowInstanceResp.
 
         实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
 
@@ -1427,7 +1427,7 @@ class ShowInstanceResp:
 
     @extend_times.setter
     def extend_times(self, extend_times):
-        """Sets the extend_times of this ShowInstanceResp.
+        r"""Sets the extend_times of this ShowInstanceResp.
 
         实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
 
@@ -1438,7 +1438,7 @@ class ShowInstanceResp:
 
     @property
     def enable_auto_topic(self):
-        """Gets the enable_auto_topic of this ShowInstanceResp.
+        r"""Gets the enable_auto_topic of this ShowInstanceResp.
 
         是否打开kafka自动创建topic功能。   - true：开启   - false：关闭
 
@@ -1449,7 +1449,7 @@ class ShowInstanceResp:
 
     @enable_auto_topic.setter
     def enable_auto_topic(self, enable_auto_topic):
-        """Sets the enable_auto_topic of this ShowInstanceResp.
+        r"""Sets the enable_auto_topic of this ShowInstanceResp.
 
         是否打开kafka自动创建topic功能。   - true：开启   - false：关闭
 
@@ -1460,7 +1460,7 @@ class ShowInstanceResp:
 
     @property
     def type(self):
-        """Gets the type of this ShowInstanceResp.
+        r"""Gets the type of this ShowInstanceResp.
 
         实例类型：集群，cluster。
 
@@ -1471,7 +1471,7 @@ class ShowInstanceResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowInstanceResp.
+        r"""Sets the type of this ShowInstanceResp.
 
         实例类型：集群，cluster。
 
@@ -1482,7 +1482,7 @@ class ShowInstanceResp:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowInstanceResp.
+        r"""Gets the product_id of this ShowInstanceResp.
 
         产品标识。
 
@@ -1493,7 +1493,7 @@ class ShowInstanceResp:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowInstanceResp.
+        r"""Sets the product_id of this ShowInstanceResp.
 
         产品标识。
 
@@ -1504,7 +1504,7 @@ class ShowInstanceResp:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowInstanceResp.
+        r"""Gets the security_group_id of this ShowInstanceResp.
 
         安全组ID。
 
@@ -1515,7 +1515,7 @@ class ShowInstanceResp:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowInstanceResp.
+        r"""Sets the security_group_id of this ShowInstanceResp.
 
         安全组ID。
 
@@ -1526,7 +1526,7 @@ class ShowInstanceResp:
 
     @property
     def security_group_name(self):
-        """Gets the security_group_name of this ShowInstanceResp.
+        r"""Gets the security_group_name of this ShowInstanceResp.
 
         租户安全组名称。
 
@@ -1537,7 +1537,7 @@ class ShowInstanceResp:
 
     @security_group_name.setter
     def security_group_name(self, security_group_name):
-        """Sets the security_group_name of this ShowInstanceResp.
+        r"""Sets the security_group_name of this ShowInstanceResp.
 
         租户安全组名称。
 
@@ -1548,7 +1548,7 @@ class ShowInstanceResp:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowInstanceResp.
+        r"""Gets the subnet_id of this ShowInstanceResp.
 
         子网ID。
 
@@ -1559,7 +1559,7 @@ class ShowInstanceResp:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowInstanceResp.
+        r"""Sets the subnet_id of this ShowInstanceResp.
 
         子网ID。
 
@@ -1570,7 +1570,7 @@ class ShowInstanceResp:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ShowInstanceResp.
+        r"""Gets the available_zones of this ShowInstanceResp.
 
         实例节点所在的可用区，返回“可用区ID”。
 
@@ -1581,7 +1581,7 @@ class ShowInstanceResp:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ShowInstanceResp.
+        r"""Sets the available_zones of this ShowInstanceResp.
 
         实例节点所在的可用区，返回“可用区ID”。
 
@@ -1592,7 +1592,7 @@ class ShowInstanceResp:
 
     @property
     def available_zone_names(self):
-        """Gets the available_zone_names of this ShowInstanceResp.
+        r"""Gets the available_zone_names of this ShowInstanceResp.
 
         实例节点所在的可用区名称，返回“可用区名称”。
 
@@ -1603,7 +1603,7 @@ class ShowInstanceResp:
 
     @available_zone_names.setter
     def available_zone_names(self, available_zone_names):
-        """Sets the available_zone_names of this ShowInstanceResp.
+        r"""Sets the available_zone_names of this ShowInstanceResp.
 
         实例节点所在的可用区名称，返回“可用区名称”。
 
@@ -1614,7 +1614,7 @@ class ShowInstanceResp:
 
     @property
     def total_storage_space(self):
-        """Gets the total_storage_space of this ShowInstanceResp.
+        r"""Gets the total_storage_space of this ShowInstanceResp.
 
         总共消息存储空间，单位：GB。
 
@@ -1625,7 +1625,7 @@ class ShowInstanceResp:
 
     @total_storage_space.setter
     def total_storage_space(self, total_storage_space):
-        """Sets the total_storage_space of this ShowInstanceResp.
+        r"""Sets the total_storage_space of this ShowInstanceResp.
 
         总共消息存储空间，单位：GB。
 
@@ -1636,7 +1636,7 @@ class ShowInstanceResp:
 
     @property
     def public_connect_address(self):
-        """Gets the public_connect_address of this ShowInstanceResp.
+        r"""Gets the public_connect_address of this ShowInstanceResp.
 
         实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
 
@@ -1647,7 +1647,7 @@ class ShowInstanceResp:
 
     @public_connect_address.setter
     def public_connect_address(self, public_connect_address):
-        """Sets the public_connect_address of this ShowInstanceResp.
+        r"""Sets the public_connect_address of this ShowInstanceResp.
 
         实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
 
@@ -1658,7 +1658,7 @@ class ShowInstanceResp:
 
     @property
     def storage_resource_id(self):
-        """Gets the storage_resource_id of this ShowInstanceResp.
+        r"""Gets the storage_resource_id of this ShowInstanceResp.
 
         存储资源ID。
 
@@ -1669,7 +1669,7 @@ class ShowInstanceResp:
 
     @storage_resource_id.setter
     def storage_resource_id(self, storage_resource_id):
-        """Sets the storage_resource_id of this ShowInstanceResp.
+        r"""Sets the storage_resource_id of this ShowInstanceResp.
 
         存储资源ID。
 
@@ -1680,7 +1680,7 @@ class ShowInstanceResp:
 
     @property
     def storage_spec_code(self):
-        """Gets the storage_spec_code of this ShowInstanceResp.
+        r"""Gets the storage_spec_code of this ShowInstanceResp.
 
         IO规格。
 
@@ -1691,7 +1691,7 @@ class ShowInstanceResp:
 
     @storage_spec_code.setter
     def storage_spec_code(self, storage_spec_code):
-        """Sets the storage_spec_code of this ShowInstanceResp.
+        r"""Sets the storage_spec_code of this ShowInstanceResp.
 
         IO规格。
 
@@ -1702,7 +1702,7 @@ class ShowInstanceResp:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ShowInstanceResp.
+        r"""Gets the service_type of this ShowInstanceResp.
 
         服务类型。
 
@@ -1713,7 +1713,7 @@ class ShowInstanceResp:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ShowInstanceResp.
+        r"""Sets the service_type of this ShowInstanceResp.
 
         服务类型。
 
@@ -1724,7 +1724,7 @@ class ShowInstanceResp:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ShowInstanceResp.
+        r"""Gets the storage_type of this ShowInstanceResp.
 
         存储类型。
 
@@ -1735,7 +1735,7 @@ class ShowInstanceResp:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ShowInstanceResp.
+        r"""Sets the storage_type of this ShowInstanceResp.
 
         存储类型。
 
@@ -1746,7 +1746,7 @@ class ShowInstanceResp:
 
     @property
     def retention_policy(self):
-        """Gets the retention_policy of this ShowInstanceResp.
+        r"""Gets the retention_policy of this ShowInstanceResp.
 
         消息老化策略。
 
@@ -1757,7 +1757,7 @@ class ShowInstanceResp:
 
     @retention_policy.setter
     def retention_policy(self, retention_policy):
-        """Sets the retention_policy of this ShowInstanceResp.
+        r"""Sets the retention_policy of this ShowInstanceResp.
 
         消息老化策略。
 
@@ -1768,7 +1768,7 @@ class ShowInstanceResp:
 
     @property
     def kafka_public_status(self):
-        """Gets the kafka_public_status of this ShowInstanceResp.
+        r"""Gets the kafka_public_status of this ShowInstanceResp.
 
         Kafka公网开启状态。
 
@@ -1779,7 +1779,7 @@ class ShowInstanceResp:
 
     @kafka_public_status.setter
     def kafka_public_status(self, kafka_public_status):
-        """Sets the kafka_public_status of this ShowInstanceResp.
+        r"""Sets the kafka_public_status of this ShowInstanceResp.
 
         Kafka公网开启状态。
 
@@ -1790,7 +1790,7 @@ class ShowInstanceResp:
 
     @property
     def public_bandwidth(self):
-        """Gets the public_bandwidth of this ShowInstanceResp.
+        r"""Gets the public_bandwidth of this ShowInstanceResp.
 
         kafka公网访问带宽。
 
@@ -1801,7 +1801,7 @@ class ShowInstanceResp:
 
     @public_bandwidth.setter
     def public_bandwidth(self, public_bandwidth):
-        """Sets the public_bandwidth of this ShowInstanceResp.
+        r"""Sets the public_bandwidth of this ShowInstanceResp.
 
         kafka公网访问带宽。
 
@@ -1812,7 +1812,7 @@ class ShowInstanceResp:
 
     @property
     def kafka_manager_enable(self):
-        """Gets the kafka_manager_enable of this ShowInstanceResp.
+        r"""Gets the kafka_manager_enable of this ShowInstanceResp.
 
         是否已开启kafka manager
 
@@ -1823,7 +1823,7 @@ class ShowInstanceResp:
 
     @kafka_manager_enable.setter
     def kafka_manager_enable(self, kafka_manager_enable):
-        """Sets the kafka_manager_enable of this ShowInstanceResp.
+        r"""Sets the kafka_manager_enable of this ShowInstanceResp.
 
         是否已开启kafka manager
 
@@ -1834,7 +1834,7 @@ class ShowInstanceResp:
 
     @property
     def kafka_manager_user(self):
-        """Gets the kafka_manager_user of this ShowInstanceResp.
+        r"""Gets the kafka_manager_user of this ShowInstanceResp.
 
         登录Kafka Manager的用户名。
 
@@ -1845,7 +1845,7 @@ class ShowInstanceResp:
 
     @kafka_manager_user.setter
     def kafka_manager_user(self, kafka_manager_user):
-        """Sets the kafka_manager_user of this ShowInstanceResp.
+        r"""Sets the kafka_manager_user of this ShowInstanceResp.
 
         登录Kafka Manager的用户名。
 
@@ -1856,7 +1856,7 @@ class ShowInstanceResp:
 
     @property
     def enable_log_collection(self):
-        """Gets the enable_log_collection of this ShowInstanceResp.
+        r"""Gets the enable_log_collection of this ShowInstanceResp.
 
         是否开启消息收集功能。
 
@@ -1867,7 +1867,7 @@ class ShowInstanceResp:
 
     @enable_log_collection.setter
     def enable_log_collection(self, enable_log_collection):
-        """Sets the enable_log_collection of this ShowInstanceResp.
+        r"""Sets the enable_log_collection of this ShowInstanceResp.
 
         是否开启消息收集功能。
 
@@ -1878,7 +1878,7 @@ class ShowInstanceResp:
 
     @property
     def new_auth_cert(self):
-        """Gets the new_auth_cert of this ShowInstanceResp.
+        r"""Gets the new_auth_cert of this ShowInstanceResp.
 
         是否开启新证书。
 
@@ -1889,7 +1889,7 @@ class ShowInstanceResp:
 
     @new_auth_cert.setter
     def new_auth_cert(self, new_auth_cert):
-        """Sets the new_auth_cert of this ShowInstanceResp.
+        r"""Sets the new_auth_cert of this ShowInstanceResp.
 
         是否开启新证书。
 
@@ -1900,7 +1900,7 @@ class ShowInstanceResp:
 
     @property
     def cross_vpc_info(self):
-        """Gets the cross_vpc_info of this ShowInstanceResp.
+        r"""Gets the cross_vpc_info of this ShowInstanceResp.
 
         跨VPC访问信息。
 
@@ -1911,7 +1911,7 @@ class ShowInstanceResp:
 
     @cross_vpc_info.setter
     def cross_vpc_info(self, cross_vpc_info):
-        """Sets the cross_vpc_info of this ShowInstanceResp.
+        r"""Sets the cross_vpc_info of this ShowInstanceResp.
 
         跨VPC访问信息。
 
@@ -1922,7 +1922,7 @@ class ShowInstanceResp:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this ShowInstanceResp.
+        r"""Gets the ipv6_enable of this ShowInstanceResp.
 
         是否开启ipv6。
 
@@ -1933,7 +1933,7 @@ class ShowInstanceResp:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this ShowInstanceResp.
+        r"""Sets the ipv6_enable of this ShowInstanceResp.
 
         是否开启ipv6。
 
@@ -1944,7 +1944,7 @@ class ShowInstanceResp:
 
     @property
     def ipv6_connect_addresses(self):
-        """Gets the ipv6_connect_addresses of this ShowInstanceResp.
+        r"""Gets the ipv6_connect_addresses of this ShowInstanceResp.
 
         IPv6的连接地址。
 
@@ -1955,7 +1955,7 @@ class ShowInstanceResp:
 
     @ipv6_connect_addresses.setter
     def ipv6_connect_addresses(self, ipv6_connect_addresses):
-        """Sets the ipv6_connect_addresses of this ShowInstanceResp.
+        r"""Sets the ipv6_connect_addresses of this ShowInstanceResp.
 
         IPv6的连接地址。
 
@@ -1966,7 +1966,7 @@ class ShowInstanceResp:
 
     @property
     def connector_enable(self):
-        """Gets the connector_enable of this ShowInstanceResp.
+        r"""Gets the connector_enable of this ShowInstanceResp.
 
         是否开启转储。新规格产品暂不支持开启转储。
 
@@ -1977,7 +1977,7 @@ class ShowInstanceResp:
 
     @connector_enable.setter
     def connector_enable(self, connector_enable):
-        """Sets the connector_enable of this ShowInstanceResp.
+        r"""Sets the connector_enable of this ShowInstanceResp.
 
         是否开启转储。新规格产品暂不支持开启转储。
 
@@ -1988,7 +1988,7 @@ class ShowInstanceResp:
 
     @property
     def connector_node_num(self):
-        """Gets the connector_node_num of this ShowInstanceResp.
+        r"""Gets the connector_node_num of this ShowInstanceResp.
 
         connector节点数量。
 
@@ -1999,7 +1999,7 @@ class ShowInstanceResp:
 
     @connector_node_num.setter
     def connector_node_num(self, connector_node_num):
-        """Sets the connector_node_num of this ShowInstanceResp.
+        r"""Sets the connector_node_num of this ShowInstanceResp.
 
         connector节点数量。
 
@@ -2010,7 +2010,7 @@ class ShowInstanceResp:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ShowInstanceResp.
+        r"""Gets the connector_id of this ShowInstanceResp.
 
         转储任务ID。
 
@@ -2021,7 +2021,7 @@ class ShowInstanceResp:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ShowInstanceResp.
+        r"""Sets the connector_id of this ShowInstanceResp.
 
         转储任务ID。
 
@@ -2032,7 +2032,7 @@ class ShowInstanceResp:
 
     @property
     def rest_enable(self):
-        """Gets the rest_enable of this ShowInstanceResp.
+        r"""Gets the rest_enable of this ShowInstanceResp.
 
         是否开启Kafka rest功能。
 
@@ -2043,7 +2043,7 @@ class ShowInstanceResp:
 
     @rest_enable.setter
     def rest_enable(self, rest_enable):
-        """Sets the rest_enable of this ShowInstanceResp.
+        r"""Sets the rest_enable of this ShowInstanceResp.
 
         是否开启Kafka rest功能。
 
@@ -2054,7 +2054,7 @@ class ShowInstanceResp:
 
     @property
     def rest_connect_address(self):
-        """Gets the rest_connect_address of this ShowInstanceResp.
+        r"""Gets the rest_connect_address of this ShowInstanceResp.
 
         Kafka rest连接地址。
 
@@ -2065,7 +2065,7 @@ class ShowInstanceResp:
 
     @rest_connect_address.setter
     def rest_connect_address(self, rest_connect_address):
-        """Sets the rest_connect_address of this ShowInstanceResp.
+        r"""Sets the rest_connect_address of this ShowInstanceResp.
 
         Kafka rest连接地址。
 
@@ -2076,7 +2076,7 @@ class ShowInstanceResp:
 
     @property
     def public_boundwidth(self):
-        """Gets the public_boundwidth of this ShowInstanceResp.
+        r"""Gets the public_boundwidth of this ShowInstanceResp.
 
         kafka公网访问带宽。待删除版本。
 
@@ -2087,7 +2087,7 @@ class ShowInstanceResp:
 
     @public_boundwidth.setter
     def public_boundwidth(self, public_boundwidth):
-        """Sets the public_boundwidth of this ShowInstanceResp.
+        r"""Sets the public_boundwidth of this ShowInstanceResp.
 
         kafka公网访问带宽。待删除版本。
 
@@ -2098,7 +2098,7 @@ class ShowInstanceResp:
 
     @property
     def message_query_inst_enable(self):
-        """Gets the message_query_inst_enable of this ShowInstanceResp.
+        r"""Gets the message_query_inst_enable of this ShowInstanceResp.
 
         是否开启消息查询功能。
 
@@ -2109,7 +2109,7 @@ class ShowInstanceResp:
 
     @message_query_inst_enable.setter
     def message_query_inst_enable(self, message_query_inst_enable):
-        """Sets the message_query_inst_enable of this ShowInstanceResp.
+        r"""Sets the message_query_inst_enable of this ShowInstanceResp.
 
         是否开启消息查询功能。
 
@@ -2120,7 +2120,7 @@ class ShowInstanceResp:
 
     @property
     def vpc_client_plain(self):
-        """Gets the vpc_client_plain of this ShowInstanceResp.
+        r"""Gets the vpc_client_plain of this ShowInstanceResp.
 
         是否开启VPC明文访问。
 
@@ -2131,7 +2131,7 @@ class ShowInstanceResp:
 
     @vpc_client_plain.setter
     def vpc_client_plain(self, vpc_client_plain):
-        """Sets the vpc_client_plain of this ShowInstanceResp.
+        r"""Sets the vpc_client_plain of this ShowInstanceResp.
 
         是否开启VPC明文访问。
 
@@ -2142,7 +2142,7 @@ class ShowInstanceResp:
 
     @property
     def support_features(self):
-        """Gets the support_features of this ShowInstanceResp.
+        r"""Gets the support_features of this ShowInstanceResp.
 
         Kafka实例支持的特性功能。
 
@@ -2153,7 +2153,7 @@ class ShowInstanceResp:
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this ShowInstanceResp.
+        r"""Sets the support_features of this ShowInstanceResp.
 
         Kafka实例支持的特性功能。
 
@@ -2164,7 +2164,7 @@ class ShowInstanceResp:
 
     @property
     def trace_enable(self):
-        """Gets the trace_enable of this ShowInstanceResp.
+        r"""Gets the trace_enable of this ShowInstanceResp.
 
         是否开启消息轨迹功能。
 
@@ -2175,7 +2175,7 @@ class ShowInstanceResp:
 
     @trace_enable.setter
     def trace_enable(self, trace_enable):
-        """Sets the trace_enable of this ShowInstanceResp.
+        r"""Sets the trace_enable of this ShowInstanceResp.
 
         是否开启消息轨迹功能。
 
@@ -2186,7 +2186,7 @@ class ShowInstanceResp:
 
     @property
     def agent_enable(self):
-        """Gets the agent_enable of this ShowInstanceResp.
+        r"""Gets the agent_enable of this ShowInstanceResp.
 
         是否开启代理。
 
@@ -2197,7 +2197,7 @@ class ShowInstanceResp:
 
     @agent_enable.setter
     def agent_enable(self, agent_enable):
-        """Sets the agent_enable of this ShowInstanceResp.
+        r"""Sets the agent_enable of this ShowInstanceResp.
 
         是否开启代理。
 
@@ -2208,7 +2208,7 @@ class ShowInstanceResp:
 
     @property
     def pod_connect_address(self):
-        """Gets the pod_connect_address of this ShowInstanceResp.
+        r"""Gets the pod_connect_address of this ShowInstanceResp.
 
         租户侧连接地址。
 
@@ -2219,7 +2219,7 @@ class ShowInstanceResp:
 
     @pod_connect_address.setter
     def pod_connect_address(self, pod_connect_address):
-        """Sets the pod_connect_address of this ShowInstanceResp.
+        r"""Sets the pod_connect_address of this ShowInstanceResp.
 
         租户侧连接地址。
 
@@ -2230,7 +2230,7 @@ class ShowInstanceResp:
 
     @property
     def disk_encrypted(self):
-        """Gets the disk_encrypted of this ShowInstanceResp.
+        r"""Gets the disk_encrypted of this ShowInstanceResp.
 
         是否开启磁盘加密。
 
@@ -2241,7 +2241,7 @@ class ShowInstanceResp:
 
     @disk_encrypted.setter
     def disk_encrypted(self, disk_encrypted):
-        """Sets the disk_encrypted of this ShowInstanceResp.
+        r"""Sets the disk_encrypted of this ShowInstanceResp.
 
         是否开启磁盘加密。
 
@@ -2252,7 +2252,7 @@ class ShowInstanceResp:
 
     @property
     def disk_encrypted_key(self):
-        """Gets the disk_encrypted_key of this ShowInstanceResp.
+        r"""Gets the disk_encrypted_key of this ShowInstanceResp.
 
         磁盘加密key，未开启磁盘加密时为空。
 
@@ -2263,7 +2263,7 @@ class ShowInstanceResp:
 
     @disk_encrypted_key.setter
     def disk_encrypted_key(self, disk_encrypted_key):
-        """Sets the disk_encrypted_key of this ShowInstanceResp.
+        r"""Sets the disk_encrypted_key of this ShowInstanceResp.
 
         磁盘加密key，未开启磁盘加密时为空。
 
@@ -2274,7 +2274,7 @@ class ShowInstanceResp:
 
     @property
     def kafka_private_connect_address(self):
-        """Gets the kafka_private_connect_address of this ShowInstanceResp.
+        r"""Gets the kafka_private_connect_address of this ShowInstanceResp.
 
         Kafka实例私有连接地址。
 
@@ -2285,7 +2285,7 @@ class ShowInstanceResp:
 
     @kafka_private_connect_address.setter
     def kafka_private_connect_address(self, kafka_private_connect_address):
-        """Sets the kafka_private_connect_address of this ShowInstanceResp.
+        r"""Sets the kafka_private_connect_address of this ShowInstanceResp.
 
         Kafka实例私有连接地址。
 
@@ -2296,7 +2296,7 @@ class ShowInstanceResp:
 
     @property
     def ces_version(self):
-        """Gets the ces_version of this ShowInstanceResp.
+        r"""Gets the ces_version of this ShowInstanceResp.
 
         云监控版本。
 
@@ -2307,7 +2307,7 @@ class ShowInstanceResp:
 
     @ces_version.setter
     def ces_version(self, ces_version):
-        """Sets the ces_version of this ShowInstanceResp.
+        r"""Sets the ces_version of this ShowInstanceResp.
 
         云监控版本。
 
@@ -2318,7 +2318,7 @@ class ShowInstanceResp:
 
     @property
     def public_access_enabled(self):
-        """Gets the public_access_enabled of this ShowInstanceResp.
+        r"""Gets the public_access_enabled of this ShowInstanceResp.
 
          区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
 
@@ -2329,7 +2329,7 @@ class ShowInstanceResp:
 
     @public_access_enabled.setter
     def public_access_enabled(self, public_access_enabled):
-        """Sets the public_access_enabled of this ShowInstanceResp.
+        r"""Sets the public_access_enabled of this ShowInstanceResp.
 
          区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
 
@@ -2340,7 +2340,7 @@ class ShowInstanceResp:
 
     @property
     def node_num(self):
-        """Gets the node_num of this ShowInstanceResp.
+        r"""Gets the node_num of this ShowInstanceResp.
 
         节点数。
 
@@ -2351,7 +2351,7 @@ class ShowInstanceResp:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ShowInstanceResp.
+        r"""Sets the node_num of this ShowInstanceResp.
 
         节点数。
 
@@ -2362,7 +2362,7 @@ class ShowInstanceResp:
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this ShowInstanceResp.
+        r"""Gets the enable_acl of this ShowInstanceResp.
 
         是否开启访问控制。
 
@@ -2373,7 +2373,7 @@ class ShowInstanceResp:
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this ShowInstanceResp.
+        r"""Sets the enable_acl of this ShowInstanceResp.
 
         是否开启访问控制。
 
@@ -2384,7 +2384,7 @@ class ShowInstanceResp:
 
     @property
     def new_spec_billing_enable(self):
-        """Gets the new_spec_billing_enable of this ShowInstanceResp.
+        r"""Gets the new_spec_billing_enable of this ShowInstanceResp.
 
         是否启用新规格计费。
 
@@ -2395,7 +2395,7 @@ class ShowInstanceResp:
 
     @new_spec_billing_enable.setter
     def new_spec_billing_enable(self, new_spec_billing_enable):
-        """Sets the new_spec_billing_enable of this ShowInstanceResp.
+        r"""Sets the new_spec_billing_enable of this ShowInstanceResp.
 
         是否启用新规格计费。
 
@@ -2406,7 +2406,7 @@ class ShowInstanceResp:
 
     @property
     def broker_num(self):
-        """Gets the broker_num of this ShowInstanceResp.
+        r"""Gets the broker_num of this ShowInstanceResp.
 
         节点数量。
 
@@ -2417,7 +2417,7 @@ class ShowInstanceResp:
 
     @broker_num.setter
     def broker_num(self, broker_num):
-        """Sets the broker_num of this ShowInstanceResp.
+        r"""Sets the broker_num of this ShowInstanceResp.
 
         节点数量。
 
@@ -2428,7 +2428,7 @@ class ShowInstanceResp:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowInstanceResp.
+        r"""Gets the tags of this ShowInstanceResp.
 
         标签列表。
 
@@ -2439,7 +2439,7 @@ class ShowInstanceResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowInstanceResp.
+        r"""Sets the tags of this ShowInstanceResp.
 
         标签列表。
 
@@ -2450,7 +2450,7 @@ class ShowInstanceResp:
 
     @property
     def dr_enable(self):
-        """Gets the dr_enable of this ShowInstanceResp.
+        r"""Gets the dr_enable of this ShowInstanceResp.
 
         是否为容灾实例。
 
@@ -2461,7 +2461,7 @@ class ShowInstanceResp:
 
     @dr_enable.setter
     def dr_enable(self, dr_enable):
-        """Sets the dr_enable of this ShowInstanceResp.
+        r"""Sets the dr_enable of this ShowInstanceResp.
 
         是否为容灾实例。
 

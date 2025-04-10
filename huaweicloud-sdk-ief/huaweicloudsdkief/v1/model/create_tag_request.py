@@ -31,7 +31,7 @@ class CreateTagRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_id=None, resource_type=None, body=None):
-        """CreateTagRequest
+        r"""CreateTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateTagRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateTagRequest.
+        r"""Gets the ief_instance_id of this CreateTagRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -73,7 +73,7 @@ class CreateTagRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateTagRequest.
+        r"""Sets the ief_instance_id of this CreateTagRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -84,7 +84,7 @@ class CreateTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateTagRequest.
+        r"""Gets the resource_id of this CreateTagRequest.
 
         资源ID
 
@@ -95,7 +95,7 @@ class CreateTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateTagRequest.
+        r"""Sets the resource_id of this CreateTagRequest.
 
         资源ID
 
@@ -106,7 +106,7 @@ class CreateTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateTagRequest.
+        r"""Gets the resource_type of this CreateTagRequest.
 
         资源类型 1. ief-edge_node 2. ief-deployment 3. ief-application 4. ief-device
 
@@ -117,7 +117,7 @@ class CreateTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateTagRequest.
+        r"""Sets the resource_type of this CreateTagRequest.
 
         资源类型 1. ief-edge_node 2. ief-deployment 3. ief-application 4. ief-device
 
@@ -128,7 +128,7 @@ class CreateTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagRequest.
+        r"""Gets the body of this CreateTagRequest.
 
         :return: The body of this CreateTagRequest.
         :rtype: :class:`huaweicloudsdkief.v1.CreateTagRequestBody`
@@ -137,7 +137,7 @@ class CreateTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagRequest.
+        r"""Sets the body of this CreateTagRequest.
 
         :param body: The body of this CreateTagRequest.
         :type body: :class:`huaweicloudsdkief.v1.CreateTagRequestBody`

@@ -37,7 +37,7 @@ class AddUserRequestBody:
     }
 
     def __init__(self, name=None, contact=None, country=None, dept_code=None, title=None, sort_level=None, desc=None):
-        """AddUserRequestBody
+        r"""AddUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class AddUserRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this AddUserRequestBody.
+        r"""Gets the name of this AddUserRequestBody.
 
         企业用户名称。
 
@@ -94,7 +94,7 @@ class AddUserRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddUserRequestBody.
+        r"""Sets the name of this AddUserRequestBody.
 
         企业用户名称。
 
@@ -105,7 +105,7 @@ class AddUserRequestBody:
 
     @property
     def contact(self):
-        """Gets the contact of this AddUserRequestBody.
+        r"""Gets the contact of this AddUserRequestBody.
 
         后台自动识别是手机还是邮箱，若为手机号，则要求和国家码匹配。 > * 当前中国站点企业支持使用邮箱或手机号进行邀请，手机仅支持+86开头的手机号。 > * 当前国际站点企业仅支持使用邮箱进行邀请。 
 
@@ -116,7 +116,7 @@ class AddUserRequestBody:
 
     @contact.setter
     def contact(self, contact):
-        """Sets the contact of this AddUserRequestBody.
+        r"""Sets the contact of this AddUserRequestBody.
 
         后台自动识别是手机还是邮箱，若为手机号，则要求和国家码匹配。 > * 当前中国站点企业支持使用邮箱或手机号进行邀请，手机仅支持+86开头的手机号。 > * 当前国际站点企业仅支持使用邮箱进行邀请。 
 
@@ -127,7 +127,7 @@ class AddUserRequestBody:
 
     @property
     def country(self):
-        """Gets the country of this AddUserRequestBody.
+        r"""Gets the country of this AddUserRequestBody.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -138,7 +138,7 @@ class AddUserRequestBody:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this AddUserRequestBody.
+        r"""Sets the country of this AddUserRequestBody.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -149,7 +149,7 @@ class AddUserRequestBody:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this AddUserRequestBody.
+        r"""Gets the dept_code of this AddUserRequestBody.
 
         部门编码，若不携带则默认根部门。
 
@@ -160,7 +160,7 @@ class AddUserRequestBody:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this AddUserRequestBody.
+        r"""Sets the dept_code of this AddUserRequestBody.
 
         部门编码，若不携带则默认根部门。
 
@@ -171,7 +171,7 @@ class AddUserRequestBody:
 
     @property
     def title(self):
-        """Gets the title of this AddUserRequestBody.
+        r"""Gets the title of this AddUserRequestBody.
 
         职位。
 
@@ -182,7 +182,7 @@ class AddUserRequestBody:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this AddUserRequestBody.
+        r"""Sets the title of this AddUserRequestBody.
 
         职位。
 
@@ -193,7 +193,7 @@ class AddUserRequestBody:
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this AddUserRequestBody.
+        r"""Gets the sort_level of this AddUserRequestBody.
 
         通讯录排序等级，序号越低优先级越高。
 
@@ -204,7 +204,7 @@ class AddUserRequestBody:
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this AddUserRequestBody.
+        r"""Sets the sort_level of this AddUserRequestBody.
 
         通讯录排序等级，序号越低优先级越高。
 
@@ -215,7 +215,7 @@ class AddUserRequestBody:
 
     @property
     def desc(self):
-        """Gets the desc of this AddUserRequestBody.
+        r"""Gets the desc of this AddUserRequestBody.
 
         备注。
 
@@ -226,7 +226,7 @@ class AddUserRequestBody:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this AddUserRequestBody.
+        r"""Sets the desc of this AddUserRequestBody.
 
         备注。
 

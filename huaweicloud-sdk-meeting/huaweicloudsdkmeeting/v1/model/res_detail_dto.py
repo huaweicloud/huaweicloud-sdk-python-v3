@@ -33,7 +33,7 @@ class ResDetailDTO:
     }
 
     def __init__(self, sum_count=None, trial_count=None, expired_count=None, expiring_count=None, used_count=None):
-        """ResDetailDTO
+        r"""ResDetailDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResDetailDTO:
 
     @property
     def sum_count(self):
-        """Gets the sum_count of this ResDetailDTO.
+        r"""Gets the sum_count of this ResDetailDTO.
 
         总数。
 
@@ -82,7 +82,7 @@ class ResDetailDTO:
 
     @sum_count.setter
     def sum_count(self, sum_count):
-        """Sets the sum_count of this ResDetailDTO.
+        r"""Sets the sum_count of this ResDetailDTO.
 
         总数。
 
@@ -93,7 +93,7 @@ class ResDetailDTO:
 
     @property
     def trial_count(self):
-        """Gets the trial_count of this ResDetailDTO.
+        r"""Gets the trial_count of this ResDetailDTO.
 
         赠送数量。
 
@@ -104,7 +104,7 @@ class ResDetailDTO:
 
     @trial_count.setter
     def trial_count(self, trial_count):
-        """Sets the trial_count of this ResDetailDTO.
+        r"""Sets the trial_count of this ResDetailDTO.
 
         赠送数量。
 
@@ -115,7 +115,7 @@ class ResDetailDTO:
 
     @property
     def expired_count(self):
-        """Gets the expired_count of this ResDetailDTO.
+        r"""Gets the expired_count of this ResDetailDTO.
 
         到期数量。
 
@@ -126,7 +126,7 @@ class ResDetailDTO:
 
     @expired_count.setter
     def expired_count(self, expired_count):
-        """Sets the expired_count of this ResDetailDTO.
+        r"""Sets the expired_count of this ResDetailDTO.
 
         到期数量。
 
@@ -137,7 +137,7 @@ class ResDetailDTO:
 
     @property
     def expiring_count(self):
-        """Gets the expiring_count of this ResDetailDTO.
+        r"""Gets the expiring_count of this ResDetailDTO.
 
         即将到期数量，到期时间在30天内。
 
@@ -148,7 +148,7 @@ class ResDetailDTO:
 
     @expiring_count.setter
     def expiring_count(self, expiring_count):
-        """Sets the expiring_count of this ResDetailDTO.
+        r"""Sets the expiring_count of this ResDetailDTO.
 
         即将到期数量，到期时间在30天内。
 
@@ -159,7 +159,7 @@ class ResDetailDTO:
 
     @property
     def used_count(self):
-        """Gets the used_count of this ResDetailDTO.
+        r"""Gets the used_count of this ResDetailDTO.
 
         已使用数（录播存储空间、会议并发、推流并发方数暂无法查询）。
 
@@ -170,7 +170,7 @@ class ResDetailDTO:
 
     @used_count.setter
     def used_count(self, used_count):
-        """Sets the used_count of this ResDetailDTO.
+        r"""Sets the used_count of this ResDetailDTO.
 
         已使用数（录播存储空间、会议并发、推流并发方数暂无法查询）。
 

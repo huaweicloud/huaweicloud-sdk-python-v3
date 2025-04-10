@@ -24,7 +24,7 @@ class BatchCreateDeletePrivateNatTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateDeletePrivateNatTagsResponse
+        r"""BatchCreateDeletePrivateNatTagsResponse
 
         The model defined in huaweicloud sdk
 

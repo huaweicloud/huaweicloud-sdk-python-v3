@@ -27,7 +27,7 @@ class ExerciseGroup:
     }
 
     def __init__(self, exercises=None, type=None):
-        """ExerciseGroup
+        r"""ExerciseGroup
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExerciseGroup:
 
     @property
     def exercises(self):
-        """Gets the exercises of this ExerciseGroup.
+        r"""Gets the exercises of this ExerciseGroup.
 
         习题列表
 
@@ -59,7 +59,7 @@ class ExerciseGroup:
 
     @exercises.setter
     def exercises(self, exercises):
-        """Sets the exercises of this ExerciseGroup.
+        r"""Sets the exercises of this ExerciseGroup.
 
         习题列表
 
@@ -70,7 +70,7 @@ class ExerciseGroup:
 
     @property
     def type(self):
-        """Gets the type of this ExerciseGroup.
+        r"""Gets the type of this ExerciseGroup.
 
         习题分类
 
@@ -81,7 +81,7 @@ class ExerciseGroup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExerciseGroup.
+        r"""Sets the type of this ExerciseGroup.
 
         习题分类
 

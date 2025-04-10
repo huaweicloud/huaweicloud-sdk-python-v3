@@ -31,7 +31,7 @@ class TransformResponse:
     }
 
     def __init__(self, inputs=None, expression=None, output_property=None, outputs=None):
-        """TransformResponse
+        r"""TransformResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TransformResponse:
 
     @property
     def inputs(self):
-        """Gets the inputs of this TransformResponse.
+        r"""Gets the inputs of this TransformResponse.
 
         输入参数
 
@@ -75,7 +75,7 @@ class TransformResponse:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this TransformResponse.
+        r"""Sets the inputs of this TransformResponse.
 
         输入参数
 
@@ -86,7 +86,7 @@ class TransformResponse:
 
     @property
     def expression(self):
-        """Gets the expression of this TransformResponse.
+        r"""Gets the expression of this TransformResponse.
 
         :return: The expression of this TransformResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Formula`
@@ -95,7 +95,7 @@ class TransformResponse:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this TransformResponse.
+        r"""Sets the expression of this TransformResponse.
 
         :param expression: The expression of this TransformResponse.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`
@@ -104,7 +104,7 @@ class TransformResponse:
 
     @property
     def output_property(self):
-        """Gets the output_property of this TransformResponse.
+        r"""Gets the output_property of this TransformResponse.
 
         输出属性名(不推荐使用，待废弃，使用outputs替代)
 
@@ -115,7 +115,7 @@ class TransformResponse:
 
     @output_property.setter
     def output_property(self, output_property):
-        """Sets the output_property of this TransformResponse.
+        r"""Sets the output_property of this TransformResponse.
 
         输出属性名(不推荐使用，待废弃，使用outputs替代)
 
@@ -126,7 +126,7 @@ class TransformResponse:
 
     @property
     def outputs(self):
-        """Gets the outputs of this TransformResponse.
+        r"""Gets the outputs of this TransformResponse.
 
         :return: The outputs of this TransformResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
@@ -135,7 +135,7 @@ class TransformResponse:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this TransformResponse.
+        r"""Sets the outputs of this TransformResponse.
 
         :param outputs: The outputs of this TransformResponse.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]

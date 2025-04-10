@@ -36,7 +36,7 @@ class ShowJobInfoResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_type=None, status=None, begin_time=None, end_time=None, fail_reason=None):
-        """ShowJobInfoResponse
+        r"""ShowJobInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobInfoResponse.
+        r"""Gets the job_id of this ShowJobInfoResponse.
 
         Job任务ID
 
@@ -90,7 +90,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobInfoResponse.
+        r"""Sets the job_id of this ShowJobInfoResponse.
 
         Job任务ID
 
@@ -101,7 +101,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobInfoResponse.
+        r"""Gets the job_type of this ShowJobInfoResponse.
 
         Job类型，取值范围：   masterStandbySwapJob：主备倒换任务   modifyClientIpTransJob：修改源ip透传 
 
@@ -112,7 +112,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobInfoResponse.
+        r"""Sets the job_type of this ShowJobInfoResponse.
 
         Job类型，取值范围：   masterStandbySwapJob：主备倒换任务   modifyClientIpTransJob：修改源ip透传 
 
@@ -123,7 +123,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobInfoResponse.
+        r"""Gets the status of this ShowJobInfoResponse.
 
         Job状态
 
@@ -134,7 +134,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobInfoResponse.
+        r"""Sets the status of this ShowJobInfoResponse.
 
         Job状态
 
@@ -145,7 +145,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobInfoResponse.
+        r"""Gets the begin_time of this ShowJobInfoResponse.
 
         Job开始时间戳，单位为ms，格式为:1684191545379
 
@@ -156,7 +156,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobInfoResponse.
+        r"""Sets the begin_time of this ShowJobInfoResponse.
 
         Job开始时间戳，单位为ms，格式为:1684191545379
 
@@ -167,7 +167,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobInfoResponse.
+        r"""Gets the end_time of this ShowJobInfoResponse.
 
         Job开始时间戳，单位为ms，格式为:1684191548248
 
@@ -178,7 +178,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobInfoResponse.
+        r"""Sets the end_time of this ShowJobInfoResponse.
 
         Job开始时间戳，单位为ms，格式为:1684191548248
 
@@ -189,7 +189,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobInfoResponse.
+        r"""Gets the fail_reason of this ShowJobInfoResponse.
 
         失败原因
 
@@ -200,7 +200,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobInfoResponse.
+        r"""Sets the fail_reason of this ShowJobInfoResponse.
 
         失败原因
 

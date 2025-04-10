@@ -25,7 +25,7 @@ class HandleCocIncidentRequest:
     }
 
     def __init__(self, body=None):
-        """HandleCocIncidentRequest
+        r"""HandleCocIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HandleCocIncidentRequest:
 
     @property
     def body(self):
-        """Gets the body of this HandleCocIncidentRequest.
+        r"""Gets the body of this HandleCocIncidentRequest.
 
         :return: The body of this HandleCocIncidentRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.HandleExternalIncidentRequest`
@@ -52,7 +52,7 @@ class HandleCocIncidentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this HandleCocIncidentRequest.
+        r"""Sets the body of this HandleCocIncidentRequest.
 
         :param body: The body of this HandleCocIncidentRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.HandleExternalIncidentRequest`

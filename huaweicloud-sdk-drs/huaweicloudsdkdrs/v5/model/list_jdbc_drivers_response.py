@@ -28,7 +28,7 @@ class ListJdbcDriversResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListJdbcDriversResponse
+        r"""ListJdbcDriversResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJdbcDriversResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJdbcDriversResponse.
+        r"""Gets the count of this ListJdbcDriversResponse.
 
         驱动文件总数。
 
@@ -62,7 +62,7 @@ class ListJdbcDriversResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJdbcDriversResponse.
+        r"""Sets the count of this ListJdbcDriversResponse.
 
         驱动文件总数。
 
@@ -73,7 +73,7 @@ class ListJdbcDriversResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListJdbcDriversResponse.
+        r"""Gets the items of this ListJdbcDriversResponse.
 
         驱动文件列表。
 
@@ -84,7 +84,7 @@ class ListJdbcDriversResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListJdbcDriversResponse.
+        r"""Sets the items of this ListJdbcDriversResponse.
 
         驱动文件列表。
 

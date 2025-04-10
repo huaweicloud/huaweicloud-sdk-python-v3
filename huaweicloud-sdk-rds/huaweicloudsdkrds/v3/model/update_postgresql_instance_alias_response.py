@@ -26,7 +26,7 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UpdatePostgresqlInstanceAliasResponse
+        r"""UpdatePostgresqlInstanceAliasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this UpdatePostgresqlInstanceAliasResponse.
+        r"""Gets the resp of this UpdatePostgresqlInstanceAliasResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this UpdatePostgresqlInstanceAliasResponse.
+        r"""Sets the resp of this UpdatePostgresqlInstanceAliasResponse.
 
         操作结果。
 

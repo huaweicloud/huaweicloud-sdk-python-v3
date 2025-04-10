@@ -28,7 +28,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, data=None):
-        """ListTtscVocabularyConfigsResponse
+        r"""ListTtscVocabularyConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTtscVocabularyConfigsResponse.
+        r"""Gets the count of this ListTtscVocabularyConfigsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTtscVocabularyConfigsResponse.
+        r"""Sets the count of this ListTtscVocabularyConfigsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListTtscVocabularyConfigsResponse.
+        r"""Gets the data of this ListTtscVocabularyConfigsResponse.
 
         自定义读法。
 
@@ -84,7 +84,7 @@ class ListTtscVocabularyConfigsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListTtscVocabularyConfigsResponse.
+        r"""Sets the data of this ListTtscVocabularyConfigsResponse.
 
         自定义读法。
 

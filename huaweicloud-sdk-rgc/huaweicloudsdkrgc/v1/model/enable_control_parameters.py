@@ -27,7 +27,7 @@ class EnableControlParameters:
     }
 
     def __init__(self, key=None, value=None):
-        """EnableControlParameters
+        r"""EnableControlParameters
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EnableControlParameters:
 
     @property
     def key(self):
-        """Gets the key of this EnableControlParameters.
+        r"""Gets the key of this EnableControlParameters.
 
         策略参数名称。
 
@@ -59,7 +59,7 @@ class EnableControlParameters:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this EnableControlParameters.
+        r"""Sets the key of this EnableControlParameters.
 
         策略参数名称。
 
@@ -70,7 +70,7 @@ class EnableControlParameters:
 
     @property
     def value(self):
-        """Gets the value of this EnableControlParameters.
+        r"""Gets the value of this EnableControlParameters.
 
         策略参数的值。
 
@@ -81,7 +81,7 @@ class EnableControlParameters:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnableControlParameters.
+        r"""Sets the value of this EnableControlParameters.
 
         策略参数的值。
 

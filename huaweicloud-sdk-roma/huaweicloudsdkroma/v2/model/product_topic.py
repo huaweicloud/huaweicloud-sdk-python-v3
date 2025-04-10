@@ -35,7 +35,7 @@ class ProductTopic:
     }
 
     def __init__(self, product_id=None, topic_id=None, permission=None, topic_name=None, version=None, description=None):
-        """ProductTopic
+        r"""ProductTopic
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProductTopic:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductTopic.
+        r"""Gets the product_id of this ProductTopic.
 
         归属产品ID
 
@@ -89,7 +89,7 @@ class ProductTopic:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductTopic.
+        r"""Sets the product_id of this ProductTopic.
 
         归属产品ID
 
@@ -100,7 +100,7 @@ class ProductTopic:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this ProductTopic.
+        r"""Gets the topic_id of this ProductTopic.
 
         产品主题ID
 
@@ -111,7 +111,7 @@ class ProductTopic:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this ProductTopic.
+        r"""Sets the topic_id of this ProductTopic.
 
         产品主题ID
 
@@ -122,7 +122,7 @@ class ProductTopic:
 
     @property
     def permission(self):
-        """Gets the permission of this ProductTopic.
+        r"""Gets the permission of this ProductTopic.
 
         主题权限 0-发布 1-订阅
 
@@ -133,7 +133,7 @@ class ProductTopic:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ProductTopic.
+        r"""Sets the permission of this ProductTopic.
 
         主题权限 0-发布 1-订阅
 
@@ -144,7 +144,7 @@ class ProductTopic:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this ProductTopic.
+        r"""Gets the topic_name of this ProductTopic.
 
         主题名称
 
@@ -155,7 +155,7 @@ class ProductTopic:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this ProductTopic.
+        r"""Sets the topic_name of this ProductTopic.
 
         主题名称
 
@@ -166,7 +166,7 @@ class ProductTopic:
 
     @property
     def version(self):
-        """Gets the version of this ProductTopic.
+        r"""Gets the version of this ProductTopic.
 
         版本号
 
@@ -177,7 +177,7 @@ class ProductTopic:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ProductTopic.
+        r"""Sets the version of this ProductTopic.
 
         版本号
 
@@ -188,7 +188,7 @@ class ProductTopic:
 
     @property
     def description(self):
-        """Gets the description of this ProductTopic.
+        r"""Gets the description of this ProductTopic.
 
         描述
 
@@ -199,7 +199,7 @@ class ProductTopic:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProductTopic.
+        r"""Sets the description of this ProductTopic.
 
         描述
 

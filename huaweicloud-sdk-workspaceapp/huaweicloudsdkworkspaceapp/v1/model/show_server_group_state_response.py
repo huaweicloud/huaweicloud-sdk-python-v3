@@ -26,7 +26,7 @@ class ShowServerGroupStateResponse(SdkResponse):
     }
 
     def __init__(self, aps_status=None):
-        """ShowServerGroupStateResponse
+        r"""ShowServerGroupStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowServerGroupStateResponse(SdkResponse):
 
     @property
     def aps_status(self):
-        """Gets the aps_status of this ShowServerGroupStateResponse.
+        r"""Gets the aps_status of this ShowServerGroupStateResponse.
 
         对应状态的服务器数量，参考ServerStatus。
 
@@ -55,7 +55,7 @@ class ShowServerGroupStateResponse(SdkResponse):
 
     @aps_status.setter
     def aps_status(self, aps_status):
-        """Sets the aps_status of this ShowServerGroupStateResponse.
+        r"""Sets the aps_status of this ShowServerGroupStateResponse.
 
         对应状态的服务器数量，参考ServerStatus。
 

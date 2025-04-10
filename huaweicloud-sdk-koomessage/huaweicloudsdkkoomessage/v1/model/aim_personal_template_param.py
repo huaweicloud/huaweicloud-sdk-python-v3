@@ -29,7 +29,7 @@ class AimPersonalTemplateParam:
     }
 
     def __init__(self, type=None, name=None, example=None):
-        """AimPersonalTemplateParam
+        r"""AimPersonalTemplateParam
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AimPersonalTemplateParam:
 
     @property
     def type(self):
-        """Gets the type of this AimPersonalTemplateParam.
+        r"""Gets the type of this AimPersonalTemplateParam.
 
         动态参数类型。1：表示文本类型。 
 
@@ -65,7 +65,7 @@ class AimPersonalTemplateParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AimPersonalTemplateParam.
+        r"""Sets the type of this AimPersonalTemplateParam.
 
         动态参数类型。1：表示文本类型。 
 
@@ -76,7 +76,7 @@ class AimPersonalTemplateParam:
 
     @property
     def name(self):
-        """Gets the name of this AimPersonalTemplateParam.
+        r"""Gets the name of this AimPersonalTemplateParam.
 
         动态参数名称。示例：${param1}。
 
@@ -87,7 +87,7 @@ class AimPersonalTemplateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AimPersonalTemplateParam.
+        r"""Sets the name of this AimPersonalTemplateParam.
 
         动态参数名称。示例：${param1}。
 
@@ -98,7 +98,7 @@ class AimPersonalTemplateParam:
 
     @property
     def example(self):
-        """Gets the example of this AimPersonalTemplateParam.
+        r"""Gets the example of this AimPersonalTemplateParam.
 
         参数示例，动态参数对应的示例，不能大于100个字符。
 
@@ -109,7 +109,7 @@ class AimPersonalTemplateParam:
 
     @example.setter
     def example(self, example):
-        """Sets the example of this AimPersonalTemplateParam.
+        r"""Sets the example of this AimPersonalTemplateParam.
 
         参数示例，动态参数对应的示例，不能大于100个字符。
 

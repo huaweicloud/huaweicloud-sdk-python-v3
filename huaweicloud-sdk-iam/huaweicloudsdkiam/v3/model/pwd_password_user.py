@@ -29,7 +29,7 @@ class PwdPasswordUser:
     }
 
     def __init__(self, domain=None, name=None, password=None):
-        """PwdPasswordUser
+        r"""PwdPasswordUser
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PwdPasswordUser:
 
     @property
     def domain(self):
-        """Gets the domain of this PwdPasswordUser.
+        r"""Gets the domain of this PwdPasswordUser.
 
         :return: The domain of this PwdPasswordUser.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdPasswordUserDomain`
@@ -63,7 +63,7 @@ class PwdPasswordUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this PwdPasswordUser.
+        r"""Sets the domain of this PwdPasswordUser.
 
         :param domain: The domain of this PwdPasswordUser.
         :type domain: :class:`huaweicloudsdkiam.v3.PwdPasswordUserDomain`
@@ -72,7 +72,7 @@ class PwdPasswordUser:
 
     @property
     def name(self):
-        """Gets the name of this PwdPasswordUser.
+        r"""Gets the name of this PwdPasswordUser.
 
         IAM用户名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -83,7 +83,7 @@ class PwdPasswordUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PwdPasswordUser.
+        r"""Sets the name of this PwdPasswordUser.
 
         IAM用户名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -94,7 +94,7 @@ class PwdPasswordUser:
 
     @property
     def password(self):
-        """Gets the password of this PwdPasswordUser.
+        r"""Gets the password of this PwdPasswordUser.
 
         IAM用户的登录密码。
 
@@ -105,7 +105,7 @@ class PwdPasswordUser:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this PwdPasswordUser.
+        r"""Sets the password of this PwdPasswordUser.
 
         IAM用户的登录密码。
 

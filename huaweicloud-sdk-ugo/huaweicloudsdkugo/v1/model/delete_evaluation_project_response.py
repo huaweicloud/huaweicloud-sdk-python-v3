@@ -26,7 +26,7 @@ class DeleteEvaluationProjectResponse(SdkResponse):
     }
 
     def __init__(self, evaluation_project_id=None):
-        """DeleteEvaluationProjectResponse
+        r"""DeleteEvaluationProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteEvaluationProjectResponse(SdkResponse):
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this DeleteEvaluationProjectResponse.
+        r"""Gets the evaluation_project_id of this DeleteEvaluationProjectResponse.
 
         评估项目ID。
 
@@ -55,7 +55,7 @@ class DeleteEvaluationProjectResponse(SdkResponse):
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this DeleteEvaluationProjectResponse.
+        r"""Sets the evaluation_project_id of this DeleteEvaluationProjectResponse.
 
         评估项目ID。
 

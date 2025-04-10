@@ -77,7 +77,7 @@ class QueryInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, remark=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, dss_pool_id=None, actions=None, order_id=None, tags=None):
-        """QueryInstanceResponse
+        r"""QueryInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -201,7 +201,7 @@ class QueryInstanceResponse:
 
     @property
     def id(self):
-        """Gets the id of this QueryInstanceResponse.
+        r"""Gets the id of this QueryInstanceResponse.
 
         实例ID。
 
@@ -212,7 +212,7 @@ class QueryInstanceResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryInstanceResponse.
+        r"""Sets the id of this QueryInstanceResponse.
 
         实例ID。
 
@@ -223,7 +223,7 @@ class QueryInstanceResponse:
 
     @property
     def name(self):
-        """Gets the name of this QueryInstanceResponse.
+        r"""Gets the name of this QueryInstanceResponse.
 
         实例名称。
 
@@ -234,7 +234,7 @@ class QueryInstanceResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryInstanceResponse.
+        r"""Sets the name of this QueryInstanceResponse.
 
         实例名称。
 
@@ -245,7 +245,7 @@ class QueryInstanceResponse:
 
     @property
     def remark(self):
-        """Gets the remark of this QueryInstanceResponse.
+        r"""Gets the remark of this QueryInstanceResponse.
 
         实例备注。
 
@@ -256,7 +256,7 @@ class QueryInstanceResponse:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this QueryInstanceResponse.
+        r"""Sets the remark of this QueryInstanceResponse.
 
         实例备注。
 
@@ -267,7 +267,7 @@ class QueryInstanceResponse:
 
     @property
     def status(self):
-        """Gets the status of this QueryInstanceResponse.
+        r"""Gets the status of this QueryInstanceResponse.
 
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
@@ -278,7 +278,7 @@ class QueryInstanceResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryInstanceResponse.
+        r"""Sets the status of this QueryInstanceResponse.
 
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
@@ -289,7 +289,7 @@ class QueryInstanceResponse:
 
     @property
     def port(self):
-        """Gets the port of this QueryInstanceResponse.
+        r"""Gets the port of this QueryInstanceResponse.
 
         数据库端口号。文档数据库实例支持的端口号范围为2100～9500。
 
@@ -300,7 +300,7 @@ class QueryInstanceResponse:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this QueryInstanceResponse.
+        r"""Sets the port of this QueryInstanceResponse.
 
         数据库端口号。文档数据库实例支持的端口号范围为2100～9500。
 
@@ -311,7 +311,7 @@ class QueryInstanceResponse:
 
     @property
     def mode(self):
-        """Gets the mode of this QueryInstanceResponse.
+        r"""Gets the mode of this QueryInstanceResponse.
 
         实例类型。与请求参数相同。
 
@@ -322,7 +322,7 @@ class QueryInstanceResponse:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this QueryInstanceResponse.
+        r"""Sets the mode of this QueryInstanceResponse.
 
         实例类型。与请求参数相同。
 
@@ -333,7 +333,7 @@ class QueryInstanceResponse:
 
     @property
     def region(self):
-        """Gets the region of this QueryInstanceResponse.
+        r"""Gets the region of this QueryInstanceResponse.
 
         实例所在区域。
 
@@ -344,7 +344,7 @@ class QueryInstanceResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this QueryInstanceResponse.
+        r"""Sets the region of this QueryInstanceResponse.
 
         实例所在区域。
 
@@ -355,7 +355,7 @@ class QueryInstanceResponse:
 
     @property
     def datastore(self):
-        """Gets the datastore of this QueryInstanceResponse.
+        r"""Gets the datastore of this QueryInstanceResponse.
 
         :return: The datastore of this QueryInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.DatastoreItem`
@@ -364,7 +364,7 @@ class QueryInstanceResponse:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this QueryInstanceResponse.
+        r"""Sets the datastore of this QueryInstanceResponse.
 
         :param datastore: The datastore of this QueryInstanceResponse.
         :type datastore: :class:`huaweicloudsdkdds.v3.DatastoreItem`
@@ -373,7 +373,7 @@ class QueryInstanceResponse:
 
     @property
     def engine(self):
-        """Gets the engine of this QueryInstanceResponse.
+        r"""Gets the engine of this QueryInstanceResponse.
 
         存储引擎。取值为“wiredTiger”。
 
@@ -384,7 +384,7 @@ class QueryInstanceResponse:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this QueryInstanceResponse.
+        r"""Sets the engine of this QueryInstanceResponse.
 
         存储引擎。取值为“wiredTiger”。
 
@@ -395,7 +395,7 @@ class QueryInstanceResponse:
 
     @property
     def created(self):
-        """Gets the created of this QueryInstanceResponse.
+        r"""Gets the created of this QueryInstanceResponse.
 
         实例创建时间。
 
@@ -406,7 +406,7 @@ class QueryInstanceResponse:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this QueryInstanceResponse.
+        r"""Sets the created of this QueryInstanceResponse.
 
         实例创建时间。
 
@@ -417,7 +417,7 @@ class QueryInstanceResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this QueryInstanceResponse.
+        r"""Gets the updated of this QueryInstanceResponse.
 
         实例操作最新变更的时间。
 
@@ -428,7 +428,7 @@ class QueryInstanceResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this QueryInstanceResponse.
+        r"""Sets the updated of this QueryInstanceResponse.
 
         实例操作最新变更的时间。
 
@@ -439,7 +439,7 @@ class QueryInstanceResponse:
 
     @property
     def db_user_name(self):
-        """Gets the db_user_name of this QueryInstanceResponse.
+        r"""Gets the db_user_name of this QueryInstanceResponse.
 
         默认用户名。取值为“rwuser”。
 
@@ -450,7 +450,7 @@ class QueryInstanceResponse:
 
     @db_user_name.setter
     def db_user_name(self, db_user_name):
-        """Sets the db_user_name of this QueryInstanceResponse.
+        r"""Sets the db_user_name of this QueryInstanceResponse.
 
         默认用户名。取值为“rwuser”。
 
@@ -461,7 +461,7 @@ class QueryInstanceResponse:
 
     @property
     def ssl(self):
-        """Gets the ssl of this QueryInstanceResponse.
+        r"""Gets the ssl of this QueryInstanceResponse.
 
         是否开启SSL安全连接。 - 取值为“1”，表示开启。 - 取值为“0”，表示不开启。
 
@@ -472,7 +472,7 @@ class QueryInstanceResponse:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this QueryInstanceResponse.
+        r"""Sets the ssl of this QueryInstanceResponse.
 
         是否开启SSL安全连接。 - 取值为“1”，表示开启。 - 取值为“0”，表示不开启。
 
@@ -483,7 +483,7 @@ class QueryInstanceResponse:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this QueryInstanceResponse.
+        r"""Gets the vpc_id of this QueryInstanceResponse.
 
         虚拟私有云ID。
 
@@ -494,7 +494,7 @@ class QueryInstanceResponse:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this QueryInstanceResponse.
+        r"""Sets the vpc_id of this QueryInstanceResponse.
 
         虚拟私有云ID。
 
@@ -505,7 +505,7 @@ class QueryInstanceResponse:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this QueryInstanceResponse.
+        r"""Gets the subnet_id of this QueryInstanceResponse.
 
         子网ID。
 
@@ -516,7 +516,7 @@ class QueryInstanceResponse:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this QueryInstanceResponse.
+        r"""Sets the subnet_id of this QueryInstanceResponse.
 
         子网ID。
 
@@ -527,7 +527,7 @@ class QueryInstanceResponse:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this QueryInstanceResponse.
+        r"""Gets the security_group_id of this QueryInstanceResponse.
 
         安全组ID。
 
@@ -538,7 +538,7 @@ class QueryInstanceResponse:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this QueryInstanceResponse.
+        r"""Sets the security_group_id of this QueryInstanceResponse.
 
         安全组ID。
 
@@ -549,7 +549,7 @@ class QueryInstanceResponse:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this QueryInstanceResponse.
+        r"""Gets the backup_strategy of this QueryInstanceResponse.
 
         :return: The backup_strategy of this QueryInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`
@@ -558,7 +558,7 @@ class QueryInstanceResponse:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this QueryInstanceResponse.
+        r"""Sets the backup_strategy of this QueryInstanceResponse.
 
         :param backup_strategy: The backup_strategy of this QueryInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`
@@ -567,7 +567,7 @@ class QueryInstanceResponse:
 
     @property
     def pay_mode(self):
-        """Gets the pay_mode of this QueryInstanceResponse.
+        r"""Gets the pay_mode of this QueryInstanceResponse.
 
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
@@ -578,7 +578,7 @@ class QueryInstanceResponse:
 
     @pay_mode.setter
     def pay_mode(self, pay_mode):
-        """Sets the pay_mode of this QueryInstanceResponse.
+        r"""Sets the pay_mode of this QueryInstanceResponse.
 
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
@@ -589,7 +589,7 @@ class QueryInstanceResponse:
 
     @property
     def maintenance_window(self):
-        """Gets the maintenance_window of this QueryInstanceResponse.
+        r"""Gets the maintenance_window of this QueryInstanceResponse.
 
         系统可维护时间窗。
 
@@ -600,7 +600,7 @@ class QueryInstanceResponse:
 
     @maintenance_window.setter
     def maintenance_window(self, maintenance_window):
-        """Sets the maintenance_window of this QueryInstanceResponse.
+        r"""Sets the maintenance_window of this QueryInstanceResponse.
 
         系统可维护时间窗。
 
@@ -611,7 +611,7 @@ class QueryInstanceResponse:
 
     @property
     def groups(self):
-        """Gets the groups of this QueryInstanceResponse.
+        r"""Gets the groups of this QueryInstanceResponse.
 
         组信息。
 
@@ -622,7 +622,7 @@ class QueryInstanceResponse:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this QueryInstanceResponse.
+        r"""Sets the groups of this QueryInstanceResponse.
 
         组信息。
 
@@ -633,7 +633,7 @@ class QueryInstanceResponse:
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this QueryInstanceResponse.
+        r"""Gets the disk_encryption_id of this QueryInstanceResponse.
 
         磁盘加密的密钥ID。
 
@@ -644,7 +644,7 @@ class QueryInstanceResponse:
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this QueryInstanceResponse.
+        r"""Sets the disk_encryption_id of this QueryInstanceResponse.
 
         磁盘加密的密钥ID。
 
@@ -655,7 +655,7 @@ class QueryInstanceResponse:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QueryInstanceResponse.
+        r"""Gets the enterprise_project_id of this QueryInstanceResponse.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -666,7 +666,7 @@ class QueryInstanceResponse:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QueryInstanceResponse.
+        r"""Sets the enterprise_project_id of this QueryInstanceResponse.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -677,7 +677,7 @@ class QueryInstanceResponse:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this QueryInstanceResponse.
+        r"""Gets the time_zone of this QueryInstanceResponse.
 
         时区。
 
@@ -688,7 +688,7 @@ class QueryInstanceResponse:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this QueryInstanceResponse.
+        r"""Sets the time_zone of this QueryInstanceResponse.
 
         时区。
 
@@ -699,7 +699,7 @@ class QueryInstanceResponse:
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this QueryInstanceResponse.
+        r"""Gets the dss_pool_id of this QueryInstanceResponse.
 
         专属存储池ID。
 
@@ -710,7 +710,7 @@ class QueryInstanceResponse:
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this QueryInstanceResponse.
+        r"""Sets the dss_pool_id of this QueryInstanceResponse.
 
         专属存储池ID。
 
@@ -721,7 +721,7 @@ class QueryInstanceResponse:
 
     @property
     def actions(self):
-        """Gets the actions of this QueryInstanceResponse.
+        r"""Gets the actions of this QueryInstanceResponse.
 
         实例正在执行的动作。
 
@@ -732,7 +732,7 @@ class QueryInstanceResponse:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this QueryInstanceResponse.
+        r"""Sets the actions of this QueryInstanceResponse.
 
         实例正在执行的动作。
 
@@ -743,7 +743,7 @@ class QueryInstanceResponse:
 
     @property
     def order_id(self):
-        """Gets the order_id of this QueryInstanceResponse.
+        r"""Gets the order_id of this QueryInstanceResponse.
 
         订单ID，仅包周期场景返回。
 
@@ -754,7 +754,7 @@ class QueryInstanceResponse:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this QueryInstanceResponse.
+        r"""Sets the order_id of this QueryInstanceResponse.
 
         订单ID，仅包周期场景返回。
 
@@ -765,7 +765,7 @@ class QueryInstanceResponse:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryInstanceResponse.
+        r"""Gets the tags of this QueryInstanceResponse.
 
         标签列表。
 
@@ -776,7 +776,7 @@ class QueryInstanceResponse:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryInstanceResponse.
+        r"""Sets the tags of this QueryInstanceResponse.
 
         标签列表。
 

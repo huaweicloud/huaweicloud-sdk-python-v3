@@ -27,7 +27,7 @@ class HttpRuleActionResponse:
     }
 
     def __init__(self, content_type=None, content=None):
-        """HttpRuleActionResponse
+        r"""HttpRuleActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HttpRuleActionResponse:
 
     @property
     def content_type(self):
-        """Gets the content_type of this HttpRuleActionResponse.
+        r"""Gets the content_type of this HttpRuleActionResponse.
 
         内容类型
 
@@ -61,7 +61,7 @@ class HttpRuleActionResponse:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this HttpRuleActionResponse.
+        r"""Sets the content_type of this HttpRuleActionResponse.
 
         内容类型
 
@@ -72,7 +72,7 @@ class HttpRuleActionResponse:
 
     @property
     def content(self):
-        """Gets the content of this HttpRuleActionResponse.
+        r"""Gets the content of this HttpRuleActionResponse.
 
         内容
 
@@ -83,7 +83,7 @@ class HttpRuleActionResponse:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this HttpRuleActionResponse.
+        r"""Sets the content of this HttpRuleActionResponse.
 
         内容
 

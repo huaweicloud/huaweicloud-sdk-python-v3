@@ -26,7 +26,7 @@ class ListProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListProjectTagsResponse
+        r"""ListProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProjectTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListProjectTagsResponse.
+        r"""Gets the tags of this ListProjectTagsResponse.
 
         :return: The tags of this ListProjectTagsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Tag`]
@@ -53,7 +53,7 @@ class ListProjectTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListProjectTagsResponse.
+        r"""Sets the tags of this ListProjectTagsResponse.
 
         :param tags: The tags of this ListProjectTagsResponse.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.Tag`]

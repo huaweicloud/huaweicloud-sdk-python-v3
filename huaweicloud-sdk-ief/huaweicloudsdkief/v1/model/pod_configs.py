@@ -35,7 +35,7 @@ class PodConfigs:
     }
 
     def __init__(self, host_network=None, host_pid=None, migration=None, restart_policy=None, toleration_seconds=None, dns_policy=None):
-        """PodConfigs
+        r"""PodConfigs
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class PodConfigs:
 
     @property
     def host_network(self):
-        """Gets the host_network of this PodConfigs.
+        r"""Gets the host_network of this PodConfigs.
 
         应用实例是否启用主机网络，不启用则使用端口映射，默认值false
 
@@ -88,7 +88,7 @@ class PodConfigs:
 
     @host_network.setter
     def host_network(self, host_network):
-        """Sets the host_network of this PodConfigs.
+        r"""Sets the host_network of this PodConfigs.
 
         应用实例是否启用主机网络，不启用则使用端口映射，默认值false
 
@@ -99,7 +99,7 @@ class PodConfigs:
 
     @property
     def host_pid(self):
-        """Gets the host_pid of this PodConfigs.
+        r"""Gets the host_pid of this PodConfigs.
 
         应用实例是否与主机共PID命名空间，默认值false
 
@@ -110,7 +110,7 @@ class PodConfigs:
 
     @host_pid.setter
     def host_pid(self, host_pid):
-        """Sets the host_pid of this PodConfigs.
+        r"""Sets the host_pid of this PodConfigs.
 
         应用实例是否与主机共PID命名空间，默认值false
 
@@ -121,7 +121,7 @@ class PodConfigs:
 
     @property
     def migration(self):
-        """Gets the migration of this PodConfigs.
+        r"""Gets the migration of this PodConfigs.
 
         应用实例故障是否迁移，指定节点组部署时必选，默认值false
 
@@ -132,7 +132,7 @@ class PodConfigs:
 
     @migration.setter
     def migration(self, migration):
-        """Sets the migration of this PodConfigs.
+        r"""Sets the migration of this PodConfigs.
 
         应用实例故障是否迁移，指定节点组部署时必选，默认值false
 
@@ -143,7 +143,7 @@ class PodConfigs:
 
     @property
     def restart_policy(self):
-        """Gets the restart_policy of this PodConfigs.
+        r"""Gets the restart_policy of this PodConfigs.
 
         应用实例重启策略，可选值Always、OnFailure、Never
 
@@ -154,7 +154,7 @@ class PodConfigs:
 
     @restart_policy.setter
     def restart_policy(self, restart_policy):
-        """Sets the restart_policy of this PodConfigs.
+        r"""Sets the restart_policy of this PodConfigs.
 
         应用实例重启策略，可选值Always、OnFailure、Never
 
@@ -165,7 +165,7 @@ class PodConfigs:
 
     @property
     def toleration_seconds(self):
-        """Gets the toleration_seconds of this PodConfigs.
+        r"""Gets the toleration_seconds of this PodConfigs.
 
         应用实例故障容忍时间，容忍时间到达后迁移应用实例，只在指定节点组部署时生效
 
@@ -176,7 +176,7 @@ class PodConfigs:
 
     @toleration_seconds.setter
     def toleration_seconds(self, toleration_seconds):
-        """Sets the toleration_seconds of this PodConfigs.
+        r"""Sets the toleration_seconds of this PodConfigs.
 
         应用实例故障容忍时间，容忍时间到达后迁移应用实例，只在指定节点组部署时生效
 
@@ -187,7 +187,7 @@ class PodConfigs:
 
     @property
     def dns_policy(self):
-        """Gets the dns_policy of this PodConfigs.
+        r"""Gets the dns_policy of this PodConfigs.
 
         应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
 
@@ -198,7 +198,7 @@ class PodConfigs:
 
     @dns_policy.setter
     def dns_policy(self, dns_policy):
-        """Sets the dns_policy of this PodConfigs.
+        r"""Sets the dns_policy of this PodConfigs.
 
         应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
 

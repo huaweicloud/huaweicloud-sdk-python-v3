@@ -27,7 +27,7 @@ class ActionWithEntities:
     }
 
     def __init__(self, actions=None, entities=None):
-        """ActionWithEntities
+        r"""ActionWithEntities
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ActionWithEntities:
 
     @property
     def actions(self):
-        """Gets the actions of this ActionWithEntities.
+        r"""Gets the actions of this ActionWithEntities.
 
         动作列表
 
@@ -61,7 +61,7 @@ class ActionWithEntities:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ActionWithEntities.
+        r"""Sets the actions of this ActionWithEntities.
 
         动作列表
 
@@ -72,7 +72,7 @@ class ActionWithEntities:
 
     @property
     def entities(self):
-        """Gets the entities of this ActionWithEntities.
+        r"""Gets the entities of this ActionWithEntities.
 
         实体列表
 
@@ -83,7 +83,7 @@ class ActionWithEntities:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ActionWithEntities.
+        r"""Sets the entities of this ActionWithEntities.
 
         实体列表
 

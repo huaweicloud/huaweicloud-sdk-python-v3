@@ -33,7 +33,7 @@ class QueueScalingPolicy:
     }
 
     def __init__(self, priority=None, impact_start_time=None, impact_stop_time=None, min_cu=None, max_cu=None):
-        """QueueScalingPolicy
+        r"""QueueScalingPolicy
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class QueueScalingPolicy:
 
     @property
     def priority(self):
-        """Gets the priority of this QueueScalingPolicy.
+        r"""Gets the priority of this QueueScalingPolicy.
 
         策略优先级1-100，100优先级最高
 
@@ -77,7 +77,7 @@ class QueueScalingPolicy:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this QueueScalingPolicy.
+        r"""Sets the priority of this QueueScalingPolicy.
 
         策略优先级1-100，100优先级最高
 
@@ -88,7 +88,7 @@ class QueueScalingPolicy:
 
     @property
     def impact_start_time(self):
-        """Gets the impact_start_time of this QueueScalingPolicy.
+        r"""Gets the impact_start_time of this QueueScalingPolicy.
 
         开始时间
 
@@ -99,7 +99,7 @@ class QueueScalingPolicy:
 
     @impact_start_time.setter
     def impact_start_time(self, impact_start_time):
-        """Sets the impact_start_time of this QueueScalingPolicy.
+        r"""Sets the impact_start_time of this QueueScalingPolicy.
 
         开始时间
 
@@ -110,7 +110,7 @@ class QueueScalingPolicy:
 
     @property
     def impact_stop_time(self):
-        """Gets the impact_stop_time of this QueueScalingPolicy.
+        r"""Gets the impact_stop_time of this QueueScalingPolicy.
 
         结束时间
 
@@ -121,7 +121,7 @@ class QueueScalingPolicy:
 
     @impact_stop_time.setter
     def impact_stop_time(self, impact_stop_time):
-        """Sets the impact_stop_time of this QueueScalingPolicy.
+        r"""Sets the impact_stop_time of this QueueScalingPolicy.
 
         结束时间
 
@@ -132,7 +132,7 @@ class QueueScalingPolicy:
 
     @property
     def min_cu(self):
-        """Gets the min_cu of this QueueScalingPolicy.
+        r"""Gets the min_cu of this QueueScalingPolicy.
 
         最小cu数量
 
@@ -143,7 +143,7 @@ class QueueScalingPolicy:
 
     @min_cu.setter
     def min_cu(self, min_cu):
-        """Sets the min_cu of this QueueScalingPolicy.
+        r"""Sets the min_cu of this QueueScalingPolicy.
 
         最小cu数量
 
@@ -154,7 +154,7 @@ class QueueScalingPolicy:
 
     @property
     def max_cu(self):
-        """Gets the max_cu of this QueueScalingPolicy.
+        r"""Gets the max_cu of this QueueScalingPolicy.
 
         最大cu数量
 
@@ -165,7 +165,7 @@ class QueueScalingPolicy:
 
     @max_cu.setter
     def max_cu(self, max_cu):
-        """Sets the max_cu of this QueueScalingPolicy.
+        r"""Sets the max_cu of this QueueScalingPolicy.
 
         最大cu数量
 

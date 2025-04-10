@@ -30,7 +30,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, workload_queue=None):
-        """ShowWorkloadQueueResponse
+        r"""ShowWorkloadQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ShowWorkloadQueueResponse.
+        r"""Gets the workload_res_code of this ShowWorkloadQueueResponse.
 
         结果状态码。
 
@@ -69,7 +69,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ShowWorkloadQueueResponse.
+        r"""Sets the workload_res_code of this ShowWorkloadQueueResponse.
 
         结果状态码。
 
@@ -80,7 +80,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ShowWorkloadQueueResponse.
+        r"""Gets the workload_res_str of this ShowWorkloadQueueResponse.
 
         结果描述。
 
@@ -91,7 +91,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ShowWorkloadQueueResponse.
+        r"""Sets the workload_res_str of this ShowWorkloadQueueResponse.
 
         结果描述。
 
@@ -102,7 +102,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
 
     @property
     def workload_queue(self):
-        """Gets the workload_queue of this ShowWorkloadQueueResponse.
+        r"""Gets the workload_queue of this ShowWorkloadQueueResponse.
 
         :return: The workload_queue of this ShowWorkloadQueueResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueueItem`
@@ -111,7 +111,7 @@ class ShowWorkloadQueueResponse(SdkResponse):
 
     @workload_queue.setter
     def workload_queue(self, workload_queue):
-        """Sets the workload_queue of this ShowWorkloadQueueResponse.
+        r"""Sets the workload_queue of this ShowWorkloadQueueResponse.
 
         :param workload_queue: The workload_queue of this ShowWorkloadQueueResponse.
         :type workload_queue: :class:`huaweicloudsdkdws.v2.WorkloadQueueItem`

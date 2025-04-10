@@ -32,7 +32,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
     }
 
     def __init__(self, intent_id=None, identify=None, question_list=None, x_request_id=None):
-        """CreateIntentAndQuestionResponse
+        r"""CreateIntentAndQuestionResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this CreateIntentAndQuestionResponse.
+        r"""Gets the intent_id of this CreateIntentAndQuestionResponse.
 
         意图ID。
 
@@ -75,7 +75,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this CreateIntentAndQuestionResponse.
+        r"""Sets the intent_id of this CreateIntentAndQuestionResponse.
 
         意图ID。
 
@@ -86,7 +86,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @property
     def identify(self):
-        """Gets the identify of this CreateIntentAndQuestionResponse.
+        r"""Gets the identify of this CreateIntentAndQuestionResponse.
 
         意图标识。
 
@@ -97,7 +97,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this CreateIntentAndQuestionResponse.
+        r"""Sets the identify of this CreateIntentAndQuestionResponse.
 
         意图标识。
 
@@ -108,7 +108,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @property
     def question_list(self):
-        """Gets the question_list of this CreateIntentAndQuestionResponse.
+        r"""Gets the question_list of this CreateIntentAndQuestionResponse.
 
         问法列表
 
@@ -119,7 +119,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @question_list.setter
     def question_list(self, question_list):
-        """Sets the question_list of this CreateIntentAndQuestionResponse.
+        r"""Sets the question_list of this CreateIntentAndQuestionResponse.
 
         问法列表
 
@@ -130,7 +130,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateIntentAndQuestionResponse.
+        r"""Gets the x_request_id of this CreateIntentAndQuestionResponse.
 
         :return: The x_request_id of this CreateIntentAndQuestionResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateIntentAndQuestionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateIntentAndQuestionResponse.
+        r"""Sets the x_request_id of this CreateIntentAndQuestionResponse.
 
         :param x_request_id: The x_request_id of this CreateIntentAndQuestionResponse.
         :type x_request_id: str

@@ -30,7 +30,7 @@ class ListDrugDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, count=None, cur_user_count=None):
-        """ListDrugDatabaseResponse
+        r"""ListDrugDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListDrugDatabaseResponse.
+        r"""Gets the databases of this ListDrugDatabaseResponse.
 
         数据库列表
 
@@ -69,7 +69,7 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListDrugDatabaseResponse.
+        r"""Sets the databases of this ListDrugDatabaseResponse.
 
         数据库列表
 
@@ -80,7 +80,7 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDrugDatabaseResponse.
+        r"""Gets the count of this ListDrugDatabaseResponse.
 
         数据库总数
 
@@ -91,7 +91,7 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDrugDatabaseResponse.
+        r"""Sets the count of this ListDrugDatabaseResponse.
 
         数据库总数
 
@@ -102,7 +102,7 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     @property
     def cur_user_count(self):
-        """Gets the cur_user_count of this ListDrugDatabaseResponse.
+        r"""Gets the cur_user_count of this ListDrugDatabaseResponse.
 
         当前用户数据库总数
 
@@ -113,7 +113,7 @@ class ListDrugDatabaseResponse(SdkResponse):
 
     @cur_user_count.setter
     def cur_user_count(self, cur_user_count):
-        """Sets the cur_user_count of this ListDrugDatabaseResponse.
+        r"""Sets the cur_user_count of this ListDrugDatabaseResponse.
 
         当前用户数据库总数
 

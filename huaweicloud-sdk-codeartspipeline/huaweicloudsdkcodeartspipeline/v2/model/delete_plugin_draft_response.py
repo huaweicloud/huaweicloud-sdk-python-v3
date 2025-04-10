@@ -26,7 +26,7 @@ class DeletePluginDraftResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeletePluginDraftResponse
+        r"""DeletePluginDraftResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePluginDraftResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeletePluginDraftResponse.
+        r"""Gets the body of this DeletePluginDraftResponse.
 
         :return: The body of this DeletePluginDraftResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeletePluginDraftResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePluginDraftResponse.
+        r"""Sets the body of this DeletePluginDraftResponse.
 
         :param body: The body of this DeletePluginDraftResponse.
         :type body: str

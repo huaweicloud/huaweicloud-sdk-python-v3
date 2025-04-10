@@ -25,7 +25,7 @@ class CdmCreateJobJsonReq:
     }
 
     def __init__(self, jobs=None):
-        """CdmCreateJobJsonReq
+        r"""CdmCreateJobJsonReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CdmCreateJobJsonReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this CdmCreateJobJsonReq.
+        r"""Gets the jobs of this CdmCreateJobJsonReq.
 
         作业列表，请参见jobs数据结构说明。
 
@@ -53,7 +53,7 @@ class CdmCreateJobJsonReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this CdmCreateJobJsonReq.
+        r"""Sets the jobs of this CdmCreateJobJsonReq.
 
         作业列表，请参见jobs数据结构说明。
 

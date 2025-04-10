@@ -27,7 +27,7 @@ class ShowSubCustomerBudgetRequest:
     }
 
     def __init__(self, customer_id=None, indirect_partner_id=None):
-        """ShowSubCustomerBudgetRequest
+        r"""ShowSubCustomerBudgetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSubCustomerBudgetRequest:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ShowSubCustomerBudgetRequest.
+        r"""Gets the customer_id of this ShowSubCustomerBudgetRequest.
 
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
@@ -60,7 +60,7 @@ class ShowSubCustomerBudgetRequest:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ShowSubCustomerBudgetRequest.
+        r"""Sets the customer_id of this ShowSubCustomerBudgetRequest.
 
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
@@ -71,7 +71,7 @@ class ShowSubCustomerBudgetRequest:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ShowSubCustomerBudgetRequest.
+        r"""Gets the indirect_partner_id of this ShowSubCustomerBudgetRequest.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -82,7 +82,7 @@ class ShowSubCustomerBudgetRequest:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ShowSubCustomerBudgetRequest.
+        r"""Sets the indirect_partner_id of this ShowSubCustomerBudgetRequest.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 

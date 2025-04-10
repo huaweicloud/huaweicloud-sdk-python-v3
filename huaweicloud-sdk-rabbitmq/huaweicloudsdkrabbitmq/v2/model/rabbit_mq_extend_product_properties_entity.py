@@ -39,7 +39,7 @@ class RabbitMQExtendProductPropertiesEntity:
     }
 
     def __init__(self, max_broker=None, max_storage_per_node=None, min_broker=None, min_storage_per_node=None, max_connection_per_broker=None, step_length=None, product_alias=None, max_queue_per_broker=None):
-        """RabbitMQExtendProductPropertiesEntity
+        r"""RabbitMQExtendProductPropertiesEntity
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def max_broker(self):
-        """Gets the max_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the max_broker of this RabbitMQExtendProductPropertiesEntity.
 
         Broker的最大个数。
 
@@ -103,7 +103,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @max_broker.setter
     def max_broker(self, max_broker):
-        """Sets the max_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the max_broker of this RabbitMQExtendProductPropertiesEntity.
 
         Broker的最大个数。
 
@@ -114,7 +114,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def max_storage_per_node(self):
-        """Gets the max_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the max_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
 
         每个节点的最大存储。单位为GB。
 
@@ -125,7 +125,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @max_storage_per_node.setter
     def max_storage_per_node(self, max_storage_per_node):
-        """Sets the max_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the max_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
 
         每个节点的最大存储。单位为GB。
 
@@ -136,7 +136,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def min_broker(self):
-        """Gets the min_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the min_broker of this RabbitMQExtendProductPropertiesEntity.
 
         Broker的最小个数。
 
@@ -147,7 +147,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @min_broker.setter
     def min_broker(self, min_broker):
-        """Sets the min_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the min_broker of this RabbitMQExtendProductPropertiesEntity.
 
         Broker的最小个数。
 
@@ -158,7 +158,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def min_storage_per_node(self):
-        """Gets the min_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the min_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -169,7 +169,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @min_storage_per_node.setter
     def min_storage_per_node(self, min_storage_per_node):
-        """Sets the min_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the min_storage_per_node of this RabbitMQExtendProductPropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -180,7 +180,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def max_connection_per_broker(self):
-        """Gets the max_connection_per_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the max_connection_per_broker of this RabbitMQExtendProductPropertiesEntity.
 
         最大连接数
 
@@ -191,7 +191,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @max_connection_per_broker.setter
     def max_connection_per_broker(self, max_connection_per_broker):
-        """Sets the max_connection_per_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the max_connection_per_broker of this RabbitMQExtendProductPropertiesEntity.
 
         最大连接数
 
@@ -202,7 +202,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def step_length(self):
-        """Gets the step_length of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the step_length of this RabbitMQExtendProductPropertiesEntity.
 
         步长
 
@@ -213,7 +213,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @step_length.setter
     def step_length(self, step_length):
-        """Sets the step_length of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the step_length of this RabbitMQExtendProductPropertiesEntity.
 
         步长
 
@@ -224,7 +224,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def product_alias(self):
-        """Gets the product_alias of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the product_alias of this RabbitMQExtendProductPropertiesEntity.
 
         product_id的别名。
 
@@ -235,7 +235,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @product_alias.setter
     def product_alias(self, product_alias):
-        """Sets the product_alias of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the product_alias of this RabbitMQExtendProductPropertiesEntity.
 
         product_id的别名。
 
@@ -246,7 +246,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @property
     def max_queue_per_broker(self):
-        """Gets the max_queue_per_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Gets the max_queue_per_broker of this RabbitMQExtendProductPropertiesEntity.
 
         最大队列
 
@@ -257,7 +257,7 @@ class RabbitMQExtendProductPropertiesEntity:
 
     @max_queue_per_broker.setter
     def max_queue_per_broker(self, max_queue_per_broker):
-        """Sets the max_queue_per_broker of this RabbitMQExtendProductPropertiesEntity.
+        r"""Sets the max_queue_per_broker of this RabbitMQExtendProductPropertiesEntity.
 
         最大队列
 

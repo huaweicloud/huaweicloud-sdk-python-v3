@@ -27,7 +27,7 @@ class ExecuteSqlRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ExecuteSqlRequest
+        r"""ExecuteSqlRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteSqlRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExecuteSqlRequest.
+        r"""Gets the cluster_id of this ExecuteSqlRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class ExecuteSqlRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExecuteSqlRequest.
+        r"""Sets the cluster_id of this ExecuteSqlRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class ExecuteSqlRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteSqlRequest.
+        r"""Gets the body of this ExecuteSqlRequest.
 
         :return: The body of this ExecuteSqlRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.SqlExecutionReq`
@@ -80,7 +80,7 @@ class ExecuteSqlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteSqlRequest.
+        r"""Sets the body of this ExecuteSqlRequest.
 
         :param body: The body of this ExecuteSqlRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.SqlExecutionReq`

@@ -29,7 +29,7 @@ class Iops:
     }
 
     def __init__(self, frozened=None, id=None, total_val=None):
-        """Iops
+        r"""Iops
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Iops:
 
     @property
     def frozened(self):
-        """Gets the frozened of this Iops.
+        r"""Gets the frozened of this Iops.
 
         冻结标签。
 
@@ -65,7 +65,7 @@ class Iops:
 
     @frozened.setter
     def frozened(self, frozened):
-        """Sets the frozened of this Iops.
+        r"""Sets the frozened of this Iops.
 
         冻结标签。
 
@@ -76,7 +76,7 @@ class Iops:
 
     @property
     def id(self):
-        """Gets the id of this Iops.
+        r"""Gets the id of this Iops.
 
         云硬盘iops标识。
 
@@ -87,7 +87,7 @@ class Iops:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Iops.
+        r"""Sets the id of this Iops.
 
         云硬盘iops标识。
 
@@ -98,7 +98,7 @@ class Iops:
 
     @property
     def total_val(self):
-        """Gets the total_val of this Iops.
+        r"""Gets the total_val of this Iops.
 
         iops大小。
 
@@ -109,7 +109,7 @@ class Iops:
 
     @total_val.setter
     def total_val(self, total_val):
-        """Sets the total_val of this Iops.
+        r"""Sets the total_val of this Iops.
 
         iops大小。
 

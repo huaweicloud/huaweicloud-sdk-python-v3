@@ -51,7 +51,7 @@ class ContainerDef:
     }
 
     def __init__(self, name=None, image_url=None, args=None, command=None, resources=None, envs=None, ports=None, privileged=None, run_as_user=None, readiness_probe=None, liveness_probe=None, version=None, volumes=None, npu_type=None):
-        """ContainerDef
+        r"""ContainerDef
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class ContainerDef:
 
     @property
     def name(self):
-        """Gets the name of this ContainerDef.
+        r"""Gets the name of this ContainerDef.
 
         容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -143,7 +143,7 @@ class ContainerDef:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ContainerDef.
+        r"""Sets the name of this ContainerDef.
 
         容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -154,7 +154,7 @@ class ContainerDef:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ContainerDef.
+        r"""Gets the image_url of this ContainerDef.
 
         容器镜像URL
 
@@ -165,7 +165,7 @@ class ContainerDef:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ContainerDef.
+        r"""Sets the image_url of this ContainerDef.
 
         容器镜像URL
 
@@ -176,7 +176,7 @@ class ContainerDef:
 
     @property
     def args(self):
-        """Gets the args of this ContainerDef.
+        r"""Gets the args of this ContainerDef.
 
         容器启动参数，字符总长度最大为65536
 
@@ -187,7 +187,7 @@ class ContainerDef:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this ContainerDef.
+        r"""Sets the args of this ContainerDef.
 
         容器启动参数，字符总长度最大为65536
 
@@ -198,7 +198,7 @@ class ContainerDef:
 
     @property
     def command(self):
-        """Gets the command of this ContainerDef.
+        r"""Gets the command of this ContainerDef.
 
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
 
@@ -209,7 +209,7 @@ class ContainerDef:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ContainerDef.
+        r"""Sets the command of this ContainerDef.
 
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
 
@@ -220,7 +220,7 @@ class ContainerDef:
 
     @property
     def resources(self):
-        """Gets the resources of this ContainerDef.
+        r"""Gets the resources of this ContainerDef.
 
         :return: The resources of this ContainerDef.
         :rtype: :class:`huaweicloudsdkief.v1.DeploymentResources`
@@ -229,7 +229,7 @@ class ContainerDef:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ContainerDef.
+        r"""Sets the resources of this ContainerDef.
 
         :param resources: The resources of this ContainerDef.
         :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
@@ -238,7 +238,7 @@ class ContainerDef:
 
     @property
     def envs(self):
-        """Gets the envs of this ContainerDef.
+        r"""Gets the envs of this ContainerDef.
 
         环境变量
 
@@ -249,7 +249,7 @@ class ContainerDef:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ContainerDef.
+        r"""Sets the envs of this ContainerDef.
 
         环境变量
 
@@ -260,7 +260,7 @@ class ContainerDef:
 
     @property
     def ports(self):
-        """Gets the ports of this ContainerDef.
+        r"""Gets the ports of this ContainerDef.
 
         容器端口映射值
 
@@ -271,7 +271,7 @@ class ContainerDef:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ContainerDef.
+        r"""Sets the ports of this ContainerDef.
 
         容器端口映射值
 
@@ -282,7 +282,7 @@ class ContainerDef:
 
     @property
     def privileged(self):
-        """Gets the privileged of this ContainerDef.
+        r"""Gets the privileged of this ContainerDef.
 
         是否启用特权容器,默认值false
 
@@ -293,7 +293,7 @@ class ContainerDef:
 
     @privileged.setter
     def privileged(self, privileged):
-        """Sets the privileged of this ContainerDef.
+        r"""Sets the privileged of this ContainerDef.
 
         是否启用特权容器,默认值false
 
@@ -304,7 +304,7 @@ class ContainerDef:
 
     @property
     def run_as_user(self):
-        """Gets the run_as_user of this ContainerDef.
+        r"""Gets the run_as_user of this ContainerDef.
 
         容器运行用户ID，输入范围为0~65534的整数
 
@@ -315,7 +315,7 @@ class ContainerDef:
 
     @run_as_user.setter
     def run_as_user(self, run_as_user):
-        """Sets the run_as_user of this ContainerDef.
+        r"""Sets the run_as_user of this ContainerDef.
 
         容器运行用户ID，输入范围为0~65534的整数
 
@@ -326,7 +326,7 @@ class ContainerDef:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ContainerDef.
+        r"""Gets the readiness_probe of this ContainerDef.
 
         :return: The readiness_probe of this ContainerDef.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
@@ -335,7 +335,7 @@ class ContainerDef:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ContainerDef.
+        r"""Sets the readiness_probe of this ContainerDef.
 
         :param readiness_probe: The readiness_probe of this ContainerDef.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -344,7 +344,7 @@ class ContainerDef:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ContainerDef.
+        r"""Gets the liveness_probe of this ContainerDef.
 
         :return: The liveness_probe of this ContainerDef.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
@@ -353,7 +353,7 @@ class ContainerDef:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ContainerDef.
+        r"""Sets the liveness_probe of this ContainerDef.
 
         :param liveness_probe: The liveness_probe of this ContainerDef.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -362,7 +362,7 @@ class ContainerDef:
 
     @property
     def version(self):
-        """Gets the version of this ContainerDef.
+        r"""Gets the version of this ContainerDef.
 
         容器镜像版本
 
@@ -373,7 +373,7 @@ class ContainerDef:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ContainerDef.
+        r"""Sets the version of this ContainerDef.
 
         容器镜像版本
 
@@ -384,7 +384,7 @@ class ContainerDef:
 
     @property
     def volumes(self):
-        """Gets the volumes of this ContainerDef.
+        r"""Gets the volumes of this ContainerDef.
 
         卷配置
 
@@ -395,7 +395,7 @@ class ContainerDef:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ContainerDef.
+        r"""Sets the volumes of this ContainerDef.
 
         卷配置
 
@@ -406,7 +406,7 @@ class ContainerDef:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this ContainerDef.
+        r"""Gets the npu_type of this ContainerDef.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
 
@@ -417,7 +417,7 @@ class ContainerDef:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this ContainerDef.
+        r"""Sets the npu_type of this ContainerDef.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
 

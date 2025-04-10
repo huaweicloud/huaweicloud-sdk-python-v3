@@ -27,7 +27,7 @@ class GetTaskDetailListRspJobsInstance:
     }
 
     def __init__(self, id=None, name=None):
-        """GetTaskDetailListRspJobsInstance
+        r"""GetTaskDetailListRspJobsInstance
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetTaskDetailListRspJobsInstance:
 
     @property
     def id(self):
-        """Gets the id of this GetTaskDetailListRspJobsInstance.
+        r"""Gets the id of this GetTaskDetailListRspJobsInstance.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class GetTaskDetailListRspJobsInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetTaskDetailListRspJobsInstance.
+        r"""Sets the id of this GetTaskDetailListRspJobsInstance.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class GetTaskDetailListRspJobsInstance:
 
     @property
     def name(self):
-        """Gets the name of this GetTaskDetailListRspJobsInstance.
+        r"""Gets the name of this GetTaskDetailListRspJobsInstance.
 
         实例名称。
 
@@ -81,7 +81,7 @@ class GetTaskDetailListRspJobsInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetTaskDetailListRspJobsInstance.
+        r"""Sets the name of this GetTaskDetailListRspJobsInstance.
 
         实例名称。
 

@@ -27,7 +27,7 @@ class AppBatchDeleteRequest:
     }
 
     def __init__(self, project_id=None, application_ids=None):
-        """AppBatchDeleteRequest
+        r"""AppBatchDeleteRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AppBatchDeleteRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppBatchDeleteRequest.
+        r"""Gets the project_id of this AppBatchDeleteRequest.
 
         项目id
 
@@ -59,7 +59,7 @@ class AppBatchDeleteRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppBatchDeleteRequest.
+        r"""Sets the project_id of this AppBatchDeleteRequest.
 
         项目id
 
@@ -70,7 +70,7 @@ class AppBatchDeleteRequest:
 
     @property
     def application_ids(self):
-        """Gets the application_ids of this AppBatchDeleteRequest.
+        r"""Gets the application_ids of this AppBatchDeleteRequest.
 
         应用id列表
 
@@ -81,7 +81,7 @@ class AppBatchDeleteRequest:
 
     @application_ids.setter
     def application_ids(self, application_ids):
-        """Sets the application_ids of this AppBatchDeleteRequest.
+        r"""Sets the application_ids of this AppBatchDeleteRequest.
 
         应用id列表
 

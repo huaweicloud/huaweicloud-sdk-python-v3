@@ -29,7 +29,7 @@ class ChangeAlarmRuleStatus:
     }
 
     def __init__(self, alarm_rule_id=None, status=None, type=None):
-        """ChangeAlarmRuleStatus
+        r"""ChangeAlarmRuleStatus
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ChangeAlarmRuleStatus:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this ChangeAlarmRuleStatus.
+        r"""Gets the alarm_rule_id of this ChangeAlarmRuleStatus.
 
         告警规则ID
 
@@ -65,7 +65,7 @@ class ChangeAlarmRuleStatus:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this ChangeAlarmRuleStatus.
+        r"""Sets the alarm_rule_id of this ChangeAlarmRuleStatus.
 
         告警规则ID
 
@@ -76,7 +76,7 @@ class ChangeAlarmRuleStatus:
 
     @property
     def status(self):
-        """Gets the status of this ChangeAlarmRuleStatus.
+        r"""Gets the status of this ChangeAlarmRuleStatus.
 
         状态（RUNNING/STOPPING）
 
@@ -87,7 +87,7 @@ class ChangeAlarmRuleStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeAlarmRuleStatus.
+        r"""Sets the status of this ChangeAlarmRuleStatus.
 
         状态（RUNNING/STOPPING）
 
@@ -98,7 +98,7 @@ class ChangeAlarmRuleStatus:
 
     @property
     def type(self):
-        """Gets the type of this ChangeAlarmRuleStatus.
+        r"""Gets the type of this ChangeAlarmRuleStatus.
 
         类型
 
@@ -109,7 +109,7 @@ class ChangeAlarmRuleStatus:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChangeAlarmRuleStatus.
+        r"""Sets the type of this ChangeAlarmRuleStatus.
 
         类型
 

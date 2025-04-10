@@ -25,7 +25,7 @@ class DeleteLogtankRequest:
     }
 
     def __init__(self, logtank_id=None):
-        """DeleteLogtankRequest
+        r"""DeleteLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLogtankRequest:
 
     @property
     def logtank_id(self):
-        """Gets the logtank_id of this DeleteLogtankRequest.
+        r"""Gets the logtank_id of this DeleteLogtankRequest.
 
         云日志ID。
 
@@ -53,7 +53,7 @@ class DeleteLogtankRequest:
 
     @logtank_id.setter
     def logtank_id(self, logtank_id):
-        """Sets the logtank_id of this DeleteLogtankRequest.
+        r"""Sets the logtank_id of this DeleteLogtankRequest.
 
         云日志ID。
 

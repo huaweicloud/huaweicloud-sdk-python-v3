@@ -25,7 +25,7 @@ class CinderCreateVolumeTransferRequestBody:
     }
 
     def __init__(self, transfer=None):
-        """CinderCreateVolumeTransferRequestBody
+        r"""CinderCreateVolumeTransferRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CinderCreateVolumeTransferRequestBody:
 
     @property
     def transfer(self):
-        """Gets the transfer of this CinderCreateVolumeTransferRequestBody.
+        r"""Gets the transfer of this CinderCreateVolumeTransferRequestBody.
 
         :return: The transfer of this CinderCreateVolumeTransferRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeTransferOption`
@@ -51,7 +51,7 @@ class CinderCreateVolumeTransferRequestBody:
 
     @transfer.setter
     def transfer(self, transfer):
-        """Sets the transfer of this CinderCreateVolumeTransferRequestBody.
+        r"""Sets the transfer of this CinderCreateVolumeTransferRequestBody.
 
         :param transfer: The transfer of this CinderCreateVolumeTransferRequestBody.
         :type transfer: :class:`huaweicloudsdkevs.v2.CreateVolumeTransferOption`

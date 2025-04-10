@@ -28,7 +28,7 @@ class UploadFilePublisherResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """UploadFilePublisherResponse
+        r"""UploadFilePublisherResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UploadFilePublisherResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UploadFilePublisherResponse.
+        r"""Gets the result of this UploadFilePublisherResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class UploadFilePublisherResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UploadFilePublisherResponse.
+        r"""Sets the result of this UploadFilePublisherResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class UploadFilePublisherResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UploadFilePublisherResponse.
+        r"""Gets the status of this UploadFilePublisherResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class UploadFilePublisherResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadFilePublisherResponse.
+        r"""Sets the status of this UploadFilePublisherResponse.
 
         状态
 

@@ -33,7 +33,7 @@ class NextflowParamsDto:
     }
 
     def __init__(self, name=None, value=None, type=None, description=None, required=None):
-        """NextflowParamsDto
+        r"""NextflowParamsDto
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class NextflowParamsDto:
 
     @property
     def name(self):
-        """Gets the name of this NextflowParamsDto.
+        r"""Gets the name of this NextflowParamsDto.
 
         参数名
 
@@ -81,7 +81,7 @@ class NextflowParamsDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NextflowParamsDto.
+        r"""Sets the name of this NextflowParamsDto.
 
         参数名
 
@@ -92,7 +92,7 @@ class NextflowParamsDto:
 
     @property
     def value(self):
-        """Gets the value of this NextflowParamsDto.
+        r"""Gets the value of this NextflowParamsDto.
 
         参数值
 
@@ -103,7 +103,7 @@ class NextflowParamsDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this NextflowParamsDto.
+        r"""Sets the value of this NextflowParamsDto.
 
         参数值
 
@@ -114,7 +114,7 @@ class NextflowParamsDto:
 
     @property
     def type(self):
-        """Gets the type of this NextflowParamsDto.
+        r"""Gets the type of this NextflowParamsDto.
 
         参数类型,取值[Other|File|Directory]
 
@@ -125,7 +125,7 @@ class NextflowParamsDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NextflowParamsDto.
+        r"""Sets the type of this NextflowParamsDto.
 
         参数类型,取值[Other|File|Directory]
 
@@ -136,7 +136,7 @@ class NextflowParamsDto:
 
     @property
     def description(self):
-        """Gets the description of this NextflowParamsDto.
+        r"""Gets the description of this NextflowParamsDto.
 
         参数描述。取值范围：[0-255]
 
@@ -147,7 +147,7 @@ class NextflowParamsDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NextflowParamsDto.
+        r"""Sets the description of this NextflowParamsDto.
 
         参数描述。取值范围：[0-255]
 
@@ -158,7 +158,7 @@ class NextflowParamsDto:
 
     @property
     def required(self):
-        """Gets the required of this NextflowParamsDto.
+        r"""Gets the required of this NextflowParamsDto.
 
         参数是否必填
 
@@ -169,7 +169,7 @@ class NextflowParamsDto:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this NextflowParamsDto.
+        r"""Sets the required of this NextflowParamsDto.
 
         参数是否必填
 

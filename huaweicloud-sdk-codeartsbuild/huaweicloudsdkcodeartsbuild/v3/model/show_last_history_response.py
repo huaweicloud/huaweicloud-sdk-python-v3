@@ -40,7 +40,7 @@ class ShowLastHistoryResponse(SdkResponse):
     }
 
     def __init__(self, record_id=None, job_id=None, job_name=None, build_number=None, start_time=None, end_time=None, result=None, commit_id=None):
-        """ShowLastHistoryResponse
+        r"""ShowLastHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def record_id(self):
-        """Gets the record_id of this ShowLastHistoryResponse.
+        r"""Gets the record_id of this ShowLastHistoryResponse.
 
         构建记录id--唯一key
 
@@ -104,7 +104,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ShowLastHistoryResponse.
+        r"""Sets the record_id of this ShowLastHistoryResponse.
 
         构建记录id--唯一key
 
@@ -115,7 +115,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowLastHistoryResponse.
+        r"""Gets the job_id of this ShowLastHistoryResponse.
 
         构建任务ID
 
@@ -126,7 +126,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowLastHistoryResponse.
+        r"""Sets the job_id of this ShowLastHistoryResponse.
 
         构建任务ID
 
@@ -137,7 +137,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowLastHistoryResponse.
+        r"""Gets the job_name of this ShowLastHistoryResponse.
 
         构建任务名称
 
@@ -148,7 +148,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowLastHistoryResponse.
+        r"""Sets the job_name of this ShowLastHistoryResponse.
 
         构建任务名称
 
@@ -159,7 +159,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def build_number(self):
-        """Gets the build_number of this ShowLastHistoryResponse.
+        r"""Gets the build_number of this ShowLastHistoryResponse.
 
         构建编号
 
@@ -170,7 +170,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @build_number.setter
     def build_number(self, build_number):
-        """Sets the build_number of this ShowLastHistoryResponse.
+        r"""Sets the build_number of this ShowLastHistoryResponse.
 
         构建编号
 
@@ -181,7 +181,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowLastHistoryResponse.
+        r"""Gets the start_time of this ShowLastHistoryResponse.
 
         构建开始时间
 
@@ -192,7 +192,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowLastHistoryResponse.
+        r"""Sets the start_time of this ShowLastHistoryResponse.
 
         构建开始时间
 
@@ -203,7 +203,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowLastHistoryResponse.
+        r"""Gets the end_time of this ShowLastHistoryResponse.
 
         构建结束时间
 
@@ -214,7 +214,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowLastHistoryResponse.
+        r"""Sets the end_time of this ShowLastHistoryResponse.
 
         构建结束时间
 
@@ -225,7 +225,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowLastHistoryResponse.
+        r"""Gets the result of this ShowLastHistoryResponse.
 
         构建执行结果
 
@@ -236,7 +236,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowLastHistoryResponse.
+        r"""Sets the result of this ShowLastHistoryResponse.
 
         构建执行结果
 
@@ -247,7 +247,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this ShowLastHistoryResponse.
+        r"""Gets the commit_id of this ShowLastHistoryResponse.
 
         commitId
 
@@ -258,7 +258,7 @@ class ShowLastHistoryResponse(SdkResponse):
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this ShowLastHistoryResponse.
+        r"""Sets the commit_id of this ShowLastHistoryResponse.
 
         commitId
 

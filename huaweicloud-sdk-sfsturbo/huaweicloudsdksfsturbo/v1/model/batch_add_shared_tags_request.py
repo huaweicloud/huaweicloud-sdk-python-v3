@@ -27,7 +27,7 @@ class BatchAddSharedTagsRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """BatchAddSharedTagsRequest
+        r"""BatchAddSharedTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddSharedTagsRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this BatchAddSharedTagsRequest.
+        r"""Gets the share_id of this BatchAddSharedTagsRequest.
 
         共享ID
 
@@ -60,7 +60,7 @@ class BatchAddSharedTagsRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this BatchAddSharedTagsRequest.
+        r"""Sets the share_id of this BatchAddSharedTagsRequest.
 
         共享ID
 
@@ -71,7 +71,7 @@ class BatchAddSharedTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddSharedTagsRequest.
+        r"""Gets the body of this BatchAddSharedTagsRequest.
 
         :return: The body of this BatchAddSharedTagsRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchAddSharedTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddSharedTagsRequest.
+        r"""Sets the body of this BatchAddSharedTagsRequest.
 
         :param body: The body of this BatchAddSharedTagsRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`

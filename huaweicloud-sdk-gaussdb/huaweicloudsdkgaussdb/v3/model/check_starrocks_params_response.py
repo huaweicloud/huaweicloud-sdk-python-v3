@@ -26,7 +26,7 @@ class CheckStarrocksParamsResponse(SdkResponse):
     }
 
     def __init__(self, differences=None):
-        """CheckStarrocksParamsResponse
+        r"""CheckStarrocksParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckStarrocksParamsResponse(SdkResponse):
 
     @property
     def differences(self):
-        """Gets the differences of this CheckStarrocksParamsResponse.
+        r"""Gets the differences of this CheckStarrocksParamsResponse.
 
         参数之间区别的集合。
 
@@ -55,7 +55,7 @@ class CheckStarrocksParamsResponse(SdkResponse):
 
     @differences.setter
     def differences(self, differences):
-        """Sets the differences of this CheckStarrocksParamsResponse.
+        r"""Sets the differences of this CheckStarrocksParamsResponse.
 
         参数之间区别的集合。
 

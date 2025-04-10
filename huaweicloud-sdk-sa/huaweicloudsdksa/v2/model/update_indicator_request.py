@@ -31,7 +31,7 @@ class UpdateIndicatorRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, indicator_id=None, body=None):
-        """UpdateIndicatorRequest
+        r"""UpdateIndicatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateIndicatorRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateIndicatorRequest.
+        r"""Gets the project_id of this UpdateIndicatorRequest.
 
         ID of project
 
@@ -72,7 +72,7 @@ class UpdateIndicatorRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateIndicatorRequest.
+        r"""Sets the project_id of this UpdateIndicatorRequest.
 
         ID of project
 
@@ -83,7 +83,7 @@ class UpdateIndicatorRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateIndicatorRequest.
+        r"""Gets the workspace_id of this UpdateIndicatorRequest.
 
         workspace id
 
@@ -94,7 +94,7 @@ class UpdateIndicatorRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateIndicatorRequest.
+        r"""Sets the workspace_id of this UpdateIndicatorRequest.
 
         workspace id
 
@@ -105,7 +105,7 @@ class UpdateIndicatorRequest:
 
     @property
     def indicator_id(self):
-        """Gets the indicator_id of this UpdateIndicatorRequest.
+        r"""Gets the indicator_id of this UpdateIndicatorRequest.
 
         ID of indicator
 
@@ -116,7 +116,7 @@ class UpdateIndicatorRequest:
 
     @indicator_id.setter
     def indicator_id(self, indicator_id):
-        """Sets the indicator_id of this UpdateIndicatorRequest.
+        r"""Sets the indicator_id of this UpdateIndicatorRequest.
 
         ID of indicator
 
@@ -127,7 +127,7 @@ class UpdateIndicatorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIndicatorRequest.
+        r"""Gets the body of this UpdateIndicatorRequest.
 
         :return: The body of this UpdateIndicatorRequest.
         :rtype: :class:`huaweicloudsdksa.v2.UpdateIndicatorRequestBody`
@@ -136,7 +136,7 @@ class UpdateIndicatorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIndicatorRequest.
+        r"""Sets the body of this UpdateIndicatorRequest.
 
         :param body: The body of this UpdateIndicatorRequest.
         :type body: :class:`huaweicloudsdksa.v2.UpdateIndicatorRequestBody`

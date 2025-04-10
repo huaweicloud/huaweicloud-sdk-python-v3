@@ -27,7 +27,7 @@ class RunDeleteDataRequest:
     }
 
     def __init__(self, service_name=None, body=None):
-        """RunDeleteDataRequest
+        r"""RunDeleteDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunDeleteDataRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this RunDeleteDataRequest.
+        r"""Gets the service_name of this RunDeleteDataRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -60,7 +60,7 @@ class RunDeleteDataRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this RunDeleteDataRequest.
+        r"""Sets the service_name of this RunDeleteDataRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -71,7 +71,7 @@ class RunDeleteDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunDeleteDataRequest.
+        r"""Gets the body of this RunDeleteDataRequest.
 
         :return: The body of this RunDeleteDataRequest.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.DeleteParam`
@@ -80,7 +80,7 @@ class RunDeleteDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunDeleteDataRequest.
+        r"""Sets the body of this RunDeleteDataRequest.
 
         :param body: The body of this RunDeleteDataRequest.
         :type body: :class:`huaweicloudsdkimagesearch.v2.DeleteParam`

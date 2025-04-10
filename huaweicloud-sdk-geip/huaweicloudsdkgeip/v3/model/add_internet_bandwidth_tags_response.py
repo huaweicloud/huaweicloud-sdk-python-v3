@@ -26,7 +26,7 @@ class AddInternetBandwidthTagsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """AddInternetBandwidthTagsResponse
+        r"""AddInternetBandwidthTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddInternetBandwidthTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AddInternetBandwidthTagsResponse.
+        r"""Gets the x_request_id of this AddInternetBandwidthTagsResponse.
 
         :return: The x_request_id of this AddInternetBandwidthTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddInternetBandwidthTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AddInternetBandwidthTagsResponse.
+        r"""Sets the x_request_id of this AddInternetBandwidthTagsResponse.
 
         :param x_request_id: The x_request_id of this AddInternetBandwidthTagsResponse.
         :type x_request_id: str

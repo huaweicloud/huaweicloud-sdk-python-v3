@@ -23,7 +23,7 @@ class InputParaType:
     }
 
     def __init__(self):
-        """InputParaType
+        r"""InputParaType
 
         The model defined in huaweicloud sdk
 

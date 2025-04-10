@@ -29,7 +29,7 @@ class DeleteNacosNamespacesRequest:
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, namespace_id=None):
-        """DeleteNacosNamespacesRequest
+        r"""DeleteNacosNamespacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteNacosNamespacesRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this DeleteNacosNamespacesRequest.
+        r"""Gets the x_engine_id of this DeleteNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -65,7 +65,7 @@ class DeleteNacosNamespacesRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this DeleteNacosNamespacesRequest.
+        r"""Sets the x_engine_id of this DeleteNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -76,7 +76,7 @@ class DeleteNacosNamespacesRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this DeleteNacosNamespacesRequest.
+        r"""Gets the x_enterprise_project_id of this DeleteNacosNamespacesRequest.
 
         企业项目ID
 
@@ -87,7 +87,7 @@ class DeleteNacosNamespacesRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this DeleteNacosNamespacesRequest.
+        r"""Sets the x_enterprise_project_id of this DeleteNacosNamespacesRequest.
 
         企业项目ID
 
@@ -98,7 +98,7 @@ class DeleteNacosNamespacesRequest:
 
     @property
     def namespace_id(self):
-        """Gets the namespace_id of this DeleteNacosNamespacesRequest.
+        r"""Gets the namespace_id of this DeleteNacosNamespacesRequest.
 
         命名空间ID
 
@@ -109,7 +109,7 @@ class DeleteNacosNamespacesRequest:
 
     @namespace_id.setter
     def namespace_id(self, namespace_id):
-        """Sets the namespace_id of this DeleteNacosNamespacesRequest.
+        r"""Sets the namespace_id of this DeleteNacosNamespacesRequest.
 
         命名空间ID
 

@@ -30,7 +30,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_network_gdgw_attachments=None):
-        """ListCentralNetworkGdgwAttachmentsResponse
+        r"""ListCentralNetworkGdgwAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworkGdgwAttachmentsResponse.
+        r"""Gets the request_id of this ListCentralNetworkGdgwAttachmentsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworkGdgwAttachmentsResponse.
+        r"""Sets the request_id of this ListCentralNetworkGdgwAttachmentsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworkGdgwAttachmentsResponse.
+        r"""Gets the page_info of this ListCentralNetworkGdgwAttachmentsResponse.
 
         :return: The page_info of this ListCentralNetworkGdgwAttachmentsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworkGdgwAttachmentsResponse.
+        r"""Sets the page_info of this ListCentralNetworkGdgwAttachmentsResponse.
 
         :param page_info: The page_info of this ListCentralNetworkGdgwAttachmentsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
 
     @property
     def central_network_gdgw_attachments(self):
-        """Gets the central_network_gdgw_attachments of this ListCentralNetworkGdgwAttachmentsResponse.
+        r"""Gets the central_network_gdgw_attachments of this ListCentralNetworkGdgwAttachmentsResponse.
 
         中心网络GDGW附件列表。
 
@@ -107,7 +107,7 @@ class ListCentralNetworkGdgwAttachmentsResponse(SdkResponse):
 
     @central_network_gdgw_attachments.setter
     def central_network_gdgw_attachments(self, central_network_gdgw_attachments):
-        """Sets the central_network_gdgw_attachments of this ListCentralNetworkGdgwAttachmentsResponse.
+        r"""Sets the central_network_gdgw_attachments of this ListCentralNetworkGdgwAttachmentsResponse.
 
         中心网络GDGW附件列表。
 

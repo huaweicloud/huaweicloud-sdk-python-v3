@@ -27,7 +27,7 @@ class FunctionResourceUri:
     }
 
     def __init__(self, type=None, uri=None):
-        """FunctionResourceUri
+        r"""FunctionResourceUri
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FunctionResourceUri:
 
     @property
     def type(self):
-        """Gets the type of this FunctionResourceUri.
+        r"""Gets the type of this FunctionResourceUri.
 
         函数包类型
 
@@ -59,7 +59,7 @@ class FunctionResourceUri:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FunctionResourceUri.
+        r"""Sets the type of this FunctionResourceUri.
 
         函数包类型
 
@@ -70,7 +70,7 @@ class FunctionResourceUri:
 
     @property
     def uri(self):
-        """Gets the uri of this FunctionResourceUri.
+        r"""Gets the uri of this FunctionResourceUri.
 
         函数包地址信息
 
@@ -81,7 +81,7 @@ class FunctionResourceUri:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this FunctionResourceUri.
+        r"""Sets the uri of this FunctionResourceUri.
 
         函数包地址信息
 

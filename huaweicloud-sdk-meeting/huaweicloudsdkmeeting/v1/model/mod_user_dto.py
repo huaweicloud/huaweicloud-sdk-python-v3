@@ -49,7 +49,7 @@ class ModUserDTO:
     }
 
     def __init__(self, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None):
-        """ModUserDTO
+        r"""ModUserDTO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ModUserDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModUserDTO.
+        r"""Gets the name of this ModUserDTO.
 
         企业用户名称。
 
@@ -138,7 +138,7 @@ class ModUserDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModUserDTO.
+        r"""Sets the name of this ModUserDTO.
 
         企业用户名称。
 
@@ -149,7 +149,7 @@ class ModUserDTO:
 
     @property
     def english_name(self):
-        """Gets the english_name of this ModUserDTO.
+        r"""Gets the english_name of this ModUserDTO.
 
         企业用户的英文名称。
 
@@ -160,7 +160,7 @@ class ModUserDTO:
 
     @english_name.setter
     def english_name(self, english_name):
-        """Sets the english_name of this ModUserDTO.
+        r"""Sets the english_name of this ModUserDTO.
 
         企业用户的英文名称。
 
@@ -171,7 +171,7 @@ class ModUserDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this ModUserDTO.
+        r"""Gets the phone of this ModUserDTO.
 
         手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个。
 
@@ -182,7 +182,7 @@ class ModUserDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ModUserDTO.
+        r"""Sets the phone of this ModUserDTO.
 
         手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个。
 
@@ -193,7 +193,7 @@ class ModUserDTO:
 
     @property
     def country(self):
-        """Gets the country of this ModUserDTO.
+        r"""Gets the country of this ModUserDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -204,7 +204,7 @@ class ModUserDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ModUserDTO.
+        r"""Sets the country of this ModUserDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -215,7 +215,7 @@ class ModUserDTO:
 
     @property
     def email(self):
-        """Gets the email of this ModUserDTO.
+        r"""Gets the email of this ModUserDTO.
 
         邮箱地址。
 
@@ -226,7 +226,7 @@ class ModUserDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ModUserDTO.
+        r"""Sets the email of this ModUserDTO.
 
         邮箱地址。
 
@@ -237,7 +237,7 @@ class ModUserDTO:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this ModUserDTO.
+        r"""Gets the vmr_id of this ModUserDTO.
 
         个人会议ID，若不携带则后台默认生成。
 
@@ -248,7 +248,7 @@ class ModUserDTO:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this ModUserDTO.
+        r"""Sets the vmr_id of this ModUserDTO.
 
         个人会议ID，若不携带则后台默认生成。
 
@@ -259,7 +259,7 @@ class ModUserDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this ModUserDTO.
+        r"""Gets the dept_code of this ModUserDTO.
 
         部门编码，若不携带则默认根部门。 默认值：1
 
@@ -270,7 +270,7 @@ class ModUserDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this ModUserDTO.
+        r"""Sets the dept_code of this ModUserDTO.
 
         部门编码，若不携带则默认根部门。 默认值：1
 
@@ -281,7 +281,7 @@ class ModUserDTO:
 
     @property
     def signature(self):
-        """Gets the signature of this ModUserDTO.
+        r"""Gets the signature of this ModUserDTO.
 
         签名。
 
@@ -292,7 +292,7 @@ class ModUserDTO:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this ModUserDTO.
+        r"""Sets the signature of this ModUserDTO.
 
         签名。
 
@@ -303,7 +303,7 @@ class ModUserDTO:
 
     @property
     def title(self):
-        """Gets the title of this ModUserDTO.
+        r"""Gets the title of this ModUserDTO.
 
         职位。
 
@@ -314,7 +314,7 @@ class ModUserDTO:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ModUserDTO.
+        r"""Sets the title of this ModUserDTO.
 
         职位。
 
@@ -325,7 +325,7 @@ class ModUserDTO:
 
     @property
     def desc(self):
-        """Gets the desc of this ModUserDTO.
+        r"""Gets the desc of this ModUserDTO.
 
         备注。
 
@@ -336,7 +336,7 @@ class ModUserDTO:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ModUserDTO.
+        r"""Sets the desc of this ModUserDTO.
 
         备注。
 
@@ -347,7 +347,7 @@ class ModUserDTO:
 
     @property
     def status(self):
-        """Gets the status of this ModUserDTO.
+        r"""Gets the status of this ModUserDTO.
 
         用户状态。默认值：0。 * 0：正常 * 1：停用
 
@@ -358,7 +358,7 @@ class ModUserDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModUserDTO.
+        r"""Sets the status of this ModUserDTO.
 
         用户状态。默认值：0。 * 0：正常 * 1：停用
 
@@ -369,7 +369,7 @@ class ModUserDTO:
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this ModUserDTO.
+        r"""Gets the sort_level of this ModUserDTO.
 
         通讯录排序等级，序号越低优先级越高。 默认值：10000
 
@@ -380,7 +380,7 @@ class ModUserDTO:
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this ModUserDTO.
+        r"""Sets the sort_level of this ModUserDTO.
 
         通讯录排序等级，序号越低优先级越高。 默认值：10000
 
@@ -391,7 +391,7 @@ class ModUserDTO:
 
     @property
     def hide_phone(self):
-        """Gets the hide_phone of this ModUserDTO.
+        r"""Gets the hide_phone of this ModUserDTO.
 
         是否隐藏手机号码 默认值：false 
 
@@ -402,7 +402,7 @@ class ModUserDTO:
 
     @hide_phone.setter
     def hide_phone(self, hide_phone):
-        """Sets the hide_phone of this ModUserDTO.
+        r"""Sets the hide_phone of this ModUserDTO.
 
         是否隐藏手机号码 默认值：false 
 

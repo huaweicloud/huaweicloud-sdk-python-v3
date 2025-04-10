@@ -29,7 +29,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
     }
 
     def __init__(self, count=None, idle_mode=None, tactics_config=None):
-        """UpdateFunctionReservedInstancesCountRequestBody
+        r"""UpdateFunctionReservedInstancesCountRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
 
     @property
     def count(self):
-        """Gets the count of this UpdateFunctionReservedInstancesCountRequestBody.
+        r"""Gets the count of this UpdateFunctionReservedInstancesCountRequestBody.
 
         预留实例个数
 
@@ -67,7 +67,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this UpdateFunctionReservedInstancesCountRequestBody.
+        r"""Sets the count of this UpdateFunctionReservedInstancesCountRequestBody.
 
         预留实例个数
 
@@ -78,7 +78,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
 
     @property
     def idle_mode(self):
-        """Gets the idle_mode of this UpdateFunctionReservedInstancesCountRequestBody.
+        r"""Gets the idle_mode of this UpdateFunctionReservedInstancesCountRequestBody.
 
         是否开启闲置模式配置
 
@@ -89,7 +89,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
 
     @idle_mode.setter
     def idle_mode(self, idle_mode):
-        """Sets the idle_mode of this UpdateFunctionReservedInstancesCountRequestBody.
+        r"""Sets the idle_mode of this UpdateFunctionReservedInstancesCountRequestBody.
 
         是否开启闲置模式配置
 
@@ -100,7 +100,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
 
     @property
     def tactics_config(self):
-        """Gets the tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
+        r"""Gets the tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
 
         :return: The tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
@@ -109,7 +109,7 @@ class UpdateFunctionReservedInstancesCountRequestBody:
 
     @tactics_config.setter
     def tactics_config(self, tactics_config):
-        """Sets the tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
+        r"""Sets the tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
 
         :param tactics_config: The tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
         :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`

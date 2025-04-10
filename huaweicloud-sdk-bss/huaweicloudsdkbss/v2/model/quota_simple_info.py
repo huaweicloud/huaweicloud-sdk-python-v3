@@ -27,7 +27,7 @@ class QuotaSimpleInfo:
     }
 
     def __init__(self, id=None, quota_id=None):
-        """QuotaSimpleInfo
+        r"""QuotaSimpleInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QuotaSimpleInfo:
 
     @property
     def id(self):
-        """Gets the id of this QuotaSimpleInfo.
+        r"""Gets the id of this QuotaSimpleInfo.
 
         云经销商ID。
 
@@ -59,7 +59,7 @@ class QuotaSimpleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QuotaSimpleInfo.
+        r"""Sets the id of this QuotaSimpleInfo.
 
         云经销商ID。
 
@@ -70,7 +70,7 @@ class QuotaSimpleInfo:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this QuotaSimpleInfo.
+        r"""Gets the quota_id of this QuotaSimpleInfo.
 
         分配给云经销商的代金券额度ID。
 
@@ -81,7 +81,7 @@ class QuotaSimpleInfo:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this QuotaSimpleInfo.
+        r"""Sets the quota_id of this QuotaSimpleInfo.
 
         分配给云经销商的代金券额度ID。
 

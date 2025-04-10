@@ -53,7 +53,7 @@ class VulnItem:
     }
 
     def __init__(self, vuln_id=None, domain_id=None, url=None, severity=None, vuln_status=None, vuln_class=None, vuln_type=None, description=None, advice=None, hit_details=None, request=None, response=None, provider=None, reason=None, find_time=None):
-        """VulnItem
+        r"""VulnItem
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class VulnItem:
 
     @property
     def vuln_id(self):
-        """Gets the vuln_id of this VulnItem.
+        r"""Gets the vuln_id of this VulnItem.
 
         漏洞ID
 
@@ -152,7 +152,7 @@ class VulnItem:
 
     @vuln_id.setter
     def vuln_id(self, vuln_id):
-        """Sets the vuln_id of this VulnItem.
+        r"""Sets the vuln_id of this VulnItem.
 
         漏洞ID
 
@@ -163,7 +163,7 @@ class VulnItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this VulnItem.
+        r"""Gets the domain_id of this VulnItem.
 
         网站域名ID
 
@@ -174,7 +174,7 @@ class VulnItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this VulnItem.
+        r"""Sets the domain_id of this VulnItem.
 
         网站域名ID
 
@@ -185,7 +185,7 @@ class VulnItem:
 
     @property
     def url(self):
-        """Gets the url of this VulnItem.
+        r"""Gets the url of this VulnItem.
 
         目标网址
 
@@ -196,7 +196,7 @@ class VulnItem:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this VulnItem.
+        r"""Sets the url of this VulnItem.
 
         目标网址
 
@@ -207,7 +207,7 @@ class VulnItem:
 
     @property
     def severity(self):
-        """Gets the severity of this VulnItem.
+        r"""Gets the severity of this VulnItem.
 
         漏洞风险等级:   * high - 高风险   * middle - 中风险   * low - 低风险   * hint - 提示 
 
@@ -218,7 +218,7 @@ class VulnItem:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this VulnItem.
+        r"""Sets the severity of this VulnItem.
 
         漏洞风险等级:   * high - 高风险   * middle - 中风险   * low - 低风险   * hint - 提示 
 
@@ -229,7 +229,7 @@ class VulnItem:
 
     @property
     def vuln_status(self):
-        """Gets the vuln_status of this VulnItem.
+        r"""Gets the vuln_status of this VulnItem.
 
         漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 
@@ -240,7 +240,7 @@ class VulnItem:
 
     @vuln_status.setter
     def vuln_status(self, vuln_status):
-        """Sets the vuln_status of this VulnItem.
+        r"""Sets the vuln_status of this VulnItem.
 
         漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 
@@ -251,7 +251,7 @@ class VulnItem:
 
     @property
     def vuln_class(self):
-        """Gets the vuln_class of this VulnItem.
+        r"""Gets the vuln_class of this VulnItem.
 
         漏洞类别
 
@@ -262,7 +262,7 @@ class VulnItem:
 
     @vuln_class.setter
     def vuln_class(self, vuln_class):
-        """Sets the vuln_class of this VulnItem.
+        r"""Sets the vuln_class of this VulnItem.
 
         漏洞类别
 
@@ -273,7 +273,7 @@ class VulnItem:
 
     @property
     def vuln_type(self):
-        """Gets the vuln_type of this VulnItem.
+        r"""Gets the vuln_type of this VulnItem.
 
         漏洞名称
 
@@ -284,7 +284,7 @@ class VulnItem:
 
     @vuln_type.setter
     def vuln_type(self, vuln_type):
-        """Sets the vuln_type of this VulnItem.
+        r"""Sets the vuln_type of this VulnItem.
 
         漏洞名称
 
@@ -295,7 +295,7 @@ class VulnItem:
 
     @property
     def description(self):
-        """Gets the description of this VulnItem.
+        r"""Gets the description of this VulnItem.
 
         漏洞描述
 
@@ -306,7 +306,7 @@ class VulnItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VulnItem.
+        r"""Sets the description of this VulnItem.
 
         漏洞描述
 
@@ -317,7 +317,7 @@ class VulnItem:
 
     @property
     def advice(self):
-        """Gets the advice of this VulnItem.
+        r"""Gets the advice of this VulnItem.
 
         修复建议
 
@@ -328,7 +328,7 @@ class VulnItem:
 
     @advice.setter
     def advice(self, advice):
-        """Sets the advice of this VulnItem.
+        r"""Sets the advice of this VulnItem.
 
         修复建议
 
@@ -339,7 +339,7 @@ class VulnItem:
 
     @property
     def hit_details(self):
-        """Gets the hit_details of this VulnItem.
+        r"""Gets the hit_details of this VulnItem.
 
         命中详情
 
@@ -350,7 +350,7 @@ class VulnItem:
 
     @hit_details.setter
     def hit_details(self, hit_details):
-        """Sets the hit_details of this VulnItem.
+        r"""Sets the hit_details of this VulnItem.
 
         命中详情
 
@@ -361,7 +361,7 @@ class VulnItem:
 
     @property
     def request(self):
-        """Gets the request of this VulnItem.
+        r"""Gets the request of this VulnItem.
 
         请求详情
 
@@ -372,7 +372,7 @@ class VulnItem:
 
     @request.setter
     def request(self, request):
-        """Sets the request of this VulnItem.
+        r"""Sets the request of this VulnItem.
 
         请求详情
 
@@ -383,7 +383,7 @@ class VulnItem:
 
     @property
     def response(self):
-        """Gets the response of this VulnItem.
+        r"""Gets the response of this VulnItem.
 
         响应详情
 
@@ -394,7 +394,7 @@ class VulnItem:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this VulnItem.
+        r"""Sets the response of this VulnItem.
 
         响应详情
 
@@ -405,7 +405,7 @@ class VulnItem:
 
     @property
     def provider(self):
-        """Gets the provider of this VulnItem.
+        r"""Gets the provider of this VulnItem.
 
         漏洞确认人
 
@@ -416,7 +416,7 @@ class VulnItem:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this VulnItem.
+        r"""Sets the provider of this VulnItem.
 
         漏洞确认人
 
@@ -427,7 +427,7 @@ class VulnItem:
 
     @property
     def reason(self):
-        """Gets the reason of this VulnItem.
+        r"""Gets the reason of this VulnItem.
 
         漏洞忽略理由
 
@@ -438,7 +438,7 @@ class VulnItem:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this VulnItem.
+        r"""Sets the reason of this VulnItem.
 
         漏洞忽略理由
 
@@ -449,7 +449,7 @@ class VulnItem:
 
     @property
     def find_time(self):
-        """Gets the find_time of this VulnItem.
+        r"""Gets the find_time of this VulnItem.
 
         漏洞发现时间
 
@@ -460,7 +460,7 @@ class VulnItem:
 
     @find_time.setter
     def find_time(self, find_time):
-        """Sets the find_time of this VulnItem.
+        r"""Sets the find_time of this VulnItem.
 
         漏洞发现时间
 

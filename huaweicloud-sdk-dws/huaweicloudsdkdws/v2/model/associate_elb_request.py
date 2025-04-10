@@ -27,7 +27,7 @@ class AssociateElbRequest:
     }
 
     def __init__(self, cluster_id=None, elb_id=None):
-        """AssociateElbRequest
+        r"""AssociateElbRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociateElbRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AssociateElbRequest.
+        r"""Gets the cluster_id of this AssociateElbRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class AssociateElbRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AssociateElbRequest.
+        r"""Sets the cluster_id of this AssociateElbRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class AssociateElbRequest:
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this AssociateElbRequest.
+        r"""Gets the elb_id of this AssociateElbRequest.
 
         未绑定的弹性负载均衡ID
 
@@ -81,7 +81,7 @@ class AssociateElbRequest:
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this AssociateElbRequest.
+        r"""Sets the elb_id of this AssociateElbRequest.
 
         未绑定的弹性负载均衡ID
 

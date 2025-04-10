@@ -27,7 +27,7 @@ class EndpointService:
     }
 
     def __init__(self, service_name=None, created_at=None):
-        """EndpointService
+        r"""EndpointService
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EndpointService:
 
     @property
     def service_name(self):
-        """Gets the service_name of this EndpointService.
+        r"""Gets the service_name of this EndpointService.
 
         终端节点服务名称
 
@@ -61,7 +61,7 @@ class EndpointService:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this EndpointService.
+        r"""Sets the service_name of this EndpointService.
 
         终端节点服务名称
 
@@ -72,7 +72,7 @@ class EndpointService:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointService.
+        r"""Gets the created_at of this EndpointService.
 
         创建时间
 
@@ -83,7 +83,7 @@ class EndpointService:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointService.
+        r"""Sets the created_at of this EndpointService.
 
         创建时间
 

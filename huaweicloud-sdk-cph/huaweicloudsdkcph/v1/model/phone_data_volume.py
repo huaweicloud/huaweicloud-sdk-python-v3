@@ -27,7 +27,7 @@ class PhoneDataVolume:
     }
 
     def __init__(self, volume_type=None, volume_size=None):
-        """PhoneDataVolume
+        r"""PhoneDataVolume
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PhoneDataVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this PhoneDataVolume.
+        r"""Gets the volume_type of this PhoneDataVolume.
 
         云手机数据盘类型。
 
@@ -61,7 +61,7 @@ class PhoneDataVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this PhoneDataVolume.
+        r"""Sets the volume_type of this PhoneDataVolume.
 
         云手机数据盘类型。
 
@@ -72,7 +72,7 @@ class PhoneDataVolume:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this PhoneDataVolume.
+        r"""Gets the volume_size of this PhoneDataVolume.
 
         云手机数据盘大小。
 
@@ -83,7 +83,7 @@ class PhoneDataVolume:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this PhoneDataVolume.
+        r"""Sets the volume_size of this PhoneDataVolume.
 
         云手机数据盘大小。
 

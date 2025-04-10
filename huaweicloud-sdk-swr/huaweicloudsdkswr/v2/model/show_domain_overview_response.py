@@ -38,7 +38,7 @@ class ShowDomainOverviewResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, domain_name=None, namspace_num=None, repo_num=None, image_num=None, store_space=None, downflow_size=None):
-        """ShowDomainOverviewResponse
+        r"""ShowDomainOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainOverviewResponse.
+        r"""Gets the domain_id of this ShowDomainOverviewResponse.
 
         租户ID
 
@@ -97,7 +97,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainOverviewResponse.
+        r"""Sets the domain_id of this ShowDomainOverviewResponse.
 
         租户ID
 
@@ -108,7 +108,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainOverviewResponse.
+        r"""Gets the domain_name of this ShowDomainOverviewResponse.
 
         租户名称
 
@@ -119,7 +119,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainOverviewResponse.
+        r"""Sets the domain_name of this ShowDomainOverviewResponse.
 
         租户名称
 
@@ -130,7 +130,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def namspace_num(self):
-        """Gets the namspace_num of this ShowDomainOverviewResponse.
+        r"""Gets the namspace_num of this ShowDomainOverviewResponse.
 
         当前租户的命名空间个数
 
@@ -141,7 +141,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @namspace_num.setter
     def namspace_num(self, namspace_num):
-        """Sets the namspace_num of this ShowDomainOverviewResponse.
+        r"""Sets the namspace_num of this ShowDomainOverviewResponse.
 
         当前租户的命名空间个数
 
@@ -152,7 +152,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def repo_num(self):
-        """Gets the repo_num of this ShowDomainOverviewResponse.
+        r"""Gets the repo_num of this ShowDomainOverviewResponse.
 
         当前租户的仓库个数
 
@@ -163,7 +163,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @repo_num.setter
     def repo_num(self, repo_num):
-        """Sets the repo_num of this ShowDomainOverviewResponse.
+        r"""Sets the repo_num of this ShowDomainOverviewResponse.
 
         当前租户的仓库个数
 
@@ -174,7 +174,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def image_num(self):
-        """Gets the image_num of this ShowDomainOverviewResponse.
+        r"""Gets the image_num of this ShowDomainOverviewResponse.
 
         当前租户的镜像个数
 
@@ -185,7 +185,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @image_num.setter
     def image_num(self, image_num):
-        """Sets the image_num of this ShowDomainOverviewResponse.
+        r"""Sets the image_num of this ShowDomainOverviewResponse.
 
         当前租户的镜像个数
 
@@ -196,7 +196,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def store_space(self):
-        """Gets the store_space of this ShowDomainOverviewResponse.
+        r"""Gets the store_space of this ShowDomainOverviewResponse.
 
         当前租户存储大小
 
@@ -207,7 +207,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @store_space.setter
     def store_space(self, store_space):
-        """Sets the store_space of this ShowDomainOverviewResponse.
+        r"""Sets the store_space of this ShowDomainOverviewResponse.
 
         当前租户存储大小
 
@@ -218,7 +218,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @property
     def downflow_size(self):
-        """Gets the downflow_size of this ShowDomainOverviewResponse.
+        r"""Gets the downflow_size of this ShowDomainOverviewResponse.
 
         当前租户下载流量大小
 
@@ -229,7 +229,7 @@ class ShowDomainOverviewResponse(SdkResponse):
 
     @downflow_size.setter
     def downflow_size(self, downflow_size):
-        """Sets the downflow_size of this ShowDomainOverviewResponse.
+        r"""Sets the downflow_size of this ShowDomainOverviewResponse.
 
         当前租户下载流量大小
 

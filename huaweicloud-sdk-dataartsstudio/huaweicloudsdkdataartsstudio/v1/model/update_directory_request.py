@@ -29,7 +29,7 @@ class UpdateDirectoryRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, body=None):
-        """UpdateDirectoryRequest
+        r"""UpdateDirectoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDirectoryRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateDirectoryRequest.
+        r"""Gets the workspace of this UpdateDirectoryRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class UpdateDirectoryRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateDirectoryRequest.
+        r"""Sets the workspace of this UpdateDirectoryRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class UpdateDirectoryRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this UpdateDirectoryRequest.
+        r"""Gets the x_project_id of this UpdateDirectoryRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -89,7 +89,7 @@ class UpdateDirectoryRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this UpdateDirectoryRequest.
+        r"""Sets the x_project_id of this UpdateDirectoryRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -100,7 +100,7 @@ class UpdateDirectoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDirectoryRequest.
+        r"""Gets the body of this UpdateDirectoryRequest.
 
         :return: The body of this UpdateDirectoryRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`
@@ -109,7 +109,7 @@ class UpdateDirectoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDirectoryRequest.
+        r"""Sets the body of this UpdateDirectoryRequest.
 
         :param body: The body of this UpdateDirectoryRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`

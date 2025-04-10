@@ -32,7 +32,7 @@ class ShowTaskListResponse(SdkResponse):
     }
 
     def __init__(self, count=None, total_records=None, max_records=None, resources=None):
-        """ShowTaskListResponse
+        r"""ShowTaskListResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowTaskListResponse.
+        r"""Gets the count of this ShowTaskListResponse.
 
         查询采集任务数量
 
@@ -76,7 +76,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowTaskListResponse.
+        r"""Sets the count of this ShowTaskListResponse.
 
         查询采集任务数量
 
@@ -87,7 +87,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @property
     def total_records(self):
-        """Gets the total_records of this ShowTaskListResponse.
+        r"""Gets the total_records of this ShowTaskListResponse.
 
         同一projectId下已创建采集任务数量
 
@@ -98,7 +98,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @total_records.setter
     def total_records(self, total_records):
-        """Sets the total_records of this ShowTaskListResponse.
+        r"""Sets the total_records of this ShowTaskListResponse.
 
         同一projectId下已创建采集任务数量
 
@@ -109,7 +109,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @property
     def max_records(self):
-        """Gets the max_records of this ShowTaskListResponse.
+        r"""Gets the max_records of this ShowTaskListResponse.
 
         同一projectId下允许创建采集任务数量
 
@@ -120,7 +120,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @max_records.setter
     def max_records(self, max_records):
-        """Sets the max_records of this ShowTaskListResponse.
+        r"""Sets the max_records of this ShowTaskListResponse.
 
         同一projectId下允许创建采集任务数量
 
@@ -131,7 +131,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowTaskListResponse.
+        r"""Gets the resources of this ShowTaskListResponse.
 
         采集任务列表
 
@@ -142,7 +142,7 @@ class ShowTaskListResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowTaskListResponse.
+        r"""Sets the resources of this ShowTaskListResponse.
 
         采集任务列表
 

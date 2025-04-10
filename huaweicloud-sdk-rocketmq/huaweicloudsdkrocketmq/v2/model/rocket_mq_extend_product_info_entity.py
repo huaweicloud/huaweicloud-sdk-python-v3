@@ -47,7 +47,7 @@ class RocketMQExtendProductInfoEntity:
     }
 
     def __init__(self, type=None, product_id=None, ecs_flavor_id=None, billing_code=None, arch_types=None, charging_mode=None, ios=None, properties=None, available_zones=None, unavailable_zones=None, support_features=None, qingtian_incompatible=None):
-        """RocketMQExtendProductInfoEntity
+        r"""RocketMQExtendProductInfoEntity
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def type(self):
-        """Gets the type of this RocketMQExtendProductInfoEntity.
+        r"""Gets the type of this RocketMQExtendProductInfoEntity.
 
         实例类型。
 
@@ -131,7 +131,7 @@ class RocketMQExtendProductInfoEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RocketMQExtendProductInfoEntity.
+        r"""Sets the type of this RocketMQExtendProductInfoEntity.
 
         实例类型。
 
@@ -142,7 +142,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def product_id(self):
-        """Gets the product_id of this RocketMQExtendProductInfoEntity.
+        r"""Gets the product_id of this RocketMQExtendProductInfoEntity.
 
         产品ID。
 
@@ -153,7 +153,7 @@ class RocketMQExtendProductInfoEntity:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this RocketMQExtendProductInfoEntity.
+        r"""Sets the product_id of this RocketMQExtendProductInfoEntity.
 
         产品ID。
 
@@ -164,7 +164,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def ecs_flavor_id(self):
-        """Gets the ecs_flavor_id of this RocketMQExtendProductInfoEntity.
+        r"""Gets the ecs_flavor_id of this RocketMQExtendProductInfoEntity.
 
         该产品使用的ECS规格。
 
@@ -175,7 +175,7 @@ class RocketMQExtendProductInfoEntity:
 
     @ecs_flavor_id.setter
     def ecs_flavor_id(self, ecs_flavor_id):
-        """Sets the ecs_flavor_id of this RocketMQExtendProductInfoEntity.
+        r"""Sets the ecs_flavor_id of this RocketMQExtendProductInfoEntity.
 
         该产品使用的ECS规格。
 
@@ -186,7 +186,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def billing_code(self):
-        """Gets the billing_code of this RocketMQExtendProductInfoEntity.
+        r"""Gets the billing_code of this RocketMQExtendProductInfoEntity.
 
         账单计费类型。
 
@@ -197,7 +197,7 @@ class RocketMQExtendProductInfoEntity:
 
     @billing_code.setter
     def billing_code(self, billing_code):
-        """Sets the billing_code of this RocketMQExtendProductInfoEntity.
+        r"""Sets the billing_code of this RocketMQExtendProductInfoEntity.
 
         账单计费类型。
 
@@ -208,7 +208,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def arch_types(self):
-        """Gets the arch_types of this RocketMQExtendProductInfoEntity.
+        r"""Gets the arch_types of this RocketMQExtendProductInfoEntity.
 
         支持的CPU架构类型。
 
@@ -219,7 +219,7 @@ class RocketMQExtendProductInfoEntity:
 
     @arch_types.setter
     def arch_types(self, arch_types):
-        """Sets the arch_types of this RocketMQExtendProductInfoEntity.
+        r"""Sets the arch_types of this RocketMQExtendProductInfoEntity.
 
         支持的CPU架构类型。
 
@@ -230,7 +230,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this RocketMQExtendProductInfoEntity.
+        r"""Gets the charging_mode of this RocketMQExtendProductInfoEntity.
 
         支持的计费模式类型。
 
@@ -241,7 +241,7 @@ class RocketMQExtendProductInfoEntity:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this RocketMQExtendProductInfoEntity.
+        r"""Sets the charging_mode of this RocketMQExtendProductInfoEntity.
 
         支持的计费模式类型。
 
@@ -252,7 +252,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def ios(self):
-        """Gets the ios of this RocketMQExtendProductInfoEntity.
+        r"""Gets the ios of this RocketMQExtendProductInfoEntity.
 
         磁盘IO信息。
 
@@ -263,7 +263,7 @@ class RocketMQExtendProductInfoEntity:
 
     @ios.setter
     def ios(self, ios):
-        """Sets the ios of this RocketMQExtendProductInfoEntity.
+        r"""Sets the ios of this RocketMQExtendProductInfoEntity.
 
         磁盘IO信息。
 
@@ -274,7 +274,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this RocketMQExtendProductInfoEntity.
+        r"""Gets the properties of this RocketMQExtendProductInfoEntity.
 
         :return: The properties of this RocketMQExtendProductInfoEntity.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductPropertiesEntity`
@@ -283,7 +283,7 @@ class RocketMQExtendProductInfoEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this RocketMQExtendProductInfoEntity.
+        r"""Sets the properties of this RocketMQExtendProductInfoEntity.
 
         :param properties: The properties of this RocketMQExtendProductInfoEntity.
         :type properties: :class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductPropertiesEntity`
@@ -292,7 +292,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this RocketMQExtendProductInfoEntity.
+        r"""Gets the available_zones of this RocketMQExtendProductInfoEntity.
 
         有可用资源的可用区列表。
 
@@ -303,7 +303,7 @@ class RocketMQExtendProductInfoEntity:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this RocketMQExtendProductInfoEntity.
+        r"""Sets the available_zones of this RocketMQExtendProductInfoEntity.
 
         有可用资源的可用区列表。
 
@@ -314,7 +314,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this RocketMQExtendProductInfoEntity.
+        r"""Gets the unavailable_zones of this RocketMQExtendProductInfoEntity.
 
         资源售罄的可用区列表。
 
@@ -325,7 +325,7 @@ class RocketMQExtendProductInfoEntity:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this RocketMQExtendProductInfoEntity.
+        r"""Sets the unavailable_zones of this RocketMQExtendProductInfoEntity.
 
         资源售罄的可用区列表。
 
@@ -336,7 +336,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def support_features(self):
-        """Gets the support_features of this RocketMQExtendProductInfoEntity.
+        r"""Gets the support_features of this RocketMQExtendProductInfoEntity.
 
         支持的特性功能。
 
@@ -347,7 +347,7 @@ class RocketMQExtendProductInfoEntity:
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this RocketMQExtendProductInfoEntity.
+        r"""Sets the support_features of this RocketMQExtendProductInfoEntity.
 
         支持的特性功能。
 
@@ -358,7 +358,7 @@ class RocketMQExtendProductInfoEntity:
 
     @property
     def qingtian_incompatible(self):
-        """Gets the qingtian_incompatible of this RocketMQExtendProductInfoEntity.
+        r"""Gets the qingtian_incompatible of this RocketMQExtendProductInfoEntity.
 
         是否为擎天实例。
 
@@ -369,7 +369,7 @@ class RocketMQExtendProductInfoEntity:
 
     @qingtian_incompatible.setter
     def qingtian_incompatible(self, qingtian_incompatible):
-        """Sets the qingtian_incompatible of this RocketMQExtendProductInfoEntity.
+        r"""Sets the qingtian_incompatible of this RocketMQExtendProductInfoEntity.
 
         是否为擎天实例。
 

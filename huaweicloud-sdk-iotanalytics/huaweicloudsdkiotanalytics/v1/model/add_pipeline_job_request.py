@@ -27,7 +27,7 @@ class AddPipelineJobRequest:
     }
 
     def __init__(self, check=None, body=None):
-        """AddPipelineJobRequest
+        r"""AddPipelineJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddPipelineJobRequest:
 
     @property
     def check(self):
-        """Gets the check of this AddPipelineJobRequest.
+        r"""Gets the check of this AddPipelineJobRequest.
 
         是否需要校验配置是否正确
 
@@ -61,7 +61,7 @@ class AddPipelineJobRequest:
 
     @check.setter
     def check(self, check):
-        """Sets the check of this AddPipelineJobRequest.
+        r"""Sets the check of this AddPipelineJobRequest.
 
         是否需要校验配置是否正确
 
@@ -72,7 +72,7 @@ class AddPipelineJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddPipelineJobRequest.
+        r"""Gets the body of this AddPipelineJobRequest.
 
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 
@@ -83,7 +83,7 @@ class AddPipelineJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddPipelineJobRequest.
+        r"""Sets the body of this AddPipelineJobRequest.
 
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 

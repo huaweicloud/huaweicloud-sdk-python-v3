@@ -27,7 +27,7 @@ class UpdateProtectedIpBody:
     }
 
     def __init__(self, id=None, tag=None):
-        """UpdateProtectedIpBody
+        r"""UpdateProtectedIpBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateProtectedIpBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateProtectedIpBody.
+        r"""Gets the id of this UpdateProtectedIpBody.
 
         防护ip的id
 
@@ -59,7 +59,7 @@ class UpdateProtectedIpBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateProtectedIpBody.
+        r"""Sets the id of this UpdateProtectedIpBody.
 
         防护ip的id
 
@@ -70,7 +70,7 @@ class UpdateProtectedIpBody:
 
     @property
     def tag(self):
-        """Gets the tag of this UpdateProtectedIpBody.
+        r"""Gets the tag of this UpdateProtectedIpBody.
 
         本地标签
 
@@ -81,7 +81,7 @@ class UpdateProtectedIpBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this UpdateProtectedIpBody.
+        r"""Sets the tag of this UpdateProtectedIpBody.
 
         本地标签
 

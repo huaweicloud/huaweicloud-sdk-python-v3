@@ -61,7 +61,7 @@ class CreateUserResult:
     }
 
     def __init__(self, access_mode=None, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None, default_project_id=None):
-        """CreateUserResult
+        r"""CreateUserResult
 
         The model defined in huaweicloud sdk
 
@@ -165,7 +165,7 @@ class CreateUserResult:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this CreateUserResult.
+        r"""Gets the access_mode of this CreateUserResult.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -176,7 +176,7 @@ class CreateUserResult:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this CreateUserResult.
+        r"""Sets the access_mode of this CreateUserResult.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -187,7 +187,7 @@ class CreateUserResult:
 
     @property
     def status(self):
-        """Gets the status of this CreateUserResult.
+        r"""Gets the status of this CreateUserResult.
 
         IAM用户状态信息。
 
@@ -198,7 +198,7 @@ class CreateUserResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateUserResult.
+        r"""Sets the status of this CreateUserResult.
 
         IAM用户状态信息。
 
@@ -209,7 +209,7 @@ class CreateUserResult:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this CreateUserResult.
+        r"""Gets the pwd_status of this CreateUserResult.
 
         IAM用户首次登录是否重置密码。
 
@@ -220,7 +220,7 @@ class CreateUserResult:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this CreateUserResult.
+        r"""Sets the pwd_status of this CreateUserResult.
 
         IAM用户首次登录是否重置密码。
 
@@ -231,7 +231,7 @@ class CreateUserResult:
 
     @property
     def xuser_id(self):
-        """Gets the xuser_id of this CreateUserResult.
+        r"""Gets the xuser_id of this CreateUserResult.
 
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -242,7 +242,7 @@ class CreateUserResult:
 
     @xuser_id.setter
     def xuser_id(self, xuser_id):
-        """Sets the xuser_id of this CreateUserResult.
+        r"""Sets the xuser_id of this CreateUserResult.
 
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -253,7 +253,7 @@ class CreateUserResult:
 
     @property
     def xuser_type(self):
-        """Gets the xuser_type of this CreateUserResult.
+        r"""Gets the xuser_type of this CreateUserResult.
 
         用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -264,7 +264,7 @@ class CreateUserResult:
 
     @xuser_type.setter
     def xuser_type(self, xuser_type):
-        """Sets the xuser_type of this CreateUserResult.
+        r"""Sets the xuser_type of this CreateUserResult.
 
         用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -275,7 +275,7 @@ class CreateUserResult:
 
     @property
     def description(self):
-        """Gets the description of this CreateUserResult.
+        r"""Gets the description of this CreateUserResult.
 
         IAM用户描述信息。
 
@@ -286,7 +286,7 @@ class CreateUserResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUserResult.
+        r"""Sets the description of this CreateUserResult.
 
         IAM用户描述信息。
 
@@ -297,7 +297,7 @@ class CreateUserResult:
 
     @property
     def name(self):
-        """Gets the name of this CreateUserResult.
+        r"""Gets the name of this CreateUserResult.
 
         IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -308,7 +308,7 @@ class CreateUserResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUserResult.
+        r"""Sets the name of this CreateUserResult.
 
         IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -319,7 +319,7 @@ class CreateUserResult:
 
     @property
     def phone(self):
-        """Gets the phone of this CreateUserResult.
+        r"""Gets the phone of this CreateUserResult.
 
         IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
@@ -330,7 +330,7 @@ class CreateUserResult:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CreateUserResult.
+        r"""Sets the phone of this CreateUserResult.
 
         IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
@@ -341,7 +341,7 @@ class CreateUserResult:
 
     @property
     def is_domain_owner(self):
-        """Gets the is_domain_owner of this CreateUserResult.
+        r"""Gets the is_domain_owner of this CreateUserResult.
 
         IAM用户是否为账号管理员。
 
@@ -352,7 +352,7 @@ class CreateUserResult:
 
     @is_domain_owner.setter
     def is_domain_owner(self, is_domain_owner):
-        """Sets the is_domain_owner of this CreateUserResult.
+        r"""Sets the is_domain_owner of this CreateUserResult.
 
         IAM用户是否为账号管理员。
 
@@ -363,7 +363,7 @@ class CreateUserResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateUserResult.
+        r"""Gets the domain_id of this CreateUserResult.
 
         IAM用户所属账号ID。
 
@@ -374,7 +374,7 @@ class CreateUserResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateUserResult.
+        r"""Sets the domain_id of this CreateUserResult.
 
         IAM用户所属账号ID。
 
@@ -385,7 +385,7 @@ class CreateUserResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateUserResult.
+        r"""Gets the enabled of this CreateUserResult.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -396,7 +396,7 @@ class CreateUserResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateUserResult.
+        r"""Sets the enabled of this CreateUserResult.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -407,7 +407,7 @@ class CreateUserResult:
 
     @property
     def areacode(self):
-        """Gets the areacode of this CreateUserResult.
+        r"""Gets the areacode of this CreateUserResult.
 
         国家码。中国大陆为“0086”。
 
@@ -418,7 +418,7 @@ class CreateUserResult:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this CreateUserResult.
+        r"""Sets the areacode of this CreateUserResult.
 
         国家码。中国大陆为“0086”。
 
@@ -429,7 +429,7 @@ class CreateUserResult:
 
     @property
     def email(self):
-        """Gets the email of this CreateUserResult.
+        r"""Gets the email of this CreateUserResult.
 
         IAM用户邮箱。
 
@@ -440,7 +440,7 @@ class CreateUserResult:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreateUserResult.
+        r"""Sets the email of this CreateUserResult.
 
         IAM用户邮箱。
 
@@ -451,7 +451,7 @@ class CreateUserResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateUserResult.
+        r"""Gets the create_time of this CreateUserResult.
 
         IAM用户创建时间。
 
@@ -462,7 +462,7 @@ class CreateUserResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateUserResult.
+        r"""Sets the create_time of this CreateUserResult.
 
         IAM用户创建时间。
 
@@ -473,7 +473,7 @@ class CreateUserResult:
 
     @property
     def xdomain_id(self):
-        """Gets the xdomain_id of this CreateUserResult.
+        r"""Gets the xdomain_id of this CreateUserResult.
 
         运营主体的客户编码。
 
@@ -484,7 +484,7 @@ class CreateUserResult:
 
     @xdomain_id.setter
     def xdomain_id(self, xdomain_id):
-        """Sets the xdomain_id of this CreateUserResult.
+        r"""Sets the xdomain_id of this CreateUserResult.
 
         运营主体的客户编码。
 
@@ -495,7 +495,7 @@ class CreateUserResult:
 
     @property
     def xdomain_type(self):
-        """Gets the xdomain_type of this CreateUserResult.
+        r"""Gets the xdomain_type of this CreateUserResult.
 
         运营主体。
 
@@ -506,7 +506,7 @@ class CreateUserResult:
 
     @xdomain_type.setter
     def xdomain_type(self, xdomain_type):
-        """Sets the xdomain_type of this CreateUserResult.
+        r"""Sets the xdomain_type of this CreateUserResult.
 
         运营主体。
 
@@ -517,7 +517,7 @@ class CreateUserResult:
 
     @property
     def id(self):
-        """Gets the id of this CreateUserResult.
+        r"""Gets the id of this CreateUserResult.
 
         IAM用户ID。
 
@@ -528,7 +528,7 @@ class CreateUserResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateUserResult.
+        r"""Sets the id of this CreateUserResult.
 
         IAM用户ID。
 
@@ -539,7 +539,7 @@ class CreateUserResult:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this CreateUserResult.
+        r"""Gets the password_expires_at of this CreateUserResult.
 
         密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -550,7 +550,7 @@ class CreateUserResult:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this CreateUserResult.
+        r"""Sets the password_expires_at of this CreateUserResult.
 
         密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -561,7 +561,7 @@ class CreateUserResult:
 
     @property
     def default_project_id(self):
-        """Gets the default_project_id of this CreateUserResult.
+        r"""Gets the default_project_id of this CreateUserResult.
 
         用户默认的项目ID。
 
@@ -572,7 +572,7 @@ class CreateUserResult:
 
     @default_project_id.setter
     def default_project_id(self, default_project_id):
-        """Sets the default_project_id of this CreateUserResult.
+        r"""Sets the default_project_id of this CreateUserResult.
 
         用户默认的项目ID。
 

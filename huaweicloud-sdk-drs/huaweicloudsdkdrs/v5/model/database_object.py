@@ -37,7 +37,7 @@ class DatabaseObject:
     }
 
     def __init__(self, sync_type=None, name=None, all=None, schemas=None, tables=None, total_table_num=None, is_synchronized=None):
-        """DatabaseObject
+        r"""DatabaseObject
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DatabaseObject:
 
     @property
     def sync_type(self):
-        """Gets the sync_type of this DatabaseObject.
+        r"""Gets the sync_type of this DatabaseObject.
 
         该数据库在实时同步场景下的类型。取值： - config：仅当该库作为数据过滤高级设置的关联库时，需要填写，此时该库以及该库下的schemas、tables“不会”被同步到目标库，name、all属性不生效，schemas、tables需要填写被关联的相关对象。（注意：如果需要同步该库级对象，则在下级对象中填写sync_type值为config。）
 
@@ -96,7 +96,7 @@ class DatabaseObject:
 
     @sync_type.setter
     def sync_type(self, sync_type):
-        """Sets the sync_type of this DatabaseObject.
+        r"""Sets the sync_type of this DatabaseObject.
 
         该数据库在实时同步场景下的类型。取值： - config：仅当该库作为数据过滤高级设置的关联库时，需要填写，此时该库以及该库下的schemas、tables“不会”被同步到目标库，name、all属性不生效，schemas、tables需要填写被关联的相关对象。（注意：如果需要同步该库级对象，则在下级对象中填写sync_type值为config。）
 
@@ -107,7 +107,7 @@ class DatabaseObject:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseObject.
+        r"""Gets the name of this DatabaseObject.
 
         该数据库在目标库的名称（库名映射）。
 
@@ -118,7 +118,7 @@ class DatabaseObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseObject.
+        r"""Sets the name of this DatabaseObject.
 
         该数据库在目标库的名称（库名映射）。
 
@@ -129,7 +129,7 @@ class DatabaseObject:
 
     @property
     def all(self):
-        """Gets the all of this DatabaseObject.
+        r"""Gets the all of this DatabaseObject.
 
         是否整库迁移或同步。注意： 1.当该库下的模式、表、列需要做数据过滤、列过滤、列映射时，填false，否则填true； 2.当该库下的表需要做附加列时，需要填true，并且在表级对象的columns里填写附加列信息； 3.当该库下的表所包含的列作为数据过滤高级设置的关联列时，需要填true，并且在columns里填写关联列信息，在config_conditions填写数据过滤高级设置的配置条件；
 
@@ -140,7 +140,7 @@ class DatabaseObject:
 
     @all.setter
     def all(self, all):
-        """Sets the all of this DatabaseObject.
+        r"""Sets the all of this DatabaseObject.
 
         是否整库迁移或同步。注意： 1.当该库下的模式、表、列需要做数据过滤、列过滤、列映射时，填false，否则填true； 2.当该库下的表需要做附加列时，需要填true，并且在表级对象的columns里填写附加列信息； 3.当该库下的表所包含的列作为数据过滤高级设置的关联列时，需要填true，并且在columns里填写关联列信息，在config_conditions填写数据过滤高级设置的配置条件；
 
@@ -151,7 +151,7 @@ class DatabaseObject:
 
     @property
     def schemas(self):
-        """Gets the schemas of this DatabaseObject.
+        r"""Gets the schemas of this DatabaseObject.
 
         需要迁移或同步的模式，当整库迁移或同步为false时需要填写。
 
@@ -162,7 +162,7 @@ class DatabaseObject:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this DatabaseObject.
+        r"""Sets the schemas of this DatabaseObject.
 
         需要迁移或同步的模式，当整库迁移或同步为false时需要填写。
 
@@ -173,7 +173,7 @@ class DatabaseObject:
 
     @property
     def tables(self):
-        """Gets the tables of this DatabaseObject.
+        r"""Gets the tables of this DatabaseObject.
 
         需要迁移或同步的表，当整库迁移或同步为false时需要填写。
 
@@ -184,7 +184,7 @@ class DatabaseObject:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this DatabaseObject.
+        r"""Sets the tables of this DatabaseObject.
 
         需要迁移或同步的表，当整库迁移或同步为false时需要填写。
 
@@ -195,7 +195,7 @@ class DatabaseObject:
 
     @property
     def total_table_num(self):
-        """Gets the total_table_num of this DatabaseObject.
+        r"""Gets the total_table_num of this DatabaseObject.
 
         库下的表的数量，表的数量超过阈值就不显示。
 
@@ -206,7 +206,7 @@ class DatabaseObject:
 
     @total_table_num.setter
     def total_table_num(self, total_table_num):
-        """Sets the total_table_num of this DatabaseObject.
+        r"""Sets the total_table_num of this DatabaseObject.
 
         库下的表的数量，表的数量超过阈值就不显示。
 
@@ -217,7 +217,7 @@ class DatabaseObject:
 
     @property
     def is_synchronized(self):
-        """Gets the is_synchronized of this DatabaseObject.
+        r"""Gets the is_synchronized of this DatabaseObject.
 
         是否已同步
 
@@ -228,7 +228,7 @@ class DatabaseObject:
 
     @is_synchronized.setter
     def is_synchronized(self, is_synchronized):
-        """Sets the is_synchronized of this DatabaseObject.
+        r"""Sets the is_synchronized of this DatabaseObject.
 
         是否已同步
 

@@ -35,7 +35,7 @@ class BatchShowEdgeAppVersionsRequest:
     }
 
     def __init__(self, instance_id=None, edge_app_id=None, version=None, offset=None, limit=None, state=None):
-        """BatchShowEdgeAppVersionsRequest
+        r"""BatchShowEdgeAppVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowEdgeAppVersionsRequest.
+        r"""Gets the instance_id of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -88,7 +88,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowEdgeAppVersionsRequest.
+        r"""Sets the instance_id of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -99,7 +99,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this BatchShowEdgeAppVersionsRequest.
+        r"""Gets the edge_app_id of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -110,7 +110,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this BatchShowEdgeAppVersionsRequest.
+        r"""Sets the edge_app_id of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -121,7 +121,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @property
     def version(self):
-        """Gets the version of this BatchShowEdgeAppVersionsRequest.
+        r"""Gets the version of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：应用版本搜索关键字。
 
@@ -132,7 +132,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BatchShowEdgeAppVersionsRequest.
+        r"""Sets the version of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：应用版本搜索关键字。
 
@@ -143,7 +143,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowEdgeAppVersionsRequest.
+        r"""Gets the offset of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -154,7 +154,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowEdgeAppVersionsRequest.
+        r"""Sets the offset of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -165,7 +165,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowEdgeAppVersionsRequest.
+        r"""Gets the limit of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：每页记录数。
 
@@ -176,7 +176,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowEdgeAppVersionsRequest.
+        r"""Sets the limit of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：每页记录数。
 
@@ -187,7 +187,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @property
     def state(self):
-        """Gets the state of this BatchShowEdgeAppVersionsRequest.
+        r"""Gets the state of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：应用版本状态。  **取值范围**：  - DRAFT：草稿  - PUBLISHED：发布  - OFF_SHELF：下线
 
@@ -198,7 +198,7 @@ class BatchShowEdgeAppVersionsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this BatchShowEdgeAppVersionsRequest.
+        r"""Sets the state of this BatchShowEdgeAppVersionsRequest.
 
         **参数说明**：应用版本状态。  **取值范围**：  - DRAFT：草稿  - PUBLISHED：发布  - OFF_SHELF：下线
 

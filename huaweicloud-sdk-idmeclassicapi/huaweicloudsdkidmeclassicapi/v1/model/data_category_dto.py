@@ -29,7 +29,7 @@ class DataCategoryDTO:
     }
 
     def __init__(self, categoryable=None, category=None, modifier=None):
-        """DataCategoryDTO
+        r"""DataCategoryDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DataCategoryDTO:
 
     @property
     def categoryable(self):
-        """Gets the categoryable of this DataCategoryDTO.
+        r"""Gets the categoryable of this DataCategoryDTO.
 
         :return: The categoryable of this DataCategoryDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -66,7 +66,7 @@ class DataCategoryDTO:
 
     @categoryable.setter
     def categoryable(self, categoryable):
-        """Sets the categoryable of this DataCategoryDTO.
+        r"""Sets the categoryable of this DataCategoryDTO.
 
         :param categoryable: The categoryable of this DataCategoryDTO.
         :type categoryable: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -75,7 +75,7 @@ class DataCategoryDTO:
 
     @property
     def category(self):
-        """Gets the category of this DataCategoryDTO.
+        r"""Gets the category of this DataCategoryDTO.
 
         :return: The category of this DataCategoryDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -84,7 +84,7 @@ class DataCategoryDTO:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this DataCategoryDTO.
+        r"""Sets the category of this DataCategoryDTO.
 
         :param category: The category of this DataCategoryDTO.
         :type category: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -93,7 +93,7 @@ class DataCategoryDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this DataCategoryDTO.
+        r"""Gets the modifier of this DataCategoryDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -104,7 +104,7 @@ class DataCategoryDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this DataCategoryDTO.
+        r"""Sets the modifier of this DataCategoryDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 

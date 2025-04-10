@@ -28,7 +28,7 @@ class BatchDeleteJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchDeleteJobsResponse
+        r"""BatchDeleteJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteJobsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchDeleteJobsResponse.
+        r"""Gets the results of this BatchDeleteJobsResponse.
 
         批量结束任务或删除任务的响应体集合。
 
@@ -62,7 +62,7 @@ class BatchDeleteJobsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchDeleteJobsResponse.
+        r"""Sets the results of this BatchDeleteJobsResponse.
 
         批量结束任务或删除任务的响应体集合。
 
@@ -73,7 +73,7 @@ class BatchDeleteJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchDeleteJobsResponse.
+        r"""Gets the count of this BatchDeleteJobsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchDeleteJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchDeleteJobsResponse.
+        r"""Sets the count of this BatchDeleteJobsResponse.
 
         总数
 

@@ -27,7 +27,7 @@ class ShowApiVersionLinksParams:
     }
 
     def __init__(self, rel=None, href=None):
-        """ShowApiVersionLinksParams
+        r"""ShowApiVersionLinksParams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowApiVersionLinksParams:
 
     @property
     def rel(self):
-        """Gets the rel of this ShowApiVersionLinksParams.
+        r"""Gets the rel of this ShowApiVersionLinksParams.
 
         链接的描述
 
@@ -59,7 +59,7 @@ class ShowApiVersionLinksParams:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this ShowApiVersionLinksParams.
+        r"""Sets the rel of this ShowApiVersionLinksParams.
 
         链接的描述
 
@@ -70,7 +70,7 @@ class ShowApiVersionLinksParams:
 
     @property
     def href(self):
-        """Gets the href of this ShowApiVersionLinksParams.
+        r"""Gets the href of this ShowApiVersionLinksParams.
 
         版本号查询链接
 
@@ -81,7 +81,7 @@ class ShowApiVersionLinksParams:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this ShowApiVersionLinksParams.
+        r"""Sets the href of this ShowApiVersionLinksParams.
 
         版本号查询链接
 

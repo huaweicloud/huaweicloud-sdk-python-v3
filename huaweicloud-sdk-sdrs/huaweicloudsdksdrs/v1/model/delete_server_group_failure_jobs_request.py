@@ -25,7 +25,7 @@ class DeleteServerGroupFailureJobsRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """DeleteServerGroupFailureJobsRequest
+        r"""DeleteServerGroupFailureJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteServerGroupFailureJobsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DeleteServerGroupFailureJobsRequest.
+        r"""Gets the server_group_id of this DeleteServerGroupFailureJobsRequest.
 
         保护组ID。
 
@@ -53,7 +53,7 @@ class DeleteServerGroupFailureJobsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DeleteServerGroupFailureJobsRequest.
+        r"""Sets the server_group_id of this DeleteServerGroupFailureJobsRequest.
 
         保护组ID。
 

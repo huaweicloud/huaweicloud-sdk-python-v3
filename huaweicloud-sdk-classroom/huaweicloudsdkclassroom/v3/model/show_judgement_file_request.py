@@ -25,7 +25,7 @@ class ShowJudgementFileRequest:
     }
 
     def __init__(self, file_id=None):
-        """ShowJudgementFileRequest
+        r"""ShowJudgementFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowJudgementFileRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowJudgementFileRequest.
+        r"""Gets the file_id of this ShowJudgementFileRequest.
 
         文件id，可以从接口[ShowJudgementDetail](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Classroom&api=ShowJudgementDetail)的响应中获取
 
@@ -53,7 +53,7 @@ class ShowJudgementFileRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowJudgementFileRequest.
+        r"""Sets the file_id of this ShowJudgementFileRequest.
 
         文件id，可以从接口[ShowJudgementDetail](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Classroom&api=ShowJudgementDetail)的响应中获取
 

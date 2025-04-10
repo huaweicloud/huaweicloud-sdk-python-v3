@@ -31,7 +31,7 @@ class SimpleUser:
     }
 
     def __init__(self, user_num_id=None, user_id=None, user_name=None, nick_name=None):
-        """SimpleUser
+        r"""SimpleUser
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SimpleUser:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this SimpleUser.
+        r"""Gets the user_num_id of this SimpleUser.
 
         用户数字id
 
@@ -75,7 +75,7 @@ class SimpleUser:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this SimpleUser.
+        r"""Sets the user_num_id of this SimpleUser.
 
         用户数字id
 
@@ -86,7 +86,7 @@ class SimpleUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this SimpleUser.
+        r"""Gets the user_id of this SimpleUser.
 
         用户uuid
 
@@ -97,7 +97,7 @@ class SimpleUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this SimpleUser.
+        r"""Sets the user_id of this SimpleUser.
 
         用户uuid
 
@@ -108,7 +108,7 @@ class SimpleUser:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SimpleUser.
+        r"""Gets the user_name of this SimpleUser.
 
         账号名
 
@@ -119,7 +119,7 @@ class SimpleUser:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SimpleUser.
+        r"""Sets the user_name of this SimpleUser.
 
         账号名
 
@@ -130,7 +130,7 @@ class SimpleUser:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this SimpleUser.
+        r"""Gets the nick_name of this SimpleUser.
 
         用户昵称
 
@@ -141,7 +141,7 @@ class SimpleUser:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this SimpleUser.
+        r"""Sets the nick_name of this SimpleUser.
 
         用户昵称
 

@@ -28,7 +28,7 @@ class CreateEventResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None):
-        """CreateEventResponse
+        r"""CreateEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateEventResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEventResponse.
+        r"""Gets the id of this CreateEventResponse.
 
         测试事件ID。
 
@@ -62,7 +62,7 @@ class CreateEventResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEventResponse.
+        r"""Sets the id of this CreateEventResponse.
 
         测试事件ID。
 
@@ -73,7 +73,7 @@ class CreateEventResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEventResponse.
+        r"""Gets the name of this CreateEventResponse.
 
         测试事件名称。
 
@@ -84,7 +84,7 @@ class CreateEventResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEventResponse.
+        r"""Sets the name of this CreateEventResponse.
 
         测试事件名称。
 

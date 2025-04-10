@@ -27,7 +27,7 @@ class AddGlobalEipTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """AddGlobalEipTagsRequest
+        r"""AddGlobalEipTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddGlobalEipTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AddGlobalEipTagsRequest.
+        r"""Gets the resource_id of this AddGlobalEipTagsRequest.
 
         :return: The resource_id of this AddGlobalEipTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class AddGlobalEipTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AddGlobalEipTagsRequest.
+        r"""Sets the resource_id of this AddGlobalEipTagsRequest.
 
         :param resource_id: The resource_id of this AddGlobalEipTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class AddGlobalEipTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddGlobalEipTagsRequest.
+        r"""Gets the body of this AddGlobalEipTagsRequest.
 
         :return: The body of this AddGlobalEipTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBody`
@@ -76,7 +76,7 @@ class AddGlobalEipTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddGlobalEipTagsRequest.
+        r"""Sets the body of this AddGlobalEipTagsRequest.
 
         :param body: The body of this AddGlobalEipTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBody`

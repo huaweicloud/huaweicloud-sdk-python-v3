@@ -33,7 +33,7 @@ class CreateSqlLimitRuleOption:
     }
 
     def __init__(self, sql_type=None, max_concurrency=None, max_waiting=None, pattern=None, his_sql_limit_switch=None):
-        """CreateSqlLimitRuleOption
+        r"""CreateSqlLimitRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateSqlLimitRuleOption:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this CreateSqlLimitRuleOption.
+        r"""Gets the sql_type of this CreateSqlLimitRuleOption.
 
         SQL类型
 
@@ -79,7 +79,7 @@ class CreateSqlLimitRuleOption:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this CreateSqlLimitRuleOption.
+        r"""Sets the sql_type of this CreateSqlLimitRuleOption.
 
         SQL类型
 
@@ -90,7 +90,7 @@ class CreateSqlLimitRuleOption:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this CreateSqlLimitRuleOption.
+        r"""Gets the max_concurrency of this CreateSqlLimitRuleOption.
 
         最大并发数
 
@@ -101,7 +101,7 @@ class CreateSqlLimitRuleOption:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this CreateSqlLimitRuleOption.
+        r"""Sets the max_concurrency of this CreateSqlLimitRuleOption.
 
         最大并发数
 
@@ -112,7 +112,7 @@ class CreateSqlLimitRuleOption:
 
     @property
     def max_waiting(self):
-        """Gets the max_waiting of this CreateSqlLimitRuleOption.
+        r"""Gets the max_waiting of this CreateSqlLimitRuleOption.
 
         最大等待时间
 
@@ -123,7 +123,7 @@ class CreateSqlLimitRuleOption:
 
     @max_waiting.setter
     def max_waiting(self, max_waiting):
-        """Sets the max_waiting of this CreateSqlLimitRuleOption.
+        r"""Sets the max_waiting of this CreateSqlLimitRuleOption.
 
         最大等待时间
 
@@ -134,7 +134,7 @@ class CreateSqlLimitRuleOption:
 
     @property
     def pattern(self):
-        """Gets the pattern of this CreateSqlLimitRuleOption.
+        r"""Gets the pattern of this CreateSqlLimitRuleOption.
 
         SQL限流规则。限流规则以~分隔关键字，例如select~a。规则举例详细说明：例如关键字是\"select~a\", 含义为：select以及a为该并发控制所包含的两个关键字，~为关键字间隔符，即若执行SQL命令包含select与a两个关键字视为命中此条并发控制规则。
 
@@ -145,7 +145,7 @@ class CreateSqlLimitRuleOption:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this CreateSqlLimitRuleOption.
+        r"""Sets the pattern of this CreateSqlLimitRuleOption.
 
         SQL限流规则。限流规则以~分隔关键字，例如select~a。规则举例详细说明：例如关键字是\"select~a\", 含义为：select以及a为该并发控制所包含的两个关键字，~为关键字间隔符，即若执行SQL命令包含select与a两个关键字视为命中此条并发控制规则。
 
@@ -156,7 +156,7 @@ class CreateSqlLimitRuleOption:
 
     @property
     def his_sql_limit_switch(self):
-        """Gets the his_sql_limit_switch of this CreateSqlLimitRuleOption.
+        r"""Gets the his_sql_limit_switch of this CreateSqlLimitRuleOption.
 
         历史SQL限流开关。 本开关仅对本条SQL限流规则生效。 开启时，将kill掉命中此条SQL限流规则的已有会话。
 
@@ -167,7 +167,7 @@ class CreateSqlLimitRuleOption:
 
     @his_sql_limit_switch.setter
     def his_sql_limit_switch(self, his_sql_limit_switch):
-        """Sets the his_sql_limit_switch of this CreateSqlLimitRuleOption.
+        r"""Sets the his_sql_limit_switch of this CreateSqlLimitRuleOption.
 
         历史SQL限流开关。 本开关仅对本条SQL限流规则生效。 开启时，将kill掉命中此条SQL限流规则的已有会话。
 

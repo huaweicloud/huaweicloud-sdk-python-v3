@@ -29,7 +29,7 @@ class Resources:
     }
 
     def __init__(self, quota=None, used=None, type=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Resources:
 
     @property
     def quota(self):
-        """Gets the quota of this Resources.
+        r"""Gets the quota of this Resources.
 
         项目资源配额。
 
@@ -68,7 +68,7 @@ class Resources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Resources.
+        r"""Sets the quota of this Resources.
 
         项目资源配额。
 
@@ -79,7 +79,7 @@ class Resources:
 
     @property
     def used(self):
-        """Gets the used of this Resources.
+        r"""Gets the used of this Resources.
 
         已使用的资源数量。
 
@@ -90,7 +90,7 @@ class Resources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Resources.
+        r"""Sets the used of this Resources.
 
         已使用的资源数量。
 
@@ -101,7 +101,7 @@ class Resources:
 
     @property
     def type(self):
-        """Gets the type of this Resources.
+        r"""Gets the type of this Resources.
 
         项目资源类型，取值范围：instance。
 
@@ -112,7 +112,7 @@ class Resources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resources.
+        r"""Sets the type of this Resources.
 
         项目资源类型，取值范围：instance。
 

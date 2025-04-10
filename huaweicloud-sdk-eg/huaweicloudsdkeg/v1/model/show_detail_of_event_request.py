@@ -25,7 +25,7 @@ class ShowDetailOfEventRequest:
     }
 
     def __init__(self, trace_id=None):
-        """ShowDetailOfEventRequest
+        r"""ShowDetailOfEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDetailOfEventRequest:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ShowDetailOfEventRequest.
+        r"""Gets the trace_id of this ShowDetailOfEventRequest.
 
         追踪事件的uniqueId
 
@@ -53,7 +53,7 @@ class ShowDetailOfEventRequest:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ShowDetailOfEventRequest.
+        r"""Sets the trace_id of this ShowDetailOfEventRequest.
 
         追踪事件的uniqueId
 

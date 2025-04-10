@@ -27,7 +27,7 @@ class CreateProductRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateProductRequest
+        r"""CreateProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateProductRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateProductRequest.
+        r"""Gets the ief_instance_id of this CreateProductRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateProductRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateProductRequest.
+        r"""Sets the ief_instance_id of this CreateProductRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateProductRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProductRequest.
+        r"""Gets the body of this CreateProductRequest.
 
         :return: The body of this CreateProductRequest.
         :rtype: :class:`huaweicloudsdkief.v1.ProductCreateRequest`
@@ -81,7 +81,7 @@ class CreateProductRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProductRequest.
+        r"""Sets the body of this CreateProductRequest.
 
         :param body: The body of this CreateProductRequest.
         :type body: :class:`huaweicloudsdkief.v1.ProductCreateRequest`

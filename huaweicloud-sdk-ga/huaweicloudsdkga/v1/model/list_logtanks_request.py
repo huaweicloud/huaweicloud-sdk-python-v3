@@ -35,7 +35,7 @@ class ListLogtanksRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, status=None, resource_ids=None, resource_type=None):
-        """ListLogtanksRequest
+        r"""ListLogtanksRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListLogtanksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLogtanksRequest.
+        r"""Gets the limit of this ListLogtanksRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -89,7 +89,7 @@ class ListLogtanksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLogtanksRequest.
+        r"""Sets the limit of this ListLogtanksRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -100,7 +100,7 @@ class ListLogtanksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListLogtanksRequest.
+        r"""Gets the marker of this ListLogtanksRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -111,7 +111,7 @@ class ListLogtanksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListLogtanksRequest.
+        r"""Sets the marker of this ListLogtanksRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -122,7 +122,7 @@ class ListLogtanksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListLogtanksRequest.
+        r"""Gets the id of this ListLogtanksRequest.
 
         资源ID。
 
@@ -133,7 +133,7 @@ class ListLogtanksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListLogtanksRequest.
+        r"""Sets the id of this ListLogtanksRequest.
 
         资源ID。
 
@@ -144,7 +144,7 @@ class ListLogtanksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListLogtanksRequest.
+        r"""Gets the status of this ListLogtanksRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -155,7 +155,7 @@ class ListLogtanksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListLogtanksRequest.
+        r"""Sets the status of this ListLogtanksRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -166,7 +166,7 @@ class ListLogtanksRequest:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ListLogtanksRequest.
+        r"""Gets the resource_ids of this ListLogtanksRequest.
 
         资源ID列表。
 
@@ -177,7 +177,7 @@ class ListLogtanksRequest:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ListLogtanksRequest.
+        r"""Sets the resource_ids of this ListLogtanksRequest.
 
         资源ID列表。
 
@@ -188,7 +188,7 @@ class ListLogtanksRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListLogtanksRequest.
+        r"""Gets the resource_type of this ListLogtanksRequest.
 
         关联云日志的资源类型。
 
@@ -199,7 +199,7 @@ class ListLogtanksRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListLogtanksRequest.
+        r"""Sets the resource_type of this ListLogtanksRequest.
 
         关联云日志的资源类型。
 

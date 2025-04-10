@@ -30,7 +30,7 @@ class ListTriggersResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListTriggersResponse
+        r"""ListTriggersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTriggersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTriggersResponse.
+        r"""Gets the total of this ListTriggersResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListTriggersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTriggersResponse.
+        r"""Sets the total of this ListTriggersResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListTriggersResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListTriggersResponse.
+        r"""Gets the size of this ListTriggersResponse.
 
         本页数量
 
@@ -91,7 +91,7 @@ class ListTriggersResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTriggersResponse.
+        r"""Sets the size of this ListTriggersResponse.
 
         本页数量
 
@@ -102,7 +102,7 @@ class ListTriggersResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListTriggersResponse.
+        r"""Gets the items of this ListTriggersResponse.
 
         对象列表
 
@@ -113,7 +113,7 @@ class ListTriggersResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListTriggersResponse.
+        r"""Sets the items of this ListTriggersResponse.
 
         对象列表
 

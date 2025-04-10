@@ -30,7 +30,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
     }
 
     def __init__(self, result=None, warning_list=None, x_request_id=None):
-        """DetectLiveFaceByBase64Response
+        r"""DetectLiveFaceByBase64Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectLiveFaceByBase64Response.
+        r"""Gets the result of this DetectLiveFaceByBase64Response.
 
         :return: The result of this DetectLiveFaceByBase64Response.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
@@ -67,7 +67,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectLiveFaceByBase64Response.
+        r"""Sets the result of this DetectLiveFaceByBase64Response.
 
         :param result: The result of this DetectLiveFaceByBase64Response.
         :type result: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
@@ -76,7 +76,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
 
     @property
     def warning_list(self):
-        """Gets the warning_list of this DetectLiveFaceByBase64Response.
+        r"""Gets the warning_list of this DetectLiveFaceByBase64Response.
 
         警告信息列表。 调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
 
     @warning_list.setter
     def warning_list(self, warning_list):
-        """Sets the warning_list of this DetectLiveFaceByBase64Response.
+        r"""Sets the warning_list of this DetectLiveFaceByBase64Response.
 
         警告信息列表。 调用失败时无此字段。
 
@@ -98,7 +98,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectLiveFaceByBase64Response.
+        r"""Gets the x_request_id of this DetectLiveFaceByBase64Response.
 
         :return: The x_request_id of this DetectLiveFaceByBase64Response.
         :rtype: str
@@ -107,7 +107,7 @@ class DetectLiveFaceByBase64Response(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectLiveFaceByBase64Response.
+        r"""Sets the x_request_id of this DetectLiveFaceByBase64Response.
 
         :param x_request_id: The x_request_id of this DetectLiveFaceByBase64Response.
         :type x_request_id: str

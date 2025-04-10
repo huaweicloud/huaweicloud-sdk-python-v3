@@ -30,7 +30,7 @@ class CreateAuthRandomRequest:
     }
 
     def __init__(self, conf_id=None, guest_waiting=None, x_password=None):
-        """CreateAuthRandomRequest
+        r"""CreateAuthRandomRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateAuthRandomRequest:
 
     @property
     def conf_id(self):
-        """Gets the conf_id of this CreateAuthRandomRequest.
+        r"""Gets the conf_id of this CreateAuthRandomRequest.
 
         会议ID
 
@@ -68,7 +68,7 @@ class CreateAuthRandomRequest:
 
     @conf_id.setter
     def conf_id(self, conf_id):
-        """Sets the conf_id of this CreateAuthRandomRequest.
+        r"""Sets the conf_id of this CreateAuthRandomRequest.
 
         会议ID
 
@@ -79,7 +79,7 @@ class CreateAuthRandomRequest:
 
     @property
     def guest_waiting(self):
-        """Gets the guest_waiting of this CreateAuthRandomRequest.
+        r"""Gets the guest_waiting of this CreateAuthRandomRequest.
 
         0-不支持来宾会前等待页能力（默认）、1-支持来宾会前等待页能力
 
@@ -90,7 +90,7 @@ class CreateAuthRandomRequest:
 
     @guest_waiting.setter
     def guest_waiting(self, guest_waiting):
-        """Sets the guest_waiting of this CreateAuthRandomRequest.
+        r"""Sets the guest_waiting of this CreateAuthRandomRequest.
 
         0-不支持来宾会前等待页能力（默认）、1-支持来宾会前等待页能力
 
@@ -101,7 +101,7 @@ class CreateAuthRandomRequest:
 
     @property
     def x_password(self):
-        """Gets the x_password of this CreateAuthRandomRequest.
+        r"""Gets the x_password of this CreateAuthRandomRequest.
 
         会议密码
 
@@ -112,7 +112,7 @@ class CreateAuthRandomRequest:
 
     @x_password.setter
     def x_password(self, x_password):
-        """Sets the x_password of this CreateAuthRandomRequest.
+        r"""Sets the x_password of this CreateAuthRandomRequest.
 
         会议密码
 

@@ -25,7 +25,7 @@ class ShowElbIpGroupRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowElbIpGroupRequest
+        r"""ShowElbIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowElbIpGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowElbIpGroupRequest.
+        r"""Gets the instance_id of this ShowElbIpGroupRequest.
 
         实例id。
 
@@ -53,7 +53,7 @@ class ShowElbIpGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowElbIpGroupRequest.
+        r"""Sets the instance_id of this ShowElbIpGroupRequest.
 
         实例id。
 

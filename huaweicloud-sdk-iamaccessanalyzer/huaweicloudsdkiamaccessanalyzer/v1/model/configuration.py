@@ -29,7 +29,7 @@ class Configuration:
     }
 
     def __init__(self, iam_agency=None, obs_bucket=None, kms_cmk=None):
-        """Configuration
+        r"""Configuration
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Configuration:
 
     @property
     def iam_agency(self):
-        """Gets the iam_agency of this Configuration.
+        r"""Gets the iam_agency of this Configuration.
 
         :return: The iam_agency of this Configuration.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.IAMAgency`
@@ -66,7 +66,7 @@ class Configuration:
 
     @iam_agency.setter
     def iam_agency(self, iam_agency):
-        """Sets the iam_agency of this Configuration.
+        r"""Sets the iam_agency of this Configuration.
 
         :param iam_agency: The iam_agency of this Configuration.
         :type iam_agency: :class:`huaweicloudsdkiamaccessanalyzer.v1.IAMAgency`
@@ -75,7 +75,7 @@ class Configuration:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this Configuration.
+        r"""Gets the obs_bucket of this Configuration.
 
         :return: The obs_bucket of this Configuration.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.OBSBucket`
@@ -84,7 +84,7 @@ class Configuration:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this Configuration.
+        r"""Sets the obs_bucket of this Configuration.
 
         :param obs_bucket: The obs_bucket of this Configuration.
         :type obs_bucket: :class:`huaweicloudsdkiamaccessanalyzer.v1.OBSBucket`
@@ -93,7 +93,7 @@ class Configuration:
 
     @property
     def kms_cmk(self):
-        """Gets the kms_cmk of this Configuration.
+        r"""Gets the kms_cmk of this Configuration.
 
         :return: The kms_cmk of this Configuration.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.KMSCmk`
@@ -102,7 +102,7 @@ class Configuration:
 
     @kms_cmk.setter
     def kms_cmk(self, kms_cmk):
-        """Sets the kms_cmk of this Configuration.
+        r"""Sets the kms_cmk of this Configuration.
 
         :param kms_cmk: The kms_cmk of this Configuration.
         :type kms_cmk: :class:`huaweicloudsdkiamaccessanalyzer.v1.KMSCmk`

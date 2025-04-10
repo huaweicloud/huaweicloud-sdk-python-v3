@@ -45,7 +45,7 @@ class ListAppsRequest:
     }
 
     def __init__(self, host_id=None, host_name=None, app_name=None, host_ip=None, version=None, install_dir=None, enterprise_project_id=None, limit=None, offset=None, category=None, part_match=None):
-        """ListAppsRequest
+        r"""ListAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListAppsRequest:
         :type version: str
         :param install_dir: 安装目录
         :type install_dir: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示数量
         :type limit: int
@@ -113,7 +113,7 @@ class ListAppsRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListAppsRequest.
+        r"""Gets the host_id of this ListAppsRequest.
 
         主机id
 
@@ -124,7 +124,7 @@ class ListAppsRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListAppsRequest.
+        r"""Sets the host_id of this ListAppsRequest.
 
         主机id
 
@@ -135,7 +135,7 @@ class ListAppsRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListAppsRequest.
+        r"""Gets the host_name of this ListAppsRequest.
 
         主机名称
 
@@ -146,7 +146,7 @@ class ListAppsRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListAppsRequest.
+        r"""Sets the host_name of this ListAppsRequest.
 
         主机名称
 
@@ -157,7 +157,7 @@ class ListAppsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppsRequest.
+        r"""Gets the app_name of this ListAppsRequest.
 
         软件名称
 
@@ -168,7 +168,7 @@ class ListAppsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppsRequest.
+        r"""Sets the app_name of this ListAppsRequest.
 
         软件名称
 
@@ -179,7 +179,7 @@ class ListAppsRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListAppsRequest.
+        r"""Gets the host_ip of this ListAppsRequest.
 
         主机ip
 
@@ -190,7 +190,7 @@ class ListAppsRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListAppsRequest.
+        r"""Sets the host_ip of this ListAppsRequest.
 
         主机ip
 
@@ -201,7 +201,7 @@ class ListAppsRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListAppsRequest.
+        r"""Gets the version of this ListAppsRequest.
 
         软件版本号
 
@@ -212,7 +212,7 @@ class ListAppsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListAppsRequest.
+        r"""Sets the version of this ListAppsRequest.
 
         软件版本号
 
@@ -223,7 +223,7 @@ class ListAppsRequest:
 
     @property
     def install_dir(self):
-        """Gets the install_dir of this ListAppsRequest.
+        r"""Gets the install_dir of this ListAppsRequest.
 
         安装目录
 
@@ -234,7 +234,7 @@ class ListAppsRequest:
 
     @install_dir.setter
     def install_dir(self, install_dir):
-        """Sets the install_dir of this ListAppsRequest.
+        r"""Sets the install_dir of this ListAppsRequest.
 
         安装目录
 
@@ -245,9 +245,9 @@ class ListAppsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAppsRequest.
+        r"""Gets the enterprise_project_id of this ListAppsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAppsRequest.
         :rtype: str
@@ -256,9 +256,9 @@ class ListAppsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAppsRequest.
+        r"""Sets the enterprise_project_id of this ListAppsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAppsRequest.
         :type enterprise_project_id: str
@@ -267,7 +267,7 @@ class ListAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppsRequest.
+        r"""Gets the limit of this ListAppsRequest.
 
         每页显示数量
 
@@ -278,7 +278,7 @@ class ListAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppsRequest.
+        r"""Sets the limit of this ListAppsRequest.
 
         每页显示数量
 
@@ -289,7 +289,7 @@ class ListAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppsRequest.
+        r"""Gets the offset of this ListAppsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -300,7 +300,7 @@ class ListAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppsRequest.
+        r"""Sets the offset of this ListAppsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -311,7 +311,7 @@ class ListAppsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListAppsRequest.
+        r"""Gets the category of this ListAppsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -322,7 +322,7 @@ class ListAppsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListAppsRequest.
+        r"""Sets the category of this ListAppsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -333,7 +333,7 @@ class ListAppsRequest:
 
     @property
     def part_match(self):
-        """Gets the part_match of this ListAppsRequest.
+        r"""Gets the part_match of this ListAppsRequest.
 
         是否模糊匹配，默认false表示精确匹配
 
@@ -344,7 +344,7 @@ class ListAppsRequest:
 
     @part_match.setter
     def part_match(self, part_match):
-        """Sets the part_match of this ListAppsRequest.
+        r"""Sets the part_match of this ListAppsRequest.
 
         是否模糊匹配，默认false表示精确匹配
 

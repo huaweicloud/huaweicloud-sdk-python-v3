@@ -27,7 +27,7 @@ class AgencyTokenIdentity:
     }
 
     def __init__(self, methods=None, assume_role=None):
-        """AgencyTokenIdentity
+        r"""AgencyTokenIdentity
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgencyTokenIdentity:
 
     @property
     def methods(self):
-        """Gets the methods of this AgencyTokenIdentity.
+        r"""Gets the methods of this AgencyTokenIdentity.
 
         token的获取方式，该字段内容为[\"assume_role\"]。
 
@@ -59,7 +59,7 @@ class AgencyTokenIdentity:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this AgencyTokenIdentity.
+        r"""Sets the methods of this AgencyTokenIdentity.
 
         token的获取方式，该字段内容为[\"assume_role\"]。
 
@@ -70,7 +70,7 @@ class AgencyTokenIdentity:
 
     @property
     def assume_role(self):
-        """Gets the assume_role of this AgencyTokenIdentity.
+        r"""Gets the assume_role of this AgencyTokenIdentity.
 
         :return: The assume_role of this AgencyTokenIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenAssumerole`
@@ -79,7 +79,7 @@ class AgencyTokenIdentity:
 
     @assume_role.setter
     def assume_role(self, assume_role):
-        """Sets the assume_role of this AgencyTokenIdentity.
+        r"""Sets the assume_role of this AgencyTokenIdentity.
 
         :param assume_role: The assume_role of this AgencyTokenIdentity.
         :type assume_role: :class:`huaweicloudsdkiam.v3.AgencyTokenAssumerole`

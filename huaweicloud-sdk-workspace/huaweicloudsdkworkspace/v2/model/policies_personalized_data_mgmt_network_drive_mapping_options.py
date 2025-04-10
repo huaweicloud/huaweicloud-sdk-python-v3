@@ -27,7 +27,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
     }
 
     def __init__(self, network_drive_mapping_path=None, drive_letter=None):
-        """PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions
+        r"""PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
 
     @property
     def network_drive_mapping_path(self):
-        """Gets the network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
+        r"""Gets the network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
         网络驱动器映射路径
 
@@ -61,7 +61,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
 
     @network_drive_mapping_path.setter
     def network_drive_mapping_path(self, network_drive_mapping_path):
-        """Sets the network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
+        r"""Sets the network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
         网络驱动器映射路径
 
@@ -72,7 +72,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
 
     @property
     def drive_letter(self):
-        """Gets the drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
+        r"""Gets the drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
         排除文件夹路径
 
@@ -83,7 +83,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
 
     @drive_letter.setter
     def drive_letter(self, drive_letter):
-        """Sets the drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
+        r"""Sets the drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
         排除文件夹路径
 

@@ -25,7 +25,7 @@ class BatchDeleteSubscriptionsFilterPolicesRequestBody:
     }
 
     def __init__(self, subscription_urns=None):
-        """BatchDeleteSubscriptionsFilterPolicesRequestBody
+        r"""BatchDeleteSubscriptionsFilterPolicesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteSubscriptionsFilterPolicesRequestBody:
 
     @property
     def subscription_urns(self):
-        """Gets the subscription_urns of this BatchDeleteSubscriptionsFilterPolicesRequestBody.
+        r"""Gets the subscription_urns of this BatchDeleteSubscriptionsFilterPolicesRequestBody.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class BatchDeleteSubscriptionsFilterPolicesRequestBody:
 
     @subscription_urns.setter
     def subscription_urns(self, subscription_urns):
-        """Sets the subscription_urns of this BatchDeleteSubscriptionsFilterPolicesRequestBody.
+        r"""Sets the subscription_urns of this BatchDeleteSubscriptionsFilterPolicesRequestBody.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 

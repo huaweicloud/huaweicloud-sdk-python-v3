@@ -25,7 +25,7 @@ class ShowHealthCheckRequest:
     }
 
     def __init__(self, health_check_id=None):
-        """ShowHealthCheckRequest
+        r"""ShowHealthCheckRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowHealthCheckRequest:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this ShowHealthCheckRequest.
+        r"""Gets the health_check_id of this ShowHealthCheckRequest.
 
         健康检查ID。
 
@@ -53,7 +53,7 @@ class ShowHealthCheckRequest:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this ShowHealthCheckRequest.
+        r"""Sets the health_check_id of this ShowHealthCheckRequest.
 
         健康检查ID。
 

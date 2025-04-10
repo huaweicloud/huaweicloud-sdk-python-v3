@@ -35,7 +35,7 @@ class ShowAllFlowsRequest:
     }
 
     def __init__(self, offset=None, limit=None, type=None, name=None, have_child_flow=None, ids=None):
-        """ShowAllFlowsRequest
+        r"""ShowAllFlowsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowAllFlowsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAllFlowsRequest.
+        r"""Gets the offset of this ShowAllFlowsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -87,7 +87,7 @@ class ShowAllFlowsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAllFlowsRequest.
+        r"""Sets the offset of this ShowAllFlowsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -98,7 +98,7 @@ class ShowAllFlowsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAllFlowsRequest.
+        r"""Gets the limit of this ShowAllFlowsRequest.
 
         每页显示的条目数量，limit大于等于1
 
@@ -109,7 +109,7 @@ class ShowAllFlowsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAllFlowsRequest.
+        r"""Sets the limit of this ShowAllFlowsRequest.
 
         每页显示的条目数量，limit大于等于1
 
@@ -120,7 +120,7 @@ class ShowAllFlowsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowAllFlowsRequest.
+        r"""Gets the type of this ShowAllFlowsRequest.
 
         类型
 
@@ -131,7 +131,7 @@ class ShowAllFlowsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAllFlowsRequest.
+        r"""Sets the type of this ShowAllFlowsRequest.
 
         类型
 
@@ -142,7 +142,7 @@ class ShowAllFlowsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowAllFlowsRequest.
+        r"""Gets the name of this ShowAllFlowsRequest.
 
         流名称，支持模糊查询
 
@@ -153,7 +153,7 @@ class ShowAllFlowsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAllFlowsRequest.
+        r"""Sets the name of this ShowAllFlowsRequest.
 
         流名称，支持模糊查询
 
@@ -164,7 +164,7 @@ class ShowAllFlowsRequest:
 
     @property
     def have_child_flow(self):
-        """Gets the have_child_flow of this ShowAllFlowsRequest.
+        r"""Gets the have_child_flow of this ShowAllFlowsRequest.
 
         是否包含子流程
 
@@ -175,7 +175,7 @@ class ShowAllFlowsRequest:
 
     @have_child_flow.setter
     def have_child_flow(self, have_child_flow):
-        """Sets the have_child_flow of this ShowAllFlowsRequest.
+        r"""Sets the have_child_flow of this ShowAllFlowsRequest.
 
         是否包含子流程
 
@@ -186,7 +186,7 @@ class ShowAllFlowsRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this ShowAllFlowsRequest.
+        r"""Gets the ids of this ShowAllFlowsRequest.
 
         ids
 
@@ -197,7 +197,7 @@ class ShowAllFlowsRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ShowAllFlowsRequest.
+        r"""Sets the ids of this ShowAllFlowsRequest.
 
         ids
 

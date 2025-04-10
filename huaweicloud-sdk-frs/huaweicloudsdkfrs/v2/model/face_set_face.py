@@ -31,7 +31,7 @@ class FaceSetFace:
     }
 
     def __init__(self, bounding_box=None, external_fields=None, external_image_id=None, face_id=None):
-        """FaceSetFace
+        r"""FaceSetFace
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class FaceSetFace:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this FaceSetFace.
+        r"""Gets the bounding_box of this FaceSetFace.
 
         :return: The bounding_box of this FaceSetFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -69,7 +69,7 @@ class FaceSetFace:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this FaceSetFace.
+        r"""Sets the bounding_box of this FaceSetFace.
 
         :param bounding_box: The bounding_box of this FaceSetFace.
         :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -78,7 +78,7 @@ class FaceSetFace:
 
     @property
     def external_fields(self):
-        """Gets the external_fields of this FaceSetFace.
+        r"""Gets the external_fields of this FaceSetFace.
 
         用户添加的额外字段。
 
@@ -89,7 +89,7 @@ class FaceSetFace:
 
     @external_fields.setter
     def external_fields(self, external_fields):
-        """Sets the external_fields of this FaceSetFace.
+        r"""Sets the external_fields of this FaceSetFace.
 
         用户添加的额外字段。
 
@@ -100,7 +100,7 @@ class FaceSetFace:
 
     @property
     def external_image_id(self):
-        """Gets the external_image_id of this FaceSetFace.
+        r"""Gets the external_image_id of this FaceSetFace.
 
         人脸所在的外部图片ID。
 
@@ -111,7 +111,7 @@ class FaceSetFace:
 
     @external_image_id.setter
     def external_image_id(self, external_image_id):
-        """Sets the external_image_id of this FaceSetFace.
+        r"""Sets the external_image_id of this FaceSetFace.
 
         人脸所在的外部图片ID。
 
@@ -122,7 +122,7 @@ class FaceSetFace:
 
     @property
     def face_id(self):
-        """Gets the face_id of this FaceSetFace.
+        r"""Gets the face_id of this FaceSetFace.
 
         人脸ID，由系统内部生成的唯一ID。
 
@@ -133,7 +133,7 @@ class FaceSetFace:
 
     @face_id.setter
     def face_id(self, face_id):
-        """Sets the face_id of this FaceSetFace.
+        r"""Sets the face_id of this FaceSetFace.
 
         人脸ID，由系统内部生成的唯一ID。
 

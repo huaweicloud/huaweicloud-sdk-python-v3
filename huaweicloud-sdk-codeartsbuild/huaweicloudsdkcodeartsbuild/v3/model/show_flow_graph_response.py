@@ -32,7 +32,7 @@ class ShowFlowGraphResponse(SdkResponse):
     }
 
     def __init__(self, success=None, message=None, err_code=None, result=None):
-        """ShowFlowGraphResponse
+        r"""ShowFlowGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ShowFlowGraphResponse.
+        r"""Gets the success of this ShowFlowGraphResponse.
 
         状态
 
@@ -76,7 +76,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ShowFlowGraphResponse.
+        r"""Sets the success of this ShowFlowGraphResponse.
 
         状态
 
@@ -87,7 +87,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowFlowGraphResponse.
+        r"""Gets the message of this ShowFlowGraphResponse.
 
         消息
 
@@ -98,7 +98,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowFlowGraphResponse.
+        r"""Sets the message of this ShowFlowGraphResponse.
 
         消息
 
@@ -109,7 +109,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @property
     def err_code(self):
-        """Gets the err_code of this ShowFlowGraphResponse.
+        r"""Gets the err_code of this ShowFlowGraphResponse.
 
         错误码
 
@@ -120,7 +120,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @err_code.setter
     def err_code(self, err_code):
-        """Sets the err_code of this ShowFlowGraphResponse.
+        r"""Sets the err_code of this ShowFlowGraphResponse.
 
         错误码
 
@@ -131,7 +131,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowFlowGraphResponse.
+        r"""Gets the result of this ShowFlowGraphResponse.
 
         :return: The result of this ShowFlowGraphResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraphResult`
@@ -140,7 +140,7 @@ class ShowFlowGraphResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowFlowGraphResponse.
+        r"""Sets the result of this ShowFlowGraphResponse.
 
         :param result: The result of this ShowFlowGraphResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraphResult`

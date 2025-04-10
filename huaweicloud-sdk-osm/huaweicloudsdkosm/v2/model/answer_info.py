@@ -33,7 +33,7 @@ class AnswerInfo:
     }
 
     def __init__(self, answer=None, link=None, question=None, qa_pair_id=None, relevance_details=None):
-        """AnswerInfo
+        r"""AnswerInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AnswerInfo:
 
     @property
     def answer(self):
-        """Gets the answer of this AnswerInfo.
+        r"""Gets the answer of this AnswerInfo.
 
         答案
 
@@ -82,7 +82,7 @@ class AnswerInfo:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this AnswerInfo.
+        r"""Sets the answer of this AnswerInfo.
 
         答案
 
@@ -93,7 +93,7 @@ class AnswerInfo:
 
     @property
     def link(self):
-        """Gets the link of this AnswerInfo.
+        r"""Gets the link of this AnswerInfo.
 
         链接
 
@@ -104,7 +104,7 @@ class AnswerInfo:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this AnswerInfo.
+        r"""Sets the link of this AnswerInfo.
 
         链接
 
@@ -115,7 +115,7 @@ class AnswerInfo:
 
     @property
     def question(self):
-        """Gets the question of this AnswerInfo.
+        r"""Gets the question of this AnswerInfo.
 
         问题
 
@@ -126,7 +126,7 @@ class AnswerInfo:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this AnswerInfo.
+        r"""Sets the question of this AnswerInfo.
 
         问题
 
@@ -137,7 +137,7 @@ class AnswerInfo:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this AnswerInfo.
+        r"""Gets the qa_pair_id of this AnswerInfo.
 
         语料Id
 
@@ -148,7 +148,7 @@ class AnswerInfo:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this AnswerInfo.
+        r"""Sets the qa_pair_id of this AnswerInfo.
 
         语料Id
 
@@ -159,7 +159,7 @@ class AnswerInfo:
 
     @property
     def relevance_details(self):
-        """Gets the relevance_details of this AnswerInfo.
+        r"""Gets the relevance_details of this AnswerInfo.
 
         相关问题详情列表
 
@@ -170,7 +170,7 @@ class AnswerInfo:
 
     @relevance_details.setter
     def relevance_details(self, relevance_details):
-        """Sets the relevance_details of this AnswerInfo.
+        r"""Sets the relevance_details of this AnswerInfo.
 
         相关问题详情列表
 

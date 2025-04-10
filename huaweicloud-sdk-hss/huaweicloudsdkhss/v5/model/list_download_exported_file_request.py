@@ -29,7 +29,7 @@ class ListDownloadExportedFileRequest:
     }
 
     def __init__(self, file_id=None, region=None, enterprise_project_id=None):
-        """ListDownloadExportedFileRequest
+        r"""ListDownloadExportedFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -37,7 +37,7 @@ class ListDownloadExportedFileRequest:
         :type file_id: str
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         """
         
@@ -55,7 +55,7 @@ class ListDownloadExportedFileRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this ListDownloadExportedFileRequest.
+        r"""Gets the file_id of this ListDownloadExportedFileRequest.
 
         文件id
 
@@ -66,7 +66,7 @@ class ListDownloadExportedFileRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ListDownloadExportedFileRequest.
+        r"""Sets the file_id of this ListDownloadExportedFileRequest.
 
         文件id
 
@@ -77,7 +77,7 @@ class ListDownloadExportedFileRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListDownloadExportedFileRequest.
+        r"""Gets the region of this ListDownloadExportedFileRequest.
 
         Region Id
 
@@ -88,7 +88,7 @@ class ListDownloadExportedFileRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListDownloadExportedFileRequest.
+        r"""Sets the region of this ListDownloadExportedFileRequest.
 
         Region Id
 
@@ -99,9 +99,9 @@ class ListDownloadExportedFileRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDownloadExportedFileRequest.
+        r"""Gets the enterprise_project_id of this ListDownloadExportedFileRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListDownloadExportedFileRequest.
         :rtype: str
@@ -110,9 +110,9 @@ class ListDownloadExportedFileRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDownloadExportedFileRequest.
+        r"""Sets the enterprise_project_id of this ListDownloadExportedFileRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListDownloadExportedFileRequest.
         :type enterprise_project_id: str

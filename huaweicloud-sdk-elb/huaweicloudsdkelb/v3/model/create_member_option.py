@@ -37,7 +37,7 @@ class CreateMemberOption:
     }
 
     def __init__(self, address=None, admin_state_up=None, name=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=None):
-        """CreateMemberOption
+        r"""CreateMemberOption
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateMemberOption:
 
     @property
     def address(self):
-        """Gets the address of this CreateMemberOption.
+        r"""Gets the address of this CreateMemberOption.
 
         参数解释：后端服务器对应的IP地址。  约束限制： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [ 不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -95,7 +95,7 @@ class CreateMemberOption:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CreateMemberOption.
+        r"""Sets the address of this CreateMemberOption.
 
         参数解释：后端服务器对应的IP地址。  约束限制： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [ 不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -106,7 +106,7 @@ class CreateMemberOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateMemberOption.
+        r"""Gets the admin_state_up of this CreateMemberOption.
 
         参数解释：后端服务器的管理状态。  约束限制：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  取值范围：true、false。
 
@@ -117,7 +117,7 @@ class CreateMemberOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateMemberOption.
+        r"""Sets the admin_state_up of this CreateMemberOption.
 
         参数解释：后端服务器的管理状态。  约束限制：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  取值范围：true、false。
 
@@ -128,7 +128,7 @@ class CreateMemberOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateMemberOption.
+        r"""Gets the name of this CreateMemberOption.
 
         参数解释：后端服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
 
@@ -139,7 +139,7 @@ class CreateMemberOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMemberOption.
+        r"""Sets the name of this CreateMemberOption.
 
         参数解释：后端服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
 
@@ -150,7 +150,7 @@ class CreateMemberOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateMemberOption.
+        r"""Gets the project_id of this CreateMemberOption.
 
         参数解释：后端服务器所在的项目ID。
 
@@ -161,7 +161,7 @@ class CreateMemberOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateMemberOption.
+        r"""Sets the project_id of this CreateMemberOption.
 
         参数解释：后端服务器所在的项目ID。
 
@@ -172,7 +172,7 @@ class CreateMemberOption:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this CreateMemberOption.
+        r"""Gets the protocol_port of this CreateMemberOption.
 
         参数解释：后端服务器业务端口。  约束限制： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
 
@@ -183,7 +183,7 @@ class CreateMemberOption:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this CreateMemberOption.
+        r"""Sets the protocol_port of this CreateMemberOption.
 
         参数解释：后端服务器业务端口。  约束限制： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
 
@@ -194,7 +194,7 @@ class CreateMemberOption:
 
     @property
     def subnet_cidr_id(self):
-        """Gets the subnet_cidr_id of this CreateMemberOption.
+        r"""Gets the subnet_cidr_id of this CreateMemberOption.
 
         参数解释：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  约束限制： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启跨VPC后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -205,7 +205,7 @@ class CreateMemberOption:
 
     @subnet_cidr_id.setter
     def subnet_cidr_id(self, subnet_cidr_id):
-        """Sets the subnet_cidr_id of this CreateMemberOption.
+        r"""Sets the subnet_cidr_id of this CreateMemberOption.
 
         参数解释：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  约束限制： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启跨VPC后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -216,7 +216,7 @@ class CreateMemberOption:
 
     @property
     def weight(self):
-        """Gets the weight of this CreateMemberOption.
+        r"""Gets the weight of this CreateMemberOption.
 
         参数解释：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  约束限制：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  取值范围：0-100，默认1。
 
@@ -227,7 +227,7 @@ class CreateMemberOption:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this CreateMemberOption.
+        r"""Sets the weight of this CreateMemberOption.
 
         参数解释：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  约束限制：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  取值范围：0-100，默认1。
 

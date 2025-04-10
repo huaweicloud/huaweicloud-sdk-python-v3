@@ -27,7 +27,7 @@ class DeleteTopicRequest:
     }
 
     def __init__(self, instance_id=None, topic=None):
-        """DeleteTopicRequest
+        r"""DeleteTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteTopicRequest.
+        r"""Gets the instance_id of this DeleteTopicRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteTopicRequest.
+        r"""Sets the instance_id of this DeleteTopicRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteTopicRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this DeleteTopicRequest.
+        r"""Gets the topic of this DeleteTopicRequest.
 
         主题名称。
 
@@ -81,7 +81,7 @@ class DeleteTopicRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this DeleteTopicRequest.
+        r"""Sets the topic of this DeleteTopicRequest.
 
         主题名称。
 

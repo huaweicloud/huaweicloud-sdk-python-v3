@@ -33,7 +33,7 @@ class CreateBusinessModel:
     }
 
     def __init__(self, name=None, eps_id=None, display_name=None, descp=None, cmdb_datasource_type=None):
-        """CreateBusinessModel
+        r"""CreateBusinessModel
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateBusinessModel:
 
     @property
     def name(self):
-        """Gets the name of this CreateBusinessModel.
+        r"""Gets the name of this CreateBusinessModel.
 
         应用名字
 
@@ -79,7 +79,7 @@ class CreateBusinessModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBusinessModel.
+        r"""Sets the name of this CreateBusinessModel.
 
         应用名字
 
@@ -90,7 +90,7 @@ class CreateBusinessModel:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this CreateBusinessModel.
+        r"""Gets the eps_id of this CreateBusinessModel.
 
         企业项目ID，默认值为“0”，表示默认项目的ID。
 
@@ -101,7 +101,7 @@ class CreateBusinessModel:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this CreateBusinessModel.
+        r"""Sets the eps_id of this CreateBusinessModel.
 
         企业项目ID，默认值为“0”，表示默认项目的ID。
 
@@ -112,7 +112,7 @@ class CreateBusinessModel:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateBusinessModel.
+        r"""Gets the display_name of this CreateBusinessModel.
 
         CMDB树显示的名称
 
@@ -123,7 +123,7 @@ class CreateBusinessModel:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateBusinessModel.
+        r"""Sets the display_name of this CreateBusinessModel.
 
         CMDB树显示的名称
 
@@ -134,7 +134,7 @@ class CreateBusinessModel:
 
     @property
     def descp(self):
-        """Gets the descp of this CreateBusinessModel.
+        r"""Gets the descp of this CreateBusinessModel.
 
         描述
 
@@ -145,7 +145,7 @@ class CreateBusinessModel:
 
     @descp.setter
     def descp(self, descp):
-        """Sets the descp of this CreateBusinessModel.
+        r"""Sets the descp of this CreateBusinessModel.
 
         描述
 
@@ -156,7 +156,7 @@ class CreateBusinessModel:
 
     @property
     def cmdb_datasource_type(self):
-        """Gets the cmdb_datasource_type of this CreateBusinessModel.
+        r"""Gets the cmdb_datasource_type of this CreateBusinessModel.
 
         默认值为SKYWALKING。
 
@@ -167,7 +167,7 @@ class CreateBusinessModel:
 
     @cmdb_datasource_type.setter
     def cmdb_datasource_type(self, cmdb_datasource_type):
-        """Sets the cmdb_datasource_type of this CreateBusinessModel.
+        r"""Sets the cmdb_datasource_type of this CreateBusinessModel.
 
         默认值为SKYWALKING。
 

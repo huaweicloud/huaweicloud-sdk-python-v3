@@ -29,7 +29,7 @@ class Repo:
     }
 
     def __init__(self, auth_name=None, branch=None, namespace=None):
-        """Repo
+        r"""Repo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Repo:
 
     @property
     def auth_name(self):
-        """Gets the auth_name of this Repo.
+        r"""Gets the auth_name of this Repo.
 
         授权名称。
 
@@ -68,7 +68,7 @@ class Repo:
 
     @auth_name.setter
     def auth_name(self, auth_name):
-        """Sets the auth_name of this Repo.
+        r"""Sets the auth_name of this Repo.
 
         授权名称。
 
@@ -79,7 +79,7 @@ class Repo:
 
     @property
     def branch(self):
-        """Gets the branch of this Repo.
+        r"""Gets the branch of this Repo.
 
         分支。
 
@@ -90,7 +90,7 @@ class Repo:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this Repo.
+        r"""Sets the branch of this Repo.
 
         分支。
 
@@ -101,7 +101,7 @@ class Repo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this Repo.
+        r"""Gets the namespace of this Repo.
 
         命名空间，需填写命名空间的Base64编码。
 
@@ -112,7 +112,7 @@ class Repo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this Repo.
+        r"""Sets the namespace of this Repo.
 
         命名空间，需填写命名空间的Base64编码。
 

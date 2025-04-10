@@ -28,7 +28,7 @@ class SetTableColumnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, column_statistics_desc=None, column_statistics_objects=None):
-        """SetTableColumnStatisticsResponse
+        r"""SetTableColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SetTableColumnStatisticsResponse(SdkResponse):
 
     @property
     def column_statistics_desc(self):
-        """Gets the column_statistics_desc of this SetTableColumnStatisticsResponse.
+        r"""Gets the column_statistics_desc of this SetTableColumnStatisticsResponse.
 
         :return: The column_statistics_desc of this SetTableColumnStatisticsResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.TableColumnStatisticsDescription`
@@ -60,7 +60,7 @@ class SetTableColumnStatisticsResponse(SdkResponse):
 
     @column_statistics_desc.setter
     def column_statistics_desc(self, column_statistics_desc):
-        """Sets the column_statistics_desc of this SetTableColumnStatisticsResponse.
+        r"""Sets the column_statistics_desc of this SetTableColumnStatisticsResponse.
 
         :param column_statistics_desc: The column_statistics_desc of this SetTableColumnStatisticsResponse.
         :type column_statistics_desc: :class:`huaweicloudsdklakeformation.v1.TableColumnStatisticsDescription`
@@ -69,7 +69,7 @@ class SetTableColumnStatisticsResponse(SdkResponse):
 
     @property
     def column_statistics_objects(self):
-        """Gets the column_statistics_objects of this SetTableColumnStatisticsResponse.
+        r"""Gets the column_statistics_objects of this SetTableColumnStatisticsResponse.
 
         列统计信息
 
@@ -80,7 +80,7 @@ class SetTableColumnStatisticsResponse(SdkResponse):
 
     @column_statistics_objects.setter
     def column_statistics_objects(self, column_statistics_objects):
-        """Sets the column_statistics_objects of this SetTableColumnStatisticsResponse.
+        r"""Sets the column_statistics_objects of this SetTableColumnStatisticsResponse.
 
         列统计信息
 

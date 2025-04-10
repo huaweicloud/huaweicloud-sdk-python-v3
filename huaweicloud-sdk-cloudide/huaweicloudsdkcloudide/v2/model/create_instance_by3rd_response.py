@@ -28,7 +28,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CreateInstanceBy3rdResponse
+        r"""CreateInstanceBy3rdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateInstanceBy3rdResponse.
+        r"""Gets the result of this CreateInstanceBy3rdResponse.
 
         :return: The result of this CreateInstanceBy3rdResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.InstancesResponseInstancesVOResult`
@@ -60,7 +60,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateInstanceBy3rdResponse.
+        r"""Sets the result of this CreateInstanceBy3rdResponse.
 
         :param result: The result of this CreateInstanceBy3rdResponse.
         :type result: :class:`huaweicloudsdkcloudide.v2.InstancesResponseInstancesVOResult`
@@ -69,7 +69,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateInstanceBy3rdResponse.
+        r"""Gets the status of this CreateInstanceBy3rdResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateInstanceBy3rdResponse.
+        r"""Sets the status of this CreateInstanceBy3rdResponse.
 
         状态
 

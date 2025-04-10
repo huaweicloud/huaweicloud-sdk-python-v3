@@ -24,7 +24,7 @@ class DeleteMediaProcessTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMediaProcessTaskResponse
+        r"""DeleteMediaProcessTaskResponse
 
         The model defined in huaweicloud sdk
 

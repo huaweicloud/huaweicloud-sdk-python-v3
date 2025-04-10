@@ -33,7 +33,7 @@ class TopUrlSummary:
     }
 
     def __init__(self, url=None, value=None, start_time=None, end_time=None, stat_type=None):
-        """TopUrlSummary
+        r"""TopUrlSummary
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TopUrlSummary:
 
     @property
     def url(self):
-        """Gets the url of this TopUrlSummary.
+        r"""Gets the url of this TopUrlSummary.
 
         URL名称。
 
@@ -82,7 +82,7 @@ class TopUrlSummary:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TopUrlSummary.
+        r"""Sets the url of this TopUrlSummary.
 
         URL名称。
 
@@ -93,7 +93,7 @@ class TopUrlSummary:
 
     @property
     def value(self):
-        """Gets the value of this TopUrlSummary.
+        r"""Gets the value of this TopUrlSummary.
 
         对应查询类型的值。（流量单位：Byte）
 
@@ -104,7 +104,7 @@ class TopUrlSummary:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TopUrlSummary.
+        r"""Sets the value of this TopUrlSummary.
 
         对应查询类型的值。（流量单位：Byte）
 
@@ -115,7 +115,7 @@ class TopUrlSummary:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TopUrlSummary.
+        r"""Gets the start_time of this TopUrlSummary.
 
         查询起始时间戳。
 
@@ -126,7 +126,7 @@ class TopUrlSummary:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TopUrlSummary.
+        r"""Sets the start_time of this TopUrlSummary.
 
         查询起始时间戳。
 
@@ -137,7 +137,7 @@ class TopUrlSummary:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TopUrlSummary.
+        r"""Gets the end_time of this TopUrlSummary.
 
         查询结束时间戳
 
@@ -148,7 +148,7 @@ class TopUrlSummary:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TopUrlSummary.
+        r"""Sets the end_time of this TopUrlSummary.
 
         查询结束时间戳
 
@@ -159,7 +159,7 @@ class TopUrlSummary:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this TopUrlSummary.
+        r"""Gets the stat_type of this TopUrlSummary.
 
         参数类型支持：flux(流量)，req_num(请求总数)。
 
@@ -170,7 +170,7 @@ class TopUrlSummary:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this TopUrlSummary.
+        r"""Sets the stat_type of this TopUrlSummary.
 
         参数类型支持：flux(流量)，req_num(请求总数)。
 

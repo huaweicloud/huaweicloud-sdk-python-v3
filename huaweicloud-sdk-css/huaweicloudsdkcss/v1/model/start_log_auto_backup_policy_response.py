@@ -24,7 +24,7 @@ class StartLogAutoBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartLogAutoBackupPolicyResponse
+        r"""StartLogAutoBackupPolicyResponse
 
         The model defined in huaweicloud sdk
 

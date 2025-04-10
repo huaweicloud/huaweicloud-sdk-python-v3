@@ -25,7 +25,7 @@ class ShowDedicatedHostTagsRequest:
     }
 
     def __init__(self, dedicated_host_id=None):
-        """ShowDedicatedHostTagsRequest
+        r"""ShowDedicatedHostTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDedicatedHostTagsRequest:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this ShowDedicatedHostTagsRequest.
+        r"""Gets the dedicated_host_id of this ShowDedicatedHostTagsRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -53,7 +53,7 @@ class ShowDedicatedHostTagsRequest:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this ShowDedicatedHostTagsRequest.
+        r"""Sets the dedicated_host_id of this ShowDedicatedHostTagsRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 

@@ -31,7 +31,7 @@ class BucketBean:
     }
 
     def __init__(self, asset_name=None, location=None, bucket_name=None, bucket_policy=None):
-        """BucketBean
+        r"""BucketBean
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BucketBean:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this BucketBean.
+        r"""Gets the asset_name of this BucketBean.
 
         资产名称
 
@@ -75,7 +75,7 @@ class BucketBean:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this BucketBean.
+        r"""Sets the asset_name of this BucketBean.
 
         资产名称
 
@@ -86,7 +86,7 @@ class BucketBean:
 
     @property
     def location(self):
-        """Gets the location of this BucketBean.
+        r"""Gets the location of this BucketBean.
 
         桶位置
 
@@ -97,7 +97,7 @@ class BucketBean:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this BucketBean.
+        r"""Sets the location of this BucketBean.
 
         桶位置
 
@@ -108,7 +108,7 @@ class BucketBean:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this BucketBean.
+        r"""Gets the bucket_name of this BucketBean.
 
         桶名称
 
@@ -119,7 +119,7 @@ class BucketBean:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this BucketBean.
+        r"""Sets the bucket_name of this BucketBean.
 
         桶名称
 
@@ -130,7 +130,7 @@ class BucketBean:
 
     @property
     def bucket_policy(self):
-        """Gets the bucket_policy of this BucketBean.
+        r"""Gets the bucket_policy of this BucketBean.
 
         桶策略
 
@@ -141,7 +141,7 @@ class BucketBean:
 
     @bucket_policy.setter
     def bucket_policy(self, bucket_policy):
-        """Sets the bucket_policy of this BucketBean.
+        r"""Sets the bucket_policy of this BucketBean.
 
         桶策略
 

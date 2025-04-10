@@ -27,7 +27,7 @@ class SetInstanceDataDumpRequestBody:
     }
 
     def __init__(self, bucket_name=None, action=None):
-        """SetInstanceDataDumpRequestBody
+        r"""SetInstanceDataDumpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,12 +43,13 @@ class SetInstanceDataDumpRequestBody:
         self._action = None
         self.discriminator = None
 
-        self.bucket_name = bucket_name
+        if bucket_name is not None:
+            self.bucket_name = bucket_name
         self.action = action
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this SetInstanceDataDumpRequestBody.
+        r"""Gets the bucket_name of this SetInstanceDataDumpRequestBody.
 
         OBS桶名。
 
@@ -59,7 +60,7 @@ class SetInstanceDataDumpRequestBody:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this SetInstanceDataDumpRequestBody.
+        r"""Sets the bucket_name of this SetInstanceDataDumpRequestBody.
 
         OBS桶名。
 
@@ -70,7 +71,7 @@ class SetInstanceDataDumpRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this SetInstanceDataDumpRequestBody.
+        r"""Gets the action of this SetInstanceDataDumpRequestBody.
 
         开启/关闭实例数据导出。
 
@@ -81,7 +82,7 @@ class SetInstanceDataDumpRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this SetInstanceDataDumpRequestBody.
+        r"""Sets the action of this SetInstanceDataDumpRequestBody.
 
         开启/关闭实例数据导出。
 

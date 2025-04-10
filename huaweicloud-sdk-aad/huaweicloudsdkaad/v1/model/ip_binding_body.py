@@ -27,7 +27,7 @@ class IpBindingBody:
     }
 
     def __init__(self, package_id=None, id_list=None):
-        """IpBindingBody
+        r"""IpBindingBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpBindingBody:
 
     @property
     def package_id(self):
-        """Gets the package_id of this IpBindingBody.
+        r"""Gets the package_id of this IpBindingBody.
 
         防护包id
 
@@ -59,7 +59,7 @@ class IpBindingBody:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this IpBindingBody.
+        r"""Sets the package_id of this IpBindingBody.
 
         防护包id
 
@@ -70,7 +70,7 @@ class IpBindingBody:
 
     @property
     def id_list(self):
-        """Gets the id_list of this IpBindingBody.
+        r"""Gets the id_list of this IpBindingBody.
 
         防护ip的id列表
 
@@ -81,7 +81,7 @@ class IpBindingBody:
 
     @id_list.setter
     def id_list(self, id_list):
-        """Sets the id_list of this IpBindingBody.
+        r"""Sets the id_list of this IpBindingBody.
 
         防护ip的id列表
 

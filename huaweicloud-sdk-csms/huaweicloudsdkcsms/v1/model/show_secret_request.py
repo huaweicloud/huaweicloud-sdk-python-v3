@@ -25,7 +25,7 @@ class ShowSecretRequest:
     }
 
     def __init__(self, secret_name=None):
-        """ShowSecretRequest
+        r"""ShowSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecretRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this ShowSecretRequest.
+        r"""Gets the secret_name of this ShowSecretRequest.
 
         凭据的名称。
 
@@ -53,7 +53,7 @@ class ShowSecretRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this ShowSecretRequest.
+        r"""Sets the secret_name of this ShowSecretRequest.
 
         凭据的名称。
 

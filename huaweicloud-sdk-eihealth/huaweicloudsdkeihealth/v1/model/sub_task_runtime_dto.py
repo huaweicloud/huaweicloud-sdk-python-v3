@@ -41,7 +41,7 @@ class SubTaskRuntimeDto:
     }
 
     def __init__(self, sub_task_name=None, create_time=None, finish_time=None, actual_running_time=None, status=None, log_storage_link=None, pod_create_time=None, pod_start_time=None, job_failed_times=None):
-        """SubTaskRuntimeDto
+        r"""SubTaskRuntimeDto
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SubTaskRuntimeDto:
 
     @property
     def sub_task_name(self):
-        """Gets the sub_task_name of this SubTaskRuntimeDto.
+        r"""Gets the sub_task_name of this SubTaskRuntimeDto.
 
         作业子任务的并发实例名称
 
@@ -110,7 +110,7 @@ class SubTaskRuntimeDto:
 
     @sub_task_name.setter
     def sub_task_name(self, sub_task_name):
-        """Sets the sub_task_name of this SubTaskRuntimeDto.
+        r"""Sets the sub_task_name of this SubTaskRuntimeDto.
 
         作业子任务的并发实例名称
 
@@ -121,7 +121,7 @@ class SubTaskRuntimeDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SubTaskRuntimeDto.
+        r"""Gets the create_time of this SubTaskRuntimeDto.
 
         作业子任务的并发实例运行创建时间
 
@@ -132,7 +132,7 @@ class SubTaskRuntimeDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SubTaskRuntimeDto.
+        r"""Sets the create_time of this SubTaskRuntimeDto.
 
         作业子任务的并发实例运行创建时间
 
@@ -143,7 +143,7 @@ class SubTaskRuntimeDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this SubTaskRuntimeDto.
+        r"""Gets the finish_time of this SubTaskRuntimeDto.
 
         作业子任务的并发实例运行结束时间
 
@@ -154,7 +154,7 @@ class SubTaskRuntimeDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this SubTaskRuntimeDto.
+        r"""Sets the finish_time of this SubTaskRuntimeDto.
 
         作业子任务的并发实例运行结束时间
 
@@ -165,7 +165,7 @@ class SubTaskRuntimeDto:
 
     @property
     def actual_running_time(self):
-        """Gets the actual_running_time of this SubTaskRuntimeDto.
+        r"""Gets the actual_running_time of this SubTaskRuntimeDto.
 
         作业子任务的并发实例实际运行时间
 
@@ -176,7 +176,7 @@ class SubTaskRuntimeDto:
 
     @actual_running_time.setter
     def actual_running_time(self, actual_running_time):
-        """Sets the actual_running_time of this SubTaskRuntimeDto.
+        r"""Sets the actual_running_time of this SubTaskRuntimeDto.
 
         作业子任务的并发实例实际运行时间
 
@@ -187,7 +187,7 @@ class SubTaskRuntimeDto:
 
     @property
     def status(self):
-        """Gets the status of this SubTaskRuntimeDto.
+        r"""Gets the status of this SubTaskRuntimeDto.
 
         作业子任务的并发实例运行状态
 
@@ -198,7 +198,7 @@ class SubTaskRuntimeDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubTaskRuntimeDto.
+        r"""Sets the status of this SubTaskRuntimeDto.
 
         作业子任务的并发实例运行状态
 
@@ -209,7 +209,7 @@ class SubTaskRuntimeDto:
 
     @property
     def log_storage_link(self):
-        """Gets the log_storage_link of this SubTaskRuntimeDto.
+        r"""Gets the log_storage_link of this SubTaskRuntimeDto.
 
         作业日志存储链接
 
@@ -220,7 +220,7 @@ class SubTaskRuntimeDto:
 
     @log_storage_link.setter
     def log_storage_link(self, log_storage_link):
-        """Sets the log_storage_link of this SubTaskRuntimeDto.
+        r"""Sets the log_storage_link of this SubTaskRuntimeDto.
 
         作业日志存储链接
 
@@ -231,7 +231,7 @@ class SubTaskRuntimeDto:
 
     @property
     def pod_create_time(self):
-        """Gets the pod_create_time of this SubTaskRuntimeDto.
+        r"""Gets the pod_create_time of this SubTaskRuntimeDto.
 
         task的pod创建时间
 
@@ -242,7 +242,7 @@ class SubTaskRuntimeDto:
 
     @pod_create_time.setter
     def pod_create_time(self, pod_create_time):
-        """Sets the pod_create_time of this SubTaskRuntimeDto.
+        r"""Sets the pod_create_time of this SubTaskRuntimeDto.
 
         task的pod创建时间
 
@@ -253,7 +253,7 @@ class SubTaskRuntimeDto:
 
     @property
     def pod_start_time(self):
-        """Gets the pod_start_time of this SubTaskRuntimeDto.
+        r"""Gets the pod_start_time of this SubTaskRuntimeDto.
 
         task的pod启动时间
 
@@ -264,7 +264,7 @@ class SubTaskRuntimeDto:
 
     @pod_start_time.setter
     def pod_start_time(self, pod_start_time):
-        """Sets the pod_start_time of this SubTaskRuntimeDto.
+        r"""Sets the pod_start_time of this SubTaskRuntimeDto.
 
         task的pod启动时间
 
@@ -275,7 +275,7 @@ class SubTaskRuntimeDto:
 
     @property
     def job_failed_times(self):
-        """Gets the job_failed_times of this SubTaskRuntimeDto.
+        r"""Gets the job_failed_times of this SubTaskRuntimeDto.
 
         task的cce job失败次数
 
@@ -286,7 +286,7 @@ class SubTaskRuntimeDto:
 
     @job_failed_times.setter
     def job_failed_times(self, job_failed_times):
-        """Sets the job_failed_times of this SubTaskRuntimeDto.
+        r"""Sets the job_failed_times of this SubTaskRuntimeDto.
 
         task的cce job失败次数
 

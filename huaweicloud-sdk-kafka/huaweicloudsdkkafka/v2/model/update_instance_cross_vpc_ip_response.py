@@ -28,7 +28,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     }
 
     def __init__(self, success=None, results=None):
-        """UpdateInstanceCrossVpcIpResponse
+        r"""UpdateInstanceCrossVpcIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this UpdateInstanceCrossVpcIpResponse.
+        r"""Gets the success of this UpdateInstanceCrossVpcIpResponse.
 
         修改跨VPC访问结果。
 
@@ -62,7 +62,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UpdateInstanceCrossVpcIpResponse.
+        r"""Sets the success of this UpdateInstanceCrossVpcIpResponse.
 
         修改跨VPC访问结果。
 
@@ -73,7 +73,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this UpdateInstanceCrossVpcIpResponse.
+        r"""Gets the results of this UpdateInstanceCrossVpcIpResponse.
 
         修改broker跨VPC访问的结果列表。
 
@@ -84,7 +84,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this UpdateInstanceCrossVpcIpResponse.
+        r"""Sets the results of this UpdateInstanceCrossVpcIpResponse.
 
         修改broker跨VPC访问的结果列表。
 

@@ -28,7 +28,7 @@ class AddVpnUsersToGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, header_response_token=None):
-        """AddVpnUsersToGroupResponse
+        r"""AddVpnUsersToGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddVpnUsersToGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddVpnUsersToGroupResponse.
+        r"""Gets the request_id of this AddVpnUsersToGroupResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class AddVpnUsersToGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddVpnUsersToGroupResponse.
+        r"""Sets the request_id of this AddVpnUsersToGroupResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class AddVpnUsersToGroupResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this AddVpnUsersToGroupResponse.
+        r"""Gets the header_response_token of this AddVpnUsersToGroupResponse.
 
         :return: The header_response_token of this AddVpnUsersToGroupResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class AddVpnUsersToGroupResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this AddVpnUsersToGroupResponse.
+        r"""Sets the header_response_token of this AddVpnUsersToGroupResponse.
 
         :param header_response_token: The header_response_token of this AddVpnUsersToGroupResponse.
         :type header_response_token: str

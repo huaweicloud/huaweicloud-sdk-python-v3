@@ -23,7 +23,7 @@ class GroupName:
     }
 
     def __init__(self):
-        """GroupName
+        r"""GroupName
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class DeleteSecretForScheduleRequest:
     }
 
     def __init__(self, secret_name=None, body=None):
-        """DeleteSecretForScheduleRequest
+        r"""DeleteSecretForScheduleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSecretForScheduleRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this DeleteSecretForScheduleRequest.
+        r"""Gets the secret_name of this DeleteSecretForScheduleRequest.
 
         凭据名称。
 
@@ -60,7 +60,7 @@ class DeleteSecretForScheduleRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this DeleteSecretForScheduleRequest.
+        r"""Sets the secret_name of this DeleteSecretForScheduleRequest.
 
         凭据名称。
 
@@ -71,7 +71,7 @@ class DeleteSecretForScheduleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSecretForScheduleRequest.
+        r"""Gets the body of this DeleteSecretForScheduleRequest.
 
         :return: The body of this DeleteSecretForScheduleRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleRequestBody`
@@ -80,7 +80,7 @@ class DeleteSecretForScheduleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSecretForScheduleRequest.
+        r"""Sets the body of this DeleteSecretForScheduleRequest.
 
         :param body: The body of this DeleteSecretForScheduleRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleRequestBody`

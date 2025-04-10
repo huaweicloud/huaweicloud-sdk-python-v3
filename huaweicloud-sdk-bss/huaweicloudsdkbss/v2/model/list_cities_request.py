@@ -31,7 +31,7 @@ class ListCitiesRequest:
     }
 
     def __init__(self, x_language=None, province_code=None, offset=None, limit=None):
-        """ListCitiesRequest
+        r"""ListCitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListCitiesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCitiesRequest.
+        r"""Gets the x_language of this ListCitiesRequest.
 
         语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
@@ -74,7 +74,7 @@ class ListCitiesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCitiesRequest.
+        r"""Sets the x_language of this ListCitiesRequest.
 
         语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
@@ -85,7 +85,7 @@ class ListCitiesRequest:
 
     @property
     def province_code(self):
-        """Gets the province_code of this ListCitiesRequest.
+        r"""Gets the province_code of this ListCitiesRequest.
 
         省份编码。
 
@@ -96,7 +96,7 @@ class ListCitiesRequest:
 
     @province_code.setter
     def province_code(self, province_code):
-        """Sets the province_code of this ListCitiesRequest.
+        r"""Sets the province_code of this ListCitiesRequest.
 
         省份编码。
 
@@ -107,7 +107,7 @@ class ListCitiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCitiesRequest.
+        r"""Gets the offset of this ListCitiesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -118,7 +118,7 @@ class ListCitiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCitiesRequest.
+        r"""Sets the offset of this ListCitiesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -129,7 +129,7 @@ class ListCitiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCitiesRequest.
+        r"""Gets the limit of this ListCitiesRequest.
 
         每次查询的数量，最大1000。
 
@@ -140,7 +140,7 @@ class ListCitiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCitiesRequest.
+        r"""Sets the limit of this ListCitiesRequest.
 
         每次查询的数量，最大1000。
 

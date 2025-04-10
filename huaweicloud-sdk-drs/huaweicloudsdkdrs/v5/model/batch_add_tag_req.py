@@ -25,7 +25,7 @@ class BatchAddTagReq:
     }
 
     def __init__(self, tags=None):
-        """BatchAddTagReq
+        r"""BatchAddTagReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAddTagReq:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchAddTagReq.
+        r"""Gets the tags of this BatchAddTagReq.
 
         标签列表。
 
@@ -53,7 +53,7 @@ class BatchAddTagReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchAddTagReq.
+        r"""Sets the tags of this BatchAddTagReq.
 
         标签列表。
 

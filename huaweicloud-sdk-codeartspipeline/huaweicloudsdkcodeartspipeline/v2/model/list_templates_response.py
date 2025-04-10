@@ -32,7 +32,7 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, page_number=None, page_size=None, content=None):
-        """ListTemplatesResponse
+        r"""ListTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTemplatesResponse.
+        r"""Gets the total of this ListTemplatesResponse.
 
         总数
 
@@ -76,7 +76,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTemplatesResponse.
+        r"""Sets the total of this ListTemplatesResponse.
 
         总数
 
@@ -87,7 +87,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def page_number(self):
-        """Gets the page_number of this ListTemplatesResponse.
+        r"""Gets the page_number of this ListTemplatesResponse.
 
         页码数
 
@@ -98,7 +98,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ListTemplatesResponse.
+        r"""Sets the page_number of this ListTemplatesResponse.
 
         页码数
 
@@ -109,7 +109,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTemplatesResponse.
+        r"""Gets the page_size of this ListTemplatesResponse.
 
         每页显示数
 
@@ -120,7 +120,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTemplatesResponse.
+        r"""Sets the page_size of this ListTemplatesResponse.
 
         每页显示数
 
@@ -131,7 +131,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ListTemplatesResponse.
+        r"""Gets the content of this ListTemplatesResponse.
 
         模板数据,list类型数据
 
@@ -142,7 +142,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ListTemplatesResponse.
+        r"""Sets the content of this ListTemplatesResponse.
 
         模板数据,list类型数据
 

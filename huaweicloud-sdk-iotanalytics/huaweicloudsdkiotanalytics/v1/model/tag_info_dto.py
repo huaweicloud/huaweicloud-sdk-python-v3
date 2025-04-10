@@ -29,7 +29,7 @@ class TagInfoDto:
     }
 
     def __init__(self, operator_id=None, data_store_id=None, tag=None):
-        """TagInfoDto
+        r"""TagInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TagInfoDto:
 
     @property
     def operator_id(self):
-        """Gets the operator_id of this TagInfoDto.
+        r"""Gets the operator_id of this TagInfoDto.
 
         算子Id
 
@@ -68,7 +68,7 @@ class TagInfoDto:
 
     @operator_id.setter
     def operator_id(self, operator_id):
-        """Sets the operator_id of this TagInfoDto.
+        r"""Sets the operator_id of this TagInfoDto.
 
         算子Id
 
@@ -79,7 +79,7 @@ class TagInfoDto:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this TagInfoDto.
+        r"""Gets the data_store_id of this TagInfoDto.
 
         存储ID
 
@@ -90,7 +90,7 @@ class TagInfoDto:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this TagInfoDto.
+        r"""Sets the data_store_id of this TagInfoDto.
 
         存储ID
 
@@ -101,7 +101,7 @@ class TagInfoDto:
 
     @property
     def tag(self):
-        """Gets the tag of this TagInfoDto.
+        r"""Gets the tag of this TagInfoDto.
 
         标签信息
 
@@ -112,7 +112,7 @@ class TagInfoDto:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this TagInfoDto.
+        r"""Sets the tag of this TagInfoDto.
 
         标签信息
 

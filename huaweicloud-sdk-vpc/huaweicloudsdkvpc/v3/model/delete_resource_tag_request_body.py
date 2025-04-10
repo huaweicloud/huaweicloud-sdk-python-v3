@@ -27,7 +27,7 @@ class DeleteResourceTagRequestBody:
     }
 
     def __init__(self, key=None, value=None):
-        """DeleteResourceTagRequestBody
+        r"""DeleteResourceTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteResourceTagRequestBody:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResourceTagRequestBody.
+        r"""Gets the key of this DeleteResourceTagRequestBody.
 
         功能说明：标签键 约束：同一资源的key值不能重复。
 
@@ -60,7 +60,7 @@ class DeleteResourceTagRequestBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResourceTagRequestBody.
+        r"""Sets the key of this DeleteResourceTagRequestBody.
 
         功能说明：标签键 约束：同一资源的key值不能重复。
 
@@ -71,7 +71,7 @@ class DeleteResourceTagRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this DeleteResourceTagRequestBody.
+        r"""Gets the value of this DeleteResourceTagRequestBody.
 
         功能说明：标签值
 
@@ -82,7 +82,7 @@ class DeleteResourceTagRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeleteResourceTagRequestBody.
+        r"""Sets the value of this DeleteResourceTagRequestBody.
 
         功能说明：标签值
 

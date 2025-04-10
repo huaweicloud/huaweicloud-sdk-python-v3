@@ -24,7 +24,7 @@ class DeregisterDelegatedAdministratorResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeregisterDelegatedAdministratorResponse
+        r"""DeregisterDelegatedAdministratorResponse
 
         The model defined in huaweicloud sdk
 

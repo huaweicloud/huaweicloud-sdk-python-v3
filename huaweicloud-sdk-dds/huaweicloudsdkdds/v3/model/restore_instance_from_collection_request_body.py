@@ -25,7 +25,7 @@ class RestoreInstanceFromCollectionRequestBody:
     }
 
     def __init__(self, restore_collections=None):
-        """RestoreInstanceFromCollectionRequestBody
+        r"""RestoreInstanceFromCollectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestoreInstanceFromCollectionRequestBody:
 
     @property
     def restore_collections(self):
-        """Gets the restore_collections of this RestoreInstanceFromCollectionRequestBody.
+        r"""Gets the restore_collections of this RestoreInstanceFromCollectionRequestBody.
 
         数据库信息。
 
@@ -53,7 +53,7 @@ class RestoreInstanceFromCollectionRequestBody:
 
     @restore_collections.setter
     def restore_collections(self, restore_collections):
-        """Sets the restore_collections of this RestoreInstanceFromCollectionRequestBody.
+        r"""Sets the restore_collections of this RestoreInstanceFromCollectionRequestBody.
 
         数据库信息。
 

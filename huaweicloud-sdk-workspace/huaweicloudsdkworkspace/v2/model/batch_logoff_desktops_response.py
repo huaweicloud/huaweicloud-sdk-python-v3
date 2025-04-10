@@ -24,7 +24,7 @@ class BatchLogoffDesktopsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchLogoffDesktopsResponse
+        r"""BatchLogoffDesktopsResponse
 
         The model defined in huaweicloud sdk
 

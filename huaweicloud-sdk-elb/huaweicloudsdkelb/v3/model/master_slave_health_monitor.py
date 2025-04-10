@@ -49,7 +49,7 @@ class MasterSlaveHealthMonitor:
     }
 
     def __init__(self, admin_state_up=None, delay=None, domain_name=None, expected_codes=None, http_method=None, id=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, timeout=None, type=None, url_path=None):
-        """MasterSlaveHealthMonitor
+        r"""MasterSlaveHealthMonitor
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this MasterSlaveHealthMonitor.
+        r"""Gets the admin_state_up of this MasterSlaveHealthMonitor.
 
         参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
 
@@ -125,7 +125,7 @@ class MasterSlaveHealthMonitor:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this MasterSlaveHealthMonitor.
+        r"""Sets the admin_state_up of this MasterSlaveHealthMonitor.
 
         参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
 
@@ -136,7 +136,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def delay(self):
-        """Gets the delay of this MasterSlaveHealthMonitor.
+        r"""Gets the delay of this MasterSlaveHealthMonitor.
 
         健康检查间隔。取值：1-50s。
 
@@ -147,7 +147,7 @@ class MasterSlaveHealthMonitor:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this MasterSlaveHealthMonitor.
+        r"""Sets the delay of this MasterSlaveHealthMonitor.
 
         健康检查间隔。取值：1-50s。
 
@@ -158,7 +158,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this MasterSlaveHealthMonitor.
+        r"""Gets the domain_name of this MasterSlaveHealthMonitor.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -169,7 +169,7 @@ class MasterSlaveHealthMonitor:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this MasterSlaveHealthMonitor.
+        r"""Sets the domain_name of this MasterSlaveHealthMonitor.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -180,7 +180,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def expected_codes(self):
-        """Gets the expected_codes of this MasterSlaveHealthMonitor.
+        r"""Gets the expected_codes of this MasterSlaveHealthMonitor.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
 
@@ -191,7 +191,7 @@ class MasterSlaveHealthMonitor:
 
     @expected_codes.setter
     def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this MasterSlaveHealthMonitor.
+        r"""Sets the expected_codes of this MasterSlaveHealthMonitor.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
 
@@ -202,7 +202,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def http_method(self):
-        """Gets the http_method of this MasterSlaveHealthMonitor.
+        r"""Gets the http_method of this MasterSlaveHealthMonitor.
 
         HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -213,7 +213,7 @@ class MasterSlaveHealthMonitor:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this MasterSlaveHealthMonitor.
+        r"""Sets the http_method of this MasterSlaveHealthMonitor.
 
         HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -224,7 +224,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def id(self):
-        """Gets the id of this MasterSlaveHealthMonitor.
+        r"""Gets the id of this MasterSlaveHealthMonitor.
 
         健康检查ID
 
@@ -235,7 +235,7 @@ class MasterSlaveHealthMonitor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MasterSlaveHealthMonitor.
+        r"""Sets the id of this MasterSlaveHealthMonitor.
 
         健康检查ID
 
@@ -246,7 +246,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this MasterSlaveHealthMonitor.
+        r"""Gets the max_retries of this MasterSlaveHealthMonitor.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
@@ -257,7 +257,7 @@ class MasterSlaveHealthMonitor:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this MasterSlaveHealthMonitor.
+        r"""Sets the max_retries of this MasterSlaveHealthMonitor.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
@@ -268,7 +268,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def max_retries_down(self):
-        """Gets the max_retries_down of this MasterSlaveHealthMonitor.
+        r"""Gets the max_retries_down of this MasterSlaveHealthMonitor.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
@@ -279,7 +279,7 @@ class MasterSlaveHealthMonitor:
 
     @max_retries_down.setter
     def max_retries_down(self, max_retries_down):
-        """Sets the max_retries_down of this MasterSlaveHealthMonitor.
+        r"""Sets the max_retries_down of this MasterSlaveHealthMonitor.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
@@ -290,7 +290,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def monitor_port(self):
-        """Gets the monitor_port of this MasterSlaveHealthMonitor.
+        r"""Gets the monitor_port of this MasterSlaveHealthMonitor.
 
         健康检查端口号。取值：1-65535，默认为空，表示使用后端服务器端口号。
 
@@ -301,7 +301,7 @@ class MasterSlaveHealthMonitor:
 
     @monitor_port.setter
     def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this MasterSlaveHealthMonitor.
+        r"""Sets the monitor_port of this MasterSlaveHealthMonitor.
 
         健康检查端口号。取值：1-65535，默认为空，表示使用后端服务器端口号。
 
@@ -312,7 +312,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def name(self):
-        """Gets the name of this MasterSlaveHealthMonitor.
+        r"""Gets the name of this MasterSlaveHealthMonitor.
 
         健康检查名称。
 
@@ -323,7 +323,7 @@ class MasterSlaveHealthMonitor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MasterSlaveHealthMonitor.
+        r"""Sets the name of this MasterSlaveHealthMonitor.
 
         健康检查名称。
 
@@ -334,7 +334,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def timeout(self):
-        """Gets the timeout of this MasterSlaveHealthMonitor.
+        r"""Gets the timeout of this MasterSlaveHealthMonitor.
 
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
@@ -345,7 +345,7 @@ class MasterSlaveHealthMonitor:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this MasterSlaveHealthMonitor.
+        r"""Sets the timeout of this MasterSlaveHealthMonitor.
 
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
@@ -356,7 +356,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def type(self):
-        """Gets the type of this MasterSlaveHealthMonitor.
+        r"""Gets the type of this MasterSlaveHealthMonitor.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -367,7 +367,7 @@ class MasterSlaveHealthMonitor:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MasterSlaveHealthMonitor.
+        r"""Sets the type of this MasterSlaveHealthMonitor.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -378,7 +378,7 @@ class MasterSlaveHealthMonitor:
 
     @property
     def url_path(self):
-        """Gets the url_path of this MasterSlaveHealthMonitor.
+        r"""Gets the url_path of this MasterSlaveHealthMonitor.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -389,7 +389,7 @@ class MasterSlaveHealthMonitor:
 
     @url_path.setter
     def url_path(self, url_path):
-        """Sets the url_path of this MasterSlaveHealthMonitor.
+        r"""Sets the url_path of this MasterSlaveHealthMonitor.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 

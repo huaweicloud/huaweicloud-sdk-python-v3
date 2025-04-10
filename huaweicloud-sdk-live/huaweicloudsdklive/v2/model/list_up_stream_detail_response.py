@@ -34,7 +34,7 @@ class ListUpStreamDetailResponse(SdkResponse):
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, data=None, x_request_id=None):
-        """ListUpStreamDetailResponse
+        r"""ListUpStreamDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListUpStreamDetailResponse.
+        r"""Gets the publish_domain of this ListUpStreamDetailResponse.
 
         推流域名
 
@@ -83,7 +83,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListUpStreamDetailResponse.
+        r"""Sets the publish_domain of this ListUpStreamDetailResponse.
 
         推流域名
 
@@ -94,7 +94,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @property
     def app(self):
-        """Gets the app of this ListUpStreamDetailResponse.
+        r"""Gets the app of this ListUpStreamDetailResponse.
 
         应用名
 
@@ -105,7 +105,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListUpStreamDetailResponse.
+        r"""Sets the app of this ListUpStreamDetailResponse.
 
         应用名
 
@@ -116,7 +116,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @property
     def stream(self):
-        """Gets the stream of this ListUpStreamDetailResponse.
+        r"""Gets the stream of this ListUpStreamDetailResponse.
 
         流名
 
@@ -127,7 +127,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListUpStreamDetailResponse.
+        r"""Sets the stream of this ListUpStreamDetailResponse.
 
         流名
 
@@ -138,7 +138,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListUpStreamDetailResponse.
+        r"""Gets the data of this ListUpStreamDetailResponse.
 
         推流质量数据
 
@@ -149,7 +149,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListUpStreamDetailResponse.
+        r"""Sets the data of this ListUpStreamDetailResponse.
 
         推流质量数据
 
@@ -160,7 +160,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListUpStreamDetailResponse.
+        r"""Gets the x_request_id of this ListUpStreamDetailResponse.
 
         :return: The x_request_id of this ListUpStreamDetailResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListUpStreamDetailResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListUpStreamDetailResponse.
+        r"""Sets the x_request_id of this ListUpStreamDetailResponse.
 
         :param x_request_id: The x_request_id of this ListUpStreamDetailResponse.
         :type x_request_id: str

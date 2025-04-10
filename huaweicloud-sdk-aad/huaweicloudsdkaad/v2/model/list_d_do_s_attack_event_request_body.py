@@ -39,7 +39,7 @@ class ListDDoSAttackEventRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None, offset=None, limit=None, ip=None, attack_flow_low=None, attack_flow_up=None, attack_status=None):
-        """ListDDoSAttackEventRequestBody
+        r"""ListDDoSAttackEventRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDDoSAttackEventRequestBody.
+        r"""Gets the start_time of this ListDDoSAttackEventRequestBody.
 
         开始时间（毫秒时间戳）
 
@@ -98,7 +98,7 @@ class ListDDoSAttackEventRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDDoSAttackEventRequestBody.
+        r"""Sets the start_time of this ListDDoSAttackEventRequestBody.
 
         开始时间（毫秒时间戳）
 
@@ -109,7 +109,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDDoSAttackEventRequestBody.
+        r"""Gets the end_time of this ListDDoSAttackEventRequestBody.
 
         结束时间（毫秒时间戳）
 
@@ -120,7 +120,7 @@ class ListDDoSAttackEventRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDDoSAttackEventRequestBody.
+        r"""Sets the end_time of this ListDDoSAttackEventRequestBody.
 
         结束时间（毫秒时间戳）
 
@@ -131,7 +131,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDDoSAttackEventRequestBody.
+        r"""Gets the offset of this ListDDoSAttackEventRequestBody.
 
         偏移量
 
@@ -142,7 +142,7 @@ class ListDDoSAttackEventRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDDoSAttackEventRequestBody.
+        r"""Sets the offset of this ListDDoSAttackEventRequestBody.
 
         偏移量
 
@@ -153,7 +153,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDDoSAttackEventRequestBody.
+        r"""Gets the limit of this ListDDoSAttackEventRequestBody.
 
         限制条数，范围1-100
 
@@ -164,7 +164,7 @@ class ListDDoSAttackEventRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDDoSAttackEventRequestBody.
+        r"""Sets the limit of this ListDDoSAttackEventRequestBody.
 
         限制条数，范围1-100
 
@@ -175,7 +175,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def ip(self):
-        """Gets the ip of this ListDDoSAttackEventRequestBody.
+        r"""Gets the ip of this ListDDoSAttackEventRequestBody.
 
         高防ip
 
@@ -186,7 +186,7 @@ class ListDDoSAttackEventRequestBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListDDoSAttackEventRequestBody.
+        r"""Sets the ip of this ListDDoSAttackEventRequestBody.
 
         高防ip
 
@@ -197,7 +197,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def attack_flow_low(self):
-        """Gets the attack_flow_low of this ListDDoSAttackEventRequestBody.
+        r"""Gets the attack_flow_low of this ListDDoSAttackEventRequestBody.
 
         攻击流量最小值
 
@@ -208,7 +208,7 @@ class ListDDoSAttackEventRequestBody:
 
     @attack_flow_low.setter
     def attack_flow_low(self, attack_flow_low):
-        """Sets the attack_flow_low of this ListDDoSAttackEventRequestBody.
+        r"""Sets the attack_flow_low of this ListDDoSAttackEventRequestBody.
 
         攻击流量最小值
 
@@ -219,7 +219,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def attack_flow_up(self):
-        """Gets the attack_flow_up of this ListDDoSAttackEventRequestBody.
+        r"""Gets the attack_flow_up of this ListDDoSAttackEventRequestBody.
 
         攻击流量最大值
 
@@ -230,7 +230,7 @@ class ListDDoSAttackEventRequestBody:
 
     @attack_flow_up.setter
     def attack_flow_up(self, attack_flow_up):
-        """Sets the attack_flow_up of this ListDDoSAttackEventRequestBody.
+        r"""Sets the attack_flow_up of this ListDDoSAttackEventRequestBody.
 
         攻击流量最大值
 
@@ -241,7 +241,7 @@ class ListDDoSAttackEventRequestBody:
 
     @property
     def attack_status(self):
-        """Gets the attack_status of this ListDDoSAttackEventRequestBody.
+        r"""Gets the attack_status of this ListDDoSAttackEventRequestBody.
 
         攻击状态：attack-攻击; normal-结束攻击
 
@@ -252,7 +252,7 @@ class ListDDoSAttackEventRequestBody:
 
     @attack_status.setter
     def attack_status(self, attack_status):
-        """Sets the attack_status of this ListDDoSAttackEventRequestBody.
+        r"""Sets the attack_status of this ListDDoSAttackEventRequestBody.
 
         攻击状态：attack-攻击; normal-结束攻击
 

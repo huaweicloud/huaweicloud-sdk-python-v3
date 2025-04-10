@@ -27,7 +27,7 @@ class TaskV2RequestBody:
     }
 
     def __init__(self, template_id=None, operation_list=None):
-        """TaskV2RequestBody
+        r"""TaskV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskV2RequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TaskV2RequestBody.
+        r"""Gets the template_id of this TaskV2RequestBody.
 
         模板id
 
@@ -61,7 +61,7 @@ class TaskV2RequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TaskV2RequestBody.
+        r"""Sets the template_id of this TaskV2RequestBody.
 
         模板id
 
@@ -72,7 +72,7 @@ class TaskV2RequestBody:
 
     @property
     def operation_list(self):
-        """Gets the operation_list of this TaskV2RequestBody.
+        r"""Gets the operation_list of this TaskV2RequestBody.
 
         部署编排列表信息
 
@@ -83,7 +83,7 @@ class TaskV2RequestBody:
 
     @operation_list.setter
     def operation_list(self, operation_list):
-        """Sets the operation_list of this TaskV2RequestBody.
+        r"""Sets the operation_list of this TaskV2RequestBody.
 
         部署编排列表信息
 

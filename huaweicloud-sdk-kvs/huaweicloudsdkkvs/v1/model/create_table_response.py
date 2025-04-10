@@ -42,7 +42,7 @@ class CreateTableResponse(SdkResponse):
     }
 
     def __init__(self, table_name=None, bill_mode=None, provisioned_throughput=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, pre_split_key_options=None, ttl_specification=None, sse_specification=None):
-        """CreateTableResponse
+        r"""CreateTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this CreateTableResponse.
+        r"""Gets the table_name of this CreateTableResponse.
 
         表名，仓内唯一。
 
@@ -111,7 +111,7 @@ class CreateTableResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CreateTableResponse.
+        r"""Sets the table_name of this CreateTableResponse.
 
         表名，仓内唯一。
 
@@ -122,7 +122,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def bill_mode(self):
-        """Gets the bill_mode of this CreateTableResponse.
+        r"""Gets the bill_mode of this CreateTableResponse.
 
         计费模式，可为\"provisioned\"或\"on_demand\"
 
@@ -133,7 +133,7 @@ class CreateTableResponse(SdkResponse):
 
     @bill_mode.setter
     def bill_mode(self, bill_mode):
-        """Sets the bill_mode of this CreateTableResponse.
+        r"""Sets the bill_mode of this CreateTableResponse.
 
         计费模式，可为\"provisioned\"或\"on_demand\"
 
@@ -144,7 +144,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def provisioned_throughput(self):
-        """Gets the provisioned_throughput of this CreateTableResponse.
+        r"""Gets the provisioned_throughput of this CreateTableResponse.
 
         :return: The provisioned_throughput of this CreateTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.ProvisionedThroughput`
@@ -153,7 +153,7 @@ class CreateTableResponse(SdkResponse):
 
     @provisioned_throughput.setter
     def provisioned_throughput(self, provisioned_throughput):
-        """Sets the provisioned_throughput of this CreateTableResponse.
+        r"""Sets the provisioned_throughput of this CreateTableResponse.
 
         :param provisioned_throughput: The provisioned_throughput of this CreateTableResponse.
         :type provisioned_throughput: :class:`huaweicloudsdkkvs.v1.ProvisionedThroughput`
@@ -162,7 +162,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def primary_key_schema(self):
-        """Gets the primary_key_schema of this CreateTableResponse.
+        r"""Gets the primary_key_schema of this CreateTableResponse.
 
         :return: The primary_key_schema of this CreateTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.PrimaryKeySchema`
@@ -171,7 +171,7 @@ class CreateTableResponse(SdkResponse):
 
     @primary_key_schema.setter
     def primary_key_schema(self, primary_key_schema):
-        """Sets the primary_key_schema of this CreateTableResponse.
+        r"""Sets the primary_key_schema of this CreateTableResponse.
 
         :param primary_key_schema: The primary_key_schema of this CreateTableResponse.
         :type primary_key_schema: :class:`huaweicloudsdkkvs.v1.PrimaryKeySchema`
@@ -180,7 +180,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def local_secondary_index_schema(self):
-        """Gets the local_secondary_index_schema of this CreateTableResponse.
+        r"""Gets the local_secondary_index_schema of this CreateTableResponse.
 
         本地二级索引模板，可以多个。
 
@@ -191,7 +191,7 @@ class CreateTableResponse(SdkResponse):
 
     @local_secondary_index_schema.setter
     def local_secondary_index_schema(self, local_secondary_index_schema):
-        """Sets the local_secondary_index_schema of this CreateTableResponse.
+        r"""Sets the local_secondary_index_schema of this CreateTableResponse.
 
         本地二级索引模板，可以多个。
 
@@ -202,7 +202,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def global_secondary_index_schema(self):
-        """Gets the global_secondary_index_schema of this CreateTableResponse.
+        r"""Gets the global_secondary_index_schema of this CreateTableResponse.
 
         全局二级索引模板。
 
@@ -213,7 +213,7 @@ class CreateTableResponse(SdkResponse):
 
     @global_secondary_index_schema.setter
     def global_secondary_index_schema(self, global_secondary_index_schema):
-        """Sets the global_secondary_index_schema of this CreateTableResponse.
+        r"""Sets the global_secondary_index_schema of this CreateTableResponse.
 
         全局二级索引模板。
 
@@ -224,7 +224,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def pre_split_key_options(self):
-        """Gets the pre_split_key_options of this CreateTableResponse.
+        r"""Gets the pre_split_key_options of this CreateTableResponse.
 
         :return: The pre_split_key_options of this CreateTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.PreSplitKeyOptions`
@@ -233,7 +233,7 @@ class CreateTableResponse(SdkResponse):
 
     @pre_split_key_options.setter
     def pre_split_key_options(self, pre_split_key_options):
-        """Sets the pre_split_key_options of this CreateTableResponse.
+        r"""Sets the pre_split_key_options of this CreateTableResponse.
 
         :param pre_split_key_options: The pre_split_key_options of this CreateTableResponse.
         :type pre_split_key_options: :class:`huaweicloudsdkkvs.v1.PreSplitKeyOptions`
@@ -242,7 +242,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def ttl_specification(self):
-        """Gets the ttl_specification of this CreateTableResponse.
+        r"""Gets the ttl_specification of this CreateTableResponse.
 
         :return: The ttl_specification of this CreateTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
@@ -251,7 +251,7 @@ class CreateTableResponse(SdkResponse):
 
     @ttl_specification.setter
     def ttl_specification(self, ttl_specification):
-        """Sets the ttl_specification of this CreateTableResponse.
+        r"""Sets the ttl_specification of this CreateTableResponse.
 
         :param ttl_specification: The ttl_specification of this CreateTableResponse.
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
@@ -260,7 +260,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def sse_specification(self):
-        """Gets the sse_specification of this CreateTableResponse.
+        r"""Gets the sse_specification of this CreateTableResponse.
 
         :return: The sse_specification of this CreateTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.SseSpecification`
@@ -269,7 +269,7 @@ class CreateTableResponse(SdkResponse):
 
     @sse_specification.setter
     def sse_specification(self, sse_specification):
-        """Sets the sse_specification of this CreateTableResponse.
+        r"""Sets the sse_specification of this CreateTableResponse.
 
         :param sse_specification: The sse_specification of this CreateTableResponse.
         :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`

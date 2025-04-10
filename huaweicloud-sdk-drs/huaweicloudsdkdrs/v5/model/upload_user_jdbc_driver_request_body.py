@@ -25,7 +25,7 @@ class UploadUserJdbcDriverRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadUserJdbcDriverRequestBody
+        r"""UploadUserJdbcDriverRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadUserJdbcDriverRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadUserJdbcDriverRequestBody.
+        r"""Gets the file of this UploadUserJdbcDriverRequestBody.
 
         驱动文件，驱动文件名称长度5-64，以jar结尾，文件名相同会替换远程驱动文件。
 
@@ -53,7 +53,7 @@ class UploadUserJdbcDriverRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadUserJdbcDriverRequestBody.
+        r"""Sets the file of this UploadUserJdbcDriverRequestBody.
 
         驱动文件，驱动文件名称长度5-64，以jar结尾，文件名相同会替换远程驱动文件。
 

@@ -33,7 +33,7 @@ class SealRequestBody:
     }
 
     def __init__(self, data=None, url=None, return_seal_image=None, return_erased_seal_image=None, pdf_page_number=None):
-        """SealRequestBody
+        r"""SealRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SealRequestBody:
 
     @property
     def data(self):
-        """Gets the data of this SealRequestBody.
+        r"""Gets the data of this SealRequestBody.
 
         该参数与url二选一。 图片的Base64编码，要求Base64编码后大小不超过10MB。 图片最短边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。 图片Base64编码示例如/9j/4AAQSkZJRgABAg...，带有多余前缀会产生The image format is not supported报错。 
 
@@ -82,7 +82,7 @@ class SealRequestBody:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SealRequestBody.
+        r"""Sets the data of this SealRequestBody.
 
         该参数与url二选一。 图片的Base64编码，要求Base64编码后大小不超过10MB。 图片最短边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。 图片Base64编码示例如/9j/4AAQSkZJRgABAg...，带有多余前缀会产生The image format is not supported报错。 
 
@@ -93,7 +93,7 @@ class SealRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this SealRequestBody.
+        r"""Gets the url of this SealRequestBody.
 
         与data二选一  要求Base64编码后大小不超过10MB。 图片最短边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -104,7 +104,7 @@ class SealRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SealRequestBody.
+        r"""Sets the url of this SealRequestBody.
 
         与data二选一  要求Base64编码后大小不超过10MB。 图片最短边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、GIF、TIFF、WEBP、PCX、ICO、PSD、PDF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -115,7 +115,7 @@ class SealRequestBody:
 
     @property
     def return_seal_image(self):
-        """Gets the return_seal_image of this SealRequestBody.
+        r"""Gets the return_seal_image of this SealRequestBody.
 
         是否返回提取的印章base64编码图片，可选值如下所示： - true：返回提取的印章图片base64编码 - false：不返回提取的印章图片base64编码  如果无该参数，系统默认不返回印章擦除后的图片。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -126,7 +126,7 @@ class SealRequestBody:
 
     @return_seal_image.setter
     def return_seal_image(self, return_seal_image):
-        """Sets the return_seal_image of this SealRequestBody.
+        r"""Sets the return_seal_image of this SealRequestBody.
 
         是否返回提取的印章base64编码图片，可选值如下所示： - true：返回提取的印章图片base64编码 - false：不返回提取的印章图片base64编码  如果无该参数，系统默认不返回印章擦除后的图片。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -137,7 +137,7 @@ class SealRequestBody:
 
     @property
     def return_erased_seal_image(self):
-        """Gets the return_erased_seal_image of this SealRequestBody.
+        r"""Gets the return_erased_seal_image of this SealRequestBody.
 
         是否返回印章擦除后的base64编码图片，可选值包括： - true：返回印章擦除后的图片base64编码 - false：不返回印章擦除后的图片base64编码  如果无该参数，系统默认不返回印章擦除后的图片。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -148,7 +148,7 @@ class SealRequestBody:
 
     @return_erased_seal_image.setter
     def return_erased_seal_image(self, return_erased_seal_image):
-        """Sets the return_erased_seal_image of this SealRequestBody.
+        r"""Sets the return_erased_seal_image of this SealRequestBody.
 
         是否返回印章擦除后的base64编码图片，可选值包括： - true：返回印章擦除后的图片base64编码 - false：不返回印章擦除后的图片base64编码  如果无该参数，系统默认不返回印章擦除后的图片。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -159,7 +159,7 @@ class SealRequestBody:
 
     @property
     def pdf_page_number(self):
-        """Gets the pdf_page_number of this SealRequestBody.
+        r"""Gets the pdf_page_number of this SealRequestBody.
 
         指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
 
@@ -170,7 +170,7 @@ class SealRequestBody:
 
     @pdf_page_number.setter
     def pdf_page_number(self, pdf_page_number):
-        """Sets the pdf_page_number of this SealRequestBody.
+        r"""Sets the pdf_page_number of this SealRequestBody.
 
         指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
 

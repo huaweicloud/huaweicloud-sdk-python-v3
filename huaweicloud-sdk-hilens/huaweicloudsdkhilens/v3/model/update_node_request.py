@@ -27,7 +27,7 @@ class UpdateNodeRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """UpdateNodeRequest
+        r"""UpdateNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateNodeRequest.
+        r"""Gets the node_id of this UpdateNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -60,7 +60,7 @@ class UpdateNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateNodeRequest.
+        r"""Sets the node_id of this UpdateNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -71,7 +71,7 @@ class UpdateNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNodeRequest.
+        r"""Gets the body of this UpdateNodeRequest.
 
         :return: The body of this UpdateNodeRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeRequestBody`
@@ -80,7 +80,7 @@ class UpdateNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNodeRequest.
+        r"""Sets the body of this UpdateNodeRequest.
 
         :param body: The body of this UpdateNodeRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.UpdateNodeRequestBody`

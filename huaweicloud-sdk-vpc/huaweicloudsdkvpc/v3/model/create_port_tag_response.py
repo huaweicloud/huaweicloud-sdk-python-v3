@@ -24,7 +24,7 @@ class CreatePortTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreatePortTagResponse
+        r"""CreatePortTagResponse
 
         The model defined in huaweicloud sdk
 

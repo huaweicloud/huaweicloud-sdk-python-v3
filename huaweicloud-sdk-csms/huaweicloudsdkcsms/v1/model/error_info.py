@@ -27,7 +27,7 @@ class ErrorInfo:
     }
 
     def __init__(self, name=None, error_msg=None):
-        """ErrorInfo
+        r"""ErrorInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ErrorInfo:
 
     @property
     def name(self):
-        """Gets the name of this ErrorInfo.
+        r"""Gets the name of this ErrorInfo.
 
         名称
 
@@ -59,7 +59,7 @@ class ErrorInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ErrorInfo.
+        r"""Sets the name of this ErrorInfo.
 
         名称
 
@@ -70,7 +70,7 @@ class ErrorInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ErrorInfo.
+        r"""Gets the error_msg of this ErrorInfo.
 
         失败原因
 
@@ -81,7 +81,7 @@ class ErrorInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorInfo.
+        r"""Sets the error_msg of this ErrorInfo.
 
         失败原因
 

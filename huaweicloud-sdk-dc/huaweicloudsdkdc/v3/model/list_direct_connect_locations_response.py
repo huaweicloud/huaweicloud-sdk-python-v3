@@ -30,7 +30,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
     }
 
     def __init__(self, direct_connect_locations=None, page_info=None, request_id=None):
-        """ListDirectConnectLocationsResponse
+        r"""ListDirectConnectLocationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
 
     @property
     def direct_connect_locations(self):
-        """Gets the direct_connect_locations of this ListDirectConnectLocationsResponse.
+        r"""Gets the direct_connect_locations of this ListDirectConnectLocationsResponse.
 
         专线接入点列表
 
@@ -69,7 +69,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
 
     @direct_connect_locations.setter
     def direct_connect_locations(self, direct_connect_locations):
-        """Sets the direct_connect_locations of this ListDirectConnectLocationsResponse.
+        r"""Sets the direct_connect_locations of this ListDirectConnectLocationsResponse.
 
         专线接入点列表
 
@@ -80,7 +80,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListDirectConnectLocationsResponse.
+        r"""Gets the page_info of this ListDirectConnectLocationsResponse.
 
         :return: The page_info of this ListDirectConnectLocationsResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListDirectConnectLocationsResponse.
+        r"""Sets the page_info of this ListDirectConnectLocationsResponse.
 
         :param page_info: The page_info of this ListDirectConnectLocationsResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListDirectConnectLocationsResponse.
+        r"""Gets the request_id of this ListDirectConnectLocationsResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListDirectConnectLocationsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListDirectConnectLocationsResponse.
+        r"""Sets the request_id of this ListDirectConnectLocationsResponse.
 
         请求ID。
 

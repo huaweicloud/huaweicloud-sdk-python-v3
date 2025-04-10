@@ -25,7 +25,7 @@ class RecoveryBackupTarget:
     }
 
     def __init__(self, instance_id=None):
-        """RecoveryBackupTarget
+        r"""RecoveryBackupTarget
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RecoveryBackupTarget:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RecoveryBackupTarget.
+        r"""Gets the instance_id of this RecoveryBackupTarget.
 
         实例ID
 
@@ -53,7 +53,7 @@ class RecoveryBackupTarget:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RecoveryBackupTarget.
+        r"""Sets the instance_id of this RecoveryBackupTarget.
 
         实例ID
 

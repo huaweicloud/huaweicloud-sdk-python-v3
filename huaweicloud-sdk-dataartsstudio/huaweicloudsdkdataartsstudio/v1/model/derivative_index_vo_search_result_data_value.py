@@ -27,7 +27,7 @@ class DerivativeIndexVOSearchResultDataValue:
     }
 
     def __init__(self, records=None, total=None):
-        """DerivativeIndexVOSearchResultDataValue
+        r"""DerivativeIndexVOSearchResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DerivativeIndexVOSearchResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this DerivativeIndexVOSearchResultDataValue.
+        r"""Gets the records of this DerivativeIndexVOSearchResultDataValue.
 
         DerivativeIndexVO数组。
 
@@ -61,7 +61,7 @@ class DerivativeIndexVOSearchResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this DerivativeIndexVOSearchResultDataValue.
+        r"""Sets the records of this DerivativeIndexVOSearchResultDataValue.
 
         DerivativeIndexVO数组。
 
@@ -72,7 +72,7 @@ class DerivativeIndexVOSearchResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this DerivativeIndexVOSearchResultDataValue.
+        r"""Gets the total of this DerivativeIndexVOSearchResultDataValue.
 
         总数。
 
@@ -83,7 +83,7 @@ class DerivativeIndexVOSearchResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DerivativeIndexVOSearchResultDataValue.
+        r"""Sets the total of this DerivativeIndexVOSearchResultDataValue.
 
         总数。
 

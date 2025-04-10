@@ -39,7 +39,7 @@ class AimSendReport:
     }
 
     def __init__(self, report_time=None, tpl_id=None, tpl_name=None, submission_count=None, support_resolve_count=None, send_count=None, send_success_count=None, resolve_success_count=None):
-        """AimSendReport
+        r"""AimSendReport
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AimSendReport:
 
     @property
     def report_time(self):
-        """Gets the report_time of this AimSendReport.
+        r"""Gets the report_time of this AimSendReport.
 
         报表日期时间。
 
@@ -103,7 +103,7 @@ class AimSendReport:
 
     @report_time.setter
     def report_time(self, report_time):
-        """Sets the report_time of this AimSendReport.
+        r"""Sets the report_time of this AimSendReport.
 
         报表日期时间。
 
@@ -114,7 +114,7 @@ class AimSendReport:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AimSendReport.
+        r"""Gets the tpl_id of this AimSendReport.
 
         智能信息模板ID。
 
@@ -125,7 +125,7 @@ class AimSendReport:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AimSendReport.
+        r"""Sets the tpl_id of this AimSendReport.
 
         智能信息模板ID。
 
@@ -136,7 +136,7 @@ class AimSendReport:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this AimSendReport.
+        r"""Gets the tpl_name of this AimSendReport.
 
         智能信息模板名称。
 
@@ -147,7 +147,7 @@ class AimSendReport:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this AimSendReport.
+        r"""Sets the tpl_name of this AimSendReport.
 
         智能信息模板名称。
 
@@ -158,7 +158,7 @@ class AimSendReport:
 
     @property
     def submission_count(self):
-        """Gets the submission_count of this AimSendReport.
+        r"""Gets the submission_count of this AimSendReport.
 
         提交号码总数量。
 
@@ -169,7 +169,7 @@ class AimSendReport:
 
     @submission_count.setter
     def submission_count(self, submission_count):
-        """Sets the submission_count of this AimSendReport.
+        r"""Sets the submission_count of this AimSendReport.
 
         提交号码总数量。
 
@@ -180,7 +180,7 @@ class AimSendReport:
 
     @property
     def support_resolve_count(self):
-        """Gets the support_resolve_count of this AimSendReport.
+        r"""Gets the support_resolve_count of this AimSendReport.
 
         支持解析数量。  > 此数据不包括通过API发送的智能信息任务。 
 
@@ -191,7 +191,7 @@ class AimSendReport:
 
     @support_resolve_count.setter
     def support_resolve_count(self, support_resolve_count):
-        """Sets the support_resolve_count of this AimSendReport.
+        r"""Sets the support_resolve_count of this AimSendReport.
 
         支持解析数量。  > 此数据不包括通过API发送的智能信息任务。 
 
@@ -202,7 +202,7 @@ class AimSendReport:
 
     @property
     def send_count(self):
-        """Gets the send_count of this AimSendReport.
+        r"""Gets the send_count of this AimSendReport.
 
         发送数量。
 
@@ -213,7 +213,7 @@ class AimSendReport:
 
     @send_count.setter
     def send_count(self, send_count):
-        """Sets the send_count of this AimSendReport.
+        r"""Sets the send_count of this AimSendReport.
 
         发送数量。
 
@@ -224,7 +224,7 @@ class AimSendReport:
 
     @property
     def send_success_count(self):
-        """Gets the send_success_count of this AimSendReport.
+        r"""Gets the send_success_count of this AimSendReport.
 
         成功发送数量。
 
@@ -235,7 +235,7 @@ class AimSendReport:
 
     @send_success_count.setter
     def send_success_count(self, send_success_count):
-        """Sets the send_success_count of this AimSendReport.
+        r"""Sets the send_success_count of this AimSendReport.
 
         成功发送数量。
 
@@ -246,7 +246,7 @@ class AimSendReport:
 
     @property
     def resolve_success_count(self):
-        """Gets the resolve_success_count of this AimSendReport.
+        r"""Gets the resolve_success_count of this AimSendReport.
 
         成功解析数量。
 
@@ -257,7 +257,7 @@ class AimSendReport:
 
     @resolve_success_count.setter
     def resolve_success_count(self, resolve_success_count):
-        """Sets the resolve_success_count of this AimSendReport.
+        r"""Sets the resolve_success_count of this AimSendReport.
 
         成功解析数量。
 

@@ -65,7 +65,7 @@ class TestEndPoint:
     }
 
     def __init__(self, id=None, net_type=None, db_type=None, ip=None, db_port=None, inst_id=None, db_user=None, db_password=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, vpc_id=None, subnet_id=None, end_point_type=None, region=None, project_id=None, db_name=None, kafka_security_config=None, customized_dns=None):
-        """TestEndPoint
+        r"""TestEndPoint
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class TestEndPoint:
 
     @property
     def id(self):
-        """Gets the id of this TestEndPoint.
+        r"""Gets the id of this TestEndPoint.
 
         任务ID
 
@@ -187,7 +187,7 @@ class TestEndPoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TestEndPoint.
+        r"""Sets the id of this TestEndPoint.
 
         任务ID
 
@@ -198,7 +198,7 @@ class TestEndPoint:
 
     @property
     def net_type(self):
-        """Gets the net_type of this TestEndPoint.
+        r"""Gets the net_type of this TestEndPoint.
 
         网络类型
 
@@ -209,7 +209,7 @@ class TestEndPoint:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this TestEndPoint.
+        r"""Sets the net_type of this TestEndPoint.
 
         网络类型
 
@@ -220,7 +220,7 @@ class TestEndPoint:
 
     @property
     def db_type(self):
-        """Gets the db_type of this TestEndPoint.
+        r"""Gets the db_type of this TestEndPoint.
 
         数据库类型
 
@@ -231,7 +231,7 @@ class TestEndPoint:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this TestEndPoint.
+        r"""Sets the db_type of this TestEndPoint.
 
         数据库类型
 
@@ -242,7 +242,7 @@ class TestEndPoint:
 
     @property
     def ip(self):
-        """Gets the ip of this TestEndPoint.
+        r"""Gets the ip of this TestEndPoint.
 
         数据库IP
 
@@ -253,7 +253,7 @@ class TestEndPoint:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this TestEndPoint.
+        r"""Sets the ip of this TestEndPoint.
 
         数据库IP
 
@@ -264,7 +264,7 @@ class TestEndPoint:
 
     @property
     def db_port(self):
-        """Gets the db_port of this TestEndPoint.
+        r"""Gets the db_port of this TestEndPoint.
 
         数据库端口，Mongo、DDS必填为0。
 
@@ -275,7 +275,7 @@ class TestEndPoint:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this TestEndPoint.
+        r"""Sets the db_port of this TestEndPoint.
 
         数据库端口，Mongo、DDS必填为0。
 
@@ -286,7 +286,7 @@ class TestEndPoint:
 
     @property
     def inst_id(self):
-        """Gets the inst_id of this TestEndPoint.
+        r"""Gets the inst_id of this TestEndPoint.
 
         RDS实例id，RDS实例必填。
 
@@ -297,7 +297,7 @@ class TestEndPoint:
 
     @inst_id.setter
     def inst_id(self, inst_id):
-        """Sets the inst_id of this TestEndPoint.
+        r"""Sets the inst_id of this TestEndPoint.
 
         RDS实例id，RDS实例必填。
 
@@ -308,7 +308,7 @@ class TestEndPoint:
 
     @property
     def db_user(self):
-        """Gets the db_user of this TestEndPoint.
+        r"""Gets the db_user of this TestEndPoint.
 
         数据库帐号。
 
@@ -319,7 +319,7 @@ class TestEndPoint:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this TestEndPoint.
+        r"""Sets the db_user of this TestEndPoint.
 
         数据库帐号。
 
@@ -330,7 +330,7 @@ class TestEndPoint:
 
     @property
     def db_password(self):
-        """Gets the db_password of this TestEndPoint.
+        r"""Gets the db_password of this TestEndPoint.
 
         数据库密码。
 
@@ -341,7 +341,7 @@ class TestEndPoint:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this TestEndPoint.
+        r"""Sets the db_password of this TestEndPoint.
 
         数据库密码。
 
@@ -352,7 +352,7 @@ class TestEndPoint:
 
     @property
     def ssl_link(self):
-        """Gets the ssl_link of this TestEndPoint.
+        r"""Gets the ssl_link of this TestEndPoint.
 
         是否SSL安全连接。
 
@@ -363,7 +363,7 @@ class TestEndPoint:
 
     @ssl_link.setter
     def ssl_link(self, ssl_link):
-        """Sets the ssl_link of this TestEndPoint.
+        r"""Sets the ssl_link of this TestEndPoint.
 
         是否SSL安全连接。
 
@@ -374,7 +374,7 @@ class TestEndPoint:
 
     @property
     def ssl_cert_key(self):
-        """Gets the ssl_cert_key of this TestEndPoint.
+        r"""Gets the ssl_cert_key of this TestEndPoint.
 
         SSL证书内容，base64加密后的值，源库安全连接必选。
 
@@ -385,7 +385,7 @@ class TestEndPoint:
 
     @ssl_cert_key.setter
     def ssl_cert_key(self, ssl_cert_key):
-        """Sets the ssl_cert_key of this TestEndPoint.
+        r"""Sets the ssl_cert_key of this TestEndPoint.
 
         SSL证书内容，base64加密后的值，源库安全连接必选。
 
@@ -396,7 +396,7 @@ class TestEndPoint:
 
     @property
     def ssl_cert_name(self):
-        """Gets the ssl_cert_name of this TestEndPoint.
+        r"""Gets the ssl_cert_name of this TestEndPoint.
 
         SSL证书名字，源库安全连接必选。
 
@@ -407,7 +407,7 @@ class TestEndPoint:
 
     @ssl_cert_name.setter
     def ssl_cert_name(self, ssl_cert_name):
-        """Sets the ssl_cert_name of this TestEndPoint.
+        r"""Sets the ssl_cert_name of this TestEndPoint.
 
         SSL证书名字，源库安全连接必选。
 
@@ -418,7 +418,7 @@ class TestEndPoint:
 
     @property
     def ssl_cert_check_sum(self):
-        """Gets the ssl_cert_check_sum of this TestEndPoint.
+        r"""Gets the ssl_cert_check_sum of this TestEndPoint.
 
         SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
 
@@ -429,7 +429,7 @@ class TestEndPoint:
 
     @ssl_cert_check_sum.setter
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
-        """Sets the ssl_cert_check_sum of this TestEndPoint.
+        r"""Sets the ssl_cert_check_sum of this TestEndPoint.
 
         SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
 
@@ -440,7 +440,7 @@ class TestEndPoint:
 
     @property
     def ssl_cert_password(self):
-        """Gets the ssl_cert_password of this TestEndPoint.
+        r"""Gets the ssl_cert_password of this TestEndPoint.
 
         SSL证书密码，证书文件后缀为.p12，需要密码。
 
@@ -451,7 +451,7 @@ class TestEndPoint:
 
     @ssl_cert_password.setter
     def ssl_cert_password(self, ssl_cert_password):
-        """Sets the ssl_cert_password of this TestEndPoint.
+        r"""Sets the ssl_cert_password of this TestEndPoint.
 
         SSL证书密码，证书文件后缀为.p12，需要密码。
 
@@ -462,7 +462,7 @@ class TestEndPoint:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this TestEndPoint.
+        r"""Gets the vpc_id of this TestEndPoint.
 
         vpcid，数据库为RDS时必选。
 
@@ -473,7 +473,7 @@ class TestEndPoint:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this TestEndPoint.
+        r"""Sets the vpc_id of this TestEndPoint.
 
         vpcid，数据库为RDS时必选。
 
@@ -484,7 +484,7 @@ class TestEndPoint:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this TestEndPoint.
+        r"""Gets the subnet_id of this TestEndPoint.
 
         subnetid，数据库为RDS必选。
 
@@ -495,7 +495,7 @@ class TestEndPoint:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this TestEndPoint.
+        r"""Sets the subnet_id of this TestEndPoint.
 
         subnetid，数据库为RDS必选。
 
@@ -506,7 +506,7 @@ class TestEndPoint:
 
     @property
     def end_point_type(self):
-        """Gets the end_point_type of this TestEndPoint.
+        r"""Gets the end_point_type of this TestEndPoint.
 
         源库：so,目标库：ta
 
@@ -517,7 +517,7 @@ class TestEndPoint:
 
     @end_point_type.setter
     def end_point_type(self, end_point_type):
-        """Sets the end_point_type of this TestEndPoint.
+        r"""Sets the end_point_type of this TestEndPoint.
 
         源库：so,目标库：ta
 
@@ -528,7 +528,7 @@ class TestEndPoint:
 
     @property
     def region(self):
-        """Gets the region of this TestEndPoint.
+        r"""Gets the region of this TestEndPoint.
 
         rds实例region，数据库为RDS时必填。
 
@@ -539,7 +539,7 @@ class TestEndPoint:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestEndPoint.
+        r"""Sets the region of this TestEndPoint.
 
         rds实例region，数据库为RDS时必填。
 
@@ -550,7 +550,7 @@ class TestEndPoint:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TestEndPoint.
+        r"""Gets the project_id of this TestEndPoint.
 
         用户所处region的projectId。
 
@@ -561,7 +561,7 @@ class TestEndPoint:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TestEndPoint.
+        r"""Sets the project_id of this TestEndPoint.
 
         用户所处region的projectId。
 
@@ -572,7 +572,7 @@ class TestEndPoint:
 
     @property
     def db_name(self):
-        """Gets the db_name of this TestEndPoint.
+        r"""Gets the db_name of this TestEndPoint.
 
         数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
 
@@ -583,7 +583,7 @@ class TestEndPoint:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this TestEndPoint.
+        r"""Sets the db_name of this TestEndPoint.
 
         数据库用户名，DDS的账号认证数据库，Oracle的serviceName。
 
@@ -594,7 +594,7 @@ class TestEndPoint:
 
     @property
     def kafka_security_config(self):
-        """Gets the kafka_security_config of this TestEndPoint.
+        r"""Gets the kafka_security_config of this TestEndPoint.
 
         :return: The kafka_security_config of this TestEndPoint.
         :rtype: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
@@ -603,7 +603,7 @@ class TestEndPoint:
 
     @kafka_security_config.setter
     def kafka_security_config(self, kafka_security_config):
-        """Sets the kafka_security_config of this TestEndPoint.
+        r"""Sets the kafka_security_config of this TestEndPoint.
 
         :param kafka_security_config: The kafka_security_config of this TestEndPoint.
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
@@ -612,7 +612,7 @@ class TestEndPoint:
 
     @property
     def customized_dns(self):
-        """Gets the customized_dns of this TestEndPoint.
+        r"""Gets the customized_dns of this TestEndPoint.
 
         :return: The customized_dns of this TestEndPoint.
         :rtype: :class:`huaweicloudsdkdrs.v3.CustomizedDns`
@@ -621,7 +621,7 @@ class TestEndPoint:
 
     @customized_dns.setter
     def customized_dns(self, customized_dns):
-        """Sets the customized_dns of this TestEndPoint.
+        r"""Sets the customized_dns of this TestEndPoint.
 
         :param customized_dns: The customized_dns of this TestEndPoint.
         :type customized_dns: :class:`huaweicloudsdkdrs.v3.CustomizedDns`

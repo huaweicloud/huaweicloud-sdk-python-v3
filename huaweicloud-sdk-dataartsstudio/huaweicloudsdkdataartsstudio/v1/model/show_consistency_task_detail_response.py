@@ -58,7 +58,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, category_id=None, level=None, alarm_condition=None, alarm_notify=None, alarm_notify_type=None, alarm_notify_topic=None, schedule_type=None, schedule_period=None, schedule_interval=None, schedule_start_time=None, schedule_end_time=None, create_time=None, last_run_time=None, sub_rules=None):
-        """ShowConsistencyTaskDetailResponse
+        r"""ShowConsistencyTaskDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the id of this ShowConsistencyTaskDetailResponse.
 
         ID
 
@@ -167,7 +167,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the id of this ShowConsistencyTaskDetailResponse.
 
         ID
 
@@ -178,7 +178,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the name of this ShowConsistencyTaskDetailResponse.
 
         作业名称
 
@@ -189,7 +189,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the name of this ShowConsistencyTaskDetailResponse.
 
         作业名称
 
@@ -200,7 +200,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the description of this ShowConsistencyTaskDetailResponse.
 
         作业描述
 
@@ -211,7 +211,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the description of this ShowConsistencyTaskDetailResponse.
 
         作业描述
 
@@ -222,7 +222,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def category_id(self):
-        """Gets the category_id of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the category_id of this ShowConsistencyTaskDetailResponse.
 
         所属目录ID
 
@@ -233,7 +233,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the category_id of this ShowConsistencyTaskDetailResponse.
 
         所属目录ID
 
@@ -244,7 +244,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def level(self):
-        """Gets the level of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the level of this ShowConsistencyTaskDetailResponse.
 
         SUGGEST:提示, MINOR:一般, MAJOR:严重, FATAL:致命
 
@@ -255,7 +255,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the level of this ShowConsistencyTaskDetailResponse.
 
         SUGGEST:提示, MINOR:一般, MAJOR:严重, FATAL:致命
 
@@ -266,7 +266,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_condition(self):
-        """Gets the alarm_condition of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the alarm_condition of this ShowConsistencyTaskDetailResponse.
 
         统一告警条件
 
@@ -277,7 +277,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @alarm_condition.setter
     def alarm_condition(self, alarm_condition):
-        """Sets the alarm_condition of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the alarm_condition of this ShowConsistencyTaskDetailResponse.
 
         统一告警条件
 
@@ -288,7 +288,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the alarm_notify of this ShowConsistencyTaskDetailResponse.
 
         是否开启通知告警
 
@@ -299,7 +299,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the alarm_notify of this ShowConsistencyTaskDetailResponse.
 
         是否开启通知告警
 
@@ -310,7 +310,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_notify_type(self):
-        """Gets the alarm_notify_type of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the alarm_notify_type of this ShowConsistencyTaskDetailResponse.
 
         TRIGGER_ALARM:触发告警, RUN_SUCCESS:运行成功, TRIGGER_ALARM_AND_RUNNING_SUCCESS:触发告警和运行成功
 
@@ -321,7 +321,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @alarm_notify_type.setter
     def alarm_notify_type(self, alarm_notify_type):
-        """Sets the alarm_notify_type of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the alarm_notify_type of this ShowConsistencyTaskDetailResponse.
 
         TRIGGER_ALARM:触发告警, RUN_SUCCESS:运行成功, TRIGGER_ALARM_AND_RUNNING_SUCCESS:触发告警和运行成功
 
@@ -332,7 +332,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_notify_topic(self):
-        """Gets the alarm_notify_topic of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the alarm_notify_topic of this ShowConsistencyTaskDetailResponse.
 
         通知主题名
 
@@ -343,7 +343,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @alarm_notify_topic.setter
     def alarm_notify_topic(self, alarm_notify_topic):
-        """Sets the alarm_notify_topic of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the alarm_notify_topic of this ShowConsistencyTaskDetailResponse.
 
         通知主题名
 
@@ -354,7 +354,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the schedule_type of this ShowConsistencyTaskDetailResponse.
 
         调度类型，ONCE：单次调度，PERIODIC：周期性调度
 
@@ -365,7 +365,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the schedule_type of this ShowConsistencyTaskDetailResponse.
 
         调度类型，ONCE：单次调度，PERIODIC：周期性调度
 
@@ -376,7 +376,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_period(self):
-        """Gets the schedule_period of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the schedule_period of this ShowConsistencyTaskDetailResponse.
 
         调度周期，MINUTE:按分钟调度，HOUR:按小时调度，DAY:按天调度，WEEK:按周调度
 
@@ -387,7 +387,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @schedule_period.setter
     def schedule_period(self, schedule_period):
-        """Sets the schedule_period of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the schedule_period of this ShowConsistencyTaskDetailResponse.
 
         调度周期，MINUTE:按分钟调度，HOUR:按小时调度，DAY:按天调度，WEEK:按周调度
 
@@ -398,7 +398,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_interval(self):
-        """Gets the schedule_interval of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the schedule_interval of this ShowConsistencyTaskDetailResponse.
 
         调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
 
@@ -409,7 +409,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @schedule_interval.setter
     def schedule_interval(self, schedule_interval):
-        """Sets the schedule_interval of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the schedule_interval of this ShowConsistencyTaskDetailResponse.
 
         调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
 
@@ -420,7 +420,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_start_time(self):
-        """Gets the schedule_start_time of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the schedule_start_time of this ShowConsistencyTaskDetailResponse.
 
         调度开始时间
 
@@ -431,7 +431,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @schedule_start_time.setter
     def schedule_start_time(self, schedule_start_time):
-        """Sets the schedule_start_time of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the schedule_start_time of this ShowConsistencyTaskDetailResponse.
 
         调度开始时间
 
@@ -442,7 +442,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_end_time(self):
-        """Gets the schedule_end_time of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the schedule_end_time of this ShowConsistencyTaskDetailResponse.
 
         调度结束时间
 
@@ -453,7 +453,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @schedule_end_time.setter
     def schedule_end_time(self, schedule_end_time):
-        """Sets the schedule_end_time of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the schedule_end_time of this ShowConsistencyTaskDetailResponse.
 
         调度结束时间
 
@@ -464,7 +464,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the create_time of this ShowConsistencyTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -475,7 +475,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the create_time of this ShowConsistencyTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -486,7 +486,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def last_run_time(self):
-        """Gets the last_run_time of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the last_run_time of this ShowConsistencyTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -497,7 +497,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @last_run_time.setter
     def last_run_time(self, last_run_time):
-        """Sets the last_run_time of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the last_run_time of this ShowConsistencyTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -508,7 +508,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @property
     def sub_rules(self):
-        """Gets the sub_rules of this ShowConsistencyTaskDetailResponse.
+        r"""Gets the sub_rules of this ShowConsistencyTaskDetailResponse.
 
         子规则
 
@@ -519,7 +519,7 @@ class ShowConsistencyTaskDetailResponse(SdkResponse):
 
     @sub_rules.setter
     def sub_rules(self, sub_rules):
-        """Sets the sub_rules of this ShowConsistencyTaskDetailResponse.
+        r"""Sets the sub_rules of this ShowConsistencyTaskDetailResponse.
 
         子规则
 

@@ -27,7 +27,7 @@ class ShowPacifyWordsIntentRequest:
     }
 
     def __init__(self, x_app_user_id=None, robot_id=None):
-        """ShowPacifyWordsIntentRequest
+        r"""ShowPacifyWordsIntentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPacifyWordsIntentRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowPacifyWordsIntentRequest.
+        r"""Gets the x_app_user_id of this ShowPacifyWordsIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowPacifyWordsIntentRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowPacifyWordsIntentRequest.
+        r"""Sets the x_app_user_id of this ShowPacifyWordsIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowPacifyWordsIntentRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ShowPacifyWordsIntentRequest.
+        r"""Gets the robot_id of this ShowPacifyWordsIntentRequest.
 
         应用ID。
 
@@ -82,7 +82,7 @@ class ShowPacifyWordsIntentRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ShowPacifyWordsIntentRequest.
+        r"""Sets the robot_id of this ShowPacifyWordsIntentRequest.
 
         应用ID。
 

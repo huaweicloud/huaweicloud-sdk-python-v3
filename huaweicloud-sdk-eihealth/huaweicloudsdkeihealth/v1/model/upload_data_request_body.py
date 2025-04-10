@@ -37,7 +37,7 @@ class UploadDataRequestBody:
     }
 
     def __init__(self, file=None, target_folder=None, part_number=None, total_part=None, multipart_id=None, file_name=None, md5=None):
-        """UploadDataRequestBody
+        r"""UploadDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class UploadDataRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadDataRequestBody.
+        r"""Gets the file of this UploadDataRequestBody.
 
         文件流对象
 
@@ -95,7 +95,7 @@ class UploadDataRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadDataRequestBody.
+        r"""Sets the file of this UploadDataRequestBody.
 
         文件流对象
 
@@ -106,7 +106,7 @@ class UploadDataRequestBody:
 
     @property
     def target_folder(self):
-        """Gets the target_folder of this UploadDataRequestBody.
+        r"""Gets the target_folder of this UploadDataRequestBody.
 
         目标文件夹
 
@@ -117,7 +117,7 @@ class UploadDataRequestBody:
 
     @target_folder.setter
     def target_folder(self, target_folder):
-        """Sets the target_folder of this UploadDataRequestBody.
+        r"""Sets the target_folder of this UploadDataRequestBody.
 
         目标文件夹
 
@@ -128,7 +128,7 @@ class UploadDataRequestBody:
 
     @property
     def part_number(self):
-        """Gets the part_number of this UploadDataRequestBody.
+        r"""Gets the part_number of this UploadDataRequestBody.
 
         分段序号，表示第几个文件片段
 
@@ -139,7 +139,7 @@ class UploadDataRequestBody:
 
     @part_number.setter
     def part_number(self, part_number):
-        """Sets the part_number of this UploadDataRequestBody.
+        r"""Sets the part_number of this UploadDataRequestBody.
 
         分段序号，表示第几个文件片段
 
@@ -150,7 +150,7 @@ class UploadDataRequestBody:
 
     @property
     def total_part(self):
-        """Gets the total_part of this UploadDataRequestBody.
+        r"""Gets the total_part of this UploadDataRequestBody.
 
         分段总数，上传的文件总共分成了几个片段
 
@@ -161,7 +161,7 @@ class UploadDataRequestBody:
 
     @total_part.setter
     def total_part(self, total_part):
-        """Sets the total_part of this UploadDataRequestBody.
+        r"""Sets the total_part of this UploadDataRequestBody.
 
         分段总数，上传的文件总共分成了几个片段
 
@@ -172,7 +172,7 @@ class UploadDataRequestBody:
 
     @property
     def multipart_id(self):
-        """Gets the multipart_id of this UploadDataRequestBody.
+        r"""Gets the multipart_id of this UploadDataRequestBody.
 
         分段上传任务id，除了第一个片段外，后续的片段都需要标识出任务id
 
@@ -183,7 +183,7 @@ class UploadDataRequestBody:
 
     @multipart_id.setter
     def multipart_id(self, multipart_id):
-        """Sets the multipart_id of this UploadDataRequestBody.
+        r"""Sets the multipart_id of this UploadDataRequestBody.
 
         分段上传任务id，除了第一个片段外，后续的片段都需要标识出任务id
 
@@ -194,7 +194,7 @@ class UploadDataRequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this UploadDataRequestBody.
+        r"""Gets the file_name of this UploadDataRequestBody.
 
         文件名称
 
@@ -205,7 +205,7 @@ class UploadDataRequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this UploadDataRequestBody.
+        r"""Sets the file_name of this UploadDataRequestBody.
 
         文件名称
 
@@ -216,7 +216,7 @@ class UploadDataRequestBody:
 
     @property
     def md5(self):
-        """Gets the md5 of this UploadDataRequestBody.
+        r"""Gets the md5 of this UploadDataRequestBody.
 
         MD5
 
@@ -227,7 +227,7 @@ class UploadDataRequestBody:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this UploadDataRequestBody.
+        r"""Sets the md5 of this UploadDataRequestBody.
 
         MD5
 

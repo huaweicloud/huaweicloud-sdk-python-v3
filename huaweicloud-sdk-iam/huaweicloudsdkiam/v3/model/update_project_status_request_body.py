@@ -25,7 +25,7 @@ class UpdateProjectStatusRequestBody:
     }
 
     def __init__(self, project=None):
-        """UpdateProjectStatusRequestBody
+        r"""UpdateProjectStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateProjectStatusRequestBody:
 
     @property
     def project(self):
-        """Gets the project of this UpdateProjectStatusRequestBody.
+        r"""Gets the project of this UpdateProjectStatusRequestBody.
 
         :return: The project of this UpdateProjectStatusRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateProjectOption`
@@ -51,7 +51,7 @@ class UpdateProjectStatusRequestBody:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this UpdateProjectStatusRequestBody.
+        r"""Sets the project of this UpdateProjectStatusRequestBody.
 
         :param project: The project of this UpdateProjectStatusRequestBody.
         :type project: :class:`huaweicloudsdkiam.v3.UpdateProjectOption`

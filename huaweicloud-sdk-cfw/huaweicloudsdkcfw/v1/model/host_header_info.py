@@ -25,7 +25,7 @@ class HostHeaderInfo:
     }
 
     def __init__(self, host=None):
-        """HostHeaderInfo
+        r"""HostHeaderInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HostHeaderInfo:
 
     @property
     def host(self):
-        """Gets the host of this HostHeaderInfo.
+        r"""Gets the host of this HostHeaderInfo.
 
         主机
 
@@ -54,7 +54,7 @@ class HostHeaderInfo:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this HostHeaderInfo.
+        r"""Sets the host of this HostHeaderInfo.
 
         主机
 

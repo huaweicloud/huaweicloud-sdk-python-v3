@@ -61,7 +61,7 @@ class UpdateSqlAlarmRuleRequestBody:
     }
 
     def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
-        """UpdateSqlAlarmRuleRequestBody
+        r"""UpdateSqlAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -159,7 +159,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_alarm_rule_id(self):
-        """Gets the sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
 
         SQL告警id
 
@@ -170,7 +170,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_alarm_rule_id.setter
     def sql_alarm_rule_id(self, sql_alarm_rule_id):
-        """Sets the sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
 
         SQL告警id
 
@@ -181,7 +181,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_alarm_rule_name(self):
-        """Gets the sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
 
         SQL告警名称
 
@@ -192,7 +192,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_alarm_rule_name.setter
     def sql_alarm_rule_name(self, sql_alarm_rule_name):
-        """Sets the sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
 
         SQL告警名称
 
@@ -203,7 +203,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def alarm_rule_alias(self):
-        """Gets the alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
 
         规则名称
 
@@ -214,7 +214,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @alarm_rule_alias.setter
     def alarm_rule_alias(self, alarm_rule_alias):
-        """Sets the alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the alarm_rule_alias of this UpdateSqlAlarmRuleRequestBody.
 
         规则名称
 
@@ -225,7 +225,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def is_css_sql(self):
-        """Gets the is_css_sql of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the is_css_sql of this UpdateSqlAlarmRuleRequestBody.
 
         是否管道符sql查询
 
@@ -236,7 +236,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @is_css_sql.setter
     def is_css_sql(self, is_css_sql):
-        """Sets the is_css_sql of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the is_css_sql of this UpdateSqlAlarmRuleRequestBody.
 
         是否管道符sql查询
 
@@ -247,7 +247,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_alarm_rule_description(self):
-        """Gets the sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
 
         SQL告警信息描述
 
@@ -258,7 +258,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_alarm_rule_description.setter
     def sql_alarm_rule_description(self, sql_alarm_rule_description):
-        """Sets the sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
 
         SQL告警信息描述
 
@@ -269,7 +269,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_requests(self):
-        """Gets the sql_requests of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_requests of this UpdateSqlAlarmRuleRequestBody.
 
         SQL详细信息
 
@@ -280,7 +280,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_requests.setter
     def sql_requests(self, sql_requests):
-        """Sets the sql_requests of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_requests of this UpdateSqlAlarmRuleRequestBody.
 
         SQL详细信息
 
@@ -291,7 +291,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def frequency(self):
-        """Gets the frequency of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the frequency of this UpdateSqlAlarmRuleRequestBody.
 
         :return: The frequency of this UpdateSqlAlarmRuleRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleFrequency`
@@ -300,7 +300,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the frequency of this UpdateSqlAlarmRuleRequestBody.
 
         :param frequency: The frequency of this UpdateSqlAlarmRuleRequestBody.
         :type frequency: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleFrequency`
@@ -309,7 +309,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the condition_expression of this UpdateSqlAlarmRuleRequestBody.
 
         条件表达式
 
@@ -320,7 +320,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the condition_expression of this UpdateSqlAlarmRuleRequestBody.
 
         条件表达式
 
@@ -331,7 +331,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_alarm_level(self):
-        """Gets the sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
 
         告警级别
 
@@ -342,7 +342,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_alarm_level.setter
     def sql_alarm_level(self, sql_alarm_level):
-        """Sets the sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
 
         告警级别
 
@@ -353,7 +353,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_alarm_send(self):
-        """Gets the sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
 
         是否发送
 
@@ -364,7 +364,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_alarm_send.setter
     def sql_alarm_send(self, sql_alarm_send):
-        """Sets the sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
 
         是否发送
 
@@ -375,7 +375,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def sql_alarm_send_code(self):
-        """Gets the sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
 
         发送主题 0:不变 1:新增 2:修改 3:删除
 
@@ -386,7 +386,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @sql_alarm_send_code.setter
     def sql_alarm_send_code(self, sql_alarm_send_code):
-        """Sets the sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
 
         发送主题 0:不变 1:新增 2:修改 3:删除
 
@@ -397,7 +397,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the domain_id of this UpdateSqlAlarmRuleRequestBody.
 
         domainId
 
@@ -408,7 +408,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the domain_id of this UpdateSqlAlarmRuleRequestBody.
 
         domainId
 
@@ -419,7 +419,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def notification_save_rule(self):
-        """Gets the notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
 
         :return: The notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
@@ -428,7 +428,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @notification_save_rule.setter
     def notification_save_rule(self, notification_save_rule):
-        """Sets the notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
 
         :param notification_save_rule: The notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
         :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
@@ -437,7 +437,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def trigger_condition_count(self):
-        """Gets the trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
 
         触发条件：触发次数;默认为1
 
@@ -448,7 +448,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @trigger_condition_count.setter
     def trigger_condition_count(self, trigger_condition_count):
-        """Sets the trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the trigger_condition_count of this UpdateSqlAlarmRuleRequestBody.
 
         触发条件：触发次数;默认为1
 
@@ -459,7 +459,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def trigger_condition_frequency(self):
-        """Gets the trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
 
         触发条件：触发周期;默认为1
 
@@ -470,7 +470,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @trigger_condition_frequency.setter
     def trigger_condition_frequency(self, trigger_condition_frequency):
-        """Sets the trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the trigger_condition_frequency of this UpdateSqlAlarmRuleRequestBody.
 
         触发条件：触发周期;默认为1
 
@@ -481,7 +481,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def whether_recovery_policy(self):
-        """Gets the whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
 
         是否打开恢复通知;默认false
 
@@ -492,7 +492,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @whether_recovery_policy.setter
     def whether_recovery_policy(self, whether_recovery_policy):
-        """Sets the whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the whether_recovery_policy of this UpdateSqlAlarmRuleRequestBody.
 
         是否打开恢复通知;默认false
 
@@ -503,7 +503,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def recovery_policy(self):
-        """Gets the recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the recovery_policy of this UpdateSqlAlarmRuleRequestBody.
 
         恢复策略周期;默认为3
 
@@ -514,7 +514,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @recovery_policy.setter
     def recovery_policy(self, recovery_policy):
-        """Sets the recovery_policy of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the recovery_policy of this UpdateSqlAlarmRuleRequestBody.
 
         恢复策略周期;默认为3
 
@@ -525,7 +525,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def notification_frequency(self):
-        """Gets the notification_frequency of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the notification_frequency of this UpdateSqlAlarmRuleRequestBody.
 
         通知频率,单位(分钟)
 
@@ -536,7 +536,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @notification_frequency.setter
     def notification_frequency(self, notification_frequency):
-        """Sets the notification_frequency of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the notification_frequency of this UpdateSqlAlarmRuleRequestBody.
 
         通知频率,单位(分钟)
 
@@ -547,7 +547,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @property
     def alarm_action_rule_name(self):
-        """Gets the alarm_action_rule_name of this UpdateSqlAlarmRuleRequestBody.
+        r"""Gets the alarm_action_rule_name of this UpdateSqlAlarmRuleRequestBody.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 
@@ -558,7 +558,7 @@ class UpdateSqlAlarmRuleRequestBody:
 
     @alarm_action_rule_name.setter
     def alarm_action_rule_name(self, alarm_action_rule_name):
-        """Sets the alarm_action_rule_name of this UpdateSqlAlarmRuleRequestBody.
+        r"""Sets the alarm_action_rule_name of this UpdateSqlAlarmRuleRequestBody.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 

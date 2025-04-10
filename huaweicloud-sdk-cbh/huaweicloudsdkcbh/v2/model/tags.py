@@ -27,7 +27,7 @@ class Tags:
     }
 
     def __init__(self, key=None, values=None):
-        """Tags
+        r"""Tags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Tags:
 
     @property
     def key(self):
-        """Gets the key of this Tags.
+        r"""Gets the key of this Tags.
 
         键。  > 说明： - key不能为空，长度1~128个字符（中文也可以输入128个字符） - 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @ - _sys_开头属于系统标签，租户不能输入 - 建议正则：^((?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:=+\\\\-@]*)$
 
@@ -59,7 +59,7 @@ class Tags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tags.
+        r"""Sets the key of this Tags.
 
         键。  > 说明： - key不能为空，长度1~128个字符（中文也可以输入128个字符） - 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @ - _sys_开头属于系统标签，租户不能输入 - 建议正则：^((?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:=+\\\\-@]*)$
 
@@ -70,7 +70,7 @@ class Tags:
 
     @property
     def values(self):
-        """Gets the values of this Tags.
+        r"""Gets the values of this Tags.
 
         值列表。  > 说明： - 长度0~255个字符（中文也可以输入255个字符） - 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @ 建议正则：^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$ - 资源标签值可以为空（empty or null） - 预定义标签值不可以为空
 
@@ -81,7 +81,7 @@ class Tags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this Tags.
+        r"""Sets the values of this Tags.
 
         值列表。  > 说明： - 长度0~255个字符（中文也可以输入255个字符） - 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @ 建议正则：^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$ - 资源标签值可以为空（empty or null） - 预定义标签值不可以为空
 

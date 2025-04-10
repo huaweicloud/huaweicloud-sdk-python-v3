@@ -25,7 +25,7 @@ class CopyPlaybookInfo:
     }
 
     def __init__(self, name=None):
-        """CopyPlaybookInfo
+        r"""CopyPlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CopyPlaybookInfo:
 
     @property
     def name(self):
-        """Gets the name of this CopyPlaybookInfo.
+        r"""Gets the name of this CopyPlaybookInfo.
 
         名称
 
@@ -54,7 +54,7 @@ class CopyPlaybookInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyPlaybookInfo.
+        r"""Sets the name of this CopyPlaybookInfo.
 
         名称
 

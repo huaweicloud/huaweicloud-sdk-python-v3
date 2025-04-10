@@ -27,7 +27,7 @@ class DeleteMemberRequest:
     }
 
     def __init__(self, backup_id=None, member_id=None):
-        """DeleteMemberRequest
+        r"""DeleteMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteMemberRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteMemberRequest.
+        r"""Gets the backup_id of this DeleteMemberRequest.
 
         备份副本id
 
@@ -59,7 +59,7 @@ class DeleteMemberRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteMemberRequest.
+        r"""Sets the backup_id of this DeleteMemberRequest.
 
         备份副本id
 
@@ -70,7 +70,7 @@ class DeleteMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this DeleteMemberRequest.
+        r"""Gets the member_id of this DeleteMemberRequest.
 
         成员id
 
@@ -81,7 +81,7 @@ class DeleteMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this DeleteMemberRequest.
+        r"""Sets the member_id of this DeleteMemberRequest.
 
         成员id
 

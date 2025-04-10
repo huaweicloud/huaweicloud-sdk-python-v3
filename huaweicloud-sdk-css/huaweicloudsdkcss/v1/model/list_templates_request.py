@@ -25,7 +25,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, type=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTemplatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListTemplatesRequest.
+        r"""Gets the type of this ListTemplatesRequest.
 
         模板类型。custom为自定义模板，system为系统模板。不指定查询模板类型默认查找自定义模板和系统模板。
 
@@ -54,7 +54,7 @@ class ListTemplatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListTemplatesRequest.
+        r"""Sets the type of this ListTemplatesRequest.
 
         模板类型。custom为自定义模板，system为系统模板。不指定查询模板类型默认查找自定义模板和系统模板。
 

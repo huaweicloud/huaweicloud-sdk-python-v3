@@ -25,7 +25,7 @@ class CreateDeleteGcbTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """CreateDeleteGcbTagsRequestBody
+        r"""CreateDeleteGcbTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDeleteGcbTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDeleteGcbTagsRequestBody.
+        r"""Gets the tags of this CreateDeleteGcbTagsRequestBody.
 
         批量添加/删除资源标签。
 
@@ -53,7 +53,7 @@ class CreateDeleteGcbTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDeleteGcbTagsRequestBody.
+        r"""Sets the tags of this CreateDeleteGcbTagsRequestBody.
 
         批量添加/删除资源标签。
 

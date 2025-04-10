@@ -25,7 +25,7 @@ class ChangeServerChargeModeRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeServerChargeModeRequest
+        r"""ChangeServerChargeModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeServerChargeModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeServerChargeModeRequest.
+        r"""Gets the body of this ChangeServerChargeModeRequest.
 
         :return: The body of this ChangeServerChargeModeRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModeRequestBody`
@@ -52,7 +52,7 @@ class ChangeServerChargeModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeServerChargeModeRequest.
+        r"""Sets the body of this ChangeServerChargeModeRequest.
 
         :param body: The body of this ChangeServerChargeModeRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModeRequestBody`

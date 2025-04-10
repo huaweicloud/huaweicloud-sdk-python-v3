@@ -27,7 +27,7 @@ class AddFavoriteReqTemplate:
     }
 
     def __init__(self, template_name=None, desc=None):
-        """AddFavoriteReqTemplate
+        r"""AddFavoriteReqTemplate
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddFavoriteReqTemplate:
 
     @property
     def template_name(self):
-        """Gets the template_name of this AddFavoriteReqTemplate.
+        r"""Gets the template_name of this AddFavoriteReqTemplate.
 
         模板名称。
 
@@ -60,7 +60,7 @@ class AddFavoriteReqTemplate:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this AddFavoriteReqTemplate.
+        r"""Sets the template_name of this AddFavoriteReqTemplate.
 
         模板名称。
 
@@ -71,7 +71,7 @@ class AddFavoriteReqTemplate:
 
     @property
     def desc(self):
-        """Gets the desc of this AddFavoriteReqTemplate.
+        r"""Gets the desc of this AddFavoriteReqTemplate.
 
         模板描述。
 
@@ -82,7 +82,7 @@ class AddFavoriteReqTemplate:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this AddFavoriteReqTemplate.
+        r"""Sets the desc of this AddFavoriteReqTemplate.
 
         模板描述。
 

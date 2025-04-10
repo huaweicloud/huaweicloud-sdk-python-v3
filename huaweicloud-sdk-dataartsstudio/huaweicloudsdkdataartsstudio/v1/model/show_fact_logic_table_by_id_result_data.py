@@ -25,7 +25,7 @@ class ShowFactLogicTableByIdResultData:
     }
 
     def __init__(self, value=None):
-        """ShowFactLogicTableByIdResultData
+        r"""ShowFactLogicTableByIdResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowFactLogicTableByIdResultData:
 
     @property
     def value(self):
-        """Gets the value of this ShowFactLogicTableByIdResultData.
+        r"""Gets the value of this ShowFactLogicTableByIdResultData.
 
         :return: The value of this ShowFactLogicTableByIdResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.FactLogicTableVO`
@@ -52,7 +52,7 @@ class ShowFactLogicTableByIdResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowFactLogicTableByIdResultData.
+        r"""Sets the value of this ShowFactLogicTableByIdResultData.
 
         :param value: The value of this ShowFactLogicTableByIdResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.FactLogicTableVO`

@@ -75,7 +75,7 @@ class IssueItemSfV4:
     }
 
     def __init__(self, actual_work_hours=None, assigned_user=None, author=None, begin_time=None, closed_time=None, created_time=None, custom_feilds=None, developer=None, discover_version=None, end_time=None, done_ratio=None, expected_work_hours=None, order=None, parent_issue_id=None, release_version=None, root_issue_id=None, story_point=None, domain=None, iteration=None, module=None, priority=None, severity=None, status=None, tracker=None, subject=None, updated_time=None):
-        """IssueItemSfV4
+        r"""IssueItemSfV4
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class IssueItemSfV4:
 
     @property
     def actual_work_hours(self):
-        """Gets the actual_work_hours of this IssueItemSfV4.
+        r"""Gets the actual_work_hours of this IssueItemSfV4.
 
         实际工时
 
@@ -229,7 +229,7 @@ class IssueItemSfV4:
 
     @actual_work_hours.setter
     def actual_work_hours(self, actual_work_hours):
-        """Sets the actual_work_hours of this IssueItemSfV4.
+        r"""Sets the actual_work_hours of this IssueItemSfV4.
 
         实际工时
 
@@ -240,7 +240,7 @@ class IssueItemSfV4:
 
     @property
     def assigned_user(self):
-        """Gets the assigned_user of this IssueItemSfV4.
+        r"""Gets the assigned_user of this IssueItemSfV4.
 
         :return: The assigned_user of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -249,7 +249,7 @@ class IssueItemSfV4:
 
     @assigned_user.setter
     def assigned_user(self, assigned_user):
-        """Sets the assigned_user of this IssueItemSfV4.
+        r"""Sets the assigned_user of this IssueItemSfV4.
 
         :param assigned_user: The assigned_user of this IssueItemSfV4.
         :type assigned_user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -258,7 +258,7 @@ class IssueItemSfV4:
 
     @property
     def author(self):
-        """Gets the author of this IssueItemSfV4.
+        r"""Gets the author of this IssueItemSfV4.
 
         :return: The author of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -267,7 +267,7 @@ class IssueItemSfV4:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this IssueItemSfV4.
+        r"""Sets the author of this IssueItemSfV4.
 
         :param author: The author of this IssueItemSfV4.
         :type author: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -276,7 +276,7 @@ class IssueItemSfV4:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this IssueItemSfV4.
+        r"""Gets the begin_time of this IssueItemSfV4.
 
         工作项开始时间
 
@@ -287,7 +287,7 @@ class IssueItemSfV4:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this IssueItemSfV4.
+        r"""Sets the begin_time of this IssueItemSfV4.
 
         工作项开始时间
 
@@ -298,7 +298,7 @@ class IssueItemSfV4:
 
     @property
     def closed_time(self):
-        """Gets the closed_time of this IssueItemSfV4.
+        r"""Gets the closed_time of this IssueItemSfV4.
 
         关闭工作项的时间
 
@@ -309,7 +309,7 @@ class IssueItemSfV4:
 
     @closed_time.setter
     def closed_time(self, closed_time):
-        """Sets the closed_time of this IssueItemSfV4.
+        r"""Sets the closed_time of this IssueItemSfV4.
 
         关闭工作项的时间
 
@@ -320,7 +320,7 @@ class IssueItemSfV4:
 
     @property
     def created_time(self):
-        """Gets the created_time of this IssueItemSfV4.
+        r"""Gets the created_time of this IssueItemSfV4.
 
         创建时间
 
@@ -331,7 +331,7 @@ class IssueItemSfV4:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this IssueItemSfV4.
+        r"""Sets the created_time of this IssueItemSfV4.
 
         创建时间
 
@@ -342,7 +342,7 @@ class IssueItemSfV4:
 
     @property
     def custom_feilds(self):
-        """Gets the custom_feilds of this IssueItemSfV4.
+        r"""Gets the custom_feilds of this IssueItemSfV4.
 
         自定义属性
 
@@ -353,7 +353,7 @@ class IssueItemSfV4:
 
     @custom_feilds.setter
     def custom_feilds(self, custom_feilds):
-        """Sets the custom_feilds of this IssueItemSfV4.
+        r"""Sets the custom_feilds of this IssueItemSfV4.
 
         自定义属性
 
@@ -364,7 +364,7 @@ class IssueItemSfV4:
 
     @property
     def developer(self):
-        """Gets the developer of this IssueItemSfV4.
+        r"""Gets the developer of this IssueItemSfV4.
 
         :return: The developer of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -373,7 +373,7 @@ class IssueItemSfV4:
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this IssueItemSfV4.
+        r"""Sets the developer of this IssueItemSfV4.
 
         :param developer: The developer of this IssueItemSfV4.
         :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -382,7 +382,7 @@ class IssueItemSfV4:
 
     @property
     def discover_version(self):
-        """Gets the discover_version of this IssueItemSfV4.
+        r"""Gets the discover_version of this IssueItemSfV4.
 
         发现问题的版本
 
@@ -393,7 +393,7 @@ class IssueItemSfV4:
 
     @discover_version.setter
     def discover_version(self, discover_version):
-        """Sets the discover_version of this IssueItemSfV4.
+        r"""Sets the discover_version of this IssueItemSfV4.
 
         发现问题的版本
 
@@ -404,7 +404,7 @@ class IssueItemSfV4:
 
     @property
     def end_time(self):
-        """Gets the end_time of this IssueItemSfV4.
+        r"""Gets the end_time of this IssueItemSfV4.
 
         工作项结束时间
 
@@ -415,7 +415,7 @@ class IssueItemSfV4:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this IssueItemSfV4.
+        r"""Sets the end_time of this IssueItemSfV4.
 
         工作项结束时间
 
@@ -426,7 +426,7 @@ class IssueItemSfV4:
 
     @property
     def done_ratio(self):
-        """Gets the done_ratio of this IssueItemSfV4.
+        r"""Gets the done_ratio of this IssueItemSfV4.
 
         工作项进度值
 
@@ -437,7 +437,7 @@ class IssueItemSfV4:
 
     @done_ratio.setter
     def done_ratio(self, done_ratio):
-        """Sets the done_ratio of this IssueItemSfV4.
+        r"""Sets the done_ratio of this IssueItemSfV4.
 
         工作项进度值
 
@@ -448,7 +448,7 @@ class IssueItemSfV4:
 
     @property
     def expected_work_hours(self):
-        """Gets the expected_work_hours of this IssueItemSfV4.
+        r"""Gets the expected_work_hours of this IssueItemSfV4.
 
         预计工时
 
@@ -459,7 +459,7 @@ class IssueItemSfV4:
 
     @expected_work_hours.setter
     def expected_work_hours(self, expected_work_hours):
-        """Sets the expected_work_hours of this IssueItemSfV4.
+        r"""Sets the expected_work_hours of this IssueItemSfV4.
 
         预计工时
 
@@ -470,7 +470,7 @@ class IssueItemSfV4:
 
     @property
     def order(self):
-        """Gets the order of this IssueItemSfV4.
+        r"""Gets the order of this IssueItemSfV4.
 
         顺序
 
@@ -481,7 +481,7 @@ class IssueItemSfV4:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this IssueItemSfV4.
+        r"""Sets the order of this IssueItemSfV4.
 
         顺序
 
@@ -492,7 +492,7 @@ class IssueItemSfV4:
 
     @property
     def parent_issue_id(self):
-        """Gets the parent_issue_id of this IssueItemSfV4.
+        r"""Gets the parent_issue_id of this IssueItemSfV4.
 
         父工作项的id
 
@@ -503,7 +503,7 @@ class IssueItemSfV4:
 
     @parent_issue_id.setter
     def parent_issue_id(self, parent_issue_id):
-        """Sets the parent_issue_id of this IssueItemSfV4.
+        r"""Sets the parent_issue_id of this IssueItemSfV4.
 
         父工作项的id
 
@@ -514,7 +514,7 @@ class IssueItemSfV4:
 
     @property
     def release_version(self):
-        """Gets the release_version of this IssueItemSfV4.
+        r"""Gets the release_version of this IssueItemSfV4.
 
         发布的版本
 
@@ -525,7 +525,7 @@ class IssueItemSfV4:
 
     @release_version.setter
     def release_version(self, release_version):
-        """Sets the release_version of this IssueItemSfV4.
+        r"""Sets the release_version of this IssueItemSfV4.
 
         发布的版本
 
@@ -536,7 +536,7 @@ class IssueItemSfV4:
 
     @property
     def root_issue_id(self):
-        """Gets the root_issue_id of this IssueItemSfV4.
+        r"""Gets the root_issue_id of this IssueItemSfV4.
 
         根工作项的id
 
@@ -547,7 +547,7 @@ class IssueItemSfV4:
 
     @root_issue_id.setter
     def root_issue_id(self, root_issue_id):
-        """Sets the root_issue_id of this IssueItemSfV4.
+        r"""Sets the root_issue_id of this IssueItemSfV4.
 
         根工作项的id
 
@@ -558,7 +558,7 @@ class IssueItemSfV4:
 
     @property
     def story_point(self):
-        """Gets the story_point of this IssueItemSfV4.
+        r"""Gets the story_point of this IssueItemSfV4.
 
         :return: The story_point of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4StoryPoint`
@@ -567,7 +567,7 @@ class IssueItemSfV4:
 
     @story_point.setter
     def story_point(self, story_point):
-        """Sets the story_point of this IssueItemSfV4.
+        r"""Sets the story_point of this IssueItemSfV4.
 
         :param story_point: The story_point of this IssueItemSfV4.
         :type story_point: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4StoryPoint`
@@ -576,7 +576,7 @@ class IssueItemSfV4:
 
     @property
     def domain(self):
-        """Gets the domain of this IssueItemSfV4.
+        r"""Gets the domain of this IssueItemSfV4.
 
         :return: The domain of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
@@ -585,7 +585,7 @@ class IssueItemSfV4:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this IssueItemSfV4.
+        r"""Sets the domain of this IssueItemSfV4.
 
         :param domain: The domain of this IssueItemSfV4.
         :type domain: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
@@ -594,7 +594,7 @@ class IssueItemSfV4:
 
     @property
     def iteration(self):
-        """Gets the iteration of this IssueItemSfV4.
+        r"""Gets the iteration of this IssueItemSfV4.
 
         :return: The iteration of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -603,7 +603,7 @@ class IssueItemSfV4:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this IssueItemSfV4.
+        r"""Sets the iteration of this IssueItemSfV4.
 
         :param iteration: The iteration of this IssueItemSfV4.
         :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -612,7 +612,7 @@ class IssueItemSfV4:
 
     @property
     def module(self):
-        """Gets the module of this IssueItemSfV4.
+        r"""Gets the module of this IssueItemSfV4.
 
         :return: The module of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -621,7 +621,7 @@ class IssueItemSfV4:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this IssueItemSfV4.
+        r"""Sets the module of this IssueItemSfV4.
 
         :param module: The module of this IssueItemSfV4.
         :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -630,7 +630,7 @@ class IssueItemSfV4:
 
     @property
     def priority(self):
-        """Gets the priority of this IssueItemSfV4.
+        r"""Gets the priority of this IssueItemSfV4.
 
         :return: The priority of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -639,7 +639,7 @@ class IssueItemSfV4:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this IssueItemSfV4.
+        r"""Sets the priority of this IssueItemSfV4.
 
         :param priority: The priority of this IssueItemSfV4.
         :type priority: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -648,7 +648,7 @@ class IssueItemSfV4:
 
     @property
     def severity(self):
-        """Gets the severity of this IssueItemSfV4.
+        r"""Gets the severity of this IssueItemSfV4.
 
         :return: The severity of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -657,7 +657,7 @@ class IssueItemSfV4:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this IssueItemSfV4.
+        r"""Sets the severity of this IssueItemSfV4.
 
         :param severity: The severity of this IssueItemSfV4.
         :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -666,7 +666,7 @@ class IssueItemSfV4:
 
     @property
     def status(self):
-        """Gets the status of this IssueItemSfV4.
+        r"""Gets the status of this IssueItemSfV4.
 
         :return: The status of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -675,7 +675,7 @@ class IssueItemSfV4:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IssueItemSfV4.
+        r"""Sets the status of this IssueItemSfV4.
 
         :param status: The status of this IssueItemSfV4.
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -684,7 +684,7 @@ class IssueItemSfV4:
 
     @property
     def tracker(self):
-        """Gets the tracker of this IssueItemSfV4.
+        r"""Gets the tracker of this IssueItemSfV4.
 
         :return: The tracker of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
@@ -693,7 +693,7 @@ class IssueItemSfV4:
 
     @tracker.setter
     def tracker(self, tracker):
-        """Sets the tracker of this IssueItemSfV4.
+        r"""Sets the tracker of this IssueItemSfV4.
 
         :param tracker: The tracker of this IssueItemSfV4.
         :type tracker: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
@@ -702,7 +702,7 @@ class IssueItemSfV4:
 
     @property
     def subject(self):
-        """Gets the subject of this IssueItemSfV4.
+        r"""Gets the subject of this IssueItemSfV4.
 
         工作项标题
 
@@ -713,7 +713,7 @@ class IssueItemSfV4:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this IssueItemSfV4.
+        r"""Sets the subject of this IssueItemSfV4.
 
         工作项标题
 
@@ -724,7 +724,7 @@ class IssueItemSfV4:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this IssueItemSfV4.
+        r"""Gets the updated_time of this IssueItemSfV4.
 
         工作项更新时间
 
@@ -735,7 +735,7 @@ class IssueItemSfV4:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this IssueItemSfV4.
+        r"""Sets the updated_time of this IssueItemSfV4.
 
         工作项更新时间
 

@@ -29,7 +29,7 @@ class Columns:
     }
 
     def __init__(self, name=None, type=None, primary_key=None):
-        """Columns
+        r"""Columns
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Columns:
 
     @property
     def name(self):
-        """Gets the name of this Columns.
+        r"""Gets the name of this Columns.
 
         数据的字段名称，最大支持长度256
 
@@ -65,7 +65,7 @@ class Columns:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Columns.
+        r"""Sets the name of this Columns.
 
         数据的字段名称，最大支持长度256
 
@@ -76,7 +76,7 @@ class Columns:
 
     @property
     def type(self):
-        """Gets the type of this Columns.
+        r"""Gets the type of this Columns.
 
         数据的字段类型
 
@@ -87,7 +87,7 @@ class Columns:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Columns.
+        r"""Sets the type of this Columns.
 
         数据的字段类型
 
@@ -98,7 +98,7 @@ class Columns:
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this Columns.
+        r"""Gets the primary_key of this Columns.
 
         标记该字段是否为主键。true为主键，表示用来定位水印位置；false为非主键，将在该列嵌入/提取水印内容。字段类型列表中可同时包含多个为true或为false的字段
 
@@ -109,7 +109,7 @@ class Columns:
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this Columns.
+        r"""Sets the primary_key of this Columns.
 
         标记该字段是否为主键。true为主键，表示用来定位水印位置；false为非主键，将在该列嵌入/提取水印内容。字段类型列表中可同时包含多个为true或为false的字段
 

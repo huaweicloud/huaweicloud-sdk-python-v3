@@ -29,7 +29,7 @@ class UpdateNodeByDeviceIdRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_id=None, body=None):
-        """UpdateNodeByDeviceIdRequest
+        r"""UpdateNodeByDeviceIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateNodeByDeviceIdRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateNodeByDeviceIdRequest.
+        r"""Gets the ief_instance_id of this UpdateNodeByDeviceIdRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateNodeByDeviceIdRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateNodeByDeviceIdRequest.
+        r"""Sets the ief_instance_id of this UpdateNodeByDeviceIdRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateNodeByDeviceIdRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateNodeByDeviceIdRequest.
+        r"""Gets the device_id of this UpdateNodeByDeviceIdRequest.
 
         设备ID
 
@@ -89,7 +89,7 @@ class UpdateNodeByDeviceIdRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateNodeByDeviceIdRequest.
+        r"""Sets the device_id of this UpdateNodeByDeviceIdRequest.
 
         设备ID
 
@@ -100,7 +100,7 @@ class UpdateNodeByDeviceIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNodeByDeviceIdRequest.
+        r"""Gets the body of this UpdateNodeByDeviceIdRequest.
 
         :return: The body of this UpdateNodeByDeviceIdRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeUpdateByDevice`
@@ -109,7 +109,7 @@ class UpdateNodeByDeviceIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNodeByDeviceIdRequest.
+        r"""Sets the body of this UpdateNodeByDeviceIdRequest.
 
         :param body: The body of this UpdateNodeByDeviceIdRequest.
         :type body: :class:`huaweicloudsdkief.v1.EdgeNodeUpdateByDevice`

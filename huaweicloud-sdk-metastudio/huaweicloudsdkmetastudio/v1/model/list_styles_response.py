@@ -30,7 +30,7 @@ class ListStylesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, styles=None, x_request_id=None):
-        """ListStylesResponse
+        r"""ListStylesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListStylesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListStylesResponse.
+        r"""Gets the count of this ListStylesResponse.
 
         风格信息总数
 
@@ -69,7 +69,7 @@ class ListStylesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListStylesResponse.
+        r"""Sets the count of this ListStylesResponse.
 
         风格信息总数
 
@@ -80,7 +80,7 @@ class ListStylesResponse(SdkResponse):
 
     @property
     def styles(self):
-        """Gets the styles of this ListStylesResponse.
+        r"""Gets the styles of this ListStylesResponse.
 
         风格信息列表
 
@@ -91,7 +91,7 @@ class ListStylesResponse(SdkResponse):
 
     @styles.setter
     def styles(self, styles):
-        """Sets the styles of this ListStylesResponse.
+        r"""Sets the styles of this ListStylesResponse.
 
         风格信息列表
 
@@ -102,7 +102,7 @@ class ListStylesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListStylesResponse.
+        r"""Gets the x_request_id of this ListStylesResponse.
 
         :return: The x_request_id of this ListStylesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListStylesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListStylesResponse.
+        r"""Sets the x_request_id of this ListStylesResponse.
 
         :param x_request_id: The x_request_id of this ListStylesResponse.
         :type x_request_id: str

@@ -33,7 +33,7 @@ class Event:
     }
 
     def __init__(self, event_type=None, channel=None, fail_policy=None, concurrent=None, read_policy=None):
-        """Event
+        r"""Event
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Event:
 
     @property
     def event_type(self):
-        """Gets the event_type of this Event.
+        r"""Gets the event_type of this Event.
 
         事件类型
 
@@ -82,7 +82,7 @@ class Event:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this Event.
+        r"""Sets the event_type of this Event.
 
         事件类型
 
@@ -93,7 +93,7 @@ class Event:
 
     @property
     def channel(self):
-        """Gets the channel of this Event.
+        r"""Gets the channel of this Event.
 
         DIS通道名称
 
@@ -104,7 +104,7 @@ class Event:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this Event.
+        r"""Sets the channel of this Event.
 
         DIS通道名称
 
@@ -115,7 +115,7 @@ class Event:
 
     @property
     def fail_policy(self):
-        """Gets the fail_policy of this Event.
+        r"""Gets the fail_policy of this Event.
 
         执行失败处理策略
 
@@ -126,7 +126,7 @@ class Event:
 
     @fail_policy.setter
     def fail_policy(self, fail_policy):
-        """Sets the fail_policy of this Event.
+        r"""Sets the fail_policy of this Event.
 
         执行失败处理策略
 
@@ -137,7 +137,7 @@ class Event:
 
     @property
     def concurrent(self):
-        """Gets the concurrent of this Event.
+        r"""Gets the concurrent of this Event.
 
         调度并发数
 
@@ -148,7 +148,7 @@ class Event:
 
     @concurrent.setter
     def concurrent(self, concurrent):
-        """Sets the concurrent of this Event.
+        r"""Sets the concurrent of this Event.
 
         调度并发数
 
@@ -159,7 +159,7 @@ class Event:
 
     @property
     def read_policy(self):
-        """Gets the read_policy of this Event.
+        r"""Gets the read_policy of this Event.
 
         读取策略
 
@@ -170,7 +170,7 @@ class Event:
 
     @read_policy.setter
     def read_policy(self, read_policy):
-        """Sets the read_policy of this Event.
+        r"""Sets the read_policy of this Event.
 
         读取策略
 

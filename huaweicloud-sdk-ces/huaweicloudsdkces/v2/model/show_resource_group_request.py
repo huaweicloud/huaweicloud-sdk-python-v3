@@ -25,7 +25,7 @@ class ShowResourceGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """ShowResourceGroupRequest
+        r"""ShowResourceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowResourceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowResourceGroupRequest.
+        r"""Gets the group_id of this ShowResourceGroupRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -53,7 +53,7 @@ class ShowResourceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowResourceGroupRequest.
+        r"""Sets the group_id of this ShowResourceGroupRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 

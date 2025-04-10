@@ -25,7 +25,7 @@ class ModelConfig:
     }
 
     def __init__(self, llm_model_config=None):
-        """ModelConfig
+        r"""ModelConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModelConfig:
 
     @property
     def llm_model_config(self):
-        """Gets the llm_model_config of this ModelConfig.
+        r"""Gets the llm_model_config of this ModelConfig.
 
         :return: The llm_model_config of this ModelConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.LlmModelConfig`
@@ -52,7 +52,7 @@ class ModelConfig:
 
     @llm_model_config.setter
     def llm_model_config(self, llm_model_config):
-        """Sets the llm_model_config of this ModelConfig.
+        r"""Sets the llm_model_config of this ModelConfig.
 
         :param llm_model_config: The llm_model_config of this ModelConfig.
         :type llm_model_config: :class:`huaweicloudsdkdataartsfabric.v1.LlmModelConfig`

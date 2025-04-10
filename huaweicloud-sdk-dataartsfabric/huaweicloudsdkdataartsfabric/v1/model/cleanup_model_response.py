@@ -24,7 +24,7 @@ class CleanupModelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CleanupModelResponse
+        r"""CleanupModelResponse
 
         The model defined in huaweicloud sdk
 

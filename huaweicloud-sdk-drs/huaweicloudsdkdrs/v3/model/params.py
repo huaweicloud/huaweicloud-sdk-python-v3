@@ -43,7 +43,7 @@ class Params:
     }
 
     def __init__(self, compare_result=None, data_type=None, group=None, key=None, need_restart=None, source_value=None, target_value=None, value_range=None, error_code=None, error_message=None):
-        """Params
+        r"""Params
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Params:
 
     @property
     def compare_result(self):
-        """Gets the compare_result of this Params.
+        r"""Gets the compare_result of this Params.
 
         参数对比结果
 
@@ -117,7 +117,7 @@ class Params:
 
     @compare_result.setter
     def compare_result(self, compare_result):
-        """Sets the compare_result of this Params.
+        r"""Sets the compare_result of this Params.
 
         参数对比结果
 
@@ -128,7 +128,7 @@ class Params:
 
     @property
     def data_type(self):
-        """Gets the data_type of this Params.
+        r"""Gets the data_type of this Params.
 
         参数类型
 
@@ -139,7 +139,7 @@ class Params:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this Params.
+        r"""Sets the data_type of this Params.
 
         参数类型
 
@@ -150,7 +150,7 @@ class Params:
 
     @property
     def group(self):
-        """Gets the group of this Params.
+        r"""Gets the group of this Params.
 
         分组。 - common-常规参数 - performance-性能参数
 
@@ -161,7 +161,7 @@ class Params:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this Params.
+        r"""Sets the group of this Params.
 
         分组。 - common-常规参数 - performance-性能参数
 
@@ -172,7 +172,7 @@ class Params:
 
     @property
     def key(self):
-        """Gets the key of this Params.
+        r"""Gets the key of this Params.
 
         参数名
 
@@ -183,7 +183,7 @@ class Params:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Params.
+        r"""Sets the key of this Params.
 
         参数名
 
@@ -194,7 +194,7 @@ class Params:
 
     @property
     def need_restart(self):
-        """Gets the need_restart of this Params.
+        r"""Gets the need_restart of this Params.
 
         是否需要重启
 
@@ -205,7 +205,7 @@ class Params:
 
     @need_restart.setter
     def need_restart(self, need_restart):
-        """Sets the need_restart of this Params.
+        r"""Sets the need_restart of this Params.
 
         是否需要重启
 
@@ -216,7 +216,7 @@ class Params:
 
     @property
     def source_value(self):
-        """Gets the source_value of this Params.
+        r"""Gets the source_value of this Params.
 
         源数据库参数值
 
@@ -227,7 +227,7 @@ class Params:
 
     @source_value.setter
     def source_value(self, source_value):
-        """Sets the source_value of this Params.
+        r"""Sets the source_value of this Params.
 
         源数据库参数值
 
@@ -238,7 +238,7 @@ class Params:
 
     @property
     def target_value(self):
-        """Gets the target_value of this Params.
+        r"""Gets the target_value of this Params.
 
         目标数据库参数值
 
@@ -249,7 +249,7 @@ class Params:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this Params.
+        r"""Sets the target_value of this Params.
 
         目标数据库参数值
 
@@ -260,7 +260,7 @@ class Params:
 
     @property
     def value_range(self):
-        """Gets the value_range of this Params.
+        r"""Gets the value_range of this Params.
 
         参数范围
 
@@ -271,7 +271,7 @@ class Params:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this Params.
+        r"""Sets the value_range of this Params.
 
         参数范围
 
@@ -282,7 +282,7 @@ class Params:
 
     @property
     def error_code(self):
-        """Gets the error_code of this Params.
+        r"""Gets the error_code of this Params.
 
         错误码
 
@@ -293,7 +293,7 @@ class Params:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this Params.
+        r"""Sets the error_code of this Params.
 
         错误码
 
@@ -304,7 +304,7 @@ class Params:
 
     @property
     def error_message(self):
-        """Gets the error_message of this Params.
+        r"""Gets the error_message of this Params.
 
         错误信息
 
@@ -315,7 +315,7 @@ class Params:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this Params.
+        r"""Sets the error_message of this Params.
 
         错误信息
 

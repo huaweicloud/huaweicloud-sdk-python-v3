@@ -26,7 +26,7 @@ class CreateBindPublicResponse(SdkResponse):
     }
 
     def __init__(self, action=None):
-        """CreateBindPublicResponse
+        r"""CreateBindPublicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateBindPublicResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this CreateBindPublicResponse.
+        r"""Gets the action of this CreateBindPublicResponse.
 
         操作行为。固定为bindZone，表示绑定成功。
 
@@ -55,7 +55,7 @@ class CreateBindPublicResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateBindPublicResponse.
+        r"""Sets the action of this CreateBindPublicResponse.
 
         操作行为。固定为bindZone，表示绑定成功。
 

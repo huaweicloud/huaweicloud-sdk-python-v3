@@ -24,7 +24,7 @@ class UpdateHighRiskCommandsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateHighRiskCommandsResponse
+        r"""UpdateHighRiskCommandsResponse
 
         The model defined in huaweicloud sdk
 

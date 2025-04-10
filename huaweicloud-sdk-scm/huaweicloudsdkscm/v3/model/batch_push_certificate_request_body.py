@@ -27,7 +27,7 @@ class BatchPushCertificateRequestBody:
     }
 
     def __init__(self, target_projects=None, target_service=None):
-        """BatchPushCertificateRequestBody
+        r"""BatchPushCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchPushCertificateRequestBody:
 
     @property
     def target_projects(self):
-        """Gets the target_projects of this BatchPushCertificateRequestBody.
+        r"""Gets the target_projects of this BatchPushCertificateRequestBody.
 
         推送到的目标服务所在的区域，CDN、ELB、WAF。
 
@@ -59,7 +59,7 @@ class BatchPushCertificateRequestBody:
 
     @target_projects.setter
     def target_projects(self, target_projects):
-        """Sets the target_projects of this BatchPushCertificateRequestBody.
+        r"""Sets the target_projects of this BatchPushCertificateRequestBody.
 
         推送到的目标服务所在的区域，CDN、ELB、WAF。
 
@@ -70,7 +70,7 @@ class BatchPushCertificateRequestBody:
 
     @property
     def target_service(self):
-        """Gets the target_service of this BatchPushCertificateRequestBody.
+        r"""Gets the target_service of this BatchPushCertificateRequestBody.
 
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
@@ -81,7 +81,7 @@ class BatchPushCertificateRequestBody:
 
     @target_service.setter
     def target_service(self, target_service):
-        """Sets the target_service of this BatchPushCertificateRequestBody.
+        r"""Sets the target_service of this BatchPushCertificateRequestBody.
 
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 

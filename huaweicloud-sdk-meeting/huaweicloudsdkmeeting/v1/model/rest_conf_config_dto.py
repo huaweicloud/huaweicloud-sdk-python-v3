@@ -51,7 +51,7 @@ class RestConfConfigDTO:
     }
 
     def __init__(self, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_hard_terminal_auto_mute=None, is_guest_free_pwd=None, call_in_restriction=None, allow_guest_start_conf=None, guest_pwd=None, vmr_id_type=None, prolong_length=None, enable_waiting_room=None, is_host_camera_on=None, is_guest_camera_on=None):
-        """RestConfConfigDTO
+        r"""RestConfConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class RestConfConfigDTO:
 
     @property
     def is_send_notify(self):
-        """Gets the is_send_notify of this RestConfConfigDTO.
+        r"""Gets the is_send_notify of this RestConfConfigDTO.
 
         是否需要发送会议邮件通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
@@ -145,7 +145,7 @@ class RestConfConfigDTO:
 
     @is_send_notify.setter
     def is_send_notify(self, is_send_notify):
-        """Sets the is_send_notify of this RestConfConfigDTO.
+        r"""Sets the is_send_notify of this RestConfConfigDTO.
 
         是否需要发送会议邮件通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
@@ -156,7 +156,7 @@ class RestConfConfigDTO:
 
     @property
     def is_send_sms(self):
-        """Gets the is_send_sms of this RestConfConfigDTO.
+        r"""Gets the is_send_sms of this RestConfConfigDTO.
 
         是否需要发送会议短信通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要 > 只有正式商用企业才有发送会议短信通知的权限，免费企业即使isSendSms设置成true也不会发送会议短信通知。
 
@@ -167,7 +167,7 @@ class RestConfConfigDTO:
 
     @is_send_sms.setter
     def is_send_sms(self, is_send_sms):
-        """Sets the is_send_sms of this RestConfConfigDTO.
+        r"""Sets the is_send_sms of this RestConfConfigDTO.
 
         是否需要发送会议短信通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要 > 只有正式商用企业才有发送会议短信通知的权限，免费企业即使isSendSms设置成true也不会发送会议短信通知。
 
@@ -178,7 +178,7 @@ class RestConfConfigDTO:
 
     @property
     def is_send_calendar(self):
-        """Gets the is_send_calendar of this RestConfConfigDTO.
+        r"""Gets the is_send_calendar of this RestConfConfigDTO.
 
         是否需要发送会议邮件日历通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
@@ -189,7 +189,7 @@ class RestConfConfigDTO:
 
     @is_send_calendar.setter
     def is_send_calendar(self, is_send_calendar):
-        """Sets the is_send_calendar of this RestConfConfigDTO.
+        r"""Sets the is_send_calendar of this RestConfConfigDTO.
 
         是否需要发送会议邮件日历通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
@@ -200,7 +200,7 @@ class RestConfConfigDTO:
 
     @property
     def is_auto_mute(self):
-        """Gets the is_auto_mute of this RestConfConfigDTO.
+        r"""Gets the is_auto_mute of this RestConfConfigDTO.
 
         来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
@@ -211,7 +211,7 @@ class RestConfConfigDTO:
 
     @is_auto_mute.setter
     def is_auto_mute(self, is_auto_mute):
-        """Sets the is_auto_mute of this RestConfConfigDTO.
+        r"""Sets the is_auto_mute of this RestConfConfigDTO.
 
         来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
@@ -222,7 +222,7 @@ class RestConfConfigDTO:
 
     @property
     def is_hard_terminal_auto_mute(self):
-        """Gets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
+        r"""Gets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
 
         来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
@@ -233,7 +233,7 @@ class RestConfConfigDTO:
 
     @is_hard_terminal_auto_mute.setter
     def is_hard_terminal_auto_mute(self, is_hard_terminal_auto_mute):
-        """Sets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
+        r"""Sets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
 
         来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
@@ -244,7 +244,7 @@ class RestConfConfigDTO:
 
     @property
     def is_guest_free_pwd(self):
-        """Gets the is_guest_free_pwd of this RestConfConfigDTO.
+        r"""Gets the is_guest_free_pwd of this RestConfConfigDTO.
 
         是否来宾免密。 - true: 免密 - false: 需要密码 > 仅随机会议ID的会议生效。
 
@@ -255,7 +255,7 @@ class RestConfConfigDTO:
 
     @is_guest_free_pwd.setter
     def is_guest_free_pwd(self, is_guest_free_pwd):
-        """Sets the is_guest_free_pwd of this RestConfConfigDTO.
+        r"""Sets the is_guest_free_pwd of this RestConfConfigDTO.
 
         是否来宾免密。 - true: 免密 - false: 需要密码 > 仅随机会议ID的会议生效。
 
@@ -266,7 +266,7 @@ class RestConfConfigDTO:
 
     @property
     def call_in_restriction(self):
-        """Gets the call_in_restriction of this RestConfConfigDTO.
+        r"""Gets the call_in_restriction of this RestConfConfigDTO.
 
         允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户
 
@@ -277,7 +277,7 @@ class RestConfConfigDTO:
 
     @call_in_restriction.setter
     def call_in_restriction(self, call_in_restriction):
-        """Sets the call_in_restriction of this RestConfConfigDTO.
+        r"""Sets the call_in_restriction of this RestConfConfigDTO.
 
         允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户
 
@@ -288,7 +288,7 @@ class RestConfConfigDTO:
 
     @property
     def allow_guest_start_conf(self):
-        """Gets the allow_guest_start_conf of this RestConfConfigDTO.
+        r"""Gets the allow_guest_start_conf of this RestConfConfigDTO.
 
         是否允许来宾启动会议。 - true: 允许来宾启动会议 - false: 禁止来宾启动会议 > 仅随机会议ID的会议生效。
 
@@ -299,7 +299,7 @@ class RestConfConfigDTO:
 
     @allow_guest_start_conf.setter
     def allow_guest_start_conf(self, allow_guest_start_conf):
-        """Sets the allow_guest_start_conf of this RestConfConfigDTO.
+        r"""Sets the allow_guest_start_conf of this RestConfConfigDTO.
 
         是否允许来宾启动会议。 - true: 允许来宾启动会议 - false: 禁止来宾启动会议 > 仅随机会议ID的会议生效。
 
@@ -310,7 +310,7 @@ class RestConfConfigDTO:
 
     @property
     def guest_pwd(self):
-        """Gets the guest_pwd of this RestConfConfigDTO.
+        r"""Gets the guest_pwd of this RestConfConfigDTO.
 
         来宾密码（4-16位长度的纯数字）。
 
@@ -321,7 +321,7 @@ class RestConfConfigDTO:
 
     @guest_pwd.setter
     def guest_pwd(self, guest_pwd):
-        """Sets the guest_pwd of this RestConfConfigDTO.
+        r"""Sets the guest_pwd of this RestConfConfigDTO.
 
         来宾密码（4-16位长度的纯数字）。
 
@@ -332,7 +332,7 @@ class RestConfConfigDTO:
 
     @property
     def vmr_id_type(self):
-        """Gets the vmr_id_type of this RestConfConfigDTO.
+        r"""Gets the vmr_id_type of this RestConfConfigDTO.
 
         云会议室的会议ID模式。 * 0：固定会议ID * 1：随机会议ID
 
@@ -343,7 +343,7 @@ class RestConfConfigDTO:
 
     @vmr_id_type.setter
     def vmr_id_type(self, vmr_id_type):
-        """Sets the vmr_id_type of this RestConfConfigDTO.
+        r"""Sets the vmr_id_type of this RestConfConfigDTO.
 
         云会议室的会议ID模式。 * 0：固定会议ID * 1：随机会议ID
 
@@ -354,7 +354,7 @@ class RestConfConfigDTO:
 
     @property
     def prolong_length(self):
-        """Gets the prolong_length of this RestConfConfigDTO.
+        r"""Gets the prolong_length of this RestConfConfigDTO.
 
         自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延长
 
@@ -365,7 +365,7 @@ class RestConfConfigDTO:
 
     @prolong_length.setter
     def prolong_length(self, prolong_length):
-        """Sets the prolong_length of this RestConfConfigDTO.
+        r"""Sets the prolong_length of this RestConfConfigDTO.
 
         自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延长
 
@@ -376,7 +376,7 @@ class RestConfConfigDTO:
 
     @property
     def enable_waiting_room(self):
-        """Gets the enable_waiting_room of this RestConfConfigDTO.
+        r"""Gets the enable_waiting_room of this RestConfConfigDTO.
 
         开启或者关闭等候室。 * true：开启 * false：不开启
 
@@ -387,7 +387,7 @@ class RestConfConfigDTO:
 
     @enable_waiting_room.setter
     def enable_waiting_room(self, enable_waiting_room):
-        """Sets the enable_waiting_room of this RestConfConfigDTO.
+        r"""Sets the enable_waiting_room of this RestConfConfigDTO.
 
         开启或者关闭等候室。 * true：开启 * false：不开启
 
@@ -398,7 +398,7 @@ class RestConfConfigDTO:
 
     @property
     def is_host_camera_on(self):
-        """Gets the is_host_camera_on of this RestConfConfigDTO.
+        r"""Gets the is_host_camera_on of this RestConfConfigDTO.
 
         主持人入会是否开启摄像头。 * true：开启 * false：不开启
 
@@ -409,7 +409,7 @@ class RestConfConfigDTO:
 
     @is_host_camera_on.setter
     def is_host_camera_on(self, is_host_camera_on):
-        """Sets the is_host_camera_on of this RestConfConfigDTO.
+        r"""Sets the is_host_camera_on of this RestConfConfigDTO.
 
         主持人入会是否开启摄像头。 * true：开启 * false：不开启
 
@@ -420,7 +420,7 @@ class RestConfConfigDTO:
 
     @property
     def is_guest_camera_on(self):
-        """Gets the is_guest_camera_on of this RestConfConfigDTO.
+        r"""Gets the is_guest_camera_on of this RestConfConfigDTO.
 
         来宾入会是否开启摄像头。 * true：开启 * false：不开启
 
@@ -431,7 +431,7 @@ class RestConfConfigDTO:
 
     @is_guest_camera_on.setter
     def is_guest_camera_on(self, is_guest_camera_on):
-        """Sets the is_guest_camera_on of this RestConfConfigDTO.
+        r"""Sets the is_guest_camera_on of this RestConfConfigDTO.
 
         来宾入会是否开启摄像头。 * true：开启 * false：不开启
 

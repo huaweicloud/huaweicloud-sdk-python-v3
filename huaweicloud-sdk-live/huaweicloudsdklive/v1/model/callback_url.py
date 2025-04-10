@@ -29,7 +29,7 @@ class CallbackUrl:
     }
 
     def __init__(self, url=None, auth_sign_key=None, call_back_area=None):
-        """CallbackUrl
+        r"""CallbackUrl
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CallbackUrl:
 
     @property
     def url(self):
-        """Gets the url of this CallbackUrl.
+        r"""Gets the url of this CallbackUrl.
 
         回调地址
 
@@ -67,7 +67,7 @@ class CallbackUrl:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CallbackUrl.
+        r"""Sets the url of this CallbackUrl.
 
         回调地址
 
@@ -78,7 +78,7 @@ class CallbackUrl:
 
     @property
     def auth_sign_key(self):
-        """Gets the auth_sign_key of this CallbackUrl.
+        r"""Gets the auth_sign_key of this CallbackUrl.
 
         鉴权密钥
 
@@ -89,7 +89,7 @@ class CallbackUrl:
 
     @auth_sign_key.setter
     def auth_sign_key(self, auth_sign_key):
-        """Sets the auth_sign_key of this CallbackUrl.
+        r"""Sets the auth_sign_key of this CallbackUrl.
 
         鉴权密钥
 
@@ -100,7 +100,7 @@ class CallbackUrl:
 
     @property
     def call_back_area(self):
-        """Gets the call_back_area of this CallbackUrl.
+        r"""Gets the call_back_area of this CallbackUrl.
 
         接收回调通知服务器所在区域。 包含如下取值： - mainland_china：中国大陆区域。 - outside_mainland_china：中国大陆以外区域。
 
@@ -111,7 +111,7 @@ class CallbackUrl:
 
     @call_back_area.setter
     def call_back_area(self, call_back_area):
-        """Sets the call_back_area of this CallbackUrl.
+        r"""Sets the call_back_area of this CallbackUrl.
 
         接收回调通知服务器所在区域。 包含如下取值： - mainland_china：中国大陆区域。 - outside_mainland_china：中国大陆以外区域。
 

@@ -27,7 +27,7 @@ class CommonResponseErrorObject:
     }
 
     def __init__(self, code=None, reason=None):
-        """CommonResponseErrorObject
+        r"""CommonResponseErrorObject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CommonResponseErrorObject:
 
     @property
     def code(self):
-        """Gets the code of this CommonResponseErrorObject.
+        r"""Gets the code of this CommonResponseErrorObject.
 
         错误码
 
@@ -61,7 +61,7 @@ class CommonResponseErrorObject:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CommonResponseErrorObject.
+        r"""Sets the code of this CommonResponseErrorObject.
 
         错误码
 
@@ -72,7 +72,7 @@ class CommonResponseErrorObject:
 
     @property
     def reason(self):
-        """Gets the reason of this CommonResponseErrorObject.
+        r"""Gets the reason of this CommonResponseErrorObject.
 
         错误原因
 
@@ -83,7 +83,7 @@ class CommonResponseErrorObject:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CommonResponseErrorObject.
+        r"""Sets the reason of this CommonResponseErrorObject.
 
         错误原因
 

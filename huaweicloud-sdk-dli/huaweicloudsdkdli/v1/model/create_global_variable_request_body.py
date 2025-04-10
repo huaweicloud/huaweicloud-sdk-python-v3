@@ -29,7 +29,7 @@ class CreateGlobalVariableRequestBody:
     }
 
     def __init__(self, var_name=None, var_value=None, is_sensitive=None):
-        """CreateGlobalVariableRequestBody
+        r"""CreateGlobalVariableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateGlobalVariableRequestBody:
 
     @property
     def var_name(self):
-        """Gets the var_name of this CreateGlobalVariableRequestBody.
+        r"""Gets the var_name of this CreateGlobalVariableRequestBody.
 
         变量名称
 
@@ -66,7 +66,7 @@ class CreateGlobalVariableRequestBody:
 
     @var_name.setter
     def var_name(self, var_name):
-        """Sets the var_name of this CreateGlobalVariableRequestBody.
+        r"""Sets the var_name of this CreateGlobalVariableRequestBody.
 
         变量名称
 
@@ -77,7 +77,7 @@ class CreateGlobalVariableRequestBody:
 
     @property
     def var_value(self):
-        """Gets the var_value of this CreateGlobalVariableRequestBody.
+        r"""Gets the var_value of this CreateGlobalVariableRequestBody.
 
         变量的值
 
@@ -88,7 +88,7 @@ class CreateGlobalVariableRequestBody:
 
     @var_value.setter
     def var_value(self, var_value):
-        """Sets the var_value of this CreateGlobalVariableRequestBody.
+        r"""Sets the var_value of this CreateGlobalVariableRequestBody.
 
         变量的值
 
@@ -99,7 +99,7 @@ class CreateGlobalVariableRequestBody:
 
     @property
     def is_sensitive(self):
-        """Gets the is_sensitive of this CreateGlobalVariableRequestBody.
+        r"""Gets the is_sensitive of this CreateGlobalVariableRequestBody.
 
         是否为敏感变量
 
@@ -110,7 +110,7 @@ class CreateGlobalVariableRequestBody:
 
     @is_sensitive.setter
     def is_sensitive(self, is_sensitive):
-        """Sets the is_sensitive of this CreateGlobalVariableRequestBody.
+        r"""Sets the is_sensitive of this CreateGlobalVariableRequestBody.
 
         是否为敏感变量
 

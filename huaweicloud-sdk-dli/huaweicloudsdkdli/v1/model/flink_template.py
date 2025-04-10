@@ -33,7 +33,7 @@ class FlinkTemplate:
     }
 
     def __init__(self, template_id=None, name=None, desc=None, create_time=None, job_type=None):
-        """FlinkTemplate
+        r"""FlinkTemplate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class FlinkTemplate:
 
     @property
     def template_id(self):
-        """Gets the template_id of this FlinkTemplate.
+        r"""Gets the template_id of this FlinkTemplate.
 
         模板ID
 
@@ -82,7 +82,7 @@ class FlinkTemplate:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this FlinkTemplate.
+        r"""Sets the template_id of this FlinkTemplate.
 
         模板ID
 
@@ -93,7 +93,7 @@ class FlinkTemplate:
 
     @property
     def name(self):
-        """Gets the name of this FlinkTemplate.
+        r"""Gets the name of this FlinkTemplate.
 
         模板名称。
 
@@ -104,7 +104,7 @@ class FlinkTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlinkTemplate.
+        r"""Sets the name of this FlinkTemplate.
 
         模板名称。
 
@@ -115,7 +115,7 @@ class FlinkTemplate:
 
     @property
     def desc(self):
-        """Gets the desc of this FlinkTemplate.
+        r"""Gets the desc of this FlinkTemplate.
 
         模板描述。
 
@@ -126,7 +126,7 @@ class FlinkTemplate:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this FlinkTemplate.
+        r"""Sets the desc of this FlinkTemplate.
 
         模板描述。
 
@@ -137,7 +137,7 @@ class FlinkTemplate:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FlinkTemplate.
+        r"""Gets the create_time of this FlinkTemplate.
 
         模板创建时间。
 
@@ -148,7 +148,7 @@ class FlinkTemplate:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FlinkTemplate.
+        r"""Sets the create_time of this FlinkTemplate.
 
         模板创建时间。
 
@@ -159,7 +159,7 @@ class FlinkTemplate:
 
     @property
     def job_type(self):
-        """Gets the job_type of this FlinkTemplate.
+        r"""Gets the job_type of this FlinkTemplate.
 
         作业模板类型。
 
@@ -170,7 +170,7 @@ class FlinkTemplate:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this FlinkTemplate.
+        r"""Sets the job_type of this FlinkTemplate.
 
         作业模板类型。
 

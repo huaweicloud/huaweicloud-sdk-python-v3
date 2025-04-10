@@ -33,7 +33,7 @@ class Database:
     }
 
     def __init__(self, database_name=None, database_guid=None, database_qualified_name=None, table_count=None, data_size=None):
-        """Database
+        r"""Database
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Database:
 
     @property
     def database_name(self):
-        """Gets the database_name of this Database.
+        r"""Gets the database_name of this Database.
 
         数据库名称
 
@@ -82,7 +82,7 @@ class Database:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this Database.
+        r"""Sets the database_name of this Database.
 
         数据库名称
 
@@ -93,7 +93,7 @@ class Database:
 
     @property
     def database_guid(self):
-        """Gets the database_guid of this Database.
+        r"""Gets the database_guid of this Database.
 
         数据库guid
 
@@ -104,7 +104,7 @@ class Database:
 
     @database_guid.setter
     def database_guid(self, database_guid):
-        """Sets the database_guid of this Database.
+        r"""Sets the database_guid of this Database.
 
         数据库guid
 
@@ -115,7 +115,7 @@ class Database:
 
     @property
     def database_qualified_name(self):
-        """Gets the database_qualified_name of this Database.
+        r"""Gets the database_qualified_name of this Database.
 
         数据库的唯一标识名称
 
@@ -126,7 +126,7 @@ class Database:
 
     @database_qualified_name.setter
     def database_qualified_name(self, database_qualified_name):
-        """Sets the database_qualified_name of this Database.
+        r"""Sets the database_qualified_name of this Database.
 
         数据库的唯一标识名称
 
@@ -137,7 +137,7 @@ class Database:
 
     @property
     def table_count(self):
-        """Gets the table_count of this Database.
+        r"""Gets the table_count of this Database.
 
         数据库中表数目
 
@@ -148,7 +148,7 @@ class Database:
 
     @table_count.setter
     def table_count(self, table_count):
-        """Sets the table_count of this Database.
+        r"""Sets the table_count of this Database.
 
         数据库中表数目
 
@@ -159,7 +159,7 @@ class Database:
 
     @property
     def data_size(self):
-        """Gets the data_size of this Database.
+        r"""Gets the data_size of this Database.
 
         数据量大小
 
@@ -170,7 +170,7 @@ class Database:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this Database.
+        r"""Sets the data_size of this Database.
 
         数据量大小
 

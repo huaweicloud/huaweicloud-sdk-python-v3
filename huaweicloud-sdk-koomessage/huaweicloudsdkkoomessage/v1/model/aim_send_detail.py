@@ -45,7 +45,7 @@ class AIMSendDetail:
     }
 
     def __init__(self, msg_id=None, task_id=None, task_name=None, tpl_id=None, tpl_name=None, cust_flag=None, send_account=None, send_status=None, send_time=None, receive_time=None, result_code=None):
-        """AIMSendDetail
+        r"""AIMSendDetail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AIMSendDetail:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this AIMSendDetail.
+        r"""Gets the msg_id of this AIMSendDetail.
 
         发送明细的唯一标识ID。
 
@@ -124,7 +124,7 @@ class AIMSendDetail:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this AIMSendDetail.
+        r"""Sets the msg_id of this AIMSendDetail.
 
         发送明细的唯一标识ID。
 
@@ -135,7 +135,7 @@ class AIMSendDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this AIMSendDetail.
+        r"""Gets the task_id of this AIMSendDetail.
 
         任务ID。
 
@@ -146,7 +146,7 @@ class AIMSendDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AIMSendDetail.
+        r"""Sets the task_id of this AIMSendDetail.
 
         任务ID。
 
@@ -157,7 +157,7 @@ class AIMSendDetail:
 
     @property
     def task_name(self):
-        """Gets the task_name of this AIMSendDetail.
+        r"""Gets the task_name of this AIMSendDetail.
 
         任务名称。
 
@@ -168,7 +168,7 @@ class AIMSendDetail:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this AIMSendDetail.
+        r"""Sets the task_name of this AIMSendDetail.
 
         任务名称。
 
@@ -179,7 +179,7 @@ class AIMSendDetail:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AIMSendDetail.
+        r"""Gets the tpl_id of this AIMSendDetail.
 
         智能信息模板ID。
 
@@ -190,7 +190,7 @@ class AIMSendDetail:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AIMSendDetail.
+        r"""Sets the tpl_id of this AIMSendDetail.
 
         智能信息模板ID。
 
@@ -201,7 +201,7 @@ class AIMSendDetail:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this AIMSendDetail.
+        r"""Gets the tpl_name of this AIMSendDetail.
 
         智能信息模板名称。
 
@@ -212,7 +212,7 @@ class AIMSendDetail:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this AIMSendDetail.
+        r"""Sets the tpl_name of this AIMSendDetail.
 
         智能信息模板名称。
 
@@ -223,7 +223,7 @@ class AIMSendDetail:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this AIMSendDetail.
+        r"""Gets the cust_flag of this AIMSendDetail.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。
 
@@ -234,7 +234,7 @@ class AIMSendDetail:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this AIMSendDetail.
+        r"""Sets the cust_flag of this AIMSendDetail.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。
 
@@ -245,7 +245,7 @@ class AIMSendDetail:
 
     @property
     def send_account(self):
-        """Gets the send_account of this AIMSendDetail.
+        r"""Gets the send_account of this AIMSendDetail.
 
         发送的目标手机号。
 
@@ -256,7 +256,7 @@ class AIMSendDetail:
 
     @send_account.setter
     def send_account(self, send_account):
-        """Sets the send_account of this AIMSendDetail.
+        r"""Sets the send_account of this AIMSendDetail.
 
         发送的目标手机号。
 
@@ -267,7 +267,7 @@ class AIMSendDetail:
 
     @property
     def send_status(self):
-        """Gets the send_status of this AIMSendDetail.
+        r"""Gets the send_status of this AIMSendDetail.
 
         发送状态。 - success：发送成功  - fail：发送失败  - sending：发送中 
 
@@ -278,7 +278,7 @@ class AIMSendDetail:
 
     @send_status.setter
     def send_status(self, send_status):
-        """Sets the send_status of this AIMSendDetail.
+        r"""Sets the send_status of this AIMSendDetail.
 
         发送状态。 - success：发送成功  - fail：发送失败  - sending：发送中 
 
@@ -289,7 +289,7 @@ class AIMSendDetail:
 
     @property
     def send_time(self):
-        """Gets the send_time of this AIMSendDetail.
+        r"""Gets the send_time of this AIMSendDetail.
 
         发送时间。
 
@@ -300,7 +300,7 @@ class AIMSendDetail:
 
     @send_time.setter
     def send_time(self, send_time):
-        """Sets the send_time of this AIMSendDetail.
+        r"""Sets the send_time of this AIMSendDetail.
 
         发送时间。
 
@@ -311,7 +311,7 @@ class AIMSendDetail:
 
     @property
     def receive_time(self):
-        """Gets the receive_time of this AIMSendDetail.
+        r"""Gets the receive_time of this AIMSendDetail.
 
         接收时间。
 
@@ -322,7 +322,7 @@ class AIMSendDetail:
 
     @receive_time.setter
     def receive_time(self, receive_time):
-        """Sets the receive_time of this AIMSendDetail.
+        r"""Sets the receive_time of this AIMSendDetail.
 
         接收时间。
 
@@ -333,7 +333,7 @@ class AIMSendDetail:
 
     @property
     def result_code(self):
-        """Gets the result_code of this AIMSendDetail.
+        r"""Gets the result_code of this AIMSendDetail.
 
         发送错误码。
 
@@ -344,7 +344,7 @@ class AIMSendDetail:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this AIMSendDetail.
+        r"""Sets the result_code of this AIMSendDetail.
 
         发送错误码。
 

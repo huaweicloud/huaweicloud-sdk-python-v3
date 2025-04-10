@@ -41,7 +41,7 @@ class CreateDataLevelTableCompareJobReq:
     }
 
     def __init__(self, type=None, start_time=None, compare_mode=None, compare_object=None, options=None, compare_object_with_token=None, compare_task_num=None, compare_transformation_infos=None, proportion_value=None):
-        """CreateDataLevelTableCompareJobReq
+        r"""CreateDataLevelTableCompareJobReq
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the type of this CreateDataLevelTableCompareJobReq.
 
         对比类型。 - lines：行数对比 - contents：内容对比 - random：抽样对比，当前仅支持gaussdbv5、gaussdbv5-to-postgresql、gaussdbv5ha-to-postgresql链路。
 
@@ -109,7 +109,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the type of this CreateDataLevelTableCompareJobReq.
 
         对比类型。 - lines：行数对比 - contents：内容对比 - random：抽样对比，当前仅支持gaussdbv5、gaussdbv5-to-postgresql、gaussdbv5ha-to-postgresql链路。
 
@@ -120,7 +120,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the start_time of this CreateDataLevelTableCompareJobReq.
 
         对比任务启动时间，时间戳格式，取值为空代表立即启动。
 
@@ -131,7 +131,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the start_time of this CreateDataLevelTableCompareJobReq.
 
         对比任务启动时间，时间戳格式，取值为空代表立即启动。
 
@@ -142,7 +142,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def compare_mode(self):
-        """Gets the compare_mode of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the compare_mode of this CreateDataLevelTableCompareJobReq.
 
         数据级对比模式，取值为空时需要在compare_object或者compare_object_with_token传对象信息，quick_comparison-快速对比。 取值：quick_comparison
 
@@ -153,7 +153,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @compare_mode.setter
     def compare_mode(self, compare_mode):
-        """Sets the compare_mode of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the compare_mode of this CreateDataLevelTableCompareJobReq.
 
         数据级对比模式，取值为空时需要在compare_object或者compare_object_with_token传对象信息，quick_comparison-快速对比。 取值：quick_comparison
 
@@ -164,7 +164,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def compare_object(self):
-        """Gets the compare_object of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the compare_object of this CreateDataLevelTableCompareJobReq.
 
         数据级对比的对象。
 
@@ -175,7 +175,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @compare_object.setter
     def compare_object(self, compare_object):
-        """Sets the compare_object of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the compare_object of this CreateDataLevelTableCompareJobReq.
 
         数据级对比的对象。
 
@@ -186,7 +186,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def options(self):
-        """Gets the options of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the options of this CreateDataLevelTableCompareJobReq.
 
         对比配置项，key-value形式。 内容对比支持以下配置项： - 对比方式配置，key：contentCompareType，value：dynamic表示动态对比，static表示静态对比。 - lob字段对比类型配置，key：lobCompare，value：ignore表示忽略，length表示长度对比。  行数对比支持以下配置项： - 对比策略配置，多表归一情况下适用，key：comparePolicy，value：normal表示正常对比，manyToOne表示多对一对比。
 
@@ -197,7 +197,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the options of this CreateDataLevelTableCompareJobReq.
 
         对比配置项，key-value形式。 内容对比支持以下配置项： - 对比方式配置，key：contentCompareType，value：dynamic表示动态对比，static表示静态对比。 - lob字段对比类型配置，key：lobCompare，value：ignore表示忽略，length表示长度对比。  行数对比支持以下配置项： - 对比策略配置，多表归一情况下适用，key：comparePolicy，value：normal表示正常对比，manyToOne表示多对一对比。
 
@@ -208,7 +208,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def compare_object_with_token(self):
-        """Gets the compare_object_with_token of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the compare_object_with_token of this CreateDataLevelTableCompareJobReq.
 
         数据级对比的对象（Cassandra灾备专用，带token信息）。
 
@@ -219,7 +219,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @compare_object_with_token.setter
     def compare_object_with_token(self, compare_object_with_token):
-        """Sets the compare_object_with_token of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the compare_object_with_token of this CreateDataLevelTableCompareJobReq.
 
         数据级对比的对象（Cassandra灾备专用，带token信息）。
 
@@ -230,7 +230,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def compare_task_num(self):
-        """Gets the compare_task_num of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the compare_task_num of this CreateDataLevelTableCompareJobReq.
 
         对比任务线程数量，当前仅cloudDataGuard-cassandra和cloudDataGuard-gausscassandra-to-gausscassandra链路支持。
 
@@ -241,7 +241,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @compare_task_num.setter
     def compare_task_num(self, compare_task_num):
-        """Sets the compare_task_num of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the compare_task_num of this CreateDataLevelTableCompareJobReq.
 
         对比任务线程数量，当前仅cloudDataGuard-cassandra和cloudDataGuard-gausscassandra-to-gausscassandra链路支持。
 
@@ -252,7 +252,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def compare_transformation_infos(self):
-        """Gets the compare_transformation_infos of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the compare_transformation_infos of this CreateDataLevelTableCompareJobReq.
 
         过滤数据信息。
 
@@ -263,7 +263,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @compare_transformation_infos.setter
     def compare_transformation_infos(self, compare_transformation_infos):
-        """Sets the compare_transformation_infos of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the compare_transformation_infos of this CreateDataLevelTableCompareJobReq.
 
         过滤数据信息。
 
@@ -274,7 +274,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @property
     def proportion_value(self):
-        """Gets the proportion_value of this CreateDataLevelTableCompareJobReq.
+        r"""Gets the proportion_value of this CreateDataLevelTableCompareJobReq.
 
         抽样比例，对比类型为抽样对比时填写。
 
@@ -285,7 +285,7 @@ class CreateDataLevelTableCompareJobReq:
 
     @proportion_value.setter
     def proportion_value(self, proportion_value):
-        """Sets the proportion_value of this CreateDataLevelTableCompareJobReq.
+        r"""Sets the proportion_value of this CreateDataLevelTableCompareJobReq.
 
         抽样比例，对比类型为抽样对比时填写。
 

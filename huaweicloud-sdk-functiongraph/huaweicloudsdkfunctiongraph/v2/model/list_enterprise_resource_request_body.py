@@ -35,7 +35,7 @@ class ListEnterpriseResourceRequestBody:
     }
 
     def __init__(self, without_any_tag=None, limit=None, offset=None, action=None, matches=None, sys_tags=None):
-        """ListEnterpriseResourceRequestBody
+        r"""ListEnterpriseResourceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListEnterpriseResourceRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ListEnterpriseResourceRequestBody.
+        r"""Gets the without_any_tag of this ListEnterpriseResourceRequestBody.
 
         是否通过标签过滤
 
@@ -89,7 +89,7 @@ class ListEnterpriseResourceRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ListEnterpriseResourceRequestBody.
+        r"""Sets the without_any_tag of this ListEnterpriseResourceRequestBody.
 
         是否通过标签过滤
 
@@ -100,7 +100,7 @@ class ListEnterpriseResourceRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnterpriseResourceRequestBody.
+        r"""Gets the limit of this ListEnterpriseResourceRequestBody.
 
         每页显示条数
 
@@ -111,7 +111,7 @@ class ListEnterpriseResourceRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnterpriseResourceRequestBody.
+        r"""Sets the limit of this ListEnterpriseResourceRequestBody.
 
         每页显示条数
 
@@ -122,7 +122,7 @@ class ListEnterpriseResourceRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnterpriseResourceRequestBody.
+        r"""Gets the offset of this ListEnterpriseResourceRequestBody.
 
         查询偏移量
 
@@ -133,7 +133,7 @@ class ListEnterpriseResourceRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnterpriseResourceRequestBody.
+        r"""Sets the offset of this ListEnterpriseResourceRequestBody.
 
         查询偏移量
 
@@ -144,7 +144,7 @@ class ListEnterpriseResourceRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListEnterpriseResourceRequestBody.
+        r"""Gets the action of this ListEnterpriseResourceRequestBody.
 
         查询指定action
 
@@ -155,7 +155,7 @@ class ListEnterpriseResourceRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListEnterpriseResourceRequestBody.
+        r"""Sets the action of this ListEnterpriseResourceRequestBody.
 
         查询指定action
 
@@ -166,7 +166,7 @@ class ListEnterpriseResourceRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListEnterpriseResourceRequestBody.
+        r"""Gets the matches of this ListEnterpriseResourceRequestBody.
 
         查询指定键值对
 
@@ -177,7 +177,7 @@ class ListEnterpriseResourceRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListEnterpriseResourceRequestBody.
+        r"""Sets the matches of this ListEnterpriseResourceRequestBody.
 
         查询指定键值对
 
@@ -188,7 +188,7 @@ class ListEnterpriseResourceRequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListEnterpriseResourceRequestBody.
+        r"""Gets the sys_tags of this ListEnterpriseResourceRequestBody.
 
         查询指定系统标签列表
 
@@ -199,7 +199,7 @@ class ListEnterpriseResourceRequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListEnterpriseResourceRequestBody.
+        r"""Sets the sys_tags of this ListEnterpriseResourceRequestBody.
 
         查询指定系统标签列表
 

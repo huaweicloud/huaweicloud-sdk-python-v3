@@ -37,7 +37,7 @@ class ApplicationItem:
     }
 
     def __init__(self, name=None, platform=None, create_time=None, application_urn=None, application_id=None, enabled=None, apple_certificate_expiration_date=None):
-        """ApplicationItem
+        r"""ApplicationItem
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ApplicationItem:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationItem.
+        r"""Gets the name of this ApplicationItem.
 
         创建application的名字。
 
@@ -90,7 +90,7 @@ class ApplicationItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationItem.
+        r"""Sets the name of this ApplicationItem.
 
         创建application的名字。
 
@@ -101,7 +101,7 @@ class ApplicationItem:
 
     @property
     def platform(self):
-        """Gets the platform of this ApplicationItem.
+        r"""Gets the platform of this ApplicationItem.
 
         应用平台。
 
@@ -112,7 +112,7 @@ class ApplicationItem:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ApplicationItem.
+        r"""Sets the platform of this ApplicationItem.
 
         应用平台。
 
@@ -123,7 +123,7 @@ class ApplicationItem:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApplicationItem.
+        r"""Gets the create_time of this ApplicationItem.
 
         创建application的时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -134,7 +134,7 @@ class ApplicationItem:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApplicationItem.
+        r"""Sets the create_time of this ApplicationItem.
 
         创建application的时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -145,7 +145,7 @@ class ApplicationItem:
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this ApplicationItem.
+        r"""Gets the application_urn of this ApplicationItem.
 
         Application的唯一资源标识。
 
@@ -156,7 +156,7 @@ class ApplicationItem:
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this ApplicationItem.
+        r"""Sets the application_urn of this ApplicationItem.
 
         Application的唯一资源标识。
 
@@ -167,7 +167,7 @@ class ApplicationItem:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ApplicationItem.
+        r"""Gets the application_id of this ApplicationItem.
 
         Application的唯一标识ID。
 
@@ -178,7 +178,7 @@ class ApplicationItem:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ApplicationItem.
+        r"""Sets the application_id of this ApplicationItem.
 
         Application的唯一标识ID。
 
@@ -189,7 +189,7 @@ class ApplicationItem:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ApplicationItem.
+        r"""Gets the enabled of this ApplicationItem.
 
         应用平台是否启用。
 
@@ -200,7 +200,7 @@ class ApplicationItem:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ApplicationItem.
+        r"""Sets the enabled of this ApplicationItem.
 
         应用平台是否启用。
 
@@ -211,7 +211,7 @@ class ApplicationItem:
 
     @property
     def apple_certificate_expiration_date(self):
-        """Gets the apple_certificate_expiration_date of this ApplicationItem.
+        r"""Gets the apple_certificate_expiration_date of this ApplicationItem.
 
         苹果证书过期时间APNS、APNS_SANDBOX平台特有属性时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -222,7 +222,7 @@ class ApplicationItem:
 
     @apple_certificate_expiration_date.setter
     def apple_certificate_expiration_date(self, apple_certificate_expiration_date):
-        """Sets the apple_certificate_expiration_date of this ApplicationItem.
+        r"""Sets the apple_certificate_expiration_date of this ApplicationItem.
 
         苹果证书过期时间APNS、APNS_SANDBOX平台特有属性时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 

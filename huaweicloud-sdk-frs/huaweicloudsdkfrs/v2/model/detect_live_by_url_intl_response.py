@@ -30,7 +30,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
     }
 
     def __init__(self, video_result=None, warning_list=None, x_request_id=None):
-        """DetectLiveByUrlIntlResponse
+        r"""DetectLiveByUrlIntlResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
 
     @property
     def video_result(self):
-        """Gets the video_result of this DetectLiveByUrlIntlResponse.
+        r"""Gets the video_result of this DetectLiveByUrlIntlResponse.
 
         :return: The video_result of this DetectLiveByUrlIntlResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
@@ -67,7 +67,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
 
     @video_result.setter
     def video_result(self, video_result):
-        """Sets the video_result of this DetectLiveByUrlIntlResponse.
+        r"""Sets the video_result of this DetectLiveByUrlIntlResponse.
 
         :param video_result: The video_result of this DetectLiveByUrlIntlResponse.
         :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
@@ -76,7 +76,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
 
     @property
     def warning_list(self):
-        """Gets the warning_list of this DetectLiveByUrlIntlResponse.
+        r"""Gets the warning_list of this DetectLiveByUrlIntlResponse.
 
         [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
 
@@ -87,7 +87,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
 
     @warning_list.setter
     def warning_list(self, warning_list):
-        """Sets the warning_list of this DetectLiveByUrlIntlResponse.
+        r"""Sets the warning_list of this DetectLiveByUrlIntlResponse.
 
         [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
 
@@ -98,7 +98,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectLiveByUrlIntlResponse.
+        r"""Gets the x_request_id of this DetectLiveByUrlIntlResponse.
 
         :return: The x_request_id of this DetectLiveByUrlIntlResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DetectLiveByUrlIntlResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectLiveByUrlIntlResponse.
+        r"""Sets the x_request_id of this DetectLiveByUrlIntlResponse.
 
         :param x_request_id: The x_request_id of this DetectLiveByUrlIntlResponse.
         :type x_request_id: str

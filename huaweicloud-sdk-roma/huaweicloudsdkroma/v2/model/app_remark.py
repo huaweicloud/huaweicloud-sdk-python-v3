@@ -23,7 +23,7 @@ class AppRemark:
     }
 
     def __init__(self):
-        """AppRemark
+        r"""AppRemark
 
         The model defined in huaweicloud sdk
 

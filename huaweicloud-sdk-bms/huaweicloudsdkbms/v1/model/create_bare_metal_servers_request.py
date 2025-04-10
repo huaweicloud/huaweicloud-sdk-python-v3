@@ -25,7 +25,7 @@ class CreateBareMetalServersRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBareMetalServersRequest
+        r"""CreateBareMetalServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBareMetalServersRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBareMetalServersRequest.
+        r"""Gets the body of this CreateBareMetalServersRequest.
 
         :return: The body of this CreateBareMetalServersRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.CreateBaremetalServersBody`
@@ -52,7 +52,7 @@ class CreateBareMetalServersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBareMetalServersRequest.
+        r"""Sets the body of this CreateBareMetalServersRequest.
 
         :param body: The body of this CreateBareMetalServersRequest.
         :type body: :class:`huaweicloudsdkbms.v1.CreateBaremetalServersBody`

@@ -27,7 +27,7 @@ class BatchDeleteVpcTagsRequest:
     }
 
     def __init__(self, vpc_id=None, body=None):
-        """BatchDeleteVpcTagsRequest
+        r"""BatchDeleteVpcTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteVpcTagsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this BatchDeleteVpcTagsRequest.
+        r"""Gets the vpc_id of this BatchDeleteVpcTagsRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -60,7 +60,7 @@ class BatchDeleteVpcTagsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this BatchDeleteVpcTagsRequest.
+        r"""Sets the vpc_id of this BatchDeleteVpcTagsRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -71,7 +71,7 @@ class BatchDeleteVpcTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteVpcTagsRequest.
+        r"""Gets the body of this BatchDeleteVpcTagsRequest.
 
         :return: The body of this BatchDeleteVpcTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteVpcTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteVpcTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteVpcTagsRequest.
+        r"""Sets the body of this BatchDeleteVpcTagsRequest.
 
         :param body: The body of this BatchDeleteVpcTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.BatchDeleteVpcTagsRequestBody`

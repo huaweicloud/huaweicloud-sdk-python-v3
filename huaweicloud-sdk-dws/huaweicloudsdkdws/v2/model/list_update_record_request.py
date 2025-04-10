@@ -29,7 +29,7 @@ class ListUpdateRecordRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None):
-        """ListUpdateRecordRequest
+        r"""ListUpdateRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListUpdateRecordRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListUpdateRecordRequest.
+        r"""Gets the cluster_id of this ListUpdateRecordRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class ListUpdateRecordRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListUpdateRecordRequest.
+        r"""Sets the cluster_id of this ListUpdateRecordRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class ListUpdateRecordRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUpdateRecordRequest.
+        r"""Gets the offset of this ListUpdateRecordRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ListUpdateRecordRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUpdateRecordRequest.
+        r"""Sets the offset of this ListUpdateRecordRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ListUpdateRecordRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUpdateRecordRequest.
+        r"""Gets the limit of this ListUpdateRecordRequest.
 
         条目数
 
@@ -111,7 +111,7 @@ class ListUpdateRecordRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUpdateRecordRequest.
+        r"""Sets the limit of this ListUpdateRecordRequest.
 
         条目数
 

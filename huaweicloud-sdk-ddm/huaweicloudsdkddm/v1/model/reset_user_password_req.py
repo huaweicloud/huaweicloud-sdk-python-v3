@@ -25,7 +25,7 @@ class ResetUserPasswordReq:
     }
 
     def __init__(self, password=None):
-        """ResetUserPasswordReq
+        r"""ResetUserPasswordReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResetUserPasswordReq:
 
     @property
     def password(self):
-        """Gets the password of this ResetUserPasswordReq.
+        r"""Gets the password of this ResetUserPasswordReq.
 
         重置后的新密码。
 
@@ -53,7 +53,7 @@ class ResetUserPasswordReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ResetUserPasswordReq.
+        r"""Sets the password of this ResetUserPasswordReq.
 
         重置后的新密码。
 

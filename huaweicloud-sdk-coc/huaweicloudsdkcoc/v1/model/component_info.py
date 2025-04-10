@@ -35,7 +35,7 @@ class ComponentInfo:
     }
 
     def __init__(self, id=None, name=None, code=None, domain_id=None, application_id=None, path=None):
-        """ComponentInfo
+        r"""ComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ComponentInfo:
 
     @property
     def id(self):
-        """Gets the id of this ComponentInfo.
+        r"""Gets the id of this ComponentInfo.
 
         :return: The id of this ComponentInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class ComponentInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentInfo.
+        r"""Sets the id of this ComponentInfo.
 
         :param id: The id of this ComponentInfo.
         :type id: str
@@ -96,7 +96,7 @@ class ComponentInfo:
 
     @property
     def name(self):
-        """Gets the name of this ComponentInfo.
+        r"""Gets the name of this ComponentInfo.
 
         :return: The name of this ComponentInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class ComponentInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentInfo.
+        r"""Sets the name of this ComponentInfo.
 
         :param name: The name of this ComponentInfo.
         :type name: str
@@ -114,7 +114,7 @@ class ComponentInfo:
 
     @property
     def code(self):
-        """Gets the code of this ComponentInfo.
+        r"""Gets the code of this ComponentInfo.
 
         :return: The code of this ComponentInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class ComponentInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ComponentInfo.
+        r"""Sets the code of this ComponentInfo.
 
         :param code: The code of this ComponentInfo.
         :type code: str
@@ -132,7 +132,7 @@ class ComponentInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ComponentInfo.
+        r"""Gets the domain_id of this ComponentInfo.
 
         :return: The domain_id of this ComponentInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class ComponentInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ComponentInfo.
+        r"""Sets the domain_id of this ComponentInfo.
 
         :param domain_id: The domain_id of this ComponentInfo.
         :type domain_id: str
@@ -150,7 +150,7 @@ class ComponentInfo:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ComponentInfo.
+        r"""Gets the application_id of this ComponentInfo.
 
         :return: The application_id of this ComponentInfo.
         :rtype: str
@@ -159,7 +159,7 @@ class ComponentInfo:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ComponentInfo.
+        r"""Sets the application_id of this ComponentInfo.
 
         :param application_id: The application_id of this ComponentInfo.
         :type application_id: str
@@ -168,7 +168,7 @@ class ComponentInfo:
 
     @property
     def path(self):
-        """Gets the path of this ComponentInfo.
+        r"""Gets the path of this ComponentInfo.
 
         :return: The path of this ComponentInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class ComponentInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ComponentInfo.
+        r"""Sets the path of this ComponentInfo.
 
         :param path: The path of this ComponentInfo.
         :type path: str

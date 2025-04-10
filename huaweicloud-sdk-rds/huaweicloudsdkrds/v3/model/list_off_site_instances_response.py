@@ -28,7 +28,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
     }
 
     def __init__(self, offsite_backup_instances=None, total_count=None):
-        """ListOffSiteInstancesResponse
+        r"""ListOffSiteInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
 
     @property
     def offsite_backup_instances(self):
-        """Gets the offsite_backup_instances of this ListOffSiteInstancesResponse.
+        r"""Gets the offsite_backup_instances of this ListOffSiteInstancesResponse.
 
         跨区域备份实例信息。
 
@@ -62,7 +62,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
 
     @offsite_backup_instances.setter
     def offsite_backup_instances(self, offsite_backup_instances):
-        """Sets the offsite_backup_instances of this ListOffSiteInstancesResponse.
+        r"""Sets the offsite_backup_instances of this ListOffSiteInstancesResponse.
 
         跨区域备份实例信息。
 
@@ -73,7 +73,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListOffSiteInstancesResponse.
+        r"""Gets the total_count of this ListOffSiteInstancesResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListOffSiteInstancesResponse.
+        r"""Sets the total_count of this ListOffSiteInstancesResponse.
 
         总记录数。
 

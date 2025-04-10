@@ -29,7 +29,7 @@ class DeleteKvRequestBody:
     }
 
     def __init__(self, table_name=None, primary_key=None, condition_expression=None):
-        """DeleteKvRequestBody
+        r"""DeleteKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteKvRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteKvRequestBody.
+        r"""Gets the table_name of this DeleteKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -66,7 +66,7 @@ class DeleteKvRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteKvRequestBody.
+        r"""Sets the table_name of this DeleteKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -77,7 +77,7 @@ class DeleteKvRequestBody:
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this DeleteKvRequestBody.
+        r"""Gets the primary_key of this DeleteKvRequestBody.
 
         用户自定义的主键名及值。 > 内容字段为主键字段名和值，组合索引多个元素。
 
@@ -88,7 +88,7 @@ class DeleteKvRequestBody:
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this DeleteKvRequestBody.
+        r"""Sets the primary_key of this DeleteKvRequestBody.
 
         用户自定义的主键名及值。 > 内容字段为主键字段名和值，组合索引多个元素。
 
@@ -99,7 +99,7 @@ class DeleteKvRequestBody:
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this DeleteKvRequestBody.
+        r"""Gets the condition_expression of this DeleteKvRequestBody.
 
         :return: The condition_expression of this DeleteKvRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -108,7 +108,7 @@ class DeleteKvRequestBody:
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this DeleteKvRequestBody.
+        r"""Sets the condition_expression of this DeleteKvRequestBody.
 
         :param condition_expression: The condition_expression of this DeleteKvRequestBody.
         :type condition_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`

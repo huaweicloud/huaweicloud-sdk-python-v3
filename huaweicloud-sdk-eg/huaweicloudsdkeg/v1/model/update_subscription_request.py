@@ -29,7 +29,7 @@ class UpdateSubscriptionRequest:
     }
 
     def __init__(self, subscription_id=None, enterprise_project_id=None, body=None):
-        """UpdateSubscriptionRequest
+        r"""UpdateSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateSubscriptionRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this UpdateSubscriptionRequest.
+        r"""Gets the subscription_id of this UpdateSubscriptionRequest.
 
         事件订阅ID
 
@@ -67,7 +67,7 @@ class UpdateSubscriptionRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this UpdateSubscriptionRequest.
+        r"""Sets the subscription_id of this UpdateSubscriptionRequest.
 
         事件订阅ID
 
@@ -78,7 +78,7 @@ class UpdateSubscriptionRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateSubscriptionRequest.
+        r"""Gets the enterprise_project_id of this UpdateSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -89,7 +89,7 @@ class UpdateSubscriptionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateSubscriptionRequest.
+        r"""Sets the enterprise_project_id of this UpdateSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -100,7 +100,7 @@ class UpdateSubscriptionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubscriptionRequest.
+        r"""Gets the body of this UpdateSubscriptionRequest.
 
         :return: The body of this UpdateSubscriptionRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionUpdateReq`
@@ -109,7 +109,7 @@ class UpdateSubscriptionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubscriptionRequest.
+        r"""Sets the body of this UpdateSubscriptionRequest.
 
         :param body: The body of this UpdateSubscriptionRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionUpdateReq`

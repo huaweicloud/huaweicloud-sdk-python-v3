@@ -29,7 +29,7 @@ class SimCardFlowItem:
     }
 
     def __init__(self, sim_card_id=None, iccid=None, flow=None):
-        """SimCardFlowItem
+        r"""SimCardFlowItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SimCardFlowItem:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SimCardFlowItem.
+        r"""Gets the sim_card_id of this SimCardFlowItem.
 
         sim卡标识
 
@@ -68,7 +68,7 @@ class SimCardFlowItem:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SimCardFlowItem.
+        r"""Sets the sim_card_id of this SimCardFlowItem.
 
         sim卡标识
 
@@ -79,7 +79,7 @@ class SimCardFlowItem:
 
     @property
     def iccid(self):
-        """Gets the iccid of this SimCardFlowItem.
+        r"""Gets the iccid of this SimCardFlowItem.
 
         容器ID
 
@@ -90,7 +90,7 @@ class SimCardFlowItem:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this SimCardFlowItem.
+        r"""Sets the iccid of this SimCardFlowItem.
 
         容器ID
 
@@ -101,7 +101,7 @@ class SimCardFlowItem:
 
     @property
     def flow(self):
-        """Gets the flow of this SimCardFlowItem.
+        r"""Gets the flow of this SimCardFlowItem.
 
         流量
 
@@ -112,7 +112,7 @@ class SimCardFlowItem:
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this SimCardFlowItem.
+        r"""Sets the flow of this SimCardFlowItem.
 
         流量
 

@@ -27,7 +27,7 @@ class TmsUpdatePublicReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """TmsUpdatePublicReq
+        r"""TmsUpdatePublicReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TmsUpdatePublicReq:
 
     @property
     def action(self):
-        """Gets the action of this TmsUpdatePublicReq.
+        r"""Gets the action of this TmsUpdatePublicReq.
 
         操作标识：create（创建），delete（删除）
 
@@ -59,7 +59,7 @@ class TmsUpdatePublicReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this TmsUpdatePublicReq.
+        r"""Sets the action of this TmsUpdatePublicReq.
 
         操作标识：create（创建），delete（删除）
 
@@ -70,7 +70,7 @@ class TmsUpdatePublicReq:
 
     @property
     def tags(self):
-        """Gets the tags of this TmsUpdatePublicReq.
+        r"""Gets the tags of this TmsUpdatePublicReq.
 
         标签列表。  一个实例默认最多支持创建20个标签。
 
@@ -81,7 +81,7 @@ class TmsUpdatePublicReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TmsUpdatePublicReq.
+        r"""Sets the tags of this TmsUpdatePublicReq.
 
         标签列表。  一个实例默认最多支持创建20个标签。
 

@@ -29,7 +29,7 @@ class DeclineSecurityApplicationRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """DeclineSecurityApplicationRequest
+        r"""DeclineSecurityApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeclineSecurityApplicationRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeclineSecurityApplicationRequest.
+        r"""Gets the workspace of this DeclineSecurityApplicationRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class DeclineSecurityApplicationRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeclineSecurityApplicationRequest.
+        r"""Sets the workspace of this DeclineSecurityApplicationRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class DeclineSecurityApplicationRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeclineSecurityApplicationRequest.
+        r"""Gets the id of this DeclineSecurityApplicationRequest.
 
         工单id
 
@@ -88,7 +88,7 @@ class DeclineSecurityApplicationRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeclineSecurityApplicationRequest.
+        r"""Sets the id of this DeclineSecurityApplicationRequest.
 
         工单id
 
@@ -99,7 +99,7 @@ class DeclineSecurityApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeclineSecurityApplicationRequest.
+        r"""Gets the body of this DeclineSecurityApplicationRequest.
 
         :return: The body of this DeclineSecurityApplicationRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ReasonDTO`
@@ -108,7 +108,7 @@ class DeclineSecurityApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeclineSecurityApplicationRequest.
+        r"""Sets the body of this DeclineSecurityApplicationRequest.
 
         :param body: The body of this DeclineSecurityApplicationRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ReasonDTO`

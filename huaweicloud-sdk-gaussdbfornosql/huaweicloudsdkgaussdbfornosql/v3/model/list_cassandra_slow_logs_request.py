@@ -27,7 +27,7 @@ class ListCassandraSlowLogsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListCassandraSlowLogsRequest
+        r"""ListCassandraSlowLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListCassandraSlowLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCassandraSlowLogsRequest.
+        r"""Gets the instance_id of this ListCassandraSlowLogsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class ListCassandraSlowLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCassandraSlowLogsRequest.
+        r"""Sets the instance_id of this ListCassandraSlowLogsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class ListCassandraSlowLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCassandraSlowLogsRequest.
+        r"""Gets the body of this ListCassandraSlowLogsRequest.
 
         :return: The body of this ListCassandraSlowLogsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListCassandraSlowLogsRequestBody`
@@ -80,7 +80,7 @@ class ListCassandraSlowLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCassandraSlowLogsRequest.
+        r"""Sets the body of this ListCassandraSlowLogsRequest.
 
         :param body: The body of this ListCassandraSlowLogsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListCassandraSlowLogsRequestBody`

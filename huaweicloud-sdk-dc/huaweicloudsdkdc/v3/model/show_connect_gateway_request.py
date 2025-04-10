@@ -25,7 +25,7 @@ class ShowConnectGatewayRequest:
     }
 
     def __init__(self, connect_gateway_id=None):
-        """ShowConnectGatewayRequest
+        r"""ShowConnectGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConnectGatewayRequest:
 
     @property
     def connect_gateway_id(self):
-        """Gets the connect_gateway_id of this ShowConnectGatewayRequest.
+        r"""Gets the connect_gateway_id of this ShowConnectGatewayRequest.
 
         互联网关ID
 
@@ -53,7 +53,7 @@ class ShowConnectGatewayRequest:
 
     @connect_gateway_id.setter
     def connect_gateway_id(self, connect_gateway_id):
-        """Sets the connect_gateway_id of this ShowConnectGatewayRequest.
+        r"""Sets the connect_gateway_id of this ShowConnectGatewayRequest.
 
         互联网关ID
 

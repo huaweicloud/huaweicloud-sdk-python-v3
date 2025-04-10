@@ -25,7 +25,7 @@ class UpdateDomainApiAclPolicyRequestBody:
     }
 
     def __init__(self, api_acl_policy=None):
-        """UpdateDomainApiAclPolicyRequestBody
+        r"""UpdateDomainApiAclPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDomainApiAclPolicyRequestBody:
 
     @property
     def api_acl_policy(self):
-        """Gets the api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
+        r"""Gets the api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
 
         :return: The api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
@@ -51,7 +51,7 @@ class UpdateDomainApiAclPolicyRequestBody:
 
     @api_acl_policy.setter
     def api_acl_policy(self, api_acl_policy):
-        """Sets the api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
+        r"""Sets the api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
 
         :param api_acl_policy: The api_acl_policy of this UpdateDomainApiAclPolicyRequestBody.
         :type api_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyOption`

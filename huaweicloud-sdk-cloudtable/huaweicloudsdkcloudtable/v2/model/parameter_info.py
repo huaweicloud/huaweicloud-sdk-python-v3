@@ -41,7 +41,7 @@ class ParameterInfo:
     }
 
     def __init__(self, id=None, name=None, default_value=None, value_type=None, running_value=None, unit=None, reboot=None, value_range=None, description=None):
-        """ParameterInfo
+        r"""ParameterInfo
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ParameterInfo:
 
     @property
     def id(self):
-        """Gets the id of this ParameterInfo.
+        r"""Gets the id of this ParameterInfo.
 
         参数ID
 
@@ -102,7 +102,7 @@ class ParameterInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ParameterInfo.
+        r"""Sets the id of this ParameterInfo.
 
         参数ID
 
@@ -113,7 +113,7 @@ class ParameterInfo:
 
     @property
     def name(self):
-        """Gets the name of this ParameterInfo.
+        r"""Gets the name of this ParameterInfo.
 
         配置名称
 
@@ -124,7 +124,7 @@ class ParameterInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParameterInfo.
+        r"""Sets the name of this ParameterInfo.
 
         配置名称
 
@@ -135,7 +135,7 @@ class ParameterInfo:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ParameterInfo.
+        r"""Gets the default_value of this ParameterInfo.
 
         默认值
 
@@ -146,7 +146,7 @@ class ParameterInfo:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ParameterInfo.
+        r"""Sets the default_value of this ParameterInfo.
 
         默认值
 
@@ -157,7 +157,7 @@ class ParameterInfo:
 
     @property
     def value_type(self):
-        """Gets the value_type of this ParameterInfo.
+        r"""Gets the value_type of this ParameterInfo.
 
         配置值类型
 
@@ -168,7 +168,7 @@ class ParameterInfo:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this ParameterInfo.
+        r"""Sets the value_type of this ParameterInfo.
 
         配置值类型
 
@@ -179,7 +179,7 @@ class ParameterInfo:
 
     @property
     def running_value(self):
-        """Gets the running_value of this ParameterInfo.
+        r"""Gets the running_value of this ParameterInfo.
 
         集群当前运行的配置值
 
@@ -190,7 +190,7 @@ class ParameterInfo:
 
     @running_value.setter
     def running_value(self, running_value):
-        """Sets the running_value of this ParameterInfo.
+        r"""Sets the running_value of this ParameterInfo.
 
         集群当前运行的配置值
 
@@ -201,7 +201,7 @@ class ParameterInfo:
 
     @property
     def unit(self):
-        """Gets the unit of this ParameterInfo.
+        r"""Gets the unit of this ParameterInfo.
 
         单位
 
@@ -212,7 +212,7 @@ class ParameterInfo:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ParameterInfo.
+        r"""Sets the unit of this ParameterInfo.
 
         单位
 
@@ -223,7 +223,7 @@ class ParameterInfo:
 
     @property
     def reboot(self):
-        """Gets the reboot of this ParameterInfo.
+        r"""Gets the reboot of this ParameterInfo.
 
         是否需要重启生效
 
@@ -234,7 +234,7 @@ class ParameterInfo:
 
     @reboot.setter
     def reboot(self, reboot):
-        """Sets the reboot of this ParameterInfo.
+        r"""Sets the reboot of this ParameterInfo.
 
         是否需要重启生效
 
@@ -245,7 +245,7 @@ class ParameterInfo:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ParameterInfo.
+        r"""Gets the value_range of this ParameterInfo.
 
         配置值取值范围
 
@@ -256,7 +256,7 @@ class ParameterInfo:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ParameterInfo.
+        r"""Sets the value_range of this ParameterInfo.
 
         配置值取值范围
 
@@ -267,7 +267,7 @@ class ParameterInfo:
 
     @property
     def description(self):
-        """Gets the description of this ParameterInfo.
+        r"""Gets the description of this ParameterInfo.
 
         配置描述信息
 
@@ -278,7 +278,7 @@ class ParameterInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ParameterInfo.
+        r"""Sets the description of this ParameterInfo.
 
         配置描述信息
 

@@ -31,7 +31,7 @@ class PollingPolicySubscriptionDetails:
     }
 
     def __init__(self, subscription_urn=None, endpoint=None, remark=None, status=None):
-        """PollingPolicySubscriptionDetails
+        r"""PollingPolicySubscriptionDetails
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PollingPolicySubscriptionDetails:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this PollingPolicySubscriptionDetails.
+        r"""Gets the subscription_urn of this PollingPolicySubscriptionDetails.
 
         当前轮询的序号。
 
@@ -73,7 +73,7 @@ class PollingPolicySubscriptionDetails:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this PollingPolicySubscriptionDetails.
+        r"""Sets the subscription_urn of this PollingPolicySubscriptionDetails.
 
         当前轮询的序号。
 
@@ -84,7 +84,7 @@ class PollingPolicySubscriptionDetails:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this PollingPolicySubscriptionDetails.
+        r"""Gets the endpoint of this PollingPolicySubscriptionDetails.
 
         订阅终端urn列表。
 
@@ -95,7 +95,7 @@ class PollingPolicySubscriptionDetails:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this PollingPolicySubscriptionDetails.
+        r"""Sets the endpoint of this PollingPolicySubscriptionDetails.
 
         订阅终端urn列表。
 
@@ -106,7 +106,7 @@ class PollingPolicySubscriptionDetails:
 
     @property
     def remark(self):
-        """Gets the remark of this PollingPolicySubscriptionDetails.
+        r"""Gets the remark of this PollingPolicySubscriptionDetails.
 
         备注。
 
@@ -117,7 +117,7 @@ class PollingPolicySubscriptionDetails:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this PollingPolicySubscriptionDetails.
+        r"""Sets the remark of this PollingPolicySubscriptionDetails.
 
         备注。
 
@@ -128,7 +128,7 @@ class PollingPolicySubscriptionDetails:
 
     @property
     def status(self):
-        """Gets the status of this PollingPolicySubscriptionDetails.
+        r"""Gets the status of this PollingPolicySubscriptionDetails.
 
         订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
 
@@ -139,7 +139,7 @@ class PollingPolicySubscriptionDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PollingPolicySubscriptionDetails.
+        r"""Sets the status of this PollingPolicySubscriptionDetails.
 
         订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
 

@@ -35,7 +35,7 @@ class RunningTasks:
     }
 
     def __init__(self, task_id=None, operate_type=None, task_time=None, server_name=None, server_id=None, keypair_name=None):
-        """RunningTasks
+        r"""RunningTasks
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RunningTasks:
 
     @property
     def task_id(self):
-        """Gets the task_id of this RunningTasks.
+        r"""Gets the task_id of this RunningTasks.
 
         虚拟机ID
 
@@ -89,7 +89,7 @@ class RunningTasks:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this RunningTasks.
+        r"""Sets the task_id of this RunningTasks.
 
         虚拟机ID
 
@@ -100,7 +100,7 @@ class RunningTasks:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this RunningTasks.
+        r"""Gets the operate_type of this RunningTasks.
 
         操作类型。 - FAILED_RESET 重置 - FAILED_REPLACE 替换 - FAILED_UNBIND 解绑
 
@@ -111,7 +111,7 @@ class RunningTasks:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this RunningTasks.
+        r"""Sets the operate_type of this RunningTasks.
 
         操作类型。 - FAILED_RESET 重置 - FAILED_REPLACE 替换 - FAILED_UNBIND 解绑
 
@@ -122,7 +122,7 @@ class RunningTasks:
 
     @property
     def task_time(self):
-        """Gets the task_time of this RunningTasks.
+        r"""Gets the task_time of this RunningTasks.
 
         任务时间
 
@@ -133,7 +133,7 @@ class RunningTasks:
 
     @task_time.setter
     def task_time(self, task_time):
-        """Sets the task_time of this RunningTasks.
+        r"""Sets the task_time of this RunningTasks.
 
         任务时间
 
@@ -144,7 +144,7 @@ class RunningTasks:
 
     @property
     def server_name(self):
-        """Gets the server_name of this RunningTasks.
+        r"""Gets the server_name of this RunningTasks.
 
         虚拟机名称
 
@@ -155,7 +155,7 @@ class RunningTasks:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this RunningTasks.
+        r"""Sets the server_name of this RunningTasks.
 
         虚拟机名称
 
@@ -166,7 +166,7 @@ class RunningTasks:
 
     @property
     def server_id(self):
-        """Gets the server_id of this RunningTasks.
+        r"""Gets the server_id of this RunningTasks.
 
         虚拟机ID
 
@@ -177,7 +177,7 @@ class RunningTasks:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this RunningTasks.
+        r"""Sets the server_id of this RunningTasks.
 
         虚拟机ID
 
@@ -188,7 +188,7 @@ class RunningTasks:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this RunningTasks.
+        r"""Gets the keypair_name of this RunningTasks.
 
         密钥对名称
 
@@ -199,7 +199,7 @@ class RunningTasks:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this RunningTasks.
+        r"""Sets the keypair_name of this RunningTasks.
 
         密钥对名称
 

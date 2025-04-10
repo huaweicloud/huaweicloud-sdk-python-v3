@@ -27,7 +27,7 @@ class MoveAppToGroupRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """MoveAppToGroupRequest
+        r"""MoveAppToGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MoveAppToGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MoveAppToGroupRequest.
+        r"""Gets the project_id of this MoveAppToGroupRequest.
 
         项目Id
 
@@ -60,7 +60,7 @@ class MoveAppToGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MoveAppToGroupRequest.
+        r"""Sets the project_id of this MoveAppToGroupRequest.
 
         项目Id
 
@@ -71,7 +71,7 @@ class MoveAppToGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this MoveAppToGroupRequest.
+        r"""Gets the body of this MoveAppToGroupRequest.
 
         :return: The body of this MoveAppToGroupRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.MoveAppToGroupRequestBody`
@@ -80,7 +80,7 @@ class MoveAppToGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MoveAppToGroupRequest.
+        r"""Sets the body of this MoveAppToGroupRequest.
 
         :param body: The body of this MoveAppToGroupRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.MoveAppToGroupRequestBody`

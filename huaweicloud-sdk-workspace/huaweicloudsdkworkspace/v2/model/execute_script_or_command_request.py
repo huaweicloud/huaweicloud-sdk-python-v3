@@ -25,7 +25,7 @@ class ExecuteScriptOrCommandRequest:
     }
 
     def __init__(self, body=None):
-        """ExecuteScriptOrCommandRequest
+        r"""ExecuteScriptOrCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecuteScriptOrCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteScriptOrCommandRequest.
+        r"""Gets the body of this ExecuteScriptOrCommandRequest.
 
         :return: The body of this ExecuteScriptOrCommandRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExecuteScriptOrCommandReq`
@@ -52,7 +52,7 @@ class ExecuteScriptOrCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteScriptOrCommandRequest.
+        r"""Sets the body of this ExecuteScriptOrCommandRequest.
 
         :param body: The body of this ExecuteScriptOrCommandRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ExecuteScriptOrCommandReq`

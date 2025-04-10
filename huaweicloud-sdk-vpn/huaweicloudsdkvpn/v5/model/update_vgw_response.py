@@ -30,7 +30,7 @@ class UpdateVgwResponse(SdkResponse):
     }
 
     def __init__(self, vpn_gateway=None, request_id=None, header_response_token=None):
-        """UpdateVgwResponse
+        r"""UpdateVgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateVgwResponse(SdkResponse):
 
     @property
     def vpn_gateway(self):
-        """Gets the vpn_gateway of this UpdateVgwResponse.
+        r"""Gets the vpn_gateway of this UpdateVgwResponse.
 
         :return: The vpn_gateway of this UpdateVgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateResponseVpnGateway`
@@ -67,7 +67,7 @@ class UpdateVgwResponse(SdkResponse):
 
     @vpn_gateway.setter
     def vpn_gateway(self, vpn_gateway):
-        """Sets the vpn_gateway of this UpdateVgwResponse.
+        r"""Sets the vpn_gateway of this UpdateVgwResponse.
 
         :param vpn_gateway: The vpn_gateway of this UpdateVgwResponse.
         :type vpn_gateway: :class:`huaweicloudsdkvpn.v5.UpdateResponseVpnGateway`
@@ -76,7 +76,7 @@ class UpdateVgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVgwResponse.
+        r"""Gets the request_id of this UpdateVgwResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class UpdateVgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVgwResponse.
+        r"""Sets the request_id of this UpdateVgwResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class UpdateVgwResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVgwResponse.
+        r"""Gets the header_response_token of this UpdateVgwResponse.
 
         :return: The header_response_token of this UpdateVgwResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateVgwResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVgwResponse.
+        r"""Sets the header_response_token of this UpdateVgwResponse.
 
         :param header_response_token: The header_response_token of this UpdateVgwResponse.
         :type header_response_token: str

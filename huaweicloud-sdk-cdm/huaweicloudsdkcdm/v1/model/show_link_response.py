@@ -30,7 +30,7 @@ class ShowLinkResponse(SdkResponse):
     }
 
     def __init__(self, links=None, from_to_un_mapping=None, batch_from_to_mapping=None):
-        """ShowLinkResponse
+        r"""ShowLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowLinkResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowLinkResponse.
+        r"""Gets the links of this ShowLinkResponse.
 
         连接列表，请参见links数据结构说明
 
@@ -69,7 +69,7 @@ class ShowLinkResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowLinkResponse.
+        r"""Sets the links of this ShowLinkResponse.
 
         连接列表，请参见links数据结构说明
 
@@ -80,7 +80,7 @@ class ShowLinkResponse(SdkResponse):
 
     @property
     def from_to_un_mapping(self):
-        """Gets the from_to_un_mapping of this ShowLinkResponse.
+        r"""Gets the from_to_un_mapping of this ShowLinkResponse.
 
         表/文件迁移不支持哪些数据源迁移到哪些数据源
 
@@ -91,7 +91,7 @@ class ShowLinkResponse(SdkResponse):
 
     @from_to_un_mapping.setter
     def from_to_un_mapping(self, from_to_un_mapping):
-        """Sets the from_to_un_mapping of this ShowLinkResponse.
+        r"""Sets the from_to_un_mapping of this ShowLinkResponse.
 
         表/文件迁移不支持哪些数据源迁移到哪些数据源
 
@@ -102,7 +102,7 @@ class ShowLinkResponse(SdkResponse):
 
     @property
     def batch_from_to_mapping(self):
-        """Gets the batch_from_to_mapping of this ShowLinkResponse.
+        r"""Gets the batch_from_to_mapping of this ShowLinkResponse.
 
         整库迁移支持哪些数据源迁移到哪些数据源
 
@@ -113,7 +113,7 @@ class ShowLinkResponse(SdkResponse):
 
     @batch_from_to_mapping.setter
     def batch_from_to_mapping(self, batch_from_to_mapping):
-        """Sets the batch_from_to_mapping of this ShowLinkResponse.
+        r"""Sets the batch_from_to_mapping of this ShowLinkResponse.
 
         整库迁移支持哪些数据源迁移到哪些数据源
 

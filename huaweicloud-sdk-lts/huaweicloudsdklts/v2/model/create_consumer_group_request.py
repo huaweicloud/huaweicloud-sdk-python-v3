@@ -29,7 +29,7 @@ class CreateConsumerGroupRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, body=None):
-        """CreateConsumerGroupRequest
+        r"""CreateConsumerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateConsumerGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateConsumerGroupRequest.
+        r"""Gets the group_id of this CreateConsumerGroupRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -66,7 +66,7 @@ class CreateConsumerGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateConsumerGroupRequest.
+        r"""Sets the group_id of this CreateConsumerGroupRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -77,7 +77,7 @@ class CreateConsumerGroupRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this CreateConsumerGroupRequest.
+        r"""Gets the stream_id of this CreateConsumerGroupRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -88,7 +88,7 @@ class CreateConsumerGroupRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this CreateConsumerGroupRequest.
+        r"""Sets the stream_id of this CreateConsumerGroupRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -99,7 +99,7 @@ class CreateConsumerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConsumerGroupRequest.
+        r"""Gets the body of this CreateConsumerGroupRequest.
 
         :return: The body of this CreateConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.ConsumerGroupInfo`
@@ -108,7 +108,7 @@ class CreateConsumerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConsumerGroupRequest.
+        r"""Sets the body of this CreateConsumerGroupRequest.
 
         :param body: The body of this CreateConsumerGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.ConsumerGroupInfo`

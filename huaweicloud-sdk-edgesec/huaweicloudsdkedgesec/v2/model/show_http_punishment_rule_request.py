@@ -27,7 +27,7 @@ class ShowHttpPunishmentRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None):
-        """ShowHttpPunishmentRuleRequest
+        r"""ShowHttpPunishmentRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowHttpPunishmentRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpPunishmentRuleRequest.
+        r"""Gets the policy_id of this ShowHttpPunishmentRuleRequest.
 
         策略id
 
@@ -59,7 +59,7 @@ class ShowHttpPunishmentRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpPunishmentRuleRequest.
+        r"""Sets the policy_id of this ShowHttpPunishmentRuleRequest.
 
         策略id
 
@@ -70,7 +70,7 @@ class ShowHttpPunishmentRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowHttpPunishmentRuleRequest.
+        r"""Gets the rule_id of this ShowHttpPunishmentRuleRequest.
 
         防护规则id
 
@@ -81,7 +81,7 @@ class ShowHttpPunishmentRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowHttpPunishmentRuleRequest.
+        r"""Sets the rule_id of this ShowHttpPunishmentRuleRequest.
 
         防护规则id
 

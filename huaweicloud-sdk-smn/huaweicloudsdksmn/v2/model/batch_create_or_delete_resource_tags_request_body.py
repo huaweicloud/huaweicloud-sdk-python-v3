@@ -27,7 +27,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchCreateOrDeleteResourceTagsRequestBody
+        r"""BatchCreateOrDeleteResourceTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateOrDeleteResourceTagsRequestBody.
+        r"""Gets the tags of this BatchCreateOrDeleteResourceTagsRequestBody.
 
         标签列表，结构体说明请参见表1。删除时tags结构体不能缺失，key不能为空或空字符串，且不针对字符集范围进行校验。
 
@@ -59,7 +59,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateOrDeleteResourceTagsRequestBody.
+        r"""Sets the tags of this BatchCreateOrDeleteResourceTagsRequestBody.
 
         标签列表，结构体说明请参见表1。删除时tags结构体不能缺失，key不能为空或空字符串，且不针对字符集范围进行校验。
 
@@ -70,7 +70,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateOrDeleteResourceTagsRequestBody.
+        r"""Gets the action of this BatchCreateOrDeleteResourceTagsRequestBody.
 
         操作标识：仅限于create（创建）、delete（删除）。
 
@@ -81,7 +81,7 @@ class BatchCreateOrDeleteResourceTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateOrDeleteResourceTagsRequestBody.
+        r"""Sets the action of this BatchCreateOrDeleteResourceTagsRequestBody.
 
         操作标识：仅限于create（创建）、delete（删除）。
 

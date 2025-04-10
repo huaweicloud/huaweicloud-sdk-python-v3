@@ -29,7 +29,7 @@ class CreateManualImageSyncRepoRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """CreateManualImageSyncRepoRequest
+        r"""CreateManualImageSyncRepoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateManualImageSyncRepoRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateManualImageSyncRepoRequest.
+        r"""Gets the namespace of this CreateManualImageSyncRepoRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -66,7 +66,7 @@ class CreateManualImageSyncRepoRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateManualImageSyncRepoRequest.
+        r"""Sets the namespace of this CreateManualImageSyncRepoRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -77,7 +77,7 @@ class CreateManualImageSyncRepoRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this CreateManualImageSyncRepoRequest.
+        r"""Gets the repository of this CreateManualImageSyncRepoRequest.
 
         镜像仓库名称
 
@@ -88,7 +88,7 @@ class CreateManualImageSyncRepoRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this CreateManualImageSyncRepoRequest.
+        r"""Sets the repository of this CreateManualImageSyncRepoRequest.
 
         镜像仓库名称
 
@@ -99,7 +99,7 @@ class CreateManualImageSyncRepoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateManualImageSyncRepoRequest.
+        r"""Gets the body of this CreateManualImageSyncRepoRequest.
 
         :return: The body of this CreateManualImageSyncRepoRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequestBody`
@@ -108,7 +108,7 @@ class CreateManualImageSyncRepoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateManualImageSyncRepoRequest.
+        r"""Sets the body of this CreateManualImageSyncRepoRequest.
 
         :param body: The body of this CreateManualImageSyncRepoRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequestBody`

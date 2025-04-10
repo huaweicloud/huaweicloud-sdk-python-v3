@@ -26,7 +26,7 @@ class ContinueRollbackStackResponse(SdkResponse):
     }
 
     def __init__(self, deployment_id=None):
-        """ContinueRollbackStackResponse
+        r"""ContinueRollbackStackResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ContinueRollbackStackResponse(SdkResponse):
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ContinueRollbackStackResponse.
+        r"""Gets the deployment_id of this ContinueRollbackStackResponse.
 
         继续回滚触发部署生成的唯一的deployment_id，由资源编排服务生成，通常为UUID  接受请求，进行异步处理。可以调用GetStackMetadata来获取异步请求的部署状态  **注意：** * 资源编排服务最终会将异步部署请求排队，在服务端空闲的情况下逐个处理。用户最大等待时长为6小时
 
@@ -55,7 +55,7 @@ class ContinueRollbackStackResponse(SdkResponse):
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ContinueRollbackStackResponse.
+        r"""Sets the deployment_id of this ContinueRollbackStackResponse.
 
         继续回滚触发部署生成的唯一的deployment_id，由资源编排服务生成，通常为UUID  接受请求，进行异步处理。可以调用GetStackMetadata来获取异步请求的部署状态  **注意：** * 资源编排服务最终会将异步部署请求排队，在服务端空闲的情况下逐个处理。用户最大等待时长为6小时
 

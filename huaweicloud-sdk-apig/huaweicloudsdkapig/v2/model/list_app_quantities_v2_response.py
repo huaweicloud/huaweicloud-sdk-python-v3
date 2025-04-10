@@ -28,7 +28,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
     }
 
     def __init__(self, authed_nums=None, unauthed_nums=None):
-        """ListAppQuantitiesV2Response
+        r"""ListAppQuantitiesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
 
     @property
     def authed_nums(self):
-        """Gets the authed_nums of this ListAppQuantitiesV2Response.
+        r"""Gets the authed_nums of this ListAppQuantitiesV2Response.
 
         已进行API访问授权的APP个数
 
@@ -62,7 +62,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
 
     @authed_nums.setter
     def authed_nums(self, authed_nums):
-        """Sets the authed_nums of this ListAppQuantitiesV2Response.
+        r"""Sets the authed_nums of this ListAppQuantitiesV2Response.
 
         已进行API访问授权的APP个数
 
@@ -73,7 +73,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
 
     @property
     def unauthed_nums(self):
-        """Gets the unauthed_nums of this ListAppQuantitiesV2Response.
+        r"""Gets the unauthed_nums of this ListAppQuantitiesV2Response.
 
         未进行API访问授权的APP个数
 
@@ -84,7 +84,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
 
     @unauthed_nums.setter
     def unauthed_nums(self, unauthed_nums):
-        """Sets the unauthed_nums of this ListAppQuantitiesV2Response.
+        r"""Sets the unauthed_nums of this ListAppQuantitiesV2Response.
 
         未进行API访问授权的APP个数
 

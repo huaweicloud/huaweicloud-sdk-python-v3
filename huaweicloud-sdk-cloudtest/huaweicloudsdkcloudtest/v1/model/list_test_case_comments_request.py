@@ -33,7 +33,7 @@ class ListTestCaseCommentsRequest:
     }
 
     def __init__(self, project_id=None, testcase_id=None, page_no=None, page_size=None, version_uri=None):
-        """ListTestCaseCommentsRequest
+        r"""ListTestCaseCommentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListTestCaseCommentsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestCaseCommentsRequest.
+        r"""Gets the project_id of this ListTestCaseCommentsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -78,7 +78,7 @@ class ListTestCaseCommentsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestCaseCommentsRequest.
+        r"""Sets the project_id of this ListTestCaseCommentsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -89,7 +89,7 @@ class ListTestCaseCommentsRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ListTestCaseCommentsRequest.
+        r"""Gets the testcase_id of this ListTestCaseCommentsRequest.
 
         用例uri
 
@@ -100,7 +100,7 @@ class ListTestCaseCommentsRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ListTestCaseCommentsRequest.
+        r"""Sets the testcase_id of this ListTestCaseCommentsRequest.
 
         用例uri
 
@@ -111,7 +111,7 @@ class ListTestCaseCommentsRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListTestCaseCommentsRequest.
+        r"""Gets the page_no of this ListTestCaseCommentsRequest.
 
         页数
 
@@ -122,7 +122,7 @@ class ListTestCaseCommentsRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListTestCaseCommentsRequest.
+        r"""Sets the page_no of this ListTestCaseCommentsRequest.
 
         页数
 
@@ -133,7 +133,7 @@ class ListTestCaseCommentsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTestCaseCommentsRequest.
+        r"""Gets the page_size of this ListTestCaseCommentsRequest.
 
         页数大小
 
@@ -144,7 +144,7 @@ class ListTestCaseCommentsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTestCaseCommentsRequest.
+        r"""Sets the page_size of this ListTestCaseCommentsRequest.
 
         页数大小
 
@@ -155,7 +155,7 @@ class ListTestCaseCommentsRequest:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this ListTestCaseCommentsRequest.
+        r"""Gets the version_uri of this ListTestCaseCommentsRequest.
 
         分支或者测试计划uri
 
@@ -166,7 +166,7 @@ class ListTestCaseCommentsRequest:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this ListTestCaseCommentsRequest.
+        r"""Sets the version_uri of this ListTestCaseCommentsRequest.
 
         分支或者测试计划uri
 

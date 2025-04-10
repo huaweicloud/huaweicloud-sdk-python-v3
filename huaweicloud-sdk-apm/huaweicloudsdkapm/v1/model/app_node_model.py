@@ -37,7 +37,7 @@ class AppNodeModel:
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, name=None, business_id=None, sub_business_id=None, inner_domain_id=None):
-        """AppNodeModel
+        r"""AppNodeModel
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AppNodeModel:
 
     @property
     def id(self):
-        """Gets the id of this AppNodeModel.
+        r"""Gets the id of this AppNodeModel.
 
         组件id。
 
@@ -96,7 +96,7 @@ class AppNodeModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppNodeModel.
+        r"""Sets the id of this AppNodeModel.
 
         组件id。
 
@@ -107,7 +107,7 @@ class AppNodeModel:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this AppNodeModel.
+        r"""Gets the gmt_create of this AppNodeModel.
 
         创建时间。
 
@@ -118,7 +118,7 @@ class AppNodeModel:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this AppNodeModel.
+        r"""Sets the gmt_create of this AppNodeModel.
 
         创建时间。
 
@@ -129,7 +129,7 @@ class AppNodeModel:
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this AppNodeModel.
+        r"""Gets the gmt_modify of this AppNodeModel.
 
         修改时间。
 
@@ -140,7 +140,7 @@ class AppNodeModel:
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this AppNodeModel.
+        r"""Sets the gmt_modify of this AppNodeModel.
 
         修改时间。
 
@@ -151,7 +151,7 @@ class AppNodeModel:
 
     @property
     def name(self):
-        """Gets the name of this AppNodeModel.
+        r"""Gets the name of this AppNodeModel.
 
         组件名称。
 
@@ -162,7 +162,7 @@ class AppNodeModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppNodeModel.
+        r"""Sets the name of this AppNodeModel.
 
         组件名称。
 
@@ -173,7 +173,7 @@ class AppNodeModel:
 
     @property
     def business_id(self):
-        """Gets the business_id of this AppNodeModel.
+        r"""Gets the business_id of this AppNodeModel.
 
         应用id。
 
@@ -184,7 +184,7 @@ class AppNodeModel:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this AppNodeModel.
+        r"""Sets the business_id of this AppNodeModel.
 
         应用id。
 
@@ -195,7 +195,7 @@ class AppNodeModel:
 
     @property
     def sub_business_id(self):
-        """Gets the sub_business_id of this AppNodeModel.
+        r"""Gets the sub_business_id of this AppNodeModel.
 
         子应用id。
 
@@ -206,7 +206,7 @@ class AppNodeModel:
 
     @sub_business_id.setter
     def sub_business_id(self, sub_business_id):
-        """Sets the sub_business_id of this AppNodeModel.
+        r"""Sets the sub_business_id of this AppNodeModel.
 
         子应用id。
 
@@ -217,7 +217,7 @@ class AppNodeModel:
 
     @property
     def inner_domain_id(self):
-        """Gets the inner_domain_id of this AppNodeModel.
+        r"""Gets the inner_domain_id of this AppNodeModel.
 
         租户id。
 
@@ -228,7 +228,7 @@ class AppNodeModel:
 
     @inner_domain_id.setter
     def inner_domain_id(self, inner_domain_id):
-        """Sets the inner_domain_id of this AppNodeModel.
+        r"""Sets the inner_domain_id of this AppNodeModel.
 
         租户id。
 

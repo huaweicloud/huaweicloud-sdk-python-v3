@@ -25,7 +25,7 @@ class PostEventExtractionReq:
     }
 
     def __init__(self, text=None):
-        """PostEventExtractionReq
+        r"""PostEventExtractionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PostEventExtractionReq:
 
     @property
     def text(self):
-        """Gets the text of this PostEventExtractionReq.
+        r"""Gets the text of this PostEventExtractionReq.
 
         待分析文本，长度为1~256，文本编码为UTF-8。
 
@@ -53,7 +53,7 @@ class PostEventExtractionReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this PostEventExtractionReq.
+        r"""Sets the text of this PostEventExtractionReq.
 
         待分析文本，长度为1~256，文本编码为UTF-8。
 

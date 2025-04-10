@@ -27,7 +27,7 @@ class CreateChangeOrderRequest:
     }
 
     def __init__(self, desktop_id=None, body=None):
-        """CreateChangeOrderRequest
+        r"""CreateChangeOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateChangeOrderRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this CreateChangeOrderRequest.
+        r"""Gets the desktop_id of this CreateChangeOrderRequest.
 
         桌面id。
 
@@ -60,7 +60,7 @@ class CreateChangeOrderRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this CreateChangeOrderRequest.
+        r"""Sets the desktop_id of this CreateChangeOrderRequest.
 
         桌面id。
 
@@ -71,7 +71,7 @@ class CreateChangeOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateChangeOrderRequest.
+        r"""Gets the body of this CreateChangeOrderRequest.
 
         :return: The body of this CreateChangeOrderRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateChangeOrderReq`
@@ -80,7 +80,7 @@ class CreateChangeOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateChangeOrderRequest.
+        r"""Sets the body of this CreateChangeOrderRequest.
 
         :param body: The body of this CreateChangeOrderRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateChangeOrderReq`

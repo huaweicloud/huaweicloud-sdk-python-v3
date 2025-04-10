@@ -27,7 +27,7 @@ class SetPrimaryVideoThumbnailRequestBody:
     }
 
     def __init__(self, aim_resource_id=None, thumbnail_id=None):
-        """SetPrimaryVideoThumbnailRequestBody
+        r"""SetPrimaryVideoThumbnailRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SetPrimaryVideoThumbnailRequestBody:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this SetPrimaryVideoThumbnailRequestBody.
+        r"""Gets the aim_resource_id of this SetPrimaryVideoThumbnailRequestBody.
 
         AIM资源ID。
 
@@ -59,7 +59,7 @@ class SetPrimaryVideoThumbnailRequestBody:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this SetPrimaryVideoThumbnailRequestBody.
+        r"""Sets the aim_resource_id of this SetPrimaryVideoThumbnailRequestBody.
 
         AIM资源ID。
 
@@ -70,7 +70,7 @@ class SetPrimaryVideoThumbnailRequestBody:
 
     @property
     def thumbnail_id(self):
-        """Gets the thumbnail_id of this SetPrimaryVideoThumbnailRequestBody.
+        r"""Gets the thumbnail_id of this SetPrimaryVideoThumbnailRequestBody.
 
         视频封面图ID。
 
@@ -81,7 +81,7 @@ class SetPrimaryVideoThumbnailRequestBody:
 
     @thumbnail_id.setter
     def thumbnail_id(self, thumbnail_id):
-        """Sets the thumbnail_id of this SetPrimaryVideoThumbnailRequestBody.
+        r"""Sets the thumbnail_id of this SetPrimaryVideoThumbnailRequestBody.
 
         视频封面图ID。
 

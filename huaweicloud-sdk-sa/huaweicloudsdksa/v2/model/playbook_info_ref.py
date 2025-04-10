@@ -31,7 +31,7 @@ class PlaybookInfoRef:
     }
 
     def __init__(self, id=None, version_id=None, name=None, version=None):
-        """PlaybookInfoRef
+        r"""PlaybookInfoRef
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PlaybookInfoRef:
 
     @property
     def id(self):
-        """Gets the id of this PlaybookInfoRef.
+        r"""Gets the id of this PlaybookInfoRef.
 
         Id value
 
@@ -75,7 +75,7 @@ class PlaybookInfoRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlaybookInfoRef.
+        r"""Sets the id of this PlaybookInfoRef.
 
         Id value
 
@@ -86,7 +86,7 @@ class PlaybookInfoRef:
 
     @property
     def version_id(self):
-        """Gets the version_id of this PlaybookInfoRef.
+        r"""Gets the version_id of this PlaybookInfoRef.
 
         Id value
 
@@ -97,7 +97,7 @@ class PlaybookInfoRef:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this PlaybookInfoRef.
+        r"""Sets the version_id of this PlaybookInfoRef.
 
         Id value
 
@@ -108,7 +108,7 @@ class PlaybookInfoRef:
 
     @property
     def name(self):
-        """Gets the name of this PlaybookInfoRef.
+        r"""Gets the name of this PlaybookInfoRef.
 
         Id value
 
@@ -119,7 +119,7 @@ class PlaybookInfoRef:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlaybookInfoRef.
+        r"""Sets the name of this PlaybookInfoRef.
 
         Id value
 
@@ -130,7 +130,7 @@ class PlaybookInfoRef:
 
     @property
     def version(self):
-        """Gets the version of this PlaybookInfoRef.
+        r"""Gets the version of this PlaybookInfoRef.
 
         version
 
@@ -141,7 +141,7 @@ class PlaybookInfoRef:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PlaybookInfoRef.
+        r"""Sets the version of this PlaybookInfoRef.
 
         version
 

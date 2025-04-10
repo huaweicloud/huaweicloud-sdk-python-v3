@@ -25,7 +25,7 @@ class CloneLoadbalancerResponseBodyLoadbalancerList:
     }
 
     def __init__(self, id=None):
-        """CloneLoadbalancerResponseBodyLoadbalancerList
+        r"""CloneLoadbalancerResponseBodyLoadbalancerList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CloneLoadbalancerResponseBodyLoadbalancerList:
 
     @property
     def id(self):
-        """Gets the id of this CloneLoadbalancerResponseBodyLoadbalancerList.
+        r"""Gets the id of this CloneLoadbalancerResponseBodyLoadbalancerList.
 
         新实例id
 
@@ -54,7 +54,7 @@ class CloneLoadbalancerResponseBodyLoadbalancerList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CloneLoadbalancerResponseBodyLoadbalancerList.
+        r"""Sets the id of this CloneLoadbalancerResponseBodyLoadbalancerList.
 
         新实例id
 

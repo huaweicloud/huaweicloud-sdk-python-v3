@@ -25,7 +25,7 @@ class CreateVocabularyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVocabularyRequest
+        r"""CreateVocabularyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVocabularyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVocabularyRequest.
+        r"""Gets the body of this CreateVocabularyRequest.
 
         :return: The body of this CreateVocabularyRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PostCreateVocabReq`
@@ -52,7 +52,7 @@ class CreateVocabularyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVocabularyRequest.
+        r"""Sets the body of this CreateVocabularyRequest.
 
         :param body: The body of this CreateVocabularyRequest.
         :type body: :class:`huaweicloudsdksis.v1.PostCreateVocabReq`

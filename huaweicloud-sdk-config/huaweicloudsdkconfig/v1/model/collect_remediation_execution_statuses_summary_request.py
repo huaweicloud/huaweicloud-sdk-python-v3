@@ -31,7 +31,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
     }
 
     def __init__(self, policy_assignment_id=None, limit=None, marker=None, body=None):
-        """CollectRemediationExecutionStatusesSummaryRequest
+        r"""CollectRemediationExecutionStatusesSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Gets the policy_assignment_id of this CollectRemediationExecutionStatusesSummaryRequest.
 
         规则ID
 
@@ -74,7 +74,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Sets the policy_assignment_id of this CollectRemediationExecutionStatusesSummaryRequest.
 
         规则ID
 
@@ -85,7 +85,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Gets the limit of this CollectRemediationExecutionStatusesSummaryRequest.
 
         最大的返回数量
 
@@ -96,7 +96,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Sets the limit of this CollectRemediationExecutionStatusesSummaryRequest.
 
         最大的返回数量
 
@@ -107,7 +107,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Gets the marker of this CollectRemediationExecutionStatusesSummaryRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -118,7 +118,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Sets the marker of this CollectRemediationExecutionStatusesSummaryRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -129,7 +129,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Gets the body of this CollectRemediationExecutionStatusesSummaryRequest.
 
         :return: The body of this CollectRemediationExecutionStatusesSummaryRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.RemediationExecutionStatusesSummaryRequestBody`
@@ -138,7 +138,7 @@ class CollectRemediationExecutionStatusesSummaryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectRemediationExecutionStatusesSummaryRequest.
+        r"""Sets the body of this CollectRemediationExecutionStatusesSummaryRequest.
 
         :param body: The body of this CollectRemediationExecutionStatusesSummaryRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.RemediationExecutionStatusesSummaryRequestBody`

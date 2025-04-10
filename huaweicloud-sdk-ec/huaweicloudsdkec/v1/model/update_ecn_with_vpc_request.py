@@ -29,7 +29,7 @@ class UpdateEcnWithVpcRequest:
     }
 
     def __init__(self, ecn_id=None, relation_id=None, body=None):
-        """UpdateEcnWithVpcRequest
+        r"""UpdateEcnWithVpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEcnWithVpcRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this UpdateEcnWithVpcRequest.
+        r"""Gets the ecn_id of this UpdateEcnWithVpcRequest.
 
         企业连接网络ID
 
@@ -66,7 +66,7 @@ class UpdateEcnWithVpcRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this UpdateEcnWithVpcRequest.
+        r"""Sets the ecn_id of this UpdateEcnWithVpcRequest.
 
         企业连接网络ID
 
@@ -77,7 +77,7 @@ class UpdateEcnWithVpcRequest:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this UpdateEcnWithVpcRequest.
+        r"""Gets the relation_id of this UpdateEcnWithVpcRequest.
 
         企业连接网络绑定关系ID
 
@@ -88,7 +88,7 @@ class UpdateEcnWithVpcRequest:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this UpdateEcnWithVpcRequest.
+        r"""Sets the relation_id of this UpdateEcnWithVpcRequest.
 
         企业连接网络绑定关系ID
 
@@ -99,7 +99,7 @@ class UpdateEcnWithVpcRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEcnWithVpcRequest.
+        r"""Gets the body of this UpdateEcnWithVpcRequest.
 
         :return: The body of this UpdateEcnWithVpcRequest.
         :rtype: :class:`huaweicloudsdkec.v1.UpdateEcnWithVpcRequestBody`
@@ -108,7 +108,7 @@ class UpdateEcnWithVpcRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEcnWithVpcRequest.
+        r"""Sets the body of this UpdateEcnWithVpcRequest.
 
         :param body: The body of this UpdateEcnWithVpcRequest.
         :type body: :class:`huaweicloudsdkec.v1.UpdateEcnWithVpcRequestBody`

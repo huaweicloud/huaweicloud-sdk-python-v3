@@ -52,7 +52,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, rule_name=None, status=None, action=None, schemas=None, rank=None, ignore_case=None, risk_level=None, db_ids=None, execution_symbol=None, execution_time=None, affect_symbol=None, affect_rows=None, client_ips=None):
-        """ShowAuditRuleRiskResponse
+        r"""ShowAuditRuleRiskResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowAuditRuleRiskResponse.
+        r"""Gets the rule_id of this ShowAuditRuleRiskResponse.
 
         风险规则ID
 
@@ -146,7 +146,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowAuditRuleRiskResponse.
+        r"""Sets the rule_id of this ShowAuditRuleRiskResponse.
 
         风险规则ID
 
@@ -157,7 +157,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ShowAuditRuleRiskResponse.
+        r"""Gets the rule_name of this ShowAuditRuleRiskResponse.
 
         风险名称
 
@@ -168,7 +168,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ShowAuditRuleRiskResponse.
+        r"""Sets the rule_name of this ShowAuditRuleRiskResponse.
 
         风险名称
 
@@ -179,7 +179,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAuditRuleRiskResponse.
+        r"""Gets the status of this ShowAuditRuleRiskResponse.
 
         风险规则状态 - OFF - ON
 
@@ -190,7 +190,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAuditRuleRiskResponse.
+        r"""Sets the status of this ShowAuditRuleRiskResponse.
 
         风险规则状态 - OFF - ON
 
@@ -201,7 +201,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this ShowAuditRuleRiskResponse.
+        r"""Gets the action of this ShowAuditRuleRiskResponse.
 
         操作集合, 中间逗号分隔。 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
@@ -212,7 +212,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowAuditRuleRiskResponse.
+        r"""Sets the action of this ShowAuditRuleRiskResponse.
 
         操作集合, 中间逗号分隔。 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
@@ -223,7 +223,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this ShowAuditRuleRiskResponse.
+        r"""Gets the schemas of this ShowAuditRuleRiskResponse.
 
         Schema列表
 
@@ -234,7 +234,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this ShowAuditRuleRiskResponse.
+        r"""Sets the schemas of this ShowAuditRuleRiskResponse.
 
         Schema列表
 
@@ -245,7 +245,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def rank(self):
-        """Gets the rank of this ShowAuditRuleRiskResponse.
+        r"""Gets the rank of this ShowAuditRuleRiskResponse.
 
         风险规则优先级。数字越小优先级越高。
 
@@ -256,7 +256,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this ShowAuditRuleRiskResponse.
+        r"""Sets the rank of this ShowAuditRuleRiskResponse.
 
         风险规则优先级。数字越小优先级越高。
 
@@ -267,7 +267,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def ignore_case(self):
-        """Gets the ignore_case of this ShowAuditRuleRiskResponse.
+        r"""Gets the ignore_case of this ShowAuditRuleRiskResponse.
 
         是否忽略大小写
 
@@ -278,7 +278,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @ignore_case.setter
     def ignore_case(self, ignore_case):
-        """Sets the ignore_case of this ShowAuditRuleRiskResponse.
+        r"""Sets the ignore_case of this ShowAuditRuleRiskResponse.
 
         是否忽略大小写
 
@@ -289,7 +289,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ShowAuditRuleRiskResponse.
+        r"""Gets the risk_level of this ShowAuditRuleRiskResponse.
 
         风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
@@ -300,7 +300,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ShowAuditRuleRiskResponse.
+        r"""Sets the risk_level of this ShowAuditRuleRiskResponse.
 
         风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
@@ -311,7 +311,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def db_ids(self):
-        """Gets the db_ids of this ShowAuditRuleRiskResponse.
+        r"""Gets the db_ids of this ShowAuditRuleRiskResponse.
 
         数据库id，中间逗号分隔（单个id 小于256位）
 
@@ -322,7 +322,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @db_ids.setter
     def db_ids(self, db_ids):
-        """Sets the db_ids of this ShowAuditRuleRiskResponse.
+        r"""Sets the db_ids of this ShowAuditRuleRiskResponse.
 
         数据库id，中间逗号分隔（单个id 小于256位）
 
@@ -333,7 +333,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def execution_symbol(self):
-        """Gets the execution_symbol of this ShowAuditRuleRiskResponse.
+        r"""Gets the execution_symbol of this ShowAuditRuleRiskResponse.
 
         执行时长对执行时长阈值的关系 - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
@@ -344,7 +344,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @execution_symbol.setter
     def execution_symbol(self, execution_symbol):
-        """Sets the execution_symbol of this ShowAuditRuleRiskResponse.
+        r"""Sets the execution_symbol of this ShowAuditRuleRiskResponse.
 
         执行时长对执行时长阈值的关系 - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
@@ -355,7 +355,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def execution_time(self):
-        """Gets the execution_time of this ShowAuditRuleRiskResponse.
+        r"""Gets the execution_time of this ShowAuditRuleRiskResponse.
 
         设定的执行时长阈值
 
@@ -366,7 +366,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @execution_time.setter
     def execution_time(self, execution_time):
-        """Sets the execution_time of this ShowAuditRuleRiskResponse.
+        r"""Sets the execution_time of this ShowAuditRuleRiskResponse.
 
         设定的执行时长阈值
 
@@ -377,7 +377,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def affect_symbol(self):
-        """Gets the affect_symbol of this ShowAuditRuleRiskResponse.
+        r"""Gets the affect_symbol of this ShowAuditRuleRiskResponse.
 
         影响行数对行数阈值的关系：  - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
@@ -388,7 +388,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @affect_symbol.setter
     def affect_symbol(self, affect_symbol):
-        """Sets the affect_symbol of this ShowAuditRuleRiskResponse.
+        r"""Sets the affect_symbol of this ShowAuditRuleRiskResponse.
 
         影响行数对行数阈值的关系：  - GREATER - EQUAL - LESS - GREATER_EQUAL - LESS_EQUAL - NO_MATCH
 
@@ -399,7 +399,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def affect_rows(self):
-        """Gets the affect_rows of this ShowAuditRuleRiskResponse.
+        r"""Gets the affect_rows of this ShowAuditRuleRiskResponse.
 
         设定的影响行数阈值
 
@@ -410,7 +410,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @affect_rows.setter
     def affect_rows(self, affect_rows):
-        """Sets the affect_rows of this ShowAuditRuleRiskResponse.
+        r"""Sets the affect_rows of this ShowAuditRuleRiskResponse.
 
         设定的影响行数阈值
 
@@ -421,7 +421,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @property
     def client_ips(self):
-        """Gets the client_ips of this ShowAuditRuleRiskResponse.
+        r"""Gets the client_ips of this ShowAuditRuleRiskResponse.
 
         客户端IP段: IP-IP格式，或IP/XX 格式。 各个IP段使用逗号连接
 
@@ -432,7 +432,7 @@ class ShowAuditRuleRiskResponse(SdkResponse):
 
     @client_ips.setter
     def client_ips(self, client_ips):
-        """Sets the client_ips of this ShowAuditRuleRiskResponse.
+        r"""Sets the client_ips of this ShowAuditRuleRiskResponse.
 
         客户端IP段: IP-IP格式，或IP/XX 格式。 各个IP段使用逗号连接
 

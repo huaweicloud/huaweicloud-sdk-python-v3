@@ -57,7 +57,7 @@ class Finding:
     }
 
     def __init__(self, action=None, analyzed_at=None, condition=None, created_at=None, finding_details=None, finding_type=None, id=None, is_public=None, principal=None, resource=None, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_type=None, sources=None, status=None, updated_at=None):
-        """Finding
+        r"""Finding
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class Finding:
 
     @property
     def action(self):
-        """Gets the action of this Finding.
+        r"""Gets the action of this Finding.
 
         允许外部主体使用的操作。
 
@@ -156,7 +156,7 @@ class Finding:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this Finding.
+        r"""Sets the action of this Finding.
 
         允许外部主体使用的操作。
 
@@ -167,7 +167,7 @@ class Finding:
 
     @property
     def analyzed_at(self):
-        """Gets the analyzed_at of this Finding.
+        r"""Gets the analyzed_at of this Finding.
 
         分析资源的时间。
 
@@ -178,7 +178,7 @@ class Finding:
 
     @analyzed_at.setter
     def analyzed_at(self, analyzed_at):
-        """Sets the analyzed_at of this Finding.
+        r"""Sets the analyzed_at of this Finding.
 
         分析资源的时间。
 
@@ -189,7 +189,7 @@ class Finding:
 
     @property
     def condition(self):
-        """Gets the condition of this Finding.
+        r"""Gets the condition of this Finding.
 
         分析的策略语句中导致访问分析结果的条件。
 
@@ -200,7 +200,7 @@ class Finding:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this Finding.
+        r"""Sets the condition of this Finding.
 
         分析的策略语句中导致访问分析结果的条件。
 
@@ -211,7 +211,7 @@ class Finding:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Finding.
+        r"""Gets the created_at of this Finding.
 
         生成访问分析结果的时间。
 
@@ -222,7 +222,7 @@ class Finding:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Finding.
+        r"""Sets the created_at of this Finding.
 
         生成访问分析结果的时间。
 
@@ -233,7 +233,7 @@ class Finding:
 
     @property
     def finding_details(self):
-        """Gets the finding_details of this Finding.
+        r"""Gets the finding_details of this Finding.
 
         访问分析结果的详细信息。
 
@@ -244,7 +244,7 @@ class Finding:
 
     @finding_details.setter
     def finding_details(self, finding_details):
-        """Sets the finding_details of this Finding.
+        r"""Sets the finding_details of this Finding.
 
         访问分析结果的详细信息。
 
@@ -255,7 +255,7 @@ class Finding:
 
     @property
     def finding_type(self):
-        """Gets the finding_type of this Finding.
+        r"""Gets the finding_type of this Finding.
 
         :return: The finding_type of this Finding.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
@@ -264,7 +264,7 @@ class Finding:
 
     @finding_type.setter
     def finding_type(self, finding_type):
-        """Sets the finding_type of this Finding.
+        r"""Sets the finding_type of this Finding.
 
         :param finding_type: The finding_type of this Finding.
         :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
@@ -273,7 +273,7 @@ class Finding:
 
     @property
     def id(self):
-        """Gets the id of this Finding.
+        r"""Gets the id of this Finding.
 
         访问分析结果的唯一标识符。
 
@@ -284,7 +284,7 @@ class Finding:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Finding.
+        r"""Sets the id of this Finding.
 
         访问分析结果的唯一标识符。
 
@@ -295,7 +295,7 @@ class Finding:
 
     @property
     def is_public(self):
-        """Gets the is_public of this Finding.
+        r"""Gets the is_public of this Finding.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -306,7 +306,7 @@ class Finding:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this Finding.
+        r"""Sets the is_public of this Finding.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -317,7 +317,7 @@ class Finding:
 
     @property
     def principal(self):
-        """Gets the principal of this Finding.
+        r"""Gets the principal of this Finding.
 
         :return: The principal of this Finding.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -326,7 +326,7 @@ class Finding:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this Finding.
+        r"""Sets the principal of this Finding.
 
         :param principal: The principal of this Finding.
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -335,7 +335,7 @@ class Finding:
 
     @property
     def resource(self):
-        """Gets the resource of this Finding.
+        r"""Gets the resource of this Finding.
 
         资源的唯一资源标识符。
 
@@ -346,7 +346,7 @@ class Finding:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this Finding.
+        r"""Sets the resource of this Finding.
 
         资源的唯一资源标识符。
 
@@ -357,7 +357,7 @@ class Finding:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Finding.
+        r"""Gets the resource_id of this Finding.
 
         资源的唯一标识符。
 
@@ -368,7 +368,7 @@ class Finding:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Finding.
+        r"""Sets the resource_id of this Finding.
 
         资源的唯一标识符。
 
@@ -379,7 +379,7 @@ class Finding:
 
     @property
     def resource_owner_account(self):
-        """Gets the resource_owner_account of this Finding.
+        r"""Gets the resource_owner_account of this Finding.
 
         拥有资源的账号ID。
 
@@ -390,7 +390,7 @@ class Finding:
 
     @resource_owner_account.setter
     def resource_owner_account(self, resource_owner_account):
-        """Sets the resource_owner_account of this Finding.
+        r"""Sets the resource_owner_account of this Finding.
 
         拥有资源的账号ID。
 
@@ -401,7 +401,7 @@ class Finding:
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this Finding.
+        r"""Gets the resource_project_id of this Finding.
 
         资源所属的项目标识符
 
@@ -412,7 +412,7 @@ class Finding:
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this Finding.
+        r"""Sets the resource_project_id of this Finding.
 
         资源所属的项目标识符
 
@@ -423,7 +423,7 @@ class Finding:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Finding.
+        r"""Gets the resource_type of this Finding.
 
         :return: The resource_type of this Finding.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
@@ -432,7 +432,7 @@ class Finding:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Finding.
+        r"""Sets the resource_type of this Finding.
 
         :param resource_type: The resource_type of this Finding.
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
@@ -441,7 +441,7 @@ class Finding:
 
     @property
     def sources(self):
-        """Gets the sources of this Finding.
+        r"""Gets the sources of this Finding.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -452,7 +452,7 @@ class Finding:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this Finding.
+        r"""Sets the sources of this Finding.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -463,7 +463,7 @@ class Finding:
 
     @property
     def status(self):
-        """Gets the status of this Finding.
+        r"""Gets the status of this Finding.
 
         访问分析结果当前状态。
 
@@ -474,7 +474,7 @@ class Finding:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Finding.
+        r"""Sets the status of this Finding.
 
         访问分析结果当前状态。
 
@@ -485,7 +485,7 @@ class Finding:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Finding.
+        r"""Gets the updated_at of this Finding.
 
         更新访问分析结果的时间。
 
@@ -496,7 +496,7 @@ class Finding:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Finding.
+        r"""Sets the updated_at of this Finding.
 
         更新访问分析结果的时间。
 

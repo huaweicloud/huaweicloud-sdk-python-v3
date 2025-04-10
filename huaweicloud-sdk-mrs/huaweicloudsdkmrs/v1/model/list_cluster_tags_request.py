@@ -25,7 +25,7 @@ class ListClusterTagsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListClusterTagsRequest
+        r"""ListClusterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListClusterTagsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListClusterTagsRequest.
+        r"""Gets the cluster_id of this ListClusterTagsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -53,7 +53,7 @@ class ListClusterTagsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListClusterTagsRequest.
+        r"""Sets the cluster_id of this ListClusterTagsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 

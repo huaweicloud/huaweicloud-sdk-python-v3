@@ -25,7 +25,7 @@ class NoSqlModiflyEpsQuotasRequestBody:
     }
 
     def __init__(self, quotas=None):
-        """NoSqlModiflyEpsQuotasRequestBody
+        r"""NoSqlModiflyEpsQuotasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NoSqlModiflyEpsQuotasRequestBody:
 
     @property
     def quotas(self):
-        """Gets the quotas of this NoSqlModiflyEpsQuotasRequestBody.
+        r"""Gets the quotas of this NoSqlModiflyEpsQuotasRequestBody.
 
         需要修改的企业项目配额信息列表。
 
@@ -53,7 +53,7 @@ class NoSqlModiflyEpsQuotasRequestBody:
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this NoSqlModiflyEpsQuotasRequestBody.
+        r"""Sets the quotas of this NoSqlModiflyEpsQuotasRequestBody.
 
         需要修改的企业项目配额信息列表。
 

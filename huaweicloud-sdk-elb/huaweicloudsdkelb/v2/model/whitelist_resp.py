@@ -33,7 +33,7 @@ class WhitelistResp:
     }
 
     def __init__(self, id=None, tenant_id=None, listener_id=None, enable_whitelist=None, whitelist=None):
-        """WhitelistResp
+        r"""WhitelistResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class WhitelistResp:
 
     @property
     def id(self):
-        """Gets the id of this WhitelistResp.
+        r"""Gets the id of this WhitelistResp.
 
         白名单id
 
@@ -77,7 +77,7 @@ class WhitelistResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WhitelistResp.
+        r"""Sets the id of this WhitelistResp.
 
         白名单id
 
@@ -88,7 +88,7 @@ class WhitelistResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this WhitelistResp.
+        r"""Gets the tenant_id of this WhitelistResp.
 
         白名单所在的项目ID
 
@@ -99,7 +99,7 @@ class WhitelistResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this WhitelistResp.
+        r"""Sets the tenant_id of this WhitelistResp.
 
         白名单所在的项目ID
 
@@ -110,7 +110,7 @@ class WhitelistResp:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this WhitelistResp.
+        r"""Gets the listener_id of this WhitelistResp.
 
         白名单关联的监听器ID
 
@@ -121,7 +121,7 @@ class WhitelistResp:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this WhitelistResp.
+        r"""Sets the listener_id of this WhitelistResp.
 
         白名单关联的监听器ID
 
@@ -132,7 +132,7 @@ class WhitelistResp:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this WhitelistResp.
+        r"""Gets the enable_whitelist of this WhitelistResp.
 
         是否开启白名单访问控制开关。true：开启；false：关闭
 
@@ -143,7 +143,7 @@ class WhitelistResp:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this WhitelistResp.
+        r"""Sets the enable_whitelist of this WhitelistResp.
 
         是否开启白名单访问控制开关。true：开启；false：关闭
 
@@ -154,7 +154,7 @@ class WhitelistResp:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this WhitelistResp.
+        r"""Gets the whitelist of this WhitelistResp.
 
         白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
 
@@ -165,7 +165,7 @@ class WhitelistResp:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this WhitelistResp.
+        r"""Sets the whitelist of this WhitelistResp.
 
         白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
 

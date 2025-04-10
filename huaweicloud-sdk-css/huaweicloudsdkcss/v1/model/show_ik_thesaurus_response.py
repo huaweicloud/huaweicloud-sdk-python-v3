@@ -44,7 +44,7 @@ class ShowIkThesaurusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, bucket=None, main_obj=None, stop_obj=None, synonym_obj=None, update_time=None, update_details=None, cluster_id=None, operate_status=None, id=None):
-        """ShowIkThesaurusResponse
+        r"""ShowIkThesaurusResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowIkThesaurusResponse.
+        r"""Gets the status of this ShowIkThesaurusResponse.
 
         加载状态。  - Loaded表示加载成功。 - Loading表示正在加载中。 - Failed表示加载失败。
 
@@ -118,7 +118,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowIkThesaurusResponse.
+        r"""Sets the status of this ShowIkThesaurusResponse.
 
         加载状态。  - Loaded表示加载成功。 - Loading表示正在加载中。 - Failed表示加载失败。
 
@@ -129,7 +129,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def bucket(self):
-        """Gets the bucket of this ShowIkThesaurusResponse.
+        r"""Gets the bucket of this ShowIkThesaurusResponse.
 
         存放词库文件的OBS桶。
 
@@ -140,7 +140,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ShowIkThesaurusResponse.
+        r"""Sets the bucket of this ShowIkThesaurusResponse.
 
         存放词库文件的OBS桶。
 
@@ -151,7 +151,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def main_obj(self):
-        """Gets the main_obj of this ShowIkThesaurusResponse.
+        r"""Gets the main_obj of this ShowIkThesaurusResponse.
 
         主词库文件对象。
 
@@ -162,7 +162,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @main_obj.setter
     def main_obj(self, main_obj):
-        """Sets the main_obj of this ShowIkThesaurusResponse.
+        r"""Sets the main_obj of this ShowIkThesaurusResponse.
 
         主词库文件对象。
 
@@ -173,7 +173,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def stop_obj(self):
-        """Gets the stop_obj of this ShowIkThesaurusResponse.
+        r"""Gets the stop_obj of this ShowIkThesaurusResponse.
 
         停词词库文件对象。
 
@@ -184,7 +184,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @stop_obj.setter
     def stop_obj(self, stop_obj):
-        """Sets the stop_obj of this ShowIkThesaurusResponse.
+        r"""Sets the stop_obj of this ShowIkThesaurusResponse.
 
         停词词库文件对象。
 
@@ -195,7 +195,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def synonym_obj(self):
-        """Gets the synonym_obj of this ShowIkThesaurusResponse.
+        r"""Gets the synonym_obj of this ShowIkThesaurusResponse.
 
         同义词词库文件对象。
 
@@ -206,7 +206,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @synonym_obj.setter
     def synonym_obj(self, synonym_obj):
-        """Sets the synonym_obj of this ShowIkThesaurusResponse.
+        r"""Sets the synonym_obj of this ShowIkThesaurusResponse.
 
         同义词词库文件对象。
 
@@ -217,7 +217,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowIkThesaurusResponse.
+        r"""Gets the update_time of this ShowIkThesaurusResponse.
 
         词库最近更新时间。
 
@@ -228,7 +228,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowIkThesaurusResponse.
+        r"""Sets the update_time of this ShowIkThesaurusResponse.
 
         词库最近更新时间。
 
@@ -239,7 +239,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def update_details(self):
-        """Gets the update_details of this ShowIkThesaurusResponse.
+        r"""Gets the update_details of this ShowIkThesaurusResponse.
 
         更新详情。
 
@@ -250,7 +250,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @update_details.setter
     def update_details(self, update_details):
-        """Sets the update_details of this ShowIkThesaurusResponse.
+        r"""Sets the update_details of this ShowIkThesaurusResponse.
 
         更新详情。
 
@@ -261,7 +261,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowIkThesaurusResponse.
+        r"""Gets the cluster_id of this ShowIkThesaurusResponse.
 
         指定配置自定义词库的集群ID。
 
@@ -272,7 +272,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowIkThesaurusResponse.
+        r"""Sets the cluster_id of this ShowIkThesaurusResponse.
 
         指定配置自定义词库的集群ID。
 
@@ -283,7 +283,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def operate_status(self):
-        """Gets the operate_status of this ShowIkThesaurusResponse.
+        r"""Gets the operate_status of this ShowIkThesaurusResponse.
 
         操作状态。
 
@@ -294,7 +294,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @operate_status.setter
     def operate_status(self, operate_status):
-        """Sets the operate_status of this ShowIkThesaurusResponse.
+        r"""Sets the operate_status of this ShowIkThesaurusResponse.
 
         操作状态。
 
@@ -305,7 +305,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowIkThesaurusResponse.
+        r"""Gets the id of this ShowIkThesaurusResponse.
 
         词库的ID。
 
@@ -316,7 +316,7 @@ class ShowIkThesaurusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowIkThesaurusResponse.
+        r"""Sets the id of this ShowIkThesaurusResponse.
 
         词库的ID。
 

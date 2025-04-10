@@ -25,7 +25,7 @@ class ShowEnterpriseRouterRequest:
     }
 
     def __init__(self, er_id=None):
-        """ShowEnterpriseRouterRequest
+        r"""ShowEnterpriseRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEnterpriseRouterRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ShowEnterpriseRouterRequest.
+        r"""Gets the er_id of this ShowEnterpriseRouterRequest.
 
         企业路由器实例ID
 
@@ -53,7 +53,7 @@ class ShowEnterpriseRouterRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ShowEnterpriseRouterRequest.
+        r"""Sets the er_id of this ShowEnterpriseRouterRequest.
 
         企业路由器实例ID
 

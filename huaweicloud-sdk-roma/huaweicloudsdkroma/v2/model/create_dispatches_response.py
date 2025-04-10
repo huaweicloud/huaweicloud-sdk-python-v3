@@ -44,7 +44,7 @@ class CreateDispatchesResponse(SdkResponse):
     }
 
     def __init__(self, dispatch_id=None, task_id=None, start_datetime=None, period=None, dispatch_interval=None, created_date=None, last_modified_date=None, remark=None, use_quartz_cron=None, cron=None):
-        """CreateDispatchesResponse
+        r"""CreateDispatchesResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def dispatch_id(self):
-        """Gets the dispatch_id of this CreateDispatchesResponse.
+        r"""Gets the dispatch_id of this CreateDispatchesResponse.
 
         调度计划ID
 
@@ -118,7 +118,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @dispatch_id.setter
     def dispatch_id(self, dispatch_id):
-        """Sets the dispatch_id of this CreateDispatchesResponse.
+        r"""Sets the dispatch_id of this CreateDispatchesResponse.
 
         调度计划ID
 
@@ -129,7 +129,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateDispatchesResponse.
+        r"""Gets the task_id of this CreateDispatchesResponse.
 
         调度计划关联的任务ID
 
@@ -140,7 +140,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateDispatchesResponse.
+        r"""Sets the task_id of this CreateDispatchesResponse.
 
         调度计划关联的任务ID
 
@@ -151,7 +151,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def start_datetime(self):
-        """Gets the start_datetime of this CreateDispatchesResponse.
+        r"""Gets the start_datetime of this CreateDispatchesResponse.
 
         调度计划的执行开始时间
 
@@ -162,7 +162,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @start_datetime.setter
     def start_datetime(self, start_datetime):
-        """Sets the start_datetime of this CreateDispatchesResponse.
+        r"""Sets the start_datetime of this CreateDispatchesResponse.
 
         调度计划的执行开始时间
 
@@ -173,7 +173,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this CreateDispatchesResponse.
+        r"""Gets the period of this CreateDispatchesResponse.
 
         调度计划执行周期的时间单位，当使用cron表达式时，为空 - MIN (分钟) - HOUR (小时) - DAY (日) - WEEK (周) - MON (月)
 
@@ -184,7 +184,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this CreateDispatchesResponse.
+        r"""Sets the period of this CreateDispatchesResponse.
 
         调度计划执行周期的时间单位，当使用cron表达式时，为空 - MIN (分钟) - HOUR (小时) - DAY (日) - WEEK (周) - MON (月)
 
@@ -195,7 +195,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def dispatch_interval(self):
-        """Gets the dispatch_interval of this CreateDispatchesResponse.
+        r"""Gets the dispatch_interval of this CreateDispatchesResponse.
 
         调度计划的执行间隔时间周期
 
@@ -206,7 +206,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @dispatch_interval.setter
     def dispatch_interval(self, dispatch_interval):
-        """Sets the dispatch_interval of this CreateDispatchesResponse.
+        r"""Sets the dispatch_interval of this CreateDispatchesResponse.
 
         调度计划的执行间隔时间周期
 
@@ -217,7 +217,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def created_date(self):
-        """Gets the created_date of this CreateDispatchesResponse.
+        r"""Gets the created_date of this CreateDispatchesResponse.
 
         调度计划的创建时间
 
@@ -228,7 +228,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this CreateDispatchesResponse.
+        r"""Sets the created_date of this CreateDispatchesResponse.
 
         调度计划的创建时间
 
@@ -239,7 +239,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def last_modified_date(self):
-        """Gets the last_modified_date of this CreateDispatchesResponse.
+        r"""Gets the last_modified_date of this CreateDispatchesResponse.
 
         调度计划最近一次的修改时间
 
@@ -250,7 +250,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @last_modified_date.setter
     def last_modified_date(self, last_modified_date):
-        """Sets the last_modified_date of this CreateDispatchesResponse.
+        r"""Sets the last_modified_date of this CreateDispatchesResponse.
 
         调度计划最近一次的修改时间
 
@@ -261,7 +261,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this CreateDispatchesResponse.
+        r"""Gets the remark of this CreateDispatchesResponse.
 
         调度计划的备注信息
 
@@ -272,7 +272,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CreateDispatchesResponse.
+        r"""Sets the remark of this CreateDispatchesResponse.
 
         调度计划的备注信息
 
@@ -283,7 +283,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def use_quartz_cron(self):
-        """Gets the use_quartz_cron of this CreateDispatchesResponse.
+        r"""Gets the use_quartz_cron of this CreateDispatchesResponse.
 
         调度计划是否使用cron表达式，允许如下值： - true (使用cron表达式) - false (不使用cron表达式)
 
@@ -294,7 +294,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @use_quartz_cron.setter
     def use_quartz_cron(self, use_quartz_cron):
-        """Sets the use_quartz_cron of this CreateDispatchesResponse.
+        r"""Sets the use_quartz_cron of this CreateDispatchesResponse.
 
         调度计划是否使用cron表达式，允许如下值： - true (使用cron表达式) - false (不使用cron表达式)
 
@@ -305,7 +305,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @property
     def cron(self):
-        """Gets the cron of this CreateDispatchesResponse.
+        r"""Gets the cron of this CreateDispatchesResponse.
 
         调度计划的cron表达式
 
@@ -316,7 +316,7 @@ class CreateDispatchesResponse(SdkResponse):
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this CreateDispatchesResponse.
+        r"""Sets the cron of this CreateDispatchesResponse.
 
         调度计划的cron表达式
 

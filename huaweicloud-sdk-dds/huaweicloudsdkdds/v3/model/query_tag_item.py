@@ -27,7 +27,7 @@ class QueryTagItem:
     }
 
     def __init__(self, key=None, values=None):
-        """QueryTagItem
+        r"""QueryTagItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryTagItem:
 
     @property
     def key(self):
-        """Gets the key of this QueryTagItem.
+        r"""Gets the key of this QueryTagItem.
 
         标签键。最大长度36个unicode字符，key不能为空或者空字符串，不能为空格，校验和使用之前先排除前后半角空格。
 
@@ -59,7 +59,7 @@ class QueryTagItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this QueryTagItem.
+        r"""Sets the key of this QueryTagItem.
 
         标签键。最大长度36个unicode字符，key不能为空或者空字符串，不能为空格，校验和使用之前先排除前后半角空格。
 
@@ -70,7 +70,7 @@ class QueryTagItem:
 
     @property
     def values(self):
-        """Gets the values of this QueryTagItem.
+        r"""Gets the values of this QueryTagItem.
 
         标签值列表。最大长度43个unicode字符，不能为空格，校验和使用之前先排除前后半角空格。如果values为空列表，则表示查询任意value。value之间为或的关系。
 
@@ -81,7 +81,7 @@ class QueryTagItem:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this QueryTagItem.
+        r"""Sets the values of this QueryTagItem.
 
         标签值列表。最大长度43个unicode字符，不能为空格，校验和使用之前先排除前后半角空格。如果values为空列表，则表示查询任意value。value之间为或的关系。
 

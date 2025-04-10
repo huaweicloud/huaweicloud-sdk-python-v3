@@ -26,7 +26,7 @@ class CreateSynthesisTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateSynthesisTaskResponse
+        r"""CreateSynthesisTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSynthesisTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateSynthesisTaskResponse.
+        r"""Gets the body of this CreateSynthesisTaskResponse.
 
         分子合成路径规划任务ID
 
@@ -55,7 +55,7 @@ class CreateSynthesisTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSynthesisTaskResponse.
+        r"""Sets the body of this CreateSynthesisTaskResponse.
 
         分子合成路径规划任务ID
 

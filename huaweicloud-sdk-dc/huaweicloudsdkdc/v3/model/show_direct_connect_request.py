@@ -27,7 +27,7 @@ class ShowDirectConnectRequest:
     }
 
     def __init__(self, direct_connect_id=None, fields=None):
-        """ShowDirectConnectRequest
+        r"""ShowDirectConnectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDirectConnectRequest:
 
     @property
     def direct_connect_id(self):
-        """Gets the direct_connect_id of this ShowDirectConnectRequest.
+        r"""Gets the direct_connect_id of this ShowDirectConnectRequest.
 
         物理专线连接ID。
 
@@ -60,7 +60,7 @@ class ShowDirectConnectRequest:
 
     @direct_connect_id.setter
     def direct_connect_id(self, direct_connect_id):
-        """Sets the direct_connect_id of this ShowDirectConnectRequest.
+        r"""Sets the direct_connect_id of this ShowDirectConnectRequest.
 
         物理专线连接ID。
 
@@ -71,7 +71,7 @@ class ShowDirectConnectRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowDirectConnectRequest.
+        r"""Gets the fields of this ShowDirectConnectRequest.
 
         显示字段列表
 
@@ -82,7 +82,7 @@ class ShowDirectConnectRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowDirectConnectRequest.
+        r"""Sets the fields of this ShowDirectConnectRequest.
 
         显示字段列表
 

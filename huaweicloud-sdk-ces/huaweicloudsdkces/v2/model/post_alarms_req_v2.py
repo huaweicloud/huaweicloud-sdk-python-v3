@@ -59,7 +59,7 @@ class PostAlarmsReqV2:
     }
 
     def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, alarm_template_id=None, tags=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None, product_name=None, resource_level=None):
-        """PostAlarmsReqV2
+        r"""PostAlarmsReqV2
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class PostAlarmsReqV2:
 
     @property
     def name(self):
-        """Gets the name of this PostAlarmsReqV2.
+        r"""Gets the name of this PostAlarmsReqV2.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -167,7 +167,7 @@ class PostAlarmsReqV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostAlarmsReqV2.
+        r"""Sets the name of this PostAlarmsReqV2.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -178,7 +178,7 @@ class PostAlarmsReqV2:
 
     @property
     def description(self):
-        """Gets the description of this PostAlarmsReqV2.
+        r"""Gets the description of this PostAlarmsReqV2.
 
         告警描述，长度0-256
 
@@ -189,7 +189,7 @@ class PostAlarmsReqV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PostAlarmsReqV2.
+        r"""Sets the description of this PostAlarmsReqV2.
 
         告警描述，长度0-256
 
@@ -200,7 +200,7 @@ class PostAlarmsReqV2:
 
     @property
     def namespace(self):
-        """Gets the namespace of this PostAlarmsReqV2.
+        r"""Gets the namespace of this PostAlarmsReqV2.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -211,7 +211,7 @@ class PostAlarmsReqV2:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this PostAlarmsReqV2.
+        r"""Sets the namespace of this PostAlarmsReqV2.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -222,7 +222,7 @@ class PostAlarmsReqV2:
 
     @property
     def resource_group_id(self):
-        """Gets the resource_group_id of this PostAlarmsReqV2.
+        r"""Gets the resource_group_id of this PostAlarmsReqV2.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -233,7 +233,7 @@ class PostAlarmsReqV2:
 
     @resource_group_id.setter
     def resource_group_id(self, resource_group_id):
-        """Sets the resource_group_id of this PostAlarmsReqV2.
+        r"""Sets the resource_group_id of this PostAlarmsReqV2.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -244,7 +244,7 @@ class PostAlarmsReqV2:
 
     @property
     def resources(self):
-        """Gets the resources of this PostAlarmsReqV2.
+        r"""Gets the resources of this PostAlarmsReqV2.
 
         资源列表，监控范围为指定资源时必传
 
@@ -255,7 +255,7 @@ class PostAlarmsReqV2:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this PostAlarmsReqV2.
+        r"""Sets the resources of this PostAlarmsReqV2.
 
         资源列表，监控范围为指定资源时必传
 
@@ -266,7 +266,7 @@ class PostAlarmsReqV2:
 
     @property
     def alarm_template_id(self):
-        """Gets the alarm_template_id of this PostAlarmsReqV2.
+        r"""Gets the alarm_template_id of this PostAlarmsReqV2.
 
         告警规则关联告警模板ID
 
@@ -277,7 +277,7 @@ class PostAlarmsReqV2:
 
     @alarm_template_id.setter
     def alarm_template_id(self, alarm_template_id):
-        """Sets the alarm_template_id of this PostAlarmsReqV2.
+        r"""Sets the alarm_template_id of this PostAlarmsReqV2.
 
         告警规则关联告警模板ID
 
@@ -288,7 +288,7 @@ class PostAlarmsReqV2:
 
     @property
     def tags(self):
-        """Gets the tags of this PostAlarmsReqV2.
+        r"""Gets the tags of this PostAlarmsReqV2.
 
         租户标签列表
 
@@ -299,7 +299,7 @@ class PostAlarmsReqV2:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PostAlarmsReqV2.
+        r"""Sets the tags of this PostAlarmsReqV2.
 
         租户标签列表
 
@@ -310,7 +310,7 @@ class PostAlarmsReqV2:
 
     @property
     def policies(self):
-        """Gets the policies of this PostAlarmsReqV2.
+        r"""Gets the policies of this PostAlarmsReqV2.
 
         告警策略，当alarm_template_id字段为空时必填，不为空时不填
 
@@ -321,7 +321,7 @@ class PostAlarmsReqV2:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PostAlarmsReqV2.
+        r"""Sets the policies of this PostAlarmsReqV2.
 
         告警策略，当alarm_template_id字段为空时必填，不为空时不填
 
@@ -332,7 +332,7 @@ class PostAlarmsReqV2:
 
     @property
     def type(self):
-        """Gets the type of this PostAlarmsReqV2.
+        r"""Gets the type of this PostAlarmsReqV2.
 
         :return: The type of this PostAlarmsReqV2.
         :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -341,7 +341,7 @@ class PostAlarmsReqV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostAlarmsReqV2.
+        r"""Sets the type of this PostAlarmsReqV2.
 
         :param type: The type of this PostAlarmsReqV2.
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -350,7 +350,7 @@ class PostAlarmsReqV2:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this PostAlarmsReqV2.
+        r"""Gets the alarm_notifications of this PostAlarmsReqV2.
 
         告警触发的动作
 
@@ -361,7 +361,7 @@ class PostAlarmsReqV2:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this PostAlarmsReqV2.
+        r"""Sets the alarm_notifications of this PostAlarmsReqV2.
 
         告警触发的动作
 
@@ -372,7 +372,7 @@ class PostAlarmsReqV2:
 
     @property
     def ok_notifications(self):
-        """Gets the ok_notifications of this PostAlarmsReqV2.
+        r"""Gets the ok_notifications of this PostAlarmsReqV2.
 
         告警恢复触发的动作
 
@@ -383,7 +383,7 @@ class PostAlarmsReqV2:
 
     @ok_notifications.setter
     def ok_notifications(self, ok_notifications):
-        """Sets the ok_notifications of this PostAlarmsReqV2.
+        r"""Sets the ok_notifications of this PostAlarmsReqV2.
 
         告警恢复触发的动作
 
@@ -394,7 +394,7 @@ class PostAlarmsReqV2:
 
     @property
     def notification_begin_time(self):
-        """Gets the notification_begin_time of this PostAlarmsReqV2.
+        r"""Gets the notification_begin_time of this PostAlarmsReqV2.
 
         告警通知开启时间
 
@@ -405,7 +405,7 @@ class PostAlarmsReqV2:
 
     @notification_begin_time.setter
     def notification_begin_time(self, notification_begin_time):
-        """Sets the notification_begin_time of this PostAlarmsReqV2.
+        r"""Sets the notification_begin_time of this PostAlarmsReqV2.
 
         告警通知开启时间
 
@@ -416,7 +416,7 @@ class PostAlarmsReqV2:
 
     @property
     def notification_end_time(self):
-        """Gets the notification_end_time of this PostAlarmsReqV2.
+        r"""Gets the notification_end_time of this PostAlarmsReqV2.
 
         告警通知关闭时间
 
@@ -427,7 +427,7 @@ class PostAlarmsReqV2:
 
     @notification_end_time.setter
     def notification_end_time(self, notification_end_time):
-        """Sets the notification_end_time of this PostAlarmsReqV2.
+        r"""Sets the notification_end_time of this PostAlarmsReqV2.
 
         告警通知关闭时间
 
@@ -438,7 +438,7 @@ class PostAlarmsReqV2:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PostAlarmsReqV2.
+        r"""Gets the enterprise_project_id of this PostAlarmsReqV2.
 
         企业项目ID，不填时会使用默认的企业项目ID
 
@@ -449,7 +449,7 @@ class PostAlarmsReqV2:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PostAlarmsReqV2.
+        r"""Sets the enterprise_project_id of this PostAlarmsReqV2.
 
         企业项目ID，不填时会使用默认的企业项目ID
 
@@ -460,7 +460,7 @@ class PostAlarmsReqV2:
 
     @property
     def enabled(self):
-        """Gets the enabled of this PostAlarmsReqV2.
+        r"""Gets the enabled of this PostAlarmsReqV2.
 
         告警开关
 
@@ -471,7 +471,7 @@ class PostAlarmsReqV2:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this PostAlarmsReqV2.
+        r"""Sets the enabled of this PostAlarmsReqV2.
 
         告警开关
 
@@ -482,7 +482,7 @@ class PostAlarmsReqV2:
 
     @property
     def notification_enabled(self):
-        """Gets the notification_enabled of this PostAlarmsReqV2.
+        r"""Gets the notification_enabled of this PostAlarmsReqV2.
 
         是否开启告警通知
 
@@ -493,7 +493,7 @@ class PostAlarmsReqV2:
 
     @notification_enabled.setter
     def notification_enabled(self, notification_enabled):
-        """Sets the notification_enabled of this PostAlarmsReqV2.
+        r"""Sets the notification_enabled of this PostAlarmsReqV2.
 
         是否开启告警通知
 
@@ -504,7 +504,7 @@ class PostAlarmsReqV2:
 
     @property
     def product_name(self):
-        """Gets the product_name of this PostAlarmsReqV2.
+        r"""Gets the product_name of this PostAlarmsReqV2.
 
         产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
@@ -515,7 +515,7 @@ class PostAlarmsReqV2:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this PostAlarmsReqV2.
+        r"""Sets the product_name of this PostAlarmsReqV2.
 
         产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
@@ -526,7 +526,7 @@ class PostAlarmsReqV2:
 
     @property
     def resource_level(self):
-        """Gets the resource_level of this PostAlarmsReqV2.
+        r"""Gets the resource_level of this PostAlarmsReqV2.
 
         :return: The resource_level of this PostAlarmsReqV2.
         :rtype: :class:`huaweicloudsdkces.v2.ResourceLevel`
@@ -535,7 +535,7 @@ class PostAlarmsReqV2:
 
     @resource_level.setter
     def resource_level(self, resource_level):
-        """Sets the resource_level of this PostAlarmsReqV2.
+        r"""Sets the resource_level of this PostAlarmsReqV2.
 
         :param resource_level: The resource_level of this PostAlarmsReqV2.
         :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`

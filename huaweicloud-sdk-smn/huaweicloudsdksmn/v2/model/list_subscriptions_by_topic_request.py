@@ -31,7 +31,7 @@ class ListSubscriptionsByTopicRequest:
     }
 
     def __init__(self, topic_urn=None, offset=None, limit=None, fuzzy_remark=None):
-        """ListSubscriptionsByTopicRequest
+        r"""ListSubscriptionsByTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListSubscriptionsByTopicRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ListSubscriptionsByTopicRequest.
+        r"""Gets the topic_urn of this ListSubscriptionsByTopicRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -74,7 +74,7 @@ class ListSubscriptionsByTopicRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ListSubscriptionsByTopicRequest.
+        r"""Sets the topic_urn of this ListSubscriptionsByTopicRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -85,7 +85,7 @@ class ListSubscriptionsByTopicRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubscriptionsByTopicRequest.
+        r"""Gets the offset of this ListSubscriptionsByTopicRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -96,7 +96,7 @@ class ListSubscriptionsByTopicRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubscriptionsByTopicRequest.
+        r"""Sets the offset of this ListSubscriptionsByTopicRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -107,7 +107,7 @@ class ListSubscriptionsByTopicRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubscriptionsByTopicRequest.
+        r"""Gets the limit of this ListSubscriptionsByTopicRequest.
 
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -118,7 +118,7 @@ class ListSubscriptionsByTopicRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubscriptionsByTopicRequest.
+        r"""Sets the limit of this ListSubscriptionsByTopicRequest.
 
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -129,7 +129,7 @@ class ListSubscriptionsByTopicRequest:
 
     @property
     def fuzzy_remark(self):
-        """Gets the fuzzy_remark of this ListSubscriptionsByTopicRequest.
+        r"""Gets the fuzzy_remark of this ListSubscriptionsByTopicRequest.
 
         检索的订阅备注字段，模糊匹配。最大长度限制为128字节。
 
@@ -140,7 +140,7 @@ class ListSubscriptionsByTopicRequest:
 
     @fuzzy_remark.setter
     def fuzzy_remark(self, fuzzy_remark):
-        """Sets the fuzzy_remark of this ListSubscriptionsByTopicRequest.
+        r"""Sets the fuzzy_remark of this ListSubscriptionsByTopicRequest.
 
         检索的订阅备注字段，模糊匹配。最大长度限制为128字节。
 

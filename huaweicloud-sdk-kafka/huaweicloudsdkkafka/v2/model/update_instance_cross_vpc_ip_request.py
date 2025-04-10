@@ -27,7 +27,7 @@ class UpdateInstanceCrossVpcIpRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceCrossVpcIpRequest
+        r"""UpdateInstanceCrossVpcIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceCrossVpcIpRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceCrossVpcIpRequest.
+        r"""Gets the instance_id of this UpdateInstanceCrossVpcIpRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateInstanceCrossVpcIpRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceCrossVpcIpRequest.
+        r"""Sets the instance_id of this UpdateInstanceCrossVpcIpRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateInstanceCrossVpcIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceCrossVpcIpRequest.
+        r"""Gets the body of this UpdateInstanceCrossVpcIpRequest.
 
         :return: The body of this UpdateInstanceCrossVpcIpRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`
@@ -80,7 +80,7 @@ class UpdateInstanceCrossVpcIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceCrossVpcIpRequest.
+        r"""Sets the body of this UpdateInstanceCrossVpcIpRequest.
 
         :param body: The body of this UpdateInstanceCrossVpcIpRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`

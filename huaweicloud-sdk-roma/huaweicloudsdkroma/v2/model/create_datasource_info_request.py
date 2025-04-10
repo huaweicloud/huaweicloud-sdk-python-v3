@@ -27,7 +27,7 @@ class CreateDatasourceInfoRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDatasourceInfoRequest
+        r"""CreateDatasourceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDatasourceInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDatasourceInfoRequest.
+        r"""Gets the instance_id of this CreateDatasourceInfoRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateDatasourceInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDatasourceInfoRequest.
+        r"""Sets the instance_id of this CreateDatasourceInfoRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateDatasourceInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatasourceInfoRequest.
+        r"""Gets the body of this CreateDatasourceInfoRequest.
 
         :return: The body of this CreateDatasourceInfoRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.DatasourceInfo`
@@ -80,7 +80,7 @@ class CreateDatasourceInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatasourceInfoRequest.
+        r"""Sets the body of this CreateDatasourceInfoRequest.
 
         :param body: The body of this CreateDatasourceInfoRequest.
         :type body: :class:`huaweicloudsdkroma.v2.DatasourceInfo`

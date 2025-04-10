@@ -28,7 +28,7 @@ class ExpandShareResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None):
-        """ExpandShareResponse
+        r"""ExpandShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExpandShareResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExpandShareResponse.
+        r"""Gets the id of this ExpandShareResponse.
 
         SFS Turbo文件系统ID。
 
@@ -62,7 +62,7 @@ class ExpandShareResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExpandShareResponse.
+        r"""Sets the id of this ExpandShareResponse.
 
         SFS Turbo文件系统ID。
 
@@ -73,7 +73,7 @@ class ExpandShareResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ExpandShareResponse.
+        r"""Gets the name of this ExpandShareResponse.
 
         SFS Turbo文件系统名称。
 
@@ -84,7 +84,7 @@ class ExpandShareResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExpandShareResponse.
+        r"""Sets the name of this ExpandShareResponse.
 
         SFS Turbo文件系统名称。
 

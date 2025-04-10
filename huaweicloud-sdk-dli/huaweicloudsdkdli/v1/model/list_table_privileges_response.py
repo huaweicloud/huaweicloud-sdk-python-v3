@@ -32,7 +32,7 @@ class ListTablePrivilegesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, user_name=None, privileges=None):
-        """ListTablePrivilegesResponse
+        r"""ListTablePrivilegesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListTablePrivilegesResponse.
+        r"""Gets the is_success of this ListTablePrivilegesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListTablePrivilegesResponse.
+        r"""Sets the is_success of this ListTablePrivilegesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListTablePrivilegesResponse.
+        r"""Gets the message of this ListTablePrivilegesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListTablePrivilegesResponse.
+        r"""Sets the message of this ListTablePrivilegesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListTablePrivilegesResponse.
+        r"""Gets the user_name of this ListTablePrivilegesResponse.
 
         被查询的用户名称。
 
@@ -120,7 +120,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListTablePrivilegesResponse.
+        r"""Sets the user_name of this ListTablePrivilegesResponse.
 
         被查询的用户名称。
 
@@ -131,7 +131,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @property
     def privileges(self):
-        """Gets the privileges of this ListTablePrivilegesResponse.
+        r"""Gets the privileges of this ListTablePrivilegesResponse.
 
         权限信息。
 
@@ -142,7 +142,7 @@ class ListTablePrivilegesResponse(SdkResponse):
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this ListTablePrivilegesResponse.
+        r"""Sets the privileges of this ListTablePrivilegesResponse.
 
         权限信息。
 

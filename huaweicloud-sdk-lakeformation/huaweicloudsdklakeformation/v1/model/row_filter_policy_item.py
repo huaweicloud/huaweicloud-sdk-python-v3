@@ -37,7 +37,7 @@ class RowFilterPolicyItem:
     }
 
     def __init__(self, accesses=None, conditions=None, delegate_admin=None, groups=None, roles=None, row_filter_info=None, users=None):
-        """RowFilterPolicyItem
+        r"""RowFilterPolicyItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RowFilterPolicyItem:
 
     @property
     def accesses(self):
-        """Gets the accesses of this RowFilterPolicyItem.
+        r"""Gets the accesses of this RowFilterPolicyItem.
 
         权限
 
@@ -96,7 +96,7 @@ class RowFilterPolicyItem:
 
     @accesses.setter
     def accesses(self, accesses):
-        """Sets the accesses of this RowFilterPolicyItem.
+        r"""Sets the accesses of this RowFilterPolicyItem.
 
         权限
 
@@ -107,7 +107,7 @@ class RowFilterPolicyItem:
 
     @property
     def conditions(self):
-        """Gets the conditions of this RowFilterPolicyItem.
+        r"""Gets the conditions of this RowFilterPolicyItem.
 
         条件
 
@@ -118,7 +118,7 @@ class RowFilterPolicyItem:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this RowFilterPolicyItem.
+        r"""Sets the conditions of this RowFilterPolicyItem.
 
         条件
 
@@ -129,7 +129,7 @@ class RowFilterPolicyItem:
 
     @property
     def delegate_admin(self):
-        """Gets the delegate_admin of this RowFilterPolicyItem.
+        r"""Gets the delegate_admin of this RowFilterPolicyItem.
 
         是否传递
 
@@ -140,7 +140,7 @@ class RowFilterPolicyItem:
 
     @delegate_admin.setter
     def delegate_admin(self, delegate_admin):
-        """Sets the delegate_admin of this RowFilterPolicyItem.
+        r"""Sets the delegate_admin of this RowFilterPolicyItem.
 
         是否传递
 
@@ -151,7 +151,7 @@ class RowFilterPolicyItem:
 
     @property
     def groups(self):
-        """Gets the groups of this RowFilterPolicyItem.
+        r"""Gets the groups of this RowFilterPolicyItem.
 
         组
 
@@ -162,7 +162,7 @@ class RowFilterPolicyItem:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this RowFilterPolicyItem.
+        r"""Sets the groups of this RowFilterPolicyItem.
 
         组
 
@@ -173,7 +173,7 @@ class RowFilterPolicyItem:
 
     @property
     def roles(self):
-        """Gets the roles of this RowFilterPolicyItem.
+        r"""Gets the roles of this RowFilterPolicyItem.
 
         角色
 
@@ -184,7 +184,7 @@ class RowFilterPolicyItem:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this RowFilterPolicyItem.
+        r"""Sets the roles of this RowFilterPolicyItem.
 
         角色
 
@@ -195,7 +195,7 @@ class RowFilterPolicyItem:
 
     @property
     def row_filter_info(self):
-        """Gets the row_filter_info of this RowFilterPolicyItem.
+        r"""Gets the row_filter_info of this RowFilterPolicyItem.
 
         :return: The row_filter_info of this RowFilterPolicyItem.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PolicyItemRowFilterInfo`
@@ -204,7 +204,7 @@ class RowFilterPolicyItem:
 
     @row_filter_info.setter
     def row_filter_info(self, row_filter_info):
-        """Sets the row_filter_info of this RowFilterPolicyItem.
+        r"""Sets the row_filter_info of this RowFilterPolicyItem.
 
         :param row_filter_info: The row_filter_info of this RowFilterPolicyItem.
         :type row_filter_info: :class:`huaweicloudsdklakeformation.v1.PolicyItemRowFilterInfo`
@@ -213,7 +213,7 @@ class RowFilterPolicyItem:
 
     @property
     def users(self):
-        """Gets the users of this RowFilterPolicyItem.
+        r"""Gets the users of this RowFilterPolicyItem.
 
         用户
 
@@ -224,7 +224,7 @@ class RowFilterPolicyItem:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RowFilterPolicyItem.
+        r"""Sets the users of this RowFilterPolicyItem.
 
         用户
 

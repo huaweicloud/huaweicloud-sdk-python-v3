@@ -41,7 +41,7 @@ class MongPageRequest:
     }
 
     def __init__(self, end_last_modified_time=None, id=None, rdm_version=None, source_id=None, source_rdm_version=None, start_last_modified_time=None, target_id=None, target_rdm_version=None, target_type=None):
-        """MongPageRequest
+        r"""MongPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class MongPageRequest:
 
     @property
     def end_last_modified_time(self):
-        """Gets the end_last_modified_time of this MongPageRequest.
+        r"""Gets the end_last_modified_time of this MongPageRequest.
 
         **参数解释：**  结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -109,7 +109,7 @@ class MongPageRequest:
 
     @end_last_modified_time.setter
     def end_last_modified_time(self, end_last_modified_time):
-        """Sets the end_last_modified_time of this MongPageRequest.
+        r"""Sets the end_last_modified_time of this MongPageRequest.
 
         **参数解释：**  结束时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -120,7 +120,7 @@ class MongPageRequest:
 
     @property
     def id(self):
-        """Gets the id of this MongPageRequest.
+        r"""Gets the id of this MongPageRequest.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -131,7 +131,7 @@ class MongPageRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MongPageRequest.
+        r"""Sets the id of this MongPageRequest.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -142,7 +142,7 @@ class MongPageRequest:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this MongPageRequest.
+        r"""Gets the rdm_version of this MongPageRequest.
 
         **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -153,7 +153,7 @@ class MongPageRequest:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this MongPageRequest.
+        r"""Sets the rdm_version of this MongPageRequest.
 
         **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -164,7 +164,7 @@ class MongPageRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this MongPageRequest.
+        r"""Gets the source_id of this MongPageRequest.
 
         **参数解释：**  关系实体源端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -175,7 +175,7 @@ class MongPageRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this MongPageRequest.
+        r"""Sets the source_id of this MongPageRequest.
 
         **参数解释：**  关系实体源端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -186,7 +186,7 @@ class MongPageRequest:
 
     @property
     def source_rdm_version(self):
-        """Gets the source_rdm_version of this MongPageRequest.
+        r"""Gets the source_rdm_version of this MongPageRequest.
 
         **参数解释：**  关系实体源端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -197,7 +197,7 @@ class MongPageRequest:
 
     @source_rdm_version.setter
     def source_rdm_version(self, source_rdm_version):
-        """Sets the source_rdm_version of this MongPageRequest.
+        r"""Sets the source_rdm_version of this MongPageRequest.
 
         **参数解释：**  关系实体源端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -208,7 +208,7 @@ class MongPageRequest:
 
     @property
     def start_last_modified_time(self):
-        """Gets the start_last_modified_time of this MongPageRequest.
+        r"""Gets the start_last_modified_time of this MongPageRequest.
 
         **参数解释：**  开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -219,7 +219,7 @@ class MongPageRequest:
 
     @start_last_modified_time.setter
     def start_last_modified_time(self, start_last_modified_time):
-        """Sets the start_last_modified_time of this MongPageRequest.
+        r"""Sets the start_last_modified_time of this MongPageRequest.
 
         **参数解释：**  开始时间。系统以数据实例的最后修改时间作为查询条件，您定义的开始时间和结束时间作为时间范围进行查询。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -230,7 +230,7 @@ class MongPageRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this MongPageRequest.
+        r"""Gets the target_id of this MongPageRequest.
 
         **参数解释：**  关系实体目标端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -241,7 +241,7 @@ class MongPageRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this MongPageRequest.
+        r"""Sets the target_id of this MongPageRequest.
 
         **参数解释：**  关系实体目标端ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -252,7 +252,7 @@ class MongPageRequest:
 
     @property
     def target_rdm_version(self):
-        """Gets the target_rdm_version of this MongPageRequest.
+        r"""Gets the target_rdm_version of this MongPageRequest.
 
         **参数解释：**  关系实体目标端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -263,7 +263,7 @@ class MongPageRequest:
 
     @target_rdm_version.setter
     def target_rdm_version(self, target_rdm_version):
-        """Sets the target_rdm_version of this MongPageRequest.
+        r"""Sets the target_rdm_version of this MongPageRequest.
 
         **参数解释：**  关系实体目标端系统版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -274,7 +274,7 @@ class MongPageRequest:
 
     @property
     def target_type(self):
-        """Gets the target_type of this MongPageRequest.
+        r"""Gets the target_type of this MongPageRequest.
 
         **参数解释：**  单边不确定关系的目标端类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -285,7 +285,7 @@ class MongPageRequest:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this MongPageRequest.
+        r"""Sets the target_type of this MongPageRequest.
 
         **参数解释：**  单边不确定关系的目标端类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

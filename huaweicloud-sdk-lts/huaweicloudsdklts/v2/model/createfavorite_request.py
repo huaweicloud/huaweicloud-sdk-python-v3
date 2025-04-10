@@ -25,7 +25,7 @@ class CreatefavoriteRequest:
     }
 
     def __init__(self, body=None):
-        """CreatefavoriteRequest
+        r"""CreatefavoriteRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatefavoriteRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatefavoriteRequest.
+        r"""Gets the body of this CreatefavoriteRequest.
 
         :return: The body of this CreatefavoriteRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreatefavoriteReqbody`
@@ -52,7 +52,7 @@ class CreatefavoriteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatefavoriteRequest.
+        r"""Sets the body of this CreatefavoriteRequest.
 
         :param body: The body of this CreatefavoriteRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreatefavoriteReqbody`

@@ -23,7 +23,7 @@ class BandwidthSizeDefine:
     }
 
     def __init__(self):
-        """BandwidthSizeDefine
+        r"""BandwidthSizeDefine
 
         The model defined in huaweicloud sdk
 

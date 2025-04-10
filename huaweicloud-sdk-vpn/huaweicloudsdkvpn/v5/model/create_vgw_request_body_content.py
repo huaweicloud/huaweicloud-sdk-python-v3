@@ -65,7 +65,7 @@ class CreateVgwRequestBodyContent:
     }
 
     def __init__(self, name=None, attachment_type=None, ip_version=None, er_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, bgp_asn=None, flavor=None, availability_zone_ids=None, enterprise_project_id=None, eip1=None, eip2=None, access_private_ip_1=None, access_private_ip_2=None, network_type=None, access_vpc_id=None, access_subnet_id=None, ha_mode=None, tags=None):
-        """CreateVgwRequestBodyContent
+        r"""CreateVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this CreateVgwRequestBodyContent.
+        r"""Gets the name of this CreateVgwRequestBodyContent.
 
         VPN网关名称
 
@@ -194,7 +194,7 @@ class CreateVgwRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVgwRequestBodyContent.
+        r"""Sets the name of this CreateVgwRequestBodyContent.
 
         VPN网关名称
 
@@ -205,7 +205,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def attachment_type(self):
-        """Gets the attachment_type of this CreateVgwRequestBodyContent.
+        r"""Gets the attachment_type of this CreateVgwRequestBodyContent.
 
         关联模式
 
@@ -216,7 +216,7 @@ class CreateVgwRequestBodyContent:
 
     @attachment_type.setter
     def attachment_type(self, attachment_type):
-        """Sets the attachment_type of this CreateVgwRequestBodyContent.
+        r"""Sets the attachment_type of this CreateVgwRequestBodyContent.
 
         关联模式
 
@@ -227,7 +227,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreateVgwRequestBodyContent.
+        r"""Gets the ip_version of this CreateVgwRequestBodyContent.
 
         网关的IP协议版本
 
@@ -238,7 +238,7 @@ class CreateVgwRequestBodyContent:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreateVgwRequestBodyContent.
+        r"""Sets the ip_version of this CreateVgwRequestBodyContent.
 
         网关的IP协议版本
 
@@ -249,7 +249,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def er_id(self):
-        """Gets the er_id of this CreateVgwRequestBodyContent.
+        r"""Gets the er_id of this CreateVgwRequestBodyContent.
 
         VPN网关所连接的ER实例的ID，当attachment_type配置为\"er\"时必填，否则不填
 
@@ -260,7 +260,7 @@ class CreateVgwRequestBodyContent:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this CreateVgwRequestBodyContent.
+        r"""Sets the er_id of this CreateVgwRequestBodyContent.
 
         VPN网关所连接的ER实例的ID，当attachment_type配置为\"er\"时必填，否则不填
 
@@ -271,7 +271,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateVgwRequestBodyContent.
+        r"""Gets the vpc_id of this CreateVgwRequestBodyContent.
 
         VPN网关所连接的VPC的ID
 
@@ -282,7 +282,7 @@ class CreateVgwRequestBodyContent:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateVgwRequestBodyContent.
+        r"""Sets the vpc_id of this CreateVgwRequestBodyContent.
 
         VPN网关所连接的VPC的ID
 
@@ -293,7 +293,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def local_subnets(self):
-        """Gets the local_subnets of this CreateVgwRequestBodyContent.
+        r"""Gets the local_subnets of this CreateVgwRequestBodyContent.
 
         本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv4\"时必填，否则不填
 
@@ -304,7 +304,7 @@ class CreateVgwRequestBodyContent:
 
     @local_subnets.setter
     def local_subnets(self, local_subnets):
-        """Sets the local_subnets of this CreateVgwRequestBodyContent.
+        r"""Sets the local_subnets of this CreateVgwRequestBodyContent.
 
         本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv4\"时必填，否则不填
 
@@ -315,7 +315,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def local_subnets_v6(self):
-        """Gets the local_subnets_v6 of this CreateVgwRequestBodyContent.
+        r"""Gets the local_subnets_v6 of this CreateVgwRequestBodyContent.
 
         使能ipv6的本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv6\"时必填，否则不填
 
@@ -326,7 +326,7 @@ class CreateVgwRequestBodyContent:
 
     @local_subnets_v6.setter
     def local_subnets_v6(self, local_subnets_v6):
-        """Sets the local_subnets_v6 of this CreateVgwRequestBodyContent.
+        r"""Sets the local_subnets_v6 of this CreateVgwRequestBodyContent.
 
         使能ipv6的本端子网，当attachment_type配置为\"vpc\"且ip_version为\"ipv6\"时必填，否则不填
 
@@ -337,7 +337,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def connect_subnet(self):
-        """Gets the connect_subnet of this CreateVgwRequestBodyContent.
+        r"""Gets the connect_subnet of this CreateVgwRequestBodyContent.
 
         VPN网关所使用的VPC子网ID
 
@@ -348,7 +348,7 @@ class CreateVgwRequestBodyContent:
 
     @connect_subnet.setter
     def connect_subnet(self, connect_subnet):
-        """Sets the connect_subnet of this CreateVgwRequestBodyContent.
+        r"""Sets the connect_subnet of this CreateVgwRequestBodyContent.
 
         VPN网关所使用的VPC子网ID
 
@@ -359,7 +359,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateVgwRequestBodyContent.
+        r"""Gets the bgp_asn of this CreateVgwRequestBodyContent.
 
         bgp所使用的asn号
 
@@ -370,7 +370,7 @@ class CreateVgwRequestBodyContent:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateVgwRequestBodyContent.
+        r"""Sets the bgp_asn of this CreateVgwRequestBodyContent.
 
         bgp所使用的asn号
 
@@ -381,7 +381,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateVgwRequestBodyContent.
+        r"""Gets the flavor of this CreateVgwRequestBodyContent.
 
         VPN网关的规格类型，当attachment_type为er时不能填写Basic
 
@@ -392,7 +392,7 @@ class CreateVgwRequestBodyContent:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateVgwRequestBodyContent.
+        r"""Sets the flavor of this CreateVgwRequestBodyContent.
 
         VPN网关的规格类型，当attachment_type为er时不能填写Basic
 
@@ -403,7 +403,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this CreateVgwRequestBodyContent.
+        r"""Gets the availability_zone_ids of this CreateVgwRequestBodyContent.
 
         部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
 
@@ -414,7 +414,7 @@ class CreateVgwRequestBodyContent:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this CreateVgwRequestBodyContent.
+        r"""Sets the availability_zone_ids of this CreateVgwRequestBodyContent.
 
         部署VPN网关的可用区。不填时自动为VPN网关选择可用区。如果需要指定可用区可以通过查询VPN网关可用区查询可用区列表。
 
@@ -425,7 +425,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateVgwRequestBodyContent.
+        r"""Gets the enterprise_project_id of this CreateVgwRequestBodyContent.
 
         企业项目ID
 
@@ -436,7 +436,7 @@ class CreateVgwRequestBodyContent:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateVgwRequestBodyContent.
+        r"""Sets the enterprise_project_id of this CreateVgwRequestBodyContent.
 
         企业项目ID
 
@@ -447,7 +447,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def eip1(self):
-        """Gets the eip1 of this CreateVgwRequestBodyContent.
+        r"""Gets the eip1 of this CreateVgwRequestBodyContent.
 
         :return: The eip1 of this CreateVgwRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
@@ -456,7 +456,7 @@ class CreateVgwRequestBodyContent:
 
     @eip1.setter
     def eip1(self, eip1):
-        """Sets the eip1 of this CreateVgwRequestBodyContent.
+        r"""Sets the eip1 of this CreateVgwRequestBodyContent.
 
         :param eip1: The eip1 of this CreateVgwRequestBodyContent.
         :type eip1: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
@@ -465,7 +465,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def eip2(self):
-        """Gets the eip2 of this CreateVgwRequestBodyContent.
+        r"""Gets the eip2 of this CreateVgwRequestBodyContent.
 
         :return: The eip2 of this CreateVgwRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
@@ -474,7 +474,7 @@ class CreateVgwRequestBodyContent:
 
     @eip2.setter
     def eip2(self, eip2):
-        """Sets the eip2 of this CreateVgwRequestBodyContent.
+        r"""Sets the eip2 of this CreateVgwRequestBodyContent.
 
         :param eip2: The eip2 of this CreateVgwRequestBodyContent.
         :type eip2: :class:`huaweicloudsdkvpn.v5.CreateRequestEip`
@@ -483,7 +483,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def access_private_ip_1(self):
-        """Gets the access_private_ip_1 of this CreateVgwRequestBodyContent.
+        r"""Gets the access_private_ip_1 of this CreateVgwRequestBodyContent.
 
         私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
 
@@ -494,7 +494,7 @@ class CreateVgwRequestBodyContent:
 
     @access_private_ip_1.setter
     def access_private_ip_1(self, access_private_ip_1):
-        """Sets the access_private_ip_1 of this CreateVgwRequestBodyContent.
+        r"""Sets the access_private_ip_1 of this CreateVgwRequestBodyContent.
 
         私网类型VPN网关的接入私网IP1，指定ip创建私网网关时设置，主备网关时为主ip，双活网关时为主ip1
 
@@ -505,7 +505,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def access_private_ip_2(self):
-        """Gets the access_private_ip_2 of this CreateVgwRequestBodyContent.
+        r"""Gets the access_private_ip_2 of this CreateVgwRequestBodyContent.
 
         私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
 
@@ -516,7 +516,7 @@ class CreateVgwRequestBodyContent:
 
     @access_private_ip_2.setter
     def access_private_ip_2(self, access_private_ip_2):
-        """Sets the access_private_ip_2 of this CreateVgwRequestBodyContent.
+        r"""Sets the access_private_ip_2 of this CreateVgwRequestBodyContent.
 
         私网类型VPN网关的接入私网IP2，指定ip创建私网网关时设置，主备网关时为备ip，双活网关时为主ip2
 
@@ -527,7 +527,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def network_type(self):
-        """Gets the network_type of this CreateVgwRequestBodyContent.
+        r"""Gets the network_type of this CreateVgwRequestBodyContent.
 
         VPN网关的网络类型，默认为公网(public)
 
@@ -538,7 +538,7 @@ class CreateVgwRequestBodyContent:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this CreateVgwRequestBodyContent.
+        r"""Sets the network_type of this CreateVgwRequestBodyContent.
 
         VPN网关的网络类型，默认为公网(public)
 
@@ -549,7 +549,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def access_vpc_id(self):
-        """Gets the access_vpc_id of this CreateVgwRequestBodyContent.
+        r"""Gets the access_vpc_id of this CreateVgwRequestBodyContent.
 
         VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
 
@@ -560,7 +560,7 @@ class CreateVgwRequestBodyContent:
 
     @access_vpc_id.setter
     def access_vpc_id(self, access_vpc_id):
-        """Sets the access_vpc_id of this CreateVgwRequestBodyContent.
+        r"""Sets the access_vpc_id of this CreateVgwRequestBodyContent.
 
         VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
 
@@ -571,7 +571,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def access_subnet_id(self):
-        """Gets the access_subnet_id of this CreateVgwRequestBodyContent.
+        r"""Gets the access_subnet_id of this CreateVgwRequestBodyContent.
 
         VPN网关北向接入VPC中的接入子网ID，在填写了access_vpc_id时必填
 
@@ -582,7 +582,7 @@ class CreateVgwRequestBodyContent:
 
     @access_subnet_id.setter
     def access_subnet_id(self, access_subnet_id):
-        """Sets the access_subnet_id of this CreateVgwRequestBodyContent.
+        r"""Sets the access_subnet_id of this CreateVgwRequestBodyContent.
 
         VPN网关北向接入VPC中的接入子网ID，在填写了access_vpc_id时必填
 
@@ -593,7 +593,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this CreateVgwRequestBodyContent.
+        r"""Gets the ha_mode of this CreateVgwRequestBodyContent.
 
         ha模式
 
@@ -604,7 +604,7 @@ class CreateVgwRequestBodyContent:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this CreateVgwRequestBodyContent.
+        r"""Sets the ha_mode of this CreateVgwRequestBodyContent.
 
         ha模式
 
@@ -615,7 +615,7 @@ class CreateVgwRequestBodyContent:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateVgwRequestBodyContent.
+        r"""Gets the tags of this CreateVgwRequestBodyContent.
 
         标签
 
@@ -626,7 +626,7 @@ class CreateVgwRequestBodyContent:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateVgwRequestBodyContent.
+        r"""Sets the tags of this CreateVgwRequestBodyContent.
 
         标签
 

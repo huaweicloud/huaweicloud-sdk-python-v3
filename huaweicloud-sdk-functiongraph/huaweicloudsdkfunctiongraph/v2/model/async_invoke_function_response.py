@@ -26,7 +26,7 @@ class AsyncInvokeFunctionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """AsyncInvokeFunctionResponse
+        r"""AsyncInvokeFunctionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AsyncInvokeFunctionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AsyncInvokeFunctionResponse.
+        r"""Gets the request_id of this AsyncInvokeFunctionResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class AsyncInvokeFunctionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AsyncInvokeFunctionResponse.
+        r"""Sets the request_id of this AsyncInvokeFunctionResponse.
 
         请求ID。
 

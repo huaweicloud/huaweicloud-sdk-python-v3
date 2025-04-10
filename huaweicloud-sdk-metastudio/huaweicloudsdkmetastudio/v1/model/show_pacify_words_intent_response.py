@@ -28,7 +28,7 @@ class ShowPacifyWordsIntentResponse(SdkResponse):
     }
 
     def __init__(self, data=None, x_request_id=None):
-        """ShowPacifyWordsIntentResponse
+        r"""ShowPacifyWordsIntentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPacifyWordsIntentResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowPacifyWordsIntentResponse.
+        r"""Gets the data of this ShowPacifyWordsIntentResponse.
 
         安抚话术意图信息
 
@@ -62,7 +62,7 @@ class ShowPacifyWordsIntentResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowPacifyWordsIntentResponse.
+        r"""Sets the data of this ShowPacifyWordsIntentResponse.
 
         安抚话术意图信息
 
@@ -73,7 +73,7 @@ class ShowPacifyWordsIntentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPacifyWordsIntentResponse.
+        r"""Gets the x_request_id of this ShowPacifyWordsIntentResponse.
 
         :return: The x_request_id of this ShowPacifyWordsIntentResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowPacifyWordsIntentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPacifyWordsIntentResponse.
+        r"""Sets the x_request_id of this ShowPacifyWordsIntentResponse.
 
         :param x_request_id: The x_request_id of this ShowPacifyWordsIntentResponse.
         :type x_request_id: str

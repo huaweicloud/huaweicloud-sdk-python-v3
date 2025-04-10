@@ -32,7 +32,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
     }
 
     def __init__(self, total=None, scale_down=None, scale_out=None, instances=None):
-        """ListDataServiceInstancesOverviewResponse
+        r"""ListDataServiceInstancesOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDataServiceInstancesOverviewResponse.
+        r"""Gets the total of this ListDataServiceInstancesOverviewResponse.
 
         集群数量。
 
@@ -76,7 +76,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDataServiceInstancesOverviewResponse.
+        r"""Sets the total of this ListDataServiceInstancesOverviewResponse.
 
         集群数量。
 
@@ -87,7 +87,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @property
     def scale_down(self):
-        """Gets the scale_down of this ListDataServiceInstancesOverviewResponse.
+        r"""Gets the scale_down of this ListDataServiceInstancesOverviewResponse.
 
         是否支持缩容。
 
@@ -98,7 +98,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @scale_down.setter
     def scale_down(self, scale_down):
-        """Sets the scale_down of this ListDataServiceInstancesOverviewResponse.
+        r"""Sets the scale_down of this ListDataServiceInstancesOverviewResponse.
 
         是否支持缩容。
 
@@ -109,7 +109,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @property
     def scale_out(self):
-        """Gets the scale_out of this ListDataServiceInstancesOverviewResponse.
+        r"""Gets the scale_out of this ListDataServiceInstancesOverviewResponse.
 
         是否支持扩容。
 
@@ -120,7 +120,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @scale_out.setter
     def scale_out(self, scale_out):
-        """Sets the scale_out of this ListDataServiceInstancesOverviewResponse.
+        r"""Sets the scale_out of this ListDataServiceInstancesOverviewResponse.
 
         是否支持扩容。
 
@@ -131,7 +131,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListDataServiceInstancesOverviewResponse.
+        r"""Gets the instances of this ListDataServiceInstancesOverviewResponse.
 
         集群概览信息。
 
@@ -142,7 +142,7 @@ class ListDataServiceInstancesOverviewResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListDataServiceInstancesOverviewResponse.
+        r"""Sets the instances of this ListDataServiceInstancesOverviewResponse.
 
         集群概览信息。
 

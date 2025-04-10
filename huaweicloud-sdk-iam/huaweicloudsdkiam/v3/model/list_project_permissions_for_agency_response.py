@@ -26,7 +26,7 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
     }
 
     def __init__(self, roles=None):
-        """ListProjectPermissionsForAgencyResponse
+        r"""ListProjectPermissionsForAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListProjectPermissionsForAgencyResponse.
+        r"""Gets the roles of this ListProjectPermissionsForAgencyResponse.
 
         权限信息列表。
 
@@ -55,7 +55,7 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListProjectPermissionsForAgencyResponse.
+        r"""Sets the roles of this ListProjectPermissionsForAgencyResponse.
 
         权限信息列表。
 

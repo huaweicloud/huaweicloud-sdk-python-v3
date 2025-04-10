@@ -27,7 +27,7 @@ class ShowSystemConfigsRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowSystemConfigsRequest
+        r"""ShowSystemConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSystemConfigsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowSystemConfigsRequest.
+        r"""Gets the project_id of this ShowSystemConfigsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowSystemConfigsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowSystemConfigsRequest.
+        r"""Sets the project_id of this ShowSystemConfigsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowSystemConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowSystemConfigsRequest.
+        r"""Gets the body of this ShowSystemConfigsRequest.
 
         :return: The body of this ShowSystemConfigsRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestSystemConfig`
@@ -80,7 +80,7 @@ class ShowSystemConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSystemConfigsRequest.
+        r"""Sets the body of this ShowSystemConfigsRequest.
 
         :param body: The body of this ShowSystemConfigsRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestSystemConfig`

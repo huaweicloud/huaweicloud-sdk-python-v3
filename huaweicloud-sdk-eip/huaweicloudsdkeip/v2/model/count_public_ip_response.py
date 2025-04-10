@@ -26,7 +26,7 @@ class CountPublicIpResponse(SdkResponse):
     }
 
     def __init__(self, elasticip_size=None):
-        """CountPublicIpResponse
+        r"""CountPublicIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountPublicIpResponse(SdkResponse):
 
     @property
     def elasticip_size(self):
-        """Gets the elasticip_size of this CountPublicIpResponse.
+        r"""Gets the elasticip_size of this CountPublicIpResponse.
 
         弹性公网数量
 
@@ -55,7 +55,7 @@ class CountPublicIpResponse(SdkResponse):
 
     @elasticip_size.setter
     def elasticip_size(self, elasticip_size):
-        """Sets the elasticip_size of this CountPublicIpResponse.
+        r"""Sets the elasticip_size of this CountPublicIpResponse.
 
         弹性公网数量
 

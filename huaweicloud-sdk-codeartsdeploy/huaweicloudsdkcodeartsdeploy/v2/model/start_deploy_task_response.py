@@ -32,7 +32,7 @@ class StartDeployTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, task_id=None, job_name=None, app_component_list=None):
-        """StartDeployTaskResponse
+        r"""StartDeployTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this StartDeployTaskResponse.
+        r"""Gets the id of this StartDeployTaskResponse.
 
         部署记录id
 
@@ -76,7 +76,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StartDeployTaskResponse.
+        r"""Sets the id of this StartDeployTaskResponse.
 
         部署记录id
 
@@ -87,7 +87,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this StartDeployTaskResponse.
+        r"""Gets the task_id of this StartDeployTaskResponse.
 
         部署任务id
 
@@ -98,7 +98,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StartDeployTaskResponse.
+        r"""Sets the task_id of this StartDeployTaskResponse.
 
         部署任务id
 
@@ -109,7 +109,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this StartDeployTaskResponse.
+        r"""Gets the job_name of this StartDeployTaskResponse.
 
         执行任务名称
 
@@ -120,7 +120,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this StartDeployTaskResponse.
+        r"""Sets the job_name of this StartDeployTaskResponse.
 
         执行任务名称
 
@@ -131,7 +131,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @property
     def app_component_list(self):
-        """Gets the app_component_list of this StartDeployTaskResponse.
+        r"""Gets the app_component_list of this StartDeployTaskResponse.
 
         应用和AOM应用组件对应关系
 
@@ -142,7 +142,7 @@ class StartDeployTaskResponse(SdkResponse):
 
     @app_component_list.setter
     def app_component_list(self, app_component_list):
-        """Sets the app_component_list of this StartDeployTaskResponse.
+        r"""Sets the app_component_list of this StartDeployTaskResponse.
 
         应用和AOM应用组件对应关系
 

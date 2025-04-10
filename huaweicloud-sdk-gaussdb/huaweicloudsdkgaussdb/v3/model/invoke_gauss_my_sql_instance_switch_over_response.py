@@ -26,7 +26,7 @@ class InvokeGaussMySqlInstanceSwitchOverResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """InvokeGaussMySqlInstanceSwitchOverResponse
+        r"""InvokeGaussMySqlInstanceSwitchOverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InvokeGaussMySqlInstanceSwitchOverResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this InvokeGaussMySqlInstanceSwitchOverResponse.
+        r"""Gets the job_id of this InvokeGaussMySqlInstanceSwitchOverResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class InvokeGaussMySqlInstanceSwitchOverResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this InvokeGaussMySqlInstanceSwitchOverResponse.
+        r"""Sets the job_id of this InvokeGaussMySqlInstanceSwitchOverResponse.
 
         任务ID。
 

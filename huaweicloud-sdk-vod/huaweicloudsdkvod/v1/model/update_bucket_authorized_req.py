@@ -27,7 +27,7 @@ class UpdateBucketAuthorizedReq:
     }
 
     def __init__(self, bucket=None, operation=None):
-        """UpdateBucketAuthorizedReq
+        r"""UpdateBucketAuthorizedReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateBucketAuthorizedReq:
 
     @property
     def bucket(self):
-        """Gets the bucket of this UpdateBucketAuthorizedReq.
+        r"""Gets the bucket of this UpdateBucketAuthorizedReq.
 
         OBS桶名称。
 
@@ -59,7 +59,7 @@ class UpdateBucketAuthorizedReq:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this UpdateBucketAuthorizedReq.
+        r"""Sets the bucket of this UpdateBucketAuthorizedReq.
 
         OBS桶名称。
 
@@ -70,7 +70,7 @@ class UpdateBucketAuthorizedReq:
 
     @property
     def operation(self):
-        """Gets the operation of this UpdateBucketAuthorizedReq.
+        r"""Gets the operation of this UpdateBucketAuthorizedReq.
 
         是否进行桶授权。  取值如下： - 0：取消授权。 - 1：授权。
 
@@ -81,7 +81,7 @@ class UpdateBucketAuthorizedReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this UpdateBucketAuthorizedReq.
+        r"""Sets the operation of this UpdateBucketAuthorizedReq.
 
         是否进行桶授权。  取值如下： - 0：取消授权。 - 1：授权。
 

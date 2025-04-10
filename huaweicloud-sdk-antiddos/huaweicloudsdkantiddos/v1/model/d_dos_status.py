@@ -39,7 +39,7 @@ class DDosStatus:
     }
 
     def __init__(self, floating_ip_id=None, floating_ip_address=None, network_type=None, status=None, blackhole_endtime=None, protect_type=None, traffic_threshold=None, http_threshold=None):
-        """DDosStatus
+        r"""DDosStatus
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class DDosStatus:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this DDosStatus.
+        r"""Gets the floating_ip_id of this DDosStatus.
 
         EIP的ID
 
@@ -95,7 +95,7 @@ class DDosStatus:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this DDosStatus.
+        r"""Sets the floating_ip_id of this DDosStatus.
 
         EIP的ID
 
@@ -106,7 +106,7 @@ class DDosStatus:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this DDosStatus.
+        r"""Gets the floating_ip_address of this DDosStatus.
 
         浮动IP地址
 
@@ -117,7 +117,7 @@ class DDosStatus:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this DDosStatus.
+        r"""Sets the floating_ip_address of this DDosStatus.
 
         浮动IP地址
 
@@ -128,7 +128,7 @@ class DDosStatus:
 
     @property
     def network_type(self):
-        """Gets the network_type of this DDosStatus.
+        r"""Gets the network_type of this DDosStatus.
 
         EIP所属类型，可选范围： - EIP：未绑定到ECS的EIP或绑定到ECS的EIP - ELB：绑定到ELB的EIP
 
@@ -139,7 +139,7 @@ class DDosStatus:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this DDosStatus.
+        r"""Sets the network_type of this DDosStatus.
 
         EIP所属类型，可选范围： - EIP：未绑定到ECS的EIP或绑定到ECS的EIP - ELB：绑定到ELB的EIP
 
@@ -150,7 +150,7 @@ class DDosStatus:
 
     @property
     def status(self):
-        """Gets the status of this DDosStatus.
+        r"""Gets the status of this DDosStatus.
 
         防护状态，可选范围： - normal：表示正常 - configging：表示设置中 - notConfig：表示未设置 - packetcleaning：表示清洗 - packetdropping：表示黑洞
 
@@ -161,7 +161,7 @@ class DDosStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DDosStatus.
+        r"""Sets the status of this DDosStatus.
 
         防护状态，可选范围： - normal：表示正常 - configging：表示设置中 - notConfig：表示未设置 - packetcleaning：表示清洗 - packetdropping：表示黑洞
 
@@ -172,7 +172,7 @@ class DDosStatus:
 
     @property
     def blackhole_endtime(self):
-        """Gets the blackhole_endtime of this DDosStatus.
+        r"""Gets the blackhole_endtime of this DDosStatus.
 
         黑洞结束时间
 
@@ -183,7 +183,7 @@ class DDosStatus:
 
     @blackhole_endtime.setter
     def blackhole_endtime(self, blackhole_endtime):
-        """Sets the blackhole_endtime of this DDosStatus.
+        r"""Sets the blackhole_endtime of this DDosStatus.
 
         黑洞结束时间
 
@@ -194,7 +194,7 @@ class DDosStatus:
 
     @property
     def protect_type(self):
-        """Gets the protect_type of this DDosStatus.
+        r"""Gets the protect_type of this DDosStatus.
 
         防护类型
 
@@ -205,7 +205,7 @@ class DDosStatus:
 
     @protect_type.setter
     def protect_type(self, protect_type):
-        """Sets the protect_type of this DDosStatus.
+        r"""Sets the protect_type of this DDosStatus.
 
         防护类型
 
@@ -216,7 +216,7 @@ class DDosStatus:
 
     @property
     def traffic_threshold(self):
-        """Gets the traffic_threshold of this DDosStatus.
+        r"""Gets the traffic_threshold of this DDosStatus.
 
         流量阈值
 
@@ -227,7 +227,7 @@ class DDosStatus:
 
     @traffic_threshold.setter
     def traffic_threshold(self, traffic_threshold):
-        """Sets the traffic_threshold of this DDosStatus.
+        r"""Sets the traffic_threshold of this DDosStatus.
 
         流量阈值
 
@@ -238,7 +238,7 @@ class DDosStatus:
 
     @property
     def http_threshold(self):
-        """Gets the http_threshold of this DDosStatus.
+        r"""Gets the http_threshold of this DDosStatus.
 
         http流量阈值
 
@@ -249,7 +249,7 @@ class DDosStatus:
 
     @http_threshold.setter
     def http_threshold(self, http_threshold):
-        """Sets the http_threshold of this DDosStatus.
+        r"""Sets the http_threshold of this DDosStatus.
 
         http流量阈值
 

@@ -29,7 +29,7 @@ class ListDeviceAlarmsRequest:
     }
 
     def __init__(self, offset=None, limit=None, device_id=None):
-        """ListDeviceAlarmsRequest
+        r"""ListDeviceAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListDeviceAlarmsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDeviceAlarmsRequest.
+        r"""Gets the offset of this ListDeviceAlarmsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -68,7 +68,7 @@ class ListDeviceAlarmsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDeviceAlarmsRequest.
+        r"""Sets the offset of this ListDeviceAlarmsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -79,7 +79,7 @@ class ListDeviceAlarmsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDeviceAlarmsRequest.
+        r"""Gets the limit of this ListDeviceAlarmsRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -90,7 +90,7 @@ class ListDeviceAlarmsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDeviceAlarmsRequest.
+        r"""Sets the limit of this ListDeviceAlarmsRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -101,7 +101,7 @@ class ListDeviceAlarmsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListDeviceAlarmsRequest.
+        r"""Gets the device_id of this ListDeviceAlarmsRequest.
 
         设备ID
 
@@ -112,7 +112,7 @@ class ListDeviceAlarmsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListDeviceAlarmsRequest.
+        r"""Sets the device_id of this ListDeviceAlarmsRequest.
 
         设备ID
 

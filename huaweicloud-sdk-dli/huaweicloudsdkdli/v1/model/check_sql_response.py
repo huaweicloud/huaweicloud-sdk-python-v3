@@ -30,7 +30,7 @@ class CheckSqlResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_type=None):
-        """CheckSqlResponse
+        r"""CheckSqlResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckSqlResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CheckSqlResponse.
+        r"""Gets the is_success of this CheckSqlResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class CheckSqlResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CheckSqlResponse.
+        r"""Sets the is_success of this CheckSqlResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class CheckSqlResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CheckSqlResponse.
+        r"""Gets the message of this CheckSqlResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class CheckSqlResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CheckSqlResponse.
+        r"""Sets the message of this CheckSqlResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class CheckSqlResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this CheckSqlResponse.
+        r"""Gets the job_type of this CheckSqlResponse.
 
         表示SQL语句的类型
 
@@ -113,7 +113,7 @@ class CheckSqlResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CheckSqlResponse.
+        r"""Sets the job_type of this CheckSqlResponse.
 
         表示SQL语句的类型
 

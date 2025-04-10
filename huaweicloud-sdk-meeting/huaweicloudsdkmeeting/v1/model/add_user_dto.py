@@ -57,7 +57,7 @@ class AddUserDTO:
     }
 
     def __init__(self, name=None, english_name=None, account=None, third_account=None, phone=None, country=None, pwd=None, email=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
-        """AddUserDTO
+        r"""AddUserDTO
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class AddUserDTO:
 
     @property
     def name(self):
-        """Gets the name of this AddUserDTO.
+        r"""Gets the name of this AddUserDTO.
 
         企业用户名称。
 
@@ -165,7 +165,7 @@ class AddUserDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddUserDTO.
+        r"""Sets the name of this AddUserDTO.
 
         企业用户名称。
 
@@ -176,7 +176,7 @@ class AddUserDTO:
 
     @property
     def english_name(self):
-        """Gets the english_name of this AddUserDTO.
+        r"""Gets the english_name of this AddUserDTO.
 
         企业用户的英文名称。
 
@@ -187,7 +187,7 @@ class AddUserDTO:
 
     @english_name.setter
     def english_name(self, english_name):
-        """Sets the english_name of this AddUserDTO.
+        r"""Sets the english_name of this AddUserDTO.
 
         企业用户的英文名称。
 
@@ -198,7 +198,7 @@ class AddUserDTO:
 
     @property
     def account(self):
-        """Gets the account of this AddUserDTO.
+        r"""Gets the account of this AddUserDTO.
 
         企业用户帐号，若携带则以携带为准，否则后台自动生成。帐号整系统唯一。 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 > 帐号/密码鉴权方式时需要填写。
 
@@ -209,7 +209,7 @@ class AddUserDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AddUserDTO.
+        r"""Sets the account of this AddUserDTO.
 
         企业用户帐号，若携带则以携带为准，否则后台自动生成。帐号整系统唯一。 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 > 帐号/密码鉴权方式时需要填写。
 
@@ -220,7 +220,7 @@ class AddUserDTO:
 
     @property
     def third_account(self):
-        """Gets the third_account of this AddUserDTO.
+        r"""Gets the third_account of this AddUserDTO.
 
         第三方User ID。 > App ID鉴权方式时需要填写。第三方User ID需要企业内唯一。
 
@@ -231,7 +231,7 @@ class AddUserDTO:
 
     @third_account.setter
     def third_account(self, third_account):
-        """Sets the third_account of this AddUserDTO.
+        r"""Sets the third_account of this AddUserDTO.
 
         第三方User ID。 > App ID鉴权方式时需要填写。第三方User ID需要企业内唯一。
 
@@ -242,7 +242,7 @@ class AddUserDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this AddUserDTO.
+        r"""Gets the phone of this AddUserDTO.
 
         手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个
 
@@ -253,7 +253,7 @@ class AddUserDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this AddUserDTO.
+        r"""Sets the phone of this AddUserDTO.
 
         手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个
 
@@ -264,7 +264,7 @@ class AddUserDTO:
 
     @property
     def country(self):
-        """Gets the country of this AddUserDTO.
+        r"""Gets the country of this AddUserDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -275,7 +275,7 @@ class AddUserDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this AddUserDTO.
+        r"""Sets the country of this AddUserDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -286,7 +286,7 @@ class AddUserDTO:
 
     @property
     def pwd(self):
-        """Gets the pwd of this AddUserDTO.
+        r"""Gets the pwd of this AddUserDTO.
 
         企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和帐号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
 
@@ -297,7 +297,7 @@ class AddUserDTO:
 
     @pwd.setter
     def pwd(self, pwd):
-        """Sets the pwd of this AddUserDTO.
+        r"""Sets the pwd of this AddUserDTO.
 
         企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和帐号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
 
@@ -308,7 +308,7 @@ class AddUserDTO:
 
     @property
     def email(self):
-        """Gets the email of this AddUserDTO.
+        r"""Gets the email of this AddUserDTO.
 
         邮箱地址。
 
@@ -319,7 +319,7 @@ class AddUserDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this AddUserDTO.
+        r"""Sets the email of this AddUserDTO.
 
         邮箱地址。
 
@@ -330,7 +330,7 @@ class AddUserDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this AddUserDTO.
+        r"""Gets the dept_code of this AddUserDTO.
 
         部门编码，若不携带则默认根部门。 默认值：1
 
@@ -341,7 +341,7 @@ class AddUserDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this AddUserDTO.
+        r"""Sets the dept_code of this AddUserDTO.
 
         部门编码，若不携带则默认根部门。 默认值：1
 
@@ -352,7 +352,7 @@ class AddUserDTO:
 
     @property
     def signature(self):
-        """Gets the signature of this AddUserDTO.
+        r"""Gets the signature of this AddUserDTO.
 
         签名。
 
@@ -363,7 +363,7 @@ class AddUserDTO:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this AddUserDTO.
+        r"""Sets the signature of this AddUserDTO.
 
         签名。
 
@@ -374,7 +374,7 @@ class AddUserDTO:
 
     @property
     def title(self):
-        """Gets the title of this AddUserDTO.
+        r"""Gets the title of this AddUserDTO.
 
         职位。
 
@@ -385,7 +385,7 @@ class AddUserDTO:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this AddUserDTO.
+        r"""Sets the title of this AddUserDTO.
 
         职位。
 
@@ -396,7 +396,7 @@ class AddUserDTO:
 
     @property
     def desc(self):
-        """Gets the desc of this AddUserDTO.
+        r"""Gets the desc of this AddUserDTO.
 
         备注。
 
@@ -407,7 +407,7 @@ class AddUserDTO:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this AddUserDTO.
+        r"""Sets the desc of this AddUserDTO.
 
         备注。
 
@@ -418,7 +418,7 @@ class AddUserDTO:
 
     @property
     def status(self):
-        """Gets the status of this AddUserDTO.
+        r"""Gets the status of this AddUserDTO.
 
         用户状态。默认值：0 * 0：正常 * 1：停用
 
@@ -429,7 +429,7 @@ class AddUserDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddUserDTO.
+        r"""Sets the status of this AddUserDTO.
 
         用户状态。默认值：0 * 0：正常 * 1：停用
 
@@ -440,7 +440,7 @@ class AddUserDTO:
 
     @property
     def function(self):
-        """Gets the function of this AddUserDTO.
+        r"""Gets the function of this AddUserDTO.
 
         :return: The function of this AddUserDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
@@ -449,7 +449,7 @@ class AddUserDTO:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this AddUserDTO.
+        r"""Sets the function of this AddUserDTO.
 
         :param function: The function of this AddUserDTO.
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
@@ -458,7 +458,7 @@ class AddUserDTO:
 
     @property
     def send_notify(self):
-        """Gets the send_notify of this AddUserDTO.
+        r"""Gets the send_notify of this AddUserDTO.
 
         是否发送开户的邮件和短信通知。 - 0 不发送 - 不填或者其他值就发送, 默认发送
 
@@ -469,7 +469,7 @@ class AddUserDTO:
 
     @send_notify.setter
     def send_notify(self, send_notify):
-        """Sets the send_notify of this AddUserDTO.
+        r"""Sets the send_notify of this AddUserDTO.
 
         是否发送开户的邮件和短信通知。 - 0 不发送 - 不填或者其他值就发送, 默认发送
 
@@ -480,7 +480,7 @@ class AddUserDTO:
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this AddUserDTO.
+        r"""Gets the sort_level of this AddUserDTO.
 
         通讯录排序等级，序号越低优先级越高。 默认值：10000
 
@@ -491,7 +491,7 @@ class AddUserDTO:
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this AddUserDTO.
+        r"""Sets the sort_level of this AddUserDTO.
 
         通讯录排序等级，序号越低优先级越高。 默认值：10000
 
@@ -502,7 +502,7 @@ class AddUserDTO:
 
     @property
     def hide_phone(self):
-        """Gets the hide_phone of this AddUserDTO.
+        r"""Gets the hide_phone of this AddUserDTO.
 
         是否隐藏手机号码。默认值：false。 * true：在通讯录和会议中不显示手机号码 * false：在通讯录和会议中显示手机号码 
 
@@ -513,7 +513,7 @@ class AddUserDTO:
 
     @hide_phone.setter
     def hide_phone(self, hide_phone):
-        """Sets the hide_phone of this AddUserDTO.
+        r"""Sets the hide_phone of this AddUserDTO.
 
         是否隐藏手机号码。默认值：false。 * true：在通讯录和会议中不显示手机号码 * false：在通讯录和会议中显示手机号码 
 

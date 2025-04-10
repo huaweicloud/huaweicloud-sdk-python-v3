@@ -31,7 +31,7 @@ class ListMetricNotifyRecordRequest:
     }
 
     def __init__(self, metric_name=None, rule_id=None, offset=None, limit=None):
-        """ListMetricNotifyRecordRequest
+        r"""ListMetricNotifyRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListMetricNotifyRecordRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListMetricNotifyRecordRequest.
+        r"""Gets the metric_name of this ListMetricNotifyRecordRequest.
 
         指标名称(精确匹配) (metric_name和rule_id不允许同时为空)
 
@@ -75,7 +75,7 @@ class ListMetricNotifyRecordRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListMetricNotifyRecordRequest.
+        r"""Sets the metric_name of this ListMetricNotifyRecordRequest.
 
         指标名称(精确匹配) (metric_name和rule_id不允许同时为空)
 
@@ -86,7 +86,7 @@ class ListMetricNotifyRecordRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ListMetricNotifyRecordRequest.
+        r"""Gets the rule_id of this ListMetricNotifyRecordRequest.
 
         通知规则ID (metric_name和rule_id不允许同时为空)
 
@@ -97,7 +97,7 @@ class ListMetricNotifyRecordRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ListMetricNotifyRecordRequest.
+        r"""Sets the rule_id of this ListMetricNotifyRecordRequest.
 
         通知规则ID (metric_name和rule_id不允许同时为空)
 
@@ -108,7 +108,7 @@ class ListMetricNotifyRecordRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMetricNotifyRecordRequest.
+        r"""Gets the offset of this ListMetricNotifyRecordRequest.
 
         查询的偏移量,默认值0
 
@@ -119,7 +119,7 @@ class ListMetricNotifyRecordRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMetricNotifyRecordRequest.
+        r"""Sets the offset of this ListMetricNotifyRecordRequest.
 
         查询的偏移量,默认值0
 
@@ -130,7 +130,7 @@ class ListMetricNotifyRecordRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetricNotifyRecordRequest.
+        r"""Gets the limit of this ListMetricNotifyRecordRequest.
 
         单次查询的大小[1-100],默认值10
 
@@ -141,7 +141,7 @@ class ListMetricNotifyRecordRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetricNotifyRecordRequest.
+        r"""Sets the limit of this ListMetricNotifyRecordRequest.
 
         单次查询的大小[1-100],默认值10
 

@@ -27,7 +27,7 @@ class AgencyRole:
     }
 
     def __init__(self, name=None, description=None):
-        """AgencyRole
+        r"""AgencyRole
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AgencyRole:
 
     @property
     def name(self):
-        """Gets the name of this AgencyRole.
+        r"""Gets the name of this AgencyRole.
 
         策略名称。
 
@@ -61,7 +61,7 @@ class AgencyRole:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyRole.
+        r"""Sets the name of this AgencyRole.
 
         策略名称。
 
@@ -72,7 +72,7 @@ class AgencyRole:
 
     @property
     def description(self):
-        """Gets the description of this AgencyRole.
+        r"""Gets the description of this AgencyRole.
 
         策略描述。
 
@@ -83,7 +83,7 @@ class AgencyRole:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyRole.
+        r"""Sets the description of this AgencyRole.
 
         策略描述。
 

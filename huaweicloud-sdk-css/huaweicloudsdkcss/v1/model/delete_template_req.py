@@ -25,7 +25,7 @@ class DeleteTemplateReq:
     }
 
     def __init__(self, name=None):
-        """DeleteTemplateReq
+        r"""DeleteTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTemplateReq:
 
     @property
     def name(self):
-        """Gets the name of this DeleteTemplateReq.
+        r"""Gets the name of this DeleteTemplateReq.
 
         模板名称。
 
@@ -53,7 +53,7 @@ class DeleteTemplateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteTemplateReq.
+        r"""Sets the name of this DeleteTemplateReq.
 
         模板名称。
 

@@ -24,7 +24,7 @@ class DeleteDesktopPoolResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDesktopPoolResponse
+        r"""DeleteDesktopPoolResponse
 
         The model defined in huaweicloud sdk
 

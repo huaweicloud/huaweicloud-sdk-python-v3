@@ -35,7 +35,7 @@ class ResultValueProgressVo:
     }
 
     def __init__(self, total=None, value=None, reason=None, page_size=None, page_no=None, has_more=None):
-        """ResultValueProgressVo
+        r"""ResultValueProgressVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ResultValueProgressVo:
 
     @property
     def total(self):
-        """Gets the total of this ResultValueProgressVo.
+        r"""Gets the total of this ResultValueProgressVo.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -89,7 +89,7 @@ class ResultValueProgressVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ResultValueProgressVo.
+        r"""Sets the total of this ResultValueProgressVo.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -100,7 +100,7 @@ class ResultValueProgressVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueProgressVo.
+        r"""Gets the value of this ResultValueProgressVo.
 
         :return: The value of this ResultValueProgressVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ProgressVo`
@@ -109,7 +109,7 @@ class ResultValueProgressVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueProgressVo.
+        r"""Sets the value of this ResultValueProgressVo.
 
         :param value: The value of this ResultValueProgressVo.
         :type value: :class:`huaweicloudsdkcloudtest.v1.ProgressVo`
@@ -118,7 +118,7 @@ class ResultValueProgressVo:
 
     @property
     def reason(self):
-        """Gets the reason of this ResultValueProgressVo.
+        r"""Gets the reason of this ResultValueProgressVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -129,7 +129,7 @@ class ResultValueProgressVo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ResultValueProgressVo.
+        r"""Sets the reason of this ResultValueProgressVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -140,7 +140,7 @@ class ResultValueProgressVo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ResultValueProgressVo.
+        r"""Gets the page_size of this ResultValueProgressVo.
 
         :return: The page_size of this ResultValueProgressVo.
         :rtype: int
@@ -149,7 +149,7 @@ class ResultValueProgressVo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ResultValueProgressVo.
+        r"""Sets the page_size of this ResultValueProgressVo.
 
         :param page_size: The page_size of this ResultValueProgressVo.
         :type page_size: int
@@ -158,7 +158,7 @@ class ResultValueProgressVo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ResultValueProgressVo.
+        r"""Gets the page_no of this ResultValueProgressVo.
 
         :return: The page_no of this ResultValueProgressVo.
         :rtype: int
@@ -167,7 +167,7 @@ class ResultValueProgressVo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ResultValueProgressVo.
+        r"""Sets the page_no of this ResultValueProgressVo.
 
         :param page_no: The page_no of this ResultValueProgressVo.
         :type page_no: int
@@ -176,7 +176,7 @@ class ResultValueProgressVo:
 
     @property
     def has_more(self):
-        """Gets the has_more of this ResultValueProgressVo.
+        r"""Gets the has_more of this ResultValueProgressVo.
 
         :return: The has_more of this ResultValueProgressVo.
         :rtype: bool
@@ -185,7 +185,7 @@ class ResultValueProgressVo:
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this ResultValueProgressVo.
+        r"""Sets the has_more of this ResultValueProgressVo.
 
         :param has_more: The has_more of this ResultValueProgressVo.
         :type has_more: bool

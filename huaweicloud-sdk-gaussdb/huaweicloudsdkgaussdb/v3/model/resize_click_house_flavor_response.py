@@ -26,7 +26,7 @@ class ResizeClickHouseFlavorResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ResizeClickHouseFlavorResponse
+        r"""ResizeClickHouseFlavorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResizeClickHouseFlavorResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ResizeClickHouseFlavorResponse.
+        r"""Gets the result of this ResizeClickHouseFlavorResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class ResizeClickHouseFlavorResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ResizeClickHouseFlavorResponse.
+        r"""Sets the result of this ResizeClickHouseFlavorResponse.
 
         请求结果。
 

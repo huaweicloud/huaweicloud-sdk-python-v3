@@ -28,7 +28,7 @@ class ListNatGatewayByTagResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListNatGatewayByTagResponse
+        r"""ListNatGatewayByTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNatGatewayByTagResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListNatGatewayByTagResponse.
+        r"""Gets the resources of this ListNatGatewayByTagResponse.
 
         资源对象列表。请参考表Resource字段数据结构说明。
 
@@ -62,7 +62,7 @@ class ListNatGatewayByTagResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListNatGatewayByTagResponse.
+        r"""Sets the resources of this ListNatGatewayByTagResponse.
 
         资源对象列表。请参考表Resource字段数据结构说明。
 
@@ -73,7 +73,7 @@ class ListNatGatewayByTagResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListNatGatewayByTagResponse.
+        r"""Gets the total_count of this ListNatGatewayByTagResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListNatGatewayByTagResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListNatGatewayByTagResponse.
+        r"""Sets the total_count of this ListNatGatewayByTagResponse.
 
         总记录数
 

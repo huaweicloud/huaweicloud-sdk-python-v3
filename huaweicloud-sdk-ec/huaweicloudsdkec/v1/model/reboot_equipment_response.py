@@ -26,7 +26,7 @@ class RebootEquipmentResponse(SdkResponse):
     }
 
     def __init__(self, success_msg=None):
-        """RebootEquipmentResponse
+        r"""RebootEquipmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RebootEquipmentResponse(SdkResponse):
 
     @property
     def success_msg(self):
-        """Gets the success_msg of this RebootEquipmentResponse.
+        r"""Gets the success_msg of this RebootEquipmentResponse.
 
         成功信息
 
@@ -55,7 +55,7 @@ class RebootEquipmentResponse(SdkResponse):
 
     @success_msg.setter
     def success_msg(self, success_msg):
-        """Sets the success_msg of this RebootEquipmentResponse.
+        r"""Sets the success_msg of this RebootEquipmentResponse.
 
         成功信息
 

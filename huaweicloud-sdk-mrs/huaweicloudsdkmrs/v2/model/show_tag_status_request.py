@@ -25,7 +25,7 @@ class ShowTagStatusRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowTagStatusRequest
+        r"""ShowTagStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTagStatusRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowTagStatusRequest.
+        r"""Gets the cluster_id of this ShowTagStatusRequest.
 
         集群ID。
 
@@ -53,7 +53,7 @@ class ShowTagStatusRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowTagStatusRequest.
+        r"""Sets the cluster_id of this ShowTagStatusRequest.
 
         集群ID。
 

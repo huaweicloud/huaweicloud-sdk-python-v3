@@ -27,7 +27,7 @@ class ShowEquipmentInfoRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None):
-        """ShowEquipmentInfoRequest
+        r"""ShowEquipmentInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEquipmentInfoRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ShowEquipmentInfoRequest.
+        r"""Gets the ieg_id of this ShowEquipmentInfoRequest.
 
         智能企业网关ID
 
@@ -59,7 +59,7 @@ class ShowEquipmentInfoRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ShowEquipmentInfoRequest.
+        r"""Sets the ieg_id of this ShowEquipmentInfoRequest.
 
         智能企业网关ID
 
@@ -70,7 +70,7 @@ class ShowEquipmentInfoRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this ShowEquipmentInfoRequest.
+        r"""Gets the equipment_id of this ShowEquipmentInfoRequest.
 
         智能企业网关设备ID
 
@@ -81,7 +81,7 @@ class ShowEquipmentInfoRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this ShowEquipmentInfoRequest.
+        r"""Sets the equipment_id of this ShowEquipmentInfoRequest.
 
         智能企业网关设备ID
 

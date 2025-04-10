@@ -23,7 +23,7 @@ class ArrayNode:
     }
 
     def __init__(self):
-        """ArrayNode
+        r"""ArrayNode
 
         The model defined in huaweicloud sdk
 

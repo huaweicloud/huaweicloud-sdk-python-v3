@@ -25,7 +25,7 @@ class EncryptionStructure:
     }
 
     def __init__(self, kms=None):
-        """EncryptionStructure
+        r"""EncryptionStructure
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EncryptionStructure:
 
     @property
     def kms(self):
-        """Gets the kms of this EncryptionStructure.
+        r"""Gets the kms of this EncryptionStructure.
 
         :return: The kms of this EncryptionStructure.
         :rtype: :class:`huaweicloudsdkaos.v1.KmsStructure`
@@ -51,7 +51,7 @@ class EncryptionStructure:
 
     @kms.setter
     def kms(self, kms):
-        """Sets the kms of this EncryptionStructure.
+        r"""Sets the kms of this EncryptionStructure.
 
         :param kms: The kms of this EncryptionStructure.
         :type kms: :class:`huaweicloudsdkaos.v1.KmsStructure`

@@ -34,7 +34,7 @@ class ShowAuthConfigResponse(SdkResponse):
     }
 
     def __init__(self, auth_type=None, enable=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None):
-        """ShowAuthConfigResponse
+        r"""ShowAuthConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShowAuthConfigResponse.
+        r"""Gets the auth_type of this ShowAuthConfigResponse.
 
         认证类型 LOCAL_PASSWORD：本地密码认证模式 KERBEROS：Windows AD认证模式 LDAP：第三方LDAP模式 CLIENT_TOKEN：金审UKEY客户端Token认证模式 OAUTH2：第三方单点登录模式
 
@@ -83,7 +83,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShowAuthConfigResponse.
+        r"""Sets the auth_type of this ShowAuthConfigResponse.
 
         认证类型 LOCAL_PASSWORD：本地密码认证模式 KERBEROS：Windows AD认证模式 LDAP：第三方LDAP模式 CLIENT_TOKEN：金审UKEY客户端Token认证模式 OAUTH2：第三方单点登录模式
 
@@ -94,7 +94,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this ShowAuthConfigResponse.
+        r"""Gets the enable of this ShowAuthConfigResponse.
 
         当前状态
 
@@ -105,7 +105,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ShowAuthConfigResponse.
+        r"""Sets the enable of this ShowAuthConfigResponse.
 
         当前状态
 
@@ -116,7 +116,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @property
     def radius_gateway_config(self):
-        """Gets the radius_gateway_config of this ShowAuthConfigResponse.
+        r"""Gets the radius_gateway_config of this ShowAuthConfigResponse.
 
         :return: The radius_gateway_config of this ShowAuthConfigResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
@@ -125,7 +125,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @radius_gateway_config.setter
     def radius_gateway_config(self, radius_gateway_config):
-        """Sets the radius_gateway_config of this ShowAuthConfigResponse.
+        r"""Sets the radius_gateway_config of this ShowAuthConfigResponse.
 
         :param radius_gateway_config: The radius_gateway_config of this ShowAuthConfigResponse.
         :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
@@ -134,7 +134,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @property
     def third_party_auth_config(self):
-        """Gets the third_party_auth_config of this ShowAuthConfigResponse.
+        r"""Gets the third_party_auth_config of this ShowAuthConfigResponse.
 
         第三方认证接口配置信息
 
@@ -145,7 +145,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @third_party_auth_config.setter
     def third_party_auth_config(self, third_party_auth_config):
-        """Sets the third_party_auth_config of this ShowAuthConfigResponse.
+        r"""Sets the third_party_auth_config of this ShowAuthConfigResponse.
 
         第三方认证接口配置信息
 
@@ -156,7 +156,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @property
     def emergency_login_mode(self):
-        """Gets the emergency_login_mode of this ShowAuthConfigResponse.
+        r"""Gets the emergency_login_mode of this ShowAuthConfigResponse.
 
         应急登录模式。
 
@@ -167,7 +167,7 @@ class ShowAuthConfigResponse(SdkResponse):
 
     @emergency_login_mode.setter
     def emergency_login_mode(self, emergency_login_mode):
-        """Sets the emergency_login_mode of this ShowAuthConfigResponse.
+        r"""Sets the emergency_login_mode of this ShowAuthConfigResponse.
 
         应急登录模式。
 

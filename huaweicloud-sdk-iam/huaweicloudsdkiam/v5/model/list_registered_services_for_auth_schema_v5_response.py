@@ -28,7 +28,7 @@ class ListRegisteredServicesForAuthSchemaV5Response(SdkResponse):
     }
 
     def __init__(self, service_codes=None, page_info=None):
-        """ListRegisteredServicesForAuthSchemaV5Response
+        r"""ListRegisteredServicesForAuthSchemaV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRegisteredServicesForAuthSchemaV5Response(SdkResponse):
 
     @property
     def service_codes(self):
-        """Gets the service_codes of this ListRegisteredServicesForAuthSchemaV5Response.
+        r"""Gets the service_codes of this ListRegisteredServicesForAuthSchemaV5Response.
 
         服务名称缩写列表。
 
@@ -62,7 +62,7 @@ class ListRegisteredServicesForAuthSchemaV5Response(SdkResponse):
 
     @service_codes.setter
     def service_codes(self, service_codes):
-        """Sets the service_codes of this ListRegisteredServicesForAuthSchemaV5Response.
+        r"""Sets the service_codes of this ListRegisteredServicesForAuthSchemaV5Response.
 
         服务名称缩写列表。
 
@@ -73,7 +73,7 @@ class ListRegisteredServicesForAuthSchemaV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListRegisteredServicesForAuthSchemaV5Response.
+        r"""Gets the page_info of this ListRegisteredServicesForAuthSchemaV5Response.
 
         :return: The page_info of this ListRegisteredServicesForAuthSchemaV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListRegisteredServicesForAuthSchemaV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListRegisteredServicesForAuthSchemaV5Response.
+        r"""Sets the page_info of this ListRegisteredServicesForAuthSchemaV5Response.
 
         :param page_info: The page_info of this ListRegisteredServicesForAuthSchemaV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

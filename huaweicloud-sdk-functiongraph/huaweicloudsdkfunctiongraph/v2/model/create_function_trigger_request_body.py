@@ -31,7 +31,7 @@ class CreateFunctionTriggerRequestBody:
     }
 
     def __init__(self, trigger_type_code=None, trigger_status=None, event_type_code=None, event_data=None):
-        """CreateFunctionTriggerRequestBody
+        r"""CreateFunctionTriggerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateFunctionTriggerRequestBody:
 
     @property
     def trigger_type_code(self):
-        """Gets the trigger_type_code of this CreateFunctionTriggerRequestBody.
+        r"""Gets the trigger_type_code of this CreateFunctionTriggerRequestBody.
 
         触发器类型。  - TIMER: 定时触发器。 - APIG: APIGW触发器。 - CTS: 云审计触发器，需要先开通云审计服务。 - DDS: 文档数据库触发器，需要开启函数vpc。 - DMS: 分布式消息服务触发器，需要配置dms委托。 - DIS: 数据接入服务触发器，需要配置dis委托。 - LTS: 云审计日志服务触发器，需要配置lts委托。 - OBS: 对象存储服务触发器。 - KAFKA: 专享版本kafka触发器。
 
@@ -73,7 +73,7 @@ class CreateFunctionTriggerRequestBody:
 
     @trigger_type_code.setter
     def trigger_type_code(self, trigger_type_code):
-        """Sets the trigger_type_code of this CreateFunctionTriggerRequestBody.
+        r"""Sets the trigger_type_code of this CreateFunctionTriggerRequestBody.
 
         触发器类型。  - TIMER: 定时触发器。 - APIG: APIGW触发器。 - CTS: 云审计触发器，需要先开通云审计服务。 - DDS: 文档数据库触发器，需要开启函数vpc。 - DMS: 分布式消息服务触发器，需要配置dms委托。 - DIS: 数据接入服务触发器，需要配置dis委托。 - LTS: 云审计日志服务触发器，需要配置lts委托。 - OBS: 对象存储服务触发器。 - KAFKA: 专享版本kafka触发器。
 
@@ -84,7 +84,7 @@ class CreateFunctionTriggerRequestBody:
 
     @property
     def trigger_status(self):
-        """Gets the trigger_status of this CreateFunctionTriggerRequestBody.
+        r"""Gets the trigger_status of this CreateFunctionTriggerRequestBody.
 
         触发器状态，取值为ACTIVE,DISABLED。
 
@@ -95,7 +95,7 @@ class CreateFunctionTriggerRequestBody:
 
     @trigger_status.setter
     def trigger_status(self, trigger_status):
-        """Sets the trigger_status of this CreateFunctionTriggerRequestBody.
+        r"""Sets the trigger_status of this CreateFunctionTriggerRequestBody.
 
         触发器状态，取值为ACTIVE,DISABLED。
 
@@ -106,7 +106,7 @@ class CreateFunctionTriggerRequestBody:
 
     @property
     def event_type_code(self):
-        """Gets the event_type_code of this CreateFunctionTriggerRequestBody.
+        r"""Gets the event_type_code of this CreateFunctionTriggerRequestBody.
 
         消息代码。
 
@@ -117,7 +117,7 @@ class CreateFunctionTriggerRequestBody:
 
     @event_type_code.setter
     def event_type_code(self, event_type_code):
-        """Sets the event_type_code of this CreateFunctionTriggerRequestBody.
+        r"""Sets the event_type_code of this CreateFunctionTriggerRequestBody.
 
         消息代码。
 
@@ -128,7 +128,7 @@ class CreateFunctionTriggerRequestBody:
 
     @property
     def event_data(self):
-        """Gets the event_data of this CreateFunctionTriggerRequestBody.
+        r"""Gets the event_data of this CreateFunctionTriggerRequestBody.
 
         :return: The event_data of this CreateFunctionTriggerRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`
@@ -137,7 +137,7 @@ class CreateFunctionTriggerRequestBody:
 
     @event_data.setter
     def event_data(self, event_data):
-        """Sets the event_data of this CreateFunctionTriggerRequestBody.
+        r"""Sets the event_data of this CreateFunctionTriggerRequestBody.
 
         :param event_data: The event_data of this CreateFunctionTriggerRequestBody.
         :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataRequestBody`

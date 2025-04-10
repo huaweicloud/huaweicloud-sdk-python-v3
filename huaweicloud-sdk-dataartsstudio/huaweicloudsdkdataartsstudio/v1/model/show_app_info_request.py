@@ -29,7 +29,7 @@ class ShowAppInfoRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, app_id=None):
-        """ShowAppInfoRequest
+        r"""ShowAppInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowAppInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowAppInfoRequest.
+        r"""Gets the workspace of this ShowAppInfoRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowAppInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowAppInfoRequest.
+        r"""Sets the workspace of this ShowAppInfoRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowAppInfoRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowAppInfoRequest.
+        r"""Gets the dlm_type of this ShowAppInfoRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -88,7 +88,7 @@ class ShowAppInfoRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowAppInfoRequest.
+        r"""Sets the dlm_type of this ShowAppInfoRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -99,7 +99,7 @@ class ShowAppInfoRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppInfoRequest.
+        r"""Gets the app_id of this ShowAppInfoRequest.
 
         应用编号。
 
@@ -110,7 +110,7 @@ class ShowAppInfoRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppInfoRequest.
+        r"""Sets the app_id of this ShowAppInfoRequest.
 
         应用编号。
 

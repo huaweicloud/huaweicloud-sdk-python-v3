@@ -37,7 +37,7 @@ class ClusterDataConnectorMap:
     }
 
     def __init__(self, map_id=None, connector_id=None, component_name=None, role_type=None, source_type=None, cluster_id=None, status=None):
-        """ClusterDataConnectorMap
+        r"""ClusterDataConnectorMap
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ClusterDataConnectorMap:
 
     @property
     def map_id(self):
-        """Gets the map_id of this ClusterDataConnectorMap.
+        r"""Gets the map_id of this ClusterDataConnectorMap.
 
         数据连接关联ID值
 
@@ -96,7 +96,7 @@ class ClusterDataConnectorMap:
 
     @map_id.setter
     def map_id(self, map_id):
-        """Sets the map_id of this ClusterDataConnectorMap.
+        r"""Sets the map_id of this ClusterDataConnectorMap.
 
         数据连接关联ID值
 
@@ -107,7 +107,7 @@ class ClusterDataConnectorMap:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ClusterDataConnectorMap.
+        r"""Gets the connector_id of this ClusterDataConnectorMap.
 
         数据连接ID值
 
@@ -118,7 +118,7 @@ class ClusterDataConnectorMap:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ClusterDataConnectorMap.
+        r"""Sets the connector_id of this ClusterDataConnectorMap.
 
         数据连接ID值
 
@@ -129,7 +129,7 @@ class ClusterDataConnectorMap:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ClusterDataConnectorMap.
+        r"""Gets the component_name of this ClusterDataConnectorMap.
 
         组件名
 
@@ -140,7 +140,7 @@ class ClusterDataConnectorMap:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ClusterDataConnectorMap.
+        r"""Sets the component_name of this ClusterDataConnectorMap.
 
         组件名
 
@@ -151,7 +151,7 @@ class ClusterDataConnectorMap:
 
     @property
     def role_type(self):
-        """Gets the role_type of this ClusterDataConnectorMap.
+        r"""Gets the role_type of this ClusterDataConnectorMap.
 
         组件角色类型。 - hive_metastore：Hive Metastore角色 - hive_data：Hive角色 - hbase_data：Hbase角色 - ranger_data：Ranger角色
 
@@ -162,7 +162,7 @@ class ClusterDataConnectorMap:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this ClusterDataConnectorMap.
+        r"""Sets the role_type of this ClusterDataConnectorMap.
 
         组件角色类型。 - hive_metastore：Hive Metastore角色 - hive_data：Hive角色 - hbase_data：Hbase角色 - ranger_data：Ranger角色
 
@@ -173,7 +173,7 @@ class ClusterDataConnectorMap:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ClusterDataConnectorMap.
+        r"""Gets the source_type of this ClusterDataConnectorMap.
 
         数据连接类型。 - LOCAL_DB：本地元数据 - RDS_POSTGRES：RDS服务PostgreSQL数据库 - RDS_MYSQL：RDS服务MySQL数据库 - gaussdb-mysql：云数据库GaussDB(for MySQL)
 
@@ -184,7 +184,7 @@ class ClusterDataConnectorMap:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ClusterDataConnectorMap.
+        r"""Sets the source_type of this ClusterDataConnectorMap.
 
         数据连接类型。 - LOCAL_DB：本地元数据 - RDS_POSTGRES：RDS服务PostgreSQL数据库 - RDS_MYSQL：RDS服务MySQL数据库 - gaussdb-mysql：云数据库GaussDB(for MySQL)
 
@@ -195,7 +195,7 @@ class ClusterDataConnectorMap:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ClusterDataConnectorMap.
+        r"""Gets the cluster_id of this ClusterDataConnectorMap.
 
         关联集群id
 
@@ -206,7 +206,7 @@ class ClusterDataConnectorMap:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ClusterDataConnectorMap.
+        r"""Sets the cluster_id of this ClusterDataConnectorMap.
 
         关联集群id
 
@@ -217,7 +217,7 @@ class ClusterDataConnectorMap:
 
     @property
     def status(self):
-        """Gets the status of this ClusterDataConnectorMap.
+        r"""Gets the status of this ClusterDataConnectorMap.
 
         数据连接状态。 - 0：代表正常状态 - 1：代表使用中
 
@@ -228,7 +228,7 @@ class ClusterDataConnectorMap:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterDataConnectorMap.
+        r"""Sets the status of this ClusterDataConnectorMap.
 
         数据连接状态。 - 0：代表正常状态 - 1：代表使用中
 

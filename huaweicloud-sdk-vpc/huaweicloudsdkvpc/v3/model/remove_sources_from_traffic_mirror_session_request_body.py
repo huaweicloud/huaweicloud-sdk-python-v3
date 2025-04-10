@@ -25,7 +25,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequestBody:
     }
 
     def __init__(self, traffic_mirror_session=None):
-        """RemoveSourcesFromTrafficMirrorSessionRequestBody
+        r"""RemoveSourcesFromTrafficMirrorSessionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequestBody:
 
     @property
     def traffic_mirror_session(self):
-        """Gets the traffic_mirror_session of this RemoveSourcesFromTrafficMirrorSessionRequestBody.
+        r"""Gets the traffic_mirror_session of this RemoveSourcesFromTrafficMirrorSessionRequestBody.
 
         :return: The traffic_mirror_session of this RemoveSourcesFromTrafficMirrorSessionRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.TrafficMirrorSourcesOption`
@@ -51,7 +51,7 @@ class RemoveSourcesFromTrafficMirrorSessionRequestBody:
 
     @traffic_mirror_session.setter
     def traffic_mirror_session(self, traffic_mirror_session):
-        """Sets the traffic_mirror_session of this RemoveSourcesFromTrafficMirrorSessionRequestBody.
+        r"""Sets the traffic_mirror_session of this RemoveSourcesFromTrafficMirrorSessionRequestBody.
 
         :param traffic_mirror_session: The traffic_mirror_session of this RemoveSourcesFromTrafficMirrorSessionRequestBody.
         :type traffic_mirror_session: :class:`huaweicloudsdkvpc.v3.TrafficMirrorSourcesOption`

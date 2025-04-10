@@ -63,7 +63,7 @@ class BillSumRecordInfoV2:
     }
 
     def __init__(self, bill_cycle=None, resource_type_code=None, service_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, official_amount=None, official_discount_amount=None, truncated_amount=None, consume_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, cash_amount=None, credit_amount=None, measure_id=None, bill_type=None, customer_id=None):
-        """BillSumRecordInfoV2
+        r"""BillSumRecordInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class BillSumRecordInfoV2:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this BillSumRecordInfoV2.
+        r"""Gets the bill_cycle of this BillSumRecordInfoV2.
 
         消费汇总数据所在账期，东八区时间，格式：YYYY-MM。
 
@@ -187,7 +187,7 @@ class BillSumRecordInfoV2:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this BillSumRecordInfoV2.
+        r"""Sets the bill_cycle of this BillSumRecordInfoV2.
 
         消费汇总数据所在账期，东八区时间，格式：YYYY-MM。
 
@@ -198,7 +198,7 @@ class BillSumRecordInfoV2:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this BillSumRecordInfoV2.
+        r"""Gets the resource_type_code of this BillSumRecordInfoV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -209,7 +209,7 @@ class BillSumRecordInfoV2:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this BillSumRecordInfoV2.
+        r"""Sets the resource_type_code of this BillSumRecordInfoV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -220,7 +220,7 @@ class BillSumRecordInfoV2:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this BillSumRecordInfoV2.
+        r"""Gets the service_type_code of this BillSumRecordInfoV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -231,7 +231,7 @@ class BillSumRecordInfoV2:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this BillSumRecordInfoV2.
+        r"""Sets the service_type_code of this BillSumRecordInfoV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -242,7 +242,7 @@ class BillSumRecordInfoV2:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this BillSumRecordInfoV2.
+        r"""Gets the service_type_name of this BillSumRecordInfoV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -253,7 +253,7 @@ class BillSumRecordInfoV2:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this BillSumRecordInfoV2.
+        r"""Sets the service_type_name of this BillSumRecordInfoV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -264,7 +264,7 @@ class BillSumRecordInfoV2:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this BillSumRecordInfoV2.
+        r"""Gets the resource_type_name of this BillSumRecordInfoV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -275,7 +275,7 @@ class BillSumRecordInfoV2:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this BillSumRecordInfoV2.
+        r"""Sets the resource_type_name of this BillSumRecordInfoV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -286,7 +286,7 @@ class BillSumRecordInfoV2:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BillSumRecordInfoV2.
+        r"""Gets the charging_mode of this BillSumRecordInfoV2.
 
         计费模式。 1：包年/包月3：按需10：预留实例
 
@@ -297,7 +297,7 @@ class BillSumRecordInfoV2:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BillSumRecordInfoV2.
+        r"""Sets the charging_mode of this BillSumRecordInfoV2.
 
         计费模式。 1：包年/包月3：按需10：预留实例
 
@@ -308,7 +308,7 @@ class BillSumRecordInfoV2:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this BillSumRecordInfoV2.
+        r"""Gets the official_amount of this BillSumRecordInfoV2.
 
         官网价。
 
@@ -319,7 +319,7 @@ class BillSumRecordInfoV2:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this BillSumRecordInfoV2.
+        r"""Sets the official_amount of this BillSumRecordInfoV2.
 
         官网价。
 
@@ -330,7 +330,7 @@ class BillSumRecordInfoV2:
 
     @property
     def official_discount_amount(self):
-        """Gets the official_discount_amount of this BillSumRecordInfoV2.
+        r"""Gets the official_discount_amount of this BillSumRecordInfoV2.
 
         折扣金额。
 
@@ -341,7 +341,7 @@ class BillSumRecordInfoV2:
 
     @official_discount_amount.setter
     def official_discount_amount(self, official_discount_amount):
-        """Sets the official_discount_amount of this BillSumRecordInfoV2.
+        r"""Sets the official_discount_amount of this BillSumRecordInfoV2.
 
         折扣金额。
 
@@ -352,7 +352,7 @@ class BillSumRecordInfoV2:
 
     @property
     def truncated_amount(self):
-        """Gets the truncated_amount of this BillSumRecordInfoV2.
+        r"""Gets the truncated_amount of this BillSumRecordInfoV2.
 
         抹零金额。
 
@@ -363,7 +363,7 @@ class BillSumRecordInfoV2:
 
     @truncated_amount.setter
     def truncated_amount(self, truncated_amount):
-        """Sets the truncated_amount of this BillSumRecordInfoV2.
+        r"""Sets the truncated_amount of this BillSumRecordInfoV2.
 
         抹零金额。
 
@@ -374,7 +374,7 @@ class BillSumRecordInfoV2:
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this BillSumRecordInfoV2.
+        r"""Gets the consume_amount of this BillSumRecordInfoV2.
 
         应付金额。 应付金额=官网价-折扣金额-抹零金额
 
@@ -385,7 +385,7 @@ class BillSumRecordInfoV2:
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this BillSumRecordInfoV2.
+        r"""Sets the consume_amount of this BillSumRecordInfoV2.
 
         应付金额。 应付金额=官网价-折扣金额-抹零金额
 
@@ -396,7 +396,7 @@ class BillSumRecordInfoV2:
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this BillSumRecordInfoV2.
+        r"""Gets the coupon_amount of this BillSumRecordInfoV2.
 
         代金券金额。
 
@@ -407,7 +407,7 @@ class BillSumRecordInfoV2:
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this BillSumRecordInfoV2.
+        r"""Sets the coupon_amount of this BillSumRecordInfoV2.
 
         代金券金额。
 
@@ -418,7 +418,7 @@ class BillSumRecordInfoV2:
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this BillSumRecordInfoV2.
+        r"""Gets the flexipurchase_coupon_amount of this BillSumRecordInfoV2.
 
         现金券金额，预留。
 
@@ -429,7 +429,7 @@ class BillSumRecordInfoV2:
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this BillSumRecordInfoV2.
+        r"""Sets the flexipurchase_coupon_amount of this BillSumRecordInfoV2.
 
         现金券金额，预留。
 
@@ -440,7 +440,7 @@ class BillSumRecordInfoV2:
 
     @property
     def stored_value_card_amount(self):
-        """Gets the stored_value_card_amount of this BillSumRecordInfoV2.
+        r"""Gets the stored_value_card_amount of this BillSumRecordInfoV2.
 
         储值卡金额，预留。
 
@@ -451,7 +451,7 @@ class BillSumRecordInfoV2:
 
     @stored_value_card_amount.setter
     def stored_value_card_amount(self, stored_value_card_amount):
-        """Sets the stored_value_card_amount of this BillSumRecordInfoV2.
+        r"""Sets the stored_value_card_amount of this BillSumRecordInfoV2.
 
         储值卡金额，预留。
 
@@ -462,7 +462,7 @@ class BillSumRecordInfoV2:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this BillSumRecordInfoV2.
+        r"""Gets the debt_amount of this BillSumRecordInfoV2.
 
         欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
@@ -473,7 +473,7 @@ class BillSumRecordInfoV2:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this BillSumRecordInfoV2.
+        r"""Sets the debt_amount of this BillSumRecordInfoV2.
 
         欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
@@ -484,7 +484,7 @@ class BillSumRecordInfoV2:
 
     @property
     def writeoff_amount(self):
-        """Gets the writeoff_amount of this BillSumRecordInfoV2.
+        r"""Gets the writeoff_amount of this BillSumRecordInfoV2.
 
         欠费核销金额。
 
@@ -495,7 +495,7 @@ class BillSumRecordInfoV2:
 
     @writeoff_amount.setter
     def writeoff_amount(self, writeoff_amount):
-        """Sets the writeoff_amount of this BillSumRecordInfoV2.
+        r"""Sets the writeoff_amount of this BillSumRecordInfoV2.
 
         欠费核销金额。
 
@@ -506,7 +506,7 @@ class BillSumRecordInfoV2:
 
     @property
     def cash_amount(self):
-        """Gets the cash_amount of this BillSumRecordInfoV2.
+        r"""Gets the cash_amount of this BillSumRecordInfoV2.
 
         现金账户金额。
 
@@ -517,7 +517,7 @@ class BillSumRecordInfoV2:
 
     @cash_amount.setter
     def cash_amount(self, cash_amount):
-        """Sets the cash_amount of this BillSumRecordInfoV2.
+        r"""Sets the cash_amount of this BillSumRecordInfoV2.
 
         现金账户金额。
 
@@ -528,7 +528,7 @@ class BillSumRecordInfoV2:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this BillSumRecordInfoV2.
+        r"""Gets the credit_amount of this BillSumRecordInfoV2.
 
         信用账户金额。
 
@@ -539,7 +539,7 @@ class BillSumRecordInfoV2:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this BillSumRecordInfoV2.
+        r"""Sets the credit_amount of this BillSumRecordInfoV2.
 
         信用账户金额。
 
@@ -550,7 +550,7 @@ class BillSumRecordInfoV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this BillSumRecordInfoV2.
+        r"""Gets the measure_id of this BillSumRecordInfoV2.
 
         金额单位。 1：元
 
@@ -561,7 +561,7 @@ class BillSumRecordInfoV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this BillSumRecordInfoV2.
+        r"""Sets the measure_id of this BillSumRecordInfoV2.
 
         金额单位。 1：元
 
@@ -572,7 +572,7 @@ class BillSumRecordInfoV2:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this BillSumRecordInfoV2.
+        r"""Gets the bill_type of this BillSumRecordInfoV2.
 
         账单类型。 1：消费2：退款3：调账
 
@@ -583,7 +583,7 @@ class BillSumRecordInfoV2:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this BillSumRecordInfoV2.
+        r"""Sets the bill_type of this BillSumRecordInfoV2.
 
         账单类型。 1：消费2：退款3：调账
 
@@ -594,7 +594,7 @@ class BillSumRecordInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this BillSumRecordInfoV2.
+        r"""Gets the customer_id of this BillSumRecordInfoV2.
 
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
@@ -605,7 +605,7 @@ class BillSumRecordInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this BillSumRecordInfoV2.
+        r"""Sets the customer_id of this BillSumRecordInfoV2.
 
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 

@@ -27,7 +27,7 @@ class CreatePreheatingAssetReq:
     }
 
     def __init__(self, asset_id=None, urls=None):
-        """CreatePreheatingAssetReq
+        r"""CreatePreheatingAssetReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePreheatingAssetReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreatePreheatingAssetReq.
+        r"""Gets the asset_id of this CreatePreheatingAssetReq.
 
         已发布媒资的ID。
 
@@ -61,7 +61,7 @@ class CreatePreheatingAssetReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreatePreheatingAssetReq.
+        r"""Sets the asset_id of this CreatePreheatingAssetReq.
 
         已发布媒资的ID。
 
@@ -72,7 +72,7 @@ class CreatePreheatingAssetReq:
 
     @property
     def urls(self):
-        """Gets the urls of this CreatePreheatingAssetReq.
+        r"""Gets the urls of this CreatePreheatingAssetReq.
 
         已发布媒资的播放URL列表，一次最多只能预热10个URL。
 
@@ -83,7 +83,7 @@ class CreatePreheatingAssetReq:
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this CreatePreheatingAssetReq.
+        r"""Sets the urls of this CreatePreheatingAssetReq.
 
         已发布媒资的播放URL列表，一次最多只能预热10个URL。
 

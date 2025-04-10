@@ -29,7 +29,7 @@ class OptimizationMode:
     }
 
     def __init__(self):
-        """OptimizationMode
+        r"""OptimizationMode
 
         The model defined in huaweicloud sdk
 

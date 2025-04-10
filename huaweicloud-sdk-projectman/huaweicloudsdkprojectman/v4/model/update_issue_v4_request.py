@@ -29,7 +29,7 @@ class UpdateIssueV4Request:
     }
 
     def __init__(self, project_id=None, issue_id=None, body=None):
-        """UpdateIssueV4Request
+        r"""UpdateIssueV4Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateIssueV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateIssueV4Request.
+        r"""Gets the project_id of this UpdateIssueV4Request.
 
         devcloud项目的32位id
 
@@ -66,7 +66,7 @@ class UpdateIssueV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateIssueV4Request.
+        r"""Sets the project_id of this UpdateIssueV4Request.
 
         devcloud项目的32位id
 
@@ -77,7 +77,7 @@ class UpdateIssueV4Request:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this UpdateIssueV4Request.
+        r"""Gets the issue_id of this UpdateIssueV4Request.
 
         工作项id
 
@@ -88,7 +88,7 @@ class UpdateIssueV4Request:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this UpdateIssueV4Request.
+        r"""Sets the issue_id of this UpdateIssueV4Request.
 
         工作项id
 
@@ -99,7 +99,7 @@ class UpdateIssueV4Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIssueV4Request.
+        r"""Gets the body of this UpdateIssueV4Request.
 
         :return: The body of this UpdateIssueV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueRequestV4`
@@ -108,7 +108,7 @@ class UpdateIssueV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIssueV4Request.
+        r"""Sets the body of this UpdateIssueV4Request.
 
         :param body: The body of this UpdateIssueV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.IssueRequestV4`

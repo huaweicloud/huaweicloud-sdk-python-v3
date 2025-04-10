@@ -27,7 +27,7 @@ class CheckRuleFixValuesInfo:
     }
 
     def __init__(self, rule_param_id=None, fix_value=None):
-        """CheckRuleFixValuesInfo
+        r"""CheckRuleFixValuesInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CheckRuleFixValuesInfo:
 
     @property
     def rule_param_id(self):
-        """Gets the rule_param_id of this CheckRuleFixValuesInfo.
+        r"""Gets the rule_param_id of this CheckRuleFixValuesInfo.
 
         检查项的参数ID
 
@@ -61,7 +61,7 @@ class CheckRuleFixValuesInfo:
 
     @rule_param_id.setter
     def rule_param_id(self, rule_param_id):
-        """Sets the rule_param_id of this CheckRuleFixValuesInfo.
+        r"""Sets the rule_param_id of this CheckRuleFixValuesInfo.
 
         检查项的参数ID
 
@@ -72,7 +72,7 @@ class CheckRuleFixValuesInfo:
 
     @property
     def fix_value(self):
-        """Gets the fix_value of this CheckRuleFixValuesInfo.
+        r"""Gets the fix_value of this CheckRuleFixValuesInfo.
 
         检查项的参数值
 
@@ -83,7 +83,7 @@ class CheckRuleFixValuesInfo:
 
     @fix_value.setter
     def fix_value(self, fix_value):
-        """Sets the fix_value of this CheckRuleFixValuesInfo.
+        r"""Sets the fix_value of this CheckRuleFixValuesInfo.
 
         检查项的参数值
 

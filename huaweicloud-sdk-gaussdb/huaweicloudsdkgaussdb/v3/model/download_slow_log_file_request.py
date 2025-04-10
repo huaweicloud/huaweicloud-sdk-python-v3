@@ -29,7 +29,7 @@ class DownloadSlowLogFileRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None):
-        """DownloadSlowLogFileRequest
+        r"""DownloadSlowLogFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DownloadSlowLogFileRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadSlowLogFileRequest.
+        r"""Gets the x_language of this DownloadSlowLogFileRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -66,7 +66,7 @@ class DownloadSlowLogFileRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadSlowLogFileRequest.
+        r"""Sets the x_language of this DownloadSlowLogFileRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -77,7 +77,7 @@ class DownloadSlowLogFileRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DownloadSlowLogFileRequest.
+        r"""Gets the instance_id of this DownloadSlowLogFileRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class DownloadSlowLogFileRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DownloadSlowLogFileRequest.
+        r"""Sets the instance_id of this DownloadSlowLogFileRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class DownloadSlowLogFileRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DownloadSlowLogFileRequest.
+        r"""Gets the node_id of this DownloadSlowLogFileRequest.
 
         节点ID。
 
@@ -110,7 +110,7 @@ class DownloadSlowLogFileRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DownloadSlowLogFileRequest.
+        r"""Sets the node_id of this DownloadSlowLogFileRequest.
 
         节点ID。
 

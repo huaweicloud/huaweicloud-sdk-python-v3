@@ -29,7 +29,7 @@ class DifficultInfo:
     }
 
     def __init__(self, id=None, name=None, degree=None):
-        """DifficultInfo
+        r"""DifficultInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DifficultInfo:
 
     @property
     def id(self):
-        """Gets the id of this DifficultInfo.
+        r"""Gets the id of this DifficultInfo.
 
         难度id
 
@@ -65,7 +65,7 @@ class DifficultInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DifficultInfo.
+        r"""Sets the id of this DifficultInfo.
 
         难度id
 
@@ -76,7 +76,7 @@ class DifficultInfo:
 
     @property
     def name(self):
-        """Gets the name of this DifficultInfo.
+        r"""Gets the name of this DifficultInfo.
 
         难度名称
 
@@ -87,7 +87,7 @@ class DifficultInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DifficultInfo.
+        r"""Sets the name of this DifficultInfo.
 
         难度名称
 
@@ -98,7 +98,7 @@ class DifficultInfo:
 
     @property
     def degree(self):
-        """Gets the degree of this DifficultInfo.
+        r"""Gets the degree of this DifficultInfo.
 
         难度等级
 
@@ -109,7 +109,7 @@ class DifficultInfo:
 
     @degree.setter
     def degree(self, degree):
-        """Sets the degree of this DifficultInfo.
+        r"""Sets the degree of this DifficultInfo.
 
         难度等级
 

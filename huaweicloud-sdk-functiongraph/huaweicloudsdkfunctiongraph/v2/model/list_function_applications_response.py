@@ -30,7 +30,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
     }
 
     def __init__(self, applications=None, next_marker=None, count=None):
-        """ListFunctionApplicationsResponse
+        r"""ListFunctionApplicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
 
     @property
     def applications(self):
-        """Gets the applications of this ListFunctionApplicationsResponse.
+        r"""Gets the applications of this ListFunctionApplicationsResponse.
 
         函数应用列表
 
@@ -69,7 +69,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this ListFunctionApplicationsResponse.
+        r"""Sets the applications of this ListFunctionApplicationsResponse.
 
         函数应用列表
 
@@ -80,7 +80,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListFunctionApplicationsResponse.
+        r"""Gets the next_marker of this ListFunctionApplicationsResponse.
 
         下次读取位置
 
@@ -91,7 +91,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListFunctionApplicationsResponse.
+        r"""Sets the next_marker of this ListFunctionApplicationsResponse.
 
         下次读取位置
 
@@ -102,7 +102,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionApplicationsResponse.
+        r"""Gets the count of this ListFunctionApplicationsResponse.
 
         应用程序总数
 
@@ -113,7 +113,7 @@ class ListFunctionApplicationsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionApplicationsResponse.
+        r"""Sets the count of this ListFunctionApplicationsResponse.
 
         应用程序总数
 

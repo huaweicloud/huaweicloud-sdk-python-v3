@@ -31,7 +31,7 @@ class MasterEIPRequestSpec:
     }
 
     def __init__(self, action=None, spec=None, bandwidth=None, elastic_ip=None):
-        """MasterEIPRequestSpec
+        r"""MasterEIPRequestSpec
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MasterEIPRequestSpec:
 
     @property
     def action(self):
-        """Gets the action of this MasterEIPRequestSpec.
+        r"""Gets the action of this MasterEIPRequestSpec.
 
         绑定或解绑动作，必选参数。 - 绑定：固定值为{\"action\":\"bind\"} - 解绑：固定值为{\"action\":\"unbind\"} 
 
@@ -75,7 +75,7 @@ class MasterEIPRequestSpec:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this MasterEIPRequestSpec.
+        r"""Sets the action of this MasterEIPRequestSpec.
 
         绑定或解绑动作，必选参数。 - 绑定：固定值为{\"action\":\"bind\"} - 解绑：固定值为{\"action\":\"unbind\"} 
 
@@ -86,7 +86,7 @@ class MasterEIPRequestSpec:
 
     @property
     def spec(self):
-        """Gets the spec of this MasterEIPRequestSpec.
+        r"""Gets the spec of this MasterEIPRequestSpec.
 
         :return: The spec of this MasterEIPRequestSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpecSpec`
@@ -95,7 +95,7 @@ class MasterEIPRequestSpec:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this MasterEIPRequestSpec.
+        r"""Sets the spec of this MasterEIPRequestSpec.
 
         :param spec: The spec of this MasterEIPRequestSpec.
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpecSpec`
@@ -104,7 +104,7 @@ class MasterEIPRequestSpec:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this MasterEIPRequestSpec.
+        r"""Gets the bandwidth of this MasterEIPRequestSpec.
 
         带宽(字段已失效，暂不推荐使用)
 
@@ -115,7 +115,7 @@ class MasterEIPRequestSpec:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this MasterEIPRequestSpec.
+        r"""Sets the bandwidth of this MasterEIPRequestSpec.
 
         带宽(字段已失效，暂不推荐使用)
 
@@ -126,7 +126,7 @@ class MasterEIPRequestSpec:
 
     @property
     def elastic_ip(self):
-        """Gets the elastic_ip of this MasterEIPRequestSpec.
+        r"""Gets the elastic_ip of this MasterEIPRequestSpec.
 
         弹性网卡IP(字段已失效，暂不推荐使用)
 
@@ -137,7 +137,7 @@ class MasterEIPRequestSpec:
 
     @elastic_ip.setter
     def elastic_ip(self, elastic_ip):
-        """Sets the elastic_ip of this MasterEIPRequestSpec.
+        r"""Sets the elastic_ip of this MasterEIPRequestSpec.
 
         弹性网卡IP(字段已失效，暂不推荐使用)
 

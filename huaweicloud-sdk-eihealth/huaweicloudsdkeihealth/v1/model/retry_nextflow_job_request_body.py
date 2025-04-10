@@ -25,7 +25,7 @@ class RetryNextflowJobRequestBody:
     }
 
     def __init__(self, params=None):
-        """RetryNextflowJobRequestBody
+        r"""RetryNextflowJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RetryNextflowJobRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this RetryNextflowJobRequestBody.
+        r"""Gets the params of this RetryNextflowJobRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 
@@ -54,7 +54,7 @@ class RetryNextflowJobRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RetryNextflowJobRequestBody.
+        r"""Sets the params of this RetryNextflowJobRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 

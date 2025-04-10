@@ -28,7 +28,7 @@ class ListSlowLogFileResponse(SdkResponse):
     }
 
     def __init__(self, list=None, total_count=None):
-        """ListSlowLogFileResponse
+        r"""ListSlowLogFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSlowLogFileResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ListSlowLogFileResponse.
+        r"""Gets the list of this ListSlowLogFileResponse.
 
         :return: The list of this ListSlowLogFileResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.SlowLogFile`]
@@ -60,7 +60,7 @@ class ListSlowLogFileResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListSlowLogFileResponse.
+        r"""Sets the list of this ListSlowLogFileResponse.
 
         :param list: The list of this ListSlowLogFileResponse.
         :type list: list[:class:`huaweicloudsdkrds.v3.SlowLogFile`]
@@ -69,7 +69,7 @@ class ListSlowLogFileResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSlowLogFileResponse.
+        r"""Gets the total_count of this ListSlowLogFileResponse.
 
         文件总数。
 
@@ -80,7 +80,7 @@ class ListSlowLogFileResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSlowLogFileResponse.
+        r"""Sets the total_count of this ListSlowLogFileResponse.
 
         文件总数。
 

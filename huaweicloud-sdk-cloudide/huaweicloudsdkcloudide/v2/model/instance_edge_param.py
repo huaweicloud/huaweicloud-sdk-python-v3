@@ -45,7 +45,7 @@ class InstanceEdgeParam:
     }
 
     def __init__(self, arch=None, cpu_memory=None, description=None, instance_name=None, instance_user_domain_id=None, instance_user_id=None, is_temporary=None, plugins=None, pvc_quantity=None, refresh_time=None, stack_id=None):
-        """InstanceEdgeParam
+        r"""InstanceEdgeParam
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class InstanceEdgeParam:
 
     @property
     def arch(self):
-        """Gets the arch of this InstanceEdgeParam.
+        r"""Gets the arch of this InstanceEdgeParam.
 
         cpu架构 x86|arm
 
@@ -120,7 +120,7 @@ class InstanceEdgeParam:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this InstanceEdgeParam.
+        r"""Sets the arch of this InstanceEdgeParam.
 
         cpu架构 x86|arm
 
@@ -131,7 +131,7 @@ class InstanceEdgeParam:
 
     @property
     def cpu_memory(self):
-        """Gets the cpu_memory of this InstanceEdgeParam.
+        r"""Gets the cpu_memory of this InstanceEdgeParam.
 
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
@@ -142,7 +142,7 @@ class InstanceEdgeParam:
 
     @cpu_memory.setter
     def cpu_memory(self, cpu_memory):
-        """Sets the cpu_memory of this InstanceEdgeParam.
+        r"""Sets the cpu_memory of this InstanceEdgeParam.
 
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
@@ -153,7 +153,7 @@ class InstanceEdgeParam:
 
     @property
     def description(self):
-        """Gets the description of this InstanceEdgeParam.
+        r"""Gets the description of this InstanceEdgeParam.
 
         描述。长度不操过100个字符
 
@@ -164,7 +164,7 @@ class InstanceEdgeParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceEdgeParam.
+        r"""Sets the description of this InstanceEdgeParam.
 
         描述。长度不操过100个字符
 
@@ -175,7 +175,7 @@ class InstanceEdgeParam:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceEdgeParam.
+        r"""Gets the instance_name of this InstanceEdgeParam.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -186,7 +186,7 @@ class InstanceEdgeParam:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceEdgeParam.
+        r"""Sets the instance_name of this InstanceEdgeParam.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -197,7 +197,7 @@ class InstanceEdgeParam:
 
     @property
     def instance_user_domain_id(self):
-        """Gets the instance_user_domain_id of this InstanceEdgeParam.
+        r"""Gets the instance_user_domain_id of this InstanceEdgeParam.
 
         租户id（对应华为云帐号的domainId）
 
@@ -208,7 +208,7 @@ class InstanceEdgeParam:
 
     @instance_user_domain_id.setter
     def instance_user_domain_id(self, instance_user_domain_id):
-        """Sets the instance_user_domain_id of this InstanceEdgeParam.
+        r"""Sets the instance_user_domain_id of this InstanceEdgeParam.
 
         租户id（对应华为云帐号的domainId）
 
@@ -219,7 +219,7 @@ class InstanceEdgeParam:
 
     @property
     def instance_user_id(self):
-        """Gets the instance_user_id of this InstanceEdgeParam.
+        r"""Gets the instance_user_id of this InstanceEdgeParam.
 
         用户id
 
@@ -230,7 +230,7 @@ class InstanceEdgeParam:
 
     @instance_user_id.setter
     def instance_user_id(self, instance_user_id):
-        """Sets the instance_user_id of this InstanceEdgeParam.
+        r"""Sets the instance_user_id of this InstanceEdgeParam.
 
         用户id
 
@@ -241,7 +241,7 @@ class InstanceEdgeParam:
 
     @property
     def is_temporary(self):
-        """Gets the is_temporary of this InstanceEdgeParam.
+        r"""Gets the is_temporary of this InstanceEdgeParam.
 
         是否页面显示（以标签配置为准）
 
@@ -252,7 +252,7 @@ class InstanceEdgeParam:
 
     @is_temporary.setter
     def is_temporary(self, is_temporary):
-        """Sets the is_temporary of this InstanceEdgeParam.
+        r"""Sets the is_temporary of this InstanceEdgeParam.
 
         是否页面显示（以标签配置为准）
 
@@ -263,7 +263,7 @@ class InstanceEdgeParam:
 
     @property
     def plugins(self):
-        """Gets the plugins of this InstanceEdgeParam.
+        r"""Gets the plugins of this InstanceEdgeParam.
 
         插件列表
 
@@ -274,7 +274,7 @@ class InstanceEdgeParam:
 
     @plugins.setter
     def plugins(self, plugins):
-        """Sets the plugins of this InstanceEdgeParam.
+        r"""Sets the plugins of this InstanceEdgeParam.
 
         插件列表
 
@@ -285,7 +285,7 @@ class InstanceEdgeParam:
 
     @property
     def pvc_quantity(self):
-        """Gets the pvc_quantity of this InstanceEdgeParam.
+        r"""Gets the pvc_quantity of this InstanceEdgeParam.
 
         PVC规格 5GB|10GB|20GB
 
@@ -296,7 +296,7 @@ class InstanceEdgeParam:
 
     @pvc_quantity.setter
     def pvc_quantity(self, pvc_quantity):
-        """Sets the pvc_quantity of this InstanceEdgeParam.
+        r"""Sets the pvc_quantity of this InstanceEdgeParam.
 
         PVC规格 5GB|10GB|20GB
 
@@ -307,7 +307,7 @@ class InstanceEdgeParam:
 
     @property
     def refresh_time(self):
-        """Gets the refresh_time of this InstanceEdgeParam.
+        r"""Gets the refresh_time of this InstanceEdgeParam.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
@@ -318,7 +318,7 @@ class InstanceEdgeParam:
 
     @refresh_time.setter
     def refresh_time(self, refresh_time):
-        """Sets the refresh_time of this InstanceEdgeParam.
+        r"""Sets the refresh_time of this InstanceEdgeParam.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
@@ -329,7 +329,7 @@ class InstanceEdgeParam:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this InstanceEdgeParam.
+        r"""Gets the stack_id of this InstanceEdgeParam.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
@@ -340,7 +340,7 @@ class InstanceEdgeParam:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this InstanceEdgeParam.
+        r"""Sets the stack_id of this InstanceEdgeParam.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 

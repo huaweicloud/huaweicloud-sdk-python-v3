@@ -29,7 +29,7 @@ class MigrateNodeRequest:
     }
 
     def __init__(self, cluster_id=None, target_cluster_id=None, body=None):
-        """MigrateNodeRequest
+        r"""MigrateNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MigrateNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MigrateNodeRequest.
+        r"""Gets the cluster_id of this MigrateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class MigrateNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MigrateNodeRequest.
+        r"""Sets the cluster_id of this MigrateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class MigrateNodeRequest:
 
     @property
     def target_cluster_id(self):
-        """Gets the target_cluster_id of this MigrateNodeRequest.
+        r"""Gets the target_cluster_id of this MigrateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -88,7 +88,7 @@ class MigrateNodeRequest:
 
     @target_cluster_id.setter
     def target_cluster_id(self, target_cluster_id):
-        """Sets the target_cluster_id of this MigrateNodeRequest.
+        r"""Sets the target_cluster_id of this MigrateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -99,7 +99,7 @@ class MigrateNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateNodeRequest.
+        r"""Gets the body of this MigrateNodeRequest.
 
         :return: The body of this MigrateNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`
@@ -108,7 +108,7 @@ class MigrateNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateNodeRequest.
+        r"""Sets the body of this MigrateNodeRequest.
 
         :param body: The body of this MigrateNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`

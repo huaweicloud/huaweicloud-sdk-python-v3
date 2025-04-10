@@ -25,7 +25,7 @@ class GetGroupIdReqBody:
     }
 
     def __init__(self, alternate_identifier=None):
-        """GetGroupIdReqBody
+        r"""GetGroupIdReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetGroupIdReqBody:
 
     @property
     def alternate_identifier(self):
-        """Gets the alternate_identifier of this GetGroupIdReqBody.
+        r"""Gets the alternate_identifier of this GetGroupIdReqBody.
 
         :return: The alternate_identifier of this GetGroupIdReqBody.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.AlternateIdentifierDto`
@@ -51,7 +51,7 @@ class GetGroupIdReqBody:
 
     @alternate_identifier.setter
     def alternate_identifier(self, alternate_identifier):
-        """Sets the alternate_identifier of this GetGroupIdReqBody.
+        r"""Sets the alternate_identifier of this GetGroupIdReqBody.
 
         :param alternate_identifier: The alternate_identifier of this GetGroupIdReqBody.
         :type alternate_identifier: :class:`huaweicloudsdkidentitycenterstore.v1.AlternateIdentifierDto`

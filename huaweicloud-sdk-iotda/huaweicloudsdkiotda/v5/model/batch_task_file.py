@@ -29,7 +29,7 @@ class BatchTaskFile:
     }
 
     def __init__(self, file_id=None, file_name=None, upload_time=None):
-        """BatchTaskFile
+        r"""BatchTaskFile
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchTaskFile:
 
     @property
     def file_id(self):
-        """Gets the file_id of this BatchTaskFile.
+        r"""Gets the file_id of this BatchTaskFile.
 
         上传的批量任务文件ID，由平台自动生成。
 
@@ -68,7 +68,7 @@ class BatchTaskFile:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this BatchTaskFile.
+        r"""Sets the file_id of this BatchTaskFile.
 
         上传的批量任务文件ID，由平台自动生成。
 
@@ -79,7 +79,7 @@ class BatchTaskFile:
 
     @property
     def file_name(self):
-        """Gets the file_name of this BatchTaskFile.
+        r"""Gets the file_name of this BatchTaskFile.
 
         上传的批量任务文件名称。
 
@@ -90,7 +90,7 @@ class BatchTaskFile:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this BatchTaskFile.
+        r"""Sets the file_name of this BatchTaskFile.
 
         上传的批量任务文件名称。
 
@@ -101,7 +101,7 @@ class BatchTaskFile:
 
     @property
     def upload_time(self):
-        """Gets the upload_time of this BatchTaskFile.
+        r"""Gets the upload_time of this BatchTaskFile.
 
         在物联网平台上传文件的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -112,7 +112,7 @@ class BatchTaskFile:
 
     @upload_time.setter
     def upload_time(self, upload_time):
-        """Sets the upload_time of this BatchTaskFile.
+        r"""Sets the upload_time of this BatchTaskFile.
 
         在物联网平台上传文件的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

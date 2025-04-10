@@ -27,7 +27,7 @@ class QueueResourceItem:
     }
 
     def __init__(self, queue_name=None, queue_resources=None):
-        """QueueResourceItem
+        r"""QueueResourceItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueueResourceItem:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this QueueResourceItem.
+        r"""Gets the queue_name of this QueueResourceItem.
 
         资源池名称。
 
@@ -59,7 +59,7 @@ class QueueResourceItem:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this QueueResourceItem.
+        r"""Sets the queue_name of this QueueResourceItem.
 
         资源池名称。
 
@@ -70,7 +70,7 @@ class QueueResourceItem:
 
     @property
     def queue_resources(self):
-        """Gets the queue_resources of this QueueResourceItem.
+        r"""Gets the queue_resources of this QueueResourceItem.
 
         资源配置队列。
 
@@ -81,7 +81,7 @@ class QueueResourceItem:
 
     @queue_resources.setter
     def queue_resources(self, queue_resources):
-        """Sets the queue_resources of this QueueResourceItem.
+        r"""Sets the queue_resources of this QueueResourceItem.
 
         资源配置队列。
 

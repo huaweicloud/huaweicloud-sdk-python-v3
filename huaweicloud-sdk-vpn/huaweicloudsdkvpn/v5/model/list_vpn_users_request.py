@@ -29,7 +29,7 @@ class ListVpnUsersRequest:
     }
 
     def __init__(self, vpn_server_id=None, limit=None, marker=None):
-        """ListVpnUsersRequest
+        r"""ListVpnUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListVpnUsersRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ListVpnUsersRequest.
+        r"""Gets the vpn_server_id of this ListVpnUsersRequest.
 
         VPN服务端 ID
 
@@ -67,7 +67,7 @@ class ListVpnUsersRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ListVpnUsersRequest.
+        r"""Sets the vpn_server_id of this ListVpnUsersRequest.
 
         VPN服务端 ID
 
@@ -78,7 +78,7 @@ class ListVpnUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpnUsersRequest.
+        r"""Gets the limit of this ListVpnUsersRequest.
 
         分页查询时每页返回的记录数量
 
@@ -89,7 +89,7 @@ class ListVpnUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpnUsersRequest.
+        r"""Sets the limit of this ListVpnUsersRequest.
 
         分页查询时每页返回的记录数量
 
@@ -100,7 +100,7 @@ class ListVpnUsersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpnUsersRequest.
+        r"""Gets the marker of this ListVpnUsersRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -111,7 +111,7 @@ class ListVpnUsersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpnUsersRequest.
+        r"""Sets the marker of this ListVpnUsersRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 

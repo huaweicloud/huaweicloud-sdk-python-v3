@@ -38,7 +38,7 @@ class AddOtTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, tpl_id=None, name=None, description=None, datasource_meta=None, point_meta=None, create_time=None, update_time=None):
-        """AddOtTemplatesResponse
+        r"""AddOtTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AddOtTemplatesResponse.
+        r"""Gets the tpl_id of this AddOtTemplatesResponse.
 
         模板id
 
@@ -97,7 +97,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AddOtTemplatesResponse.
+        r"""Sets the tpl_id of this AddOtTemplatesResponse.
 
         模板id
 
@@ -108,7 +108,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this AddOtTemplatesResponse.
+        r"""Gets the name of this AddOtTemplatesResponse.
 
         模板名称
 
@@ -119,7 +119,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddOtTemplatesResponse.
+        r"""Sets the name of this AddOtTemplatesResponse.
 
         模板名称
 
@@ -130,7 +130,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this AddOtTemplatesResponse.
+        r"""Gets the description of this AddOtTemplatesResponse.
 
         描述
 
@@ -141,7 +141,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddOtTemplatesResponse.
+        r"""Sets the description of this AddOtTemplatesResponse.
 
         描述
 
@@ -152,7 +152,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def datasource_meta(self):
-        """Gets the datasource_meta of this AddOtTemplatesResponse.
+        r"""Gets the datasource_meta of this AddOtTemplatesResponse.
 
         数据源元数据
 
@@ -163,7 +163,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @datasource_meta.setter
     def datasource_meta(self, datasource_meta):
-        """Sets the datasource_meta of this AddOtTemplatesResponse.
+        r"""Sets the datasource_meta of this AddOtTemplatesResponse.
 
         数据源元数据
 
@@ -174,7 +174,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def point_meta(self):
-        """Gets the point_meta of this AddOtTemplatesResponse.
+        r"""Gets the point_meta of this AddOtTemplatesResponse.
 
         点位表元数据
 
@@ -185,7 +185,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @point_meta.setter
     def point_meta(self, point_meta):
-        """Sets the point_meta of this AddOtTemplatesResponse.
+        r"""Sets the point_meta of this AddOtTemplatesResponse.
 
         点位表元数据
 
@@ -196,7 +196,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this AddOtTemplatesResponse.
+        r"""Gets the create_time of this AddOtTemplatesResponse.
 
         创建时间
 
@@ -207,7 +207,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AddOtTemplatesResponse.
+        r"""Sets the create_time of this AddOtTemplatesResponse.
 
         创建时间
 
@@ -218,7 +218,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this AddOtTemplatesResponse.
+        r"""Gets the update_time of this AddOtTemplatesResponse.
 
         最后一次修改时间
 
@@ -229,7 +229,7 @@ class AddOtTemplatesResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AddOtTemplatesResponse.
+        r"""Sets the update_time of this AddOtTemplatesResponse.
 
         最后一次修改时间
 

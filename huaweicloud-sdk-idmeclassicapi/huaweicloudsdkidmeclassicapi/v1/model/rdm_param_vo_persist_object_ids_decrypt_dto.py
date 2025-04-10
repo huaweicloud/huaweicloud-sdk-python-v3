@@ -27,7 +27,7 @@ class RDMParamVOPersistObjectIdsDecryptDTO:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOPersistObjectIdsDecryptDTO
+        r"""RDMParamVOPersistObjectIdsDecryptDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOPersistObjectIdsDecryptDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOPersistObjectIdsDecryptDTO.
+        r"""Gets the application_id of this RDMParamVOPersistObjectIdsDecryptDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -61,7 +61,7 @@ class RDMParamVOPersistObjectIdsDecryptDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOPersistObjectIdsDecryptDTO.
+        r"""Sets the application_id of this RDMParamVOPersistObjectIdsDecryptDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -72,7 +72,7 @@ class RDMParamVOPersistObjectIdsDecryptDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOPersistObjectIdsDecryptDTO.
+        r"""Gets the params of this RDMParamVOPersistObjectIdsDecryptDTO.
 
         :return: The params of this RDMParamVOPersistObjectIdsDecryptDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PersistObjectIdsDecryptDTO`
@@ -81,7 +81,7 @@ class RDMParamVOPersistObjectIdsDecryptDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOPersistObjectIdsDecryptDTO.
+        r"""Sets the params of this RDMParamVOPersistObjectIdsDecryptDTO.
 
         :param params: The params of this RDMParamVOPersistObjectIdsDecryptDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.PersistObjectIdsDecryptDTO`

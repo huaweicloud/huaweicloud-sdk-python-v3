@@ -41,7 +41,7 @@ class TasksObject:
     }
 
     def __init__(self, id=None, task_type=None, status=None, processing=None, succeed=None, failed=None, total=None, create_time=None, file_type=None):
-        """TasksObject
+        r"""TasksObject
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TasksObject:
 
     @property
     def id(self):
-        """Gets the id of this TasksObject.
+        r"""Gets the id of this TasksObject.
 
         任务id。
 
@@ -110,7 +110,7 @@ class TasksObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TasksObject.
+        r"""Sets the id of this TasksObject.
 
         任务id。
 
@@ -121,7 +121,7 @@ class TasksObject:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TasksObject.
+        r"""Gets the task_type of this TasksObject.
 
         任务的类型， 其值可以为refresh：刷新任务，或preheating：预热任务。
 
@@ -132,7 +132,7 @@ class TasksObject:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TasksObject.
+        r"""Sets the task_type of this TasksObject.
 
         任务的类型， 其值可以为refresh：刷新任务，或preheating：预热任务。
 
@@ -143,7 +143,7 @@ class TasksObject:
 
     @property
     def status(self):
-        """Gets the status of this TasksObject.
+        r"""Gets the status of this TasksObject.
 
         刷新结果。task_done表示刷新成功  ，task_inprocess表示刷新中。
 
@@ -154,7 +154,7 @@ class TasksObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TasksObject.
+        r"""Sets the status of this TasksObject.
 
         刷新结果。task_done表示刷新成功  ，task_inprocess表示刷新中。
 
@@ -165,7 +165,7 @@ class TasksObject:
 
     @property
     def processing(self):
-        """Gets the processing of this TasksObject.
+        r"""Gets the processing of this TasksObject.
 
         处理中的url个数。
 
@@ -176,7 +176,7 @@ class TasksObject:
 
     @processing.setter
     def processing(self, processing):
-        """Sets the processing of this TasksObject.
+        r"""Sets the processing of this TasksObject.
 
         处理中的url个数。
 
@@ -187,7 +187,7 @@ class TasksObject:
 
     @property
     def succeed(self):
-        """Gets the succeed of this TasksObject.
+        r"""Gets the succeed of this TasksObject.
 
         成功处理的url个数。
 
@@ -198,7 +198,7 @@ class TasksObject:
 
     @succeed.setter
     def succeed(self, succeed):
-        """Sets the succeed of this TasksObject.
+        r"""Sets the succeed of this TasksObject.
 
         成功处理的url个数。
 
@@ -209,7 +209,7 @@ class TasksObject:
 
     @property
     def failed(self):
-        """Gets the failed of this TasksObject.
+        r"""Gets the failed of this TasksObject.
 
         处理失败的url个数。
 
@@ -220,7 +220,7 @@ class TasksObject:
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this TasksObject.
+        r"""Sets the failed of this TasksObject.
 
         处理失败的url个数。
 
@@ -231,7 +231,7 @@ class TasksObject:
 
     @property
     def total(self):
-        """Gets the total of this TasksObject.
+        r"""Gets the total of this TasksObject.
 
         url总数。
 
@@ -242,7 +242,7 @@ class TasksObject:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TasksObject.
+        r"""Sets the total of this TasksObject.
 
         url总数。
 
@@ -253,7 +253,7 @@ class TasksObject:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TasksObject.
+        r"""Gets the create_time of this TasksObject.
 
         任务的创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -264,7 +264,7 @@ class TasksObject:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TasksObject.
+        r"""Sets the create_time of this TasksObject.
 
         任务的创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -275,7 +275,7 @@ class TasksObject:
 
     @property
     def file_type(self):
-        """Gets the file_type of this TasksObject.
+        r"""Gets the file_type of this TasksObject.
 
         默认是文件file。file：文件,directory：目录。
 
@@ -286,7 +286,7 @@ class TasksObject:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this TasksObject.
+        r"""Sets the file_type of this TasksObject.
 
         默认是文件file。file：文件,directory：目录。
 

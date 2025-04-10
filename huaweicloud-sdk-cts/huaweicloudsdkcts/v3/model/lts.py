@@ -29,7 +29,7 @@ class Lts:
     }
 
     def __init__(self, is_lts_enabled=None, log_group_name=None, log_topic_name=None):
-        """Lts
+        r"""Lts
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Lts:
 
     @property
     def is_lts_enabled(self):
-        """Gets the is_lts_enabled of this Lts.
+        r"""Gets the is_lts_enabled of this Lts.
 
         是否启用日志服务检索功能。
 
@@ -68,7 +68,7 @@ class Lts:
 
     @is_lts_enabled.setter
     def is_lts_enabled(self, is_lts_enabled):
-        """Sets the is_lts_enabled of this Lts.
+        r"""Sets the is_lts_enabled of this Lts.
 
         是否启用日志服务检索功能。
 
@@ -79,7 +79,7 @@ class Lts:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this Lts.
+        r"""Gets the log_group_name of this Lts.
 
         云审计服务在日志服务中创建的日志组名称。
 
@@ -90,7 +90,7 @@ class Lts:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this Lts.
+        r"""Sets the log_group_name of this Lts.
 
         云审计服务在日志服务中创建的日志组名称。
 
@@ -101,7 +101,7 @@ class Lts:
 
     @property
     def log_topic_name(self):
-        """Gets the log_topic_name of this Lts.
+        r"""Gets the log_topic_name of this Lts.
 
         云审计服务在日志服务中创建的日志主题名称。
 
@@ -112,7 +112,7 @@ class Lts:
 
     @log_topic_name.setter
     def log_topic_name(self, log_topic_name):
-        """Sets the log_topic_name of this Lts.
+        r"""Sets the log_topic_name of this Lts.
 
         云审计服务在日志服务中创建的日志主题名称。
 

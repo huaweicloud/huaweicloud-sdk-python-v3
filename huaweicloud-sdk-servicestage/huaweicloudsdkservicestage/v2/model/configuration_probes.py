@@ -27,7 +27,7 @@ class ConfigurationProbes:
     }
 
     def __init__(self, liveness_probe=None, readiness_probe=None):
-        """ConfigurationProbes
+        r"""ConfigurationProbes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfigurationProbes:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ConfigurationProbes.
+        r"""Gets the liveness_probe of this ConfigurationProbes.
 
         :return: The liveness_probe of this ConfigurationProbes.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentProbe`
@@ -59,7 +59,7 @@ class ConfigurationProbes:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ConfigurationProbes.
+        r"""Sets the liveness_probe of this ConfigurationProbes.
 
         :param liveness_probe: The liveness_probe of this ConfigurationProbes.
         :type liveness_probe: :class:`huaweicloudsdkservicestage.v2.ComponentProbe`
@@ -68,7 +68,7 @@ class ConfigurationProbes:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ConfigurationProbes.
+        r"""Gets the readiness_probe of this ConfigurationProbes.
 
         :return: The readiness_probe of this ConfigurationProbes.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentProbe`
@@ -77,7 +77,7 @@ class ConfigurationProbes:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ConfigurationProbes.
+        r"""Sets the readiness_probe of this ConfigurationProbes.
 
         :param readiness_probe: The readiness_probe of this ConfigurationProbes.
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v2.ComponentProbe`

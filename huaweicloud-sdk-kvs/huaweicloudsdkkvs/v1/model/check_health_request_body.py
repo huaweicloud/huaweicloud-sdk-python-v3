@@ -25,7 +25,7 @@ class CheckHealthRequestBody:
     }
 
     def __init__(self, version=None):
-        """CheckHealthRequestBody
+        r"""CheckHealthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckHealthRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this CheckHealthRequestBody.
+        r"""Gets the version of this CheckHealthRequestBody.
 
         version
 
@@ -54,7 +54,7 @@ class CheckHealthRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CheckHealthRequestBody.
+        r"""Sets the version of this CheckHealthRequestBody.
 
         version
 

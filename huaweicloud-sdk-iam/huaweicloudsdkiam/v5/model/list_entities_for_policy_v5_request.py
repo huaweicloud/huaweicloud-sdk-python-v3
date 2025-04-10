@@ -31,7 +31,7 @@ class ListEntitiesForPolicyV5Request:
     }
 
     def __init__(self, policy_id=None, entity_type=None, limit=None, marker=None):
-        """ListEntitiesForPolicyV5Request
+        r"""ListEntitiesForPolicyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListEntitiesForPolicyV5Request:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListEntitiesForPolicyV5Request.
+        r"""Gets the policy_id of this ListEntitiesForPolicyV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -74,7 +74,7 @@ class ListEntitiesForPolicyV5Request:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListEntitiesForPolicyV5Request.
+        r"""Sets the policy_id of this ListEntitiesForPolicyV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -85,7 +85,7 @@ class ListEntitiesForPolicyV5Request:
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this ListEntitiesForPolicyV5Request.
+        r"""Gets the entity_type of this ListEntitiesForPolicyV5Request.
 
         实体类型。
 
@@ -96,7 +96,7 @@ class ListEntitiesForPolicyV5Request:
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this ListEntitiesForPolicyV5Request.
+        r"""Sets the entity_type of this ListEntitiesForPolicyV5Request.
 
         实体类型。
 
@@ -107,7 +107,7 @@ class ListEntitiesForPolicyV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEntitiesForPolicyV5Request.
+        r"""Gets the limit of this ListEntitiesForPolicyV5Request.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListEntitiesForPolicyV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEntitiesForPolicyV5Request.
+        r"""Sets the limit of this ListEntitiesForPolicyV5Request.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListEntitiesForPolicyV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEntitiesForPolicyV5Request.
+        r"""Gets the marker of this ListEntitiesForPolicyV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -140,7 +140,7 @@ class ListEntitiesForPolicyV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEntitiesForPolicyV5Request.
+        r"""Sets the marker of this ListEntitiesForPolicyV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 

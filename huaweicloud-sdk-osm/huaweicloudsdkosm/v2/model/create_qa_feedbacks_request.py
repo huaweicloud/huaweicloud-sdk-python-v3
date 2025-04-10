@@ -33,7 +33,7 @@ class CreateQaFeedbacksRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, feedback_type=None, body=None):
-        """CreateQaFeedbacksRequest
+        r"""CreateQaFeedbacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateQaFeedbacksRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this CreateQaFeedbacksRequest.
+        r"""Gets the x_service_key of this CreateQaFeedbacksRequest.
 
         调用智能客服服务标志。
 
@@ -81,7 +81,7 @@ class CreateQaFeedbacksRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this CreateQaFeedbacksRequest.
+        r"""Sets the x_service_key of this CreateQaFeedbacksRequest.
 
         调用智能客服服务标志。
 
@@ -92,7 +92,7 @@ class CreateQaFeedbacksRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CreateQaFeedbacksRequest.
+        r"""Gets the x_site of this CreateQaFeedbacksRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -103,7 +103,7 @@ class CreateQaFeedbacksRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CreateQaFeedbacksRequest.
+        r"""Sets the x_site of this CreateQaFeedbacksRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -114,7 +114,7 @@ class CreateQaFeedbacksRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateQaFeedbacksRequest.
+        r"""Gets the x_language of this CreateQaFeedbacksRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -125,7 +125,7 @@ class CreateQaFeedbacksRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateQaFeedbacksRequest.
+        r"""Sets the x_language of this CreateQaFeedbacksRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -136,7 +136,7 @@ class CreateQaFeedbacksRequest:
 
     @property
     def feedback_type(self):
-        """Gets the feedback_type of this CreateQaFeedbacksRequest.
+        r"""Gets the feedback_type of this CreateQaFeedbacksRequest.
 
         - LIKE:  - CANCEL_LIKE:  - DISLIKE:  - ALL:  
 
@@ -147,7 +147,7 @@ class CreateQaFeedbacksRequest:
 
     @feedback_type.setter
     def feedback_type(self, feedback_type):
-        """Sets the feedback_type of this CreateQaFeedbacksRequest.
+        r"""Sets the feedback_type of this CreateQaFeedbacksRequest.
 
         - LIKE:  - CANCEL_LIKE:  - DISLIKE:  - ALL:  
 
@@ -158,7 +158,7 @@ class CreateQaFeedbacksRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQaFeedbacksRequest.
+        r"""Gets the body of this CreateQaFeedbacksRequest.
 
         :return: The body of this CreateQaFeedbacksRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.QaFeedbackReq`
@@ -167,7 +167,7 @@ class CreateQaFeedbacksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQaFeedbacksRequest.
+        r"""Sets the body of this CreateQaFeedbacksRequest.
 
         :param body: The body of this CreateQaFeedbacksRequest.
         :type body: :class:`huaweicloudsdkosm.v2.QaFeedbackReq`

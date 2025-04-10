@@ -26,7 +26,7 @@ class ListImagesTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListImagesTagsResponse
+        r"""ListImagesTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListImagesTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListImagesTagsResponse.
+        r"""Gets the tags of this ListImagesTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ListImagesTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListImagesTagsResponse.
+        r"""Sets the tags of this ListImagesTagsResponse.
 
         标签列表
 

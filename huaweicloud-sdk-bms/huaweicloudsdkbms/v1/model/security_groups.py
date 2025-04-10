@@ -25,7 +25,7 @@ class SecurityGroups:
     }
 
     def __init__(self, name=None):
-        """SecurityGroups
+        r"""SecurityGroups
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SecurityGroups:
 
     @property
     def name(self):
-        """Gets the name of this SecurityGroups.
+        r"""Gets the name of this SecurityGroups.
 
         创建裸金属服务器时未指定安全组，该值为default。创建裸金属服务器时，需要指定已有安全组的ID（UUID格式）。
 
@@ -54,7 +54,7 @@ class SecurityGroups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityGroups.
+        r"""Sets the name of this SecurityGroups.
 
         创建裸金属服务器时未指定安全组，该值为default。创建裸金属服务器时，需要指定已有安全组的ID（UUID格式）。
 

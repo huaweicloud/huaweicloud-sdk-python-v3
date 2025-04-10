@@ -39,7 +39,7 @@ class ListRtcHistoryScaleRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, metric=None, start_date=None, end_date=None):
-        """ListRtcHistoryScaleRequest
+        r"""ListRtcHistoryScaleRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcHistoryScaleRequest.
+        r"""Gets the authorization of this ListRtcHistoryScaleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -100,7 +100,7 @@ class ListRtcHistoryScaleRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcHistoryScaleRequest.
+        r"""Sets the authorization of this ListRtcHistoryScaleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -111,7 +111,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcHistoryScaleRequest.
+        r"""Gets the x_sdk_date of this ListRtcHistoryScaleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -122,7 +122,7 @@ class ListRtcHistoryScaleRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcHistoryScaleRequest.
+        r"""Sets the x_sdk_date of this ListRtcHistoryScaleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -133,7 +133,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcHistoryScaleRequest.
+        r"""Gets the x_project_id of this ListRtcHistoryScaleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -144,7 +144,7 @@ class ListRtcHistoryScaleRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcHistoryScaleRequest.
+        r"""Sets the x_project_id of this ListRtcHistoryScaleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -155,7 +155,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcHistoryScaleRequest.
+        r"""Gets the project_id of this ListRtcHistoryScaleRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -166,7 +166,7 @@ class ListRtcHistoryScaleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcHistoryScaleRequest.
+        r"""Sets the project_id of this ListRtcHistoryScaleRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -177,7 +177,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcHistoryScaleRequest.
+        r"""Gets the app of this ListRtcHistoryScaleRequest.
 
         应用标识 
 
@@ -188,7 +188,7 @@ class ListRtcHistoryScaleRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcHistoryScaleRequest.
+        r"""Sets the app of this ListRtcHistoryScaleRequest.
 
         应用标识 
 
@@ -199,7 +199,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def metric(self):
-        """Gets the metric of this ListRtcHistoryScaleRequest.
+        r"""Gets the metric of this ListRtcHistoryScaleRequest.
 
         查询的数据类型 - UserCount：通话人数，不同频道中的相同用户ID计为多人; - SessionCount：通话人次，用户每次加入频道计为一个通话人次; - RoomCount：房间数，从有用户加入房间到所有用户离开房间计为一个通话房间; - MaxOnlineUserCount：最大同时在线人数; - MaxOnlineRoomCount：最大同时在线房间数; - CommunicationDuration：音视频通话总时长; - VideoCommunicationDuration：视频通话总时长; - AudioCommunicationDuration：音频通话总时长; 
 
@@ -210,7 +210,7 @@ class ListRtcHistoryScaleRequest:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListRtcHistoryScaleRequest.
+        r"""Sets the metric of this ListRtcHistoryScaleRequest.
 
         查询的数据类型 - UserCount：通话人数，不同频道中的相同用户ID计为多人; - SessionCount：通话人次，用户每次加入频道计为一个通话人次; - RoomCount：房间数，从有用户加入房间到所有用户离开房间计为一个通话房间; - MaxOnlineUserCount：最大同时在线人数; - MaxOnlineRoomCount：最大同时在线房间数; - CommunicationDuration：音视频通话总时长; - VideoCommunicationDuration：视频通话总时长; - AudioCommunicationDuration：音频通话总时长; 
 
@@ -221,7 +221,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListRtcHistoryScaleRequest.
+        r"""Gets the start_date of this ListRtcHistoryScaleRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23，不写默认读取过去1天数据数据。 
 
@@ -232,7 +232,7 @@ class ListRtcHistoryScaleRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListRtcHistoryScaleRequest.
+        r"""Sets the start_date of this ListRtcHistoryScaleRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23，不写默认读取过去1天数据数据。 
 
@@ -243,7 +243,7 @@ class ListRtcHistoryScaleRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListRtcHistoryScaleRequest.
+        r"""Gets the end_date of this ListRtcHistoryScaleRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23 
 
@@ -254,7 +254,7 @@ class ListRtcHistoryScaleRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListRtcHistoryScaleRequest.
+        r"""Sets the end_date of this ListRtcHistoryScaleRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23 
 

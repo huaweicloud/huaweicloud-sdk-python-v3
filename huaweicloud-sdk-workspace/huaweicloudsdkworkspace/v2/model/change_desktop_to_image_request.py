@@ -25,7 +25,7 @@ class ChangeDesktopToImageRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeDesktopToImageRequest
+        r"""ChangeDesktopToImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeDesktopToImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeDesktopToImageRequest.
+        r"""Gets the body of this ChangeDesktopToImageRequest.
 
         :return: The body of this ChangeDesktopToImageRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopToImageReq`
@@ -52,7 +52,7 @@ class ChangeDesktopToImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeDesktopToImageRequest.
+        r"""Sets the body of this ChangeDesktopToImageRequest.
 
         :param body: The body of this ChangeDesktopToImageRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DesktopToImageReq`

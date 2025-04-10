@@ -29,7 +29,7 @@ class ShowTtsAuditionFileRequest:
     }
 
     def __init__(self, x_request_id=None, x_app_user_id=None, job_id=None):
-        """ShowTtsAuditionFileRequest
+        r"""ShowTtsAuditionFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowTtsAuditionFileRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowTtsAuditionFileRequest.
+        r"""Gets the x_request_id of this ShowTtsAuditionFileRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -67,7 +67,7 @@ class ShowTtsAuditionFileRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowTtsAuditionFileRequest.
+        r"""Sets the x_request_id of this ShowTtsAuditionFileRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -78,7 +78,7 @@ class ShowTtsAuditionFileRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowTtsAuditionFileRequest.
+        r"""Gets the x_app_user_id of this ShowTtsAuditionFileRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class ShowTtsAuditionFileRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowTtsAuditionFileRequest.
+        r"""Sets the x_app_user_id of this ShowTtsAuditionFileRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class ShowTtsAuditionFileRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowTtsAuditionFileRequest.
+        r"""Gets the job_id of this ShowTtsAuditionFileRequest.
 
         任务ID。
 
@@ -111,7 +111,7 @@ class ShowTtsAuditionFileRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowTtsAuditionFileRequest.
+        r"""Sets the job_id of this ShowTtsAuditionFileRequest.
 
         任务ID。
 

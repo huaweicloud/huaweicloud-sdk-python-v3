@@ -31,7 +31,7 @@ class BatchTagActionRequest:
     }
 
     def __init__(self, resource_type=None, job_id=None, x_language=None, body=None):
-        """BatchTagActionRequest
+        r"""BatchTagActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchTagActionRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchTagActionRequest.
+        r"""Gets the resource_type of this BatchTagActionRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：仿真回放
 
@@ -73,7 +73,7 @@ class BatchTagActionRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchTagActionRequest.
+        r"""Sets the resource_type of this BatchTagActionRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：仿真回放
 
@@ -84,7 +84,7 @@ class BatchTagActionRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchTagActionRequest.
+        r"""Gets the job_id of this BatchTagActionRequest.
 
         任务ID。
 
@@ -95,7 +95,7 @@ class BatchTagActionRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchTagActionRequest.
+        r"""Sets the job_id of this BatchTagActionRequest.
 
         任务ID。
 
@@ -106,7 +106,7 @@ class BatchTagActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchTagActionRequest.
+        r"""Gets the x_language of this BatchTagActionRequest.
 
         请求语言类型。
 
@@ -117,7 +117,7 @@ class BatchTagActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchTagActionRequest.
+        r"""Sets the x_language of this BatchTagActionRequest.
 
         请求语言类型。
 
@@ -128,7 +128,7 @@ class BatchTagActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchTagActionRequest.
+        r"""Gets the body of this BatchTagActionRequest.
 
         :return: The body of this BatchTagActionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchDealResourceTagReq`
@@ -137,7 +137,7 @@ class BatchTagActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchTagActionRequest.
+        r"""Sets the body of this BatchTagActionRequest.
 
         :param body: The body of this BatchTagActionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.BatchDealResourceTagReq`

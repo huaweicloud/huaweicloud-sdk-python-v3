@@ -30,7 +30,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """UpdateResIntelligentSceneResponse
+        r"""UpdateResIntelligentSceneResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateResIntelligentSceneResponse.
+        r"""Gets the is_success of this UpdateResIntelligentSceneResponse.
 
         是否成功。
 
@@ -69,7 +69,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateResIntelligentSceneResponse.
+        r"""Sets the is_success of this UpdateResIntelligentSceneResponse.
 
         是否成功。
 
@@ -80,7 +80,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateResIntelligentSceneResponse.
+        r"""Gets the message of this UpdateResIntelligentSceneResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -91,7 +91,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateResIntelligentSceneResponse.
+        r"""Sets the message of this UpdateResIntelligentSceneResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -102,7 +102,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateResIntelligentSceneResponse.
+        r"""Gets the error_code of this UpdateResIntelligentSceneResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -113,7 +113,7 @@ class UpdateResIntelligentSceneResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateResIntelligentSceneResponse.
+        r"""Sets the error_code of this UpdateResIntelligentSceneResponse.
 
         错误码（请求成功时，不返回此字段）。
 

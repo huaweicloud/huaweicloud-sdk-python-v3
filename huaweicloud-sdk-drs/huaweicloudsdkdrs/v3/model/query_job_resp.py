@@ -145,7 +145,7 @@ class QueryJobResp:
     }
 
     def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_open_fast_clean=None):
-        """QueryJobResp
+        r"""QueryJobResp
 
         The model defined in huaweicloud sdk
 
@@ -463,7 +463,7 @@ class QueryJobResp:
 
     @property
     def id(self):
-        """Gets the id of this QueryJobResp.
+        r"""Gets the id of this QueryJobResp.
 
         任务id
 
@@ -474,7 +474,7 @@ class QueryJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryJobResp.
+        r"""Sets the id of this QueryJobResp.
 
         任务id
 
@@ -485,7 +485,7 @@ class QueryJobResp:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this QueryJobResp.
+        r"""Gets the parent_id of this QueryJobResp.
 
         父任务id。
 
@@ -496,7 +496,7 @@ class QueryJobResp:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this QueryJobResp.
+        r"""Sets the parent_id of this QueryJobResp.
 
         父任务id。
 
@@ -507,7 +507,7 @@ class QueryJobResp:
 
     @property
     def name(self):
-        """Gets the name of this QueryJobResp.
+        r"""Gets the name of this QueryJobResp.
 
         任务名称
 
@@ -518,7 +518,7 @@ class QueryJobResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryJobResp.
+        r"""Sets the name of this QueryJobResp.
 
         任务名称
 
@@ -529,7 +529,7 @@ class QueryJobResp:
 
     @property
     def status(self):
-        """Gets the status of this QueryJobResp.
+        r"""Gets the status of this QueryJobResp.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -540,7 +540,7 @@ class QueryJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryJobResp.
+        r"""Sets the status of this QueryJobResp.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -551,7 +551,7 @@ class QueryJobResp:
 
     @property
     def description(self):
-        """Gets the description of this QueryJobResp.
+        r"""Gets the description of this QueryJobResp.
 
         描述信息
 
@@ -562,7 +562,7 @@ class QueryJobResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryJobResp.
+        r"""Sets the description of this QueryJobResp.
 
         描述信息
 
@@ -573,7 +573,7 @@ class QueryJobResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryJobResp.
+        r"""Gets the create_time of this QueryJobResp.
 
         创建时间，时间戳格式。
 
@@ -584,7 +584,7 @@ class QueryJobResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryJobResp.
+        r"""Sets the create_time of this QueryJobResp.
 
         创建时间，时间戳格式。
 
@@ -595,7 +595,7 @@ class QueryJobResp:
 
     @property
     def task_type(self):
-        """Gets the task_type of this QueryJobResp.
+        r"""Gets the task_type of this QueryJobResp.
 
         迁移模式
 
@@ -606,7 +606,7 @@ class QueryJobResp:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this QueryJobResp.
+        r"""Sets the task_type of this QueryJobResp.
 
         迁移模式
 
@@ -617,7 +617,7 @@ class QueryJobResp:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this QueryJobResp.
+        r"""Gets the source_endpoint of this QueryJobResp.
 
         :return: The source_endpoint of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -626,7 +626,7 @@ class QueryJobResp:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this QueryJobResp.
+        r"""Sets the source_endpoint of this QueryJobResp.
 
         :param source_endpoint: The source_endpoint of this QueryJobResp.
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -635,7 +635,7 @@ class QueryJobResp:
 
     @property
     def dmq_endpoint(self):
-        """Gets the dmq_endpoint of this QueryJobResp.
+        r"""Gets the dmq_endpoint of this QueryJobResp.
 
         :return: The dmq_endpoint of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -644,7 +644,7 @@ class QueryJobResp:
 
     @dmq_endpoint.setter
     def dmq_endpoint(self, dmq_endpoint):
-        """Sets the dmq_endpoint of this QueryJobResp.
+        r"""Sets the dmq_endpoint of this QueryJobResp.
 
         :param dmq_endpoint: The dmq_endpoint of this QueryJobResp.
         :type dmq_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -653,7 +653,7 @@ class QueryJobResp:
 
     @property
     def source_sharding(self):
-        """Gets the source_sharding of this QueryJobResp.
+        r"""Gets the source_sharding of this QueryJobResp.
 
         物理源库信息。
 
@@ -664,7 +664,7 @@ class QueryJobResp:
 
     @source_sharding.setter
     def source_sharding(self, source_sharding):
-        """Sets the source_sharding of this QueryJobResp.
+        r"""Sets the source_sharding of this QueryJobResp.
 
         物理源库信息。
 
@@ -675,7 +675,7 @@ class QueryJobResp:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this QueryJobResp.
+        r"""Gets the target_endpoint of this QueryJobResp.
 
         :return: The target_endpoint of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -684,7 +684,7 @@ class QueryJobResp:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this QueryJobResp.
+        r"""Sets the target_endpoint of this QueryJobResp.
 
         :param target_endpoint: The target_endpoint of this QueryJobResp.
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -693,7 +693,7 @@ class QueryJobResp:
 
     @property
     def net_type(self):
-        """Gets the net_type of this QueryJobResp.
+        r"""Gets the net_type of this QueryJobResp.
 
         网络类型
 
@@ -704,7 +704,7 @@ class QueryJobResp:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this QueryJobResp.
+        r"""Sets the net_type of this QueryJobResp.
 
         网络类型
 
@@ -715,7 +715,7 @@ class QueryJobResp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this QueryJobResp.
+        r"""Gets the failed_reason of this QueryJobResp.
 
         失败原因。
 
@@ -726,7 +726,7 @@ class QueryJobResp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this QueryJobResp.
+        r"""Sets the failed_reason of this QueryJobResp.
 
         失败原因。
 
@@ -737,7 +737,7 @@ class QueryJobResp:
 
     @property
     def inst_info(self):
-        """Gets the inst_info of this QueryJobResp.
+        r"""Gets the inst_info of this QueryJobResp.
 
         :return: The inst_info of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.InstInfo`
@@ -746,7 +746,7 @@ class QueryJobResp:
 
     @inst_info.setter
     def inst_info(self, inst_info):
-        """Sets the inst_info of this QueryJobResp.
+        r"""Sets the inst_info of this QueryJobResp.
 
         :param inst_info: The inst_info of this QueryJobResp.
         :type inst_info: :class:`huaweicloudsdkdrs.v3.InstInfo`
@@ -755,7 +755,7 @@ class QueryJobResp:
 
     @property
     def actual_start_time(self):
-        """Gets the actual_start_time of this QueryJobResp.
+        r"""Gets the actual_start_time of this QueryJobResp.
 
         实际启动时间，时间戳格式。
 
@@ -766,7 +766,7 @@ class QueryJobResp:
 
     @actual_start_time.setter
     def actual_start_time(self, actual_start_time):
-        """Sets the actual_start_time of this QueryJobResp.
+        r"""Sets the actual_start_time of this QueryJobResp.
 
         实际启动时间，时间戳格式。
 
@@ -777,7 +777,7 @@ class QueryJobResp:
 
     @property
     def full_transfer_complete_time(self):
-        """Gets the full_transfer_complete_time of this QueryJobResp.
+        r"""Gets the full_transfer_complete_time of this QueryJobResp.
 
         全量完成时间，时间戳格式。
 
@@ -788,7 +788,7 @@ class QueryJobResp:
 
     @full_transfer_complete_time.setter
     def full_transfer_complete_time(self, full_transfer_complete_time):
-        """Sets the full_transfer_complete_time of this QueryJobResp.
+        r"""Sets the full_transfer_complete_time of this QueryJobResp.
 
         全量完成时间，时间戳格式。
 
@@ -799,7 +799,7 @@ class QueryJobResp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryJobResp.
+        r"""Gets the update_time of this QueryJobResp.
 
         更新时间，时间戳格式
 
@@ -810,7 +810,7 @@ class QueryJobResp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryJobResp.
+        r"""Sets the update_time of this QueryJobResp.
 
         更新时间，时间戳格式
 
@@ -821,7 +821,7 @@ class QueryJobResp:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this QueryJobResp.
+        r"""Gets the job_direction of this QueryJobResp.
 
         任务方向
 
@@ -832,7 +832,7 @@ class QueryJobResp:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this QueryJobResp.
+        r"""Sets the job_direction of this QueryJobResp.
 
         任务方向
 
@@ -843,7 +843,7 @@ class QueryJobResp:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this QueryJobResp.
+        r"""Gets the db_use_type of this QueryJobResp.
 
         迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
 
@@ -854,7 +854,7 @@ class QueryJobResp:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this QueryJobResp.
+        r"""Sets the db_use_type of this QueryJobResp.
 
         迁移场景 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备
 
@@ -865,7 +865,7 @@ class QueryJobResp:
 
     @property
     def need_restart(self):
-        """Gets the need_restart of this QueryJobResp.
+        r"""Gets the need_restart of this QueryJobResp.
 
         是否需要重启
 
@@ -876,7 +876,7 @@ class QueryJobResp:
 
     @need_restart.setter
     def need_restart(self, need_restart):
-        """Sets the need_restart of this QueryJobResp.
+        r"""Sets the need_restart of this QueryJobResp.
 
         是否需要重启
 
@@ -887,7 +887,7 @@ class QueryJobResp:
 
     @property
     def is_target_readonly(self):
-        """Gets the is_target_readonly of this QueryJobResp.
+        r"""Gets the is_target_readonly of this QueryJobResp.
 
         指定目标实例是否限制为只读
 
@@ -898,7 +898,7 @@ class QueryJobResp:
 
     @is_target_readonly.setter
     def is_target_readonly(self, is_target_readonly):
-        """Sets the is_target_readonly of this QueryJobResp.
+        r"""Sets the is_target_readonly of this QueryJobResp.
 
         指定目标实例是否限制为只读
 
@@ -909,7 +909,7 @@ class QueryJobResp:
 
     @property
     def conflict_policy(self):
-        """Gets the conflict_policy of this QueryJobResp.
+        r"""Gets the conflict_policy of this QueryJobResp.
 
         冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
 
@@ -920,7 +920,7 @@ class QueryJobResp:
 
     @conflict_policy.setter
     def conflict_policy(self, conflict_policy):
-        """Sets the conflict_policy of this QueryJobResp.
+        r"""Sets the conflict_policy of this QueryJobResp.
 
         冲突忽略策略 - stop：冲突失败 - overwrite：冲突覆盖 - ignore：冲突忽略
 
@@ -931,7 +931,7 @@ class QueryJobResp:
 
     @property
     def filter_ddl_policy(self):
-        """Gets the filter_ddl_policy of this QueryJobResp.
+        r"""Gets the filter_ddl_policy of this QueryJobResp.
 
         过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \"\"：不过滤
 
@@ -942,7 +942,7 @@ class QueryJobResp:
 
     @filter_ddl_policy.setter
     def filter_ddl_policy(self, filter_ddl_policy):
-        """Sets the filter_ddl_policy of this QueryJobResp.
+        r"""Sets the filter_ddl_policy of this QueryJobResp.
 
         过滤DDL策略 - drop_database：过滤drop_database - drop_databasefilter_all：过滤所有ddl - \"\"：不过滤
 
@@ -953,7 +953,7 @@ class QueryJobResp:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this QueryJobResp.
+        r"""Gets the speed_limit of this QueryJobResp.
 
         迁移速度限制。
 
@@ -964,7 +964,7 @@ class QueryJobResp:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this QueryJobResp.
+        r"""Sets the speed_limit of this QueryJobResp.
 
         迁移速度限制。
 
@@ -975,7 +975,7 @@ class QueryJobResp:
 
     @property
     def schema_type(self):
-        """Gets the schema_type of this QueryJobResp.
+        r"""Gets the schema_type of this QueryJobResp.
 
         迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
 
@@ -986,7 +986,7 @@ class QueryJobResp:
 
     @schema_type.setter
     def schema_type(self, schema_type):
-        """Sets the schema_type of this QueryJobResp.
+        r"""Sets the schema_type of this QueryJobResp.
 
         迁移方案 - Replication-主从复制 - Tungsten-日志解析 - PGBaseBackup-PG备份
 
@@ -997,7 +997,7 @@ class QueryJobResp:
 
     @property
     def node_num(self):
-        """Gets the node_num of this QueryJobResp.
+        r"""Gets the node_num of this QueryJobResp.
 
         节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
@@ -1008,7 +1008,7 @@ class QueryJobResp:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this QueryJobResp.
+        r"""Sets the node_num of this QueryJobResp.
 
         节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
@@ -1019,7 +1019,7 @@ class QueryJobResp:
 
     @property
     def object_switch(self):
-        """Gets the object_switch of this QueryJobResp.
+        r"""Gets the object_switch of this QueryJobResp.
 
         对象选择开关
 
@@ -1030,7 +1030,7 @@ class QueryJobResp:
 
     @object_switch.setter
     def object_switch(self, object_switch):
-        """Sets the object_switch of this QueryJobResp.
+        r"""Sets the object_switch of this QueryJobResp.
 
         对象选择开关
 
@@ -1041,7 +1041,7 @@ class QueryJobResp:
 
     @property
     def master_job_id(self):
-        """Gets the master_job_id of this QueryJobResp.
+        r"""Gets the master_job_id of this QueryJobResp.
 
         主任务Id。
 
@@ -1052,7 +1052,7 @@ class QueryJobResp:
 
     @master_job_id.setter
     def master_job_id(self, master_job_id):
-        """Sets the master_job_id of this QueryJobResp.
+        r"""Sets the master_job_id of this QueryJobResp.
 
         主任务Id。
 
@@ -1063,7 +1063,7 @@ class QueryJobResp:
 
     @property
     def full_mode(self):
-        """Gets the full_mode of this QueryJobResp.
+        r"""Gets the full_mode of this QueryJobResp.
 
         全量快照模式。
 
@@ -1074,7 +1074,7 @@ class QueryJobResp:
 
     @full_mode.setter
     def full_mode(self, full_mode):
-        """Sets the full_mode of this QueryJobResp.
+        r"""Sets the full_mode of this QueryJobResp.
 
         全量快照模式。
 
@@ -1085,7 +1085,7 @@ class QueryJobResp:
 
     @property
     def struct_trans(self):
-        """Gets the struct_trans of this QueryJobResp.
+        r"""Gets the struct_trans of this QueryJobResp.
 
         是否迁移结构。
 
@@ -1096,7 +1096,7 @@ class QueryJobResp:
 
     @struct_trans.setter
     def struct_trans(self, struct_trans):
-        """Sets the struct_trans of this QueryJobResp.
+        r"""Sets the struct_trans of this QueryJobResp.
 
         是否迁移结构。
 
@@ -1107,7 +1107,7 @@ class QueryJobResp:
 
     @property
     def index_trans(self):
-        """Gets the index_trans of this QueryJobResp.
+        r"""Gets the index_trans of this QueryJobResp.
 
         否迁移索引。
 
@@ -1118,7 +1118,7 @@ class QueryJobResp:
 
     @index_trans.setter
     def index_trans(self, index_trans):
-        """Sets the index_trans of this QueryJobResp.
+        r"""Sets the index_trans of this QueryJobResp.
 
         否迁移索引。
 
@@ -1129,7 +1129,7 @@ class QueryJobResp:
 
     @property
     def replace_definer(self):
-        """Gets the replace_definer of this QueryJobResp.
+        r"""Gets the replace_definer of this QueryJobResp.
 
         是否使用目标库的用户替换掉definer。
 
@@ -1140,7 +1140,7 @@ class QueryJobResp:
 
     @replace_definer.setter
     def replace_definer(self, replace_definer):
-        """Sets the replace_definer of this QueryJobResp.
+        r"""Sets the replace_definer of this QueryJobResp.
 
         是否使用目标库的用户替换掉definer。
 
@@ -1151,7 +1151,7 @@ class QueryJobResp:
 
     @property
     def migrate_user(self):
-        """Gets the migrate_user of this QueryJobResp.
+        r"""Gets the migrate_user of this QueryJobResp.
 
         是否迁移用户。
 
@@ -1162,7 +1162,7 @@ class QueryJobResp:
 
     @migrate_user.setter
     def migrate_user(self, migrate_user):
-        """Sets the migrate_user of this QueryJobResp.
+        r"""Sets the migrate_user of this QueryJobResp.
 
         是否迁移用户。
 
@@ -1173,7 +1173,7 @@ class QueryJobResp:
 
     @property
     def sync_database(self):
-        """Gets the sync_database of this QueryJobResp.
+        r"""Gets the sync_database of this QueryJobResp.
 
         是否库级同步。
 
@@ -1184,7 +1184,7 @@ class QueryJobResp:
 
     @sync_database.setter
     def sync_database(self, sync_database):
-        """Sets the sync_database of this QueryJobResp.
+        r"""Sets the sync_database of this QueryJobResp.
 
         是否库级同步。
 
@@ -1195,7 +1195,7 @@ class QueryJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryJobResp.
+        r"""Gets the error_code of this QueryJobResp.
 
         错误码
 
@@ -1206,7 +1206,7 @@ class QueryJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryJobResp.
+        r"""Sets the error_code of this QueryJobResp.
 
         错误码
 
@@ -1217,7 +1217,7 @@ class QueryJobResp:
 
     @property
     def error_message(self):
-        """Gets the error_message of this QueryJobResp.
+        r"""Gets the error_message of this QueryJobResp.
 
         错误信息。
 
@@ -1228,7 +1228,7 @@ class QueryJobResp:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this QueryJobResp.
+        r"""Sets the error_message of this QueryJobResp.
 
         错误信息。
 
@@ -1239,7 +1239,7 @@ class QueryJobResp:
 
     @property
     def target_root_db(self):
-        """Gets the target_root_db of this QueryJobResp.
+        r"""Gets the target_root_db of this QueryJobResp.
 
         :return: The target_root_db of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
@@ -1248,7 +1248,7 @@ class QueryJobResp:
 
     @target_root_db.setter
     def target_root_db(self, target_root_db):
-        """Sets the target_root_db of this QueryJobResp.
+        r"""Sets the target_root_db of this QueryJobResp.
 
         :param target_root_db: The target_root_db of this QueryJobResp.
         :type target_root_db: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
@@ -1257,7 +1257,7 @@ class QueryJobResp:
 
     @property
     def az_code(self):
-        """Gets the az_code of this QueryJobResp.
+        r"""Gets the az_code of this QueryJobResp.
 
         node所在AZ
 
@@ -1268,7 +1268,7 @@ class QueryJobResp:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this QueryJobResp.
+        r"""Sets the az_code of this QueryJobResp.
 
         node所在AZ
 
@@ -1279,7 +1279,7 @@ class QueryJobResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this QueryJobResp.
+        r"""Gets the vpc_id of this QueryJobResp.
 
         node所在VPC
 
@@ -1290,7 +1290,7 @@ class QueryJobResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this QueryJobResp.
+        r"""Sets the vpc_id of this QueryJobResp.
 
         node所在VPC
 
@@ -1301,7 +1301,7 @@ class QueryJobResp:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this QueryJobResp.
+        r"""Gets the subnet_id of this QueryJobResp.
 
         node所在子网
 
@@ -1312,7 +1312,7 @@ class QueryJobResp:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this QueryJobResp.
+        r"""Sets the subnet_id of this QueryJobResp.
 
         node所在子网
 
@@ -1323,7 +1323,7 @@ class QueryJobResp:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this QueryJobResp.
+        r"""Gets the security_group_id of this QueryJobResp.
 
         node所在安全组
 
@@ -1334,7 +1334,7 @@ class QueryJobResp:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this QueryJobResp.
+        r"""Sets the security_group_id of this QueryJobResp.
 
         node所在安全组
 
@@ -1345,7 +1345,7 @@ class QueryJobResp:
 
     @property
     def multi_write(self):
-        """Gets the multi_write of this QueryJobResp.
+        r"""Gets the multi_write of this QueryJobResp.
 
         是否多主灾备任务,双主灾备时有值为true
 
@@ -1356,7 +1356,7 @@ class QueryJobResp:
 
     @multi_write.setter
     def multi_write(self, multi_write):
-        """Sets the multi_write of this QueryJobResp.
+        r"""Sets the multi_write of this QueryJobResp.
 
         是否多主灾备任务,双主灾备时有值为true
 
@@ -1367,7 +1367,7 @@ class QueryJobResp:
 
     @property
     def support_ip_v6(self):
-        """Gets the support_ip_v6 of this QueryJobResp.
+        r"""Gets the support_ip_v6 of this QueryJobResp.
 
         是否支持IPV6
 
@@ -1378,7 +1378,7 @@ class QueryJobResp:
 
     @support_ip_v6.setter
     def support_ip_v6(self, support_ip_v6):
-        """Sets the support_ip_v6 of this QueryJobResp.
+        r"""Sets the support_ip_v6 of this QueryJobResp.
 
         是否支持IPV6
 
@@ -1389,7 +1389,7 @@ class QueryJobResp:
 
     @property
     def inherit_id(self):
-        """Gets the inherit_id of this QueryJobResp.
+        r"""Gets the inherit_id of this QueryJobResp.
 
         继承的任务ID，Oracle_Mrskafka链路时使用。
 
@@ -1400,7 +1400,7 @@ class QueryJobResp:
 
     @inherit_id.setter
     def inherit_id(self, inherit_id):
-        """Sets the inherit_id of this QueryJobResp.
+        r"""Sets the inherit_id of this QueryJobResp.
 
         继承的任务ID，Oracle_Mrskafka链路时使用。
 
@@ -1411,7 +1411,7 @@ class QueryJobResp:
 
     @property
     def gtid(self):
-        """Gets the gtid of this QueryJobResp.
+        r"""Gets the gtid of this QueryJobResp.
 
         断点的GTID集合
 
@@ -1422,7 +1422,7 @@ class QueryJobResp:
 
     @gtid.setter
     def gtid(self, gtid):
-        """Sets the gtid of this QueryJobResp.
+        r"""Sets the gtid of this QueryJobResp.
 
         断点的GTID集合
 
@@ -1433,7 +1433,7 @@ class QueryJobResp:
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this QueryJobResp.
+        r"""Gets the alarm_notify of this QueryJobResp.
 
         :return: The alarm_notify of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
@@ -1442,7 +1442,7 @@ class QueryJobResp:
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this QueryJobResp.
+        r"""Sets the alarm_notify of this QueryJobResp.
 
         :param alarm_notify: The alarm_notify of this QueryJobResp.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
@@ -1451,7 +1451,7 @@ class QueryJobResp:
 
     @property
     def incre_start_position(self):
-        """Gets the incre_start_position of this QueryJobResp.
+        r"""Gets the incre_start_position of this QueryJobResp.
 
         增量任务启动位点
 
@@ -1462,7 +1462,7 @@ class QueryJobResp:
 
     @incre_start_position.setter
     def incre_start_position(self, incre_start_position):
-        """Sets the incre_start_position of this QueryJobResp.
+        r"""Sets the incre_start_position of this QueryJobResp.
 
         增量任务启动位点
 
@@ -1473,7 +1473,7 @@ class QueryJobResp:
 
     @property
     def is_multi_az(self):
-        """Gets the is_multi_az of this QueryJobResp.
+        r"""Gets the is_multi_az of this QueryJobResp.
 
         是否是主备任务。
 
@@ -1484,7 +1484,7 @@ class QueryJobResp:
 
     @is_multi_az.setter
     def is_multi_az(self, is_multi_az):
-        """Sets the is_multi_az of this QueryJobResp.
+        r"""Sets the is_multi_az of this QueryJobResp.
 
         是否是主备任务。
 
@@ -1495,7 +1495,7 @@ class QueryJobResp:
 
     @property
     def az_name(self):
-        """Gets the az_name of this QueryJobResp.
+        r"""Gets the az_name of this QueryJobResp.
 
         node所在节点AZ名称。
 
@@ -1506,7 +1506,7 @@ class QueryJobResp:
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this QueryJobResp.
+        r"""Sets the az_name of this QueryJobResp.
 
         node所在节点AZ名称。
 
@@ -1517,7 +1517,7 @@ class QueryJobResp:
 
     @property
     def master_az(self):
-        """Gets the master_az of this QueryJobResp.
+        r"""Gets the master_az of this QueryJobResp.
 
         主备任务主AZ。
 
@@ -1528,7 +1528,7 @@ class QueryJobResp:
 
     @master_az.setter
     def master_az(self, master_az):
-        """Sets the master_az of this QueryJobResp.
+        r"""Sets the master_az of this QueryJobResp.
 
         主备任务主AZ。
 
@@ -1539,7 +1539,7 @@ class QueryJobResp:
 
     @property
     def slave_az(self):
-        """Gets the slave_az of this QueryJobResp.
+        r"""Gets the slave_az of this QueryJobResp.
 
         主备任务备AZ。
 
@@ -1550,7 +1550,7 @@ class QueryJobResp:
 
     @slave_az.setter
     def slave_az(self, slave_az):
-        """Sets the slave_az of this QueryJobResp.
+        r"""Sets the slave_az of this QueryJobResp.
 
         主备任务备AZ。
 
@@ -1561,7 +1561,7 @@ class QueryJobResp:
 
     @property
     def node_role(self):
-        """Gets the node_role of this QueryJobResp.
+        r"""Gets the node_role of this QueryJobResp.
 
         任务主备角色。
 
@@ -1572,7 +1572,7 @@ class QueryJobResp:
 
     @node_role.setter
     def node_role(self, node_role):
-        """Sets the node_role of this QueryJobResp.
+        r"""Sets the node_role of this QueryJobResp.
 
         任务主备角色。
 
@@ -1583,7 +1583,7 @@ class QueryJobResp:
 
     @property
     def period_order(self):
-        """Gets the period_order of this QueryJobResp.
+        r"""Gets the period_order of this QueryJobResp.
 
         :return: The period_order of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.PeriodOrderResp`
@@ -1592,7 +1592,7 @@ class QueryJobResp:
 
     @period_order.setter
     def period_order(self, period_order):
-        """Sets the period_order of this QueryJobResp.
+        r"""Sets the period_order of this QueryJobResp.
 
         :param period_order: The period_order of this QueryJobResp.
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderResp`
@@ -1601,7 +1601,7 @@ class QueryJobResp:
 
     @property
     def object_infos(self):
-        """Gets the object_infos of this QueryJobResp.
+        r"""Gets the object_infos of this QueryJobResp.
 
         已同步对象信息。
 
@@ -1612,7 +1612,7 @@ class QueryJobResp:
 
     @object_infos.setter
     def object_infos(self, object_infos):
-        """Sets the object_infos of this QueryJobResp.
+        r"""Sets the object_infos of this QueryJobResp.
 
         已同步对象信息。
 
@@ -1623,7 +1623,7 @@ class QueryJobResp:
 
     @property
     def original_job_direction(self):
-        """Gets the original_job_direction of this QueryJobResp.
+        r"""Gets the original_job_direction of this QueryJobResp.
 
         初始任务方向。 取值： - up：入云，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -1634,7 +1634,7 @@ class QueryJobResp:
 
     @original_job_direction.setter
     def original_job_direction(self, original_job_direction):
-        """Sets the original_job_direction of this QueryJobResp.
+        r"""Sets the original_job_direction of this QueryJobResp.
 
         初始任务方向。 取值： - up：入云，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -1645,7 +1645,7 @@ class QueryJobResp:
 
     @property
     def data_transformation(self):
-        """Gets the data_transformation of this QueryJobResp.
+        r"""Gets the data_transformation of this QueryJobResp.
 
         :return: The data_transformation of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
@@ -1654,7 +1654,7 @@ class QueryJobResp:
 
     @data_transformation.setter
     def data_transformation(self, data_transformation):
-        """Sets the data_transformation of this QueryJobResp.
+        r"""Sets the data_transformation of this QueryJobResp.
 
         :param data_transformation: The data_transformation of this QueryJobResp.
         :type data_transformation: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
@@ -1663,7 +1663,7 @@ class QueryJobResp:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryJobResp.
+        r"""Gets the tags of this QueryJobResp.
 
         DRS任务标签。
 
@@ -1674,7 +1674,7 @@ class QueryJobResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryJobResp.
+        r"""Sets the tags of this QueryJobResp.
 
         DRS任务标签。
 
@@ -1685,7 +1685,7 @@ class QueryJobResp:
 
     @property
     def public_ip_list(self):
-        """Gets the public_ip_list of this QueryJobResp.
+        r"""Gets the public_ip_list of this QueryJobResp.
 
         指定公网Ip的信息。
 
@@ -1696,7 +1696,7 @@ class QueryJobResp:
 
     @public_ip_list.setter
     def public_ip_list(self, public_ip_list):
-        """Sets the public_ip_list of this QueryJobResp.
+        r"""Sets the public_ip_list of this QueryJobResp.
 
         指定公网Ip的信息。
 
@@ -1707,7 +1707,7 @@ class QueryJobResp:
 
     @property
     def bind_public_ip_state(self):
-        """Gets the bind_public_ip_state of this QueryJobResp.
+        r"""Gets the bind_public_ip_state of this QueryJobResp.
 
         是否成功绑定公网IP。
 
@@ -1718,7 +1718,7 @@ class QueryJobResp:
 
     @bind_public_ip_state.setter
     def bind_public_ip_state(self, bind_public_ip_state):
-        """Sets the bind_public_ip_state of this QueryJobResp.
+        r"""Sets the bind_public_ip_state of this QueryJobResp.
 
         是否成功绑定公网IP。
 
@@ -1729,7 +1729,7 @@ class QueryJobResp:
 
     @property
     def children(self):
-        """Gets the children of this QueryJobResp.
+        r"""Gets the children of this QueryJobResp.
 
         多任务时，存在子任务绑定失败时，返回子任务的信息。
 
@@ -1740,7 +1740,7 @@ class QueryJobResp:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this QueryJobResp.
+        r"""Sets the children of this QueryJobResp.
 
         多任务时，存在子任务绑定失败时，返回子任务的信息。
 
@@ -1751,7 +1751,7 @@ class QueryJobResp:
 
     @property
     def is_open_fast_clean(self):
-        """Gets the is_open_fast_clean of this QueryJobResp.
+        r"""Gets the is_open_fast_clean of this QueryJobResp.
 
         是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
 
@@ -1762,7 +1762,7 @@ class QueryJobResp:
 
     @is_open_fast_clean.setter
     def is_open_fast_clean(self, is_open_fast_clean):
-        """Sets the is_open_fast_clean of this QueryJobResp.
+        r"""Sets the is_open_fast_clean of this QueryJobResp.
 
         是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
 

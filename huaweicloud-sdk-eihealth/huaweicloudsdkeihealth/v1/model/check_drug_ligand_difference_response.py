@@ -26,7 +26,7 @@ class CheckDrugLigandDifferenceResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CheckDrugLigandDifferenceResponse
+        r"""CheckDrugLigandDifferenceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckDrugLigandDifferenceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckDrugLigandDifferenceResponse.
+        r"""Gets the result of this CheckDrugLigandDifferenceResponse.
 
         差异值
 
@@ -55,7 +55,7 @@ class CheckDrugLigandDifferenceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckDrugLigandDifferenceResponse.
+        r"""Sets the result of this CheckDrugLigandDifferenceResponse.
 
         差异值
 

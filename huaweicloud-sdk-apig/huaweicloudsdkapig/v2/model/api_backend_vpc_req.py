@@ -27,7 +27,7 @@ class ApiBackendVpcReq:
     }
 
     def __init__(self, vpc_channel_proxy_host=None, vpc_channel_id=None):
-        """ApiBackendVpcReq
+        r"""ApiBackendVpcReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApiBackendVpcReq:
 
     @property
     def vpc_channel_proxy_host(self):
-        """Gets the vpc_channel_proxy_host of this ApiBackendVpcReq.
+        r"""Gets the vpc_channel_proxy_host of this ApiBackendVpcReq.
 
         代理主机
 
@@ -60,7 +60,7 @@ class ApiBackendVpcReq:
 
     @vpc_channel_proxy_host.setter
     def vpc_channel_proxy_host(self, vpc_channel_proxy_host):
-        """Sets the vpc_channel_proxy_host of this ApiBackendVpcReq.
+        r"""Sets the vpc_channel_proxy_host of this ApiBackendVpcReq.
 
         代理主机
 
@@ -71,7 +71,7 @@ class ApiBackendVpcReq:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this ApiBackendVpcReq.
+        r"""Gets the vpc_channel_id of this ApiBackendVpcReq.
 
         VPC通道编号
 
@@ -82,7 +82,7 @@ class ApiBackendVpcReq:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this ApiBackendVpcReq.
+        r"""Sets the vpc_channel_id of this ApiBackendVpcReq.
 
         VPC通道编号
 

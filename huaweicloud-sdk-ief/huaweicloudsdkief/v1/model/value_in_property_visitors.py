@@ -51,7 +51,7 @@ class ValueInPropertyVisitors:
     }
 
     def __init__(self, register_type=None, access_mode=None, register_index=None, register_num=None, scale_index=None, original_datatype=None, expected_datatype=None, is_registerswap=None, is_swap=None, sample_interval=None, data_min=None, data_max=None, node_id=None, browse_name=None):
-        """ValueInPropertyVisitors
+        r"""ValueInPropertyVisitors
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ValueInPropertyVisitors:
 
     @property
     def register_type(self):
-        """Gets the register_type of this ValueInPropertyVisitors.
+        r"""Gets the register_type of this ValueInPropertyVisitors.
 
         :return: The register_type of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -143,7 +143,7 @@ class ValueInPropertyVisitors:
 
     @register_type.setter
     def register_type(self, register_type):
-        """Sets the register_type of this ValueInPropertyVisitors.
+        r"""Sets the register_type of this ValueInPropertyVisitors.
 
         :param register_type: The register_type of this ValueInPropertyVisitors.
         :type register_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -152,7 +152,7 @@ class ValueInPropertyVisitors:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this ValueInPropertyVisitors.
+        r"""Gets the access_mode of this ValueInPropertyVisitors.
 
         :return: The access_mode of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -161,7 +161,7 @@ class ValueInPropertyVisitors:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this ValueInPropertyVisitors.
+        r"""Sets the access_mode of this ValueInPropertyVisitors.
 
         :param access_mode: The access_mode of this ValueInPropertyVisitors.
         :type access_mode: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -170,7 +170,7 @@ class ValueInPropertyVisitors:
 
     @property
     def register_index(self):
-        """Gets the register_index of this ValueInPropertyVisitors.
+        r"""Gets the register_index of this ValueInPropertyVisitors.
 
         :return: The register_index of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -179,7 +179,7 @@ class ValueInPropertyVisitors:
 
     @register_index.setter
     def register_index(self, register_index):
-        """Sets the register_index of this ValueInPropertyVisitors.
+        r"""Sets the register_index of this ValueInPropertyVisitors.
 
         :param register_index: The register_index of this ValueInPropertyVisitors.
         :type register_index: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -188,7 +188,7 @@ class ValueInPropertyVisitors:
 
     @property
     def register_num(self):
-        """Gets the register_num of this ValueInPropertyVisitors.
+        r"""Gets the register_num of this ValueInPropertyVisitors.
 
         :return: The register_num of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -197,7 +197,7 @@ class ValueInPropertyVisitors:
 
     @register_num.setter
     def register_num(self, register_num):
-        """Sets the register_num of this ValueInPropertyVisitors.
+        r"""Sets the register_num of this ValueInPropertyVisitors.
 
         :param register_num: The register_num of this ValueInPropertyVisitors.
         :type register_num: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -206,7 +206,7 @@ class ValueInPropertyVisitors:
 
     @property
     def scale_index(self):
-        """Gets the scale_index of this ValueInPropertyVisitors.
+        r"""Gets the scale_index of this ValueInPropertyVisitors.
 
         :return: The scale_index of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -215,7 +215,7 @@ class ValueInPropertyVisitors:
 
     @scale_index.setter
     def scale_index(self, scale_index):
-        """Sets the scale_index of this ValueInPropertyVisitors.
+        r"""Sets the scale_index of this ValueInPropertyVisitors.
 
         :param scale_index: The scale_index of this ValueInPropertyVisitors.
         :type scale_index: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -224,7 +224,7 @@ class ValueInPropertyVisitors:
 
     @property
     def original_datatype(self):
-        """Gets the original_datatype of this ValueInPropertyVisitors.
+        r"""Gets the original_datatype of this ValueInPropertyVisitors.
 
         :return: The original_datatype of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -233,7 +233,7 @@ class ValueInPropertyVisitors:
 
     @original_datatype.setter
     def original_datatype(self, original_datatype):
-        """Sets the original_datatype of this ValueInPropertyVisitors.
+        r"""Sets the original_datatype of this ValueInPropertyVisitors.
 
         :param original_datatype: The original_datatype of this ValueInPropertyVisitors.
         :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -242,7 +242,7 @@ class ValueInPropertyVisitors:
 
     @property
     def expected_datatype(self):
-        """Gets the expected_datatype of this ValueInPropertyVisitors.
+        r"""Gets the expected_datatype of this ValueInPropertyVisitors.
 
         :return: The expected_datatype of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -251,7 +251,7 @@ class ValueInPropertyVisitors:
 
     @expected_datatype.setter
     def expected_datatype(self, expected_datatype):
-        """Sets the expected_datatype of this ValueInPropertyVisitors.
+        r"""Sets the expected_datatype of this ValueInPropertyVisitors.
 
         :param expected_datatype: The expected_datatype of this ValueInPropertyVisitors.
         :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -260,7 +260,7 @@ class ValueInPropertyVisitors:
 
     @property
     def is_registerswap(self):
-        """Gets the is_registerswap of this ValueInPropertyVisitors.
+        r"""Gets the is_registerswap of this ValueInPropertyVisitors.
 
         :return: The is_registerswap of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -269,7 +269,7 @@ class ValueInPropertyVisitors:
 
     @is_registerswap.setter
     def is_registerswap(self, is_registerswap):
-        """Sets the is_registerswap of this ValueInPropertyVisitors.
+        r"""Sets the is_registerswap of this ValueInPropertyVisitors.
 
         :param is_registerswap: The is_registerswap of this ValueInPropertyVisitors.
         :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -278,7 +278,7 @@ class ValueInPropertyVisitors:
 
     @property
     def is_swap(self):
-        """Gets the is_swap of this ValueInPropertyVisitors.
+        r"""Gets the is_swap of this ValueInPropertyVisitors.
 
         :return: The is_swap of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -287,7 +287,7 @@ class ValueInPropertyVisitors:
 
     @is_swap.setter
     def is_swap(self, is_swap):
-        """Sets the is_swap of this ValueInPropertyVisitors.
+        r"""Sets the is_swap of this ValueInPropertyVisitors.
 
         :param is_swap: The is_swap of this ValueInPropertyVisitors.
         :type is_swap: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -296,7 +296,7 @@ class ValueInPropertyVisitors:
 
     @property
     def sample_interval(self):
-        """Gets the sample_interval of this ValueInPropertyVisitors.
+        r"""Gets the sample_interval of this ValueInPropertyVisitors.
 
         :return: The sample_interval of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -305,7 +305,7 @@ class ValueInPropertyVisitors:
 
     @sample_interval.setter
     def sample_interval(self, sample_interval):
-        """Sets the sample_interval of this ValueInPropertyVisitors.
+        r"""Sets the sample_interval of this ValueInPropertyVisitors.
 
         :param sample_interval: The sample_interval of this ValueInPropertyVisitors.
         :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -314,7 +314,7 @@ class ValueInPropertyVisitors:
 
     @property
     def data_min(self):
-        """Gets the data_min of this ValueInPropertyVisitors.
+        r"""Gets the data_min of this ValueInPropertyVisitors.
 
         :return: The data_min of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -323,7 +323,7 @@ class ValueInPropertyVisitors:
 
     @data_min.setter
     def data_min(self, data_min):
-        """Sets the data_min of this ValueInPropertyVisitors.
+        r"""Sets the data_min of this ValueInPropertyVisitors.
 
         :param data_min: The data_min of this ValueInPropertyVisitors.
         :type data_min: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -332,7 +332,7 @@ class ValueInPropertyVisitors:
 
     @property
     def data_max(self):
-        """Gets the data_max of this ValueInPropertyVisitors.
+        r"""Gets the data_max of this ValueInPropertyVisitors.
 
         :return: The data_max of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -341,7 +341,7 @@ class ValueInPropertyVisitors:
 
     @data_max.setter
     def data_max(self, data_max):
-        """Sets the data_max of this ValueInPropertyVisitors.
+        r"""Sets the data_max of this ValueInPropertyVisitors.
 
         :param data_max: The data_max of this ValueInPropertyVisitors.
         :type data_max: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -350,7 +350,7 @@ class ValueInPropertyVisitors:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ValueInPropertyVisitors.
+        r"""Gets the node_id of this ValueInPropertyVisitors.
 
         :return: The node_id of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -359,7 +359,7 @@ class ValueInPropertyVisitors:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ValueInPropertyVisitors.
+        r"""Sets the node_id of this ValueInPropertyVisitors.
 
         :param node_id: The node_id of this ValueInPropertyVisitors.
         :type node_id: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -368,7 +368,7 @@ class ValueInPropertyVisitors:
 
     @property
     def browse_name(self):
-        """Gets the browse_name of this ValueInPropertyVisitors.
+        r"""Gets the browse_name of this ValueInPropertyVisitors.
 
         :return: The browse_name of this ValueInPropertyVisitors.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -377,7 +377,7 @@ class ValueInPropertyVisitors:
 
     @browse_name.setter
     def browse_name(self, browse_name):
-        """Sets the browse_name of this ValueInPropertyVisitors.
+        r"""Sets the browse_name of this ValueInPropertyVisitors.
 
         :param browse_name: The browse_name of this ValueInPropertyVisitors.
         :type browse_name: :class:`huaweicloudsdkief.v1.ValueInAttributes`

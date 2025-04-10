@@ -25,7 +25,7 @@ class ShowJobProgressRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowJobProgressRequest
+        r"""ShowJobProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowJobProgressRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobProgressRequest.
+        r"""Gets the job_id of this ShowJobProgressRequest.
 
         异步任务ID
 
@@ -53,7 +53,7 @@ class ShowJobProgressRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobProgressRequest.
+        r"""Sets the job_id of this ShowJobProgressRequest.
 
         异步任务ID
 

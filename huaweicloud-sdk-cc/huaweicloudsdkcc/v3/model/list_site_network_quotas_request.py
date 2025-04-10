@@ -29,7 +29,7 @@ class ListSiteNetworkQuotasRequest:
     }
 
     def __init__(self, quota_type=None, limit=None, marker=None):
-        """ListSiteNetworkQuotasRequest
+        r"""ListSiteNetworkQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSiteNetworkQuotasRequest:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this ListSiteNetworkQuotasRequest.
+        r"""Gets the quota_type of this ListSiteNetworkQuotasRequest.
 
         根据配额类型查询，可查询多个类型。
 
@@ -68,7 +68,7 @@ class ListSiteNetworkQuotasRequest:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this ListSiteNetworkQuotasRequest.
+        r"""Sets the quota_type of this ListSiteNetworkQuotasRequest.
 
         根据配额类型查询，可查询多个类型。
 
@@ -79,7 +79,7 @@ class ListSiteNetworkQuotasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSiteNetworkQuotasRequest.
+        r"""Gets the limit of this ListSiteNetworkQuotasRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -90,7 +90,7 @@ class ListSiteNetworkQuotasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSiteNetworkQuotasRequest.
+        r"""Sets the limit of this ListSiteNetworkQuotasRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -101,7 +101,7 @@ class ListSiteNetworkQuotasRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSiteNetworkQuotasRequest.
+        r"""Gets the marker of this ListSiteNetworkQuotasRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -112,7 +112,7 @@ class ListSiteNetworkQuotasRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSiteNetworkQuotasRequest.
+        r"""Sets the marker of this ListSiteNetworkQuotasRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 

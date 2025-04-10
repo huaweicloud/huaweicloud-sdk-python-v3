@@ -37,7 +37,7 @@ class AvailRetrieveCoupons:
     }
 
     def __init__(self, coupon_id=None, plan_name=None, sub_coupon_id=None, balance=None, effective_time=None, expire_time=None, use_limits=None):
-        """AvailRetrieveCoupons
+        r"""AvailRetrieveCoupons
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AvailRetrieveCoupons:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this AvailRetrieveCoupons.
+        r"""Gets the coupon_id of this AvailRetrieveCoupons.
 
         主优惠券ID。
 
@@ -96,7 +96,7 @@ class AvailRetrieveCoupons:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this AvailRetrieveCoupons.
+        r"""Sets the coupon_id of this AvailRetrieveCoupons.
 
         主优惠券ID。
 
@@ -107,7 +107,7 @@ class AvailRetrieveCoupons:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this AvailRetrieveCoupons.
+        r"""Gets the plan_name of this AvailRetrieveCoupons.
 
         促销计划名称。
 
@@ -118,7 +118,7 @@ class AvailRetrieveCoupons:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this AvailRetrieveCoupons.
+        r"""Sets the plan_name of this AvailRetrieveCoupons.
 
         促销计划名称。
 
@@ -129,7 +129,7 @@ class AvailRetrieveCoupons:
 
     @property
     def sub_coupon_id(self):
-        """Gets the sub_coupon_id of this AvailRetrieveCoupons.
+        r"""Gets the sub_coupon_id of this AvailRetrieveCoupons.
 
         子优惠券ID。主优惠券拨款后生成的子优惠券ID。
 
@@ -140,7 +140,7 @@ class AvailRetrieveCoupons:
 
     @sub_coupon_id.setter
     def sub_coupon_id(self, sub_coupon_id):
-        """Sets the sub_coupon_id of this AvailRetrieveCoupons.
+        r"""Sets the sub_coupon_id of this AvailRetrieveCoupons.
 
         子优惠券ID。主优惠券拨款后生成的子优惠券ID。
 
@@ -151,7 +151,7 @@ class AvailRetrieveCoupons:
 
     @property
     def balance(self):
-        """Gets the balance of this AvailRetrieveCoupons.
+        r"""Gets the balance of this AvailRetrieveCoupons.
 
         优惠券余额。单位为元
 
@@ -162,7 +162,7 @@ class AvailRetrieveCoupons:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this AvailRetrieveCoupons.
+        r"""Sets the balance of this AvailRetrieveCoupons.
 
         优惠券余额。单位为元
 
@@ -173,7 +173,7 @@ class AvailRetrieveCoupons:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this AvailRetrieveCoupons.
+        r"""Gets the effective_time of this AvailRetrieveCoupons.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -184,7 +184,7 @@ class AvailRetrieveCoupons:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this AvailRetrieveCoupons.
+        r"""Sets the effective_time of this AvailRetrieveCoupons.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -195,7 +195,7 @@ class AvailRetrieveCoupons:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AvailRetrieveCoupons.
+        r"""Gets the expire_time of this AvailRetrieveCoupons.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -206,7 +206,7 @@ class AvailRetrieveCoupons:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AvailRetrieveCoupons.
+        r"""Sets the expire_time of this AvailRetrieveCoupons.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -217,7 +217,7 @@ class AvailRetrieveCoupons:
 
     @property
     def use_limits(self):
-        """Gets the use_limits of this AvailRetrieveCoupons.
+        r"""Gets the use_limits of this AvailRetrieveCoupons.
 
         优惠券限制。 具体请参见表3。
 
@@ -228,7 +228,7 @@ class AvailRetrieveCoupons:
 
     @use_limits.setter
     def use_limits(self, use_limits):
-        """Sets the use_limits of this AvailRetrieveCoupons.
+        r"""Sets the use_limits of this AvailRetrieveCoupons.
 
         优惠券限制。 具体请参见表3。
 

@@ -26,7 +26,7 @@ class ShowMindmapByPageResponse(SdkResponse):
     }
 
     def __init__(self, params=None):
-        """ShowMindmapByPageResponse
+        r"""ShowMindmapByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMindmapByPageResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowMindmapByPageResponse.
+        r"""Gets the params of this ShowMindmapByPageResponse.
 
         :return: The params of this ShowMindmapByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.MindmapPageParamV3`
@@ -53,7 +53,7 @@ class ShowMindmapByPageResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowMindmapByPageResponse.
+        r"""Sets the params of this ShowMindmapByPageResponse.
 
         :param params: The params of this ShowMindmapByPageResponse.
         :type params: :class:`huaweicloudsdkcloudtest.v1.MindmapPageParamV3`

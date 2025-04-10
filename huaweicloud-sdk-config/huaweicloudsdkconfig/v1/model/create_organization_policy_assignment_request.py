@@ -27,7 +27,7 @@ class CreateOrganizationPolicyAssignmentRequest:
     }
 
     def __init__(self, organization_id=None, body=None):
-        """CreateOrganizationPolicyAssignmentRequest
+        r"""CreateOrganizationPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOrganizationPolicyAssignmentRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this CreateOrganizationPolicyAssignmentRequest.
+        r"""Gets the organization_id of this CreateOrganizationPolicyAssignmentRequest.
 
         组织ID。
 
@@ -60,7 +60,7 @@ class CreateOrganizationPolicyAssignmentRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this CreateOrganizationPolicyAssignmentRequest.
+        r"""Sets the organization_id of this CreateOrganizationPolicyAssignmentRequest.
 
         组织ID。
 
@@ -71,7 +71,7 @@ class CreateOrganizationPolicyAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrganizationPolicyAssignmentRequest.
+        r"""Gets the body of this CreateOrganizationPolicyAssignmentRequest.
 
         :return: The body of this CreateOrganizationPolicyAssignmentRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.OrganizationPolicyAssignmentRequest`
@@ -80,7 +80,7 @@ class CreateOrganizationPolicyAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrganizationPolicyAssignmentRequest.
+        r"""Sets the body of this CreateOrganizationPolicyAssignmentRequest.
 
         :param body: The body of this CreateOrganizationPolicyAssignmentRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.OrganizationPolicyAssignmentRequest`

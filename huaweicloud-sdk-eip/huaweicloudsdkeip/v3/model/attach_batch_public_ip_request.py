@@ -25,7 +25,7 @@ class AttachBatchPublicIpRequest:
     }
 
     def __init__(self, body=None):
-        """AttachBatchPublicIpRequest
+        r"""AttachBatchPublicIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AttachBatchPublicIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachBatchPublicIpRequest.
+        r"""Gets the body of this AttachBatchPublicIpRequest.
 
         :return: The body of this AttachBatchPublicIpRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.BatchAttachSharebwReq`
@@ -52,7 +52,7 @@ class AttachBatchPublicIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachBatchPublicIpRequest.
+        r"""Sets the body of this AttachBatchPublicIpRequest.
 
         :param body: The body of this AttachBatchPublicIpRequest.
         :type body: :class:`huaweicloudsdkeip.v3.BatchAttachSharebwReq`

@@ -37,7 +37,7 @@ class HotkeysBody:
     }
 
     def __init__(self, name=None, type=None, shard=None, db=None, size=None, unit=None, freq=None):
-        """HotkeysBody
+        r"""HotkeysBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class HotkeysBody:
 
     @property
     def name(self):
-        """Gets the name of this HotkeysBody.
+        r"""Gets the name of this HotkeysBody.
 
         key名称
 
@@ -96,7 +96,7 @@ class HotkeysBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HotkeysBody.
+        r"""Sets the name of this HotkeysBody.
 
         key名称
 
@@ -107,7 +107,7 @@ class HotkeysBody:
 
     @property
     def type(self):
-        """Gets the type of this HotkeysBody.
+        r"""Gets the type of this HotkeysBody.
 
         key类型
 
@@ -118,7 +118,7 @@ class HotkeysBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HotkeysBody.
+        r"""Sets the type of this HotkeysBody.
 
         key类型
 
@@ -129,7 +129,7 @@ class HotkeysBody:
 
     @property
     def shard(self):
-        """Gets the shard of this HotkeysBody.
+        r"""Gets the shard of this HotkeysBody.
 
         热key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
@@ -140,7 +140,7 @@ class HotkeysBody:
 
     @shard.setter
     def shard(self, shard):
-        """Sets the shard of this HotkeysBody.
+        r"""Sets the shard of this HotkeysBody.
 
         热key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
@@ -151,7 +151,7 @@ class HotkeysBody:
 
     @property
     def db(self):
-        """Gets the db of this HotkeysBody.
+        r"""Gets the db of this HotkeysBody.
 
         热key所在的db
 
@@ -162,7 +162,7 @@ class HotkeysBody:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this HotkeysBody.
+        r"""Sets the db of this HotkeysBody.
 
         热key所在的db
 
@@ -173,7 +173,7 @@ class HotkeysBody:
 
     @property
     def size(self):
-        """Gets the size of this HotkeysBody.
+        r"""Gets the size of this HotkeysBody.
 
         key的value大小。
 
@@ -184,7 +184,7 @@ class HotkeysBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this HotkeysBody.
+        r"""Sets the size of this HotkeysBody.
 
         key的value大小。
 
@@ -195,7 +195,7 @@ class HotkeysBody:
 
     @property
     def unit(self):
-        """Gets the unit of this HotkeysBody.
+        r"""Gets the unit of this HotkeysBody.
 
         key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
 
@@ -206,7 +206,7 @@ class HotkeysBody:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this HotkeysBody.
+        r"""Sets the unit of this HotkeysBody.
 
         key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
 
@@ -217,7 +217,7 @@ class HotkeysBody:
 
     @property
     def freq(self):
-        """Gets the freq of this HotkeysBody.
+        r"""Gets the freq of this HotkeysBody.
 
         表示某个key在一段时间的访问频度，会随着访问的频率而变化。  该值并不是简单的访问频率值，而是一个基于概率的对数计数器结果，最大为255(可表示100万次访问)，超过255后如果继续频繁访问该值并不会继续增大，同时默认如果每过一分钟没有访问，该值会衰减1。 
 
@@ -228,7 +228,7 @@ class HotkeysBody:
 
     @freq.setter
     def freq(self, freq):
-        """Sets the freq of this HotkeysBody.
+        r"""Sets the freq of this HotkeysBody.
 
         表示某个key在一段时间的访问频度，会随着访问的频率而变化。  该值并不是简单的访问频率值，而是一个基于概率的对数计数器结果，最大为255(可表示100万次访问)，超过255后如果继续频繁访问该值并不会继续增大，同时默认如果每过一分钟没有访问，该值会衰减1。 
 

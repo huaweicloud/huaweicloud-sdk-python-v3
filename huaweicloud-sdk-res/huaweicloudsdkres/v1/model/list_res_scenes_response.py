@@ -32,7 +32,7 @@ class ListResScenesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, res_scenes=None, message=None, error_code=None):
-        """ListResScenesResponse
+        r"""ListResScenesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResScenesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListResScenesResponse.
+        r"""Gets the is_success of this ListResScenesResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class ListResScenesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListResScenesResponse.
+        r"""Sets the is_success of this ListResScenesResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class ListResScenesResponse(SdkResponse):
 
     @property
     def res_scenes(self):
-        """Gets the res_scenes of this ListResScenesResponse.
+        r"""Gets the res_scenes of this ListResScenesResponse.
 
         场景列表信息。
 
@@ -98,7 +98,7 @@ class ListResScenesResponse(SdkResponse):
 
     @res_scenes.setter
     def res_scenes(self, res_scenes):
-        """Sets the res_scenes of this ListResScenesResponse.
+        r"""Sets the res_scenes of this ListResScenesResponse.
 
         场景列表信息。
 
@@ -109,7 +109,7 @@ class ListResScenesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListResScenesResponse.
+        r"""Gets the message of this ListResScenesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -120,7 +120,7 @@ class ListResScenesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListResScenesResponse.
+        r"""Sets the message of this ListResScenesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -131,7 +131,7 @@ class ListResScenesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListResScenesResponse.
+        r"""Gets the error_code of this ListResScenesResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -142,7 +142,7 @@ class ListResScenesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListResScenesResponse.
+        r"""Sets the error_code of this ListResScenesResponse.
 
         错误码（请求成功时，不返回此字段）。
 

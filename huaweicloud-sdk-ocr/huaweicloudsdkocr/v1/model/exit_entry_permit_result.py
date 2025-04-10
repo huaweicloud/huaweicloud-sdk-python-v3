@@ -57,7 +57,7 @@ class ExitEntryPermitResult:
     }
 
     def __init__(self, name=None, name_en=None, sex=None, birth_date=None, number=None, issuing_authority=None, issue_place=None, valid_period=None, machine_code=None, portrait_image=None, portrait_location=None, type=None, side=None, endorsement_info_hk=None, endorsement_info_mo=None, endorsement_info_tw=None, confidence=None):
-        """ExitEntryPermitResult
+        r"""ExitEntryPermitResult
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ExitEntryPermitResult:
 
     @property
     def name(self):
-        """Gets the name of this ExitEntryPermitResult.
+        r"""Gets the name of this ExitEntryPermitResult.
 
         姓名。 
 
@@ -166,7 +166,7 @@ class ExitEntryPermitResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExitEntryPermitResult.
+        r"""Sets the name of this ExitEntryPermitResult.
 
         姓名。 
 
@@ -177,7 +177,7 @@ class ExitEntryPermitResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ExitEntryPermitResult.
+        r"""Gets the name_en of this ExitEntryPermitResult.
 
         英文姓名。 
 
@@ -188,7 +188,7 @@ class ExitEntryPermitResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ExitEntryPermitResult.
+        r"""Sets the name_en of this ExitEntryPermitResult.
 
         英文姓名。 
 
@@ -199,7 +199,7 @@ class ExitEntryPermitResult:
 
     @property
     def sex(self):
-        """Gets the sex of this ExitEntryPermitResult.
+        r"""Gets the sex of this ExitEntryPermitResult.
 
         性别。 
 
@@ -210,7 +210,7 @@ class ExitEntryPermitResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this ExitEntryPermitResult.
+        r"""Sets the sex of this ExitEntryPermitResult.
 
         性别。 
 
@@ -221,7 +221,7 @@ class ExitEntryPermitResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this ExitEntryPermitResult.
+        r"""Gets the birth_date of this ExitEntryPermitResult.
 
         出生日期。 
 
@@ -232,7 +232,7 @@ class ExitEntryPermitResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this ExitEntryPermitResult.
+        r"""Sets the birth_date of this ExitEntryPermitResult.
 
         出生日期。 
 
@@ -243,7 +243,7 @@ class ExitEntryPermitResult:
 
     @property
     def number(self):
-        """Gets the number of this ExitEntryPermitResult.
+        r"""Gets the number of this ExitEntryPermitResult.
 
         证件号。 
 
@@ -254,7 +254,7 @@ class ExitEntryPermitResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ExitEntryPermitResult.
+        r"""Sets the number of this ExitEntryPermitResult.
 
         证件号。 
 
@@ -265,7 +265,7 @@ class ExitEntryPermitResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this ExitEntryPermitResult.
+        r"""Gets the issuing_authority of this ExitEntryPermitResult.
 
         签发机关。 
 
@@ -276,7 +276,7 @@ class ExitEntryPermitResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this ExitEntryPermitResult.
+        r"""Sets the issuing_authority of this ExitEntryPermitResult.
 
         签发机关。 
 
@@ -287,7 +287,7 @@ class ExitEntryPermitResult:
 
     @property
     def issue_place(self):
-        """Gets the issue_place of this ExitEntryPermitResult.
+        r"""Gets the issue_place of this ExitEntryPermitResult.
 
         签发地点。 
 
@@ -298,7 +298,7 @@ class ExitEntryPermitResult:
 
     @issue_place.setter
     def issue_place(self, issue_place):
-        """Sets the issue_place of this ExitEntryPermitResult.
+        r"""Sets the issue_place of this ExitEntryPermitResult.
 
         签发地点。 
 
@@ -309,7 +309,7 @@ class ExitEntryPermitResult:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this ExitEntryPermitResult.
+        r"""Gets the valid_period of this ExitEntryPermitResult.
 
         有效期限。 
 
@@ -320,7 +320,7 @@ class ExitEntryPermitResult:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this ExitEntryPermitResult.
+        r"""Sets the valid_period of this ExitEntryPermitResult.
 
         有效期限。 
 
@@ -331,7 +331,7 @@ class ExitEntryPermitResult:
 
     @property
     def machine_code(self):
-        """Gets the machine_code of this ExitEntryPermitResult.
+        r"""Gets the machine_code of this ExitEntryPermitResult.
 
         机器码。 
 
@@ -342,7 +342,7 @@ class ExitEntryPermitResult:
 
     @machine_code.setter
     def machine_code(self, machine_code):
-        """Sets the machine_code of this ExitEntryPermitResult.
+        r"""Sets the machine_code of this ExitEntryPermitResult.
 
         机器码。 
 
@@ -353,7 +353,7 @@ class ExitEntryPermitResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this ExitEntryPermitResult.
+        r"""Gets the portrait_image of this ExitEntryPermitResult.
 
         头像的base64编码。当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -364,7 +364,7 @@ class ExitEntryPermitResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this ExitEntryPermitResult.
+        r"""Sets the portrait_image of this ExitEntryPermitResult.
 
         头像的base64编码。当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -375,7 +375,7 @@ class ExitEntryPermitResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this ExitEntryPermitResult.
+        r"""Gets the portrait_location of this ExitEntryPermitResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -386,7 +386,7 @@ class ExitEntryPermitResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this ExitEntryPermitResult.
+        r"""Sets the portrait_location of this ExitEntryPermitResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -397,7 +397,7 @@ class ExitEntryPermitResult:
 
     @property
     def type(self):
-        """Gets the type of this ExitEntryPermitResult.
+        r"""Gets the type of this ExitEntryPermitResult.
 
         证件类型。可选值包括： - \"往来港澳通行证 \" - \"往来台湾通行证\" 
 
@@ -408,7 +408,7 @@ class ExitEntryPermitResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExitEntryPermitResult.
+        r"""Sets the type of this ExitEntryPermitResult.
 
         证件类型。可选值包括： - \"往来港澳通行证 \" - \"往来台湾通行证\" 
 
@@ -419,7 +419,7 @@ class ExitEntryPermitResult:
 
     @property
     def side(self):
-        """Gets the side of this ExitEntryPermitResult.
+        r"""Gets the side of this ExitEntryPermitResult.
 
         证件图片正反面信息。可选值包括： - \"front\"：证件图片为正面 - \"back\"：证件图片为反面 
 
@@ -430,7 +430,7 @@ class ExitEntryPermitResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this ExitEntryPermitResult.
+        r"""Sets the side of this ExitEntryPermitResult.
 
         证件图片正反面信息。可选值包括： - \"front\"：证件图片为正面 - \"back\"：证件图片为反面 
 
@@ -441,7 +441,7 @@ class ExitEntryPermitResult:
 
     @property
     def endorsement_info_hk(self):
-        """Gets the endorsement_info_hk of this ExitEntryPermitResult.
+        r"""Gets the endorsement_info_hk of this ExitEntryPermitResult.
 
         :return: The endorsement_info_hk of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -450,7 +450,7 @@ class ExitEntryPermitResult:
 
     @endorsement_info_hk.setter
     def endorsement_info_hk(self, endorsement_info_hk):
-        """Sets the endorsement_info_hk of this ExitEntryPermitResult.
+        r"""Sets the endorsement_info_hk of this ExitEntryPermitResult.
 
         :param endorsement_info_hk: The endorsement_info_hk of this ExitEntryPermitResult.
         :type endorsement_info_hk: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -459,7 +459,7 @@ class ExitEntryPermitResult:
 
     @property
     def endorsement_info_mo(self):
-        """Gets the endorsement_info_mo of this ExitEntryPermitResult.
+        r"""Gets the endorsement_info_mo of this ExitEntryPermitResult.
 
         :return: The endorsement_info_mo of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -468,7 +468,7 @@ class ExitEntryPermitResult:
 
     @endorsement_info_mo.setter
     def endorsement_info_mo(self, endorsement_info_mo):
-        """Sets the endorsement_info_mo of this ExitEntryPermitResult.
+        r"""Sets the endorsement_info_mo of this ExitEntryPermitResult.
 
         :param endorsement_info_mo: The endorsement_info_mo of this ExitEntryPermitResult.
         :type endorsement_info_mo: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -477,7 +477,7 @@ class ExitEntryPermitResult:
 
     @property
     def endorsement_info_tw(self):
-        """Gets the endorsement_info_tw of this ExitEntryPermitResult.
+        r"""Gets the endorsement_info_tw of this ExitEntryPermitResult.
 
         :return: The endorsement_info_tw of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -486,7 +486,7 @@ class ExitEntryPermitResult:
 
     @endorsement_info_tw.setter
     def endorsement_info_tw(self, endorsement_info_tw):
-        """Sets the endorsement_info_tw of this ExitEntryPermitResult.
+        r"""Sets the endorsement_info_tw of this ExitEntryPermitResult.
 
         :param endorsement_info_tw: The endorsement_info_tw of this ExitEntryPermitResult.
         :type endorsement_info_tw: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -495,7 +495,7 @@ class ExitEntryPermitResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ExitEntryPermitResult.
+        r"""Gets the confidence of this ExitEntryPermitResult.
 
         :return: The confidence of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitConfidence`
@@ -504,7 +504,7 @@ class ExitEntryPermitResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ExitEntryPermitResult.
+        r"""Sets the confidence of this ExitEntryPermitResult.
 
         :param confidence: The confidence of this ExitEntryPermitResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.ExitEntryPermitConfidence`

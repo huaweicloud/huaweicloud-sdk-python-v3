@@ -29,7 +29,7 @@ class SiteStatus:
     }
 
     def __init__(self):
-        """SiteStatus
+        r"""SiteStatus
 
         The model defined in huaweicloud sdk
 

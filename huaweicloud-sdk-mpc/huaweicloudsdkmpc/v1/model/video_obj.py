@@ -31,7 +31,7 @@ class VideoObj:
     }
 
     def __init__(self, width=None, height=None, bitrate=None, stream_name=None):
-        """VideoObj
+        r"""VideoObj
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class VideoObj:
 
     @property
     def width(self):
-        """Gets the width of this VideoObj.
+        r"""Gets the width of this VideoObj.
 
         视频宽度（单位：像素） - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
@@ -72,7 +72,7 @@ class VideoObj:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoObj.
+        r"""Sets the width of this VideoObj.
 
         视频宽度（单位：像素） - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
@@ -83,7 +83,7 @@ class VideoObj:
 
     @property
     def height(self):
-        """Gets the height of this VideoObj.
+        r"""Gets the height of this VideoObj.
 
         视频高度（单位：像素） - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880]，必须是4的倍数 
 
@@ -94,7 +94,7 @@ class VideoObj:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoObj.
+        r"""Sets the height of this VideoObj.
 
         视频高度（单位：像素） - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880]，必须是4的倍数 
 
@@ -105,7 +105,7 @@ class VideoObj:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoObj.
+        r"""Gets the bitrate of this VideoObj.
 
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
@@ -116,7 +116,7 @@ class VideoObj:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoObj.
+        r"""Sets the bitrate of this VideoObj.
 
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
@@ -127,7 +127,7 @@ class VideoObj:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this VideoObj.
+        r"""Gets the stream_name of this VideoObj.
 
         流名称 
 
@@ -138,7 +138,7 @@ class VideoObj:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this VideoObj.
+        r"""Sets the stream_name of this VideoObj.
 
         流名称 
 

@@ -31,7 +31,7 @@ class ListInstancesInfoDiagnosisRequest:
     }
 
     def __init__(self, engine=None, diagnosis=None, offset=None, limit=None):
-        """ListInstancesInfoDiagnosisRequest
+        r"""ListInstancesInfoDiagnosisRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListInstancesInfoDiagnosisRequest.
+        r"""Gets the engine of this ListInstancesInfoDiagnosisRequest.
 
         引擎类型
 
@@ -73,7 +73,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListInstancesInfoDiagnosisRequest.
+        r"""Sets the engine of this ListInstancesInfoDiagnosisRequest.
 
         引擎类型
 
@@ -84,7 +84,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @property
     def diagnosis(self):
-        """Gets the diagnosis of this ListInstancesInfoDiagnosisRequest.
+        r"""Gets the diagnosis of this ListInstancesInfoDiagnosisRequest.
 
         诊断项
 
@@ -95,7 +95,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @diagnosis.setter
     def diagnosis(self, diagnosis):
-        """Sets the diagnosis of this ListInstancesInfoDiagnosisRequest.
+        r"""Sets the diagnosis of this ListInstancesInfoDiagnosisRequest.
 
         诊断项
 
@@ -106,7 +106,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesInfoDiagnosisRequest.
+        r"""Gets the offset of this ListInstancesInfoDiagnosisRequest.
 
         offset
 
@@ -117,7 +117,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesInfoDiagnosisRequest.
+        r"""Sets the offset of this ListInstancesInfoDiagnosisRequest.
 
         offset
 
@@ -128,7 +128,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesInfoDiagnosisRequest.
+        r"""Gets the limit of this ListInstancesInfoDiagnosisRequest.
 
         limit
 
@@ -139,7 +139,7 @@ class ListInstancesInfoDiagnosisRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesInfoDiagnosisRequest.
+        r"""Sets the limit of this ListInstancesInfoDiagnosisRequest.
 
         limit
 

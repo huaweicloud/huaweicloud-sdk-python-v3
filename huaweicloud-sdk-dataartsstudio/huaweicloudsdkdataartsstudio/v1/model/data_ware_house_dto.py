@@ -31,7 +31,7 @@ class DataWareHouseDTO:
     }
 
     def __init__(self, dw_id=None, dw_name=None, dw_type=None, dw_config=None):
-        """DataWareHouseDTO
+        r"""DataWareHouseDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataWareHouseDTO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this DataWareHouseDTO.
+        r"""Gets the dw_id of this DataWareHouseDTO.
 
         数据连接ID
 
@@ -75,7 +75,7 @@ class DataWareHouseDTO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this DataWareHouseDTO.
+        r"""Sets the dw_id of this DataWareHouseDTO.
 
         数据连接ID
 
@@ -86,7 +86,7 @@ class DataWareHouseDTO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this DataWareHouseDTO.
+        r"""Gets the dw_name of this DataWareHouseDTO.
 
         数据连接名称
 
@@ -97,7 +97,7 @@ class DataWareHouseDTO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this DataWareHouseDTO.
+        r"""Sets the dw_name of this DataWareHouseDTO.
 
         数据连接名称
 
@@ -108,7 +108,7 @@ class DataWareHouseDTO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this DataWareHouseDTO.
+        r"""Gets the dw_type of this DataWareHouseDTO.
 
         数据连接类型：   * HIVE数据源   * DWS数据源   * SPARK数据源
 
@@ -119,7 +119,7 @@ class DataWareHouseDTO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this DataWareHouseDTO.
+        r"""Sets the dw_type of this DataWareHouseDTO.
 
         数据连接类型：   * HIVE数据源   * DWS数据源   * SPARK数据源
 
@@ -130,7 +130,7 @@ class DataWareHouseDTO:
 
     @property
     def dw_config(self):
-        """Gets the dw_config of this DataWareHouseDTO.
+        r"""Gets the dw_config of this DataWareHouseDTO.
 
         :return: The dw_config of this DataWareHouseDTO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataWareHouseDTODwConfig`
@@ -139,7 +139,7 @@ class DataWareHouseDTO:
 
     @dw_config.setter
     def dw_config(self, dw_config):
-        """Sets the dw_config of this DataWareHouseDTO.
+        r"""Sets the dw_config of this DataWareHouseDTO.
 
         :param dw_config: The dw_config of this DataWareHouseDTO.
         :type dw_config: :class:`huaweicloudsdkdataartsstudio.v1.DataWareHouseDTODwConfig`

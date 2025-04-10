@@ -75,7 +75,7 @@ class CountGlobalEipSegmentRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, id=None, internet_bandwidth_id=None, name=None, name_like=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, cidr=None, cidr_v6=None, freezen=None, internet_bandwidth_is_null=None, status=None, associate_instance_region=None, associate_instance_public_border_group=None, associate_instance_instance_site=None, associate_instance_instance_type=None, associate_instance_instance_id=None, associate_instance_project_id=None, enterprise_project_id=None, tags=None):
-        """CountGlobalEipSegmentRequest
+        r"""CountGlobalEipSegmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CountGlobalEipSegmentRequest.
+        r"""Gets the limit of this CountGlobalEipSegmentRequest.
 
         每页条数
 
@@ -229,7 +229,7 @@ class CountGlobalEipSegmentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CountGlobalEipSegmentRequest.
+        r"""Sets the limit of this CountGlobalEipSegmentRequest.
 
         每页条数
 
@@ -240,7 +240,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this CountGlobalEipSegmentRequest.
+        r"""Gets the offset of this CountGlobalEipSegmentRequest.
 
         分页起始点
 
@@ -251,7 +251,7 @@ class CountGlobalEipSegmentRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CountGlobalEipSegmentRequest.
+        r"""Sets the offset of this CountGlobalEipSegmentRequest.
 
         分页起始点
 
@@ -262,7 +262,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this CountGlobalEipSegmentRequest.
+        r"""Gets the marker of this CountGlobalEipSegmentRequest.
 
         分页起始点
 
@@ -273,7 +273,7 @@ class CountGlobalEipSegmentRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this CountGlobalEipSegmentRequest.
+        r"""Sets the marker of this CountGlobalEipSegmentRequest.
 
         分页起始点
 
@@ -284,7 +284,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this CountGlobalEipSegmentRequest.
+        r"""Gets the page_reverse of this CountGlobalEipSegmentRequest.
 
         翻页方向
 
@@ -295,7 +295,7 @@ class CountGlobalEipSegmentRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this CountGlobalEipSegmentRequest.
+        r"""Sets the page_reverse of this CountGlobalEipSegmentRequest.
 
         翻页方向
 
@@ -306,7 +306,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this CountGlobalEipSegmentRequest.
+        r"""Gets the fields of this CountGlobalEipSegmentRequest.
 
         :return: The fields of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -315,7 +315,7 @@ class CountGlobalEipSegmentRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this CountGlobalEipSegmentRequest.
+        r"""Sets the fields of this CountGlobalEipSegmentRequest.
 
         :param fields: The fields of this CountGlobalEipSegmentRequest.
         :type fields: list[str]
@@ -324,7 +324,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def id(self):
-        """Gets the id of this CountGlobalEipSegmentRequest.
+        r"""Gets the id of this CountGlobalEipSegmentRequest.
 
         :return: The id of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -333,7 +333,7 @@ class CountGlobalEipSegmentRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CountGlobalEipSegmentRequest.
+        r"""Sets the id of this CountGlobalEipSegmentRequest.
 
         :param id: The id of this CountGlobalEipSegmentRequest.
         :type id: list[str]
@@ -342,7 +342,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this CountGlobalEipSegmentRequest.
+        r"""Gets the internet_bandwidth_id of this CountGlobalEipSegmentRequest.
 
         :return: The internet_bandwidth_id of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -351,7 +351,7 @@ class CountGlobalEipSegmentRequest:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this CountGlobalEipSegmentRequest.
+        r"""Sets the internet_bandwidth_id of this CountGlobalEipSegmentRequest.
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this CountGlobalEipSegmentRequest.
         :type internet_bandwidth_id: list[str]
@@ -360,7 +360,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def name(self):
-        """Gets the name of this CountGlobalEipSegmentRequest.
+        r"""Gets the name of this CountGlobalEipSegmentRequest.
 
         :return: The name of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -369,7 +369,7 @@ class CountGlobalEipSegmentRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CountGlobalEipSegmentRequest.
+        r"""Sets the name of this CountGlobalEipSegmentRequest.
 
         :param name: The name of this CountGlobalEipSegmentRequest.
         :type name: list[str]
@@ -378,7 +378,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this CountGlobalEipSegmentRequest.
+        r"""Gets the name_like of this CountGlobalEipSegmentRequest.
 
         :return: The name_like of this CountGlobalEipSegmentRequest.
         :rtype: str
@@ -387,7 +387,7 @@ class CountGlobalEipSegmentRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this CountGlobalEipSegmentRequest.
+        r"""Sets the name_like of this CountGlobalEipSegmentRequest.
 
         :param name_like: The name_like of this CountGlobalEipSegmentRequest.
         :type name_like: str
@@ -396,7 +396,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this CountGlobalEipSegmentRequest.
+        r"""Gets the access_site of this CountGlobalEipSegmentRequest.
 
         :return: The access_site of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -405,7 +405,7 @@ class CountGlobalEipSegmentRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this CountGlobalEipSegmentRequest.
+        r"""Sets the access_site of this CountGlobalEipSegmentRequest.
 
         :param access_site: The access_site of this CountGlobalEipSegmentRequest.
         :type access_site: list[str]
@@ -414,7 +414,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this CountGlobalEipSegmentRequest.
+        r"""Gets the geip_pool_name of this CountGlobalEipSegmentRequest.
 
         :return: The geip_pool_name of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -423,7 +423,7 @@ class CountGlobalEipSegmentRequest:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this CountGlobalEipSegmentRequest.
+        r"""Sets the geip_pool_name of this CountGlobalEipSegmentRequest.
 
         :param geip_pool_name: The geip_pool_name of this CountGlobalEipSegmentRequest.
         :type geip_pool_name: list[str]
@@ -432,7 +432,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this CountGlobalEipSegmentRequest.
+        r"""Gets the isp of this CountGlobalEipSegmentRequest.
 
         :return: The isp of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -441,7 +441,7 @@ class CountGlobalEipSegmentRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this CountGlobalEipSegmentRequest.
+        r"""Sets the isp of this CountGlobalEipSegmentRequest.
 
         :param isp: The isp of this CountGlobalEipSegmentRequest.
         :type isp: list[str]
@@ -450,7 +450,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CountGlobalEipSegmentRequest.
+        r"""Gets the ip_version of this CountGlobalEipSegmentRequest.
 
         :return: The ip_version of this CountGlobalEipSegmentRequest.
         :rtype: list[int]
@@ -459,7 +459,7 @@ class CountGlobalEipSegmentRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CountGlobalEipSegmentRequest.
+        r"""Sets the ip_version of this CountGlobalEipSegmentRequest.
 
         :param ip_version: The ip_version of this CountGlobalEipSegmentRequest.
         :type ip_version: list[int]
@@ -468,7 +468,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CountGlobalEipSegmentRequest.
+        r"""Gets the cidr of this CountGlobalEipSegmentRequest.
 
         :return: The cidr of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -477,7 +477,7 @@ class CountGlobalEipSegmentRequest:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CountGlobalEipSegmentRequest.
+        r"""Sets the cidr of this CountGlobalEipSegmentRequest.
 
         :param cidr: The cidr of this CountGlobalEipSegmentRequest.
         :type cidr: list[str]
@@ -486,7 +486,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def cidr_v6(self):
-        """Gets the cidr_v6 of this CountGlobalEipSegmentRequest.
+        r"""Gets the cidr_v6 of this CountGlobalEipSegmentRequest.
 
         :return: The cidr_v6 of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -495,7 +495,7 @@ class CountGlobalEipSegmentRequest:
 
     @cidr_v6.setter
     def cidr_v6(self, cidr_v6):
-        """Sets the cidr_v6 of this CountGlobalEipSegmentRequest.
+        r"""Sets the cidr_v6 of this CountGlobalEipSegmentRequest.
 
         :param cidr_v6: The cidr_v6 of this CountGlobalEipSegmentRequest.
         :type cidr_v6: list[str]
@@ -504,7 +504,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def freezen(self):
-        """Gets the freezen of this CountGlobalEipSegmentRequest.
+        r"""Gets the freezen of this CountGlobalEipSegmentRequest.
 
         :return: The freezen of this CountGlobalEipSegmentRequest.
         :rtype: list[bool]
@@ -513,7 +513,7 @@ class CountGlobalEipSegmentRequest:
 
     @freezen.setter
     def freezen(self, freezen):
-        """Sets the freezen of this CountGlobalEipSegmentRequest.
+        r"""Sets the freezen of this CountGlobalEipSegmentRequest.
 
         :param freezen: The freezen of this CountGlobalEipSegmentRequest.
         :type freezen: list[bool]
@@ -522,7 +522,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def internet_bandwidth_is_null(self):
-        """Gets the internet_bandwidth_is_null of this CountGlobalEipSegmentRequest.
+        r"""Gets the internet_bandwidth_is_null of this CountGlobalEipSegmentRequest.
 
         :return: The internet_bandwidth_is_null of this CountGlobalEipSegmentRequest.
         :rtype: list[bool]
@@ -531,7 +531,7 @@ class CountGlobalEipSegmentRequest:
 
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
-        """Sets the internet_bandwidth_is_null of this CountGlobalEipSegmentRequest.
+        r"""Sets the internet_bandwidth_is_null of this CountGlobalEipSegmentRequest.
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this CountGlobalEipSegmentRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -540,7 +540,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def status(self):
-        """Gets the status of this CountGlobalEipSegmentRequest.
+        r"""Gets the status of this CountGlobalEipSegmentRequest.
 
         :return: The status of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -549,7 +549,7 @@ class CountGlobalEipSegmentRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CountGlobalEipSegmentRequest.
+        r"""Sets the status of this CountGlobalEipSegmentRequest.
 
         :param status: The status of this CountGlobalEipSegmentRequest.
         :type status: list[str]
@@ -558,7 +558,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def associate_instance_region(self):
-        """Gets the associate_instance_region of this CountGlobalEipSegmentRequest.
+        r"""Gets the associate_instance_region of this CountGlobalEipSegmentRequest.
 
         :return: The associate_instance_region of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -567,7 +567,7 @@ class CountGlobalEipSegmentRequest:
 
     @associate_instance_region.setter
     def associate_instance_region(self, associate_instance_region):
-        """Sets the associate_instance_region of this CountGlobalEipSegmentRequest.
+        r"""Sets the associate_instance_region of this CountGlobalEipSegmentRequest.
 
         :param associate_instance_region: The associate_instance_region of this CountGlobalEipSegmentRequest.
         :type associate_instance_region: list[str]
@@ -576,7 +576,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def associate_instance_public_border_group(self):
-        """Gets the associate_instance_public_border_group of this CountGlobalEipSegmentRequest.
+        r"""Gets the associate_instance_public_border_group of this CountGlobalEipSegmentRequest.
 
         :return: The associate_instance_public_border_group of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -585,7 +585,7 @@ class CountGlobalEipSegmentRequest:
 
     @associate_instance_public_border_group.setter
     def associate_instance_public_border_group(self, associate_instance_public_border_group):
-        """Sets the associate_instance_public_border_group of this CountGlobalEipSegmentRequest.
+        r"""Sets the associate_instance_public_border_group of this CountGlobalEipSegmentRequest.
 
         :param associate_instance_public_border_group: The associate_instance_public_border_group of this CountGlobalEipSegmentRequest.
         :type associate_instance_public_border_group: list[str]
@@ -594,7 +594,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def associate_instance_instance_site(self):
-        """Gets the associate_instance_instance_site of this CountGlobalEipSegmentRequest.
+        r"""Gets the associate_instance_instance_site of this CountGlobalEipSegmentRequest.
 
         :return: The associate_instance_instance_site of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -603,7 +603,7 @@ class CountGlobalEipSegmentRequest:
 
     @associate_instance_instance_site.setter
     def associate_instance_instance_site(self, associate_instance_instance_site):
-        """Sets the associate_instance_instance_site of this CountGlobalEipSegmentRequest.
+        r"""Sets the associate_instance_instance_site of this CountGlobalEipSegmentRequest.
 
         :param associate_instance_instance_site: The associate_instance_instance_site of this CountGlobalEipSegmentRequest.
         :type associate_instance_instance_site: list[str]
@@ -612,7 +612,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def associate_instance_instance_type(self):
-        """Gets the associate_instance_instance_type of this CountGlobalEipSegmentRequest.
+        r"""Gets the associate_instance_instance_type of this CountGlobalEipSegmentRequest.
 
         :return: The associate_instance_instance_type of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -621,7 +621,7 @@ class CountGlobalEipSegmentRequest:
 
     @associate_instance_instance_type.setter
     def associate_instance_instance_type(self, associate_instance_instance_type):
-        """Sets the associate_instance_instance_type of this CountGlobalEipSegmentRequest.
+        r"""Sets the associate_instance_instance_type of this CountGlobalEipSegmentRequest.
 
         :param associate_instance_instance_type: The associate_instance_instance_type of this CountGlobalEipSegmentRequest.
         :type associate_instance_instance_type: list[str]
@@ -630,7 +630,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def associate_instance_instance_id(self):
-        """Gets the associate_instance_instance_id of this CountGlobalEipSegmentRequest.
+        r"""Gets the associate_instance_instance_id of this CountGlobalEipSegmentRequest.
 
         :return: The associate_instance_instance_id of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -639,7 +639,7 @@ class CountGlobalEipSegmentRequest:
 
     @associate_instance_instance_id.setter
     def associate_instance_instance_id(self, associate_instance_instance_id):
-        """Sets the associate_instance_instance_id of this CountGlobalEipSegmentRequest.
+        r"""Sets the associate_instance_instance_id of this CountGlobalEipSegmentRequest.
 
         :param associate_instance_instance_id: The associate_instance_instance_id of this CountGlobalEipSegmentRequest.
         :type associate_instance_instance_id: list[str]
@@ -648,7 +648,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def associate_instance_project_id(self):
-        """Gets the associate_instance_project_id of this CountGlobalEipSegmentRequest.
+        r"""Gets the associate_instance_project_id of this CountGlobalEipSegmentRequest.
 
         :return: The associate_instance_project_id of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -657,7 +657,7 @@ class CountGlobalEipSegmentRequest:
 
     @associate_instance_project_id.setter
     def associate_instance_project_id(self, associate_instance_project_id):
-        """Sets the associate_instance_project_id of this CountGlobalEipSegmentRequest.
+        r"""Sets the associate_instance_project_id of this CountGlobalEipSegmentRequest.
 
         :param associate_instance_project_id: The associate_instance_project_id of this CountGlobalEipSegmentRequest.
         :type associate_instance_project_id: list[str]
@@ -666,7 +666,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CountGlobalEipSegmentRequest.
+        r"""Gets the enterprise_project_id of this CountGlobalEipSegmentRequest.
 
         :return: The enterprise_project_id of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -675,7 +675,7 @@ class CountGlobalEipSegmentRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CountGlobalEipSegmentRequest.
+        r"""Sets the enterprise_project_id of this CountGlobalEipSegmentRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this CountGlobalEipSegmentRequest.
         :type enterprise_project_id: list[str]
@@ -684,7 +684,7 @@ class CountGlobalEipSegmentRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CountGlobalEipSegmentRequest.
+        r"""Gets the tags of this CountGlobalEipSegmentRequest.
 
         :return: The tags of this CountGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -693,7 +693,7 @@ class CountGlobalEipSegmentRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CountGlobalEipSegmentRequest.
+        r"""Sets the tags of this CountGlobalEipSegmentRequest.
 
         :param tags: The tags of this CountGlobalEipSegmentRequest.
         :type tags: list[str]

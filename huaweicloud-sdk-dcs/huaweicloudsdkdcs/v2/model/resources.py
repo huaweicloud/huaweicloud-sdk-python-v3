@@ -35,7 +35,7 @@ class Resources:
     }
 
     def __init__(self, unit=None, min=None, max=None, quota=None, used=None, type=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Resources:
 
     @property
     def unit(self):
-        """Gets the unit of this Resources.
+        r"""Gets the unit of this Resources.
 
         资源的计数单位。 - 当type为instance时，无单位。 - 当type为ram时，单位为GB。 
 
@@ -89,7 +89,7 @@ class Resources:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Resources.
+        r"""Sets the unit of this Resources.
 
         资源的计数单位。 - 当type为instance时，无单位。 - 当type为ram时，单位为GB。 
 
@@ -100,7 +100,7 @@ class Resources:
 
     @property
     def min(self):
-        """Gets the min of this Resources.
+        r"""Gets the min of this Resources.
 
         - 当type为instance时，表示可申请实例配额的最小值。 - 当type为ram时，表示可申请内存配额的最小值。 
 
@@ -111,7 +111,7 @@ class Resources:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this Resources.
+        r"""Sets the min of this Resources.
 
         - 当type为instance时，表示可申请实例配额的最小值。 - 当type为ram时，表示可申请内存配额的最小值。 
 
@@ -122,7 +122,7 @@ class Resources:
 
     @property
     def max(self):
-        """Gets the max of this Resources.
+        r"""Gets the max of this Resources.
 
         - 当type为instance时，表示可申请实例配额的最大值。 - 当type为ram时，表示可申请内存配额的最大值。 
 
@@ -133,7 +133,7 @@ class Resources:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this Resources.
+        r"""Sets the max of this Resources.
 
         - 当type为instance时，表示可申请实例配额的最大值。 - 当type为ram时，表示可申请内存配额的最大值。 
 
@@ -144,7 +144,7 @@ class Resources:
 
     @property
     def quota(self):
-        """Gets the quota of this Resources.
+        r"""Gets the quota of this Resources.
 
         可以创建的实例最大数和总内存的配额限制。
 
@@ -155,7 +155,7 @@ class Resources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Resources.
+        r"""Sets the quota of this Resources.
 
         可以创建的实例最大数和总内存的配额限制。
 
@@ -166,7 +166,7 @@ class Resources:
 
     @property
     def used(self):
-        """Gets the used of this Resources.
+        r"""Gets the used of this Resources.
 
         已创建的实例个数和已使用的内存配额。
 
@@ -177,7 +177,7 @@ class Resources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Resources.
+        r"""Sets the used of this Resources.
 
         已创建的实例个数和已使用的内存配额。
 
@@ -188,7 +188,7 @@ class Resources:
 
     @property
     def type(self):
-        """Gets the type of this Resources.
+        r"""Gets the type of this Resources.
 
         支持instance、ram两种。 - instance表示实例配额。 - ram表示内存配额。 
 
@@ -199,7 +199,7 @@ class Resources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resources.
+        r"""Sets the type of this Resources.
 
         支持instance、ram两种。 - instance表示实例配额。 - ram表示内存配额。 
 

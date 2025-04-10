@@ -27,7 +27,7 @@ class MicroserviceLabel:
     }
 
     def __init__(self, label_name=None, label_value=None):
-        """MicroserviceLabel
+        r"""MicroserviceLabel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MicroserviceLabel:
 
     @property
     def label_name(self):
-        """Gets the label_name of this MicroserviceLabel.
+        r"""Gets the label_name of this MicroserviceLabel.
 
         标签名称。  以字母或者数字开头和结尾，由字母、数字、连接符('-')、下划线('_')、点号('.')组成且63个字符之内。
 
@@ -59,7 +59,7 @@ class MicroserviceLabel:
 
     @label_name.setter
     def label_name(self, label_name):
-        """Sets the label_name of this MicroserviceLabel.
+        r"""Sets the label_name of this MicroserviceLabel.
 
         标签名称。  以字母或者数字开头和结尾，由字母、数字、连接符('-')、下划线('_')、点号('.')组成且63个字符之内。
 
@@ -70,7 +70,7 @@ class MicroserviceLabel:
 
     @property
     def label_value(self):
-        """Gets the label_value of this MicroserviceLabel.
+        r"""Gets the label_value of this MicroserviceLabel.
 
         标签值。  以字母或者数字开头和结尾，由字母、数字、连接符('-')、下划线('_')、点号('.')组成且63个字符之内。
 
@@ -81,7 +81,7 @@ class MicroserviceLabel:
 
     @label_value.setter
     def label_value(self, label_value):
-        """Sets the label_value of this MicroserviceLabel.
+        r"""Sets the label_value of this MicroserviceLabel.
 
         标签值。  以字母或者数字开头和结尾，由字母、数字、连接符('-')、下划线('_')、点号('.')组成且63个字符之内。
 

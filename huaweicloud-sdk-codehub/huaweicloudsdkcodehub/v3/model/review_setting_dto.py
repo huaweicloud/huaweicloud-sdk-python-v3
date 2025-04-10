@@ -47,7 +47,7 @@ class ReviewSettingDto:
     }
 
     def __init__(self, categories_and_modules_enabled=None, secondary_category_enabled=None, forbidden_add_to_issue=None, primary_categories=None, review_default_categories=None, review_customized_categories=None, review_modules=None, source_id=None, source_type=None, source_path=None, secondary_category_type=None, secondary_categories=None):
-        """ReviewSettingDto
+        r"""ReviewSettingDto
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ReviewSettingDto:
 
     @property
     def categories_and_modules_enabled(self):
-        """Gets the categories_and_modules_enabled of this ReviewSettingDto.
+        r"""Gets the categories_and_modules_enabled of this ReviewSettingDto.
 
         是否开启检视意见分类和模块
 
@@ -131,7 +131,7 @@ class ReviewSettingDto:
 
     @categories_and_modules_enabled.setter
     def categories_and_modules_enabled(self, categories_and_modules_enabled):
-        """Sets the categories_and_modules_enabled of this ReviewSettingDto.
+        r"""Sets the categories_and_modules_enabled of this ReviewSettingDto.
 
         是否开启检视意见分类和模块
 
@@ -142,7 +142,7 @@ class ReviewSettingDto:
 
     @property
     def secondary_category_enabled(self):
-        """Gets the secondary_category_enabled of this ReviewSettingDto.
+        r"""Gets the secondary_category_enabled of this ReviewSettingDto.
 
         是否开启二级分类
 
@@ -153,7 +153,7 @@ class ReviewSettingDto:
 
     @secondary_category_enabled.setter
     def secondary_category_enabled(self, secondary_category_enabled):
-        """Sets the secondary_category_enabled of this ReviewSettingDto.
+        r"""Sets the secondary_category_enabled of this ReviewSettingDto.
 
         是否开启二级分类
 
@@ -164,7 +164,7 @@ class ReviewSettingDto:
 
     @property
     def forbidden_add_to_issue(self):
-        """Gets the forbidden_add_to_issue of this ReviewSettingDto.
+        r"""Gets the forbidden_add_to_issue of this ReviewSettingDto.
 
         是否禁止关联issue
 
@@ -175,7 +175,7 @@ class ReviewSettingDto:
 
     @forbidden_add_to_issue.setter
     def forbidden_add_to_issue(self, forbidden_add_to_issue):
-        """Sets the forbidden_add_to_issue of this ReviewSettingDto.
+        r"""Sets the forbidden_add_to_issue of this ReviewSettingDto.
 
         是否禁止关联issue
 
@@ -186,7 +186,7 @@ class ReviewSettingDto:
 
     @property
     def primary_categories(self):
-        """Gets the primary_categories of this ReviewSettingDto.
+        r"""Gets the primary_categories of this ReviewSettingDto.
 
         一级分类
 
@@ -197,7 +197,7 @@ class ReviewSettingDto:
 
     @primary_categories.setter
     def primary_categories(self, primary_categories):
-        """Sets the primary_categories of this ReviewSettingDto.
+        r"""Sets the primary_categories of this ReviewSettingDto.
 
         一级分类
 
@@ -208,7 +208,7 @@ class ReviewSettingDto:
 
     @property
     def review_default_categories(self):
-        """Gets the review_default_categories of this ReviewSettingDto.
+        r"""Gets the review_default_categories of this ReviewSettingDto.
 
         默认分类
 
@@ -219,7 +219,7 @@ class ReviewSettingDto:
 
     @review_default_categories.setter
     def review_default_categories(self, review_default_categories):
-        """Sets the review_default_categories of this ReviewSettingDto.
+        r"""Sets the review_default_categories of this ReviewSettingDto.
 
         默认分类
 
@@ -230,7 +230,7 @@ class ReviewSettingDto:
 
     @property
     def review_customized_categories(self):
-        """Gets the review_customized_categories of this ReviewSettingDto.
+        r"""Gets the review_customized_categories of this ReviewSettingDto.
 
         自定义分类
 
@@ -241,7 +241,7 @@ class ReviewSettingDto:
 
     @review_customized_categories.setter
     def review_customized_categories(self, review_customized_categories):
-        """Sets the review_customized_categories of this ReviewSettingDto.
+        r"""Sets the review_customized_categories of this ReviewSettingDto.
 
         自定义分类
 
@@ -252,7 +252,7 @@ class ReviewSettingDto:
 
     @property
     def review_modules(self):
-        """Gets the review_modules of this ReviewSettingDto.
+        r"""Gets the review_modules of this ReviewSettingDto.
 
         检视意见模块
 
@@ -263,7 +263,7 @@ class ReviewSettingDto:
 
     @review_modules.setter
     def review_modules(self, review_modules):
-        """Sets the review_modules of this ReviewSettingDto.
+        r"""Sets the review_modules of this ReviewSettingDto.
 
         检视意见模块
 
@@ -274,7 +274,7 @@ class ReviewSettingDto:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ReviewSettingDto.
+        r"""Gets the source_id of this ReviewSettingDto.
 
         目标id
 
@@ -285,7 +285,7 @@ class ReviewSettingDto:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ReviewSettingDto.
+        r"""Sets the source_id of this ReviewSettingDto.
 
         目标id
 
@@ -296,7 +296,7 @@ class ReviewSettingDto:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ReviewSettingDto.
+        r"""Gets the source_type of this ReviewSettingDto.
 
         目标类型
 
@@ -307,7 +307,7 @@ class ReviewSettingDto:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ReviewSettingDto.
+        r"""Sets the source_type of this ReviewSettingDto.
 
         目标类型
 
@@ -318,7 +318,7 @@ class ReviewSettingDto:
 
     @property
     def source_path(self):
-        """Gets the source_path of this ReviewSettingDto.
+        r"""Gets the source_path of this ReviewSettingDto.
 
         目标路径
 
@@ -329,7 +329,7 @@ class ReviewSettingDto:
 
     @source_path.setter
     def source_path(self, source_path):
-        """Sets the source_path of this ReviewSettingDto.
+        r"""Sets the source_path of this ReviewSettingDto.
 
         目标路径
 
@@ -340,7 +340,7 @@ class ReviewSettingDto:
 
     @property
     def secondary_category_type(self):
-        """Gets the secondary_category_type of this ReviewSettingDto.
+        r"""Gets the secondary_category_type of this ReviewSettingDto.
 
         二级分类类型
 
@@ -351,7 +351,7 @@ class ReviewSettingDto:
 
     @secondary_category_type.setter
     def secondary_category_type(self, secondary_category_type):
-        """Sets the secondary_category_type of this ReviewSettingDto.
+        r"""Sets the secondary_category_type of this ReviewSettingDto.
 
         二级分类类型
 
@@ -362,7 +362,7 @@ class ReviewSettingDto:
 
     @property
     def secondary_categories(self):
-        """Gets the secondary_categories of this ReviewSettingDto.
+        r"""Gets the secondary_categories of this ReviewSettingDto.
 
         二级分类
 
@@ -373,7 +373,7 @@ class ReviewSettingDto:
 
     @secondary_categories.setter
     def secondary_categories(self, secondary_categories):
-        """Sets the secondary_categories of this ReviewSettingDto.
+        r"""Sets the secondary_categories of this ReviewSettingDto.
 
         二级分类
 

@@ -28,7 +28,7 @@ class CreateRobotResponse(SdkResponse):
     }
 
     def __init__(self, robot_id=None, x_request_id=None):
-        """CreateRobotResponse
+        r"""CreateRobotResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateRobotResponse(SdkResponse):
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateRobotResponse.
+        r"""Gets the robot_id of this CreateRobotResponse.
 
         应用ID。
 
@@ -62,7 +62,7 @@ class CreateRobotResponse(SdkResponse):
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateRobotResponse.
+        r"""Sets the robot_id of this CreateRobotResponse.
 
         应用ID。
 
@@ -73,7 +73,7 @@ class CreateRobotResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateRobotResponse.
+        r"""Gets the x_request_id of this CreateRobotResponse.
 
         :return: The x_request_id of this CreateRobotResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateRobotResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateRobotResponse.
+        r"""Sets the x_request_id of this CreateRobotResponse.
 
         :param x_request_id: The x_request_id of this CreateRobotResponse.
         :type x_request_id: str

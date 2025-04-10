@@ -27,7 +27,7 @@ class BatchCreateResourcesRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """BatchCreateResourcesRequest
+        r"""BatchCreateResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateResourcesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchCreateResourcesRequest.
+        r"""Gets the group_id of this BatchCreateResourcesRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -60,7 +60,7 @@ class BatchCreateResourcesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchCreateResourcesRequest.
+        r"""Sets the group_id of this BatchCreateResourcesRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -71,7 +71,7 @@ class BatchCreateResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateResourcesRequest.
+        r"""Gets the body of this BatchCreateResourcesRequest.
 
         :return: The body of this BatchCreateResourcesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.ResourcesReq`
@@ -80,7 +80,7 @@ class BatchCreateResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateResourcesRequest.
+        r"""Sets the body of this BatchCreateResourcesRequest.
 
         :param body: The body of this BatchCreateResourcesRequest.
         :type body: :class:`huaweicloudsdkces.v2.ResourcesReq`

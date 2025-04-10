@@ -25,7 +25,7 @@ class ShowPortRequest:
     }
 
     def __init__(self, port_id=None):
-        """ShowPortRequest
+        r"""ShowPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPortRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ShowPortRequest.
+        r"""Gets the port_id of this ShowPortRequest.
 
         端口ID
 
@@ -53,7 +53,7 @@ class ShowPortRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ShowPortRequest.
+        r"""Sets the port_id of this ShowPortRequest.
 
         端口ID
 

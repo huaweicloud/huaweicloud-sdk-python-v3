@@ -33,7 +33,7 @@ class AppFilterDto:
     }
 
     def __init__(self, app_id=None, app_name=None, app_version=None, app_resource=None, app_node_labels=None):
-        """AppFilterDto
+        r"""AppFilterDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AppFilterDto:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppFilterDto.
+        r"""Gets the app_id of this AppFilterDto.
 
         应用id
 
@@ -82,7 +82,7 @@ class AppFilterDto:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppFilterDto.
+        r"""Sets the app_id of this AppFilterDto.
 
         应用id
 
@@ -93,7 +93,7 @@ class AppFilterDto:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppFilterDto.
+        r"""Gets the app_name of this AppFilterDto.
 
         应用名称
 
@@ -104,7 +104,7 @@ class AppFilterDto:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppFilterDto.
+        r"""Sets the app_name of this AppFilterDto.
 
         应用名称
 
@@ -115,7 +115,7 @@ class AppFilterDto:
 
     @property
     def app_version(self):
-        """Gets the app_version of this AppFilterDto.
+        r"""Gets the app_version of this AppFilterDto.
 
         应用版本
 
@@ -126,7 +126,7 @@ class AppFilterDto:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this AppFilterDto.
+        r"""Sets the app_version of this AppFilterDto.
 
         应用版本
 
@@ -137,7 +137,7 @@ class AppFilterDto:
 
     @property
     def app_resource(self):
-        """Gets the app_resource of this AppFilterDto.
+        r"""Gets the app_resource of this AppFilterDto.
 
         :return: The app_resource of this AppFilterDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -146,7 +146,7 @@ class AppFilterDto:
 
     @app_resource.setter
     def app_resource(self, app_resource):
-        """Sets the app_resource of this AppFilterDto.
+        r"""Sets the app_resource of this AppFilterDto.
 
         :param app_resource: The app_resource of this AppFilterDto.
         :type app_resource: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -155,7 +155,7 @@ class AppFilterDto:
 
     @property
     def app_node_labels(self):
-        """Gets the app_node_labels of this AppFilterDto.
+        r"""Gets the app_node_labels of this AppFilterDto.
 
         计算节点标签
 
@@ -166,7 +166,7 @@ class AppFilterDto:
 
     @app_node_labels.setter
     def app_node_labels(self, app_node_labels):
-        """Sets the app_node_labels of this AppFilterDto.
+        r"""Sets the app_node_labels of this AppFilterDto.
 
         计算节点标签
 

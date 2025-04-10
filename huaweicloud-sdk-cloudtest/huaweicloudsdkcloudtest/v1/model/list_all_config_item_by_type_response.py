@@ -28,7 +28,7 @@ class ListAllConfigItemByTypeResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ListAllConfigItemByTypeResponse
+        r"""ListAllConfigItemByTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllConfigItemByTypeResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListAllConfigItemByTypeResponse.
+        r"""Gets the error_code of this ListAllConfigItemByTypeResponse.
 
         错误编码
 
@@ -62,7 +62,7 @@ class ListAllConfigItemByTypeResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListAllConfigItemByTypeResponse.
+        r"""Sets the error_code of this ListAllConfigItemByTypeResponse.
 
         错误编码
 
@@ -73,7 +73,7 @@ class ListAllConfigItemByTypeResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListAllConfigItemByTypeResponse.
+        r"""Gets the error_msg of this ListAllConfigItemByTypeResponse.
 
         错误原因
 
@@ -84,7 +84,7 @@ class ListAllConfigItemByTypeResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListAllConfigItemByTypeResponse.
+        r"""Sets the error_msg of this ListAllConfigItemByTypeResponse.
 
         错误原因
 

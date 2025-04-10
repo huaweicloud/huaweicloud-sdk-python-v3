@@ -31,7 +31,7 @@ class ListStatusStatisticRequest:
     }
 
     def __init__(self, project_id=None, iteration_id=None, tracker_id=None, status_id=None):
-        """ListStatusStatisticRequest
+        r"""ListStatusStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListStatusStatisticRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListStatusStatisticRequest.
+        r"""Gets the project_id of this ListStatusStatisticRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class ListStatusStatisticRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListStatusStatisticRequest.
+        r"""Sets the project_id of this ListStatusStatisticRequest.
 
         devcloud项目的32位id
 
@@ -82,7 +82,7 @@ class ListStatusStatisticRequest:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this ListStatusStatisticRequest.
+        r"""Gets the iteration_id of this ListStatusStatisticRequest.
 
         迭代数字id
 
@@ -93,7 +93,7 @@ class ListStatusStatisticRequest:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this ListStatusStatisticRequest.
+        r"""Sets the iteration_id of this ListStatusStatisticRequest.
 
         迭代数字id
 
@@ -104,7 +104,7 @@ class ListStatusStatisticRequest:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this ListStatusStatisticRequest.
+        r"""Gets the tracker_id of this ListStatusStatisticRequest.
 
         自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,7Story
 
@@ -115,7 +115,7 @@ class ListStatusStatisticRequest:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this ListStatusStatisticRequest.
+        r"""Sets the tracker_id of this ListStatusStatisticRequest.
 
         自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,7Story
 
@@ -126,7 +126,7 @@ class ListStatusStatisticRequest:
 
     @property
     def status_id(self):
-        """Gets the status_id of this ListStatusStatisticRequest.
+        r"""Gets the status_id of this ListStatusStatisticRequest.
 
         工作项状态数字id
 
@@ -137,7 +137,7 @@ class ListStatusStatisticRequest:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this ListStatusStatisticRequest.
+        r"""Sets the status_id of this ListStatusStatisticRequest.
 
         工作项状态数字id
 

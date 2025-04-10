@@ -27,7 +27,7 @@ class CreatePortTagRequest:
     }
 
     def __init__(self, port_id=None, body=None):
-        """CreatePortTagRequest
+        r"""CreatePortTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePortTagRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this CreatePortTagRequest.
+        r"""Gets the port_id of this CreatePortTagRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -60,7 +60,7 @@ class CreatePortTagRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this CreatePortTagRequest.
+        r"""Sets the port_id of this CreatePortTagRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -71,7 +71,7 @@ class CreatePortTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePortTagRequest.
+        r"""Gets the body of this CreatePortTagRequest.
 
         :return: The body of this CreatePortTagRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreatePortTagRequestBody`
@@ -80,7 +80,7 @@ class CreatePortTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePortTagRequest.
+        r"""Sets the body of this CreatePortTagRequest.
 
         :param body: The body of this CreatePortTagRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CreatePortTagRequestBody`

@@ -37,7 +37,7 @@ class CreatePipeRequestBody:
     }
 
     def __init__(self, dataspace_id=None, pipe_name=None, description=None, storage_period=None, shards=None, timestamp_field=None, mapping=None):
-        """CreatePipeRequestBody
+        r"""CreatePipeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreatePipeRequestBody:
 
     @property
     def dataspace_id(self):
-        """Gets the dataspace_id of this CreatePipeRequestBody.
+        r"""Gets the dataspace_id of this CreatePipeRequestBody.
 
         工作空间ID
 
@@ -92,7 +92,7 @@ class CreatePipeRequestBody:
 
     @dataspace_id.setter
     def dataspace_id(self, dataspace_id):
-        """Sets the dataspace_id of this CreatePipeRequestBody.
+        r"""Sets the dataspace_id of this CreatePipeRequestBody.
 
         工作空间ID
 
@@ -103,7 +103,7 @@ class CreatePipeRequestBody:
 
     @property
     def pipe_name(self):
-        """Gets the pipe_name of this CreatePipeRequestBody.
+        r"""Gets the pipe_name of this CreatePipeRequestBody.
 
         数据管道名称
 
@@ -114,7 +114,7 @@ class CreatePipeRequestBody:
 
     @pipe_name.setter
     def pipe_name(self, pipe_name):
-        """Sets the pipe_name of this CreatePipeRequestBody.
+        r"""Sets the pipe_name of this CreatePipeRequestBody.
 
         数据管道名称
 
@@ -125,7 +125,7 @@ class CreatePipeRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePipeRequestBody.
+        r"""Gets the description of this CreatePipeRequestBody.
 
         描述
 
@@ -136,7 +136,7 @@ class CreatePipeRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePipeRequestBody.
+        r"""Sets the description of this CreatePipeRequestBody.
 
         描述
 
@@ -147,7 +147,7 @@ class CreatePipeRequestBody:
 
     @property
     def storage_period(self):
-        """Gets the storage_period of this CreatePipeRequestBody.
+        r"""Gets the storage_period of this CreatePipeRequestBody.
 
         数据的保存时间，单位为天；默认30天，取值范围为1~3600
 
@@ -158,7 +158,7 @@ class CreatePipeRequestBody:
 
     @storage_period.setter
     def storage_period(self, storage_period):
-        """Sets the storage_period of this CreatePipeRequestBody.
+        r"""Sets the storage_period of this CreatePipeRequestBody.
 
         数据的保存时间，单位为天；默认30天，取值范围为1~3600
 
@@ -169,7 +169,7 @@ class CreatePipeRequestBody:
 
     @property
     def shards(self):
-        """Gets the shards of this CreatePipeRequestBody.
+        r"""Gets the shards of this CreatePipeRequestBody.
 
         数据管道分区个数；默认创建1个，最大支持创建64个分区
 
@@ -180,7 +180,7 @@ class CreatePipeRequestBody:
 
     @shards.setter
     def shards(self, shards):
-        """Sets the shards of this CreatePipeRequestBody.
+        r"""Sets the shards of this CreatePipeRequestBody.
 
         数据管道分区个数；默认创建1个，最大支持创建64个分区
 
@@ -191,7 +191,7 @@ class CreatePipeRequestBody:
 
     @property
     def timestamp_field(self):
-        """Gets the timestamp_field of this CreatePipeRequestBody.
+        r"""Gets the timestamp_field of this CreatePipeRequestBody.
 
         时间戳字段
 
@@ -202,7 +202,7 @@ class CreatePipeRequestBody:
 
     @timestamp_field.setter
     def timestamp_field(self, timestamp_field):
-        """Sets the timestamp_field of this CreatePipeRequestBody.
+        r"""Sets the timestamp_field of this CreatePipeRequestBody.
 
         时间戳字段
 
@@ -213,7 +213,7 @@ class CreatePipeRequestBody:
 
     @property
     def mapping(self):
-        """Gets the mapping of this CreatePipeRequestBody.
+        r"""Gets the mapping of this CreatePipeRequestBody.
 
         索引字段映射；每个key对象承载一个字段的信息；存在多个key对象，key可变，表示字段名称；可嵌套
 
@@ -224,7 +224,7 @@ class CreatePipeRequestBody:
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this CreatePipeRequestBody.
+        r"""Sets the mapping of this CreatePipeRequestBody.
 
         索引字段映射；每个key对象承载一个字段的信息；存在多个key对象，key可变，表示字段名称；可嵌套
 

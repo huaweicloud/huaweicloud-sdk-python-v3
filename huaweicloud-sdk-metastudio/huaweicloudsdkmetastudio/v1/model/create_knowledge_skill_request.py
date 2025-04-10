@@ -27,7 +27,7 @@ class CreateKnowledgeSkillRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateKnowledgeSkillRequest
+        r"""CreateKnowledgeSkillRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateKnowledgeSkillRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateKnowledgeSkillRequest.
+        r"""Gets the x_app_user_id of this CreateKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateKnowledgeSkillRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateKnowledgeSkillRequest.
+        r"""Sets the x_app_user_id of this CreateKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateKnowledgeSkillRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateKnowledgeSkillRequest.
+        r"""Gets the body of this CreateKnowledgeSkillRequest.
 
         :return: The body of this CreateKnowledgeSkillRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeSkillReq`
@@ -81,7 +81,7 @@ class CreateKnowledgeSkillRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateKnowledgeSkillRequest.
+        r"""Sets the body of this CreateKnowledgeSkillRequest.
 
         :param body: The body of this CreateKnowledgeSkillRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeSkillReq`

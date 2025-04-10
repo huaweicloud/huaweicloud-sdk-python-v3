@@ -30,7 +30,7 @@ class CreateResJobsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """CreateResJobsResponse
+        r"""CreateResJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateResJobsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateResJobsResponse.
+        r"""Gets the is_success of this CreateResJobsResponse.
 
         请求是否成功
 
@@ -69,7 +69,7 @@ class CreateResJobsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateResJobsResponse.
+        r"""Sets the is_success of this CreateResJobsResponse.
 
         请求是否成功
 
@@ -80,7 +80,7 @@ class CreateResJobsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateResJobsResponse.
+        r"""Gets the message of this CreateResJobsResponse.
 
         返回消息
 
@@ -91,7 +91,7 @@ class CreateResJobsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateResJobsResponse.
+        r"""Sets the message of this CreateResJobsResponse.
 
         返回消息
 
@@ -102,7 +102,7 @@ class CreateResJobsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateResJobsResponse.
+        r"""Gets the error_code of this CreateResJobsResponse.
 
         错误码（请求成功时，不返回此字段）
 
@@ -113,7 +113,7 @@ class CreateResJobsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateResJobsResponse.
+        r"""Sets the error_code of this CreateResJobsResponse.
 
         错误码（请求成功时，不返回此字段）
 

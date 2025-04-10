@@ -29,7 +29,7 @@ class ExecuteSessionRequest:
     }
 
     def __init__(self, qabot_id=None, session_id=None, body=None):
-        """ExecuteSessionRequest
+        r"""ExecuteSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteSessionRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this ExecuteSessionRequest.
+        r"""Gets the qabot_id of this ExecuteSessionRequest.
 
         机器人标识符。
 
@@ -66,7 +66,7 @@ class ExecuteSessionRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this ExecuteSessionRequest.
+        r"""Sets the qabot_id of this ExecuteSessionRequest.
 
         机器人标识符。
 
@@ -77,7 +77,7 @@ class ExecuteSessionRequest:
 
     @property
     def session_id(self):
-        """Gets the session_id of this ExecuteSessionRequest.
+        r"""Gets the session_id of this ExecuteSessionRequest.
 
         会话标识符。
 
@@ -88,7 +88,7 @@ class ExecuteSessionRequest:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this ExecuteSessionRequest.
+        r"""Sets the session_id of this ExecuteSessionRequest.
 
         会话标识符。
 
@@ -99,7 +99,7 @@ class ExecuteSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteSessionRequest.
+        r"""Gets the body of this ExecuteSessionRequest.
 
         :return: The body of this ExecuteSessionRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`
@@ -108,7 +108,7 @@ class ExecuteSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteSessionRequest.
+        r"""Sets the body of this ExecuteSessionRequest.
 
         :param body: The body of this ExecuteSessionRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`

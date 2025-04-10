@@ -29,7 +29,7 @@ class DeleteLogLtsConfigsRequest:
     }
 
     def __init__(self, engine=None, x_language=None, body=None):
-        """DeleteLogLtsConfigsRequest
+        r"""DeleteLogLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteLogLtsConfigsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this DeleteLogLtsConfigsRequest.
+        r"""Gets the engine of this DeleteLogLtsConfigsRequest.
 
         引擎。
 
@@ -67,7 +67,7 @@ class DeleteLogLtsConfigsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this DeleteLogLtsConfigsRequest.
+        r"""Sets the engine of this DeleteLogLtsConfigsRequest.
 
         引擎。
 
@@ -78,7 +78,7 @@ class DeleteLogLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteLogLtsConfigsRequest.
+        r"""Gets the x_language of this DeleteLogLtsConfigsRequest.
 
         语言。
 
@@ -89,7 +89,7 @@ class DeleteLogLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteLogLtsConfigsRequest.
+        r"""Sets the x_language of this DeleteLogLtsConfigsRequest.
 
         语言。
 
@@ -100,7 +100,7 @@ class DeleteLogLtsConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteLogLtsConfigsRequest.
+        r"""Gets the body of this DeleteLogLtsConfigsRequest.
 
         :return: The body of this DeleteLogLtsConfigsRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteLogConfigResponseBody`
@@ -109,7 +109,7 @@ class DeleteLogLtsConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteLogLtsConfigsRequest.
+        r"""Sets the body of this DeleteLogLtsConfigsRequest.
 
         :param body: The body of this DeleteLogLtsConfigsRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DeleteLogConfigResponseBody`

@@ -35,7 +35,7 @@ class NeutronListRoutersRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, status=None, tenant_id=None, admin_state_up=None):
-        """NeutronListRoutersRequest
+        r"""NeutronListRoutersRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NeutronListRoutersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListRoutersRequest.
+        r"""Gets the limit of this NeutronListRoutersRequest.
 
         每页返回的个数
 
@@ -89,7 +89,7 @@ class NeutronListRoutersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListRoutersRequest.
+        r"""Sets the limit of this NeutronListRoutersRequest.
 
         每页返回的个数
 
@@ -100,7 +100,7 @@ class NeutronListRoutersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListRoutersRequest.
+        r"""Gets the marker of this NeutronListRoutersRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -111,7 +111,7 @@ class NeutronListRoutersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListRoutersRequest.
+        r"""Sets the marker of this NeutronListRoutersRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -122,7 +122,7 @@ class NeutronListRoutersRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListRoutersRequest.
+        r"""Gets the id of this NeutronListRoutersRequest.
 
         按照路由器的ID过滤查询
 
@@ -133,7 +133,7 @@ class NeutronListRoutersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListRoutersRequest.
+        r"""Sets the id of this NeutronListRoutersRequest.
 
         按照路由器的ID过滤查询
 
@@ -144,7 +144,7 @@ class NeutronListRoutersRequest:
 
     @property
     def status(self):
-        """Gets the status of this NeutronListRoutersRequest.
+        r"""Gets the status of this NeutronListRoutersRequest.
 
         按照路由器的状态过滤查询，取值范围：ACTIVE， DOWN，ERROR
 
@@ -155,7 +155,7 @@ class NeutronListRoutersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronListRoutersRequest.
+        r"""Sets the status of this NeutronListRoutersRequest.
 
         按照路由器的状态过滤查询，取值范围：ACTIVE， DOWN，ERROR
 
@@ -166,7 +166,7 @@ class NeutronListRoutersRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListRoutersRequest.
+        r"""Gets the tenant_id of this NeutronListRoutersRequest.
 
         按照路由器所属的项目ID过滤查询
 
@@ -177,7 +177,7 @@ class NeutronListRoutersRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListRoutersRequest.
+        r"""Sets the tenant_id of this NeutronListRoutersRequest.
 
         按照路由器所属的项目ID过滤查询
 
@@ -188,7 +188,7 @@ class NeutronListRoutersRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronListRoutersRequest.
+        r"""Gets the admin_state_up of this NeutronListRoutersRequest.
 
         按照路由器的管理状态过滤查询，取值范围：true or false
 
@@ -199,7 +199,7 @@ class NeutronListRoutersRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronListRoutersRequest.
+        r"""Sets the admin_state_up of this NeutronListRoutersRequest.
 
         按照路由器的管理状态过滤查询，取值范围：true or false
 

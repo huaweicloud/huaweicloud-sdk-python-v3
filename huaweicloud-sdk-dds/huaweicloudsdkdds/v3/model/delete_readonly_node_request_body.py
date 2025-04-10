@@ -25,7 +25,7 @@ class DeleteReadonlyNodeRequestBody:
     }
 
     def __init__(self, node_list=None):
-        """DeleteReadonlyNodeRequestBody
+        r"""DeleteReadonlyNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteReadonlyNodeRequestBody:
 
     @property
     def node_list(self):
-        """Gets the node_list of this DeleteReadonlyNodeRequestBody.
+        r"""Gets the node_list of this DeleteReadonlyNodeRequestBody.
 
         所有需要删除的节点ID。
 
@@ -53,7 +53,7 @@ class DeleteReadonlyNodeRequestBody:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this DeleteReadonlyNodeRequestBody.
+        r"""Sets the node_list of this DeleteReadonlyNodeRequestBody.
 
         所有需要删除的节点ID。
 

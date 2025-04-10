@@ -29,7 +29,7 @@ class ConformancePackCompliance:
     }
 
     def __init__(self, policy_assignment_id=None, policy_assignment_name=None, policy_assignment_compliance=None):
-        """ConformancePackCompliance
+        r"""ConformancePackCompliance
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConformancePackCompliance:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ConformancePackCompliance.
+        r"""Gets the policy_assignment_id of this ConformancePackCompliance.
 
         合规规则ID。
 
@@ -68,7 +68,7 @@ class ConformancePackCompliance:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ConformancePackCompliance.
+        r"""Sets the policy_assignment_id of this ConformancePackCompliance.
 
         合规规则ID。
 
@@ -79,7 +79,7 @@ class ConformancePackCompliance:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this ConformancePackCompliance.
+        r"""Gets the policy_assignment_name of this ConformancePackCompliance.
 
         合规规则名称。
 
@@ -90,7 +90,7 @@ class ConformancePackCompliance:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this ConformancePackCompliance.
+        r"""Sets the policy_assignment_name of this ConformancePackCompliance.
 
         合规规则名称。
 
@@ -101,7 +101,7 @@ class ConformancePackCompliance:
 
     @property
     def policy_assignment_compliance(self):
-        """Gets the policy_assignment_compliance of this ConformancePackCompliance.
+        r"""Gets the policy_assignment_compliance of this ConformancePackCompliance.
 
         合规规则合规结果。
 
@@ -112,7 +112,7 @@ class ConformancePackCompliance:
 
     @policy_assignment_compliance.setter
     def policy_assignment_compliance(self, policy_assignment_compliance):
-        """Sets the policy_assignment_compliance of this ConformancePackCompliance.
+        r"""Sets the policy_assignment_compliance of this ConformancePackCompliance.
 
         合规规则合规结果。
 

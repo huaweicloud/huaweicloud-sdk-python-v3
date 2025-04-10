@@ -25,7 +25,7 @@ class RunIefJobActionCallBackRequest:
     }
 
     def __init__(self, body=None):
-        """RunIefJobActionCallBackRequest
+        r"""RunIefJobActionCallBackRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunIefJobActionCallBackRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunIefJobActionCallBackRequest.
+        r"""Gets the body of this RunIefJobActionCallBackRequest.
 
         :return: The body of this RunIefJobActionCallBackRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequestBody`
@@ -52,7 +52,7 @@ class RunIefJobActionCallBackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunIefJobActionCallBackRequest.
+        r"""Sets the body of this RunIefJobActionCallBackRequest.
 
         :param body: The body of this RunIefJobActionCallBackRequest.
         :type body: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequestBody`

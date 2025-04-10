@@ -25,7 +25,7 @@ class RunEntityLinkingRequest:
     }
 
     def __init__(self, body=None):
-        """RunEntityLinkingRequest
+        r"""RunEntityLinkingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunEntityLinkingRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunEntityLinkingRequest.
+        r"""Gets the body of this RunEntityLinkingRequest.
 
         :return: The body of this RunEntityLinkingRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`
@@ -52,7 +52,7 @@ class RunEntityLinkingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunEntityLinkingRequest.
+        r"""Sets the body of this RunEntityLinkingRequest.
 
         :param body: The body of this RunEntityLinkingRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`

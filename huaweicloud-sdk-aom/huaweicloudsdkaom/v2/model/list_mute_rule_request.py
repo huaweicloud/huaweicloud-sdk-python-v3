@@ -23,7 +23,7 @@ class ListMuteRuleRequest:
     }
 
     def __init__(self):
-        """ListMuteRuleRequest
+        r"""ListMuteRuleRequest
 
         The model defined in huaweicloud sdk
 

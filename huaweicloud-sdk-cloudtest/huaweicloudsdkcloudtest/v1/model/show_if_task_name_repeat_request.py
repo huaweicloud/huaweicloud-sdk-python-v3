@@ -29,7 +29,7 @@ class ShowIfTaskNameRepeatRequest:
     }
 
     def __init__(self, service_id=None, id=None, name=None):
-        """ShowIfTaskNameRepeatRequest
+        r"""ShowIfTaskNameRepeatRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowIfTaskNameRepeatRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowIfTaskNameRepeatRequest.
+        r"""Gets the service_id of this ShowIfTaskNameRepeatRequest.
 
         服务id
 
@@ -66,7 +66,7 @@ class ShowIfTaskNameRepeatRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowIfTaskNameRepeatRequest.
+        r"""Sets the service_id of this ShowIfTaskNameRepeatRequest.
 
         服务id
 
@@ -77,7 +77,7 @@ class ShowIfTaskNameRepeatRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowIfTaskNameRepeatRequest.
+        r"""Gets the id of this ShowIfTaskNameRepeatRequest.
 
         UUID
 
@@ -88,7 +88,7 @@ class ShowIfTaskNameRepeatRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowIfTaskNameRepeatRequest.
+        r"""Sets the id of this ShowIfTaskNameRepeatRequest.
 
         UUID
 
@@ -99,7 +99,7 @@ class ShowIfTaskNameRepeatRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowIfTaskNameRepeatRequest.
+        r"""Gets the name of this ShowIfTaskNameRepeatRequest.
 
         查询的模板名称
 
@@ -110,7 +110,7 @@ class ShowIfTaskNameRepeatRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowIfTaskNameRepeatRequest.
+        r"""Sets the name of this ShowIfTaskNameRepeatRequest.
 
         查询的模板名称
 

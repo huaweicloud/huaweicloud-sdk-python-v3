@@ -31,7 +31,7 @@ class SummaryReq:
     }
 
     def __init__(self, content=None, lang=None, length_limit=None, title=None):
-        """SummaryReq
+        r"""SummaryReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SummaryReq:
 
     @property
     def content(self):
-        """Gets the content of this SummaryReq.
+        r"""Gets the content of this SummaryReq.
 
         文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
@@ -74,7 +74,7 @@ class SummaryReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this SummaryReq.
+        r"""Sets the content of this SummaryReq.
 
         文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
@@ -85,7 +85,7 @@ class SummaryReq:
 
     @property
     def lang(self):
-        """Gets the lang of this SummaryReq.
+        r"""Gets the lang of this SummaryReq.
 
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
@@ -96,7 +96,7 @@ class SummaryReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this SummaryReq.
+        r"""Sets the lang of this SummaryReq.
 
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
@@ -107,7 +107,7 @@ class SummaryReq:
 
     @property
     def length_limit(self):
-        """Gets the length_limit of this SummaryReq.
+        r"""Gets the length_limit of this SummaryReq.
 
         生成摘要的长度限制。length_limit > 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 <= length_limit <= 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。 默认数值为0.3。
 
@@ -118,7 +118,7 @@ class SummaryReq:
 
     @length_limit.setter
     def length_limit(self, length_limit):
-        """Sets the length_limit of this SummaryReq.
+        r"""Sets the length_limit of this SummaryReq.
 
         生成摘要的长度限制。length_limit > 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 <= length_limit <= 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。 默认数值为0.3。
 
@@ -129,7 +129,7 @@ class SummaryReq:
 
     @property
     def title(self):
-        """Gets the title of this SummaryReq.
+        r"""Gets the title of this SummaryReq.
 
         文本标题（目前仅支持UTF-8编码），长度不超过1000字。
 
@@ -140,7 +140,7 @@ class SummaryReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this SummaryReq.
+        r"""Sets the title of this SummaryReq.
 
         文本标题（目前仅支持UTF-8编码），长度不超过1000字。
 

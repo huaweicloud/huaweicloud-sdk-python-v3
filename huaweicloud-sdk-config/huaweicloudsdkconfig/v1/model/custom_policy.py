@@ -29,7 +29,7 @@ class CustomPolicy:
     }
 
     def __init__(self, function_urn=None, auth_type=None, auth_value=None):
-        """CustomPolicy
+        r"""CustomPolicy
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CustomPolicy:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this CustomPolicy.
+        r"""Gets the function_urn of this CustomPolicy.
 
         自定义函数的urn
 
@@ -66,7 +66,7 @@ class CustomPolicy:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this CustomPolicy.
+        r"""Sets the function_urn of this CustomPolicy.
 
         自定义函数的urn
 
@@ -77,7 +77,7 @@ class CustomPolicy:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this CustomPolicy.
+        r"""Gets the auth_type of this CustomPolicy.
 
         自定义合规规则调用function方式
 
@@ -88,7 +88,7 @@ class CustomPolicy:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this CustomPolicy.
+        r"""Sets the auth_type of this CustomPolicy.
 
         自定义合规规则调用function方式
 
@@ -99,7 +99,7 @@ class CustomPolicy:
 
     @property
     def auth_value(self):
-        """Gets the auth_value of this CustomPolicy.
+        r"""Gets the auth_value of this CustomPolicy.
 
         method参数值，method为agency时，为{\"agency_name\":rms_fg_agency}, rms_fg_agency为授权Config调用FunctionGraph接口的委托名称
 
@@ -110,7 +110,7 @@ class CustomPolicy:
 
     @auth_value.setter
     def auth_value(self, auth_value):
-        """Sets the auth_value of this CustomPolicy.
+        r"""Sets the auth_value of this CustomPolicy.
 
         method参数值，method为agency时，为{\"agency_name\":rms_fg_agency}, rms_fg_agency为授权Config调用FunctionGraph接口的委托名称
 

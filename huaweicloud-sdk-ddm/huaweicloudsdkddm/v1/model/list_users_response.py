@@ -34,7 +34,7 @@ class ListUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, page_no=None, page_size=None, total_record=None, total_page=None):
-        """ListUsersResponse
+        r"""ListUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListUsersResponse.
+        r"""Gets the users of this ListUsersResponse.
 
         DDM实例帐号相关信息的集合。
 
@@ -83,7 +83,7 @@ class ListUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListUsersResponse.
+        r"""Sets the users of this ListUsersResponse.
 
         DDM实例帐号相关信息的集合。
 
@@ -94,7 +94,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListUsersResponse.
+        r"""Gets the page_no of this ListUsersResponse.
 
         当前页码
 
@@ -105,7 +105,7 @@ class ListUsersResponse(SdkResponse):
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListUsersResponse.
+        r"""Sets the page_no of this ListUsersResponse.
 
         当前页码
 
@@ -116,7 +116,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListUsersResponse.
+        r"""Gets the page_size of this ListUsersResponse.
 
         当前页码的数据条数
 
@@ -127,7 +127,7 @@ class ListUsersResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListUsersResponse.
+        r"""Sets the page_size of this ListUsersResponse.
 
         当前页码的数据条数
 
@@ -138,7 +138,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListUsersResponse.
+        r"""Gets the total_record of this ListUsersResponse.
 
         总条数
 
@@ -149,7 +149,7 @@ class ListUsersResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListUsersResponse.
+        r"""Sets the total_record of this ListUsersResponse.
 
         总条数
 
@@ -160,7 +160,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ListUsersResponse.
+        r"""Gets the total_page of this ListUsersResponse.
 
         总页数
 
@@ -171,7 +171,7 @@ class ListUsersResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ListUsersResponse.
+        r"""Sets the total_page of this ListUsersResponse.
 
         总页数
 

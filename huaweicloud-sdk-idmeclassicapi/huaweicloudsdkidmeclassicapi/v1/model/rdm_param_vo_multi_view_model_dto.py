@@ -27,7 +27,7 @@ class RDMParamVOMultiViewModelDTO:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOMultiViewModelDTO
+        r"""RDMParamVOMultiViewModelDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOMultiViewModelDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOMultiViewModelDTO.
+        r"""Gets the application_id of this RDMParamVOMultiViewModelDTO.
 
         应用ID。
 
@@ -61,7 +61,7 @@ class RDMParamVOMultiViewModelDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOMultiViewModelDTO.
+        r"""Sets the application_id of this RDMParamVOMultiViewModelDTO.
 
         应用ID。
 
@@ -72,7 +72,7 @@ class RDMParamVOMultiViewModelDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOMultiViewModelDTO.
+        r"""Gets the params of this RDMParamVOMultiViewModelDTO.
 
         :return: The params of this RDMParamVOMultiViewModelDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelCreateDTO`
@@ -81,7 +81,7 @@ class RDMParamVOMultiViewModelDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOMultiViewModelDTO.
+        r"""Sets the params of this RDMParamVOMultiViewModelDTO.
 
         :param params: The params of this RDMParamVOMultiViewModelDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelCreateDTO`

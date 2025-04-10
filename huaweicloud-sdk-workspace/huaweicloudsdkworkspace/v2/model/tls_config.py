@@ -29,7 +29,7 @@ class TlsConfig:
     }
 
     def __init__(self, cert_pem=None, cert_start_time=None, cert_end_time=None):
-        """TlsConfig
+        r"""TlsConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TlsConfig:
 
     @property
     def cert_pem(self):
-        """Gets the cert_pem of this TlsConfig.
+        r"""Gets the cert_pem of this TlsConfig.
 
         pem内容, 有则更新，无则上传。查询不返回。
 
@@ -68,7 +68,7 @@ class TlsConfig:
 
     @cert_pem.setter
     def cert_pem(self, cert_pem):
-        """Sets the cert_pem of this TlsConfig.
+        r"""Sets the cert_pem of this TlsConfig.
 
         pem内容, 有则更新，无则上传。查询不返回。
 
@@ -79,7 +79,7 @@ class TlsConfig:
 
     @property
     def cert_start_time(self):
-        """Gets the cert_start_time of this TlsConfig.
+        r"""Gets the cert_start_time of this TlsConfig.
 
         证书生效开始时间，时间参考样例 2022-01-25T09:24:27。
 
@@ -90,7 +90,7 @@ class TlsConfig:
 
     @cert_start_time.setter
     def cert_start_time(self, cert_start_time):
-        """Sets the cert_start_time of this TlsConfig.
+        r"""Sets the cert_start_time of this TlsConfig.
 
         证书生效开始时间，时间参考样例 2022-01-25T09:24:27。
 
@@ -101,7 +101,7 @@ class TlsConfig:
 
     @property
     def cert_end_time(self):
-        """Gets the cert_end_time of this TlsConfig.
+        r"""Gets the cert_end_time of this TlsConfig.
 
         证书生效截止时间，时间参考样例 2022-01-25T09:24:27。
 
@@ -112,7 +112,7 @@ class TlsConfig:
 
     @cert_end_time.setter
     def cert_end_time(self, cert_end_time):
-        """Sets the cert_end_time of this TlsConfig.
+        r"""Sets the cert_end_time of this TlsConfig.
 
         证书生效截止时间，时间参考样例 2022-01-25T09:24:27。
 

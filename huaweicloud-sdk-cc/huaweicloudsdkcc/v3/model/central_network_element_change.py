@@ -29,7 +29,7 @@ class CentralNetworkElementChange:
     }
 
     def __init__(self, operation_id=None):
-        """CentralNetworkElementChange
+        r"""CentralNetworkElementChange
 
         The model defined in huaweicloud sdk
 
@@ -46,7 +46,7 @@ class CentralNetworkElementChange:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this CentralNetworkElementChange.
+        r"""Gets the operation_id of this CentralNetworkElementChange.
 
         实例状态。 - CreateCentralNetworkPlane: 新增中心网络平面 - DeleteCentralNetworkPlane: 移除中心网络平面 - UpdateCentralNetworkPlane: 更新中心网络平面 - CreateCentralNetworkErInstance: 新增中心网络ER实例 - DeleteCentralNetworkErInstance: 移除中心网络ER实例 - CreateCentralNetworkErConnection: 新增中心网络ER连接 - DeleteCentralNetworkErConnection: 移除中心网络ER连接 - CreateCentralNetworkErTable: 新增中心网络ER路由表 - DeleteCentralNetworkErTable: 移除中心网络ER路由表
 
@@ -57,7 +57,7 @@ class CentralNetworkElementChange:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this CentralNetworkElementChange.
+        r"""Sets the operation_id of this CentralNetworkElementChange.
 
         实例状态。 - CreateCentralNetworkPlane: 新增中心网络平面 - DeleteCentralNetworkPlane: 移除中心网络平面 - UpdateCentralNetworkPlane: 更新中心网络平面 - CreateCentralNetworkErInstance: 新增中心网络ER实例 - DeleteCentralNetworkErInstance: 移除中心网络ER实例 - CreateCentralNetworkErConnection: 新增中心网络ER连接 - DeleteCentralNetworkErConnection: 移除中心网络ER连接 - CreateCentralNetworkErTable: 新增中心网络ER路由表 - DeleteCentralNetworkErTable: 移除中心网络ER路由表
 

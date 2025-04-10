@@ -25,7 +25,7 @@ class UpdateDbUserReq:
     }
 
     def __init__(self, comment=None):
-        """UpdateDbUserReq
+        r"""UpdateDbUserReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDbUserReq:
 
     @property
     def comment(self):
-        """Gets the comment of this UpdateDbUserReq.
+        r"""Gets the comment of this UpdateDbUserReq.
 
         数据库用户备注。
 
@@ -54,7 +54,7 @@ class UpdateDbUserReq:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UpdateDbUserReq.
+        r"""Sets the comment of this UpdateDbUserReq.
 
         数据库用户备注。
 

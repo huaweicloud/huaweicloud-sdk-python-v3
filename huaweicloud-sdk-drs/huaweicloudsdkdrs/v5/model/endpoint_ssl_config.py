@@ -33,7 +33,7 @@ class EndpointSslConfig:
     }
 
     def __init__(self, ssl_link=None, ssl_cert_name=None, ssl_cert_key=None, ssl_cert_check_sum=None, ssl_cert_password=None):
-        """EndpointSslConfig
+        r"""EndpointSslConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EndpointSslConfig:
 
     @property
     def ssl_link(self):
-        """Gets the ssl_link of this EndpointSslConfig.
+        r"""Gets the ssl_link of this EndpointSslConfig.
 
         是否SSL安全连接。如果数据库启用了SSL安全连接，参数值为true。
 
@@ -82,7 +82,7 @@ class EndpointSslConfig:
 
     @ssl_link.setter
     def ssl_link(self, ssl_link):
-        """Sets the ssl_link of this EndpointSslConfig.
+        r"""Sets the ssl_link of this EndpointSslConfig.
 
         是否SSL安全连接。如果数据库启用了SSL安全连接，参数值为true。
 
@@ -93,7 +93,7 @@ class EndpointSslConfig:
 
     @property
     def ssl_cert_name(self):
-        """Gets the ssl_cert_name of this EndpointSslConfig.
+        r"""Gets the ssl_cert_name of this EndpointSslConfig.
 
         SSL证书名字。
 
@@ -104,7 +104,7 @@ class EndpointSslConfig:
 
     @ssl_cert_name.setter
     def ssl_cert_name(self, ssl_cert_name):
-        """Sets the ssl_cert_name of this EndpointSslConfig.
+        r"""Sets the ssl_cert_name of this EndpointSslConfig.
 
         SSL证书名字。
 
@@ -115,7 +115,7 @@ class EndpointSslConfig:
 
     @property
     def ssl_cert_key(self):
-        """Gets the ssl_cert_key of this EndpointSslConfig.
+        r"""Gets the ssl_cert_key of this EndpointSslConfig.
 
         SSL证书内容，用base64加密。
 
@@ -126,7 +126,7 @@ class EndpointSslConfig:
 
     @ssl_cert_key.setter
     def ssl_cert_key(self, ssl_cert_key):
-        """Sets the ssl_cert_key of this EndpointSslConfig.
+        r"""Sets the ssl_cert_key of this EndpointSslConfig.
 
         SSL证书内容，用base64加密。
 
@@ -137,7 +137,7 @@ class EndpointSslConfig:
 
     @property
     def ssl_cert_check_sum(self):
-        """Gets the ssl_cert_check_sum of this EndpointSslConfig.
+        r"""Gets the ssl_cert_check_sum of this EndpointSslConfig.
 
         SSL证书内容checksum值，后端校验，源库安全连接必选。
 
@@ -148,7 +148,7 @@ class EndpointSslConfig:
 
     @ssl_cert_check_sum.setter
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
-        """Sets the ssl_cert_check_sum of this EndpointSslConfig.
+        r"""Sets the ssl_cert_check_sum of this EndpointSslConfig.
 
         SSL证书内容checksum值，后端校验，源库安全连接必选。
 
@@ -159,7 +159,7 @@ class EndpointSslConfig:
 
     @property
     def ssl_cert_password(self):
-        """Gets the ssl_cert_password of this EndpointSslConfig.
+        r"""Gets the ssl_cert_password of this EndpointSslConfig.
 
         SSL证书密码，证书文件后缀为.p12时必填。
 
@@ -170,7 +170,7 @@ class EndpointSslConfig:
 
     @ssl_cert_password.setter
     def ssl_cert_password(self, ssl_cert_password):
-        """Sets the ssl_cert_password of this EndpointSslConfig.
+        r"""Sets the ssl_cert_password of this EndpointSslConfig.
 
         SSL证书密码，证书文件后缀为.p12时必填。
 

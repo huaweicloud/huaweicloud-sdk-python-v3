@@ -29,7 +29,7 @@ class StarRocksInstanceInfoOpsWindow:
     }
 
     def __init__(self, period=None, start_time=None, end_time=None):
-        """StarRocksInstanceInfoOpsWindow
+        r"""StarRocksInstanceInfoOpsWindow
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StarRocksInstanceInfoOpsWindow:
 
     @property
     def period(self):
-        """Gets the period of this StarRocksInstanceInfoOpsWindow.
+        r"""Gets the period of this StarRocksInstanceInfoOpsWindow.
 
         时间窗周期。
 
@@ -68,7 +68,7 @@ class StarRocksInstanceInfoOpsWindow:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this StarRocksInstanceInfoOpsWindow.
+        r"""Sets the period of this StarRocksInstanceInfoOpsWindow.
 
         时间窗周期。
 
@@ -79,7 +79,7 @@ class StarRocksInstanceInfoOpsWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StarRocksInstanceInfoOpsWindow.
+        r"""Gets the start_time of this StarRocksInstanceInfoOpsWindow.
 
         时间窗开始时间。
 
@@ -90,7 +90,7 @@ class StarRocksInstanceInfoOpsWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StarRocksInstanceInfoOpsWindow.
+        r"""Sets the start_time of this StarRocksInstanceInfoOpsWindow.
 
         时间窗开始时间。
 
@@ -101,7 +101,7 @@ class StarRocksInstanceInfoOpsWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StarRocksInstanceInfoOpsWindow.
+        r"""Gets the end_time of this StarRocksInstanceInfoOpsWindow.
 
         时间窗结束时间。
 
@@ -112,7 +112,7 @@ class StarRocksInstanceInfoOpsWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StarRocksInstanceInfoOpsWindow.
+        r"""Sets the end_time of this StarRocksInstanceInfoOpsWindow.
 
         时间窗结束时间。
 

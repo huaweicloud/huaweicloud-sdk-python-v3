@@ -23,7 +23,7 @@ class ListNatGatewayTagRequest:
     }
 
     def __init__(self):
-        """ListNatGatewayTagRequest
+        r"""ListNatGatewayTagRequest
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class ListFsTasksRequest:
     }
 
     def __init__(self, share_id=None, feature=None, marker=None, limit=None):
-        """ListFsTasksRequest
+        r"""ListFsTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListFsTasksRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ListFsTasksRequest.
+        r"""Gets the share_id of this ListFsTasksRequest.
 
         文件系统id
 
@@ -73,7 +73,7 @@ class ListFsTasksRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ListFsTasksRequest.
+        r"""Sets the share_id of this ListFsTasksRequest.
 
         文件系统id
 
@@ -84,7 +84,7 @@ class ListFsTasksRequest:
 
     @property
     def feature(self):
-        """Gets the feature of this ListFsTasksRequest.
+        r"""Gets the feature of this ListFsTasksRequest.
 
         任务类型。例，DU任务取值为dir-usage
 
@@ -95,7 +95,7 @@ class ListFsTasksRequest:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this ListFsTasksRequest.
+        r"""Sets the feature of this ListFsTasksRequest.
 
         任务类型。例，DU任务取值为dir-usage
 
@@ -106,7 +106,7 @@ class ListFsTasksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFsTasksRequest.
+        r"""Gets the marker of this ListFsTasksRequest.
 
         marker，取值为task_id
 
@@ -117,7 +117,7 @@ class ListFsTasksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFsTasksRequest.
+        r"""Sets the marker of this ListFsTasksRequest.
 
         marker，取值为task_id
 
@@ -128,7 +128,7 @@ class ListFsTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFsTasksRequest.
+        r"""Gets the limit of this ListFsTasksRequest.
 
         limit, 取值为正整数. 默认为20，最大值为100
 
@@ -139,7 +139,7 @@ class ListFsTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFsTasksRequest.
+        r"""Sets the limit of this ListFsTasksRequest.
 
         limit, 取值为正整数. 默认为20，最大值为100
 

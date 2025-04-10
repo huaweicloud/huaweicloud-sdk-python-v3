@@ -28,7 +28,7 @@ class DeleteGaussMySqlBackupResponse(SdkResponse):
     }
 
     def __init__(self, backup_id=None, backup_name=None):
-        """DeleteGaussMySqlBackupResponse
+        r"""DeleteGaussMySqlBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteGaussMySqlBackupResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteGaussMySqlBackupResponse.
+        r"""Gets the backup_id of this DeleteGaussMySqlBackupResponse.
 
         备份ID。
 
@@ -62,7 +62,7 @@ class DeleteGaussMySqlBackupResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteGaussMySqlBackupResponse.
+        r"""Sets the backup_id of this DeleteGaussMySqlBackupResponse.
 
         备份ID。
 
@@ -73,7 +73,7 @@ class DeleteGaussMySqlBackupResponse(SdkResponse):
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this DeleteGaussMySqlBackupResponse.
+        r"""Gets the backup_name of this DeleteGaussMySqlBackupResponse.
 
         备份名称。
 
@@ -84,7 +84,7 @@ class DeleteGaussMySqlBackupResponse(SdkResponse):
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this DeleteGaussMySqlBackupResponse.
+        r"""Sets the backup_name of this DeleteGaussMySqlBackupResponse.
 
         备份名称。
 

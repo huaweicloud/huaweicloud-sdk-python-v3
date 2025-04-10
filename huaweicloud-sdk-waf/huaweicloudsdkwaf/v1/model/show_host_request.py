@@ -27,7 +27,7 @@ class ShowHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, instance_id=None):
-        """ShowHostRequest
+        r"""ShowHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHostRequest.
+        r"""Gets the enterprise_project_id of this ShowHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -60,7 +60,7 @@ class ShowHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHostRequest.
+        r"""Sets the enterprise_project_id of this ShowHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -71,7 +71,7 @@ class ShowHostRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowHostRequest.
+        r"""Gets the instance_id of this ShowHostRequest.
 
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
@@ -82,7 +82,7 @@ class ShowHostRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowHostRequest.
+        r"""Sets the instance_id of this ShowHostRequest.
 
         域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 

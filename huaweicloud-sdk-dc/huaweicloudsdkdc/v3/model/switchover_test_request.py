@@ -25,7 +25,7 @@ class SwitchoverTestRequest:
     }
 
     def __init__(self, body=None):
-        """SwitchoverTestRequest
+        r"""SwitchoverTestRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SwitchoverTestRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchoverTestRequest.
+        r"""Gets the body of this SwitchoverTestRequest.
 
         :return: The body of this SwitchoverTestRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateSwitchoverTestRequestBody`
@@ -52,7 +52,7 @@ class SwitchoverTestRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchoverTestRequest.
+        r"""Sets the body of this SwitchoverTestRequest.
 
         :param body: The body of this SwitchoverTestRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateSwitchoverTestRequestBody`

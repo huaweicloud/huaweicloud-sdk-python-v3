@@ -60,7 +60,7 @@ class ShowEndpointResponse(SdkResponse):
     }
 
     def __init__(self, visibility=None, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, owner=None, cap=None, reserved_resource=None, ray_resource=None, error_code=None, error_msg=None, urls=None, log_config=None, business_engine_instance_ids=None, x_request_id=None):
-        """ShowEndpointResponse
+        r"""ShowEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this ShowEndpointResponse.
+        r"""Gets the visibility of this ShowEndpointResponse.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -167,7 +167,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ShowEndpointResponse.
+        r"""Sets the visibility of this ShowEndpointResponse.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -178,7 +178,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEndpointResponse.
+        r"""Gets the id of this ShowEndpointResponse.
 
         Endpoint Id，32~36位的英文、数字、短横组合。
 
@@ -189,7 +189,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEndpointResponse.
+        r"""Sets the id of this ShowEndpointResponse.
 
         Endpoint Id，32~36位的英文、数字、短横组合。
 
@@ -200,7 +200,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEndpointResponse.
+        r"""Gets the name of this ShowEndpointResponse.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -211,7 +211,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEndpointResponse.
+        r"""Sets the name of this ShowEndpointResponse.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -222,7 +222,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowEndpointResponse.
+        r"""Gets the type of this ShowEndpointResponse.
 
         :return: The type of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
@@ -231,7 +231,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowEndpointResponse.
+        r"""Sets the type of this ShowEndpointResponse.
 
         :param type: The type of this ShowEndpointResponse.
         :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
@@ -240,7 +240,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEndpointResponse.
+        r"""Gets the status of this ShowEndpointResponse.
 
         :return: The status of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
@@ -249,7 +249,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEndpointResponse.
+        r"""Sets the status of this ShowEndpointResponse.
 
         :param status: The status of this ShowEndpointResponse.
         :type status: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
@@ -258,7 +258,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEndpointResponse.
+        r"""Gets the description of this ShowEndpointResponse.
 
         描述信息
 
@@ -269,7 +269,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEndpointResponse.
+        r"""Sets the description of this ShowEndpointResponse.
 
         描述信息
 
@@ -280,7 +280,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowEndpointResponse.
+        r"""Gets the create_time of this ShowEndpointResponse.
 
         创建时间
 
@@ -291,7 +291,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowEndpointResponse.
+        r"""Sets the create_time of this ShowEndpointResponse.
 
         创建时间
 
@@ -302,7 +302,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowEndpointResponse.
+        r"""Gets the update_time of this ShowEndpointResponse.
 
         更新时间
 
@@ -313,7 +313,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowEndpointResponse.
+        r"""Sets the update_time of this ShowEndpointResponse.
 
         更新时间
 
@@ -324,7 +324,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowEndpointResponse.
+        r"""Gets the owner of this ShowEndpointResponse.
 
         :return: The owner of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -333,7 +333,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowEndpointResponse.
+        r"""Sets the owner of this ShowEndpointResponse.
 
         :param owner: The owner of this ShowEndpointResponse.
         :type owner: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -342,7 +342,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def cap(self):
-        """Gets the cap of this ShowEndpointResponse.
+        r"""Gets the cap of this ShowEndpointResponse.
 
         :return: The cap of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -351,7 +351,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @cap.setter
     def cap(self, cap):
-        """Sets the cap of this ShowEndpointResponse.
+        r"""Sets the cap of this ShowEndpointResponse.
 
         :param cap: The cap of this ShowEndpointResponse.
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -360,7 +360,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def reserved_resource(self):
-        """Gets the reserved_resource of this ShowEndpointResponse.
+        r"""Gets the reserved_resource of this ShowEndpointResponse.
 
         :return: The reserved_resource of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -369,7 +369,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @reserved_resource.setter
     def reserved_resource(self, reserved_resource):
-        """Sets the reserved_resource of this ShowEndpointResponse.
+        r"""Sets the reserved_resource of this ShowEndpointResponse.
 
         :param reserved_resource: The reserved_resource of this ShowEndpointResponse.
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -378,7 +378,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def ray_resource(self):
-        """Gets the ray_resource of this ShowEndpointResponse.
+        r"""Gets the ray_resource of this ShowEndpointResponse.
 
         :return: The ray_resource of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInfo`
@@ -387,7 +387,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @ray_resource.setter
     def ray_resource(self, ray_resource):
-        """Sets the ray_resource of this ShowEndpointResponse.
+        r"""Sets the ray_resource of this ShowEndpointResponse.
 
         :param ray_resource: The ray_resource of this ShowEndpointResponse.
         :type ray_resource: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInfo`
@@ -396,7 +396,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowEndpointResponse.
+        r"""Gets the error_code of this ShowEndpointResponse.
 
         失败状态时的错误编码
 
@@ -407,7 +407,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowEndpointResponse.
+        r"""Sets the error_code of this ShowEndpointResponse.
 
         失败状态时的错误编码
 
@@ -418,7 +418,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowEndpointResponse.
+        r"""Gets the error_msg of this ShowEndpointResponse.
 
         失败状态时的错误信息
 
@@ -429,7 +429,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowEndpointResponse.
+        r"""Sets the error_msg of this ShowEndpointResponse.
 
         失败状态时的错误信息
 
@@ -440,7 +440,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def urls(self):
-        """Gets the urls of this ShowEndpointResponse.
+        r"""Gets the urls of this ShowEndpointResponse.
 
         调用地址
 
@@ -451,7 +451,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this ShowEndpointResponse.
+        r"""Sets the urls of this ShowEndpointResponse.
 
         调用地址
 
@@ -462,7 +462,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def log_config(self):
-        """Gets the log_config of this ShowEndpointResponse.
+        r"""Gets the log_config of this ShowEndpointResponse.
 
         :return: The log_config of this ShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.LogConfigInfo`
@@ -471,7 +471,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @log_config.setter
     def log_config(self, log_config):
-        """Sets the log_config of this ShowEndpointResponse.
+        r"""Sets the log_config of this ShowEndpointResponse.
 
         :param log_config: The log_config of this ShowEndpointResponse.
         :type log_config: :class:`huaweicloudsdkdataartsfabric.v1.LogConfigInfo`
@@ -480,7 +480,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def business_engine_instance_ids(self):
-        """Gets the business_engine_instance_ids of this ShowEndpointResponse.
+        r"""Gets the business_engine_instance_ids of this ShowEndpointResponse.
 
         引擎实例id列表
 
@@ -491,7 +491,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @business_engine_instance_ids.setter
     def business_engine_instance_ids(self, business_engine_instance_ids):
-        """Sets the business_engine_instance_ids of this ShowEndpointResponse.
+        r"""Sets the business_engine_instance_ids of this ShowEndpointResponse.
 
         引擎实例id列表
 
@@ -502,7 +502,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowEndpointResponse.
+        r"""Gets the x_request_id of this ShowEndpointResponse.
 
         :return: The x_request_id of this ShowEndpointResponse.
         :rtype: str
@@ -511,7 +511,7 @@ class ShowEndpointResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowEndpointResponse.
+        r"""Sets the x_request_id of this ShowEndpointResponse.
 
         :param x_request_id: The x_request_id of this ShowEndpointResponse.
         :type x_request_id: str

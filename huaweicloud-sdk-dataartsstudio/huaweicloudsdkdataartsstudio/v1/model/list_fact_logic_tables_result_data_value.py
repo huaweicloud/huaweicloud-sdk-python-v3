@@ -27,7 +27,7 @@ class ListFactLogicTablesResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListFactLogicTablesResultDataValue
+        r"""ListFactLogicTablesResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFactLogicTablesResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListFactLogicTablesResultDataValue.
+        r"""Gets the total of this ListFactLogicTablesResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListFactLogicTablesResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFactLogicTablesResultDataValue.
+        r"""Sets the total of this ListFactLogicTablesResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListFactLogicTablesResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListFactLogicTablesResultDataValue.
+        r"""Gets the records of this ListFactLogicTablesResultDataValue.
 
         FactLogicTableVO信息。
 
@@ -83,7 +83,7 @@ class ListFactLogicTablesResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListFactLogicTablesResultDataValue.
+        r"""Sets the records of this ListFactLogicTablesResultDataValue.
 
         FactLogicTableVO信息。
 

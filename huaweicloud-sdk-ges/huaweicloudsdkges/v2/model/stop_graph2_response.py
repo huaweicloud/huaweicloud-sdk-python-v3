@@ -26,7 +26,7 @@ class StopGraph2Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StopGraph2Response
+        r"""StopGraph2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopGraph2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopGraph2Response.
+        r"""Gets the job_id of this StopGraph2Response.
 
         关闭图任务ID。请求失败时为空。
 
@@ -55,7 +55,7 @@ class StopGraph2Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopGraph2Response.
+        r"""Sets the job_id of this StopGraph2Response.
 
         关闭图任务ID。请求失败时为空。
 

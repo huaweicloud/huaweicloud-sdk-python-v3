@@ -27,7 +27,7 @@ class BatchImportAppReq:
     }
 
     def __init__(self, source_project_id=None, import_apps=None):
-        """BatchImportAppReq
+        r"""BatchImportAppReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchImportAppReq:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this BatchImportAppReq.
+        r"""Gets the source_project_id of this BatchImportAppReq.
 
         源项目id
 
@@ -59,7 +59,7 @@ class BatchImportAppReq:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this BatchImportAppReq.
+        r"""Sets the source_project_id of this BatchImportAppReq.
 
         源项目id
 
@@ -70,7 +70,7 @@ class BatchImportAppReq:
 
     @property
     def import_apps(self):
-        """Gets the import_apps of this BatchImportAppReq.
+        r"""Gets the import_apps of this BatchImportAppReq.
 
         源应用列表
 
@@ -81,7 +81,7 @@ class BatchImportAppReq:
 
     @import_apps.setter
     def import_apps(self, import_apps):
-        """Sets the import_apps of this BatchImportAppReq.
+        r"""Sets the import_apps of this BatchImportAppReq.
 
         源应用列表
 

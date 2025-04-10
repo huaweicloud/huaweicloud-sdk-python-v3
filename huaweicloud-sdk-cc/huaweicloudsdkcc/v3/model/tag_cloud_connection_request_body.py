@@ -25,7 +25,7 @@ class TagCloudConnectionRequestBody:
     }
 
     def __init__(self, tags=None):
-        """TagCloudConnectionRequestBody
+        r"""TagCloudConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TagCloudConnectionRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this TagCloudConnectionRequestBody.
+        r"""Gets the tags of this TagCloudConnectionRequestBody.
 
         包含标签。
 
@@ -53,7 +53,7 @@ class TagCloudConnectionRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagCloudConnectionRequestBody.
+        r"""Sets the tags of this TagCloudConnectionRequestBody.
 
         包含标签。
 

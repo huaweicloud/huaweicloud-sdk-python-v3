@@ -25,7 +25,7 @@ class DeleteFlinkSqlJobTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteFlinkSqlJobTemplateRequest
+        r"""DeleteFlinkSqlJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFlinkSqlJobTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteFlinkSqlJobTemplateRequest.
+        r"""Gets the template_id of this DeleteFlinkSqlJobTemplateRequest.
 
         模板ID。
 
@@ -53,7 +53,7 @@ class DeleteFlinkSqlJobTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteFlinkSqlJobTemplateRequest.
+        r"""Sets the template_id of this DeleteFlinkSqlJobTemplateRequest.
 
         模板ID。
 

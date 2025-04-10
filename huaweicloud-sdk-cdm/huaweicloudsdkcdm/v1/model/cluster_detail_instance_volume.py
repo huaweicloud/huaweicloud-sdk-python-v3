@@ -27,7 +27,7 @@ class ClusterDetailInstanceVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """ClusterDetailInstanceVolume
+        r"""ClusterDetailInstanceVolume
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterDetailInstanceVolume:
 
     @property
     def type(self):
-        """Gets the type of this ClusterDetailInstanceVolume.
+        r"""Gets the type of this ClusterDetailInstanceVolume.
 
         节点的磁盘类型，只支持本地磁盘
 
@@ -61,7 +61,7 @@ class ClusterDetailInstanceVolume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterDetailInstanceVolume.
+        r"""Sets the type of this ClusterDetailInstanceVolume.
 
         节点的磁盘类型，只支持本地磁盘
 
@@ -72,7 +72,7 @@ class ClusterDetailInstanceVolume:
 
     @property
     def size(self):
-        """Gets the size of this ClusterDetailInstanceVolume.
+        r"""Gets the size of this ClusterDetailInstanceVolume.
 
         节点磁盘大小，单位G。
 
@@ -83,7 +83,7 @@ class ClusterDetailInstanceVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ClusterDetailInstanceVolume.
+        r"""Sets the size of this ClusterDetailInstanceVolume.
 
         节点磁盘大小，单位G。
 

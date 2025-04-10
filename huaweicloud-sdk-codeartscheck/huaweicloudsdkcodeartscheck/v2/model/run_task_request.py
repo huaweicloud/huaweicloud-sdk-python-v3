@@ -27,7 +27,7 @@ class RunTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """RunTaskRequest
+        r"""RunTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this RunTaskRequest.
+        r"""Gets the task_id of this RunTaskRequest.
 
         任务ID
 
@@ -60,7 +60,7 @@ class RunTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this RunTaskRequest.
+        r"""Sets the task_id of this RunTaskRequest.
 
         任务ID
 
@@ -71,7 +71,7 @@ class RunTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunTaskRequest.
+        r"""Gets the body of this RunTaskRequest.
 
         :return: The body of this RunTaskRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.RunRequestV2`
@@ -80,7 +80,7 @@ class RunTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunTaskRequest.
+        r"""Sets the body of this RunTaskRequest.
 
         :param body: The body of this RunTaskRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.RunRequestV2`

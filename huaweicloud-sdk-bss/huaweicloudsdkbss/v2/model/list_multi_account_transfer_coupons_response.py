@@ -28,7 +28,7 @@ class ListMultiAccountTransferCouponsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, avail_transfer_coupons=None):
-        """ListMultiAccountTransferCouponsResponse
+        r"""ListMultiAccountTransferCouponsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMultiAccountTransferCouponsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListMultiAccountTransferCouponsResponse.
+        r"""Gets the total_count of this ListMultiAccountTransferCouponsResponse.
 
         记录条数。
 
@@ -62,7 +62,7 @@ class ListMultiAccountTransferCouponsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListMultiAccountTransferCouponsResponse.
+        r"""Sets the total_count of this ListMultiAccountTransferCouponsResponse.
 
         记录条数。
 
@@ -73,7 +73,7 @@ class ListMultiAccountTransferCouponsResponse(SdkResponse):
 
     @property
     def avail_transfer_coupons(self):
-        """Gets the avail_transfer_coupons of this ListMultiAccountTransferCouponsResponse.
+        r"""Gets the avail_transfer_coupons of this ListMultiAccountTransferCouponsResponse.
 
         可拨款优惠券记录。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListMultiAccountTransferCouponsResponse(SdkResponse):
 
     @avail_transfer_coupons.setter
     def avail_transfer_coupons(self, avail_transfer_coupons):
-        """Sets the avail_transfer_coupons of this ListMultiAccountTransferCouponsResponse.
+        r"""Sets the avail_transfer_coupons of this ListMultiAccountTransferCouponsResponse.
 
         可拨款优惠券记录。 具体请参见表2。
 

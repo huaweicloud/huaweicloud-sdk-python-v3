@@ -35,7 +35,7 @@ class CreateRecordRuleRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, body=None):
-        """CreateRecordRuleRequest
+        r"""CreateRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateRecordRuleRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateRecordRuleRequest.
+        r"""Gets the content_type of this CreateRecordRuleRequest.
 
         内容类型。
 
@@ -87,7 +87,7 @@ class CreateRecordRuleRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateRecordRuleRequest.
+        r"""Sets the content_type of this CreateRecordRuleRequest.
 
         内容类型。
 
@@ -98,7 +98,7 @@ class CreateRecordRuleRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreateRecordRuleRequest.
+        r"""Gets the authorization of this CreateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -109,7 +109,7 @@ class CreateRecordRuleRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreateRecordRuleRequest.
+        r"""Sets the authorization of this CreateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -120,7 +120,7 @@ class CreateRecordRuleRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this CreateRecordRuleRequest.
+        r"""Gets the x_sdk_date of this CreateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -131,7 +131,7 @@ class CreateRecordRuleRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this CreateRecordRuleRequest.
+        r"""Sets the x_sdk_date of this CreateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -142,7 +142,7 @@ class CreateRecordRuleRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this CreateRecordRuleRequest.
+        r"""Gets the x_project_id of this CreateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -153,7 +153,7 @@ class CreateRecordRuleRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this CreateRecordRuleRequest.
+        r"""Sets the x_project_id of this CreateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -164,7 +164,7 @@ class CreateRecordRuleRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateRecordRuleRequest.
+        r"""Gets the app_id of this CreateRecordRuleRequest.
 
         应用id
 
@@ -175,7 +175,7 @@ class CreateRecordRuleRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateRecordRuleRequest.
+        r"""Sets the app_id of this CreateRecordRuleRequest.
 
         应用id
 
@@ -186,7 +186,7 @@ class CreateRecordRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordRuleRequest.
+        r"""Gets the body of this CreateRecordRuleRequest.
 
         :return: The body of this CreateRecordRuleRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`
@@ -195,7 +195,7 @@ class CreateRecordRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordRuleRequest.
+        r"""Sets the body of this CreateRecordRuleRequest.
 
         :param body: The body of this CreateRecordRuleRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`

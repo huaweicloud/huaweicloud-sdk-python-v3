@@ -33,7 +33,7 @@ class CreateFirewallOption:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, tags=None, admin_state_up=None):
-        """CreateFirewallOption
+        r"""CreateFirewallOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateFirewallOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateFirewallOption.
+        r"""Gets the name of this CreateFirewallOption.
 
         功能说明：ACL名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -81,7 +81,7 @@ class CreateFirewallOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFirewallOption.
+        r"""Sets the name of this CreateFirewallOption.
 
         功能说明：ACL名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -92,7 +92,7 @@ class CreateFirewallOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateFirewallOption.
+        r"""Gets the description of this CreateFirewallOption.
 
         功能说明：ACL描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -103,7 +103,7 @@ class CreateFirewallOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateFirewallOption.
+        r"""Sets the description of this CreateFirewallOption.
 
         功能说明：ACL描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -114,7 +114,7 @@ class CreateFirewallOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateFirewallOption.
+        r"""Gets the enterprise_project_id of this CreateFirewallOption.
 
         功能说明：ACL企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -125,7 +125,7 @@ class CreateFirewallOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateFirewallOption.
+        r"""Sets the enterprise_project_id of this CreateFirewallOption.
 
         功能说明：ACL企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -136,7 +136,7 @@ class CreateFirewallOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateFirewallOption.
+        r"""Gets the tags of this CreateFirewallOption.
 
         功能描述：ACL资源标签
 
@@ -147,7 +147,7 @@ class CreateFirewallOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateFirewallOption.
+        r"""Sets the tags of this CreateFirewallOption.
 
         功能描述：ACL资源标签
 
@@ -158,7 +158,7 @@ class CreateFirewallOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateFirewallOption.
+        r"""Gets the admin_state_up of this CreateFirewallOption.
 
         功能说明：ACL是否开启，默认值true 取值范围：true表示ACL开启；false表示ACL关闭
 
@@ -169,7 +169,7 @@ class CreateFirewallOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateFirewallOption.
+        r"""Sets the admin_state_up of this CreateFirewallOption.
 
         功能说明：ACL是否开启，默认值true 取值范围：true表示ACL开启；false表示ACL关闭
 

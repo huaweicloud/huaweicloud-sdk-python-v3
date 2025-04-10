@@ -24,7 +24,7 @@ class UpdateRoomSettingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateRoomSettingResponse
+        r"""UpdateRoomSettingResponse
 
         The model defined in huaweicloud sdk
 

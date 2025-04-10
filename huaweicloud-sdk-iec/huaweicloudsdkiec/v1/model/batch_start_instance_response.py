@@ -26,7 +26,7 @@ class BatchStartInstanceResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """BatchStartInstanceResponse
+        r"""BatchStartInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStartInstanceResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchStartInstanceResponse.
+        r"""Gets the jobs of this BatchStartInstanceResponse.
 
         任务列表对象。
 
@@ -55,7 +55,7 @@ class BatchStartInstanceResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchStartInstanceResponse.
+        r"""Sets the jobs of this BatchStartInstanceResponse.
 
         任务列表对象。
 

@@ -33,7 +33,7 @@ class BatchScanSwrImageInfo:
     }
 
     def __init__(self, namespace=None, image_name=None, image_version=None, instance_id=None, instance_url=None):
-        """BatchScanSwrImageInfo
+        r"""BatchScanSwrImageInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BatchScanSwrImageInfo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this BatchScanSwrImageInfo.
+        r"""Gets the namespace of this BatchScanSwrImageInfo.
 
         命名空间
 
@@ -82,7 +82,7 @@ class BatchScanSwrImageInfo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this BatchScanSwrImageInfo.
+        r"""Sets the namespace of this BatchScanSwrImageInfo.
 
         命名空间
 
@@ -93,7 +93,7 @@ class BatchScanSwrImageInfo:
 
     @property
     def image_name(self):
-        """Gets the image_name of this BatchScanSwrImageInfo.
+        r"""Gets the image_name of this BatchScanSwrImageInfo.
 
         镜像名称
 
@@ -104,7 +104,7 @@ class BatchScanSwrImageInfo:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this BatchScanSwrImageInfo.
+        r"""Sets the image_name of this BatchScanSwrImageInfo.
 
         镜像名称
 
@@ -115,7 +115,7 @@ class BatchScanSwrImageInfo:
 
     @property
     def image_version(self):
-        """Gets the image_version of this BatchScanSwrImageInfo.
+        r"""Gets the image_version of this BatchScanSwrImageInfo.
 
         镜像版本
 
@@ -126,7 +126,7 @@ class BatchScanSwrImageInfo:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this BatchScanSwrImageInfo.
+        r"""Sets the image_version of this BatchScanSwrImageInfo.
 
         镜像版本
 
@@ -137,7 +137,7 @@ class BatchScanSwrImageInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchScanSwrImageInfo.
+        r"""Gets the instance_id of this BatchScanSwrImageInfo.
 
         企业实例ID
 
@@ -148,7 +148,7 @@ class BatchScanSwrImageInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchScanSwrImageInfo.
+        r"""Sets the instance_id of this BatchScanSwrImageInfo.
 
         企业实例ID
 
@@ -159,7 +159,7 @@ class BatchScanSwrImageInfo:
 
     @property
     def instance_url(self):
-        """Gets the instance_url of this BatchScanSwrImageInfo.
+        r"""Gets the instance_url of this BatchScanSwrImageInfo.
 
         下载企业镜像URL
 
@@ -170,7 +170,7 @@ class BatchScanSwrImageInfo:
 
     @instance_url.setter
     def instance_url(self, instance_url):
-        """Sets the instance_url of this BatchScanSwrImageInfo.
+        r"""Sets the instance_url of this BatchScanSwrImageInfo.
 
         下载企业镜像URL
 

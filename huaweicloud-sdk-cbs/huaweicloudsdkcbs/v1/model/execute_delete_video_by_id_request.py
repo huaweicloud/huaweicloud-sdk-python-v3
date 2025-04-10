@@ -25,7 +25,7 @@ class ExecuteDeleteVideoByIdRequest:
     }
 
     def __init__(self, video_id=None):
-        """ExecuteDeleteVideoByIdRequest
+        r"""ExecuteDeleteVideoByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteDeleteVideoByIdRequest:
 
     @property
     def video_id(self):
-        """Gets the video_id of this ExecuteDeleteVideoByIdRequest.
+        r"""Gets the video_id of this ExecuteDeleteVideoByIdRequest.
 
         视频id
 
@@ -53,7 +53,7 @@ class ExecuteDeleteVideoByIdRequest:
 
     @video_id.setter
     def video_id(self, video_id):
-        """Sets the video_id of this ExecuteDeleteVideoByIdRequest.
+        r"""Sets the video_id of this ExecuteDeleteVideoByIdRequest.
 
         视频id
 

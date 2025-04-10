@@ -41,7 +41,7 @@ class ListPlaybookVersionsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, playbook_id=None, status=None, enabled=None, version_type=None, approve_role=None, offset=None, limit=None):
-        """ListPlaybookVersionsRequest
+        r"""ListPlaybookVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookVersionsRequest.
+        r"""Gets the project_id of this ListPlaybookVersionsRequest.
 
         ID of project
 
@@ -107,7 +107,7 @@ class ListPlaybookVersionsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookVersionsRequest.
+        r"""Sets the project_id of this ListPlaybookVersionsRequest.
 
         ID of project
 
@@ -118,7 +118,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookVersionsRequest.
+        r"""Gets the workspace_id of this ListPlaybookVersionsRequest.
 
         ID of workspace
 
@@ -129,7 +129,7 @@ class ListPlaybookVersionsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookVersionsRequest.
+        r"""Sets the workspace_id of this ListPlaybookVersionsRequest.
 
         ID of workspace
 
@@ -140,7 +140,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this ListPlaybookVersionsRequest.
+        r"""Gets the playbook_id of this ListPlaybookVersionsRequest.
 
         ID of playbook
 
@@ -151,7 +151,7 @@ class ListPlaybookVersionsRequest:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this ListPlaybookVersionsRequest.
+        r"""Sets the playbook_id of this ListPlaybookVersionsRequest.
 
         ID of playbook
 
@@ -162,7 +162,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPlaybookVersionsRequest.
+        r"""Gets the status of this ListPlaybookVersionsRequest.
 
         剧本版本状态，编辑中：EDITING  审核中：APPROVING  不通过：UNPASSED 已发布：PUBLISHED
 
@@ -173,7 +173,7 @@ class ListPlaybookVersionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPlaybookVersionsRequest.
+        r"""Sets the status of this ListPlaybookVersionsRequest.
 
         剧本版本状态，编辑中：EDITING  审核中：APPROVING  不通过：UNPASSED 已发布：PUBLISHED
 
@@ -184,7 +184,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListPlaybookVersionsRequest.
+        r"""Gets the enabled of this ListPlaybookVersionsRequest.
 
         启用/禁用
 
@@ -195,7 +195,7 @@ class ListPlaybookVersionsRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListPlaybookVersionsRequest.
+        r"""Sets the enabled of this ListPlaybookVersionsRequest.
 
         启用/禁用
 
@@ -206,7 +206,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def version_type(self):
-        """Gets the version_type of this ListPlaybookVersionsRequest.
+        r"""Gets the version_type of this ListPlaybookVersionsRequest.
 
         版本类型， 草稿版本：0  正式版本：1
 
@@ -217,7 +217,7 @@ class ListPlaybookVersionsRequest:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this ListPlaybookVersionsRequest.
+        r"""Sets the version_type of this ListPlaybookVersionsRequest.
 
         版本类型， 草稿版本：0  正式版本：1
 
@@ -228,7 +228,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def approve_role(self):
-        """Gets the approve_role of this ListPlaybookVersionsRequest.
+        r"""Gets the approve_role of this ListPlaybookVersionsRequest.
 
         审核角色
 
@@ -239,7 +239,7 @@ class ListPlaybookVersionsRequest:
 
     @approve_role.setter
     def approve_role(self, approve_role):
-        """Sets the approve_role of this ListPlaybookVersionsRequest.
+        r"""Sets the approve_role of this ListPlaybookVersionsRequest.
 
         审核角色
 
@@ -250,7 +250,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybookVersionsRequest.
+        r"""Gets the offset of this ListPlaybookVersionsRequest.
 
         request offset, from 0
 
@@ -261,7 +261,7 @@ class ListPlaybookVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybookVersionsRequest.
+        r"""Sets the offset of this ListPlaybookVersionsRequest.
 
         request offset, from 0
 
@@ -272,7 +272,7 @@ class ListPlaybookVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybookVersionsRequest.
+        r"""Gets the limit of this ListPlaybookVersionsRequest.
 
         request limit size
 
@@ -283,7 +283,7 @@ class ListPlaybookVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybookVersionsRequest.
+        r"""Sets the limit of this ListPlaybookVersionsRequest.
 
         request limit size
 

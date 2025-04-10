@@ -25,7 +25,7 @@ class CreateVirtualInterfaceRequestBody:
     }
 
     def __init__(self, virtual_interface=None):
-        """CreateVirtualInterfaceRequestBody
+        r"""CreateVirtualInterfaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVirtualInterfaceRequestBody:
 
     @property
     def virtual_interface(self):
-        """Gets the virtual_interface of this CreateVirtualInterfaceRequestBody.
+        r"""Gets the virtual_interface of this CreateVirtualInterfaceRequestBody.
 
         :return: The virtual_interface of this CreateVirtualInterfaceRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVirtualInterface`
@@ -51,7 +51,7 @@ class CreateVirtualInterfaceRequestBody:
 
     @virtual_interface.setter
     def virtual_interface(self, virtual_interface):
-        """Sets the virtual_interface of this CreateVirtualInterfaceRequestBody.
+        r"""Sets the virtual_interface of this CreateVirtualInterfaceRequestBody.
 
         :param virtual_interface: The virtual_interface of this CreateVirtualInterfaceRequestBody.
         :type virtual_interface: :class:`huaweicloudsdkdc.v3.CreateVirtualInterface`

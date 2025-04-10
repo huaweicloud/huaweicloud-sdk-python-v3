@@ -25,7 +25,7 @@ class ImageTaggingResponseResult:
     }
 
     def __init__(self, tags=None):
-        """ImageTaggingResponseResult
+        r"""ImageTaggingResponseResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImageTaggingResponseResult:
 
     @property
     def tags(self):
-        """Gets the tags of this ImageTaggingResponseResult.
+        r"""Gets the tags of this ImageTaggingResponseResult.
 
         标签列表集合。
 
@@ -54,7 +54,7 @@ class ImageTaggingResponseResult:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ImageTaggingResponseResult.
+        r"""Sets the tags of this ImageTaggingResponseResult.
 
         标签列表集合。
 

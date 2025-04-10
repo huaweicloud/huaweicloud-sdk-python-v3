@@ -28,7 +28,7 @@ class DeleteCloudPhoneServerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, job_id=None):
-        """DeleteCloudPhoneServerResponse
+        r"""DeleteCloudPhoneServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteCloudPhoneServerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteCloudPhoneServerResponse.
+        r"""Gets the request_id of this DeleteCloudPhoneServerResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class DeleteCloudPhoneServerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteCloudPhoneServerResponse.
+        r"""Sets the request_id of this DeleteCloudPhoneServerResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class DeleteCloudPhoneServerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteCloudPhoneServerResponse.
+        r"""Gets the job_id of this DeleteCloudPhoneServerResponse.
 
         任务id。
 
@@ -84,7 +84,7 @@ class DeleteCloudPhoneServerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteCloudPhoneServerResponse.
+        r"""Sets the job_id of this DeleteCloudPhoneServerResponse.
 
         任务id。
 

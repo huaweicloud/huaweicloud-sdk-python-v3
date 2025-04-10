@@ -25,7 +25,7 @@ class CreateManualBackupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateManualBackupRequest
+        r"""CreateManualBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateManualBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateManualBackupRequest.
+        r"""Gets the body of this CreateManualBackupRequest.
 
         :return: The body of this CreateManualBackupRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequestBody`
@@ -52,7 +52,7 @@ class CreateManualBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateManualBackupRequest.
+        r"""Sets the body of this CreateManualBackupRequest.
 
         :param body: The body of this CreateManualBackupRequest.
         :type body: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequestBody`

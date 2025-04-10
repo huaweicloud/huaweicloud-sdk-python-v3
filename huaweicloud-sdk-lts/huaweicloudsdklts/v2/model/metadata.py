@@ -43,7 +43,7 @@ class Metadata:
     }
 
     def __init__(self, event_type=None, event_id=None, event_severity=None, event_name=None, resource_type=None, resource_id=None, resource_provider=None, lts_alarm_type=None, log_group_name=None, log_stream_name=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class Metadata:
 
     @property
     def event_type(self):
-        """Gets the event_type of this Metadata.
+        r"""Gets the event_type of this Metadata.
 
         告警类型
 
@@ -109,7 +109,7 @@ class Metadata:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this Metadata.
+        r"""Sets the event_type of this Metadata.
 
         告警类型
 
@@ -120,7 +120,7 @@ class Metadata:
 
     @property
     def event_id(self):
-        """Gets the event_id of this Metadata.
+        r"""Gets the event_id of this Metadata.
 
         告警id
 
@@ -131,7 +131,7 @@ class Metadata:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this Metadata.
+        r"""Sets the event_id of this Metadata.
 
         告警id
 
@@ -142,7 +142,7 @@ class Metadata:
 
     @property
     def event_severity(self):
-        """Gets the event_severity of this Metadata.
+        r"""Gets the event_severity of this Metadata.
 
         告警级别
 
@@ -153,7 +153,7 @@ class Metadata:
 
     @event_severity.setter
     def event_severity(self, event_severity):
-        """Sets the event_severity of this Metadata.
+        r"""Sets the event_severity of this Metadata.
 
         告警级别
 
@@ -164,7 +164,7 @@ class Metadata:
 
     @property
     def event_name(self):
-        """Gets the event_name of this Metadata.
+        r"""Gets the event_name of this Metadata.
 
         告警名称
 
@@ -175,7 +175,7 @@ class Metadata:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this Metadata.
+        r"""Sets the event_name of this Metadata.
 
         告警名称
 
@@ -186,7 +186,7 @@ class Metadata:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Metadata.
+        r"""Gets the resource_type of this Metadata.
 
         资源类型
 
@@ -197,7 +197,7 @@ class Metadata:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Metadata.
+        r"""Sets the resource_type of this Metadata.
 
         资源类型
 
@@ -208,7 +208,7 @@ class Metadata:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Metadata.
+        r"""Gets the resource_id of this Metadata.
 
         日志组/流名称
 
@@ -219,7 +219,7 @@ class Metadata:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Metadata.
+        r"""Sets the resource_id of this Metadata.
 
         日志组/流名称
 
@@ -230,7 +230,7 @@ class Metadata:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this Metadata.
+        r"""Gets the resource_provider of this Metadata.
 
         告警源
 
@@ -241,7 +241,7 @@ class Metadata:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this Metadata.
+        r"""Sets the resource_provider of this Metadata.
 
         告警源
 
@@ -252,7 +252,7 @@ class Metadata:
 
     @property
     def lts_alarm_type(self):
-        """Gets the lts_alarm_type of this Metadata.
+        r"""Gets the lts_alarm_type of this Metadata.
 
         告警规则类型(SQL/关键词)
 
@@ -263,7 +263,7 @@ class Metadata:
 
     @lts_alarm_type.setter
     def lts_alarm_type(self, lts_alarm_type):
-        """Sets the lts_alarm_type of this Metadata.
+        r"""Sets the lts_alarm_type of this Metadata.
 
         告警规则类型(SQL/关键词)
 
@@ -274,7 +274,7 @@ class Metadata:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this Metadata.
+        r"""Gets the log_group_name of this Metadata.
 
         日志组原始名称
 
@@ -285,7 +285,7 @@ class Metadata:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this Metadata.
+        r"""Sets the log_group_name of this Metadata.
 
         日志组原始名称
 
@@ -296,7 +296,7 @@ class Metadata:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this Metadata.
+        r"""Gets the log_stream_name of this Metadata.
 
         日志流原始名称
 
@@ -307,7 +307,7 @@ class Metadata:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this Metadata.
+        r"""Sets the log_stream_name of this Metadata.
 
         日志流原始名称
 

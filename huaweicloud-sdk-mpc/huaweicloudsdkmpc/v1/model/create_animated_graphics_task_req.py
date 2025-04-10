@@ -31,7 +31,7 @@ class CreateAnimatedGraphicsTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, output_param=None):
-        """CreateAnimatedGraphicsTaskReq
+        r"""CreateAnimatedGraphicsTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateAnimatedGraphicsTaskReq.
+        r"""Gets the input of this CreateAnimatedGraphicsTaskReq.
 
         :return: The input of this CreateAnimatedGraphicsTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -73,7 +73,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateAnimatedGraphicsTaskReq.
+        r"""Sets the input of this CreateAnimatedGraphicsTaskReq.
 
         :param input: The input of this CreateAnimatedGraphicsTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -82,7 +82,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateAnimatedGraphicsTaskReq.
+        r"""Gets the output of this CreateAnimatedGraphicsTaskReq.
 
         :return: The output of this CreateAnimatedGraphicsTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -91,7 +91,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateAnimatedGraphicsTaskReq.
+        r"""Sets the output of this CreateAnimatedGraphicsTaskReq.
 
         :param output: The output of this CreateAnimatedGraphicsTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -100,7 +100,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateAnimatedGraphicsTaskReq.
+        r"""Gets the user_data of this CreateAnimatedGraphicsTaskReq.
 
         用户自定义数据。 
 
@@ -111,7 +111,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateAnimatedGraphicsTaskReq.
+        r"""Sets the user_data of this CreateAnimatedGraphicsTaskReq.
 
         用户自定义数据。 
 
@@ -122,7 +122,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @property
     def output_param(self):
-        """Gets the output_param of this CreateAnimatedGraphicsTaskReq.
+        r"""Gets the output_param of this CreateAnimatedGraphicsTaskReq.
 
         :return: The output_param of this CreateAnimatedGraphicsTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
@@ -131,7 +131,7 @@ class CreateAnimatedGraphicsTaskReq:
 
     @output_param.setter
     def output_param(self, output_param):
-        """Sets the output_param of this CreateAnimatedGraphicsTaskReq.
+        r"""Sets the output_param of this CreateAnimatedGraphicsTaskReq.
 
         :param output_param: The output_param of this CreateAnimatedGraphicsTaskReq.
         :type output_param: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`

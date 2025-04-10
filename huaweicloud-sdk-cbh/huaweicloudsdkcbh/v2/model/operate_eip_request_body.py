@@ -25,7 +25,7 @@ class OperateEipRequestBody:
     }
 
     def __init__(self, publicip_id=None):
-        """OperateEipRequestBody
+        r"""OperateEipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OperateEipRequestBody:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this OperateEipRequestBody.
+        r"""Gets the publicip_id of this OperateEipRequestBody.
 
         弹性公网IP的ID,使用UUID格式。
 
@@ -53,7 +53,7 @@ class OperateEipRequestBody:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this OperateEipRequestBody.
+        r"""Sets the publicip_id of this OperateEipRequestBody.
 
         弹性公网IP的ID,使用UUID格式。
 

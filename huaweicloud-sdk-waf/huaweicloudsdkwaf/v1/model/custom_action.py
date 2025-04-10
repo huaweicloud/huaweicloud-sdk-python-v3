@@ -27,7 +27,7 @@ class CustomAction:
     }
 
     def __init__(self, category=None, followed_action_id=None):
-        """CustomAction
+        r"""CustomAction
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CustomAction:
 
     @property
     def category(self):
-        """Gets the category of this CustomAction.
+        r"""Gets the category of this CustomAction.
 
         操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
 
@@ -60,7 +60,7 @@ class CustomAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CustomAction.
+        r"""Sets the category of this CustomAction.
 
         操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
 
@@ -71,7 +71,7 @@ class CustomAction:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this CustomAction.
+        r"""Gets the followed_action_id of this CustomAction.
 
         攻击惩罚规则id，只有当category参数值为block时才可配置该参数
 
@@ -82,7 +82,7 @@ class CustomAction:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this CustomAction.
+        r"""Sets the followed_action_id of this CustomAction.
 
         攻击惩罚规则id，只有当category参数值为block时才可配置该参数
 

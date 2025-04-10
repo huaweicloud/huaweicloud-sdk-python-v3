@@ -29,7 +29,7 @@ class ModifyMySqlProxyRouteModeRequest:
     }
 
     def __init__(self, master_weight=None, readonly_instances=None, route_mode=None):
-        """ModifyMySqlProxyRouteModeRequest
+        r"""ModifyMySqlProxyRouteModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ModifyMySqlProxyRouteModeRequest:
 
     @property
     def master_weight(self):
-        """Gets the master_weight of this ModifyMySqlProxyRouteModeRequest.
+        r"""Gets the master_weight of this ModifyMySqlProxyRouteModeRequest.
 
         数据库主实例读权重。     - 当route_mode选择0（权重负载）时，该字段取值范围为0~1000。     - 当route_mode选择1或2（负载均衡）时，该字段不生效。
 
@@ -65,7 +65,7 @@ class ModifyMySqlProxyRouteModeRequest:
 
     @master_weight.setter
     def master_weight(self, master_weight):
-        """Sets the master_weight of this ModifyMySqlProxyRouteModeRequest.
+        r"""Sets the master_weight of this ModifyMySqlProxyRouteModeRequest.
 
         数据库主实例读权重。     - 当route_mode选择0（权重负载）时，该字段取值范围为0~1000。     - 当route_mode选择1或2（负载均衡）时，该字段不生效。
 
@@ -76,7 +76,7 @@ class ModifyMySqlProxyRouteModeRequest:
 
     @property
     def readonly_instances(self):
-        """Gets the readonly_instances of this ModifyMySqlProxyRouteModeRequest.
+        r"""Gets the readonly_instances of this ModifyMySqlProxyRouteModeRequest.
 
         数据库节点的读权重设置。      - 只能为只读实例选择权重。     - 该列表可以为空列表。
 
@@ -87,7 +87,7 @@ class ModifyMySqlProxyRouteModeRequest:
 
     @readonly_instances.setter
     def readonly_instances(self, readonly_instances):
-        """Sets the readonly_instances of this ModifyMySqlProxyRouteModeRequest.
+        r"""Sets the readonly_instances of this ModifyMySqlProxyRouteModeRequest.
 
         数据库节点的读权重设置。      - 只能为只读实例选择权重。     - 该列表可以为空列表。
 
@@ -98,7 +98,7 @@ class ModifyMySqlProxyRouteModeRequest:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this ModifyMySqlProxyRouteModeRequest.
+        r"""Gets the route_mode of this ModifyMySqlProxyRouteModeRequest.
 
         数据库代理路由模式。 取值范围:     0：表示权重负载模式。     1：表示负载均衡模式（数据库主实例不接受读请求）。     2：表示负载均衡模式（数据库主实例接受读请求）。      - 如需使用负载均衡模式，请联系客服申请
 
@@ -109,7 +109,7 @@ class ModifyMySqlProxyRouteModeRequest:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this ModifyMySqlProxyRouteModeRequest.
+        r"""Sets the route_mode of this ModifyMySqlProxyRouteModeRequest.
 
         数据库代理路由模式。 取值范围:     0：表示权重负载模式。     1：表示负载均衡模式（数据库主实例不接受读请求）。     2：表示负载均衡模式（数据库主实例接受读请求）。      - 如需使用负载均衡模式，请联系客服申请
 

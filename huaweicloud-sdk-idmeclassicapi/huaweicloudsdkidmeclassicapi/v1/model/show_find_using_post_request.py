@@ -47,7 +47,7 @@ class ShowFindUsingPostRequest:
     }
 
     def __init__(self, cur_page=None, end_index=None, max_page_size=None, page_size=None, start_index=None, total_pages=None, total_rows=None, page_size_path=None, cur_page_path=None, identifier=None, model_name=None, body=None):
-        """ShowFindUsingPostRequest
+        r"""ShowFindUsingPostRequest
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def cur_page(self):
-        """Gets the cur_page of this ShowFindUsingPostRequest.
+        r"""Gets the cur_page of this ShowFindUsingPostRequest.
 
         **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
@@ -127,7 +127,7 @@ class ShowFindUsingPostRequest:
 
     @cur_page.setter
     def cur_page(self, cur_page):
-        """Sets the cur_page of this ShowFindUsingPostRequest.
+        r"""Sets the cur_page of this ShowFindUsingPostRequest.
 
         **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
@@ -138,7 +138,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def end_index(self):
-        """Gets the end_index of this ShowFindUsingPostRequest.
+        r"""Gets the end_index of this ShowFindUsingPostRequest.
 
         **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -149,7 +149,7 @@ class ShowFindUsingPostRequest:
 
     @end_index.setter
     def end_index(self, end_index):
-        """Sets the end_index of this ShowFindUsingPostRequest.
+        r"""Sets the end_index of this ShowFindUsingPostRequest.
 
         **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -160,7 +160,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def max_page_size(self):
-        """Gets the max_page_size of this ShowFindUsingPostRequest.
+        r"""Gets the max_page_size of this ShowFindUsingPostRequest.
 
         **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
@@ -171,7 +171,7 @@ class ShowFindUsingPostRequest:
 
     @max_page_size.setter
     def max_page_size(self, max_page_size):
-        """Sets the max_page_size of this ShowFindUsingPostRequest.
+        r"""Sets the max_page_size of this ShowFindUsingPostRequest.
 
         **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
@@ -182,7 +182,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowFindUsingPostRequest.
+        r"""Gets the page_size of this ShowFindUsingPostRequest.
 
         **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
@@ -193,7 +193,7 @@ class ShowFindUsingPostRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowFindUsingPostRequest.
+        r"""Sets the page_size of this ShowFindUsingPostRequest.
 
         **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
@@ -204,7 +204,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def start_index(self):
-        """Gets the start_index of this ShowFindUsingPostRequest.
+        r"""Gets the start_index of this ShowFindUsingPostRequest.
 
         **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -215,7 +215,7 @@ class ShowFindUsingPostRequest:
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this ShowFindUsingPostRequest.
+        r"""Sets the start_index of this ShowFindUsingPostRequest.
 
         **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -226,7 +226,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def total_pages(self):
-        """Gets the total_pages of this ShowFindUsingPostRequest.
+        r"""Gets the total_pages of this ShowFindUsingPostRequest.
 
         **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -237,7 +237,7 @@ class ShowFindUsingPostRequest:
 
     @total_pages.setter
     def total_pages(self, total_pages):
-        """Sets the total_pages of this ShowFindUsingPostRequest.
+        r"""Sets the total_pages of this ShowFindUsingPostRequest.
 
         **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -248,7 +248,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def total_rows(self):
-        """Gets the total_rows of this ShowFindUsingPostRequest.
+        r"""Gets the total_rows of this ShowFindUsingPostRequest.
 
         **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -259,7 +259,7 @@ class ShowFindUsingPostRequest:
 
     @total_rows.setter
     def total_rows(self, total_rows):
-        """Sets the total_rows of this ShowFindUsingPostRequest.
+        r"""Sets the total_rows of this ShowFindUsingPostRequest.
 
         **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
@@ -270,7 +270,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def page_size_path(self):
-        """Gets the page_size_path of this ShowFindUsingPostRequest.
+        r"""Gets the page_size_path of this ShowFindUsingPostRequest.
 
         **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
@@ -281,7 +281,7 @@ class ShowFindUsingPostRequest:
 
     @page_size_path.setter
     def page_size_path(self, page_size_path):
-        """Sets the page_size_path of this ShowFindUsingPostRequest.
+        r"""Sets the page_size_path of this ShowFindUsingPostRequest.
 
         **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
@@ -292,7 +292,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def cur_page_path(self):
-        """Gets the cur_page_path of this ShowFindUsingPostRequest.
+        r"""Gets the cur_page_path of this ShowFindUsingPostRequest.
 
         **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
@@ -303,7 +303,7 @@ class ShowFindUsingPostRequest:
 
     @cur_page_path.setter
     def cur_page_path(self, cur_page_path):
-        """Sets the cur_page_path of this ShowFindUsingPostRequest.
+        r"""Sets the cur_page_path of this ShowFindUsingPostRequest.
 
         **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
@@ -314,7 +314,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ShowFindUsingPostRequest.
+        r"""Gets the identifier of this ShowFindUsingPostRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -325,7 +325,7 @@ class ShowFindUsingPostRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ShowFindUsingPostRequest.
+        r"""Sets the identifier of this ShowFindUsingPostRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -336,7 +336,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this ShowFindUsingPostRequest.
+        r"""Gets the model_name of this ShowFindUsingPostRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -347,7 +347,7 @@ class ShowFindUsingPostRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this ShowFindUsingPostRequest.
+        r"""Sets the model_name of this ShowFindUsingPostRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -358,7 +358,7 @@ class ShowFindUsingPostRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowFindUsingPostRequest.
+        r"""Gets the body of this ShowFindUsingPostRequest.
 
         :return: The body of this ShowFindUsingPostRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOQueryRequestVo`
@@ -367,7 +367,7 @@ class ShowFindUsingPostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowFindUsingPostRequest.
+        r"""Sets the body of this ShowFindUsingPostRequest.
 
         :param body: The body of this ShowFindUsingPostRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOQueryRequestVo`

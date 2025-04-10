@@ -29,7 +29,7 @@ class AddIndependentNodeRequest:
     }
 
     def __init__(self, cluster_id=None, type=None, body=None):
-        """AddIndependentNodeRequest
+        r"""AddIndependentNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddIndependentNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddIndependentNodeRequest.
+        r"""Gets the cluster_id of this AddIndependentNodeRequest.
 
         指定需要独立master或client的集群ID。
 
@@ -66,7 +66,7 @@ class AddIndependentNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddIndependentNodeRequest.
+        r"""Sets the cluster_id of this AddIndependentNodeRequest.
 
         指定需要独立master或client的集群ID。
 
@@ -77,7 +77,7 @@ class AddIndependentNodeRequest:
 
     @property
     def type(self):
-        """Gets the type of this AddIndependentNodeRequest.
+        r"""Gets the type of this AddIndependentNodeRequest.
 
         指定待新增独立节点类型。 - ess-master：Master节点。 - ess-client：Client节点。
 
@@ -88,7 +88,7 @@ class AddIndependentNodeRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddIndependentNodeRequest.
+        r"""Sets the type of this AddIndependentNodeRequest.
 
         指定待新增独立节点类型。 - ess-master：Master节点。 - ess-client：Client节点。
 
@@ -99,7 +99,7 @@ class AddIndependentNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddIndependentNodeRequest.
+        r"""Gets the body of this AddIndependentNodeRequest.
 
         :return: The body of this AddIndependentNodeRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.IndependentReq`
@@ -108,7 +108,7 @@ class AddIndependentNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddIndependentNodeRequest.
+        r"""Sets the body of this AddIndependentNodeRequest.
 
         :param body: The body of this AddIndependentNodeRequest.
         :type body: :class:`huaweicloudsdkcss.v1.IndependentReq`

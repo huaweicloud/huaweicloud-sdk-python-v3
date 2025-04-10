@@ -26,7 +26,7 @@ class ListAccessCodeResponse(SdkResponse):
     }
 
     def __init__(self, access_codes=None):
-        """ListAccessCodeResponse
+        r"""ListAccessCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAccessCodeResponse(SdkResponse):
 
     @property
     def access_codes(self):
-        """Gets the access_codes of this ListAccessCodeResponse.
+        r"""Gets the access_codes of this ListAccessCodeResponse.
 
         accessCodes。
 
@@ -55,7 +55,7 @@ class ListAccessCodeResponse(SdkResponse):
 
     @access_codes.setter
     def access_codes(self, access_codes):
-        """Sets the access_codes of this ListAccessCodeResponse.
+        r"""Sets the access_codes of this ListAccessCodeResponse.
 
         accessCodes。
 

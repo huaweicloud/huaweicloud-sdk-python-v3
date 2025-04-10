@@ -49,7 +49,7 @@ class ListDependencyVersionsResult:
     }
 
     def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, file_name=None, description=None, version=None, last_modified=None, dep_id=None, is_shared=None):
-        """ListDependencyVersionsResult
+        r"""ListDependencyVersionsResult
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListDependencyVersionsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListDependencyVersionsResult.
+        r"""Gets the id of this ListDependencyVersionsResult.
 
         依赖包版本ID
 
@@ -131,7 +131,7 @@ class ListDependencyVersionsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListDependencyVersionsResult.
+        r"""Sets the id of this ListDependencyVersionsResult.
 
         依赖包版本ID
 
@@ -142,7 +142,7 @@ class ListDependencyVersionsResult:
 
     @property
     def owner(self):
-        """Gets the owner of this ListDependencyVersionsResult.
+        r"""Gets the owner of this ListDependencyVersionsResult.
 
         依赖包拥有者，public标识为公共依赖包
 
@@ -153,7 +153,7 @@ class ListDependencyVersionsResult:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListDependencyVersionsResult.
+        r"""Sets the owner of this ListDependencyVersionsResult.
 
         依赖包拥有者，public标识为公共依赖包
 
@@ -164,7 +164,7 @@ class ListDependencyVersionsResult:
 
     @property
     def link(self):
-        """Gets the link of this ListDependencyVersionsResult.
+        r"""Gets the link of this ListDependencyVersionsResult.
 
         依赖包在obs的存储地址
 
@@ -175,7 +175,7 @@ class ListDependencyVersionsResult:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this ListDependencyVersionsResult.
+        r"""Sets the link of this ListDependencyVersionsResult.
 
         依赖包在obs的存储地址
 
@@ -186,7 +186,7 @@ class ListDependencyVersionsResult:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ListDependencyVersionsResult.
+        r"""Gets the runtime of this ListDependencyVersionsResult.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -197,7 +197,7 @@ class ListDependencyVersionsResult:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ListDependencyVersionsResult.
+        r"""Sets the runtime of this ListDependencyVersionsResult.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -208,7 +208,7 @@ class ListDependencyVersionsResult:
 
     @property
     def etag(self):
-        """Gets the etag of this ListDependencyVersionsResult.
+        r"""Gets the etag of this ListDependencyVersionsResult.
 
         依赖包唯一标志（MD5校验值）
 
@@ -219,7 +219,7 @@ class ListDependencyVersionsResult:
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this ListDependencyVersionsResult.
+        r"""Sets the etag of this ListDependencyVersionsResult.
 
         依赖包唯一标志（MD5校验值）
 
@@ -230,7 +230,7 @@ class ListDependencyVersionsResult:
 
     @property
     def size(self):
-        """Gets the size of this ListDependencyVersionsResult.
+        r"""Gets the size of this ListDependencyVersionsResult.
 
         依赖包大小
 
@@ -241,7 +241,7 @@ class ListDependencyVersionsResult:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDependencyVersionsResult.
+        r"""Sets the size of this ListDependencyVersionsResult.
 
         依赖包大小
 
@@ -252,7 +252,7 @@ class ListDependencyVersionsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListDependencyVersionsResult.
+        r"""Gets the name of this ListDependencyVersionsResult.
 
         依赖包名
 
@@ -263,7 +263,7 @@ class ListDependencyVersionsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDependencyVersionsResult.
+        r"""Sets the name of this ListDependencyVersionsResult.
 
         依赖包名
 
@@ -274,7 +274,7 @@ class ListDependencyVersionsResult:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListDependencyVersionsResult.
+        r"""Gets the file_name of this ListDependencyVersionsResult.
 
         依赖包文件名
 
@@ -285,7 +285,7 @@ class ListDependencyVersionsResult:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListDependencyVersionsResult.
+        r"""Sets the file_name of this ListDependencyVersionsResult.
 
         依赖包文件名
 
@@ -296,7 +296,7 @@ class ListDependencyVersionsResult:
 
     @property
     def description(self):
-        """Gets the description of this ListDependencyVersionsResult.
+        r"""Gets the description of this ListDependencyVersionsResult.
 
         依赖包描述。
 
@@ -307,7 +307,7 @@ class ListDependencyVersionsResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListDependencyVersionsResult.
+        r"""Sets the description of this ListDependencyVersionsResult.
 
         依赖包描述。
 
@@ -318,7 +318,7 @@ class ListDependencyVersionsResult:
 
     @property
     def version(self):
-        """Gets the version of this ListDependencyVersionsResult.
+        r"""Gets the version of this ListDependencyVersionsResult.
 
         依赖包版本号
 
@@ -329,7 +329,7 @@ class ListDependencyVersionsResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListDependencyVersionsResult.
+        r"""Sets the version of this ListDependencyVersionsResult.
 
         依赖包版本号
 
@@ -340,7 +340,7 @@ class ListDependencyVersionsResult:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ListDependencyVersionsResult.
+        r"""Gets the last_modified of this ListDependencyVersionsResult.
 
         依赖包更新时间
 
@@ -351,7 +351,7 @@ class ListDependencyVersionsResult:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ListDependencyVersionsResult.
+        r"""Sets the last_modified of this ListDependencyVersionsResult.
 
         依赖包更新时间
 
@@ -362,7 +362,7 @@ class ListDependencyVersionsResult:
 
     @property
     def dep_id(self):
-        """Gets the dep_id of this ListDependencyVersionsResult.
+        r"""Gets the dep_id of this ListDependencyVersionsResult.
 
         依赖包ID
 
@@ -373,7 +373,7 @@ class ListDependencyVersionsResult:
 
     @dep_id.setter
     def dep_id(self, dep_id):
-        """Sets the dep_id of this ListDependencyVersionsResult.
+        r"""Sets the dep_id of this ListDependencyVersionsResult.
 
         依赖包ID
 
@@ -384,7 +384,7 @@ class ListDependencyVersionsResult:
 
     @property
     def is_shared(self):
-        """Gets the is_shared of this ListDependencyVersionsResult.
+        r"""Gets the is_shared of this ListDependencyVersionsResult.
 
         是否共享（已废弃）
 
@@ -395,7 +395,7 @@ class ListDependencyVersionsResult:
 
     @is_shared.setter
     def is_shared(self, is_shared):
-        """Sets the is_shared of this ListDependencyVersionsResult.
+        r"""Sets the is_shared of this ListDependencyVersionsResult.
 
         是否共享（已废弃）
 

@@ -41,7 +41,7 @@ class MicroServiceInfo:
     }
 
     def __init__(self, id=None, instance_id=None, service_type=None, cse_info=None, cce_info=None, cce_service_info=None, nacos_info=None, update_time=None, create_time=None):
-        """MicroServiceInfo
+        r"""MicroServiceInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class MicroServiceInfo:
 
     @property
     def id(self):
-        """Gets the id of this MicroServiceInfo.
+        r"""Gets the id of this MicroServiceInfo.
 
         微服务编号
 
@@ -110,7 +110,7 @@ class MicroServiceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MicroServiceInfo.
+        r"""Sets the id of this MicroServiceInfo.
 
         微服务编号
 
@@ -121,7 +121,7 @@ class MicroServiceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MicroServiceInfo.
+        r"""Gets the instance_id of this MicroServiceInfo.
 
         实例编号
 
@@ -132,7 +132,7 @@ class MicroServiceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MicroServiceInfo.
+        r"""Sets the instance_id of this MicroServiceInfo.
 
         实例编号
 
@@ -143,7 +143,7 @@ class MicroServiceInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this MicroServiceInfo.
+        r"""Gets the service_type of this MicroServiceInfo.
 
         微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: nacos引擎，nacos_info必填
 
@@ -154,7 +154,7 @@ class MicroServiceInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this MicroServiceInfo.
+        r"""Sets the service_type of this MicroServiceInfo.
 
         微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: nacos引擎，nacos_info必填
 
@@ -165,7 +165,7 @@ class MicroServiceInfo:
 
     @property
     def cse_info(self):
-        """Gets the cse_info of this MicroServiceInfo.
+        r"""Gets the cse_info of this MicroServiceInfo.
 
         :return: The cse_info of this MicroServiceInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSE`
@@ -174,7 +174,7 @@ class MicroServiceInfo:
 
     @cse_info.setter
     def cse_info(self, cse_info):
-        """Sets the cse_info of this MicroServiceInfo.
+        r"""Sets the cse_info of this MicroServiceInfo.
 
         :param cse_info: The cse_info of this MicroServiceInfo.
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSE`
@@ -183,7 +183,7 @@ class MicroServiceInfo:
 
     @property
     def cce_info(self):
-        """Gets the cce_info of this MicroServiceInfo.
+        r"""Gets the cce_info of this MicroServiceInfo.
 
         :return: The cce_info of this MicroServiceInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCE`
@@ -192,7 +192,7 @@ class MicroServiceInfo:
 
     @cce_info.setter
     def cce_info(self, cce_info):
-        """Sets the cce_info of this MicroServiceInfo.
+        r"""Sets the cce_info of this MicroServiceInfo.
 
         :param cce_info: The cce_info of this MicroServiceInfo.
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCE`
@@ -201,7 +201,7 @@ class MicroServiceInfo:
 
     @property
     def cce_service_info(self):
-        """Gets the cce_service_info of this MicroServiceInfo.
+        r"""Gets the cce_service_info of this MicroServiceInfo.
 
         :return: The cce_service_info of this MicroServiceInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEService`
@@ -210,7 +210,7 @@ class MicroServiceInfo:
 
     @cce_service_info.setter
     def cce_service_info(self, cce_service_info):
-        """Sets the cce_service_info of this MicroServiceInfo.
+        r"""Sets the cce_service_info of this MicroServiceInfo.
 
         :param cce_service_info: The cce_service_info of this MicroServiceInfo.
         :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEService`
@@ -219,7 +219,7 @@ class MicroServiceInfo:
 
     @property
     def nacos_info(self):
-        """Gets the nacos_info of this MicroServiceInfo.
+        r"""Gets the nacos_info of this MicroServiceInfo.
 
         :return: The nacos_info of this MicroServiceInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
@@ -228,7 +228,7 @@ class MicroServiceInfo:
 
     @nacos_info.setter
     def nacos_info(self, nacos_info):
-        """Sets the nacos_info of this MicroServiceInfo.
+        r"""Sets the nacos_info of this MicroServiceInfo.
 
         :param nacos_info: The nacos_info of this MicroServiceInfo.
         :type nacos_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
@@ -237,7 +237,7 @@ class MicroServiceInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MicroServiceInfo.
+        r"""Gets the update_time of this MicroServiceInfo.
 
         微服务更新时间
 
@@ -248,7 +248,7 @@ class MicroServiceInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MicroServiceInfo.
+        r"""Sets the update_time of this MicroServiceInfo.
 
         微服务更新时间
 
@@ -259,7 +259,7 @@ class MicroServiceInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MicroServiceInfo.
+        r"""Gets the create_time of this MicroServiceInfo.
 
         微服务创建时间
 
@@ -270,7 +270,7 @@ class MicroServiceInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MicroServiceInfo.
+        r"""Sets the create_time of this MicroServiceInfo.
 
         微服务创建时间
 

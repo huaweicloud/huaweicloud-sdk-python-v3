@@ -25,7 +25,7 @@ class SwitchSlowlogDesensitizationRequestBody:
     }
 
     def __init__(self, desensitization_status=None):
-        """SwitchSlowlogDesensitizationRequestBody
+        r"""SwitchSlowlogDesensitizationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchSlowlogDesensitizationRequestBody:
 
     @property
     def desensitization_status(self):
-        """Gets the desensitization_status of this SwitchSlowlogDesensitizationRequestBody.
+        r"""Gets the desensitization_status of this SwitchSlowlogDesensitizationRequestBody.
 
         实例慢日志脱敏开关开启状态，取值： - off 关闭
 
@@ -53,7 +53,7 @@ class SwitchSlowlogDesensitizationRequestBody:
 
     @desensitization_status.setter
     def desensitization_status(self, desensitization_status):
-        """Sets the desensitization_status of this SwitchSlowlogDesensitizationRequestBody.
+        r"""Sets the desensitization_status of this SwitchSlowlogDesensitizationRequestBody.
 
         实例慢日志脱敏开关开启状态，取值： - off 关闭
 

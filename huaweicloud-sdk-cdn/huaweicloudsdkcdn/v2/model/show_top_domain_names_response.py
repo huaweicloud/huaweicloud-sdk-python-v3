@@ -26,7 +26,7 @@ class ShowTopDomainNamesResponse(SdkResponse):
     }
 
     def __init__(self, top_domain_names=None):
-        """ShowTopDomainNamesResponse
+        r"""ShowTopDomainNamesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTopDomainNamesResponse(SdkResponse):
 
     @property
     def top_domain_names(self):
-        """Gets the top_domain_names of this ShowTopDomainNamesResponse.
+        r"""Gets the top_domain_names of this ShowTopDomainNamesResponse.
 
         top域名信息
 
@@ -55,7 +55,7 @@ class ShowTopDomainNamesResponse(SdkResponse):
 
     @top_domain_names.setter
     def top_domain_names(self, top_domain_names):
-        """Sets the top_domain_names of this ShowTopDomainNamesResponse.
+        r"""Sets the top_domain_names of this ShowTopDomainNamesResponse.
 
         top域名信息
 

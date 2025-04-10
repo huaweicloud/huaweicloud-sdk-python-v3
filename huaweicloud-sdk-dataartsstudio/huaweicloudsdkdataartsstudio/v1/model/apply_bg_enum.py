@@ -29,7 +29,7 @@ class ApplyBgEnum:
     }
 
     def __init__(self):
-        """ApplyBgEnum
+        r"""ApplyBgEnum
 
         The model defined in huaweicloud sdk
 

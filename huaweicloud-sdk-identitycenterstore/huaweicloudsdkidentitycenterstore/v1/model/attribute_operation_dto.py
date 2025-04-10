@@ -28,7 +28,7 @@ class AttributeOperationDto:
     }
 
     def __init__(self, attribute_path=None, attribute_value=None):
-        """AttributeOperationDto
+        r"""AttributeOperationDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttributeOperationDto:
 
     @property
     def attribute_path(self):
-        """Gets the attribute_path of this AttributeOperationDto.
+        r"""Gets the attribute_path of this AttributeOperationDto.
 
         要更新的属性的字符串表示
 
@@ -61,7 +61,7 @@ class AttributeOperationDto:
 
     @attribute_path.setter
     def attribute_path(self, attribute_path):
-        """Sets the attribute_path of this AttributeOperationDto.
+        r"""Sets the attribute_path of this AttributeOperationDto.
 
         要更新的属性的字符串表示
 
@@ -72,7 +72,7 @@ class AttributeOperationDto:
 
     @property
     def attribute_value(self):
-        """Gets the attribute_value of this AttributeOperationDto.
+        r"""Gets the attribute_value of this AttributeOperationDto.
 
         要更新的属性值。当属性为对象类型时，此处填写对象的JSON字符串。为null时表示删除对应属性
 
@@ -83,7 +83,7 @@ class AttributeOperationDto:
 
     @attribute_value.setter
     def attribute_value(self, attribute_value):
-        """Sets the attribute_value of this AttributeOperationDto.
+        r"""Sets the attribute_value of this AttributeOperationDto.
 
         要更新的属性值。当属性为对象类型时，此处填写对象的JSON字符串。为null时表示删除对应属性
 

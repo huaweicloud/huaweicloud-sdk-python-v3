@@ -30,7 +30,7 @@ class ListSharesByTagResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, x_request_id=None):
-        """ListSharesByTagResponse
+        r"""ListSharesByTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSharesByTagResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListSharesByTagResponse.
+        r"""Gets the resources of this ListSharesByTagResponse.
 
         通过标签查询文件系统的资源列表
 
@@ -69,7 +69,7 @@ class ListSharesByTagResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListSharesByTagResponse.
+        r"""Sets the resources of this ListSharesByTagResponse.
 
         通过标签查询文件系统的资源列表
 
@@ -80,7 +80,7 @@ class ListSharesByTagResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSharesByTagResponse.
+        r"""Gets the total_count of this ListSharesByTagResponse.
 
         设置返回的文件系统的偏移量
 
@@ -91,7 +91,7 @@ class ListSharesByTagResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSharesByTagResponse.
+        r"""Sets the total_count of this ListSharesByTagResponse.
 
         设置返回的文件系统的偏移量
 
@@ -102,7 +102,7 @@ class ListSharesByTagResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSharesByTagResponse.
+        r"""Gets the x_request_id of this ListSharesByTagResponse.
 
         :return: The x_request_id of this ListSharesByTagResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSharesByTagResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSharesByTagResponse.
+        r"""Sets the x_request_id of this ListSharesByTagResponse.
 
         :param x_request_id: The x_request_id of this ListSharesByTagResponse.
         :type x_request_id: str

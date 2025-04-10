@@ -25,7 +25,7 @@ class CreateRelation:
     }
 
     def __init__(self, ids=None):
-        """CreateRelation
+        r"""CreateRelation
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRelation:
 
     @property
     def ids(self):
-        """Gets the ids of this CreateRelation.
+        r"""Gets the ids of this CreateRelation.
 
         search ids
 
@@ -54,7 +54,7 @@ class CreateRelation:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this CreateRelation.
+        r"""Sets the ids of this CreateRelation.
 
         search ids
 

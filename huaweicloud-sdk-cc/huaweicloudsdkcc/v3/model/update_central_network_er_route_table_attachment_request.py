@@ -29,7 +29,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
     }
 
     def __init__(self, central_network_id=None, er_route_table_attachment_id=None, body=None):
-        """UpdateCentralNetworkErRouteTableAttachmentRequest
+        r"""UpdateCentralNetworkErRouteTableAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the central_network_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络的ID。
 
@@ -66,7 +66,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the central_network_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络的ID。
 
@@ -77,7 +77,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def er_route_table_attachment_id(self):
-        """Gets the er_route_table_attachment_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the er_route_table_attachment_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络ER路由表附件ID。
 
@@ -88,7 +88,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
 
     @er_route_table_attachment_id.setter
     def er_route_table_attachment_id(self, er_route_table_attachment_id):
-        """Sets the er_route_table_attachment_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the er_route_table_attachment_id of this UpdateCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络ER路由表附件ID。
 
@@ -99,7 +99,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the body of this UpdateCentralNetworkErRouteTableAttachmentRequest.
 
         :return: The body of this UpdateCentralNetworkErRouteTableAttachmentRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkErRouteTableAttachmentRequestBody`
@@ -108,7 +108,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the body of this UpdateCentralNetworkErRouteTableAttachmentRequest.
 
         :param body: The body of this UpdateCentralNetworkErRouteTableAttachmentRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkErRouteTableAttachmentRequestBody`

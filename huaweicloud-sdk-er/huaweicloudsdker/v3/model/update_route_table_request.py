@@ -29,7 +29,7 @@ class UpdateRouteTableRequest:
     }
 
     def __init__(self, er_id=None, route_table_id=None, body=None):
-        """UpdateRouteTableRequest
+        r"""UpdateRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRouteTableRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this UpdateRouteTableRequest.
+        r"""Gets the er_id of this UpdateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -66,7 +66,7 @@ class UpdateRouteTableRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this UpdateRouteTableRequest.
+        r"""Sets the er_id of this UpdateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -77,7 +77,7 @@ class UpdateRouteTableRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this UpdateRouteTableRequest.
+        r"""Gets the route_table_id of this UpdateRouteTableRequest.
 
         路由表ID
 
@@ -88,7 +88,7 @@ class UpdateRouteTableRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this UpdateRouteTableRequest.
+        r"""Sets the route_table_id of this UpdateRouteTableRequest.
 
         路由表ID
 
@@ -99,7 +99,7 @@ class UpdateRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRouteTableRequest.
+        r"""Gets the body of this UpdateRouteTableRequest.
 
         :return: The body of this UpdateRouteTableRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteTableRequestBody`
@@ -108,7 +108,7 @@ class UpdateRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRouteTableRequest.
+        r"""Sets the body of this UpdateRouteTableRequest.
 
         :param body: The body of this UpdateRouteTableRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateRouteTableRequestBody`

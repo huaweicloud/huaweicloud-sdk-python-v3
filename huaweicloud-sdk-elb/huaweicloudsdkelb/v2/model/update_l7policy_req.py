@@ -33,7 +33,7 @@ class UpdateL7policyReq:
     }
 
     def __init__(self, name=None, admin_state_up=None, description=None, redirect_listener_id=None, redirect_pool_id=None):
-        """UpdateL7policyReq
+        r"""UpdateL7policyReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateL7policyReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateL7policyReq.
+        r"""Gets the name of this UpdateL7policyReq.
 
         转发策略名称
 
@@ -82,7 +82,7 @@ class UpdateL7policyReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateL7policyReq.
+        r"""Sets the name of this UpdateL7policyReq.
 
         转发策略名称
 
@@ -93,7 +93,7 @@ class UpdateL7policyReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateL7policyReq.
+        r"""Gets the admin_state_up of this UpdateL7policyReq.
 
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -104,7 +104,7 @@ class UpdateL7policyReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateL7policyReq.
+        r"""Sets the admin_state_up of this UpdateL7policyReq.
 
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -115,7 +115,7 @@ class UpdateL7policyReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateL7policyReq.
+        r"""Gets the description of this UpdateL7policyReq.
 
         转发策略额描述信息
 
@@ -126,7 +126,7 @@ class UpdateL7policyReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateL7policyReq.
+        r"""Sets the description of this UpdateL7policyReq.
 
         转发策略额描述信息
 
@@ -137,7 +137,7 @@ class UpdateL7policyReq:
 
     @property
     def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this UpdateL7policyReq.
+        r"""Gets the redirect_listener_id of this UpdateL7policyReq.
 
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
@@ -148,7 +148,7 @@ class UpdateL7policyReq:
 
     @redirect_listener_id.setter
     def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this UpdateL7policyReq.
+        r"""Sets the redirect_listener_id of this UpdateL7policyReq.
 
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
@@ -159,7 +159,7 @@ class UpdateL7policyReq:
 
     @property
     def redirect_pool_id(self):
-        """Gets the redirect_pool_id of this UpdateL7policyReq.
+        r"""Gets the redirect_pool_id of this UpdateL7policyReq.
 
         转发到pool的ID。当action为REDIRECT_TO_POOL时生效。使用说明：redirect_pool不能是listener的default_pool，不能已经被其他listener的l7policy所使用。当action为REDIRECT_TO_LISTENER时，不可指定。不允许更新为空。
 
@@ -170,7 +170,7 @@ class UpdateL7policyReq:
 
     @redirect_pool_id.setter
     def redirect_pool_id(self, redirect_pool_id):
-        """Sets the redirect_pool_id of this UpdateL7policyReq.
+        r"""Sets the redirect_pool_id of this UpdateL7policyReq.
 
         转发到pool的ID。当action为REDIRECT_TO_POOL时生效。使用说明：redirect_pool不能是listener的default_pool，不能已经被其他listener的l7policy所使用。当action为REDIRECT_TO_LISTENER时，不可指定。不允许更新为空。
 

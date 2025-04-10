@@ -26,7 +26,7 @@ class UpdateKeyDescriptionResponse(SdkResponse):
     }
 
     def __init__(self, key_info=None):
-        """UpdateKeyDescriptionResponse
+        r"""UpdateKeyDescriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateKeyDescriptionResponse(SdkResponse):
 
     @property
     def key_info(self):
-        """Gets the key_info of this UpdateKeyDescriptionResponse.
+        r"""Gets the key_info of this UpdateKeyDescriptionResponse.
 
         :return: The key_info of this UpdateKeyDescriptionResponse.
         :rtype: :class:`huaweicloudsdkkms.v2.KeyDescriptionInfo`
@@ -53,7 +53,7 @@ class UpdateKeyDescriptionResponse(SdkResponse):
 
     @key_info.setter
     def key_info(self, key_info):
-        """Sets the key_info of this UpdateKeyDescriptionResponse.
+        r"""Sets the key_info of this UpdateKeyDescriptionResponse.
 
         :param key_info: The key_info of this UpdateKeyDescriptionResponse.
         :type key_info: :class:`huaweicloudsdkkms.v2.KeyDescriptionInfo`

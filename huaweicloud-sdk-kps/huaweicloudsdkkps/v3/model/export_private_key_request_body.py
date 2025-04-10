@@ -25,7 +25,7 @@ class ExportPrivateKeyRequestBody:
     }
 
     def __init__(self, keypair=None):
-        """ExportPrivateKeyRequestBody
+        r"""ExportPrivateKeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExportPrivateKeyRequestBody:
 
     @property
     def keypair(self):
-        """Gets the keypair of this ExportPrivateKeyRequestBody.
+        r"""Gets the keypair of this ExportPrivateKeyRequestBody.
 
         :return: The keypair of this ExportPrivateKeyRequestBody.
         :rtype: :class:`huaweicloudsdkkps.v3.KeypairBean`
@@ -51,7 +51,7 @@ class ExportPrivateKeyRequestBody:
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this ExportPrivateKeyRequestBody.
+        r"""Sets the keypair of this ExportPrivateKeyRequestBody.
 
         :param keypair: The keypair of this ExportPrivateKeyRequestBody.
         :type keypair: :class:`huaweicloudsdkkps.v3.KeypairBean`

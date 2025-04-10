@@ -30,7 +30,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job=None):
-        """CreateFlinkSqlJobResponse
+        r"""CreateFlinkSqlJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateFlinkSqlJobResponse.
+        r"""Gets the is_success of this CreateFlinkSqlJobResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateFlinkSqlJobResponse.
+        r"""Sets the is_success of this CreateFlinkSqlJobResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateFlinkSqlJobResponse.
+        r"""Gets the message of this CreateFlinkSqlJobResponse.
 
         消息内容
 
@@ -91,7 +91,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateFlinkSqlJobResponse.
+        r"""Sets the message of this CreateFlinkSqlJobResponse.
 
         消息内容
 
@@ -102,7 +102,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this CreateFlinkSqlJobResponse.
+        r"""Gets the job of this CreateFlinkSqlJobResponse.
 
         :return: The job of this CreateFlinkSqlJobResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobStatus`
@@ -111,7 +111,7 @@ class CreateFlinkSqlJobResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this CreateFlinkSqlJobResponse.
+        r"""Sets the job of this CreateFlinkSqlJobResponse.
 
         :param job: The job of this CreateFlinkSqlJobResponse.
         :type job: :class:`huaweicloudsdkdli.v1.FlinkJobStatus`

@@ -29,7 +29,7 @@ class UploadPublisherIconRequest:
     }
 
     def __init__(self, domain_id=None, publisher_en_name=None, body=None):
-        """UploadPublisherIconRequest
+        r"""UploadPublisherIconRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UploadPublisherIconRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UploadPublisherIconRequest.
+        r"""Gets the domain_id of this UploadPublisherIconRequest.
 
         租户ID
 
@@ -66,7 +66,7 @@ class UploadPublisherIconRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UploadPublisherIconRequest.
+        r"""Sets the domain_id of this UploadPublisherIconRequest.
 
         租户ID
 
@@ -77,7 +77,7 @@ class UploadPublisherIconRequest:
 
     @property
     def publisher_en_name(self):
-        """Gets the publisher_en_name of this UploadPublisherIconRequest.
+        r"""Gets the publisher_en_name of this UploadPublisherIconRequest.
 
         发布商名称
 
@@ -88,7 +88,7 @@ class UploadPublisherIconRequest:
 
     @publisher_en_name.setter
     def publisher_en_name(self, publisher_en_name):
-        """Sets the publisher_en_name of this UploadPublisherIconRequest.
+        r"""Sets the publisher_en_name of this UploadPublisherIconRequest.
 
         发布商名称
 
@@ -99,7 +99,7 @@ class UploadPublisherIconRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadPublisherIconRequest.
+        r"""Gets the body of this UploadPublisherIconRequest.
 
         :return: The body of this UploadPublisherIconRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UploadPublisherIconRequestBody`
@@ -108,7 +108,7 @@ class UploadPublisherIconRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadPublisherIconRequest.
+        r"""Sets the body of this UploadPublisherIconRequest.
 
         :param body: The body of this UploadPublisherIconRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.UploadPublisherIconRequestBody`

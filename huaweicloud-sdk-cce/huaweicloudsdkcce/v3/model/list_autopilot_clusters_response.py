@@ -30,7 +30,7 @@ class ListAutopilotClustersResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAutopilotClustersResponse
+        r"""ListAutopilotClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAutopilotClustersResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotClustersResponse.
+        r"""Gets the kind of this ListAutopilotClustersResponse.
 
         Api type
 
@@ -69,7 +69,7 @@ class ListAutopilotClustersResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotClustersResponse.
+        r"""Sets the kind of this ListAutopilotClustersResponse.
 
         Api type
 
@@ -80,7 +80,7 @@ class ListAutopilotClustersResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotClustersResponse.
+        r"""Gets the api_version of this ListAutopilotClustersResponse.
 
         API version
 
@@ -91,7 +91,7 @@ class ListAutopilotClustersResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotClustersResponse.
+        r"""Sets the api_version of this ListAutopilotClustersResponse.
 
         API version
 
@@ -102,7 +102,7 @@ class ListAutopilotClustersResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAutopilotClustersResponse.
+        r"""Gets the items of this ListAutopilotClustersResponse.
 
         集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
 
@@ -113,7 +113,7 @@ class ListAutopilotClustersResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAutopilotClustersResponse.
+        r"""Sets the items of this ListAutopilotClustersResponse.
 
         集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
 

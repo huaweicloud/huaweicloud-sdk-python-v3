@@ -31,7 +31,7 @@ class DeleteDesignLatestApprovalRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, biz_id=None, biz_type=None):
-        """DeleteDesignLatestApprovalRequest
+        r"""DeleteDesignLatestApprovalRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteDesignLatestApprovalRequest.
+        r"""Gets the workspace of this DeleteDesignLatestApprovalRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -72,7 +72,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteDesignLatestApprovalRequest.
+        r"""Sets the workspace of this DeleteDesignLatestApprovalRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -83,7 +83,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this DeleteDesignLatestApprovalRequest.
+        r"""Gets the x_project_id of this DeleteDesignLatestApprovalRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -94,7 +94,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this DeleteDesignLatestApprovalRequest.
+        r"""Sets the x_project_id of this DeleteDesignLatestApprovalRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -105,7 +105,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this DeleteDesignLatestApprovalRequest.
+        r"""Gets the biz_id of this DeleteDesignLatestApprovalRequest.
 
         待删除下展的实体ID，ID字符串。
 
@@ -116,7 +116,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this DeleteDesignLatestApprovalRequest.
+        r"""Sets the biz_id of this DeleteDesignLatestApprovalRequest.
 
         待删除下展的实体ID，ID字符串。
 
@@ -127,7 +127,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this DeleteDesignLatestApprovalRequest.
+        r"""Gets the biz_type of this DeleteDesignLatestApprovalRequest.
 
         待删除下展的实体类型。 枚举值：   - ATOMIC_INDEX: 原子指标   - DERIVATIVE_INDEX: 衍生指标   - DIMENSION: 维度   - FACT_LOGIC_TABLE: 事实表   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - STANDARD_ELEMENT: 数据标准   - AGGREGATION_LOGIC_TABLE: 汇总表   - CODE_TABLE: 码表   - BIZ_METRIC: 业务指标   - COMPOUND_METRIC: 复合指标 
 
@@ -138,7 +138,7 @@ class DeleteDesignLatestApprovalRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this DeleteDesignLatestApprovalRequest.
+        r"""Sets the biz_type of this DeleteDesignLatestApprovalRequest.
 
         待删除下展的实体类型。 枚举值：   - ATOMIC_INDEX: 原子指标   - DERIVATIVE_INDEX: 衍生指标   - DIMENSION: 维度   - FACT_LOGIC_TABLE: 事实表   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - STANDARD_ELEMENT: 数据标准   - AGGREGATION_LOGIC_TABLE: 汇总表   - CODE_TABLE: 码表   - BIZ_METRIC: 业务指标   - COMPOUND_METRIC: 复合指标 
 

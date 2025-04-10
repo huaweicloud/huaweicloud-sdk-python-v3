@@ -25,7 +25,7 @@ class CreateMetaStudioOrdersRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMetaStudioOrdersRequest
+        r"""CreateMetaStudioOrdersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMetaStudioOrdersRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMetaStudioOrdersRequest.
+        r"""Gets the body of this CreateMetaStudioOrdersRequest.
 
         :return: The body of this CreateMetaStudioOrdersRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateMetaStudioOrdersReq`
@@ -52,7 +52,7 @@ class CreateMetaStudioOrdersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMetaStudioOrdersRequest.
+        r"""Sets the body of this CreateMetaStudioOrdersRequest.
 
         :param body: The body of this CreateMetaStudioOrdersRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateMetaStudioOrdersReq`

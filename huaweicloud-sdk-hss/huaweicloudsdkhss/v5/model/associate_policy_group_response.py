@@ -24,7 +24,7 @@ class AssociatePolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociatePolicyGroupResponse
+        r"""AssociatePolicyGroupResponse
 
         The model defined in huaweicloud sdk
 

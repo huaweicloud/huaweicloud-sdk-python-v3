@@ -27,7 +27,7 @@ class ListTenantTrustedIpAddressesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListTenantTrustedIpAddressesRequest
+        r"""ListTenantTrustedIpAddressesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListTenantTrustedIpAddressesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTenantTrustedIpAddressesRequest.
+        r"""Gets the offset of this ListTenantTrustedIpAddressesRequest.
 
         偏移量
 
@@ -61,7 +61,7 @@ class ListTenantTrustedIpAddressesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTenantTrustedIpAddressesRequest.
+        r"""Sets the offset of this ListTenantTrustedIpAddressesRequest.
 
         偏移量
 
@@ -72,7 +72,7 @@ class ListTenantTrustedIpAddressesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTenantTrustedIpAddressesRequest.
+        r"""Gets the limit of this ListTenantTrustedIpAddressesRequest.
 
         返回数量
 
@@ -83,7 +83,7 @@ class ListTenantTrustedIpAddressesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTenantTrustedIpAddressesRequest.
+        r"""Sets the limit of this ListTenantTrustedIpAddressesRequest.
 
         返回数量
 

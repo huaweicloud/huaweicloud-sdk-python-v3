@@ -27,7 +27,7 @@ class SupportImportFileResult:
     }
 
     def __init__(self, file_size=None, previous_select=None):
-        """SupportImportFileResult
+        r"""SupportImportFileResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SupportImportFileResult:
 
     @property
     def file_size(self):
-        """Gets the file_size of this SupportImportFileResult.
+        r"""Gets the file_size of this SupportImportFileResult.
 
         文件导入阈值。
 
@@ -61,7 +61,7 @@ class SupportImportFileResult:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this SupportImportFileResult.
+        r"""Sets the file_size of this SupportImportFileResult.
 
         文件导入阈值。
 
@@ -72,7 +72,7 @@ class SupportImportFileResult:
 
     @property
     def previous_select(self):
-        """Gets the previous_select of this SupportImportFileResult.
+        r"""Gets the previous_select of this SupportImportFileResult.
 
         上一次选择对象的方式。
 
@@ -83,7 +83,7 @@ class SupportImportFileResult:
 
     @previous_select.setter
     def previous_select(self, previous_select):
-        """Sets the previous_select of this SupportImportFileResult.
+        r"""Sets the previous_select of this SupportImportFileResult.
 
         上一次选择对象的方式。
 

@@ -28,7 +28,7 @@ class ListTasksDetailsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, tasks=None):
-        """ListTasksDetailsResponse
+        r"""ListTasksDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTasksDetailsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTasksDetailsResponse.
+        r"""Gets the count of this ListTasksDetailsResponse.
 
         符合检索条件的总条目数
 
@@ -62,7 +62,7 @@ class ListTasksDetailsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTasksDetailsResponse.
+        r"""Sets the count of this ListTasksDetailsResponse.
 
         符合检索条件的总条目数
 
@@ -73,7 +73,7 @@ class ListTasksDetailsResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListTasksDetailsResponse.
+        r"""Gets the tasks of this ListTasksDetailsResponse.
 
         检索到的服务作业条目
 
@@ -84,7 +84,7 @@ class ListTasksDetailsResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListTasksDetailsResponse.
+        r"""Sets the tasks of this ListTasksDetailsResponse.
 
         检索到的服务作业条目
 

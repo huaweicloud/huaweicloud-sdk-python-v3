@@ -35,7 +35,7 @@ class Privateip:
     }
 
     def __init__(self, status=None, id=None, subnet_id=None, tenant_id=None, device_owner=None, ip_address=None):
-        """Privateip
+        r"""Privateip
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class Privateip:
 
     @property
     def status(self):
-        """Gets the status of this Privateip.
+        r"""Gets the status of this Privateip.
 
         私有IP的状态  - ACTIVE：活动的  - DOWN：不可用
 
@@ -83,7 +83,7 @@ class Privateip:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Privateip.
+        r"""Sets the status of this Privateip.
 
         私有IP的状态  - ACTIVE：活动的  - DOWN：不可用
 
@@ -94,7 +94,7 @@ class Privateip:
 
     @property
     def id(self):
-        """Gets the id of this Privateip.
+        r"""Gets the id of this Privateip.
 
         私有IP ID
 
@@ -105,7 +105,7 @@ class Privateip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Privateip.
+        r"""Sets the id of this Privateip.
 
         私有IP ID
 
@@ -116,7 +116,7 @@ class Privateip:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Privateip.
+        r"""Gets the subnet_id of this Privateip.
 
         分配IP的子网标识
 
@@ -127,7 +127,7 @@ class Privateip:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Privateip.
+        r"""Sets the subnet_id of this Privateip.
 
         分配IP的子网标识
 
@@ -138,7 +138,7 @@ class Privateip:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Privateip.
+        r"""Gets the tenant_id of this Privateip.
 
         项目ID
 
@@ -149,7 +149,7 @@ class Privateip:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Privateip.
+        r"""Sets the tenant_id of this Privateip.
 
         项目ID
 
@@ -160,7 +160,7 @@ class Privateip:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this Privateip.
+        r"""Gets the device_owner of this Privateip.
 
         私有IP的使用者，空表示未使用 取值范围：network:dhcp，network:router_interface_distributed，compute:xxx(xxx对应具体的az名称，例如compute:aa-bb-cc表示是被aa-bb-cc上的虚拟机使用) 约束：此处的取值范围只是本服务支持的类型，其他类型未做标注
 
@@ -171,7 +171,7 @@ class Privateip:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this Privateip.
+        r"""Sets the device_owner of this Privateip.
 
         私有IP的使用者，空表示未使用 取值范围：network:dhcp，network:router_interface_distributed，compute:xxx(xxx对应具体的az名称，例如compute:aa-bb-cc表示是被aa-bb-cc上的虚拟机使用) 约束：此处的取值范围只是本服务支持的类型，其他类型未做标注
 
@@ -182,7 +182,7 @@ class Privateip:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this Privateip.
+        r"""Gets the ip_address of this Privateip.
 
         申请到的私有IP
 
@@ -193,7 +193,7 @@ class Privateip:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this Privateip.
+        r"""Sets the ip_address of this Privateip.
 
         申请到的私有IP
 

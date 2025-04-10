@@ -27,7 +27,7 @@ class DeleteImageTagRequest:
     }
 
     def __init__(self, image_id=None, key=None):
-        """DeleteImageTagRequest
+        r"""DeleteImageTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteImageTagRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this DeleteImageTagRequest.
+        r"""Gets the image_id of this DeleteImageTagRequest.
 
         镜像ID。
 
@@ -59,7 +59,7 @@ class DeleteImageTagRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this DeleteImageTagRequest.
+        r"""Sets the image_id of this DeleteImageTagRequest.
 
         镜像ID。
 
@@ -70,7 +70,7 @@ class DeleteImageTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteImageTagRequest.
+        r"""Gets the key of this DeleteImageTagRequest.
 
         要删除的标签的键。
 
@@ -81,7 +81,7 @@ class DeleteImageTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteImageTagRequest.
+        r"""Sets the key of this DeleteImageTagRequest.
 
         要删除的标签的键。
 

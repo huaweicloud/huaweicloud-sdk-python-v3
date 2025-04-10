@@ -27,7 +27,7 @@ class CheckSubcustomerUserReq:
     }
 
     def __init__(self, search_type=None, search_value=None):
-        """CheckSubcustomerUserReq
+        r"""CheckSubcustomerUserReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckSubcustomerUserReq:
 
     @property
     def search_type(self):
-        """Gets the search_type of this CheckSubcustomerUserReq.
+        r"""Gets the search_type of this CheckSubcustomerUserReq.
 
         该字段内容可填为：“email”、“mobile”或“name”。
 
@@ -59,7 +59,7 @@ class CheckSubcustomerUserReq:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this CheckSubcustomerUserReq.
+        r"""Sets the search_type of this CheckSubcustomerUserReq.
 
         该字段内容可填为：“email”、“mobile”或“name”。
 
@@ -70,7 +70,7 @@ class CheckSubcustomerUserReq:
 
     @property
     def search_value(self):
-        """Gets the search_value of this CheckSubcustomerUserReq.
+        r"""Gets the search_value of this CheckSubcustomerUserReq.
 
         手机号、邮箱或登录名称。 手机号需符合正则表达式 ^\\d{4}-\\d+$；包括国家码，以00开头，格式：00XX-XXXXXXXX。邮箱需为含有@的正确格式的完整邮箱地址。name：符合正则表达式^\\(\\[a-zA-Z-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\{4,31\\}\\)$，长度5-32；不能以“op_”或“shadow_”开头且不能全为数字，且只能以字母（不区分大小写）或者-开头。
 
@@ -81,7 +81,7 @@ class CheckSubcustomerUserReq:
 
     @search_value.setter
     def search_value(self, search_value):
-        """Sets the search_value of this CheckSubcustomerUserReq.
+        r"""Sets the search_value of this CheckSubcustomerUserReq.
 
         手机号、邮箱或登录名称。 手机号需符合正则表达式 ^\\d{4}-\\d+$；包括国家码，以00开头，格式：00XX-XXXXXXXX。邮箱需为含有@的正确格式的完整邮箱地址。name：符合正则表达式^\\(\\[a-zA-Z-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\{4,31\\}\\)$，长度5-32；不能以“op_”或“shadow_”开头且不能全为数字，且只能以字母（不区分大小写）或者-开头。
 

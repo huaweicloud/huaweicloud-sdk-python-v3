@@ -27,7 +27,7 @@ class ShowStaticRouteRequest:
     }
 
     def __init__(self, route_table_id=None, route_id=None):
-        """ShowStaticRouteRequest
+        r"""ShowStaticRouteRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowStaticRouteRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this ShowStaticRouteRequest.
+        r"""Gets the route_table_id of this ShowStaticRouteRequest.
 
         路由表ID
 
@@ -59,7 +59,7 @@ class ShowStaticRouteRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this ShowStaticRouteRequest.
+        r"""Sets the route_table_id of this ShowStaticRouteRequest.
 
         路由表ID
 
@@ -70,7 +70,7 @@ class ShowStaticRouteRequest:
 
     @property
     def route_id(self):
-        """Gets the route_id of this ShowStaticRouteRequest.
+        r"""Gets the route_id of this ShowStaticRouteRequest.
 
         路由ID
 
@@ -81,7 +81,7 @@ class ShowStaticRouteRequest:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this ShowStaticRouteRequest.
+        r"""Sets the route_id of this ShowStaticRouteRequest.
 
         路由ID
 

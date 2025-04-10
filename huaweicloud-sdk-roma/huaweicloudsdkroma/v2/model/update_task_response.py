@@ -28,7 +28,7 @@ class UpdateTaskResponse(SdkResponse):
     }
 
     def __init__(self, task=None, task_detail=None):
-        """UpdateTaskResponse
+        r"""UpdateTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def task(self):
-        """Gets the task of this UpdateTaskResponse.
+        r"""Gets the task of this UpdateTaskResponse.
 
         :return: The task of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskBasicRsp`
@@ -60,7 +60,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @task.setter
     def task(self, task):
-        """Sets the task of this UpdateTaskResponse.
+        r"""Sets the task of this UpdateTaskResponse.
 
         :param task: The task of this UpdateTaskResponse.
         :type task: :class:`huaweicloudsdkroma.v2.TaskBasicRsp`
@@ -69,7 +69,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def task_detail(self):
-        """Gets the task_detail of this UpdateTaskResponse.
+        r"""Gets the task_detail of this UpdateTaskResponse.
 
         参数类型为string，参数结构参照附录中“数据集成参数说明>RawFormDataResponse”章节
 
@@ -80,7 +80,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @task_detail.setter
     def task_detail(self, task_detail):
-        """Sets the task_detail of this UpdateTaskResponse.
+        r"""Sets the task_detail of this UpdateTaskResponse.
 
         参数类型为string，参数结构参照附录中“数据集成参数说明>RawFormDataResponse”章节
 

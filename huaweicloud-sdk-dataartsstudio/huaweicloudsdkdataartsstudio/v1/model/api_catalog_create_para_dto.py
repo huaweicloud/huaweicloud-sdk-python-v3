@@ -29,7 +29,7 @@ class ApiCatalogCreateParaDTO:
     }
 
     def __init__(self, pid=None, name=None, description=None):
-        """ApiCatalogCreateParaDTO
+        r"""ApiCatalogCreateParaDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApiCatalogCreateParaDTO:
 
     @property
     def pid(self):
-        """Gets the pid of this ApiCatalogCreateParaDTO.
+        r"""Gets the pid of this ApiCatalogCreateParaDTO.
 
         父目录编号
 
@@ -68,7 +68,7 @@ class ApiCatalogCreateParaDTO:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this ApiCatalogCreateParaDTO.
+        r"""Sets the pid of this ApiCatalogCreateParaDTO.
 
         父目录编号
 
@@ -79,7 +79,7 @@ class ApiCatalogCreateParaDTO:
 
     @property
     def name(self):
-        """Gets the name of this ApiCatalogCreateParaDTO.
+        r"""Gets the name of this ApiCatalogCreateParaDTO.
 
         名称
 
@@ -90,7 +90,7 @@ class ApiCatalogCreateParaDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiCatalogCreateParaDTO.
+        r"""Sets the name of this ApiCatalogCreateParaDTO.
 
         名称
 
@@ -101,7 +101,7 @@ class ApiCatalogCreateParaDTO:
 
     @property
     def description(self):
-        """Gets the description of this ApiCatalogCreateParaDTO.
+        r"""Gets the description of this ApiCatalogCreateParaDTO.
 
         描述
 
@@ -112,7 +112,7 @@ class ApiCatalogCreateParaDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiCatalogCreateParaDTO.
+        r"""Sets the description of this ApiCatalogCreateParaDTO.
 
         描述
 

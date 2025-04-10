@@ -27,7 +27,7 @@ class SendNotificationsReq:
     }
 
     def __init__(self, desktop_ids=None, notifications=None):
-        """SendNotificationsReq
+        r"""SendNotificationsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SendNotificationsReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this SendNotificationsReq.
+        r"""Gets the desktop_ids of this SendNotificationsReq.
 
         桌面列表
 
@@ -59,7 +59,7 @@ class SendNotificationsReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this SendNotificationsReq.
+        r"""Sets the desktop_ids of this SendNotificationsReq.
 
         桌面列表
 
@@ -70,7 +70,7 @@ class SendNotificationsReq:
 
     @property
     def notifications(self):
-        """Gets the notifications of this SendNotificationsReq.
+        r"""Gets the notifications of this SendNotificationsReq.
 
         消息通知内容
 
@@ -81,7 +81,7 @@ class SendNotificationsReq:
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this SendNotificationsReq.
+        r"""Sets the notifications of this SendNotificationsReq.
 
         消息通知内容
 

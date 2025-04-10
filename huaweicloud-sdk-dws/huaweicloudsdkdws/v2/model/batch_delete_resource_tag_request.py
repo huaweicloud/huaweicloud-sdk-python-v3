@@ -27,7 +27,7 @@ class BatchDeleteResourceTagRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """BatchDeleteResourceTagRequest
+        r"""BatchDeleteResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteResourceTagRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BatchDeleteResourceTagRequest.
+        r"""Gets the cluster_id of this BatchDeleteResourceTagRequest.
 
         集群的ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteResourceTagRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BatchDeleteResourceTagRequest.
+        r"""Sets the cluster_id of this BatchDeleteResourceTagRequest.
 
         集群的ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteResourceTagRequest.
+        r"""Gets the body of this BatchDeleteResourceTagRequest.
 
         :return: The body of this BatchDeleteResourceTagRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.BatchDeleteResourceTags`
@@ -80,7 +80,7 @@ class BatchDeleteResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteResourceTagRequest.
+        r"""Sets the body of this BatchDeleteResourceTagRequest.
 
         :param body: The body of this BatchDeleteResourceTagRequest.
         :type body: :class:`huaweicloudsdkdws.v2.BatchDeleteResourceTags`

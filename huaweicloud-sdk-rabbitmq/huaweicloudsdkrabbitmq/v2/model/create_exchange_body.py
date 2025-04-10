@@ -33,7 +33,7 @@ class CreateExchangeBody:
     }
 
     def __init__(self, name=None, type=None, durable=None, auto_delete=None, internal=None):
-        """CreateExchangeBody
+        r"""CreateExchangeBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateExchangeBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateExchangeBody.
+        r"""Gets the name of this CreateExchangeBody.
 
         Exchange名称
 
@@ -79,7 +79,7 @@ class CreateExchangeBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateExchangeBody.
+        r"""Sets the name of this CreateExchangeBody.
 
         Exchange名称
 
@@ -90,7 +90,7 @@ class CreateExchangeBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateExchangeBody.
+        r"""Gets the type of this CreateExchangeBody.
 
         类型（direct、fanout、topic、headers）
 
@@ -101,7 +101,7 @@ class CreateExchangeBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateExchangeBody.
+        r"""Sets the type of this CreateExchangeBody.
 
         类型（direct、fanout、topic、headers）
 
@@ -112,7 +112,7 @@ class CreateExchangeBody:
 
     @property
     def durable(self):
-        """Gets the durable of this CreateExchangeBody.
+        r"""Gets the durable of this CreateExchangeBody.
 
         是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
 
@@ -123,7 +123,7 @@ class CreateExchangeBody:
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this CreateExchangeBody.
+        r"""Sets the durable of this CreateExchangeBody.
 
         是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
 
@@ -134,7 +134,7 @@ class CreateExchangeBody:
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this CreateExchangeBody.
+        r"""Gets the auto_delete of this CreateExchangeBody.
 
         是否自动删除
 
@@ -145,7 +145,7 @@ class CreateExchangeBody:
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this CreateExchangeBody.
+        r"""Sets the auto_delete of this CreateExchangeBody.
 
         是否自动删除
 
@@ -156,7 +156,7 @@ class CreateExchangeBody:
 
     @property
     def internal(self):
-        """Gets the internal of this CreateExchangeBody.
+        r"""Gets the internal of this CreateExchangeBody.
 
         内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
 
@@ -167,7 +167,7 @@ class CreateExchangeBody:
 
     @internal.setter
     def internal(self, internal):
-        """Sets the internal of this CreateExchangeBody.
+        r"""Sets the internal of this CreateExchangeBody.
 
         内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
 

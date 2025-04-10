@@ -39,7 +39,7 @@ class NodeItem:
     }
 
     def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None):
-        """NodeItem
+        r"""NodeItem
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class NodeItem:
 
     @property
     def id(self):
-        """Gets the id of this NodeItem.
+        r"""Gets the id of this NodeItem.
 
         节点ID。
 
@@ -95,7 +95,7 @@ class NodeItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodeItem.
+        r"""Sets the id of this NodeItem.
 
         节点ID。
 
@@ -106,7 +106,7 @@ class NodeItem:
 
     @property
     def name(self):
-        """Gets the name of this NodeItem.
+        r"""Gets the name of this NodeItem.
 
         节点名称。
 
@@ -117,7 +117,7 @@ class NodeItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeItem.
+        r"""Sets the name of this NodeItem.
 
         节点名称。
 
@@ -128,7 +128,7 @@ class NodeItem:
 
     @property
     def status(self):
-        """Gets the status of this NodeItem.
+        r"""Gets the status of this NodeItem.
 
         节点状态。
 
@@ -139,7 +139,7 @@ class NodeItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeItem.
+        r"""Sets the status of this NodeItem.
 
         节点状态。
 
@@ -150,7 +150,7 @@ class NodeItem:
 
     @property
     def role(self):
-        """Gets the role of this NodeItem.
+        r"""Gets the role of this NodeItem.
 
         节点角色。 取值： - master，mongos节点返回该值。 - Primary，shard组主节点、config组主节点、副本集主节点、单节点返回该值。 - Secondary，shard组备节点、config组备节点、副本集备节点返回该值。 - Hidden，shard组隐藏节点、config组隐藏节点、副本集隐藏节点返回该值。 - unknown，节点异常时返回该值。
 
@@ -161,7 +161,7 @@ class NodeItem:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this NodeItem.
+        r"""Sets the role of this NodeItem.
 
         节点角色。 取值： - master，mongos节点返回该值。 - Primary，shard组主节点、config组主节点、副本集主节点、单节点返回该值。 - Secondary，shard组备节点、config组备节点、副本集备节点返回该值。 - Hidden，shard组隐藏节点、config组隐藏节点、副本集隐藏节点返回该值。 - unknown，节点异常时返回该值。
 
@@ -172,7 +172,7 @@ class NodeItem:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this NodeItem.
+        r"""Gets the private_ip of this NodeItem.
 
         节点内网IP。该参数仅针对集群实例的mongos节点、副本集实例、以及单节点实例有效，且在弹性云服务器创建成功后参数值存在，否则，值为\"\"。
 
@@ -183,7 +183,7 @@ class NodeItem:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this NodeItem.
+        r"""Sets the private_ip of this NodeItem.
 
         节点内网IP。该参数仅针对集群实例的mongos节点、副本集实例、以及单节点实例有效，且在弹性云服务器创建成功后参数值存在，否则，值为\"\"。
 
@@ -194,7 +194,7 @@ class NodeItem:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this NodeItem.
+        r"""Gets the public_ip of this NodeItem.
 
         绑定的外网IP。该参数值为\"\"。该参数仅针对集群实例的mongos节点、副本集实例的主节点和备节点、以及单节点实例有效。
 
@@ -205,7 +205,7 @@ class NodeItem:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this NodeItem.
+        r"""Sets the public_ip of this NodeItem.
 
         绑定的外网IP。该参数值为\"\"。该参数仅针对集群实例的mongos节点、副本集实例的主节点和备节点、以及单节点实例有效。
 
@@ -216,7 +216,7 @@ class NodeItem:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this NodeItem.
+        r"""Gets the spec_code of this NodeItem.
 
         资源规格编码。
 
@@ -227,7 +227,7 @@ class NodeItem:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this NodeItem.
+        r"""Sets the spec_code of this NodeItem.
 
         资源规格编码。
 
@@ -238,7 +238,7 @@ class NodeItem:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this NodeItem.
+        r"""Gets the availability_zone of this NodeItem.
 
         可用区。
 
@@ -249,7 +249,7 @@ class NodeItem:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this NodeItem.
+        r"""Sets the availability_zone of this NodeItem.
 
         可用区。
 

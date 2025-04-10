@@ -30,7 +30,7 @@ class ListEcnResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_connect_networks=None, page_info=None, total_count=None):
-        """ListEcnResponse
+        r"""ListEcnResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEcnResponse(SdkResponse):
 
     @property
     def enterprise_connect_networks(self):
-        """Gets the enterprise_connect_networks of this ListEcnResponse.
+        r"""Gets the enterprise_connect_networks of this ListEcnResponse.
 
         企业连接网络列表
 
@@ -69,7 +69,7 @@ class ListEcnResponse(SdkResponse):
 
     @enterprise_connect_networks.setter
     def enterprise_connect_networks(self, enterprise_connect_networks):
-        """Sets the enterprise_connect_networks of this ListEcnResponse.
+        r"""Sets the enterprise_connect_networks of this ListEcnResponse.
 
         企业连接网络列表
 
@@ -80,7 +80,7 @@ class ListEcnResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEcnResponse.
+        r"""Gets the page_info of this ListEcnResponse.
 
         :return: The page_info of this ListEcnResponse.
         :rtype: :class:`huaweicloudsdkec.v1.PageInfo`
@@ -89,7 +89,7 @@ class ListEcnResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEcnResponse.
+        r"""Sets the page_info of this ListEcnResponse.
 
         :param page_info: The page_info of this ListEcnResponse.
         :type page_info: :class:`huaweicloudsdkec.v1.PageInfo`
@@ -98,7 +98,7 @@ class ListEcnResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEcnResponse.
+        r"""Gets the total_count of this ListEcnResponse.
 
         企业连接网络数量
 
@@ -109,7 +109,7 @@ class ListEcnResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEcnResponse.
+        r"""Sets the total_count of this ListEcnResponse.
 
         企业连接网络数量
 

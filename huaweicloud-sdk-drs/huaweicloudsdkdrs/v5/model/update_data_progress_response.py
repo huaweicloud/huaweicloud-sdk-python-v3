@@ -30,7 +30,7 @@ class UpdateDataProgressResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, job_id=None):
-        """UpdateDataProgressResponse
+        r"""UpdateDataProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateDataProgressResponse.
+        r"""Gets the id of this UpdateDataProgressResponse.
 
         查询结果id
 
@@ -69,7 +69,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateDataProgressResponse.
+        r"""Sets the id of this UpdateDataProgressResponse.
 
         查询结果id
 
@@ -80,7 +80,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateDataProgressResponse.
+        r"""Gets the status of this UpdateDataProgressResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -91,7 +91,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateDataProgressResponse.
+        r"""Sets the status of this UpdateDataProgressResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -102,7 +102,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateDataProgressResponse.
+        r"""Gets the job_id of this UpdateDataProgressResponse.
 
         任务ID
 
@@ -113,7 +113,7 @@ class UpdateDataProgressResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateDataProgressResponse.
+        r"""Sets the job_id of this UpdateDataProgressResponse.
 
         任务ID
 

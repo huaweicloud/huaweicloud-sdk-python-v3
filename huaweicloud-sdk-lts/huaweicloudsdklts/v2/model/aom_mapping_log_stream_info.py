@@ -31,7 +31,7 @@ class AomMappingLogStreamInfo:
     }
 
     def __init__(self, target_log_group_id=None, target_log_group_name=None, target_log_stream_id=None, target_log_stream_name=None):
-        """AomMappingLogStreamInfo
+        r"""AomMappingLogStreamInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AomMappingLogStreamInfo:
 
     @property
     def target_log_group_id(self):
-        """Gets the target_log_group_id of this AomMappingLogStreamInfo.
+        r"""Gets the target_log_group_id of this AomMappingLogStreamInfo.
 
         日志组id
 
@@ -71,7 +71,7 @@ class AomMappingLogStreamInfo:
 
     @target_log_group_id.setter
     def target_log_group_id(self, target_log_group_id):
-        """Sets the target_log_group_id of this AomMappingLogStreamInfo.
+        r"""Sets the target_log_group_id of this AomMappingLogStreamInfo.
 
         日志组id
 
@@ -82,7 +82,7 @@ class AomMappingLogStreamInfo:
 
     @property
     def target_log_group_name(self):
-        """Gets the target_log_group_name of this AomMappingLogStreamInfo.
+        r"""Gets the target_log_group_name of this AomMappingLogStreamInfo.
 
         目标日志组名称。
 
@@ -93,7 +93,7 @@ class AomMappingLogStreamInfo:
 
     @target_log_group_name.setter
     def target_log_group_name(self, target_log_group_name):
-        """Sets the target_log_group_name of this AomMappingLogStreamInfo.
+        r"""Sets the target_log_group_name of this AomMappingLogStreamInfo.
 
         目标日志组名称。
 
@@ -104,7 +104,7 @@ class AomMappingLogStreamInfo:
 
     @property
     def target_log_stream_id(self):
-        """Gets the target_log_stream_id of this AomMappingLogStreamInfo.
+        r"""Gets the target_log_stream_id of this AomMappingLogStreamInfo.
 
         日志流id
 
@@ -115,7 +115,7 @@ class AomMappingLogStreamInfo:
 
     @target_log_stream_id.setter
     def target_log_stream_id(self, target_log_stream_id):
-        """Sets the target_log_stream_id of this AomMappingLogStreamInfo.
+        r"""Sets the target_log_stream_id of this AomMappingLogStreamInfo.
 
         日志流id
 
@@ -126,7 +126,7 @@ class AomMappingLogStreamInfo:
 
     @property
     def target_log_stream_name(self):
-        """Gets the target_log_stream_name of this AomMappingLogStreamInfo.
+        r"""Gets the target_log_stream_name of this AomMappingLogStreamInfo.
 
         目标日志组名称。
 
@@ -137,7 +137,7 @@ class AomMappingLogStreamInfo:
 
     @target_log_stream_name.setter
     def target_log_stream_name(self, target_log_stream_name):
-        """Sets the target_log_stream_name of this AomMappingLogStreamInfo.
+        r"""Sets the target_log_stream_name of this AomMappingLogStreamInfo.
 
         目标日志组名称。
 

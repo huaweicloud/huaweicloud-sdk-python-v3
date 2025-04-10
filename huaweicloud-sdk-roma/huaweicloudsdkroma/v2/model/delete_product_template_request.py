@@ -27,7 +27,7 @@ class DeleteProductTemplateRequest:
     }
 
     def __init__(self, instance_id=None, product_template_id=None):
-        """DeleteProductTemplateRequest
+        r"""DeleteProductTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteProductTemplateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteProductTemplateRequest.
+        r"""Gets the instance_id of this DeleteProductTemplateRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DeleteProductTemplateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteProductTemplateRequest.
+        r"""Sets the instance_id of this DeleteProductTemplateRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DeleteProductTemplateRequest:
 
     @property
     def product_template_id(self):
-        """Gets the product_template_id of this DeleteProductTemplateRequest.
+        r"""Gets the product_template_id of this DeleteProductTemplateRequest.
 
         产品模板ID
 
@@ -81,7 +81,7 @@ class DeleteProductTemplateRequest:
 
     @product_template_id.setter
     def product_template_id(self, product_template_id):
-        """Sets the product_template_id of this DeleteProductTemplateRequest.
+        r"""Sets the product_template_id of this DeleteProductTemplateRequest.
 
         产品模板ID
 

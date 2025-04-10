@@ -45,7 +45,7 @@ class BatchBandwidthResp:
     }
 
     def __init__(self, bandwidth_type=None, billing_info=None, charge_mode=None, id=None, name=None, publicip_info=None, share_type=None, size=None, tenant_id=None, status=None, public_border_group=None):
-        """BatchBandwidthResp
+        r"""BatchBandwidthResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class BatchBandwidthResp:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this BatchBandwidthResp.
+        r"""Gets the bandwidth_type of this BatchBandwidthResp.
 
         功能说明：带宽类型，共享带宽默认为share。  取值范围：share，bgp，telcom，sbgp等。  share：共享带宽  bgp：动态bgp  telcom ：联通  sbgp：静态bgp
 
@@ -124,7 +124,7 @@ class BatchBandwidthResp:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this BatchBandwidthResp.
+        r"""Sets the bandwidth_type of this BatchBandwidthResp.
 
         功能说明：带宽类型，共享带宽默认为share。  取值范围：share，bgp，telcom，sbgp等。  share：共享带宽  bgp：动态bgp  telcom ：联通  sbgp：静态bgp
 
@@ -135,7 +135,7 @@ class BatchBandwidthResp:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this BatchBandwidthResp.
+        r"""Gets the billing_info of this BatchBandwidthResp.
 
         功能说明：账单信息  如果billing_info不为空，说明是包周期的带宽
 
@@ -146,7 +146,7 @@ class BatchBandwidthResp:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this BatchBandwidthResp.
+        r"""Sets the billing_info of this BatchBandwidthResp.
 
         功能说明：账单信息  如果billing_info不为空，说明是包周期的带宽
 
@@ -157,7 +157,7 @@ class BatchBandwidthResp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BatchBandwidthResp.
+        r"""Gets the charge_mode of this BatchBandwidthResp.
 
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 
@@ -168,7 +168,7 @@ class BatchBandwidthResp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BatchBandwidthResp.
+        r"""Sets the charge_mode of this BatchBandwidthResp.
 
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 
@@ -179,7 +179,7 @@ class BatchBandwidthResp:
 
     @property
     def id(self):
-        """Gets the id of this BatchBandwidthResp.
+        r"""Gets the id of this BatchBandwidthResp.
 
         功能说明：带宽唯一标识
 
@@ -190,7 +190,7 @@ class BatchBandwidthResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchBandwidthResp.
+        r"""Sets the id of this BatchBandwidthResp.
 
         功能说明：带宽唯一标识
 
@@ -201,7 +201,7 @@ class BatchBandwidthResp:
 
     @property
     def name(self):
-        """Gets the name of this BatchBandwidthResp.
+        r"""Gets the name of this BatchBandwidthResp.
 
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -212,7 +212,7 @@ class BatchBandwidthResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchBandwidthResp.
+        r"""Sets the name of this BatchBandwidthResp.
 
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -223,7 +223,7 @@ class BatchBandwidthResp:
 
     @property
     def publicip_info(self):
-        """Gets the publicip_info of this BatchBandwidthResp.
+        r"""Gets the publicip_info of this BatchBandwidthResp.
 
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -234,7 +234,7 @@ class BatchBandwidthResp:
 
     @publicip_info.setter
     def publicip_info(self, publicip_info):
-        """Sets the publicip_info of this BatchBandwidthResp.
+        r"""Sets the publicip_info of this BatchBandwidthResp.
 
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -245,7 +245,7 @@ class BatchBandwidthResp:
 
     @property
     def share_type(self):
-        """Gets the share_type of this BatchBandwidthResp.
+        r"""Gets the share_type of this BatchBandwidthResp.
 
         功能说明：带宽类型，标识是否是共享带宽  取值范围：WHOLE，PER  WHOLE表示共享带宽；PER，表示独享带宽
 
@@ -256,7 +256,7 @@ class BatchBandwidthResp:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this BatchBandwidthResp.
+        r"""Sets the share_type of this BatchBandwidthResp.
 
         功能说明：带宽类型，标识是否是共享带宽  取值范围：WHOLE，PER  WHOLE表示共享带宽；PER，表示独享带宽
 
@@ -267,7 +267,7 @@ class BatchBandwidthResp:
 
     @property
     def size(self):
-        """Gets the size of this BatchBandwidthResp.
+        r"""Gets the size of this BatchBandwidthResp.
 
         功能说明：带宽大小  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -278,7 +278,7 @@ class BatchBandwidthResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BatchBandwidthResp.
+        r"""Sets the size of this BatchBandwidthResp.
 
         功能说明：带宽大小  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -289,7 +289,7 @@ class BatchBandwidthResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this BatchBandwidthResp.
+        r"""Gets the tenant_id of this BatchBandwidthResp.
 
         功能说明：用户所属租户ID
 
@@ -300,7 +300,7 @@ class BatchBandwidthResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this BatchBandwidthResp.
+        r"""Sets the tenant_id of this BatchBandwidthResp.
 
         功能说明：用户所属租户ID
 
@@ -311,7 +311,7 @@ class BatchBandwidthResp:
 
     @property
     def status(self):
-        """Gets the status of this BatchBandwidthResp.
+        r"""Gets the status of this BatchBandwidthResp.
 
         功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
 
@@ -322,7 +322,7 @@ class BatchBandwidthResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchBandwidthResp.
+        r"""Sets the status of this BatchBandwidthResp.
 
         功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
 
@@ -333,7 +333,7 @@ class BatchBandwidthResp:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this BatchBandwidthResp.
+        r"""Gets the public_border_group of this BatchBandwidthResp.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 
@@ -344,7 +344,7 @@ class BatchBandwidthResp:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this BatchBandwidthResp.
+        r"""Sets the public_border_group of this BatchBandwidthResp.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 

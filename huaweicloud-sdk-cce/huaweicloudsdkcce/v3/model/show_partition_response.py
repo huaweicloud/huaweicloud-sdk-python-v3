@@ -32,7 +32,7 @@ class ShowPartitionResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """ShowPartitionResponse
+        r"""ShowPartitionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowPartitionResponse.
+        r"""Gets the kind of this ShowPartitionResponse.
 
         资源类型
 
@@ -76,7 +76,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowPartitionResponse.
+        r"""Sets the kind of this ShowPartitionResponse.
 
         资源类型
 
@@ -87,7 +87,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowPartitionResponse.
+        r"""Gets the api_version of this ShowPartitionResponse.
 
         API版本
 
@@ -98,7 +98,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowPartitionResponse.
+        r"""Sets the api_version of this ShowPartitionResponse.
 
         API版本
 
@@ -109,7 +109,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowPartitionResponse.
+        r"""Gets the metadata of this ShowPartitionResponse.
 
         :return: The metadata of this ShowPartitionResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionMetadata`
@@ -118,7 +118,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowPartitionResponse.
+        r"""Sets the metadata of this ShowPartitionResponse.
 
         :param metadata: The metadata of this ShowPartitionResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.PartitionMetadata`
@@ -127,7 +127,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowPartitionResponse.
+        r"""Gets the spec of this ShowPartitionResponse.
 
         :return: The spec of this ShowPartitionResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionSpec`
@@ -136,7 +136,7 @@ class ShowPartitionResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowPartitionResponse.
+        r"""Sets the spec of this ShowPartitionResponse.
 
         :param spec: The spec of this ShowPartitionResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.PartitionSpec`

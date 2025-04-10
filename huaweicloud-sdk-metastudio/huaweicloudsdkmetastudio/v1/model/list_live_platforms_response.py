@@ -28,7 +28,7 @@ class ListLivePlatformsResponse(SdkResponse):
     }
 
     def __init__(self, live_platforms=None, x_request_id=None):
-        """ListLivePlatformsResponse
+        r"""ListLivePlatformsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLivePlatformsResponse(SdkResponse):
 
     @property
     def live_platforms(self):
-        """Gets the live_platforms of this ListLivePlatformsResponse.
+        r"""Gets the live_platforms of this ListLivePlatformsResponse.
 
         直播平台列表
 
@@ -62,7 +62,7 @@ class ListLivePlatformsResponse(SdkResponse):
 
     @live_platforms.setter
     def live_platforms(self, live_platforms):
-        """Sets the live_platforms of this ListLivePlatformsResponse.
+        r"""Sets the live_platforms of this ListLivePlatformsResponse.
 
         直播平台列表
 
@@ -73,7 +73,7 @@ class ListLivePlatformsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListLivePlatformsResponse.
+        r"""Gets the x_request_id of this ListLivePlatformsResponse.
 
         :return: The x_request_id of this ListLivePlatformsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListLivePlatformsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListLivePlatformsResponse.
+        r"""Sets the x_request_id of this ListLivePlatformsResponse.
 
         :param x_request_id: The x_request_id of this ListLivePlatformsResponse.
         :type x_request_id: str

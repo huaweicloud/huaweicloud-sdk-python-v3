@@ -26,7 +26,7 @@ class GetScriptJobInfoResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """GetScriptJobInfoResponse
+        r"""GetScriptJobInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetScriptJobInfoResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this GetScriptJobInfoResponse.
+        r"""Gets the data of this GetScriptJobInfoResponse.
 
         :return: The data of this GetScriptJobInfoResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.JobScriptOrderInfoModel`
@@ -53,7 +53,7 @@ class GetScriptJobInfoResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this GetScriptJobInfoResponse.
+        r"""Sets the data of this GetScriptJobInfoResponse.
 
         :param data: The data of this GetScriptJobInfoResponse.
         :type data: :class:`huaweicloudsdkcoc.v1.JobScriptOrderInfoModel`

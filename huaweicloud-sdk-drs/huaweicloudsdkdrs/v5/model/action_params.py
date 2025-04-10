@@ -47,7 +47,7 @@ class ActionParams:
     }
 
     def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, is_only_init_task=None, force_delete=None, public_ip_config=None, replay_config=None, repair_info=None):
-        """ActionParams
+        r"""ActionParams
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ActionParams:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ActionParams.
+        r"""Gets the endpoints of this ActionParams.
 
         测试连接数据库信息。
 
@@ -131,7 +131,7 @@ class ActionParams:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ActionParams.
+        r"""Sets the endpoints of this ActionParams.
 
         测试连接数据库信息。
 
@@ -142,7 +142,7 @@ class ActionParams:
 
     @property
     def precheck_mode(self):
-        """Gets the precheck_mode of this ActionParams.
+        r"""Gets the precheck_mode of this ActionParams.
 
         预检查模式。
 
@@ -153,7 +153,7 @@ class ActionParams:
 
     @precheck_mode.setter
     def precheck_mode(self, precheck_mode):
-        """Sets the precheck_mode of this ActionParams.
+        r"""Sets the precheck_mode of this ActionParams.
 
         预检查模式。
 
@@ -164,7 +164,7 @@ class ActionParams:
 
     @property
     def skip_precheck_info(self):
-        """Gets the skip_precheck_info of this ActionParams.
+        r"""Gets the skip_precheck_info of this ActionParams.
 
         :return: The skip_precheck_info of this ActionParams.
         :rtype: :class:`huaweicloudsdkdrs.v5.SkipPreCheckInfo`
@@ -173,7 +173,7 @@ class ActionParams:
 
     @skip_precheck_info.setter
     def skip_precheck_info(self, skip_precheck_info):
-        """Sets the skip_precheck_info of this ActionParams.
+        r"""Sets the skip_precheck_info of this ActionParams.
 
         :param skip_precheck_info: The skip_precheck_info of this ActionParams.
         :type skip_precheck_info: :class:`huaweicloudsdkdrs.v5.SkipPreCheckInfo`
@@ -182,7 +182,7 @@ class ActionParams:
 
     @property
     def pause_mode(self):
-        """Gets the pause_mode of this ActionParams.
+        r"""Gets the pause_mode of this ActionParams.
 
         任务暂停模式。
 
@@ -193,7 +193,7 @@ class ActionParams:
 
     @pause_mode.setter
     def pause_mode(self, pause_mode):
-        """Sets the pause_mode of this ActionParams.
+        r"""Sets the pause_mode of this ActionParams.
 
         任务暂停模式。
 
@@ -204,7 +204,7 @@ class ActionParams:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ActionParams.
+        r"""Gets the start_time of this ActionParams.
 
         任务定时启动时间。
 
@@ -215,7 +215,7 @@ class ActionParams:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ActionParams.
+        r"""Sets the start_time of this ActionParams.
 
         任务定时启动时间。
 
@@ -226,7 +226,7 @@ class ActionParams:
 
     @property
     def compare_task_param(self):
-        """Gets the compare_task_param of this ActionParams.
+        r"""Gets the compare_task_param of this ActionParams.
 
         :return: The compare_task_param of this ActionParams.
         :rtype: :class:`huaweicloudsdkdrs.v5.CompareTaskParams`
@@ -235,7 +235,7 @@ class ActionParams:
 
     @compare_task_param.setter
     def compare_task_param(self, compare_task_param):
-        """Sets the compare_task_param of this ActionParams.
+        r"""Sets the compare_task_param of this ActionParams.
 
         :param compare_task_param: The compare_task_param of this ActionParams.
         :type compare_task_param: :class:`huaweicloudsdkdrs.v5.CompareTaskParams`
@@ -244,7 +244,7 @@ class ActionParams:
 
     @property
     def is_sync_re_edit(self):
-        """Gets the is_sync_re_edit of this ActionParams.
+        r"""Gets the is_sync_re_edit of this ActionParams.
 
         再编辑任务启动时取值true。
 
@@ -255,7 +255,7 @@ class ActionParams:
 
     @is_sync_re_edit.setter
     def is_sync_re_edit(self, is_sync_re_edit):
-        """Sets the is_sync_re_edit of this ActionParams.
+        r"""Sets the is_sync_re_edit of this ActionParams.
 
         再编辑任务启动时取值true。
 
@@ -266,7 +266,7 @@ class ActionParams:
 
     @property
     def is_only_init_task(self):
-        """Gets the is_only_init_task of this ActionParams.
+        r"""Gets the is_only_init_task of this ActionParams.
 
         是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
 
@@ -277,7 +277,7 @@ class ActionParams:
 
     @is_only_init_task.setter
     def is_only_init_task(self, is_only_init_task):
-        """Sets the is_only_init_task of this ActionParams.
+        r"""Sets the is_only_init_task of this ActionParams.
 
         是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
 
@@ -288,7 +288,7 @@ class ActionParams:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this ActionParams.
+        r"""Gets the force_delete of this ActionParams.
 
         强制结束时取值为true。
 
@@ -299,7 +299,7 @@ class ActionParams:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this ActionParams.
+        r"""Sets the force_delete of this ActionParams.
 
         强制结束时取值为true。
 
@@ -310,7 +310,7 @@ class ActionParams:
 
     @property
     def public_ip_config(self):
-        """Gets the public_ip_config of this ActionParams.
+        r"""Gets the public_ip_config of this ActionParams.
 
         :return: The public_ip_config of this ActionParams.
         :rtype: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
@@ -319,7 +319,7 @@ class ActionParams:
 
     @public_ip_config.setter
     def public_ip_config(self, public_ip_config):
-        """Sets the public_ip_config of this ActionParams.
+        r"""Sets the public_ip_config of this ActionParams.
 
         :param public_ip_config: The public_ip_config of this ActionParams.
         :type public_ip_config: :class:`huaweicloudsdkdrs.v5.PublicIpConfig`
@@ -328,7 +328,7 @@ class ActionParams:
 
     @property
     def replay_config(self):
-        """Gets the replay_config of this ActionParams.
+        r"""Gets the replay_config of this ActionParams.
 
         :return: The replay_config of this ActionParams.
         :rtype: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
@@ -337,7 +337,7 @@ class ActionParams:
 
     @replay_config.setter
     def replay_config(self, replay_config):
-        """Sets the replay_config of this ActionParams.
+        r"""Sets the replay_config of this ActionParams.
 
         :param replay_config: The replay_config of this ActionParams.
         :type replay_config: :class:`huaweicloudsdkdrs.v5.ReplayConfigInfo`
@@ -346,7 +346,7 @@ class ActionParams:
 
     @property
     def repair_info(self):
-        """Gets the repair_info of this ActionParams.
+        r"""Gets the repair_info of this ActionParams.
 
         :return: The repair_info of this ActionParams.
         :rtype: :class:`huaweicloudsdkdrs.v5.ActionParamsRepairInfo`
@@ -355,7 +355,7 @@ class ActionParams:
 
     @repair_info.setter
     def repair_info(self, repair_info):
-        """Sets the repair_info of this ActionParams.
+        r"""Sets the repair_info of this ActionParams.
 
         :param repair_info: The repair_info of this ActionParams.
         :type repair_info: :class:`huaweicloudsdkdrs.v5.ActionParamsRepairInfo`

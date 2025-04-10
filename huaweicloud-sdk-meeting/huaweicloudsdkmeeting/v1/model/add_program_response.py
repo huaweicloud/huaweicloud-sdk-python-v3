@@ -24,7 +24,7 @@ class AddProgramResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddProgramResponse
+        r"""AddProgramResponse
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class ListRestoreTimeRequest:
     }
 
     def __init__(self, instance_id=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListRestoreTimeRequest
+        r"""ListRestoreTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRestoreTimeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRestoreTimeRequest.
+        r"""Gets the instance_id of this ListRestoreTimeRequest.
 
         实例Id，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -81,7 +81,7 @@ class ListRestoreTimeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRestoreTimeRequest.
+        r"""Sets the instance_id of this ListRestoreTimeRequest.
 
         实例Id，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -92,7 +92,7 @@ class ListRestoreTimeRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRestoreTimeRequest.
+        r"""Gets the start_time of this ListRestoreTimeRequest.
 
         查询的可恢复时间段的开始时间点，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  [例如北京时间偏移显示为+0800。默认值为当前查询时间的前一天。]
 
@@ -103,7 +103,7 @@ class ListRestoreTimeRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRestoreTimeRequest.
+        r"""Sets the start_time of this ListRestoreTimeRequest.
 
         查询的可恢复时间段的开始时间点，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  [例如北京时间偏移显示为+0800。默认值为当前查询时间的前一天。]
 
@@ -114,7 +114,7 @@ class ListRestoreTimeRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRestoreTimeRequest.
+        r"""Gets the end_time of this ListRestoreTimeRequest.
 
         查询的可恢复时间段的结束时间点，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  [例如北京时间偏移显示为+0800。默认值为当前查询时间。]
 
@@ -125,7 +125,7 @@ class ListRestoreTimeRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRestoreTimeRequest.
+        r"""Sets the end_time of this ListRestoreTimeRequest.
 
         查询的可恢复时间段的结束时间点，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  [例如北京时间偏移显示为+0800。默认值为当前查询时间。]
 
@@ -136,7 +136,7 @@ class ListRestoreTimeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRestoreTimeRequest.
+        r"""Gets the offset of this ListRestoreTimeRequest.
 
         偏移量，表示查询该偏移量后面的记录，默认值为0。
 
@@ -147,7 +147,7 @@ class ListRestoreTimeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRestoreTimeRequest.
+        r"""Sets the offset of this ListRestoreTimeRequest.
 
         偏移量，表示查询该偏移量后面的记录，默认值为0。
 
@@ -158,7 +158,7 @@ class ListRestoreTimeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRestoreTimeRequest.
+        r"""Gets the limit of this ListRestoreTimeRequest.
 
         查询返回记录的数量上限值，取值范围为0~1000，默认值为1000。
 
@@ -169,7 +169,7 @@ class ListRestoreTimeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRestoreTimeRequest.
+        r"""Sets the limit of this ListRestoreTimeRequest.
 
         查询返回记录的数量上限值，取值范围为0~1000，默认值为1000。
 

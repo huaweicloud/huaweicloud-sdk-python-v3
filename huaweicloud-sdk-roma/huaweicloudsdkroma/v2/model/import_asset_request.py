@@ -27,7 +27,7 @@ class ImportAssetRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ImportAssetRequest
+        r"""ImportAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportAssetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ImportAssetRequest.
+        r"""Gets the instance_id of this ImportAssetRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ImportAssetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ImportAssetRequest.
+        r"""Sets the instance_id of this ImportAssetRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ImportAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportAssetRequest.
+        r"""Gets the body of this ImportAssetRequest.
 
         :return: The body of this ImportAssetRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`
@@ -80,7 +80,7 @@ class ImportAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportAssetRequest.
+        r"""Sets the body of this ImportAssetRequest.
 
         :param body: The body of this ImportAssetRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`

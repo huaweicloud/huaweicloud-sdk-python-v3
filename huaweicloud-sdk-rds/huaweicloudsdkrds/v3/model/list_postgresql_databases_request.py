@@ -33,7 +33,7 @@ class ListPostgresqlDatabasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db=None, page=None, limit=None):
-        """ListPostgresqlDatabasesRequest
+        r"""ListPostgresqlDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListPostgresqlDatabasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPostgresqlDatabasesRequest.
+        r"""Gets the x_language of this ListPostgresqlDatabasesRequest.
 
         语言
 
@@ -79,7 +79,7 @@ class ListPostgresqlDatabasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPostgresqlDatabasesRequest.
+        r"""Sets the x_language of this ListPostgresqlDatabasesRequest.
 
         语言
 
@@ -90,7 +90,7 @@ class ListPostgresqlDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPostgresqlDatabasesRequest.
+        r"""Gets the instance_id of this ListPostgresqlDatabasesRequest.
 
         实例ID。
 
@@ -101,7 +101,7 @@ class ListPostgresqlDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPostgresqlDatabasesRequest.
+        r"""Sets the instance_id of this ListPostgresqlDatabasesRequest.
 
         实例ID。
 
@@ -112,7 +112,7 @@ class ListPostgresqlDatabasesRequest:
 
     @property
     def db(self):
-        """Gets the db of this ListPostgresqlDatabasesRequest.
+        r"""Gets the db of this ListPostgresqlDatabasesRequest.
 
         数据库名称；忽略大小写模糊查询。
 
@@ -123,7 +123,7 @@ class ListPostgresqlDatabasesRequest:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this ListPostgresqlDatabasesRequest.
+        r"""Sets the db of this ListPostgresqlDatabasesRequest.
 
         数据库名称；忽略大小写模糊查询。
 
@@ -134,7 +134,7 @@ class ListPostgresqlDatabasesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListPostgresqlDatabasesRequest.
+        r"""Gets the page of this ListPostgresqlDatabasesRequest.
 
         分页页码，从1开始。
 
@@ -145,7 +145,7 @@ class ListPostgresqlDatabasesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListPostgresqlDatabasesRequest.
+        r"""Sets the page of this ListPostgresqlDatabasesRequest.
 
         分页页码，从1开始。
 
@@ -156,7 +156,7 @@ class ListPostgresqlDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPostgresqlDatabasesRequest.
+        r"""Gets the limit of this ListPostgresqlDatabasesRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -167,7 +167,7 @@ class ListPostgresqlDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPostgresqlDatabasesRequest.
+        r"""Sets the limit of this ListPostgresqlDatabasesRequest.
 
         每页数据条数。取值范围[1, 100]。
 

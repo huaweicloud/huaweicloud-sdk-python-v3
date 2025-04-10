@@ -34,7 +34,7 @@ class AadClient(Client):
         return client_builder
 
     def add_black_white_ip_list(self, request):
-        """高防实例添加黑白名单
+        r"""高防实例添加黑白名单
 
         高防实例添加黑白名单
         
@@ -99,7 +99,7 @@ class AadClient(Client):
         return http_info
 
     def add_policy_black_and_white_ip_list(self, request):
-        """策略添加黑白名单
+        r"""策略添加黑白名单
 
         策略添加黑白名单
         
@@ -166,7 +166,7 @@ class AadClient(Client):
         return http_info
 
     def associate_ip_to_policy(self, request):
-        """策略绑定防护对象
+        r"""策略绑定防护对象
 
         策略绑定防护对象
         
@@ -233,7 +233,7 @@ class AadClient(Client):
         return http_info
 
     def associate_ip_to_policy_and_package(self, request):
-        """策略和防护包绑定防护对象
+        r"""策略和防护包绑定防护对象
 
         策略和防护包绑定防护对象
         
@@ -300,7 +300,7 @@ class AadClient(Client):
         return http_info
 
     def batch_create_instance_ip_rule(self, request):
-        """批量创建高防实例IP的转发规则
+        r"""批量创建高防实例IP的转发规则
 
         批量创建高防实例IP的转发规则
         
@@ -369,7 +369,7 @@ class AadClient(Client):
         return http_info
 
     def batch_delete_instance_ip_rule(self, request):
-        """批量删除高防实例IP的转发规则
+        r"""批量删除高防实例IP的转发规则
 
         批量删除高防实例IP的转发规则
         
@@ -438,7 +438,7 @@ class AadClient(Client):
         return http_info
 
     def create_aad_domain(self, request):
-        """创建防护域名
+        r"""创建防护域名
 
         创建防护域名
         
@@ -503,7 +503,7 @@ class AadClient(Client):
         return http_info
 
     def create_policy(self, request):
-        """创建策略
+        r"""创建策略
 
         创建策略
         
@@ -568,7 +568,7 @@ class AadClient(Client):
         return http_info
 
     def delete_alarm_config(self, request):
-        """删除告警配置
+        r"""删除告警配置
 
         删除告警配置
         
@@ -631,7 +631,7 @@ class AadClient(Client):
         return http_info
 
     def delete_black_white_ip_list(self, request):
-        """高防实例删除黑白名单
+        r"""高防实例删除黑白名单
 
         高防实例删除黑白名单
         
@@ -696,7 +696,7 @@ class AadClient(Client):
         return http_info
 
     def delete_policy(self, request):
-        """删除策略
+        r"""删除策略
 
         删除策略
         
@@ -761,7 +761,7 @@ class AadClient(Client):
         return http_info
 
     def delete_policy_black_and_white_ip_list(self, request):
-        """策略删除黑白名单
+        r"""策略删除黑白名单
 
         策略删除黑白名单
         
@@ -828,7 +828,7 @@ class AadClient(Client):
         return http_info
 
     def disassociate_ip_from_policy(self, request):
-        """策略解绑防护对象
+        r"""策略解绑防护对象
 
         策略解绑防护对象
         
@@ -895,7 +895,7 @@ class AadClient(Client):
         return http_info
 
     def disassociate_ip_from_policy_and_package(self, request):
-        """策略和防护包解绑防护对象
+        r"""策略和防护包解绑防护对象
 
         策略和防护包解绑防护对象
         
@@ -962,7 +962,7 @@ class AadClient(Client):
         return http_info
 
     def list_domain(self, request):
-        """查询域名列表
+        r"""查询域名列表
 
         查询域名列表
         
@@ -1025,7 +1025,7 @@ class AadClient(Client):
         return http_info
 
     def list_instance(self, request):
-        """查询高防实例列表
+        r"""查询高防实例列表
 
         查询高防实例列表
         
@@ -1088,7 +1088,7 @@ class AadClient(Client):
         return http_info
 
     def list_instance_id(self, request):
-        """查询域名关联的实例ID
+        r"""查询域名关联的实例ID
 
         查询域名关联的实例ID
         
@@ -1153,7 +1153,7 @@ class AadClient(Client):
         return http_info
 
     def list_instance_ip_rule(self, request):
-        """查询高防实例IP的转发规则列表
+        r"""查询高防实例IP的转发规则列表
 
         查询高防实例IP的转发规则列表
         
@@ -1220,7 +1220,7 @@ class AadClient(Client):
         return http_info
 
     def list_package(self, request):
-        """查询防护包列表
+        r"""查询防护包列表
 
         查询防护包列表
         
@@ -1283,7 +1283,7 @@ class AadClient(Client):
         return http_info
 
     def list_peak(self, request):
-        """查询流量峰值、攻击计数
+        r"""查询流量峰值、攻击计数
 
         查询流量峰值、攻击计数
         
@@ -1354,7 +1354,7 @@ class AadClient(Client):
         return http_info
 
     def list_policy(self, request):
-        """查询策略列表
+        r"""查询策略列表
 
         查询策略列表
         
@@ -1423,7 +1423,7 @@ class AadClient(Client):
         return http_info
 
     def list_protected_ip(self, request):
-        """查询防护对象列表
+        r"""查询防护对象列表
 
         查询防护对象列表
         
@@ -1498,7 +1498,7 @@ class AadClient(Client):
         return http_info
 
     def list_source_ips(self, request):
-        """查询高防回源IP段列表
+        r"""查询高防回源IP段列表
 
         查询高防回源IP段列表
         
@@ -1561,7 +1561,7 @@ class AadClient(Client):
         return http_info
 
     def list_unbound_protected_ip(self, request):
-        """查询可绑定的防护对象列表
+        r"""查询可绑定的防护对象列表
 
         查询可绑定的防护对象列表
         
@@ -1630,7 +1630,7 @@ class AadClient(Client):
         return http_info
 
     def modify_domain_web_switch(self, request):
-        """修改域名WEB基础防护开关/CC防护开关
+        r"""修改域名WEB基础防护开关/CC防护开关
 
         修改域名WEB基础防护开关/CC防护开关
         
@@ -1695,7 +1695,7 @@ class AadClient(Client):
         return http_info
 
     def set_cert_for_domain(self, request):
-        """上传/修改域名对应证书
+        r"""上传/修改域名对应证书
 
         上传/修改域名对应证书
         
@@ -1760,7 +1760,7 @@ class AadClient(Client):
         return http_info
 
     def show_alarm_config(self, request):
-        """查询告警配置
+        r"""查询告警配置
 
         查询告警配置
         
@@ -1823,7 +1823,7 @@ class AadClient(Client):
         return http_info
 
     def show_policy(self, request):
-        """查询策略详情
+        r"""查询策略详情
 
         查询策略详情
         
@@ -1888,7 +1888,7 @@ class AadClient(Client):
         return http_info
 
     def update_alarm_config(self, request):
-        """设置告警配置
+        r"""设置告警配置
 
         设置告警配置
         
@@ -1953,7 +1953,7 @@ class AadClient(Client):
         return http_info
 
     def update_domain(self, request):
-        """更新域名信息
+        r"""更新域名信息
 
         更新域名源站配置信息
         
@@ -2020,7 +2020,7 @@ class AadClient(Client):
         return http_info
 
     def update_instance_ip_rule(self, request):
-        """修改高防实例转发配置的源站IP
+        r"""修改高防实例转发配置的源站IP
 
         修改高防实例转发配置的源站IP
         
@@ -2091,7 +2091,7 @@ class AadClient(Client):
         return http_info
 
     def update_package_ip(self, request):
-        """更新防护包绑定的全量防护对象
+        r"""更新防护包绑定的全量防护对象
 
         更新防护包绑定的全量防护对象
         
@@ -2158,7 +2158,7 @@ class AadClient(Client):
         return http_info
 
     def update_package_name(self, request):
-        """更新防护包名字
+        r"""更新防护包名字
 
         更新防护包名字
         
@@ -2225,7 +2225,7 @@ class AadClient(Client):
         return http_info
 
     def update_policy(self, request):
-        """更新策略
+        r"""更新策略
 
         更新策略
         
@@ -2292,7 +2292,7 @@ class AadClient(Client):
         return http_info
 
     def update_tag_for_protected_ip(self, request):
-        """防护对象设置标签
+        r"""防护对象设置标签
 
         防护对象设置标签
         
@@ -2357,7 +2357,7 @@ class AadClient(Client):
         return http_info
 
     def execute_unblock_ip(self, request):
-        """解封IP
+        r"""解封IP
 
         解封IP
         
@@ -2424,7 +2424,7 @@ class AadClient(Client):
         return http_info
 
     def list_block_ips(self, request):
-        """查询租户封堵列表
+        r"""查询租户封堵列表
 
         查询租户封堵列表
         
@@ -2489,7 +2489,7 @@ class AadClient(Client):
         return http_info
 
     def list_unblock_quota_statistics(self, request):
-        """查询解封配额
+        r"""查询解封配额
 
         查询解封配额
         
@@ -2554,7 +2554,7 @@ class AadClient(Client):
         return http_info
 
     def show_block_statistics(self, request):
-        """查询封堵统计数据
+        r"""查询封堵统计数据
 
         查询封堵统计数据
         
@@ -2619,7 +2619,7 @@ class AadClient(Client):
         return http_info
 
     def show_unblock_record(self, request):
-        """查询租户解封记录
+        r"""查询租户解封记录
 
         查询租户解封记录
         

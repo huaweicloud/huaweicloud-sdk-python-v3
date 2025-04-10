@@ -33,7 +33,7 @@ class VpcepInfoRsp:
     }
 
     def __init__(self, vpcep_service_id=None, vpcep_service_name=None, vpcep_client_ip=None, vpcep_client_port=None, kafka_broker_ip=None):
-        """VpcepInfoRsp
+        r"""VpcepInfoRsp
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class VpcepInfoRsp:
 
     @property
     def vpcep_service_id(self):
-        """Gets the vpcep_service_id of this VpcepInfoRsp.
+        r"""Gets the vpcep_service_id of this VpcepInfoRsp.
 
         Kafka的VPCEP的service id
 
@@ -78,7 +78,7 @@ class VpcepInfoRsp:
 
     @vpcep_service_id.setter
     def vpcep_service_id(self, vpcep_service_id):
-        """Sets the vpcep_service_id of this VpcepInfoRsp.
+        r"""Sets the vpcep_service_id of this VpcepInfoRsp.
 
         Kafka的VPCEP的service id
 
@@ -89,7 +89,7 @@ class VpcepInfoRsp:
 
     @property
     def vpcep_service_name(self):
-        """Gets the vpcep_service_name of this VpcepInfoRsp.
+        r"""Gets the vpcep_service_name of this VpcepInfoRsp.
 
         Kafka的VPCEP的service name
 
@@ -100,7 +100,7 @@ class VpcepInfoRsp:
 
     @vpcep_service_name.setter
     def vpcep_service_name(self, vpcep_service_name):
-        """Sets the vpcep_service_name of this VpcepInfoRsp.
+        r"""Sets the vpcep_service_name of this VpcepInfoRsp.
 
         Kafka的VPCEP的service name
 
@@ -111,7 +111,7 @@ class VpcepInfoRsp:
 
     @property
     def vpcep_client_ip(self):
-        """Gets the vpcep_client_ip of this VpcepInfoRsp.
+        r"""Gets the vpcep_client_ip of this VpcepInfoRsp.
 
         Kafka的VPCEP的client ip
 
@@ -122,7 +122,7 @@ class VpcepInfoRsp:
 
     @vpcep_client_ip.setter
     def vpcep_client_ip(self, vpcep_client_ip):
-        """Sets the vpcep_client_ip of this VpcepInfoRsp.
+        r"""Sets the vpcep_client_ip of this VpcepInfoRsp.
 
         Kafka的VPCEP的client ip
 
@@ -133,7 +133,7 @@ class VpcepInfoRsp:
 
     @property
     def vpcep_client_port(self):
-        """Gets the vpcep_client_port of this VpcepInfoRsp.
+        r"""Gets the vpcep_client_port of this VpcepInfoRsp.
 
         Kafka的VPCEP的client port
 
@@ -144,7 +144,7 @@ class VpcepInfoRsp:
 
     @vpcep_client_port.setter
     def vpcep_client_port(self, vpcep_client_port):
-        """Sets the vpcep_client_port of this VpcepInfoRsp.
+        r"""Sets the vpcep_client_port of this VpcepInfoRsp.
 
         Kafka的VPCEP的client port
 
@@ -155,7 +155,7 @@ class VpcepInfoRsp:
 
     @property
     def kafka_broker_ip(self):
-        """Gets the kafka_broker_ip of this VpcepInfoRsp.
+        r"""Gets the kafka_broker_ip of this VpcepInfoRsp.
 
         Kafka的Broker ip
 
@@ -166,7 +166,7 @@ class VpcepInfoRsp:
 
     @kafka_broker_ip.setter
     def kafka_broker_ip(self, kafka_broker_ip):
-        """Sets the kafka_broker_ip of this VpcepInfoRsp.
+        r"""Sets the kafka_broker_ip of this VpcepInfoRsp.
 
         Kafka的Broker ip
 

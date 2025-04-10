@@ -24,7 +24,7 @@ class CreateSyncEventsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateSyncEventsResponse
+        r"""CreateSyncEventsResponse
 
         The model defined in huaweicloud sdk
 

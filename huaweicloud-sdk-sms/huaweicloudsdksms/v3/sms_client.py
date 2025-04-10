@@ -34,7 +34,7 @@ class SmsClient(Client):
         return client_builder
 
     def check_net_acl(self, request):
-        """检查网卡安全组端口是否符合要求
+        r"""检查网卡安全组端口是否符合要求
 
         检查网卡安全组。
         
@@ -107,7 +107,7 @@ class SmsClient(Client):
         return http_info
 
     def collect_log(self, request):
-        """上传迁移任务的日志
+        r"""上传迁移任务的日志
 
         上传迁移任务的日志。
         
@@ -174,7 +174,7 @@ class SmsClient(Client):
         return http_info
 
     def create_migproject(self, request):
-        """新建迁移项目
+        r"""新建迁移项目
 
         新建迁移项目。
         
@@ -239,7 +239,7 @@ class SmsClient(Client):
         return http_info
 
     def create_privacy_agreements(self, request):
-        """同意隐私协议
+        r"""同意隐私协议
 
         同意隐私协议接口。
         
@@ -302,7 +302,7 @@ class SmsClient(Client):
         return http_info
 
     def create_task(self, request):
-        """创建迁移任务
+        r"""创建迁移任务
 
         根据源端服务器创建一个迁移任务。
         
@@ -367,7 +367,7 @@ class SmsClient(Client):
         return http_info
 
     def create_template(self, request):
-        """新增模板信息
+        r"""新增模板信息
 
         新增源端模板信息。
         
@@ -432,7 +432,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_migproject(self, request):
-        """删除迁移项目
+        r"""删除迁移项目
 
         删除指定ID的迁移项目。
         
@@ -497,7 +497,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_server(self, request):
-        """删除指定ID的源端服务器信息
+        r"""删除指定ID的源端服务器信息
 
         从主机迁移服务界面上删除指定ID的源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
         
@@ -562,7 +562,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_servers(self, request):
-        """批量删除源端服务器信息
+        r"""批量删除源端服务器信息
 
         批量删除源端服务器信息。一旦源端服务器信息被删除，则只能通过重启源端服务器上的迁移Agent来将源端服务器信息重新添加在主机迁移服务界面。
         
@@ -627,7 +627,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_task(self, request):
-        """删除指定ID的迁移任务
+        r"""删除指定ID的迁移任务
 
         删除指定ID的迁移任务。
         
@@ -692,7 +692,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_tasks(self, request):
-        """批量删除迁移任务
+        r"""批量删除迁移任务
 
         批量删除迁移任务。
         
@@ -757,7 +757,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_template(self, request):
-        """删除指定ID的模板
+        r"""删除指定ID的模板
 
         删除指定ID的模板。
         
@@ -822,7 +822,7 @@ class SmsClient(Client):
         return http_info
 
     def delete_templates(self, request):
-        """批量删除指定ID的模板
+        r"""批量删除指定ID的模板
 
         批量删除指定ID的模板。
         
@@ -887,7 +887,7 @@ class SmsClient(Client):
         return http_info
 
     def list_error_servers(self, request):
-        """查询待迁移源端的所有错误
+        r"""查询待迁移源端的所有错误
 
         主机迁移过程中可能发生错误，使用该接口可以批量查询迁移过程中出现错误的源端服务器信息，以及它们的错误信息。
         
@@ -958,7 +958,7 @@ class SmsClient(Client):
         return http_info
 
     def list_migprojects(self, request):
-        """获取项目列表
+        r"""获取项目列表
 
         主机迁移服务中可以使用迁移项目来对源端进行项目管理，使用该接口获取当前账户下所有的迁移项目列表。
         
@@ -1025,7 +1025,7 @@ class SmsClient(Client):
         return http_info
 
     def list_servers(self, request):
-        """查询源端服务器列表
+        r"""查询源端服务器列表
 
         用户在源端安装并成功启动Agent后，Agent会将源端服务器信息注册在主机迁移服务中，调用该接口查询已注册的源端服务器列表信息。
         
@@ -1110,7 +1110,7 @@ class SmsClient(Client):
         return http_info
 
     def list_tasks(self, request):
-        """查询迁移任务列表
+        r"""查询迁移任务列表
 
         在设置目的端后，主机迁移服务会自动创建迁移任务，使用该接口可以查询迁移任务列表。
         
@@ -1187,7 +1187,7 @@ class SmsClient(Client):
         return http_info
 
     def list_templates(self, request):
-        """查询模板列表
+        r"""查询模板列表
 
         查询弹性云服务器模板列表，迁移时选择“新建服务器”时可使用该模板创建弹性云服务器。
         
@@ -1260,7 +1260,7 @@ class SmsClient(Client):
         return http_info
 
     def register_server(self, request):
-        """上报源端服务器基本信息
+        r"""上报源端服务器基本信息
 
         上报源端服务器信息，上报成功后会在sms服务器列表中看到对应的源端服务器信息。
         
@@ -1325,7 +1325,7 @@ class SmsClient(Client):
         return http_info
 
     def show_cert_key(self, request):
-        """获取SSL证书和私钥
+        r"""获取SSL证书和私钥
 
         当迁移采用块级迁移的方式时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载迁移传输过程所需要的证书和私钥(PEM格式)。
         
@@ -1392,7 +1392,7 @@ class SmsClient(Client):
         return http_info
 
     def show_command(self, request):
-        """获取服务端命令
+        r"""获取服务端命令
 
         迁移Agent调用该接口从SMS服务端获取下发给指定源端迁移Agent的命令。
         
@@ -1457,7 +1457,7 @@ class SmsClient(Client):
         return http_info
 
     def show_config_setting(self, request):
-        """查询配置资源
+        r"""查询配置资源
 
         使用该接口查询指定任务的指定配置类型的配置信息
         
@@ -1524,7 +1524,7 @@ class SmsClient(Client):
         return http_info
 
     def show_consistency_result(self, request):
-        """获取一致性校验结果
+        r"""获取一致性校验结果
 
         获取一致性校验结果简报
         
@@ -1589,7 +1589,7 @@ class SmsClient(Client):
         return http_info
 
     def show_migproject(self, request):
-        """查询指定ID迁移项目详情
+        r"""查询指定ID迁移项目详情
 
         查询指定ID的迁移项目详情。
         
@@ -1654,7 +1654,7 @@ class SmsClient(Client):
         return http_info
 
     def show_overview(self, request):
-        """获取服务器总览
+        r"""获取服务器总览
 
         获取服务器总览
         
@@ -1717,7 +1717,7 @@ class SmsClient(Client):
         return http_info
 
     def show_passphrase(self, request):
-        """查询指定任务ID的安全传输通道的证书passphrase
+        r"""查询指定任务ID的安全传输通道的证书passphrase
 
         查询指定任务ID的安全传输通道的证书passphrase。
         
@@ -1782,7 +1782,7 @@ class SmsClient(Client):
         return http_info
 
     def show_privacy_agreements(self, request):
-        """查询用户是否同意隐私协议
+        r"""查询用户是否同意隐私协议
 
         查询用户是否同意隐私协议接口。
         
@@ -1845,7 +1845,7 @@ class SmsClient(Client):
         return http_info
 
     def show_server(self, request):
-        """查询指定ID的源端服务器
+        r"""查询指定ID的源端服务器
 
         迁移Agent将源端服务器信息上报到主机迁移服务后，主机迁移服务会对迁移的可行性进行检测，该接口返回源端服务器的基本信息和检查结果。
         
@@ -1910,7 +1910,7 @@ class SmsClient(Client):
         return http_info
 
     def show_sha256(self, request):
-        """计算sha256
+        r"""计算sha256
 
         计算sha256，加密字段值为uuid。
         
@@ -1977,7 +1977,7 @@ class SmsClient(Client):
         return http_info
 
     def show_target_password(self, request):
-        """查询指定ID的模板中的目的端服务器的密码
+        r"""查询指定ID的模板中的目的端服务器的密码
 
         查询指定ID的模板中的目的端服务器的密码。
         
@@ -2042,7 +2042,7 @@ class SmsClient(Client):
         return http_info
 
     def show_task(self, request):
-        """查询指定ID的迁移任务
+        r"""查询指定ID的迁移任务
 
         查询指定ID的迁移任务。
         
@@ -2107,7 +2107,7 @@ class SmsClient(Client):
         return http_info
 
     def show_template(self, request):
-        """查询指定ID模板信息
+        r"""查询指定ID模板信息
 
         查询指定ID的弹性云服务器模板信息。
         
@@ -2172,7 +2172,7 @@ class SmsClient(Client):
         return http_info
 
     def shows_speed_limits(self, request):
-        """查询任务限速规则
+        r"""查询任务限速规则
 
         按时间段查询迁移任务的迁移速率。
         
@@ -2237,7 +2237,7 @@ class SmsClient(Client):
         return http_info
 
     def unlock_target_ecs(self, request):
-        """解锁指定任务的目的端服务器
+        r"""解锁指定任务的目的端服务器
 
         解锁指定任务的目的端服务器。
         
@@ -2304,7 +2304,7 @@ class SmsClient(Client):
         return http_info
 
     def update_command_result(self, request):
-        """上报服务端命令执行结果
+        r"""上报服务端命令执行结果
 
         迁移Agent调用该接口向SMS服务端反馈指定指令的执行结果。
         
@@ -2371,7 +2371,7 @@ class SmsClient(Client):
         return http_info
 
     def update_consistency_result(self, request):
-        """上传一致性校验结果
+        r"""上传一致性校验结果
 
         Agent 上传一致性校验结果简报
         
@@ -2438,7 +2438,7 @@ class SmsClient(Client):
         return http_info
 
     def update_copy_state(self, request):
-        """更新任务对应源端复制状态
+        r"""更新任务对应源端复制状态
 
         更新任务对应源端复制状态。
         
@@ -2505,7 +2505,7 @@ class SmsClient(Client):
         return http_info
 
     def update_default_migproject(self, request):
-        """更新默认迁移项目
+        r"""更新默认迁移项目
 
         更改默认迁移项目，注册源端会注册在当前的默认项目下。
         
@@ -2570,7 +2570,7 @@ class SmsClient(Client):
         return http_info
 
     def update_disk_info(self, request):
-        """更新磁盘信息
+        r"""更新磁盘信息
 
         更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息。
         
@@ -2637,7 +2637,7 @@ class SmsClient(Client):
         return http_info
 
     def update_migproject(self, request):
-        """更新迁移项目信息
+        r"""更新迁移项目信息
 
         更新迁移项目的信息。
         
@@ -2704,7 +2704,7 @@ class SmsClient(Client):
         return http_info
 
     def update_network_check_info(self, request):
-        """更新网络检测相关的信息
+        r"""更新网络检测相关的信息
 
         Agent 上报网络检测相关的信息。
         
@@ -2771,7 +2771,7 @@ class SmsClient(Client):
         return http_info
 
     def update_server_name(self, request):
-        """修改指定ID的源端服务器信息
+        r"""修改指定ID的源端服务器信息
 
         该功能用来修改SMS服务端的源端信息，方便用户对源端进行管理。
         
@@ -2838,7 +2838,7 @@ class SmsClient(Client):
         return http_info
 
     def update_speed(self, request):
-        """设置迁移限速规则
+        r"""设置迁移限速规则
 
         设置迁移任务的迁移速率。
         
@@ -2905,7 +2905,7 @@ class SmsClient(Client):
         return http_info
 
     def update_task(self, request):
-        """更新指定ID的迁移任务
+        r"""更新指定ID的迁移任务
 
         更新指定ID的迁移任务
         
@@ -2972,7 +2972,7 @@ class SmsClient(Client):
         return http_info
 
     def update_task_speed(self, request):
-        """上报数据迁移进度和速率
+        r"""上报数据迁移进度和速率
 
         此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。
         迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
@@ -3040,7 +3040,7 @@ class SmsClient(Client):
         return http_info
 
     def update_task_status(self, request):
-        """管理迁移任务
+        r"""管理迁移任务
 
         管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务，删除快照资源。
         
@@ -3107,7 +3107,7 @@ class SmsClient(Client):
         return http_info
 
     def update_template(self, request):
-        """修改模板信息
+        r"""修改模板信息
 
         修改源端模板信息。
         
@@ -3174,7 +3174,7 @@ class SmsClient(Client):
         return http_info
 
     def upload_special_configuration_setting(self, request):
-        """迁移任务配置设置
+        r"""迁移任务配置设置
 
         配置迁移任务特殊设置，例如配置指定同步的文件或路径
         
@@ -3241,7 +3241,7 @@ class SmsClient(Client):
         return http_info
 
     def list_api_version(self, request):
-        """查询主机迁移服务的API版本信息
+        r"""查询主机迁移服务的API版本信息
 
         查询主机迁移服务的API版本信息。
         
@@ -3304,7 +3304,7 @@ class SmsClient(Client):
         return http_info
 
     def show_api_version(self, request):
-        """查询主机迁移服务指定API版本信息
+        r"""查询主机迁移服务指定API版本信息
 
         查询主机迁移服务指定API版本信息。
         
@@ -3369,7 +3369,7 @@ class SmsClient(Client):
         return http_info
 
     def show_config(self, request):
-        """获取Agent配置信息
+        r"""获取Agent配置信息
 
         源端Agent启动后，访问此接口获取配置信息。
         

@@ -49,7 +49,7 @@ class DataConnectorDetail:
     }
 
     def __init__(self, connector_name=None, source_type=None, source_info=None, connector_id=None, create_time=None, last_update_time=None, create_by=None, create_user=None, tenant_id=None, last_update_by=None, status=None, used_clusters=None, encrypt_type=None):
-        """DataConnectorDetail
+        r"""DataConnectorDetail
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class DataConnectorDetail:
 
     @property
     def connector_name(self):
-        """Gets the connector_name of this DataConnectorDetail.
+        r"""Gets the connector_name of this DataConnectorDetail.
 
         数据连接名称。
 
@@ -135,7 +135,7 @@ class DataConnectorDetail:
 
     @connector_name.setter
     def connector_name(self, connector_name):
-        """Sets the connector_name of this DataConnectorDetail.
+        r"""Sets the connector_name of this DataConnectorDetail.
 
         数据连接名称。
 
@@ -146,7 +146,7 @@ class DataConnectorDetail:
 
     @property
     def source_type(self):
-        """Gets the source_type of this DataConnectorDetail.
+        r"""Gets the source_type of this DataConnectorDetail.
 
         数据连接类型。 - RDS_POSTGRES：RDS服务PostgreSQL数据库 - RDS_MYSQL：RDS服务MySQL数据库 - gaussdb-mysql：云数据库GaussDB(for MySQL)
 
@@ -157,7 +157,7 @@ class DataConnectorDetail:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this DataConnectorDetail.
+        r"""Sets the source_type of this DataConnectorDetail.
 
         数据连接类型。 - RDS_POSTGRES：RDS服务PostgreSQL数据库 - RDS_MYSQL：RDS服务MySQL数据库 - gaussdb-mysql：云数据库GaussDB(for MySQL)
 
@@ -168,7 +168,7 @@ class DataConnectorDetail:
 
     @property
     def source_info(self):
-        """Gets the source_info of this DataConnectorDetail.
+        r"""Gets the source_info of this DataConnectorDetail.
 
         数据源信息，为json格式，不同数据连接有不同的信息，各数据源的source_info请求内容可参见示例。
 
@@ -179,7 +179,7 @@ class DataConnectorDetail:
 
     @source_info.setter
     def source_info(self, source_info):
-        """Sets the source_info of this DataConnectorDetail.
+        r"""Sets the source_info of this DataConnectorDetail.
 
         数据源信息，为json格式，不同数据连接有不同的信息，各数据源的source_info请求内容可参见示例。
 
@@ -190,7 +190,7 @@ class DataConnectorDetail:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this DataConnectorDetail.
+        r"""Gets the connector_id of this DataConnectorDetail.
 
         数据连接ID
 
@@ -201,7 +201,7 @@ class DataConnectorDetail:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this DataConnectorDetail.
+        r"""Sets the connector_id of this DataConnectorDetail.
 
         数据连接ID
 
@@ -212,7 +212,7 @@ class DataConnectorDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataConnectorDetail.
+        r"""Gets the create_time of this DataConnectorDetail.
 
         创建时间
 
@@ -223,7 +223,7 @@ class DataConnectorDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataConnectorDetail.
+        r"""Sets the create_time of this DataConnectorDetail.
 
         创建时间
 
@@ -234,7 +234,7 @@ class DataConnectorDetail:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this DataConnectorDetail.
+        r"""Gets the last_update_time of this DataConnectorDetail.
 
         最后更新时间
 
@@ -245,7 +245,7 @@ class DataConnectorDetail:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this DataConnectorDetail.
+        r"""Sets the last_update_time of this DataConnectorDetail.
 
         最后更新时间
 
@@ -256,7 +256,7 @@ class DataConnectorDetail:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DataConnectorDetail.
+        r"""Gets the create_by of this DataConnectorDetail.
 
         创建时间
 
@@ -267,7 +267,7 @@ class DataConnectorDetail:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DataConnectorDetail.
+        r"""Sets the create_by of this DataConnectorDetail.
 
         创建时间
 
@@ -278,7 +278,7 @@ class DataConnectorDetail:
 
     @property
     def create_user(self):
-        """Gets the create_user of this DataConnectorDetail.
+        r"""Gets the create_user of this DataConnectorDetail.
 
         创建用户
 
@@ -289,7 +289,7 @@ class DataConnectorDetail:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this DataConnectorDetail.
+        r"""Sets the create_user of this DataConnectorDetail.
 
         创建用户
 
@@ -300,7 +300,7 @@ class DataConnectorDetail:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this DataConnectorDetail.
+        r"""Gets the tenant_id of this DataConnectorDetail.
 
         租户ID
 
@@ -311,7 +311,7 @@ class DataConnectorDetail:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this DataConnectorDetail.
+        r"""Sets the tenant_id of this DataConnectorDetail.
 
         租户ID
 
@@ -322,7 +322,7 @@ class DataConnectorDetail:
 
     @property
     def last_update_by(self):
-        """Gets the last_update_by of this DataConnectorDetail.
+        r"""Gets the last_update_by of this DataConnectorDetail.
 
         最后更新时间
 
@@ -333,7 +333,7 @@ class DataConnectorDetail:
 
     @last_update_by.setter
     def last_update_by(self, last_update_by):
-        """Sets the last_update_by of this DataConnectorDetail.
+        r"""Sets the last_update_by of this DataConnectorDetail.
 
         最后更新时间
 
@@ -344,7 +344,7 @@ class DataConnectorDetail:
 
     @property
     def status(self):
-        """Gets the status of this DataConnectorDetail.
+        r"""Gets the status of this DataConnectorDetail.
 
         数据连接状态
 
@@ -355,7 +355,7 @@ class DataConnectorDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DataConnectorDetail.
+        r"""Sets the status of this DataConnectorDetail.
 
         数据连接状态
 
@@ -366,7 +366,7 @@ class DataConnectorDetail:
 
     @property
     def used_clusters(self):
-        """Gets the used_clusters of this DataConnectorDetail.
+        r"""Gets the used_clusters of this DataConnectorDetail.
 
         使用集群
 
@@ -377,7 +377,7 @@ class DataConnectorDetail:
 
     @used_clusters.setter
     def used_clusters(self, used_clusters):
-        """Sets the used_clusters of this DataConnectorDetail.
+        r"""Sets the used_clusters of this DataConnectorDetail.
 
         使用集群
 
@@ -388,7 +388,7 @@ class DataConnectorDetail:
 
     @property
     def encrypt_type(self):
-        """Gets the encrypt_type of this DataConnectorDetail.
+        r"""Gets the encrypt_type of this DataConnectorDetail.
 
         加密类型
 
@@ -399,7 +399,7 @@ class DataConnectorDetail:
 
     @encrypt_type.setter
     def encrypt_type(self, encrypt_type):
-        """Sets the encrypt_type of this DataConnectorDetail.
+        r"""Sets the encrypt_type of this DataConnectorDetail.
 
         加密类型
 

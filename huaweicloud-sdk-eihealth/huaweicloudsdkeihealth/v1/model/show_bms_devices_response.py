@@ -26,7 +26,7 @@ class ShowBmsDevicesResponse(SdkResponse):
     }
 
     def __init__(self, devices=None):
-        """ShowBmsDevicesResponse
+        r"""ShowBmsDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBmsDevicesResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this ShowBmsDevicesResponse.
+        r"""Gets the devices of this ShowBmsDevicesResponse.
 
         显卡id列表
 
@@ -55,7 +55,7 @@ class ShowBmsDevicesResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this ShowBmsDevicesResponse.
+        r"""Sets the devices of this ShowBmsDevicesResponse.
 
         显卡id列表
 

@@ -30,7 +30,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, execute_graph=None):
-        """ShowFlinkJobExecutionGraphResponse
+        r"""ShowFlinkJobExecutionGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowFlinkJobExecutionGraphResponse.
+        r"""Gets the is_success of this ShowFlinkJobExecutionGraphResponse.
 
         请求是否成功
 
@@ -69,7 +69,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowFlinkJobExecutionGraphResponse.
+        r"""Sets the is_success of this ShowFlinkJobExecutionGraphResponse.
 
         请求是否成功
 
@@ -80,7 +80,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowFlinkJobExecutionGraphResponse.
+        r"""Gets the message of this ShowFlinkJobExecutionGraphResponse.
 
         消息内容。
 
@@ -91,7 +91,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowFlinkJobExecutionGraphResponse.
+        r"""Sets the message of this ShowFlinkJobExecutionGraphResponse.
 
         消息内容。
 
@@ -102,7 +102,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
 
     @property
     def execute_graph(self):
-        """Gets the execute_graph of this ShowFlinkJobExecutionGraphResponse.
+        r"""Gets the execute_graph of this ShowFlinkJobExecutionGraphResponse.
 
         :return: The execute_graph of this ShowFlinkJobExecutionGraphResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobExecutionGraph`
@@ -111,7 +111,7 @@ class ShowFlinkJobExecutionGraphResponse(SdkResponse):
 
     @execute_graph.setter
     def execute_graph(self, execute_graph):
-        """Sets the execute_graph of this ShowFlinkJobExecutionGraphResponse.
+        r"""Sets the execute_graph of this ShowFlinkJobExecutionGraphResponse.
 
         :param execute_graph: The execute_graph of this ShowFlinkJobExecutionGraphResponse.
         :type execute_graph: :class:`huaweicloudsdkdli.v1.FlinkJobExecutionGraph`

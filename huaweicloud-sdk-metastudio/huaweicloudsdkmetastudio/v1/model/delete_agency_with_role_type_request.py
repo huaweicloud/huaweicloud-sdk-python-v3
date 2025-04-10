@@ -25,7 +25,7 @@ class DeleteAgencyWithRoleTypeRequest:
     }
 
     def __init__(self, role_type=None):
-        """DeleteAgencyWithRoleTypeRequest
+        r"""DeleteAgencyWithRoleTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAgencyWithRoleTypeRequest:
 
     @property
     def role_type(self):
-        """Gets the role_type of this DeleteAgencyWithRoleTypeRequest.
+        r"""Gets the role_type of this DeleteAgencyWithRoleTypeRequest.
 
         委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
 
@@ -53,7 +53,7 @@ class DeleteAgencyWithRoleTypeRequest:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this DeleteAgencyWithRoleTypeRequest.
+        r"""Sets the role_type of this DeleteAgencyWithRoleTypeRequest.
 
         委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
 

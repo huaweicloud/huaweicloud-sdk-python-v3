@@ -47,7 +47,7 @@ class Authorization:
     }
 
     def __init__(self, id=None, account_id=None, account=None, app_id=None, app_name=None, app_group_id=None, app_group_name=None, authorization_type=None, account_type=None, platform_type=None, domain=None, create_at=None):
-        """Authorization
+        r"""Authorization
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class Authorization:
 
     @property
     def id(self):
-        """Gets the id of this Authorization.
+        r"""Gets the id of this Authorization.
 
         授权ID。
 
@@ -131,7 +131,7 @@ class Authorization:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Authorization.
+        r"""Sets the id of this Authorization.
 
         授权ID。
 
@@ -142,7 +142,7 @@ class Authorization:
 
     @property
     def account_id(self):
-        """Gets the account_id of this Authorization.
+        r"""Gets the account_id of this Authorization.
 
         用户ID(或用户组ID)。
 
@@ -153,7 +153,7 @@ class Authorization:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this Authorization.
+        r"""Sets the account_id of this Authorization.
 
         用户ID(或用户组ID)。
 
@@ -164,7 +164,7 @@ class Authorization:
 
     @property
     def account(self):
-        """Gets the account of this Authorization.
+        r"""Gets the account of this Authorization.
 
         用户名(或用户组名)。
 
@@ -175,7 +175,7 @@ class Authorization:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this Authorization.
+        r"""Sets the account of this Authorization.
 
         用户名(或用户组名)。
 
@@ -186,7 +186,7 @@ class Authorization:
 
     @property
     def app_id(self):
-        """Gets the app_id of this Authorization.
+        r"""Gets the app_id of this Authorization.
 
         应用ID (按照组授权时,该字段为空)。
 
@@ -197,7 +197,7 @@ class Authorization:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this Authorization.
+        r"""Sets the app_id of this Authorization.
 
         应用ID (按照组授权时,该字段为空)。
 
@@ -208,7 +208,7 @@ class Authorization:
 
     @property
     def app_name(self):
-        """Gets the app_name of this Authorization.
+        r"""Gets the app_name of this Authorization.
 
         应用名称 (按照组授权时,该字段为空)。
 
@@ -219,7 +219,7 @@ class Authorization:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this Authorization.
+        r"""Sets the app_name of this Authorization.
 
         应用名称 (按照组授权时,该字段为空)。
 
@@ -230,7 +230,7 @@ class Authorization:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this Authorization.
+        r"""Gets the app_group_id of this Authorization.
 
         应用组ID。
 
@@ -241,7 +241,7 @@ class Authorization:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this Authorization.
+        r"""Sets the app_group_id of this Authorization.
 
         应用组ID。
 
@@ -252,7 +252,7 @@ class Authorization:
 
     @property
     def app_group_name(self):
-        """Gets the app_group_name of this Authorization.
+        r"""Gets the app_group_name of this Authorization.
 
         应用组名称。
 
@@ -263,7 +263,7 @@ class Authorization:
 
     @app_group_name.setter
     def app_group_name(self, app_group_name):
-        """Sets the app_group_name of this Authorization.
+        r"""Sets the app_group_name of this Authorization.
 
         应用组名称。
 
@@ -274,7 +274,7 @@ class Authorization:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this Authorization.
+        r"""Gets the authorization_type of this Authorization.
 
         :return: The authorization_type of this Authorization.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -283,7 +283,7 @@ class Authorization:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this Authorization.
+        r"""Sets the authorization_type of this Authorization.
 
         :param authorization_type: The authorization_type of this Authorization.
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -292,7 +292,7 @@ class Authorization:
 
     @property
     def account_type(self):
-        """Gets the account_type of this Authorization.
+        r"""Gets the account_type of this Authorization.
 
         :return: The account_type of this Authorization.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
@@ -301,7 +301,7 @@ class Authorization:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this Authorization.
+        r"""Sets the account_type of this Authorization.
 
         :param account_type: The account_type of this Authorization.
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
@@ -310,7 +310,7 @@ class Authorization:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this Authorization.
+        r"""Gets the platform_type of this Authorization.
 
         :return: The platform_type of this Authorization.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
@@ -319,7 +319,7 @@ class Authorization:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this Authorization.
+        r"""Sets the platform_type of this Authorization.
 
         :param platform_type: The platform_type of this Authorization.
         :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
@@ -328,7 +328,7 @@ class Authorization:
 
     @property
     def domain(self):
-        """Gets the domain of this Authorization.
+        r"""Gets the domain of this Authorization.
 
         域名城。
 
@@ -339,7 +339,7 @@ class Authorization:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this Authorization.
+        r"""Sets the domain of this Authorization.
 
         域名城。
 
@@ -350,7 +350,7 @@ class Authorization:
 
     @property
     def create_at(self):
-        """Gets the create_at of this Authorization.
+        r"""Gets the create_at of this Authorization.
 
         发布时间。
 
@@ -361,7 +361,7 @@ class Authorization:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this Authorization.
+        r"""Sets the create_at of this Authorization.
 
         发布时间。
 

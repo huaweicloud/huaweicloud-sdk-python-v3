@@ -29,7 +29,7 @@ class ListBusinessRisksRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None):
-        """ListBusinessRisksRequest
+        r"""ListBusinessRisksRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListBusinessRisksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListBusinessRisksRequest.
+        r"""Gets the task_id of this ListBusinessRisksRequest.
 
         任务ID
 
@@ -67,7 +67,7 @@ class ListBusinessRisksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListBusinessRisksRequest.
+        r"""Sets the task_id of this ListBusinessRisksRequest.
 
         任务ID
 
@@ -78,7 +78,7 @@ class ListBusinessRisksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBusinessRisksRequest.
+        r"""Gets the offset of this ListBusinessRisksRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -89,7 +89,7 @@ class ListBusinessRisksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBusinessRisksRequest.
+        r"""Sets the offset of this ListBusinessRisksRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -100,7 +100,7 @@ class ListBusinessRisksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBusinessRisksRequest.
+        r"""Gets the limit of this ListBusinessRisksRequest.
 
         分页查询，每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ListBusinessRisksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBusinessRisksRequest.
+        r"""Sets the limit of this ListBusinessRisksRequest.
 
         分页查询，每页显示的条目数量
 

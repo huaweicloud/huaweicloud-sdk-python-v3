@@ -27,7 +27,7 @@ class ListConfigurationsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListConfigurationsRequest
+        r"""ListConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConfigurationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConfigurationsRequest.
+        r"""Gets the offset of this ListConfigurationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -61,7 +61,7 @@ class ListConfigurationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConfigurationsRequest.
+        r"""Sets the offset of this ListConfigurationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -72,7 +72,7 @@ class ListConfigurationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigurationsRequest.
+        r"""Gets the limit of this ListConfigurationsRequest.
 
         每页显示的数量，默认是100。
 
@@ -83,7 +83,7 @@ class ListConfigurationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigurationsRequest.
+        r"""Sets the limit of this ListConfigurationsRequest.
 
         每页显示的数量，默认是100。
 

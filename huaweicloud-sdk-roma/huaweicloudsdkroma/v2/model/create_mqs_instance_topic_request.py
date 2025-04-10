@@ -27,7 +27,7 @@ class CreateMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateMqsInstanceTopicRequest
+        r"""CreateMqsInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMqsInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateMqsInstanceTopicRequest.
+        r"""Gets the instance_id of this CreateMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateMqsInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateMqsInstanceTopicRequest.
+        r"""Sets the instance_id of this CreateMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateMqsInstanceTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMqsInstanceTopicRequest.
+        r"""Gets the body of this CreateMqsInstanceTopicRequest.
 
         :return: The body of this CreateMqsInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicReq`
@@ -80,7 +80,7 @@ class CreateMqsInstanceTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMqsInstanceTopicRequest.
+        r"""Sets the body of this CreateMqsInstanceTopicRequest.
 
         :param body: The body of this CreateMqsInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicReq`

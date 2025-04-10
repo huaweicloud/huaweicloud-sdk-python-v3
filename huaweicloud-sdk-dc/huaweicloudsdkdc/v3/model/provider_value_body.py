@@ -27,7 +27,7 @@ class ProviderValueBody:
     }
 
     def __init__(self, en_us=None, zh_cn=None):
-        """ProviderValueBody
+        r"""ProviderValueBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProviderValueBody:
 
     @property
     def en_us(self):
-        """Gets the en_us of this ProviderValueBody.
+        r"""Gets the en_us of this ProviderValueBody.
 
         英文名称。
 
@@ -61,7 +61,7 @@ class ProviderValueBody:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this ProviderValueBody.
+        r"""Sets the en_us of this ProviderValueBody.
 
         英文名称。
 
@@ -72,7 +72,7 @@ class ProviderValueBody:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this ProviderValueBody.
+        r"""Gets the zh_cn of this ProviderValueBody.
 
         中文信息。
 
@@ -83,7 +83,7 @@ class ProviderValueBody:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this ProviderValueBody.
+        r"""Sets the zh_cn of this ProviderValueBody.
 
         中文信息。
 

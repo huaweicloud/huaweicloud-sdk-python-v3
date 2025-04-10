@@ -37,7 +37,7 @@ class Actions:
     }
 
     def __init__(self, id=None, action_type=None, conf_content=None, status=None, update_at=None, error_msg=None, message=None):
-        """Actions
+        r"""Actions
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Actions:
 
     @property
     def id(self):
-        """Gets the id of this Actions.
+        r"""Gets the id of this Actions.
 
         操作记录id。
 
@@ -96,7 +96,7 @@ class Actions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Actions.
+        r"""Sets the id of this Actions.
 
         操作记录id。
 
@@ -107,7 +107,7 @@ class Actions:
 
     @property
     def action_type(self):
-        """Gets the action_type of this Actions.
+        r"""Gets the action_type of this Actions.
 
         操作类型。
 
@@ -118,7 +118,7 @@ class Actions:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this Actions.
+        r"""Sets the action_type of this Actions.
 
         操作类型。
 
@@ -129,7 +129,7 @@ class Actions:
 
     @property
     def conf_content(self):
-        """Gets the conf_content of this Actions.
+        r"""Gets the conf_content of this Actions.
 
         配置文件内容。
 
@@ -140,7 +140,7 @@ class Actions:
 
     @conf_content.setter
     def conf_content(self, conf_content):
-        """Sets the conf_content of this Actions.
+        r"""Sets the conf_content of this Actions.
 
         配置文件内容。
 
@@ -151,7 +151,7 @@ class Actions:
 
     @property
     def status(self):
-        """Gets the status of this Actions.
+        r"""Gets the status of this Actions.
 
         操作状态。
 
@@ -162,7 +162,7 @@ class Actions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Actions.
+        r"""Sets the status of this Actions.
 
         操作状态。
 
@@ -173,7 +173,7 @@ class Actions:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Actions.
+        r"""Gets the update_at of this Actions.
 
         更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
@@ -184,7 +184,7 @@ class Actions:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Actions.
+        r"""Sets the update_at of this Actions.
 
         更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
@@ -195,7 +195,7 @@ class Actions:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this Actions.
+        r"""Gets the error_msg of this Actions.
 
         错误信息。当操作状态为success时该字段为null。
 
@@ -206,7 +206,7 @@ class Actions:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this Actions.
+        r"""Sets the error_msg of this Actions.
 
         错误信息。当操作状态为success时该字段为null。
 
@@ -217,7 +217,7 @@ class Actions:
 
     @property
     def message(self):
-        """Gets the message of this Actions.
+        r"""Gets the message of this Actions.
 
         内容。
 
@@ -228,7 +228,7 @@ class Actions:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Actions.
+        r"""Sets the message of this Actions.
 
         内容。
 

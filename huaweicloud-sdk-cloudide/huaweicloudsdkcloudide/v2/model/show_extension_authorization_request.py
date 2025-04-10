@@ -29,7 +29,7 @@ class ShowExtensionAuthorizationRequest:
     }
 
     def __init__(self, extension_version=None, identifier=None, instance_id=None):
-        """ShowExtensionAuthorizationRequest
+        r"""ShowExtensionAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowExtensionAuthorizationRequest:
 
     @property
     def extension_version(self):
-        """Gets the extension_version of this ShowExtensionAuthorizationRequest.
+        r"""Gets the extension_version of this ShowExtensionAuthorizationRequest.
 
         插件版本
 
@@ -65,7 +65,7 @@ class ShowExtensionAuthorizationRequest:
 
     @extension_version.setter
     def extension_version(self, extension_version):
-        """Sets the extension_version of this ShowExtensionAuthorizationRequest.
+        r"""Sets the extension_version of this ShowExtensionAuthorizationRequest.
 
         插件版本
 
@@ -76,7 +76,7 @@ class ShowExtensionAuthorizationRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ShowExtensionAuthorizationRequest.
+        r"""Gets the identifier of this ShowExtensionAuthorizationRequest.
 
         插件标识(发布者.插件名)
 
@@ -87,7 +87,7 @@ class ShowExtensionAuthorizationRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ShowExtensionAuthorizationRequest.
+        r"""Sets the identifier of this ShowExtensionAuthorizationRequest.
 
         插件标识(发布者.插件名)
 
@@ -98,7 +98,7 @@ class ShowExtensionAuthorizationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowExtensionAuthorizationRequest.
+        r"""Gets the instance_id of this ShowExtensionAuthorizationRequest.
 
         CodeArtsIDEOnline实例ID
 
@@ -109,7 +109,7 @@ class ShowExtensionAuthorizationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowExtensionAuthorizationRequest.
+        r"""Sets the instance_id of this ShowExtensionAuthorizationRequest.
 
         CodeArtsIDEOnline实例ID
 

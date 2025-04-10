@@ -27,7 +27,7 @@ class TraceResource:
     }
 
     def __init__(self, service_type=None, resource=None):
-        """TraceResource
+        r"""TraceResource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TraceResource:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TraceResource.
+        r"""Gets the service_type of this TraceResource.
 
         云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。
 
@@ -61,7 +61,7 @@ class TraceResource:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TraceResource.
+        r"""Sets the service_type of this TraceResource.
 
         云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。
 
@@ -72,7 +72,7 @@ class TraceResource:
 
     @property
     def resource(self):
-        """Gets the resource of this TraceResource.
+        r"""Gets the resource of this TraceResource.
 
         云服务对应的资源类型列表。
 
@@ -83,7 +83,7 @@ class TraceResource:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this TraceResource.
+        r"""Sets the resource of this TraceResource.
 
         云服务对应的资源类型列表。
 

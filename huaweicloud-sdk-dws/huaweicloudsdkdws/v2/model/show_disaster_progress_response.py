@@ -26,7 +26,7 @@ class ShowDisasterProgressResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery_progress=None):
-        """ShowDisasterProgressResponse
+        r"""ShowDisasterProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDisasterProgressResponse(SdkResponse):
 
     @property
     def disaster_recovery_progress(self):
-        """Gets the disaster_recovery_progress of this ShowDisasterProgressResponse.
+        r"""Gets the disaster_recovery_progress of this ShowDisasterProgressResponse.
 
         :return: The disaster_recovery_progress of this ShowDisasterProgressResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterDisasterRecovery`
@@ -53,7 +53,7 @@ class ShowDisasterProgressResponse(SdkResponse):
 
     @disaster_recovery_progress.setter
     def disaster_recovery_progress(self, disaster_recovery_progress):
-        """Sets the disaster_recovery_progress of this ShowDisasterProgressResponse.
+        r"""Sets the disaster_recovery_progress of this ShowDisasterProgressResponse.
 
         :param disaster_recovery_progress: The disaster_recovery_progress of this ShowDisasterProgressResponse.
         :type disaster_recovery_progress: :class:`huaweicloudsdkdws.v2.ClusterDisasterRecovery`

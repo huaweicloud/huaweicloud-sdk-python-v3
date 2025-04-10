@@ -31,7 +31,7 @@ class ScriptPropertiesModel:
     }
 
     def __init__(self, risk_level=None, version=None, reviewers=None, protocol=None):
-        """ScriptPropertiesModel
+        r"""ScriptPropertiesModel
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ScriptPropertiesModel:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ScriptPropertiesModel.
+        r"""Gets the risk_level of this ScriptPropertiesModel.
 
         风险等级 LOW:低风险 MEDIUM:中风险 HIGH:高风险
 
@@ -73,7 +73,7 @@ class ScriptPropertiesModel:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ScriptPropertiesModel.
+        r"""Sets the risk_level of this ScriptPropertiesModel.
 
         风险等级 LOW:低风险 MEDIUM:中风险 HIGH:高风险
 
@@ -84,7 +84,7 @@ class ScriptPropertiesModel:
 
     @property
     def version(self):
-        """Gets the version of this ScriptPropertiesModel.
+        r"""Gets the version of this ScriptPropertiesModel.
 
         脚本版本号
 
@@ -95,7 +95,7 @@ class ScriptPropertiesModel:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ScriptPropertiesModel.
+        r"""Sets the version of this ScriptPropertiesModel.
 
         脚本版本号
 
@@ -106,7 +106,7 @@ class ScriptPropertiesModel:
 
     @property
     def reviewers(self):
-        """Gets the reviewers of this ScriptPropertiesModel.
+        r"""Gets the reviewers of this ScriptPropertiesModel.
 
         审批人，不填写不需要审批
 
@@ -117,7 +117,7 @@ class ScriptPropertiesModel:
 
     @reviewers.setter
     def reviewers(self, reviewers):
-        """Sets the reviewers of this ScriptPropertiesModel.
+        r"""Sets the reviewers of this ScriptPropertiesModel.
 
         审批人，不填写不需要审批
 
@@ -128,7 +128,7 @@ class ScriptPropertiesModel:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ScriptPropertiesModel.
+        r"""Gets the protocol of this ScriptPropertiesModel.
 
         审批消息通知协议，用于通知审批人 DEFAULT：默认 SMS：短信 EMAIL：邮件 DING_TALK：钉钉 WE_LINK：welink WECHAT:微信 CALLNOTIFY：语言 NOT_TO_NOTIFY：不通知
 
@@ -139,7 +139,7 @@ class ScriptPropertiesModel:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ScriptPropertiesModel.
+        r"""Sets the protocol of this ScriptPropertiesModel.
 
         审批消息通知协议，用于通知审批人 DEFAULT：默认 SMS：短信 EMAIL：邮件 DING_TALK：钉钉 WE_LINK：welink WECHAT:微信 CALLNOTIFY：语言 NOT_TO_NOTIFY：不通知
 

@@ -26,7 +26,7 @@ class RemoveDesignEntityTagsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """RemoveDesignEntityTagsResponse
+        r"""RemoveDesignEntityTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RemoveDesignEntityTagsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this RemoveDesignEntityTagsResponse.
+        r"""Gets the data of this RemoveDesignEntityTagsResponse.
 
         :return: The data of this RemoveDesignEntityTagsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TagsResultData`
@@ -53,7 +53,7 @@ class RemoveDesignEntityTagsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RemoveDesignEntityTagsResponse.
+        r"""Sets the data of this RemoveDesignEntityTagsResponse.
 
         :param data: The data of this RemoveDesignEntityTagsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.TagsResultData`

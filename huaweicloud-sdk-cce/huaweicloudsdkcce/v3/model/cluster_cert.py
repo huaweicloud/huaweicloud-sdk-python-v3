@@ -29,7 +29,7 @@ class ClusterCert:
     }
 
     def __init__(self, server=None, certificate_authority_data=None, insecure_skip_tls_verify=None):
-        """ClusterCert
+        r"""ClusterCert
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ClusterCert:
 
     @property
     def server(self):
-        """Gets the server of this ClusterCert.
+        r"""Gets the server of this ClusterCert.
 
         服务器地址。
 
@@ -68,7 +68,7 @@ class ClusterCert:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ClusterCert.
+        r"""Sets the server of this ClusterCert.
 
         服务器地址。
 
@@ -79,7 +79,7 @@ class ClusterCert:
 
     @property
     def certificate_authority_data(self):
-        """Gets the certificate_authority_data of this ClusterCert.
+        r"""Gets the certificate_authority_data of this ClusterCert.
 
         证书授权数据。
 
@@ -90,7 +90,7 @@ class ClusterCert:
 
     @certificate_authority_data.setter
     def certificate_authority_data(self, certificate_authority_data):
-        """Sets the certificate_authority_data of this ClusterCert.
+        r"""Sets the certificate_authority_data of this ClusterCert.
 
         证书授权数据。
 
@@ -101,7 +101,7 @@ class ClusterCert:
 
     @property
     def insecure_skip_tls_verify(self):
-        """Gets the insecure_skip_tls_verify of this ClusterCert.
+        r"""Gets the insecure_skip_tls_verify of this ClusterCert.
 
         不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
 
@@ -112,7 +112,7 @@ class ClusterCert:
 
     @insecure_skip_tls_verify.setter
     def insecure_skip_tls_verify(self, insecure_skip_tls_verify):
-        """Sets the insecure_skip_tls_verify of this ClusterCert.
+        r"""Sets the insecure_skip_tls_verify of this ClusterCert.
 
         不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
 

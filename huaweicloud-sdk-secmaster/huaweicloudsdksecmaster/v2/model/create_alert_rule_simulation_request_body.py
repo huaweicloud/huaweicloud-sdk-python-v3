@@ -37,7 +37,7 @@ class CreateAlertRuleSimulationRequestBody:
     }
 
     def __init__(self, pipe_id=None, query=None, query_type=None, _from=None, to=None, event_grouping=None, triggers=None):
-        """CreateAlertRuleSimulationRequestBody
+        r"""CreateAlertRuleSimulationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the pipe_id of this CreateAlertRuleSimulationRequestBody.
 
         数据管道 ID。Pipe ID.
 
@@ -91,7 +91,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the pipe_id of this CreateAlertRuleSimulationRequestBody.
 
         数据管道 ID。Pipe ID.
 
@@ -102,7 +102,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def query(self):
-        """Gets the query of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the query of this CreateAlertRuleSimulationRequestBody.
 
         查询语句。Query.
 
@@ -113,7 +113,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the query of this CreateAlertRuleSimulationRequestBody.
 
         查询语句。Query.
 
@@ -124,7 +124,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def query_type(self):
-        """Gets the query_type of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the query_type of this CreateAlertRuleSimulationRequestBody.
 
         查询语法，SQL。Query type. SQL.
 
@@ -135,7 +135,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the query_type of this CreateAlertRuleSimulationRequestBody.
 
         查询语法，SQL。Query type. SQL.
 
@@ -146,7 +146,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def _from(self):
-        """Gets the _from of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the _from of this CreateAlertRuleSimulationRequestBody.
 
         开始时间。Start time.
 
@@ -157,7 +157,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the _from of this CreateAlertRuleSimulationRequestBody.
 
         开始时间。Start time.
 
@@ -168,7 +168,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def to(self):
-        """Gets the to of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the to of this CreateAlertRuleSimulationRequestBody.
 
         结束时间。End time.
 
@@ -179,7 +179,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the to of this CreateAlertRuleSimulationRequestBody.
 
         结束时间。End time.
 
@@ -190,7 +190,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the event_grouping of this CreateAlertRuleSimulationRequestBody.
 
         告警分组。Event grouping.
 
@@ -201,7 +201,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the event_grouping of this CreateAlertRuleSimulationRequestBody.
 
         告警分组。Event grouping.
 
@@ -212,7 +212,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @property
     def triggers(self):
-        """Gets the triggers of this CreateAlertRuleSimulationRequestBody.
+        r"""Gets the triggers of this CreateAlertRuleSimulationRequestBody.
 
         告警触发规则。Alert triggers.
 
@@ -223,7 +223,7 @@ class CreateAlertRuleSimulationRequestBody:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this CreateAlertRuleSimulationRequestBody.
+        r"""Sets the triggers of this CreateAlertRuleSimulationRequestBody.
 
         告警触发规则。Alert triggers.
 

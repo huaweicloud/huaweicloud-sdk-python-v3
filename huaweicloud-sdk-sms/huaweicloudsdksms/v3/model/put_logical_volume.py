@@ -29,7 +29,7 @@ class PutLogicalVolume:
     }
 
     def __init__(self, id=None, need_migration=None, adjust_size=None):
-        """PutLogicalVolume
+        r"""PutLogicalVolume
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PutLogicalVolume:
 
     @property
     def id(self):
-        """Gets the id of this PutLogicalVolume.
+        r"""Gets the id of this PutLogicalVolume.
 
         逻辑卷ID
 
@@ -67,7 +67,7 @@ class PutLogicalVolume:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PutLogicalVolume.
+        r"""Sets the id of this PutLogicalVolume.
 
         逻辑卷ID
 
@@ -78,7 +78,7 @@ class PutLogicalVolume:
 
     @property
     def need_migration(self):
-        """Gets the need_migration of this PutLogicalVolume.
+        r"""Gets the need_migration of this PutLogicalVolume.
 
         是否迁移
 
@@ -89,7 +89,7 @@ class PutLogicalVolume:
 
     @need_migration.setter
     def need_migration(self, need_migration):
-        """Sets the need_migration of this PutLogicalVolume.
+        r"""Sets the need_migration of this PutLogicalVolume.
 
         是否迁移
 
@@ -100,7 +100,7 @@ class PutLogicalVolume:
 
     @property
     def adjust_size(self):
-        """Gets the adjust_size of this PutLogicalVolume.
+        r"""Gets the adjust_size of this PutLogicalVolume.
 
         调整大小
 
@@ -111,7 +111,7 @@ class PutLogicalVolume:
 
     @adjust_size.setter
     def adjust_size(self, adjust_size):
-        """Sets the adjust_size of this PutLogicalVolume.
+        r"""Sets the adjust_size of this PutLogicalVolume.
 
         调整大小
 

@@ -27,7 +27,7 @@ class UploadJdbcDriverRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """UploadJdbcDriverRequest
+        r"""UploadJdbcDriverRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadJdbcDriverRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UploadJdbcDriverRequest.
+        r"""Gets the x_language of this UploadJdbcDriverRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class UploadJdbcDriverRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UploadJdbcDriverRequest.
+        r"""Sets the x_language of this UploadJdbcDriverRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class UploadJdbcDriverRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadJdbcDriverRequest.
+        r"""Gets the body of this UploadJdbcDriverRequest.
 
         :return: The body of this UploadJdbcDriverRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.UploadJdbcDriverRequestBody`
@@ -81,7 +81,7 @@ class UploadJdbcDriverRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadJdbcDriverRequest.
+        r"""Sets the body of this UploadJdbcDriverRequest.
 
         :param body: The body of this UploadJdbcDriverRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.UploadJdbcDriverRequestBody`

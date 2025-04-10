@@ -103,7 +103,7 @@ class Workflow:
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, tags=None, create_time=None, create_by=None, update_time=None, update_by=None, template_name=None, template_id=None, input=None, last_execution_id=None, status=None, citation_urns=None, last_execution_end_time=None, last_execution_start_time=None, quote=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None, project_id=None, workflow_id=None, task_status=None, nodes=None, edit_time=None, execution_action_rules=None, execution_permission=None, global_parameters=None, is_delete=None, steps=None, output=None, trigger_id=None, trigger_status=None, approve_id=None, template_i18n=None, enterprise_project_id=None, last_execute_by=None):
-        """Workflow
+        r"""Workflow
 
         The model defined in huaweicloud sdk
 
@@ -315,7 +315,7 @@ class Workflow:
 
     @property
     def id(self):
-        """Gets the id of this Workflow.
+        r"""Gets the id of this Workflow.
 
         工作流id，唯一标识，根据project_id和workflow_name生成。
 
@@ -326,7 +326,7 @@ class Workflow:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Workflow.
+        r"""Sets the id of this Workflow.
 
         工作流id，唯一标识，根据project_id和workflow_name生成。
 
@@ -337,7 +337,7 @@ class Workflow:
 
     @property
     def name(self):
-        """Gets the name of this Workflow.
+        r"""Gets the name of this Workflow.
 
         工作流名称。
 
@@ -348,7 +348,7 @@ class Workflow:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Workflow.
+        r"""Sets the name of this Workflow.
 
         工作流名称。
 
@@ -359,7 +359,7 @@ class Workflow:
 
     @property
     def type(self):
-        """Gets the type of this Workflow.
+        r"""Gets the type of this Workflow.
 
         工作流类型，可以为cron、manual
 
@@ -370,7 +370,7 @@ class Workflow:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Workflow.
+        r"""Sets the type of this Workflow.
 
         工作流类型，可以为cron、manual
 
@@ -381,7 +381,7 @@ class Workflow:
 
     @property
     def description(self):
-        """Gets the description of this Workflow.
+        r"""Gets the description of this Workflow.
 
         工作流描述信息。
 
@@ -392,7 +392,7 @@ class Workflow:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Workflow.
+        r"""Sets the description of this Workflow.
 
         工作流描述信息。
 
@@ -403,7 +403,7 @@ class Workflow:
 
     @property
     def tags(self):
-        """Gets the tags of this Workflow.
+        r"""Gets the tags of this Workflow.
 
         标签键和值列表，标签键值对数量范围是0至20。
 
@@ -414,7 +414,7 @@ class Workflow:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Workflow.
+        r"""Sets the tags of this Workflow.
 
         标签键和值列表，标签键值对数量范围是0至20。
 
@@ -425,7 +425,7 @@ class Workflow:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Workflow.
+        r"""Gets the create_time of this Workflow.
 
         工作流创建时间，为utc时间毫秒数。
 
@@ -436,7 +436,7 @@ class Workflow:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Workflow.
+        r"""Sets the create_time of this Workflow.
 
         工作流创建时间，为utc时间毫秒数。
 
@@ -447,7 +447,7 @@ class Workflow:
 
     @property
     def create_by(self):
-        """Gets the create_by of this Workflow.
+        r"""Gets the create_by of this Workflow.
 
         工作流创人，从接口调用传入的token中获取。
 
@@ -458,7 +458,7 @@ class Workflow:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this Workflow.
+        r"""Sets the create_by of this Workflow.
 
         工作流创人，从接口调用传入的token中获取。
 
@@ -469,7 +469,7 @@ class Workflow:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Workflow.
+        r"""Gets the update_time of this Workflow.
 
         工作流更新时间，为utc时间毫秒数。
 
@@ -480,7 +480,7 @@ class Workflow:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Workflow.
+        r"""Sets the update_time of this Workflow.
 
         工作流更新时间，为utc时间毫秒数。
 
@@ -491,7 +491,7 @@ class Workflow:
 
     @property
     def update_by(self):
-        """Gets the update_by of this Workflow.
+        r"""Gets the update_by of this Workflow.
 
         工作流更新人，从接口调用传入的token中获取。
 
@@ -502,7 +502,7 @@ class Workflow:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this Workflow.
+        r"""Sets the update_by of this Workflow.
 
         工作流更新人，从接口调用传入的token中获取。
 
@@ -513,7 +513,7 @@ class Workflow:
 
     @property
     def template_name(self):
-        """Gets the template_name of this Workflow.
+        r"""Gets the template_name of this Workflow.
 
         模板名称。
 
@@ -524,7 +524,7 @@ class Workflow:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this Workflow.
+        r"""Sets the template_name of this Workflow.
 
         模板名称。
 
@@ -535,7 +535,7 @@ class Workflow:
 
     @property
     def template_id(self):
-        """Gets the template_id of this Workflow.
+        r"""Gets the template_id of this Workflow.
 
         模板id
 
@@ -546,7 +546,7 @@ class Workflow:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this Workflow.
+        r"""Sets the template_id of this Workflow.
 
         模板id
 
@@ -557,7 +557,7 @@ class Workflow:
 
     @property
     def input(self):
-        """Gets the input of this Workflow.
+        r"""Gets the input of this Workflow.
 
         任务执行时需要的参数列表。
 
@@ -568,7 +568,7 @@ class Workflow:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this Workflow.
+        r"""Sets the input of this Workflow.
 
         任务执行时需要的参数列表。
 
@@ -579,7 +579,7 @@ class Workflow:
 
     @property
     def last_execution_id(self):
-        """Gets the last_execution_id of this Workflow.
+        r"""Gets the last_execution_id of this Workflow.
 
         最近一次执行id，也是工作流id
 
@@ -590,7 +590,7 @@ class Workflow:
 
     @last_execution_id.setter
     def last_execution_id(self, last_execution_id):
-        """Sets the last_execution_id of this Workflow.
+        r"""Sets the last_execution_id of this Workflow.
 
         最近一次执行id，也是工作流id
 
@@ -601,7 +601,7 @@ class Workflow:
 
     @property
     def status(self):
-        """Gets the status of this Workflow.
+        r"""Gets the status of this Workflow.
 
         任务状态，包含success，fail,executing
 
@@ -612,7 +612,7 @@ class Workflow:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Workflow.
+        r"""Sets the status of this Workflow.
 
         任务状态，包含success，fail,executing
 
@@ -623,7 +623,7 @@ class Workflow:
 
     @property
     def citation_urns(self):
-        """Gets the citation_urns of this Workflow.
+        r"""Gets the citation_urns of this Workflow.
 
         工作流的引用。
 
@@ -634,7 +634,7 @@ class Workflow:
 
     @citation_urns.setter
     def citation_urns(self, citation_urns):
-        """Sets the citation_urns of this Workflow.
+        r"""Sets the citation_urns of this Workflow.
 
         工作流的引用。
 
@@ -645,7 +645,7 @@ class Workflow:
 
     @property
     def last_execution_end_time(self):
-        """Gets the last_execution_end_time of this Workflow.
+        r"""Gets the last_execution_end_time of this Workflow.
 
         最近一次执行结束时间，为utc时间毫秒数
 
@@ -656,7 +656,7 @@ class Workflow:
 
     @last_execution_end_time.setter
     def last_execution_end_time(self, last_execution_end_time):
-        """Sets the last_execution_end_time of this Workflow.
+        r"""Sets the last_execution_end_time of this Workflow.
 
         最近一次执行结束时间，为utc时间毫秒数
 
@@ -667,7 +667,7 @@ class Workflow:
 
     @property
     def last_execution_start_time(self):
-        """Gets the last_execution_start_time of this Workflow.
+        r"""Gets the last_execution_start_time of this Workflow.
 
         最近一次执行开始时间，为utc时间毫秒数
 
@@ -678,7 +678,7 @@ class Workflow:
 
     @last_execution_start_time.setter
     def last_execution_start_time(self, last_execution_start_time):
-        """Sets the last_execution_start_time of this Workflow.
+        r"""Sets the last_execution_start_time of this Workflow.
 
         最近一次执行开始时间，为utc时间毫秒数
 
@@ -689,7 +689,7 @@ class Workflow:
 
     @property
     def quote(self):
-        """Gets the quote of this Workflow.
+        r"""Gets the quote of this Workflow.
 
         引用，参数引用
 
@@ -700,7 +700,7 @@ class Workflow:
 
     @quote.setter
     def quote(self, quote):
-        """Sets the quote of this Workflow.
+        r"""Sets the quote of this Workflow.
 
         引用，参数引用
 
@@ -711,7 +711,7 @@ class Workflow:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Workflow.
+        r"""Gets the job_name of this Workflow.
 
         作业名称
 
@@ -722,7 +722,7 @@ class Workflow:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Workflow.
+        r"""Sets the job_name of this Workflow.
 
         作业名称
 
@@ -733,7 +733,7 @@ class Workflow:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Workflow.
+        r"""Gets the job_id of this Workflow.
 
         作业id
 
@@ -744,7 +744,7 @@ class Workflow:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Workflow.
+        r"""Sets the job_id of this Workflow.
 
         作业id
 
@@ -755,7 +755,7 @@ class Workflow:
 
     @property
     def service_scenario(self):
-        """Gets the service_scenario of this Workflow.
+        r"""Gets the service_scenario of this Workflow.
 
         服务场景分类
 
@@ -766,7 +766,7 @@ class Workflow:
 
     @service_scenario.setter
     def service_scenario(self, service_scenario):
-        """Sets the service_scenario of this Workflow.
+        r"""Sets the service_scenario of this Workflow.
 
         服务场景分类
 
@@ -777,7 +777,7 @@ class Workflow:
 
     @property
     def service_name(self):
-        """Gets the service_name of this Workflow.
+        r"""Gets the service_name of this Workflow.
 
         服务名称
 
@@ -788,7 +788,7 @@ class Workflow:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this Workflow.
+        r"""Sets the service_name of this Workflow.
 
         服务名称
 
@@ -799,7 +799,7 @@ class Workflow:
 
     @property
     def task_type(self):
-        """Gets the task_type of this Workflow.
+        r"""Gets the task_type of this Workflow.
 
         任务类型
 
@@ -810,7 +810,7 @@ class Workflow:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this Workflow.
+        r"""Sets the task_type of this Workflow.
 
         任务类型
 
@@ -821,7 +821,7 @@ class Workflow:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Workflow.
+        r"""Gets the project_id of this Workflow.
 
         functiongraph返回的PROJECT_ID
 
@@ -832,7 +832,7 @@ class Workflow:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Workflow.
+        r"""Sets the project_id of this Workflow.
 
         functiongraph返回的PROJECT_ID
 
@@ -843,7 +843,7 @@ class Workflow:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this Workflow.
+        r"""Gets the workflow_id of this Workflow.
 
         functiongraph返回的WORKFLOW_ID
 
@@ -854,7 +854,7 @@ class Workflow:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this Workflow.
+        r"""Sets the workflow_id of this Workflow.
 
         functiongraph返回的WORKFLOW_ID
 
@@ -865,7 +865,7 @@ class Workflow:
 
     @property
     def task_status(self):
-        """Gets the task_status of this Workflow.
+        r"""Gets the task_status of this Workflow.
 
         任务状态
 
@@ -876,7 +876,7 @@ class Workflow:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this Workflow.
+        r"""Sets the task_status of this Workflow.
 
         任务状态
 
@@ -887,7 +887,7 @@ class Workflow:
 
     @property
     def nodes(self):
-        """Gets the nodes of this Workflow.
+        r"""Gets the nodes of this Workflow.
 
         任务节点
 
@@ -898,7 +898,7 @@ class Workflow:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this Workflow.
+        r"""Sets the nodes of this Workflow.
 
         任务节点
 
@@ -909,7 +909,7 @@ class Workflow:
 
     @property
     def edit_time(self):
-        """Gets the edit_time of this Workflow.
+        r"""Gets the edit_time of this Workflow.
 
         编辑时间
 
@@ -920,7 +920,7 @@ class Workflow:
 
     @edit_time.setter
     def edit_time(self, edit_time):
-        """Sets the edit_time of this Workflow.
+        r"""Sets the edit_time of this Workflow.
 
         编辑时间
 
@@ -931,7 +931,7 @@ class Workflow:
 
     @property
     def execution_action_rules(self):
-        """Gets the execution_action_rules of this Workflow.
+        r"""Gets the execution_action_rules of this Workflow.
 
         执行动作细粒度权限
 
@@ -942,7 +942,7 @@ class Workflow:
 
     @execution_action_rules.setter
     def execution_action_rules(self, execution_action_rules):
-        """Sets the execution_action_rules of this Workflow.
+        r"""Sets the execution_action_rules of this Workflow.
 
         执行动作细粒度权限
 
@@ -953,7 +953,7 @@ class Workflow:
 
     @property
     def execution_permission(self):
-        """Gets the execution_permission of this Workflow.
+        r"""Gets the execution_permission of this Workflow.
 
         云服务权限
 
@@ -964,7 +964,7 @@ class Workflow:
 
     @execution_permission.setter
     def execution_permission(self, execution_permission):
-        """Sets the execution_permission of this Workflow.
+        r"""Sets the execution_permission of this Workflow.
 
         云服务权限
 
@@ -975,7 +975,7 @@ class Workflow:
 
     @property
     def global_parameters(self):
-        """Gets the global_parameters of this Workflow.
+        r"""Gets the global_parameters of this Workflow.
 
         全局参数
 
@@ -986,7 +986,7 @@ class Workflow:
 
     @global_parameters.setter
     def global_parameters(self, global_parameters):
-        """Sets the global_parameters of this Workflow.
+        r"""Sets the global_parameters of this Workflow.
 
         全局参数
 
@@ -997,7 +997,7 @@ class Workflow:
 
     @property
     def is_delete(self):
-        """Gets the is_delete of this Workflow.
+        r"""Gets the is_delete of this Workflow.
 
         逻辑删除
 
@@ -1008,7 +1008,7 @@ class Workflow:
 
     @is_delete.setter
     def is_delete(self, is_delete):
-        """Sets the is_delete of this Workflow.
+        r"""Sets the is_delete of this Workflow.
 
         逻辑删除
 
@@ -1019,7 +1019,7 @@ class Workflow:
 
     @property
     def steps(self):
-        """Gets the steps of this Workflow.
+        r"""Gets the steps of this Workflow.
 
         任务步骤
 
@@ -1030,7 +1030,7 @@ class Workflow:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this Workflow.
+        r"""Sets the steps of this Workflow.
 
         任务步骤
 
@@ -1041,7 +1041,7 @@ class Workflow:
 
     @property
     def output(self):
-        """Gets the output of this Workflow.
+        r"""Gets the output of this Workflow.
 
         任务输出
 
@@ -1052,7 +1052,7 @@ class Workflow:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this Workflow.
+        r"""Sets the output of this Workflow.
 
         任务输出
 
@@ -1063,7 +1063,7 @@ class Workflow:
 
     @property
     def trigger_id(self):
-        """Gets the trigger_id of this Workflow.
+        r"""Gets the trigger_id of this Workflow.
 
         触发器id
 
@@ -1074,7 +1074,7 @@ class Workflow:
 
     @trigger_id.setter
     def trigger_id(self, trigger_id):
-        """Sets the trigger_id of this Workflow.
+        r"""Sets the trigger_id of this Workflow.
 
         触发器id
 
@@ -1085,7 +1085,7 @@ class Workflow:
 
     @property
     def trigger_status(self):
-        """Gets the trigger_status of this Workflow.
+        r"""Gets the trigger_status of this Workflow.
 
         触发器状态
 
@@ -1096,7 +1096,7 @@ class Workflow:
 
     @trigger_status.setter
     def trigger_status(self, trigger_status):
-        """Sets the trigger_status of this Workflow.
+        r"""Sets the trigger_status of this Workflow.
 
         触发器状态
 
@@ -1107,7 +1107,7 @@ class Workflow:
 
     @property
     def approve_id(self):
-        """Gets the approve_id of this Workflow.
+        r"""Gets the approve_id of this Workflow.
 
         审批id
 
@@ -1118,7 +1118,7 @@ class Workflow:
 
     @approve_id.setter
     def approve_id(self, approve_id):
-        """Sets the approve_id of this Workflow.
+        r"""Sets the approve_id of this Workflow.
 
         审批id
 
@@ -1129,7 +1129,7 @@ class Workflow:
 
     @property
     def template_i18n(self):
-        """Gets the template_i18n of this Workflow.
+        r"""Gets the template_i18n of this Workflow.
 
         :return: The template_i18n of this Workflow.
         :rtype: :class:`huaweicloudsdkaom.v1.WorkFlowModel`
@@ -1138,7 +1138,7 @@ class Workflow:
 
     @template_i18n.setter
     def template_i18n(self, template_i18n):
-        """Sets the template_i18n of this Workflow.
+        r"""Sets the template_i18n of this Workflow.
 
         :param template_i18n: The template_i18n of this Workflow.
         :type template_i18n: :class:`huaweicloudsdkaom.v1.WorkFlowModel`
@@ -1147,7 +1147,7 @@ class Workflow:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Workflow.
+        r"""Gets the enterprise_project_id of this Workflow.
 
         任务所属的企业项目
 
@@ -1158,7 +1158,7 @@ class Workflow:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Workflow.
+        r"""Sets the enterprise_project_id of this Workflow.
 
         任务所属的企业项目
 
@@ -1169,7 +1169,7 @@ class Workflow:
 
     @property
     def last_execute_by(self):
-        """Gets the last_execute_by of this Workflow.
+        r"""Gets the last_execute_by of this Workflow.
 
         任务最后一次执行人
 
@@ -1180,7 +1180,7 @@ class Workflow:
 
     @last_execute_by.setter
     def last_execute_by(self, last_execute_by):
-        """Sets the last_execute_by of this Workflow.
+        r"""Sets the last_execute_by of this Workflow.
 
         任务最后一次执行人
 

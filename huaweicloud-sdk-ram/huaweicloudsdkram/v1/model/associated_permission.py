@@ -35,7 +35,7 @@ class AssociatedPermission:
     }
 
     def __init__(self, permission_id=None, permission_name=None, resource_type=None, status=None, created_at=None, updated_at=None):
-        """AssociatedPermission
+        r"""AssociatedPermission
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AssociatedPermission:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this AssociatedPermission.
+        r"""Gets the permission_id of this AssociatedPermission.
 
         权限的ID。
 
@@ -89,7 +89,7 @@ class AssociatedPermission:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this AssociatedPermission.
+        r"""Sets the permission_id of this AssociatedPermission.
 
         权限的ID。
 
@@ -100,7 +100,7 @@ class AssociatedPermission:
 
     @property
     def permission_name(self):
-        """Gets the permission_name of this AssociatedPermission.
+        r"""Gets the permission_name of this AssociatedPermission.
 
         共享资源权限的名称。
 
@@ -111,7 +111,7 @@ class AssociatedPermission:
 
     @permission_name.setter
     def permission_name(self, permission_name):
-        """Sets the permission_name of this AssociatedPermission.
+        r"""Sets the permission_name of this AssociatedPermission.
 
         共享资源权限的名称。
 
@@ -122,7 +122,7 @@ class AssociatedPermission:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AssociatedPermission.
+        r"""Gets the resource_type of this AssociatedPermission.
 
         权限适用的资源类型。
 
@@ -133,7 +133,7 @@ class AssociatedPermission:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AssociatedPermission.
+        r"""Sets the resource_type of this AssociatedPermission.
 
         权限适用的资源类型。
 
@@ -144,7 +144,7 @@ class AssociatedPermission:
 
     @property
     def status(self):
-        """Gets the status of this AssociatedPermission.
+        r"""Gets the status of this AssociatedPermission.
 
         权限的当前状态。
 
@@ -155,7 +155,7 @@ class AssociatedPermission:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociatedPermission.
+        r"""Sets the status of this AssociatedPermission.
 
         权限的当前状态。
 
@@ -166,7 +166,7 @@ class AssociatedPermission:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AssociatedPermission.
+        r"""Gets the created_at of this AssociatedPermission.
 
         创建权限的时间。
 
@@ -177,7 +177,7 @@ class AssociatedPermission:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AssociatedPermission.
+        r"""Sets the created_at of this AssociatedPermission.
 
         创建权限的时间。
 
@@ -188,7 +188,7 @@ class AssociatedPermission:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AssociatedPermission.
+        r"""Gets the updated_at of this AssociatedPermission.
 
         最后一次更新权限的时间。
 
@@ -199,7 +199,7 @@ class AssociatedPermission:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AssociatedPermission.
+        r"""Sets the updated_at of this AssociatedPermission.
 
         最后一次更新权限的时间。
 

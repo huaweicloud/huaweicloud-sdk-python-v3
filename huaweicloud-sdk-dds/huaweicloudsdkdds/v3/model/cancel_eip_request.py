@@ -25,7 +25,7 @@ class CancelEipRequest:
     }
 
     def __init__(self, node_id=None):
-        """CancelEipRequest
+        r"""CancelEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelEipRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CancelEipRequest.
+        r"""Gets the node_id of this CancelEipRequest.
 
         节点ID。
 
@@ -53,7 +53,7 @@ class CancelEipRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CancelEipRequest.
+        r"""Sets the node_id of this CancelEipRequest.
 
         节点ID。
 

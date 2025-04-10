@@ -35,7 +35,7 @@ class AppQuotaCreate:
     }
 
     def __init__(self, name=None, call_limits=None, time_unit=None, time_interval=None, reset_time=None, remark=None):
-        """AppQuotaCreate
+        r"""AppQuotaCreate
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class AppQuotaCreate:
 
     @property
     def name(self):
-        """Gets the name of this AppQuotaCreate.
+        r"""Gets the name of this AppQuotaCreate.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头
 
@@ -85,7 +85,7 @@ class AppQuotaCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppQuotaCreate.
+        r"""Sets the name of this AppQuotaCreate.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头
 
@@ -96,7 +96,7 @@ class AppQuotaCreate:
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this AppQuotaCreate.
+        r"""Gets the call_limits of this AppQuotaCreate.
 
         客户端配额的访问次数限制
 
@@ -107,7 +107,7 @@ class AppQuotaCreate:
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this AppQuotaCreate.
+        r"""Sets the call_limits of this AppQuotaCreate.
 
         客户端配额的访问次数限制
 
@@ -118,7 +118,7 @@ class AppQuotaCreate:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this AppQuotaCreate.
+        r"""Gets the time_unit of this AppQuotaCreate.
 
         限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
 
@@ -129,7 +129,7 @@ class AppQuotaCreate:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this AppQuotaCreate.
+        r"""Sets the time_unit of this AppQuotaCreate.
 
         限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
 
@@ -140,7 +140,7 @@ class AppQuotaCreate:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this AppQuotaCreate.
+        r"""Gets the time_interval of this AppQuotaCreate.
 
         流控的限定时间值
 
@@ -151,7 +151,7 @@ class AppQuotaCreate:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this AppQuotaCreate.
+        r"""Sets the time_interval of this AppQuotaCreate.
 
         流控的限定时间值
 
@@ -162,7 +162,7 @@ class AppQuotaCreate:
 
     @property
     def reset_time(self):
-        """Gets the reset_time of this AppQuotaCreate.
+        r"""Gets the reset_time of this AppQuotaCreate.
 
         首次配额重置时间点，不配置默认为首次调用时间计算
 
@@ -173,7 +173,7 @@ class AppQuotaCreate:
 
     @reset_time.setter
     def reset_time(self, reset_time):
-        """Sets the reset_time of this AppQuotaCreate.
+        r"""Sets the reset_time of this AppQuotaCreate.
 
         首次配额重置时间点，不配置默认为首次调用时间计算
 
@@ -184,7 +184,7 @@ class AppQuotaCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this AppQuotaCreate.
+        r"""Gets the remark of this AppQuotaCreate.
 
         参数说明和描述。  不支持<，>字符
 
@@ -195,7 +195,7 @@ class AppQuotaCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AppQuotaCreate.
+        r"""Sets the remark of this AppQuotaCreate.
 
         参数说明和描述。  不支持<，>字符
 

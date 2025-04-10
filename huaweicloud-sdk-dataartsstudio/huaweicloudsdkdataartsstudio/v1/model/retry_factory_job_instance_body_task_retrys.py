@@ -29,7 +29,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
     }
 
     def __init__(self, job_id=None, plan_time=None, submit_time=None):
-        """RetryFactoryJobInstanceBodyTaskRetrys
+        r"""RetryFactoryJobInstanceBodyTaskRetrys
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RetryFactoryJobInstanceBodyTaskRetrys.
+        r"""Gets the job_id of this RetryFactoryJobInstanceBodyTaskRetrys.
 
         作业id，当前重跑实例的作业id。
 
@@ -65,7 +65,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RetryFactoryJobInstanceBodyTaskRetrys.
+        r"""Sets the job_id of this RetryFactoryJobInstanceBodyTaskRetrys.
 
         作业id，当前重跑实例的作业id。
 
@@ -76,7 +76,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
 
     @property
     def plan_time(self):
-        """Gets the plan_time of this RetryFactoryJobInstanceBodyTaskRetrys.
+        r"""Gets the plan_time of this RetryFactoryJobInstanceBodyTaskRetrys.
 
         实例计划时间，13位时间戳，可通过查询作业实例列表接口获取。
 
@@ -87,7 +87,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
 
     @plan_time.setter
     def plan_time(self, plan_time):
-        """Sets the plan_time of this RetryFactoryJobInstanceBodyTaskRetrys.
+        r"""Sets the plan_time of this RetryFactoryJobInstanceBodyTaskRetrys.
 
         实例计划时间，13位时间戳，可通过查询作业实例列表接口获取。
 
@@ -98,7 +98,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
 
     @property
     def submit_time(self):
-        """Gets the submit_time of this RetryFactoryJobInstanceBodyTaskRetrys.
+        r"""Gets the submit_time of this RetryFactoryJobInstanceBodyTaskRetrys.
 
         实例提交时间，13位时间戳，可通过查询作业实例列表接口获取。
 
@@ -109,7 +109,7 @@ class RetryFactoryJobInstanceBodyTaskRetrys:
 
     @submit_time.setter
     def submit_time(self, submit_time):
-        """Sets the submit_time of this RetryFactoryJobInstanceBodyTaskRetrys.
+        r"""Sets the submit_time of this RetryFactoryJobInstanceBodyTaskRetrys.
 
         实例提交时间，13位时间戳，可通过查询作业实例列表接口获取。
 

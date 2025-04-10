@@ -25,7 +25,7 @@ class CreateMetricDataRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMetricDataRequest
+        r"""CreateMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMetricDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMetricDataRequest.
+        r"""Gets the body of this CreateMetricDataRequest.
 
         添加一条或多条自定义指标监控数据，请求参数。
 
@@ -54,7 +54,7 @@ class CreateMetricDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMetricDataRequest.
+        r"""Sets the body of this CreateMetricDataRequest.
 
         添加一条或多条自定义指标监控数据，请求参数。
 

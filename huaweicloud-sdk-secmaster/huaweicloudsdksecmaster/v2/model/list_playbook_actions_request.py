@@ -33,7 +33,7 @@ class ListPlaybookActionsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, limit=None, offset=None):
-        """ListPlaybookActionsRequest
+        r"""ListPlaybookActionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookActionsRequest.
+        r"""Gets the project_id of this ListPlaybookActionsRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class ListPlaybookActionsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookActionsRequest.
+        r"""Sets the project_id of this ListPlaybookActionsRequest.
 
         项目ID
 
@@ -88,7 +88,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookActionsRequest.
+        r"""Gets the workspace_id of this ListPlaybookActionsRequest.
 
         工作空间ID
 
@@ -99,7 +99,7 @@ class ListPlaybookActionsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookActionsRequest.
+        r"""Sets the workspace_id of this ListPlaybookActionsRequest.
 
         工作空间ID
 
@@ -110,7 +110,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListPlaybookActionsRequest.
+        r"""Gets the version_id of this ListPlaybookActionsRequest.
 
         剧本版本ID
 
@@ -121,7 +121,7 @@ class ListPlaybookActionsRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListPlaybookActionsRequest.
+        r"""Sets the version_id of this ListPlaybookActionsRequest.
 
         剧本版本ID
 
@@ -132,7 +132,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybookActionsRequest.
+        r"""Gets the limit of this ListPlaybookActionsRequest.
 
         分页查询参数，用于指定一次查询最多的结果数，从1开始
 
@@ -143,7 +143,7 @@ class ListPlaybookActionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybookActionsRequest.
+        r"""Sets the limit of this ListPlaybookActionsRequest.
 
         分页查询参数，用于指定一次查询最多的结果数，从1开始
 
@@ -154,7 +154,7 @@ class ListPlaybookActionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybookActionsRequest.
+        r"""Gets the offset of this ListPlaybookActionsRequest.
 
         分页查询参数。用于指定查询结果的起始位置，从0开始
 
@@ -165,7 +165,7 @@ class ListPlaybookActionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybookActionsRequest.
+        r"""Sets the offset of this ListPlaybookActionsRequest.
 
         分页查询参数。用于指定查询结果的起始位置，从0开始
 

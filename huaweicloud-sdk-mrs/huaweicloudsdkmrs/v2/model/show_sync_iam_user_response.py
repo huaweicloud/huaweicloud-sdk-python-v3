@@ -28,7 +28,7 @@ class ShowSyncIamUserResponse(SdkResponse):
     }
 
     def __init__(self, user_names=None, group_names=None):
-        """ShowSyncIamUserResponse
+        r"""ShowSyncIamUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSyncIamUserResponse(SdkResponse):
 
     @property
     def user_names(self):
-        """Gets the user_names of this ShowSyncIamUserResponse.
+        r"""Gets the user_names of this ShowSyncIamUserResponse.
 
         已经同步了的用户
 
@@ -62,7 +62,7 @@ class ShowSyncIamUserResponse(SdkResponse):
 
     @user_names.setter
     def user_names(self, user_names):
-        """Sets the user_names of this ShowSyncIamUserResponse.
+        r"""Sets the user_names of this ShowSyncIamUserResponse.
 
         已经同步了的用户
 
@@ -73,7 +73,7 @@ class ShowSyncIamUserResponse(SdkResponse):
 
     @property
     def group_names(self):
-        """Gets the group_names of this ShowSyncIamUserResponse.
+        r"""Gets the group_names of this ShowSyncIamUserResponse.
 
         已经同步了的用户组
 
@@ -84,7 +84,7 @@ class ShowSyncIamUserResponse(SdkResponse):
 
     @group_names.setter
     def group_names(self, group_names):
-        """Sets the group_names of this ShowSyncIamUserResponse.
+        r"""Sets the group_names of this ShowSyncIamUserResponse.
 
         已经同步了的用户组
 

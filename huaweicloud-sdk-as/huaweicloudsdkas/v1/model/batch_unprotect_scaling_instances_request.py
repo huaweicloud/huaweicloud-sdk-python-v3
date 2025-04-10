@@ -27,7 +27,7 @@ class BatchUnprotectScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchUnprotectScalingInstancesRequest
+        r"""BatchUnprotectScalingInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUnprotectScalingInstancesRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this BatchUnprotectScalingInstancesRequest.
+        r"""Gets the scaling_group_id of this BatchUnprotectScalingInstancesRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchUnprotectScalingInstancesRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this BatchUnprotectScalingInstancesRequest.
+        r"""Sets the scaling_group_id of this BatchUnprotectScalingInstancesRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchUnprotectScalingInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUnprotectScalingInstancesRequest.
+        r"""Gets the body of this BatchUnprotectScalingInstancesRequest.
 
         :return: The body of this BatchUnprotectScalingInstancesRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnprotectInstancesOption`
@@ -80,7 +80,7 @@ class BatchUnprotectScalingInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUnprotectScalingInstancesRequest.
+        r"""Sets the body of this BatchUnprotectScalingInstancesRequest.
 
         :param body: The body of this BatchUnprotectScalingInstancesRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchUnprotectInstancesOption`

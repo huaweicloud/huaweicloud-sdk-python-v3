@@ -27,7 +27,7 @@ class ShowBackupDownloadLinkRequest:
     }
 
     def __init__(self, x_language=None, backup_id=None):
-        """ShowBackupDownloadLinkRequest
+        r"""ShowBackupDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowBackupDownloadLinkRequest.
+        r"""Gets the x_language of this ShowBackupDownloadLinkRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class ShowBackupDownloadLinkRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowBackupDownloadLinkRequest.
+        r"""Sets the x_language of this ShowBackupDownloadLinkRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowBackupDownloadLinkRequest.
+        r"""Gets the backup_id of this ShowBackupDownloadLinkRequest.
 
         备份ID。
 
@@ -82,7 +82,7 @@ class ShowBackupDownloadLinkRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowBackupDownloadLinkRequest.
+        r"""Sets the backup_id of this ShowBackupDownloadLinkRequest.
 
         备份ID。
 

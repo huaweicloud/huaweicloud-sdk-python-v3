@@ -41,7 +41,7 @@ class ListImageByTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, offset=None, matches=None, without_any_tag=None):
-        """ListImageByTagsRequestBody
+        r"""ListImageByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListImageByTagsRequestBody.
+        r"""Gets the action of this ListImageByTagsRequestBody.
 
         操作标识（区分大小写），支持filter、count。filter就是分页查询；count是只需按照条件将总条数返回即可。
 
@@ -109,7 +109,7 @@ class ListImageByTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListImageByTagsRequestBody.
+        r"""Sets the action of this ListImageByTagsRequestBody.
 
         操作标识（区分大小写），支持filter、count。filter就是分页查询；count是只需按照条件将总条数返回即可。
 
@@ -120,7 +120,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListImageByTagsRequestBody.
+        r"""Gets the tags of this ListImageByTagsRequestBody.
 
         包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
@@ -131,7 +131,7 @@ class ListImageByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListImageByTagsRequestBody.
+        r"""Sets the tags of this ListImageByTagsRequestBody.
 
         包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
@@ -142,7 +142,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this ListImageByTagsRequestBody.
+        r"""Gets the tags_any of this ListImageByTagsRequestBody.
 
         包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不允许为空列表，但可以不传递参数。
 
@@ -153,7 +153,7 @@ class ListImageByTagsRequestBody:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this ListImageByTagsRequestBody.
+        r"""Sets the tags_any of this ListImageByTagsRequestBody.
 
         包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不允许为空列表，但可以不传递参数。
 
@@ -164,7 +164,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ListImageByTagsRequestBody.
+        r"""Gets the not_tags of this ListImageByTagsRequestBody.
 
         不包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
@@ -175,7 +175,7 @@ class ListImageByTagsRequestBody:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ListImageByTagsRequestBody.
+        r"""Sets the not_tags of this ListImageByTagsRequestBody.
 
         不包含标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
@@ -186,7 +186,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this ListImageByTagsRequestBody.
+        r"""Gets the not_tags_any of this ListImageByTagsRequestBody.
 
         不包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
@@ -197,7 +197,7 @@ class ListImageByTagsRequestBody:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this ListImageByTagsRequestBody.
+        r"""Sets the not_tags_any of this ListImageByTagsRequestBody.
 
         不包含任意标签，最多包含10个key，每个key对应的values最多包含10个值，且key和values都不能重复。不能为空列表。
 
@@ -208,7 +208,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImageByTagsRequestBody.
+        r"""Gets the limit of this ListImageByTagsRequestBody.
 
         最大查询记录数(action为count，时此参数无效）如果action为filter默认为10，limit最多为1000，不能为负数，最小值为1。
 
@@ -219,7 +219,7 @@ class ListImageByTagsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImageByTagsRequestBody.
+        r"""Sets the limit of this ListImageByTagsRequestBody.
 
         最大查询记录数(action为count，时此参数无效）如果action为filter默认为10，limit最多为1000，不能为负数，最小值为1。
 
@@ -230,7 +230,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImageByTagsRequestBody.
+        r"""Gets the offset of this ListImageByTagsRequestBody.
 
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数（action为count时，此参数无效），如果action为filter默认为0，不能为负数。
 
@@ -241,7 +241,7 @@ class ListImageByTagsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImageByTagsRequestBody.
+        r"""Sets the offset of this ListImageByTagsRequestBody.
 
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数（action为count时，此参数无效），如果action为filter默认为0，不能为负数。
 
@@ -252,7 +252,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListImageByTagsRequestBody.
+        r"""Gets the matches of this ListImageByTagsRequestBody.
 
         搜索字段，key为要匹配的字段，如resource_name、resource_id等。value为匹配的值。多个matches的key不允许重复。不允许为空列表，但可以不传递参数。
 
@@ -263,7 +263,7 @@ class ListImageByTagsRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListImageByTagsRequestBody.
+        r"""Sets the matches of this ListImageByTagsRequestBody.
 
         搜索字段，key为要匹配的字段，如resource_name、resource_id等。value为匹配的值。多个matches的key不允许重复。不允许为空列表，但可以不传递参数。
 
@@ -274,7 +274,7 @@ class ListImageByTagsRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ListImageByTagsRequestBody.
+        r"""Gets the without_any_tag of this ListImageByTagsRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略tag、not_tags、tags_any、not_tags_any字段。
 
@@ -285,7 +285,7 @@ class ListImageByTagsRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ListImageByTagsRequestBody.
+        r"""Sets the without_any_tag of this ListImageByTagsRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略tag、not_tags、tags_any、not_tags_any字段。
 

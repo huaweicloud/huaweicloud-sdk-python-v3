@@ -35,7 +35,7 @@ class EndpointConnection:
     }
 
     def __init__(self, id=None, marker_id=None, created_at=None, updated_at=None, domain_id=None, status=None):
-        """EndpointConnection
+        r"""EndpointConnection
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class EndpointConnection:
 
     @property
     def id(self):
-        """Gets the id of this EndpointConnection.
+        r"""Gets the id of this EndpointConnection.
 
         连接编号
 
@@ -83,7 +83,7 @@ class EndpointConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointConnection.
+        r"""Sets the id of this EndpointConnection.
 
         连接编号
 
@@ -94,7 +94,7 @@ class EndpointConnection:
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this EndpointConnection.
+        r"""Gets the marker_id of this EndpointConnection.
 
         连接报文标识
 
@@ -105,7 +105,7 @@ class EndpointConnection:
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this EndpointConnection.
+        r"""Sets the marker_id of this EndpointConnection.
 
         连接报文标识
 
@@ -116,7 +116,7 @@ class EndpointConnection:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointConnection.
+        r"""Gets the created_at of this EndpointConnection.
 
         连接创建时间。UTC时间，格式：YYYY-MM-DDTHH:MM:SSZ
 
@@ -127,7 +127,7 @@ class EndpointConnection:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointConnection.
+        r"""Sets the created_at of this EndpointConnection.
 
         连接创建时间。UTC时间，格式：YYYY-MM-DDTHH:MM:SSZ
 
@@ -138,7 +138,7 @@ class EndpointConnection:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EndpointConnection.
+        r"""Gets the updated_at of this EndpointConnection.
 
         连接更新时间。UTC时间，格式：YYYY-MM-DDTHH:MM:SSZ
 
@@ -149,7 +149,7 @@ class EndpointConnection:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EndpointConnection.
+        r"""Sets the updated_at of this EndpointConnection.
 
         连接更新时间。UTC时间，格式：YYYY-MM-DDTHH:MM:SSZ
 
@@ -160,7 +160,7 @@ class EndpointConnection:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EndpointConnection.
+        r"""Gets the domain_id of this EndpointConnection.
 
         用户的Domain ID
 
@@ -171,7 +171,7 @@ class EndpointConnection:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EndpointConnection.
+        r"""Sets the domain_id of this EndpointConnection.
 
         用户的Domain ID
 
@@ -182,7 +182,7 @@ class EndpointConnection:
 
     @property
     def status(self):
-        """Gets the status of this EndpointConnection.
+        r"""Gets the status of this EndpointConnection.
 
         连接状态 - pendingAcceptance 待接受 - creating 创建中 - accepted 已接受 - rejected 已拒绝 - failed 失败 - deleting 删除中
 
@@ -193,7 +193,7 @@ class EndpointConnection:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EndpointConnection.
+        r"""Sets the status of this EndpointConnection.
 
         连接状态 - pendingAcceptance 待接受 - creating 创建中 - accepted 已接受 - rejected 已拒绝 - failed 失败 - deleting 删除中
 

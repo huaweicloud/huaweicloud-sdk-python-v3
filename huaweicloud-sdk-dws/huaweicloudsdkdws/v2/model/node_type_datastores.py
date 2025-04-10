@@ -27,7 +27,7 @@ class NodeTypeDatastores:
     }
 
     def __init__(self, version=None, attachments=None):
-        """NodeTypeDatastores
+        r"""NodeTypeDatastores
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeTypeDatastores:
 
     @property
     def version(self):
-        """Gets the version of this NodeTypeDatastores.
+        r"""Gets the version of this NodeTypeDatastores.
 
         内核版本号。
 
@@ -59,7 +59,7 @@ class NodeTypeDatastores:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NodeTypeDatastores.
+        r"""Sets the version of this NodeTypeDatastores.
 
         内核版本号。
 
@@ -70,7 +70,7 @@ class NodeTypeDatastores:
 
     @property
     def attachments(self):
-        """Gets the attachments of this NodeTypeDatastores.
+        r"""Gets the attachments of this NodeTypeDatastores.
 
         :return: The attachments of this NodeTypeDatastores.
         :rtype: :class:`huaweicloudsdkdws.v2.NodeTypeDatastoresAttachments`
@@ -79,7 +79,7 @@ class NodeTypeDatastores:
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this NodeTypeDatastores.
+        r"""Sets the attachments of this NodeTypeDatastores.
 
         :param attachments: The attachments of this NodeTypeDatastores.
         :type attachments: :class:`huaweicloudsdkdws.v2.NodeTypeDatastoresAttachments`

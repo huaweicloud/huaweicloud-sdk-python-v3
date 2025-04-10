@@ -27,7 +27,7 @@ class CreateQueuePlanRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """CreateQueuePlanRequest
+        r"""CreateQueuePlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateQueuePlanRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this CreateQueuePlanRequest.
+        r"""Gets the queue_name of this CreateQueuePlanRequest.
 
         需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -60,7 +60,7 @@ class CreateQueuePlanRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this CreateQueuePlanRequest.
+        r"""Sets the queue_name of this CreateQueuePlanRequest.
 
         需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -71,7 +71,7 @@ class CreateQueuePlanRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQueuePlanRequest.
+        r"""Gets the body of this CreateQueuePlanRequest.
 
         :return: The body of this CreateQueuePlanRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`
@@ -80,7 +80,7 @@ class CreateQueuePlanRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQueuePlanRequest.
+        r"""Sets the body of this CreateQueuePlanRequest.
 
         :param body: The body of this CreateQueuePlanRequest.
         :type body: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`

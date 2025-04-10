@@ -25,7 +25,7 @@ class BandwidthRef:
     }
 
     def __init__(self, id=None):
-        """BandwidthRef
+        r"""BandwidthRef
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BandwidthRef:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthRef.
+        r"""Gets the id of this BandwidthRef.
 
         参数解释：共享带宽的ID。
 
@@ -53,7 +53,7 @@ class BandwidthRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthRef.
+        r"""Sets the id of this BandwidthRef.
 
         参数解释：共享带宽的ID。
 

@@ -26,7 +26,7 @@ class ListFeaturesResponse(SdkResponse):
     }
 
     def __init__(self, features=None):
-        """ListFeaturesResponse
+        r"""ListFeaturesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFeaturesResponse(SdkResponse):
 
     @property
     def features(self):
-        """Gets the features of this ListFeaturesResponse.
+        r"""Gets the features of this ListFeaturesResponse.
 
         高级特性列表。
 
@@ -55,7 +55,7 @@ class ListFeaturesResponse(SdkResponse):
 
     @features.setter
     def features(self, features):
-        """Sets the features of this ListFeaturesResponse.
+        r"""Sets the features of this ListFeaturesResponse.
 
         高级特性列表。
 

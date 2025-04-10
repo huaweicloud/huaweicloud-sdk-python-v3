@@ -25,7 +25,7 @@ class BatchDeleteMqsInstanceTopicReq:
     }
 
     def __init__(self, topics=None):
-        """BatchDeleteMqsInstanceTopicReq
+        r"""BatchDeleteMqsInstanceTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteMqsInstanceTopicReq:
 
     @property
     def topics(self):
-        """Gets the topics of this BatchDeleteMqsInstanceTopicReq.
+        r"""Gets the topics of this BatchDeleteMqsInstanceTopicReq.
 
         待删除的topic列表。
 
@@ -53,7 +53,7 @@ class BatchDeleteMqsInstanceTopicReq:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this BatchDeleteMqsInstanceTopicReq.
+        r"""Sets the topics of this BatchDeleteMqsInstanceTopicReq.
 
         待删除的topic列表。
 

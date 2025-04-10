@@ -41,7 +41,7 @@ class CreateConnectionReq:
     }
 
     def __init__(self, name=None, db_type=None, config=None, description=None, endpoint=None, vpc=None, ssl=None, cloud=None, enterprise_project_id=None):
-        """CreateConnectionReq
+        r"""CreateConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreateConnectionReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateConnectionReq.
+        r"""Gets the name of this CreateConnectionReq.
 
         连接名称。 约束：连接名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
 
@@ -107,7 +107,7 @@ class CreateConnectionReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConnectionReq.
+        r"""Sets the name of this CreateConnectionReq.
 
         连接名称。 约束：连接名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
 
@@ -118,7 +118,7 @@ class CreateConnectionReq:
 
     @property
     def db_type(self):
-        """Gets the db_type of this CreateConnectionReq.
+        r"""Gets the db_type of this CreateConnectionReq.
 
         连接类型，包含： - mysql - postgresql - mongodb - oracle
 
@@ -129,7 +129,7 @@ class CreateConnectionReq:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this CreateConnectionReq.
+        r"""Sets the db_type of this CreateConnectionReq.
 
         连接类型，包含： - mysql - postgresql - mongodb - oracle
 
@@ -140,7 +140,7 @@ class CreateConnectionReq:
 
     @property
     def config(self):
-        """Gets the config of this CreateConnectionReq.
+        r"""Gets the config of this CreateConnectionReq.
 
         :return: The config of this CreateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -149,7 +149,7 @@ class CreateConnectionReq:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this CreateConnectionReq.
+        r"""Sets the config of this CreateConnectionReq.
 
         :param config: The config of this CreateConnectionReq.
         :type config: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -158,7 +158,7 @@ class CreateConnectionReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateConnectionReq.
+        r"""Gets the description of this CreateConnectionReq.
 
         描述，长度不能超过255个字符。
 
@@ -169,7 +169,7 @@ class CreateConnectionReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConnectionReq.
+        r"""Sets the description of this CreateConnectionReq.
 
         描述，长度不能超过255个字符。
 
@@ -180,7 +180,7 @@ class CreateConnectionReq:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this CreateConnectionReq.
+        r"""Gets the endpoint of this CreateConnectionReq.
 
         :return: The endpoint of this CreateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -189,7 +189,7 @@ class CreateConnectionReq:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this CreateConnectionReq.
+        r"""Sets the endpoint of this CreateConnectionReq.
 
         :param endpoint: The endpoint of this CreateConnectionReq.
         :type endpoint: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -198,7 +198,7 @@ class CreateConnectionReq:
 
     @property
     def vpc(self):
-        """Gets the vpc of this CreateConnectionReq.
+        r"""Gets the vpc of this CreateConnectionReq.
 
         :return: The vpc of this CreateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -207,7 +207,7 @@ class CreateConnectionReq:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this CreateConnectionReq.
+        r"""Sets the vpc of this CreateConnectionReq.
 
         :param vpc: The vpc of this CreateConnectionReq.
         :type vpc: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -216,7 +216,7 @@ class CreateConnectionReq:
 
     @property
     def ssl(self):
-        """Gets the ssl of this CreateConnectionReq.
+        r"""Gets the ssl of this CreateConnectionReq.
 
         :return: The ssl of this CreateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -225,7 +225,7 @@ class CreateConnectionReq:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this CreateConnectionReq.
+        r"""Sets the ssl of this CreateConnectionReq.
 
         :param ssl: The ssl of this CreateConnectionReq.
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -234,7 +234,7 @@ class CreateConnectionReq:
 
     @property
     def cloud(self):
-        """Gets the cloud of this CreateConnectionReq.
+        r"""Gets the cloud of this CreateConnectionReq.
 
         :return: The cloud of this CreateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudBaseInfo`
@@ -243,7 +243,7 @@ class CreateConnectionReq:
 
     @cloud.setter
     def cloud(self, cloud):
-        """Sets the cloud of this CreateConnectionReq.
+        r"""Sets the cloud of this CreateConnectionReq.
 
         :param cloud: The cloud of this CreateConnectionReq.
         :type cloud: :class:`huaweicloudsdkdrs.v5.CloudBaseInfo`
@@ -252,7 +252,7 @@ class CreateConnectionReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateConnectionReq.
+        r"""Gets the enterprise_project_id of this CreateConnectionReq.
 
         企业项目ID。
 
@@ -263,7 +263,7 @@ class CreateConnectionReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateConnectionReq.
+        r"""Sets the enterprise_project_id of this CreateConnectionReq.
 
         企业项目ID。
 

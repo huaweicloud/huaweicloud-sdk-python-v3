@@ -31,7 +31,7 @@ class ProcessingConfigDTO:
     }
 
     def __init__(self, validity=None, stream_formula=None, scaling=None, clean=None):
-        """ProcessingConfigDTO
+        r"""ProcessingConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProcessingConfigDTO:
 
     @property
     def validity(self):
-        """Gets the validity of this ProcessingConfigDTO.
+        r"""Gets the validity of this ProcessingConfigDTO.
 
         :return: The validity of this ProcessingConfigDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PointValidityingDTO`
@@ -73,7 +73,7 @@ class ProcessingConfigDTO:
 
     @validity.setter
     def validity(self, validity):
-        """Sets the validity of this ProcessingConfigDTO.
+        r"""Sets the validity of this ProcessingConfigDTO.
 
         :param validity: The validity of this ProcessingConfigDTO.
         :type validity: :class:`huaweicloudsdkiotedge.v2.PointValidityingDTO`
@@ -82,7 +82,7 @@ class ProcessingConfigDTO:
 
     @property
     def stream_formula(self):
-        """Gets the stream_formula of this ProcessingConfigDTO.
+        r"""Gets the stream_formula of this ProcessingConfigDTO.
 
         点位流公式配置字段
 
@@ -93,7 +93,7 @@ class ProcessingConfigDTO:
 
     @stream_formula.setter
     def stream_formula(self, stream_formula):
-        """Sets the stream_formula of this ProcessingConfigDTO.
+        r"""Sets the stream_formula of this ProcessingConfigDTO.
 
         点位流公式配置字段
 
@@ -104,7 +104,7 @@ class ProcessingConfigDTO:
 
     @property
     def scaling(self):
-        """Gets the scaling of this ProcessingConfigDTO.
+        r"""Gets the scaling of this ProcessingConfigDTO.
 
         :return: The scaling of this ProcessingConfigDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PointScalingDTO`
@@ -113,7 +113,7 @@ class ProcessingConfigDTO:
 
     @scaling.setter
     def scaling(self, scaling):
-        """Sets the scaling of this ProcessingConfigDTO.
+        r"""Sets the scaling of this ProcessingConfigDTO.
 
         :param scaling: The scaling of this ProcessingConfigDTO.
         :type scaling: :class:`huaweicloudsdkiotedge.v2.PointScalingDTO`
@@ -122,7 +122,7 @@ class ProcessingConfigDTO:
 
     @property
     def clean(self):
-        """Gets the clean of this ProcessingConfigDTO.
+        r"""Gets the clean of this ProcessingConfigDTO.
 
         :return: The clean of this ProcessingConfigDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PointCleanDTO`
@@ -131,7 +131,7 @@ class ProcessingConfigDTO:
 
     @clean.setter
     def clean(self, clean):
-        """Sets the clean of this ProcessingConfigDTO.
+        r"""Sets the clean of this ProcessingConfigDTO.
 
         :param clean: The clean of this ProcessingConfigDTO.
         :type clean: :class:`huaweicloudsdkiotedge.v2.PointCleanDTO`

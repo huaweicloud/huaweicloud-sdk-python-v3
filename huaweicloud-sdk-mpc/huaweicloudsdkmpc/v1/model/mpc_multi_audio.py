@@ -29,7 +29,7 @@ class MpcMultiAudio:
     }
 
     def __init__(self, output=None, audio_files=None, output_filename=None):
-        """MpcMultiAudio
+        r"""MpcMultiAudio
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MpcMultiAudio:
 
     @property
     def output(self):
-        """Gets the output of this MpcMultiAudio.
+        r"""Gets the output of this MpcMultiAudio.
 
         :return: The output of this MpcMultiAudio.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -66,7 +66,7 @@ class MpcMultiAudio:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this MpcMultiAudio.
+        r"""Sets the output of this MpcMultiAudio.
 
         :param output: The output of this MpcMultiAudio.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -75,7 +75,7 @@ class MpcMultiAudio:
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this MpcMultiAudio.
+        r"""Gets the audio_files of this MpcMultiAudio.
 
         音频文件列表
 
@@ -86,7 +86,7 @@ class MpcMultiAudio:
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this MpcMultiAudio.
+        r"""Sets the audio_files of this MpcMultiAudio.
 
         音频文件列表
 
@@ -97,7 +97,7 @@ class MpcMultiAudio:
 
     @property
     def output_filename(self):
-        """Gets the output_filename of this MpcMultiAudio.
+        r"""Gets the output_filename of this MpcMultiAudio.
 
         输出文件名。 
 
@@ -108,7 +108,7 @@ class MpcMultiAudio:
 
     @output_filename.setter
     def output_filename(self, output_filename):
-        """Sets the output_filename of this MpcMultiAudio.
+        r"""Sets the output_filename of this MpcMultiAudio.
 
         输出文件名。 
 

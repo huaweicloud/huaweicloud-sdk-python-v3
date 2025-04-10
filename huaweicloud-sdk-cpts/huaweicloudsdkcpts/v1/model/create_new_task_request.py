@@ -25,7 +25,7 @@ class CreateNewTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNewTaskRequest
+        r"""CreateNewTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNewTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNewTaskRequest.
+        r"""Gets the body of this CreateNewTaskRequest.
 
         :return: The body of this CreateNewTaskRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.NewTaskInfo`
@@ -52,7 +52,7 @@ class CreateNewTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNewTaskRequest.
+        r"""Sets the body of this CreateNewTaskRequest.
 
         :param body: The body of this CreateNewTaskRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.NewTaskInfo`

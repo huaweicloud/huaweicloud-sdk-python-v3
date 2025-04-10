@@ -49,7 +49,7 @@ class GetUpgradeDetailInfo:
     }
 
     def __init__(self, id=None, start_time=None, end_time=None, status=None, agency_name=None, image_info=None, total_nodes=None, completed_nodes=None, current_node_name=None, execute_times=None, migrate_param=None, final_az_info_map=None, current_node_detail=None):
-        """GetUpgradeDetailInfo
+        r"""GetUpgradeDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this GetUpgradeDetailInfo.
+        r"""Gets the id of this GetUpgradeDetailInfo.
 
         任务ID。
 
@@ -138,7 +138,7 @@ class GetUpgradeDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetUpgradeDetailInfo.
+        r"""Sets the id of this GetUpgradeDetailInfo.
 
         任务ID。
 
@@ -149,7 +149,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this GetUpgradeDetailInfo.
+        r"""Gets the start_time of this GetUpgradeDetailInfo.
 
         升级开始时间。
 
@@ -160,7 +160,7 @@ class GetUpgradeDetailInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this GetUpgradeDetailInfo.
+        r"""Sets the start_time of this GetUpgradeDetailInfo.
 
         升级开始时间。
 
@@ -171,7 +171,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this GetUpgradeDetailInfo.
+        r"""Gets the end_time of this GetUpgradeDetailInfo.
 
         升级结束时间。
 
@@ -182,7 +182,7 @@ class GetUpgradeDetailInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this GetUpgradeDetailInfo.
+        r"""Sets the end_time of this GetUpgradeDetailInfo.
 
         升级结束时间。
 
@@ -193,7 +193,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this GetUpgradeDetailInfo.
+        r"""Gets the status of this GetUpgradeDetailInfo.
 
         任务状态。 - RUNNING：升级中。 - SUCCESS：升级成功。 - FAILED：升级失败。 - PARTIAL_FAILED：部分升级失败。
 
@@ -204,7 +204,7 @@ class GetUpgradeDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetUpgradeDetailInfo.
+        r"""Sets the status of this GetUpgradeDetailInfo.
 
         任务状态。 - RUNNING：升级中。 - SUCCESS：升级成功。 - FAILED：升级失败。 - PARTIAL_FAILED：部分升级失败。
 
@@ -215,7 +215,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this GetUpgradeDetailInfo.
+        r"""Gets the agency_name of this GetUpgradeDetailInfo.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -226,7 +226,7 @@ class GetUpgradeDetailInfo:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this GetUpgradeDetailInfo.
+        r"""Sets the agency_name of this GetUpgradeDetailInfo.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -237,7 +237,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def image_info(self):
-        """Gets the image_info of this GetUpgradeDetailInfo.
+        r"""Gets the image_info of this GetUpgradeDetailInfo.
 
         :return: The image_info of this GetUpgradeDetailInfo.
         :rtype: :class:`huaweicloudsdkcss.v1.GetTargetImageIdDetail`
@@ -246,7 +246,7 @@ class GetUpgradeDetailInfo:
 
     @image_info.setter
     def image_info(self, image_info):
-        """Sets the image_info of this GetUpgradeDetailInfo.
+        r"""Sets the image_info of this GetUpgradeDetailInfo.
 
         :param image_info: The image_info of this GetUpgradeDetailInfo.
         :type image_info: :class:`huaweicloudsdkcss.v1.GetTargetImageIdDetail`
@@ -255,7 +255,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def total_nodes(self):
-        """Gets the total_nodes of this GetUpgradeDetailInfo.
+        r"""Gets the total_nodes of this GetUpgradeDetailInfo.
 
         所有需要升级的节点名称集合。
 
@@ -266,7 +266,7 @@ class GetUpgradeDetailInfo:
 
     @total_nodes.setter
     def total_nodes(self, total_nodes):
-        """Sets the total_nodes of this GetUpgradeDetailInfo.
+        r"""Sets the total_nodes of this GetUpgradeDetailInfo.
 
         所有需要升级的节点名称集合。
 
@@ -277,7 +277,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def completed_nodes(self):
-        """Gets the completed_nodes of this GetUpgradeDetailInfo.
+        r"""Gets the completed_nodes of this GetUpgradeDetailInfo.
 
         所有升级完成的节点名称集合。
 
@@ -288,7 +288,7 @@ class GetUpgradeDetailInfo:
 
     @completed_nodes.setter
     def completed_nodes(self, completed_nodes):
-        """Sets the completed_nodes of this GetUpgradeDetailInfo.
+        r"""Sets the completed_nodes of this GetUpgradeDetailInfo.
 
         所有升级完成的节点名称集合。
 
@@ -299,7 +299,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def current_node_name(self):
-        """Gets the current_node_name of this GetUpgradeDetailInfo.
+        r"""Gets the current_node_name of this GetUpgradeDetailInfo.
 
         当前正在升级的节点名称。
 
@@ -310,7 +310,7 @@ class GetUpgradeDetailInfo:
 
     @current_node_name.setter
     def current_node_name(self, current_node_name):
-        """Sets the current_node_name of this GetUpgradeDetailInfo.
+        r"""Sets the current_node_name of this GetUpgradeDetailInfo.
 
         当前正在升级的节点名称。
 
@@ -321,7 +321,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def execute_times(self):
-        """Gets the execute_times of this GetUpgradeDetailInfo.
+        r"""Gets the execute_times of this GetUpgradeDetailInfo.
 
         重试次数。
 
@@ -332,7 +332,7 @@ class GetUpgradeDetailInfo:
 
     @execute_times.setter
     def execute_times(self, execute_times):
-        """Sets the execute_times of this GetUpgradeDetailInfo.
+        r"""Sets the execute_times of this GetUpgradeDetailInfo.
 
         重试次数。
 
@@ -343,7 +343,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def migrate_param(self):
-        """Gets the migrate_param of this GetUpgradeDetailInfo.
+        r"""Gets the migrate_param of this GetUpgradeDetailInfo.
 
         集群当前升级的行为。当有query参数时显示该返回值。
 
@@ -354,7 +354,7 @@ class GetUpgradeDetailInfo:
 
     @migrate_param.setter
     def migrate_param(self, migrate_param):
-        """Sets the migrate_param of this GetUpgradeDetailInfo.
+        r"""Sets the migrate_param of this GetUpgradeDetailInfo.
 
         集群当前升级的行为。当有query参数时显示该返回值。
 
@@ -365,7 +365,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def final_az_info_map(self):
-        """Gets the final_az_info_map of this GetUpgradeDetailInfo.
+        r"""Gets the final_az_info_map of this GetUpgradeDetailInfo.
 
         集群升级预期结果。当有query参数时显示该返回值。
 
@@ -376,7 +376,7 @@ class GetUpgradeDetailInfo:
 
     @final_az_info_map.setter
     def final_az_info_map(self, final_az_info_map):
-        """Sets the final_az_info_map of this GetUpgradeDetailInfo.
+        r"""Sets the final_az_info_map of this GetUpgradeDetailInfo.
 
         集群升级预期结果。当有query参数时显示该返回值。
 
@@ -387,7 +387,7 @@ class GetUpgradeDetailInfo:
 
     @property
     def current_node_detail(self):
-        """Gets the current_node_detail of this GetUpgradeDetailInfo.
+        r"""Gets the current_node_detail of this GetUpgradeDetailInfo.
 
         :return: The current_node_detail of this GetUpgradeDetailInfo.
         :rtype: list[:class:`huaweicloudsdkcss.v1.CurrentNodeDetail`]
@@ -396,7 +396,7 @@ class GetUpgradeDetailInfo:
 
     @current_node_detail.setter
     def current_node_detail(self, current_node_detail):
-        """Sets the current_node_detail of this GetUpgradeDetailInfo.
+        r"""Sets the current_node_detail of this GetUpgradeDetailInfo.
 
         :param current_node_detail: The current_node_detail of this GetUpgradeDetailInfo.
         :type current_node_detail: list[:class:`huaweicloudsdkcss.v1.CurrentNodeDetail`]

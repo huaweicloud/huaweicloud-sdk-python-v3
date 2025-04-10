@@ -27,7 +27,7 @@ class BatchSetScalingInstancesStandbyRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchSetScalingInstancesStandbyRequest
+        r"""BatchSetScalingInstancesStandbyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchSetScalingInstancesStandbyRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this BatchSetScalingInstancesStandbyRequest.
+        r"""Gets the scaling_group_id of this BatchSetScalingInstancesStandbyRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchSetScalingInstancesStandbyRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this BatchSetScalingInstancesStandbyRequest.
+        r"""Sets the scaling_group_id of this BatchSetScalingInstancesStandbyRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchSetScalingInstancesStandbyRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetScalingInstancesStandbyRequest.
+        r"""Gets the body of this BatchSetScalingInstancesStandbyRequest.
 
         :return: The body of this BatchSetScalingInstancesStandbyRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchEnterStandbyInstancesOption`
@@ -80,7 +80,7 @@ class BatchSetScalingInstancesStandbyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetScalingInstancesStandbyRequest.
+        r"""Sets the body of this BatchSetScalingInstancesStandbyRequest.
 
         :param body: The body of this BatchSetScalingInstancesStandbyRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchEnterStandbyInstancesOption`

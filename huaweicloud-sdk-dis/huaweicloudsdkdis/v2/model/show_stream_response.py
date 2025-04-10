@@ -66,7 +66,7 @@ class ShowStreamResponse(SdkResponse):
     }
 
     def __init__(self, stream_name=None, create_time=None, last_modified_time=None, status=None, stream_type=None, partitions=None, has_more_partitions=None, retention_period=None, stream_id=None, data_type=None, data_schema=None, compression_format=None, csv_properties=None, writable_partition_count=None, readable_partition_count=None, update_partition_counts=None, tags=None, sys_tags=None, auto_scale_enabled=None, auto_scale_min_partition_count=None, auto_scale_max_partition_count=None):
-        """ShowStreamResponse
+        r"""ShowStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowStreamResponse.
+        r"""Gets the stream_name of this ShowStreamResponse.
 
         通道名称。
 
@@ -195,7 +195,7 @@ class ShowStreamResponse(SdkResponse):
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowStreamResponse.
+        r"""Sets the stream_name of this ShowStreamResponse.
 
         通道名称。
 
@@ -206,7 +206,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowStreamResponse.
+        r"""Gets the create_time of this ShowStreamResponse.
 
         通道创建的时间，13位时间戳。
 
@@ -217,7 +217,7 @@ class ShowStreamResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowStreamResponse.
+        r"""Sets the create_time of this ShowStreamResponse.
 
         通道创建的时间，13位时间戳。
 
@@ -228,7 +228,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ShowStreamResponse.
+        r"""Gets the last_modified_time of this ShowStreamResponse.
 
         通道最近一次修改的时间，13位时间戳。
 
@@ -239,7 +239,7 @@ class ShowStreamResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ShowStreamResponse.
+        r"""Sets the last_modified_time of this ShowStreamResponse.
 
         通道最近一次修改的时间，13位时间戳。
 
@@ -250,7 +250,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowStreamResponse.
+        r"""Gets the status of this ShowStreamResponse.
 
         通道的当前状态。  - CREATING：创建中 - RUNNING：运行中 - TERMINATING：删除中 - TERMINATED：已删除
 
@@ -261,7 +261,7 @@ class ShowStreamResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowStreamResponse.
+        r"""Sets the status of this ShowStreamResponse.
 
         通道的当前状态。  - CREATING：创建中 - RUNNING：运行中 - TERMINATING：删除中 - TERMINATED：已删除
 
@@ -272,7 +272,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def stream_type(self):
-        """Gets the stream_type of this ShowStreamResponse.
+        r"""Gets the stream_type of this ShowStreamResponse.
 
         通道类型。  - COMMON：普通通道，表示1MB带宽。 - ADVANCED：高级通道，表示5MB带宽。
 
@@ -283,7 +283,7 @@ class ShowStreamResponse(SdkResponse):
 
     @stream_type.setter
     def stream_type(self, stream_type):
-        """Sets the stream_type of this ShowStreamResponse.
+        r"""Sets the stream_type of this ShowStreamResponse.
 
         通道类型。  - COMMON：普通通道，表示1MB带宽。 - ADVANCED：高级通道，表示5MB带宽。
 
@@ -294,7 +294,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def partitions(self):
-        """Gets the partitions of this ShowStreamResponse.
+        r"""Gets the partitions of this ShowStreamResponse.
 
         通道的分区列表。
 
@@ -305,7 +305,7 @@ class ShowStreamResponse(SdkResponse):
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ShowStreamResponse.
+        r"""Sets the partitions of this ShowStreamResponse.
 
         通道的分区列表。
 
@@ -316,7 +316,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def has_more_partitions(self):
-        """Gets the has_more_partitions of this ShowStreamResponse.
+        r"""Gets the has_more_partitions of this ShowStreamResponse.
 
         是否还有更多满足请求条件的分区。  - 是：true。 - 否：false。
 
@@ -327,7 +327,7 @@ class ShowStreamResponse(SdkResponse):
 
     @has_more_partitions.setter
     def has_more_partitions(self, has_more_partitions):
-        """Sets the has_more_partitions of this ShowStreamResponse.
+        r"""Sets the has_more_partitions of this ShowStreamResponse.
 
         是否还有更多满足请求条件的分区。  - 是：true。 - 否：false。
 
@@ -338,7 +338,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def retention_period(self):
-        """Gets the retention_period of this ShowStreamResponse.
+        r"""Gets the retention_period of this ShowStreamResponse.
 
         数据保留时长，单位是小时。
 
@@ -349,7 +349,7 @@ class ShowStreamResponse(SdkResponse):
 
     @retention_period.setter
     def retention_period(self, retention_period):
-        """Sets the retention_period of this ShowStreamResponse.
+        r"""Sets the retention_period of this ShowStreamResponse.
 
         数据保留时长，单位是小时。
 
@@ -360,7 +360,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ShowStreamResponse.
+        r"""Gets the stream_id of this ShowStreamResponse.
 
         通道唯一标示符。
 
@@ -371,7 +371,7 @@ class ShowStreamResponse(SdkResponse):
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ShowStreamResponse.
+        r"""Sets the stream_id of this ShowStreamResponse.
 
         通道唯一标示符。
 
@@ -382,7 +382,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this ShowStreamResponse.
+        r"""Gets the data_type of this ShowStreamResponse.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -393,7 +393,7 @@ class ShowStreamResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ShowStreamResponse.
+        r"""Sets the data_type of this ShowStreamResponse.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -404,7 +404,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def data_schema(self):
-        """Gets the data_schema of this ShowStreamResponse.
+        r"""Gets the data_schema of this ShowStreamResponse.
 
         用于描述用户JSON、CSV格式的源数据结构，采用Avro Schema的语法描述。Avro介绍您也可以点击[这里](http://avro.apache.org/docs/current/#schemas)查看。
 
@@ -415,7 +415,7 @@ class ShowStreamResponse(SdkResponse):
 
     @data_schema.setter
     def data_schema(self, data_schema):
-        """Sets the data_schema of this ShowStreamResponse.
+        r"""Sets the data_schema of this ShowStreamResponse.
 
         用于描述用户JSON、CSV格式的源数据结构，采用Avro Schema的语法描述。Avro介绍您也可以点击[这里](http://avro.apache.org/docs/current/#schemas)查看。
 
@@ -426,7 +426,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def compression_format(self):
-        """Gets the compression_format of this ShowStreamResponse.
+        r"""Gets the compression_format of this ShowStreamResponse.
 
         数据的压缩类型，目前支持：  - snappy  - gzip  - zip  默认不压缩。
 
@@ -437,7 +437,7 @@ class ShowStreamResponse(SdkResponse):
 
     @compression_format.setter
     def compression_format(self, compression_format):
-        """Sets the compression_format of this ShowStreamResponse.
+        r"""Sets the compression_format of this ShowStreamResponse.
 
         数据的压缩类型，目前支持：  - snappy  - gzip  - zip  默认不压缩。
 
@@ -448,7 +448,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def csv_properties(self):
-        """Gets the csv_properties of this ShowStreamResponse.
+        r"""Gets the csv_properties of this ShowStreamResponse.
 
         :return: The csv_properties of this ShowStreamResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.CSVProperties`
@@ -457,7 +457,7 @@ class ShowStreamResponse(SdkResponse):
 
     @csv_properties.setter
     def csv_properties(self, csv_properties):
-        """Sets the csv_properties of this ShowStreamResponse.
+        r"""Sets the csv_properties of this ShowStreamResponse.
 
         :param csv_properties: The csv_properties of this ShowStreamResponse.
         :type csv_properties: :class:`huaweicloudsdkdis.v2.CSVProperties`
@@ -466,7 +466,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def writable_partition_count(self):
-        """Gets the writable_partition_count of this ShowStreamResponse.
+        r"""Gets the writable_partition_count of this ShowStreamResponse.
 
         可写分区总数量（只包含ACTIVE状态的分区）。
 
@@ -477,7 +477,7 @@ class ShowStreamResponse(SdkResponse):
 
     @writable_partition_count.setter
     def writable_partition_count(self, writable_partition_count):
-        """Sets the writable_partition_count of this ShowStreamResponse.
+        r"""Sets the writable_partition_count of this ShowStreamResponse.
 
         可写分区总数量（只包含ACTIVE状态的分区）。
 
@@ -488,7 +488,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def readable_partition_count(self):
-        """Gets the readable_partition_count of this ShowStreamResponse.
+        r"""Gets the readable_partition_count of this ShowStreamResponse.
 
         可读分区总数量（包含ACTIVE与DELETED状态的分区）。
 
@@ -499,7 +499,7 @@ class ShowStreamResponse(SdkResponse):
 
     @readable_partition_count.setter
     def readable_partition_count(self, readable_partition_count):
-        """Sets the readable_partition_count of this ShowStreamResponse.
+        r"""Sets the readable_partition_count of this ShowStreamResponse.
 
         可读分区总数量（包含ACTIVE与DELETED状态的分区）。
 
@@ -510,7 +510,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def update_partition_counts(self):
-        """Gets the update_partition_counts of this ShowStreamResponse.
+        r"""Gets the update_partition_counts of this ShowStreamResponse.
 
         扩缩容操作记录列表。
 
@@ -521,7 +521,7 @@ class ShowStreamResponse(SdkResponse):
 
     @update_partition_counts.setter
     def update_partition_counts(self, update_partition_counts):
-        """Sets the update_partition_counts of this ShowStreamResponse.
+        r"""Sets the update_partition_counts of this ShowStreamResponse.
 
         扩缩容操作记录列表。
 
@@ -532,7 +532,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowStreamResponse.
+        r"""Gets the tags of this ShowStreamResponse.
 
         通道的标签列表。
 
@@ -543,7 +543,7 @@ class ShowStreamResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowStreamResponse.
+        r"""Sets the tags of this ShowStreamResponse.
 
         通道的标签列表。
 
@@ -554,7 +554,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowStreamResponse.
+        r"""Gets the sys_tags of this ShowStreamResponse.
 
         通道的企业项目。
 
@@ -565,7 +565,7 @@ class ShowStreamResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowStreamResponse.
+        r"""Sets the sys_tags of this ShowStreamResponse.
 
         通道的企业项目。
 
@@ -576,7 +576,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def auto_scale_enabled(self):
-        """Gets the auto_scale_enabled of this ShowStreamResponse.
+        r"""Gets the auto_scale_enabled of this ShowStreamResponse.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -587,7 +587,7 @@ class ShowStreamResponse(SdkResponse):
 
     @auto_scale_enabled.setter
     def auto_scale_enabled(self, auto_scale_enabled):
-        """Sets the auto_scale_enabled of this ShowStreamResponse.
+        r"""Sets the auto_scale_enabled of this ShowStreamResponse.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -598,7 +598,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def auto_scale_min_partition_count(self):
-        """Gets the auto_scale_min_partition_count of this ShowStreamResponse.
+        r"""Gets the auto_scale_min_partition_count of this ShowStreamResponse.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -609,7 +609,7 @@ class ShowStreamResponse(SdkResponse):
 
     @auto_scale_min_partition_count.setter
     def auto_scale_min_partition_count(self, auto_scale_min_partition_count):
-        """Sets the auto_scale_min_partition_count of this ShowStreamResponse.
+        r"""Sets the auto_scale_min_partition_count of this ShowStreamResponse.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -620,7 +620,7 @@ class ShowStreamResponse(SdkResponse):
 
     @property
     def auto_scale_max_partition_count(self):
-        """Gets the auto_scale_max_partition_count of this ShowStreamResponse.
+        r"""Gets the auto_scale_max_partition_count of this ShowStreamResponse.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 
@@ -631,7 +631,7 @@ class ShowStreamResponse(SdkResponse):
 
     @auto_scale_max_partition_count.setter
     def auto_scale_max_partition_count(self, auto_scale_max_partition_count):
-        """Sets the auto_scale_max_partition_count of this ShowStreamResponse.
+        r"""Sets the auto_scale_max_partition_count of this ShowStreamResponse.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 

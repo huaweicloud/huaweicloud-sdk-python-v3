@@ -33,7 +33,7 @@ class ListServerGroupsResult:
     }
 
     def __init__(self, id=None, members=None, metadata=None, name=None, policies=None):
-        """ListServerGroupsResult
+        r"""ListServerGroupsResult
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListServerGroupsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListServerGroupsResult.
+        r"""Gets the id of this ListServerGroupsResult.
 
         云服务器组UUID。
 
@@ -77,7 +77,7 @@ class ListServerGroupsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServerGroupsResult.
+        r"""Sets the id of this ListServerGroupsResult.
 
         云服务器组UUID。
 
@@ -88,7 +88,7 @@ class ListServerGroupsResult:
 
     @property
     def members(self):
-        """Gets the members of this ListServerGroupsResult.
+        r"""Gets the members of this ListServerGroupsResult.
 
         云服务器组中包含的云服务器列表。
 
@@ -99,7 +99,7 @@ class ListServerGroupsResult:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ListServerGroupsResult.
+        r"""Sets the members of this ListServerGroupsResult.
 
         云服务器组中包含的云服务器列表。
 
@@ -110,7 +110,7 @@ class ListServerGroupsResult:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListServerGroupsResult.
+        r"""Gets the metadata of this ListServerGroupsResult.
 
         云服务器组元数据。
 
@@ -121,7 +121,7 @@ class ListServerGroupsResult:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListServerGroupsResult.
+        r"""Sets the metadata of this ListServerGroupsResult.
 
         云服务器组元数据。
 
@@ -132,7 +132,7 @@ class ListServerGroupsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListServerGroupsResult.
+        r"""Gets the name of this ListServerGroupsResult.
 
         云服务器组名称。
 
@@ -143,7 +143,7 @@ class ListServerGroupsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListServerGroupsResult.
+        r"""Sets the name of this ListServerGroupsResult.
 
         云服务器组名称。
 
@@ -154,7 +154,7 @@ class ListServerGroupsResult:
 
     @property
     def policies(self):
-        """Gets the policies of this ListServerGroupsResult.
+        r"""Gets the policies of this ListServerGroupsResult.
 
         与服务器组关联的策略名称列表。当前有效的策略名称为:  anti-affinity -此组中的服务器必须安排到不同的主机；  affinity -此组中的服务器必须安排在同一主机上;  soft-anti-affinity –如果可能, 应将此组中的服务器安排到不同的主机, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败;  soft-affinity -如果可能, 应将此组中的服务器安排在同一主机上, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败。
 
@@ -165,7 +165,7 @@ class ListServerGroupsResult:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListServerGroupsResult.
+        r"""Sets the policies of this ListServerGroupsResult.
 
         与服务器组关联的策略名称列表。当前有效的策略名称为:  anti-affinity -此组中的服务器必须安排到不同的主机；  affinity -此组中的服务器必须安排在同一主机上;  soft-anti-affinity –如果可能, 应将此组中的服务器安排到不同的主机, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败;  soft-affinity -如果可能, 应将此组中的服务器安排在同一主机上, 但如果无法实现, 则仍应安排它们, 而不是导致生成失败。
 

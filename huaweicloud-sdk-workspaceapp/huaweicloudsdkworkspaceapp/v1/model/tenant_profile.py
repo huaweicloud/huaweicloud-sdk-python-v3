@@ -37,7 +37,7 @@ class TenantProfile:
     }
 
     def __init__(self, project_id=None, project_name=None, tenant_domain_id=None, service_status=None, open_with_ad=None, tenant_domain_name=None, create_time=None):
-        """TenantProfile
+        r"""TenantProfile
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TenantProfile:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TenantProfile.
+        r"""Gets the project_id of this TenantProfile.
 
         租户ID 同tenant_id。
 
@@ -96,7 +96,7 @@ class TenantProfile:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TenantProfile.
+        r"""Sets the project_id of this TenantProfile.
 
         租户ID 同tenant_id。
 
@@ -107,7 +107,7 @@ class TenantProfile:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TenantProfile.
+        r"""Gets the project_name of this TenantProfile.
 
         租户名称。
 
@@ -118,7 +118,7 @@ class TenantProfile:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TenantProfile.
+        r"""Sets the project_name of this TenantProfile.
 
         租户名称。
 
@@ -129,7 +129,7 @@ class TenantProfile:
 
     @property
     def tenant_domain_id(self):
-        """Gets the tenant_domain_id of this TenantProfile.
+        r"""Gets the tenant_domain_id of this TenantProfile.
 
         租户的域ID。
 
@@ -140,7 +140,7 @@ class TenantProfile:
 
     @tenant_domain_id.setter
     def tenant_domain_id(self, tenant_domain_id):
-        """Sets the tenant_domain_id of this TenantProfile.
+        r"""Sets the tenant_domain_id of this TenantProfile.
 
         租户的域ID。
 
@@ -151,7 +151,7 @@ class TenantProfile:
 
     @property
     def service_status(self):
-        """Gets the service_status of this TenantProfile.
+        r"""Gets the service_status of this TenantProfile.
 
         服务状态 * `active` - 激活 * `inactive` - 未激活
 
@@ -162,7 +162,7 @@ class TenantProfile:
 
     @service_status.setter
     def service_status(self, service_status):
-        """Sets the service_status of this TenantProfile.
+        r"""Sets the service_status of this TenantProfile.
 
         服务状态 * `active` - 激活 * `inactive` - 未激活
 
@@ -173,7 +173,7 @@ class TenantProfile:
 
     @property
     def open_with_ad(self):
-        """Gets the open_with_ad of this TenantProfile.
+        r"""Gets the open_with_ad of this TenantProfile.
 
         是否对接AD。 有AD的情况下，提示租户单会话模式和多会话模式都支持; 在没有AD的情况下，提示租户仅支持VDI单会话模式。
 
@@ -184,7 +184,7 @@ class TenantProfile:
 
     @open_with_ad.setter
     def open_with_ad(self, open_with_ad):
-        """Sets the open_with_ad of this TenantProfile.
+        r"""Sets the open_with_ad of this TenantProfile.
 
         是否对接AD。 有AD的情况下，提示租户单会话模式和多会话模式都支持; 在没有AD的情况下，提示租户仅支持VDI单会话模式。
 
@@ -195,7 +195,7 @@ class TenantProfile:
 
     @property
     def tenant_domain_name(self):
-        """Gets the tenant_domain_name of this TenantProfile.
+        r"""Gets the tenant_domain_name of this TenantProfile.
 
         租户的域名称。
 
@@ -206,7 +206,7 @@ class TenantProfile:
 
     @tenant_domain_name.setter
     def tenant_domain_name(self, tenant_domain_name):
-        """Sets the tenant_domain_name of this TenantProfile.
+        r"""Sets the tenant_domain_name of this TenantProfile.
 
         租户的域名称。
 
@@ -217,7 +217,7 @@ class TenantProfile:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TenantProfile.
+        r"""Gets the create_time of this TenantProfile.
 
         租户信息创建时间。
 
@@ -228,7 +228,7 @@ class TenantProfile:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TenantProfile.
+        r"""Sets the create_time of this TenantProfile.
 
         租户信息创建时间。
 

@@ -25,7 +25,7 @@ class VerifyCertificateDTO:
     }
 
     def __init__(self, verify_content=None):
-        """VerifyCertificateDTO
+        r"""VerifyCertificateDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VerifyCertificateDTO:
 
     @property
     def verify_content(self):
-        """Gets the verify_content of this VerifyCertificateDTO.
+        r"""Gets the verify_content of this VerifyCertificateDTO.
 
         验证证书的内容信息。
 
@@ -53,7 +53,7 @@ class VerifyCertificateDTO:
 
     @verify_content.setter
     def verify_content(self, verify_content):
-        """Sets the verify_content of this VerifyCertificateDTO.
+        r"""Sets the verify_content of this VerifyCertificateDTO.
 
         验证证书的内容信息。
 

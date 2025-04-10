@@ -24,7 +24,7 @@ class NotifySmnTopicConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NotifySmnTopicConfigResponse
+        r"""NotifySmnTopicConfigResponse
 
         The model defined in huaweicloud sdk
 

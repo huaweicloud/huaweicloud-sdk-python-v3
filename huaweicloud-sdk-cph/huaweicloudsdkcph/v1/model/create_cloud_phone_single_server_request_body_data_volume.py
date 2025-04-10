@@ -29,7 +29,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
     }
 
     def __init__(self, volume_type=None, size=None, count=None):
-        """CreateCloudPhoneSingleServerRequestBodyDataVolume
+        r"""CreateCloudPhoneSingleServerRequestBodyDataVolume
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
+        r"""Gets the volume_type of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
 
         数据盘类型，只支持如下类型： SSD GPSSD
 
@@ -66,7 +66,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
+        r"""Sets the volume_type of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
 
         数据盘类型，只支持如下类型： SSD GPSSD
 
@@ -77,7 +77,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
 
     @property
     def size(self):
-        """Gets the size of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
+        r"""Gets the size of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
 
         数据盘大小，单位GiB，取值范围[1，32768]
 
@@ -88,7 +88,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
+        r"""Sets the size of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
 
         数据盘大小，单位GiB，取值范围[1，32768]
 
@@ -99,7 +99,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
 
     @property
     def count(self):
-        """Gets the count of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
+        r"""Gets the count of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
 
         数据盘数量，默认值为1
 
@@ -110,7 +110,7 @@ class CreateCloudPhoneSingleServerRequestBodyDataVolume:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
+        r"""Sets the count of this CreateCloudPhoneSingleServerRequestBodyDataVolume.
 
         数据盘数量，默认值为1
 

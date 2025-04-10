@@ -25,7 +25,7 @@ class NovaListKeypairsResult:
     }
 
     def __init__(self, keypair=None):
-        """NovaListKeypairsResult
+        r"""NovaListKeypairsResult
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaListKeypairsResult:
 
     @property
     def keypair(self):
-        """Gets the keypair of this NovaListKeypairsResult.
+        r"""Gets the keypair of this NovaListKeypairsResult.
 
         :return: The keypair of this NovaListKeypairsResult.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`
@@ -51,7 +51,7 @@ class NovaListKeypairsResult:
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this NovaListKeypairsResult.
+        r"""Sets the keypair of this NovaListKeypairsResult.
 
         :param keypair: The keypair of this NovaListKeypairsResult.
         :type keypair: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`

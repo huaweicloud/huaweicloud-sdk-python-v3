@@ -28,7 +28,7 @@ class CreateAccessCodeResponse(SdkResponse):
     }
 
     def __init__(self, access_key=None, access_code=None):
-        """CreateAccessCodeResponse
+        r"""CreateAccessCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAccessCodeResponse(SdkResponse):
 
     @property
     def access_key(self):
-        """Gets the access_key of this CreateAccessCodeResponse.
+        r"""Gets the access_key of this CreateAccessCodeResponse.
 
         接入名，随机生成8位字符串
 
@@ -62,7 +62,7 @@ class CreateAccessCodeResponse(SdkResponse):
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this CreateAccessCodeResponse.
+        r"""Sets the access_key of this CreateAccessCodeResponse.
 
         接入名，随机生成8位字符串
 
@@ -73,7 +73,7 @@ class CreateAccessCodeResponse(SdkResponse):
 
     @property
     def access_code(self):
-        """Gets the access_code of this CreateAccessCodeResponse.
+        r"""Gets the access_code of this CreateAccessCodeResponse.
 
         接入凭证。
 
@@ -84,7 +84,7 @@ class CreateAccessCodeResponse(SdkResponse):
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this CreateAccessCodeResponse.
+        r"""Sets the access_code of this CreateAccessCodeResponse.
 
         接入凭证。
 

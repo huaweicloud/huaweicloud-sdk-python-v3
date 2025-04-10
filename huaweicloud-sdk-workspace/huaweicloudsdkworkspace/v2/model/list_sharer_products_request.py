@@ -37,7 +37,7 @@ class ListSharerProductsRequest:
     }
 
     def __init__(self, product_id=None, share_space_size=None, charge_mode=None, is_gpu=None, package_type=None, limit=None, offset=None):
-        """ListSharerProductsRequest
+        r"""ListSharerProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListSharerProductsRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListSharerProductsRequest.
+        r"""Gets the product_id of this ListSharerProductsRequest.
 
         产品ID。
 
@@ -96,7 +96,7 @@ class ListSharerProductsRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListSharerProductsRequest.
+        r"""Sets the product_id of this ListSharerProductsRequest.
 
         产品ID。
 
@@ -107,7 +107,7 @@ class ListSharerProductsRequest:
 
     @property
     def share_space_size(self):
-        """Gets the share_space_size of this ListSharerProductsRequest.
+        r"""Gets the share_space_size of this ListSharerProductsRequest.
 
         协同方数。该套餐支持的最大协同人数。
 
@@ -118,7 +118,7 @@ class ListSharerProductsRequest:
 
     @share_space_size.setter
     def share_space_size(self, share_space_size):
-        """Sets the share_space_size of this ListSharerProductsRequest.
+        r"""Sets the share_space_size of this ListSharerProductsRequest.
 
         协同方数。该套餐支持的最大协同人数。
 
@@ -129,7 +129,7 @@ class ListSharerProductsRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListSharerProductsRequest.
+        r"""Gets the charge_mode of this ListSharerProductsRequest.
 
         周期套餐标识。0表示包周期，1表示按需, 6表示一次性计费。
 
@@ -140,7 +140,7 @@ class ListSharerProductsRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListSharerProductsRequest.
+        r"""Sets the charge_mode of this ListSharerProductsRequest.
 
         周期套餐标识。0表示包周期，1表示按需, 6表示一次性计费。
 
@@ -151,7 +151,7 @@ class ListSharerProductsRequest:
 
     @property
     def is_gpu(self):
-        """Gets the is_gpu of this ListSharerProductsRequest.
+        r"""Gets the is_gpu of this ListSharerProductsRequest.
 
         是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型
 
@@ -162,7 +162,7 @@ class ListSharerProductsRequest:
 
     @is_gpu.setter
     def is_gpu(self, is_gpu):
-        """Sets the is_gpu of this ListSharerProductsRequest.
+        r"""Sets the is_gpu of this ListSharerProductsRequest.
 
         是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型
 
@@ -173,7 +173,7 @@ class ListSharerProductsRequest:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ListSharerProductsRequest.
+        r"""Gets the package_type of this ListSharerProductsRequest.
 
         套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐
 
@@ -184,7 +184,7 @@ class ListSharerProductsRequest:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ListSharerProductsRequest.
+        r"""Sets the package_type of this ListSharerProductsRequest.
 
         套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐
 
@@ -195,7 +195,7 @@ class ListSharerProductsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSharerProductsRequest.
+        r"""Gets the limit of this ListSharerProductsRequest.
 
         每页数量，范围0-100，默认100。
 
@@ -206,7 +206,7 @@ class ListSharerProductsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSharerProductsRequest.
+        r"""Sets the limit of this ListSharerProductsRequest.
 
         每页数量，范围0-100，默认100。
 
@@ -217,7 +217,7 @@ class ListSharerProductsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSharerProductsRequest.
+        r"""Gets the offset of this ListSharerProductsRequest.
 
         偏移量，默认0。
 
@@ -228,7 +228,7 @@ class ListSharerProductsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSharerProductsRequest.
+        r"""Sets the offset of this ListSharerProductsRequest.
 
         偏移量，默认0。
 

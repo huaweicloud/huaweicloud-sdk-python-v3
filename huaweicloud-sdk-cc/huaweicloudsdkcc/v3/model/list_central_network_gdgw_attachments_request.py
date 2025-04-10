@@ -41,7 +41,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, state=None, central_network_id=None, global_dc_gateway_id=None):
-        """ListCentralNetworkGdgwAttachmentsRequest
+        r"""ListCentralNetworkGdgwAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the limit of this ListCentralNetworkGdgwAttachmentsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -109,7 +109,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the limit of this ListCentralNetworkGdgwAttachmentsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -120,7 +120,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the marker of this ListCentralNetworkGdgwAttachmentsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -131,7 +131,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the marker of this ListCentralNetworkGdgwAttachmentsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -142,7 +142,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the sort_key of this ListCentralNetworkGdgwAttachmentsRequest.
 
         排序字段。
 
@@ -153,7 +153,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the sort_key of this ListCentralNetworkGdgwAttachmentsRequest.
 
         排序字段。
 
@@ -164,7 +164,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the sort_dir of this ListCentralNetworkGdgwAttachmentsRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -175,7 +175,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the sort_dir of this ListCentralNetworkGdgwAttachmentsRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -186,7 +186,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the id of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据id查询，可查询多个id。
 
@@ -197,7 +197,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the id of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据id查询，可查询多个id。
 
@@ -208,7 +208,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the name of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -219,7 +219,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the name of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -230,7 +230,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the state of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -241,7 +241,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the state of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -252,7 +252,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the central_network_id of this ListCentralNetworkGdgwAttachmentsRequest.
 
         中心网络的ID。
 
@@ -263,7 +263,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the central_network_id of this ListCentralNetworkGdgwAttachmentsRequest.
 
         中心网络的ID。
 
@@ -274,7 +274,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Gets the global_dc_gateway_id of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据GDW实例ID过滤列表。
 
@@ -285,7 +285,7 @@ class ListCentralNetworkGdgwAttachmentsRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ListCentralNetworkGdgwAttachmentsRequest.
+        r"""Sets the global_dc_gateway_id of this ListCentralNetworkGdgwAttachmentsRequest.
 
         根据GDW实例ID过滤列表。
 

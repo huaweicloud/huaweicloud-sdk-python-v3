@@ -53,7 +53,7 @@ class QueryRequestSelectedVo:
     }
 
     def __init__(self, character_set=None, conditions=None, decrypt=None, entity_type=None, filter=None, is_need_total=None, is_present_all=None, need_present_detail=None, order_by=None, order_by_table_alias=None, public_data=None, selected_field=None, sort=None, sorts=None, is_transform_res_body=None):
-        """QueryRequestSelectedVo
+        r"""QueryRequestSelectedVo
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class QueryRequestSelectedVo:
 
     @property
     def character_set(self):
-        """Gets the character_set of this QueryRequestSelectedVo.
+        r"""Gets the character_set of this QueryRequestSelectedVo.
 
         :return: The character_set of this QueryRequestSelectedVo.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
@@ -149,7 +149,7 @@ class QueryRequestSelectedVo:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this QueryRequestSelectedVo.
+        r"""Sets the character_set of this QueryRequestSelectedVo.
 
         :param character_set: The character_set of this QueryRequestSelectedVo.
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
@@ -158,7 +158,7 @@ class QueryRequestSelectedVo:
 
     @property
     def conditions(self):
-        """Gets the conditions of this QueryRequestSelectedVo.
+        r"""Gets the conditions of this QueryRequestSelectedVo.
 
         **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -169,7 +169,7 @@ class QueryRequestSelectedVo:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this QueryRequestSelectedVo.
+        r"""Sets the conditions of this QueryRequestSelectedVo.
 
         **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -180,7 +180,7 @@ class QueryRequestSelectedVo:
 
     @property
     def decrypt(self):
-        """Gets the decrypt of this QueryRequestSelectedVo.
+        r"""Gets the decrypt of this QueryRequestSelectedVo.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
 
@@ -191,7 +191,7 @@ class QueryRequestSelectedVo:
 
     @decrypt.setter
     def decrypt(self, decrypt):
-        """Sets the decrypt of this QueryRequestSelectedVo.
+        r"""Sets the decrypt of this QueryRequestSelectedVo.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
 
@@ -202,7 +202,7 @@ class QueryRequestSelectedVo:
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this QueryRequestSelectedVo.
+        r"""Gets the entity_type of this QueryRequestSelectedVo.
 
         **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -213,7 +213,7 @@ class QueryRequestSelectedVo:
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this QueryRequestSelectedVo.
+        r"""Sets the entity_type of this QueryRequestSelectedVo.
 
         **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -224,7 +224,7 @@ class QueryRequestSelectedVo:
 
     @property
     def filter(self):
-        """Gets the filter of this QueryRequestSelectedVo.
+        r"""Gets the filter of this QueryRequestSelectedVo.
 
         :return: The filter of this QueryRequestSelectedVo.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -233,7 +233,7 @@ class QueryRequestSelectedVo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this QueryRequestSelectedVo.
+        r"""Sets the filter of this QueryRequestSelectedVo.
 
         :param filter: The filter of this QueryRequestSelectedVo.
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -242,7 +242,7 @@ class QueryRequestSelectedVo:
 
     @property
     def is_need_total(self):
-        """Gets the is_need_total of this QueryRequestSelectedVo.
+        r"""Gets the is_need_total of this QueryRequestSelectedVo.
 
         **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
@@ -253,7 +253,7 @@ class QueryRequestSelectedVo:
 
     @is_need_total.setter
     def is_need_total(self, is_need_total):
-        """Sets the is_need_total of this QueryRequestSelectedVo.
+        r"""Sets the is_need_total of this QueryRequestSelectedVo.
 
         **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
@@ -264,7 +264,7 @@ class QueryRequestSelectedVo:
 
     @property
     def is_present_all(self):
-        """Gets the is_present_all of this QueryRequestSelectedVo.
+        r"""Gets the is_present_all of this QueryRequestSelectedVo.
 
         **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
@@ -275,7 +275,7 @@ class QueryRequestSelectedVo:
 
     @is_present_all.setter
     def is_present_all(self, is_present_all):
-        """Sets the is_present_all of this QueryRequestSelectedVo.
+        r"""Sets the is_present_all of this QueryRequestSelectedVo.
 
         **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
@@ -286,7 +286,7 @@ class QueryRequestSelectedVo:
 
     @property
     def need_present_detail(self):
-        """Gets the need_present_detail of this QueryRequestSelectedVo.
+        r"""Gets the need_present_detail of this QueryRequestSelectedVo.
 
         **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -297,7 +297,7 @@ class QueryRequestSelectedVo:
 
     @need_present_detail.setter
     def need_present_detail(self, need_present_detail):
-        """Sets the need_present_detail of this QueryRequestSelectedVo.
+        r"""Sets the need_present_detail of this QueryRequestSelectedVo.
 
         **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -308,7 +308,7 @@ class QueryRequestSelectedVo:
 
     @property
     def order_by(self):
-        """Gets the order_by of this QueryRequestSelectedVo.
+        r"""Gets the order_by of this QueryRequestSelectedVo.
 
         **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -319,7 +319,7 @@ class QueryRequestSelectedVo:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this QueryRequestSelectedVo.
+        r"""Sets the order_by of this QueryRequestSelectedVo.
 
         **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -330,7 +330,7 @@ class QueryRequestSelectedVo:
 
     @property
     def order_by_table_alias(self):
-        """Gets the order_by_table_alias of this QueryRequestSelectedVo.
+        r"""Gets the order_by_table_alias of this QueryRequestSelectedVo.
 
         **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -341,7 +341,7 @@ class QueryRequestSelectedVo:
 
     @order_by_table_alias.setter
     def order_by_table_alias(self, order_by_table_alias):
-        """Sets the order_by_table_alias of this QueryRequestSelectedVo.
+        r"""Sets the order_by_table_alias of this QueryRequestSelectedVo.
 
         **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -352,7 +352,7 @@ class QueryRequestSelectedVo:
 
     @property
     def public_data(self):
-        """Gets the public_data of this QueryRequestSelectedVo.
+        r"""Gets the public_data of this QueryRequestSelectedVo.
 
         **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
@@ -363,7 +363,7 @@ class QueryRequestSelectedVo:
 
     @public_data.setter
     def public_data(self, public_data):
-        """Sets the public_data of this QueryRequestSelectedVo.
+        r"""Sets the public_data of this QueryRequestSelectedVo.
 
         **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
@@ -374,7 +374,7 @@ class QueryRequestSelectedVo:
 
     @property
     def selected_field(self):
-        """Gets the selected_field of this QueryRequestSelectedVo.
+        r"""Gets the selected_field of this QueryRequestSelectedVo.
 
         **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -385,7 +385,7 @@ class QueryRequestSelectedVo:
 
     @selected_field.setter
     def selected_field(self, selected_field):
-        """Sets the selected_field of this QueryRequestSelectedVo.
+        r"""Sets the selected_field of this QueryRequestSelectedVo.
 
         **参数解释：**  指定需返回的属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -396,7 +396,7 @@ class QueryRequestSelectedVo:
 
     @property
     def sort(self):
-        """Gets the sort of this QueryRequestSelectedVo.
+        r"""Gets the sort of this QueryRequestSelectedVo.
 
         **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。
 
@@ -407,7 +407,7 @@ class QueryRequestSelectedVo:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this QueryRequestSelectedVo.
+        r"""Sets the sort of this QueryRequestSelectedVo.
 
         **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  不涉及。
 
@@ -418,7 +418,7 @@ class QueryRequestSelectedVo:
 
     @property
     def sorts(self):
-        """Gets the sorts of this QueryRequestSelectedVo.
+        r"""Gets the sorts of this QueryRequestSelectedVo.
 
         **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -429,7 +429,7 @@ class QueryRequestSelectedVo:
 
     @sorts.setter
     def sorts(self, sorts):
-        """Sets the sorts of this QueryRequestSelectedVo.
+        r"""Sets the sorts of this QueryRequestSelectedVo.
 
         **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -440,7 +440,7 @@ class QueryRequestSelectedVo:
 
     @property
     def is_transform_res_body(self):
-        """Gets the is_transform_res_body of this QueryRequestSelectedVo.
+        r"""Gets the is_transform_res_body of this QueryRequestSelectedVo.
 
         **参数解释：**  是否需要格式化分类属性。  **约束限制：**  不涉及。  **取值范围：**  - true：需要格式化分类属性。 - false：不需要格式化分类属性。  **默认取值：**  不涉及。
 
@@ -451,7 +451,7 @@ class QueryRequestSelectedVo:
 
     @is_transform_res_body.setter
     def is_transform_res_body(self, is_transform_res_body):
-        """Sets the is_transform_res_body of this QueryRequestSelectedVo.
+        r"""Sets the is_transform_res_body of this QueryRequestSelectedVo.
 
         **参数解释：**  是否需要格式化分类属性。  **约束限制：**  不涉及。  **取值范围：**  - true：需要格式化分类属性。 - false：不需要格式化分类属性。  **默认取值：**  不涉及。
 

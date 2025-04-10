@@ -26,7 +26,7 @@ class ShowDeploymentCodeResponse(SdkResponse):
     }
 
     def __init__(self, cmd=None):
-        """ShowDeploymentCodeResponse
+        r"""ShowDeploymentCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDeploymentCodeResponse(SdkResponse):
 
     @property
     def cmd(self):
-        """Gets the cmd of this ShowDeploymentCodeResponse.
+        r"""Gets the cmd of this ShowDeploymentCodeResponse.
 
         **参数说明**：生成的安装命令。
 
@@ -55,7 +55,7 @@ class ShowDeploymentCodeResponse(SdkResponse):
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this ShowDeploymentCodeResponse.
+        r"""Sets the cmd of this ShowDeploymentCodeResponse.
 
         **参数说明**：生成的安装命令。
 

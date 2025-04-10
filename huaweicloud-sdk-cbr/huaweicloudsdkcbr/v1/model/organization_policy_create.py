@@ -37,7 +37,7 @@ class OrganizationPolicyCreate:
     }
 
     def __init__(self, name=None, description=None, operation_type=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None):
-        """OrganizationPolicyCreate
+        r"""OrganizationPolicyCreate
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class OrganizationPolicyCreate:
 
     @property
     def name(self):
-        """Gets the name of this OrganizationPolicyCreate.
+        r"""Gets the name of this OrganizationPolicyCreate.
 
         组织策略名称
 
@@ -90,7 +90,7 @@ class OrganizationPolicyCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrganizationPolicyCreate.
+        r"""Sets the name of this OrganizationPolicyCreate.
 
         组织策略名称
 
@@ -101,7 +101,7 @@ class OrganizationPolicyCreate:
 
     @property
     def description(self):
-        """Gets the description of this OrganizationPolicyCreate.
+        r"""Gets the description of this OrganizationPolicyCreate.
 
         组织策略描述
 
@@ -112,7 +112,7 @@ class OrganizationPolicyCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OrganizationPolicyCreate.
+        r"""Sets the description of this OrganizationPolicyCreate.
 
         组织策略描述
 
@@ -123,7 +123,7 @@ class OrganizationPolicyCreate:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this OrganizationPolicyCreate.
+        r"""Gets the operation_type of this OrganizationPolicyCreate.
 
         组织策略类型 - backup: 备份 - replication: 复制
 
@@ -134,7 +134,7 @@ class OrganizationPolicyCreate:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this OrganizationPolicyCreate.
+        r"""Sets the operation_type of this OrganizationPolicyCreate.
 
         组织策略类型 - backup: 备份 - replication: 复制
 
@@ -145,7 +145,7 @@ class OrganizationPolicyCreate:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this OrganizationPolicyCreate.
+        r"""Gets the policy_name of this OrganizationPolicyCreate.
 
         策略名称
 
@@ -156,7 +156,7 @@ class OrganizationPolicyCreate:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this OrganizationPolicyCreate.
+        r"""Sets the policy_name of this OrganizationPolicyCreate.
 
         策略名称
 
@@ -167,7 +167,7 @@ class OrganizationPolicyCreate:
 
     @property
     def policy_enabled(self):
-        """Gets the policy_enabled of this OrganizationPolicyCreate.
+        r"""Gets the policy_enabled of this OrganizationPolicyCreate.
 
         策略是否开启
 
@@ -178,7 +178,7 @@ class OrganizationPolicyCreate:
 
     @policy_enabled.setter
     def policy_enabled(self, policy_enabled):
-        """Sets the policy_enabled of this OrganizationPolicyCreate.
+        r"""Sets the policy_enabled of this OrganizationPolicyCreate.
 
         策略是否开启
 
@@ -189,7 +189,7 @@ class OrganizationPolicyCreate:
 
     @property
     def policy_operation_definition(self):
-        """Gets the policy_operation_definition of this OrganizationPolicyCreate.
+        r"""Gets the policy_operation_definition of this OrganizationPolicyCreate.
 
         :return: The policy_operation_definition of this OrganizationPolicyCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -198,7 +198,7 @@ class OrganizationPolicyCreate:
 
     @policy_operation_definition.setter
     def policy_operation_definition(self, policy_operation_definition):
-        """Sets the policy_operation_definition of this OrganizationPolicyCreate.
+        r"""Sets the policy_operation_definition of this OrganizationPolicyCreate.
 
         :param policy_operation_definition: The policy_operation_definition of this OrganizationPolicyCreate.
         :type policy_operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -207,7 +207,7 @@ class OrganizationPolicyCreate:
 
     @property
     def policy_trigger(self):
-        """Gets the policy_trigger of this OrganizationPolicyCreate.
+        r"""Gets the policy_trigger of this OrganizationPolicyCreate.
 
         :return: The policy_trigger of this OrganizationPolicyCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
@@ -216,7 +216,7 @@ class OrganizationPolicyCreate:
 
     @policy_trigger.setter
     def policy_trigger(self, policy_trigger):
-        """Sets the policy_trigger of this OrganizationPolicyCreate.
+        r"""Sets the policy_trigger of this OrganizationPolicyCreate.
 
         :param policy_trigger: The policy_trigger of this OrganizationPolicyCreate.
         :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`

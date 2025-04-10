@@ -49,7 +49,7 @@ class UpdateAlertRuleRequestBody:
     }
 
     def __init__(self, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, alert_type=None, event_grouping=None, suppression=None, simulation=None, schedule=None, triggers=None):
-        """UpdateAlertRuleRequestBody
+        r"""UpdateAlertRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this UpdateAlertRuleRequestBody.
+        r"""Gets the rule_name of this UpdateAlertRuleRequestBody.
 
         告警规则名称。Alert rule name.
 
@@ -138,7 +138,7 @@ class UpdateAlertRuleRequestBody:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this UpdateAlertRuleRequestBody.
+        r"""Sets the rule_name of this UpdateAlertRuleRequestBody.
 
         告警规则名称。Alert rule name.
 
@@ -149,7 +149,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAlertRuleRequestBody.
+        r"""Gets the description of this UpdateAlertRuleRequestBody.
 
         描述。Description.
 
@@ -160,7 +160,7 @@ class UpdateAlertRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAlertRuleRequestBody.
+        r"""Sets the description of this UpdateAlertRuleRequestBody.
 
         描述。Description.
 
@@ -171,7 +171,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def query(self):
-        """Gets the query of this UpdateAlertRuleRequestBody.
+        r"""Gets the query of this UpdateAlertRuleRequestBody.
 
         查询语句。Query.
 
@@ -182,7 +182,7 @@ class UpdateAlertRuleRequestBody:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this UpdateAlertRuleRequestBody.
+        r"""Sets the query of this UpdateAlertRuleRequestBody.
 
         查询语句。Query.
 
@@ -193,7 +193,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def query_type(self):
-        """Gets the query_type of this UpdateAlertRuleRequestBody.
+        r"""Gets the query_type of this UpdateAlertRuleRequestBody.
 
         查询语法，SQL。Query type. SQL.
 
@@ -204,7 +204,7 @@ class UpdateAlertRuleRequestBody:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this UpdateAlertRuleRequestBody.
+        r"""Sets the query_type of this UpdateAlertRuleRequestBody.
 
         查询语法，SQL。Query type. SQL.
 
@@ -215,7 +215,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateAlertRuleRequestBody.
+        r"""Gets the status of this UpdateAlertRuleRequestBody.
 
         启用状态，启用、停用。Status, enabled, disabled.
 
@@ -226,7 +226,7 @@ class UpdateAlertRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAlertRuleRequestBody.
+        r"""Sets the status of this UpdateAlertRuleRequestBody.
 
         启用状态，启用、停用。Status, enabled, disabled.
 
@@ -237,7 +237,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def severity(self):
-        """Gets the severity of this UpdateAlertRuleRequestBody.
+        r"""Gets the severity of this UpdateAlertRuleRequestBody.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -248,7 +248,7 @@ class UpdateAlertRuleRequestBody:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this UpdateAlertRuleRequestBody.
+        r"""Sets the severity of this UpdateAlertRuleRequestBody.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -259,7 +259,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this UpdateAlertRuleRequestBody.
+        r"""Gets the custom_properties of this UpdateAlertRuleRequestBody.
 
         自定义扩展信息。Custom properties.
 
@@ -270,7 +270,7 @@ class UpdateAlertRuleRequestBody:
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this UpdateAlertRuleRequestBody.
+        r"""Sets the custom_properties of this UpdateAlertRuleRequestBody.
 
         自定义扩展信息。Custom properties.
 
@@ -281,7 +281,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def alert_type(self):
-        """Gets the alert_type of this UpdateAlertRuleRequestBody.
+        r"""Gets the alert_type of this UpdateAlertRuleRequestBody.
 
         告警类型。Alert type.
 
@@ -292,7 +292,7 @@ class UpdateAlertRuleRequestBody:
 
     @alert_type.setter
     def alert_type(self, alert_type):
-        """Sets the alert_type of this UpdateAlertRuleRequestBody.
+        r"""Sets the alert_type of this UpdateAlertRuleRequestBody.
 
         告警类型。Alert type.
 
@@ -303,7 +303,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this UpdateAlertRuleRequestBody.
+        r"""Gets the event_grouping of this UpdateAlertRuleRequestBody.
 
         告警分组。Event grouping.
 
@@ -314,7 +314,7 @@ class UpdateAlertRuleRequestBody:
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this UpdateAlertRuleRequestBody.
+        r"""Sets the event_grouping of this UpdateAlertRuleRequestBody.
 
         告警分组。Event grouping.
 
@@ -325,7 +325,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def suppression(self):
-        """Gets the suppression of this UpdateAlertRuleRequestBody.
+        r"""Gets the suppression of this UpdateAlertRuleRequestBody.
 
         告警抑制。Suppression
 
@@ -336,7 +336,7 @@ class UpdateAlertRuleRequestBody:
 
     @suppression.setter
     def suppression(self, suppression):
-        """Sets the suppression of this UpdateAlertRuleRequestBody.
+        r"""Sets the suppression of this UpdateAlertRuleRequestBody.
 
         告警抑制。Suppression
 
@@ -347,7 +347,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def simulation(self):
-        """Gets the simulation of this UpdateAlertRuleRequestBody.
+        r"""Gets the simulation of this UpdateAlertRuleRequestBody.
 
         模拟告警。Simulation.
 
@@ -358,7 +358,7 @@ class UpdateAlertRuleRequestBody:
 
     @simulation.setter
     def simulation(self, simulation):
-        """Sets the simulation of this UpdateAlertRuleRequestBody.
+        r"""Sets the simulation of this UpdateAlertRuleRequestBody.
 
         模拟告警。Simulation.
 
@@ -369,7 +369,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def schedule(self):
-        """Gets the schedule of this UpdateAlertRuleRequestBody.
+        r"""Gets the schedule of this UpdateAlertRuleRequestBody.
 
         :return: The schedule of this UpdateAlertRuleRequestBody.
         :rtype: :class:`huaweicloudsdksecmaster.v2.Schedule`
@@ -378,7 +378,7 @@ class UpdateAlertRuleRequestBody:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this UpdateAlertRuleRequestBody.
+        r"""Sets the schedule of this UpdateAlertRuleRequestBody.
 
         :param schedule: The schedule of this UpdateAlertRuleRequestBody.
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
@@ -387,7 +387,7 @@ class UpdateAlertRuleRequestBody:
 
     @property
     def triggers(self):
-        """Gets the triggers of this UpdateAlertRuleRequestBody.
+        r"""Gets the triggers of this UpdateAlertRuleRequestBody.
 
         告警触发规则。Alert triggers.
 
@@ -398,7 +398,7 @@ class UpdateAlertRuleRequestBody:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this UpdateAlertRuleRequestBody.
+        r"""Sets the triggers of this UpdateAlertRuleRequestBody.
 
         告警触发规则。Alert triggers.
 

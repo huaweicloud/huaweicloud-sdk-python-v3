@@ -27,7 +27,7 @@ class ListPortalInfosResponseModel:
     }
 
     def __init__(self, portals=None, page_info=None):
-        """ListPortalInfosResponseModel
+        r"""ListPortalInfosResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListPortalInfosResponseModel:
 
     @property
     def portals(self):
-        """Gets the portals of this ListPortalInfosResponseModel.
+        r"""Gets the portals of this ListPortalInfosResponseModel.
 
         主页列表。
 
@@ -61,7 +61,7 @@ class ListPortalInfosResponseModel:
 
     @portals.setter
     def portals(self, portals):
-        """Sets the portals of this ListPortalInfosResponseModel.
+        r"""Sets the portals of this ListPortalInfosResponseModel.
 
         主页列表。
 
@@ -72,7 +72,7 @@ class ListPortalInfosResponseModel:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPortalInfosResponseModel.
+        r"""Gets the page_info of this ListPortalInfosResponseModel.
 
         :return: The page_info of this ListPortalInfosResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PageOffSet`
@@ -81,7 +81,7 @@ class ListPortalInfosResponseModel:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPortalInfosResponseModel.
+        r"""Sets the page_info of this ListPortalInfosResponseModel.
 
         :param page_info: The page_info of this ListPortalInfosResponseModel.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.PageOffSet`

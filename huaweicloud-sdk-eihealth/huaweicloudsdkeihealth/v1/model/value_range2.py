@@ -27,7 +27,7 @@ class ValueRange2:
     }
 
     def __init__(self, lower=None, upper=None):
-        """ValueRange2
+        r"""ValueRange2
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValueRange2:
 
     @property
     def lower(self):
-        """Gets the lower of this ValueRange2.
+        r"""Gets the lower of this ValueRange2.
 
         值域下限
 
@@ -61,7 +61,7 @@ class ValueRange2:
 
     @lower.setter
     def lower(self, lower):
-        """Sets the lower of this ValueRange2.
+        r"""Sets the lower of this ValueRange2.
 
         值域下限
 
@@ -72,7 +72,7 @@ class ValueRange2:
 
     @property
     def upper(self):
-        """Gets the upper of this ValueRange2.
+        r"""Gets the upper of this ValueRange2.
 
         值域上限
 
@@ -83,7 +83,7 @@ class ValueRange2:
 
     @upper.setter
     def upper(self, upper):
-        """Sets the upper of this ValueRange2.
+        r"""Sets the upper of this ValueRange2.
 
         值域上限
 

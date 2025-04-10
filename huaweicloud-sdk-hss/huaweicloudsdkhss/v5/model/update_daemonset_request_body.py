@@ -41,7 +41,7 @@ class UpdateDaemonsetRequestBody:
     }
 
     def __init__(self, agent_version=None, cluster_name=None, auto_upgrade=None, runtime_info=None, schedule_info=None, invoked_service=None, charging_mode=None, cce_protection_type=None, prefer_packet_cycle=None):
-        """UpdateDaemonsetRequestBody
+        r"""UpdateDaemonsetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this UpdateDaemonsetRequestBody.
+        r"""Gets the agent_version of this UpdateDaemonsetRequestBody.
 
         agent版本
 
@@ -110,7 +110,7 @@ class UpdateDaemonsetRequestBody:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this UpdateDaemonsetRequestBody.
+        r"""Sets the agent_version of this UpdateDaemonsetRequestBody.
 
         agent版本
 
@@ -121,7 +121,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this UpdateDaemonsetRequestBody.
+        r"""Gets the cluster_name of this UpdateDaemonsetRequestBody.
 
         集群名称
 
@@ -132,7 +132,7 @@ class UpdateDaemonsetRequestBody:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this UpdateDaemonsetRequestBody.
+        r"""Sets the cluster_name of this UpdateDaemonsetRequestBody.
 
         集群名称
 
@@ -143,7 +143,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def auto_upgrade(self):
-        """Gets the auto_upgrade of this UpdateDaemonsetRequestBody.
+        r"""Gets the auto_upgrade of this UpdateDaemonsetRequestBody.
 
         开启agent自动升级
 
@@ -154,7 +154,7 @@ class UpdateDaemonsetRequestBody:
 
     @auto_upgrade.setter
     def auto_upgrade(self, auto_upgrade):
-        """Sets the auto_upgrade of this UpdateDaemonsetRequestBody.
+        r"""Sets the auto_upgrade of this UpdateDaemonsetRequestBody.
 
         开启agent自动升级
 
@@ -165,7 +165,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def runtime_info(self):
-        """Gets the runtime_info of this UpdateDaemonsetRequestBody.
+        r"""Gets the runtime_info of this UpdateDaemonsetRequestBody.
 
         容器运行时配置
 
@@ -176,7 +176,7 @@ class UpdateDaemonsetRequestBody:
 
     @runtime_info.setter
     def runtime_info(self, runtime_info):
-        """Sets the runtime_info of this UpdateDaemonsetRequestBody.
+        r"""Sets the runtime_info of this UpdateDaemonsetRequestBody.
 
         容器运行时配置
 
@@ -187,7 +187,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def schedule_info(self):
-        """Gets the schedule_info of this UpdateDaemonsetRequestBody.
+        r"""Gets the schedule_info of this UpdateDaemonsetRequestBody.
 
         :return: The schedule_info of this UpdateDaemonsetRequestBody.
         :rtype: :class:`huaweicloudsdkhss.v5.UpdateDaemonsetRequestBodyScheduleInfo`
@@ -196,7 +196,7 @@ class UpdateDaemonsetRequestBody:
 
     @schedule_info.setter
     def schedule_info(self, schedule_info):
-        """Sets the schedule_info of this UpdateDaemonsetRequestBody.
+        r"""Sets the schedule_info of this UpdateDaemonsetRequestBody.
 
         :param schedule_info: The schedule_info of this UpdateDaemonsetRequestBody.
         :type schedule_info: :class:`huaweicloudsdkhss.v5.UpdateDaemonsetRequestBodyScheduleInfo`
@@ -205,7 +205,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def invoked_service(self):
-        """Gets the invoked_service of this UpdateDaemonsetRequestBody.
+        r"""Gets the invoked_service of this UpdateDaemonsetRequestBody.
 
         调用服务，默认hss，cce集成防护调用场景使用:   - hss：hss服务    - cce：cce服务
 
@@ -216,7 +216,7 @@ class UpdateDaemonsetRequestBody:
 
     @invoked_service.setter
     def invoked_service(self, invoked_service):
-        """Sets the invoked_service of this UpdateDaemonsetRequestBody.
+        r"""Sets the invoked_service of this UpdateDaemonsetRequestBody.
 
         调用服务，默认hss，cce集成防护调用场景使用:   - hss：hss服务    - cce：cce服务
 
@@ -227,7 +227,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this UpdateDaemonsetRequestBody.
+        r"""Gets the charging_mode of this UpdateDaemonsetRequestBody.
 
         付费模式，cce集成防护调用场景使用:   - on_demand:按需    - free_security_check:免费安全体检
 
@@ -238,7 +238,7 @@ class UpdateDaemonsetRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this UpdateDaemonsetRequestBody.
+        r"""Sets the charging_mode of this UpdateDaemonsetRequestBody.
 
         付费模式，cce集成防护调用场景使用:   - on_demand:按需    - free_security_check:免费安全体检
 
@@ -249,7 +249,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def cce_protection_type(self):
-        """Gets the cce_protection_type of this UpdateDaemonsetRequestBody.
+        r"""Gets the cce_protection_type of this UpdateDaemonsetRequestBody.
 
         cce防护类型，cce集成防护调用场景使用:   - cluster_level:集群级别防护    - node_level:节点级别防护
 
@@ -260,7 +260,7 @@ class UpdateDaemonsetRequestBody:
 
     @cce_protection_type.setter
     def cce_protection_type(self, cce_protection_type):
-        """Sets the cce_protection_type of this UpdateDaemonsetRequestBody.
+        r"""Sets the cce_protection_type of this UpdateDaemonsetRequestBody.
 
         cce防护类型，cce集成防护调用场景使用:   - cluster_level:集群级别防护    - node_level:节点级别防护
 
@@ -271,7 +271,7 @@ class UpdateDaemonsetRequestBody:
 
     @property
     def prefer_packet_cycle(self):
-        """Gets the prefer_packet_cycle of this UpdateDaemonsetRequestBody.
+        r"""Gets the prefer_packet_cycle of this UpdateDaemonsetRequestBody.
 
         优先使用包周期配额，cce集成防护调用场景使用，默认false
 
@@ -282,7 +282,7 @@ class UpdateDaemonsetRequestBody:
 
     @prefer_packet_cycle.setter
     def prefer_packet_cycle(self, prefer_packet_cycle):
-        """Sets the prefer_packet_cycle of this UpdateDaemonsetRequestBody.
+        r"""Sets the prefer_packet_cycle of this UpdateDaemonsetRequestBody.
 
         优先使用包周期配额，cce集成防护调用场景使用，默认false
 

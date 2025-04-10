@@ -26,7 +26,7 @@ class ShowSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, security_group=None):
-        """ShowSecurityGroupResponse
+        r"""ShowSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecurityGroupResponse(SdkResponse):
 
     @property
     def security_group(self):
-        """Gets the security_group of this ShowSecurityGroupResponse.
+        r"""Gets the security_group of this ShowSecurityGroupResponse.
 
         :return: The security_group of this ShowSecurityGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.SecurityGroup`
@@ -53,7 +53,7 @@ class ShowSecurityGroupResponse(SdkResponse):
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this ShowSecurityGroupResponse.
+        r"""Sets the security_group of this ShowSecurityGroupResponse.
 
         :param security_group: The security_group of this ShowSecurityGroupResponse.
         :type security_group: :class:`huaweicloudsdkvpc.v2.SecurityGroup`

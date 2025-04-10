@@ -27,7 +27,7 @@ class DeleteProjectModuleRequest:
     }
 
     def __init__(self, project_id=None, module_id=None):
-        """DeleteProjectModuleRequest
+        r"""DeleteProjectModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteProjectModuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteProjectModuleRequest.
+        r"""Gets the project_id of this DeleteProjectModuleRequest.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class DeleteProjectModuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteProjectModuleRequest.
+        r"""Sets the project_id of this DeleteProjectModuleRequest.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class DeleteProjectModuleRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this DeleteProjectModuleRequest.
+        r"""Gets the module_id of this DeleteProjectModuleRequest.
 
         模块id
 
@@ -81,7 +81,7 @@ class DeleteProjectModuleRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this DeleteProjectModuleRequest.
+        r"""Sets the module_id of this DeleteProjectModuleRequest.
 
         模块id
 

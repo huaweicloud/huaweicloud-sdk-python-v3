@@ -29,7 +29,7 @@ class AudioModerationResultResult:
     }
 
     def __init__(self, suggestion=None, details=None, audio_text=None):
-        """AudioModerationResultResult
+        r"""AudioModerationResultResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AudioModerationResultResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this AudioModerationResultResult.
+        r"""Gets the suggestion of this AudioModerationResultResult.
 
         音频审核结果是否通过。 block：包含敏感信息，不通过 pass：不包含敏感信息，通过 review：需要人工复检
 
@@ -68,7 +68,7 @@ class AudioModerationResultResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this AudioModerationResultResult.
+        r"""Sets the suggestion of this AudioModerationResultResult.
 
         音频审核结果是否通过。 block：包含敏感信息，不通过 pass：不包含敏感信息，通过 review：需要人工复检
 
@@ -79,7 +79,7 @@ class AudioModerationResultResult:
 
     @property
     def details(self):
-        """Gets the details of this AudioModerationResultResult.
+        r"""Gets the details of this AudioModerationResultResult.
 
         审核详情
 
@@ -90,7 +90,7 @@ class AudioModerationResultResult:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this AudioModerationResultResult.
+        r"""Sets the details of this AudioModerationResultResult.
 
         审核详情
 
@@ -101,7 +101,7 @@ class AudioModerationResultResult:
 
     @property
     def audio_text(self):
-        """Gets the audio_text of this AudioModerationResultResult.
+        r"""Gets the audio_text of this AudioModerationResultResult.
 
         音频文本内容
 
@@ -112,7 +112,7 @@ class AudioModerationResultResult:
 
     @audio_text.setter
     def audio_text(self, audio_text):
-        """Sets the audio_text of this AudioModerationResultResult.
+        r"""Sets the audio_text of this AudioModerationResultResult.
 
         音频文本内容
 

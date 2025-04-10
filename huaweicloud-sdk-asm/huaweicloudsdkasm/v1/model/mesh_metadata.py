@@ -33,7 +33,7 @@ class MeshMetadata:
     }
 
     def __init__(self, name=None, uid=None, annotations=None, labels=None, creation_timestamp=None):
-        """MeshMetadata
+        r"""MeshMetadata
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class MeshMetadata:
 
     @property
     def name(self):
-        """Gets the name of this MeshMetadata.
+        r"""Gets the name of this MeshMetadata.
 
         网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾
 
@@ -81,7 +81,7 @@ class MeshMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MeshMetadata.
+        r"""Sets the name of this MeshMetadata.
 
         网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾
 
@@ -92,7 +92,7 @@ class MeshMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this MeshMetadata.
+        r"""Gets the uid of this MeshMetadata.
 
         网格ID，资源唯一标识，创建成功后自动生成，填写无效
 
@@ -103,7 +103,7 @@ class MeshMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this MeshMetadata.
+        r"""Sets the uid of this MeshMetadata.
 
         网格ID，资源唯一标识，创建成功后自动生成，填写无效
 
@@ -114,7 +114,7 @@ class MeshMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this MeshMetadata.
+        r"""Gets the annotations of this MeshMetadata.
 
         网格注解，由key/value组成： ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```
 
@@ -125,7 +125,7 @@ class MeshMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this MeshMetadata.
+        r"""Sets the annotations of this MeshMetadata.
 
         网格注解，由key/value组成： ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```
 
@@ -136,7 +136,7 @@ class MeshMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this MeshMetadata.
+        r"""Gets the labels of this MeshMetadata.
 
         网格标签，由key/value组成：   ```  \"labels\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```
 
@@ -147,7 +147,7 @@ class MeshMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this MeshMetadata.
+        r"""Sets the labels of this MeshMetadata.
 
         网格标签，由key/value组成：   ```  \"labels\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```
 
@@ -158,7 +158,7 @@ class MeshMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this MeshMetadata.
+        r"""Gets the creation_timestamp of this MeshMetadata.
 
         网格创建时间
 
@@ -169,7 +169,7 @@ class MeshMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this MeshMetadata.
+        r"""Sets the creation_timestamp of this MeshMetadata.
 
         网格创建时间
 

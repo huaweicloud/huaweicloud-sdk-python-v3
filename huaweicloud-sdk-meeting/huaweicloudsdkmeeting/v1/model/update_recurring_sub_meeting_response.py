@@ -24,7 +24,7 @@ class UpdateRecurringSubMeetingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateRecurringSubMeetingResponse
+        r"""UpdateRecurringSubMeetingResponse
 
         The model defined in huaweicloud sdk
 

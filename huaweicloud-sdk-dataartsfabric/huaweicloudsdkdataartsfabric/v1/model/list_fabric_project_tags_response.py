@@ -28,7 +28,7 @@ class ListFabricProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, x_request_id=None):
-        """ListFabricProjectTagsResponse
+        r"""ListFabricProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFabricProjectTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListFabricProjectTagsResponse.
+        r"""Gets the tags of this ListFabricProjectTagsResponse.
 
         标签列表
 
@@ -62,7 +62,7 @@ class ListFabricProjectTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFabricProjectTagsResponse.
+        r"""Sets the tags of this ListFabricProjectTagsResponse.
 
         标签列表
 
@@ -73,7 +73,7 @@ class ListFabricProjectTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListFabricProjectTagsResponse.
+        r"""Gets the x_request_id of this ListFabricProjectTagsResponse.
 
         :return: The x_request_id of this ListFabricProjectTagsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListFabricProjectTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListFabricProjectTagsResponse.
+        r"""Sets the x_request_id of this ListFabricProjectTagsResponse.
 
         :param x_request_id: The x_request_id of this ListFabricProjectTagsResponse.
         :type x_request_id: str

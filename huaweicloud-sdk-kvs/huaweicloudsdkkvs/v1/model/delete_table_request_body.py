@@ -25,7 +25,7 @@ class DeleteTableRequestBody:
     }
 
     def __init__(self, table_name=None):
-        """DeleteTableRequestBody
+        r"""DeleteTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteTableRequestBody.
+        r"""Gets the table_name of this DeleteTableRequestBody.
 
         表名。 - 长度：[3, 63] - 取值字符限制：[a-zA-Z0-9_-]+
 
@@ -53,7 +53,7 @@ class DeleteTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteTableRequestBody.
+        r"""Sets the table_name of this DeleteTableRequestBody.
 
         表名。 - 长度：[3, 63] - 取值字符限制：[a-zA-Z0-9_-]+
 

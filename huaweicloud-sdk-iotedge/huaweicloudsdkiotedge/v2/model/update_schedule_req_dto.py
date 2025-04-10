@@ -37,7 +37,7 @@ class UpdateScheduleReqDTO:
     }
 
     def __init__(self, name=None, enabled=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
-        """UpdateScheduleReqDTO
+        r"""UpdateScheduleReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateScheduleReqDTO.
+        r"""Gets the name of this UpdateScheduleReqDTO.
 
         调度计划名称
 
@@ -91,7 +91,7 @@ class UpdateScheduleReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateScheduleReqDTO.
+        r"""Sets the name of this UpdateScheduleReqDTO.
 
         调度计划名称
 
@@ -102,7 +102,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateScheduleReqDTO.
+        r"""Gets the enabled of this UpdateScheduleReqDTO.
 
         调度计划是否生效
 
@@ -113,7 +113,7 @@ class UpdateScheduleReqDTO:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateScheduleReqDTO.
+        r"""Sets the enabled of this UpdateScheduleReqDTO.
 
         调度计划是否生效
 
@@ -124,7 +124,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateScheduleReqDTO.
+        r"""Gets the start_time of this UpdateScheduleReqDTO.
 
         调度计划起始时间，毫秒级别的时间戳
 
@@ -135,7 +135,7 @@ class UpdateScheduleReqDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateScheduleReqDTO.
+        r"""Sets the start_time of this UpdateScheduleReqDTO.
 
         调度计划起始时间，毫秒级别的时间戳
 
@@ -146,7 +146,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateScheduleReqDTO.
+        r"""Gets the end_time of this UpdateScheduleReqDTO.
 
         调度计划结束时间，毫秒级别的时间戳
 
@@ -157,7 +157,7 @@ class UpdateScheduleReqDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateScheduleReqDTO.
+        r"""Sets the end_time of this UpdateScheduleReqDTO.
 
         调度计划结束时间，毫秒级别的时间戳
 
@@ -168,7 +168,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateScheduleReqDTO.
+        r"""Gets the priority of this UpdateScheduleReqDTO.
 
         调度计划优先级。
 
@@ -179,7 +179,7 @@ class UpdateScheduleReqDTO:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateScheduleReqDTO.
+        r"""Sets the priority of this UpdateScheduleReqDTO.
 
         调度计划优先级。
 
@@ -190,7 +190,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def daily(self):
-        """Gets the daily of this UpdateScheduleReqDTO.
+        r"""Gets the daily of this UpdateScheduleReqDTO.
 
         :return: The daily of this UpdateScheduleReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DailyDto`
@@ -199,7 +199,7 @@ class UpdateScheduleReqDTO:
 
     @daily.setter
     def daily(self, daily):
-        """Sets the daily of this UpdateScheduleReqDTO.
+        r"""Sets the daily of this UpdateScheduleReqDTO.
 
         :param daily: The daily of this UpdateScheduleReqDTO.
         :type daily: :class:`huaweicloudsdkiotedge.v2.DailyDto`
@@ -208,7 +208,7 @@ class UpdateScheduleReqDTO:
 
     @property
     def tasks(self):
-        """Gets the tasks of this UpdateScheduleReqDTO.
+        r"""Gets the tasks of this UpdateScheduleReqDTO.
 
         调度任务信息
 
@@ -219,7 +219,7 @@ class UpdateScheduleReqDTO:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this UpdateScheduleReqDTO.
+        r"""Sets the tasks of this UpdateScheduleReqDTO.
 
         调度任务信息
 

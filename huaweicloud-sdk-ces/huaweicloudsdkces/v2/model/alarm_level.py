@@ -23,7 +23,7 @@ class AlarmLevel:
     }
 
     def __init__(self):
-        """AlarmLevel
+        r"""AlarmLevel
 
         The model defined in huaweicloud sdk
 

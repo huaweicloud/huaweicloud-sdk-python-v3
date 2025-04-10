@@ -25,7 +25,7 @@ class BatchDeleteScreenRecordsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteScreenRecordsRequest
+        r"""BatchDeleteScreenRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteScreenRecordsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteScreenRecordsRequest.
+        r"""Gets the body of this BatchDeleteScreenRecordsRequest.
 
         :return: The body of this BatchDeleteScreenRecordsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteScreenRecordsRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteScreenRecordsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteScreenRecordsRequest.
+        r"""Sets the body of this BatchDeleteScreenRecordsRequest.
 
         :param body: The body of this BatchDeleteScreenRecordsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDeleteScreenRecordsRequestBody`

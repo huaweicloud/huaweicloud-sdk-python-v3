@@ -43,7 +43,7 @@ class AuthorizationMail:
     }
 
     def __init__(self, id=None, account=None, account_auth_type=None, account_auth_name=None, app_group_id=None, app_group_name=None, mail_send_type=None, mail_send_result=None, error_msg=None, send_at=None):
-        """AuthorizationMail
+        r"""AuthorizationMail
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class AuthorizationMail:
 
     @property
     def id(self):
-        """Gets the id of this AuthorizationMail.
+        r"""Gets the id of this AuthorizationMail.
 
         邮件记录id。
 
@@ -116,7 +116,7 @@ class AuthorizationMail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AuthorizationMail.
+        r"""Sets the id of this AuthorizationMail.
 
         邮件记录id。
 
@@ -127,7 +127,7 @@ class AuthorizationMail:
 
     @property
     def account(self):
-        """Gets the account of this AuthorizationMail.
+        r"""Gets the account of this AuthorizationMail.
 
         用户(组)。
 
@@ -138,7 +138,7 @@ class AuthorizationMail:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AuthorizationMail.
+        r"""Sets the account of this AuthorizationMail.
 
         用户(组)。
 
@@ -149,7 +149,7 @@ class AuthorizationMail:
 
     @property
     def account_auth_type(self):
-        """Gets the account_auth_type of this AuthorizationMail.
+        r"""Gets the account_auth_type of this AuthorizationMail.
 
         :return: The account_auth_type of this AuthorizationMail.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
@@ -158,7 +158,7 @@ class AuthorizationMail:
 
     @account_auth_type.setter
     def account_auth_type(self, account_auth_type):
-        """Sets the account_auth_type of this AuthorizationMail.
+        r"""Sets the account_auth_type of this AuthorizationMail.
 
         :param account_auth_type: The account_auth_type of this AuthorizationMail.
         :type account_auth_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
@@ -167,7 +167,7 @@ class AuthorizationMail:
 
     @property
     def account_auth_name(self):
-        """Gets the account_auth_name of this AuthorizationMail.
+        r"""Gets the account_auth_name of this AuthorizationMail.
 
         授权对象名称。
 
@@ -178,7 +178,7 @@ class AuthorizationMail:
 
     @account_auth_name.setter
     def account_auth_name(self, account_auth_name):
-        """Sets the account_auth_name of this AuthorizationMail.
+        r"""Sets the account_auth_name of this AuthorizationMail.
 
         授权对象名称。
 
@@ -189,7 +189,7 @@ class AuthorizationMail:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this AuthorizationMail.
+        r"""Gets the app_group_id of this AuthorizationMail.
 
         应用组ID。
 
@@ -200,7 +200,7 @@ class AuthorizationMail:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this AuthorizationMail.
+        r"""Sets the app_group_id of this AuthorizationMail.
 
         应用组ID。
 
@@ -211,7 +211,7 @@ class AuthorizationMail:
 
     @property
     def app_group_name(self):
-        """Gets the app_group_name of this AuthorizationMail.
+        r"""Gets the app_group_name of this AuthorizationMail.
 
         应用组名称。
 
@@ -222,7 +222,7 @@ class AuthorizationMail:
 
     @app_group_name.setter
     def app_group_name(self, app_group_name):
-        """Sets the app_group_name of this AuthorizationMail.
+        r"""Sets the app_group_name of this AuthorizationMail.
 
         应用组名称。
 
@@ -233,7 +233,7 @@ class AuthorizationMail:
 
     @property
     def mail_send_type(self):
-        """Gets the mail_send_type of this AuthorizationMail.
+        r"""Gets the mail_send_type of this AuthorizationMail.
 
         授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信
 
@@ -244,7 +244,7 @@ class AuthorizationMail:
 
     @mail_send_type.setter
     def mail_send_type(self, mail_send_type):
-        """Sets the mail_send_type of this AuthorizationMail.
+        r"""Sets the mail_send_type of this AuthorizationMail.
 
         授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信
 
@@ -255,7 +255,7 @@ class AuthorizationMail:
 
     @property
     def mail_send_result(self):
-        """Gets the mail_send_result of this AuthorizationMail.
+        r"""Gets the mail_send_result of this AuthorizationMail.
 
         发送结果。 - SUEECESS -发送成功 - FAIL -发送失败
 
@@ -266,7 +266,7 @@ class AuthorizationMail:
 
     @mail_send_result.setter
     def mail_send_result(self, mail_send_result):
-        """Sets the mail_send_result of this AuthorizationMail.
+        r"""Sets the mail_send_result of this AuthorizationMail.
 
         发送结果。 - SUEECESS -发送成功 - FAIL -发送失败
 
@@ -277,7 +277,7 @@ class AuthorizationMail:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AuthorizationMail.
+        r"""Gets the error_msg of this AuthorizationMail.
 
         报错信息。
 
@@ -288,7 +288,7 @@ class AuthorizationMail:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AuthorizationMail.
+        r"""Sets the error_msg of this AuthorizationMail.
 
         报错信息。
 
@@ -299,7 +299,7 @@ class AuthorizationMail:
 
     @property
     def send_at(self):
-        """Gets the send_at of this AuthorizationMail.
+        r"""Gets the send_at of this AuthorizationMail.
 
         发布时间。
 
@@ -310,7 +310,7 @@ class AuthorizationMail:
 
     @send_at.setter
     def send_at(self, send_at):
-        """Sets the send_at of this AuthorizationMail.
+        r"""Sets the send_at of this AuthorizationMail.
 
         发布时间。
 

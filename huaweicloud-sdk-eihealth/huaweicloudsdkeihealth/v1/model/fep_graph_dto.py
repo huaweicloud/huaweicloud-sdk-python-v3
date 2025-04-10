@@ -27,7 +27,7 @@ class FepGraphDto:
     }
 
     def __init__(self, center_id=None, pairs=None):
-        """FepGraphDto
+        r"""FepGraphDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FepGraphDto:
 
     @property
     def center_id(self):
-        """Gets the center_id of this FepGraphDto.
+        r"""Gets the center_id of this FepGraphDto.
 
         中心配体名称
 
@@ -59,7 +59,7 @@ class FepGraphDto:
 
     @center_id.setter
     def center_id(self, center_id):
-        """Sets the center_id of this FepGraphDto.
+        r"""Sets the center_id of this FepGraphDto.
 
         中心配体名称
 
@@ -70,7 +70,7 @@ class FepGraphDto:
 
     @property
     def pairs(self):
-        """Gets the pairs of this FepGraphDto.
+        r"""Gets the pairs of this FepGraphDto.
 
         配体对列表
 
@@ -81,7 +81,7 @@ class FepGraphDto:
 
     @pairs.setter
     def pairs(self, pairs):
-        """Sets the pairs of this FepGraphDto.
+        r"""Sets the pairs of this FepGraphDto.
 
         配体对列表
 

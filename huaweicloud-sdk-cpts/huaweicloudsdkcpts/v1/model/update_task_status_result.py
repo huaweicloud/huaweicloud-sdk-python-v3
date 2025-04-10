@@ -25,7 +25,7 @@ class UpdateTaskStatusResult:
     }
 
     def __init__(self, task_run_id=None):
-        """UpdateTaskStatusResult
+        r"""UpdateTaskStatusResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTaskStatusResult:
 
     @property
     def task_run_id(self):
-        """Gets the task_run_id of this UpdateTaskStatusResult.
+        r"""Gets the task_run_id of this UpdateTaskStatusResult.
 
         运行任务id，即报告id
 
@@ -54,7 +54,7 @@ class UpdateTaskStatusResult:
 
     @task_run_id.setter
     def task_run_id(self, task_run_id):
-        """Sets the task_run_id of this UpdateTaskStatusResult.
+        r"""Sets the task_run_id of this UpdateTaskStatusResult.
 
         运行任务id，即报告id
 

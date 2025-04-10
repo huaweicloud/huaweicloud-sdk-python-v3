@@ -27,7 +27,7 @@ class OfflineNodesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """OfflineNodesRequest
+        r"""OfflineNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class OfflineNodesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this OfflineNodesRequest.
+        r"""Gets the instance_id of this OfflineNodesRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class OfflineNodesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this OfflineNodesRequest.
+        r"""Sets the instance_id of this OfflineNodesRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class OfflineNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this OfflineNodesRequest.
+        r"""Gets the body of this OfflineNodesRequest.
 
         :return: The body of this OfflineNodesRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.OfflineNodesRequestBody`
@@ -80,7 +80,7 @@ class OfflineNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this OfflineNodesRequest.
+        r"""Sets the body of this OfflineNodesRequest.
 
         :param body: The body of this OfflineNodesRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.OfflineNodesRequestBody`

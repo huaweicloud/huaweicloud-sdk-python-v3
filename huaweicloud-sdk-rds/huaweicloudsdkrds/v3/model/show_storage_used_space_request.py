@@ -25,7 +25,7 @@ class ShowStorageUsedSpaceRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowStorageUsedSpaceRequest
+        r"""ShowStorageUsedSpaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowStorageUsedSpaceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowStorageUsedSpaceRequest.
+        r"""Gets the instance_id of this ShowStorageUsedSpaceRequest.
 
         实例id
 
@@ -53,7 +53,7 @@ class ShowStorageUsedSpaceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowStorageUsedSpaceRequest.
+        r"""Sets the instance_id of this ShowStorageUsedSpaceRequest.
 
         实例id
 

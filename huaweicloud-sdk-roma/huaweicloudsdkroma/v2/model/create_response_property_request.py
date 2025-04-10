@@ -31,7 +31,7 @@ class CreateResponsePropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, body=None):
-        """CreateResponsePropertyRequest
+        r"""CreateResponsePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateResponsePropertyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateResponsePropertyRequest.
+        r"""Gets the instance_id of this CreateResponsePropertyRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class CreateResponsePropertyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateResponsePropertyRequest.
+        r"""Sets the instance_id of this CreateResponsePropertyRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class CreateResponsePropertyRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this CreateResponsePropertyRequest.
+        r"""Gets the service_id of this CreateResponsePropertyRequest.
 
         服务ID
 
@@ -94,7 +94,7 @@ class CreateResponsePropertyRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this CreateResponsePropertyRequest.
+        r"""Sets the service_id of this CreateResponsePropertyRequest.
 
         服务ID
 
@@ -105,7 +105,7 @@ class CreateResponsePropertyRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this CreateResponsePropertyRequest.
+        r"""Gets the command_id of this CreateResponsePropertyRequest.
 
         命令ID
 
@@ -116,7 +116,7 @@ class CreateResponsePropertyRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this CreateResponsePropertyRequest.
+        r"""Sets the command_id of this CreateResponsePropertyRequest.
 
         命令ID
 
@@ -127,7 +127,7 @@ class CreateResponsePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResponsePropertyRequest.
+        r"""Gets the body of this CreateResponsePropertyRequest.
 
         :return: The body of this CreateResponsePropertyRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
@@ -136,7 +136,7 @@ class CreateResponsePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResponsePropertyRequest.
+        r"""Sets the body of this CreateResponsePropertyRequest.
 
         :param body: The body of this CreateResponsePropertyRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`

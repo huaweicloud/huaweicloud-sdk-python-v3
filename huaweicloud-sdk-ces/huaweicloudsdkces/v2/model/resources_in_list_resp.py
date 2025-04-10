@@ -29,7 +29,7 @@ class ResourcesInListResp:
     }
 
     def __init__(self, resource_group_id=None, resource_group_name=None, dimensions=None):
-        """ResourcesInListResp
+        r"""ResourcesInListResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourcesInListResp:
 
     @property
     def resource_group_id(self):
-        """Gets the resource_group_id of this ResourcesInListResp.
+        r"""Gets the resource_group_id of this ResourcesInListResp.
 
         资源分组ID，监控范围为资源分组时存在该值
 
@@ -68,7 +68,7 @@ class ResourcesInListResp:
 
     @resource_group_id.setter
     def resource_group_id(self, resource_group_id):
-        """Sets the resource_group_id of this ResourcesInListResp.
+        r"""Sets the resource_group_id of this ResourcesInListResp.
 
         资源分组ID，监控范围为资源分组时存在该值
 
@@ -79,7 +79,7 @@ class ResourcesInListResp:
 
     @property
     def resource_group_name(self):
-        """Gets the resource_group_name of this ResourcesInListResp.
+        r"""Gets the resource_group_name of this ResourcesInListResp.
 
         资源分组名称，监控范围为资源分组时存在该值
 
@@ -90,7 +90,7 @@ class ResourcesInListResp:
 
     @resource_group_name.setter
     def resource_group_name(self, resource_group_name):
-        """Sets the resource_group_name of this ResourcesInListResp.
+        r"""Sets the resource_group_name of this ResourcesInListResp.
 
         资源分组名称，监控范围为资源分组时存在该值
 
@@ -101,7 +101,7 @@ class ResourcesInListResp:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ResourcesInListResp.
+        r"""Gets the dimensions of this ResourcesInListResp.
 
         维度信息
 
@@ -112,7 +112,7 @@ class ResourcesInListResp:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ResourcesInListResp.
+        r"""Sets the dimensions of this ResourcesInListResp.
 
         维度信息
 

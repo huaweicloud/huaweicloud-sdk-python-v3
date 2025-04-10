@@ -33,7 +33,7 @@ class ListTagValuesRequest:
     }
 
     def __init__(self, data_store_id=None, tag_name=None, filters=None, offset=None, limit=None):
-        """ListTagValuesRequest
+        r"""ListTagValuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListTagValuesRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this ListTagValuesRequest.
+        r"""Gets the data_store_id of this ListTagValuesRequest.
 
         存储ID
 
@@ -80,7 +80,7 @@ class ListTagValuesRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this ListTagValuesRequest.
+        r"""Sets the data_store_id of this ListTagValuesRequest.
 
         存储ID
 
@@ -91,7 +91,7 @@ class ListTagValuesRequest:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this ListTagValuesRequest.
+        r"""Gets the tag_name of this ListTagValuesRequest.
 
         tag 名称
 
@@ -102,7 +102,7 @@ class ListTagValuesRequest:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this ListTagValuesRequest.
+        r"""Sets the tag_name of this ListTagValuesRequest.
 
         tag 名称
 
@@ -113,7 +113,7 @@ class ListTagValuesRequest:
 
     @property
     def filters(self):
-        """Gets the filters of this ListTagValuesRequest.
+        r"""Gets the filters of this ListTagValuesRequest.
 
         查询标签的值的过滤条件，例如: {\"deviceCategory\": \"class1\"}，注意特殊字符需要 urlencode
 
@@ -124,7 +124,7 @@ class ListTagValuesRequest:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this ListTagValuesRequest.
+        r"""Sets the filters of this ListTagValuesRequest.
 
         查询标签的值的过滤条件，例如: {\"deviceCategory\": \"class1\"}，注意特殊字符需要 urlencode
 
@@ -135,7 +135,7 @@ class ListTagValuesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagValuesRequest.
+        r"""Gets the offset of this ListTagValuesRequest.
 
         查询起始元素的偏移
 
@@ -146,7 +146,7 @@ class ListTagValuesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagValuesRequest.
+        r"""Sets the offset of this ListTagValuesRequest.
 
         查询起始元素的偏移
 
@@ -157,7 +157,7 @@ class ListTagValuesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagValuesRequest.
+        r"""Gets the limit of this ListTagValuesRequest.
 
         返回的元素列表大小限制,默认为 100
 
@@ -168,7 +168,7 @@ class ListTagValuesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagValuesRequest.
+        r"""Sets the limit of this ListTagValuesRequest.
 
         返回的元素列表大小限制,默认为 100
 

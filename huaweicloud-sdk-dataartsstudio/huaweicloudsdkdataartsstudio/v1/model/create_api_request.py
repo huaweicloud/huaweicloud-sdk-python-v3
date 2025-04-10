@@ -29,7 +29,7 @@ class CreateApiRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """CreateApiRequest
+        r"""CreateApiRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateApiRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateApiRequest.
+        r"""Gets the workspace of this CreateApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class CreateApiRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateApiRequest.
+        r"""Sets the workspace of this CreateApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class CreateApiRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this CreateApiRequest.
+        r"""Gets the dlm_type of this CreateApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class CreateApiRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this CreateApiRequest.
+        r"""Sets the dlm_type of this CreateApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class CreateApiRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateApiRequest.
+        r"""Gets the body of this CreateApiRequest.
 
         :return: The body of this CreateApiRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Api`
@@ -109,7 +109,7 @@ class CreateApiRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateApiRequest.
+        r"""Sets the body of this CreateApiRequest.
 
         :param body: The body of this CreateApiRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.Api`

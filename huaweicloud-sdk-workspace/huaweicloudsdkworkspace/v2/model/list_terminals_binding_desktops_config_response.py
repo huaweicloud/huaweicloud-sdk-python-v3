@@ -30,7 +30,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     }
 
     def __init__(self, tc_bind_switch=None, tc_auto_bind_switch=None, tc_auto_bind_max=None):
-        """ListTerminalsBindingDesktopsConfigResponse
+        r"""ListTerminalsBindingDesktopsConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
     @property
     def tc_bind_switch(self):
-        """Gets the tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
+        r"""Gets the tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
         绑定开关，只取值ON或OFF
 
@@ -69,7 +69,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
     @tc_bind_switch.setter
     def tc_bind_switch(self, tc_bind_switch):
-        """Sets the tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
+        r"""Sets the tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
         绑定开关，只取值ON或OFF
 
@@ -80,7 +80,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
     @property
     def tc_auto_bind_switch(self):
-        """Gets the tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
+        r"""Gets the tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
         自动绑定开关，只取值ON或OFF
 
@@ -91,7 +91,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
     @tc_auto_bind_switch.setter
     def tc_auto_bind_switch(self, tc_auto_bind_switch):
-        """Sets the tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
+        r"""Sets the tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
         自动绑定开关，只取值ON或OFF
 
@@ -102,7 +102,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
     @property
     def tc_auto_bind_max(self):
-        """Gets the tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
+        r"""Gets the tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
 
         最大绑定数量，默认值为1
 
@@ -113,7 +113,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
     @tc_auto_bind_max.setter
     def tc_auto_bind_max(self, tc_auto_bind_max):
-        """Sets the tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
+        r"""Sets the tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
 
         最大绑定数量，默认值为1
 

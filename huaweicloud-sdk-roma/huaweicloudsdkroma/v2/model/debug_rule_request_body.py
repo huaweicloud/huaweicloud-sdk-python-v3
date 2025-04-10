@@ -27,7 +27,7 @@ class DebugRuleRequestBody:
     }
 
     def __init__(self, test_data=None, test_rule_express=None):
-        """DebugRuleRequestBody
+        r"""DebugRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DebugRuleRequestBody:
 
     @property
     def test_data(self):
-        """Gets the test_data of this DebugRuleRequestBody.
+        r"""Gets the test_data of this DebugRuleRequestBody.
 
         测试的被规则执行的数据
 
@@ -61,7 +61,7 @@ class DebugRuleRequestBody:
 
     @test_data.setter
     def test_data(self, test_data):
-        """Sets the test_data of this DebugRuleRequestBody.
+        r"""Sets the test_data of this DebugRuleRequestBody.
 
         测试的被规则执行的数据
 
@@ -72,7 +72,7 @@ class DebugRuleRequestBody:
 
     @property
     def test_rule_express(self):
-        """Gets the test_rule_express of this DebugRuleRequestBody.
+        r"""Gets the test_rule_express of this DebugRuleRequestBody.
 
         测试的规则
 
@@ -83,7 +83,7 @@ class DebugRuleRequestBody:
 
     @test_rule_express.setter
     def test_rule_express(self, test_rule_express):
-        """Sets the test_rule_express of this DebugRuleRequestBody.
+        r"""Sets the test_rule_express of this DebugRuleRequestBody.
 
         测试的规则
 

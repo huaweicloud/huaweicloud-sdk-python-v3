@@ -24,7 +24,7 @@ class CreateScheduledTasksResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateScheduledTasksResponse
+        r"""CreateScheduledTasksResponse
 
         The model defined in huaweicloud sdk
 

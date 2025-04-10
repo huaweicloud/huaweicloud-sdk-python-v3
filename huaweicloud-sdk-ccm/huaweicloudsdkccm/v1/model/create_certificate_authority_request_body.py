@@ -45,7 +45,7 @@ class CreateCertificateAuthorityRequestBody:
     }
 
     def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None, ca_id=None):
-        """CreateCertificateAuthorityRequestBody
+        r"""CreateCertificateAuthorityRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the type of this CreateCertificateAuthorityRequestBody.
 
         创建的CA类型。 - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
@@ -121,7 +121,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the type of this CreateCertificateAuthorityRequestBody.
 
         创建的CA类型。 - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
@@ -132,7 +132,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the distinguished_name of this CreateCertificateAuthorityRequestBody.
 
         :return: The distinguished_name of this CreateCertificateAuthorityRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -141,7 +141,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the distinguished_name of this CreateCertificateAuthorityRequestBody.
 
         :param distinguished_name: The distinguished_name of this CreateCertificateAuthorityRequestBody.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -150,7 +150,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the key_algorithm of this CreateCertificateAuthorityRequestBody.
 
         密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位；   - **SM2** : 国家密码管理局颁发的椭圆曲线算法（签名哈希算法SM3），密钥长度256位。（中国站）
 
@@ -161,7 +161,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the key_algorithm of this CreateCertificateAuthorityRequestBody.
 
         密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位；   - **SM2** : 国家密码管理局颁发的椭圆曲线算法（签名哈希算法SM3），密钥长度256位。（中国站）
 
@@ -172,7 +172,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def validity(self):
-        """Gets the validity of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the validity of this CreateCertificateAuthorityRequestBody.
 
         :return: The validity of this CreateCertificateAuthorityRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
@@ -181,7 +181,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @validity.setter
     def validity(self, validity):
-        """Sets the validity of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the validity of this CreateCertificateAuthorityRequestBody.
 
         :param validity: The validity of this CreateCertificateAuthorityRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -190,7 +190,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def issuer_id(self):
-        """Gets the issuer_id of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the issuer_id of this CreateCertificateAuthorityRequestBody.
 
         父CA证书ID，分以下三种情况：   - 创建根CA，根CA为自签名证书，无父CA，将忽略该参数；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。
 
@@ -201,7 +201,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @issuer_id.setter
     def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the issuer_id of this CreateCertificateAuthorityRequestBody.
 
         父CA证书ID，分以下三种情况：   - 创建根CA，根CA为自签名证书，无父CA，将忽略该参数；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。
 
@@ -212,7 +212,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def path_length(self):
-        """Gets the path_length of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the path_length of this CreateCertificateAuthorityRequestBody.
 
         CA证书路径长度，分以下三种情况：   - 创建根CA，为便于后期对证书层级的扩展，根CA默认不对路径长度做限制，故将忽略该参数。证书层级规划可由从属CA做限制；   - 创建从属CA，并需要直接激活该证书，用户可自定义。缺省值为0；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略。激活证书时若要自定义，需要再次传入；
 
@@ -223,7 +223,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @path_length.setter
     def path_length(self, path_length):
-        """Sets the path_length of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the path_length of this CreateCertificateAuthorityRequestBody.
 
         CA证书路径长度，分以下三种情况：   - 创建根CA，为便于后期对证书层级的扩展，根CA默认不对路径长度做限制，故将忽略该参数。证书层级规划可由从属CA做限制；   - 创建从属CA，并需要直接激活该证书，用户可自定义。缺省值为0；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略。激活证书时若要自定义，需要再次传入；
 
@@ -234,7 +234,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
 
         签名哈希算法。 - 分以下三种情况：   - 创建根CA，为必填值；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。 - 可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站，密钥算法SM2）
 
@@ -245,7 +245,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
 
         签名哈希算法。 - 分以下三种情况：   - 创建根CA，为必填值；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。 - 可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站，密钥算法SM2）
 
@@ -256,7 +256,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def key_usages(self):
-        """Gets the key_usages of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the key_usages of this CreateCertificateAuthorityRequestBody.
 
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
 
@@ -267,7 +267,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @key_usages.setter
     def key_usages(self, key_usages):
-        """Sets the key_usages of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the key_usages of this CreateCertificateAuthorityRequestBody.
 
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
 
@@ -278,7 +278,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def crl_configuration(self):
-        """Gets the crl_configuration of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the crl_configuration of this CreateCertificateAuthorityRequestBody.
 
         :return: The crl_configuration of this CreateCertificateAuthorityRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
@@ -287,7 +287,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @crl_configuration.setter
     def crl_configuration(self, crl_configuration):
-        """Sets the crl_configuration of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the crl_configuration of this CreateCertificateAuthorityRequestBody.
 
         :param crl_configuration: The crl_configuration of this CreateCertificateAuthorityRequestBody.
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
@@ -296,7 +296,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the enterprise_project_id of this CreateCertificateAuthorityRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -307,7 +307,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the enterprise_project_id of this CreateCertificateAuthorityRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -318,7 +318,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this CreateCertificateAuthorityRequestBody.
+        r"""Gets the ca_id of this CreateCertificateAuthorityRequestBody.
 
         CA证书ID。如果为空，则创建按需CA；如果不为空，则保存包周期CA信息。
 
@@ -329,7 +329,7 @@ class CreateCertificateAuthorityRequestBody:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this CreateCertificateAuthorityRequestBody.
+        r"""Sets the ca_id of this CreateCertificateAuthorityRequestBody.
 
         CA证书ID。如果为空，则创建按需CA；如果不为空，则保存包周期CA信息。
 

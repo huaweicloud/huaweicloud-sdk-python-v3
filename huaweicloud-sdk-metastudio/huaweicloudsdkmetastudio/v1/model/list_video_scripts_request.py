@@ -35,7 +35,7 @@ class ListVideoScriptsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, name=None, script_catalog=None, view_mode=None):
-        """ListVideoScriptsRequest
+        r"""ListVideoScriptsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListVideoScriptsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListVideoScriptsRequest.
+        r"""Gets the x_app_user_id of this ListVideoScriptsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class ListVideoScriptsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListVideoScriptsRequest.
+        r"""Sets the x_app_user_id of this ListVideoScriptsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class ListVideoScriptsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVideoScriptsRequest.
+        r"""Gets the offset of this ListVideoScriptsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -111,7 +111,7 @@ class ListVideoScriptsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVideoScriptsRequest.
+        r"""Sets the offset of this ListVideoScriptsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -122,7 +122,7 @@ class ListVideoScriptsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVideoScriptsRequest.
+        r"""Gets the limit of this ListVideoScriptsRequest.
 
         每页显示的条目数量。
 
@@ -133,7 +133,7 @@ class ListVideoScriptsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVideoScriptsRequest.
+        r"""Sets the limit of this ListVideoScriptsRequest.
 
         每页显示的条目数量。
 
@@ -144,7 +144,7 @@ class ListVideoScriptsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVideoScriptsRequest.
+        r"""Gets the name of this ListVideoScriptsRequest.
 
         按名称模糊查询。
 
@@ -155,7 +155,7 @@ class ListVideoScriptsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVideoScriptsRequest.
+        r"""Sets the name of this ListVideoScriptsRequest.
 
         按名称模糊查询。
 
@@ -166,7 +166,7 @@ class ListVideoScriptsRequest:
 
     @property
     def script_catalog(self):
-        """Gets the script_catalog of this ListVideoScriptsRequest.
+        r"""Gets the script_catalog of this ListVideoScriptsRequest.
 
         剧本类型。默认查询VIDEO_DRAFT。 * VIDEO_DRAFT：视频草稿。 * SYSTEM_VIDEO_TEMPLET： 系统视频模板。
 
@@ -177,7 +177,7 @@ class ListVideoScriptsRequest:
 
     @script_catalog.setter
     def script_catalog(self, script_catalog):
-        """Sets the script_catalog of this ListVideoScriptsRequest.
+        r"""Sets the script_catalog of this ListVideoScriptsRequest.
 
         剧本类型。默认查询VIDEO_DRAFT。 * VIDEO_DRAFT：视频草稿。 * SYSTEM_VIDEO_TEMPLET： 系统视频模板。
 
@@ -188,7 +188,7 @@ class ListVideoScriptsRequest:
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this ListVideoScriptsRequest.
+        r"""Gets the view_mode of this ListVideoScriptsRequest.
 
         横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
@@ -199,7 +199,7 @@ class ListVideoScriptsRequest:
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this ListVideoScriptsRequest.
+        r"""Sets the view_mode of this ListVideoScriptsRequest.
 
         横竖屏类型（内部参数，不对外开放）。默认值是LANDSCAPE。 * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 

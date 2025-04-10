@@ -29,7 +29,7 @@ class PipelineMoveToGroupResponseVo:
     }
 
     def __init__(self, code=None, pipeline_id=None, pipeline_name=None):
-        """PipelineMoveToGroupResponseVo
+        r"""PipelineMoveToGroupResponseVo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PipelineMoveToGroupResponseVo:
 
     @property
     def code(self):
-        """Gets the code of this PipelineMoveToGroupResponseVo.
+        r"""Gets the code of this PipelineMoveToGroupResponseVo.
 
         响应码 [\"failed\", \"success\"]
 
@@ -65,7 +65,7 @@ class PipelineMoveToGroupResponseVo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this PipelineMoveToGroupResponseVo.
+        r"""Sets the code of this PipelineMoveToGroupResponseVo.
 
         响应码 [\"failed\", \"success\"]
 
@@ -76,7 +76,7 @@ class PipelineMoveToGroupResponseVo:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineMoveToGroupResponseVo.
+        r"""Gets the pipeline_id of this PipelineMoveToGroupResponseVo.
 
         流水线ID
 
@@ -87,7 +87,7 @@ class PipelineMoveToGroupResponseVo:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineMoveToGroupResponseVo.
+        r"""Sets the pipeline_id of this PipelineMoveToGroupResponseVo.
 
         流水线ID
 
@@ -98,7 +98,7 @@ class PipelineMoveToGroupResponseVo:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this PipelineMoveToGroupResponseVo.
+        r"""Gets the pipeline_name of this PipelineMoveToGroupResponseVo.
 
         流水线名
 
@@ -109,7 +109,7 @@ class PipelineMoveToGroupResponseVo:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this PipelineMoveToGroupResponseVo.
+        r"""Sets the pipeline_name of this PipelineMoveToGroupResponseVo.
 
         流水线名
 

@@ -26,7 +26,7 @@ class SetSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """SetSecurityGroupResponse
+        r"""SetSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetSecurityGroupResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this SetSecurityGroupResponse.
+        r"""Gets the workflow_id of this SetSecurityGroupResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class SetSecurityGroupResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this SetSecurityGroupResponse.
+        r"""Sets the workflow_id of this SetSecurityGroupResponse.
 
         任务ID
 

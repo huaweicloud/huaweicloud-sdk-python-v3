@@ -33,7 +33,7 @@ class Audio:
     }
 
     def __init__(self, output_policy=None, codec=None, sample_rate=None, bitrate=None, channels=None):
-        """Audio
+        r"""Audio
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class Audio:
 
     @property
     def output_policy(self):
-        """Gets the output_policy of this Audio.
+        r"""Gets the output_policy of this Audio.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -81,7 +81,7 @@ class Audio:
 
     @output_policy.setter
     def output_policy(self, output_policy):
-        """Sets the output_policy of this Audio.
+        r"""Sets the output_policy of this Audio.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -92,7 +92,7 @@ class Audio:
 
     @property
     def codec(self):
-        """Gets the codec of this Audio.
+        r"""Gets the codec of this Audio.
 
         音频编码格式。  取值如下：  - 1：AAC格式。 - 2：HEAAC1格式 。 - 3：HEAAC2格式。 - 4：MP3格式 。 
 
@@ -103,7 +103,7 @@ class Audio:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this Audio.
+        r"""Sets the codec of this Audio.
 
         音频编码格式。  取值如下：  - 1：AAC格式。 - 2：HEAAC1格式 。 - 3：HEAAC2格式。 - 4：MP3格式 。 
 
@@ -114,7 +114,7 @@ class Audio:
 
     @property
     def sample_rate(self):
-        """Gets the sample_rate of this Audio.
+        r"""Gets the sample_rate of this Audio.
 
         音频采样率。  取值如下：  - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050（22050Hz） - 3：AUDIO_SAMPLE_32000（32000Hz） - 4：AUDIO_SAMPLE_44100（44100Hz） - 5：AUDIO_SAMPLE_48000（48000Hz） - 6：AUDIO_SAMPLE_96000（96000Hz） 
 
@@ -125,7 +125,7 @@ class Audio:
 
     @sample_rate.setter
     def sample_rate(self, sample_rate):
-        """Sets the sample_rate of this Audio.
+        r"""Sets the sample_rate of this Audio.
 
         音频采样率。  取值如下：  - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050（22050Hz） - 3：AUDIO_SAMPLE_32000（32000Hz） - 4：AUDIO_SAMPLE_44100（44100Hz） - 5：AUDIO_SAMPLE_48000（48000Hz） - 6：AUDIO_SAMPLE_96000（96000Hz） 
 
@@ -136,7 +136,7 @@ class Audio:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this Audio.
+        r"""Gets the bitrate of this Audio.
 
         音频码率。  取值范围：0或[8,1000]。  单位：kbit/s。 
 
@@ -147,7 +147,7 @@ class Audio:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this Audio.
+        r"""Sets the bitrate of this Audio.
 
         音频码率。  取值范围：0或[8,1000]。  单位：kbit/s。 
 
@@ -158,7 +158,7 @@ class Audio:
 
     @property
     def channels(self):
-        """Gets the channels of this Audio.
+        r"""Gets the channels of this Audio.
 
         声道数。  取值如下： - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2 - 6：AUDIO_CHANNELS_5_1 
 
@@ -169,7 +169,7 @@ class Audio:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this Audio.
+        r"""Sets the channels of this Audio.
 
         声道数。  取值如下： - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2 - 6：AUDIO_CHANNELS_5_1 
 

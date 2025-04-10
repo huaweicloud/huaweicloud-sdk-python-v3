@@ -35,7 +35,7 @@ class DevstarRepoInfo:
     }
 
     def __init__(self, uuid=None, repo_id=None, repo_name=None, ssh_url=None, code_url=None, detail_url=None):
-        """DevstarRepoInfo
+        r"""DevstarRepoInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DevstarRepoInfo:
 
     @property
     def uuid(self):
-        """Gets the uuid of this DevstarRepoInfo.
+        r"""Gets the uuid of this DevstarRepoInfo.
 
         仓库的uuid
 
@@ -89,7 +89,7 @@ class DevstarRepoInfo:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this DevstarRepoInfo.
+        r"""Sets the uuid of this DevstarRepoInfo.
 
         仓库的uuid
 
@@ -100,7 +100,7 @@ class DevstarRepoInfo:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this DevstarRepoInfo.
+        r"""Gets the repo_id of this DevstarRepoInfo.
 
         仓库ID
 
@@ -111,7 +111,7 @@ class DevstarRepoInfo:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this DevstarRepoInfo.
+        r"""Sets the repo_id of this DevstarRepoInfo.
 
         仓库ID
 
@@ -122,7 +122,7 @@ class DevstarRepoInfo:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this DevstarRepoInfo.
+        r"""Gets the repo_name of this DevstarRepoInfo.
 
         仓库名称
 
@@ -133,7 +133,7 @@ class DevstarRepoInfo:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this DevstarRepoInfo.
+        r"""Sets the repo_name of this DevstarRepoInfo.
 
         仓库名称
 
@@ -144,7 +144,7 @@ class DevstarRepoInfo:
 
     @property
     def ssh_url(self):
-        """Gets the ssh_url of this DevstarRepoInfo.
+        r"""Gets the ssh_url of this DevstarRepoInfo.
 
         仓库SSH地址
 
@@ -155,7 +155,7 @@ class DevstarRepoInfo:
 
     @ssh_url.setter
     def ssh_url(self, ssh_url):
-        """Sets the ssh_url of this DevstarRepoInfo.
+        r"""Sets the ssh_url of this DevstarRepoInfo.
 
         仓库SSH地址
 
@@ -166,7 +166,7 @@ class DevstarRepoInfo:
 
     @property
     def code_url(self):
-        """Gets the code_url of this DevstarRepoInfo.
+        r"""Gets the code_url of this DevstarRepoInfo.
 
         仓库HTTPS地址
 
@@ -177,7 +177,7 @@ class DevstarRepoInfo:
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this DevstarRepoInfo.
+        r"""Sets the code_url of this DevstarRepoInfo.
 
         仓库HTTPS地址
 
@@ -188,7 +188,7 @@ class DevstarRepoInfo:
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this DevstarRepoInfo.
+        r"""Gets the detail_url of this DevstarRepoInfo.
 
         仓库预览地址
 
@@ -199,7 +199,7 @@ class DevstarRepoInfo:
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this DevstarRepoInfo.
+        r"""Sets the detail_url of this DevstarRepoInfo.
 
         仓库预览地址
 

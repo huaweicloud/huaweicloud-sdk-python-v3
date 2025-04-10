@@ -27,7 +27,7 @@ class AttachManagedPolicyToPermissionSetReqBody:
     }
 
     def __init__(self, managed_policy_id=None, managed_policy_name=None):
-        """AttachManagedPolicyToPermissionSetReqBody
+        r"""AttachManagedPolicyToPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachManagedPolicyToPermissionSetReqBody:
 
     @property
     def managed_policy_id(self):
-        """Gets the managed_policy_id of this AttachManagedPolicyToPermissionSetReqBody.
+        r"""Gets the managed_policy_id of this AttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统身份策略唯一标识
 
@@ -60,7 +60,7 @@ class AttachManagedPolicyToPermissionSetReqBody:
 
     @managed_policy_id.setter
     def managed_policy_id(self, managed_policy_id):
-        """Sets the managed_policy_id of this AttachManagedPolicyToPermissionSetReqBody.
+        r"""Sets the managed_policy_id of this AttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统身份策略唯一标识
 
@@ -71,7 +71,7 @@ class AttachManagedPolicyToPermissionSetReqBody:
 
     @property
     def managed_policy_name(self):
-        """Gets the managed_policy_name of this AttachManagedPolicyToPermissionSetReqBody.
+        r"""Gets the managed_policy_name of this AttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统身份策略名称
 
@@ -82,7 +82,7 @@ class AttachManagedPolicyToPermissionSetReqBody:
 
     @managed_policy_name.setter
     def managed_policy_name(self, managed_policy_name):
-        """Sets the managed_policy_name of this AttachManagedPolicyToPermissionSetReqBody.
+        r"""Sets the managed_policy_name of this AttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统身份策略名称
 

@@ -57,7 +57,7 @@ class ListAlarmResponseAlarms:
     }
 
     def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, alarm_template_id=None, product_name=None, resource_level=None):
-        """ListAlarmResponseAlarms
+        r"""ListAlarmResponseAlarms
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmResponseAlarms.
+        r"""Gets the alarm_id of this ListAlarmResponseAlarms.
 
         告警规则id，以al开头，包含22个数字或字母
 
@@ -166,7 +166,7 @@ class ListAlarmResponseAlarms:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmResponseAlarms.
+        r"""Sets the alarm_id of this ListAlarmResponseAlarms.
 
         告警规则id，以al开头，包含22个数字或字母
 
@@ -177,7 +177,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def name(self):
-        """Gets the name of this ListAlarmResponseAlarms.
+        r"""Gets the name of this ListAlarmResponseAlarms.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -188,7 +188,7 @@ class ListAlarmResponseAlarms:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAlarmResponseAlarms.
+        r"""Sets the name of this ListAlarmResponseAlarms.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -199,7 +199,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def description(self):
-        """Gets the description of this ListAlarmResponseAlarms.
+        r"""Gets the description of this ListAlarmResponseAlarms.
 
         告警描述，长度0-256
 
@@ -210,7 +210,7 @@ class ListAlarmResponseAlarms:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListAlarmResponseAlarms.
+        r"""Sets the description of this ListAlarmResponseAlarms.
 
         告警描述，长度0-256
 
@@ -221,7 +221,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmResponseAlarms.
+        r"""Gets the namespace of this ListAlarmResponseAlarms.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -232,7 +232,7 @@ class ListAlarmResponseAlarms:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmResponseAlarms.
+        r"""Sets the namespace of this ListAlarmResponseAlarms.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -243,7 +243,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def policies(self):
-        """Gets the policies of this ListAlarmResponseAlarms.
+        r"""Gets the policies of this ListAlarmResponseAlarms.
 
         告警策略
 
@@ -254,7 +254,7 @@ class ListAlarmResponseAlarms:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListAlarmResponseAlarms.
+        r"""Sets the policies of this ListAlarmResponseAlarms.
 
         告警策略
 
@@ -265,7 +265,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def resources(self):
-        """Gets the resources of this ListAlarmResponseAlarms.
+        r"""Gets the resources of this ListAlarmResponseAlarms.
 
         资源列表，关联资源需要使用查询告警规则资源接口获取
 
@@ -276,7 +276,7 @@ class ListAlarmResponseAlarms:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListAlarmResponseAlarms.
+        r"""Sets the resources of this ListAlarmResponseAlarms.
 
         资源列表，关联资源需要使用查询告警规则资源接口获取
 
@@ -287,7 +287,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def type(self):
-        """Gets the type of this ListAlarmResponseAlarms.
+        r"""Gets the type of this ListAlarmResponseAlarms.
 
         :return: The type of this ListAlarmResponseAlarms.
         :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -296,7 +296,7 @@ class ListAlarmResponseAlarms:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAlarmResponseAlarms.
+        r"""Sets the type of this ListAlarmResponseAlarms.
 
         :param type: The type of this ListAlarmResponseAlarms.
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -305,7 +305,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListAlarmResponseAlarms.
+        r"""Gets the enabled of this ListAlarmResponseAlarms.
 
         告警开关
 
@@ -316,7 +316,7 @@ class ListAlarmResponseAlarms:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListAlarmResponseAlarms.
+        r"""Sets the enabled of this ListAlarmResponseAlarms.
 
         告警开关
 
@@ -327,7 +327,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def notification_enabled(self):
-        """Gets the notification_enabled of this ListAlarmResponseAlarms.
+        r"""Gets the notification_enabled of this ListAlarmResponseAlarms.
 
         是否开启告警通知
 
@@ -338,7 +338,7 @@ class ListAlarmResponseAlarms:
 
     @notification_enabled.setter
     def notification_enabled(self, notification_enabled):
-        """Sets the notification_enabled of this ListAlarmResponseAlarms.
+        r"""Sets the notification_enabled of this ListAlarmResponseAlarms.
 
         是否开启告警通知
 
@@ -349,7 +349,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this ListAlarmResponseAlarms.
+        r"""Gets the alarm_notifications of this ListAlarmResponseAlarms.
 
         告警触发的动作
 
@@ -360,7 +360,7 @@ class ListAlarmResponseAlarms:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this ListAlarmResponseAlarms.
+        r"""Sets the alarm_notifications of this ListAlarmResponseAlarms.
 
         告警触发的动作
 
@@ -371,7 +371,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def ok_notifications(self):
-        """Gets the ok_notifications of this ListAlarmResponseAlarms.
+        r"""Gets the ok_notifications of this ListAlarmResponseAlarms.
 
         告警恢复触发的动作
 
@@ -382,7 +382,7 @@ class ListAlarmResponseAlarms:
 
     @ok_notifications.setter
     def ok_notifications(self, ok_notifications):
-        """Sets the ok_notifications of this ListAlarmResponseAlarms.
+        r"""Sets the ok_notifications of this ListAlarmResponseAlarms.
 
         告警恢复触发的动作
 
@@ -393,7 +393,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def notification_begin_time(self):
-        """Gets the notification_begin_time of this ListAlarmResponseAlarms.
+        r"""Gets the notification_begin_time of this ListAlarmResponseAlarms.
 
         告警通知开启时间
 
@@ -404,7 +404,7 @@ class ListAlarmResponseAlarms:
 
     @notification_begin_time.setter
     def notification_begin_time(self, notification_begin_time):
-        """Sets the notification_begin_time of this ListAlarmResponseAlarms.
+        r"""Sets the notification_begin_time of this ListAlarmResponseAlarms.
 
         告警通知开启时间
 
@@ -415,7 +415,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def notification_end_time(self):
-        """Gets the notification_end_time of this ListAlarmResponseAlarms.
+        r"""Gets the notification_end_time of this ListAlarmResponseAlarms.
 
         告警通知关闭时间
 
@@ -426,7 +426,7 @@ class ListAlarmResponseAlarms:
 
     @notification_end_time.setter
     def notification_end_time(self, notification_end_time):
-        """Sets the notification_end_time of this ListAlarmResponseAlarms.
+        r"""Sets the notification_end_time of this ListAlarmResponseAlarms.
 
         告警通知关闭时间
 
@@ -437,7 +437,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAlarmResponseAlarms.
+        r"""Gets the enterprise_project_id of this ListAlarmResponseAlarms.
 
         企业项目ID，不填时会使用默认的企业项目ID
 
@@ -448,7 +448,7 @@ class ListAlarmResponseAlarms:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAlarmResponseAlarms.
+        r"""Sets the enterprise_project_id of this ListAlarmResponseAlarms.
 
         企业项目ID，不填时会使用默认的企业项目ID
 
@@ -459,7 +459,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def alarm_template_id(self):
-        """Gets the alarm_template_id of this ListAlarmResponseAlarms.
+        r"""Gets the alarm_template_id of this ListAlarmResponseAlarms.
 
         告警规则关联告警模板ID
 
@@ -470,7 +470,7 @@ class ListAlarmResponseAlarms:
 
     @alarm_template_id.setter
     def alarm_template_id(self, alarm_template_id):
-        """Sets the alarm_template_id of this ListAlarmResponseAlarms.
+        r"""Sets the alarm_template_id of this ListAlarmResponseAlarms.
 
         告警规则关联告警模板ID
 
@@ -481,7 +481,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ListAlarmResponseAlarms.
+        r"""Gets the product_name of this ListAlarmResponseAlarms.
 
         产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
@@ -492,7 +492,7 @@ class ListAlarmResponseAlarms:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ListAlarmResponseAlarms.
+        r"""Sets the product_name of this ListAlarmResponseAlarms.
 
         产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
@@ -503,7 +503,7 @@ class ListAlarmResponseAlarms:
 
     @property
     def resource_level(self):
-        """Gets the resource_level of this ListAlarmResponseAlarms.
+        r"""Gets the resource_level of this ListAlarmResponseAlarms.
 
         :return: The resource_level of this ListAlarmResponseAlarms.
         :rtype: :class:`huaweicloudsdkces.v2.ResourceLevel`
@@ -512,7 +512,7 @@ class ListAlarmResponseAlarms:
 
     @resource_level.setter
     def resource_level(self, resource_level):
-        """Sets the resource_level of this ListAlarmResponseAlarms.
+        r"""Sets the resource_level of this ListAlarmResponseAlarms.
 
         :param resource_level: The resource_level of this ListAlarmResponseAlarms.
         :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`

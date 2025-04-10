@@ -39,7 +39,7 @@ class HealthCheckConfigurationReadinessProbe:
     }
 
     def __init__(self, period_seconds=None, initial_delay_seconds=None, timeout_seconds=None, success_threshold=None, failure_threshold=None, http_get=None, tcp_socket=None, _exec=None):
-        """HealthCheckConfigurationReadinessProbe
+        r"""HealthCheckConfigurationReadinessProbe
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def period_seconds(self):
-        """Gets the period_seconds of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the period_seconds of this HealthCheckConfigurationReadinessProbe.
 
         检测周期，单位为s。
 
@@ -103,7 +103,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @period_seconds.setter
     def period_seconds(self, period_seconds):
-        """Sets the period_seconds of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the period_seconds of this HealthCheckConfigurationReadinessProbe.
 
         检测周期，单位为s。
 
@@ -114,7 +114,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def initial_delay_seconds(self):
-        """Gets the initial_delay_seconds of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the initial_delay_seconds of this HealthCheckConfigurationReadinessProbe.
 
         延迟时间，单位为s。
 
@@ -125,7 +125,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @initial_delay_seconds.setter
     def initial_delay_seconds(self, initial_delay_seconds):
-        """Sets the initial_delay_seconds of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the initial_delay_seconds of this HealthCheckConfigurationReadinessProbe.
 
         延迟时间，单位为s。
 
@@ -136,7 +136,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def timeout_seconds(self):
-        """Gets the timeout_seconds of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the timeout_seconds of this HealthCheckConfigurationReadinessProbe.
 
         超时时间，单位为s。
 
@@ -147,7 +147,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @timeout_seconds.setter
     def timeout_seconds(self, timeout_seconds):
-        """Sets the timeout_seconds of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the timeout_seconds of this HealthCheckConfigurationReadinessProbe.
 
         超时时间，单位为s。
 
@@ -158,7 +158,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def success_threshold(self):
-        """Gets the success_threshold of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the success_threshold of this HealthCheckConfigurationReadinessProbe.
 
         成功阈值。
 
@@ -169,7 +169,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @success_threshold.setter
     def success_threshold(self, success_threshold):
-        """Sets the success_threshold of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the success_threshold of this HealthCheckConfigurationReadinessProbe.
 
         成功阈值。
 
@@ -180,7 +180,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def failure_threshold(self):
-        """Gets the failure_threshold of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the failure_threshold of this HealthCheckConfigurationReadinessProbe.
 
         最大失败次数。
 
@@ -191,7 +191,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @failure_threshold.setter
     def failure_threshold(self, failure_threshold):
-        """Sets the failure_threshold of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the failure_threshold of this HealthCheckConfigurationReadinessProbe.
 
         最大失败次数。
 
@@ -202,7 +202,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def http_get(self):
-        """Gets the http_get of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the http_get of this HealthCheckConfigurationReadinessProbe.
 
         :return: The http_get of this HealthCheckConfigurationReadinessProbe.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationHttpGet`
@@ -211,7 +211,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @http_get.setter
     def http_get(self, http_get):
-        """Sets the http_get of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the http_get of this HealthCheckConfigurationReadinessProbe.
 
         :param http_get: The http_get of this HealthCheckConfigurationReadinessProbe.
         :type http_get: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationHttpGet`
@@ -220,7 +220,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def tcp_socket(self):
-        """Gets the tcp_socket of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the tcp_socket of this HealthCheckConfigurationReadinessProbe.
 
         :return: The tcp_socket of this HealthCheckConfigurationReadinessProbe.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationTcpSocket`
@@ -229,7 +229,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @tcp_socket.setter
     def tcp_socket(self, tcp_socket):
-        """Sets the tcp_socket of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the tcp_socket of this HealthCheckConfigurationReadinessProbe.
 
         :param tcp_socket: The tcp_socket of this HealthCheckConfigurationReadinessProbe.
         :type tcp_socket: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationTcpSocket`
@@ -238,7 +238,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @property
     def _exec(self):
-        """Gets the _exec of this HealthCheckConfigurationReadinessProbe.
+        r"""Gets the _exec of this HealthCheckConfigurationReadinessProbe.
 
         :return: The _exec of this HealthCheckConfigurationReadinessProbe.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationExec`
@@ -247,7 +247,7 @@ class HealthCheckConfigurationReadinessProbe:
 
     @_exec.setter
     def _exec(self, _exec):
-        """Sets the _exec of this HealthCheckConfigurationReadinessProbe.
+        r"""Sets the _exec of this HealthCheckConfigurationReadinessProbe.
 
         :param _exec: The _exec of this HealthCheckConfigurationReadinessProbe.
         :type _exec: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationExec`

@@ -36,7 +36,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, page_number=None, page_record=None, slow_log_list=None, total_record=None, start_time=None, end_time=None):
-        """ListSlowlogStatisticsResponse
+        r"""ListSlowlogStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @property
     def page_number(self):
-        """Gets the page_number of this ListSlowlogStatisticsResponse.
+        r"""Gets the page_number of this ListSlowlogStatisticsResponse.
 
         当前页码
 
@@ -90,7 +90,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ListSlowlogStatisticsResponse.
+        r"""Sets the page_number of this ListSlowlogStatisticsResponse.
 
         当前页码
 
@@ -101,7 +101,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @property
     def page_record(self):
-        """Gets the page_record of this ListSlowlogStatisticsResponse.
+        r"""Gets the page_record of this ListSlowlogStatisticsResponse.
 
         每页条数
 
@@ -112,7 +112,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @page_record.setter
     def page_record(self, page_record):
-        """Sets the page_record of this ListSlowlogStatisticsResponse.
+        r"""Sets the page_record of this ListSlowlogStatisticsResponse.
 
         每页条数
 
@@ -123,7 +123,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ListSlowlogStatisticsResponse.
+        r"""Gets the slow_log_list of this ListSlowlogStatisticsResponse.
 
         慢日志列表
 
@@ -134,7 +134,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ListSlowlogStatisticsResponse.
+        r"""Sets the slow_log_list of this ListSlowlogStatisticsResponse.
 
         慢日志列表
 
@@ -145,7 +145,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListSlowlogStatisticsResponse.
+        r"""Gets the total_record of this ListSlowlogStatisticsResponse.
 
         总条数
 
@@ -156,7 +156,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListSlowlogStatisticsResponse.
+        r"""Sets the total_record of this ListSlowlogStatisticsResponse.
 
         总条数
 
@@ -167,7 +167,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSlowlogStatisticsResponse.
+        r"""Gets the start_time of this ListSlowlogStatisticsResponse.
 
         开始时间
 
@@ -178,7 +178,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSlowlogStatisticsResponse.
+        r"""Sets the start_time of this ListSlowlogStatisticsResponse.
 
         开始时间
 
@@ -189,7 +189,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSlowlogStatisticsResponse.
+        r"""Gets the end_time of this ListSlowlogStatisticsResponse.
 
         结束时间
 
@@ -200,7 +200,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSlowlogStatisticsResponse.
+        r"""Sets the end_time of this ListSlowlogStatisticsResponse.
 
         结束时间
 

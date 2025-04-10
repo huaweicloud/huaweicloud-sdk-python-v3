@@ -25,7 +25,7 @@ class ChangeVaultChargeModeRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeVaultChargeModeRequest
+        r"""ChangeVaultChargeModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeVaultChargeModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeVaultChargeModeRequest.
+        r"""Gets the body of this ChangeVaultChargeModeRequest.
 
         :return: The body of this ChangeVaultChargeModeRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.ChangeToPeriod`
@@ -52,7 +52,7 @@ class ChangeVaultChargeModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeVaultChargeModeRequest.
+        r"""Sets the body of this ChangeVaultChargeModeRequest.
 
         :param body: The body of this ChangeVaultChargeModeRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.ChangeToPeriod`

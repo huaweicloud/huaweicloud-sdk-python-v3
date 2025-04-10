@@ -25,7 +25,7 @@ class Quic:
     }
 
     def __init__(self, status=None):
-        """Quic
+        r"""Quic
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Quic:
 
     @property
     def status(self):
-        """Gets the status of this Quic.
+        r"""Gets the status of this Quic.
 
         状态，on：打开，off：关闭。
 
@@ -53,7 +53,7 @@ class Quic:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Quic.
+        r"""Sets the status of this Quic.
 
         状态，on：打开，off：关闭。
 

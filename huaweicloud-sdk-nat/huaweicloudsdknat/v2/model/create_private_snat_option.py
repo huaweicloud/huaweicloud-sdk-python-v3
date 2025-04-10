@@ -33,7 +33,7 @@ class CreatePrivateSnatOption:
     }
 
     def __init__(self, gateway_id=None, cidr=None, virsubnet_id=None, description=None, transit_ip_ids=None):
-        """CreatePrivateSnatOption
+        r"""CreatePrivateSnatOption
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreatePrivateSnatOption:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreatePrivateSnatOption.
+        r"""Gets the gateway_id of this CreatePrivateSnatOption.
 
         私网NAT网关实例的ID。
 
@@ -80,7 +80,7 @@ class CreatePrivateSnatOption:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreatePrivateSnatOption.
+        r"""Sets the gateway_id of this CreatePrivateSnatOption.
 
         私网NAT网关实例的ID。
 
@@ -91,7 +91,7 @@ class CreatePrivateSnatOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreatePrivateSnatOption.
+        r"""Gets the cidr of this CreatePrivateSnatOption.
 
         功能说明：规则匹配的CIDR。取值约束：与virsubnet_id参数二选一。
 
@@ -102,7 +102,7 @@ class CreatePrivateSnatOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreatePrivateSnatOption.
+        r"""Sets the cidr of this CreatePrivateSnatOption.
 
         功能说明：规则匹配的CIDR。取值约束：与virsubnet_id参数二选一。
 
@@ -113,7 +113,7 @@ class CreatePrivateSnatOption:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this CreatePrivateSnatOption.
+        r"""Gets the virsubnet_id of this CreatePrivateSnatOption.
 
         功能说明：规则匹配的子网的ID。 取值约束：与cidr参数二选一。
 
@@ -124,7 +124,7 @@ class CreatePrivateSnatOption:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this CreatePrivateSnatOption.
+        r"""Sets the virsubnet_id of this CreatePrivateSnatOption.
 
         功能说明：规则匹配的子网的ID。 取值约束：与cidr参数二选一。
 
@@ -135,7 +135,7 @@ class CreatePrivateSnatOption:
 
     @property
     def description(self):
-        """Gets the description of this CreatePrivateSnatOption.
+        r"""Gets the description of this CreatePrivateSnatOption.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -146,7 +146,7 @@ class CreatePrivateSnatOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePrivateSnatOption.
+        r"""Sets the description of this CreatePrivateSnatOption.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -157,7 +157,7 @@ class CreatePrivateSnatOption:
 
     @property
     def transit_ip_ids(self):
-        """Gets the transit_ip_ids of this CreatePrivateSnatOption.
+        r"""Gets the transit_ip_ids of this CreatePrivateSnatOption.
 
         功能说明：中转IP的ID的列表。 取值约束：中转IP的ID个数不能超过1个。
 
@@ -168,7 +168,7 @@ class CreatePrivateSnatOption:
 
     @transit_ip_ids.setter
     def transit_ip_ids(self, transit_ip_ids):
-        """Sets the transit_ip_ids of this CreatePrivateSnatOption.
+        r"""Sets the transit_ip_ids of this CreatePrivateSnatOption.
 
         功能说明：中转IP的ID的列表。 取值约束：中转IP的ID个数不能超过1个。
 

@@ -25,7 +25,7 @@ class PrefixKeyInfo:
     }
 
     def __init__(self, keys=None):
-        """PrefixKeyInfo
+        r"""PrefixKeyInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PrefixKeyInfo:
 
     @property
     def keys(self):
-        """Gets the keys of this PrefixKeyInfo.
+        r"""Gets the keys of this PrefixKeyInfo.
 
         键
 
@@ -53,7 +53,7 @@ class PrefixKeyInfo:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this PrefixKeyInfo.
+        r"""Sets the keys of this PrefixKeyInfo.
 
         键
 

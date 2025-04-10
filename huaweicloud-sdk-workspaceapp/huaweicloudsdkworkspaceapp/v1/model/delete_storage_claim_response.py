@@ -24,7 +24,7 @@ class DeleteStorageClaimResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteStorageClaimResponse
+        r"""DeleteStorageClaimResponse
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class ShowAppDetailByIdResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ShowAppDetailByIdResponse
+        r"""ShowAppDetailByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAppDetailByIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowAppDetailByIdResponse.
+        r"""Gets the result of this ShowAppDetailByIdResponse.
 
         :return: The result of this ShowAppDetailByIdResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.AppDetailInfo`
@@ -60,7 +60,7 @@ class ShowAppDetailByIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowAppDetailByIdResponse.
+        r"""Sets the result of this ShowAppDetailByIdResponse.
 
         :param result: The result of this ShowAppDetailByIdResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.AppDetailInfo`
@@ -69,7 +69,7 @@ class ShowAppDetailByIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAppDetailByIdResponse.
+        r"""Gets the status of this ShowAppDetailByIdResponse.
 
         请求成功失败状态
 
@@ -80,7 +80,7 @@ class ShowAppDetailByIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAppDetailByIdResponse.
+        r"""Sets the status of this ShowAppDetailByIdResponse.
 
         请求成功失败状态
 

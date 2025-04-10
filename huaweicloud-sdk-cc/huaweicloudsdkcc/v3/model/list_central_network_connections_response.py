@@ -30,7 +30,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_network_connections=None):
-        """ListCentralNetworkConnectionsResponse
+        r"""ListCentralNetworkConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworkConnectionsResponse.
+        r"""Gets the request_id of this ListCentralNetworkConnectionsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworkConnectionsResponse.
+        r"""Sets the request_id of this ListCentralNetworkConnectionsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworkConnectionsResponse.
+        r"""Gets the page_info of this ListCentralNetworkConnectionsResponse.
 
         :return: The page_info of this ListCentralNetworkConnectionsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworkConnectionsResponse.
+        r"""Sets the page_info of this ListCentralNetworkConnectionsResponse.
 
         :param page_info: The page_info of this ListCentralNetworkConnectionsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
 
     @property
     def central_network_connections(self):
-        """Gets the central_network_connections of this ListCentralNetworkConnectionsResponse.
+        r"""Gets the central_network_connections of this ListCentralNetworkConnectionsResponse.
 
         中心网络连接列表。
 
@@ -107,7 +107,7 @@ class ListCentralNetworkConnectionsResponse(SdkResponse):
 
     @central_network_connections.setter
     def central_network_connections(self, central_network_connections):
-        """Sets the central_network_connections of this ListCentralNetworkConnectionsResponse.
+        r"""Sets the central_network_connections of this ListCentralNetworkConnectionsResponse.
 
         中心网络连接列表。
 

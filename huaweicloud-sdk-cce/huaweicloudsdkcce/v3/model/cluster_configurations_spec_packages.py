@@ -27,7 +27,7 @@ class ClusterConfigurationsSpecPackages:
     }
 
     def __init__(self, name=None, configurations=None):
-        """ClusterConfigurationsSpecPackages
+        r"""ClusterConfigurationsSpecPackages
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterConfigurationsSpecPackages:
 
     @property
     def name(self):
-        """Gets the name of this ClusterConfigurationsSpecPackages.
+        r"""Gets the name of this ClusterConfigurationsSpecPackages.
 
         组件名称
 
@@ -61,7 +61,7 @@ class ClusterConfigurationsSpecPackages:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterConfigurationsSpecPackages.
+        r"""Sets the name of this ClusterConfigurationsSpecPackages.
 
         组件名称
 
@@ -72,7 +72,7 @@ class ClusterConfigurationsSpecPackages:
 
     @property
     def configurations(self):
-        """Gets the configurations of this ClusterConfigurationsSpecPackages.
+        r"""Gets the configurations of this ClusterConfigurationsSpecPackages.
 
         组件配置项详情
 
@@ -83,7 +83,7 @@ class ClusterConfigurationsSpecPackages:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ClusterConfigurationsSpecPackages.
+        r"""Sets the configurations of this ClusterConfigurationsSpecPackages.
 
         组件配置项详情
 

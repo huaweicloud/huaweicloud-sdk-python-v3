@@ -29,7 +29,7 @@ class ShowSqlLimitJobInfoRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, job_id=None):
-        """ShowSqlLimitJobInfoRequest
+        r"""ShowSqlLimitJobInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowSqlLimitJobInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSqlLimitJobInfoRequest.
+        r"""Gets the instance_id of this ShowSqlLimitJobInfoRequest.
 
         :return: The instance_id of this ShowSqlLimitJobInfoRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowSqlLimitJobInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSqlLimitJobInfoRequest.
+        r"""Sets the instance_id of this ShowSqlLimitJobInfoRequest.
 
         :param instance_id: The instance_id of this ShowSqlLimitJobInfoRequest.
         :type instance_id: str
@@ -73,7 +73,7 @@ class ShowSqlLimitJobInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSqlLimitJobInfoRequest.
+        r"""Gets the x_language of this ShowSqlLimitJobInfoRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class ShowSqlLimitJobInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSqlLimitJobInfoRequest.
+        r"""Sets the x_language of this ShowSqlLimitJobInfoRequest.
 
         语言
 
@@ -95,7 +95,7 @@ class ShowSqlLimitJobInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSqlLimitJobInfoRequest.
+        r"""Gets the job_id of this ShowSqlLimitJobInfoRequest.
 
         SQL限流任务ID
 
@@ -106,7 +106,7 @@ class ShowSqlLimitJobInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSqlLimitJobInfoRequest.
+        r"""Sets the job_id of this ShowSqlLimitJobInfoRequest.
 
         SQL限流任务ID
 

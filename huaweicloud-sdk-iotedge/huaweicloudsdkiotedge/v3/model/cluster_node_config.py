@@ -29,7 +29,7 @@ class ClusterNodeConfig:
     }
 
     def __init__(self, master_node_vip=None, master_nodes=None, work_nodes=None):
-        """ClusterNodeConfig
+        r"""ClusterNodeConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ClusterNodeConfig:
 
     @property
     def master_node_vip(self):
-        """Gets the master_node_vip of this ClusterNodeConfig.
+        r"""Gets the master_node_vip of this ClusterNodeConfig.
 
         master虚拟ip
 
@@ -68,7 +68,7 @@ class ClusterNodeConfig:
 
     @master_node_vip.setter
     def master_node_vip(self, master_node_vip):
-        """Sets the master_node_vip of this ClusterNodeConfig.
+        r"""Sets the master_node_vip of this ClusterNodeConfig.
 
         master虚拟ip
 
@@ -79,7 +79,7 @@ class ClusterNodeConfig:
 
     @property
     def master_nodes(self):
-        """Gets the master_nodes of this ClusterNodeConfig.
+        r"""Gets the master_nodes of this ClusterNodeConfig.
 
         master节点数
 
@@ -90,7 +90,7 @@ class ClusterNodeConfig:
 
     @master_nodes.setter
     def master_nodes(self, master_nodes):
-        """Sets the master_nodes of this ClusterNodeConfig.
+        r"""Sets the master_nodes of this ClusterNodeConfig.
 
         master节点数
 
@@ -101,7 +101,7 @@ class ClusterNodeConfig:
 
     @property
     def work_nodes(self):
-        """Gets the work_nodes of this ClusterNodeConfig.
+        r"""Gets the work_nodes of this ClusterNodeConfig.
 
         work节点数
 
@@ -112,7 +112,7 @@ class ClusterNodeConfig:
 
     @work_nodes.setter
     def work_nodes(self, work_nodes):
-        """Sets the work_nodes of this ClusterNodeConfig.
+        r"""Sets the work_nodes of this ClusterNodeConfig.
 
         work节点数
 

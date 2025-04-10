@@ -43,7 +43,7 @@ class ConnectionResp:
     }
 
     def __init__(self, connection_id=None, name=None, create_time=None, db_type=None, config=None, endpoint=None, vpc=None, ssl=None, enterprise_project_id=None, description=None):
-        """ConnectionResp
+        r"""ConnectionResp
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class ConnectionResp:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ConnectionResp.
+        r"""Gets the connection_id of this ConnectionResp.
 
         连接ID。
 
@@ -112,7 +112,7 @@ class ConnectionResp:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ConnectionResp.
+        r"""Sets the connection_id of this ConnectionResp.
 
         连接ID。
 
@@ -123,7 +123,7 @@ class ConnectionResp:
 
     @property
     def name(self):
-        """Gets the name of this ConnectionResp.
+        r"""Gets the name of this ConnectionResp.
 
         连接名称。
 
@@ -134,7 +134,7 @@ class ConnectionResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionResp.
+        r"""Sets the name of this ConnectionResp.
 
         连接名称。
 
@@ -145,7 +145,7 @@ class ConnectionResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ConnectionResp.
+        r"""Gets the create_time of this ConnectionResp.
 
         连接创建时间，格式为时间戳。
 
@@ -156,7 +156,7 @@ class ConnectionResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ConnectionResp.
+        r"""Sets the create_time of this ConnectionResp.
 
         连接创建时间，格式为时间戳。
 
@@ -167,7 +167,7 @@ class ConnectionResp:
 
     @property
     def db_type(self):
-        """Gets the db_type of this ConnectionResp.
+        r"""Gets the db_type of this ConnectionResp.
 
         连接类型。
 
@@ -178,7 +178,7 @@ class ConnectionResp:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this ConnectionResp.
+        r"""Sets the db_type of this ConnectionResp.
 
         连接类型。
 
@@ -189,7 +189,7 @@ class ConnectionResp:
 
     @property
     def config(self):
-        """Gets the config of this ConnectionResp.
+        r"""Gets the config of this ConnectionResp.
 
         :return: The config of this ConnectionResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -198,7 +198,7 @@ class ConnectionResp:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ConnectionResp.
+        r"""Sets the config of this ConnectionResp.
 
         :param config: The config of this ConnectionResp.
         :type config: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -207,7 +207,7 @@ class ConnectionResp:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ConnectionResp.
+        r"""Gets the endpoint of this ConnectionResp.
 
         :return: The endpoint of this ConnectionResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -216,7 +216,7 @@ class ConnectionResp:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ConnectionResp.
+        r"""Sets the endpoint of this ConnectionResp.
 
         :param endpoint: The endpoint of this ConnectionResp.
         :type endpoint: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -225,7 +225,7 @@ class ConnectionResp:
 
     @property
     def vpc(self):
-        """Gets the vpc of this ConnectionResp.
+        r"""Gets the vpc of this ConnectionResp.
 
         :return: The vpc of this ConnectionResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -234,7 +234,7 @@ class ConnectionResp:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this ConnectionResp.
+        r"""Sets the vpc of this ConnectionResp.
 
         :param vpc: The vpc of this ConnectionResp.
         :type vpc: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -243,7 +243,7 @@ class ConnectionResp:
 
     @property
     def ssl(self):
-        """Gets the ssl of this ConnectionResp.
+        r"""Gets the ssl of this ConnectionResp.
 
         :return: The ssl of this ConnectionResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -252,7 +252,7 @@ class ConnectionResp:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this ConnectionResp.
+        r"""Sets the ssl of this ConnectionResp.
 
         :param ssl: The ssl of this ConnectionResp.
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -261,7 +261,7 @@ class ConnectionResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ConnectionResp.
+        r"""Gets the enterprise_project_id of this ConnectionResp.
 
         企业项目ID。
 
@@ -272,7 +272,7 @@ class ConnectionResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ConnectionResp.
+        r"""Sets the enterprise_project_id of this ConnectionResp.
 
         企业项目ID。
 
@@ -283,7 +283,7 @@ class ConnectionResp:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionResp.
+        r"""Gets the description of this ConnectionResp.
 
         描述。
 
@@ -294,7 +294,7 @@ class ConnectionResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionResp.
+        r"""Sets the description of this ConnectionResp.
 
         描述。
 

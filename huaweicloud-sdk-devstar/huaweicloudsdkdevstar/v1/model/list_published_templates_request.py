@@ -31,7 +31,7 @@ class ListPublishedTemplatesRequest:
     }
 
     def __init__(self, x_language=None, keyword=None, offset=None, limit=None):
-        """ListPublishedTemplatesRequest
+        r"""ListPublishedTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListPublishedTemplatesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPublishedTemplatesRequest.
+        r"""Gets the x_language of this ListPublishedTemplatesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -75,7 +75,7 @@ class ListPublishedTemplatesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPublishedTemplatesRequest.
+        r"""Sets the x_language of this ListPublishedTemplatesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -86,7 +86,7 @@ class ListPublishedTemplatesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListPublishedTemplatesRequest.
+        r"""Gets the keyword of this ListPublishedTemplatesRequest.
 
         搜索关键字，支持按名称和描述搜索，默认null。
 
@@ -97,7 +97,7 @@ class ListPublishedTemplatesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListPublishedTemplatesRequest.
+        r"""Sets the keyword of this ListPublishedTemplatesRequest.
 
         搜索关键字，支持按名称和描述搜索，默认null。
 
@@ -108,7 +108,7 @@ class ListPublishedTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublishedTemplatesRequest.
+        r"""Gets the offset of this ListPublishedTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -119,7 +119,7 @@ class ListPublishedTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublishedTemplatesRequest.
+        r"""Sets the offset of this ListPublishedTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -130,7 +130,7 @@ class ListPublishedTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublishedTemplatesRequest.
+        r"""Gets the limit of this ListPublishedTemplatesRequest.
 
         每页的模板条数，默认10。
 
@@ -141,7 +141,7 @@ class ListPublishedTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublishedTemplatesRequest.
+        r"""Sets the limit of this ListPublishedTemplatesRequest.
 
         每页的模板条数，默认10。
 

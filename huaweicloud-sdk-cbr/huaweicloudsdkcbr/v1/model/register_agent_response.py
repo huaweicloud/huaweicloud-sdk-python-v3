@@ -26,7 +26,7 @@ class RegisterAgentResponse(SdkResponse):
     }
 
     def __init__(self, agent=None):
-        """RegisterAgentResponse
+        r"""RegisterAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterAgentResponse(SdkResponse):
 
     @property
     def agent(self):
-        """Gets the agent of this RegisterAgentResponse.
+        r"""Gets the agent of this RegisterAgentResponse.
 
         :return: The agent of this RegisterAgentResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.Agent`
@@ -53,7 +53,7 @@ class RegisterAgentResponse(SdkResponse):
 
     @agent.setter
     def agent(self, agent):
-        """Sets the agent of this RegisterAgentResponse.
+        r"""Sets the agent of this RegisterAgentResponse.
 
         :param agent: The agent of this RegisterAgentResponse.
         :type agent: :class:`huaweicloudsdkcbr.v1.Agent`

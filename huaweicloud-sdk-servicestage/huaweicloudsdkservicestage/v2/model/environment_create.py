@@ -41,7 +41,7 @@ class EnvironmentCreate:
     }
 
     def __init__(self, name=None, alias=None, description=None, enterprise_project_id=None, charge_mode=None, deploy_mode=None, vpc_id=None, base_resources=None, optional_resources=None):
-        """EnvironmentCreate
+        r"""EnvironmentCreate
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class EnvironmentCreate:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentCreate.
+        r"""Gets the name of this EnvironmentCreate.
 
         环境名称。
 
@@ -106,7 +106,7 @@ class EnvironmentCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentCreate.
+        r"""Sets the name of this EnvironmentCreate.
 
         环境名称。
 
@@ -117,7 +117,7 @@ class EnvironmentCreate:
 
     @property
     def alias(self):
-        """Gets the alias of this EnvironmentCreate.
+        r"""Gets the alias of this EnvironmentCreate.
 
         环境别名。
 
@@ -128,7 +128,7 @@ class EnvironmentCreate:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this EnvironmentCreate.
+        r"""Sets the alias of this EnvironmentCreate.
 
         环境别名。
 
@@ -139,7 +139,7 @@ class EnvironmentCreate:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentCreate.
+        r"""Gets the description of this EnvironmentCreate.
 
         环境描述。
 
@@ -150,7 +150,7 @@ class EnvironmentCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentCreate.
+        r"""Sets the description of this EnvironmentCreate.
 
         环境描述。
 
@@ -161,7 +161,7 @@ class EnvironmentCreate:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EnvironmentCreate.
+        r"""Gets the enterprise_project_id of this EnvironmentCreate.
 
         企业项目ID。
 
@@ -172,7 +172,7 @@ class EnvironmentCreate:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EnvironmentCreate.
+        r"""Sets the enterprise_project_id of this EnvironmentCreate.
 
         企业项目ID。
 
@@ -183,7 +183,7 @@ class EnvironmentCreate:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this EnvironmentCreate.
+        r"""Gets the charge_mode of this EnvironmentCreate.
 
         :return: The charge_mode of this EnvironmentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
@@ -192,7 +192,7 @@ class EnvironmentCreate:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this EnvironmentCreate.
+        r"""Sets the charge_mode of this EnvironmentCreate.
 
         :param charge_mode: The charge_mode of this EnvironmentCreate.
         :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
@@ -201,7 +201,7 @@ class EnvironmentCreate:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this EnvironmentCreate.
+        r"""Gets the deploy_mode of this EnvironmentCreate.
 
         :return: The deploy_mode of this EnvironmentCreate.
         :rtype: str
@@ -210,7 +210,7 @@ class EnvironmentCreate:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this EnvironmentCreate.
+        r"""Sets the deploy_mode of this EnvironmentCreate.
 
         :param deploy_mode: The deploy_mode of this EnvironmentCreate.
         :type deploy_mode: str
@@ -219,7 +219,7 @@ class EnvironmentCreate:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EnvironmentCreate.
+        r"""Gets the vpc_id of this EnvironmentCreate.
 
         虚拟私有云ID。
 
@@ -230,7 +230,7 @@ class EnvironmentCreate:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EnvironmentCreate.
+        r"""Sets the vpc_id of this EnvironmentCreate.
 
         虚拟私有云ID。
 
@@ -241,7 +241,7 @@ class EnvironmentCreate:
 
     @property
     def base_resources(self):
-        """Gets the base_resources of this EnvironmentCreate.
+        r"""Gets the base_resources of this EnvironmentCreate.
 
         基础资源。
 
@@ -252,7 +252,7 @@ class EnvironmentCreate:
 
     @base_resources.setter
     def base_resources(self, base_resources):
-        """Sets the base_resources of this EnvironmentCreate.
+        r"""Sets the base_resources of this EnvironmentCreate.
 
         基础资源。
 
@@ -263,7 +263,7 @@ class EnvironmentCreate:
 
     @property
     def optional_resources(self):
-        """Gets the optional_resources of this EnvironmentCreate.
+        r"""Gets the optional_resources of this EnvironmentCreate.
 
         可选资源。
 
@@ -274,7 +274,7 @@ class EnvironmentCreate:
 
     @optional_resources.setter
     def optional_resources(self, optional_resources):
-        """Sets the optional_resources of this EnvironmentCreate.
+        r"""Sets the optional_resources of this EnvironmentCreate.
 
         可选资源。
 

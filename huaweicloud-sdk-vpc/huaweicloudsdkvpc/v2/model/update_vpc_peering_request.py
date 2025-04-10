@@ -27,7 +27,7 @@ class UpdateVpcPeeringRequest:
     }
 
     def __init__(self, peering_id=None, body=None):
-        """UpdateVpcPeeringRequest
+        r"""UpdateVpcPeeringRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVpcPeeringRequest:
 
     @property
     def peering_id(self):
-        """Gets the peering_id of this UpdateVpcPeeringRequest.
+        r"""Gets the peering_id of this UpdateVpcPeeringRequest.
 
         对等连接ID
 
@@ -60,7 +60,7 @@ class UpdateVpcPeeringRequest:
 
     @peering_id.setter
     def peering_id(self, peering_id):
-        """Sets the peering_id of this UpdateVpcPeeringRequest.
+        r"""Sets the peering_id of this UpdateVpcPeeringRequest.
 
         对等连接ID
 
@@ -71,7 +71,7 @@ class UpdateVpcPeeringRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpcPeeringRequest.
+        r"""Gets the body of this UpdateVpcPeeringRequest.
 
         :return: The body of this UpdateVpcPeeringRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringRequestBody`
@@ -80,7 +80,7 @@ class UpdateVpcPeeringRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpcPeeringRequest.
+        r"""Sets the body of this UpdateVpcPeeringRequest.
 
         :param body: The body of this UpdateVpcPeeringRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringRequestBody`

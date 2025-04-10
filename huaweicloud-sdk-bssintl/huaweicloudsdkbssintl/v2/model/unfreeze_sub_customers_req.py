@@ -31,7 +31,7 @@ class UnfreezeSubCustomersReq:
     }
 
     def __init__(self, customer_ids=None, reason=None, indirect_partner_id=None, unfreeze_type=None):
-        """UnfreezeSubCustomersReq
+        r"""UnfreezeSubCustomersReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UnfreezeSubCustomersReq:
 
     @property
     def customer_ids(self):
-        """Gets the customer_ids of this UnfreezeSubCustomersReq.
+        r"""Gets the customer_ids of this UnfreezeSubCustomersReq.
 
         需要解冻的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
@@ -73,7 +73,7 @@ class UnfreezeSubCustomersReq:
 
     @customer_ids.setter
     def customer_ids(self, customer_ids):
-        """Sets the customer_ids of this UnfreezeSubCustomersReq.
+        r"""Sets the customer_ids of this UnfreezeSubCustomersReq.
 
         需要解冻的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
@@ -84,7 +84,7 @@ class UnfreezeSubCustomersReq:
 
     @property
     def reason(self):
-        """Gets the reason of this UnfreezeSubCustomersReq.
+        r"""Gets the reason of this UnfreezeSubCustomersReq.
 
         解冻原因。
 
@@ -95,7 +95,7 @@ class UnfreezeSubCustomersReq:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this UnfreezeSubCustomersReq.
+        r"""Sets the reason of this UnfreezeSubCustomersReq.
 
         解冻原因。
 
@@ -106,7 +106,7 @@ class UnfreezeSubCustomersReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this UnfreezeSubCustomersReq.
+        r"""Gets the indirect_partner_id of this UnfreezeSubCustomersReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -117,7 +117,7 @@ class UnfreezeSubCustomersReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this UnfreezeSubCustomersReq.
+        r"""Sets the indirect_partner_id of this UnfreezeSubCustomersReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -128,7 +128,7 @@ class UnfreezeSubCustomersReq:
 
     @property
     def unfreeze_type(self):
-        """Gets the unfreeze_type of this UnfreezeSubCustomersReq.
+        r"""Gets the unfreeze_type of this UnfreezeSubCustomersReq.
 
         |参数名称：解冻类型| |参数的约束及描述：该参数非必填，解冻类型，支持枚举| |ACCOUNT：解冻账号，ACCOUNT_AND_RESOURCE：解冻账号与资源|
 
@@ -139,7 +139,7 @@ class UnfreezeSubCustomersReq:
 
     @unfreeze_type.setter
     def unfreeze_type(self, unfreeze_type):
-        """Sets the unfreeze_type of this UnfreezeSubCustomersReq.
+        r"""Sets the unfreeze_type of this UnfreezeSubCustomersReq.
 
         |参数名称：解冻类型| |参数的约束及描述：该参数非必填，解冻类型，支持枚举| |ACCOUNT：解冻账号，ACCOUNT_AND_RESOURCE：解冻账号与资源|
 

@@ -79,7 +79,7 @@ class AppConnectionInfo:
     }
 
     def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, brokering_time=None, failed_code=None, connection_failure_reason=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, tenant_id=None, virtual_ip=None, public_ip=None, transaction_id=None, end_time=None, aps_instance_id=None, aps_instance_name=None, aps_host_id=None, primary_server_group_id=None, secondary_server_group_id=None):
-        """AppConnectionInfo
+        r"""AppConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class AppConnectionInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppConnectionInfo.
+        r"""Gets the id of this AppConnectionInfo.
 
         应用连接唯一标识ID。
 
@@ -243,7 +243,7 @@ class AppConnectionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppConnectionInfo.
+        r"""Sets the id of this AppConnectionInfo.
 
         应用连接唯一标识ID。
 
@@ -254,7 +254,7 @@ class AppConnectionInfo:
 
     @property
     def sid(self):
-        """Gets the sid of this AppConnectionInfo.
+        r"""Gets the sid of this AppConnectionInfo.
 
         应用服务器sid。
 
@@ -265,7 +265,7 @@ class AppConnectionInfo:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this AppConnectionInfo.
+        r"""Sets the sid of this AppConnectionInfo.
 
         应用服务器sid。
 
@@ -276,7 +276,7 @@ class AppConnectionInfo:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this AppConnectionInfo.
+        r"""Gets the machine_name of this AppConnectionInfo.
 
         应用服务器名称。
 
@@ -287,7 +287,7 @@ class AppConnectionInfo:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this AppConnectionInfo.
+        r"""Sets the machine_name of this AppConnectionInfo.
 
         应用服务器名称。
 
@@ -298,7 +298,7 @@ class AppConnectionInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AppConnectionInfo.
+        r"""Gets the user_name of this AppConnectionInfo.
 
         登录用户。
 
@@ -309,7 +309,7 @@ class AppConnectionInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AppConnectionInfo.
+        r"""Sets the user_name of this AppConnectionInfo.
 
         登录用户。
 
@@ -320,7 +320,7 @@ class AppConnectionInfo:
 
     @property
     def app_group_name(self):
-        """Gets the app_group_name of this AppConnectionInfo.
+        r"""Gets the app_group_name of this AppConnectionInfo.
 
         应用组名称。
 
@@ -331,7 +331,7 @@ class AppConnectionInfo:
 
     @app_group_name.setter
     def app_group_name(self, app_group_name):
-        """Sets the app_group_name of this AppConnectionInfo.
+        r"""Sets the app_group_name of this AppConnectionInfo.
 
         应用组名称。
 
@@ -342,7 +342,7 @@ class AppConnectionInfo:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this AppConnectionInfo.
+        r"""Gets the app_group_id of this AppConnectionInfo.
 
         应用组ID。
 
@@ -353,7 +353,7 @@ class AppConnectionInfo:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this AppConnectionInfo.
+        r"""Sets the app_group_id of this AppConnectionInfo.
 
         应用组ID。
 
@@ -364,7 +364,7 @@ class AppConnectionInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppConnectionInfo.
+        r"""Gets the app_name of this AppConnectionInfo.
 
         应用名称。
 
@@ -375,7 +375,7 @@ class AppConnectionInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppConnectionInfo.
+        r"""Sets the app_name of this AppConnectionInfo.
 
         应用名称。
 
@@ -386,7 +386,7 @@ class AppConnectionInfo:
 
     @property
     def brokering_time(self):
-        """Gets the brokering_time of this AppConnectionInfo.
+        r"""Gets the brokering_time of this AppConnectionInfo.
 
         登录应用时间。
 
@@ -397,7 +397,7 @@ class AppConnectionInfo:
 
     @brokering_time.setter
     def brokering_time(self, brokering_time):
-        """Sets the brokering_time of this AppConnectionInfo.
+        r"""Sets the brokering_time of this AppConnectionInfo.
 
         登录应用时间。
 
@@ -408,7 +408,7 @@ class AppConnectionInfo:
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this AppConnectionInfo.
+        r"""Gets the failed_code of this AppConnectionInfo.
 
         连接失败状态码。
 
@@ -419,7 +419,7 @@ class AppConnectionInfo:
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this AppConnectionInfo.
+        r"""Sets the failed_code of this AppConnectionInfo.
 
         连接失败状态码。
 
@@ -430,7 +430,7 @@ class AppConnectionInfo:
 
     @property
     def connection_failure_reason(self):
-        """Gets the connection_failure_reason of this AppConnectionInfo.
+        r"""Gets the connection_failure_reason of this AppConnectionInfo.
 
         连接失败原因。
 
@@ -441,7 +441,7 @@ class AppConnectionInfo:
 
     @connection_failure_reason.setter
     def connection_failure_reason(self, connection_failure_reason):
-        """Sets the connection_failure_reason of this AppConnectionInfo.
+        r"""Sets the connection_failure_reason of this AppConnectionInfo.
 
         连接失败原因。
 
@@ -452,7 +452,7 @@ class AppConnectionInfo:
 
     @property
     def client_mac(self):
-        """Gets the client_mac of this AppConnectionInfo.
+        r"""Gets the client_mac of this AppConnectionInfo.
 
         客户端Mac。
 
@@ -463,7 +463,7 @@ class AppConnectionInfo:
 
     @client_mac.setter
     def client_mac(self, client_mac):
-        """Sets the client_mac of this AppConnectionInfo.
+        r"""Sets the client_mac of this AppConnectionInfo.
 
         客户端Mac。
 
@@ -474,7 +474,7 @@ class AppConnectionInfo:
 
     @property
     def client_name(self):
-        """Gets the client_name of this AppConnectionInfo.
+        r"""Gets the client_name of this AppConnectionInfo.
 
         客户端名称。
 
@@ -485,7 +485,7 @@ class AppConnectionInfo:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this AppConnectionInfo.
+        r"""Sets the client_name of this AppConnectionInfo.
 
         客户端名称。
 
@@ -496,7 +496,7 @@ class AppConnectionInfo:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this AppConnectionInfo.
+        r"""Gets the client_ip of this AppConnectionInfo.
 
         客户端ip。
 
@@ -507,7 +507,7 @@ class AppConnectionInfo:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this AppConnectionInfo.
+        r"""Sets the client_ip of this AppConnectionInfo.
 
         客户端ip。
 
@@ -518,7 +518,7 @@ class AppConnectionInfo:
 
     @property
     def client_version(self):
-        """Gets the client_version of this AppConnectionInfo.
+        r"""Gets the client_version of this AppConnectionInfo.
 
         客户端版本。
 
@@ -529,7 +529,7 @@ class AppConnectionInfo:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this AppConnectionInfo.
+        r"""Sets the client_version of this AppConnectionInfo.
 
         客户端版本。
 
@@ -540,7 +540,7 @@ class AppConnectionInfo:
 
     @property
     def client_type(self):
-        """Gets the client_type of this AppConnectionInfo.
+        r"""Gets the client_type of this AppConnectionInfo.
 
         客户端操作系统类型。
 
@@ -551,7 +551,7 @@ class AppConnectionInfo:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this AppConnectionInfo.
+        r"""Sets the client_type of this AppConnectionInfo.
 
         客户端操作系统类型。
 
@@ -562,7 +562,7 @@ class AppConnectionInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this AppConnectionInfo.
+        r"""Gets the agent_version of this AppConnectionInfo.
 
         aps hda版本。
 
@@ -573,7 +573,7 @@ class AppConnectionInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this AppConnectionInfo.
+        r"""Sets the agent_version of this AppConnectionInfo.
 
         aps hda版本。
 
@@ -584,7 +584,7 @@ class AppConnectionInfo:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this AppConnectionInfo.
+        r"""Gets the vm_ip of this AppConnectionInfo.
 
         应用服务器ip。
 
@@ -595,7 +595,7 @@ class AppConnectionInfo:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this AppConnectionInfo.
+        r"""Sets the vm_ip of this AppConnectionInfo.
 
         应用服务器ip。
 
@@ -606,7 +606,7 @@ class AppConnectionInfo:
 
     @property
     def wi_ip(self):
-        """Gets the wi_ip of this AppConnectionInfo.
+        r"""Gets the wi_ip of this AppConnectionInfo.
 
         连接IP。
 
@@ -617,7 +617,7 @@ class AppConnectionInfo:
 
     @wi_ip.setter
     def wi_ip(self, wi_ip):
-        """Sets the wi_ip of this AppConnectionInfo.
+        r"""Sets the wi_ip of this AppConnectionInfo.
 
         连接IP。
 
@@ -628,7 +628,7 @@ class AppConnectionInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this AppConnectionInfo.
+        r"""Gets the tenant_id of this AppConnectionInfo.
 
         租户id。
 
@@ -639,7 +639,7 @@ class AppConnectionInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this AppConnectionInfo.
+        r"""Sets the tenant_id of this AppConnectionInfo.
 
         租户id。
 
@@ -650,7 +650,7 @@ class AppConnectionInfo:
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this AppConnectionInfo.
+        r"""Gets the virtual_ip of this AppConnectionInfo.
 
         会话虚拟ip。
 
@@ -661,7 +661,7 @@ class AppConnectionInfo:
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this AppConnectionInfo.
+        r"""Sets the virtual_ip of this AppConnectionInfo.
 
         会话虚拟ip。
 
@@ -672,7 +672,7 @@ class AppConnectionInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this AppConnectionInfo.
+        r"""Gets the public_ip of this AppConnectionInfo.
 
         客户端出口ip。
 
@@ -683,7 +683,7 @@ class AppConnectionInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this AppConnectionInfo.
+        r"""Sets the public_ip of this AppConnectionInfo.
 
         客户端出口ip。
 
@@ -694,7 +694,7 @@ class AppConnectionInfo:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this AppConnectionInfo.
+        r"""Gets the transaction_id of this AppConnectionInfo.
 
         事务id。
 
@@ -705,7 +705,7 @@ class AppConnectionInfo:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this AppConnectionInfo.
+        r"""Sets the transaction_id of this AppConnectionInfo.
 
         事务id。
 
@@ -716,7 +716,7 @@ class AppConnectionInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AppConnectionInfo.
+        r"""Gets the end_time of this AppConnectionInfo.
 
         登录应用结束时间。
 
@@ -727,7 +727,7 @@ class AppConnectionInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AppConnectionInfo.
+        r"""Sets the end_time of this AppConnectionInfo.
 
         登录应用结束时间。
 
@@ -738,7 +738,7 @@ class AppConnectionInfo:
 
     @property
     def aps_instance_id(self):
-        """Gets the aps_instance_id of this AppConnectionInfo.
+        r"""Gets the aps_instance_id of this AppConnectionInfo.
 
         aps服务器ID。
 
@@ -749,7 +749,7 @@ class AppConnectionInfo:
 
     @aps_instance_id.setter
     def aps_instance_id(self, aps_instance_id):
-        """Sets the aps_instance_id of this AppConnectionInfo.
+        r"""Sets the aps_instance_id of this AppConnectionInfo.
 
         aps服务器ID。
 
@@ -760,7 +760,7 @@ class AppConnectionInfo:
 
     @property
     def aps_instance_name(self):
-        """Gets the aps_instance_name of this AppConnectionInfo.
+        r"""Gets the aps_instance_name of this AppConnectionInfo.
 
         aps服务器名称。
 
@@ -771,7 +771,7 @@ class AppConnectionInfo:
 
     @aps_instance_name.setter
     def aps_instance_name(self, aps_instance_name):
-        """Sets the aps_instance_name of this AppConnectionInfo.
+        r"""Sets the aps_instance_name of this AppConnectionInfo.
 
         aps服务器名称。
 
@@ -782,7 +782,7 @@ class AppConnectionInfo:
 
     @property
     def aps_host_id(self):
-        """Gets the aps_host_id of this AppConnectionInfo.
+        r"""Gets the aps_host_id of this AppConnectionInfo.
 
         wdh专属主机ID。
 
@@ -793,7 +793,7 @@ class AppConnectionInfo:
 
     @aps_host_id.setter
     def aps_host_id(self, aps_host_id):
-        """Sets the aps_host_id of this AppConnectionInfo.
+        r"""Sets the aps_host_id of this AppConnectionInfo.
 
         wdh专属主机ID。
 
@@ -804,7 +804,7 @@ class AppConnectionInfo:
 
     @property
     def primary_server_group_id(self):
-        """Gets the primary_server_group_id of this AppConnectionInfo.
+        r"""Gets the primary_server_group_id of this AppConnectionInfo.
 
         主服务器组ID。
 
@@ -815,7 +815,7 @@ class AppConnectionInfo:
 
     @primary_server_group_id.setter
     def primary_server_group_id(self, primary_server_group_id):
-        """Sets the primary_server_group_id of this AppConnectionInfo.
+        r"""Sets the primary_server_group_id of this AppConnectionInfo.
 
         主服务器组ID。
 
@@ -826,7 +826,7 @@ class AppConnectionInfo:
 
     @property
     def secondary_server_group_id(self):
-        """Gets the secondary_server_group_id of this AppConnectionInfo.
+        r"""Gets the secondary_server_group_id of this AppConnectionInfo.
 
         主服务器组ID。
 
@@ -837,7 +837,7 @@ class AppConnectionInfo:
 
     @secondary_server_group_id.setter
     def secondary_server_group_id(self, secondary_server_group_id):
-        """Sets the secondary_server_group_id of this AppConnectionInfo.
+        r"""Sets the secondary_server_group_id of this AppConnectionInfo.
 
         主服务器组ID。
 

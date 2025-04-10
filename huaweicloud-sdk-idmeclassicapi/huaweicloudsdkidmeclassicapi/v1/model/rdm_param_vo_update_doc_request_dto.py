@@ -27,7 +27,7 @@ class RDMParamVOUpdateDocRequestDto:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOUpdateDocRequestDto
+        r"""RDMParamVOUpdateDocRequestDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RDMParamVOUpdateDocRequestDto:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOUpdateDocRequestDto.
+        r"""Gets the application_id of this RDMParamVOUpdateDocRequestDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -60,7 +60,7 @@ class RDMParamVOUpdateDocRequestDto:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOUpdateDocRequestDto.
+        r"""Sets the application_id of this RDMParamVOUpdateDocRequestDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -71,7 +71,7 @@ class RDMParamVOUpdateDocRequestDto:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOUpdateDocRequestDto.
+        r"""Gets the params of this RDMParamVOUpdateDocRequestDto.
 
         :return: The params of this RDMParamVOUpdateDocRequestDto.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateDocRequestDto`
@@ -80,7 +80,7 @@ class RDMParamVOUpdateDocRequestDto:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOUpdateDocRequestDto.
+        r"""Sets the params of this RDMParamVOUpdateDocRequestDto.
 
         :param params: The params of this RDMParamVOUpdateDocRequestDto.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.UpdateDocRequestDto`

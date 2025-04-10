@@ -27,7 +27,7 @@ class ShowWorkItemWrokflowConfigRequest:
     }
 
     def __init__(self, project_id=None, board_id=None):
-        """ShowWorkItemWrokflowConfigRequest
+        r"""ShowWorkItemWrokflowConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowWorkItemWrokflowConfigRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowWorkItemWrokflowConfigRequest.
+        r"""Gets the project_id of this ShowWorkItemWrokflowConfigRequest.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class ShowWorkItemWrokflowConfigRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowWorkItemWrokflowConfigRequest.
+        r"""Sets the project_id of this ShowWorkItemWrokflowConfigRequest.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class ShowWorkItemWrokflowConfigRequest:
 
     @property
     def board_id(self):
-        """Gets the board_id of this ShowWorkItemWrokflowConfigRequest.
+        r"""Gets the board_id of this ShowWorkItemWrokflowConfigRequest.
 
         看板id
 
@@ -81,7 +81,7 @@ class ShowWorkItemWrokflowConfigRequest:
 
     @board_id.setter
     def board_id(self, board_id):
-        """Sets the board_id of this ShowWorkItemWrokflowConfigRequest.
+        r"""Sets the board_id of this ShowWorkItemWrokflowConfigRequest.
 
         看板id
 

@@ -28,7 +28,7 @@ class ListFailedTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListFailedTaskResponse
+        r"""ListFailedTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFailedTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFailedTaskResponse.
+        r"""Gets the total of this ListFailedTaskResponse.
 
         失败任务总数。
 
@@ -62,7 +62,7 @@ class ListFailedTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFailedTaskResponse.
+        r"""Sets the total of this ListFailedTaskResponse.
 
         失败任务总数。
 
@@ -73,7 +73,7 @@ class ListFailedTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListFailedTaskResponse.
+        r"""Gets the tasks of this ListFailedTaskResponse.
 
         失败的任务列表
 
@@ -84,7 +84,7 @@ class ListFailedTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListFailedTaskResponse.
+        r"""Sets the tasks of this ListFailedTaskResponse.
 
         失败的任务列表
 

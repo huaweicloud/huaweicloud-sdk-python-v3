@@ -29,7 +29,7 @@ class CompletionUsage:
     }
 
     def __init__(self, completion_tokens=None, prompt_tokens=None, total_tokens=None):
-        """CompletionUsage
+        r"""CompletionUsage
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CompletionUsage:
 
     @property
     def completion_tokens(self):
-        """Gets the completion_tokens of this CompletionUsage.
+        r"""Gets the completion_tokens of this CompletionUsage.
 
         表示模型生成的答案中包含的tokens的数量。
 
@@ -65,7 +65,7 @@ class CompletionUsage:
 
     @completion_tokens.setter
     def completion_tokens(self, completion_tokens):
-        """Sets the completion_tokens of this CompletionUsage.
+        r"""Sets the completion_tokens of this CompletionUsage.
 
         表示模型生成的答案中包含的tokens的数量。
 
@@ -76,7 +76,7 @@ class CompletionUsage:
 
     @property
     def prompt_tokens(self):
-        """Gets the prompt_tokens of this CompletionUsage.
+        r"""Gets the prompt_tokens of this CompletionUsage.
 
         表示生成结果时使用的提示文本的tokens的数量。
 
@@ -87,7 +87,7 @@ class CompletionUsage:
 
     @prompt_tokens.setter
     def prompt_tokens(self, prompt_tokens):
-        """Sets the prompt_tokens of this CompletionUsage.
+        r"""Sets the prompt_tokens of this CompletionUsage.
 
         表示生成结果时使用的提示文本的tokens的数量。
 
@@ -98,7 +98,7 @@ class CompletionUsage:
 
     @property
     def total_tokens(self):
-        """Gets the total_tokens of this CompletionUsage.
+        r"""Gets the total_tokens of this CompletionUsage.
 
         对话过程中使用的tokens总数。
 
@@ -109,7 +109,7 @@ class CompletionUsage:
 
     @total_tokens.setter
     def total_tokens(self, total_tokens):
-        """Sets the total_tokens of this CompletionUsage.
+        r"""Sets the total_tokens of this CompletionUsage.
 
         对话过程中使用的tokens总数。
 

@@ -29,7 +29,7 @@ class CustomAttributesRule:
     }
 
     def __init__(self, rule_id=None, value=None, rule_config_list=None):
-        """CustomAttributesRule
+        r"""CustomAttributesRule
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CustomAttributesRule:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this CustomAttributesRule.
+        r"""Gets the rule_id of this CustomAttributesRule.
 
         规则ID
 
@@ -68,7 +68,7 @@ class CustomAttributesRule:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this CustomAttributesRule.
+        r"""Sets the rule_id of this CustomAttributesRule.
 
         规则ID
 
@@ -79,7 +79,7 @@ class CustomAttributesRule:
 
     @property
     def value(self):
-        """Gets the value of this CustomAttributesRule.
+        r"""Gets the value of this CustomAttributesRule.
 
         attribute的问题级别，0致命，1严重，2一般，3提示
 
@@ -90,7 +90,7 @@ class CustomAttributesRule:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomAttributesRule.
+        r"""Sets the value of this CustomAttributesRule.
 
         attribute的问题级别，0致命，1严重，2一般，3提示
 
@@ -101,7 +101,7 @@ class CustomAttributesRule:
 
     @property
     def rule_config_list(self):
-        """Gets the rule_config_list of this CustomAttributesRule.
+        r"""Gets the rule_config_list of this CustomAttributesRule.
 
         规则阈值详细
 
@@ -112,7 +112,7 @@ class CustomAttributesRule:
 
     @rule_config_list.setter
     def rule_config_list(self, rule_config_list):
-        """Sets the rule_config_list of this CustomAttributesRule.
+        r"""Sets the rule_config_list of this CustomAttributesRule.
 
         规则阈值详细
 

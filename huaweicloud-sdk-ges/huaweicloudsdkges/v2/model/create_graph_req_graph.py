@@ -69,7 +69,7 @@ class CreateGraphReqGraph:
     }
 
     def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None, capacity_ratio=None, is_dynamic_graph=None, sort_key_type=None):
-        """CreateGraphReqGraph
+        r"""CreateGraphReqGraph
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class CreateGraphReqGraph:
 
     @property
     def name(self):
-        """Gets the name of this CreateGraphReqGraph.
+        r"""Gets the name of this CreateGraphReqGraph.
 
         图名称（输入长度在4位到50位之间，必须以字母开头，可以包含字母、数字或者下划线，不能包含其他的特殊字符）。
 
@@ -201,7 +201,7 @@ class CreateGraphReqGraph:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGraphReqGraph.
+        r"""Sets the name of this CreateGraphReqGraph.
 
         图名称（输入长度在4位到50位之间，必须以字母开头，可以包含字母、数字或者下划线，不能包含其他的特殊字符）。
 
@@ -212,7 +212,7 @@ class CreateGraphReqGraph:
 
     @property
     def graph_size_type_index(self):
-        """Gets the graph_size_type_index of this CreateGraphReqGraph.
+        r"""Gets the graph_size_type_index of this CreateGraphReqGraph.
 
         图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边 - 401：十亿增强边
 
@@ -223,7 +223,7 @@ class CreateGraphReqGraph:
 
     @graph_size_type_index.setter
     def graph_size_type_index(self, graph_size_type_index):
-        """Sets the graph_size_type_index of this CreateGraphReqGraph.
+        r"""Sets the graph_size_type_index of this CreateGraphReqGraph.
 
         图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边 - 401：十亿增强边
 
@@ -234,7 +234,7 @@ class CreateGraphReqGraph:
 
     @property
     def arch(self):
-        """Gets the arch of this CreateGraphReqGraph.
+        r"""Gets the arch of this CreateGraphReqGraph.
 
         图实例CPU架构类型，取值为x86_64和aarch64。默认取x86_64。  - x86_64：X64 64位架构。 - aarch64：ARM 64位架构。
 
@@ -245,7 +245,7 @@ class CreateGraphReqGraph:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this CreateGraphReqGraph.
+        r"""Sets the arch of this CreateGraphReqGraph.
 
         图实例CPU架构类型，取值为x86_64和aarch64。默认取x86_64。  - x86_64：X64 64位架构。 - aarch64：ARM 64位架构。
 
@@ -256,7 +256,7 @@ class CreateGraphReqGraph:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateGraphReqGraph.
+        r"""Gets the vpc_id of this CreateGraphReqGraph.
 
         虚拟私有云ID。
 
@@ -267,7 +267,7 @@ class CreateGraphReqGraph:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateGraphReqGraph.
+        r"""Sets the vpc_id of this CreateGraphReqGraph.
 
         虚拟私有云ID。
 
@@ -278,7 +278,7 @@ class CreateGraphReqGraph:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateGraphReqGraph.
+        r"""Gets the subnet_id of this CreateGraphReqGraph.
 
         指定虚拟私有云下的子网ID。
 
@@ -289,7 +289,7 @@ class CreateGraphReqGraph:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateGraphReqGraph.
+        r"""Sets the subnet_id of this CreateGraphReqGraph.
 
         指定虚拟私有云下的子网ID。
 
@@ -300,7 +300,7 @@ class CreateGraphReqGraph:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateGraphReqGraph.
+        r"""Gets the security_group_id of this CreateGraphReqGraph.
 
         安全组ID。
 
@@ -311,7 +311,7 @@ class CreateGraphReqGraph:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateGraphReqGraph.
+        r"""Sets the security_group_id of this CreateGraphReqGraph.
 
         安全组ID。
 
@@ -322,7 +322,7 @@ class CreateGraphReqGraph:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this CreateGraphReqGraph.
+        r"""Gets the public_ip of this CreateGraphReqGraph.
 
         :return: The public_ip of this CreateGraphReqGraph.
         :rtype: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphPublicIp`
@@ -331,7 +331,7 @@ class CreateGraphReqGraph:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this CreateGraphReqGraph.
+        r"""Sets the public_ip of this CreateGraphReqGraph.
 
         :param public_ip: The public_ip of this CreateGraphReqGraph.
         :type public_ip: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphPublicIp`
@@ -340,7 +340,7 @@ class CreateGraphReqGraph:
 
     @property
     def enable_multi_az(self):
-        """Gets the enable_multi_az of this CreateGraphReqGraph.
+        r"""Gets the enable_multi_az of this CreateGraphReqGraph.
 
         创建的图是否支持跨可用区（AZ），默认值是false，如果设置为true，系统将会把图中的ECS建在两个可用区中。  如果创建图时，不加该参数，则会将图中的ECS都建在一个可用区中。
 
@@ -351,7 +351,7 @@ class CreateGraphReqGraph:
 
     @enable_multi_az.setter
     def enable_multi_az(self, enable_multi_az):
-        """Sets the enable_multi_az of this CreateGraphReqGraph.
+        r"""Sets the enable_multi_az of this CreateGraphReqGraph.
 
         创建的图是否支持跨可用区（AZ），默认值是false，如果设置为true，系统将会把图中的ECS建在两个可用区中。  如果创建图时，不加该参数，则会将图中的ECS都建在一个可用区中。
 
@@ -362,7 +362,7 @@ class CreateGraphReqGraph:
 
     @property
     def encryption(self):
-        """Gets the encryption of this CreateGraphReqGraph.
+        r"""Gets the encryption of this CreateGraphReqGraph.
 
         :return: The encryption of this CreateGraphReqGraph.
         :rtype: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphEncryption`
@@ -371,7 +371,7 @@ class CreateGraphReqGraph:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this CreateGraphReqGraph.
+        r"""Sets the encryption of this CreateGraphReqGraph.
 
         :param encryption: The encryption of this CreateGraphReqGraph.
         :type encryption: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphEncryption`
@@ -380,7 +380,7 @@ class CreateGraphReqGraph:
 
     @property
     def lts_operation_trace(self):
-        """Gets the lts_operation_trace of this CreateGraphReqGraph.
+        r"""Gets the lts_operation_trace of this CreateGraphReqGraph.
 
         :return: The lts_operation_trace of this CreateGraphReqGraph.
         :rtype: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphLtsOperationTrace`
@@ -389,7 +389,7 @@ class CreateGraphReqGraph:
 
     @lts_operation_trace.setter
     def lts_operation_trace(self, lts_operation_trace):
-        """Sets the lts_operation_trace of this CreateGraphReqGraph.
+        r"""Sets the lts_operation_trace of this CreateGraphReqGraph.
 
         :param lts_operation_trace: The lts_operation_trace of this CreateGraphReqGraph.
         :type lts_operation_trace: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphLtsOperationTrace`
@@ -398,7 +398,7 @@ class CreateGraphReqGraph:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CreateGraphReqGraph.
+        r"""Gets the sys_tags of this CreateGraphReqGraph.
 
         企业项目信息，如果未指定则不开启，默认不开启。
 
@@ -409,7 +409,7 @@ class CreateGraphReqGraph:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CreateGraphReqGraph.
+        r"""Sets the sys_tags of this CreateGraphReqGraph.
 
         企业项目信息，如果未指定则不开启，默认不开启。
 
@@ -420,7 +420,7 @@ class CreateGraphReqGraph:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateGraphReqGraph.
+        r"""Gets the tags of this CreateGraphReqGraph.
 
         支持标签TMS，做费用归集，默认不开启。
 
@@ -431,7 +431,7 @@ class CreateGraphReqGraph:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateGraphReqGraph.
+        r"""Sets the tags of this CreateGraphReqGraph.
 
         支持标签TMS，做费用归集，默认不开启。
 
@@ -442,7 +442,7 @@ class CreateGraphReqGraph:
 
     @property
     def enable_rbac(self):
-        """Gets the enable_rbac of this CreateGraphReqGraph.
+        r"""Gets the enable_rbac of this CreateGraphReqGraph.
 
         创建的图是否启用细粒度权限控制，默认不启用，值为false。如果设置为true，创建的图所有用户都没有权限，需要调用业务面细粒度权限控制API进行授权操作才可以访问图。
 
@@ -453,7 +453,7 @@ class CreateGraphReqGraph:
 
     @enable_rbac.setter
     def enable_rbac(self, enable_rbac):
-        """Sets the enable_rbac of this CreateGraphReqGraph.
+        r"""Sets the enable_rbac of this CreateGraphReqGraph.
 
         创建的图是否启用细粒度权限控制，默认不启用，值为false。如果设置为true，创建的图所有用户都没有权限，需要调用业务面细粒度权限控制API进行授权操作才可以访问图。
 
@@ -464,7 +464,7 @@ class CreateGraphReqGraph:
 
     @property
     def enable_full_text_index(self):
-        """Gets the enable_full_text_index of this CreateGraphReqGraph.
+        r"""Gets the enable_full_text_index of this CreateGraphReqGraph.
 
         创建的图是否开启全文索引控制，默认不启用，值为false。 如果设置为true，十亿增强版-规格版图支持全文索引，创建图时会创建云搜索服务集群。 > 开启全文索引功能。如果CSS服务已经部署，图实例会自动创建CSS集群，图创建时间较长。如果CSS服务没有部署则图创建失败。
 
@@ -475,7 +475,7 @@ class CreateGraphReqGraph:
 
     @enable_full_text_index.setter
     def enable_full_text_index(self, enable_full_text_index):
-        """Sets the enable_full_text_index of this CreateGraphReqGraph.
+        r"""Sets the enable_full_text_index of this CreateGraphReqGraph.
 
         创建的图是否开启全文索引控制，默认不启用，值为false。 如果设置为true，十亿增强版-规格版图支持全文索引，创建图时会创建云搜索服务集群。 > 开启全文索引功能。如果CSS服务已经部署，图实例会自动创建CSS集群，图创建时间较长。如果CSS服务没有部署则图创建失败。
 
@@ -486,7 +486,7 @@ class CreateGraphReqGraph:
 
     @property
     def enable_hyg(self):
-        """Gets the enable_hyg of this CreateGraphReqGraph.
+        r"""Gets the enable_hyg of this CreateGraphReqGraph.
 
         该参数只对千亿规格图生效。
 
@@ -497,7 +497,7 @@ class CreateGraphReqGraph:
 
     @enable_hyg.setter
     def enable_hyg(self, enable_hyg):
-        """Sets the enable_hyg of this CreateGraphReqGraph.
+        r"""Sets the enable_hyg of this CreateGraphReqGraph.
 
         该参数只对千亿规格图生效。
 
@@ -508,7 +508,7 @@ class CreateGraphReqGraph:
 
     @property
     def crypt_algorithm(self):
-        """Gets the crypt_algorithm of this CreateGraphReqGraph.
+        r"""Gets the crypt_algorithm of this CreateGraphReqGraph.
 
         图实例加密算法，取值为：  - generalCipher：国密算法 - SMcompatible：商密算法（兼容国际）
 
@@ -519,7 +519,7 @@ class CreateGraphReqGraph:
 
     @crypt_algorithm.setter
     def crypt_algorithm(self, crypt_algorithm):
-        """Sets the crypt_algorithm of this CreateGraphReqGraph.
+        r"""Sets the crypt_algorithm of this CreateGraphReqGraph.
 
         图实例加密算法，取值为：  - generalCipher：国密算法 - SMcompatible：商密算法（兼容国际）
 
@@ -530,7 +530,7 @@ class CreateGraphReqGraph:
 
     @property
     def enable_https(self):
-        """Gets the enable_https of this CreateGraphReqGraph.
+        r"""Gets the enable_https of this CreateGraphReqGraph.
 
         是否开启安全模式，开启安全模式会对性能有较大影响
 
@@ -541,7 +541,7 @@ class CreateGraphReqGraph:
 
     @enable_https.setter
     def enable_https(self, enable_https):
-        """Sets the enable_https of this CreateGraphReqGraph.
+        r"""Sets the enable_https of this CreateGraphReqGraph.
 
         是否开启安全模式，开启安全模式会对性能有较大影响
 
@@ -552,7 +552,7 @@ class CreateGraphReqGraph:
 
     @property
     def product_type(self):
-        """Gets the product_type of this CreateGraphReqGraph.
+        r"""Gets the product_type of this CreateGraphReqGraph.
 
         图产品类型，取值为InMemory和Persistence，默认为InMemory，当graph_size_type_index取值为\"6\"时，默认为Persistence。  - InMemory：内存版 - Persistence：持久化版
 
@@ -563,7 +563,7 @@ class CreateGraphReqGraph:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this CreateGraphReqGraph.
+        r"""Sets the product_type of this CreateGraphReqGraph.
 
         图产品类型，取值为InMemory和Persistence，默认为InMemory，当graph_size_type_index取值为\"6\"时，默认为Persistence。  - InMemory：内存版 - Persistence：持久化版
 
@@ -574,7 +574,7 @@ class CreateGraphReqGraph:
 
     @property
     def vertex_id_type(self):
-        """Gets the vertex_id_type of this CreateGraphReqGraph.
+        r"""Gets the vertex_id_type of this CreateGraphReqGraph.
 
         :return: The vertex_id_type of this CreateGraphReqGraph.
         :rtype: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphVertexIdType`
@@ -583,7 +583,7 @@ class CreateGraphReqGraph:
 
     @vertex_id_type.setter
     def vertex_id_type(self, vertex_id_type):
-        """Sets the vertex_id_type of this CreateGraphReqGraph.
+        r"""Sets the vertex_id_type of this CreateGraphReqGraph.
 
         :param vertex_id_type: The vertex_id_type of this CreateGraphReqGraph.
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphVertexIdType`
@@ -592,7 +592,7 @@ class CreateGraphReqGraph:
 
     @property
     def enable_multi_label(self):
-        """Gets the enable_multi_label of this CreateGraphReqGraph.
+        r"""Gets the enable_multi_label of this CreateGraphReqGraph.
 
         是否启用多标签
 
@@ -603,7 +603,7 @@ class CreateGraphReqGraph:
 
     @enable_multi_label.setter
     def enable_multi_label(self, enable_multi_label):
-        """Sets the enable_multi_label of this CreateGraphReqGraph.
+        r"""Sets the enable_multi_label of this CreateGraphReqGraph.
 
         是否启用多标签
 
@@ -614,7 +614,7 @@ class CreateGraphReqGraph:
 
     @property
     def capacity_ratio(self):
-        """Gets the capacity_ratio of this CreateGraphReqGraph.
+        r"""Gets the capacity_ratio of this CreateGraphReqGraph.
 
         图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
 
@@ -625,7 +625,7 @@ class CreateGraphReqGraph:
 
     @capacity_ratio.setter
     def capacity_ratio(self, capacity_ratio):
-        """Sets the capacity_ratio of this CreateGraphReqGraph.
+        r"""Sets the capacity_ratio of this CreateGraphReqGraph.
 
         图的容量倍率。该参数只有持久化版百亿规格图支持，且从2.3.18版本后开始支持。
 
@@ -636,7 +636,7 @@ class CreateGraphReqGraph:
 
     @property
     def is_dynamic_graph(self):
-        """Gets the is_dynamic_graph of this CreateGraphReqGraph.
+        r"""Gets the is_dynamic_graph of this CreateGraphReqGraph.
 
         是否为动态图
 
@@ -647,7 +647,7 @@ class CreateGraphReqGraph:
 
     @is_dynamic_graph.setter
     def is_dynamic_graph(self, is_dynamic_graph):
-        """Sets the is_dynamic_graph of this CreateGraphReqGraph.
+        r"""Sets the is_dynamic_graph of this CreateGraphReqGraph.
 
         是否为动态图
 
@@ -658,7 +658,7 @@ class CreateGraphReqGraph:
 
     @property
     def sort_key_type(self):
-        """Gets the sort_key_type of this CreateGraphReqGraph.
+        r"""Gets the sort_key_type of this CreateGraphReqGraph.
 
         持久化版图数据的sortKey的类型，通过配置不同SortKey的值来区分重复边（源点，终点，Label三者都相同的边），仅持久化图需要填写。取值为： - int：整型 - string：字节长度小于等于40的字符串 - varString：不限长度字符串，过长会影响读写性能，建议长度控制在1K字节以内，最大不要超过2K字节
 
@@ -669,7 +669,7 @@ class CreateGraphReqGraph:
 
     @sort_key_type.setter
     def sort_key_type(self, sort_key_type):
-        """Sets the sort_key_type of this CreateGraphReqGraph.
+        r"""Sets the sort_key_type of this CreateGraphReqGraph.
 
         持久化版图数据的sortKey的类型，通过配置不同SortKey的值来区分重复边（源点，终点，Label三者都相同的边），仅持久化图需要填写。取值为： - int：整型 - string：字节长度小于等于40的字符串 - varString：不限长度字符串，过长会影响读写性能，建议长度控制在1K字节以内，最大不要超过2K字节
 

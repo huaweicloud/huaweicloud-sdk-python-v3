@@ -27,7 +27,7 @@ class AgencyUsage:
     }
 
     def __init__(self, region=None, resources=None):
-        """AgencyUsage
+        r"""AgencyUsage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgencyUsage:
 
     @property
     def region(self):
-        """Gets the region of this AgencyUsage.
+        r"""Gets the region of this AgencyUsage.
 
         区域名称。
 
@@ -59,7 +59,7 @@ class AgencyUsage:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AgencyUsage.
+        r"""Sets the region of this AgencyUsage.
 
         区域名称。
 
@@ -70,7 +70,7 @@ class AgencyUsage:
 
     @property
     def resources(self):
-        """Gets the resources of this AgencyUsage.
+        r"""Gets the resources of this AgencyUsage.
 
         统一资源名称列表。
 
@@ -81,7 +81,7 @@ class AgencyUsage:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this AgencyUsage.
+        r"""Sets the resources of this AgencyUsage.
 
         统一资源名称列表。
 

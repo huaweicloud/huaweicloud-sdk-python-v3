@@ -69,7 +69,7 @@ class ConnectorInfo:
     }
 
     def __init__(self, action_count=None, actions=None, auth_content=None, auth_id=None, category=None, created_time=None, description=None, favorite=None, icon=None, id=None, name=None, need_auth=None, provider_name=None, release_version=None, runtime_permissions=None, status=None, swagger=None, swagger_version_id=None, trigger_count=None, triggers=None, type=None, updated_time=None, version=None):
-        """ConnectorInfo
+        r"""ConnectorInfo
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class ConnectorInfo:
 
     @property
     def action_count(self):
-        """Gets the action_count of this ConnectorInfo.
+        r"""Gets the action_count of this ConnectorInfo.
 
         执行动作数量
 
@@ -208,7 +208,7 @@ class ConnectorInfo:
 
     @action_count.setter
     def action_count(self, action_count):
-        """Sets the action_count of this ConnectorInfo.
+        r"""Sets the action_count of this ConnectorInfo.
 
         执行动作数量
 
@@ -219,7 +219,7 @@ class ConnectorInfo:
 
     @property
     def actions(self):
-        """Gets the actions of this ConnectorInfo.
+        r"""Gets the actions of this ConnectorInfo.
 
         触发事件数量
 
@@ -230,7 +230,7 @@ class ConnectorInfo:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ConnectorInfo.
+        r"""Sets the actions of this ConnectorInfo.
 
         触发事件数量
 
@@ -241,7 +241,7 @@ class ConnectorInfo:
 
     @property
     def auth_content(self):
-        """Gets the auth_content of this ConnectorInfo.
+        r"""Gets the auth_content of this ConnectorInfo.
 
         安全认证配置内容
 
@@ -252,7 +252,7 @@ class ConnectorInfo:
 
     @auth_content.setter
     def auth_content(self, auth_content):
-        """Sets the auth_content of this ConnectorInfo.
+        r"""Sets the auth_content of this ConnectorInfo.
 
         安全认证配置内容
 
@@ -263,7 +263,7 @@ class ConnectorInfo:
 
     @property
     def auth_id(self):
-        """Gets the auth_id of this ConnectorInfo.
+        r"""Gets the auth_id of this ConnectorInfo.
 
         认证配置ID
 
@@ -274,7 +274,7 @@ class ConnectorInfo:
 
     @auth_id.setter
     def auth_id(self, auth_id):
-        """Sets the auth_id of this ConnectorInfo.
+        r"""Sets the auth_id of this ConnectorInfo.
 
         认证配置ID
 
@@ -285,7 +285,7 @@ class ConnectorInfo:
 
     @property
     def category(self):
-        """Gets the category of this ConnectorInfo.
+        r"""Gets the category of this ConnectorInfo.
 
         自定义连接器种类（连接器市场的tab分类）
 
@@ -296,7 +296,7 @@ class ConnectorInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ConnectorInfo.
+        r"""Sets the category of this ConnectorInfo.
 
         自定义连接器种类（连接器市场的tab分类）
 
@@ -307,7 +307,7 @@ class ConnectorInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ConnectorInfo.
+        r"""Gets the created_time of this ConnectorInfo.
 
         创建时间
 
@@ -318,7 +318,7 @@ class ConnectorInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ConnectorInfo.
+        r"""Sets the created_time of this ConnectorInfo.
 
         创建时间
 
@@ -329,7 +329,7 @@ class ConnectorInfo:
 
     @property
     def description(self):
-        """Gets the description of this ConnectorInfo.
+        r"""Gets the description of this ConnectorInfo.
 
         自定义连接器描述
 
@@ -340,7 +340,7 @@ class ConnectorInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectorInfo.
+        r"""Sets the description of this ConnectorInfo.
 
         自定义连接器描述
 
@@ -351,7 +351,7 @@ class ConnectorInfo:
 
     @property
     def favorite(self):
-        """Gets the favorite of this ConnectorInfo.
+        r"""Gets the favorite of this ConnectorInfo.
 
         是否收藏
 
@@ -362,7 +362,7 @@ class ConnectorInfo:
 
     @favorite.setter
     def favorite(self, favorite):
-        """Sets the favorite of this ConnectorInfo.
+        r"""Sets the favorite of this ConnectorInfo.
 
         是否收藏
 
@@ -373,7 +373,7 @@ class ConnectorInfo:
 
     @property
     def icon(self):
-        """Gets the icon of this ConnectorInfo.
+        r"""Gets the icon of this ConnectorInfo.
 
         logo base64编码
 
@@ -384,7 +384,7 @@ class ConnectorInfo:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ConnectorInfo.
+        r"""Sets the icon of this ConnectorInfo.
 
         logo base64编码
 
@@ -395,7 +395,7 @@ class ConnectorInfo:
 
     @property
     def id(self):
-        """Gets the id of this ConnectorInfo.
+        r"""Gets the id of this ConnectorInfo.
 
         自定义连接器ID
 
@@ -406,7 +406,7 @@ class ConnectorInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectorInfo.
+        r"""Sets the id of this ConnectorInfo.
 
         自定义连接器ID
 
@@ -417,7 +417,7 @@ class ConnectorInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConnectorInfo.
+        r"""Gets the name of this ConnectorInfo.
 
         自定义连接器名称
 
@@ -428,7 +428,7 @@ class ConnectorInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectorInfo.
+        r"""Sets the name of this ConnectorInfo.
 
         自定义连接器名称
 
@@ -439,7 +439,7 @@ class ConnectorInfo:
 
     @property
     def need_auth(self):
-        """Gets the need_auth of this ConnectorInfo.
+        r"""Gets the need_auth of this ConnectorInfo.
 
         是否需要验证
 
@@ -450,7 +450,7 @@ class ConnectorInfo:
 
     @need_auth.setter
     def need_auth(self, need_auth):
-        """Sets the need_auth of this ConnectorInfo.
+        r"""Sets the need_auth of this ConnectorInfo.
 
         是否需要验证
 
@@ -461,7 +461,7 @@ class ConnectorInfo:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this ConnectorInfo.
+        r"""Gets the provider_name of this ConnectorInfo.
 
         服务提供商
 
@@ -472,7 +472,7 @@ class ConnectorInfo:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this ConnectorInfo.
+        r"""Sets the provider_name of this ConnectorInfo.
 
         服务提供商
 
@@ -483,7 +483,7 @@ class ConnectorInfo:
 
     @property
     def release_version(self):
-        """Gets the release_version of this ConnectorInfo.
+        r"""Gets the release_version of this ConnectorInfo.
 
         发布版本
 
@@ -494,7 +494,7 @@ class ConnectorInfo:
 
     @release_version.setter
     def release_version(self, release_version):
-        """Sets the release_version of this ConnectorInfo.
+        r"""Sets the release_version of this ConnectorInfo.
 
         发布版本
 
@@ -505,7 +505,7 @@ class ConnectorInfo:
 
     @property
     def runtime_permissions(self):
-        """Gets the runtime_permissions of this ConnectorInfo.
+        r"""Gets the runtime_permissions of this ConnectorInfo.
 
         权限
 
@@ -516,7 +516,7 @@ class ConnectorInfo:
 
     @runtime_permissions.setter
     def runtime_permissions(self, runtime_permissions):
-        """Sets the runtime_permissions of this ConnectorInfo.
+        r"""Sets the runtime_permissions of this ConnectorInfo.
 
         权限
 
@@ -527,7 +527,7 @@ class ConnectorInfo:
 
     @property
     def status(self):
-        """Gets the status of this ConnectorInfo.
+        r"""Gets the status of this ConnectorInfo.
 
         状态(dev：草稿、released：已发布、onboard：已上架)
 
@@ -538,7 +538,7 @@ class ConnectorInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectorInfo.
+        r"""Sets the status of this ConnectorInfo.
 
         状态(dev：草稿、released：已发布、onboard：已上架)
 
@@ -549,7 +549,7 @@ class ConnectorInfo:
 
     @property
     def swagger(self):
-        """Gets the swagger of this ConnectorInfo.
+        r"""Gets the swagger of this ConnectorInfo.
 
         swagger文档（只包含基本信息+认证信息）
 
@@ -560,7 +560,7 @@ class ConnectorInfo:
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this ConnectorInfo.
+        r"""Sets the swagger of this ConnectorInfo.
 
         swagger文档（只包含基本信息+认证信息）
 
@@ -571,7 +571,7 @@ class ConnectorInfo:
 
     @property
     def swagger_version_id(self):
-        """Gets the swagger_version_id of this ConnectorInfo.
+        r"""Gets the swagger_version_id of this ConnectorInfo.
 
         版本id
 
@@ -582,7 +582,7 @@ class ConnectorInfo:
 
     @swagger_version_id.setter
     def swagger_version_id(self, swagger_version_id):
-        """Sets the swagger_version_id of this ConnectorInfo.
+        r"""Sets the swagger_version_id of this ConnectorInfo.
 
         版本id
 
@@ -593,7 +593,7 @@ class ConnectorInfo:
 
     @property
     def trigger_count(self):
-        """Gets the trigger_count of this ConnectorInfo.
+        r"""Gets the trigger_count of this ConnectorInfo.
 
         触发事件数量
 
@@ -604,7 +604,7 @@ class ConnectorInfo:
 
     @trigger_count.setter
     def trigger_count(self, trigger_count):
-        """Sets the trigger_count of this ConnectorInfo.
+        r"""Sets the trigger_count of this ConnectorInfo.
 
         触发事件数量
 
@@ -615,7 +615,7 @@ class ConnectorInfo:
 
     @property
     def triggers(self):
-        """Gets the triggers of this ConnectorInfo.
+        r"""Gets the triggers of this ConnectorInfo.
 
         触发事件数量
 
@@ -626,7 +626,7 @@ class ConnectorInfo:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ConnectorInfo.
+        r"""Sets the triggers of this ConnectorInfo.
 
         触发事件数量
 
@@ -637,7 +637,7 @@ class ConnectorInfo:
 
     @property
     def type(self):
-        """Gets the type of this ConnectorInfo.
+        r"""Gets the type of this ConnectorInfo.
 
         自定义连接器类型
 
@@ -648,7 +648,7 @@ class ConnectorInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectorInfo.
+        r"""Sets the type of this ConnectorInfo.
 
         自定义连接器类型
 
@@ -659,7 +659,7 @@ class ConnectorInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ConnectorInfo.
+        r"""Gets the updated_time of this ConnectorInfo.
 
         修改时间
 
@@ -670,7 +670,7 @@ class ConnectorInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ConnectorInfo.
+        r"""Sets the updated_time of this ConnectorInfo.
 
         修改时间
 
@@ -681,7 +681,7 @@ class ConnectorInfo:
 
     @property
     def version(self):
-        """Gets the version of this ConnectorInfo.
+        r"""Gets the version of this ConnectorInfo.
 
         版本号
 
@@ -692,7 +692,7 @@ class ConnectorInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ConnectorInfo.
+        r"""Sets the version of this ConnectorInfo.
 
         版本号
 

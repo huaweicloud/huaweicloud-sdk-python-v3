@@ -27,7 +27,7 @@ class DependPackage:
     }
 
     def __init__(self, type=None, location=None):
-        """DependPackage
+        r"""DependPackage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DependPackage:
 
     @property
     def type(self):
-        """Gets the type of this DependPackage.
+        r"""Gets the type of this DependPackage.
 
         文件类型
 
@@ -61,7 +61,7 @@ class DependPackage:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DependPackage.
+        r"""Sets the type of this DependPackage.
 
         文件类型
 
@@ -72,7 +72,7 @@ class DependPackage:
 
     @property
     def location(self):
-        """Gets the location of this DependPackage.
+        r"""Gets the location of this DependPackage.
 
         文件路径
 
@@ -83,7 +83,7 @@ class DependPackage:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this DependPackage.
+        r"""Sets the location of this DependPackage.
 
         文件路径
 

@@ -39,7 +39,7 @@ class UpdateTempRequestBody:
     }
 
     def __init__(self, id=None, project_id=None, name=None, temp_type=None, description=None, for_loop_params=None, enable_pre=None, contents=None):
-        """UpdateTempRequestBody
+        r"""UpdateTempRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class UpdateTempRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTempRequestBody.
+        r"""Gets the id of this UpdateTempRequestBody.
 
         事务id
 
@@ -100,7 +100,7 @@ class UpdateTempRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTempRequestBody.
+        r"""Sets the id of this UpdateTempRequestBody.
 
         事务id
 
@@ -111,7 +111,7 @@ class UpdateTempRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTempRequestBody.
+        r"""Gets the project_id of this UpdateTempRequestBody.
 
         工程id
 
@@ -122,7 +122,7 @@ class UpdateTempRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTempRequestBody.
+        r"""Sets the project_id of this UpdateTempRequestBody.
 
         工程id
 
@@ -133,7 +133,7 @@ class UpdateTempRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTempRequestBody.
+        r"""Gets the name of this UpdateTempRequestBody.
 
         事务名称
 
@@ -144,7 +144,7 @@ class UpdateTempRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTempRequestBody.
+        r"""Sets the name of this UpdateTempRequestBody.
 
         事务名称
 
@@ -155,7 +155,7 @@ class UpdateTempRequestBody:
 
     @property
     def temp_type(self):
-        """Gets the temp_type of this UpdateTempRequestBody.
+        r"""Gets the temp_type of this UpdateTempRequestBody.
 
         事务类型
 
@@ -166,7 +166,7 @@ class UpdateTempRequestBody:
 
     @temp_type.setter
     def temp_type(self, temp_type):
-        """Sets the temp_type of this UpdateTempRequestBody.
+        r"""Sets the temp_type of this UpdateTempRequestBody.
 
         事务类型
 
@@ -177,7 +177,7 @@ class UpdateTempRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTempRequestBody.
+        r"""Gets the description of this UpdateTempRequestBody.
 
         描述信息
 
@@ -188,7 +188,7 @@ class UpdateTempRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTempRequestBody.
+        r"""Sets the description of this UpdateTempRequestBody.
 
         描述信息
 
@@ -199,7 +199,7 @@ class UpdateTempRequestBody:
 
     @property
     def for_loop_params(self):
-        """Gets the for_loop_params of this UpdateTempRequestBody.
+        r"""Gets the for_loop_params of this UpdateTempRequestBody.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -210,7 +210,7 @@ class UpdateTempRequestBody:
 
     @for_loop_params.setter
     def for_loop_params(self, for_loop_params):
-        """Sets the for_loop_params of this UpdateTempRequestBody.
+        r"""Sets the for_loop_params of this UpdateTempRequestBody.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -221,7 +221,7 @@ class UpdateTempRequestBody:
 
     @property
     def enable_pre(self):
-        """Gets the enable_pre of this UpdateTempRequestBody.
+        r"""Gets the enable_pre of this UpdateTempRequestBody.
 
         是否启用预置事务，当前版本已未使用
 
@@ -232,7 +232,7 @@ class UpdateTempRequestBody:
 
     @enable_pre.setter
     def enable_pre(self, enable_pre):
-        """Sets the enable_pre of this UpdateTempRequestBody.
+        r"""Sets the enable_pre of this UpdateTempRequestBody.
 
         是否启用预置事务，当前版本已未使用
 
@@ -243,7 +243,7 @@ class UpdateTempRequestBody:
 
     @property
     def contents(self):
-        """Gets the contents of this UpdateTempRequestBody.
+        r"""Gets the contents of this UpdateTempRequestBody.
 
         事务脚本信息
 
@@ -254,7 +254,7 @@ class UpdateTempRequestBody:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this UpdateTempRequestBody.
+        r"""Sets the contents of this UpdateTempRequestBody.
 
         事务脚本信息
 

@@ -35,7 +35,7 @@ class EndpointConnection:
     }
 
     def __init__(self, endpoint_service_id=None, endpoint_service_name=None, marker_id=None, id=None, ip=None, created_time=None):
-        """EndpointConnection
+        r"""EndpointConnection
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EndpointConnection:
 
     @property
     def endpoint_service_id(self):
-        """Gets the endpoint_service_id of this EndpointConnection.
+        r"""Gets the endpoint_service_id of this EndpointConnection.
 
         访问端点的服务ID
 
@@ -89,7 +89,7 @@ class EndpointConnection:
 
     @endpoint_service_id.setter
     def endpoint_service_id(self, endpoint_service_id):
-        """Sets the endpoint_service_id of this EndpointConnection.
+        r"""Sets the endpoint_service_id of this EndpointConnection.
 
         访问端点的服务ID
 
@@ -100,7 +100,7 @@ class EndpointConnection:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this EndpointConnection.
+        r"""Gets the endpoint_service_name of this EndpointConnection.
 
         访问端点的服务名称
 
@@ -111,7 +111,7 @@ class EndpointConnection:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this EndpointConnection.
+        r"""Sets the endpoint_service_name of this EndpointConnection.
 
         访问端点的服务名称
 
@@ -122,7 +122,7 @@ class EndpointConnection:
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this EndpointConnection.
+        r"""Gets the marker_id of this EndpointConnection.
 
         访问端点的终端节点的报文ID
 
@@ -133,7 +133,7 @@ class EndpointConnection:
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this EndpointConnection.
+        r"""Sets the marker_id of this EndpointConnection.
 
         访问端点的终端节点的报文ID
 
@@ -144,7 +144,7 @@ class EndpointConnection:
 
     @property
     def id(self):
-        """Gets the id of this EndpointConnection.
+        r"""Gets the id of this EndpointConnection.
 
         访问端点的终端节点ID
 
@@ -155,7 +155,7 @@ class EndpointConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointConnection.
+        r"""Sets the id of this EndpointConnection.
 
         访问端点的终端节点ID
 
@@ -166,7 +166,7 @@ class EndpointConnection:
 
     @property
     def ip(self):
-        """Gets the ip of this EndpointConnection.
+        r"""Gets the ip of this EndpointConnection.
 
         访问端点的终端节点IP
 
@@ -177,7 +177,7 @@ class EndpointConnection:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this EndpointConnection.
+        r"""Sets the ip of this EndpointConnection.
 
         访问端点的终端节点IP
 
@@ -188,7 +188,7 @@ class EndpointConnection:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EndpointConnection.
+        r"""Gets the created_time of this EndpointConnection.
 
         访问端点的终端节点创建时间
 
@@ -199,7 +199,7 @@ class EndpointConnection:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EndpointConnection.
+        r"""Sets the created_time of this EndpointConnection.
 
         访问端点的终端节点创建时间
 

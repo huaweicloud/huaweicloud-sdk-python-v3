@@ -26,7 +26,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowEchoTestPackageUsingResponse
+        r"""ShowEchoTestPackageUsingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowEchoTestPackageUsingResponse.
+        r"""Gets the body of this ShowEchoTestPackageUsingResponse.
 
         :return: The body of this ShowEchoTestPackageUsingResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class ShowEchoTestPackageUsingResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowEchoTestPackageUsingResponse.
+        r"""Sets the body of this ShowEchoTestPackageUsingResponse.
 
         :param body: The body of this ShowEchoTestPackageUsingResponse.
         :type body: object

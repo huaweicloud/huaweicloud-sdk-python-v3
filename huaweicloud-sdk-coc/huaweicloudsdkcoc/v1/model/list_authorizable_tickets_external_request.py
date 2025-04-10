@@ -25,7 +25,7 @@ class ListAuthorizableTicketsExternalRequest:
     }
 
     def __init__(self, body=None):
-        """ListAuthorizableTicketsExternalRequest
+        r"""ListAuthorizableTicketsExternalRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAuthorizableTicketsExternalRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAuthorizableTicketsExternalRequest.
+        r"""Gets the body of this ListAuthorizableTicketsExternalRequest.
 
         :return: The body of this ListAuthorizableTicketsExternalRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.ListAuthorizableTicketsReq`
@@ -52,7 +52,7 @@ class ListAuthorizableTicketsExternalRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAuthorizableTicketsExternalRequest.
+        r"""Sets the body of this ListAuthorizableTicketsExternalRequest.
 
         :param body: The body of this ListAuthorizableTicketsExternalRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.ListAuthorizableTicketsReq`

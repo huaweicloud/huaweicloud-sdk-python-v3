@@ -49,7 +49,7 @@ class CreateCentralNetworkErRouteTableAttachment:
     }
 
     def __init__(self, name=None, description=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, central_network_plane_id=None, attachment_id=None, enterprise_router_table_id=None, attached_er_table_project_id=None, attached_er_table_region_id=None, attached_er_id=None, attached_er_table_id=None, hosted_cloud=None):
-        """CreateCentralNetworkErRouteTableAttachment
+        r"""CreateCentralNetworkErRouteTableAttachment
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def name(self):
-        """Gets the name of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the name of this CreateCentralNetworkErRouteTableAttachment.
 
         实例名字。
 
@@ -127,7 +127,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the name of this CreateCentralNetworkErRouteTableAttachment.
 
         实例名字。
 
@@ -138,7 +138,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def description(self):
-        """Gets the description of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the description of this CreateCentralNetworkErRouteTableAttachment.
 
         实例描述。不支持 <>。
 
@@ -149,7 +149,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the description of this CreateCentralNetworkErRouteTableAttachment.
 
         实例描述。不支持 <>。
 
@@ -160,7 +160,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
 
         企业路由器的ID。
 
@@ -171,7 +171,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the enterprise_router_id of this CreateCentralNetworkErRouteTableAttachment.
 
         企业路由器的ID。
 
@@ -182,7 +182,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def enterprise_router_project_id(self):
-        """Gets the enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
         企业路由器的项目ID。
 
@@ -193,7 +193,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @enterprise_router_project_id.setter
     def enterprise_router_project_id(self, enterprise_router_project_id):
-        """Sets the enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the enterprise_router_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
         企业路由器的项目ID。
 
@@ -204,7 +204,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def enterprise_router_region_id(self):
-        """Gets the enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
         ER路由器的regionID。
 
@@ -215,7 +215,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @enterprise_router_region_id.setter
     def enterprise_router_region_id(self, enterprise_router_region_id):
-        """Sets the enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the enterprise_router_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
         ER路由器的regionID。
 
@@ -226,7 +226,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
 
         中心网络平面ID。
 
@@ -237,7 +237,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @central_network_plane_id.setter
     def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the central_network_plane_id of this CreateCentralNetworkErRouteTableAttachment.
 
         中心网络平面ID。
 
@@ -248,7 +248,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the attachment_id of this CreateCentralNetworkErRouteTableAttachment.
 
         中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
@@ -259,7 +259,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the attachment_id of this CreateCentralNetworkErRouteTableAttachment.
 
         中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
@@ -270,7 +270,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def enterprise_router_table_id(self):
-        """Gets the enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
         企业路由器的路由表ID。
 
@@ -281,7 +281,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @enterprise_router_table_id.setter
     def enterprise_router_table_id(self, enterprise_router_table_id):
-        """Sets the enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the enterprise_router_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
         企业路由器的路由表ID。
 
@@ -292,7 +292,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def attached_er_table_project_id(self):
-        """Gets the attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
         被挂载的企业路由器的项目ID。
 
@@ -303,7 +303,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @attached_er_table_project_id.setter
     def attached_er_table_project_id(self, attached_er_table_project_id):
-        """Sets the attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the attached_er_table_project_id of this CreateCentralNetworkErRouteTableAttachment.
 
         被挂载的企业路由器的项目ID。
 
@@ -314,7 +314,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def attached_er_table_region_id(self):
-        """Gets the attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
         ER路由器的regionID。
 
@@ -325,7 +325,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @attached_er_table_region_id.setter
     def attached_er_table_region_id(self, attached_er_table_region_id):
-        """Sets the attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the attached_er_table_region_id of this CreateCentralNetworkErRouteTableAttachment.
 
         ER路由器的regionID。
 
@@ -336,7 +336,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def attached_er_id(self):
-        """Gets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
 
         被挂载的企业路由器ID。
 
@@ -347,7 +347,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @attached_er_id.setter
     def attached_er_id(self, attached_er_id):
-        """Sets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the attached_er_id of this CreateCentralNetworkErRouteTableAttachment.
 
         被挂载的企业路由器ID。
 
@@ -358,7 +358,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def attached_er_table_id(self):
-        """Gets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
         被挂载的企业路由器的路由表ID。
 
@@ -369,7 +369,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @attached_er_table_id.setter
     def attached_er_table_id(self, attached_er_table_id):
-        """Sets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the attached_er_table_id of this CreateCentralNetworkErRouteTableAttachment.
 
         被挂载的企业路由器的路由表ID。
 
@@ -380,7 +380,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @property
     def hosted_cloud(self):
-        """Gets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Gets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
 
         - HWCloud (华为云) - Ireland (爱尔兰)
 
@@ -391,7 +391,7 @@ class CreateCentralNetworkErRouteTableAttachment:
 
     @hosted_cloud.setter
     def hosted_cloud(self, hosted_cloud):
-        """Sets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
+        r"""Sets the hosted_cloud of this CreateCentralNetworkErRouteTableAttachment.
 
         - HWCloud (华为云) - Ireland (爱尔兰)
 

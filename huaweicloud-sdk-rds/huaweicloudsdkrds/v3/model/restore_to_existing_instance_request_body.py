@@ -27,7 +27,7 @@ class RestoreToExistingInstanceRequestBody:
     }
 
     def __init__(self, source=None, target=None):
-        """RestoreToExistingInstanceRequestBody
+        r"""RestoreToExistingInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestoreToExistingInstanceRequestBody:
 
     @property
     def source(self):
-        """Gets the source of this RestoreToExistingInstanceRequestBody.
+        r"""Gets the source of this RestoreToExistingInstanceRequestBody.
 
         :return: The source of this RestoreToExistingInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodySource`
@@ -57,7 +57,7 @@ class RestoreToExistingInstanceRequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this RestoreToExistingInstanceRequestBody.
+        r"""Sets the source of this RestoreToExistingInstanceRequestBody.
 
         :param source: The source of this RestoreToExistingInstanceRequestBody.
         :type source: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodySource`
@@ -66,7 +66,7 @@ class RestoreToExistingInstanceRequestBody:
 
     @property
     def target(self):
-        """Gets the target of this RestoreToExistingInstanceRequestBody.
+        r"""Gets the target of this RestoreToExistingInstanceRequestBody.
 
         :return: The target of this RestoreToExistingInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
@@ -75,7 +75,7 @@ class RestoreToExistingInstanceRequestBody:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this RestoreToExistingInstanceRequestBody.
+        r"""Sets the target of this RestoreToExistingInstanceRequestBody.
 
         :param target: The target of this RestoreToExistingInstanceRequestBody.
         :type target: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`

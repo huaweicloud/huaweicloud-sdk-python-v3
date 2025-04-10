@@ -45,7 +45,7 @@ class ChannelDetail:
     }
 
     def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, mysql_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, dms_rocketmq_forwarding=None):
-        """ChannelDetail
+        r"""ChannelDetail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ChannelDetail:
 
     @property
     def http_forwarding(self):
-        """Gets the http_forwarding of this ChannelDetail.
+        r"""Gets the http_forwarding of this ChannelDetail.
 
         :return: The http_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.HttpForwarding`
@@ -122,7 +122,7 @@ class ChannelDetail:
 
     @http_forwarding.setter
     def http_forwarding(self, http_forwarding):
-        """Sets the http_forwarding of this ChannelDetail.
+        r"""Sets the http_forwarding of this ChannelDetail.
 
         :param http_forwarding: The http_forwarding of this ChannelDetail.
         :type http_forwarding: :class:`huaweicloudsdkiotda.v5.HttpForwarding`
@@ -131,7 +131,7 @@ class ChannelDetail:
 
     @property
     def dis_forwarding(self):
-        """Gets the dis_forwarding of this ChannelDetail.
+        r"""Gets the dis_forwarding of this ChannelDetail.
 
         :return: The dis_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.DisForwarding`
@@ -140,7 +140,7 @@ class ChannelDetail:
 
     @dis_forwarding.setter
     def dis_forwarding(self, dis_forwarding):
-        """Sets the dis_forwarding of this ChannelDetail.
+        r"""Sets the dis_forwarding of this ChannelDetail.
 
         :param dis_forwarding: The dis_forwarding of this ChannelDetail.
         :type dis_forwarding: :class:`huaweicloudsdkiotda.v5.DisForwarding`
@@ -149,7 +149,7 @@ class ChannelDetail:
 
     @property
     def obs_forwarding(self):
-        """Gets the obs_forwarding of this ChannelDetail.
+        r"""Gets the obs_forwarding of this ChannelDetail.
 
         :return: The obs_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.ObsForwarding`
@@ -158,7 +158,7 @@ class ChannelDetail:
 
     @obs_forwarding.setter
     def obs_forwarding(self, obs_forwarding):
-        """Sets the obs_forwarding of this ChannelDetail.
+        r"""Sets the obs_forwarding of this ChannelDetail.
 
         :param obs_forwarding: The obs_forwarding of this ChannelDetail.
         :type obs_forwarding: :class:`huaweicloudsdkiotda.v5.ObsForwarding`
@@ -167,7 +167,7 @@ class ChannelDetail:
 
     @property
     def amqp_forwarding(self):
-        """Gets the amqp_forwarding of this ChannelDetail.
+        r"""Gets the amqp_forwarding of this ChannelDetail.
 
         :return: The amqp_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.AmqpForwarding`
@@ -176,7 +176,7 @@ class ChannelDetail:
 
     @amqp_forwarding.setter
     def amqp_forwarding(self, amqp_forwarding):
-        """Sets the amqp_forwarding of this ChannelDetail.
+        r"""Sets the amqp_forwarding of this ChannelDetail.
 
         :param amqp_forwarding: The amqp_forwarding of this ChannelDetail.
         :type amqp_forwarding: :class:`huaweicloudsdkiotda.v5.AmqpForwarding`
@@ -185,7 +185,7 @@ class ChannelDetail:
 
     @property
     def dms_kafka_forwarding(self):
-        """Gets the dms_kafka_forwarding of this ChannelDetail.
+        r"""Gets the dms_kafka_forwarding of this ChannelDetail.
 
         :return: The dms_kafka_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`
@@ -194,7 +194,7 @@ class ChannelDetail:
 
     @dms_kafka_forwarding.setter
     def dms_kafka_forwarding(self, dms_kafka_forwarding):
-        """Sets the dms_kafka_forwarding of this ChannelDetail.
+        r"""Sets the dms_kafka_forwarding of this ChannelDetail.
 
         :param dms_kafka_forwarding: The dms_kafka_forwarding of this ChannelDetail.
         :type dms_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`
@@ -203,7 +203,7 @@ class ChannelDetail:
 
     @property
     def roma_forwarding(self):
-        """Gets the roma_forwarding of this ChannelDetail.
+        r"""Gets the roma_forwarding of this ChannelDetail.
 
         :return: The roma_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
@@ -212,7 +212,7 @@ class ChannelDetail:
 
     @roma_forwarding.setter
     def roma_forwarding(self, roma_forwarding):
-        """Sets the roma_forwarding of this ChannelDetail.
+        r"""Sets the roma_forwarding of this ChannelDetail.
 
         :param roma_forwarding: The roma_forwarding of this ChannelDetail.
         :type roma_forwarding: :class:`huaweicloudsdkiotda.v5.RomaForwarding`
@@ -221,7 +221,7 @@ class ChannelDetail:
 
     @property
     def mysql_forwarding(self):
-        """Gets the mysql_forwarding of this ChannelDetail.
+        r"""Gets the mysql_forwarding of this ChannelDetail.
 
         :return: The mysql_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.MysqlForwarding`
@@ -230,7 +230,7 @@ class ChannelDetail:
 
     @mysql_forwarding.setter
     def mysql_forwarding(self, mysql_forwarding):
-        """Sets the mysql_forwarding of this ChannelDetail.
+        r"""Sets the mysql_forwarding of this ChannelDetail.
 
         :param mysql_forwarding: The mysql_forwarding of this ChannelDetail.
         :type mysql_forwarding: :class:`huaweicloudsdkiotda.v5.MysqlForwarding`
@@ -239,7 +239,7 @@ class ChannelDetail:
 
     @property
     def influxdb_forwarding(self):
-        """Gets the influxdb_forwarding of this ChannelDetail.
+        r"""Gets the influxdb_forwarding of this ChannelDetail.
 
         :return: The influxdb_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.InfluxDBForwarding`
@@ -248,7 +248,7 @@ class ChannelDetail:
 
     @influxdb_forwarding.setter
     def influxdb_forwarding(self, influxdb_forwarding):
-        """Sets the influxdb_forwarding of this ChannelDetail.
+        r"""Sets the influxdb_forwarding of this ChannelDetail.
 
         :param influxdb_forwarding: The influxdb_forwarding of this ChannelDetail.
         :type influxdb_forwarding: :class:`huaweicloudsdkiotda.v5.InfluxDBForwarding`
@@ -257,7 +257,7 @@ class ChannelDetail:
 
     @property
     def functiongraph_forwarding(self):
-        """Gets the functiongraph_forwarding of this ChannelDetail.
+        r"""Gets the functiongraph_forwarding of this ChannelDetail.
 
         :return: The functiongraph_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.FunctionGraphForwarding`
@@ -266,7 +266,7 @@ class ChannelDetail:
 
     @functiongraph_forwarding.setter
     def functiongraph_forwarding(self, functiongraph_forwarding):
-        """Sets the functiongraph_forwarding of this ChannelDetail.
+        r"""Sets the functiongraph_forwarding of this ChannelDetail.
 
         :param functiongraph_forwarding: The functiongraph_forwarding of this ChannelDetail.
         :type functiongraph_forwarding: :class:`huaweicloudsdkiotda.v5.FunctionGraphForwarding`
@@ -275,7 +275,7 @@ class ChannelDetail:
 
     @property
     def mrs_kafka_forwarding(self):
-        """Gets the mrs_kafka_forwarding of this ChannelDetail.
+        r"""Gets the mrs_kafka_forwarding of this ChannelDetail.
 
         :return: The mrs_kafka_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.MrsKafkaForwarding`
@@ -284,7 +284,7 @@ class ChannelDetail:
 
     @mrs_kafka_forwarding.setter
     def mrs_kafka_forwarding(self, mrs_kafka_forwarding):
-        """Sets the mrs_kafka_forwarding of this ChannelDetail.
+        r"""Sets the mrs_kafka_forwarding of this ChannelDetail.
 
         :param mrs_kafka_forwarding: The mrs_kafka_forwarding of this ChannelDetail.
         :type mrs_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.MrsKafkaForwarding`
@@ -293,7 +293,7 @@ class ChannelDetail:
 
     @property
     def dms_rocketmq_forwarding(self):
-        """Gets the dms_rocketmq_forwarding of this ChannelDetail.
+        r"""Gets the dms_rocketmq_forwarding of this ChannelDetail.
 
         :return: The dms_rocketmq_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`
@@ -302,7 +302,7 @@ class ChannelDetail:
 
     @dms_rocketmq_forwarding.setter
     def dms_rocketmq_forwarding(self, dms_rocketmq_forwarding):
-        """Sets the dms_rocketmq_forwarding of this ChannelDetail.
+        r"""Sets the dms_rocketmq_forwarding of this ChannelDetail.
 
         :param dms_rocketmq_forwarding: The dms_rocketmq_forwarding of this ChannelDetail.
         :type dms_rocketmq_forwarding: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`

@@ -26,7 +26,7 @@ class UpdateExtendInstanceStorageResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """UpdateExtendInstanceStorageResponse
+        r"""UpdateExtendInstanceStorageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateExtendInstanceStorageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateExtendInstanceStorageResponse.
+        r"""Gets the id of this UpdateExtendInstanceStorageResponse.
 
         集群ID。
 
@@ -55,7 +55,7 @@ class UpdateExtendInstanceStorageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateExtendInstanceStorageResponse.
+        r"""Sets the id of this UpdateExtendInstanceStorageResponse.
 
         集群ID。
 

@@ -39,7 +39,7 @@ class AuditDumpRecord:
     }
 
     def __init__(self, cluster_id=None, exector_time=None, begin_time=None, end_time=None, bucket_name=None, location_prefix=None, result=None, failed_reason=None):
-        """AuditDumpRecord
+        r"""AuditDumpRecord
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AuditDumpRecord:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AuditDumpRecord.
+        r"""Gets the cluster_id of this AuditDumpRecord.
 
         集群id。
 
@@ -103,7 +103,7 @@ class AuditDumpRecord:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AuditDumpRecord.
+        r"""Sets the cluster_id of this AuditDumpRecord.
 
         集群id。
 
@@ -114,7 +114,7 @@ class AuditDumpRecord:
 
     @property
     def exector_time(self):
-        """Gets the exector_time of this AuditDumpRecord.
+        r"""Gets the exector_time of this AuditDumpRecord.
 
         执行时间。
 
@@ -125,7 +125,7 @@ class AuditDumpRecord:
 
     @exector_time.setter
     def exector_time(self, exector_time):
-        """Sets the exector_time of this AuditDumpRecord.
+        r"""Sets the exector_time of this AuditDumpRecord.
 
         执行时间。
 
@@ -136,7 +136,7 @@ class AuditDumpRecord:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this AuditDumpRecord.
+        r"""Gets the begin_time of this AuditDumpRecord.
 
         开始时间。
 
@@ -147,7 +147,7 @@ class AuditDumpRecord:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this AuditDumpRecord.
+        r"""Sets the begin_time of this AuditDumpRecord.
 
         开始时间。
 
@@ -158,7 +158,7 @@ class AuditDumpRecord:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AuditDumpRecord.
+        r"""Gets the end_time of this AuditDumpRecord.
 
         结束时间。
 
@@ -169,7 +169,7 @@ class AuditDumpRecord:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AuditDumpRecord.
+        r"""Sets the end_time of this AuditDumpRecord.
 
         结束时间。
 
@@ -180,7 +180,7 @@ class AuditDumpRecord:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this AuditDumpRecord.
+        r"""Gets the bucket_name of this AuditDumpRecord.
 
         桶名。
 
@@ -191,7 +191,7 @@ class AuditDumpRecord:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this AuditDumpRecord.
+        r"""Sets the bucket_name of this AuditDumpRecord.
 
         桶名。
 
@@ -202,7 +202,7 @@ class AuditDumpRecord:
 
     @property
     def location_prefix(self):
-        """Gets the location_prefix of this AuditDumpRecord.
+        r"""Gets the location_prefix of this AuditDumpRecord.
 
         前缀。
 
@@ -213,7 +213,7 @@ class AuditDumpRecord:
 
     @location_prefix.setter
     def location_prefix(self, location_prefix):
-        """Sets the location_prefix of this AuditDumpRecord.
+        r"""Sets the location_prefix of this AuditDumpRecord.
 
         前缀。
 
@@ -224,7 +224,7 @@ class AuditDumpRecord:
 
     @property
     def result(self):
-        """Gets the result of this AuditDumpRecord.
+        r"""Gets the result of this AuditDumpRecord.
 
         结果。
 
@@ -235,7 +235,7 @@ class AuditDumpRecord:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AuditDumpRecord.
+        r"""Sets the result of this AuditDumpRecord.
 
         结果。
 
@@ -246,7 +246,7 @@ class AuditDumpRecord:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this AuditDumpRecord.
+        r"""Gets the failed_reason of this AuditDumpRecord.
 
         失败原因。
 
@@ -257,7 +257,7 @@ class AuditDumpRecord:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this AuditDumpRecord.
+        r"""Sets the failed_reason of this AuditDumpRecord.
 
         失败原因。
 

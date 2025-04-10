@@ -27,7 +27,7 @@ class UpdateApplicationEndpointRequest:
     }
 
     def __init__(self, endpoint_urn=None, body=None):
-        """UpdateApplicationEndpointRequest
+        r"""UpdateApplicationEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateApplicationEndpointRequest:
 
     @property
     def endpoint_urn(self):
-        """Gets the endpoint_urn of this UpdateApplicationEndpointRequest.
+        r"""Gets the endpoint_urn of this UpdateApplicationEndpointRequest.
 
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class UpdateApplicationEndpointRequest:
 
     @endpoint_urn.setter
     def endpoint_urn(self, endpoint_urn):
-        """Sets the endpoint_urn of this UpdateApplicationEndpointRequest.
+        r"""Sets the endpoint_urn of this UpdateApplicationEndpointRequest.
 
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class UpdateApplicationEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateApplicationEndpointRequest.
+        r"""Gets the body of this UpdateApplicationEndpointRequest.
 
         :return: The body of this UpdateApplicationEndpointRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequestBody`
@@ -80,7 +80,7 @@ class UpdateApplicationEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateApplicationEndpointRequest.
+        r"""Sets the body of this UpdateApplicationEndpointRequest.
 
         :param body: The body of this UpdateApplicationEndpointRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequestBody`

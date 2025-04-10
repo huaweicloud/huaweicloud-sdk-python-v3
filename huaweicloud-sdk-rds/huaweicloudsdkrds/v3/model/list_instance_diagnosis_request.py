@@ -25,7 +25,7 @@ class ListInstanceDiagnosisRequest:
     }
 
     def __init__(self, engine=None):
-        """ListInstanceDiagnosisRequest
+        r"""ListInstanceDiagnosisRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListInstanceDiagnosisRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListInstanceDiagnosisRequest.
+        r"""Gets the engine of this ListInstanceDiagnosisRequest.
 
         引擎类型
 
@@ -53,7 +53,7 @@ class ListInstanceDiagnosisRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListInstanceDiagnosisRequest.
+        r"""Sets the engine of this ListInstanceDiagnosisRequest.
 
         引擎类型
 

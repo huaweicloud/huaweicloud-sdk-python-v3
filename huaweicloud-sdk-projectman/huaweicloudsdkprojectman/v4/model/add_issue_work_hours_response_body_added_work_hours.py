@@ -37,7 +37,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
     }
 
     def __init__(self, work_hours_id=None, issue_id=None, user_name=None, user_nick_name=None, work_date=None, work_hours=None, work_hours_type_name=None):
-        """AddIssueWorkHoursResponseBodyAddedWorkHours
+        r"""AddIssueWorkHoursResponseBodyAddedWorkHours
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def work_hours_id(self):
-        """Gets the work_hours_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the work_hours_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时id
 
@@ -96,7 +96,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @work_hours_id.setter
     def work_hours_id(self, work_hours_id):
-        """Sets the work_hours_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the work_hours_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时id
 
@@ -107,7 +107,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the issue_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工作项id
 
@@ -118,7 +118,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the issue_id of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工作项id
 
@@ -129,7 +129,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the user_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         用户名
 
@@ -140,7 +140,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the user_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         用户名
 
@@ -151,7 +151,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def user_nick_name(self):
-        """Gets the user_nick_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the user_nick_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         用户昵称
 
@@ -162,7 +162,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @user_nick_name.setter
     def user_nick_name(self, user_nick_name):
-        """Sets the user_nick_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the user_nick_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         用户昵称
 
@@ -173,7 +173,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def work_date(self):
-        """Gets the work_date of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the work_date of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时日期
 
@@ -184,7 +184,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @work_date.setter
     def work_date(self, work_date):
-        """Sets the work_date of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the work_date of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时日期
 
@@ -195,7 +195,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def work_hours(self):
-        """Gets the work_hours of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the work_hours of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时数
 
@@ -206,7 +206,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @work_hours.setter
     def work_hours(self, work_hours):
-        """Sets the work_hours of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the work_hours of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时数
 
@@ -217,7 +217,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @property
     def work_hours_type_name(self):
-        """Gets the work_hours_type_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Gets the work_hours_type_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时类型名称
 
@@ -228,7 +228,7 @@ class AddIssueWorkHoursResponseBodyAddedWorkHours:
 
     @work_hours_type_name.setter
     def work_hours_type_name(self, work_hours_type_name):
-        """Sets the work_hours_type_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
+        r"""Sets the work_hours_type_name of this AddIssueWorkHoursResponseBodyAddedWorkHours.
 
         工时类型名称
 

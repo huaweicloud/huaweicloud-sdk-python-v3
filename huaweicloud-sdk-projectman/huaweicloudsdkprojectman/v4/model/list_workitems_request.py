@@ -31,7 +31,7 @@ class ListWorkitemsRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, created_time_interval=None):
-        """ListWorkitemsRequest
+        r"""ListWorkitemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListWorkitemsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListWorkitemsRequest.
+        r"""Gets the project_id of this ListWorkitemsRequest.
 
         devcloud项目的32位id
 
@@ -74,7 +74,7 @@ class ListWorkitemsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListWorkitemsRequest.
+        r"""Sets the project_id of this ListWorkitemsRequest.
 
         devcloud项目的32位id
 
@@ -85,7 +85,7 @@ class ListWorkitemsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkitemsRequest.
+        r"""Gets the offset of this ListWorkitemsRequest.
 
         偏移量 从0开始
 
@@ -96,7 +96,7 @@ class ListWorkitemsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkitemsRequest.
+        r"""Sets the offset of this ListWorkitemsRequest.
 
         偏移量 从0开始
 
@@ -107,7 +107,7 @@ class ListWorkitemsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkitemsRequest.
+        r"""Gets the limit of this ListWorkitemsRequest.
 
         每页数量 最小1,最大100
 
@@ -118,7 +118,7 @@ class ListWorkitemsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkitemsRequest.
+        r"""Sets the limit of this ListWorkitemsRequest.
 
         每页数量 最小1,最大100
 
@@ -129,7 +129,7 @@ class ListWorkitemsRequest:
 
     @property
     def created_time_interval(self):
-        """Gets the created_time_interval of this ListWorkitemsRequest.
+        r"""Gets the created_time_interval of this ListWorkitemsRequest.
 
         创建工作项的时间(查询的起始时间,查询的结束时间)
 
@@ -140,7 +140,7 @@ class ListWorkitemsRequest:
 
     @created_time_interval.setter
     def created_time_interval(self, created_time_interval):
-        """Sets the created_time_interval of this ListWorkitemsRequest.
+        r"""Sets the created_time_interval of this ListWorkitemsRequest.
 
         创建工作项的时间(查询的起始时间,查询的结束时间)
 

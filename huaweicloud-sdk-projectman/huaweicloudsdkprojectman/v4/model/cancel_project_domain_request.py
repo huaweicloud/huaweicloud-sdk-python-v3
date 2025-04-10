@@ -27,7 +27,7 @@ class CancelProjectDomainRequest:
     }
 
     def __init__(self, project_id=None, domain_id=None):
-        """CancelProjectDomainRequest
+        r"""CancelProjectDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CancelProjectDomainRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CancelProjectDomainRequest.
+        r"""Gets the project_id of this CancelProjectDomainRequest.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class CancelProjectDomainRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CancelProjectDomainRequest.
+        r"""Sets the project_id of this CancelProjectDomainRequest.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class CancelProjectDomainRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CancelProjectDomainRequest.
+        r"""Gets the domain_id of this CancelProjectDomainRequest.
 
         领域id
 
@@ -81,7 +81,7 @@ class CancelProjectDomainRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CancelProjectDomainRequest.
+        r"""Sets the domain_id of this CancelProjectDomainRequest.
 
         领域id
 

@@ -31,7 +31,7 @@ class ChangeInstanceNetwork:
     }
 
     def __init__(self, type=None, security_groups=None, nics=None, server_id=None):
-        """ChangeInstanceNetwork
+        r"""ChangeInstanceNetwork
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangeInstanceNetwork:
 
     @property
     def type(self):
-        """Gets the type of this ChangeInstanceNetwork.
+        r"""Gets the type of this ChangeInstanceNetwork.
 
         云堡垒机实例状态，枚举值如下： - create  创建 - renewals  续费 - change  扩容
 
@@ -72,7 +72,7 @@ class ChangeInstanceNetwork:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChangeInstanceNetwork.
+        r"""Sets the type of this ChangeInstanceNetwork.
 
         云堡垒机实例状态，枚举值如下： - create  创建 - renewals  续费 - change  扩容
 
@@ -83,7 +83,7 @@ class ChangeInstanceNetwork:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ChangeInstanceNetwork.
+        r"""Gets the security_groups of this ChangeInstanceNetwork.
 
         云堡垒机实例修改后的安全组信息。
 
@@ -94,7 +94,7 @@ class ChangeInstanceNetwork:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ChangeInstanceNetwork.
+        r"""Sets the security_groups of this ChangeInstanceNetwork.
 
         云堡垒机实例修改后的安全组信息。
 
@@ -105,7 +105,7 @@ class ChangeInstanceNetwork:
 
     @property
     def nics(self):
-        """Gets the nics of this ChangeInstanceNetwork.
+        r"""Gets the nics of this ChangeInstanceNetwork.
 
         云堡垒机实例修改后的网卡信息。
 
@@ -116,7 +116,7 @@ class ChangeInstanceNetwork:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this ChangeInstanceNetwork.
+        r"""Sets the nics of this ChangeInstanceNetwork.
 
         云堡垒机实例修改后的网卡信息。
 
@@ -127,7 +127,7 @@ class ChangeInstanceNetwork:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeInstanceNetwork.
+        r"""Gets the server_id of this ChangeInstanceNetwork.
 
         云堡垒机实例ID。云堡垒机实例状态为renewals或change时必传。
 
@@ -138,7 +138,7 @@ class ChangeInstanceNetwork:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeInstanceNetwork.
+        r"""Sets the server_id of this ChangeInstanceNetwork.
 
         云堡垒机实例ID。云堡垒机实例状态为renewals或change时必传。
 

@@ -29,7 +29,7 @@ class CreateTopicRequestBody:
     }
 
     def __init__(self, name=None, display_name=None, enterprise_project_id=None):
-        """CreateTopicRequestBody
+        r"""CreateTopicRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateTopicRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateTopicRequestBody.
+        r"""Gets the name of this CreateTopicRequestBody.
 
         创建topic的名字。Topic名称只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度为1到255个字符。
 
@@ -66,7 +66,7 @@ class CreateTopicRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTopicRequestBody.
+        r"""Sets the name of this CreateTopicRequestBody.
 
         创建topic的名字。Topic名称只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度为1到255个字符。
 
@@ -77,7 +77,7 @@ class CreateTopicRequestBody:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateTopicRequestBody.
+        r"""Gets the display_name of this CreateTopicRequestBody.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。默认值为空。
 
@@ -88,7 +88,7 @@ class CreateTopicRequestBody:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateTopicRequestBody.
+        r"""Sets the display_name of this CreateTopicRequestBody.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。默认值为空。
 
@@ -99,7 +99,7 @@ class CreateTopicRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateTopicRequestBody.
+        r"""Gets the enterprise_project_id of this CreateTopicRequestBody.
 
         企业项目ID。非必选参数，当企业项目开关打开时需要传入该参数。
 
@@ -110,7 +110,7 @@ class CreateTopicRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateTopicRequestBody.
+        r"""Sets the enterprise_project_id of this CreateTopicRequestBody.
 
         企业项目ID。非必选参数，当企业项目开关打开时需要传入该参数。
 

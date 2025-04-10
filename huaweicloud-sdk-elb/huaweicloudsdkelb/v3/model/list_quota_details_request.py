@@ -25,7 +25,7 @@ class ListQuotaDetailsRequest:
     }
 
     def __init__(self, quota_key=None):
-        """ListQuotaDetailsRequest
+        r"""ListQuotaDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListQuotaDetailsRequest:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this ListQuotaDetailsRequest.
+        r"""Gets the quota_key of this ListQuotaDetailsRequest.
 
         资源类型。  取值： loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener。  支持多值查询，查询条件格式：quota_key=xxx&quota_key=xxx。
 
@@ -54,7 +54,7 @@ class ListQuotaDetailsRequest:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this ListQuotaDetailsRequest.
+        r"""Sets the quota_key of this ListQuotaDetailsRequest.
 
         资源类型。  取值： loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener。  支持多值查询，查询条件格式：quota_key=xxx&quota_key=xxx。
 

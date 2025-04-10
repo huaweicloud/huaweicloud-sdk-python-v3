@@ -28,7 +28,7 @@ class ShowSkillListResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None):
-        """ShowSkillListResponse
+        r"""ShowSkillListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSkillListResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowSkillListResponse.
+        r"""Gets the data of this ShowSkillListResponse.
 
         技能列表
 
@@ -62,7 +62,7 @@ class ShowSkillListResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowSkillListResponse.
+        r"""Sets the data of this ShowSkillListResponse.
 
         技能列表
 
@@ -73,7 +73,7 @@ class ShowSkillListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowSkillListResponse.
+        r"""Gets the total of this ShowSkillListResponse.
 
         总数量
 
@@ -84,7 +84,7 @@ class ShowSkillListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowSkillListResponse.
+        r"""Sets the total of this ShowSkillListResponse.
 
         总数量
 

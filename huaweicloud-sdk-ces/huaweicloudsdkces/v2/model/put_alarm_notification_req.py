@@ -33,7 +33,7 @@ class PutAlarmNotificationReq:
     }
 
     def __init__(self, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
-        """PutAlarmNotificationReq
+        r"""PutAlarmNotificationReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PutAlarmNotificationReq:
 
     @property
     def notification_enabled(self):
-        """Gets the notification_enabled of this PutAlarmNotificationReq.
+        r"""Gets the notification_enabled of this PutAlarmNotificationReq.
 
         是否开启告警通知
 
@@ -81,7 +81,7 @@ class PutAlarmNotificationReq:
 
     @notification_enabled.setter
     def notification_enabled(self, notification_enabled):
-        """Sets the notification_enabled of this PutAlarmNotificationReq.
+        r"""Sets the notification_enabled of this PutAlarmNotificationReq.
 
         是否开启告警通知
 
@@ -92,7 +92,7 @@ class PutAlarmNotificationReq:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this PutAlarmNotificationReq.
+        r"""Gets the alarm_notifications of this PutAlarmNotificationReq.
 
         告警触发的动作
 
@@ -103,7 +103,7 @@ class PutAlarmNotificationReq:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this PutAlarmNotificationReq.
+        r"""Sets the alarm_notifications of this PutAlarmNotificationReq.
 
         告警触发的动作
 
@@ -114,7 +114,7 @@ class PutAlarmNotificationReq:
 
     @property
     def ok_notifications(self):
-        """Gets the ok_notifications of this PutAlarmNotificationReq.
+        r"""Gets the ok_notifications of this PutAlarmNotificationReq.
 
         告警恢复触发的动作
 
@@ -125,7 +125,7 @@ class PutAlarmNotificationReq:
 
     @ok_notifications.setter
     def ok_notifications(self, ok_notifications):
-        """Sets the ok_notifications of this PutAlarmNotificationReq.
+        r"""Sets the ok_notifications of this PutAlarmNotificationReq.
 
         告警恢复触发的动作
 
@@ -136,7 +136,7 @@ class PutAlarmNotificationReq:
 
     @property
     def notification_begin_time(self):
-        """Gets the notification_begin_time of this PutAlarmNotificationReq.
+        r"""Gets the notification_begin_time of this PutAlarmNotificationReq.
 
         告警通知开启时间
 
@@ -147,7 +147,7 @@ class PutAlarmNotificationReq:
 
     @notification_begin_time.setter
     def notification_begin_time(self, notification_begin_time):
-        """Sets the notification_begin_time of this PutAlarmNotificationReq.
+        r"""Sets the notification_begin_time of this PutAlarmNotificationReq.
 
         告警通知开启时间
 
@@ -158,7 +158,7 @@ class PutAlarmNotificationReq:
 
     @property
     def notification_end_time(self):
-        """Gets the notification_end_time of this PutAlarmNotificationReq.
+        r"""Gets the notification_end_time of this PutAlarmNotificationReq.
 
         告警通知关闭时间
 
@@ -169,7 +169,7 @@ class PutAlarmNotificationReq:
 
     @notification_end_time.setter
     def notification_end_time(self, notification_end_time):
-        """Sets the notification_end_time of this PutAlarmNotificationReq.
+        r"""Sets the notification_end_time of this PutAlarmNotificationReq.
 
         告警通知关闭时间
 

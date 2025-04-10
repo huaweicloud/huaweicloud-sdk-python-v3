@@ -25,7 +25,7 @@ class KeystoneShowSecurityComplianceRequest:
     }
 
     def __init__(self, domain_id=None):
-        """KeystoneShowSecurityComplianceRequest
+        r"""KeystoneShowSecurityComplianceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneShowSecurityComplianceRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneShowSecurityComplianceRequest.
+        r"""Gets the domain_id of this KeystoneShowSecurityComplianceRequest.
 
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class KeystoneShowSecurityComplianceRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneShowSecurityComplianceRequest.
+        r"""Sets the domain_id of this KeystoneShowSecurityComplianceRequest.
 
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

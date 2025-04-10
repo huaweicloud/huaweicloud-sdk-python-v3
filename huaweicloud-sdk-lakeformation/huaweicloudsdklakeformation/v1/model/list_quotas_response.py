@@ -28,7 +28,7 @@ class ListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_request_id=None):
-        """ListQuotasResponse
+        r"""ListQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListQuotasResponse.
+        r"""Gets the body of this ListQuotasResponse.
 
         :return: The body of this ListQuotasResponse.
         :rtype: object
@@ -60,7 +60,7 @@ class ListQuotasResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListQuotasResponse.
+        r"""Sets the body of this ListQuotasResponse.
 
         :param body: The body of this ListQuotasResponse.
         :type body: object
@@ -69,7 +69,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListQuotasResponse.
+        r"""Gets the x_request_id of this ListQuotasResponse.
 
         :return: The x_request_id of this ListQuotasResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ListQuotasResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListQuotasResponse.
+        r"""Sets the x_request_id of this ListQuotasResponse.
 
         :param x_request_id: The x_request_id of this ListQuotasResponse.
         :type x_request_id: str

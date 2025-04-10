@@ -25,7 +25,7 @@ class AgencyCreateReq:
     }
 
     def __init__(self, type=None):
-        """AgencyCreateReq
+        r"""AgencyCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgencyCreateReq:
 
     @property
     def type(self):
-        """Gets the type of this AgencyCreateReq.
+        r"""Gets the type of this AgencyCreateReq.
 
         服务委托应用场景类型
 
@@ -53,7 +53,7 @@ class AgencyCreateReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AgencyCreateReq.
+        r"""Sets the type of this AgencyCreateReq.
 
         服务委托应用场景类型
 

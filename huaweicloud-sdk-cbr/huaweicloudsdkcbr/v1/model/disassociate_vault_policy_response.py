@@ -26,7 +26,7 @@ class DisassociateVaultPolicyResponse(SdkResponse):
     }
 
     def __init__(self, dissociate_policy=None):
-        """DisassociateVaultPolicyResponse
+        r"""DisassociateVaultPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisassociateVaultPolicyResponse(SdkResponse):
 
     @property
     def dissociate_policy(self):
-        """Gets the dissociate_policy of this DisassociateVaultPolicyResponse.
+        r"""Gets the dissociate_policy of this DisassociateVaultPolicyResponse.
 
         :return: The dissociate_policy of this DisassociateVaultPolicyResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
@@ -53,7 +53,7 @@ class DisassociateVaultPolicyResponse(SdkResponse):
 
     @dissociate_policy.setter
     def dissociate_policy(self, dissociate_policy):
-        """Sets the dissociate_policy of this DisassociateVaultPolicyResponse.
+        r"""Sets the dissociate_policy of this DisassociateVaultPolicyResponse.
 
         :param dissociate_policy: The dissociate_policy of this DisassociateVaultPolicyResponse.
         :type dissociate_policy: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`

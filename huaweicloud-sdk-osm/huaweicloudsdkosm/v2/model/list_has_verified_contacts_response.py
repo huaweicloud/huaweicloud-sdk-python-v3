@@ -28,7 +28,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, contact_list=None):
-        """ListHasVerifiedContactsResponse
+        r"""ListHasVerifiedContactsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListHasVerifiedContactsResponse.
+        r"""Gets the count of this ListHasVerifiedContactsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListHasVerifiedContactsResponse.
+        r"""Sets the count of this ListHasVerifiedContactsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
 
     @property
     def contact_list(self):
-        """Gets the contact_list of this ListHasVerifiedContactsResponse.
+        r"""Gets the contact_list of this ListHasVerifiedContactsResponse.
 
         联系方式列表
 
@@ -84,7 +84,7 @@ class ListHasVerifiedContactsResponse(SdkResponse):
 
     @contact_list.setter
     def contact_list(self, contact_list):
-        """Sets the contact_list of this ListHasVerifiedContactsResponse.
+        r"""Sets the contact_list of this ListHasVerifiedContactsResponse.
 
         联系方式列表
 

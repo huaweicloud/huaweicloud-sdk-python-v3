@@ -29,7 +29,7 @@ class DeployCertificateRequestBody:
     }
 
     def __init__(self, project_name=None, service_name=None, resources=None):
-        """DeployCertificateRequestBody
+        r"""DeployCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeployCertificateRequestBody:
 
     @property
     def project_name(self):
-        """Gets the project_name of this DeployCertificateRequestBody.
+        r"""Gets the project_name of this DeployCertificateRequestBody.
 
         部署的资源所在的项目名称，若在主项目下，则该值为region id。
 
@@ -66,7 +66,7 @@ class DeployCertificateRequestBody:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this DeployCertificateRequestBody.
+        r"""Sets the project_name of this DeployCertificateRequestBody.
 
         部署的资源所在的项目名称，若在主项目下，则该值为region id。
 
@@ -77,7 +77,7 @@ class DeployCertificateRequestBody:
 
     @property
     def service_name(self):
-        """Gets the service_name of this DeployCertificateRequestBody.
+        r"""Gets the service_name of this DeployCertificateRequestBody.
 
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
@@ -88,7 +88,7 @@ class DeployCertificateRequestBody:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this DeployCertificateRequestBody.
+        r"""Sets the service_name of this DeployCertificateRequestBody.
 
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
@@ -99,7 +99,7 @@ class DeployCertificateRequestBody:
 
     @property
     def resources(self):
-        """Gets the resources of this DeployCertificateRequestBody.
+        r"""Gets the resources of this DeployCertificateRequestBody.
 
         所要部署的资源列表。
 
@@ -110,7 +110,7 @@ class DeployCertificateRequestBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this DeployCertificateRequestBody.
+        r"""Sets the resources of this DeployCertificateRequestBody.
 
         所要部署的资源列表。
 

@@ -25,7 +25,7 @@ class AgentUpdate:
     }
 
     def __init__(self, status=None):
-        """AgentUpdate
+        r"""AgentUpdate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgentUpdate:
 
     @property
     def status(self):
-        """Gets the status of this AgentUpdate.
+        r"""Gets the status of this AgentUpdate.
 
         客户端状态，当前只支持卸载，由客户端被卸载时自动触发
 
@@ -53,7 +53,7 @@ class AgentUpdate:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AgentUpdate.
+        r"""Sets the status of this AgentUpdate.
 
         客户端状态，当前只支持卸载，由客户端被卸载时自动触发
 

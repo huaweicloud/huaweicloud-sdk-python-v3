@@ -27,7 +27,7 @@ class DeprecatedAPIRisks:
     }
 
     def __init__(self, url=None, user_agent=None):
-        """DeprecatedAPIRisks
+        r"""DeprecatedAPIRisks
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeprecatedAPIRisks:
 
     @property
     def url(self):
-        """Gets the url of this DeprecatedAPIRisks.
+        r"""Gets the url of this DeprecatedAPIRisks.
 
         请求路径，如/apis/policy/v1beta1/podsecuritypolicies
 
@@ -61,7 +61,7 @@ class DeprecatedAPIRisks:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DeprecatedAPIRisks.
+        r"""Sets the url of this DeprecatedAPIRisks.
 
         请求路径，如/apis/policy/v1beta1/podsecuritypolicies
 
@@ -72,7 +72,7 @@ class DeprecatedAPIRisks:
 
     @property
     def user_agent(self):
-        """Gets the user_agent of this DeprecatedAPIRisks.
+        r"""Gets the user_agent of this DeprecatedAPIRisks.
 
         客户端信息
 
@@ -83,7 +83,7 @@ class DeprecatedAPIRisks:
 
     @user_agent.setter
     def user_agent(self, user_agent):
-        """Sets the user_agent of this DeprecatedAPIRisks.
+        r"""Sets the user_agent of this DeprecatedAPIRisks.
 
         客户端信息
 

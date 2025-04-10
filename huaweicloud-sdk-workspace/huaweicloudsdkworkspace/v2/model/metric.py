@@ -27,7 +27,7 @@ class Metric:
     }
 
     def __init__(self, metric_name=None, metric_value=None):
-        """Metric
+        r"""Metric
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Metric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this Metric.
+        r"""Gets the metric_name of this Metric.
 
         指标名称
 
@@ -61,7 +61,7 @@ class Metric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this Metric.
+        r"""Sets the metric_name of this Metric.
 
         指标名称
 
@@ -72,7 +72,7 @@ class Metric:
 
     @property
     def metric_value(self):
-        """Gets the metric_value of this Metric.
+        r"""Gets the metric_value of this Metric.
 
         指标值
 
@@ -83,7 +83,7 @@ class Metric:
 
     @metric_value.setter
     def metric_value(self, metric_value):
-        """Sets the metric_value of this Metric.
+        r"""Sets the metric_value of this Metric.
 
         指标值
 

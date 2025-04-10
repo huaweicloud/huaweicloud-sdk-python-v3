@@ -28,7 +28,7 @@ class Template:
     }
 
     def __init__(self):
-        """Template
+        r"""Template
 
         The model defined in huaweicloud sdk
 

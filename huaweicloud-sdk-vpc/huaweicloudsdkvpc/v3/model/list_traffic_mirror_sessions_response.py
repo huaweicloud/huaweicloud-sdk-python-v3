@@ -30,7 +30,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
     }
 
     def __init__(self, traffic_mirror_sessions=None, page_info=None, request_id=None):
-        """ListTrafficMirrorSessionsResponse
+        r"""ListTrafficMirrorSessionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
 
     @property
     def traffic_mirror_sessions(self):
-        """Gets the traffic_mirror_sessions of this ListTrafficMirrorSessionsResponse.
+        r"""Gets the traffic_mirror_sessions of this ListTrafficMirrorSessionsResponse.
 
         流量镜像会话
 
@@ -69,7 +69,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
 
     @traffic_mirror_sessions.setter
     def traffic_mirror_sessions(self, traffic_mirror_sessions):
-        """Sets the traffic_mirror_sessions of this ListTrafficMirrorSessionsResponse.
+        r"""Sets the traffic_mirror_sessions of this ListTrafficMirrorSessionsResponse.
 
         流量镜像会话
 
@@ -80,7 +80,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListTrafficMirrorSessionsResponse.
+        r"""Gets the page_info of this ListTrafficMirrorSessionsResponse.
 
         :return: The page_info of this ListTrafficMirrorSessionsResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListTrafficMirrorSessionsResponse.
+        r"""Sets the page_info of this ListTrafficMirrorSessionsResponse.
 
         :param page_info: The page_info of this ListTrafficMirrorSessionsResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTrafficMirrorSessionsResponse.
+        r"""Gets the request_id of this ListTrafficMirrorSessionsResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ListTrafficMirrorSessionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTrafficMirrorSessionsResponse.
+        r"""Sets the request_id of this ListTrafficMirrorSessionsResponse.
 
         请求ID
 

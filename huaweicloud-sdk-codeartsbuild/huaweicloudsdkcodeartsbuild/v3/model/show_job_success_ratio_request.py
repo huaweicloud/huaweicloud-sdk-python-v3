@@ -29,7 +29,7 @@ class ShowJobSuccessRatioRequest:
     }
 
     def __init__(self, job_id=None, start_time=None, end_time=None):
-        """ShowJobSuccessRatioRequest
+        r"""ShowJobSuccessRatioRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowJobSuccessRatioRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobSuccessRatioRequest.
+        r"""Gets the job_id of this ShowJobSuccessRatioRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -65,7 +65,7 @@ class ShowJobSuccessRatioRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobSuccessRatioRequest.
+        r"""Sets the job_id of this ShowJobSuccessRatioRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -76,7 +76,7 @@ class ShowJobSuccessRatioRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowJobSuccessRatioRequest.
+        r"""Gets the start_time of this ShowJobSuccessRatioRequest.
 
         区间开始时间，格式yyyy-MM-dd。
 
@@ -87,7 +87,7 @@ class ShowJobSuccessRatioRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowJobSuccessRatioRequest.
+        r"""Sets the start_time of this ShowJobSuccessRatioRequest.
 
         区间开始时间，格式yyyy-MM-dd。
 
@@ -98,7 +98,7 @@ class ShowJobSuccessRatioRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobSuccessRatioRequest.
+        r"""Gets the end_time of this ShowJobSuccessRatioRequest.
 
         区间结束时间，格式yyyy-MM-dd。
 
@@ -109,7 +109,7 @@ class ShowJobSuccessRatioRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobSuccessRatioRequest.
+        r"""Sets the end_time of this ShowJobSuccessRatioRequest.
 
         区间结束时间，格式yyyy-MM-dd。
 

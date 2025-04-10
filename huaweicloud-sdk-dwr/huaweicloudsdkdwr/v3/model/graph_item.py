@@ -31,7 +31,7 @@ class GraphItem:
     }
 
     def __init__(self, name=None, created_at=None, graph_urn=None, id=None):
-        """GraphItem
+        r"""GraphItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GraphItem:
 
     @property
     def name(self):
-        """Gets the name of this GraphItem.
+        r"""Gets the name of this GraphItem.
 
         工作流的名称。
 
@@ -75,7 +75,7 @@ class GraphItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GraphItem.
+        r"""Sets the name of this GraphItem.
 
         工作流的名称。
 
@@ -86,7 +86,7 @@ class GraphItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GraphItem.
+        r"""Gets the created_at of this GraphItem.
 
         系统记录的创建工作流模板的时间。
 
@@ -97,7 +97,7 @@ class GraphItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GraphItem.
+        r"""Sets the created_at of this GraphItem.
 
         系统记录的创建工作流模板的时间。
 
@@ -108,7 +108,7 @@ class GraphItem:
 
     @property
     def graph_urn(self):
-        """Gets the graph_urn of this GraphItem.
+        r"""Gets the graph_urn of this GraphItem.
 
         工作流的URN。
 
@@ -119,7 +119,7 @@ class GraphItem:
 
     @graph_urn.setter
     def graph_urn(self, graph_urn):
-        """Sets the graph_urn of this GraphItem.
+        r"""Sets the graph_urn of this GraphItem.
 
         工作流的URN。
 
@@ -130,7 +130,7 @@ class GraphItem:
 
     @property
     def id(self):
-        """Gets the id of this GraphItem.
+        r"""Gets the id of this GraphItem.
 
         工作流ID
 
@@ -141,7 +141,7 @@ class GraphItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GraphItem.
+        r"""Sets the id of this GraphItem.
 
         工作流ID
 

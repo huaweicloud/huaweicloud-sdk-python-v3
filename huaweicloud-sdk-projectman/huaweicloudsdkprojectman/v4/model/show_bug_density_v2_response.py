@@ -36,7 +36,7 @@ class ShowBugDensityV2Response(SdkResponse):
     }
 
     def __init__(self, dividend_value=None, divisor_value=None, metric_name=None, metric_value=None, project_id=None, project_name=None):
-        """ShowBugDensityV2Response
+        r"""ShowBugDensityV2Response
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @property
     def dividend_value(self):
-        """Gets the dividend_value of this ShowBugDensityV2Response.
+        r"""Gets the dividend_value of this ShowBugDensityV2Response.
 
         指标分子数值
 
@@ -90,7 +90,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @dividend_value.setter
     def dividend_value(self, dividend_value):
-        """Sets the dividend_value of this ShowBugDensityV2Response.
+        r"""Sets the dividend_value of this ShowBugDensityV2Response.
 
         指标分子数值
 
@@ -101,7 +101,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @property
     def divisor_value(self):
-        """Gets the divisor_value of this ShowBugDensityV2Response.
+        r"""Gets the divisor_value of this ShowBugDensityV2Response.
 
         指标分母数值
 
@@ -112,7 +112,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @divisor_value.setter
     def divisor_value(self, divisor_value):
-        """Sets the divisor_value of this ShowBugDensityV2Response.
+        r"""Sets the divisor_value of this ShowBugDensityV2Response.
 
         指标分母数值
 
@@ -123,7 +123,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ShowBugDensityV2Response.
+        r"""Gets the metric_name of this ShowBugDensityV2Response.
 
         指标名称
 
@@ -134,7 +134,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowBugDensityV2Response.
+        r"""Sets the metric_name of this ShowBugDensityV2Response.
 
         指标名称
 
@@ -145,7 +145,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @property
     def metric_value(self):
-        """Gets the metric_value of this ShowBugDensityV2Response.
+        r"""Gets the metric_value of this ShowBugDensityV2Response.
 
         指标数值
 
@@ -156,7 +156,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @metric_value.setter
     def metric_value(self, metric_value):
-        """Sets the metric_value of this ShowBugDensityV2Response.
+        r"""Sets the metric_value of this ShowBugDensityV2Response.
 
         指标数值
 
@@ -167,7 +167,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowBugDensityV2Response.
+        r"""Gets the project_id of this ShowBugDensityV2Response.
 
         项目ID
 
@@ -178,7 +178,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowBugDensityV2Response.
+        r"""Sets the project_id of this ShowBugDensityV2Response.
 
         项目ID
 
@@ -189,7 +189,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowBugDensityV2Response.
+        r"""Gets the project_name of this ShowBugDensityV2Response.
 
         项目名称
 
@@ -200,7 +200,7 @@ class ShowBugDensityV2Response(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowBugDensityV2Response.
+        r"""Sets the project_name of this ShowBugDensityV2Response.
 
         项目名称
 

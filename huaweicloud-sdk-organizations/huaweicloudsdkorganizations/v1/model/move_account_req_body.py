@@ -27,7 +27,7 @@ class MoveAccountReqBody:
     }
 
     def __init__(self, source_parent_id=None, destination_parent_id=None):
-        """MoveAccountReqBody
+        r"""MoveAccountReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MoveAccountReqBody:
 
     @property
     def source_parent_id(self):
-        """Gets the source_parent_id of this MoveAccountReqBody.
+        r"""Gets the source_parent_id of this MoveAccountReqBody.
 
         要移出账号的根或组织单元的唯一标识符（ID）。
 
@@ -59,7 +59,7 @@ class MoveAccountReqBody:
 
     @source_parent_id.setter
     def source_parent_id(self, source_parent_id):
-        """Sets the source_parent_id of this MoveAccountReqBody.
+        r"""Sets the source_parent_id of this MoveAccountReqBody.
 
         要移出账号的根或组织单元的唯一标识符（ID）。
 
@@ -70,7 +70,7 @@ class MoveAccountReqBody:
 
     @property
     def destination_parent_id(self):
-        """Gets the destination_parent_id of this MoveAccountReqBody.
+        r"""Gets the destination_parent_id of this MoveAccountReqBody.
 
         要移入账号的根或组织单元的唯一标识符（ID）。
 
@@ -81,7 +81,7 @@ class MoveAccountReqBody:
 
     @destination_parent_id.setter
     def destination_parent_id(self, destination_parent_id):
-        """Sets the destination_parent_id of this MoveAccountReqBody.
+        r"""Sets the destination_parent_id of this MoveAccountReqBody.
 
         要移入账号的根或组织单元的唯一标识符（ID）。
 

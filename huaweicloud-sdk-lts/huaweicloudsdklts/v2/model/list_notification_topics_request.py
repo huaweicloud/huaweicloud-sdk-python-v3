@@ -27,7 +27,7 @@ class ListNotificationTopicsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListNotificationTopicsRequest
+        r"""ListNotificationTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListNotificationTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNotificationTopicsRequest.
+        r"""Gets the offset of this ListNotificationTopicsRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -59,7 +59,7 @@ class ListNotificationTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNotificationTopicsRequest.
+        r"""Sets the offset of this ListNotificationTopicsRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -70,7 +70,7 @@ class ListNotificationTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNotificationTopicsRequest.
+        r"""Gets the limit of this ListNotificationTopicsRequest.
 
         每页数据量，最大值为100
 
@@ -81,7 +81,7 @@ class ListNotificationTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNotificationTopicsRequest.
+        r"""Sets the limit of this ListNotificationTopicsRequest.
 
         每页数据量，最大值为100
 

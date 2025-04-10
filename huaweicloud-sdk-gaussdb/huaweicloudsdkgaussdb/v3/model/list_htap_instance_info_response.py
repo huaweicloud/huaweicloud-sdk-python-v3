@@ -30,7 +30,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, instances=None, max_htap_instance_num_of_taurus=None):
-        """ListHtapInstanceInfoResponse
+        r"""ListHtapInstanceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListHtapInstanceInfoResponse.
+        r"""Gets the total of this ListHtapInstanceInfoResponse.
 
         HTAP实例个数。
 
@@ -69,7 +69,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListHtapInstanceInfoResponse.
+        r"""Sets the total of this ListHtapInstanceInfoResponse.
 
         HTAP实例个数。
 
@@ -80,7 +80,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListHtapInstanceInfoResponse.
+        r"""Gets the instances of this ListHtapInstanceInfoResponse.
 
         HTAP实例信息。
 
@@ -91,7 +91,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListHtapInstanceInfoResponse.
+        r"""Sets the instances of this ListHtapInstanceInfoResponse.
 
         HTAP实例信息。
 
@@ -102,7 +102,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
 
     @property
     def max_htap_instance_num_of_taurus(self):
-        """Gets the max_htap_instance_num_of_taurus of this ListHtapInstanceInfoResponse.
+        r"""Gets the max_htap_instance_num_of_taurus of this ListHtapInstanceInfoResponse.
 
         最大HTAP实例个数。
 
@@ -113,7 +113,7 @@ class ListHtapInstanceInfoResponse(SdkResponse):
 
     @max_htap_instance_num_of_taurus.setter
     def max_htap_instance_num_of_taurus(self, max_htap_instance_num_of_taurus):
-        """Sets the max_htap_instance_num_of_taurus of this ListHtapInstanceInfoResponse.
+        r"""Sets the max_htap_instance_num_of_taurus of this ListHtapInstanceInfoResponse.
 
         最大HTAP实例个数。
 

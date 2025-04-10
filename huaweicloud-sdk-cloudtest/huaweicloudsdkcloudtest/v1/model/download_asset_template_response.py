@@ -30,7 +30,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """DownloadAssetTemplateResponse
+        r"""DownloadAssetTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DownloadAssetTemplateResponse.
+        r"""Gets the code of this DownloadAssetTemplateResponse.
 
         :return: The code of this DownloadAssetTemplateResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DownloadAssetTemplateResponse.
+        r"""Sets the code of this DownloadAssetTemplateResponse.
 
         :param code: The code of this DownloadAssetTemplateResponse.
         :type code: str
@@ -76,7 +76,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DownloadAssetTemplateResponse.
+        r"""Gets the data of this DownloadAssetTemplateResponse.
 
         :return: The data of this DownloadAssetTemplateResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DownloadAssetTemplateResponse.
+        r"""Sets the data of this DownloadAssetTemplateResponse.
 
         :param data: The data of this DownloadAssetTemplateResponse.
         :type data: object
@@ -94,7 +94,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DownloadAssetTemplateResponse.
+        r"""Gets the message of this DownloadAssetTemplateResponse.
 
         :return: The message of this DownloadAssetTemplateResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DownloadAssetTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DownloadAssetTemplateResponse.
+        r"""Sets the message of this DownloadAssetTemplateResponse.
 
         :param message: The message of this DownloadAssetTemplateResponse.
         :type message: str

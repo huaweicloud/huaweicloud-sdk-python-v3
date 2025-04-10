@@ -33,7 +33,7 @@ class WeeklyCount:
     }
 
     def __init__(self, ddos_intercept_times=None, ddos_blackhole_times=None, max_attack_bps=None, max_attack_conns=None, period_start_date=None):
-        """WeeklyCount
+        r"""WeeklyCount
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class WeeklyCount:
 
     @property
     def ddos_intercept_times(self):
-        """Gets the ddos_intercept_times of this WeeklyCount.
+        r"""Gets the ddos_intercept_times of this WeeklyCount.
 
         DDoS拦截次数
 
@@ -77,7 +77,7 @@ class WeeklyCount:
 
     @ddos_intercept_times.setter
     def ddos_intercept_times(self, ddos_intercept_times):
-        """Sets the ddos_intercept_times of this WeeklyCount.
+        r"""Sets the ddos_intercept_times of this WeeklyCount.
 
         DDoS拦截次数
 
@@ -88,7 +88,7 @@ class WeeklyCount:
 
     @property
     def ddos_blackhole_times(self):
-        """Gets the ddos_blackhole_times of this WeeklyCount.
+        r"""Gets the ddos_blackhole_times of this WeeklyCount.
 
         DDoS黑洞次数
 
@@ -99,7 +99,7 @@ class WeeklyCount:
 
     @ddos_blackhole_times.setter
     def ddos_blackhole_times(self, ddos_blackhole_times):
-        """Sets the ddos_blackhole_times of this WeeklyCount.
+        r"""Sets the ddos_blackhole_times of this WeeklyCount.
 
         DDoS黑洞次数
 
@@ -110,7 +110,7 @@ class WeeklyCount:
 
     @property
     def max_attack_bps(self):
-        """Gets the max_attack_bps of this WeeklyCount.
+        r"""Gets the max_attack_bps of this WeeklyCount.
 
         最大攻击流量
 
@@ -121,7 +121,7 @@ class WeeklyCount:
 
     @max_attack_bps.setter
     def max_attack_bps(self, max_attack_bps):
-        """Sets the max_attack_bps of this WeeklyCount.
+        r"""Sets the max_attack_bps of this WeeklyCount.
 
         最大攻击流量
 
@@ -132,7 +132,7 @@ class WeeklyCount:
 
     @property
     def max_attack_conns(self):
-        """Gets the max_attack_conns of this WeeklyCount.
+        r"""Gets the max_attack_conns of this WeeklyCount.
 
         最大攻击连接数
 
@@ -143,7 +143,7 @@ class WeeklyCount:
 
     @max_attack_conns.setter
     def max_attack_conns(self, max_attack_conns):
-        """Sets the max_attack_conns of this WeeklyCount.
+        r"""Sets the max_attack_conns of this WeeklyCount.
 
         最大攻击连接数
 
@@ -154,7 +154,7 @@ class WeeklyCount:
 
     @property
     def period_start_date(self):
-        """Gets the period_start_date of this WeeklyCount.
+        r"""Gets the period_start_date of this WeeklyCount.
 
         开始时间
 
@@ -165,7 +165,7 @@ class WeeklyCount:
 
     @period_start_date.setter
     def period_start_date(self, period_start_date):
-        """Sets the period_start_date of this WeeklyCount.
+        r"""Sets the period_start_date of this WeeklyCount.
 
         开始时间
 

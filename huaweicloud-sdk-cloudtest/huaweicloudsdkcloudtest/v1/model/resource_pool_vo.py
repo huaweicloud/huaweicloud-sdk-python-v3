@@ -33,7 +33,7 @@ class ResourcePoolVo:
     }
 
     def __init__(self, id=None, name=None, type=None, selected=None, active_state=None):
-        """ResourcePoolVo
+        r"""ResourcePoolVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResourcePoolVo:
 
     @property
     def id(self):
-        """Gets the id of this ResourcePoolVo.
+        r"""Gets the id of this ResourcePoolVo.
 
         资源池ID
 
@@ -82,7 +82,7 @@ class ResourcePoolVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourcePoolVo.
+        r"""Sets the id of this ResourcePoolVo.
 
         资源池ID
 
@@ -93,7 +93,7 @@ class ResourcePoolVo:
 
     @property
     def name(self):
-        """Gets the name of this ResourcePoolVo.
+        r"""Gets the name of this ResourcePoolVo.
 
         资源池名称
 
@@ -104,7 +104,7 @@ class ResourcePoolVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourcePoolVo.
+        r"""Sets the name of this ResourcePoolVo.
 
         资源池名称
 
@@ -115,7 +115,7 @@ class ResourcePoolVo:
 
     @property
     def type(self):
-        """Gets the type of this ResourcePoolVo.
+        r"""Gets the type of this ResourcePoolVo.
 
         资源池类型（VM/DOCKER）
 
@@ -126,7 +126,7 @@ class ResourcePoolVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourcePoolVo.
+        r"""Sets the type of this ResourcePoolVo.
 
         资源池类型（VM/DOCKER）
 
@@ -137,7 +137,7 @@ class ResourcePoolVo:
 
     @property
     def selected(self):
-        """Gets the selected of this ResourcePoolVo.
+        r"""Gets the selected of this ResourcePoolVo.
 
         是否选中
 
@@ -148,7 +148,7 @@ class ResourcePoolVo:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this ResourcePoolVo.
+        r"""Sets the selected of this ResourcePoolVo.
 
         是否选中
 
@@ -159,7 +159,7 @@ class ResourcePoolVo:
 
     @property
     def active_state(self):
-        """Gets the active_state of this ResourcePoolVo.
+        r"""Gets the active_state of this ResourcePoolVo.
 
         资源池状态
 
@@ -170,7 +170,7 @@ class ResourcePoolVo:
 
     @active_state.setter
     def active_state(self, active_state):
-        """Sets the active_state of this ResourcePoolVo.
+        r"""Sets the active_state of this ResourcePoolVo.
 
         资源池状态
 

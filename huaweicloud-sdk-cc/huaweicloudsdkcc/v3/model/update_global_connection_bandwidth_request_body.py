@@ -25,7 +25,7 @@ class UpdateGlobalConnectionBandwidthRequestBody:
     }
 
     def __init__(self, globalconnection_bandwidth=None):
-        """UpdateGlobalConnectionBandwidthRequestBody
+        r"""UpdateGlobalConnectionBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateGlobalConnectionBandwidthRequestBody:
 
     @property
     def globalconnection_bandwidth(self):
-        """Gets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthRequestBody.
+        r"""Gets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthRequestBody.
 
         :return: The globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateGlobalConnectionBandwidth`
@@ -51,7 +51,7 @@ class UpdateGlobalConnectionBandwidthRequestBody:
 
     @globalconnection_bandwidth.setter
     def globalconnection_bandwidth(self, globalconnection_bandwidth):
-        """Sets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthRequestBody.
+        r"""Sets the globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthRequestBody.
 
         :param globalconnection_bandwidth: The globalconnection_bandwidth of this UpdateGlobalConnectionBandwidthRequestBody.
         :type globalconnection_bandwidth: :class:`huaweicloudsdkcc.v3.UpdateGlobalConnectionBandwidth`

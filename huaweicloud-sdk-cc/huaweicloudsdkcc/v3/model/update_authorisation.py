@@ -27,7 +27,7 @@ class UpdateAuthorisation:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateAuthorisation
+        r"""UpdateAuthorisation
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAuthorisation:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAuthorisation.
+        r"""Gets the name of this UpdateAuthorisation.
 
         实例名字。
 
@@ -61,7 +61,7 @@ class UpdateAuthorisation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAuthorisation.
+        r"""Sets the name of this UpdateAuthorisation.
 
         实例名字。
 
@@ -72,7 +72,7 @@ class UpdateAuthorisation:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAuthorisation.
+        r"""Gets the description of this UpdateAuthorisation.
 
         实例描述。不支持 <>。
 
@@ -83,7 +83,7 @@ class UpdateAuthorisation:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAuthorisation.
+        r"""Sets the description of this UpdateAuthorisation.
 
         实例描述。不支持 <>。
 

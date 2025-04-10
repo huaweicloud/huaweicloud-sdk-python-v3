@@ -26,7 +26,7 @@ class ListLifeCycleHooksResponse(SdkResponse):
     }
 
     def __init__(self, lifecycle_hooks=None):
-        """ListLifeCycleHooksResponse
+        r"""ListLifeCycleHooksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLifeCycleHooksResponse(SdkResponse):
 
     @property
     def lifecycle_hooks(self):
-        """Gets the lifecycle_hooks of this ListLifeCycleHooksResponse.
+        r"""Gets the lifecycle_hooks of this ListLifeCycleHooksResponse.
 
         生命周期挂钩列表。
 
@@ -55,7 +55,7 @@ class ListLifeCycleHooksResponse(SdkResponse):
 
     @lifecycle_hooks.setter
     def lifecycle_hooks(self, lifecycle_hooks):
-        """Sets the lifecycle_hooks of this ListLifeCycleHooksResponse.
+        r"""Sets the lifecycle_hooks of this ListLifeCycleHooksResponse.
 
         生命周期挂钩列表。
 

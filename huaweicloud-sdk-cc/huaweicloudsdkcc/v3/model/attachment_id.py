@@ -25,7 +25,7 @@ class AttachmentId:
     }
 
     def __init__(self, attachment_id=None):
-        """AttachmentId
+        r"""AttachmentId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AttachmentId:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this AttachmentId.
+        r"""Gets the attachment_id of this AttachmentId.
 
         中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
@@ -54,7 +54,7 @@ class AttachmentId:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this AttachmentId.
+        r"""Sets the attachment_id of this AttachmentId.
 
         中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 

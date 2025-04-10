@@ -34,7 +34,7 @@ class IamClient(Client):
         return client_builder
 
     def get_account_summary_v5(self, request):
-        """获取此账号中IAM实体使用情况和IAM配额的摘要信息
+        r"""获取此账号中IAM实体使用情况和IAM配额的摘要信息
 
         该接口可以用于获取此账号中IAM实体使用情况和IAM配额的摘要信息。
         
@@ -97,7 +97,7 @@ class IamClient(Client):
         return http_info
 
     def create_agency_v5(self, request):
-        """创建信任委托
+        r"""创建信任委托
 
         该接口可以用于创建信任委托。
         
@@ -164,7 +164,7 @@ class IamClient(Client):
         return http_info
 
     def delete_agency_v5(self, request):
-        """删除信任委托
+        r"""删除信任委托
 
         该接口可以用于删除信任委托。
         
@@ -229,7 +229,7 @@ class IamClient(Client):
         return http_info
 
     def get_agency_v5(self, request):
-        """查询委托或信任委托详情
+        r"""查询委托或信任委托详情
 
         该接口可以用于查询委托或信任委托详情。
         
@@ -294,7 +294,7 @@ class IamClient(Client):
         return http_info
 
     def list_agencies_v5(self, request):
-        """查询指定条件下的委托及信任委托列表
+        r"""查询指定条件下的委托及信任委托列表
 
         该接口可以用于查询指定条件下的委托及信任委托列表。
         
@@ -363,7 +363,7 @@ class IamClient(Client):
         return http_info
 
     def update_agency_v5(self, request):
-        """修改信任委托
+        r"""修改信任委托
 
         该接口可以用于修改信任委托。
         
@@ -430,7 +430,7 @@ class IamClient(Client):
         return http_info
 
     def update_trust_policy_v5(self, request):
-        """修改信任委托信任策略
+        r"""修改信任委托信任策略
 
         该接口可以用于修改信任委托信任策略。
         
@@ -497,7 +497,7 @@ class IamClient(Client):
         return http_info
 
     def get_asymmetric_signature_switch_v5(self, request):
-        """获取账号非对称签名开关状态
+        r"""获取账号非对称签名开关状态
 
         该接口用于获取账号非对称签名开关的状态。
         
@@ -560,7 +560,7 @@ class IamClient(Client):
         return http_info
 
     def set_asymmetric_signature_switch_v5(self, request):
-        """设置账号开启或关闭非对称签名
+        r"""设置账号开启或关闭非对称签名
 
         该接口用于设置账号开启或关闭非对称签名功能。
         
@@ -625,7 +625,7 @@ class IamClient(Client):
         return http_info
 
     def get_authorization_schema_v5(self, request):
-        """查询指定服务授权概要
+        r"""查询指定服务授权概要
 
         该接口可以用于查询指定云服务的授权概要。
         
@@ -690,7 +690,7 @@ class IamClient(Client):
         return http_info
 
     def list_registered_services_for_auth_schema_v5(self, request):
-        """查询已注册云服务列表
+        r"""查询已注册云服务列表
 
         该接口可以用于查询已注册云服务列表。
         
@@ -757,7 +757,7 @@ class IamClient(Client):
         return http_info
 
     def add_user_to_group_v5(self, request):
-        """添加IAM用户到用户组
+        r"""添加IAM用户到用户组
 
         该接口可以用于添加IAM用户到用户组。
         
@@ -824,7 +824,7 @@ class IamClient(Client):
         return http_info
 
     def create_group_v5(self, request):
-        """创建用户组
+        r"""创建用户组
 
         该接口可以用于创建用户组。
         
@@ -889,7 +889,7 @@ class IamClient(Client):
         return http_info
 
     def delete_group_v5(self, request):
-        """删除用户组
+        r"""删除用户组
 
         该接口可以用于删除用户组。
         
@@ -954,7 +954,7 @@ class IamClient(Client):
         return http_info
 
     def list_groups_v5(self, request):
-        """查询用户组列表
+        r"""查询用户组列表
 
         该接口可以用于查询用户组列表。
         
@@ -1023,7 +1023,7 @@ class IamClient(Client):
         return http_info
 
     def remove_user_from_group_v5(self, request):
-        """移除用户组中的IAM用户
+        r"""移除用户组中的IAM用户
 
         该接口可以用于移除用户组中的IAM用户。
         
@@ -1090,7 +1090,7 @@ class IamClient(Client):
         return http_info
 
     def show_group_v5(self, request):
-        """查询用户组详情
+        r"""查询用户组详情
 
         该接口可以用于查询用户组详情。
         
@@ -1155,7 +1155,7 @@ class IamClient(Client):
         return http_info
 
     def update_group_v5(self, request):
-        """修改用户组
+        r"""修改用户组
 
         该接口可以用于修改用户组信息。
         
@@ -1222,7 +1222,7 @@ class IamClient(Client):
         return http_info
 
     def create_virtual_mfa_device_v5(self, request):
-        """创建MFA设备
+        r"""创建MFA设备
 
         该接口可以用于创建MFA设备。
         
@@ -1287,7 +1287,7 @@ class IamClient(Client):
         return http_info
 
     def delete_virtual_mfa_device_v5(self, request):
-        """删除MFA设备
+        r"""删除MFA设备
 
         该接口可以用于删除MFA设备。
         
@@ -1354,7 +1354,7 @@ class IamClient(Client):
         return http_info
 
     def disable_mfa_device_v5(self, request):
-        """禁用MFA设备
+        r"""禁用MFA设备
 
         该接口可以用于禁用指定的MFA设备并删除其与对应IAM用户的关联。
         
@@ -1419,7 +1419,7 @@ class IamClient(Client):
         return http_info
 
     def enable_mfa_device_v5(self, request):
-        """启用MFA设备
+        r"""启用MFA设备
 
         该接口可以用于启用指定的MFA设备并将其与指定的IAM用户关联。
         
@@ -1484,7 +1484,7 @@ class IamClient(Client):
         return http_info
 
     def list_mfa_devices_v5(self, request):
-        """列举全部MFA设备
+        r"""列举全部MFA设备
 
         该接口可以用于列举全部MFA设备。
         
@@ -1553,7 +1553,7 @@ class IamClient(Client):
         return http_info
 
     def create_policy_v5(self, request):
-        """创建自定义身份策略
+        r"""创建自定义身份策略
 
         该接口可以用于创建一个默认版本为v1的新自定义身份策略。
         
@@ -1618,7 +1618,7 @@ class IamClient(Client):
         return http_info
 
     def delete_policy_v5(self, request):
-        """删除自定义身份策略
+        r"""删除自定义身份策略
 
         该接口可以用于删除一个存在的自定义身份策略，必须确保该自定义身份策略没有附加在任何IAM用户、用户组、委托或信任委托上。
         
@@ -1683,7 +1683,7 @@ class IamClient(Client):
         return http_info
 
     def get_policy_v5(self, request):
-        """通过身份策略ID获取身份策略
+        r"""通过身份策略ID获取身份策略
 
         该接口可以用于通过身份策略ID获取身份策略信息。
         
@@ -1750,7 +1750,7 @@ class IamClient(Client):
         return http_info
 
     def list_policies_v5(self, request):
-        """查询所有身份策略
+        r"""查询所有身份策略
 
         该接口可以用于查询所有身份策略，包含系统预置身份策略和自定义身份策略。
         
@@ -1825,7 +1825,7 @@ class IamClient(Client):
         return http_info
 
     def attach_agency_policy_v5(self, request):
-        """为委托或信任委托附加身份策略
+        r"""为委托或信任委托附加身份策略
 
         该接口可以用于为指定委托或信任委托附加指定身份策略。
         
@@ -1892,7 +1892,7 @@ class IamClient(Client):
         return http_info
 
     def attach_group_policy_v5(self, request):
-        """为用户组附加身份策略
+        r"""为用户组附加身份策略
 
         该接口可以用于为指定用户组附加指定身份策略。
         
@@ -1959,7 +1959,7 @@ class IamClient(Client):
         return http_info
 
     def attach_user_policy_v5(self, request):
-        """为IAM用户附加身份策略
+        r"""为IAM用户附加身份策略
 
         该接口可以用于为指定IAM用户附加指定身份策略。
         
@@ -2026,7 +2026,7 @@ class IamClient(Client):
         return http_info
 
     def detach_agency_policy_v5(self, request):
-        """从委托或信任委托分离身份策略
+        r"""从委托或信任委托分离身份策略
 
         该接口可以用于从指定委托或信任委托中分离指定身份策略。
         
@@ -2093,7 +2093,7 @@ class IamClient(Client):
         return http_info
 
     def detach_group_policy_v5(self, request):
-        """从用户组分离身份策略
+        r"""从用户组分离身份策略
 
         该接口可以用于从指定用户组分离指定身份策略。
         
@@ -2160,7 +2160,7 @@ class IamClient(Client):
         return http_info
 
     def detach_user_policy_v5(self, request):
-        """从IAM用户分离身份策略
+        r"""从IAM用户分离身份策略
 
         该接口可以用于从指定的IAM用户分离指定身份策略。
         
@@ -2227,7 +2227,7 @@ class IamClient(Client):
         return http_info
 
     def list_attached_agency_policies_v5(self, request):
-        """查询指定委托或信任委托附加的所有身份策略
+        r"""查询指定委托或信任委托附加的所有身份策略
 
         该接口可用于查询指定委托或信任委托附加的所有身份策略。
         
@@ -2296,7 +2296,7 @@ class IamClient(Client):
         return http_info
 
     def list_attached_group_policies_v5(self, request):
-        """查询指定用户组附加的所有身份策略
+        r"""查询指定用户组附加的所有身份策略
 
         该接口可用于查询指定用户组附加的所有身份策略。
         
@@ -2365,7 +2365,7 @@ class IamClient(Client):
         return http_info
 
     def list_attached_user_policies_v5(self, request):
-        """查询指定IAM用户附加的所有身份策略
+        r"""查询指定IAM用户附加的所有身份策略
 
         该接口可用于查询指定IAM用户附加的所有身份策略。
         
@@ -2434,7 +2434,7 @@ class IamClient(Client):
         return http_info
 
     def list_entities_for_policy_v5(self, request):
-        """查询指定身份策略附加的所有实体
+        r"""查询指定身份策略附加的所有实体
 
         该接口可用于查询指定身份策略附加的所有实体。
         
@@ -2505,7 +2505,7 @@ class IamClient(Client):
         return http_info
 
     def create_policy_version_v5(self, request):
-        """为指定身份策略创建一个新版本
+        r"""为指定身份策略创建一个新版本
 
         该接口可以用于为指定身份策略创建一个新版本。
         
@@ -2572,7 +2572,7 @@ class IamClient(Client):
         return http_info
 
     def delete_policy_version_v5(self, request):
-        """删除指定身份策略版本
+        r"""删除指定身份策略版本
 
         该接口可以用于删除指定身份策略的指定版本。默认身份策略版本不能被删除。
         
@@ -2639,7 +2639,7 @@ class IamClient(Client):
         return http_info
 
     def get_policy_version_v5(self, request):
-        """查询指定身份策略版本
+        r"""查询指定身份策略版本
 
         该接口可以用于查询指定身份策略的指定版本的相关信息，包括身份策略文档。
         
@@ -2706,7 +2706,7 @@ class IamClient(Client):
         return http_info
 
     def list_policy_versions_v5(self, request):
-        """查询指定身份策略的所有版本
+        r"""查询指定身份策略的所有版本
 
         该接口可以用于查询指定身份策略的所有版本信息。
         
@@ -2775,7 +2775,7 @@ class IamClient(Client):
         return http_info
 
     def set_default_policy_version_v5(self, request):
-        """将指定身份策略版本设置为默认版本
+        r"""将指定身份策略版本设置为默认版本
 
         该接口可以用于将指定身份策略的指定版本设置为默认版本。
         
@@ -2842,7 +2842,7 @@ class IamClient(Client):
         return http_info
 
     def delete_resource_tags_v5(self, request):
-        """删除指定资源的部分标签
+        r"""删除指定资源的部分标签
 
         该接口可以用于删除指定资源的部分标签。
         
@@ -2911,7 +2911,7 @@ class IamClient(Client):
         return http_info
 
     def list_resource_tags_v5(self, request):
-        """获取指定资源的所有标签
+        r"""获取指定资源的所有标签
 
         该接口可以用于获取指定资源的所有标签。
         
@@ -2978,7 +2978,7 @@ class IamClient(Client):
         return http_info
 
     def tag_resource_v5(self, request):
-        """为IAM资源打上标签
+        r"""为IAM资源打上标签
 
         该接口可以用于为IAM资源打上标签。
         
@@ -3047,7 +3047,7 @@ class IamClient(Client):
         return http_info
 
     def show_login_policy_v5(self, request):
-        """查询账号登录策略
+        r"""查询账号登录策略
 
         该接口可以用于查询账号登录策略。
         
@@ -3110,7 +3110,7 @@ class IamClient(Client):
         return http_info
 
     def show_password_policy_v5(self, request):
-        """查询账号密码策略
+        r"""查询账号密码策略
 
         该接口可以用于查询账号密码策略。
         
@@ -3173,7 +3173,7 @@ class IamClient(Client):
         return http_info
 
     def update_login_policy_v5(self, request):
-        """修改账号登录策略
+        r"""修改账号登录策略
 
         该接口可以用于修改账号登录策略。
         
@@ -3238,7 +3238,7 @@ class IamClient(Client):
         return http_info
 
     def update_password_policy_v5(self, request):
-        """修改账号密码策略
+        r"""修改账号密码策略
 
         该接口可以用于修改账号密码策略。
         
@@ -3303,7 +3303,7 @@ class IamClient(Client):
         return http_info
 
     def create_service_linked_agency_v5(self, request):
-        """创建服务关联委托
+        r"""创建服务关联委托
 
         该接口可以用于创建服务关联委托。
         
@@ -3368,7 +3368,7 @@ class IamClient(Client):
         return http_info
 
     def delete_service_linked_agency_v5(self, request):
-        """删除服务关联委托
+        r"""删除服务关联委托
 
         该接口可以用于服务关联委托删除自己。
         
@@ -3433,7 +3433,7 @@ class IamClient(Client):
         return http_info
 
     def get_service_linked_agency_deletion_status_v5(self, request):
-        """获取服务关联委托删除状态
+        r"""获取服务关联委托删除状态
 
         该接口可以用于获取服务关联委托删除状态。
         
@@ -3498,7 +3498,7 @@ class IamClient(Client):
         return http_info
 
     def list_service_principals_v5(self, request):
-        """获取全部服务主体
+        r"""获取全部服务主体
 
         该接口可以用于获取全部服务主体。
         
@@ -3567,7 +3567,7 @@ class IamClient(Client):
         return http_info
 
     def create_user_v5(self, request):
-        """创建IAM用户
+        r"""创建IAM用户
 
         该接口可以用于创建IAM用户。
         
@@ -3632,7 +3632,7 @@ class IamClient(Client):
         return http_info
 
     def delete_user_v5(self, request):
-        """删除IAM用户
+        r"""删除IAM用户
 
         该接口可以用于删除指定IAM用户。
         
@@ -3697,7 +3697,7 @@ class IamClient(Client):
         return http_info
 
     def list_users_v5(self, request):
-        """查询IAM用户列表
+        r"""查询IAM用户列表
 
         该接口可以用于查询IAM用户列表。
         
@@ -3766,7 +3766,7 @@ class IamClient(Client):
         return http_info
 
     def show_user_last_login_v5(self, request):
-        """查询IAM用户最后登录时间
+        r"""查询IAM用户最后登录时间
 
         该接口可以用于查询IAM用户的最后登录时间。
         
@@ -3831,7 +3831,7 @@ class IamClient(Client):
         return http_info
 
     def show_user_v5(self, request):
-        """查询IAM用户详情
+        r"""查询IAM用户详情
 
         该接口可以用于查询IAM用户详情。
         
@@ -3896,7 +3896,7 @@ class IamClient(Client):
         return http_info
 
     def update_user_v5(self, request):
-        """修改IAM用户信息
+        r"""修改IAM用户信息
 
         该接口可以用于修改IAM用户信息。
         
@@ -3963,7 +3963,7 @@ class IamClient(Client):
         return http_info
 
     def change_password_v5(self, request):
-        """修改IAM用户密码
+        r"""修改IAM用户密码
 
         该接口可以用于IAM用户修改自己的密码。
         
@@ -4028,7 +4028,7 @@ class IamClient(Client):
         return http_info
 
     def create_access_key_v5(self, request):
-        """创建永久访问密钥
+        r"""创建永久访问密钥
 
         该接口可以用于给IAM用户创建永久访问密钥。
         
@@ -4095,7 +4095,7 @@ class IamClient(Client):
         return http_info
 
     def create_login_profile_v5(self, request):
-        """创建IAM用户登录信息
+        r"""创建IAM用户登录信息
 
         该接口可以用于创建指定IAM用户的登录信息。
         
@@ -4162,7 +4162,7 @@ class IamClient(Client):
         return http_info
 
     def delete_access_key_v5(self, request):
-        """删除指定永久访问密钥
+        r"""删除指定永久访问密钥
 
         该接口可以用于删除IAM用户的指定永久访问密钥。
         
@@ -4229,7 +4229,7 @@ class IamClient(Client):
         return http_info
 
     def delete_login_profile_v5(self, request):
-        """删除IAM用户登录信息
+        r"""删除IAM用户登录信息
 
         该接口可以用于删除指定IAM用户的登录信息。
         
@@ -4294,7 +4294,7 @@ class IamClient(Client):
         return http_info
 
     def list_access_keys_v5(self, request):
-        """查询所有永久访问密钥
+        r"""查询所有永久访问密钥
 
         该接口可以用于查询IAM用户的所有永久访问密钥。
         
@@ -4363,7 +4363,7 @@ class IamClient(Client):
         return http_info
 
     def show_access_key_last_used_v5(self, request):
-        """查询指定永久访问密钥最后使用时间
+        r"""查询指定永久访问密钥最后使用时间
 
         该接口可以用于查询IAM用户的指定永久访问密钥的最后使用时间。
         
@@ -4430,7 +4430,7 @@ class IamClient(Client):
         return http_info
 
     def show_login_profile_v5(self, request):
-        """查询IAM用户登录信息
+        r"""查询IAM用户登录信息
 
         该接口可以用于查询指定IAM用户的登录信息。
         
@@ -4495,7 +4495,7 @@ class IamClient(Client):
         return http_info
 
     def update_access_key_v5(self, request):
-        """修改指定永久访问密钥
+        r"""修改指定永久访问密钥
 
         该接口可以用于修改IAM用户的指定永久访问密钥。
         
@@ -4564,7 +4564,7 @@ class IamClient(Client):
         return http_info
 
     def update_login_profile_v5(self, request):
-        """修改IAM用户登录信息
+        r"""修改IAM用户登录信息
 
         该接口可以用于修改指定IAM用户的登录信息。
         

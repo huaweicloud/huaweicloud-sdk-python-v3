@@ -26,7 +26,7 @@ class UpdateDbUserResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateDbUserResponse
+        r"""UpdateDbUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDbUserResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateDbUserResponse.
+        r"""Gets the result of this UpdateDbUserResponse.
 
         修改结果，修改成功返回OK
 
@@ -55,7 +55,7 @@ class UpdateDbUserResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateDbUserResponse.
+        r"""Sets the result of this UpdateDbUserResponse.
 
         修改结果，修改成功返回OK
 

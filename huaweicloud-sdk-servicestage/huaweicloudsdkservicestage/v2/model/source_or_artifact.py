@@ -43,7 +43,7 @@ class SourceOrArtifact:
     }
 
     def __init__(self, storage=None, type=None, url=None, web_url=None, auth=None, properties=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
-        """SourceOrArtifact
+        r"""SourceOrArtifact
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SourceOrArtifact:
 
     @property
     def storage(self):
-        """Gets the storage of this SourceOrArtifact.
+        r"""Gets the storage of this SourceOrArtifact.
 
         存储方式，支持软件仓库swr和对象存储obs。
 
@@ -117,7 +117,7 @@ class SourceOrArtifact:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this SourceOrArtifact.
+        r"""Sets the storage of this SourceOrArtifact.
 
         存储方式，支持软件仓库swr和对象存储obs。
 
@@ -128,7 +128,7 @@ class SourceOrArtifact:
 
     @property
     def type(self):
-        """Gets the type of this SourceOrArtifact.
+        r"""Gets the type of this SourceOrArtifact.
 
         类别，支持package。
 
@@ -139,7 +139,7 @@ class SourceOrArtifact:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SourceOrArtifact.
+        r"""Sets the type of this SourceOrArtifact.
 
         类别，支持package。
 
@@ -150,7 +150,7 @@ class SourceOrArtifact:
 
     @property
     def url(self):
-        """Gets the url of this SourceOrArtifact.
+        r"""Gets the url of this SourceOrArtifact.
 
         软件包源码地址，如https://{IP}:20202/xxx/xxx.jar。
 
@@ -161,7 +161,7 @@ class SourceOrArtifact:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SourceOrArtifact.
+        r"""Sets the url of this SourceOrArtifact.
 
         软件包源码地址，如https://{IP}:20202/xxx/xxx.jar。
 
@@ -172,7 +172,7 @@ class SourceOrArtifact:
 
     @property
     def web_url(self):
-        """Gets the web_url of this SourceOrArtifact.
+        r"""Gets the web_url of this SourceOrArtifact.
 
         软件包/源码仓库地址
 
@@ -183,7 +183,7 @@ class SourceOrArtifact:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this SourceOrArtifact.
+        r"""Sets the web_url of this SourceOrArtifact.
 
         软件包/源码仓库地址
 
@@ -194,7 +194,7 @@ class SourceOrArtifact:
 
     @property
     def auth(self):
-        """Gets the auth of this SourceOrArtifact.
+        r"""Gets the auth of this SourceOrArtifact.
 
         认证方式，支持iam，none，默认是iam。
 
@@ -205,7 +205,7 @@ class SourceOrArtifact:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this SourceOrArtifact.
+        r"""Sets the auth of this SourceOrArtifact.
 
         认证方式，支持iam，none，默认是iam。
 
@@ -216,7 +216,7 @@ class SourceOrArtifact:
 
     @property
     def properties(self):
-        """Gets the properties of this SourceOrArtifact.
+        r"""Gets the properties of this SourceOrArtifact.
 
         :return: The properties of this SourceOrArtifact.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ObsProperties`
@@ -225,7 +225,7 @@ class SourceOrArtifact:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this SourceOrArtifact.
+        r"""Sets the properties of this SourceOrArtifact.
 
         :param properties: The properties of this SourceOrArtifact.
         :type properties: :class:`huaweicloudsdkservicestage.v2.ObsProperties`
@@ -234,7 +234,7 @@ class SourceOrArtifact:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this SourceOrArtifact.
+        r"""Gets the repo_type of this SourceOrArtifact.
 
         :return: The repo_type of this SourceOrArtifact.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
@@ -243,7 +243,7 @@ class SourceOrArtifact:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this SourceOrArtifact.
+        r"""Sets the repo_type of this SourceOrArtifact.
 
         :param repo_type: The repo_type of this SourceOrArtifact.
         :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
@@ -252,7 +252,7 @@ class SourceOrArtifact:
 
     @property
     def repo_url(self):
-        """Gets the repo_url of this SourceOrArtifact.
+        r"""Gets the repo_url of this SourceOrArtifact.
 
         代码仓url，如：https://github.com/example/demo.git
 
@@ -263,7 +263,7 @@ class SourceOrArtifact:
 
     @repo_url.setter
     def repo_url(self, repo_url):
-        """Sets the repo_url of this SourceOrArtifact.
+        r"""Sets the repo_url of this SourceOrArtifact.
 
         代码仓url，如：https://github.com/example/demo.git
 
@@ -274,7 +274,7 @@ class SourceOrArtifact:
 
     @property
     def repo_ref(self):
-        """Gets the repo_ref of this SourceOrArtifact.
+        r"""Gets the repo_ref of this SourceOrArtifact.
 
         代码分支或者Tag，默认是master。
 
@@ -285,7 +285,7 @@ class SourceOrArtifact:
 
     @repo_ref.setter
     def repo_ref(self, repo_ref):
-        """Sets the repo_ref of this SourceOrArtifact.
+        r"""Sets the repo_ref of this SourceOrArtifact.
 
         代码分支或者Tag，默认是master。
 
@@ -296,7 +296,7 @@ class SourceOrArtifact:
 
     @property
     def repo_auth(self):
-        """Gets the repo_auth of this SourceOrArtifact.
+        r"""Gets the repo_auth of this SourceOrArtifact.
 
         授权名称，在授权列表获取。
 
@@ -307,7 +307,7 @@ class SourceOrArtifact:
 
     @repo_auth.setter
     def repo_auth(self, repo_auth):
-        """Sets the repo_auth of this SourceOrArtifact.
+        r"""Sets the repo_auth of this SourceOrArtifact.
 
         授权名称，在授权列表获取。
 

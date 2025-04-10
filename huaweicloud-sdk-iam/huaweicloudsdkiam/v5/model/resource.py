@@ -27,7 +27,7 @@ class Resource:
     }
 
     def __init__(self, type_name=None, urn_template=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Resource:
 
     @property
     def type_name(self):
-        """Gets the type_name of this Resource.
+        r"""Gets the type_name of this Resource.
 
         云服务资源类型名称。
 
@@ -59,7 +59,7 @@ class Resource:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this Resource.
+        r"""Sets the type_name of this Resource.
 
         云服务资源类型名称。
 
@@ -70,7 +70,7 @@ class Resource:
 
     @property
     def urn_template(self):
-        """Gets the urn_template of this Resource.
+        r"""Gets the urn_template of this Resource.
 
         统一资源名称模板，表示可以通过这类资源的统一资源名称对该授权项进行资源粒度的授权。
 
@@ -81,7 +81,7 @@ class Resource:
 
     @urn_template.setter
     def urn_template(self, urn_template):
-        """Sets the urn_template of this Resource.
+        r"""Sets the urn_template of this Resource.
 
         统一资源名称模板，表示可以通过这类资源的统一资源名称对该授权项进行资源粒度的授权。
 

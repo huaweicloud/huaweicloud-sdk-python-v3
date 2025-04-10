@@ -31,7 +31,7 @@ class ShowResRecallSetRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, use_type=None):
-        """ShowResRecallSetRequest
+        r"""ShowResRecallSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowResRecallSetRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowResRecallSetRequest.
+        r"""Gets the content_type of this ShowResRecallSetRequest.
 
         内容类型，取值为application/json
 
@@ -71,7 +71,7 @@ class ShowResRecallSetRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowResRecallSetRequest.
+        r"""Sets the content_type of this ShowResRecallSetRequest.
 
         内容类型，取值为application/json
 
@@ -82,7 +82,7 @@ class ShowResRecallSetRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowResRecallSetRequest.
+        r"""Gets the workspace_id of this ShowResRecallSetRequest.
 
         工作空间id
 
@@ -93,7 +93,7 @@ class ShowResRecallSetRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowResRecallSetRequest.
+        r"""Sets the workspace_id of this ShowResRecallSetRequest.
 
         工作空间id
 
@@ -104,7 +104,7 @@ class ShowResRecallSetRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResRecallSetRequest.
+        r"""Gets the resource_id of this ShowResRecallSetRequest.
 
         资源id
 
@@ -115,7 +115,7 @@ class ShowResRecallSetRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResRecallSetRequest.
+        r"""Sets the resource_id of this ShowResRecallSetRequest.
 
         资源id
 
@@ -126,7 +126,7 @@ class ShowResRecallSetRequest:
 
     @property
     def use_type(self):
-        """Gets the use_type of this ShowResRecallSetRequest.
+        r"""Gets the use_type of this ShowResRecallSetRequest.
 
         使用类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
@@ -137,7 +137,7 @@ class ShowResRecallSetRequest:
 
     @use_type.setter
     def use_type(self, use_type):
-        """Sets the use_type of this ShowResRecallSetRequest.
+        r"""Sets the use_type of this ShowResRecallSetRequest.
 
         使用类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 

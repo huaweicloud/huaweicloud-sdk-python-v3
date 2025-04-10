@@ -32,7 +32,7 @@ class SearchRecordingsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchRecordingsResponse
+        r"""SearchRecordingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchRecordingsResponse.
+        r"""Gets the offset of this SearchRecordingsResponse.
 
         查询偏移量。
 
@@ -76,7 +76,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchRecordingsResponse.
+        r"""Sets the offset of this SearchRecordingsResponse.
 
         查询偏移量。
 
@@ -87,7 +87,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchRecordingsResponse.
+        r"""Gets the limit of this SearchRecordingsResponse.
 
         每页的记录数。
 
@@ -98,7 +98,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchRecordingsResponse.
+        r"""Sets the limit of this SearchRecordingsResponse.
 
         每页的记录数。
 
@@ -109,7 +109,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchRecordingsResponse.
+        r"""Gets the count of this SearchRecordingsResponse.
 
         总记录数。
 
@@ -120,7 +120,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchRecordingsResponse.
+        r"""Sets the count of this SearchRecordingsResponse.
 
         总记录数。
 
@@ -131,7 +131,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchRecordingsResponse.
+        r"""Gets the data of this SearchRecordingsResponse.
 
         录播文件列表。
 
@@ -142,7 +142,7 @@ class SearchRecordingsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchRecordingsResponse.
+        r"""Sets the data of this SearchRecordingsResponse.
 
         录播文件列表。
 

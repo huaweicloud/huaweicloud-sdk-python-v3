@@ -28,7 +28,7 @@ class UpdateServiceInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, x_request_id=None):
-        """UpdateServiceInstanceResponse
+        r"""UpdateServiceInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateServiceInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateServiceInstanceResponse.
+        r"""Gets the id of this UpdateServiceInstanceResponse.
 
         实例Id
 
@@ -62,7 +62,7 @@ class UpdateServiceInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateServiceInstanceResponse.
+        r"""Sets the id of this UpdateServiceInstanceResponse.
 
         实例Id
 
@@ -73,7 +73,7 @@ class UpdateServiceInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateServiceInstanceResponse.
+        r"""Gets the x_request_id of this UpdateServiceInstanceResponse.
 
         :return: The x_request_id of this UpdateServiceInstanceResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateServiceInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateServiceInstanceResponse.
+        r"""Sets the x_request_id of this UpdateServiceInstanceResponse.
 
         :param x_request_id: The x_request_id of this UpdateServiceInstanceResponse.
         :type x_request_id: str

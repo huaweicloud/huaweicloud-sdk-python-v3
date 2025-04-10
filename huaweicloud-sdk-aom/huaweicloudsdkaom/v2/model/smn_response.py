@@ -35,7 +35,7 @@ class SmnResponse:
     }
 
     def __init__(self, sent_time=None, smn_notified_history=None, smn_request_id=None, smn_response_body=None, smn_response_code=None, smn_topic=None):
-        """SmnResponse
+        r"""SmnResponse
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SmnResponse:
 
     @property
     def sent_time(self):
-        """Gets the sent_time of this SmnResponse.
+        r"""Gets the sent_time of this SmnResponse.
 
         发送时间。
 
@@ -89,7 +89,7 @@ class SmnResponse:
 
     @sent_time.setter
     def sent_time(self, sent_time):
-        """Sets the sent_time of this SmnResponse.
+        r"""Sets the sent_time of this SmnResponse.
 
         发送时间。
 
@@ -100,7 +100,7 @@ class SmnResponse:
 
     @property
     def smn_notified_history(self):
-        """Gets the smn_notified_history of this SmnResponse.
+        r"""Gets the smn_notified_history of this SmnResponse.
 
         发送的通知的消息内容。
 
@@ -111,7 +111,7 @@ class SmnResponse:
 
     @smn_notified_history.setter
     def smn_notified_history(self, smn_notified_history):
-        """Sets the smn_notified_history of this SmnResponse.
+        r"""Sets the smn_notified_history of this SmnResponse.
 
         发送的通知的消息内容。
 
@@ -122,7 +122,7 @@ class SmnResponse:
 
     @property
     def smn_request_id(self):
-        """Gets the smn_request_id of this SmnResponse.
+        r"""Gets the smn_request_id of this SmnResponse.
 
         请求smn服务的请求id。
 
@@ -133,7 +133,7 @@ class SmnResponse:
 
     @smn_request_id.setter
     def smn_request_id(self, smn_request_id):
-        """Sets the smn_request_id of this SmnResponse.
+        r"""Sets the smn_request_id of this SmnResponse.
 
         请求smn服务的请求id。
 
@@ -144,7 +144,7 @@ class SmnResponse:
 
     @property
     def smn_response_body(self):
-        """Gets the smn_response_body of this SmnResponse.
+        r"""Gets the smn_response_body of this SmnResponse.
 
         调用smn服务返回的信息。
 
@@ -155,7 +155,7 @@ class SmnResponse:
 
     @smn_response_body.setter
     def smn_response_body(self, smn_response_body):
-        """Sets the smn_response_body of this SmnResponse.
+        r"""Sets the smn_response_body of this SmnResponse.
 
         调用smn服务返回的信息。
 
@@ -166,7 +166,7 @@ class SmnResponse:
 
     @property
     def smn_response_code(self):
-        """Gets the smn_response_code of this SmnResponse.
+        r"""Gets the smn_response_code of this SmnResponse.
 
         调用smn服务返回的http状态码。
 
@@ -177,7 +177,7 @@ class SmnResponse:
 
     @smn_response_code.setter
     def smn_response_code(self, smn_response_code):
-        """Sets the smn_response_code of this SmnResponse.
+        r"""Sets the smn_response_code of this SmnResponse.
 
         调用smn服务返回的http状态码。
 
@@ -188,7 +188,7 @@ class SmnResponse:
 
     @property
     def smn_topic(self):
-        """Gets the smn_topic of this SmnResponse.
+        r"""Gets the smn_topic of this SmnResponse.
 
         smn的主题。
 
@@ -199,7 +199,7 @@ class SmnResponse:
 
     @smn_topic.setter
     def smn_topic(self, smn_topic):
-        """Sets the smn_topic of this SmnResponse.
+        r"""Sets the smn_topic of this SmnResponse.
 
         smn的主题。
 

@@ -36,7 +36,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, video_framerate=None, video_bitrate=None, x_request_id=None):
-        """ListSingleStreamDetailResponse
+        r"""ListSingleStreamDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListSingleStreamDetailResponse.
+        r"""Gets the publish_domain of this ListSingleStreamDetailResponse.
 
         推流域名
 
@@ -90,7 +90,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListSingleStreamDetailResponse.
+        r"""Sets the publish_domain of this ListSingleStreamDetailResponse.
 
         推流域名
 
@@ -101,7 +101,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @property
     def app(self):
-        """Gets the app of this ListSingleStreamDetailResponse.
+        r"""Gets the app of this ListSingleStreamDetailResponse.
 
         应用名
 
@@ -112,7 +112,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListSingleStreamDetailResponse.
+        r"""Sets the app of this ListSingleStreamDetailResponse.
 
         应用名
 
@@ -123,7 +123,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @property
     def stream(self):
-        """Gets the stream of this ListSingleStreamDetailResponse.
+        r"""Gets the stream of this ListSingleStreamDetailResponse.
 
         流名
 
@@ -134,7 +134,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListSingleStreamDetailResponse.
+        r"""Sets the stream of this ListSingleStreamDetailResponse.
 
         流名
 
@@ -145,7 +145,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @property
     def video_framerate(self):
-        """Gets the video_framerate of this ListSingleStreamDetailResponse.
+        r"""Gets the video_framerate of this ListSingleStreamDetailResponse.
 
         展示流视频帧率情况，帧率单位为fps。  如果出现断流则会出现多个时间段流信息，如： ``` \"video_framerate\": [     {       \"start_time\": \"2022-02-04T07:00:00Z\",       \"end_time\": \"2022-02-04T07:00:02Z\",       \"data_list\": [         21,         22       ]     },     {       \"start_time\": \"2022-02-04T07:00:05Z\",       \"end_time\": \"2022-02-04T07:00:07Z\",       \"data_list\": [         13,         34,         21       ]     }   ] 
 
@@ -156,7 +156,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @video_framerate.setter
     def video_framerate(self, video_framerate):
-        """Sets the video_framerate of this ListSingleStreamDetailResponse.
+        r"""Sets the video_framerate of this ListSingleStreamDetailResponse.
 
         展示流视频帧率情况，帧率单位为fps。  如果出现断流则会出现多个时间段流信息，如： ``` \"video_framerate\": [     {       \"start_time\": \"2022-02-04T07:00:00Z\",       \"end_time\": \"2022-02-04T07:00:02Z\",       \"data_list\": [         21,         22       ]     },     {       \"start_time\": \"2022-02-04T07:00:05Z\",       \"end_time\": \"2022-02-04T07:00:07Z\",       \"data_list\": [         13,         34,         21       ]     }   ] 
 
@@ -167,7 +167,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @property
     def video_bitrate(self):
-        """Gets the video_bitrate of this ListSingleStreamDetailResponse.
+        r"""Gets the video_bitrate of this ListSingleStreamDetailResponse.
 
         展示流视频码率情况，码率单位为Kbps。  如果出现断流则会出现多个时间段流信息，如： ``` \"video_bitrate\": [     {       \"start_time\": \"2022-02-04T07:00:00Z\",       \"end_time\": \"2022-02-04T07:00:02Z\",       \"data_list\": [         1326,         1268,         775       ]     },     {       \"start_time\": \"2022-02-04T07:00:05Z\",       \"end_time\": \"2022-02-04T07:00:07Z\",       \"data_list\": [         1021,         2022       ]     }   ] 
 
@@ -178,7 +178,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @video_bitrate.setter
     def video_bitrate(self, video_bitrate):
-        """Sets the video_bitrate of this ListSingleStreamDetailResponse.
+        r"""Sets the video_bitrate of this ListSingleStreamDetailResponse.
 
         展示流视频码率情况，码率单位为Kbps。  如果出现断流则会出现多个时间段流信息，如： ``` \"video_bitrate\": [     {       \"start_time\": \"2022-02-04T07:00:00Z\",       \"end_time\": \"2022-02-04T07:00:02Z\",       \"data_list\": [         1326,         1268,         775       ]     },     {       \"start_time\": \"2022-02-04T07:00:05Z\",       \"end_time\": \"2022-02-04T07:00:07Z\",       \"data_list\": [         1021,         2022       ]     }   ] 
 
@@ -189,7 +189,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSingleStreamDetailResponse.
+        r"""Gets the x_request_id of this ListSingleStreamDetailResponse.
 
         :return: The x_request_id of this ListSingleStreamDetailResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class ListSingleStreamDetailResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSingleStreamDetailResponse.
+        r"""Sets the x_request_id of this ListSingleStreamDetailResponse.
 
         :param x_request_id: The x_request_id of this ListSingleStreamDetailResponse.
         :type x_request_id: str

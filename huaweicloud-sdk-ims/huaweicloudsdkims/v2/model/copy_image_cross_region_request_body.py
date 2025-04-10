@@ -35,7 +35,7 @@ class CopyImageCrossRegionRequestBody:
     }
 
     def __init__(self, agency_name=None, description=None, name=None, project_name=None, region=None, vault_id=None):
-        """CopyImageCrossRegionRequestBody
+        r"""CopyImageCrossRegionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CopyImageCrossRegionRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CopyImageCrossRegionRequestBody.
+        r"""Gets the agency_name of this CopyImageCrossRegionRequestBody.
 
         IMS服务委托名称。
 
@@ -85,7 +85,7 @@ class CopyImageCrossRegionRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CopyImageCrossRegionRequestBody.
+        r"""Sets the agency_name of this CopyImageCrossRegionRequestBody.
 
         IMS服务委托名称。
 
@@ -96,7 +96,7 @@ class CopyImageCrossRegionRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CopyImageCrossRegionRequestBody.
+        r"""Gets the description of this CopyImageCrossRegionRequestBody.
 
         镜像描述信息。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -107,7 +107,7 @@ class CopyImageCrossRegionRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CopyImageCrossRegionRequestBody.
+        r"""Sets the description of this CopyImageCrossRegionRequestBody.
 
         镜像描述信息。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -118,7 +118,7 @@ class CopyImageCrossRegionRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CopyImageCrossRegionRequestBody.
+        r"""Gets the name of this CopyImageCrossRegionRequestBody.
 
         镜像名称
 
@@ -129,7 +129,7 @@ class CopyImageCrossRegionRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyImageCrossRegionRequestBody.
+        r"""Sets the name of this CopyImageCrossRegionRequestBody.
 
         镜像名称
 
@@ -140,7 +140,7 @@ class CopyImageCrossRegionRequestBody:
 
     @property
     def project_name(self):
-        """Gets the project_name of this CopyImageCrossRegionRequestBody.
+        r"""Gets the project_name of this CopyImageCrossRegionRequestBody.
 
         目的区域的项目名称。
 
@@ -151,7 +151,7 @@ class CopyImageCrossRegionRequestBody:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this CopyImageCrossRegionRequestBody.
+        r"""Sets the project_name of this CopyImageCrossRegionRequestBody.
 
         目的区域的项目名称。
 
@@ -162,7 +162,7 @@ class CopyImageCrossRegionRequestBody:
 
     @property
     def region(self):
-        """Gets the region of this CopyImageCrossRegionRequestBody.
+        r"""Gets the region of this CopyImageCrossRegionRequestBody.
 
         目的区域的Region ID。
 
@@ -173,7 +173,7 @@ class CopyImageCrossRegionRequestBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CopyImageCrossRegionRequestBody.
+        r"""Sets the region of this CopyImageCrossRegionRequestBody.
 
         目的区域的Region ID。
 
@@ -184,7 +184,7 @@ class CopyImageCrossRegionRequestBody:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this CopyImageCrossRegionRequestBody.
+        r"""Gets the vault_id of this CopyImageCrossRegionRequestBody.
 
         存储库ID。如果是整机镜像，则在跨Region复制镜像时，为必选参数，需传入该值。
 
@@ -195,7 +195,7 @@ class CopyImageCrossRegionRequestBody:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this CopyImageCrossRegionRequestBody.
+        r"""Sets the vault_id of this CopyImageCrossRegionRequestBody.
 
         存储库ID。如果是整机镜像，则在跨Region复制镜像时，为必选参数，需传入该值。
 

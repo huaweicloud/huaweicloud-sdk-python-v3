@@ -25,7 +25,7 @@ class StartScaleOutPolicyRequest:
     }
 
     def __init__(self, id=None):
-        """StartScaleOutPolicyRequest
+        r"""StartScaleOutPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartScaleOutPolicyRequest:
 
     @property
     def id(self):
-        """Gets the id of this StartScaleOutPolicyRequest.
+        r"""Gets the id of this StartScaleOutPolicyRequest.
 
         策略id
 
@@ -53,7 +53,7 @@ class StartScaleOutPolicyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StartScaleOutPolicyRequest.
+        r"""Sets the id of this StartScaleOutPolicyRequest.
 
         策略id
 

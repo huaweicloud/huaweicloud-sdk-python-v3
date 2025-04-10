@@ -26,7 +26,7 @@ class AddRdsDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, ret_list=None):
-        """AddRdsDatabaseResponse
+        r"""AddRdsDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddRdsDatabaseResponse(SdkResponse):
 
     @property
     def ret_list(self):
-        """Gets the ret_list of this AddRdsDatabaseResponse.
+        r"""Gets the ret_list of this AddRdsDatabaseResponse.
 
         结果列表
 
@@ -55,7 +55,7 @@ class AddRdsDatabaseResponse(SdkResponse):
 
     @ret_list.setter
     def ret_list(self, ret_list):
-        """Sets the ret_list of this AddRdsDatabaseResponse.
+        r"""Sets the ret_list of this AddRdsDatabaseResponse.
 
         结果列表
 

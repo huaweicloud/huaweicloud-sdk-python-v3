@@ -45,7 +45,7 @@ class SourceObject:
     }
 
     def __init__(self, kind=None, url=None, version=None, storage=None, auth=None, repo_auth=None, repo_namespace=None, repo_ref=None, repo_type=None, web_url=None, repo_url=None):
-        """SourceObject
+        r"""SourceObject
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class SourceObject:
 
     @property
     def kind(self):
-        """Gets the kind of this SourceObject.
+        r"""Gets the kind of this SourceObject.
 
         :return: The kind of this SourceObject.
         :rtype: :class:`huaweicloudsdkservicestage.v3.SourceKind`
@@ -121,7 +121,7 @@ class SourceObject:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this SourceObject.
+        r"""Sets the kind of this SourceObject.
 
         :param kind: The kind of this SourceObject.
         :type kind: :class:`huaweicloudsdkservicestage.v3.SourceKind`
@@ -130,7 +130,7 @@ class SourceObject:
 
     @property
     def url(self):
-        """Gets the url of this SourceObject.
+        r"""Gets the url of this SourceObject.
 
         :return: The url of this SourceObject.
         :rtype: str
@@ -139,7 +139,7 @@ class SourceObject:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SourceObject.
+        r"""Sets the url of this SourceObject.
 
         :param url: The url of this SourceObject.
         :type url: str
@@ -148,7 +148,7 @@ class SourceObject:
 
     @property
     def version(self):
-        """Gets the version of this SourceObject.
+        r"""Gets the version of this SourceObject.
 
         软件包版本
 
@@ -159,7 +159,7 @@ class SourceObject:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SourceObject.
+        r"""Sets the version of this SourceObject.
 
         软件包版本
 
@@ -170,7 +170,7 @@ class SourceObject:
 
     @property
     def storage(self):
-        """Gets the storage of this SourceObject.
+        r"""Gets the storage of this SourceObject.
 
         :return: The storage of this SourceObject.
         :rtype: str
@@ -179,7 +179,7 @@ class SourceObject:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this SourceObject.
+        r"""Sets the storage of this SourceObject.
 
         :param storage: The storage of this SourceObject.
         :type storage: str
@@ -188,7 +188,7 @@ class SourceObject:
 
     @property
     def auth(self):
-        """Gets the auth of this SourceObject.
+        r"""Gets the auth of this SourceObject.
 
         :return: The auth of this SourceObject.
         :rtype: str
@@ -197,7 +197,7 @@ class SourceObject:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this SourceObject.
+        r"""Sets the auth of this SourceObject.
 
         :param auth: The auth of this SourceObject.
         :type auth: str
@@ -206,7 +206,7 @@ class SourceObject:
 
     @property
     def repo_auth(self):
-        """Gets the repo_auth of this SourceObject.
+        r"""Gets the repo_auth of this SourceObject.
 
         :return: The repo_auth of this SourceObject.
         :rtype: str
@@ -215,7 +215,7 @@ class SourceObject:
 
     @repo_auth.setter
     def repo_auth(self, repo_auth):
-        """Sets the repo_auth of this SourceObject.
+        r"""Sets the repo_auth of this SourceObject.
 
         :param repo_auth: The repo_auth of this SourceObject.
         :type repo_auth: str
@@ -224,7 +224,7 @@ class SourceObject:
 
     @property
     def repo_namespace(self):
-        """Gets the repo_namespace of this SourceObject.
+        r"""Gets the repo_namespace of this SourceObject.
 
         :return: The repo_namespace of this SourceObject.
         :rtype: str
@@ -233,7 +233,7 @@ class SourceObject:
 
     @repo_namespace.setter
     def repo_namespace(self, repo_namespace):
-        """Sets the repo_namespace of this SourceObject.
+        r"""Sets the repo_namespace of this SourceObject.
 
         :param repo_namespace: The repo_namespace of this SourceObject.
         :type repo_namespace: str
@@ -242,7 +242,7 @@ class SourceObject:
 
     @property
     def repo_ref(self):
-        """Gets the repo_ref of this SourceObject.
+        r"""Gets the repo_ref of this SourceObject.
 
         :return: The repo_ref of this SourceObject.
         :rtype: str
@@ -251,7 +251,7 @@ class SourceObject:
 
     @repo_ref.setter
     def repo_ref(self, repo_ref):
-        """Sets the repo_ref of this SourceObject.
+        r"""Sets the repo_ref of this SourceObject.
 
         :param repo_ref: The repo_ref of this SourceObject.
         :type repo_ref: str
@@ -260,7 +260,7 @@ class SourceObject:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this SourceObject.
+        r"""Gets the repo_type of this SourceObject.
 
         :return: The repo_type of this SourceObject.
         :rtype: str
@@ -269,7 +269,7 @@ class SourceObject:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this SourceObject.
+        r"""Sets the repo_type of this SourceObject.
 
         :param repo_type: The repo_type of this SourceObject.
         :type repo_type: str
@@ -278,7 +278,7 @@ class SourceObject:
 
     @property
     def web_url(self):
-        """Gets the web_url of this SourceObject.
+        r"""Gets the web_url of this SourceObject.
 
         :return: The web_url of this SourceObject.
         :rtype: str
@@ -287,7 +287,7 @@ class SourceObject:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this SourceObject.
+        r"""Sets the web_url of this SourceObject.
 
         :param web_url: The web_url of this SourceObject.
         :type web_url: str
@@ -296,7 +296,7 @@ class SourceObject:
 
     @property
     def repo_url(self):
-        """Gets the repo_url of this SourceObject.
+        r"""Gets the repo_url of this SourceObject.
 
         :return: The repo_url of this SourceObject.
         :rtype: str
@@ -305,7 +305,7 @@ class SourceObject:
 
     @repo_url.setter
     def repo_url(self, repo_url):
-        """Sets the repo_url of this SourceObject.
+        r"""Sets the repo_url of this SourceObject.
 
         :param repo_url: The repo_url of this SourceObject.
         :type repo_url: str

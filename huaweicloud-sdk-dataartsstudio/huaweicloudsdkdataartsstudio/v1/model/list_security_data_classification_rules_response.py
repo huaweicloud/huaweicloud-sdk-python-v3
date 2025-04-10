@@ -28,7 +28,7 @@ class ListSecurityDataClassificationRulesResponse(SdkResponse):
     }
 
     def __init__(self, content=None, total=None):
-        """ListSecurityDataClassificationRulesResponse
+        r"""ListSecurityDataClassificationRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityDataClassificationRulesResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ListSecurityDataClassificationRulesResponse.
+        r"""Gets the content of this ListSecurityDataClassificationRulesResponse.
 
         查询到的所有数据识别规则
 
@@ -62,7 +62,7 @@ class ListSecurityDataClassificationRulesResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ListSecurityDataClassificationRulesResponse.
+        r"""Sets the content of this ListSecurityDataClassificationRulesResponse.
 
         查询到的所有数据识别规则
 
@@ -73,7 +73,7 @@ class ListSecurityDataClassificationRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityDataClassificationRulesResponse.
+        r"""Gets the total of this ListSecurityDataClassificationRulesResponse.
 
         数据识别规则总数
 
@@ -84,7 +84,7 @@ class ListSecurityDataClassificationRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityDataClassificationRulesResponse.
+        r"""Sets the total of this ListSecurityDataClassificationRulesResponse.
 
         数据识别规则总数
 

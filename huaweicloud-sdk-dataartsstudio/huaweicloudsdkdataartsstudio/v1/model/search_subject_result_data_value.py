@@ -27,7 +27,7 @@ class SearchSubjectResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """SearchSubjectResultDataValue
+        r"""SearchSubjectResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchSubjectResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this SearchSubjectResultDataValue.
+        r"""Gets the total of this SearchSubjectResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class SearchSubjectResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchSubjectResultDataValue.
+        r"""Sets the total of this SearchSubjectResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class SearchSubjectResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this SearchSubjectResultDataValue.
+        r"""Gets the records of this SearchSubjectResultDataValue.
 
         查询到的审批单对象（CatalogVO）数组。
 
@@ -83,7 +83,7 @@ class SearchSubjectResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this SearchSubjectResultDataValue.
+        r"""Sets the records of this SearchSubjectResultDataValue.
 
         查询到的审批单对象（CatalogVO）数组。
 

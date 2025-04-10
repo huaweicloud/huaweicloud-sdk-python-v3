@@ -29,7 +29,7 @@ class AssociateSiteNetworkBandwidthRequest:
     }
 
     def __init__(self, site_network_id=None, site_connection_id=None, body=None):
-        """AssociateSiteNetworkBandwidthRequest
+        r"""AssociateSiteNetworkBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AssociateSiteNetworkBandwidthRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this AssociateSiteNetworkBandwidthRequest.
+        r"""Gets the site_network_id of this AssociateSiteNetworkBandwidthRequest.
 
         分支网络的ID。
 
@@ -66,7 +66,7 @@ class AssociateSiteNetworkBandwidthRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this AssociateSiteNetworkBandwidthRequest.
+        r"""Sets the site_network_id of this AssociateSiteNetworkBandwidthRequest.
 
         分支网络的ID。
 
@@ -77,7 +77,7 @@ class AssociateSiteNetworkBandwidthRequest:
 
     @property
     def site_connection_id(self):
-        """Gets the site_connection_id of this AssociateSiteNetworkBandwidthRequest.
+        r"""Gets the site_connection_id of this AssociateSiteNetworkBandwidthRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class AssociateSiteNetworkBandwidthRequest:
 
     @site_connection_id.setter
     def site_connection_id(self, site_connection_id):
-        """Sets the site_connection_id of this AssociateSiteNetworkBandwidthRequest.
+        r"""Sets the site_connection_id of this AssociateSiteNetworkBandwidthRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class AssociateSiteNetworkBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateSiteNetworkBandwidthRequest.
+        r"""Gets the body of this AssociateSiteNetworkBandwidthRequest.
 
         :return: The body of this AssociateSiteNetworkBandwidthRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidthRequestBody`
@@ -108,7 +108,7 @@ class AssociateSiteNetworkBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateSiteNetworkBandwidthRequest.
+        r"""Sets the body of this AssociateSiteNetworkBandwidthRequest.
 
         :param body: The body of this AssociateSiteNetworkBandwidthRequest.
         :type body: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidthRequestBody`

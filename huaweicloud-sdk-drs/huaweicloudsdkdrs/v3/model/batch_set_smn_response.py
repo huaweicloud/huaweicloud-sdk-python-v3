@@ -28,7 +28,7 @@ class BatchSetSmnResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchSetSmnResponse
+        r"""BatchSetSmnResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchSetSmnResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchSetSmnResponse.
+        r"""Gets the results of this BatchSetSmnResponse.
 
         :return: The results of this BatchSetSmnResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
@@ -60,7 +60,7 @@ class BatchSetSmnResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchSetSmnResponse.
+        r"""Sets the results of this BatchSetSmnResponse.
 
         :param results: The results of this BatchSetSmnResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
@@ -69,7 +69,7 @@ class BatchSetSmnResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchSetSmnResponse.
+        r"""Gets the count of this BatchSetSmnResponse.
 
         :return: The count of this BatchSetSmnResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class BatchSetSmnResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchSetSmnResponse.
+        r"""Sets the count of this BatchSetSmnResponse.
 
         :param count: The count of this BatchSetSmnResponse.
         :type count: int

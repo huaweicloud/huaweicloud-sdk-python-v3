@@ -37,7 +37,7 @@ class ErrorlogDownloadInfo:
     }
 
     def __init__(self, workflow_id=None, file_name=None, status=None, file_size=None, file_link=None, create_at=None, update_at=None):
-        """ErrorlogDownloadInfo
+        r"""ErrorlogDownloadInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ErrorlogDownloadInfo.
+        r"""Gets the workflow_id of this ErrorlogDownloadInfo.
 
         任务ID
 
@@ -89,7 +89,7 @@ class ErrorlogDownloadInfo:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ErrorlogDownloadInfo.
+        r"""Sets the workflow_id of this ErrorlogDownloadInfo.
 
         任务ID
 
@@ -100,7 +100,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ErrorlogDownloadInfo.
+        r"""Gets the file_name of this ErrorlogDownloadInfo.
 
         生成的下载文件名
 
@@ -111,7 +111,7 @@ class ErrorlogDownloadInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ErrorlogDownloadInfo.
+        r"""Sets the file_name of this ErrorlogDownloadInfo.
 
         生成的下载文件名
 
@@ -122,7 +122,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def status(self):
-        """Gets the status of this ErrorlogDownloadInfo.
+        r"""Gets the status of this ErrorlogDownloadInfo.
 
         生成链接的生成状态
 
@@ -133,7 +133,7 @@ class ErrorlogDownloadInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ErrorlogDownloadInfo.
+        r"""Sets the status of this ErrorlogDownloadInfo.
 
         生成链接的生成状态
 
@@ -144,7 +144,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this ErrorlogDownloadInfo.
+        r"""Gets the file_size of this ErrorlogDownloadInfo.
 
         文件大小
 
@@ -155,7 +155,7 @@ class ErrorlogDownloadInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ErrorlogDownloadInfo.
+        r"""Sets the file_size of this ErrorlogDownloadInfo.
 
         文件大小
 
@@ -166,7 +166,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def file_link(self):
-        """Gets the file_link of this ErrorlogDownloadInfo.
+        r"""Gets the file_link of this ErrorlogDownloadInfo.
 
         下载链接
 
@@ -177,7 +177,7 @@ class ErrorlogDownloadInfo:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this ErrorlogDownloadInfo.
+        r"""Sets the file_link of this ErrorlogDownloadInfo.
 
         下载链接
 
@@ -188,7 +188,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ErrorlogDownloadInfo.
+        r"""Gets the create_at of this ErrorlogDownloadInfo.
 
         生成时间
 
@@ -199,7 +199,7 @@ class ErrorlogDownloadInfo:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ErrorlogDownloadInfo.
+        r"""Sets the create_at of this ErrorlogDownloadInfo.
 
         生成时间
 
@@ -210,7 +210,7 @@ class ErrorlogDownloadInfo:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ErrorlogDownloadInfo.
+        r"""Gets the update_at of this ErrorlogDownloadInfo.
 
         更新时间
 
@@ -221,7 +221,7 @@ class ErrorlogDownloadInfo:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ErrorlogDownloadInfo.
+        r"""Sets the update_at of this ErrorlogDownloadInfo.
 
         更新时间
 

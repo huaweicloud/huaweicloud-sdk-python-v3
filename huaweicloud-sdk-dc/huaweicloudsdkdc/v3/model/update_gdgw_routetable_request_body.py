@@ -27,7 +27,7 @@ class UpdateGdgwRoutetableRequestBody:
     }
 
     def __init__(self, dry_run=None, gdgw_routetable=None):
-        """UpdateGdgwRoutetableRequestBody
+        r"""UpdateGdgwRoutetableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateGdgwRoutetableRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this UpdateGdgwRoutetableRequestBody.
+        r"""Gets the dry_run of this UpdateGdgwRoutetableRequestBody.
 
         是否dry run模式执行
 
@@ -61,7 +61,7 @@ class UpdateGdgwRoutetableRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this UpdateGdgwRoutetableRequestBody.
+        r"""Sets the dry_run of this UpdateGdgwRoutetableRequestBody.
 
         是否dry run模式执行
 
@@ -72,7 +72,7 @@ class UpdateGdgwRoutetableRequestBody:
 
     @property
     def gdgw_routetable(self):
-        """Gets the gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
+        r"""Gets the gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
 
         :return: The gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.GdgwRouteTableRequest`
@@ -81,7 +81,7 @@ class UpdateGdgwRoutetableRequestBody:
 
     @gdgw_routetable.setter
     def gdgw_routetable(self, gdgw_routetable):
-        """Sets the gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
+        r"""Sets the gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
 
         :param gdgw_routetable: The gdgw_routetable of this UpdateGdgwRoutetableRequestBody.
         :type gdgw_routetable: :class:`huaweicloudsdkdc.v3.GdgwRouteTableRequest`

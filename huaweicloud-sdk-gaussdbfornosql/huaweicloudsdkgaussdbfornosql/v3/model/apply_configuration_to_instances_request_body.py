@@ -25,7 +25,7 @@ class ApplyConfigurationToInstancesRequestBody:
     }
 
     def __init__(self, instance_ids=None):
-        """ApplyConfigurationToInstancesRequestBody
+        r"""ApplyConfigurationToInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ApplyConfigurationToInstancesRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ApplyConfigurationToInstancesRequestBody.
+        r"""Gets the instance_ids of this ApplyConfigurationToInstancesRequestBody.
 
         实例ID列表对象。
 
@@ -53,7 +53,7 @@ class ApplyConfigurationToInstancesRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ApplyConfigurationToInstancesRequestBody.
+        r"""Sets the instance_ids of this ApplyConfigurationToInstancesRequestBody.
 
         实例ID列表对象。
 

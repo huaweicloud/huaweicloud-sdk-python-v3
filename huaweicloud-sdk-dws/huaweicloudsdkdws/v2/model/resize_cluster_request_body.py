@@ -25,7 +25,7 @@ class ResizeClusterRequestBody:
     }
 
     def __init__(self, scale_out=None):
-        """ResizeClusterRequestBody
+        r"""ResizeClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResizeClusterRequestBody:
 
     @property
     def scale_out(self):
-        """Gets the scale_out of this ResizeClusterRequestBody.
+        r"""Gets the scale_out of this ResizeClusterRequestBody.
 
         :return: The scale_out of this ResizeClusterRequestBody.
         :rtype: :class:`huaweicloudsdkdws.v2.ScaleOut`
@@ -52,7 +52,7 @@ class ResizeClusterRequestBody:
 
     @scale_out.setter
     def scale_out(self, scale_out):
-        """Sets the scale_out of this ResizeClusterRequestBody.
+        r"""Sets the scale_out of this ResizeClusterRequestBody.
 
         :param scale_out: The scale_out of this ResizeClusterRequestBody.
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`

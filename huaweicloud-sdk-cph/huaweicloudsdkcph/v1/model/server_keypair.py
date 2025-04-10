@@ -27,7 +27,7 @@ class ServerKeypair:
     }
 
     def __init__(self, server_id=None, keypair_name=None):
-        """ServerKeypair
+        r"""ServerKeypair
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServerKeypair:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerKeypair.
+        r"""Gets the server_id of this ServerKeypair.
 
         云手机服务器ID，不得超过32个字节。
 
@@ -59,7 +59,7 @@ class ServerKeypair:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerKeypair.
+        r"""Sets the server_id of this ServerKeypair.
 
         云手机服务器ID，不得超过32个字节。
 
@@ -70,7 +70,7 @@ class ServerKeypair:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this ServerKeypair.
+        r"""Gets the keypair_name of this ServerKeypair.
 
         密钥对名称。
 
@@ -81,7 +81,7 @@ class ServerKeypair:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this ServerKeypair.
+        r"""Sets the keypair_name of this ServerKeypair.
 
         密钥对名称。
 

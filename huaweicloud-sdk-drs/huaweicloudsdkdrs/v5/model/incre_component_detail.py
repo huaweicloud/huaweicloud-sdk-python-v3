@@ -37,7 +37,7 @@ class IncreComponentDetail:
     }
 
     def __init__(self, type=None, status=None, start_time=None, start_point=None, current_point=None, resolution_time=None, delay=None):
-        """IncreComponentDetail
+        r"""IncreComponentDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class IncreComponentDetail:
 
     @property
     def type(self):
-        """Gets the type of this IncreComponentDetail.
+        r"""Gets the type of this IncreComponentDetail.
 
         组件类型 - capture：抓取 - apply：回放
 
@@ -96,7 +96,7 @@ class IncreComponentDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IncreComponentDetail.
+        r"""Sets the type of this IncreComponentDetail.
 
         组件类型 - capture：抓取 - apply：回放
 
@@ -107,7 +107,7 @@ class IncreComponentDetail:
 
     @property
     def status(self):
-        """Gets the status of this IncreComponentDetail.
+        r"""Gets the status of this IncreComponentDetail.
 
         状态。 - STOPPED：停止 - STARTED：运行中 - STOPPING：停止中 - STARTING：启动中
 
@@ -118,7 +118,7 @@ class IncreComponentDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IncreComponentDetail.
+        r"""Sets the status of this IncreComponentDetail.
 
         状态。 - STOPPED：停止 - STARTED：运行中 - STOPPING：停止中 - STARTING：启动中
 
@@ -129,7 +129,7 @@ class IncreComponentDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this IncreComponentDetail.
+        r"""Gets the start_time of this IncreComponentDetail.
 
         启动时间
 
@@ -140,7 +140,7 @@ class IncreComponentDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this IncreComponentDetail.
+        r"""Sets the start_time of this IncreComponentDetail.
 
         启动时间
 
@@ -151,7 +151,7 @@ class IncreComponentDetail:
 
     @property
     def start_point(self):
-        """Gets the start_point of this IncreComponentDetail.
+        r"""Gets the start_point of this IncreComponentDetail.
 
         启动位点
 
@@ -162,7 +162,7 @@ class IncreComponentDetail:
 
     @start_point.setter
     def start_point(self, start_point):
-        """Sets the start_point of this IncreComponentDetail.
+        r"""Sets the start_point of this IncreComponentDetail.
 
         启动位点
 
@@ -173,7 +173,7 @@ class IncreComponentDetail:
 
     @property
     def current_point(self):
-        """Gets the current_point of this IncreComponentDetail.
+        r"""Gets the current_point of this IncreComponentDetail.
 
         当前位点
 
@@ -184,7 +184,7 @@ class IncreComponentDetail:
 
     @current_point.setter
     def current_point(self, current_point):
-        """Sets the current_point of this IncreComponentDetail.
+        r"""Sets the current_point of this IncreComponentDetail.
 
         当前位点
 
@@ -195,7 +195,7 @@ class IncreComponentDetail:
 
     @property
     def resolution_time(self):
-        """Gets the resolution_time of this IncreComponentDetail.
+        r"""Gets the resolution_time of this IncreComponentDetail.
 
         解析时间
 
@@ -206,7 +206,7 @@ class IncreComponentDetail:
 
     @resolution_time.setter
     def resolution_time(self, resolution_time):
-        """Sets the resolution_time of this IncreComponentDetail.
+        r"""Sets the resolution_time of this IncreComponentDetail.
 
         解析时间
 
@@ -217,7 +217,7 @@ class IncreComponentDetail:
 
     @property
     def delay(self):
-        """Gets the delay of this IncreComponentDetail.
+        r"""Gets the delay of this IncreComponentDetail.
 
         时延，单位：秒
 
@@ -228,7 +228,7 @@ class IncreComponentDetail:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this IncreComponentDetail.
+        r"""Sets the delay of this IncreComponentDetail.
 
         时延，单位：秒
 

@@ -29,7 +29,7 @@ class UpdateSecurityAssignedQueueRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """UpdateSecurityAssignedQueueRequest
+        r"""UpdateSecurityAssignedQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityAssignedQueueRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityAssignedQueueRequest.
+        r"""Gets the workspace of this UpdateSecurityAssignedQueueRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecurityAssignedQueueRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityAssignedQueueRequest.
+        r"""Sets the workspace of this UpdateSecurityAssignedQueueRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecurityAssignedQueueRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityAssignedQueueRequest.
+        r"""Gets the id of this UpdateSecurityAssignedQueueRequest.
 
         分配给当前空间的队列资源id。
 
@@ -88,7 +88,7 @@ class UpdateSecurityAssignedQueueRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityAssignedQueueRequest.
+        r"""Sets the id of this UpdateSecurityAssignedQueueRequest.
 
         分配给当前空间的队列资源id。
 
@@ -99,7 +99,7 @@ class UpdateSecurityAssignedQueueRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityAssignedQueueRequest.
+        r"""Gets the body of this UpdateSecurityAssignedQueueRequest.
 
         :return: The body of this UpdateSecurityAssignedQueueRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.QueueSrcAssignUpdateDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityAssignedQueueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityAssignedQueueRequest.
+        r"""Sets the body of this UpdateSecurityAssignedQueueRequest.
 
         :param body: The body of this UpdateSecurityAssignedQueueRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.QueueSrcAssignUpdateDTO`

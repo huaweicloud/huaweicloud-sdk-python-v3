@@ -24,7 +24,7 @@ class UpgradeCoreResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpgradeCoreResponse
+        r"""UpgradeCoreResponse
 
         The model defined in huaweicloud sdk
 

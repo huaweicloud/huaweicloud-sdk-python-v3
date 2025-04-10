@@ -33,7 +33,7 @@ class UpgradeWorkFlow:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """UpgradeWorkFlow
+        r"""UpgradeWorkFlow
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpgradeWorkFlow:
 
     @property
     def kind(self):
-        """Gets the kind of this UpgradeWorkFlow.
+        r"""Gets the kind of this UpgradeWorkFlow.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -82,7 +82,7 @@ class UpgradeWorkFlow:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpgradeWorkFlow.
+        r"""Sets the kind of this UpgradeWorkFlow.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -93,7 +93,7 @@ class UpgradeWorkFlow:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpgradeWorkFlow.
+        r"""Gets the api_version of this UpgradeWorkFlow.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -104,7 +104,7 @@ class UpgradeWorkFlow:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpgradeWorkFlow.
+        r"""Sets the api_version of this UpgradeWorkFlow.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -115,7 +115,7 @@ class UpgradeWorkFlow:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradeWorkFlow.
+        r"""Gets the metadata of this UpgradeWorkFlow.
 
         :return: The metadata of this UpgradeWorkFlow.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -124,7 +124,7 @@ class UpgradeWorkFlow:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradeWorkFlow.
+        r"""Sets the metadata of this UpgradeWorkFlow.
 
         :param metadata: The metadata of this UpgradeWorkFlow.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -133,7 +133,7 @@ class UpgradeWorkFlow:
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradeWorkFlow.
+        r"""Gets the spec of this UpgradeWorkFlow.
 
         :return: The spec of this UpgradeWorkFlow.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -142,7 +142,7 @@ class UpgradeWorkFlow:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradeWorkFlow.
+        r"""Sets the spec of this UpgradeWorkFlow.
 
         :param spec: The spec of this UpgradeWorkFlow.
         :type spec: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -151,7 +151,7 @@ class UpgradeWorkFlow:
 
     @property
     def status(self):
-        """Gets the status of this UpgradeWorkFlow.
+        r"""Gets the status of this UpgradeWorkFlow.
 
         :return: The status of this UpgradeWorkFlow.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowStatus`
@@ -160,7 +160,7 @@ class UpgradeWorkFlow:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpgradeWorkFlow.
+        r"""Sets the status of this UpgradeWorkFlow.
 
         :param status: The status of this UpgradeWorkFlow.
         :type status: :class:`huaweicloudsdkcce.v3.WorkFlowStatus`

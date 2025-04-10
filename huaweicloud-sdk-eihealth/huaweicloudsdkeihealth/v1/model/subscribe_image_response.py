@@ -26,7 +26,7 @@ class SubscribeImageResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """SubscribeImageResponse
+        r"""SubscribeImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SubscribeImageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this SubscribeImageResponse.
+        r"""Gets the id of this SubscribeImageResponse.
 
         镜像id
 
@@ -55,7 +55,7 @@ class SubscribeImageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubscribeImageResponse.
+        r"""Sets the id of this SubscribeImageResponse.
 
         镜像id
 

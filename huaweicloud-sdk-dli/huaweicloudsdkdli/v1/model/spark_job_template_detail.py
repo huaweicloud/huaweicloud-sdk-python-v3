@@ -75,7 +75,7 @@ class SparkJobTemplateDetail:
     }
 
     def __init__(self, file=None, class_name=None, cluster_name=None, args=None, sc_type=None, jars=None, py_files=None, files=None, modules=None, resources=None, groups=None, conf=None, name=None, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None, feature=None, spark_version=None, queue=None, auto_recovery=None, max_retry_times=None, image=None, obs_bucket=None, catalog_name=None):
-        """SparkJobTemplateDetail
+        r"""SparkJobTemplateDetail
 
         The model defined in huaweicloud sdk
 
@@ -216,7 +216,7 @@ class SparkJobTemplateDetail:
 
     @property
     def file(self):
-        """Gets the file of this SparkJobTemplateDetail.
+        r"""Gets the file of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为jar的资源包名。
 
@@ -227,7 +227,7 @@ class SparkJobTemplateDetail:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this SparkJobTemplateDetail.
+        r"""Sets the file of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为jar的资源包名。
 
@@ -238,7 +238,7 @@ class SparkJobTemplateDetail:
 
     @property
     def class_name(self):
-        """Gets the class_name of this SparkJobTemplateDetail.
+        r"""Gets the class_name of this SparkJobTemplateDetail.
 
         批处理作业的Java/Spark主类。
 
@@ -249,7 +249,7 @@ class SparkJobTemplateDetail:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this SparkJobTemplateDetail.
+        r"""Sets the class_name of this SparkJobTemplateDetail.
 
         批处理作业的Java/Spark主类。
 
@@ -260,7 +260,7 @@ class SparkJobTemplateDetail:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this SparkJobTemplateDetail.
+        r"""Gets the cluster_name of this SparkJobTemplateDetail.
 
         用于指定队列，填写已创建DLI的队列名。
 
@@ -271,7 +271,7 @@ class SparkJobTemplateDetail:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this SparkJobTemplateDetail.
+        r"""Sets the cluster_name of this SparkJobTemplateDetail.
 
         用于指定队列，填写已创建DLI的队列名。
 
@@ -282,7 +282,7 @@ class SparkJobTemplateDetail:
 
     @property
     def args(self):
-        """Gets the args of this SparkJobTemplateDetail.
+        r"""Gets the args of this SparkJobTemplateDetail.
 
         传入主类的参数。
 
@@ -293,7 +293,7 @@ class SparkJobTemplateDetail:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this SparkJobTemplateDetail.
+        r"""Sets the args of this SparkJobTemplateDetail.
 
         传入主类的参数。
 
@@ -304,7 +304,7 @@ class SparkJobTemplateDetail:
 
     @property
     def sc_type(self):
-        """Gets the sc_type of this SparkJobTemplateDetail.
+        r"""Gets the sc_type of this SparkJobTemplateDetail.
 
         计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 资源类型： A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6。 B：16核64G内存,2,2,7G,8G,7。 C：32核128G内存,4,2,15G,8G,14。
 
@@ -315,7 +315,7 @@ class SparkJobTemplateDetail:
 
     @sc_type.setter
     def sc_type(self, sc_type):
-        """Sets the sc_type of this SparkJobTemplateDetail.
+        r"""Sets the sc_type of this SparkJobTemplateDetail.
 
         计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 资源类型： A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6。 B：16核64G内存,2,2,7G,8G,7。 C：32核128G内存,4,2,15G,8G,14。
 
@@ -326,7 +326,7 @@ class SparkJobTemplateDetail:
 
     @property
     def jars(self):
-        """Gets the jars of this SparkJobTemplateDetail.
+        r"""Gets the jars of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为jar的资源包名。
 
@@ -337,7 +337,7 @@ class SparkJobTemplateDetail:
 
     @jars.setter
     def jars(self, jars):
-        """Sets the jars of this SparkJobTemplateDetail.
+        r"""Sets the jars of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为jar的资源包名。
 
@@ -348,7 +348,7 @@ class SparkJobTemplateDetail:
 
     @property
     def py_files(self):
-        """Gets the py_files of this SparkJobTemplateDetail.
+        r"""Gets the py_files of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为pyFile的资源包名。
 
@@ -359,7 +359,7 @@ class SparkJobTemplateDetail:
 
     @py_files.setter
     def py_files(self, py_files):
-        """Sets the py_files of this SparkJobTemplateDetail.
+        r"""Sets the py_files of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为pyFile的资源包名。
 
@@ -370,7 +370,7 @@ class SparkJobTemplateDetail:
 
     @property
     def files(self):
-        """Gets the files of this SparkJobTemplateDetail.
+        r"""Gets the files of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为file的资源包名。
 
@@ -381,7 +381,7 @@ class SparkJobTemplateDetail:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this SparkJobTemplateDetail.
+        r"""Sets the files of this SparkJobTemplateDetail.
 
         用户已上传到DLI资源管理系统的类型为file的资源包名。
 
@@ -392,7 +392,7 @@ class SparkJobTemplateDetail:
 
     @property
     def modules(self):
-        """Gets the modules of this SparkJobTemplateDetail.
+        r"""Gets the modules of this SparkJobTemplateDetail.
 
         依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下： CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
 
@@ -403,7 +403,7 @@ class SparkJobTemplateDetail:
 
     @modules.setter
     def modules(self, modules):
-        """Sets the modules of this SparkJobTemplateDetail.
+        r"""Sets the modules of this SparkJobTemplateDetail.
 
         依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下： CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
 
@@ -414,7 +414,7 @@ class SparkJobTemplateDetail:
 
     @property
     def resources(self):
-        """Gets the resources of this SparkJobTemplateDetail.
+        r"""Gets the resources of this SparkJobTemplateDetail.
 
         JSON对象列表，填写用户已上传到队列的类型为JSON的资源包名和类型。
 
@@ -425,7 +425,7 @@ class SparkJobTemplateDetail:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this SparkJobTemplateDetail.
+        r"""Sets the resources of this SparkJobTemplateDetail.
 
         JSON对象列表，填写用户已上传到队列的类型为JSON的资源包名和类型。
 
@@ -436,7 +436,7 @@ class SparkJobTemplateDetail:
 
     @property
     def groups(self):
-        """Gets the groups of this SparkJobTemplateDetail.
+        r"""Gets the groups of this SparkJobTemplateDetail.
 
         JSON对象列表，填写用户组类型资源，格式详见请求示例。resources中的name未进行type校验，只要此分组中存在这个名字的包即可。
 
@@ -447,7 +447,7 @@ class SparkJobTemplateDetail:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this SparkJobTemplateDetail.
+        r"""Sets the groups of this SparkJobTemplateDetail.
 
         JSON对象列表，填写用户组类型资源，格式详见请求示例。resources中的name未进行type校验，只要此分组中存在这个名字的包即可。
 
@@ -458,7 +458,7 @@ class SparkJobTemplateDetail:
 
     @property
     def conf(self):
-        """Gets the conf of this SparkJobTemplateDetail.
+        r"""Gets the conf of this SparkJobTemplateDetail.
 
         batch配置项。
 
@@ -469,7 +469,7 @@ class SparkJobTemplateDetail:
 
     @conf.setter
     def conf(self, conf):
-        """Sets the conf of this SparkJobTemplateDetail.
+        r"""Sets the conf of this SparkJobTemplateDetail.
 
         batch配置项。
 
@@ -480,7 +480,7 @@ class SparkJobTemplateDetail:
 
     @property
     def name(self):
-        """Gets the name of this SparkJobTemplateDetail.
+        r"""Gets the name of this SparkJobTemplateDetail.
 
         创建时用户指定的批处理名称，不能超过128个字符。
 
@@ -491,7 +491,7 @@ class SparkJobTemplateDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SparkJobTemplateDetail.
+        r"""Sets the name of this SparkJobTemplateDetail.
 
         创建时用户指定的批处理名称，不能超过128个字符。
 
@@ -502,7 +502,7 @@ class SparkJobTemplateDetail:
 
     @property
     def driver_memory(self):
-        """Gets the driver_memory of this SparkJobTemplateDetail.
+        r"""Gets the driver_memory of this SparkJobTemplateDetail.
 
         Spark应用的Driver内存, 参数配置例如2G, 2048M。该配置项会替换“sc_type”中对应的默认参数，使用时必需带单位，否则会启动失败。
 
@@ -513,7 +513,7 @@ class SparkJobTemplateDetail:
 
     @driver_memory.setter
     def driver_memory(self, driver_memory):
-        """Sets the driver_memory of this SparkJobTemplateDetail.
+        r"""Sets the driver_memory of this SparkJobTemplateDetail.
 
         Spark应用的Driver内存, 参数配置例如2G, 2048M。该配置项会替换“sc_type”中对应的默认参数，使用时必需带单位，否则会启动失败。
 
@@ -524,7 +524,7 @@ class SparkJobTemplateDetail:
 
     @property
     def driver_cores(self):
-        """Gets the driver_cores of this SparkJobTemplateDetail.
+        r"""Gets the driver_cores of this SparkJobTemplateDetail.
 
         Spark应用Driver的CPU核数。该配置项会替换sc_type中对应的默认参数。
 
@@ -535,7 +535,7 @@ class SparkJobTemplateDetail:
 
     @driver_cores.setter
     def driver_cores(self, driver_cores):
-        """Sets the driver_cores of this SparkJobTemplateDetail.
+        r"""Sets the driver_cores of this SparkJobTemplateDetail.
 
         Spark应用Driver的CPU核数。该配置项会替换sc_type中对应的默认参数。
 
@@ -546,7 +546,7 @@ class SparkJobTemplateDetail:
 
     @property
     def executor_memory(self):
-        """Gets the executor_memory of this SparkJobTemplateDetail.
+        r"""Gets the executor_memory of this SparkJobTemplateDetail.
 
         Spark应用的Executor内存, 参数配置例如2G, 2048M。该配置项会替换“sc_type”中对应的默认参数，使用时必需带单位，否则会启动失败。
 
@@ -557,7 +557,7 @@ class SparkJobTemplateDetail:
 
     @executor_memory.setter
     def executor_memory(self, executor_memory):
-        """Sets the executor_memory of this SparkJobTemplateDetail.
+        r"""Sets the executor_memory of this SparkJobTemplateDetail.
 
         Spark应用的Executor内存, 参数配置例如2G, 2048M。该配置项会替换“sc_type”中对应的默认参数，使用时必需带单位，否则会启动失败。
 
@@ -568,7 +568,7 @@ class SparkJobTemplateDetail:
 
     @property
     def executor_cores(self):
-        """Gets the executor_cores of this SparkJobTemplateDetail.
+        r"""Gets the executor_cores of this SparkJobTemplateDetail.
 
         Spark应用每个Executor的CPU核数。该配置项会替换sc_type中对应的默认参数。
 
@@ -579,7 +579,7 @@ class SparkJobTemplateDetail:
 
     @executor_cores.setter
     def executor_cores(self, executor_cores):
-        """Sets the executor_cores of this SparkJobTemplateDetail.
+        r"""Sets the executor_cores of this SparkJobTemplateDetail.
 
         Spark应用每个Executor的CPU核数。该配置项会替换sc_type中对应的默认参数。
 
@@ -590,7 +590,7 @@ class SparkJobTemplateDetail:
 
     @property
     def num_executors(self):
-        """Gets the num_executors of this SparkJobTemplateDetail.
+        r"""Gets the num_executors of this SparkJobTemplateDetail.
 
         Spark应用Executor的个数。该配置项会替换sc_type中对应的默认参数。
 
@@ -601,7 +601,7 @@ class SparkJobTemplateDetail:
 
     @num_executors.setter
     def num_executors(self, num_executors):
-        """Sets the num_executors of this SparkJobTemplateDetail.
+        r"""Sets the num_executors of this SparkJobTemplateDetail.
 
         Spark应用Executor的个数。该配置项会替换sc_type中对应的默认参数。
 
@@ -612,7 +612,7 @@ class SparkJobTemplateDetail:
 
     @property
     def feature(self):
-        """Gets the feature of this SparkJobTemplateDetail.
+        r"""Gets the feature of this SparkJobTemplateDetail.
 
         作业特性，作业运行在vm队列上支持basic，在container队列上支持basic、ai、custom，其中填写custom时需要同时填写image参数。
 
@@ -623,7 +623,7 @@ class SparkJobTemplateDetail:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this SparkJobTemplateDetail.
+        r"""Sets the feature of this SparkJobTemplateDetail.
 
         作业特性，作业运行在vm队列上支持basic，在container队列上支持basic、ai、custom，其中填写custom时需要同时填写image参数。
 
@@ -634,7 +634,7 @@ class SparkJobTemplateDetail:
 
     @property
     def spark_version(self):
-        """Gets the spark_version of this SparkJobTemplateDetail.
+        r"""Gets the spark_version of this SparkJobTemplateDetail.
 
         作业使用spark组件的版本号，在feature为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
 
@@ -645,7 +645,7 @@ class SparkJobTemplateDetail:
 
     @spark_version.setter
     def spark_version(self, spark_version):
-        """Sets the spark_version of this SparkJobTemplateDetail.
+        r"""Sets the spark_version of this SparkJobTemplateDetail.
 
         作业使用spark组件的版本号，在feature为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
 
@@ -656,7 +656,7 @@ class SparkJobTemplateDetail:
 
     @property
     def queue(self):
-        """Gets the queue of this SparkJobTemplateDetail.
+        r"""Gets the queue of this SparkJobTemplateDetail.
 
         用于指定队列，填写已创建DLI的队列名
 
@@ -667,7 +667,7 @@ class SparkJobTemplateDetail:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this SparkJobTemplateDetail.
+        r"""Sets the queue of this SparkJobTemplateDetail.
 
         用于指定队列，填写已创建DLI的队列名
 
@@ -678,7 +678,7 @@ class SparkJobTemplateDetail:
 
     @property
     def auto_recovery(self):
-        """Gets the auto_recovery of this SparkJobTemplateDetail.
+        r"""Gets the auto_recovery of this SparkJobTemplateDetail.
 
         是否开启重试功能，如果开启，可在Spark作业异常失败后自动重试。默认值为“false”。
 
@@ -689,7 +689,7 @@ class SparkJobTemplateDetail:
 
     @auto_recovery.setter
     def auto_recovery(self, auto_recovery):
-        """Sets the auto_recovery of this SparkJobTemplateDetail.
+        r"""Sets the auto_recovery of this SparkJobTemplateDetail.
 
         是否开启重试功能，如果开启，可在Spark作业异常失败后自动重试。默认值为“false”。
 
@@ -700,7 +700,7 @@ class SparkJobTemplateDetail:
 
     @property
     def max_retry_times(self):
-        """Gets the max_retry_times of this SparkJobTemplateDetail.
+        r"""Gets the max_retry_times of this SparkJobTemplateDetail.
 
         最大重试次数。最大值为“100”，默认值为“20”。
 
@@ -711,7 +711,7 @@ class SparkJobTemplateDetail:
 
     @max_retry_times.setter
     def max_retry_times(self, max_retry_times):
-        """Sets the max_retry_times of this SparkJobTemplateDetail.
+        r"""Sets the max_retry_times of this SparkJobTemplateDetail.
 
         最大重试次数。最大值为“100”，默认值为“20”。
 
@@ -722,7 +722,7 @@ class SparkJobTemplateDetail:
 
     @property
     def image(self):
-        """Gets the image of this SparkJobTemplateDetail.
+        r"""Gets the image of this SparkJobTemplateDetail.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Spark镜像。关于如何使用自定义镜像，请参考《数据湖探索用户指南》。
 
@@ -733,7 +733,7 @@ class SparkJobTemplateDetail:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this SparkJobTemplateDetail.
+        r"""Sets the image of this SparkJobTemplateDetail.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Spark镜像。关于如何使用自定义镜像，请参考《数据湖探索用户指南》。
 
@@ -744,7 +744,7 @@ class SparkJobTemplateDetail:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this SparkJobTemplateDetail.
+        r"""Gets the obs_bucket of this SparkJobTemplateDetail.
 
         保存Spark作业的obs桶，需要保存作业时配置该参数
 
@@ -755,7 +755,7 @@ class SparkJobTemplateDetail:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this SparkJobTemplateDetail.
+        r"""Sets the obs_bucket of this SparkJobTemplateDetail.
 
         保存Spark作业的obs桶，需要保存作业时配置该参数
 
@@ -766,7 +766,7 @@ class SparkJobTemplateDetail:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this SparkJobTemplateDetail.
+        r"""Gets the catalog_name of this SparkJobTemplateDetail.
 
         访问元数据时，需要将该参数配置为dli。
 
@@ -777,7 +777,7 @@ class SparkJobTemplateDetail:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this SparkJobTemplateDetail.
+        r"""Sets the catalog_name of this SparkJobTemplateDetail.
 
         访问元数据时，需要将该参数配置为dli。
 

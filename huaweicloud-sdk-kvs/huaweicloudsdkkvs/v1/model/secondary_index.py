@@ -29,7 +29,7 @@ class SecondaryIndex:
     }
 
     def __init__(self, index_name=None, sort_key_fields=None, abstract_fields=None):
-        """SecondaryIndex
+        r"""SecondaryIndex
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SecondaryIndex:
 
     @property
     def index_name(self):
-        """Gets the index_name of this SecondaryIndex.
+        r"""Gets the index_name of this SecondaryIndex.
 
         二级索引名称，表内唯一。
 
@@ -66,7 +66,7 @@ class SecondaryIndex:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this SecondaryIndex.
+        r"""Sets the index_name of this SecondaryIndex.
 
         二级索引名称，表内唯一。
 
@@ -77,7 +77,7 @@ class SecondaryIndex:
 
     @property
     def sort_key_fields(self):
-        """Gets the sort_key_fields of this SecondaryIndex.
+        r"""Gets the sort_key_fields of this SecondaryIndex.
 
         排序键字段名数组，顺序组合。
 
@@ -88,7 +88,7 @@ class SecondaryIndex:
 
     @sort_key_fields.setter
     def sort_key_fields(self, sort_key_fields):
-        """Sets the sort_key_fields of this SecondaryIndex.
+        r"""Sets the sort_key_fields of this SecondaryIndex.
 
         排序键字段名数组，顺序组合。
 
@@ -99,7 +99,7 @@ class SecondaryIndex:
 
     @property
     def abstract_fields(self):
-        """Gets the abstract_fields of this SecondaryIndex.
+        r"""Gets the abstract_fields of this SecondaryIndex.
 
         摘要字段名数组。
 
@@ -110,7 +110,7 @@ class SecondaryIndex:
 
     @abstract_fields.setter
     def abstract_fields(self, abstract_fields):
-        """Sets the abstract_fields of this SecondaryIndex.
+        r"""Sets the abstract_fields of this SecondaryIndex.
 
         摘要字段名数组。
 

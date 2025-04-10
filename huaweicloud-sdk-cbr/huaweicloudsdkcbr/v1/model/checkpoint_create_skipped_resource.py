@@ -33,7 +33,7 @@ class CheckpointCreateSkippedResource:
     }
 
     def __init__(self, id=None, type=None, name=None, code=None, reason=None):
-        """CheckpointCreateSkippedResource
+        r"""CheckpointCreateSkippedResource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CheckpointCreateSkippedResource:
 
     @property
     def id(self):
-        """Gets the id of this CheckpointCreateSkippedResource.
+        r"""Gets the id of this CheckpointCreateSkippedResource.
 
         资源ID
 
@@ -82,7 +82,7 @@ class CheckpointCreateSkippedResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckpointCreateSkippedResource.
+        r"""Sets the id of this CheckpointCreateSkippedResource.
 
         资源ID
 
@@ -93,7 +93,7 @@ class CheckpointCreateSkippedResource:
 
     @property
     def type(self):
-        """Gets the type of this CheckpointCreateSkippedResource.
+        r"""Gets the type of this CheckpointCreateSkippedResource.
 
         资源类型
 
@@ -104,7 +104,7 @@ class CheckpointCreateSkippedResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CheckpointCreateSkippedResource.
+        r"""Sets the type of this CheckpointCreateSkippedResource.
 
         资源类型
 
@@ -115,7 +115,7 @@ class CheckpointCreateSkippedResource:
 
     @property
     def name(self):
-        """Gets the name of this CheckpointCreateSkippedResource.
+        r"""Gets the name of this CheckpointCreateSkippedResource.
 
         资源名称
 
@@ -126,7 +126,7 @@ class CheckpointCreateSkippedResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckpointCreateSkippedResource.
+        r"""Sets the name of this CheckpointCreateSkippedResource.
 
         资源名称
 
@@ -137,7 +137,7 @@ class CheckpointCreateSkippedResource:
 
     @property
     def code(self):
-        """Gets the code of this CheckpointCreateSkippedResource.
+        r"""Gets the code of this CheckpointCreateSkippedResource.
 
         请参见[错误码](ErrorCode.xml)。
 
@@ -148,7 +148,7 @@ class CheckpointCreateSkippedResource:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CheckpointCreateSkippedResource.
+        r"""Sets the code of this CheckpointCreateSkippedResource.
 
         请参见[错误码](ErrorCode.xml)。
 
@@ -159,7 +159,7 @@ class CheckpointCreateSkippedResource:
 
     @property
     def reason(self):
-        """Gets the reason of this CheckpointCreateSkippedResource.
+        r"""Gets the reason of this CheckpointCreateSkippedResource.
 
         跳过原因，例如：该资源正在备份中。
 
@@ -170,7 +170,7 @@ class CheckpointCreateSkippedResource:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CheckpointCreateSkippedResource.
+        r"""Sets the reason of this CheckpointCreateSkippedResource.
 
         跳过原因，例如：该资源正在备份中。
 

@@ -33,7 +33,7 @@ class ActionOnComponentSpec:
     }
 
     def __init__(self, snapshot_index=None, replica=None, source=None, resource_limit=None, build=None):
-        """ActionOnComponentSpec
+        r"""ActionOnComponentSpec
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ActionOnComponentSpec:
 
     @property
     def snapshot_index(self):
-        """Gets the snapshot_index of this ActionOnComponentSpec.
+        r"""Gets the snapshot_index of this ActionOnComponentSpec.
 
         快照序号。
 
@@ -82,7 +82,7 @@ class ActionOnComponentSpec:
 
     @snapshot_index.setter
     def snapshot_index(self, snapshot_index):
-        """Sets the snapshot_index of this ActionOnComponentSpec.
+        r"""Sets the snapshot_index of this ActionOnComponentSpec.
 
         快照序号。
 
@@ -93,7 +93,7 @@ class ActionOnComponentSpec:
 
     @property
     def replica(self):
-        """Gets the replica of this ActionOnComponentSpec.
+        r"""Gets the replica of this ActionOnComponentSpec.
 
         实例个数。
 
@@ -104,7 +104,7 @@ class ActionOnComponentSpec:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ActionOnComponentSpec.
+        r"""Sets the replica of this ActionOnComponentSpec.
 
         实例个数。
 
@@ -115,7 +115,7 @@ class ActionOnComponentSpec:
 
     @property
     def source(self):
-        """Gets the source of this ActionOnComponentSpec.
+        r"""Gets the source of this ActionOnComponentSpec.
 
         :return: The source of this ActionOnComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ActionOnComponentSource`
@@ -124,7 +124,7 @@ class ActionOnComponentSpec:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ActionOnComponentSpec.
+        r"""Sets the source of this ActionOnComponentSpec.
 
         :param source: The source of this ActionOnComponentSpec.
         :type source: :class:`huaweicloudsdkcae.v1.ActionOnComponentSource`
@@ -133,7 +133,7 @@ class ActionOnComponentSpec:
 
     @property
     def resource_limit(self):
-        """Gets the resource_limit of this ActionOnComponentSpec.
+        r"""Gets the resource_limit of this ActionOnComponentSpec.
 
         :return: The resource_limit of this ActionOnComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`
@@ -142,7 +142,7 @@ class ActionOnComponentSpec:
 
     @resource_limit.setter
     def resource_limit(self, resource_limit):
-        """Sets the resource_limit of this ActionOnComponentSpec.
+        r"""Sets the resource_limit of this ActionOnComponentSpec.
 
         :param resource_limit: The resource_limit of this ActionOnComponentSpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`
@@ -151,7 +151,7 @@ class ActionOnComponentSpec:
 
     @property
     def build(self):
-        """Gets the build of this ActionOnComponentSpec.
+        r"""Gets the build of this ActionOnComponentSpec.
 
         :return: The build of this ActionOnComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ActionOnComponentBuild`
@@ -160,7 +160,7 @@ class ActionOnComponentSpec:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ActionOnComponentSpec.
+        r"""Sets the build of this ActionOnComponentSpec.
 
         :param build: The build of this ActionOnComponentSpec.
         :type build: :class:`huaweicloudsdkcae.v1.ActionOnComponentBuild`

@@ -34,7 +34,7 @@ class MrsAsyncClient(Client):
         return client_builder
 
     def batch_delete_jobs_async(self, request):
-        """批量删除作业
+        r"""批量删除作业
 
         在MRS集群中批量删除作业。
         
@@ -101,7 +101,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_auto_scaling_policy_async(self, request):
-        """创建弹性伸缩策略
+        r"""创建弹性伸缩策略
 
         创建弹性伸缩策略。
         
@@ -168,7 +168,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建集群
+        r"""创建集群
 
         创建一个MRS集群。使用接口前，您需要先获取下的资源信息。
         - 通过VPC创建或查询VPC、子网
@@ -237,7 +237,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_execute_job_async(self, request):
-        """新增并执行作业
+        r"""新增并执行作业
 
         在MRS集群中新增并提交一个作业。
         
@@ -310,7 +310,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def delete_auto_scaling_policy_async(self, request):
-        """删除弹性伸缩策略
+        r"""删除弹性伸缩策略
 
         删除弹性伸缩策略。
         
@@ -377,7 +377,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def run_job_flow_async(self, request):
-        """创建集群并提交作业
+        r"""创建集群并提交作业
 
         创建一个MRS集群并提交作业，并支持作业完成后删除集群，支持MRS 1.8.9及以上集群版本使用。使用接口前，您需要先获取下的资源信息。
         - 通过VPC创建或查询VPC、子网
@@ -446,7 +446,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_agency_mapping_async(self, request):
-        """查询用户（组）与IAM委托的映射关系
+        r"""查询用户（组）与IAM委托的映射关系
 
         获取用户（组）与IAM委托之间的映射关系的详细信息。
         
@@ -511,7 +511,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_auto_scaling_policy_async(self, request):
-        """查看弹性伸缩策略
+        r"""查看弹性伸缩策略
 
         查看指定集群的所有的弹性伸缩策略信息。
         
@@ -576,7 +576,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_job_exe_list_new_async(self, request):
-        """查询作业列表信息
+        r"""查询作业列表信息
 
         在MRS指定集群中查询作业列表信息。
         
@@ -665,7 +665,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_single_job_exe_async(self, request):
-        """查询单个作业信息
+        r"""查询单个作业信息
 
         在MRS集群中查询指定作业的详细信息。
         
@@ -732,7 +732,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_sql_result_with_job_async(self, request):
-        """获取SQL结果
+        r"""获取SQL结果
 
         在MRS集群中查询SparkSql和SparkScript两种类型作业的SQL语句运行完成后返回的查询结果。
         
@@ -799,7 +799,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def stop_job_async(self, request):
-        """终止作业
+        r"""终止作业
 
         在MRS集群中终止指定作业。
         
@@ -866,7 +866,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def update_agency_mapping_async(self, request):
-        """更新用户（组）与IAM委托的映射关系
+        r"""更新用户（组）与IAM委托的映射关系
 
         更新用户（组）与IAM委托之间的映射关系。
         
@@ -933,7 +933,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def update_auto_scaling_policy_async(self, request):
-        """更新弹性伸缩策略
+        r"""更新弹性伸缩策略
 
         更新弹性伸缩策略。
         
@@ -1000,7 +1000,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def update_cluster_name_async(self, request):
-        """修改集群名称
+        r"""修改集群名称
 
         修改集群名称
         
@@ -1067,7 +1067,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def add_component_async(self, request):
-        """集群添加组件
+        r"""集群添加组件
 
         集群添加组件
         
@@ -1134,7 +1134,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def expand_cluster_async(self, request):
-        """扩容集群
+        r"""扩容集群
 
         对MRS集群进行扩容。
         
@@ -1201,7 +1201,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_nodes_async(self, request):
-        """查询集群节点列表
+        r"""查询集群节点列表
 
         查询集群节点列表。
         
@@ -1284,7 +1284,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def shrink_cluster_async(self, request):
-        """缩容集群
+        r"""缩容集群
 
         对MRS集群进行缩容。
         
@@ -1351,7 +1351,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_data_connector_async(self, request):
-        """创建数据连接
+        r"""创建数据连接
 
         创建数据连接
         
@@ -1416,7 +1416,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def delete_data_connector_async(self, request):
-        """删除数据连接
+        r"""删除数据连接
 
         删除数据连接
         
@@ -1481,7 +1481,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_data_connector_async(self, request):
-        """查询数据连接列表
+        r"""查询数据连接列表
 
         查询数据连接列表
         
@@ -1556,7 +1556,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def update_data_connector_async(self, request):
-        """更新数据连接
+        r"""更新数据连接
 
         更新数据连接
         
@@ -1623,7 +1623,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_hdfs_file_list_async(self, request):
-        """获取指定目录文件列表
+        r"""获取指定目录文件列表
 
         在MRS集群中获取指定目录文件列表。
         
@@ -1698,7 +1698,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def cancel_sync_iam_user_async(self, request):
-        """指定用户、用户组取消同步
+        r"""指定用户、用户组取消同步
 
         指定用户、用户组取消同步
         
@@ -1765,7 +1765,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_sync_iam_user_async(self, request):
-        """获取已经同步的IAM用户和用户组
+        r"""获取已经同步的IAM用户和用户组
 
         获取已经同步的IAM用户和用户组
         
@@ -1830,7 +1830,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def update_sync_iam_user_async(self, request):
-        """IAM同步
+        r"""IAM同步
 
         将IAM用户和用户组同步到manager，指定用户的情况下，会将该用户关联的IAM用户组也同步到manager。
         
@@ -1897,7 +1897,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def cancel_sql_async(self, request):
-        """取消SQL执行任务
+        r"""取消SQL执行任务
 
         在MRS集群中取消一条SQL的执行任务。
         
@@ -1964,7 +1964,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def execute_sql_async(self, request):
-        """提交SQL语句
+        r"""提交SQL语句
 
         在MRS集群中提交并执行一条SQL语句。
         
@@ -2031,7 +2031,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_sql_result_async(self, request):
-        """查询SQL结果
+        r"""查询SQL结果
 
         在MRS集群中查询一条SQL的执行结果。
         
@@ -2098,7 +2098,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_tag_quota_async(self, request):
-        """查询标签配额
+        r"""查询标签配额
 
         查询标签配额信息
         
@@ -2165,7 +2165,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_tag_status_async(self, request):
-        """查询默认标签状态
+        r"""查询默认标签状态
 
         查询集群默认标签状态
         
@@ -2230,7 +2230,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def switch_cluster_tags_async(self, request):
-        """集群操作默认标签
+        r"""集群操作默认标签
 
         对已有集群启用或关闭集群默认标签。开启后，集群内节点会打上集群默认标签。
         
@@ -2297,7 +2297,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_mrs_flavors_async(self, request):
-        """查询MRS集群版本可用的规格
+        r"""查询MRS集群版本可用的规格
 
         查询MRS集群版本可用的规格
         
@@ -2364,7 +2364,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_mrs_version_list_async(self, request):
-        """展示MRS版本列表
+        r"""展示MRS版本列表
 
         展示MRS版本列表
         

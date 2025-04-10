@@ -26,7 +26,7 @@ class UpdateLoginProtectResponse(SdkResponse):
     }
 
     def __init__(self, login_protect=None):
-        """UpdateLoginProtectResponse
+        r"""UpdateLoginProtectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLoginProtectResponse(SdkResponse):
 
     @property
     def login_protect(self):
-        """Gets the login_protect of this UpdateLoginProtectResponse.
+        r"""Gets the login_protect of this UpdateLoginProtectResponse.
 
         :return: The login_protect of this UpdateLoginProtectResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRespon`
@@ -53,7 +53,7 @@ class UpdateLoginProtectResponse(SdkResponse):
 
     @login_protect.setter
     def login_protect(self, login_protect):
-        """Sets the login_protect of this UpdateLoginProtectResponse.
+        r"""Sets the login_protect of this UpdateLoginProtectResponse.
 
         :param login_protect: The login_protect of this UpdateLoginProtectResponse.
         :type login_protect: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRespon`

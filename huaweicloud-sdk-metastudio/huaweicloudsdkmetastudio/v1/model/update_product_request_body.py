@@ -37,7 +37,7 @@ class UpdateProductRequestBody:
     }
 
     def __init__(self, name=None, description=None, tags=None, cover=None, text_list=None, asset_list=None, state=None):
-        """UpdateProductRequestBody
+        r"""UpdateProductRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class UpdateProductRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateProductRequestBody.
+        r"""Gets the name of this UpdateProductRequestBody.
 
         商品名称
 
@@ -95,7 +95,7 @@ class UpdateProductRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProductRequestBody.
+        r"""Sets the name of this UpdateProductRequestBody.
 
         商品名称
 
@@ -106,7 +106,7 @@ class UpdateProductRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProductRequestBody.
+        r"""Gets the description of this UpdateProductRequestBody.
 
         商品描述
 
@@ -117,7 +117,7 @@ class UpdateProductRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProductRequestBody.
+        r"""Sets the description of this UpdateProductRequestBody.
 
         商品描述
 
@@ -128,7 +128,7 @@ class UpdateProductRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateProductRequestBody.
+        r"""Gets the tags of this UpdateProductRequestBody.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -139,7 +139,7 @@ class UpdateProductRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateProductRequestBody.
+        r"""Sets the tags of this UpdateProductRequestBody.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -150,7 +150,7 @@ class UpdateProductRequestBody:
 
     @property
     def cover(self):
-        """Gets the cover of this UpdateProductRequestBody.
+        r"""Gets the cover of this UpdateProductRequestBody.
 
         :return: The cover of this UpdateProductRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
@@ -159,7 +159,7 @@ class UpdateProductRequestBody:
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this UpdateProductRequestBody.
+        r"""Sets the cover of this UpdateProductRequestBody.
 
         :param cover: The cover of this UpdateProductRequestBody.
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
@@ -168,7 +168,7 @@ class UpdateProductRequestBody:
 
     @property
     def text_list(self):
-        """Gets the text_list of this UpdateProductRequestBody.
+        r"""Gets the text_list of this UpdateProductRequestBody.
 
         文本列表
 
@@ -179,7 +179,7 @@ class UpdateProductRequestBody:
 
     @text_list.setter
     def text_list(self, text_list):
-        """Sets the text_list of this UpdateProductRequestBody.
+        r"""Sets the text_list of this UpdateProductRequestBody.
 
         文本列表
 
@@ -190,7 +190,7 @@ class UpdateProductRequestBody:
 
     @property
     def asset_list(self):
-        """Gets the asset_list of this UpdateProductRequestBody.
+        r"""Gets the asset_list of this UpdateProductRequestBody.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -201,7 +201,7 @@ class UpdateProductRequestBody:
 
     @asset_list.setter
     def asset_list(self, asset_list):
-        """Sets the asset_list of this UpdateProductRequestBody.
+        r"""Sets the asset_list of this UpdateProductRequestBody.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -212,7 +212,7 @@ class UpdateProductRequestBody:
 
     @property
     def state(self):
-        """Gets the state of this UpdateProductRequestBody.
+        r"""Gets the state of this UpdateProductRequestBody.
 
         商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活
 
@@ -223,7 +223,7 @@ class UpdateProductRequestBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateProductRequestBody.
+        r"""Sets the state of this UpdateProductRequestBody.
 
         商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活
 

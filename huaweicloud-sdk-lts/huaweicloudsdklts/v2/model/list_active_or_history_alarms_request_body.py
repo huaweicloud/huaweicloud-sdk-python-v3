@@ -39,7 +39,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
     }
 
     def __init__(self, step=None, whether_custom_field=None, start_time=None, end_time=None, time_range=None, search=None, alarm_level_ids=None, sort=None):
-        """ListActiveOrHistoryAlarmsRequestBody
+        r"""ListActiveOrHistoryAlarmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def step(self):
-        """Gets the step of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the step of this ListActiveOrHistoryAlarmsRequestBody.
 
         关键字检索条件
 
@@ -102,7 +102,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the step of this ListActiveOrHistoryAlarmsRequestBody.
 
         关键字检索条件
 
@@ -113,7 +113,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def whether_custom_field(self):
-        """Gets the whether_custom_field of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the whether_custom_field of this ListActiveOrHistoryAlarmsRequestBody.
 
         是否自定义查询时间段
 
@@ -124,7 +124,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @whether_custom_field.setter
     def whether_custom_field(self, whether_custom_field):
-        """Sets the whether_custom_field of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the whether_custom_field of this ListActiveOrHistoryAlarmsRequestBody.
 
         是否自定义查询时间段
 
@@ -135,7 +135,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the start_time of this ListActiveOrHistoryAlarmsRequestBody.
 
         自定义时间段开始时间(时间戳)
 
@@ -146,7 +146,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the start_time of this ListActiveOrHistoryAlarmsRequestBody.
 
         自定义时间段开始时间(时间戳)
 
@@ -157,7 +157,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the end_time of this ListActiveOrHistoryAlarmsRequestBody.
 
         自定义时间段结束时间(时间戳)
 
@@ -168,7 +168,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the end_time of this ListActiveOrHistoryAlarmsRequestBody.
 
         自定义时间段结束时间(时间戳)
 
@@ -179,7 +179,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def time_range(self):
-        """Gets the time_range of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the time_range of this ListActiveOrHistoryAlarmsRequestBody.
 
         非自定义时间段时间范围(单位为分钟)
 
@@ -190,7 +190,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the time_range of this ListActiveOrHistoryAlarmsRequestBody.
 
         非自定义时间段时间范围(单位为分钟)
 
@@ -201,7 +201,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def search(self):
-        """Gets the search of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the search of this ListActiveOrHistoryAlarmsRequestBody.
 
         关键字检索条件
 
@@ -212,7 +212,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the search of this ListActiveOrHistoryAlarmsRequestBody.
 
         关键字检索条件
 
@@ -223,7 +223,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def alarm_level_ids(self):
-        """Gets the alarm_level_ids of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the alarm_level_ids of this ListActiveOrHistoryAlarmsRequestBody.
 
         告警级别(\"Critical\",\"Major\",\"Minor\",\"Info\")
 
@@ -234,7 +234,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @alarm_level_ids.setter
     def alarm_level_ids(self, alarm_level_ids):
-        """Sets the alarm_level_ids of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the alarm_level_ids of this ListActiveOrHistoryAlarmsRequestBody.
 
         告警级别(\"Critical\",\"Major\",\"Minor\",\"Info\")
 
@@ -245,7 +245,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @property
     def sort(self):
-        """Gets the sort of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Gets the sort of this ListActiveOrHistoryAlarmsRequestBody.
 
         :return: The sort of this ListActiveOrHistoryAlarmsRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.Sort`
@@ -254,7 +254,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListActiveOrHistoryAlarmsRequestBody.
+        r"""Sets the sort of this ListActiveOrHistoryAlarmsRequestBody.
 
         :param sort: The sort of this ListActiveOrHistoryAlarmsRequestBody.
         :type sort: :class:`huaweicloudsdklts.v2.Sort`

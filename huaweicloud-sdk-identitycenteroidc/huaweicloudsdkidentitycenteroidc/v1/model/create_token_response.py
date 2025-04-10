@@ -26,7 +26,7 @@ class CreateTokenResponse(SdkResponse):
     }
 
     def __init__(self, token_info=None):
-        """CreateTokenResponse
+        r"""CreateTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTokenResponse(SdkResponse):
 
     @property
     def token_info(self):
-        """Gets the token_info of this CreateTokenResponse.
+        r"""Gets the token_info of this CreateTokenResponse.
 
         :return: The token_info of this CreateTokenResponse.
         :rtype: :class:`huaweicloudsdkidentitycenteroidc.v1.TokenInfoDto`
@@ -53,7 +53,7 @@ class CreateTokenResponse(SdkResponse):
 
     @token_info.setter
     def token_info(self, token_info):
-        """Sets the token_info of this CreateTokenResponse.
+        r"""Sets the token_info of this CreateTokenResponse.
 
         :param token_info: The token_info of this CreateTokenResponse.
         :type token_info: :class:`huaweicloudsdkidentitycenteroidc.v1.TokenInfoDto`

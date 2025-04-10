@@ -78,7 +78,7 @@ class ShowClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None):
-        """ShowClusterDetailResponse
+        r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -226,7 +226,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this ShowClusterDetailResponse.
+        r"""Gets the datastore of this ShowClusterDetailResponse.
 
         :return: The datastore of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
@@ -235,7 +235,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ShowClusterDetailResponse.
+        r"""Sets the datastore of this ShowClusterDetailResponse.
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
@@ -244,7 +244,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ShowClusterDetailResponse.
+        r"""Gets the instances of this ShowClusterDetailResponse.
 
         节点对象列表。
 
@@ -255,7 +255,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ShowClusterDetailResponse.
+        r"""Sets the instances of this ShowClusterDetailResponse.
 
         节点对象列表。
 
@@ -266,7 +266,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def public_kibana_resp(self):
-        """Gets the public_kibana_resp of this ShowClusterDetailResponse.
+        r"""Gets the public_kibana_resp of this ShowClusterDetailResponse.
 
         :return: The public_kibana_resp of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
@@ -275,7 +275,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @public_kibana_resp.setter
     def public_kibana_resp(self, public_kibana_resp):
-        """Sets the public_kibana_resp of this ShowClusterDetailResponse.
+        r"""Sets the public_kibana_resp of this ShowClusterDetailResponse.
 
         :param public_kibana_resp: The public_kibana_resp of this ShowClusterDetailResponse.
         :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
@@ -284,7 +284,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def elb_white_list(self):
-        """Gets the elb_white_list of this ShowClusterDetailResponse.
+        r"""Gets the elb_white_list of this ShowClusterDetailResponse.
 
         :return: The elb_white_list of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
@@ -293,7 +293,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
-        """Sets the elb_white_list of this ShowClusterDetailResponse.
+        r"""Sets the elb_white_list of this ShowClusterDetailResponse.
 
         :param elb_white_list: The elb_white_list of this ShowClusterDetailResponse.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
@@ -302,7 +302,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowClusterDetailResponse.
+        r"""Gets the updated of this ShowClusterDetailResponse.
 
         集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
@@ -313,7 +313,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowClusterDetailResponse.
+        r"""Sets the updated of this ShowClusterDetailResponse.
 
         集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
@@ -324,7 +324,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowClusterDetailResponse.
+        r"""Gets the name of this ShowClusterDetailResponse.
 
         集群名称。
 
@@ -335,7 +335,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowClusterDetailResponse.
+        r"""Sets the name of this ShowClusterDetailResponse.
 
         集群名称。
 
@@ -346,7 +346,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ShowClusterDetailResponse.
+        r"""Gets the public_ip of this ShowClusterDetailResponse.
 
         公网IP信息。
 
@@ -357,7 +357,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ShowClusterDetailResponse.
+        r"""Sets the public_ip of this ShowClusterDetailResponse.
 
         公网IP信息。
 
@@ -368,7 +368,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowClusterDetailResponse.
+        r"""Gets the created of this ShowClusterDetailResponse.
 
         集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
@@ -379,7 +379,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowClusterDetailResponse.
+        r"""Sets the created of this ShowClusterDetailResponse.
 
         集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
@@ -390,7 +390,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowClusterDetailResponse.
+        r"""Gets the id of this ShowClusterDetailResponse.
 
         集群ID。
 
@@ -401,7 +401,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowClusterDetailResponse.
+        r"""Sets the id of this ShowClusterDetailResponse.
 
         集群ID。
 
@@ -412,7 +412,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowClusterDetailResponse.
+        r"""Gets the status of this ShowClusterDetailResponse.
 
         集群状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
@@ -423,7 +423,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowClusterDetailResponse.
+        r"""Sets the status of this ShowClusterDetailResponse.
 
         集群状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
@@ -434,7 +434,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ShowClusterDetailResponse.
+        r"""Gets the endpoint of this ShowClusterDetailResponse.
 
         用户VPC访问IP地址和端口号。
 
@@ -445,7 +445,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ShowClusterDetailResponse.
+        r"""Sets the endpoint of this ShowClusterDetailResponse.
 
         用户VPC访问IP地址和端口号。
 
@@ -456,7 +456,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowClusterDetailResponse.
+        r"""Gets the vpc_id of this ShowClusterDetailResponse.
 
         VPC ID。
 
@@ -467,7 +467,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowClusterDetailResponse.
+        r"""Sets the vpc_id of this ShowClusterDetailResponse.
 
         VPC ID。
 
@@ -478,7 +478,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowClusterDetailResponse.
+        r"""Gets the subnet_id of this ShowClusterDetailResponse.
 
         子网ID。
 
@@ -489,7 +489,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowClusterDetailResponse.
+        r"""Sets the subnet_id of this ShowClusterDetailResponse.
 
         子网ID。
 
@@ -500,7 +500,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowClusterDetailResponse.
+        r"""Gets the security_group_id of this ShowClusterDetailResponse.
 
         安全组ID。
 
@@ -511,7 +511,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowClusterDetailResponse.
+        r"""Sets the security_group_id of this ShowClusterDetailResponse.
 
         安全组ID。
 
@@ -522,7 +522,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def vpcep_ip(self):
-        """Gets the vpcep_ip of this ShowClusterDetailResponse.
+        r"""Gets the vpcep_ip of this ShowClusterDetailResponse.
 
         终端节点IP。
 
@@ -533,7 +533,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @vpcep_ip.setter
     def vpcep_ip(self, vpcep_ip):
-        """Sets the vpcep_ip of this ShowClusterDetailResponse.
+        r"""Sets the vpcep_ip of this ShowClusterDetailResponse.
 
         终端节点IP。
 
@@ -544,7 +544,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ShowClusterDetailResponse.
+        r"""Gets the bandwidth_size of this ShowClusterDetailResponse.
 
         公网带宽大小。单位：Mbit/s
 
@@ -555,7 +555,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ShowClusterDetailResponse.
+        r"""Sets the bandwidth_size of this ShowClusterDetailResponse.
 
         公网带宽大小。单位：Mbit/s
 
@@ -566,7 +566,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def https_enable(self):
-        """Gets the https_enable of this ShowClusterDetailResponse.
+        r"""Gets the https_enable of this ShowClusterDetailResponse.
 
         通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
@@ -577,7 +577,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @https_enable.setter
     def https_enable(self, https_enable):
-        """Sets the https_enable of this ShowClusterDetailResponse.
+        r"""Sets the https_enable of this ShowClusterDetailResponse.
 
         通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
@@ -588,7 +588,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def disk_encrypted(self):
-        """Gets the disk_encrypted of this ShowClusterDetailResponse.
+        r"""Gets the disk_encrypted of this ShowClusterDetailResponse.
 
         磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
 
@@ -599,7 +599,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @disk_encrypted.setter
     def disk_encrypted(self, disk_encrypted):
-        """Sets the disk_encrypted of this ShowClusterDetailResponse.
+        r"""Sets the disk_encrypted of this ShowClusterDetailResponse.
 
         磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
 
@@ -610,7 +610,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def authority_enable(self):
-        """Gets the authority_enable of this ShowClusterDetailResponse.
+        r"""Gets the authority_enable of this ShowClusterDetailResponse.
 
         是否开启认证，取值范围为true或false。默认关闭认证功能。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
@@ -621,7 +621,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @authority_enable.setter
     def authority_enable(self, authority_enable):
-        """Sets the authority_enable of this ShowClusterDetailResponse.
+        r"""Sets the authority_enable of this ShowClusterDetailResponse.
 
         是否开启认证，取值范围为true或false。默认关闭认证功能。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
@@ -632,7 +632,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def backup_available(self):
-        """Gets the backup_available of this ShowClusterDetailResponse.
+        r"""Gets the backup_available of this ShowClusterDetailResponse.
 
         快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
 
@@ -643,7 +643,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @backup_available.setter
     def backup_available(self, backup_available):
-        """Sets the backup_available of this ShowClusterDetailResponse.
+        r"""Sets the backup_available of this ShowClusterDetailResponse.
 
         快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
 
@@ -654,7 +654,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ShowClusterDetailResponse.
+        r"""Gets the action_progress of this ShowClusterDetailResponse.
 
         集群行为进度，显示创建或扩容进度的百分比。
 
@@ -665,7 +665,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ShowClusterDetailResponse.
+        r"""Sets the action_progress of this ShowClusterDetailResponse.
 
         集群行为进度，显示创建或扩容进度的百分比。
 
@@ -676,7 +676,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def actions(self):
-        """Gets the actions of this ShowClusterDetailResponse.
+        r"""Gets the actions of this ShowClusterDetailResponse.
 
         集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
@@ -687,7 +687,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ShowClusterDetailResponse.
+        r"""Sets the actions of this ShowClusterDetailResponse.
 
         集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
@@ -698,7 +698,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowClusterDetailResponse.
+        r"""Gets the enterprise_project_id of this ShowClusterDetailResponse.
 
         集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
 
@@ -709,7 +709,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowClusterDetailResponse.
+        r"""Sets the enterprise_project_id of this ShowClusterDetailResponse.
 
         集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
 
@@ -720,7 +720,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowClusterDetailResponse.
+        r"""Gets the tags of this ShowClusterDetailResponse.
 
         集群标签。
 
@@ -731,7 +731,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowClusterDetailResponse.
+        r"""Sets the tags of this ShowClusterDetailResponse.
 
         集群标签。
 
@@ -742,7 +742,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ShowClusterDetailResponse.
+        r"""Gets the failed_reason of this ShowClusterDetailResponse.
 
         :return: The failed_reason of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
@@ -751,7 +751,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ShowClusterDetailResponse.
+        r"""Sets the failed_reason of this ShowClusterDetailResponse.
 
         :param failed_reason: The failed_reason of this ShowClusterDetailResponse.
         :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
@@ -760,7 +760,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this ShowClusterDetailResponse.
+        r"""Gets the period of this ShowClusterDetailResponse.
 
         是否为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
 
@@ -771,7 +771,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowClusterDetailResponse.
+        r"""Sets the period of this ShowClusterDetailResponse.
 
         是否为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
 
@@ -782,7 +782,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def bandwidth_resource_id(self):
-        """Gets the bandwidth_resource_id of this ShowClusterDetailResponse.
+        r"""Gets the bandwidth_resource_id of this ShowClusterDetailResponse.
 
         es公网访问的资源id
 
@@ -793,7 +793,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @bandwidth_resource_id.setter
     def bandwidth_resource_id(self, bandwidth_resource_id):
-        """Sets the bandwidth_resource_id of this ShowClusterDetailResponse.
+        r"""Sets the bandwidth_resource_id of this ShowClusterDetailResponse.
 
         es公网访问的资源id
 

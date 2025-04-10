@@ -27,7 +27,7 @@ class UpdateIteratorRequest:
     }
 
     def __init__(self, iterator_id=None, body=None):
-        """UpdateIteratorRequest
+        r"""UpdateIteratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateIteratorRequest:
 
     @property
     def iterator_id(self):
-        """Gets the iterator_id of this UpdateIteratorRequest.
+        r"""Gets the iterator_id of this UpdateIteratorRequest.
 
         迭代uri
 
@@ -60,7 +60,7 @@ class UpdateIteratorRequest:
 
     @iterator_id.setter
     def iterator_id(self, iterator_id):
-        """Sets the iterator_id of this UpdateIteratorRequest.
+        r"""Sets the iterator_id of this UpdateIteratorRequest.
 
         迭代uri
 
@@ -71,7 +71,7 @@ class UpdateIteratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIteratorRequest.
+        r"""Gets the body of this UpdateIteratorRequest.
 
         :return: The body of this UpdateIteratorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IteratorVersionInfo`
@@ -80,7 +80,7 @@ class UpdateIteratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIteratorRequest.
+        r"""Sets the body of this UpdateIteratorRequest.
 
         :param body: The body of this UpdateIteratorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.IteratorVersionInfo`

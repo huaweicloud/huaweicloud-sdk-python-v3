@@ -27,7 +27,7 @@ class ListInstanceTagsResult:
     }
 
     def __init__(self, key=None, value=None):
-        """ListInstanceTagsResult
+        r"""ListInstanceTagsResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstanceTagsResult:
 
     @property
     def key(self):
-        """Gets the key of this ListInstanceTagsResult.
+        r"""Gets the key of this ListInstanceTagsResult.
 
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -59,7 +59,7 @@ class ListInstanceTagsResult:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListInstanceTagsResult.
+        r"""Sets the key of this ListInstanceTagsResult.
 
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -70,7 +70,7 @@ class ListInstanceTagsResult:
 
     @property
     def value(self):
-        """Gets the value of this ListInstanceTagsResult.
+        r"""Gets the value of this ListInstanceTagsResult.
 
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
@@ -81,7 +81,7 @@ class ListInstanceTagsResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListInstanceTagsResult.
+        r"""Sets the value of this ListInstanceTagsResult.
 
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 

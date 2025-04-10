@@ -31,7 +31,7 @@ class BatchAddDeleteTagsRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_type=None, resource_id=None, body=None):
-        """BatchAddDeleteTagsRequest
+        r"""BatchAddDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchAddDeleteTagsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this BatchAddDeleteTagsRequest.
+        r"""Gets the ief_instance_id of this BatchAddDeleteTagsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -73,7 +73,7 @@ class BatchAddDeleteTagsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this BatchAddDeleteTagsRequest.
+        r"""Sets the ief_instance_id of this BatchAddDeleteTagsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -84,7 +84,7 @@ class BatchAddDeleteTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchAddDeleteTagsRequest.
+        r"""Gets the resource_type of this BatchAddDeleteTagsRequest.
 
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
@@ -95,7 +95,7 @@ class BatchAddDeleteTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchAddDeleteTagsRequest.
+        r"""Sets the resource_type of this BatchAddDeleteTagsRequest.
 
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
@@ -106,7 +106,7 @@ class BatchAddDeleteTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchAddDeleteTagsRequest.
+        r"""Gets the resource_id of this BatchAddDeleteTagsRequest.
 
         资源ID
 
@@ -117,7 +117,7 @@ class BatchAddDeleteTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchAddDeleteTagsRequest.
+        r"""Sets the resource_id of this BatchAddDeleteTagsRequest.
 
         资源ID
 
@@ -128,7 +128,7 @@ class BatchAddDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddDeleteTagsRequest.
+        r"""Gets the body of this BatchAddDeleteTagsRequest.
 
         :return: The body of this BatchAddDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.BachTags`
@@ -137,7 +137,7 @@ class BatchAddDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddDeleteTagsRequest.
+        r"""Sets the body of this BatchAddDeleteTagsRequest.
 
         :param body: The body of this BatchAddDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkief.v1.BachTags`

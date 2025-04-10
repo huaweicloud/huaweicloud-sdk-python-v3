@@ -28,7 +28,7 @@ class ListLabelsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, label_list=None):
-        """ListLabelsResponse
+        r"""ListLabelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLabelsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLabelsResponse.
+        r"""Gets the total_count of this ListLabelsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListLabelsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLabelsResponse.
+        r"""Sets the total_count of this ListLabelsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListLabelsResponse(SdkResponse):
 
     @property
     def label_list(self):
-        """Gets the label_list of this ListLabelsResponse.
+        r"""Gets the label_list of this ListLabelsResponse.
 
         标签列表
 
@@ -84,7 +84,7 @@ class ListLabelsResponse(SdkResponse):
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this ListLabelsResponse.
+        r"""Sets the label_list of this ListLabelsResponse.
 
         标签列表
 

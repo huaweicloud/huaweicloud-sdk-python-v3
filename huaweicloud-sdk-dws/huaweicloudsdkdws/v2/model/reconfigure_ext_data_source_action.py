@@ -27,7 +27,7 @@ class ReconfigureExtDataSourceAction:
     }
 
     def __init__(self, reboot=None, agency=None):
-        """ReconfigureExtDataSourceAction
+        r"""ReconfigureExtDataSourceAction
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReconfigureExtDataSourceAction:
 
     @property
     def reboot(self):
-        """Gets the reboot of this ReconfigureExtDataSourceAction.
+        r"""Gets the reboot of this ReconfigureExtDataSourceAction.
 
         重启。
 
@@ -61,7 +61,7 @@ class ReconfigureExtDataSourceAction:
 
     @reboot.setter
     def reboot(self, reboot):
-        """Sets the reboot of this ReconfigureExtDataSourceAction.
+        r"""Sets the reboot of this ReconfigureExtDataSourceAction.
 
         重启。
 
@@ -72,7 +72,7 @@ class ReconfigureExtDataSourceAction:
 
     @property
     def agency(self):
-        """Gets the agency of this ReconfigureExtDataSourceAction.
+        r"""Gets the agency of this ReconfigureExtDataSourceAction.
 
         委托。
 
@@ -83,7 +83,7 @@ class ReconfigureExtDataSourceAction:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this ReconfigureExtDataSourceAction.
+        r"""Sets the agency of this ReconfigureExtDataSourceAction.
 
         委托。
 

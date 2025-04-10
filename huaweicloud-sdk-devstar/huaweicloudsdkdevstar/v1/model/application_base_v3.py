@@ -39,7 +39,7 @@ class ApplicationBaseV3:
     }
 
     def __init__(self, id=None, name=None, description=None, region_id=None, region_name=None, project_id=None, project_name=None, icon=None):
-        """ApplicationBaseV3
+        r"""ApplicationBaseV3
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ApplicationBaseV3:
 
     @property
     def id(self):
-        """Gets the id of this ApplicationBaseV3.
+        r"""Gets the id of this ApplicationBaseV3.
 
         应用id
 
@@ -98,7 +98,7 @@ class ApplicationBaseV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicationBaseV3.
+        r"""Sets the id of this ApplicationBaseV3.
 
         应用id
 
@@ -109,7 +109,7 @@ class ApplicationBaseV3:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationBaseV3.
+        r"""Gets the name of this ApplicationBaseV3.
 
         应用名称
 
@@ -120,7 +120,7 @@ class ApplicationBaseV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationBaseV3.
+        r"""Sets the name of this ApplicationBaseV3.
 
         应用名称
 
@@ -131,7 +131,7 @@ class ApplicationBaseV3:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationBaseV3.
+        r"""Gets the description of this ApplicationBaseV3.
 
         应用描述
 
@@ -142,7 +142,7 @@ class ApplicationBaseV3:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationBaseV3.
+        r"""Sets the description of this ApplicationBaseV3.
 
         应用描述
 
@@ -153,7 +153,7 @@ class ApplicationBaseV3:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ApplicationBaseV3.
+        r"""Gets the region_id of this ApplicationBaseV3.
 
         区域id
 
@@ -164,7 +164,7 @@ class ApplicationBaseV3:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ApplicationBaseV3.
+        r"""Sets the region_id of this ApplicationBaseV3.
 
         区域id
 
@@ -175,7 +175,7 @@ class ApplicationBaseV3:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ApplicationBaseV3.
+        r"""Gets the region_name of this ApplicationBaseV3.
 
         区域名称
 
@@ -186,7 +186,7 @@ class ApplicationBaseV3:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ApplicationBaseV3.
+        r"""Sets the region_name of this ApplicationBaseV3.
 
         区域名称
 
@@ -197,7 +197,7 @@ class ApplicationBaseV3:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ApplicationBaseV3.
+        r"""Gets the project_id of this ApplicationBaseV3.
 
         所属项目id
 
@@ -208,7 +208,7 @@ class ApplicationBaseV3:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ApplicationBaseV3.
+        r"""Sets the project_id of this ApplicationBaseV3.
 
         所属项目id
 
@@ -219,7 +219,7 @@ class ApplicationBaseV3:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ApplicationBaseV3.
+        r"""Gets the project_name of this ApplicationBaseV3.
 
         项目名称
 
@@ -230,7 +230,7 @@ class ApplicationBaseV3:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ApplicationBaseV3.
+        r"""Sets the project_name of this ApplicationBaseV3.
 
         项目名称
 
@@ -241,7 +241,7 @@ class ApplicationBaseV3:
 
     @property
     def icon(self):
-        """Gets the icon of this ApplicationBaseV3.
+        r"""Gets the icon of this ApplicationBaseV3.
 
         应用图标
 
@@ -252,7 +252,7 @@ class ApplicationBaseV3:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ApplicationBaseV3.
+        r"""Sets the icon of this ApplicationBaseV3.
 
         应用图标
 

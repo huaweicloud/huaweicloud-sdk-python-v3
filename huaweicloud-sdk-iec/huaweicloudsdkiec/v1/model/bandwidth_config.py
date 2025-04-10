@@ -27,7 +27,7 @@ class BandwidthConfig:
     }
 
     def __init__(self, sharetype=None, size=None):
-        """BandwidthConfig
+        r"""BandwidthConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BandwidthConfig:
 
     @property
     def sharetype(self):
-        """Gets the sharetype of this BandwidthConfig.
+        r"""Gets the sharetype of this BandwidthConfig.
 
         带宽类型，现支持WHOLE类型，即共享带宽，其他类型不支持。
 
@@ -60,7 +60,7 @@ class BandwidthConfig:
 
     @sharetype.setter
     def sharetype(self, sharetype):
-        """Sets the sharetype of this BandwidthConfig.
+        r"""Sets the sharetype of this BandwidthConfig.
 
         带宽类型，现支持WHOLE类型，即共享带宽，其他类型不支持。
 
@@ -71,7 +71,7 @@ class BandwidthConfig:
 
     @property
     def size(self):
-        """Gets the size of this BandwidthConfig.
+        r"""Gets the size of this BandwidthConfig.
 
         带宽（Mbit/s）。 
 
@@ -82,7 +82,7 @@ class BandwidthConfig:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandwidthConfig.
+        r"""Sets the size of this BandwidthConfig.
 
         带宽（Mbit/s）。 
 

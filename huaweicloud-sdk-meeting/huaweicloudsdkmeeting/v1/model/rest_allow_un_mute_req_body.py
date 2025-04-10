@@ -25,7 +25,7 @@ class RestAllowUnMuteReqBody:
     }
 
     def __init__(self, allow_unmute_by_oneself=None):
-        """RestAllowUnMuteReqBody
+        r"""RestAllowUnMuteReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestAllowUnMuteReqBody:
 
     @property
     def allow_unmute_by_oneself(self):
-        """Gets the allow_unmute_by_oneself of this RestAllowUnMuteReqBody.
+        r"""Gets the allow_unmute_by_oneself of this RestAllowUnMuteReqBody.
 
         是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许 - 1: 允许
 
@@ -53,7 +53,7 @@ class RestAllowUnMuteReqBody:
 
     @allow_unmute_by_oneself.setter
     def allow_unmute_by_oneself(self, allow_unmute_by_oneself):
-        """Sets the allow_unmute_by_oneself of this RestAllowUnMuteReqBody.
+        r"""Sets the allow_unmute_by_oneself of this RestAllowUnMuteReqBody.
 
         是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许 - 1: 允许
 

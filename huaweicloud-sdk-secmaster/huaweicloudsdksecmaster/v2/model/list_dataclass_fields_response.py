@@ -30,7 +30,7 @@ class ListDataclassFieldsResponse(SdkResponse):
     }
 
     def __init__(self, field_details=None, total=None, x_request_id=None):
-        """ListDataclassFieldsResponse
+        r"""ListDataclassFieldsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDataclassFieldsResponse(SdkResponse):
 
     @property
     def field_details(self):
-        """Gets the field_details of this ListDataclassFieldsResponse.
+        r"""Gets the field_details of this ListDataclassFieldsResponse.
 
         list of informations of field
 
@@ -69,7 +69,7 @@ class ListDataclassFieldsResponse(SdkResponse):
 
     @field_details.setter
     def field_details(self, field_details):
-        """Sets the field_details of this ListDataclassFieldsResponse.
+        r"""Sets the field_details of this ListDataclassFieldsResponse.
 
         list of informations of field
 
@@ -80,7 +80,7 @@ class ListDataclassFieldsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDataclassFieldsResponse.
+        r"""Gets the total of this ListDataclassFieldsResponse.
 
         数据总量
 
@@ -91,7 +91,7 @@ class ListDataclassFieldsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDataclassFieldsResponse.
+        r"""Sets the total of this ListDataclassFieldsResponse.
 
         数据总量
 
@@ -102,7 +102,7 @@ class ListDataclassFieldsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDataclassFieldsResponse.
+        r"""Gets the x_request_id of this ListDataclassFieldsResponse.
 
         :return: The x_request_id of this ListDataclassFieldsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListDataclassFieldsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDataclassFieldsResponse.
+        r"""Sets the x_request_id of this ListDataclassFieldsResponse.
 
         :param x_request_id: The x_request_id of this ListDataclassFieldsResponse.
         :type x_request_id: str

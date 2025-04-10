@@ -38,7 +38,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
     }
 
     def __init__(self, connector_version_id=None, created_time=None, description=None, id=None, name=None, updated_time=None, version=None):
-        """CreateCustomConnectorFromOpenapiResponse
+        r"""CreateCustomConnectorFromOpenapiResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def connector_version_id(self):
-        """Gets the connector_version_id of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the connector_version_id of this CreateCustomConnectorFromOpenapiResponse.
 
         自定义连接器版本ID
 
@@ -97,7 +97,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @connector_version_id.setter
     def connector_version_id(self, connector_version_id):
-        """Sets the connector_version_id of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the connector_version_id of this CreateCustomConnectorFromOpenapiResponse.
 
         自定义连接器版本ID
 
@@ -108,7 +108,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the created_time of this CreateCustomConnectorFromOpenapiResponse.
 
         创建时间
 
@@ -119,7 +119,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the created_time of this CreateCustomConnectorFromOpenapiResponse.
 
         创建时间
 
@@ -130,7 +130,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the description of this CreateCustomConnectorFromOpenapiResponse.
 
         :return: The description of this CreateCustomConnectorFromOpenapiResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the description of this CreateCustomConnectorFromOpenapiResponse.
 
         :param description: The description of this CreateCustomConnectorFromOpenapiResponse.
         :type description: str
@@ -148,7 +148,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the id of this CreateCustomConnectorFromOpenapiResponse.
 
         自定义连接器ID
 
@@ -159,7 +159,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the id of this CreateCustomConnectorFromOpenapiResponse.
 
         自定义连接器ID
 
@@ -170,7 +170,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the name of this CreateCustomConnectorFromOpenapiResponse.
 
         自定义连接器名称
 
@@ -181,7 +181,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the name of this CreateCustomConnectorFromOpenapiResponse.
 
         自定义连接器名称
 
@@ -192,7 +192,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the updated_time of this CreateCustomConnectorFromOpenapiResponse.
 
         修改时间
 
@@ -203,7 +203,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the updated_time of this CreateCustomConnectorFromOpenapiResponse.
 
         修改时间
 
@@ -214,7 +214,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Gets the version of this CreateCustomConnectorFromOpenapiResponse.
 
         :return: The version of this CreateCustomConnectorFromOpenapiResponse.
         :rtype: str
@@ -223,7 +223,7 @@ class CreateCustomConnectorFromOpenapiResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateCustomConnectorFromOpenapiResponse.
+        r"""Sets the version of this CreateCustomConnectorFromOpenapiResponse.
 
         :param version: The version of this CreateCustomConnectorFromOpenapiResponse.
         :type version: str

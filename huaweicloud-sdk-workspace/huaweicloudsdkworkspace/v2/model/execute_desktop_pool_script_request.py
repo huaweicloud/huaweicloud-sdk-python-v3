@@ -27,7 +27,7 @@ class ExecuteDesktopPoolScriptRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """ExecuteDesktopPoolScriptRequest
+        r"""ExecuteDesktopPoolScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteDesktopPoolScriptRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ExecuteDesktopPoolScriptRequest.
+        r"""Gets the pool_id of this ExecuteDesktopPoolScriptRequest.
 
         桌面池ID。
 
@@ -60,7 +60,7 @@ class ExecuteDesktopPoolScriptRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ExecuteDesktopPoolScriptRequest.
+        r"""Sets the pool_id of this ExecuteDesktopPoolScriptRequest.
 
         桌面池ID。
 
@@ -71,7 +71,7 @@ class ExecuteDesktopPoolScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteDesktopPoolScriptRequest.
+        r"""Gets the body of this ExecuteDesktopPoolScriptRequest.
 
         :return: The body of this ExecuteDesktopPoolScriptRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExecuteDesktopPoolScriptsReq`
@@ -80,7 +80,7 @@ class ExecuteDesktopPoolScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteDesktopPoolScriptRequest.
+        r"""Sets the body of this ExecuteDesktopPoolScriptRequest.
 
         :param body: The body of this ExecuteDesktopPoolScriptRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ExecuteDesktopPoolScriptsReq`

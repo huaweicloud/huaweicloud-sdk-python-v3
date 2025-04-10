@@ -29,7 +29,7 @@ class ListLogicalClusterVolumesRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None):
-        """ListLogicalClusterVolumesRequest
+        r"""ListLogicalClusterVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListLogicalClusterVolumesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListLogicalClusterVolumesRequest.
+        r"""Gets the cluster_id of this ListLogicalClusterVolumesRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class ListLogicalClusterVolumesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListLogicalClusterVolumesRequest.
+        r"""Sets the cluster_id of this ListLogicalClusterVolumesRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class ListLogicalClusterVolumesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLogicalClusterVolumesRequest.
+        r"""Gets the offset of this ListLogicalClusterVolumesRequest.
 
         分页查询，偏移
 
@@ -89,7 +89,7 @@ class ListLogicalClusterVolumesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLogicalClusterVolumesRequest.
+        r"""Sets the offset of this ListLogicalClusterVolumesRequest.
 
         分页查询，偏移
 
@@ -100,7 +100,7 @@ class ListLogicalClusterVolumesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLogicalClusterVolumesRequest.
+        r"""Gets the limit of this ListLogicalClusterVolumesRequest.
 
         分页查询，每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ListLogicalClusterVolumesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLogicalClusterVolumesRequest.
+        r"""Sets the limit of this ListLogicalClusterVolumesRequest.
 
         分页查询，每页显示的条目数量
 

@@ -27,7 +27,7 @@ class CommonStatItem:
     }
 
     def __init__(self, key=None, value=None):
-        """CommonStatItem
+        r"""CommonStatItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CommonStatItem:
 
     @property
     def key(self):
-        """Gets the key of this CommonStatItem.
+        r"""Gets the key of this CommonStatItem.
 
         对应请求参数group_by的子类别。例如在Http攻击分布统计接口中，group_by为action时，key可为：log、block、captcha、js_challenge；在Http攻击Top接口中，group_by为url时，key可为请求的URL，例：/abc。
 
@@ -59,7 +59,7 @@ class CommonStatItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CommonStatItem.
+        r"""Sets the key of this CommonStatItem.
 
         对应请求参数group_by的子类别。例如在Http攻击分布统计接口中，group_by为action时，key可为：log、block、captcha、js_challenge；在Http攻击Top接口中，group_by为url时，key可为请求的URL，例：/abc。
 
@@ -70,7 +70,7 @@ class CommonStatItem:
 
     @property
     def value(self):
-        """Gets the value of this CommonStatItem.
+        r"""Gets the value of this CommonStatItem.
 
         攻击请求数
 
@@ -81,7 +81,7 @@ class CommonStatItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CommonStatItem.
+        r"""Sets the value of this CommonStatItem.
 
         攻击请求数
 

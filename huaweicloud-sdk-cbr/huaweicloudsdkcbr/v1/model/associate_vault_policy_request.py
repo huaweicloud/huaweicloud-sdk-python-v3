@@ -27,7 +27,7 @@ class AssociateVaultPolicyRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """AssociateVaultPolicyRequest
+        r"""AssociateVaultPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateVaultPolicyRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this AssociateVaultPolicyRequest.
+        r"""Gets the vault_id of this AssociateVaultPolicyRequest.
 
         存储库ID
 
@@ -60,7 +60,7 @@ class AssociateVaultPolicyRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this AssociateVaultPolicyRequest.
+        r"""Sets the vault_id of this AssociateVaultPolicyRequest.
 
         存储库ID
 
@@ -71,7 +71,7 @@ class AssociateVaultPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateVaultPolicyRequest.
+        r"""Gets the body of this AssociateVaultPolicyRequest.
 
         :return: The body of this AssociateVaultPolicyRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultAssociate`
@@ -80,7 +80,7 @@ class AssociateVaultPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateVaultPolicyRequest.
+        r"""Sets the body of this AssociateVaultPolicyRequest.
 
         :param body: The body of this AssociateVaultPolicyRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultAssociate`

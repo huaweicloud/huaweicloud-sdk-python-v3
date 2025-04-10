@@ -27,7 +27,7 @@ class IssueItemSfV4Severity:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueItemSfV4Severity
+        r"""IssueItemSfV4Severity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueItemSfV4Severity:
 
     @property
     def id(self):
-        """Gets the id of this IssueItemSfV4Severity.
+        r"""Gets the id of this IssueItemSfV4Severity.
 
         重要程度id
 
@@ -61,7 +61,7 @@ class IssueItemSfV4Severity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueItemSfV4Severity.
+        r"""Sets the id of this IssueItemSfV4Severity.
 
         重要程度id
 
@@ -72,7 +72,7 @@ class IssueItemSfV4Severity:
 
     @property
     def name(self):
-        """Gets the name of this IssueItemSfV4Severity.
+        r"""Gets the name of this IssueItemSfV4Severity.
 
         重要程度
 
@@ -83,7 +83,7 @@ class IssueItemSfV4Severity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueItemSfV4Severity.
+        r"""Sets the name of this IssueItemSfV4Severity.
 
         重要程度
 

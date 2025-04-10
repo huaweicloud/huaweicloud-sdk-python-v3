@@ -25,7 +25,7 @@ class AddShardingNodeVolumeOption:
     }
 
     def __init__(self, size=None):
-        """AddShardingNodeVolumeOption
+        r"""AddShardingNodeVolumeOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddShardingNodeVolumeOption:
 
     @property
     def size(self):
-        """Gets the size of this AddShardingNodeVolumeOption.
+        r"""Gets the size of this AddShardingNodeVolumeOption.
 
         指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
@@ -53,7 +53,7 @@ class AddShardingNodeVolumeOption:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AddShardingNodeVolumeOption.
+        r"""Sets the size of this AddShardingNodeVolumeOption.
 
         指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 

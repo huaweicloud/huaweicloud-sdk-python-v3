@@ -33,7 +33,7 @@ class CreateAppConfigsTemplatesReqDTO:
     }
 
     def __init__(self, tpl_id=None, name=None, description=None, config_tabs=None, default_values=None):
-        """CreateAppConfigsTemplatesReqDTO
+        r"""CreateAppConfigsTemplatesReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateAppConfigsTemplatesReqDTO.
+        r"""Gets the tpl_id of this CreateAppConfigsTemplatesReqDTO.
 
         模板id
 
@@ -78,7 +78,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateAppConfigsTemplatesReqDTO.
+        r"""Sets the tpl_id of this CreateAppConfigsTemplatesReqDTO.
 
         模板id
 
@@ -89,7 +89,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateAppConfigsTemplatesReqDTO.
+        r"""Gets the name of this CreateAppConfigsTemplatesReqDTO.
 
         模板名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -100,7 +100,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAppConfigsTemplatesReqDTO.
+        r"""Sets the name of this CreateAppConfigsTemplatesReqDTO.
 
         模板名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -111,7 +111,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateAppConfigsTemplatesReqDTO.
+        r"""Gets the description of this CreateAppConfigsTemplatesReqDTO.
 
         描述
 
@@ -122,7 +122,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAppConfigsTemplatesReqDTO.
+        r"""Sets the description of this CreateAppConfigsTemplatesReqDTO.
 
         描述
 
@@ -133,7 +133,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @property
     def config_tabs(self):
-        """Gets the config_tabs of this CreateAppConfigsTemplatesReqDTO.
+        r"""Gets the config_tabs of this CreateAppConfigsTemplatesReqDTO.
 
         配置项元数据
 
@@ -144,7 +144,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @config_tabs.setter
     def config_tabs(self, config_tabs):
-        """Sets the config_tabs of this CreateAppConfigsTemplatesReqDTO.
+        r"""Sets the config_tabs of this CreateAppConfigsTemplatesReqDTO.
 
         配置项元数据
 
@@ -155,7 +155,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @property
     def default_values(self):
-        """Gets the default_values of this CreateAppConfigsTemplatesReqDTO.
+        r"""Gets the default_values of this CreateAppConfigsTemplatesReqDTO.
 
         默认配置数据
 
@@ -166,7 +166,7 @@ class CreateAppConfigsTemplatesReqDTO:
 
     @default_values.setter
     def default_values(self, default_values):
-        """Sets the default_values of this CreateAppConfigsTemplatesReqDTO.
+        r"""Sets the default_values of this CreateAppConfigsTemplatesReqDTO.
 
         默认配置数据
 

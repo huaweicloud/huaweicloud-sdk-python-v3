@@ -25,7 +25,7 @@ class DeregisterScenesReq:
     }
 
     def __init__(self, scenes=None):
-        """DeregisterScenesReq
+        r"""DeregisterScenesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeregisterScenesReq:
 
     @property
     def scenes(self):
-        """Gets the scenes of this DeregisterScenesReq.
+        r"""Gets the scenes of this DeregisterScenesReq.
 
         要取消订阅的具体场景列表。
 
@@ -54,7 +54,7 @@ class DeregisterScenesReq:
 
     @scenes.setter
     def scenes(self, scenes):
-        """Sets the scenes of this DeregisterScenesReq.
+        r"""Sets the scenes of this DeregisterScenesReq.
 
         要取消订阅的具体场景列表。
 

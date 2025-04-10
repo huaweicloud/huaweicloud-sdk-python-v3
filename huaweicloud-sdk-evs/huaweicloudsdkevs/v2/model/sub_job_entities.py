@@ -31,7 +31,7 @@ class SubJobEntities:
     }
 
     def __init__(self, volume_type=None, size=None, volume_id=None, name=None):
-        """SubJobEntities
+        r"""SubJobEntities
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SubJobEntities:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this SubJobEntities.
+        r"""Gets the volume_type of this SubJobEntities.
 
         云硬盘的类型。
 
@@ -75,7 +75,7 @@ class SubJobEntities:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this SubJobEntities.
+        r"""Sets the volume_type of this SubJobEntities.
 
         云硬盘的类型。
 
@@ -86,7 +86,7 @@ class SubJobEntities:
 
     @property
     def size(self):
-        """Gets the size of this SubJobEntities.
+        r"""Gets the size of this SubJobEntities.
 
         云硬盘的容量，单位为GB。
 
@@ -97,7 +97,7 @@ class SubJobEntities:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SubJobEntities.
+        r"""Sets the size of this SubJobEntities.
 
         云硬盘的容量，单位为GB。
 
@@ -108,7 +108,7 @@ class SubJobEntities:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this SubJobEntities.
+        r"""Gets the volume_id of this SubJobEntities.
 
         云硬盘的ID。
 
@@ -119,7 +119,7 @@ class SubJobEntities:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this SubJobEntities.
+        r"""Sets the volume_id of this SubJobEntities.
 
         云硬盘的ID。
 
@@ -130,7 +130,7 @@ class SubJobEntities:
 
     @property
     def name(self):
-        """Gets the name of this SubJobEntities.
+        r"""Gets the name of this SubJobEntities.
 
         云硬盘的名称。
 
@@ -141,7 +141,7 @@ class SubJobEntities:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubJobEntities.
+        r"""Sets the name of this SubJobEntities.
 
         云硬盘的名称。
 

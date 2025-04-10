@@ -33,7 +33,7 @@ class ListMessageRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, offset=None, limit=None, api_name=None):
-        """ListMessageRequest
+        r"""ListMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListMessageRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListMessageRequest.
+        r"""Gets the workspace of this ListMessageRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -81,7 +81,7 @@ class ListMessageRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListMessageRequest.
+        r"""Sets the workspace of this ListMessageRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -92,7 +92,7 @@ class ListMessageRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListMessageRequest.
+        r"""Gets the dlm_type of this ListMessageRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -103,7 +103,7 @@ class ListMessageRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListMessageRequest.
+        r"""Sets the dlm_type of this ListMessageRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -114,7 +114,7 @@ class ListMessageRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMessageRequest.
+        r"""Gets the offset of this ListMessageRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -125,7 +125,7 @@ class ListMessageRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMessageRequest.
+        r"""Sets the offset of this ListMessageRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -136,7 +136,7 @@ class ListMessageRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMessageRequest.
+        r"""Gets the limit of this ListMessageRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -147,7 +147,7 @@ class ListMessageRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMessageRequest.
+        r"""Sets the limit of this ListMessageRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -158,7 +158,7 @@ class ListMessageRequest:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListMessageRequest.
+        r"""Gets the api_name of this ListMessageRequest.
 
         api名称。
 
@@ -169,7 +169,7 @@ class ListMessageRequest:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListMessageRequest.
+        r"""Sets the api_name of this ListMessageRequest.
 
         api名称。
 

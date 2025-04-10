@@ -29,7 +29,7 @@ class CreateHttpPunishmentRuleRequestBody:
     }
 
     def __init__(self, description=None, category=None, block_time=None):
-        """CreateHttpPunishmentRuleRequestBody
+        r"""CreateHttpPunishmentRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateHttpPunishmentRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHttpPunishmentRuleRequestBody.
+        r"""Gets the description of this CreateHttpPunishmentRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -66,7 +66,7 @@ class CreateHttpPunishmentRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHttpPunishmentRuleRequestBody.
+        r"""Sets the description of this CreateHttpPunishmentRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -77,7 +77,7 @@ class CreateHttpPunishmentRuleRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this CreateHttpPunishmentRuleRequestBody.
+        r"""Gets the category of this CreateHttpPunishmentRuleRequestBody.
 
         拦截类型，可选值为：long_ip_block（长时间IP拦截）、long_cookie_block（长时间Cookie拦截）、long_params_block（长时间Params拦截）、short_ip_block（短时间IP拦截）、short_cookie_block（短时间Cookie拦截）、short_params_block（短时间Params拦截）
 
@@ -88,7 +88,7 @@ class CreateHttpPunishmentRuleRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateHttpPunishmentRuleRequestBody.
+        r"""Sets the category of this CreateHttpPunishmentRuleRequestBody.
 
         拦截类型，可选值为：long_ip_block（长时间IP拦截）、long_cookie_block（长时间Cookie拦截）、long_params_block（长时间Params拦截）、short_ip_block（短时间IP拦截）、short_cookie_block（短时间Cookie拦截）、short_params_block（短时间Params拦截）
 
@@ -99,7 +99,7 @@ class CreateHttpPunishmentRuleRequestBody:
 
     @property
     def block_time(self):
-        """Gets the block_time of this CreateHttpPunishmentRuleRequestBody.
+        r"""Gets the block_time of this CreateHttpPunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
 
@@ -110,7 +110,7 @@ class CreateHttpPunishmentRuleRequestBody:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this CreateHttpPunishmentRuleRequestBody.
+        r"""Sets the block_time of this CreateHttpPunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
 

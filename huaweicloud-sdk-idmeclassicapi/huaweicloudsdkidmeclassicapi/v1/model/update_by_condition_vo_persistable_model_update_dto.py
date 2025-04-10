@@ -27,7 +27,7 @@ class UpdateByConditionVoPersistableModelUpdateDTO:
     }
 
     def __init__(self, condition=None, update_dto=None):
-        """UpdateByConditionVoPersistableModelUpdateDTO
+        r"""UpdateByConditionVoPersistableModelUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateByConditionVoPersistableModelUpdateDTO:
 
     @property
     def condition(self):
-        """Gets the condition of this UpdateByConditionVoPersistableModelUpdateDTO.
+        r"""Gets the condition of this UpdateByConditionVoPersistableModelUpdateDTO.
 
         :return: The condition of this UpdateByConditionVoPersistableModelUpdateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.QueryRequestVo`
@@ -59,7 +59,7 @@ class UpdateByConditionVoPersistableModelUpdateDTO:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this UpdateByConditionVoPersistableModelUpdateDTO.
+        r"""Sets the condition of this UpdateByConditionVoPersistableModelUpdateDTO.
 
         :param condition: The condition of this UpdateByConditionVoPersistableModelUpdateDTO.
         :type condition: :class:`huaweicloudsdkidmeclassicapi.v1.QueryRequestVo`
@@ -68,7 +68,7 @@ class UpdateByConditionVoPersistableModelUpdateDTO:
 
     @property
     def update_dto(self):
-        """Gets the update_dto of this UpdateByConditionVoPersistableModelUpdateDTO.
+        r"""Gets the update_dto of this UpdateByConditionVoPersistableModelUpdateDTO.
 
         :return: The update_dto of this UpdateByConditionVoPersistableModelUpdateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelUpdateDTO`
@@ -77,7 +77,7 @@ class UpdateByConditionVoPersistableModelUpdateDTO:
 
     @update_dto.setter
     def update_dto(self, update_dto):
-        """Sets the update_dto of this UpdateByConditionVoPersistableModelUpdateDTO.
+        r"""Sets the update_dto of this UpdateByConditionVoPersistableModelUpdateDTO.
 
         :param update_dto: The update_dto of this UpdateByConditionVoPersistableModelUpdateDTO.
         :type update_dto: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelUpdateDTO`

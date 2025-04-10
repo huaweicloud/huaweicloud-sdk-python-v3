@@ -27,7 +27,7 @@ class ShowDetailsOfVpcChannelV2Request:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None):
-        """ShowDetailsOfVpcChannelV2Request
+        r"""ShowDetailsOfVpcChannelV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfVpcChannelV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfVpcChannelV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfVpcChannelV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDetailsOfVpcChannelV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfVpcChannelV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfVpcChannelV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDetailsOfVpcChannelV2Request:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this ShowDetailsOfVpcChannelV2Request.
+        r"""Gets the vpc_channel_id of this ShowDetailsOfVpcChannelV2Request.
 
         VPC通道的编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfVpcChannelV2Request:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this ShowDetailsOfVpcChannelV2Request.
+        r"""Sets the vpc_channel_id of this ShowDetailsOfVpcChannelV2Request.
 
         VPC通道的编号
 

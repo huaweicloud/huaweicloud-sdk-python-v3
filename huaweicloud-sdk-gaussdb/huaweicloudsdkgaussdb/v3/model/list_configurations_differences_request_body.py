@@ -27,7 +27,7 @@ class ListConfigurationsDifferencesRequestBody:
     }
 
     def __init__(self, source_configuration_id=None, target_configuration_id=None):
-        """ListConfigurationsDifferencesRequestBody
+        r"""ListConfigurationsDifferencesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListConfigurationsDifferencesRequestBody:
 
     @property
     def source_configuration_id(self):
-        """Gets the source_configuration_id of this ListConfigurationsDifferencesRequestBody.
+        r"""Gets the source_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
         需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
 
@@ -59,7 +59,7 @@ class ListConfigurationsDifferencesRequestBody:
 
     @source_configuration_id.setter
     def source_configuration_id(self, source_configuration_id):
-        """Sets the source_configuration_id of this ListConfigurationsDifferencesRequestBody.
+        r"""Sets the source_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
         需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
 
@@ -70,7 +70,7 @@ class ListConfigurationsDifferencesRequestBody:
 
     @property
     def target_configuration_id(self):
-        """Gets the target_configuration_id of this ListConfigurationsDifferencesRequestBody.
+        r"""Gets the target_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
         需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
 
@@ -81,7 +81,7 @@ class ListConfigurationsDifferencesRequestBody:
 
     @target_configuration_id.setter
     def target_configuration_id(self, target_configuration_id):
-        """Sets the target_configuration_id of this ListConfigurationsDifferencesRequestBody.
+        r"""Sets the target_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
         需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
 

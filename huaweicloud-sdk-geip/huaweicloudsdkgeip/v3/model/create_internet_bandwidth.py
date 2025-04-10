@@ -65,7 +65,7 @@ class CreateInternetBandwidth:
     }
 
     def __init__(self, id=None, name=None, ingress_size=None, isp=None, access_site=None, size=None, description=None, charge_mode=None, ratio_95peak=None, freezen_info=None, domain_id=None, billing_info=None, status=None, is_pre_paid=None, created_at=None, updated_at=None, tags=None, sys_tags=None, enterprise_project_id=None, type=None, lock_infos=None):
-        """CreateInternetBandwidth
+        r"""CreateInternetBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -179,7 +179,7 @@ class CreateInternetBandwidth:
 
     @property
     def id(self):
-        """Gets the id of this CreateInternetBandwidth.
+        r"""Gets the id of this CreateInternetBandwidth.
 
         全域公网带宽的ID
 
@@ -190,7 +190,7 @@ class CreateInternetBandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInternetBandwidth.
+        r"""Sets the id of this CreateInternetBandwidth.
 
         全域公网带宽的ID
 
@@ -201,7 +201,7 @@ class CreateInternetBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this CreateInternetBandwidth.
+        r"""Gets the name of this CreateInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -212,7 +212,7 @@ class CreateInternetBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInternetBandwidth.
+        r"""Sets the name of this CreateInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -223,7 +223,7 @@ class CreateInternetBandwidth:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this CreateInternetBandwidth.
+        r"""Gets the ingress_size of this CreateInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -234,7 +234,7 @@ class CreateInternetBandwidth:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this CreateInternetBandwidth.
+        r"""Sets the ingress_size of this CreateInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -245,7 +245,7 @@ class CreateInternetBandwidth:
 
     @property
     def isp(self):
-        """Gets the isp of this CreateInternetBandwidth.
+        r"""Gets the isp of this CreateInternetBandwidth.
 
         全域弹性公网IP所属线路
 
@@ -256,7 +256,7 @@ class CreateInternetBandwidth:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this CreateInternetBandwidth.
+        r"""Sets the isp of this CreateInternetBandwidth.
 
         全域弹性公网IP所属线路
 
@@ -267,7 +267,7 @@ class CreateInternetBandwidth:
 
     @property
     def access_site(self):
-        """Gets the access_site of this CreateInternetBandwidth.
+        r"""Gets the access_site of this CreateInternetBandwidth.
 
         接入点信息
 
@@ -278,7 +278,7 @@ class CreateInternetBandwidth:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this CreateInternetBandwidth.
+        r"""Sets the access_site of this CreateInternetBandwidth.
 
         接入点信息
 
@@ -289,7 +289,7 @@ class CreateInternetBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this CreateInternetBandwidth.
+        r"""Gets the size of this CreateInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -300,7 +300,7 @@ class CreateInternetBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateInternetBandwidth.
+        r"""Sets the size of this CreateInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -311,7 +311,7 @@ class CreateInternetBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this CreateInternetBandwidth.
+        r"""Gets the description of this CreateInternetBandwidth.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -322,7 +322,7 @@ class CreateInternetBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateInternetBandwidth.
+        r"""Sets the description of this CreateInternetBandwidth.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -333,7 +333,7 @@ class CreateInternetBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateInternetBandwidth.
+        r"""Gets the charge_mode of this CreateInternetBandwidth.
 
         计费模式
 
@@ -344,7 +344,7 @@ class CreateInternetBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateInternetBandwidth.
+        r"""Sets the charge_mode of this CreateInternetBandwidth.
 
         计费模式
 
@@ -355,7 +355,7 @@ class CreateInternetBandwidth:
 
     @property
     def ratio_95peak(self):
-        """Gets the ratio_95peak of this CreateInternetBandwidth.
+        r"""Gets the ratio_95peak of this CreateInternetBandwidth.
 
         增强95保底率
 
@@ -366,7 +366,7 @@ class CreateInternetBandwidth:
 
     @ratio_95peak.setter
     def ratio_95peak(self, ratio_95peak):
-        """Sets the ratio_95peak of this CreateInternetBandwidth.
+        r"""Sets the ratio_95peak of this CreateInternetBandwidth.
 
         增强95保底率
 
@@ -377,7 +377,7 @@ class CreateInternetBandwidth:
 
     @property
     def freezen_info(self):
-        """Gets the freezen_info of this CreateInternetBandwidth.
+        r"""Gets the freezen_info of this CreateInternetBandwidth.
 
         冻结原因
 
@@ -388,7 +388,7 @@ class CreateInternetBandwidth:
 
     @freezen_info.setter
     def freezen_info(self, freezen_info):
-        """Sets the freezen_info of this CreateInternetBandwidth.
+        r"""Sets the freezen_info of this CreateInternetBandwidth.
 
         冻结原因
 
@@ -399,7 +399,7 @@ class CreateInternetBandwidth:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateInternetBandwidth.
+        r"""Gets the domain_id of this CreateInternetBandwidth.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -410,7 +410,7 @@ class CreateInternetBandwidth:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateInternetBandwidth.
+        r"""Sets the domain_id of this CreateInternetBandwidth.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -421,7 +421,7 @@ class CreateInternetBandwidth:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this CreateInternetBandwidth.
+        r"""Gets the billing_info of this CreateInternetBandwidth.
 
         包周期时有值，订单信息
 
@@ -432,7 +432,7 @@ class CreateInternetBandwidth:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this CreateInternetBandwidth.
+        r"""Sets the billing_info of this CreateInternetBandwidth.
 
         包周期时有值，订单信息
 
@@ -443,7 +443,7 @@ class CreateInternetBandwidth:
 
     @property
     def status(self):
-        """Gets the status of this CreateInternetBandwidth.
+        r"""Gets the status of this CreateInternetBandwidth.
 
         状态
 
@@ -454,7 +454,7 @@ class CreateInternetBandwidth:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateInternetBandwidth.
+        r"""Sets the status of this CreateInternetBandwidth.
 
         状态
 
@@ -465,7 +465,7 @@ class CreateInternetBandwidth:
 
     @property
     def is_pre_paid(self):
-        """Gets the is_pre_paid of this CreateInternetBandwidth.
+        r"""Gets the is_pre_paid of this CreateInternetBandwidth.
 
         是否包周期
 
@@ -476,7 +476,7 @@ class CreateInternetBandwidth:
 
     @is_pre_paid.setter
     def is_pre_paid(self, is_pre_paid):
-        """Sets the is_pre_paid of this CreateInternetBandwidth.
+        r"""Sets the is_pre_paid of this CreateInternetBandwidth.
 
         是否包周期
 
@@ -487,7 +487,7 @@ class CreateInternetBandwidth:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateInternetBandwidth.
+        r"""Gets the created_at of this CreateInternetBandwidth.
 
         创建时间
 
@@ -498,7 +498,7 @@ class CreateInternetBandwidth:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateInternetBandwidth.
+        r"""Sets the created_at of this CreateInternetBandwidth.
 
         创建时间
 
@@ -509,7 +509,7 @@ class CreateInternetBandwidth:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateInternetBandwidth.
+        r"""Gets the updated_at of this CreateInternetBandwidth.
 
         更新时间
 
@@ -520,7 +520,7 @@ class CreateInternetBandwidth:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateInternetBandwidth.
+        r"""Sets the updated_at of this CreateInternetBandwidth.
 
         更新时间
 
@@ -531,7 +531,7 @@ class CreateInternetBandwidth:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInternetBandwidth.
+        r"""Gets the tags of this CreateInternetBandwidth.
 
         全域公网带宽标签
 
@@ -542,7 +542,7 @@ class CreateInternetBandwidth:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInternetBandwidth.
+        r"""Sets the tags of this CreateInternetBandwidth.
 
         全域公网带宽标签
 
@@ -553,7 +553,7 @@ class CreateInternetBandwidth:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CreateInternetBandwidth.
+        r"""Gets the sys_tags of this CreateInternetBandwidth.
 
         系统标签
 
@@ -564,7 +564,7 @@ class CreateInternetBandwidth:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CreateInternetBandwidth.
+        r"""Sets the sys_tags of this CreateInternetBandwidth.
 
         系统标签
 
@@ -575,7 +575,7 @@ class CreateInternetBandwidth:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInternetBandwidth.
+        r"""Gets the enterprise_project_id of this CreateInternetBandwidth.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -586,7 +586,7 @@ class CreateInternetBandwidth:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInternetBandwidth.
+        r"""Sets the enterprise_project_id of this CreateInternetBandwidth.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -597,7 +597,7 @@ class CreateInternetBandwidth:
 
     @property
     def type(self):
-        """Gets the type of this CreateInternetBandwidth.
+        r"""Gets the type of this CreateInternetBandwidth.
 
         全域公网带宽类型
 
@@ -608,7 +608,7 @@ class CreateInternetBandwidth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateInternetBandwidth.
+        r"""Sets the type of this CreateInternetBandwidth.
 
         全域公网带宽类型
 
@@ -619,7 +619,7 @@ class CreateInternetBandwidth:
 
     @property
     def lock_infos(self):
-        """Gets the lock_infos of this CreateInternetBandwidth.
+        r"""Gets the lock_infos of this CreateInternetBandwidth.
 
         全域公网带宽资源的锁状态
 
@@ -630,7 +630,7 @@ class CreateInternetBandwidth:
 
     @lock_infos.setter
     def lock_infos(self, lock_infos):
-        """Sets the lock_infos of this CreateInternetBandwidth.
+        r"""Sets the lock_infos of this CreateInternetBandwidth.
 
         全域公网带宽资源的锁状态
 

@@ -35,7 +35,7 @@ class BuildParameters:
     }
 
     def __init__(self, artifact_namespace=None, build_cmd=None, cluster_id=None, dockerfile_path=None, environment_id=None, node_label_selector=None):
-        """BuildParameters
+        r"""BuildParameters
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class BuildParameters:
 
     @property
     def artifact_namespace(self):
-        """Gets the artifact_namespace of this BuildParameters.
+        r"""Gets the artifact_namespace of this BuildParameters.
 
         :return: The artifact_namespace of this BuildParameters.
         :rtype: str
@@ -86,7 +86,7 @@ class BuildParameters:
 
     @artifact_namespace.setter
     def artifact_namespace(self, artifact_namespace):
-        """Sets the artifact_namespace of this BuildParameters.
+        r"""Sets the artifact_namespace of this BuildParameters.
 
         :param artifact_namespace: The artifact_namespace of this BuildParameters.
         :type artifact_namespace: str
@@ -95,7 +95,7 @@ class BuildParameters:
 
     @property
     def build_cmd(self):
-        """Gets the build_cmd of this BuildParameters.
+        r"""Gets the build_cmd of this BuildParameters.
 
         :return: The build_cmd of this BuildParameters.
         :rtype: str
@@ -104,7 +104,7 @@ class BuildParameters:
 
     @build_cmd.setter
     def build_cmd(self, build_cmd):
-        """Sets the build_cmd of this BuildParameters.
+        r"""Sets the build_cmd of this BuildParameters.
 
         :param build_cmd: The build_cmd of this BuildParameters.
         :type build_cmd: str
@@ -113,7 +113,7 @@ class BuildParameters:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BuildParameters.
+        r"""Gets the cluster_id of this BuildParameters.
 
         :return: The cluster_id of this BuildParameters.
         :rtype: str
@@ -122,7 +122,7 @@ class BuildParameters:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BuildParameters.
+        r"""Sets the cluster_id of this BuildParameters.
 
         :param cluster_id: The cluster_id of this BuildParameters.
         :type cluster_id: str
@@ -131,7 +131,7 @@ class BuildParameters:
 
     @property
     def dockerfile_path(self):
-        """Gets the dockerfile_path of this BuildParameters.
+        r"""Gets the dockerfile_path of this BuildParameters.
 
         :return: The dockerfile_path of this BuildParameters.
         :rtype: str
@@ -140,7 +140,7 @@ class BuildParameters:
 
     @dockerfile_path.setter
     def dockerfile_path(self, dockerfile_path):
-        """Sets the dockerfile_path of this BuildParameters.
+        r"""Sets the dockerfile_path of this BuildParameters.
 
         :param dockerfile_path: The dockerfile_path of this BuildParameters.
         :type dockerfile_path: str
@@ -149,7 +149,7 @@ class BuildParameters:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this BuildParameters.
+        r"""Gets the environment_id of this BuildParameters.
 
         构建环境，选择其中的k8s集群进行构建
 
@@ -160,7 +160,7 @@ class BuildParameters:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this BuildParameters.
+        r"""Sets the environment_id of this BuildParameters.
 
         构建环境，选择其中的k8s集群进行构建
 
@@ -171,7 +171,7 @@ class BuildParameters:
 
     @property
     def node_label_selector(self):
-        """Gets the node_label_selector of this BuildParameters.
+        r"""Gets the node_label_selector of this BuildParameters.
 
         :return: The node_label_selector of this BuildParameters.
         :rtype: dict(str, str)
@@ -180,7 +180,7 @@ class BuildParameters:
 
     @node_label_selector.setter
     def node_label_selector(self, node_label_selector):
-        """Sets the node_label_selector of this BuildParameters.
+        r"""Sets the node_label_selector of this BuildParameters.
 
         :param node_label_selector: The node_label_selector of this BuildParameters.
         :type node_label_selector: dict(str, str)

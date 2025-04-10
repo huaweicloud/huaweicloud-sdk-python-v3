@@ -27,7 +27,7 @@ class EnhancedConnectionHost:
     }
 
     def __init__(self, name=None, ip=None):
-        """EnhancedConnectionHost
+        r"""EnhancedConnectionHost
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EnhancedConnectionHost:
 
     @property
     def name(self):
-        """Gets the name of this EnhancedConnectionHost.
+        r"""Gets the name of this EnhancedConnectionHost.
 
         自定义主机名称。长度128，数字字母下划线(\"_\")横杠(\"-\")句点(\".\")组成，字母开头。
 
@@ -61,7 +61,7 @@ class EnhancedConnectionHost:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnhancedConnectionHost.
+        r"""Sets the name of this EnhancedConnectionHost.
 
         自定义主机名称。长度128，数字字母下划线(\"_\")横杠(\"-\")句点(\".\")组成，字母开头。
 
@@ -72,7 +72,7 @@ class EnhancedConnectionHost:
 
     @property
     def ip(self):
-        """Gets the ip of this EnhancedConnectionHost.
+        r"""Gets the ip of this EnhancedConnectionHost.
 
         主机对应的IPv4地址。
 
@@ -83,7 +83,7 @@ class EnhancedConnectionHost:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this EnhancedConnectionHost.
+        r"""Sets the ip of this EnhancedConnectionHost.
 
         主机对应的IPv4地址。
 

@@ -27,7 +27,7 @@ class RestProlongDurReqBody:
     }
 
     def __init__(self, auto=None, duration=None):
-        """RestProlongDurReqBody
+        r"""RestProlongDurReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestProlongDurReqBody:
 
     @property
     def auto(self):
-        """Gets the auto of this RestProlongDurReqBody.
+        r"""Gets the auto of this RestProlongDurReqBody.
 
         - 0: 手动延长 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）
 
@@ -60,7 +60,7 @@ class RestProlongDurReqBody:
 
     @auto.setter
     def auto(self, auto):
-        """Sets the auto of this RestProlongDurReqBody.
+        r"""Sets the auto of this RestProlongDurReqBody.
 
         - 0: 手动延长 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）
 
@@ -71,7 +71,7 @@ class RestProlongDurReqBody:
 
     @property
     def duration(self):
-        """Gets the duration of this RestProlongDurReqBody.
+        r"""Gets the duration of this RestProlongDurReqBody.
 
         延长时间，单位为分钟。 默认值：15
 
@@ -82,7 +82,7 @@ class RestProlongDurReqBody:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this RestProlongDurReqBody.
+        r"""Sets the duration of this RestProlongDurReqBody.
 
         延长时间，单位为分钟。 默认值：15
 

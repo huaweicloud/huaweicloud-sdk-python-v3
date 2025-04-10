@@ -25,7 +25,7 @@ class CancelSparkJobRequest:
     }
 
     def __init__(self, batch_id=None):
-        """CancelSparkJobRequest
+        r"""CancelSparkJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelSparkJobRequest:
 
     @property
     def batch_id(self):
-        """Gets the batch_id of this CancelSparkJobRequest.
+        r"""Gets the batch_id of this CancelSparkJobRequest.
 
         批处理作业的ID。
 
@@ -53,7 +53,7 @@ class CancelSparkJobRequest:
 
     @batch_id.setter
     def batch_id(self, batch_id):
-        """Sets the batch_id of this CancelSparkJobRequest.
+        r"""Sets the batch_id of this CancelSparkJobRequest.
 
         批处理作业的ID。
 

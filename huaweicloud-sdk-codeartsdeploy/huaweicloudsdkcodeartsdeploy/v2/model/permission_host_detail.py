@@ -33,7 +33,7 @@ class PermissionHostDetail:
     }
 
     def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_connection_test=None):
-        """PermissionHostDetail
+        r"""PermissionHostDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PermissionHostDetail:
 
     @property
     def can_view(self):
-        """Gets the can_view of this PermissionHostDetail.
+        r"""Gets the can_view of this PermissionHostDetail.
 
         是否有查看权限
 
@@ -82,7 +82,7 @@ class PermissionHostDetail:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this PermissionHostDetail.
+        r"""Sets the can_view of this PermissionHostDetail.
 
         是否有查看权限
 
@@ -93,7 +93,7 @@ class PermissionHostDetail:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this PermissionHostDetail.
+        r"""Gets the can_edit of this PermissionHostDetail.
 
         是否有编辑权限
 
@@ -104,7 +104,7 @@ class PermissionHostDetail:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this PermissionHostDetail.
+        r"""Sets the can_edit of this PermissionHostDetail.
 
         是否有编辑权限
 
@@ -115,7 +115,7 @@ class PermissionHostDetail:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this PermissionHostDetail.
+        r"""Gets the can_delete of this PermissionHostDetail.
 
         是否有删除权限
 
@@ -126,7 +126,7 @@ class PermissionHostDetail:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this PermissionHostDetail.
+        r"""Sets the can_delete of this PermissionHostDetail.
 
         是否有删除权限
 
@@ -137,7 +137,7 @@ class PermissionHostDetail:
 
     @property
     def can_add_host(self):
-        """Gets the can_add_host of this PermissionHostDetail.
+        r"""Gets the can_add_host of this PermissionHostDetail.
 
         是否有添加主机权限
 
@@ -148,7 +148,7 @@ class PermissionHostDetail:
 
     @can_add_host.setter
     def can_add_host(self, can_add_host):
-        """Sets the can_add_host of this PermissionHostDetail.
+        r"""Sets the can_add_host of this PermissionHostDetail.
 
         是否有添加主机权限
 
@@ -159,7 +159,7 @@ class PermissionHostDetail:
 
     @property
     def can_connection_test(self):
-        """Gets the can_connection_test of this PermissionHostDetail.
+        r"""Gets the can_connection_test of this PermissionHostDetail.
 
         是否测试主机连通性权限
 
@@ -170,7 +170,7 @@ class PermissionHostDetail:
 
     @can_connection_test.setter
     def can_connection_test(self, can_connection_test):
-        """Sets the can_connection_test of this PermissionHostDetail.
+        r"""Sets the can_connection_test of this PermissionHostDetail.
 
         是否测试主机连通性权限
 

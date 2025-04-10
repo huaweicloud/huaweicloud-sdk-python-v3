@@ -29,7 +29,7 @@ class MetaData:
     }
 
     def __init__(self, count=None, start=None, total=None):
-        """MetaData
+        r"""MetaData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MetaData:
 
     @property
     def count(self):
-        """Gets the count of this MetaData.
+        r"""Gets the count of this MetaData.
 
         当前返回结果条数。
 
@@ -68,7 +68,7 @@ class MetaData:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this MetaData.
+        r"""Sets the count of this MetaData.
 
         当前返回结果条数。
 
@@ -79,7 +79,7 @@ class MetaData:
 
     @property
     def start(self):
-        """Gets the start of this MetaData.
+        r"""Gets the start of this MetaData.
 
         下一个开始的标记，用于分页，null表示无更多数据。
 
@@ -90,7 +90,7 @@ class MetaData:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this MetaData.
+        r"""Sets the start of this MetaData.
 
         下一个开始的标记，用于分页，null表示无更多数据。
 
@@ -101,7 +101,7 @@ class MetaData:
 
     @property
     def total(self):
-        """Gets the total of this MetaData.
+        r"""Gets the total of this MetaData.
 
         总条数。
 
@@ -112,7 +112,7 @@ class MetaData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this MetaData.
+        r"""Sets the total of this MetaData.
 
         总条数。
 

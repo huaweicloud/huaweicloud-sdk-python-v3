@@ -31,7 +31,7 @@ class Failure:
     }
 
     def __init__(self, path=None, error_msg=None, method=None, error_code=None):
-        """Failure
+        r"""Failure
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Failure:
 
     @property
     def path(self):
-        """Gets the path of this Failure.
+        r"""Gets the path of this Failure.
 
         API请求路径
 
@@ -75,7 +75,7 @@ class Failure:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Failure.
+        r"""Sets the path of this Failure.
 
         API请求路径
 
@@ -86,7 +86,7 @@ class Failure:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this Failure.
+        r"""Gets the error_msg of this Failure.
 
         导入失败的错误信息
 
@@ -97,7 +97,7 @@ class Failure:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this Failure.
+        r"""Sets the error_msg of this Failure.
 
         导入失败的错误信息
 
@@ -108,7 +108,7 @@ class Failure:
 
     @property
     def method(self):
-        """Gets the method of this Failure.
+        r"""Gets the method of this Failure.
 
         API请求方法
 
@@ -119,7 +119,7 @@ class Failure:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this Failure.
+        r"""Sets the method of this Failure.
 
         API请求方法
 
@@ -130,7 +130,7 @@ class Failure:
 
     @property
     def error_code(self):
-        """Gets the error_code of this Failure.
+        r"""Gets the error_code of this Failure.
 
         导入失败的错误码
 
@@ -141,7 +141,7 @@ class Failure:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this Failure.
+        r"""Sets the error_code of this Failure.
 
         导入失败的错误码
 

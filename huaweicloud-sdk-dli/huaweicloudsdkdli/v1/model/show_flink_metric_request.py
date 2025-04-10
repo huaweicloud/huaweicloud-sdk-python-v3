@@ -25,7 +25,7 @@ class ShowFlinkMetricRequest:
     }
 
     def __init__(self, body=None):
-        """ShowFlinkMetricRequest
+        r"""ShowFlinkMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowFlinkMetricRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowFlinkMetricRequest.
+        r"""Gets the body of this ShowFlinkMetricRequest.
 
         :return: The body of this ShowFlinkMetricRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequestBody`
@@ -52,7 +52,7 @@ class ShowFlinkMetricRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowFlinkMetricRequest.
+        r"""Sets the body of this ShowFlinkMetricRequest.
 
         :param body: The body of this ShowFlinkMetricRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequestBody`

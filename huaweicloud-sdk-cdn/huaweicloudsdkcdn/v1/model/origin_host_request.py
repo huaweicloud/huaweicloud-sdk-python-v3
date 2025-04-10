@@ -25,7 +25,7 @@ class OriginHostRequest:
     }
 
     def __init__(self, origin_host=None):
-        """OriginHostRequest
+        r"""OriginHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OriginHostRequest:
 
     @property
     def origin_host(self):
-        """Gets the origin_host of this OriginHostRequest.
+        r"""Gets the origin_host of this OriginHostRequest.
 
         :return: The origin_host of this OriginHostRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.OriginHostBody`
@@ -51,7 +51,7 @@ class OriginHostRequest:
 
     @origin_host.setter
     def origin_host(self, origin_host):
-        """Sets the origin_host of this OriginHostRequest.
+        r"""Sets the origin_host of this OriginHostRequest.
 
         :param origin_host: The origin_host of this OriginHostRequest.
         :type origin_host: :class:`huaweicloudsdkcdn.v1.OriginHostBody`

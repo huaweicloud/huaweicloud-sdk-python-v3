@@ -39,7 +39,7 @@ class KeystoneCreateUserResult:
     }
 
     def __init__(self, domain_id=None, name=None, description=None, pwd_status=None, password_expires_at=None, links=None, id=None, enabled=None):
-        """KeystoneCreateUserResult
+        r"""KeystoneCreateUserResult
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class KeystoneCreateUserResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneCreateUserResult.
+        r"""Gets the domain_id of this KeystoneCreateUserResult.
 
         IAM用户所属账号ID。
 
@@ -97,7 +97,7 @@ class KeystoneCreateUserResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneCreateUserResult.
+        r"""Sets the domain_id of this KeystoneCreateUserResult.
 
         IAM用户所属账号ID。
 
@@ -108,7 +108,7 @@ class KeystoneCreateUserResult:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneCreateUserResult.
+        r"""Gets the name of this KeystoneCreateUserResult.
 
         IAM用户名。
 
@@ -119,7 +119,7 @@ class KeystoneCreateUserResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneCreateUserResult.
+        r"""Sets the name of this KeystoneCreateUserResult.
 
         IAM用户名。
 
@@ -130,7 +130,7 @@ class KeystoneCreateUserResult:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneCreateUserResult.
+        r"""Gets the description of this KeystoneCreateUserResult.
 
         IAM用户描述信息。
 
@@ -141,7 +141,7 @@ class KeystoneCreateUserResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneCreateUserResult.
+        r"""Sets the description of this KeystoneCreateUserResult.
 
         IAM用户描述信息。
 
@@ -152,7 +152,7 @@ class KeystoneCreateUserResult:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this KeystoneCreateUserResult.
+        r"""Gets the pwd_status of this KeystoneCreateUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
 
@@ -163,7 +163,7 @@ class KeystoneCreateUserResult:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this KeystoneCreateUserResult.
+        r"""Sets the pwd_status of this KeystoneCreateUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
 
@@ -174,7 +174,7 @@ class KeystoneCreateUserResult:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this KeystoneCreateUserResult.
+        r"""Gets the password_expires_at of this KeystoneCreateUserResult.
 
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -185,7 +185,7 @@ class KeystoneCreateUserResult:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this KeystoneCreateUserResult.
+        r"""Sets the password_expires_at of this KeystoneCreateUserResult.
 
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -196,7 +196,7 @@ class KeystoneCreateUserResult:
 
     @property
     def links(self):
-        """Gets the links of this KeystoneCreateUserResult.
+        r"""Gets the links of this KeystoneCreateUserResult.
 
         :return: The links of this KeystoneCreateUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -205,7 +205,7 @@ class KeystoneCreateUserResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneCreateUserResult.
+        r"""Sets the links of this KeystoneCreateUserResult.
 
         :param links: The links of this KeystoneCreateUserResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -214,7 +214,7 @@ class KeystoneCreateUserResult:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneCreateUserResult.
+        r"""Gets the id of this KeystoneCreateUserResult.
 
         IAM用户ID。
 
@@ -225,7 +225,7 @@ class KeystoneCreateUserResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneCreateUserResult.
+        r"""Sets the id of this KeystoneCreateUserResult.
 
         IAM用户ID。
 
@@ -236,7 +236,7 @@ class KeystoneCreateUserResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneCreateUserResult.
+        r"""Gets the enabled of this KeystoneCreateUserResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
@@ -247,7 +247,7 @@ class KeystoneCreateUserResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneCreateUserResult.
+        r"""Sets the enabled of this KeystoneCreateUserResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 

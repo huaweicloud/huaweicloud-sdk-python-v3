@@ -33,7 +33,7 @@ class LdApiCheckInfo:
     }
 
     def __init__(self, type=None, ld_api_name=None, ld_api_method=None, ld_api_path=None, roma_app_id=None):
-        """LdApiCheckInfo
+        r"""LdApiCheckInfo
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class LdApiCheckInfo:
 
     @property
     def type(self):
-        """Gets the type of this LdApiCheckInfo.
+        r"""Gets the type of this LdApiCheckInfo.
 
         校验类型：   - path：路径类型   - name：名称类型
 
@@ -81,7 +81,7 @@ class LdApiCheckInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LdApiCheckInfo.
+        r"""Sets the type of this LdApiCheckInfo.
 
         校验类型：   - path：路径类型   - name：名称类型
 
@@ -92,7 +92,7 @@ class LdApiCheckInfo:
 
     @property
     def ld_api_name(self):
-        """Gets the ld_api_name of this LdApiCheckInfo.
+        r"""Gets the ld_api_name of this LdApiCheckInfo.
 
         自定义后端API名称。  type = name时必填
 
@@ -103,7 +103,7 @@ class LdApiCheckInfo:
 
     @ld_api_name.setter
     def ld_api_name(self, ld_api_name):
-        """Sets the ld_api_name of this LdApiCheckInfo.
+        r"""Sets the ld_api_name of this LdApiCheckInfo.
 
         自定义后端API名称。  type = name时必填
 
@@ -114,7 +114,7 @@ class LdApiCheckInfo:
 
     @property
     def ld_api_method(self):
-        """Gets the ld_api_method of this LdApiCheckInfo.
+        r"""Gets the ld_api_method of this LdApiCheckInfo.
 
         自定义后端API请求方式。  type = path时必填
 
@@ -125,7 +125,7 @@ class LdApiCheckInfo:
 
     @ld_api_method.setter
     def ld_api_method(self, ld_api_method):
-        """Sets the ld_api_method of this LdApiCheckInfo.
+        r"""Sets the ld_api_method of this LdApiCheckInfo.
 
         自定义后端API请求方式。  type = path时必填
 
@@ -136,7 +136,7 @@ class LdApiCheckInfo:
 
     @property
     def ld_api_path(self):
-        """Gets the ld_api_path of this LdApiCheckInfo.
+        r"""Gets the ld_api_path of this LdApiCheckInfo.
 
         自定义后端API的访问地址。  type = path时必填
 
@@ -147,7 +147,7 @@ class LdApiCheckInfo:
 
     @ld_api_path.setter
     def ld_api_path(self, ld_api_path):
-        """Sets the ld_api_path of this LdApiCheckInfo.
+        r"""Sets the ld_api_path of this LdApiCheckInfo.
 
         自定义后端API的访问地址。  type = path时必填
 
@@ -158,7 +158,7 @@ class LdApiCheckInfo:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this LdApiCheckInfo.
+        r"""Gets the roma_app_id of this LdApiCheckInfo.
 
         集成应用ID。  校验应用下后端API定义是否重复时必填
 
@@ -169,7 +169,7 @@ class LdApiCheckInfo:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this LdApiCheckInfo.
+        r"""Sets the roma_app_id of this LdApiCheckInfo.
 
         集成应用ID。  校验应用下后端API定义是否重复时必填
 

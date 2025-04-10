@@ -30,7 +30,7 @@ class ListWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, workflows=None):
-        """ListWorkflowResponse
+        r"""ListWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWorkflowResponse.
+        r"""Gets the total of this ListWorkflowResponse.
 
         返回所有满足条件的对象个数
 
@@ -69,7 +69,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkflowResponse.
+        r"""Sets the total of this ListWorkflowResponse.
 
         返回所有满足条件的对象个数
 
@@ -80,7 +80,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListWorkflowResponse.
+        r"""Gets the size of this ListWorkflowResponse.
 
         返回对象的大小
 
@@ -91,7 +91,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListWorkflowResponse.
+        r"""Sets the size of this ListWorkflowResponse.
 
         返回对象的大小
 
@@ -102,7 +102,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def workflows(self):
-        """Gets the workflows of this ListWorkflowResponse.
+        r"""Gets the workflows of this ListWorkflowResponse.
 
         返回的实体对象
 
@@ -113,7 +113,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @workflows.setter
     def workflows(self, workflows):
-        """Sets the workflows of this ListWorkflowResponse.
+        r"""Sets the workflows of this ListWorkflowResponse.
 
         返回的实体对象
 

@@ -45,7 +45,7 @@ class SlowLog:
     }
 
     def __init__(self, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, start_time=None, client_ip=None):
-        """SlowLog
+        r"""SlowLog
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class SlowLog:
 
     @property
     def count(self):
-        """Gets the count of this SlowLog.
+        r"""Gets the count of this SlowLog.
 
         执行次数。
 
@@ -113,7 +113,7 @@ class SlowLog:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SlowLog.
+        r"""Sets the count of this SlowLog.
 
         执行次数。
 
@@ -124,7 +124,7 @@ class SlowLog:
 
     @property
     def time(self):
-        """Gets the time of this SlowLog.
+        r"""Gets the time of this SlowLog.
 
         平均执行时间。
 
@@ -135,7 +135,7 @@ class SlowLog:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this SlowLog.
+        r"""Sets the time of this SlowLog.
 
         平均执行时间。
 
@@ -146,7 +146,7 @@ class SlowLog:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this SlowLog.
+        r"""Gets the lock_time of this SlowLog.
 
         平均等待锁时间。
 
@@ -157,7 +157,7 @@ class SlowLog:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this SlowLog.
+        r"""Sets the lock_time of this SlowLog.
 
         平均等待锁时间。
 
@@ -168,7 +168,7 @@ class SlowLog:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this SlowLog.
+        r"""Gets the rows_sent of this SlowLog.
 
         平均结果行数量。
 
@@ -179,7 +179,7 @@ class SlowLog:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this SlowLog.
+        r"""Sets the rows_sent of this SlowLog.
 
         平均结果行数量。
 
@@ -190,7 +190,7 @@ class SlowLog:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this SlowLog.
+        r"""Gets the rows_examined of this SlowLog.
 
         平均扫描的行数量。
 
@@ -201,7 +201,7 @@ class SlowLog:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this SlowLog.
+        r"""Sets the rows_examined of this SlowLog.
 
         平均扫描的行数量。
 
@@ -212,7 +212,7 @@ class SlowLog:
 
     @property
     def database(self):
-        """Gets the database of this SlowLog.
+        r"""Gets the database of this SlowLog.
 
         所属数据库。
 
@@ -223,7 +223,7 @@ class SlowLog:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowLog.
+        r"""Sets the database of this SlowLog.
 
         所属数据库。
 
@@ -234,7 +234,7 @@ class SlowLog:
 
     @property
     def users(self):
-        """Gets the users of this SlowLog.
+        r"""Gets the users of this SlowLog.
 
         帐号。
 
@@ -245,7 +245,7 @@ class SlowLog:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this SlowLog.
+        r"""Sets the users of this SlowLog.
 
         帐号。
 
@@ -256,7 +256,7 @@ class SlowLog:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this SlowLog.
+        r"""Gets the query_sample of this SlowLog.
 
         执行语法。
 
@@ -267,7 +267,7 @@ class SlowLog:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this SlowLog.
+        r"""Sets the query_sample of this SlowLog.
 
         执行语法。
 
@@ -278,7 +278,7 @@ class SlowLog:
 
     @property
     def type(self):
-        """Gets the type of this SlowLog.
+        r"""Gets the type of this SlowLog.
 
         语句类型。
 
@@ -289,7 +289,7 @@ class SlowLog:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SlowLog.
+        r"""Sets the type of this SlowLog.
 
         语句类型。
 
@@ -300,7 +300,7 @@ class SlowLog:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SlowLog.
+        r"""Gets the start_time of this SlowLog.
 
         发生时间，UTC时间。
 
@@ -311,7 +311,7 @@ class SlowLog:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SlowLog.
+        r"""Sets the start_time of this SlowLog.
 
         发生时间，UTC时间。
 
@@ -322,7 +322,7 @@ class SlowLog:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this SlowLog.
+        r"""Gets the client_ip of this SlowLog.
 
         IP地址。
 
@@ -333,7 +333,7 @@ class SlowLog:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this SlowLog.
+        r"""Sets the client_ip of this SlowLog.
 
         IP地址。
 

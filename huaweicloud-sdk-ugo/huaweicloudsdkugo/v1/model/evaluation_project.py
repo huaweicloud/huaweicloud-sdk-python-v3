@@ -49,7 +49,7 @@ class EvaluationProject:
     }
 
     def __init__(self, evaluation_project_id=None, evaluation_project_name=None, evaluation_project_status=None, project_status_detail=None, source_db_type=None, source_db_version=None, target_db_type=None, target_db_version=None, collect_size=None, resource_id=None, created_time=None, updated_time=None, error_reason=None):
-        """EvaluationProject
+        r"""EvaluationProject
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class EvaluationProject:
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this EvaluationProject.
+        r"""Gets the evaluation_project_id of this EvaluationProject.
 
         评估项目ID。
 
@@ -130,7 +130,7 @@ class EvaluationProject:
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this EvaluationProject.
+        r"""Sets the evaluation_project_id of this EvaluationProject.
 
         评估项目ID。
 
@@ -141,7 +141,7 @@ class EvaluationProject:
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this EvaluationProject.
+        r"""Gets the evaluation_project_name of this EvaluationProject.
 
         评估项目名称。
 
@@ -152,7 +152,7 @@ class EvaluationProject:
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this EvaluationProject.
+        r"""Sets the evaluation_project_name of this EvaluationProject.
 
         评估项目名称。
 
@@ -163,7 +163,7 @@ class EvaluationProject:
 
     @property
     def evaluation_project_status(self):
-        """Gets the evaluation_project_status of this EvaluationProject.
+        r"""Gets the evaluation_project_status of this EvaluationProject.
 
         评估项目状态。
 
@@ -174,7 +174,7 @@ class EvaluationProject:
 
     @evaluation_project_status.setter
     def evaluation_project_status(self, evaluation_project_status):
-        """Sets the evaluation_project_status of this EvaluationProject.
+        r"""Sets the evaluation_project_status of this EvaluationProject.
 
         评估项目状态。
 
@@ -185,7 +185,7 @@ class EvaluationProject:
 
     @property
     def project_status_detail(self):
-        """Gets the project_status_detail of this EvaluationProject.
+        r"""Gets the project_status_detail of this EvaluationProject.
 
         :return: The project_status_detail of this EvaluationProject.
         :rtype: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`
@@ -194,7 +194,7 @@ class EvaluationProject:
 
     @project_status_detail.setter
     def project_status_detail(self, project_status_detail):
-        """Sets the project_status_detail of this EvaluationProject.
+        r"""Sets the project_status_detail of this EvaluationProject.
 
         :param project_status_detail: The project_status_detail of this EvaluationProject.
         :type project_status_detail: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`
@@ -203,7 +203,7 @@ class EvaluationProject:
 
     @property
     def source_db_type(self):
-        """Gets the source_db_type of this EvaluationProject.
+        r"""Gets the source_db_type of this EvaluationProject.
 
         源数据库类型。
 
@@ -214,7 +214,7 @@ class EvaluationProject:
 
     @source_db_type.setter
     def source_db_type(self, source_db_type):
-        """Sets the source_db_type of this EvaluationProject.
+        r"""Sets the source_db_type of this EvaluationProject.
 
         源数据库类型。
 
@@ -225,7 +225,7 @@ class EvaluationProject:
 
     @property
     def source_db_version(self):
-        """Gets the source_db_version of this EvaluationProject.
+        r"""Gets the source_db_version of this EvaluationProject.
 
         源数据库版本。
 
@@ -236,7 +236,7 @@ class EvaluationProject:
 
     @source_db_version.setter
     def source_db_version(self, source_db_version):
-        """Sets the source_db_version of this EvaluationProject.
+        r"""Sets the source_db_version of this EvaluationProject.
 
         源数据库版本。
 
@@ -247,7 +247,7 @@ class EvaluationProject:
 
     @property
     def target_db_type(self):
-        """Gets the target_db_type of this EvaluationProject.
+        r"""Gets the target_db_type of this EvaluationProject.
 
         目标数据库类型。
 
@@ -258,7 +258,7 @@ class EvaluationProject:
 
     @target_db_type.setter
     def target_db_type(self, target_db_type):
-        """Sets the target_db_type of this EvaluationProject.
+        r"""Sets the target_db_type of this EvaluationProject.
 
         目标数据库类型。
 
@@ -269,7 +269,7 @@ class EvaluationProject:
 
     @property
     def target_db_version(self):
-        """Gets the target_db_version of this EvaluationProject.
+        r"""Gets the target_db_version of this EvaluationProject.
 
         目标数据库版本。
 
@@ -280,7 +280,7 @@ class EvaluationProject:
 
     @target_db_version.setter
     def target_db_version(self, target_db_version):
-        """Sets the target_db_version of this EvaluationProject.
+        r"""Sets the target_db_version of this EvaluationProject.
 
         目标数据库版本。
 
@@ -291,7 +291,7 @@ class EvaluationProject:
 
     @property
     def collect_size(self):
-        """Gets the collect_size of this EvaluationProject.
+        r"""Gets the collect_size of this EvaluationProject.
 
         已收集的SQL大小，单位：B。
 
@@ -302,7 +302,7 @@ class EvaluationProject:
 
     @collect_size.setter
     def collect_size(self, collect_size):
-        """Sets the collect_size of this EvaluationProject.
+        r"""Sets the collect_size of this EvaluationProject.
 
         已收集的SQL大小，单位：B。
 
@@ -313,7 +313,7 @@ class EvaluationProject:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this EvaluationProject.
+        r"""Gets the resource_id of this EvaluationProject.
 
         资源ID。
 
@@ -324,7 +324,7 @@ class EvaluationProject:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this EvaluationProject.
+        r"""Sets the resource_id of this EvaluationProject.
 
         资源ID。
 
@@ -335,7 +335,7 @@ class EvaluationProject:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EvaluationProject.
+        r"""Gets the created_time of this EvaluationProject.
 
         创建时间。
 
@@ -346,7 +346,7 @@ class EvaluationProject:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EvaluationProject.
+        r"""Sets the created_time of this EvaluationProject.
 
         创建时间。
 
@@ -357,7 +357,7 @@ class EvaluationProject:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this EvaluationProject.
+        r"""Gets the updated_time of this EvaluationProject.
 
         更新时间。
 
@@ -368,7 +368,7 @@ class EvaluationProject:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this EvaluationProject.
+        r"""Sets the updated_time of this EvaluationProject.
 
         更新时间。
 
@@ -379,7 +379,7 @@ class EvaluationProject:
 
     @property
     def error_reason(self):
-        """Gets the error_reason of this EvaluationProject.
+        r"""Gets the error_reason of this EvaluationProject.
 
         失败原因。
 
@@ -390,7 +390,7 @@ class EvaluationProject:
 
     @error_reason.setter
     def error_reason(self, error_reason):
-        """Sets the error_reason of this EvaluationProject.
+        r"""Sets the error_reason of this EvaluationProject.
 
         失败原因。
 

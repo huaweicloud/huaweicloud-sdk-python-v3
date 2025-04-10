@@ -41,7 +41,7 @@ class DeploymentHostInfo:
     }
 
     def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None):
-        """DeploymentHostInfo
+        r"""DeploymentHostInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DeploymentHostInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeploymentHostInfo.
+        r"""Gets the group_id of this DeploymentHostInfo.
 
         主机集群id
 
@@ -103,7 +103,7 @@ class DeploymentHostInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeploymentHostInfo.
+        r"""Sets the group_id of this DeploymentHostInfo.
 
         主机集群id
 
@@ -114,7 +114,7 @@ class DeploymentHostInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DeploymentHostInfo.
+        r"""Gets the host_name of this DeploymentHostInfo.
 
         主机名称
 
@@ -125,7 +125,7 @@ class DeploymentHostInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DeploymentHostInfo.
+        r"""Sets the host_name of this DeploymentHostInfo.
 
         主机名称
 
@@ -136,7 +136,7 @@ class DeploymentHostInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this DeploymentHostInfo.
+        r"""Gets the ip of this DeploymentHostInfo.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -147,7 +147,7 @@ class DeploymentHostInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DeploymentHostInfo.
+        r"""Sets the ip of this DeploymentHostInfo.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -158,7 +158,7 @@ class DeploymentHostInfo:
 
     @property
     def port(self):
-        """Gets the port of this DeploymentHostInfo.
+        r"""Gets the port of this DeploymentHostInfo.
 
         ssh端口，如：22
 
@@ -169,7 +169,7 @@ class DeploymentHostInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DeploymentHostInfo.
+        r"""Sets the port of this DeploymentHostInfo.
 
         ssh端口，如：22
 
@@ -180,7 +180,7 @@ class DeploymentHostInfo:
 
     @property
     def os(self):
-        """Gets the os of this DeploymentHostInfo.
+        r"""Gets the os of this DeploymentHostInfo.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -191,7 +191,7 @@ class DeploymentHostInfo:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this DeploymentHostInfo.
+        r"""Sets the os of this DeploymentHostInfo.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -202,7 +202,7 @@ class DeploymentHostInfo:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this DeploymentHostInfo.
+        r"""Gets the as_proxy of this DeploymentHostInfo.
 
         是否为代理机
 
@@ -213,7 +213,7 @@ class DeploymentHostInfo:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this DeploymentHostInfo.
+        r"""Sets the as_proxy of this DeploymentHostInfo.
 
         是否为代理机
 
@@ -224,7 +224,7 @@ class DeploymentHostInfo:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this DeploymentHostInfo.
+        r"""Gets the proxy_host_id of this DeploymentHostInfo.
 
         代理机id
 
@@ -235,7 +235,7 @@ class DeploymentHostInfo:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this DeploymentHostInfo.
+        r"""Sets the proxy_host_id of this DeploymentHostInfo.
 
         代理机id
 
@@ -246,7 +246,7 @@ class DeploymentHostInfo:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeploymentHostInfo.
+        r"""Gets the authorization of this DeploymentHostInfo.
 
         :return: The authorization of this DeploymentHostInfo.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -255,7 +255,7 @@ class DeploymentHostInfo:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeploymentHostInfo.
+        r"""Sets the authorization of this DeploymentHostInfo.
 
         :param authorization: The authorization of this DeploymentHostInfo.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -264,7 +264,7 @@ class DeploymentHostInfo:
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this DeploymentHostInfo.
+        r"""Gets the install_icagent of this DeploymentHostInfo.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -275,7 +275,7 @@ class DeploymentHostInfo:
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this DeploymentHostInfo.
+        r"""Sets the install_icagent of this DeploymentHostInfo.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 

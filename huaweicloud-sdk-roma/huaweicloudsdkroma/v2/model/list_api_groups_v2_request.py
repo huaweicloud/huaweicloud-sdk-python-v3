@@ -39,7 +39,7 @@ class ListApiGroupsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, roma_app_id=None, precise_search=None, domain_name=None):
-        """ListApiGroupsV2Request
+        r"""ListApiGroupsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListApiGroupsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApiGroupsV2Request.
+        r"""Gets the instance_id of this ListApiGroupsV2Request.
 
         实例ID
 
@@ -102,7 +102,7 @@ class ListApiGroupsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApiGroupsV2Request.
+        r"""Sets the instance_id of this ListApiGroupsV2Request.
 
         实例ID
 
@@ -113,7 +113,7 @@ class ListApiGroupsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApiGroupsV2Request.
+        r"""Gets the offset of this ListApiGroupsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -124,7 +124,7 @@ class ListApiGroupsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApiGroupsV2Request.
+        r"""Sets the offset of this ListApiGroupsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -135,7 +135,7 @@ class ListApiGroupsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApiGroupsV2Request.
+        r"""Gets the limit of this ListApiGroupsV2Request.
 
         每页显示的条目数量
 
@@ -146,7 +146,7 @@ class ListApiGroupsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApiGroupsV2Request.
+        r"""Sets the limit of this ListApiGroupsV2Request.
 
         每页显示的条目数量
 
@@ -157,7 +157,7 @@ class ListApiGroupsV2Request:
 
     @property
     def id(self):
-        """Gets the id of this ListApiGroupsV2Request.
+        r"""Gets the id of this ListApiGroupsV2Request.
 
         API分组编号
 
@@ -168,7 +168,7 @@ class ListApiGroupsV2Request:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListApiGroupsV2Request.
+        r"""Sets the id of this ListApiGroupsV2Request.
 
         API分组编号
 
@@ -179,7 +179,7 @@ class ListApiGroupsV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListApiGroupsV2Request.
+        r"""Gets the name of this ListApiGroupsV2Request.
 
         API分组名称
 
@@ -190,7 +190,7 @@ class ListApiGroupsV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListApiGroupsV2Request.
+        r"""Sets the name of this ListApiGroupsV2Request.
 
         API分组名称
 
@@ -201,7 +201,7 @@ class ListApiGroupsV2Request:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ListApiGroupsV2Request.
+        r"""Gets the roma_app_id of this ListApiGroupsV2Request.
 
         集成应用编号
 
@@ -212,7 +212,7 @@ class ListApiGroupsV2Request:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ListApiGroupsV2Request.
+        r"""Sets the roma_app_id of this ListApiGroupsV2Request.
 
         集成应用编号
 
@@ -223,7 +223,7 @@ class ListApiGroupsV2Request:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListApiGroupsV2Request.
+        r"""Gets the precise_search of this ListApiGroupsV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[目前仅支持API分组名称](tag:Site)
 
@@ -234,7 +234,7 @@ class ListApiGroupsV2Request:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListApiGroupsV2Request.
+        r"""Sets the precise_search of this ListApiGroupsV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[目前仅支持API分组名称](tag:Site)
 
@@ -245,7 +245,7 @@ class ListApiGroupsV2Request:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListApiGroupsV2Request.
+        r"""Gets the domain_name of this ListApiGroupsV2Request.
 
         域名
 
@@ -256,7 +256,7 @@ class ListApiGroupsV2Request:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListApiGroupsV2Request.
+        r"""Sets the domain_name of this ListApiGroupsV2Request.
 
         域名
 

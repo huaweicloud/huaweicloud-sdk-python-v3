@@ -31,7 +31,7 @@ class WorkTableIssuseListResponseBodyProject:
     }
 
     def __init__(self, id=None, identifier=None, name=None, type=None):
-        """WorkTableIssuseListResponseBodyProject
+        r"""WorkTableIssuseListResponseBodyProject
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyProject.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyProject.
 
         项目id
 
@@ -75,7 +75,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyProject.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyProject.
 
         项目id
 
@@ -86,7 +86,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @property
     def identifier(self):
-        """Gets the identifier of this WorkTableIssuseListResponseBodyProject.
+        r"""Gets the identifier of this WorkTableIssuseListResponseBodyProject.
 
         项目uuid
 
@@ -97,7 +97,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this WorkTableIssuseListResponseBodyProject.
+        r"""Sets the identifier of this WorkTableIssuseListResponseBodyProject.
 
         项目uuid
 
@@ -108,7 +108,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodyProject.
+        r"""Gets the name of this WorkTableIssuseListResponseBodyProject.
 
         项目名称
 
@@ -119,7 +119,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodyProject.
+        r"""Sets the name of this WorkTableIssuseListResponseBodyProject.
 
         项目名称
 
@@ -130,7 +130,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @property
     def type(self):
-        """Gets the type of this WorkTableIssuseListResponseBodyProject.
+        r"""Gets the type of this WorkTableIssuseListResponseBodyProject.
 
         项目类型
 
@@ -141,7 +141,7 @@ class WorkTableIssuseListResponseBodyProject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WorkTableIssuseListResponseBodyProject.
+        r"""Sets the type of this WorkTableIssuseListResponseBodyProject.
 
         项目类型
 

@@ -27,7 +27,7 @@ class BatchCreateKmsTagsRequest:
     }
 
     def __init__(self, key_id=None, body=None):
-        """BatchCreateKmsTagsRequest
+        r"""BatchCreateKmsTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateKmsTagsRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this BatchCreateKmsTagsRequest.
+        r"""Gets the key_id of this BatchCreateKmsTagsRequest.
 
         密钥ID
 
@@ -60,7 +60,7 @@ class BatchCreateKmsTagsRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this BatchCreateKmsTagsRequest.
+        r"""Sets the key_id of this BatchCreateKmsTagsRequest.
 
         密钥ID
 
@@ -71,7 +71,7 @@ class BatchCreateKmsTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateKmsTagsRequest.
+        r"""Gets the body of this BatchCreateKmsTagsRequest.
 
         :return: The body of this BatchCreateKmsTagsRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateKmsTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateKmsTagsRequest.
+        r"""Sets the body of this BatchCreateKmsTagsRequest.
 
         :param body: The body of this BatchCreateKmsTagsRequest.
         :type body: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsRequestBody`

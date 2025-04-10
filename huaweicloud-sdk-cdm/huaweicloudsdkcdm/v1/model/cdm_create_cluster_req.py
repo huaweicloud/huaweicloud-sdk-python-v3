@@ -31,7 +31,7 @@ class CdmCreateClusterReq:
     }
 
     def __init__(self, cluster=None, auto_remind=None, phone_num=None, email=None):
-        """CdmCreateClusterReq
+        r"""CdmCreateClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CdmCreateClusterReq:
 
     @property
     def cluster(self):
-        """Gets the cluster of this CdmCreateClusterReq.
+        r"""Gets the cluster of this CdmCreateClusterReq.
 
         :return: The cluster of this CdmCreateClusterReq.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`
@@ -72,7 +72,7 @@ class CdmCreateClusterReq:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this CdmCreateClusterReq.
+        r"""Sets the cluster of this CdmCreateClusterReq.
 
         :param cluster: The cluster of this CdmCreateClusterReq.
         :type cluster: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`
@@ -81,7 +81,7 @@ class CdmCreateClusterReq:
 
     @property
     def auto_remind(self):
-        """Gets the auto_remind of this CdmCreateClusterReq.
+        r"""Gets the auto_remind of this CdmCreateClusterReq.
 
         选择是否开启消息通知。开启后，支持配置5个手机号码或邮箱，作业（目前仅支持表/文件迁移的作业）失败时、EIP异常时会发送短信或邮件通知用户
 
@@ -92,7 +92,7 @@ class CdmCreateClusterReq:
 
     @auto_remind.setter
     def auto_remind(self, auto_remind):
-        """Sets the auto_remind of this CdmCreateClusterReq.
+        r"""Sets the auto_remind of this CdmCreateClusterReq.
 
         选择是否开启消息通知。开启后，支持配置5个手机号码或邮箱，作业（目前仅支持表/文件迁移的作业）失败时、EIP异常时会发送短信或邮件通知用户
 
@@ -103,7 +103,7 @@ class CdmCreateClusterReq:
 
     @property
     def phone_num(self):
-        """Gets the phone_num of this CdmCreateClusterReq.
+        r"""Gets the phone_num of this CdmCreateClusterReq.
 
         接收消息通知的手机号码
 
@@ -114,7 +114,7 @@ class CdmCreateClusterReq:
 
     @phone_num.setter
     def phone_num(self, phone_num):
-        """Sets the phone_num of this CdmCreateClusterReq.
+        r"""Sets the phone_num of this CdmCreateClusterReq.
 
         接收消息通知的手机号码
 
@@ -125,7 +125,7 @@ class CdmCreateClusterReq:
 
     @property
     def email(self):
-        """Gets the email of this CdmCreateClusterReq.
+        r"""Gets the email of this CdmCreateClusterReq.
 
         接收消息通知的邮箱
 
@@ -136,7 +136,7 @@ class CdmCreateClusterReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CdmCreateClusterReq.
+        r"""Sets the email of this CdmCreateClusterReq.
 
         接收消息通知的邮箱
 

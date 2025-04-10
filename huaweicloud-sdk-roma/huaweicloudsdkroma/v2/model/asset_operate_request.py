@@ -27,7 +27,7 @@ class AssetOperateRequest:
     }
 
     def __init__(self, apps=None, tasks=None):
-        """AssetOperateRequest
+        r"""AssetOperateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssetOperateRequest:
 
     @property
     def apps(self):
-        """Gets the apps of this AssetOperateRequest.
+        r"""Gets the apps of this AssetOperateRequest.
 
         应用列表
 
@@ -59,7 +59,7 @@ class AssetOperateRequest:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this AssetOperateRequest.
+        r"""Sets the apps of this AssetOperateRequest.
 
         应用列表
 
@@ -70,7 +70,7 @@ class AssetOperateRequest:
 
     @property
     def tasks(self):
-        """Gets the tasks of this AssetOperateRequest.
+        r"""Gets the tasks of this AssetOperateRequest.
 
         任务列表
 
@@ -81,7 +81,7 @@ class AssetOperateRequest:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this AssetOperateRequest.
+        r"""Sets the tasks of this AssetOperateRequest.
 
         任务列表
 

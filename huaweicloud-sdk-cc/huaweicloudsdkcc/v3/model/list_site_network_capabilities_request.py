@@ -25,7 +25,7 @@ class ListSiteNetworkCapabilitiesRequest:
     }
 
     def __init__(self, specification=None):
-        """ListSiteNetworkCapabilitiesRequest
+        r"""ListSiteNetworkCapabilitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSiteNetworkCapabilitiesRequest:
 
     @property
     def specification(self):
-        """Gets the specification of this ListSiteNetworkCapabilitiesRequest.
+        r"""Gets the specification of this ListSiteNetworkCapabilitiesRequest.
 
         根据分支网络租户能力名查询，可查询多个类型。
 
@@ -54,7 +54,7 @@ class ListSiteNetworkCapabilitiesRequest:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ListSiteNetworkCapabilitiesRequest.
+        r"""Sets the specification of this ListSiteNetworkCapabilitiesRequest.
 
         根据分支网络租户能力名查询，可查询多个类型。
 

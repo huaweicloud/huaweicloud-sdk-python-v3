@@ -34,7 +34,7 @@ class CodeArtsGovernanceAsyncClient(Client):
         return client_builder
 
     def create_sec_app_task_async(self, request):
-        """创建移动应用安全任务并启动
+        r"""创建移动应用安全任务并启动
 
         创建移动应用安全任务并启动
         
@@ -107,7 +107,7 @@ class CodeArtsGovernanceAsyncClient(Client):
         return http_info
 
     def delete_sec_app_task_async(self, request):
-        """删除移动应用安全任务
+        r"""删除移动应用安全任务
 
         删除移动应用安全任务
         
@@ -172,7 +172,7 @@ class CodeArtsGovernanceAsyncClient(Client):
         return http_info
 
     def show_hm_report_async(self, request):
-        """获取鸿蒙生态应用检查结果
+        r"""获取鸿蒙生态应用检查结果
 
         获取鸿蒙生态应用检查结果
         
@@ -237,7 +237,7 @@ class CodeArtsGovernanceAsyncClient(Client):
         return http_info
 
     def show_sec_app_task_result_async(self, request):
-        """获取移动应用安全任务结果
+        r"""获取移动应用安全任务结果
 
         获取移动应用安全任务结果
         
@@ -302,7 +302,7 @@ class CodeArtsGovernanceAsyncClient(Client):
         return http_info
 
     def show_sec_app_task_status_async(self, request):
-        """查询移动应用安全任务状态
+        r"""查询移动应用安全任务状态
 
         查询移动应用安全任务状态
         

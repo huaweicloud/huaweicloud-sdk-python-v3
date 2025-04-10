@@ -33,7 +33,7 @@ class AlertGroup:
     }
 
     def __init__(self, ding_talk_hook_url=None, group_name=None, id=None, we_chat_work_hook_url=None, we_link_group_no=None):
-        """AlertGroup
+        r"""AlertGroup
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AlertGroup:
 
     @property
     def ding_talk_hook_url(self):
-        """Gets the ding_talk_hook_url of this AlertGroup.
+        r"""Gets the ding_talk_hook_url of this AlertGroup.
 
         :return: The ding_talk_hook_url of this AlertGroup.
         :rtype: str
@@ -80,7 +80,7 @@ class AlertGroup:
 
     @ding_talk_hook_url.setter
     def ding_talk_hook_url(self, ding_talk_hook_url):
-        """Sets the ding_talk_hook_url of this AlertGroup.
+        r"""Sets the ding_talk_hook_url of this AlertGroup.
 
         :param ding_talk_hook_url: The ding_talk_hook_url of this AlertGroup.
         :type ding_talk_hook_url: str
@@ -89,7 +89,7 @@ class AlertGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this AlertGroup.
+        r"""Gets the group_name of this AlertGroup.
 
         告警组名称
 
@@ -100,7 +100,7 @@ class AlertGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this AlertGroup.
+        r"""Sets the group_name of this AlertGroup.
 
         告警组名称
 
@@ -111,7 +111,7 @@ class AlertGroup:
 
     @property
     def id(self):
-        """Gets the id of this AlertGroup.
+        r"""Gets the id of this AlertGroup.
 
         告警组ID
 
@@ -122,7 +122,7 @@ class AlertGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlertGroup.
+        r"""Sets the id of this AlertGroup.
 
         告警组ID
 
@@ -133,7 +133,7 @@ class AlertGroup:
 
     @property
     def we_chat_work_hook_url(self):
-        """Gets the we_chat_work_hook_url of this AlertGroup.
+        r"""Gets the we_chat_work_hook_url of this AlertGroup.
 
         :return: The we_chat_work_hook_url of this AlertGroup.
         :rtype: str
@@ -142,7 +142,7 @@ class AlertGroup:
 
     @we_chat_work_hook_url.setter
     def we_chat_work_hook_url(self, we_chat_work_hook_url):
-        """Sets the we_chat_work_hook_url of this AlertGroup.
+        r"""Sets the we_chat_work_hook_url of this AlertGroup.
 
         :param we_chat_work_hook_url: The we_chat_work_hook_url of this AlertGroup.
         :type we_chat_work_hook_url: str
@@ -151,7 +151,7 @@ class AlertGroup:
 
     @property
     def we_link_group_no(self):
-        """Gets the we_link_group_no of this AlertGroup.
+        r"""Gets the we_link_group_no of this AlertGroup.
 
         :return: The we_link_group_no of this AlertGroup.
         :rtype: str
@@ -160,7 +160,7 @@ class AlertGroup:
 
     @we_link_group_no.setter
     def we_link_group_no(self, we_link_group_no):
-        """Sets the we_link_group_no of this AlertGroup.
+        r"""Sets the we_link_group_no of this AlertGroup.
 
         :param we_link_group_no: The we_link_group_no of this AlertGroup.
         :type we_link_group_no: str

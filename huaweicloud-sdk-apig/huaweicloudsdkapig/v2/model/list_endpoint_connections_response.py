@@ -32,7 +32,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, connections=None, x_request_id=None):
-        """ListEndpointConnectionsResponse
+        r"""ListEndpointConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListEndpointConnectionsResponse.
+        r"""Gets the size of this ListEndpointConnectionsResponse.
 
         本次返回的列表长度
 
@@ -74,7 +74,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEndpointConnectionsResponse.
+        r"""Sets the size of this ListEndpointConnectionsResponse.
 
         本次返回的列表长度
 
@@ -85,7 +85,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEndpointConnectionsResponse.
+        r"""Gets the total of this ListEndpointConnectionsResponse.
 
         满足条件的记录数
 
@@ -96,7 +96,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEndpointConnectionsResponse.
+        r"""Sets the total of this ListEndpointConnectionsResponse.
 
         满足条件的记录数
 
@@ -107,7 +107,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this ListEndpointConnectionsResponse.
+        r"""Gets the connections of this ListEndpointConnectionsResponse.
 
         连接列表
 
@@ -118,7 +118,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this ListEndpointConnectionsResponse.
+        r"""Sets the connections of this ListEndpointConnectionsResponse.
 
         连接列表
 
@@ -129,7 +129,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListEndpointConnectionsResponse.
+        r"""Gets the x_request_id of this ListEndpointConnectionsResponse.
 
         :return: The x_request_id of this ListEndpointConnectionsResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class ListEndpointConnectionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListEndpointConnectionsResponse.
+        r"""Sets the x_request_id of this ListEndpointConnectionsResponse.
 
         :param x_request_id: The x_request_id of this ListEndpointConnectionsResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class ShowSlowLogDesensitizationRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowSlowLogDesensitizationRequest
+        r"""ShowSlowLogDesensitizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSlowLogDesensitizationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSlowLogDesensitizationRequest.
+        r"""Gets the instance_id of this ShowSlowLogDesensitizationRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowSlowLogDesensitizationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSlowLogDesensitizationRequest.
+        r"""Sets the instance_id of this ShowSlowLogDesensitizationRequest.
 
         实例ID。
 

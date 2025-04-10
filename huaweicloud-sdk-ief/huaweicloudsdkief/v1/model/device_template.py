@@ -25,7 +25,7 @@ class DeviceTemplate:
     }
 
     def __init__(self, device_template=None):
-        """DeviceTemplate
+        r"""DeviceTemplate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeviceTemplate:
 
     @property
     def device_template(self):
-        """Gets the device_template of this DeviceTemplate.
+        r"""Gets the device_template of this DeviceTemplate.
 
         :return: The device_template of this DeviceTemplate.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDeviceReq`
@@ -51,7 +51,7 @@ class DeviceTemplate:
 
     @device_template.setter
     def device_template(self, device_template):
-        """Sets the device_template of this DeviceTemplate.
+        r"""Sets the device_template of this DeviceTemplate.
 
         :param device_template: The device_template of this DeviceTemplate.
         :type device_template: :class:`huaweicloudsdkief.v1.EdgemgrDeviceReq`

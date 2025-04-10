@@ -31,7 +31,7 @@ class ServiceSetRecords:
     }
 
     def __init__(self, offset=None, limit=None, total=None, records=None):
-        """ServiceSetRecords
+        r"""ServiceSetRecords
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ServiceSetRecords:
 
     @property
     def offset(self):
-        """Gets the offset of this ServiceSetRecords.
+        r"""Gets the offset of this ServiceSetRecords.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -75,7 +75,7 @@ class ServiceSetRecords:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ServiceSetRecords.
+        r"""Sets the offset of this ServiceSetRecords.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -86,7 +86,7 @@ class ServiceSetRecords:
 
     @property
     def limit(self):
-        """Gets the limit of this ServiceSetRecords.
+        r"""Gets the limit of this ServiceSetRecords.
 
         每页显示个数，范围为1-1024
 
@@ -97,7 +97,7 @@ class ServiceSetRecords:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ServiceSetRecords.
+        r"""Sets the limit of this ServiceSetRecords.
 
         每页显示个数，范围为1-1024
 
@@ -108,7 +108,7 @@ class ServiceSetRecords:
 
     @property
     def total(self):
-        """Gets the total of this ServiceSetRecords.
+        r"""Gets the total of this ServiceSetRecords.
 
         查询服务组总数
 
@@ -119,7 +119,7 @@ class ServiceSetRecords:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ServiceSetRecords.
+        r"""Sets the total of this ServiceSetRecords.
 
         查询服务组总数
 
@@ -130,7 +130,7 @@ class ServiceSetRecords:
 
     @property
     def records(self):
-        """Gets the records of this ServiceSetRecords.
+        r"""Gets the records of this ServiceSetRecords.
 
         服务组列表
 
@@ -141,7 +141,7 @@ class ServiceSetRecords:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ServiceSetRecords.
+        r"""Sets the records of this ServiceSetRecords.
 
         服务组列表
 

@@ -27,7 +27,7 @@ class FunctionMetric:
     }
 
     def __init__(self, key=None, value=None):
-        """FunctionMetric
+        r"""FunctionMetric
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FunctionMetric:
 
     @property
     def key(self):
-        """Gets the key of this FunctionMetric.
+        r"""Gets the key of this FunctionMetric.
 
         函数urn
 
@@ -61,7 +61,7 @@ class FunctionMetric:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this FunctionMetric.
+        r"""Sets the key of this FunctionMetric.
 
         函数urn
 
@@ -72,7 +72,7 @@ class FunctionMetric:
 
     @property
     def value(self):
-        """Gets the value of this FunctionMetric.
+        r"""Gets the value of this FunctionMetric.
 
         指标值
 
@@ -83,7 +83,7 @@ class FunctionMetric:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FunctionMetric.
+        r"""Sets the value of this FunctionMetric.
 
         指标值
 

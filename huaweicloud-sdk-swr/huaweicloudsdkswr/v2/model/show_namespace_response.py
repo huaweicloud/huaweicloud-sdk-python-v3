@@ -32,7 +32,7 @@ class ShowNamespaceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, creator_name=None, auth=None):
-        """ShowNamespaceResponse
+        r"""ShowNamespaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNamespaceResponse.
+        r"""Gets the id of this ShowNamespaceResponse.
 
         id
 
@@ -76,7 +76,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNamespaceResponse.
+        r"""Sets the id of this ShowNamespaceResponse.
 
         id
 
@@ -87,7 +87,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNamespaceResponse.
+        r"""Gets the name of this ShowNamespaceResponse.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -98,7 +98,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNamespaceResponse.
+        r"""Sets the name of this ShowNamespaceResponse.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -109,7 +109,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowNamespaceResponse.
+        r"""Gets the creator_name of this ShowNamespaceResponse.
 
         IAM用户名
 
@@ -120,7 +120,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowNamespaceResponse.
+        r"""Sets the creator_name of this ShowNamespaceResponse.
 
         IAM用户名
 
@@ -131,7 +131,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @property
     def auth(self):
-        """Gets the auth of this ShowNamespaceResponse.
+        r"""Gets the auth of this ShowNamespaceResponse.
 
         用户权限。7表示管理权限，3表示编辑权限，1表示读取权限。
 
@@ -142,7 +142,7 @@ class ShowNamespaceResponse(SdkResponse):
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this ShowNamespaceResponse.
+        r"""Sets the auth of this ShowNamespaceResponse.
 
         用户权限。7表示管理权限，3表示编辑权限，1表示读取权限。
 

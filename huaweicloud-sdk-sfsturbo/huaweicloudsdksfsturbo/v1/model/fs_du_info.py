@@ -31,7 +31,7 @@ class FsDuInfo:
     }
 
     def __init__(self, path=None, used_capacity=None, file_count=None, message=None):
-        """FsDuInfo
+        r"""FsDuInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FsDuInfo:
 
     @property
     def path(self):
-        """Gets the path of this FsDuInfo.
+        r"""Gets the path of this FsDuInfo.
 
         文件系统内合法的目录全路径
 
@@ -75,7 +75,7 @@ class FsDuInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this FsDuInfo.
+        r"""Sets the path of this FsDuInfo.
 
         文件系统内合法的目录全路径
 
@@ -86,7 +86,7 @@ class FsDuInfo:
 
     @property
     def used_capacity(self):
-        """Gets the used_capacity of this FsDuInfo.
+        r"""Gets the used_capacity of this FsDuInfo.
 
         占用容量，单位：byte
 
@@ -97,7 +97,7 @@ class FsDuInfo:
 
     @used_capacity.setter
     def used_capacity(self, used_capacity):
-        """Sets the used_capacity of this FsDuInfo.
+        r"""Sets the used_capacity of this FsDuInfo.
 
         占用容量，单位：byte
 
@@ -108,7 +108,7 @@ class FsDuInfo:
 
     @property
     def file_count(self):
-        """Gets the file_count of this FsDuInfo.
+        r"""Gets the file_count of this FsDuInfo.
 
         :return: The file_count of this FsDuInfo.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsFileCount`
@@ -117,7 +117,7 @@ class FsDuInfo:
 
     @file_count.setter
     def file_count(self, file_count):
-        """Sets the file_count of this FsDuInfo.
+        r"""Sets the file_count of this FsDuInfo.
 
         :param file_count: The file_count of this FsDuInfo.
         :type file_count: :class:`huaweicloudsdksfsturbo.v1.FsFileCount`
@@ -126,7 +126,7 @@ class FsDuInfo:
 
     @property
     def message(self):
-        """Gets the message of this FsDuInfo.
+        r"""Gets the message of this FsDuInfo.
 
         错误信息
 
@@ -137,7 +137,7 @@ class FsDuInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this FsDuInfo.
+        r"""Sets the message of this FsDuInfo.
 
         错误信息
 

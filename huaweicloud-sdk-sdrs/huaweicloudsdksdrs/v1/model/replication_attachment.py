@@ -27,7 +27,7 @@ class ReplicationAttachment:
     }
 
     def __init__(self, protected_instance=None, device=None):
-        """ReplicationAttachment
+        r"""ReplicationAttachment
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReplicationAttachment:
 
     @property
     def protected_instance(self):
-        """Gets the protected_instance of this ReplicationAttachment.
+        r"""Gets the protected_instance of this ReplicationAttachment.
 
         该复制对挂载的保护实例ID。
 
@@ -59,7 +59,7 @@ class ReplicationAttachment:
 
     @protected_instance.setter
     def protected_instance(self, protected_instance):
-        """Sets the protected_instance of this ReplicationAttachment.
+        r"""Sets the protected_instance of this ReplicationAttachment.
 
         该复制对挂载的保护实例ID。
 
@@ -70,7 +70,7 @@ class ReplicationAttachment:
 
     @property
     def device(self):
-        """Gets the device of this ReplicationAttachment.
+        r"""Gets the device of this ReplicationAttachment.
 
         挂载点。
 
@@ -81,7 +81,7 @@ class ReplicationAttachment:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this ReplicationAttachment.
+        r"""Sets the device of this ReplicationAttachment.
 
         挂载点。
 

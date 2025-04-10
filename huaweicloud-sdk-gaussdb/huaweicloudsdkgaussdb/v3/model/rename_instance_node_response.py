@@ -26,7 +26,7 @@ class RenameInstanceNodeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RenameInstanceNodeResponse
+        r"""RenameInstanceNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RenameInstanceNodeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RenameInstanceNodeResponse.
+        r"""Gets the job_id of this RenameInstanceNodeResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class RenameInstanceNodeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RenameInstanceNodeResponse.
+        r"""Sets the job_id of this RenameInstanceNodeResponse.
 
         工作流ID。
 

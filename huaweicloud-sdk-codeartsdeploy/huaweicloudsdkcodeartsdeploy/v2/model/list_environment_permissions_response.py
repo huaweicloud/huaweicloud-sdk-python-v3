@@ -26,7 +26,7 @@ class ListEnvironmentPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListEnvironmentPermissionsResponse
+        r"""ListEnvironmentPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEnvironmentPermissionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListEnvironmentPermissionsResponse.
+        r"""Gets the body of this ListEnvironmentPermissionsResponse.
 
         权限数据，list类型数据
 
@@ -55,7 +55,7 @@ class ListEnvironmentPermissionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEnvironmentPermissionsResponse.
+        r"""Sets the body of this ListEnvironmentPermissionsResponse.
 
         权限数据，list类型数据
 

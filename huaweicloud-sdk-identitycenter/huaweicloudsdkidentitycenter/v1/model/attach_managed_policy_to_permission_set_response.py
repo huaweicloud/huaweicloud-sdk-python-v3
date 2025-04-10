@@ -24,7 +24,7 @@ class AttachManagedPolicyToPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AttachManagedPolicyToPermissionSetResponse
+        r"""AttachManagedPolicyToPermissionSetResponse
 
         The model defined in huaweicloud sdk
 

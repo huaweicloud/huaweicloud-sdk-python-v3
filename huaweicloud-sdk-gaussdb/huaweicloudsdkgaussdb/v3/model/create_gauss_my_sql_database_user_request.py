@@ -29,7 +29,7 @@ class CreateGaussMySqlDatabaseUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateGaussMySqlDatabaseUserRequest
+        r"""CreateGaussMySqlDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateGaussMySqlDatabaseUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateGaussMySqlDatabaseUserRequest.
+        r"""Gets the x_language of this CreateGaussMySqlDatabaseUserRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class CreateGaussMySqlDatabaseUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateGaussMySqlDatabaseUserRequest.
+        r"""Sets the x_language of this CreateGaussMySqlDatabaseUserRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class CreateGaussMySqlDatabaseUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateGaussMySqlDatabaseUserRequest.
+        r"""Gets the instance_id of this CreateGaussMySqlDatabaseUserRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateGaussMySqlDatabaseUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateGaussMySqlDatabaseUserRequest.
+        r"""Sets the instance_id of this CreateGaussMySqlDatabaseUserRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateGaussMySqlDatabaseUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGaussMySqlDatabaseUserRequest.
+        r"""Gets the body of this CreateGaussMySqlDatabaseUserRequest.
 
         :return: The body of this CreateGaussMySqlDatabaseUserRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateDatabaseUserRequest`
@@ -109,7 +109,7 @@ class CreateGaussMySqlDatabaseUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGaussMySqlDatabaseUserRequest.
+        r"""Sets the body of this CreateGaussMySqlDatabaseUserRequest.
 
         :param body: The body of this CreateGaussMySqlDatabaseUserRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CreateDatabaseUserRequest`

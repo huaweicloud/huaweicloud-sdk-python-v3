@@ -25,7 +25,7 @@ class ShowClouddcnSubnetsTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowClouddcnSubnetsTagsRequest
+        r"""ShowClouddcnSubnetsTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowClouddcnSubnetsTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowClouddcnSubnetsTagsRequest.
+        r"""Gets the resource_id of this ShowClouddcnSubnetsTagsRequest.
 
         Clouddcn子网的id
 
@@ -53,7 +53,7 @@ class ShowClouddcnSubnetsTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowClouddcnSubnetsTagsRequest.
+        r"""Sets the resource_id of this ShowClouddcnSubnetsTagsRequest.
 
         Clouddcn子网的id
 

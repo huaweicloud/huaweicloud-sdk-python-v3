@@ -27,7 +27,7 @@ class IpStatusDetail:
     }
 
     def __init__(self, block_time=None, unblock_time=None):
-        """IpStatusDetail
+        r"""IpStatusDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpStatusDetail:
 
     @property
     def block_time(self):
-        """Gets the block_time of this IpStatusDetail.
+        r"""Gets the block_time of this IpStatusDetail.
 
         封堵时间
 
@@ -59,7 +59,7 @@ class IpStatusDetail:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this IpStatusDetail.
+        r"""Sets the block_time of this IpStatusDetail.
 
         封堵时间
 
@@ -70,7 +70,7 @@ class IpStatusDetail:
 
     @property
     def unblock_time(self):
-        """Gets the unblock_time of this IpStatusDetail.
+        r"""Gets the unblock_time of this IpStatusDetail.
 
         解封时间
 
@@ -81,7 +81,7 @@ class IpStatusDetail:
 
     @unblock_time.setter
     def unblock_time(self, unblock_time):
-        """Sets the unblock_time of this IpStatusDetail.
+        r"""Sets the unblock_time of this IpStatusDetail.
 
         解封时间
 

@@ -27,7 +27,7 @@ class CaseAutomationDetailsVo:
     }
 
     def __init__(self, case_automation_rate=None, service_type_number_list=None):
-        """CaseAutomationDetailsVo
+        r"""CaseAutomationDetailsVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaseAutomationDetailsVo:
 
     @property
     def case_automation_rate(self):
-        """Gets the case_automation_rate of this CaseAutomationDetailsVo.
+        r"""Gets the case_automation_rate of this CaseAutomationDetailsVo.
 
         用例自动化率
 
@@ -61,7 +61,7 @@ class CaseAutomationDetailsVo:
 
     @case_automation_rate.setter
     def case_automation_rate(self, case_automation_rate):
-        """Sets the case_automation_rate of this CaseAutomationDetailsVo.
+        r"""Sets the case_automation_rate of this CaseAutomationDetailsVo.
 
         用例自动化率
 
@@ -72,7 +72,7 @@ class CaseAutomationDetailsVo:
 
     @property
     def service_type_number_list(self):
-        """Gets the service_type_number_list of this CaseAutomationDetailsVo.
+        r"""Gets the service_type_number_list of this CaseAutomationDetailsVo.
 
         服务类型对应的用例数目
 
@@ -83,7 +83,7 @@ class CaseAutomationDetailsVo:
 
     @service_type_number_list.setter
     def service_type_number_list(self, service_type_number_list):
-        """Sets the service_type_number_list of this CaseAutomationDetailsVo.
+        r"""Sets the service_type_number_list of this CaseAutomationDetailsVo.
 
         服务类型对应的用例数目
 

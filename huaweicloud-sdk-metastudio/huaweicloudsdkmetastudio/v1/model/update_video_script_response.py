@@ -30,7 +30,7 @@ class UpdateVideoScriptResponse(SdkResponse):
     }
 
     def __init__(self, script_id=None, audio_files=None, x_request_id=None):
-        """UpdateVideoScriptResponse
+        r"""UpdateVideoScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateVideoScriptResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this UpdateVideoScriptResponse.
+        r"""Gets the script_id of this UpdateVideoScriptResponse.
 
         剧本ID
 
@@ -69,7 +69,7 @@ class UpdateVideoScriptResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this UpdateVideoScriptResponse.
+        r"""Sets the script_id of this UpdateVideoScriptResponse.
 
         剧本ID
 
@@ -80,7 +80,7 @@ class UpdateVideoScriptResponse(SdkResponse):
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this UpdateVideoScriptResponse.
+        r"""Gets the audio_files of this UpdateVideoScriptResponse.
 
         :return: The audio_files of this UpdateVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -89,7 +89,7 @@ class UpdateVideoScriptResponse(SdkResponse):
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this UpdateVideoScriptResponse.
+        r"""Sets the audio_files of this UpdateVideoScriptResponse.
 
         :param audio_files: The audio_files of this UpdateVideoScriptResponse.
         :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -98,7 +98,7 @@ class UpdateVideoScriptResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateVideoScriptResponse.
+        r"""Gets the x_request_id of this UpdateVideoScriptResponse.
 
         :return: The x_request_id of this UpdateVideoScriptResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateVideoScriptResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateVideoScriptResponse.
+        r"""Sets the x_request_id of this UpdateVideoScriptResponse.
 
         :param x_request_id: The x_request_id of this UpdateVideoScriptResponse.
         :type x_request_id: str

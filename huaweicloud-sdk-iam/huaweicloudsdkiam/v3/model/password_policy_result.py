@@ -41,7 +41,7 @@ class PasswordPolicyResult:
     }
 
     def __init__(self, maximum_consecutive_identical_chars=None, maximum_password_length=None, minimum_password_age=None, minimum_password_length=None, number_of_recent_passwords_disallowed=None, password_not_username_or_invert=None, password_requirements=None, password_validity_period=None, password_char_combination=None):
-        """PasswordPolicyResult
+        r"""PasswordPolicyResult
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class PasswordPolicyResult:
 
     @property
     def maximum_consecutive_identical_chars(self):
-        """Gets the maximum_consecutive_identical_chars of this PasswordPolicyResult.
+        r"""Gets the maximum_consecutive_identical_chars of this PasswordPolicyResult.
 
         同一字符连续出现的最大次数。
 
@@ -101,7 +101,7 @@ class PasswordPolicyResult:
 
     @maximum_consecutive_identical_chars.setter
     def maximum_consecutive_identical_chars(self, maximum_consecutive_identical_chars):
-        """Sets the maximum_consecutive_identical_chars of this PasswordPolicyResult.
+        r"""Sets the maximum_consecutive_identical_chars of this PasswordPolicyResult.
 
         同一字符连续出现的最大次数。
 
@@ -112,7 +112,7 @@ class PasswordPolicyResult:
 
     @property
     def maximum_password_length(self):
-        """Gets the maximum_password_length of this PasswordPolicyResult.
+        r"""Gets the maximum_password_length of this PasswordPolicyResult.
 
         密码最大字符数。
 
@@ -123,7 +123,7 @@ class PasswordPolicyResult:
 
     @maximum_password_length.setter
     def maximum_password_length(self, maximum_password_length):
-        """Sets the maximum_password_length of this PasswordPolicyResult.
+        r"""Sets the maximum_password_length of this PasswordPolicyResult.
 
         密码最大字符数。
 
@@ -134,7 +134,7 @@ class PasswordPolicyResult:
 
     @property
     def minimum_password_age(self):
-        """Gets the minimum_password_age of this PasswordPolicyResult.
+        r"""Gets the minimum_password_age of this PasswordPolicyResult.
 
         密码最短使用时间（分钟）。
 
@@ -145,7 +145,7 @@ class PasswordPolicyResult:
 
     @minimum_password_age.setter
     def minimum_password_age(self, minimum_password_age):
-        """Sets the minimum_password_age of this PasswordPolicyResult.
+        r"""Sets the minimum_password_age of this PasswordPolicyResult.
 
         密码最短使用时间（分钟）。
 
@@ -156,7 +156,7 @@ class PasswordPolicyResult:
 
     @property
     def minimum_password_length(self):
-        """Gets the minimum_password_length of this PasswordPolicyResult.
+        r"""Gets the minimum_password_length of this PasswordPolicyResult.
 
         密码最小字符数。
 
@@ -167,7 +167,7 @@ class PasswordPolicyResult:
 
     @minimum_password_length.setter
     def minimum_password_length(self, minimum_password_length):
-        """Sets the minimum_password_length of this PasswordPolicyResult.
+        r"""Sets the minimum_password_length of this PasswordPolicyResult.
 
         密码最小字符数。
 
@@ -178,7 +178,7 @@ class PasswordPolicyResult:
 
     @property
     def number_of_recent_passwords_disallowed(self):
-        """Gets the number_of_recent_passwords_disallowed of this PasswordPolicyResult.
+        r"""Gets the number_of_recent_passwords_disallowed of this PasswordPolicyResult.
 
         密码不能与历史密码重复次数。
 
@@ -189,7 +189,7 @@ class PasswordPolicyResult:
 
     @number_of_recent_passwords_disallowed.setter
     def number_of_recent_passwords_disallowed(self, number_of_recent_passwords_disallowed):
-        """Sets the number_of_recent_passwords_disallowed of this PasswordPolicyResult.
+        r"""Sets the number_of_recent_passwords_disallowed of this PasswordPolicyResult.
 
         密码不能与历史密码重复次数。
 
@@ -200,7 +200,7 @@ class PasswordPolicyResult:
 
     @property
     def password_not_username_or_invert(self):
-        """Gets the password_not_username_or_invert of this PasswordPolicyResult.
+        r"""Gets the password_not_username_or_invert of this PasswordPolicyResult.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -211,7 +211,7 @@ class PasswordPolicyResult:
 
     @password_not_username_or_invert.setter
     def password_not_username_or_invert(self, password_not_username_or_invert):
-        """Sets the password_not_username_or_invert of this PasswordPolicyResult.
+        r"""Sets the password_not_username_or_invert of this PasswordPolicyResult.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -222,7 +222,7 @@ class PasswordPolicyResult:
 
     @property
     def password_requirements(self):
-        """Gets the password_requirements of this PasswordPolicyResult.
+        r"""Gets the password_requirements of this PasswordPolicyResult.
 
         设置密码必须包含的字符要求。
 
@@ -233,7 +233,7 @@ class PasswordPolicyResult:
 
     @password_requirements.setter
     def password_requirements(self, password_requirements):
-        """Sets the password_requirements of this PasswordPolicyResult.
+        r"""Sets the password_requirements of this PasswordPolicyResult.
 
         设置密码必须包含的字符要求。
 
@@ -244,7 +244,7 @@ class PasswordPolicyResult:
 
     @property
     def password_validity_period(self):
-        """Gets the password_validity_period of this PasswordPolicyResult.
+        r"""Gets the password_validity_period of this PasswordPolicyResult.
 
         密码有效期（天）。
 
@@ -255,7 +255,7 @@ class PasswordPolicyResult:
 
     @password_validity_period.setter
     def password_validity_period(self, password_validity_period):
-        """Sets the password_validity_period of this PasswordPolicyResult.
+        r"""Sets the password_validity_period of this PasswordPolicyResult.
 
         密码有效期（天）。
 
@@ -266,7 +266,7 @@ class PasswordPolicyResult:
 
     @property
     def password_char_combination(self):
-        """Gets the password_char_combination of this PasswordPolicyResult.
+        r"""Gets the password_char_combination of this PasswordPolicyResult.
 
         至少包含字符种类的个数，取值区间[2,4]。
 
@@ -277,7 +277,7 @@ class PasswordPolicyResult:
 
     @password_char_combination.setter
     def password_char_combination(self, password_char_combination):
-        """Sets the password_char_combination of this PasswordPolicyResult.
+        r"""Sets the password_char_combination of this PasswordPolicyResult.
 
         至少包含字符种类的个数，取值区间[2,4]。
 

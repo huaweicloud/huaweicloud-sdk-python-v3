@@ -29,7 +29,7 @@ class BatchCreateInstanceIpRuleRequest:
     }
 
     def __init__(self, instance_id=None, ip=None, body=None):
-        """BatchCreateInstanceIpRuleRequest
+        r"""BatchCreateInstanceIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCreateInstanceIpRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCreateInstanceIpRuleRequest.
+        r"""Gets the instance_id of this BatchCreateInstanceIpRuleRequest.
 
         实例Id
 
@@ -66,7 +66,7 @@ class BatchCreateInstanceIpRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateInstanceIpRuleRequest.
+        r"""Sets the instance_id of this BatchCreateInstanceIpRuleRequest.
 
         实例Id
 
@@ -77,7 +77,7 @@ class BatchCreateInstanceIpRuleRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this BatchCreateInstanceIpRuleRequest.
+        r"""Gets the ip of this BatchCreateInstanceIpRuleRequest.
 
         单个 IP
 
@@ -88,7 +88,7 @@ class BatchCreateInstanceIpRuleRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BatchCreateInstanceIpRuleRequest.
+        r"""Sets the ip of this BatchCreateInstanceIpRuleRequest.
 
         单个 IP
 
@@ -99,7 +99,7 @@ class BatchCreateInstanceIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateInstanceIpRuleRequest.
+        r"""Gets the body of this BatchCreateInstanceIpRuleRequest.
 
         :return: The body of this BatchCreateInstanceIpRuleRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.BatchTransferRuleBody`
@@ -108,7 +108,7 @@ class BatchCreateInstanceIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateInstanceIpRuleRequest.
+        r"""Sets the body of this BatchCreateInstanceIpRuleRequest.
 
         :param body: The body of this BatchCreateInstanceIpRuleRequest.
         :type body: :class:`huaweicloudsdkaad.v1.BatchTransferRuleBody`

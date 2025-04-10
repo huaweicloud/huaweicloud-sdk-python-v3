@@ -63,7 +63,7 @@ class CreateAsyncTtsJobRequestBody:
     }
 
     def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None, slice_segments=None, channels=None, output_external_url=None, srt_output_external_url=None, action_output_external_url=None, is_vocabulary_config_enable=None):
-        """CreateAsyncTtsJobRequestBody
+        r"""CreateAsyncTtsJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -174,7 +174,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def text(self):
-        """Gets the text of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the text of this CreateAsyncTtsJobRequestBody.
 
         待合成文本
 
@@ -185,7 +185,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the text of this CreateAsyncTtsJobRequestBody.
 
         待合成文本
 
@@ -196,7 +196,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def tts_text(self):
-        """Gets the tts_text of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the tts_text of this CreateAsyncTtsJobRequestBody.
 
         发送给tts的待合成文本
 
@@ -207,7 +207,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @tts_text.setter
     def tts_text(self, tts_text):
-        """Sets the tts_text of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the tts_text of this CreateAsyncTtsJobRequestBody.
 
         发送给tts的待合成文本
 
@@ -218,7 +218,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
 
         音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
@@ -229,7 +229,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
 
         音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
@@ -240,7 +240,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def speed(self):
-        """Gets the speed of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the speed of this CreateAsyncTtsJobRequestBody.
 
         语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
@@ -251,7 +251,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the speed of this CreateAsyncTtsJobRequestBody.
 
         语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
@@ -262,7 +262,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def pitch(self):
-        """Gets the pitch of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the pitch of this CreateAsyncTtsJobRequestBody.
 
         音高。
 
@@ -273,7 +273,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the pitch of this CreateAsyncTtsJobRequestBody.
 
         音高。
 
@@ -284,7 +284,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the volume of this CreateAsyncTtsJobRequestBody.
 
         音量。
 
@@ -295,7 +295,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the volume of this CreateAsyncTtsJobRequestBody.
 
         音量。
 
@@ -306,7 +306,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def audio_format(self):
-        """Gets the audio_format of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the audio_format of this CreateAsyncTtsJobRequestBody.
 
         输出音频文件格式。默认WAV。 * WAV：wav格式。 * MP3：mp3格式。
 
@@ -317,7 +317,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @audio_format.setter
     def audio_format(self, audio_format):
-        """Sets the audio_format of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the audio_format of this CreateAsyncTtsJobRequestBody.
 
         输出音频文件格式。默认WAV。 * WAV：wav格式。 * MP3：mp3格式。
 
@@ -328,7 +328,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def need_timestamp(self):
-        """Gets the need_timestamp of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the need_timestamp of this CreateAsyncTtsJobRequestBody.
 
         是否需要时间戳。false为不需要，true为需要返回时间戳信息。默认值为false。
 
@@ -339,7 +339,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @need_timestamp.setter
     def need_timestamp(self, need_timestamp):
-        """Sets the need_timestamp of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the need_timestamp of this CreateAsyncTtsJobRequestBody.
 
         是否需要时间戳。false为不需要，true为需要返回时间戳信息。默认值为false。
 
@@ -350,7 +350,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def silence_flag(self):
-        """Gets the silence_flag of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the silence_flag of this CreateAsyncTtsJobRequestBody.
 
         异常时是否返回静默音频流
 
@@ -361,7 +361,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @silence_flag.setter
     def silence_flag(self, silence_flag):
-        """Sets the silence_flag of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the silence_flag of this CreateAsyncTtsJobRequestBody.
 
         异常时是否返回静默音频流
 
@@ -372,7 +372,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def silence_time_ms(self):
-        """Gets the silence_time_ms of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the silence_time_ms of this CreateAsyncTtsJobRequestBody.
 
         异常时返回的静默音频流时长，单位毫秒。
 
@@ -383,7 +383,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @silence_time_ms.setter
     def silence_time_ms(self, silence_time_ms):
-        """Sets the silence_time_ms of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the silence_time_ms of this CreateAsyncTtsJobRequestBody.
 
         异常时返回的静默音频流时长，单位毫秒。
 
@@ -394,7 +394,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the callback_config of this CreateAsyncTtsJobRequestBody.
 
         :return: The callback_config of this CreateAsyncTtsJobRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TtsCallBackConfig`
@@ -403,7 +403,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the callback_config of this CreateAsyncTtsJobRequestBody.
 
         :param callback_config: The callback_config of this CreateAsyncTtsJobRequestBody.
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.TtsCallBackConfig`
@@ -412,7 +412,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def gen_srt(self):
-        """Gets the gen_srt of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the gen_srt of this CreateAsyncTtsJobRequestBody.
 
         是否开启字幕
 
@@ -423,7 +423,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @gen_srt.setter
     def gen_srt(self, gen_srt):
-        """Sets the gen_srt of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the gen_srt of this CreateAsyncTtsJobRequestBody.
 
         是否开启字幕
 
@@ -434,7 +434,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def srt_len(self):
-        """Gets the srt_len of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the srt_len of this CreateAsyncTtsJobRequestBody.
 
         字幕最大长度限制
 
@@ -445,7 +445,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @srt_len.setter
     def srt_len(self, srt_len):
-        """Sets the srt_len of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the srt_len of this CreateAsyncTtsJobRequestBody.
 
         字幕最大长度限制
 
@@ -456,7 +456,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def srt_line_limit(self):
-        """Gets the srt_line_limit of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the srt_line_limit of this CreateAsyncTtsJobRequestBody.
 
         字幕行数限制，默认为1
 
@@ -467,7 +467,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @srt_line_limit.setter
     def srt_line_limit(self, srt_line_limit):
-        """Sets the srt_line_limit of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the srt_line_limit of this CreateAsyncTtsJobRequestBody.
 
         字幕行数限制，默认为1
 
@@ -478,7 +478,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def slice_segments(self):
-        """Gets the slice_segments of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the slice_segments of this CreateAsyncTtsJobRequestBody.
 
         是否对文本进行分段
 
@@ -489,7 +489,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @slice_segments.setter
     def slice_segments(self, slice_segments):
-        """Sets the slice_segments of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the slice_segments of this CreateAsyncTtsJobRequestBody.
 
         是否对文本进行分段
 
@@ -500,7 +500,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def channels(self):
-        """Gets the channels of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the channels of this CreateAsyncTtsJobRequestBody.
 
         声道。（单声道|双声道） 默认值1，最小值1，最大值2。
 
@@ -511,7 +511,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the channels of this CreateAsyncTtsJobRequestBody.
 
         声道。（单声道|双声道） 默认值1，最小值1，最大值2。
 
@@ -522,7 +522,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def output_external_url(self):
-        """Gets the output_external_url of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the output_external_url of this CreateAsyncTtsJobRequestBody.
 
         音频文件上传的外部URL > * 需要先申请开通白名单， 才允许将音频等文件上传到外部URL。
 
@@ -533,7 +533,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @output_external_url.setter
     def output_external_url(self, output_external_url):
-        """Sets the output_external_url of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the output_external_url of this CreateAsyncTtsJobRequestBody.
 
         音频文件上传的外部URL > * 需要先申请开通白名单， 才允许将音频等文件上传到外部URL。
 
@@ -544,7 +544,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def srt_output_external_url(self):
-        """Gets the srt_output_external_url of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the srt_output_external_url of this CreateAsyncTtsJobRequestBody.
 
         字幕文件上传的外部URL > * 需要先申请开通白名单， 才允许将字幕等文件上传到外部URL。
 
@@ -555,7 +555,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @srt_output_external_url.setter
     def srt_output_external_url(self, srt_output_external_url):
-        """Sets the srt_output_external_url of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the srt_output_external_url of this CreateAsyncTtsJobRequestBody.
 
         字幕文件上传的外部URL > * 需要先申请开通白名单， 才允许将字幕等文件上传到外部URL。
 
@@ -566,7 +566,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def action_output_external_url(self):
-        """Gets the action_output_external_url of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the action_output_external_url of this CreateAsyncTtsJobRequestBody.
 
         动作信息文件上传的外部URL > * 需要先申请开通白名单， 才允许将时间戳等文件上传到外部URL。
 
@@ -577,7 +577,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @action_output_external_url.setter
     def action_output_external_url(self, action_output_external_url):
-        """Sets the action_output_external_url of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the action_output_external_url of this CreateAsyncTtsJobRequestBody.
 
         动作信息文件上传的外部URL > * 需要先申请开通白名单， 才允许将时间戳等文件上传到外部URL。
 
@@ -588,7 +588,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @property
     def is_vocabulary_config_enable(self):
-        """Gets the is_vocabulary_config_enable of this CreateAsyncTtsJobRequestBody.
+        r"""Gets the is_vocabulary_config_enable of this CreateAsyncTtsJobRequestBody.
 
         是否应用当前租户的读法配置
 
@@ -599,7 +599,7 @@ class CreateAsyncTtsJobRequestBody:
 
     @is_vocabulary_config_enable.setter
     def is_vocabulary_config_enable(self, is_vocabulary_config_enable):
-        """Sets the is_vocabulary_config_enable of this CreateAsyncTtsJobRequestBody.
+        r"""Sets the is_vocabulary_config_enable of this CreateAsyncTtsJobRequestBody.
 
         是否应用当前租户的读法配置
 

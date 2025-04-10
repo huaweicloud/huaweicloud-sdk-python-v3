@@ -28,7 +28,7 @@ class ConnectionPointTypeEnum:
     }
 
     def __init__(self):
-        """ConnectionPointTypeEnum
+        r"""ConnectionPointTypeEnum
 
         The model defined in huaweicloud sdk
 

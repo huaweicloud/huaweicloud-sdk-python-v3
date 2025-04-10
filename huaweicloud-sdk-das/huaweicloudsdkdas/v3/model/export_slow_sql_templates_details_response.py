@@ -28,7 +28,7 @@ class ExportSlowSqlTemplatesDetailsResponse(SdkResponse):
     }
 
     def __init__(self, slow_sql_templates=None, total_count=None):
-        """ExportSlowSqlTemplatesDetailsResponse
+        r"""ExportSlowSqlTemplatesDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportSlowSqlTemplatesDetailsResponse(SdkResponse):
 
     @property
     def slow_sql_templates(self):
-        """Gets the slow_sql_templates of this ExportSlowSqlTemplatesDetailsResponse.
+        r"""Gets the slow_sql_templates of this ExportSlowSqlTemplatesDetailsResponse.
 
         慢日志模板数据列表。
 
@@ -62,7 +62,7 @@ class ExportSlowSqlTemplatesDetailsResponse(SdkResponse):
 
     @slow_sql_templates.setter
     def slow_sql_templates(self, slow_sql_templates):
-        """Sets the slow_sql_templates of this ExportSlowSqlTemplatesDetailsResponse.
+        r"""Sets the slow_sql_templates of this ExportSlowSqlTemplatesDetailsResponse.
 
         慢日志模板数据列表。
 
@@ -73,7 +73,7 @@ class ExportSlowSqlTemplatesDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ExportSlowSqlTemplatesDetailsResponse.
+        r"""Gets the total_count of this ExportSlowSqlTemplatesDetailsResponse.
 
         慢日志模板总数。
 
@@ -84,7 +84,7 @@ class ExportSlowSqlTemplatesDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ExportSlowSqlTemplatesDetailsResponse.
+        r"""Sets the total_count of this ExportSlowSqlTemplatesDetailsResponse.
 
         慢日志模板总数。
 

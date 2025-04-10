@@ -29,7 +29,7 @@ class DeleteDesktopSubResourcesReq:
     }
 
     def __init__(self, desktop_ids=None, sub_resource_type=None, order_id=None):
-        """DeleteDesktopSubResourcesReq
+        r"""DeleteDesktopSubResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteDesktopSubResourcesReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this DeleteDesktopSubResourcesReq.
+        r"""Gets the desktop_ids of this DeleteDesktopSubResourcesReq.
 
         桌面ID列表
 
@@ -66,7 +66,7 @@ class DeleteDesktopSubResourcesReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this DeleteDesktopSubResourcesReq.
+        r"""Sets the desktop_ids of this DeleteDesktopSubResourcesReq.
 
         桌面ID列表
 
@@ -77,7 +77,7 @@ class DeleteDesktopSubResourcesReq:
 
     @property
     def sub_resource_type(self):
-        """Gets the sub_resource_type of this DeleteDesktopSubResourcesReq.
+        r"""Gets the sub_resource_type of this DeleteDesktopSubResourcesReq.
 
         待删除附属资源类型。DESKTOP_SHARER：桌面协同资源
 
@@ -88,7 +88,7 @@ class DeleteDesktopSubResourcesReq:
 
     @sub_resource_type.setter
     def sub_resource_type(self, sub_resource_type):
-        """Sets the sub_resource_type of this DeleteDesktopSubResourcesReq.
+        r"""Sets the sub_resource_type of this DeleteDesktopSubResourcesReq.
 
         待删除附属资源类型。DESKTOP_SHARER：桌面协同资源
 
@@ -99,7 +99,7 @@ class DeleteDesktopSubResourcesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this DeleteDesktopSubResourcesReq.
+        r"""Gets the order_id of this DeleteDesktopSubResourcesReq.
 
         订单ID
 
@@ -110,7 +110,7 @@ class DeleteDesktopSubResourcesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this DeleteDesktopSubResourcesReq.
+        r"""Sets the order_id of this DeleteDesktopSubResourcesReq.
 
         订单ID
 

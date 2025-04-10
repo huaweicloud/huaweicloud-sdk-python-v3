@@ -25,7 +25,7 @@ class UpdateTrackerReq:
     }
 
     def __init__(self, data_event=None):
-        """UpdateTrackerReq
+        r"""UpdateTrackerReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTrackerReq:
 
     @property
     def data_event(self):
-        """Gets the data_event of this UpdateTrackerReq.
+        r"""Gets the data_event of this UpdateTrackerReq.
 
         审计数据类型列表
 
@@ -53,7 +53,7 @@ class UpdateTrackerReq:
 
     @data_event.setter
     def data_event(self, data_event):
-        """Sets the data_event of this UpdateTrackerReq.
+        r"""Sets the data_event of this UpdateTrackerReq.
 
         审计数据类型列表
 

@@ -25,7 +25,7 @@ class StartVpecpReq:
     }
 
     def __init__(self, endpoint_with_dns_name=None):
-        """StartVpecpReq
+        r"""StartVpecpReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartVpecpReq:
 
     @property
     def endpoint_with_dns_name(self):
-        """Gets the endpoint_with_dns_name of this StartVpecpReq.
+        r"""Gets the endpoint_with_dns_name of this StartVpecpReq.
 
         是否开启内网域名。 - true：开启。 - false：不开启。
 
@@ -54,7 +54,7 @@ class StartVpecpReq:
 
     @endpoint_with_dns_name.setter
     def endpoint_with_dns_name(self, endpoint_with_dns_name):
-        """Sets the endpoint_with_dns_name of this StartVpecpReq.
+        r"""Sets the endpoint_with_dns_name of this StartVpecpReq.
 
         是否开启内网域名。 - true：开启。 - false：不开启。
 

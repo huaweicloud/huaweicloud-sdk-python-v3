@@ -29,7 +29,7 @@ class QueryDeviceInfoResultDTO:
     }
 
     def __init__(self, model=None, device_size=None, purchase_channel=None):
-        """QueryDeviceInfoResultDTO
+        r"""QueryDeviceInfoResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryDeviceInfoResultDTO:
 
     @property
     def model(self):
-        """Gets the model of this QueryDeviceInfoResultDTO.
+        r"""Gets the model of this QueryDeviceInfoResultDTO.
 
         终端型号。
 
@@ -68,7 +68,7 @@ class QueryDeviceInfoResultDTO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this QueryDeviceInfoResultDTO.
+        r"""Sets the model of this QueryDeviceInfoResultDTO.
 
         终端型号。
 
@@ -79,7 +79,7 @@ class QueryDeviceInfoResultDTO:
 
     @property
     def device_size(self):
-        """Gets the device_size of this QueryDeviceInfoResultDTO.
+        r"""Gets the device_size of this QueryDeviceInfoResultDTO.
 
         设备终端产品尺寸。
 
@@ -90,7 +90,7 @@ class QueryDeviceInfoResultDTO:
 
     @device_size.setter
     def device_size(self, device_size):
-        """Sets the device_size of this QueryDeviceInfoResultDTO.
+        r"""Sets the device_size of this QueryDeviceInfoResultDTO.
 
         设备终端产品尺寸。
 
@@ -101,7 +101,7 @@ class QueryDeviceInfoResultDTO:
 
     @property
     def purchase_channel(self):
-        """Gets the purchase_channel of this QueryDeviceInfoResultDTO.
+        r"""Gets the purchase_channel of this QueryDeviceInfoResultDTO.
 
         终端设备购买渠道。
 
@@ -112,7 +112,7 @@ class QueryDeviceInfoResultDTO:
 
     @purchase_channel.setter
     def purchase_channel(self, purchase_channel):
-        """Sets the purchase_channel of this QueryDeviceInfoResultDTO.
+        r"""Sets the purchase_channel of this QueryDeviceInfoResultDTO.
 
         终端设备购买渠道。
 

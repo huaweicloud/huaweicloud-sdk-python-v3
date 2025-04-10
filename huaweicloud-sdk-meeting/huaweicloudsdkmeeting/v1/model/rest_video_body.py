@@ -25,7 +25,7 @@ class RestVideoBody:
     }
 
     def __init__(self, status=None):
-        """RestVideoBody
+        r"""RestVideoBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestVideoBody:
 
     @property
     def status(self):
-        """Gets the status of this RestVideoBody.
+        r"""Gets the status of this RestVideoBody.
 
         主持人邀请与会者开启/关闭摄像头请求。 * 1：关闭视频 * 0：开启视频 
 
@@ -53,7 +53,7 @@ class RestVideoBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RestVideoBody.
+        r"""Sets the status of this RestVideoBody.
 
         主持人邀请与会者开启/关闭摄像头请求。 * 1：关闭视频 * 0：开启视频 
 

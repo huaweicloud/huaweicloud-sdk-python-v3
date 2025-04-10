@@ -29,7 +29,7 @@ class SubscriptionUpdateReq:
     }
 
     def __init__(self, description=None, sources=None, targets=None):
-        """SubscriptionUpdateReq
+        r"""SubscriptionUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SubscriptionUpdateReq:
 
     @property
     def description(self):
-        """Gets the description of this SubscriptionUpdateReq.
+        r"""Gets the description of this SubscriptionUpdateReq.
 
         订阅描述
 
@@ -68,7 +68,7 @@ class SubscriptionUpdateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubscriptionUpdateReq.
+        r"""Sets the description of this SubscriptionUpdateReq.
 
         订阅描述
 
@@ -79,7 +79,7 @@ class SubscriptionUpdateReq:
 
     @property
     def sources(self):
-        """Gets the sources of this SubscriptionUpdateReq.
+        r"""Gets the sources of this SubscriptionUpdateReq.
 
         订阅事件源列表，字段存在则代表全量更新订阅源
 
@@ -90,7 +90,7 @@ class SubscriptionUpdateReq:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this SubscriptionUpdateReq.
+        r"""Sets the sources of this SubscriptionUpdateReq.
 
         订阅事件源列表，字段存在则代表全量更新订阅源
 
@@ -101,7 +101,7 @@ class SubscriptionUpdateReq:
 
     @property
     def targets(self):
-        """Gets the targets of this SubscriptionUpdateReq.
+        r"""Gets the targets of this SubscriptionUpdateReq.
 
         订阅事件目标列表，字段存在则代表全量更新订阅目标
 
@@ -112,7 +112,7 @@ class SubscriptionUpdateReq:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this SubscriptionUpdateReq.
+        r"""Sets the targets of this SubscriptionUpdateReq.
 
         订阅事件目标列表，字段存在则代表全量更新订阅目标
 

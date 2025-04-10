@@ -27,7 +27,7 @@ class CheckSqlRequestBody:
     }
 
     def __init__(self, sql=None, currentdb=None):
-        """CheckSqlRequestBody
+        r"""CheckSqlRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CheckSqlRequestBody:
 
     @property
     def sql(self):
-        """Gets the sql of this CheckSqlRequestBody.
+        r"""Gets the sql of this CheckSqlRequestBody.
 
         待执行的SQL语句。
 
@@ -60,7 +60,7 @@ class CheckSqlRequestBody:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this CheckSqlRequestBody.
+        r"""Sets the sql of this CheckSqlRequestBody.
 
         待执行的SQL语句。
 
@@ -71,7 +71,7 @@ class CheckSqlRequestBody:
 
     @property
     def currentdb(self):
-        """Gets the currentdb of this CheckSqlRequestBody.
+        r"""Gets the currentdb of this CheckSqlRequestBody.
 
         SQL语句执行所在的数据库。
 
@@ -82,7 +82,7 @@ class CheckSqlRequestBody:
 
     @currentdb.setter
     def currentdb(self, currentdb):
-        """Sets the currentdb of this CheckSqlRequestBody.
+        r"""Sets the currentdb of this CheckSqlRequestBody.
 
         SQL语句执行所在的数据库。
 

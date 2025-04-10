@@ -28,7 +28,7 @@ class ListDeviceProxiesResponse(SdkResponse):
     }
 
     def __init__(self, device_proxies=None, page=None):
-        """ListDeviceProxiesResponse
+        r"""ListDeviceProxiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeviceProxiesResponse(SdkResponse):
 
     @property
     def device_proxies(self):
-        """Gets the device_proxies of this ListDeviceProxiesResponse.
+        r"""Gets the device_proxies of this ListDeviceProxiesResponse.
 
         代理设备列表
 
@@ -62,7 +62,7 @@ class ListDeviceProxiesResponse(SdkResponse):
 
     @device_proxies.setter
     def device_proxies(self, device_proxies):
-        """Sets the device_proxies of this ListDeviceProxiesResponse.
+        r"""Sets the device_proxies of this ListDeviceProxiesResponse.
 
         代理设备列表
 
@@ -73,7 +73,7 @@ class ListDeviceProxiesResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListDeviceProxiesResponse.
+        r"""Gets the page of this ListDeviceProxiesResponse.
 
         :return: The page of this ListDeviceProxiesResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListDeviceProxiesResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListDeviceProxiesResponse.
+        r"""Sets the page of this ListDeviceProxiesResponse.
 
         :param page: The page of this ListDeviceProxiesResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

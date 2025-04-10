@@ -31,7 +31,7 @@ class ContentCompareResultDiffs:
     }
 
     def __init__(self, source_db_name=None, source_table_name=None, content_compare_diff=None, content_compare_diff_count=None):
-        """ContentCompareResultDiffs
+        r"""ContentCompareResultDiffs
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ContentCompareResultDiffs:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this ContentCompareResultDiffs.
+        r"""Gets the source_db_name of this ContentCompareResultDiffs.
 
         源库名称。
 
@@ -71,7 +71,7 @@ class ContentCompareResultDiffs:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this ContentCompareResultDiffs.
+        r"""Sets the source_db_name of this ContentCompareResultDiffs.
 
         源库名称。
 
@@ -82,7 +82,7 @@ class ContentCompareResultDiffs:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this ContentCompareResultDiffs.
+        r"""Gets the source_table_name of this ContentCompareResultDiffs.
 
         源库的表名称。
 
@@ -93,7 +93,7 @@ class ContentCompareResultDiffs:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this ContentCompareResultDiffs.
+        r"""Sets the source_table_name of this ContentCompareResultDiffs.
 
         源库的表名称。
 
@@ -104,7 +104,7 @@ class ContentCompareResultDiffs:
 
     @property
     def content_compare_diff(self):
-        """Gets the content_compare_diff of this ContentCompareResultDiffs.
+        r"""Gets the content_compare_diff of this ContentCompareResultDiffs.
 
         内容对比结果差异。
 
@@ -115,7 +115,7 @@ class ContentCompareResultDiffs:
 
     @content_compare_diff.setter
     def content_compare_diff(self, content_compare_diff):
-        """Sets the content_compare_diff of this ContentCompareResultDiffs.
+        r"""Sets the content_compare_diff of this ContentCompareResultDiffs.
 
         内容对比结果差异。
 
@@ -126,7 +126,7 @@ class ContentCompareResultDiffs:
 
     @property
     def content_compare_diff_count(self):
-        """Gets the content_compare_diff_count of this ContentCompareResultDiffs.
+        r"""Gets the content_compare_diff_count of this ContentCompareResultDiffs.
 
         内容对比结果差异总数。
 
@@ -137,7 +137,7 @@ class ContentCompareResultDiffs:
 
     @content_compare_diff_count.setter
     def content_compare_diff_count(self, content_compare_diff_count):
-        """Sets the content_compare_diff_count of this ContentCompareResultDiffs.
+        r"""Sets the content_compare_diff_count of this ContentCompareResultDiffs.
 
         内容对比结果差异总数。
 

@@ -28,7 +28,7 @@ class ExportTopSqlTemplatesDetailsResponse(SdkResponse):
     }
 
     def __init__(self, top_sql_templates=None, total_count=None):
-        """ExportTopSqlTemplatesDetailsResponse
+        r"""ExportTopSqlTemplatesDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportTopSqlTemplatesDetailsResponse(SdkResponse):
 
     @property
     def top_sql_templates(self):
-        """Gets the top_sql_templates of this ExportTopSqlTemplatesDetailsResponse.
+        r"""Gets the top_sql_templates of this ExportTopSqlTemplatesDetailsResponse.
 
         SQL模板列表。
 
@@ -62,7 +62,7 @@ class ExportTopSqlTemplatesDetailsResponse(SdkResponse):
 
     @top_sql_templates.setter
     def top_sql_templates(self, top_sql_templates):
-        """Sets the top_sql_templates of this ExportTopSqlTemplatesDetailsResponse.
+        r"""Sets the top_sql_templates of this ExportTopSqlTemplatesDetailsResponse.
 
         SQL模板列表。
 
@@ -73,7 +73,7 @@ class ExportTopSqlTemplatesDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ExportTopSqlTemplatesDetailsResponse.
+        r"""Gets the total_count of this ExportTopSqlTemplatesDetailsResponse.
 
         SQL模板总数。
 
@@ -84,7 +84,7 @@ class ExportTopSqlTemplatesDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ExportTopSqlTemplatesDetailsResponse.
+        r"""Sets the total_count of this ExportTopSqlTemplatesDetailsResponse.
 
         SQL模板总数。
 

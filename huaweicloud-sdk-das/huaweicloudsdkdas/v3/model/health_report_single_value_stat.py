@@ -35,7 +35,7 @@ class HealthReportSingleValueStat:
     }
 
     def __init__(self, metric=None, value=None, max_value=None, normalized=None, stage=None, timestamp=None):
-        """HealthReportSingleValueStat
+        r"""HealthReportSingleValueStat
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class HealthReportSingleValueStat:
 
     @property
     def metric(self):
-        """Gets the metric of this HealthReportSingleValueStat.
+        r"""Gets the metric of this HealthReportSingleValueStat.
 
         指标名。
 
@@ -83,7 +83,7 @@ class HealthReportSingleValueStat:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this HealthReportSingleValueStat.
+        r"""Sets the metric of this HealthReportSingleValueStat.
 
         指标名。
 
@@ -94,7 +94,7 @@ class HealthReportSingleValueStat:
 
     @property
     def value(self):
-        """Gets the value of this HealthReportSingleValueStat.
+        r"""Gets the value of this HealthReportSingleValueStat.
 
         数值。
 
@@ -105,7 +105,7 @@ class HealthReportSingleValueStat:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this HealthReportSingleValueStat.
+        r"""Sets the value of this HealthReportSingleValueStat.
 
         数值。
 
@@ -116,7 +116,7 @@ class HealthReportSingleValueStat:
 
     @property
     def max_value(self):
-        """Gets the max_value of this HealthReportSingleValueStat.
+        r"""Gets the max_value of this HealthReportSingleValueStat.
 
         最大值。
 
@@ -127,7 +127,7 @@ class HealthReportSingleValueStat:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this HealthReportSingleValueStat.
+        r"""Sets the max_value of this HealthReportSingleValueStat.
 
         最大值。
 
@@ -138,7 +138,7 @@ class HealthReportSingleValueStat:
 
     @property
     def normalized(self):
-        """Gets the normalized of this HealthReportSingleValueStat.
+        r"""Gets the normalized of this HealthReportSingleValueStat.
 
         归一化值。
 
@@ -149,7 +149,7 @@ class HealthReportSingleValueStat:
 
     @normalized.setter
     def normalized(self, normalized):
-        """Sets the normalized of this HealthReportSingleValueStat.
+        r"""Sets the normalized of this HealthReportSingleValueStat.
 
         归一化值。
 
@@ -160,7 +160,7 @@ class HealthReportSingleValueStat:
 
     @property
     def stage(self):
-        """Gets the stage of this HealthReportSingleValueStat.
+        r"""Gets the stage of this HealthReportSingleValueStat.
 
         当前状态。
 
@@ -171,7 +171,7 @@ class HealthReportSingleValueStat:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this HealthReportSingleValueStat.
+        r"""Sets the stage of this HealthReportSingleValueStat.
 
         当前状态。
 
@@ -182,7 +182,7 @@ class HealthReportSingleValueStat:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this HealthReportSingleValueStat.
+        r"""Gets the timestamp of this HealthReportSingleValueStat.
 
         指标采集时间。
 
@@ -193,7 +193,7 @@ class HealthReportSingleValueStat:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this HealthReportSingleValueStat.
+        r"""Sets the timestamp of this HealthReportSingleValueStat.
 
         指标采集时间。
 

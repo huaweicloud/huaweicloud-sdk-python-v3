@@ -41,7 +41,7 @@ class AvailableZoneV2:
     }
 
     def __init__(self, id=None, az_code=None, az_name=None, az_id=None, status=None, region_id=None, az_group_id=None, az_type=None, az_tags=None):
-        """AvailableZoneV2
+        r"""AvailableZoneV2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AvailableZoneV2:
 
     @property
     def id(self):
-        """Gets the id of this AvailableZoneV2.
+        r"""Gets the id of this AvailableZoneV2.
 
         可用区编码
 
@@ -110,7 +110,7 @@ class AvailableZoneV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AvailableZoneV2.
+        r"""Sets the id of this AvailableZoneV2.
 
         可用区编码
 
@@ -121,7 +121,7 @@ class AvailableZoneV2:
 
     @property
     def az_code(self):
-        """Gets the az_code of this AvailableZoneV2.
+        r"""Gets the az_code of this AvailableZoneV2.
 
         可用区编码
 
@@ -132,7 +132,7 @@ class AvailableZoneV2:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this AvailableZoneV2.
+        r"""Sets the az_code of this AvailableZoneV2.
 
         可用区编码
 
@@ -143,7 +143,7 @@ class AvailableZoneV2:
 
     @property
     def az_name(self):
-        """Gets the az_name of this AvailableZoneV2.
+        r"""Gets the az_name of this AvailableZoneV2.
 
         可用区名称
 
@@ -154,7 +154,7 @@ class AvailableZoneV2:
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this AvailableZoneV2.
+        r"""Sets the az_name of this AvailableZoneV2.
 
         可用区名称
 
@@ -165,7 +165,7 @@ class AvailableZoneV2:
 
     @property
     def az_id(self):
-        """Gets the az_id of this AvailableZoneV2.
+        r"""Gets the az_id of this AvailableZoneV2.
 
         可用区id
 
@@ -176,7 +176,7 @@ class AvailableZoneV2:
 
     @az_id.setter
     def az_id(self, az_id):
-        """Sets the az_id of this AvailableZoneV2.
+        r"""Sets the az_id of this AvailableZoneV2.
 
         可用区id
 
@@ -187,7 +187,7 @@ class AvailableZoneV2:
 
     @property
     def status(self):
-        """Gets the status of this AvailableZoneV2.
+        r"""Gets the status of this AvailableZoneV2.
 
         可用区状态
 
@@ -198,7 +198,7 @@ class AvailableZoneV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AvailableZoneV2.
+        r"""Sets the status of this AvailableZoneV2.
 
         可用区状态
 
@@ -209,7 +209,7 @@ class AvailableZoneV2:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AvailableZoneV2.
+        r"""Gets the region_id of this AvailableZoneV2.
 
         区域id
 
@@ -220,7 +220,7 @@ class AvailableZoneV2:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AvailableZoneV2.
+        r"""Sets the region_id of this AvailableZoneV2.
 
         区域id
 
@@ -231,7 +231,7 @@ class AvailableZoneV2:
 
     @property
     def az_group_id(self):
-        """Gets the az_group_id of this AvailableZoneV2.
+        r"""Gets the az_group_id of this AvailableZoneV2.
 
         可用区分组id
 
@@ -242,7 +242,7 @@ class AvailableZoneV2:
 
     @az_group_id.setter
     def az_group_id(self, az_group_id):
-        """Sets the az_group_id of this AvailableZoneV2.
+        r"""Sets the az_group_id of this AvailableZoneV2.
 
         可用区分组id
 
@@ -253,7 +253,7 @@ class AvailableZoneV2:
 
     @property
     def az_type(self):
-        """Gets the az_type of this AvailableZoneV2.
+        r"""Gets the az_type of this AvailableZoneV2.
 
         当前AZ的类型 Core 核心 Satellite 卫星 Dedicated 专属 Virtual 虚拟 Edge 边缘 EdgeCental 中心边缘 Hybrid 混合云
 
@@ -264,7 +264,7 @@ class AvailableZoneV2:
 
     @az_type.setter
     def az_type(self, az_type):
-        """Sets the az_type of this AvailableZoneV2.
+        r"""Sets the az_type of this AvailableZoneV2.
 
         当前AZ的类型 Core 核心 Satellite 卫星 Dedicated 专属 Virtual 虚拟 Edge 边缘 EdgeCental 中心边缘 Hybrid 混合云
 
@@ -275,7 +275,7 @@ class AvailableZoneV2:
 
     @property
     def az_tags(self):
-        """Gets the az_tags of this AvailableZoneV2.
+        r"""Gets the az_tags of this AvailableZoneV2.
 
         :return: The az_tags of this AvailableZoneV2.
         :rtype: :class:`huaweicloudsdkmrs.v1.AvailableTag`
@@ -284,7 +284,7 @@ class AvailableZoneV2:
 
     @az_tags.setter
     def az_tags(self, az_tags):
-        """Sets the az_tags of this AvailableZoneV2.
+        r"""Sets the az_tags of this AvailableZoneV2.
 
         :param az_tags: The az_tags of this AvailableZoneV2.
         :type az_tags: :class:`huaweicloudsdkmrs.v1.AvailableTag`

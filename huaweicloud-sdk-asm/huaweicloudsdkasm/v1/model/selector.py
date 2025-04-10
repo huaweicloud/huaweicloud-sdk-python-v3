@@ -25,7 +25,7 @@ class Selector:
     }
 
     def __init__(self, field_selector=None):
-        """Selector
+        r"""Selector
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Selector:
 
     @property
     def field_selector(self):
-        """Gets the field_selector of this Selector.
+        r"""Gets the field_selector of this Selector.
 
         :return: The field_selector of this Selector.
         :rtype: :class:`huaweicloudsdkasm.v1.FieldSelector`
@@ -52,7 +52,7 @@ class Selector:
 
     @field_selector.setter
     def field_selector(self, field_selector):
-        """Sets the field_selector of this Selector.
+        r"""Sets the field_selector of this Selector.
 
         :param field_selector: The field_selector of this Selector.
         :type field_selector: :class:`huaweicloudsdkasm.v1.FieldSelector`

@@ -33,7 +33,7 @@ class UpgradingTheKernelBody:
     }
 
     def __init__(self, target_image_id=None, upgrade_type=None, indices_backup_check=None, agency=None, check_load=None):
-        """UpgradingTheKernelBody
+        r"""UpgradingTheKernelBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpgradingTheKernelBody:
 
     @property
     def target_image_id(self):
-        """Gets the target_image_id of this UpgradingTheKernelBody.
+        r"""Gets the target_image_id of this UpgradingTheKernelBody.
 
         目标镜像版本ID。
 
@@ -78,7 +78,7 @@ class UpgradingTheKernelBody:
 
     @target_image_id.setter
     def target_image_id(self, target_image_id):
-        """Sets the target_image_id of this UpgradingTheKernelBody.
+        r"""Sets the target_image_id of this UpgradingTheKernelBody.
 
         目标镜像版本ID。
 
@@ -89,7 +89,7 @@ class UpgradingTheKernelBody:
 
     @property
     def upgrade_type(self):
-        """Gets the upgrade_type of this UpgradingTheKernelBody.
+        r"""Gets the upgrade_type of this UpgradingTheKernelBody.
 
         升级类型。 - same：同版本。 - cross：跨版本。
 
@@ -100,7 +100,7 @@ class UpgradingTheKernelBody:
 
     @upgrade_type.setter
     def upgrade_type(self, upgrade_type):
-        """Sets the upgrade_type of this UpgradingTheKernelBody.
+        r"""Sets the upgrade_type of this UpgradingTheKernelBody.
 
         升级类型。 - same：同版本。 - cross：跨版本。
 
@@ -111,7 +111,7 @@ class UpgradingTheKernelBody:
 
     @property
     def indices_backup_check(self):
-        """Gets the indices_backup_check of this UpgradingTheKernelBody.
+        r"""Gets the indices_backup_check of this UpgradingTheKernelBody.
 
         是否进行备份校验。 - true：进行校验。 - false：不进行校验。
 
@@ -122,7 +122,7 @@ class UpgradingTheKernelBody:
 
     @indices_backup_check.setter
     def indices_backup_check(self, indices_backup_check):
-        """Sets the indices_backup_check of this UpgradingTheKernelBody.
+        r"""Sets the indices_backup_check of this UpgradingTheKernelBody.
 
         是否进行备份校验。 - true：进行校验。 - false：不进行校验。
 
@@ -133,7 +133,7 @@ class UpgradingTheKernelBody:
 
     @property
     def agency(self):
-        """Gets the agency of this UpgradingTheKernelBody.
+        r"""Gets the agency of this UpgradingTheKernelBody.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -144,7 +144,7 @@ class UpgradingTheKernelBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpgradingTheKernelBody.
+        r"""Sets the agency of this UpgradingTheKernelBody.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -155,7 +155,7 @@ class UpgradingTheKernelBody:
 
     @property
     def check_load(self):
-        """Gets the check_load of this UpgradingTheKernelBody.
+        r"""Gets the check_load of this UpgradingTheKernelBody.
 
         是否校验负载。默认为true。 - true：进行校验。 - false：不进行校验。
 
@@ -166,7 +166,7 @@ class UpgradingTheKernelBody:
 
     @check_load.setter
     def check_load(self, check_load):
-        """Sets the check_load of this UpgradingTheKernelBody.
+        r"""Sets the check_load of this UpgradingTheKernelBody.
 
         是否校验负载。默认为true。 - true：进行校验。 - false：不进行校验。
 

@@ -27,7 +27,7 @@ class ShowClusterRequest:
     }
 
     def __init__(self, cluster_id=None, detail=None):
-        """ShowClusterRequest
+        r"""ShowClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterRequest.
+        r"""Gets the cluster_id of this ShowClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class ShowClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterRequest.
+        r"""Sets the cluster_id of this ShowClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class ShowClusterRequest:
 
     @property
     def detail(self):
-        """Gets the detail of this ShowClusterRequest.
+        r"""Gets the detail of this ShowClusterRequest.
 
         查询集群详细信息。  若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。 
 
@@ -82,7 +82,7 @@ class ShowClusterRequest:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowClusterRequest.
+        r"""Sets the detail of this ShowClusterRequest.
 
         查询集群详细信息。  若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。 
 

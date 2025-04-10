@@ -39,7 +39,7 @@ class WorkloadPlanInfo:
     }
 
     def __init__(self, status=None, project_id=None, cluster_id=None, plan_id=None, plan_name=None, current_stage=None, logical_cluster_name=None, stage_list=None):
-        """WorkloadPlanInfo
+        r"""WorkloadPlanInfo
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class WorkloadPlanInfo:
 
     @property
     def status(self):
-        """Gets the status of this WorkloadPlanInfo.
+        r"""Gets the status of this WorkloadPlanInfo.
 
         计划状态。
 
@@ -99,7 +99,7 @@ class WorkloadPlanInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkloadPlanInfo.
+        r"""Sets the status of this WorkloadPlanInfo.
 
         计划状态。
 
@@ -110,7 +110,7 @@ class WorkloadPlanInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this WorkloadPlanInfo.
+        r"""Gets the project_id of this WorkloadPlanInfo.
 
         项目ID。
 
@@ -121,7 +121,7 @@ class WorkloadPlanInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this WorkloadPlanInfo.
+        r"""Sets the project_id of this WorkloadPlanInfo.
 
         项目ID。
 
@@ -132,7 +132,7 @@ class WorkloadPlanInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this WorkloadPlanInfo.
+        r"""Gets the cluster_id of this WorkloadPlanInfo.
 
         集群ID。
 
@@ -143,7 +143,7 @@ class WorkloadPlanInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this WorkloadPlanInfo.
+        r"""Sets the cluster_id of this WorkloadPlanInfo.
 
         集群ID。
 
@@ -154,7 +154,7 @@ class WorkloadPlanInfo:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this WorkloadPlanInfo.
+        r"""Gets the plan_id of this WorkloadPlanInfo.
 
         计划ID。
 
@@ -165,7 +165,7 @@ class WorkloadPlanInfo:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this WorkloadPlanInfo.
+        r"""Sets the plan_id of this WorkloadPlanInfo.
 
         计划ID。
 
@@ -176,7 +176,7 @@ class WorkloadPlanInfo:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this WorkloadPlanInfo.
+        r"""Gets the plan_name of this WorkloadPlanInfo.
 
         计划名称。
 
@@ -187,7 +187,7 @@ class WorkloadPlanInfo:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this WorkloadPlanInfo.
+        r"""Sets the plan_name of this WorkloadPlanInfo.
 
         计划名称。
 
@@ -198,7 +198,7 @@ class WorkloadPlanInfo:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this WorkloadPlanInfo.
+        r"""Gets the current_stage of this WorkloadPlanInfo.
 
         当前计划阶段。
 
@@ -209,7 +209,7 @@ class WorkloadPlanInfo:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this WorkloadPlanInfo.
+        r"""Sets the current_stage of this WorkloadPlanInfo.
 
         当前计划阶段。
 
@@ -220,7 +220,7 @@ class WorkloadPlanInfo:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this WorkloadPlanInfo.
+        r"""Gets the logical_cluster_name of this WorkloadPlanInfo.
 
         逻辑集群名称。
 
@@ -231,7 +231,7 @@ class WorkloadPlanInfo:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this WorkloadPlanInfo.
+        r"""Sets the logical_cluster_name of this WorkloadPlanInfo.
 
         逻辑集群名称。
 
@@ -242,7 +242,7 @@ class WorkloadPlanInfo:
 
     @property
     def stage_list(self):
-        """Gets the stage_list of this WorkloadPlanInfo.
+        r"""Gets the stage_list of this WorkloadPlanInfo.
 
         计划阶段列表。
 
@@ -253,7 +253,7 @@ class WorkloadPlanInfo:
 
     @stage_list.setter
     def stage_list(self, stage_list):
-        """Sets the stage_list of this WorkloadPlanInfo.
+        r"""Sets the stage_list of this WorkloadPlanInfo.
 
         计划阶段列表。
 

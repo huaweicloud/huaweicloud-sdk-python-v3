@@ -27,7 +27,7 @@ class BaseUser:
     }
 
     def __init__(self, id=None, name=None):
-        """BaseUser
+        r"""BaseUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BaseUser:
 
     @property
     def id(self):
-        """Gets the id of this BaseUser.
+        r"""Gets the id of this BaseUser.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -61,7 +61,7 @@ class BaseUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseUser.
+        r"""Sets the id of this BaseUser.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -72,7 +72,7 @@ class BaseUser:
 
     @property
     def name(self):
-        """Gets the name of this BaseUser.
+        r"""Gets the name of this BaseUser.
 
         账号名称。
 
@@ -83,7 +83,7 @@ class BaseUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseUser.
+        r"""Sets the name of this BaseUser.
 
         账号名称。
 

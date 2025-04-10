@@ -29,7 +29,7 @@ class ShowApplyDetailRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, apply_id=None):
-        """ShowApplyDetailRequest
+        r"""ShowApplyDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowApplyDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowApplyDetailRequest.
+        r"""Gets the workspace of this ShowApplyDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowApplyDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowApplyDetailRequest.
+        r"""Sets the workspace of this ShowApplyDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowApplyDetailRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowApplyDetailRequest.
+        r"""Gets the dlm_type of this ShowApplyDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -88,7 +88,7 @@ class ShowApplyDetailRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowApplyDetailRequest.
+        r"""Sets the dlm_type of this ShowApplyDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -99,7 +99,7 @@ class ShowApplyDetailRequest:
 
     @property
     def apply_id(self):
-        """Gets the apply_id of this ShowApplyDetailRequest.
+        r"""Gets the apply_id of this ShowApplyDetailRequest.
 
         审核信息id。
 
@@ -110,7 +110,7 @@ class ShowApplyDetailRequest:
 
     @apply_id.setter
     def apply_id(self, apply_id):
-        """Sets the apply_id of this ShowApplyDetailRequest.
+        r"""Sets the apply_id of this ShowApplyDetailRequest.
 
         审核信息id。
 

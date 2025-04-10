@@ -26,7 +26,7 @@ class ListDevicesInProductResponse(SdkResponse):
     }
 
     def __init__(self, summary=None):
-        """ListDevicesInProductResponse
+        r"""ListDevicesInProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDevicesInProductResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this ListDevicesInProductResponse.
+        r"""Gets the summary of this ListDevicesInProductResponse.
 
         产品内设备数量
 
@@ -55,7 +55,7 @@ class ListDevicesInProductResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ListDevicesInProductResponse.
+        r"""Sets the summary of this ListDevicesInProductResponse.
 
         产品内设备数量
 

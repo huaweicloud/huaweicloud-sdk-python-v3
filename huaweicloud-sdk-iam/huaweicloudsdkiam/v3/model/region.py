@@ -35,7 +35,7 @@ class Region:
     }
 
     def __init__(self, description=None, parent_region_id=None, links=None, locales=None, id=None, type=None):
-        """Region
+        r"""Region
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class Region:
 
     @property
     def description(self):
-        """Gets the description of this Region.
+        r"""Gets the description of this Region.
 
         区域描述信息。
 
@@ -83,7 +83,7 @@ class Region:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Region.
+        r"""Sets the description of this Region.
 
         区域描述信息。
 
@@ -94,7 +94,7 @@ class Region:
 
     @property
     def parent_region_id(self):
-        """Gets the parent_region_id of this Region.
+        r"""Gets the parent_region_id of this Region.
 
         null.
 
@@ -105,7 +105,7 @@ class Region:
 
     @parent_region_id.setter
     def parent_region_id(self, parent_region_id):
-        """Sets the parent_region_id of this Region.
+        r"""Sets the parent_region_id of this Region.
 
         null.
 
@@ -116,7 +116,7 @@ class Region:
 
     @property
     def links(self):
-        """Gets the links of this Region.
+        r"""Gets the links of this Region.
 
         :return: The links of this Region.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -125,7 +125,7 @@ class Region:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Region.
+        r"""Sets the links of this Region.
 
         :param links: The links of this Region.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -134,7 +134,7 @@ class Region:
 
     @property
     def locales(self):
-        """Gets the locales of this Region.
+        r"""Gets the locales of this Region.
 
         :return: The locales of this Region.
         :rtype: :class:`huaweicloudsdkiam.v3.RegionLocales`
@@ -143,7 +143,7 @@ class Region:
 
     @locales.setter
     def locales(self, locales):
-        """Sets the locales of this Region.
+        r"""Sets the locales of this Region.
 
         :param locales: The locales of this Region.
         :type locales: :class:`huaweicloudsdkiam.v3.RegionLocales`
@@ -152,7 +152,7 @@ class Region:
 
     @property
     def id(self):
-        """Gets the id of this Region.
+        r"""Gets the id of this Region.
 
         区域ID。
 
@@ -163,7 +163,7 @@ class Region:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Region.
+        r"""Sets the id of this Region.
 
         区域ID。
 
@@ -174,7 +174,7 @@ class Region:
 
     @property
     def type(self):
-        """Gets the type of this Region.
+        r"""Gets the type of this Region.
 
         区域类型。
 
@@ -185,7 +185,7 @@ class Region:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Region.
+        r"""Sets the type of this Region.
 
         区域类型。
 

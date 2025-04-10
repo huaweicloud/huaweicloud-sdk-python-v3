@@ -39,7 +39,7 @@ class VaultUpdate:
     }
 
     def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None, locked=None):
-        """VaultUpdate
+        r"""VaultUpdate
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VaultUpdate:
 
     @property
     def billing(self):
-        """Gets the billing of this VaultUpdate.
+        r"""Gets the billing of this VaultUpdate.
 
         :return: The billing of this VaultUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
@@ -101,7 +101,7 @@ class VaultUpdate:
 
     @billing.setter
     def billing(self, billing):
-        """Sets the billing of this VaultUpdate.
+        r"""Sets the billing of this VaultUpdate.
 
         :param billing: The billing of this VaultUpdate.
         :type billing: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
@@ -110,7 +110,7 @@ class VaultUpdate:
 
     @property
     def name(self):
-        """Gets the name of this VaultUpdate.
+        r"""Gets the name of this VaultUpdate.
 
         存储库名称
 
@@ -121,7 +121,7 @@ class VaultUpdate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VaultUpdate.
+        r"""Sets the name of this VaultUpdate.
 
         存储库名称
 
@@ -132,7 +132,7 @@ class VaultUpdate:
 
     @property
     def auto_bind(self):
-        """Gets the auto_bind of this VaultUpdate.
+        r"""Gets the auto_bind of this VaultUpdate.
 
         是否支持自动挂载
 
@@ -143,7 +143,7 @@ class VaultUpdate:
 
     @auto_bind.setter
     def auto_bind(self, auto_bind):
-        """Sets the auto_bind of this VaultUpdate.
+        r"""Sets the auto_bind of this VaultUpdate.
 
         是否支持自动挂载
 
@@ -154,7 +154,7 @@ class VaultUpdate:
 
     @property
     def bind_rules(self):
-        """Gets the bind_rules of this VaultUpdate.
+        r"""Gets the bind_rules of this VaultUpdate.
 
         :return: The bind_rules of this VaultUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -163,7 +163,7 @@ class VaultUpdate:
 
     @bind_rules.setter
     def bind_rules(self, bind_rules):
-        """Sets the bind_rules of this VaultUpdate.
+        r"""Sets the bind_rules of this VaultUpdate.
 
         :param bind_rules: The bind_rules of this VaultUpdate.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -172,7 +172,7 @@ class VaultUpdate:
 
     @property
     def auto_expand(self):
-        """Gets the auto_expand of this VaultUpdate.
+        r"""Gets the auto_expand of this VaultUpdate.
 
         是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
 
@@ -183,7 +183,7 @@ class VaultUpdate:
 
     @auto_expand.setter
     def auto_expand(self, auto_expand):
-        """Sets the auto_expand of this VaultUpdate.
+        r"""Sets the auto_expand of this VaultUpdate.
 
         是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
 
@@ -194,7 +194,7 @@ class VaultUpdate:
 
     @property
     def smn_notify(self):
-        """Gets the smn_notify of this VaultUpdate.
+        r"""Gets the smn_notify of this VaultUpdate.
 
         发送smn通知开关
 
@@ -205,7 +205,7 @@ class VaultUpdate:
 
     @smn_notify.setter
     def smn_notify(self, smn_notify):
-        """Sets the smn_notify of this VaultUpdate.
+        r"""Sets the smn_notify of this VaultUpdate.
 
         发送smn通知开关
 
@@ -216,7 +216,7 @@ class VaultUpdate:
 
     @property
     def threshold(self):
-        """Gets the threshold of this VaultUpdate.
+        r"""Gets the threshold of this VaultUpdate.
 
         存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
 
@@ -227,7 +227,7 @@ class VaultUpdate:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this VaultUpdate.
+        r"""Sets the threshold of this VaultUpdate.
 
         存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
 
@@ -238,7 +238,7 @@ class VaultUpdate:
 
     @property
     def locked(self):
-        """Gets the locked of this VaultUpdate.
+        r"""Gets the locked of this VaultUpdate.
 
         用于标识当前存储库是否已锁定
 
@@ -249,7 +249,7 @@ class VaultUpdate:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this VaultUpdate.
+        r"""Sets the locked of this VaultUpdate.
 
         用于标识当前存储库是否已锁定
 

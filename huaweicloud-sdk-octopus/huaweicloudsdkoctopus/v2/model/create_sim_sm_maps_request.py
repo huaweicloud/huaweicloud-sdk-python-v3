@@ -25,7 +25,7 @@ class CreateSimSmMapsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSimSmMapsRequest
+        r"""CreateSimSmMapsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSimSmMapsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSimSmMapsRequest.
+        r"""Gets the body of this CreateSimSmMapsRequest.
 
         :return: The body of this CreateSimSmMapsRequest.
         :rtype: :class:`huaweicloudsdkoctopus.v2.MapCreateReqSrlz`
@@ -52,7 +52,7 @@ class CreateSimSmMapsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSimSmMapsRequest.
+        r"""Sets the body of this CreateSimSmMapsRequest.
 
         :param body: The body of this CreateSimSmMapsRequest.
         :type body: :class:`huaweicloudsdkoctopus.v2.MapCreateReqSrlz`

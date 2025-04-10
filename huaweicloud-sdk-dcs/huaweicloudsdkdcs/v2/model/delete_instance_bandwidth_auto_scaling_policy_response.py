@@ -26,7 +26,7 @@ class DeleteInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteInstanceBandwidthAutoScalingPolicyResponse
+        r"""DeleteInstanceBandwidthAutoScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the body of this DeleteInstanceBandwidthAutoScalingPolicyResponse.
 
         :return: The body of this DeleteInstanceBandwidthAutoScalingPolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the body of this DeleteInstanceBandwidthAutoScalingPolicyResponse.
 
         :param body: The body of this DeleteInstanceBandwidthAutoScalingPolicyResponse.
         :type body: str

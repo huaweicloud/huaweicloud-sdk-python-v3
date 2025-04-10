@@ -29,7 +29,7 @@ class RebootCloudTableClusterRequest:
     }
 
     def __init__(self, cluster_id=None, x_language=None, body=None):
-        """RebootCloudTableClusterRequest
+        r"""RebootCloudTableClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RebootCloudTableClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RebootCloudTableClusterRequest.
+        r"""Gets the cluster_id of this RebootCloudTableClusterRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class RebootCloudTableClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RebootCloudTableClusterRequest.
+        r"""Sets the cluster_id of this RebootCloudTableClusterRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class RebootCloudTableClusterRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RebootCloudTableClusterRequest.
+        r"""Gets the x_language of this RebootCloudTableClusterRequest.
 
         语言类型
 
@@ -89,7 +89,7 @@ class RebootCloudTableClusterRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RebootCloudTableClusterRequest.
+        r"""Sets the x_language of this RebootCloudTableClusterRequest.
 
         语言类型
 
@@ -100,7 +100,7 @@ class RebootCloudTableClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this RebootCloudTableClusterRequest.
+        r"""Gets the body of this RebootCloudTableClusterRequest.
 
         :return: The body of this RebootCloudTableClusterRequest.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.HbaseClusterActionReq`
@@ -109,7 +109,7 @@ class RebootCloudTableClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebootCloudTableClusterRequest.
+        r"""Sets the body of this RebootCloudTableClusterRequest.
 
         :param body: The body of this RebootCloudTableClusterRequest.
         :type body: :class:`huaweicloudsdkcloudtable.v2.HbaseClusterActionReq`

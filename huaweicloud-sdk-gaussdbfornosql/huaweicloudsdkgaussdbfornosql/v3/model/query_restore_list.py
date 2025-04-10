@@ -37,7 +37,7 @@ class QueryRestoreList:
     }
 
     def __init__(self, instance_id=None, instance_mode=None, engine_name=None, engine_version=None, vpc_id=None, subnet_ids=None, security_group_ids=None):
-        """QueryRestoreList
+        r"""QueryRestoreList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryRestoreList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this QueryRestoreList.
+        r"""Gets the instance_id of this QueryRestoreList.
 
         实例ID
 
@@ -89,7 +89,7 @@ class QueryRestoreList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this QueryRestoreList.
+        r"""Sets the instance_id of this QueryRestoreList.
 
         实例ID
 
@@ -100,7 +100,7 @@ class QueryRestoreList:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this QueryRestoreList.
+        r"""Gets the instance_mode of this QueryRestoreList.
 
         实例模式
 
@@ -111,7 +111,7 @@ class QueryRestoreList:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this QueryRestoreList.
+        r"""Sets the instance_mode of this QueryRestoreList.
 
         实例模式
 
@@ -122,7 +122,7 @@ class QueryRestoreList:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this QueryRestoreList.
+        r"""Gets the engine_name of this QueryRestoreList.
 
         引擎名称
 
@@ -133,7 +133,7 @@ class QueryRestoreList:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this QueryRestoreList.
+        r"""Sets the engine_name of this QueryRestoreList.
 
         引擎名称
 
@@ -144,7 +144,7 @@ class QueryRestoreList:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this QueryRestoreList.
+        r"""Gets the engine_version of this QueryRestoreList.
 
         引擎版本
 
@@ -155,7 +155,7 @@ class QueryRestoreList:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this QueryRestoreList.
+        r"""Sets the engine_version of this QueryRestoreList.
 
         引擎版本
 
@@ -166,7 +166,7 @@ class QueryRestoreList:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this QueryRestoreList.
+        r"""Gets the vpc_id of this QueryRestoreList.
 
         VPC ID。
 
@@ -177,7 +177,7 @@ class QueryRestoreList:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this QueryRestoreList.
+        r"""Sets the vpc_id of this QueryRestoreList.
 
         VPC ID。
 
@@ -188,7 +188,7 @@ class QueryRestoreList:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this QueryRestoreList.
+        r"""Gets the subnet_ids of this QueryRestoreList.
 
         子网ID列表
 
@@ -199,7 +199,7 @@ class QueryRestoreList:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this QueryRestoreList.
+        r"""Sets the subnet_ids of this QueryRestoreList.
 
         子网ID列表
 
@@ -210,7 +210,7 @@ class QueryRestoreList:
 
     @property
     def security_group_ids(self):
-        """Gets the security_group_ids of this QueryRestoreList.
+        r"""Gets the security_group_ids of this QueryRestoreList.
 
         安全组ID列表
 
@@ -221,7 +221,7 @@ class QueryRestoreList:
 
     @security_group_ids.setter
     def security_group_ids(self, security_group_ids):
-        """Sets the security_group_ids of this QueryRestoreList.
+        r"""Sets the security_group_ids of this QueryRestoreList.
 
         安全组ID列表
 

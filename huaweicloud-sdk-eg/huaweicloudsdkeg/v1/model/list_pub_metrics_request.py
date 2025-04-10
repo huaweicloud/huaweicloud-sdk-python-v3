@@ -37,7 +37,7 @@ class ListPubMetricsRequest:
     }
 
     def __init__(self, filter=None, period=None, start_time=None, end_time=None, channel_id=None, provider_type=None, source_name=None):
-        """ListPubMetricsRequest
+        r"""ListPubMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListPubMetricsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListPubMetricsRequest.
+        r"""Gets the filter of this ListPubMetricsRequest.
 
         指标数据统计方式
 
@@ -94,7 +94,7 @@ class ListPubMetricsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListPubMetricsRequest.
+        r"""Sets the filter of this ListPubMetricsRequest.
 
         指标数据统计方式
 
@@ -105,7 +105,7 @@ class ListPubMetricsRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListPubMetricsRequest.
+        r"""Gets the period of this ListPubMetricsRequest.
 
         指标数据统计周期，单位minute。
 
@@ -116,7 +116,7 @@ class ListPubMetricsRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListPubMetricsRequest.
+        r"""Sets the period of this ListPubMetricsRequest.
 
         指标数据统计周期，单位minute。
 
@@ -127,7 +127,7 @@ class ListPubMetricsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPubMetricsRequest.
+        r"""Gets the start_time of this ListPubMetricsRequest.
 
         获取指标数据起始时间
 
@@ -138,7 +138,7 @@ class ListPubMetricsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPubMetricsRequest.
+        r"""Sets the start_time of this ListPubMetricsRequest.
 
         获取指标数据起始时间
 
@@ -149,7 +149,7 @@ class ListPubMetricsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPubMetricsRequest.
+        r"""Gets the end_time of this ListPubMetricsRequest.
 
         获取指标数据结束时间
 
@@ -160,7 +160,7 @@ class ListPubMetricsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPubMetricsRequest.
+        r"""Sets the end_time of this ListPubMetricsRequest.
 
         获取指标数据结束时间
 
@@ -171,7 +171,7 @@ class ListPubMetricsRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ListPubMetricsRequest.
+        r"""Gets the channel_id of this ListPubMetricsRequest.
 
         事件通道id
 
@@ -182,7 +182,7 @@ class ListPubMetricsRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ListPubMetricsRequest.
+        r"""Sets the channel_id of this ListPubMetricsRequest.
 
         事件通道id
 
@@ -193,7 +193,7 @@ class ListPubMetricsRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListPubMetricsRequest.
+        r"""Gets the provider_type of this ListPubMetricsRequest.
 
         事件目标类型/事件通道类型
 
@@ -204,7 +204,7 @@ class ListPubMetricsRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListPubMetricsRequest.
+        r"""Sets the provider_type of this ListPubMetricsRequest.
 
         事件目标类型/事件通道类型
 
@@ -215,7 +215,7 @@ class ListPubMetricsRequest:
 
     @property
     def source_name(self):
-        """Gets the source_name of this ListPubMetricsRequest.
+        r"""Gets the source_name of this ListPubMetricsRequest.
 
         事件源名称
 
@@ -226,7 +226,7 @@ class ListPubMetricsRequest:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this ListPubMetricsRequest.
+        r"""Sets the source_name of this ListPubMetricsRequest.
 
         事件源名称
 

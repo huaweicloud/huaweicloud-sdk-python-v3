@@ -31,7 +31,7 @@ class PerformanceResourcesRsp:
     }
 
     def __init__(self, id=None, name=None, running_job_count=None, schedulable=None):
-        """PerformanceResourcesRsp
+        r"""PerformanceResourcesRsp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PerformanceResourcesRsp:
 
     @property
     def id(self):
-        """Gets the id of this PerformanceResourcesRsp.
+        r"""Gets the id of this PerformanceResourcesRsp.
 
         性能加速资源id
 
@@ -75,7 +75,7 @@ class PerformanceResourcesRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PerformanceResourcesRsp.
+        r"""Sets the id of this PerformanceResourcesRsp.
 
         性能加速资源id
 
@@ -86,7 +86,7 @@ class PerformanceResourcesRsp:
 
     @property
     def name(self):
-        """Gets the name of this PerformanceResourcesRsp.
+        r"""Gets the name of this PerformanceResourcesRsp.
 
         性能加速资源名称
 
@@ -97,7 +97,7 @@ class PerformanceResourcesRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PerformanceResourcesRsp.
+        r"""Sets the name of this PerformanceResourcesRsp.
 
         性能加速资源名称
 
@@ -108,7 +108,7 @@ class PerformanceResourcesRsp:
 
     @property
     def running_job_count(self):
-        """Gets the running_job_count of this PerformanceResourcesRsp.
+        r"""Gets the running_job_count of this PerformanceResourcesRsp.
 
         当前运行中的作业总数
 
@@ -119,7 +119,7 @@ class PerformanceResourcesRsp:
 
     @running_job_count.setter
     def running_job_count(self, running_job_count):
-        """Sets the running_job_count of this PerformanceResourcesRsp.
+        r"""Sets the running_job_count of this PerformanceResourcesRsp.
 
         当前运行中的作业总数
 
@@ -130,7 +130,7 @@ class PerformanceResourcesRsp:
 
     @property
     def schedulable(self):
-        """Gets the schedulable of this PerformanceResourcesRsp.
+        r"""Gets the schedulable of this PerformanceResourcesRsp.
 
         资源是否可调度
 
@@ -141,7 +141,7 @@ class PerformanceResourcesRsp:
 
     @schedulable.setter
     def schedulable(self, schedulable):
-        """Sets the schedulable of this PerformanceResourcesRsp.
+        r"""Sets the schedulable of this PerformanceResourcesRsp.
 
         资源是否可调度
 

@@ -26,7 +26,7 @@ class UploadJsonAccessoriesResponse(SdkResponse):
     }
 
     def __init__(self, accessory_id=None):
-        """UploadJsonAccessoriesResponse
+        r"""UploadJsonAccessoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadJsonAccessoriesResponse(SdkResponse):
 
     @property
     def accessory_id(self):
-        """Gets the accessory_id of this UploadJsonAccessoriesResponse.
+        r"""Gets the accessory_id of this UploadJsonAccessoriesResponse.
 
         附件id
 
@@ -55,7 +55,7 @@ class UploadJsonAccessoriesResponse(SdkResponse):
 
     @accessory_id.setter
     def accessory_id(self, accessory_id):
-        """Sets the accessory_id of this UploadJsonAccessoriesResponse.
+        r"""Sets the accessory_id of this UploadJsonAccessoriesResponse.
 
         附件id
 

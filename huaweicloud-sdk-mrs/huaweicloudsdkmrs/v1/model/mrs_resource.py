@@ -31,7 +31,7 @@ class MRSResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """MRSResource
+        r"""MRSResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MRSResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this MRSResource.
+        r"""Gets the resource_id of this MRSResource.
 
         资源ID
 
@@ -75,7 +75,7 @@ class MRSResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this MRSResource.
+        r"""Sets the resource_id of this MRSResource.
 
         资源ID
 
@@ -86,7 +86,7 @@ class MRSResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this MRSResource.
+        r"""Gets the resource_detail of this MRSResource.
 
         资源详情
 
@@ -97,7 +97,7 @@ class MRSResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this MRSResource.
+        r"""Sets the resource_detail of this MRSResource.
 
         资源详情
 
@@ -108,7 +108,7 @@ class MRSResource:
 
     @property
     def tags(self):
-        """Gets the tags of this MRSResource.
+        r"""Gets the tags of this MRSResource.
 
         标签
 
@@ -119,7 +119,7 @@ class MRSResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this MRSResource.
+        r"""Sets the tags of this MRSResource.
 
         标签
 
@@ -130,7 +130,7 @@ class MRSResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this MRSResource.
+        r"""Gets the resource_name of this MRSResource.
 
         资源名称
 
@@ -141,7 +141,7 @@ class MRSResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this MRSResource.
+        r"""Sets the resource_name of this MRSResource.
 
         资源名称
 

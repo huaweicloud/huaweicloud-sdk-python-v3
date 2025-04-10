@@ -26,7 +26,7 @@ class DeleteCustomPolicyResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """DeleteCustomPolicyResponse
+        r"""DeleteCustomPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteCustomPolicyResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteCustomPolicyResponse.
+        r"""Gets the message of this DeleteCustomPolicyResponse.
 
         
 
@@ -55,7 +55,7 @@ class DeleteCustomPolicyResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteCustomPolicyResponse.
+        r"""Sets the message of this DeleteCustomPolicyResponse.
 
         
 

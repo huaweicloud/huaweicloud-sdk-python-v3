@@ -24,7 +24,7 @@ class DisassociateAppGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateAppGroupResponse
+        r"""DisassociateAppGroupResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ListInstanceDomainsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListInstanceDomainsRequest
+        r"""ListInstanceDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListInstanceDomainsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceDomainsRequest.
+        r"""Gets the instance_id of this ListInstanceDomainsRequest.
 
         实例id
 
@@ -53,7 +53,7 @@ class ListInstanceDomainsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceDomainsRequest.
+        r"""Sets the instance_id of this ListInstanceDomainsRequest.
 
         实例id
 

@@ -29,7 +29,7 @@ class UpdateConfigurationParameterRequestBody:
     }
 
     def __init__(self, name=None, description=None, parameter_values=None):
-        """UpdateConfigurationParameterRequestBody
+        r"""UpdateConfigurationParameterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateConfigurationParameterRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConfigurationParameterRequestBody.
+        r"""Gets the name of this UpdateConfigurationParameterRequestBody.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字和特殊字符中划线、下划线和点。不传该参数时不修改参数模板名称。（参数模板名称，参数模板描述，参数名和参数值映射关系三项不能同时为空）
 
@@ -68,7 +68,7 @@ class UpdateConfigurationParameterRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConfigurationParameterRequestBody.
+        r"""Sets the name of this UpdateConfigurationParameterRequestBody.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字和特殊字符中划线、下划线和点。不传该参数时不修改参数模板名称。（参数模板名称，参数模板描述，参数名和参数值映射关系三项不能同时为空）
 
@@ -79,7 +79,7 @@ class UpdateConfigurationParameterRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateConfigurationParameterRequestBody.
+        r"""Gets the description of this UpdateConfigurationParameterRequestBody.
 
         参数模板描述。最长256位，不支持!<>=&\"'特殊字符。不传该参数时不修改参数模板描述。
 
@@ -90,7 +90,7 @@ class UpdateConfigurationParameterRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateConfigurationParameterRequestBody.
+        r"""Sets the description of this UpdateConfigurationParameterRequestBody.
 
         参数模板描述。最长256位，不支持!<>=&\"'特殊字符。不传该参数时不修改参数模板描述。
 
@@ -101,7 +101,7 @@ class UpdateConfigurationParameterRequestBody:
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this UpdateConfigurationParameterRequestBody.
+        r"""Gets the parameter_values of this UpdateConfigurationParameterRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。
 
@@ -112,7 +112,7 @@ class UpdateConfigurationParameterRequestBody:
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this UpdateConfigurationParameterRequestBody.
+        r"""Sets the parameter_values of this UpdateConfigurationParameterRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。
 

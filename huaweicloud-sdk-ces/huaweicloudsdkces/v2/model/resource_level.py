@@ -27,7 +27,7 @@ class ResourceLevel:
     }
 
     def __init__(self):
-        """ResourceLevel
+        r"""ResourceLevel
 
         The model defined in huaweicloud sdk
 

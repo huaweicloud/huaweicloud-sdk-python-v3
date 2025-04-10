@@ -27,7 +27,7 @@ class UpdatePostpaidVgwSpecificationRequest:
     }
 
     def __init__(self, vgw_id=None, body=None):
-        """UpdatePostpaidVgwSpecificationRequest
+        r"""UpdatePostpaidVgwSpecificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePostpaidVgwSpecificationRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this UpdatePostpaidVgwSpecificationRequest.
+        r"""Gets the vgw_id of this UpdatePostpaidVgwSpecificationRequest.
 
         VPN网关实例ID
 
@@ -60,7 +60,7 @@ class UpdatePostpaidVgwSpecificationRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this UpdatePostpaidVgwSpecificationRequest.
+        r"""Sets the vgw_id of this UpdatePostpaidVgwSpecificationRequest.
 
         VPN网关实例ID
 
@@ -71,7 +71,7 @@ class UpdatePostpaidVgwSpecificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePostpaidVgwSpecificationRequest.
+        r"""Gets the body of this UpdatePostpaidVgwSpecificationRequest.
 
         :return: The body of this UpdatePostpaidVgwSpecificationRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwSpecificationRequestBody`
@@ -80,7 +80,7 @@ class UpdatePostpaidVgwSpecificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePostpaidVgwSpecificationRequest.
+        r"""Sets the body of this UpdatePostpaidVgwSpecificationRequest.
 
         :param body: The body of this UpdatePostpaidVgwSpecificationRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVgwSpecificationRequestBody`

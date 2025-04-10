@@ -29,7 +29,7 @@ class BatchCreateGlobalEipJob:
     }
 
     def __init__(self, id=None, name=None, job_id=None):
-        """BatchCreateGlobalEipJob
+        r"""BatchCreateGlobalEipJob
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchCreateGlobalEipJob:
 
     @property
     def id(self):
-        """Gets the id of this BatchCreateGlobalEipJob.
+        r"""Gets the id of this BatchCreateGlobalEipJob.
 
         全域弹性公网IP的ID
 
@@ -68,7 +68,7 @@ class BatchCreateGlobalEipJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchCreateGlobalEipJob.
+        r"""Sets the id of this BatchCreateGlobalEipJob.
 
         全域弹性公网IP的ID
 
@@ -79,7 +79,7 @@ class BatchCreateGlobalEipJob:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateGlobalEipJob.
+        r"""Gets the name of this BatchCreateGlobalEipJob.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -90,7 +90,7 @@ class BatchCreateGlobalEipJob:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateGlobalEipJob.
+        r"""Sets the name of this BatchCreateGlobalEipJob.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -101,7 +101,7 @@ class BatchCreateGlobalEipJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchCreateGlobalEipJob.
+        r"""Gets the job_id of this BatchCreateGlobalEipJob.
 
         请求完成的job id
 
@@ -112,7 +112,7 @@ class BatchCreateGlobalEipJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchCreateGlobalEipJob.
+        r"""Sets the job_id of this BatchCreateGlobalEipJob.
 
         请求完成的job id
 

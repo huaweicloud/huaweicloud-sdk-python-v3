@@ -27,7 +27,7 @@ class MsdtcHostOption:
     }
 
     def __init__(self, host_name=None, ip=None):
-        """MsdtcHostOption
+        r"""MsdtcHostOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MsdtcHostOption:
 
     @property
     def host_name(self):
-        """Gets the host_name of this MsdtcHostOption.
+        r"""Gets the host_name of this MsdtcHostOption.
 
         主机名称 hostname
 
@@ -59,7 +59,7 @@ class MsdtcHostOption:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this MsdtcHostOption.
+        r"""Sets the host_name of this MsdtcHostOption.
 
         主机名称 hostname
 
@@ -70,7 +70,7 @@ class MsdtcHostOption:
 
     @property
     def ip(self):
-        """Gets the ip of this MsdtcHostOption.
+        r"""Gets the ip of this MsdtcHostOption.
 
         主机ip
 
@@ -81,7 +81,7 @@ class MsdtcHostOption:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this MsdtcHostOption.
+        r"""Sets the ip of this MsdtcHostOption.
 
         主机ip
 

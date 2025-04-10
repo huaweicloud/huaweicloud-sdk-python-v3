@@ -27,7 +27,7 @@ class WarRoomTenantInfoRegions:
     }
 
     def __init__(self, code=None, name=None):
-        """WarRoomTenantInfoRegions
+        r"""WarRoomTenantInfoRegions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WarRoomTenantInfoRegions:
 
     @property
     def code(self):
-        """Gets the code of this WarRoomTenantInfoRegions.
+        r"""Gets the code of this WarRoomTenantInfoRegions.
 
         主键
 
@@ -61,7 +61,7 @@ class WarRoomTenantInfoRegions:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this WarRoomTenantInfoRegions.
+        r"""Sets the code of this WarRoomTenantInfoRegions.
 
         主键
 
@@ -72,7 +72,7 @@ class WarRoomTenantInfoRegions:
 
     @property
     def name(self):
-        """Gets the name of this WarRoomTenantInfoRegions.
+        r"""Gets the name of this WarRoomTenantInfoRegions.
 
         名称
 
@@ -83,7 +83,7 @@ class WarRoomTenantInfoRegions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WarRoomTenantInfoRegions.
+        r"""Sets the name of this WarRoomTenantInfoRegions.
 
         名称
 

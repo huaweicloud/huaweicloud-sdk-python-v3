@@ -27,7 +27,7 @@ class OrderParam:
     }
 
     def __init__(self, field=None, order=None):
-        """OrderParam
+        r"""OrderParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrderParam:
 
     @property
     def field(self):
-        """Gets the field of this OrderParam.
+        r"""Gets the field of this OrderParam.
 
         timeUsed：响应时间，startTime：产生时间。
 
@@ -61,7 +61,7 @@ class OrderParam:
 
     @field.setter
     def field(self, field):
-        """Sets the field of this OrderParam.
+        r"""Sets the field of this OrderParam.
 
         timeUsed：响应时间，startTime：产生时间。
 
@@ -72,7 +72,7 @@ class OrderParam:
 
     @property
     def order(self):
-        """Gets the order of this OrderParam.
+        r"""Gets the order of this OrderParam.
 
         ASC：正序，DESC：逆序。
 
@@ -83,7 +83,7 @@ class OrderParam:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this OrderParam.
+        r"""Sets the order of this OrderParam.
 
         ASC：正序，DESC：逆序。
 

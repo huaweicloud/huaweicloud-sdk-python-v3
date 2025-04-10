@@ -39,7 +39,7 @@ class ResizeInstanceReq:
     }
 
     def __init__(self, new_spec_code=None, new_storage_space=None, oper_type=None, new_broker_num=None, new_product_id=None, publicip_id=None, tenant_ips=None, second_tenant_subnet_id=None):
-        """ResizeInstanceReq
+        r"""ResizeInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ResizeInstanceReq:
 
     @property
     def new_spec_code(self):
-        """Gets the new_spec_code of this ResizeInstanceReq.
+        r"""Gets the new_spec_code of this ResizeInstanceReq.
 
         规格变更后的规格ID。 若只扩展磁盘大小，则规格ID保持和原实例不变。
 
@@ -103,7 +103,7 @@ class ResizeInstanceReq:
 
     @new_spec_code.setter
     def new_spec_code(self, new_spec_code):
-        """Sets the new_spec_code of this ResizeInstanceReq.
+        r"""Sets the new_spec_code of this ResizeInstanceReq.
 
         规格变更后的规格ID。 若只扩展磁盘大小，则规格ID保持和原实例不变。
 
@@ -114,7 +114,7 @@ class ResizeInstanceReq:
 
     @property
     def new_storage_space(self):
-        """Gets the new_storage_space of this ResizeInstanceReq.
+        r"""Gets the new_storage_space of this ResizeInstanceReq.
 
         规格变更后的消息存储空间，单位：GB。 若扩展实例基准带宽，则new_storage_space不能低于基准带宽规定的最小磁盘大小。
 
@@ -125,7 +125,7 @@ class ResizeInstanceReq:
 
     @new_storage_space.setter
     def new_storage_space(self, new_storage_space):
-        """Sets the new_storage_space of this ResizeInstanceReq.
+        r"""Sets the new_storage_space of this ResizeInstanceReq.
 
         规格变更后的消息存储空间，单位：GB。 若扩展实例基准带宽，则new_storage_space不能低于基准带宽规定的最小磁盘大小。
 
@@ -136,7 +136,7 @@ class ResizeInstanceReq:
 
     @property
     def oper_type(self):
-        """Gets the oper_type of this ResizeInstanceReq.
+        r"""Gets the oper_type of this ResizeInstanceReq.
 
         扩容类型, 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
 
@@ -147,7 +147,7 @@ class ResizeInstanceReq:
 
     @oper_type.setter
     def oper_type(self, oper_type):
-        """Sets the oper_type of this ResizeInstanceReq.
+        r"""Sets the oper_type of this ResizeInstanceReq.
 
         扩容类型, 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
 
@@ -158,7 +158,7 @@ class ResizeInstanceReq:
 
     @property
     def new_broker_num(self):
-        """Gets the new_broker_num of this ResizeInstanceReq.
+        r"""Gets the new_broker_num of this ResizeInstanceReq.
 
         扩容后集群节点数。
 
@@ -169,7 +169,7 @@ class ResizeInstanceReq:
 
     @new_broker_num.setter
     def new_broker_num(self, new_broker_num):
-        """Sets the new_broker_num of this ResizeInstanceReq.
+        r"""Sets the new_broker_num of this ResizeInstanceReq.
 
         扩容后集群节点数。
 
@@ -180,7 +180,7 @@ class ResizeInstanceReq:
 
     @property
     def new_product_id(self):
-        """Gets the new_product_id of this ResizeInstanceReq.
+        r"""Gets the new_product_id of this ResizeInstanceReq.
 
         新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
 
@@ -191,7 +191,7 @@ class ResizeInstanceReq:
 
     @new_product_id.setter
     def new_product_id(self, new_product_id):
-        """Sets the new_product_id of this ResizeInstanceReq.
+        r"""Sets the new_product_id of this ResizeInstanceReq.
 
         新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
 
@@ -202,7 +202,7 @@ class ResizeInstanceReq:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this ResizeInstanceReq.
+        r"""Gets the publicip_id of this ResizeInstanceReq.
 
         实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
 
@@ -213,7 +213,7 @@ class ResizeInstanceReq:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this ResizeInstanceReq.
+        r"""Sets the publicip_id of this ResizeInstanceReq.
 
         实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
 
@@ -224,7 +224,7 @@ class ResizeInstanceReq:
 
     @property
     def tenant_ips(self):
-        """Gets the tenant_ips of this ResizeInstanceReq.
+        r"""Gets the tenant_ips of this ResizeInstanceReq.
 
         创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
 
@@ -235,7 +235,7 @@ class ResizeInstanceReq:
 
     @tenant_ips.setter
     def tenant_ips(self, tenant_ips):
-        """Sets the tenant_ips of this ResizeInstanceReq.
+        r"""Sets the tenant_ips of this ResizeInstanceReq.
 
         创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
 
@@ -246,7 +246,7 @@ class ResizeInstanceReq:
 
     @property
     def second_tenant_subnet_id(self):
-        """Gets the second_tenant_subnet_id of this ResizeInstanceReq.
+        r"""Gets the second_tenant_subnet_id of this ResizeInstanceReq.
 
         实例扩容时新节点使用备用子网的id。  当实例扩容使用备用子网，则传入此值。  需要联系客服添加白名单才能传入此值。
 
@@ -257,7 +257,7 @@ class ResizeInstanceReq:
 
     @second_tenant_subnet_id.setter
     def second_tenant_subnet_id(self, second_tenant_subnet_id):
-        """Sets the second_tenant_subnet_id of this ResizeInstanceReq.
+        r"""Sets the second_tenant_subnet_id of this ResizeInstanceReq.
 
         实例扩容时新节点使用备用子网的id。  当实例扩容使用备用子网，则传入此值。  需要联系客服添加白名单才能传入此值。
 

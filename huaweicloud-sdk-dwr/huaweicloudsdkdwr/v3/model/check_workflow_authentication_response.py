@@ -52,7 +52,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
     }
 
     def __init__(self, create_time=None, last_modify_time=None, agency_id=None, agency_name=None, agency_duration=None, trust_domain_name=None, role_id=None, role_dependent_by_function=None, role_remark_name=None, role_remark_type=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """CheckWorkflowAuthenticationResponse
+        r"""CheckWorkflowAuthenticationResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the create_time of this CheckWorkflowAuthenticationResponse.
 
         创建时间。
 
@@ -146,7 +146,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the create_time of this CheckWorkflowAuthenticationResponse.
 
         创建时间。
 
@@ -157,7 +157,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the last_modify_time of this CheckWorkflowAuthenticationResponse.
 
         最近修改时间。
 
@@ -168,7 +168,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the last_modify_time of this CheckWorkflowAuthenticationResponse.
 
         最近修改时间。
 
@@ -179,7 +179,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the agency_id of this CheckWorkflowAuthenticationResponse.
 
         委托方帐号ID。
 
@@ -190,7 +190,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the agency_id of this CheckWorkflowAuthenticationResponse.
 
         委托方帐号ID。
 
@@ -201,7 +201,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the agency_name of this CheckWorkflowAuthenticationResponse.
 
         委托名。
 
@@ -212,7 +212,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the agency_name of this CheckWorkflowAuthenticationResponse.
 
         委托名。
 
@@ -223,7 +223,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def agency_duration(self):
-        """Gets the agency_duration of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the agency_duration of this CheckWorkflowAuthenticationResponse.
 
         委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。
 
@@ -234,7 +234,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @agency_duration.setter
     def agency_duration(self, agency_duration):
-        """Sets the agency_duration of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the agency_duration of this CheckWorkflowAuthenticationResponse.
 
         委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天。
 
@@ -245,7 +245,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def trust_domain_name(self):
-        """Gets the trust_domain_name of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the trust_domain_name of this CheckWorkflowAuthenticationResponse.
 
         被委托方帐号名。
 
@@ -256,7 +256,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @trust_domain_name.setter
     def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the trust_domain_name of this CheckWorkflowAuthenticationResponse.
 
         被委托方帐号名。
 
@@ -267,7 +267,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def role_id(self):
-        """Gets the role_id of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the role_id of this CheckWorkflowAuthenticationResponse.
 
         权限ID。
 
@@ -278,7 +278,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the role_id of this CheckWorkflowAuthenticationResponse.
 
         权限ID。
 
@@ -289,7 +289,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def role_dependent_by_function(self):
-        """Gets the role_dependent_by_function of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the role_dependent_by_function of this CheckWorkflowAuthenticationResponse.
 
         权限使用的依赖函数。
 
@@ -300,7 +300,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @role_dependent_by_function.setter
     def role_dependent_by_function(self, role_dependent_by_function):
-        """Sets the role_dependent_by_function of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the role_dependent_by_function of this CheckWorkflowAuthenticationResponse.
 
         权限使用的依赖函数。
 
@@ -311,7 +311,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def role_remark_name(self):
-        """Gets the role_remark_name of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the role_remark_name of this CheckWorkflowAuthenticationResponse.
 
         权限备注名。
 
@@ -322,7 +322,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @role_remark_name.setter
     def role_remark_name(self, role_remark_name):
-        """Sets the role_remark_name of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the role_remark_name of this CheckWorkflowAuthenticationResponse.
 
         权限备注名。
 
@@ -333,7 +333,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def role_remark_type(self):
-        """Gets the role_remark_type of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the role_remark_type of this CheckWorkflowAuthenticationResponse.
 
         权限的备注模式： AX表示在domain层显示。 XA表示在project层显示。 AA表示在domain和project层均显示。 XX表示在domain和project层均不显示。 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）
 
@@ -344,7 +344,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @role_remark_type.setter
     def role_remark_type(self, role_remark_type):
-        """Sets the role_remark_type of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the role_remark_type of this CheckWorkflowAuthenticationResponse.
 
         权限的备注模式： AX表示在domain层显示。 XA表示在project层显示。 AA表示在domain和project层均显示。 XX表示在domain和project层均不显示。 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）
 
@@ -355,7 +355,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the x_request_id of this CheckWorkflowAuthenticationResponse.
 
         :return: The x_request_id of this CheckWorkflowAuthenticationResponse.
         :rtype: str
@@ -364,7 +364,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the x_request_id of this CheckWorkflowAuthenticationResponse.
 
         :param x_request_id: The x_request_id of this CheckWorkflowAuthenticationResponse.
         :type x_request_id: str
@@ -373,7 +373,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the connection of this CheckWorkflowAuthenticationResponse.
 
         :return: The connection of this CheckWorkflowAuthenticationResponse.
         :rtype: str
@@ -382,7 +382,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the connection of this CheckWorkflowAuthenticationResponse.
 
         :param connection: The connection of this CheckWorkflowAuthenticationResponse.
         :type connection: str
@@ -391,7 +391,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the content_length of this CheckWorkflowAuthenticationResponse.
 
         :return: The content_length of this CheckWorkflowAuthenticationResponse.
         :rtype: str
@@ -400,7 +400,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the content_length of this CheckWorkflowAuthenticationResponse.
 
         :param content_length: The content_length of this CheckWorkflowAuthenticationResponse.
         :type content_length: str
@@ -409,7 +409,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this CheckWorkflowAuthenticationResponse.
+        r"""Gets the date of this CheckWorkflowAuthenticationResponse.
 
         :return: The date of this CheckWorkflowAuthenticationResponse.
         :rtype: str
@@ -418,7 +418,7 @@ class CheckWorkflowAuthenticationResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CheckWorkflowAuthenticationResponse.
+        r"""Sets the date of this CheckWorkflowAuthenticationResponse.
 
         :param date: The date of this CheckWorkflowAuthenticationResponse.
         :type date: str

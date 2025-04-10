@@ -27,7 +27,7 @@ class AppStatisticResponseInfo:
     }
 
     def __init__(self, app_name=None, num=None):
-        """AppStatisticResponseInfo
+        r"""AppStatisticResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppStatisticResponseInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppStatisticResponseInfo.
+        r"""Gets the app_name of this AppStatisticResponseInfo.
 
         软件名称
 
@@ -61,7 +61,7 @@ class AppStatisticResponseInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppStatisticResponseInfo.
+        r"""Sets the app_name of this AppStatisticResponseInfo.
 
         软件名称
 
@@ -72,7 +72,7 @@ class AppStatisticResponseInfo:
 
     @property
     def num(self):
-        """Gets the num of this AppStatisticResponseInfo.
+        r"""Gets the num of this AppStatisticResponseInfo.
 
         进程数量
 
@@ -83,7 +83,7 @@ class AppStatisticResponseInfo:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this AppStatisticResponseInfo.
+        r"""Sets the num of this AppStatisticResponseInfo.
 
         进程数量
 

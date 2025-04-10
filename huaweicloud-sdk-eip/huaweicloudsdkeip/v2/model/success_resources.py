@@ -25,7 +25,7 @@ class SuccessResources:
     }
 
     def __init__(self, id=None):
-        """SuccessResources
+        r"""SuccessResources
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SuccessResources:
 
     @property
     def id(self):
-        """Gets the id of this SuccessResources.
+        r"""Gets the id of this SuccessResources.
 
         - 功能说明：更新成功的带宽id
 
@@ -54,7 +54,7 @@ class SuccessResources:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SuccessResources.
+        r"""Sets the id of this SuccessResources.
 
         - 功能说明：更新成功的带宽id
 

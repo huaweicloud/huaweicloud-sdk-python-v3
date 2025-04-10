@@ -28,7 +28,7 @@ class ShowJobExeListNewResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, job_list=None):
-        """ShowJobExeListNewResponse
+        r"""ShowJobExeListNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobExeListNewResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ShowJobExeListNewResponse.
+        r"""Gets the total_record of this ShowJobExeListNewResponse.
 
         总记录数
 
@@ -62,7 +62,7 @@ class ShowJobExeListNewResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ShowJobExeListNewResponse.
+        r"""Sets the total_record of this ShowJobExeListNewResponse.
 
         总记录数
 
@@ -73,7 +73,7 @@ class ShowJobExeListNewResponse(SdkResponse):
 
     @property
     def job_list(self):
-        """Gets the job_list of this ShowJobExeListNewResponse.
+        r"""Gets the job_list of this ShowJobExeListNewResponse.
 
         作业列表。
 
@@ -84,7 +84,7 @@ class ShowJobExeListNewResponse(SdkResponse):
 
     @job_list.setter
     def job_list(self, job_list):
-        """Sets the job_list of this ShowJobExeListNewResponse.
+        r"""Sets the job_list of this ShowJobExeListNewResponse.
 
         作业列表。
 

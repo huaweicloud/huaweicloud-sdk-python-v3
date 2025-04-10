@@ -33,7 +33,7 @@ class LoadBalancerStatusMember:
     }
 
     def __init__(self, provisioning_status=None, address=None, protocol_port=None, id=None, operating_status=None):
-        """LoadBalancerStatusMember
+        r"""LoadBalancerStatusMember
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LoadBalancerStatusMember:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancerStatusMember.
+        r"""Gets the provisioning_status of this LoadBalancerStatusMember.
 
         后端服务器配置状态。取值：ACTIVE表示使用中。
 
@@ -82,7 +82,7 @@ class LoadBalancerStatusMember:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancerStatusMember.
+        r"""Sets the provisioning_status of this LoadBalancerStatusMember.
 
         后端服务器配置状态。取值：ACTIVE表示使用中。
 
@@ -93,7 +93,7 @@ class LoadBalancerStatusMember:
 
     @property
     def address(self):
-        """Gets the address of this LoadBalancerStatusMember.
+        r"""Gets the address of this LoadBalancerStatusMember.
 
         后端服务器的IP地址。
 
@@ -104,7 +104,7 @@ class LoadBalancerStatusMember:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this LoadBalancerStatusMember.
+        r"""Sets the address of this LoadBalancerStatusMember.
 
         后端服务器的IP地址。
 
@@ -115,7 +115,7 @@ class LoadBalancerStatusMember:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this LoadBalancerStatusMember.
+        r"""Gets the protocol_port of this LoadBalancerStatusMember.
 
         后端服务器的端口号。取值范围[1, 65535]。
 
@@ -126,7 +126,7 @@ class LoadBalancerStatusMember:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this LoadBalancerStatusMember.
+        r"""Sets the protocol_port of this LoadBalancerStatusMember.
 
         后端服务器的端口号。取值范围[1, 65535]。
 
@@ -137,7 +137,7 @@ class LoadBalancerStatusMember:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerStatusMember.
+        r"""Gets the id of this LoadBalancerStatusMember.
 
         后端服务器ID。
 
@@ -148,7 +148,7 @@ class LoadBalancerStatusMember:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerStatusMember.
+        r"""Sets the id of this LoadBalancerStatusMember.
 
         后端服务器ID。
 
@@ -159,7 +159,7 @@ class LoadBalancerStatusMember:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this LoadBalancerStatusMember.
+        r"""Gets the operating_status of this LoadBalancerStatusMember.
 
         后端服务器的操作状态。  取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时， 会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
 
@@ -170,7 +170,7 @@ class LoadBalancerStatusMember:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this LoadBalancerStatusMember.
+        r"""Sets the operating_status of this LoadBalancerStatusMember.
 
         后端服务器的操作状态。  取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时， 会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
 

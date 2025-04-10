@@ -31,7 +31,7 @@ class ListVpnUsersInGroupRequest:
     }
 
     def __init__(self, vpn_server_id=None, group_id=None, limit=None, marker=None):
-        """ListVpnUsersInGroupRequest
+        r"""ListVpnUsersInGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListVpnUsersInGroupRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ListVpnUsersInGroupRequest.
+        r"""Gets the vpn_server_id of this ListVpnUsersInGroupRequest.
 
         VPN服务端 ID
 
@@ -73,7 +73,7 @@ class ListVpnUsersInGroupRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ListVpnUsersInGroupRequest.
+        r"""Sets the vpn_server_id of this ListVpnUsersInGroupRequest.
 
         VPN服务端 ID
 
@@ -84,7 +84,7 @@ class ListVpnUsersInGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListVpnUsersInGroupRequest.
+        r"""Gets the group_id of this ListVpnUsersInGroupRequest.
 
         用户组ID
 
@@ -95,7 +95,7 @@ class ListVpnUsersInGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListVpnUsersInGroupRequest.
+        r"""Sets the group_id of this ListVpnUsersInGroupRequest.
 
         用户组ID
 
@@ -106,7 +106,7 @@ class ListVpnUsersInGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpnUsersInGroupRequest.
+        r"""Gets the limit of this ListVpnUsersInGroupRequest.
 
         分页查询时每页返回的记录数量
 
@@ -117,7 +117,7 @@ class ListVpnUsersInGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpnUsersInGroupRequest.
+        r"""Sets the limit of this ListVpnUsersInGroupRequest.
 
         分页查询时每页返回的记录数量
 
@@ -128,7 +128,7 @@ class ListVpnUsersInGroupRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpnUsersInGroupRequest.
+        r"""Gets the marker of this ListVpnUsersInGroupRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -139,7 +139,7 @@ class ListVpnUsersInGroupRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpnUsersInGroupRequest.
+        r"""Sets the marker of this ListVpnUsersInGroupRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 

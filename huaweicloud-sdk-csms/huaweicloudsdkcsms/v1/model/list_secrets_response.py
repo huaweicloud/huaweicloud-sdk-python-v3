@@ -28,7 +28,7 @@ class ListSecretsResponse(SdkResponse):
     }
 
     def __init__(self, secrets=None, page_info=None):
-        """ListSecretsResponse
+        r"""ListSecretsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecretsResponse(SdkResponse):
 
     @property
     def secrets(self):
-        """Gets the secrets of this ListSecretsResponse.
+        r"""Gets the secrets of this ListSecretsResponse.
 
         凭据详情列表。
 
@@ -62,7 +62,7 @@ class ListSecretsResponse(SdkResponse):
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this ListSecretsResponse.
+        r"""Sets the secrets of this ListSecretsResponse.
 
         凭据详情列表。
 
@@ -73,7 +73,7 @@ class ListSecretsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSecretsResponse.
+        r"""Gets the page_info of this ListSecretsResponse.
 
         :return: The page_info of this ListSecretsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListSecretsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSecretsResponse.
+        r"""Sets the page_info of this ListSecretsResponse.
 
         :param page_info: The page_info of this ListSecretsResponse.
         :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`

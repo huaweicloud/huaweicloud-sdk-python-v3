@@ -27,7 +27,7 @@ class DeleteBasicAwByIdRequest:
     }
 
     def __init__(self, project_id=None, aw_id=None):
-        """DeleteBasicAwByIdRequest
+        r"""DeleteBasicAwByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteBasicAwByIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteBasicAwByIdRequest.
+        r"""Gets the project_id of this DeleteBasicAwByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class DeleteBasicAwByIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteBasicAwByIdRequest.
+        r"""Sets the project_id of this DeleteBasicAwByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class DeleteBasicAwByIdRequest:
 
     @property
     def aw_id(self):
-        """Gets the aw_id of this DeleteBasicAwByIdRequest.
+        r"""Gets the aw_id of this DeleteBasicAwByIdRequest.
 
         AW ID
 
@@ -81,7 +81,7 @@ class DeleteBasicAwByIdRequest:
 
     @aw_id.setter
     def aw_id(self, aw_id):
-        """Sets the aw_id of this DeleteBasicAwByIdRequest.
+        r"""Sets the aw_id of this DeleteBasicAwByIdRequest.
 
         AW ID
 

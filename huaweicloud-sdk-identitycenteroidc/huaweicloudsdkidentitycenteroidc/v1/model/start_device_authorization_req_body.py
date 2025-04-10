@@ -29,7 +29,7 @@ class StartDeviceAuthorizationReqBody:
     }
 
     def __init__(self, client_id=None, client_secret=None, start_url=None):
-        """StartDeviceAuthorizationReqBody
+        r"""StartDeviceAuthorizationReqBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class StartDeviceAuthorizationReqBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this StartDeviceAuthorizationReqBody.
+        r"""Gets the client_id of this StartDeviceAuthorizationReqBody.
 
         在IAM身份中心注册的客户端的唯一标识符
 
@@ -65,7 +65,7 @@ class StartDeviceAuthorizationReqBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this StartDeviceAuthorizationReqBody.
+        r"""Sets the client_id of this StartDeviceAuthorizationReqBody.
 
         在IAM身份中心注册的客户端的唯一标识符
 
@@ -76,7 +76,7 @@ class StartDeviceAuthorizationReqBody:
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this StartDeviceAuthorizationReqBody.
+        r"""Gets the client_secret of this StartDeviceAuthorizationReqBody.
 
         为客户端生成的秘密字符串。客户端将使用此字符串在后续调用中获得服务的身份验证
 
@@ -87,7 +87,7 @@ class StartDeviceAuthorizationReqBody:
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this StartDeviceAuthorizationReqBody.
+        r"""Sets the client_secret of this StartDeviceAuthorizationReqBody.
 
         为客户端生成的秘密字符串。客户端将使用此字符串在后续调用中获得服务的身份验证
 
@@ -98,7 +98,7 @@ class StartDeviceAuthorizationReqBody:
 
     @property
     def start_url(self):
-        """Gets the start_url of this StartDeviceAuthorizationReqBody.
+        r"""Gets the start_url of this StartDeviceAuthorizationReqBody.
 
         访问门户的URL
 
@@ -109,7 +109,7 @@ class StartDeviceAuthorizationReqBody:
 
     @start_url.setter
     def start_url(self, start_url):
-        """Sets the start_url of this StartDeviceAuthorizationReqBody.
+        r"""Sets the start_url of this StartDeviceAuthorizationReqBody.
 
         访问门户的URL
 

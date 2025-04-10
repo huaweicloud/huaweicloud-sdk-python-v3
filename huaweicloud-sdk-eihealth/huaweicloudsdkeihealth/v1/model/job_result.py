@@ -29,7 +29,7 @@ class JobResult:
     }
 
     def __init__(self, total_count=None, failed_count=None, sub_tasks_duration=None):
-        """JobResult
+        r"""JobResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobResult:
 
     @property
     def total_count(self):
-        """Gets the total_count of this JobResult.
+        r"""Gets the total_count of this JobResult.
 
         输入总数
 
@@ -68,7 +68,7 @@ class JobResult:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this JobResult.
+        r"""Sets the total_count of this JobResult.
 
         输入总数
 
@@ -79,7 +79,7 @@ class JobResult:
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this JobResult.
+        r"""Gets the failed_count of this JobResult.
 
         失败个数
 
@@ -90,7 +90,7 @@ class JobResult:
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this JobResult.
+        r"""Sets the failed_count of this JobResult.
 
         失败个数
 
@@ -101,7 +101,7 @@ class JobResult:
 
     @property
     def sub_tasks_duration(self):
-        """Gets the sub_tasks_duration of this JobResult.
+        r"""Gets the sub_tasks_duration of this JobResult.
 
         子任务运行时长（秒）。
 
@@ -112,7 +112,7 @@ class JobResult:
 
     @sub_tasks_duration.setter
     def sub_tasks_duration(self, sub_tasks_duration):
-        """Sets the sub_tasks_duration of this JobResult.
+        r"""Sets the sub_tasks_duration of this JobResult.
 
         子任务运行时长（秒）。
 

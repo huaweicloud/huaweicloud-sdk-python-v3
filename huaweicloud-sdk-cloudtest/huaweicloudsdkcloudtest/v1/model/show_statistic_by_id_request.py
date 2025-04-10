@@ -27,7 +27,7 @@ class ShowStatisticByIdRequest:
     }
 
     def __init__(self, project_id=None, mindmap_id=None):
-        """ShowStatisticByIdRequest
+        r"""ShowStatisticByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowStatisticByIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowStatisticByIdRequest.
+        r"""Gets the project_id of this ShowStatisticByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ShowStatisticByIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowStatisticByIdRequest.
+        r"""Sets the project_id of this ShowStatisticByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ShowStatisticByIdRequest:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this ShowStatisticByIdRequest.
+        r"""Gets the mindmap_id of this ShowStatisticByIdRequest.
 
         脑图ID
 
@@ -81,7 +81,7 @@ class ShowStatisticByIdRequest:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this ShowStatisticByIdRequest.
+        r"""Sets the mindmap_id of this ShowStatisticByIdRequest.
 
         脑图ID
 

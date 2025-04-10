@@ -27,7 +27,7 @@ class NamespacesNamespaces:
     }
 
     def __init__(self, id=None, name=None):
-        """NamespacesNamespaces
+        r"""NamespacesNamespaces
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NamespacesNamespaces:
 
     @property
     def id(self):
-        """Gets the id of this NamespacesNamespaces.
+        r"""Gets the id of this NamespacesNamespaces.
 
         命名空间ID。
 
@@ -59,7 +59,7 @@ class NamespacesNamespaces:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NamespacesNamespaces.
+        r"""Sets the id of this NamespacesNamespaces.
 
         命名空间ID。
 
@@ -70,7 +70,7 @@ class NamespacesNamespaces:
 
     @property
     def name(self):
-        """Gets the name of this NamespacesNamespaces.
+        r"""Gets the name of this NamespacesNamespaces.
 
         命名空间名称。
 
@@ -81,7 +81,7 @@ class NamespacesNamespaces:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NamespacesNamespaces.
+        r"""Sets the name of this NamespacesNamespaces.
 
         命名空间名称。
 

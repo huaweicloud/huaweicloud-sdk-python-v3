@@ -26,7 +26,7 @@ class UpdateAppDisableStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """UpdateAppDisableStatusResponse
+        r"""UpdateAppDisableStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAppDisableStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAppDisableStatusResponse.
+        r"""Gets the status of this UpdateAppDisableStatusResponse.
 
         请求成功失败状态
 
@@ -55,7 +55,7 @@ class UpdateAppDisableStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAppDisableStatusResponse.
+        r"""Sets the status of this UpdateAppDisableStatusResponse.
 
         请求成功失败状态
 

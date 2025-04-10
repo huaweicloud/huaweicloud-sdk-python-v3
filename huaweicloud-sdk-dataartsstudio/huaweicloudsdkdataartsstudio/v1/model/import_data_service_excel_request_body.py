@@ -25,7 +25,7 @@ class ImportDataServiceExcelRequestBody:
     }
 
     def __init__(self, file=None):
-        """ImportDataServiceExcelRequestBody
+        r"""ImportDataServiceExcelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportDataServiceExcelRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ImportDataServiceExcelRequestBody.
+        r"""Gets the file of this ImportDataServiceExcelRequestBody.
 
         导入包含api的excel文件，大小必须小于4MB。
 
@@ -53,7 +53,7 @@ class ImportDataServiceExcelRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ImportDataServiceExcelRequestBody.
+        r"""Sets the file of this ImportDataServiceExcelRequestBody.
 
         导入包含api的excel文件，大小必须小于4MB。
 

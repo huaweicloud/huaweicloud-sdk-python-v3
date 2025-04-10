@@ -121,7 +121,7 @@ class MonthlyBillRes:
     }
 
     def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None, extend_params=None):
-        """MonthlyBillRes
+        r"""MonthlyBillRes
 
         The model defined in huaweicloud sdk
 
@@ -379,7 +379,7 @@ class MonthlyBillRes:
 
     @property
     def cycle(self):
-        """Gets the cycle of this MonthlyBillRes.
+        r"""Gets the cycle of this MonthlyBillRes.
 
         资源详单数据所在账期，东八区时间，格式为YYYY-MM。 例如2020-01。
 
@@ -390,7 +390,7 @@ class MonthlyBillRes:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this MonthlyBillRes.
+        r"""Sets the cycle of this MonthlyBillRes.
 
         资源详单数据所在账期，东八区时间，格式为YYYY-MM。 例如2020-01。
 
@@ -401,7 +401,7 @@ class MonthlyBillRes:
 
     @property
     def bill_date(self):
-        """Gets the bill_date of this MonthlyBillRes.
+        r"""Gets the bill_date of this MonthlyBillRes.
 
         消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type=2时该字段才有值，否则返回null。
 
@@ -412,7 +412,7 @@ class MonthlyBillRes:
 
     @bill_date.setter
     def bill_date(self, bill_date):
-        """Sets the bill_date of this MonthlyBillRes.
+        r"""Sets the bill_date of this MonthlyBillRes.
 
         消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type=2时该字段才有值，否则返回null。
 
@@ -423,7 +423,7 @@ class MonthlyBillRes:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this MonthlyBillRes.
+        r"""Gets the bill_type of this MonthlyBillRes.
 
         账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
@@ -434,7 +434,7 @@ class MonthlyBillRes:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this MonthlyBillRes.
+        r"""Sets the bill_type of this MonthlyBillRes.
 
         账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
@@ -445,7 +445,7 @@ class MonthlyBillRes:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this MonthlyBillRes.
+        r"""Gets the customer_id of this MonthlyBillRes.
 
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
@@ -456,7 +456,7 @@ class MonthlyBillRes:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this MonthlyBillRes.
+        r"""Sets the customer_id of this MonthlyBillRes.
 
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
@@ -467,7 +467,7 @@ class MonthlyBillRes:
 
     @property
     def region(self):
-        """Gets the region of this MonthlyBillRes.
+        r"""Gets the region of this MonthlyBillRes.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -478,7 +478,7 @@ class MonthlyBillRes:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MonthlyBillRes.
+        r"""Sets the region of this MonthlyBillRes.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -489,7 +489,7 @@ class MonthlyBillRes:
 
     @property
     def region_name(self):
-        """Gets the region_name of this MonthlyBillRes.
+        r"""Gets the region_name of this MonthlyBillRes.
 
         云服务区名称，例如：“中国-香港”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -500,7 +500,7 @@ class MonthlyBillRes:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this MonthlyBillRes.
+        r"""Sets the region_name of this MonthlyBillRes.
 
         云服务区名称，例如：“中国-香港”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -511,7 +511,7 @@ class MonthlyBillRes:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this MonthlyBillRes.
+        r"""Gets the cloud_service_type of this MonthlyBillRes.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -522,7 +522,7 @@ class MonthlyBillRes:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this MonthlyBillRes.
+        r"""Sets the cloud_service_type of this MonthlyBillRes.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -533,7 +533,7 @@ class MonthlyBillRes:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this MonthlyBillRes.
+        r"""Gets the resource_type_code of this MonthlyBillRes.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -544,7 +544,7 @@ class MonthlyBillRes:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this MonthlyBillRes.
+        r"""Sets the resource_type_code of this MonthlyBillRes.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -555,7 +555,7 @@ class MonthlyBillRes:
 
     @property
     def cloud_service_type_name(self):
-        """Gets the cloud_service_type_name of this MonthlyBillRes.
+        r"""Gets the cloud_service_type_name of this MonthlyBillRes.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -566,7 +566,7 @@ class MonthlyBillRes:
 
     @cloud_service_type_name.setter
     def cloud_service_type_name(self, cloud_service_type_name):
-        """Sets the cloud_service_type_name of this MonthlyBillRes.
+        r"""Sets the cloud_service_type_name of this MonthlyBillRes.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -577,7 +577,7 @@ class MonthlyBillRes:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this MonthlyBillRes.
+        r"""Gets the resource_type_name of this MonthlyBillRes.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -588,7 +588,7 @@ class MonthlyBillRes:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this MonthlyBillRes.
+        r"""Sets the resource_type_name of this MonthlyBillRes.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -599,7 +599,7 @@ class MonthlyBillRes:
 
     @property
     def res_instance_id(self):
-        """Gets the res_instance_id of this MonthlyBillRes.
+        r"""Gets the res_instance_id of this MonthlyBillRes.
 
         资源实例ID。
 
@@ -610,7 +610,7 @@ class MonthlyBillRes:
 
     @res_instance_id.setter
     def res_instance_id(self, res_instance_id):
-        """Sets the res_instance_id of this MonthlyBillRes.
+        r"""Sets the res_instance_id of this MonthlyBillRes.
 
         资源实例ID。
 
@@ -621,7 +621,7 @@ class MonthlyBillRes:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this MonthlyBillRes.
+        r"""Gets the resource_name of this MonthlyBillRes.
 
         资源名称。客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称。
 
@@ -632,7 +632,7 @@ class MonthlyBillRes:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this MonthlyBillRes.
+        r"""Sets the resource_name of this MonthlyBillRes.
 
         资源名称。客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称。
 
@@ -643,7 +643,7 @@ class MonthlyBillRes:
 
     @property
     def resource_tag(self):
-        """Gets the resource_tag of this MonthlyBillRes.
+        r"""Gets the resource_tag of this MonthlyBillRes.
 
         资源标签。客户在管理资源的时候，可以设置资源标签。
 
@@ -654,7 +654,7 @@ class MonthlyBillRes:
 
     @resource_tag.setter
     def resource_tag(self, resource_tag):
-        """Sets the resource_tag of this MonthlyBillRes.
+        r"""Sets the resource_tag of this MonthlyBillRes.
 
         资源标签。客户在管理资源的时候，可以设置资源标签。
 
@@ -665,7 +665,7 @@ class MonthlyBillRes:
 
     @property
     def sku_code(self):
-        """Gets the sku_code of this MonthlyBillRes.
+        r"""Gets the sku_code of this MonthlyBillRes.
 
         SKU编码，在账单中唯一标识一个资源的规格。
 
@@ -676,7 +676,7 @@ class MonthlyBillRes:
 
     @sku_code.setter
     def sku_code(self, sku_code):
-        """Sets the sku_code of this MonthlyBillRes.
+        r"""Sets the sku_code of this MonthlyBillRes.
 
         SKU编码，在账单中唯一标识一个资源的规格。
 
@@ -687,7 +687,7 @@ class MonthlyBillRes:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MonthlyBillRes.
+        r"""Gets the enterprise_project_id of this MonthlyBillRes.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见如何获取企业项目ID。
 
@@ -698,7 +698,7 @@ class MonthlyBillRes:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MonthlyBillRes.
+        r"""Sets the enterprise_project_id of this MonthlyBillRes.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见如何获取企业项目ID。
 
@@ -709,7 +709,7 @@ class MonthlyBillRes:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this MonthlyBillRes.
+        r"""Gets the enterprise_project_name of this MonthlyBillRes.
 
         企业项目名称。
 
@@ -720,7 +720,7 @@ class MonthlyBillRes:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this MonthlyBillRes.
+        r"""Sets the enterprise_project_name of this MonthlyBillRes.
 
         企业项目名称。
 
@@ -731,7 +731,7 @@ class MonthlyBillRes:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this MonthlyBillRes.
+        r"""Gets the charge_mode of this MonthlyBillRes.
 
         计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划。
 
@@ -742,7 +742,7 @@ class MonthlyBillRes:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this MonthlyBillRes.
+        r"""Sets the charge_mode of this MonthlyBillRes.
 
         计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划。
 
@@ -753,7 +753,7 @@ class MonthlyBillRes:
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this MonthlyBillRes.
+        r"""Gets the consume_amount of this MonthlyBillRes.
 
         客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后8位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
@@ -764,7 +764,7 @@ class MonthlyBillRes:
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this MonthlyBillRes.
+        r"""Sets the consume_amount of this MonthlyBillRes.
 
         客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后8位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
@@ -775,7 +775,7 @@ class MonthlyBillRes:
 
     @property
     def cash_amount(self):
-        """Gets the cash_amount of this MonthlyBillRes.
+        r"""Gets the cash_amount of this MonthlyBillRes.
 
         现金支付金额。
 
@@ -786,7 +786,7 @@ class MonthlyBillRes:
 
     @cash_amount.setter
     def cash_amount(self, cash_amount):
-        """Sets the cash_amount of this MonthlyBillRes.
+        r"""Sets the cash_amount of this MonthlyBillRes.
 
         现金支付金额。
 
@@ -797,7 +797,7 @@ class MonthlyBillRes:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this MonthlyBillRes.
+        r"""Gets the credit_amount of this MonthlyBillRes.
 
         信用额度支付金额。
 
@@ -808,7 +808,7 @@ class MonthlyBillRes:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this MonthlyBillRes.
+        r"""Sets the credit_amount of this MonthlyBillRes.
 
         信用额度支付金额。
 
@@ -819,7 +819,7 @@ class MonthlyBillRes:
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this MonthlyBillRes.
+        r"""Gets the coupon_amount of this MonthlyBillRes.
 
         代金券支付金额。
 
@@ -830,7 +830,7 @@ class MonthlyBillRes:
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this MonthlyBillRes.
+        r"""Sets the coupon_amount of this MonthlyBillRes.
 
         代金券支付金额。
 
@@ -841,7 +841,7 @@ class MonthlyBillRes:
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this MonthlyBillRes.
+        r"""Gets the flexipurchase_coupon_amount of this MonthlyBillRes.
 
         现金券支付金额。
 
@@ -852,7 +852,7 @@ class MonthlyBillRes:
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this MonthlyBillRes.
+        r"""Sets the flexipurchase_coupon_amount of this MonthlyBillRes.
 
         现金券支付金额。
 
@@ -863,7 +863,7 @@ class MonthlyBillRes:
 
     @property
     def stored_card_amount(self):
-        """Gets the stored_card_amount of this MonthlyBillRes.
+        r"""Gets the stored_card_amount of this MonthlyBillRes.
 
         储值卡支付金额。
 
@@ -874,7 +874,7 @@ class MonthlyBillRes:
 
     @stored_card_amount.setter
     def stored_card_amount(self, stored_card_amount):
-        """Sets the stored_card_amount of this MonthlyBillRes.
+        r"""Sets the stored_card_amount of this MonthlyBillRes.
 
         储值卡支付金额。
 
@@ -885,7 +885,7 @@ class MonthlyBillRes:
 
     @property
     def bonus_amount(self):
-        """Gets the bonus_amount of this MonthlyBillRes.
+        r"""Gets the bonus_amount of this MonthlyBillRes.
 
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
@@ -896,7 +896,7 @@ class MonthlyBillRes:
 
     @bonus_amount.setter
     def bonus_amount(self, bonus_amount):
-        """Sets the bonus_amount of this MonthlyBillRes.
+        r"""Sets the bonus_amount of this MonthlyBillRes.
 
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
@@ -907,7 +907,7 @@ class MonthlyBillRes:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this MonthlyBillRes.
+        r"""Gets the debt_amount of this MonthlyBillRes.
 
         欠费金额。
 
@@ -918,7 +918,7 @@ class MonthlyBillRes:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this MonthlyBillRes.
+        r"""Sets the debt_amount of this MonthlyBillRes.
 
         欠费金额。
 
@@ -929,7 +929,7 @@ class MonthlyBillRes:
 
     @property
     def adjustment_amount(self):
-        """Gets the adjustment_amount of this MonthlyBillRes.
+        r"""Gets the adjustment_amount of this MonthlyBillRes.
 
         欠费核销金额。
 
@@ -940,7 +940,7 @@ class MonthlyBillRes:
 
     @adjustment_amount.setter
     def adjustment_amount(self, adjustment_amount):
-        """Sets the adjustment_amount of this MonthlyBillRes.
+        r"""Sets the adjustment_amount of this MonthlyBillRes.
 
         欠费核销金额。
 
@@ -951,7 +951,7 @@ class MonthlyBillRes:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this MonthlyBillRes.
+        r"""Gets the official_amount of this MonthlyBillRes.
 
         官网价。
 
@@ -962,7 +962,7 @@ class MonthlyBillRes:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this MonthlyBillRes.
+        r"""Sets the official_amount of this MonthlyBillRes.
 
         官网价。
 
@@ -973,7 +973,7 @@ class MonthlyBillRes:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this MonthlyBillRes.
+        r"""Gets the discount_amount of this MonthlyBillRes.
 
         对应官网价折扣金额。
 
@@ -984,7 +984,7 @@ class MonthlyBillRes:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this MonthlyBillRes.
+        r"""Sets the discount_amount of this MonthlyBillRes.
 
         对应官网价折扣金额。
 
@@ -995,7 +995,7 @@ class MonthlyBillRes:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this MonthlyBillRes.
+        r"""Gets the measure_id of this MonthlyBillRes.
 
         金额单位。 1：元
 
@@ -1006,7 +1006,7 @@ class MonthlyBillRes:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this MonthlyBillRes.
+        r"""Sets the measure_id of this MonthlyBillRes.
 
         金额单位。 1：元
 
@@ -1017,7 +1017,7 @@ class MonthlyBillRes:
 
     @property
     def period_type(self):
-        """Gets the period_type of this MonthlyBillRes.
+        r"""Gets the period_type of this MonthlyBillRes.
 
         周期类型： 19：年20：月24：天25：小时5：一次性
 
@@ -1028,7 +1028,7 @@ class MonthlyBillRes:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this MonthlyBillRes.
+        r"""Sets the period_type of this MonthlyBillRes.
 
         周期类型： 19：年20：月24：天25：小时5：一次性
 
@@ -1039,7 +1039,7 @@ class MonthlyBillRes:
 
     @property
     def root_resource_id(self):
-        """Gets the root_resource_id of this MonthlyBillRes.
+        r"""Gets the root_resource_id of this MonthlyBillRes.
 
         根资源标识。
 
@@ -1050,7 +1050,7 @@ class MonthlyBillRes:
 
     @root_resource_id.setter
     def root_resource_id(self, root_resource_id):
-        """Sets the root_resource_id of this MonthlyBillRes.
+        r"""Sets the root_resource_id of this MonthlyBillRes.
 
         根资源标识。
 
@@ -1061,7 +1061,7 @@ class MonthlyBillRes:
 
     @property
     def parent_resource_id(self):
-        """Gets the parent_resource_id of this MonthlyBillRes.
+        r"""Gets the parent_resource_id of this MonthlyBillRes.
 
         父资源标识。
 
@@ -1072,7 +1072,7 @@ class MonthlyBillRes:
 
     @parent_resource_id.setter
     def parent_resource_id(self, parent_resource_id):
-        """Sets the parent_resource_id of this MonthlyBillRes.
+        r"""Sets the parent_resource_id of this MonthlyBillRes.
 
         父资源标识。
 
@@ -1083,7 +1083,7 @@ class MonthlyBillRes:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this MonthlyBillRes.
+        r"""Gets the trade_id of this MonthlyBillRes.
 
         订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
 
@@ -1094,7 +1094,7 @@ class MonthlyBillRes:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this MonthlyBillRes.
+        r"""Sets the trade_id of this MonthlyBillRes.
 
         订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
 
@@ -1105,7 +1105,7 @@ class MonthlyBillRes:
 
     @property
     def id(self):
-        """Gets the id of this MonthlyBillRes.
+        r"""Gets the id of this MonthlyBillRes.
 
         |参数名称：唯一标识。| |参数约束及描述：该字段为预留字段。|
 
@@ -1116,7 +1116,7 @@ class MonthlyBillRes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MonthlyBillRes.
+        r"""Sets the id of this MonthlyBillRes.
 
         |参数名称：唯一标识。| |参数约束及描述：该字段为预留字段。|
 
@@ -1127,7 +1127,7 @@ class MonthlyBillRes:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this MonthlyBillRes.
+        r"""Gets the product_spec_desc of this MonthlyBillRes.
 
         产品的规格描述。
 
@@ -1138,7 +1138,7 @@ class MonthlyBillRes:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this MonthlyBillRes.
+        r"""Sets the product_spec_desc of this MonthlyBillRes.
 
         产品的规格描述。
 
@@ -1149,7 +1149,7 @@ class MonthlyBillRes:
 
     @property
     def sub_service_type_code(self):
-        """Gets the sub_service_type_code of this MonthlyBillRes.
+        r"""Gets the sub_service_type_code of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1160,7 +1160,7 @@ class MonthlyBillRes:
 
     @sub_service_type_code.setter
     def sub_service_type_code(self, sub_service_type_code):
-        """Sets the sub_service_type_code of this MonthlyBillRes.
+        r"""Sets the sub_service_type_code of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1171,7 +1171,7 @@ class MonthlyBillRes:
 
     @property
     def sub_service_type_name(self):
-        """Gets the sub_service_type_name of this MonthlyBillRes.
+        r"""Gets the sub_service_type_name of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1182,7 +1182,7 @@ class MonthlyBillRes:
 
     @sub_service_type_name.setter
     def sub_service_type_name(self, sub_service_type_name):
-        """Sets the sub_service_type_name of this MonthlyBillRes.
+        r"""Sets the sub_service_type_name of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1193,7 +1193,7 @@ class MonthlyBillRes:
 
     @property
     def sub_resource_type_code(self):
-        """Gets the sub_resource_type_code of this MonthlyBillRes.
+        r"""Gets the sub_resource_type_code of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1204,7 +1204,7 @@ class MonthlyBillRes:
 
     @sub_resource_type_code.setter
     def sub_resource_type_code(self, sub_resource_type_code):
-        """Sets the sub_resource_type_code of this MonthlyBillRes.
+        r"""Sets the sub_resource_type_code of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1215,7 +1215,7 @@ class MonthlyBillRes:
 
     @property
     def sub_resource_type_name(self):
-        """Gets the sub_resource_type_name of this MonthlyBillRes.
+        r"""Gets the sub_resource_type_name of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1226,7 +1226,7 @@ class MonthlyBillRes:
 
     @sub_resource_type_name.setter
     def sub_resource_type_name(self, sub_resource_type_name):
-        """Sets the sub_resource_type_name of this MonthlyBillRes.
+        r"""Sets the sub_resource_type_name of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1237,7 +1237,7 @@ class MonthlyBillRes:
 
     @property
     def sub_resource_id(self):
-        """Gets the sub_resource_id of this MonthlyBillRes.
+        r"""Gets the sub_resource_id of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1248,7 +1248,7 @@ class MonthlyBillRes:
 
     @sub_resource_id.setter
     def sub_resource_id(self, sub_resource_id):
-        """Sets the sub_resource_id of this MonthlyBillRes.
+        r"""Sets the sub_resource_id of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1259,7 +1259,7 @@ class MonthlyBillRes:
 
     @property
     def sub_resource_name(self):
-        """Gets the sub_resource_name of this MonthlyBillRes.
+        r"""Gets the sub_resource_name of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1270,7 +1270,7 @@ class MonthlyBillRes:
 
     @sub_resource_name.setter
     def sub_resource_name(self, sub_resource_name):
-        """Sets the sub_resource_name of this MonthlyBillRes.
+        r"""Sets the sub_resource_name of this MonthlyBillRes.
 
         该字段为预留字段。
 
@@ -1281,7 +1281,7 @@ class MonthlyBillRes:
 
     @property
     def pre_order_id(self):
-        """Gets the pre_order_id of this MonthlyBillRes.
+        r"""Gets the pre_order_id of this MonthlyBillRes.
 
         |参数名称：原订单ID| |参数的约束及描述：该参数非必填，且只允许字符串|
 
@@ -1292,7 +1292,7 @@ class MonthlyBillRes:
 
     @pre_order_id.setter
     def pre_order_id(self, pre_order_id):
-        """Sets the pre_order_id of this MonthlyBillRes.
+        r"""Sets the pre_order_id of this MonthlyBillRes.
 
         |参数名称：原订单ID| |参数的约束及描述：该参数非必填，且只允许字符串|
 
@@ -1303,7 +1303,7 @@ class MonthlyBillRes:
 
     @property
     def az_code_infos(self):
-        """Gets the az_code_infos of this MonthlyBillRes.
+        r"""Gets the az_code_infos of this MonthlyBillRes.
 
         |参数名称：可用区信息列表| |参数的约束及描述：该参数非必填，且只允许字符串|
 
@@ -1314,7 +1314,7 @@ class MonthlyBillRes:
 
     @az_code_infos.setter
     def az_code_infos(self, az_code_infos):
-        """Sets the az_code_infos of this MonthlyBillRes.
+        r"""Sets the az_code_infos of this MonthlyBillRes.
 
         |参数名称：可用区信息列表| |参数的约束及描述：该参数非必填，且只允许字符串|
 
@@ -1325,7 +1325,7 @@ class MonthlyBillRes:
 
     @property
     def payer_account_id(self):
-        """Gets the payer_account_id of this MonthlyBillRes.
+        r"""Gets the payer_account_id of this MonthlyBillRes.
 
         |参数名称：支付账号ID。| |参数的约束及描述：如果是普通客户或者财务独立企业子客户或者企业主客户查询消费记录，此处为客户自己的客户ID。如果是财务托管企业子查询消费记录，此处为企业主客户ID或自己的客户ID。|
 
@@ -1336,7 +1336,7 @@ class MonthlyBillRes:
 
     @payer_account_id.setter
     def payer_account_id(self, payer_account_id):
-        """Sets the payer_account_id of this MonthlyBillRes.
+        r"""Sets the payer_account_id of this MonthlyBillRes.
 
         |参数名称：支付账号ID。| |参数的约束及描述：如果是普通客户或者财务独立企业子客户或者企业主客户查询消费记录，此处为客户自己的客户ID。如果是财务托管企业子查询消费记录，此处为企业主客户ID或自己的客户ID。|
 
@@ -1347,7 +1347,7 @@ class MonthlyBillRes:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this MonthlyBillRes.
+        r"""Gets the effective_time of this MonthlyBillRes.
 
         |参数名称：费用对应的资源使用的开始时间| |参数的约束及描述：费用对应的资源使用的开始时间，statistic_type=3有效，statistic_type=1或者2该字段保留。|
 
@@ -1358,7 +1358,7 @@ class MonthlyBillRes:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this MonthlyBillRes.
+        r"""Sets the effective_time of this MonthlyBillRes.
 
         |参数名称：费用对应的资源使用的开始时间| |参数的约束及描述：费用对应的资源使用的开始时间，statistic_type=3有效，statistic_type=1或者2该字段保留。|
 
@@ -1369,7 +1369,7 @@ class MonthlyBillRes:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this MonthlyBillRes.
+        r"""Gets the expire_time of this MonthlyBillRes.
 
         |参数名称：费用对应的资源使用的结束时间| |参数的约束及描述：费用对应的资源使用的结束时间，statistic_type=3有效，statistic_type=1或者2该字段保留。|
 
@@ -1380,7 +1380,7 @@ class MonthlyBillRes:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this MonthlyBillRes.
+        r"""Sets the expire_time of this MonthlyBillRes.
 
         |参数名称：费用对应的资源使用的结束时间| |参数的约束及描述：费用对应的资源使用的结束时间，statistic_type=3有效，statistic_type=1或者2该字段保留。|
 
@@ -1391,7 +1391,7 @@ class MonthlyBillRes:
 
     @property
     def consume_time(self):
-        """Gets the consume_time of this MonthlyBillRes.
+        r"""Gets the consume_time of this MonthlyBillRes.
 
         |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type=3时有效。|
 
@@ -1402,7 +1402,7 @@ class MonthlyBillRes:
 
     @consume_time.setter
     def consume_time(self, consume_time):
-        """Sets the consume_time of this MonthlyBillRes.
+        r"""Sets the consume_time of this MonthlyBillRes.
 
         |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type=3时有效。|
 
@@ -1413,7 +1413,7 @@ class MonthlyBillRes:
 
     @property
     def be_id(self):
-        """Gets the be_id of this MonthlyBillRes.
+        r"""Gets the be_id of this MonthlyBillRes.
 
         |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
 
@@ -1424,7 +1424,7 @@ class MonthlyBillRes:
 
     @be_id.setter
     def be_id(self, be_id):
-        """Sets the be_id of this MonthlyBillRes.
+        r"""Sets the be_id of this MonthlyBillRes.
 
         |参数名称：华为云运营实体ID。| |参数约束及描述：华为云运营实体ID。|
 
@@ -1435,7 +1435,7 @@ class MonthlyBillRes:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this MonthlyBillRes.
+        r"""Gets the extend_params of this MonthlyBillRes.
 
         :return: The extend_params of this MonthlyBillRes.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ResRelation`
@@ -1444,7 +1444,7 @@ class MonthlyBillRes:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this MonthlyBillRes.
+        r"""Sets the extend_params of this MonthlyBillRes.
 
         :param extend_params: The extend_params of this MonthlyBillRes.
         :type extend_params: :class:`huaweicloudsdkbssintl.v2.ResRelation`

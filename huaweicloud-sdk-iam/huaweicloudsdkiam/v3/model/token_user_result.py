@@ -31,7 +31,7 @@ class TokenUserResult:
     }
 
     def __init__(self, name=None, id=None, password_expires_at=None, domain=None):
-        """TokenUserResult
+        r"""TokenUserResult
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TokenUserResult:
 
     @property
     def name(self):
-        """Gets the name of this TokenUserResult.
+        r"""Gets the name of this TokenUserResult.
 
         IAM用户名。
 
@@ -71,7 +71,7 @@ class TokenUserResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TokenUserResult.
+        r"""Sets the name of this TokenUserResult.
 
         IAM用户名。
 
@@ -82,7 +82,7 @@ class TokenUserResult:
 
     @property
     def id(self):
-        """Gets the id of this TokenUserResult.
+        r"""Gets the id of this TokenUserResult.
 
         IAM用户ID。
 
@@ -93,7 +93,7 @@ class TokenUserResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TokenUserResult.
+        r"""Sets the id of this TokenUserResult.
 
         IAM用户ID。
 
@@ -104,7 +104,7 @@ class TokenUserResult:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this TokenUserResult.
+        r"""Gets the password_expires_at of this TokenUserResult.
 
         密码过期时间（UTC时间），“”表示密码不过期。
 
@@ -115,7 +115,7 @@ class TokenUserResult:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this TokenUserResult.
+        r"""Sets the password_expires_at of this TokenUserResult.
 
         密码过期时间（UTC时间），“”表示密码不过期。
 
@@ -126,7 +126,7 @@ class TokenUserResult:
 
     @property
     def domain(self):
-        """Gets the domain of this TokenUserResult.
+        r"""Gets the domain of this TokenUserResult.
 
         :return: The domain of this TokenUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`
@@ -135,7 +135,7 @@ class TokenUserResult:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this TokenUserResult.
+        r"""Sets the domain of this TokenUserResult.
 
         :param domain: The domain of this TokenUserResult.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`

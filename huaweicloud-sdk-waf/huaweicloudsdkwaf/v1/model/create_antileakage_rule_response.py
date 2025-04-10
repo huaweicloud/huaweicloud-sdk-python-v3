@@ -38,7 +38,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None):
-        """CreateAntileakageRuleResponse
+        r"""CreateAntileakageRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAntileakageRuleResponse.
+        r"""Gets the id of this CreateAntileakageRuleResponse.
 
         规则id
 
@@ -97,7 +97,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAntileakageRuleResponse.
+        r"""Sets the id of this CreateAntileakageRuleResponse.
 
         规则id
 
@@ -108,7 +108,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreateAntileakageRuleResponse.
+        r"""Gets the policyid of this CreateAntileakageRuleResponse.
 
         策略id
 
@@ -119,7 +119,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreateAntileakageRuleResponse.
+        r"""Sets the policyid of this CreateAntileakageRuleResponse.
 
         策略id
 
@@ -130,7 +130,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this CreateAntileakageRuleResponse.
+        r"""Gets the url of this CreateAntileakageRuleResponse.
 
         规则应用的url
 
@@ -141,7 +141,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateAntileakageRuleResponse.
+        r"""Sets the url of this CreateAntileakageRuleResponse.
 
         规则应用的url
 
@@ -152,7 +152,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this CreateAntileakageRuleResponse.
+        r"""Gets the category of this CreateAntileakageRuleResponse.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -163,7 +163,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateAntileakageRuleResponse.
+        r"""Sets the category of this CreateAntileakageRuleResponse.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -174,7 +174,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def contents(self):
-        """Gets the contents of this CreateAntileakageRuleResponse.
+        r"""Gets the contents of this CreateAntileakageRuleResponse.
 
         内容
 
@@ -185,7 +185,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CreateAntileakageRuleResponse.
+        r"""Sets the contents of this CreateAntileakageRuleResponse.
 
         内容
 
@@ -196,7 +196,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateAntileakageRuleResponse.
+        r"""Gets the timestamp of this CreateAntileakageRuleResponse.
 
         创建规则时间戳
 
@@ -207,7 +207,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateAntileakageRuleResponse.
+        r"""Sets the timestamp of this CreateAntileakageRuleResponse.
 
         创建规则时间戳
 
@@ -218,7 +218,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAntileakageRuleResponse.
+        r"""Gets the status of this CreateAntileakageRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -229,7 +229,7 @@ class CreateAntileakageRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAntileakageRuleResponse.
+        r"""Sets the status of this CreateAntileakageRuleResponse.
 
         规则状态，0：关闭，1：开启
 

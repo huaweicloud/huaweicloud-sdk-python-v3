@@ -27,7 +27,7 @@ class ChangeIegPasswordRequest:
     }
 
     def __init__(self, ieg_id=None, body=None):
-        """ChangeIegPasswordRequest
+        r"""ChangeIegPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeIegPasswordRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ChangeIegPasswordRequest.
+        r"""Gets the ieg_id of this ChangeIegPasswordRequest.
 
         智能企业网关ID
 
@@ -60,7 +60,7 @@ class ChangeIegPasswordRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ChangeIegPasswordRequest.
+        r"""Sets the ieg_id of this ChangeIegPasswordRequest.
 
         智能企业网关ID
 
@@ -71,7 +71,7 @@ class ChangeIegPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeIegPasswordRequest.
+        r"""Gets the body of this ChangeIegPasswordRequest.
 
         :return: The body of this ChangeIegPasswordRequest.
         :rtype: :class:`huaweicloudsdkec.v1.ChangePasswordBody`
@@ -80,7 +80,7 @@ class ChangeIegPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeIegPasswordRequest.
+        r"""Sets the body of this ChangeIegPasswordRequest.
 
         :param body: The body of this ChangeIegPasswordRequest.
         :type body: :class:`huaweicloudsdkec.v1.ChangePasswordBody`

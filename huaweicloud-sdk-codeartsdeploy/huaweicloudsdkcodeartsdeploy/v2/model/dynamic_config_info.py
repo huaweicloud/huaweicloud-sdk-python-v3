@@ -29,7 +29,7 @@ class DynamicConfigInfo:
     }
 
     def __init__(self, key=None, value=None, type=None):
-        """DynamicConfigInfo
+        r"""DynamicConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DynamicConfigInfo:
 
     @property
     def key(self):
-        """Gets the key of this DynamicConfigInfo.
+        r"""Gets the key of this DynamicConfigInfo.
 
         部署应用时传递的参数名称
 
@@ -68,7 +68,7 @@ class DynamicConfigInfo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DynamicConfigInfo.
+        r"""Sets the key of this DynamicConfigInfo.
 
         部署应用时传递的参数名称
 
@@ -79,7 +79,7 @@ class DynamicConfigInfo:
 
     @property
     def value(self):
-        """Gets the value of this DynamicConfigInfo.
+        r"""Gets the value of this DynamicConfigInfo.
 
         部署应用时传递的参数值
 
@@ -90,7 +90,7 @@ class DynamicConfigInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DynamicConfigInfo.
+        r"""Sets the value of this DynamicConfigInfo.
 
         部署应用时传递的参数值
 
@@ -101,7 +101,7 @@ class DynamicConfigInfo:
 
     @property
     def type(self):
-        """Gets the type of this DynamicConfigInfo.
+        r"""Gets the type of this DynamicConfigInfo.
 
         类型，如果填写动态参数，则类型必选
 
@@ -112,7 +112,7 @@ class DynamicConfigInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DynamicConfigInfo.
+        r"""Sets the type of this DynamicConfigInfo.
 
         类型，如果填写动态参数，则类型必选
 

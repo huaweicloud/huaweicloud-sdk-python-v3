@@ -25,7 +25,7 @@ class DeleteAppGroupRequest:
     }
 
     def __init__(self, app_group_id=None):
-        """DeleteAppGroupRequest
+        r"""DeleteAppGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAppGroupRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this DeleteAppGroupRequest.
+        r"""Gets the app_group_id of this DeleteAppGroupRequest.
 
         应用组ID。
 
@@ -53,7 +53,7 @@ class DeleteAppGroupRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this DeleteAppGroupRequest.
+        r"""Sets the app_group_id of this DeleteAppGroupRequest.
 
         应用组ID。
 

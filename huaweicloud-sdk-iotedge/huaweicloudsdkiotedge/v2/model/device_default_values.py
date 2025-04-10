@@ -29,7 +29,7 @@ class DeviceDefaultValues:
     }
 
     def __init__(self, device_id=None, service_id=None, properties=None):
-        """DeviceDefaultValues
+        r"""DeviceDefaultValues
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeviceDefaultValues:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DeviceDefaultValues.
+        r"""Gets the device_id of this DeviceDefaultValues.
 
         设备ID
 
@@ -66,7 +66,7 @@ class DeviceDefaultValues:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DeviceDefaultValues.
+        r"""Sets the device_id of this DeviceDefaultValues.
 
         设备ID
 
@@ -77,7 +77,7 @@ class DeviceDefaultValues:
 
     @property
     def service_id(self):
-        """Gets the service_id of this DeviceDefaultValues.
+        r"""Gets the service_id of this DeviceDefaultValues.
 
         服务id，可选
 
@@ -88,7 +88,7 @@ class DeviceDefaultValues:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this DeviceDefaultValues.
+        r"""Sets the service_id of this DeviceDefaultValues.
 
         服务id，可选
 
@@ -99,7 +99,7 @@ class DeviceDefaultValues:
 
     @property
     def properties(self):
-        """Gets the properties of this DeviceDefaultValues.
+        r"""Gets the properties of this DeviceDefaultValues.
 
         属性key和value的map，用于设置属性的值
 
@@ -110,7 +110,7 @@ class DeviceDefaultValues:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this DeviceDefaultValues.
+        r"""Sets the properties of this DeviceDefaultValues.
 
         属性key和value的map，用于设置属性的值
 

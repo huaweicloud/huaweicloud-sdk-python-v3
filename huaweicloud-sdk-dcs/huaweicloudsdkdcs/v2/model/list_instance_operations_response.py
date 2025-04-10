@@ -28,7 +28,7 @@ class ListInstanceOperationsResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, operations=None):
-        """ListInstanceOperationsResponse
+        r"""ListInstanceOperationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceOperationsResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceOperationsResponse.
+        r"""Gets the instance_id of this ListInstanceOperationsResponse.
 
         实例ID
 
@@ -62,7 +62,7 @@ class ListInstanceOperationsResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceOperationsResponse.
+        r"""Sets the instance_id of this ListInstanceOperationsResponse.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListInstanceOperationsResponse(SdkResponse):
 
     @property
     def operations(self):
-        """Gets the operations of this ListInstanceOperationsResponse.
+        r"""Gets the operations of this ListInstanceOperationsResponse.
 
         支持的操作列表
 
@@ -84,7 +84,7 @@ class ListInstanceOperationsResponse(SdkResponse):
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this ListInstanceOperationsResponse.
+        r"""Sets the operations of this ListInstanceOperationsResponse.
 
         支持的操作列表
 

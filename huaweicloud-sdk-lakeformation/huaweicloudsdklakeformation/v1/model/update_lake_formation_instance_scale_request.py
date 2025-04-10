@@ -27,7 +27,7 @@ class UpdateLakeFormationInstanceScaleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateLakeFormationInstanceScaleRequest
+        r"""UpdateLakeFormationInstanceScaleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLakeFormationInstanceScaleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateLakeFormationInstanceScaleRequest.
+        r"""Gets the instance_id of this UpdateLakeFormationInstanceScaleRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -60,7 +60,7 @@ class UpdateLakeFormationInstanceScaleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateLakeFormationInstanceScaleRequest.
+        r"""Sets the instance_id of this UpdateLakeFormationInstanceScaleRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -71,7 +71,7 @@ class UpdateLakeFormationInstanceScaleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLakeFormationInstanceScaleRequest.
+        r"""Gets the body of this UpdateLakeFormationInstanceScaleRequest.
 
         :return: The body of this UpdateLakeFormationInstanceScaleRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceScale`
@@ -80,7 +80,7 @@ class UpdateLakeFormationInstanceScaleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLakeFormationInstanceScaleRequest.
+        r"""Sets the body of this UpdateLakeFormationInstanceScaleRequest.
 
         :param body: The body of this UpdateLakeFormationInstanceScaleRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceScale`

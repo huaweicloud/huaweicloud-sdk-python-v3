@@ -33,7 +33,7 @@ class CreateCentralNetwork:
     }
 
     def __init__(self, name=None, description=None, tags=None, enterprise_project_id=None, policy_document=None):
-        """CreateCentralNetwork
+        r"""CreateCentralNetwork
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateCentralNetwork:
 
     @property
     def name(self):
-        """Gets the name of this CreateCentralNetwork.
+        r"""Gets the name of this CreateCentralNetwork.
 
         实例名字。
 
@@ -81,7 +81,7 @@ class CreateCentralNetwork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCentralNetwork.
+        r"""Sets the name of this CreateCentralNetwork.
 
         实例名字。
 
@@ -92,7 +92,7 @@ class CreateCentralNetwork:
 
     @property
     def description(self):
-        """Gets the description of this CreateCentralNetwork.
+        r"""Gets the description of this CreateCentralNetwork.
 
         实例描述。不支持 <>。
 
@@ -103,7 +103,7 @@ class CreateCentralNetwork:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCentralNetwork.
+        r"""Sets the description of this CreateCentralNetwork.
 
         实例描述。不支持 <>。
 
@@ -114,7 +114,7 @@ class CreateCentralNetwork:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateCentralNetwork.
+        r"""Gets the tags of this CreateCentralNetwork.
 
         实例标签。
 
@@ -125,7 +125,7 @@ class CreateCentralNetwork:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateCentralNetwork.
+        r"""Sets the tags of this CreateCentralNetwork.
 
         实例标签。
 
@@ -136,7 +136,7 @@ class CreateCentralNetwork:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCentralNetwork.
+        r"""Gets the enterprise_project_id of this CreateCentralNetwork.
 
         实例所属企业项目ID。
 
@@ -147,7 +147,7 @@ class CreateCentralNetwork:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCentralNetwork.
+        r"""Sets the enterprise_project_id of this CreateCentralNetwork.
 
         实例所属企业项目ID。
 
@@ -158,7 +158,7 @@ class CreateCentralNetwork:
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this CreateCentralNetwork.
+        r"""Gets the policy_document of this CreateCentralNetwork.
 
         :return: The policy_document of this CreateCentralNetwork.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyDocument`
@@ -167,7 +167,7 @@ class CreateCentralNetwork:
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this CreateCentralNetwork.
+        r"""Sets the policy_document of this CreateCentralNetwork.
 
         :param policy_document: The policy_document of this CreateCentralNetwork.
         :type policy_document: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyDocument`

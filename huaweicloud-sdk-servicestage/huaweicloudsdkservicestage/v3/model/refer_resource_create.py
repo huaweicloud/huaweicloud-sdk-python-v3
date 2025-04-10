@@ -29,7 +29,7 @@ class ReferResourceCreate:
     }
 
     def __init__(self, id=None, type=None, parameters=None):
-        """ReferResourceCreate
+        r"""ReferResourceCreate
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ReferResourceCreate:
 
     @property
     def id(self):
-        """Gets the id of this ReferResourceCreate.
+        r"""Gets the id of this ReferResourceCreate.
 
         empty id means resource need to be created
 
@@ -66,7 +66,7 @@ class ReferResourceCreate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReferResourceCreate.
+        r"""Sets the id of this ReferResourceCreate.
 
         empty id means resource need to be created
 
@@ -77,7 +77,7 @@ class ReferResourceCreate:
 
     @property
     def type(self):
-        """Gets the type of this ReferResourceCreate.
+        r"""Gets the type of this ReferResourceCreate.
 
         :return: The type of this ReferResourceCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ResourceType`
@@ -86,7 +86,7 @@ class ReferResourceCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ReferResourceCreate.
+        r"""Sets the type of this ReferResourceCreate.
 
         :param type: The type of this ReferResourceCreate.
         :type type: :class:`huaweicloudsdkservicestage.v3.ResourceType`
@@ -95,7 +95,7 @@ class ReferResourceCreate:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ReferResourceCreate.
+        r"""Gets the parameters of this ReferResourceCreate.
 
         :return: The parameters of this ReferResourceCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ReferResourceCreateParameters`
@@ -104,7 +104,7 @@ class ReferResourceCreate:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ReferResourceCreate.
+        r"""Sets the parameters of this ReferResourceCreate.
 
         :param parameters: The parameters of this ReferResourceCreate.
         :type parameters: :class:`huaweicloudsdkservicestage.v3.ReferResourceCreateParameters`

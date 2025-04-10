@@ -35,7 +35,7 @@ class QueryIndirectPartnersReq:
     }
 
     def __init__(self, account_name=None, associated_on_begin=None, associated_on_end=None, offset=None, limit=None, indirect_partner_id=None):
-        """QueryIndirectPartnersReq
+        r"""QueryIndirectPartnersReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryIndirectPartnersReq:
 
     @property
     def account_name(self):
-        """Gets the account_name of this QueryIndirectPartnersReq.
+        r"""Gets the account_name of this QueryIndirectPartnersReq.
 
         云经销商伙伴的账号名。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -89,7 +89,7 @@ class QueryIndirectPartnersReq:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this QueryIndirectPartnersReq.
+        r"""Sets the account_name of this QueryIndirectPartnersReq.
 
         云经销商伙伴的账号名。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -100,7 +100,7 @@ class QueryIndirectPartnersReq:
 
     @property
     def associated_on_begin(self):
-        """Gets the associated_on_begin of this QueryIndirectPartnersReq.
+        r"""Gets the associated_on_begin of this QueryIndirectPartnersReq.
 
         云经销商关联华为云总经销商的开始时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -111,7 +111,7 @@ class QueryIndirectPartnersReq:
 
     @associated_on_begin.setter
     def associated_on_begin(self, associated_on_begin):
-        """Sets the associated_on_begin of this QueryIndirectPartnersReq.
+        r"""Sets the associated_on_begin of this QueryIndirectPartnersReq.
 
         云经销商关联华为云总经销商的开始时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -122,7 +122,7 @@ class QueryIndirectPartnersReq:
 
     @property
     def associated_on_end(self):
-        """Gets the associated_on_end of this QueryIndirectPartnersReq.
+        r"""Gets the associated_on_end of this QueryIndirectPartnersReq.
 
         云经销商关联华为云总经销商的结束时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -133,7 +133,7 @@ class QueryIndirectPartnersReq:
 
     @associated_on_end.setter
     def associated_on_end(self, associated_on_end):
-        """Sets the associated_on_end of this QueryIndirectPartnersReq.
+        r"""Sets the associated_on_end of this QueryIndirectPartnersReq.
 
         云经销商关联华为云总经销商的结束时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z。 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -144,7 +144,7 @@ class QueryIndirectPartnersReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryIndirectPartnersReq.
+        r"""Gets the offset of this QueryIndirectPartnersReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -155,7 +155,7 @@ class QueryIndirectPartnersReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryIndirectPartnersReq.
+        r"""Sets the offset of this QueryIndirectPartnersReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -166,7 +166,7 @@ class QueryIndirectPartnersReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryIndirectPartnersReq.
+        r"""Gets the limit of this QueryIndirectPartnersReq.
 
         每次查询的数量限制。默认值为10。
 
@@ -177,7 +177,7 @@ class QueryIndirectPartnersReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryIndirectPartnersReq.
+        r"""Sets the limit of this QueryIndirectPartnersReq.
 
         每次查询的数量限制。默认值为10。
 
@@ -188,7 +188,7 @@ class QueryIndirectPartnersReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryIndirectPartnersReq.
+        r"""Gets the indirect_partner_id of this QueryIndirectPartnersReq.
 
         云经销商ID。如果需要查询具体某个云经销商伙伴，必须携带该字段。除此之外，此参数不做处理。
 
@@ -199,7 +199,7 @@ class QueryIndirectPartnersReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryIndirectPartnersReq.
+        r"""Sets the indirect_partner_id of this QueryIndirectPartnersReq.
 
         云经销商ID。如果需要查询具体某个云经销商伙伴，必须携带该字段。除此之外，此参数不做处理。
 

@@ -33,7 +33,7 @@ class ClientData:
     }
 
     def __init__(self, language=None, version=None, client_id=None, client_addr=None, subscriptions=None):
-        """ClientData
+        r"""ClientData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ClientData:
 
     @property
     def language(self):
-        """Gets the language of this ClientData.
+        r"""Gets the language of this ClientData.
 
         客户端语言。
 
@@ -82,7 +82,7 @@ class ClientData:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ClientData.
+        r"""Sets the language of this ClientData.
 
         客户端语言。
 
@@ -93,7 +93,7 @@ class ClientData:
 
     @property
     def version(self):
-        """Gets the version of this ClientData.
+        r"""Gets the version of this ClientData.
 
         客户端版本。
 
@@ -104,7 +104,7 @@ class ClientData:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClientData.
+        r"""Sets the version of this ClientData.
 
         客户端版本。
 
@@ -115,7 +115,7 @@ class ClientData:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ClientData.
+        r"""Gets the client_id of this ClientData.
 
         客户端ID。
 
@@ -126,7 +126,7 @@ class ClientData:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ClientData.
+        r"""Sets the client_id of this ClientData.
 
         客户端ID。
 
@@ -137,7 +137,7 @@ class ClientData:
 
     @property
     def client_addr(self):
-        """Gets the client_addr of this ClientData.
+        r"""Gets the client_addr of this ClientData.
 
         客户端地址。
 
@@ -148,7 +148,7 @@ class ClientData:
 
     @client_addr.setter
     def client_addr(self, client_addr):
-        """Sets the client_addr of this ClientData.
+        r"""Sets the client_addr of this ClientData.
 
         客户端地址。
 
@@ -159,7 +159,7 @@ class ClientData:
 
     @property
     def subscriptions(self):
-        """Gets the subscriptions of this ClientData.
+        r"""Gets the subscriptions of this ClientData.
 
         订阅关系列表。
 
@@ -170,7 +170,7 @@ class ClientData:
 
     @subscriptions.setter
     def subscriptions(self, subscriptions):
-        """Sets the subscriptions of this ClientData.
+        r"""Sets the subscriptions of this ClientData.
 
         订阅关系列表。
 

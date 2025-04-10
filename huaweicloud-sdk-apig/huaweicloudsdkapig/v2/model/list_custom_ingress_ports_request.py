@@ -33,7 +33,7 @@ class ListCustomIngressPortsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, protocol=None, ingress_port=None):
-        """ListCustomIngressPortsRequest
+        r"""ListCustomIngressPortsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListCustomIngressPortsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCustomIngressPortsRequest.
+        r"""Gets the instance_id of this ListCustomIngressPortsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -81,7 +81,7 @@ class ListCustomIngressPortsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCustomIngressPortsRequest.
+        r"""Sets the instance_id of this ListCustomIngressPortsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -92,7 +92,7 @@ class ListCustomIngressPortsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomIngressPortsRequest.
+        r"""Gets the offset of this ListCustomIngressPortsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -103,7 +103,7 @@ class ListCustomIngressPortsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomIngressPortsRequest.
+        r"""Sets the offset of this ListCustomIngressPortsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -114,7 +114,7 @@ class ListCustomIngressPortsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomIngressPortsRequest.
+        r"""Gets the limit of this ListCustomIngressPortsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -125,7 +125,7 @@ class ListCustomIngressPortsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomIngressPortsRequest.
+        r"""Sets the limit of this ListCustomIngressPortsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -136,7 +136,7 @@ class ListCustomIngressPortsRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListCustomIngressPortsRequest.
+        r"""Gets the protocol of this ListCustomIngressPortsRequest.
 
         入方向端口的请求协议。 - HTTP: 入方向端口为HTTP协议。 - HTTPS: 入方向端口为HTTPS协议。 
 
@@ -147,7 +147,7 @@ class ListCustomIngressPortsRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListCustomIngressPortsRequest.
+        r"""Sets the protocol of this ListCustomIngressPortsRequest.
 
         入方向端口的请求协议。 - HTTP: 入方向端口为HTTP协议。 - HTTPS: 入方向端口为HTTPS协议。 
 
@@ -158,7 +158,7 @@ class ListCustomIngressPortsRequest:
 
     @property
     def ingress_port(self):
-        """Gets the ingress_port of this ListCustomIngressPortsRequest.
+        r"""Gets the ingress_port of this ListCustomIngressPortsRequest.
 
         入方向端口的端口号，支持的端口范围为1024~49151。
 
@@ -169,7 +169,7 @@ class ListCustomIngressPortsRequest:
 
     @ingress_port.setter
     def ingress_port(self, ingress_port):
-        """Sets the ingress_port of this ListCustomIngressPortsRequest.
+        r"""Sets the ingress_port of this ListCustomIngressPortsRequest.
 
         入方向端口的端口号，支持的端口范围为1024~49151。
 

@@ -29,7 +29,7 @@ class QueryRiskItemsItems:
     }
 
     def __init__(self, metric_code=None, threshold=None, unit=None):
-        """QueryRiskItemsItems
+        r"""QueryRiskItemsItems
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryRiskItemsItems:
 
     @property
     def metric_code(self):
-        """Gets the metric_code of this QueryRiskItemsItems.
+        r"""Gets the metric_code of this QueryRiskItemsItems.
 
         指标码
 
@@ -68,7 +68,7 @@ class QueryRiskItemsItems:
 
     @metric_code.setter
     def metric_code(self, metric_code):
-        """Sets the metric_code of this QueryRiskItemsItems.
+        r"""Sets the metric_code of this QueryRiskItemsItems.
 
         指标码
 
@@ -79,7 +79,7 @@ class QueryRiskItemsItems:
 
     @property
     def threshold(self):
-        """Gets the threshold of this QueryRiskItemsItems.
+        r"""Gets the threshold of this QueryRiskItemsItems.
 
         阈值
 
@@ -90,7 +90,7 @@ class QueryRiskItemsItems:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this QueryRiskItemsItems.
+        r"""Sets the threshold of this QueryRiskItemsItems.
 
         阈值
 
@@ -101,7 +101,7 @@ class QueryRiskItemsItems:
 
     @property
     def unit(self):
-        """Gets the unit of this QueryRiskItemsItems.
+        r"""Gets the unit of this QueryRiskItemsItems.
 
         单位
 
@@ -112,7 +112,7 @@ class QueryRiskItemsItems:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QueryRiskItemsItems.
+        r"""Sets the unit of this QueryRiskItemsItems.
 
         单位
 

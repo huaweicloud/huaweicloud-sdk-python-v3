@@ -37,7 +37,7 @@ class Author:
     }
 
     def __init__(self, id=None, name=None, state=None, username=None, name_cn=None, avatar_url=None, email=None):
-        """Author
+        r"""Author
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Author:
 
     @property
     def id(self):
-        """Gets the id of this Author.
+        r"""Gets the id of this Author.
 
         用户id
 
@@ -96,7 +96,7 @@ class Author:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Author.
+        r"""Sets the id of this Author.
 
         用户id
 
@@ -107,7 +107,7 @@ class Author:
 
     @property
     def name(self):
-        """Gets the name of this Author.
+        r"""Gets the name of this Author.
 
         用户名
 
@@ -118,7 +118,7 @@ class Author:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Author.
+        r"""Sets the name of this Author.
 
         用户名
 
@@ -129,7 +129,7 @@ class Author:
 
     @property
     def state(self):
-        """Gets the state of this Author.
+        r"""Gets the state of this Author.
 
         用户状态
 
@@ -140,7 +140,7 @@ class Author:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Author.
+        r"""Sets the state of this Author.
 
         用户状态
 
@@ -151,7 +151,7 @@ class Author:
 
     @property
     def username(self):
-        """Gets the username of this Author.
+        r"""Gets the username of this Author.
 
         用户iamId
 
@@ -162,7 +162,7 @@ class Author:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this Author.
+        r"""Sets the username of this Author.
 
         用户iamId
 
@@ -173,7 +173,7 @@ class Author:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this Author.
+        r"""Gets the name_cn of this Author.
 
         用户别名
 
@@ -184,7 +184,7 @@ class Author:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this Author.
+        r"""Sets the name_cn of this Author.
 
         用户别名
 
@@ -195,7 +195,7 @@ class Author:
 
     @property
     def avatar_url(self):
-        """Gets the avatar_url of this Author.
+        r"""Gets the avatar_url of this Author.
 
         头像url
 
@@ -206,7 +206,7 @@ class Author:
 
     @avatar_url.setter
     def avatar_url(self, avatar_url):
-        """Sets the avatar_url of this Author.
+        r"""Sets the avatar_url of this Author.
 
         头像url
 
@@ -217,7 +217,7 @@ class Author:
 
     @property
     def email(self):
-        """Gets the email of this Author.
+        r"""Gets the email of this Author.
 
         邮箱
 
@@ -228,7 +228,7 @@ class Author:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this Author.
+        r"""Sets the email of this Author.
 
         邮箱
 

@@ -33,7 +33,7 @@ class ListSubfilesRequest:
     }
 
     def __init__(self, repository_uuid=None, branch_name=None, path=None, offset=None, limit=None):
-        """ListSubfilesRequest
+        r"""ListSubfilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListSubfilesRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ListSubfilesRequest.
+        r"""Gets the repository_uuid of this ListSubfilesRequest.
 
         仓库id
 
@@ -80,7 +80,7 @@ class ListSubfilesRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ListSubfilesRequest.
+        r"""Sets the repository_uuid of this ListSubfilesRequest.
 
         仓库id
 
@@ -91,7 +91,7 @@ class ListSubfilesRequest:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this ListSubfilesRequest.
+        r"""Gets the branch_name of this ListSubfilesRequest.
 
         分支名称
 
@@ -102,7 +102,7 @@ class ListSubfilesRequest:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this ListSubfilesRequest.
+        r"""Sets the branch_name of this ListSubfilesRequest.
 
         分支名称
 
@@ -113,7 +113,7 @@ class ListSubfilesRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListSubfilesRequest.
+        r"""Gets the path of this ListSubfilesRequest.
 
         文件路径
 
@@ -124,7 +124,7 @@ class ListSubfilesRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListSubfilesRequest.
+        r"""Sets the path of this ListSubfilesRequest.
 
         文件路径
 
@@ -135,7 +135,7 @@ class ListSubfilesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubfilesRequest.
+        r"""Gets the offset of this ListSubfilesRequest.
 
         偏移量
 
@@ -146,7 +146,7 @@ class ListSubfilesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubfilesRequest.
+        r"""Sets the offset of this ListSubfilesRequest.
 
         偏移量
 
@@ -157,7 +157,7 @@ class ListSubfilesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubfilesRequest.
+        r"""Gets the limit of this ListSubfilesRequest.
 
         记录数量
 
@@ -168,7 +168,7 @@ class ListSubfilesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubfilesRequest.
+        r"""Sets the limit of this ListSubfilesRequest.
 
         记录数量
 

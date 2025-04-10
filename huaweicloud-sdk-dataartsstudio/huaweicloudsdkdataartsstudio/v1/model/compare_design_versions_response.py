@@ -26,7 +26,7 @@ class CompareDesignVersionsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CompareDesignVersionsResponse
+        r"""CompareDesignVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CompareDesignVersionsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CompareDesignVersionsResponse.
+        r"""Gets the data of this CompareDesignVersionsResponse.
 
         :return: The data of this CompareDesignVersionsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CompareDesignVersionsResultData`
@@ -53,7 +53,7 @@ class CompareDesignVersionsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CompareDesignVersionsResponse.
+        r"""Sets the data of this CompareDesignVersionsResponse.
 
         :param data: The data of this CompareDesignVersionsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CompareDesignVersionsResultData`

@@ -29,7 +29,7 @@ class AccessServiceInfo:
     }
 
     def __init__(self, name=None, description=None, grant=None):
-        """AccessServiceInfo
+        r"""AccessServiceInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AccessServiceInfo:
 
     @property
     def name(self):
-        """Gets the name of this AccessServiceInfo.
+        r"""Gets the name of this AccessServiceInfo.
 
         接入服务名称。最大长度为20个字符。
 
@@ -67,7 +67,7 @@ class AccessServiceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccessServiceInfo.
+        r"""Sets the name of this AccessServiceInfo.
 
         接入服务名称。最大长度为20个字符。
 
@@ -78,7 +78,7 @@ class AccessServiceInfo:
 
     @property
     def description(self):
-        """Gets the description of this AccessServiceInfo.
+        r"""Gets the description of this AccessServiceInfo.
 
         接入服务描述。最大长度为500个字符。
 
@@ -89,7 +89,7 @@ class AccessServiceInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AccessServiceInfo.
+        r"""Sets the description of this AccessServiceInfo.
 
         接入服务描述。最大长度为500个字符。
 
@@ -100,7 +100,7 @@ class AccessServiceInfo:
 
     @property
     def grant(self):
-        """Gets the grant of this AccessServiceInfo.
+        r"""Gets the grant of this AccessServiceInfo.
 
         是否授权。值为true或false。
 
@@ -111,7 +111,7 @@ class AccessServiceInfo:
 
     @grant.setter
     def grant(self, grant):
-        """Sets the grant of this AccessServiceInfo.
+        r"""Sets the grant of this AccessServiceInfo.
 
         是否授权。值为true或false。
 

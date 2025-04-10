@@ -28,7 +28,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, order_infos=None):
-        """ListCustomerOrdersResponse
+        r"""ListCustomerOrdersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCustomerOrdersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCustomerOrdersResponse.
+        r"""Gets the total_count of this ListCustomerOrdersResponse.
 
         大于等于0的整数。 符合条件的记录总数。
 
@@ -62,7 +62,7 @@ class ListCustomerOrdersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCustomerOrdersResponse.
+        r"""Sets the total_count of this ListCustomerOrdersResponse.
 
         大于等于0的整数。 符合条件的记录总数。
 
@@ -73,7 +73,7 @@ class ListCustomerOrdersResponse(SdkResponse):
 
     @property
     def order_infos(self):
-        """Gets the order_infos of this ListCustomerOrdersResponse.
+        r"""Gets the order_infos of this ListCustomerOrdersResponse.
 
         - 客户订单详情信息。 具体请参见表2
 
@@ -84,7 +84,7 @@ class ListCustomerOrdersResponse(SdkResponse):
 
     @order_infos.setter
     def order_infos(self, order_infos):
-        """Sets the order_infos of this ListCustomerOrdersResponse.
+        r"""Sets the order_infos of this ListCustomerOrdersResponse.
 
         - 客户订单详情信息。 具体请参见表2
 

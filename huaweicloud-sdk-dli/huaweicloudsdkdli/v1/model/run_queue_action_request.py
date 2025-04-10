@@ -27,7 +27,7 @@ class RunQueueActionRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """RunQueueActionRequest
+        r"""RunQueueActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunQueueActionRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this RunQueueActionRequest.
+        r"""Gets the queue_name of this RunQueueActionRequest.
 
         :return: The queue_name of this RunQueueActionRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class RunQueueActionRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this RunQueueActionRequest.
+        r"""Sets the queue_name of this RunQueueActionRequest.
 
         :param queue_name: The queue_name of this RunQueueActionRequest.
         :type queue_name: str
@@ -67,7 +67,7 @@ class RunQueueActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunQueueActionRequest.
+        r"""Gets the body of this RunQueueActionRequest.
 
         :return: The body of this RunQueueActionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.RunQueueActionRequestBody`
@@ -76,7 +76,7 @@ class RunQueueActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunQueueActionRequest.
+        r"""Sets the body of this RunQueueActionRequest.
 
         :param body: The body of this RunQueueActionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.RunQueueActionRequestBody`

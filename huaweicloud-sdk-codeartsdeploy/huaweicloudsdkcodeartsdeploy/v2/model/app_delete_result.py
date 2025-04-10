@@ -31,7 +31,7 @@ class AppDeleteResult:
     }
 
     def __init__(self, application_id=None, application_name=None, status=None, error_reason=None):
-        """AppDeleteResult
+        r"""AppDeleteResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AppDeleteResult:
 
     @property
     def application_id(self):
-        """Gets the application_id of this AppDeleteResult.
+        r"""Gets the application_id of this AppDeleteResult.
 
         应用id
 
@@ -75,7 +75,7 @@ class AppDeleteResult:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this AppDeleteResult.
+        r"""Sets the application_id of this AppDeleteResult.
 
         应用id
 
@@ -86,7 +86,7 @@ class AppDeleteResult:
 
     @property
     def application_name(self):
-        """Gets the application_name of this AppDeleteResult.
+        r"""Gets the application_name of this AppDeleteResult.
 
         应用名称
 
@@ -97,7 +97,7 @@ class AppDeleteResult:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this AppDeleteResult.
+        r"""Sets the application_name of this AppDeleteResult.
 
         应用名称
 
@@ -108,7 +108,7 @@ class AppDeleteResult:
 
     @property
     def status(self):
-        """Gets the status of this AppDeleteResult.
+        r"""Gets the status of this AppDeleteResult.
 
         删除是否成功 success | error
 
@@ -119,7 +119,7 @@ class AppDeleteResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AppDeleteResult.
+        r"""Sets the status of this AppDeleteResult.
 
         删除是否成功 success | error
 
@@ -130,7 +130,7 @@ class AppDeleteResult:
 
     @property
     def error_reason(self):
-        """Gets the error_reason of this AppDeleteResult.
+        r"""Gets the error_reason of this AppDeleteResult.
 
         删除失败原因
 
@@ -141,7 +141,7 @@ class AppDeleteResult:
 
     @error_reason.setter
     def error_reason(self, error_reason):
-        """Sets the error_reason of this AppDeleteResult.
+        r"""Sets the error_reason of this AppDeleteResult.
 
         删除失败原因
 

@@ -26,7 +26,7 @@ class ListMicroserviceRouteRuleResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ListMicroserviceRouteRuleResponse
+        r"""ListMicroserviceRouteRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMicroserviceRouteRuleResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListMicroserviceRouteRuleResponse.
+        r"""Gets the result of this ListMicroserviceRouteRuleResponse.
 
         结果信息
 
@@ -55,7 +55,7 @@ class ListMicroserviceRouteRuleResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListMicroserviceRouteRuleResponse.
+        r"""Sets the result of this ListMicroserviceRouteRuleResponse.
 
         结果信息
 

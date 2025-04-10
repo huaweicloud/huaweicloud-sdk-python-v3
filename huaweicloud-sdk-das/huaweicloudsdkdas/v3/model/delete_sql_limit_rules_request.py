@@ -29,7 +29,7 @@ class DeleteSqlLimitRulesRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """DeleteSqlLimitRulesRequest
+        r"""DeleteSqlLimitRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteSqlLimitRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSqlLimitRulesRequest.
+        r"""Gets the instance_id of this DeleteSqlLimitRulesRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class DeleteSqlLimitRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSqlLimitRulesRequest.
+        r"""Sets the instance_id of this DeleteSqlLimitRulesRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class DeleteSqlLimitRulesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteSqlLimitRulesRequest.
+        r"""Gets the x_language of this DeleteSqlLimitRulesRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class DeleteSqlLimitRulesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteSqlLimitRulesRequest.
+        r"""Sets the x_language of this DeleteSqlLimitRulesRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class DeleteSqlLimitRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSqlLimitRulesRequest.
+        r"""Gets the body of this DeleteSqlLimitRulesRequest.
 
         :return: The body of this DeleteSqlLimitRulesRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteSqlLimitRulesBody`
@@ -109,7 +109,7 @@ class DeleteSqlLimitRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSqlLimitRulesRequest.
+        r"""Sets the body of this DeleteSqlLimitRulesRequest.
 
         :param body: The body of this DeleteSqlLimitRulesRequest.
         :type body: :class:`huaweicloudsdkdas.v3.DeleteSqlLimitRulesBody`

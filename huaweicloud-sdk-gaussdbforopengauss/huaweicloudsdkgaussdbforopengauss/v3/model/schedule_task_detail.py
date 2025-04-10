@@ -39,7 +39,7 @@ class ScheduleTaskDetail:
     }
 
     def __init__(self, task_id=None, task_name=None, status=None, create_time=None, start_time=None, instance_id=None, instance_name=None, task_content=None):
-        """ScheduleTaskDetail
+        r"""ScheduleTaskDetail
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ScheduleTaskDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ScheduleTaskDetail.
+        r"""Gets the task_id of this ScheduleTaskDetail.
 
         任务ID。
 
@@ -103,7 +103,7 @@ class ScheduleTaskDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ScheduleTaskDetail.
+        r"""Sets the task_id of this ScheduleTaskDetail.
 
         任务ID。
 
@@ -114,7 +114,7 @@ class ScheduleTaskDetail:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ScheduleTaskDetail.
+        r"""Gets the task_name of this ScheduleTaskDetail.
 
         任务名称。
 
@@ -125,7 +125,7 @@ class ScheduleTaskDetail:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ScheduleTaskDetail.
+        r"""Sets the task_name of this ScheduleTaskDetail.
 
         任务名称。
 
@@ -136,7 +136,7 @@ class ScheduleTaskDetail:
 
     @property
     def status(self):
-        """Gets the status of this ScheduleTaskDetail.
+        r"""Gets the status of this ScheduleTaskDetail.
 
         任务状态。
 
@@ -147,7 +147,7 @@ class ScheduleTaskDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScheduleTaskDetail.
+        r"""Sets the status of this ScheduleTaskDetail.
 
         任务状态。
 
@@ -158,7 +158,7 @@ class ScheduleTaskDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScheduleTaskDetail.
+        r"""Gets the create_time of this ScheduleTaskDetail.
 
         任务创建时间,格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -169,7 +169,7 @@ class ScheduleTaskDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScheduleTaskDetail.
+        r"""Sets the create_time of this ScheduleTaskDetail.
 
         任务创建时间,格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -180,7 +180,7 @@ class ScheduleTaskDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduleTaskDetail.
+        r"""Gets the start_time of this ScheduleTaskDetail.
 
         任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -191,7 +191,7 @@ class ScheduleTaskDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduleTaskDetail.
+        r"""Sets the start_time of this ScheduleTaskDetail.
 
         任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -202,7 +202,7 @@ class ScheduleTaskDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScheduleTaskDetail.
+        r"""Gets the instance_id of this ScheduleTaskDetail.
 
         实例ID。
 
@@ -213,7 +213,7 @@ class ScheduleTaskDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScheduleTaskDetail.
+        r"""Sets the instance_id of this ScheduleTaskDetail.
 
         实例ID。
 
@@ -224,7 +224,7 @@ class ScheduleTaskDetail:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ScheduleTaskDetail.
+        r"""Gets the instance_name of this ScheduleTaskDetail.
 
         实例名称。
 
@@ -235,7 +235,7 @@ class ScheduleTaskDetail:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ScheduleTaskDetail.
+        r"""Sets the instance_name of this ScheduleTaskDetail.
 
         实例名称。
 
@@ -246,7 +246,7 @@ class ScheduleTaskDetail:
 
     @property
     def task_content(self):
-        """Gets the task_content of this ScheduleTaskDetail.
+        r"""Gets the task_content of this ScheduleTaskDetail.
 
         任务信息。
 
@@ -257,7 +257,7 @@ class ScheduleTaskDetail:
 
     @task_content.setter
     def task_content(self, task_content):
-        """Sets the task_content of this ScheduleTaskDetail.
+        r"""Sets the task_content of this ScheduleTaskDetail.
 
         任务信息。
 

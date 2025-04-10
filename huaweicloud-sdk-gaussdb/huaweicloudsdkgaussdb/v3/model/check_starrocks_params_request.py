@@ -27,7 +27,7 @@ class CheckStarrocksParamsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CheckStarrocksParamsRequest
+        r"""CheckStarrocksParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CheckStarrocksParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckStarrocksParamsRequest.
+        r"""Gets the x_language of this CheckStarrocksParamsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -61,7 +61,7 @@ class CheckStarrocksParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckStarrocksParamsRequest.
+        r"""Sets the x_language of this CheckStarrocksParamsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -72,7 +72,7 @@ class CheckStarrocksParamsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckStarrocksParamsRequest.
+        r"""Gets the body of this CheckStarrocksParamsRequest.
 
         :return: The body of this CheckStarrocksParamsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckStarrocksParamsRequestBody`
@@ -81,7 +81,7 @@ class CheckStarrocksParamsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckStarrocksParamsRequest.
+        r"""Sets the body of this CheckStarrocksParamsRequest.
 
         :param body: The body of this CheckStarrocksParamsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CheckStarrocksParamsRequestBody`

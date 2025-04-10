@@ -45,7 +45,7 @@ class FeatureConfig:
     }
 
     def __init__(self, id=None, created_at=None, updated_at=None, service=None, tenant_id=None, feature=None, switch=None, type=None, value=None, description=None, caller=None):
-        """FeatureConfig
+        r"""FeatureConfig
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class FeatureConfig:
 
     @property
     def id(self):
-        """Gets the id of this FeatureConfig.
+        r"""Gets the id of this FeatureConfig.
 
         参数解释：配置的ID。
 
@@ -113,7 +113,7 @@ class FeatureConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FeatureConfig.
+        r"""Sets the id of this FeatureConfig.
 
         参数解释：配置的ID。
 
@@ -124,7 +124,7 @@ class FeatureConfig:
 
     @property
     def created_at(self):
-        """Gets the created_at of this FeatureConfig.
+        r"""Gets the created_at of this FeatureConfig.
 
         参数解释：创建时间。
 
@@ -135,7 +135,7 @@ class FeatureConfig:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FeatureConfig.
+        r"""Sets the created_at of this FeatureConfig.
 
         参数解释：创建时间。
 
@@ -146,7 +146,7 @@ class FeatureConfig:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FeatureConfig.
+        r"""Gets the updated_at of this FeatureConfig.
 
         参数解释：更新时间。
 
@@ -157,7 +157,7 @@ class FeatureConfig:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FeatureConfig.
+        r"""Sets the updated_at of this FeatureConfig.
 
         参数解释：更新时间。
 
@@ -168,7 +168,7 @@ class FeatureConfig:
 
     @property
     def service(self):
-        """Gets the service of this FeatureConfig.
+        r"""Gets the service of this FeatureConfig.
 
         参数解释：所属服务，固定ELB。
 
@@ -179,7 +179,7 @@ class FeatureConfig:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this FeatureConfig.
+        r"""Sets the service of this FeatureConfig.
 
         参数解释：所属服务，固定ELB。
 
@@ -190,7 +190,7 @@ class FeatureConfig:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this FeatureConfig.
+        r"""Gets the tenant_id of this FeatureConfig.
 
         参数解释：租户ID，含义同project_id。
 
@@ -201,7 +201,7 @@ class FeatureConfig:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this FeatureConfig.
+        r"""Sets the tenant_id of this FeatureConfig.
 
         参数解释：租户ID，含义同project_id。
 
@@ -212,7 +212,7 @@ class FeatureConfig:
 
     @property
     def feature(self):
-        """Gets the feature of this FeatureConfig.
+        r"""Gets the feature of this FeatureConfig.
 
         参数解释：特性名称。
 
@@ -223,7 +223,7 @@ class FeatureConfig:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this FeatureConfig.
+        r"""Sets the feature of this FeatureConfig.
 
         参数解释：特性名称。
 
@@ -234,7 +234,7 @@ class FeatureConfig:
 
     @property
     def switch(self):
-        """Gets the switch of this FeatureConfig.
+        r"""Gets the switch of this FeatureConfig.
 
         参数解释：特性配置启用开关，表示当前配置是否生效。  取值范围： - true：特性配置已生效。 - false: 特性配置未生效。
 
@@ -245,7 +245,7 @@ class FeatureConfig:
 
     @switch.setter
     def switch(self, switch):
-        """Sets the switch of this FeatureConfig.
+        r"""Sets the switch of this FeatureConfig.
 
         参数解释：特性配置启用开关，表示当前配置是否生效。  取值范围： - true：特性配置已生效。 - false: 特性配置未生效。
 
@@ -256,7 +256,7 @@ class FeatureConfig:
 
     @property
     def type(self):
-        """Gets the type of this FeatureConfig.
+        r"""Gets the type of this FeatureConfig.
 
         参数解释：特性配置值(value字段)的类型，如：INT，表示整型。
 
@@ -267,7 +267,7 @@ class FeatureConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FeatureConfig.
+        r"""Sets the type of this FeatureConfig.
 
         参数解释：特性配置值(value字段)的类型，如：INT，表示整型。
 
@@ -278,7 +278,7 @@ class FeatureConfig:
 
     @property
     def value(self):
-        """Gets the value of this FeatureConfig.
+        r"""Gets the value of this FeatureConfig.
 
         参数解释：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。
 
@@ -289,7 +289,7 @@ class FeatureConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FeatureConfig.
+        r"""Sets the value of this FeatureConfig.
 
         参数解释：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。
 
@@ -300,7 +300,7 @@ class FeatureConfig:
 
     @property
     def description(self):
-        """Gets the description of this FeatureConfig.
+        r"""Gets the description of this FeatureConfig.
 
         参数解释：特性配置描述。
 
@@ -311,7 +311,7 @@ class FeatureConfig:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FeatureConfig.
+        r"""Sets the description of this FeatureConfig.
 
         参数解释：特性配置描述。
 
@@ -322,7 +322,7 @@ class FeatureConfig:
 
     @property
     def caller(self):
-        """Gets the caller of this FeatureConfig.
+        r"""Gets the caller of this FeatureConfig.
 
         参数解释：配置创建者。
 
@@ -333,7 +333,7 @@ class FeatureConfig:
 
     @caller.setter
     def caller(self, caller):
-        """Sets the caller of this FeatureConfig.
+        r"""Sets the caller of this FeatureConfig.
 
         参数解释：配置创建者。
 

@@ -41,7 +41,7 @@ class PublisherRequest:
     }
 
     def __init__(self, name=None, user_id=None, description=None, logo_url=None, website=None, support_url=None, source_url=None, en_name=None, publisher_unique_id=None):
-        """PublisherRequest
+        r"""PublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class PublisherRequest:
 
     @property
     def name(self):
-        """Gets the name of this PublisherRequest.
+        r"""Gets the name of this PublisherRequest.
 
         名称
 
@@ -107,7 +107,7 @@ class PublisherRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublisherRequest.
+        r"""Sets the name of this PublisherRequest.
 
         名称
 
@@ -118,7 +118,7 @@ class PublisherRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PublisherRequest.
+        r"""Gets the user_id of this PublisherRequest.
 
         用户ID
 
@@ -129,7 +129,7 @@ class PublisherRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PublisherRequest.
+        r"""Sets the user_id of this PublisherRequest.
 
         用户ID
 
@@ -140,7 +140,7 @@ class PublisherRequest:
 
     @property
     def description(self):
-        """Gets the description of this PublisherRequest.
+        r"""Gets the description of this PublisherRequest.
 
         描述
 
@@ -151,7 +151,7 @@ class PublisherRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublisherRequest.
+        r"""Sets the description of this PublisherRequest.
 
         描述
 
@@ -162,7 +162,7 @@ class PublisherRequest:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this PublisherRequest.
+        r"""Gets the logo_url of this PublisherRequest.
 
         图标URL
 
@@ -173,7 +173,7 @@ class PublisherRequest:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this PublisherRequest.
+        r"""Sets the logo_url of this PublisherRequest.
 
         图标URL
 
@@ -184,7 +184,7 @@ class PublisherRequest:
 
     @property
     def website(self):
-        """Gets the website of this PublisherRequest.
+        r"""Gets the website of this PublisherRequest.
 
         网页地址
 
@@ -195,7 +195,7 @@ class PublisherRequest:
 
     @website.setter
     def website(self, website):
-        """Sets the website of this PublisherRequest.
+        r"""Sets the website of this PublisherRequest.
 
         网页地址
 
@@ -206,7 +206,7 @@ class PublisherRequest:
 
     @property
     def support_url(self):
-        """Gets the support_url of this PublisherRequest.
+        r"""Gets the support_url of this PublisherRequest.
 
         地址
 
@@ -217,7 +217,7 @@ class PublisherRequest:
 
     @support_url.setter
     def support_url(self, support_url):
-        """Sets the support_url of this PublisherRequest.
+        r"""Sets the support_url of this PublisherRequest.
 
         地址
 
@@ -228,7 +228,7 @@ class PublisherRequest:
 
     @property
     def source_url(self):
-        """Gets the source_url of this PublisherRequest.
+        r"""Gets the source_url of this PublisherRequest.
 
         地址
 
@@ -239,7 +239,7 @@ class PublisherRequest:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this PublisherRequest.
+        r"""Sets the source_url of this PublisherRequest.
 
         地址
 
@@ -250,7 +250,7 @@ class PublisherRequest:
 
     @property
     def en_name(self):
-        """Gets the en_name of this PublisherRequest.
+        r"""Gets the en_name of this PublisherRequest.
 
         英文名
 
@@ -261,7 +261,7 @@ class PublisherRequest:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this PublisherRequest.
+        r"""Sets the en_name of this PublisherRequest.
 
         英文名
 
@@ -272,7 +272,7 @@ class PublisherRequest:
 
     @property
     def publisher_unique_id(self):
-        """Gets the publisher_unique_id of this PublisherRequest.
+        r"""Gets the publisher_unique_id of this PublisherRequest.
 
         唯一ID
 
@@ -283,7 +283,7 @@ class PublisherRequest:
 
     @publisher_unique_id.setter
     def publisher_unique_id(self, publisher_unique_id):
-        """Sets the publisher_unique_id of this PublisherRequest.
+        r"""Sets the publisher_unique_id of this PublisherRequest.
 
         唯一ID
 

@@ -39,7 +39,7 @@ class ShowDisasterRecoveryDrillParams:
     }
 
     def __init__(self, id=None, name=None, status=None, drill_vpc_id=None, created_at=None, updated_at=None, server_group_id=None, drill_servers=None):
-        """ShowDisasterRecoveryDrillParams
+        r"""ShowDisasterRecoveryDrillParams
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def id(self):
-        """Gets the id of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the id of this ShowDisasterRecoveryDrillParams.
 
         容灾演练的ID。
 
@@ -95,7 +95,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the id of this ShowDisasterRecoveryDrillParams.
 
         容灾演练的ID。
 
@@ -106,7 +106,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def name(self):
-        """Gets the name of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the name of this ShowDisasterRecoveryDrillParams.
 
         容灾演练的名称。
 
@@ -117,7 +117,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the name of this ShowDisasterRecoveryDrillParams.
 
         容灾演练的名称。
 
@@ -128,7 +128,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def status(self):
-        """Gets the status of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the status of this ShowDisasterRecoveryDrillParams.
 
         容灾演练的状态。
 
@@ -139,7 +139,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the status of this ShowDisasterRecoveryDrillParams.
 
         容灾演练的状态。
 
@@ -150,7 +150,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def drill_vpc_id(self):
-        """Gets the drill_vpc_id of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the drill_vpc_id of this ShowDisasterRecoveryDrillParams.
 
         演练虚拟私有云id。
 
@@ -161,7 +161,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @drill_vpc_id.setter
     def drill_vpc_id(self, drill_vpc_id):
-        """Sets the drill_vpc_id of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the drill_vpc_id of this ShowDisasterRecoveryDrillParams.
 
         演练虚拟私有云id。
 
@@ -172,7 +172,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the created_at of this ShowDisasterRecoveryDrillParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -183,7 +183,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the created_at of this ShowDisasterRecoveryDrillParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -194,7 +194,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the updated_at of this ShowDisasterRecoveryDrillParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -205,7 +205,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the updated_at of this ShowDisasterRecoveryDrillParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -216,7 +216,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the server_group_id of this ShowDisasterRecoveryDrillParams.
 
         保护组的ID。
 
@@ -227,7 +227,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the server_group_id of this ShowDisasterRecoveryDrillParams.
 
         保护组的ID。
 
@@ -238,7 +238,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @property
     def drill_servers(self):
-        """Gets the drill_servers of this ShowDisasterRecoveryDrillParams.
+        r"""Gets the drill_servers of this ShowDisasterRecoveryDrillParams.
 
         演练云服务器列表。
 
@@ -249,7 +249,7 @@ class ShowDisasterRecoveryDrillParams:
 
     @drill_servers.setter
     def drill_servers(self, drill_servers):
-        """Sets the drill_servers of this ShowDisasterRecoveryDrillParams.
+        r"""Sets the drill_servers of this ShowDisasterRecoveryDrillParams.
 
         演练云服务器列表。
 

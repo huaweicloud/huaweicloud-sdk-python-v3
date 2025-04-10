@@ -28,7 +28,7 @@ class ListProtectedIpResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListProtectedIpResponse
+        r"""ListProtectedIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProtectedIpResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProtectedIpResponse.
+        r"""Gets the total of this ListProtectedIpResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListProtectedIpResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProtectedIpResponse.
+        r"""Sets the total of this ListProtectedIpResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListProtectedIpResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListProtectedIpResponse.
+        r"""Gets the items of this ListProtectedIpResponse.
 
         防护ip列表
 
@@ -84,7 +84,7 @@ class ListProtectedIpResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListProtectedIpResponse.
+        r"""Sets the items of this ListProtectedIpResponse.
 
         防护ip列表
 

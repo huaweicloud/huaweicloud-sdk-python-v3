@@ -28,7 +28,7 @@ class ListMfaResponse(SdkResponse):
     }
 
     def __init__(self, count=None, methods=None):
-        """ListMfaResponse
+        r"""ListMfaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMfaResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMfaResponse.
+        r"""Gets the count of this ListMfaResponse.
 
         mfa方式个数
 
@@ -62,7 +62,7 @@ class ListMfaResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMfaResponse.
+        r"""Sets the count of this ListMfaResponse.
 
         mfa方式个数
 
@@ -73,7 +73,7 @@ class ListMfaResponse(SdkResponse):
 
     @property
     def methods(self):
-        """Gets the methods of this ListMfaResponse.
+        r"""Gets the methods of this ListMfaResponse.
 
         mfa方式列表
 
@@ -84,7 +84,7 @@ class ListMfaResponse(SdkResponse):
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this ListMfaResponse.
+        r"""Sets the methods of this ListMfaResponse.
 
         mfa方式列表
 

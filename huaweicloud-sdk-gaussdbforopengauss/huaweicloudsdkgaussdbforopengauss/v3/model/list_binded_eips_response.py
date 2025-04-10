@@ -28,7 +28,7 @@ class ListBindedEipsResponse(SdkResponse):
     }
 
     def __init__(self, public_ips=None, total_count=None):
-        """ListBindedEipsResponse
+        r"""ListBindedEipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBindedEipsResponse(SdkResponse):
 
     @property
     def public_ips(self):
-        """Gets the public_ips of this ListBindedEipsResponse.
+        r"""Gets the public_ips of this ListBindedEipsResponse.
 
         查询实例已绑定EIP列表。
 
@@ -62,7 +62,7 @@ class ListBindedEipsResponse(SdkResponse):
 
     @public_ips.setter
     def public_ips(self, public_ips):
-        """Sets the public_ips of this ListBindedEipsResponse.
+        r"""Sets the public_ips of this ListBindedEipsResponse.
 
         查询实例已绑定EIP列表。
 
@@ -73,7 +73,7 @@ class ListBindedEipsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListBindedEipsResponse.
+        r"""Gets the total_count of this ListBindedEipsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListBindedEipsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListBindedEipsResponse.
+        r"""Sets the total_count of this ListBindedEipsResponse.
 
         总记录数。
 

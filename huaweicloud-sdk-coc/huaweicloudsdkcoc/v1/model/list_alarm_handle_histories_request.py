@@ -29,7 +29,7 @@ class ListAlarmHandleHistoriesRequest:
     }
 
     def __init__(self, alarm_id=None, offset=None, limit=None):
-        """ListAlarmHandleHistoriesRequest
+        r"""ListAlarmHandleHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListAlarmHandleHistoriesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmHandleHistoriesRequest.
+        r"""Gets the alarm_id of this ListAlarmHandleHistoriesRequest.
 
         告警id
 
@@ -65,7 +65,7 @@ class ListAlarmHandleHistoriesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmHandleHistoriesRequest.
+        r"""Sets the alarm_id of this ListAlarmHandleHistoriesRequest.
 
         告警id
 
@@ -76,7 +76,7 @@ class ListAlarmHandleHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmHandleHistoriesRequest.
+        r"""Gets the offset of this ListAlarmHandleHistoriesRequest.
 
         偏移量
 
@@ -87,7 +87,7 @@ class ListAlarmHandleHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmHandleHistoriesRequest.
+        r"""Sets the offset of this ListAlarmHandleHistoriesRequest.
 
         偏移量
 
@@ -98,7 +98,7 @@ class ListAlarmHandleHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmHandleHistoriesRequest.
+        r"""Gets the limit of this ListAlarmHandleHistoriesRequest.
 
         每页限制数量
 
@@ -109,7 +109,7 @@ class ListAlarmHandleHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmHandleHistoriesRequest.
+        r"""Sets the limit of this ListAlarmHandleHistoriesRequest.
 
         每页限制数量
 

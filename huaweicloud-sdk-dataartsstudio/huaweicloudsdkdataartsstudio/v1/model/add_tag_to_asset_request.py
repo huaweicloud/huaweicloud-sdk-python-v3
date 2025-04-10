@@ -29,7 +29,7 @@ class AddTagToAssetRequest:
     }
 
     def __init__(self, workspace=None, term_guid=None, body=None):
-        """AddTagToAssetRequest
+        r"""AddTagToAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddTagToAssetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this AddTagToAssetRequest.
+        r"""Gets the workspace of this AddTagToAssetRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class AddTagToAssetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this AddTagToAssetRequest.
+        r"""Sets the workspace of this AddTagToAssetRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class AddTagToAssetRequest:
 
     @property
     def term_guid(self):
-        """Gets the term_guid of this AddTagToAssetRequest.
+        r"""Gets the term_guid of this AddTagToAssetRequest.
 
         guid
 
@@ -88,7 +88,7 @@ class AddTagToAssetRequest:
 
     @term_guid.setter
     def term_guid(self, term_guid):
-        """Sets the term_guid of this AddTagToAssetRequest.
+        r"""Sets the term_guid of this AddTagToAssetRequest.
 
         guid
 
@@ -99,7 +99,7 @@ class AddTagToAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddTagToAssetRequest.
+        r"""Gets the body of this AddTagToAssetRequest.
 
         :return: The body of this AddTagToAssetRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogInfo`
@@ -108,7 +108,7 @@ class AddTagToAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddTagToAssetRequest.
+        r"""Sets the body of this AddTagToAssetRequest.
 
         :param body: The body of this AddTagToAssetRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CatalogInfo`

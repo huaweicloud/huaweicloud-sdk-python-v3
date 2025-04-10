@@ -35,7 +35,7 @@ class DisStream:
     }
 
     def __init__(self, stream_name=None, stream_guid=None, stream_qualified_name=None, partition_count=None, app_count=None, task_count=None):
-        """DisStream
+        r"""DisStream
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DisStream:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DisStream.
+        r"""Gets the stream_name of this DisStream.
 
         通道名称
 
@@ -89,7 +89,7 @@ class DisStream:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DisStream.
+        r"""Sets the stream_name of this DisStream.
 
         通道名称
 
@@ -100,7 +100,7 @@ class DisStream:
 
     @property
     def stream_guid(self):
-        """Gets the stream_guid of this DisStream.
+        r"""Gets the stream_guid of this DisStream.
 
         通道GUID
 
@@ -111,7 +111,7 @@ class DisStream:
 
     @stream_guid.setter
     def stream_guid(self, stream_guid):
-        """Sets the stream_guid of this DisStream.
+        r"""Sets the stream_guid of this DisStream.
 
         通道GUID
 
@@ -122,7 +122,7 @@ class DisStream:
 
     @property
     def stream_qualified_name(self):
-        """Gets the stream_qualified_name of this DisStream.
+        r"""Gets the stream_qualified_name of this DisStream.
 
         通道的唯一标识名称
 
@@ -133,7 +133,7 @@ class DisStream:
 
     @stream_qualified_name.setter
     def stream_qualified_name(self, stream_qualified_name):
-        """Sets the stream_qualified_name of this DisStream.
+        r"""Sets the stream_qualified_name of this DisStream.
 
         通道的唯一标识名称
 
@@ -144,7 +144,7 @@ class DisStream:
 
     @property
     def partition_count(self):
-        """Gets the partition_count of this DisStream.
+        r"""Gets the partition_count of this DisStream.
 
         分区数
 
@@ -155,7 +155,7 @@ class DisStream:
 
     @partition_count.setter
     def partition_count(self, partition_count):
-        """Sets the partition_count of this DisStream.
+        r"""Sets the partition_count of this DisStream.
 
         分区数
 
@@ -166,7 +166,7 @@ class DisStream:
 
     @property
     def app_count(self):
-        """Gets the app_count of this DisStream.
+        r"""Gets the app_count of this DisStream.
 
         dis的app数目
 
@@ -177,7 +177,7 @@ class DisStream:
 
     @app_count.setter
     def app_count(self, app_count):
-        """Sets the app_count of this DisStream.
+        r"""Sets the app_count of this DisStream.
 
         dis的app数目
 
@@ -188,7 +188,7 @@ class DisStream:
 
     @property
     def task_count(self):
-        """Gets the task_count of this DisStream.
+        r"""Gets the task_count of this DisStream.
 
         转储任务数
 
@@ -199,7 +199,7 @@ class DisStream:
 
     @task_count.setter
     def task_count(self, task_count):
-        """Sets the task_count of this DisStream.
+        r"""Sets the task_count of this DisStream.
 
         转储任务数
 

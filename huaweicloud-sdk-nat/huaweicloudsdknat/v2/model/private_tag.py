@@ -27,7 +27,7 @@ class PrivateTag:
     }
 
     def __init__(self, key=None, value=None):
-        """PrivateTag
+        r"""PrivateTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PrivateTag:
 
     @property
     def key(self):
-        """Gets the key of this PrivateTag.
+        r"""Gets the key of this PrivateTag.
 
         标签key值。
 
@@ -59,7 +59,7 @@ class PrivateTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PrivateTag.
+        r"""Sets the key of this PrivateTag.
 
         标签key值。
 
@@ -70,7 +70,7 @@ class PrivateTag:
 
     @property
     def value(self):
-        """Gets the value of this PrivateTag.
+        r"""Gets the value of this PrivateTag.
 
         标签value。
 
@@ -81,7 +81,7 @@ class PrivateTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PrivateTag.
+        r"""Sets the value of this PrivateTag.
 
         标签value。
 

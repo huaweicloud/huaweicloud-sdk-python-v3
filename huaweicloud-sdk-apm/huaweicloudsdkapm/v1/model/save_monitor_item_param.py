@@ -31,7 +31,7 @@ class SaveMonitorItemParam:
     }
 
     def __init__(self, monitor_item_id=None, interval=None, env_id=None, config_value_list=None):
-        """SaveMonitorItemParam
+        r"""SaveMonitorItemParam
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SaveMonitorItemParam:
 
     @property
     def monitor_item_id(self):
-        """Gets the monitor_item_id of this SaveMonitorItemParam.
+        r"""Gets the monitor_item_id of this SaveMonitorItemParam.
 
         监控项id。
 
@@ -73,7 +73,7 @@ class SaveMonitorItemParam:
 
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
-        """Sets the monitor_item_id of this SaveMonitorItemParam.
+        r"""Sets the monitor_item_id of this SaveMonitorItemParam.
 
         监控项id。
 
@@ -84,7 +84,7 @@ class SaveMonitorItemParam:
 
     @property
     def interval(self):
-        """Gets the interval of this SaveMonitorItemParam.
+        r"""Gets the interval of this SaveMonitorItemParam.
 
         采集间隔。
 
@@ -95,7 +95,7 @@ class SaveMonitorItemParam:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this SaveMonitorItemParam.
+        r"""Sets the interval of this SaveMonitorItemParam.
 
         采集间隔。
 
@@ -106,7 +106,7 @@ class SaveMonitorItemParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this SaveMonitorItemParam.
+        r"""Gets the env_id of this SaveMonitorItemParam.
 
         环境id。
 
@@ -117,7 +117,7 @@ class SaveMonitorItemParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this SaveMonitorItemParam.
+        r"""Sets the env_id of this SaveMonitorItemParam.
 
         环境id。
 
@@ -128,7 +128,7 @@ class SaveMonitorItemParam:
 
     @property
     def config_value_list(self):
-        """Gets the config_value_list of this SaveMonitorItemParam.
+        r"""Gets the config_value_list of this SaveMonitorItemParam.
 
         配置项列表。
 
@@ -139,7 +139,7 @@ class SaveMonitorItemParam:
 
     @config_value_list.setter
     def config_value_list(self, config_value_list):
-        """Sets the config_value_list of this SaveMonitorItemParam.
+        r"""Sets the config_value_list of this SaveMonitorItemParam.
 
         配置项列表。
 

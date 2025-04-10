@@ -33,7 +33,7 @@ class AddressInfo:
     }
 
     def __init__(self, version=None, addr=None, os_ext_ip_stype=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_sport_id=None):
-        """AddressInfo
+        r"""AddressInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class AddressInfo:
 
     @property
     def version(self):
-        """Gets the version of this AddressInfo.
+        r"""Gets the version of this AddressInfo.
 
         IP地址版本。4：代表IPv4。6：代表IPv6。
 
@@ -80,7 +80,7 @@ class AddressInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AddressInfo.
+        r"""Sets the version of this AddressInfo.
 
         IP地址版本。4：代表IPv4。6：代表IPv6。
 
@@ -91,7 +91,7 @@ class AddressInfo:
 
     @property
     def addr(self):
-        """Gets the addr of this AddressInfo.
+        r"""Gets the addr of this AddressInfo.
 
         IP地址
 
@@ -102,7 +102,7 @@ class AddressInfo:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this AddressInfo.
+        r"""Sets the addr of this AddressInfo.
 
         IP地址
 
@@ -113,7 +113,7 @@ class AddressInfo:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this AddressInfo.
+        r"""Gets the os_ext_ip_stype of this AddressInfo.
 
         IP地址类型。fixed：代表私有IP地址。floating：代表浮动IP地址。
 
@@ -124,7 +124,7 @@ class AddressInfo:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this AddressInfo.
+        r"""Sets the os_ext_ip_stype of this AddressInfo.
 
         IP地址类型。fixed：代表私有IP地址。floating：代表浮动IP地址。
 
@@ -135,7 +135,7 @@ class AddressInfo:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this AddressInfo.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this AddressInfo.
 
         MAC地址。
 
@@ -146,7 +146,7 @@ class AddressInfo:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this AddressInfo.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this AddressInfo.
 
         MAC地址。
 
@@ -157,7 +157,7 @@ class AddressInfo:
 
     @property
     def os_ext_ip_sport_id(self):
-        """Gets the os_ext_ip_sport_id of this AddressInfo.
+        r"""Gets the os_ext_ip_sport_id of this AddressInfo.
 
         IP地址对应的端口ID
 
@@ -168,7 +168,7 @@ class AddressInfo:
 
     @os_ext_ip_sport_id.setter
     def os_ext_ip_sport_id(self, os_ext_ip_sport_id):
-        """Sets the os_ext_ip_sport_id of this AddressInfo.
+        r"""Sets the os_ext_ip_sport_id of this AddressInfo.
 
         IP地址对应的端口ID
 

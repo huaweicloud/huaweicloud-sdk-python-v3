@@ -28,7 +28,7 @@ class BatchShowRsusResponse(SdkResponse):
     }
 
     def __init__(self, count=None, rsus=None):
-        """BatchShowRsusResponse
+        r"""BatchShowRsusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowRsusResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowRsusResponse.
+        r"""Gets the count of this BatchShowRsusResponse.
 
         **参数说明**：返回RSU的总体数量。
 
@@ -62,7 +62,7 @@ class BatchShowRsusResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowRsusResponse.
+        r"""Sets the count of this BatchShowRsusResponse.
 
         **参数说明**：返回RSU的总体数量。
 
@@ -73,7 +73,7 @@ class BatchShowRsusResponse(SdkResponse):
 
     @property
     def rsus(self):
-        """Gets the rsus of this BatchShowRsusResponse.
+        r"""Gets the rsus of this BatchShowRsusResponse.
 
         **参数说明**：RSU数据列表。
 
@@ -84,7 +84,7 @@ class BatchShowRsusResponse(SdkResponse):
 
     @rsus.setter
     def rsus(self, rsus):
-        """Sets the rsus of this BatchShowRsusResponse.
+        r"""Sets the rsus of this BatchShowRsusResponse.
 
         **参数说明**：RSU数据列表。
 

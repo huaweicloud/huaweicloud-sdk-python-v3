@@ -25,7 +25,7 @@ class UpdateMySQLCompatibilityRequestBody:
     }
 
     def __init__(self, port=None):
-        """UpdateMySQLCompatibilityRequestBody
+        r"""UpdateMySQLCompatibilityRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMySQLCompatibilityRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this UpdateMySQLCompatibilityRequestBody.
+        r"""Gets the port of this UpdateMySQLCompatibilityRequestBody.
 
         M兼容端口，可选范围为：0, 1024-39989。   - 如下端口不可设置： 2378，2379，2380，2400，4999，5000，5001，5100，5500，5999，6000，6001，6009，6010，6500，8015，8097，8098，8181，9090，9100，9180，9187，9200，12016，12017，20049，20050，21731，21732，32122，32123，32124，32125，32126，39001，[数据库端口, 数据库端口+10]。   - 取值为0，表示关闭M兼容端口。
 
@@ -53,7 +53,7 @@ class UpdateMySQLCompatibilityRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateMySQLCompatibilityRequestBody.
+        r"""Sets the port of this UpdateMySQLCompatibilityRequestBody.
 
         M兼容端口，可选范围为：0, 1024-39989。   - 如下端口不可设置： 2378，2379，2380，2400，4999，5000，5001，5100，5500，5999，6000，6001，6009，6010，6500，8015，8097，8098，8181，9090，9100，9180，9187，9200，12016，12017，20049，20050，21731，21732，32122，32123，32124，32125，32126，39001，[数据库端口, 数据库端口+10]。   - 取值为0，表示关闭M兼容端口。
 

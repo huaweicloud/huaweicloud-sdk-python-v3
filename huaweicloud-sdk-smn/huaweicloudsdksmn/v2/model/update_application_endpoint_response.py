@@ -26,7 +26,7 @@ class UpdateApplicationEndpointResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """UpdateApplicationEndpointResponse
+        r"""UpdateApplicationEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateApplicationEndpointResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateApplicationEndpointResponse.
+        r"""Gets the request_id of this UpdateApplicationEndpointResponse.
 
         请求的唯一标识ID。
 
@@ -55,7 +55,7 @@ class UpdateApplicationEndpointResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateApplicationEndpointResponse.
+        r"""Sets the request_id of this UpdateApplicationEndpointResponse.
 
         请求的唯一标识ID。
 

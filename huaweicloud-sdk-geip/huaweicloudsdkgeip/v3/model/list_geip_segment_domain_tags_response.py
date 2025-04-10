@@ -32,7 +32,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None, tags=None, x_request_id=None):
-        """ListGeipSegmentDomainTagsResponse
+        r"""ListGeipSegmentDomainTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGeipSegmentDomainTagsResponse.
+        r"""Gets the request_id of this ListGeipSegmentDomainTagsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGeipSegmentDomainTagsResponse.
+        r"""Sets the request_id of this ListGeipSegmentDomainTagsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGeipSegmentDomainTagsResponse.
+        r"""Gets the total_count of this ListGeipSegmentDomainTagsResponse.
 
         当前列表中资源数量。
 
@@ -98,7 +98,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGeipSegmentDomainTagsResponse.
+        r"""Sets the total_count of this ListGeipSegmentDomainTagsResponse.
 
         当前列表中资源数量。
 
@@ -109,7 +109,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListGeipSegmentDomainTagsResponse.
+        r"""Gets the tags of this ListGeipSegmentDomainTagsResponse.
 
         tag列表信息
 
@@ -120,7 +120,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGeipSegmentDomainTagsResponse.
+        r"""Sets the tags of this ListGeipSegmentDomainTagsResponse.
 
         tag列表信息
 
@@ -131,7 +131,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGeipSegmentDomainTagsResponse.
+        r"""Gets the x_request_id of this ListGeipSegmentDomainTagsResponse.
 
         :return: The x_request_id of this ListGeipSegmentDomainTagsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListGeipSegmentDomainTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGeipSegmentDomainTagsResponse.
+        r"""Sets the x_request_id of this ListGeipSegmentDomainTagsResponse.
 
         :param x_request_id: The x_request_id of this ListGeipSegmentDomainTagsResponse.
         :type x_request_id: str

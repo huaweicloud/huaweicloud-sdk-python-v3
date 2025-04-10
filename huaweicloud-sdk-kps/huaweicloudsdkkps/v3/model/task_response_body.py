@@ -33,7 +33,7 @@ class TaskResponseBody:
     }
 
     def __init__(self, task_id=None, server_id=None, status=None, error_code=None, error_msg=None):
-        """TaskResponseBody
+        r"""TaskResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TaskResponseBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskResponseBody.
+        r"""Gets the task_id of this TaskResponseBody.
 
         任务下发成功返回的ID。
 
@@ -82,7 +82,7 @@ class TaskResponseBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskResponseBody.
+        r"""Sets the task_id of this TaskResponseBody.
 
         任务下发成功返回的ID。
 
@@ -93,7 +93,7 @@ class TaskResponseBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this TaskResponseBody.
+        r"""Gets the server_id of this TaskResponseBody.
 
         绑定的虚拟机id。
 
@@ -104,7 +104,7 @@ class TaskResponseBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this TaskResponseBody.
+        r"""Sets the server_id of this TaskResponseBody.
 
         绑定的虚拟机id。
 
@@ -115,7 +115,7 @@ class TaskResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this TaskResponseBody.
+        r"""Gets the status of this TaskResponseBody.
 
         任务下发的状态。SUCCESS或FAILED。
 
@@ -126,7 +126,7 @@ class TaskResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskResponseBody.
+        r"""Sets the status of this TaskResponseBody.
 
         任务下发的状态。SUCCESS或FAILED。
 
@@ -137,7 +137,7 @@ class TaskResponseBody:
 
     @property
     def error_code(self):
-        """Gets the error_code of this TaskResponseBody.
+        r"""Gets the error_code of this TaskResponseBody.
 
         任务下发失败返回的错误码。
 
@@ -148,7 +148,7 @@ class TaskResponseBody:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this TaskResponseBody.
+        r"""Sets the error_code of this TaskResponseBody.
 
         任务下发失败返回的错误码。
 
@@ -159,7 +159,7 @@ class TaskResponseBody:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this TaskResponseBody.
+        r"""Gets the error_msg of this TaskResponseBody.
 
         任务下发失败返回的错误信息。
 
@@ -170,7 +170,7 @@ class TaskResponseBody:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this TaskResponseBody.
+        r"""Sets the error_msg of this TaskResponseBody.
 
         任务下发失败返回的错误信息。
 

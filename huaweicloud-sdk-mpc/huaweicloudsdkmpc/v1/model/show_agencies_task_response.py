@@ -26,7 +26,7 @@ class ShowAgenciesTaskResponse(SdkResponse):
     }
 
     def __init__(self, operate_type=None):
-        """ShowAgenciesTaskResponse
+        r"""ShowAgenciesTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAgenciesTaskResponse(SdkResponse):
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this ShowAgenciesTaskResponse.
+        r"""Gets the operate_type of this ShowAgenciesTaskResponse.
 
         操作标记，取值[CREATED,CANCELED]，CREATED表示授权, CANCELED表示取消授权 
 
@@ -55,7 +55,7 @@ class ShowAgenciesTaskResponse(SdkResponse):
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this ShowAgenciesTaskResponse.
+        r"""Sets the operate_type of this ShowAgenciesTaskResponse.
 
         操作标记，取值[CREATED,CANCELED]，CREATED表示授权, CANCELED表示取消授权 
 

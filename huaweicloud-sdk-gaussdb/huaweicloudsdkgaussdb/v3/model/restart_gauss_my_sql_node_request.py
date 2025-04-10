@@ -31,7 +31,7 @@ class RestartGaussMySqlNodeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None, body=None):
-        """RestartGaussMySqlNodeRequest
+        r"""RestartGaussMySqlNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RestartGaussMySqlNodeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestartGaussMySqlNodeRequest.
+        r"""Gets the x_language of this RestartGaussMySqlNodeRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class RestartGaussMySqlNodeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestartGaussMySqlNodeRequest.
+        r"""Sets the x_language of this RestartGaussMySqlNodeRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class RestartGaussMySqlNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestartGaussMySqlNodeRequest.
+        r"""Gets the instance_id of this RestartGaussMySqlNodeRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class RestartGaussMySqlNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestartGaussMySqlNodeRequest.
+        r"""Sets the instance_id of this RestartGaussMySqlNodeRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class RestartGaussMySqlNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this RestartGaussMySqlNodeRequest.
+        r"""Gets the node_id of this RestartGaussMySqlNodeRequest.
 
         节点ID。
 
@@ -117,7 +117,7 @@ class RestartGaussMySqlNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this RestartGaussMySqlNodeRequest.
+        r"""Sets the node_id of this RestartGaussMySqlNodeRequest.
 
         节点ID。
 
@@ -128,7 +128,7 @@ class RestartGaussMySqlNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestartGaussMySqlNodeRequest.
+        r"""Gets the body of this RestartGaussMySqlNodeRequest.
 
         :return: The body of this RestartGaussMySqlNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartNodeRequest`
@@ -137,7 +137,7 @@ class RestartGaussMySqlNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestartGaussMySqlNodeRequest.
+        r"""Sets the body of this RestartGaussMySqlNodeRequest.
 
         :param body: The body of this RestartGaussMySqlNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.RestartNodeRequest`

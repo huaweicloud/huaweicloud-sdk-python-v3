@@ -33,7 +33,7 @@ class ShowStandardTemplateResultDataValue:
     }
 
     def __init__(self, all_fields=None, optional=None, system_default=None, custom=None, has_template=None):
-        """ShowStandardTemplateResultDataValue
+        r"""ShowStandardTemplateResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowStandardTemplateResultDataValue:
 
     @property
     def all_fields(self):
-        """Gets the all_fields of this ShowStandardTemplateResultDataValue.
+        r"""Gets the all_fields of this ShowStandardTemplateResultDataValue.
 
         数据标准全部属性，集合中是单个StandElementFieldVO对象
 
@@ -82,7 +82,7 @@ class ShowStandardTemplateResultDataValue:
 
     @all_fields.setter
     def all_fields(self, all_fields):
-        """Sets the all_fields of this ShowStandardTemplateResultDataValue.
+        r"""Sets the all_fields of this ShowStandardTemplateResultDataValue.
 
         数据标准全部属性，集合中是单个StandElementFieldVO对象
 
@@ -93,7 +93,7 @@ class ShowStandardTemplateResultDataValue:
 
     @property
     def optional(self):
-        """Gets the optional of this ShowStandardTemplateResultDataValue.
+        r"""Gets the optional of this ShowStandardTemplateResultDataValue.
 
         可选项,集合中是单个StandElementFieldVO对象
 
@@ -104,7 +104,7 @@ class ShowStandardTemplateResultDataValue:
 
     @optional.setter
     def optional(self, optional):
-        """Sets the optional of this ShowStandardTemplateResultDataValue.
+        r"""Sets the optional of this ShowStandardTemplateResultDataValue.
 
         可选项,集合中是单个StandElementFieldVO对象
 
@@ -115,7 +115,7 @@ class ShowStandardTemplateResultDataValue:
 
     @property
     def system_default(self):
-        """Gets the system_default of this ShowStandardTemplateResultDataValue.
+        r"""Gets the system_default of this ShowStandardTemplateResultDataValue.
 
         系统默认项，集合中是单个StandElementFieldVO对象
 
@@ -126,7 +126,7 @@ class ShowStandardTemplateResultDataValue:
 
     @system_default.setter
     def system_default(self, system_default):
-        """Sets the system_default of this ShowStandardTemplateResultDataValue.
+        r"""Sets the system_default of this ShowStandardTemplateResultDataValue.
 
         系统默认项，集合中是单个StandElementFieldVO对象
 
@@ -137,7 +137,7 @@ class ShowStandardTemplateResultDataValue:
 
     @property
     def custom(self):
-        """Gets the custom of this ShowStandardTemplateResultDataValue.
+        r"""Gets the custom of this ShowStandardTemplateResultDataValue.
 
         自定义项,集合中是单个StandElementFieldVO对象
 
@@ -148,7 +148,7 @@ class ShowStandardTemplateResultDataValue:
 
     @custom.setter
     def custom(self, custom):
-        """Sets the custom of this ShowStandardTemplateResultDataValue.
+        r"""Sets the custom of this ShowStandardTemplateResultDataValue.
 
         自定义项,集合中是单个StandElementFieldVO对象
 
@@ -159,7 +159,7 @@ class ShowStandardTemplateResultDataValue:
 
     @property
     def has_template(self):
-        """Gets the has_template of this ShowStandardTemplateResultDataValue.
+        r"""Gets the has_template of this ShowStandardTemplateResultDataValue.
 
         是否使用模板
 
@@ -170,7 +170,7 @@ class ShowStandardTemplateResultDataValue:
 
     @has_template.setter
     def has_template(self, has_template):
-        """Sets the has_template of this ShowStandardTemplateResultDataValue.
+        r"""Sets the has_template of this ShowStandardTemplateResultDataValue.
 
         是否使用模板
 

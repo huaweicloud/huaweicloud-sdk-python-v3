@@ -25,7 +25,7 @@ class DeleteFsDirQuotaRequestBody:
     }
 
     def __init__(self, path=None):
-        """DeleteFsDirQuotaRequestBody
+        r"""DeleteFsDirQuotaRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFsDirQuotaRequestBody:
 
     @property
     def path(self):
-        """Gets the path of this DeleteFsDirQuotaRequestBody.
+        r"""Gets the path of this DeleteFsDirQuotaRequestBody.
 
         合法的已存在的目录的全路径
 
@@ -53,7 +53,7 @@ class DeleteFsDirQuotaRequestBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this DeleteFsDirQuotaRequestBody.
+        r"""Sets the path of this DeleteFsDirQuotaRequestBody.
 
         合法的已存在的目录的全路径
 

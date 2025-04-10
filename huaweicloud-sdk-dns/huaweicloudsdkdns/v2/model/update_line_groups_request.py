@@ -27,7 +27,7 @@ class UpdateLineGroupsRequest:
     }
 
     def __init__(self, linegroup_id=None, body=None):
-        """UpdateLineGroupsRequest
+        r"""UpdateLineGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLineGroupsRequest:
 
     @property
     def linegroup_id(self):
-        """Gets the linegroup_id of this UpdateLineGroupsRequest.
+        r"""Gets the linegroup_id of this UpdateLineGroupsRequest.
 
         线路分组ID
 
@@ -60,7 +60,7 @@ class UpdateLineGroupsRequest:
 
     @linegroup_id.setter
     def linegroup_id(self, linegroup_id):
-        """Sets the linegroup_id of this UpdateLineGroupsRequest.
+        r"""Sets the linegroup_id of this UpdateLineGroupsRequest.
 
         线路分组ID
 
@@ -71,7 +71,7 @@ class UpdateLineGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLineGroupsRequest.
+        r"""Gets the body of this UpdateLineGroupsRequest.
 
         :return: The body of this UpdateLineGroupsRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequestBody`
@@ -80,7 +80,7 @@ class UpdateLineGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLineGroupsRequest.
+        r"""Sets the body of this UpdateLineGroupsRequest.
 
         :param body: The body of this UpdateLineGroupsRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequestBody`

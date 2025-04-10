@@ -26,7 +26,7 @@ class TimeRuleKindObj:
     }
 
     def __init__(self):
-        """TimeRuleKindObj
+        r"""TimeRuleKindObj
 
         The model defined in huaweicloud sdk
 

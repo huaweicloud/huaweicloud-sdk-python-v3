@@ -29,7 +29,7 @@ class ShowTakeOverTaskDetailsRequest:
     }
 
     def __init__(self, task_id=None, page=None, size=None):
-        """ShowTakeOverTaskDetailsRequest
+        r"""ShowTakeOverTaskDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowTakeOverTaskDetailsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTakeOverTaskDetailsRequest.
+        r"""Gets the task_id of this ShowTakeOverTaskDetailsRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class ShowTakeOverTaskDetailsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTakeOverTaskDetailsRequest.
+        r"""Sets the task_id of this ShowTakeOverTaskDetailsRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class ShowTakeOverTaskDetailsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowTakeOverTaskDetailsRequest.
+        r"""Gets the page of this ShowTakeOverTaskDetailsRequest.
 
         分页编号，默认为0。
 
@@ -89,7 +89,7 @@ class ShowTakeOverTaskDetailsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowTakeOverTaskDetailsRequest.
+        r"""Sets the page of this ShowTakeOverTaskDetailsRequest.
 
         分页编号，默认为0。
 
@@ -100,7 +100,7 @@ class ShowTakeOverTaskDetailsRequest:
 
     @property
     def size(self):
-        """Gets the size of this ShowTakeOverTaskDetailsRequest.
+        r"""Gets the size of this ShowTakeOverTaskDetailsRequest.
 
         每页记录数。  默认10，范围[1,100]
 
@@ -111,7 +111,7 @@ class ShowTakeOverTaskDetailsRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowTakeOverTaskDetailsRequest.
+        r"""Sets the size of this ShowTakeOverTaskDetailsRequest.
 
         每页记录数。  默认10，范围[1,100]
 

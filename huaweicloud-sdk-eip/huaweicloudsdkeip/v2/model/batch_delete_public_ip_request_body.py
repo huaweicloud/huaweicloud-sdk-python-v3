@@ -25,7 +25,7 @@ class BatchDeletePublicIpRequestBody:
     }
 
     def __init__(self, publicip_ids=None):
-        """BatchDeletePublicIpRequestBody
+        r"""BatchDeletePublicIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeletePublicIpRequestBody:
 
     @property
     def publicip_ids(self):
-        """Gets the publicip_ids of this BatchDeletePublicIpRequestBody.
+        r"""Gets the publicip_ids of this BatchDeletePublicIpRequestBody.
 
         弹性公网ip的id列表。
 
@@ -53,7 +53,7 @@ class BatchDeletePublicIpRequestBody:
 
     @publicip_ids.setter
     def publicip_ids(self, publicip_ids):
-        """Sets the publicip_ids of this BatchDeletePublicIpRequestBody.
+        r"""Sets the publicip_ids of this BatchDeletePublicIpRequestBody.
 
         弹性公网ip的id列表。
 

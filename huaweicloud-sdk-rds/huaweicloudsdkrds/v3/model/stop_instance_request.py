@@ -27,7 +27,7 @@ class StopInstanceRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """StopInstanceRequest
+        r"""StopInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StopInstanceRequest.
+        r"""Gets the x_language of this StopInstanceRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class StopInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StopInstanceRequest.
+        r"""Sets the x_language of this StopInstanceRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class StopInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StopInstanceRequest.
+        r"""Gets the instance_id of this StopInstanceRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class StopInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StopInstanceRequest.
+        r"""Sets the instance_id of this StopInstanceRequest.
 
         实例ID。
 

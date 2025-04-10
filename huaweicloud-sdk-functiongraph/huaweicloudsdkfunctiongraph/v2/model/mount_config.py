@@ -27,7 +27,7 @@ class MountConfig:
     }
 
     def __init__(self, mount_user=None, func_mounts=None):
-        """MountConfig
+        r"""MountConfig
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MountConfig:
 
     @property
     def mount_user(self):
-        """Gets the mount_user of this MountConfig.
+        r"""Gets the mount_user of this MountConfig.
 
         :return: The mount_user of this MountConfig.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`
@@ -57,7 +57,7 @@ class MountConfig:
 
     @mount_user.setter
     def mount_user(self, mount_user):
-        """Sets the mount_user of this MountConfig.
+        r"""Sets the mount_user of this MountConfig.
 
         :param mount_user: The mount_user of this MountConfig.
         :type mount_user: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`
@@ -66,7 +66,7 @@ class MountConfig:
 
     @property
     def func_mounts(self):
-        """Gets the func_mounts of this MountConfig.
+        r"""Gets the func_mounts of this MountConfig.
 
         函数挂载列表。
 
@@ -77,7 +77,7 @@ class MountConfig:
 
     @func_mounts.setter
     def func_mounts(self, func_mounts):
-        """Sets the func_mounts of this MountConfig.
+        r"""Sets the func_mounts of this MountConfig.
 
         函数挂载列表。
 

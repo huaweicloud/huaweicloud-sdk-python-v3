@@ -27,7 +27,7 @@ class AddDrugDatabaseFileReq:
     }
 
     def __init__(self, file=None, description=None):
-        """AddDrugDatabaseFileReq
+        r"""AddDrugDatabaseFileReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddDrugDatabaseFileReq:
 
     @property
     def file(self):
-        """Gets the file of this AddDrugDatabaseFileReq.
+        r"""Gets the file of this AddDrugDatabaseFileReq.
 
         :return: The file of this AddDrugDatabaseFileReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseFile`
@@ -58,7 +58,7 @@ class AddDrugDatabaseFileReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this AddDrugDatabaseFileReq.
+        r"""Sets the file of this AddDrugDatabaseFileReq.
 
         :param file: The file of this AddDrugDatabaseFileReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.DatabaseFile`
@@ -67,7 +67,7 @@ class AddDrugDatabaseFileReq:
 
     @property
     def description(self):
-        """Gets the description of this AddDrugDatabaseFileReq.
+        r"""Gets the description of this AddDrugDatabaseFileReq.
 
         数据库描述
 
@@ -78,7 +78,7 @@ class AddDrugDatabaseFileReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddDrugDatabaseFileReq.
+        r"""Sets the description of this AddDrugDatabaseFileReq.
 
         数据库描述
 

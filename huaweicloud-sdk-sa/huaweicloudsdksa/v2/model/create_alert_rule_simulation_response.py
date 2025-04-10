@@ -30,7 +30,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
     }
 
     def __init__(self, alert_count=None, severity=None, x_request_id=None):
-        """CreateAlertRuleSimulationResponse
+        r"""CreateAlertRuleSimulationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
     @property
     def alert_count(self):
-        """Gets the alert_count of this CreateAlertRuleSimulationResponse.
+        r"""Gets the alert_count of this CreateAlertRuleSimulationResponse.
 
         alert_count
 
@@ -69,7 +69,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
     @alert_count.setter
     def alert_count(self, alert_count):
-        """Sets the alert_count of this CreateAlertRuleSimulationResponse.
+        r"""Sets the alert_count of this CreateAlertRuleSimulationResponse.
 
         alert_count
 
@@ -80,7 +80,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this CreateAlertRuleSimulationResponse.
+        r"""Gets the severity of this CreateAlertRuleSimulationResponse.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -91,7 +91,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CreateAlertRuleSimulationResponse.
+        r"""Sets the severity of this CreateAlertRuleSimulationResponse.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -102,7 +102,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateAlertRuleSimulationResponse.
+        r"""Gets the x_request_id of this CreateAlertRuleSimulationResponse.
 
         :return: The x_request_id of this CreateAlertRuleSimulationResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateAlertRuleSimulationResponse.
+        r"""Sets the x_request_id of this CreateAlertRuleSimulationResponse.
 
         :param x_request_id: The x_request_id of this CreateAlertRuleSimulationResponse.
         :type x_request_id: str

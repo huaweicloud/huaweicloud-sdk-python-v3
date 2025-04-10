@@ -29,7 +29,7 @@ class ResourceCountsFilters:
     }
 
     def __init__(self, account_id=None, resource_type=None, region_id=None):
-        """ResourceCountsFilters
+        r"""ResourceCountsFilters
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourceCountsFilters:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ResourceCountsFilters.
+        r"""Gets the account_id of this ResourceCountsFilters.
 
         帐号ID。
 
@@ -68,7 +68,7 @@ class ResourceCountsFilters:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ResourceCountsFilters.
+        r"""Sets the account_id of this ResourceCountsFilters.
 
         帐号ID。
 
@@ -79,7 +79,7 @@ class ResourceCountsFilters:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceCountsFilters.
+        r"""Gets the resource_type of this ResourceCountsFilters.
 
         资源类型。
 
@@ -90,7 +90,7 @@ class ResourceCountsFilters:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceCountsFilters.
+        r"""Sets the resource_type of this ResourceCountsFilters.
 
         资源类型。
 
@@ -101,7 +101,7 @@ class ResourceCountsFilters:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceCountsFilters.
+        r"""Gets the region_id of this ResourceCountsFilters.
 
         区域ID。
 
@@ -112,7 +112,7 @@ class ResourceCountsFilters:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceCountsFilters.
+        r"""Sets the region_id of this ResourceCountsFilters.
 
         区域ID。
 

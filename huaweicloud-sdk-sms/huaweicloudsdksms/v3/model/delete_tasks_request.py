@@ -25,7 +25,7 @@ class DeleteTasksRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteTasksRequest
+        r"""DeleteTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTasksRequest.
+        r"""Gets the body of this DeleteTasksRequest.
 
         :return: The body of this DeleteTasksRequest.
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTasksReq`
@@ -52,7 +52,7 @@ class DeleteTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTasksRequest.
+        r"""Sets the body of this DeleteTasksRequest.
 
         :param body: The body of this DeleteTasksRequest.
         :type body: :class:`huaweicloudsdksms.v3.DeleteTasksReq`

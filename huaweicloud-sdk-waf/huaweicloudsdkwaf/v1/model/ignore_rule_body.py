@@ -47,7 +47,7 @@ class IgnoreRuleBody:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, domain=None, advanced=None):
-        """IgnoreRuleBody
+        r"""IgnoreRuleBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class IgnoreRuleBody:
 
     @property
     def id(self):
-        """Gets the id of this IgnoreRuleBody.
+        r"""Gets the id of this IgnoreRuleBody.
 
         规则id
 
@@ -131,7 +131,7 @@ class IgnoreRuleBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IgnoreRuleBody.
+        r"""Sets the id of this IgnoreRuleBody.
 
         规则id
 
@@ -142,7 +142,7 @@ class IgnoreRuleBody:
 
     @property
     def policyid(self):
-        """Gets the policyid of this IgnoreRuleBody.
+        r"""Gets the policyid of this IgnoreRuleBody.
 
         该规则属于的防护策略的id
 
@@ -153,7 +153,7 @@ class IgnoreRuleBody:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this IgnoreRuleBody.
+        r"""Sets the policyid of this IgnoreRuleBody.
 
         该规则属于的防护策略的id
 
@@ -164,7 +164,7 @@ class IgnoreRuleBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this IgnoreRuleBody.
+        r"""Gets the timestamp of this IgnoreRuleBody.
 
         创建规则的时间戳
 
@@ -175,7 +175,7 @@ class IgnoreRuleBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this IgnoreRuleBody.
+        r"""Sets the timestamp of this IgnoreRuleBody.
 
         创建规则的时间戳
 
@@ -186,7 +186,7 @@ class IgnoreRuleBody:
 
     @property
     def description(self):
-        """Gets the description of this IgnoreRuleBody.
+        r"""Gets the description of this IgnoreRuleBody.
 
         规则描述
 
@@ -197,7 +197,7 @@ class IgnoreRuleBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IgnoreRuleBody.
+        r"""Sets the description of this IgnoreRuleBody.
 
         规则描述
 
@@ -208,7 +208,7 @@ class IgnoreRuleBody:
 
     @property
     def status(self):
-        """Gets the status of this IgnoreRuleBody.
+        r"""Gets the status of this IgnoreRuleBody.
 
         规则状态，0：关闭，1：开启
 
@@ -219,7 +219,7 @@ class IgnoreRuleBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IgnoreRuleBody.
+        r"""Sets the status of this IgnoreRuleBody.
 
         规则状态，0：关闭，1：开启
 
@@ -230,7 +230,7 @@ class IgnoreRuleBody:
 
     @property
     def url(self):
-        """Gets the url of this IgnoreRuleBody.
+        r"""Gets the url of this IgnoreRuleBody.
 
         误报规则屏蔽路径，仅在mode为0的状态下有该字段
 
@@ -241,7 +241,7 @@ class IgnoreRuleBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this IgnoreRuleBody.
+        r"""Sets the url of this IgnoreRuleBody.
 
         误报规则屏蔽路径，仅在mode为0的状态下有该字段
 
@@ -252,7 +252,7 @@ class IgnoreRuleBody:
 
     @property
     def rule(self):
-        """Gets the rule of this IgnoreRuleBody.
+        r"""Gets the rule of this IgnoreRuleBody.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -263,7 +263,7 @@ class IgnoreRuleBody:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this IgnoreRuleBody.
+        r"""Sets the rule of this IgnoreRuleBody.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -274,7 +274,7 @@ class IgnoreRuleBody:
 
     @property
     def mode(self):
-        """Gets the mode of this IgnoreRuleBody.
+        r"""Gets the mode of this IgnoreRuleBody.
 
         版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions和multi_conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions或multi_conditions字段，具体以实际返回结果为准
 
@@ -285,7 +285,7 @@ class IgnoreRuleBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this IgnoreRuleBody.
+        r"""Sets the mode of this IgnoreRuleBody.
 
         版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions和multi_conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions或multi_conditions字段，具体以实际返回结果为准
 
@@ -296,7 +296,7 @@ class IgnoreRuleBody:
 
     @property
     def url_logic(self):
-        """Gets the url_logic of this IgnoreRuleBody.
+        r"""Gets the url_logic of this IgnoreRuleBody.
 
         匹配逻辑支持（equal：等于，not_equal：不等于，contain：包含，not_contain：不包含，prefix：前缀为，not_prefix：前缀不为，suffix：后缀为，not_suffix：后缀不为，regular_match：正则匹配，regular_not_match：正则不匹配）
 
@@ -307,7 +307,7 @@ class IgnoreRuleBody:
 
     @url_logic.setter
     def url_logic(self, url_logic):
-        """Sets the url_logic of this IgnoreRuleBody.
+        r"""Sets the url_logic of this IgnoreRuleBody.
 
         匹配逻辑支持（equal：等于，not_equal：不等于，contain：包含，not_contain：不包含，prefix：前缀为，not_prefix：前缀不为，suffix：后缀为，not_suffix：后缀不为，regular_match：正则匹配，regular_not_match：正则不匹配）
 
@@ -318,7 +318,7 @@ class IgnoreRuleBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this IgnoreRuleBody.
+        r"""Gets the conditions of this IgnoreRuleBody.
 
         条件列表
 
@@ -329,7 +329,7 @@ class IgnoreRuleBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this IgnoreRuleBody.
+        r"""Sets the conditions of this IgnoreRuleBody.
 
         条件列表
 
@@ -340,7 +340,7 @@ class IgnoreRuleBody:
 
     @property
     def domain(self):
-        """Gets the domain of this IgnoreRuleBody.
+        r"""Gets the domain of this IgnoreRuleBody.
 
         防护域名或防护网站
 
@@ -351,7 +351,7 @@ class IgnoreRuleBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this IgnoreRuleBody.
+        r"""Sets the domain of this IgnoreRuleBody.
 
         防护域名或防护网站
 
@@ -362,7 +362,7 @@ class IgnoreRuleBody:
 
     @property
     def advanced(self):
-        """Gets the advanced of this IgnoreRuleBody.
+        r"""Gets the advanced of this IgnoreRuleBody.
 
         :return: The advanced of this IgnoreRuleBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -371,7 +371,7 @@ class IgnoreRuleBody:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this IgnoreRuleBody.
+        r"""Sets the advanced of this IgnoreRuleBody.
 
         :param advanced: The advanced of this IgnoreRuleBody.
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`

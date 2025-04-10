@@ -25,7 +25,7 @@ class KnowledgeQuestionCreateInfo:
     }
 
     def __init__(self, question=None):
-        """KnowledgeQuestionCreateInfo
+        r"""KnowledgeQuestionCreateInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KnowledgeQuestionCreateInfo:
 
     @property
     def question(self):
-        """Gets the question of this KnowledgeQuestionCreateInfo.
+        r"""Gets the question of this KnowledgeQuestionCreateInfo.
 
         问法。
 
@@ -53,7 +53,7 @@ class KnowledgeQuestionCreateInfo:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this KnowledgeQuestionCreateInfo.
+        r"""Sets the question of this KnowledgeQuestionCreateInfo.
 
         问法。
 

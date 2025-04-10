@@ -25,7 +25,7 @@ class ApiContentReq:
     }
 
     def __init__(self, name=None):
-        """ApiContentReq
+        r"""ApiContentReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ApiContentReq:
 
     @property
     def name(self):
-        """Gets the name of this ApiContentReq.
+        r"""Gets the name of this ApiContentReq.
 
         api数据源名称
 
@@ -53,7 +53,7 @@ class ApiContentReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiContentReq.
+        r"""Sets the name of this ApiContentReq.
 
         api数据源名称
 

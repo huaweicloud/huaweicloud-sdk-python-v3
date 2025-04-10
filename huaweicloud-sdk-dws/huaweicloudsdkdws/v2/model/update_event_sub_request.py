@@ -27,7 +27,7 @@ class UpdateEventSubRequest:
     }
 
     def __init__(self, event_sub_id=None, body=None):
-        """UpdateEventSubRequest
+        r"""UpdateEventSubRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEventSubRequest:
 
     @property
     def event_sub_id(self):
-        """Gets the event_sub_id of this UpdateEventSubRequest.
+        r"""Gets the event_sub_id of this UpdateEventSubRequest.
 
         事件订阅ID
 
@@ -60,7 +60,7 @@ class UpdateEventSubRequest:
 
     @event_sub_id.setter
     def event_sub_id(self, event_sub_id):
-        """Sets the event_sub_id of this UpdateEventSubRequest.
+        r"""Sets the event_sub_id of this UpdateEventSubRequest.
 
         事件订阅ID
 
@@ -71,7 +71,7 @@ class UpdateEventSubRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventSubRequest.
+        r"""Gets the body of this UpdateEventSubRequest.
 
         :return: The body of this UpdateEventSubRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.EventSubUpdateRequest`
@@ -80,7 +80,7 @@ class UpdateEventSubRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventSubRequest.
+        r"""Sets the body of this UpdateEventSubRequest.
 
         :param body: The body of this UpdateEventSubRequest.
         :type body: :class:`huaweicloudsdkdws.v2.EventSubUpdateRequest`

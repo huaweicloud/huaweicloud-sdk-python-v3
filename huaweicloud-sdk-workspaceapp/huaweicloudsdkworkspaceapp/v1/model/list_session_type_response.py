@@ -26,7 +26,7 @@ class ListSessionTypeResponse(SdkResponse):
     }
 
     def __init__(self, session_types=None):
-        """ListSessionTypeResponse
+        r"""ListSessionTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSessionTypeResponse(SdkResponse):
 
     @property
     def session_types(self):
-        """Gets the session_types of this ListSessionTypeResponse.
+        r"""Gets the session_types of this ListSessionTypeResponse.
 
         会话列表。
 
@@ -55,7 +55,7 @@ class ListSessionTypeResponse(SdkResponse):
 
     @session_types.setter
     def session_types(self, session_types):
-        """Sets the session_types of this ListSessionTypeResponse.
+        r"""Sets the session_types of this ListSessionTypeResponse.
 
         会话列表。
 

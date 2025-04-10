@@ -27,7 +27,7 @@ class UpdateAutoScalingPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateAutoScalingPolicyRequest
+        r"""UpdateAutoScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAutoScalingPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAutoScalingPolicyRequest.
+        r"""Gets the cluster_id of this UpdateAutoScalingPolicyRequest.
 
         集群ID。
 
@@ -60,7 +60,7 @@ class UpdateAutoScalingPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAutoScalingPolicyRequest.
+        r"""Sets the cluster_id of this UpdateAutoScalingPolicyRequest.
 
         集群ID。
 
@@ -71,7 +71,7 @@ class UpdateAutoScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutoScalingPolicyRequest.
+        r"""Gets the body of this UpdateAutoScalingPolicyRequest.
 
         :return: The body of this UpdateAutoScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyV2`
@@ -80,7 +80,7 @@ class UpdateAutoScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutoScalingPolicyRequest.
+        r"""Sets the body of this UpdateAutoScalingPolicyRequest.
 
         :param body: The body of this UpdateAutoScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyV2`

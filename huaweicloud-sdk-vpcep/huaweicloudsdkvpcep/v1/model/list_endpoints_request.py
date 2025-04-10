@@ -37,7 +37,7 @@ class ListEndpointsRequest:
     }
 
     def __init__(self, endpoint_service_name=None, vpc_id=None, id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListEndpointsRequest
+        r"""ListEndpointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListEndpointsRequest:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this ListEndpointsRequest.
+        r"""Gets the endpoint_service_name of this ListEndpointsRequest.
 
         终端节点服务的名称，支持大小写，前后模糊匹配。
 
@@ -96,7 +96,7 @@ class ListEndpointsRequest:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this ListEndpointsRequest.
+        r"""Sets the endpoint_service_name of this ListEndpointsRequest.
 
         终端节点服务的名称，支持大小写，前后模糊匹配。
 
@@ -107,7 +107,7 @@ class ListEndpointsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListEndpointsRequest.
+        r"""Gets the vpc_id of this ListEndpointsRequest.
 
         终端节点所在的VPC的ID。
 
@@ -118,7 +118,7 @@ class ListEndpointsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListEndpointsRequest.
+        r"""Sets the vpc_id of this ListEndpointsRequest.
 
         终端节点所在的VPC的ID。
 
@@ -129,7 +129,7 @@ class ListEndpointsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEndpointsRequest.
+        r"""Gets the id of this ListEndpointsRequest.
 
         终端节点的ID，唯一标识。
 
@@ -140,7 +140,7 @@ class ListEndpointsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEndpointsRequest.
+        r"""Sets the id of this ListEndpointsRequest.
 
         终端节点的ID，唯一标识。
 
@@ -151,7 +151,7 @@ class ListEndpointsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointsRequest.
+        r"""Gets the limit of this ListEndpointsRequest.
 
         查询返回终端节点的数量限制，即每页返回的资源个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -162,7 +162,7 @@ class ListEndpointsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointsRequest.
+        r"""Sets the limit of this ListEndpointsRequest.
 
         查询返回终端节点的数量限制，即每页返回的资源个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -173,7 +173,7 @@ class ListEndpointsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEndpointsRequest.
+        r"""Gets the offset of this ListEndpointsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -184,7 +184,7 @@ class ListEndpointsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEndpointsRequest.
+        r"""Sets the offset of this ListEndpointsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -195,7 +195,7 @@ class ListEndpointsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListEndpointsRequest.
+        r"""Gets the sort_key of this ListEndpointsRequest.
 
         查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
@@ -206,7 +206,7 @@ class ListEndpointsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListEndpointsRequest.
+        r"""Sets the sort_key of this ListEndpointsRequest.
 
         查询结果中终端节点列表的排序字段，取值为：  - create_at：终端节点的创建时间  - update_at：终端节点的更新时间 默认值为create_at。
 
@@ -217,7 +217,7 @@ class ListEndpointsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListEndpointsRequest.
+        r"""Gets the sort_dir of this ListEndpointsRequest.
 
         查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -228,7 +228,7 @@ class ListEndpointsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListEndpointsRequest.
+        r"""Sets the sort_dir of this ListEndpointsRequest.
 
         查询结果中终端节点列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 

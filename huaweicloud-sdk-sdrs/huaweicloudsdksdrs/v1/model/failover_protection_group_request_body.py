@@ -25,7 +25,7 @@ class FailoverProtectionGroupRequestBody:
     }
 
     def __init__(self, failover_server_group=None):
-        """FailoverProtectionGroupRequestBody
+        r"""FailoverProtectionGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FailoverProtectionGroupRequestBody:
 
     @property
     def failover_server_group(self):
-        """Gets the failover_server_group of this FailoverProtectionGroupRequestBody.
+        r"""Gets the failover_server_group of this FailoverProtectionGroupRequestBody.
 
         标识保护组故障切换操作。该参数目前默认值为空。
 
@@ -53,7 +53,7 @@ class FailoverProtectionGroupRequestBody:
 
     @failover_server_group.setter
     def failover_server_group(self, failover_server_group):
-        """Sets the failover_server_group of this FailoverProtectionGroupRequestBody.
+        r"""Sets the failover_server_group of this FailoverProtectionGroupRequestBody.
 
         标识保护组故障切换操作。该参数目前默认值为空。
 

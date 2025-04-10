@@ -27,7 +27,7 @@ class NodeDevice:
     }
 
     def __init__(self, added=None, removed=None):
-        """NodeDevice
+        r"""NodeDevice
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeDevice:
 
     @property
     def added(self):
-        """Gets the added of this NodeDevice.
+        r"""Gets the added of this NodeDevice.
 
         :return: The added of this NodeDevice.
         :rtype: :class:`huaweicloudsdkief.v1.DeviceInfos`
@@ -59,7 +59,7 @@ class NodeDevice:
 
     @added.setter
     def added(self, added):
-        """Sets the added of this NodeDevice.
+        r"""Sets the added of this NodeDevice.
 
         :param added: The added of this NodeDevice.
         :type added: :class:`huaweicloudsdkief.v1.DeviceInfos`
@@ -68,7 +68,7 @@ class NodeDevice:
 
     @property
     def removed(self):
-        """Gets the removed of this NodeDevice.
+        r"""Gets the removed of this NodeDevice.
 
         要解绑的终端设备ID
 
@@ -79,7 +79,7 @@ class NodeDevice:
 
     @removed.setter
     def removed(self, removed):
-        """Sets the removed of this NodeDevice.
+        r"""Sets the removed of this NodeDevice.
 
         要解绑的终端设备ID
 

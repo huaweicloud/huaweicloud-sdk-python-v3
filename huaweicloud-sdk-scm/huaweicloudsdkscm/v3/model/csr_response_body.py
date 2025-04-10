@@ -49,7 +49,7 @@ class CSRResponseBody:
     }
 
     def __init__(self, id=None, name=None, csr=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None, create_time=None, update_time=None):
-        """CSRResponseBody
+        r"""CSRResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CSRResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this CSRResponseBody.
+        r"""Gets the id of this CSRResponseBody.
 
         CSR的ID。
 
@@ -125,7 +125,7 @@ class CSRResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CSRResponseBody.
+        r"""Sets the id of this CSRResponseBody.
 
         CSR的ID。
 
@@ -136,7 +136,7 @@ class CSRResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this CSRResponseBody.
+        r"""Gets the name of this CSRResponseBody.
 
         CSR名称。
 
@@ -147,7 +147,7 @@ class CSRResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CSRResponseBody.
+        r"""Sets the name of this CSRResponseBody.
 
         CSR名称。
 
@@ -158,7 +158,7 @@ class CSRResponseBody:
 
     @property
     def csr(self):
-        """Gets the csr of this CSRResponseBody.
+        r"""Gets the csr of this CSRResponseBody.
 
         CSR内容。
 
@@ -169,7 +169,7 @@ class CSRResponseBody:
 
     @csr.setter
     def csr(self, csr):
-        """Sets the csr of this CSRResponseBody.
+        r"""Sets the csr of this CSRResponseBody.
 
         CSR内容。
 
@@ -180,7 +180,7 @@ class CSRResponseBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CSRResponseBody.
+        r"""Gets the domain_name of this CSRResponseBody.
 
         CSR绑定的域名。
 
@@ -191,7 +191,7 @@ class CSRResponseBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CSRResponseBody.
+        r"""Sets the domain_name of this CSRResponseBody.
 
         CSR绑定的域名。
 
@@ -202,7 +202,7 @@ class CSRResponseBody:
 
     @property
     def sans(self):
-        """Gets the sans of this CSRResponseBody.
+        r"""Gets the sans of this CSRResponseBody.
 
         CSR绑定的附加域名。
 
@@ -213,7 +213,7 @@ class CSRResponseBody:
 
     @sans.setter
     def sans(self, sans):
-        """Sets the sans of this CSRResponseBody.
+        r"""Sets the sans of this CSRResponseBody.
 
         CSR绑定的附加域名。
 
@@ -224,7 +224,7 @@ class CSRResponseBody:
 
     @property
     def private_key_algo(self):
-        """Gets the private_key_algo of this CSRResponseBody.
+        r"""Gets the private_key_algo of this CSRResponseBody.
 
         密钥算法。
 
@@ -235,7 +235,7 @@ class CSRResponseBody:
 
     @private_key_algo.setter
     def private_key_algo(self, private_key_algo):
-        """Sets the private_key_algo of this CSRResponseBody.
+        r"""Sets the private_key_algo of this CSRResponseBody.
 
         密钥算法。
 
@@ -246,7 +246,7 @@ class CSRResponseBody:
 
     @property
     def usage(self):
-        """Gets the usage of this CSRResponseBody.
+        r"""Gets the usage of this CSRResponseBody.
 
         CSR用途。
 
@@ -257,7 +257,7 @@ class CSRResponseBody:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this CSRResponseBody.
+        r"""Sets the usage of this CSRResponseBody.
 
         CSR用途。
 
@@ -268,7 +268,7 @@ class CSRResponseBody:
 
     @property
     def company_country(self):
-        """Gets the company_country of this CSRResponseBody.
+        r"""Gets the company_country of this CSRResponseBody.
 
         国家。
 
@@ -279,7 +279,7 @@ class CSRResponseBody:
 
     @company_country.setter
     def company_country(self, company_country):
-        """Sets the company_country of this CSRResponseBody.
+        r"""Sets the company_country of this CSRResponseBody.
 
         国家。
 
@@ -290,7 +290,7 @@ class CSRResponseBody:
 
     @property
     def company_province(self):
-        """Gets the company_province of this CSRResponseBody.
+        r"""Gets the company_province of this CSRResponseBody.
 
         省份。
 
@@ -301,7 +301,7 @@ class CSRResponseBody:
 
     @company_province.setter
     def company_province(self, company_province):
-        """Sets the company_province of this CSRResponseBody.
+        r"""Sets the company_province of this CSRResponseBody.
 
         省份。
 
@@ -312,7 +312,7 @@ class CSRResponseBody:
 
     @property
     def company_city(self):
-        """Gets the company_city of this CSRResponseBody.
+        r"""Gets the company_city of this CSRResponseBody.
 
         城市。
 
@@ -323,7 +323,7 @@ class CSRResponseBody:
 
     @company_city.setter
     def company_city(self, company_city):
-        """Sets the company_city of this CSRResponseBody.
+        r"""Sets the company_city of this CSRResponseBody.
 
         城市。
 
@@ -334,7 +334,7 @@ class CSRResponseBody:
 
     @property
     def company_name(self):
-        """Gets the company_name of this CSRResponseBody.
+        r"""Gets the company_name of this CSRResponseBody.
 
         公司名称。
 
@@ -345,7 +345,7 @@ class CSRResponseBody:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this CSRResponseBody.
+        r"""Sets the company_name of this CSRResponseBody.
 
         公司名称。
 
@@ -356,7 +356,7 @@ class CSRResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CSRResponseBody.
+        r"""Gets the create_time of this CSRResponseBody.
 
         CSR创建时间。
 
@@ -367,7 +367,7 @@ class CSRResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CSRResponseBody.
+        r"""Sets the create_time of this CSRResponseBody.
 
         CSR创建时间。
 
@@ -378,7 +378,7 @@ class CSRResponseBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CSRResponseBody.
+        r"""Gets the update_time of this CSRResponseBody.
 
         CSR更新时间。
 
@@ -389,7 +389,7 @@ class CSRResponseBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CSRResponseBody.
+        r"""Sets the update_time of this CSRResponseBody.
 
         CSR更新时间。
 

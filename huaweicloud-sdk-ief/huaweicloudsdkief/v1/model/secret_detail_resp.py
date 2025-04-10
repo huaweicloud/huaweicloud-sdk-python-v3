@@ -39,7 +39,7 @@ class SecretDetailResp:
     }
 
     def __init__(self, id=None, name=None, description=None, secrets=None, project_id=None, created_at=None, updated_at=None, type=None):
-        """SecretDetailResp
+        r"""SecretDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class SecretDetailResp:
 
     @property
     def id(self):
-        """Gets the id of this SecretDetailResp.
+        r"""Gets the id of this SecretDetailResp.
 
         密钥ID
 
@@ -95,7 +95,7 @@ class SecretDetailResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecretDetailResp.
+        r"""Sets the id of this SecretDetailResp.
 
         密钥ID
 
@@ -106,7 +106,7 @@ class SecretDetailResp:
 
     @property
     def name(self):
-        """Gets the name of this SecretDetailResp.
+        r"""Gets the name of this SecretDetailResp.
 
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾
 
@@ -117,7 +117,7 @@ class SecretDetailResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecretDetailResp.
+        r"""Sets the name of this SecretDetailResp.
 
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾
 
@@ -128,7 +128,7 @@ class SecretDetailResp:
 
     @property
     def description(self):
-        """Gets the description of this SecretDetailResp.
+        r"""Gets the description of this SecretDetailResp.
 
         密钥描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -139,7 +139,7 @@ class SecretDetailResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecretDetailResp.
+        r"""Sets the description of this SecretDetailResp.
 
         密钥描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -150,7 +150,7 @@ class SecretDetailResp:
 
     @property
     def secrets(self):
-        """Gets the secrets of this SecretDetailResp.
+        r"""Gets the secrets of this SecretDetailResp.
 
         secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符， 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 
@@ -161,7 +161,7 @@ class SecretDetailResp:
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this SecretDetailResp.
+        r"""Sets the secrets of this SecretDetailResp.
 
         secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符， 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 
@@ -172,7 +172,7 @@ class SecretDetailResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SecretDetailResp.
+        r"""Gets the project_id of this SecretDetailResp.
 
         项目ID
 
@@ -183,7 +183,7 @@ class SecretDetailResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SecretDetailResp.
+        r"""Sets the project_id of this SecretDetailResp.
 
         项目ID
 
@@ -194,7 +194,7 @@ class SecretDetailResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecretDetailResp.
+        r"""Gets the created_at of this SecretDetailResp.
 
         创建时间
 
@@ -205,7 +205,7 @@ class SecretDetailResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecretDetailResp.
+        r"""Sets the created_at of this SecretDetailResp.
 
         创建时间
 
@@ -216,7 +216,7 @@ class SecretDetailResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecretDetailResp.
+        r"""Gets the updated_at of this SecretDetailResp.
 
         更新时间
 
@@ -227,7 +227,7 @@ class SecretDetailResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecretDetailResp.
+        r"""Sets the updated_at of this SecretDetailResp.
 
         更新时间
 
@@ -238,7 +238,7 @@ class SecretDetailResp:
 
     @property
     def type(self):
-        """Gets the type of this SecretDetailResp.
+        r"""Gets the type of this SecretDetailResp.
 
         密钥类型，目前只支持“Opaque”类型
 
@@ -249,7 +249,7 @@ class SecretDetailResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SecretDetailResp.
+        r"""Sets the type of this SecretDetailResp.
 
         密钥类型，目前只支持“Opaque”类型
 

@@ -25,7 +25,7 @@ class AgencyMappingArray:
     }
 
     def __init__(self, agency_mappings=None):
-        """AgencyMappingArray
+        r"""AgencyMappingArray
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgencyMappingArray:
 
     @property
     def agency_mappings(self):
-        """Gets the agency_mappings of this AgencyMappingArray.
+        r"""Gets the agency_mappings of this AgencyMappingArray.
 
         用户（组）与委托之间的映射关系详细信息。
 
@@ -53,7 +53,7 @@ class AgencyMappingArray:
 
     @agency_mappings.setter
     def agency_mappings(self, agency_mappings):
-        """Sets the agency_mappings of this AgencyMappingArray.
+        r"""Sets the agency_mappings of this AgencyMappingArray.
 
         用户（组）与委托之间的映射关系详细信息。
 

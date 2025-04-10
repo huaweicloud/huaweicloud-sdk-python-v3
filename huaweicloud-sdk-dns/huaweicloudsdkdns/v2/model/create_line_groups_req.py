@@ -29,7 +29,7 @@ class CreateLineGroupsReq:
     }
 
     def __init__(self, name=None, description=None, lines=None):
-        """CreateLineGroupsReq
+        r"""CreateLineGroupsReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateLineGroupsReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateLineGroupsReq.
+        r"""Gets the name of this CreateLineGroupsReq.
 
         线路分组名称。 不能与自定义线路名称、预制线路名称重复。 取值范围：1-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）。
 
@@ -66,7 +66,7 @@ class CreateLineGroupsReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLineGroupsReq.
+        r"""Sets the name of this CreateLineGroupsReq.
 
         线路分组名称。 不能与自定义线路名称、预制线路名称重复。 取值范围：1-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）。
 
@@ -77,7 +77,7 @@ class CreateLineGroupsReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateLineGroupsReq.
+        r"""Gets the description of this CreateLineGroupsReq.
 
         线路分组的描述信息。 长度不超过255个字符。默认值为空。
 
@@ -88,7 +88,7 @@ class CreateLineGroupsReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLineGroupsReq.
+        r"""Sets the description of this CreateLineGroupsReq.
 
         线路分组的描述信息。 长度不超过255个字符。默认值为空。
 
@@ -99,7 +99,7 @@ class CreateLineGroupsReq:
 
     @property
     def lines(self):
-        """Gets the lines of this CreateLineGroupsReq.
+        r"""Gets the lines of this CreateLineGroupsReq.
 
         线路分组包含的线路列表。最少为2个线路。 解析线路ID。
 
@@ -110,7 +110,7 @@ class CreateLineGroupsReq:
 
     @lines.setter
     def lines(self, lines):
-        """Sets the lines of this CreateLineGroupsReq.
+        r"""Sets the lines of this CreateLineGroupsReq.
 
         线路分组包含的线路列表。最少为2个线路。 解析线路ID。
 

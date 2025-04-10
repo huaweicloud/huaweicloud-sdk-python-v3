@@ -27,7 +27,7 @@ class AudioFile:
     }
 
     def __init__(self, tracks_info=None, input=None):
-        """AudioFile
+        r"""AudioFile
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AudioFile:
 
     @property
     def tracks_info(self):
-        """Gets the tracks_info of this AudioFile.
+        r"""Gets the tracks_info of this AudioFile.
 
         音轨信息
 
@@ -61,7 +61,7 @@ class AudioFile:
 
     @tracks_info.setter
     def tracks_info(self, tracks_info):
-        """Sets the tracks_info of this AudioFile.
+        r"""Sets the tracks_info of this AudioFile.
 
         音轨信息
 
@@ -72,7 +72,7 @@ class AudioFile:
 
     @property
     def input(self):
-        """Gets the input of this AudioFile.
+        r"""Gets the input of this AudioFile.
 
         :return: The input of this AudioFile.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -81,7 +81,7 @@ class AudioFile:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this AudioFile.
+        r"""Sets the input of this AudioFile.
 
         :param input: The input of this AudioFile.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

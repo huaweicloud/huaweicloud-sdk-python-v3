@@ -34,7 +34,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, message_type=None, name_pattern=None, notification_types=None, topic_urn=None):
-        """CreateMessageNotificationPolicyResponse
+        r"""CreateMessageNotificationPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateMessageNotificationPolicyResponse.
+        r"""Gets the id of this CreateMessageNotificationPolicyResponse.
 
         id
 
@@ -83,7 +83,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateMessageNotificationPolicyResponse.
+        r"""Sets the id of this CreateMessageNotificationPolicyResponse.
 
         id
 
@@ -94,7 +94,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def message_type(self):
-        """Gets the message_type of this CreateMessageNotificationPolicyResponse.
+        r"""Gets the message_type of this CreateMessageNotificationPolicyResponse.
 
         消息类型。job:任务执行结果。
 
@@ -105,7 +105,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this CreateMessageNotificationPolicyResponse.
+        r"""Sets the message_type of this CreateMessageNotificationPolicyResponse.
 
         消息类型。job:任务执行结果。
 
@@ -116,7 +116,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def name_pattern(self):
-        """Gets the name_pattern of this CreateMessageNotificationPolicyResponse.
+        r"""Gets the name_pattern of this CreateMessageNotificationPolicyResponse.
 
         名称样式，用来匹配消息类型中所有符合该样式的消息。比如，message_type设置为job，name_pattern设置为ray_job*，表示匹配到所有以\"ray_job\"开头的job发出的消息。
 
@@ -127,7 +127,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @name_pattern.setter
     def name_pattern(self, name_pattern):
-        """Sets the name_pattern of this CreateMessageNotificationPolicyResponse.
+        r"""Sets the name_pattern of this CreateMessageNotificationPolicyResponse.
 
         名称样式，用来匹配消息类型中所有符合该样式的消息。比如，message_type设置为job，name_pattern设置为ray_job*，表示匹配到所有以\"ray_job\"开头的job发出的消息。
 
@@ -138,7 +138,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def notification_types(self):
-        """Gets the notification_types of this CreateMessageNotificationPolicyResponse.
+        r"""Gets the notification_types of this CreateMessageNotificationPolicyResponse.
 
         通知类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -149,7 +149,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @notification_types.setter
     def notification_types(self, notification_types):
-        """Sets the notification_types of this CreateMessageNotificationPolicyResponse.
+        r"""Sets the notification_types of this CreateMessageNotificationPolicyResponse.
 
         通知类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -160,7 +160,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateMessageNotificationPolicyResponse.
+        r"""Gets the topic_urn of this CreateMessageNotificationPolicyResponse.
 
         消息通知主题。
 
@@ -171,7 +171,7 @@ class CreateMessageNotificationPolicyResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateMessageNotificationPolicyResponse.
+        r"""Sets the topic_urn of this CreateMessageNotificationPolicyResponse.
 
         消息通知主题。
 

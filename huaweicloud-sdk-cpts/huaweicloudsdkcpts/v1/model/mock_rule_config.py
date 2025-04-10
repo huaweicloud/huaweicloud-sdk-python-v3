@@ -49,7 +49,7 @@ class MockRuleConfig:
     }
 
     def __init__(self, service_type=None, request_url=None, request_method=None, redirect_url=None, mock_strategy=None, enable=None, name=None, project_id=None, id=None, response_header=None, response_body=None, response_time=None, response_code=None):
-        """MockRuleConfig
+        r"""MockRuleConfig
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class MockRuleConfig:
 
     @property
     def service_type(self):
-        """Gets the service_type of this MockRuleConfig.
+        r"""Gets the service_type of this MockRuleConfig.
 
         服务类型（当前只支持http）
 
@@ -138,7 +138,7 @@ class MockRuleConfig:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this MockRuleConfig.
+        r"""Sets the service_type of this MockRuleConfig.
 
         服务类型（当前只支持http）
 
@@ -149,7 +149,7 @@ class MockRuleConfig:
 
     @property
     def request_url(self):
-        """Gets the request_url of this MockRuleConfig.
+        r"""Gets the request_url of this MockRuleConfig.
 
         请求地址
 
@@ -160,7 +160,7 @@ class MockRuleConfig:
 
     @request_url.setter
     def request_url(self, request_url):
-        """Sets the request_url of this MockRuleConfig.
+        r"""Sets the request_url of this MockRuleConfig.
 
         请求地址
 
@@ -171,7 +171,7 @@ class MockRuleConfig:
 
     @property
     def request_method(self):
-        """Gets the request_method of this MockRuleConfig.
+        r"""Gets the request_method of this MockRuleConfig.
 
         请求方式（GET/POST/PUT/DELET/PATCH）
 
@@ -182,7 +182,7 @@ class MockRuleConfig:
 
     @request_method.setter
     def request_method(self, request_method):
-        """Sets the request_method of this MockRuleConfig.
+        r"""Sets the request_method of this MockRuleConfig.
 
         请求方式（GET/POST/PUT/DELET/PATCH）
 
@@ -193,7 +193,7 @@ class MockRuleConfig:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this MockRuleConfig.
+        r"""Gets the redirect_url of this MockRuleConfig.
 
         重定向地址
 
@@ -204,7 +204,7 @@ class MockRuleConfig:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this MockRuleConfig.
+        r"""Sets the redirect_url of this MockRuleConfig.
 
         重定向地址
 
@@ -215,7 +215,7 @@ class MockRuleConfig:
 
     @property
     def mock_strategy(self):
-        """Gets the mock_strategy of this MockRuleConfig.
+        r"""Gets the mock_strategy of this MockRuleConfig.
 
         mock策略（redirect/json）
 
@@ -226,7 +226,7 @@ class MockRuleConfig:
 
     @mock_strategy.setter
     def mock_strategy(self, mock_strategy):
-        """Sets the mock_strategy of this MockRuleConfig.
+        r"""Sets the mock_strategy of this MockRuleConfig.
 
         mock策略（redirect/json）
 
@@ -237,7 +237,7 @@ class MockRuleConfig:
 
     @property
     def enable(self):
-        """Gets the enable of this MockRuleConfig.
+        r"""Gets the enable of this MockRuleConfig.
 
         是否启用
 
@@ -248,7 +248,7 @@ class MockRuleConfig:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this MockRuleConfig.
+        r"""Sets the enable of this MockRuleConfig.
 
         是否启用
 
@@ -259,7 +259,7 @@ class MockRuleConfig:
 
     @property
     def name(self):
-        """Gets the name of this MockRuleConfig.
+        r"""Gets the name of this MockRuleConfig.
 
         规则名称
 
@@ -270,7 +270,7 @@ class MockRuleConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MockRuleConfig.
+        r"""Sets the name of this MockRuleConfig.
 
         规则名称
 
@@ -281,7 +281,7 @@ class MockRuleConfig:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MockRuleConfig.
+        r"""Gets the project_id of this MockRuleConfig.
 
         项目id
 
@@ -292,7 +292,7 @@ class MockRuleConfig:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MockRuleConfig.
+        r"""Sets the project_id of this MockRuleConfig.
 
         项目id
 
@@ -303,7 +303,7 @@ class MockRuleConfig:
 
     @property
     def id(self):
-        """Gets the id of this MockRuleConfig.
+        r"""Gets the id of this MockRuleConfig.
 
         规则id
 
@@ -314,7 +314,7 @@ class MockRuleConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MockRuleConfig.
+        r"""Sets the id of this MockRuleConfig.
 
         规则id
 
@@ -325,7 +325,7 @@ class MockRuleConfig:
 
     @property
     def response_header(self):
-        """Gets the response_header of this MockRuleConfig.
+        r"""Gets the response_header of this MockRuleConfig.
 
         自定义响应头
 
@@ -336,7 +336,7 @@ class MockRuleConfig:
 
     @response_header.setter
     def response_header(self, response_header):
-        """Sets the response_header of this MockRuleConfig.
+        r"""Sets the response_header of this MockRuleConfig.
 
         自定义响应头
 
@@ -347,7 +347,7 @@ class MockRuleConfig:
 
     @property
     def response_body(self):
-        """Gets the response_body of this MockRuleConfig.
+        r"""Gets the response_body of this MockRuleConfig.
 
         自定义响应体
 
@@ -358,7 +358,7 @@ class MockRuleConfig:
 
     @response_body.setter
     def response_body(self, response_body):
-        """Sets the response_body of this MockRuleConfig.
+        r"""Sets the response_body of this MockRuleConfig.
 
         自定义响应体
 
@@ -369,7 +369,7 @@ class MockRuleConfig:
 
     @property
     def response_time(self):
-        """Gets the response_time of this MockRuleConfig.
+        r"""Gets the response_time of this MockRuleConfig.
 
         自定义响应时长
 
@@ -380,7 +380,7 @@ class MockRuleConfig:
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this MockRuleConfig.
+        r"""Sets the response_time of this MockRuleConfig.
 
         自定义响应时长
 
@@ -391,7 +391,7 @@ class MockRuleConfig:
 
     @property
     def response_code(self):
-        """Gets the response_code of this MockRuleConfig.
+        r"""Gets the response_code of this MockRuleConfig.
 
         自定义响应码
 
@@ -402,7 +402,7 @@ class MockRuleConfig:
 
     @response_code.setter
     def response_code(self, response_code):
-        """Sets the response_code of this MockRuleConfig.
+        r"""Sets the response_code of this MockRuleConfig.
 
         自定义响应码
 

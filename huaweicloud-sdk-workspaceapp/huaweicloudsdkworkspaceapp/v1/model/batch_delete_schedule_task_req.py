@@ -25,7 +25,7 @@ class BatchDeleteScheduleTaskReq:
     }
 
     def __init__(self, items=None):
-        """BatchDeleteScheduleTaskReq
+        r"""BatchDeleteScheduleTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteScheduleTaskReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchDeleteScheduleTaskReq.
+        r"""Gets the items of this BatchDeleteScheduleTaskReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 
@@ -53,7 +53,7 @@ class BatchDeleteScheduleTaskReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchDeleteScheduleTaskReq.
+        r"""Sets the items of this BatchDeleteScheduleTaskReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 

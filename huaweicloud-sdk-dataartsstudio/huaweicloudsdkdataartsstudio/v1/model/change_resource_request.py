@@ -25,7 +25,7 @@ class ChangeResourceRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeResourceRequest
+        r"""ChangeResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeResourceRequest.
+        r"""Gets the body of this ChangeResourceRequest.
 
         :return: The body of this ChangeResourceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigChangeResourceReq`
@@ -52,7 +52,7 @@ class ChangeResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeResourceRequest.
+        r"""Sets the body of this ChangeResourceRequest.
 
         :param body: The body of this ChangeResourceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigChangeResourceReq`

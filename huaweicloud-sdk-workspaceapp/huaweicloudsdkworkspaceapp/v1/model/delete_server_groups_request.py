@@ -25,7 +25,7 @@ class DeleteServerGroupsRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """DeleteServerGroupsRequest
+        r"""DeleteServerGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteServerGroupsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DeleteServerGroupsRequest.
+        r"""Gets the server_group_id of this DeleteServerGroupsRequest.
 
         服务器组唯一标识。
 
@@ -53,7 +53,7 @@ class DeleteServerGroupsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DeleteServerGroupsRequest.
+        r"""Sets the server_group_id of this DeleteServerGroupsRequest.
 
         服务器组唯一标识。
 

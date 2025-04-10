@@ -29,7 +29,7 @@ class UpdateApiGroupV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """UpdateApiGroupV2Request
+        r"""UpdateApiGroupV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateApiGroupV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateApiGroupV2Request.
+        r"""Gets the instance_id of this UpdateApiGroupV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -66,7 +66,7 @@ class UpdateApiGroupV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateApiGroupV2Request.
+        r"""Sets the instance_id of this UpdateApiGroupV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -77,7 +77,7 @@ class UpdateApiGroupV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateApiGroupV2Request.
+        r"""Gets the group_id of this UpdateApiGroupV2Request.
 
         分组的编号
 
@@ -88,7 +88,7 @@ class UpdateApiGroupV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateApiGroupV2Request.
+        r"""Sets the group_id of this UpdateApiGroupV2Request.
 
         分组的编号
 
@@ -99,7 +99,7 @@ class UpdateApiGroupV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateApiGroupV2Request.
+        r"""Gets the body of this UpdateApiGroupV2Request.
 
         :return: The body of this UpdateApiGroupV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiGroupBase`
@@ -108,7 +108,7 @@ class UpdateApiGroupV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateApiGroupV2Request.
+        r"""Sets the body of this UpdateApiGroupV2Request.
 
         :param body: The body of this UpdateApiGroupV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.ApiGroupBase`

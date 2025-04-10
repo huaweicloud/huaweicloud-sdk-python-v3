@@ -25,7 +25,7 @@ class ShowIssueCompletionRateRequest:
     }
 
     def __init__(self, project_id=None):
-        """ShowIssueCompletionRateRequest
+        r"""ShowIssueCompletionRateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowIssueCompletionRateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowIssueCompletionRateRequest.
+        r"""Gets the project_id of this ShowIssueCompletionRateRequest.
 
         devcloud项目的32位id
 
@@ -53,7 +53,7 @@ class ShowIssueCompletionRateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowIssueCompletionRateRequest.
+        r"""Sets the project_id of this ShowIssueCompletionRateRequest.
 
         devcloud项目的32位id
 

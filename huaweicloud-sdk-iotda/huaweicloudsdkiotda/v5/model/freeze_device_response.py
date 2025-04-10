@@ -26,7 +26,7 @@ class FreezeDeviceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """FreezeDeviceResponse
+        r"""FreezeDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class FreezeDeviceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this FreezeDeviceResponse.
+        r"""Gets the body of this FreezeDeviceResponse.
 
         :return: The body of this FreezeDeviceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class FreezeDeviceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this FreezeDeviceResponse.
+        r"""Sets the body of this FreezeDeviceResponse.
 
         :param body: The body of this FreezeDeviceResponse.
         :type body: str

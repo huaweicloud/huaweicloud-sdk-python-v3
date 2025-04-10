@@ -29,13 +29,13 @@ class ShowProductdataOfferingInfosRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, site_code=None):
-        """ShowProductdataOfferingInfosRequest
+        r"""ShowProductdataOfferingInfosRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param site_code: 站点信息：   - HWC_CN ：中国站   - HWC_HK ：国际站   - HWC_EU : 欧洲站
         :type site_code: str
@@ -56,7 +56,7 @@ class ShowProductdataOfferingInfosRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowProductdataOfferingInfosRequest.
+        r"""Gets the region of this ShowProductdataOfferingInfosRequest.
 
         Region ID
 
@@ -67,7 +67,7 @@ class ShowProductdataOfferingInfosRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowProductdataOfferingInfosRequest.
+        r"""Sets the region of this ShowProductdataOfferingInfosRequest.
 
         Region ID
 
@@ -78,9 +78,9 @@ class ShowProductdataOfferingInfosRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowProductdataOfferingInfosRequest.
+        r"""Gets the enterprise_project_id of this ShowProductdataOfferingInfosRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowProductdataOfferingInfosRequest.
         :rtype: str
@@ -89,9 +89,9 @@ class ShowProductdataOfferingInfosRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowProductdataOfferingInfosRequest.
+        r"""Sets the enterprise_project_id of this ShowProductdataOfferingInfosRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowProductdataOfferingInfosRequest.
         :type enterprise_project_id: str
@@ -100,7 +100,7 @@ class ShowProductdataOfferingInfosRequest:
 
     @property
     def site_code(self):
-        """Gets the site_code of this ShowProductdataOfferingInfosRequest.
+        r"""Gets the site_code of this ShowProductdataOfferingInfosRequest.
 
         站点信息：   - HWC_CN ：中国站   - HWC_HK ：国际站   - HWC_EU : 欧洲站
 
@@ -111,7 +111,7 @@ class ShowProductdataOfferingInfosRequest:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this ShowProductdataOfferingInfosRequest.
+        r"""Sets the site_code of this ShowProductdataOfferingInfosRequest.
 
         站点信息：   - HWC_CN ：中国站   - HWC_HK ：国际站   - HWC_EU : 欧洲站
 

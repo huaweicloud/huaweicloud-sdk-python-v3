@@ -27,7 +27,7 @@ class CreateLabelsReq:
     }
 
     def __init__(self, name=None, color=None):
-        """CreateLabelsReq
+        r"""CreateLabelsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateLabelsReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateLabelsReq.
+        r"""Gets the name of this CreateLabelsReq.
 
         标签名称
 
@@ -59,7 +59,7 @@ class CreateLabelsReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLabelsReq.
+        r"""Sets the name of this CreateLabelsReq.
 
         标签名称
 
@@ -70,7 +70,7 @@ class CreateLabelsReq:
 
     @property
     def color(self):
-        """Gets the color of this CreateLabelsReq.
+        r"""Gets the color of this CreateLabelsReq.
 
         颜色值，如#000000
 
@@ -81,7 +81,7 @@ class CreateLabelsReq:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this CreateLabelsReq.
+        r"""Sets the color of this CreateLabelsReq.
 
         颜色值，如#000000
 

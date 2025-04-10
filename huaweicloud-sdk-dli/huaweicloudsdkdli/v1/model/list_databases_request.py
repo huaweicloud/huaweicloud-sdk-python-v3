@@ -33,7 +33,7 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, keyword=None, limit=None, offset=None, tags=None, with_priv=None):
-        """ListDatabasesRequest
+        r"""ListDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListDatabasesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListDatabasesRequest.
+        r"""Gets the keyword of this ListDatabasesRequest.
 
         过滤关键字
 
@@ -82,7 +82,7 @@ class ListDatabasesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListDatabasesRequest.
+        r"""Sets the keyword of this ListDatabasesRequest.
 
         过滤关键字
 
@@ -93,7 +93,7 @@ class ListDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabasesRequest.
+        r"""Gets the limit of this ListDatabasesRequest.
 
         查询数量
 
@@ -104,7 +104,7 @@ class ListDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabasesRequest.
+        r"""Sets the limit of this ListDatabasesRequest.
 
         查询数量
 
@@ -115,7 +115,7 @@ class ListDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatabasesRequest.
+        r"""Gets the offset of this ListDatabasesRequest.
 
         查询偏移量
 
@@ -126,7 +126,7 @@ class ListDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatabasesRequest.
+        r"""Sets the offset of this ListDatabasesRequest.
 
         查询偏移量
 
@@ -137,7 +137,7 @@ class ListDatabasesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListDatabasesRequest.
+        r"""Gets the tags of this ListDatabasesRequest.
 
         标签过滤
 
@@ -148,7 +148,7 @@ class ListDatabasesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListDatabasesRequest.
+        r"""Sets the tags of this ListDatabasesRequest.
 
         标签过滤
 
@@ -159,7 +159,7 @@ class ListDatabasesRequest:
 
     @property
     def with_priv(self):
-        """Gets the with_priv of this ListDatabasesRequest.
+        r"""Gets the with_priv of this ListDatabasesRequest.
 
         是否返回隐私信息
 
@@ -170,7 +170,7 @@ class ListDatabasesRequest:
 
     @with_priv.setter
     def with_priv(self, with_priv):
-        """Sets the with_priv of this ListDatabasesRequest.
+        r"""Sets the with_priv of this ListDatabasesRequest.
 
         是否返回隐私信息
 

@@ -27,7 +27,7 @@ class FileRedirectionOptionsCompressionSwitchOptions:
     }
 
     def __init__(self, compression_threshold=None, minimum_compression_rate=None):
-        """FileRedirectionOptionsCompressionSwitchOptions
+        r"""FileRedirectionOptionsCompressionSwitchOptions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FileRedirectionOptionsCompressionSwitchOptions:
 
     @property
     def compression_threshold(self):
-        """Gets the compression_threshold of this FileRedirectionOptionsCompressionSwitchOptions.
+        r"""Gets the compression_threshold of this FileRedirectionOptionsCompressionSwitchOptions.
 
         压缩阈值（Byte）。取值范围为[0-10240]。默认：512。
 
@@ -61,7 +61,7 @@ class FileRedirectionOptionsCompressionSwitchOptions:
 
     @compression_threshold.setter
     def compression_threshold(self, compression_threshold):
-        """Sets the compression_threshold of this FileRedirectionOptionsCompressionSwitchOptions.
+        r"""Sets the compression_threshold of this FileRedirectionOptionsCompressionSwitchOptions.
 
         压缩阈值（Byte）。取值范围为[0-10240]。默认：512。
 
@@ -72,7 +72,7 @@ class FileRedirectionOptionsCompressionSwitchOptions:
 
     @property
     def minimum_compression_rate(self):
-        """Gets the minimum_compression_rate of this FileRedirectionOptionsCompressionSwitchOptions.
+        r"""Gets the minimum_compression_rate of this FileRedirectionOptionsCompressionSwitchOptions.
 
         最小压缩率。取值范围为[0-1000]。默认：900。
 
@@ -83,7 +83,7 @@ class FileRedirectionOptionsCompressionSwitchOptions:
 
     @minimum_compression_rate.setter
     def minimum_compression_rate(self, minimum_compression_rate):
-        """Sets the minimum_compression_rate of this FileRedirectionOptionsCompressionSwitchOptions.
+        r"""Sets the minimum_compression_rate of this FileRedirectionOptionsCompressionSwitchOptions.
 
         最小压缩率。取值范围为[0-1000]。默认：900。
 

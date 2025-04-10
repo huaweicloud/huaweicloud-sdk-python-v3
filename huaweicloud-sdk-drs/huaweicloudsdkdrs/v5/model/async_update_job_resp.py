@@ -33,7 +33,7 @@ class AsyncUpdateJobResp:
     }
 
     def __init__(self, id=None, name=None, status=None, error_code=None, error_msg=None):
-        """AsyncUpdateJobResp
+        r"""AsyncUpdateJobResp
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class AsyncUpdateJobResp:
 
     @property
     def id(self):
-        """Gets the id of this AsyncUpdateJobResp.
+        r"""Gets the id of this AsyncUpdateJobResp.
 
         任务ID。
 
@@ -79,7 +79,7 @@ class AsyncUpdateJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AsyncUpdateJobResp.
+        r"""Sets the id of this AsyncUpdateJobResp.
 
         任务ID。
 
@@ -90,7 +90,7 @@ class AsyncUpdateJobResp:
 
     @property
     def name(self):
-        """Gets the name of this AsyncUpdateJobResp.
+        r"""Gets the name of this AsyncUpdateJobResp.
 
         任务名称。
 
@@ -101,7 +101,7 @@ class AsyncUpdateJobResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AsyncUpdateJobResp.
+        r"""Sets the name of this AsyncUpdateJobResp.
 
         任务名称。
 
@@ -112,7 +112,7 @@ class AsyncUpdateJobResp:
 
     @property
     def status(self):
-        """Gets the status of this AsyncUpdateJobResp.
+        r"""Gets the status of this AsyncUpdateJobResp.
 
         操作结果。
 
@@ -123,7 +123,7 @@ class AsyncUpdateJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AsyncUpdateJobResp.
+        r"""Sets the status of this AsyncUpdateJobResp.
 
         操作结果。
 
@@ -134,7 +134,7 @@ class AsyncUpdateJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AsyncUpdateJobResp.
+        r"""Gets the error_code of this AsyncUpdateJobResp.
 
         错误码。
 
@@ -145,7 +145,7 @@ class AsyncUpdateJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AsyncUpdateJobResp.
+        r"""Sets the error_code of this AsyncUpdateJobResp.
 
         错误码。
 
@@ -156,7 +156,7 @@ class AsyncUpdateJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AsyncUpdateJobResp.
+        r"""Gets the error_msg of this AsyncUpdateJobResp.
 
         错误描述。
 
@@ -167,7 +167,7 @@ class AsyncUpdateJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AsyncUpdateJobResp.
+        r"""Sets the error_msg of this AsyncUpdateJobResp.
 
         错误描述。
 

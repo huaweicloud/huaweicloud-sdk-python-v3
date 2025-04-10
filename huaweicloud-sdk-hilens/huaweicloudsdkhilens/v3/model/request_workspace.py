@@ -31,7 +31,7 @@ class RequestWorkspace:
     }
 
     def __init__(self, name=None, enterprise_project_id=None, enterprise_project_name=None, description=None):
-        """RequestWorkspace
+        r"""RequestWorkspace
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RequestWorkspace:
 
     @property
     def name(self):
-        """Gets the name of this RequestWorkspace.
+        r"""Gets the name of this RequestWorkspace.
 
         工作空间名
 
@@ -72,7 +72,7 @@ class RequestWorkspace:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RequestWorkspace.
+        r"""Sets the name of this RequestWorkspace.
 
         工作空间名
 
@@ -83,7 +83,7 @@ class RequestWorkspace:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RequestWorkspace.
+        r"""Gets the enterprise_project_id of this RequestWorkspace.
 
         企业项目id，默认为0
 
@@ -94,7 +94,7 @@ class RequestWorkspace:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RequestWorkspace.
+        r"""Sets the enterprise_project_id of this RequestWorkspace.
 
         企业项目id，默认为0
 
@@ -105,7 +105,7 @@ class RequestWorkspace:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this RequestWorkspace.
+        r"""Gets the enterprise_project_name of this RequestWorkspace.
 
         企业项目名，默认为default
 
@@ -116,7 +116,7 @@ class RequestWorkspace:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this RequestWorkspace.
+        r"""Sets the enterprise_project_name of this RequestWorkspace.
 
         企业项目名，默认为default
 
@@ -127,7 +127,7 @@ class RequestWorkspace:
 
     @property
     def description(self):
-        """Gets the description of this RequestWorkspace.
+        r"""Gets the description of this RequestWorkspace.
 
         工作空间描述
 
@@ -138,7 +138,7 @@ class RequestWorkspace:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RequestWorkspace.
+        r"""Sets the description of this RequestWorkspace.
 
         工作空间描述
 

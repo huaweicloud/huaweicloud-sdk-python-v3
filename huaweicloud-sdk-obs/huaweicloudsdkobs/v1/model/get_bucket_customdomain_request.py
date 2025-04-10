@@ -31,7 +31,7 @@ class GetBucketCustomdomainRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, customdomain=None):
-        """GetBucketCustomdomainRequest
+        r"""GetBucketCustomdomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GetBucketCustomdomainRequest:
 
     @property
     def date(self):
-        """Gets the date of this GetBucketCustomdomainRequest.
+        r"""Gets the date of this GetBucketCustomdomainRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -68,7 +68,7 @@ class GetBucketCustomdomainRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetBucketCustomdomainRequest.
+        r"""Sets the date of this GetBucketCustomdomainRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -79,7 +79,7 @@ class GetBucketCustomdomainRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this GetBucketCustomdomainRequest.
+        r"""Gets the bucket_name of this GetBucketCustomdomainRequest.
 
         Name of the requested bucket
 
@@ -90,7 +90,7 @@ class GetBucketCustomdomainRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this GetBucketCustomdomainRequest.
+        r"""Sets the bucket_name of this GetBucketCustomdomainRequest.
 
         Name of the requested bucket
 
@@ -101,7 +101,7 @@ class GetBucketCustomdomainRequest:
 
     @property
     def customdomain(self):
-        """Gets the customdomain of this GetBucketCustomdomainRequest.
+        r"""Gets the customdomain of this GetBucketCustomdomainRequest.
 
         Indicates the custom domain name API of the bucket.
 
@@ -112,7 +112,7 @@ class GetBucketCustomdomainRequest:
 
     @customdomain.setter
     def customdomain(self, customdomain):
-        """Sets the customdomain of this GetBucketCustomdomainRequest.
+        r"""Sets the customdomain of this GetBucketCustomdomainRequest.
 
         Indicates the custom domain name API of the bucket.
 

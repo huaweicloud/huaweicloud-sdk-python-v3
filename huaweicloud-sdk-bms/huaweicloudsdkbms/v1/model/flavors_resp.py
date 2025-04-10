@@ -51,7 +51,7 @@ class FlavorsResp:
     }
 
     def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, os_extra_specs=None):
-        """FlavorsResp
+        r"""FlavorsResp
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class FlavorsResp:
 
     @property
     def id(self):
-        """Gets the id of this FlavorsResp.
+        r"""Gets the id of this FlavorsResp.
 
         裸金属服务器规格的ID
 
@@ -142,7 +142,7 @@ class FlavorsResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlavorsResp.
+        r"""Sets the id of this FlavorsResp.
 
         裸金属服务器规格的ID
 
@@ -153,7 +153,7 @@ class FlavorsResp:
 
     @property
     def name(self):
-        """Gets the name of this FlavorsResp.
+        r"""Gets the name of this FlavorsResp.
 
         裸金属服务器规格的名称
 
@@ -164,7 +164,7 @@ class FlavorsResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlavorsResp.
+        r"""Sets the name of this FlavorsResp.
 
         裸金属服务器规格的名称
 
@@ -175,7 +175,7 @@ class FlavorsResp:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this FlavorsResp.
+        r"""Gets the vcpus of this FlavorsResp.
 
         该裸金属服务器规格对应的CPU核数。
 
@@ -186,7 +186,7 @@ class FlavorsResp:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this FlavorsResp.
+        r"""Sets the vcpus of this FlavorsResp.
 
         该裸金属服务器规格对应的CPU核数。
 
@@ -197,7 +197,7 @@ class FlavorsResp:
 
     @property
     def ram(self):
-        """Gets the ram of this FlavorsResp.
+        r"""Gets the ram of this FlavorsResp.
 
         该裸金属服务器规格对应的内存大小，单位为MB。
 
@@ -208,7 +208,7 @@ class FlavorsResp:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this FlavorsResp.
+        r"""Sets the ram of this FlavorsResp.
 
         该裸金属服务器规格对应的内存大小，单位为MB。
 
@@ -219,7 +219,7 @@ class FlavorsResp:
 
     @property
     def disk(self):
-        """Gets the disk of this FlavorsResp.
+        r"""Gets the disk of this FlavorsResp.
 
         该裸金属服务器规格对应要求系统盘大小，0为不限制。
 
@@ -230,7 +230,7 @@ class FlavorsResp:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this FlavorsResp.
+        r"""Sets the disk of this FlavorsResp.
 
         该裸金属服务器规格对应要求系统盘大小，0为不限制。
 
@@ -241,7 +241,7 @@ class FlavorsResp:
 
     @property
     def swap(self):
-        """Gets the swap of this FlavorsResp.
+        r"""Gets the swap of this FlavorsResp.
 
         未使用
 
@@ -252,7 +252,7 @@ class FlavorsResp:
 
     @swap.setter
     def swap(self, swap):
-        """Sets the swap of this FlavorsResp.
+        r"""Sets the swap of this FlavorsResp.
 
         未使用
 
@@ -263,7 +263,7 @@ class FlavorsResp:
 
     @property
     def os_flv_ext_dat_aephemeral(self):
-        """Gets the os_flv_ext_dat_aephemeral of this FlavorsResp.
+        r"""Gets the os_flv_ext_dat_aephemeral of this FlavorsResp.
 
         未使用
 
@@ -274,7 +274,7 @@ class FlavorsResp:
 
     @os_flv_ext_dat_aephemeral.setter
     def os_flv_ext_dat_aephemeral(self, os_flv_ext_dat_aephemeral):
-        """Sets the os_flv_ext_dat_aephemeral of this FlavorsResp.
+        r"""Sets the os_flv_ext_dat_aephemeral of this FlavorsResp.
 
         未使用
 
@@ -285,7 +285,7 @@ class FlavorsResp:
 
     @property
     def os_flv_disable_ddisabled(self):
-        """Gets the os_flv_disable_ddisabled of this FlavorsResp.
+        r"""Gets the os_flv_disable_ddisabled of this FlavorsResp.
 
         未使用
 
@@ -296,7 +296,7 @@ class FlavorsResp:
 
     @os_flv_disable_ddisabled.setter
     def os_flv_disable_ddisabled(self, os_flv_disable_ddisabled):
-        """Sets the os_flv_disable_ddisabled of this FlavorsResp.
+        r"""Sets the os_flv_disable_ddisabled of this FlavorsResp.
 
         未使用
 
@@ -307,7 +307,7 @@ class FlavorsResp:
 
     @property
     def rxtx_factor(self):
-        """Gets the rxtx_factor of this FlavorsResp.
+        r"""Gets the rxtx_factor of this FlavorsResp.
 
         未使用
 
@@ -318,7 +318,7 @@ class FlavorsResp:
 
     @rxtx_factor.setter
     def rxtx_factor(self, rxtx_factor):
-        """Sets the rxtx_factor of this FlavorsResp.
+        r"""Sets the rxtx_factor of this FlavorsResp.
 
         未使用
 
@@ -329,7 +329,7 @@ class FlavorsResp:
 
     @property
     def rxtx_quota(self):
-        """Gets the rxtx_quota of this FlavorsResp.
+        r"""Gets the rxtx_quota of this FlavorsResp.
 
         未使用
 
@@ -340,7 +340,7 @@ class FlavorsResp:
 
     @rxtx_quota.setter
     def rxtx_quota(self, rxtx_quota):
-        """Sets the rxtx_quota of this FlavorsResp.
+        r"""Sets the rxtx_quota of this FlavorsResp.
 
         未使用
 
@@ -351,7 +351,7 @@ class FlavorsResp:
 
     @property
     def rxtx_cap(self):
-        """Gets the rxtx_cap of this FlavorsResp.
+        r"""Gets the rxtx_cap of this FlavorsResp.
 
         未使用
 
@@ -362,7 +362,7 @@ class FlavorsResp:
 
     @rxtx_cap.setter
     def rxtx_cap(self, rxtx_cap):
-        """Sets the rxtx_cap of this FlavorsResp.
+        r"""Sets the rxtx_cap of this FlavorsResp.
 
         未使用
 
@@ -373,7 +373,7 @@ class FlavorsResp:
 
     @property
     def os_flavor_accessis_public(self):
-        """Gets the os_flavor_accessis_public of this FlavorsResp.
+        r"""Gets the os_flavor_accessis_public of this FlavorsResp.
 
         是否是公共规格。false：私有规格；true：公共规格
 
@@ -384,7 +384,7 @@ class FlavorsResp:
 
     @os_flavor_accessis_public.setter
     def os_flavor_accessis_public(self, os_flavor_accessis_public):
-        """Sets the os_flavor_accessis_public of this FlavorsResp.
+        r"""Sets the os_flavor_accessis_public of this FlavorsResp.
 
         是否是公共规格。false：私有规格；true：公共规格
 
@@ -395,7 +395,7 @@ class FlavorsResp:
 
     @property
     def links(self):
-        """Gets the links of this FlavorsResp.
+        r"""Gets the links of this FlavorsResp.
 
         规格相关快捷链接地址，详情请参见表3 links字段数据结构说明。
 
@@ -406,7 +406,7 @@ class FlavorsResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this FlavorsResp.
+        r"""Sets the links of this FlavorsResp.
 
         规格相关快捷链接地址，详情请参见表3 links字段数据结构说明。
 
@@ -417,7 +417,7 @@ class FlavorsResp:
 
     @property
     def os_extra_specs(self):
-        """Gets the os_extra_specs of this FlavorsResp.
+        r"""Gets the os_extra_specs of this FlavorsResp.
 
         :return: The os_extra_specs of this FlavorsResp.
         :rtype: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`
@@ -426,7 +426,7 @@ class FlavorsResp:
 
     @os_extra_specs.setter
     def os_extra_specs(self, os_extra_specs):
-        """Sets the os_extra_specs of this FlavorsResp.
+        r"""Sets the os_extra_specs of this FlavorsResp.
 
         :param os_extra_specs: The os_extra_specs of this FlavorsResp.
         :type os_extra_specs: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`

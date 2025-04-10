@@ -30,7 +30,7 @@ class CreateServersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None, server_ids=None):
-        """CreateServersResponse
+        r"""CreateServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateServersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateServersResponse.
+        r"""Gets the job_id of this CreateServersResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -69,7 +69,7 @@ class CreateServersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateServersResponse.
+        r"""Sets the job_id of this CreateServersResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -80,7 +80,7 @@ class CreateServersResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateServersResponse.
+        r"""Gets the order_id of this CreateServersResponse.
 
         订单号，创建包年包月的弹性云服务器时返回该参数。
 
@@ -91,7 +91,7 @@ class CreateServersResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateServersResponse.
+        r"""Sets the order_id of this CreateServersResponse.
 
         订单号，创建包年包月的弹性云服务器时返回该参数。
 
@@ -102,7 +102,7 @@ class CreateServersResponse(SdkResponse):
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this CreateServersResponse.
+        r"""Gets the server_ids of this CreateServersResponse.
 
         云服务器ID列表。  通过云服务器ID查询云服务器详情 ，若返回404 可能云服务器还在创建或者已经创建失败。
 
@@ -113,7 +113,7 @@ class CreateServersResponse(SdkResponse):
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this CreateServersResponse.
+        r"""Sets the server_ids of this CreateServersResponse.
 
         云服务器ID列表。  通过云服务器ID查询云服务器详情 ，若返回404 可能云服务器还在创建或者已经创建失败。
 

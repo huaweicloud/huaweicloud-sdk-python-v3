@@ -30,7 +30,7 @@ class ListProjectSetsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, projects=None):
-        """ListProjectSetsResponse
+        r"""ListProjectSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListProjectSetsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListProjectSetsResponse.
+        r"""Gets the code of this ListProjectSetsResponse.
 
         状态码
 
@@ -69,7 +69,7 @@ class ListProjectSetsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListProjectSetsResponse.
+        r"""Sets the code of this ListProjectSetsResponse.
 
         状态码
 
@@ -80,7 +80,7 @@ class ListProjectSetsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListProjectSetsResponse.
+        r"""Gets the message of this ListProjectSetsResponse.
 
         描述
 
@@ -91,7 +91,7 @@ class ListProjectSetsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListProjectSetsResponse.
+        r"""Sets the message of this ListProjectSetsResponse.
 
         描述
 
@@ -102,7 +102,7 @@ class ListProjectSetsResponse(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this ListProjectSetsResponse.
+        r"""Gets the projects of this ListProjectSetsResponse.
 
         工程集详细信息
 
@@ -113,7 +113,7 @@ class ListProjectSetsResponse(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ListProjectSetsResponse.
+        r"""Sets the projects of this ListProjectSetsResponse.
 
         工程集详细信息
 

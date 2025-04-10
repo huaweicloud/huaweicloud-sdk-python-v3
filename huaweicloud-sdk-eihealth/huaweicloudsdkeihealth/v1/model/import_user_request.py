@@ -25,7 +25,7 @@ class ImportUserRequest:
     }
 
     def __init__(self, body=None):
-        """ImportUserRequest
+        r"""ImportUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportUserRequest.
+        r"""Gets the body of this ImportUserRequest.
 
         :return: The body of this ImportUserRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportUserReq`
@@ -52,7 +52,7 @@ class ImportUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportUserRequest.
+        r"""Sets the body of this ImportUserRequest.
 
         :param body: The body of this ImportUserRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportUserReq`

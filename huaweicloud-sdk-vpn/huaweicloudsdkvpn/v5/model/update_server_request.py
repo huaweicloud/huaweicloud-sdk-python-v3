@@ -35,7 +35,7 @@ class UpdateServerRequest:
     }
 
     def __init__(self, client_cidr=None, local_subnets=None, server_certificate=None, ssl_options=None, client_auth_type=None, dns_servers=None):
-        """UpdateServerRequest
+        r"""UpdateServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateServerRequest:
 
     @property
     def client_cidr(self):
-        """Gets the client_cidr of this UpdateServerRequest.
+        r"""Gets the client_cidr of this UpdateServerRequest.
 
         客户端网段
 
@@ -89,7 +89,7 @@ class UpdateServerRequest:
 
     @client_cidr.setter
     def client_cidr(self, client_cidr):
-        """Sets the client_cidr of this UpdateServerRequest.
+        r"""Sets the client_cidr of this UpdateServerRequest.
 
         客户端网段
 
@@ -100,7 +100,7 @@ class UpdateServerRequest:
 
     @property
     def local_subnets(self):
-        """Gets the local_subnets of this UpdateServerRequest.
+        r"""Gets the local_subnets of this UpdateServerRequest.
 
         本端网段列表,至少有一个本端网段
 
@@ -111,7 +111,7 @@ class UpdateServerRequest:
 
     @local_subnets.setter
     def local_subnets(self, local_subnets):
-        """Sets the local_subnets of this UpdateServerRequest.
+        r"""Sets the local_subnets of this UpdateServerRequest.
 
         本端网段列表,至少有一个本端网段
 
@@ -122,7 +122,7 @@ class UpdateServerRequest:
 
     @property
     def server_certificate(self):
-        """Gets the server_certificate of this UpdateServerRequest.
+        r"""Gets the server_certificate of this UpdateServerRequest.
 
         :return: The server_certificate of this UpdateServerRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateServerRequestServerCertificate`
@@ -131,7 +131,7 @@ class UpdateServerRequest:
 
     @server_certificate.setter
     def server_certificate(self, server_certificate):
-        """Sets the server_certificate of this UpdateServerRequest.
+        r"""Sets the server_certificate of this UpdateServerRequest.
 
         :param server_certificate: The server_certificate of this UpdateServerRequest.
         :type server_certificate: :class:`huaweicloudsdkvpn.v5.UpdateServerRequestServerCertificate`
@@ -140,7 +140,7 @@ class UpdateServerRequest:
 
     @property
     def ssl_options(self):
-        """Gets the ssl_options of this UpdateServerRequest.
+        r"""Gets the ssl_options of this UpdateServerRequest.
 
         :return: The ssl_options of this UpdateServerRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateServerRequestSslOptions`
@@ -149,7 +149,7 @@ class UpdateServerRequest:
 
     @ssl_options.setter
     def ssl_options(self, ssl_options):
-        """Sets the ssl_options of this UpdateServerRequest.
+        r"""Sets the ssl_options of this UpdateServerRequest.
 
         :param ssl_options: The ssl_options of this UpdateServerRequest.
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.UpdateServerRequestSslOptions`
@@ -158,7 +158,7 @@ class UpdateServerRequest:
 
     @property
     def client_auth_type(self):
-        """Gets the client_auth_type of this UpdateServerRequest.
+        r"""Gets the client_auth_type of this UpdateServerRequest.
 
         客户端认证类型
 
@@ -169,7 +169,7 @@ class UpdateServerRequest:
 
     @client_auth_type.setter
     def client_auth_type(self, client_auth_type):
-        """Sets the client_auth_type of this UpdateServerRequest.
+        r"""Sets the client_auth_type of this UpdateServerRequest.
 
         客户端认证类型
 
@@ -180,7 +180,7 @@ class UpdateServerRequest:
 
     @property
     def dns_servers(self):
-        """Gets the dns_servers of this UpdateServerRequest.
+        r"""Gets the dns_servers of this UpdateServerRequest.
 
         DNS服务器列表，最多两个DNS
 
@@ -191,7 +191,7 @@ class UpdateServerRequest:
 
     @dns_servers.setter
     def dns_servers(self, dns_servers):
-        """Sets the dns_servers of this UpdateServerRequest.
+        r"""Sets the dns_servers of this UpdateServerRequest.
 
         DNS服务器列表，最多两个DNS
 

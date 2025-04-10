@@ -26,7 +26,7 @@ class ListUserDetailResponse(SdkResponse):
     }
 
     def __init__(self, user_detail=None):
-        """ListUserDetailResponse
+        r"""ListUserDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUserDetailResponse(SdkResponse):
 
     @property
     def user_detail(self):
-        """Gets the user_detail of this ListUserDetailResponse.
+        r"""Gets the user_detail of this ListUserDetailResponse.
 
         :return: The user_detail of this ListUserDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UserDetail`
@@ -53,7 +53,7 @@ class ListUserDetailResponse(SdkResponse):
 
     @user_detail.setter
     def user_detail(self, user_detail):
-        """Sets the user_detail of this ListUserDetailResponse.
+        r"""Sets the user_detail of this ListUserDetailResponse.
 
         :param user_detail: The user_detail of this ListUserDetailResponse.
         :type user_detail: :class:`huaweicloudsdkworkspace.v2.UserDetail`

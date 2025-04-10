@@ -24,7 +24,7 @@ class CreateServerGroupTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateServerGroupTagsResponse
+        r"""CreateServerGroupTagsResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class RelatedCommitListVo:
     }
 
     def __init__(self, total=None, list=None):
-        """RelatedCommitListVo
+        r"""RelatedCommitListVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RelatedCommitListVo:
 
     @property
     def total(self):
-        """Gets the total of this RelatedCommitListVo.
+        r"""Gets the total of this RelatedCommitListVo.
 
         :return: The total of this RelatedCommitListVo.
         :rtype: int
@@ -59,7 +59,7 @@ class RelatedCommitListVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RelatedCommitListVo.
+        r"""Sets the total of this RelatedCommitListVo.
 
         :param total: The total of this RelatedCommitListVo.
         :type total: int
@@ -68,7 +68,7 @@ class RelatedCommitListVo:
 
     @property
     def list(self):
-        """Gets the list of this RelatedCommitListVo.
+        r"""Gets the list of this RelatedCommitListVo.
 
         :return: The list of this RelatedCommitListVo.
         :rtype: list[:class:`huaweicloudsdkcodehub.v3.RelatedCommitVo`]
@@ -77,7 +77,7 @@ class RelatedCommitListVo:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this RelatedCommitListVo.
+        r"""Sets the list of this RelatedCommitListVo.
 
         :param list: The list of this RelatedCommitListVo.
         :type list: list[:class:`huaweicloudsdkcodehub.v3.RelatedCommitVo`]

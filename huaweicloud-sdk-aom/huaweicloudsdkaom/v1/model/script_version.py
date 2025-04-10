@@ -53,7 +53,7 @@ class ScriptVersion:
     }
 
     def __init__(self, content=None, create_by=None, create_time=None, enterprise_project_id=None, name=None, project_id=None, job_reference_number=None, script_id=None, script_language=None, status_desc=None, update_by=None, update_time=None, version_id=None, version_number=None, job_reference_name=None):
-        """ScriptVersion
+        r"""ScriptVersion
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class ScriptVersion:
 
     @property
     def content(self):
-        """Gets the content of this ScriptVersion.
+        r"""Gets the content of this ScriptVersion.
 
         脚本内容，脚本内容不能为空
 
@@ -151,7 +151,7 @@ class ScriptVersion:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ScriptVersion.
+        r"""Sets the content of this ScriptVersion.
 
         脚本内容，脚本内容不能为空
 
@@ -162,7 +162,7 @@ class ScriptVersion:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ScriptVersion.
+        r"""Gets the create_by of this ScriptVersion.
 
         创建人，比如为：张三
 
@@ -173,7 +173,7 @@ class ScriptVersion:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ScriptVersion.
+        r"""Sets the create_by of this ScriptVersion.
 
         创建人，比如为：张三
 
@@ -184,7 +184,7 @@ class ScriptVersion:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScriptVersion.
+        r"""Gets the create_time of this ScriptVersion.
 
         创建时间
 
@@ -195,7 +195,7 @@ class ScriptVersion:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScriptVersion.
+        r"""Sets the create_time of this ScriptVersion.
 
         创建时间
 
@@ -206,7 +206,7 @@ class ScriptVersion:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ScriptVersion.
+        r"""Gets the enterprise_project_id of this ScriptVersion.
 
         企业项目id
 
@@ -217,7 +217,7 @@ class ScriptVersion:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ScriptVersion.
+        r"""Sets the enterprise_project_id of this ScriptVersion.
 
         企业项目id
 
@@ -228,7 +228,7 @@ class ScriptVersion:
 
     @property
     def name(self):
-        """Gets the name of this ScriptVersion.
+        r"""Gets the name of this ScriptVersion.
 
         脚本名称，支持数字，下划线，大小写字母 ,中文
 
@@ -239,7 +239,7 @@ class ScriptVersion:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptVersion.
+        r"""Sets the name of this ScriptVersion.
 
         脚本名称，支持数字，下划线，大小写字母 ,中文
 
@@ -250,7 +250,7 @@ class ScriptVersion:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ScriptVersion.
+        r"""Gets the project_id of this ScriptVersion.
 
         租户从IAM申请到的projectid，一般为32位字符串
 
@@ -261,7 +261,7 @@ class ScriptVersion:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ScriptVersion.
+        r"""Sets the project_id of this ScriptVersion.
 
         租户从IAM申请到的projectid，一般为32位字符串
 
@@ -272,7 +272,7 @@ class ScriptVersion:
 
     @property
     def job_reference_number(self):
-        """Gets the job_reference_number of this ScriptVersion.
+        r"""Gets the job_reference_number of this ScriptVersion.
 
         脚本版本的引用次数，脚本版本被作业引用的次数。默认是0次,引用次数为非负整数，不能出现负数
 
@@ -283,7 +283,7 @@ class ScriptVersion:
 
     @job_reference_number.setter
     def job_reference_number(self, job_reference_number):
-        """Sets the job_reference_number of this ScriptVersion.
+        r"""Sets the job_reference_number of this ScriptVersion.
 
         脚本版本的引用次数，脚本版本被作业引用的次数。默认是0次,引用次数为非负整数，不能出现负数
 
@@ -294,7 +294,7 @@ class ScriptVersion:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ScriptVersion.
+        r"""Gets the script_id of this ScriptVersion.
 
         脚本id，根据UUID.randomUUID生成。
 
@@ -305,7 +305,7 @@ class ScriptVersion:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ScriptVersion.
+        r"""Sets the script_id of this ScriptVersion.
 
         脚本id，根据UUID.randomUUID生成。
 
@@ -316,7 +316,7 @@ class ScriptVersion:
 
     @property
     def script_language(self):
-        """Gets the script_language of this ScriptVersion.
+        r"""Gets the script_language of this ScriptVersion.
 
         脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
@@ -327,7 +327,7 @@ class ScriptVersion:
 
     @script_language.setter
     def script_language(self, script_language):
-        """Sets the script_language of this ScriptVersion.
+        r"""Sets the script_language of this ScriptVersion.
 
         脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
@@ -338,7 +338,7 @@ class ScriptVersion:
 
     @property
     def status_desc(self):
-        """Gets the status_desc of this ScriptVersion.
+        r"""Gets the status_desc of this ScriptVersion.
 
         状态说明  0代表 未上线，1代表已上线  2代表已下线   3代表已禁用
 
@@ -349,7 +349,7 @@ class ScriptVersion:
 
     @status_desc.setter
     def status_desc(self, status_desc):
-        """Sets the status_desc of this ScriptVersion.
+        r"""Sets the status_desc of this ScriptVersion.
 
         状态说明  0代表 未上线，1代表已上线  2代表已下线   3代表已禁用
 
@@ -360,7 +360,7 @@ class ScriptVersion:
 
     @property
     def update_by(self):
-        """Gets the update_by of this ScriptVersion.
+        r"""Gets the update_by of this ScriptVersion.
 
         修改人
 
@@ -371,7 +371,7 @@ class ScriptVersion:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this ScriptVersion.
+        r"""Sets the update_by of this ScriptVersion.
 
         修改人
 
@@ -382,7 +382,7 @@ class ScriptVersion:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ScriptVersion.
+        r"""Gets the update_time of this ScriptVersion.
 
         实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
@@ -393,7 +393,7 @@ class ScriptVersion:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ScriptVersion.
+        r"""Sets the update_time of this ScriptVersion.
 
         实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
@@ -404,7 +404,7 @@ class ScriptVersion:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ScriptVersion.
+        r"""Gets the version_id of this ScriptVersion.
 
         版本id，根据UUID.randomUUID生成。
 
@@ -415,7 +415,7 @@ class ScriptVersion:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ScriptVersion.
+        r"""Sets the version_id of this ScriptVersion.
 
         版本id，根据UUID.randomUUID生成。
 
@@ -426,7 +426,7 @@ class ScriptVersion:
 
     @property
     def version_number(self):
-        """Gets the version_number of this ScriptVersion.
+        r"""Gets the version_number of this ScriptVersion.
 
         脚本版本号，支持数字，下划线，大小写字母和小数点
 
@@ -437,7 +437,7 @@ class ScriptVersion:
 
     @version_number.setter
     def version_number(self, version_number):
-        """Sets the version_number of this ScriptVersion.
+        r"""Sets the version_number of this ScriptVersion.
 
         脚本版本号，支持数字，下划线，大小写字母和小数点
 
@@ -448,7 +448,7 @@ class ScriptVersion:
 
     @property
     def job_reference_name(self):
-        """Gets the job_reference_name of this ScriptVersion.
+        r"""Gets the job_reference_name of this ScriptVersion.
 
         脚本引用的作业详情
 
@@ -459,7 +459,7 @@ class ScriptVersion:
 
     @job_reference_name.setter
     def job_reference_name(self, job_reference_name):
-        """Sets the job_reference_name of this ScriptVersion.
+        r"""Sets the job_reference_name of this ScriptVersion.
 
         脚本引用的作业详情
 

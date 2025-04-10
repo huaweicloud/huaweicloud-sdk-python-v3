@@ -31,7 +31,7 @@ class DeleteHookRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, hook_id=None):
-        """DeleteHookRequest
+        r"""DeleteHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeleteHookRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this DeleteHookRequest.
+        r"""Gets the x_repo_auth of this DeleteHookRequest.
 
         授权名称。
 
@@ -71,7 +71,7 @@ class DeleteHookRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this DeleteHookRequest.
+        r"""Sets the x_repo_auth of this DeleteHookRequest.
 
         授权名称。
 
@@ -82,7 +82,7 @@ class DeleteHookRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteHookRequest.
+        r"""Gets the namespace of this DeleteHookRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -93,7 +93,7 @@ class DeleteHookRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteHookRequest.
+        r"""Sets the namespace of this DeleteHookRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -104,7 +104,7 @@ class DeleteHookRequest:
 
     @property
     def project(self):
-        """Gets the project of this DeleteHookRequest.
+        r"""Gets the project of this DeleteHookRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -115,7 +115,7 @@ class DeleteHookRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this DeleteHookRequest.
+        r"""Sets the project of this DeleteHookRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -126,7 +126,7 @@ class DeleteHookRequest:
 
     @property
     def hook_id(self):
-        """Gets the hook_id of this DeleteHookRequest.
+        r"""Gets the hook_id of this DeleteHookRequest.
 
         hook ID。
 
@@ -137,7 +137,7 @@ class DeleteHookRequest:
 
     @hook_id.setter
     def hook_id(self, hook_id):
-        """Sets the hook_id of this DeleteHookRequest.
+        r"""Sets the hook_id of this DeleteHookRequest.
 
         hook ID。
 

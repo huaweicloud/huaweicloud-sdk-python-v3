@@ -30,7 +30,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None, spec=None, status=None):
-        """ShowClusterEndpointsResponse
+        r"""ShowClusterEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowClusterEndpointsResponse.
+        r"""Gets the metadata of this ShowClusterEndpointsResponse.
 
         :return: The metadata of this ShowClusterEndpointsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -67,7 +67,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowClusterEndpointsResponse.
+        r"""Sets the metadata of this ShowClusterEndpointsResponse.
 
         :param metadata: The metadata of this ShowClusterEndpointsResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -76,7 +76,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowClusterEndpointsResponse.
+        r"""Gets the spec of this ShowClusterEndpointsResponse.
 
         :return: The spec of this ShowClusterEndpointsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.OpenAPISpec`
@@ -85,7 +85,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowClusterEndpointsResponse.
+        r"""Sets the spec of this ShowClusterEndpointsResponse.
 
         :param spec: The spec of this ShowClusterEndpointsResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.OpenAPISpec`
@@ -94,7 +94,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowClusterEndpointsResponse.
+        r"""Gets the status of this ShowClusterEndpointsResponse.
 
         :return: The status of this ShowClusterEndpointsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
@@ -103,7 +103,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowClusterEndpointsResponse.
+        r"""Sets the status of this ShowClusterEndpointsResponse.
 
         :param status: The status of this ShowClusterEndpointsResponse.
         :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`

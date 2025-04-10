@@ -27,7 +27,7 @@ class AddCopyDatabaseRequestBody:
     }
 
     def __init__(self, procedure_name=None, params=None):
-        """AddCopyDatabaseRequestBody
+        r"""AddCopyDatabaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddCopyDatabaseRequestBody:
 
     @property
     def procedure_name(self):
-        """Gets the procedure_name of this AddCopyDatabaseRequestBody.
+        r"""Gets the procedure_name of this AddCopyDatabaseRequestBody.
 
         操作名称(copy_database)
 
@@ -61,7 +61,7 @@ class AddCopyDatabaseRequestBody:
 
     @procedure_name.setter
     def procedure_name(self, procedure_name):
-        """Sets the procedure_name of this AddCopyDatabaseRequestBody.
+        r"""Sets the procedure_name of this AddCopyDatabaseRequestBody.
 
         操作名称(copy_database)
 
@@ -72,7 +72,7 @@ class AddCopyDatabaseRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this AddCopyDatabaseRequestBody.
+        r"""Gets the params of this AddCopyDatabaseRequestBody.
 
         源库和目的库信息
 
@@ -83,7 +83,7 @@ class AddCopyDatabaseRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this AddCopyDatabaseRequestBody.
+        r"""Sets the params of this AddCopyDatabaseRequestBody.
 
         源库和目的库信息
 

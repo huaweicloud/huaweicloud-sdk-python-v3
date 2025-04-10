@@ -29,7 +29,7 @@ class FlavorLink:
     }
 
     def __init__(self, href=None, rel=None, type=None):
-        """FlavorLink
+        r"""FlavorLink
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class FlavorLink:
 
     @property
     def href(self):
-        """Gets the href of this FlavorLink.
+        r"""Gets the href of this FlavorLink.
 
         对应快捷链接。
 
@@ -65,7 +65,7 @@ class FlavorLink:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this FlavorLink.
+        r"""Sets the href of this FlavorLink.
 
         对应快捷链接。
 
@@ -76,7 +76,7 @@ class FlavorLink:
 
     @property
     def rel(self):
-        """Gets the rel of this FlavorLink.
+        r"""Gets the rel of this FlavorLink.
 
         快捷链接标记名称。
 
@@ -87,7 +87,7 @@ class FlavorLink:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this FlavorLink.
+        r"""Sets the rel of this FlavorLink.
 
         快捷链接标记名称。
 
@@ -98,7 +98,7 @@ class FlavorLink:
 
     @property
     def type(self):
-        """Gets the type of this FlavorLink.
+        r"""Gets the type of this FlavorLink.
 
         快捷链接类型，当前接口未使用，缺省值为null。
 
@@ -109,7 +109,7 @@ class FlavorLink:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FlavorLink.
+        r"""Sets the type of this FlavorLink.
 
         快捷链接类型，当前接口未使用，缺省值为null。
 

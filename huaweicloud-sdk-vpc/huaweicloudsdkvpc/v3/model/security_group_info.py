@@ -41,7 +41,7 @@ class SecurityGroupInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, tags=None, security_group_rules=None):
-        """SecurityGroupInfo
+        r"""SecurityGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class SecurityGroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupInfo.
+        r"""Gets the id of this SecurityGroupInfo.
 
         功能描述：安全组对应的唯一标识 取值范围：带“-”的标准UUID格式
 
@@ -101,7 +101,7 @@ class SecurityGroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupInfo.
+        r"""Sets the id of this SecurityGroupInfo.
 
         功能描述：安全组对应的唯一标识 取值范围：带“-”的标准UUID格式
 
@@ -112,7 +112,7 @@ class SecurityGroupInfo:
 
     @property
     def name(self):
-        """Gets the name of this SecurityGroupInfo.
+        r"""Gets the name of this SecurityGroupInfo.
 
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -123,7 +123,7 @@ class SecurityGroupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityGroupInfo.
+        r"""Sets the name of this SecurityGroupInfo.
 
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -134,7 +134,7 @@ class SecurityGroupInfo:
 
     @property
     def description(self):
-        """Gets the description of this SecurityGroupInfo.
+        r"""Gets the description of this SecurityGroupInfo.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -145,7 +145,7 @@ class SecurityGroupInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecurityGroupInfo.
+        r"""Sets the description of this SecurityGroupInfo.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -156,7 +156,7 @@ class SecurityGroupInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SecurityGroupInfo.
+        r"""Gets the project_id of this SecurityGroupInfo.
 
         功能说明：安全组所属的项目ID
 
@@ -167,7 +167,7 @@ class SecurityGroupInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SecurityGroupInfo.
+        r"""Sets the project_id of this SecurityGroupInfo.
 
         功能说明：安全组所属的项目ID
 
@@ -178,7 +178,7 @@ class SecurityGroupInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecurityGroupInfo.
+        r"""Gets the created_at of this SecurityGroupInfo.
 
         功能说明：安全组创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -189,7 +189,7 @@ class SecurityGroupInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecurityGroupInfo.
+        r"""Sets the created_at of this SecurityGroupInfo.
 
         功能说明：安全组创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -200,7 +200,7 @@ class SecurityGroupInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecurityGroupInfo.
+        r"""Gets the updated_at of this SecurityGroupInfo.
 
         功能说明：安全组更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -211,7 +211,7 @@ class SecurityGroupInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecurityGroupInfo.
+        r"""Sets the updated_at of this SecurityGroupInfo.
 
         功能说明：安全组更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -222,7 +222,7 @@ class SecurityGroupInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SecurityGroupInfo.
+        r"""Gets the enterprise_project_id of this SecurityGroupInfo.
 
         功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -233,7 +233,7 @@ class SecurityGroupInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SecurityGroupInfo.
+        r"""Sets the enterprise_project_id of this SecurityGroupInfo.
 
         功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -244,7 +244,7 @@ class SecurityGroupInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this SecurityGroupInfo.
+        r"""Gets the tags of this SecurityGroupInfo.
 
         功能描述：安全组的标签信息
 
@@ -255,7 +255,7 @@ class SecurityGroupInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SecurityGroupInfo.
+        r"""Sets the tags of this SecurityGroupInfo.
 
         功能描述：安全组的标签信息
 
@@ -266,7 +266,7 @@ class SecurityGroupInfo:
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this SecurityGroupInfo.
+        r"""Gets the security_group_rules of this SecurityGroupInfo.
 
         安全组规则
 
@@ -277,7 +277,7 @@ class SecurityGroupInfo:
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this SecurityGroupInfo.
+        r"""Sets the security_group_rules of this SecurityGroupInfo.
 
         安全组规则
 

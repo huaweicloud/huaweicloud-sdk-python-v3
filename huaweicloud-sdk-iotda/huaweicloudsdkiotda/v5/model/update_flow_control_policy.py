@@ -29,7 +29,7 @@ class UpdateFlowControlPolicy:
     }
 
     def __init__(self, policy_name=None, description=None, limit=None):
-        """UpdateFlowControlPolicy
+        r"""UpdateFlowControlPolicy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateFlowControlPolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateFlowControlPolicy.
+        r"""Gets the policy_name of this UpdateFlowControlPolicy.
 
         **参数说明**：数据流转流控策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -68,7 +68,7 @@ class UpdateFlowControlPolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateFlowControlPolicy.
+        r"""Sets the policy_name of this UpdateFlowControlPolicy.
 
         **参数说明**：数据流转流控策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -79,7 +79,7 @@ class UpdateFlowControlPolicy:
 
     @property
     def description(self):
-        """Gets the description of this UpdateFlowControlPolicy.
+        r"""Gets the description of this UpdateFlowControlPolicy.
 
         **参数说明**：用户自定义的数据流转流控策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -90,7 +90,7 @@ class UpdateFlowControlPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFlowControlPolicy.
+        r"""Sets the description of this UpdateFlowControlPolicy.
 
         **参数说明**：用户自定义的数据流转流控策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -101,7 +101,7 @@ class UpdateFlowControlPolicy:
 
     @property
     def limit(self):
-        """Gets the limit of this UpdateFlowControlPolicy.
+        r"""Gets the limit of this UpdateFlowControlPolicy.
 
         **参数说明**：数据转发流控大小。单位为tps，取值范围为1~1000的整数，默认为1000.
 
@@ -112,7 +112,7 @@ class UpdateFlowControlPolicy:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this UpdateFlowControlPolicy.
+        r"""Sets the limit of this UpdateFlowControlPolicy.
 
         **参数说明**：数据转发流控大小。单位为tps，取值范围为1~1000的整数，默认为1000.
 

@@ -33,7 +33,7 @@ class VideoLayerConfig:
     }
 
     def __init__(self, video_url=None, video_cover_url=None, loop_count=None, video_sound=None, is_play_the_entire_video=None):
-        """VideoLayerConfig
+        r"""VideoLayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VideoLayerConfig:
 
     @property
     def video_url(self):
-        """Gets the video_url of this VideoLayerConfig.
+        r"""Gets the video_url of this VideoLayerConfig.
 
         **参数解释**： 视频文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
@@ -82,7 +82,7 @@ class VideoLayerConfig:
 
     @video_url.setter
     def video_url(self, video_url):
-        """Sets the video_url of this VideoLayerConfig.
+        r"""Sets the video_url of this VideoLayerConfig.
 
         **参数解释**： 视频文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
@@ -93,7 +93,7 @@ class VideoLayerConfig:
 
     @property
     def video_cover_url(self):
-        """Gets the video_cover_url of this VideoLayerConfig.
+        r"""Gets the video_cover_url of this VideoLayerConfig.
 
         **参数解释**： 视频封面文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
@@ -104,7 +104,7 @@ class VideoLayerConfig:
 
     @video_cover_url.setter
     def video_cover_url(self, video_cover_url):
-        """Sets the video_cover_url of this VideoLayerConfig.
+        r"""Sets the video_cover_url of this VideoLayerConfig.
 
         **参数解释**： 视频封面文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
@@ -115,7 +115,7 @@ class VideoLayerConfig:
 
     @property
     def loop_count(self):
-        """Gets the loop_count of this VideoLayerConfig.
+        r"""Gets the loop_count of this VideoLayerConfig.
 
         **参数解释**： 循环播放视频次数。  特殊取值： * 0：表示不播放 * -1：表示持续循环播放  **约束限制**： 不涉及。
 
@@ -126,7 +126,7 @@ class VideoLayerConfig:
 
     @loop_count.setter
     def loop_count(self, loop_count):
-        """Sets the loop_count of this VideoLayerConfig.
+        r"""Sets the loop_count of this VideoLayerConfig.
 
         **参数解释**： 循环播放视频次数。  特殊取值： * 0：表示不播放 * -1：表示持续循环播放  **约束限制**： 不涉及。
 
@@ -137,7 +137,7 @@ class VideoLayerConfig:
 
     @property
     def video_sound(self):
-        """Gets the video_sound of this VideoLayerConfig.
+        r"""Gets the video_sound of this VideoLayerConfig.
 
         **参数解释**： 视频声音大小，0 - 100，表示开启视频声音原视频音量的百分比  特殊取值： * 0：表示不开启声音（默认值）  **约束限制**： 不涉及。
 
@@ -148,7 +148,7 @@ class VideoLayerConfig:
 
     @video_sound.setter
     def video_sound(self, video_sound):
-        """Sets the video_sound of this VideoLayerConfig.
+        r"""Sets the video_sound of this VideoLayerConfig.
 
         **参数解释**： 视频声音大小，0 - 100，表示开启视频声音原视频音量的百分比  特殊取值： * 0：表示不开启声音（默认值）  **约束限制**： 不涉及。
 
@@ -159,7 +159,7 @@ class VideoLayerConfig:
 
     @property
     def is_play_the_entire_video(self):
-        """Gets the is_play_the_entire_video of this VideoLayerConfig.
+        r"""Gets the is_play_the_entire_video of this VideoLayerConfig.
 
         **参数解释**： 是否播放完整个视频，true表示播放完整个视频，false表示当场景文本/音频结束时，视频也同时不再播放。  特殊取值： 默认值为false  **约束限制**： 不涉及。
 
@@ -170,7 +170,7 @@ class VideoLayerConfig:
 
     @is_play_the_entire_video.setter
     def is_play_the_entire_video(self, is_play_the_entire_video):
-        """Sets the is_play_the_entire_video of this VideoLayerConfig.
+        r"""Sets the is_play_the_entire_video of this VideoLayerConfig.
 
         **参数解释**： 是否播放完整个视频，true表示播放完整个视频，false表示当场景文本/音频结束时，视频也同时不再播放。  特殊取值： 默认值为false  **约束限制**： 不涉及。
 

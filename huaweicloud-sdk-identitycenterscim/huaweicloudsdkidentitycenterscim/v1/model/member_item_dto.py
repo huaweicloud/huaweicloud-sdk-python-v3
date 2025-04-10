@@ -29,7 +29,7 @@ class MemberItemDto:
     }
 
     def __init__(self, value=None, ref=None, type=None):
-        """MemberItemDto
+        r"""MemberItemDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class MemberItemDto:
 
     @property
     def value(self):
-        """Gets the value of this MemberItemDto.
+        r"""Gets the value of this MemberItemDto.
 
         成员的全局唯一标识符（ID）
 
@@ -67,7 +67,7 @@ class MemberItemDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MemberItemDto.
+        r"""Sets the value of this MemberItemDto.
 
         成员的全局唯一标识符（ID）
 
@@ -78,7 +78,7 @@ class MemberItemDto:
 
     @property
     def ref(self):
-        """Gets the ref of this MemberItemDto.
+        r"""Gets the ref of this MemberItemDto.
 
         成员的引用信息
 
@@ -89,7 +89,7 @@ class MemberItemDto:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this MemberItemDto.
+        r"""Sets the ref of this MemberItemDto.
 
         成员的引用信息
 
@@ -100,7 +100,7 @@ class MemberItemDto:
 
     @property
     def type(self):
-        """Gets the type of this MemberItemDto.
+        r"""Gets the type of this MemberItemDto.
 
         成员类型 User：用户
 
@@ -111,7 +111,7 @@ class MemberItemDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MemberItemDto.
+        r"""Sets the type of this MemberItemDto.
 
         成员类型 User：用户
 

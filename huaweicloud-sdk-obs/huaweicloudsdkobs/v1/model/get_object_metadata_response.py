@@ -74,7 +74,7 @@ class GetObjectMetadataResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, x_obs_hash_crc64ecma=None, access_control_allow_origin=None, x_obs_server_side_encryption=None, x_obs_restore=None, x_obs_object_type=None, x_obs_next_append_position=None, access_control_allow_methods=None, connection=None, x_obs_server_side_encryption_customer_key_md5=None, x_obs_expiration=None, date=None, access_control_allow_headers=None, x_obs_upload_id=None, access_control_expose_headers=None, e_tag=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_storage_class=None, x_obs_server_side_encryption_kms_key_id=None, content_length=None, access_control_max_age=None, x_obs_website_redirect_location=None, x_obs_version_id=None):
-        """GetObjectMetadataResponse
+        r"""GetObjectMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -207,7 +207,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_id_2 of this GetObjectMetadataResponse.
 
         :return: The x_obs_id_2 of this GetObjectMetadataResponse.
         :rtype: str
@@ -216,7 +216,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_id_2 of this GetObjectMetadataResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this GetObjectMetadataResponse.
         :type x_obs_id_2: str
@@ -225,7 +225,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_request_id of this GetObjectMetadataResponse.
 
         :return: The x_obs_request_id of this GetObjectMetadataResponse.
         :rtype: str
@@ -234,7 +234,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_request_id of this GetObjectMetadataResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this GetObjectMetadataResponse.
         :type x_obs_request_id: str
@@ -243,7 +243,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_hash_crc64ecma(self):
-        """Gets the x_obs_hash_crc64ecma of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_hash_crc64ecma of this GetObjectMetadataResponse.
 
         :return: The x_obs_hash_crc64ecma of this GetObjectMetadataResponse.
         :rtype: str
@@ -252,7 +252,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_hash_crc64ecma.setter
     def x_obs_hash_crc64ecma(self, x_obs_hash_crc64ecma):
-        """Sets the x_obs_hash_crc64ecma of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_hash_crc64ecma of this GetObjectMetadataResponse.
 
         :param x_obs_hash_crc64ecma: The x_obs_hash_crc64ecma of this GetObjectMetadataResponse.
         :type x_obs_hash_crc64ecma: str
@@ -261,7 +261,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def access_control_allow_origin(self):
-        """Gets the access_control_allow_origin of this GetObjectMetadataResponse.
+        r"""Gets the access_control_allow_origin of this GetObjectMetadataResponse.
 
         :return: The access_control_allow_origin of this GetObjectMetadataResponse.
         :rtype: str
@@ -270,7 +270,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @access_control_allow_origin.setter
     def access_control_allow_origin(self, access_control_allow_origin):
-        """Sets the access_control_allow_origin of this GetObjectMetadataResponse.
+        r"""Sets the access_control_allow_origin of this GetObjectMetadataResponse.
 
         :param access_control_allow_origin: The access_control_allow_origin of this GetObjectMetadataResponse.
         :type access_control_allow_origin: str
@@ -279,7 +279,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption(self):
-        """Gets the x_obs_server_side_encryption of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_server_side_encryption of this GetObjectMetadataResponse.
 
         :return: The x_obs_server_side_encryption of this GetObjectMetadataResponse.
         :rtype: str
@@ -288,7 +288,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_server_side_encryption.setter
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
-        """Sets the x_obs_server_side_encryption of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_server_side_encryption of this GetObjectMetadataResponse.
 
         :param x_obs_server_side_encryption: The x_obs_server_side_encryption of this GetObjectMetadataResponse.
         :type x_obs_server_side_encryption: str
@@ -297,7 +297,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_restore(self):
-        """Gets the x_obs_restore of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_restore of this GetObjectMetadataResponse.
 
         :return: The x_obs_restore of this GetObjectMetadataResponse.
         :rtype: str
@@ -306,7 +306,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_restore.setter
     def x_obs_restore(self, x_obs_restore):
-        """Sets the x_obs_restore of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_restore of this GetObjectMetadataResponse.
 
         :param x_obs_restore: The x_obs_restore of this GetObjectMetadataResponse.
         :type x_obs_restore: str
@@ -315,7 +315,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_object_type(self):
-        """Gets the x_obs_object_type of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_object_type of this GetObjectMetadataResponse.
 
         :return: The x_obs_object_type of this GetObjectMetadataResponse.
         :rtype: str
@@ -324,7 +324,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_object_type.setter
     def x_obs_object_type(self, x_obs_object_type):
-        """Sets the x_obs_object_type of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_object_type of this GetObjectMetadataResponse.
 
         :param x_obs_object_type: The x_obs_object_type of this GetObjectMetadataResponse.
         :type x_obs_object_type: str
@@ -333,7 +333,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_next_append_position(self):
-        """Gets the x_obs_next_append_position of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_next_append_position of this GetObjectMetadataResponse.
 
         :return: The x_obs_next_append_position of this GetObjectMetadataResponse.
         :rtype: int
@@ -342,7 +342,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_next_append_position.setter
     def x_obs_next_append_position(self, x_obs_next_append_position):
-        """Sets the x_obs_next_append_position of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_next_append_position of this GetObjectMetadataResponse.
 
         :param x_obs_next_append_position: The x_obs_next_append_position of this GetObjectMetadataResponse.
         :type x_obs_next_append_position: int
@@ -351,7 +351,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def access_control_allow_methods(self):
-        """Gets the access_control_allow_methods of this GetObjectMetadataResponse.
+        r"""Gets the access_control_allow_methods of this GetObjectMetadataResponse.
 
         :return: The access_control_allow_methods of this GetObjectMetadataResponse.
         :rtype: str
@@ -360,7 +360,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @access_control_allow_methods.setter
     def access_control_allow_methods(self, access_control_allow_methods):
-        """Sets the access_control_allow_methods of this GetObjectMetadataResponse.
+        r"""Sets the access_control_allow_methods of this GetObjectMetadataResponse.
 
         :param access_control_allow_methods: The access_control_allow_methods of this GetObjectMetadataResponse.
         :type access_control_allow_methods: str
@@ -369,7 +369,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this GetObjectMetadataResponse.
+        r"""Gets the connection of this GetObjectMetadataResponse.
 
         :return: The connection of this GetObjectMetadataResponse.
         :rtype: str
@@ -378,7 +378,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this GetObjectMetadataResponse.
+        r"""Sets the connection of this GetObjectMetadataResponse.
 
         :param connection: The connection of this GetObjectMetadataResponse.
         :type connection: str
@@ -387,7 +387,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataResponse.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataResponse.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataResponse.
         :type x_obs_server_side_encryption_customer_key_md5: str
@@ -405,7 +405,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_expiration(self):
-        """Gets the x_obs_expiration of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_expiration of this GetObjectMetadataResponse.
 
         :return: The x_obs_expiration of this GetObjectMetadataResponse.
         :rtype: str
@@ -414,7 +414,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_expiration.setter
     def x_obs_expiration(self, x_obs_expiration):
-        """Sets the x_obs_expiration of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_expiration of this GetObjectMetadataResponse.
 
         :param x_obs_expiration: The x_obs_expiration of this GetObjectMetadataResponse.
         :type x_obs_expiration: str
@@ -423,7 +423,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this GetObjectMetadataResponse.
+        r"""Gets the date of this GetObjectMetadataResponse.
 
         :return: The date of this GetObjectMetadataResponse.
         :rtype: str
@@ -432,7 +432,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetObjectMetadataResponse.
+        r"""Sets the date of this GetObjectMetadataResponse.
 
         :param date: The date of this GetObjectMetadataResponse.
         :type date: str
@@ -441,7 +441,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def access_control_allow_headers(self):
-        """Gets the access_control_allow_headers of this GetObjectMetadataResponse.
+        r"""Gets the access_control_allow_headers of this GetObjectMetadataResponse.
 
         :return: The access_control_allow_headers of this GetObjectMetadataResponse.
         :rtype: str
@@ -450,7 +450,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @access_control_allow_headers.setter
     def access_control_allow_headers(self, access_control_allow_headers):
-        """Sets the access_control_allow_headers of this GetObjectMetadataResponse.
+        r"""Sets the access_control_allow_headers of this GetObjectMetadataResponse.
 
         :param access_control_allow_headers: The access_control_allow_headers of this GetObjectMetadataResponse.
         :type access_control_allow_headers: str
@@ -459,7 +459,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_upload_id(self):
-        """Gets the x_obs_upload_id of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_upload_id of this GetObjectMetadataResponse.
 
         :return: The x_obs_upload_id of this GetObjectMetadataResponse.
         :rtype: str
@@ -468,7 +468,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_upload_id.setter
     def x_obs_upload_id(self, x_obs_upload_id):
-        """Sets the x_obs_upload_id of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_upload_id of this GetObjectMetadataResponse.
 
         :param x_obs_upload_id: The x_obs_upload_id of this GetObjectMetadataResponse.
         :type x_obs_upload_id: str
@@ -477,7 +477,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def access_control_expose_headers(self):
-        """Gets the access_control_expose_headers of this GetObjectMetadataResponse.
+        r"""Gets the access_control_expose_headers of this GetObjectMetadataResponse.
 
         :return: The access_control_expose_headers of this GetObjectMetadataResponse.
         :rtype: str
@@ -486,7 +486,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @access_control_expose_headers.setter
     def access_control_expose_headers(self, access_control_expose_headers):
-        """Sets the access_control_expose_headers of this GetObjectMetadataResponse.
+        r"""Sets the access_control_expose_headers of this GetObjectMetadataResponse.
 
         :param access_control_expose_headers: The access_control_expose_headers of this GetObjectMetadataResponse.
         :type access_control_expose_headers: str
@@ -495,7 +495,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this GetObjectMetadataResponse.
+        r"""Gets the e_tag of this GetObjectMetadataResponse.
 
         :return: The e_tag of this GetObjectMetadataResponse.
         :rtype: str
@@ -504,7 +504,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this GetObjectMetadataResponse.
+        r"""Sets the e_tag of this GetObjectMetadataResponse.
 
         :param e_tag: The e_tag of this GetObjectMetadataResponse.
         :type e_tag: str
@@ -513,7 +513,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataResponse.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataResponse.
         :rtype: str
@@ -522,7 +522,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataResponse.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataResponse.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -531,7 +531,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_storage_class of this GetObjectMetadataResponse.
 
         :return: The x_obs_storage_class of this GetObjectMetadataResponse.
         :rtype: str
@@ -540,7 +540,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_storage_class of this GetObjectMetadataResponse.
 
         :param x_obs_storage_class: The x_obs_storage_class of this GetObjectMetadataResponse.
         :type x_obs_storage_class: str
@@ -549,7 +549,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_kms_key_id(self):
-        """Gets the x_obs_server_side_encryption_kms_key_id of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this GetObjectMetadataResponse.
 
         :return: The x_obs_server_side_encryption_kms_key_id of this GetObjectMetadataResponse.
         :rtype: str
@@ -558,7 +558,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_server_side_encryption_kms_key_id.setter
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
-        """Sets the x_obs_server_side_encryption_kms_key_id of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this GetObjectMetadataResponse.
 
         :param x_obs_server_side_encryption_kms_key_id: The x_obs_server_side_encryption_kms_key_id of this GetObjectMetadataResponse.
         :type x_obs_server_side_encryption_kms_key_id: str
@@ -567,7 +567,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this GetObjectMetadataResponse.
+        r"""Gets the content_length of this GetObjectMetadataResponse.
 
         :return: The content_length of this GetObjectMetadataResponse.
         :rtype: str
@@ -576,7 +576,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this GetObjectMetadataResponse.
+        r"""Sets the content_length of this GetObjectMetadataResponse.
 
         :param content_length: The content_length of this GetObjectMetadataResponse.
         :type content_length: str
@@ -585,7 +585,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def access_control_max_age(self):
-        """Gets the access_control_max_age of this GetObjectMetadataResponse.
+        r"""Gets the access_control_max_age of this GetObjectMetadataResponse.
 
         :return: The access_control_max_age of this GetObjectMetadataResponse.
         :rtype: int
@@ -594,7 +594,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @access_control_max_age.setter
     def access_control_max_age(self, access_control_max_age):
-        """Sets the access_control_max_age of this GetObjectMetadataResponse.
+        r"""Sets the access_control_max_age of this GetObjectMetadataResponse.
 
         :param access_control_max_age: The access_control_max_age of this GetObjectMetadataResponse.
         :type access_control_max_age: int
@@ -603,7 +603,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_website_redirect_location(self):
-        """Gets the x_obs_website_redirect_location of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_website_redirect_location of this GetObjectMetadataResponse.
 
         :return: The x_obs_website_redirect_location of this GetObjectMetadataResponse.
         :rtype: str
@@ -612,7 +612,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_website_redirect_location.setter
     def x_obs_website_redirect_location(self, x_obs_website_redirect_location):
-        """Sets the x_obs_website_redirect_location of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_website_redirect_location of this GetObjectMetadataResponse.
 
         :param x_obs_website_redirect_location: The x_obs_website_redirect_location of this GetObjectMetadataResponse.
         :type x_obs_website_redirect_location: str
@@ -621,7 +621,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @property
     def x_obs_version_id(self):
-        """Gets the x_obs_version_id of this GetObjectMetadataResponse.
+        r"""Gets the x_obs_version_id of this GetObjectMetadataResponse.
 
         :return: The x_obs_version_id of this GetObjectMetadataResponse.
         :rtype: str
@@ -630,7 +630,7 @@ class GetObjectMetadataResponse(SdkResponse):
 
     @x_obs_version_id.setter
     def x_obs_version_id(self, x_obs_version_id):
-        """Sets the x_obs_version_id of this GetObjectMetadataResponse.
+        r"""Sets the x_obs_version_id of this GetObjectMetadataResponse.
 
         :param x_obs_version_id: The x_obs_version_id of this GetObjectMetadataResponse.
         :type x_obs_version_id: str

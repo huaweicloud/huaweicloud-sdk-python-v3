@@ -27,7 +27,7 @@ class AddAlarmRuleResourcesRequest:
     }
 
     def __init__(self, alarm_id=None, body=None):
-        """AddAlarmRuleResourcesRequest
+        r"""AddAlarmRuleResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddAlarmRuleResourcesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AddAlarmRuleResourcesRequest.
+        r"""Gets the alarm_id of this AddAlarmRuleResourcesRequest.
 
         Alarm实例ID
 
@@ -60,7 +60,7 @@ class AddAlarmRuleResourcesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AddAlarmRuleResourcesRequest.
+        r"""Sets the alarm_id of this AddAlarmRuleResourcesRequest.
 
         Alarm实例ID
 
@@ -71,7 +71,7 @@ class AddAlarmRuleResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAlarmRuleResourcesRequest.
+        r"""Gets the body of this AddAlarmRuleResourcesRequest.
 
         :return: The body of this AddAlarmRuleResourcesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.ResourcesReqV2`
@@ -80,7 +80,7 @@ class AddAlarmRuleResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAlarmRuleResourcesRequest.
+        r"""Sets the body of this AddAlarmRuleResourcesRequest.
 
         :param body: The body of this AddAlarmRuleResourcesRequest.
         :type body: :class:`huaweicloudsdkces.v2.ResourcesReqV2`

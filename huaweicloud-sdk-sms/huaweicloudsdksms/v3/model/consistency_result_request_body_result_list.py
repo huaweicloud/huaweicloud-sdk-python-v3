@@ -29,7 +29,7 @@ class ConsistencyResultRequestBodyResultList:
     }
 
     def __init__(self, finished_time=None, check_result=None, consistency_result=None):
-        """ConsistencyResultRequestBodyResultList
+        r"""ConsistencyResultRequestBodyResultList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConsistencyResultRequestBodyResultList:
 
     @property
     def finished_time(self):
-        """Gets the finished_time of this ConsistencyResultRequestBodyResultList.
+        r"""Gets the finished_time of this ConsistencyResultRequestBodyResultList.
 
         校验完成时间
 
@@ -68,7 +68,7 @@ class ConsistencyResultRequestBodyResultList:
 
     @finished_time.setter
     def finished_time(self, finished_time):
-        """Sets the finished_time of this ConsistencyResultRequestBodyResultList.
+        r"""Sets the finished_time of this ConsistencyResultRequestBodyResultList.
 
         校验完成时间
 
@@ -79,7 +79,7 @@ class ConsistencyResultRequestBodyResultList:
 
     @property
     def check_result(self):
-        """Gets the check_result of this ConsistencyResultRequestBodyResultList.
+        r"""Gets the check_result of this ConsistencyResultRequestBodyResultList.
 
         校验结果
 
@@ -90,7 +90,7 @@ class ConsistencyResultRequestBodyResultList:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this ConsistencyResultRequestBodyResultList.
+        r"""Sets the check_result of this ConsistencyResultRequestBodyResultList.
 
         校验结果
 
@@ -101,7 +101,7 @@ class ConsistencyResultRequestBodyResultList:
 
     @property
     def consistency_result(self):
-        """Gets the consistency_result of this ConsistencyResultRequestBodyResultList.
+        r"""Gets the consistency_result of this ConsistencyResultRequestBodyResultList.
 
         校验结果
 
@@ -112,7 +112,7 @@ class ConsistencyResultRequestBodyResultList:
 
     @consistency_result.setter
     def consistency_result(self, consistency_result):
-        """Sets the consistency_result of this ConsistencyResultRequestBodyResultList.
+        r"""Sets the consistency_result of this ConsistencyResultRequestBodyResultList.
 
         校验结果
 

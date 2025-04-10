@@ -30,7 +30,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, ingress_port_infos=None):
-        """ListCustomIngressPortsResponse
+        r"""ListCustomIngressPortsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListCustomIngressPortsResponse.
+        r"""Gets the size of this ListCustomIngressPortsResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListCustomIngressPortsResponse.
+        r"""Sets the size of this ListCustomIngressPortsResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCustomIngressPortsResponse.
+        r"""Gets the total of this ListCustomIngressPortsResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCustomIngressPortsResponse.
+        r"""Sets the total of this ListCustomIngressPortsResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
 
     @property
     def ingress_port_infos(self):
-        """Gets the ingress_port_infos of this ListCustomIngressPortsResponse.
+        r"""Gets the ingress_port_infos of this ListCustomIngressPortsResponse.
 
         实例自定义入方向端口列表。
 
@@ -111,7 +111,7 @@ class ListCustomIngressPortsResponse(SdkResponse):
 
     @ingress_port_infos.setter
     def ingress_port_infos(self, ingress_port_infos):
-        """Sets the ingress_port_infos of this ListCustomIngressPortsResponse.
+        r"""Sets the ingress_port_infos of this ListCustomIngressPortsResponse.
 
         实例自定义入方向端口列表。
 

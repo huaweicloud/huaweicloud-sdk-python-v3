@@ -27,7 +27,7 @@ class StartClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartClusterRequest
+        r"""StartClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartClusterRequest.
+        r"""Gets the cluster_id of this StartClusterRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class StartClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartClusterRequest.
+        r"""Sets the cluster_id of this StartClusterRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class StartClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartClusterRequest.
+        r"""Gets the body of this StartClusterRequest.
 
         :return: The body of this StartClusterRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`
@@ -80,7 +80,7 @@ class StartClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartClusterRequest.
+        r"""Sets the body of this StartClusterRequest.
 
         :param body: The body of this StartClusterRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`

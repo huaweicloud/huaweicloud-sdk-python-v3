@@ -27,7 +27,7 @@ class ShowMolBatchDownloadTaskRequest:
     }
 
     def __init__(self, eihealth_project_id=None, task_id=None):
-        """ShowMolBatchDownloadTaskRequest
+        r"""ShowMolBatchDownloadTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMolBatchDownloadTaskRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowMolBatchDownloadTaskRequest.
+        r"""Gets the eihealth_project_id of this ShowMolBatchDownloadTaskRequest.
 
         平台项目ID。
 
@@ -59,7 +59,7 @@ class ShowMolBatchDownloadTaskRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowMolBatchDownloadTaskRequest.
+        r"""Sets the eihealth_project_id of this ShowMolBatchDownloadTaskRequest.
 
         平台项目ID。
 
@@ -70,7 +70,7 @@ class ShowMolBatchDownloadTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowMolBatchDownloadTaskRequest.
+        r"""Gets the task_id of this ShowMolBatchDownloadTaskRequest.
 
         下载任务ID。
 
@@ -81,7 +81,7 @@ class ShowMolBatchDownloadTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowMolBatchDownloadTaskRequest.
+        r"""Sets the task_id of this ShowMolBatchDownloadTaskRequest.
 
         下载任务ID。
 

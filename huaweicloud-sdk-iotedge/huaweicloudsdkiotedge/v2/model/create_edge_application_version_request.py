@@ -27,7 +27,7 @@ class CreateEdgeApplicationVersionRequest:
     }
 
     def __init__(self, edge_app_id=None, body=None):
-        """CreateEdgeApplicationVersionRequest
+        r"""CreateEdgeApplicationVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEdgeApplicationVersionRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateEdgeApplicationVersionRequest.
+        r"""Gets the edge_app_id of this CreateEdgeApplicationVersionRequest.
 
         应用ID，应用唯一。
 
@@ -60,7 +60,7 @@ class CreateEdgeApplicationVersionRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateEdgeApplicationVersionRequest.
+        r"""Sets the edge_app_id of this CreateEdgeApplicationVersionRequest.
 
         应用ID，应用唯一。
 
@@ -71,7 +71,7 @@ class CreateEdgeApplicationVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeApplicationVersionRequest.
+        r"""Gets the body of this CreateEdgeApplicationVersionRequest.
 
         :return: The body of this CreateEdgeApplicationVersionRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionDTO`
@@ -80,7 +80,7 @@ class CreateEdgeApplicationVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeApplicationVersionRequest.
+        r"""Sets the body of this CreateEdgeApplicationVersionRequest.
 
         :param body: The body of this CreateEdgeApplicationVersionRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionDTO`

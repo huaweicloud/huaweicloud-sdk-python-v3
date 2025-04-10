@@ -27,7 +27,7 @@ class RetryFactoryJobInstanceBodyJobs:
     }
 
     def __init__(self, job_name=None, workspace_id=None):
-        """RetryFactoryJobInstanceBodyJobs
+        r"""RetryFactoryJobInstanceBodyJobs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RetryFactoryJobInstanceBodyJobs:
 
     @property
     def job_name(self):
-        """Gets the job_name of this RetryFactoryJobInstanceBodyJobs.
+        r"""Gets the job_name of this RetryFactoryJobInstanceBodyJobs.
 
         重跑的作业名称。
 
@@ -59,7 +59,7 @@ class RetryFactoryJobInstanceBodyJobs:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this RetryFactoryJobInstanceBodyJobs.
+        r"""Sets the job_name of this RetryFactoryJobInstanceBodyJobs.
 
         重跑的作业名称。
 
@@ -70,7 +70,7 @@ class RetryFactoryJobInstanceBodyJobs:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this RetryFactoryJobInstanceBodyJobs.
+        r"""Gets the workspace_id of this RetryFactoryJobInstanceBodyJobs.
 
         工作空间id
 
@@ -81,7 +81,7 @@ class RetryFactoryJobInstanceBodyJobs:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this RetryFactoryJobInstanceBodyJobs.
+        r"""Sets the workspace_id of this RetryFactoryJobInstanceBodyJobs.
 
         工作空间id
 

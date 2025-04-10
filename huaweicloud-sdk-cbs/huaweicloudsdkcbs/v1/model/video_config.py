@@ -31,7 +31,7 @@ class VideoConfig:
     }
 
     def __init__(self, background_id=None, logo_id=None, show_subtitles=None, resolution_type=None):
-        """VideoConfig
+        r"""VideoConfig
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class VideoConfig:
 
     @property
     def background_id(self):
-        """Gets the background_id of this VideoConfig.
+        r"""Gets the background_id of this VideoConfig.
 
         背景id
 
@@ -74,7 +74,7 @@ class VideoConfig:
 
     @background_id.setter
     def background_id(self, background_id):
-        """Sets the background_id of this VideoConfig.
+        r"""Sets the background_id of this VideoConfig.
 
         背景id
 
@@ -85,7 +85,7 @@ class VideoConfig:
 
     @property
     def logo_id(self):
-        """Gets the logo_id of this VideoConfig.
+        r"""Gets the logo_id of this VideoConfig.
 
         图标id
 
@@ -96,7 +96,7 @@ class VideoConfig:
 
     @logo_id.setter
     def logo_id(self, logo_id):
-        """Sets the logo_id of this VideoConfig.
+        r"""Sets the logo_id of this VideoConfig.
 
         图标id
 
@@ -107,7 +107,7 @@ class VideoConfig:
 
     @property
     def show_subtitles(self):
-        """Gets the show_subtitles of this VideoConfig.
+        r"""Gets the show_subtitles of this VideoConfig.
 
         是否显示字幕 默认：false
 
@@ -118,7 +118,7 @@ class VideoConfig:
 
     @show_subtitles.setter
     def show_subtitles(self, show_subtitles):
-        """Sets the show_subtitles of this VideoConfig.
+        r"""Sets the show_subtitles of this VideoConfig.
 
         是否显示字幕 默认：false
 
@@ -129,7 +129,7 @@ class VideoConfig:
 
     @property
     def resolution_type(self):
-        """Gets the resolution_type of this VideoConfig.
+        r"""Gets the resolution_type of this VideoConfig.
 
         画面分辨率： 0: 宽屏landscape（默认） 1: 竖屏portrait
 
@@ -140,7 +140,7 @@ class VideoConfig:
 
     @resolution_type.setter
     def resolution_type(self, resolution_type):
-        """Sets the resolution_type of this VideoConfig.
+        r"""Sets the resolution_type of this VideoConfig.
 
         画面分辨率： 0: 宽屏landscape（默认） 1: 竖屏portrait
 

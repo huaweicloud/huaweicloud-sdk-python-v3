@@ -35,7 +35,7 @@ class InterpreterGroupInfo:
     }
 
     def __init__(self, group_id=None, group_name=None, group_type=None, first_language=None, second_language=None, interpreters=None):
-        """InterpreterGroupInfo
+        r"""InterpreterGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class InterpreterGroupInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this InterpreterGroupInfo.
+        r"""Gets the group_id of this InterpreterGroupInfo.
 
         传译组序号。
 
@@ -86,7 +86,7 @@ class InterpreterGroupInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this InterpreterGroupInfo.
+        r"""Sets the group_id of this InterpreterGroupInfo.
 
         传译组序号。
 
@@ -97,7 +97,7 @@ class InterpreterGroupInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this InterpreterGroupInfo.
+        r"""Gets the group_name of this InterpreterGroupInfo.
 
         传译组名称。
 
@@ -108,7 +108,7 @@ class InterpreterGroupInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this InterpreterGroupInfo.
+        r"""Sets the group_name of this InterpreterGroupInfo.
 
         传译组名称。
 
@@ -119,7 +119,7 @@ class InterpreterGroupInfo:
 
     @property
     def group_type(self):
-        """Gets the group_type of this InterpreterGroupInfo.
+        r"""Gets the group_type of this InterpreterGroupInfo.
 
         传译组类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
 
@@ -130,7 +130,7 @@ class InterpreterGroupInfo:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this InterpreterGroupInfo.
+        r"""Sets the group_type of this InterpreterGroupInfo.
 
         传译组类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
 
@@ -141,7 +141,7 @@ class InterpreterGroupInfo:
 
     @property
     def first_language(self):
-        """Gets the first_language of this InterpreterGroupInfo.
+        r"""Gets the first_language of this InterpreterGroupInfo.
 
         传译组支持的第一种语言。
 
@@ -152,7 +152,7 @@ class InterpreterGroupInfo:
 
     @first_language.setter
     def first_language(self, first_language):
-        """Sets the first_language of this InterpreterGroupInfo.
+        r"""Sets the first_language of this InterpreterGroupInfo.
 
         传译组支持的第一种语言。
 
@@ -163,7 +163,7 @@ class InterpreterGroupInfo:
 
     @property
     def second_language(self):
-        """Gets the second_language of this InterpreterGroupInfo.
+        r"""Gets the second_language of this InterpreterGroupInfo.
 
         传译组支持的第二种语言。
 
@@ -174,7 +174,7 @@ class InterpreterGroupInfo:
 
     @second_language.setter
     def second_language(self, second_language):
-        """Sets the second_language of this InterpreterGroupInfo.
+        r"""Sets the second_language of this InterpreterGroupInfo.
 
         传译组支持的第二种语言。
 
@@ -185,7 +185,7 @@ class InterpreterGroupInfo:
 
     @property
     def interpreters(self):
-        """Gets the interpreters of this InterpreterGroupInfo.
+        r"""Gets the interpreters of this InterpreterGroupInfo.
 
         传译员列表。
 
@@ -196,7 +196,7 @@ class InterpreterGroupInfo:
 
     @interpreters.setter
     def interpreters(self, interpreters):
-        """Sets the interpreters of this InterpreterGroupInfo.
+        r"""Sets the interpreters of this InterpreterGroupInfo.
 
         传译员列表。
 

@@ -27,7 +27,7 @@ class MysqlVolumeInfo:
     }
 
     def __init__(self, type=None, size=None):
-        """MysqlVolumeInfo
+        r"""MysqlVolumeInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MysqlVolumeInfo:
 
     @property
     def type(self):
-        """Gets the type of this MysqlVolumeInfo.
+        r"""Gets the type of this MysqlVolumeInfo.
 
         磁盘类型。
 
@@ -59,7 +59,7 @@ class MysqlVolumeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlVolumeInfo.
+        r"""Sets the type of this MysqlVolumeInfo.
 
         磁盘类型。
 
@@ -70,7 +70,7 @@ class MysqlVolumeInfo:
 
     @property
     def size(self):
-        """Gets the size of this MysqlVolumeInfo.
+        r"""Gets the size of this MysqlVolumeInfo.
 
         已使用磁盘大小，单位GB。
 
@@ -81,7 +81,7 @@ class MysqlVolumeInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this MysqlVolumeInfo.
+        r"""Sets the size of this MysqlVolumeInfo.
 
         已使用磁盘大小，单位GB。
 

@@ -25,7 +25,7 @@ class RollbackInfo:
     }
 
     def __init__(self, volume_id=None):
-        """RollbackInfo
+        r"""RollbackInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RollbackInfo:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this RollbackInfo.
+        r"""Gets the volume_id of this RollbackInfo.
 
         回滚的目标云硬盘UUID。
 
@@ -53,7 +53,7 @@ class RollbackInfo:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this RollbackInfo.
+        r"""Sets the volume_id of this RollbackInfo.
 
         回滚的目标云硬盘UUID。
 

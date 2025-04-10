@@ -29,7 +29,7 @@ class EipMetaData:
     }
 
     def __init__(self, metadata_bandwidth_share_type=None, metadata_eip_id=None, metadataeip_address=None):
-        """EipMetaData
+        r"""EipMetaData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EipMetaData:
 
     @property
     def metadata_bandwidth_share_type(self):
-        """Gets the metadata_bandwidth_share_type of this EipMetaData.
+        r"""Gets the metadata_bandwidth_share_type of this EipMetaData.
 
         伸缩带宽策略中带宽对应的共享类型。
 
@@ -68,7 +68,7 @@ class EipMetaData:
 
     @metadata_bandwidth_share_type.setter
     def metadata_bandwidth_share_type(self, metadata_bandwidth_share_type):
-        """Sets the metadata_bandwidth_share_type of this EipMetaData.
+        r"""Sets the metadata_bandwidth_share_type of this EipMetaData.
 
         伸缩带宽策略中带宽对应的共享类型。
 
@@ -79,7 +79,7 @@ class EipMetaData:
 
     @property
     def metadata_eip_id(self):
-        """Gets the metadata_eip_id of this EipMetaData.
+        r"""Gets the metadata_eip_id of this EipMetaData.
 
         伸缩带宽策略中带宽对应的EIP的ID。
 
@@ -90,7 +90,7 @@ class EipMetaData:
 
     @metadata_eip_id.setter
     def metadata_eip_id(self, metadata_eip_id):
-        """Sets the metadata_eip_id of this EipMetaData.
+        r"""Sets the metadata_eip_id of this EipMetaData.
 
         伸缩带宽策略中带宽对应的EIP的ID。
 
@@ -101,7 +101,7 @@ class EipMetaData:
 
     @property
     def metadataeip_address(self):
-        """Gets the metadataeip_address of this EipMetaData.
+        r"""Gets the metadataeip_address of this EipMetaData.
 
         伸缩带宽策略中带宽对应的EIP地址。
 
@@ -112,7 +112,7 @@ class EipMetaData:
 
     @metadataeip_address.setter
     def metadataeip_address(self, metadataeip_address):
-        """Sets the metadataeip_address of this EipMetaData.
+        r"""Sets the metadataeip_address of this EipMetaData.
 
         伸缩带宽策略中带宽对应的EIP地址。
 

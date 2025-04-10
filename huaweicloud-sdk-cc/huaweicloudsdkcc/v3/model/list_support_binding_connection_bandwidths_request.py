@@ -35,7 +35,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
     }
 
     def __init__(self, limit=None, marker=None, enterprise_project_id=None, local_area=None, remote_area=None, binding_service=None):
-        """ListSupportBindingConnectionBandwidthsRequest
+        r"""ListSupportBindingConnectionBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Gets the limit of this ListSupportBindingConnectionBandwidthsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -89,7 +89,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Sets the limit of this ListSupportBindingConnectionBandwidthsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -100,7 +100,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Gets the marker of this ListSupportBindingConnectionBandwidthsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -111,7 +111,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Sets the marker of this ListSupportBindingConnectionBandwidthsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -122,7 +122,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Gets the enterprise_project_id of this ListSupportBindingConnectionBandwidthsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -133,7 +133,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Sets the enterprise_project_id of this ListSupportBindingConnectionBandwidthsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -144,7 +144,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @property
     def local_area(self):
-        """Gets the local_area of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Gets the local_area of this ListSupportBindingConnectionBandwidthsRequest.
 
         功能说明：本端接入点。   如果是region类型，则返回所有满足条件的城域带宽，不进行该字段的匹配过滤   如果是其他类型，则会用该字段跟全域互联带宽的local_area进行匹配过滤   附带过滤条件：会通过local_area和remote_area推算最佳全域互联带宽类型进行过滤查询   限制：local_area和remote_area同为空或者同不为空，且站点类型需一致
 
@@ -155,7 +155,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Sets the local_area of this ListSupportBindingConnectionBandwidthsRequest.
 
         功能说明：本端接入点。   如果是region类型，则返回所有满足条件的城域带宽，不进行该字段的匹配过滤   如果是其他类型，则会用该字段跟全域互联带宽的local_area进行匹配过滤   附带过滤条件：会通过local_area和remote_area推算最佳全域互联带宽类型进行过滤查询   限制：local_area和remote_area同为空或者同不为空，且站点类型需一致
 
@@ -166,7 +166,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Gets the remote_area of this ListSupportBindingConnectionBandwidthsRequest.
 
         功能说明：远端接入点。   如果是region类型，则返回所有满足条件的城域带宽，不进行该字段的匹配过滤   如果是其他类型，则会用该字段跟全域互联带宽的remote_area进行匹配过滤   附带过滤条件：会通过local_area和remote_area推算最佳全域互联带宽类型进行过滤查询   限制：local_area和remote_area同为空或者同不为空，且站点类型需一致
 
@@ -177,7 +177,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Sets the remote_area of this ListSupportBindingConnectionBandwidthsRequest.
 
         功能说明：远端接入点。   如果是region类型，则返回所有满足条件的城域带宽，不进行该字段的匹配过滤   如果是其他类型，则会用该字段跟全域互联带宽的remote_area进行匹配过滤   附带过滤条件：会通过local_area和remote_area推算最佳全域互联带宽类型进行过滤查询   限制：local_area和remote_area同为空或者同不为空，且站点类型需一致
 
@@ -188,7 +188,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @property
     def binding_service(self):
-        """Gets the binding_service of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Gets the binding_service of this ListSupportBindingConnectionBandwidthsRequest.
 
         根据支持绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
 
@@ -199,7 +199,7 @@ class ListSupportBindingConnectionBandwidthsRequest:
 
     @binding_service.setter
     def binding_service(self, binding_service):
-        """Sets the binding_service of this ListSupportBindingConnectionBandwidthsRequest.
+        r"""Sets the binding_service of this ListSupportBindingConnectionBandwidthsRequest.
 
         根据支持绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
 

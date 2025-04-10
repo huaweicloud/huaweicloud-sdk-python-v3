@@ -28,7 +28,7 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None, total_count=None):
-        """ListGaussMySqlConfigurationsResponse
+        r"""ListGaussMySqlConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListGaussMySqlConfigurationsResponse.
+        r"""Gets the configurations of this ListGaussMySqlConfigurationsResponse.
 
         :return: The configurations of this ListGaussMySqlConfigurationsResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary`]
@@ -60,7 +60,7 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListGaussMySqlConfigurationsResponse.
+        r"""Sets the configurations of this ListGaussMySqlConfigurationsResponse.
 
         :param configurations: The configurations of this ListGaussMySqlConfigurationsResponse.
         :type configurations: list[:class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary`]
@@ -69,7 +69,7 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGaussMySqlConfigurationsResponse.
+        r"""Gets the total_count of this ListGaussMySqlConfigurationsResponse.
 
         参数模板的总数。
 
@@ -80,7 +80,7 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGaussMySqlConfigurationsResponse.
+        r"""Sets the total_count of this ListGaussMySqlConfigurationsResponse.
 
         参数模板的总数。
 

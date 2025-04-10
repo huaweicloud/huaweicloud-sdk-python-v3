@@ -31,7 +31,7 @@ class ListAsyncJobDetailRequest:
     }
 
     def __init__(self, async_job_id=None, x_language=None, offset=None, limit=None):
-        """ListAsyncJobDetailRequest
+        r"""ListAsyncJobDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAsyncJobDetailRequest:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this ListAsyncJobDetailRequest.
+        r"""Gets the async_job_id of this ListAsyncJobDetailRequest.
 
         批量异步创建的任务ID，由创建批量异步任务接口返回。
 
@@ -74,7 +74,7 @@ class ListAsyncJobDetailRequest:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this ListAsyncJobDetailRequest.
+        r"""Sets the async_job_id of this ListAsyncJobDetailRequest.
 
         批量异步创建的任务ID，由创建批量异步任务接口返回。
 
@@ -85,7 +85,7 @@ class ListAsyncJobDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAsyncJobDetailRequest.
+        r"""Gets the x_language of this ListAsyncJobDetailRequest.
 
         请求语言类型。
 
@@ -96,7 +96,7 @@ class ListAsyncJobDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAsyncJobDetailRequest.
+        r"""Sets the x_language of this ListAsyncJobDetailRequest.
 
         请求语言类型。
 
@@ -107,7 +107,7 @@ class ListAsyncJobDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAsyncJobDetailRequest.
+        r"""Gets the offset of this ListAsyncJobDetailRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -118,7 +118,7 @@ class ListAsyncJobDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAsyncJobDetailRequest.
+        r"""Sets the offset of this ListAsyncJobDetailRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -129,7 +129,7 @@ class ListAsyncJobDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAsyncJobDetailRequest.
+        r"""Gets the limit of this ListAsyncJobDetailRequest.
 
         查询返回记录的数量限制。
 
@@ -140,7 +140,7 @@ class ListAsyncJobDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAsyncJobDetailRequest.
+        r"""Sets the limit of this ListAsyncJobDetailRequest.
 
         查询返回记录的数量限制。
 

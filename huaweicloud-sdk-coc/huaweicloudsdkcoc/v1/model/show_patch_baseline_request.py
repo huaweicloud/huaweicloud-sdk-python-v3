@@ -25,7 +25,7 @@ class ShowPatchBaselineRequest:
     }
 
     def __init__(self, baseline_id=None):
-        """ShowPatchBaselineRequest
+        r"""ShowPatchBaselineRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPatchBaselineRequest:
 
     @property
     def baseline_id(self):
-        """Gets the baseline_id of this ShowPatchBaselineRequest.
+        r"""Gets the baseline_id of this ShowPatchBaselineRequest.
 
         基线id
 
@@ -53,7 +53,7 @@ class ShowPatchBaselineRequest:
 
     @baseline_id.setter
     def baseline_id(self, baseline_id):
-        """Sets the baseline_id of this ShowPatchBaselineRequest.
+        r"""Sets the baseline_id of this ShowPatchBaselineRequest.
 
         基线id
 

@@ -26,7 +26,7 @@ class ListStarrocksInstanceInfoResponse(SdkResponse):
     }
 
     def __init__(self, instances=None):
-        """ListStarrocksInstanceInfoResponse
+        r"""ListStarrocksInstanceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStarrocksInstanceInfoResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListStarrocksInstanceInfoResponse.
+        r"""Gets the instances of this ListStarrocksInstanceInfoResponse.
 
         实例信息。
 
@@ -55,7 +55,7 @@ class ListStarrocksInstanceInfoResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListStarrocksInstanceInfoResponse.
+        r"""Sets the instances of this ListStarrocksInstanceInfoResponse.
 
         实例信息。
 

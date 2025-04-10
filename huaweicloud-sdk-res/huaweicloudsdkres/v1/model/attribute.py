@@ -29,7 +29,7 @@ class Attribute:
     }
 
     def __init__(self, name=None, data_type=None, other_uses=None):
-        """Attribute
+        r"""Attribute
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Attribute:
 
     @property
     def name(self):
-        """Gets the name of this Attribute.
+        r"""Gets the name of this Attribute.
 
         名称。
 
@@ -67,7 +67,7 @@ class Attribute:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Attribute.
+        r"""Sets the name of this Attribute.
 
         名称。
 
@@ -78,7 +78,7 @@ class Attribute:
 
     @property
     def data_type(self):
-        """Gets the data_type of this Attribute.
+        r"""Gets the data_type of this Attribute.
 
         数据类型。
 
@@ -89,7 +89,7 @@ class Attribute:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this Attribute.
+        r"""Sets the data_type of this Attribute.
 
         数据类型。
 
@@ -100,7 +100,7 @@ class Attribute:
 
     @property
     def other_uses(self):
-        """Gets the other_uses of this Attribute.
+        r"""Gets the other_uses of this Attribute.
 
         其他用途。
 
@@ -111,7 +111,7 @@ class Attribute:
 
     @other_uses.setter
     def other_uses(self, other_uses):
-        """Sets the other_uses of this Attribute.
+        r"""Sets the other_uses of this Attribute.
 
         其他用途。
 

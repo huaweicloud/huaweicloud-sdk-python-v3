@@ -25,7 +25,7 @@ class DeleteSecretRequest:
     }
 
     def __init__(self, secret_id=None):
-        """DeleteSecretRequest
+        r"""DeleteSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSecretRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this DeleteSecretRequest.
+        r"""Gets the secret_id of this DeleteSecretRequest.
 
         密钥ID，从专业版HiLens控制台密钥管理[获密钥列表](getSecretsListUsingGET.xml)获取
 
@@ -53,7 +53,7 @@ class DeleteSecretRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this DeleteSecretRequest.
+        r"""Sets the secret_id of this DeleteSecretRequest.
 
         密钥ID，从专业版HiLens控制台密钥管理[获密钥列表](getSecretsListUsingGET.xml)获取
 

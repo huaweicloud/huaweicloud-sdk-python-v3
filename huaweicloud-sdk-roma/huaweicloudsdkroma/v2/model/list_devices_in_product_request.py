@@ -27,7 +27,7 @@ class ListDevicesInProductRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None):
-        """ListDevicesInProductRequest
+        r"""ListDevicesInProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListDevicesInProductRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDevicesInProductRequest.
+        r"""Gets the instance_id of this ListDevicesInProductRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ListDevicesInProductRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDevicesInProductRequest.
+        r"""Sets the instance_id of this ListDevicesInProductRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ListDevicesInProductRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListDevicesInProductRequest.
+        r"""Gets the product_id of this ListDevicesInProductRequest.
 
         产品ID
 
@@ -81,7 +81,7 @@ class ListDevicesInProductRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListDevicesInProductRequest.
+        r"""Sets the product_id of this ListDevicesInProductRequest.
 
         产品ID
 

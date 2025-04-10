@@ -33,7 +33,7 @@ class RuleCommand:
     }
 
     def __init__(self, room_id=None, job_id=None, command_id=None, command_time=None, interaction_rules=None):
-        """RuleCommand
+        r"""RuleCommand
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RuleCommand:
 
     @property
     def room_id(self):
-        """Gets the room_id of this RuleCommand.
+        r"""Gets the room_id of this RuleCommand.
 
         直播间ID
 
@@ -82,7 +82,7 @@ class RuleCommand:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this RuleCommand.
+        r"""Sets the room_id of this RuleCommand.
 
         直播间ID
 
@@ -93,7 +93,7 @@ class RuleCommand:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RuleCommand.
+        r"""Gets the job_id of this RuleCommand.
 
         直播任务ID。
 
@@ -104,7 +104,7 @@ class RuleCommand:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RuleCommand.
+        r"""Sets the job_id of this RuleCommand.
 
         直播任务ID。
 
@@ -115,7 +115,7 @@ class RuleCommand:
 
     @property
     def command_id(self):
-        """Gets the command_id of this RuleCommand.
+        r"""Gets the command_id of this RuleCommand.
 
         命令ID。
 
@@ -126,7 +126,7 @@ class RuleCommand:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this RuleCommand.
+        r"""Sets the command_id of this RuleCommand.
 
         命令ID。
 
@@ -137,7 +137,7 @@ class RuleCommand:
 
     @property
     def command_time(self):
-        """Gets the command_time of this RuleCommand.
+        r"""Gets the command_time of this RuleCommand.
 
         命令时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -148,7 +148,7 @@ class RuleCommand:
 
     @command_time.setter
     def command_time(self, command_time):
-        """Sets the command_time of this RuleCommand.
+        r"""Sets the command_time of this RuleCommand.
 
         命令时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -159,7 +159,7 @@ class RuleCommand:
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this RuleCommand.
+        r"""Gets the interaction_rules of this RuleCommand.
 
         互动规则列表
 
@@ -170,7 +170,7 @@ class RuleCommand:
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this RuleCommand.
+        r"""Sets the interaction_rules of this RuleCommand.
 
         互动规则列表
 

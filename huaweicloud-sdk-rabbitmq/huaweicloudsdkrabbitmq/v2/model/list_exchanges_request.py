@@ -31,7 +31,7 @@ class ListExchangesRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, offset=None, limit=None):
-        """ListExchangesRequest
+        r"""ListExchangesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListExchangesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListExchangesRequest.
+        r"""Gets the instance_id of this ListExchangesRequest.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListExchangesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListExchangesRequest.
+        r"""Sets the instance_id of this ListExchangesRequest.
 
         实例ID
 
@@ -84,7 +84,7 @@ class ListExchangesRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this ListExchangesRequest.
+        r"""Gets the vhost of this ListExchangesRequest.
 
         所属Vhost名称
 
@@ -95,7 +95,7 @@ class ListExchangesRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ListExchangesRequest.
+        r"""Sets the vhost of this ListExchangesRequest.
 
         所属Vhost名称
 
@@ -106,7 +106,7 @@ class ListExchangesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListExchangesRequest.
+        r"""Gets the offset of this ListExchangesRequest.
 
         分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
 
@@ -117,7 +117,7 @@ class ListExchangesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListExchangesRequest.
+        r"""Sets the offset of this ListExchangesRequest.
 
         分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
 
@@ -128,7 +128,7 @@ class ListExchangesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListExchangesRequest.
+        r"""Gets the limit of this ListExchangesRequest.
 
         分页查询单页数量，取值范围0~50，默认查询10条。
 
@@ -139,7 +139,7 @@ class ListExchangesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListExchangesRequest.
+        r"""Sets the limit of this ListExchangesRequest.
 
         分页查询单页数量，取值范围0~50，默认查询10条。
 

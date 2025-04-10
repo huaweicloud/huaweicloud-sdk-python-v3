@@ -27,7 +27,7 @@ class UpdateMessageTemplateRequest:
     }
 
     def __init__(self, message_template_id=None, body=None):
-        """UpdateMessageTemplateRequest
+        r"""UpdateMessageTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMessageTemplateRequest:
 
     @property
     def message_template_id(self):
-        """Gets the message_template_id of this UpdateMessageTemplateRequest.
+        r"""Gets the message_template_id of this UpdateMessageTemplateRequest.
 
         模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class UpdateMessageTemplateRequest:
 
     @message_template_id.setter
     def message_template_id(self, message_template_id):
-        """Sets the message_template_id of this UpdateMessageTemplateRequest.
+        r"""Sets the message_template_id of this UpdateMessageTemplateRequest.
 
         模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class UpdateMessageTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMessageTemplateRequest.
+        r"""Gets the body of this UpdateMessageTemplateRequest.
 
         :return: The body of this UpdateMessageTemplateRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`
@@ -80,7 +80,7 @@ class UpdateMessageTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMessageTemplateRequest.
+        r"""Sets the body of this UpdateMessageTemplateRequest.
 
         :param body: The body of this UpdateMessageTemplateRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`

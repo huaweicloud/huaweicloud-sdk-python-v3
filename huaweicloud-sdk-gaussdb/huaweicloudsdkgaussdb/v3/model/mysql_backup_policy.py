@@ -31,7 +31,7 @@ class MysqlBackupPolicy:
     }
 
     def __init__(self, start_time=None, keep_days=None, period=None, retention_num_backup_level1=None):
-        """MysqlBackupPolicy
+        r"""MysqlBackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class MysqlBackupPolicy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MysqlBackupPolicy.
+        r"""Gets the start_time of this MysqlBackupPolicy.
 
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。  取值示例：21:00-22:00
 
@@ -72,7 +72,7 @@ class MysqlBackupPolicy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MysqlBackupPolicy.
+        r"""Sets the start_time of this MysqlBackupPolicy.
 
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。HH取值必须比hh大1。mm和MM取值必须相同，且取值必须为00。  取值示例：21:00-22:00
 
@@ -83,7 +83,7 @@ class MysqlBackupPolicy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this MysqlBackupPolicy.
+        r"""Gets the keep_days of this MysqlBackupPolicy.
 
         备份文件的保留天数。
 
@@ -94,7 +94,7 @@ class MysqlBackupPolicy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this MysqlBackupPolicy.
+        r"""Sets the keep_days of this MysqlBackupPolicy.
 
         备份文件的保留天数。
 
@@ -105,7 +105,7 @@ class MysqlBackupPolicy:
 
     @property
     def period(self):
-        """Gets the period of this MysqlBackupPolicy.
+        r"""Gets the period of this MysqlBackupPolicy.
 
         备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。  取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
 
@@ -116,7 +116,7 @@ class MysqlBackupPolicy:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this MysqlBackupPolicy.
+        r"""Sets the period of this MysqlBackupPolicy.
 
         备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。  取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
 
@@ -127,7 +127,7 @@ class MysqlBackupPolicy:
 
     @property
     def retention_num_backup_level1(self):
-        """Gets the retention_num_backup_level1 of this MysqlBackupPolicy.
+        r"""Gets the retention_num_backup_level1 of this MysqlBackupPolicy.
 
         一级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
 
@@ -138,7 +138,7 @@ class MysqlBackupPolicy:
 
     @retention_num_backup_level1.setter
     def retention_num_backup_level1(self, retention_num_backup_level1):
-        """Sets the retention_num_backup_level1 of this MysqlBackupPolicy.
+        r"""Sets the retention_num_backup_level1 of this MysqlBackupPolicy.
 
         一级备份保留数量，默认值为0。当一级备份开关开启时，该参数值有效。取值：0或1
 

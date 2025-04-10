@@ -31,7 +31,7 @@ class ApplicationCreate:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, labels=None):
-        """ApplicationCreate
+        r"""ApplicationCreate
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ApplicationCreate:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationCreate.
+        r"""Gets the name of this ApplicationCreate.
 
         :return: The name of this ApplicationCreate.
         :rtype: str
@@ -72,7 +72,7 @@ class ApplicationCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationCreate.
+        r"""Sets the name of this ApplicationCreate.
 
         :param name: The name of this ApplicationCreate.
         :type name: str
@@ -81,7 +81,7 @@ class ApplicationCreate:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationCreate.
+        r"""Gets the description of this ApplicationCreate.
 
         :return: The description of this ApplicationCreate.
         :rtype: str
@@ -90,7 +90,7 @@ class ApplicationCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationCreate.
+        r"""Sets the description of this ApplicationCreate.
 
         :param description: The description of this ApplicationCreate.
         :type description: str
@@ -99,7 +99,7 @@ class ApplicationCreate:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplicationCreate.
+        r"""Gets the enterprise_project_id of this ApplicationCreate.
 
         :return: The enterprise_project_id of this ApplicationCreate.
         :rtype: str
@@ -108,7 +108,7 @@ class ApplicationCreate:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplicationCreate.
+        r"""Sets the enterprise_project_id of this ApplicationCreate.
 
         :param enterprise_project_id: The enterprise_project_id of this ApplicationCreate.
         :type enterprise_project_id: str
@@ -117,7 +117,7 @@ class ApplicationCreate:
 
     @property
     def labels(self):
-        """Gets the labels of this ApplicationCreate.
+        r"""Gets the labels of this ApplicationCreate.
 
         :return: The labels of this ApplicationCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
@@ -126,7 +126,7 @@ class ApplicationCreate:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ApplicationCreate.
+        r"""Sets the labels of this ApplicationCreate.
 
         :param labels: The labels of this ApplicationCreate.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]

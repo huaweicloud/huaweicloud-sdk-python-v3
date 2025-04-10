@@ -31,7 +31,7 @@ class TaxInfo:
     }
 
     def __init__(self, tax_class=None, tax_rate=None, sub_tax_class=None, tax_amount=None):
-        """TaxInfo
+        r"""TaxInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaxInfo:
 
     @property
     def tax_class(self):
-        """Gets the tax_class of this TaxInfo.
+        r"""Gets the tax_class of this TaxInfo.
 
         税种。 VATISSWHTGST
 
@@ -75,7 +75,7 @@ class TaxInfo:
 
     @tax_class.setter
     def tax_class(self, tax_class):
-        """Sets the tax_class of this TaxInfo.
+        r"""Sets the tax_class of this TaxInfo.
 
         税种。 VATISSWHTGST
 
@@ -86,7 +86,7 @@ class TaxInfo:
 
     @property
     def tax_rate(self):
-        """Gets the tax_rate of this TaxInfo.
+        r"""Gets the tax_rate of this TaxInfo.
 
         税率。
 
@@ -97,7 +97,7 @@ class TaxInfo:
 
     @tax_rate.setter
     def tax_rate(self, tax_rate):
-        """Sets the tax_rate of this TaxInfo.
+        r"""Sets the tax_rate of this TaxInfo.
 
         税率。
 
@@ -108,7 +108,7 @@ class TaxInfo:
 
     @property
     def sub_tax_class(self):
-        """Gets the sub_tax_class of this TaxInfo.
+        r"""Gets the sub_tax_class of this TaxInfo.
 
         税种子类。 PISCOFINSCGSTSGSTIGSTISSWHTVAT
 
@@ -119,7 +119,7 @@ class TaxInfo:
 
     @sub_tax_class.setter
     def sub_tax_class(self, sub_tax_class):
-        """Sets the sub_tax_class of this TaxInfo.
+        r"""Sets the sub_tax_class of this TaxInfo.
 
         税种子类。 PISCOFINSCGSTSGSTIGSTISSWHTVAT
 
@@ -130,7 +130,7 @@ class TaxInfo:
 
     @property
     def tax_amount(self):
-        """Gets the tax_amount of this TaxInfo.
+        r"""Gets the tax_amount of this TaxInfo.
 
         税金金额。 单位：美元
 
@@ -141,7 +141,7 @@ class TaxInfo:
 
     @tax_amount.setter
     def tax_amount(self, tax_amount):
-        """Sets the tax_amount of this TaxInfo.
+        r"""Sets the tax_amount of this TaxInfo.
 
         税金金额。 单位：美元
 

@@ -23,7 +23,7 @@ class ListAvailabilityZoneInfosRequest:
     }
 
     def __init__(self):
-        """ListAvailabilityZoneInfosRequest
+        r"""ListAvailabilityZoneInfosRequest
 
         The model defined in huaweicloud sdk
 

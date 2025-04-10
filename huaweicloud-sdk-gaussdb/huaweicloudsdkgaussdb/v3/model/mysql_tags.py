@@ -27,7 +27,7 @@ class MysqlTags:
     }
 
     def __init__(self, key=None, value=None):
-        """MysqlTags
+        r"""MysqlTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MysqlTags:
 
     @property
     def key(self):
-        """Gets the key of this MysqlTags.
+        r"""Gets the key of this MysqlTags.
 
         标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -59,7 +59,7 @@ class MysqlTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MysqlTags.
+        r"""Sets the key of this MysqlTags.
 
         标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -70,7 +70,7 @@ class MysqlTags:
 
     @property
     def value(self):
-        """Gets the value of this MysqlTags.
+        r"""Gets the value of this MysqlTags.
 
         标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -81,7 +81,7 @@ class MysqlTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MysqlTags.
+        r"""Sets the value of this MysqlTags.
 
         标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 

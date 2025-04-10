@@ -29,7 +29,7 @@ class ListParamsTemplateApplyHistoryRequest:
     }
 
     def __init__(self, config_id=None, limit=None, offset=None):
-        """ListParamsTemplateApplyHistoryRequest
+        r"""ListParamsTemplateApplyHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListParamsTemplateApplyHistoryRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ListParamsTemplateApplyHistoryRequest.
+        r"""Gets the config_id of this ListParamsTemplateApplyHistoryRequest.
 
         参数组ID。
 
@@ -67,7 +67,7 @@ class ListParamsTemplateApplyHistoryRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ListParamsTemplateApplyHistoryRequest.
+        r"""Sets the config_id of this ListParamsTemplateApplyHistoryRequest.
 
         参数组ID。
 
@@ -78,7 +78,7 @@ class ListParamsTemplateApplyHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListParamsTemplateApplyHistoryRequest.
+        r"""Gets the limit of this ListParamsTemplateApplyHistoryRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -89,7 +89,7 @@ class ListParamsTemplateApplyHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListParamsTemplateApplyHistoryRequest.
+        r"""Sets the limit of this ListParamsTemplateApplyHistoryRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -100,7 +100,7 @@ class ListParamsTemplateApplyHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListParamsTemplateApplyHistoryRequest.
+        r"""Gets the offset of this ListParamsTemplateApplyHistoryRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -111,7 +111,7 @@ class ListParamsTemplateApplyHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListParamsTemplateApplyHistoryRequest.
+        r"""Sets the offset of this ListParamsTemplateApplyHistoryRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 

@@ -27,7 +27,7 @@ class UpdateConfigurationParameterRequest:
     }
 
     def __init__(self, config_id=None, body=None):
-        """UpdateConfigurationParameterRequest
+        r"""UpdateConfigurationParameterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConfigurationParameterRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this UpdateConfigurationParameterRequest.
+        r"""Gets the config_id of this UpdateConfigurationParameterRequest.
 
         参数模板ID。
 
@@ -60,7 +60,7 @@ class UpdateConfigurationParameterRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this UpdateConfigurationParameterRequest.
+        r"""Sets the config_id of this UpdateConfigurationParameterRequest.
 
         参数模板ID。
 
@@ -71,7 +71,7 @@ class UpdateConfigurationParameterRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigurationParameterRequest.
+        r"""Gets the body of this UpdateConfigurationParameterRequest.
 
         :return: The body of this UpdateConfigurationParameterRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterRequestBody`
@@ -80,7 +80,7 @@ class UpdateConfigurationParameterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigurationParameterRequest.
+        r"""Sets the body of this UpdateConfigurationParameterRequest.
 
         :param body: The body of this UpdateConfigurationParameterRequest.
         :type body: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterRequestBody`

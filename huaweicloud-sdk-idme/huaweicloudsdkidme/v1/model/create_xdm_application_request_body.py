@@ -51,7 +51,7 @@ class CreateXdmApplicationRequestBody:
     }
 
     def __init__(self, app_name_cn=None, app_name_en=None, app_desc=None, app_desc_en=None, operate_type=None, app_env=None, database_type=None, app_user_list=None, certified_data_source_name=None, certified_data_source_number=None, app_type=None, permission_control=None, integration_mode=None, metadata_synchronization=None):
-        """CreateXdmApplicationRequestBody
+        r"""CreateXdmApplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_name_cn(self):
-        """Gets the app_name_cn of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_name_cn of this CreateXdmApplicationRequestBody.
 
         应用的中文名称。
 
@@ -139,7 +139,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_name_cn.setter
     def app_name_cn(self, app_name_cn):
-        """Sets the app_name_cn of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_name_cn of this CreateXdmApplicationRequestBody.
 
         应用的中文名称。
 
@@ -150,7 +150,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_name_en(self):
-        """Gets the app_name_en of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_name_en of this CreateXdmApplicationRequestBody.
 
         应用的英文名称。
 
@@ -161,7 +161,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_name_en.setter
     def app_name_en(self, app_name_en):
-        """Sets the app_name_en of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_name_en of this CreateXdmApplicationRequestBody.
 
         应用的英文名称。
 
@@ -172,7 +172,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_desc(self):
-        """Gets the app_desc of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_desc of this CreateXdmApplicationRequestBody.
 
         应用的中文描述。
 
@@ -183,7 +183,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_desc.setter
     def app_desc(self, app_desc):
-        """Sets the app_desc of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_desc of this CreateXdmApplicationRequestBody.
 
         应用的中文描述。
 
@@ -194,7 +194,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_desc_en(self):
-        """Gets the app_desc_en of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_desc_en of this CreateXdmApplicationRequestBody.
 
         应用的英文描述。
 
@@ -205,7 +205,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_desc_en.setter
     def app_desc_en(self, app_desc_en):
-        """Sets the app_desc_en of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_desc_en of this CreateXdmApplicationRequestBody.
 
         应用的英文描述。
 
@@ -216,7 +216,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this CreateXdmApplicationRequestBody.
+        r"""Gets the operate_type of this CreateXdmApplicationRequestBody.
 
         操作类型。
 
@@ -227,7 +227,7 @@ class CreateXdmApplicationRequestBody:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this CreateXdmApplicationRequestBody.
+        r"""Sets the operate_type of this CreateXdmApplicationRequestBody.
 
         操作类型。
 
@@ -238,7 +238,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_env(self):
-        """Gets the app_env of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_env of this CreateXdmApplicationRequestBody.
 
         环境标识。 - dev：用于开发环境。 - sit：用于功能测试环境。 - uat：用于用户测试环境。 - train：用于培训环境。 - beta：用于灰度部署环境。 - production：用于生产环境。
 
@@ -249,7 +249,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_env.setter
     def app_env(self, app_env):
-        """Sets the app_env of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_env of this CreateXdmApplicationRequestBody.
 
         环境标识。 - dev：用于开发环境。 - sit：用于功能测试环境。 - uat：用于用户测试环境。 - train：用于培训环境。 - beta：用于灰度部署环境。 - production：用于生产环境。
 
@@ -260,7 +260,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def database_type(self):
-        """Gets the database_type of this CreateXdmApplicationRequestBody.
+        r"""Gets the database_type of this CreateXdmApplicationRequestBody.
 
         数据库类型，支持MySQL和PostgreSQL。
 
@@ -271,7 +271,7 @@ class CreateXdmApplicationRequestBody:
 
     @database_type.setter
     def database_type(self, database_type):
-        """Sets the database_type of this CreateXdmApplicationRequestBody.
+        r"""Sets the database_type of this CreateXdmApplicationRequestBody.
 
         数据库类型，支持MySQL和PostgreSQL。
 
@@ -282,7 +282,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_user_list(self):
-        """Gets the app_user_list of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_user_list of this CreateXdmApplicationRequestBody.
 
         应用责任人。
 
@@ -293,7 +293,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_user_list.setter
     def app_user_list(self, app_user_list):
-        """Sets the app_user_list of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_user_list of this CreateXdmApplicationRequestBody.
 
         应用责任人。
 
@@ -304,7 +304,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def certified_data_source_name(self):
-        """Gets the certified_data_source_name of this CreateXdmApplicationRequestBody.
+        r"""Gets the certified_data_source_name of this CreateXdmApplicationRequestBody.
 
         认证数据源中文名称。
 
@@ -315,7 +315,7 @@ class CreateXdmApplicationRequestBody:
 
     @certified_data_source_name.setter
     def certified_data_source_name(self, certified_data_source_name):
-        """Sets the certified_data_source_name of this CreateXdmApplicationRequestBody.
+        r"""Sets the certified_data_source_name of this CreateXdmApplicationRequestBody.
 
         认证数据源中文名称。
 
@@ -326,7 +326,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def certified_data_source_number(self):
-        """Gets the certified_data_source_number of this CreateXdmApplicationRequestBody.
+        r"""Gets the certified_data_source_number of this CreateXdmApplicationRequestBody.
 
         认证数据源编码。
 
@@ -337,7 +337,7 @@ class CreateXdmApplicationRequestBody:
 
     @certified_data_source_number.setter
     def certified_data_source_number(self, certified_data_source_number):
-        """Sets the certified_data_source_number of this CreateXdmApplicationRequestBody.
+        r"""Sets the certified_data_source_number of this CreateXdmApplicationRequestBody.
 
         认证数据源编码。
 
@@ -348,7 +348,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateXdmApplicationRequestBody.
+        r"""Gets the app_type of this CreateXdmApplicationRequestBody.
 
         App类型。 - default：基础版（体验版） - lite：轻量版
 
@@ -359,7 +359,7 @@ class CreateXdmApplicationRequestBody:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateXdmApplicationRequestBody.
+        r"""Sets the app_type of this CreateXdmApplicationRequestBody.
 
         App类型。 - default：基础版（体验版） - lite：轻量版
 
@@ -370,7 +370,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def permission_control(self):
-        """Gets the permission_control of this CreateXdmApplicationRequestBody.
+        r"""Gets the permission_control of this CreateXdmApplicationRequestBody.
 
         App权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
 
@@ -381,7 +381,7 @@ class CreateXdmApplicationRequestBody:
 
     @permission_control.setter
     def permission_control(self, permission_control):
-        """Sets the permission_control of this CreateXdmApplicationRequestBody.
+        r"""Sets the permission_control of this CreateXdmApplicationRequestBody.
 
         App权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
 
@@ -392,7 +392,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def integration_mode(self):
-        """Gets the integration_mode of this CreateXdmApplicationRequestBody.
+        r"""Gets the integration_mode of this CreateXdmApplicationRequestBody.
 
         集成模式。 - API - SDK
 
@@ -403,7 +403,7 @@ class CreateXdmApplicationRequestBody:
 
     @integration_mode.setter
     def integration_mode(self, integration_mode):
-        """Sets the integration_mode of this CreateXdmApplicationRequestBody.
+        r"""Sets the integration_mode of this CreateXdmApplicationRequestBody.
 
         集成模式。 - API - SDK
 
@@ -414,7 +414,7 @@ class CreateXdmApplicationRequestBody:
 
     @property
     def metadata_synchronization(self):
-        """Gets the metadata_synchronization of this CreateXdmApplicationRequestBody.
+        r"""Gets the metadata_synchronization of this CreateXdmApplicationRequestBody.
 
         元模型同步。
 
@@ -425,7 +425,7 @@ class CreateXdmApplicationRequestBody:
 
     @metadata_synchronization.setter
     def metadata_synchronization(self, metadata_synchronization):
-        """Sets the metadata_synchronization of this CreateXdmApplicationRequestBody.
+        r"""Sets the metadata_synchronization of this CreateXdmApplicationRequestBody.
 
         元模型同步。
 

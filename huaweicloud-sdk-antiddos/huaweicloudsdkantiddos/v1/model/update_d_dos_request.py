@@ -29,7 +29,7 @@ class UpdateDDosRequest:
     }
 
     def __init__(self, floating_ip_id=None, ip=None, body=None):
-        """UpdateDDosRequest
+        r"""UpdateDDosRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDDosRequest:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this UpdateDDosRequest.
+        r"""Gets the floating_ip_id of this UpdateDDosRequest.
 
         用户EIP对应的ID
 
@@ -67,7 +67,7 @@ class UpdateDDosRequest:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this UpdateDDosRequest.
+        r"""Sets the floating_ip_id of this UpdateDDosRequest.
 
         用户EIP对应的ID
 
@@ -78,7 +78,7 @@ class UpdateDDosRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateDDosRequest.
+        r"""Gets the ip of this UpdateDDosRequest.
 
         ip
 
@@ -89,7 +89,7 @@ class UpdateDDosRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateDDosRequest.
+        r"""Sets the ip of this UpdateDDosRequest.
 
         ip
 
@@ -100,7 +100,7 @@ class UpdateDDosRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDDosRequest.
+        r"""Gets the body of this UpdateDDosRequest.
 
         :return: The body of this UpdateDDosRequest.
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`
@@ -109,7 +109,7 @@ class UpdateDDosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDDosRequest.
+        r"""Sets the body of this UpdateDDosRequest.
 
         :param body: The body of this UpdateDDosRequest.
         :type body: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`

@@ -29,7 +29,7 @@ class OsVersionResponse:
     }
 
     def __init__(self, status=None, id=None, links=None):
-        """OsVersionResponse
+        r"""OsVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class OsVersionResponse:
 
     @property
     def status(self):
-        """Gets the status of this OsVersionResponse.
+        r"""Gets the status of this OsVersionResponse.
 
         接口状态。
 
@@ -67,7 +67,7 @@ class OsVersionResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OsVersionResponse.
+        r"""Sets the status of this OsVersionResponse.
 
         接口状态。
 
@@ -78,7 +78,7 @@ class OsVersionResponse:
 
     @property
     def id(self):
-        """Gets the id of this OsVersionResponse.
+        r"""Gets the id of this OsVersionResponse.
 
         接口ID。
 
@@ -89,7 +89,7 @@ class OsVersionResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OsVersionResponse.
+        r"""Sets the id of this OsVersionResponse.
 
         接口ID。
 
@@ -100,7 +100,7 @@ class OsVersionResponse:
 
     @property
     def links(self):
-        """Gets the links of this OsVersionResponse.
+        r"""Gets the links of this OsVersionResponse.
 
         自描述信息。
 
@@ -111,7 +111,7 @@ class OsVersionResponse:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this OsVersionResponse.
+        r"""Sets the links of this OsVersionResponse.
 
         自描述信息。
 

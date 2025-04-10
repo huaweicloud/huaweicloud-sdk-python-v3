@@ -45,7 +45,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
     }
 
     def __init__(self, id=None, name=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, addr=None, white=None, followed_action_id=None, ip_group=None):
-        """ShowHttpBlockTrustIpRuleResponseBody
+        r"""ShowHttpBlockTrustIpRuleResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the id of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则id
 
@@ -124,7 +124,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the id of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则id
 
@@ -135,7 +135,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the name of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则名称
 
@@ -146,7 +146,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the name of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则名称
 
@@ -157,7 +157,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the policy_id of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则所在策略id
 
@@ -168,7 +168,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the policy_id of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则所在策略id
 
@@ -179,7 +179,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the policy_name of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则所在策略名称
 
@@ -190,7 +190,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the policy_name of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则所在策略名称
 
@@ -201,7 +201,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the timestamp of this ShowHttpBlockTrustIpRuleResponseBody.
 
         创建规则时间戳
 
@@ -212,7 +212,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the timestamp of this ShowHttpBlockTrustIpRuleResponseBody.
 
         创建规则时间戳
 
@@ -223,7 +223,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the description of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则描述
 
@@ -234,7 +234,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the description of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则描述
 
@@ -245,7 +245,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the status of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则开关： - 0：关闭 - 1：开启 
 
@@ -256,7 +256,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the status of this ShowHttpBlockTrustIpRuleResponseBody.
 
         规则开关： - 0：关闭 - 1：开启 
 
@@ -267,7 +267,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def addr(self):
-        """Gets the addr of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the addr of this ShowHttpBlockTrustIpRuleResponseBody.
 
         ip地址/地址段
 
@@ -278,7 +278,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the addr of this ShowHttpBlockTrustIpRuleResponseBody.
 
         ip地址/地址段
 
@@ -289,7 +289,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def white(self):
-        """Gets the white of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the white of this ShowHttpBlockTrustIpRuleResponseBody.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -300,7 +300,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the white of this ShowHttpBlockTrustIpRuleResponseBody.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -311,7 +311,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the followed_action_id of this ShowHttpBlockTrustIpRuleResponseBody.
 
         攻击惩罚规则id
 
@@ -322,7 +322,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the followed_action_id of this ShowHttpBlockTrustIpRuleResponseBody.
 
         攻击惩罚规则id
 
@@ -333,7 +333,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Gets the ip_group of this ShowHttpBlockTrustIpRuleResponseBody.
 
         :return: The ip_group of this ShowHttpBlockTrustIpRuleResponseBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpIpGroup`
@@ -342,7 +342,7 @@ class ShowHttpBlockTrustIpRuleResponseBody:
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this ShowHttpBlockTrustIpRuleResponseBody.
+        r"""Sets the ip_group of this ShowHttpBlockTrustIpRuleResponseBody.
 
         :param ip_group: The ip_group of this ShowHttpBlockTrustIpRuleResponseBody.
         :type ip_group: :class:`huaweicloudsdkedgesec.v2.HttpIpGroup`

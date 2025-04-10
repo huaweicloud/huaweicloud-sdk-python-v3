@@ -23,7 +23,7 @@ class ShowFreeDeclarationRequest:
     }
 
     def __init__(self):
-        """ShowFreeDeclarationRequest
+        r"""ShowFreeDeclarationRequest
 
         The model defined in huaweicloud sdk
 

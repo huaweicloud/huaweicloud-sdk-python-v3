@@ -35,7 +35,7 @@ class FirewallInstanceResource:
     }
 
     def __init__(self, resource_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, resource_size=None, resource_size_measure_id=None):
-        """FirewallInstanceResource
+        r"""FirewallInstanceResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FirewallInstanceResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FirewallInstanceResource.
+        r"""Gets the resource_id of this FirewallInstanceResource.
 
         资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
 
@@ -89,7 +89,7 @@ class FirewallInstanceResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FirewallInstanceResource.
+        r"""Sets the resource_id of this FirewallInstanceResource.
 
         资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
 
@@ -100,7 +100,7 @@ class FirewallInstanceResource:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this FirewallInstanceResource.
+        r"""Gets the cloud_service_type of this FirewallInstanceResource.
 
         服务类型，用于CBC使用，特指：hws.service.type.cfw
 
@@ -111,7 +111,7 @@ class FirewallInstanceResource:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this FirewallInstanceResource.
+        r"""Sets the cloud_service_type of this FirewallInstanceResource.
 
         服务类型，用于CBC使用，特指：hws.service.type.cfw
 
@@ -122,7 +122,7 @@ class FirewallInstanceResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FirewallInstanceResource.
+        r"""Gets the resource_type of this FirewallInstanceResource.
 
         资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
 
@@ -133,7 +133,7 @@ class FirewallInstanceResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FirewallInstanceResource.
+        r"""Sets the resource_type of this FirewallInstanceResource.
 
         资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
 
@@ -144,7 +144,7 @@ class FirewallInstanceResource:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this FirewallInstanceResource.
+        r"""Gets the resource_spec_code of this FirewallInstanceResource.
 
         库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
 
@@ -155,7 +155,7 @@ class FirewallInstanceResource:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this FirewallInstanceResource.
+        r"""Sets the resource_spec_code of this FirewallInstanceResource.
 
         库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
 
@@ -166,7 +166,7 @@ class FirewallInstanceResource:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this FirewallInstanceResource.
+        r"""Gets the resource_size of this FirewallInstanceResource.
 
         资源数量
 
@@ -177,7 +177,7 @@ class FirewallInstanceResource:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this FirewallInstanceResource.
+        r"""Sets the resource_size of this FirewallInstanceResource.
 
         资源数量
 
@@ -188,7 +188,7 @@ class FirewallInstanceResource:
 
     @property
     def resource_size_measure_id(self):
-        """Gets the resource_size_measure_id of this FirewallInstanceResource.
+        r"""Gets the resource_size_measure_id of this FirewallInstanceResource.
 
         资源单位
 
@@ -199,7 +199,7 @@ class FirewallInstanceResource:
 
     @resource_size_measure_id.setter
     def resource_size_measure_id(self, resource_size_measure_id):
-        """Sets the resource_size_measure_id of this FirewallInstanceResource.
+        r"""Sets the resource_size_measure_id of this FirewallInstanceResource.
 
         资源单位
 

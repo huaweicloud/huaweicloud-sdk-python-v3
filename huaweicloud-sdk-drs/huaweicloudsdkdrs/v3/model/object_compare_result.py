@@ -33,7 +33,7 @@ class ObjectCompareResult:
     }
 
     def __init__(self, compare_task_id=None, object_compare_overview=None, object_compare_details=None, error_code=None, error_msg=None):
-        """ObjectCompareResult
+        r"""ObjectCompareResult
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ObjectCompareResult:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this ObjectCompareResult.
+        r"""Gets the compare_task_id of this ObjectCompareResult.
 
         对象级对比任务的id。
 
@@ -81,7 +81,7 @@ class ObjectCompareResult:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this ObjectCompareResult.
+        r"""Sets the compare_task_id of this ObjectCompareResult.
 
         对象级对比任务的id。
 
@@ -92,7 +92,7 @@ class ObjectCompareResult:
 
     @property
     def object_compare_overview(self):
-        """Gets the object_compare_overview of this ObjectCompareResult.
+        r"""Gets the object_compare_overview of this ObjectCompareResult.
 
         对象对比结果概览。
 
@@ -103,7 +103,7 @@ class ObjectCompareResult:
 
     @object_compare_overview.setter
     def object_compare_overview(self, object_compare_overview):
-        """Sets the object_compare_overview of this ObjectCompareResult.
+        r"""Sets the object_compare_overview of this ObjectCompareResult.
 
         对象对比结果概览。
 
@@ -114,7 +114,7 @@ class ObjectCompareResult:
 
     @property
     def object_compare_details(self):
-        """Gets the object_compare_details of this ObjectCompareResult.
+        r"""Gets the object_compare_details of this ObjectCompareResult.
 
         对象对比结果详情。KEY值为对象对比结果概览中的对象类型。
 
@@ -125,7 +125,7 @@ class ObjectCompareResult:
 
     @object_compare_details.setter
     def object_compare_details(self, object_compare_details):
-        """Sets the object_compare_details of this ObjectCompareResult.
+        r"""Sets the object_compare_details of this ObjectCompareResult.
 
         对象对比结果详情。KEY值为对象对比结果概览中的对象类型。
 
@@ -136,7 +136,7 @@ class ObjectCompareResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ObjectCompareResult.
+        r"""Gets the error_code of this ObjectCompareResult.
 
         错误码。
 
@@ -147,7 +147,7 @@ class ObjectCompareResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ObjectCompareResult.
+        r"""Sets the error_code of this ObjectCompareResult.
 
         错误码。
 
@@ -158,7 +158,7 @@ class ObjectCompareResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ObjectCompareResult.
+        r"""Gets the error_msg of this ObjectCompareResult.
 
         错误信息。
 
@@ -169,7 +169,7 @@ class ObjectCompareResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ObjectCompareResult.
+        r"""Sets the error_msg of this ObjectCompareResult.
 
         错误信息。
 

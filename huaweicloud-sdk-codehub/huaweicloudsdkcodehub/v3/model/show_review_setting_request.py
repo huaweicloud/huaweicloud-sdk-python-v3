@@ -25,7 +25,7 @@ class ShowReviewSettingRequest:
     }
 
     def __init__(self, repository_id=None):
-        """ShowReviewSettingRequest
+        r"""ShowReviewSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowReviewSettingRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowReviewSettingRequest.
+        r"""Gets the repository_id of this ShowReviewSettingRequest.
 
         仓库短id
 
@@ -53,7 +53,7 @@ class ShowReviewSettingRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowReviewSettingRequest.
+        r"""Sets the repository_id of this ShowReviewSettingRequest.
 
         仓库短id
 

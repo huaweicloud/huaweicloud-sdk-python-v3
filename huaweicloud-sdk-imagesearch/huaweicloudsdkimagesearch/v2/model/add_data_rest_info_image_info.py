@@ -25,7 +25,7 @@ class AddDataRestInfoImageInfo:
     }
 
     def __init__(self, objects=None):
-        """AddDataRestInfoImageInfo
+        r"""AddDataRestInfoImageInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddDataRestInfoImageInfo:
 
     @property
     def objects(self):
-        """Gets the objects of this AddDataRestInfoImageInfo.
+        r"""Gets the objects of this AddDataRestInfoImageInfo.
 
         添加的主体列表。
 
@@ -54,7 +54,7 @@ class AddDataRestInfoImageInfo:
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this AddDataRestInfoImageInfo.
+        r"""Sets the objects of this AddDataRestInfoImageInfo.
 
         添加的主体列表。
 

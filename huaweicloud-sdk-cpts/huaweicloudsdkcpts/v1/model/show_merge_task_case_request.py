@@ -25,7 +25,7 @@ class ShowMergeTaskCaseRequest:
     }
 
     def __init__(self, task_run_id=None):
-        """ShowMergeTaskCaseRequest
+        r"""ShowMergeTaskCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMergeTaskCaseRequest:
 
     @property
     def task_run_id(self):
-        """Gets the task_run_id of this ShowMergeTaskCaseRequest.
+        r"""Gets the task_run_id of this ShowMergeTaskCaseRequest.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -53,7 +53,7 @@ class ShowMergeTaskCaseRequest:
 
     @task_run_id.setter
     def task_run_id(self, task_run_id):
-        """Sets the task_run_id of this ShowMergeTaskCaseRequest.
+        r"""Sets the task_run_id of this ShowMergeTaskCaseRequest.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 

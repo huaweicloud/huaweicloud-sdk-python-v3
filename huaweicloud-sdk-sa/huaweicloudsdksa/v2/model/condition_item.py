@@ -29,7 +29,7 @@ class ConditionItem:
     }
 
     def __init__(self, name=None, detail=None, data=None):
-        """ConditionItem
+        r"""ConditionItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConditionItem:
 
     @property
     def name(self):
-        """Gets the name of this ConditionItem.
+        r"""Gets the name of this ConditionItem.
 
         Name of the condition.
 
@@ -68,7 +68,7 @@ class ConditionItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConditionItem.
+        r"""Sets the name of this ConditionItem.
 
         Name of the condition.
 
@@ -79,7 +79,7 @@ class ConditionItem:
 
     @property
     def detail(self):
-        """Gets the detail of this ConditionItem.
+        r"""Gets the detail of this ConditionItem.
 
         Detail of the condition.
 
@@ -90,7 +90,7 @@ class ConditionItem:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ConditionItem.
+        r"""Sets the detail of this ConditionItem.
 
         Detail of the condition.
 
@@ -101,7 +101,7 @@ class ConditionItem:
 
     @property
     def data(self):
-        """Gets the data of this ConditionItem.
+        r"""Gets the data of this ConditionItem.
 
         Detail of the condition.
 
@@ -112,7 +112,7 @@ class ConditionItem:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ConditionItem.
+        r"""Sets the data of this ConditionItem.
 
         Detail of the condition.
 

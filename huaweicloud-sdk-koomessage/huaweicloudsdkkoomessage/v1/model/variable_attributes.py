@@ -29,7 +29,7 @@ class VariableAttributes:
     }
 
     def __init__(self, variable_index=None, variable_type=None, variable_desc=None):
-        """VariableAttributes
+        r"""VariableAttributes
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class VariableAttributes:
 
     @property
     def variable_index(self):
-        """Gets the variable_index of this VariableAttributes.
+        r"""Gets the variable_index of this VariableAttributes.
 
         参数索引。
 
@@ -66,7 +66,7 @@ class VariableAttributes:
 
     @variable_index.setter
     def variable_index(self, variable_index):
-        """Sets the variable_index of this VariableAttributes.
+        r"""Sets the variable_index of this VariableAttributes.
 
         参数索引。
 
@@ -77,7 +77,7 @@ class VariableAttributes:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this VariableAttributes.
+        r"""Gets the variable_type of this VariableAttributes.
 
         参数类型。PHONE：电话号码，NEWTEXT：解析标识，CHARDIGIT：其他号码(如验证码、订单号、密码等)，DATETIME：日期时间，MONEY：金额，TEXT：其他。
 
@@ -88,7 +88,7 @@ class VariableAttributes:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this VariableAttributes.
+        r"""Sets the variable_type of this VariableAttributes.
 
         参数类型。PHONE：电话号码，NEWTEXT：解析标识，CHARDIGIT：其他号码(如验证码、订单号、密码等)，DATETIME：日期时间，MONEY：金额，TEXT：其他。
 
@@ -99,7 +99,7 @@ class VariableAttributes:
 
     @property
     def variable_desc(self):
-        """Gets the variable_desc of this VariableAttributes.
+        r"""Gets the variable_desc of this VariableAttributes.
 
         参数描述。变量类型为TEXT（其他）时必填。
 
@@ -110,7 +110,7 @@ class VariableAttributes:
 
     @variable_desc.setter
     def variable_desc(self, variable_desc):
-        """Sets the variable_desc of this VariableAttributes.
+        r"""Sets the variable_desc of this VariableAttributes.
 
         参数描述。变量类型为TEXT（其他）时必填。
 

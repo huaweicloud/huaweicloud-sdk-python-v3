@@ -39,7 +39,7 @@ class ShowAllInstancesBackupsRequest:
     }
 
     def __init__(self, offset=None, limit=None, datastore_type=None, instance_id=None, backup_id=None, backup_type=None, begin_time=None, end_time=None):
-        """ShowAllInstancesBackupsRequest
+        r"""ShowAllInstancesBackupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAllInstancesBackupsRequest.
+        r"""Gets the offset of this ShowAllInstancesBackupsRequest.
 
         分页页码。
 
@@ -101,7 +101,7 @@ class ShowAllInstancesBackupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAllInstancesBackupsRequest.
+        r"""Sets the offset of this ShowAllInstancesBackupsRequest.
 
         分页页码。
 
@@ -112,7 +112,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAllInstancesBackupsRequest.
+        r"""Gets the limit of this ShowAllInstancesBackupsRequest.
 
         每页条数。
 
@@ -123,7 +123,7 @@ class ShowAllInstancesBackupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAllInstancesBackupsRequest.
+        r"""Sets the limit of this ShowAllInstancesBackupsRequest.
 
         每页条数。
 
@@ -134,7 +134,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ShowAllInstancesBackupsRequest.
+        r"""Gets the datastore_type of this ShowAllInstancesBackupsRequest.
 
         引擎类型 不传该参数则查询所有的引擎。
 
@@ -145,7 +145,7 @@ class ShowAllInstancesBackupsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ShowAllInstancesBackupsRequest.
+        r"""Sets the datastore_type of this ShowAllInstancesBackupsRequest.
 
         引擎类型 不传该参数则查询所有的引擎。
 
@@ -156,7 +156,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAllInstancesBackupsRequest.
+        r"""Gets the instance_id of this ShowAllInstancesBackupsRequest.
 
         实例ID 不传该参数则查询所有备份列表。
 
@@ -167,7 +167,7 @@ class ShowAllInstancesBackupsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAllInstancesBackupsRequest.
+        r"""Sets the instance_id of this ShowAllInstancesBackupsRequest.
 
         实例ID 不传该参数则查询所有备份列表。
 
@@ -178,7 +178,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowAllInstancesBackupsRequest.
+        r"""Gets the backup_id of this ShowAllInstancesBackupsRequest.
 
         备份ID。
 
@@ -189,7 +189,7 @@ class ShowAllInstancesBackupsRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowAllInstancesBackupsRequest.
+        r"""Sets the backup_id of this ShowAllInstancesBackupsRequest.
 
         备份ID。
 
@@ -200,7 +200,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this ShowAllInstancesBackupsRequest.
+        r"""Gets the backup_type of this ShowAllInstancesBackupsRequest.
 
         备份类型。
 
@@ -211,7 +211,7 @@ class ShowAllInstancesBackupsRequest:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this ShowAllInstancesBackupsRequest.
+        r"""Sets the backup_type of this ShowAllInstancesBackupsRequest.
 
         备份类型。
 
@@ -222,7 +222,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowAllInstancesBackupsRequest.
+        r"""Gets the begin_time of this ShowAllInstancesBackupsRequest.
 
         查询备份开始的时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -233,7 +233,7 @@ class ShowAllInstancesBackupsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowAllInstancesBackupsRequest.
+        r"""Sets the begin_time of this ShowAllInstancesBackupsRequest.
 
         查询备份开始的时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -244,7 +244,7 @@ class ShowAllInstancesBackupsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowAllInstancesBackupsRequest.
+        r"""Gets the end_time of this ShowAllInstancesBackupsRequest.
 
         查询备份开始的结束时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -255,7 +255,7 @@ class ShowAllInstancesBackupsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowAllInstancesBackupsRequest.
+        r"""Sets the end_time of this ShowAllInstancesBackupsRequest.
 
         查询备份开始的结束时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 

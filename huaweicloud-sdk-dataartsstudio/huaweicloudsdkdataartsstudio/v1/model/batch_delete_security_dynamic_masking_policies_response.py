@@ -24,7 +24,7 @@ class BatchDeleteSecurityDynamicMaskingPoliciesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteSecurityDynamicMaskingPoliciesResponse
+        r"""BatchDeleteSecurityDynamicMaskingPoliciesResponse
 
         The model defined in huaweicloud sdk
 

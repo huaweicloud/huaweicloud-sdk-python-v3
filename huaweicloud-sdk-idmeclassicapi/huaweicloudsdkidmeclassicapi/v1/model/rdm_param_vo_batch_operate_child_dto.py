@@ -27,7 +27,7 @@ class RDMParamVOBatchOperateChildDTO:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOBatchOperateChildDTO
+        r"""RDMParamVOBatchOperateChildDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOBatchOperateChildDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOBatchOperateChildDTO.
+        r"""Gets the application_id of this RDMParamVOBatchOperateChildDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -61,7 +61,7 @@ class RDMParamVOBatchOperateChildDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOBatchOperateChildDTO.
+        r"""Sets the application_id of this RDMParamVOBatchOperateChildDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -72,7 +72,7 @@ class RDMParamVOBatchOperateChildDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOBatchOperateChildDTO.
+        r"""Gets the params of this RDMParamVOBatchOperateChildDTO.
 
         :return: The params of this RDMParamVOBatchOperateChildDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchOperateChildDTO`
@@ -81,7 +81,7 @@ class RDMParamVOBatchOperateChildDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOBatchOperateChildDTO.
+        r"""Sets the params of this RDMParamVOBatchOperateChildDTO.
 
         :param params: The params of this RDMParamVOBatchOperateChildDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.BatchOperateChildDTO`

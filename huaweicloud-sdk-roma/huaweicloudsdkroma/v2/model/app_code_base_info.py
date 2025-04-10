@@ -31,7 +31,7 @@ class AppCodeBaseInfo:
     }
 
     def __init__(self, app_code=None, id=None, app_id=None, create_time=None):
-        """AppCodeBaseInfo
+        r"""AppCodeBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AppCodeBaseInfo:
 
     @property
     def app_code(self):
-        """Gets the app_code of this AppCodeBaseInfo.
+        r"""Gets the app_code of this AppCodeBaseInfo.
 
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 
@@ -74,7 +74,7 @@ class AppCodeBaseInfo:
 
     @app_code.setter
     def app_code(self, app_code):
-        """Sets the app_code of this AppCodeBaseInfo.
+        r"""Sets the app_code of this AppCodeBaseInfo.
 
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 
@@ -85,7 +85,7 @@ class AppCodeBaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppCodeBaseInfo.
+        r"""Gets the id of this AppCodeBaseInfo.
 
         编号
 
@@ -96,7 +96,7 @@ class AppCodeBaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppCodeBaseInfo.
+        r"""Sets the id of this AppCodeBaseInfo.
 
         编号
 
@@ -107,7 +107,7 @@ class AppCodeBaseInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppCodeBaseInfo.
+        r"""Gets the app_id of this AppCodeBaseInfo.
 
         应用编号
 
@@ -118,7 +118,7 @@ class AppCodeBaseInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppCodeBaseInfo.
+        r"""Sets the app_id of this AppCodeBaseInfo.
 
         应用编号
 
@@ -129,7 +129,7 @@ class AppCodeBaseInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppCodeBaseInfo.
+        r"""Gets the create_time of this AppCodeBaseInfo.
 
         创建时间
 
@@ -140,7 +140,7 @@ class AppCodeBaseInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppCodeBaseInfo.
+        r"""Sets the create_time of this AppCodeBaseInfo.
 
         创建时间
 

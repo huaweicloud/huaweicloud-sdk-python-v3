@@ -30,7 +30,7 @@ class StartChatResponse(SdkResponse):
     }
 
     def __init__(self, status=None, chat_id=None, error_message=None):
-        """StartChatResponse
+        r"""StartChatResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class StartChatResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this StartChatResponse.
+        r"""Gets the status of this StartChatResponse.
 
         status
 
@@ -69,7 +69,7 @@ class StartChatResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StartChatResponse.
+        r"""Sets the status of this StartChatResponse.
 
         status
 
@@ -80,7 +80,7 @@ class StartChatResponse(SdkResponse):
 
     @property
     def chat_id(self):
-        """Gets the chat_id of this StartChatResponse.
+        r"""Gets the chat_id of this StartChatResponse.
 
         chat id
 
@@ -91,7 +91,7 @@ class StartChatResponse(SdkResponse):
 
     @chat_id.setter
     def chat_id(self, chat_id):
-        """Sets the chat_id of this StartChatResponse.
+        r"""Sets the chat_id of this StartChatResponse.
 
         chat id
 
@@ -102,7 +102,7 @@ class StartChatResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this StartChatResponse.
+        r"""Gets the error_message of this StartChatResponse.
 
         error message
 
@@ -113,7 +113,7 @@ class StartChatResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this StartChatResponse.
+        r"""Sets the error_message of this StartChatResponse.
 
         error message
 

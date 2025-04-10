@@ -27,7 +27,7 @@ class UpdatePasswordlessConfigRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdatePasswordlessConfigRequest
+        r"""UpdatePasswordlessConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePasswordlessConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePasswordlessConfigRequest.
+        r"""Gets the instance_id of this UpdatePasswordlessConfigRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdatePasswordlessConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePasswordlessConfigRequest.
+        r"""Sets the instance_id of this UpdatePasswordlessConfigRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdatePasswordlessConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePasswordlessConfigRequest.
+        r"""Gets the body of this UpdatePasswordlessConfigRequest.
 
         :return: The body of this UpdatePasswordlessConfigRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdatePasswordlessConfigRequestBody`
@@ -80,7 +80,7 @@ class UpdatePasswordlessConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePasswordlessConfigRequest.
+        r"""Sets the body of this UpdatePasswordlessConfigRequest.
 
         :param body: The body of this UpdatePasswordlessConfigRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdatePasswordlessConfigRequestBody`

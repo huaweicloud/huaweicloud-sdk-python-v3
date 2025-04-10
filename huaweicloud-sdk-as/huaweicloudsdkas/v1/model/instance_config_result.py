@@ -59,7 +59,7 @@ class InstanceConfigResult:
     }
 
     def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, key_fingerprint=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, market_type=None, multi_flavor_priority_policy=None):
-        """InstanceConfigResult
+        r"""InstanceConfigResult
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class InstanceConfigResult:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this InstanceConfigResult.
+        r"""Gets the flavor_ref of this InstanceConfigResult.
 
         云服务器的规格ID。
 
@@ -173,7 +173,7 @@ class InstanceConfigResult:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this InstanceConfigResult.
+        r"""Sets the flavor_ref of this InstanceConfigResult.
 
         云服务器的规格ID。
 
@@ -184,7 +184,7 @@ class InstanceConfigResult:
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this InstanceConfigResult.
+        r"""Gets the image_ref of this InstanceConfigResult.
 
         镜像ID，同image_id。
 
@@ -195,7 +195,7 @@ class InstanceConfigResult:
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this InstanceConfigResult.
+        r"""Sets the image_ref of this InstanceConfigResult.
 
         镜像ID，同image_id。
 
@@ -206,7 +206,7 @@ class InstanceConfigResult:
 
     @property
     def disk(self):
-        """Gets the disk of this InstanceConfigResult.
+        r"""Gets the disk of this InstanceConfigResult.
 
         磁盘组信息。
 
@@ -217,7 +217,7 @@ class InstanceConfigResult:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this InstanceConfigResult.
+        r"""Sets the disk of this InstanceConfigResult.
 
         磁盘组信息。
 
@@ -228,7 +228,7 @@ class InstanceConfigResult:
 
     @property
     def key_name(self):
-        """Gets the key_name of this InstanceConfigResult.
+        r"""Gets the key_name of this InstanceConfigResult.
 
         登录云服务器的SSH密钥名称。
 
@@ -239,7 +239,7 @@ class InstanceConfigResult:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this InstanceConfigResult.
+        r"""Sets the key_name of this InstanceConfigResult.
 
         登录云服务器的SSH密钥名称。
 
@@ -250,7 +250,7 @@ class InstanceConfigResult:
 
     @property
     def key_fingerprint(self):
-        """Gets the key_fingerprint of this InstanceConfigResult.
+        r"""Gets the key_fingerprint of this InstanceConfigResult.
 
         登录云服务器的SSH密钥指纹。
 
@@ -261,7 +261,7 @@ class InstanceConfigResult:
 
     @key_fingerprint.setter
     def key_fingerprint(self, key_fingerprint):
-        """Sets the key_fingerprint of this InstanceConfigResult.
+        r"""Sets the key_fingerprint of this InstanceConfigResult.
 
         登录云服务器的SSH密钥指纹。
 
@@ -272,7 +272,7 @@ class InstanceConfigResult:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceConfigResult.
+        r"""Gets the instance_name of this InstanceConfigResult.
 
         该参数为预留字段。
 
@@ -283,7 +283,7 @@ class InstanceConfigResult:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceConfigResult.
+        r"""Sets the instance_name of this InstanceConfigResult.
 
         该参数为预留字段。
 
@@ -294,7 +294,7 @@ class InstanceConfigResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceConfigResult.
+        r"""Gets the instance_id of this InstanceConfigResult.
 
         该参数为预留字段。
 
@@ -305,7 +305,7 @@ class InstanceConfigResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceConfigResult.
+        r"""Sets the instance_id of this InstanceConfigResult.
 
         该参数为预留字段。
 
@@ -316,7 +316,7 @@ class InstanceConfigResult:
 
     @property
     def admin_pass(self):
-        """Gets the admin_pass of this InstanceConfigResult.
+        r"""Gets the admin_pass of this InstanceConfigResult.
 
         登录云服务器的密码，非明文回显。
 
@@ -327,7 +327,7 @@ class InstanceConfigResult:
 
     @admin_pass.setter
     def admin_pass(self, admin_pass):
-        """Sets the admin_pass of this InstanceConfigResult.
+        r"""Sets the admin_pass of this InstanceConfigResult.
 
         登录云服务器的密码，非明文回显。
 
@@ -338,7 +338,7 @@ class InstanceConfigResult:
 
     @property
     def personality(self):
-        """Gets the personality of this InstanceConfigResult.
+        r"""Gets the personality of this InstanceConfigResult.
 
         个人信息
 
@@ -349,7 +349,7 @@ class InstanceConfigResult:
 
     @personality.setter
     def personality(self, personality):
-        """Sets the personality of this InstanceConfigResult.
+        r"""Sets the personality of this InstanceConfigResult.
 
         个人信息
 
@@ -360,7 +360,7 @@ class InstanceConfigResult:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this InstanceConfigResult.
+        r"""Gets the public_ip of this InstanceConfigResult.
 
         :return: The public_ip of this InstanceConfigResult.
         :rtype: :class:`huaweicloudsdkas.v1.PublicipResult`
@@ -369,7 +369,7 @@ class InstanceConfigResult:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this InstanceConfigResult.
+        r"""Sets the public_ip of this InstanceConfigResult.
 
         :param public_ip: The public_ip of this InstanceConfigResult.
         :type public_ip: :class:`huaweicloudsdkas.v1.PublicipResult`
@@ -378,7 +378,7 @@ class InstanceConfigResult:
 
     @property
     def user_data(self):
-        """Gets the user_data of this InstanceConfigResult.
+        r"""Gets the user_data of this InstanceConfigResult.
 
         cloud-init用户数据，base64格式编码。
 
@@ -389,7 +389,7 @@ class InstanceConfigResult:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this InstanceConfigResult.
+        r"""Sets the user_data of this InstanceConfigResult.
 
         cloud-init用户数据，base64格式编码。
 
@@ -400,7 +400,7 @@ class InstanceConfigResult:
 
     @property
     def metadata(self):
-        """Gets the metadata of this InstanceConfigResult.
+        r"""Gets the metadata of this InstanceConfigResult.
 
         :return: The metadata of this InstanceConfigResult.
         :rtype: :class:`huaweicloudsdkas.v1.VmMetaData`
@@ -409,7 +409,7 @@ class InstanceConfigResult:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this InstanceConfigResult.
+        r"""Sets the metadata of this InstanceConfigResult.
 
         :param metadata: The metadata of this InstanceConfigResult.
         :type metadata: :class:`huaweicloudsdkas.v1.VmMetaData`
@@ -418,7 +418,7 @@ class InstanceConfigResult:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this InstanceConfigResult.
+        r"""Gets the security_groups of this InstanceConfigResult.
 
         安全组信息。
 
@@ -429,7 +429,7 @@ class InstanceConfigResult:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this InstanceConfigResult.
+        r"""Sets the security_groups of this InstanceConfigResult.
 
         安全组信息。
 
@@ -440,7 +440,7 @@ class InstanceConfigResult:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this InstanceConfigResult.
+        r"""Gets the server_group_id of this InstanceConfigResult.
 
         云服务器组ID。
 
@@ -451,7 +451,7 @@ class InstanceConfigResult:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this InstanceConfigResult.
+        r"""Sets the server_group_id of this InstanceConfigResult.
 
         云服务器组ID。
 
@@ -462,7 +462,7 @@ class InstanceConfigResult:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this InstanceConfigResult.
+        r"""Gets the tenancy of this InstanceConfigResult.
 
         在专属主机上创建弹性云服务器。
 
@@ -473,7 +473,7 @@ class InstanceConfigResult:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this InstanceConfigResult.
+        r"""Sets the tenancy of this InstanceConfigResult.
 
         在专属主机上创建弹性云服务器。
 
@@ -484,7 +484,7 @@ class InstanceConfigResult:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this InstanceConfigResult.
+        r"""Gets the dedicated_host_id of this InstanceConfigResult.
 
         专属主机的ID。
 
@@ -495,7 +495,7 @@ class InstanceConfigResult:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this InstanceConfigResult.
+        r"""Sets the dedicated_host_id of this InstanceConfigResult.
 
         专属主机的ID。
 
@@ -506,7 +506,7 @@ class InstanceConfigResult:
 
     @property
     def market_type(self):
-        """Gets the market_type of this InstanceConfigResult.
+        r"""Gets the market_type of this InstanceConfigResult.
 
         云服务器的计费模式，可以选择竞价计费或按需计费。
 
@@ -517,7 +517,7 @@ class InstanceConfigResult:
 
     @market_type.setter
     def market_type(self, market_type):
-        """Sets the market_type of this InstanceConfigResult.
+        r"""Sets the market_type of this InstanceConfigResult.
 
         云服务器的计费模式，可以选择竞价计费或按需计费。
 
@@ -528,7 +528,7 @@ class InstanceConfigResult:
 
     @property
     def multi_flavor_priority_policy(self):
-        """Gets the multi_flavor_priority_policy of this InstanceConfigResult.
+        r"""Gets the multi_flavor_priority_policy of this InstanceConfigResult.
 
         使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
 
@@ -539,7 +539,7 @@ class InstanceConfigResult:
 
     @multi_flavor_priority_policy.setter
     def multi_flavor_priority_policy(self, multi_flavor_priority_policy):
-        """Sets the multi_flavor_priority_policy of this InstanceConfigResult.
+        r"""Sets the multi_flavor_priority_policy of this InstanceConfigResult.
 
         使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
 

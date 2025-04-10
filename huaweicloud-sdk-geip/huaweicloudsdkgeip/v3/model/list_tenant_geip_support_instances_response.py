@@ -30,7 +30,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, support_regions=None, x_request_id=None):
-        """ListTenantGeipSupportInstancesResponse
+        r"""ListTenantGeipSupportInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTenantGeipSupportInstancesResponse.
+        r"""Gets the request_id of this ListTenantGeipSupportInstancesResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTenantGeipSupportInstancesResponse.
+        r"""Sets the request_id of this ListTenantGeipSupportInstancesResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
 
     @property
     def support_regions(self):
-        """Gets the support_regions of this ListTenantGeipSupportInstancesResponse.
+        r"""Gets the support_regions of this ListTenantGeipSupportInstancesResponse.
 
         支持的Region对象
 
@@ -91,7 +91,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
 
     @support_regions.setter
     def support_regions(self, support_regions):
-        """Sets the support_regions of this ListTenantGeipSupportInstancesResponse.
+        r"""Sets the support_regions of this ListTenantGeipSupportInstancesResponse.
 
         支持的Region对象
 
@@ -102,7 +102,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTenantGeipSupportInstancesResponse.
+        r"""Gets the x_request_id of this ListTenantGeipSupportInstancesResponse.
 
         :return: The x_request_id of this ListTenantGeipSupportInstancesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListTenantGeipSupportInstancesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTenantGeipSupportInstancesResponse.
+        r"""Sets the x_request_id of this ListTenantGeipSupportInstancesResponse.
 
         :param x_request_id: The x_request_id of this ListTenantGeipSupportInstancesResponse.
         :type x_request_id: str

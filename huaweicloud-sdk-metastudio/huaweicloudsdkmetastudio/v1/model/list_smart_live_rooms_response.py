@@ -30,7 +30,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, smart_live_rooms=None, x_request_id=None):
-        """ListSmartLiveRoomsResponse
+        r"""ListSmartLiveRoomsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSmartLiveRoomsResponse.
+        r"""Gets the count of this ListSmartLiveRoomsResponse.
 
         直播间总数。
 
@@ -69,7 +69,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSmartLiveRoomsResponse.
+        r"""Sets the count of this ListSmartLiveRoomsResponse.
 
         直播间总数。
 
@@ -80,7 +80,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
 
     @property
     def smart_live_rooms(self):
-        """Gets the smart_live_rooms of this ListSmartLiveRoomsResponse.
+        r"""Gets the smart_live_rooms of this ListSmartLiveRoomsResponse.
 
         直播间列表。
 
@@ -91,7 +91,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
 
     @smart_live_rooms.setter
     def smart_live_rooms(self, smart_live_rooms):
-        """Sets the smart_live_rooms of this ListSmartLiveRoomsResponse.
+        r"""Sets the smart_live_rooms of this ListSmartLiveRoomsResponse.
 
         直播间列表。
 
@@ -102,7 +102,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSmartLiveRoomsResponse.
+        r"""Gets the x_request_id of this ListSmartLiveRoomsResponse.
 
         :return: The x_request_id of this ListSmartLiveRoomsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSmartLiveRoomsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSmartLiveRoomsResponse.
+        r"""Sets the x_request_id of this ListSmartLiveRoomsResponse.
 
         :param x_request_id: The x_request_id of this ListSmartLiveRoomsResponse.
         :type x_request_id: str

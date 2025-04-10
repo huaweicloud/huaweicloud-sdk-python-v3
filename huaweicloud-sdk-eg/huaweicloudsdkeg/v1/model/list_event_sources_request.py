@@ -39,7 +39,7 @@ class ListEventSourcesRequest:
     }
 
     def __init__(self, channel_id=None, offset=None, limit=None, sort=None, provider_type=None, name=None, fuzzy_name=None, fuzzy_label=None):
-        """ListEventSourcesRequest
+        r"""ListEventSourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListEventSourcesRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ListEventSourcesRequest.
+        r"""Gets the channel_id of this ListEventSourcesRequest.
 
         指定查询的事件通道ID
 
@@ -103,7 +103,7 @@ class ListEventSourcesRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ListEventSourcesRequest.
+        r"""Sets the channel_id of this ListEventSourcesRequest.
 
         指定查询的事件通道ID
 
@@ -114,7 +114,7 @@ class ListEventSourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventSourcesRequest.
+        r"""Gets the offset of this ListEventSourcesRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -125,7 +125,7 @@ class ListEventSourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventSourcesRequest.
+        r"""Sets the offset of this ListEventSourcesRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -136,7 +136,7 @@ class ListEventSourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventSourcesRequest.
+        r"""Gets the limit of this ListEventSourcesRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -147,7 +147,7 @@ class ListEventSourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventSourcesRequest.
+        r"""Sets the limit of this ListEventSourcesRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -158,7 +158,7 @@ class ListEventSourcesRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListEventSourcesRequest.
+        r"""Gets the sort of this ListEventSourcesRequest.
 
         指定查询排序
 
@@ -169,7 +169,7 @@ class ListEventSourcesRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListEventSourcesRequest.
+        r"""Sets the sort of this ListEventSourcesRequest.
 
         指定查询排序
 
@@ -180,7 +180,7 @@ class ListEventSourcesRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListEventSourcesRequest.
+        r"""Gets the provider_type of this ListEventSourcesRequest.
 
         指定查询提供方的类型
 
@@ -191,7 +191,7 @@ class ListEventSourcesRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListEventSourcesRequest.
+        r"""Sets the provider_type of this ListEventSourcesRequest.
 
         指定查询提供方的类型
 
@@ -202,7 +202,7 @@ class ListEventSourcesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEventSourcesRequest.
+        r"""Gets the name of this ListEventSourcesRequest.
 
         指定查询的事件源名称，精准匹配
 
@@ -213,7 +213,7 @@ class ListEventSourcesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEventSourcesRequest.
+        r"""Sets the name of this ListEventSourcesRequest.
 
         指定查询的事件源名称，精准匹配
 
@@ -224,7 +224,7 @@ class ListEventSourcesRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListEventSourcesRequest.
+        r"""Gets the fuzzy_name of this ListEventSourcesRequest.
 
         指定查询的事件源名称，模糊匹配
 
@@ -235,7 +235,7 @@ class ListEventSourcesRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListEventSourcesRequest.
+        r"""Sets the fuzzy_name of this ListEventSourcesRequest.
 
         指定查询的事件源名称，模糊匹配
 
@@ -246,7 +246,7 @@ class ListEventSourcesRequest:
 
     @property
     def fuzzy_label(self):
-        """Gets the fuzzy_label of this ListEventSourcesRequest.
+        r"""Gets the fuzzy_label of this ListEventSourcesRequest.
 
         指定查询的事件源标签，模糊匹配
 
@@ -257,7 +257,7 @@ class ListEventSourcesRequest:
 
     @fuzzy_label.setter
     def fuzzy_label(self, fuzzy_label):
-        """Sets the fuzzy_label of this ListEventSourcesRequest.
+        r"""Sets the fuzzy_label of this ListEventSourcesRequest.
 
         指定查询的事件源标签，模糊匹配
 

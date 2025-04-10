@@ -23,7 +23,7 @@ class MfaEnabled:
     }
 
     def __init__(self):
-        """MfaEnabled
+        r"""MfaEnabled
 
         The model defined in huaweicloud sdk
 

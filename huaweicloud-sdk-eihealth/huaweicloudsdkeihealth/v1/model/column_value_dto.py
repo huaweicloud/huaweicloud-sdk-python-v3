@@ -27,7 +27,7 @@ class ColumnValueDto:
     }
 
     def __init__(self, column=None, value=None):
-        """ColumnValueDto
+        r"""ColumnValueDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ColumnValueDto:
 
     @property
     def column(self):
-        """Gets the column of this ColumnValueDto.
+        r"""Gets the column of this ColumnValueDto.
 
         列名
 
@@ -60,7 +60,7 @@ class ColumnValueDto:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this ColumnValueDto.
+        r"""Sets the column of this ColumnValueDto.
 
         列名
 
@@ -71,7 +71,7 @@ class ColumnValueDto:
 
     @property
     def value(self):
-        """Gets the value of this ColumnValueDto.
+        r"""Gets the value of this ColumnValueDto.
 
         该列对应的值
 
@@ -82,7 +82,7 @@ class ColumnValueDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ColumnValueDto.
+        r"""Sets the value of this ColumnValueDto.
 
         该列对应的值
 

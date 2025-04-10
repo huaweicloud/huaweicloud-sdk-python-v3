@@ -27,7 +27,7 @@ class CreateDesktopPoolAuthorizedObjectsRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """CreateDesktopPoolAuthorizedObjectsRequest
+        r"""CreateDesktopPoolAuthorizedObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDesktopPoolAuthorizedObjectsRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this CreateDesktopPoolAuthorizedObjectsRequest.
+        r"""Gets the pool_id of this CreateDesktopPoolAuthorizedObjectsRequest.
 
         桌面池ID。
 
@@ -60,7 +60,7 @@ class CreateDesktopPoolAuthorizedObjectsRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this CreateDesktopPoolAuthorizedObjectsRequest.
+        r"""Sets the pool_id of this CreateDesktopPoolAuthorizedObjectsRequest.
 
         桌面池ID。
 
@@ -71,7 +71,7 @@ class CreateDesktopPoolAuthorizedObjectsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopPoolAuthorizedObjectsRequest.
+        r"""Gets the body of this CreateDesktopPoolAuthorizedObjectsRequest.
 
         :return: The body of this CreateDesktopPoolAuthorizedObjectsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolAuthorizedObjectsRequestBody`
@@ -80,7 +80,7 @@ class CreateDesktopPoolAuthorizedObjectsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopPoolAuthorizedObjectsRequest.
+        r"""Sets the body of this CreateDesktopPoolAuthorizedObjectsRequest.
 
         :param body: The body of this CreateDesktopPoolAuthorizedObjectsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolAuthorizedObjectsRequestBody`

@@ -28,7 +28,7 @@ class ListImagesResponse(SdkResponse):
     }
 
     def __init__(self, images=None, total_count=None):
-        """ListImagesResponse
+        r"""ListImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def images(self):
-        """Gets the images of this ListImagesResponse.
+        r"""Gets the images of this ListImagesResponse.
 
         云桌面支持的产品镜像列表。
 
@@ -62,7 +62,7 @@ class ListImagesResponse(SdkResponse):
 
     @images.setter
     def images(self, images):
-        """Sets the images of this ListImagesResponse.
+        r"""Sets the images of this ListImagesResponse.
 
         云桌面支持的产品镜像列表。
 
@@ -73,7 +73,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListImagesResponse.
+        r"""Gets the total_count of this ListImagesResponse.
 
         对象总数。
 
@@ -84,7 +84,7 @@ class ListImagesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListImagesResponse.
+        r"""Sets the total_count of this ListImagesResponse.
 
         对象总数。
 

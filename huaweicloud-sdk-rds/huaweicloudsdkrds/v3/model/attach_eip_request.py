@@ -29,7 +29,7 @@ class AttachEipRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """AttachEipRequest
+        r"""AttachEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AttachEipRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AttachEipRequest.
+        r"""Gets the x_language of this AttachEipRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class AttachEipRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AttachEipRequest.
+        r"""Sets the x_language of this AttachEipRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class AttachEipRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AttachEipRequest.
+        r"""Gets the instance_id of this AttachEipRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class AttachEipRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AttachEipRequest.
+        r"""Sets the instance_id of this AttachEipRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class AttachEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachEipRequest.
+        r"""Gets the body of this AttachEipRequest.
 
         :return: The body of this AttachEipRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.BindEipRequest`
@@ -109,7 +109,7 @@ class AttachEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachEipRequest.
+        r"""Sets the body of this AttachEipRequest.
 
         :param body: The body of this AttachEipRequest.
         :type body: :class:`huaweicloudsdkrds.v3.BindEipRequest`

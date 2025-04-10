@@ -27,7 +27,7 @@ class CloneLoadbalancerRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """CloneLoadbalancerRequest
+        r"""CloneLoadbalancerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CloneLoadbalancerRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CloneLoadbalancerRequest.
+        r"""Gets the loadbalancer_id of this CloneLoadbalancerRequest.
 
         负载均衡器ID。
 
@@ -60,7 +60,7 @@ class CloneLoadbalancerRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CloneLoadbalancerRequest.
+        r"""Sets the loadbalancer_id of this CloneLoadbalancerRequest.
 
         负载均衡器ID。
 
@@ -71,7 +71,7 @@ class CloneLoadbalancerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CloneLoadbalancerRequest.
+        r"""Gets the body of this CloneLoadbalancerRequest.
 
         :return: The body of this CloneLoadbalancerRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.CloneLoadbalancerRequestBody`
@@ -80,7 +80,7 @@ class CloneLoadbalancerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CloneLoadbalancerRequest.
+        r"""Sets the body of this CloneLoadbalancerRequest.
 
         :param body: The body of this CloneLoadbalancerRequest.
         :type body: :class:`huaweicloudsdkelb.v3.CloneLoadbalancerRequestBody`

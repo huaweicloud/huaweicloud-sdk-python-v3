@@ -28,7 +28,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self, aggregate_policy_assignments=None, page_info=None):
-        """ListAggregateComplianceByPolicyAssignmentResponse
+        r"""ListAggregateComplianceByPolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
 
     @property
     def aggregate_policy_assignments(self):
-        """Gets the aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
+        r"""Gets the aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
 
         聚合合规规则的列表。
 
@@ -62,7 +62,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
 
     @aggregate_policy_assignments.setter
     def aggregate_policy_assignments(self, aggregate_policy_assignments):
-        """Sets the aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
+        r"""Sets the aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
 
         聚合合规规则的列表。
 
@@ -73,7 +73,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAggregateComplianceByPolicyAssignmentResponse.
+        r"""Gets the page_info of this ListAggregateComplianceByPolicyAssignmentResponse.
 
         :return: The page_info of this ListAggregateComplianceByPolicyAssignmentResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAggregateComplianceByPolicyAssignmentResponse.
+        r"""Sets the page_info of this ListAggregateComplianceByPolicyAssignmentResponse.
 
         :param page_info: The page_info of this ListAggregateComplianceByPolicyAssignmentResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

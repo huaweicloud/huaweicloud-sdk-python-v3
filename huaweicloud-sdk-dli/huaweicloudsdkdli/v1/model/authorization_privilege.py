@@ -31,7 +31,7 @@ class AuthorizationPrivilege:
     }
 
     def __init__(self, object=None, is_admin=None, user_name=None, privileges=None):
-        """AuthorizationPrivilege
+        r"""AuthorizationPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AuthorizationPrivilege:
 
     @property
     def object(self):
-        """Gets the object of this AuthorizationPrivilege.
+        r"""Gets the object of this AuthorizationPrivilege.
 
         授权对象，和赋权API中的“object”对应。
 
@@ -75,7 +75,7 @@ class AuthorizationPrivilege:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this AuthorizationPrivilege.
+        r"""Sets the object of this AuthorizationPrivilege.
 
         授权对象，和赋权API中的“object”对应。
 
@@ -86,7 +86,7 @@ class AuthorizationPrivilege:
 
     @property
     def is_admin(self):
-        """Gets the is_admin of this AuthorizationPrivilege.
+        r"""Gets the is_admin of this AuthorizationPrivilege.
 
         判断用户是否为管理员。
 
@@ -97,7 +97,7 @@ class AuthorizationPrivilege:
 
     @is_admin.setter
     def is_admin(self, is_admin):
-        """Sets the is_admin of this AuthorizationPrivilege.
+        r"""Sets the is_admin of this AuthorizationPrivilege.
 
         判断用户是否为管理员。
 
@@ -108,7 +108,7 @@ class AuthorizationPrivilege:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AuthorizationPrivilege.
+        r"""Gets the user_name of this AuthorizationPrivilege.
 
         用户名称，即该用户在当前数据库上有权限。
 
@@ -119,7 +119,7 @@ class AuthorizationPrivilege:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AuthorizationPrivilege.
+        r"""Sets the user_name of this AuthorizationPrivilege.
 
         用户名称，即该用户在当前数据库上有权限。
 
@@ -130,7 +130,7 @@ class AuthorizationPrivilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this AuthorizationPrivilege.
+        r"""Gets the privileges of this AuthorizationPrivilege.
 
         该用户在数据库上的权限。
 
@@ -141,7 +141,7 @@ class AuthorizationPrivilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this AuthorizationPrivilege.
+        r"""Sets the privileges of this AuthorizationPrivilege.
 
         该用户在数据库上的权限。
 

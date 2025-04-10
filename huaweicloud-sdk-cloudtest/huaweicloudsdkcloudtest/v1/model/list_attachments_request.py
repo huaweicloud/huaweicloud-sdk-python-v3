@@ -29,7 +29,7 @@ class ListAttachmentsRequest:
     }
 
     def __init__(self, project_id=None, resource_uri=None, resource_type=None):
-        """ListAttachmentsRequest
+        r"""ListAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListAttachmentsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAttachmentsRequest.
+        r"""Gets the project_id of this ListAttachmentsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -65,7 +65,7 @@ class ListAttachmentsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAttachmentsRequest.
+        r"""Sets the project_id of this ListAttachmentsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -76,7 +76,7 @@ class ListAttachmentsRequest:
 
     @property
     def resource_uri(self):
-        """Gets the resource_uri of this ListAttachmentsRequest.
+        r"""Gets the resource_uri of this ListAttachmentsRequest.
 
         资源Uri
 
@@ -87,7 +87,7 @@ class ListAttachmentsRequest:
 
     @resource_uri.setter
     def resource_uri(self, resource_uri):
-        """Sets the resource_uri of this ListAttachmentsRequest.
+        r"""Sets the resource_uri of this ListAttachmentsRequest.
 
         资源Uri
 
@@ -98,7 +98,7 @@ class ListAttachmentsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListAttachmentsRequest.
+        r"""Gets the resource_type of this ListAttachmentsRequest.
 
         资源类型
 
@@ -109,7 +109,7 @@ class ListAttachmentsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListAttachmentsRequest.
+        r"""Sets the resource_type of this ListAttachmentsRequest.
 
         资源类型
 

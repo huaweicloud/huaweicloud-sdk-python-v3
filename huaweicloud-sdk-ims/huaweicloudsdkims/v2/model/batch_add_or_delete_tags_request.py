@@ -27,7 +27,7 @@ class BatchAddOrDeleteTagsRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """BatchAddOrDeleteTagsRequest
+        r"""BatchAddOrDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddOrDeleteTagsRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this BatchAddOrDeleteTagsRequest.
+        r"""Gets the image_id of this BatchAddOrDeleteTagsRequest.
 
         镜像ID。
 
@@ -60,7 +60,7 @@ class BatchAddOrDeleteTagsRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this BatchAddOrDeleteTagsRequest.
+        r"""Sets the image_id of this BatchAddOrDeleteTagsRequest.
 
         镜像ID。
 
@@ -71,7 +71,7 @@ class BatchAddOrDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddOrDeleteTagsRequest.
+        r"""Gets the body of this BatchAddOrDeleteTagsRequest.
 
         :return: The body of this BatchAddOrDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchAddOrDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddOrDeleteTagsRequest.
+        r"""Sets the body of this BatchAddOrDeleteTagsRequest.
 
         :param body: The body of this BatchAddOrDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsRequestBody`

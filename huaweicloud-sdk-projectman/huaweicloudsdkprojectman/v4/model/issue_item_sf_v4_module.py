@@ -27,7 +27,7 @@ class IssueItemSfV4Module:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueItemSfV4Module
+        r"""IssueItemSfV4Module
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueItemSfV4Module:
 
     @property
     def id(self):
-        """Gets the id of this IssueItemSfV4Module.
+        r"""Gets the id of this IssueItemSfV4Module.
 
         模块id
 
@@ -61,7 +61,7 @@ class IssueItemSfV4Module:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueItemSfV4Module.
+        r"""Sets the id of this IssueItemSfV4Module.
 
         模块id
 
@@ -72,7 +72,7 @@ class IssueItemSfV4Module:
 
     @property
     def name(self):
-        """Gets the name of this IssueItemSfV4Module.
+        r"""Gets the name of this IssueItemSfV4Module.
 
         模块
 
@@ -83,7 +83,7 @@ class IssueItemSfV4Module:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueItemSfV4Module.
+        r"""Sets the name of this IssueItemSfV4Module.
 
         模块
 

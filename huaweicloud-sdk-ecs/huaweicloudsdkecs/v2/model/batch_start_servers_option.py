@@ -25,7 +25,7 @@ class BatchStartServersOption:
     }
 
     def __init__(self, servers=None):
-        """BatchStartServersOption
+        r"""BatchStartServersOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchStartServersOption:
 
     @property
     def servers(self):
-        """Gets the servers of this BatchStartServersOption.
+        r"""Gets the servers of this BatchStartServersOption.
 
         云服务器ID列表
 
@@ -53,7 +53,7 @@ class BatchStartServersOption:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this BatchStartServersOption.
+        r"""Sets the servers of this BatchStartServersOption.
 
         云服务器ID列表
 

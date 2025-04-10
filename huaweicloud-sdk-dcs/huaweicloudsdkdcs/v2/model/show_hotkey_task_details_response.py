@@ -42,7 +42,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None, num=None, keys=None):
-        """ShowHotkeyTaskDetailsResponse
+        r"""ShowHotkeyTaskDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the id of this ShowHotkeyTaskDetailsResponse.
 
         热key分析记录ID
 
@@ -111,7 +111,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the id of this ShowHotkeyTaskDetailsResponse.
 
         热key分析记录ID
 
@@ -122,7 +122,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the instance_id of this ShowHotkeyTaskDetailsResponse.
 
         实例ID
 
@@ -133,7 +133,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the instance_id of this ShowHotkeyTaskDetailsResponse.
 
         实例ID
 
@@ -144,7 +144,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the status of this ShowHotkeyTaskDetailsResponse.
 
         分析任务状态
 
@@ -155,7 +155,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the status of this ShowHotkeyTaskDetailsResponse.
 
         分析任务状态
 
@@ -166,7 +166,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the scan_type of this ShowHotkeyTaskDetailsResponse.
 
         分析方式
 
@@ -177,7 +177,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the scan_type of this ShowHotkeyTaskDetailsResponse.
 
         分析方式
 
@@ -188,7 +188,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the created_at of this ShowHotkeyTaskDetailsResponse.
 
         分析任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -199,7 +199,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the created_at of this ShowHotkeyTaskDetailsResponse.
 
         分析任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -210,7 +210,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def started_at(self):
-        """Gets the started_at of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the started_at of this ShowHotkeyTaskDetailsResponse.
 
         分析任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -221,7 +221,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the started_at of this ShowHotkeyTaskDetailsResponse.
 
         分析任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -232,7 +232,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the finished_at of this ShowHotkeyTaskDetailsResponse.
 
         分析任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -243,7 +243,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the finished_at of this ShowHotkeyTaskDetailsResponse.
 
         分析任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -254,7 +254,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def num(self):
-        """Gets the num of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the num of this ShowHotkeyTaskDetailsResponse.
 
         热key的数量
 
@@ -265,7 +265,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the num of this ShowHotkeyTaskDetailsResponse.
 
         热key的数量
 
@@ -276,7 +276,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @property
     def keys(self):
-        """Gets the keys of this ShowHotkeyTaskDetailsResponse.
+        r"""Gets the keys of this ShowHotkeyTaskDetailsResponse.
 
         热key记录
 
@@ -287,7 +287,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ShowHotkeyTaskDetailsResponse.
+        r"""Sets the keys of this ShowHotkeyTaskDetailsResponse.
 
         热key记录
 

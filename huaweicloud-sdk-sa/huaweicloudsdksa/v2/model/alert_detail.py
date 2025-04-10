@@ -43,7 +43,7 @@ class AlertDetail:
     }
 
     def __init__(self, data_object=None, create_time=None, update_time=None, project_id=None, workspace_id=None, id=None, type=None, version=None, format_version=None, dataclass_ref=None):
-        """AlertDetail
+        r"""AlertDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AlertDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this AlertDetail.
+        r"""Gets the data_object of this AlertDetail.
 
         :return: The data_object of this AlertDetail.
         :rtype: :class:`huaweicloudsdksa.v2.Alert`
@@ -115,7 +115,7 @@ class AlertDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this AlertDetail.
+        r"""Sets the data_object of this AlertDetail.
 
         :param data_object: The data_object of this AlertDetail.
         :type data_object: :class:`huaweicloudsdksa.v2.Alert`
@@ -124,7 +124,7 @@ class AlertDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlertDetail.
+        r"""Gets the create_time of this AlertDetail.
 
         Create time
 
@@ -135,7 +135,7 @@ class AlertDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlertDetail.
+        r"""Sets the create_time of this AlertDetail.
 
         Create time
 
@@ -146,7 +146,7 @@ class AlertDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlertDetail.
+        r"""Gets the update_time of this AlertDetail.
 
         Update time
 
@@ -157,7 +157,7 @@ class AlertDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlertDetail.
+        r"""Sets the update_time of this AlertDetail.
 
         Update time
 
@@ -168,7 +168,7 @@ class AlertDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AlertDetail.
+        r"""Gets the project_id of this AlertDetail.
 
         Id value
 
@@ -179,7 +179,7 @@ class AlertDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AlertDetail.
+        r"""Sets the project_id of this AlertDetail.
 
         Id value
 
@@ -190,7 +190,7 @@ class AlertDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AlertDetail.
+        r"""Gets the workspace_id of this AlertDetail.
 
         Id value
 
@@ -201,7 +201,7 @@ class AlertDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AlertDetail.
+        r"""Sets the workspace_id of this AlertDetail.
 
         Id value
 
@@ -212,7 +212,7 @@ class AlertDetail:
 
     @property
     def id(self):
-        """Gets the id of this AlertDetail.
+        r"""Gets the id of this AlertDetail.
 
         The name, display only
 
@@ -223,7 +223,7 @@ class AlertDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlertDetail.
+        r"""Sets the id of this AlertDetail.
 
         The name, display only
 
@@ -234,7 +234,7 @@ class AlertDetail:
 
     @property
     def type(self):
-        """Gets the type of this AlertDetail.
+        r"""Gets the type of this AlertDetail.
 
         The name, display only
 
@@ -245,7 +245,7 @@ class AlertDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AlertDetail.
+        r"""Sets the type of this AlertDetail.
 
         The name, display only
 
@@ -256,7 +256,7 @@ class AlertDetail:
 
     @property
     def version(self):
-        """Gets the version of this AlertDetail.
+        r"""Gets the version of this AlertDetail.
 
         The name, display only
 
@@ -267,7 +267,7 @@ class AlertDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AlertDetail.
+        r"""Sets the version of this AlertDetail.
 
         The name, display only
 
@@ -278,7 +278,7 @@ class AlertDetail:
 
     @property
     def format_version(self):
-        """Gets the format_version of this AlertDetail.
+        r"""Gets the format_version of this AlertDetail.
 
         The name, display only
 
@@ -289,7 +289,7 @@ class AlertDetail:
 
     @format_version.setter
     def format_version(self, format_version):
-        """Sets the format_version of this AlertDetail.
+        r"""Sets the format_version of this AlertDetail.
 
         The name, display only
 
@@ -300,7 +300,7 @@ class AlertDetail:
 
     @property
     def dataclass_ref(self):
-        """Gets the dataclass_ref of this AlertDetail.
+        r"""Gets the dataclass_ref of this AlertDetail.
 
         :return: The dataclass_ref of this AlertDetail.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertDetailDataclassRef`
@@ -309,7 +309,7 @@ class AlertDetail:
 
     @dataclass_ref.setter
     def dataclass_ref(self, dataclass_ref):
-        """Sets the dataclass_ref of this AlertDetail.
+        r"""Sets the dataclass_ref of this AlertDetail.
 
         :param dataclass_ref: The dataclass_ref of this AlertDetail.
         :type dataclass_ref: :class:`huaweicloudsdksa.v2.ShowAlertDetailDataclassRef`

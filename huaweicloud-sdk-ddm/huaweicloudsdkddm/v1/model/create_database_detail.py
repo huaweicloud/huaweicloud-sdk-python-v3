@@ -33,7 +33,7 @@ class CreateDatabaseDetail:
     }
 
     def __init__(self, name=None, shard_mode=None, shard_number=None, shard_unit=None, used_rds=None):
-        """CreateDatabaseDetail
+        r"""CreateDatabaseDetail
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateDatabaseDetail:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseDetail.
+        r"""Gets the name of this CreateDatabaseDetail.
 
         逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
@@ -78,7 +78,7 @@ class CreateDatabaseDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseDetail.
+        r"""Sets the name of this CreateDatabaseDetail.
 
         逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
@@ -89,7 +89,7 @@ class CreateDatabaseDetail:
 
     @property
     def shard_mode(self):
-        """Gets the shard_mode of this CreateDatabaseDetail.
+        r"""Gets the shard_mode of this CreateDatabaseDetail.
 
         逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -100,7 +100,7 @@ class CreateDatabaseDetail:
 
     @shard_mode.setter
     def shard_mode(self, shard_mode):
-        """Sets the shard_mode of this CreateDatabaseDetail.
+        r"""Sets the shard_mode of this CreateDatabaseDetail.
 
         逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -111,7 +111,7 @@ class CreateDatabaseDetail:
 
     @property
     def shard_number(self):
-        """Gets the shard_number of this CreateDatabaseDetail.
+        r"""Gets the shard_number of this CreateDatabaseDetail.
 
         同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联rds数量的乘积 - shard_unit为空，大于关联的RDS数量，小于等于关联rds数量*64。
 
@@ -122,7 +122,7 @@ class CreateDatabaseDetail:
 
     @shard_number.setter
     def shard_number(self, shard_number):
-        """Sets the shard_number of this CreateDatabaseDetail.
+        r"""Sets the shard_number of this CreateDatabaseDetail.
 
         同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联rds数量的乘积 - shard_unit为空，大于关联的RDS数量，小于等于关联rds数量*64。
 
@@ -133,7 +133,7 @@ class CreateDatabaseDetail:
 
     @property
     def shard_unit(self):
-        """Gets the shard_unit of this CreateDatabaseDetail.
+        r"""Gets the shard_unit of this CreateDatabaseDetail.
 
         单个RDS上的逻辑库分片数。非必选  - 非拆分逻辑库，固定为1。 - 拆分逻辑库，大于等于1，小于等于64。
 
@@ -144,7 +144,7 @@ class CreateDatabaseDetail:
 
     @shard_unit.setter
     def shard_unit(self, shard_unit):
-        """Sets the shard_unit of this CreateDatabaseDetail.
+        r"""Sets the shard_unit of this CreateDatabaseDetail.
 
         单个RDS上的逻辑库分片数。非必选  - 非拆分逻辑库，固定为1。 - 拆分逻辑库，大于等于1，小于等于64。
 
@@ -155,7 +155,7 @@ class CreateDatabaseDetail:
 
     @property
     def used_rds(self):
-        """Gets the used_rds of this CreateDatabaseDetail.
+        r"""Gets the used_rds of this CreateDatabaseDetail.
 
         逻辑库关联的RDS。
 
@@ -166,7 +166,7 @@ class CreateDatabaseDetail:
 
     @used_rds.setter
     def used_rds(self, used_rds):
-        """Sets the used_rds of this CreateDatabaseDetail.
+        r"""Sets the used_rds of this CreateDatabaseDetail.
 
         逻辑库关联的RDS。
 

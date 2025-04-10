@@ -26,7 +26,7 @@ class BatchAddDataMaskResponse(SdkResponse):
     }
 
     def __init__(self, masked_data=None):
-        """BatchAddDataMaskResponse
+        r"""BatchAddDataMaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchAddDataMaskResponse(SdkResponse):
 
     @property
     def masked_data(self):
-        """Gets the masked_data of this BatchAddDataMaskResponse.
+        r"""Gets the masked_data of this BatchAddDataMaskResponse.
 
         脱敏后的数据的数据列表，结构与请求中结构相同
 
@@ -55,7 +55,7 @@ class BatchAddDataMaskResponse(SdkResponse):
 
     @masked_data.setter
     def masked_data(self, masked_data):
-        """Sets the masked_data of this BatchAddDataMaskResponse.
+        r"""Sets the masked_data of this BatchAddDataMaskResponse.
 
         脱敏后的数据的数据列表，结构与请求中结构相同
 

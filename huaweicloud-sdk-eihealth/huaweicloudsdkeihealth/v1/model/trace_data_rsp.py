@@ -35,7 +35,7 @@ class TraceDataRsp:
     }
 
     def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None):
-        """TraceDataRsp
+        r"""TraceDataRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TraceDataRsp:
 
     @property
     def path(self):
-        """Gets the path of this TraceDataRsp.
+        r"""Gets the path of this TraceDataRsp.
 
         对象全路径（项目名称:/路径）
 
@@ -89,7 +89,7 @@ class TraceDataRsp:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this TraceDataRsp.
+        r"""Sets the path of this TraceDataRsp.
 
         对象全路径（项目名称:/路径）
 
@@ -100,7 +100,7 @@ class TraceDataRsp:
 
     @property
     def name(self):
-        """Gets the name of this TraceDataRsp.
+        r"""Gets the name of this TraceDataRsp.
 
         名称
 
@@ -111,7 +111,7 @@ class TraceDataRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TraceDataRsp.
+        r"""Sets the name of this TraceDataRsp.
 
         名称
 
@@ -122,7 +122,7 @@ class TraceDataRsp:
 
     @property
     def type(self):
-        """Gets the type of this TraceDataRsp.
+        r"""Gets the type of this TraceDataRsp.
 
         :return: The type of this TraceDataRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -131,7 +131,7 @@ class TraceDataRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TraceDataRsp.
+        r"""Sets the type of this TraceDataRsp.
 
         :param type: The type of this TraceDataRsp.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -140,7 +140,7 @@ class TraceDataRsp:
 
     @property
     def size(self):
-        """Gets the size of this TraceDataRsp.
+        r"""Gets the size of this TraceDataRsp.
 
         大小
 
@@ -151,7 +151,7 @@ class TraceDataRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this TraceDataRsp.
+        r"""Sets the size of this TraceDataRsp.
 
         大小
 
@@ -162,7 +162,7 @@ class TraceDataRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TraceDataRsp.
+        r"""Gets the create_time of this TraceDataRsp.
 
         创建时间
 
@@ -173,7 +173,7 @@ class TraceDataRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TraceDataRsp.
+        r"""Sets the create_time of this TraceDataRsp.
 
         创建时间
 
@@ -184,7 +184,7 @@ class TraceDataRsp:
 
     @property
     def download_url(self):
-        """Gets the download_url of this TraceDataRsp.
+        r"""Gets the download_url of this TraceDataRsp.
 
         下载链接
 
@@ -195,7 +195,7 @@ class TraceDataRsp:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this TraceDataRsp.
+        r"""Sets the download_url of this TraceDataRsp.
 
         下载链接
 

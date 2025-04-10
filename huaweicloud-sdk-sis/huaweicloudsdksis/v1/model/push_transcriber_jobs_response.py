@@ -26,7 +26,7 @@ class PushTranscriberJobsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """PushTranscriberJobsResponse
+        r"""PushTranscriberJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PushTranscriberJobsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this PushTranscriberJobsResponse.
+        r"""Gets the job_id of this PushTranscriberJobsResponse.
 
         创建的任务标识, 如果创建任务成功时必须存在。
 
@@ -55,7 +55,7 @@ class PushTranscriberJobsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PushTranscriberJobsResponse.
+        r"""Sets the job_id of this PushTranscriberJobsResponse.
 
         创建的任务标识, 如果创建任务成功时必须存在。
 

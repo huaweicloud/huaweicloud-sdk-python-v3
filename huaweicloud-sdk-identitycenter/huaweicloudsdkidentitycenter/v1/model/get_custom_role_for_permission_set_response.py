@@ -26,7 +26,7 @@ class GetCustomRoleForPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self, custom_role=None):
-        """GetCustomRoleForPermissionSetResponse
+        r"""GetCustomRoleForPermissionSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetCustomRoleForPermissionSetResponse(SdkResponse):
 
     @property
     def custom_role(self):
-        """Gets the custom_role of this GetCustomRoleForPermissionSetResponse.
+        r"""Gets the custom_role of this GetCustomRoleForPermissionSetResponse.
 
         附加到权限集的自定义策略
 
@@ -55,7 +55,7 @@ class GetCustomRoleForPermissionSetResponse(SdkResponse):
 
     @custom_role.setter
     def custom_role(self, custom_role):
-        """Sets the custom_role of this GetCustomRoleForPermissionSetResponse.
+        r"""Sets the custom_role of this GetCustomRoleForPermissionSetResponse.
 
         附加到权限集的自定义策略
 

@@ -32,7 +32,7 @@ class UpdateServiceResponse(SdkResponse):
     }
 
     def __init__(self, service_name=None, service_id=None, error_code=None, error_msg=None):
-        """UpdateServiceResponse
+        r"""UpdateServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def service_name(self):
-        """Gets the service_name of this UpdateServiceResponse.
+        r"""Gets the service_name of this UpdateServiceResponse.
 
         接口调用成功返回的服务名
 
@@ -76,7 +76,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this UpdateServiceResponse.
+        r"""Sets the service_name of this UpdateServiceResponse.
 
         接口调用成功返回的服务名
 
@@ -87,7 +87,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateServiceResponse.
+        r"""Gets the service_id of this UpdateServiceResponse.
 
         接口调用成功返回的服务id
 
@@ -98,7 +98,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateServiceResponse.
+        r"""Sets the service_id of this UpdateServiceResponse.
 
         接口调用成功返回的服务id
 
@@ -109,7 +109,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateServiceResponse.
+        r"""Gets the error_code of this UpdateServiceResponse.
 
         接口调用成功不返回，调用失败错误码
 
@@ -120,7 +120,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateServiceResponse.
+        r"""Sets the error_code of this UpdateServiceResponse.
 
         接口调用成功不返回，调用失败错误码
 
@@ -131,7 +131,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UpdateServiceResponse.
+        r"""Gets the error_msg of this UpdateServiceResponse.
 
         接口调用成功不返回，调用失败错误信息
 
@@ -142,7 +142,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdateServiceResponse.
+        r"""Sets the error_msg of this UpdateServiceResponse.
 
         接口调用成功不返回，调用失败错误信息
 

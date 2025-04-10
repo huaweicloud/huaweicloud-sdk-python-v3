@@ -26,7 +26,7 @@ class UpdateScalingGroupResponse(SdkResponse):
     }
 
     def __init__(self, scaling_group_id=None):
-        """UpdateScalingGroupResponse
+        r"""UpdateScalingGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateScalingGroupResponse(SdkResponse):
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this UpdateScalingGroupResponse.
+        r"""Gets the scaling_group_id of this UpdateScalingGroupResponse.
 
         伸缩组ID
 
@@ -55,7 +55,7 @@ class UpdateScalingGroupResponse(SdkResponse):
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this UpdateScalingGroupResponse.
+        r"""Sets the scaling_group_id of this UpdateScalingGroupResponse.
 
         伸缩组ID
 

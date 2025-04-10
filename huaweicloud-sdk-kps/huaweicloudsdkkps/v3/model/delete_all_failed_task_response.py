@@ -24,7 +24,7 @@ class DeleteAllFailedTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAllFailedTaskResponse
+        r"""DeleteAllFailedTaskResponse
 
         The model defined in huaweicloud sdk
 

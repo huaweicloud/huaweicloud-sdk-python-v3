@@ -29,7 +29,7 @@ class TxDetailRequest:
     }
 
     def __init__(self, tx_name=None, start_time=None, end_time=None):
-        """TxDetailRequest
+        r"""TxDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TxDetailRequest:
 
     @property
     def tx_name(self):
-        """Gets the tx_name of this TxDetailRequest.
+        r"""Gets the tx_name of this TxDetailRequest.
 
         事务名称。
 
@@ -65,7 +65,7 @@ class TxDetailRequest:
 
     @tx_name.setter
     def tx_name(self, tx_name):
-        """Sets the tx_name of this TxDetailRequest.
+        r"""Sets the tx_name of this TxDetailRequest.
 
         事务名称。
 
@@ -76,7 +76,7 @@ class TxDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TxDetailRequest.
+        r"""Gets the start_time of this TxDetailRequest.
 
         开始时间。
 
@@ -87,7 +87,7 @@ class TxDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TxDetailRequest.
+        r"""Sets the start_time of this TxDetailRequest.
 
         开始时间。
 
@@ -98,7 +98,7 @@ class TxDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TxDetailRequest.
+        r"""Gets the end_time of this TxDetailRequest.
 
         结束时间。
 
@@ -109,7 +109,7 @@ class TxDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TxDetailRequest.
+        r"""Sets the end_time of this TxDetailRequest.
 
         结束时间。
 

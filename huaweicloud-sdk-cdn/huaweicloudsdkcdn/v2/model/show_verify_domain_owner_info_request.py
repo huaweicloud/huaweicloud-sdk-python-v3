@@ -25,7 +25,7 @@ class ShowVerifyDomainOwnerInfoRequest:
     }
 
     def __init__(self, domain_name=None):
-        """ShowVerifyDomainOwnerInfoRequest
+        r"""ShowVerifyDomainOwnerInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVerifyDomainOwnerInfoRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowVerifyDomainOwnerInfoRequest.
+        r"""Gets the domain_name of this ShowVerifyDomainOwnerInfoRequest.
 
         域名
 
@@ -53,7 +53,7 @@ class ShowVerifyDomainOwnerInfoRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowVerifyDomainOwnerInfoRequest.
+        r"""Sets the domain_name of this ShowVerifyDomainOwnerInfoRequest.
 
         域名
 

@@ -26,7 +26,7 @@ class ShowFirewallResponse(SdkResponse):
     }
 
     def __init__(self, firewall=None):
-        """ShowFirewallResponse
+        r"""ShowFirewallResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowFirewallResponse(SdkResponse):
 
     @property
     def firewall(self):
-        """Gets the firewall of this ShowFirewallResponse.
+        r"""Gets the firewall of this ShowFirewallResponse.
 
         :return: The firewall of this ShowFirewallResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Firewall`
@@ -53,7 +53,7 @@ class ShowFirewallResponse(SdkResponse):
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this ShowFirewallResponse.
+        r"""Sets the firewall of this ShowFirewallResponse.
 
         :param firewall: The firewall of this ShowFirewallResponse.
         :type firewall: :class:`huaweicloudsdkiec.v1.Firewall`

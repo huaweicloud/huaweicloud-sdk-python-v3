@@ -29,7 +29,7 @@ class DnsAssignMent:
     }
 
     def __init__(self, hostname=None, ip_address=None, fqdn=None):
-        """DnsAssignMent
+        r"""DnsAssignMent
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DnsAssignMent:
 
     @property
     def hostname(self):
-        """Gets the hostname of this DnsAssignMent.
+        r"""Gets the hostname of this DnsAssignMent.
 
         端口hostname
 
@@ -68,7 +68,7 @@ class DnsAssignMent:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this DnsAssignMent.
+        r"""Sets the hostname of this DnsAssignMent.
 
         端口hostname
 
@@ -79,7 +79,7 @@ class DnsAssignMent:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this DnsAssignMent.
+        r"""Gets the ip_address of this DnsAssignMent.
 
         端口IP地址
 
@@ -90,7 +90,7 @@ class DnsAssignMent:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this DnsAssignMent.
+        r"""Sets the ip_address of this DnsAssignMent.
 
         端口IP地址
 
@@ -101,7 +101,7 @@ class DnsAssignMent:
 
     @property
     def fqdn(self):
-        """Gets the fqdn of this DnsAssignMent.
+        r"""Gets the fqdn of this DnsAssignMent.
 
         端口内网fqdn
 
@@ -112,7 +112,7 @@ class DnsAssignMent:
 
     @fqdn.setter
     def fqdn(self, fqdn):
-        """Sets the fqdn of this DnsAssignMent.
+        r"""Sets the fqdn of this DnsAssignMent.
 
         端口内网fqdn
 

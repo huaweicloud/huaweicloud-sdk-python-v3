@@ -43,7 +43,7 @@ class BatchInquiryChangeRsp:
     }
 
     def __init__(self, ret_code=None, error_txt=None, amount=None, coupon_results=None, discount_amount=None, original_amount=None, measure_id=None, currency=None, product_rating_result=None, extend_params=None):
-        """BatchInquiryChangeRsp
+        r"""BatchInquiryChangeRsp
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def ret_code(self):
-        """Gets the ret_code of this BatchInquiryChangeRsp.
+        r"""Gets the ret_code of this BatchInquiryChangeRsp.
 
         返回码，恒为0
 
@@ -117,7 +117,7 @@ class BatchInquiryChangeRsp:
 
     @ret_code.setter
     def ret_code(self, ret_code):
-        """Sets the ret_code of this BatchInquiryChangeRsp.
+        r"""Sets the ret_code of this BatchInquiryChangeRsp.
 
         返回码，恒为0
 
@@ -128,7 +128,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def error_txt(self):
-        """Gets the error_txt of this BatchInquiryChangeRsp.
+        r"""Gets the error_txt of this BatchInquiryChangeRsp.
 
         返回信息
 
@@ -139,7 +139,7 @@ class BatchInquiryChangeRsp:
 
     @error_txt.setter
     def error_txt(self, error_txt):
-        """Sets the error_txt of this BatchInquiryChangeRsp.
+        r"""Sets the error_txt of this BatchInquiryChangeRsp.
 
         返回信息
 
@@ -150,7 +150,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def amount(self):
-        """Gets the amount of this BatchInquiryChangeRsp.
+        r"""Gets the amount of this BatchInquiryChangeRsp.
 
         总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
 
@@ -161,7 +161,7 @@ class BatchInquiryChangeRsp:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this BatchInquiryChangeRsp.
+        r"""Sets the amount of this BatchInquiryChangeRsp.
 
         总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
 
@@ -172,7 +172,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def coupon_results(self):
-        """Gets the coupon_results of this BatchInquiryChangeRsp.
+        r"""Gets the coupon_results of this BatchInquiryChangeRsp.
 
         券的退订金额（降配存在）
 
@@ -183,7 +183,7 @@ class BatchInquiryChangeRsp:
 
     @coupon_results.setter
     def coupon_results(self, coupon_results):
-        """Sets the coupon_results of this BatchInquiryChangeRsp.
+        r"""Sets the coupon_results of this BatchInquiryChangeRsp.
 
         券的退订金额（降配存在）
 
@@ -194,7 +194,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this BatchInquiryChangeRsp.
+        r"""Gets the discount_amount of this BatchInquiryChangeRsp.
 
         优惠额
 
@@ -205,7 +205,7 @@ class BatchInquiryChangeRsp:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this BatchInquiryChangeRsp.
+        r"""Sets the discount_amount of this BatchInquiryChangeRsp.
 
         优惠额
 
@@ -216,7 +216,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this BatchInquiryChangeRsp.
+        r"""Gets the original_amount of this BatchInquiryChangeRsp.
 
         原总额，即优惠前总额
 
@@ -227,7 +227,7 @@ class BatchInquiryChangeRsp:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this BatchInquiryChangeRsp.
+        r"""Sets the original_amount of this BatchInquiryChangeRsp.
 
         原总额，即优惠前总额
 
@@ -238,7 +238,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this BatchInquiryChangeRsp.
+        r"""Gets the measure_id of this BatchInquiryChangeRsp.
 
         度量单位标识
 
@@ -249,7 +249,7 @@ class BatchInquiryChangeRsp:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this BatchInquiryChangeRsp.
+        r"""Sets the measure_id of this BatchInquiryChangeRsp.
 
         度量单位标识
 
@@ -260,7 +260,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def currency(self):
-        """Gets the currency of this BatchInquiryChangeRsp.
+        r"""Gets the currency of this BatchInquiryChangeRsp.
 
         货币单位代码（遵循ISO 4217标准）
 
@@ -271,7 +271,7 @@ class BatchInquiryChangeRsp:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this BatchInquiryChangeRsp.
+        r"""Sets the currency of this BatchInquiryChangeRsp.
 
         货币单位代码（遵循ISO 4217标准）
 
@@ -282,7 +282,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def product_rating_result(self):
-        """Gets the product_rating_result of this BatchInquiryChangeRsp.
+        r"""Gets the product_rating_result of this BatchInquiryChangeRsp.
 
         批价结果
 
@@ -293,7 +293,7 @@ class BatchInquiryChangeRsp:
 
     @product_rating_result.setter
     def product_rating_result(self, product_rating_result):
-        """Sets the product_rating_result of this BatchInquiryChangeRsp.
+        r"""Sets the product_rating_result of this BatchInquiryChangeRsp.
 
         批价结果
 
@@ -304,7 +304,7 @@ class BatchInquiryChangeRsp:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this BatchInquiryChangeRsp.
+        r"""Gets the extend_params of this BatchInquiryChangeRsp.
 
         扩展参数
 
@@ -315,7 +315,7 @@ class BatchInquiryChangeRsp:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this BatchInquiryChangeRsp.
+        r"""Sets the extend_params of this BatchInquiryChangeRsp.
 
         扩展参数
 

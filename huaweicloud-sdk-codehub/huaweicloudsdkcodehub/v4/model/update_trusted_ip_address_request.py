@@ -29,7 +29,7 @@ class UpdateTrustedIpAddressRequest:
     }
 
     def __init__(self, id=None, ip_id=None, body=None):
-        """UpdateTrustedIpAddressRequest
+        r"""UpdateTrustedIpAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTrustedIpAddressRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTrustedIpAddressRequest.
+        r"""Gets the id of this UpdateTrustedIpAddressRequest.
 
         仓库id
 
@@ -66,7 +66,7 @@ class UpdateTrustedIpAddressRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTrustedIpAddressRequest.
+        r"""Sets the id of this UpdateTrustedIpAddressRequest.
 
         仓库id
 
@@ -77,7 +77,7 @@ class UpdateTrustedIpAddressRequest:
 
     @property
     def ip_id(self):
-        """Gets the ip_id of this UpdateTrustedIpAddressRequest.
+        r"""Gets the ip_id of this UpdateTrustedIpAddressRequest.
 
         ip的id
 
@@ -88,7 +88,7 @@ class UpdateTrustedIpAddressRequest:
 
     @ip_id.setter
     def ip_id(self, ip_id):
-        """Sets the ip_id of this UpdateTrustedIpAddressRequest.
+        r"""Sets the ip_id of this UpdateTrustedIpAddressRequest.
 
         ip的id
 
@@ -99,7 +99,7 @@ class UpdateTrustedIpAddressRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTrustedIpAddressRequest.
+        r"""Gets the body of this UpdateTrustedIpAddressRequest.
 
         :return: The body of this UpdateTrustedIpAddressRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`
@@ -108,7 +108,7 @@ class UpdateTrustedIpAddressRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTrustedIpAddressRequest.
+        r"""Sets the body of this UpdateTrustedIpAddressRequest.
 
         :param body: The body of this UpdateTrustedIpAddressRequest.
         :type body: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`

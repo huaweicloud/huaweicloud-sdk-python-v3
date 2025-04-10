@@ -57,7 +57,7 @@ class JobResult:
     }
 
     def __init__(self, name=None, job_type=None, owner=None, priority=None, status=None, create_user=None, create_time=None, start_time=None, end_time=None, last_instance_status=None, last_instance_end_time=None, last_update_time=None, last_update_user=None, path=None, single_node_job_flag=None, flink_job_info=None, alarms=None):
-        """JobResult
+        r"""JobResult
 
         The model defined in huaweicloud sdk
 
@@ -150,7 +150,7 @@ class JobResult:
 
     @property
     def name(self):
-        """Gets the name of this JobResult.
+        r"""Gets the name of this JobResult.
 
         作业名称
 
@@ -161,7 +161,7 @@ class JobResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobResult.
+        r"""Sets the name of this JobResult.
 
         作业名称
 
@@ -172,7 +172,7 @@ class JobResult:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobResult.
+        r"""Gets the job_type of this JobResult.
 
         作业类型
 
@@ -183,7 +183,7 @@ class JobResult:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobResult.
+        r"""Sets the job_type of this JobResult.
 
         作业类型
 
@@ -194,7 +194,7 @@ class JobResult:
 
     @property
     def owner(self):
-        """Gets the owner of this JobResult.
+        r"""Gets the owner of this JobResult.
 
         作业责任人，长度不能超过128个字符
 
@@ -205,7 +205,7 @@ class JobResult:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this JobResult.
+        r"""Sets the owner of this JobResult.
 
         作业责任人，长度不能超过128个字符
 
@@ -216,7 +216,7 @@ class JobResult:
 
     @property
     def priority(self):
-        """Gets the priority of this JobResult.
+        r"""Gets the priority of this JobResult.
 
         作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级
 
@@ -227,7 +227,7 @@ class JobResult:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this JobResult.
+        r"""Sets the priority of this JobResult.
 
         作业优先级，取值范围[0, 2]，默认值是0。0代表高优先级，1代表中优先级，2代表低优先级
 
@@ -238,7 +238,7 @@ class JobResult:
 
     @property
     def status(self):
-        """Gets the status of this JobResult.
+        r"""Gets the status of this JobResult.
 
         :return: The status of this JobResult.
         :rtype: str
@@ -247,7 +247,7 @@ class JobResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobResult.
+        r"""Sets the status of this JobResult.
 
         :param status: The status of this JobResult.
         :type status: str
@@ -256,7 +256,7 @@ class JobResult:
 
     @property
     def create_user(self):
-        """Gets the create_user of this JobResult.
+        r"""Gets the create_user of this JobResult.
 
         作业的创建者
 
@@ -267,7 +267,7 @@ class JobResult:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this JobResult.
+        r"""Sets the create_user of this JobResult.
 
         作业的创建者
 
@@ -278,7 +278,7 @@ class JobResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this JobResult.
+        r"""Gets the create_time of this JobResult.
 
         作业的创建时间
 
@@ -289,7 +289,7 @@ class JobResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this JobResult.
+        r"""Sets the create_time of this JobResult.
 
         作业的创建时间
 
@@ -300,7 +300,7 @@ class JobResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobResult.
+        r"""Gets the start_time of this JobResult.
 
         作业的启动时间
 
@@ -311,7 +311,7 @@ class JobResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobResult.
+        r"""Sets the start_time of this JobResult.
 
         作业的启动时间
 
@@ -322,7 +322,7 @@ class JobResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobResult.
+        r"""Gets the end_time of this JobResult.
 
         作业配置的结束时间
 
@@ -333,7 +333,7 @@ class JobResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobResult.
+        r"""Sets the end_time of this JobResult.
 
         作业配置的结束时间
 
@@ -344,7 +344,7 @@ class JobResult:
 
     @property
     def last_instance_status(self):
-        """Gets the last_instance_status of this JobResult.
+        r"""Gets the last_instance_status of this JobResult.
 
         作业最近一次运行实例状态，当jobType为BATCH时才有本字段
 
@@ -355,7 +355,7 @@ class JobResult:
 
     @last_instance_status.setter
     def last_instance_status(self, last_instance_status):
-        """Sets the last_instance_status of this JobResult.
+        r"""Sets the last_instance_status of this JobResult.
 
         作业最近一次运行实例状态，当jobType为BATCH时才有本字段
 
@@ -366,7 +366,7 @@ class JobResult:
 
     @property
     def last_instance_end_time(self):
-        """Gets the last_instance_end_time of this JobResult.
+        r"""Gets the last_instance_end_time of this JobResult.
 
         作业最近一次运行实例运行结束时间，当jobType为BATCH时才有本字段
 
@@ -377,7 +377,7 @@ class JobResult:
 
     @last_instance_end_time.setter
     def last_instance_end_time(self, last_instance_end_time):
-        """Sets the last_instance_end_time of this JobResult.
+        r"""Sets the last_instance_end_time of this JobResult.
 
         作业最近一次运行实例运行结束时间，当jobType为BATCH时才有本字段
 
@@ -388,7 +388,7 @@ class JobResult:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this JobResult.
+        r"""Gets the last_update_time of this JobResult.
 
         作业最后一次更新时间
 
@@ -399,7 +399,7 @@ class JobResult:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this JobResult.
+        r"""Sets the last_update_time of this JobResult.
 
         作业最后一次更新时间
 
@@ -410,7 +410,7 @@ class JobResult:
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this JobResult.
+        r"""Gets the last_update_user of this JobResult.
 
         作业最后一次更新用户
 
@@ -421,7 +421,7 @@ class JobResult:
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this JobResult.
+        r"""Sets the last_update_user of this JobResult.
 
         作业最后一次更新用户
 
@@ -432,7 +432,7 @@ class JobResult:
 
     @property
     def path(self):
-        """Gets the path of this JobResult.
+        r"""Gets the path of this JobResult.
 
         作业的路径
 
@@ -443,7 +443,7 @@ class JobResult:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this JobResult.
+        r"""Sets the path of this JobResult.
 
         作业的路径
 
@@ -454,7 +454,7 @@ class JobResult:
 
     @property
     def single_node_job_flag(self):
-        """Gets the single_node_job_flag of this JobResult.
+        r"""Gets the single_node_job_flag of this JobResult.
 
         作业是否为单任务作业
 
@@ -465,7 +465,7 @@ class JobResult:
 
     @single_node_job_flag.setter
     def single_node_job_flag(self, single_node_job_flag):
-        """Sets the single_node_job_flag of this JobResult.
+        r"""Sets the single_node_job_flag of this JobResult.
 
         作业是否为单任务作业
 
@@ -476,7 +476,7 @@ class JobResult:
 
     @property
     def flink_job_info(self):
-        """Gets the flink_job_info of this JobResult.
+        r"""Gets the flink_job_info of this JobResult.
 
         flink作业信息
 
@@ -487,7 +487,7 @@ class JobResult:
 
     @flink_job_info.setter
     def flink_job_info(self, flink_job_info):
-        """Sets the flink_job_info of this JobResult.
+        r"""Sets the flink_job_info of this JobResult.
 
         flink作业信息
 
@@ -498,7 +498,7 @@ class JobResult:
 
     @property
     def alarms(self):
-        """Gets the alarms of this JobResult.
+        r"""Gets the alarms of this JobResult.
 
         作业监控告警信息
 
@@ -509,7 +509,7 @@ class JobResult:
 
     @alarms.setter
     def alarms(self, alarms):
-        """Sets the alarms of this JobResult.
+        r"""Sets the alarms of this JobResult.
 
         作业监控告警信息
 

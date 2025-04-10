@@ -31,7 +31,7 @@ class LiveDetectBase64Req:
     }
 
     def __init__(self, video_base64=None, actions=None, action_time=None, nod_threshold=None):
-        """LiveDetectBase64Req
+        r"""LiveDetectBase64Req
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class LiveDetectBase64Req:
 
     @property
     def video_base64(self):
-        """Gets the video_base64 of this LiveDetectBase64Req.
+        r"""Gets the video_base64 of this LiveDetectBase64Req.
 
         视频数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议客户端压缩到200KB~2MB。 • 限制视频时长1～15秒。 • 建议帧率10fps～30fps。 • 封装格式：mp4、avi、flv、webm、asf、mov。 • 视频编码格式： h261、h263、h264、hevc、vc1、vp8、vp9、wmv3。
 
@@ -73,7 +73,7 @@ class LiveDetectBase64Req:
 
     @video_base64.setter
     def video_base64(self, video_base64):
-        """Sets the video_base64 of this LiveDetectBase64Req.
+        r"""Sets the video_base64 of this LiveDetectBase64Req.
 
         视频数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议客户端压缩到200KB~2MB。 • 限制视频时长1～15秒。 • 建议帧率10fps～30fps。 • 封装格式：mp4、avi、flv、webm、asf、mov。 • 视频编码格式： h261、h263、h264、hevc、vc1、vp8、vp9、wmv3。
 
@@ -84,7 +84,7 @@ class LiveDetectBase64Req:
 
     @property
     def actions(self):
-        """Gets the actions of this LiveDetectBase64Req.
+        r"""Gets the actions of this LiveDetectBase64Req.
 
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
 
@@ -95,7 +95,7 @@ class LiveDetectBase64Req:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this LiveDetectBase64Req.
+        r"""Sets the actions of this LiveDetectBase64Req.
 
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
 
@@ -106,7 +106,7 @@ class LiveDetectBase64Req:
 
     @property
     def action_time(self):
-        """Gets the action_time of this LiveDetectBase64Req.
+        r"""Gets the action_time of this LiveDetectBase64Req.
 
         该参数为动作时间数组拼接的字符串，数组的长度和actions的数量一致，每一项代表了对应次序动作的起始时间和结束时间，单位为距视频开始的毫秒数。
 
@@ -117,7 +117,7 @@ class LiveDetectBase64Req:
 
     @action_time.setter
     def action_time(self, action_time):
-        """Sets the action_time of this LiveDetectBase64Req.
+        r"""Sets the action_time of this LiveDetectBase64Req.
 
         该参数为动作时间数组拼接的字符串，数组的长度和actions的数量一致，每一项代表了对应次序动作的起始时间和结束时间，单位为距视频开始的毫秒数。
 
@@ -128,7 +128,7 @@ class LiveDetectBase64Req:
 
     @property
     def nod_threshold(self):
-        """Gets the nod_threshold of this LiveDetectBase64Req.
+        r"""Gets the nod_threshold of this LiveDetectBase64Req.
 
         该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
 
@@ -139,7 +139,7 @@ class LiveDetectBase64Req:
 
     @nod_threshold.setter
     def nod_threshold(self, nod_threshold):
-        """Sets the nod_threshold of this LiveDetectBase64Req.
+        r"""Sets the nod_threshold of this LiveDetectBase64Req.
 
         该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
 

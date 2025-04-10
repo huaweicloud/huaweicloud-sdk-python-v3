@@ -27,7 +27,7 @@ class RemediationStaticParameter:
     }
 
     def __init__(self, var_key=None, var_value=None):
-        """RemediationStaticParameter
+        r"""RemediationStaticParameter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RemediationStaticParameter:
 
     @property
     def var_key(self):
-        """Gets the var_key of this RemediationStaticParameter.
+        r"""Gets the var_key of this RemediationStaticParameter.
 
         参数名称。
 
@@ -61,7 +61,7 @@ class RemediationStaticParameter:
 
     @var_key.setter
     def var_key(self, var_key):
-        """Sets the var_key of this RemediationStaticParameter.
+        r"""Sets the var_key of this RemediationStaticParameter.
 
         参数名称。
 
@@ -72,7 +72,7 @@ class RemediationStaticParameter:
 
     @property
     def var_value(self):
-        """Gets the var_value of this RemediationStaticParameter.
+        r"""Gets the var_value of this RemediationStaticParameter.
 
         参数的值。
 
@@ -83,7 +83,7 @@ class RemediationStaticParameter:
 
     @var_value.setter
     def var_value(self, var_value):
-        """Sets the var_value of this RemediationStaticParameter.
+        r"""Sets the var_value of this RemediationStaticParameter.
 
         参数的值。
 

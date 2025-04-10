@@ -31,7 +31,7 @@ class UpdatePolicyRequestBody:
     }
 
     def __init__(self, name=None, threshold=None, description=None, udp=None):
-        """UpdatePolicyRequestBody
+        r"""UpdatePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePolicyRequestBody.
+        r"""Gets the name of this UpdatePolicyRequestBody.
 
         策略名
 
@@ -75,7 +75,7 @@ class UpdatePolicyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePolicyRequestBody.
+        r"""Sets the name of this UpdatePolicyRequestBody.
 
         策略名
 
@@ -86,7 +86,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def threshold(self):
-        """Gets the threshold of this UpdatePolicyRequestBody.
+        r"""Gets the threshold of this UpdatePolicyRequestBody.
 
         清洗阈值
 
@@ -97,7 +97,7 @@ class UpdatePolicyRequestBody:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this UpdatePolicyRequestBody.
+        r"""Sets the threshold of this UpdatePolicyRequestBody.
 
         清洗阈值
 
@@ -108,7 +108,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePolicyRequestBody.
+        r"""Gets the description of this UpdatePolicyRequestBody.
 
         描述
 
@@ -119,7 +119,7 @@ class UpdatePolicyRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePolicyRequestBody.
+        r"""Sets the description of this UpdatePolicyRequestBody.
 
         描述
 
@@ -130,7 +130,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def udp(self):
-        """Gets the udp of this UpdatePolicyRequestBody.
+        r"""Gets the udp of this UpdatePolicyRequestBody.
 
         udp协议封禁。block：封禁，unblock：不封禁
 
@@ -141,7 +141,7 @@ class UpdatePolicyRequestBody:
 
     @udp.setter
     def udp(self, udp):
-        """Sets the udp of this UpdatePolicyRequestBody.
+        r"""Sets the udp of this UpdatePolicyRequestBody.
 
         udp协议封禁。block：封禁，unblock：不封禁
 

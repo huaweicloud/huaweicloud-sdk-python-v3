@@ -37,7 +37,7 @@ class CreateHostedDirectConnect:
     }
 
     def __init__(self, name=None, description=None, bandwidth=None, hosting_id=None, vlan=None, resource_tenant_id=None, peer_location=None):
-        """CreateHostedDirectConnect
+        r"""CreateHostedDirectConnect
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreateHostedDirectConnect:
 
     @property
     def name(self):
-        """Gets the name of this CreateHostedDirectConnect.
+        r"""Gets the name of this CreateHostedDirectConnect.
 
         托管物理专线的名字。
 
@@ -92,7 +92,7 @@ class CreateHostedDirectConnect:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHostedDirectConnect.
+        r"""Sets the name of this CreateHostedDirectConnect.
 
         托管物理专线的名字。
 
@@ -103,7 +103,7 @@ class CreateHostedDirectConnect:
 
     @property
     def description(self):
-        """Gets the description of this CreateHostedDirectConnect.
+        r"""Gets the description of this CreateHostedDirectConnect.
 
         托管专线的描述信息
 
@@ -114,7 +114,7 @@ class CreateHostedDirectConnect:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHostedDirectConnect.
+        r"""Sets the description of this CreateHostedDirectConnect.
 
         托管专线的描述信息
 
@@ -125,7 +125,7 @@ class CreateHostedDirectConnect:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreateHostedDirectConnect.
+        r"""Gets the bandwidth of this CreateHostedDirectConnect.
 
         指定托管专线接入带宽,单位Mbps
 
@@ -136,7 +136,7 @@ class CreateHostedDirectConnect:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreateHostedDirectConnect.
+        r"""Sets the bandwidth of this CreateHostedDirectConnect.
 
         指定托管专线接入带宽,单位Mbps
 
@@ -147,7 +147,7 @@ class CreateHostedDirectConnect:
 
     @property
     def hosting_id(self):
-        """Gets the hosting_id of this CreateHostedDirectConnect.
+        r"""Gets the hosting_id of this CreateHostedDirectConnect.
 
         hosted物理专线对应的hosting物理专线的ID
 
@@ -158,7 +158,7 @@ class CreateHostedDirectConnect:
 
     @hosting_id.setter
     def hosting_id(self, hosting_id):
-        """Sets the hosting_id of this CreateHostedDirectConnect.
+        r"""Sets the hosting_id of this CreateHostedDirectConnect.
 
         hosted物理专线对应的hosting物理专线的ID
 
@@ -169,7 +169,7 @@ class CreateHostedDirectConnect:
 
     @property
     def vlan(self):
-        """Gets the vlan of this CreateHostedDirectConnect.
+        r"""Gets the vlan of this CreateHostedDirectConnect.
 
         指定托管(hosted)专线预分配的vlan
 
@@ -180,7 +180,7 @@ class CreateHostedDirectConnect:
 
     @vlan.setter
     def vlan(self, vlan):
-        """Sets the vlan of this CreateHostedDirectConnect.
+        r"""Sets the vlan of this CreateHostedDirectConnect.
 
         指定托管(hosted)专线预分配的vlan
 
@@ -191,7 +191,7 @@ class CreateHostedDirectConnect:
 
     @property
     def resource_tenant_id(self):
-        """Gets the resource_tenant_id of this CreateHostedDirectConnect.
+        r"""Gets the resource_tenant_id of this CreateHostedDirectConnect.
 
         为其他租户创建托管专线，指定对应的租户ID
 
@@ -202,7 +202,7 @@ class CreateHostedDirectConnect:
 
     @resource_tenant_id.setter
     def resource_tenant_id(self, resource_tenant_id):
-        """Sets the resource_tenant_id of this CreateHostedDirectConnect.
+        r"""Sets the resource_tenant_id of this CreateHostedDirectConnect.
 
         为其他租户创建托管专线，指定对应的租户ID
 
@@ -213,7 +213,7 @@ class CreateHostedDirectConnect:
 
     @property
     def peer_location(self):
-        """Gets the peer_location of this CreateHostedDirectConnect.
+        r"""Gets the peer_location of this CreateHostedDirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字。
 
@@ -224,7 +224,7 @@ class CreateHostedDirectConnect:
 
     @peer_location.setter
     def peer_location(self, peer_location):
-        """Sets the peer_location of this CreateHostedDirectConnect.
+        r"""Sets the peer_location of this CreateHostedDirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字。
 

@@ -30,7 +30,7 @@ class BatchListModulesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, modules=None):
-        """BatchListModulesResponse
+        r"""BatchListModulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListModulesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListModulesResponse.
+        r"""Gets the count of this BatchListModulesResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListModulesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListModulesResponse.
+        r"""Sets the count of this BatchListModulesResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListModulesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListModulesResponse.
+        r"""Gets the page_info of this BatchListModulesResponse.
 
         :return: The page_info of this BatchListModulesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListModulesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListModulesResponse.
+        r"""Sets the page_info of this BatchListModulesResponse.
 
         :param page_info: The page_info of this BatchListModulesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListModulesResponse(SdkResponse):
 
     @property
     def modules(self):
-        """Gets the modules of this BatchListModulesResponse.
+        r"""Gets the modules of this BatchListModulesResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class BatchListModulesResponse(SdkResponse):
 
     @modules.setter
     def modules(self, modules):
-        """Sets the modules of this BatchListModulesResponse.
+        r"""Sets the modules of this BatchListModulesResponse.
 
         每页记录数
 

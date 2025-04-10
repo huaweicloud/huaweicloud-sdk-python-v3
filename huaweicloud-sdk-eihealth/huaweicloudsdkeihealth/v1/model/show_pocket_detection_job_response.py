@@ -32,7 +32,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, receptor=None, ligand=None, params=None):
-        """ShowPocketDetectionJobResponse
+        r"""ShowPocketDetectionJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowPocketDetectionJobResponse.
+        r"""Gets the basic_info of this ShowPocketDetectionJobResponse.
 
         :return: The basic_info of this ShowPocketDetectionJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -74,7 +74,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowPocketDetectionJobResponse.
+        r"""Sets the basic_info of this ShowPocketDetectionJobResponse.
 
         :param basic_info: The basic_info of this ShowPocketDetectionJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -83,7 +83,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @property
     def receptor(self):
-        """Gets the receptor of this ShowPocketDetectionJobResponse.
+        r"""Gets the receptor of this ShowPocketDetectionJobResponse.
 
         :return: The receptor of this ShowPocketDetectionJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -92,7 +92,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this ShowPocketDetectionJobResponse.
+        r"""Sets the receptor of this ShowPocketDetectionJobResponse.
 
         :param receptor: The receptor of this ShowPocketDetectionJobResponse.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -101,7 +101,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @property
     def ligand(self):
-        """Gets the ligand of this ShowPocketDetectionJobResponse.
+        r"""Gets the ligand of this ShowPocketDetectionJobResponse.
 
         :return: The ligand of this ShowPocketDetectionJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProbeDrugFile`
@@ -110,7 +110,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this ShowPocketDetectionJobResponse.
+        r"""Sets the ligand of this ShowPocketDetectionJobResponse.
 
         :param ligand: The ligand of this ShowPocketDetectionJobResponse.
         :type ligand: :class:`huaweicloudsdkeihealth.v1.ProbeDrugFile`
@@ -119,7 +119,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowPocketDetectionJobResponse.
+        r"""Gets the params of this ShowPocketDetectionJobResponse.
 
         :return: The params of this ShowPocketDetectionJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PocketDetectionParamDto`
@@ -128,7 +128,7 @@ class ShowPocketDetectionJobResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowPocketDetectionJobResponse.
+        r"""Sets the params of this ShowPocketDetectionJobResponse.
 
         :param params: The params of this ShowPocketDetectionJobResponse.
         :type params: :class:`huaweicloudsdkeihealth.v1.PocketDetectionParamDto`

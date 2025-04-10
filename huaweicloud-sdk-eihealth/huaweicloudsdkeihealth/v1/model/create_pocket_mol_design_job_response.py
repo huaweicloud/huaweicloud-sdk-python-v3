@@ -28,7 +28,7 @@ class CreatePocketMolDesignJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, limit_concurrency=None):
-        """CreatePocketMolDesignJobResponse
+        r"""CreatePocketMolDesignJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreatePocketMolDesignJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePocketMolDesignJobResponse.
+        r"""Gets the id of this CreatePocketMolDesignJobResponse.
 
         作业id
 
@@ -62,7 +62,7 @@ class CreatePocketMolDesignJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePocketMolDesignJobResponse.
+        r"""Sets the id of this CreatePocketMolDesignJobResponse.
 
         作业id
 
@@ -73,7 +73,7 @@ class CreatePocketMolDesignJobResponse(SdkResponse):
 
     @property
     def limit_concurrency(self):
-        """Gets the limit_concurrency of this CreatePocketMolDesignJobResponse.
+        r"""Gets the limit_concurrency of this CreatePocketMolDesignJobResponse.
 
         限制的并发量
 
@@ -84,7 +84,7 @@ class CreatePocketMolDesignJobResponse(SdkResponse):
 
     @limit_concurrency.setter
     def limit_concurrency(self, limit_concurrency):
-        """Sets the limit_concurrency of this CreatePocketMolDesignJobResponse.
+        r"""Sets the limit_concurrency of this CreatePocketMolDesignJobResponse.
 
         限制的并发量
 

@@ -45,7 +45,7 @@ class PublicipCreateResp:
     }
 
     def __init__(self, bandwidth_size=None, create_time=None, id=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, enterprise_project_id=None, alias=None):
-        """PublicipCreateResp
+        r"""PublicipCreateResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PublicipCreateResp:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this PublicipCreateResp.
+        r"""Gets the bandwidth_size of this PublicipCreateResp.
 
         带宽大小，单位为Mbit/s。
 
@@ -124,7 +124,7 @@ class PublicipCreateResp:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this PublicipCreateResp.
+        r"""Sets the bandwidth_size of this PublicipCreateResp.
 
         带宽大小，单位为Mbit/s。
 
@@ -135,7 +135,7 @@ class PublicipCreateResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublicipCreateResp.
+        r"""Gets the create_time of this PublicipCreateResp.
 
         弹性公网IP申请时间（UTC时间）
 
@@ -146,7 +146,7 @@ class PublicipCreateResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublicipCreateResp.
+        r"""Sets the create_time of this PublicipCreateResp.
 
         弹性公网IP申请时间（UTC时间）
 
@@ -157,7 +157,7 @@ class PublicipCreateResp:
 
     @property
     def id(self):
-        """Gets the id of this PublicipCreateResp.
+        r"""Gets the id of this PublicipCreateResp.
 
         弹性公网IP唯一标识
 
@@ -168,7 +168,7 @@ class PublicipCreateResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicipCreateResp.
+        r"""Sets the id of this PublicipCreateResp.
 
         弹性公网IP唯一标识
 
@@ -179,7 +179,7 @@ class PublicipCreateResp:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this PublicipCreateResp.
+        r"""Gets the public_ip_address of this PublicipCreateResp.
 
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
@@ -190,7 +190,7 @@ class PublicipCreateResp:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this PublicipCreateResp.
+        r"""Sets the public_ip_address of this PublicipCreateResp.
 
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
@@ -201,7 +201,7 @@ class PublicipCreateResp:
 
     @property
     def status(self):
-        """Gets the status of this PublicipCreateResp.
+        r"""Gets the status of this PublicipCreateResp.
 
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
@@ -212,7 +212,7 @@ class PublicipCreateResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicipCreateResp.
+        r"""Sets the status of this PublicipCreateResp.
 
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
@@ -223,7 +223,7 @@ class PublicipCreateResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PublicipCreateResp.
+        r"""Gets the tenant_id of this PublicipCreateResp.
 
         项目ID
 
@@ -234,7 +234,7 @@ class PublicipCreateResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PublicipCreateResp.
+        r"""Sets the tenant_id of this PublicipCreateResp.
 
         项目ID
 
@@ -245,7 +245,7 @@ class PublicipCreateResp:
 
     @property
     def type(self):
-        """Gets the type of this PublicipCreateResp.
+        r"""Gets the type of this PublicipCreateResp.
 
         功能说明：弹性IP弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型publicip_id为IPv4端口，所以\"publicip_type\"字段未给定时，默认为5_bgp。
 
@@ -256,7 +256,7 @@ class PublicipCreateResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicipCreateResp.
+        r"""Sets the type of this PublicipCreateResp.
 
         功能说明：弹性IP弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型publicip_id为IPv4端口，所以\"publicip_type\"字段未给定时，默认为5_bgp。
 
@@ -267,7 +267,7 @@ class PublicipCreateResp:
 
     @property
     def public_ipv6_address(self):
-        """Gets the public_ipv6_address of this PublicipCreateResp.
+        r"""Gets the public_ipv6_address of this PublicipCreateResp.
 
         IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -278,7 +278,7 @@ class PublicipCreateResp:
 
     @public_ipv6_address.setter
     def public_ipv6_address(self, public_ipv6_address):
-        """Sets the public_ipv6_address of this PublicipCreateResp.
+        r"""Sets the public_ipv6_address of this PublicipCreateResp.
 
         IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -289,7 +289,7 @@ class PublicipCreateResp:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicipCreateResp.
+        r"""Gets the ip_version of this PublicipCreateResp.
 
         IP版本信息，取值范围是4和6
 
@@ -300,7 +300,7 @@ class PublicipCreateResp:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicipCreateResp.
+        r"""Sets the ip_version of this PublicipCreateResp.
 
         IP版本信息，取值范围是4和6
 
@@ -311,7 +311,7 @@ class PublicipCreateResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PublicipCreateResp.
+        r"""Gets the enterprise_project_id of this PublicipCreateResp.
 
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
 
@@ -322,7 +322,7 @@ class PublicipCreateResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PublicipCreateResp.
+        r"""Sets the enterprise_project_id of this PublicipCreateResp.
 
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
 
@@ -333,7 +333,7 @@ class PublicipCreateResp:
 
     @property
     def alias(self):
-        """Gets the alias of this PublicipCreateResp.
+        r"""Gets the alias of this PublicipCreateResp.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -344,7 +344,7 @@ class PublicipCreateResp:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this PublicipCreateResp.
+        r"""Sets the alias of this PublicipCreateResp.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 

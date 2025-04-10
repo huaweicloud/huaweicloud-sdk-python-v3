@@ -27,7 +27,7 @@ class AppInstanceConfig:
     }
 
     def __init__(self, pgsql_instance_config=None, model_instance_config=None):
-        """AppInstanceConfig
+        r"""AppInstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppInstanceConfig:
 
     @property
     def pgsql_instance_config(self):
-        """Gets the pgsql_instance_config of this AppInstanceConfig.
+        r"""Gets the pgsql_instance_config of this AppInstanceConfig.
 
         :return: The pgsql_instance_config of this AppInstanceConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.PGSQLInstanceConfig`
@@ -59,7 +59,7 @@ class AppInstanceConfig:
 
     @pgsql_instance_config.setter
     def pgsql_instance_config(self, pgsql_instance_config):
-        """Sets the pgsql_instance_config of this AppInstanceConfig.
+        r"""Sets the pgsql_instance_config of this AppInstanceConfig.
 
         :param pgsql_instance_config: The pgsql_instance_config of this AppInstanceConfig.
         :type pgsql_instance_config: :class:`huaweicloudsdkdataartsfabricep.v1.PGSQLInstanceConfig`
@@ -68,7 +68,7 @@ class AppInstanceConfig:
 
     @property
     def model_instance_config(self):
-        """Gets the model_instance_config of this AppInstanceConfig.
+        r"""Gets the model_instance_config of this AppInstanceConfig.
 
         :return: The model_instance_config of this AppInstanceConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ModelServiceInstanceConfig`
@@ -77,7 +77,7 @@ class AppInstanceConfig:
 
     @model_instance_config.setter
     def model_instance_config(self, model_instance_config):
-        """Sets the model_instance_config of this AppInstanceConfig.
+        r"""Sets the model_instance_config of this AppInstanceConfig.
 
         :param model_instance_config: The model_instance_config of this AppInstanceConfig.
         :type model_instance_config: :class:`huaweicloudsdkdataartsfabricep.v1.ModelServiceInstanceConfig`

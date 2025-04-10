@@ -39,7 +39,7 @@ class TranscriberConfig:
     }
 
     def __init__(self, audio_format=None, _property=None, add_punc=None, need_analysis_info=None, vocabulary_id=None, digit_norm=None, callback_url=None, need_word_info=None):
-        """TranscriberConfig
+        r"""TranscriberConfig
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class TranscriberConfig:
 
     @property
     def audio_format(self):
-        """Gets the audio_format of this TranscriberConfig.
+        r"""Gets the audio_format of this TranscriberConfig.
 
         支持语音的格式。  audioformat取值范围:  auto  自动判断，系统会自动判断并支持WAV（内部支持pcm/ulaw/alaw/adpcm编码格式）、MP3、M4A、ogg-speex、ogg-opus、AMR、wma等格式，相应的文件后缀名为.wav, .mp3, .m4a, .spx, .opus, .amr 和.wma, 不区分大小写。支持双声道的音频。  pcm16k16bit  16k16bit裸音频录音数据。  pcm8k16bit   8k16bit裸音频录音数据。  ulaw16k8bit  16k8bit ulaw 裸音频录音数据。  ulaw8k8bit   8k8bit ulaw 裸音频录音数据。  alaw16k8bit  16k8bit alaw 裸音频录音数据。  alaw8k8bit   8k8bit alaw 裸音频录音数据。  vox8k4bit    8k4bit vox 裸音频录音数据。  v3_8k4bit    8k4bit v3 裸音频录音数据。
 
@@ -102,7 +102,7 @@ class TranscriberConfig:
 
     @audio_format.setter
     def audio_format(self, audio_format):
-        """Sets the audio_format of this TranscriberConfig.
+        r"""Sets the audio_format of this TranscriberConfig.
 
         支持语音的格式。  audioformat取值范围:  auto  自动判断，系统会自动判断并支持WAV（内部支持pcm/ulaw/alaw/adpcm编码格式）、MP3、M4A、ogg-speex、ogg-opus、AMR、wma等格式，相应的文件后缀名为.wav, .mp3, .m4a, .spx, .opus, .amr 和.wma, 不区分大小写。支持双声道的音频。  pcm16k16bit  16k16bit裸音频录音数据。  pcm8k16bit   8k16bit裸音频录音数据。  ulaw16k8bit  16k8bit ulaw 裸音频录音数据。  ulaw8k8bit   8k8bit ulaw 裸音频录音数据。  alaw16k8bit  16k8bit alaw 裸音频录音数据。  alaw8k8bit   8k8bit alaw 裸音频录音数据。  vox8k4bit    8k4bit vox 裸音频录音数据。  v3_8k4bit    8k4bit v3 裸音频录音数据。
 
@@ -113,7 +113,7 @@ class TranscriberConfig:
 
     @property
     def _property(self):
-        """Gets the _property of this TranscriberConfig.
+        r"""Gets the _property of this TranscriberConfig.
 
         所使用的模型特征串。通常是“语种_采样率_领域”的形式，例如chinese_8k_common。  采样率需要与音频采样率保持一致。  当前支持如下模型特征串：  chinese_8k_general （最新8k 通用版e2e模型，推荐使用）  chinese_16k_media (音视频领域，区域仅支持cn-north-4，cn-east-3)  chinese_8k_common  chinese_16k_conversation  chinese_8k_bank（银行领域，区域仅支持cn-north-4）  chinese_8k_insurance（保险领域，区域仅支持cn-north-4）  sichuan_8k_common （四川话识别，区域支持cn-north-4，cn-east-3） 
 
@@ -124,7 +124,7 @@ class TranscriberConfig:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this TranscriberConfig.
+        r"""Sets the _property of this TranscriberConfig.
 
         所使用的模型特征串。通常是“语种_采样率_领域”的形式，例如chinese_8k_common。  采样率需要与音频采样率保持一致。  当前支持如下模型特征串：  chinese_8k_general （最新8k 通用版e2e模型，推荐使用）  chinese_16k_media (音视频领域，区域仅支持cn-north-4，cn-east-3)  chinese_8k_common  chinese_16k_conversation  chinese_8k_bank（银行领域，区域仅支持cn-north-4）  chinese_8k_insurance（保险领域，区域仅支持cn-north-4）  sichuan_8k_common （四川话识别，区域支持cn-north-4，cn-east-3） 
 
@@ -135,7 +135,7 @@ class TranscriberConfig:
 
     @property
     def add_punc(self):
-        """Gets the add_punc of this TranscriberConfig.
+        r"""Gets the add_punc of this TranscriberConfig.
 
         是否加标点， 可以为 yes, no(缺省)。
 
@@ -146,7 +146,7 @@ class TranscriberConfig:
 
     @add_punc.setter
     def add_punc(self, add_punc):
-        """Sets the add_punc of this TranscriberConfig.
+        r"""Sets the add_punc of this TranscriberConfig.
 
         是否加标点， 可以为 yes, no(缺省)。
 
@@ -157,7 +157,7 @@ class TranscriberConfig:
 
     @property
     def need_analysis_info(self):
-        """Gets the need_analysis_info of this TranscriberConfig.
+        r"""Gets the need_analysis_info of this TranscriberConfig.
 
         :return: The need_analysis_info of this TranscriberConfig.
         :rtype: :class:`huaweicloudsdksis.v1.AnalysisInfo`
@@ -166,7 +166,7 @@ class TranscriberConfig:
 
     @need_analysis_info.setter
     def need_analysis_info(self, need_analysis_info):
-        """Sets the need_analysis_info of this TranscriberConfig.
+        r"""Sets the need_analysis_info of this TranscriberConfig.
 
         :param need_analysis_info: The need_analysis_info of this TranscriberConfig.
         :type need_analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfo`
@@ -175,7 +175,7 @@ class TranscriberConfig:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this TranscriberConfig.
+        r"""Gets the vocabulary_id of this TranscriberConfig.
 
         热词表id，不使用则不填写。
 
@@ -186,7 +186,7 @@ class TranscriberConfig:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this TranscriberConfig.
+        r"""Sets the vocabulary_id of this TranscriberConfig.
 
         热词表id，不使用则不填写。
 
@@ -197,7 +197,7 @@ class TranscriberConfig:
 
     @property
     def digit_norm(self):
-        """Gets the digit_norm of this TranscriberConfig.
+        r"""Gets the digit_norm of this TranscriberConfig.
 
         表示是否将语音中的数字识别为阿拉伯数字，取值为yes 、 no，缺省为yes。
 
@@ -208,7 +208,7 @@ class TranscriberConfig:
 
     @digit_norm.setter
     def digit_norm(self, digit_norm):
-        """Sets the digit_norm of this TranscriberConfig.
+        r"""Sets the digit_norm of this TranscriberConfig.
 
         表示是否将语音中的数字识别为阿拉伯数字，取值为yes 、 no，缺省为yes。
 
@@ -219,7 +219,7 @@ class TranscriberConfig:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this TranscriberConfig.
+        r"""Gets the callback_url of this TranscriberConfig.
 
         用于录音文件识表示回调 url，即用户用于接收识别结果的服务器地址，不支持IP地址方式调用，url长度小于2048字节。服务请求方法为POST。  如果用户使用回调方式获取识别结果，需填写该参数，处理成功后用户服务器需返回状态码“200”。  如果用户使用轮询方式获取识别结果，则无需填写该参数。别结果的回调url，不使用则不填写。
 
@@ -230,7 +230,7 @@ class TranscriberConfig:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this TranscriberConfig.
+        r"""Sets the callback_url of this TranscriberConfig.
 
         用于录音文件识表示回调 url，即用户用于接收识别结果的服务器地址，不支持IP地址方式调用，url长度小于2048字节。服务请求方法为POST。  如果用户使用回调方式获取识别结果，需填写该参数，处理成功后用户服务器需返回状态码“200”。  如果用户使用轮询方式获取识别结果，则无需填写该参数。别结果的回调url，不使用则不填写。
 
@@ -241,7 +241,7 @@ class TranscriberConfig:
 
     @property
     def need_word_info(self):
-        """Gets the need_word_info of this TranscriberConfig.
+        r"""Gets the need_word_info of this TranscriberConfig.
 
         表示是否在识别结果中输出分词结果信息，取值为“yes”和“no”，默认为“no”。
 
@@ -252,7 +252,7 @@ class TranscriberConfig:
 
     @need_word_info.setter
     def need_word_info(self, need_word_info):
-        """Sets the need_word_info of this TranscriberConfig.
+        r"""Sets the need_word_info of this TranscriberConfig.
 
         表示是否在识别结果中输出分词结果信息，取值为“yes”和“no”，默认为“no”。
 

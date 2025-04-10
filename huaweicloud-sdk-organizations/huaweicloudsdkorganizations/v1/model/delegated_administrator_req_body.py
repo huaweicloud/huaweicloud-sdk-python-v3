@@ -27,7 +27,7 @@ class DelegatedAdministratorReqBody:
     }
 
     def __init__(self, service_principal=None, account_id=None):
-        """DelegatedAdministratorReqBody
+        r"""DelegatedAdministratorReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DelegatedAdministratorReqBody:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this DelegatedAdministratorReqBody.
+        r"""Gets the service_principal of this DelegatedAdministratorReqBody.
 
         服务主体名称。
 
@@ -59,7 +59,7 @@ class DelegatedAdministratorReqBody:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this DelegatedAdministratorReqBody.
+        r"""Sets the service_principal of this DelegatedAdministratorReqBody.
 
         服务主体名称。
 
@@ -70,7 +70,7 @@ class DelegatedAdministratorReqBody:
 
     @property
     def account_id(self):
-        """Gets the account_id of this DelegatedAdministratorReqBody.
+        r"""Gets the account_id of this DelegatedAdministratorReqBody.
 
         账号的唯一标识符（ID）。
 
@@ -81,7 +81,7 @@ class DelegatedAdministratorReqBody:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this DelegatedAdministratorReqBody.
+        r"""Sets the account_id of this DelegatedAdministratorReqBody.
 
         账号的唯一标识符（ID）。
 

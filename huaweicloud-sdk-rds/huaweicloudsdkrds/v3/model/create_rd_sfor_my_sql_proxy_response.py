@@ -26,7 +26,7 @@ class CreateRdSforMySqlProxyResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateRdSforMySqlProxyResponse
+        r"""CreateRdSforMySqlProxyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRdSforMySqlProxyResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateRdSforMySqlProxyResponse.
+        r"""Gets the job_id of this CreateRdSforMySqlProxyResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class CreateRdSforMySqlProxyResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateRdSforMySqlProxyResponse.
+        r"""Sets the job_id of this CreateRdSforMySqlProxyResponse.
 
         任务ID。
 

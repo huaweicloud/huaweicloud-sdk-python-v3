@@ -34,7 +34,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
-        """AddDesktopVolumesResponse
+        r"""AddDesktopVolumesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AddDesktopVolumesResponse.
+        r"""Gets the job_id of this AddDesktopVolumesResponse.
 
         增加磁盘任务id
 
@@ -83,7 +83,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AddDesktopVolumesResponse.
+        r"""Sets the job_id of this AddDesktopVolumesResponse.
 
         增加磁盘任务id
 
@@ -94,7 +94,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @property
     def get_job_endpoint(self):
-        """Gets the get_job_endpoint of this AddDesktopVolumesResponse.
+        r"""Gets the get_job_endpoint of this AddDesktopVolumesResponse.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
 
@@ -105,7 +105,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @get_job_endpoint.setter
     def get_job_endpoint(self, get_job_endpoint):
-        """Sets the get_job_endpoint of this AddDesktopVolumesResponse.
+        r"""Sets the get_job_endpoint of this AddDesktopVolumesResponse.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
 
@@ -116,7 +116,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @property
     def max_provision_time(self):
-        """Gets the max_provision_time of this AddDesktopVolumesResponse.
+        r"""Gets the max_provision_time of this AddDesktopVolumesResponse.
 
         在线开通最大时间
 
@@ -127,7 +127,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @max_provision_time.setter
     def max_provision_time(self, max_provision_time):
-        """Sets the max_provision_time of this AddDesktopVolumesResponse.
+        r"""Sets the max_provision_time of this AddDesktopVolumesResponse.
 
         在线开通最大时间
 
@@ -138,7 +138,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @property
     def min_provision_time(self):
-        """Gets the min_provision_time of this AddDesktopVolumesResponse.
+        r"""Gets the min_provision_time of this AddDesktopVolumesResponse.
 
         开通最小时间（云服务最快开通时长，或一般开通时长）
 
@@ -149,7 +149,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @min_provision_time.setter
     def min_provision_time(self, min_provision_time):
-        """Sets the min_provision_time of this AddDesktopVolumesResponse.
+        r"""Sets the min_provision_time of this AddDesktopVolumesResponse.
 
         开通最小时间（云服务最快开通时长，或一般开通时长）
 
@@ -160,7 +160,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @property
     def periodic_query_time(self):
-        """Gets the periodic_query_time of this AddDesktopVolumesResponse.
+        r"""Gets the periodic_query_time of this AddDesktopVolumesResponse.
 
         Job周期性查询时间，默认1分钟查询一次
 
@@ -171,7 +171,7 @@ class AddDesktopVolumesResponse(SdkResponse):
 
     @periodic_query_time.setter
     def periodic_query_time(self, periodic_query_time):
-        """Sets the periodic_query_time of this AddDesktopVolumesResponse.
+        r"""Sets the periodic_query_time of this AddDesktopVolumesResponse.
 
         Job周期性查询时间，默认1分钟查询一次
 

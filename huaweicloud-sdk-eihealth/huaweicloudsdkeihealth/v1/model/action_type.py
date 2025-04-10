@@ -27,7 +27,7 @@ class ActionType:
     }
 
     def __init__(self):
-        """ActionType
+        r"""ActionType
 
         The model defined in huaweicloud sdk
 

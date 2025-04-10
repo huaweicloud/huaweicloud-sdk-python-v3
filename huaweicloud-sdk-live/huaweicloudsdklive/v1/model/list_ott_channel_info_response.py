@@ -28,7 +28,7 @@ class ListOttChannelInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, channels=None):
-        """ListOttChannelInfoResponse
+        r"""ListOttChannelInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOttChannelInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListOttChannelInfoResponse.
+        r"""Gets the total of this ListOttChannelInfoResponse.
 
         总频道数
 
@@ -62,7 +62,7 @@ class ListOttChannelInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListOttChannelInfoResponse.
+        r"""Sets the total of this ListOttChannelInfoResponse.
 
         总频道数
 
@@ -73,7 +73,7 @@ class ListOttChannelInfoResponse(SdkResponse):
 
     @property
     def channels(self):
-        """Gets the channels of this ListOttChannelInfoResponse.
+        r"""Gets the channels of this ListOttChannelInfoResponse.
 
         频道信息
 
@@ -84,7 +84,7 @@ class ListOttChannelInfoResponse(SdkResponse):
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this ListOttChannelInfoResponse.
+        r"""Sets the channels of this ListOttChannelInfoResponse.
 
         频道信息
 

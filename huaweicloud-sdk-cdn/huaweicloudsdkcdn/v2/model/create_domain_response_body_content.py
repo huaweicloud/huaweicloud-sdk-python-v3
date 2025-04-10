@@ -59,7 +59,7 @@ class CreateDomainResponseBodyContent:
     }
 
     def __init__(self, id=None, domain_name=None, business_type=None, service_area=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, range_status=None, follow_status=None, origin_status=None, auto_refresh_preheat=None):
-        """CreateDomainResponseBodyContent
+        r"""CreateDomainResponseBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def id(self):
-        """Gets the id of this CreateDomainResponseBodyContent.
+        r"""Gets the id of this CreateDomainResponseBodyContent.
 
         加速域名ID。
 
@@ -173,7 +173,7 @@ class CreateDomainResponseBodyContent:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDomainResponseBodyContent.
+        r"""Sets the id of this CreateDomainResponseBodyContent.
 
         加速域名ID。
 
@@ -184,7 +184,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateDomainResponseBodyContent.
+        r"""Gets the domain_name of this CreateDomainResponseBodyContent.
 
         加速域名。
 
@@ -195,7 +195,7 @@ class CreateDomainResponseBodyContent:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateDomainResponseBodyContent.
+        r"""Sets the domain_name of this CreateDomainResponseBodyContent.
 
         加速域名。
 
@@ -206,7 +206,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def business_type(self):
-        """Gets the business_type of this CreateDomainResponseBodyContent.
+        r"""Gets the business_type of this CreateDomainResponseBodyContent.
 
         域名业务类型： - web:网站加速； - download:文件下载加速； - video:点播加速； - wholeSite:全站加速。
 
@@ -217,7 +217,7 @@ class CreateDomainResponseBodyContent:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this CreateDomainResponseBodyContent.
+        r"""Sets the business_type of this CreateDomainResponseBodyContent.
 
         域名业务类型： - web:网站加速； - download:文件下载加速； - video:点播加速； - wholeSite:全站加速。
 
@@ -228,7 +228,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def service_area(self):
-        """Gets the service_area of this CreateDomainResponseBodyContent.
+        r"""Gets the service_area of this CreateDomainResponseBodyContent.
 
         域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
 
@@ -239,7 +239,7 @@ class CreateDomainResponseBodyContent:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this CreateDomainResponseBodyContent.
+        r"""Sets the service_area of this CreateDomainResponseBodyContent.
 
         域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
 
@@ -250,7 +250,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def user_domain_id(self):
-        """Gets the user_domain_id of this CreateDomainResponseBodyContent.
+        r"""Gets the user_domain_id of this CreateDomainResponseBodyContent.
 
         域名所属用户的domain_id。
 
@@ -261,7 +261,7 @@ class CreateDomainResponseBodyContent:
 
     @user_domain_id.setter
     def user_domain_id(self, user_domain_id):
-        """Sets the user_domain_id of this CreateDomainResponseBodyContent.
+        r"""Sets the user_domain_id of this CreateDomainResponseBodyContent.
 
         域名所属用户的domain_id。
 
@@ -272,7 +272,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def domain_status(self):
-        """Gets the domain_status of this CreateDomainResponseBodyContent.
+        r"""Gets the domain_status of this CreateDomainResponseBodyContent.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -283,7 +283,7 @@ class CreateDomainResponseBodyContent:
 
     @domain_status.setter
     def domain_status(self, domain_status):
-        """Sets the domain_status of this CreateDomainResponseBodyContent.
+        r"""Sets the domain_status of this CreateDomainResponseBodyContent.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -294,7 +294,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def cname(self):
-        """Gets the cname of this CreateDomainResponseBodyContent.
+        r"""Gets the cname of this CreateDomainResponseBodyContent.
 
         加速域名对应的CNAME。
 
@@ -305,7 +305,7 @@ class CreateDomainResponseBodyContent:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this CreateDomainResponseBodyContent.
+        r"""Sets the cname of this CreateDomainResponseBodyContent.
 
         加速域名对应的CNAME。
 
@@ -316,7 +316,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def sources(self):
-        """Gets the sources of this CreateDomainResponseBodyContent.
+        r"""Gets the sources of this CreateDomainResponseBodyContent.
 
         源站信息。
 
@@ -327,7 +327,7 @@ class CreateDomainResponseBodyContent:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this CreateDomainResponseBodyContent.
+        r"""Sets the sources of this CreateDomainResponseBodyContent.
 
         源站信息。
 
@@ -338,7 +338,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def domain_origin_host(self):
-        """Gets the domain_origin_host of this CreateDomainResponseBodyContent.
+        r"""Gets the domain_origin_host of this CreateDomainResponseBodyContent.
 
         :return: The domain_origin_host of this CreateDomainResponseBodyContent.
         :rtype: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
@@ -347,7 +347,7 @@ class CreateDomainResponseBodyContent:
 
     @domain_origin_host.setter
     def domain_origin_host(self, domain_origin_host):
-        """Sets the domain_origin_host of this CreateDomainResponseBodyContent.
+        r"""Sets the domain_origin_host of this CreateDomainResponseBodyContent.
 
         :param domain_origin_host: The domain_origin_host of this CreateDomainResponseBodyContent.
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
@@ -356,7 +356,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def https_status(self):
-        """Gets the https_status of this CreateDomainResponseBodyContent.
+        r"""Gets the https_status of this CreateDomainResponseBodyContent.
 
         是否开启HTTPS加速。
 
@@ -367,7 +367,7 @@ class CreateDomainResponseBodyContent:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this CreateDomainResponseBodyContent.
+        r"""Sets the https_status of this CreateDomainResponseBodyContent.
 
         是否开启HTTPS加速。
 
@@ -378,7 +378,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDomainResponseBodyContent.
+        r"""Gets the create_time of this CreateDomainResponseBodyContent.
 
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -389,7 +389,7 @@ class CreateDomainResponseBodyContent:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDomainResponseBodyContent.
+        r"""Sets the create_time of this CreateDomainResponseBodyContent.
 
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -400,7 +400,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this CreateDomainResponseBodyContent.
+        r"""Gets the modify_time of this CreateDomainResponseBodyContent.
 
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -411,7 +411,7 @@ class CreateDomainResponseBodyContent:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this CreateDomainResponseBodyContent.
+        r"""Sets the modify_time of this CreateDomainResponseBodyContent.
 
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -422,7 +422,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def disabled(self):
-        """Gets the disabled of this CreateDomainResponseBodyContent.
+        r"""Gets the disabled of this CreateDomainResponseBodyContent.
 
         封禁状态（0代表未禁用；1代表禁用）。
 
@@ -433,7 +433,7 @@ class CreateDomainResponseBodyContent:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this CreateDomainResponseBodyContent.
+        r"""Sets the disabled of this CreateDomainResponseBodyContent.
 
         封禁状态（0代表未禁用；1代表禁用）。
 
@@ -444,7 +444,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def locked(self):
-        """Gets the locked of this CreateDomainResponseBodyContent.
+        r"""Gets the locked of this CreateDomainResponseBodyContent.
 
         锁定状态（0代表未锁定；1代表锁定）。
 
@@ -455,7 +455,7 @@ class CreateDomainResponseBodyContent:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this CreateDomainResponseBodyContent.
+        r"""Sets the locked of this CreateDomainResponseBodyContent.
 
         锁定状态（0代表未锁定；1代表锁定）。
 
@@ -466,7 +466,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def range_status(self):
-        """Gets the range_status of this CreateDomainResponseBodyContent.
+        r"""Gets the range_status of this CreateDomainResponseBodyContent.
 
         range状态，off：关闭，on：开启。
 
@@ -477,7 +477,7 @@ class CreateDomainResponseBodyContent:
 
     @range_status.setter
     def range_status(self, range_status):
-        """Sets the range_status of this CreateDomainResponseBodyContent.
+        r"""Sets the range_status of this CreateDomainResponseBodyContent.
 
         range状态，off：关闭，on：开启。
 
@@ -488,7 +488,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def follow_status(self):
-        """Gets the follow_status of this CreateDomainResponseBodyContent.
+        r"""Gets the follow_status of this CreateDomainResponseBodyContent.
 
         follow302状态，off：关闭，on：开启。
 
@@ -499,7 +499,7 @@ class CreateDomainResponseBodyContent:
 
     @follow_status.setter
     def follow_status(self, follow_status):
-        """Sets the follow_status of this CreateDomainResponseBodyContent.
+        r"""Sets the follow_status of this CreateDomainResponseBodyContent.
 
         follow302状态，off：关闭，on：开启。
 
@@ -510,7 +510,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def origin_status(self):
-        """Gets the origin_status of this CreateDomainResponseBodyContent.
+        r"""Gets the origin_status of this CreateDomainResponseBodyContent.
 
         是否暂停源站回源（off代表关闭 on代表开启）。
 
@@ -521,7 +521,7 @@ class CreateDomainResponseBodyContent:
 
     @origin_status.setter
     def origin_status(self, origin_status):
-        """Sets the origin_status of this CreateDomainResponseBodyContent.
+        r"""Sets the origin_status of this CreateDomainResponseBodyContent.
 
         是否暂停源站回源（off代表关闭 on代表开启）。
 
@@ -532,7 +532,7 @@ class CreateDomainResponseBodyContent:
 
     @property
     def auto_refresh_preheat(self):
-        """Gets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
+        r"""Gets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
 
         自动刷新预热（0代表关闭；1代表打开）。
 
@@ -543,7 +543,7 @@ class CreateDomainResponseBodyContent:
 
     @auto_refresh_preheat.setter
     def auto_refresh_preheat(self, auto_refresh_preheat):
-        """Sets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
+        r"""Sets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
 
         自动刷新预热（0代表关闭；1代表打开）。
 

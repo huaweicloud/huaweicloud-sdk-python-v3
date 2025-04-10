@@ -25,7 +25,7 @@ class CreateTopicRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTopicRequest
+        r"""CreateTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTopicRequest.
+        r"""Gets the body of this CreateTopicRequest.
 
         :return: The body of this CreateTopicRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.CreateTopicRequestBody`
@@ -52,7 +52,7 @@ class CreateTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTopicRequest.
+        r"""Sets the body of this CreateTopicRequest.
 
         :param body: The body of this CreateTopicRequest.
         :type body: :class:`huaweicloudsdksmn.v2.CreateTopicRequestBody`

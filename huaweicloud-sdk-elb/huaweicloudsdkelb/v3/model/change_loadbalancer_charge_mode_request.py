@@ -25,7 +25,7 @@ class ChangeLoadbalancerChargeModeRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeLoadbalancerChargeModeRequest
+        r"""ChangeLoadbalancerChargeModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeLoadbalancerChargeModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeLoadbalancerChargeModeRequest.
+        r"""Gets the body of this ChangeLoadbalancerChargeModeRequest.
 
         :return: The body of this ChangeLoadbalancerChargeModeRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerChargeModeRequestBody`
@@ -52,7 +52,7 @@ class ChangeLoadbalancerChargeModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeLoadbalancerChargeModeRequest.
+        r"""Sets the body of this ChangeLoadbalancerChargeModeRequest.
 
         :param body: The body of this ChangeLoadbalancerChargeModeRequest.
         :type body: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerChargeModeRequestBody`

@@ -25,7 +25,7 @@ class ProviderAgencyUrnPrimitiveTypeHolder:
     }
 
     def __init__(self, provider_agency_urn=None):
-        """ProviderAgencyUrnPrimitiveTypeHolder
+        r"""ProviderAgencyUrnPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProviderAgencyUrnPrimitiveTypeHolder:
 
     @property
     def provider_agency_urn(self):
-        """Gets the provider_agency_urn of this ProviderAgencyUrnPrimitiveTypeHolder.
+        r"""Gets the provider_agency_urn of this ProviderAgencyUrnPrimitiveTypeHolder.
 
         自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
 
@@ -54,7 +54,7 @@ class ProviderAgencyUrnPrimitiveTypeHolder:
 
     @provider_agency_urn.setter
     def provider_agency_urn(self, provider_agency_urn):
-        """Sets the provider_agency_urn of this ProviderAgencyUrnPrimitiveTypeHolder.
+        r"""Sets the provider_agency_urn of this ProviderAgencyUrnPrimitiveTypeHolder.
 
         自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
 

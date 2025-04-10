@@ -35,7 +35,7 @@ class FinancialStatementWordsBlockList:
     }
 
     def __init__(self, words=None, location=None, confidence=None, rows=None, columns=None, cell_location=None):
-        """FinancialStatementWordsBlockList
+        r"""FinancialStatementWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FinancialStatementWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this FinancialStatementWordsBlockList.
+        r"""Gets the words of this FinancialStatementWordsBlockList.
 
         文字块内容。当入参\"return_text_location\"为false时，每个单元格返回一个文本值，不同行文本由换行符 \"\\n\" 拼接。 
 
@@ -89,7 +89,7 @@ class FinancialStatementWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this FinancialStatementWordsBlockList.
+        r"""Sets the words of this FinancialStatementWordsBlockList.
 
         文字块内容。当入参\"return_text_location\"为false时，每个单元格返回一个文本值，不同行文本由换行符 \"\\n\" 拼接。 
 
@@ -100,7 +100,7 @@ class FinancialStatementWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this FinancialStatementWordsBlockList.
+        r"""Gets the location of this FinancialStatementWordsBlockList.
 
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -111,7 +111,7 @@ class FinancialStatementWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this FinancialStatementWordsBlockList.
+        r"""Sets the location of this FinancialStatementWordsBlockList.
 
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -122,7 +122,7 @@ class FinancialStatementWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this FinancialStatementWordsBlockList.
+        r"""Gets the confidence of this FinancialStatementWordsBlockList.
 
         文字块识别结果置信度信息，置信度越大，表示本次识别的对应字段的可靠性越大，在统计意义上，置信度越大正确率越高。注：置信度由算法给出，其不直接等价于对应字段的精度。 
 
@@ -133,7 +133,7 @@ class FinancialStatementWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this FinancialStatementWordsBlockList.
+        r"""Sets the confidence of this FinancialStatementWordsBlockList.
 
         文字块识别结果置信度信息，置信度越大，表示本次识别的对应字段的可靠性越大，在统计意义上，置信度越大正确率越高。注：置信度由算法给出，其不直接等价于对应字段的精度。 
 
@@ -144,7 +144,7 @@ class FinancialStatementWordsBlockList:
 
     @property
     def rows(self):
-        """Gets the rows of this FinancialStatementWordsBlockList.
+        r"""Gets the rows of this FinancialStatementWordsBlockList.
 
         单元格行信息，列表形式。多个连续值表示单元格垮多行。 
 
@@ -155,7 +155,7 @@ class FinancialStatementWordsBlockList:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this FinancialStatementWordsBlockList.
+        r"""Sets the rows of this FinancialStatementWordsBlockList.
 
         单元格行信息，列表形式。多个连续值表示单元格垮多行。 
 
@@ -166,7 +166,7 @@ class FinancialStatementWordsBlockList:
 
     @property
     def columns(self):
-        """Gets the columns of this FinancialStatementWordsBlockList.
+        r"""Gets the columns of this FinancialStatementWordsBlockList.
 
         单元格列信息，列表形式。多个连续值表示单元格垮多列。 
 
@@ -177,7 +177,7 @@ class FinancialStatementWordsBlockList:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this FinancialStatementWordsBlockList.
+        r"""Sets the columns of this FinancialStatementWordsBlockList.
 
         单元格列信息，列表形式。多个连续值表示单元格垮多列。 
 
@@ -188,7 +188,7 @@ class FinancialStatementWordsBlockList:
 
     @property
     def cell_location(self):
-        """Gets the cell_location of this FinancialStatementWordsBlockList.
+        r"""Gets the cell_location of this FinancialStatementWordsBlockList.
 
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -199,7 +199,7 @@ class FinancialStatementWordsBlockList:
 
     @cell_location.setter
     def cell_location(self, cell_location):
-        """Sets the cell_location of this FinancialStatementWordsBlockList.
+        r"""Sets the cell_location of this FinancialStatementWordsBlockList.
 
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

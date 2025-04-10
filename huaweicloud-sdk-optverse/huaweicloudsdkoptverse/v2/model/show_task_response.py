@@ -40,7 +40,7 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, input_json=None, status=None, progress=None, output_json=None, start_time=None, end_time=None, create_time=None):
-        """ShowTaskResponse
+        r"""ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskResponse.
+        r"""Gets the task_id of this ShowTaskResponse.
 
         任务ID
 
@@ -104,7 +104,7 @@ class ShowTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskResponse.
+        r"""Sets the task_id of this ShowTaskResponse.
 
         任务ID
 
@@ -115,7 +115,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def input_json(self):
-        """Gets the input_json of this ShowTaskResponse.
+        r"""Gets the input_json of this ShowTaskResponse.
 
         用户输入
 
@@ -126,7 +126,7 @@ class ShowTaskResponse(SdkResponse):
 
     @input_json.setter
     def input_json(self, input_json):
-        """Sets the input_json of this ShowTaskResponse.
+        r"""Sets the input_json of this ShowTaskResponse.
 
         用户输入
 
@@ -137,7 +137,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTaskResponse.
+        r"""Gets the status of this ShowTaskResponse.
 
         状态
 
@@ -148,7 +148,7 @@ class ShowTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTaskResponse.
+        r"""Sets the status of this ShowTaskResponse.
 
         状态
 
@@ -159,7 +159,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowTaskResponse.
+        r"""Gets the progress of this ShowTaskResponse.
 
         任务进度
 
@@ -170,7 +170,7 @@ class ShowTaskResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowTaskResponse.
+        r"""Sets the progress of this ShowTaskResponse.
 
         任务进度
 
@@ -181,7 +181,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def output_json(self):
-        """Gets the output_json of this ShowTaskResponse.
+        r"""Gets the output_json of this ShowTaskResponse.
 
         输出
 
@@ -192,7 +192,7 @@ class ShowTaskResponse(SdkResponse):
 
     @output_json.setter
     def output_json(self, output_json):
-        """Sets the output_json of this ShowTaskResponse.
+        r"""Sets the output_json of this ShowTaskResponse.
 
         输出
 
@@ -203,7 +203,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTaskResponse.
+        r"""Gets the start_time of this ShowTaskResponse.
 
         开始时间
 
@@ -214,7 +214,7 @@ class ShowTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTaskResponse.
+        r"""Sets the start_time of this ShowTaskResponse.
 
         开始时间
 
@@ -225,7 +225,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTaskResponse.
+        r"""Gets the end_time of this ShowTaskResponse.
 
         结束时间
 
@@ -236,7 +236,7 @@ class ShowTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTaskResponse.
+        r"""Sets the end_time of this ShowTaskResponse.
 
         结束时间
 
@@ -247,7 +247,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTaskResponse.
+        r"""Gets the create_time of this ShowTaskResponse.
 
         创建时间
 
@@ -258,7 +258,7 @@ class ShowTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTaskResponse.
+        r"""Sets the create_time of this ShowTaskResponse.
 
         创建时间
 

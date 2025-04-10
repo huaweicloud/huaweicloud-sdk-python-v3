@@ -39,7 +39,7 @@ class AlarmInfoResponseAlarmInfo:
     }
 
     def __init__(self, alarm_time=None, job_name=None, schedule_type=None, send_msg=None, plan_time=None, remind_type=None, send_status=None, job_id=None):
-        """AlarmInfoResponseAlarmInfo
+        r"""AlarmInfoResponseAlarmInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def alarm_time(self):
-        """Gets the alarm_time of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the alarm_time of this AlarmInfoResponseAlarmInfo.
 
         告警通知时间
 
@@ -103,7 +103,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @alarm_time.setter
     def alarm_time(self, alarm_time):
-        """Sets the alarm_time of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the alarm_time of this AlarmInfoResponseAlarmInfo.
 
         告警通知时间
 
@@ -114,7 +114,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the job_name of this AlarmInfoResponseAlarmInfo.
 
         作业名称
 
@@ -125,7 +125,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the job_name of this AlarmInfoResponseAlarmInfo.
 
         作业名称
 
@@ -136,7 +136,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the schedule_type of this AlarmInfoResponseAlarmInfo.
 
         作业实例调度方式，取值范围：0 正常调度，2手工调度，5补数据，6子作业调度，7单次调度
 
@@ -147,7 +147,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the schedule_type of this AlarmInfoResponseAlarmInfo.
 
         作业实例调度方式，取值范围：0 正常调度，2手工调度，5补数据，6子作业调度，7单次调度
 
@@ -158,7 +158,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def send_msg(self):
-        """Gets the send_msg of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the send_msg of this AlarmInfoResponseAlarmInfo.
 
         发送信息
 
@@ -169,7 +169,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @send_msg.setter
     def send_msg(self, send_msg):
-        """Sets the send_msg of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the send_msg of this AlarmInfoResponseAlarmInfo.
 
         发送信息
 
@@ -180,7 +180,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def plan_time(self):
-        """Gets the plan_time of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the plan_time of this AlarmInfoResponseAlarmInfo.
 
         计划时间
 
@@ -191,7 +191,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @plan_time.setter
     def plan_time(self, plan_time):
-        """Sets the plan_time of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the plan_time of this AlarmInfoResponseAlarmInfo.
 
         计划时间
 
@@ -202,7 +202,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def remind_type(self):
-        """Gets the remind_type of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the remind_type of this AlarmInfoResponseAlarmInfo.
 
         告警通知类型，取值范围：0 运行成功，1 运行异常/失败， 12 未完成，13 运行取消
 
@@ -213,7 +213,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @remind_type.setter
     def remind_type(self, remind_type):
-        """Sets the remind_type of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the remind_type of this AlarmInfoResponseAlarmInfo.
 
         告警通知类型，取值范围：0 运行成功，1 运行异常/失败， 12 未完成，13 运行取消
 
@@ -224,7 +224,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def send_status(self):
-        """Gets the send_status of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the send_status of this AlarmInfoResponseAlarmInfo.
 
         发送状态，取值范围：0 发送成功，1：发送失败
 
@@ -235,7 +235,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @send_status.setter
     def send_status(self, send_status):
-        """Sets the send_status of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the send_status of this AlarmInfoResponseAlarmInfo.
 
         发送状态，取值范围：0 发送成功，1：发送失败
 
@@ -246,7 +246,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this AlarmInfoResponseAlarmInfo.
+        r"""Gets the job_id of this AlarmInfoResponseAlarmInfo.
 
         作业ID
 
@@ -257,7 +257,7 @@ class AlarmInfoResponseAlarmInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AlarmInfoResponseAlarmInfo.
+        r"""Sets the job_id of this AlarmInfoResponseAlarmInfo.
 
         作业ID
 

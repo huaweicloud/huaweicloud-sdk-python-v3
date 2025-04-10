@@ -49,7 +49,7 @@ class DataSourceRsp:
     }
 
     def __init__(self, datasource_id=None, datasource_name=None, datasource_type=None, vpc_id=None, app_id=None, app_name=None, instance_id=None, create_time=None, update_time=None, custom_plugin_id=None, content=None, description=None, app_permission=None):
-        """DataSourceRsp
+        r"""DataSourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class DataSourceRsp:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this DataSourceRsp.
+        r"""Gets the datasource_id of this DataSourceRsp.
 
         数据源ID
 
@@ -138,7 +138,7 @@ class DataSourceRsp:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this DataSourceRsp.
+        r"""Sets the datasource_id of this DataSourceRsp.
 
         数据源ID
 
@@ -149,7 +149,7 @@ class DataSourceRsp:
 
     @property
     def datasource_name(self):
-        """Gets the datasource_name of this DataSourceRsp.
+        r"""Gets the datasource_name of this DataSourceRsp.
 
         数据源名称
 
@@ -160,7 +160,7 @@ class DataSourceRsp:
 
     @datasource_name.setter
     def datasource_name(self, datasource_name):
-        """Sets the datasource_name of this DataSourceRsp.
+        r"""Sets the datasource_name of this DataSourceRsp.
 
         数据源名称
 
@@ -171,7 +171,7 @@ class DataSourceRsp:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DataSourceRsp.
+        r"""Gets the datasource_type of this DataSourceRsp.
 
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
@@ -182,7 +182,7 @@ class DataSourceRsp:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DataSourceRsp.
+        r"""Sets the datasource_type of this DataSourceRsp.
 
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
@@ -193,7 +193,7 @@ class DataSourceRsp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this DataSourceRsp.
+        r"""Gets the vpc_id of this DataSourceRsp.
 
         数据源所属虚拟私有云VpcId
 
@@ -204,7 +204,7 @@ class DataSourceRsp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this DataSourceRsp.
+        r"""Sets the vpc_id of this DataSourceRsp.
 
         数据源所属虚拟私有云VpcId
 
@@ -215,7 +215,7 @@ class DataSourceRsp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DataSourceRsp.
+        r"""Gets the app_id of this DataSourceRsp.
 
         数据源所属应用ID
 
@@ -226,7 +226,7 @@ class DataSourceRsp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DataSourceRsp.
+        r"""Sets the app_id of this DataSourceRsp.
 
         数据源所属应用ID
 
@@ -237,7 +237,7 @@ class DataSourceRsp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DataSourceRsp.
+        r"""Gets the app_name of this DataSourceRsp.
 
         数据源所属应用名称
 
@@ -248,7 +248,7 @@ class DataSourceRsp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DataSourceRsp.
+        r"""Sets the app_name of this DataSourceRsp.
 
         数据源所属应用名称
 
@@ -259,7 +259,7 @@ class DataSourceRsp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DataSourceRsp.
+        r"""Gets the instance_id of this DataSourceRsp.
 
         数据源所属实例Id
 
@@ -270,7 +270,7 @@ class DataSourceRsp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DataSourceRsp.
+        r"""Sets the instance_id of this DataSourceRsp.
 
         数据源所属实例Id
 
@@ -281,7 +281,7 @@ class DataSourceRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataSourceRsp.
+        r"""Gets the create_time of this DataSourceRsp.
 
         数据源创建时间
 
@@ -292,7 +292,7 @@ class DataSourceRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataSourceRsp.
+        r"""Sets the create_time of this DataSourceRsp.
 
         数据源创建时间
 
@@ -303,7 +303,7 @@ class DataSourceRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DataSourceRsp.
+        r"""Gets the update_time of this DataSourceRsp.
 
         数据源修改时间
 
@@ -314,7 +314,7 @@ class DataSourceRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DataSourceRsp.
+        r"""Sets the update_time of this DataSourceRsp.
 
         数据源修改时间
 
@@ -325,7 +325,7 @@ class DataSourceRsp:
 
     @property
     def custom_plugin_id(self):
-        """Gets the custom_plugin_id of this DataSourceRsp.
+        r"""Gets the custom_plugin_id of this DataSourceRsp.
 
         数据源所属连接器Id
 
@@ -336,7 +336,7 @@ class DataSourceRsp:
 
     @custom_plugin_id.setter
     def custom_plugin_id(self, custom_plugin_id):
-        """Sets the custom_plugin_id of this DataSourceRsp.
+        r"""Sets the custom_plugin_id of this DataSourceRsp.
 
         数据源所属连接器Id
 
@@ -347,7 +347,7 @@ class DataSourceRsp:
 
     @property
     def content(self):
-        """Gets the content of this DataSourceRsp.
+        r"""Gets the content of this DataSourceRsp.
 
         :return: The content of this DataSourceRsp.
         :rtype: :class:`huaweicloudsdkroma.v2.Content`
@@ -356,7 +356,7 @@ class DataSourceRsp:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DataSourceRsp.
+        r"""Sets the content of this DataSourceRsp.
 
         :param content: The content of this DataSourceRsp.
         :type content: :class:`huaweicloudsdkroma.v2.Content`
@@ -365,7 +365,7 @@ class DataSourceRsp:
 
     @property
     def description(self):
-        """Gets the description of this DataSourceRsp.
+        r"""Gets the description of this DataSourceRsp.
 
         数据源描述
 
@@ -376,7 +376,7 @@ class DataSourceRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataSourceRsp.
+        r"""Sets the description of this DataSourceRsp.
 
         数据源描述
 
@@ -387,7 +387,7 @@ class DataSourceRsp:
 
     @property
     def app_permission(self):
-        """Gets the app_permission of this DataSourceRsp.
+        r"""Gets the app_permission of this DataSourceRsp.
 
         集成应用权限信息 - read (读权限) - access (调用权限) - delete (删除权限) - modify (修改权限)
 
@@ -398,7 +398,7 @@ class DataSourceRsp:
 
     @app_permission.setter
     def app_permission(self, app_permission):
-        """Sets the app_permission of this DataSourceRsp.
+        r"""Sets the app_permission of this DataSourceRsp.
 
         集成应用权限信息 - read (读权限) - access (调用权限) - delete (删除权限) - modify (修改权限)
 

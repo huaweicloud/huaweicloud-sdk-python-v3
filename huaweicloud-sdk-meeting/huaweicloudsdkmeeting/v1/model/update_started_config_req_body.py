@@ -43,7 +43,7 @@ class UpdateStartedConfigReqBody:
     }
 
     def __init__(self, lock_sharing=None, call_in_restriction=None, allow_unmute_by_oneself=None, chat_permission=None, audience_call_in_restriction=None, client_rec_mode=None, allow_open_camera=None, allow_rename=None, is_lock=None, free_share=None):
-        """UpdateStartedConfigReqBody
+        r"""UpdateStartedConfigReqBody
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def lock_sharing(self):
-        """Gets the lock_sharing of this UpdateStartedConfigReqBody.
+        r"""Gets the lock_sharing of this UpdateStartedConfigReqBody.
 
         锁定共享标志位。 * 0: 不锁定 * 1: 锁定 
 
@@ -117,7 +117,7 @@ class UpdateStartedConfigReqBody:
 
     @lock_sharing.setter
     def lock_sharing(self, lock_sharing):
-        """Sets the lock_sharing of this UpdateStartedConfigReqBody.
+        r"""Sets the lock_sharing of this UpdateStartedConfigReqBody.
 
         锁定共享标志位。 * 0: 不锁定 * 1: 锁定 
 
@@ -128,7 +128,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def call_in_restriction(self):
-        """Gets the call_in_restriction of this UpdateStartedConfigReqBody.
+        r"""Gets the call_in_restriction of this UpdateStartedConfigReqBody.
 
         允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
@@ -139,7 +139,7 @@ class UpdateStartedConfigReqBody:
 
     @call_in_restriction.setter
     def call_in_restriction(self, call_in_restriction):
-        """Sets the call_in_restriction of this UpdateStartedConfigReqBody.
+        r"""Sets the call_in_restriction of this UpdateStartedConfigReqBody.
 
         允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
@@ -150,7 +150,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def allow_unmute_by_oneself(self):
-        """Gets the allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
+        r"""Gets the allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
 
         是否允许自己解除静音，默认为允许 - 0: 不允许 - 1: 允许 
 
@@ -161,7 +161,7 @@ class UpdateStartedConfigReqBody:
 
     @allow_unmute_by_oneself.setter
     def allow_unmute_by_oneself(self, allow_unmute_by_oneself):
-        """Sets the allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
+        r"""Sets the allow_unmute_by_oneself of this UpdateStartedConfigReqBody.
 
         是否允许自己解除静音，默认为允许 - 0: 不允许 - 1: 允许 
 
@@ -172,7 +172,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def chat_permission(self):
-        """Gets the chat_permission of this UpdateStartedConfigReqBody.
+        r"""Gets the chat_permission of this UpdateStartedConfigReqBody.
 
         会议聊天权限 1.全员禁止 2.仅允许私聊 3.仅允许公开聊天 4.允许自由聊天
 
@@ -183,7 +183,7 @@ class UpdateStartedConfigReqBody:
 
     @chat_permission.setter
     def chat_permission(self, chat_permission):
-        """Sets the chat_permission of this UpdateStartedConfigReqBody.
+        r"""Sets the chat_permission of this UpdateStartedConfigReqBody.
 
         会议聊天权限 1.全员禁止 2.仅允许私聊 3.仅允许公开聊天 4.允许自由聊天
 
@@ -194,7 +194,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def audience_call_in_restriction(self):
-        """Gets the audience_call_in_restriction of this UpdateStartedConfigReqBody.
+        r"""Gets the audience_call_in_restriction of this UpdateStartedConfigReqBody.
 
         网络研讨会观众允许呼入的范围 0：所有用户  2：企业内用户和被邀请用户
 
@@ -205,7 +205,7 @@ class UpdateStartedConfigReqBody:
 
     @audience_call_in_restriction.setter
     def audience_call_in_restriction(self, audience_call_in_restriction):
-        """Sets the audience_call_in_restriction of this UpdateStartedConfigReqBody.
+        r"""Sets the audience_call_in_restriction of this UpdateStartedConfigReqBody.
 
         网络研讨会观众允许呼入的范围 0：所有用户  2：企业内用户和被邀请用户
 
@@ -216,7 +216,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def client_rec_mode(self):
-        """Gets the client_rec_mode of this UpdateStartedConfigReqBody.
+        r"""Gets the client_rec_mode of this UpdateStartedConfigReqBody.
 
         客户端本地录制权限的范围，默认为仅主持人支持本地录制 - 0: 所有用户 - 1：全部人可录制 - 2：部分人可录制 
 
@@ -227,7 +227,7 @@ class UpdateStartedConfigReqBody:
 
     @client_rec_mode.setter
     def client_rec_mode(self, client_rec_mode):
-        """Sets the client_rec_mode of this UpdateStartedConfigReqBody.
+        r"""Sets the client_rec_mode of this UpdateStartedConfigReqBody.
 
         客户端本地录制权限的范围，默认为仅主持人支持本地录制 - 0: 所有用户 - 1：全部人可录制 - 2：部分人可录制 
 
@@ -238,7 +238,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def allow_open_camera(self):
-        """Gets the allow_open_camera of this UpdateStartedConfigReqBody.
+        r"""Gets the allow_open_camera of this UpdateStartedConfigReqBody.
 
         与会人自行开启摄像头 0:禁止 1:允许
 
@@ -249,7 +249,7 @@ class UpdateStartedConfigReqBody:
 
     @allow_open_camera.setter
     def allow_open_camera(self, allow_open_camera):
-        """Sets the allow_open_camera of this UpdateStartedConfigReqBody.
+        r"""Sets the allow_open_camera of this UpdateStartedConfigReqBody.
 
         与会人自行开启摄像头 0:禁止 1:允许
 
@@ -260,7 +260,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def allow_rename(self):
-        """Gets the allow_rename of this UpdateStartedConfigReqBody.
+        r"""Gets the allow_rename of this UpdateStartedConfigReqBody.
 
         是否允许与会人改名 0:不允许 1:允许
 
@@ -271,7 +271,7 @@ class UpdateStartedConfigReqBody:
 
     @allow_rename.setter
     def allow_rename(self, allow_rename):
-        """Sets the allow_rename of this UpdateStartedConfigReqBody.
+        r"""Sets the allow_rename of this UpdateStartedConfigReqBody.
 
         是否允许与会人改名 0:不允许 1:允许
 
@@ -282,7 +282,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def is_lock(self):
-        """Gets the is_lock of this UpdateStartedConfigReqBody.
+        r"""Gets the is_lock of this UpdateStartedConfigReqBody.
 
         锁定会议 0：解锁 1：锁定
 
@@ -293,7 +293,7 @@ class UpdateStartedConfigReqBody:
 
     @is_lock.setter
     def is_lock(self, is_lock):
-        """Sets the is_lock of this UpdateStartedConfigReqBody.
+        r"""Sets the is_lock of this UpdateStartedConfigReqBody.
 
         锁定会议 0：解锁 1：锁定
 
@@ -304,7 +304,7 @@ class UpdateStartedConfigReqBody:
 
     @property
     def free_share(self):
-        """Gets the free_share of this UpdateStartedConfigReqBody.
+        r"""Gets the free_share of this UpdateStartedConfigReqBody.
 
         抢共享权限设置 0:仅主持人/联席 1:所有人可抢共享
 
@@ -315,7 +315,7 @@ class UpdateStartedConfigReqBody:
 
     @free_share.setter
     def free_share(self, free_share):
-        """Sets the free_share of this UpdateStartedConfigReqBody.
+        r"""Sets the free_share of this UpdateStartedConfigReqBody.
 
         抢共享权限设置 0:仅主持人/联席 1:所有人可抢共享
 

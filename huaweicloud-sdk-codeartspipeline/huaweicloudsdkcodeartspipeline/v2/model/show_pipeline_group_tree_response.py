@@ -26,7 +26,7 @@ class ShowPipelineGroupTreeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowPipelineGroupTreeResponse
+        r"""ShowPipelineGroupTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPipelineGroupTreeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowPipelineGroupTreeResponse.
+        r"""Gets the body of this ShowPipelineGroupTreeResponse.
 
         :return: The body of this ShowPipelineGroupTreeResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupVo`]
@@ -53,7 +53,7 @@ class ShowPipelineGroupTreeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPipelineGroupTreeResponse.
+        r"""Sets the body of this ShowPipelineGroupTreeResponse.
 
         :param body: The body of this ShowPipelineGroupTreeResponse.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupVo`]

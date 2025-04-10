@@ -25,7 +25,7 @@ class ResultValueListProjectTestCaseFieldVo:
     }
 
     def __init__(self, value=None):
-        """ResultValueListProjectTestCaseFieldVo
+        r"""ResultValueListProjectTestCaseFieldVo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResultValueListProjectTestCaseFieldVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueListProjectTestCaseFieldVo.
+        r"""Gets the value of this ResultValueListProjectTestCaseFieldVo.
 
         :return: The value of this ResultValueListProjectTestCaseFieldVo.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.ProjectTestCaseFieldVo`]
@@ -52,7 +52,7 @@ class ResultValueListProjectTestCaseFieldVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueListProjectTestCaseFieldVo.
+        r"""Sets the value of this ResultValueListProjectTestCaseFieldVo.
 
         :param value: The value of this ResultValueListProjectTestCaseFieldVo.
         :type value: list[:class:`huaweicloudsdkcloudtest.v1.ProjectTestCaseFieldVo`]

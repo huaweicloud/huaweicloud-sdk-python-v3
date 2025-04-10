@@ -29,7 +29,7 @@ class Agency:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None):
-        """Agency
+        r"""Agency
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Agency:
 
     @property
     def api_version(self):
-        """Gets the api_version of this Agency.
+        r"""Gets the api_version of this Agency.
 
         :return: The api_version of this Agency.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class Agency:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this Agency.
+        r"""Sets the api_version of this Agency.
 
         :param api_version: The api_version of this Agency.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class Agency:
 
     @property
     def kind(self):
-        """Gets the kind of this Agency.
+        r"""Gets the kind of this Agency.
 
         :return: The kind of this Agency.
         :rtype: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
@@ -81,7 +81,7 @@ class Agency:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this Agency.
+        r"""Sets the kind of this Agency.
 
         :param kind: The kind of this Agency.
         :type kind: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
@@ -90,7 +90,7 @@ class Agency:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Agency.
+        r"""Gets the metadata of this Agency.
 
         :return: The metadata of this Agency.
         :rtype: :class:`huaweicloudsdkcae.v1.AgencyMetadata`
@@ -99,7 +99,7 @@ class Agency:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Agency.
+        r"""Sets the metadata of this Agency.
 
         :param metadata: The metadata of this Agency.
         :type metadata: :class:`huaweicloudsdkcae.v1.AgencyMetadata`

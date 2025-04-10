@@ -31,7 +31,7 @@ class Retention:
     }
 
     def __init__(self, algorithm=None, id=None, rules=None, scope=None):
-        """Retention
+        r"""Retention
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Retention:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this Retention.
+        r"""Gets the algorithm of this Retention.
 
         回收规则匹配策略，or
 
@@ -71,7 +71,7 @@ class Retention:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this Retention.
+        r"""Sets the algorithm of this Retention.
 
         回收规则匹配策略，or
 
@@ -82,7 +82,7 @@ class Retention:
 
     @property
     def id(self):
-        """Gets the id of this Retention.
+        r"""Gets the id of this Retention.
 
         ID
 
@@ -93,7 +93,7 @@ class Retention:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Retention.
+        r"""Sets the id of this Retention.
 
         ID
 
@@ -104,7 +104,7 @@ class Retention:
 
     @property
     def rules(self):
-        """Gets the rules of this Retention.
+        r"""Gets the rules of this Retention.
 
         镜像老化规则
 
@@ -115,7 +115,7 @@ class Retention:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this Retention.
+        r"""Sets the rules of this Retention.
 
         镜像老化规则
 
@@ -126,7 +126,7 @@ class Retention:
 
     @property
     def scope(self):
-        """Gets the scope of this Retention.
+        r"""Gets the scope of this Retention.
 
         保留字段
 
@@ -137,7 +137,7 @@ class Retention:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this Retention.
+        r"""Sets the scope of this Retention.
 
         保留字段
 

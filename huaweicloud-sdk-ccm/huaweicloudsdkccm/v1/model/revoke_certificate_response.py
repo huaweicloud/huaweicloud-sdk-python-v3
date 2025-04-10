@@ -24,7 +24,7 @@ class RevokeCertificateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RevokeCertificateResponse
+        r"""RevokeCertificateResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class DeleteDataChannelResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDataChannelResponse
+        r"""DeleteDataChannelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDataChannelResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDataChannelResponse.
+        r"""Gets the body of this DeleteDataChannelResponse.
 
         :return: The body of this DeleteDataChannelResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDataChannelResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDataChannelResponse.
+        r"""Sets the body of this DeleteDataChannelResponse.
 
         :param body: The body of this DeleteDataChannelResponse.
         :type body: str

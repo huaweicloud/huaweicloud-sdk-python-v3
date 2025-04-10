@@ -27,7 +27,7 @@ class RetypeVolumeRequestBody:
     }
 
     def __init__(self, bss_param=None, os_retype=None):
-        """RetypeVolumeRequestBody
+        r"""RetypeVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RetypeVolumeRequestBody:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this RetypeVolumeRequestBody.
+        r"""Gets the bss_param of this RetypeVolumeRequestBody.
 
         :return: The bss_param of this RetypeVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.BssParamForRetypeVolume`
@@ -58,7 +58,7 @@ class RetypeVolumeRequestBody:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this RetypeVolumeRequestBody.
+        r"""Sets the bss_param of this RetypeVolumeRequestBody.
 
         :param bss_param: The bss_param of this RetypeVolumeRequestBody.
         :type bss_param: :class:`huaweicloudsdkevs.v2.BssParamForRetypeVolume`
@@ -67,7 +67,7 @@ class RetypeVolumeRequestBody:
 
     @property
     def os_retype(self):
-        """Gets the os_retype of this RetypeVolumeRequestBody.
+        r"""Gets the os_retype of this RetypeVolumeRequestBody.
 
         :return: The os_retype of this RetypeVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.RetypeVolume`
@@ -76,7 +76,7 @@ class RetypeVolumeRequestBody:
 
     @os_retype.setter
     def os_retype(self, os_retype):
-        """Sets the os_retype of this RetypeVolumeRequestBody.
+        r"""Sets the os_retype of this RetypeVolumeRequestBody.
 
         :param os_retype: The os_retype of this RetypeVolumeRequestBody.
         :type os_retype: :class:`huaweicloudsdkevs.v2.RetypeVolume`

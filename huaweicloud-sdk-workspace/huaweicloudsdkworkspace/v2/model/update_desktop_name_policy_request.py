@@ -27,7 +27,7 @@ class UpdateDesktopNamePolicyRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """UpdateDesktopNamePolicyRequest
+        r"""UpdateDesktopNamePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDesktopNamePolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateDesktopNamePolicyRequest.
+        r"""Gets the policy_id of this UpdateDesktopNamePolicyRequest.
 
         策略ID。
 
@@ -60,7 +60,7 @@ class UpdateDesktopNamePolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateDesktopNamePolicyRequest.
+        r"""Sets the policy_id of this UpdateDesktopNamePolicyRequest.
 
         策略ID。
 
@@ -71,7 +71,7 @@ class UpdateDesktopNamePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesktopNamePolicyRequest.
+        r"""Gets the body of this UpdateDesktopNamePolicyRequest.
 
         :return: The body of this UpdateDesktopNamePolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopNamePolicyReq`
@@ -80,7 +80,7 @@ class UpdateDesktopNamePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesktopNamePolicyRequest.
+        r"""Sets the body of this UpdateDesktopNamePolicyRequest.
 
         :param body: The body of this UpdateDesktopNamePolicyRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopNamePolicyReq`

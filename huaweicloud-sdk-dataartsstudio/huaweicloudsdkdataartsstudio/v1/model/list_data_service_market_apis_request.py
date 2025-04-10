@@ -29,7 +29,7 @@ class ListDataServiceMarketApisRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """ListDataServiceMarketApisRequest
+        r"""ListDataServiceMarketApisRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListDataServiceMarketApisRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDataServiceMarketApisRequest.
+        r"""Gets the workspace of this ListDataServiceMarketApisRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class ListDataServiceMarketApisRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDataServiceMarketApisRequest.
+        r"""Sets the workspace of this ListDataServiceMarketApisRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class ListDataServiceMarketApisRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListDataServiceMarketApisRequest.
+        r"""Gets the dlm_type of this ListDataServiceMarketApisRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class ListDataServiceMarketApisRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListDataServiceMarketApisRequest.
+        r"""Sets the dlm_type of this ListDataServiceMarketApisRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class ListDataServiceMarketApisRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDataServiceMarketApisRequest.
+        r"""Gets the body of this ListDataServiceMarketApisRequest.
 
         :return: The body of this ListDataServiceMarketApisRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MallParaDTO`
@@ -109,7 +109,7 @@ class ListDataServiceMarketApisRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDataServiceMarketApisRequest.
+        r"""Sets the body of this ListDataServiceMarketApisRequest.
 
         :param body: The body of this ListDataServiceMarketApisRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.MallParaDTO`

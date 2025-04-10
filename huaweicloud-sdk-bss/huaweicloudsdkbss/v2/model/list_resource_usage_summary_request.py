@@ -37,7 +37,7 @@ class ListResourceUsageSummaryRequest:
     }
 
     def __init__(self, x_language=None, bill_cycle=None, service_type_code=None, resource_type_code=None, usage_type=None, offset=None, limit=None):
-        """ListResourceUsageSummaryRequest
+        r"""ListResourceUsageSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListResourceUsageSummaryRequest.
+        r"""Gets the x_language of this ListResourceUsageSummaryRequest.
 
         语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
 
@@ -92,7 +92,7 @@ class ListResourceUsageSummaryRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListResourceUsageSummaryRequest.
+        r"""Sets the x_language of this ListResourceUsageSummaryRequest.
 
         语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
 
@@ -103,7 +103,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this ListResourceUsageSummaryRequest.
+        r"""Gets the bill_cycle of this ListResourceUsageSummaryRequest.
 
         账期，东八区时间，格式为yyyy-MM。
 
@@ -114,7 +114,7 @@ class ListResourceUsageSummaryRequest:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this ListResourceUsageSummaryRequest.
+        r"""Sets the bill_cycle of this ListResourceUsageSummaryRequest.
 
         账期，东八区时间，格式为yyyy-MM。
 
@@ -125,7 +125,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ListResourceUsageSummaryRequest.
+        r"""Gets the service_type_code of this ListResourceUsageSummaryRequest.
 
         云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务,hws.service.type.vpc：虚拟私有云,hws.service.type.iec：智能边缘云
 
@@ -136,7 +136,7 @@ class ListResourceUsageSummaryRequest:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ListResourceUsageSummaryRequest.
+        r"""Sets the service_type_code of this ListResourceUsageSummaryRequest.
 
         云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务,hws.service.type.vpc：虚拟私有云,hws.service.type.iec：智能边缘云
 
@@ -147,7 +147,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this ListResourceUsageSummaryRequest.
+        r"""Gets the resource_type_code of this ListResourceUsageSummaryRequest.
 
         资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储,hws.resource.type.bandwidth：固定带宽,hws.resource.type.edgebandwidth：边缘固定带宽.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
 
@@ -158,7 +158,7 @@ class ListResourceUsageSummaryRequest:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this ListResourceUsageSummaryRequest.
+        r"""Sets the resource_type_code of this ListResourceUsageSummaryRequest.
 
         资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储,hws.resource.type.bandwidth：固定带宽,hws.resource.type.edgebandwidth：边缘固定带宽.资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
 
@@ -169,7 +169,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def usage_type(self):
-        """Gets the usage_type of this ListResourceUsageSummaryRequest.
+        r"""Gets the usage_type of this ListResourceUsageSummaryRequest.
 
         使用量类型编码，目前仅支持：95Peak：中国大陆月95峰值带宽_1024进制,95peak_1000：中国大陆月95峰值带宽_1000进制,bandwidth95peak：95峰值带宽,95peak_plus：增强型95峰值.资源类型和使用量类型的对应关系可调用[查询使用量类型列表接](https://support.huaweicloud.com/api-oce/qct_00004.html)口获取。
 
@@ -180,7 +180,7 @@ class ListResourceUsageSummaryRequest:
 
     @usage_type.setter
     def usage_type(self, usage_type):
-        """Sets the usage_type of this ListResourceUsageSummaryRequest.
+        r"""Sets the usage_type of this ListResourceUsageSummaryRequest.
 
         使用量类型编码，目前仅支持：95Peak：中国大陆月95峰值带宽_1024进制,95peak_1000：中国大陆月95峰值带宽_1000进制,bandwidth95peak：95峰值带宽,95peak_plus：增强型95峰值.资源类型和使用量类型的对应关系可调用[查询使用量类型列表接](https://support.huaweicloud.com/api-oce/qct_00004.html)口获取。
 
@@ -191,7 +191,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceUsageSummaryRequest.
+        r"""Gets the offset of this ListResourceUsageSummaryRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -202,7 +202,7 @@ class ListResourceUsageSummaryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceUsageSummaryRequest.
+        r"""Sets the offset of this ListResourceUsageSummaryRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -213,7 +213,7 @@ class ListResourceUsageSummaryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceUsageSummaryRequest.
+        r"""Gets the limit of this ListResourceUsageSummaryRequest.
 
         每次查询的数量限制。默认值为10。
 
@@ -224,7 +224,7 @@ class ListResourceUsageSummaryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceUsageSummaryRequest.
+        r"""Sets the limit of this ListResourceUsageSummaryRequest.
 
         每次查询的数量限制。默认值为10。
 

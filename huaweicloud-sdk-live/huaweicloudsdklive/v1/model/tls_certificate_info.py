@@ -33,7 +33,7 @@ class TlsCertificateInfo:
     }
 
     def __init__(self, source=None, cert_name=None, cert_id=None, certificate=None, certificate_key=None):
-        """TlsCertificateInfo
+        r"""TlsCertificateInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TlsCertificateInfo:
 
     @property
     def source(self):
-        """Gets the source of this TlsCertificateInfo.
+        r"""Gets the source of this TlsCertificateInfo.
 
         证书来源， 可选,  scm: 云证书管理服务，user：默认，用户自有
 
@@ -82,7 +82,7 @@ class TlsCertificateInfo:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this TlsCertificateInfo.
+        r"""Sets the source of this TlsCertificateInfo.
 
         证书来源， 可选,  scm: 云证书管理服务，user：默认，用户自有
 
@@ -93,7 +93,7 @@ class TlsCertificateInfo:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this TlsCertificateInfo.
+        r"""Gets the cert_name of this TlsCertificateInfo.
 
         SCM证书名， 证书来源为scm时可选
 
@@ -104,7 +104,7 @@ class TlsCertificateInfo:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this TlsCertificateInfo.
+        r"""Sets the cert_name of this TlsCertificateInfo.
 
         SCM证书名， 证书来源为scm时可选
 
@@ -115,7 +115,7 @@ class TlsCertificateInfo:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this TlsCertificateInfo.
+        r"""Gets the cert_id of this TlsCertificateInfo.
 
         SCM证书ID, 证书来源为scm时必选
 
@@ -126,7 +126,7 @@ class TlsCertificateInfo:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this TlsCertificateInfo.
+        r"""Sets the cert_id of this TlsCertificateInfo.
 
         SCM证书ID, 证书来源为scm时必选
 
@@ -137,7 +137,7 @@ class TlsCertificateInfo:
 
     @property
     def certificate(self):
-        """Gets the certificate of this TlsCertificateInfo.
+        r"""Gets the certificate of this TlsCertificateInfo.
 
         证书内容，证书来源为user时必选
 
@@ -148,7 +148,7 @@ class TlsCertificateInfo:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this TlsCertificateInfo.
+        r"""Sets the certificate of this TlsCertificateInfo.
 
         证书内容，证书来源为user时必选
 
@@ -159,7 +159,7 @@ class TlsCertificateInfo:
 
     @property
     def certificate_key(self):
-        """Gets the certificate_key of this TlsCertificateInfo.
+        r"""Gets the certificate_key of this TlsCertificateInfo.
 
         私钥内容，证书来源为user时必选
 
@@ -170,7 +170,7 @@ class TlsCertificateInfo:
 
     @certificate_key.setter
     def certificate_key(self, certificate_key):
-        """Sets the certificate_key of this TlsCertificateInfo.
+        r"""Sets the certificate_key of this TlsCertificateInfo.
 
         私钥内容，证书来源为user时必选
 

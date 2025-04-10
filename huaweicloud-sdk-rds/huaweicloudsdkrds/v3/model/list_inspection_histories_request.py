@@ -39,7 +39,7 @@ class ListInspectionHistoriesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, order=None, sort_field=None, target_version=None, is_available=None, x_language=None):
-        """ListInspectionHistoriesRequest
+        r"""ListInspectionHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInspectionHistoriesRequest.
+        r"""Gets the instance_id of this ListInspectionHistoriesRequest.
 
         实例ID
 
@@ -102,7 +102,7 @@ class ListInspectionHistoriesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInspectionHistoriesRequest.
+        r"""Sets the instance_id of this ListInspectionHistoriesRequest.
 
         实例ID
 
@@ -113,7 +113,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInspectionHistoriesRequest.
+        r"""Gets the offset of this ListInspectionHistoriesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -124,7 +124,7 @@ class ListInspectionHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInspectionHistoriesRequest.
+        r"""Sets the offset of this ListInspectionHistoriesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -135,7 +135,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInspectionHistoriesRequest.
+        r"""Gets the limit of this ListInspectionHistoriesRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -146,7 +146,7 @@ class ListInspectionHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInspectionHistoriesRequest.
+        r"""Sets the limit of this ListInspectionHistoriesRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -157,7 +157,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListInspectionHistoriesRequest.
+        r"""Gets the order of this ListInspectionHistoriesRequest.
 
         排序方式。 DESC，降序。 ASC，升序。 默认降序。
 
@@ -168,7 +168,7 @@ class ListInspectionHistoriesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListInspectionHistoriesRequest.
+        r"""Sets the order of this ListInspectionHistoriesRequest.
 
         排序方式。 DESC，降序。 ASC，升序。 默认降序。
 
@@ -179,7 +179,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListInspectionHistoriesRequest.
+        r"""Gets the sort_field of this ListInspectionHistoriesRequest.
 
         排序字段。 check_time 检查时间。 expiration_time 过期时间。 默认检查时间。
 
@@ -190,7 +190,7 @@ class ListInspectionHistoriesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListInspectionHistoriesRequest.
+        r"""Sets the sort_field of this ListInspectionHistoriesRequest.
 
         排序字段。 check_time 检查时间。 expiration_time 过期时间。 默认检查时间。
 
@@ -201,7 +201,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ListInspectionHistoriesRequest.
+        r"""Gets the target_version of this ListInspectionHistoriesRequest.
 
         目标版本。
 
@@ -212,7 +212,7 @@ class ListInspectionHistoriesRequest:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ListInspectionHistoriesRequest.
+        r"""Sets the target_version of this ListInspectionHistoriesRequest.
 
         目标版本。
 
@@ -223,7 +223,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def is_available(self):
-        """Gets the is_available of this ListInspectionHistoriesRequest.
+        r"""Gets the is_available of this ListInspectionHistoriesRequest.
 
         是否有效。 true 表示有效。 false 表示无效。
 
@@ -234,7 +234,7 @@ class ListInspectionHistoriesRequest:
 
     @is_available.setter
     def is_available(self, is_available):
-        """Sets the is_available of this ListInspectionHistoriesRequest.
+        r"""Sets the is_available of this ListInspectionHistoriesRequest.
 
         是否有效。 true 表示有效。 false 表示无效。
 
@@ -245,7 +245,7 @@ class ListInspectionHistoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInspectionHistoriesRequest.
+        r"""Gets the x_language of this ListInspectionHistoriesRequest.
 
         语言。默认en-us。
 
@@ -256,7 +256,7 @@ class ListInspectionHistoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInspectionHistoriesRequest.
+        r"""Sets the x_language of this ListInspectionHistoriesRequest.
 
         语言。默认en-us。
 

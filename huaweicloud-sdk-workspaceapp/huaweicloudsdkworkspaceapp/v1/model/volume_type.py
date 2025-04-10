@@ -30,7 +30,7 @@ class VolumeType:
     }
 
     def __init__(self):
-        """VolumeType
+        r"""VolumeType
 
         The model defined in huaweicloud sdk
 

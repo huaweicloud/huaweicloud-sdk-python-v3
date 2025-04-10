@@ -24,7 +24,7 @@ class NovaDeleteServerResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NovaDeleteServerResponse
+        r"""NovaDeleteServerResponse
 
         The model defined in huaweicloud sdk
 

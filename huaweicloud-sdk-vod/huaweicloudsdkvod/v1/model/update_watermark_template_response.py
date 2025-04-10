@@ -24,7 +24,7 @@ class UpdateWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateWatermarkTemplateResponse
+        r"""UpdateWatermarkTemplateResponse
 
         The model defined in huaweicloud sdk
 

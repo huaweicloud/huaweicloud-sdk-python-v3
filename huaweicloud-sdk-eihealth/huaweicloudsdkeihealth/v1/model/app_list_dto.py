@@ -47,7 +47,7 @@ class AppListDto:
     }
 
     def __init__(self, id=None, name=None, version=None, summary=None, description=None, labels=None, create_time=None, update_time=None, user_name=None, source_project_name=None, source_resource_id=None, icon=None):
-        """AppListDto
+        r"""AppListDto
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AppListDto:
 
     @property
     def id(self):
-        """Gets the id of this AppListDto.
+        r"""Gets the id of this AppListDto.
 
         应用id
 
@@ -131,7 +131,7 @@ class AppListDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppListDto.
+        r"""Sets the id of this AppListDto.
 
         应用id
 
@@ -142,7 +142,7 @@ class AppListDto:
 
     @property
     def name(self):
-        """Gets the name of this AppListDto.
+        r"""Gets the name of this AppListDto.
 
         应用名称
 
@@ -153,7 +153,7 @@ class AppListDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppListDto.
+        r"""Sets the name of this AppListDto.
 
         应用名称
 
@@ -164,7 +164,7 @@ class AppListDto:
 
     @property
     def version(self):
-        """Gets the version of this AppListDto.
+        r"""Gets the version of this AppListDto.
 
         应用版本
 
@@ -175,7 +175,7 @@ class AppListDto:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AppListDto.
+        r"""Sets the version of this AppListDto.
 
         应用版本
 
@@ -186,7 +186,7 @@ class AppListDto:
 
     @property
     def summary(self):
-        """Gets the summary of this AppListDto.
+        r"""Gets the summary of this AppListDto.
 
         应用简述
 
@@ -197,7 +197,7 @@ class AppListDto:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this AppListDto.
+        r"""Sets the summary of this AppListDto.
 
         应用简述
 
@@ -208,7 +208,7 @@ class AppListDto:
 
     @property
     def description(self):
-        """Gets the description of this AppListDto.
+        r"""Gets the description of this AppListDto.
 
         应用描述
 
@@ -219,7 +219,7 @@ class AppListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppListDto.
+        r"""Sets the description of this AppListDto.
 
         应用描述
 
@@ -230,7 +230,7 @@ class AppListDto:
 
     @property
     def labels(self):
-        """Gets the labels of this AppListDto.
+        r"""Gets the labels of this AppListDto.
 
         应用标签
 
@@ -241,7 +241,7 @@ class AppListDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this AppListDto.
+        r"""Sets the labels of this AppListDto.
 
         应用标签
 
@@ -252,7 +252,7 @@ class AppListDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppListDto.
+        r"""Gets the create_time of this AppListDto.
 
         创建应用时间
 
@@ -263,7 +263,7 @@ class AppListDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppListDto.
+        r"""Sets the create_time of this AppListDto.
 
         创建应用时间
 
@@ -274,7 +274,7 @@ class AppListDto:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppListDto.
+        r"""Gets the update_time of this AppListDto.
 
         更新应用时间
 
@@ -285,7 +285,7 @@ class AppListDto:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppListDto.
+        r"""Sets the update_time of this AppListDto.
 
         更新应用时间
 
@@ -296,7 +296,7 @@ class AppListDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AppListDto.
+        r"""Gets the user_name of this AppListDto.
 
         创建应用的用户名
 
@@ -307,7 +307,7 @@ class AppListDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AppListDto.
+        r"""Sets the user_name of this AppListDto.
 
         创建应用的用户名
 
@@ -318,7 +318,7 @@ class AppListDto:
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this AppListDto.
+        r"""Gets the source_project_name of this AppListDto.
 
         源项目名称
 
@@ -329,7 +329,7 @@ class AppListDto:
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this AppListDto.
+        r"""Sets the source_project_name of this AppListDto.
 
         源项目名称
 
@@ -340,7 +340,7 @@ class AppListDto:
 
     @property
     def source_resource_id(self):
-        """Gets the source_resource_id of this AppListDto.
+        r"""Gets the source_resource_id of this AppListDto.
 
         源资源id
 
@@ -351,7 +351,7 @@ class AppListDto:
 
     @source_resource_id.setter
     def source_resource_id(self, source_resource_id):
-        """Sets the source_resource_id of this AppListDto.
+        r"""Sets the source_resource_id of this AppListDto.
 
         源资源id
 
@@ -362,7 +362,7 @@ class AppListDto:
 
     @property
     def icon(self):
-        """Gets the icon of this AppListDto.
+        r"""Gets the icon of this AppListDto.
 
         图标base64编码
 
@@ -373,7 +373,7 @@ class AppListDto:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this AppListDto.
+        r"""Sets the icon of this AppListDto.
 
         图标base64编码
 

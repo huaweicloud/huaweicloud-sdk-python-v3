@@ -27,7 +27,7 @@ class AuthorizationTypeEnum:
     }
 
     def __init__(self):
-        """AuthorizationTypeEnum
+        r"""AuthorizationTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -39,7 +39,7 @@ class UpdateDeviceAuthorizer:
     }
 
     def __init__(self, authorizer_name=None, func_urn=None, signing_enable=None, signing_token=None, signing_public_key=None, default_authorizer=None, status=None, cache_enable=None):
-        """UpdateDeviceAuthorizer
+        r"""UpdateDeviceAuthorizer
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def authorizer_name(self):
-        """Gets the authorizer_name of this UpdateDeviceAuthorizer.
+        r"""Gets the authorizer_name of this UpdateDeviceAuthorizer.
 
         **参数说明**：自定义鉴权器名称，同一租户下的自定义鉴权器名称不能重复。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -103,7 +103,7 @@ class UpdateDeviceAuthorizer:
 
     @authorizer_name.setter
     def authorizer_name(self, authorizer_name):
-        """Sets the authorizer_name of this UpdateDeviceAuthorizer.
+        r"""Sets the authorizer_name of this UpdateDeviceAuthorizer.
 
         **参数说明**：自定义鉴权器名称，同一租户下的自定义鉴权器名称不能重复。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -114,7 +114,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this UpdateDeviceAuthorizer.
+        r"""Gets the func_urn of this UpdateDeviceAuthorizer.
 
         **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数，即自定义鉴权器对应的处理函数地址。
 
@@ -125,7 +125,7 @@ class UpdateDeviceAuthorizer:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this UpdateDeviceAuthorizer.
+        r"""Sets the func_urn of this UpdateDeviceAuthorizer.
 
         **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数，即自定义鉴权器对应的处理函数地址。
 
@@ -136,7 +136,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def signing_enable(self):
-        """Gets the signing_enable of this UpdateDeviceAuthorizer.
+        r"""Gets the signing_enable of this UpdateDeviceAuthorizer.
 
         **参数说明**：是否启动签名校验，启动签名校验后不满足签名要求的鉴权信息将被拒绝，以减少无效的函数调用。推荐用户进行安全的签名校验，默认开启，开启时signing_token与signing_public_key必填。
 
@@ -147,7 +147,7 @@ class UpdateDeviceAuthorizer:
 
     @signing_enable.setter
     def signing_enable(self, signing_enable):
-        """Sets the signing_enable of this UpdateDeviceAuthorizer.
+        r"""Sets the signing_enable of this UpdateDeviceAuthorizer.
 
         **参数说明**：是否启动签名校验，启动签名校验后不满足签名要求的鉴权信息将被拒绝，以减少无效的函数调用。推荐用户进行安全的签名校验，默认开启，开启时signing_token与signing_public_key必填。
 
@@ -158,7 +158,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def signing_token(self):
-        """Gets the signing_token of this UpdateDeviceAuthorizer.
+        r"""Gets the signing_token of this UpdateDeviceAuthorizer.
 
         **参数说明**：签名校验的Key值，开启签名校验时使用。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -169,7 +169,7 @@ class UpdateDeviceAuthorizer:
 
     @signing_token.setter
     def signing_token(self, signing_token):
-        """Sets the signing_token of this UpdateDeviceAuthorizer.
+        r"""Sets the signing_token of this UpdateDeviceAuthorizer.
 
         **参数说明**：签名校验的Key值，开启签名校验时使用。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -180,7 +180,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def signing_public_key(self):
-        """Gets the signing_public_key of this UpdateDeviceAuthorizer.
+        r"""Gets the signing_public_key of this UpdateDeviceAuthorizer.
 
         **参数说明**：签名校验的公钥，开启签名校验时使用。用于认证设备携带的签名信息是否正确。
 
@@ -191,7 +191,7 @@ class UpdateDeviceAuthorizer:
 
     @signing_public_key.setter
     def signing_public_key(self, signing_public_key):
-        """Sets the signing_public_key of this UpdateDeviceAuthorizer.
+        r"""Sets the signing_public_key of this UpdateDeviceAuthorizer.
 
         **参数说明**：签名校验的公钥，开启签名校验时使用。用于认证设备携带的签名信息是否正确。
 
@@ -202,7 +202,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def default_authorizer(self):
-        """Gets the default_authorizer of this UpdateDeviceAuthorizer.
+        r"""Gets the default_authorizer of this UpdateDeviceAuthorizer.
 
         **参数说明**：当前自定义鉴权是否为默认的鉴权方式，默认为false，当设置为true时，用户所有支持SNI的设备，如果在鉴权时不指定使用特定的设备鉴权，将统一使用当前鉴权器策略进行鉴权。
 
@@ -213,7 +213,7 @@ class UpdateDeviceAuthorizer:
 
     @default_authorizer.setter
     def default_authorizer(self, default_authorizer):
-        """Sets the default_authorizer of this UpdateDeviceAuthorizer.
+        r"""Sets the default_authorizer of this UpdateDeviceAuthorizer.
 
         **参数说明**：当前自定义鉴权是否为默认的鉴权方式，默认为false，当设置为true时，用户所有支持SNI的设备，如果在鉴权时不指定使用特定的设备鉴权，将统一使用当前鉴权器策略进行鉴权。
 
@@ -224,7 +224,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def status(self):
-        """Gets the status of this UpdateDeviceAuthorizer.
+        r"""Gets the status of this UpdateDeviceAuthorizer.
 
         **参数说明**：是否激活该鉴权方式，默认为激活。 - ACTIVE：该鉴权为激活状态。 - INACTIVE：该鉴权为停用状态。
 
@@ -235,7 +235,7 @@ class UpdateDeviceAuthorizer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateDeviceAuthorizer.
+        r"""Sets the status of this UpdateDeviceAuthorizer.
 
         **参数说明**：是否激活该鉴权方式，默认为激活。 - ACTIVE：该鉴权为激活状态。 - INACTIVE：该鉴权为停用状态。
 
@@ -246,7 +246,7 @@ class UpdateDeviceAuthorizer:
 
     @property
     def cache_enable(self):
-        """Gets the cache_enable of this UpdateDeviceAuthorizer.
+        r"""Gets the cache_enable of this UpdateDeviceAuthorizer.
 
         **参数说明**：是否开启缓存，默认为false，设备为true时，当设备入参（username，clientId，password，以及证书信息，函数urn）不变时，当缓存结果存在时，将直接使用缓存结果，建议在调试时设置为false，生产时设置为true，避免频繁调用函数。
 
@@ -257,7 +257,7 @@ class UpdateDeviceAuthorizer:
 
     @cache_enable.setter
     def cache_enable(self, cache_enable):
-        """Sets the cache_enable of this UpdateDeviceAuthorizer.
+        r"""Sets the cache_enable of this UpdateDeviceAuthorizer.
 
         **参数说明**：是否开启缓存，默认为false，设备为true时，当设备入参（username，clientId，password，以及证书信息，函数urn）不变时，当缓存结果存在时，将直接使用缓存结果，建议在调试时设置为false，生产时设置为true，避免频繁调用函数。
 

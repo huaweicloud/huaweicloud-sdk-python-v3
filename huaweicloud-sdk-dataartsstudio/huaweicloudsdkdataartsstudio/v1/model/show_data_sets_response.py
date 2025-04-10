@@ -34,7 +34,7 @@ class ShowDataSetsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, entities=None, facets=None, metrics=None, referred_entities=None):
-        """ShowDataSetsResponse
+        r"""ShowDataSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDataSetsResponse.
+        r"""Gets the count of this ShowDataSetsResponse.
 
         查询结果总量
 
@@ -83,7 +83,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDataSetsResponse.
+        r"""Sets the count of this ShowDataSetsResponse.
 
         查询结果总量
 
@@ -94,7 +94,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowDataSetsResponse.
+        r"""Gets the entities of this ShowDataSetsResponse.
 
         资产实体列表
 
@@ -105,7 +105,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowDataSetsResponse.
+        r"""Sets the entities of this ShowDataSetsResponse.
 
         资产实体列表
 
@@ -116,7 +116,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @property
     def facets(self):
-        """Gets the facets of this ShowDataSetsResponse.
+        r"""Gets the facets of this ShowDataSetsResponse.
 
         资产分类facets维度信息列表，数据结构List<Map<String, List<Aggregation>>> 取值为count
 
@@ -127,7 +127,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @facets.setter
     def facets(self, facets):
-        """Sets the facets of this ShowDataSetsResponse.
+        r"""Sets the facets of this ShowDataSetsResponse.
 
         资产分类facets维度信息列表，数据结构List<Map<String, List<Aggregation>>> 取值为count
 
@@ -138,7 +138,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowDataSetsResponse.
+        r"""Gets the metrics of this ShowDataSetsResponse.
 
         资产分类metrics维度信息列表，数据结构List<Map<String, List<Aggregation>>>  取值为aggregation
 
@@ -149,7 +149,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowDataSetsResponse.
+        r"""Sets the metrics of this ShowDataSetsResponse.
 
         资产分类metrics维度信息列表，数据结构List<Map<String, List<Aggregation>>>  取值为aggregation
 
@@ -160,7 +160,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this ShowDataSetsResponse.
+        r"""Gets the referred_entities of this ShowDataSetsResponse.
 
         关联资产，数据类型Map<String, Entity>
 
@@ -171,7 +171,7 @@ class ShowDataSetsResponse(SdkResponse):
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this ShowDataSetsResponse.
+        r"""Sets the referred_entities of this ShowDataSetsResponse.
 
         关联资产，数据类型Map<String, Entity>
 

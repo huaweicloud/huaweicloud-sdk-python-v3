@@ -25,7 +25,7 @@ class ExecutionPlanStatusPrimitiveTypeHolder:
     }
 
     def __init__(self, status=None):
-        """ExecutionPlanStatusPrimitiveTypeHolder
+        r"""ExecutionPlanStatusPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecutionPlanStatusPrimitiveTypeHolder:
 
     @property
     def status(self):
-        """Gets the status of this ExecutionPlanStatusPrimitiveTypeHolder.
+        r"""Gets the status of this ExecutionPlanStatusPrimitiveTypeHolder.
 
         执行计划的状态    * `CREATION_IN_PROGRESS` - 正在创建，请等待    * `CREATION_FAILED` - 创建失败，请从status_message获取错误信息汇总    * `AVAILABLE` - 创建完成，可以调用ApplyExecutionPlan API进行执行    * `APPLY_IN_PROGRESS` - 执行中，可通过GetStackMetadata查询资源栈状态，通过ListStackEvents获取执行过程中产生的资源栈事件    * `APPLIED` - 已执行
 
@@ -54,7 +54,7 @@ class ExecutionPlanStatusPrimitiveTypeHolder:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExecutionPlanStatusPrimitiveTypeHolder.
+        r"""Sets the status of this ExecutionPlanStatusPrimitiveTypeHolder.
 
         执行计划的状态    * `CREATION_IN_PROGRESS` - 正在创建，请等待    * `CREATION_FAILED` - 创建失败，请从status_message获取错误信息汇总    * `AVAILABLE` - 创建完成，可以调用ApplyExecutionPlan API进行执行    * `APPLY_IN_PROGRESS` - 执行中，可通过GetStackMetadata查询资源栈状态，通过ListStackEvents获取执行过程中产生的资源栈事件    * `APPLIED` - 已执行
 

@@ -29,7 +29,7 @@ class NeutronInsertFirewallRuleRequestBody:
     }
 
     def __init__(self, firewall_rule_id=None, insert_after=None, insert_before=None):
-        """NeutronInsertFirewallRuleRequestBody
+        r"""NeutronInsertFirewallRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class NeutronInsertFirewallRuleRequestBody:
 
     @property
     def firewall_rule_id(self):
-        """Gets the firewall_rule_id of this NeutronInsertFirewallRuleRequestBody.
+        r"""Gets the firewall_rule_id of this NeutronInsertFirewallRuleRequestBody.
 
         功能说明：网络ACL规则ID
 
@@ -67,7 +67,7 @@ class NeutronInsertFirewallRuleRequestBody:
 
     @firewall_rule_id.setter
     def firewall_rule_id(self, firewall_rule_id):
-        """Sets the firewall_rule_id of this NeutronInsertFirewallRuleRequestBody.
+        r"""Sets the firewall_rule_id of this NeutronInsertFirewallRuleRequestBody.
 
         功能说明：网络ACL规则ID
 
@@ -78,7 +78,7 @@ class NeutronInsertFirewallRuleRequestBody:
 
     @property
     def insert_after(self):
-        """Gets the insert_after of this NeutronInsertFirewallRuleRequestBody.
+        r"""Gets the insert_after of this NeutronInsertFirewallRuleRequestBody.
 
         insert_after参数表示已经和某个policy关联的rule，新的rule将会直接被插入到insert_after参数指定的rule后面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
 
@@ -89,7 +89,7 @@ class NeutronInsertFirewallRuleRequestBody:
 
     @insert_after.setter
     def insert_after(self, insert_after):
-        """Sets the insert_after of this NeutronInsertFirewallRuleRequestBody.
+        r"""Sets the insert_after of this NeutronInsertFirewallRuleRequestBody.
 
         insert_after参数表示已经和某个policy关联的rule，新的rule将会直接被插入到insert_after参数指定的rule后面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
 
@@ -100,7 +100,7 @@ class NeutronInsertFirewallRuleRequestBody:
 
     @property
     def insert_before(self):
-        """Gets the insert_before of this NeutronInsertFirewallRuleRequestBody.
+        r"""Gets the insert_before of this NeutronInsertFirewallRuleRequestBody.
 
         insert_before参数表示已经和某个policy关联的rule，新的firewall rule将会直接被插入到insert_ before参数指定的firewall rule前面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
 
@@ -111,7 +111,7 @@ class NeutronInsertFirewallRuleRequestBody:
 
     @insert_before.setter
     def insert_before(self, insert_before):
-        """Sets the insert_before of this NeutronInsertFirewallRuleRequestBody.
+        r"""Sets the insert_before of this NeutronInsertFirewallRuleRequestBody.
 
         insert_before参数表示已经和某个policy关联的rule，新的firewall rule将会直接被插入到insert_ before参数指定的firewall rule前面。如果insert_after和insert_before都被指定了，insert_after参数值将被忽略。
 

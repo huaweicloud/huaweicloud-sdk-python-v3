@@ -25,7 +25,7 @@ class ShowPortTagsRequest:
     }
 
     def __init__(self, port_id=None):
-        """ShowPortTagsRequest
+        r"""ShowPortTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPortTagsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ShowPortTagsRequest.
+        r"""Gets the port_id of this ShowPortTagsRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -53,7 +53,7 @@ class ShowPortTagsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ShowPortTagsRequest.
+        r"""Sets the port_id of this ShowPortTagsRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 

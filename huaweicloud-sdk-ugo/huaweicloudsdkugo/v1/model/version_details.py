@@ -33,7 +33,7 @@ class VersionDetails:
     }
 
     def __init__(self, id=None, links=None, version=None, status=None, updated=None):
-        """VersionDetails
+        r"""VersionDetails
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class VersionDetails:
 
     @property
     def id(self):
-        """Gets the id of this VersionDetails.
+        r"""Gets the id of this VersionDetails.
 
         版本ID。
 
@@ -77,7 +77,7 @@ class VersionDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionDetails.
+        r"""Sets the id of this VersionDetails.
 
         版本ID。
 
@@ -88,7 +88,7 @@ class VersionDetails:
 
     @property
     def links(self):
-        """Gets the links of this VersionDetails.
+        r"""Gets the links of this VersionDetails.
 
         版本详情的URL地址。
 
@@ -99,7 +99,7 @@ class VersionDetails:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VersionDetails.
+        r"""Sets the links of this VersionDetails.
 
         版本详情的URL地址。
 
@@ -110,7 +110,7 @@ class VersionDetails:
 
     @property
     def version(self):
-        """Gets the version of this VersionDetails.
+        r"""Gets the version of this VersionDetails.
 
         该版本API的微版本信息。
 
@@ -121,7 +121,7 @@ class VersionDetails:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionDetails.
+        r"""Sets the version of this VersionDetails.
 
         该版本API的微版本信息。
 
@@ -132,7 +132,7 @@ class VersionDetails:
 
     @property
     def status(self):
-        """Gets the status of this VersionDetails.
+        r"""Gets the status of this VersionDetails.
 
         版本的状态。
 
@@ -143,7 +143,7 @@ class VersionDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionDetails.
+        r"""Sets the status of this VersionDetails.
 
         版本的状态。
 
@@ -154,7 +154,7 @@ class VersionDetails:
 
     @property
     def updated(self):
-        """Gets the updated of this VersionDetails.
+        r"""Gets the updated of this VersionDetails.
 
         版本更新时间。
 
@@ -165,7 +165,7 @@ class VersionDetails:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this VersionDetails.
+        r"""Sets the updated of this VersionDetails.
 
         版本更新时间。
 

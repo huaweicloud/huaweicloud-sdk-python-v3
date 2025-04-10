@@ -29,7 +29,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlInstanceAliasRequest
+        r"""UpdateGaussMySqlInstanceAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlInstanceAliasRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlInstanceAliasRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlInstanceAliasRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlInstanceAliasRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlInstanceAliasRequest.
+        r"""Gets the instance_id of this UpdateGaussMySqlInstanceAliasRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlInstanceAliasRequest.
+        r"""Sets the instance_id of this UpdateGaussMySqlInstanceAliasRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlInstanceAliasRequest.
+        r"""Gets the body of this UpdateGaussMySqlInstanceAliasRequest.
 
         :return: The body of this UpdateGaussMySqlInstanceAliasRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyAliasRequest`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlInstanceAliasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlInstanceAliasRequest.
+        r"""Sets the body of this UpdateGaussMySqlInstanceAliasRequest.
 
         :param body: The body of this UpdateGaussMySqlInstanceAliasRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyAliasRequest`

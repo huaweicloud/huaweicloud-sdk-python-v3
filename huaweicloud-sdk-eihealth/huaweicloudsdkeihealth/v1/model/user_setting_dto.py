@@ -33,7 +33,7 @@ class UserSettingDto:
     }
 
     def __init__(self, job_quota=None, job_timeout=None, cpu_quota=None, mem_quota=None, projects_per_user=None):
-        """UserSettingDto
+        r"""UserSettingDto
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UserSettingDto:
 
     @property
     def job_quota(self):
-        """Gets the job_quota of this UserSettingDto.
+        r"""Gets the job_quota of this UserSettingDto.
 
         允许同时运行的作业数
 
@@ -78,7 +78,7 @@ class UserSettingDto:
 
     @job_quota.setter
     def job_quota(self, job_quota):
-        """Sets the job_quota of this UserSettingDto.
+        r"""Sets the job_quota of this UserSettingDto.
 
         允许同时运行的作业数
 
@@ -89,7 +89,7 @@ class UserSettingDto:
 
     @property
     def job_timeout(self):
-        """Gets the job_timeout of this UserSettingDto.
+        r"""Gets the job_timeout of this UserSettingDto.
 
         作业执行超时时长，单位天
 
@@ -100,7 +100,7 @@ class UserSettingDto:
 
     @job_timeout.setter
     def job_timeout(self, job_timeout):
-        """Sets the job_timeout of this UserSettingDto.
+        r"""Sets the job_timeout of this UserSettingDto.
 
         作业执行超时时长，单位天
 
@@ -111,7 +111,7 @@ class UserSettingDto:
 
     @property
     def cpu_quota(self):
-        """Gets the cpu_quota of this UserSettingDto.
+        r"""Gets the cpu_quota of this UserSettingDto.
 
         作业的CPU资源配额，单位核
 
@@ -122,7 +122,7 @@ class UserSettingDto:
 
     @cpu_quota.setter
     def cpu_quota(self, cpu_quota):
-        """Sets the cpu_quota of this UserSettingDto.
+        r"""Sets the cpu_quota of this UserSettingDto.
 
         作业的CPU资源配额，单位核
 
@@ -133,7 +133,7 @@ class UserSettingDto:
 
     @property
     def mem_quota(self):
-        """Gets the mem_quota of this UserSettingDto.
+        r"""Gets the mem_quota of this UserSettingDto.
 
         作业的内存资源配额，单位GB
 
@@ -144,7 +144,7 @@ class UserSettingDto:
 
     @mem_quota.setter
     def mem_quota(self, mem_quota):
-        """Sets the mem_quota of this UserSettingDto.
+        r"""Sets the mem_quota of this UserSettingDto.
 
         作业的内存资源配额，单位GB
 
@@ -155,7 +155,7 @@ class UserSettingDto:
 
     @property
     def projects_per_user(self):
-        """Gets the projects_per_user of this UserSettingDto.
+        r"""Gets the projects_per_user of this UserSettingDto.
 
         用户可创建项目数配额
 
@@ -166,7 +166,7 @@ class UserSettingDto:
 
     @projects_per_user.setter
     def projects_per_user(self, projects_per_user):
-        """Sets the projects_per_user of this UserSettingDto.
+        r"""Sets the projects_per_user of this UserSettingDto.
 
         用户可创建项目数配额
 

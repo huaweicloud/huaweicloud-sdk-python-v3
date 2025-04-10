@@ -27,7 +27,7 @@ class BachTags:
     }
 
     def __init__(self, tags=None, action=None):
-        """BachTags
+        r"""BachTags
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BachTags:
 
     @property
     def tags(self):
-        """Gets the tags of this BachTags.
+        r"""Gets the tags of this BachTags.
 
         标签列表
 
@@ -60,7 +60,7 @@ class BachTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BachTags.
+        r"""Sets the tags of this BachTags.
 
         标签列表
 
@@ -71,7 +71,7 @@ class BachTags:
 
     @property
     def action(self):
-        """Gets the action of this BachTags.
+        r"""Gets the action of this BachTags.
 
         操作标识：仅限于create（创建）、delete（删除）
 
@@ -82,7 +82,7 @@ class BachTags:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BachTags.
+        r"""Sets the action of this BachTags.
 
         操作标识：仅限于create（创建）、delete（删除）
 

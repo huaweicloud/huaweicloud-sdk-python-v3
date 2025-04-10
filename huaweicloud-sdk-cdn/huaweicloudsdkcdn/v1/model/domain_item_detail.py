@@ -31,7 +31,7 @@ class DomainItemDetail:
     }
 
     def __init__(self, start_time=None, end_time=None, stat_type=None, domains=None):
-        """DomainItemDetail
+        r"""DomainItemDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DomainItemDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DomainItemDetail.
+        r"""Gets the start_time of this DomainItemDetail.
 
         数据起始时间戳，可能与请求时间不一致
 
@@ -75,7 +75,7 @@ class DomainItemDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DomainItemDetail.
+        r"""Sets the start_time of this DomainItemDetail.
 
         数据起始时间戳，可能与请求时间不一致
 
@@ -86,7 +86,7 @@ class DomainItemDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DomainItemDetail.
+        r"""Gets the end_time of this DomainItemDetail.
 
         数据结束时间戳，可能与请求时间不一致
 
@@ -97,7 +97,7 @@ class DomainItemDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DomainItemDetail.
+        r"""Sets the end_time of this DomainItemDetail.
 
         数据结束时间戳，可能与请求时间不一致
 
@@ -108,7 +108,7 @@ class DomainItemDetail:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this DomainItemDetail.
+        r"""Gets the stat_type of this DomainItemDetail.
 
         指标类型
 
@@ -119,7 +119,7 @@ class DomainItemDetail:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this DomainItemDetail.
+        r"""Sets the stat_type of this DomainItemDetail.
 
         指标类型
 
@@ -130,7 +130,7 @@ class DomainItemDetail:
 
     @property
     def domains(self):
-        """Gets the domains of this DomainItemDetail.
+        r"""Gets the domains of this DomainItemDetail.
 
         指标统计数据列表，如果该时间段内无值，则为空数组[]
 
@@ -141,7 +141,7 @@ class DomainItemDetail:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this DomainItemDetail.
+        r"""Sets the domains of this DomainItemDetail.
 
         指标统计数据列表，如果该时间段内无值，则为空数组[]
 

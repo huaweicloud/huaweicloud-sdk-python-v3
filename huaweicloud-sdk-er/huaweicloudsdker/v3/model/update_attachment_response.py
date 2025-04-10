@@ -28,7 +28,7 @@ class UpdateAttachmentResponse(SdkResponse):
     }
 
     def __init__(self, attachment=None, request_id=None):
-        """UpdateAttachmentResponse
+        r"""UpdateAttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAttachmentResponse(SdkResponse):
 
     @property
     def attachment(self):
-        """Gets the attachment of this UpdateAttachmentResponse.
+        r"""Gets the attachment of this UpdateAttachmentResponse.
 
         :return: The attachment of this UpdateAttachmentResponse.
         :rtype: :class:`huaweicloudsdker.v3.AttachmentResponse`
@@ -60,7 +60,7 @@ class UpdateAttachmentResponse(SdkResponse):
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this UpdateAttachmentResponse.
+        r"""Sets the attachment of this UpdateAttachmentResponse.
 
         :param attachment: The attachment of this UpdateAttachmentResponse.
         :type attachment: :class:`huaweicloudsdker.v3.AttachmentResponse`
@@ -69,7 +69,7 @@ class UpdateAttachmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateAttachmentResponse.
+        r"""Gets the request_id of this UpdateAttachmentResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class UpdateAttachmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateAttachmentResponse.
+        r"""Sets the request_id of this UpdateAttachmentResponse.
 
         请求id
 

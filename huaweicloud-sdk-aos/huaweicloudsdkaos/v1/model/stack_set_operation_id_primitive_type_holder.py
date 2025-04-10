@@ -25,7 +25,7 @@ class StackSetOperationIdPrimitiveTypeHolder:
     }
 
     def __init__(self, stack_set_operation_id=None):
-        """StackSetOperationIdPrimitiveTypeHolder
+        r"""StackSetOperationIdPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetOperationIdPrimitiveTypeHolder:
 
     @property
     def stack_set_operation_id(self):
-        """Gets the stack_set_operation_id of this StackSetOperationIdPrimitiveTypeHolder.
+        r"""Gets the stack_set_operation_id of this StackSetOperationIdPrimitiveTypeHolder.
 
         资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
@@ -54,7 +54,7 @@ class StackSetOperationIdPrimitiveTypeHolder:
 
     @stack_set_operation_id.setter
     def stack_set_operation_id(self, stack_set_operation_id):
-        """Sets the stack_set_operation_id of this StackSetOperationIdPrimitiveTypeHolder.
+        r"""Sets the stack_set_operation_id of this StackSetOperationIdPrimitiveTypeHolder.
 
         资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 

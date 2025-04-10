@@ -33,7 +33,7 @@ class CreateTaskRequestBody:
     }
 
     def __init__(self, name=None, project_id=None, temps=None, operate_mode=None, bench_concurrent=None):
-        """CreateTaskRequestBody
+        r"""CreateTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateTaskRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateTaskRequestBody.
+        r"""Gets the name of this CreateTaskRequestBody.
 
         名称
 
@@ -80,7 +80,7 @@ class CreateTaskRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTaskRequestBody.
+        r"""Sets the name of this CreateTaskRequestBody.
 
         名称
 
@@ -91,7 +91,7 @@ class CreateTaskRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTaskRequestBody.
+        r"""Gets the project_id of this CreateTaskRequestBody.
 
         工程id
 
@@ -102,7 +102,7 @@ class CreateTaskRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTaskRequestBody.
+        r"""Sets the project_id of this CreateTaskRequestBody.
 
         工程id
 
@@ -113,7 +113,7 @@ class CreateTaskRequestBody:
 
     @property
     def temps(self):
-        """Gets the temps of this CreateTaskRequestBody.
+        r"""Gets the temps of this CreateTaskRequestBody.
 
         事务信息
 
@@ -124,7 +124,7 @@ class CreateTaskRequestBody:
 
     @temps.setter
     def temps(self, temps):
-        """Sets the temps of this CreateTaskRequestBody.
+        r"""Sets the temps of this CreateTaskRequestBody.
 
         事务信息
 
@@ -135,7 +135,7 @@ class CreateTaskRequestBody:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this CreateTaskRequestBody.
+        r"""Gets the operate_mode of this CreateTaskRequestBody.
 
         压力阶段模式，0：时长模式；1：次数模式；2：混合模式
 
@@ -146,7 +146,7 @@ class CreateTaskRequestBody:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this CreateTaskRequestBody.
+        r"""Sets the operate_mode of this CreateTaskRequestBody.
 
         压力阶段模式，0：时长模式；1：次数模式；2：混合模式
 
@@ -157,7 +157,7 @@ class CreateTaskRequestBody:
 
     @property
     def bench_concurrent(self):
-        """Gets the bench_concurrent of this CreateTaskRequestBody.
+        r"""Gets the bench_concurrent of this CreateTaskRequestBody.
 
         基准并发
 
@@ -168,7 +168,7 @@ class CreateTaskRequestBody:
 
     @bench_concurrent.setter
     def bench_concurrent(self, bench_concurrent):
-        """Sets the bench_concurrent of this CreateTaskRequestBody.
+        r"""Sets the bench_concurrent of this CreateTaskRequestBody.
 
         基准并发
 

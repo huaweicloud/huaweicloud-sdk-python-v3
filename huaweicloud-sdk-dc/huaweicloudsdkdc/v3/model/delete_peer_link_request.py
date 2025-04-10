@@ -27,7 +27,7 @@ class DeletePeerLinkRequest:
     }
 
     def __init__(self, global_dc_gateway_id=None, peer_link_id=None):
-        """DeletePeerLinkRequest
+        r"""DeletePeerLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePeerLinkRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this DeletePeerLinkRequest.
+        r"""Gets the global_dc_gateway_id of this DeletePeerLinkRequest.
 
         全域接入网关ID
 
@@ -59,7 +59,7 @@ class DeletePeerLinkRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this DeletePeerLinkRequest.
+        r"""Sets the global_dc_gateway_id of this DeletePeerLinkRequest.
 
         全域接入网关ID
 
@@ -70,7 +70,7 @@ class DeletePeerLinkRequest:
 
     @property
     def peer_link_id(self):
-        """Gets the peer_link_id of this DeletePeerLinkRequest.
+        r"""Gets the peer_link_id of this DeletePeerLinkRequest.
 
         全域接入网关对等体
 
@@ -81,7 +81,7 @@ class DeletePeerLinkRequest:
 
     @peer_link_id.setter
     def peer_link_id(self, peer_link_id):
-        """Sets the peer_link_id of this DeletePeerLinkRequest.
+        r"""Sets the peer_link_id of this DeletePeerLinkRequest.
 
         全域接入网关对等体
 

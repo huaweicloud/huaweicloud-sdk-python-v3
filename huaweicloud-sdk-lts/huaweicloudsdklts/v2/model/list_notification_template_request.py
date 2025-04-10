@@ -27,7 +27,7 @@ class ListNotificationTemplateRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """ListNotificationTemplateRequest
+        r"""ListNotificationTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListNotificationTemplateRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListNotificationTemplateRequest.
+        r"""Gets the domain_id of this ListNotificationTemplateRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -60,7 +60,7 @@ class ListNotificationTemplateRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListNotificationTemplateRequest.
+        r"""Sets the domain_id of this ListNotificationTemplateRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -71,7 +71,7 @@ class ListNotificationTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListNotificationTemplateRequest.
+        r"""Gets the body of this ListNotificationTemplateRequest.
 
         :return: The body of this ListNotificationTemplateRequest.
         :rtype: :class:`huaweicloudsdklts.v2.PreviewTemplateBody`
@@ -80,7 +80,7 @@ class ListNotificationTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListNotificationTemplateRequest.
+        r"""Sets the body of this ListNotificationTemplateRequest.
 
         :param body: The body of this ListNotificationTemplateRequest.
         :type body: :class:`huaweicloudsdklts.v2.PreviewTemplateBody`

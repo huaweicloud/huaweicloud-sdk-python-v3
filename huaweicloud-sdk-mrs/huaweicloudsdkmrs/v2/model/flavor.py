@@ -25,7 +25,7 @@ class Flavor:
     }
 
     def __init__(self, flavor_name=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Flavor:
 
     @property
     def flavor_name(self):
-        """Gets the flavor_name of this Flavor.
+        r"""Gets the flavor_name of this Flavor.
 
         规格名称
 
@@ -54,7 +54,7 @@ class Flavor:
 
     @flavor_name.setter
     def flavor_name(self, flavor_name):
-        """Sets the flavor_name of this Flavor.
+        r"""Sets the flavor_name of this Flavor.
 
         规格名称
 

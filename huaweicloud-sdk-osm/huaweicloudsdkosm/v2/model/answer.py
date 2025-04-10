@@ -33,7 +33,7 @@ class Answer:
     }
 
     def __init__(self, content=None, id=None, tags=None, answer_type=None, qa_flow_entry=None):
-        """Answer
+        r"""Answer
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Answer:
 
     @property
     def content(self):
-        """Gets the content of this Answer.
+        r"""Gets the content of this Answer.
 
         答案内容
 
@@ -82,7 +82,7 @@ class Answer:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Answer.
+        r"""Sets the content of this Answer.
 
         答案内容
 
@@ -93,7 +93,7 @@ class Answer:
 
     @property
     def id(self):
-        """Gets the id of this Answer.
+        r"""Gets the id of this Answer.
 
         答案Id
 
@@ -104,7 +104,7 @@ class Answer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Answer.
+        r"""Sets the id of this Answer.
 
         答案Id
 
@@ -115,7 +115,7 @@ class Answer:
 
     @property
     def tags(self):
-        """Gets the tags of this Answer.
+        r"""Gets the tags of this Answer.
 
         标签列表
 
@@ -126,7 +126,7 @@ class Answer:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Answer.
+        r"""Sets the tags of this Answer.
 
         标签列表
 
@@ -137,7 +137,7 @@ class Answer:
 
     @property
     def answer_type(self):
-        """Gets the answer_type of this Answer.
+        r"""Gets the answer_type of this Answer.
 
         - TEXT:  - RICH_TEXT:  - FLOW:  - QA_PAIR:  
 
@@ -148,7 +148,7 @@ class Answer:
 
     @answer_type.setter
     def answer_type(self, answer_type):
-        """Sets the answer_type of this Answer.
+        r"""Sets the answer_type of this Answer.
 
         - TEXT:  - RICH_TEXT:  - FLOW:  - QA_PAIR:  
 
@@ -159,7 +159,7 @@ class Answer:
 
     @property
     def qa_flow_entry(self):
-        """Gets the qa_flow_entry of this Answer.
+        r"""Gets the qa_flow_entry of this Answer.
 
         :return: The qa_flow_entry of this Answer.
         :rtype: :class:`huaweicloudsdkosm.v2.CbsFlowEntry`
@@ -168,7 +168,7 @@ class Answer:
 
     @qa_flow_entry.setter
     def qa_flow_entry(self, qa_flow_entry):
-        """Sets the qa_flow_entry of this Answer.
+        r"""Sets the qa_flow_entry of this Answer.
 
         :param qa_flow_entry: The qa_flow_entry of this Answer.
         :type qa_flow_entry: :class:`huaweicloudsdkosm.v2.CbsFlowEntry`

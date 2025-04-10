@@ -27,7 +27,7 @@ class PutResourceGroupReq:
     }
 
     def __init__(self, group_name=None, tags=None):
-        """PutResourceGroupReq
+        r"""PutResourceGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PutResourceGroupReq:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PutResourceGroupReq.
+        r"""Gets the group_name of this PutResourceGroupReq.
 
         资源分组名称，只能为字母、数字、汉字、-、_，最大长度为128
 
@@ -60,7 +60,7 @@ class PutResourceGroupReq:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PutResourceGroupReq.
+        r"""Sets the group_name of this PutResourceGroupReq.
 
         资源分组名称，只能为字母、数字、汉字、-、_，最大长度为128
 
@@ -71,7 +71,7 @@ class PutResourceGroupReq:
 
     @property
     def tags(self):
-        """Gets the tags of this PutResourceGroupReq.
+        r"""Gets the tags of this PutResourceGroupReq.
 
         标签动态匹配时的关联标签,type为TAG时必传
 
@@ -82,7 +82,7 @@ class PutResourceGroupReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PutResourceGroupReq.
+        r"""Sets the tags of this PutResourceGroupReq.
 
         标签动态匹配时的关联标签,type为TAG时必传
 

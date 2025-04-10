@@ -29,7 +29,7 @@ class CreateBuildJobParameterParam:
     }
 
     def __init__(self, name=None, value=None, limits=None):
-        """CreateBuildJobParameterParam
+        r"""CreateBuildJobParameterParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateBuildJobParameterParam:
 
     @property
     def name(self):
-        """Gets the name of this CreateBuildJobParameterParam.
+        r"""Gets the name of this CreateBuildJobParameterParam.
 
         参数字段名
 
@@ -68,7 +68,7 @@ class CreateBuildJobParameterParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBuildJobParameterParam.
+        r"""Sets the name of this CreateBuildJobParameterParam.
 
         参数字段名
 
@@ -79,7 +79,7 @@ class CreateBuildJobParameterParam:
 
     @property
     def value(self):
-        """Gets the value of this CreateBuildJobParameterParam.
+        r"""Gets the value of this CreateBuildJobParameterParam.
 
         参数字段值
 
@@ -90,7 +90,7 @@ class CreateBuildJobParameterParam:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateBuildJobParameterParam.
+        r"""Sets the value of this CreateBuildJobParameterParam.
 
         参数字段值
 
@@ -101,7 +101,7 @@ class CreateBuildJobParameterParam:
 
     @property
     def limits(self):
-        """Gets the limits of this CreateBuildJobParameterParam.
+        r"""Gets the limits of this CreateBuildJobParameterParam.
 
         枚举类参数限制
 
@@ -112,7 +112,7 @@ class CreateBuildJobParameterParam:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this CreateBuildJobParameterParam.
+        r"""Sets the limits of this CreateBuildJobParameterParam.
 
         枚举类参数限制
 

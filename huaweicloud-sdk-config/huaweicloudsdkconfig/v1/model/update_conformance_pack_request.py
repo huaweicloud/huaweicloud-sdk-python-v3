@@ -27,7 +27,7 @@ class UpdateConformancePackRequest:
     }
 
     def __init__(self, conformance_pack_id=None, body=None):
-        """UpdateConformancePackRequest
+        r"""UpdateConformancePackRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConformancePackRequest:
 
     @property
     def conformance_pack_id(self):
-        """Gets the conformance_pack_id of this UpdateConformancePackRequest.
+        r"""Gets the conformance_pack_id of this UpdateConformancePackRequest.
 
         合规规则包ID。
 
@@ -60,7 +60,7 @@ class UpdateConformancePackRequest:
 
     @conformance_pack_id.setter
     def conformance_pack_id(self, conformance_pack_id):
-        """Sets the conformance_pack_id of this UpdateConformancePackRequest.
+        r"""Sets the conformance_pack_id of this UpdateConformancePackRequest.
 
         合规规则包ID。
 
@@ -71,7 +71,7 @@ class UpdateConformancePackRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConformancePackRequest.
+        r"""Gets the body of this UpdateConformancePackRequest.
 
         :return: The body of this UpdateConformancePackRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.UpdateConformancePackRequestBody`
@@ -80,7 +80,7 @@ class UpdateConformancePackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConformancePackRequest.
+        r"""Sets the body of this UpdateConformancePackRequest.
 
         :param body: The body of this UpdateConformancePackRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.UpdateConformancePackRequestBody`

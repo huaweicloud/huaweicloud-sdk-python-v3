@@ -33,7 +33,7 @@ class UpdateAutoScanConfigRequestBody:
     }
 
     def __init__(self, enable_auto_scan=None, first_scan_at=None, interval=None, timeout=None, scan_keys_count=None):
-        """UpdateAutoScanConfigRequestBody
+        r"""UpdateAutoScanConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @property
     def enable_auto_scan(self):
-        """Gets the enable_auto_scan of this UpdateAutoScanConfigRequestBody.
+        r"""Gets the enable_auto_scan of this UpdateAutoScanConfigRequestBody.
 
         启用自动扫描
 
@@ -82,7 +82,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @enable_auto_scan.setter
     def enable_auto_scan(self, enable_auto_scan):
-        """Sets the enable_auto_scan of this UpdateAutoScanConfigRequestBody.
+        r"""Sets the enable_auto_scan of this UpdateAutoScanConfigRequestBody.
 
         启用自动扫描
 
@@ -93,7 +93,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @property
     def first_scan_at(self):
-        """Gets the first_scan_at of this UpdateAutoScanConfigRequestBody.
+        r"""Gets the first_scan_at of this UpdateAutoScanConfigRequestBody.
 
         首次扫描时间，例如：2023-07-07T15:00:05.000
 
@@ -104,7 +104,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @first_scan_at.setter
     def first_scan_at(self, first_scan_at):
-        """Sets the first_scan_at of this UpdateAutoScanConfigRequestBody.
+        r"""Sets the first_scan_at of this UpdateAutoScanConfigRequestBody.
 
         首次扫描时间，例如：2023-07-07T15:00:05.000
 
@@ -115,7 +115,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @property
     def interval(self):
-        """Gets the interval of this UpdateAutoScanConfigRequestBody.
+        r"""Gets the interval of this UpdateAutoScanConfigRequestBody.
 
         间隔时间(秒)
 
@@ -126,7 +126,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this UpdateAutoScanConfigRequestBody.
+        r"""Sets the interval of this UpdateAutoScanConfigRequestBody.
 
         间隔时间(秒)
 
@@ -137,7 +137,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateAutoScanConfigRequestBody.
+        r"""Gets the timeout of this UpdateAutoScanConfigRequestBody.
 
         超时时间(秒)
 
@@ -148,7 +148,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateAutoScanConfigRequestBody.
+        r"""Sets the timeout of this UpdateAutoScanConfigRequestBody.
 
         超时时间(秒)
 
@@ -159,7 +159,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @property
     def scan_keys_count(self):
-        """Gets the scan_keys_count of this UpdateAutoScanConfigRequestBody.
+        r"""Gets the scan_keys_count of this UpdateAutoScanConfigRequestBody.
 
         扫描密钥计数
 
@@ -170,7 +170,7 @@ class UpdateAutoScanConfigRequestBody:
 
     @scan_keys_count.setter
     def scan_keys_count(self, scan_keys_count):
-        """Sets the scan_keys_count of this UpdateAutoScanConfigRequestBody.
+        r"""Sets the scan_keys_count of this UpdateAutoScanConfigRequestBody.
 
         扫描密钥计数
 

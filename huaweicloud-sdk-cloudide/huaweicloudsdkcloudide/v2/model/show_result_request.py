@@ -25,7 +25,7 @@ class ShowResultRequest:
     }
 
     def __init__(self, request_id=None):
-        """ShowResultRequest
+        r"""ShowResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowResultRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowResultRequest.
+        r"""Gets the request_id of this ShowResultRequest.
 
         the unique if of the request
 
@@ -53,7 +53,7 @@ class ShowResultRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowResultRequest.
+        r"""Sets the request_id of this ShowResultRequest.
 
         the unique if of the request
 

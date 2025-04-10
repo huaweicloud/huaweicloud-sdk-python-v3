@@ -25,7 +25,7 @@ class CreatePolicyTemplateReq:
     }
 
     def __init__(self, policy_group=None):
-        """CreatePolicyTemplateReq
+        r"""CreatePolicyTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePolicyTemplateReq:
 
     @property
     def policy_group(self):
-        """Gets the policy_group of this CreatePolicyTemplateReq.
+        r"""Gets the policy_group of this CreatePolicyTemplateReq.
 
         :return: The policy_group of this CreatePolicyTemplateReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PolicyTemplate`
@@ -51,7 +51,7 @@ class CreatePolicyTemplateReq:
 
     @policy_group.setter
     def policy_group(self, policy_group):
-        """Sets the policy_group of this CreatePolicyTemplateReq.
+        r"""Sets the policy_group of this CreatePolicyTemplateReq.
 
         :param policy_group: The policy_group of this CreatePolicyTemplateReq.
         :type policy_group: :class:`huaweicloudsdkworkspaceapp.v1.PolicyTemplate`

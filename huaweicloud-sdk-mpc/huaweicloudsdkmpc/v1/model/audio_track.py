@@ -29,7 +29,7 @@ class AudioTrack:
     }
 
     def __init__(self, type=None, left=None, right=None):
-        """AudioTrack
+        r"""AudioTrack
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AudioTrack:
 
     @property
     def type(self):
-        """Gets the type of this AudioTrack.
+        r"""Gets the type of this AudioTrack.
 
         音轨选取方式。 - 0：默认选取 - 1：手动选择 
 
@@ -68,7 +68,7 @@ class AudioTrack:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AudioTrack.
+        r"""Sets the type of this AudioTrack.
 
         音轨选取方式。 - 0：默认选取 - 1：手动选择 
 
@@ -79,7 +79,7 @@ class AudioTrack:
 
     @property
     def left(self):
-        """Gets the left of this AudioTrack.
+        r"""Gets the left of this AudioTrack.
 
         选取左声道所在的音轨编号。 
 
@@ -90,7 +90,7 @@ class AudioTrack:
 
     @left.setter
     def left(self, left):
-        """Sets the left of this AudioTrack.
+        r"""Sets the left of this AudioTrack.
 
         选取左声道所在的音轨编号。 
 
@@ -101,7 +101,7 @@ class AudioTrack:
 
     @property
     def right(self):
-        """Gets the right of this AudioTrack.
+        r"""Gets the right of this AudioTrack.
 
         选取右声道所在的音轨编号。 
 
@@ -112,7 +112,7 @@ class AudioTrack:
 
     @right.setter
     def right(self, right):
-        """Sets the right of this AudioTrack.
+        r"""Sets the right of this AudioTrack.
 
         选取右声道所在的音轨编号。 
 

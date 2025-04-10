@@ -27,7 +27,7 @@ class GrowNodeReq:
     }
 
     def __init__(self, component_name=None, node_num=None):
-        """GrowNodeReq
+        r"""GrowNodeReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GrowNodeReq:
 
     @property
     def component_name(self):
-        """Gets the component_name of this GrowNodeReq.
+        r"""Gets the component_name of this GrowNodeReq.
 
         扩容节点类型：rs,tsdb,lemon
 
@@ -59,7 +59,7 @@ class GrowNodeReq:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this GrowNodeReq.
+        r"""Sets the component_name of this GrowNodeReq.
 
         扩容节点类型：rs,tsdb,lemon
 
@@ -70,7 +70,7 @@ class GrowNodeReq:
 
     @property
     def node_num(self):
-        """Gets the node_num of this GrowNodeReq.
+        r"""Gets the node_num of this GrowNodeReq.
 
         扩容节点范围是 [2,10]
 
@@ -81,7 +81,7 @@ class GrowNodeReq:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this GrowNodeReq.
+        r"""Sets the node_num of this GrowNodeReq.
 
         扩容节点范围是 [2,10]
 

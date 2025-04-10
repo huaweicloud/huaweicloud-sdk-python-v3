@@ -29,7 +29,7 @@ class ShowPartitionEndMessageRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, partition=None):
-        """ShowPartitionEndMessageRequest
+        r"""ShowPartitionEndMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowPartitionEndMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPartitionEndMessageRequest.
+        r"""Gets the instance_id of this ShowPartitionEndMessageRequest.
 
         实例ID。
 
@@ -65,7 +65,7 @@ class ShowPartitionEndMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPartitionEndMessageRequest.
+        r"""Sets the instance_id of this ShowPartitionEndMessageRequest.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class ShowPartitionEndMessageRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowPartitionEndMessageRequest.
+        r"""Gets the topic of this ShowPartitionEndMessageRequest.
 
         Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -87,7 +87,7 @@ class ShowPartitionEndMessageRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowPartitionEndMessageRequest.
+        r"""Sets the topic of this ShowPartitionEndMessageRequest.
 
         Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -98,7 +98,7 @@ class ShowPartitionEndMessageRequest:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowPartitionEndMessageRequest.
+        r"""Gets the partition of this ShowPartitionEndMessageRequest.
 
         分区编号。
 
@@ -109,7 +109,7 @@ class ShowPartitionEndMessageRequest:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowPartitionEndMessageRequest.
+        r"""Sets the partition of this ShowPartitionEndMessageRequest.
 
         分区编号。
 

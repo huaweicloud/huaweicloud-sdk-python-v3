@@ -26,7 +26,7 @@ class NeutronShowRouterResponse(SdkResponse):
     }
 
     def __init__(self, router=None):
-        """NeutronShowRouterResponse
+        r"""NeutronShowRouterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronShowRouterResponse(SdkResponse):
 
     @property
     def router(self):
-        """Gets the router of this NeutronShowRouterResponse.
+        r"""Gets the router of this NeutronShowRouterResponse.
 
         :return: The router of this NeutronShowRouterResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronRouter`
@@ -53,7 +53,7 @@ class NeutronShowRouterResponse(SdkResponse):
 
     @router.setter
     def router(self, router):
-        """Sets the router of this NeutronShowRouterResponse.
+        r"""Sets the router of this NeutronShowRouterResponse.
 
         :param router: The router of this NeutronShowRouterResponse.
         :type router: :class:`huaweicloudsdkvpc.v2.NeutronRouter`

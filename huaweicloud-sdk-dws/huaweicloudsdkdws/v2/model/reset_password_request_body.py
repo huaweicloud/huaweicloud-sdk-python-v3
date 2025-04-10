@@ -25,7 +25,7 @@ class ResetPasswordRequestBody:
     }
 
     def __init__(self, new_password=None):
-        """ResetPasswordRequestBody
+        r"""ResetPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResetPasswordRequestBody:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ResetPasswordRequestBody.
+        r"""Gets the new_password of this ResetPasswordRequestBody.
 
         GaussDB(DWS) 集群管理员新密码。 新密码复杂度要求如下：  - 密码字符长度为12~32位。 - 不能与用户名或倒序的用户名相同。 - 至少包含以下4种类型的3种：    - 小写字母   - 大写字母   - 数字   - 特殊字符（~!?,.:;-_'\"(){}[]/<>@#%^&*+|\\=）。 - 不能与历史密码相同。 - 不能为弱密码。
 
@@ -53,7 +53,7 @@ class ResetPasswordRequestBody:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ResetPasswordRequestBody.
+        r"""Sets the new_password of this ResetPasswordRequestBody.
 
         GaussDB(DWS) 集群管理员新密码。 新密码复杂度要求如下：  - 密码字符长度为12~32位。 - 不能与用户名或倒序的用户名相同。 - 至少包含以下4种类型的3种：    - 小写字母   - 大写字母   - 数字   - 特殊字符（~!?,.:;-_'\"(){}[]/<>@#%^&*+|\\=）。 - 不能与历史密码相同。 - 不能为弱密码。
 

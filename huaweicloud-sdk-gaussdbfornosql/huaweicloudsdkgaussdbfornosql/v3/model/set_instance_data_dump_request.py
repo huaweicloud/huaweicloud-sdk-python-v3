@@ -27,7 +27,7 @@ class SetInstanceDataDumpRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SetInstanceDataDumpRequest
+        r"""SetInstanceDataDumpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetInstanceDataDumpRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetInstanceDataDumpRequest.
+        r"""Gets the instance_id of this SetInstanceDataDumpRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SetInstanceDataDumpRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetInstanceDataDumpRequest.
+        r"""Sets the instance_id of this SetInstanceDataDumpRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SetInstanceDataDumpRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetInstanceDataDumpRequest.
+        r"""Gets the body of this SetInstanceDataDumpRequest.
 
         :return: The body of this SetInstanceDataDumpRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetInstanceDataDumpRequestBody`
@@ -80,7 +80,7 @@ class SetInstanceDataDumpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetInstanceDataDumpRequest.
+        r"""Sets the body of this SetInstanceDataDumpRequest.
 
         :param body: The body of this SetInstanceDataDumpRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SetInstanceDataDumpRequestBody`

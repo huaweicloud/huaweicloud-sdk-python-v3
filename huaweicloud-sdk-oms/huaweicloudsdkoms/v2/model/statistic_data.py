@@ -27,7 +27,7 @@ class StatisticData:
     }
 
     def __init__(self, time_stamp=None, statistic_num=None):
-        """StatisticData
+        r"""StatisticData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatisticData:
 
     @property
     def time_stamp(self):
-        """Gets the time_stamp of this StatisticData.
+        r"""Gets the time_stamp of this StatisticData.
 
         统计时间戳
 
@@ -61,7 +61,7 @@ class StatisticData:
 
     @time_stamp.setter
     def time_stamp(self, time_stamp):
-        """Sets the time_stamp of this StatisticData.
+        r"""Sets the time_stamp of this StatisticData.
 
         统计时间戳
 
@@ -72,7 +72,7 @@ class StatisticData:
 
     @property
     def statistic_num(self):
-        """Gets the statistic_num of this StatisticData.
+        r"""Gets the statistic_num of this StatisticData.
 
         统计数量
 
@@ -83,7 +83,7 @@ class StatisticData:
 
     @statistic_num.setter
     def statistic_num(self, statistic_num):
-        """Sets the statistic_num of this StatisticData.
+        r"""Sets the statistic_num of this StatisticData.
 
         统计数量
 

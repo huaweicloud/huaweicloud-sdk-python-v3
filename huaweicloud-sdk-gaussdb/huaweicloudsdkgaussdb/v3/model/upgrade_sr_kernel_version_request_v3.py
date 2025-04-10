@@ -27,7 +27,7 @@ class UpgradeSrKernelVersionRequestV3:
     }
 
     def __init__(self, delay=None, is_skip_validate=None):
-        """UpgradeSrKernelVersionRequestV3
+        r"""UpgradeSrKernelVersionRequestV3
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpgradeSrKernelVersionRequestV3:
 
     @property
     def delay(self):
-        """Gets the delay of this UpgradeSrKernelVersionRequestV3.
+        r"""Gets the delay of this UpgradeSrKernelVersionRequestV3.
 
         **参数解释**： 是否延时升级。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
@@ -61,7 +61,7 @@ class UpgradeSrKernelVersionRequestV3:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this UpgradeSrKernelVersionRequestV3.
+        r"""Sets the delay of this UpgradeSrKernelVersionRequestV3.
 
         **参数解释**： 是否延时升级。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
@@ -72,7 +72,7 @@ class UpgradeSrKernelVersionRequestV3:
 
     @property
     def is_skip_validate(self):
-        """Gets the is_skip_validate of this UpgradeSrKernelVersionRequestV3.
+        r"""Gets the is_skip_validate of this UpgradeSrKernelVersionRequestV3.
 
         **参数解释**： 是否跳过升级校验。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
@@ -83,7 +83,7 @@ class UpgradeSrKernelVersionRequestV3:
 
     @is_skip_validate.setter
     def is_skip_validate(self, is_skip_validate):
-        """Sets the is_skip_validate of this UpgradeSrKernelVersionRequestV3.
+        r"""Sets the is_skip_validate of this UpgradeSrKernelVersionRequestV3.
 
         **参数解释**： 是否跳过升级校验。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 

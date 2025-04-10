@@ -37,7 +37,7 @@ class RoleActionQueryDTO:
     }
 
     def __init__(self, parent_permission_set_id=None, cluster_id=None, datasource_type=None, database_names=None, schemas=None, table_names=None, column_names=None):
-        """RoleActionQueryDTO
+        r"""RoleActionQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class RoleActionQueryDTO:
 
     @property
     def parent_permission_set_id(self):
-        """Gets the parent_permission_set_id of this RoleActionQueryDTO.
+        r"""Gets the parent_permission_set_id of this RoleActionQueryDTO.
 
         父权限集id
 
@@ -92,7 +92,7 @@ class RoleActionQueryDTO:
 
     @parent_permission_set_id.setter
     def parent_permission_set_id(self, parent_permission_set_id):
-        """Sets the parent_permission_set_id of this RoleActionQueryDTO.
+        r"""Sets the parent_permission_set_id of this RoleActionQueryDTO.
 
         父权限集id
 
@@ -103,7 +103,7 @@ class RoleActionQueryDTO:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RoleActionQueryDTO.
+        r"""Gets the cluster_id of this RoleActionQueryDTO.
 
         集群id
 
@@ -114,7 +114,7 @@ class RoleActionQueryDTO:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RoleActionQueryDTO.
+        r"""Sets the cluster_id of this RoleActionQueryDTO.
 
         集群id
 
@@ -125,7 +125,7 @@ class RoleActionQueryDTO:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this RoleActionQueryDTO.
+        r"""Gets the datasource_type of this RoleActionQueryDTO.
 
         数据源类型, HIVE
 
@@ -136,7 +136,7 @@ class RoleActionQueryDTO:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this RoleActionQueryDTO.
+        r"""Sets the datasource_type of this RoleActionQueryDTO.
 
         数据源类型, HIVE
 
@@ -147,7 +147,7 @@ class RoleActionQueryDTO:
 
     @property
     def database_names(self):
-        """Gets the database_names of this RoleActionQueryDTO.
+        r"""Gets the database_names of this RoleActionQueryDTO.
 
         目前批量授权只支持单库下的多表授权，或同一集群下个多库授权，区分这两类可通过 传参中tables是否为空来判断
 
@@ -158,7 +158,7 @@ class RoleActionQueryDTO:
 
     @database_names.setter
     def database_names(self, database_names):
-        """Sets the database_names of this RoleActionQueryDTO.
+        r"""Sets the database_names of this RoleActionQueryDTO.
 
         目前批量授权只支持单库下的多表授权，或同一集群下个多库授权，区分这两类可通过 传参中tables是否为空来判断
 
@@ -169,7 +169,7 @@ class RoleActionQueryDTO:
 
     @property
     def schemas(self):
-        """Gets the schemas of this RoleActionQueryDTO.
+        r"""Gets the schemas of this RoleActionQueryDTO.
 
         dws权限涉及 schema，预留字段，在做DWS批量授权时应保持单schema下的批量授权，或者对单库下schema批量授权
 
@@ -180,7 +180,7 @@ class RoleActionQueryDTO:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this RoleActionQueryDTO.
+        r"""Sets the schemas of this RoleActionQueryDTO.
 
         dws权限涉及 schema，预留字段，在做DWS批量授权时应保持单schema下的批量授权，或者对单库下schema批量授权
 
@@ -191,7 +191,7 @@ class RoleActionQueryDTO:
 
     @property
     def table_names(self):
-        """Gets the table_names of this RoleActionQueryDTO.
+        r"""Gets the table_names of this RoleActionQueryDTO.
 
         数据表列表
 
@@ -202,7 +202,7 @@ class RoleActionQueryDTO:
 
     @table_names.setter
     def table_names(self, table_names):
-        """Sets the table_names of this RoleActionQueryDTO.
+        r"""Sets the table_names of this RoleActionQueryDTO.
 
         数据表列表
 
@@ -213,7 +213,7 @@ class RoleActionQueryDTO:
 
     @property
     def column_names(self):
-        """Gets the column_names of this RoleActionQueryDTO.
+        r"""Gets the column_names of this RoleActionQueryDTO.
 
         数据字段列表
 
@@ -224,7 +224,7 @@ class RoleActionQueryDTO:
 
     @column_names.setter
     def column_names(self, column_names):
-        """Sets the column_names of this RoleActionQueryDTO.
+        r"""Sets the column_names of this RoleActionQueryDTO.
 
         数据字段列表
 

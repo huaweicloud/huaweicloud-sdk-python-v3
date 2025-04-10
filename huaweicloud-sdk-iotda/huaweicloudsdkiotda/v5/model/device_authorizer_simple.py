@@ -43,7 +43,7 @@ class DeviceAuthorizerSimple:
     }
 
     def __init__(self, authorizer_id=None, authorizer_name=None, func_name=None, func_urn=None, signing_enable=None, default_authorizer=None, status=None, cache_enable=None, create_time=None, update_time=None):
-        """DeviceAuthorizerSimple
+        r"""DeviceAuthorizerSimple
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this DeviceAuthorizerSimple.
+        r"""Gets the authorizer_id of this DeviceAuthorizerSimple.
 
         **参数说明**：自定义鉴权ID。
 
@@ -117,7 +117,7 @@ class DeviceAuthorizerSimple:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this DeviceAuthorizerSimple.
+        r"""Sets the authorizer_id of this DeviceAuthorizerSimple.
 
         **参数说明**：自定义鉴权ID。
 
@@ -128,7 +128,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def authorizer_name(self):
-        """Gets the authorizer_name of this DeviceAuthorizerSimple.
+        r"""Gets the authorizer_name of this DeviceAuthorizerSimple.
 
         **参数说明**：自定义鉴权器名称，同一租户下的自定义鉴权器名称不能重复。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -139,7 +139,7 @@ class DeviceAuthorizerSimple:
 
     @authorizer_name.setter
     def authorizer_name(self, authorizer_name):
-        """Sets the authorizer_name of this DeviceAuthorizerSimple.
+        r"""Sets the authorizer_name of this DeviceAuthorizerSimple.
 
         **参数说明**：自定义鉴权器名称，同一租户下的自定义鉴权器名称不能重复。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -150,7 +150,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def func_name(self):
-        """Gets the func_name of this DeviceAuthorizerSimple.
+        r"""Gets the func_name of this DeviceAuthorizerSimple.
 
         **参数说明**：自定义鉴权器对应的函数名称。
 
@@ -161,7 +161,7 @@ class DeviceAuthorizerSimple:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this DeviceAuthorizerSimple.
+        r"""Sets the func_name of this DeviceAuthorizerSimple.
 
         **参数说明**：自定义鉴权器对应的函数名称。
 
@@ -172,7 +172,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this DeviceAuthorizerSimple.
+        r"""Gets the func_urn of this DeviceAuthorizerSimple.
 
         **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数，即自定义鉴权器对应的处理函数地址。
 
@@ -183,7 +183,7 @@ class DeviceAuthorizerSimple:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this DeviceAuthorizerSimple.
+        r"""Sets the func_urn of this DeviceAuthorizerSimple.
 
         **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数，即自定义鉴权器对应的处理函数地址。
 
@@ -194,7 +194,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def signing_enable(self):
-        """Gets the signing_enable of this DeviceAuthorizerSimple.
+        r"""Gets the signing_enable of this DeviceAuthorizerSimple.
 
         **参数说明**：是否启动签名校验，启动签名校验后不满足签名要求的鉴权信息将被拒绝，以减少无效的函数调用。推荐用户进行安全的签名校验，默认开启。
 
@@ -205,7 +205,7 @@ class DeviceAuthorizerSimple:
 
     @signing_enable.setter
     def signing_enable(self, signing_enable):
-        """Sets the signing_enable of this DeviceAuthorizerSimple.
+        r"""Sets the signing_enable of this DeviceAuthorizerSimple.
 
         **参数说明**：是否启动签名校验，启动签名校验后不满足签名要求的鉴权信息将被拒绝，以减少无效的函数调用。推荐用户进行安全的签名校验，默认开启。
 
@@ -216,7 +216,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def default_authorizer(self):
-        """Gets the default_authorizer of this DeviceAuthorizerSimple.
+        r"""Gets the default_authorizer of this DeviceAuthorizerSimple.
 
         **参数说明**：当前自定义鉴权是否为默认的鉴权方式，默认为false，当设置为true时，用户所有支持SNI的设备，如果在鉴权时不指定使用特定的设备鉴权，将统一使用当前鉴权器策略进行鉴权。
 
@@ -227,7 +227,7 @@ class DeviceAuthorizerSimple:
 
     @default_authorizer.setter
     def default_authorizer(self, default_authorizer):
-        """Sets the default_authorizer of this DeviceAuthorizerSimple.
+        r"""Sets the default_authorizer of this DeviceAuthorizerSimple.
 
         **参数说明**：当前自定义鉴权是否为默认的鉴权方式，默认为false，当设置为true时，用户所有支持SNI的设备，如果在鉴权时不指定使用特定的设备鉴权，将统一使用当前鉴权器策略进行鉴权。
 
@@ -238,7 +238,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def status(self):
-        """Gets the status of this DeviceAuthorizerSimple.
+        r"""Gets the status of this DeviceAuthorizerSimple.
 
         **参数说明**：是否激活该鉴权方式 - ACTIVE：该鉴权为激活状态。 - INACTIVE：该鉴权为停用状态。
 
@@ -249,7 +249,7 @@ class DeviceAuthorizerSimple:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeviceAuthorizerSimple.
+        r"""Sets the status of this DeviceAuthorizerSimple.
 
         **参数说明**：是否激活该鉴权方式 - ACTIVE：该鉴权为激活状态。 - INACTIVE：该鉴权为停用状态。
 
@@ -260,7 +260,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def cache_enable(self):
-        """Gets the cache_enable of this DeviceAuthorizerSimple.
+        r"""Gets the cache_enable of this DeviceAuthorizerSimple.
 
         **参数说明**：是否开启缓存，默认为false，设备为true时，当设备入参（username，clientId，password，以及证书信息，函数urn）不变时，当缓存结果存在时，将直接使用缓存结果，建议在调试时设置为false，生产时设置为true，避免频繁调用函数。
 
@@ -271,7 +271,7 @@ class DeviceAuthorizerSimple:
 
     @cache_enable.setter
     def cache_enable(self, cache_enable):
-        """Sets the cache_enable of this DeviceAuthorizerSimple.
+        r"""Sets the cache_enable of this DeviceAuthorizerSimple.
 
         **参数说明**：是否开启缓存，默认为false，设备为true时，当设备入参（username，clientId，password，以及证书信息，函数urn）不变时，当缓存结果存在时，将直接使用缓存结果，建议在调试时设置为false，生产时设置为true，避免频繁调用函数。
 
@@ -282,7 +282,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DeviceAuthorizerSimple.
+        r"""Gets the create_time of this DeviceAuthorizerSimple.
 
         在物联网平台查询自定义鉴权的时间。格式：yyyyMMdd'T'HHmmss'Z'，如：20151212T121212Z。
 
@@ -293,7 +293,7 @@ class DeviceAuthorizerSimple:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DeviceAuthorizerSimple.
+        r"""Sets the create_time of this DeviceAuthorizerSimple.
 
         在物联网平台查询自定义鉴权的时间。格式：yyyyMMdd'T'HHmmss'Z'，如：20151212T121212Z。
 
@@ -304,7 +304,7 @@ class DeviceAuthorizerSimple:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DeviceAuthorizerSimple.
+        r"""Gets the update_time of this DeviceAuthorizerSimple.
 
         在物联网平台更新查询自定义鉴权的时间。格式：yyyyMMdd'T'HHmmss'Z'，如：20151212T121212Z。
 
@@ -315,7 +315,7 @@ class DeviceAuthorizerSimple:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DeviceAuthorizerSimple.
+        r"""Sets the update_time of this DeviceAuthorizerSimple.
 
         在物联网平台更新查询自定义鉴权的时间。格式：yyyyMMdd'T'HHmmss'Z'，如：20151212T121212Z。
 

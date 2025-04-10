@@ -27,7 +27,7 @@ class CreateAomMappingRulesRequest:
     }
 
     def __init__(self, is_batch=None, body=None):
-        """CreateAomMappingRulesRequest
+        r"""CreateAomMappingRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAomMappingRulesRequest:
 
     @property
     def is_batch(self):
-        """Gets the is_batch of this CreateAomMappingRulesRequest.
+        r"""Gets the is_batch of this CreateAomMappingRulesRequest.
 
         是否开启自动映射
 
@@ -60,7 +60,7 @@ class CreateAomMappingRulesRequest:
 
     @is_batch.setter
     def is_batch(self, is_batch):
-        """Sets the is_batch of this CreateAomMappingRulesRequest.
+        r"""Sets the is_batch of this CreateAomMappingRulesRequest.
 
         是否开启自动映射
 
@@ -71,7 +71,7 @@ class CreateAomMappingRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAomMappingRulesRequest.
+        r"""Gets the body of this CreateAomMappingRulesRequest.
 
         :return: The body of this CreateAomMappingRulesRequest.
         :rtype: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
@@ -80,7 +80,7 @@ class CreateAomMappingRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAomMappingRulesRequest.
+        r"""Sets the body of this CreateAomMappingRulesRequest.
 
         :param body: The body of this CreateAomMappingRulesRequest.
         :type body: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`

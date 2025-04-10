@@ -27,7 +27,7 @@ class JobSubmitResult:
     }
 
     def __init__(self, job_id=None, state=None):
-        """JobSubmitResult
+        r"""JobSubmitResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobSubmitResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobSubmitResult.
+        r"""Gets the job_id of this JobSubmitResult.
 
         作业ID。
 
@@ -61,7 +61,7 @@ class JobSubmitResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobSubmitResult.
+        r"""Sets the job_id of this JobSubmitResult.
 
         作业ID。
 
@@ -72,7 +72,7 @@ class JobSubmitResult:
 
     @property
     def state(self):
-        """Gets the state of this JobSubmitResult.
+        r"""Gets the state of this JobSubmitResult.
 
         作业提交状态。 枚举值： - COMPLETE：作业提交完成。 - FAILED：作业提交失败。
 
@@ -83,7 +83,7 @@ class JobSubmitResult:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this JobSubmitResult.
+        r"""Sets the state of this JobSubmitResult.
 
         作业提交状态。 枚举值： - COMPLETE：作业提交完成。 - FAILED：作业提交失败。
 

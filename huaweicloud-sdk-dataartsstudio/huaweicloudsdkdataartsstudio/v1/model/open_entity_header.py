@@ -37,7 +37,7 @@ class OpenEntityHeader:
     }
 
     def __init__(self, attributes=None, connection=None, display_text=None, guid=None, type_name=None, tags=None, classification_names=None):
-        """OpenEntityHeader
+        r"""OpenEntityHeader
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OpenEntityHeader:
 
     @property
     def attributes(self):
-        """Gets the attributes of this OpenEntityHeader.
+        r"""Gets the attributes of this OpenEntityHeader.
 
         属性
 
@@ -96,7 +96,7 @@ class OpenEntityHeader:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this OpenEntityHeader.
+        r"""Sets the attributes of this OpenEntityHeader.
 
         属性
 
@@ -107,7 +107,7 @@ class OpenEntityHeader:
 
     @property
     def connection(self):
-        """Gets the connection of this OpenEntityHeader.
+        r"""Gets the connection of this OpenEntityHeader.
 
         :return: The connection of this OpenEntityHeader.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
@@ -116,7 +116,7 @@ class OpenEntityHeader:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this OpenEntityHeader.
+        r"""Sets the connection of this OpenEntityHeader.
 
         :param connection: The connection of this OpenEntityHeader.
         :type connection: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
@@ -125,7 +125,7 @@ class OpenEntityHeader:
 
     @property
     def display_text(self):
-        """Gets the display_text of this OpenEntityHeader.
+        r"""Gets the display_text of this OpenEntityHeader.
 
         展示文档
 
@@ -136,7 +136,7 @@ class OpenEntityHeader:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this OpenEntityHeader.
+        r"""Sets the display_text of this OpenEntityHeader.
 
         展示文档
 
@@ -147,7 +147,7 @@ class OpenEntityHeader:
 
     @property
     def guid(self):
-        """Gets the guid of this OpenEntityHeader.
+        r"""Gets the guid of this OpenEntityHeader.
 
         资产guid
 
@@ -158,7 +158,7 @@ class OpenEntityHeader:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this OpenEntityHeader.
+        r"""Sets the guid of this OpenEntityHeader.
 
         资产guid
 
@@ -169,7 +169,7 @@ class OpenEntityHeader:
 
     @property
     def type_name(self):
-        """Gets the type_name of this OpenEntityHeader.
+        r"""Gets the type_name of this OpenEntityHeader.
 
         类型名称
 
@@ -180,7 +180,7 @@ class OpenEntityHeader:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this OpenEntityHeader.
+        r"""Sets the type_name of this OpenEntityHeader.
 
         类型名称
 
@@ -191,7 +191,7 @@ class OpenEntityHeader:
 
     @property
     def tags(self):
-        """Gets the tags of this OpenEntityHeader.
+        r"""Gets the tags of this OpenEntityHeader.
 
         标签列表
 
@@ -202,7 +202,7 @@ class OpenEntityHeader:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this OpenEntityHeader.
+        r"""Sets the tags of this OpenEntityHeader.
 
         标签列表
 
@@ -213,7 +213,7 @@ class OpenEntityHeader:
 
     @property
     def classification_names(self):
-        """Gets the classification_names of this OpenEntityHeader.
+        r"""Gets the classification_names of this OpenEntityHeader.
 
         分类名称列表
 
@@ -224,7 +224,7 @@ class OpenEntityHeader:
 
     @classification_names.setter
     def classification_names(self, classification_names):
-        """Sets the classification_names of this OpenEntityHeader.
+        r"""Sets the classification_names of this OpenEntityHeader.
 
         分类名称列表
 

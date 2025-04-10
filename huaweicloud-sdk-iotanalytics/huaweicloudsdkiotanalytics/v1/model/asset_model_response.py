@@ -37,7 +37,7 @@ class AssetModelResponse:
     }
 
     def __init__(self, asset_model_id=None, name=None, display_name=None, properties=None, analyses=None, created_time=None, modified_time=None):
-        """AssetModelResponse
+        r"""AssetModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AssetModelResponse:
 
     @property
     def asset_model_id(self):
-        """Gets the asset_model_id of this AssetModelResponse.
+        r"""Gets the asset_model_id of this AssetModelResponse.
 
         模型ID
 
@@ -96,7 +96,7 @@ class AssetModelResponse:
 
     @asset_model_id.setter
     def asset_model_id(self, asset_model_id):
-        """Sets the asset_model_id of this AssetModelResponse.
+        r"""Sets the asset_model_id of this AssetModelResponse.
 
         模型ID
 
@@ -107,7 +107,7 @@ class AssetModelResponse:
 
     @property
     def name(self):
-        """Gets the name of this AssetModelResponse.
+        r"""Gets the name of this AssetModelResponse.
 
         模型名称
 
@@ -118,7 +118,7 @@ class AssetModelResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetModelResponse.
+        r"""Sets the name of this AssetModelResponse.
 
         模型名称
 
@@ -129,7 +129,7 @@ class AssetModelResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AssetModelResponse.
+        r"""Gets the display_name of this AssetModelResponse.
 
         模型显示名称
 
@@ -140,7 +140,7 @@ class AssetModelResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AssetModelResponse.
+        r"""Sets the display_name of this AssetModelResponse.
 
         模型显示名称
 
@@ -151,7 +151,7 @@ class AssetModelResponse:
 
     @property
     def properties(self):
-        """Gets the properties of this AssetModelResponse.
+        r"""Gets the properties of this AssetModelResponse.
 
         属性集
 
@@ -162,7 +162,7 @@ class AssetModelResponse:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AssetModelResponse.
+        r"""Sets the properties of this AssetModelResponse.
 
         属性集
 
@@ -173,7 +173,7 @@ class AssetModelResponse:
 
     @property
     def analyses(self):
-        """Gets the analyses of this AssetModelResponse.
+        r"""Gets the analyses of this AssetModelResponse.
 
         分析任务集
 
@@ -184,7 +184,7 @@ class AssetModelResponse:
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this AssetModelResponse.
+        r"""Sets the analyses of this AssetModelResponse.
 
         分析任务集
 
@@ -195,7 +195,7 @@ class AssetModelResponse:
 
     @property
     def created_time(self):
-        """Gets the created_time of this AssetModelResponse.
+        r"""Gets the created_time of this AssetModelResponse.
 
         创建时间
 
@@ -206,7 +206,7 @@ class AssetModelResponse:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this AssetModelResponse.
+        r"""Sets the created_time of this AssetModelResponse.
 
         创建时间
 
@@ -217,7 +217,7 @@ class AssetModelResponse:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this AssetModelResponse.
+        r"""Gets the modified_time of this AssetModelResponse.
 
         修改时间
 
@@ -228,7 +228,7 @@ class AssetModelResponse:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this AssetModelResponse.
+        r"""Sets the modified_time of this AssetModelResponse.
 
         修改时间
 

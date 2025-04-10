@@ -28,7 +28,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
     }
 
     def __init__(self, relation_ids=None, notification_mask_id=None):
-        """BatchUpdateNotificationMasksResponse
+        r"""BatchUpdateNotificationMasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
 
     @property
     def relation_ids(self):
-        """Gets the relation_ids of this BatchUpdateNotificationMasksResponse.
+        r"""Gets the relation_ids of this BatchUpdateNotificationMasksResponse.
 
         创建成功的关联ID列表
 
@@ -62,7 +62,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
 
     @relation_ids.setter
     def relation_ids(self, relation_ids):
-        """Sets the relation_ids of this BatchUpdateNotificationMasksResponse.
+        r"""Sets the relation_ids of this BatchUpdateNotificationMasksResponse.
 
         创建成功的关联ID列表
 
@@ -73,7 +73,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
 
     @property
     def notification_mask_id(self):
-        """Gets the notification_mask_id of this BatchUpdateNotificationMasksResponse.
+        r"""Gets the notification_mask_id of this BatchUpdateNotificationMasksResponse.
 
         屏蔽规则ID
 
@@ -84,7 +84,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
 
     @notification_mask_id.setter
     def notification_mask_id(self, notification_mask_id):
-        """Sets the notification_mask_id of this BatchUpdateNotificationMasksResponse.
+        r"""Sets the notification_mask_id of this BatchUpdateNotificationMasksResponse.
 
         屏蔽规则ID
 

@@ -28,7 +28,7 @@ class ListDnsServersResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None):
-        """ListDnsServersResponse
+        r"""ListDnsServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDnsServersResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDnsServersResponse.
+        r"""Gets the data of this ListDnsServersResponse.
 
         dns服务器列表
 
@@ -62,7 +62,7 @@ class ListDnsServersResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDnsServersResponse.
+        r"""Sets the data of this ListDnsServersResponse.
 
         dns服务器列表
 
@@ -73,7 +73,7 @@ class ListDnsServersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDnsServersResponse.
+        r"""Gets the total of this ListDnsServersResponse.
 
         dns服务器总数
 
@@ -84,7 +84,7 @@ class ListDnsServersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDnsServersResponse.
+        r"""Sets the total of this ListDnsServersResponse.
 
         dns服务器总数
 

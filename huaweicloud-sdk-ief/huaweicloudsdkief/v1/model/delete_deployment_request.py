@@ -29,7 +29,7 @@ class DeleteDeploymentRequest:
     }
 
     def __init__(self, ief_instance_id=None, deployment_id=None, force_delete=None):
-        """DeleteDeploymentRequest
+        r"""DeleteDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDeploymentRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteDeploymentRequest.
+        r"""Gets the ief_instance_id of this DeleteDeploymentRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class DeleteDeploymentRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteDeploymentRequest.
+        r"""Sets the ief_instance_id of this DeleteDeploymentRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class DeleteDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this DeleteDeploymentRequest.
+        r"""Gets the deployment_id of this DeleteDeploymentRequest.
 
         应用部署ID
 
@@ -89,7 +89,7 @@ class DeleteDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this DeleteDeploymentRequest.
+        r"""Sets the deployment_id of this DeleteDeploymentRequest.
 
         应用部署ID
 
@@ -100,7 +100,7 @@ class DeleteDeploymentRequest:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this DeleteDeploymentRequest.
+        r"""Gets the force_delete of this DeleteDeploymentRequest.
 
         是否强制删除。默认为false。 如果强制删除，则会忽略边缘节点是否有残留应用，直接删除云端应用。 如果不强制删除，则会等待边缘节点的应用删除成功后，再删除云端应用。
 
@@ -111,7 +111,7 @@ class DeleteDeploymentRequest:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this DeleteDeploymentRequest.
+        r"""Sets the force_delete of this DeleteDeploymentRequest.
 
         是否强制删除。默认为false。 如果强制删除，则会忽略边缘节点是否有残留应用，直接删除云端应用。 如果不强制删除，则会等待边缘节点的应用删除成功后，再删除云端应用。
 

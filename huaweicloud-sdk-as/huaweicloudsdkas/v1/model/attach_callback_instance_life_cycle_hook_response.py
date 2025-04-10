@@ -24,7 +24,7 @@ class AttachCallbackInstanceLifeCycleHookResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AttachCallbackInstanceLifeCycleHookResponse
+        r"""AttachCallbackInstanceLifeCycleHookResponse
 
         The model defined in huaweicloud sdk
 

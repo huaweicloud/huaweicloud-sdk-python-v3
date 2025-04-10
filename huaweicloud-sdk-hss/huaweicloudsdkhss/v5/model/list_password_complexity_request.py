@@ -21,6 +21,7 @@ class ListPasswordComplexityRequest:
         'host_name': 'str',
         'host_ip': 'str',
         'host_id': 'str',
+        'result_type': 'str',
         'limit': 'int',
         'offset': 'int'
     }
@@ -30,16 +31,17 @@ class ListPasswordComplexityRequest:
         'host_name': 'host_name',
         'host_ip': 'host_ip',
         'host_id': 'host_id',
+        'result_type': 'result_type',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, enterprise_project_id=None, host_name=None, host_ip=None, host_id=None, limit=None, offset=None):
-        """ListPasswordComplexityRequest
+    def __init__(self, enterprise_project_id=None, host_name=None, host_ip=None, host_id=None, result_type=None, limit=None, offset=None):
+        r"""ListPasswordComplexityRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -47,6 +49,8 @@ class ListPasswordComplexityRequest:
         :type host_ip: str
         :param host_id: 主机id，不赋值时，查租户所有主机
         :type host_id: str
+        :param result_type: 结果类型  - \&quot;unhandled\&quot;#未忽略的  - \&quot;ignored\&quot;#已忽略的
+        :type result_type: str
         :param limit: 每页显示数量
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置
@@ -59,6 +63,7 @@ class ListPasswordComplexityRequest:
         self._host_name = None
         self._host_ip = None
         self._host_id = None
+        self._result_type = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -71,6 +76,8 @@ class ListPasswordComplexityRequest:
             self.host_ip = host_ip
         if host_id is not None:
             self.host_id = host_id
+        if result_type is not None:
+            self.result_type = result_type
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -78,9 +85,9 @@ class ListPasswordComplexityRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPasswordComplexityRequest.
+        r"""Gets the enterprise_project_id of this ListPasswordComplexityRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListPasswordComplexityRequest.
         :rtype: str
@@ -89,9 +96,9 @@ class ListPasswordComplexityRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPasswordComplexityRequest.
+        r"""Sets the enterprise_project_id of this ListPasswordComplexityRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPasswordComplexityRequest.
         :type enterprise_project_id: str
@@ -100,7 +107,7 @@ class ListPasswordComplexityRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListPasswordComplexityRequest.
+        r"""Gets the host_name of this ListPasswordComplexityRequest.
 
         服务器名称
 
@@ -111,7 +118,7 @@ class ListPasswordComplexityRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListPasswordComplexityRequest.
+        r"""Sets the host_name of this ListPasswordComplexityRequest.
 
         服务器名称
 
@@ -122,7 +129,7 @@ class ListPasswordComplexityRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListPasswordComplexityRequest.
+        r"""Gets the host_ip of this ListPasswordComplexityRequest.
 
         服务器IP地址
 
@@ -133,7 +140,7 @@ class ListPasswordComplexityRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListPasswordComplexityRequest.
+        r"""Sets the host_ip of this ListPasswordComplexityRequest.
 
         服务器IP地址
 
@@ -144,7 +151,7 @@ class ListPasswordComplexityRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListPasswordComplexityRequest.
+        r"""Gets the host_id of this ListPasswordComplexityRequest.
 
         主机id，不赋值时，查租户所有主机
 
@@ -155,7 +162,7 @@ class ListPasswordComplexityRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListPasswordComplexityRequest.
+        r"""Sets the host_id of this ListPasswordComplexityRequest.
 
         主机id，不赋值时，查租户所有主机
 
@@ -165,8 +172,30 @@ class ListPasswordComplexityRequest:
         self._host_id = host_id
 
     @property
+    def result_type(self):
+        r"""Gets the result_type of this ListPasswordComplexityRequest.
+
+        结果类型  - \"unhandled\"#未忽略的  - \"ignored\"#已忽略的
+
+        :return: The result_type of this ListPasswordComplexityRequest.
+        :rtype: str
+        """
+        return self._result_type
+
+    @result_type.setter
+    def result_type(self, result_type):
+        r"""Sets the result_type of this ListPasswordComplexityRequest.
+
+        结果类型  - \"unhandled\"#未忽略的  - \"ignored\"#已忽略的
+
+        :param result_type: The result_type of this ListPasswordComplexityRequest.
+        :type result_type: str
+        """
+        self._result_type = result_type
+
+    @property
     def limit(self):
-        """Gets the limit of this ListPasswordComplexityRequest.
+        r"""Gets the limit of this ListPasswordComplexityRequest.
 
         每页显示数量
 
@@ -177,7 +206,7 @@ class ListPasswordComplexityRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPasswordComplexityRequest.
+        r"""Sets the limit of this ListPasswordComplexityRequest.
 
         每页显示数量
 
@@ -188,7 +217,7 @@ class ListPasswordComplexityRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPasswordComplexityRequest.
+        r"""Gets the offset of this ListPasswordComplexityRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -199,7 +228,7 @@ class ListPasswordComplexityRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPasswordComplexityRequest.
+        r"""Sets the offset of this ListPasswordComplexityRequest.
 
         偏移量：指定返回记录的开始位置
 

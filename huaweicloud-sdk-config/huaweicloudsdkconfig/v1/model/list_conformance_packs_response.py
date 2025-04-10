@@ -28,7 +28,7 @@ class ListConformancePacksResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListConformancePacksResponse
+        r"""ListConformancePacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConformancePacksResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListConformancePacksResponse.
+        r"""Gets the value of this ListConformancePacksResponse.
 
         合规规则包查询列表。
 
@@ -62,7 +62,7 @@ class ListConformancePacksResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListConformancePacksResponse.
+        r"""Sets the value of this ListConformancePacksResponse.
 
         合规规则包查询列表。
 
@@ -73,7 +73,7 @@ class ListConformancePacksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListConformancePacksResponse.
+        r"""Gets the page_info of this ListConformancePacksResponse.
 
         :return: The page_info of this ListConformancePacksResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListConformancePacksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListConformancePacksResponse.
+        r"""Sets the page_info of this ListConformancePacksResponse.
 
         :param page_info: The page_info of this ListConformancePacksResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

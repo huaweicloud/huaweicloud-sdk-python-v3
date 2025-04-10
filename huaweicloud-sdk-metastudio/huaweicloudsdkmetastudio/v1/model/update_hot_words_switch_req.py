@@ -27,7 +27,7 @@ class UpdateHotWordsSwitchReq:
     }
 
     def __init__(self, robot_id=None, enable_hot_words=None):
-        """UpdateHotWordsSwitchReq
+        r"""UpdateHotWordsSwitchReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateHotWordsSwitchReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdateHotWordsSwitchReq.
+        r"""Gets the robot_id of this UpdateHotWordsSwitchReq.
 
         应用ID。
 
@@ -59,7 +59,7 @@ class UpdateHotWordsSwitchReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdateHotWordsSwitchReq.
+        r"""Sets the robot_id of this UpdateHotWordsSwitchReq.
 
         应用ID。
 
@@ -70,7 +70,7 @@ class UpdateHotWordsSwitchReq:
 
     @property
     def enable_hot_words(self):
-        """Gets the enable_hot_words of this UpdateHotWordsSwitchReq.
+        r"""Gets the enable_hot_words of this UpdateHotWordsSwitchReq.
 
         热词功能开关。
 
@@ -81,7 +81,7 @@ class UpdateHotWordsSwitchReq:
 
     @enable_hot_words.setter
     def enable_hot_words(self, enable_hot_words):
-        """Sets the enable_hot_words of this UpdateHotWordsSwitchReq.
+        r"""Sets the enable_hot_words of this UpdateHotWordsSwitchReq.
 
         热词功能开关。
 

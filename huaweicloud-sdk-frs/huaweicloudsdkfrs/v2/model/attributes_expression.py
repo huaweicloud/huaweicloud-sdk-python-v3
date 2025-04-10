@@ -27,7 +27,7 @@ class AttributesExpression:
     }
 
     def __init__(self, type=None, probability=None):
-        """AttributesExpression
+        r"""AttributesExpression
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttributesExpression:
 
     @property
     def type(self):
-        """Gets the type of this AttributesExpression.
+        r"""Gets the type of this AttributesExpression.
 
         人脸表情类型： • neutral：中性 • happy：高兴 • fear：害怕 • surprise：惊讶 • sad：伤心 • angry：生气 • disgust：厌恶 • unknown：图片质量问题导致未识别
 
@@ -61,7 +61,7 @@ class AttributesExpression:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AttributesExpression.
+        r"""Sets the type of this AttributesExpression.
 
         人脸表情类型： • neutral：中性 • happy：高兴 • fear：害怕 • surprise：惊讶 • sad：伤心 • angry：生气 • disgust：厌恶 • unknown：图片质量问题导致未识别
 
@@ -72,7 +72,7 @@ class AttributesExpression:
 
     @property
     def probability(self):
-        """Gets the probability of this AttributesExpression.
+        r"""Gets the probability of this AttributesExpression.
 
         表情置信度，取值范围[0-1]。
 
@@ -83,7 +83,7 @@ class AttributesExpression:
 
     @probability.setter
     def probability(self, probability):
-        """Sets the probability of this AttributesExpression.
+        r"""Sets the probability of this AttributesExpression.
 
         表情置信度，取值范围[0-1]。
 

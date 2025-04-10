@@ -53,7 +53,7 @@ class RelationVO:
     }
 
     def __init__(self, id=None, source_table_id=None, target_table_id=None, name=None, source_table_name=None, target_table_name=None, role=None, tenant_id=None, source_type=None, target_type=None, create_by=None, update_by=None, create_time=None, update_time=None, mappings=None):
-        """RelationVO
+        r"""RelationVO
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class RelationVO:
 
     @property
     def id(self):
-        """Gets the id of this RelationVO.
+        r"""Gets the id of this RelationVO.
 
         编码，ID字符串。
 
@@ -151,7 +151,7 @@ class RelationVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RelationVO.
+        r"""Sets the id of this RelationVO.
 
         编码，ID字符串。
 
@@ -162,7 +162,7 @@ class RelationVO:
 
     @property
     def source_table_id(self):
-        """Gets the source_table_id of this RelationVO.
+        r"""Gets the source_table_id of this RelationVO.
 
         源表ID，ID字符串。
 
@@ -173,7 +173,7 @@ class RelationVO:
 
     @source_table_id.setter
     def source_table_id(self, source_table_id):
-        """Sets the source_table_id of this RelationVO.
+        r"""Sets the source_table_id of this RelationVO.
 
         源表ID，ID字符串。
 
@@ -184,7 +184,7 @@ class RelationVO:
 
     @property
     def target_table_id(self):
-        """Gets the target_table_id of this RelationVO.
+        r"""Gets the target_table_id of this RelationVO.
 
         目标表ID，ID字符串。
 
@@ -195,7 +195,7 @@ class RelationVO:
 
     @target_table_id.setter
     def target_table_id(self, target_table_id):
-        """Sets the target_table_id of this RelationVO.
+        r"""Sets the target_table_id of this RelationVO.
 
         目标表ID，ID字符串。
 
@@ -206,7 +206,7 @@ class RelationVO:
 
     @property
     def name(self):
-        """Gets the name of this RelationVO.
+        r"""Gets the name of this RelationVO.
 
         关系名称。
 
@@ -217,7 +217,7 @@ class RelationVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RelationVO.
+        r"""Sets the name of this RelationVO.
 
         关系名称。
 
@@ -228,7 +228,7 @@ class RelationVO:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this RelationVO.
+        r"""Gets the source_table_name of this RelationVO.
 
         源表名称。
 
@@ -239,7 +239,7 @@ class RelationVO:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this RelationVO.
+        r"""Sets the source_table_name of this RelationVO.
 
         源表名称。
 
@@ -250,7 +250,7 @@ class RelationVO:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this RelationVO.
+        r"""Gets the target_table_name of this RelationVO.
 
         目的表名称。
 
@@ -261,7 +261,7 @@ class RelationVO:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this RelationVO.
+        r"""Sets the target_table_name of this RelationVO.
 
         目的表名称。
 
@@ -272,7 +272,7 @@ class RelationVO:
 
     @property
     def role(self):
-        """Gets the role of this RelationVO.
+        r"""Gets the role of this RelationVO.
 
         角色。
 
@@ -283,7 +283,7 @@ class RelationVO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this RelationVO.
+        r"""Sets the role of this RelationVO.
 
         角色。
 
@@ -294,7 +294,7 @@ class RelationVO:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this RelationVO.
+        r"""Gets the tenant_id of this RelationVO.
 
         租户ID。
 
@@ -305,7 +305,7 @@ class RelationVO:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this RelationVO.
+        r"""Sets the tenant_id of this RelationVO.
 
         租户ID。
 
@@ -316,7 +316,7 @@ class RelationVO:
 
     @property
     def source_type(self):
-        """Gets the source_type of this RelationVO.
+        r"""Gets the source_type of this RelationVO.
 
         :return: The source_type of this RelationVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
@@ -325,7 +325,7 @@ class RelationVO:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this RelationVO.
+        r"""Sets the source_type of this RelationVO.
 
         :param source_type: The source_type of this RelationVO.
         :type source_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
@@ -334,7 +334,7 @@ class RelationVO:
 
     @property
     def target_type(self):
-        """Gets the target_type of this RelationVO.
+        r"""Gets the target_type of this RelationVO.
 
         :return: The target_type of this RelationVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
@@ -343,7 +343,7 @@ class RelationVO:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this RelationVO.
+        r"""Sets the target_type of this RelationVO.
 
         :param target_type: The target_type of this RelationVO.
         :type target_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
@@ -352,7 +352,7 @@ class RelationVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this RelationVO.
+        r"""Gets the create_by of this RelationVO.
 
         创建人。
 
@@ -363,7 +363,7 @@ class RelationVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this RelationVO.
+        r"""Sets the create_by of this RelationVO.
 
         创建人。
 
@@ -374,7 +374,7 @@ class RelationVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this RelationVO.
+        r"""Gets the update_by of this RelationVO.
 
         更新人。
 
@@ -385,7 +385,7 @@ class RelationVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this RelationVO.
+        r"""Sets the update_by of this RelationVO.
 
         更新人。
 
@@ -396,7 +396,7 @@ class RelationVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RelationVO.
+        r"""Gets the create_time of this RelationVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -407,7 +407,7 @@ class RelationVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RelationVO.
+        r"""Sets the create_time of this RelationVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -418,7 +418,7 @@ class RelationVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RelationVO.
+        r"""Gets the update_time of this RelationVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -429,7 +429,7 @@ class RelationVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RelationVO.
+        r"""Sets the update_time of this RelationVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -440,7 +440,7 @@ class RelationVO:
 
     @property
     def mappings(self):
-        """Gets the mappings of this RelationVO.
+        r"""Gets the mappings of this RelationVO.
 
         表属性信息，只读。
 
@@ -451,7 +451,7 @@ class RelationVO:
 
     @mappings.setter
     def mappings(self, mappings):
-        """Sets the mappings of this RelationVO.
+        r"""Sets the mappings of this RelationVO.
 
         表属性信息，只读。
 

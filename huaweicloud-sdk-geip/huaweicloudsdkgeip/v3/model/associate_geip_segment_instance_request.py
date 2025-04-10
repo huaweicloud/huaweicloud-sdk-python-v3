@@ -27,7 +27,7 @@ class AssociateGeipSegmentInstanceRequest:
     }
 
     def __init__(self, global_eip_segment_id=None, body=None):
-        """AssociateGeipSegmentInstanceRequest
+        r"""AssociateGeipSegmentInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateGeipSegmentInstanceRequest:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this AssociateGeipSegmentInstanceRequest.
+        r"""Gets the global_eip_segment_id of this AssociateGeipSegmentInstanceRequest.
 
         :return: The global_eip_segment_id of this AssociateGeipSegmentInstanceRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class AssociateGeipSegmentInstanceRequest:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this AssociateGeipSegmentInstanceRequest.
+        r"""Sets the global_eip_segment_id of this AssociateGeipSegmentInstanceRequest.
 
         :param global_eip_segment_id: The global_eip_segment_id of this AssociateGeipSegmentInstanceRequest.
         :type global_eip_segment_id: str
@@ -67,7 +67,7 @@ class AssociateGeipSegmentInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateGeipSegmentInstanceRequest.
+        r"""Gets the body of this AssociateGeipSegmentInstanceRequest.
 
         :return: The body of this AssociateGeipSegmentInstanceRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipSegmentRequestBody`
@@ -76,7 +76,7 @@ class AssociateGeipSegmentInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateGeipSegmentInstanceRequest.
+        r"""Sets the body of this AssociateGeipSegmentInstanceRequest.
 
         :param body: The body of this AssociateGeipSegmentInstanceRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipSegmentRequestBody`

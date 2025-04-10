@@ -28,7 +28,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeGeneralTextResponse
+        r"""RecognizeGeneralTextResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeGeneralTextResponse.
+        r"""Gets the result of this RecognizeGeneralTextResponse.
 
         :return: The result of this RecognizeGeneralTextResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.GeneralTextResult`
@@ -60,7 +60,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeGeneralTextResponse.
+        r"""Sets the result of this RecognizeGeneralTextResponse.
 
         :param result: The result of this RecognizeGeneralTextResponse.
         :type result: :class:`huaweicloudsdkocr.v1.GeneralTextResult`
@@ -69,7 +69,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeGeneralTextResponse.
+        r"""Gets the x_request_id of this RecognizeGeneralTextResponse.
 
         :return: The x_request_id of this RecognizeGeneralTextResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeGeneralTextResponse.
+        r"""Sets the x_request_id of this RecognizeGeneralTextResponse.
 
         :param x_request_id: The x_request_id of this RecognizeGeneralTextResponse.
         :type x_request_id: str

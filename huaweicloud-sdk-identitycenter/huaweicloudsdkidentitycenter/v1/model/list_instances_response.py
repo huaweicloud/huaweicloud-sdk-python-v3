@@ -28,7 +28,7 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, page_info=None):
-        """ListInstancesResponse
+        r"""ListInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListInstancesResponse.
+        r"""Gets the instances of this ListInstancesResponse.
 
         IAM身份中心实例信息列表
 
@@ -62,7 +62,7 @@ class ListInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListInstancesResponse.
+        r"""Sets the instances of this ListInstancesResponse.
 
         IAM身份中心实例信息列表
 
@@ -73,7 +73,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListInstancesResponse.
+        r"""Gets the page_info of this ListInstancesResponse.
 
         :return: The page_info of this ListInstancesResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListInstancesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListInstancesResponse.
+        r"""Sets the page_info of this ListInstancesResponse.
 
         :param page_info: The page_info of this ListInstancesResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`

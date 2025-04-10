@@ -37,7 +37,7 @@ class PublisherSnake:
     }
 
     def __init__(self, publisher_id=None, publisher_name=None, display_name=None, publisher_status=None, email=None, web_url=None, open=None):
-        """PublisherSnake
+        r"""PublisherSnake
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PublisherSnake:
 
     @property
     def publisher_id(self):
-        """Gets the publisher_id of this PublisherSnake.
+        r"""Gets the publisher_id of this PublisherSnake.
 
         发布者id
 
@@ -96,7 +96,7 @@ class PublisherSnake:
 
     @publisher_id.setter
     def publisher_id(self, publisher_id):
-        """Sets the publisher_id of this PublisherSnake.
+        r"""Sets the publisher_id of this PublisherSnake.
 
         发布者id
 
@@ -107,7 +107,7 @@ class PublisherSnake:
 
     @property
     def publisher_name(self):
-        """Gets the publisher_name of this PublisherSnake.
+        r"""Gets the publisher_name of this PublisherSnake.
 
         发布者名称
 
@@ -118,7 +118,7 @@ class PublisherSnake:
 
     @publisher_name.setter
     def publisher_name(self, publisher_name):
-        """Sets the publisher_name of this PublisherSnake.
+        r"""Sets the publisher_name of this PublisherSnake.
 
         发布者名称
 
@@ -129,7 +129,7 @@ class PublisherSnake:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PublisherSnake.
+        r"""Gets the display_name of this PublisherSnake.
 
         发布者展示名
 
@@ -140,7 +140,7 @@ class PublisherSnake:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PublisherSnake.
+        r"""Sets the display_name of this PublisherSnake.
 
         发布者展示名
 
@@ -151,7 +151,7 @@ class PublisherSnake:
 
     @property
     def publisher_status(self):
-        """Gets the publisher_status of this PublisherSnake.
+        r"""Gets the publisher_status of this PublisherSnake.
 
         插件作者状态 - DISABLED 验证不通过 - VERIFIED 验证通过
 
@@ -162,7 +162,7 @@ class PublisherSnake:
 
     @publisher_status.setter
     def publisher_status(self, publisher_status):
-        """Sets the publisher_status of this PublisherSnake.
+        r"""Sets the publisher_status of this PublisherSnake.
 
         插件作者状态 - DISABLED 验证不通过 - VERIFIED 验证通过
 
@@ -173,7 +173,7 @@ class PublisherSnake:
 
     @property
     def email(self):
-        """Gets the email of this PublisherSnake.
+        r"""Gets the email of this PublisherSnake.
 
         发布者邮箱
 
@@ -184,7 +184,7 @@ class PublisherSnake:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PublisherSnake.
+        r"""Sets the email of this PublisherSnake.
 
         发布者邮箱
 
@@ -195,7 +195,7 @@ class PublisherSnake:
 
     @property
     def web_url(self):
-        """Gets the web_url of this PublisherSnake.
+        r"""Gets the web_url of this PublisherSnake.
 
         网页url
 
@@ -206,7 +206,7 @@ class PublisherSnake:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this PublisherSnake.
+        r"""Sets the web_url of this PublisherSnake.
 
         网页url
 
@@ -217,7 +217,7 @@ class PublisherSnake:
 
     @property
     def open(self):
-        """Gets the open of this PublisherSnake.
+        r"""Gets the open of this PublisherSnake.
 
         是否开源
 
@@ -228,7 +228,7 @@ class PublisherSnake:
 
     @open.setter
     def open(self, open):
-        """Sets the open of this PublisherSnake.
+        r"""Sets the open of this PublisherSnake.
 
         是否开源
 

@@ -39,7 +39,7 @@ class ListSupportInstancesSupportRegions:
     }
 
     def __init__(self, id=None, instance_type=None, public_border_group=None, region_id=None, access_site=None, status=None, created_at=None, updated_at=None):
-        """ListSupportInstancesSupportRegions
+        r"""ListSupportInstancesSupportRegions
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def id(self):
-        """Gets the id of this ListSupportInstancesSupportRegions.
+        r"""Gets the id of this ListSupportInstancesSupportRegions.
 
         域弹性公网IP支持绑定的Region限制的ID
 
@@ -103,7 +103,7 @@ class ListSupportInstancesSupportRegions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSupportInstancesSupportRegions.
+        r"""Sets the id of this ListSupportInstancesSupportRegions.
 
         域弹性公网IP支持绑定的Region限制的ID
 
@@ -114,7 +114,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListSupportInstancesSupportRegions.
+        r"""Gets the instance_type of this ListSupportInstancesSupportRegions.
 
         支持绑定的实例类型
 
@@ -125,7 +125,7 @@ class ListSupportInstancesSupportRegions:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListSupportInstancesSupportRegions.
+        r"""Sets the instance_type of this ListSupportInstancesSupportRegions.
 
         支持绑定的实例类型
 
@@ -136,7 +136,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListSupportInstancesSupportRegions.
+        r"""Gets the public_border_group of this ListSupportInstancesSupportRegions.
 
         - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
@@ -147,7 +147,7 @@ class ListSupportInstancesSupportRegions:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListSupportInstancesSupportRegions.
+        r"""Sets the public_border_group of this ListSupportInstancesSupportRegions.
 
         - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
@@ -158,7 +158,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListSupportInstancesSupportRegions.
+        r"""Gets the region_id of this ListSupportInstancesSupportRegions.
 
         region_id
 
@@ -169,7 +169,7 @@ class ListSupportInstancesSupportRegions:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListSupportInstancesSupportRegions.
+        r"""Sets the region_id of this ListSupportInstancesSupportRegions.
 
         region_id
 
@@ -180,7 +180,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListSupportInstancesSupportRegions.
+        r"""Gets the access_site of this ListSupportInstancesSupportRegions.
 
         access_site,后端实例所在的站点信息
 
@@ -191,7 +191,7 @@ class ListSupportInstancesSupportRegions:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListSupportInstancesSupportRegions.
+        r"""Sets the access_site of this ListSupportInstancesSupportRegions.
 
         access_site,后端实例所在的站点信息
 
@@ -202,7 +202,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def status(self):
-        """Gets the status of this ListSupportInstancesSupportRegions.
+        r"""Gets the status of this ListSupportInstancesSupportRegions.
 
         状态
 
@@ -213,7 +213,7 @@ class ListSupportInstancesSupportRegions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSupportInstancesSupportRegions.
+        r"""Sets the status of this ListSupportInstancesSupportRegions.
 
         状态
 
@@ -224,7 +224,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListSupportInstancesSupportRegions.
+        r"""Gets the created_at of this ListSupportInstancesSupportRegions.
 
         创建时间
 
@@ -235,7 +235,7 @@ class ListSupportInstancesSupportRegions:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListSupportInstancesSupportRegions.
+        r"""Sets the created_at of this ListSupportInstancesSupportRegions.
 
         创建时间
 
@@ -246,7 +246,7 @@ class ListSupportInstancesSupportRegions:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListSupportInstancesSupportRegions.
+        r"""Gets the updated_at of this ListSupportInstancesSupportRegions.
 
         更新时间
 
@@ -257,7 +257,7 @@ class ListSupportInstancesSupportRegions:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListSupportInstancesSupportRegions.
+        r"""Sets the updated_at of this ListSupportInstancesSupportRegions.
 
         更新时间
 

@@ -26,7 +26,7 @@ class CreateUserResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateUserResponse
+        r"""CreateUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateUserResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateUserResponse.
+        r"""Gets the id of this CreateUserResponse.
 
         用户id
 
@@ -55,7 +55,7 @@ class CreateUserResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateUserResponse.
+        r"""Sets the id of this CreateUserResponse.
 
         用户id
 

@@ -28,7 +28,7 @@ class ListFunctionsResponse(SdkResponse):
     }
 
     def __init__(self, product_functions=None, count=None):
-        """ListFunctionsResponse
+        r"""ListFunctionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @property
     def product_functions(self):
-        """Gets the product_functions of this ListFunctionsResponse.
+        r"""Gets the product_functions of this ListFunctionsResponse.
 
         **参数说明**：编解码函数列表。
 
@@ -62,7 +62,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @product_functions.setter
     def product_functions(self, product_functions):
-        """Sets the product_functions of this ListFunctionsResponse.
+        r"""Sets the product_functions of this ListFunctionsResponse.
 
         **参数说明**：编解码函数列表。
 
@@ -73,7 +73,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionsResponse.
+        r"""Gets the count of this ListFunctionsResponse.
 
         **参数说明**：满足查询条件的记录总数。
 
@@ -84,7 +84,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionsResponse.
+        r"""Sets the count of this ListFunctionsResponse.
 
         **参数说明**：满足查询条件的记录总数。
 

@@ -29,7 +29,7 @@ class TrackerOBSChannelConfigBody:
     }
 
     def __init__(self, bucket_name=None, bucket_prefix=None, region_id=None):
-        """TrackerOBSChannelConfigBody
+        r"""TrackerOBSChannelConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TrackerOBSChannelConfigBody:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this TrackerOBSChannelConfigBody.
+        r"""Gets the bucket_name of this TrackerOBSChannelConfigBody.
 
         OBS桶名称
 
@@ -66,7 +66,7 @@ class TrackerOBSChannelConfigBody:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this TrackerOBSChannelConfigBody.
+        r"""Sets the bucket_name of this TrackerOBSChannelConfigBody.
 
         OBS桶名称
 
@@ -77,7 +77,7 @@ class TrackerOBSChannelConfigBody:
 
     @property
     def bucket_prefix(self):
-        """Gets the bucket_prefix of this TrackerOBSChannelConfigBody.
+        r"""Gets the bucket_prefix of this TrackerOBSChannelConfigBody.
 
         OBS桶前缀
 
@@ -88,7 +88,7 @@ class TrackerOBSChannelConfigBody:
 
     @bucket_prefix.setter
     def bucket_prefix(self, bucket_prefix):
-        """Sets the bucket_prefix of this TrackerOBSChannelConfigBody.
+        r"""Sets the bucket_prefix of this TrackerOBSChannelConfigBody.
 
         OBS桶前缀
 
@@ -99,7 +99,7 @@ class TrackerOBSChannelConfigBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this TrackerOBSChannelConfigBody.
+        r"""Gets the region_id of this TrackerOBSChannelConfigBody.
 
         区域id
 
@@ -110,7 +110,7 @@ class TrackerOBSChannelConfigBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this TrackerOBSChannelConfigBody.
+        r"""Sets the region_id of this TrackerOBSChannelConfigBody.
 
         区域id
 

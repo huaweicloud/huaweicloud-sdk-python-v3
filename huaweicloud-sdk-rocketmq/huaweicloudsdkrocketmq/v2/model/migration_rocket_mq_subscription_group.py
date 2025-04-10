@@ -39,7 +39,7 @@ class MigrationRocketMqSubscriptionGroup:
     }
 
     def __init__(self, group_name=None, consume_broadcast_enable=None, consume_enable=None, consume_from_min_enable=None, notify_consumer_ids_changed_enable=None, retry_max_times=None, retry_queue_nums=None, which_broker_when_consume_slow=None):
-        """MigrationRocketMqSubscriptionGroup
+        r"""MigrationRocketMqSubscriptionGroup
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the group_name of this MigrationRocketMqSubscriptionGroup.
 
         消费组名。
 
@@ -103,7 +103,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the group_name of this MigrationRocketMqSubscriptionGroup.
 
         消费组名。
 
@@ -114,7 +114,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def consume_broadcast_enable(self):
-        """Gets the consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
 
         是否允许以广播模式消费。
 
@@ -125,7 +125,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @consume_broadcast_enable.setter
     def consume_broadcast_enable(self, consume_broadcast_enable):
-        """Sets the consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
 
         是否允许以广播模式消费。
 
@@ -136,7 +136,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def consume_enable(self):
-        """Gets the consume_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the consume_enable of this MigrationRocketMqSubscriptionGroup.
 
         是否允许消费。
 
@@ -147,7 +147,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @consume_enable.setter
     def consume_enable(self, consume_enable):
-        """Sets the consume_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the consume_enable of this MigrationRocketMqSubscriptionGroup.
 
         是否允许消费。
 
@@ -158,7 +158,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def consume_from_min_enable(self):
-        """Gets the consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
 
         是否从最小偏移量开始消费。
 
@@ -169,7 +169,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @consume_from_min_enable.setter
     def consume_from_min_enable(self, consume_from_min_enable):
-        """Sets the consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
 
         是否从最小偏移量开始消费。
 
@@ -180,7 +180,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def notify_consumer_ids_changed_enable(self):
-        """Gets the notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
 
         消费者ID变化时是否通知。
 
@@ -191,7 +191,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @notify_consumer_ids_changed_enable.setter
     def notify_consumer_ids_changed_enable(self, notify_consumer_ids_changed_enable):
-        """Sets the notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
 
         消费者ID变化时是否通知。
 
@@ -202,7 +202,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def retry_max_times(self):
-        """Gets the retry_max_times of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the retry_max_times of this MigrationRocketMqSubscriptionGroup.
 
         消费最大重试次数。
 
@@ -213,7 +213,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @retry_max_times.setter
     def retry_max_times(self, retry_max_times):
-        """Sets the retry_max_times of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the retry_max_times of this MigrationRocketMqSubscriptionGroup.
 
         消费最大重试次数。
 
@@ -224,7 +224,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def retry_queue_nums(self):
-        """Gets the retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
 
         重试队列个数。
 
@@ -235,7 +235,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @retry_queue_nums.setter
     def retry_queue_nums(self, retry_queue_nums):
-        """Sets the retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
 
         重试队列个数。
 
@@ -246,7 +246,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @property
     def which_broker_when_consume_slow(self):
-        """Gets the which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
+        r"""Gets the which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
 
         慢消费时选择的broker节点ID。
 
@@ -257,7 +257,7 @@ class MigrationRocketMqSubscriptionGroup:
 
     @which_broker_when_consume_slow.setter
     def which_broker_when_consume_slow(self, which_broker_when_consume_slow):
-        """Sets the which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
+        r"""Sets the which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
 
         慢消费时选择的broker节点ID。
 

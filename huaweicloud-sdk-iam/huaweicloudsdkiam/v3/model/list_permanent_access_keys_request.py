@@ -25,7 +25,7 @@ class ListPermanentAccessKeysRequest:
     }
 
     def __init__(self, user_id=None):
-        """ListPermanentAccessKeysRequest
+        r"""ListPermanentAccessKeysRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPermanentAccessKeysRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListPermanentAccessKeysRequest.
+        r"""Gets the user_id of this ListPermanentAccessKeysRequest.
 
         待查询的IAM用户ID。
 
@@ -54,7 +54,7 @@ class ListPermanentAccessKeysRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListPermanentAccessKeysRequest.
+        r"""Sets the user_id of this ListPermanentAccessKeysRequest.
 
         待查询的IAM用户ID。
 

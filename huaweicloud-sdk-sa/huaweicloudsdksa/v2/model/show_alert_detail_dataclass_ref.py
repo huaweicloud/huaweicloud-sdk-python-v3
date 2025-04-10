@@ -27,7 +27,7 @@ class ShowAlertDetailDataclassRef:
     }
 
     def __init__(self, id=None, name=None):
-        """ShowAlertDetailDataclassRef
+        r"""ShowAlertDetailDataclassRef
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowAlertDetailDataclassRef:
 
     @property
     def id(self):
-        """Gets the id of this ShowAlertDetailDataclassRef.
+        r"""Gets the id of this ShowAlertDetailDataclassRef.
 
         Id value
 
@@ -61,7 +61,7 @@ class ShowAlertDetailDataclassRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAlertDetailDataclassRef.
+        r"""Sets the id of this ShowAlertDetailDataclassRef.
 
         Id value
 
@@ -72,7 +72,7 @@ class ShowAlertDetailDataclassRef:
 
     @property
     def name(self):
-        """Gets the name of this ShowAlertDetailDataclassRef.
+        r"""Gets the name of this ShowAlertDetailDataclassRef.
 
         The name, display only
 
@@ -83,7 +83,7 @@ class ShowAlertDetailDataclassRef:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAlertDetailDataclassRef.
+        r"""Sets the name of this ShowAlertDetailDataclassRef.
 
         The name, display only
 

@@ -28,7 +28,7 @@ class BatchUpdateSubscriptionsFilterPolicesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, batch_result=None):
-        """BatchUpdateSubscriptionsFilterPolicesResponse
+        r"""BatchUpdateSubscriptionsFilterPolicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchUpdateSubscriptionsFilterPolicesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchUpdateSubscriptionsFilterPolicesResponse.
+        r"""Gets the request_id of this BatchUpdateSubscriptionsFilterPolicesResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class BatchUpdateSubscriptionsFilterPolicesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchUpdateSubscriptionsFilterPolicesResponse.
+        r"""Sets the request_id of this BatchUpdateSubscriptionsFilterPolicesResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class BatchUpdateSubscriptionsFilterPolicesResponse(SdkResponse):
 
     @property
     def batch_result(self):
-        """Gets the batch_result of this BatchUpdateSubscriptionsFilterPolicesResponse.
+        r"""Gets the batch_result of this BatchUpdateSubscriptionsFilterPolicesResponse.
 
         批量结果
 
@@ -84,7 +84,7 @@ class BatchUpdateSubscriptionsFilterPolicesResponse(SdkResponse):
 
     @batch_result.setter
     def batch_result(self, batch_result):
-        """Sets the batch_result of this BatchUpdateSubscriptionsFilterPolicesResponse.
+        r"""Sets the batch_result of this BatchUpdateSubscriptionsFilterPolicesResponse.
 
         批量结果
 

@@ -51,7 +51,7 @@ class CreateResolveTaskParamMode:
     }
 
     def __init__(self, cust_flag=None, cust_id=None, dync_params=None, custom_url=None, aim_url=None, aim_code=None, ext_data=None, result_code=None, error_message=None, generate_date=None, expire_date=None, resolved_date=None, resolved_times=None, custom_short_code=None):
-        """CreateResolveTaskParamMode
+        r"""CreateResolveTaskParamMode
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this CreateResolveTaskParamMode.
+        r"""Gets the cust_flag of this CreateResolveTaskParamMode.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -145,7 +145,7 @@ class CreateResolveTaskParamMode:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this CreateResolveTaskParamMode.
+        r"""Sets the cust_flag of this CreateResolveTaskParamMode.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -156,7 +156,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def cust_id(self):
-        """Gets the cust_id of this CreateResolveTaskParamMode.
+        r"""Gets the cust_id of this CreateResolveTaskParamMode.
 
         租户ID。
 
@@ -167,7 +167,7 @@ class CreateResolveTaskParamMode:
 
     @cust_id.setter
     def cust_id(self, cust_id):
-        """Sets the cust_id of this CreateResolveTaskParamMode.
+        r"""Sets the cust_id of this CreateResolveTaskParamMode.
 
         租户ID。
 
@@ -178,7 +178,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def dync_params(self):
-        """Gets the dync_params of this CreateResolveTaskParamMode.
+        r"""Gets the dync_params of this CreateResolveTaskParamMode.
 
         动态参数。
 
@@ -189,7 +189,7 @@ class CreateResolveTaskParamMode:
 
     @dync_params.setter
     def dync_params(self, dync_params):
-        """Sets the dync_params of this CreateResolveTaskParamMode.
+        r"""Sets the dync_params of this CreateResolveTaskParamMode.
 
         动态参数。
 
@@ -200,7 +200,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def custom_url(self):
-        """Gets the custom_url of this CreateResolveTaskParamMode.
+        r"""Gets the custom_url of this CreateResolveTaskParamMode.
 
         自定义跳转地址。 > - 未填时，终端用户点击访问短信原文中的短链，跳转智能信息H5页 > - 已填时，终端用户点击访问短信原文中的短链，跳转客户填写的链接落地页，填写时必须为http或https作为前缀 
 
@@ -211,7 +211,7 @@ class CreateResolveTaskParamMode:
 
     @custom_url.setter
     def custom_url(self, custom_url):
-        """Sets the custom_url of this CreateResolveTaskParamMode.
+        r"""Sets the custom_url of this CreateResolveTaskParamMode.
 
         自定义跳转地址。 > - 未填时，终端用户点击访问短信原文中的短链，跳转智能信息H5页 > - 已填时，终端用户点击访问短信原文中的短链，跳转客户填写的链接落地页，填写时必须为http或https作为前缀 
 
@@ -222,7 +222,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def aim_url(self):
-        """Gets the aim_url of this CreateResolveTaskParamMode.
+        r"""Gets the aim_url of this CreateResolveTaskParamMode.
 
         完整的短链连接地址，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。样例：km2g.cn/PDiWqc。
 
@@ -233,7 +233,7 @@ class CreateResolveTaskParamMode:
 
     @aim_url.setter
     def aim_url(self, aim_url):
-        """Sets the aim_url of this CreateResolveTaskParamMode.
+        r"""Sets the aim_url of this CreateResolveTaskParamMode.
 
         完整的短链连接地址，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。样例：km2g.cn/PDiWqc。
 
@@ -244,7 +244,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def aim_code(self):
-        """Gets the aim_code of this CreateResolveTaskParamMode.
+        r"""Gets the aim_code of this CreateResolveTaskParamMode.
 
         智能信息编码，样例：PDiWqc。
 
@@ -255,7 +255,7 @@ class CreateResolveTaskParamMode:
 
     @aim_code.setter
     def aim_code(self, aim_code):
-        """Sets the aim_code of this CreateResolveTaskParamMode.
+        r"""Sets the aim_code of this CreateResolveTaskParamMode.
 
         智能信息编码，样例：PDiWqc。
 
@@ -266,7 +266,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def ext_data(self):
-        """Gets the ext_data of this CreateResolveTaskParamMode.
+        r"""Gets the ext_data of this CreateResolveTaskParamMode.
 
         自定义扩展参数。  >预留字段。 
 
@@ -277,7 +277,7 @@ class CreateResolveTaskParamMode:
 
     @ext_data.setter
     def ext_data(self, ext_data):
-        """Sets the ext_data of this CreateResolveTaskParamMode.
+        r"""Sets the ext_data of this CreateResolveTaskParamMode.
 
         自定义扩展参数。  >预留字段。 
 
@@ -288,7 +288,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def result_code(self):
-        """Gets the result_code of this CreateResolveTaskParamMode.
+        r"""Gets the result_code of this CreateResolveTaskParamMode.
 
         短链申请结果返回码。 - 0：成功 - 非0：失败，具体请参见错误码 
 
@@ -299,7 +299,7 @@ class CreateResolveTaskParamMode:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this CreateResolveTaskParamMode.
+        r"""Sets the result_code of this CreateResolveTaskParamMode.
 
         短链申请结果返回码。 - 0：成功 - 非0：失败，具体请参见错误码 
 
@@ -310,7 +310,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def error_message(self):
-        """Gets the error_message of this CreateResolveTaskParamMode.
+        r"""Gets the error_message of this CreateResolveTaskParamMode.
 
         短链申请结果错误描述。 
 
@@ -321,7 +321,7 @@ class CreateResolveTaskParamMode:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CreateResolveTaskParamMode.
+        r"""Sets the error_message of this CreateResolveTaskParamMode.
 
         短链申请结果错误描述。 
 
@@ -332,7 +332,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def generate_date(self):
-        """Gets the generate_date of this CreateResolveTaskParamMode.
+        r"""Gets the generate_date of this CreateResolveTaskParamMode.
 
         短链生成时间。样例为：2019-10-12T07:20:50Z。
 
@@ -343,7 +343,7 @@ class CreateResolveTaskParamMode:
 
     @generate_date.setter
     def generate_date(self, generate_date):
-        """Sets the generate_date of this CreateResolveTaskParamMode.
+        r"""Sets the generate_date of this CreateResolveTaskParamMode.
 
         短链生成时间。样例为：2019-10-12T07:20:50Z。
 
@@ -354,7 +354,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this CreateResolveTaskParamMode.
+        r"""Gets the expire_date of this CreateResolveTaskParamMode.
 
         短链到期时间。样例为：2019-10-12T07:20:50Z。
 
@@ -365,7 +365,7 @@ class CreateResolveTaskParamMode:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this CreateResolveTaskParamMode.
+        r"""Sets the expire_date of this CreateResolveTaskParamMode.
 
         短链到期时间。样例为：2019-10-12T07:20:50Z。
 
@@ -376,7 +376,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def resolved_date(self):
-        """Gets the resolved_date of this CreateResolveTaskParamMode.
+        r"""Gets the resolved_date of this CreateResolveTaskParamMode.
 
         解析时间。样例为：2019-10-12T07:20:50Z。  >预留字段。 
 
@@ -387,7 +387,7 @@ class CreateResolveTaskParamMode:
 
     @resolved_date.setter
     def resolved_date(self, resolved_date):
-        """Sets the resolved_date of this CreateResolveTaskParamMode.
+        r"""Sets the resolved_date of this CreateResolveTaskParamMode.
 
         解析时间。样例为：2019-10-12T07:20:50Z。  >预留字段。 
 
@@ -398,7 +398,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def resolved_times(self):
-        """Gets the resolved_times of this CreateResolveTaskParamMode.
+        r"""Gets the resolved_times of this CreateResolveTaskParamMode.
 
         短链实际解析次数。  >预留字段。 
 
@@ -409,7 +409,7 @@ class CreateResolveTaskParamMode:
 
     @resolved_times.setter
     def resolved_times(self, resolved_times):
-        """Sets the resolved_times of this CreateResolveTaskParamMode.
+        r"""Sets the resolved_times of this CreateResolveTaskParamMode.
 
         短链实际解析次数。  >预留字段。 
 
@@ -420,7 +420,7 @@ class CreateResolveTaskParamMode:
 
     @property
     def custom_short_code(self):
-        """Gets the custom_short_code of this CreateResolveTaskParamMode.
+        r"""Gets the custom_short_code of this CreateResolveTaskParamMode.
 
         自定义短码，支持长度为3到10位的数字或大小写字母。样例为：aDC123。
 
@@ -431,7 +431,7 @@ class CreateResolveTaskParamMode:
 
     @custom_short_code.setter
     def custom_short_code(self, custom_short_code):
-        """Sets the custom_short_code of this CreateResolveTaskParamMode.
+        r"""Sets the custom_short_code of this CreateResolveTaskParamMode.
 
         自定义短码，支持长度为3到10位的数字或大小写字母。样例为：aDC123。
 

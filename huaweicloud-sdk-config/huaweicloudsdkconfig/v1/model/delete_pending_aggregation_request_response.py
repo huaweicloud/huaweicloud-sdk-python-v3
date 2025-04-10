@@ -24,7 +24,7 @@ class DeletePendingAggregationRequestResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePendingAggregationRequestResponse
+        r"""DeletePendingAggregationRequestResponse
 
         The model defined in huaweicloud sdk
 

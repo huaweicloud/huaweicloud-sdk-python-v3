@@ -25,7 +25,7 @@ class CreateGrantsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGrantsRequest
+        r"""CreateGrantsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGrantsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGrantsRequest.
+        r"""Gets the body of this CreateGrantsRequest.
 
         :return: The body of this CreateGrantsRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.GrantSecretReqBody`
@@ -52,7 +52,7 @@ class CreateGrantsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGrantsRequest.
+        r"""Sets the body of this CreateGrantsRequest.
 
         :param body: The body of this CreateGrantsRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.GrantSecretReqBody`

@@ -26,7 +26,7 @@ class GetScriptJobBatchResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """GetScriptJobBatchResponse
+        r"""GetScriptJobBatchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetScriptJobBatchResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this GetScriptJobBatchResponse.
+        r"""Gets the data of this GetScriptJobBatchResponse.
 
         :return: The data of this GetScriptJobBatchResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.JobScriptBatchDetailModel`
@@ -53,7 +53,7 @@ class GetScriptJobBatchResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this GetScriptJobBatchResponse.
+        r"""Sets the data of this GetScriptJobBatchResponse.
 
         :param data: The data of this GetScriptJobBatchResponse.
         :type data: :class:`huaweicloudsdkcoc.v1.JobScriptBatchDetailModel`

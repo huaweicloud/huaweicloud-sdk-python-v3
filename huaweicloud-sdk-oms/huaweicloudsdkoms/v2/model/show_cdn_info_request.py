@@ -25,7 +25,7 @@ class ShowCdnInfoRequest:
     }
 
     def __init__(self, body=None):
-        """ShowCdnInfoRequest
+        r"""ShowCdnInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowCdnInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowCdnInfoRequest.
+        r"""Gets the body of this ShowCdnInfoRequest.
 
         :return: The body of this ShowCdnInfoRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.ShowCdnInfoReq`
@@ -52,7 +52,7 @@ class ShowCdnInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowCdnInfoRequest.
+        r"""Sets the body of this ShowCdnInfoRequest.
 
         :param body: The body of this ShowCdnInfoRequest.
         :type body: :class:`huaweicloudsdkoms.v2.ShowCdnInfoReq`

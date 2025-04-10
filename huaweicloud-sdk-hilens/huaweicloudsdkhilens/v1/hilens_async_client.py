@@ -34,7 +34,7 @@ class HiLensAsyncClient(Client):
         return client_builder
 
     def list_device_alarms_async(self, request):
-        """获取设备告警列表
+        r"""获取设备告警列表
 
         获取设备告警列表
         
@@ -103,7 +103,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_devices_async(self, request):
-        """获取基础版设备列表
+        r"""获取基础版设备列表
 
         获取基础版设备列表
         

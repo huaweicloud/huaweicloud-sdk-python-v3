@@ -34,7 +34,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, items=None, status=None):
-        """ListClusterMasterSnapshotTasksResponse
+        r"""ListClusterMasterSnapshotTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListClusterMasterSnapshotTasksResponse.
+        r"""Gets the api_version of this ListClusterMasterSnapshotTasksResponse.
 
         api版本，默认为v3.1
 
@@ -83,7 +83,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListClusterMasterSnapshotTasksResponse.
+        r"""Sets the api_version of this ListClusterMasterSnapshotTasksResponse.
 
         api版本，默认为v3.1
 
@@ -94,7 +94,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListClusterMasterSnapshotTasksResponse.
+        r"""Gets the kind of this ListClusterMasterSnapshotTasksResponse.
 
         任务类型
 
@@ -105,7 +105,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListClusterMasterSnapshotTasksResponse.
+        r"""Sets the kind of this ListClusterMasterSnapshotTasksResponse.
 
         任务类型
 
@@ -116,7 +116,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListClusterMasterSnapshotTasksResponse.
+        r"""Gets the metadata of this ListClusterMasterSnapshotTasksResponse.
 
         :return: The metadata of this ListClusterMasterSnapshotTasksResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
@@ -125,7 +125,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListClusterMasterSnapshotTasksResponse.
+        r"""Sets the metadata of this ListClusterMasterSnapshotTasksResponse.
 
         :param metadata: The metadata of this ListClusterMasterSnapshotTasksResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
@@ -134,7 +134,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListClusterMasterSnapshotTasksResponse.
+        r"""Gets the items of this ListClusterMasterSnapshotTasksResponse.
 
         备份任务列表
 
@@ -145,7 +145,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListClusterMasterSnapshotTasksResponse.
+        r"""Sets the items of this ListClusterMasterSnapshotTasksResponse.
 
         备份任务列表
 
@@ -156,7 +156,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListClusterMasterSnapshotTasksResponse.
+        r"""Gets the status of this ListClusterMasterSnapshotTasksResponse.
 
         :return: The status of this ListClusterMasterSnapshotTasksResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotTaskStatus`
@@ -165,7 +165,7 @@ class ListClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListClusterMasterSnapshotTasksResponse.
+        r"""Sets the status of this ListClusterMasterSnapshotTasksResponse.
 
         :param status: The status of this ListClusterMasterSnapshotTasksResponse.
         :type status: :class:`huaweicloudsdkcce.v3.SnapshotTaskStatus`

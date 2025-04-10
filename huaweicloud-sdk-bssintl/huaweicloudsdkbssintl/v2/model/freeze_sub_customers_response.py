@@ -26,7 +26,7 @@ class FreezeSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None):
-        """FreezeSubCustomersResponse
+        r"""FreezeSubCustomersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class FreezeSubCustomersResponse(SdkResponse):
 
     @property
     def error_details(self):
-        """Gets the error_details of this FreezeSubCustomersResponse.
+        r"""Gets the error_details of this FreezeSubCustomersResponse.
 
         错误原因，只有部分失败的时候才返回。 具体请参见表1。
 
@@ -55,7 +55,7 @@ class FreezeSubCustomersResponse(SdkResponse):
 
     @error_details.setter
     def error_details(self, error_details):
-        """Sets the error_details of this FreezeSubCustomersResponse.
+        r"""Sets the error_details of this FreezeSubCustomersResponse.
 
         错误原因，只有部分失败的时候才返回。 具体请参见表1。
 

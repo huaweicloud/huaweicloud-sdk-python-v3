@@ -27,7 +27,7 @@ class ListClickHouseDataBaseParameterRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListClickHouseDataBaseParameterRequest
+        r"""ListClickHouseDataBaseParameterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListClickHouseDataBaseParameterRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListClickHouseDataBaseParameterRequest.
+        r"""Gets the instance_id of this ListClickHouseDataBaseParameterRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -60,7 +60,7 @@ class ListClickHouseDataBaseParameterRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListClickHouseDataBaseParameterRequest.
+        r"""Sets the instance_id of this ListClickHouseDataBaseParameterRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class ListClickHouseDataBaseParameterRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListClickHouseDataBaseParameterRequest.
+        r"""Gets the x_language of this ListClickHouseDataBaseParameterRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -82,7 +82,7 @@ class ListClickHouseDataBaseParameterRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListClickHouseDataBaseParameterRequest.
+        r"""Sets the x_language of this ListClickHouseDataBaseParameterRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

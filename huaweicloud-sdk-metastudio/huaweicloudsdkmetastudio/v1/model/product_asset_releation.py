@@ -29,7 +29,7 @@ class ProductAssetReleation:
     }
 
     def __init__(self, asset_item=None, text_item=None, action=None):
-        """ProductAssetReleation
+        r"""ProductAssetReleation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ProductAssetReleation:
 
     @property
     def asset_item(self):
-        """Gets the asset_item of this ProductAssetReleation.
+        r"""Gets the asset_item of this ProductAssetReleation.
 
         :return: The asset_item of this ProductAssetReleation.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`
@@ -66,7 +66,7 @@ class ProductAssetReleation:
 
     @asset_item.setter
     def asset_item(self, asset_item):
-        """Sets the asset_item of this ProductAssetReleation.
+        r"""Sets the asset_item of this ProductAssetReleation.
 
         :param asset_item: The asset_item of this ProductAssetReleation.
         :type asset_item: :class:`huaweicloudsdkmetastudio.v1.ProductMediaInfo`
@@ -75,7 +75,7 @@ class ProductAssetReleation:
 
     @property
     def text_item(self):
-        """Gets the text_item of this ProductAssetReleation.
+        r"""Gets the text_item of this ProductAssetReleation.
 
         :return: The text_item of this ProductAssetReleation.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductTextInfo`
@@ -84,7 +84,7 @@ class ProductAssetReleation:
 
     @text_item.setter
     def text_item(self, text_item):
-        """Sets the text_item of this ProductAssetReleation.
+        r"""Sets the text_item of this ProductAssetReleation.
 
         :param text_item: The text_item of this ProductAssetReleation.
         :type text_item: :class:`huaweicloudsdkmetastudio.v1.ProductTextInfo`
@@ -93,7 +93,7 @@ class ProductAssetReleation:
 
     @property
     def action(self):
-        """Gets the action of this ProductAssetReleation.
+        r"""Gets the action of this ProductAssetReleation.
 
         添加或删除资产关联 - LINK ：将资产纳入管理 - UNLINK ：将资产移除管理
 
@@ -104,7 +104,7 @@ class ProductAssetReleation:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ProductAssetReleation.
+        r"""Sets the action of this ProductAssetReleation.
 
         添加或删除资产关联 - LINK ：将资产纳入管理 - UNLINK ：将资产移除管理
 

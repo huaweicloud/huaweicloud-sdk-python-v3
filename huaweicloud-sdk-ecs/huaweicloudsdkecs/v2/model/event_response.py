@@ -49,7 +49,7 @@ class EventResponse:
     }
 
     def __init__(self, id=None, type=None, state=None, publish_time=None, start_time=None, finish_time=None, not_before=None, not_after=None, not_before_deadline=None, description=None, instance_id=None, execute_options=None, source=None):
-        """EventResponse
+        r"""EventResponse
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class EventResponse:
 
     @property
     def id(self):
-        """Gets the id of this EventResponse.
+        r"""Gets the id of this EventResponse.
 
         事件ID
 
@@ -137,7 +137,7 @@ class EventResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EventResponse.
+        r"""Sets the id of this EventResponse.
 
         事件ID
 
@@ -148,7 +148,7 @@ class EventResponse:
 
     @property
     def type(self):
-        """Gets the type of this EventResponse.
+        r"""Gets the type of this EventResponse.
 
         事件类型
 
@@ -159,7 +159,7 @@ class EventResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EventResponse.
+        r"""Sets the type of this EventResponse.
 
         事件类型
 
@@ -170,7 +170,7 @@ class EventResponse:
 
     @property
     def state(self):
-        """Gets the state of this EventResponse.
+        r"""Gets the state of this EventResponse.
 
         事件状态
 
@@ -181,7 +181,7 @@ class EventResponse:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this EventResponse.
+        r"""Sets the state of this EventResponse.
 
         事件状态
 
@@ -192,7 +192,7 @@ class EventResponse:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this EventResponse.
+        r"""Gets the publish_time of this EventResponse.
 
         事件发布时间
 
@@ -203,7 +203,7 @@ class EventResponse:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this EventResponse.
+        r"""Sets the publish_time of this EventResponse.
 
         事件发布时间
 
@@ -214,7 +214,7 @@ class EventResponse:
 
     @property
     def start_time(self):
-        """Gets the start_time of this EventResponse.
+        r"""Gets the start_time of this EventResponse.
 
         事件开始时间
 
@@ -225,7 +225,7 @@ class EventResponse:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this EventResponse.
+        r"""Sets the start_time of this EventResponse.
 
         事件开始时间
 
@@ -236,7 +236,7 @@ class EventResponse:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this EventResponse.
+        r"""Gets the finish_time of this EventResponse.
 
         事件完成时间
 
@@ -247,7 +247,7 @@ class EventResponse:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this EventResponse.
+        r"""Sets the finish_time of this EventResponse.
 
         事件完成时间
 
@@ -258,7 +258,7 @@ class EventResponse:
 
     @property
     def not_before(self):
-        """Gets the not_before of this EventResponse.
+        r"""Gets the not_before of this EventResponse.
 
         事件计划执行开始时间
 
@@ -269,7 +269,7 @@ class EventResponse:
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this EventResponse.
+        r"""Sets the not_before of this EventResponse.
 
         事件计划执行开始时间
 
@@ -280,7 +280,7 @@ class EventResponse:
 
     @property
     def not_after(self):
-        """Gets the not_after of this EventResponse.
+        r"""Gets the not_after of this EventResponse.
 
         事件计划执行完成时间
 
@@ -291,7 +291,7 @@ class EventResponse:
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this EventResponse.
+        r"""Sets the not_after of this EventResponse.
 
         事件计划执行完成时间
 
@@ -302,7 +302,7 @@ class EventResponse:
 
     @property
     def not_before_deadline(self):
-        """Gets the not_before_deadline of this EventResponse.
+        r"""Gets the not_before_deadline of this EventResponse.
 
         事件计划执行开始时间deadline
 
@@ -313,7 +313,7 @@ class EventResponse:
 
     @not_before_deadline.setter
     def not_before_deadline(self, not_before_deadline):
-        """Sets the not_before_deadline of this EventResponse.
+        r"""Sets the not_before_deadline of this EventResponse.
 
         事件计划执行开始时间deadline
 
@@ -324,7 +324,7 @@ class EventResponse:
 
     @property
     def description(self):
-        """Gets the description of this EventResponse.
+        r"""Gets the description of this EventResponse.
 
         事件描述
 
@@ -335,7 +335,7 @@ class EventResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EventResponse.
+        r"""Sets the description of this EventResponse.
 
         事件描述
 
@@ -346,7 +346,7 @@ class EventResponse:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this EventResponse.
+        r"""Gets the instance_id of this EventResponse.
 
         实例ID
 
@@ -357,7 +357,7 @@ class EventResponse:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this EventResponse.
+        r"""Sets the instance_id of this EventResponse.
 
         实例ID
 
@@ -368,7 +368,7 @@ class EventResponse:
 
     @property
     def execute_options(self):
-        """Gets the execute_options of this EventResponse.
+        r"""Gets the execute_options of this EventResponse.
 
         :return: The execute_options of this EventResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.EventResponseExecuteOptions`
@@ -377,7 +377,7 @@ class EventResponse:
 
     @execute_options.setter
     def execute_options(self, execute_options):
-        """Sets the execute_options of this EventResponse.
+        r"""Sets the execute_options of this EventResponse.
 
         :param execute_options: The execute_options of this EventResponse.
         :type execute_options: :class:`huaweicloudsdkecs.v2.EventResponseExecuteOptions`
@@ -386,7 +386,7 @@ class EventResponse:
 
     @property
     def source(self):
-        """Gets the source of this EventResponse.
+        r"""Gets the source of this EventResponse.
 
         :return: The source of this EventResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.EventResponseSource`
@@ -395,7 +395,7 @@ class EventResponse:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this EventResponse.
+        r"""Sets the source of this EventResponse.
 
         :param source: The source of this EventResponse.
         :type source: :class:`huaweicloudsdkecs.v2.EventResponseSource`

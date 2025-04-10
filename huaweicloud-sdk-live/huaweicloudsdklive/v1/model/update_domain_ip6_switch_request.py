@@ -25,7 +25,7 @@ class UpdateDomainIp6SwitchRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDomainIp6SwitchRequest
+        r"""UpdateDomainIp6SwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDomainIp6SwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainIp6SwitchRequest.
+        r"""Gets the body of this UpdateDomainIp6SwitchRequest.
 
         :return: The body of this UpdateDomainIp6SwitchRequest.
         :rtype: :class:`huaweicloudsdklive.v1.DomainIpv6SwitchReq`
@@ -52,7 +52,7 @@ class UpdateDomainIp6SwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainIp6SwitchRequest.
+        r"""Sets the body of this UpdateDomainIp6SwitchRequest.
 
         :param body: The body of this UpdateDomainIp6SwitchRequest.
         :type body: :class:`huaweicloudsdklive.v1.DomainIpv6SwitchReq`

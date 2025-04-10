@@ -38,7 +38,7 @@ class ShowProgramResponse(SdkResponse):
     }
 
     def __init__(self, id=None, last_updated_by=None, update_time=None, program_name=None, material_size_str=None, play_time=None, program_item_list=None):
-        """ShowProgramResponse
+        r"""ShowProgramResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowProgramResponse.
+        r"""Gets the id of this ShowProgramResponse.
 
         节目ID。
 
@@ -97,7 +97,7 @@ class ShowProgramResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProgramResponse.
+        r"""Sets the id of this ShowProgramResponse.
 
         节目ID。
 
@@ -108,7 +108,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def last_updated_by(self):
-        """Gets the last_updated_by of this ShowProgramResponse.
+        r"""Gets the last_updated_by of this ShowProgramResponse.
 
         更新者。
 
@@ -119,7 +119,7 @@ class ShowProgramResponse(SdkResponse):
 
     @last_updated_by.setter
     def last_updated_by(self, last_updated_by):
-        """Sets the last_updated_by of this ShowProgramResponse.
+        r"""Sets the last_updated_by of this ShowProgramResponse.
 
         更新者。
 
@@ -130,7 +130,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowProgramResponse.
+        r"""Gets the update_time of this ShowProgramResponse.
 
         更新时间。
 
@@ -141,7 +141,7 @@ class ShowProgramResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowProgramResponse.
+        r"""Sets the update_time of this ShowProgramResponse.
 
         更新时间。
 
@@ -152,7 +152,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def program_name(self):
-        """Gets the program_name of this ShowProgramResponse.
+        r"""Gets the program_name of this ShowProgramResponse.
 
         节目名称。
 
@@ -163,7 +163,7 @@ class ShowProgramResponse(SdkResponse):
 
     @program_name.setter
     def program_name(self, program_name):
-        """Sets the program_name of this ShowProgramResponse.
+        r"""Sets the program_name of this ShowProgramResponse.
 
         节目名称。
 
@@ -174,7 +174,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def material_size_str(self):
-        """Gets the material_size_str of this ShowProgramResponse.
+        r"""Gets the material_size_str of this ShowProgramResponse.
 
         节目的总素材大小（含单位）。
 
@@ -185,7 +185,7 @@ class ShowProgramResponse(SdkResponse):
 
     @material_size_str.setter
     def material_size_str(self, material_size_str):
-        """Sets the material_size_str of this ShowProgramResponse.
+        r"""Sets the material_size_str of this ShowProgramResponse.
 
         节目的总素材大小（含单位）。
 
@@ -196,7 +196,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def play_time(self):
-        """Gets the play_time of this ShowProgramResponse.
+        r"""Gets the play_time of this ShowProgramResponse.
 
         节目的总播放时长，单位秒。
 
@@ -207,7 +207,7 @@ class ShowProgramResponse(SdkResponse):
 
     @play_time.setter
     def play_time(self, play_time):
-        """Sets the play_time of this ShowProgramResponse.
+        r"""Sets the play_time of this ShowProgramResponse.
 
         节目的总播放时长，单位秒。
 
@@ -218,7 +218,7 @@ class ShowProgramResponse(SdkResponse):
 
     @property
     def program_item_list(self):
-        """Gets the program_item_list of this ShowProgramResponse.
+        r"""Gets the program_item_list of this ShowProgramResponse.
 
         节目素材列表。
 
@@ -229,7 +229,7 @@ class ShowProgramResponse(SdkResponse):
 
     @program_item_list.setter
     def program_item_list(self, program_item_list):
-        """Sets the program_item_list of this ShowProgramResponse.
+        r"""Sets the program_item_list of this ShowProgramResponse.
 
         节目素材列表。
 

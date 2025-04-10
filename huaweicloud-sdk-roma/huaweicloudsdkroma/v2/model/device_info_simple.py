@@ -29,7 +29,7 @@ class DeviceInfoSimple:
     }
 
     def __init__(self, id=None, device_name=None, device_id=None):
-        """DeviceInfoSimple
+        r"""DeviceInfoSimple
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeviceInfoSimple:
 
     @property
     def id(self):
-        """Gets the id of this DeviceInfoSimple.
+        r"""Gets the id of this DeviceInfoSimple.
 
         设备ID
 
@@ -68,7 +68,7 @@ class DeviceInfoSimple:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeviceInfoSimple.
+        r"""Sets the id of this DeviceInfoSimple.
 
         设备ID
 
@@ -79,7 +79,7 @@ class DeviceInfoSimple:
 
     @property
     def device_name(self):
-        """Gets the device_name of this DeviceInfoSimple.
+        r"""Gets the device_name of this DeviceInfoSimple.
 
         设备名称
 
@@ -90,7 +90,7 @@ class DeviceInfoSimple:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this DeviceInfoSimple.
+        r"""Sets the device_name of this DeviceInfoSimple.
 
         设备名称
 
@@ -101,7 +101,7 @@ class DeviceInfoSimple:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DeviceInfoSimple.
+        r"""Gets the device_id of this DeviceInfoSimple.
 
         设备ID（兼容20.0）
 
@@ -112,7 +112,7 @@ class DeviceInfoSimple:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DeviceInfoSimple.
+        r"""Sets the device_id of this DeviceInfoSimple.
 
         设备ID（兼容20.0）
 

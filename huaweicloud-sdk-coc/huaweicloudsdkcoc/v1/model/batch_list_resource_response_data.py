@@ -51,7 +51,7 @@ class BatchListResourceResponseData:
     }
 
     def __init__(self, id=None, resource_id=None, name=None, provider=None, type=None, project_id=None, region_id=None, ep_id=None, tags=None, agent_id=None, agent_state=None, properties=None, ingest_properties=None, is_delegated=None):
-        """BatchListResourceResponseData
+        r"""BatchListResourceResponseData
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class BatchListResourceResponseData:
 
     @property
     def id(self):
-        """Gets the id of this BatchListResourceResponseData.
+        r"""Gets the id of this BatchListResourceResponseData.
 
         CMDB分配的资源ID
 
@@ -145,7 +145,7 @@ class BatchListResourceResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchListResourceResponseData.
+        r"""Sets the id of this BatchListResourceResponseData.
 
         CMDB分配的资源ID
 
@@ -156,7 +156,7 @@ class BatchListResourceResponseData:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchListResourceResponseData.
+        r"""Gets the resource_id of this BatchListResourceResponseData.
 
         云服务分配的资源ID
 
@@ -167,7 +167,7 @@ class BatchListResourceResponseData:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchListResourceResponseData.
+        r"""Sets the resource_id of this BatchListResourceResponseData.
 
         云服务分配的资源ID
 
@@ -178,7 +178,7 @@ class BatchListResourceResponseData:
 
     @property
     def name(self):
-        """Gets the name of this BatchListResourceResponseData.
+        r"""Gets the name of this BatchListResourceResponseData.
 
         资源名称
 
@@ -189,7 +189,7 @@ class BatchListResourceResponseData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchListResourceResponseData.
+        r"""Sets the name of this BatchListResourceResponseData.
 
         资源名称
 
@@ -200,7 +200,7 @@ class BatchListResourceResponseData:
 
     @property
     def provider(self):
-        """Gets the provider of this BatchListResourceResponseData.
+        r"""Gets the provider of this BatchListResourceResponseData.
 
         云服务名称
 
@@ -211,7 +211,7 @@ class BatchListResourceResponseData:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this BatchListResourceResponseData.
+        r"""Sets the provider of this BatchListResourceResponseData.
 
         云服务名称
 
@@ -222,7 +222,7 @@ class BatchListResourceResponseData:
 
     @property
     def type(self):
-        """Gets the type of this BatchListResourceResponseData.
+        r"""Gets the type of this BatchListResourceResponseData.
 
         资源类型
 
@@ -233,7 +233,7 @@ class BatchListResourceResponseData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchListResourceResponseData.
+        r"""Sets the type of this BatchListResourceResponseData.
 
         资源类型
 
@@ -244,7 +244,7 @@ class BatchListResourceResponseData:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchListResourceResponseData.
+        r"""Gets the project_id of this BatchListResourceResponseData.
 
         Openstack中的项目I
 
@@ -255,7 +255,7 @@ class BatchListResourceResponseData:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchListResourceResponseData.
+        r"""Sets the project_id of this BatchListResourceResponseData.
 
         Openstack中的项目I
 
@@ -266,7 +266,7 @@ class BatchListResourceResponseData:
 
     @property
     def region_id(self):
-        """Gets the region_id of this BatchListResourceResponseData.
+        r"""Gets the region_id of this BatchListResourceResponseData.
 
         region ID
 
@@ -277,7 +277,7 @@ class BatchListResourceResponseData:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this BatchListResourceResponseData.
+        r"""Sets the region_id of this BatchListResourceResponseData.
 
         region ID
 
@@ -288,7 +288,7 @@ class BatchListResourceResponseData:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this BatchListResourceResponseData.
+        r"""Gets the ep_id of this BatchListResourceResponseData.
 
         企业项目ID
 
@@ -299,7 +299,7 @@ class BatchListResourceResponseData:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this BatchListResourceResponseData.
+        r"""Sets the ep_id of this BatchListResourceResponseData.
 
         企业项目ID
 
@@ -310,7 +310,7 @@ class BatchListResourceResponseData:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchListResourceResponseData.
+        r"""Gets the tags of this BatchListResourceResponseData.
 
         资源标签
 
@@ -321,7 +321,7 @@ class BatchListResourceResponseData:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchListResourceResponseData.
+        r"""Sets the tags of this BatchListResourceResponseData.
 
         资源标签
 
@@ -332,7 +332,7 @@ class BatchListResourceResponseData:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this BatchListResourceResponseData.
+        r"""Gets the agent_id of this BatchListResourceResponseData.
 
         uniAgent唯一id
 
@@ -343,7 +343,7 @@ class BatchListResourceResponseData:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this BatchListResourceResponseData.
+        r"""Sets the agent_id of this BatchListResourceResponseData.
 
         uniAgent唯一id
 
@@ -354,7 +354,7 @@ class BatchListResourceResponseData:
 
     @property
     def agent_state(self):
-        """Gets the agent_state of this BatchListResourceResponseData.
+        r"""Gets the agent_state of this BatchListResourceResponseData.
 
         uniAgent状态
 
@@ -365,7 +365,7 @@ class BatchListResourceResponseData:
 
     @agent_state.setter
     def agent_state(self, agent_state):
-        """Sets the agent_state of this BatchListResourceResponseData.
+        r"""Sets the agent_state of this BatchListResourceResponseData.
 
         uniAgent状态
 
@@ -376,7 +376,7 @@ class BatchListResourceResponseData:
 
     @property
     def properties(self):
-        """Gets the properties of this BatchListResourceResponseData.
+        r"""Gets the properties of this BatchListResourceResponseData.
 
         资源详细属性
 
@@ -387,7 +387,7 @@ class BatchListResourceResponseData:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this BatchListResourceResponseData.
+        r"""Sets the properties of this BatchListResourceResponseData.
 
         资源详细属性
 
@@ -398,7 +398,7 @@ class BatchListResourceResponseData:
 
     @property
     def ingest_properties(self):
-        """Gets the ingest_properties of this BatchListResourceResponseData.
+        r"""Gets the ingest_properties of this BatchListResourceResponseData.
 
         采集属性
 
@@ -409,7 +409,7 @@ class BatchListResourceResponseData:
 
     @ingest_properties.setter
     def ingest_properties(self, ingest_properties):
-        """Sets the ingest_properties of this BatchListResourceResponseData.
+        r"""Sets the ingest_properties of this BatchListResourceResponseData.
 
         采集属性
 
@@ -420,7 +420,7 @@ class BatchListResourceResponseData:
 
     @property
     def is_delegated(self):
-        """Gets the is_delegated of this BatchListResourceResponseData.
+        r"""Gets the is_delegated of this BatchListResourceResponseData.
 
         是否已托管
 
@@ -431,7 +431,7 @@ class BatchListResourceResponseData:
 
     @is_delegated.setter
     def is_delegated(self, is_delegated):
-        """Sets the is_delegated of this BatchListResourceResponseData.
+        r"""Sets the is_delegated of this BatchListResourceResponseData.
 
         是否已托管
 

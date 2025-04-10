@@ -27,7 +27,7 @@ class ListImagesRequest:
     }
 
     def __init__(self, cluster_id=None, upgrade_type=None):
-        """ListImagesRequest
+        r"""ListImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListImagesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListImagesRequest.
+        r"""Gets the cluster_id of this ListImagesRequest.
 
         待升级的集群的ID。
 
@@ -59,7 +59,7 @@ class ListImagesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListImagesRequest.
+        r"""Sets the cluster_id of this ListImagesRequest.
 
         待升级的集群的ID。
 
@@ -70,7 +70,7 @@ class ListImagesRequest:
 
     @property
     def upgrade_type(self):
-        """Gets the upgrade_type of this ListImagesRequest.
+        r"""Gets the upgrade_type of this ListImagesRequest.
 
         升级目标版本类型： - same：相同版本。 - cross： 跨版本。
 
@@ -81,7 +81,7 @@ class ListImagesRequest:
 
     @upgrade_type.setter
     def upgrade_type(self, upgrade_type):
-        """Sets the upgrade_type of this ListImagesRequest.
+        r"""Sets the upgrade_type of this ListImagesRequest.
 
         升级目标版本类型： - same：相同版本。 - cross： 跨版本。
 

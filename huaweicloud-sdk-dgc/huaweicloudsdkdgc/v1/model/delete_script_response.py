@@ -24,7 +24,7 @@ class DeleteScriptResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteScriptResponse
+        r"""DeleteScriptResponse
 
         The model defined in huaweicloud sdk
 

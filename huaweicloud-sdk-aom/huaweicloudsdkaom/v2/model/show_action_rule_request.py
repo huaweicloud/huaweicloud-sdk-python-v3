@@ -25,7 +25,7 @@ class ShowActionRuleRequest:
     }
 
     def __init__(self, rule_name=None):
-        """ShowActionRuleRequest
+        r"""ShowActionRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowActionRuleRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ShowActionRuleRequest.
+        r"""Gets the rule_name of this ShowActionRuleRequest.
 
         告警规则名称
 
@@ -53,7 +53,7 @@ class ShowActionRuleRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ShowActionRuleRequest.
+        r"""Sets the rule_name of this ShowActionRuleRequest.
 
         告警规则名称
 

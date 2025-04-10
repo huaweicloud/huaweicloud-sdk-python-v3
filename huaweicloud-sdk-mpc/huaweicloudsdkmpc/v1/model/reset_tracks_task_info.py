@@ -41,7 +41,7 @@ class ResetTracksTaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None, output_filename=None, tracks_info=None, input=None):
-        """ResetTracksTaskInfo
+        r"""ResetTracksTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResetTracksTaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ResetTracksTaskInfo.
+        r"""Gets the task_id of this ResetTracksTaskInfo.
 
         任务Id
 
@@ -110,7 +110,7 @@ class ResetTracksTaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ResetTracksTaskInfo.
+        r"""Sets the task_id of this ResetTracksTaskInfo.
 
         任务Id
 
@@ -121,7 +121,7 @@ class ResetTracksTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this ResetTracksTaskInfo.
+        r"""Gets the status of this ResetTracksTaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -132,7 +132,7 @@ class ResetTracksTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResetTracksTaskInfo.
+        r"""Sets the status of this ResetTracksTaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -143,7 +143,7 @@ class ResetTracksTaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ResetTracksTaskInfo.
+        r"""Gets the create_time of this ResetTracksTaskInfo.
 
         任务启动时间 
 
@@ -154,7 +154,7 @@ class ResetTracksTaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ResetTracksTaskInfo.
+        r"""Sets the create_time of this ResetTracksTaskInfo.
 
         任务启动时间 
 
@@ -165,7 +165,7 @@ class ResetTracksTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ResetTracksTaskInfo.
+        r"""Gets the end_time of this ResetTracksTaskInfo.
 
         任务结束时间 
 
@@ -176,7 +176,7 @@ class ResetTracksTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ResetTracksTaskInfo.
+        r"""Sets the end_time of this ResetTracksTaskInfo.
 
         任务结束时间 
 
@@ -187,7 +187,7 @@ class ResetTracksTaskInfo:
 
     @property
     def output(self):
-        """Gets the output of this ResetTracksTaskInfo.
+        r"""Gets the output of this ResetTracksTaskInfo.
 
         :return: The output of this ResetTracksTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -196,7 +196,7 @@ class ResetTracksTaskInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this ResetTracksTaskInfo.
+        r"""Sets the output of this ResetTracksTaskInfo.
 
         :param output: The output of this ResetTracksTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -205,7 +205,7 @@ class ResetTracksTaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this ResetTracksTaskInfo.
+        r"""Gets the description of this ResetTracksTaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -216,7 +216,7 @@ class ResetTracksTaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ResetTracksTaskInfo.
+        r"""Sets the description of this ResetTracksTaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -227,7 +227,7 @@ class ResetTracksTaskInfo:
 
     @property
     def output_filename(self):
-        """Gets the output_filename of this ResetTracksTaskInfo.
+        r"""Gets the output_filename of this ResetTracksTaskInfo.
 
         输出文件名。
 
@@ -238,7 +238,7 @@ class ResetTracksTaskInfo:
 
     @output_filename.setter
     def output_filename(self, output_filename):
-        """Sets the output_filename of this ResetTracksTaskInfo.
+        r"""Sets the output_filename of this ResetTracksTaskInfo.
 
         输出文件名。
 
@@ -249,7 +249,7 @@ class ResetTracksTaskInfo:
 
     @property
     def tracks_info(self):
-        """Gets the tracks_info of this ResetTracksTaskInfo.
+        r"""Gets the tracks_info of this ResetTracksTaskInfo.
 
         音轨信息
 
@@ -260,7 +260,7 @@ class ResetTracksTaskInfo:
 
     @tracks_info.setter
     def tracks_info(self, tracks_info):
-        """Sets the tracks_info of this ResetTracksTaskInfo.
+        r"""Sets the tracks_info of this ResetTracksTaskInfo.
 
         音轨信息
 
@@ -271,7 +271,7 @@ class ResetTracksTaskInfo:
 
     @property
     def input(self):
-        """Gets the input of this ResetTracksTaskInfo.
+        r"""Gets the input of this ResetTracksTaskInfo.
 
         :return: The input of this ResetTracksTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -280,7 +280,7 @@ class ResetTracksTaskInfo:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this ResetTracksTaskInfo.
+        r"""Sets the input of this ResetTracksTaskInfo.
 
         :param input: The input of this ResetTracksTaskInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

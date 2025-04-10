@@ -31,7 +31,7 @@ class Resource:
     }
 
     def __init__(self, resource_detail=None, resource_id=None, resource_name=None, resource_tag=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Resource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this Resource.
+        r"""Gets the resource_detail of this Resource.
 
         资源详情。用于扩展。默认为空。
 
@@ -71,7 +71,7 @@ class Resource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this Resource.
+        r"""Sets the resource_detail of this Resource.
 
         资源详情。用于扩展。默认为空。
 
@@ -82,7 +82,7 @@ class Resource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Resource.
+        r"""Gets the resource_id of this Resource.
 
         资源的ID。
 
@@ -93,7 +93,7 @@ class Resource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Resource.
+        r"""Sets the resource_id of this Resource.
 
         资源的ID。
 
@@ -104,7 +104,7 @@ class Resource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this Resource.
+        r"""Gets the resource_name of this Resource.
 
         资源名称，资源没有名称时默认为空字符串。
 
@@ -115,7 +115,7 @@ class Resource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this Resource.
+        r"""Sets the resource_name of this Resource.
 
         资源名称，资源没有名称时默认为空字符串。
 
@@ -126,7 +126,7 @@ class Resource:
 
     @property
     def resource_tag(self):
-        """Gets the resource_tag of this Resource.
+        r"""Gets the resource_tag of this Resource.
 
         标签列表，没有标签默认为空数组。
 
@@ -137,7 +137,7 @@ class Resource:
 
     @resource_tag.setter
     def resource_tag(self, resource_tag):
-        """Sets the resource_tag of this Resource.
+        r"""Sets the resource_tag of this Resource.
 
         标签列表，没有标签默认为空数组。
 

@@ -37,7 +37,7 @@ class AgentRegister:
     }
 
     def __init__(self, agent_id=None, host_name=None, host_ip=None, host_os=None, host_nickname=None, agent_version=None, agent_type=None):
-        """AgentRegister
+        r"""AgentRegister
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class AgentRegister:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AgentRegister.
+        r"""Gets the agent_id of this AgentRegister.
 
         客户端ID
 
@@ -92,7 +92,7 @@ class AgentRegister:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AgentRegister.
+        r"""Sets the agent_id of this AgentRegister.
 
         客户端ID
 
@@ -103,7 +103,7 @@ class AgentRegister:
 
     @property
     def host_name(self):
-        """Gets the host_name of this AgentRegister.
+        r"""Gets the host_name of this AgentRegister.
 
         客户端所在的主机名
 
@@ -114,7 +114,7 @@ class AgentRegister:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this AgentRegister.
+        r"""Sets the host_name of this AgentRegister.
 
         客户端所在的主机名
 
@@ -125,7 +125,7 @@ class AgentRegister:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this AgentRegister.
+        r"""Gets the host_ip of this AgentRegister.
 
         客户端所在主机的IP
 
@@ -136,7 +136,7 @@ class AgentRegister:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this AgentRegister.
+        r"""Sets the host_ip of this AgentRegister.
 
         客户端所在主机的IP
 
@@ -147,7 +147,7 @@ class AgentRegister:
 
     @property
     def host_os(self):
-        """Gets the host_os of this AgentRegister.
+        r"""Gets the host_os of this AgentRegister.
 
         客户端所在主机的操作系统
 
@@ -158,7 +158,7 @@ class AgentRegister:
 
     @host_os.setter
     def host_os(self, host_os):
-        """Sets the host_os of this AgentRegister.
+        r"""Sets the host_os of this AgentRegister.
 
         客户端所在主机的操作系统
 
@@ -169,7 +169,7 @@ class AgentRegister:
 
     @property
     def host_nickname(self):
-        """Gets the host_nickname of this AgentRegister.
+        r"""Gets the host_nickname of this AgentRegister.
 
         客户端所在主机的主机别名
 
@@ -180,7 +180,7 @@ class AgentRegister:
 
     @host_nickname.setter
     def host_nickname(self, host_nickname):
-        """Sets the host_nickname of this AgentRegister.
+        r"""Sets the host_nickname of this AgentRegister.
 
         客户端所在主机的主机别名
 
@@ -191,7 +191,7 @@ class AgentRegister:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this AgentRegister.
+        r"""Gets the agent_version of this AgentRegister.
 
         客户端版本
 
@@ -202,7 +202,7 @@ class AgentRegister:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this AgentRegister.
+        r"""Sets the agent_version of this AgentRegister.
 
         客户端版本
 
@@ -213,7 +213,7 @@ class AgentRegister:
 
     @property
     def agent_type(self):
-        """Gets the agent_type of this AgentRegister.
+        r"""Gets the agent_type of this AgentRegister.
 
         客户端类型，分本地客户端和云上客户端(cloud/native)
 
@@ -224,7 +224,7 @@ class AgentRegister:
 
     @agent_type.setter
     def agent_type(self, agent_type):
-        """Sets the agent_type of this AgentRegister.
+        r"""Sets the agent_type of this AgentRegister.
 
         客户端类型，分本地客户端和云上客户端(cloud/native)
 

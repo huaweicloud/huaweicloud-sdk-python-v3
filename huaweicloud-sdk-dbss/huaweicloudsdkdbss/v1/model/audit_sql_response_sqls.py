@@ -25,7 +25,7 @@ class AuditSqlResponseSqls:
     }
 
     def __init__(self, sql=None):
-        """AuditSqlResponseSqls
+        r"""AuditSqlResponseSqls
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AuditSqlResponseSqls:
 
     @property
     def sql(self):
-        """Gets the sql of this AuditSqlResponseSqls.
+        r"""Gets the sql of this AuditSqlResponseSqls.
 
         :return: The sql of this AuditSqlResponseSqls.
         :rtype: :class:`huaweicloudsdkdbss.v1.AuditSqlResponseSql`
@@ -51,7 +51,7 @@ class AuditSqlResponseSqls:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this AuditSqlResponseSqls.
+        r"""Sets the sql of this AuditSqlResponseSqls.
 
         :param sql: The sql of this AuditSqlResponseSqls.
         :type sql: :class:`huaweicloudsdkdbss.v1.AuditSqlResponseSql`

@@ -28,7 +28,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     }
 
     def __init__(self, review_result=None, opinion=None):
-        """ShowRealnameAuthenticationReviewResultResponse
+        r"""ShowRealnameAuthenticationReviewResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
 
     @property
     def review_result(self):
-        """Gets the review_result of this ShowRealnameAuthenticationReviewResultResponse.
+        r"""Gets the review_result of this ShowRealnameAuthenticationReviewResultResponse.
 
         实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回： 0：审核中1：不通过2：通过
 
@@ -62,7 +62,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
 
     @review_result.setter
     def review_result(self, review_result):
-        """Sets the review_result of this ShowRealnameAuthenticationReviewResultResponse.
+        r"""Sets the review_result of this ShowRealnameAuthenticationReviewResultResponse.
 
         实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回： 0：审核中1：不通过2：通过
 
@@ -73,7 +73,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
 
     @property
     def opinion(self):
-        """Gets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
+        r"""Gets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
 
         审批意见，只有状态码为200并且审核不通过才返回。
 
@@ -84,7 +84,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
 
     @opinion.setter
     def opinion(self, opinion):
-        """Sets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
+        r"""Sets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
 
         审批意见，只有状态码为200并且审核不通过才返回。
 

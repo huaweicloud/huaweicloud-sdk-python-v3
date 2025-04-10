@@ -39,7 +39,7 @@ class BusinessCatalogTreeNode:
     }
 
     def __init__(self, business_catalog_guid=None, business_catalog_name=None, business_catalog_name_eng=None, level=None, qualified_name=None, ordinal=None, child_nodes=None, logic_entity_nodes=None):
-        """BusinessCatalogTreeNode
+        r"""BusinessCatalogTreeNode
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def business_catalog_guid(self):
-        """Gets the business_catalog_guid of this BusinessCatalogTreeNode.
+        r"""Gets the business_catalog_guid of this BusinessCatalogTreeNode.
 
         业务资产guid
 
@@ -103,7 +103,7 @@ class BusinessCatalogTreeNode:
 
     @business_catalog_guid.setter
     def business_catalog_guid(self, business_catalog_guid):
-        """Sets the business_catalog_guid of this BusinessCatalogTreeNode.
+        r"""Sets the business_catalog_guid of this BusinessCatalogTreeNode.
 
         业务资产guid
 
@@ -114,7 +114,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def business_catalog_name(self):
-        """Gets the business_catalog_name of this BusinessCatalogTreeNode.
+        r"""Gets the business_catalog_name of this BusinessCatalogTreeNode.
 
         业务资产名称
 
@@ -125,7 +125,7 @@ class BusinessCatalogTreeNode:
 
     @business_catalog_name.setter
     def business_catalog_name(self, business_catalog_name):
-        """Sets the business_catalog_name of this BusinessCatalogTreeNode.
+        r"""Sets the business_catalog_name of this BusinessCatalogTreeNode.
 
         业务资产名称
 
@@ -136,7 +136,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def business_catalog_name_eng(self):
-        """Gets the business_catalog_name_eng of this BusinessCatalogTreeNode.
+        r"""Gets the business_catalog_name_eng of this BusinessCatalogTreeNode.
 
         业务资产英文名称
 
@@ -147,7 +147,7 @@ class BusinessCatalogTreeNode:
 
     @business_catalog_name_eng.setter
     def business_catalog_name_eng(self, business_catalog_name_eng):
-        """Sets the business_catalog_name_eng of this BusinessCatalogTreeNode.
+        r"""Sets the business_catalog_name_eng of this BusinessCatalogTreeNode.
 
         业务资产英文名称
 
@@ -158,7 +158,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def level(self):
-        """Gets the level of this BusinessCatalogTreeNode.
+        r"""Gets the level of this BusinessCatalogTreeNode.
 
         业务资产级别
 
@@ -169,7 +169,7 @@ class BusinessCatalogTreeNode:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this BusinessCatalogTreeNode.
+        r"""Sets the level of this BusinessCatalogTreeNode.
 
         业务资产级别
 
@@ -180,7 +180,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this BusinessCatalogTreeNode.
+        r"""Gets the qualified_name of this BusinessCatalogTreeNode.
 
         业务资产级唯一限定名称
 
@@ -191,7 +191,7 @@ class BusinessCatalogTreeNode:
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this BusinessCatalogTreeNode.
+        r"""Sets the qualified_name of this BusinessCatalogTreeNode.
 
         业务资产级唯一限定名称
 
@@ -202,7 +202,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this BusinessCatalogTreeNode.
+        r"""Gets the ordinal of this BusinessCatalogTreeNode.
 
         序数
 
@@ -213,7 +213,7 @@ class BusinessCatalogTreeNode:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this BusinessCatalogTreeNode.
+        r"""Sets the ordinal of this BusinessCatalogTreeNode.
 
         序数
 
@@ -224,7 +224,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def child_nodes(self):
-        """Gets the child_nodes of this BusinessCatalogTreeNode.
+        r"""Gets the child_nodes of this BusinessCatalogTreeNode.
 
         子级业务资产列表
 
@@ -235,7 +235,7 @@ class BusinessCatalogTreeNode:
 
     @child_nodes.setter
     def child_nodes(self, child_nodes):
-        """Sets the child_nodes of this BusinessCatalogTreeNode.
+        r"""Sets the child_nodes of this BusinessCatalogTreeNode.
 
         子级业务资产列表
 
@@ -246,7 +246,7 @@ class BusinessCatalogTreeNode:
 
     @property
     def logic_entity_nodes(self):
-        """Gets the logic_entity_nodes of this BusinessCatalogTreeNode.
+        r"""Gets the logic_entity_nodes of this BusinessCatalogTreeNode.
 
         逻辑实体列表
 
@@ -257,7 +257,7 @@ class BusinessCatalogTreeNode:
 
     @logic_entity_nodes.setter
     def logic_entity_nodes(self, logic_entity_nodes):
-        """Sets the logic_entity_nodes of this BusinessCatalogTreeNode.
+        r"""Sets the logic_entity_nodes of this BusinessCatalogTreeNode.
 
         逻辑实体列表
 

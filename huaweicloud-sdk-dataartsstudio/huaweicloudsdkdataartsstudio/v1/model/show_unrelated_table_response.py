@@ -46,7 +46,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
     }
 
     def __init__(self, attributes=None, classification=None, count=None, entities=None, full_text_result=None, query_text=None, query_type=None, referred_entities=None, scroll_id=None, search_parameters=None, type=None):
-        """ShowUnrelatedTableResponse
+        r"""ShowUnrelatedTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this ShowUnrelatedTableResponse.
+        r"""Gets the attributes of this ShowUnrelatedTableResponse.
 
         :return: The attributes of this ShowUnrelatedTableResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AttributeSearchResult`
@@ -123,7 +123,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ShowUnrelatedTableResponse.
+        r"""Sets the attributes of this ShowUnrelatedTableResponse.
 
         :param attributes: The attributes of this ShowUnrelatedTableResponse.
         :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.AttributeSearchResult`
@@ -132,7 +132,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def classification(self):
-        """Gets the classification of this ShowUnrelatedTableResponse.
+        r"""Gets the classification of this ShowUnrelatedTableResponse.
 
         分类
 
@@ -143,7 +143,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @classification.setter
     def classification(self, classification):
-        """Sets the classification of this ShowUnrelatedTableResponse.
+        r"""Sets the classification of this ShowUnrelatedTableResponse.
 
         分类
 
@@ -154,7 +154,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowUnrelatedTableResponse.
+        r"""Gets the count of this ShowUnrelatedTableResponse.
 
         结果总量
 
@@ -165,7 +165,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowUnrelatedTableResponse.
+        r"""Sets the count of this ShowUnrelatedTableResponse.
 
         结果总量
 
@@ -176,7 +176,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowUnrelatedTableResponse.
+        r"""Gets the entities of this ShowUnrelatedTableResponse.
 
         资产信息
 
@@ -187,7 +187,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowUnrelatedTableResponse.
+        r"""Sets the entities of this ShowUnrelatedTableResponse.
 
         资产信息
 
@@ -198,7 +198,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def full_text_result(self):
-        """Gets the full_text_result of this ShowUnrelatedTableResponse.
+        r"""Gets the full_text_result of this ShowUnrelatedTableResponse.
 
         :return: The full_text_result of this ShowUnrelatedTableResponse.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.AtlasFullTextResult`]
@@ -207,7 +207,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @full_text_result.setter
     def full_text_result(self, full_text_result):
-        """Sets the full_text_result of this ShowUnrelatedTableResponse.
+        r"""Sets the full_text_result of this ShowUnrelatedTableResponse.
 
         :param full_text_result: The full_text_result of this ShowUnrelatedTableResponse.
         :type full_text_result: list[:class:`huaweicloudsdkdataartsstudio.v1.AtlasFullTextResult`]
@@ -216,7 +216,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def query_text(self):
-        """Gets the query_text of this ShowUnrelatedTableResponse.
+        r"""Gets the query_text of this ShowUnrelatedTableResponse.
 
         查询内容
 
@@ -227,7 +227,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @query_text.setter
     def query_text(self, query_text):
-        """Sets the query_text of this ShowUnrelatedTableResponse.
+        r"""Sets the query_text of this ShowUnrelatedTableResponse.
 
         查询内容
 
@@ -238,7 +238,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def query_type(self):
-        """Gets the query_type of this ShowUnrelatedTableResponse.
+        r"""Gets the query_type of this ShowUnrelatedTableResponse.
 
         查询类型，取值范围DSL,FULL_TEXT,GREMLIN,BASIC,ATTRIBUTE,RELATIONSHIP,ADVANCED
 
@@ -249,7 +249,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ShowUnrelatedTableResponse.
+        r"""Sets the query_type of this ShowUnrelatedTableResponse.
 
         查询类型，取值范围DSL,FULL_TEXT,GREMLIN,BASIC,ATTRIBUTE,RELATIONSHIP,ADVANCED
 
@@ -260,7 +260,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this ShowUnrelatedTableResponse.
+        r"""Gets the referred_entities of this ShowUnrelatedTableResponse.
 
         Map<String, AtlasEntityHeader>
 
@@ -271,7 +271,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this ShowUnrelatedTableResponse.
+        r"""Sets the referred_entities of this ShowUnrelatedTableResponse.
 
         Map<String, AtlasEntityHeader>
 
@@ -282,7 +282,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def scroll_id(self):
-        """Gets the scroll_id of this ShowUnrelatedTableResponse.
+        r"""Gets the scroll_id of this ShowUnrelatedTableResponse.
 
         滚动条id
 
@@ -293,7 +293,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @scroll_id.setter
     def scroll_id(self, scroll_id):
-        """Sets the scroll_id of this ShowUnrelatedTableResponse.
+        r"""Sets the scroll_id of this ShowUnrelatedTableResponse.
 
         滚动条id
 
@@ -304,7 +304,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def search_parameters(self):
-        """Gets the search_parameters of this ShowUnrelatedTableResponse.
+        r"""Gets the search_parameters of this ShowUnrelatedTableResponse.
 
         参数
 
@@ -315,7 +315,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @search_parameters.setter
     def search_parameters(self, search_parameters):
-        """Sets the search_parameters of this ShowUnrelatedTableResponse.
+        r"""Sets the search_parameters of this ShowUnrelatedTableResponse.
 
         参数
 
@@ -326,7 +326,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowUnrelatedTableResponse.
+        r"""Gets the type of this ShowUnrelatedTableResponse.
 
         类型
 
@@ -337,7 +337,7 @@ class ShowUnrelatedTableResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowUnrelatedTableResponse.
+        r"""Sets the type of this ShowUnrelatedTableResponse.
 
         类型
 

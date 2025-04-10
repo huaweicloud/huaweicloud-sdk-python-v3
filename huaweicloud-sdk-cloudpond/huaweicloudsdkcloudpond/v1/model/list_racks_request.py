@@ -33,7 +33,7 @@ class ListRacksRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, edge_site_id=None):
-        """ListRacksRequest
+        r"""ListRacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListRacksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRacksRequest.
+        r"""Gets the limit of this ListRacksRequest.
 
         每页的数量
 
@@ -82,7 +82,7 @@ class ListRacksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRacksRequest.
+        r"""Sets the limit of this ListRacksRequest.
 
         每页的数量
 
@@ -93,7 +93,7 @@ class ListRacksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRacksRequest.
+        r"""Gets the marker of this ListRacksRequest.
 
         分页标识
 
@@ -104,7 +104,7 @@ class ListRacksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRacksRequest.
+        r"""Sets the marker of this ListRacksRequest.
 
         分页标识
 
@@ -115,7 +115,7 @@ class ListRacksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListRacksRequest.
+        r"""Gets the sort_key of this ListRacksRequest.
 
         排序字段
 
@@ -126,7 +126,7 @@ class ListRacksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListRacksRequest.
+        r"""Sets the sort_key of this ListRacksRequest.
 
         排序字段
 
@@ -137,7 +137,7 @@ class ListRacksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListRacksRequest.
+        r"""Gets the sort_dir of this ListRacksRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 
@@ -148,7 +148,7 @@ class ListRacksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListRacksRequest.
+        r"""Sets the sort_dir of this ListRacksRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 
@@ -159,7 +159,7 @@ class ListRacksRequest:
 
     @property
     def edge_site_id(self):
-        """Gets the edge_site_id of this ListRacksRequest.
+        r"""Gets the edge_site_id of this ListRacksRequest.
 
         边缘小站ID
 
@@ -170,7 +170,7 @@ class ListRacksRequest:
 
     @edge_site_id.setter
     def edge_site_id(self, edge_site_id):
-        """Sets the edge_site_id of this ListRacksRequest.
+        r"""Sets the edge_site_id of this ListRacksRequest.
 
         边缘小站ID
 

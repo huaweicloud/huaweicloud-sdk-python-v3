@@ -35,7 +35,7 @@ class ListEnvironmentHostsRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None, key_field=None, as_proxy=None, page_index=None, page_size=None):
-        """ListEnvironmentHostsRequest
+        r"""ListEnvironmentHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListEnvironmentHostsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListEnvironmentHostsRequest.
+        r"""Gets the application_id of this ListEnvironmentHostsRequest.
 
         应用id
 
@@ -87,7 +87,7 @@ class ListEnvironmentHostsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListEnvironmentHostsRequest.
+        r"""Sets the application_id of this ListEnvironmentHostsRequest.
 
         应用id
 
@@ -98,7 +98,7 @@ class ListEnvironmentHostsRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ListEnvironmentHostsRequest.
+        r"""Gets the environment_id of this ListEnvironmentHostsRequest.
 
         环境id
 
@@ -109,7 +109,7 @@ class ListEnvironmentHostsRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ListEnvironmentHostsRequest.
+        r"""Sets the environment_id of this ListEnvironmentHostsRequest.
 
         环境id
 
@@ -120,7 +120,7 @@ class ListEnvironmentHostsRequest:
 
     @property
     def key_field(self):
-        """Gets the key_field of this ListEnvironmentHostsRequest.
+        r"""Gets the key_field of this ListEnvironmentHostsRequest.
 
         主机名、ip关键字模糊搜索
 
@@ -131,7 +131,7 @@ class ListEnvironmentHostsRequest:
 
     @key_field.setter
     def key_field(self, key_field):
-        """Sets the key_field of this ListEnvironmentHostsRequest.
+        r"""Sets the key_field of this ListEnvironmentHostsRequest.
 
         主机名、ip关键字模糊搜索
 
@@ -142,7 +142,7 @@ class ListEnvironmentHostsRequest:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this ListEnvironmentHostsRequest.
+        r"""Gets the as_proxy of this ListEnvironmentHostsRequest.
 
         是否为代理机,true为代理机
 
@@ -153,7 +153,7 @@ class ListEnvironmentHostsRequest:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this ListEnvironmentHostsRequest.
+        r"""Sets the as_proxy of this ListEnvironmentHostsRequest.
 
         是否为代理机,true为代理机
 
@@ -164,7 +164,7 @@ class ListEnvironmentHostsRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListEnvironmentHostsRequest.
+        r"""Gets the page_index of this ListEnvironmentHostsRequest.
 
         分页页码
 
@@ -175,7 +175,7 @@ class ListEnvironmentHostsRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListEnvironmentHostsRequest.
+        r"""Sets the page_index of this ListEnvironmentHostsRequest.
 
         分页页码
 
@@ -186,7 +186,7 @@ class ListEnvironmentHostsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListEnvironmentHostsRequest.
+        r"""Gets the page_size of this ListEnvironmentHostsRequest.
 
         分页查询每页条数
 
@@ -197,7 +197,7 @@ class ListEnvironmentHostsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListEnvironmentHostsRequest.
+        r"""Sets the page_size of this ListEnvironmentHostsRequest.
 
         分页查询每页条数
 

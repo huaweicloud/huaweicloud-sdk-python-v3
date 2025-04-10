@@ -23,7 +23,7 @@ class CleanNextflowCacheRequest:
     }
 
     def __init__(self):
-        """CleanNextflowCacheRequest
+        r"""CleanNextflowCacheRequest
 
         The model defined in huaweicloud sdk
 

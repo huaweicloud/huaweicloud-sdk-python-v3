@@ -29,7 +29,7 @@ class ListAnalyzersRequest:
     }
 
     def __init__(self, limit=None, marker=None, type=None):
-        """ListAnalyzersRequest
+        r"""ListAnalyzersRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAnalyzersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAnalyzersRequest.
+        r"""Gets the limit of this ListAnalyzersRequest.
 
         单页最大结果数。
 
@@ -68,7 +68,7 @@ class ListAnalyzersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAnalyzersRequest.
+        r"""Sets the limit of this ListAnalyzersRequest.
 
         单页最大结果数。
 
@@ -79,7 +79,7 @@ class ListAnalyzersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAnalyzersRequest.
+        r"""Gets the marker of this ListAnalyzersRequest.
 
         页面标记。
 
@@ -90,7 +90,7 @@ class ListAnalyzersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAnalyzersRequest.
+        r"""Sets the marker of this ListAnalyzersRequest.
 
         页面标记。
 
@@ -101,7 +101,7 @@ class ListAnalyzersRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAnalyzersRequest.
+        r"""Gets the type of this ListAnalyzersRequest.
 
         分析器的类型。
 
@@ -112,7 +112,7 @@ class ListAnalyzersRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAnalyzersRequest.
+        r"""Sets the type of this ListAnalyzersRequest.
 
         分析器的类型。
 

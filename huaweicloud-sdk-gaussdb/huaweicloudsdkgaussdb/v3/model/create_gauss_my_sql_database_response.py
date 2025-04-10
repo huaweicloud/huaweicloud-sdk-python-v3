@@ -26,7 +26,7 @@ class CreateGaussMySqlDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateGaussMySqlDatabaseResponse
+        r"""CreateGaussMySqlDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGaussMySqlDatabaseResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateGaussMySqlDatabaseResponse.
+        r"""Gets the job_id of this CreateGaussMySqlDatabaseResponse.
 
         创建数据库的任务ID。
 
@@ -55,7 +55,7 @@ class CreateGaussMySqlDatabaseResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateGaussMySqlDatabaseResponse.
+        r"""Sets the job_id of this CreateGaussMySqlDatabaseResponse.
 
         创建数据库的任务ID。
 

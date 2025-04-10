@@ -25,7 +25,7 @@ class AttachmentInstanceProjectId:
     }
 
     def __init__(self, attachment_instance_project_id=None):
-        """AttachmentInstanceProjectId
+        r"""AttachmentInstanceProjectId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachmentInstanceProjectId:
 
     @property
     def attachment_instance_project_id(self):
-        """Gets the attachment_instance_project_id of this AttachmentInstanceProjectId.
+        r"""Gets the attachment_instance_project_id of this AttachmentInstanceProjectId.
 
         中心网络附件对端实例的项目ID。
 
@@ -53,7 +53,7 @@ class AttachmentInstanceProjectId:
 
     @attachment_instance_project_id.setter
     def attachment_instance_project_id(self, attachment_instance_project_id):
-        """Sets the attachment_instance_project_id of this AttachmentInstanceProjectId.
+        r"""Sets the attachment_instance_project_id of this AttachmentInstanceProjectId.
 
         中心网络附件对端实例的项目ID。
 

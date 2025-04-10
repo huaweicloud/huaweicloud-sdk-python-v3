@@ -28,7 +28,7 @@ class ListCasesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_info_list=None):
-        """ListCasesResponse
+        r"""ListCasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCasesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCasesResponse.
+        r"""Gets the total_count of this ListCasesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListCasesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCasesResponse.
+        r"""Sets the total_count of this ListCasesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListCasesResponse(SdkResponse):
 
     @property
     def incident_info_list(self):
-        """Gets the incident_info_list of this ListCasesResponse.
+        r"""Gets the incident_info_list of this ListCasesResponse.
 
         工单列表
 
@@ -84,7 +84,7 @@ class ListCasesResponse(SdkResponse):
 
     @incident_info_list.setter
     def incident_info_list(self, incident_info_list):
-        """Sets the incident_info_list of this ListCasesResponse.
+        r"""Sets the incident_info_list of this ListCasesResponse.
 
         工单列表
 

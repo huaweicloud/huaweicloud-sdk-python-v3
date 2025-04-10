@@ -26,7 +26,7 @@ class DeleteOrganizationRequest:
     }
 
     def __init__(self, x_security_token=None):
-        """DeleteOrganizationRequest
+        r"""DeleteOrganizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteOrganizationRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeleteOrganizationRequest.
+        r"""Gets the x_security_token of this DeleteOrganizationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -55,7 +55,7 @@ class DeleteOrganizationRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeleteOrganizationRequest.
+        r"""Sets the x_security_token of this DeleteOrganizationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 

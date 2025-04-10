@@ -24,7 +24,7 @@ class CreateComponentConfigurationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateComponentConfigurationResponse
+        r"""CreateComponentConfigurationResponse
 
         The model defined in huaweicloud sdk
 

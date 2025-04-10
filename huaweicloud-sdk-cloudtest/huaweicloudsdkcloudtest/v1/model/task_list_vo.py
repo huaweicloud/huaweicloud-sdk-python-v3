@@ -27,7 +27,7 @@ class TaskListVo:
     }
 
     def __init__(self, tasks=None, running_count=None):
-        """TaskListVo
+        r"""TaskListVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskListVo:
 
     @property
     def tasks(self):
-        """Gets the tasks of this TaskListVo.
+        r"""Gets the tasks of this TaskListVo.
 
         测试任务集合
 
@@ -61,7 +61,7 @@ class TaskListVo:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this TaskListVo.
+        r"""Sets the tasks of this TaskListVo.
 
         测试任务集合
 
@@ -72,7 +72,7 @@ class TaskListVo:
 
     @property
     def running_count(self):
-        """Gets the running_count of this TaskListVo.
+        r"""Gets the running_count of this TaskListVo.
 
         正在执行任务数
 
@@ -83,7 +83,7 @@ class TaskListVo:
 
     @running_count.setter
     def running_count(self, running_count):
-        """Sets the running_count of this TaskListVo.
+        r"""Sets the running_count of this TaskListVo.
 
         正在执行任务数
 

@@ -27,7 +27,7 @@ class Route:
     }
 
     def __init__(self, destination=None, nexthop=None):
-        """Route
+        r"""Route
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Route:
 
     @property
     def destination(self):
-        """Gets the destination of this Route.
+        r"""Gets the destination of this Route.
 
         功能说明：路由目的地 取值范围：IP地址段 约束：仅支持配置默认路由，且其取值只能是0.0.0.0/0
 
@@ -61,7 +61,7 @@ class Route:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this Route.
+        r"""Sets the destination of this Route.
 
         功能说明：路由目的地 取值范围：IP地址段 约束：仅支持配置默认路由，且其取值只能是0.0.0.0/0
 
@@ -72,7 +72,7 @@ class Route:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this Route.
+        r"""Gets the nexthop of this Route.
 
         功能说明：路由下一跳IP地址 取值范围：ipv4地址格式 约束：nexthop仅支持所关联的子网范围内IP地址
 
@@ -83,7 +83,7 @@ class Route:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this Route.
+        r"""Sets the nexthop of this Route.
 
         功能说明：路由下一跳IP地址 取值范围：ipv4地址格式 约束：nexthop仅支持所关联的子网范围内IP地址
 

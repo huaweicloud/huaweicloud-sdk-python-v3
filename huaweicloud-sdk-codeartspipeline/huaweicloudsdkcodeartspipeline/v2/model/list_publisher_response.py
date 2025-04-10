@@ -32,7 +32,7 @@ class ListPublisherResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, data=None):
-        """ListPublisherResponse
+        r"""ListPublisherResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPublisherResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublisherResponse.
+        r"""Gets the offset of this ListPublisherResponse.
 
         查询偏移量
 
@@ -76,7 +76,7 @@ class ListPublisherResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublisherResponse.
+        r"""Sets the offset of this ListPublisherResponse.
 
         查询偏移量
 
@@ -87,7 +87,7 @@ class ListPublisherResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublisherResponse.
+        r"""Gets the limit of this ListPublisherResponse.
 
         每次查询的条目数量
 
@@ -98,7 +98,7 @@ class ListPublisherResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublisherResponse.
+        r"""Sets the limit of this ListPublisherResponse.
 
         每次查询的条目数量
 
@@ -109,7 +109,7 @@ class ListPublisherResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPublisherResponse.
+        r"""Gets the total of this ListPublisherResponse.
 
         查询总数
 
@@ -120,7 +120,7 @@ class ListPublisherResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPublisherResponse.
+        r"""Sets the total of this ListPublisherResponse.
 
         查询总数
 
@@ -131,7 +131,7 @@ class ListPublisherResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPublisherResponse.
+        r"""Gets the data of this ListPublisherResponse.
 
         数据列表
 
@@ -142,7 +142,7 @@ class ListPublisherResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPublisherResponse.
+        r"""Sets the data of this ListPublisherResponse.
 
         数据列表
 

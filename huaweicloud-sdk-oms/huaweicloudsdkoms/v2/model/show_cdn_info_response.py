@@ -30,7 +30,7 @@ class ShowCdnInfoResponse(SdkResponse):
     }
 
     def __init__(self, is_same_cloud_type=None, is_download_available=None, checked_keys=None):
-        """ShowCdnInfoResponse
+        r"""ShowCdnInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCdnInfoResponse(SdkResponse):
 
     @property
     def is_same_cloud_type(self):
-        """Gets the is_same_cloud_type of this ShowCdnInfoResponse.
+        r"""Gets the is_same_cloud_type of this ShowCdnInfoResponse.
 
         是否相同云类型
 
@@ -69,7 +69,7 @@ class ShowCdnInfoResponse(SdkResponse):
 
     @is_same_cloud_type.setter
     def is_same_cloud_type(self, is_same_cloud_type):
-        """Sets the is_same_cloud_type of this ShowCdnInfoResponse.
+        r"""Sets the is_same_cloud_type of this ShowCdnInfoResponse.
 
         是否相同云类型
 
@@ -80,7 +80,7 @@ class ShowCdnInfoResponse(SdkResponse):
 
     @property
     def is_download_available(self):
-        """Gets the is_download_available of this ShowCdnInfoResponse.
+        r"""Gets the is_download_available of this ShowCdnInfoResponse.
 
         是否下载可用
 
@@ -91,7 +91,7 @@ class ShowCdnInfoResponse(SdkResponse):
 
     @is_download_available.setter
     def is_download_available(self, is_download_available):
-        """Sets the is_download_available of this ShowCdnInfoResponse.
+        r"""Sets the is_download_available of this ShowCdnInfoResponse.
 
         是否下载可用
 
@@ -102,7 +102,7 @@ class ShowCdnInfoResponse(SdkResponse):
 
     @property
     def checked_keys(self):
-        """Gets the checked_keys of this ShowCdnInfoResponse.
+        r"""Gets the checked_keys of this ShowCdnInfoResponse.
 
         返回的已检查的对象数组
 
@@ -113,7 +113,7 @@ class ShowCdnInfoResponse(SdkResponse):
 
     @checked_keys.setter
     def checked_keys(self, checked_keys):
-        """Sets the checked_keys of this ShowCdnInfoResponse.
+        r"""Sets the checked_keys of this ShowCdnInfoResponse.
 
         返回的已检查的对象数组
 

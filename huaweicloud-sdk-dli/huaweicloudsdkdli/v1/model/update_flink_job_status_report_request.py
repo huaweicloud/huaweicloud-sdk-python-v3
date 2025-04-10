@@ -25,7 +25,7 @@ class UpdateFlinkJobStatusReportRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateFlinkJobStatusReportRequest
+        r"""UpdateFlinkJobStatusReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateFlinkJobStatusReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlinkJobStatusReportRequest.
+        r"""Gets the body of this UpdateFlinkJobStatusReportRequest.
 
         :return: The body of this UpdateFlinkJobStatusReportRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequestBody`
@@ -52,7 +52,7 @@ class UpdateFlinkJobStatusReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlinkJobStatusReportRequest.
+        r"""Sets the body of this UpdateFlinkJobStatusReportRequest.
 
         :param body: The body of this UpdateFlinkJobStatusReportRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequestBody`

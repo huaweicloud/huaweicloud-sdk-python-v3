@@ -28,7 +28,7 @@ class ListEdgeCloudResponse(SdkResponse):
     }
 
     def __init__(self, count=None, edgeclouds=None):
-        """ListEdgeCloudResponse
+        r"""ListEdgeCloudResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEdgeCloudResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEdgeCloudResponse.
+        r"""Gets the count of this ListEdgeCloudResponse.
 
         边缘业务数量。
 
@@ -62,7 +62,7 @@ class ListEdgeCloudResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEdgeCloudResponse.
+        r"""Sets the count of this ListEdgeCloudResponse.
 
         边缘业务数量。
 
@@ -73,7 +73,7 @@ class ListEdgeCloudResponse(SdkResponse):
 
     @property
     def edgeclouds(self):
-        """Gets the edgeclouds of this ListEdgeCloudResponse.
+        r"""Gets the edgeclouds of this ListEdgeCloudResponse.
 
         边缘业务列表。
 
@@ -84,7 +84,7 @@ class ListEdgeCloudResponse(SdkResponse):
 
     @edgeclouds.setter
     def edgeclouds(self, edgeclouds):
-        """Sets the edgeclouds of this ListEdgeCloudResponse.
+        r"""Sets the edgeclouds of this ListEdgeCloudResponse.
 
         边缘业务列表。
 

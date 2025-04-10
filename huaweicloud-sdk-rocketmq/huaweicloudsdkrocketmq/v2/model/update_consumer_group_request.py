@@ -29,7 +29,7 @@ class UpdateConsumerGroupRequest:
     }
 
     def __init__(self, instance_id=None, group=None, body=None):
-        """UpdateConsumerGroupRequest
+        r"""UpdateConsumerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateConsumerGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateConsumerGroupRequest.
+        r"""Gets the instance_id of this UpdateConsumerGroupRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateConsumerGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateConsumerGroupRequest.
+        r"""Sets the instance_id of this UpdateConsumerGroupRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateConsumerGroupRequest:
 
     @property
     def group(self):
-        """Gets the group of this UpdateConsumerGroupRequest.
+        r"""Gets the group of this UpdateConsumerGroupRequest.
 
         消费组名称。
 
@@ -88,7 +88,7 @@ class UpdateConsumerGroupRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UpdateConsumerGroupRequest.
+        r"""Sets the group of this UpdateConsumerGroupRequest.
 
         消费组名称。
 
@@ -99,7 +99,7 @@ class UpdateConsumerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConsumerGroupRequest.
+        r"""Gets the body of this UpdateConsumerGroupRequest.
 
         :return: The body of this UpdateConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroup`
@@ -108,7 +108,7 @@ class UpdateConsumerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConsumerGroupRequest.
+        r"""Sets the body of this UpdateConsumerGroupRequest.
 
         :param body: The body of this UpdateConsumerGroupRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroup`

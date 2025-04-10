@@ -27,7 +27,7 @@ class StartPipelineRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartPipelineRequest
+        r"""StartPipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartPipelineRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartPipelineRequest.
+        r"""Gets the cluster_id of this StartPipelineRequest.
 
         指定开启pipeline的集群ID。
 
@@ -60,7 +60,7 @@ class StartPipelineRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartPipelineRequest.
+        r"""Sets the cluster_id of this StartPipelineRequest.
 
         指定开启pipeline的集群ID。
 
@@ -71,7 +71,7 @@ class StartPipelineRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartPipelineRequest.
+        r"""Gets the body of this StartPipelineRequest.
 
         :return: The body of this StartPipelineRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartPipelineReq`
@@ -80,7 +80,7 @@ class StartPipelineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartPipelineRequest.
+        r"""Sets the body of this StartPipelineRequest.
 
         :param body: The body of this StartPipelineRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartPipelineReq`

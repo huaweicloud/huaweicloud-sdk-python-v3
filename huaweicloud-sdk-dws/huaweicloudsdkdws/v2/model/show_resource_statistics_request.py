@@ -25,7 +25,7 @@ class ShowResourceStatisticsRequest:
     }
 
     def __init__(self, namespace=None):
-        """ShowResourceStatisticsRequest
+        r"""ShowResourceStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowResourceStatisticsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowResourceStatisticsRequest.
+        r"""Gets the namespace of this ShowResourceStatisticsRequest.
 
         命名空间
 
@@ -54,7 +54,7 @@ class ShowResourceStatisticsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowResourceStatisticsRequest.
+        r"""Sets the namespace of this ShowResourceStatisticsRequest.
 
         命名空间
 

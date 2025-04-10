@@ -27,7 +27,7 @@ class DetailTestTypeCasePassRateVo:
     }
 
     def __init__(self, test_type=None, case_pass_rate=None):
-        """DetailTestTypeCasePassRateVo
+        r"""DetailTestTypeCasePassRateVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DetailTestTypeCasePassRateVo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this DetailTestTypeCasePassRateVo.
+        r"""Gets the test_type of this DetailTestTypeCasePassRateVo.
 
         测试类型
 
@@ -61,7 +61,7 @@ class DetailTestTypeCasePassRateVo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this DetailTestTypeCasePassRateVo.
+        r"""Sets the test_type of this DetailTestTypeCasePassRateVo.
 
         测试类型
 
@@ -72,7 +72,7 @@ class DetailTestTypeCasePassRateVo:
 
     @property
     def case_pass_rate(self):
-        """Gets the case_pass_rate of this DetailTestTypeCasePassRateVo.
+        r"""Gets the case_pass_rate of this DetailTestTypeCasePassRateVo.
 
         用例通过率
 
@@ -83,7 +83,7 @@ class DetailTestTypeCasePassRateVo:
 
     @case_pass_rate.setter
     def case_pass_rate(self, case_pass_rate):
-        """Sets the case_pass_rate of this DetailTestTypeCasePassRateVo.
+        r"""Sets the case_pass_rate of this DetailTestTypeCasePassRateVo.
 
         用例通过率
 

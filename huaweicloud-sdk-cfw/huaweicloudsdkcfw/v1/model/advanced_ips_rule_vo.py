@@ -33,7 +33,7 @@ class AdvancedIpsRuleVo:
     }
 
     def __init__(self, action=None, ips_rule_id=None, ips_rule_type=None, param=None, status=None):
-        """AdvancedIpsRuleVo
+        r"""AdvancedIpsRuleVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AdvancedIpsRuleVo:
 
     @property
     def action(self):
-        """Gets the action of this AdvancedIpsRuleVo.
+        r"""Gets the action of this AdvancedIpsRuleVo.
 
         动作：0表示仅记录日志、1表示拦截session、2表示拦截ip
 
@@ -82,7 +82,7 @@ class AdvancedIpsRuleVo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this AdvancedIpsRuleVo.
+        r"""Sets the action of this AdvancedIpsRuleVo.
 
         动作：0表示仅记录日志、1表示拦截session、2表示拦截ip
 
@@ -93,7 +93,7 @@ class AdvancedIpsRuleVo:
 
     @property
     def ips_rule_id(self):
-        """Gets the ips_rule_id of this AdvancedIpsRuleVo.
+        r"""Gets the ips_rule_id of this AdvancedIpsRuleVo.
 
         高级ips规则id
 
@@ -104,7 +104,7 @@ class AdvancedIpsRuleVo:
 
     @ips_rule_id.setter
     def ips_rule_id(self, ips_rule_id):
-        """Sets the ips_rule_id of this AdvancedIpsRuleVo.
+        r"""Sets the ips_rule_id of this AdvancedIpsRuleVo.
 
         高级ips规则id
 
@@ -115,7 +115,7 @@ class AdvancedIpsRuleVo:
 
     @property
     def ips_rule_type(self):
-        """Gets the ips_rule_type of this AdvancedIpsRuleVo.
+        r"""Gets the ips_rule_type of this AdvancedIpsRuleVo.
 
         ips规则类型：0表示敏感目录扫描、1表示反弹xshell
 
@@ -126,7 +126,7 @@ class AdvancedIpsRuleVo:
 
     @ips_rule_type.setter
     def ips_rule_type(self, ips_rule_type):
-        """Sets the ips_rule_type of this AdvancedIpsRuleVo.
+        r"""Sets the ips_rule_type of this AdvancedIpsRuleVo.
 
         ips规则类型：0表示敏感目录扫描、1表示反弹xshell
 
@@ -137,7 +137,7 @@ class AdvancedIpsRuleVo:
 
     @property
     def param(self):
-        """Gets the param of this AdvancedIpsRuleVo.
+        r"""Gets the param of this AdvancedIpsRuleVo.
 
         包含特殊参数的JSON字符串
 
@@ -148,7 +148,7 @@ class AdvancedIpsRuleVo:
 
     @param.setter
     def param(self, param):
-        """Sets the param of this AdvancedIpsRuleVo.
+        r"""Sets the param of this AdvancedIpsRuleVo.
 
         包含特殊参数的JSON字符串
 
@@ -159,7 +159,7 @@ class AdvancedIpsRuleVo:
 
     @property
     def status(self):
-        """Gets the status of this AdvancedIpsRuleVo.
+        r"""Gets the status of this AdvancedIpsRuleVo.
 
         :return: The status of this AdvancedIpsRuleVo.
         :rtype: int
@@ -168,7 +168,7 @@ class AdvancedIpsRuleVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AdvancedIpsRuleVo.
+        r"""Sets the status of this AdvancedIpsRuleVo.
 
         :param status: The status of this AdvancedIpsRuleVo.
         :type status: int

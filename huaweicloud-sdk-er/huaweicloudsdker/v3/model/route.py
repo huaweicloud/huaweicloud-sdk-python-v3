@@ -43,7 +43,7 @@ class Route:
     }
 
     def __init__(self, id=None, type=None, state=None, is_blackhole=None, destination=None, attachments=None, route_table_id=None, created_at=None, updated_at=None, description=None):
-        """Route
+        r"""Route
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class Route:
 
     @property
     def id(self):
-        """Gets the id of this Route.
+        r"""Gets the id of this Route.
 
         路由id
 
@@ -111,7 +111,7 @@ class Route:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Route.
+        r"""Sets the id of this Route.
 
         路由id
 
@@ -122,7 +122,7 @@ class Route:
 
     @property
     def type(self):
-        """Gets the type of this Route.
+        r"""Gets the type of this Route.
 
         路由类型
 
@@ -133,7 +133,7 @@ class Route:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Route.
+        r"""Sets the type of this Route.
 
         路由类型
 
@@ -144,7 +144,7 @@ class Route:
 
     @property
     def state(self):
-        """Gets the state of this Route.
+        r"""Gets the state of this Route.
 
         路由状态
 
@@ -155,7 +155,7 @@ class Route:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Route.
+        r"""Sets the state of this Route.
 
         路由状态
 
@@ -166,7 +166,7 @@ class Route:
 
     @property
     def is_blackhole(self):
-        """Gets the is_blackhole of this Route.
+        r"""Gets the is_blackhole of this Route.
 
         是否为黑洞路由
 
@@ -177,7 +177,7 @@ class Route:
 
     @is_blackhole.setter
     def is_blackhole(self, is_blackhole):
-        """Sets the is_blackhole of this Route.
+        r"""Sets the is_blackhole of this Route.
 
         是否为黑洞路由
 
@@ -188,7 +188,7 @@ class Route:
 
     @property
     def destination(self):
-        """Gets the destination of this Route.
+        r"""Gets the destination of this Route.
 
         路由目的地址
 
@@ -199,7 +199,7 @@ class Route:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this Route.
+        r"""Sets the destination of this Route.
 
         路由目的地址
 
@@ -210,7 +210,7 @@ class Route:
 
     @property
     def attachments(self):
-        """Gets the attachments of this Route.
+        r"""Gets the attachments of this Route.
 
         下一跳列表
 
@@ -221,7 +221,7 @@ class Route:
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this Route.
+        r"""Sets the attachments of this Route.
 
         下一跳列表
 
@@ -232,7 +232,7 @@ class Route:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this Route.
+        r"""Gets the route_table_id of this Route.
 
         路由表id
 
@@ -243,7 +243,7 @@ class Route:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this Route.
+        r"""Sets the route_table_id of this Route.
 
         路由表id
 
@@ -254,7 +254,7 @@ class Route:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Route.
+        r"""Gets the created_at of this Route.
 
         创建时间
 
@@ -265,7 +265,7 @@ class Route:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Route.
+        r"""Sets the created_at of this Route.
 
         创建时间
 
@@ -276,7 +276,7 @@ class Route:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Route.
+        r"""Gets the updated_at of this Route.
 
         更新时间
 
@@ -287,7 +287,7 @@ class Route:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Route.
+        r"""Sets the updated_at of this Route.
 
         更新时间
 
@@ -298,7 +298,7 @@ class Route:
 
     @property
     def description(self):
-        """Gets the description of this Route.
+        r"""Gets the description of this Route.
 
         路由描述信息
 
@@ -309,7 +309,7 @@ class Route:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Route.
+        r"""Sets the description of this Route.
 
         路由描述信息
 

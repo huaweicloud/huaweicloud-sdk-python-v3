@@ -26,7 +26,7 @@ class DeleteNotifyPolicyResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """DeleteNotifyPolicyResponse
+        r"""DeleteNotifyPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteNotifyPolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteNotifyPolicyResponse.
+        r"""Gets the request_id of this DeleteNotifyPolicyResponse.
 
         请求的唯一标识ID
 
@@ -55,7 +55,7 @@ class DeleteNotifyPolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteNotifyPolicyResponse.
+        r"""Sets the request_id of this DeleteNotifyPolicyResponse.
 
         请求的唯一标识ID
 

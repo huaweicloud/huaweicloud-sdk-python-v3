@@ -33,7 +33,7 @@ class CheckJobResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None, success=None):
-        """CheckJobResp
+        r"""CheckJobResp
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CheckJobResp:
 
     @property
     def id(self):
-        """Gets the id of this CheckJobResp.
+        r"""Gets the id of this CheckJobResp.
 
         任务id。
 
@@ -80,7 +80,7 @@ class CheckJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckJobResp.
+        r"""Sets the id of this CheckJobResp.
 
         任务id。
 
@@ -91,7 +91,7 @@ class CheckJobResp:
 
     @property
     def status(self):
-        """Gets the status of this CheckJobResp.
+        r"""Gets the status of this CheckJobResp.
 
         测试结果。 - true：成功 - false：失败
 
@@ -102,7 +102,7 @@ class CheckJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckJobResp.
+        r"""Sets the status of this CheckJobResp.
 
         测试结果。 - true：成功 - false：失败
 
@@ -113,7 +113,7 @@ class CheckJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CheckJobResp.
+        r"""Gets the error_code of this CheckJobResp.
 
         错误码。
 
@@ -124,7 +124,7 @@ class CheckJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CheckJobResp.
+        r"""Sets the error_code of this CheckJobResp.
 
         错误码。
 
@@ -135,7 +135,7 @@ class CheckJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CheckJobResp.
+        r"""Gets the error_msg of this CheckJobResp.
 
         错误信息。
 
@@ -146,7 +146,7 @@ class CheckJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CheckJobResp.
+        r"""Sets the error_msg of this CheckJobResp.
 
         错误信息。
 
@@ -157,7 +157,7 @@ class CheckJobResp:
 
     @property
     def success(self):
-        """Gets the success of this CheckJobResp.
+        r"""Gets the success of this CheckJobResp.
 
         是否成功
 
@@ -168,7 +168,7 @@ class CheckJobResp:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this CheckJobResp.
+        r"""Sets the success of this CheckJobResp.
 
         是否成功
 

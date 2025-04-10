@@ -35,7 +35,7 @@ class ListInstanceDatastore:
     }
 
     def __init__(self, type=None, version=None, complete_version=None, target_version=None, complete_kernel_version=None, hotfix_version_infos=None):
-        """ListInstanceDatastore
+        r"""ListInstanceDatastore
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListInstanceDatastore:
 
     @property
     def type(self):
-        """Gets the type of this ListInstanceDatastore.
+        r"""Gets the type of this ListInstanceDatastore.
 
         数据库引擎。
 
@@ -87,7 +87,7 @@ class ListInstanceDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInstanceDatastore.
+        r"""Sets the type of this ListInstanceDatastore.
 
         数据库引擎。
 
@@ -98,7 +98,7 @@ class ListInstanceDatastore:
 
     @property
     def version(self):
-        """Gets the version of this ListInstanceDatastore.
+        r"""Gets the version of this ListInstanceDatastore.
 
         数据库大版本。
 
@@ -109,7 +109,7 @@ class ListInstanceDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListInstanceDatastore.
+        r"""Sets the version of this ListInstanceDatastore.
 
         数据库大版本。
 
@@ -120,7 +120,7 @@ class ListInstanceDatastore:
 
     @property
     def complete_version(self):
-        """Gets the complete_version of this ListInstanceDatastore.
+        r"""Gets the complete_version of this ListInstanceDatastore.
 
         数据库小版本。
 
@@ -131,7 +131,7 @@ class ListInstanceDatastore:
 
     @complete_version.setter
     def complete_version(self, complete_version):
-        """Sets the complete_version of this ListInstanceDatastore.
+        r"""Sets the complete_version of this ListInstanceDatastore.
 
         数据库小版本。
 
@@ -142,7 +142,7 @@ class ListInstanceDatastore:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ListInstanceDatastore.
+        r"""Gets the target_version of this ListInstanceDatastore.
 
         数据库正在升级的目标版本。
 
@@ -153,7 +153,7 @@ class ListInstanceDatastore:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ListInstanceDatastore.
+        r"""Sets the target_version of this ListInstanceDatastore.
 
         数据库正在升级的目标版本。
 
@@ -164,7 +164,7 @@ class ListInstanceDatastore:
 
     @property
     def complete_kernel_version(self):
-        """Gets the complete_kernel_version of this ListInstanceDatastore.
+        r"""Gets the complete_kernel_version of this ListInstanceDatastore.
 
         数据库内核版本
 
@@ -175,7 +175,7 @@ class ListInstanceDatastore:
 
     @complete_kernel_version.setter
     def complete_kernel_version(self, complete_kernel_version):
-        """Sets the complete_kernel_version of this ListInstanceDatastore.
+        r"""Sets the complete_kernel_version of this ListInstanceDatastore.
 
         数据库内核版本
 
@@ -186,7 +186,7 @@ class ListInstanceDatastore:
 
     @property
     def hotfix_version_infos(self):
-        """Gets the hotfix_version_infos of this ListInstanceDatastore.
+        r"""Gets the hotfix_version_infos of this ListInstanceDatastore.
 
         热补丁信息列表
 
@@ -197,7 +197,7 @@ class ListInstanceDatastore:
 
     @hotfix_version_infos.setter
     def hotfix_version_infos(self, hotfix_version_infos):
-        """Sets the hotfix_version_infos of this ListInstanceDatastore.
+        r"""Sets the hotfix_version_infos of this ListInstanceDatastore.
 
         热补丁信息列表
 

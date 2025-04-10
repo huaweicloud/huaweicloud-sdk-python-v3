@@ -41,7 +41,7 @@ class ListSupplementdataRequest:
     }
 
     def __init__(self, workspace=None, sort=None, page=None, size=None, name=None, user_name=None, status=None, start_date=None, end_date=None):
-        """ListSupplementdataRequest
+        r"""ListSupplementdataRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListSupplementdataRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSupplementdataRequest.
+        r"""Gets the workspace of this ListSupplementdataRequest.
 
         工作空间id
 
@@ -110,7 +110,7 @@ class ListSupplementdataRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSupplementdataRequest.
+        r"""Sets the workspace of this ListSupplementdataRequest.
 
         工作空间id
 
@@ -121,7 +121,7 @@ class ListSupplementdataRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListSupplementdataRequest.
+        r"""Gets the sort of this ListSupplementdataRequest.
 
         排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
 
@@ -132,7 +132,7 @@ class ListSupplementdataRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListSupplementdataRequest.
+        r"""Sets the sort of this ListSupplementdataRequest.
 
         排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
 
@@ -143,7 +143,7 @@ class ListSupplementdataRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListSupplementdataRequest.
+        r"""Gets the page of this ListSupplementdataRequest.
 
         分页列表的起始页，默认值为0。取值范围大于等于0。
 
@@ -154,7 +154,7 @@ class ListSupplementdataRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListSupplementdataRequest.
+        r"""Sets the page of this ListSupplementdataRequest.
 
         分页列表的起始页，默认值为0。取值范围大于等于0。
 
@@ -165,7 +165,7 @@ class ListSupplementdataRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListSupplementdataRequest.
+        r"""Gets the size of this ListSupplementdataRequest.
 
         分页返回结果，指定每页最大记录数。默认值：10
 
@@ -176,7 +176,7 @@ class ListSupplementdataRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListSupplementdataRequest.
+        r"""Sets the size of this ListSupplementdataRequest.
 
         分页返回结果，指定每页最大记录数。默认值：10
 
@@ -187,7 +187,7 @@ class ListSupplementdataRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSupplementdataRequest.
+        r"""Gets the name of this ListSupplementdataRequest.
 
         补数据名称
 
@@ -198,7 +198,7 @@ class ListSupplementdataRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSupplementdataRequest.
+        r"""Sets the name of this ListSupplementdataRequest.
 
         补数据名称
 
@@ -209,7 +209,7 @@ class ListSupplementdataRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListSupplementdataRequest.
+        r"""Gets the user_name of this ListSupplementdataRequest.
 
         用户名
 
@@ -220,7 +220,7 @@ class ListSupplementdataRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListSupplementdataRequest.
+        r"""Sets the user_name of this ListSupplementdataRequest.
 
         用户名
 
@@ -231,7 +231,7 @@ class ListSupplementdataRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSupplementdataRequest.
+        r"""Gets the status of this ListSupplementdataRequest.
 
         实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
@@ -242,7 +242,7 @@ class ListSupplementdataRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSupplementdataRequest.
+        r"""Sets the status of this ListSupplementdataRequest.
 
         实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
@@ -253,7 +253,7 @@ class ListSupplementdataRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListSupplementdataRequest.
+        r"""Gets the start_date of this ListSupplementdataRequest.
 
         查询作业的开始日期 13位时间戳
 
@@ -264,7 +264,7 @@ class ListSupplementdataRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListSupplementdataRequest.
+        r"""Sets the start_date of this ListSupplementdataRequest.
 
         查询作业的开始日期 13位时间戳
 
@@ -275,7 +275,7 @@ class ListSupplementdataRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListSupplementdataRequest.
+        r"""Gets the end_date of this ListSupplementdataRequest.
 
         查询作业的结束日期 13位时间戳
 
@@ -286,7 +286,7 @@ class ListSupplementdataRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListSupplementdataRequest.
+        r"""Sets the end_date of this ListSupplementdataRequest.
 
         查询作业的结束日期 13位时间戳
 

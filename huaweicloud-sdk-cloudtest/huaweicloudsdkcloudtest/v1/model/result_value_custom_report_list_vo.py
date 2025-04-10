@@ -35,7 +35,7 @@ class ResultValueCustomReportListVo:
     }
 
     def __init__(self, total=None, value=None, reason=None, page_size=None, page_no=None, has_more=None):
-        """ResultValueCustomReportListVo
+        r"""ResultValueCustomReportListVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ResultValueCustomReportListVo:
 
     @property
     def total(self):
-        """Gets the total of this ResultValueCustomReportListVo.
+        r"""Gets the total of this ResultValueCustomReportListVo.
 
         起始记录数大于实际总条数时，值为0，分页请求才有此值
 
@@ -89,7 +89,7 @@ class ResultValueCustomReportListVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ResultValueCustomReportListVo.
+        r"""Sets the total of this ResultValueCustomReportListVo.
 
         起始记录数大于实际总条数时，值为0，分页请求才有此值
 
@@ -100,7 +100,7 @@ class ResultValueCustomReportListVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueCustomReportListVo.
+        r"""Gets the value of this ResultValueCustomReportListVo.
 
         :return: The value of this ResultValueCustomReportListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CustomReportListVo`
@@ -109,7 +109,7 @@ class ResultValueCustomReportListVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueCustomReportListVo.
+        r"""Sets the value of this ResultValueCustomReportListVo.
 
         :param value: The value of this ResultValueCustomReportListVo.
         :type value: :class:`huaweicloudsdkcloudtest.v1.CustomReportListVo`
@@ -118,7 +118,7 @@ class ResultValueCustomReportListVo:
 
     @property
     def reason(self):
-        """Gets the reason of this ResultValueCustomReportListVo.
+        r"""Gets the reason of this ResultValueCustomReportListVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -129,7 +129,7 @@ class ResultValueCustomReportListVo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ResultValueCustomReportListVo.
+        r"""Sets the reason of this ResultValueCustomReportListVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -140,7 +140,7 @@ class ResultValueCustomReportListVo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ResultValueCustomReportListVo.
+        r"""Gets the page_size of this ResultValueCustomReportListVo.
 
         :return: The page_size of this ResultValueCustomReportListVo.
         :rtype: int
@@ -149,7 +149,7 @@ class ResultValueCustomReportListVo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ResultValueCustomReportListVo.
+        r"""Sets the page_size of this ResultValueCustomReportListVo.
 
         :param page_size: The page_size of this ResultValueCustomReportListVo.
         :type page_size: int
@@ -158,7 +158,7 @@ class ResultValueCustomReportListVo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ResultValueCustomReportListVo.
+        r"""Gets the page_no of this ResultValueCustomReportListVo.
 
         :return: The page_no of this ResultValueCustomReportListVo.
         :rtype: int
@@ -167,7 +167,7 @@ class ResultValueCustomReportListVo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ResultValueCustomReportListVo.
+        r"""Sets the page_no of this ResultValueCustomReportListVo.
 
         :param page_no: The page_no of this ResultValueCustomReportListVo.
         :type page_no: int
@@ -176,7 +176,7 @@ class ResultValueCustomReportListVo:
 
     @property
     def has_more(self):
-        """Gets the has_more of this ResultValueCustomReportListVo.
+        r"""Gets the has_more of this ResultValueCustomReportListVo.
 
         :return: The has_more of this ResultValueCustomReportListVo.
         :rtype: bool
@@ -185,7 +185,7 @@ class ResultValueCustomReportListVo:
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this ResultValueCustomReportListVo.
+        r"""Sets the has_more of this ResultValueCustomReportListVo.
 
         :param has_more: The has_more of this ResultValueCustomReportListVo.
         :type has_more: bool

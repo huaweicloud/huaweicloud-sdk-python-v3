@@ -28,7 +28,7 @@ class ListScheduledEventsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, page_info=None):
-        """ListScheduledEventsResponse
+        r"""ListScheduledEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScheduledEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ListScheduledEventsResponse.
+        r"""Gets the events of this ListScheduledEventsResponse.
 
         计划事件列表
 
@@ -62,7 +62,7 @@ class ListScheduledEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ListScheduledEventsResponse.
+        r"""Sets the events of this ListScheduledEventsResponse.
 
         计划事件列表
 
@@ -73,7 +73,7 @@ class ListScheduledEventsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListScheduledEventsResponse.
+        r"""Gets the page_info of this ListScheduledEventsResponse.
 
         :return: The page_info of this ListScheduledEventsResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ListEventsResponsePageInfo`
@@ -82,7 +82,7 @@ class ListScheduledEventsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListScheduledEventsResponse.
+        r"""Sets the page_info of this ListScheduledEventsResponse.
 
         :param page_info: The page_info of this ListScheduledEventsResponse.
         :type page_info: :class:`huaweicloudsdkecs.v2.ListEventsResponsePageInfo`

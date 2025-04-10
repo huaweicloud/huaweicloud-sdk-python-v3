@@ -29,7 +29,7 @@ class ShowDocWatermarkRequestBody:
     }
 
     def __init__(self, doc_type=None, file_password=None, file=None):
-        """ShowDocWatermarkRequestBody
+        r"""ShowDocWatermarkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDocWatermarkRequestBody:
 
     @property
     def doc_type(self):
-        """Gets the doc_type of this ShowDocWatermarkRequestBody.
+        r"""Gets the doc_type of this ShowDocWatermarkRequestBody.
 
         待提取水印的文档类型
 
@@ -66,7 +66,7 @@ class ShowDocWatermarkRequestBody:
 
     @doc_type.setter
     def doc_type(self, doc_type):
-        """Sets the doc_type of this ShowDocWatermarkRequestBody.
+        r"""Sets the doc_type of this ShowDocWatermarkRequestBody.
 
         待提取水印的文档类型
 
@@ -77,7 +77,7 @@ class ShowDocWatermarkRequestBody:
 
     @property
     def file_password(self):
-        """Gets the file_password of this ShowDocWatermarkRequestBody.
+        r"""Gets the file_password of this ShowDocWatermarkRequestBody.
 
         解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -88,7 +88,7 @@ class ShowDocWatermarkRequestBody:
 
     @file_password.setter
     def file_password(self, file_password):
-        """Sets the file_password of this ShowDocWatermarkRequestBody.
+        r"""Sets the file_password of this ShowDocWatermarkRequestBody.
 
         解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -99,7 +99,7 @@ class ShowDocWatermarkRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ShowDocWatermarkRequestBody.
+        r"""Gets the file of this ShowDocWatermarkRequestBody.
 
         上传要提取水印的文档
 
@@ -110,7 +110,7 @@ class ShowDocWatermarkRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ShowDocWatermarkRequestBody.
+        r"""Sets the file of this ShowDocWatermarkRequestBody.
 
         上传要提取水印的文档
 

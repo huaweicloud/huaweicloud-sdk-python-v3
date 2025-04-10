@@ -24,7 +24,7 @@ class RegisterServerMonitorResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RegisterServerMonitorResponse
+        r"""RegisterServerMonitorResponse
 
         The model defined in huaweicloud sdk
 

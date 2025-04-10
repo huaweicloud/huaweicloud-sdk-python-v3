@@ -27,7 +27,7 @@ class ModifyPortRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ModifyPortRequest
+        r"""ModifyPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyPortRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyPortRequest.
+        r"""Gets the instance_id of this ModifyPortRequest.
 
         实例Id，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -60,7 +60,7 @@ class ModifyPortRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyPortRequest.
+        r"""Sets the instance_id of this ModifyPortRequest.
 
         实例Id，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -71,7 +71,7 @@ class ModifyPortRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyPortRequest.
+        r"""Gets the body of this ModifyPortRequest.
 
         :return: The body of this ModifyPortRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPortRequestBody`
@@ -80,7 +80,7 @@ class ModifyPortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyPortRequest.
+        r"""Sets the body of this ModifyPortRequest.
 
         :param body: The body of this ModifyPortRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPortRequestBody`

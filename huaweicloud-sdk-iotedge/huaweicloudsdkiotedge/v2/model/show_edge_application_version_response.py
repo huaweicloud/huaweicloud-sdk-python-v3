@@ -70,7 +70,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, name=None, deploy_type=None, deploy_multi_instance=None, version=None, sdk_version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None, supplier=None, tpl_id=None):
-        """ShowEdgeApplicationVersionResponse
+        r"""ShowEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the edge_app_id of this ShowEdgeApplicationVersionResponse.
 
         应用ID
 
@@ -209,7 +209,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the edge_app_id of this ShowEdgeApplicationVersionResponse.
 
         应用ID
 
@@ -220,7 +220,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the name of this ShowEdgeApplicationVersionResponse.
 
         应用名称
 
@@ -231,7 +231,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the name of this ShowEdgeApplicationVersionResponse.
 
         应用名称
 
@@ -242,7 +242,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the deploy_type of this ShowEdgeApplicationVersionResponse.
 
         部署类型docker|process
 
@@ -253,7 +253,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the deploy_type of this ShowEdgeApplicationVersionResponse.
 
         部署类型docker|process
 
@@ -264,7 +264,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def deploy_multi_instance(self):
-        """Gets the deploy_multi_instance of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the deploy_multi_instance of this ShowEdgeApplicationVersionResponse.
 
         是否允许部署多实例
 
@@ -275,7 +275,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @deploy_multi_instance.setter
     def deploy_multi_instance(self, deploy_multi_instance):
-        """Sets the deploy_multi_instance of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the deploy_multi_instance of this ShowEdgeApplicationVersionResponse.
 
         是否允许部署多实例
 
@@ -286,7 +286,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the version of this ShowEdgeApplicationVersionResponse.
 
         应用版本
 
@@ -297,7 +297,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the version of this ShowEdgeApplicationVersionResponse.
 
         应用版本
 
@@ -308,7 +308,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def sdk_version(self):
-        """Gets the sdk_version of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the sdk_version of this ShowEdgeApplicationVersionResponse.
 
         应用集成的边缘SDK版本
 
@@ -319,7 +319,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @sdk_version.setter
     def sdk_version(self, sdk_version):
-        """Sets the sdk_version of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the sdk_version of this ShowEdgeApplicationVersionResponse.
 
         应用集成的边缘SDK版本
 
@@ -330,7 +330,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the description of this ShowEdgeApplicationVersionResponse.
 
         应用描述
 
@@ -341,7 +341,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the description of this ShowEdgeApplicationVersionResponse.
 
         应用描述
 
@@ -352,7 +352,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the create_time of this ShowEdgeApplicationVersionResponse.
 
         创建时间
 
@@ -363,7 +363,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the create_time of this ShowEdgeApplicationVersionResponse.
 
         创建时间
 
@@ -374,7 +374,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the update_time of this ShowEdgeApplicationVersionResponse.
 
         最后一次修改时间
 
@@ -385,7 +385,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the update_time of this ShowEdgeApplicationVersionResponse.
 
         最后一次修改时间
 
@@ -396,7 +396,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the state of this ShowEdgeApplicationVersionResponse.
 
         应用版本状态
 
@@ -407,7 +407,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the state of this ShowEdgeApplicationVersionResponse.
 
         应用版本状态
 
@@ -418,7 +418,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the liveness_probe of this ShowEdgeApplicationVersionResponse.
 
         :return: The liveness_probe of this ShowEdgeApplicationVersionResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -427,7 +427,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the liveness_probe of this ShowEdgeApplicationVersionResponse.
 
         :param liveness_probe: The liveness_probe of this ShowEdgeApplicationVersionResponse.
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -436,7 +436,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the readiness_probe of this ShowEdgeApplicationVersionResponse.
 
         :return: The readiness_probe of this ShowEdgeApplicationVersionResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -445,7 +445,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the readiness_probe of this ShowEdgeApplicationVersionResponse.
 
         :param readiness_probe: The readiness_probe of this ShowEdgeApplicationVersionResponse.
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -454,7 +454,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def arch(self):
-        """Gets the arch of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the arch of this ShowEdgeApplicationVersionResponse.
 
         架构
 
@@ -465,7 +465,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the arch of this ShowEdgeApplicationVersionResponse.
 
         架构
 
@@ -476,7 +476,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def command(self):
-        """Gets the command of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the command of this ShowEdgeApplicationVersionResponse.
 
         启动命令
 
@@ -487,7 +487,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the command of this ShowEdgeApplicationVersionResponse.
 
         启动命令
 
@@ -498,7 +498,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def args(self):
-        """Gets the args of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the args of this ShowEdgeApplicationVersionResponse.
 
         启动参数
 
@@ -509,7 +509,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @args.setter
     def args(self, args):
-        """Sets the args of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the args of this ShowEdgeApplicationVersionResponse.
 
         启动参数
 
@@ -520,7 +520,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the container_settings of this ShowEdgeApplicationVersionResponse.
 
         :return: The container_settings of this ShowEdgeApplicationVersionResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -529,7 +529,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the container_settings of this ShowEdgeApplicationVersionResponse.
 
         :param container_settings: The container_settings of this ShowEdgeApplicationVersionResponse.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -538,7 +538,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def outputs(self):
-        """Gets the outputs of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the outputs of this ShowEdgeApplicationVersionResponse.
 
         应用输出路由端点
 
@@ -549,7 +549,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the outputs of this ShowEdgeApplicationVersionResponse.
 
         应用输出路由端点
 
@@ -560,7 +560,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def inputs(self):
-        """Gets the inputs of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the inputs of this ShowEdgeApplicationVersionResponse.
 
         应用输入路由
 
@@ -571,7 +571,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the inputs of this ShowEdgeApplicationVersionResponse.
 
         应用输入路由
 
@@ -582,7 +582,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def services(self):
-        """Gets the services of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the services of this ShowEdgeApplicationVersionResponse.
 
         应用实现的服务列表
 
@@ -593,7 +593,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @services.setter
     def services(self, services):
-        """Sets the services of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the services of this ShowEdgeApplicationVersionResponse.
 
         应用实现的服务列表
 
@@ -604,7 +604,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the publish_time of this ShowEdgeApplicationVersionResponse.
 
         发布时间
 
@@ -615,7 +615,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the publish_time of this ShowEdgeApplicationVersionResponse.
 
         发布时间
 
@@ -626,7 +626,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def off_shelf_time(self):
-        """Gets the off_shelf_time of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the off_shelf_time of this ShowEdgeApplicationVersionResponse.
 
         下线时间
 
@@ -637,7 +637,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @off_shelf_time.setter
     def off_shelf_time(self, off_shelf_time):
-        """Sets the off_shelf_time of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the off_shelf_time of this ShowEdgeApplicationVersionResponse.
 
         下线时间
 
@@ -648,7 +648,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def supplier(self):
-        """Gets the supplier of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the supplier of this ShowEdgeApplicationVersionResponse.
 
         驱动厂商
 
@@ -659,7 +659,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @supplier.setter
     def supplier(self, supplier):
-        """Sets the supplier of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the supplier of this ShowEdgeApplicationVersionResponse.
 
         驱动厂商
 
@@ -670,7 +670,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ShowEdgeApplicationVersionResponse.
+        r"""Gets the tpl_id of this ShowEdgeApplicationVersionResponse.
 
         模板id
 
@@ -681,7 +681,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ShowEdgeApplicationVersionResponse.
+        r"""Sets the tpl_id of this ShowEdgeApplicationVersionResponse.
 
         模板id
 

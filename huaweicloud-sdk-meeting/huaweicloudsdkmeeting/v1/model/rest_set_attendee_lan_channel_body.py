@@ -31,7 +31,7 @@ class RestSetAttendeeLanChannelBody:
     }
 
     def __init__(self, participant_i_ds=None, listen_lan_channel=None, speak_lan_channel=None, include_original_voice=None):
-        """RestSetAttendeeLanChannelBody
+        r"""RestSetAttendeeLanChannelBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RestSetAttendeeLanChannelBody:
 
     @property
     def participant_i_ds(self):
-        """Gets the participant_i_ds of this RestSetAttendeeLanChannelBody.
+        r"""Gets the participant_i_ds of this RestSetAttendeeLanChannelBody.
 
         会场标识列表。
 
@@ -73,7 +73,7 @@ class RestSetAttendeeLanChannelBody:
 
     @participant_i_ds.setter
     def participant_i_ds(self, participant_i_ds):
-        """Sets the participant_i_ds of this RestSetAttendeeLanChannelBody.
+        r"""Sets the participant_i_ds of this RestSetAttendeeLanChannelBody.
 
         会场标识列表。
 
@@ -84,7 +84,7 @@ class RestSetAttendeeLanChannelBody:
 
     @property
     def listen_lan_channel(self):
-        """Gets the listen_lan_channel of this RestSetAttendeeLanChannelBody.
+        r"""Gets the listen_lan_channel of this RestSetAttendeeLanChannelBody.
 
         与会者收听的语言频道，普通与会者听与说一致。
 
@@ -95,7 +95,7 @@ class RestSetAttendeeLanChannelBody:
 
     @listen_lan_channel.setter
     def listen_lan_channel(self, listen_lan_channel):
-        """Sets the listen_lan_channel of this RestSetAttendeeLanChannelBody.
+        r"""Sets the listen_lan_channel of this RestSetAttendeeLanChannelBody.
 
         与会者收听的语言频道，普通与会者听与说一致。
 
@@ -106,7 +106,7 @@ class RestSetAttendeeLanChannelBody:
 
     @property
     def speak_lan_channel(self):
-        """Gets the speak_lan_channel of this RestSetAttendeeLanChannelBody.
+        r"""Gets the speak_lan_channel of this RestSetAttendeeLanChannelBody.
 
         与会者发言的语言频道，普通与会者听与说一致。
 
@@ -117,7 +117,7 @@ class RestSetAttendeeLanChannelBody:
 
     @speak_lan_channel.setter
     def speak_lan_channel(self, speak_lan_channel):
-        """Sets the speak_lan_channel of this RestSetAttendeeLanChannelBody.
+        r"""Sets the speak_lan_channel of this RestSetAttendeeLanChannelBody.
 
         与会者发言的语言频道，普通与会者听与说一致。
 
@@ -128,7 +128,7 @@ class RestSetAttendeeLanChannelBody:
 
     @property
     def include_original_voice(self):
-        """Gets the include_original_voice of this RestSetAttendeeLanChannelBody.
+        r"""Gets the include_original_voice of this RestSetAttendeeLanChannelBody.
 
         是否包含原声，0：不包含，1：包含。
 
@@ -139,7 +139,7 @@ class RestSetAttendeeLanChannelBody:
 
     @include_original_voice.setter
     def include_original_voice(self, include_original_voice):
-        """Sets the include_original_voice of this RestSetAttendeeLanChannelBody.
+        r"""Sets the include_original_voice of this RestSetAttendeeLanChannelBody.
 
         是否包含原声，0：不包含，1：包含。
 

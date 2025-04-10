@@ -28,7 +28,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
     }
 
     def __init__(self, severity=None, status=None):
-        """ShowTaskDefectsStatisticResponse
+        r"""ShowTaskDefectsStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this ShowTaskDefectsStatisticResponse.
+        r"""Gets the severity of this ShowTaskDefectsStatisticResponse.
 
         :return: The severity of this ShowTaskDefectsStatisticResponse.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.StatisticSeverityV2`
@@ -60,7 +60,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ShowTaskDefectsStatisticResponse.
+        r"""Sets the severity of this ShowTaskDefectsStatisticResponse.
 
         :param severity: The severity of this ShowTaskDefectsStatisticResponse.
         :type severity: :class:`huaweicloudsdkcodeartscheck.v2.StatisticSeverityV2`
@@ -69,7 +69,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTaskDefectsStatisticResponse.
+        r"""Gets the status of this ShowTaskDefectsStatisticResponse.
 
         :return: The status of this ShowTaskDefectsStatisticResponse.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.StatisticStatusV2`
@@ -78,7 +78,7 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTaskDefectsStatisticResponse.
+        r"""Sets the status of this ShowTaskDefectsStatisticResponse.
 
         :param status: The status of this ShowTaskDefectsStatisticResponse.
         :type status: :class:`huaweicloudsdkcodeartscheck.v2.StatisticStatusV2`

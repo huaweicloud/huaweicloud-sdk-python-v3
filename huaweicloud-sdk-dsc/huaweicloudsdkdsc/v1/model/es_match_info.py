@@ -31,7 +31,7 @@ class EsMatchInfo:
     }
 
     def __init__(self, field_name=None, rule_name=None, rule_id=None, rule_risk_level=None):
-        """EsMatchInfo
+        r"""EsMatchInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EsMatchInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this EsMatchInfo.
+        r"""Gets the field_name of this EsMatchInfo.
 
         数据字段名
 
@@ -75,7 +75,7 @@ class EsMatchInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this EsMatchInfo.
+        r"""Sets the field_name of this EsMatchInfo.
 
         数据字段名
 
@@ -86,7 +86,7 @@ class EsMatchInfo:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this EsMatchInfo.
+        r"""Gets the rule_name of this EsMatchInfo.
 
         规则名
 
@@ -97,7 +97,7 @@ class EsMatchInfo:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this EsMatchInfo.
+        r"""Sets the rule_name of this EsMatchInfo.
 
         规则名
 
@@ -108,7 +108,7 @@ class EsMatchInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this EsMatchInfo.
+        r"""Gets the rule_id of this EsMatchInfo.
 
         规则ID
 
@@ -119,7 +119,7 @@ class EsMatchInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this EsMatchInfo.
+        r"""Sets the rule_id of this EsMatchInfo.
 
         规则ID
 
@@ -130,7 +130,7 @@ class EsMatchInfo:
 
     @property
     def rule_risk_level(self):
-        """Gets the rule_risk_level of this EsMatchInfo.
+        r"""Gets the rule_risk_level of this EsMatchInfo.
 
         规则风险等级
 
@@ -141,7 +141,7 @@ class EsMatchInfo:
 
     @rule_risk_level.setter
     def rule_risk_level(self, rule_risk_level):
-        """Sets the rule_risk_level of this EsMatchInfo.
+        r"""Sets the rule_risk_level of this EsMatchInfo.
 
         规则风险等级
 

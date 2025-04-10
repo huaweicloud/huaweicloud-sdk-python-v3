@@ -29,7 +29,7 @@ class InviteAccountReqBody:
     }
 
     def __init__(self, target=None, notes=None, tags=None):
-        """InviteAccountReqBody
+        r"""InviteAccountReqBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class InviteAccountReqBody:
 
     @property
     def target(self):
-        """Gets the target of this InviteAccountReqBody.
+        r"""Gets the target of this InviteAccountReqBody.
 
         :return: The target of this InviteAccountReqBody.
         :rtype: :class:`huaweicloudsdkorganizations.v1.TargetDto`
@@ -64,7 +64,7 @@ class InviteAccountReqBody:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this InviteAccountReqBody.
+        r"""Sets the target of this InviteAccountReqBody.
 
         :param target: The target of this InviteAccountReqBody.
         :type target: :class:`huaweicloudsdkorganizations.v1.TargetDto`
@@ -73,7 +73,7 @@ class InviteAccountReqBody:
 
     @property
     def notes(self):
-        """Gets the notes of this InviteAccountReqBody.
+        r"""Gets the notes of this InviteAccountReqBody.
 
         给收件账号所有者的邮件中的附加信息。
 
@@ -84,7 +84,7 @@ class InviteAccountReqBody:
 
     @notes.setter
     def notes(self, notes):
-        """Sets the notes of this InviteAccountReqBody.
+        r"""Sets the notes of this InviteAccountReqBody.
 
         给收件账号所有者的邮件中的附加信息。
 
@@ -95,7 +95,7 @@ class InviteAccountReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this InviteAccountReqBody.
+        r"""Gets the tags of this InviteAccountReqBody.
 
         要绑定到新创建的账号的标签列表。
 
@@ -106,7 +106,7 @@ class InviteAccountReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this InviteAccountReqBody.
+        r"""Sets the tags of this InviteAccountReqBody.
 
         要绑定到新创建的账号的标签列表。
 

@@ -26,7 +26,7 @@ class ShowKeyStoreResponse(SdkResponse):
     }
 
     def __init__(self, keystore=None):
-        """ShowKeyStoreResponse
+        r"""ShowKeyStoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowKeyStoreResponse(SdkResponse):
 
     @property
     def keystore(self):
-        """Gets the keystore of this ShowKeyStoreResponse.
+        r"""Gets the keystore of this ShowKeyStoreResponse.
 
         :return: The keystore of this ShowKeyStoreResponse.
         :rtype: :class:`huaweicloudsdkkms.v2.KeystoreDetails`
@@ -53,7 +53,7 @@ class ShowKeyStoreResponse(SdkResponse):
 
     @keystore.setter
     def keystore(self, keystore):
-        """Sets the keystore of this ShowKeyStoreResponse.
+        r"""Sets the keystore of this ShowKeyStoreResponse.
 
         :param keystore: The keystore of this ShowKeyStoreResponse.
         :type keystore: :class:`huaweicloudsdkkms.v2.KeystoreDetails`

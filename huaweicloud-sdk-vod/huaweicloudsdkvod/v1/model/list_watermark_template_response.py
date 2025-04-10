@@ -28,7 +28,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, total=None):
-        """ListWatermarkTemplateResponse
+        r"""ListWatermarkTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListWatermarkTemplateResponse.
+        r"""Gets the templates of this ListWatermarkTemplateResponse.
 
         水印模板信息。
 
@@ -62,7 +62,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListWatermarkTemplateResponse.
+        r"""Sets the templates of this ListWatermarkTemplateResponse.
 
         水印模板信息。
 
@@ -73,7 +73,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWatermarkTemplateResponse.
+        r"""Gets the total of this ListWatermarkTemplateResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWatermarkTemplateResponse.
+        r"""Sets the total of this ListWatermarkTemplateResponse.
 
         总数。
 

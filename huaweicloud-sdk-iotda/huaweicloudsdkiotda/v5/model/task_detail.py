@@ -31,7 +31,7 @@ class TaskDetail:
     }
 
     def __init__(self, target=None, status=None, output=None, error=None):
-        """TaskDetail
+        r"""TaskDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskDetail:
 
     @property
     def target(self):
-        """Gets the target of this TaskDetail.
+        r"""Gets the target of this TaskDetail.
 
         执行批量任务的目标。
 
@@ -75,7 +75,7 @@ class TaskDetail:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this TaskDetail.
+        r"""Sets the target of this TaskDetail.
 
         执行批量任务的目标。
 
@@ -86,7 +86,7 @@ class TaskDetail:
 
     @property
     def status(self):
-        """Gets the status of this TaskDetail.
+        r"""Gets the status of this TaskDetail.
 
         子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。
 
@@ -97,7 +97,7 @@ class TaskDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskDetail.
+        r"""Sets the status of this TaskDetail.
 
         子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。
 
@@ -108,7 +108,7 @@ class TaskDetail:
 
     @property
     def output(self):
-        """Gets the output of this TaskDetail.
+        r"""Gets the output of this TaskDetail.
 
         子任务执行的输出信息。
 
@@ -119,7 +119,7 @@ class TaskDetail:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this TaskDetail.
+        r"""Sets the output of this TaskDetail.
 
         子任务执行的输出信息。
 
@@ -130,7 +130,7 @@ class TaskDetail:
 
     @property
     def error(self):
-        """Gets the error of this TaskDetail.
+        r"""Gets the error of this TaskDetail.
 
         :return: The error of this TaskDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.ErrorInfo`
@@ -139,7 +139,7 @@ class TaskDetail:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this TaskDetail.
+        r"""Sets the error of this TaskDetail.
 
         :param error: The error of this TaskDetail.
         :type error: :class:`huaweicloudsdkiotda.v5.ErrorInfo`

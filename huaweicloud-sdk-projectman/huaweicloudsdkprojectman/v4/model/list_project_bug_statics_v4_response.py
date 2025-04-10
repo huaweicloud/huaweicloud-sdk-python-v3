@@ -26,7 +26,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
     }
 
     def __init__(self, bug_statistics=None):
-        """ListProjectBugStaticsV4Response
+        r"""ListProjectBugStaticsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
 
     @property
     def bug_statistics(self):
-        """Gets the bug_statistics of this ListProjectBugStaticsV4Response.
+        r"""Gets the bug_statistics of this ListProjectBugStaticsV4Response.
 
         bug统计
 
@@ -55,7 +55,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
 
     @bug_statistics.setter
     def bug_statistics(self, bug_statistics):
-        """Sets the bug_statistics of this ListProjectBugStaticsV4Response.
+        r"""Sets the bug_statistics of this ListProjectBugStaticsV4Response.
 
         bug统计
 

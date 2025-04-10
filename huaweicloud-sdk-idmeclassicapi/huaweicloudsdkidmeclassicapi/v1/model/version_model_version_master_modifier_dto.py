@@ -29,7 +29,7 @@ class VersionModelVersionMasterModifierDTO:
     }
 
     def __init__(self, master_id=None, modifier=None, version=None):
-        """VersionModelVersionMasterModifierDTO
+        r"""VersionModelVersionMasterModifierDTO
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class VersionModelVersionMasterModifierDTO:
 
     @property
     def master_id(self):
-        """Gets the master_id of this VersionModelVersionMasterModifierDTO.
+        r"""Gets the master_id of this VersionModelVersionMasterModifierDTO.
 
         **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -67,7 +67,7 @@ class VersionModelVersionMasterModifierDTO:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this VersionModelVersionMasterModifierDTO.
+        r"""Sets the master_id of this VersionModelVersionMasterModifierDTO.
 
         **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -78,7 +78,7 @@ class VersionModelVersionMasterModifierDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelVersionMasterModifierDTO.
+        r"""Gets the modifier of this VersionModelVersionMasterModifierDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -89,7 +89,7 @@ class VersionModelVersionMasterModifierDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelVersionMasterModifierDTO.
+        r"""Sets the modifier of this VersionModelVersionMasterModifierDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -100,7 +100,7 @@ class VersionModelVersionMasterModifierDTO:
 
     @property
     def version(self):
-        """Gets the version of this VersionModelVersionMasterModifierDTO.
+        r"""Gets the version of this VersionModelVersionMasterModifierDTO.
 
         **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -111,7 +111,7 @@ class VersionModelVersionMasterModifierDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionModelVersionMasterModifierDTO.
+        r"""Sets the version of this VersionModelVersionMasterModifierDTO.
 
         **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

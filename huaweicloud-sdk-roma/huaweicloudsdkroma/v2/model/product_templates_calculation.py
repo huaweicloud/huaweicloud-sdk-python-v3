@@ -25,7 +25,7 @@ class ProductTemplatesCalculation:
     }
 
     def __init__(self, product_templates_numbers=None):
-        """ProductTemplatesCalculation
+        r"""ProductTemplatesCalculation
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProductTemplatesCalculation:
 
     @property
     def product_templates_numbers(self):
-        """Gets the product_templates_numbers of this ProductTemplatesCalculation.
+        r"""Gets the product_templates_numbers of this ProductTemplatesCalculation.
 
         产品模板数量
 
@@ -54,7 +54,7 @@ class ProductTemplatesCalculation:
 
     @product_templates_numbers.setter
     def product_templates_numbers(self, product_templates_numbers):
-        """Sets the product_templates_numbers of this ProductTemplatesCalculation.
+        r"""Sets the product_templates_numbers of this ProductTemplatesCalculation.
 
         产品模板数量
 

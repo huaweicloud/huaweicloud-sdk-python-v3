@@ -27,7 +27,7 @@ class QuerySupportNodeTypeBean:
     }
 
     def __init__(self, node_type=None, is_sellout=None):
-        """QuerySupportNodeTypeBean
+        r"""QuerySupportNodeTypeBean
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QuerySupportNodeTypeBean:
 
     @property
     def node_type(self):
-        """Gets the node_type of this QuerySupportNodeTypeBean.
+        r"""Gets the node_type of this QuerySupportNodeTypeBean.
 
         规格类型
 
@@ -61,7 +61,7 @@ class QuerySupportNodeTypeBean:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this QuerySupportNodeTypeBean.
+        r"""Sets the node_type of this QuerySupportNodeTypeBean.
 
         规格类型
 
@@ -72,7 +72,7 @@ class QuerySupportNodeTypeBean:
 
     @property
     def is_sellout(self):
-        """Gets the is_sellout of this QuerySupportNodeTypeBean.
+        r"""Gets the is_sellout of this QuerySupportNodeTypeBean.
 
         是否售罄
 
@@ -83,7 +83,7 @@ class QuerySupportNodeTypeBean:
 
     @is_sellout.setter
     def is_sellout(self, is_sellout):
-        """Sets the is_sellout of this QuerySupportNodeTypeBean.
+        r"""Sets the is_sellout of this QuerySupportNodeTypeBean.
 
         是否售罄
 

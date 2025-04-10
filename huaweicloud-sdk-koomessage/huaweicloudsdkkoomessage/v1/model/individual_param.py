@@ -27,7 +27,7 @@ class IndividualParam:
     }
 
     def __init__(self, mobiles=None, dync_params=None):
-        """IndividualParam
+        r"""IndividualParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IndividualParam:
 
     @property
     def mobiles(self):
-        """Gets the mobiles of this IndividualParam.
+        r"""Gets the mobiles of this IndividualParam.
 
         个性化动态参数号码列表，最多支持5000个号码。  > 长度指的是单个号码的长度。 
 
@@ -59,7 +59,7 @@ class IndividualParam:
 
     @mobiles.setter
     def mobiles(self, mobiles):
-        """Sets the mobiles of this IndividualParam.
+        r"""Sets the mobiles of this IndividualParam.
 
         个性化动态参数号码列表，最多支持5000个号码。  > 长度指的是单个号码的长度。 
 
@@ -70,7 +70,7 @@ class IndividualParam:
 
     @property
     def dync_params(self):
-        """Gets the dync_params of this IndividualParam.
+        r"""Gets the dync_params of this IndividualParam.
 
         个性化动态参数数组。 参数顺序按照模板创建时参数占位符的顺序传入，例如创建模板时设置动参有#p_1#、#p_2#、#p_3#，则传入的参数数组顺序第一个元素为#p_1#，第二个元素是#p_2#，第三个元素为#p_3#。 
 
@@ -81,7 +81,7 @@ class IndividualParam:
 
     @dync_params.setter
     def dync_params(self, dync_params):
-        """Sets the dync_params of this IndividualParam.
+        r"""Sets the dync_params of this IndividualParam.
 
         个性化动态参数数组。 参数顺序按照模板创建时参数占位符的顺序传入，例如创建模板时设置动参有#p_1#、#p_2#、#p_3#，则传入的参数数组顺序第一个元素为#p_1#，第二个元素是#p_2#，第三个元素为#p_3#。 
 

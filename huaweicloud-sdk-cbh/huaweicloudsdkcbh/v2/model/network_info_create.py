@@ -33,7 +33,7 @@ class NetworkInfoCreate:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, public_ip=None, security_groups=None, private_ip=None):
-        """NetworkInfoCreate
+        r"""NetworkInfoCreate
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class NetworkInfoCreate:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this NetworkInfoCreate.
+        r"""Gets the vpc_id of this NetworkInfoCreate.
 
         待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。  VPC的ID可以从控制台或者参考《虚拟私有云接口参考》的“查询VPC”章节获取。  例如：03211ecf-xxxx-4306-xxxx-6e939bfxxxxx
 
@@ -78,7 +78,7 @@ class NetworkInfoCreate:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this NetworkInfoCreate.
+        r"""Sets the vpc_id of this NetworkInfoCreate.
 
         待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。  VPC的ID可以从控制台或者参考《虚拟私有云接口参考》的“查询VPC”章节获取。  例如：03211ecf-xxxx-4306-xxxx-6e939bfxxxxx
 
@@ -89,7 +89,7 @@ class NetworkInfoCreate:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NetworkInfoCreate.
+        r"""Gets the subnet_id of this NetworkInfoCreate.
 
         子网ID，字母数字下划线连接符组成。
 
@@ -100,7 +100,7 @@ class NetworkInfoCreate:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NetworkInfoCreate.
+        r"""Sets the subnet_id of this NetworkInfoCreate.
 
         子网ID，字母数字下划线连接符组成。
 
@@ -111,7 +111,7 @@ class NetworkInfoCreate:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this NetworkInfoCreate.
+        r"""Gets the public_ip of this NetworkInfoCreate.
 
         :return: The public_ip of this NetworkInfoCreate.
         :rtype: :class:`huaweicloudsdkcbh.v2.PublicIp`
@@ -120,7 +120,7 @@ class NetworkInfoCreate:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this NetworkInfoCreate.
+        r"""Sets the public_ip of this NetworkInfoCreate.
 
         :param public_ip: The public_ip of this NetworkInfoCreate.
         :type public_ip: :class:`huaweicloudsdkcbh.v2.PublicIp`
@@ -129,7 +129,7 @@ class NetworkInfoCreate:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NetworkInfoCreate.
+        r"""Gets the security_groups of this NetworkInfoCreate.
 
         安全组信息。
 
@@ -140,7 +140,7 @@ class NetworkInfoCreate:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NetworkInfoCreate.
+        r"""Sets the security_groups of this NetworkInfoCreate.
 
         安全组信息。
 
@@ -151,7 +151,7 @@ class NetworkInfoCreate:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this NetworkInfoCreate.
+        r"""Gets the private_ip of this NetworkInfoCreate.
 
         :return: The private_ip of this NetworkInfoCreate.
         :rtype: :class:`huaweicloudsdkcbh.v2.PrivateIp`
@@ -160,7 +160,7 @@ class NetworkInfoCreate:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this NetworkInfoCreate.
+        r"""Sets the private_ip of this NetworkInfoCreate.
 
         :param private_ip: The private_ip of this NetworkInfoCreate.
         :type private_ip: :class:`huaweicloudsdkcbh.v2.PrivateIp`

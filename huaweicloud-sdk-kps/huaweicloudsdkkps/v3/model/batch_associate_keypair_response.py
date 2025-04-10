@@ -26,7 +26,7 @@ class BatchAssociateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None):
-        """BatchAssociateKeypairResponse
+        r"""BatchAssociateKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchAssociateKeypairResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this BatchAssociateKeypairResponse.
+        r"""Gets the tasks of this BatchAssociateKeypairResponse.
 
         批量绑定密钥对任务。
 
@@ -55,7 +55,7 @@ class BatchAssociateKeypairResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this BatchAssociateKeypairResponse.
+        r"""Sets the tasks of this BatchAssociateKeypairResponse.
 
         批量绑定密钥对任务。
 

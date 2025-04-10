@@ -61,7 +61,7 @@ class GlobalDcGatewayEntry:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, reason=None, enterprise_project_id=None, global_center_network_id=None, bgp_asn=None, region_id=None, location_name=None, locales=None, current_peer_link_count=None, available_peer_link_count=None, tags=None, admin_state_up=None, status=None, created_time=None, updated_time=None, address_family=None):
-        """GlobalDcGatewayEntry
+        r"""GlobalDcGatewayEntry
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def id(self):
-        """Gets the id of this GlobalDcGatewayEntry.
+        r"""Gets the id of this GlobalDcGatewayEntry.
 
         专线全域接入网关（global-dc-gateway）ID
 
@@ -180,7 +180,7 @@ class GlobalDcGatewayEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalDcGatewayEntry.
+        r"""Sets the id of this GlobalDcGatewayEntry.
 
         专线全域接入网关（global-dc-gateway）ID
 
@@ -191,7 +191,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this GlobalDcGatewayEntry.
+        r"""Gets the tenant_id of this GlobalDcGatewayEntry.
 
         项目ID。
 
@@ -202,7 +202,7 @@ class GlobalDcGatewayEntry:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this GlobalDcGatewayEntry.
+        r"""Sets the tenant_id of this GlobalDcGatewayEntry.
 
         项目ID。
 
@@ -213,7 +213,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def name(self):
-        """Gets the name of this GlobalDcGatewayEntry.
+        r"""Gets the name of this GlobalDcGatewayEntry.
 
         global-dc-gateway名字。
 
@@ -224,7 +224,7 @@ class GlobalDcGatewayEntry:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlobalDcGatewayEntry.
+        r"""Sets the name of this GlobalDcGatewayEntry.
 
         global-dc-gateway名字。
 
@@ -235,7 +235,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def description(self):
-        """Gets the description of this GlobalDcGatewayEntry.
+        r"""Gets the description of this GlobalDcGatewayEntry.
 
         描述信息
 
@@ -246,7 +246,7 @@ class GlobalDcGatewayEntry:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlobalDcGatewayEntry.
+        r"""Sets the description of this GlobalDcGatewayEntry.
 
         描述信息
 
@@ -257,7 +257,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def reason(self):
-        """Gets the reason of this GlobalDcGatewayEntry.
+        r"""Gets the reason of this GlobalDcGatewayEntry.
 
         失败原因
 
@@ -268,7 +268,7 @@ class GlobalDcGatewayEntry:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this GlobalDcGatewayEntry.
+        r"""Sets the reason of this GlobalDcGatewayEntry.
 
         失败原因
 
@@ -279,7 +279,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this GlobalDcGatewayEntry.
+        r"""Gets the enterprise_project_id of this GlobalDcGatewayEntry.
 
         global-dc-gateway所属的企业项目ID。
 
@@ -290,7 +290,7 @@ class GlobalDcGatewayEntry:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this GlobalDcGatewayEntry.
+        r"""Sets the enterprise_project_id of this GlobalDcGatewayEntry.
 
         global-dc-gateway所属的企业项目ID。
 
@@ -301,7 +301,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def global_center_network_id(self):
-        """Gets the global_center_network_id of this GlobalDcGatewayEntry.
+        r"""Gets the global_center_network_id of this GlobalDcGatewayEntry.
 
         DGW加载的全球中心网络实例的ID
 
@@ -312,7 +312,7 @@ class GlobalDcGatewayEntry:
 
     @global_center_network_id.setter
     def global_center_network_id(self, global_center_network_id):
-        """Sets the global_center_network_id of this GlobalDcGatewayEntry.
+        r"""Sets the global_center_network_id of this GlobalDcGatewayEntry.
 
         DGW加载的全球中心网络实例的ID
 
@@ -323,7 +323,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this GlobalDcGatewayEntry.
+        r"""Gets the bgp_asn of this GlobalDcGatewayEntry.
 
         DGW对应BGP的ASN编号
 
@@ -334,7 +334,7 @@ class GlobalDcGatewayEntry:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this GlobalDcGatewayEntry.
+        r"""Sets the bgp_asn of this GlobalDcGatewayEntry.
 
         DGW对应BGP的ASN编号
 
@@ -345,7 +345,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def region_id(self):
-        """Gets the region_id of this GlobalDcGatewayEntry.
+        r"""Gets the region_id of this GlobalDcGatewayEntry.
 
         DGW所属Region
 
@@ -356,7 +356,7 @@ class GlobalDcGatewayEntry:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this GlobalDcGatewayEntry.
+        r"""Sets the region_id of this GlobalDcGatewayEntry.
 
         DGW所属Region
 
@@ -367,7 +367,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def location_name(self):
-        """Gets the location_name of this GlobalDcGatewayEntry.
+        r"""Gets the location_name of this GlobalDcGatewayEntry.
 
         DGW创建网关设备归属的位置
 
@@ -378,7 +378,7 @@ class GlobalDcGatewayEntry:
 
     @location_name.setter
     def location_name(self, location_name):
-        """Sets the location_name of this GlobalDcGatewayEntry.
+        r"""Sets the location_name of this GlobalDcGatewayEntry.
 
         DGW创建网关设备归属的位置
 
@@ -389,7 +389,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def locales(self):
-        """Gets the locales of this GlobalDcGatewayEntry.
+        r"""Gets the locales of this GlobalDcGatewayEntry.
 
         :return: The locales of this GlobalDcGatewayEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.LocalesBody`
@@ -398,7 +398,7 @@ class GlobalDcGatewayEntry:
 
     @locales.setter
     def locales(self, locales):
-        """Sets the locales of this GlobalDcGatewayEntry.
+        r"""Sets the locales of this GlobalDcGatewayEntry.
 
         :param locales: The locales of this GlobalDcGatewayEntry.
         :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
@@ -407,7 +407,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def current_peer_link_count(self):
-        """Gets the current_peer_link_count of this GlobalDcGatewayEntry.
+        r"""Gets the current_peer_link_count of this GlobalDcGatewayEntry.
 
         全域接入网关(GDGW)上关联连接的数量，表示DGW挂载ER的数量
 
@@ -418,7 +418,7 @@ class GlobalDcGatewayEntry:
 
     @current_peer_link_count.setter
     def current_peer_link_count(self, current_peer_link_count):
-        """Sets the current_peer_link_count of this GlobalDcGatewayEntry.
+        r"""Sets the current_peer_link_count of this GlobalDcGatewayEntry.
 
         全域接入网关(GDGW)上关联连接的数量，表示DGW挂载ER的数量
 
@@ -429,7 +429,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def available_peer_link_count(self):
-        """Gets the available_peer_link_count of this GlobalDcGatewayEntry.
+        r"""Gets the available_peer_link_count of this GlobalDcGatewayEntry.
 
         该全域接入网关上GDGW允许创建关联连接（PeerLink）的数量
 
@@ -440,7 +440,7 @@ class GlobalDcGatewayEntry:
 
     @available_peer_link_count.setter
     def available_peer_link_count(self, available_peer_link_count):
-        """Sets the available_peer_link_count of this GlobalDcGatewayEntry.
+        r"""Sets the available_peer_link_count of this GlobalDcGatewayEntry.
 
         该全域接入网关上GDGW允许创建关联连接（PeerLink）的数量
 
@@ -451,7 +451,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def tags(self):
-        """Gets the tags of this GlobalDcGatewayEntry.
+        r"""Gets the tags of this GlobalDcGatewayEntry.
 
         global-dc-gateway关联TAG。
 
@@ -462,7 +462,7 @@ class GlobalDcGatewayEntry:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GlobalDcGatewayEntry.
+        r"""Sets the tags of this GlobalDcGatewayEntry.
 
         global-dc-gateway关联TAG。
 
@@ -473,7 +473,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this GlobalDcGatewayEntry.
+        r"""Gets the admin_state_up of this GlobalDcGatewayEntry.
 
         该GDGW的管理状态，true为激活状态、false为冻结状态
 
@@ -484,7 +484,7 @@ class GlobalDcGatewayEntry:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this GlobalDcGatewayEntry.
+        r"""Sets the admin_state_up of this GlobalDcGatewayEntry.
 
         该GDGW的管理状态，true为激活状态、false为冻结状态
 
@@ -495,7 +495,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def status(self):
-        """Gets the status of this GlobalDcGatewayEntry.
+        r"""Gets the status of this GlobalDcGatewayEntry.
 
         :return: The status of this GlobalDcGatewayEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayStatus`
@@ -504,7 +504,7 @@ class GlobalDcGatewayEntry:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlobalDcGatewayEntry.
+        r"""Sets the status of this GlobalDcGatewayEntry.
 
         :param status: The status of this GlobalDcGatewayEntry.
         :type status: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayStatus`
@@ -513,7 +513,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def created_time(self):
-        """Gets the created_time of this GlobalDcGatewayEntry.
+        r"""Gets the created_time of this GlobalDcGatewayEntry.
 
         创建时间。
 
@@ -524,7 +524,7 @@ class GlobalDcGatewayEntry:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this GlobalDcGatewayEntry.
+        r"""Sets the created_time of this GlobalDcGatewayEntry.
 
         创建时间。
 
@@ -535,7 +535,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this GlobalDcGatewayEntry.
+        r"""Gets the updated_time of this GlobalDcGatewayEntry.
 
         更新时间。
 
@@ -546,7 +546,7 @@ class GlobalDcGatewayEntry:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this GlobalDcGatewayEntry.
+        r"""Sets the updated_time of this GlobalDcGatewayEntry.
 
         更新时间。
 
@@ -557,7 +557,7 @@ class GlobalDcGatewayEntry:
 
     @property
     def address_family(self):
-        """Gets the address_family of this GlobalDcGatewayEntry.
+        r"""Gets the address_family of this GlobalDcGatewayEntry.
 
         网关的地址簇，IPv4或者ipv6和IPv4双栈 - ipv4 - dual
 
@@ -568,7 +568,7 @@ class GlobalDcGatewayEntry:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this GlobalDcGatewayEntry.
+        r"""Sets the address_family of this GlobalDcGatewayEntry.
 
         网关的地址簇，IPv4或者ipv6和IPv4双栈 - ipv4 - dual
 

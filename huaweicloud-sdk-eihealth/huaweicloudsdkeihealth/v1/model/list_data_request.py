@@ -39,7 +39,7 @@ class ListDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, limit=None, offset=None, path=None, search_key=None, sort_dir=None, sort_key=None, marker=None):
-        """ListDataRequest
+        r"""ListDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListDataRequest.
+        r"""Gets the eihealth_project_id of this ListDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -102,7 +102,7 @@ class ListDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListDataRequest.
+        r"""Sets the eihealth_project_id of this ListDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -113,7 +113,7 @@ class ListDataRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataRequest.
+        r"""Gets the limit of this ListDataRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -124,7 +124,7 @@ class ListDataRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataRequest.
+        r"""Sets the limit of this ListDataRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -135,7 +135,7 @@ class ListDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataRequest.
+        r"""Gets the offset of this ListDataRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -146,7 +146,7 @@ class ListDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataRequest.
+        r"""Sets the offset of this ListDataRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -157,7 +157,7 @@ class ListDataRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListDataRequest.
+        r"""Gets the path of this ListDataRequest.
 
         指定文件夹（项目名称:/路径）
 
@@ -168,7 +168,7 @@ class ListDataRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListDataRequest.
+        r"""Sets the path of this ListDataRequest.
 
         指定文件夹（项目名称:/路径）
 
@@ -179,7 +179,7 @@ class ListDataRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListDataRequest.
+        r"""Gets the search_key of this ListDataRequest.
 
         查询关键词
 
@@ -190,7 +190,7 @@ class ListDataRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListDataRequest.
+        r"""Sets the search_key of this ListDataRequest.
 
         查询关键词
 
@@ -201,7 +201,7 @@ class ListDataRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDataRequest.
+        r"""Gets the sort_dir of this ListDataRequest.
 
         降序或升序（分别对应desc和asc，默认为desc）
 
@@ -212,7 +212,7 @@ class ListDataRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDataRequest.
+        r"""Sets the sort_dir of this ListDataRequest.
 
         降序或升序（分别对应desc和asc，默认为desc）
 
@@ -223,7 +223,7 @@ class ListDataRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDataRequest.
+        r"""Gets the sort_key of this ListDataRequest.
 
         排序字段（支持type，create_time）
 
@@ -234,7 +234,7 @@ class ListDataRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDataRequest.
+        r"""Sets the sort_key of this ListDataRequest.
 
         排序字段（支持type，create_time）
 
@@ -245,7 +245,7 @@ class ListDataRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDataRequest.
+        r"""Gets the marker of this ListDataRequest.
 
         开始标签
 
@@ -256,7 +256,7 @@ class ListDataRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDataRequest.
+        r"""Sets the marker of this ListDataRequest.
 
         开始标签
 

@@ -29,7 +29,7 @@ class DeleteProductTopicRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, topic_id=None):
-        """DeleteProductTopicRequest
+        r"""DeleteProductTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteProductTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteProductTopicRequest.
+        r"""Gets the instance_id of this DeleteProductTopicRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteProductTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteProductTopicRequest.
+        r"""Sets the instance_id of this DeleteProductTopicRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteProductTopicRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DeleteProductTopicRequest.
+        r"""Gets the product_id of this DeleteProductTopicRequest.
 
         产品ID
 
@@ -87,7 +87,7 @@ class DeleteProductTopicRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DeleteProductTopicRequest.
+        r"""Sets the product_id of this DeleteProductTopicRequest.
 
         产品ID
 
@@ -98,7 +98,7 @@ class DeleteProductTopicRequest:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this DeleteProductTopicRequest.
+        r"""Gets the topic_id of this DeleteProductTopicRequest.
 
         产品主题ID
 
@@ -109,7 +109,7 @@ class DeleteProductTopicRequest:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this DeleteProductTopicRequest.
+        r"""Sets the topic_id of this DeleteProductTopicRequest.
 
         产品主题ID
 

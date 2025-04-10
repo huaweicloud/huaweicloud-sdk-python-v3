@@ -33,7 +33,7 @@ class UpdateLoadbalancerReq:
     }
 
     def __init__(self, name=None, description=None, admin_state_up=None, protection_status=None, protection_reason=None):
-        """UpdateLoadbalancerReq
+        r"""UpdateLoadbalancerReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateLoadbalancerReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateLoadbalancerReq.
+        r"""Gets the name of this UpdateLoadbalancerReq.
 
         负载均衡器名称。
 
@@ -82,7 +82,7 @@ class UpdateLoadbalancerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateLoadbalancerReq.
+        r"""Sets the name of this UpdateLoadbalancerReq.
 
         负载均衡器名称。
 
@@ -93,7 +93,7 @@ class UpdateLoadbalancerReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateLoadbalancerReq.
+        r"""Gets the description of this UpdateLoadbalancerReq.
 
         负载均衡器的描述信息
 
@@ -104,7 +104,7 @@ class UpdateLoadbalancerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateLoadbalancerReq.
+        r"""Sets the description of this UpdateLoadbalancerReq.
 
         负载均衡器的描述信息
 
@@ -115,7 +115,7 @@ class UpdateLoadbalancerReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateLoadbalancerReq.
+        r"""Gets the admin_state_up of this UpdateLoadbalancerReq.
 
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -126,7 +126,7 @@ class UpdateLoadbalancerReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateLoadbalancerReq.
+        r"""Sets the admin_state_up of this UpdateLoadbalancerReq.
 
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -137,7 +137,7 @@ class UpdateLoadbalancerReq:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this UpdateLoadbalancerReq.
+        r"""Gets the protection_status of this UpdateLoadbalancerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -148,7 +148,7 @@ class UpdateLoadbalancerReq:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this UpdateLoadbalancerReq.
+        r"""Sets the protection_status of this UpdateLoadbalancerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -159,7 +159,7 @@ class UpdateLoadbalancerReq:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this UpdateLoadbalancerReq.
+        r"""Gets the protection_reason of this UpdateLoadbalancerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -170,7 +170,7 @@ class UpdateLoadbalancerReq:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this UpdateLoadbalancerReq.
+        r"""Sets the protection_reason of this UpdateLoadbalancerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

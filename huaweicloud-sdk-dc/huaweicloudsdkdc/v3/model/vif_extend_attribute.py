@@ -37,7 +37,7 @@ class VifExtendAttribute:
     }
 
     def __init__(self, ha_type=None, ha_mode=None, detect_multiplier=None, min_rx_interval=None, min_tx_interval=None, remote_disclaim=None, local_disclaim=None):
-        """VifExtendAttribute
+        r"""VifExtendAttribute
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VifExtendAttribute:
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this VifExtendAttribute.
+        r"""Gets the ha_type of this VifExtendAttribute.
 
         虚拟接口的可用性检测类型
 
@@ -96,7 +96,7 @@ class VifExtendAttribute:
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this VifExtendAttribute.
+        r"""Sets the ha_type of this VifExtendAttribute.
 
         虚拟接口的可用性检测类型
 
@@ -107,7 +107,7 @@ class VifExtendAttribute:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this VifExtendAttribute.
+        r"""Gets the ha_mode of this VifExtendAttribute.
 
         检测的具体的配置模式
 
@@ -118,7 +118,7 @@ class VifExtendAttribute:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this VifExtendAttribute.
+        r"""Sets the ha_mode of this VifExtendAttribute.
 
         检测的具体的配置模式
 
@@ -129,7 +129,7 @@ class VifExtendAttribute:
 
     @property
     def detect_multiplier(self):
-        """Gets the detect_multiplier of this VifExtendAttribute.
+        r"""Gets the detect_multiplier of this VifExtendAttribute.
 
         检测的重试次数
 
@@ -140,7 +140,7 @@ class VifExtendAttribute:
 
     @detect_multiplier.setter
     def detect_multiplier(self, detect_multiplier):
-        """Sets the detect_multiplier of this VifExtendAttribute.
+        r"""Sets the detect_multiplier of this VifExtendAttribute.
 
         检测的重试次数
 
@@ -151,7 +151,7 @@ class VifExtendAttribute:
 
     @property
     def min_rx_interval(self):
-        """Gets the min_rx_interval of this VifExtendAttribute.
+        r"""Gets the min_rx_interval of this VifExtendAttribute.
 
         检测的接收时长间隔
 
@@ -162,7 +162,7 @@ class VifExtendAttribute:
 
     @min_rx_interval.setter
     def min_rx_interval(self, min_rx_interval):
-        """Sets the min_rx_interval of this VifExtendAttribute.
+        r"""Sets the min_rx_interval of this VifExtendAttribute.
 
         检测的接收时长间隔
 
@@ -173,7 +173,7 @@ class VifExtendAttribute:
 
     @property
     def min_tx_interval(self):
-        """Gets the min_tx_interval of this VifExtendAttribute.
+        r"""Gets the min_tx_interval of this VifExtendAttribute.
 
         检测的发送时长间隔
 
@@ -184,7 +184,7 @@ class VifExtendAttribute:
 
     @min_tx_interval.setter
     def min_tx_interval(self, min_tx_interval):
-        """Sets the min_tx_interval of this VifExtendAttribute.
+        r"""Sets the min_tx_interval of this VifExtendAttribute.
 
         检测的发送时长间隔
 
@@ -195,7 +195,7 @@ class VifExtendAttribute:
 
     @property
     def remote_disclaim(self):
-        """Gets the remote_disclaim of this VifExtendAttribute.
+        r"""Gets the remote_disclaim of this VifExtendAttribute.
 
         检测的远端的标识，用于静态BFD
 
@@ -206,7 +206,7 @@ class VifExtendAttribute:
 
     @remote_disclaim.setter
     def remote_disclaim(self, remote_disclaim):
-        """Sets the remote_disclaim of this VifExtendAttribute.
+        r"""Sets the remote_disclaim of this VifExtendAttribute.
 
         检测的远端的标识，用于静态BFD
 
@@ -217,7 +217,7 @@ class VifExtendAttribute:
 
     @property
     def local_disclaim(self):
-        """Gets the local_disclaim of this VifExtendAttribute.
+        r"""Gets the local_disclaim of this VifExtendAttribute.
 
         检测的本端的标识，用于静态BFD
 
@@ -228,7 +228,7 @@ class VifExtendAttribute:
 
     @local_disclaim.setter
     def local_disclaim(self, local_disclaim):
-        """Sets the local_disclaim of this VifExtendAttribute.
+        r"""Sets the local_disclaim of this VifExtendAttribute.
 
         检测的本端的标识，用于静态BFD
 

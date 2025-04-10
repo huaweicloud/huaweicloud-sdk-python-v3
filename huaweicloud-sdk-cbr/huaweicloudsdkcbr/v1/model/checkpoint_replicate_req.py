@@ -25,7 +25,7 @@ class CheckpointReplicateReq:
     }
 
     def __init__(self, replicate=None):
-        """CheckpointReplicateReq
+        r"""CheckpointReplicateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckpointReplicateReq:
 
     @property
     def replicate(self):
-        """Gets the replicate of this CheckpointReplicateReq.
+        r"""Gets the replicate of this CheckpointReplicateReq.
 
         :return: The replicate of this CheckpointReplicateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`
@@ -51,7 +51,7 @@ class CheckpointReplicateReq:
 
     @replicate.setter
     def replicate(self, replicate):
-        """Sets the replicate of this CheckpointReplicateReq.
+        r"""Sets the replicate of this CheckpointReplicateReq.
 
         :param replicate: The replicate of this CheckpointReplicateReq.
         :type replicate: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`

@@ -26,7 +26,7 @@ class ListNameServersResponse(SdkResponse):
     }
 
     def __init__(self, nameservers=None):
-        """ListNameServersResponse
+        r"""ListNameServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNameServersResponse(SdkResponse):
 
     @property
     def nameservers(self):
-        """Gets the nameservers of this ListNameServersResponse.
+        r"""Gets the nameservers of this ListNameServersResponse.
 
         name server列表对象。
 
@@ -55,7 +55,7 @@ class ListNameServersResponse(SdkResponse):
 
     @nameservers.setter
     def nameservers(self, nameservers):
-        """Sets the nameservers of this ListNameServersResponse.
+        r"""Sets the nameservers of this ListNameServersResponse.
 
         name server列表对象。
 

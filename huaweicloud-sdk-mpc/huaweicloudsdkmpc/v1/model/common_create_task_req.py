@@ -29,7 +29,7 @@ class CommonCreateTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None):
-        """CommonCreateTaskReq
+        r"""CommonCreateTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CommonCreateTaskReq:
 
     @property
     def input(self):
-        """Gets the input of this CommonCreateTaskReq.
+        r"""Gets the input of this CommonCreateTaskReq.
 
         :return: The input of this CommonCreateTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -66,7 +66,7 @@ class CommonCreateTaskReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CommonCreateTaskReq.
+        r"""Sets the input of this CommonCreateTaskReq.
 
         :param input: The input of this CommonCreateTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -75,7 +75,7 @@ class CommonCreateTaskReq:
 
     @property
     def output(self):
-        """Gets the output of this CommonCreateTaskReq.
+        r"""Gets the output of this CommonCreateTaskReq.
 
         :return: The output of this CommonCreateTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -84,7 +84,7 @@ class CommonCreateTaskReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CommonCreateTaskReq.
+        r"""Sets the output of this CommonCreateTaskReq.
 
         :param output: The output of this CommonCreateTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -93,7 +93,7 @@ class CommonCreateTaskReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CommonCreateTaskReq.
+        r"""Gets the user_data of this CommonCreateTaskReq.
 
         用户自定义数据。 
 
@@ -104,7 +104,7 @@ class CommonCreateTaskReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CommonCreateTaskReq.
+        r"""Sets the user_data of this CommonCreateTaskReq.
 
         用户自定义数据。 
 

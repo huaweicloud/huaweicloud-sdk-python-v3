@@ -39,7 +39,7 @@ class QueryIaConfigResponseDTO:
     }
 
     def __init__(self, id=None, name=None, value=None, description=None, version=None, state=None, create_time=None, update_time=None):
-        """QueryIaConfigResponseDTO
+        r"""QueryIaConfigResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryIaConfigResponseDTO.
+        r"""Gets the id of this QueryIaConfigResponseDTO.
 
         配置ID
 
@@ -103,7 +103,7 @@ class QueryIaConfigResponseDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryIaConfigResponseDTO.
+        r"""Sets the id of this QueryIaConfigResponseDTO.
 
         配置ID
 
@@ -114,7 +114,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryIaConfigResponseDTO.
+        r"""Gets the name of this QueryIaConfigResponseDTO.
 
         配置项名称
 
@@ -125,7 +125,7 @@ class QueryIaConfigResponseDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryIaConfigResponseDTO.
+        r"""Sets the name of this QueryIaConfigResponseDTO.
 
         配置项名称
 
@@ -136,7 +136,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def value(self):
-        """Gets the value of this QueryIaConfigResponseDTO.
+        r"""Gets the value of this QueryIaConfigResponseDTO.
 
         配置项详情
 
@@ -147,7 +147,7 @@ class QueryIaConfigResponseDTO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QueryIaConfigResponseDTO.
+        r"""Sets the value of this QueryIaConfigResponseDTO.
 
         配置项详情
 
@@ -158,7 +158,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryIaConfigResponseDTO.
+        r"""Gets the description of this QueryIaConfigResponseDTO.
 
         配置项描述
 
@@ -169,7 +169,7 @@ class QueryIaConfigResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryIaConfigResponseDTO.
+        r"""Sets the description of this QueryIaConfigResponseDTO.
 
         配置项描述
 
@@ -180,7 +180,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def version(self):
-        """Gets the version of this QueryIaConfigResponseDTO.
+        r"""Gets the version of this QueryIaConfigResponseDTO.
 
         版本号
 
@@ -191,7 +191,7 @@ class QueryIaConfigResponseDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QueryIaConfigResponseDTO.
+        r"""Sets the version of this QueryIaConfigResponseDTO.
 
         版本号
 
@@ -202,7 +202,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def state(self):
-        """Gets the state of this QueryIaConfigResponseDTO.
+        r"""Gets the state of this QueryIaConfigResponseDTO.
 
         下发状态
 
@@ -213,7 +213,7 @@ class QueryIaConfigResponseDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this QueryIaConfigResponseDTO.
+        r"""Sets the state of this QueryIaConfigResponseDTO.
 
         下发状态
 
@@ -224,7 +224,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryIaConfigResponseDTO.
+        r"""Gets the create_time of this QueryIaConfigResponseDTO.
 
         创建时间
 
@@ -235,7 +235,7 @@ class QueryIaConfigResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryIaConfigResponseDTO.
+        r"""Sets the create_time of this QueryIaConfigResponseDTO.
 
         创建时间
 
@@ -246,7 +246,7 @@ class QueryIaConfigResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryIaConfigResponseDTO.
+        r"""Gets the update_time of this QueryIaConfigResponseDTO.
 
         更新时间
 
@@ -257,7 +257,7 @@ class QueryIaConfigResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryIaConfigResponseDTO.
+        r"""Sets the update_time of this QueryIaConfigResponseDTO.
 
         更新时间
 

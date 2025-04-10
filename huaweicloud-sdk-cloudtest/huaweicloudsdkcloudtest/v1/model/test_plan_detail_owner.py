@@ -31,7 +31,7 @@ class TestPlanDetailOwner:
     }
 
     def __init__(self, id=None, name=None, nick_name=None, user_name=None):
-        """TestPlanDetailOwner
+        r"""TestPlanDetailOwner
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TestPlanDetailOwner:
 
     @property
     def id(self):
-        """Gets the id of this TestPlanDetailOwner.
+        r"""Gets the id of this TestPlanDetailOwner.
 
         测试计划处理者id
 
@@ -75,7 +75,7 @@ class TestPlanDetailOwner:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TestPlanDetailOwner.
+        r"""Sets the id of this TestPlanDetailOwner.
 
         测试计划处理者id
 
@@ -86,7 +86,7 @@ class TestPlanDetailOwner:
 
     @property
     def name(self):
-        """Gets the name of this TestPlanDetailOwner.
+        r"""Gets the name of this TestPlanDetailOwner.
 
         测试计划处理者名称，优先返回nickName，不存在则返回userName
 
@@ -97,7 +97,7 @@ class TestPlanDetailOwner:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestPlanDetailOwner.
+        r"""Sets the name of this TestPlanDetailOwner.
 
         测试计划处理者名称，优先返回nickName，不存在则返回userName
 
@@ -108,7 +108,7 @@ class TestPlanDetailOwner:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this TestPlanDetailOwner.
+        r"""Gets the nick_name of this TestPlanDetailOwner.
 
         测试计划处理者的昵称，当用户未设置昵称时不返回该字段
 
@@ -119,7 +119,7 @@ class TestPlanDetailOwner:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this TestPlanDetailOwner.
+        r"""Sets the nick_name of this TestPlanDetailOwner.
 
         测试计划处理者的昵称，当用户未设置昵称时不返回该字段
 
@@ -130,7 +130,7 @@ class TestPlanDetailOwner:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TestPlanDetailOwner.
+        r"""Gets the user_name of this TestPlanDetailOwner.
 
         测试计划处理者的用户名称
 
@@ -141,7 +141,7 @@ class TestPlanDetailOwner:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TestPlanDetailOwner.
+        r"""Sets the user_name of this TestPlanDetailOwner.
 
         测试计划处理者的用户名称
 

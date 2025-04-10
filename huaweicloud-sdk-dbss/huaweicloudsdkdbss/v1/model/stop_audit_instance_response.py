@@ -26,7 +26,7 @@ class StopAuditInstanceResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """StopAuditInstanceResponse
+        r"""StopAuditInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopAuditInstanceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StopAuditInstanceResponse.
+        r"""Gets the result of this StopAuditInstanceResponse.
 
         响应状态
 
@@ -55,7 +55,7 @@ class StopAuditInstanceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StopAuditInstanceResponse.
+        r"""Sets the result of this StopAuditInstanceResponse.
 
         响应状态
 

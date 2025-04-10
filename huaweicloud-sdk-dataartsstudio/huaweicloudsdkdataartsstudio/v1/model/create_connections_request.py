@@ -27,7 +27,7 @@ class CreateConnectionsRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateConnectionsRequest
+        r"""CreateConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateConnectionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateConnectionsRequest.
+        r"""Gets the workspace of this CreateConnectionsRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class CreateConnectionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateConnectionsRequest.
+        r"""Sets the workspace of this CreateConnectionsRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class CreateConnectionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectionsRequest.
+        r"""Gets the body of this CreateConnectionsRequest.
 
         :return: The body of this CreateConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourcesVo`
@@ -80,7 +80,7 @@ class CreateConnectionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectionsRequest.
+        r"""Sets the body of this CreateConnectionsRequest.
 
         :param body: The body of this CreateConnectionsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourcesVo`

@@ -29,7 +29,7 @@ class ShowJobInstanceRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, instance_id=None):
-        """ShowJobInstanceRequest
+        r"""ShowJobInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowJobInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowJobInstanceRequest.
+        r"""Gets the workspace of this ShowJobInstanceRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class ShowJobInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowJobInstanceRequest.
+        r"""Sets the workspace of this ShowJobInstanceRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class ShowJobInstanceRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobInstanceRequest.
+        r"""Gets the job_name of this ShowJobInstanceRequest.
 
         作业名称.
 
@@ -88,7 +88,7 @@ class ShowJobInstanceRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobInstanceRequest.
+        r"""Sets the job_name of this ShowJobInstanceRequest.
 
         作业名称.
 
@@ -99,7 +99,7 @@ class ShowJobInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowJobInstanceRequest.
+        r"""Gets the instance_id of this ShowJobInstanceRequest.
 
         作业实例id.
 
@@ -110,7 +110,7 @@ class ShowJobInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowJobInstanceRequest.
+        r"""Sets the instance_id of this ShowJobInstanceRequest.
 
         作业实例id.
 

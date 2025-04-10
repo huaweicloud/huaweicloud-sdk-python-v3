@@ -31,7 +31,7 @@ class VerifyHostV2Req:
     }
 
     def __init__(self, port=None, account=None, password=None, group_id=None):
-        """VerifyHostV2Req
+        r"""VerifyHostV2Req
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class VerifyHostV2Req:
 
     @property
     def port(self):
-        """Gets the port of this VerifyHostV2Req.
+        r"""Gets the port of this VerifyHostV2Req.
 
         主机端口
 
@@ -72,7 +72,7 @@ class VerifyHostV2Req:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this VerifyHostV2Req.
+        r"""Sets the port of this VerifyHostV2Req.
 
         主机端口
 
@@ -83,7 +83,7 @@ class VerifyHostV2Req:
 
     @property
     def account(self):
-        """Gets the account of this VerifyHostV2Req.
+        r"""Gets the account of this VerifyHostV2Req.
 
         主机账号
 
@@ -94,7 +94,7 @@ class VerifyHostV2Req:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this VerifyHostV2Req.
+        r"""Sets the account of this VerifyHostV2Req.
 
         主机账号
 
@@ -105,7 +105,7 @@ class VerifyHostV2Req:
 
     @property
     def password(self):
-        """Gets the password of this VerifyHostV2Req.
+        r"""Gets the password of this VerifyHostV2Req.
 
         主机密码
 
@@ -116,7 +116,7 @@ class VerifyHostV2Req:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this VerifyHostV2Req.
+        r"""Sets the password of this VerifyHostV2Req.
 
         主机密码
 
@@ -127,7 +127,7 @@ class VerifyHostV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this VerifyHostV2Req.
+        r"""Gets the group_id of this VerifyHostV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -138,7 +138,7 @@ class VerifyHostV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this VerifyHostV2Req.
+        r"""Sets the group_id of this VerifyHostV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

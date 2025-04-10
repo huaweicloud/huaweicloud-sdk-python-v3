@@ -29,7 +29,7 @@ class UpdateEnvironmentV2Request:
     }
 
     def __init__(self, instance_id=None, env_id=None, body=None):
-        """UpdateEnvironmentV2Request
+        r"""UpdateEnvironmentV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEnvironmentV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateEnvironmentV2Request.
+        r"""Gets the instance_id of this UpdateEnvironmentV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateEnvironmentV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateEnvironmentV2Request.
+        r"""Sets the instance_id of this UpdateEnvironmentV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateEnvironmentV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this UpdateEnvironmentV2Request.
+        r"""Gets the env_id of this UpdateEnvironmentV2Request.
 
         环境的ID
 
@@ -88,7 +88,7 @@ class UpdateEnvironmentV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this UpdateEnvironmentV2Request.
+        r"""Sets the env_id of this UpdateEnvironmentV2Request.
 
         环境的ID
 
@@ -99,7 +99,7 @@ class UpdateEnvironmentV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnvironmentV2Request.
+        r"""Gets the body of this UpdateEnvironmentV2Request.
 
         :return: The body of this UpdateEnvironmentV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.EnvCreate`
@@ -108,7 +108,7 @@ class UpdateEnvironmentV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnvironmentV2Request.
+        r"""Sets the body of this UpdateEnvironmentV2Request.
 
         :param body: The body of this UpdateEnvironmentV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.EnvCreate`

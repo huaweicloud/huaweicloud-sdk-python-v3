@@ -27,7 +27,7 @@ class StarRocksDatabaseUserPWinfo:
     }
 
     def __init__(self, user_name=None, password=None):
-        """StarRocksDatabaseUserPWinfo
+        r"""StarRocksDatabaseUserPWinfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StarRocksDatabaseUserPWinfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this StarRocksDatabaseUserPWinfo.
+        r"""Gets the user_name of this StarRocksDatabaseUserPWinfo.
 
         数据库账号名。
 
@@ -59,7 +59,7 @@ class StarRocksDatabaseUserPWinfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this StarRocksDatabaseUserPWinfo.
+        r"""Sets the user_name of this StarRocksDatabaseUserPWinfo.
 
         数据库账号名。
 
@@ -70,7 +70,7 @@ class StarRocksDatabaseUserPWinfo:
 
     @property
     def password(self):
-        """Gets the password of this StarRocksDatabaseUserPWinfo.
+        r"""Gets the password of this StarRocksDatabaseUserPWinfo.
 
         账户密码。 - 8-32个字符 - 不能与用户名或倒序的用户名相同 - 至少包含以下字符中的三种：大写字母、小写字母、数字和特殊字符~！@#%^*-_=+?,
 
@@ -81,7 +81,7 @@ class StarRocksDatabaseUserPWinfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this StarRocksDatabaseUserPWinfo.
+        r"""Sets the password of this StarRocksDatabaseUserPWinfo.
 
         账户密码。 - 8-32个字符 - 不能与用户名或倒序的用户名相同 - 至少包含以下字符中的三种：大写字母、小写字母、数字和特殊字符~！@#%^*-_=+?,
 

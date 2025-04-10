@@ -41,7 +41,7 @@ class ListLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, app_name=None, name=None, status=None, path=None, precise_search=None):
-        """ListLiveDataApiV2Request
+        r"""ListLiveDataApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLiveDataApiV2Request.
+        r"""Gets the instance_id of this ListLiveDataApiV2Request.
 
         实例ID
 
@@ -109,7 +109,7 @@ class ListLiveDataApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLiveDataApiV2Request.
+        r"""Sets the instance_id of this ListLiveDataApiV2Request.
 
         实例ID
 
@@ -120,7 +120,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLiveDataApiV2Request.
+        r"""Gets the offset of this ListLiveDataApiV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -131,7 +131,7 @@ class ListLiveDataApiV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLiveDataApiV2Request.
+        r"""Sets the offset of this ListLiveDataApiV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -142,7 +142,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLiveDataApiV2Request.
+        r"""Gets the limit of this ListLiveDataApiV2Request.
 
         每页显示的条目数量
 
@@ -153,7 +153,7 @@ class ListLiveDataApiV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLiveDataApiV2Request.
+        r"""Sets the limit of this ListLiveDataApiV2Request.
 
         每页显示的条目数量
 
@@ -164,7 +164,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListLiveDataApiV2Request.
+        r"""Gets the app_id of this ListLiveDataApiV2Request.
 
         后端API归属的集成应用编号
 
@@ -175,7 +175,7 @@ class ListLiveDataApiV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListLiveDataApiV2Request.
+        r"""Sets the app_id of this ListLiveDataApiV2Request.
 
         后端API归属的集成应用编号
 
@@ -186,7 +186,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListLiveDataApiV2Request.
+        r"""Gets the app_name of this ListLiveDataApiV2Request.
 
         后端API归属的集成应用名称
 
@@ -197,7 +197,7 @@ class ListLiveDataApiV2Request:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListLiveDataApiV2Request.
+        r"""Sets the app_name of this ListLiveDataApiV2Request.
 
         后端API归属的集成应用名称
 
@@ -208,7 +208,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListLiveDataApiV2Request.
+        r"""Gets the name of this ListLiveDataApiV2Request.
 
         后端API名称
 
@@ -219,7 +219,7 @@ class ListLiveDataApiV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLiveDataApiV2Request.
+        r"""Sets the name of this ListLiveDataApiV2Request.
 
         后端API名称
 
@@ -230,7 +230,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def status(self):
-        """Gets the status of this ListLiveDataApiV2Request.
+        r"""Gets the status of this ListLiveDataApiV2Request.
 
         后端API状态，支持1，3，4，分别表示待开发，开发中和已部署状态
 
@@ -241,7 +241,7 @@ class ListLiveDataApiV2Request:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListLiveDataApiV2Request.
+        r"""Sets the status of this ListLiveDataApiV2Request.
 
         后端API状态，支持1，3，4，分别表示待开发，开发中和已部署状态
 
@@ -252,7 +252,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def path(self):
-        """Gets the path of this ListLiveDataApiV2Request.
+        r"""Gets the path of this ListLiveDataApiV2Request.
 
         后端API请求路径
 
@@ -263,7 +263,7 @@ class ListLiveDataApiV2Request:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListLiveDataApiV2Request.
+        r"""Sets the path of this ListLiveDataApiV2Request.
 
         后端API请求路径
 
@@ -274,7 +274,7 @@ class ListLiveDataApiV2Request:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListLiveDataApiV2Request.
+        r"""Gets the precise_search of this ListLiveDataApiV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  当前支持name，path，status。
 
@@ -285,7 +285,7 @@ class ListLiveDataApiV2Request:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListLiveDataApiV2Request.
+        r"""Sets the precise_search of this ListLiveDataApiV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  当前支持name，path，status。
 

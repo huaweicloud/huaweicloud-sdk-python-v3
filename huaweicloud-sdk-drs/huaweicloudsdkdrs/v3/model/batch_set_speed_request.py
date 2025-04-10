@@ -27,7 +27,7 @@ class BatchSetSpeedRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetSpeedRequest
+        r"""BatchSetSpeedRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSetSpeedRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchSetSpeedRequest.
+        r"""Gets the x_language of this BatchSetSpeedRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchSetSpeedRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchSetSpeedRequest.
+        r"""Sets the x_language of this BatchSetSpeedRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchSetSpeedRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetSpeedRequest.
+        r"""Gets the body of this BatchSetSpeedRequest.
 
         :return: The body of this BatchSetSpeedRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`
@@ -81,7 +81,7 @@ class BatchSetSpeedRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetSpeedRequest.
+        r"""Sets the body of this BatchSetSpeedRequest.
 
         :param body: The body of this BatchSetSpeedRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`

@@ -25,7 +25,7 @@ class VaultRemoveResourceReq:
     }
 
     def __init__(self, resource_ids=None):
-        """VaultRemoveResourceReq
+        r"""VaultRemoveResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VaultRemoveResourceReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this VaultRemoveResourceReq.
+        r"""Gets the resource_ids of this VaultRemoveResourceReq.
 
         要移除的资源ID列表 最小长度：1 最大长度：256
 
@@ -53,7 +53,7 @@ class VaultRemoveResourceReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this VaultRemoveResourceReq.
+        r"""Sets the resource_ids of this VaultRemoveResourceReq.
 
         要移除的资源ID列表 最小长度：1 最大长度：256
 

@@ -29,7 +29,7 @@ class SaveTtscVocabularyConfigsRequestBody:
     }
 
     def __init__(self, type=None, key=None, value=None):
-        """SaveTtscVocabularyConfigsRequestBody
+        r"""SaveTtscVocabularyConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SaveTtscVocabularyConfigsRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this SaveTtscVocabularyConfigsRequestBody.
+        r"""Gets the type of this SaveTtscVocabularyConfigsRequestBody.
 
         支持配置的自定义读法类型。当前读法类型会映射为SSML标签，详见[文本驱动SSML定义](metastudio_02_0038.xml)。  包含如下选项： * CHINESE_G2P：拼音 * PHONETIC_SYMBOL：音标 * CONTINUUM：连读 * ALIAS：别名 * SAY_AS：数字/英文的读法。不同value值有不同的读法，详情如下所示。   数字的读法包括：   - date：读日期   - number：读数字   - figure：读数值   - telephone：读电话    英文的读法包括：   - spell：读字母   - english：读单词
 
@@ -67,7 +67,7 @@ class SaveTtscVocabularyConfigsRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SaveTtscVocabularyConfigsRequestBody.
+        r"""Sets the type of this SaveTtscVocabularyConfigsRequestBody.
 
         支持配置的自定义读法类型。当前读法类型会映射为SSML标签，详见[文本驱动SSML定义](metastudio_02_0038.xml)。  包含如下选项： * CHINESE_G2P：拼音 * PHONETIC_SYMBOL：音标 * CONTINUUM：连读 * ALIAS：别名 * SAY_AS：数字/英文的读法。不同value值有不同的读法，详情如下所示。   数字的读法包括：   - date：读日期   - number：读数字   - figure：读数值   - telephone：读电话    英文的读法包括：   - spell：读字母   - english：读单词
 
@@ -78,7 +78,7 @@ class SaveTtscVocabularyConfigsRequestBody:
 
     @property
     def key(self):
-        """Gets the key of this SaveTtscVocabularyConfigsRequestBody.
+        r"""Gets the key of this SaveTtscVocabularyConfigsRequestBody.
 
         原始词。
 
@@ -89,7 +89,7 @@ class SaveTtscVocabularyConfigsRequestBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SaveTtscVocabularyConfigsRequestBody.
+        r"""Sets the key of this SaveTtscVocabularyConfigsRequestBody.
 
         原始词。
 
@@ -100,7 +100,7 @@ class SaveTtscVocabularyConfigsRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this SaveTtscVocabularyConfigsRequestBody.
+        r"""Gets the value of this SaveTtscVocabularyConfigsRequestBody.
 
         自定义读法。其中，音标的读法请参考[词典](https://www.youdao.com/)。
 
@@ -111,7 +111,7 @@ class SaveTtscVocabularyConfigsRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SaveTtscVocabularyConfigsRequestBody.
+        r"""Sets the value of this SaveTtscVocabularyConfigsRequestBody.
 
         自定义读法。其中，音标的读法请参考[词典](https://www.youdao.com/)。
 

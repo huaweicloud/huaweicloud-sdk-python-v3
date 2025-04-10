@@ -33,7 +33,7 @@ class LbaasListenersResult:
     }
 
     def __init__(self, listener_id=None, pool_id=None, protocol_port=None, weight=None, protocol_version=None):
-        """LbaasListenersResult
+        r"""LbaasListenersResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LbaasListenersResult:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this LbaasListenersResult.
+        r"""Gets the listener_id of this LbaasListenersResult.
 
         监听器ID
 
@@ -82,7 +82,7 @@ class LbaasListenersResult:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this LbaasListenersResult.
+        r"""Sets the listener_id of this LbaasListenersResult.
 
         监听器ID
 
@@ -93,7 +93,7 @@ class LbaasListenersResult:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this LbaasListenersResult.
+        r"""Gets the pool_id of this LbaasListenersResult.
 
         后端云服务器组ID
 
@@ -104,7 +104,7 @@ class LbaasListenersResult:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this LbaasListenersResult.
+        r"""Sets the pool_id of this LbaasListenersResult.
 
         后端云服务器组ID
 
@@ -115,7 +115,7 @@ class LbaasListenersResult:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this LbaasListenersResult.
+        r"""Gets the protocol_port of this LbaasListenersResult.
 
         后端协议号，指后端云服务器监听的端口，取值范围[1,65535]
 
@@ -126,7 +126,7 @@ class LbaasListenersResult:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this LbaasListenersResult.
+        r"""Sets the protocol_port of this LbaasListenersResult.
 
         后端协议号，指后端云服务器监听的端口，取值范围[1,65535]
 
@@ -137,7 +137,7 @@ class LbaasListenersResult:
 
     @property
     def weight(self):
-        """Gets the weight of this LbaasListenersResult.
+        r"""Gets the weight of this LbaasListenersResult.
 
         权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]，默认为1。
 
@@ -148,7 +148,7 @@ class LbaasListenersResult:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this LbaasListenersResult.
+        r"""Sets the weight of this LbaasListenersResult.
 
         权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]，默认为1。
 
@@ -159,7 +159,7 @@ class LbaasListenersResult:
 
     @property
     def protocol_version(self):
-        """Gets the protocol_version of this LbaasListenersResult.
+        r"""Gets the protocol_version of this LbaasListenersResult.
 
         指定ip协议版本
 
@@ -170,7 +170,7 @@ class LbaasListenersResult:
 
     @protocol_version.setter
     def protocol_version(self, protocol_version):
-        """Sets the protocol_version of this LbaasListenersResult.
+        r"""Sets the protocol_version of this LbaasListenersResult.
 
         指定ip协议版本
 

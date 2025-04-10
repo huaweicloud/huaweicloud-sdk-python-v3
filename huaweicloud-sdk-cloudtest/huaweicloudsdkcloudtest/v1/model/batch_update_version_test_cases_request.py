@@ -27,7 +27,7 @@ class BatchUpdateVersionTestCasesRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchUpdateVersionTestCasesRequest
+        r"""BatchUpdateVersionTestCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateVersionTestCasesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchUpdateVersionTestCasesRequest.
+        r"""Gets the project_id of this BatchUpdateVersionTestCasesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class BatchUpdateVersionTestCasesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchUpdateVersionTestCasesRequest.
+        r"""Sets the project_id of this BatchUpdateVersionTestCasesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class BatchUpdateVersionTestCasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateVersionTestCasesRequest.
+        r"""Gets the body of this BatchUpdateVersionTestCasesRequest.
 
         :return: The body of this BatchUpdateVersionTestCasesRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseListInfo`
@@ -80,7 +80,7 @@ class BatchUpdateVersionTestCasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateVersionTestCasesRequest.
+        r"""Sets the body of this BatchUpdateVersionTestCasesRequest.
 
         :param body: The body of this BatchUpdateVersionTestCasesRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseListInfo`

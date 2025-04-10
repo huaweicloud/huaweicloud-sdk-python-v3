@@ -26,7 +26,7 @@ class ListApiVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """ListApiVersionsResponse
+        r"""ListApiVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListApiVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListApiVersionsResponse.
+        r"""Gets the versions of this ListApiVersionsResponse.
 
         描述version相关对象的列表
 
@@ -55,7 +55,7 @@ class ListApiVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListApiVersionsResponse.
+        r"""Sets the versions of this ListApiVersionsResponse.
 
         描述version相关对象的列表
 

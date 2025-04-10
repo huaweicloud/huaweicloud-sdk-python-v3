@@ -35,7 +35,7 @@ class CaseDoc:
     }
 
     def __init__(self, description=None, label_names=None, preparation=None, rank=None, status_code=None, steps=None):
-        """CaseDoc
+        r"""CaseDoc
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CaseDoc:
 
     @property
     def description(self):
-        """Gets the description of this CaseDoc.
+        r"""Gets the description of this CaseDoc.
 
         用例描述信息
 
@@ -89,7 +89,7 @@ class CaseDoc:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CaseDoc.
+        r"""Sets the description of this CaseDoc.
 
         用例描述信息
 
@@ -100,7 +100,7 @@ class CaseDoc:
 
     @property
     def label_names(self):
-        """Gets the label_names of this CaseDoc.
+        r"""Gets the label_names of this CaseDoc.
 
         标签
 
@@ -111,7 +111,7 @@ class CaseDoc:
 
     @label_names.setter
     def label_names(self, label_names):
-        """Sets the label_names of this CaseDoc.
+        r"""Sets the label_names of this CaseDoc.
 
         标签
 
@@ -122,7 +122,7 @@ class CaseDoc:
 
     @property
     def preparation(self):
-        """Gets the preparation of this CaseDoc.
+        r"""Gets the preparation of this CaseDoc.
 
         前置条件
 
@@ -133,7 +133,7 @@ class CaseDoc:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this CaseDoc.
+        r"""Sets the preparation of this CaseDoc.
 
         前置条件
 
@@ -144,7 +144,7 @@ class CaseDoc:
 
     @property
     def rank(self):
-        """Gets the rank of this CaseDoc.
+        r"""Gets the rank of this CaseDoc.
 
         用例等级（0-L0；1-L1；2-L2；3-L3；4-L4；）
 
@@ -155,7 +155,7 @@ class CaseDoc:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this CaseDoc.
+        r"""Sets the rank of this CaseDoc.
 
         用例等级（0-L0；1-L1；2-L2；3-L3；4-L4；）
 
@@ -166,7 +166,7 @@ class CaseDoc:
 
     @property
     def status_code(self):
-        """Gets the status_code of this CaseDoc.
+        r"""Gets the status_code of this CaseDoc.
 
         状态（0-新建；5-设计中；6-测试中；7-完成；）
 
@@ -177,7 +177,7 @@ class CaseDoc:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this CaseDoc.
+        r"""Sets the status_code of this CaseDoc.
 
         状态（0-新建；5-设计中；6-测试中；7-完成；）
 
@@ -188,7 +188,7 @@ class CaseDoc:
 
     @property
     def steps(self):
-        """Gets the steps of this CaseDoc.
+        r"""Gets the steps of this CaseDoc.
 
         测试步骤
 
@@ -199,7 +199,7 @@ class CaseDoc:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this CaseDoc.
+        r"""Sets the steps of this CaseDoc.
 
         测试步骤
 

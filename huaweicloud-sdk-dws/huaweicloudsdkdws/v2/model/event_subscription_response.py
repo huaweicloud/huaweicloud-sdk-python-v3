@@ -53,7 +53,7 @@ class EventSubscriptionResponse:
     }
 
     def __init__(self, id=None, name=None, source_type=None, source_id=None, category=None, severity=None, tag=None, enable=None, project_id=None, name_space=None, notification_target=None, notification_target_name=None, notification_target_type=None, language=None, time_zone=None):
-        """EventSubscriptionResponse
+        r"""EventSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class EventSubscriptionResponse:
 
     @property
     def id(self):
-        """Gets the id of this EventSubscriptionResponse.
+        r"""Gets the id of this EventSubscriptionResponse.
 
         订阅ID
 
@@ -152,7 +152,7 @@ class EventSubscriptionResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EventSubscriptionResponse.
+        r"""Sets the id of this EventSubscriptionResponse.
 
         订阅ID
 
@@ -163,7 +163,7 @@ class EventSubscriptionResponse:
 
     @property
     def name(self):
-        """Gets the name of this EventSubscriptionResponse.
+        r"""Gets the name of this EventSubscriptionResponse.
 
         订阅名称
 
@@ -174,7 +174,7 @@ class EventSubscriptionResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventSubscriptionResponse.
+        r"""Sets the name of this EventSubscriptionResponse.
 
         订阅名称
 
@@ -185,7 +185,7 @@ class EventSubscriptionResponse:
 
     @property
     def source_type(self):
-        """Gets the source_type of this EventSubscriptionResponse.
+        r"""Gets the source_type of this EventSubscriptionResponse.
 
         事件源类型
 
@@ -196,7 +196,7 @@ class EventSubscriptionResponse:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this EventSubscriptionResponse.
+        r"""Sets the source_type of this EventSubscriptionResponse.
 
         事件源类型
 
@@ -207,7 +207,7 @@ class EventSubscriptionResponse:
 
     @property
     def source_id(self):
-        """Gets the source_id of this EventSubscriptionResponse.
+        r"""Gets the source_id of this EventSubscriptionResponse.
 
         事件源ID
 
@@ -218,7 +218,7 @@ class EventSubscriptionResponse:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this EventSubscriptionResponse.
+        r"""Sets the source_id of this EventSubscriptionResponse.
 
         事件源ID
 
@@ -229,7 +229,7 @@ class EventSubscriptionResponse:
 
     @property
     def category(self):
-        """Gets the category of this EventSubscriptionResponse.
+        r"""Gets the category of this EventSubscriptionResponse.
 
         事件类别
 
@@ -240,7 +240,7 @@ class EventSubscriptionResponse:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this EventSubscriptionResponse.
+        r"""Sets the category of this EventSubscriptionResponse.
 
         事件类别
 
@@ -251,7 +251,7 @@ class EventSubscriptionResponse:
 
     @property
     def severity(self):
-        """Gets the severity of this EventSubscriptionResponse.
+        r"""Gets the severity of this EventSubscriptionResponse.
 
         事件级别
 
@@ -262,7 +262,7 @@ class EventSubscriptionResponse:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this EventSubscriptionResponse.
+        r"""Sets the severity of this EventSubscriptionResponse.
 
         事件级别
 
@@ -273,7 +273,7 @@ class EventSubscriptionResponse:
 
     @property
     def tag(self):
-        """Gets the tag of this EventSubscriptionResponse.
+        r"""Gets the tag of this EventSubscriptionResponse.
 
         事件标签
 
@@ -284,7 +284,7 @@ class EventSubscriptionResponse:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this EventSubscriptionResponse.
+        r"""Sets the tag of this EventSubscriptionResponse.
 
         事件标签
 
@@ -295,7 +295,7 @@ class EventSubscriptionResponse:
 
     @property
     def enable(self):
-        """Gets the enable of this EventSubscriptionResponse.
+        r"""Gets the enable of this EventSubscriptionResponse.
 
         是否开启订阅 1为开启，0为关闭
 
@@ -306,7 +306,7 @@ class EventSubscriptionResponse:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this EventSubscriptionResponse.
+        r"""Sets the enable of this EventSubscriptionResponse.
 
         是否开启订阅 1为开启，0为关闭
 
@@ -317,7 +317,7 @@ class EventSubscriptionResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EventSubscriptionResponse.
+        r"""Gets the project_id of this EventSubscriptionResponse.
 
         租户凭证ID
 
@@ -328,7 +328,7 @@ class EventSubscriptionResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EventSubscriptionResponse.
+        r"""Sets the project_id of this EventSubscriptionResponse.
 
         租户凭证ID
 
@@ -339,7 +339,7 @@ class EventSubscriptionResponse:
 
     @property
     def name_space(self):
-        """Gets the name_space of this EventSubscriptionResponse.
+        r"""Gets the name_space of this EventSubscriptionResponse.
 
         所属服务
 
@@ -350,7 +350,7 @@ class EventSubscriptionResponse:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this EventSubscriptionResponse.
+        r"""Sets the name_space of this EventSubscriptionResponse.
 
         所属服务
 
@@ -361,7 +361,7 @@ class EventSubscriptionResponse:
 
     @property
     def notification_target(self):
-        """Gets the notification_target of this EventSubscriptionResponse.
+        r"""Gets the notification_target of this EventSubscriptionResponse.
 
         消息通知主题地址
 
@@ -372,7 +372,7 @@ class EventSubscriptionResponse:
 
     @notification_target.setter
     def notification_target(self, notification_target):
-        """Sets the notification_target of this EventSubscriptionResponse.
+        r"""Sets the notification_target of this EventSubscriptionResponse.
 
         消息通知主题地址
 
@@ -383,7 +383,7 @@ class EventSubscriptionResponse:
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this EventSubscriptionResponse.
+        r"""Gets the notification_target_name of this EventSubscriptionResponse.
 
         消息通知主题名称
 
@@ -394,7 +394,7 @@ class EventSubscriptionResponse:
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this EventSubscriptionResponse.
+        r"""Sets the notification_target_name of this EventSubscriptionResponse.
 
         消息通知主题名称
 
@@ -405,7 +405,7 @@ class EventSubscriptionResponse:
 
     @property
     def notification_target_type(self):
-        """Gets the notification_target_type of this EventSubscriptionResponse.
+        r"""Gets the notification_target_type of this EventSubscriptionResponse.
 
         消息通知类型
 
@@ -416,7 +416,7 @@ class EventSubscriptionResponse:
 
     @notification_target_type.setter
     def notification_target_type(self, notification_target_type):
-        """Sets the notification_target_type of this EventSubscriptionResponse.
+        r"""Sets the notification_target_type of this EventSubscriptionResponse.
 
         消息通知类型
 
@@ -427,7 +427,7 @@ class EventSubscriptionResponse:
 
     @property
     def language(self):
-        """Gets the language of this EventSubscriptionResponse.
+        r"""Gets the language of this EventSubscriptionResponse.
 
         语言
 
@@ -438,7 +438,7 @@ class EventSubscriptionResponse:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this EventSubscriptionResponse.
+        r"""Sets the language of this EventSubscriptionResponse.
 
         语言
 
@@ -449,7 +449,7 @@ class EventSubscriptionResponse:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this EventSubscriptionResponse.
+        r"""Gets the time_zone of this EventSubscriptionResponse.
 
         时区
 
@@ -460,7 +460,7 @@ class EventSubscriptionResponse:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this EventSubscriptionResponse.
+        r"""Sets the time_zone of this EventSubscriptionResponse.
 
         时区
 

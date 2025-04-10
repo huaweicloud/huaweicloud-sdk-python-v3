@@ -34,7 +34,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
     }
 
     def __init__(self, result_code=None, result_msg=None, domain=None, app_name=None, id=None):
-        """DeleteOttChannelInfoResponse
+        r"""DeleteOttChannelInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @property
     def result_code(self):
-        """Gets the result_code of this DeleteOttChannelInfoResponse.
+        r"""Gets the result_code of this DeleteOttChannelInfoResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this DeleteOttChannelInfoResponse.
+        r"""Sets the result_code of this DeleteOttChannelInfoResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @property
     def result_msg(self):
-        """Gets the result_msg of this DeleteOttChannelInfoResponse.
+        r"""Gets the result_msg of this DeleteOttChannelInfoResponse.
 
         错误描述
 
@@ -105,7 +105,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @result_msg.setter
     def result_msg(self, result_msg):
-        """Sets the result_msg of this DeleteOttChannelInfoResponse.
+        r"""Sets the result_msg of this DeleteOttChannelInfoResponse.
 
         错误描述
 
@@ -116,7 +116,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteOttChannelInfoResponse.
+        r"""Gets the domain of this DeleteOttChannelInfoResponse.
 
         推流域名
 
@@ -127,7 +127,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteOttChannelInfoResponse.
+        r"""Sets the domain of this DeleteOttChannelInfoResponse.
 
         推流域名
 
@@ -138,7 +138,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this DeleteOttChannelInfoResponse.
+        r"""Gets the app_name of this DeleteOttChannelInfoResponse.
 
         组名或应用名，为必填项
 
@@ -149,7 +149,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DeleteOttChannelInfoResponse.
+        r"""Sets the app_name of this DeleteOttChannelInfoResponse.
 
         组名或应用名，为必填项
 
@@ -160,7 +160,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteOttChannelInfoResponse.
+        r"""Gets the id of this DeleteOttChannelInfoResponse.
 
         频道ID。频道唯一标识，为必填项
 
@@ -171,7 +171,7 @@ class DeleteOttChannelInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteOttChannelInfoResponse.
+        r"""Sets the id of this DeleteOttChannelInfoResponse.
 
         频道ID。频道唯一标识，为必填项
 

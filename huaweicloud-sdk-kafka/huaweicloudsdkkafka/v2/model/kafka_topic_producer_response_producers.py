@@ -29,7 +29,7 @@ class KafkaTopicProducerResponseProducers:
     }
 
     def __init__(self, producer_address=None, broker_address=None, join_time=None):
-        """KafkaTopicProducerResponseProducers
+        r"""KafkaTopicProducerResponseProducers
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class KafkaTopicProducerResponseProducers:
 
     @property
     def producer_address(self):
-        """Gets the producer_address of this KafkaTopicProducerResponseProducers.
+        r"""Gets the producer_address of this KafkaTopicProducerResponseProducers.
 
         生产者地址
 
@@ -68,7 +68,7 @@ class KafkaTopicProducerResponseProducers:
 
     @producer_address.setter
     def producer_address(self, producer_address):
-        """Sets the producer_address of this KafkaTopicProducerResponseProducers.
+        r"""Sets the producer_address of this KafkaTopicProducerResponseProducers.
 
         生产者地址
 
@@ -79,7 +79,7 @@ class KafkaTopicProducerResponseProducers:
 
     @property
     def broker_address(self):
-        """Gets the broker_address of this KafkaTopicProducerResponseProducers.
+        r"""Gets the broker_address of this KafkaTopicProducerResponseProducers.
 
         broker地址
 
@@ -90,7 +90,7 @@ class KafkaTopicProducerResponseProducers:
 
     @broker_address.setter
     def broker_address(self, broker_address):
-        """Sets the broker_address of this KafkaTopicProducerResponseProducers.
+        r"""Sets the broker_address of this KafkaTopicProducerResponseProducers.
 
         broker地址
 
@@ -101,7 +101,7 @@ class KafkaTopicProducerResponseProducers:
 
     @property
     def join_time(self):
-        """Gets the join_time of this KafkaTopicProducerResponseProducers.
+        r"""Gets the join_time of this KafkaTopicProducerResponseProducers.
 
         加入时间
 
@@ -112,7 +112,7 @@ class KafkaTopicProducerResponseProducers:
 
     @join_time.setter
     def join_time(self, join_time):
-        """Sets the join_time of this KafkaTopicProducerResponseProducers.
+        r"""Sets the join_time of this KafkaTopicProducerResponseProducers.
 
         加入时间
 

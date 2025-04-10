@@ -35,7 +35,7 @@ class EffectiveRoute:
     }
 
     def __init__(self, route_id=None, destination=None, next_hops=None, is_blackhole=None, route_type=None, description=None):
-        """EffectiveRoute
+        r"""EffectiveRoute
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EffectiveRoute:
 
     @property
     def route_id(self):
-        """Gets the route_id of this EffectiveRoute.
+        r"""Gets the route_id of this EffectiveRoute.
 
         路由ID
 
@@ -89,7 +89,7 @@ class EffectiveRoute:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this EffectiveRoute.
+        r"""Sets the route_id of this EffectiveRoute.
 
         路由ID
 
@@ -100,7 +100,7 @@ class EffectiveRoute:
 
     @property
     def destination(self):
-        """Gets the destination of this EffectiveRoute.
+        r"""Gets the destination of this EffectiveRoute.
 
         路由目的地
 
@@ -111,7 +111,7 @@ class EffectiveRoute:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this EffectiveRoute.
+        r"""Sets the destination of this EffectiveRoute.
 
         路由目的地
 
@@ -122,7 +122,7 @@ class EffectiveRoute:
 
     @property
     def next_hops(self):
-        """Gets the next_hops of this EffectiveRoute.
+        r"""Gets the next_hops of this EffectiveRoute.
 
         路由下一跳列表
 
@@ -133,7 +133,7 @@ class EffectiveRoute:
 
     @next_hops.setter
     def next_hops(self, next_hops):
-        """Sets the next_hops of this EffectiveRoute.
+        r"""Sets the next_hops of this EffectiveRoute.
 
         路由下一跳列表
 
@@ -144,7 +144,7 @@ class EffectiveRoute:
 
     @property
     def is_blackhole(self):
-        """Gets the is_blackhole of this EffectiveRoute.
+        r"""Gets the is_blackhole of this EffectiveRoute.
 
         是否黑洞路由
 
@@ -155,7 +155,7 @@ class EffectiveRoute:
 
     @is_blackhole.setter
     def is_blackhole(self, is_blackhole):
-        """Sets the is_blackhole of this EffectiveRoute.
+        r"""Sets the is_blackhole of this EffectiveRoute.
 
         是否黑洞路由
 
@@ -166,7 +166,7 @@ class EffectiveRoute:
 
     @property
     def route_type(self):
-        """Gets the route_type of this EffectiveRoute.
+        r"""Gets the route_type of this EffectiveRoute.
 
         路由类型
 
@@ -177,7 +177,7 @@ class EffectiveRoute:
 
     @route_type.setter
     def route_type(self, route_type):
-        """Sets the route_type of this EffectiveRoute.
+        r"""Sets the route_type of this EffectiveRoute.
 
         路由类型
 
@@ -188,7 +188,7 @@ class EffectiveRoute:
 
     @property
     def description(self):
-        """Gets the description of this EffectiveRoute.
+        r"""Gets the description of this EffectiveRoute.
 
         路由描述信息
 
@@ -199,7 +199,7 @@ class EffectiveRoute:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EffectiveRoute.
+        r"""Sets the description of this EffectiveRoute.
 
         路由描述信息
 

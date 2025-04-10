@@ -28,7 +28,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListIgnoreRuleResponse
+        r"""ListIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIgnoreRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIgnoreRuleResponse.
+        r"""Gets the total of this ListIgnoreRuleResponse.
 
         该策略下全局白名单规则数量
 
@@ -62,7 +62,7 @@ class ListIgnoreRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIgnoreRuleResponse.
+        r"""Sets the total of this ListIgnoreRuleResponse.
 
         该策略下全局白名单规则数量
 
@@ -73,7 +73,7 @@ class ListIgnoreRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListIgnoreRuleResponse.
+        r"""Gets the items of this ListIgnoreRuleResponse.
 
         全局白名单规则信息数组
 
@@ -84,7 +84,7 @@ class ListIgnoreRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListIgnoreRuleResponse.
+        r"""Sets the items of this ListIgnoreRuleResponse.
 
         全局白名单规则信息数组
 

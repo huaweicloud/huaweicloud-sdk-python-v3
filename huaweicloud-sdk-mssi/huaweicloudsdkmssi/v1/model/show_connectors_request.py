@@ -35,7 +35,7 @@ class ShowConnectorsRequest:
     }
 
     def __init__(self, offset=None, limit=None, scope=None, category=None, name=None, operation_type=None):
-        """ShowConnectorsRequest
+        r"""ShowConnectorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowConnectorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowConnectorsRequest.
+        r"""Gets the offset of this ShowConnectorsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -87,7 +87,7 @@ class ShowConnectorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowConnectorsRequest.
+        r"""Sets the offset of this ShowConnectorsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -98,7 +98,7 @@ class ShowConnectorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowConnectorsRequest.
+        r"""Gets the limit of this ShowConnectorsRequest.
 
         每页显示的条目数量
 
@@ -109,7 +109,7 @@ class ShowConnectorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowConnectorsRequest.
+        r"""Sets the limit of this ShowConnectorsRequest.
 
         每页显示的条目数量
 
@@ -120,7 +120,7 @@ class ShowConnectorsRequest:
 
     @property
     def scope(self):
-        """Gets the scope of this ShowConnectorsRequest.
+        r"""Gets the scope of this ShowConnectorsRequest.
 
         连接器分类:onboard：查询所有的上架的、custom：自己创建的连接器
 
@@ -131,7 +131,7 @@ class ShowConnectorsRequest:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowConnectorsRequest.
+        r"""Sets the scope of this ShowConnectorsRequest.
 
         连接器分类:onboard：查询所有的上架的、custom：自己创建的连接器
 
@@ -142,7 +142,7 @@ class ShowConnectorsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ShowConnectorsRequest.
+        r"""Gets the category of this ShowConnectorsRequest.
 
         连接器种类（连接器市场的tab分类）
 
@@ -153,7 +153,7 @@ class ShowConnectorsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowConnectorsRequest.
+        r"""Sets the category of this ShowConnectorsRequest.
 
         连接器种类（连接器市场的tab分类）
 
@@ -164,7 +164,7 @@ class ShowConnectorsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowConnectorsRequest.
+        r"""Gets the name of this ShowConnectorsRequest.
 
         CustomConnectors的名字
 
@@ -175,7 +175,7 @@ class ShowConnectorsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowConnectorsRequest.
+        r"""Sets the name of this ShowConnectorsRequest.
 
         CustomConnectors的名字
 
@@ -186,7 +186,7 @@ class ShowConnectorsRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ShowConnectorsRequest.
+        r"""Gets the operation_type of this ShowConnectorsRequest.
 
         operation条件过滤
 
@@ -197,7 +197,7 @@ class ShowConnectorsRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ShowConnectorsRequest.
+        r"""Sets the operation_type of this ShowConnectorsRequest.
 
         operation条件过滤
 

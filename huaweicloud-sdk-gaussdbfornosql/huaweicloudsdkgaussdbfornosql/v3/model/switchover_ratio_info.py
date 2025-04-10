@@ -27,7 +27,7 @@ class SwitchoverRatioInfo:
     }
 
     def __init__(self, instance_id=None, switchover_ratio=None):
-        """SwitchoverRatioInfo
+        r"""SwitchoverRatioInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchoverRatioInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchoverRatioInfo.
+        r"""Gets the instance_id of this SwitchoverRatioInfo.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SwitchoverRatioInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchoverRatioInfo.
+        r"""Sets the instance_id of this SwitchoverRatioInfo.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SwitchoverRatioInfo:
 
     @property
     def switchover_ratio(self):
-        """Gets the switchover_ratio of this SwitchoverRatioInfo.
+        r"""Gets the switchover_ratio of this SwitchoverRatioInfo.
 
         容灾切换的故障节点比例，下限是50，步长是10，最大是100，默认为100。
 
@@ -82,7 +82,7 @@ class SwitchoverRatioInfo:
 
     @switchover_ratio.setter
     def switchover_ratio(self, switchover_ratio):
-        """Sets the switchover_ratio of this SwitchoverRatioInfo.
+        r"""Sets the switchover_ratio of this SwitchoverRatioInfo.
 
         容灾切换的故障节点比例，下限是50，步长是10，最大是100，默认为100。
 

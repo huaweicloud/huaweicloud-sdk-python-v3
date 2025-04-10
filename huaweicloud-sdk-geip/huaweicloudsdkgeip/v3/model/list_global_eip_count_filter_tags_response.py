@@ -30,7 +30,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None, x_request_id=None):
-        """ListGlobalEipCountFilterTagsResponse
+        r"""ListGlobalEipCountFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalEipCountFilterTagsResponse.
+        r"""Gets the request_id of this ListGlobalEipCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalEipCountFilterTagsResponse.
+        r"""Sets the request_id of this ListGlobalEipCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGlobalEipCountFilterTagsResponse.
+        r"""Gets the total_count of this ListGlobalEipCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -91,7 +91,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGlobalEipCountFilterTagsResponse.
+        r"""Sets the total_count of this ListGlobalEipCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -102,7 +102,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGlobalEipCountFilterTagsResponse.
+        r"""Gets the x_request_id of this ListGlobalEipCountFilterTagsResponse.
 
         :return: The x_request_id of this ListGlobalEipCountFilterTagsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListGlobalEipCountFilterTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGlobalEipCountFilterTagsResponse.
+        r"""Sets the x_request_id of this ListGlobalEipCountFilterTagsResponse.
 
         :param x_request_id: The x_request_id of this ListGlobalEipCountFilterTagsResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class VaultCreateParameters:
     }
 
     def __init__(self, combined_order=None):
-        """VaultCreateParameters
+        r"""VaultCreateParameters
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VaultCreateParameters:
 
     @property
     def combined_order(self):
-        """Gets the combined_order of this VaultCreateParameters.
+        r"""Gets the combined_order of this VaultCreateParameters.
 
         :return: The combined_order of this VaultCreateParameters.
         :rtype: :class:`huaweicloudsdkcbr.v1.CombinedOrder`
@@ -52,7 +52,7 @@ class VaultCreateParameters:
 
     @combined_order.setter
     def combined_order(self, combined_order):
-        """Sets the combined_order of this VaultCreateParameters.
+        r"""Sets the combined_order of this VaultCreateParameters.
 
         :param combined_order: The combined_order of this VaultCreateParameters.
         :type combined_order: :class:`huaweicloudsdkcbr.v1.CombinedOrder`

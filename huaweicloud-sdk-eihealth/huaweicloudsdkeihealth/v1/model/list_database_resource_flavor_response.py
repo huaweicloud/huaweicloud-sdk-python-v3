@@ -28,7 +28,7 @@ class ListDatabaseResourceFlavorResponse(SdkResponse):
     }
 
     def __init__(self, count=None, flavors=None):
-        """ListDatabaseResourceFlavorResponse
+        r"""ListDatabaseResourceFlavorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDatabaseResourceFlavorResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDatabaseResourceFlavorResponse.
+        r"""Gets the count of this ListDatabaseResourceFlavorResponse.
 
         个数
 
@@ -62,7 +62,7 @@ class ListDatabaseResourceFlavorResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDatabaseResourceFlavorResponse.
+        r"""Sets the count of this ListDatabaseResourceFlavorResponse.
 
         个数
 
@@ -73,7 +73,7 @@ class ListDatabaseResourceFlavorResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListDatabaseResourceFlavorResponse.
+        r"""Gets the flavors of this ListDatabaseResourceFlavorResponse.
 
         规格列表
 
@@ -84,7 +84,7 @@ class ListDatabaseResourceFlavorResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListDatabaseResourceFlavorResponse.
+        r"""Sets the flavors of this ListDatabaseResourceFlavorResponse.
 
         规格列表
 

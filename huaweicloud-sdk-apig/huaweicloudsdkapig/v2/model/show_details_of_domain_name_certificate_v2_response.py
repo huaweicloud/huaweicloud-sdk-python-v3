@@ -64,7 +64,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, create_time=None, update_time=None, common_name=None, san=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, not_after=None, serial_number=None, issuer=None, signature_algorithm=None):
-        """ShowDetailsOfDomainNameCertificateV2Response
+        r"""ShowDetailsOfDomainNameCertificateV2Response
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the id of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书ID
 
@@ -188,7 +188,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the id of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书ID
 
@@ -199,7 +199,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the name of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书名称
 
@@ -210,7 +210,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the name of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书名称
 
@@ -221,7 +221,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the type of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书类型  - global：全局证书 - instance：实例证书
 
@@ -232,7 +232,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the type of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书类型  - global：全局证书 - instance：实例证书
 
@@ -243,7 +243,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
 
         实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
 
@@ -254,7 +254,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the instance_id of this ShowDetailsOfDomainNameCertificateV2Response.
 
         实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
 
@@ -265,7 +265,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the project_id of this ShowDetailsOfDomainNameCertificateV2Response.
 
         租户项目编号
 
@@ -276,7 +276,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the project_id of this ShowDetailsOfDomainNameCertificateV2Response.
 
         租户项目编号
 
@@ -287,7 +287,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the create_time of this ShowDetailsOfDomainNameCertificateV2Response.
 
         创建时间
 
@@ -298,7 +298,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the create_time of this ShowDetailsOfDomainNameCertificateV2Response.
 
         创建时间
 
@@ -309,7 +309,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the update_time of this ShowDetailsOfDomainNameCertificateV2Response.
 
         更新时间
 
@@ -320,7 +320,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the update_time of this ShowDetailsOfDomainNameCertificateV2Response.
 
         更新时间
 
@@ -331,7 +331,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def common_name(self):
-        """Gets the common_name of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the common_name of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书域名
 
@@ -342,7 +342,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the common_name of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书域名
 
@@ -353,7 +353,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def san(self):
-        """Gets the san of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the san of this ShowDetailsOfDomainNameCertificateV2Response.
 
         SAN域名
 
@@ -364,7 +364,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @san.setter
     def san(self, san):
-        """Sets the san of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the san of this ShowDetailsOfDomainNameCertificateV2Response.
 
         SAN域名
 
@@ -375,7 +375,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the version of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书版本
 
@@ -386,7 +386,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the version of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书版本
 
@@ -397,7 +397,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def organization(self):
-        """Gets the organization of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the organization of this ShowDetailsOfDomainNameCertificateV2Response.
 
         公司、组织
 
@@ -408,7 +408,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the organization of this ShowDetailsOfDomainNameCertificateV2Response.
 
         公司、组织
 
@@ -419,7 +419,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def organizational_unit(self):
-        """Gets the organizational_unit of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the organizational_unit of this ShowDetailsOfDomainNameCertificateV2Response.
 
         部门
 
@@ -430,7 +430,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @organizational_unit.setter
     def organizational_unit(self, organizational_unit):
-        """Sets the organizational_unit of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the organizational_unit of this ShowDetailsOfDomainNameCertificateV2Response.
 
         部门
 
@@ -441,7 +441,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def locality(self):
-        """Gets the locality of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the locality of this ShowDetailsOfDomainNameCertificateV2Response.
 
         城市
 
@@ -452,7 +452,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @locality.setter
     def locality(self, locality):
-        """Sets the locality of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the locality of this ShowDetailsOfDomainNameCertificateV2Response.
 
         城市
 
@@ -463,7 +463,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the state of this ShowDetailsOfDomainNameCertificateV2Response.
 
         省份
 
@@ -474,7 +474,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the state of this ShowDetailsOfDomainNameCertificateV2Response.
 
         省份
 
@@ -485,7 +485,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def country(self):
-        """Gets the country of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the country of this ShowDetailsOfDomainNameCertificateV2Response.
 
         国家
 
@@ -496,7 +496,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the country of this ShowDetailsOfDomainNameCertificateV2Response.
 
         国家
 
@@ -507,7 +507,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def not_before(self):
-        """Gets the not_before of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the not_before of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书有效期起始时间
 
@@ -518,7 +518,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the not_before of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书有效期起始时间
 
@@ -529,7 +529,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def not_after(self):
-        """Gets the not_after of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the not_after of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书有效期截止时间
 
@@ -540,7 +540,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the not_after of this ShowDetailsOfDomainNameCertificateV2Response.
 
         证书有效期截止时间
 
@@ -551,7 +551,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the serial_number of this ShowDetailsOfDomainNameCertificateV2Response.
 
         序列号
 
@@ -562,7 +562,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the serial_number of this ShowDetailsOfDomainNameCertificateV2Response.
 
         序列号
 
@@ -573,7 +573,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def issuer(self):
-        """Gets the issuer of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the issuer of this ShowDetailsOfDomainNameCertificateV2Response.
 
         颁发者
 
@@ -584,7 +584,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the issuer of this ShowDetailsOfDomainNameCertificateV2Response.
 
         颁发者
 
@@ -595,7 +595,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Gets the signature_algorithm of this ShowDetailsOfDomainNameCertificateV2Response.
 
         签名算法
 
@@ -606,7 +606,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ShowDetailsOfDomainNameCertificateV2Response.
+        r"""Sets the signature_algorithm of this ShowDetailsOfDomainNameCertificateV2Response.
 
         签名算法
 

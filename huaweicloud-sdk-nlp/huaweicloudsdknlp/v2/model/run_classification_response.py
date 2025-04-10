@@ -30,7 +30,7 @@ class RunClassificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunClassificationResponse
+        r"""RunClassificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunClassificationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunClassificationResponse.
+        r"""Gets the result of this RunClassificationResponse.
 
         :return: The result of this RunClassificationResponse.
         :rtype: :class:`huaweicloudsdknlp.v2.ClassificationResult`
@@ -67,7 +67,7 @@ class RunClassificationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunClassificationResponse.
+        r"""Sets the result of this RunClassificationResponse.
 
         :param result: The result of this RunClassificationResponse.
         :type result: :class:`huaweicloudsdknlp.v2.ClassificationResult`
@@ -76,7 +76,7 @@ class RunClassificationResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunClassificationResponse.
+        r"""Gets the error_code of this RunClassificationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -87,7 +87,7 @@ class RunClassificationResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunClassificationResponse.
+        r"""Sets the error_code of this RunClassificationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -98,7 +98,7 @@ class RunClassificationResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunClassificationResponse.
+        r"""Gets the error_msg of this RunClassificationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -109,7 +109,7 @@ class RunClassificationResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunClassificationResponse.
+        r"""Sets the error_msg of this RunClassificationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

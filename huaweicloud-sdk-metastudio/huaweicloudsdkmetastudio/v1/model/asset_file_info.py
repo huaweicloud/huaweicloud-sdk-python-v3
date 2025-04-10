@@ -43,7 +43,7 @@ class AssetFileInfo:
     }
 
     def __init__(self, file_id=None, file_name=None, file_md5=None, file_size=None, file_type=None, asset_file_category=None, download_url=None, state=None, reason=None, file_extra_meta=None):
-        """AssetFileInfo
+        r"""AssetFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AssetFileInfo:
 
     @property
     def file_id(self):
-        """Gets the file_id of this AssetFileInfo.
+        r"""Gets the file_id of this AssetFileInfo.
 
         文件ID。
 
@@ -117,7 +117,7 @@ class AssetFileInfo:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this AssetFileInfo.
+        r"""Sets the file_id of this AssetFileInfo.
 
         文件ID。
 
@@ -128,7 +128,7 @@ class AssetFileInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this AssetFileInfo.
+        r"""Gets the file_name of this AssetFileInfo.
 
         文件名创建文件时候不区分大小写，最大长度256，最小长度1。
 
@@ -139,7 +139,7 @@ class AssetFileInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this AssetFileInfo.
+        r"""Sets the file_name of this AssetFileInfo.
 
         文件名创建文件时候不区分大小写，最大长度256，最小长度1。
 
@@ -150,7 +150,7 @@ class AssetFileInfo:
 
     @property
     def file_md5(self):
-        """Gets the file_md5 of this AssetFileInfo.
+        r"""Gets the file_md5 of this AssetFileInfo.
 
         文件内容MD5值，固定24位。
 
@@ -161,7 +161,7 @@ class AssetFileInfo:
 
     @file_md5.setter
     def file_md5(self, file_md5):
-        """Sets the file_md5 of this AssetFileInfo.
+        r"""Sets the file_md5 of this AssetFileInfo.
 
         文件内容MD5值，固定24位。
 
@@ -172,7 +172,7 @@ class AssetFileInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this AssetFileInfo.
+        r"""Gets the file_size of this AssetFileInfo.
 
         文件总的大小，最小1，最大5368709120。
 
@@ -183,7 +183,7 @@ class AssetFileInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this AssetFileInfo.
+        r"""Sets the file_size of this AssetFileInfo.
 
         文件总的大小，最小1，最大5368709120。
 
@@ -194,7 +194,7 @@ class AssetFileInfo:
 
     @property
     def file_type(self):
-        """Gets the file_type of this AssetFileInfo.
+        r"""Gets the file_type of this AssetFileInfo.
 
         文件类型（默认提取文件后缀）。
 
@@ -205,7 +205,7 @@ class AssetFileInfo:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this AssetFileInfo.
+        r"""Sets the file_type of this AssetFileInfo.
 
         文件类型（默认提取文件后缀）。
 
@@ -216,7 +216,7 @@ class AssetFileInfo:
 
     @property
     def asset_file_category(self):
-        """Gets the asset_file_category of this AssetFileInfo.
+        r"""Gets the asset_file_category of this AssetFileInfo.
 
         文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 * TEMPORARY：临时文件夹（用于文件替换时上传新文件） * PACKAGE：打包后的资产文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER > * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) > * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
 
@@ -227,7 +227,7 @@ class AssetFileInfo:
 
     @asset_file_category.setter
     def asset_file_category(self, asset_file_category):
-        """Sets the asset_file_category of this AssetFileInfo.
+        r"""Sets the asset_file_category of this AssetFileInfo.
 
         文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 * TEMPORARY：临时文件夹（用于文件替换时上传新文件） * PACKAGE：打包后的资产文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE(样例音频文件)和OTHER > * 资产类型为HUMAN_MODEL_2D时，包含MAIN、COVER、SAMPLE(动作样例)和OTHER(遮罩文件) > * 资产类型为BUSINESS_CARD_TEMPLET时，包含MAIN和COVER(名片效果图)
 
@@ -238,7 +238,7 @@ class AssetFileInfo:
 
     @property
     def download_url(self):
-        """Gets the download_url of this AssetFileInfo.
+        r"""Gets the download_url of this AssetFileInfo.
 
         文件下载URL，有效期为24小时。
 
@@ -249,7 +249,7 @@ class AssetFileInfo:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this AssetFileInfo.
+        r"""Sets the download_url of this AssetFileInfo.
 
         文件下载URL，有效期为24小时。
 
@@ -260,7 +260,7 @@ class AssetFileInfo:
 
     @property
     def state(self):
-        """Gets the state of this AssetFileInfo.
+        r"""Gets the state of this AssetFileInfo.
 
         文件状态枚举: * CREATING：文件上传中 * CREATED：文件已上传（自动审核通过） * FAILED：文件上传失败 * CANCELLED：文件上传已取消 * DELETING：文件删除中 * DELETED：文件已删除 * UPLOADED：文件已上传（尚未审核） * REVIEW：人工审核（文件已上传） * BLOCK：冻结
 
@@ -271,7 +271,7 @@ class AssetFileInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AssetFileInfo.
+        r"""Sets the state of this AssetFileInfo.
 
         文件状态枚举: * CREATING：文件上传中 * CREATED：文件已上传（自动审核通过） * FAILED：文件上传失败 * CANCELLED：文件上传已取消 * DELETING：文件删除中 * DELETED：文件已删除 * UPLOADED：文件已上传（尚未审核） * REVIEW：人工审核（文件已上传） * BLOCK：冻结
 
@@ -282,7 +282,7 @@ class AssetFileInfo:
 
     @property
     def reason(self):
-        """Gets the reason of this AssetFileInfo.
+        r"""Gets the reason of this AssetFileInfo.
 
         审核失败原因
 
@@ -293,7 +293,7 @@ class AssetFileInfo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this AssetFileInfo.
+        r"""Sets the reason of this AssetFileInfo.
 
         审核失败原因
 
@@ -304,7 +304,7 @@ class AssetFileInfo:
 
     @property
     def file_extra_meta(self):
-        """Gets the file_extra_meta of this AssetFileInfo.
+        r"""Gets the file_extra_meta of this AssetFileInfo.
 
         :return: The file_extra_meta of this AssetFileInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.FileExtraMeta`
@@ -313,7 +313,7 @@ class AssetFileInfo:
 
     @file_extra_meta.setter
     def file_extra_meta(self, file_extra_meta):
-        """Sets the file_extra_meta of this AssetFileInfo.
+        r"""Sets the file_extra_meta of this AssetFileInfo.
 
         :param file_extra_meta: The file_extra_meta of this AssetFileInfo.
         :type file_extra_meta: :class:`huaweicloudsdkmetastudio.v1.FileExtraMeta`

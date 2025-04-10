@@ -34,7 +34,7 @@ class DrsAsyncClient(Client):
         return client_builder
 
     def batch_create_jobs_async_async(self, request):
-        """批量异步创建任务
+        r"""批量异步创建任务
 
         批量异步创建任务，根据请求参数不同，可以批量异步创建实时迁移、实时同步、实时灾备等任务。
         
@@ -101,7 +101,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_create_tags_async(self, request):
-        """批量添加资源标签
+        r"""批量添加资源标签
 
         批量添加资源标签。
         
@@ -172,7 +172,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_delete_jobs_by_id_async(self, request):
-        """批量删除任务
+        r"""批量删除任务
 
         批量删除租户指定ID任务。
         
@@ -239,7 +239,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_delete_tags_async(self, request):
-        """批量删除资源标签
+        r"""批量删除资源标签
 
         为指定实例批量删除标签。
         
@@ -310,7 +310,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_execute_job_actions_async(self, request):
-        """批量操作指定ID任务
+        r"""批量操作指定ID任务
 
         批量操作租户指定ID任务。
         
@@ -377,7 +377,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_stop_jobs_action_async(self, request):
-        """批量结束任务
+        r"""批量结束任务
 
         批量结束租户指定ID任务。
         
@@ -444,7 +444,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_tag_action_async(self, request):
-        """批量添加或删除资源标签
+        r"""批量添加或删除资源标签
 
         批量添加删除资源标签。
         
@@ -517,7 +517,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def change_to_period_async(self, request):
-        """按需转包周期
+        r"""按需转包周期
 
         DRS同步和灾备任务按需计费转包周期计费。
         
@@ -586,7 +586,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def check_data_filter_async(self, request):
-        """数据过滤规则校验
+        r"""数据过滤规则校验
 
         数据过滤规则校验
         
@@ -655,7 +655,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def clean_alarms_async(self, request):
-        """清除DDL告警
+        r"""清除DDL告警
 
         清除DDL告警
         
@@ -724,7 +724,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def collect_columns_async(self, request):
-        """采集指定数据库表的列信息
+        r"""采集指定数据库表的列信息
 
         采集指定数据库表的列信息
         
@@ -793,7 +793,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def collect_db_objects_async_async(self, request):
-        """提交查询数据库对象信息
+        r"""提交查询数据库对象信息
 
         提交查询数据库对象信息。例如：
         - 当type取值为source时，表示查询源库库表信息。
@@ -876,7 +876,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def collect_db_objects_info_async(self, request):
-        """提交查询数据库对象信息
+        r"""提交查询数据库对象信息
 
         提交查询数据库对象信息。例如：
         - 当type取值为source时，表示查询源库库表信息。
@@ -948,7 +948,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def collect_position_async_async(self, request):
-        """采集数据库位点信息
+        r"""采集数据库位点信息
 
         采集数据库位点信息。
         
@@ -1017,7 +1017,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def commit_async_job_async(self, request):
-        """提交批量创建异步任务
+        r"""提交批量创建异步任务
 
         提交批量创建异步任务，当批量异步任务创建或更新参数后，系统会自动开始进行参数校验，待所有任务成功完成参数校验后并且无报错时，可调用此接口开始创建DRS任务实例。
         
@@ -1084,7 +1084,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def copy_job_async(self, request):
-        """克隆任务
+        r"""克隆任务
 
         DRS支持通过克隆功能，快速复制现有同步任务的配置。
         
@@ -1151,7 +1151,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def count_instance_by_tags_async(self, request):
-        """查询资源实例数量
+        r"""查询资源实例数量
 
         查询资源实例数量。
         
@@ -1220,7 +1220,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_connection_async(self, request):
-        """创建连接
+        r"""创建连接
 
         创建单个连接，该连接可以为线下自建库或云上RDS等，目前支持的数据库引擎包括MySQL、PostgreSQL、Oracle和MongoDB。
         
@@ -1287,7 +1287,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_job_async(self, request):
-        """创建任务
+        r"""创建任务
 
         创建单个任务，根据请求参数不同，可以创建单个实时迁移、实时同步、实时灾备等任务。
         
@@ -1354,7 +1354,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_replication_job_async(self, request):
-        """创建备份迁移任务
+        r"""创建备份迁移任务
 
         该接口主要用于三种常见场景下备份迁移任务的配置。
         备份迁移支持如下的常见场景：
@@ -1425,7 +1425,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def delete_connection_async(self, request):
-        """删除连接
+        r"""删除连接
 
         删除租户指定的连接。
         
@@ -1492,7 +1492,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def delete_jdbc_driver_async(self, request):
-        """删除驱动文件（不再推广）
+        r"""删除驱动文件（不再推广）
 
         删除驱动文件。
         
@@ -1559,7 +1559,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def delete_job_async(self, request):
-        """删除指定ID任务
+        r"""删除指定ID任务
 
         删除租户指定ID任务。
         
@@ -1626,7 +1626,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def delete_replication_job_async(self, request):
-        """删除备份迁移任务
+        r"""删除备份迁移任务
 
         对于已经完成的备份迁移任务，可以选择删除迁移任务。
         
@@ -1693,7 +1693,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def delete_user_jdbc_driver_async(self, request):
-        """删除驱动文件
+        r"""删除驱动文件
 
         删除驱动文件。
         
@@ -1760,7 +1760,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def download_batch_create_template_async(self, request):
-        """下载批量导入任务模板
+        r"""下载批量导入任务模板
 
         下载批量导入任务模板
         
@@ -1825,7 +1825,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def download_db_object_template_async(self, request):
-        """对象选择（文件导入 - 模板下载）
+        r"""对象选择（文件导入 - 模板下载）
 
         对象选择（文件导入 - 模板下载）。
         
@@ -1894,7 +1894,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def execute_job_action_async(self, request):
-        """操作指定ID任务
+        r"""操作指定ID任务
 
         操作租户指定ID任务。
         
@@ -1963,7 +1963,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def export_operation_info_async(self, request):
-        """导出任务操作统计信息
+        r"""导出任务操作统计信息
 
         导出指定任务操作统计信息。
         
@@ -2030,7 +2030,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def import_batch_create_jobs_async(self, request):
-        """批量导入任务
+        r"""批量导入任务
 
         批量导入任务
         
@@ -2099,7 +2099,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_async_job_detail_async(self, request):
-        """查询指定ID批量异步任务详情
+        r"""查询指定ID批量异步任务详情
 
         查询租户指定ID批量异步任务详情，默认为任务的“create_time”降序排序获取结果，支持分页查询。
         
@@ -2170,7 +2170,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_async_jobs_async(self, request):
-        """查询批量异步创建的任务列表
+        r"""查询批量异步创建的任务列表
 
         查询租户批量异步创建的任务列表。
         
@@ -2251,7 +2251,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_connections_async(self, request):
-        """查询连接列表
+        r"""查询连接列表
 
         查询连接列表，可根据连接类型进行查询。
         
@@ -2342,7 +2342,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_db_objects_async(self, request):
-        """查询数据库对象信息
+        r"""查询数据库对象信息
 
         查询数据库对象信息。
         
@@ -2420,7 +2420,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_instance_by_tags_async(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         查询资源实例列表。
         
@@ -2493,7 +2493,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_instance_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息。
         
@@ -2562,7 +2562,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_jdbc_drivers_async(self, request):
-        """查询驱动文件列表（不再推广）
+        r"""查询驱动文件列表（不再推广）
 
         查询驱动文件列表。
         
@@ -2631,7 +2631,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_job_ddls_async(self, request):
-        """查询增量DDL列表
+        r"""查询增量DDL列表
 
         查询增量DDL列表，可根据status查询
         
@@ -2708,7 +2708,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_job_history_parameters_async(self, request):
-        """查询任务的参数配置修改历史
+        r"""查询任务的参数配置修改历史
 
         查询任务的参数配置修改历史
         - 仅engine_type为mysql、mysql-to-pgl、mysql-to-gaussdbv5、mysql-to-gaussdbv5ha、mysql-to-dws、mysql-to-taurus、mysql-to-kafka、mysql-to-elasticsearch、mysql-to-oracle且任务状态只能为配置中、全量中、增量中、全量失败、增量失败、暂停中的实时同步任务支持。
@@ -2786,7 +2786,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_job_parameters_async(self, request):
-        """查询任务参数配置列表
+        r"""查询任务参数配置列表
 
         查询任务的参数配置列表信息
         - 仅engine_type为mysql、mysql-to-pgl、mysql-to-gaussdbv5、mysql-to-gaussdbv5ha、mysql-to-dws、mysql-to-taurus、mysql-to-kafka、mysql-to-elasticsearch、mysql-to-oracle且任务状态只能为配置中、全量中、增量中、全量失败、增量失败、暂停中的实时同步任务支持。
@@ -2860,7 +2860,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_jobs_async(self, request):
-        """查询任务列表
+        r"""查询任务列表
 
         查询租户任务列表，可以根据企业项目，引擎类型，网络类型，任务状态，任务名称，任务ID进行查询。
         
@@ -2950,7 +2950,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_links_async(self, request):
-        """查询可用链路信息
+        r"""查询可用链路信息
 
         根据参数不同，可查询实时迁移、实时同步、实时灾备等可用链路信息。
         
@@ -3021,7 +3021,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询指定project ID下不同任务类型的所有标签集合。
         
@@ -3090,7 +3090,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_replication_jobs_async(self, request):
-        """查询备份迁移任务列表
+        r"""查询备份迁移任务列表
 
         获取当前备份迁移任务列表，不包含已删除的任务。
         
@@ -3180,7 +3180,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询租户在指定Project中实例类型的所有资源标签集合。
         
@@ -3247,7 +3247,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_user_jdbc_drivers_async(self, request):
-        """查询驱动文件列表
+        r"""查询驱动文件列表
 
         查询驱动文件列表。
         
@@ -3318,7 +3318,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def lists_agency_permissions_async(self, request):
-        """查询委托的权限列表
+        r"""查询委托的权限列表
 
         根据源库类型，目标库类型，是否自建，获取委托所需要的权限
         
@@ -3389,7 +3389,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def modify_connection_async(self, request):
-        """修改连接
+        r"""修改连接
 
         修改创建的连接信息。
         
@@ -3458,7 +3458,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_actions_async(self, request):
-        """获取指定任务操作信息
+        r"""获取指定任务操作信息
 
         获取指定任务允许、不允许、当前操作信息。
         
@@ -3525,7 +3525,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_agency_info_async(self, request):
-        """查询委托权限详情
+        r"""查询委托权限详情
 
         查询委托权限详情
         
@@ -3592,7 +3592,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_column_info_result_async(self, request):
-        """获取指定数据库表列信息
+        r"""获取指定数据库表列信息
 
         获取指定数据库表列信息
         
@@ -3665,7 +3665,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_compare_policy_async(self, request):
-        """查询对比策略
+        r"""查询对比策略
 
         查询对比策略。
         
@@ -3732,7 +3732,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_data_filtering_result_async(self, request):
-        """获取数据过滤校验结果
+        r"""获取数据过滤校验结果
 
         获取数据过滤校验结果
         
@@ -3801,7 +3801,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_data_processing_rules_result_async(self, request):
-        """获取指定任务数据加工规则更新结果
+        r"""获取指定任务数据加工规则更新结果
 
         获取指定任务数据加工规则更新结果
         
@@ -3870,7 +3870,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_data_progress_async(self, request):
-        """查询数据加工规则
+        r"""查询数据加工规则
 
         查询数据加工规则:包含数据库表的映射信息、列信息、数据过滤信息、附加列信息、DDL以及DML信息
         
@@ -3941,7 +3941,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_db_object_collection_status_async(self, request):
-        """获取提交查询数据库对象信息的结果
+        r"""获取提交查询数据库对象信息的结果
 
         获取提交查询数据库对象信息的结果。
         
@@ -4010,7 +4010,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_db_object_template_progress_async(self, request):
-        """对象选择（文件导入 - 进度查询）
+        r"""对象选择（文件导入 - 进度查询）
 
         对象选择（文件导入 - 进度查询）。
         
@@ -4083,7 +4083,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_db_object_template_result_async(self, request):
-        """对象选择（文件导入 - 获取导入结果）
+        r"""对象选择（文件导入 - 获取导入结果）
 
         对象选择（文件导入 - 获取导入结果）。
         
@@ -4154,7 +4154,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_db_objects_list_async(self, request):
-        """查询数据库对象信息
+        r"""查询数据库对象信息
 
         查询数据库对象信息。
         
@@ -4223,7 +4223,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_dirty_data_async(self, request):
-        """查询异常数据列表
+        r"""查询异常数据列表
 
         查询异常数据列表。
         
@@ -4298,7 +4298,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_enterprise_project_async(self, request):
-        """查询企业项目列表
+        r"""查询企业项目列表
 
         查询企业项目列表。
         
@@ -4371,7 +4371,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_health_compare_job_detail_async(self, request):
-        """查询健康对比任务详情
+        r"""查询健康对比任务详情
 
         查询健康对比任务详情。
         
@@ -4440,7 +4440,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_health_compare_job_list_async(self, request):
-        """查询健康对比列表
+        r"""查询健康对比列表
 
         查询健康对比列表。
         
@@ -4513,7 +4513,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_health_object_compare_job_overview_async(self, request):
-        """获取健康对比对象级对比概览
+        r"""获取健康对比对象级对比概览
 
         获取健康对比对象级对比概览。
         
@@ -4582,7 +4582,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_increment_components_detail_async(self, request):
-        """查询增量组件详情
+        r"""查询增量组件详情
 
         查询任务同步的增量组件的详细信息，实时同步任务，任务模式为增量或者全量+增量才支持。具体介绍可以参考：[查询同步进度](https://support.huaweicloud.com/realtimesyn-drs/drs_10_0007.html)
         - 支持的引擎：oracle-to-gaussdbv5，oracle-to-gaussdbv5ha，gaussdbv5，gaussdbv5-to-mysql，gaussdbv5-to-gaussdbv5ha，gaussdbv5ha，gaussdbv5ha-to-gaussdbv5，gaussdbv5-to-dws，gaussdbv5ha-to-dws，gaussdbv5-to-oracle，gaussdbv5ha-to-oracle，oracle-to-dws，oracle-to-mysql
@@ -4650,7 +4650,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_instance_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息。
         
@@ -4721,7 +4721,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_job_detail_async(self, request):
-        """查询任务详情
+        r"""查询任务详情
 
         查询任务详情。
         
@@ -4810,7 +4810,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_metering_async(self, request):
-        """获取任务价格信息
+        r"""获取任务价格信息
 
         获取询价接口的参数。
         
@@ -4877,7 +4877,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_monitor_data_async(self, request):
-        """查询监控数据
+        r"""查询监控数据
 
         获取任务监控数据。
         - Cassandra灾备不支持。
@@ -4945,7 +4945,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_object_mapping_async(self, request):
-        """查询同步映射列表
+        r"""查询同步映射列表
 
         查询实时同步映射关系包括对象选择时的库映射、schema映射、表映射和数据加工时的列映射。
         
@@ -5014,7 +5014,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_position_result_async(self, request):
-        """获取查询数据库位点的结果
+        r"""获取查询数据库位点的结果
 
         获取查询数据库位点的结果
         
@@ -5083,7 +5083,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_progress_data_async(self, request):
-        """查询数据级流式对比列表
+        r"""查询数据级流式对比列表
 
         查询不同迁移对象类型的迁移进度。
         说明：
@@ -5160,7 +5160,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_replay_results_async(self, request):
-        """查询录制回放结果
+        r"""查询录制回放结果
 
         获取录制回放结果数据，包括：回放基于时间维度统计信息，异常SQL及统计结果、慢SQL及统计结果
         
@@ -5249,7 +5249,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_replication_job_async(self, request):
-        """查询备份迁移任务详细信息
+        r"""查询备份迁移任务详细信息
 
         获取指定备份迁移任务详细信息。
         
@@ -5316,7 +5316,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_support_object_type_async(self, request):
-        """查询是否支持对象选择和列映射
+        r"""查询是否支持对象选择和列映射
 
         查询任务支持的对象选择类型、列映射、支持搜索的对象类型等信息。
         
@@ -5383,7 +5383,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_timeline_async(self, request):
-        """展示时间轴
+        r"""展示时间轴
 
         指定不同的任务ID可以展示当前任务创建时间、启动时间、重试、重置等操作的时间轴信息。
         
@@ -5454,7 +5454,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_update_object_saving_status_async(self, request):
-        """获取对象保存进度
+        r"""获取对象保存进度
 
         获取对象保存进度。
         
@@ -5523,7 +5523,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def stop_job_action_async(self, request):
-        """结束任务
+        r"""结束任务
 
         结束租户指定ID任务。
         
@@ -5592,7 +5592,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def sync_jdbc_driver_async(self, request):
-        """同步驱动文件（不再推广）
+        r"""同步驱动文件（不再推广）
 
         同步驱动文件。
         
@@ -5661,7 +5661,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def sync_user_jdbc_driver_async(self, request):
-        """同步驱动文件
+        r"""同步驱动文件
 
         同步驱动文件。
         
@@ -5730,7 +5730,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_agency_policy_async(self, request):
-        """更新委托权限策略
+        r"""更新委托权限策略
 
         更新委托权限策略
         
@@ -5799,7 +5799,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_batch_async_jobs_async(self, request):
-        """更新指定ID批量异步任务详情
+        r"""更新指定ID批量异步任务详情
 
         更新租户指定ID批量异步任务详情。
         
@@ -5868,7 +5868,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_compare_policy_async(self, request):
-        """修改对比策略
+        r"""修改对比策略
 
         修改周期性对比的对比策略，目前仅MySQL-&gt;MySQL、MySQL-&gt;GaussDB(for MySQL)、MySQL-&gt;GaussDB(DWS)、GaussDB(for MySQL)-&gt;MySQL同步任务，MySQL-&gt;MySQL、MySQL-&gt;GaussDB(for MySQL)迁移任务，MySQL-&gt;MySQL、MySQL-&gt;GaussDB(for MySQL)、GaussDB(for MySQL)-&gt;GaussDB(for MySQL)、DDM-&gt;DDM、DDS-DDS灾备任务支持对比策略设置。
         
@@ -5937,7 +5937,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_data_progress_async(self, request):
-        """更新指定任务数据加工规则
+        r"""更新指定任务数据加工规则
 
         更新指定任务数据加工规则
         
@@ -6006,7 +6006,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_job_async(self, request):
-        """更新指定ID任务详情
+        r"""更新指定ID任务详情
 
         更新租户指定ID任务详情。
         当type取值为db_object， 进行异步处理。
@@ -6076,7 +6076,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_job_configurations_async(self, request):
-        """更新任务的参数信息
+        r"""更新任务的参数信息
 
         更新任务的参数信息。
         - 仅engine_type为mysql、mysql-to-pgl、mysql-to-gaussdbv5、mysql-to-gaussdbv5ha、mysql-to-dws、mysql-to-taurus、mysql-to-kafka、mysql-to-elasticsearch、mysql-to-oracle且任务状态只能为配置中、全量中、增量中、全量失败、增量失败、暂停中的实时同步任务支持。
@@ -6146,7 +6146,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_replication_job_async(self, request):
-        """修改备份迁移任务信息
+        r"""修改备份迁移任务信息
 
         修改指定备份迁移任务信息，任务名与任务描述。
         
@@ -6215,7 +6215,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_start_position_async(self, request):
-        """更新增量任务启动位点
+        r"""更新增量任务启动位点
 
         更新增量任务的启动位点。
         - 仅engine_type为mysql,mysql-to-dws,mysql-to-taurus,taurus,mysql-to-oracle,taurus-to-oracle,taurus-to-mysql,mysql-to-kafka,taurus-to-kafka,mongodb-to-kafka,mongodb且为单增量实时同步任务支持。
@@ -6285,7 +6285,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def upload_db_object_template_async(self, request):
-        """对象选择（文件导入 - 模板上传）
+        r"""对象选择（文件导入 - 模板上传）
 
         对象选择（文件导入 - 模板上传）。
         
@@ -6358,7 +6358,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def upload_jdbc_driver_async(self, request):
-        """上传驱动文件（不再推广）
+        r"""上传驱动文件（不再推广）
 
         上传驱动文件。
         
@@ -6427,7 +6427,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def upload_user_jdbc_driver_async(self, request):
-        """上传驱动文件
+        r"""上传驱动文件
 
         上传驱动文件。
         
@@ -6498,7 +6498,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def validate_job_name_async(self, request):
-        """任务名称校验
+        r"""任务名称校验
 
         创建任务时对任务名称进行校验。
         

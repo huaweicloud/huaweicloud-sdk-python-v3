@@ -27,7 +27,7 @@ class ListDeployedResourcesRequestBody:
     }
 
     def __init__(self, certificate_ids=None, service_names=None):
-        """ListDeployedResourcesRequestBody
+        r"""ListDeployedResourcesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListDeployedResourcesRequestBody:
 
     @property
     def certificate_ids(self):
-        """Gets the certificate_ids of this ListDeployedResourcesRequestBody.
+        r"""Gets the certificate_ids of this ListDeployedResourcesRequestBody.
 
         证书ID列表。
 
@@ -59,7 +59,7 @@ class ListDeployedResourcesRequestBody:
 
     @certificate_ids.setter
     def certificate_ids(self, certificate_ids):
-        """Sets the certificate_ids of this ListDeployedResourcesRequestBody.
+        r"""Sets the certificate_ids of this ListDeployedResourcesRequestBody.
 
         证书ID列表。
 
@@ -70,7 +70,7 @@ class ListDeployedResourcesRequestBody:
 
     @property
     def service_names(self):
-        """Gets the service_names of this ListDeployedResourcesRequestBody.
+        r"""Gets the service_names of this ListDeployedResourcesRequestBody.
 
         服务名称列表。 - WAF：查询证书关联Web应用防火墙的资源。 - CDN：查询证书关联内容分发网络的资源。 - ELB：查询证书关联弹性负载均衡（经典型）的资源。 - ALL：查询证书以上四种服务的资源。
 
@@ -81,7 +81,7 @@ class ListDeployedResourcesRequestBody:
 
     @service_names.setter
     def service_names(self, service_names):
-        """Sets the service_names of this ListDeployedResourcesRequestBody.
+        r"""Sets the service_names of this ListDeployedResourcesRequestBody.
 
         服务名称列表。 - WAF：查询证书关联Web应用防火墙的资源。 - CDN：查询证书关联内容分发网络的资源。 - ELB：查询证书关联弹性负载均衡（经典型）的资源。 - ALL：查询证书以上四种服务的资源。
 

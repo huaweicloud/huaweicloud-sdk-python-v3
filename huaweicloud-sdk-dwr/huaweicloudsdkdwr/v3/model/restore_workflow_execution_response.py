@@ -38,7 +38,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
     }
 
     def __init__(self, execution_urn=None, restored_at=None, execution_name=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """RestoreWorkflowExecutionResponse
+        r"""RestoreWorkflowExecutionResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def execution_urn(self):
-        """Gets the execution_urn of this RestoreWorkflowExecutionResponse.
+        r"""Gets the execution_urn of this RestoreWorkflowExecutionResponse.
 
         运行实例的URN。
 
@@ -97,7 +97,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @execution_urn.setter
     def execution_urn(self, execution_urn):
-        """Sets the execution_urn of this RestoreWorkflowExecutionResponse.
+        r"""Sets the execution_urn of this RestoreWorkflowExecutionResponse.
 
         运行实例的URN。
 
@@ -108,7 +108,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def restored_at(self):
-        """Gets the restored_at of this RestoreWorkflowExecutionResponse.
+        r"""Gets the restored_at of this RestoreWorkflowExecutionResponse.
 
         运行实例的恢复启动时间。
 
@@ -119,7 +119,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @restored_at.setter
     def restored_at(self, restored_at):
-        """Sets the restored_at of this RestoreWorkflowExecutionResponse.
+        r"""Sets the restored_at of this RestoreWorkflowExecutionResponse.
 
         运行实例的恢复启动时间。
 
@@ -130,7 +130,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def execution_name(self):
-        """Gets the execution_name of this RestoreWorkflowExecutionResponse.
+        r"""Gets the execution_name of this RestoreWorkflowExecutionResponse.
 
         运行实例的名字。
 
@@ -141,7 +141,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @execution_name.setter
     def execution_name(self, execution_name):
-        """Sets the execution_name of this RestoreWorkflowExecutionResponse.
+        r"""Sets the execution_name of this RestoreWorkflowExecutionResponse.
 
         运行实例的名字。
 
@@ -152,7 +152,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RestoreWorkflowExecutionResponse.
+        r"""Gets the x_request_id of this RestoreWorkflowExecutionResponse.
 
         :return: The x_request_id of this RestoreWorkflowExecutionResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RestoreWorkflowExecutionResponse.
+        r"""Sets the x_request_id of this RestoreWorkflowExecutionResponse.
 
         :param x_request_id: The x_request_id of this RestoreWorkflowExecutionResponse.
         :type x_request_id: str
@@ -170,7 +170,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this RestoreWorkflowExecutionResponse.
+        r"""Gets the connection of this RestoreWorkflowExecutionResponse.
 
         :return: The connection of this RestoreWorkflowExecutionResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this RestoreWorkflowExecutionResponse.
+        r"""Sets the connection of this RestoreWorkflowExecutionResponse.
 
         :param connection: The connection of this RestoreWorkflowExecutionResponse.
         :type connection: str
@@ -188,7 +188,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this RestoreWorkflowExecutionResponse.
+        r"""Gets the content_length of this RestoreWorkflowExecutionResponse.
 
         :return: The content_length of this RestoreWorkflowExecutionResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this RestoreWorkflowExecutionResponse.
+        r"""Sets the content_length of this RestoreWorkflowExecutionResponse.
 
         :param content_length: The content_length of this RestoreWorkflowExecutionResponse.
         :type content_length: str
@@ -206,7 +206,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this RestoreWorkflowExecutionResponse.
+        r"""Gets the date of this RestoreWorkflowExecutionResponse.
 
         :return: The date of this RestoreWorkflowExecutionResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class RestoreWorkflowExecutionResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this RestoreWorkflowExecutionResponse.
+        r"""Sets the date of this RestoreWorkflowExecutionResponse.
 
         :param date: The date of this RestoreWorkflowExecutionResponse.
         :type date: str

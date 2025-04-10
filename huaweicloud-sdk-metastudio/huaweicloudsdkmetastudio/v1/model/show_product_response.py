@@ -46,7 +46,7 @@ class ShowProductResponse(SdkResponse):
     }
 
     def __init__(self, product_id=None, name=None, description=None, tags=None, cover=None, text_list=None, asset_list=None, create_time=None, update_time=None, state=None, x_request_id=None):
-        """ShowProductResponse
+        r"""ShowProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowProductResponse.
+        r"""Gets the product_id of this ShowProductResponse.
 
         商品ID
 
@@ -125,7 +125,7 @@ class ShowProductResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowProductResponse.
+        r"""Sets the product_id of this ShowProductResponse.
 
         商品ID
 
@@ -136,7 +136,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowProductResponse.
+        r"""Gets the name of this ShowProductResponse.
 
         商品名称
 
@@ -147,7 +147,7 @@ class ShowProductResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProductResponse.
+        r"""Sets the name of this ShowProductResponse.
 
         商品名称
 
@@ -158,7 +158,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowProductResponse.
+        r"""Gets the description of this ShowProductResponse.
 
         商品描述
 
@@ -169,7 +169,7 @@ class ShowProductResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProductResponse.
+        r"""Sets the description of this ShowProductResponse.
 
         商品描述
 
@@ -180,7 +180,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowProductResponse.
+        r"""Gets the tags of this ShowProductResponse.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -191,7 +191,7 @@ class ShowProductResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowProductResponse.
+        r"""Sets the tags of this ShowProductResponse.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -202,7 +202,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def cover(self):
-        """Gets the cover of this ShowProductResponse.
+        r"""Gets the cover of this ShowProductResponse.
 
         :return: The cover of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductCoverDetailInfo`
@@ -211,7 +211,7 @@ class ShowProductResponse(SdkResponse):
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this ShowProductResponse.
+        r"""Sets the cover of this ShowProductResponse.
 
         :param cover: The cover of this ShowProductResponse.
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverDetailInfo`
@@ -220,7 +220,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def text_list(self):
-        """Gets the text_list of this ShowProductResponse.
+        r"""Gets the text_list of this ShowProductResponse.
 
         文本列表
 
@@ -231,7 +231,7 @@ class ShowProductResponse(SdkResponse):
 
     @text_list.setter
     def text_list(self, text_list):
-        """Sets the text_list of this ShowProductResponse.
+        r"""Sets the text_list of this ShowProductResponse.
 
         文本列表
 
@@ -242,7 +242,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def asset_list(self):
-        """Gets the asset_list of this ShowProductResponse.
+        r"""Gets the asset_list of this ShowProductResponse.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -253,7 +253,7 @@ class ShowProductResponse(SdkResponse):
 
     @asset_list.setter
     def asset_list(self, asset_list):
-        """Sets the asset_list of this ShowProductResponse.
+        r"""Sets the asset_list of this ShowProductResponse.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -264,7 +264,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowProductResponse.
+        r"""Gets the create_time of this ShowProductResponse.
 
         商品创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -275,7 +275,7 @@ class ShowProductResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowProductResponse.
+        r"""Sets the create_time of this ShowProductResponse.
 
         商品创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -286,7 +286,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowProductResponse.
+        r"""Gets the update_time of this ShowProductResponse.
 
         商品更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -297,7 +297,7 @@ class ShowProductResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowProductResponse.
+        r"""Sets the update_time of this ShowProductResponse.
 
         商品更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -308,7 +308,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowProductResponse.
+        r"""Gets the state of this ShowProductResponse.
 
         商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活 * BLOCK: 被冻结，商品不可用 * DELETED：已删除
 
@@ -319,7 +319,7 @@ class ShowProductResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowProductResponse.
+        r"""Sets the state of this ShowProductResponse.
 
         商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活 * BLOCK: 被冻结，商品不可用 * DELETED：已删除
 
@@ -330,7 +330,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowProductResponse.
+        r"""Gets the x_request_id of this ShowProductResponse.
 
         :return: The x_request_id of this ShowProductResponse.
         :rtype: str
@@ -339,7 +339,7 @@ class ShowProductResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowProductResponse.
+        r"""Sets the x_request_id of this ShowProductResponse.
 
         :param x_request_id: The x_request_id of this ShowProductResponse.
         :type x_request_id: str

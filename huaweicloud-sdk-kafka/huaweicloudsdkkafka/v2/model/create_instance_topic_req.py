@@ -39,7 +39,7 @@ class CreateInstanceTopicReq:
     }
 
     def __init__(self, id=None, replication=None, sync_message_flush=None, partition=None, sync_replication=None, retention_time=None, topic_other_configs=None, topic_desc=None):
-        """CreateInstanceTopicReq
+        r"""CreateInstanceTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CreateInstanceTopicReq:
 
     @property
     def id(self):
-        """Gets the id of this CreateInstanceTopicReq.
+        r"""Gets the id of this CreateInstanceTopicReq.
 
         topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
@@ -102,7 +102,7 @@ class CreateInstanceTopicReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInstanceTopicReq.
+        r"""Sets the id of this CreateInstanceTopicReq.
 
         topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
@@ -113,7 +113,7 @@ class CreateInstanceTopicReq:
 
     @property
     def replication(self):
-        """Gets the replication of this CreateInstanceTopicReq.
+        r"""Gets the replication of this CreateInstanceTopicReq.
 
         副本数，配置数据的可靠性。 取值范围：1-3。
 
@@ -124,7 +124,7 @@ class CreateInstanceTopicReq:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this CreateInstanceTopicReq.
+        r"""Sets the replication of this CreateInstanceTopicReq.
 
         副本数，配置数据的可靠性。 取值范围：1-3。
 
@@ -135,7 +135,7 @@ class CreateInstanceTopicReq:
 
     @property
     def sync_message_flush(self):
-        """Gets the sync_message_flush of this CreateInstanceTopicReq.
+        r"""Gets the sync_message_flush of this CreateInstanceTopicReq.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -146,7 +146,7 @@ class CreateInstanceTopicReq:
 
     @sync_message_flush.setter
     def sync_message_flush(self, sync_message_flush):
-        """Sets the sync_message_flush of this CreateInstanceTopicReq.
+        r"""Sets the sync_message_flush of this CreateInstanceTopicReq.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -157,7 +157,7 @@ class CreateInstanceTopicReq:
 
     @property
     def partition(self):
-        """Gets the partition of this CreateInstanceTopicReq.
+        r"""Gets the partition of this CreateInstanceTopicReq.
 
         topic分区数，设置消费的并发数。 取值范围：[1-200](tag:hws,hws_hk,dt,hcs,fcs,sbc,hk_sbc,g42,hk_g42,ctc,tm,hk_tm)[1-100](tag:cmcc,hws_ocb,ocb)。
 
@@ -168,7 +168,7 @@ class CreateInstanceTopicReq:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this CreateInstanceTopicReq.
+        r"""Sets the partition of this CreateInstanceTopicReq.
 
         topic分区数，设置消费的并发数。 取值范围：[1-200](tag:hws,hws_hk,dt,hcs,fcs,sbc,hk_sbc,g42,hk_g42,ctc,tm,hk_tm)[1-100](tag:cmcc,hws_ocb,ocb)。
 
@@ -179,7 +179,7 @@ class CreateInstanceTopicReq:
 
     @property
     def sync_replication(self):
-        """Gets the sync_replication of this CreateInstanceTopicReq.
+        r"""Gets the sync_replication of this CreateInstanceTopicReq.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
 
@@ -190,7 +190,7 @@ class CreateInstanceTopicReq:
 
     @sync_replication.setter
     def sync_replication(self, sync_replication):
-        """Sets the sync_replication of this CreateInstanceTopicReq.
+        r"""Sets the sync_replication of this CreateInstanceTopicReq.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
 
@@ -201,7 +201,7 @@ class CreateInstanceTopicReq:
 
     @property
     def retention_time(self):
-        """Gets the retention_time of this CreateInstanceTopicReq.
+        r"""Gets the retention_time of this CreateInstanceTopicReq.
 
         消息老化时间。默认值为72。 取值范围[1~168](tag:cmcc)[1-720](tag:ocb,dt,hws_ocb,hws,hws_hk,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm,hcs,fcs)，单位小时。
 
@@ -212,7 +212,7 @@ class CreateInstanceTopicReq:
 
     @retention_time.setter
     def retention_time(self, retention_time):
-        """Sets the retention_time of this CreateInstanceTopicReq.
+        r"""Sets the retention_time of this CreateInstanceTopicReq.
 
         消息老化时间。默认值为72。 取值范围[1~168](tag:cmcc)[1-720](tag:ocb,dt,hws_ocb,hws,hws_hk,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm,hcs,fcs)，单位小时。
 
@@ -223,7 +223,7 @@ class CreateInstanceTopicReq:
 
     @property
     def topic_other_configs(self):
-        """Gets the topic_other_configs of this CreateInstanceTopicReq.
+        r"""Gets the topic_other_configs of this CreateInstanceTopicReq.
 
         topic配置
 
@@ -234,7 +234,7 @@ class CreateInstanceTopicReq:
 
     @topic_other_configs.setter
     def topic_other_configs(self, topic_other_configs):
-        """Sets the topic_other_configs of this CreateInstanceTopicReq.
+        r"""Sets the topic_other_configs of this CreateInstanceTopicReq.
 
         topic配置
 
@@ -245,7 +245,7 @@ class CreateInstanceTopicReq:
 
     @property
     def topic_desc(self):
-        """Gets the topic_desc of this CreateInstanceTopicReq.
+        r"""Gets the topic_desc of this CreateInstanceTopicReq.
 
         topic描述
 
@@ -256,7 +256,7 @@ class CreateInstanceTopicReq:
 
     @topic_desc.setter
     def topic_desc(self, topic_desc):
-        """Sets the topic_desc of this CreateInstanceTopicReq.
+        r"""Sets the topic_desc of this CreateInstanceTopicReq.
 
         topic描述
 

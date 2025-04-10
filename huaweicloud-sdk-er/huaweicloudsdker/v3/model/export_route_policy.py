@@ -25,7 +25,7 @@ class ExportRoutePolicy:
     }
 
     def __init__(self, export_policy_id=None):
-        """ExportRoutePolicy
+        r"""ExportRoutePolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExportRoutePolicy:
 
     @property
     def export_policy_id(self):
-        """Gets the export_policy_id of this ExportRoutePolicy.
+        r"""Gets the export_policy_id of this ExportRoutePolicy.
 
         出方向Ipv4协议路由策略id
 
@@ -54,7 +54,7 @@ class ExportRoutePolicy:
 
     @export_policy_id.setter
     def export_policy_id(self, export_policy_id):
-        """Sets the export_policy_id of this ExportRoutePolicy.
+        r"""Sets the export_policy_id of this ExportRoutePolicy.
 
         出方向Ipv4协议路由策略id
 

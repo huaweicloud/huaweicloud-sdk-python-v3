@@ -61,7 +61,7 @@ class ContainerResp:
     }
 
     def __init__(self, args=None, command=None, name=None, envs=None, image_url=None, version=None, liveness_probe=None, readiness_probe=None, ports=None, resources=None, volumes=None, restarts=None, message=None, reason=None, is_ready=None, privileged=None, container_id=None, state=None, npu_type=None):
-        """ContainerResp
+        r"""ContainerResp
 
         The model defined in huaweicloud sdk
 
@@ -167,7 +167,7 @@ class ContainerResp:
 
     @property
     def args(self):
-        """Gets the args of this ContainerResp.
+        r"""Gets the args of this ContainerResp.
 
         容器启动参数，字符总长度最大为65536
 
@@ -178,7 +178,7 @@ class ContainerResp:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this ContainerResp.
+        r"""Sets the args of this ContainerResp.
 
         容器启动参数，字符总长度最大为65536
 
@@ -189,7 +189,7 @@ class ContainerResp:
 
     @property
     def command(self):
-        """Gets the command of this ContainerResp.
+        r"""Gets the command of this ContainerResp.
 
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
 
@@ -200,7 +200,7 @@ class ContainerResp:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ContainerResp.
+        r"""Sets the command of this ContainerResp.
 
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
 
@@ -211,7 +211,7 @@ class ContainerResp:
 
     @property
     def name(self):
-        """Gets the name of this ContainerResp.
+        r"""Gets the name of this ContainerResp.
 
         容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -222,7 +222,7 @@ class ContainerResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ContainerResp.
+        r"""Sets the name of this ContainerResp.
 
         容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -233,7 +233,7 @@ class ContainerResp:
 
     @property
     def envs(self):
-        """Gets the envs of this ContainerResp.
+        r"""Gets the envs of this ContainerResp.
 
         环境变量
 
@@ -244,7 +244,7 @@ class ContainerResp:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ContainerResp.
+        r"""Sets the envs of this ContainerResp.
 
         环境变量
 
@@ -255,7 +255,7 @@ class ContainerResp:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ContainerResp.
+        r"""Gets the image_url of this ContainerResp.
 
         容器镜像URL
 
@@ -266,7 +266,7 @@ class ContainerResp:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ContainerResp.
+        r"""Sets the image_url of this ContainerResp.
 
         容器镜像URL
 
@@ -277,7 +277,7 @@ class ContainerResp:
 
     @property
     def version(self):
-        """Gets the version of this ContainerResp.
+        r"""Gets the version of this ContainerResp.
 
         容器镜像版本
 
@@ -288,7 +288,7 @@ class ContainerResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ContainerResp.
+        r"""Sets the version of this ContainerResp.
 
         容器镜像版本
 
@@ -299,7 +299,7 @@ class ContainerResp:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ContainerResp.
+        r"""Gets the liveness_probe of this ContainerResp.
 
         :return: The liveness_probe of this ContainerResp.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
@@ -308,7 +308,7 @@ class ContainerResp:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ContainerResp.
+        r"""Sets the liveness_probe of this ContainerResp.
 
         :param liveness_probe: The liveness_probe of this ContainerResp.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -317,7 +317,7 @@ class ContainerResp:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ContainerResp.
+        r"""Gets the readiness_probe of this ContainerResp.
 
         :return: The readiness_probe of this ContainerResp.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
@@ -326,7 +326,7 @@ class ContainerResp:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ContainerResp.
+        r"""Sets the readiness_probe of this ContainerResp.
 
         :param readiness_probe: The readiness_probe of this ContainerResp.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -335,7 +335,7 @@ class ContainerResp:
 
     @property
     def ports(self):
-        """Gets the ports of this ContainerResp.
+        r"""Gets the ports of this ContainerResp.
 
         容器端口映射值
 
@@ -346,7 +346,7 @@ class ContainerResp:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ContainerResp.
+        r"""Sets the ports of this ContainerResp.
 
         容器端口映射值
 
@@ -357,7 +357,7 @@ class ContainerResp:
 
     @property
     def resources(self):
-        """Gets the resources of this ContainerResp.
+        r"""Gets the resources of this ContainerResp.
 
         :return: The resources of this ContainerResp.
         :rtype: :class:`huaweicloudsdkief.v1.DeploymentResources`
@@ -366,7 +366,7 @@ class ContainerResp:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ContainerResp.
+        r"""Sets the resources of this ContainerResp.
 
         :param resources: The resources of this ContainerResp.
         :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
@@ -375,7 +375,7 @@ class ContainerResp:
 
     @property
     def volumes(self):
-        """Gets the volumes of this ContainerResp.
+        r"""Gets the volumes of this ContainerResp.
 
         卷配置
 
@@ -386,7 +386,7 @@ class ContainerResp:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ContainerResp.
+        r"""Sets the volumes of this ContainerResp.
 
         卷配置
 
@@ -397,7 +397,7 @@ class ContainerResp:
 
     @property
     def restarts(self):
-        """Gets the restarts of this ContainerResp.
+        r"""Gets the restarts of this ContainerResp.
 
         容器重启次数
 
@@ -408,7 +408,7 @@ class ContainerResp:
 
     @restarts.setter
     def restarts(self, restarts):
-        """Sets the restarts of this ContainerResp.
+        r"""Sets the restarts of this ContainerResp.
 
         容器重启次数
 
@@ -419,7 +419,7 @@ class ContainerResp:
 
     @property
     def message(self):
-        """Gets the message of this ContainerResp.
+        r"""Gets the message of this ContainerResp.
 
         容器故障详情
 
@@ -430,7 +430,7 @@ class ContainerResp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ContainerResp.
+        r"""Sets the message of this ContainerResp.
 
         容器故障详情
 
@@ -441,7 +441,7 @@ class ContainerResp:
 
     @property
     def reason(self):
-        """Gets the reason of this ContainerResp.
+        r"""Gets the reason of this ContainerResp.
 
         容器故障原因
 
@@ -452,7 +452,7 @@ class ContainerResp:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ContainerResp.
+        r"""Sets the reason of this ContainerResp.
 
         容器故障原因
 
@@ -463,7 +463,7 @@ class ContainerResp:
 
     @property
     def is_ready(self):
-        """Gets the is_ready of this ContainerResp.
+        r"""Gets the is_ready of this ContainerResp.
 
         健康检查结果
 
@@ -474,7 +474,7 @@ class ContainerResp:
 
     @is_ready.setter
     def is_ready(self, is_ready):
-        """Sets the is_ready of this ContainerResp.
+        r"""Sets the is_ready of this ContainerResp.
 
         健康检查结果
 
@@ -485,7 +485,7 @@ class ContainerResp:
 
     @property
     def privileged(self):
-        """Gets the privileged of this ContainerResp.
+        r"""Gets the privileged of this ContainerResp.
 
         是否启用特权容器，默认值false
 
@@ -496,7 +496,7 @@ class ContainerResp:
 
     @privileged.setter
     def privileged(self, privileged):
-        """Sets the privileged of this ContainerResp.
+        r"""Sets the privileged of this ContainerResp.
 
         是否启用特权容器，默认值false
 
@@ -507,7 +507,7 @@ class ContainerResp:
 
     @property
     def container_id(self):
-        """Gets the container_id of this ContainerResp.
+        r"""Gets the container_id of this ContainerResp.
 
         容器ID
 
@@ -518,7 +518,7 @@ class ContainerResp:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this ContainerResp.
+        r"""Sets the container_id of this ContainerResp.
 
         容器ID
 
@@ -529,7 +529,7 @@ class ContainerResp:
 
     @property
     def state(self):
-        """Gets the state of this ContainerResp.
+        r"""Gets the state of this ContainerResp.
 
         容器状态
 
@@ -540,7 +540,7 @@ class ContainerResp:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ContainerResp.
+        r"""Sets the state of this ContainerResp.
 
         容器状态
 
@@ -551,7 +551,7 @@ class ContainerResp:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this ContainerResp.
+        r"""Gets the npu_type of this ContainerResp.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
@@ -562,7 +562,7 @@ class ContainerResp:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this ContainerResp.
+        r"""Sets the npu_type of this ContainerResp.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 

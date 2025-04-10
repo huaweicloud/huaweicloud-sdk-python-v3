@@ -30,7 +30,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, line_levels=None):
-        """ListGlobalConnectionBandwidthLineLevelsResponse
+        r"""ListGlobalConnectionBandwidthLineLevelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalConnectionBandwidthLineLevelsResponse.
+        r"""Gets the request_id of this ListGlobalConnectionBandwidthLineLevelsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalConnectionBandwidthLineLevelsResponse.
+        r"""Sets the request_id of this ListGlobalConnectionBandwidthLineLevelsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGlobalConnectionBandwidthLineLevelsResponse.
+        r"""Gets the page_info of this ListGlobalConnectionBandwidthLineLevelsResponse.
 
         :return: The page_info of this ListGlobalConnectionBandwidthLineLevelsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGlobalConnectionBandwidthLineLevelsResponse.
+        r"""Sets the page_info of this ListGlobalConnectionBandwidthLineLevelsResponse.
 
         :param page_info: The page_info of this ListGlobalConnectionBandwidthLineLevelsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
 
     @property
     def line_levels(self):
-        """Gets the line_levels of this ListGlobalConnectionBandwidthLineLevelsResponse.
+        r"""Gets the line_levels of this ListGlobalConnectionBandwidthLineLevelsResponse.
 
         线路分级列表响应体。
 
@@ -107,7 +107,7 @@ class ListGlobalConnectionBandwidthLineLevelsResponse(SdkResponse):
 
     @line_levels.setter
     def line_levels(self, line_levels):
-        """Sets the line_levels of this ListGlobalConnectionBandwidthLineLevelsResponse.
+        r"""Sets the line_levels of this ListGlobalConnectionBandwidthLineLevelsResponse.
 
         线路分级列表响应体。
 

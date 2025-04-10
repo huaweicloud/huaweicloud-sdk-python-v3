@@ -31,7 +31,7 @@ class BoundingBox:
     }
 
     def __init__(self, width=None, height=None, top_left_x=None, top_left_y=None):
-        """BoundingBox
+        r"""BoundingBox
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BoundingBox:
 
     @property
     def width(self):
-        """Gets the width of this BoundingBox.
+        r"""Gets the width of this BoundingBox.
 
         检测框区域宽度
 
@@ -75,7 +75,7 @@ class BoundingBox:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this BoundingBox.
+        r"""Sets the width of this BoundingBox.
 
         检测框区域宽度
 
@@ -86,7 +86,7 @@ class BoundingBox:
 
     @property
     def height(self):
-        """Gets the height of this BoundingBox.
+        r"""Gets the height of this BoundingBox.
 
         检测框区域高度
 
@@ -97,7 +97,7 @@ class BoundingBox:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this BoundingBox.
+        r"""Sets the height of this BoundingBox.
 
         检测框区域高度
 
@@ -108,7 +108,7 @@ class BoundingBox:
 
     @property
     def top_left_x(self):
-        """Gets the top_left_x of this BoundingBox.
+        r"""Gets the top_left_x of this BoundingBox.
 
         检测框左上角到垂直轴距离
 
@@ -119,7 +119,7 @@ class BoundingBox:
 
     @top_left_x.setter
     def top_left_x(self, top_left_x):
-        """Sets the top_left_x of this BoundingBox.
+        r"""Sets the top_left_x of this BoundingBox.
 
         检测框左上角到垂直轴距离
 
@@ -130,7 +130,7 @@ class BoundingBox:
 
     @property
     def top_left_y(self):
-        """Gets the top_left_y of this BoundingBox.
+        r"""Gets the top_left_y of this BoundingBox.
 
         检测框左上角到水平轴距离
 
@@ -141,7 +141,7 @@ class BoundingBox:
 
     @top_left_y.setter
     def top_left_y(self, top_left_y):
-        """Sets the top_left_y of this BoundingBox.
+        r"""Sets the top_left_y of this BoundingBox.
 
         检测框左上角到水平轴距离
 

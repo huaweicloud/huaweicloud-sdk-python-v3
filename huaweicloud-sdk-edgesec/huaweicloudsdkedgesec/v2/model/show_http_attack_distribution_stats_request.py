@@ -35,7 +35,7 @@ class ShowHttpAttackDistributionStatsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, domain_name=None, stat_type=None, group_by=None, start_time=None, end_time=None):
-        """ShowHttpAttackDistributionStatsRequest
+        r"""ShowHttpAttackDistributionStatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpAttackDistributionStatsRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpAttackDistributionStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -85,7 +85,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpAttackDistributionStatsRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpAttackDistributionStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -96,7 +96,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowHttpAttackDistributionStatsRequest.
+        r"""Gets the domain_name of this ShowHttpAttackDistributionStatsRequest.
 
         域名
 
@@ -107,7 +107,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowHttpAttackDistributionStatsRequest.
+        r"""Sets the domain_name of this ShowHttpAttackDistributionStatsRequest.
 
         域名
 
@@ -118,7 +118,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowHttpAttackDistributionStatsRequest.
+        r"""Gets the stat_type of this ShowHttpAttackDistributionStatsRequest.
 
         安全统计指标类型。 比如req_num（请求次数），bw（带宽），目前支持req_num
 
@@ -129,7 +129,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowHttpAttackDistributionStatsRequest.
+        r"""Sets the stat_type of this ShowHttpAttackDistributionStatsRequest.
 
         安全统计指标类型。 比如req_num（请求次数），bw（带宽），目前支持req_num
 
@@ -140,7 +140,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowHttpAttackDistributionStatsRequest.
+        r"""Gets the group_by of this ShowHttpAttackDistributionStatsRequest.
 
         目前支持action（防护动作）, attack_type（攻击类型）
 
@@ -151,7 +151,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowHttpAttackDistributionStatsRequest.
+        r"""Sets the group_by of this ShowHttpAttackDistributionStatsRequest.
 
         目前支持action（防护动作）, attack_type（攻击类型）
 
@@ -162,7 +162,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHttpAttackDistributionStatsRequest.
+        r"""Gets the start_time of this ShowHttpAttackDistributionStatsRequest.
 
         起始时间，使用秒级时间戳
 
@@ -173,7 +173,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHttpAttackDistributionStatsRequest.
+        r"""Sets the start_time of this ShowHttpAttackDistributionStatsRequest.
 
         起始时间，使用秒级时间戳
 
@@ -184,7 +184,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHttpAttackDistributionStatsRequest.
+        r"""Gets the end_time of this ShowHttpAttackDistributionStatsRequest.
 
         结束时间，使用秒级时间戳
 
@@ -195,7 +195,7 @@ class ShowHttpAttackDistributionStatsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHttpAttackDistributionStatsRequest.
+        r"""Sets the end_time of this ShowHttpAttackDistributionStatsRequest.
 
         结束时间，使用秒级时间戳
 

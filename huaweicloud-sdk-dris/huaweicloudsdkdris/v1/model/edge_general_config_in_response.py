@@ -41,7 +41,7 @@ class EdgeGeneralConfigInResponse:
     }
 
     def __init__(self, avp_enabled=None, rsm_enabled=None, time_compensate=None, rsi_positioning_enabled=None, log_level=None, road_detection_length=None, ramp_detection_length=None, gat1400_username=None, user_name=None):
-        """EdgeGeneralConfigInResponse
+        r"""EdgeGeneralConfigInResponse
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def avp_enabled(self):
-        """Gets the avp_enabled of this EdgeGeneralConfigInResponse.
+        r"""Gets the avp_enabled of this EdgeGeneralConfigInResponse.
 
         **参数说明**：AVP场景。
 
@@ -110,7 +110,7 @@ class EdgeGeneralConfigInResponse:
 
     @avp_enabled.setter
     def avp_enabled(self, avp_enabled):
-        """Sets the avp_enabled of this EdgeGeneralConfigInResponse.
+        r"""Sets the avp_enabled of this EdgeGeneralConfigInResponse.
 
         **参数说明**：AVP场景。
 
@@ -121,7 +121,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def rsm_enabled(self):
-        """Gets the rsm_enabled of this EdgeGeneralConfigInResponse.
+        r"""Gets the rsm_enabled of this EdgeGeneralConfigInResponse.
 
         **参数说明**：RSM上报：默认不上报。
 
@@ -132,7 +132,7 @@ class EdgeGeneralConfigInResponse:
 
     @rsm_enabled.setter
     def rsm_enabled(self, rsm_enabled):
-        """Sets the rsm_enabled of this EdgeGeneralConfigInResponse.
+        r"""Sets the rsm_enabled of this EdgeGeneralConfigInResponse.
 
         **参数说明**：RSM上报：默认不上报。
 
@@ -143,7 +143,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def time_compensate(self):
-        """Gets the time_compensate of this EdgeGeneralConfigInResponse.
+        r"""Gets the time_compensate of this EdgeGeneralConfigInResponse.
 
         **参数说明**：时延补偿：是否启动Edge时延补偿功能。
 
@@ -154,7 +154,7 @@ class EdgeGeneralConfigInResponse:
 
     @time_compensate.setter
     def time_compensate(self, time_compensate):
-        """Sets the time_compensate of this EdgeGeneralConfigInResponse.
+        r"""Sets the time_compensate of this EdgeGeneralConfigInResponse.
 
         **参数说明**：时延补偿：是否启动Edge时延补偿功能。
 
@@ -165,7 +165,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def rsi_positioning_enabled(self):
-        """Gets the rsi_positioning_enabled of this EdgeGeneralConfigInResponse.
+        r"""Gets the rsi_positioning_enabled of this EdgeGeneralConfigInResponse.
 
         **参数说明**：RSI事件定位功能。
 
@@ -176,7 +176,7 @@ class EdgeGeneralConfigInResponse:
 
     @rsi_positioning_enabled.setter
     def rsi_positioning_enabled(self, rsi_positioning_enabled):
-        """Sets the rsi_positioning_enabled of this EdgeGeneralConfigInResponse.
+        r"""Sets the rsi_positioning_enabled of this EdgeGeneralConfigInResponse.
 
         **参数说明**：RSI事件定位功能。
 
@@ -187,7 +187,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def log_level(self):
-        """Gets the log_level of this EdgeGeneralConfigInResponse.
+        r"""Gets the log_level of this EdgeGeneralConfigInResponse.
 
         **参数说明**：应用日志级别  **取值范围**：on/off，默认关闭。
 
@@ -198,7 +198,7 @@ class EdgeGeneralConfigInResponse:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this EdgeGeneralConfigInResponse.
+        r"""Sets the log_level of this EdgeGeneralConfigInResponse.
 
         **参数说明**：应用日志级别  **取值范围**：on/off，默认关闭。
 
@@ -209,7 +209,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def road_detection_length(self):
-        """Gets the road_detection_length of this EdgeGeneralConfigInResponse.
+        r"""Gets the road_detection_length of this EdgeGeneralConfigInResponse.
 
         **参数说明**：道路检测长度，单位：米。
 
@@ -220,7 +220,7 @@ class EdgeGeneralConfigInResponse:
 
     @road_detection_length.setter
     def road_detection_length(self, road_detection_length):
-        """Sets the road_detection_length of this EdgeGeneralConfigInResponse.
+        r"""Sets the road_detection_length of this EdgeGeneralConfigInResponse.
 
         **参数说明**：道路检测长度，单位：米。
 
@@ -231,7 +231,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def ramp_detection_length(self):
-        """Gets the ramp_detection_length of this EdgeGeneralConfigInResponse.
+        r"""Gets the ramp_detection_length of this EdgeGeneralConfigInResponse.
 
         **参数说明**：匝道检测长度，单位：米。
 
@@ -242,7 +242,7 @@ class EdgeGeneralConfigInResponse:
 
     @ramp_detection_length.setter
     def ramp_detection_length(self, ramp_detection_length):
-        """Sets the ramp_detection_length of this EdgeGeneralConfigInResponse.
+        r"""Sets the ramp_detection_length of this EdgeGeneralConfigInResponse.
 
         **参数说明**：匝道检测长度，单位：米。
 
@@ -253,7 +253,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def gat1400_username(self):
-        """Gets the gat1400_username of this EdgeGeneralConfigInResponse.
+        r"""Gets the gat1400_username of this EdgeGeneralConfigInResponse.
 
         **参数说明**：1400接口用户名。  **取值范围**：长度不小于8，不大于32，只允许数字字母下划线组合，且不能以数字下划线开头，不能有中文和特殊字符，gat1400用户名不能与gat1400密码相同。
 
@@ -264,7 +264,7 @@ class EdgeGeneralConfigInResponse:
 
     @gat1400_username.setter
     def gat1400_username(self, gat1400_username):
-        """Sets the gat1400_username of this EdgeGeneralConfigInResponse.
+        r"""Sets the gat1400_username of this EdgeGeneralConfigInResponse.
 
         **参数说明**：1400接口用户名。  **取值范围**：长度不小于8，不大于32，只允许数字字母下划线组合，且不能以数字下划线开头，不能有中文和特殊字符，gat1400用户名不能与gat1400密码相同。
 
@@ -275,7 +275,7 @@ class EdgeGeneralConfigInResponse:
 
     @property
     def user_name(self):
-        """Gets the user_name of this EdgeGeneralConfigInResponse.
+        r"""Gets the user_name of this EdgeGeneralConfigInResponse.
 
         **参数说明**：ITS800鉴权用的用户名和密码。
 
@@ -286,7 +286,7 @@ class EdgeGeneralConfigInResponse:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this EdgeGeneralConfigInResponse.
+        r"""Sets the user_name of this EdgeGeneralConfigInResponse.
 
         **参数说明**：ITS800鉴权用的用户名和密码。
 

@@ -31,7 +31,7 @@ class UpdateDbCacheRuleRequestBody:
     }
 
     def __init__(self, dbcache_rule_id=None, value_columns=None, ttl=None, value_separator=None):
-        """UpdateDbCacheRuleRequestBody
+        r"""UpdateDbCacheRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @property
     def dbcache_rule_id(self):
-        """Gets the dbcache_rule_id of this UpdateDbCacheRuleRequestBody.
+        r"""Gets the dbcache_rule_id of this UpdateDbCacheRuleRequestBody.
 
         内存加速规则ID。
 
@@ -73,7 +73,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @dbcache_rule_id.setter
     def dbcache_rule_id(self, dbcache_rule_id):
-        """Sets the dbcache_rule_id of this UpdateDbCacheRuleRequestBody.
+        r"""Sets the dbcache_rule_id of this UpdateDbCacheRuleRequestBody.
 
         内存加速规则ID。
 
@@ -84,7 +84,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @property
     def value_columns(self):
-        """Gets the value_columns of this UpdateDbCacheRuleRequestBody.
+        r"""Gets the value_columns of this UpdateDbCacheRuleRequestBody.
 
         映射的value使用的column列表。
 
@@ -95,7 +95,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @value_columns.setter
     def value_columns(self, value_columns):
-        """Sets the value_columns of this UpdateDbCacheRuleRequestBody.
+        r"""Sets the value_columns of this UpdateDbCacheRuleRequestBody.
 
         映射的value使用的column列表。
 
@@ -106,7 +106,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @property
     def ttl(self):
-        """Gets the ttl of this UpdateDbCacheRuleRequestBody.
+        r"""Gets the ttl of this UpdateDbCacheRuleRequestBody.
 
         key的生存时间。单位:ms。不传该值，默认取2592000000，表示30天。
 
@@ -117,7 +117,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this UpdateDbCacheRuleRequestBody.
+        r"""Sets the ttl of this UpdateDbCacheRuleRequestBody.
 
         key的生存时间。单位:ms。不传该值，默认取2592000000，表示30天。
 
@@ -128,7 +128,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @property
     def value_separator(self):
-        """Gets the value_separator of this UpdateDbCacheRuleRequestBody.
+        r"""Gets the value_separator of this UpdateDbCacheRuleRequestBody.
 
         映射的value分隔符。只允许一个字符。
 
@@ -139,7 +139,7 @@ class UpdateDbCacheRuleRequestBody:
 
     @value_separator.setter
     def value_separator(self, value_separator):
-        """Sets the value_separator of this UpdateDbCacheRuleRequestBody.
+        r"""Sets the value_separator of this UpdateDbCacheRuleRequestBody.
 
         映射的value分隔符。只允许一个字符。
 

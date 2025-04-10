@@ -33,7 +33,7 @@ class SignPublishedAgreementRequest:
     }
 
     def __init__(self, id=None, x_site=None, x_language=None, x_time_zone=None, body=None):
-        """SignPublishedAgreementRequest
+        r"""SignPublishedAgreementRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class SignPublishedAgreementRequest:
 
     @property
     def id(self):
-        """Gets the id of this SignPublishedAgreementRequest.
+        r"""Gets the id of this SignPublishedAgreementRequest.
 
         协议id
 
@@ -81,7 +81,7 @@ class SignPublishedAgreementRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SignPublishedAgreementRequest.
+        r"""Sets the id of this SignPublishedAgreementRequest.
 
         协议id
 
@@ -92,7 +92,7 @@ class SignPublishedAgreementRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this SignPublishedAgreementRequest.
+        r"""Gets the x_site of this SignPublishedAgreementRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -103,7 +103,7 @@ class SignPublishedAgreementRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this SignPublishedAgreementRequest.
+        r"""Sets the x_site of this SignPublishedAgreementRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -114,7 +114,7 @@ class SignPublishedAgreementRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SignPublishedAgreementRequest.
+        r"""Gets the x_language of this SignPublishedAgreementRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -125,7 +125,7 @@ class SignPublishedAgreementRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SignPublishedAgreementRequest.
+        r"""Sets the x_language of this SignPublishedAgreementRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -136,7 +136,7 @@ class SignPublishedAgreementRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this SignPublishedAgreementRequest.
+        r"""Gets the x_time_zone of this SignPublishedAgreementRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -147,7 +147,7 @@ class SignPublishedAgreementRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this SignPublishedAgreementRequest.
+        r"""Sets the x_time_zone of this SignPublishedAgreementRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -158,7 +158,7 @@ class SignPublishedAgreementRequest:
 
     @property
     def body(self):
-        """Gets the body of this SignPublishedAgreementRequest.
+        r"""Gets the body of this SignPublishedAgreementRequest.
 
         :return: The body of this SignPublishedAgreementRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SignAgreementReq`
@@ -167,7 +167,7 @@ class SignPublishedAgreementRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SignPublishedAgreementRequest.
+        r"""Sets the body of this SignPublishedAgreementRequest.
 
         :param body: The body of this SignPublishedAgreementRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SignAgreementReq`

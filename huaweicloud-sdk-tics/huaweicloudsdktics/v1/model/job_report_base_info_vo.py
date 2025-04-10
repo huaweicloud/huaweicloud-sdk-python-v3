@@ -35,7 +35,7 @@ class JobReportBaseInfoVo:
     }
 
     def __init__(self, exe_time=None, executor=None, hfl_type=None, job_name=None, job_type=None, status=None):
-        """JobReportBaseInfoVo
+        r"""JobReportBaseInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class JobReportBaseInfoVo:
 
     @property
     def exe_time(self):
-        """Gets the exe_time of this JobReportBaseInfoVo.
+        r"""Gets the exe_time of this JobReportBaseInfoVo.
 
         执行时间
 
@@ -85,7 +85,7 @@ class JobReportBaseInfoVo:
 
     @exe_time.setter
     def exe_time(self, exe_time):
-        """Sets the exe_time of this JobReportBaseInfoVo.
+        r"""Sets the exe_time of this JobReportBaseInfoVo.
 
         执行时间
 
@@ -96,7 +96,7 @@ class JobReportBaseInfoVo:
 
     @property
     def executor(self):
-        """Gets the executor of this JobReportBaseInfoVo.
+        r"""Gets the executor of this JobReportBaseInfoVo.
 
         执行人
 
@@ -107,7 +107,7 @@ class JobReportBaseInfoVo:
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this JobReportBaseInfoVo.
+        r"""Sets the executor of this JobReportBaseInfoVo.
 
         执行人
 
@@ -118,7 +118,7 @@ class JobReportBaseInfoVo:
 
     @property
     def hfl_type(self):
-        """Gets the hfl_type of this JobReportBaseInfoVo.
+        r"""Gets the hfl_type of this JobReportBaseInfoVo.
 
         hfl作业类型枚举，TRAIN.训练,EVALUATE.评估
 
@@ -129,7 +129,7 @@ class JobReportBaseInfoVo:
 
     @hfl_type.setter
     def hfl_type(self, hfl_type):
-        """Sets the hfl_type of this JobReportBaseInfoVo.
+        r"""Sets the hfl_type of this JobReportBaseInfoVo.
 
         hfl作业类型枚举，TRAIN.训练,EVALUATE.评估
 
@@ -140,7 +140,7 @@ class JobReportBaseInfoVo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobReportBaseInfoVo.
+        r"""Gets the job_name of this JobReportBaseInfoVo.
 
         作业名称
 
@@ -151,7 +151,7 @@ class JobReportBaseInfoVo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobReportBaseInfoVo.
+        r"""Sets the job_name of this JobReportBaseInfoVo.
 
         作业名称
 
@@ -162,7 +162,7 @@ class JobReportBaseInfoVo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobReportBaseInfoVo.
+        r"""Gets the job_type of this JobReportBaseInfoVo.
 
         作业类型，HFL.横向联邦，SQL.联邦分析，VFL_EVALUATE.联邦评估，VFL_FEATURE_SELECTION.特征选择，VFL_ID_TRUNCATION.Id截断，VFL_PREDICT.联邦预测，VFL_SAMPLE_ALIGNMENT.样本对齐，VFL_TRAIN.联邦训练
 
@@ -173,7 +173,7 @@ class JobReportBaseInfoVo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobReportBaseInfoVo.
+        r"""Sets the job_type of this JobReportBaseInfoVo.
 
         作业类型，HFL.横向联邦，SQL.联邦分析，VFL_EVALUATE.联邦评估，VFL_FEATURE_SELECTION.特征选择，VFL_ID_TRUNCATION.Id截断，VFL_PREDICT.联邦预测，VFL_SAMPLE_ALIGNMENT.样本对齐，VFL_TRAIN.联邦训练
 
@@ -184,7 +184,7 @@ class JobReportBaseInfoVo:
 
     @property
     def status(self):
-        """Gets the status of this JobReportBaseInfoVo.
+        r"""Gets the status of this JobReportBaseInfoVo.
 
         作业任务状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 
@@ -195,7 +195,7 @@ class JobReportBaseInfoVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobReportBaseInfoVo.
+        r"""Sets the status of this JobReportBaseInfoVo.
 
         作业任务状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 

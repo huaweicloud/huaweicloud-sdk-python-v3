@@ -25,7 +25,7 @@ class ShowTargetPasswordRequest:
     }
 
     def __init__(self, id=None):
-        """ShowTargetPasswordRequest
+        r"""ShowTargetPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTargetPasswordRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowTargetPasswordRequest.
+        r"""Gets the id of this ShowTargetPasswordRequest.
 
         模板的ID
 
@@ -53,7 +53,7 @@ class ShowTargetPasswordRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTargetPasswordRequest.
+        r"""Sets the id of this ShowTargetPasswordRequest.
 
         模板的ID
 

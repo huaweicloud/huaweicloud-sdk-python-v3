@@ -29,7 +29,7 @@ class DeleteApplicationV4Request:
     }
 
     def __init__(self, application_id=None, is_delete_repository=None, pipeline_ids=None):
-        """DeleteApplicationV4Request
+        r"""DeleteApplicationV4Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteApplicationV4Request:
 
     @property
     def application_id(self):
-        """Gets the application_id of this DeleteApplicationV4Request.
+        r"""Gets the application_id of this DeleteApplicationV4Request.
 
         应用id
 
@@ -67,7 +67,7 @@ class DeleteApplicationV4Request:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this DeleteApplicationV4Request.
+        r"""Sets the application_id of this DeleteApplicationV4Request.
 
         应用id
 
@@ -78,7 +78,7 @@ class DeleteApplicationV4Request:
 
     @property
     def is_delete_repository(self):
-        """Gets the is_delete_repository of this DeleteApplicationV4Request.
+        r"""Gets the is_delete_repository of this DeleteApplicationV4Request.
 
         是否删除代码仓
 
@@ -89,7 +89,7 @@ class DeleteApplicationV4Request:
 
     @is_delete_repository.setter
     def is_delete_repository(self, is_delete_repository):
-        """Sets the is_delete_repository of this DeleteApplicationV4Request.
+        r"""Sets the is_delete_repository of this DeleteApplicationV4Request.
 
         是否删除代码仓
 
@@ -100,7 +100,7 @@ class DeleteApplicationV4Request:
 
     @property
     def pipeline_ids(self):
-        """Gets the pipeline_ids of this DeleteApplicationV4Request.
+        r"""Gets the pipeline_ids of this DeleteApplicationV4Request.
 
         删除流水线ID,多流水线逗号隔开
 
@@ -111,7 +111,7 @@ class DeleteApplicationV4Request:
 
     @pipeline_ids.setter
     def pipeline_ids(self, pipeline_ids):
-        """Sets the pipeline_ids of this DeleteApplicationV4Request.
+        r"""Sets the pipeline_ids of this DeleteApplicationV4Request.
 
         删除流水线ID,多流水线逗号隔开
 

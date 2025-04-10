@@ -28,7 +28,7 @@ class ListProjectStrategyResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None):
-        """ListProjectStrategyResponse
+        r"""ListProjectStrategyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectStrategyResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListProjectStrategyResponse.
+        r"""Gets the data of this ListProjectStrategyResponse.
 
         规则实例列表
 
@@ -62,7 +62,7 @@ class ListProjectStrategyResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListProjectStrategyResponse.
+        r"""Sets the data of this ListProjectStrategyResponse.
 
         规则实例列表
 
@@ -73,7 +73,7 @@ class ListProjectStrategyResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectStrategyResponse.
+        r"""Gets the total of this ListProjectStrategyResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListProjectStrategyResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectStrategyResponse.
+        r"""Sets the total of this ListProjectStrategyResponse.
 
         总数
 

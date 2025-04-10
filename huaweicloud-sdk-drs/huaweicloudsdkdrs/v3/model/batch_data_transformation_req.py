@@ -25,7 +25,7 @@ class BatchDataTransformationReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchDataTransformationReq
+        r"""BatchDataTransformationReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDataTransformationReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchDataTransformationReq.
+        r"""Gets the jobs of this BatchDataTransformationReq.
 
         批量数据加工规则请求列表
 
@@ -53,7 +53,7 @@ class BatchDataTransformationReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchDataTransformationReq.
+        r"""Sets the jobs of this BatchDataTransformationReq.
 
         批量数据加工规则请求列表
 

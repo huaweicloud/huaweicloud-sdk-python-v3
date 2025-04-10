@@ -23,7 +23,7 @@ class Filter:
     }
 
     def __init__(self):
-        """Filter
+        r"""Filter
 
         The model defined in huaweicloud sdk
 

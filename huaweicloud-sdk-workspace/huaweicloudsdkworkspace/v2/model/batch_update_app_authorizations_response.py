@@ -24,7 +24,7 @@ class BatchUpdateAppAuthorizationsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUpdateAppAuthorizationsResponse
+        r"""BatchUpdateAppAuthorizationsResponse
 
         The model defined in huaweicloud sdk
 

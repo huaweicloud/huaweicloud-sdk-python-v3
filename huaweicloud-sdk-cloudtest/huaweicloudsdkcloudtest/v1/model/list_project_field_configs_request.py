@@ -25,7 +25,7 @@ class ListProjectFieldConfigsRequest:
     }
 
     def __init__(self, project_id=None):
-        """ListProjectFieldConfigsRequest
+        r"""ListProjectFieldConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProjectFieldConfigsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectFieldConfigsRequest.
+        r"""Gets the project_id of this ListProjectFieldConfigsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -53,7 +53,7 @@ class ListProjectFieldConfigsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectFieldConfigsRequest.
+        r"""Sets the project_id of this ListProjectFieldConfigsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 

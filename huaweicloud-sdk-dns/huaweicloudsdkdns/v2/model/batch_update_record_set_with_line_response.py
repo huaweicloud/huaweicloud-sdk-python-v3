@@ -30,7 +30,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """BatchUpdateRecordSetWithLineResponse
+        r"""BatchUpdateRecordSetWithLineResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this BatchUpdateRecordSetWithLineResponse.
+        r"""Gets the links of this BatchUpdateRecordSetWithLineResponse.
 
         :return: The links of this BatchUpdateRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this BatchUpdateRecordSetWithLineResponse.
+        r"""Sets the links of this BatchUpdateRecordSetWithLineResponse.
 
         :param links: The links of this BatchUpdateRecordSetWithLineResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this BatchUpdateRecordSetWithLineResponse.
+        r"""Gets the recordsets of this BatchUpdateRecordSetWithLineResponse.
 
         recordset的列表信息。
 
@@ -87,7 +87,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this BatchUpdateRecordSetWithLineResponse.
+        r"""Sets the recordsets of this BatchUpdateRecordSetWithLineResponse.
 
         recordset的列表信息。
 
@@ -98,7 +98,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this BatchUpdateRecordSetWithLineResponse.
+        r"""Gets the metadata of this BatchUpdateRecordSetWithLineResponse.
 
         :return: The metadata of this BatchUpdateRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this BatchUpdateRecordSetWithLineResponse.
+        r"""Sets the metadata of this BatchUpdateRecordSetWithLineResponse.
 
         :param metadata: The metadata of this BatchUpdateRecordSetWithLineResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

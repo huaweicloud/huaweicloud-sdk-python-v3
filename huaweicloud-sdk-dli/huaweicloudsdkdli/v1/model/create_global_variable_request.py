@@ -25,7 +25,7 @@ class CreateGlobalVariableRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGlobalVariableRequest
+        r"""CreateGlobalVariableRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGlobalVariableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGlobalVariableRequest.
+        r"""Gets the body of this CreateGlobalVariableRequest.
 
         :return: The body of this CreateGlobalVariableRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateGlobalVariableRequestBody`
@@ -52,7 +52,7 @@ class CreateGlobalVariableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGlobalVariableRequest.
+        r"""Sets the body of this CreateGlobalVariableRequest.
 
         :param body: The body of this CreateGlobalVariableRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateGlobalVariableRequestBody`

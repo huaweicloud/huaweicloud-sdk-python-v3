@@ -27,7 +27,7 @@ class UpdateHotkeyAutoScanConfigRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateHotkeyAutoScanConfigRequest
+        r"""UpdateHotkeyAutoScanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHotkeyAutoScanConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateHotkeyAutoScanConfigRequest.
+        r"""Gets the instance_id of this UpdateHotkeyAutoScanConfigRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateHotkeyAutoScanConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateHotkeyAutoScanConfigRequest.
+        r"""Sets the instance_id of this UpdateHotkeyAutoScanConfigRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateHotkeyAutoScanConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHotkeyAutoScanConfigRequest.
+        r"""Gets the body of this UpdateHotkeyAutoScanConfigRequest.
 
         :return: The body of this UpdateHotkeyAutoScanConfigRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`
@@ -80,7 +80,7 @@ class UpdateHotkeyAutoScanConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHotkeyAutoScanConfigRequest.
+        r"""Sets the body of this UpdateHotkeyAutoScanConfigRequest.
 
         :param body: The body of this UpdateHotkeyAutoScanConfigRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`

@@ -25,7 +25,7 @@ class ListClustersRequest:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ListClustersRequest
+        r"""ListClustersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListClustersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListClustersRequest.
+        r"""Gets the enterprise_project_id of this ListClustersRequest.
 
         企业项目ID，查询所有绑定eps集群，值为all_granted_eps
 
@@ -54,7 +54,7 @@ class ListClustersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListClustersRequest.
+        r"""Sets the enterprise_project_id of this ListClustersRequest.
 
         企业项目ID，查询所有绑定eps集群，值为all_granted_eps
 

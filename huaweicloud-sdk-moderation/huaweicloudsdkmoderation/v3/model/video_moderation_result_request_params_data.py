@@ -27,7 +27,7 @@ class VideoModerationResultRequestParamsData:
     }
 
     def __init__(self, url=None, frame_interval=None):
-        """VideoModerationResultRequestParamsData
+        r"""VideoModerationResultRequestParamsData
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VideoModerationResultRequestParamsData:
 
     @property
     def url(self):
-        """Gets the url of this VideoModerationResultRequestParamsData.
+        r"""Gets the url of this VideoModerationResultRequestParamsData.
 
         创建作业时传的url参数
 
@@ -60,7 +60,7 @@ class VideoModerationResultRequestParamsData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this VideoModerationResultRequestParamsData.
+        r"""Sets the url of this VideoModerationResultRequestParamsData.
 
         创建作业时传的url参数
 
@@ -71,7 +71,7 @@ class VideoModerationResultRequestParamsData:
 
     @property
     def frame_interval(self):
-        """Gets the frame_interval of this VideoModerationResultRequestParamsData.
+        r"""Gets the frame_interval of this VideoModerationResultRequestParamsData.
 
         创建作业时传的frame_interval参数，默认为5秒截取一帧
 
@@ -82,7 +82,7 @@ class VideoModerationResultRequestParamsData:
 
     @frame_interval.setter
     def frame_interval(self, frame_interval):
-        """Sets the frame_interval of this VideoModerationResultRequestParamsData.
+        r"""Sets the frame_interval of this VideoModerationResultRequestParamsData.
 
         创建作业时传的frame_interval参数，默认为5秒截取一帧
 

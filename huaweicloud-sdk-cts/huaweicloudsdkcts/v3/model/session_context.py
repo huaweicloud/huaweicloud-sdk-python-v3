@@ -25,7 +25,7 @@ class SessionContext:
     }
 
     def __init__(self, attributes=None):
-        """SessionContext
+        r"""SessionContext
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SessionContext:
 
     @property
     def attributes(self):
-        """Gets the attributes of this SessionContext.
+        r"""Gets the attributes of this SessionContext.
 
         :return: The attributes of this SessionContext.
         :rtype: :class:`huaweicloudsdkcts.v3.Attributes`
@@ -52,7 +52,7 @@ class SessionContext:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this SessionContext.
+        r"""Sets the attributes of this SessionContext.
 
         :param attributes: The attributes of this SessionContext.
         :type attributes: :class:`huaweicloudsdkcts.v3.Attributes`

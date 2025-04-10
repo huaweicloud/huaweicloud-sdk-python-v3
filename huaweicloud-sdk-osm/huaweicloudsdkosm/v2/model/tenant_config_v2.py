@@ -25,7 +25,7 @@ class TenantConfigV2:
     }
 
     def __init__(self, create_case_ccemail_max_count=None):
-        """TenantConfigV2
+        r"""TenantConfigV2
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TenantConfigV2:
 
     @property
     def create_case_ccemail_max_count(self):
-        """Gets the create_case_ccemail_max_count of this TenantConfigV2.
+        r"""Gets the create_case_ccemail_max_count of this TenantConfigV2.
 
         抄送邮箱最大个数
 
@@ -54,7 +54,7 @@ class TenantConfigV2:
 
     @create_case_ccemail_max_count.setter
     def create_case_ccemail_max_count(self, create_case_ccemail_max_count):
-        """Sets the create_case_ccemail_max_count of this TenantConfigV2.
+        r"""Sets the create_case_ccemail_max_count of this TenantConfigV2.
 
         抄送邮箱最大个数
 

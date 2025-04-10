@@ -29,7 +29,7 @@ class EditedLigand:
     }
 
     def __init__(self, source=None, format=None, data=None):
-        """EditedLigand
+        r"""EditedLigand
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EditedLigand:
 
     @property
     def source(self):
-        """Gets the source of this EditedLigand.
+        r"""Gets the source of this EditedLigand.
 
         文件来源，仅支持RAW
 
@@ -67,7 +67,7 @@ class EditedLigand:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this EditedLigand.
+        r"""Sets the source of this EditedLigand.
 
         文件来源，仅支持RAW
 
@@ -78,7 +78,7 @@ class EditedLigand:
 
     @property
     def format(self):
-        """Gets the format of this EditedLigand.
+        r"""Gets the format of this EditedLigand.
 
         文件格式，仅支持CIF
 
@@ -89,7 +89,7 @@ class EditedLigand:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this EditedLigand.
+        r"""Sets the format of this EditedLigand.
 
         文件格式，仅支持CIF
 
@@ -100,7 +100,7 @@ class EditedLigand:
 
     @property
     def data(self):
-        """Gets the data of this EditedLigand.
+        r"""Gets the data of this EditedLigand.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -111,7 +111,7 @@ class EditedLigand:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this EditedLigand.
+        r"""Sets the data of this EditedLigand.
 
         文件原始数据，仅数据源为RAW时提供
 

@@ -28,7 +28,7 @@ class CheckCallNumberInConfResponse(SdkResponse):
     }
 
     def __init__(self, in_conf=None, conf_id=None):
-        """CheckCallNumberInConfResponse
+        r"""CheckCallNumberInConfResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckCallNumberInConfResponse(SdkResponse):
 
     @property
     def in_conf(self):
-        """Gets the in_conf of this CheckCallNumberInConfResponse.
+        r"""Gets the in_conf of this CheckCallNumberInConfResponse.
 
         是否在会议中
 
@@ -62,7 +62,7 @@ class CheckCallNumberInConfResponse(SdkResponse):
 
     @in_conf.setter
     def in_conf(self, in_conf):
-        """Sets the in_conf of this CheckCallNumberInConfResponse.
+        r"""Sets the in_conf of this CheckCallNumberInConfResponse.
 
         是否在会议中
 
@@ -73,7 +73,7 @@ class CheckCallNumberInConfResponse(SdkResponse):
 
     @property
     def conf_id(self):
-        """Gets the conf_id of this CheckCallNumberInConfResponse.
+        r"""Gets the conf_id of this CheckCallNumberInConfResponse.
 
         会议id
 
@@ -84,7 +84,7 @@ class CheckCallNumberInConfResponse(SdkResponse):
 
     @conf_id.setter
     def conf_id(self, conf_id):
-        """Sets the conf_id of this CheckCallNumberInConfResponse.
+        r"""Sets the conf_id of this CheckCallNumberInConfResponse.
 
         会议id
 

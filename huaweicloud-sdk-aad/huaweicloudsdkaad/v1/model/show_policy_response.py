@@ -34,7 +34,7 @@ class ShowPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, package_id=None, name=None, clean_threshold=None, pop_policy=None):
-        """ShowPolicyResponse
+        r"""ShowPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPolicyResponse.
+        r"""Gets the id of this ShowPolicyResponse.
 
         策略id
 
@@ -83,7 +83,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPolicyResponse.
+        r"""Sets the id of this ShowPolicyResponse.
 
         策略id
 
@@ -94,7 +94,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @property
     def package_id(self):
-        """Gets the package_id of this ShowPolicyResponse.
+        r"""Gets the package_id of this ShowPolicyResponse.
 
         防护包id
 
@@ -105,7 +105,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ShowPolicyResponse.
+        r"""Sets the package_id of this ShowPolicyResponse.
 
         防护包id
 
@@ -116,7 +116,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPolicyResponse.
+        r"""Gets the name of this ShowPolicyResponse.
 
         策略名
 
@@ -127,7 +127,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPolicyResponse.
+        r"""Sets the name of this ShowPolicyResponse.
 
         策略名
 
@@ -138,7 +138,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @property
     def clean_threshold(self):
-        """Gets the clean_threshold of this ShowPolicyResponse.
+        r"""Gets the clean_threshold of this ShowPolicyResponse.
 
         清洗阈值
 
@@ -149,7 +149,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @clean_threshold.setter
     def clean_threshold(self, clean_threshold):
-        """Sets the clean_threshold of this ShowPolicyResponse.
+        r"""Sets the clean_threshold of this ShowPolicyResponse.
 
         清洗阈值
 
@@ -160,7 +160,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @property
     def pop_policy(self):
-        """Gets the pop_policy of this ShowPolicyResponse.
+        r"""Gets the pop_policy of this ShowPolicyResponse.
 
         :return: The pop_policy of this ShowPolicyResponse.
         :rtype: :class:`huaweicloudsdkaad.v1.PopPolicy`
@@ -169,7 +169,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @pop_policy.setter
     def pop_policy(self, pop_policy):
-        """Sets the pop_policy of this ShowPolicyResponse.
+        r"""Sets the pop_policy of this ShowPolicyResponse.
 
         :param pop_policy: The pop_policy of this ShowPolicyResponse.
         :type pop_policy: :class:`huaweicloudsdkaad.v1.PopPolicy`

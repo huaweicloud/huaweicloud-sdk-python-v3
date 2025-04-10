@@ -26,7 +26,7 @@ class UpdateMenuResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateMenuResponse
+        r"""UpdateMenuResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMenuResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateMenuResponse.
+        r"""Gets the data of this UpdateMenuResponse.
 
         :return: The data of this UpdateMenuResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateMenuResponseModel`
@@ -53,7 +53,7 @@ class UpdateMenuResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateMenuResponse.
+        r"""Sets the data of this UpdateMenuResponse.
 
         :param data: The data of this UpdateMenuResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.UpdateMenuResponseModel`

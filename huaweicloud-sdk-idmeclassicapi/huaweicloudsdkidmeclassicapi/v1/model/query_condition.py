@@ -41,7 +41,7 @@ class QueryCondition:
     }
 
     def __init__(self, condition_name=None, condition_value=None, condition_values=None, conditions=None, ignore_str=None, join_table_alias=None, joiner=None, operator=None, pre_condition=None):
-        """QueryCondition
+        r"""QueryCondition
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryCondition:
 
     @property
     def condition_name(self):
-        """Gets the condition_name of this QueryCondition.
+        r"""Gets the condition_name of this QueryCondition.
 
         **参数解释：**  查询条件的名称（数据模型的属性英文名称）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -110,7 +110,7 @@ class QueryCondition:
 
     @condition_name.setter
     def condition_name(self, condition_name):
-        """Sets the condition_name of this QueryCondition.
+        r"""Sets the condition_name of this QueryCondition.
 
         **参数解释：**  查询条件的名称（数据模型的属性英文名称）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -121,7 +121,7 @@ class QueryCondition:
 
     @property
     def condition_value(self):
-        """Gets the condition_value of this QueryCondition.
+        r"""Gets the condition_value of this QueryCondition.
 
         **参数解释：**  查询条件值（已过时）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -132,7 +132,7 @@ class QueryCondition:
 
     @condition_value.setter
     def condition_value(self, condition_value):
-        """Sets the condition_value of this QueryCondition.
+        r"""Sets the condition_value of this QueryCondition.
 
         **参数解释：**  查询条件值（已过时）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -143,7 +143,7 @@ class QueryCondition:
 
     @property
     def condition_values(self):
-        """Gets the condition_values of this QueryCondition.
+        r"""Gets the condition_values of this QueryCondition.
 
         **参数解释：**  查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -154,7 +154,7 @@ class QueryCondition:
 
     @condition_values.setter
     def condition_values(self, condition_values):
-        """Sets the condition_values of this QueryCondition.
+        r"""Sets the condition_values of this QueryCondition.
 
         **参数解释：**  查询条件的值。operator为in时有多值，operator为其他操作符时均为单值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -165,7 +165,7 @@ class QueryCondition:
 
     @property
     def conditions(self):
-        """Gets the conditions of this QueryCondition.
+        r"""Gets the conditions of this QueryCondition.
 
         **参数解释：**  查询条件列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -176,7 +176,7 @@ class QueryCondition:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this QueryCondition.
+        r"""Sets the conditions of this QueryCondition.
 
         **参数解释：**  查询条件列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -187,7 +187,7 @@ class QueryCondition:
 
     @property
     def ignore_str(self):
-        """Gets the ignore_str of this QueryCondition.
+        r"""Gets the ignore_str of this QueryCondition.
 
         **参数解释：**  是否忽略大小写。  **约束限制：**  不涉及。  **取值范围：**  - true：表示忽略。 - false：表示不忽略。  **默认取值：**  false。 
 
@@ -198,7 +198,7 @@ class QueryCondition:
 
     @ignore_str.setter
     def ignore_str(self, ignore_str):
-        """Sets the ignore_str of this QueryCondition.
+        r"""Sets the ignore_str of this QueryCondition.
 
         **参数解释：**  是否忽略大小写。  **约束限制：**  不涉及。  **取值范围：**  - true：表示忽略。 - false：表示不忽略。  **默认取值：**  false。 
 
@@ -209,7 +209,7 @@ class QueryCondition:
 
     @property
     def join_table_alias(self):
-        """Gets the join_table_alias of this QueryCondition.
+        r"""Gets the join_table_alias of this QueryCondition.
 
         **参数解释：**  关联查询时被关联表的别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -220,7 +220,7 @@ class QueryCondition:
 
     @join_table_alias.setter
     def join_table_alias(self, join_table_alias):
-        """Sets the join_table_alias of this QueryCondition.
+        r"""Sets the join_table_alias of this QueryCondition.
 
         **参数解释：**  关联查询时被关联表的别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -231,7 +231,7 @@ class QueryCondition:
 
     @property
     def joiner(self):
-        """Gets the joiner of this QueryCondition.
+        r"""Gets the joiner of this QueryCondition.
 
         **参数解释：**  连接符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -242,7 +242,7 @@ class QueryCondition:
 
     @joiner.setter
     def joiner(self, joiner):
-        """Sets the joiner of this QueryCondition.
+        r"""Sets the joiner of this QueryCondition.
 
         **参数解释：**  连接符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -253,7 +253,7 @@ class QueryCondition:
 
     @property
     def operator(self):
-        """Gets the operator of this QueryCondition.
+        r"""Gets the operator of this QueryCondition.
 
         **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。 - startWith：头匹配查询。 - endWith：尾匹配查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - not in：排除查询。 - ISNULL：值为空查询。 - NOTNULL：值不为空查询。  **默认取值：**  不涉及。 
 
@@ -264,7 +264,7 @@ class QueryCondition:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this QueryCondition.
+        r"""Sets the operator of this QueryCondition.
 
         **参数解释：**  操作符。  **约束限制：**  不涉及。  **取值范围：**  - =：等于查询。 - <：小于查询。 - \\>：大于查询。 - \\>=：大于等于查询。 - <=：小于等于查询。 - <>：不等于查询。 - startWith：头匹配查询。 - endWith：尾匹配查询。 - like：模糊查询。 - customLike：支持输入*或%的模糊查询。 - in：包含查询。 - not in：排除查询。 - ISNULL：值为空查询。 - NOTNULL：值不为空查询。  **默认取值：**  不涉及。 
 
@@ -275,7 +275,7 @@ class QueryCondition:
 
     @property
     def pre_condition(self):
-        """Gets the pre_condition of this QueryCondition.
+        r"""Gets the pre_condition of this QueryCondition.
 
         :return: The pre_condition of this QueryCondition.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -284,7 +284,7 @@ class QueryCondition:
 
     @pre_condition.setter
     def pre_condition(self, pre_condition):
-        """Sets the pre_condition of this QueryCondition.
+        r"""Sets the pre_condition of this QueryCondition.
 
         :param pre_condition: The pre_condition of this QueryCondition.
         :type pre_condition: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`

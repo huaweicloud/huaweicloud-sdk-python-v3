@@ -27,7 +27,7 @@ class TaskInstanceSpecConResRequestRsp:
     }
 
     def __init__(self, cpu=None, memory=None):
-        """TaskInstanceSpecConResRequestRsp
+        r"""TaskInstanceSpecConResRequestRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskInstanceSpecConResRequestRsp:
 
     @property
     def cpu(self):
-        """Gets the cpu of this TaskInstanceSpecConResRequestRsp.
+        r"""Gets the cpu of this TaskInstanceSpecConResRequestRsp.
 
         CPU申请值
 
@@ -61,7 +61,7 @@ class TaskInstanceSpecConResRequestRsp:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this TaskInstanceSpecConResRequestRsp.
+        r"""Sets the cpu of this TaskInstanceSpecConResRequestRsp.
 
         CPU申请值
 
@@ -72,7 +72,7 @@ class TaskInstanceSpecConResRequestRsp:
 
     @property
     def memory(self):
-        """Gets the memory of this TaskInstanceSpecConResRequestRsp.
+        r"""Gets the memory of this TaskInstanceSpecConResRequestRsp.
 
         内存申请值
 
@@ -83,7 +83,7 @@ class TaskInstanceSpecConResRequestRsp:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this TaskInstanceSpecConResRequestRsp.
+        r"""Sets the memory of this TaskInstanceSpecConResRequestRsp.
 
         内存申请值
 

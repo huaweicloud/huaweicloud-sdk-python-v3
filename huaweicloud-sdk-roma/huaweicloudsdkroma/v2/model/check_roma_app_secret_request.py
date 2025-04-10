@@ -27,7 +27,7 @@ class CheckRomaAppSecretRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None):
-        """CheckRomaAppSecretRequest
+        r"""CheckRomaAppSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckRomaAppSecretRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CheckRomaAppSecretRequest.
+        r"""Gets the app_id of this CheckRomaAppSecretRequest.
 
         应用ID
 
@@ -59,7 +59,7 @@ class CheckRomaAppSecretRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CheckRomaAppSecretRequest.
+        r"""Sets the app_id of this CheckRomaAppSecretRequest.
 
         应用ID
 
@@ -70,7 +70,7 @@ class CheckRomaAppSecretRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckRomaAppSecretRequest.
+        r"""Gets the instance_id of this CheckRomaAppSecretRequest.
 
         实例ID
 
@@ -81,7 +81,7 @@ class CheckRomaAppSecretRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckRomaAppSecretRequest.
+        r"""Sets the instance_id of this CheckRomaAppSecretRequest.
 
         实例ID
 

@@ -31,7 +31,7 @@ class DataTransformationResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """DataTransformationResp
+        r"""DataTransformationResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataTransformationResp:
 
     @property
     def id(self):
-        """Gets the id of this DataTransformationResp.
+        r"""Gets the id of this DataTransformationResp.
 
         任务id
 
@@ -75,7 +75,7 @@ class DataTransformationResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataTransformationResp.
+        r"""Sets the id of this DataTransformationResp.
 
         任务id
 
@@ -86,7 +86,7 @@ class DataTransformationResp:
 
     @property
     def status(self):
-        """Gets the status of this DataTransformationResp.
+        r"""Gets the status of this DataTransformationResp.
 
         状态
 
@@ -97,7 +97,7 @@ class DataTransformationResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DataTransformationResp.
+        r"""Sets the status of this DataTransformationResp.
 
         状态
 
@@ -108,7 +108,7 @@ class DataTransformationResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DataTransformationResp.
+        r"""Gets the error_code of this DataTransformationResp.
 
         错误码
 
@@ -119,7 +119,7 @@ class DataTransformationResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DataTransformationResp.
+        r"""Sets the error_code of this DataTransformationResp.
 
         错误码
 
@@ -130,7 +130,7 @@ class DataTransformationResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DataTransformationResp.
+        r"""Gets the error_msg of this DataTransformationResp.
 
         错误信息
 
@@ -141,7 +141,7 @@ class DataTransformationResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DataTransformationResp.
+        r"""Sets the error_msg of this DataTransformationResp.
 
         错误信息
 

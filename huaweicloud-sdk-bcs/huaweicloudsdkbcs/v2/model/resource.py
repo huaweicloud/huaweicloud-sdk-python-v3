@@ -37,7 +37,7 @@ class Resource:
     }
 
     def __init__(self, type=None, unit=None, min=None, max=None, quota=None, used=None, free=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Resource:
 
     @property
     def type(self):
-        """Gets the type of this Resource.
+        r"""Gets the type of this Resource.
 
         资源类型，包含instance（服务实例数）
 
@@ -96,7 +96,7 @@ class Resource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resource.
+        r"""Sets the type of this Resource.
 
         资源类型，包含instance（服务实例数）
 
@@ -107,7 +107,7 @@ class Resource:
 
     @property
     def unit(self):
-        """Gets the unit of this Resource.
+        r"""Gets the unit of this Resource.
 
         单位
 
@@ -118,7 +118,7 @@ class Resource:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Resource.
+        r"""Sets the unit of this Resource.
 
         单位
 
@@ -129,7 +129,7 @@ class Resource:
 
     @property
     def min(self):
-        """Gets the min of this Resource.
+        r"""Gets the min of this Resource.
 
         最小值
 
@@ -140,7 +140,7 @@ class Resource:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this Resource.
+        r"""Sets the min of this Resource.
 
         最小值
 
@@ -151,7 +151,7 @@ class Resource:
 
     @property
     def max(self):
-        """Gets the max of this Resource.
+        r"""Gets the max of this Resource.
 
         最大值
 
@@ -162,7 +162,7 @@ class Resource:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this Resource.
+        r"""Sets the max of this Resource.
 
         最大值
 
@@ -173,7 +173,7 @@ class Resource:
 
     @property
     def quota(self):
-        """Gets the quota of this Resource.
+        r"""Gets the quota of this Resource.
 
         配额
 
@@ -184,7 +184,7 @@ class Resource:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Resource.
+        r"""Sets the quota of this Resource.
 
         配额
 
@@ -195,7 +195,7 @@ class Resource:
 
     @property
     def used(self):
-        """Gets the used of this Resource.
+        r"""Gets the used of this Resource.
 
         已使用配额
 
@@ -206,7 +206,7 @@ class Resource:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Resource.
+        r"""Sets the used of this Resource.
 
         已使用配额
 
@@ -217,7 +217,7 @@ class Resource:
 
     @property
     def free(self):
-        """Gets the free of this Resource.
+        r"""Gets the free of this Resource.
 
         剩余配额
 
@@ -228,7 +228,7 @@ class Resource:
 
     @free.setter
     def free(self, free):
-        """Sets the free of this Resource.
+        r"""Sets the free of this Resource.
 
         剩余配额
 

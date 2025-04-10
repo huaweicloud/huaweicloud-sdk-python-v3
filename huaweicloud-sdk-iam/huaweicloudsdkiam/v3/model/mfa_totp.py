@@ -25,7 +25,7 @@ class MfaTotp:
     }
 
     def __init__(self, user=None):
-        """MfaTotp
+        r"""MfaTotp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MfaTotp:
 
     @property
     def user(self):
-        """Gets the user of this MfaTotp.
+        r"""Gets the user of this MfaTotp.
 
         :return: The user of this MfaTotp.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaTotpUser`
@@ -51,7 +51,7 @@ class MfaTotp:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this MfaTotp.
+        r"""Sets the user of this MfaTotp.
 
         :param user: The user of this MfaTotp.
         :type user: :class:`huaweicloudsdkiam.v3.MfaTotpUser`

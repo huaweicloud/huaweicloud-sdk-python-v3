@@ -39,7 +39,7 @@ class ListCompositeHostsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None, protect_status=None, waf_type=None, is_https=None):
-        """ListCompositeHostsRequest
+        r"""ListCompositeHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListCompositeHostsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCompositeHostsRequest.
+        r"""Gets the enterprise_project_id of this ListCompositeHostsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。默认值为0，表示默认企业项目。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。  缺省值：0
 
@@ -103,7 +103,7 @@ class ListCompositeHostsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCompositeHostsRequest.
+        r"""Sets the enterprise_project_id of this ListCompositeHostsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。默认值为0，表示默认企业项目。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。  缺省值：0
 
@@ -114,7 +114,7 @@ class ListCompositeHostsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListCompositeHostsRequest.
+        r"""Gets the page of this ListCompositeHostsRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -125,7 +125,7 @@ class ListCompositeHostsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListCompositeHostsRequest.
+        r"""Sets the page of this ListCompositeHostsRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -136,7 +136,7 @@ class ListCompositeHostsRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListCompositeHostsRequest.
+        r"""Gets the pagesize of this ListCompositeHostsRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
@@ -147,7 +147,7 @@ class ListCompositeHostsRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListCompositeHostsRequest.
+        r"""Sets the pagesize of this ListCompositeHostsRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
@@ -158,7 +158,7 @@ class ListCompositeHostsRequest:
 
     @property
     def hostname(self):
-        """Gets the hostname of this ListCompositeHostsRequest.
+        r"""Gets the hostname of this ListCompositeHostsRequest.
 
         域名名称
 
@@ -169,7 +169,7 @@ class ListCompositeHostsRequest:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this ListCompositeHostsRequest.
+        r"""Sets the hostname of this ListCompositeHostsRequest.
 
         域名名称
 
@@ -180,7 +180,7 @@ class ListCompositeHostsRequest:
 
     @property
     def policyname(self):
-        """Gets the policyname of this ListCompositeHostsRequest.
+        r"""Gets the policyname of this ListCompositeHostsRequest.
 
         防护策略名称
 
@@ -191,7 +191,7 @@ class ListCompositeHostsRequest:
 
     @policyname.setter
     def policyname(self, policyname):
-        """Sets the policyname of this ListCompositeHostsRequest.
+        r"""Sets the policyname of this ListCompositeHostsRequest.
 
         防护策略名称
 
@@ -202,7 +202,7 @@ class ListCompositeHostsRequest:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ListCompositeHostsRequest.
+        r"""Gets the protect_status of this ListCompositeHostsRequest.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -213,7 +213,7 @@ class ListCompositeHostsRequest:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ListCompositeHostsRequest.
+        r"""Sets the protect_status of this ListCompositeHostsRequest.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -224,7 +224,7 @@ class ListCompositeHostsRequest:
 
     @property
     def waf_type(self):
-        """Gets the waf_type of this ListCompositeHostsRequest.
+        r"""Gets the waf_type of this ListCompositeHostsRequest.
 
         域名所属WAF模式
 
@@ -235,7 +235,7 @@ class ListCompositeHostsRequest:
 
     @waf_type.setter
     def waf_type(self, waf_type):
-        """Sets the waf_type of this ListCompositeHostsRequest.
+        r"""Sets the waf_type of this ListCompositeHostsRequest.
 
         域名所属WAF模式
 
@@ -246,7 +246,7 @@ class ListCompositeHostsRequest:
 
     @property
     def is_https(self):
-        """Gets the is_https of this ListCompositeHostsRequest.
+        r"""Gets the is_https of this ListCompositeHostsRequest.
 
         域名是否使用HTTPS
 
@@ -257,7 +257,7 @@ class ListCompositeHostsRequest:
 
     @is_https.setter
     def is_https(self, is_https):
-        """Sets the is_https of this ListCompositeHostsRequest.
+        r"""Sets the is_https of this ListCompositeHostsRequest.
 
         域名是否使用HTTPS
 

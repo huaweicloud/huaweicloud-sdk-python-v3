@@ -51,7 +51,7 @@ class SearchApprovalsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, biz_id=None, name=None, create_by=None, approver=None, approval_status=None, approval_status_detail=None, approval_type=None, biz_type=None, begin_time=None, end_time=None, limit=None, offset=None):
-        """SearchApprovalsRequest
+        r"""SearchApprovalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class SearchApprovalsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchApprovalsRequest.
+        r"""Gets the workspace of this SearchApprovalsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -144,7 +144,7 @@ class SearchApprovalsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchApprovalsRequest.
+        r"""Sets the workspace of this SearchApprovalsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -155,7 +155,7 @@ class SearchApprovalsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this SearchApprovalsRequest.
+        r"""Gets the x_project_id of this SearchApprovalsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -166,7 +166,7 @@ class SearchApprovalsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this SearchApprovalsRequest.
+        r"""Sets the x_project_id of this SearchApprovalsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -177,7 +177,7 @@ class SearchApprovalsRequest:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this SearchApprovalsRequest.
+        r"""Gets the biz_id of this SearchApprovalsRequest.
 
         业务定义ID，ID字符串。
 
@@ -188,7 +188,7 @@ class SearchApprovalsRequest:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this SearchApprovalsRequest.
+        r"""Sets the biz_id of this SearchApprovalsRequest.
 
         业务定义ID，ID字符串。
 
@@ -199,7 +199,7 @@ class SearchApprovalsRequest:
 
     @property
     def name(self):
-        """Gets the name of this SearchApprovalsRequest.
+        r"""Gets the name of this SearchApprovalsRequest.
 
         按名称或编码模糊查询。
 
@@ -210,7 +210,7 @@ class SearchApprovalsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchApprovalsRequest.
+        r"""Sets the name of this SearchApprovalsRequest.
 
         按名称或编码模糊查询。
 
@@ -221,7 +221,7 @@ class SearchApprovalsRequest:
 
     @property
     def create_by(self):
-        """Gets the create_by of this SearchApprovalsRequest.
+        r"""Gets the create_by of this SearchApprovalsRequest.
 
         按创建者查询。
 
@@ -232,7 +232,7 @@ class SearchApprovalsRequest:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this SearchApprovalsRequest.
+        r"""Sets the create_by of this SearchApprovalsRequest.
 
         按创建者查询。
 
@@ -243,7 +243,7 @@ class SearchApprovalsRequest:
 
     @property
     def approver(self):
-        """Gets the approver of this SearchApprovalsRequest.
+        r"""Gets the approver of this SearchApprovalsRequest.
 
         按审核人查询。
 
@@ -254,7 +254,7 @@ class SearchApprovalsRequest:
 
     @approver.setter
     def approver(self, approver):
-        """Sets the approver of this SearchApprovalsRequest.
+        r"""Sets the approver of this SearchApprovalsRequest.
 
         按审核人查询。
 
@@ -265,7 +265,7 @@ class SearchApprovalsRequest:
 
     @property
     def approval_status(self):
-        """Gets the approval_status of this SearchApprovalsRequest.
+        r"""Gets the approval_status of this SearchApprovalsRequest.
 
         审批单状态。 枚举值：   - DEVELOPING: 待审批   - FINISHED: 已审批 
 
@@ -276,7 +276,7 @@ class SearchApprovalsRequest:
 
     @approval_status.setter
     def approval_status(self, approval_status):
-        """Sets the approval_status of this SearchApprovalsRequest.
+        r"""Sets the approval_status of this SearchApprovalsRequest.
 
         审批单状态。 枚举值：   - DEVELOPING: 待审批   - FINISHED: 已审批 
 
@@ -287,7 +287,7 @@ class SearchApprovalsRequest:
 
     @property
     def approval_status_detail(self):
-        """Gets the approval_status_detail of this SearchApprovalsRequest.
+        r"""Gets the approval_status_detail of this SearchApprovalsRequest.
 
         审批单状态。 枚举值：   - DEVELOPING: 待审批   - APPROVED: 审批通过   - REJECT: 审批驳回 
 
@@ -298,7 +298,7 @@ class SearchApprovalsRequest:
 
     @approval_status_detail.setter
     def approval_status_detail(self, approval_status_detail):
-        """Sets the approval_status_detail of this SearchApprovalsRequest.
+        r"""Sets the approval_status_detail of this SearchApprovalsRequest.
 
         审批单状态。 枚举值：   - DEVELOPING: 待审批   - APPROVED: 审批通过   - REJECT: 审批驳回 
 
@@ -309,7 +309,7 @@ class SearchApprovalsRequest:
 
     @property
     def approval_type(self):
-        """Gets the approval_type of this SearchApprovalsRequest.
+        r"""Gets the approval_type of this SearchApprovalsRequest.
 
         业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
 
@@ -320,7 +320,7 @@ class SearchApprovalsRequest:
 
     @approval_type.setter
     def approval_type(self, approval_type):
-        """Sets the approval_type of this SearchApprovalsRequest.
+        r"""Sets the approval_type of this SearchApprovalsRequest.
 
         业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
 
@@ -331,7 +331,7 @@ class SearchApprovalsRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this SearchApprovalsRequest.
+        r"""Gets the biz_type of this SearchApprovalsRequest.
 
         按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
@@ -342,7 +342,7 @@ class SearchApprovalsRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this SearchApprovalsRequest.
+        r"""Sets the biz_type of this SearchApprovalsRequest.
 
         按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
@@ -353,7 +353,7 @@ class SearchApprovalsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SearchApprovalsRequest.
+        r"""Gets the begin_time of this SearchApprovalsRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -364,7 +364,7 @@ class SearchApprovalsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SearchApprovalsRequest.
+        r"""Sets the begin_time of this SearchApprovalsRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -375,7 +375,7 @@ class SearchApprovalsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SearchApprovalsRequest.
+        r"""Gets the end_time of this SearchApprovalsRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -386,7 +386,7 @@ class SearchApprovalsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SearchApprovalsRequest.
+        r"""Sets the end_time of this SearchApprovalsRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -397,7 +397,7 @@ class SearchApprovalsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchApprovalsRequest.
+        r"""Gets the limit of this SearchApprovalsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -408,7 +408,7 @@ class SearchApprovalsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchApprovalsRequest.
+        r"""Sets the limit of this SearchApprovalsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -419,7 +419,7 @@ class SearchApprovalsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchApprovalsRequest.
+        r"""Gets the offset of this SearchApprovalsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -430,7 +430,7 @@ class SearchApprovalsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchApprovalsRequest.
+        r"""Sets the offset of this SearchApprovalsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 

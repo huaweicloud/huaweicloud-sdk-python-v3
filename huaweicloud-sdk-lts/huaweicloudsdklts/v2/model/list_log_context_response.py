@@ -34,7 +34,7 @@ class ListLogContextResponse(SdkResponse):
     }
 
     def __init__(self, logs=None, total_count=None, backwards_count=None, forwards_count=None, is_query_complete=None):
-        """ListLogContextResponse
+        r"""ListLogContextResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListLogContextResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ListLogContextResponse.
+        r"""Gets the logs of this ListLogContextResponse.
 
         上下文日志信息。
 
@@ -83,7 +83,7 @@ class ListLogContextResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ListLogContextResponse.
+        r"""Sets the logs of this ListLogContextResponse.
 
         上下文日志信息。
 
@@ -94,7 +94,7 @@ class ListLogContextResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLogContextResponse.
+        r"""Gets the total_count of this ListLogContextResponse.
 
         返回的总日志条数，包含请求参数中所指定的起始日志。
 
@@ -105,7 +105,7 @@ class ListLogContextResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLogContextResponse.
+        r"""Sets the total_count of this ListLogContextResponse.
 
         返回的总日志条数，包含请求参数中所指定的起始日志。
 
@@ -116,7 +116,7 @@ class ListLogContextResponse(SdkResponse):
 
     @property
     def backwards_count(self):
-        """Gets the backwards_count of this ListLogContextResponse.
+        r"""Gets the backwards_count of this ListLogContextResponse.
 
         向前查询到的日志条数。
 
@@ -127,7 +127,7 @@ class ListLogContextResponse(SdkResponse):
 
     @backwards_count.setter
     def backwards_count(self, backwards_count):
-        """Sets the backwards_count of this ListLogContextResponse.
+        r"""Sets the backwards_count of this ListLogContextResponse.
 
         向前查询到的日志条数。
 
@@ -138,7 +138,7 @@ class ListLogContextResponse(SdkResponse):
 
     @property
     def forwards_count(self):
-        """Gets the forwards_count of this ListLogContextResponse.
+        r"""Gets the forwards_count of this ListLogContextResponse.
 
         向后查询到的日志条数。
 
@@ -149,7 +149,7 @@ class ListLogContextResponse(SdkResponse):
 
     @forwards_count.setter
     def forwards_count(self, forwards_count):
-        """Sets the forwards_count of this ListLogContextResponse.
+        r"""Sets the forwards_count of this ListLogContextResponse.
 
         向后查询到的日志条数。
 
@@ -160,7 +160,7 @@ class ListLogContextResponse(SdkResponse):
 
     @property
     def is_query_complete(self):
-        """Gets the is_query_complete of this ListLogContextResponse.
+        r"""Gets the is_query_complete of this ListLogContextResponse.
 
         是否查询完成。
 
@@ -171,7 +171,7 @@ class ListLogContextResponse(SdkResponse):
 
     @is_query_complete.setter
     def is_query_complete(self, is_query_complete):
-        """Sets the is_query_complete of this ListLogContextResponse.
+        r"""Sets the is_query_complete of this ListLogContextResponse.
 
         是否查询完成。
 

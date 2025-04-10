@@ -43,7 +43,7 @@ class ListEventDetailRequest:
     }
 
     def __init__(self, event_name=None, event_type=None, event_source=None, event_level=None, event_user=None, event_state=None, _from=None, to=None, start=None, limit=None):
-        """ListEventDetailRequest
+        r"""ListEventDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class ListEventDetailRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListEventDetailRequest.
+        r"""Gets the event_name of this ListEventDetailRequest.
 
         事件名称。
 
@@ -115,7 +115,7 @@ class ListEventDetailRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListEventDetailRequest.
+        r"""Sets the event_name of this ListEventDetailRequest.
 
         事件名称。
 
@@ -126,7 +126,7 @@ class ListEventDetailRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListEventDetailRequest.
+        r"""Gets the event_type of this ListEventDetailRequest.
 
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
@@ -137,7 +137,7 @@ class ListEventDetailRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListEventDetailRequest.
+        r"""Sets the event_type of this ListEventDetailRequest.
 
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
@@ -148,7 +148,7 @@ class ListEventDetailRequest:
 
     @property
     def event_source(self):
-        """Gets the event_source of this ListEventDetailRequest.
+        r"""Gets the event_source of this ListEventDetailRequest.
 
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
@@ -159,7 +159,7 @@ class ListEventDetailRequest:
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this ListEventDetailRequest.
+        r"""Sets the event_source of this ListEventDetailRequest.
 
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
@@ -170,7 +170,7 @@ class ListEventDetailRequest:
 
     @property
     def event_level(self):
-        """Gets the event_level of this ListEventDetailRequest.
+        r"""Gets the event_level of this ListEventDetailRequest.
 
         事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
 
@@ -181,7 +181,7 @@ class ListEventDetailRequest:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this ListEventDetailRequest.
+        r"""Sets the event_level of this ListEventDetailRequest.
 
         事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
 
@@ -192,7 +192,7 @@ class ListEventDetailRequest:
 
     @property
     def event_user(self):
-        """Gets the event_user of this ListEventDetailRequest.
+        r"""Gets the event_user of this ListEventDetailRequest.
 
         上报事件监控数据时用户的名称，也可为projectID。
 
@@ -203,7 +203,7 @@ class ListEventDetailRequest:
 
     @event_user.setter
     def event_user(self, event_user):
-        """Sets the event_user of this ListEventDetailRequest.
+        r"""Sets the event_user of this ListEventDetailRequest.
 
         上报事件监控数据时用户的名称，也可为projectID。
 
@@ -214,7 +214,7 @@ class ListEventDetailRequest:
 
     @property
     def event_state(self):
-        """Gets the event_state of this ListEventDetailRequest.
+        r"""Gets the event_state of this ListEventDetailRequest.
 
         事件的状态，值为normal，warning，incident；normal为正常，warning为警告，incident为故障。
 
@@ -225,7 +225,7 @@ class ListEventDetailRequest:
 
     @event_state.setter
     def event_state(self, event_state):
-        """Sets the event_state of this ListEventDetailRequest.
+        r"""Sets the event_state of this ListEventDetailRequest.
 
         事件的状态，值为normal，warning，incident；normal为正常，warning为警告，incident为故障。
 
@@ -236,7 +236,7 @@ class ListEventDetailRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListEventDetailRequest.
+        r"""Gets the _from of this ListEventDetailRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
@@ -247,7 +247,7 @@ class ListEventDetailRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListEventDetailRequest.
+        r"""Sets the _from of this ListEventDetailRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
@@ -258,7 +258,7 @@ class ListEventDetailRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListEventDetailRequest.
+        r"""Gets the to of this ListEventDetailRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
@@ -269,7 +269,7 @@ class ListEventDetailRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListEventDetailRequest.
+        r"""Sets the to of this ListEventDetailRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
@@ -280,7 +280,7 @@ class ListEventDetailRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListEventDetailRequest.
+        r"""Gets the start of this ListEventDetailRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -291,7 +291,7 @@ class ListEventDetailRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListEventDetailRequest.
+        r"""Sets the start of this ListEventDetailRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -302,7 +302,7 @@ class ListEventDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventDetailRequest.
+        r"""Gets the limit of this ListEventDetailRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
@@ -313,7 +313,7 @@ class ListEventDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventDetailRequest.
+        r"""Sets the limit of this ListEventDetailRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 

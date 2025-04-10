@@ -33,7 +33,7 @@ class ThirdGatewayInfo:
     }
 
     def __init__(self, login_url=None, logout_url=None, token_url=None, verification_cipher_url=None, cert_content=None):
-        """ThirdGatewayInfo
+        r"""ThirdGatewayInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ThirdGatewayInfo:
 
     @property
     def login_url(self):
-        """Gets the login_url of this ThirdGatewayInfo.
+        r"""Gets the login_url of this ThirdGatewayInfo.
 
         第三方登录url
 
@@ -82,7 +82,7 @@ class ThirdGatewayInfo:
 
     @login_url.setter
     def login_url(self, login_url):
-        """Sets the login_url of this ThirdGatewayInfo.
+        r"""Sets the login_url of this ThirdGatewayInfo.
 
         第三方登录url
 
@@ -93,7 +93,7 @@ class ThirdGatewayInfo:
 
     @property
     def logout_url(self):
-        """Gets the logout_url of this ThirdGatewayInfo.
+        r"""Gets the logout_url of this ThirdGatewayInfo.
 
         第三方登出url
 
@@ -104,7 +104,7 @@ class ThirdGatewayInfo:
 
     @logout_url.setter
     def logout_url(self, logout_url):
-        """Sets the logout_url of this ThirdGatewayInfo.
+        r"""Sets the logout_url of this ThirdGatewayInfo.
 
         第三方登出url
 
@@ -115,7 +115,7 @@ class ThirdGatewayInfo:
 
     @property
     def token_url(self):
-        """Gets the token_url of this ThirdGatewayInfo.
+        r"""Gets the token_url of this ThirdGatewayInfo.
 
         第三方网关token校验url
 
@@ -126,7 +126,7 @@ class ThirdGatewayInfo:
 
     @token_url.setter
     def token_url(self, token_url):
-        """Sets the token_url of this ThirdGatewayInfo.
+        r"""Sets the token_url of this ThirdGatewayInfo.
 
         第三方网关token校验url
 
@@ -137,7 +137,7 @@ class ThirdGatewayInfo:
 
     @property
     def verification_cipher_url(self):
-        """Gets the verification_cipher_url of this ThirdGatewayInfo.
+        r"""Gets the verification_cipher_url of this ThirdGatewayInfo.
 
         校验证书url
 
@@ -148,7 +148,7 @@ class ThirdGatewayInfo:
 
     @verification_cipher_url.setter
     def verification_cipher_url(self, verification_cipher_url):
-        """Sets the verification_cipher_url of this ThirdGatewayInfo.
+        r"""Sets the verification_cipher_url of this ThirdGatewayInfo.
 
         校验证书url
 
@@ -159,7 +159,7 @@ class ThirdGatewayInfo:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this ThirdGatewayInfo.
+        r"""Gets the cert_content of this ThirdGatewayInfo.
 
         第三方网关认证证书
 
@@ -170,7 +170,7 @@ class ThirdGatewayInfo:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this ThirdGatewayInfo.
+        r"""Sets the cert_content of this ThirdGatewayInfo.
 
         第三方网关认证证书
 

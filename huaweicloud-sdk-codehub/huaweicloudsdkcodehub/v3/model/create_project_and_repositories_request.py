@@ -25,7 +25,7 @@ class CreateProjectAndRepositoriesRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProjectAndRepositoriesRequest
+        r"""CreateProjectAndRepositoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProjectAndRepositoriesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectAndRepositoriesRequest.
+        r"""Gets the body of this CreateProjectAndRepositoriesRequest.
 
         :return: The body of this CreateProjectAndRepositoriesRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectRepoRequest`
@@ -52,7 +52,7 @@ class CreateProjectAndRepositoriesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectAndRepositoriesRequest.
+        r"""Sets the body of this CreateProjectAndRepositoriesRequest.
 
         :param body: The body of this CreateProjectAndRepositoriesRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateProjectRepoRequest`

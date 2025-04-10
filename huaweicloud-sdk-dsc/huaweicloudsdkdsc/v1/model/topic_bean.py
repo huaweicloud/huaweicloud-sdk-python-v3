@@ -27,7 +27,7 @@ class TopicBean:
     }
 
     def __init__(self, name=None, topic_urn=None):
-        """TopicBean
+        r"""TopicBean
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TopicBean:
 
     @property
     def name(self):
-        """Gets the name of this TopicBean.
+        r"""Gets the name of this TopicBean.
 
         消息通知主题名称
 
@@ -61,7 +61,7 @@ class TopicBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TopicBean.
+        r"""Sets the name of this TopicBean.
 
         消息通知主题名称
 
@@ -72,7 +72,7 @@ class TopicBean:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this TopicBean.
+        r"""Gets the topic_urn of this TopicBean.
 
         消息通知主题的唯一资源标识符
 
@@ -83,7 +83,7 @@ class TopicBean:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this TopicBean.
+        r"""Sets the topic_urn of this TopicBean.
 
         消息通知主题的唯一资源标识符
 

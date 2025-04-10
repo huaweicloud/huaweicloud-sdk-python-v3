@@ -43,7 +43,7 @@ class PipelineByTemplateDTOVariables:
     }
 
     def __init__(self, name=None, sequence=None, type=None, value=None, is_secret=None, description=None, is_runtime=None, is_reset=None, latest_value=None, limits=None):
-        """PipelineByTemplateDTOVariables
+        r"""PipelineByTemplateDTOVariables
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def name(self):
-        """Gets the name of this PipelineByTemplateDTOVariables.
+        r"""Gets the name of this PipelineByTemplateDTOVariables.
 
         参数名称
 
@@ -117,7 +117,7 @@ class PipelineByTemplateDTOVariables:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineByTemplateDTOVariables.
+        r"""Sets the name of this PipelineByTemplateDTOVariables.
 
         参数名称
 
@@ -128,7 +128,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def sequence(self):
-        """Gets the sequence of this PipelineByTemplateDTOVariables.
+        r"""Gets the sequence of this PipelineByTemplateDTOVariables.
 
         参数序号
 
@@ -139,7 +139,7 @@ class PipelineByTemplateDTOVariables:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this PipelineByTemplateDTOVariables.
+        r"""Sets the sequence of this PipelineByTemplateDTOVariables.
 
         参数序号
 
@@ -150,7 +150,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def type(self):
-        """Gets the type of this PipelineByTemplateDTOVariables.
+        r"""Gets the type of this PipelineByTemplateDTOVariables.
 
         参数类型
 
@@ -161,7 +161,7 @@ class PipelineByTemplateDTOVariables:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PipelineByTemplateDTOVariables.
+        r"""Sets the type of this PipelineByTemplateDTOVariables.
 
         参数类型
 
@@ -172,7 +172,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def value(self):
-        """Gets the value of this PipelineByTemplateDTOVariables.
+        r"""Gets the value of this PipelineByTemplateDTOVariables.
 
         参数值
 
@@ -183,7 +183,7 @@ class PipelineByTemplateDTOVariables:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PipelineByTemplateDTOVariables.
+        r"""Sets the value of this PipelineByTemplateDTOVariables.
 
         参数值
 
@@ -194,7 +194,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def is_secret(self):
-        """Gets the is_secret of this PipelineByTemplateDTOVariables.
+        r"""Gets the is_secret of this PipelineByTemplateDTOVariables.
 
         是否私密参数
 
@@ -205,7 +205,7 @@ class PipelineByTemplateDTOVariables:
 
     @is_secret.setter
     def is_secret(self, is_secret):
-        """Sets the is_secret of this PipelineByTemplateDTOVariables.
+        r"""Sets the is_secret of this PipelineByTemplateDTOVariables.
 
         是否私密参数
 
@@ -216,7 +216,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def description(self):
-        """Gets the description of this PipelineByTemplateDTOVariables.
+        r"""Gets the description of this PipelineByTemplateDTOVariables.
 
         描述
 
@@ -227,7 +227,7 @@ class PipelineByTemplateDTOVariables:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineByTemplateDTOVariables.
+        r"""Sets the description of this PipelineByTemplateDTOVariables.
 
         描述
 
@@ -238,7 +238,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def is_runtime(self):
-        """Gets the is_runtime of this PipelineByTemplateDTOVariables.
+        r"""Gets the is_runtime of this PipelineByTemplateDTOVariables.
 
         是否运行时设置
 
@@ -249,7 +249,7 @@ class PipelineByTemplateDTOVariables:
 
     @is_runtime.setter
     def is_runtime(self, is_runtime):
-        """Sets the is_runtime of this PipelineByTemplateDTOVariables.
+        r"""Sets the is_runtime of this PipelineByTemplateDTOVariables.
 
         是否运行时设置
 
@@ -260,7 +260,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def is_reset(self):
-        """Gets the is_reset of this PipelineByTemplateDTOVariables.
+        r"""Gets the is_reset of this PipelineByTemplateDTOVariables.
 
         是否重置
 
@@ -271,7 +271,7 @@ class PipelineByTemplateDTOVariables:
 
     @is_reset.setter
     def is_reset(self, is_reset):
-        """Sets the is_reset of this PipelineByTemplateDTOVariables.
+        r"""Sets the is_reset of this PipelineByTemplateDTOVariables.
 
         是否重置
 
@@ -282,7 +282,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def latest_value(self):
-        """Gets the latest_value of this PipelineByTemplateDTOVariables.
+        r"""Gets the latest_value of this PipelineByTemplateDTOVariables.
 
         最后一次参数值
 
@@ -293,7 +293,7 @@ class PipelineByTemplateDTOVariables:
 
     @latest_value.setter
     def latest_value(self, latest_value):
-        """Sets the latest_value of this PipelineByTemplateDTOVariables.
+        r"""Sets the latest_value of this PipelineByTemplateDTOVariables.
 
         最后一次参数值
 
@@ -304,7 +304,7 @@ class PipelineByTemplateDTOVariables:
 
     @property
     def limits(self):
-        """Gets the limits of this PipelineByTemplateDTOVariables.
+        r"""Gets the limits of this PipelineByTemplateDTOVariables.
 
         枚举值
 
@@ -315,7 +315,7 @@ class PipelineByTemplateDTOVariables:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this PipelineByTemplateDTOVariables.
+        r"""Sets the limits of this PipelineByTemplateDTOVariables.
 
         枚举值
 

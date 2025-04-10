@@ -33,7 +33,7 @@ class ListBackPoolsRequest:
     }
 
     def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None, all_billing_cycle=None):
-        """ListBackPoolsRequest
+        r"""ListBackPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListBackPoolsRequest:
 
     @property
     def pool_name(self):
-        """Gets the pool_name of this ListBackPoolsRequest.
+        r"""Gets the pool_name of this ListBackPoolsRequest.
 
         流量池名称
 
@@ -82,7 +82,7 @@ class ListBackPoolsRequest:
 
     @pool_name.setter
     def pool_name(self, pool_name):
-        """Sets the pool_name of this ListBackPoolsRequest.
+        r"""Sets the pool_name of this ListBackPoolsRequest.
 
         流量池名称
 
@@ -93,7 +93,7 @@ class ListBackPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackPoolsRequest.
+        r"""Gets the limit of this ListBackPoolsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -104,7 +104,7 @@ class ListBackPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackPoolsRequest.
+        r"""Sets the limit of this ListBackPoolsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -115,7 +115,7 @@ class ListBackPoolsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackPoolsRequest.
+        r"""Gets the offset of this ListBackPoolsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -126,7 +126,7 @@ class ListBackPoolsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackPoolsRequest.
+        r"""Sets the offset of this ListBackPoolsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -137,7 +137,7 @@ class ListBackPoolsRequest:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this ListBackPoolsRequest.
+        r"""Gets the billing_cycle of this ListBackPoolsRequest.
 
         账期，例如：2021-04
 
@@ -148,7 +148,7 @@ class ListBackPoolsRequest:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this ListBackPoolsRequest.
+        r"""Sets the billing_cycle of this ListBackPoolsRequest.
 
         账期，例如：2021-04
 
@@ -159,7 +159,7 @@ class ListBackPoolsRequest:
 
     @property
     def all_billing_cycle(self):
-        """Gets the all_billing_cycle of this ListBackPoolsRequest.
+        r"""Gets the all_billing_cycle of this ListBackPoolsRequest.
 
         是否查询近六个月账期标识
 
@@ -170,7 +170,7 @@ class ListBackPoolsRequest:
 
     @all_billing_cycle.setter
     def all_billing_cycle(self, all_billing_cycle):
-        """Sets the all_billing_cycle of this ListBackPoolsRequest.
+        r"""Sets the all_billing_cycle of this ListBackPoolsRequest.
 
         是否查询近六个月账期标识
 

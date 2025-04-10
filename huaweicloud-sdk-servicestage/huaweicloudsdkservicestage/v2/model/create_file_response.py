@@ -26,7 +26,7 @@ class CreateFileResponse(SdkResponse):
     }
 
     def __init__(self, path=None):
-        """CreateFileResponse
+        r"""CreateFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateFileResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this CreateFileResponse.
+        r"""Gets the path of this CreateFileResponse.
 
         文件路径。
 
@@ -55,7 +55,7 @@ class CreateFileResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this CreateFileResponse.
+        r"""Sets the path of this CreateFileResponse.
 
         文件路径。
 

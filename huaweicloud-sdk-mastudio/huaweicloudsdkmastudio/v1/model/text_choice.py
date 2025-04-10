@@ -27,7 +27,7 @@ class TextChoice:
     }
 
     def __init__(self, index=None, text=None):
-        """TextChoice
+        r"""TextChoice
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TextChoice:
 
     @property
     def index(self):
-        """Gets the index of this TextChoice.
+        r"""Gets the index of this TextChoice.
 
         回复的索引
 
@@ -59,7 +59,7 @@ class TextChoice:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TextChoice.
+        r"""Sets the index of this TextChoice.
 
         回复的索引
 
@@ -70,7 +70,7 @@ class TextChoice:
 
     @property
     def text(self):
-        """Gets the text of this TextChoice.
+        r"""Gets the text of this TextChoice.
 
         模型响应
 
@@ -81,7 +81,7 @@ class TextChoice:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this TextChoice.
+        r"""Sets the text of this TextChoice.
 
         模型响应
 

@@ -28,7 +28,7 @@ class UpdateListenerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, listener=None):
-        """UpdateListenerResponse
+        r"""UpdateListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateListenerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateListenerResponse.
+        r"""Gets the request_id of this UpdateListenerResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class UpdateListenerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateListenerResponse.
+        r"""Sets the request_id of this UpdateListenerResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class UpdateListenerResponse(SdkResponse):
 
     @property
     def listener(self):
-        """Gets the listener of this UpdateListenerResponse.
+        r"""Gets the listener of this UpdateListenerResponse.
 
         :return: The listener of this UpdateListenerResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Listener`
@@ -82,7 +82,7 @@ class UpdateListenerResponse(SdkResponse):
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this UpdateListenerResponse.
+        r"""Sets the listener of this UpdateListenerResponse.
 
         :param listener: The listener of this UpdateListenerResponse.
         :type listener: :class:`huaweicloudsdkelb.v3.Listener`

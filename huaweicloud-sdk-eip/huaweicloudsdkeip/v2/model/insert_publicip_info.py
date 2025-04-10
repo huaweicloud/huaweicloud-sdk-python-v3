@@ -27,7 +27,7 @@ class InsertPublicipInfo:
     }
 
     def __init__(self, publicip_type=None, publicip_id=None):
-        """InsertPublicipInfo
+        r"""InsertPublicipInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InsertPublicipInfo:
 
     @property
     def publicip_type(self):
-        """Gets the publicip_type of this InsertPublicipInfo.
+        r"""Gets the publicip_type of this InsertPublicipInfo.
 
         功能说明：若publicip_id为弹性公网IP的id，则该字段可自动忽略。若publicip_id为IPv6端口PORT的id，则该字段必填：5_dualStack(目前仅北京4局点支持)
 
@@ -60,7 +60,7 @@ class InsertPublicipInfo:
 
     @publicip_type.setter
     def publicip_type(self, publicip_type):
-        """Sets the publicip_type of this InsertPublicipInfo.
+        r"""Sets the publicip_type of this InsertPublicipInfo.
 
         功能说明：若publicip_id为弹性公网IP的id，则该字段可自动忽略。若publicip_id为IPv6端口PORT的id，则该字段必填：5_dualStack(目前仅北京4局点支持)
 
@@ -71,7 +71,7 @@ class InsertPublicipInfo:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this InsertPublicipInfo.
+        r"""Gets the publicip_id of this InsertPublicipInfo.
 
         功能说明：带宽对应的弹性公网IP或IPv6端口PORT的唯一标识
 
@@ -82,7 +82,7 @@ class InsertPublicipInfo:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this InsertPublicipInfo.
+        r"""Sets the publicip_id of this InsertPublicipInfo.
 
         功能说明：带宽对应的弹性公网IP或IPv6端口PORT的唯一标识
 

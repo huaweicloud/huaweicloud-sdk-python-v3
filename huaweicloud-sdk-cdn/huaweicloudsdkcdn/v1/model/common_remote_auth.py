@@ -27,7 +27,7 @@ class CommonRemoteAuth:
     }
 
     def __init__(self, remote_authentication=None, remote_auth_rules=None):
-        """CommonRemoteAuth
+        r"""CommonRemoteAuth
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CommonRemoteAuth:
 
     @property
     def remote_authentication(self):
-        """Gets the remote_authentication of this CommonRemoteAuth.
+        r"""Gets the remote_authentication of this CommonRemoteAuth.
 
         是否开启远程鉴权(on：开启，off：关闭)。
 
@@ -59,7 +59,7 @@ class CommonRemoteAuth:
 
     @remote_authentication.setter
     def remote_authentication(self, remote_authentication):
-        """Sets the remote_authentication of this CommonRemoteAuth.
+        r"""Sets the remote_authentication of this CommonRemoteAuth.
 
         是否开启远程鉴权(on：开启，off：关闭)。
 
@@ -70,7 +70,7 @@ class CommonRemoteAuth:
 
     @property
     def remote_auth_rules(self):
-        """Gets the remote_auth_rules of this CommonRemoteAuth.
+        r"""Gets the remote_auth_rules of this CommonRemoteAuth.
 
         :return: The remote_auth_rules of this CommonRemoteAuth.
         :rtype: :class:`huaweicloudsdkcdn.v1.RemoteAuthRuleVo`
@@ -79,7 +79,7 @@ class CommonRemoteAuth:
 
     @remote_auth_rules.setter
     def remote_auth_rules(self, remote_auth_rules):
-        """Sets the remote_auth_rules of this CommonRemoteAuth.
+        r"""Sets the remote_auth_rules of this CommonRemoteAuth.
 
         :param remote_auth_rules: The remote_auth_rules of this CommonRemoteAuth.
         :type remote_auth_rules: :class:`huaweicloudsdkcdn.v1.RemoteAuthRuleVo`

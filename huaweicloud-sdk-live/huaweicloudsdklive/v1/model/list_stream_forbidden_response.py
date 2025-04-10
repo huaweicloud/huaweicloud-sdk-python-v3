@@ -28,7 +28,7 @@ class ListStreamForbiddenResponse(SdkResponse):
     }
 
     def __init__(self, total=None, blocks=None):
-        """ListStreamForbiddenResponse
+        r"""ListStreamForbiddenResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStreamForbiddenResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListStreamForbiddenResponse.
+        r"""Gets the total of this ListStreamForbiddenResponse.
 
         查询结果的总元素数量
 
@@ -62,7 +62,7 @@ class ListStreamForbiddenResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListStreamForbiddenResponse.
+        r"""Sets the total of this ListStreamForbiddenResponse.
 
         查询结果的总元素数量
 
@@ -73,7 +73,7 @@ class ListStreamForbiddenResponse(SdkResponse):
 
     @property
     def blocks(self):
-        """Gets the blocks of this ListStreamForbiddenResponse.
+        r"""Gets the blocks of this ListStreamForbiddenResponse.
 
         禁播黑名单列表
 
@@ -84,7 +84,7 @@ class ListStreamForbiddenResponse(SdkResponse):
 
     @blocks.setter
     def blocks(self, blocks):
-        """Sets the blocks of this ListStreamForbiddenResponse.
+        r"""Sets the blocks of this ListStreamForbiddenResponse.
 
         禁播黑名单列表
 

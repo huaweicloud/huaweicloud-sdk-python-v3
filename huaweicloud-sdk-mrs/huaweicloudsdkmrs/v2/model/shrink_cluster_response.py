@@ -26,7 +26,7 @@ class ShrinkClusterResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ShrinkClusterResponse
+        r"""ShrinkClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShrinkClusterResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShrinkClusterResponse.
+        r"""Gets the result of this ShrinkClusterResponse.
 
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 
@@ -55,7 +55,7 @@ class ShrinkClusterResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShrinkClusterResponse.
+        r"""Sets the result of this ShrinkClusterResponse.
 
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 

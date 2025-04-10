@@ -27,7 +27,7 @@ class ShowJobDetailRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """ShowJobDetailRequest
+        r"""ShowJobDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowJobDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowJobDetailRequest.
+        r"""Gets the x_language of this ShowJobDetailRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -60,7 +60,7 @@ class ShowJobDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowJobDetailRequest.
+        r"""Sets the x_language of this ShowJobDetailRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -71,7 +71,7 @@ class ShowJobDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobDetailRequest.
+        r"""Gets the job_id of this ShowJobDetailRequest.
 
         任务 ID: 可以通过调用 RunDevstarTemplateJob 返回结果获取
 
@@ -82,7 +82,7 @@ class ShowJobDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobDetailRequest.
+        r"""Sets the job_id of this ShowJobDetailRequest.
 
         任务 ID: 可以通过调用 RunDevstarTemplateJob 返回结果获取
 

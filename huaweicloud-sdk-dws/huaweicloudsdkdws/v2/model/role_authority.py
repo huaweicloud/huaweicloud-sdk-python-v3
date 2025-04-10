@@ -27,7 +27,7 @@ class RoleAuthority:
     }
 
     def __init__(self, role=None, right_list=None):
-        """RoleAuthority
+        r"""RoleAuthority
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RoleAuthority:
 
     @property
     def role(self):
-        """Gets the role of this RoleAuthority.
+        r"""Gets the role of this RoleAuthority.
 
         角色名称
 
@@ -61,7 +61,7 @@ class RoleAuthority:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this RoleAuthority.
+        r"""Sets the role of this RoleAuthority.
 
         角色名称
 
@@ -72,7 +72,7 @@ class RoleAuthority:
 
     @property
     def right_list(self):
-        """Gets the right_list of this RoleAuthority.
+        r"""Gets the right_list of this RoleAuthority.
 
         权限列表
 
@@ -83,7 +83,7 @@ class RoleAuthority:
 
     @right_list.setter
     def right_list(self, right_list):
-        """Sets the right_list of this RoleAuthority.
+        r"""Sets the right_list of this RoleAuthority.
 
         权限列表
 

@@ -49,7 +49,7 @@ class CreateStreamReq:
     }
 
     def __init__(self, stream_name=None, partition_count=None, stream_type=None, data_type=None, data_duration=None, auto_scale_enabled=None, auto_scale_min_partition_count=None, auto_scale_max_partition_count=None, data_schema=None, csv_properties=None, compression_format=None, tags=None, sys_tags=None):
-        """CreateStreamReq
+        r"""CreateStreamReq
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class CreateStreamReq:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this CreateStreamReq.
+        r"""Gets the stream_name of this CreateStreamReq.
 
         通道名称。  通道名称由字母、数字、下划线和中划线组成，长度为1～64字符。
 
@@ -136,7 +136,7 @@ class CreateStreamReq:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this CreateStreamReq.
+        r"""Sets the stream_name of this CreateStreamReq.
 
         通道名称。  通道名称由字母、数字、下划线和中划线组成，长度为1～64字符。
 
@@ -147,7 +147,7 @@ class CreateStreamReq:
 
     @property
     def partition_count(self):
-        """Gets the partition_count of this CreateStreamReq.
+        r"""Gets the partition_count of this CreateStreamReq.
 
         分区数量。  分区是DIS数据通道的基本吞吐量单位。
 
@@ -158,7 +158,7 @@ class CreateStreamReq:
 
     @partition_count.setter
     def partition_count(self, partition_count):
-        """Sets the partition_count of this CreateStreamReq.
+        r"""Sets the partition_count of this CreateStreamReq.
 
         分区数量。  分区是DIS数据通道的基本吞吐量单位。
 
@@ -169,7 +169,7 @@ class CreateStreamReq:
 
     @property
     def stream_type(self):
-        """Gets the stream_type of this CreateStreamReq.
+        r"""Gets the stream_type of this CreateStreamReq.
 
         通道类型。  - COMMON：普通通道，表示1MB带宽。 - ADVANCED：高级通道，表示5MB带宽。
 
@@ -180,7 +180,7 @@ class CreateStreamReq:
 
     @stream_type.setter
     def stream_type(self, stream_type):
-        """Sets the stream_type of this CreateStreamReq.
+        r"""Sets the stream_type of this CreateStreamReq.
 
         通道类型。  - COMMON：普通通道，表示1MB带宽。 - ADVANCED：高级通道，表示5MB带宽。
 
@@ -191,7 +191,7 @@ class CreateStreamReq:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateStreamReq.
+        r"""Gets the data_type of this CreateStreamReq.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -202,7 +202,7 @@ class CreateStreamReq:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateStreamReq.
+        r"""Sets the data_type of this CreateStreamReq.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -213,7 +213,7 @@ class CreateStreamReq:
 
     @property
     def data_duration(self):
-        """Gets the data_duration of this CreateStreamReq.
+        r"""Gets the data_duration of this CreateStreamReq.
 
         数据保留时长。  取值范围：24~72。  单位：小时。  空表示使用缺省值。
 
@@ -224,7 +224,7 @@ class CreateStreamReq:
 
     @data_duration.setter
     def data_duration(self, data_duration):
-        """Sets the data_duration of this CreateStreamReq.
+        r"""Sets the data_duration of this CreateStreamReq.
 
         数据保留时长。  取值范围：24~72。  单位：小时。  空表示使用缺省值。
 
@@ -235,7 +235,7 @@ class CreateStreamReq:
 
     @property
     def auto_scale_enabled(self):
-        """Gets the auto_scale_enabled of this CreateStreamReq.
+        r"""Gets the auto_scale_enabled of this CreateStreamReq.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -246,7 +246,7 @@ class CreateStreamReq:
 
     @auto_scale_enabled.setter
     def auto_scale_enabled(self, auto_scale_enabled):
-        """Sets the auto_scale_enabled of this CreateStreamReq.
+        r"""Sets the auto_scale_enabled of this CreateStreamReq.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -257,7 +257,7 @@ class CreateStreamReq:
 
     @property
     def auto_scale_min_partition_count(self):
-        """Gets the auto_scale_min_partition_count of this CreateStreamReq.
+        r"""Gets the auto_scale_min_partition_count of this CreateStreamReq.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -268,7 +268,7 @@ class CreateStreamReq:
 
     @auto_scale_min_partition_count.setter
     def auto_scale_min_partition_count(self, auto_scale_min_partition_count):
-        """Sets the auto_scale_min_partition_count of this CreateStreamReq.
+        r"""Sets the auto_scale_min_partition_count of this CreateStreamReq.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -279,7 +279,7 @@ class CreateStreamReq:
 
     @property
     def auto_scale_max_partition_count(self):
-        """Gets the auto_scale_max_partition_count of this CreateStreamReq.
+        r"""Gets the auto_scale_max_partition_count of this CreateStreamReq.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 
@@ -290,7 +290,7 @@ class CreateStreamReq:
 
     @auto_scale_max_partition_count.setter
     def auto_scale_max_partition_count(self, auto_scale_max_partition_count):
-        """Sets the auto_scale_max_partition_count of this CreateStreamReq.
+        r"""Sets the auto_scale_max_partition_count of this CreateStreamReq.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 
@@ -301,7 +301,7 @@ class CreateStreamReq:
 
     @property
     def data_schema(self):
-        """Gets the data_schema of this CreateStreamReq.
+        r"""Gets the data_schema of this CreateStreamReq.
 
         用于描述用户JSON、CSV格式的源数据结构，采用Avro Schema的语法描述。
 
@@ -312,7 +312,7 @@ class CreateStreamReq:
 
     @data_schema.setter
     def data_schema(self, data_schema):
-        """Sets the data_schema of this CreateStreamReq.
+        r"""Sets the data_schema of this CreateStreamReq.
 
         用于描述用户JSON、CSV格式的源数据结构，采用Avro Schema的语法描述。
 
@@ -323,7 +323,7 @@ class CreateStreamReq:
 
     @property
     def csv_properties(self):
-        """Gets the csv_properties of this CreateStreamReq.
+        r"""Gets the csv_properties of this CreateStreamReq.
 
         :return: The csv_properties of this CreateStreamReq.
         :rtype: :class:`huaweicloudsdkdis.v2.CSVProperties`
@@ -332,7 +332,7 @@ class CreateStreamReq:
 
     @csv_properties.setter
     def csv_properties(self, csv_properties):
-        """Sets the csv_properties of this CreateStreamReq.
+        r"""Sets the csv_properties of this CreateStreamReq.
 
         :param csv_properties: The csv_properties of this CreateStreamReq.
         :type csv_properties: :class:`huaweicloudsdkdis.v2.CSVProperties`
@@ -341,7 +341,7 @@ class CreateStreamReq:
 
     @property
     def compression_format(self):
-        """Gets the compression_format of this CreateStreamReq.
+        r"""Gets the compression_format of this CreateStreamReq.
 
         数据的压缩类型，目前支持：  - snappy  - gzip  - zip  默认不压缩。
 
@@ -352,7 +352,7 @@ class CreateStreamReq:
 
     @compression_format.setter
     def compression_format(self, compression_format):
-        """Sets the compression_format of this CreateStreamReq.
+        r"""Sets the compression_format of this CreateStreamReq.
 
         数据的压缩类型，目前支持：  - snappy  - gzip  - zip  默认不压缩。
 
@@ -363,7 +363,7 @@ class CreateStreamReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateStreamReq.
+        r"""Gets the tags of this CreateStreamReq.
 
         通道标签列表。
 
@@ -374,7 +374,7 @@ class CreateStreamReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateStreamReq.
+        r"""Sets the tags of this CreateStreamReq.
 
         通道标签列表。
 
@@ -385,7 +385,7 @@ class CreateStreamReq:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CreateStreamReq.
+        r"""Gets the sys_tags of this CreateStreamReq.
 
         通道企业项目列表。
 
@@ -396,7 +396,7 @@ class CreateStreamReq:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CreateStreamReq.
+        r"""Sets the sys_tags of this CreateStreamReq.
 
         通道企业项目列表。
 

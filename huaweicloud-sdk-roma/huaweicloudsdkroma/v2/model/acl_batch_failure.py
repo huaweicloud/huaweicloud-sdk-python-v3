@@ -31,7 +31,7 @@ class AclBatchFailure:
     }
 
     def __init__(self, acl_id=None, acl_name=None, error_code=None, error_msg=None):
-        """AclBatchFailure
+        r"""AclBatchFailure
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AclBatchFailure:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this AclBatchFailure.
+        r"""Gets the acl_id of this AclBatchFailure.
 
         删除失败的ACL策略ID
 
@@ -75,7 +75,7 @@ class AclBatchFailure:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this AclBatchFailure.
+        r"""Sets the acl_id of this AclBatchFailure.
 
         删除失败的ACL策略ID
 
@@ -86,7 +86,7 @@ class AclBatchFailure:
 
     @property
     def acl_name(self):
-        """Gets the acl_name of this AclBatchFailure.
+        r"""Gets the acl_name of this AclBatchFailure.
 
         删除失败的ACL策略名称
 
@@ -97,7 +97,7 @@ class AclBatchFailure:
 
     @acl_name.setter
     def acl_name(self, acl_name):
-        """Sets the acl_name of this AclBatchFailure.
+        r"""Sets the acl_name of this AclBatchFailure.
 
         删除失败的ACL策略名称
 
@@ -108,7 +108,7 @@ class AclBatchFailure:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AclBatchFailure.
+        r"""Gets the error_code of this AclBatchFailure.
 
         删除失败的错误码
 
@@ -119,7 +119,7 @@ class AclBatchFailure:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AclBatchFailure.
+        r"""Sets the error_code of this AclBatchFailure.
 
         删除失败的错误码
 
@@ -130,7 +130,7 @@ class AclBatchFailure:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AclBatchFailure.
+        r"""Gets the error_msg of this AclBatchFailure.
 
         删除失败的错误信息
 
@@ -141,7 +141,7 @@ class AclBatchFailure:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AclBatchFailure.
+        r"""Sets the error_msg of this AclBatchFailure.
 
         删除失败的错误信息
 

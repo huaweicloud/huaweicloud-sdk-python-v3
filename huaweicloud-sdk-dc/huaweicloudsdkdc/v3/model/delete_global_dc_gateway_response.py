@@ -24,7 +24,7 @@ class DeleteGlobalDcGatewayResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteGlobalDcGatewayResponse
+        r"""DeleteGlobalDcGatewayResponse
 
         The model defined in huaweicloud sdk
 

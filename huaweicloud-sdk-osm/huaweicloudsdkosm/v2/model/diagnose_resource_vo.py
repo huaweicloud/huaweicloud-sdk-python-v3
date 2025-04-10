@@ -45,7 +45,7 @@ class DiagnoseResourceVo:
     }
 
     def __init__(self, fault=None, id=None, name=None, access_i_pv4=None, access_i_pv6=None, status=None, progress=None, tenant_id=None, user_id=None, metadata=None, host_id=None):
-        """DiagnoseResourceVo
+        r"""DiagnoseResourceVo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class DiagnoseResourceVo:
 
     @property
     def fault(self):
-        """Gets the fault of this DiagnoseResourceVo.
+        r"""Gets the fault of this DiagnoseResourceVo.
 
         ID 
 
@@ -124,7 +124,7 @@ class DiagnoseResourceVo:
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this DiagnoseResourceVo.
+        r"""Sets the fault of this DiagnoseResourceVo.
 
         ID 
 
@@ -135,7 +135,7 @@ class DiagnoseResourceVo:
 
     @property
     def id(self):
-        """Gets the id of this DiagnoseResourceVo.
+        r"""Gets the id of this DiagnoseResourceVo.
 
         状态
 
@@ -146,7 +146,7 @@ class DiagnoseResourceVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DiagnoseResourceVo.
+        r"""Sets the id of this DiagnoseResourceVo.
 
         状态
 
@@ -157,7 +157,7 @@ class DiagnoseResourceVo:
 
     @property
     def name(self):
-        """Gets the name of this DiagnoseResourceVo.
+        r"""Gets the name of this DiagnoseResourceVo.
 
         名称
 
@@ -168,7 +168,7 @@ class DiagnoseResourceVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DiagnoseResourceVo.
+        r"""Sets the name of this DiagnoseResourceVo.
 
         名称
 
@@ -179,7 +179,7 @@ class DiagnoseResourceVo:
 
     @property
     def access_i_pv4(self):
-        """Gets the access_i_pv4 of this DiagnoseResourceVo.
+        r"""Gets the access_i_pv4 of this DiagnoseResourceVo.
 
         ip4地址
 
@@ -190,7 +190,7 @@ class DiagnoseResourceVo:
 
     @access_i_pv4.setter
     def access_i_pv4(self, access_i_pv4):
-        """Sets the access_i_pv4 of this DiagnoseResourceVo.
+        r"""Sets the access_i_pv4 of this DiagnoseResourceVo.
 
         ip4地址
 
@@ -201,7 +201,7 @@ class DiagnoseResourceVo:
 
     @property
     def access_i_pv6(self):
-        """Gets the access_i_pv6 of this DiagnoseResourceVo.
+        r"""Gets the access_i_pv6 of this DiagnoseResourceVo.
 
         ip6地址
 
@@ -212,7 +212,7 @@ class DiagnoseResourceVo:
 
     @access_i_pv6.setter
     def access_i_pv6(self, access_i_pv6):
-        """Sets the access_i_pv6 of this DiagnoseResourceVo.
+        r"""Sets the access_i_pv6 of this DiagnoseResourceVo.
 
         ip6地址
 
@@ -223,7 +223,7 @@ class DiagnoseResourceVo:
 
     @property
     def status(self):
-        """Gets the status of this DiagnoseResourceVo.
+        r"""Gets the status of this DiagnoseResourceVo.
 
         状态
 
@@ -234,7 +234,7 @@ class DiagnoseResourceVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DiagnoseResourceVo.
+        r"""Sets the status of this DiagnoseResourceVo.
 
         状态
 
@@ -245,7 +245,7 @@ class DiagnoseResourceVo:
 
     @property
     def progress(self):
-        """Gets the progress of this DiagnoseResourceVo.
+        r"""Gets the progress of this DiagnoseResourceVo.
 
         进度
 
@@ -256,7 +256,7 @@ class DiagnoseResourceVo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this DiagnoseResourceVo.
+        r"""Sets the progress of this DiagnoseResourceVo.
 
         进度
 
@@ -267,7 +267,7 @@ class DiagnoseResourceVo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this DiagnoseResourceVo.
+        r"""Gets the tenant_id of this DiagnoseResourceVo.
 
         前端id
 
@@ -278,7 +278,7 @@ class DiagnoseResourceVo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this DiagnoseResourceVo.
+        r"""Sets the tenant_id of this DiagnoseResourceVo.
 
         前端id
 
@@ -289,7 +289,7 @@ class DiagnoseResourceVo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DiagnoseResourceVo.
+        r"""Gets the user_id of this DiagnoseResourceVo.
 
         用户id
 
@@ -300,7 +300,7 @@ class DiagnoseResourceVo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DiagnoseResourceVo.
+        r"""Sets the user_id of this DiagnoseResourceVo.
 
         用户id
 
@@ -311,7 +311,7 @@ class DiagnoseResourceVo:
 
     @property
     def metadata(self):
-        """Gets the metadata of this DiagnoseResourceVo.
+        r"""Gets the metadata of this DiagnoseResourceVo.
 
         资源元数据
 
@@ -322,7 +322,7 @@ class DiagnoseResourceVo:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DiagnoseResourceVo.
+        r"""Sets the metadata of this DiagnoseResourceVo.
 
         资源元数据
 
@@ -333,7 +333,7 @@ class DiagnoseResourceVo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this DiagnoseResourceVo.
+        r"""Gets the host_id of this DiagnoseResourceVo.
 
         主机id
 
@@ -344,7 +344,7 @@ class DiagnoseResourceVo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DiagnoseResourceVo.
+        r"""Sets the host_id of this DiagnoseResourceVo.
 
         主机id
 

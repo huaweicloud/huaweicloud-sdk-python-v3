@@ -27,7 +27,7 @@ class MetricsDimension:
     }
 
     def __init__(self, name=None, value=None):
-        """MetricsDimension
+        r"""MetricsDimension
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MetricsDimension:
 
     @property
     def name(self):
-        """Gets the name of this MetricsDimension.
+        r"""Gets the name of this MetricsDimension.
 
         资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -59,7 +59,7 @@ class MetricsDimension:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetricsDimension.
+        r"""Sets the name of this MetricsDimension.
 
         资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -70,7 +70,7 @@ class MetricsDimension:
 
     @property
     def value(self):
-        """Gets the value of this MetricsDimension.
+        r"""Gets the value of this MetricsDimension.
 
         资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。
 
@@ -81,7 +81,7 @@ class MetricsDimension:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MetricsDimension.
+        r"""Sets the value of this MetricsDimension.
 
         资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。
 

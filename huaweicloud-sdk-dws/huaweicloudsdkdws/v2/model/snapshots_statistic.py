@@ -29,7 +29,7 @@ class SnapshotsStatistic:
     }
 
     def __init__(self, name=None, value=None, unit=None):
-        """SnapshotsStatistic
+        r"""SnapshotsStatistic
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SnapshotsStatistic:
 
     @property
     def name(self):
-        """Gets the name of this SnapshotsStatistic.
+        r"""Gets the name of this SnapshotsStatistic.
 
         资源统计信息名称。 - storage.free：免费容量。 - storage.paid：付费容量。 - storage.used：已用容量。
 
@@ -65,7 +65,7 @@ class SnapshotsStatistic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SnapshotsStatistic.
+        r"""Sets the name of this SnapshotsStatistic.
 
         资源统计信息名称。 - storage.free：免费容量。 - storage.paid：付费容量。 - storage.used：已用容量。
 
@@ -76,7 +76,7 @@ class SnapshotsStatistic:
 
     @property
     def value(self):
-        """Gets the value of this SnapshotsStatistic.
+        r"""Gets the value of this SnapshotsStatistic.
 
         资源统计信息值。
 
@@ -87,7 +87,7 @@ class SnapshotsStatistic:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SnapshotsStatistic.
+        r"""Sets the value of this SnapshotsStatistic.
 
         资源统计信息值。
 
@@ -98,7 +98,7 @@ class SnapshotsStatistic:
 
     @property
     def unit(self):
-        """Gets the unit of this SnapshotsStatistic.
+        r"""Gets the unit of this SnapshotsStatistic.
 
         资源统计信息单位。
 
@@ -109,7 +109,7 @@ class SnapshotsStatistic:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this SnapshotsStatistic.
+        r"""Sets the unit of this SnapshotsStatistic.
 
         资源统计信息单位。
 

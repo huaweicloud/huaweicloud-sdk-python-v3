@@ -29,7 +29,7 @@ class ExecuteWorkflowBody:
     }
 
     def __init__(self, bucket=None, object=None, inputs=None):
-        """ExecuteWorkflowBody
+        r"""ExecuteWorkflowBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteWorkflowBody:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ExecuteWorkflowBody.
+        r"""Gets the bucket of this ExecuteWorkflowBody.
 
         桶名
 
@@ -66,7 +66,7 @@ class ExecuteWorkflowBody:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ExecuteWorkflowBody.
+        r"""Sets the bucket of this ExecuteWorkflowBody.
 
         桶名
 
@@ -77,7 +77,7 @@ class ExecuteWorkflowBody:
 
     @property
     def object(self):
-        """Gets the object of this ExecuteWorkflowBody.
+        r"""Gets the object of this ExecuteWorkflowBody.
 
         对象名
 
@@ -88,7 +88,7 @@ class ExecuteWorkflowBody:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this ExecuteWorkflowBody.
+        r"""Sets the object of this ExecuteWorkflowBody.
 
         对象名
 
@@ -99,7 +99,7 @@ class ExecuteWorkflowBody:
 
     @property
     def inputs(self):
-        """Gets the inputs of this ExecuteWorkflowBody.
+        r"""Gets the inputs of this ExecuteWorkflowBody.
 
         :return: The inputs of this ExecuteWorkflowBody.
         :rtype: :class:`huaweicloudsdkdwr.v3.Input`
@@ -108,7 +108,7 @@ class ExecuteWorkflowBody:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ExecuteWorkflowBody.
+        r"""Sets the inputs of this ExecuteWorkflowBody.
 
         :param inputs: The inputs of this ExecuteWorkflowBody.
         :type inputs: :class:`huaweicloudsdkdwr.v3.Input`

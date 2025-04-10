@@ -27,7 +27,7 @@ class PolicyAction:
     }
 
     def __init__(self, category=None, followed_action_id=None):
-        """PolicyAction
+        r"""PolicyAction
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyAction:
 
     @property
     def category(self):
-        """Gets the category of this PolicyAction.
+        r"""Gets the category of this PolicyAction.
 
         web基础防护动作（log为仅记录、block为拦截）
 
@@ -61,7 +61,7 @@ class PolicyAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this PolicyAction.
+        r"""Sets the category of this PolicyAction.
 
         web基础防护动作（log为仅记录、block为拦截）
 
@@ -72,7 +72,7 @@ class PolicyAction:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this PolicyAction.
+        r"""Gets the followed_action_id of this PolicyAction.
 
         攻击惩罚规则ID
 
@@ -83,7 +83,7 @@ class PolicyAction:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this PolicyAction.
+        r"""Sets the followed_action_id of this PolicyAction.
 
         攻击惩罚规则ID
 

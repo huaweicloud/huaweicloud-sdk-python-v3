@@ -25,7 +25,7 @@ class SetOffSiteBackupPolicyRequestBody:
     }
 
     def __init__(self, policy_para=None):
-        """SetOffSiteBackupPolicyRequestBody
+        r"""SetOffSiteBackupPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetOffSiteBackupPolicyRequestBody:
 
     @property
     def policy_para(self):
-        """Gets the policy_para of this SetOffSiteBackupPolicyRequestBody.
+        r"""Gets the policy_para of this SetOffSiteBackupPolicyRequestBody.
 
         :return: The policy_para of this SetOffSiteBackupPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`
@@ -51,7 +51,7 @@ class SetOffSiteBackupPolicyRequestBody:
 
     @policy_para.setter
     def policy_para(self, policy_para):
-        """Sets the policy_para of this SetOffSiteBackupPolicyRequestBody.
+        r"""Sets the policy_para of this SetOffSiteBackupPolicyRequestBody.
 
         :param policy_para: The policy_para of this SetOffSiteBackupPolicyRequestBody.
         :type policy_para: :class:`huaweicloudsdkrds.v3.OffSiteBackupPolicy`

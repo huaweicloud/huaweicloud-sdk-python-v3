@@ -27,7 +27,7 @@ class DeleteAssetRequest:
     }
 
     def __init__(self, project_id=None, id=None):
-        """DeleteAssetRequest
+        r"""DeleteAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAssetRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteAssetRequest.
+        r"""Gets the project_id of this DeleteAssetRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class DeleteAssetRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteAssetRequest.
+        r"""Sets the project_id of this DeleteAssetRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class DeleteAssetRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteAssetRequest.
+        r"""Gets the id of this DeleteAssetRequest.
 
         资产库ID
 
@@ -81,7 +81,7 @@ class DeleteAssetRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteAssetRequest.
+        r"""Sets the id of this DeleteAssetRequest.
 
         资产库ID
 

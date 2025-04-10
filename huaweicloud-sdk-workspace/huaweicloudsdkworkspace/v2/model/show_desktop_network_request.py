@@ -25,7 +25,7 @@ class ShowDesktopNetworkRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """ShowDesktopNetworkRequest
+        r"""ShowDesktopNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDesktopNetworkRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ShowDesktopNetworkRequest.
+        r"""Gets the desktop_id of this ShowDesktopNetworkRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class ShowDesktopNetworkRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ShowDesktopNetworkRequest.
+        r"""Sets the desktop_id of this ShowDesktopNetworkRequest.
 
         桌面ID。
 

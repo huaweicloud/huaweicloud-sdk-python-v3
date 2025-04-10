@@ -25,7 +25,7 @@ class UpdateVpcPeeringRequestBody:
     }
 
     def __init__(self, peering=None):
-        """UpdateVpcPeeringRequestBody
+        r"""UpdateVpcPeeringRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpcPeeringRequestBody:
 
     @property
     def peering(self):
-        """Gets the peering of this UpdateVpcPeeringRequestBody.
+        r"""Gets the peering of this UpdateVpcPeeringRequestBody.
 
         :return: The peering of this UpdateVpcPeeringRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringOption`
@@ -51,7 +51,7 @@ class UpdateVpcPeeringRequestBody:
 
     @peering.setter
     def peering(self, peering):
-        """Sets the peering of this UpdateVpcPeeringRequestBody.
+        r"""Sets the peering of this UpdateVpcPeeringRequestBody.
 
         :param peering: The peering of this UpdateVpcPeeringRequestBody.
         :type peering: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringOption`

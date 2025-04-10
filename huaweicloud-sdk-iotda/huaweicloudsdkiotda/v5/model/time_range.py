@@ -29,7 +29,7 @@ class TimeRange:
     }
 
     def __init__(self, start_time=None, end_time=None, days_of_week=None):
-        """TimeRange
+        r"""TimeRange
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TimeRange:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TimeRange.
+        r"""Gets the start_time of this TimeRange.
 
         **参数说明**：规则条件触发的开始时间，格式：HH:mm。
 
@@ -66,7 +66,7 @@ class TimeRange:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TimeRange.
+        r"""Sets the start_time of this TimeRange.
 
         **参数说明**：规则条件触发的开始时间，格式：HH:mm。
 
@@ -77,7 +77,7 @@ class TimeRange:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TimeRange.
+        r"""Gets the end_time of this TimeRange.
 
         **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
 
@@ -88,7 +88,7 @@ class TimeRange:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TimeRange.
+        r"""Sets the end_time of this TimeRange.
 
         **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
 
@@ -99,7 +99,7 @@ class TimeRange:
 
     @property
     def days_of_week(self):
-        """Gets the days_of_week of this TimeRange.
+        r"""Gets the days_of_week of this TimeRange.
 
         **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
 
@@ -110,7 +110,7 @@ class TimeRange:
 
     @days_of_week.setter
     def days_of_week(self, days_of_week):
-        """Sets the days_of_week of this TimeRange.
+        r"""Sets the days_of_week of this TimeRange.
 
         **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
 

@@ -25,7 +25,7 @@ class MenuInfoRequestBody:
     }
 
     def __init__(self, menu=None):
-        """MenuInfoRequestBody
+        r"""MenuInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MenuInfoRequestBody:
 
     @property
     def menu(self):
-        """Gets the menu of this MenuInfoRequestBody.
+        r"""Gets the menu of this MenuInfoRequestBody.
 
         :return: The menu of this MenuInfoRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.MenusMode`
@@ -51,7 +51,7 @@ class MenuInfoRequestBody:
 
     @menu.setter
     def menu(self, menu):
-        """Sets the menu of this MenuInfoRequestBody.
+        r"""Sets the menu of this MenuInfoRequestBody.
 
         :param menu: The menu of this MenuInfoRequestBody.
         :type menu: :class:`huaweicloudsdkkoomessage.v1.MenusMode`

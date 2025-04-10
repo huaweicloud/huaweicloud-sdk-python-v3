@@ -37,7 +37,7 @@ class SimpleTaskInfoV2:
     }
 
     def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, created_at=None, last_check_time=None):
-        """SimpleTaskInfoV2
+        r"""SimpleTaskInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SimpleTaskInfoV2:
 
     @property
     def task_id(self):
-        """Gets the task_id of this SimpleTaskInfoV2.
+        r"""Gets the task_id of this SimpleTaskInfoV2.
 
         任务id
 
@@ -96,7 +96,7 @@ class SimpleTaskInfoV2:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this SimpleTaskInfoV2.
+        r"""Sets the task_id of this SimpleTaskInfoV2.
 
         任务id
 
@@ -107,7 +107,7 @@ class SimpleTaskInfoV2:
 
     @property
     def task_name(self):
-        """Gets the task_name of this SimpleTaskInfoV2.
+        r"""Gets the task_name of this SimpleTaskInfoV2.
 
         任务名字
 
@@ -118,7 +118,7 @@ class SimpleTaskInfoV2:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this SimpleTaskInfoV2.
+        r"""Sets the task_name of this SimpleTaskInfoV2.
 
         任务名字
 
@@ -129,7 +129,7 @@ class SimpleTaskInfoV2:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this SimpleTaskInfoV2.
+        r"""Gets the creator_id of this SimpleTaskInfoV2.
 
         创建者id
 
@@ -140,7 +140,7 @@ class SimpleTaskInfoV2:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this SimpleTaskInfoV2.
+        r"""Sets the creator_id of this SimpleTaskInfoV2.
 
         创建者id
 
@@ -151,7 +151,7 @@ class SimpleTaskInfoV2:
 
     @property
     def git_url(self):
-        """Gets the git_url of this SimpleTaskInfoV2.
+        r"""Gets the git_url of this SimpleTaskInfoV2.
 
         代码仓地址
 
@@ -162,7 +162,7 @@ class SimpleTaskInfoV2:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this SimpleTaskInfoV2.
+        r"""Sets the git_url of this SimpleTaskInfoV2.
 
         代码仓地址
 
@@ -173,7 +173,7 @@ class SimpleTaskInfoV2:
 
     @property
     def git_branch(self):
-        """Gets the git_branch of this SimpleTaskInfoV2.
+        r"""Gets the git_branch of this SimpleTaskInfoV2.
 
         代码仓分支,如果是MR模式，为源分支
 
@@ -184,7 +184,7 @@ class SimpleTaskInfoV2:
 
     @git_branch.setter
     def git_branch(self, git_branch):
-        """Sets the git_branch of this SimpleTaskInfoV2.
+        r"""Sets the git_branch of this SimpleTaskInfoV2.
 
         代码仓分支,如果是MR模式，为源分支
 
@@ -195,7 +195,7 @@ class SimpleTaskInfoV2:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SimpleTaskInfoV2.
+        r"""Gets the created_at of this SimpleTaskInfoV2.
 
         创建时间
 
@@ -206,7 +206,7 @@ class SimpleTaskInfoV2:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SimpleTaskInfoV2.
+        r"""Sets the created_at of this SimpleTaskInfoV2.
 
         创建时间
 
@@ -217,7 +217,7 @@ class SimpleTaskInfoV2:
 
     @property
     def last_check_time(self):
-        """Gets the last_check_time of this SimpleTaskInfoV2.
+        r"""Gets the last_check_time of this SimpleTaskInfoV2.
 
         上一次检查时间
 
@@ -228,7 +228,7 @@ class SimpleTaskInfoV2:
 
     @last_check_time.setter
     def last_check_time(self, last_check_time):
-        """Sets the last_check_time of this SimpleTaskInfoV2.
+        r"""Sets the last_check_time of this SimpleTaskInfoV2.
 
         上一次检查时间
 

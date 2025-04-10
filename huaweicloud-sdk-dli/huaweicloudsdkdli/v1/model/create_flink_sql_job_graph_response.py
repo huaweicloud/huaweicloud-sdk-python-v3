@@ -32,7 +32,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None, stream_graph=None):
-        """CreateFlinkSqlJobGraphResponse
+        r"""CreateFlinkSqlJobGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateFlinkSqlJobGraphResponse.
+        r"""Gets the is_success of this CreateFlinkSqlJobGraphResponse.
 
         :return: The is_success of this CreateFlinkSqlJobGraphResponse.
         :rtype: bool
@@ -74,7 +74,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateFlinkSqlJobGraphResponse.
+        r"""Sets the is_success of this CreateFlinkSqlJobGraphResponse.
 
         :param is_success: The is_success of this CreateFlinkSqlJobGraphResponse.
         :type is_success: bool
@@ -83,7 +83,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateFlinkSqlJobGraphResponse.
+        r"""Gets the message of this CreateFlinkSqlJobGraphResponse.
 
         :return: The message of this CreateFlinkSqlJobGraphResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateFlinkSqlJobGraphResponse.
+        r"""Sets the message of this CreateFlinkSqlJobGraphResponse.
 
         :param message: The message of this CreateFlinkSqlJobGraphResponse.
         :type message: str
@@ -101,7 +101,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateFlinkSqlJobGraphResponse.
+        r"""Gets the error_code of this CreateFlinkSqlJobGraphResponse.
 
         :return: The error_code of this CreateFlinkSqlJobGraphResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateFlinkSqlJobGraphResponse.
+        r"""Sets the error_code of this CreateFlinkSqlJobGraphResponse.
 
         :param error_code: The error_code of this CreateFlinkSqlJobGraphResponse.
         :type error_code: str
@@ -119,7 +119,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @property
     def stream_graph(self):
-        """Gets the stream_graph of this CreateFlinkSqlJobGraphResponse.
+        r"""Gets the stream_graph of this CreateFlinkSqlJobGraphResponse.
 
         静态流图的描述信息
 
@@ -130,7 +130,7 @@ class CreateFlinkSqlJobGraphResponse(SdkResponse):
 
     @stream_graph.setter
     def stream_graph(self, stream_graph):
-        """Sets the stream_graph of this CreateFlinkSqlJobGraphResponse.
+        r"""Sets the stream_graph of this CreateFlinkSqlJobGraphResponse.
 
         静态流图的描述信息
 

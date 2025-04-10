@@ -33,7 +33,7 @@ class ProductObject:
     }
 
     def __init__(self, product_id=None, product_spec_desc=None, category_code=None, product_owner_service=None, commercial_resource=None):
-        """ProductObject
+        r"""ProductObject
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProductObject:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductObject.
+        r"""Gets the product_id of this ProductObject.
 
         产品ID。
 
@@ -82,7 +82,7 @@ class ProductObject:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductObject.
+        r"""Sets the product_id of this ProductObject.
 
         产品ID。
 
@@ -93,7 +93,7 @@ class ProductObject:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this ProductObject.
+        r"""Gets the product_spec_desc of this ProductObject.
 
         产品规格描述。
 
@@ -104,7 +104,7 @@ class ProductObject:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this ProductObject.
+        r"""Sets the product_spec_desc of this ProductObject.
 
         产品规格描述。
 
@@ -115,7 +115,7 @@ class ProductObject:
 
     @property
     def category_code(self):
-        """Gets the category_code of this ProductObject.
+        r"""Gets the category_code of this ProductObject.
 
         产品目录编码。
 
@@ -126,7 +126,7 @@ class ProductObject:
 
     @category_code.setter
     def category_code(self, category_code):
-        """Sets the category_code of this ProductObject.
+        r"""Sets the category_code of this ProductObject.
 
         产品目录编码。
 
@@ -137,7 +137,7 @@ class ProductObject:
 
     @property
     def product_owner_service(self):
-        """Gets the product_owner_service of this ProductObject.
+        r"""Gets the product_owner_service of this ProductObject.
 
         产品归属的云服务类型编码。
 
@@ -148,7 +148,7 @@ class ProductObject:
 
     @product_owner_service.setter
     def product_owner_service(self, product_owner_service):
-        """Sets the product_owner_service of this ProductObject.
+        r"""Sets the product_owner_service of this ProductObject.
 
         产品归属的云服务类型编码。
 
@@ -159,7 +159,7 @@ class ProductObject:
 
     @property
     def commercial_resource(self):
-        """Gets the commercial_resource of this ProductObject.
+        r"""Gets the commercial_resource of this ProductObject.
 
         商务归属的资源类型编码。
 
@@ -170,7 +170,7 @@ class ProductObject:
 
     @commercial_resource.setter
     def commercial_resource(self, commercial_resource):
-        """Sets the commercial_resource of this ProductObject.
+        r"""Sets the commercial_resource of this ProductObject.
 
         商务归属的资源类型编码。
 

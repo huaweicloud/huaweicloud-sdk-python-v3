@@ -27,7 +27,7 @@ class UpdateBackupRequest:
     }
 
     def __init__(self, backup_id=None, body=None):
-        """UpdateBackupRequest
+        r"""UpdateBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this UpdateBackupRequest.
+        r"""Gets the backup_id of this UpdateBackupRequest.
 
         备份ID
 
@@ -60,7 +60,7 @@ class UpdateBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this UpdateBackupRequest.
+        r"""Sets the backup_id of this UpdateBackupRequest.
 
         备份ID
 
@@ -71,7 +71,7 @@ class UpdateBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBackupRequest.
+        r"""Gets the body of this UpdateBackupRequest.
 
         :return: The body of this UpdateBackupRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupUpdateReq`
@@ -80,7 +80,7 @@ class UpdateBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBackupRequest.
+        r"""Sets the body of this UpdateBackupRequest.
 
         :param body: The body of this UpdateBackupRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BackupUpdateReq`

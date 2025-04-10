@@ -28,7 +28,7 @@ class CheckClickHouseTableConfigResponse(SdkResponse):
     }
 
     def __init__(self, source_database_name=None, table_config_check_results=None):
-        """CheckClickHouseTableConfigResponse
+        r"""CheckClickHouseTableConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckClickHouseTableConfigResponse(SdkResponse):
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this CheckClickHouseTableConfigResponse.
+        r"""Gets the source_database_name of this CheckClickHouseTableConfigResponse.
 
         源数据库名。
 
@@ -62,7 +62,7 @@ class CheckClickHouseTableConfigResponse(SdkResponse):
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this CheckClickHouseTableConfigResponse.
+        r"""Sets the source_database_name of this CheckClickHouseTableConfigResponse.
 
         源数据库名。
 
@@ -73,7 +73,7 @@ class CheckClickHouseTableConfigResponse(SdkResponse):
 
     @property
     def table_config_check_results(self):
-        """Gets the table_config_check_results of this CheckClickHouseTableConfigResponse.
+        r"""Gets the table_config_check_results of this CheckClickHouseTableConfigResponse.
 
         表配置检查结果。
 
@@ -84,7 +84,7 @@ class CheckClickHouseTableConfigResponse(SdkResponse):
 
     @table_config_check_results.setter
     def table_config_check_results(self, table_config_check_results):
-        """Sets the table_config_check_results of this CheckClickHouseTableConfigResponse.
+        r"""Sets the table_config_check_results of this CheckClickHouseTableConfigResponse.
 
         表配置检查结果。
 

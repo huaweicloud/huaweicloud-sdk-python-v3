@@ -35,7 +35,7 @@ class ShowResourceHistoryRequest:
     }
 
     def __init__(self, resource_id=None, marker=None, limit=None, earlier_time=None, later_time=None, chronological_order=None):
-        """ShowResourceHistoryRequest
+        r"""ShowResourceHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowResourceHistoryRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceHistoryRequest.
+        r"""Gets the resource_id of this ShowResourceHistoryRequest.
 
         资源ID
 
@@ -88,7 +88,7 @@ class ShowResourceHistoryRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceHistoryRequest.
+        r"""Sets the resource_id of this ShowResourceHistoryRequest.
 
         资源ID
 
@@ -99,7 +99,7 @@ class ShowResourceHistoryRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowResourceHistoryRequest.
+        r"""Gets the marker of this ShowResourceHistoryRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -110,7 +110,7 @@ class ShowResourceHistoryRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowResourceHistoryRequest.
+        r"""Sets the marker of this ShowResourceHistoryRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -121,7 +121,7 @@ class ShowResourceHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowResourceHistoryRequest.
+        r"""Gets the limit of this ShowResourceHistoryRequest.
 
         最大的返回数量
 
@@ -132,7 +132,7 @@ class ShowResourceHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowResourceHistoryRequest.
+        r"""Sets the limit of this ShowResourceHistoryRequest.
 
         最大的返回数量
 
@@ -143,7 +143,7 @@ class ShowResourceHistoryRequest:
 
     @property
     def earlier_time(self):
-        """Gets the earlier_time of this ShowResourceHistoryRequest.
+        r"""Gets the earlier_time of this ShowResourceHistoryRequest.
 
         指定查询范围的起始时间点，如果不设置此参数，默认为最早的时间
 
@@ -154,7 +154,7 @@ class ShowResourceHistoryRequest:
 
     @earlier_time.setter
     def earlier_time(self, earlier_time):
-        """Sets the earlier_time of this ShowResourceHistoryRequest.
+        r"""Sets the earlier_time of this ShowResourceHistoryRequest.
 
         指定查询范围的起始时间点，如果不设置此参数，默认为最早的时间
 
@@ -165,7 +165,7 @@ class ShowResourceHistoryRequest:
 
     @property
     def later_time(self):
-        """Gets the later_time of this ShowResourceHistoryRequest.
+        r"""Gets the later_time of this ShowResourceHistoryRequest.
 
         指定查询范围的结束时间点，如果不设置此参数，默认为当前时间
 
@@ -176,7 +176,7 @@ class ShowResourceHistoryRequest:
 
     @later_time.setter
     def later_time(self, later_time):
-        """Sets the later_time of this ShowResourceHistoryRequest.
+        r"""Sets the later_time of this ShowResourceHistoryRequest.
 
         指定查询范围的结束时间点，如果不设置此参数，默认为当前时间
 
@@ -187,7 +187,7 @@ class ShowResourceHistoryRequest:
 
     @property
     def chronological_order(self):
-        """Gets the chronological_order of this ShowResourceHistoryRequest.
+        r"""Gets the chronological_order of this ShowResourceHistoryRequest.
 
         指定返回数据的时间顺序，默认为倒序
 
@@ -198,7 +198,7 @@ class ShowResourceHistoryRequest:
 
     @chronological_order.setter
     def chronological_order(self, chronological_order):
-        """Sets the chronological_order of this ShowResourceHistoryRequest.
+        r"""Sets the chronological_order of this ShowResourceHistoryRequest.
 
         指定返回数据的时间顺序，默认为倒序
 

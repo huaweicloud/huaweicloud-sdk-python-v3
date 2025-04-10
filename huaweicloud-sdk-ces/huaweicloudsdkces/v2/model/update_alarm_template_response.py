@@ -24,7 +24,7 @@ class UpdateAlarmTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAlarmTemplateResponse
+        r"""UpdateAlarmTemplateResponse
 
         The model defined in huaweicloud sdk
 

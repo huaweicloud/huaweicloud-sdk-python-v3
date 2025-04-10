@@ -24,7 +24,7 @@ class CreateTestCaseInPlanResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateTestCaseInPlanResponse
+        r"""CreateTestCaseInPlanResponse
 
         The model defined in huaweicloud sdk
 

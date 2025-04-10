@@ -30,7 +30,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None, spec=None, status=None):
-        """UpdateAutopilotClusterEipResponse
+        r"""UpdateAutopilotClusterEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateAutopilotClusterEipResponse.
+        r"""Gets the metadata of this UpdateAutopilotClusterEipResponse.
 
         :return: The metadata of this UpdateAutopilotClusterEipResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -67,7 +67,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateAutopilotClusterEipResponse.
+        r"""Sets the metadata of this UpdateAutopilotClusterEipResponse.
 
         :param metadata: The metadata of this UpdateAutopilotClusterEipResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -76,7 +76,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateAutopilotClusterEipResponse.
+        r"""Gets the spec of this UpdateAutopilotClusterEipResponse.
 
         :return: The spec of this UpdateAutopilotClusterEipResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpec`
@@ -85,7 +85,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateAutopilotClusterEipResponse.
+        r"""Sets the spec of this UpdateAutopilotClusterEipResponse.
 
         :param spec: The spec of this UpdateAutopilotClusterEipResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpec`
@@ -94,7 +94,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAutopilotClusterEipResponse.
+        r"""Gets the status of this UpdateAutopilotClusterEipResponse.
 
         :return: The status of this UpdateAutopilotClusterEipResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
@@ -103,7 +103,7 @@ class UpdateAutopilotClusterEipResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAutopilotClusterEipResponse.
+        r"""Sets the status of this UpdateAutopilotClusterEipResponse.
 
         :param status: The status of this UpdateAutopilotClusterEipResponse.
         :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`

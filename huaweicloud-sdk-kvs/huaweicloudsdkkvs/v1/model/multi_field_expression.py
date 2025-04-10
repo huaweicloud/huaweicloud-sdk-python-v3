@@ -27,7 +27,7 @@ class MultiFieldExpression:
     }
 
     def __init__(self, logic=None, expressions=None):
-        """MultiFieldExpression
+        r"""MultiFieldExpression
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MultiFieldExpression:
 
     @property
     def logic(self):
-        """Gets the logic of this MultiFieldExpression.
+        r"""Gets the logic of this MultiFieldExpression.
 
         多字段条件，多个相同优先级的单字段条件。
 
@@ -60,7 +60,7 @@ class MultiFieldExpression:
 
     @logic.setter
     def logic(self, logic):
-        """Sets the logic of this MultiFieldExpression.
+        r"""Sets the logic of this MultiFieldExpression.
 
         多字段条件，多个相同优先级的单字段条件。
 
@@ -71,7 +71,7 @@ class MultiFieldExpression:
 
     @property
     def expressions(self):
-        """Gets the expressions of this MultiFieldExpression.
+        r"""Gets the expressions of this MultiFieldExpression.
 
         多个相同逻辑操作的单字段条件。
 
@@ -82,7 +82,7 @@ class MultiFieldExpression:
 
     @expressions.setter
     def expressions(self, expressions):
-        """Sets the expressions of this MultiFieldExpression.
+        r"""Sets the expressions of this MultiFieldExpression.
 
         多个相同逻辑操作的单字段条件。
 

@@ -28,7 +28,7 @@ class ListSpecsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, spec_codes=None):
-        """ListSpecsResponse
+        r"""ListSpecsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSpecsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSpecsResponse.
+        r"""Gets the total of this ListSpecsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListSpecsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSpecsResponse.
+        r"""Sets the total of this ListSpecsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListSpecsResponse(SdkResponse):
 
     @property
     def spec_codes(self):
-        """Gets the spec_codes of this ListSpecsResponse.
+        r"""Gets the spec_codes of this ListSpecsResponse.
 
         规格编码列表
 
@@ -84,7 +84,7 @@ class ListSpecsResponse(SdkResponse):
 
     @spec_codes.setter
     def spec_codes(self, spec_codes):
-        """Sets the spec_codes of this ListSpecsResponse.
+        r"""Sets the spec_codes of this ListSpecsResponse.
 
         规格编码列表
 

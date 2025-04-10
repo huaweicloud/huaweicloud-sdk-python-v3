@@ -30,7 +30,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowJobResponse.
+        r"""Gets the api_version of this ShowJobResponse.
 
         :return: The api_version of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ShowJobResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowJobResponse.
+        r"""Sets the api_version of this ShowJobResponse.
 
         :param api_version: The api_version of this ShowJobResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowJobResponse.
+        r"""Gets the kind of this ShowJobResponse.
 
         :return: The kind of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.JobKindObj`
@@ -85,7 +85,7 @@ class ShowJobResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowJobResponse.
+        r"""Sets the kind of this ShowJobResponse.
 
         :param kind: The kind of this ShowJobResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.JobKindObj`
@@ -94,7 +94,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowJobResponse.
+        r"""Gets the spec of this ShowJobResponse.
 
         :return: The spec of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.JobSpec`
@@ -103,7 +103,7 @@ class ShowJobResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowJobResponse.
+        r"""Sets the spec of this ShowJobResponse.
 
         :param spec: The spec of this ShowJobResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.JobSpec`

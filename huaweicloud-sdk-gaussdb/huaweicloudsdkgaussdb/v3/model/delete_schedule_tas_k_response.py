@@ -26,7 +26,7 @@ class DeleteScheduleTasKResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteScheduleTasKResponse
+        r"""DeleteScheduleTasKResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteScheduleTasKResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteScheduleTasKResponse.
+        r"""Gets the result of this DeleteScheduleTasKResponse.
 
         结果。
 
@@ -55,7 +55,7 @@ class DeleteScheduleTasKResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteScheduleTasKResponse.
+        r"""Sets the result of this DeleteScheduleTasKResponse.
 
         结果。
 

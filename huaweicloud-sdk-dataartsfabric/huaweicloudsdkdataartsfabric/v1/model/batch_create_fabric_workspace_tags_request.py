@@ -27,7 +27,7 @@ class BatchCreateFabricWorkspaceTagsRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """BatchCreateFabricWorkspaceTagsRequest
+        r"""BatchCreateFabricWorkspaceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateFabricWorkspaceTagsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this BatchCreateFabricWorkspaceTagsRequest.
+        r"""Gets the workspace_id of this BatchCreateFabricWorkspaceTagsRequest.
 
         工作空间ID
 
@@ -60,7 +60,7 @@ class BatchCreateFabricWorkspaceTagsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this BatchCreateFabricWorkspaceTagsRequest.
+        r"""Sets the workspace_id of this BatchCreateFabricWorkspaceTagsRequest.
 
         工作空间ID
 
@@ -71,7 +71,7 @@ class BatchCreateFabricWorkspaceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateFabricWorkspaceTagsRequest.
+        r"""Gets the body of this BatchCreateFabricWorkspaceTagsRequest.
 
         :return: The body of this BatchCreateFabricWorkspaceTagsRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.BatchCreateTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateFabricWorkspaceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateFabricWorkspaceTagsRequest.
+        r"""Sets the body of this BatchCreateFabricWorkspaceTagsRequest.
 
         :param body: The body of this BatchCreateFabricWorkspaceTagsRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.BatchCreateTagsRequestBody`

@@ -25,7 +25,7 @@ class PartitionSpecHostNetwork:
     }
 
     def __init__(self, subnet_id=None):
-        """PartitionSpecHostNetwork
+        r"""PartitionSpecHostNetwork
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PartitionSpecHostNetwork:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this PartitionSpecHostNetwork.
+        r"""Gets the subnet_id of this PartitionSpecHostNetwork.
 
         子网ID
 
@@ -54,7 +54,7 @@ class PartitionSpecHostNetwork:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this PartitionSpecHostNetwork.
+        r"""Sets the subnet_id of this PartitionSpecHostNetwork.
 
         子网ID
 

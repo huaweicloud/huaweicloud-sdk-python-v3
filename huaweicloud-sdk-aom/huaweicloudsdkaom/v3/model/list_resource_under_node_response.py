@@ -28,7 +28,7 @@ class ListResourceUnderNodeResponse(SdkResponse):
     }
 
     def __init__(self, data=None, page_info=None):
-        """ListResourceUnderNodeResponse
+        r"""ListResourceUnderNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceUnderNodeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListResourceUnderNodeResponse.
+        r"""Gets the data of this ListResourceUnderNodeResponse.
 
         分页查询的数据。
 
@@ -62,7 +62,7 @@ class ListResourceUnderNodeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListResourceUnderNodeResponse.
+        r"""Sets the data of this ListResourceUnderNodeResponse.
 
         分页查询的数据。
 
@@ -73,7 +73,7 @@ class ListResourceUnderNodeResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListResourceUnderNodeResponse.
+        r"""Gets the page_info of this ListResourceUnderNodeResponse.
 
         分页信息。
 
@@ -84,7 +84,7 @@ class ListResourceUnderNodeResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListResourceUnderNodeResponse.
+        r"""Sets the page_info of this ListResourceUnderNodeResponse.
 
         分页信息。
 

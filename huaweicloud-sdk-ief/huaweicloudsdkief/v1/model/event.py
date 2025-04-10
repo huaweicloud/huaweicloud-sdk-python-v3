@@ -49,7 +49,7 @@ class Event:
     }
 
     def __init__(self, id=None, name=None, project_id=None, created_at=None, updated_at=None, description=None, in_using=None, events=None, target=None, target_resource=None, success_messages=None, fail_messages=None, delete_at=None):
-        """Event
+        r"""Event
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class Event:
 
     @property
     def id(self):
-        """Gets the id of this Event.
+        r"""Gets the id of this Event.
 
         系统订阅事件ID
 
@@ -138,7 +138,7 @@ class Event:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Event.
+        r"""Sets the id of this Event.
 
         系统订阅事件ID
 
@@ -149,7 +149,7 @@ class Event:
 
     @property
     def name(self):
-        """Gets the name of this Event.
+        r"""Gets the name of this Event.
 
         系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
@@ -160,7 +160,7 @@ class Event:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Event.
+        r"""Sets the name of this Event.
 
         系统订阅事件名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
@@ -171,7 +171,7 @@ class Event:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Event.
+        r"""Gets the project_id of this Event.
 
         系统订阅事件所属项目ID
 
@@ -182,7 +182,7 @@ class Event:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Event.
+        r"""Sets the project_id of this Event.
 
         系统订阅事件所属项目ID
 
@@ -193,7 +193,7 @@ class Event:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Event.
+        r"""Gets the created_at of this Event.
 
         创建时间
 
@@ -204,7 +204,7 @@ class Event:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Event.
+        r"""Sets the created_at of this Event.
 
         创建时间
 
@@ -215,7 +215,7 @@ class Event:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Event.
+        r"""Gets the updated_at of this Event.
 
         更新时间
 
@@ -226,7 +226,7 @@ class Event:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Event.
+        r"""Sets the updated_at of this Event.
 
         更新时间
 
@@ -237,7 +237,7 @@ class Event:
 
     @property
     def description(self):
-        """Gets the description of this Event.
+        r"""Gets the description of this Event.
 
         描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -248,7 +248,7 @@ class Event:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Event.
+        r"""Sets the description of this Event.
 
         描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -259,7 +259,7 @@ class Event:
 
     @property
     def in_using(self):
-        """Gets the in_using of this Event.
+        r"""Gets the in_using of this Event.
 
         是否启用系统订阅规则，默认为true（启用）
 
@@ -270,7 +270,7 @@ class Event:
 
     @in_using.setter
     def in_using(self, in_using):
-        """Sets the in_using of this Event.
+        r"""Sets the in_using of this Event.
 
         是否启用系统订阅规则，默认为true（启用）
 
@@ -281,7 +281,7 @@ class Event:
 
     @property
     def events(self):
-        """Gets the events of this Event.
+        r"""Gets the events of this Event.
 
         系统订阅事件主题。每个主题由“{边缘资源}/{操作}”组成，多个主题使用逗号（,）进行分隔，支持如下主题： - edgeNode/offline：节点离线 - edgeNode/online：节点上线 - edgeNode/all：节点离线+节点上线 - deployment/created：容器应用创建 - deployment/updated：容器应用更新 - deployment/deleted：容器应用删除 - deployment/all：容器应用创建+更新+删除 - instance/created：应用实例创建 - instance/updated：应用实例更新 - instance/deleted：应用实例删除 - instance/all：应用实例创建+更新+删除
 
@@ -292,7 +292,7 @@ class Event:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this Event.
+        r"""Sets the events of this Event.
 
         系统订阅事件主题。每个主题由“{边缘资源}/{操作}”组成，多个主题使用逗号（,）进行分隔，支持如下主题： - edgeNode/offline：节点离线 - edgeNode/online：节点上线 - edgeNode/all：节点离线+节点上线 - deployment/created：容器应用创建 - deployment/updated：容器应用更新 - deployment/deleted：容器应用删除 - deployment/all：容器应用创建+更新+删除 - instance/created：应用实例创建 - instance/updated：应用实例更新 - instance/deleted：应用实例删除 - instance/all：应用实例创建+更新+删除
 
@@ -303,7 +303,7 @@ class Event:
 
     @property
     def target(self):
-        """Gets the target of this Event.
+        r"""Gets the target of this Event.
 
         :return: The target of this Event.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -312,7 +312,7 @@ class Event:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this Event.
+        r"""Sets the target of this Event.
 
         :param target: The target of this Event.
         :type target: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -321,7 +321,7 @@ class Event:
 
     @property
     def target_resource(self):
-        """Gets the target_resource of this Event.
+        r"""Gets the target_resource of this Event.
 
         目的端点资源属性
 
@@ -332,7 +332,7 @@ class Event:
 
     @target_resource.setter
     def target_resource(self, target_resource):
-        """Sets the target_resource of this Event.
+        r"""Sets the target_resource of this Event.
 
         目的端点资源属性
 
@@ -343,7 +343,7 @@ class Event:
 
     @property
     def success_messages(self):
-        """Gets the success_messages of this Event.
+        r"""Gets the success_messages of this Event.
 
         成功次数
 
@@ -354,7 +354,7 @@ class Event:
 
     @success_messages.setter
     def success_messages(self, success_messages):
-        """Sets the success_messages of this Event.
+        r"""Sets the success_messages of this Event.
 
         成功次数
 
@@ -365,7 +365,7 @@ class Event:
 
     @property
     def fail_messages(self):
-        """Gets the fail_messages of this Event.
+        r"""Gets the fail_messages of this Event.
 
         失败次数
 
@@ -376,7 +376,7 @@ class Event:
 
     @fail_messages.setter
     def fail_messages(self, fail_messages):
-        """Sets the fail_messages of this Event.
+        r"""Sets the fail_messages of this Event.
 
         失败次数
 
@@ -387,7 +387,7 @@ class Event:
 
     @property
     def delete_at(self):
-        """Gets the delete_at of this Event.
+        r"""Gets the delete_at of this Event.
 
         删除时间
 
@@ -398,7 +398,7 @@ class Event:
 
     @delete_at.setter
     def delete_at(self, delete_at):
-        """Sets the delete_at of this Event.
+        r"""Sets the delete_at of this Event.
 
         删除时间
 

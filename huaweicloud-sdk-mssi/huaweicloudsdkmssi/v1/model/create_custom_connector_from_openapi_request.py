@@ -25,7 +25,7 @@ class CreateCustomConnectorFromOpenapiRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCustomConnectorFromOpenapiRequest
+        r"""CreateCustomConnectorFromOpenapiRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCustomConnectorFromOpenapiRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomConnectorFromOpenapiRequest.
+        r"""Gets the body of this CreateCustomConnectorFromOpenapiRequest.
 
         :return: The body of this CreateCustomConnectorFromOpenapiRequest.
         :rtype: :class:`huaweicloudsdkmssi.v1.CustomConnectorInfoV2`
@@ -52,7 +52,7 @@ class CreateCustomConnectorFromOpenapiRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomConnectorFromOpenapiRequest.
+        r"""Sets the body of this CreateCustomConnectorFromOpenapiRequest.
 
         :param body: The body of this CreateCustomConnectorFromOpenapiRequest.
         :type body: :class:`huaweicloudsdkmssi.v1.CustomConnectorInfoV2`

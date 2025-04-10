@@ -111,7 +111,7 @@ class AcceptanceBillResult:
     }
 
     def __init__(self, issue_date=None, due_date=None, bill_status=None, bill_number=None, issuer_full_name=None, issuer_account=None, issuer_bank_name=None, issuer_bank_number=None, payee_full_name=None, payee_account=None, payee_bank_name=None, payee_bank_number=None, issuance_guarantor_name=None, issuance_guarantor_address=None, issuance_guarantor_account=None, issuance_guarantee_date=None, issuance_guarantor_bank_number=None, issuance_guarantor_bank_name=None, amount_in_words=None, amount_in_figures=None, acceptor_full_name=None, acceptor_account=None, acceptor_bank_number=None, acceptor_bank_name=None, contract_number=None, assignability=None, issuer_commitment=None, acceptor_commitment=None, acceptance_date=None, acceptance_guarantor_name=None, acceptance_guarantor_address=None, acceptance_guarantor_account=None, acceptance_guarantee_date=None, acceptance_guarantor_bank_number=None, acceptance_guarantor_bank_name=None, issuer_rating_entity=None, issuer_credit_rating=None, issuer_rating_due_date=None, acceptor_rating_entity=None, acceptor_credit_rating=None, acceptor_rating_due_date=None, bill_package_number=None, remarks=None, confidence=None):
-        """AcceptanceBillResult
+        r"""AcceptanceBillResult
 
         The model defined in huaweicloud sdk
 
@@ -344,7 +344,7 @@ class AcceptanceBillResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this AcceptanceBillResult.
+        r"""Gets the issue_date of this AcceptanceBillResult.
 
         出票日期。 
 
@@ -355,7 +355,7 @@ class AcceptanceBillResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this AcceptanceBillResult.
+        r"""Sets the issue_date of this AcceptanceBillResult.
 
         出票日期。 
 
@@ -366,7 +366,7 @@ class AcceptanceBillResult:
 
     @property
     def due_date(self):
-        """Gets the due_date of this AcceptanceBillResult.
+        r"""Gets the due_date of this AcceptanceBillResult.
 
         汇票到期日。 
 
@@ -377,7 +377,7 @@ class AcceptanceBillResult:
 
     @due_date.setter
     def due_date(self, due_date):
-        """Sets the due_date of this AcceptanceBillResult.
+        r"""Sets the due_date of this AcceptanceBillResult.
 
         汇票到期日。 
 
@@ -388,7 +388,7 @@ class AcceptanceBillResult:
 
     @property
     def bill_status(self):
-        """Gets the bill_status of this AcceptanceBillResult.
+        r"""Gets the bill_status of this AcceptanceBillResult.
 
         票据状态。 
 
@@ -399,7 +399,7 @@ class AcceptanceBillResult:
 
     @bill_status.setter
     def bill_status(self, bill_status):
-        """Sets the bill_status of this AcceptanceBillResult.
+        r"""Sets the bill_status of this AcceptanceBillResult.
 
         票据状态。 
 
@@ -410,7 +410,7 @@ class AcceptanceBillResult:
 
     @property
     def bill_number(self):
-        """Gets the bill_number of this AcceptanceBillResult.
+        r"""Gets the bill_number of this AcceptanceBillResult.
 
         票据号码。 
 
@@ -421,7 +421,7 @@ class AcceptanceBillResult:
 
     @bill_number.setter
     def bill_number(self, bill_number):
-        """Sets the bill_number of this AcceptanceBillResult.
+        r"""Sets the bill_number of this AcceptanceBillResult.
 
         票据号码。 
 
@@ -432,7 +432,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_full_name(self):
-        """Gets the issuer_full_name of this AcceptanceBillResult.
+        r"""Gets the issuer_full_name of this AcceptanceBillResult.
 
         出票人全称。 
 
@@ -443,7 +443,7 @@ class AcceptanceBillResult:
 
     @issuer_full_name.setter
     def issuer_full_name(self, issuer_full_name):
-        """Sets the issuer_full_name of this AcceptanceBillResult.
+        r"""Sets the issuer_full_name of this AcceptanceBillResult.
 
         出票人全称。 
 
@@ -454,7 +454,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_account(self):
-        """Gets the issuer_account of this AcceptanceBillResult.
+        r"""Gets the issuer_account of this AcceptanceBillResult.
 
         出票人账号。 
 
@@ -465,7 +465,7 @@ class AcceptanceBillResult:
 
     @issuer_account.setter
     def issuer_account(self, issuer_account):
-        """Sets the issuer_account of this AcceptanceBillResult.
+        r"""Sets the issuer_account of this AcceptanceBillResult.
 
         出票人账号。 
 
@@ -476,7 +476,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_bank_name(self):
-        """Gets the issuer_bank_name of this AcceptanceBillResult.
+        r"""Gets the issuer_bank_name of this AcceptanceBillResult.
 
         出票人开户银行。 
 
@@ -487,7 +487,7 @@ class AcceptanceBillResult:
 
     @issuer_bank_name.setter
     def issuer_bank_name(self, issuer_bank_name):
-        """Sets the issuer_bank_name of this AcceptanceBillResult.
+        r"""Sets the issuer_bank_name of this AcceptanceBillResult.
 
         出票人开户银行。 
 
@@ -498,7 +498,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_bank_number(self):
-        """Gets the issuer_bank_number of this AcceptanceBillResult.
+        r"""Gets the issuer_bank_number of this AcceptanceBillResult.
 
         出票人开户行号。 
 
@@ -509,7 +509,7 @@ class AcceptanceBillResult:
 
     @issuer_bank_number.setter
     def issuer_bank_number(self, issuer_bank_number):
-        """Sets the issuer_bank_number of this AcceptanceBillResult.
+        r"""Sets the issuer_bank_number of this AcceptanceBillResult.
 
         出票人开户行号。 
 
@@ -520,7 +520,7 @@ class AcceptanceBillResult:
 
     @property
     def payee_full_name(self):
-        """Gets the payee_full_name of this AcceptanceBillResult.
+        r"""Gets the payee_full_name of this AcceptanceBillResult.
 
         收款人全称。 
 
@@ -531,7 +531,7 @@ class AcceptanceBillResult:
 
     @payee_full_name.setter
     def payee_full_name(self, payee_full_name):
-        """Sets the payee_full_name of this AcceptanceBillResult.
+        r"""Sets the payee_full_name of this AcceptanceBillResult.
 
         收款人全称。 
 
@@ -542,7 +542,7 @@ class AcceptanceBillResult:
 
     @property
     def payee_account(self):
-        """Gets the payee_account of this AcceptanceBillResult.
+        r"""Gets the payee_account of this AcceptanceBillResult.
 
         收款人账号。 
 
@@ -553,7 +553,7 @@ class AcceptanceBillResult:
 
     @payee_account.setter
     def payee_account(self, payee_account):
-        """Sets the payee_account of this AcceptanceBillResult.
+        r"""Sets the payee_account of this AcceptanceBillResult.
 
         收款人账号。 
 
@@ -564,7 +564,7 @@ class AcceptanceBillResult:
 
     @property
     def payee_bank_name(self):
-        """Gets the payee_bank_name of this AcceptanceBillResult.
+        r"""Gets the payee_bank_name of this AcceptanceBillResult.
 
         收款人开户银行。 
 
@@ -575,7 +575,7 @@ class AcceptanceBillResult:
 
     @payee_bank_name.setter
     def payee_bank_name(self, payee_bank_name):
-        """Sets the payee_bank_name of this AcceptanceBillResult.
+        r"""Sets the payee_bank_name of this AcceptanceBillResult.
 
         收款人开户银行。 
 
@@ -586,7 +586,7 @@ class AcceptanceBillResult:
 
     @property
     def payee_bank_number(self):
-        """Gets the payee_bank_number of this AcceptanceBillResult.
+        r"""Gets the payee_bank_number of this AcceptanceBillResult.
 
         收款人开户行号。 
 
@@ -597,7 +597,7 @@ class AcceptanceBillResult:
 
     @payee_bank_number.setter
     def payee_bank_number(self, payee_bank_number):
-        """Sets the payee_bank_number of this AcceptanceBillResult.
+        r"""Sets the payee_bank_number of this AcceptanceBillResult.
 
         收款人开户行号。 
 
@@ -608,7 +608,7 @@ class AcceptanceBillResult:
 
     @property
     def issuance_guarantor_name(self):
-        """Gets the issuance_guarantor_name of this AcceptanceBillResult.
+        r"""Gets the issuance_guarantor_name of this AcceptanceBillResult.
 
         出票保证人名称。 
 
@@ -619,7 +619,7 @@ class AcceptanceBillResult:
 
     @issuance_guarantor_name.setter
     def issuance_guarantor_name(self, issuance_guarantor_name):
-        """Sets the issuance_guarantor_name of this AcceptanceBillResult.
+        r"""Sets the issuance_guarantor_name of this AcceptanceBillResult.
 
         出票保证人名称。 
 
@@ -630,7 +630,7 @@ class AcceptanceBillResult:
 
     @property
     def issuance_guarantor_address(self):
-        """Gets the issuance_guarantor_address of this AcceptanceBillResult.
+        r"""Gets the issuance_guarantor_address of this AcceptanceBillResult.
 
         出票保证人地址。 
 
@@ -641,7 +641,7 @@ class AcceptanceBillResult:
 
     @issuance_guarantor_address.setter
     def issuance_guarantor_address(self, issuance_guarantor_address):
-        """Sets the issuance_guarantor_address of this AcceptanceBillResult.
+        r"""Sets the issuance_guarantor_address of this AcceptanceBillResult.
 
         出票保证人地址。 
 
@@ -652,7 +652,7 @@ class AcceptanceBillResult:
 
     @property
     def issuance_guarantor_account(self):
-        """Gets the issuance_guarantor_account of this AcceptanceBillResult.
+        r"""Gets the issuance_guarantor_account of this AcceptanceBillResult.
 
         出票保证人账号。 
 
@@ -663,7 +663,7 @@ class AcceptanceBillResult:
 
     @issuance_guarantor_account.setter
     def issuance_guarantor_account(self, issuance_guarantor_account):
-        """Sets the issuance_guarantor_account of this AcceptanceBillResult.
+        r"""Sets the issuance_guarantor_account of this AcceptanceBillResult.
 
         出票保证人账号。 
 
@@ -674,7 +674,7 @@ class AcceptanceBillResult:
 
     @property
     def issuance_guarantee_date(self):
-        """Gets the issuance_guarantee_date of this AcceptanceBillResult.
+        r"""Gets the issuance_guarantee_date of this AcceptanceBillResult.
 
         出票保证日期。 
 
@@ -685,7 +685,7 @@ class AcceptanceBillResult:
 
     @issuance_guarantee_date.setter
     def issuance_guarantee_date(self, issuance_guarantee_date):
-        """Sets the issuance_guarantee_date of this AcceptanceBillResult.
+        r"""Sets the issuance_guarantee_date of this AcceptanceBillResult.
 
         出票保证日期。 
 
@@ -696,7 +696,7 @@ class AcceptanceBillResult:
 
     @property
     def issuance_guarantor_bank_number(self):
-        """Gets the issuance_guarantor_bank_number of this AcceptanceBillResult.
+        r"""Gets the issuance_guarantor_bank_number of this AcceptanceBillResult.
 
         出票保证人开户行行号。 
 
@@ -707,7 +707,7 @@ class AcceptanceBillResult:
 
     @issuance_guarantor_bank_number.setter
     def issuance_guarantor_bank_number(self, issuance_guarantor_bank_number):
-        """Sets the issuance_guarantor_bank_number of this AcceptanceBillResult.
+        r"""Sets the issuance_guarantor_bank_number of this AcceptanceBillResult.
 
         出票保证人开户行行号。 
 
@@ -718,7 +718,7 @@ class AcceptanceBillResult:
 
     @property
     def issuance_guarantor_bank_name(self):
-        """Gets the issuance_guarantor_bank_name of this AcceptanceBillResult.
+        r"""Gets the issuance_guarantor_bank_name of this AcceptanceBillResult.
 
         出票保证人开户行名称。 
 
@@ -729,7 +729,7 @@ class AcceptanceBillResult:
 
     @issuance_guarantor_bank_name.setter
     def issuance_guarantor_bank_name(self, issuance_guarantor_bank_name):
-        """Sets the issuance_guarantor_bank_name of this AcceptanceBillResult.
+        r"""Sets the issuance_guarantor_bank_name of this AcceptanceBillResult.
 
         出票保证人开户行名称。 
 
@@ -740,7 +740,7 @@ class AcceptanceBillResult:
 
     @property
     def amount_in_words(self):
-        """Gets the amount_in_words of this AcceptanceBillResult.
+        r"""Gets the amount_in_words of this AcceptanceBillResult.
 
         大写票据金额。 
 
@@ -751,7 +751,7 @@ class AcceptanceBillResult:
 
     @amount_in_words.setter
     def amount_in_words(self, amount_in_words):
-        """Sets the amount_in_words of this AcceptanceBillResult.
+        r"""Sets the amount_in_words of this AcceptanceBillResult.
 
         大写票据金额。 
 
@@ -762,7 +762,7 @@ class AcceptanceBillResult:
 
     @property
     def amount_in_figures(self):
-        """Gets the amount_in_figures of this AcceptanceBillResult.
+        r"""Gets the amount_in_figures of this AcceptanceBillResult.
 
         小写票据金额。 
 
@@ -773,7 +773,7 @@ class AcceptanceBillResult:
 
     @amount_in_figures.setter
     def amount_in_figures(self, amount_in_figures):
-        """Sets the amount_in_figures of this AcceptanceBillResult.
+        r"""Sets the amount_in_figures of this AcceptanceBillResult.
 
         小写票据金额。 
 
@@ -784,7 +784,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_full_name(self):
-        """Gets the acceptor_full_name of this AcceptanceBillResult.
+        r"""Gets the acceptor_full_name of this AcceptanceBillResult.
 
         承兑人全称。 
 
@@ -795,7 +795,7 @@ class AcceptanceBillResult:
 
     @acceptor_full_name.setter
     def acceptor_full_name(self, acceptor_full_name):
-        """Sets the acceptor_full_name of this AcceptanceBillResult.
+        r"""Sets the acceptor_full_name of this AcceptanceBillResult.
 
         承兑人全称。 
 
@@ -806,7 +806,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_account(self):
-        """Gets the acceptor_account of this AcceptanceBillResult.
+        r"""Gets the acceptor_account of this AcceptanceBillResult.
 
         承兑人账号。 
 
@@ -817,7 +817,7 @@ class AcceptanceBillResult:
 
     @acceptor_account.setter
     def acceptor_account(self, acceptor_account):
-        """Sets the acceptor_account of this AcceptanceBillResult.
+        r"""Sets the acceptor_account of this AcceptanceBillResult.
 
         承兑人账号。 
 
@@ -828,7 +828,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_bank_number(self):
-        """Gets the acceptor_bank_number of this AcceptanceBillResult.
+        r"""Gets the acceptor_bank_number of this AcceptanceBillResult.
 
         承兑人开户行行号。 
 
@@ -839,7 +839,7 @@ class AcceptanceBillResult:
 
     @acceptor_bank_number.setter
     def acceptor_bank_number(self, acceptor_bank_number):
-        """Sets the acceptor_bank_number of this AcceptanceBillResult.
+        r"""Sets the acceptor_bank_number of this AcceptanceBillResult.
 
         承兑人开户行行号。 
 
@@ -850,7 +850,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_bank_name(self):
-        """Gets the acceptor_bank_name of this AcceptanceBillResult.
+        r"""Gets the acceptor_bank_name of this AcceptanceBillResult.
 
         承兑人开户行名称。 
 
@@ -861,7 +861,7 @@ class AcceptanceBillResult:
 
     @acceptor_bank_name.setter
     def acceptor_bank_name(self, acceptor_bank_name):
-        """Sets the acceptor_bank_name of this AcceptanceBillResult.
+        r"""Sets the acceptor_bank_name of this AcceptanceBillResult.
 
         承兑人开户行名称。 
 
@@ -872,7 +872,7 @@ class AcceptanceBillResult:
 
     @property
     def contract_number(self):
-        """Gets the contract_number of this AcceptanceBillResult.
+        r"""Gets the contract_number of this AcceptanceBillResult.
 
         交易合同号。 
 
@@ -883,7 +883,7 @@ class AcceptanceBillResult:
 
     @contract_number.setter
     def contract_number(self, contract_number):
-        """Sets the contract_number of this AcceptanceBillResult.
+        r"""Sets the contract_number of this AcceptanceBillResult.
 
         交易合同号。 
 
@@ -894,7 +894,7 @@ class AcceptanceBillResult:
 
     @property
     def assignability(self):
-        """Gets the assignability of this AcceptanceBillResult.
+        r"""Gets the assignability of this AcceptanceBillResult.
 
         能否转让。 
 
@@ -905,7 +905,7 @@ class AcceptanceBillResult:
 
     @assignability.setter
     def assignability(self, assignability):
-        """Sets the assignability of this AcceptanceBillResult.
+        r"""Sets the assignability of this AcceptanceBillResult.
 
         能否转让。 
 
@@ -916,7 +916,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_commitment(self):
-        """Gets the issuer_commitment of this AcceptanceBillResult.
+        r"""Gets the issuer_commitment of this AcceptanceBillResult.
 
         出票人承诺。 
 
@@ -927,7 +927,7 @@ class AcceptanceBillResult:
 
     @issuer_commitment.setter
     def issuer_commitment(self, issuer_commitment):
-        """Sets the issuer_commitment of this AcceptanceBillResult.
+        r"""Sets the issuer_commitment of this AcceptanceBillResult.
 
         出票人承诺。 
 
@@ -938,7 +938,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_commitment(self):
-        """Gets the acceptor_commitment of this AcceptanceBillResult.
+        r"""Gets the acceptor_commitment of this AcceptanceBillResult.
 
         承兑人承诺。 
 
@@ -949,7 +949,7 @@ class AcceptanceBillResult:
 
     @acceptor_commitment.setter
     def acceptor_commitment(self, acceptor_commitment):
-        """Sets the acceptor_commitment of this AcceptanceBillResult.
+        r"""Sets the acceptor_commitment of this AcceptanceBillResult.
 
         承兑人承诺。 
 
@@ -960,7 +960,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_date(self):
-        """Gets the acceptance_date of this AcceptanceBillResult.
+        r"""Gets the acceptance_date of this AcceptanceBillResult.
 
         承兑日期。 
 
@@ -971,7 +971,7 @@ class AcceptanceBillResult:
 
     @acceptance_date.setter
     def acceptance_date(self, acceptance_date):
-        """Sets the acceptance_date of this AcceptanceBillResult.
+        r"""Sets the acceptance_date of this AcceptanceBillResult.
 
         承兑日期。 
 
@@ -982,7 +982,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_guarantor_name(self):
-        """Gets the acceptance_guarantor_name of this AcceptanceBillResult.
+        r"""Gets the acceptance_guarantor_name of this AcceptanceBillResult.
 
         承兑保证人名称。 
 
@@ -993,7 +993,7 @@ class AcceptanceBillResult:
 
     @acceptance_guarantor_name.setter
     def acceptance_guarantor_name(self, acceptance_guarantor_name):
-        """Sets the acceptance_guarantor_name of this AcceptanceBillResult.
+        r"""Sets the acceptance_guarantor_name of this AcceptanceBillResult.
 
         承兑保证人名称。 
 
@@ -1004,7 +1004,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_guarantor_address(self):
-        """Gets the acceptance_guarantor_address of this AcceptanceBillResult.
+        r"""Gets the acceptance_guarantor_address of this AcceptanceBillResult.
 
         承兑保证人地址。 
 
@@ -1015,7 +1015,7 @@ class AcceptanceBillResult:
 
     @acceptance_guarantor_address.setter
     def acceptance_guarantor_address(self, acceptance_guarantor_address):
-        """Sets the acceptance_guarantor_address of this AcceptanceBillResult.
+        r"""Sets the acceptance_guarantor_address of this AcceptanceBillResult.
 
         承兑保证人地址。 
 
@@ -1026,7 +1026,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_guarantor_account(self):
-        """Gets the acceptance_guarantor_account of this AcceptanceBillResult.
+        r"""Gets the acceptance_guarantor_account of this AcceptanceBillResult.
 
         承兑保证人账号。 
 
@@ -1037,7 +1037,7 @@ class AcceptanceBillResult:
 
     @acceptance_guarantor_account.setter
     def acceptance_guarantor_account(self, acceptance_guarantor_account):
-        """Sets the acceptance_guarantor_account of this AcceptanceBillResult.
+        r"""Sets the acceptance_guarantor_account of this AcceptanceBillResult.
 
         承兑保证人账号。 
 
@@ -1048,7 +1048,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_guarantee_date(self):
-        """Gets the acceptance_guarantee_date of this AcceptanceBillResult.
+        r"""Gets the acceptance_guarantee_date of this AcceptanceBillResult.
 
         承兑保证日期。 
 
@@ -1059,7 +1059,7 @@ class AcceptanceBillResult:
 
     @acceptance_guarantee_date.setter
     def acceptance_guarantee_date(self, acceptance_guarantee_date):
-        """Sets the acceptance_guarantee_date of this AcceptanceBillResult.
+        r"""Sets the acceptance_guarantee_date of this AcceptanceBillResult.
 
         承兑保证日期。 
 
@@ -1070,7 +1070,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_guarantor_bank_number(self):
-        """Gets the acceptance_guarantor_bank_number of this AcceptanceBillResult.
+        r"""Gets the acceptance_guarantor_bank_number of this AcceptanceBillResult.
 
         承兑保证人开户行行号。 
 
@@ -1081,7 +1081,7 @@ class AcceptanceBillResult:
 
     @acceptance_guarantor_bank_number.setter
     def acceptance_guarantor_bank_number(self, acceptance_guarantor_bank_number):
-        """Sets the acceptance_guarantor_bank_number of this AcceptanceBillResult.
+        r"""Sets the acceptance_guarantor_bank_number of this AcceptanceBillResult.
 
         承兑保证人开户行行号。 
 
@@ -1092,7 +1092,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptance_guarantor_bank_name(self):
-        """Gets the acceptance_guarantor_bank_name of this AcceptanceBillResult.
+        r"""Gets the acceptance_guarantor_bank_name of this AcceptanceBillResult.
 
         承兑保证人开户行名称。 
 
@@ -1103,7 +1103,7 @@ class AcceptanceBillResult:
 
     @acceptance_guarantor_bank_name.setter
     def acceptance_guarantor_bank_name(self, acceptance_guarantor_bank_name):
-        """Sets the acceptance_guarantor_bank_name of this AcceptanceBillResult.
+        r"""Sets the acceptance_guarantor_bank_name of this AcceptanceBillResult.
 
         承兑保证人开户行名称。 
 
@@ -1114,7 +1114,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_rating_entity(self):
-        """Gets the issuer_rating_entity of this AcceptanceBillResult.
+        r"""Gets the issuer_rating_entity of this AcceptanceBillResult.
 
         出票人评级主体。 
 
@@ -1125,7 +1125,7 @@ class AcceptanceBillResult:
 
     @issuer_rating_entity.setter
     def issuer_rating_entity(self, issuer_rating_entity):
-        """Sets the issuer_rating_entity of this AcceptanceBillResult.
+        r"""Sets the issuer_rating_entity of this AcceptanceBillResult.
 
         出票人评级主体。 
 
@@ -1136,7 +1136,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_credit_rating(self):
-        """Gets the issuer_credit_rating of this AcceptanceBillResult.
+        r"""Gets the issuer_credit_rating of this AcceptanceBillResult.
 
         出票人信用等级。 
 
@@ -1147,7 +1147,7 @@ class AcceptanceBillResult:
 
     @issuer_credit_rating.setter
     def issuer_credit_rating(self, issuer_credit_rating):
-        """Sets the issuer_credit_rating of this AcceptanceBillResult.
+        r"""Sets the issuer_credit_rating of this AcceptanceBillResult.
 
         出票人信用等级。 
 
@@ -1158,7 +1158,7 @@ class AcceptanceBillResult:
 
     @property
     def issuer_rating_due_date(self):
-        """Gets the issuer_rating_due_date of this AcceptanceBillResult.
+        r"""Gets the issuer_rating_due_date of this AcceptanceBillResult.
 
         出票人评级到期日。 
 
@@ -1169,7 +1169,7 @@ class AcceptanceBillResult:
 
     @issuer_rating_due_date.setter
     def issuer_rating_due_date(self, issuer_rating_due_date):
-        """Sets the issuer_rating_due_date of this AcceptanceBillResult.
+        r"""Sets the issuer_rating_due_date of this AcceptanceBillResult.
 
         出票人评级到期日。 
 
@@ -1180,7 +1180,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_rating_entity(self):
-        """Gets the acceptor_rating_entity of this AcceptanceBillResult.
+        r"""Gets the acceptor_rating_entity of this AcceptanceBillResult.
 
         承兑人评级主体。 
 
@@ -1191,7 +1191,7 @@ class AcceptanceBillResult:
 
     @acceptor_rating_entity.setter
     def acceptor_rating_entity(self, acceptor_rating_entity):
-        """Sets the acceptor_rating_entity of this AcceptanceBillResult.
+        r"""Sets the acceptor_rating_entity of this AcceptanceBillResult.
 
         承兑人评级主体。 
 
@@ -1202,7 +1202,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_credit_rating(self):
-        """Gets the acceptor_credit_rating of this AcceptanceBillResult.
+        r"""Gets the acceptor_credit_rating of this AcceptanceBillResult.
 
         承兑人信用等级。 
 
@@ -1213,7 +1213,7 @@ class AcceptanceBillResult:
 
     @acceptor_credit_rating.setter
     def acceptor_credit_rating(self, acceptor_credit_rating):
-        """Sets the acceptor_credit_rating of this AcceptanceBillResult.
+        r"""Sets the acceptor_credit_rating of this AcceptanceBillResult.
 
         承兑人信用等级。 
 
@@ -1224,7 +1224,7 @@ class AcceptanceBillResult:
 
     @property
     def acceptor_rating_due_date(self):
-        """Gets the acceptor_rating_due_date of this AcceptanceBillResult.
+        r"""Gets the acceptor_rating_due_date of this AcceptanceBillResult.
 
         承兑人评级到期日。 
 
@@ -1235,7 +1235,7 @@ class AcceptanceBillResult:
 
     @acceptor_rating_due_date.setter
     def acceptor_rating_due_date(self, acceptor_rating_due_date):
-        """Sets the acceptor_rating_due_date of this AcceptanceBillResult.
+        r"""Sets the acceptor_rating_due_date of this AcceptanceBillResult.
 
         承兑人评级到期日。 
 
@@ -1246,7 +1246,7 @@ class AcceptanceBillResult:
 
     @property
     def bill_package_number(self):
-        """Gets the bill_package_number of this AcceptanceBillResult.
+        r"""Gets the bill_package_number of this AcceptanceBillResult.
 
         票据包号。 
 
@@ -1257,7 +1257,7 @@ class AcceptanceBillResult:
 
     @bill_package_number.setter
     def bill_package_number(self, bill_package_number):
-        """Sets the bill_package_number of this AcceptanceBillResult.
+        r"""Sets the bill_package_number of this AcceptanceBillResult.
 
         票据包号。 
 
@@ -1268,7 +1268,7 @@ class AcceptanceBillResult:
 
     @property
     def remarks(self):
-        """Gets the remarks of this AcceptanceBillResult.
+        r"""Gets the remarks of this AcceptanceBillResult.
 
         备注。   
 
@@ -1279,7 +1279,7 @@ class AcceptanceBillResult:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this AcceptanceBillResult.
+        r"""Sets the remarks of this AcceptanceBillResult.
 
         备注。   
 
@@ -1290,7 +1290,7 @@ class AcceptanceBillResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this AcceptanceBillResult.
+        r"""Gets the confidence of this AcceptanceBillResult.
 
         各个字段的置信度。 
 
@@ -1301,7 +1301,7 @@ class AcceptanceBillResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this AcceptanceBillResult.
+        r"""Sets the confidence of this AcceptanceBillResult.
 
         各个字段的置信度。 
 

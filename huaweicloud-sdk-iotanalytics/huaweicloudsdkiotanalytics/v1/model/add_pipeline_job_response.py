@@ -28,7 +28,7 @@ class AddPipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, check_info=None):
-        """AddPipelineJobResponse
+        r"""AddPipelineJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddPipelineJobResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this AddPipelineJobResponse.
+        r"""Gets the pipeline_id of this AddPipelineJobResponse.
 
         管道ID
 
@@ -62,7 +62,7 @@ class AddPipelineJobResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this AddPipelineJobResponse.
+        r"""Sets the pipeline_id of this AddPipelineJobResponse.
 
         管道ID
 
@@ -73,7 +73,7 @@ class AddPipelineJobResponse(SdkResponse):
 
     @property
     def check_info(self):
-        """Gets the check_info of this AddPipelineJobResponse.
+        r"""Gets the check_info of this AddPipelineJobResponse.
 
         管道错误详情
 
@@ -84,7 +84,7 @@ class AddPipelineJobResponse(SdkResponse):
 
     @check_info.setter
     def check_info(self, check_info):
-        """Sets the check_info of this AddPipelineJobResponse.
+        r"""Sets the check_info of this AddPipelineJobResponse.
 
         管道错误详情
 

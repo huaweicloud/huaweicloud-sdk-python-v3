@@ -25,7 +25,7 @@ class ModifyVolumeQoSRequestBody:
     }
 
     def __init__(self, qos_modify=None):
-        """ModifyVolumeQoSRequestBody
+        r"""ModifyVolumeQoSRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyVolumeQoSRequestBody:
 
     @property
     def qos_modify(self):
-        """Gets the qos_modify of this ModifyVolumeQoSRequestBody.
+        r"""Gets the qos_modify of this ModifyVolumeQoSRequestBody.
 
         :return: The qos_modify of this ModifyVolumeQoSRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSOption`
@@ -51,7 +51,7 @@ class ModifyVolumeQoSRequestBody:
 
     @qos_modify.setter
     def qos_modify(self, qos_modify):
-        """Sets the qos_modify of this ModifyVolumeQoSRequestBody.
+        r"""Sets the qos_modify of this ModifyVolumeQoSRequestBody.
 
         :param qos_modify: The qos_modify of this ModifyVolumeQoSRequestBody.
         :type qos_modify: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSOption`

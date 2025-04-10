@@ -39,7 +39,7 @@ class BizVersionManageVO:
     }
 
     def __init__(self, id=None, biz_type=None, biz_id=None, biz_info=None, status=None, biz_version=None, create_time=None, update_time=None):
-        """BizVersionManageVO
+        r"""BizVersionManageVO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BizVersionManageVO:
 
     @property
     def id(self):
-        """Gets the id of this BizVersionManageVO.
+        r"""Gets the id of this BizVersionManageVO.
 
         ID信息，ID字符串。
 
@@ -103,7 +103,7 @@ class BizVersionManageVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BizVersionManageVO.
+        r"""Sets the id of this BizVersionManageVO.
 
         ID信息，ID字符串。
 
@@ -114,7 +114,7 @@ class BizVersionManageVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this BizVersionManageVO.
+        r"""Gets the biz_type of this BizVersionManageVO.
 
         :return: The biz_type of this BizVersionManageVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -123,7 +123,7 @@ class BizVersionManageVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this BizVersionManageVO.
+        r"""Sets the biz_type of this BizVersionManageVO.
 
         :param biz_type: The biz_type of this BizVersionManageVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -132,7 +132,7 @@ class BizVersionManageVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this BizVersionManageVO.
+        r"""Gets the biz_id of this BizVersionManageVO.
 
         业务ID，ID字符串。
 
@@ -143,7 +143,7 @@ class BizVersionManageVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this BizVersionManageVO.
+        r"""Sets the biz_id of this BizVersionManageVO.
 
         业务ID，ID字符串。
 
@@ -154,7 +154,7 @@ class BizVersionManageVO:
 
     @property
     def biz_info(self):
-        """Gets the biz_info of this BizVersionManageVO.
+        r"""Gets the biz_info of this BizVersionManageVO.
 
         业务对象信息。
 
@@ -165,7 +165,7 @@ class BizVersionManageVO:
 
     @biz_info.setter
     def biz_info(self, biz_info):
-        """Sets the biz_info of this BizVersionManageVO.
+        r"""Sets the biz_info of this BizVersionManageVO.
 
         业务对象信息。
 
@@ -176,7 +176,7 @@ class BizVersionManageVO:
 
     @property
     def status(self):
-        """Gets the status of this BizVersionManageVO.
+        r"""Gets the status of this BizVersionManageVO.
 
         :return: The status of this BizVersionManageVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -185,7 +185,7 @@ class BizVersionManageVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BizVersionManageVO.
+        r"""Sets the status of this BizVersionManageVO.
 
         :param status: The status of this BizVersionManageVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -194,7 +194,7 @@ class BizVersionManageVO:
 
     @property
     def biz_version(self):
-        """Gets the biz_version of this BizVersionManageVO.
+        r"""Gets the biz_version of this BizVersionManageVO.
 
         业务版本，只读。
 
@@ -205,7 +205,7 @@ class BizVersionManageVO:
 
     @biz_version.setter
     def biz_version(self, biz_version):
-        """Sets the biz_version of this BizVersionManageVO.
+        r"""Sets the biz_version of this BizVersionManageVO.
 
         业务版本，只读。
 
@@ -216,7 +216,7 @@ class BizVersionManageVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BizVersionManageVO.
+        r"""Gets the create_time of this BizVersionManageVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -227,7 +227,7 @@ class BizVersionManageVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BizVersionManageVO.
+        r"""Sets the create_time of this BizVersionManageVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -238,7 +238,7 @@ class BizVersionManageVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BizVersionManageVO.
+        r"""Gets the update_time of this BizVersionManageVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -249,7 +249,7 @@ class BizVersionManageVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BizVersionManageVO.
+        r"""Sets the update_time of this BizVersionManageVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

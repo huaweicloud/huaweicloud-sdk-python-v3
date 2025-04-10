@@ -26,7 +26,7 @@ class ListTargetsOfPolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self, targets=None):
-        """ListTargetsOfPolicyGroupResponse
+        r"""ListTargetsOfPolicyGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTargetsOfPolicyGroupResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this ListTargetsOfPolicyGroupResponse.
+        r"""Gets the targets of this ListTargetsOfPolicyGroupResponse.
 
         应用对象列表。
 
@@ -55,7 +55,7 @@ class ListTargetsOfPolicyGroupResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this ListTargetsOfPolicyGroupResponse.
+        r"""Sets the targets of this ListTargetsOfPolicyGroupResponse.
 
         应用对象列表。
 

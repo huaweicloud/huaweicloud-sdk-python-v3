@@ -30,7 +30,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self, access_policy=None, request_id=None, header_response_token=None):
-        """UpdateVpnAccessPolicyResponse
+        r"""UpdateVpnAccessPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this UpdateVpnAccessPolicyResponse.
+        r"""Gets the access_policy of this UpdateVpnAccessPolicyResponse.
 
         :return: The access_policy of this UpdateVpnAccessPolicyResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.VpnAccessPolicy`
@@ -67,7 +67,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this UpdateVpnAccessPolicyResponse.
+        r"""Sets the access_policy of this UpdateVpnAccessPolicyResponse.
 
         :param access_policy: The access_policy of this UpdateVpnAccessPolicyResponse.
         :type access_policy: :class:`huaweicloudsdkvpn.v5.VpnAccessPolicy`
@@ -76,7 +76,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVpnAccessPolicyResponse.
+        r"""Gets the request_id of this UpdateVpnAccessPolicyResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVpnAccessPolicyResponse.
+        r"""Sets the request_id of this UpdateVpnAccessPolicyResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVpnAccessPolicyResponse.
+        r"""Gets the header_response_token of this UpdateVpnAccessPolicyResponse.
 
         :return: The header_response_token of this UpdateVpnAccessPolicyResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateVpnAccessPolicyResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVpnAccessPolicyResponse.
+        r"""Sets the header_response_token of this UpdateVpnAccessPolicyResponse.
 
         :param header_response_token: The header_response_token of this UpdateVpnAccessPolicyResponse.
         :type header_response_token: str

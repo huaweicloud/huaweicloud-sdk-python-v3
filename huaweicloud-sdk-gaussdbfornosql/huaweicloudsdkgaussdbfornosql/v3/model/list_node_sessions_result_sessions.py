@@ -45,7 +45,7 @@ class ListNodeSessionsResultSessions:
     }
 
     def __init__(self, id=None, name=None, cmd=None, age=None, idle=None, db=None, addr=None, fd=None, sub=None, psub=None, multi=None):
-        """ListNodeSessionsResultSessions
+        r"""ListNodeSessionsResultSessions
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def id(self):
-        """Gets the id of this ListNodeSessionsResultSessions.
+        r"""Gets the id of this ListNodeSessionsResultSessions.
 
         会话ID。
 
@@ -124,7 +124,7 @@ class ListNodeSessionsResultSessions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListNodeSessionsResultSessions.
+        r"""Sets the id of this ListNodeSessionsResultSessions.
 
         会话ID。
 
@@ -135,7 +135,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def name(self):
-        """Gets the name of this ListNodeSessionsResultSessions.
+        r"""Gets the name of this ListNodeSessionsResultSessions.
 
         连接名。
 
@@ -146,7 +146,7 @@ class ListNodeSessionsResultSessions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListNodeSessionsResultSessions.
+        r"""Sets the name of this ListNodeSessionsResultSessions.
 
         连接名。
 
@@ -157,7 +157,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def cmd(self):
-        """Gets the cmd of this ListNodeSessionsResultSessions.
+        r"""Gets the cmd of this ListNodeSessionsResultSessions.
 
         最近一次执行的命令。
 
@@ -168,7 +168,7 @@ class ListNodeSessionsResultSessions:
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this ListNodeSessionsResultSessions.
+        r"""Sets the cmd of this ListNodeSessionsResultSessions.
 
         最近一次执行的命令。
 
@@ -179,7 +179,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def age(self):
-        """Gets the age of this ListNodeSessionsResultSessions.
+        r"""Gets the age of this ListNodeSessionsResultSessions.
 
         以秒计算的已连接时长。
 
@@ -190,7 +190,7 @@ class ListNodeSessionsResultSessions:
 
     @age.setter
     def age(self, age):
-        """Sets the age of this ListNodeSessionsResultSessions.
+        r"""Sets the age of this ListNodeSessionsResultSessions.
 
         以秒计算的已连接时长。
 
@@ -201,7 +201,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def idle(self):
-        """Gets the idle of this ListNodeSessionsResultSessions.
+        r"""Gets the idle of this ListNodeSessionsResultSessions.
 
         以秒计算的空闲时长。
 
@@ -212,7 +212,7 @@ class ListNodeSessionsResultSessions:
 
     @idle.setter
     def idle(self, idle):
-        """Sets the idle of this ListNodeSessionsResultSessions.
+        r"""Sets the idle of this ListNodeSessionsResultSessions.
 
         以秒计算的空闲时长。
 
@@ -223,7 +223,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def db(self):
-        """Gets the db of this ListNodeSessionsResultSessions.
+        r"""Gets the db of this ListNodeSessionsResultSessions.
 
         该客户端正在使用的数据库ID。
 
@@ -234,7 +234,7 @@ class ListNodeSessionsResultSessions:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this ListNodeSessionsResultSessions.
+        r"""Sets the db of this ListNodeSessionsResultSessions.
 
         该客户端正在使用的数据库ID。
 
@@ -245,7 +245,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def addr(self):
-        """Gets the addr of this ListNodeSessionsResultSessions.
+        r"""Gets the addr of this ListNodeSessionsResultSessions.
 
         客户端的地址和端口。
 
@@ -256,7 +256,7 @@ class ListNodeSessionsResultSessions:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ListNodeSessionsResultSessions.
+        r"""Sets the addr of this ListNodeSessionsResultSessions.
 
         客户端的地址和端口。
 
@@ -267,7 +267,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def fd(self):
-        """Gets the fd of this ListNodeSessionsResultSessions.
+        r"""Gets the fd of this ListNodeSessionsResultSessions.
 
         套接字所使用的文件描述符。
 
@@ -278,7 +278,7 @@ class ListNodeSessionsResultSessions:
 
     @fd.setter
     def fd(self, fd):
-        """Sets the fd of this ListNodeSessionsResultSessions.
+        r"""Sets the fd of this ListNodeSessionsResultSessions.
 
         套接字所使用的文件描述符。
 
@@ -289,7 +289,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def sub(self):
-        """Gets the sub of this ListNodeSessionsResultSessions.
+        r"""Gets the sub of this ListNodeSessionsResultSessions.
 
         已订阅频道的数量。
 
@@ -300,7 +300,7 @@ class ListNodeSessionsResultSessions:
 
     @sub.setter
     def sub(self, sub):
-        """Sets the sub of this ListNodeSessionsResultSessions.
+        r"""Sets the sub of this ListNodeSessionsResultSessions.
 
         已订阅频道的数量。
 
@@ -311,7 +311,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def psub(self):
-        """Gets the psub of this ListNodeSessionsResultSessions.
+        r"""Gets the psub of this ListNodeSessionsResultSessions.
 
         已订阅模式的数量。
 
@@ -322,7 +322,7 @@ class ListNodeSessionsResultSessions:
 
     @psub.setter
     def psub(self, psub):
-        """Sets the psub of this ListNodeSessionsResultSessions.
+        r"""Sets the psub of this ListNodeSessionsResultSessions.
 
         已订阅模式的数量。
 
@@ -333,7 +333,7 @@ class ListNodeSessionsResultSessions:
 
     @property
     def multi(self):
-        """Gets the multi of this ListNodeSessionsResultSessions.
+        r"""Gets the multi of this ListNodeSessionsResultSessions.
 
         在事务中被执行的命令数量。
 
@@ -344,7 +344,7 @@ class ListNodeSessionsResultSessions:
 
     @multi.setter
     def multi(self, multi):
-        """Sets the multi of this ListNodeSessionsResultSessions.
+        r"""Sets the multi of this ListNodeSessionsResultSessions.
 
         在事务中被执行的命令数量。
 

@@ -39,7 +39,7 @@ class DiffCommitInfo:
     }
 
     def __init__(self, old_path=None, new_path=None, a_mode=None, b_mode=None, new_file=None, renamed_file=None, deleted_file=None, diff=None):
-        """DiffCommitInfo
+        r"""DiffCommitInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DiffCommitInfo:
 
     @property
     def old_path(self):
-        """Gets the old_path of this DiffCommitInfo.
+        r"""Gets the old_path of this DiffCommitInfo.
 
         变更前文件路径
 
@@ -103,7 +103,7 @@ class DiffCommitInfo:
 
     @old_path.setter
     def old_path(self, old_path):
-        """Sets the old_path of this DiffCommitInfo.
+        r"""Sets the old_path of this DiffCommitInfo.
 
         变更前文件路径
 
@@ -114,7 +114,7 @@ class DiffCommitInfo:
 
     @property
     def new_path(self):
-        """Gets the new_path of this DiffCommitInfo.
+        r"""Gets the new_path of this DiffCommitInfo.
 
         变更后文件路径
 
@@ -125,7 +125,7 @@ class DiffCommitInfo:
 
     @new_path.setter
     def new_path(self, new_path):
-        """Sets the new_path of this DiffCommitInfo.
+        r"""Sets the new_path of this DiffCommitInfo.
 
         变更后文件路径
 
@@ -136,7 +136,7 @@ class DiffCommitInfo:
 
     @property
     def a_mode(self):
-        """Gets the a_mode of this DiffCommitInfo.
+        r"""Gets the a_mode of this DiffCommitInfo.
 
         变更前文件模式
 
@@ -147,7 +147,7 @@ class DiffCommitInfo:
 
     @a_mode.setter
     def a_mode(self, a_mode):
-        """Sets the a_mode of this DiffCommitInfo.
+        r"""Sets the a_mode of this DiffCommitInfo.
 
         变更前文件模式
 
@@ -158,7 +158,7 @@ class DiffCommitInfo:
 
     @property
     def b_mode(self):
-        """Gets the b_mode of this DiffCommitInfo.
+        r"""Gets the b_mode of this DiffCommitInfo.
 
         变更后文件模式
 
@@ -169,7 +169,7 @@ class DiffCommitInfo:
 
     @b_mode.setter
     def b_mode(self, b_mode):
-        """Sets the b_mode of this DiffCommitInfo.
+        r"""Sets the b_mode of this DiffCommitInfo.
 
         变更后文件模式
 
@@ -180,7 +180,7 @@ class DiffCommitInfo:
 
     @property
     def new_file(self):
-        """Gets the new_file of this DiffCommitInfo.
+        r"""Gets the new_file of this DiffCommitInfo.
 
         此次变更是否新增文件
 
@@ -191,7 +191,7 @@ class DiffCommitInfo:
 
     @new_file.setter
     def new_file(self, new_file):
-        """Sets the new_file of this DiffCommitInfo.
+        r"""Sets the new_file of this DiffCommitInfo.
 
         此次变更是否新增文件
 
@@ -202,7 +202,7 @@ class DiffCommitInfo:
 
     @property
     def renamed_file(self):
-        """Gets the renamed_file of this DiffCommitInfo.
+        r"""Gets the renamed_file of this DiffCommitInfo.
 
         此次变更是否重命名文件
 
@@ -213,7 +213,7 @@ class DiffCommitInfo:
 
     @renamed_file.setter
     def renamed_file(self, renamed_file):
-        """Sets the renamed_file of this DiffCommitInfo.
+        r"""Sets the renamed_file of this DiffCommitInfo.
 
         此次变更是否重命名文件
 
@@ -224,7 +224,7 @@ class DiffCommitInfo:
 
     @property
     def deleted_file(self):
-        """Gets the deleted_file of this DiffCommitInfo.
+        r"""Gets the deleted_file of this DiffCommitInfo.
 
         此次变更是否删除文件
 
@@ -235,7 +235,7 @@ class DiffCommitInfo:
 
     @deleted_file.setter
     def deleted_file(self, deleted_file):
-        """Sets the deleted_file of this DiffCommitInfo.
+        r"""Sets the deleted_file of this DiffCommitInfo.
 
         此次变更是否删除文件
 
@@ -246,7 +246,7 @@ class DiffCommitInfo:
 
     @property
     def diff(self):
-        """Gets the diff of this DiffCommitInfo.
+        r"""Gets the diff of this DiffCommitInfo.
 
         差异信息
 
@@ -257,7 +257,7 @@ class DiffCommitInfo:
 
     @diff.setter
     def diff(self, diff):
-        """Sets the diff of this DiffCommitInfo.
+        r"""Sets the diff of this DiffCommitInfo.
 
         差异信息
 

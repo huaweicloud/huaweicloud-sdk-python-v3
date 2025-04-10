@@ -29,7 +29,7 @@ class ListPortsByTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListPortsByTagsRequest
+        r"""ListPortsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListPortsByTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortsByTagsRequest.
+        r"""Gets the limit of this ListPortsByTagsRequest.
 
         功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
 
@@ -68,7 +68,7 @@ class ListPortsByTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortsByTagsRequest.
+        r"""Sets the limit of this ListPortsByTagsRequest.
 
         功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
 
@@ -79,7 +79,7 @@ class ListPortsByTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortsByTagsRequest.
+        r"""Gets the offset of this ListPortsByTagsRequest.
 
         功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
 
@@ -90,7 +90,7 @@ class ListPortsByTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortsByTagsRequest.
+        r"""Sets the offset of this ListPortsByTagsRequest.
 
         功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
 
@@ -101,7 +101,7 @@ class ListPortsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPortsByTagsRequest.
+        r"""Gets the body of this ListPortsByTagsRequest.
 
         :return: The body of this ListPortsByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.ListPortsByTagsRequestBody`
@@ -110,7 +110,7 @@ class ListPortsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPortsByTagsRequest.
+        r"""Sets the body of this ListPortsByTagsRequest.
 
         :param body: The body of this ListPortsByTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.ListPortsByTagsRequestBody`

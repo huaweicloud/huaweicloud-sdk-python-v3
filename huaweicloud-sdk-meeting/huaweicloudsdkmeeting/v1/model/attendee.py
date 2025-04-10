@@ -47,7 +47,7 @@ class Attendee:
     }
 
     def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, type=None, dept_uuid=None, dept_name=None):
-        """Attendee
+        r"""Attendee
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class Attendee:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this Attendee.
+        r"""Gets the user_uuid of this Attendee.
 
         与会者的用户UUID。
 
@@ -128,7 +128,7 @@ class Attendee:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this Attendee.
+        r"""Sets the user_uuid of this Attendee.
 
         与会者的用户UUID。
 
@@ -139,7 +139,7 @@ class Attendee:
 
     @property
     def account_id(self):
-        """Gets the account_id of this Attendee.
+        r"""Gets the account_id of this Attendee.
 
         与会者的华为云会议帐号。
 
@@ -150,7 +150,7 @@ class Attendee:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this Attendee.
+        r"""Sets the account_id of this Attendee.
 
         与会者的华为云会议帐号。
 
@@ -161,7 +161,7 @@ class Attendee:
 
     @property
     def name(self):
-        """Gets the name of this Attendee.
+        r"""Gets the name of this Attendee.
 
         与会者名称，长度限制为96个字符。
 
@@ -172,7 +172,7 @@ class Attendee:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Attendee.
+        r"""Sets the name of this Attendee.
 
         与会者名称，长度限制为96个字符。
 
@@ -183,7 +183,7 @@ class Attendee:
 
     @property
     def role(self):
-        """Gets the role of this Attendee.
+        r"""Gets the role of this Attendee.
 
         会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
@@ -194,7 +194,7 @@ class Attendee:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this Attendee.
+        r"""Sets the role of this Attendee.
 
         会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
@@ -205,7 +205,7 @@ class Attendee:
 
     @property
     def phone(self):
-        """Gets the phone of this Attendee.
+        r"""Gets the phone of this Attendee.
 
         号码。支持SIP号码或者手机号码。 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
@@ -216,7 +216,7 @@ class Attendee:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this Attendee.
+        r"""Sets the phone of this Attendee.
 
         号码。支持SIP号码或者手机号码。 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
@@ -227,7 +227,7 @@ class Attendee:
 
     @property
     def phone2(self):
-        """Gets the phone2 of this Attendee.
+        r"""Gets the phone2 of this Attendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -238,7 +238,7 @@ class Attendee:
 
     @phone2.setter
     def phone2(self, phone2):
-        """Sets the phone2 of this Attendee.
+        r"""Sets the phone2 of this Attendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -249,7 +249,7 @@ class Attendee:
 
     @property
     def phone3(self):
-        """Gets the phone3 of this Attendee.
+        r"""Gets the phone3 of this Attendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -260,7 +260,7 @@ class Attendee:
 
     @phone3.setter
     def phone3(self, phone3):
-        """Sets the phone3 of this Attendee.
+        r"""Sets the phone3 of this Attendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -271,7 +271,7 @@ class Attendee:
 
     @property
     def email(self):
-        """Gets the email of this Attendee.
+        r"""Gets the email of this Attendee.
 
         邮件地址。 > 会中邀请不发会议通知，不用填写。 
 
@@ -282,7 +282,7 @@ class Attendee:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this Attendee.
+        r"""Sets the email of this Attendee.
 
         邮件地址。 > 会中邀请不发会议通知，不用填写。 
 
@@ -293,7 +293,7 @@ class Attendee:
 
     @property
     def sms(self):
-        """Gets the sms of this Attendee.
+        r"""Gets the sms of this Attendee.
 
         短信通知的手机号码。 > 会中邀请不发会议通知，不用填写。 
 
@@ -304,7 +304,7 @@ class Attendee:
 
     @sms.setter
     def sms(self, sms):
-        """Sets the sms of this Attendee.
+        r"""Sets the sms of this Attendee.
 
         短信通知的手机号码。 > 会中邀请不发会议通知，不用填写。 
 
@@ -315,7 +315,7 @@ class Attendee:
 
     @property
     def type(self):
-        """Gets the type of this Attendee.
+        r"""Gets the type of this Attendee.
 
         终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
@@ -326,7 +326,7 @@ class Attendee:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Attendee.
+        r"""Sets the type of this Attendee.
 
         终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
@@ -337,7 +337,7 @@ class Attendee:
 
     @property
     def dept_uuid(self):
-        """Gets the dept_uuid of this Attendee.
+        r"""Gets the dept_uuid of this Attendee.
 
         部门编码。
 
@@ -348,7 +348,7 @@ class Attendee:
 
     @dept_uuid.setter
     def dept_uuid(self, dept_uuid):
-        """Sets the dept_uuid of this Attendee.
+        r"""Sets the dept_uuid of this Attendee.
 
         部门编码。
 
@@ -359,7 +359,7 @@ class Attendee:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this Attendee.
+        r"""Gets the dept_name of this Attendee.
 
         部门名称。
 
@@ -370,7 +370,7 @@ class Attendee:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this Attendee.
+        r"""Sets the dept_name of this Attendee.
 
         部门名称。
 

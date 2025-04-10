@@ -27,7 +27,7 @@ class BatchDeleteAppsReq:
     }
 
     def __init__(self, items=None, reserve_obs_file=None):
-        """BatchDeleteAppsReq
+        r"""BatchDeleteAppsReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteAppsReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchDeleteAppsReq.
+        r"""Gets the items of this BatchDeleteAppsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 
@@ -60,7 +60,7 @@ class BatchDeleteAppsReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchDeleteAppsReq.
+        r"""Sets the items of this BatchDeleteAppsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 
@@ -71,7 +71,7 @@ class BatchDeleteAppsReq:
 
     @property
     def reserve_obs_file(self):
-        """Gets the reserve_obs_file of this BatchDeleteAppsReq.
+        r"""Gets the reserve_obs_file of this BatchDeleteAppsReq.
 
         是否保留OBS桶文件，如果不保留删除应用时，会同时删除OBS桶文件(默认false)。 * 'true' - 保留OBS桶文件,不做任何操作。 * 'false' - 不保留OBS桶文件,删除应用时同时删除OBS桶文件。
 
@@ -82,7 +82,7 @@ class BatchDeleteAppsReq:
 
     @reserve_obs_file.setter
     def reserve_obs_file(self, reserve_obs_file):
-        """Sets the reserve_obs_file of this BatchDeleteAppsReq.
+        r"""Sets the reserve_obs_file of this BatchDeleteAppsReq.
 
         是否保留OBS桶文件，如果不保留删除应用时，会同时删除OBS桶文件(默认false)。 * 'true' - 保留OBS桶文件,不做任何操作。 * 'false' - 不保留OBS桶文件,删除应用时同时删除OBS桶文件。
 

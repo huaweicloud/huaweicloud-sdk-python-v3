@@ -31,7 +31,7 @@ class ShowRequestPropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, property_id=None):
-        """ShowRequestPropertyRequest
+        r"""ShowRequestPropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowRequestPropertyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRequestPropertyRequest.
+        r"""Gets the instance_id of this ShowRequestPropertyRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ShowRequestPropertyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRequestPropertyRequest.
+        r"""Sets the instance_id of this ShowRequestPropertyRequest.
 
         实例ID
 
@@ -82,7 +82,7 @@ class ShowRequestPropertyRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowRequestPropertyRequest.
+        r"""Gets the service_id of this ShowRequestPropertyRequest.
 
         服务ID
 
@@ -93,7 +93,7 @@ class ShowRequestPropertyRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowRequestPropertyRequest.
+        r"""Sets the service_id of this ShowRequestPropertyRequest.
 
         服务ID
 
@@ -104,7 +104,7 @@ class ShowRequestPropertyRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this ShowRequestPropertyRequest.
+        r"""Gets the command_id of this ShowRequestPropertyRequest.
 
         命令ID
 
@@ -115,7 +115,7 @@ class ShowRequestPropertyRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ShowRequestPropertyRequest.
+        r"""Sets the command_id of this ShowRequestPropertyRequest.
 
         命令ID
 
@@ -126,7 +126,7 @@ class ShowRequestPropertyRequest:
 
     @property
     def property_id(self):
-        """Gets the property_id of this ShowRequestPropertyRequest.
+        r"""Gets the property_id of this ShowRequestPropertyRequest.
 
         属性/请求属性/响应属性ID
 
@@ -137,7 +137,7 @@ class ShowRequestPropertyRequest:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this ShowRequestPropertyRequest.
+        r"""Sets the property_id of this ShowRequestPropertyRequest.
 
         属性/请求属性/响应属性ID
 

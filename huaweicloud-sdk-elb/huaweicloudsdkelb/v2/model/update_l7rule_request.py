@@ -29,7 +29,7 @@ class UpdateL7ruleRequest:
     }
 
     def __init__(self, l7policy_id=None, l7rule_id=None, body=None):
-        """UpdateL7ruleRequest
+        r"""UpdateL7ruleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateL7ruleRequest:
 
     @property
     def l7policy_id(self):
-        """Gets the l7policy_id of this UpdateL7ruleRequest.
+        r"""Gets the l7policy_id of this UpdateL7ruleRequest.
 
         待更新的转发规则所在的转发策略id
 
@@ -66,7 +66,7 @@ class UpdateL7ruleRequest:
 
     @l7policy_id.setter
     def l7policy_id(self, l7policy_id):
-        """Sets the l7policy_id of this UpdateL7ruleRequest.
+        r"""Sets the l7policy_id of this UpdateL7ruleRequest.
 
         待更新的转发规则所在的转发策略id
 
@@ -77,7 +77,7 @@ class UpdateL7ruleRequest:
 
     @property
     def l7rule_id(self):
-        """Gets the l7rule_id of this UpdateL7ruleRequest.
+        r"""Gets the l7rule_id of this UpdateL7ruleRequest.
 
         待更新的转发规则id
 
@@ -88,7 +88,7 @@ class UpdateL7ruleRequest:
 
     @l7rule_id.setter
     def l7rule_id(self, l7rule_id):
-        """Sets the l7rule_id of this UpdateL7ruleRequest.
+        r"""Sets the l7rule_id of this UpdateL7ruleRequest.
 
         待更新的转发规则id
 
@@ -99,7 +99,7 @@ class UpdateL7ruleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateL7ruleRequest.
+        r"""Gets the body of this UpdateL7ruleRequest.
 
         :return: The body of this UpdateL7ruleRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateL7ruleRequestBody`
@@ -108,7 +108,7 @@ class UpdateL7ruleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateL7ruleRequest.
+        r"""Sets the body of this UpdateL7ruleRequest.
 
         :param body: The body of this UpdateL7ruleRequest.
         :type body: :class:`huaweicloudsdkelb.v2.UpdateL7ruleRequestBody`

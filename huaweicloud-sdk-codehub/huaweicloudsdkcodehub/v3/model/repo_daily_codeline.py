@@ -29,7 +29,7 @@ class RepoDailyCodeline:
     }
 
     def __init__(self, additions=None, date=None, deletions=None):
-        """RepoDailyCodeline
+        r"""RepoDailyCodeline
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RepoDailyCodeline:
 
     @property
     def additions(self):
-        """Gets the additions of this RepoDailyCodeline.
+        r"""Gets the additions of this RepoDailyCodeline.
 
         每日增加代码行
 
@@ -68,7 +68,7 @@ class RepoDailyCodeline:
 
     @additions.setter
     def additions(self, additions):
-        """Sets the additions of this RepoDailyCodeline.
+        r"""Sets the additions of this RepoDailyCodeline.
 
         每日增加代码行
 
@@ -79,7 +79,7 @@ class RepoDailyCodeline:
 
     @property
     def date(self):
-        """Gets the date of this RepoDailyCodeline.
+        r"""Gets the date of this RepoDailyCodeline.
 
         日期
 
@@ -90,7 +90,7 @@ class RepoDailyCodeline:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this RepoDailyCodeline.
+        r"""Sets the date of this RepoDailyCodeline.
 
         日期
 
@@ -101,7 +101,7 @@ class RepoDailyCodeline:
 
     @property
     def deletions(self):
-        """Gets the deletions of this RepoDailyCodeline.
+        r"""Gets the deletions of this RepoDailyCodeline.
 
         每日删除代码行
 
@@ -112,7 +112,7 @@ class RepoDailyCodeline:
 
     @deletions.setter
     def deletions(self, deletions):
-        """Sets the deletions of this RepoDailyCodeline.
+        r"""Sets the deletions of this RepoDailyCodeline.
 
         每日删除代码行
 

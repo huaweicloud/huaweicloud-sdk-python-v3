@@ -32,7 +32,7 @@ class ListMetricsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, msg=None, data=None, count=None):
-        """ListMetricsResponse
+        r"""ListMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListMetricsResponse.
+        r"""Gets the code of this ListMetricsResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ListMetricsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListMetricsResponse.
+        r"""Sets the code of this ListMetricsResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ListMetricsResponse.
+        r"""Gets the msg of this ListMetricsResponse.
 
         响应信息
 
@@ -98,7 +98,7 @@ class ListMetricsResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ListMetricsResponse.
+        r"""Sets the msg of this ListMetricsResponse.
 
         响应信息
 
@@ -109,7 +109,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListMetricsResponse.
+        r"""Gets the data of this ListMetricsResponse.
 
         指标列表。
 
@@ -120,7 +120,7 @@ class ListMetricsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListMetricsResponse.
+        r"""Sets the data of this ListMetricsResponse.
 
         指标列表。
 
@@ -131,7 +131,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMetricsResponse.
+        r"""Gets the count of this ListMetricsResponse.
 
         总列表大小。
 
@@ -142,7 +142,7 @@ class ListMetricsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMetricsResponse.
+        r"""Sets the count of this ListMetricsResponse.
 
         总列表大小。
 

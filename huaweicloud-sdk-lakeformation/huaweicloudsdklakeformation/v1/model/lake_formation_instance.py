@@ -43,7 +43,7 @@ class LakeFormationInstance:
     }
 
     def __init__(self, instance_id=None, name=None, description=None, enterprise_project_id=None, shared=None, default_instance=None, create_time=None, update_time=None, status=None, in_recycle_bin=None):
-        """LakeFormationInstance
+        r"""LakeFormationInstance
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class LakeFormationInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this LakeFormationInstance.
+        r"""Gets the instance_id of this LakeFormationInstance.
 
         LakeFormation实例ID。
 
@@ -117,7 +117,7 @@ class LakeFormationInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this LakeFormationInstance.
+        r"""Sets the instance_id of this LakeFormationInstance.
 
         LakeFormation实例ID。
 
@@ -128,7 +128,7 @@ class LakeFormationInstance:
 
     @property
     def name(self):
-        """Gets the name of this LakeFormationInstance.
+        r"""Gets the name of this LakeFormationInstance.
 
         实例名称。
 
@@ -139,7 +139,7 @@ class LakeFormationInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LakeFormationInstance.
+        r"""Sets the name of this LakeFormationInstance.
 
         实例名称。
 
@@ -150,7 +150,7 @@ class LakeFormationInstance:
 
     @property
     def description(self):
-        """Gets the description of this LakeFormationInstance.
+        r"""Gets the description of this LakeFormationInstance.
 
         描述。
 
@@ -161,7 +161,7 @@ class LakeFormationInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LakeFormationInstance.
+        r"""Sets the description of this LakeFormationInstance.
 
         描述。
 
@@ -172,7 +172,7 @@ class LakeFormationInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this LakeFormationInstance.
+        r"""Gets the enterprise_project_id of this LakeFormationInstance.
 
         企业项目ID。
 
@@ -183,7 +183,7 @@ class LakeFormationInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this LakeFormationInstance.
+        r"""Sets the enterprise_project_id of this LakeFormationInstance.
 
         企业项目ID。
 
@@ -194,7 +194,7 @@ class LakeFormationInstance:
 
     @property
     def shared(self):
-        """Gets the shared of this LakeFormationInstance.
+        r"""Gets the shared of this LakeFormationInstance.
 
         逻辑多租和物理多租的判断。false为物理多租；true为逻辑多租。
 
@@ -205,7 +205,7 @@ class LakeFormationInstance:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this LakeFormationInstance.
+        r"""Sets the shared of this LakeFormationInstance.
 
         逻辑多租和物理多租的判断。false为物理多租；true为逻辑多租。
 
@@ -216,7 +216,7 @@ class LakeFormationInstance:
 
     @property
     def default_instance(self):
-        """Gets the default_instance of this LakeFormationInstance.
+        r"""Gets the default_instance of this LakeFormationInstance.
 
         是否为默认实例
 
@@ -227,7 +227,7 @@ class LakeFormationInstance:
 
     @default_instance.setter
     def default_instance(self, default_instance):
-        """Sets the default_instance of this LakeFormationInstance.
+        r"""Sets the default_instance of this LakeFormationInstance.
 
         是否为默认实例
 
@@ -238,7 +238,7 @@ class LakeFormationInstance:
 
     @property
     def create_time(self):
-        """Gets the create_time of this LakeFormationInstance.
+        r"""Gets the create_time of this LakeFormationInstance.
 
         实例创建时间戳
 
@@ -249,7 +249,7 @@ class LakeFormationInstance:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this LakeFormationInstance.
+        r"""Sets the create_time of this LakeFormationInstance.
 
         实例创建时间戳
 
@@ -260,7 +260,7 @@ class LakeFormationInstance:
 
     @property
     def update_time(self):
-        """Gets the update_time of this LakeFormationInstance.
+        r"""Gets the update_time of this LakeFormationInstance.
 
         实例更新时间戳
 
@@ -271,7 +271,7 @@ class LakeFormationInstance:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this LakeFormationInstance.
+        r"""Sets the update_time of this LakeFormationInstance.
 
         实例更新时间戳
 
@@ -282,7 +282,7 @@ class LakeFormationInstance:
 
     @property
     def status(self):
-        """Gets the status of this LakeFormationInstance.
+        r"""Gets the status of this LakeFormationInstance.
 
         实例状态,RESOURCE_PREPARATION-实例资源准备中,RUNNING-实例运行中,RESOURCE_RELEASE-实例资源释放中,DELETED-实例已释放,RESOURCE_PREPARATION_FAIL-实例资源准备失败,FROZEN_RELEASABLE-可恢复冻结,FROZEN_UNRELEASABLE-不可恢复冻结,RECOVERING-恢复中,DELETING-删除中,SCALING-扩容中,SCALE_FAIL-扩容失败
 
@@ -293,7 +293,7 @@ class LakeFormationInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LakeFormationInstance.
+        r"""Sets the status of this LakeFormationInstance.
 
         实例状态,RESOURCE_PREPARATION-实例资源准备中,RUNNING-实例运行中,RESOURCE_RELEASE-实例资源释放中,DELETED-实例已释放,RESOURCE_PREPARATION_FAIL-实例资源准备失败,FROZEN_RELEASABLE-可恢复冻结,FROZEN_UNRELEASABLE-不可恢复冻结,RECOVERING-恢复中,DELETING-删除中,SCALING-扩容中,SCALE_FAIL-扩容失败
 
@@ -304,7 +304,7 @@ class LakeFormationInstance:
 
     @property
     def in_recycle_bin(self):
-        """Gets the in_recycle_bin of this LakeFormationInstance.
+        r"""Gets the in_recycle_bin of this LakeFormationInstance.
 
         是否在回收站
 
@@ -315,7 +315,7 @@ class LakeFormationInstance:
 
     @in_recycle_bin.setter
     def in_recycle_bin(self, in_recycle_bin):
-        """Sets the in_recycle_bin of this LakeFormationInstance.
+        r"""Sets the in_recycle_bin of this LakeFormationInstance.
 
         是否在回收站
 

@@ -29,7 +29,7 @@ class QualityEnhanceTemplateInfo:
     }
 
     def __init__(self, template_id=None, template=None, error=None):
-        """QualityEnhanceTemplateInfo
+        r"""QualityEnhanceTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QualityEnhanceTemplateInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this QualityEnhanceTemplateInfo.
+        r"""Gets the template_id of this QualityEnhanceTemplateInfo.
 
         模板ID。 
 
@@ -68,7 +68,7 @@ class QualityEnhanceTemplateInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this QualityEnhanceTemplateInfo.
+        r"""Sets the template_id of this QualityEnhanceTemplateInfo.
 
         模板ID。 
 
@@ -79,7 +79,7 @@ class QualityEnhanceTemplateInfo:
 
     @property
     def template(self):
-        """Gets the template of this QualityEnhanceTemplateInfo.
+        r"""Gets the template of this QualityEnhanceTemplateInfo.
 
         :return: The template of this QualityEnhanceTemplateInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
@@ -88,7 +88,7 @@ class QualityEnhanceTemplateInfo:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this QualityEnhanceTemplateInfo.
+        r"""Sets the template of this QualityEnhanceTemplateInfo.
 
         :param template: The template of this QualityEnhanceTemplateInfo.
         :type template: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
@@ -97,7 +97,7 @@ class QualityEnhanceTemplateInfo:
 
     @property
     def error(self):
-        """Gets the error of this QualityEnhanceTemplateInfo.
+        r"""Gets the error of this QualityEnhanceTemplateInfo.
 
         :return: The error of this QualityEnhanceTemplateInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.XCodeError`
@@ -106,7 +106,7 @@ class QualityEnhanceTemplateInfo:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this QualityEnhanceTemplateInfo.
+        r"""Sets the error of this QualityEnhanceTemplateInfo.
 
         :param error: The error of this QualityEnhanceTemplateInfo.
         :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`

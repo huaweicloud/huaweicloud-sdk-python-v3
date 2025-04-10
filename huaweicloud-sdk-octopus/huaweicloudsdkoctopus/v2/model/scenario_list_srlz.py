@@ -61,7 +61,7 @@ class ScenarioListSrlz:
     }
 
     def __init__(self, url=None, id=None, created_at=None, updated_at=None, labels=None, gen_scenario=None, road_scenario=None, simulator=None, version=None, filename=None, map_filename=None, model_filename=None, user_id=None, user_name=None, name=None, priority=None, status=None, map=None, model=None):
-        """ScenarioListSrlz
+        r"""ScenarioListSrlz
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class ScenarioListSrlz:
 
     @property
     def url(self):
-        """Gets the url of this ScenarioListSrlz.
+        r"""Gets the url of this ScenarioListSrlz.
 
         :return: The url of this ScenarioListSrlz.
         :rtype: str
@@ -161,7 +161,7 @@ class ScenarioListSrlz:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ScenarioListSrlz.
+        r"""Sets the url of this ScenarioListSrlz.
 
         :param url: The url of this ScenarioListSrlz.
         :type url: str
@@ -170,7 +170,7 @@ class ScenarioListSrlz:
 
     @property
     def id(self):
-        """Gets the id of this ScenarioListSrlz.
+        r"""Gets the id of this ScenarioListSrlz.
 
         :return: The id of this ScenarioListSrlz.
         :rtype: int
@@ -179,7 +179,7 @@ class ScenarioListSrlz:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScenarioListSrlz.
+        r"""Sets the id of this ScenarioListSrlz.
 
         :param id: The id of this ScenarioListSrlz.
         :type id: int
@@ -188,7 +188,7 @@ class ScenarioListSrlz:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ScenarioListSrlz.
+        r"""Gets the created_at of this ScenarioListSrlz.
 
         :return: The created_at of this ScenarioListSrlz.
         :rtype: float
@@ -197,7 +197,7 @@ class ScenarioListSrlz:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ScenarioListSrlz.
+        r"""Sets the created_at of this ScenarioListSrlz.
 
         :param created_at: The created_at of this ScenarioListSrlz.
         :type created_at: float
@@ -206,7 +206,7 @@ class ScenarioListSrlz:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ScenarioListSrlz.
+        r"""Gets the updated_at of this ScenarioListSrlz.
 
         :return: The updated_at of this ScenarioListSrlz.
         :rtype: float
@@ -215,7 +215,7 @@ class ScenarioListSrlz:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ScenarioListSrlz.
+        r"""Sets the updated_at of this ScenarioListSrlz.
 
         :param updated_at: The updated_at of this ScenarioListSrlz.
         :type updated_at: float
@@ -224,7 +224,7 @@ class ScenarioListSrlz:
 
     @property
     def labels(self):
-        """Gets the labels of this ScenarioListSrlz.
+        r"""Gets the labels of this ScenarioListSrlz.
 
         :return: The labels of this ScenarioListSrlz.
         :rtype: list[:class:`huaweicloudsdkoctopus.v2.LabelBriefSrlz`]
@@ -233,7 +233,7 @@ class ScenarioListSrlz:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ScenarioListSrlz.
+        r"""Sets the labels of this ScenarioListSrlz.
 
         :param labels: The labels of this ScenarioListSrlz.
         :type labels: list[:class:`huaweicloudsdkoctopus.v2.LabelBriefSrlz`]
@@ -242,7 +242,7 @@ class ScenarioListSrlz:
 
     @property
     def gen_scenario(self):
-        """Gets the gen_scenario of this ScenarioListSrlz.
+        r"""Gets the gen_scenario of this ScenarioListSrlz.
 
         :return: The gen_scenario of this ScenarioListSrlz.
         :rtype: str
@@ -251,7 +251,7 @@ class ScenarioListSrlz:
 
     @gen_scenario.setter
     def gen_scenario(self, gen_scenario):
-        """Sets the gen_scenario of this ScenarioListSrlz.
+        r"""Sets the gen_scenario of this ScenarioListSrlz.
 
         :param gen_scenario: The gen_scenario of this ScenarioListSrlz.
         :type gen_scenario: str
@@ -260,7 +260,7 @@ class ScenarioListSrlz:
 
     @property
     def road_scenario(self):
-        """Gets the road_scenario of this ScenarioListSrlz.
+        r"""Gets the road_scenario of this ScenarioListSrlz.
 
         :return: The road_scenario of this ScenarioListSrlz.
         :rtype: str
@@ -269,7 +269,7 @@ class ScenarioListSrlz:
 
     @road_scenario.setter
     def road_scenario(self, road_scenario):
-        """Sets the road_scenario of this ScenarioListSrlz.
+        r"""Sets the road_scenario of this ScenarioListSrlz.
 
         :param road_scenario: The road_scenario of this ScenarioListSrlz.
         :type road_scenario: str
@@ -278,7 +278,7 @@ class ScenarioListSrlz:
 
     @property
     def simulator(self):
-        """Gets the simulator of this ScenarioListSrlz.
+        r"""Gets the simulator of this ScenarioListSrlz.
 
         :return: The simulator of this ScenarioListSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
@@ -287,7 +287,7 @@ class ScenarioListSrlz:
 
     @simulator.setter
     def simulator(self, simulator):
-        """Sets the simulator of this ScenarioListSrlz.
+        r"""Sets the simulator of this ScenarioListSrlz.
 
         :param simulator: The simulator of this ScenarioListSrlz.
         :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
@@ -296,7 +296,7 @@ class ScenarioListSrlz:
 
     @property
     def version(self):
-        """Gets the version of this ScenarioListSrlz.
+        r"""Gets the version of this ScenarioListSrlz.
 
         :return: The version of this ScenarioListSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
@@ -305,7 +305,7 @@ class ScenarioListSrlz:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ScenarioListSrlz.
+        r"""Sets the version of this ScenarioListSrlz.
 
         :param version: The version of this ScenarioListSrlz.
         :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
@@ -314,7 +314,7 @@ class ScenarioListSrlz:
 
     @property
     def filename(self):
-        """Gets the filename of this ScenarioListSrlz.
+        r"""Gets the filename of this ScenarioListSrlz.
 
         :return: The filename of this ScenarioListSrlz.
         :rtype: str
@@ -323,7 +323,7 @@ class ScenarioListSrlz:
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this ScenarioListSrlz.
+        r"""Sets the filename of this ScenarioListSrlz.
 
         :param filename: The filename of this ScenarioListSrlz.
         :type filename: str
@@ -332,7 +332,7 @@ class ScenarioListSrlz:
 
     @property
     def map_filename(self):
-        """Gets the map_filename of this ScenarioListSrlz.
+        r"""Gets the map_filename of this ScenarioListSrlz.
 
         :return: The map_filename of this ScenarioListSrlz.
         :rtype: str
@@ -341,7 +341,7 @@ class ScenarioListSrlz:
 
     @map_filename.setter
     def map_filename(self, map_filename):
-        """Sets the map_filename of this ScenarioListSrlz.
+        r"""Sets the map_filename of this ScenarioListSrlz.
 
         :param map_filename: The map_filename of this ScenarioListSrlz.
         :type map_filename: str
@@ -350,7 +350,7 @@ class ScenarioListSrlz:
 
     @property
     def model_filename(self):
-        """Gets the model_filename of this ScenarioListSrlz.
+        r"""Gets the model_filename of this ScenarioListSrlz.
 
         :return: The model_filename of this ScenarioListSrlz.
         :rtype: str
@@ -359,7 +359,7 @@ class ScenarioListSrlz:
 
     @model_filename.setter
     def model_filename(self, model_filename):
-        """Sets the model_filename of this ScenarioListSrlz.
+        r"""Sets the model_filename of this ScenarioListSrlz.
 
         :param model_filename: The model_filename of this ScenarioListSrlz.
         :type model_filename: str
@@ -368,7 +368,7 @@ class ScenarioListSrlz:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ScenarioListSrlz.
+        r"""Gets the user_id of this ScenarioListSrlz.
 
         :return: The user_id of this ScenarioListSrlz.
         :rtype: str
@@ -377,7 +377,7 @@ class ScenarioListSrlz:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ScenarioListSrlz.
+        r"""Sets the user_id of this ScenarioListSrlz.
 
         :param user_id: The user_id of this ScenarioListSrlz.
         :type user_id: str
@@ -386,7 +386,7 @@ class ScenarioListSrlz:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ScenarioListSrlz.
+        r"""Gets the user_name of this ScenarioListSrlz.
 
         :return: The user_name of this ScenarioListSrlz.
         :rtype: str
@@ -395,7 +395,7 @@ class ScenarioListSrlz:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ScenarioListSrlz.
+        r"""Sets the user_name of this ScenarioListSrlz.
 
         :param user_name: The user_name of this ScenarioListSrlz.
         :type user_name: str
@@ -404,7 +404,7 @@ class ScenarioListSrlz:
 
     @property
     def name(self):
-        """Gets the name of this ScenarioListSrlz.
+        r"""Gets the name of this ScenarioListSrlz.
 
         :return: The name of this ScenarioListSrlz.
         :rtype: str
@@ -413,7 +413,7 @@ class ScenarioListSrlz:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScenarioListSrlz.
+        r"""Sets the name of this ScenarioListSrlz.
 
         :param name: The name of this ScenarioListSrlz.
         :type name: str
@@ -422,7 +422,7 @@ class ScenarioListSrlz:
 
     @property
     def priority(self):
-        """Gets the priority of this ScenarioListSrlz.
+        r"""Gets the priority of this ScenarioListSrlz.
 
         :return: The priority of this ScenarioListSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
@@ -431,7 +431,7 @@ class ScenarioListSrlz:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ScenarioListSrlz.
+        r"""Sets the priority of this ScenarioListSrlz.
 
         :param priority: The priority of this ScenarioListSrlz.
         :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
@@ -440,7 +440,7 @@ class ScenarioListSrlz:
 
     @property
     def status(self):
-        """Gets the status of this ScenarioListSrlz.
+        r"""Gets the status of this ScenarioListSrlz.
 
         :return: The status of this ScenarioListSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioStatusEnum`
@@ -449,7 +449,7 @@ class ScenarioListSrlz:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScenarioListSrlz.
+        r"""Sets the status of this ScenarioListSrlz.
 
         :param status: The status of this ScenarioListSrlz.
         :type status: :class:`huaweicloudsdkoctopus.v2.ScenarioStatusEnum`
@@ -458,7 +458,7 @@ class ScenarioListSrlz:
 
     @property
     def map(self):
-        """Gets the map of this ScenarioListSrlz.
+        r"""Gets the map of this ScenarioListSrlz.
 
         :return: The map of this ScenarioListSrlz.
         :rtype: str
@@ -467,7 +467,7 @@ class ScenarioListSrlz:
 
     @map.setter
     def map(self, map):
-        """Sets the map of this ScenarioListSrlz.
+        r"""Sets the map of this ScenarioListSrlz.
 
         :param map: The map of this ScenarioListSrlz.
         :type map: str
@@ -476,7 +476,7 @@ class ScenarioListSrlz:
 
     @property
     def model(self):
-        """Gets the model of this ScenarioListSrlz.
+        r"""Gets the model of this ScenarioListSrlz.
 
         :return: The model of this ScenarioListSrlz.
         :rtype: str
@@ -485,7 +485,7 @@ class ScenarioListSrlz:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ScenarioListSrlz.
+        r"""Sets the model of this ScenarioListSrlz.
 
         :param model: The model of this ScenarioListSrlz.
         :type model: str

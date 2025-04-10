@@ -27,7 +27,7 @@ class UpdateLogStreamParams:
     }
 
     def __init__(self, ttl_in_days=None, tags=None):
-        """UpdateLogStreamParams
+        r"""UpdateLogStreamParams
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLogStreamParams:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this UpdateLogStreamParams.
+        r"""Gets the ttl_in_days of this UpdateLogStreamParams.
 
         日志存储时间（天）。
 
@@ -60,7 +60,7 @@ class UpdateLogStreamParams:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this UpdateLogStreamParams.
+        r"""Sets the ttl_in_days of this UpdateLogStreamParams.
 
         日志存储时间（天）。
 
@@ -71,7 +71,7 @@ class UpdateLogStreamParams:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateLogStreamParams.
+        r"""Gets the tags of this UpdateLogStreamParams.
 
         标签字段信息
 
@@ -82,7 +82,7 @@ class UpdateLogStreamParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateLogStreamParams.
+        r"""Sets the tags of this UpdateLogStreamParams.
 
         标签字段信息
 

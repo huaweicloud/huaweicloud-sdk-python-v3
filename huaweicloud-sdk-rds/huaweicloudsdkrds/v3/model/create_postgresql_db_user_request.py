@@ -29,7 +29,7 @@ class CreatePostgresqlDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreatePostgresqlDbUserRequest
+        r"""CreatePostgresqlDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePostgresqlDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreatePostgresqlDbUserRequest.
+        r"""Gets the x_language of this CreatePostgresqlDbUserRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreatePostgresqlDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreatePostgresqlDbUserRequest.
+        r"""Sets the x_language of this CreatePostgresqlDbUserRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreatePostgresqlDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostgresqlDbUserRequest.
+        r"""Gets the instance_id of this CreatePostgresqlDbUserRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreatePostgresqlDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostgresqlDbUserRequest.
+        r"""Sets the instance_id of this CreatePostgresqlDbUserRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreatePostgresqlDbUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostgresqlDbUserRequest.
+        r"""Gets the body of this CreatePostgresqlDbUserRequest.
 
         :return: The body of this CreatePostgresqlDbUserRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgresqlUserForCreation`
@@ -109,7 +109,7 @@ class CreatePostgresqlDbUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostgresqlDbUserRequest.
+        r"""Sets the body of this CreatePostgresqlDbUserRequest.
 
         :param body: The body of this CreatePostgresqlDbUserRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgresqlUserForCreation`

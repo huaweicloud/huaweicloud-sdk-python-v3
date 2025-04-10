@@ -24,7 +24,7 @@ class AddMemberV4Response(SdkResponse):
     }
 
     def __init__(self):
-        """AddMemberV4Response
+        r"""AddMemberV4Response
 
         The model defined in huaweicloud sdk
 

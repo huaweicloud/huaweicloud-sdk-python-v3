@@ -27,7 +27,7 @@ class UpdatePipelineGroupRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UpdatePipelineGroupRequest
+        r"""UpdatePipelineGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePipelineGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdatePipelineGroupRequest.
+        r"""Gets the project_id of this UpdatePipelineGroupRequest.
 
         项目ID
 
@@ -60,7 +60,7 @@ class UpdatePipelineGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdatePipelineGroupRequest.
+        r"""Sets the project_id of this UpdatePipelineGroupRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class UpdatePipelineGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePipelineGroupRequest.
+        r"""Gets the body of this UpdatePipelineGroupRequest.
 
         :return: The body of this UpdatePipelineGroupRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupUpdateDTO`
@@ -80,7 +80,7 @@ class UpdatePipelineGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePipelineGroupRequest.
+        r"""Sets the body of this UpdatePipelineGroupRequest.
 
         :param body: The body of this UpdatePipelineGroupRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupUpdateDTO`

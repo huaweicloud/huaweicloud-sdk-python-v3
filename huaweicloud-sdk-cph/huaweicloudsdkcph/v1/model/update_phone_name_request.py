@@ -27,7 +27,7 @@ class UpdatePhoneNameRequest:
     }
 
     def __init__(self, phone_id=None, body=None):
-        """UpdatePhoneNameRequest
+        r"""UpdatePhoneNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePhoneNameRequest:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this UpdatePhoneNameRequest.
+        r"""Gets the phone_id of this UpdatePhoneNameRequest.
 
         云手机id。
 
@@ -60,7 +60,7 @@ class UpdatePhoneNameRequest:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this UpdatePhoneNameRequest.
+        r"""Sets the phone_id of this UpdatePhoneNameRequest.
 
         云手机id。
 
@@ -71,7 +71,7 @@ class UpdatePhoneNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePhoneNameRequest.
+        r"""Gets the body of this UpdatePhoneNameRequest.
 
         :return: The body of this UpdatePhoneNameRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequestBody`
@@ -80,7 +80,7 @@ class UpdatePhoneNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePhoneNameRequest.
+        r"""Sets the body of this UpdatePhoneNameRequest.
 
         :param body: The body of this UpdatePhoneNameRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequestBody`

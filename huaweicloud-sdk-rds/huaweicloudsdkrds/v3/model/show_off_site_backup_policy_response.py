@@ -26,7 +26,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_para=None):
-        """ShowOffSiteBackupPolicyResponse
+        r"""ShowOffSiteBackupPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
 
     @property
     def policy_para(self):
-        """Gets the policy_para of this ShowOffSiteBackupPolicyResponse.
+        r"""Gets the policy_para of this ShowOffSiteBackupPolicyResponse.
 
         备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
@@ -55,7 +55,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
 
     @policy_para.setter
     def policy_para(self, policy_para):
-        """Sets the policy_para of this ShowOffSiteBackupPolicyResponse.
+        r"""Sets the policy_para of this ShowOffSiteBackupPolicyResponse.
 
         备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 

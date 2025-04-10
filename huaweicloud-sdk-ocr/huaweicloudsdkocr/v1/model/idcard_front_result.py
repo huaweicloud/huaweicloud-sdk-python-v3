@@ -63,7 +63,7 @@ class IdcardFrontResult:
     }
 
     def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, portrait_image=None, adjusted_image=None, verification_result=None, text_location=None, portrait_location=None, detect_reproduce_result=None, detect_copy_result=None, detect_tampering_result=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_interim_result=None, detect_glare_result=None, score_info=None):
-        """IdcardFrontResult
+        r"""IdcardFrontResult
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class IdcardFrontResult:
 
     @property
     def name(self):
-        """Gets the name of this IdcardFrontResult.
+        r"""Gets the name of this IdcardFrontResult.
 
         姓名。 
 
@@ -187,7 +187,7 @@ class IdcardFrontResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IdcardFrontResult.
+        r"""Sets the name of this IdcardFrontResult.
 
         姓名。 
 
@@ -198,7 +198,7 @@ class IdcardFrontResult:
 
     @property
     def sex(self):
-        """Gets the sex of this IdcardFrontResult.
+        r"""Gets the sex of this IdcardFrontResult.
 
         性别。 
 
@@ -209,7 +209,7 @@ class IdcardFrontResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this IdcardFrontResult.
+        r"""Sets the sex of this IdcardFrontResult.
 
         性别。 
 
@@ -220,7 +220,7 @@ class IdcardFrontResult:
 
     @property
     def birth(self):
-        """Gets the birth of this IdcardFrontResult.
+        r"""Gets the birth of this IdcardFrontResult.
 
         出生日期。 
 
@@ -231,7 +231,7 @@ class IdcardFrontResult:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this IdcardFrontResult.
+        r"""Sets the birth of this IdcardFrontResult.
 
         出生日期。 
 
@@ -242,7 +242,7 @@ class IdcardFrontResult:
 
     @property
     def ethnicity(self):
-        """Gets the ethnicity of this IdcardFrontResult.
+        r"""Gets the ethnicity of this IdcardFrontResult.
 
         民族。 
 
@@ -253,7 +253,7 @@ class IdcardFrontResult:
 
     @ethnicity.setter
     def ethnicity(self, ethnicity):
-        """Sets the ethnicity of this IdcardFrontResult.
+        r"""Sets the ethnicity of this IdcardFrontResult.
 
         民族。 
 
@@ -264,7 +264,7 @@ class IdcardFrontResult:
 
     @property
     def address(self):
-        """Gets the address of this IdcardFrontResult.
+        r"""Gets the address of this IdcardFrontResult.
 
         地址。 
 
@@ -275,7 +275,7 @@ class IdcardFrontResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this IdcardFrontResult.
+        r"""Sets the address of this IdcardFrontResult.
 
         地址。 
 
@@ -286,7 +286,7 @@ class IdcardFrontResult:
 
     @property
     def number(self):
-        """Gets the number of this IdcardFrontResult.
+        r"""Gets the number of this IdcardFrontResult.
 
         身份证号。 
 
@@ -297,7 +297,7 @@ class IdcardFrontResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this IdcardFrontResult.
+        r"""Sets the number of this IdcardFrontResult.
 
         身份证号。 
 
@@ -308,7 +308,7 @@ class IdcardFrontResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this IdcardFrontResult.
+        r"""Gets the portrait_image of this IdcardFrontResult.
 
         身份证头像图片信息的base64码结果。  > 说明： - 仅在输入参数return_portrait_image为true时，返回该字段。 - 当输入为身份证背面时返回为空字符串。 
 
@@ -319,7 +319,7 @@ class IdcardFrontResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this IdcardFrontResult.
+        r"""Sets the portrait_image of this IdcardFrontResult.
 
         身份证头像图片信息的base64码结果。  > 说明： - 仅在输入参数return_portrait_image为true时，返回该字段。 - 当输入为身份证背面时返回为空字符串。 
 
@@ -330,7 +330,7 @@ class IdcardFrontResult:
 
     @property
     def adjusted_image(self):
-        """Gets the adjusted_image of this IdcardFrontResult.
+        r"""Gets the adjusted_image of this IdcardFrontResult.
 
         身份证卡面图片信息的base64码结果。  > 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
 
@@ -341,7 +341,7 @@ class IdcardFrontResult:
 
     @adjusted_image.setter
     def adjusted_image(self, adjusted_image):
-        """Sets the adjusted_image of this IdcardFrontResult.
+        r"""Sets the adjusted_image of this IdcardFrontResult.
 
         身份证卡面图片信息的base64码结果。  > 说明： - 仅在输入参数return_adjusted_image为true时，返回该字段。 
 
@@ -352,7 +352,7 @@ class IdcardFrontResult:
 
     @property
     def verification_result(self):
-        """Gets the verification_result of this IdcardFrontResult.
+        r"""Gets the verification_result of this IdcardFrontResult.
 
         :return: The verification_result of this IdcardFrontResult.
         :rtype: :class:`huaweicloudsdkocr.v1.IdcardFrontVerificationResult`
@@ -361,7 +361,7 @@ class IdcardFrontResult:
 
     @verification_result.setter
     def verification_result(self, verification_result):
-        """Sets the verification_result of this IdcardFrontResult.
+        r"""Sets the verification_result of this IdcardFrontResult.
 
         :param verification_result: The verification_result of this IdcardFrontResult.
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardFrontVerificationResult`
@@ -370,7 +370,7 @@ class IdcardFrontResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this IdcardFrontResult.
+        r"""Gets the text_location of this IdcardFrontResult.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
 
@@ -381,7 +381,7 @@ class IdcardFrontResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this IdcardFrontResult.
+        r"""Sets the text_location of this IdcardFrontResult.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。 仅return_text_location设置为true时才返回。 
 
@@ -392,7 +392,7 @@ class IdcardFrontResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this IdcardFrontResult.
+        r"""Gets the portrait_location of this IdcardFrontResult.
 
         身份证头像位置信息的结果。 仅在输入参数return_portrait_location为true时，返回该字段。 
 
@@ -403,7 +403,7 @@ class IdcardFrontResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this IdcardFrontResult.
+        r"""Sets the portrait_location of this IdcardFrontResult.
 
         身份证头像位置信息的结果。 仅在输入参数return_portrait_location为true时，返回该字段。 
 
@@ -414,7 +414,7 @@ class IdcardFrontResult:
 
     @property
     def detect_reproduce_result(self):
-        """Gets the detect_reproduce_result of this IdcardFrontResult.
+        r"""Gets the detect_reproduce_result of this IdcardFrontResult.
 
         身份证图像是否翻拍告警结果。 - true：表示身份证图片经过翻拍。 - false：表示身份证图片未经过翻拍。 仅在输入参数detect_reproduce为true时，返回该字段。 
 
@@ -425,7 +425,7 @@ class IdcardFrontResult:
 
     @detect_reproduce_result.setter
     def detect_reproduce_result(self, detect_reproduce_result):
-        """Sets the detect_reproduce_result of this IdcardFrontResult.
+        r"""Sets the detect_reproduce_result of this IdcardFrontResult.
 
         身份证图像是否翻拍告警结果。 - true：表示身份证图片经过翻拍。 - false：表示身份证图片未经过翻拍。 仅在输入参数detect_reproduce为true时，返回该字段。 
 
@@ -436,7 +436,7 @@ class IdcardFrontResult:
 
     @property
     def detect_copy_result(self):
-        """Gets the detect_copy_result of this IdcardFrontResult.
+        r"""Gets the detect_copy_result of this IdcardFrontResult.
 
         身份证图像是否黑白复印件告警结果。 - true：表示身份证图片是复印件。 - false”表示身份证图片是原件。 仅在输入参数detect_copy为true时，返回该字段。 
 
@@ -447,7 +447,7 @@ class IdcardFrontResult:
 
     @detect_copy_result.setter
     def detect_copy_result(self, detect_copy_result):
-        """Sets the detect_copy_result of this IdcardFrontResult.
+        r"""Sets the detect_copy_result of this IdcardFrontResult.
 
         身份证图像是否黑白复印件告警结果。 - true：表示身份证图片是复印件。 - false”表示身份证图片是原件。 仅在输入参数detect_copy为true时，返回该字段。 
 
@@ -458,7 +458,7 @@ class IdcardFrontResult:
 
     @property
     def detect_tampering_result(self):
-        """Gets the detect_tampering_result of this IdcardFrontResult.
+        r"""Gets the detect_tampering_result of this IdcardFrontResult.
 
         身份证图片是否PS告警结果。 - true：表示身份证经过PS。 - false：表示未经过PS。 仅在传入参数detect_tampering为true时，返回该字段。 
 
@@ -469,7 +469,7 @@ class IdcardFrontResult:
 
     @detect_tampering_result.setter
     def detect_tampering_result(self, detect_tampering_result):
-        """Sets the detect_tampering_result of this IdcardFrontResult.
+        r"""Sets the detect_tampering_result of this IdcardFrontResult.
 
         身份证图片是否PS告警结果。 - true：表示身份证经过PS。 - false：表示未经过PS。 仅在传入参数detect_tampering为true时，返回该字段。 
 
@@ -480,7 +480,7 @@ class IdcardFrontResult:
 
     @property
     def detect_border_integrity_result(self):
-        """Gets the detect_border_integrity_result of this IdcardFrontResult.
+        r"""Gets the detect_border_integrity_result of this IdcardFrontResult.
 
         身份证图片边框完整性告警结果。 - true：表示边框不完整 - false：表示边框完整。 仅在输入参数detect_border_integrity为true时，返回该字段。 
 
@@ -491,7 +491,7 @@ class IdcardFrontResult:
 
     @detect_border_integrity_result.setter
     def detect_border_integrity_result(self, detect_border_integrity_result):
-        """Sets the detect_border_integrity_result of this IdcardFrontResult.
+        r"""Sets the detect_border_integrity_result of this IdcardFrontResult.
 
         身份证图片边框完整性告警结果。 - true：表示边框不完整 - false：表示边框完整。 仅在输入参数detect_border_integrity为true时，返回该字段。 
 
@@ -502,7 +502,7 @@ class IdcardFrontResult:
 
     @property
     def detect_blocking_within_border_result(self):
-        """Gets the detect_blocking_within_border_result of this IdcardFrontResult.
+        r"""Gets the detect_blocking_within_border_result of this IdcardFrontResult.
 
         身份证图像框内是否存在遮挡的告警结果。 - true：表示边框内部存在遮挡。 - false：表示边框内部不存在遮挡。 仅在输入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -513,7 +513,7 @@ class IdcardFrontResult:
 
     @detect_blocking_within_border_result.setter
     def detect_blocking_within_border_result(self, detect_blocking_within_border_result):
-        """Sets the detect_blocking_within_border_result of this IdcardFrontResult.
+        r"""Sets the detect_blocking_within_border_result of this IdcardFrontResult.
 
         身份证图像框内是否存在遮挡的告警结果。 - true：表示边框内部存在遮挡。 - false：表示边框内部不存在遮挡。 仅在输入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -524,7 +524,7 @@ class IdcardFrontResult:
 
     @property
     def detect_blur_result(self):
-        """Gets the detect_blur_result of this IdcardFrontResult.
+        r"""Gets the detect_blur_result of this IdcardFrontResult.
 
         身份证模糊告警结果。 - true：表示身份证图片较模糊。 - false：表示身份证清晰。 仅在输入参数detect_blur为true时，返回该字段。 
 
@@ -535,7 +535,7 @@ class IdcardFrontResult:
 
     @detect_blur_result.setter
     def detect_blur_result(self, detect_blur_result):
-        """Sets the detect_blur_result of this IdcardFrontResult.
+        r"""Sets the detect_blur_result of this IdcardFrontResult.
 
         身份证模糊告警结果。 - true：表示身份证图片较模糊。 - false：表示身份证清晰。 仅在输入参数detect_blur为true时，返回该字段。 
 
@@ -546,7 +546,7 @@ class IdcardFrontResult:
 
     @property
     def detect_interim_result(self):
-        """Gets the detect_interim_result of this IdcardFrontResult.
+        r"""Gets the detect_interim_result of this IdcardFrontResult.
 
         临时身份证告警结果。 - true：表示是临时身份证。 - false：表示非临时身份证。 仅在输入参数detect_interim为true时，返回该字段。 
 
@@ -557,7 +557,7 @@ class IdcardFrontResult:
 
     @detect_interim_result.setter
     def detect_interim_result(self, detect_interim_result):
-        """Sets the detect_interim_result of this IdcardFrontResult.
+        r"""Sets the detect_interim_result of this IdcardFrontResult.
 
         临时身份证告警结果。 - true：表示是临时身份证。 - false：表示非临时身份证。 仅在输入参数detect_interim为true时，返回该字段。 
 
@@ -568,7 +568,7 @@ class IdcardFrontResult:
 
     @property
     def detect_glare_result(self):
-        """Gets the detect_glare_result of this IdcardFrontResult.
+        r"""Gets the detect_glare_result of this IdcardFrontResult.
 
         身份证反光告警结果。 - true：表示身份证图片存在反光。 - false：表示是身份证不存在反光。 仅在输入参数detect_glare为true时，返回该字段。 
 
@@ -579,7 +579,7 @@ class IdcardFrontResult:
 
     @detect_glare_result.setter
     def detect_glare_result(self, detect_glare_result):
-        """Sets the detect_glare_result of this IdcardFrontResult.
+        r"""Sets the detect_glare_result of this IdcardFrontResult.
 
         身份证反光告警结果。 - true：表示身份证图片存在反光。 - false：表示是身份证不存在反光。 仅在输入参数detect_glare为true时，返回该字段。 
 
@@ -590,7 +590,7 @@ class IdcardFrontResult:
 
     @property
     def score_info(self):
-        """Gets the score_info of this IdcardFrontResult.
+        r"""Gets the score_info of this IdcardFrontResult.
 
         :return: The score_info of this IdcardFrontResult.
         :rtype: :class:`huaweicloudsdkocr.v1.IdcardScoreInfoResult`
@@ -599,7 +599,7 @@ class IdcardFrontResult:
 
     @score_info.setter
     def score_info(self, score_info):
-        """Sets the score_info of this IdcardFrontResult.
+        r"""Sets the score_info of this IdcardFrontResult.
 
         :param score_info: The score_info of this IdcardFrontResult.
         :type score_info: :class:`huaweicloudsdkocr.v1.IdcardScoreInfoResult`

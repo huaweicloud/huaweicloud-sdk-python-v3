@@ -23,7 +23,7 @@ class EnableLtsLogsRequest:
     }
 
     def __init__(self):
-        """EnableLtsLogsRequest
+        r"""EnableLtsLogsRequest
 
         The model defined in huaweicloud sdk
 

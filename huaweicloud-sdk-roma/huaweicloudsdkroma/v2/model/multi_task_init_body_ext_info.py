@@ -25,7 +25,7 @@ class MultiTaskInitBodyExtInfo:
     }
 
     def __init__(self, server_id=None):
-        """MultiTaskInitBodyExtInfo
+        r"""MultiTaskInitBodyExtInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MultiTaskInitBodyExtInfo:
 
     @property
     def server_id(self):
-        """Gets the server_id of this MultiTaskInitBodyExtInfo.
+        r"""Gets the server_id of this MultiTaskInitBodyExtInfo.
 
         Mysql的ServerID
 
@@ -54,7 +54,7 @@ class MultiTaskInitBodyExtInfo:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this MultiTaskInitBodyExtInfo.
+        r"""Sets the server_id of this MultiTaskInitBodyExtInfo.
 
         Mysql的ServerID
 

@@ -25,7 +25,7 @@ class BatchDeleteWarehouseAppReq:
     }
 
     def __init__(self, ids=None):
-        """BatchDeleteWarehouseAppReq
+        r"""BatchDeleteWarehouseAppReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteWarehouseAppReq:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchDeleteWarehouseAppReq.
+        r"""Gets the ids of this BatchDeleteWarehouseAppReq.
 
         应用ID,最多同时操作10个。
 
@@ -53,7 +53,7 @@ class BatchDeleteWarehouseAppReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchDeleteWarehouseAppReq.
+        r"""Sets the ids of this BatchDeleteWarehouseAppReq.
 
         应用ID,最多同时操作10个。
 

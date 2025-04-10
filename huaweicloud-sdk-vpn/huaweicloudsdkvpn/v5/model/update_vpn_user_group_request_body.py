@@ -25,7 +25,7 @@ class UpdateVpnUserGroupRequestBody:
     }
 
     def __init__(self, user_group=None):
-        """UpdateVpnUserGroupRequestBody
+        r"""UpdateVpnUserGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpnUserGroupRequestBody:
 
     @property
     def user_group(self):
-        """Gets the user_group of this UpdateVpnUserGroupRequestBody.
+        r"""Gets the user_group of this UpdateVpnUserGroupRequestBody.
 
         :return: The user_group of this UpdateVpnUserGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserGroupRequestBodyContent`
@@ -51,7 +51,7 @@ class UpdateVpnUserGroupRequestBody:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this UpdateVpnUserGroupRequestBody.
+        r"""Sets the user_group of this UpdateVpnUserGroupRequestBody.
 
         :param user_group: The user_group of this UpdateVpnUserGroupRequestBody.
         :type user_group: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserGroupRequestBodyContent`

@@ -33,7 +33,7 @@ class DecryptDataRequestBody:
     }
 
     def __init__(self, cipher_text=None, encryption_algorithm=None, key_id=None, additional_authenticated_data=None, sequence=None):
-        """DecryptDataRequestBody
+        r"""DecryptDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class DecryptDataRequestBody:
 
     @property
     def cipher_text(self):
-        """Gets the cipher_text of this DecryptDataRequestBody.
+        r"""Gets the cipher_text of this DecryptDataRequestBody.
 
         被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{128,5648}$”。
 
@@ -81,7 +81,7 @@ class DecryptDataRequestBody:
 
     @cipher_text.setter
     def cipher_text(self, cipher_text):
-        """Sets the cipher_text of this DecryptDataRequestBody.
+        r"""Sets the cipher_text of this DecryptDataRequestBody.
 
         被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{128,5648}$”。
 
@@ -92,7 +92,7 @@ class DecryptDataRequestBody:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this DecryptDataRequestBody.
+        r"""Gets the encryption_algorithm of this DecryptDataRequestBody.
 
         数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - SM2_ENCRYPT
 
@@ -103,7 +103,7 @@ class DecryptDataRequestBody:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this DecryptDataRequestBody.
+        r"""Sets the encryption_algorithm of this DecryptDataRequestBody.
 
         数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - SM2_ENCRYPT
 
@@ -114,7 +114,7 @@ class DecryptDataRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this DecryptDataRequestBody.
+        r"""Gets the key_id of this DecryptDataRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -125,7 +125,7 @@ class DecryptDataRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this DecryptDataRequestBody.
+        r"""Sets the key_id of this DecryptDataRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -136,7 +136,7 @@ class DecryptDataRequestBody:
 
     @property
     def additional_authenticated_data(self):
-        """Gets the additional_authenticated_data of this DecryptDataRequestBody.
+        r"""Gets the additional_authenticated_data of this DecryptDataRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -147,7 +147,7 @@ class DecryptDataRequestBody:
 
     @additional_authenticated_data.setter
     def additional_authenticated_data(self, additional_authenticated_data):
-        """Sets the additional_authenticated_data of this DecryptDataRequestBody.
+        r"""Sets the additional_authenticated_data of this DecryptDataRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -158,7 +158,7 @@ class DecryptDataRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this DecryptDataRequestBody.
+        r"""Gets the sequence of this DecryptDataRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -169,7 +169,7 @@ class DecryptDataRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this DecryptDataRequestBody.
+        r"""Sets the sequence of this DecryptDataRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

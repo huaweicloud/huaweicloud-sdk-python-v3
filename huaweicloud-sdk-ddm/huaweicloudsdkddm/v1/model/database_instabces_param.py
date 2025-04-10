@@ -29,7 +29,7 @@ class DatabaseInstabcesParam:
     }
 
     def __init__(self, id=None, admin_user=None, admin_password=None):
-        """DatabaseInstabcesParam
+        r"""DatabaseInstabcesParam
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DatabaseInstabcesParam:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseInstabcesParam.
+        r"""Gets the id of this DatabaseInstabcesParam.
 
         逻辑库关联的RDS的id
 
@@ -65,7 +65,7 @@ class DatabaseInstabcesParam:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseInstabcesParam.
+        r"""Sets the id of this DatabaseInstabcesParam.
 
         逻辑库关联的RDS的id
 
@@ -76,7 +76,7 @@ class DatabaseInstabcesParam:
 
     @property
     def admin_user(self):
-        """Gets the admin_user of this DatabaseInstabcesParam.
+        r"""Gets the admin_user of this DatabaseInstabcesParam.
 
         关联RDS实例的用户。
 
@@ -87,7 +87,7 @@ class DatabaseInstabcesParam:
 
     @admin_user.setter
     def admin_user(self, admin_user):
-        """Sets the admin_user of this DatabaseInstabcesParam.
+        r"""Sets the admin_user of this DatabaseInstabcesParam.
 
         关联RDS实例的用户。
 
@@ -98,7 +98,7 @@ class DatabaseInstabcesParam:
 
     @property
     def admin_password(self):
-        """Gets the admin_password of this DatabaseInstabcesParam.
+        r"""Gets the admin_password of this DatabaseInstabcesParam.
 
         关联RDS实例的密码。
 
@@ -109,7 +109,7 @@ class DatabaseInstabcesParam:
 
     @admin_password.setter
     def admin_password(self, admin_password):
-        """Sets the admin_password of this DatabaseInstabcesParam.
+        r"""Sets the admin_password of this DatabaseInstabcesParam.
 
         关联RDS实例的密码。
 

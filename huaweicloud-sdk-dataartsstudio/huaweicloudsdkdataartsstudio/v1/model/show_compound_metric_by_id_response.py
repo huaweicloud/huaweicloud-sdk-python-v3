@@ -26,7 +26,7 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowCompoundMetricByIdResponse
+        r"""ShowCompoundMetricByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowCompoundMetricByIdResponse.
+        r"""Gets the data of this ShowCompoundMetricByIdResponse.
 
         :return: The data of this ShowCompoundMetricByIdResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVODetailData`
@@ -53,7 +53,7 @@ class ShowCompoundMetricByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowCompoundMetricByIdResponse.
+        r"""Sets the data of this ShowCompoundMetricByIdResponse.
 
         :param data: The data of this ShowCompoundMetricByIdResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVODetailData`

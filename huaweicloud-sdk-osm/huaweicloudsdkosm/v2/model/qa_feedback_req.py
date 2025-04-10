@@ -41,7 +41,7 @@ class QaFeedbackReq:
     }
 
     def __init__(self, question=None, feedback_id=None, qa_pair_source=None, feedback_option_id=None, feedback_description=None, qa_pair_id=None, request_id=None, feedback_source=None, flow_node_id=None):
-        """QaFeedbackReq
+        r"""QaFeedbackReq
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class QaFeedbackReq:
 
     @property
     def question(self):
-        """Gets the question of this QaFeedbackReq.
+        r"""Gets the question of this QaFeedbackReq.
 
         用户问题
 
@@ -108,7 +108,7 @@ class QaFeedbackReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this QaFeedbackReq.
+        r"""Sets the question of this QaFeedbackReq.
 
         用户问题
 
@@ -119,7 +119,7 @@ class QaFeedbackReq:
 
     @property
     def feedback_id(self):
-        """Gets the feedback_id of this QaFeedbackReq.
+        r"""Gets the feedback_id of this QaFeedbackReq.
 
         反馈记录Id
 
@@ -130,7 +130,7 @@ class QaFeedbackReq:
 
     @feedback_id.setter
     def feedback_id(self, feedback_id):
-        """Sets the feedback_id of this QaFeedbackReq.
+        r"""Sets the feedback_id of this QaFeedbackReq.
 
         反馈记录Id
 
@@ -141,7 +141,7 @@ class QaFeedbackReq:
 
     @property
     def qa_pair_source(self):
-        """Gets the qa_pair_source of this QaFeedbackReq.
+        r"""Gets the qa_pair_source of this QaFeedbackReq.
 
         - IROBOT_QA:  - RECOMMEND_WORD_QA:  
 
@@ -152,7 +152,7 @@ class QaFeedbackReq:
 
     @qa_pair_source.setter
     def qa_pair_source(self, qa_pair_source):
-        """Sets the qa_pair_source of this QaFeedbackReq.
+        r"""Sets the qa_pair_source of this QaFeedbackReq.
 
         - IROBOT_QA:  - RECOMMEND_WORD_QA:  
 
@@ -163,7 +163,7 @@ class QaFeedbackReq:
 
     @property
     def feedback_option_id(self):
-        """Gets the feedback_option_id of this QaFeedbackReq.
+        r"""Gets the feedback_option_id of this QaFeedbackReq.
 
         反馈选项id
 
@@ -174,7 +174,7 @@ class QaFeedbackReq:
 
     @feedback_option_id.setter
     def feedback_option_id(self, feedback_option_id):
-        """Sets the feedback_option_id of this QaFeedbackReq.
+        r"""Sets the feedback_option_id of this QaFeedbackReq.
 
         反馈选项id
 
@@ -185,7 +185,7 @@ class QaFeedbackReq:
 
     @property
     def feedback_description(self):
-        """Gets the feedback_description of this QaFeedbackReq.
+        r"""Gets the feedback_description of this QaFeedbackReq.
 
         反馈描述
 
@@ -196,7 +196,7 @@ class QaFeedbackReq:
 
     @feedback_description.setter
     def feedback_description(self, feedback_description):
-        """Sets the feedback_description of this QaFeedbackReq.
+        r"""Sets the feedback_description of this QaFeedbackReq.
 
         反馈描述
 
@@ -207,7 +207,7 @@ class QaFeedbackReq:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this QaFeedbackReq.
+        r"""Gets the qa_pair_id of this QaFeedbackReq.
 
         语料id
 
@@ -218,7 +218,7 @@ class QaFeedbackReq:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this QaFeedbackReq.
+        r"""Sets the qa_pair_id of this QaFeedbackReq.
 
         语料id
 
@@ -229,7 +229,7 @@ class QaFeedbackReq:
 
     @property
     def request_id(self):
-        """Gets the request_id of this QaFeedbackReq.
+        r"""Gets the request_id of this QaFeedbackReq.
 
         请求id
 
@@ -240,7 +240,7 @@ class QaFeedbackReq:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this QaFeedbackReq.
+        r"""Sets the request_id of this QaFeedbackReq.
 
         请求id
 
@@ -251,7 +251,7 @@ class QaFeedbackReq:
 
     @property
     def feedback_source(self):
-        """Gets the feedback_source of this QaFeedbackReq.
+        r"""Gets the feedback_source of this QaFeedbackReq.
 
         - FAQ:  - FLOW:  
 
@@ -262,7 +262,7 @@ class QaFeedbackReq:
 
     @feedback_source.setter
     def feedback_source(self, feedback_source):
-        """Sets the feedback_source of this QaFeedbackReq.
+        r"""Sets the feedback_source of this QaFeedbackReq.
 
         - FAQ:  - FLOW:  
 
@@ -273,7 +273,7 @@ class QaFeedbackReq:
 
     @property
     def flow_node_id(self):
-        """Gets the flow_node_id of this QaFeedbackReq.
+        r"""Gets the flow_node_id of this QaFeedbackReq.
 
         流程节点Id
 
@@ -284,7 +284,7 @@ class QaFeedbackReq:
 
     @flow_node_id.setter
     def flow_node_id(self, flow_node_id):
-        """Sets the flow_node_id of this QaFeedbackReq.
+        r"""Sets the flow_node_id of this QaFeedbackReq.
 
         流程节点Id
 

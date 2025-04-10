@@ -25,7 +25,7 @@ class ShowPublicZoneRequest:
     }
 
     def __init__(self, zone_id=None):
-        """ShowPublicZoneRequest
+        r"""ShowPublicZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPublicZoneRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ShowPublicZoneRequest.
+        r"""Gets the zone_id of this ShowPublicZoneRequest.
 
         待查询zone的ID。
 
@@ -53,7 +53,7 @@ class ShowPublicZoneRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ShowPublicZoneRequest.
+        r"""Sets the zone_id of this ShowPublicZoneRequest.
 
         待查询zone的ID。
 

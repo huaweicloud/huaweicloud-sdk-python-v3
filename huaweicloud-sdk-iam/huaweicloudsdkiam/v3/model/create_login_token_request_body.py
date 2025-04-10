@@ -25,7 +25,7 @@ class CreateLoginTokenRequestBody:
     }
 
     def __init__(self, auth=None):
-        """CreateLoginTokenRequestBody
+        r"""CreateLoginTokenRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateLoginTokenRequestBody:
 
     @property
     def auth(self):
-        """Gets the auth of this CreateLoginTokenRequestBody.
+        r"""Gets the auth of this CreateLoginTokenRequestBody.
 
         :return: The auth of this CreateLoginTokenRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenAuth`
@@ -51,7 +51,7 @@ class CreateLoginTokenRequestBody:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this CreateLoginTokenRequestBody.
+        r"""Sets the auth of this CreateLoginTokenRequestBody.
 
         :param auth: The auth of this CreateLoginTokenRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.LoginTokenAuth`

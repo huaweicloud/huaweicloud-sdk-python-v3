@@ -29,7 +29,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateStarRocksDatabaseUserPasswordRequest
+        r"""UpdateStarRocksDatabaseUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateStarRocksDatabaseUserPasswordRequest.
+        r"""Gets the instance_id of this UpdateStarRocksDatabaseUserPasswordRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateStarRocksDatabaseUserPasswordRequest.
+        r"""Sets the instance_id of this UpdateStarRocksDatabaseUserPasswordRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateStarRocksDatabaseUserPasswordRequest.
+        r"""Gets the x_language of this UpdateStarRocksDatabaseUserPasswordRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateStarRocksDatabaseUserPasswordRequest.
+        r"""Sets the x_language of this UpdateStarRocksDatabaseUserPasswordRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStarRocksDatabaseUserPasswordRequest.
+        r"""Gets the body of this UpdateStarRocksDatabaseUserPasswordRequest.
 
         :return: The body of this UpdateStarRocksDatabaseUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksDatabaseUserPWinfo`
@@ -109,7 +109,7 @@ class UpdateStarRocksDatabaseUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStarRocksDatabaseUserPasswordRequest.
+        r"""Sets the body of this UpdateStarRocksDatabaseUserPasswordRequest.
 
         :param body: The body of this UpdateStarRocksDatabaseUserPasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.StarRocksDatabaseUserPWinfo`

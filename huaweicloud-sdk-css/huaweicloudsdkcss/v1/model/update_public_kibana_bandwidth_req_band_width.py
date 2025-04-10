@@ -25,7 +25,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
     }
 
     def __init__(self, size=None):
-        """UpdatePublicKibanaBandwidthReqBandWidth
+        r"""UpdatePublicKibanaBandwidthReqBandWidth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
 
     @property
     def size(self):
-        """Gets the size of this UpdatePublicKibanaBandwidthReqBandWidth.
+        r"""Gets the size of this UpdatePublicKibanaBandwidthReqBandWidth.
 
         修改后的带宽大小。
 
@@ -53,7 +53,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdatePublicKibanaBandwidthReqBandWidth.
+        r"""Sets the size of this UpdatePublicKibanaBandwidthReqBandWidth.
 
         修改后的带宽大小。
 

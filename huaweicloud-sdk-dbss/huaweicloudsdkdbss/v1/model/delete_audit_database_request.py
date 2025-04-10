@@ -27,7 +27,7 @@ class DeleteAuditDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, db_id=None):
-        """DeleteAuditDatabaseRequest
+        r"""DeleteAuditDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAuditDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAuditDatabaseRequest.
+        r"""Gets the instance_id of this DeleteAuditDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -59,7 +59,7 @@ class DeleteAuditDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAuditDatabaseRequest.
+        r"""Sets the instance_id of this DeleteAuditDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -70,7 +70,7 @@ class DeleteAuditDatabaseRequest:
 
     @property
     def db_id(self):
-        """Gets the db_id of this DeleteAuditDatabaseRequest.
+        r"""Gets the db_id of this DeleteAuditDatabaseRequest.
 
         数据库ID，可在查询数据库列表接口ID字段获取。
 
@@ -81,7 +81,7 @@ class DeleteAuditDatabaseRequest:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this DeleteAuditDatabaseRequest.
+        r"""Sets the db_id of this DeleteAuditDatabaseRequest.
 
         数据库ID，可在查询数据库列表接口ID字段获取。
 

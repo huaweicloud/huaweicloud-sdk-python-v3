@@ -35,7 +35,7 @@ class CreateSqlLimitRuleReqV3:
     }
 
     def __init__(self, db_name=None, query_id=None, query_string=None, max_concurrency=None, max_waiting=None, search_path=None):
-        """CreateSqlLimitRuleReqV3
+        r"""CreateSqlLimitRuleReqV3
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateSqlLimitRuleReqV3:
 
     @property
     def db_name(self):
-        """Gets the db_name of this CreateSqlLimitRuleReqV3.
+        r"""Gets the db_name of this CreateSqlLimitRuleReqV3.
 
         数据库名称。
 
@@ -86,7 +86,7 @@ class CreateSqlLimitRuleReqV3:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this CreateSqlLimitRuleReqV3.
+        r"""Sets the db_name of this CreateSqlLimitRuleReqV3.
 
         数据库名称。
 
@@ -97,7 +97,7 @@ class CreateSqlLimitRuleReqV3:
 
     @property
     def query_id(self):
-        """Gets the query_id of this CreateSqlLimitRuleReqV3.
+        r"""Gets the query_id of this CreateSqlLimitRuleReqV3.
 
         由SQL的语法解析树计算出的内部哈希码，默认为0，取值范围（-9223372036854775808~ 9223372036854775807）。
 
@@ -108,7 +108,7 @@ class CreateSqlLimitRuleReqV3:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this CreateSqlLimitRuleReqV3.
+        r"""Sets the query_id of this CreateSqlLimitRuleReqV3.
 
         由SQL的语法解析树计算出的内部哈希码，默认为0，取值范围（-9223372036854775808~ 9223372036854775807）。
 
@@ -119,7 +119,7 @@ class CreateSqlLimitRuleReqV3:
 
     @property
     def query_string(self):
-        """Gets the query_string of this CreateSqlLimitRuleReqV3.
+        r"""Gets the query_string of this CreateSqlLimitRuleReqV3.
 
         SQL语句的文本形式。（注：query_id与query_string只可以存在一个）
 
@@ -130,7 +130,7 @@ class CreateSqlLimitRuleReqV3:
 
     @query_string.setter
     def query_string(self, query_string):
-        """Sets the query_string of this CreateSqlLimitRuleReqV3.
+        r"""Sets the query_string of this CreateSqlLimitRuleReqV3.
 
         SQL语句的文本形式。（注：query_id与query_string只可以存在一个）
 
@@ -141,7 +141,7 @@ class CreateSqlLimitRuleReqV3:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this CreateSqlLimitRuleReqV3.
+        r"""Gets the max_concurrency of this CreateSqlLimitRuleReqV3.
 
         同时执行的SQL数量，小于等于0表示不限制，默认为0，取值范围（-1~50000）。
 
@@ -152,7 +152,7 @@ class CreateSqlLimitRuleReqV3:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this CreateSqlLimitRuleReqV3.
+        r"""Sets the max_concurrency of this CreateSqlLimitRuleReqV3.
 
         同时执行的SQL数量，小于等于0表示不限制，默认为0，取值范围（-1~50000）。
 
@@ -163,7 +163,7 @@ class CreateSqlLimitRuleReqV3:
 
     @property
     def max_waiting(self):
-        """Gets the max_waiting of this CreateSqlLimitRuleReqV3.
+        r"""Gets the max_waiting of this CreateSqlLimitRuleReqV3.
 
         最大等待时间，单位为秒。
 
@@ -174,7 +174,7 @@ class CreateSqlLimitRuleReqV3:
 
     @max_waiting.setter
     def max_waiting(self, max_waiting):
-        """Sets the max_waiting of this CreateSqlLimitRuleReqV3.
+        r"""Sets the max_waiting of this CreateSqlLimitRuleReqV3.
 
         最大等待时间，单位为秒。
 
@@ -185,7 +185,7 @@ class CreateSqlLimitRuleReqV3:
 
     @property
     def search_path(self):
-        """Gets the search_path of this CreateSqlLimitRuleReqV3.
+        r"""Gets the search_path of this CreateSqlLimitRuleReqV3.
 
         为不是模式限定的名称设置模式搜索顺序，默认为public。
 
@@ -196,7 +196,7 @@ class CreateSqlLimitRuleReqV3:
 
     @search_path.setter
     def search_path(self, search_path):
-        """Sets the search_path of this CreateSqlLimitRuleReqV3.
+        r"""Sets the search_path of this CreateSqlLimitRuleReqV3.
 
         为不是模式限定的名称设置模式搜索顺序，默认为public。
 

@@ -23,7 +23,7 @@ class UserEnabled:
     }
 
     def __init__(self):
-        """UserEnabled
+        r"""UserEnabled
 
         The model defined in huaweicloud sdk
 

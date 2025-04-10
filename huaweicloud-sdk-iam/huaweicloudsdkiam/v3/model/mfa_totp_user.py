@@ -27,7 +27,7 @@ class MfaTotpUser:
     }
 
     def __init__(self, id=None, passcode=None):
-        """MfaTotpUser
+        r"""MfaTotpUser
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MfaTotpUser:
 
     @property
     def id(self):
-        """Gets the id of this MfaTotpUser.
+        r"""Gets the id of this MfaTotpUser.
 
         已开启虚拟MFA方式的登录保护的IAM用户ID。
 
@@ -59,7 +59,7 @@ class MfaTotpUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MfaTotpUser.
+        r"""Sets the id of this MfaTotpUser.
 
         已开启虚拟MFA方式的登录保护的IAM用户ID。
 
@@ -70,7 +70,7 @@ class MfaTotpUser:
 
     @property
     def passcode(self):
-        """Gets the passcode of this MfaTotpUser.
+        r"""Gets the passcode of this MfaTotpUser.
 
         虚拟MFA验证码，在MFA应用程序中获取动态验证码，获取方法请参见：[如何获取虚拟MFA验证码](https://support.huaweicloud.com/iam_faq/iam_01_0001.html)。
 
@@ -81,7 +81,7 @@ class MfaTotpUser:
 
     @passcode.setter
     def passcode(self, passcode):
-        """Sets the passcode of this MfaTotpUser.
+        r"""Sets the passcode of this MfaTotpUser.
 
         虚拟MFA验证码，在MFA应用程序中获取动态验证码，获取方法请参见：[如何获取虚拟MFA验证码](https://support.huaweicloud.com/iam_faq/iam_01_0001.html)。
 

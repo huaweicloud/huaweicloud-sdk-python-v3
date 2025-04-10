@@ -39,7 +39,7 @@ class CreateComponentSpec:
     }
 
     def __init__(self, runtime=None, env_id=None, replica=None, source=None, build=None, resource_limit=None, available_replica=None, status=None):
-        """CreateComponentSpec
+        r"""CreateComponentSpec
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CreateComponentSpec:
 
     @property
     def runtime(self):
-        """Gets the runtime of this CreateComponentSpec.
+        r"""Gets the runtime of this CreateComponentSpec.
 
         语言/运行时。
 
@@ -103,7 +103,7 @@ class CreateComponentSpec:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this CreateComponentSpec.
+        r"""Sets the runtime of this CreateComponentSpec.
 
         语言/运行时。
 
@@ -114,7 +114,7 @@ class CreateComponentSpec:
 
     @property
     def env_id(self):
-        """Gets the env_id of this CreateComponentSpec.
+        r"""Gets the env_id of this CreateComponentSpec.
 
         环境ID。
 
@@ -125,7 +125,7 @@ class CreateComponentSpec:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this CreateComponentSpec.
+        r"""Sets the env_id of this CreateComponentSpec.
 
         环境ID。
 
@@ -136,7 +136,7 @@ class CreateComponentSpec:
 
     @property
     def replica(self):
-        """Gets the replica of this CreateComponentSpec.
+        r"""Gets the replica of this CreateComponentSpec.
 
         实例个数。
 
@@ -147,7 +147,7 @@ class CreateComponentSpec:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this CreateComponentSpec.
+        r"""Sets the replica of this CreateComponentSpec.
 
         实例个数。
 
@@ -158,7 +158,7 @@ class CreateComponentSpec:
 
     @property
     def source(self):
-        """Gets the source of this CreateComponentSpec.
+        r"""Gets the source of this CreateComponentSpec.
 
         :return: The source of this CreateComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
@@ -167,7 +167,7 @@ class CreateComponentSpec:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateComponentSpec.
+        r"""Sets the source of this CreateComponentSpec.
 
         :param source: The source of this CreateComponentSpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -176,7 +176,7 @@ class CreateComponentSpec:
 
     @property
     def build(self):
-        """Gets the build of this CreateComponentSpec.
+        r"""Gets the build of this CreateComponentSpec.
 
         :return: The build of this CreateComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
@@ -185,7 +185,7 @@ class CreateComponentSpec:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this CreateComponentSpec.
+        r"""Sets the build of this CreateComponentSpec.
 
         :param build: The build of this CreateComponentSpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -194,7 +194,7 @@ class CreateComponentSpec:
 
     @property
     def resource_limit(self):
-        """Gets the resource_limit of this CreateComponentSpec.
+        r"""Gets the resource_limit of this CreateComponentSpec.
 
         :return: The resource_limit of this CreateComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -203,7 +203,7 @@ class CreateComponentSpec:
 
     @resource_limit.setter
     def resource_limit(self, resource_limit):
-        """Sets the resource_limit of this CreateComponentSpec.
+        r"""Sets the resource_limit of this CreateComponentSpec.
 
         :param resource_limit: The resource_limit of this CreateComponentSpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -212,7 +212,7 @@ class CreateComponentSpec:
 
     @property
     def available_replica(self):
-        """Gets the available_replica of this CreateComponentSpec.
+        r"""Gets the available_replica of this CreateComponentSpec.
 
         可用实例个数。
 
@@ -223,7 +223,7 @@ class CreateComponentSpec:
 
     @available_replica.setter
     def available_replica(self, available_replica):
-        """Sets the available_replica of this CreateComponentSpec.
+        r"""Sets the available_replica of this CreateComponentSpec.
 
         可用实例个数。
 
@@ -234,7 +234,7 @@ class CreateComponentSpec:
 
     @property
     def status(self):
-        """Gets the status of this CreateComponentSpec.
+        r"""Gets the status of this CreateComponentSpec.
 
         组件状态。
 
@@ -245,7 +245,7 @@ class CreateComponentSpec:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateComponentSpec.
+        r"""Sets the status of this CreateComponentSpec.
 
         组件状态。
 

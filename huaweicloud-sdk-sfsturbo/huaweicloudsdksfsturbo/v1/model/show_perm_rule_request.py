@@ -27,7 +27,7 @@ class ShowPermRuleRequest:
     }
 
     def __init__(self, share_id=None, rule_id=None):
-        """ShowPermRuleRequest
+        r"""ShowPermRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowPermRuleRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowPermRuleRequest.
+        r"""Gets the share_id of this ShowPermRuleRequest.
 
         文件系统id
 
@@ -59,7 +59,7 @@ class ShowPermRuleRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowPermRuleRequest.
+        r"""Sets the share_id of this ShowPermRuleRequest.
 
         文件系统id
 
@@ -70,7 +70,7 @@ class ShowPermRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowPermRuleRequest.
+        r"""Gets the rule_id of this ShowPermRuleRequest.
 
         权限规则id
 
@@ -81,7 +81,7 @@ class ShowPermRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowPermRuleRequest.
+        r"""Sets the rule_id of this ShowPermRuleRequest.
 
         权限规则id
 

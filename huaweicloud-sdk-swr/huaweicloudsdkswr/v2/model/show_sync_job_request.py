@@ -29,7 +29,7 @@ class ShowSyncJobRequest:
     }
 
     def __init__(self, namespace=None, repository=None, filter=None):
-        """ShowSyncJobRequest
+        r"""ShowSyncJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowSyncJobRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowSyncJobRequest.
+        r"""Gets the namespace of this ShowSyncJobRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -65,7 +65,7 @@ class ShowSyncJobRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowSyncJobRequest.
+        r"""Sets the namespace of this ShowSyncJobRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -76,7 +76,7 @@ class ShowSyncJobRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this ShowSyncJobRequest.
+        r"""Gets the repository of this ShowSyncJobRequest.
 
         镜像仓库名称
 
@@ -87,7 +87,7 @@ class ShowSyncJobRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this ShowSyncJobRequest.
+        r"""Sets the repository of this ShowSyncJobRequest.
 
         镜像仓库名称
 
@@ -98,7 +98,7 @@ class ShowSyncJobRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ShowSyncJobRequest.
+        r"""Gets the filter of this ShowSyncJobRequest.
 
         应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用，且必选。{order}为排序类型（可选），可设置为desc（降序）、asc（升序）
 
@@ -109,7 +109,7 @@ class ShowSyncJobRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ShowSyncJobRequest.
+        r"""Sets the filter of this ShowSyncJobRequest.
 
         应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用，且必选。{order}为排序类型（可选），可设置为desc（降序）、asc（升序）
 

@@ -27,7 +27,7 @@ class CreateMyActionTemplateRequest:
     }
 
     def __init__(self, template_name=None, body=None):
-        """CreateMyActionTemplateRequest
+        r"""CreateMyActionTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMyActionTemplateRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this CreateMyActionTemplateRequest.
+        r"""Gets the template_name of this CreateMyActionTemplateRequest.
 
         算子名称，名称必须以以third开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符，且不能重名。
 
@@ -60,7 +60,7 @@ class CreateMyActionTemplateRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this CreateMyActionTemplateRequest.
+        r"""Sets the template_name of this CreateMyActionTemplateRequest.
 
         算子名称，名称必须以以third开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符，且不能重名。
 
@@ -71,7 +71,7 @@ class CreateMyActionTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMyActionTemplateRequest.
+        r"""Gets the body of this CreateMyActionTemplateRequest.
 
         :return: The body of this CreateMyActionTemplateRequest.
         :rtype: :class:`huaweicloudsdkdwr.v3.ThirdTemplateRequestBody`
@@ -80,7 +80,7 @@ class CreateMyActionTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMyActionTemplateRequest.
+        r"""Sets the body of this CreateMyActionTemplateRequest.
 
         :param body: The body of this CreateMyActionTemplateRequest.
         :type body: :class:`huaweicloudsdkdwr.v3.ThirdTemplateRequestBody`

@@ -25,7 +25,7 @@ class HandleNotificationRequest:
     }
 
     def __init__(self, body=None):
-        """HandleNotificationRequest
+        r"""HandleNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HandleNotificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this HandleNotificationRequest.
+        r"""Gets the body of this HandleNotificationRequest.
 
         :return: The body of this HandleNotificationRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`
@@ -52,7 +52,7 @@ class HandleNotificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this HandleNotificationRequest.
+        r"""Sets the body of this HandleNotificationRequest.
 
         :param body: The body of this HandleNotificationRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`

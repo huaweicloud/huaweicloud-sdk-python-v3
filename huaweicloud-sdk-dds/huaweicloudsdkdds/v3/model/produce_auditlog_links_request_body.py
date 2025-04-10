@@ -25,7 +25,7 @@ class ProduceAuditlogLinksRequestBody:
     }
 
     def __init__(self, ids=None):
-        """ProduceAuditlogLinksRequestBody
+        r"""ProduceAuditlogLinksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProduceAuditlogLinksRequestBody:
 
     @property
     def ids(self):
-        """Gets the ids of this ProduceAuditlogLinksRequestBody.
+        r"""Gets the ids of this ProduceAuditlogLinksRequestBody.
 
         审计日志ID列表，限制50条以内。
 
@@ -53,7 +53,7 @@ class ProduceAuditlogLinksRequestBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ProduceAuditlogLinksRequestBody.
+        r"""Sets the ids of this ProduceAuditlogLinksRequestBody.
 
         审计日志ID列表，限制50条以内。
 

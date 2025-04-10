@@ -35,7 +35,7 @@ class CreateClusterInstanceBody:
     }
 
     def __init__(self, instance_type=None, instance_num=None, flavor=None, volume_type=None, volume_size=None, flavor_type=None):
-        """CreateClusterInstanceBody
+        r"""CreateClusterInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateClusterInstanceBody:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this CreateClusterInstanceBody.
+        r"""Gets the instance_type of this CreateClusterInstanceBody.
 
         集群节点类型，hbase有regionserver，hmaster，opentsdb等，doris有be，fe节点，clickhouse有server（计算节点），zookeeper
 
@@ -87,7 +87,7 @@ class CreateClusterInstanceBody:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this CreateClusterInstanceBody.
+        r"""Sets the instance_type of this CreateClusterInstanceBody.
 
         集群节点类型，hbase有regionserver，hmaster，opentsdb等，doris有be，fe节点，clickhouse有server（计算节点），zookeeper
 
@@ -98,7 +98,7 @@ class CreateClusterInstanceBody:
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this CreateClusterInstanceBody.
+        r"""Gets the instance_num of this CreateClusterInstanceBody.
 
         节点个数，hbase取值：2<=num<=10],偶数 doris取值：be[3,100] fe只能是3或5， clickhouse取值：计算节点[2,10000],取偶数，zookeeper节点固定为3
 
@@ -109,7 +109,7 @@ class CreateClusterInstanceBody:
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this CreateClusterInstanceBody.
+        r"""Sets the instance_num of this CreateClusterInstanceBody.
 
         节点个数，hbase取值：2<=num<=10],偶数 doris取值：be[3,100] fe只能是3或5， clickhouse取值：计算节点[2,10000],取偶数，zookeeper节点固定为3
 
@@ -120,7 +120,7 @@ class CreateClusterInstanceBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateClusterInstanceBody.
+        r"""Gets the flavor of this CreateClusterInstanceBody.
 
         节点规格，doris集群、clickhouse集群必选
 
@@ -131,7 +131,7 @@ class CreateClusterInstanceBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateClusterInstanceBody.
+        r"""Sets the flavor of this CreateClusterInstanceBody.
 
         节点规格，doris集群、clickhouse集群必选
 
@@ -142,7 +142,7 @@ class CreateClusterInstanceBody:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this CreateClusterInstanceBody.
+        r"""Gets the volume_type of this CreateClusterInstanceBody.
 
         数据盘规格：COMMON、HIGH、ULTRAHIGH，NORMALHIGH, EXTREMEHIGH. doris集群、clickhouse集群必选
 
@@ -153,7 +153,7 @@ class CreateClusterInstanceBody:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this CreateClusterInstanceBody.
+        r"""Sets the volume_type of this CreateClusterInstanceBody.
 
         数据盘规格：COMMON、HIGH、ULTRAHIGH，NORMALHIGH, EXTREMEHIGH. doris集群、clickhouse集群必选
 
@@ -164,7 +164,7 @@ class CreateClusterInstanceBody:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this CreateClusterInstanceBody.
+        r"""Gets the volume_size of this CreateClusterInstanceBody.
 
         数据盘大小，doris集群、clickhouse集群必选。 fe[200,2000] be[400,10000] server[500,10000] zookeeper[200,1000]
 
@@ -175,7 +175,7 @@ class CreateClusterInstanceBody:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this CreateClusterInstanceBody.
+        r"""Sets the volume_size of this CreateClusterInstanceBody.
 
         数据盘大小，doris集群、clickhouse集群必选。 fe[200,2000] be[400,10000] server[500,10000] zookeeper[200,1000]
 
@@ -186,7 +186,7 @@ class CreateClusterInstanceBody:
 
     @property
     def flavor_type(self):
-        """Gets the flavor_type of this CreateClusterInstanceBody.
+        r"""Gets the flavor_type of this CreateClusterInstanceBody.
 
         节点入参类型 0：flavor模式 ，1：cu模式，doris、hbase、clickhouse都是flavor模式
 
@@ -197,7 +197,7 @@ class CreateClusterInstanceBody:
 
     @flavor_type.setter
     def flavor_type(self, flavor_type):
-        """Sets the flavor_type of this CreateClusterInstanceBody.
+        r"""Sets the flavor_type of this CreateClusterInstanceBody.
 
         节点入参类型 0：flavor模式 ，1：cu模式，doris、hbase、clickhouse都是flavor模式
 

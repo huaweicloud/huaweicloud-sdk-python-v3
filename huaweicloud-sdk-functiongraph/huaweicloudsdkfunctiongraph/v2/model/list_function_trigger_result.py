@@ -35,7 +35,7 @@ class ListFunctionTriggerResult:
     }
 
     def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):
-        """ListFunctionTriggerResult
+        r"""ListFunctionTriggerResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListFunctionTriggerResult:
 
     @property
     def trigger_id(self):
-        """Gets the trigger_id of this ListFunctionTriggerResult.
+        r"""Gets the trigger_id of this ListFunctionTriggerResult.
 
         触发器ID。
 
@@ -83,7 +83,7 @@ class ListFunctionTriggerResult:
 
     @trigger_id.setter
     def trigger_id(self, trigger_id):
-        """Sets the trigger_id of this ListFunctionTriggerResult.
+        r"""Sets the trigger_id of this ListFunctionTriggerResult.
 
         触发器ID。
 
@@ -94,7 +94,7 @@ class ListFunctionTriggerResult:
 
     @property
     def trigger_type_code(self):
-        """Gets the trigger_type_code of this ListFunctionTriggerResult.
+        r"""Gets the trigger_type_code of this ListFunctionTriggerResult.
 
         触发器类型。  - TIMER: \"定时触发器。\" - APIG: \"APIG触发器。\" - CTS: \"云审计服务触发器。\" - DDS: \"文档数据库服务触发器。\" - DMS: \"分布式服务触发器。\" - DIS: \"数据接入服务触发器。\" - LTS: \"云日志服务触发器。\" - OBS: \"对象存储触发器。\" - SMN: \"消息通知服务触发器。\" - KAFKA: \"专享版消息通知服务触发器。\"
 
@@ -105,7 +105,7 @@ class ListFunctionTriggerResult:
 
     @trigger_type_code.setter
     def trigger_type_code(self, trigger_type_code):
-        """Sets the trigger_type_code of this ListFunctionTriggerResult.
+        r"""Sets the trigger_type_code of this ListFunctionTriggerResult.
 
         触发器类型。  - TIMER: \"定时触发器。\" - APIG: \"APIG触发器。\" - CTS: \"云审计服务触发器。\" - DDS: \"文档数据库服务触发器。\" - DMS: \"分布式服务触发器。\" - DIS: \"数据接入服务触发器。\" - LTS: \"云日志服务触发器。\" - OBS: \"对象存储触发器。\" - SMN: \"消息通知服务触发器。\" - KAFKA: \"专享版消息通知服务触发器。\"
 
@@ -116,7 +116,7 @@ class ListFunctionTriggerResult:
 
     @property
     def trigger_status(self):
-        """Gets the trigger_status of this ListFunctionTriggerResult.
+        r"""Gets the trigger_status of this ListFunctionTriggerResult.
 
         \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
 
@@ -127,7 +127,7 @@ class ListFunctionTriggerResult:
 
     @trigger_status.setter
     def trigger_status(self, trigger_status):
-        """Sets the trigger_status of this ListFunctionTriggerResult.
+        r"""Sets the trigger_status of this ListFunctionTriggerResult.
 
         \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
 
@@ -138,7 +138,7 @@ class ListFunctionTriggerResult:
 
     @property
     def event_data(self):
-        """Gets the event_data of this ListFunctionTriggerResult.
+        r"""Gets the event_data of this ListFunctionTriggerResult.
 
         :return: The event_data of this ListFunctionTriggerResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataResponseBody`
@@ -147,7 +147,7 @@ class ListFunctionTriggerResult:
 
     @event_data.setter
     def event_data(self, event_data):
-        """Sets the event_data of this ListFunctionTriggerResult.
+        r"""Sets the event_data of this ListFunctionTriggerResult.
 
         :param event_data: The event_data of this ListFunctionTriggerResult.
         :type event_data: :class:`huaweicloudsdkfunctiongraph.v2.TriggerEventDataResponseBody`
@@ -156,7 +156,7 @@ class ListFunctionTriggerResult:
 
     @property
     def last_updated_time(self):
-        """Gets the last_updated_time of this ListFunctionTriggerResult.
+        r"""Gets the last_updated_time of this ListFunctionTriggerResult.
 
         最后更新时间。
 
@@ -167,7 +167,7 @@ class ListFunctionTriggerResult:
 
     @last_updated_time.setter
     def last_updated_time(self, last_updated_time):
-        """Sets the last_updated_time of this ListFunctionTriggerResult.
+        r"""Sets the last_updated_time of this ListFunctionTriggerResult.
 
         最后更新时间。
 
@@ -178,7 +178,7 @@ class ListFunctionTriggerResult:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ListFunctionTriggerResult.
+        r"""Gets the created_time of this ListFunctionTriggerResult.
 
         触发器创建时间。
 
@@ -189,7 +189,7 @@ class ListFunctionTriggerResult:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ListFunctionTriggerResult.
+        r"""Sets the created_time of this ListFunctionTriggerResult.
 
         触发器创建时间。
 

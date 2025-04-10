@@ -27,7 +27,7 @@ class UpdateDomainLoginPolicyRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdateDomainLoginPolicyRequest
+        r"""UpdateDomainLoginPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDomainLoginPolicyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateDomainLoginPolicyRequest.
+        r"""Gets the domain_id of this UpdateDomainLoginPolicyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class UpdateDomainLoginPolicyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateDomainLoginPolicyRequest.
+        r"""Sets the domain_id of this UpdateDomainLoginPolicyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class UpdateDomainLoginPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainLoginPolicyRequest.
+        r"""Gets the body of this UpdateDomainLoginPolicyRequest.
 
         :return: The body of this UpdateDomainLoginPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateDomainLoginPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainLoginPolicyRequest.
+        r"""Sets the body of this UpdateDomainLoginPolicyRequest.
 
         :param body: The body of this UpdateDomainLoginPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`

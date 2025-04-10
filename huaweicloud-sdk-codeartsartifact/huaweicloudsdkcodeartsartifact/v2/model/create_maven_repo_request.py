@@ -25,7 +25,7 @@ class CreateMavenRepoRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMavenRepoRequest
+        r"""CreateMavenRepoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMavenRepoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMavenRepoRequest.
+        r"""Gets the body of this CreateMavenRepoRequest.
 
         :return: The body of this CreateMavenRepoRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepositoryDO`
@@ -52,7 +52,7 @@ class CreateMavenRepoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMavenRepoRequest.
+        r"""Sets the body of this CreateMavenRepoRequest.
 
         :param body: The body of this CreateMavenRepoRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepositoryDO`

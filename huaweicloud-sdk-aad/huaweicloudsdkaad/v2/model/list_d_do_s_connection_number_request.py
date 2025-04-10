@@ -31,7 +31,7 @@ class ListDDoSConnectionNumberRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, instance_id=None, ip=None):
-        """ListDDoSConnectionNumberRequest
+        r"""ListDDoSConnectionNumberRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListDDoSConnectionNumberRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDDoSConnectionNumberRequest.
+        r"""Gets the start_time of this ListDDoSConnectionNumberRequest.
 
         开始时间（毫秒时间戳）
 
@@ -71,7 +71,7 @@ class ListDDoSConnectionNumberRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDDoSConnectionNumberRequest.
+        r"""Sets the start_time of this ListDDoSConnectionNumberRequest.
 
         开始时间（毫秒时间戳）
 
@@ -82,7 +82,7 @@ class ListDDoSConnectionNumberRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDDoSConnectionNumberRequest.
+        r"""Gets the end_time of this ListDDoSConnectionNumberRequest.
 
         结束时间（毫秒时间戳）
 
@@ -93,7 +93,7 @@ class ListDDoSConnectionNumberRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDDoSConnectionNumberRequest.
+        r"""Sets the end_time of this ListDDoSConnectionNumberRequest.
 
         结束时间（毫秒时间戳）
 
@@ -104,7 +104,7 @@ class ListDDoSConnectionNumberRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDDoSConnectionNumberRequest.
+        r"""Gets the instance_id of this ListDDoSConnectionNumberRequest.
 
         实例id
 
@@ -115,7 +115,7 @@ class ListDDoSConnectionNumberRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDDoSConnectionNumberRequest.
+        r"""Sets the instance_id of this ListDDoSConnectionNumberRequest.
 
         实例id
 
@@ -126,7 +126,7 @@ class ListDDoSConnectionNumberRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListDDoSConnectionNumberRequest.
+        r"""Gets the ip of this ListDDoSConnectionNumberRequest.
 
         高防ip
 
@@ -137,7 +137,7 @@ class ListDDoSConnectionNumberRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListDDoSConnectionNumberRequest.
+        r"""Sets the ip of this ListDDoSConnectionNumberRequest.
 
         高防ip
 

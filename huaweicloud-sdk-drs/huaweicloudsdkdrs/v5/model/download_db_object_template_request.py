@@ -29,7 +29,7 @@ class DownloadDbObjectTemplateRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, file_import_db_level=None):
-        """DownloadDbObjectTemplateRequest
+        r"""DownloadDbObjectTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DownloadDbObjectTemplateRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DownloadDbObjectTemplateRequest.
+        r"""Gets the job_id of this DownloadDbObjectTemplateRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class DownloadDbObjectTemplateRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DownloadDbObjectTemplateRequest.
+        r"""Sets the job_id of this DownloadDbObjectTemplateRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class DownloadDbObjectTemplateRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadDbObjectTemplateRequest.
+        r"""Gets the x_language of this DownloadDbObjectTemplateRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class DownloadDbObjectTemplateRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadDbObjectTemplateRequest.
+        r"""Sets the x_language of this DownloadDbObjectTemplateRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class DownloadDbObjectTemplateRequest:
 
     @property
     def file_import_db_level(self):
-        """Gets the file_import_db_level of this DownloadDbObjectTemplateRequest.
+        r"""Gets the file_import_db_level of this DownloadDbObjectTemplateRequest.
 
         文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
 
@@ -111,7 +111,7 @@ class DownloadDbObjectTemplateRequest:
 
     @file_import_db_level.setter
     def file_import_db_level(self, file_import_db_level):
-        """Sets the file_import_db_level of this DownloadDbObjectTemplateRequest.
+        r"""Sets the file_import_db_level of this DownloadDbObjectTemplateRequest.
 
         文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
 

@@ -27,7 +27,7 @@ class Watermark:
     }
 
     def __init__(self, watermark_enable=None, options=None):
-        """Watermark
+        r"""Watermark
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Watermark:
 
     @property
     def watermark_enable(self):
-        """Gets the watermark_enable of this Watermark.
+        r"""Gets the watermark_enable of this Watermark.
 
         是否开启水印策略设置。取值为：false：表示关闭。true：表示开启。
 
@@ -61,7 +61,7 @@ class Watermark:
 
     @watermark_enable.setter
     def watermark_enable(self, watermark_enable):
-        """Sets the watermark_enable of this Watermark.
+        r"""Sets the watermark_enable of this Watermark.
 
         是否开启水印策略设置。取值为：false：表示关闭。true：表示开启。
 
@@ -72,7 +72,7 @@ class Watermark:
 
     @property
     def options(self):
-        """Gets the options of this Watermark.
+        r"""Gets the options of this Watermark.
 
         :return: The options of this Watermark.
         :rtype: :class:`huaweicloudsdkworkspace.v2.WatermarkOptions`
@@ -81,7 +81,7 @@ class Watermark:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this Watermark.
+        r"""Sets the options of this Watermark.
 
         :param options: The options of this Watermark.
         :type options: :class:`huaweicloudsdkworkspace.v2.WatermarkOptions`

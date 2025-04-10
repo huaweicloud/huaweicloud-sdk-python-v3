@@ -29,7 +29,7 @@ class CreateCpiJobReq:
     }
 
     def __init__(self, basic_info=None, receptors=None, ligands=None):
-        """CreateCpiJobReq
+        r"""CreateCpiJobReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateCpiJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateCpiJobReq.
+        r"""Gets the basic_info of this CreateCpiJobReq.
 
         :return: The basic_info of this CreateCpiJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -63,7 +63,7 @@ class CreateCpiJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateCpiJobReq.
+        r"""Sets the basic_info of this CreateCpiJobReq.
 
         :param basic_info: The basic_info of this CreateCpiJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -72,7 +72,7 @@ class CreateCpiJobReq:
 
     @property
     def receptors(self):
-        """Gets the receptors of this CreateCpiJobReq.
+        r"""Gets the receptors of this CreateCpiJobReq.
 
         受体文件列表
 
@@ -83,7 +83,7 @@ class CreateCpiJobReq:
 
     @receptors.setter
     def receptors(self, receptors):
-        """Sets the receptors of this CreateCpiJobReq.
+        r"""Sets the receptors of this CreateCpiJobReq.
 
         受体文件列表
 
@@ -94,7 +94,7 @@ class CreateCpiJobReq:
 
     @property
     def ligands(self):
-        """Gets the ligands of this CreateCpiJobReq.
+        r"""Gets the ligands of this CreateCpiJobReq.
 
         小分子
 
@@ -105,7 +105,7 @@ class CreateCpiJobReq:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this CreateCpiJobReq.
+        r"""Sets the ligands of this CreateCpiJobReq.
 
         小分子
 

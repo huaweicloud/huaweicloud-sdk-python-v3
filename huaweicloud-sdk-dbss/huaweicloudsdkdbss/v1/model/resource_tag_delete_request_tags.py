@@ -27,7 +27,7 @@ class ResourceTagDeleteRequestTags:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTagDeleteRequestTags
+        r"""ResourceTagDeleteRequestTags
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResourceTagDeleteRequestTags:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTagDeleteRequestTags.
+        r"""Gets the key of this ResourceTagDeleteRequestTags.
 
         键。最大长度128个字符。
 
@@ -60,7 +60,7 @@ class ResourceTagDeleteRequestTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTagDeleteRequestTags.
+        r"""Sets the key of this ResourceTagDeleteRequestTags.
 
         键。最大长度128个字符。
 
@@ -71,7 +71,7 @@ class ResourceTagDeleteRequestTags:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTagDeleteRequestTags.
+        r"""Gets the value of this ResourceTagDeleteRequestTags.
 
         值。每个值最大长度255个字符。
 
@@ -82,7 +82,7 @@ class ResourceTagDeleteRequestTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTagDeleteRequestTags.
+        r"""Sets the value of this ResourceTagDeleteRequestTags.
 
         值。每个值最大长度255个字符。
 

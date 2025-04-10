@@ -27,7 +27,7 @@ class ReinstallVolumeConfig:
     }
 
     def __init__(self, lvm_config=None, storage=None):
-        """ReinstallVolumeConfig
+        r"""ReinstallVolumeConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReinstallVolumeConfig:
 
     @property
     def lvm_config(self):
-        """Gets the lvm_config of this ReinstallVolumeConfig.
+        r"""Gets the lvm_config of this ReinstallVolumeConfig.
 
         Docker数据盘配置项。  默认配置示例如下： ``` \"lvmConfig\":\"dockerThinpool=vgpaas/90%VG;kubernetesLV=vgpaas/10%VG;diskType=evs;lvType=linear\" ```  包含如下字段：   - userLV：用户空间的大小，示例格式：vgpaas/20%VG   - userPath：用户空间挂载路径，示例格式：/home/wqt-test   - diskType：磁盘类型，目前只有evs、hdd和ssd三种格式   - lvType：逻辑卷的类型，目前支持linear和striped两种，示例格式：striped   - dockerThinpool：Docker盘的空间大小，示例格式：vgpaas/60%VG   - kubernetesLV：Kubelet空间大小，示例格式：vgpaas/20%VG 
 
@@ -61,7 +61,7 @@ class ReinstallVolumeConfig:
 
     @lvm_config.setter
     def lvm_config(self, lvm_config):
-        """Sets the lvm_config of this ReinstallVolumeConfig.
+        r"""Sets the lvm_config of this ReinstallVolumeConfig.
 
         Docker数据盘配置项。  默认配置示例如下： ``` \"lvmConfig\":\"dockerThinpool=vgpaas/90%VG;kubernetesLV=vgpaas/10%VG;diskType=evs;lvType=linear\" ```  包含如下字段：   - userLV：用户空间的大小，示例格式：vgpaas/20%VG   - userPath：用户空间挂载路径，示例格式：/home/wqt-test   - diskType：磁盘类型，目前只有evs、hdd和ssd三种格式   - lvType：逻辑卷的类型，目前支持linear和striped两种，示例格式：striped   - dockerThinpool：Docker盘的空间大小，示例格式：vgpaas/60%VG   - kubernetesLV：Kubelet空间大小，示例格式：vgpaas/20%VG 
 
@@ -72,7 +72,7 @@ class ReinstallVolumeConfig:
 
     @property
     def storage(self):
-        """Gets the storage of this ReinstallVolumeConfig.
+        r"""Gets the storage of this ReinstallVolumeConfig.
 
         :return: The storage of this ReinstallVolumeConfig.
         :rtype: :class:`huaweicloudsdkcce.v3.Storage`
@@ -81,7 +81,7 @@ class ReinstallVolumeConfig:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ReinstallVolumeConfig.
+        r"""Sets the storage of this ReinstallVolumeConfig.
 
         :param storage: The storage of this ReinstallVolumeConfig.
         :type storage: :class:`huaweicloudsdkcce.v3.Storage`

@@ -27,7 +27,7 @@ class DeleteMqsInstanceTopicRespTopics:
     }
 
     def __init__(self, id=None, success=None):
-        """DeleteMqsInstanceTopicRespTopics
+        r"""DeleteMqsInstanceTopicRespTopics
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteMqsInstanceTopicRespTopics:
 
     @property
     def id(self):
-        """Gets the id of this DeleteMqsInstanceTopicRespTopics.
+        r"""Gets the id of this DeleteMqsInstanceTopicRespTopics.
 
         Topic名称。
 
@@ -61,7 +61,7 @@ class DeleteMqsInstanceTopicRespTopics:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteMqsInstanceTopicRespTopics.
+        r"""Sets the id of this DeleteMqsInstanceTopicRespTopics.
 
         Topic名称。
 
@@ -72,7 +72,7 @@ class DeleteMqsInstanceTopicRespTopics:
 
     @property
     def success(self):
-        """Gets the success of this DeleteMqsInstanceTopicRespTopics.
+        r"""Gets the success of this DeleteMqsInstanceTopicRespTopics.
 
         是否删除成功。
 
@@ -83,7 +83,7 @@ class DeleteMqsInstanceTopicRespTopics:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this DeleteMqsInstanceTopicRespTopics.
+        r"""Sets the success of this DeleteMqsInstanceTopicRespTopics.
 
         是否删除成功。
 

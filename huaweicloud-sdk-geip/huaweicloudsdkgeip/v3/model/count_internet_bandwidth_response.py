@@ -30,7 +30,7 @@ class CountInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, internet_bandwidths=None, x_request_id=None):
-        """CountInternetBandwidthResponse
+        r"""CountInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CountInternetBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CountInternetBandwidthResponse.
+        r"""Gets the request_id of this CountInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class CountInternetBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CountInternetBandwidthResponse.
+        r"""Sets the request_id of this CountInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class CountInternetBandwidthResponse(SdkResponse):
 
     @property
     def internet_bandwidths(self):
-        """Gets the internet_bandwidths of this CountInternetBandwidthResponse.
+        r"""Gets the internet_bandwidths of this CountInternetBandwidthResponse.
 
         :return: The internet_bandwidths of this CountInternetBandwidthResponse.
         :rtype: CountInternetBandwidths
@@ -89,7 +89,7 @@ class CountInternetBandwidthResponse(SdkResponse):
 
     @internet_bandwidths.setter
     def internet_bandwidths(self, internet_bandwidths):
-        """Sets the internet_bandwidths of this CountInternetBandwidthResponse.
+        r"""Sets the internet_bandwidths of this CountInternetBandwidthResponse.
 
         :param internet_bandwidths: The internet_bandwidths of this CountInternetBandwidthResponse.
         :type internet_bandwidths: CountInternetBandwidths
@@ -98,7 +98,7 @@ class CountInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CountInternetBandwidthResponse.
+        r"""Gets the x_request_id of this CountInternetBandwidthResponse.
 
         :return: The x_request_id of this CountInternetBandwidthResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CountInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CountInternetBandwidthResponse.
+        r"""Sets the x_request_id of this CountInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this CountInternetBandwidthResponse.
         :type x_request_id: str

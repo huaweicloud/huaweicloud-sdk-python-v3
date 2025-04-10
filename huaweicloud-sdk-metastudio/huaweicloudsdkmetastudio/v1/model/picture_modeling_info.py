@@ -41,7 +41,7 @@ class PictureModelingInfo:
     }
 
     def __init__(self, job_id=None, state=None, start_time=None, end_time=None, error_info=None, model_asset_id=None, name=None, style_id=None, model_cover_url=None):
-        """PictureModelingInfo
+        r"""PictureModelingInfo
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class PictureModelingInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this PictureModelingInfo.
+        r"""Gets the job_id of this PictureModelingInfo.
 
         照片建模任务ID。
 
@@ -108,7 +108,7 @@ class PictureModelingInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PictureModelingInfo.
+        r"""Sets the job_id of this PictureModelingInfo.
 
         照片建模任务ID。
 
@@ -119,7 +119,7 @@ class PictureModelingInfo:
 
     @property
     def state(self):
-        """Gets the state of this PictureModelingInfo.
+        r"""Gets the state of this PictureModelingInfo.
 
         任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -130,7 +130,7 @@ class PictureModelingInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PictureModelingInfo.
+        r"""Sets the state of this PictureModelingInfo.
 
         任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -141,7 +141,7 @@ class PictureModelingInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PictureModelingInfo.
+        r"""Gets the start_time of this PictureModelingInfo.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -152,7 +152,7 @@ class PictureModelingInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PictureModelingInfo.
+        r"""Sets the start_time of this PictureModelingInfo.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -163,7 +163,7 @@ class PictureModelingInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PictureModelingInfo.
+        r"""Gets the end_time of this PictureModelingInfo.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -174,7 +174,7 @@ class PictureModelingInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PictureModelingInfo.
+        r"""Sets the end_time of this PictureModelingInfo.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -185,7 +185,7 @@ class PictureModelingInfo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this PictureModelingInfo.
+        r"""Gets the error_info of this PictureModelingInfo.
 
         :return: The error_info of this PictureModelingInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -194,7 +194,7 @@ class PictureModelingInfo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this PictureModelingInfo.
+        r"""Sets the error_info of this PictureModelingInfo.
 
         :param error_info: The error_info of this PictureModelingInfo.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -203,7 +203,7 @@ class PictureModelingInfo:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this PictureModelingInfo.
+        r"""Gets the model_asset_id of this PictureModelingInfo.
 
         模型资产ID。
 
@@ -214,7 +214,7 @@ class PictureModelingInfo:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this PictureModelingInfo.
+        r"""Sets the model_asset_id of this PictureModelingInfo.
 
         模型资产ID。
 
@@ -225,7 +225,7 @@ class PictureModelingInfo:
 
     @property
     def name(self):
-        """Gets the name of this PictureModelingInfo.
+        r"""Gets the name of this PictureModelingInfo.
 
         数字人模型名称。
 
@@ -236,7 +236,7 @@ class PictureModelingInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PictureModelingInfo.
+        r"""Sets the name of this PictureModelingInfo.
 
         数字人模型名称。
 
@@ -247,7 +247,7 @@ class PictureModelingInfo:
 
     @property
     def style_id(self):
-        """Gets the style_id of this PictureModelingInfo.
+        r"""Gets the style_id of this PictureModelingInfo.
 
         风格ID。
 
@@ -258,7 +258,7 @@ class PictureModelingInfo:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this PictureModelingInfo.
+        r"""Sets the style_id of this PictureModelingInfo.
 
         风格ID。
 
@@ -269,7 +269,7 @@ class PictureModelingInfo:
 
     @property
     def model_cover_url(self):
-        """Gets the model_cover_url of this PictureModelingInfo.
+        r"""Gets the model_cover_url of this PictureModelingInfo.
 
         模型封面URL。
 
@@ -280,7 +280,7 @@ class PictureModelingInfo:
 
     @model_cover_url.setter
     def model_cover_url(self, model_cover_url):
-        """Sets the model_cover_url of this PictureModelingInfo.
+        r"""Sets the model_cover_url of this PictureModelingInfo.
 
         模型封面URL。
 

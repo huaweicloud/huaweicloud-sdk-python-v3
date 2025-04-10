@@ -31,7 +31,7 @@ class TaskParam:
     }
 
     def __init__(self, param_name=None, param_type=None, param_group=None, default_value=None):
-        """TaskParam
+        r"""TaskParam
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class TaskParam:
 
     @property
     def param_name(self):
-        """Gets the param_name of this TaskParam.
+        r"""Gets the param_name of this TaskParam.
 
         参数名称。
 
@@ -74,7 +74,7 @@ class TaskParam:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this TaskParam.
+        r"""Sets the param_name of this TaskParam.
 
         参数名称。
 
@@ -85,7 +85,7 @@ class TaskParam:
 
     @property
     def param_type(self):
-        """Gets the param_type of this TaskParam.
+        r"""Gets the param_type of this TaskParam.
 
         参数类型。
 
@@ -96,7 +96,7 @@ class TaskParam:
 
     @param_type.setter
     def param_type(self, param_type):
-        """Sets the param_type of this TaskParam.
+        r"""Sets the param_type of this TaskParam.
 
         参数类型。
 
@@ -107,7 +107,7 @@ class TaskParam:
 
     @property
     def param_group(self):
-        """Gets the param_group of this TaskParam.
+        r"""Gets the param_group of this TaskParam.
 
         参数分组。
 
@@ -118,7 +118,7 @@ class TaskParam:
 
     @param_group.setter
     def param_group(self, param_group):
-        """Sets the param_group of this TaskParam.
+        r"""Sets the param_group of this TaskParam.
 
         参数分组。
 
@@ -129,7 +129,7 @@ class TaskParam:
 
     @property
     def default_value(self):
-        """Gets the default_value of this TaskParam.
+        r"""Gets the default_value of this TaskParam.
 
         参数初始值。
 
@@ -140,7 +140,7 @@ class TaskParam:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this TaskParam.
+        r"""Sets the default_value of this TaskParam.
 
         参数初始值。
 

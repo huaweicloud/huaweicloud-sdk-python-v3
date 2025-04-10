@@ -32,7 +32,7 @@ class ListStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, gbs=None, gpu_gbs=None, statistics=None):
-        """ListStatisticsResponse
+        r"""ListStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListStatisticsResponse.
+        r"""Gets the count of this ListStatisticsResponse.
 
         月度调用次数
 
@@ -76,7 +76,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListStatisticsResponse.
+        r"""Sets the count of this ListStatisticsResponse.
 
         月度调用次数
 
@@ -87,7 +87,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @property
     def gbs(self):
-        """Gets the gbs of this ListStatisticsResponse.
+        r"""Gets the gbs of this ListStatisticsResponse.
 
         月度资源用量
 
@@ -98,7 +98,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @gbs.setter
     def gbs(self, gbs):
-        """Sets the gbs of this ListStatisticsResponse.
+        r"""Sets the gbs of this ListStatisticsResponse.
 
         月度资源用量
 
@@ -109,7 +109,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @property
     def gpu_gbs(self):
-        """Gets the gpu_gbs of this ListStatisticsResponse.
+        r"""Gets the gpu_gbs of this ListStatisticsResponse.
 
         月度gpu资源用量
 
@@ -120,7 +120,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @gpu_gbs.setter
     def gpu_gbs(self, gpu_gbs):
-        """Sets the gpu_gbs of this ListStatisticsResponse.
+        r"""Sets the gpu_gbs of this ListStatisticsResponse.
 
         月度gpu资源用量
 
@@ -131,7 +131,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @property
     def statistics(self):
-        """Gets the statistics of this ListStatisticsResponse.
+        r"""Gets the statistics of this ListStatisticsResponse.
 
         :return: The statistics of this ListStatisticsResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponseBody`
@@ -140,7 +140,7 @@ class ListStatisticsResponse(SdkResponse):
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this ListStatisticsResponse.
+        r"""Sets the statistics of this ListStatisticsResponse.
 
         :param statistics: The statistics of this ListStatisticsResponse.
         :type statistics: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponseBody`

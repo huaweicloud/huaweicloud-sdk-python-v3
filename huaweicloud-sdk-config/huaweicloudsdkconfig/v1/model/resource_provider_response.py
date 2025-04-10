@@ -31,7 +31,7 @@ class ResourceProviderResponse:
     }
 
     def __init__(self, provider=None, display_name=None, category_display_name=None, resource_types=None):
-        """ResourceProviderResponse
+        r"""ResourceProviderResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceProviderResponse:
 
     @property
     def provider(self):
-        """Gets the provider of this ResourceProviderResponse.
+        r"""Gets the provider of this ResourceProviderResponse.
 
         云服务名称
 
@@ -75,7 +75,7 @@ class ResourceProviderResponse:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ResourceProviderResponse.
+        r"""Sets the provider of this ResourceProviderResponse.
 
         云服务名称
 
@@ -86,7 +86,7 @@ class ResourceProviderResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ResourceProviderResponse.
+        r"""Gets the display_name of this ResourceProviderResponse.
 
         云服务显示名称，可以通过请求Header中的'X-Language'设置语言
 
@@ -97,7 +97,7 @@ class ResourceProviderResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ResourceProviderResponse.
+        r"""Sets the display_name of this ResourceProviderResponse.
 
         云服务显示名称，可以通过请求Header中的'X-Language'设置语言
 
@@ -108,7 +108,7 @@ class ResourceProviderResponse:
 
     @property
     def category_display_name(self):
-        """Gets the category_display_name of this ResourceProviderResponse.
+        r"""Gets the category_display_name of this ResourceProviderResponse.
 
         云服务类别显示名称，可以通过请求Header中的'X-Language'设置语言
 
@@ -119,7 +119,7 @@ class ResourceProviderResponse:
 
     @category_display_name.setter
     def category_display_name(self, category_display_name):
-        """Sets the category_display_name of this ResourceProviderResponse.
+        r"""Sets the category_display_name of this ResourceProviderResponse.
 
         云服务类别显示名称，可以通过请求Header中的'X-Language'设置语言
 
@@ -130,7 +130,7 @@ class ResourceProviderResponse:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ResourceProviderResponse.
+        r"""Gets the resource_types of this ResourceProviderResponse.
 
         资源类型列表
 
@@ -141,7 +141,7 @@ class ResourceProviderResponse:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ResourceProviderResponse.
+        r"""Sets the resource_types of this ResourceProviderResponse.
 
         资源类型列表
 

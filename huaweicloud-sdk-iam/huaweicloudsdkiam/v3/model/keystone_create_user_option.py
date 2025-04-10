@@ -33,7 +33,7 @@ class KeystoneCreateUserOption:
     }
 
     def __init__(self, name=None, domain_id=None, password=None, enabled=None, description=None):
-        """KeystoneCreateUserOption
+        r"""KeystoneCreateUserOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class KeystoneCreateUserOption:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneCreateUserOption.
+        r"""Gets the name of this KeystoneCreateUserOption.
 
         IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -81,7 +81,7 @@ class KeystoneCreateUserOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneCreateUserOption.
+        r"""Sets the name of this KeystoneCreateUserOption.
 
         IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -92,7 +92,7 @@ class KeystoneCreateUserOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneCreateUserOption.
+        r"""Gets the domain_id of this KeystoneCreateUserOption.
 
         IAM用户所属账号ID。
 
@@ -103,7 +103,7 @@ class KeystoneCreateUserOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneCreateUserOption.
+        r"""Sets the domain_id of this KeystoneCreateUserOption.
 
         IAM用户所属账号ID。
 
@@ -114,7 +114,7 @@ class KeystoneCreateUserOption:
 
     @property
     def password(self):
-        """Gets the password of this KeystoneCreateUserOption.
+        r"""Gets the password of this KeystoneCreateUserOption.
 
         IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
 
@@ -125,7 +125,7 @@ class KeystoneCreateUserOption:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this KeystoneCreateUserOption.
+        r"""Sets the password of this KeystoneCreateUserOption.
 
         IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
 
@@ -136,7 +136,7 @@ class KeystoneCreateUserOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneCreateUserOption.
+        r"""Gets the enabled of this KeystoneCreateUserOption.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -147,7 +147,7 @@ class KeystoneCreateUserOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneCreateUserOption.
+        r"""Sets the enabled of this KeystoneCreateUserOption.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -158,7 +158,7 @@ class KeystoneCreateUserOption:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneCreateUserOption.
+        r"""Gets the description of this KeystoneCreateUserOption.
 
         IAM用户描述信息。
 
@@ -169,7 +169,7 @@ class KeystoneCreateUserOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneCreateUserOption.
+        r"""Sets the description of this KeystoneCreateUserOption.
 
         IAM用户描述信息。
 

@@ -25,7 +25,7 @@ class LigandSimilarityGraphTaskResultDto:
     }
 
     def __init__(self, pairs=None):
-        """LigandSimilarityGraphTaskResultDto
+        r"""LigandSimilarityGraphTaskResultDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LigandSimilarityGraphTaskResultDto:
 
     @property
     def pairs(self):
-        """Gets the pairs of this LigandSimilarityGraphTaskResultDto.
+        r"""Gets the pairs of this LigandSimilarityGraphTaskResultDto.
 
         配体相似度图任务结果对列表
 
@@ -53,7 +53,7 @@ class LigandSimilarityGraphTaskResultDto:
 
     @pairs.setter
     def pairs(self, pairs):
-        """Sets the pairs of this LigandSimilarityGraphTaskResultDto.
+        r"""Sets the pairs of this LigandSimilarityGraphTaskResultDto.
 
         配体相似度图任务结果对列表
 

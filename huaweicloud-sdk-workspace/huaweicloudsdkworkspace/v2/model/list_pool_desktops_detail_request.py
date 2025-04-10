@@ -31,7 +31,7 @@ class ListPoolDesktopsDetailRequest:
     }
 
     def __init__(self, pool_id=None, inconsistent_type=None, offset=None, limit=None):
-        """ListPoolDesktopsDetailRequest
+        r"""ListPoolDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListPoolDesktopsDetailRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ListPoolDesktopsDetailRequest.
+        r"""Gets the pool_id of this ListPoolDesktopsDetailRequest.
 
         桌面池ID。
 
@@ -74,7 +74,7 @@ class ListPoolDesktopsDetailRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ListPoolDesktopsDetailRequest.
+        r"""Sets the pool_id of this ListPoolDesktopsDetailRequest.
 
         桌面池ID。
 
@@ -85,7 +85,7 @@ class ListPoolDesktopsDetailRequest:
 
     @property
     def inconsistent_type(self):
-        """Gets the inconsistent_type of this ListPoolDesktopsDetailRequest.
+        r"""Gets the inconsistent_type of this ListPoolDesktopsDetailRequest.
 
         通过该类型过滤出与桌面池规格类型不一致的桌面 - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
 
@@ -96,7 +96,7 @@ class ListPoolDesktopsDetailRequest:
 
     @inconsistent_type.setter
     def inconsistent_type(self, inconsistent_type):
-        """Sets the inconsistent_type of this ListPoolDesktopsDetailRequest.
+        r"""Sets the inconsistent_type of this ListPoolDesktopsDetailRequest.
 
         通过该类型过滤出与桌面池规格类型不一致的桌面 - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
 
@@ -107,7 +107,7 @@ class ListPoolDesktopsDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPoolDesktopsDetailRequest.
+        r"""Gets the offset of this ListPoolDesktopsDetailRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -118,7 +118,7 @@ class ListPoolDesktopsDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPoolDesktopsDetailRequest.
+        r"""Sets the offset of this ListPoolDesktopsDetailRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -129,7 +129,7 @@ class ListPoolDesktopsDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPoolDesktopsDetailRequest.
+        r"""Gets the limit of this ListPoolDesktopsDetailRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
 
@@ -140,7 +140,7 @@ class ListPoolDesktopsDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPoolDesktopsDetailRequest.
+        r"""Sets the limit of this ListPoolDesktopsDetailRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
 

@@ -29,7 +29,7 @@ class TaskGroupDstNodeResp:
     }
 
     def __init__(self, bucket=None, region=None, save_prefix=None):
-        """TaskGroupDstNodeResp
+        r"""TaskGroupDstNodeResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskGroupDstNodeResp:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskGroupDstNodeResp.
+        r"""Gets the bucket of this TaskGroupDstNodeResp.
 
         目的端桶的名称。
 
@@ -68,7 +68,7 @@ class TaskGroupDstNodeResp:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskGroupDstNodeResp.
+        r"""Sets the bucket of this TaskGroupDstNodeResp.
 
         目的端桶的名称。
 
@@ -79,7 +79,7 @@ class TaskGroupDstNodeResp:
 
     @property
     def region(self):
-        """Gets the region of this TaskGroupDstNodeResp.
+        r"""Gets the region of this TaskGroupDstNodeResp.
 
         目的端桶所处的区域。
 
@@ -90,7 +90,7 @@ class TaskGroupDstNodeResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TaskGroupDstNodeResp.
+        r"""Sets the region of this TaskGroupDstNodeResp.
 
         目的端桶所处的区域。
 
@@ -101,7 +101,7 @@ class TaskGroupDstNodeResp:
 
     @property
     def save_prefix(self):
-        """Gets the save_prefix of this TaskGroupDstNodeResp.
+        r"""Gets the save_prefix of this TaskGroupDstNodeResp.
 
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 
@@ -112,7 +112,7 @@ class TaskGroupDstNodeResp:
 
     @save_prefix.setter
     def save_prefix(self, save_prefix):
-        """Sets the save_prefix of this TaskGroupDstNodeResp.
+        r"""Sets the save_prefix of this TaskGroupDstNodeResp.
 
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 

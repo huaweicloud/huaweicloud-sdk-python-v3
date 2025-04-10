@@ -37,7 +37,7 @@ class DailyData:
     }
 
     def __init__(self, period_start=None, bps_in=None, bps_attack=None, total_bps=None, pps_in=None, pps_attack=None, total_pps=None):
-        """DailyData
+        r"""DailyData
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DailyData:
 
     @property
     def period_start(self):
-        """Gets the period_start of this DailyData.
+        r"""Gets the period_start of this DailyData.
 
         开始时间
 
@@ -89,7 +89,7 @@ class DailyData:
 
     @period_start.setter
     def period_start(self, period_start):
-        """Sets the period_start of this DailyData.
+        r"""Sets the period_start of this DailyData.
 
         开始时间
 
@@ -100,7 +100,7 @@ class DailyData:
 
     @property
     def bps_in(self):
-        """Gets the bps_in of this DailyData.
+        r"""Gets the bps_in of this DailyData.
 
         入流量（bit/s）
 
@@ -111,7 +111,7 @@ class DailyData:
 
     @bps_in.setter
     def bps_in(self, bps_in):
-        """Sets the bps_in of this DailyData.
+        r"""Sets the bps_in of this DailyData.
 
         入流量（bit/s）
 
@@ -122,7 +122,7 @@ class DailyData:
 
     @property
     def bps_attack(self):
-        """Gets the bps_attack of this DailyData.
+        r"""Gets the bps_attack of this DailyData.
 
         攻击流量（bit/s）
 
@@ -133,7 +133,7 @@ class DailyData:
 
     @bps_attack.setter
     def bps_attack(self, bps_attack):
-        """Sets the bps_attack of this DailyData.
+        r"""Sets the bps_attack of this DailyData.
 
         攻击流量（bit/s）
 
@@ -144,7 +144,7 @@ class DailyData:
 
     @property
     def total_bps(self):
-        """Gets the total_bps of this DailyData.
+        r"""Gets the total_bps of this DailyData.
 
         总流量
 
@@ -155,7 +155,7 @@ class DailyData:
 
     @total_bps.setter
     def total_bps(self, total_bps):
-        """Sets the total_bps of this DailyData.
+        r"""Sets the total_bps of this DailyData.
 
         总流量
 
@@ -166,7 +166,7 @@ class DailyData:
 
     @property
     def pps_in(self):
-        """Gets the pps_in of this DailyData.
+        r"""Gets the pps_in of this DailyData.
 
         入报文速率（个/s）
 
@@ -177,7 +177,7 @@ class DailyData:
 
     @pps_in.setter
     def pps_in(self, pps_in):
-        """Sets the pps_in of this DailyData.
+        r"""Sets the pps_in of this DailyData.
 
         入报文速率（个/s）
 
@@ -188,7 +188,7 @@ class DailyData:
 
     @property
     def pps_attack(self):
-        """Gets the pps_attack of this DailyData.
+        r"""Gets the pps_attack of this DailyData.
 
         攻击文速率（个/s）
 
@@ -199,7 +199,7 @@ class DailyData:
 
     @pps_attack.setter
     def pps_attack(self, pps_attack):
-        """Sets the pps_attack of this DailyData.
+        r"""Sets the pps_attack of this DailyData.
 
         攻击文速率（个/s）
 
@@ -210,7 +210,7 @@ class DailyData:
 
     @property
     def total_pps(self):
-        """Gets the total_pps of this DailyData.
+        r"""Gets the total_pps of this DailyData.
 
         总报文速率
 
@@ -221,7 +221,7 @@ class DailyData:
 
     @total_pps.setter
     def total_pps(self, total_pps):
-        """Sets the total_pps of this DailyData.
+        r"""Sets the total_pps of this DailyData.
 
         总报文速率
 

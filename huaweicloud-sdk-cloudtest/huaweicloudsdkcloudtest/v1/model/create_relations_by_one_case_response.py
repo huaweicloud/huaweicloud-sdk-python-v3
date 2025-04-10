@@ -28,7 +28,7 @@ class CreateRelationsByOneCaseResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """CreateRelationsByOneCaseResponse
+        r"""CreateRelationsByOneCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRelationsByOneCaseResponse.
+        r"""Gets the status of this CreateRelationsByOneCaseResponse.
 
         对外时：success|error;
 
@@ -62,7 +62,7 @@ class CreateRelationsByOneCaseResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRelationsByOneCaseResponse.
+        r"""Sets the status of this CreateRelationsByOneCaseResponse.
 
         对外时：success|error;
 
@@ -73,7 +73,7 @@ class CreateRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateRelationsByOneCaseResponse.
+        r"""Gets the result of this CreateRelationsByOneCaseResponse.
 
         :return: The result of this CreateRelationsByOneCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`
@@ -82,7 +82,7 @@ class CreateRelationsByOneCaseResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateRelationsByOneCaseResponse.
+        r"""Sets the result of this CreateRelationsByOneCaseResponse.
 
         :param result: The result of this CreateRelationsByOneCaseResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`

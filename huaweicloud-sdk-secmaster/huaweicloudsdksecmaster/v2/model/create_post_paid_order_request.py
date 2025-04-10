@@ -29,7 +29,7 @@ class CreatePostPaidOrderRequest:
     }
 
     def __init__(self, x_language=None, project_id=None, body=None):
-        """CreatePostPaidOrderRequest
+        r"""CreatePostPaidOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePostPaidOrderRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreatePostPaidOrderRequest.
+        r"""Gets the x_language of this CreatePostPaidOrderRequest.
 
         用户当前语言环境
 
@@ -66,7 +66,7 @@ class CreatePostPaidOrderRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreatePostPaidOrderRequest.
+        r"""Sets the x_language of this CreatePostPaidOrderRequest.
 
         用户当前语言环境
 
@@ -77,7 +77,7 @@ class CreatePostPaidOrderRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePostPaidOrderRequest.
+        r"""Gets the project_id of this CreatePostPaidOrderRequest.
 
         租户项目ID
 
@@ -88,7 +88,7 @@ class CreatePostPaidOrderRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePostPaidOrderRequest.
+        r"""Sets the project_id of this CreatePostPaidOrderRequest.
 
         租户项目ID
 
@@ -99,7 +99,7 @@ class CreatePostPaidOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostPaidOrderRequest.
+        r"""Gets the body of this CreatePostPaidOrderRequest.
 
         :return: The body of this CreatePostPaidOrderRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.PostPaidParam`
@@ -108,7 +108,7 @@ class CreatePostPaidOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostPaidOrderRequest.
+        r"""Sets the body of this CreatePostPaidOrderRequest.
 
         :param body: The body of this CreatePostPaidOrderRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.PostPaidParam`

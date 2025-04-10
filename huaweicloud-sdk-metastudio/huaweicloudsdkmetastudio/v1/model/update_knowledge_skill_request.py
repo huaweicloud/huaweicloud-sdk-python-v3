@@ -29,7 +29,7 @@ class UpdateKnowledgeSkillRequest:
     }
 
     def __init__(self, x_app_user_id=None, skill_id=None, body=None):
-        """UpdateKnowledgeSkillRequest
+        r"""UpdateKnowledgeSkillRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateKnowledgeSkillRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateKnowledgeSkillRequest.
+        r"""Gets the x_app_user_id of this UpdateKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateKnowledgeSkillRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateKnowledgeSkillRequest.
+        r"""Sets the x_app_user_id of this UpdateKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateKnowledgeSkillRequest:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this UpdateKnowledgeSkillRequest.
+        r"""Gets the skill_id of this UpdateKnowledgeSkillRequest.
 
         技能ID。
 
@@ -89,7 +89,7 @@ class UpdateKnowledgeSkillRequest:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this UpdateKnowledgeSkillRequest.
+        r"""Sets the skill_id of this UpdateKnowledgeSkillRequest.
 
         技能ID。
 
@@ -100,7 +100,7 @@ class UpdateKnowledgeSkillRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateKnowledgeSkillRequest.
+        r"""Gets the body of this UpdateKnowledgeSkillRequest.
 
         :return: The body of this UpdateKnowledgeSkillRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeSkillReq`
@@ -109,7 +109,7 @@ class UpdateKnowledgeSkillRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateKnowledgeSkillRequest.
+        r"""Sets the body of this UpdateKnowledgeSkillRequest.
 
         :param body: The body of this UpdateKnowledgeSkillRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeSkillReq`

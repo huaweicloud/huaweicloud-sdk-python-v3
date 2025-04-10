@@ -25,7 +25,7 @@ class CreateWhitelistRequestBody:
     }
 
     def __init__(self, whitelist=None):
-        """CreateWhitelistRequestBody
+        r"""CreateWhitelistRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateWhitelistRequestBody:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this CreateWhitelistRequestBody.
+        r"""Gets the whitelist of this CreateWhitelistRequestBody.
 
         :return: The whitelist of this CreateWhitelistRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateWhitelistReq`
@@ -51,7 +51,7 @@ class CreateWhitelistRequestBody:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this CreateWhitelistRequestBody.
+        r"""Sets the whitelist of this CreateWhitelistRequestBody.
 
         :param whitelist: The whitelist of this CreateWhitelistRequestBody.
         :type whitelist: :class:`huaweicloudsdkelb.v2.CreateWhitelistReq`

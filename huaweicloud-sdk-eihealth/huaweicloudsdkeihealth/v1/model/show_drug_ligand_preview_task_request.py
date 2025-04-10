@@ -27,7 +27,7 @@ class ShowDrugLigandPreviewTaskRequest:
     }
 
     def __init__(self, eihealth_project_id=None, task_id=None):
-        """ShowDrugLigandPreviewTaskRequest
+        r"""ShowDrugLigandPreviewTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDrugLigandPreviewTaskRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
+        r"""Gets the eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowDrugLigandPreviewTaskRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
+        r"""Sets the eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowDrugLigandPreviewTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowDrugLigandPreviewTaskRequest.
+        r"""Gets the task_id of this ShowDrugLigandPreviewTaskRequest.
 
         任务ID，通过创建任务接口取得。
 
@@ -81,7 +81,7 @@ class ShowDrugLigandPreviewTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowDrugLigandPreviewTaskRequest.
+        r"""Sets the task_id of this ShowDrugLigandPreviewTaskRequest.
 
         任务ID，通过创建任务接口取得。
 

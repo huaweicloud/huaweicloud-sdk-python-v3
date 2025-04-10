@@ -27,7 +27,7 @@ class ServerHaltType:
     }
 
     def __init__(self):
-        """ServerHaltType
+        r"""ServerHaltType
 
         The model defined in huaweicloud sdk
 

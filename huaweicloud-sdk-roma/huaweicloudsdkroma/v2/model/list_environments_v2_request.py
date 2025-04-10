@@ -31,7 +31,7 @@ class ListEnvironmentsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, name=None):
-        """ListEnvironmentsV2Request
+        r"""ListEnvironmentsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListEnvironmentsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListEnvironmentsV2Request.
+        r"""Gets the instance_id of this ListEnvironmentsV2Request.
 
         实例ID
 
@@ -74,7 +74,7 @@ class ListEnvironmentsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListEnvironmentsV2Request.
+        r"""Sets the instance_id of this ListEnvironmentsV2Request.
 
         实例ID
 
@@ -85,7 +85,7 @@ class ListEnvironmentsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnvironmentsV2Request.
+        r"""Gets the offset of this ListEnvironmentsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -96,7 +96,7 @@ class ListEnvironmentsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnvironmentsV2Request.
+        r"""Sets the offset of this ListEnvironmentsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -107,7 +107,7 @@ class ListEnvironmentsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnvironmentsV2Request.
+        r"""Gets the limit of this ListEnvironmentsV2Request.
 
         每页显示的条目数量
 
@@ -118,7 +118,7 @@ class ListEnvironmentsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnvironmentsV2Request.
+        r"""Sets the limit of this ListEnvironmentsV2Request.
 
         每页显示的条目数量
 
@@ -129,7 +129,7 @@ class ListEnvironmentsV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListEnvironmentsV2Request.
+        r"""Gets the name of this ListEnvironmentsV2Request.
 
         环境名称
 
@@ -140,7 +140,7 @@ class ListEnvironmentsV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEnvironmentsV2Request.
+        r"""Sets the name of this ListEnvironmentsV2Request.
 
         环境名称
 

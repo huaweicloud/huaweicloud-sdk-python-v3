@@ -29,7 +29,7 @@ class CommonQueueProperty:
     }
 
     def __init__(self, compute_engine_max_instance=None, job_max_concurrent=None, compute_engine_max_prefetch_instance=None):
-        """CommonQueueProperty
+        r"""CommonQueueProperty
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CommonQueueProperty:
 
     @property
     def compute_engine_max_instance(self):
-        """Gets the compute_engine_max_instance of this CommonQueueProperty.
+        r"""Gets the compute_engine_max_instance of this CommonQueueProperty.
 
         队列能启动的最大spark driver数量
 
@@ -68,7 +68,7 @@ class CommonQueueProperty:
 
     @compute_engine_max_instance.setter
     def compute_engine_max_instance(self, compute_engine_max_instance):
-        """Sets the compute_engine_max_instance of this CommonQueueProperty.
+        r"""Sets the compute_engine_max_instance of this CommonQueueProperty.
 
         队列能启动的最大spark driver数量
 
@@ -79,7 +79,7 @@ class CommonQueueProperty:
 
     @property
     def job_max_concurrent(self):
-        """Gets the job_max_concurrent of this CommonQueueProperty.
+        r"""Gets the job_max_concurrent of this CommonQueueProperty.
 
         单个spark driver能同时运行的最大任务数量
 
@@ -90,7 +90,7 @@ class CommonQueueProperty:
 
     @job_max_concurrent.setter
     def job_max_concurrent(self, job_max_concurrent):
-        """Sets the job_max_concurrent of this CommonQueueProperty.
+        r"""Sets the job_max_concurrent of this CommonQueueProperty.
 
         单个spark driver能同时运行的最大任务数量
 
@@ -101,7 +101,7 @@ class CommonQueueProperty:
 
     @property
     def compute_engine_max_prefetch_instance(self):
-        """Gets the compute_engine_max_prefetch_instance of this CommonQueueProperty.
+        r"""Gets the compute_engine_max_prefetch_instance of this CommonQueueProperty.
 
         队列预先启动的最大spark driver数量
 
@@ -112,7 +112,7 @@ class CommonQueueProperty:
 
     @compute_engine_max_prefetch_instance.setter
     def compute_engine_max_prefetch_instance(self, compute_engine_max_prefetch_instance):
-        """Sets the compute_engine_max_prefetch_instance of this CommonQueueProperty.
+        r"""Sets the compute_engine_max_prefetch_instance of this CommonQueueProperty.
 
         队列预先启动的最大spark driver数量
 

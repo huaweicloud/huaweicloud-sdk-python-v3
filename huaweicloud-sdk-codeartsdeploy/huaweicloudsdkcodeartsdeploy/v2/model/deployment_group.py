@@ -37,7 +37,7 @@ class DeploymentGroup:
     }
 
     def __init__(self, name=None, region_name=None, project_id=None, os=None, slave_cluster_id=None, description=None, is_proxy_mode=None):
-        """DeploymentGroup
+        r"""DeploymentGroup
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class DeploymentGroup:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentGroup.
+        r"""Gets the name of this DeploymentGroup.
 
         主机集群名
 
@@ -92,7 +92,7 @@ class DeploymentGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentGroup.
+        r"""Sets the name of this DeploymentGroup.
 
         主机集群名
 
@@ -103,7 +103,7 @@ class DeploymentGroup:
 
     @property
     def region_name(self):
-        """Gets the region_name of this DeploymentGroup.
+        r"""Gets the region_name of this DeploymentGroup.
 
         局点信息
 
@@ -114,7 +114,7 @@ class DeploymentGroup:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this DeploymentGroup.
+        r"""Sets the region_name of this DeploymentGroup.
 
         局点信息
 
@@ -125,7 +125,7 @@ class DeploymentGroup:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeploymentGroup.
+        r"""Gets the project_id of this DeploymentGroup.
 
         项目id
 
@@ -136,7 +136,7 @@ class DeploymentGroup:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeploymentGroup.
+        r"""Sets the project_id of this DeploymentGroup.
 
         项目id
 
@@ -147,7 +147,7 @@ class DeploymentGroup:
 
     @property
     def os(self):
-        """Gets the os of this DeploymentGroup.
+        r"""Gets the os of this DeploymentGroup.
 
         操作信息：windows|linux
 
@@ -158,7 +158,7 @@ class DeploymentGroup:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this DeploymentGroup.
+        r"""Sets the os of this DeploymentGroup.
 
         操作信息：windows|linux
 
@@ -169,7 +169,7 @@ class DeploymentGroup:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this DeploymentGroup.
+        r"""Gets the slave_cluster_id of this DeploymentGroup.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -180,7 +180,7 @@ class DeploymentGroup:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this DeploymentGroup.
+        r"""Sets the slave_cluster_id of this DeploymentGroup.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -191,7 +191,7 @@ class DeploymentGroup:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentGroup.
+        r"""Gets the description of this DeploymentGroup.
 
         描述
 
@@ -202,7 +202,7 @@ class DeploymentGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentGroup.
+        r"""Sets the description of this DeploymentGroup.
 
         描述
 
@@ -213,7 +213,7 @@ class DeploymentGroup:
 
     @property
     def is_proxy_mode(self):
-        """Gets the is_proxy_mode of this DeploymentGroup.
+        r"""Gets the is_proxy_mode of this DeploymentGroup.
 
         主机集群是否为代理类型
 
@@ -224,7 +224,7 @@ class DeploymentGroup:
 
     @is_proxy_mode.setter
     def is_proxy_mode(self, is_proxy_mode):
-        """Sets the is_proxy_mode of this DeploymentGroup.
+        r"""Sets the is_proxy_mode of this DeploymentGroup.
 
         主机集群是否为代理类型
 

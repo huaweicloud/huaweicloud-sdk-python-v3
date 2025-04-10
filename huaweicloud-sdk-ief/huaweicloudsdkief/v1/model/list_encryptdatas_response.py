@@ -28,7 +28,7 @@ class ListEncryptdatasResponse(SdkResponse):
     }
 
     def __init__(self, encrypt_datas=None, count=None):
-        """ListEncryptdatasResponse
+        r"""ListEncryptdatasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEncryptdatasResponse(SdkResponse):
 
     @property
     def encrypt_datas(self):
-        """Gets the encrypt_datas of this ListEncryptdatasResponse.
+        r"""Gets the encrypt_datas of this ListEncryptdatasResponse.
 
         加密数据列表详情
 
@@ -62,7 +62,7 @@ class ListEncryptdatasResponse(SdkResponse):
 
     @encrypt_datas.setter
     def encrypt_datas(self, encrypt_datas):
-        """Sets the encrypt_datas of this ListEncryptdatasResponse.
+        r"""Sets the encrypt_datas of this ListEncryptdatasResponse.
 
         加密数据列表详情
 
@@ -73,7 +73,7 @@ class ListEncryptdatasResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEncryptdatasResponse.
+        r"""Gets the count of this ListEncryptdatasResponse.
 
         加密数据总数
 
@@ -84,7 +84,7 @@ class ListEncryptdatasResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEncryptdatasResponse.
+        r"""Sets the count of this ListEncryptdatasResponse.
 
         加密数据总数
 

@@ -25,7 +25,7 @@ class PcscBandwidthControlOptions:
     }
 
     def __init__(self, pcsc_bandwidth_control_value=None):
-        """PcscBandwidthControlOptions
+        r"""PcscBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PcscBandwidthControlOptions:
 
     @property
     def pcsc_bandwidth_control_value(self):
-        """Gets the pcsc_bandwidth_control_value of this PcscBandwidthControlOptions.
+        r"""Gets the pcsc_bandwidth_control_value of this PcscBandwidthControlOptions.
 
         PCSC带宽控制量（Kbps）。取值范围为[1000-5000]。默认：2000。
 
@@ -54,7 +54,7 @@ class PcscBandwidthControlOptions:
 
     @pcsc_bandwidth_control_value.setter
     def pcsc_bandwidth_control_value(self, pcsc_bandwidth_control_value):
-        """Sets the pcsc_bandwidth_control_value of this PcscBandwidthControlOptions.
+        r"""Sets the pcsc_bandwidth_control_value of this PcscBandwidthControlOptions.
 
         PCSC带宽控制量（Kbps）。取值范围为[1000-5000]。默认：2000。
 

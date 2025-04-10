@@ -27,7 +27,7 @@ class CreateFsDirRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """CreateFsDirRequest
+        r"""CreateFsDirRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFsDirRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreateFsDirRequest.
+        r"""Gets the share_id of this CreateFsDirRequest.
 
         文件系统id
 
@@ -60,7 +60,7 @@ class CreateFsDirRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreateFsDirRequest.
+        r"""Sets the share_id of this CreateFsDirRequest.
 
         文件系统id
 
@@ -71,7 +71,7 @@ class CreateFsDirRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFsDirRequest.
+        r"""Gets the body of this CreateFsDirRequest.
 
         :return: The body of this CreateFsDirRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateFsDirRequestBody`
@@ -80,7 +80,7 @@ class CreateFsDirRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFsDirRequest.
+        r"""Sets the body of this CreateFsDirRequest.
 
         :param body: The body of this CreateFsDirRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreateFsDirRequestBody`

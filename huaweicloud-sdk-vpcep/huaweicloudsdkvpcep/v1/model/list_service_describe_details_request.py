@@ -27,7 +27,7 @@ class ListServiceDescribeDetailsRequest:
     }
 
     def __init__(self, endpoint_service_name=None, id=None):
-        """ListServiceDescribeDetailsRequest
+        r"""ListServiceDescribeDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListServiceDescribeDetailsRequest:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this ListServiceDescribeDetailsRequest.
+        r"""Gets the endpoint_service_name of this ListServiceDescribeDetailsRequest.
 
         终端节点服务的名称。说明：该字段和id字段必须二选一，否则会出现错误。
 
@@ -61,7 +61,7 @@ class ListServiceDescribeDetailsRequest:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this ListServiceDescribeDetailsRequest.
+        r"""Sets the endpoint_service_name of this ListServiceDescribeDetailsRequest.
 
         终端节点服务的名称。说明：该字段和id字段必须二选一，否则会出现错误。
 
@@ -72,7 +72,7 @@ class ListServiceDescribeDetailsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListServiceDescribeDetailsRequest.
+        r"""Gets the id of this ListServiceDescribeDetailsRequest.
 
         终端节点服务的ID，唯一标识。 说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
 
@@ -83,7 +83,7 @@ class ListServiceDescribeDetailsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServiceDescribeDetailsRequest.
+        r"""Sets the id of this ListServiceDescribeDetailsRequest.
 
         终端节点服务的ID，唯一标识。 说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
 

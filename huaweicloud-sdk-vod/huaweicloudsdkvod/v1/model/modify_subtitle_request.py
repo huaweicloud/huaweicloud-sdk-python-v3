@@ -25,7 +25,7 @@ class ModifySubtitleRequest:
     }
 
     def __init__(self, body=None):
-        """ModifySubtitleRequest
+        r"""ModifySubtitleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifySubtitleRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifySubtitleRequest.
+        r"""Gets the body of this ModifySubtitleRequest.
 
         :return: The body of this ModifySubtitleRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.SubtitleModifyReq`
@@ -52,7 +52,7 @@ class ModifySubtitleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifySubtitleRequest.
+        r"""Sets the body of this ModifySubtitleRequest.
 
         :param body: The body of this ModifySubtitleRequest.
         :type body: :class:`huaweicloudsdkvod.v1.SubtitleModifyReq`

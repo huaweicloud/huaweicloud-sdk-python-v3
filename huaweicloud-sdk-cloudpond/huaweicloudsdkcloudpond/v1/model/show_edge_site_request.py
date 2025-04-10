@@ -25,7 +25,7 @@ class ShowEdgeSiteRequest:
     }
 
     def __init__(self, site_id=None):
-        """ShowEdgeSiteRequest
+        r"""ShowEdgeSiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEdgeSiteRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ShowEdgeSiteRequest.
+        r"""Gets the site_id of this ShowEdgeSiteRequest.
 
         边缘小站ID
 
@@ -53,7 +53,7 @@ class ShowEdgeSiteRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ShowEdgeSiteRequest.
+        r"""Sets the site_id of this ShowEdgeSiteRequest.
 
         边缘小站ID
 

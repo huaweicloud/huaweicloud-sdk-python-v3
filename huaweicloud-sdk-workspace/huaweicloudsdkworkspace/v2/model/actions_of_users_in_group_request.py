@@ -27,7 +27,7 @@ class ActionsOfUsersInGroupRequest:
     }
 
     def __init__(self, user_ids=None, op_type=None):
-        """ActionsOfUsersInGroupRequest
+        r"""ActionsOfUsersInGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ActionsOfUsersInGroupRequest:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this ActionsOfUsersInGroupRequest.
+        r"""Gets the user_ids of this ActionsOfUsersInGroupRequest.
 
         要添加或移除的用户Id列表。
 
@@ -59,7 +59,7 @@ class ActionsOfUsersInGroupRequest:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this ActionsOfUsersInGroupRequest.
+        r"""Sets the user_ids of this ActionsOfUsersInGroupRequest.
 
         要添加或移除的用户Id列表。
 
@@ -70,7 +70,7 @@ class ActionsOfUsersInGroupRequest:
 
     @property
     def op_type(self):
-        """Gets the op_type of this ActionsOfUsersInGroupRequest.
+        r"""Gets the op_type of this ActionsOfUsersInGroupRequest.
 
         操作类型。 * ADD： 添加 * DELETE： 删除
 
@@ -81,7 +81,7 @@ class ActionsOfUsersInGroupRequest:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this ActionsOfUsersInGroupRequest.
+        r"""Sets the op_type of this ActionsOfUsersInGroupRequest.
 
         操作类型。 * ADD： 添加 * DELETE： 删除
 

@@ -36,7 +36,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, permissions=None, topics=None, remain_partitions=None, max_partitions=None):
-        """ListMqsInstanceTopicsResponse
+        r"""ListMqsInstanceTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMqsInstanceTopicsResponse.
+        r"""Gets the total of this ListMqsInstanceTopicsResponse.
 
         topic的总数。
 
@@ -90,7 +90,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMqsInstanceTopicsResponse.
+        r"""Sets the total of this ListMqsInstanceTopicsResponse.
 
         topic的总数。
 
@@ -101,7 +101,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListMqsInstanceTopicsResponse.
+        r"""Gets the size of this ListMqsInstanceTopicsResponse.
 
         当前查询的topic数量。
 
@@ -112,7 +112,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListMqsInstanceTopicsResponse.
+        r"""Sets the size of this ListMqsInstanceTopicsResponse.
 
         当前查询的topic数量。
 
@@ -123,7 +123,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ListMqsInstanceTopicsResponse.
+        r"""Gets the permissions of this ListMqsInstanceTopicsResponse.
 
         允许操作的权限。
 
@@ -134,7 +134,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ListMqsInstanceTopicsResponse.
+        r"""Sets the permissions of this ListMqsInstanceTopicsResponse.
 
         允许操作的权限。
 
@@ -145,7 +145,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ListMqsInstanceTopicsResponse.
+        r"""Gets the topics of this ListMqsInstanceTopicsResponse.
 
         Topic列表。
 
@@ -156,7 +156,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ListMqsInstanceTopicsResponse.
+        r"""Sets the topics of this ListMqsInstanceTopicsResponse.
 
         Topic列表。
 
@@ -167,7 +167,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @property
     def remain_partitions(self):
-        """Gets the remain_partitions of this ListMqsInstanceTopicsResponse.
+        r"""Gets the remain_partitions of this ListMqsInstanceTopicsResponse.
 
         剩余分区数。
 
@@ -178,7 +178,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @remain_partitions.setter
     def remain_partitions(self, remain_partitions):
-        """Sets the remain_partitions of this ListMqsInstanceTopicsResponse.
+        r"""Sets the remain_partitions of this ListMqsInstanceTopicsResponse.
 
         剩余分区数。
 
@@ -189,7 +189,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @property
     def max_partitions(self):
-        """Gets the max_partitions of this ListMqsInstanceTopicsResponse.
+        r"""Gets the max_partitions of this ListMqsInstanceTopicsResponse.
 
         分区总数。
 
@@ -200,7 +200,7 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
 
     @max_partitions.setter
     def max_partitions(self, max_partitions):
-        """Sets the max_partitions of this ListMqsInstanceTopicsResponse.
+        r"""Sets the max_partitions of this ListMqsInstanceTopicsResponse.
 
         分区总数。
 

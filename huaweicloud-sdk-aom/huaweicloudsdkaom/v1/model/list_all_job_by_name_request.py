@@ -25,7 +25,7 @@ class ListAllJobByNameRequest:
     }
 
     def __init__(self, body=None):
-        """ListAllJobByNameRequest
+        r"""ListAllJobByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAllJobByNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAllJobByNameRequest.
+        r"""Gets the body of this ListAllJobByNameRequest.
 
         :return: The body of this ListAllJobByNameRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.SearchJobsRequestBody`
@@ -52,7 +52,7 @@ class ListAllJobByNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAllJobByNameRequest.
+        r"""Sets the body of this ListAllJobByNameRequest.
 
         :param body: The body of this ListAllJobByNameRequest.
         :type body: :class:`huaweicloudsdkaom.v1.SearchJobsRequestBody`

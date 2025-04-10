@@ -27,7 +27,7 @@ class BatchRunFlinkJobsRequestBody:
     }
 
     def __init__(self, resume_savepoint=None, job_ids=None):
-        """BatchRunFlinkJobsRequestBody
+        r"""BatchRunFlinkJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchRunFlinkJobsRequestBody:
 
     @property
     def resume_savepoint(self):
-        """Gets the resume_savepoint of this BatchRunFlinkJobsRequestBody.
+        r"""Gets the resume_savepoint of this BatchRunFlinkJobsRequestBody.
 
         是否将作业从最近创建的保存点恢复。类型为boolean。  当resume_savepoint为true时，表示作业从最近创建的保存点恢复。 当resume_savepoint为false时，表示不恢复正常启动。默认为false。
 
@@ -60,7 +60,7 @@ class BatchRunFlinkJobsRequestBody:
 
     @resume_savepoint.setter
     def resume_savepoint(self, resume_savepoint):
-        """Sets the resume_savepoint of this BatchRunFlinkJobsRequestBody.
+        r"""Sets the resume_savepoint of this BatchRunFlinkJobsRequestBody.
 
         是否将作业从最近创建的保存点恢复。类型为boolean。  当resume_savepoint为true时，表示作业从最近创建的保存点恢复。 当resume_savepoint为false时，表示不恢复正常启动。默认为false。
 
@@ -71,7 +71,7 @@ class BatchRunFlinkJobsRequestBody:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this BatchRunFlinkJobsRequestBody.
+        r"""Gets the job_ids of this BatchRunFlinkJobsRequestBody.
 
         
 
@@ -82,7 +82,7 @@ class BatchRunFlinkJobsRequestBody:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this BatchRunFlinkJobsRequestBody.
+        r"""Sets the job_ids of this BatchRunFlinkJobsRequestBody.
 
         
 

@@ -29,7 +29,7 @@ class ResourceInfo:
     }
 
     def __init__(self, catalogs=None, uris=None, type=None):
-        """ResourceInfo
+        r"""ResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResourceInfo:
 
     @property
     def catalogs(self):
-        """Gets the catalogs of this ResourceInfo.
+        r"""Gets the catalogs of this ResourceInfo.
 
         catalog info
 
@@ -67,7 +67,7 @@ class ResourceInfo:
 
     @catalogs.setter
     def catalogs(self, catalogs):
-        """Sets the catalogs of this ResourceInfo.
+        r"""Sets the catalogs of this ResourceInfo.
 
         catalog info
 
@@ -78,7 +78,7 @@ class ResourceInfo:
 
     @property
     def uris(self):
-        """Gets the uris of this ResourceInfo.
+        r"""Gets the uris of this ResourceInfo.
 
         uri
 
@@ -89,7 +89,7 @@ class ResourceInfo:
 
     @uris.setter
     def uris(self, uris):
-        """Sets the uris of this ResourceInfo.
+        r"""Sets the uris of this ResourceInfo.
 
         uri
 
@@ -100,7 +100,7 @@ class ResourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this ResourceInfo.
+        r"""Gets the type of this ResourceInfo.
 
         resource type
 
@@ -111,7 +111,7 @@ class ResourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceInfo.
+        r"""Sets the type of this ResourceInfo.
 
         resource type
 

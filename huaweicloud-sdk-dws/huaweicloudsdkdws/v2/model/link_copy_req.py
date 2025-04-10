@@ -27,7 +27,7 @@ class LinkCopyReq:
     }
 
     def __init__(self, backup_name=None, description=None):
-        """LinkCopyReq
+        r"""LinkCopyReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class LinkCopyReq:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this LinkCopyReq.
+        r"""Gets the backup_name of this LinkCopyReq.
 
         快照名称
 
@@ -60,7 +60,7 @@ class LinkCopyReq:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this LinkCopyReq.
+        r"""Sets the backup_name of this LinkCopyReq.
 
         快照名称
 
@@ -71,7 +71,7 @@ class LinkCopyReq:
 
     @property
     def description(self):
-        """Gets the description of this LinkCopyReq.
+        r"""Gets the description of this LinkCopyReq.
 
         描述
 
@@ -82,7 +82,7 @@ class LinkCopyReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LinkCopyReq.
+        r"""Sets the description of this LinkCopyReq.
 
         描述
 

@@ -27,7 +27,7 @@ class UpdateDataStoreRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """UpdateDataStoreRequest
+        r"""UpdateDataStoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDataStoreRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this UpdateDataStoreRequest.
+        r"""Gets the data_store_id of this UpdateDataStoreRequest.
 
         存储 ID
 
@@ -60,7 +60,7 @@ class UpdateDataStoreRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this UpdateDataStoreRequest.
+        r"""Sets the data_store_id of this UpdateDataStoreRequest.
 
         存储 ID
 
@@ -71,7 +71,7 @@ class UpdateDataStoreRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataStoreRequest.
+        r"""Gets the body of this UpdateDataStoreRequest.
 
         :return: The body of this UpdateDataStoreRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStore`
@@ -80,7 +80,7 @@ class UpdateDataStoreRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataStoreRequest.
+        r"""Sets the body of this UpdateDataStoreRequest.
 
         :param body: The body of this UpdateDataStoreRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStore`

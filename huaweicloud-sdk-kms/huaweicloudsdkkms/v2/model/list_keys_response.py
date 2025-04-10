@@ -34,7 +34,7 @@ class ListKeysResponse(SdkResponse):
     }
 
     def __init__(self, keys=None, key_details=None, next_marker=None, truncated=None, total=None):
-        """ListKeysResponse
+        r"""ListKeysResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListKeysResponse(SdkResponse):
 
     @property
     def keys(self):
-        """Gets the keys of this ListKeysResponse.
+        r"""Gets the keys of this ListKeysResponse.
 
         key_id列表。
 
@@ -83,7 +83,7 @@ class ListKeysResponse(SdkResponse):
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ListKeysResponse.
+        r"""Sets the keys of this ListKeysResponse.
 
         key_id列表。
 
@@ -94,7 +94,7 @@ class ListKeysResponse(SdkResponse):
 
     @property
     def key_details(self):
-        """Gets the key_details of this ListKeysResponse.
+        r"""Gets the key_details of this ListKeysResponse.
 
         密钥详情列表。详情参见KeyDetails
 
@@ -105,7 +105,7 @@ class ListKeysResponse(SdkResponse):
 
     @key_details.setter
     def key_details(self, key_details):
-        """Sets the key_details of this ListKeysResponse.
+        r"""Sets the key_details of this ListKeysResponse.
 
         密钥详情列表。详情参见KeyDetails
 
@@ -116,7 +116,7 @@ class ListKeysResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListKeysResponse.
+        r"""Gets the next_marker of this ListKeysResponse.
 
         获取下一页所需要传递的“marker”值。当“truncated”为“false”时，“next_marker”为空。
 
@@ -127,7 +127,7 @@ class ListKeysResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListKeysResponse.
+        r"""Sets the next_marker of this ListKeysResponse.
 
         获取下一页所需要传递的“marker”值。当“truncated”为“false”时，“next_marker”为空。
 
@@ -138,7 +138,7 @@ class ListKeysResponse(SdkResponse):
 
     @property
     def truncated(self):
-        """Gets the truncated of this ListKeysResponse.
+        r"""Gets the truncated of this ListKeysResponse.
 
         是否还有下一页： - “true”表示还有数据。 - “false”表示已经是最后一页。
 
@@ -149,7 +149,7 @@ class ListKeysResponse(SdkResponse):
 
     @truncated.setter
     def truncated(self, truncated):
-        """Sets the truncated of this ListKeysResponse.
+        r"""Sets the truncated of this ListKeysResponse.
 
         是否还有下一页： - “true”表示还有数据。 - “false”表示已经是最后一页。
 
@@ -160,7 +160,7 @@ class ListKeysResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListKeysResponse.
+        r"""Gets the total of this ListKeysResponse.
 
         密钥总条数。
 
@@ -171,7 +171,7 @@ class ListKeysResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListKeysResponse.
+        r"""Sets the total of this ListKeysResponse.
 
         密钥总条数。
 

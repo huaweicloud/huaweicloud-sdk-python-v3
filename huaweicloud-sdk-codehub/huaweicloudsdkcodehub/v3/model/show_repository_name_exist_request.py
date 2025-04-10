@@ -27,7 +27,7 @@ class ShowRepositoryNameExistRequest:
     }
 
     def __init__(self, project_uuid=None, repository_name=None):
-        """ShowRepositoryNameExistRequest
+        r"""ShowRepositoryNameExistRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowRepositoryNameExistRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowRepositoryNameExistRequest.
+        r"""Gets the project_uuid of this ShowRepositoryNameExistRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -59,7 +59,7 @@ class ShowRepositoryNameExistRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowRepositoryNameExistRequest.
+        r"""Sets the project_uuid of this ShowRepositoryNameExistRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -70,7 +70,7 @@ class ShowRepositoryNameExistRequest:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this ShowRepositoryNameExistRequest.
+        r"""Gets the repository_name of this ShowRepositoryNameExistRequest.
 
         仓库名
 
@@ -81,7 +81,7 @@ class ShowRepositoryNameExistRequest:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this ShowRepositoryNameExistRequest.
+        r"""Sets the repository_name of this ShowRepositoryNameExistRequest.
 
         仓库名
 

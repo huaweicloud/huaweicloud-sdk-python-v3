@@ -27,7 +27,7 @@ class FailedEipInfo:
     }
 
     def __init__(self, id=None, error_message=None):
-        """FailedEipInfo
+        r"""FailedEipInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FailedEipInfo:
 
     @property
     def id(self):
-        """Gets the id of this FailedEipInfo.
+        r"""Gets the id of this FailedEipInfo.
 
         修改状态失败的eipId。
 
@@ -61,7 +61,7 @@ class FailedEipInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FailedEipInfo.
+        r"""Sets the id of this FailedEipInfo.
 
         修改状态失败的eipId。
 
@@ -72,7 +72,7 @@ class FailedEipInfo:
 
     @property
     def error_message(self):
-        """Gets the error_message of this FailedEipInfo.
+        r"""Gets the error_message of this FailedEipInfo.
 
         修改状态失败的错误码。
 
@@ -83,7 +83,7 @@ class FailedEipInfo:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this FailedEipInfo.
+        r"""Sets the error_message of this FailedEipInfo.
 
         修改状态失败的错误码。
 

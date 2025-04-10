@@ -29,7 +29,7 @@ class Quota:
     }
 
     def __init__(self, project_type=None, quota=None, used=None):
-        """Quota
+        r"""Quota
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Quota:
 
     @property
     def project_type(self):
-        """Gets the project_type of this Quota.
+        r"""Gets the project_type of this Quota.
 
         UGO的项目类型。
 
@@ -65,7 +65,7 @@ class Quota:
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this Quota.
+        r"""Sets the project_type of this Quota.
 
         UGO的项目类型。
 
@@ -76,7 +76,7 @@ class Quota:
 
     @property
     def quota(self):
-        """Gets the quota of this Quota.
+        r"""Gets the quota of this Quota.
 
         总配额。
 
@@ -87,7 +87,7 @@ class Quota:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Quota.
+        r"""Sets the quota of this Quota.
 
         总配额。
 
@@ -98,7 +98,7 @@ class Quota:
 
     @property
     def used(self):
-        """Gets the used of this Quota.
+        r"""Gets the used of this Quota.
 
         已经使用的配额。
 
@@ -109,7 +109,7 @@ class Quota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Quota.
+        r"""Sets the used of this Quota.
 
         已经使用的配额。
 

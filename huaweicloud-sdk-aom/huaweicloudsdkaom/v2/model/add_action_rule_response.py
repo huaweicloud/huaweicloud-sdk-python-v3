@@ -24,7 +24,7 @@ class AddActionRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddActionRuleResponse
+        r"""AddActionRuleResponse
 
         The model defined in huaweicloud sdk
 

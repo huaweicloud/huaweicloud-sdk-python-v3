@@ -25,7 +25,7 @@ class CreateMfaDeviceReq:
     }
 
     def __init__(self, virtual_mfa_device=None):
-        """CreateMfaDeviceReq
+        r"""CreateMfaDeviceReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMfaDeviceReq:
 
     @property
     def virtual_mfa_device(self):
-        """Gets the virtual_mfa_device of this CreateMfaDeviceReq.
+        r"""Gets the virtual_mfa_device of this CreateMfaDeviceReq.
 
         :return: The virtual_mfa_device of this CreateMfaDeviceReq.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDevice`
@@ -51,7 +51,7 @@ class CreateMfaDeviceReq:
 
     @virtual_mfa_device.setter
     def virtual_mfa_device(self, virtual_mfa_device):
-        """Sets the virtual_mfa_device of this CreateMfaDeviceReq.
+        r"""Sets the virtual_mfa_device of this CreateMfaDeviceReq.
 
         :param virtual_mfa_device: The virtual_mfa_device of this CreateMfaDeviceReq.
         :type virtual_mfa_device: :class:`huaweicloudsdkiam.v3.CreateMfaDevice`

@@ -25,7 +25,7 @@ class DeleteIncident:
     }
 
     def __init__(self, ids=None):
-        """DeleteIncident
+        r"""DeleteIncident
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteIncident:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteIncident.
+        r"""Gets the ids of this DeleteIncident.
 
         删除事件的ID列表
 
@@ -54,7 +54,7 @@ class DeleteIncident:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteIncident.
+        r"""Sets the ids of this DeleteIncident.
 
         删除事件的ID列表
 

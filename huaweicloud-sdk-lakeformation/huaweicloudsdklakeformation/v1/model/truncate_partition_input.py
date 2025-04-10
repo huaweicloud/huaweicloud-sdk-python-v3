@@ -25,7 +25,7 @@ class TruncatePartitionInput:
     }
 
     def __init__(self, partition_values=None):
-        """TruncatePartitionInput
+        r"""TruncatePartitionInput
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TruncatePartitionInput:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this TruncatePartitionInput.
+        r"""Gets the partition_values of this TruncatePartitionInput.
 
         分区值
 
@@ -54,7 +54,7 @@ class TruncatePartitionInput:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this TruncatePartitionInput.
+        r"""Sets the partition_values of this TruncatePartitionInput.
 
         分区值
 

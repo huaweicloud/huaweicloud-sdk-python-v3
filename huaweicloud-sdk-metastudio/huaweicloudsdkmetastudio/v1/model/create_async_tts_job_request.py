@@ -27,7 +27,7 @@ class CreateAsyncTtsJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateAsyncTtsJobRequest
+        r"""CreateAsyncTtsJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateAsyncTtsJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateAsyncTtsJobRequest.
+        r"""Gets the x_app_user_id of this CreateAsyncTtsJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateAsyncTtsJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateAsyncTtsJobRequest.
+        r"""Sets the x_app_user_id of this CreateAsyncTtsJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateAsyncTtsJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAsyncTtsJobRequest.
+        r"""Gets the body of this CreateAsyncTtsJobRequest.
 
         :return: The body of this CreateAsyncTtsJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAsyncTtsJobRequestBody`
@@ -81,7 +81,7 @@ class CreateAsyncTtsJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAsyncTtsJobRequest.
+        r"""Sets the body of this CreateAsyncTtsJobRequest.
 
         :param body: The body of this CreateAsyncTtsJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateAsyncTtsJobRequestBody`

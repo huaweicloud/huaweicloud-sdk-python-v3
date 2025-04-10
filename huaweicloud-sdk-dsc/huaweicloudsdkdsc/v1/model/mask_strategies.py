@@ -29,7 +29,7 @@ class MaskStrategies:
     }
 
     def __init__(self, name=None, algorithm=None, parameters=None):
-        """MaskStrategies
+        r"""MaskStrategies
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MaskStrategies:
 
     @property
     def name(self):
-        """Gets the name of this MaskStrategies.
+        r"""Gets the name of this MaskStrategies.
 
         需要脱敏的字段名称，最大支持长度256。
 
@@ -66,7 +66,7 @@ class MaskStrategies:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MaskStrategies.
+        r"""Sets the name of this MaskStrategies.
 
         需要脱敏的字段名称，最大支持长度256。
 
@@ -77,7 +77,7 @@ class MaskStrategies:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this MaskStrategies.
+        r"""Gets the algorithm of this MaskStrategies.
 
         脱敏算法名称，详情见附录\"动态脱敏策略配置\"。
 
@@ -88,7 +88,7 @@ class MaskStrategies:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this MaskStrategies.
+        r"""Sets the algorithm of this MaskStrategies.
 
         脱敏算法名称，详情见附录\"动态脱敏策略配置\"。
 
@@ -99,7 +99,7 @@ class MaskStrategies:
 
     @property
     def parameters(self):
-        """Gets the parameters of this MaskStrategies.
+        r"""Gets the parameters of this MaskStrategies.
 
         脱敏算法参数，详情见附录\"动态脱敏策略配置\"。
 
@@ -110,7 +110,7 @@ class MaskStrategies:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this MaskStrategies.
+        r"""Sets the parameters of this MaskStrategies.
 
         脱敏算法参数，详情见附录\"动态脱敏策略配置\"。
 

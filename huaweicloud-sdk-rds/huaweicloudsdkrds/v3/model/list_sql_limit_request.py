@@ -31,7 +31,7 @@ class ListSqlLimitRequest:
     }
 
     def __init__(self, instance_id=None, db_name=None, offset=None, limit=None):
-        """ListSqlLimitRequest
+        r"""ListSqlLimitRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListSqlLimitRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSqlLimitRequest.
+        r"""Gets the instance_id of this ListSqlLimitRequest.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListSqlLimitRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSqlLimitRequest.
+        r"""Sets the instance_id of this ListSqlLimitRequest.
 
         实例ID
 
@@ -84,7 +84,7 @@ class ListSqlLimitRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListSqlLimitRequest.
+        r"""Gets the db_name of this ListSqlLimitRequest.
 
         数据库名称
 
@@ -95,7 +95,7 @@ class ListSqlLimitRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListSqlLimitRequest.
+        r"""Sets the db_name of this ListSqlLimitRequest.
 
         数据库名称
 
@@ -106,7 +106,7 @@ class ListSqlLimitRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSqlLimitRequest.
+        r"""Gets the offset of this ListSqlLimitRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -117,7 +117,7 @@ class ListSqlLimitRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSqlLimitRequest.
+        r"""Sets the offset of this ListSqlLimitRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -128,7 +128,7 @@ class ListSqlLimitRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSqlLimitRequest.
+        r"""Gets the limit of this ListSqlLimitRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -139,7 +139,7 @@ class ListSqlLimitRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSqlLimitRequest.
+        r"""Sets the limit of this ListSqlLimitRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 

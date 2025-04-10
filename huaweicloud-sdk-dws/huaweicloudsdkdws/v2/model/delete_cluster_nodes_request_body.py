@@ -27,7 +27,7 @@ class DeleteClusterNodesRequestBody:
     }
 
     def __init__(self, node_list=None, operate_type=None):
-        """DeleteClusterNodesRequestBody
+        r"""DeleteClusterNodesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteClusterNodesRequestBody:
 
     @property
     def node_list(self):
-        """Gets the node_list of this DeleteClusterNodesRequestBody.
+        r"""Gets the node_list of this DeleteClusterNodesRequestBody.
 
         逻辑集群节点ID列表
 
@@ -59,7 +59,7 @@ class DeleteClusterNodesRequestBody:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this DeleteClusterNodesRequestBody.
+        r"""Sets the node_list of this DeleteClusterNodesRequestBody.
 
         逻辑集群节点ID列表
 
@@ -70,7 +70,7 @@ class DeleteClusterNodesRequestBody:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this DeleteClusterNodesRequestBody.
+        r"""Gets the operate_type of this DeleteClusterNodesRequestBody.
 
         操作类型，clear|delete
 
@@ -81,7 +81,7 @@ class DeleteClusterNodesRequestBody:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this DeleteClusterNodesRequestBody.
+        r"""Sets the operate_type of this DeleteClusterNodesRequestBody.
 
         操作类型，clear|delete
 

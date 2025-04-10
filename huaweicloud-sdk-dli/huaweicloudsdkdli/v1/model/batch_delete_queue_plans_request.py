@@ -27,7 +27,7 @@ class BatchDeleteQueuePlansRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """BatchDeleteQueuePlansRequest
+        r"""BatchDeleteQueuePlansRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteQueuePlansRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this BatchDeleteQueuePlansRequest.
+        r"""Gets the queue_name of this BatchDeleteQueuePlansRequest.
 
         待删除定时扩缩计划的队列名称
 
@@ -60,7 +60,7 @@ class BatchDeleteQueuePlansRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this BatchDeleteQueuePlansRequest.
+        r"""Sets the queue_name of this BatchDeleteQueuePlansRequest.
 
         待删除定时扩缩计划的队列名称
 
@@ -71,7 +71,7 @@ class BatchDeleteQueuePlansRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteQueuePlansRequest.
+        r"""Gets the body of this BatchDeleteQueuePlansRequest.
 
         :return: The body of this BatchDeleteQueuePlansRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteQueuePlansRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteQueuePlansRequest.
+        r"""Sets the body of this BatchDeleteQueuePlansRequest.
 
         :param body: The body of this BatchDeleteQueuePlansRequest.
         :type body: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequestBody`

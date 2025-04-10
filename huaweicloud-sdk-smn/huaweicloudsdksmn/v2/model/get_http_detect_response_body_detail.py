@@ -27,7 +27,7 @@ class GetHttpDetectResponseBodyDetail:
     }
 
     def __init__(self, http_code=None, http_response=None):
-        """GetHttpDetectResponseBodyDetail
+        r"""GetHttpDetectResponseBodyDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetHttpDetectResponseBodyDetail:
 
     @property
     def http_code(self):
-        """Gets the http_code of this GetHttpDetectResponseBodyDetail.
+        r"""Gets the http_code of this GetHttpDetectResponseBodyDetail.
 
         探测终端返回的http返回码，0代表用户在黑名单无法发送，-1代表用户终端超过5秒未响应，-2代表队列已满，Http探测任务未执行。其他httpcode为终端实际返回值。
 
@@ -59,7 +59,7 @@ class GetHttpDetectResponseBodyDetail:
 
     @http_code.setter
     def http_code(self, http_code):
-        """Sets the http_code of this GetHttpDetectResponseBodyDetail.
+        r"""Sets the http_code of this GetHttpDetectResponseBodyDetail.
 
         探测终端返回的http返回码，0代表用户在黑名单无法发送，-1代表用户终端超过5秒未响应，-2代表队列已满，Http探测任务未执行。其他httpcode为终端实际返回值。
 
@@ -70,7 +70,7 @@ class GetHttpDetectResponseBodyDetail:
 
     @property
     def http_response(self):
-        """Gets the http_response of this GetHttpDetectResponseBodyDetail.
+        r"""Gets the http_response of this GetHttpDetectResponseBodyDetail.
 
         终端探测响应体，如果httpCode为0，-1，-2, 2xx时响应体内容固定，由SMN定义。其余httpCode的响应体内容为终端返回内容。
 
@@ -81,7 +81,7 @@ class GetHttpDetectResponseBodyDetail:
 
     @http_response.setter
     def http_response(self, http_response):
-        """Sets the http_response of this GetHttpDetectResponseBodyDetail.
+        r"""Sets the http_response of this GetHttpDetectResponseBodyDetail.
 
         终端探测响应体，如果httpCode为0，-1，-2, 2xx时响应体内容固定，由SMN定义。其余httpCode的响应体内容为终端返回内容。
 

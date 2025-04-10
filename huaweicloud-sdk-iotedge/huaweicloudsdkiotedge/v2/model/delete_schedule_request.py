@@ -27,7 +27,7 @@ class DeleteScheduleRequest:
     }
 
     def __init__(self, edge_node_id=None, schedule_id=None):
-        """DeleteScheduleRequest
+        r"""DeleteScheduleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteScheduleRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this DeleteScheduleRequest.
+        r"""Gets the edge_node_id of this DeleteScheduleRequest.
 
         边缘节点ID
 
@@ -59,7 +59,7 @@ class DeleteScheduleRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this DeleteScheduleRequest.
+        r"""Sets the edge_node_id of this DeleteScheduleRequest.
 
         边缘节点ID
 
@@ -70,7 +70,7 @@ class DeleteScheduleRequest:
 
     @property
     def schedule_id(self):
-        """Gets the schedule_id of this DeleteScheduleRequest.
+        r"""Gets the schedule_id of this DeleteScheduleRequest.
 
         调度计划id
 
@@ -81,7 +81,7 @@ class DeleteScheduleRequest:
 
     @schedule_id.setter
     def schedule_id(self, schedule_id):
-        """Sets the schedule_id of this DeleteScheduleRequest.
+        r"""Sets the schedule_id of this DeleteScheduleRequest.
 
         调度计划id
 

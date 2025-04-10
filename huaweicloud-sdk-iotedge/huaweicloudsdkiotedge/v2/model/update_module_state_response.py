@@ -46,7 +46,7 @@ class UpdateModuleStateResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, app_version=None, state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None):
-        """UpdateModuleStateResponse
+        r"""UpdateModuleStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this UpdateModuleStateResponse.
+        r"""Gets the edge_app_id of this UpdateModuleStateResponse.
 
         应用ID
 
@@ -125,7 +125,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this UpdateModuleStateResponse.
+        r"""Sets the edge_app_id of this UpdateModuleStateResponse.
 
         应用ID
 
@@ -136,7 +136,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def app_version(self):
-        """Gets the app_version of this UpdateModuleStateResponse.
+        r"""Gets the app_version of this UpdateModuleStateResponse.
 
         应用版本
 
@@ -147,7 +147,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this UpdateModuleStateResponse.
+        r"""Sets the app_version of this UpdateModuleStateResponse.
 
         应用版本
 
@@ -158,7 +158,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateModuleStateResponse.
+        r"""Gets the state of this UpdateModuleStateResponse.
 
         模块运行状态
 
@@ -169,7 +169,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateModuleStateResponse.
+        r"""Sets the state of this UpdateModuleStateResponse.
 
         模块运行状态
 
@@ -180,7 +180,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def control_status(self):
-        """Gets the control_status of this UpdateModuleStateResponse.
+        r"""Gets the control_status of this UpdateModuleStateResponse.
 
         模块管控状态
 
@@ -191,7 +191,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @control_status.setter
     def control_status(self, control_status):
-        """Sets the control_status of this UpdateModuleStateResponse.
+        r"""Sets the control_status of this UpdateModuleStateResponse.
 
         模块管控状态
 
@@ -202,7 +202,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateModuleStateResponse.
+        r"""Gets the node_id of this UpdateModuleStateResponse.
 
         边缘节点（同deviceID）ID
 
@@ -213,7 +213,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateModuleStateResponse.
+        r"""Sets the node_id of this UpdateModuleStateResponse.
 
         边缘节点（同deviceID）ID
 
@@ -224,7 +224,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def module_name(self):
-        """Gets the module_name of this UpdateModuleStateResponse.
+        r"""Gets the module_name of this UpdateModuleStateResponse.
 
         模块名称
 
@@ -235,7 +235,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this UpdateModuleStateResponse.
+        r"""Sets the module_name of this UpdateModuleStateResponse.
 
         模块名称
 
@@ -246,7 +246,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def module_id(self):
-        """Gets the module_id of this UpdateModuleStateResponse.
+        r"""Gets the module_id of this UpdateModuleStateResponse.
 
         模块ID
 
@@ -257,7 +257,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this UpdateModuleStateResponse.
+        r"""Sets the module_id of this UpdateModuleStateResponse.
 
         模块ID
 
@@ -268,7 +268,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateModuleStateResponse.
+        r"""Gets the create_time of this UpdateModuleStateResponse.
 
         创建时间
 
@@ -279,7 +279,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateModuleStateResponse.
+        r"""Sets the create_time of this UpdateModuleStateResponse.
 
         创建时间
 
@@ -290,7 +290,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateModuleStateResponse.
+        r"""Gets the update_time of this UpdateModuleStateResponse.
 
         最后一次修改时间
 
@@ -301,7 +301,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateModuleStateResponse.
+        r"""Sets the update_time of this UpdateModuleStateResponse.
 
         最后一次修改时间
 
@@ -312,7 +312,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this UpdateModuleStateResponse.
+        r"""Gets the app_type of this UpdateModuleStateResponse.
 
         应用类型
 
@@ -323,7 +323,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this UpdateModuleStateResponse.
+        r"""Sets the app_type of this UpdateModuleStateResponse.
 
         应用类型
 
@@ -334,7 +334,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @property
     def function_type(self):
-        """Gets the function_type of this UpdateModuleStateResponse.
+        r"""Gets the function_type of this UpdateModuleStateResponse.
 
         功能类型
 
@@ -345,7 +345,7 @@ class UpdateModuleStateResponse(SdkResponse):
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this UpdateModuleStateResponse.
+        r"""Sets the function_type of this UpdateModuleStateResponse.
 
         功能类型
 

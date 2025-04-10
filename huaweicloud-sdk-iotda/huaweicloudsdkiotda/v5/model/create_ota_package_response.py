@@ -44,7 +44,7 @@ class CreateOtaPackageResponse(SdkResponse):
     }
 
     def __init__(self, package_id=None, app_id=None, package_type=None, product_id=None, version=None, support_source_versions=None, description=None, custom_info=None, create_time=None, file_location=None):
-        """CreateOtaPackageResponse
+        r"""CreateOtaPackageResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def package_id(self):
-        """Gets the package_id of this CreateOtaPackageResponse.
+        r"""Gets the package_id of this CreateOtaPackageResponse.
 
         **参数说明**：升级包ID，用于唯一标识一个升级包。由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -118,7 +118,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this CreateOtaPackageResponse.
+        r"""Sets the package_id of this CreateOtaPackageResponse.
 
         **参数说明**：升级包ID，用于唯一标识一个升级包。由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -129,7 +129,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateOtaPackageResponse.
+        r"""Gets the app_id of this CreateOtaPackageResponse.
 
         **参数说明**：资源空间ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -140,7 +140,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateOtaPackageResponse.
+        r"""Sets the app_id of this CreateOtaPackageResponse.
 
         **参数说明**：资源空间ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -151,7 +151,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def package_type(self):
-        """Gets the package_type of this CreateOtaPackageResponse.
+        r"""Gets the package_type of this CreateOtaPackageResponse.
 
         **参数说明**：升级包类型。 **取值范围**：软件包必须设置为：softwarePackage，固件包必须设置为：firmwarePackage。
 
@@ -162,7 +162,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this CreateOtaPackageResponse.
+        r"""Sets the package_type of this CreateOtaPackageResponse.
 
         **参数说明**：升级包类型。 **取值范围**：软件包必须设置为：softwarePackage，固件包必须设置为：firmwarePackage。
 
@@ -173,7 +173,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateOtaPackageResponse.
+        r"""Gets the product_id of this CreateOtaPackageResponse.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -184,7 +184,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateOtaPackageResponse.
+        r"""Sets the product_id of this CreateOtaPackageResponse.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -195,7 +195,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateOtaPackageResponse.
+        r"""Gets the version of this CreateOtaPackageResponse.
 
         **参数说明**：升级包版本号。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -206,7 +206,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateOtaPackageResponse.
+        r"""Sets the version of this CreateOtaPackageResponse.
 
         **参数说明**：升级包版本号。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -217,7 +217,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def support_source_versions(self):
-        """Gets the support_source_versions of this CreateOtaPackageResponse.
+        r"""Gets the support_source_versions of this CreateOtaPackageResponse.
 
         **参数说明**：支持用于升级此版本包的设备源版本号列表。最多支持20个源版本号。 **取值范围**：源版本号列表，源版本号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -228,7 +228,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @support_source_versions.setter
     def support_source_versions(self, support_source_versions):
-        """Sets the support_source_versions of this CreateOtaPackageResponse.
+        r"""Sets the support_source_versions of this CreateOtaPackageResponse.
 
         **参数说明**：支持用于升级此版本包的设备源版本号列表。最多支持20个源版本号。 **取值范围**：源版本号列表，源版本号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -239,7 +239,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateOtaPackageResponse.
+        r"""Gets the description of this CreateOtaPackageResponse.
 
         **参数说明**：用于描述升级包的功能等信息。 **取值范围**：长度不超过1024。
 
@@ -250,7 +250,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateOtaPackageResponse.
+        r"""Sets the description of this CreateOtaPackageResponse.
 
         **参数说明**：用于描述升级包的功能等信息。 **取值范围**：长度不超过1024。
 
@@ -261,7 +261,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def custom_info(self):
-        """Gets the custom_info of this CreateOtaPackageResponse.
+        r"""Gets the custom_info of this CreateOtaPackageResponse.
 
         **参数说明**：推送给设备的自定义信息。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该自定义信息给设备。 **取值范围**：长度不超过4096。
 
@@ -272,7 +272,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @custom_info.setter
     def custom_info(self, custom_info):
-        """Sets the custom_info of this CreateOtaPackageResponse.
+        r"""Sets the custom_info of this CreateOtaPackageResponse.
 
         **参数说明**：推送给设备的自定义信息。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该自定义信息给设备。 **取值范围**：长度不超过4096。
 
@@ -283,7 +283,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateOtaPackageResponse.
+        r"""Gets the create_time of this CreateOtaPackageResponse.
 
         软固件包上传到物联网平台的时间，格式：\"yyyyMMdd'T'HHmmss'Z'\"。
 
@@ -294,7 +294,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateOtaPackageResponse.
+        r"""Sets the create_time of this CreateOtaPackageResponse.
 
         软固件包上传到物联网平台的时间，格式：\"yyyyMMdd'T'HHmmss'Z'\"。
 
@@ -305,7 +305,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @property
     def file_location(self):
-        """Gets the file_location of this CreateOtaPackageResponse.
+        r"""Gets the file_location of this CreateOtaPackageResponse.
 
         :return: The file_location of this CreateOtaPackageResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.FileLocation`
@@ -314,7 +314,7 @@ class CreateOtaPackageResponse(SdkResponse):
 
     @file_location.setter
     def file_location(self, file_location):
-        """Sets the file_location of this CreateOtaPackageResponse.
+        r"""Sets the file_location of this CreateOtaPackageResponse.
 
         :param file_location: The file_location of this CreateOtaPackageResponse.
         :type file_location: :class:`huaweicloudsdkiotda.v5.FileLocation`

@@ -85,7 +85,7 @@ class ApiCreate:
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, mock_info=None, func_info=None, req_params=None, backend_params=None, policy_mocks=None, policy_functions=None, backend_api=None, policy_https=None):
-        """ApiCreate
+        r"""ApiCreate
 
         The model defined in huaweicloud sdk
 
@@ -245,7 +245,7 @@ class ApiCreate:
 
     @property
     def name(self):
-        """Gets the name of this ApiCreate.
+        r"""Gets the name of this ApiCreate.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -256,7 +256,7 @@ class ApiCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiCreate.
+        r"""Sets the name of this ApiCreate.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -267,7 +267,7 @@ class ApiCreate:
 
     @property
     def type(self):
-        """Gets the type of this ApiCreate.
+        r"""Gets the type of this ApiCreate.
 
         API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
 
@@ -278,7 +278,7 @@ class ApiCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiCreate.
+        r"""Sets the type of this ApiCreate.
 
         API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
 
@@ -289,7 +289,7 @@ class ApiCreate:
 
     @property
     def version(self):
-        """Gets the version of this ApiCreate.
+        r"""Gets the version of this ApiCreate.
 
         API的版本
 
@@ -300,7 +300,7 @@ class ApiCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiCreate.
+        r"""Sets the version of this ApiCreate.
 
         API的版本
 
@@ -311,7 +311,7 @@ class ApiCreate:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiCreate.
+        r"""Gets the req_protocol of this ApiCreate.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
@@ -322,7 +322,7 @@ class ApiCreate:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiCreate.
+        r"""Sets the req_protocol of this ApiCreate.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
@@ -333,7 +333,7 @@ class ApiCreate:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiCreate.
+        r"""Gets the req_method of this ApiCreate.
 
         API的请求方式
 
@@ -344,7 +344,7 @@ class ApiCreate:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiCreate.
+        r"""Sets the req_method of this ApiCreate.
 
         API的请求方式
 
@@ -355,7 +355,7 @@ class ApiCreate:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiCreate.
+        r"""Gets the req_uri of this ApiCreate.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
@@ -366,7 +366,7 @@ class ApiCreate:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiCreate.
+        r"""Sets the req_uri of this ApiCreate.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
@@ -377,7 +377,7 @@ class ApiCreate:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ApiCreate.
+        r"""Gets the auth_type of this ApiCreate.
 
         API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -388,7 +388,7 @@ class ApiCreate:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ApiCreate.
+        r"""Sets the auth_type of this ApiCreate.
 
         API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -399,7 +399,7 @@ class ApiCreate:
 
     @property
     def auth_opt(self):
-        """Gets the auth_opt of this ApiCreate.
+        r"""Gets the auth_opt of this ApiCreate.
 
         :return: The auth_opt of this ApiCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthOpt`
@@ -408,7 +408,7 @@ class ApiCreate:
 
     @auth_opt.setter
     def auth_opt(self, auth_opt):
-        """Sets the auth_opt of this ApiCreate.
+        r"""Sets the auth_opt of this ApiCreate.
 
         :param auth_opt: The auth_opt of this ApiCreate.
         :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`
@@ -417,7 +417,7 @@ class ApiCreate:
 
     @property
     def cors(self):
-        """Gets the cors of this ApiCreate.
+        r"""Gets the cors of this ApiCreate.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -428,7 +428,7 @@ class ApiCreate:
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this ApiCreate.
+        r"""Sets the cors of this ApiCreate.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -439,7 +439,7 @@ class ApiCreate:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ApiCreate.
+        r"""Gets the match_mode of this ApiCreate.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -450,7 +450,7 @@ class ApiCreate:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ApiCreate.
+        r"""Sets the match_mode of this ApiCreate.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -461,7 +461,7 @@ class ApiCreate:
 
     @property
     def backend_type(self):
-        """Gets the backend_type of this ApiCreate.
+        r"""Gets the backend_type of this ApiCreate.
 
         后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
 
@@ -472,7 +472,7 @@ class ApiCreate:
 
     @backend_type.setter
     def backend_type(self, backend_type):
-        """Sets the backend_type of this ApiCreate.
+        r"""Sets the backend_type of this ApiCreate.
 
         后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
 
@@ -483,7 +483,7 @@ class ApiCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiCreate.
+        r"""Gets the remark of this ApiCreate.
 
         API描述。  不允许带有<、>字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -494,7 +494,7 @@ class ApiCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiCreate.
+        r"""Sets the remark of this ApiCreate.
 
         API描述。  不允许带有<、>字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -505,7 +505,7 @@ class ApiCreate:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiCreate.
+        r"""Gets the group_id of this ApiCreate.
 
         API所属的分组编号
 
@@ -516,7 +516,7 @@ class ApiCreate:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiCreate.
+        r"""Sets the group_id of this ApiCreate.
 
         API所属的分组编号
 
@@ -527,7 +527,7 @@ class ApiCreate:
 
     @property
     def body_remark(self):
-        """Gets the body_remark of this ApiCreate.
+        r"""Gets the body_remark of this ApiCreate.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -538,7 +538,7 @@ class ApiCreate:
 
     @body_remark.setter
     def body_remark(self, body_remark):
-        """Sets the body_remark of this ApiCreate.
+        r"""Sets the body_remark of this ApiCreate.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -549,7 +549,7 @@ class ApiCreate:
 
     @property
     def result_normal_sample(self):
-        """Gets the result_normal_sample of this ApiCreate.
+        r"""Gets the result_normal_sample of this ApiCreate.
 
         正常响应示例，描述API的正常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -560,7 +560,7 @@ class ApiCreate:
 
     @result_normal_sample.setter
     def result_normal_sample(self, result_normal_sample):
-        """Sets the result_normal_sample of this ApiCreate.
+        r"""Sets the result_normal_sample of this ApiCreate.
 
         正常响应示例，描述API的正常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -571,7 +571,7 @@ class ApiCreate:
 
     @property
     def result_failure_sample(self):
-        """Gets the result_failure_sample of this ApiCreate.
+        r"""Gets the result_failure_sample of this ApiCreate.
 
         失败返回示例，描述API的异常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -582,7 +582,7 @@ class ApiCreate:
 
     @result_failure_sample.setter
     def result_failure_sample(self, result_failure_sample):
-        """Sets the result_failure_sample of this ApiCreate.
+        r"""Sets the result_failure_sample of this ApiCreate.
 
         失败返回示例，描述API的异常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -593,7 +593,7 @@ class ApiCreate:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiCreate.
+        r"""Gets the authorizer_id of this ApiCreate.
 
         前端自定义认证对象的ID
 
@@ -604,7 +604,7 @@ class ApiCreate:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiCreate.
+        r"""Sets the authorizer_id of this ApiCreate.
 
         前端自定义认证对象的ID
 
@@ -615,7 +615,7 @@ class ApiCreate:
 
     @property
     def tags(self):
-        """Gets the tags of this ApiCreate.
+        r"""Gets the tags of this ApiCreate.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -626,7 +626,7 @@ class ApiCreate:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ApiCreate.
+        r"""Sets the tags of this ApiCreate.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -637,7 +637,7 @@ class ApiCreate:
 
     @property
     def response_id(self):
-        """Gets the response_id of this ApiCreate.
+        r"""Gets the response_id of this ApiCreate.
 
         分组自定义响应ID  暂不支持
 
@@ -648,7 +648,7 @@ class ApiCreate:
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this ApiCreate.
+        r"""Sets the response_id of this ApiCreate.
 
         分组自定义响应ID  暂不支持
 
@@ -659,7 +659,7 @@ class ApiCreate:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiCreate.
+        r"""Gets the roma_app_id of this ApiCreate.
 
         API归属的集成应用编号  API分组为全局分组时或API绑定自定义域名时必填。
 
@@ -670,7 +670,7 @@ class ApiCreate:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiCreate.
+        r"""Sets the roma_app_id of this ApiCreate.
 
         API归属的集成应用编号  API分组为全局分组时或API绑定自定义域名时必填。
 
@@ -681,7 +681,7 @@ class ApiCreate:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ApiCreate.
+        r"""Gets the domain_name of this ApiCreate.
 
         API绑定的自定义域名，使用自定义域名时roma_app_id字段必填。
 
@@ -692,7 +692,7 @@ class ApiCreate:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ApiCreate.
+        r"""Sets the domain_name of this ApiCreate.
 
         API绑定的自定义域名，使用自定义域名时roma_app_id字段必填。
 
@@ -703,7 +703,7 @@ class ApiCreate:
 
     @property
     def tag(self):
-        """Gets the tag of this ApiCreate.
+        r"""Gets the tag of this ApiCreate.
 
         标签  待废弃，优先使用tags字段
 
@@ -714,7 +714,7 @@ class ApiCreate:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ApiCreate.
+        r"""Sets the tag of this ApiCreate.
 
         标签  待废弃，优先使用tags字段
 
@@ -725,7 +725,7 @@ class ApiCreate:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ApiCreate.
+        r"""Gets the content_type of this ApiCreate.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -736,7 +736,7 @@ class ApiCreate:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ApiCreate.
+        r"""Sets the content_type of this ApiCreate.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -747,7 +747,7 @@ class ApiCreate:
 
     @property
     def mock_info(self):
-        """Gets the mock_info of this ApiCreate.
+        r"""Gets the mock_info of this ApiCreate.
 
         :return: The mock_info of this ApiCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiMockCreate`
@@ -756,7 +756,7 @@ class ApiCreate:
 
     @mock_info.setter
     def mock_info(self, mock_info):
-        """Sets the mock_info of this ApiCreate.
+        r"""Sets the mock_info of this ApiCreate.
 
         :param mock_info: The mock_info of this ApiCreate.
         :type mock_info: :class:`huaweicloudsdkroma.v2.ApiMockCreate`
@@ -765,7 +765,7 @@ class ApiCreate:
 
     @property
     def func_info(self):
-        """Gets the func_info of this ApiCreate.
+        r"""Gets the func_info of this ApiCreate.
 
         :return: The func_info of this ApiCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiFuncCreate`
@@ -774,7 +774,7 @@ class ApiCreate:
 
     @func_info.setter
     def func_info(self, func_info):
-        """Sets the func_info of this ApiCreate.
+        r"""Sets the func_info of this ApiCreate.
 
         :param func_info: The func_info of this ApiCreate.
         :type func_info: :class:`huaweicloudsdkroma.v2.ApiFuncCreate`
@@ -783,7 +783,7 @@ class ApiCreate:
 
     @property
     def req_params(self):
-        """Gets the req_params of this ApiCreate.
+        r"""Gets the req_params of this ApiCreate.
 
         API的请求参数列表
 
@@ -794,7 +794,7 @@ class ApiCreate:
 
     @req_params.setter
     def req_params(self, req_params):
-        """Sets the req_params of this ApiCreate.
+        r"""Sets the req_params of this ApiCreate.
 
         API的请求参数列表
 
@@ -805,7 +805,7 @@ class ApiCreate:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiCreate.
+        r"""Gets the backend_params of this ApiCreate.
 
         API的后端参数列表
 
@@ -816,7 +816,7 @@ class ApiCreate:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiCreate.
+        r"""Sets the backend_params of this ApiCreate.
 
         API的后端参数列表
 
@@ -827,7 +827,7 @@ class ApiCreate:
 
     @property
     def policy_mocks(self):
-        """Gets the policy_mocks of this ApiCreate.
+        r"""Gets the policy_mocks of this ApiCreate.
 
         mock策略后端列表
 
@@ -838,7 +838,7 @@ class ApiCreate:
 
     @policy_mocks.setter
     def policy_mocks(self, policy_mocks):
-        """Sets the policy_mocks of this ApiCreate.
+        r"""Sets the policy_mocks of this ApiCreate.
 
         mock策略后端列表
 
@@ -849,7 +849,7 @@ class ApiCreate:
 
     @property
     def policy_functions(self):
-        """Gets the policy_functions of this ApiCreate.
+        r"""Gets the policy_functions of this ApiCreate.
 
         [函数工作流策略后端列表](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
 
@@ -860,7 +860,7 @@ class ApiCreate:
 
     @policy_functions.setter
     def policy_functions(self, policy_functions):
-        """Sets the policy_functions of this ApiCreate.
+        r"""Sets the policy_functions of this ApiCreate.
 
         [函数工作流策略后端列表](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
 
@@ -871,7 +871,7 @@ class ApiCreate:
 
     @property
     def backend_api(self):
-        """Gets the backend_api of this ApiCreate.
+        r"""Gets the backend_api of this ApiCreate.
 
         :return: The backend_api of this ApiCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.BackendApiCreate`
@@ -880,7 +880,7 @@ class ApiCreate:
 
     @backend_api.setter
     def backend_api(self, backend_api):
-        """Sets the backend_api of this ApiCreate.
+        r"""Sets the backend_api of this ApiCreate.
 
         :param backend_api: The backend_api of this ApiCreate.
         :type backend_api: :class:`huaweicloudsdkroma.v2.BackendApiCreate`
@@ -889,7 +889,7 @@ class ApiCreate:
 
     @property
     def policy_https(self):
-        """Gets the policy_https of this ApiCreate.
+        r"""Gets the policy_https of this ApiCreate.
 
         web策略后端列表
 
@@ -900,7 +900,7 @@ class ApiCreate:
 
     @policy_https.setter
     def policy_https(self, policy_https):
-        """Sets the policy_https of this ApiCreate.
+        r"""Sets the policy_https of this ApiCreate.
 
         web策略后端列表
 

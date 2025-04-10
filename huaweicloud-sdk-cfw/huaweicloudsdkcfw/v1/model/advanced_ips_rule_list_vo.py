@@ -27,7 +27,7 @@ class AdvancedIpsRuleListVo:
     }
 
     def __init__(self, advanced_ips_rules=None, total=None):
-        """AdvancedIpsRuleListVo
+        r"""AdvancedIpsRuleListVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AdvancedIpsRuleListVo:
 
     @property
     def advanced_ips_rules(self):
-        """Gets the advanced_ips_rules of this AdvancedIpsRuleListVo.
+        r"""Gets the advanced_ips_rules of this AdvancedIpsRuleListVo.
 
         :return: The advanced_ips_rules of this AdvancedIpsRuleListVo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleVo`]
@@ -59,7 +59,7 @@ class AdvancedIpsRuleListVo:
 
     @advanced_ips_rules.setter
     def advanced_ips_rules(self, advanced_ips_rules):
-        """Sets the advanced_ips_rules of this AdvancedIpsRuleListVo.
+        r"""Sets the advanced_ips_rules of this AdvancedIpsRuleListVo.
 
         :param advanced_ips_rules: The advanced_ips_rules of this AdvancedIpsRuleListVo.
         :type advanced_ips_rules: list[:class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleVo`]
@@ -68,7 +68,7 @@ class AdvancedIpsRuleListVo:
 
     @property
     def total(self):
-        """Gets the total of this AdvancedIpsRuleListVo.
+        r"""Gets the total of this AdvancedIpsRuleListVo.
 
         :return: The total of this AdvancedIpsRuleListVo.
         :rtype: int
@@ -77,7 +77,7 @@ class AdvancedIpsRuleListVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AdvancedIpsRuleListVo.
+        r"""Sets the total of this AdvancedIpsRuleListVo.
 
         :param total: The total of this AdvancedIpsRuleListVo.
         :type total: int

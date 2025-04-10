@@ -25,7 +25,7 @@ class CancelTasksRequest:
     }
 
     def __init__(self, body=None):
-        """CancelTasksRequest
+        r"""CancelTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CancelTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelTasksRequest.
+        r"""Gets the body of this CancelTasksRequest.
 
         :return: The body of this CancelTasksRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.CancelTasksRequestBody`
@@ -52,7 +52,7 @@ class CancelTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelTasksRequest.
+        r"""Sets the body of this CancelTasksRequest.
 
         :param body: The body of this CancelTasksRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.CancelTasksRequestBody`

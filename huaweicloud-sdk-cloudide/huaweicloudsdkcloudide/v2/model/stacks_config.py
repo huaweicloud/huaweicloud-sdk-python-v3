@@ -27,7 +27,7 @@ class StacksConfig:
     }
 
     def __init__(self, attributes=None, recipe=None):
-        """StacksConfig
+        r"""StacksConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StacksConfig:
 
     @property
     def attributes(self):
-        """Gets the attributes of this StacksConfig.
+        r"""Gets the attributes of this StacksConfig.
 
         :return: The attributes of this StacksConfig.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
@@ -59,7 +59,7 @@ class StacksConfig:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this StacksConfig.
+        r"""Sets the attributes of this StacksConfig.
 
         :param attributes: The attributes of this StacksConfig.
         :type attributes: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
@@ -68,7 +68,7 @@ class StacksConfig:
 
     @property
     def recipe(self):
-        """Gets the recipe of this StacksConfig.
+        r"""Gets the recipe of this StacksConfig.
 
         :return: The recipe of this StacksConfig.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Recipe`
@@ -77,7 +77,7 @@ class StacksConfig:
 
     @recipe.setter
     def recipe(self, recipe):
-        """Sets the recipe of this StacksConfig.
+        r"""Sets the recipe of this StacksConfig.
 
         :param recipe: The recipe of this StacksConfig.
         :type recipe: :class:`huaweicloudsdkcloudide.v2.Recipe`

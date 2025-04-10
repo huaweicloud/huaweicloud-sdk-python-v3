@@ -35,7 +35,7 @@ class OuNameInfo:
     }
 
     def __init__(self, id=None, domain_id=None, domain=None, ou_name=None, ou_dn=None, description=None):
-        """OuNameInfo
+        r"""OuNameInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OuNameInfo:
 
     @property
     def id(self):
-        """Gets the id of this OuNameInfo.
+        r"""Gets the id of this OuNameInfo.
 
         ouid。
 
@@ -89,7 +89,7 @@ class OuNameInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OuNameInfo.
+        r"""Sets the id of this OuNameInfo.
 
         ouid。
 
@@ -100,7 +100,7 @@ class OuNameInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this OuNameInfo.
+        r"""Gets the domain_id of this OuNameInfo.
 
         域id
 
@@ -111,7 +111,7 @@ class OuNameInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this OuNameInfo.
+        r"""Sets the domain_id of this OuNameInfo.
 
         域id
 
@@ -122,7 +122,7 @@ class OuNameInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this OuNameInfo.
+        r"""Gets the domain of this OuNameInfo.
 
         域名称
 
@@ -133,7 +133,7 @@ class OuNameInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this OuNameInfo.
+        r"""Sets the domain of this OuNameInfo.
 
         域名称
 
@@ -144,7 +144,7 @@ class OuNameInfo:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this OuNameInfo.
+        r"""Gets the ou_name of this OuNameInfo.
 
         OU名称
 
@@ -155,7 +155,7 @@ class OuNameInfo:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this OuNameInfo.
+        r"""Sets the ou_name of this OuNameInfo.
 
         OU名称
 
@@ -166,7 +166,7 @@ class OuNameInfo:
 
     @property
     def ou_dn(self):
-        """Gets the ou_dn of this OuNameInfo.
+        r"""Gets the ou_dn of this OuNameInfo.
 
         ouDn
 
@@ -177,7 +177,7 @@ class OuNameInfo:
 
     @ou_dn.setter
     def ou_dn(self, ou_dn):
-        """Sets the ou_dn of this OuNameInfo.
+        r"""Sets the ou_dn of this OuNameInfo.
 
         ouDn
 
@@ -188,7 +188,7 @@ class OuNameInfo:
 
     @property
     def description(self):
-        """Gets the description of this OuNameInfo.
+        r"""Gets the description of this OuNameInfo.
 
         描述
 
@@ -199,7 +199,7 @@ class OuNameInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OuNameInfo.
+        r"""Sets the description of this OuNameInfo.
 
         描述
 

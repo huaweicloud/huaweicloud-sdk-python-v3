@@ -29,7 +29,7 @@ class ListAllBranchesRequest:
     }
 
     def __init__(self, project_uuid=None, sort_field=None, sort_type=None):
-        """ListAllBranchesRequest
+        r"""ListAllBranchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAllBranchesRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ListAllBranchesRequest.
+        r"""Gets the project_uuid of this ListAllBranchesRequest.
 
         项目ID（云龙场景，传入微服务ID）
 
@@ -67,7 +67,7 @@ class ListAllBranchesRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ListAllBranchesRequest.
+        r"""Sets the project_uuid of this ListAllBranchesRequest.
 
         项目ID（云龙场景，传入微服务ID）
 
@@ -78,7 +78,7 @@ class ListAllBranchesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListAllBranchesRequest.
+        r"""Gets the sort_field of this ListAllBranchesRequest.
 
         排序字段
 
@@ -89,7 +89,7 @@ class ListAllBranchesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListAllBranchesRequest.
+        r"""Sets the sort_field of this ListAllBranchesRequest.
 
         排序字段
 
@@ -100,7 +100,7 @@ class ListAllBranchesRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListAllBranchesRequest.
+        r"""Gets the sort_type of this ListAllBranchesRequest.
 
         排序方式
 
@@ -111,7 +111,7 @@ class ListAllBranchesRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListAllBranchesRequest.
+        r"""Sets the sort_type of this ListAllBranchesRequest.
 
         排序方式
 

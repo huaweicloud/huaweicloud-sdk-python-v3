@@ -29,7 +29,7 @@ class UpdateTableOwnerRequest:
     }
 
     def __init__(self, database_name=None, table_name=None, body=None):
-        """UpdateTableOwnerRequest
+        r"""UpdateTableOwnerRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTableOwnerRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateTableOwnerRequest.
+        r"""Gets the database_name of this UpdateTableOwnerRequest.
 
         删除的数据库名称。
 
@@ -66,7 +66,7 @@ class UpdateTableOwnerRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateTableOwnerRequest.
+        r"""Sets the database_name of this UpdateTableOwnerRequest.
 
         删除的数据库名称。
 
@@ -77,7 +77,7 @@ class UpdateTableOwnerRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this UpdateTableOwnerRequest.
+        r"""Gets the table_name of this UpdateTableOwnerRequest.
 
         :return: The table_name of this UpdateTableOwnerRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class UpdateTableOwnerRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this UpdateTableOwnerRequest.
+        r"""Sets the table_name of this UpdateTableOwnerRequest.
 
         :param table_name: The table_name of this UpdateTableOwnerRequest.
         :type table_name: str
@@ -95,7 +95,7 @@ class UpdateTableOwnerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTableOwnerRequest.
+        r"""Gets the body of this UpdateTableOwnerRequest.
 
         :return: The body of this UpdateTableOwnerRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
@@ -104,7 +104,7 @@ class UpdateTableOwnerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTableOwnerRequest.
+        r"""Sets the body of this UpdateTableOwnerRequest.
 
         :param body: The body of this UpdateTableOwnerRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`

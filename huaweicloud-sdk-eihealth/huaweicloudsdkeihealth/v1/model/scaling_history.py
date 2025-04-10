@@ -35,7 +35,7 @@ class ScalingHistory:
     }
 
     def __init__(self, rule=None, action=None, count_before_scale=None, count_after_scale=None, state=None, time=None):
-        """ScalingHistory
+        r"""ScalingHistory
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ScalingHistory:
 
     @property
     def rule(self):
-        """Gets the rule of this ScalingHistory.
+        r"""Gets the rule of this ScalingHistory.
 
         策略规则
 
@@ -83,7 +83,7 @@ class ScalingHistory:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ScalingHistory.
+        r"""Sets the rule of this ScalingHistory.
 
         策略规则
 
@@ -94,7 +94,7 @@ class ScalingHistory:
 
     @property
     def action(self):
-        """Gets the action of this ScalingHistory.
+        r"""Gets the action of this ScalingHistory.
 
         执行动作
 
@@ -105,7 +105,7 @@ class ScalingHistory:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ScalingHistory.
+        r"""Sets the action of this ScalingHistory.
 
         执行动作
 
@@ -116,7 +116,7 @@ class ScalingHistory:
 
     @property
     def count_before_scale(self):
-        """Gets the count_before_scale of this ScalingHistory.
+        r"""Gets the count_before_scale of this ScalingHistory.
 
         伸缩前节点数
 
@@ -127,7 +127,7 @@ class ScalingHistory:
 
     @count_before_scale.setter
     def count_before_scale(self, count_before_scale):
-        """Sets the count_before_scale of this ScalingHistory.
+        r"""Sets the count_before_scale of this ScalingHistory.
 
         伸缩前节点数
 
@@ -138,7 +138,7 @@ class ScalingHistory:
 
     @property
     def count_after_scale(self):
-        """Gets the count_after_scale of this ScalingHistory.
+        r"""Gets the count_after_scale of this ScalingHistory.
 
         伸缩后节点数
 
@@ -149,7 +149,7 @@ class ScalingHistory:
 
     @count_after_scale.setter
     def count_after_scale(self, count_after_scale):
-        """Sets the count_after_scale of this ScalingHistory.
+        r"""Sets the count_after_scale of this ScalingHistory.
 
         伸缩后节点数
 
@@ -160,7 +160,7 @@ class ScalingHistory:
 
     @property
     def state(self):
-        """Gets the state of this ScalingHistory.
+        r"""Gets the state of this ScalingHistory.
 
         执行状态
 
@@ -171,7 +171,7 @@ class ScalingHistory:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ScalingHistory.
+        r"""Sets the state of this ScalingHistory.
 
         执行状态
 
@@ -182,7 +182,7 @@ class ScalingHistory:
 
     @property
     def time(self):
-        """Gets the time of this ScalingHistory.
+        r"""Gets the time of this ScalingHistory.
 
         执行时间
 
@@ -193,7 +193,7 @@ class ScalingHistory:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ScalingHistory.
+        r"""Sets the time of this ScalingHistory.
 
         执行时间
 

@@ -25,7 +25,7 @@ class NeutronUpdateRouterRequestBody:
     }
 
     def __init__(self, router=None):
-        """NeutronUpdateRouterRequestBody
+        r"""NeutronUpdateRouterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronUpdateRouterRequestBody:
 
     @property
     def router(self):
-        """Gets the router of this NeutronUpdateRouterRequestBody.
+        r"""Gets the router of this NeutronUpdateRouterRequestBody.
 
         :return: The router of this NeutronUpdateRouterRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterOption`
@@ -51,7 +51,7 @@ class NeutronUpdateRouterRequestBody:
 
     @router.setter
     def router(self, router):
-        """Sets the router of this NeutronUpdateRouterRequestBody.
+        r"""Sets the router of this NeutronUpdateRouterRequestBody.
 
         :param router: The router of this NeutronUpdateRouterRequestBody.
         :type router: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterOption`

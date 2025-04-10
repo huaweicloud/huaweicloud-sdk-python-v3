@@ -26,7 +26,7 @@ class ListDeviceTunnelsResponse(SdkResponse):
     }
 
     def __init__(self, tunnels=None):
-        """ListDeviceTunnelsResponse
+        r"""ListDeviceTunnelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDeviceTunnelsResponse(SdkResponse):
 
     @property
     def tunnels(self):
-        """Gets the tunnels of this ListDeviceTunnelsResponse.
+        r"""Gets the tunnels of this ListDeviceTunnelsResponse.
 
         隧道信息列表。
 
@@ -55,7 +55,7 @@ class ListDeviceTunnelsResponse(SdkResponse):
 
     @tunnels.setter
     def tunnels(self, tunnels):
-        """Sets the tunnels of this ListDeviceTunnelsResponse.
+        r"""Sets the tunnels of this ListDeviceTunnelsResponse.
 
         隧道信息列表。
 

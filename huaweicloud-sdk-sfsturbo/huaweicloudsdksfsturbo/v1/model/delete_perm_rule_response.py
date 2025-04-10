@@ -24,7 +24,7 @@ class DeletePermRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePermRuleResponse
+        r"""DeletePermRuleResponse
 
         The model defined in huaweicloud sdk
 

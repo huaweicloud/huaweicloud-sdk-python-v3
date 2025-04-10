@@ -23,7 +23,7 @@ class ShowVolumeTypesRequest:
     }
 
     def __init__(self):
-        """ShowVolumeTypesRequest
+        r"""ShowVolumeTypesRequest
 
         The model defined in huaweicloud sdk
 

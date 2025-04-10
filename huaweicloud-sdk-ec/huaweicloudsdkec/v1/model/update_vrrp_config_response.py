@@ -38,7 +38,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
     }
 
     def __init__(self, ieg_id=None, virtual_router_id=None, virtual_ip=None, active_equipment_id=None, active_interface_name=None, standby_equipment_id=None, standby_interface_name=None):
-        """UpdateVrrpConfigResponse
+        r"""UpdateVrrpConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateVrrpConfigResponse.
+        r"""Gets the ieg_id of this UpdateVrrpConfigResponse.
 
         智能企业网关ID
 
@@ -97,7 +97,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateVrrpConfigResponse.
+        r"""Sets the ieg_id of this UpdateVrrpConfigResponse.
 
         智能企业网关ID
 
@@ -108,7 +108,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def virtual_router_id(self):
-        """Gets the virtual_router_id of this UpdateVrrpConfigResponse.
+        r"""Gets the virtual_router_id of this UpdateVrrpConfigResponse.
 
         虚路由ID
 
@@ -119,7 +119,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @virtual_router_id.setter
     def virtual_router_id(self, virtual_router_id):
-        """Sets the virtual_router_id of this UpdateVrrpConfigResponse.
+        r"""Sets the virtual_router_id of this UpdateVrrpConfigResponse.
 
         虚路由ID
 
@@ -130,7 +130,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this UpdateVrrpConfigResponse.
+        r"""Gets the virtual_ip of this UpdateVrrpConfigResponse.
 
         虚IP
 
@@ -141,7 +141,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this UpdateVrrpConfigResponse.
+        r"""Sets the virtual_ip of this UpdateVrrpConfigResponse.
 
         虚IP
 
@@ -152,7 +152,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def active_equipment_id(self):
-        """Gets the active_equipment_id of this UpdateVrrpConfigResponse.
+        r"""Gets the active_equipment_id of this UpdateVrrpConfigResponse.
 
         主设备ID
 
@@ -163,7 +163,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @active_equipment_id.setter
     def active_equipment_id(self, active_equipment_id):
-        """Sets the active_equipment_id of this UpdateVrrpConfigResponse.
+        r"""Sets the active_equipment_id of this UpdateVrrpConfigResponse.
 
         主设备ID
 
@@ -174,7 +174,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def active_interface_name(self):
-        """Gets the active_interface_name of this UpdateVrrpConfigResponse.
+        r"""Gets the active_interface_name of this UpdateVrrpConfigResponse.
 
         主设备接口名字
 
@@ -185,7 +185,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @active_interface_name.setter
     def active_interface_name(self, active_interface_name):
-        """Sets the active_interface_name of this UpdateVrrpConfigResponse.
+        r"""Sets the active_interface_name of this UpdateVrrpConfigResponse.
 
         主设备接口名字
 
@@ -196,7 +196,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def standby_equipment_id(self):
-        """Gets the standby_equipment_id of this UpdateVrrpConfigResponse.
+        r"""Gets the standby_equipment_id of this UpdateVrrpConfigResponse.
 
         备设备ID
 
@@ -207,7 +207,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @standby_equipment_id.setter
     def standby_equipment_id(self, standby_equipment_id):
-        """Sets the standby_equipment_id of this UpdateVrrpConfigResponse.
+        r"""Sets the standby_equipment_id of this UpdateVrrpConfigResponse.
 
         备设备ID
 
@@ -218,7 +218,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @property
     def standby_interface_name(self):
-        """Gets the standby_interface_name of this UpdateVrrpConfigResponse.
+        r"""Gets the standby_interface_name of this UpdateVrrpConfigResponse.
 
         备设备接口名字
 
@@ -229,7 +229,7 @@ class UpdateVrrpConfigResponse(SdkResponse):
 
     @standby_interface_name.setter
     def standby_interface_name(self, standby_interface_name):
-        """Sets the standby_interface_name of this UpdateVrrpConfigResponse.
+        r"""Sets the standby_interface_name of this UpdateVrrpConfigResponse.
 
         备设备接口名字
 

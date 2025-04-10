@@ -43,7 +43,7 @@ class JobCard:
     }
 
     def __init__(self, name=None, job_id=None, is_send=None, end_time=None, average_score=None, submit_job_num=None, create_status=None, send_type=None, is_score_visibility=None, send_time=None):
-        """JobCard
+        r"""JobCard
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class JobCard:
 
     @property
     def name(self):
-        """Gets the name of this JobCard.
+        r"""Gets the name of this JobCard.
 
         作业名称
 
@@ -107,7 +107,7 @@ class JobCard:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobCard.
+        r"""Sets the name of this JobCard.
 
         作业名称
 
@@ -118,7 +118,7 @@ class JobCard:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobCard.
+        r"""Gets the job_id of this JobCard.
 
         作业ID
 
@@ -129,7 +129,7 @@ class JobCard:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobCard.
+        r"""Sets the job_id of this JobCard.
 
         作业ID
 
@@ -140,7 +140,7 @@ class JobCard:
 
     @property
     def is_send(self):
-        """Gets the is_send of this JobCard.
+        r"""Gets the is_send of this JobCard.
 
         作业下发状态(unsend:作业未下发, send:作业已下发)
 
@@ -151,7 +151,7 @@ class JobCard:
 
     @is_send.setter
     def is_send(self, is_send):
-        """Sets the is_send of this JobCard.
+        r"""Sets the is_send of this JobCard.
 
         作业下发状态(unsend:作业未下发, send:作业已下发)
 
@@ -162,7 +162,7 @@ class JobCard:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobCard.
+        r"""Gets the end_time of this JobCard.
 
         作业截止时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -173,7 +173,7 @@ class JobCard:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobCard.
+        r"""Sets the end_time of this JobCard.
 
         作业截止时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -184,7 +184,7 @@ class JobCard:
 
     @property
     def average_score(self):
-        """Gets the average_score of this JobCard.
+        r"""Gets the average_score of this JobCard.
 
         作业均分
 
@@ -195,7 +195,7 @@ class JobCard:
 
     @average_score.setter
     def average_score(self, average_score):
-        """Sets the average_score of this JobCard.
+        r"""Sets the average_score of this JobCard.
 
         作业均分
 
@@ -206,7 +206,7 @@ class JobCard:
 
     @property
     def submit_job_num(self):
-        """Gets the submit_job_num of this JobCard.
+        r"""Gets the submit_job_num of this JobCard.
 
         作业提交人数
 
@@ -217,7 +217,7 @@ class JobCard:
 
     @submit_job_num.setter
     def submit_job_num(self, submit_job_num):
-        """Sets the submit_job_num of this JobCard.
+        r"""Sets the submit_job_num of this JobCard.
 
         作业提交人数
 
@@ -228,7 +228,7 @@ class JobCard:
 
     @property
     def create_status(self):
-        """Gets the create_status of this JobCard.
+        r"""Gets the create_status of this JobCard.
 
         作业创建状态(yes:作业可以下发, no:作业不能下发)
 
@@ -239,7 +239,7 @@ class JobCard:
 
     @create_status.setter
     def create_status(self, create_status):
-        """Sets the create_status of this JobCard.
+        r"""Sets the create_status of this JobCard.
 
         作业创建状态(yes:作业可以下发, no:作业不能下发)
 
@@ -250,7 +250,7 @@ class JobCard:
 
     @property
     def send_type(self):
-        """Gets the send_type of this JobCard.
+        r"""Gets the send_type of this JobCard.
 
         作业下发类型(specific:指定成员下发, all:下发课堂全员)
 
@@ -261,7 +261,7 @@ class JobCard:
 
     @send_type.setter
     def send_type(self, send_type):
-        """Sets the send_type of this JobCard.
+        r"""Sets the send_type of this JobCard.
 
         作业下发类型(specific:指定成员下发, all:下发课堂全员)
 
@@ -272,7 +272,7 @@ class JobCard:
 
     @property
     def is_score_visibility(self):
-        """Gets the is_score_visibility of this JobCard.
+        r"""Gets the is_score_visibility of this JobCard.
 
         作业成绩是否公布(unpublish:表示未公布成绩, publish:表示已公布成绩)
 
@@ -283,7 +283,7 @@ class JobCard:
 
     @is_score_visibility.setter
     def is_score_visibility(self, is_score_visibility):
-        """Sets the is_score_visibility of this JobCard.
+        r"""Sets the is_score_visibility of this JobCard.
 
         作业成绩是否公布(unpublish:表示未公布成绩, publish:表示已公布成绩)
 
@@ -294,7 +294,7 @@ class JobCard:
 
     @property
     def send_time(self):
-        """Gets the send_time of this JobCard.
+        r"""Gets the send_time of this JobCard.
 
         作业下发时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -305,7 +305,7 @@ class JobCard:
 
     @send_time.setter
     def send_time(self, send_time):
-        """Sets the send_time of this JobCard.
+        r"""Sets the send_time of this JobCard.
 
         作业下发时间, 日期格式：yyyy-MM-dd HH:mm:ss
 

@@ -27,7 +27,7 @@ class TwinUpdateDetail:
     }
 
     def __init__(self, twin=None, property_visitors=None):
-        """TwinUpdateDetail
+        r"""TwinUpdateDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TwinUpdateDetail:
 
     @property
     def twin(self):
-        """Gets the twin of this TwinUpdateDetail.
+        r"""Gets the twin of this TwinUpdateDetail.
 
         终端设备动态属性
 
@@ -61,7 +61,7 @@ class TwinUpdateDetail:
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this TwinUpdateDetail.
+        r"""Sets the twin of this TwinUpdateDetail.
 
         终端设备动态属性
 
@@ -72,7 +72,7 @@ class TwinUpdateDetail:
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this TwinUpdateDetail.
+        r"""Gets the property_visitors of this TwinUpdateDetail.
 
         孪生属性配置，与access_protocol关联。
 
@@ -83,7 +83,7 @@ class TwinUpdateDetail:
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this TwinUpdateDetail.
+        r"""Sets the property_visitors of this TwinUpdateDetail.
 
         孪生属性配置，与access_protocol关联。
 

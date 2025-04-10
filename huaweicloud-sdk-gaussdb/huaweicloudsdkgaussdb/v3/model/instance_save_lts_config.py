@@ -31,7 +31,7 @@ class InstanceSaveLtsConfig:
     }
 
     def __init__(self, instance_id=None, log_type=None, lts_group_id=None, lts_stream_id=None):
-        """InstanceSaveLtsConfig
+        r"""InstanceSaveLtsConfig
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class InstanceSaveLtsConfig:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceSaveLtsConfig.
+        r"""Gets the instance_id of this InstanceSaveLtsConfig.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class InstanceSaveLtsConfig:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceSaveLtsConfig.
+        r"""Sets the instance_id of this InstanceSaveLtsConfig.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class InstanceSaveLtsConfig:
 
     @property
     def log_type(self):
-        """Gets the log_type of this InstanceSaveLtsConfig.
+        r"""Gets the log_type of this InstanceSaveLtsConfig.
 
         日志类型。
 
@@ -93,7 +93,7 @@ class InstanceSaveLtsConfig:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this InstanceSaveLtsConfig.
+        r"""Sets the log_type of this InstanceSaveLtsConfig.
 
         日志类型。
 
@@ -104,7 +104,7 @@ class InstanceSaveLtsConfig:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this InstanceSaveLtsConfig.
+        r"""Gets the lts_group_id of this InstanceSaveLtsConfig.
 
         日志组ID。
 
@@ -115,7 +115,7 @@ class InstanceSaveLtsConfig:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this InstanceSaveLtsConfig.
+        r"""Sets the lts_group_id of this InstanceSaveLtsConfig.
 
         日志组ID。
 
@@ -126,7 +126,7 @@ class InstanceSaveLtsConfig:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this InstanceSaveLtsConfig.
+        r"""Gets the lts_stream_id of this InstanceSaveLtsConfig.
 
         日志流ID。
 
@@ -137,7 +137,7 @@ class InstanceSaveLtsConfig:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this InstanceSaveLtsConfig.
+        r"""Sets the lts_stream_id of this InstanceSaveLtsConfig.
 
         日志流ID。
 

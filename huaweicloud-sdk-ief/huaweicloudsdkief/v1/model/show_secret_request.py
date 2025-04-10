@@ -27,7 +27,7 @@ class ShowSecretRequest:
     }
 
     def __init__(self, ief_instance_id=None, secret_id=None):
-        """ShowSecretRequest
+        r"""ShowSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSecretRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowSecretRequest.
+        r"""Gets the ief_instance_id of this ShowSecretRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ShowSecretRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowSecretRequest.
+        r"""Sets the ief_instance_id of this ShowSecretRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ShowSecretRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this ShowSecretRequest.
+        r"""Gets the secret_id of this ShowSecretRequest.
 
         密钥ID
 
@@ -82,7 +82,7 @@ class ShowSecretRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this ShowSecretRequest.
+        r"""Sets the secret_id of this ShowSecretRequest.
 
         密钥ID
 

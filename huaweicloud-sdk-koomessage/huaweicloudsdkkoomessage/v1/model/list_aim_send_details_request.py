@@ -39,7 +39,7 @@ class ListAimSendDetailsRequest:
     }
 
     def __init__(self, task_id=None, tpl_id=None, sms_sign=None, cust_flag=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ListAimSendDetailsRequest
+        r"""ListAimSendDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListAimSendDetailsRequest.
+        r"""Gets the task_id of this ListAimSendDetailsRequest.
 
         任务ID。
 
@@ -101,7 +101,7 @@ class ListAimSendDetailsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListAimSendDetailsRequest.
+        r"""Sets the task_id of this ListAimSendDetailsRequest.
 
         任务ID。
 
@@ -112,7 +112,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListAimSendDetailsRequest.
+        r"""Gets the tpl_id of this ListAimSendDetailsRequest.
 
         智能信息模板ID。
 
@@ -123,7 +123,7 @@ class ListAimSendDetailsRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListAimSendDetailsRequest.
+        r"""Sets the tpl_id of this ListAimSendDetailsRequest.
 
         智能信息模板ID。
 
@@ -134,7 +134,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def sms_sign(self):
-        """Gets the sms_sign of this ListAimSendDetailsRequest.
+        r"""Gets the sms_sign of this ListAimSendDetailsRequest.
 
         签名。
 
@@ -145,7 +145,7 @@ class ListAimSendDetailsRequest:
 
     @sms_sign.setter
     def sms_sign(self, sms_sign):
-        """Sets the sms_sign of this ListAimSendDetailsRequest.
+        r"""Sets the sms_sign of this ListAimSendDetailsRequest.
 
         签名。
 
@@ -156,7 +156,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this ListAimSendDetailsRequest.
+        r"""Gets the cust_flag of this ListAimSendDetailsRequest.
 
         创建解析任务时填写用户唯一标识。  > 手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。 
 
@@ -167,7 +167,7 @@ class ListAimSendDetailsRequest:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this ListAimSendDetailsRequest.
+        r"""Sets the cust_flag of this ListAimSendDetailsRequest.
 
         创建解析任务时填写用户唯一标识。  > 手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。 
 
@@ -178,7 +178,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimSendDetailsRequest.
+        r"""Gets the begin_time of this ListAimSendDetailsRequest.
 
          发送开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。 > > 仅支持查询最近1年内的发送明细。 
 
@@ -189,7 +189,7 @@ class ListAimSendDetailsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimSendDetailsRequest.
+        r"""Sets the begin_time of this ListAimSendDetailsRequest.
 
          发送开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。 > > 仅支持查询最近1年内的发送明细。 
 
@@ -200,7 +200,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimSendDetailsRequest.
+        r"""Gets the end_time of this ListAimSendDetailsRequest.
 
         发送结束时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。 
 
@@ -211,7 +211,7 @@ class ListAimSendDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimSendDetailsRequest.
+        r"""Sets the end_time of this ListAimSendDetailsRequest.
 
         发送结束时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。 
 
@@ -222,7 +222,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimSendDetailsRequest.
+        r"""Gets the offset of this ListAimSendDetailsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -233,7 +233,7 @@ class ListAimSendDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimSendDetailsRequest.
+        r"""Sets the offset of this ListAimSendDetailsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -244,7 +244,7 @@ class ListAimSendDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimSendDetailsRequest.
+        r"""Gets the limit of this ListAimSendDetailsRequest.
 
         每页显示的条目数量。 
 
@@ -255,7 +255,7 @@ class ListAimSendDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimSendDetailsRequest.
+        r"""Sets the limit of this ListAimSendDetailsRequest.
 
         每页显示的条目数量。 
 

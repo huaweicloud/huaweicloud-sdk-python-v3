@@ -25,7 +25,7 @@ class DetachVipBandwidthRequest:
     }
 
     def __init__(self, vport_id=None):
-        """DetachVipBandwidthRequest
+        r"""DetachVipBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetachVipBandwidthRequest:
 
     @property
     def vport_id(self):
-        """Gets the vport_id of this DetachVipBandwidthRequest.
+        r"""Gets the vport_id of this DetachVipBandwidthRequest.
 
         IPv6虚拟IP或者IPv6私网IP ID。
 
@@ -53,7 +53,7 @@ class DetachVipBandwidthRequest:
 
     @vport_id.setter
     def vport_id(self, vport_id):
-        """Sets the vport_id of this DetachVipBandwidthRequest.
+        r"""Sets the vport_id of this DetachVipBandwidthRequest.
 
         IPv6虚拟IP或者IPv6私网IP ID。
 

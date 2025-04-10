@@ -32,7 +32,7 @@ class ShowComponentByNameResponse(SdkResponse):
     }
 
     def __init__(self, name=None, id=None, aom_id=None, app_id=None):
-        """ShowComponentByNameResponse
+        r"""ShowComponentByNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowComponentByNameResponse.
+        r"""Gets the name of this ShowComponentByNameResponse.
 
         组件名称
 
@@ -76,7 +76,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowComponentByNameResponse.
+        r"""Sets the name of this ShowComponentByNameResponse.
 
         组件名称
 
@@ -87,7 +87,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowComponentByNameResponse.
+        r"""Gets the id of this ShowComponentByNameResponse.
 
         组件id
 
@@ -98,7 +98,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowComponentByNameResponse.
+        r"""Sets the id of this ShowComponentByNameResponse.
 
         组件id
 
@@ -109,7 +109,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @property
     def aom_id(self):
-        """Gets the aom_id of this ShowComponentByNameResponse.
+        r"""Gets the aom_id of this ShowComponentByNameResponse.
 
         aomId
 
@@ -120,7 +120,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @aom_id.setter
     def aom_id(self, aom_id):
-        """Sets the aom_id of this ShowComponentByNameResponse.
+        r"""Sets the aom_id of this ShowComponentByNameResponse.
 
         aomId
 
@@ -131,7 +131,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowComponentByNameResponse.
+        r"""Gets the app_id of this ShowComponentByNameResponse.
 
         应用id
 
@@ -142,7 +142,7 @@ class ShowComponentByNameResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowComponentByNameResponse.
+        r"""Sets the app_id of this ShowComponentByNameResponse.
 
         应用id
 

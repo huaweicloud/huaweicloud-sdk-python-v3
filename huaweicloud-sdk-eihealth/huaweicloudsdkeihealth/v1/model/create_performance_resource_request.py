@@ -25,7 +25,7 @@ class CreatePerformanceResourceRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePerformanceResourceRequest
+        r"""CreatePerformanceResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePerformanceResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePerformanceResourceRequest.
+        r"""Gets the body of this CreatePerformanceResourceRequest.
 
         :return: The body of this CreatePerformanceResourceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceReq`
@@ -52,7 +52,7 @@ class CreatePerformanceResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePerformanceResourceRequest.
+        r"""Sets the body of this CreatePerformanceResourceRequest.
 
         :param body: The body of this CreatePerformanceResourceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceReq`

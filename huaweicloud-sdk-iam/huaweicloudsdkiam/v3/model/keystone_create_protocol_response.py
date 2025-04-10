@@ -26,7 +26,7 @@ class KeystoneCreateProtocolResponse(SdkResponse):
     }
 
     def __init__(self, protocol=None):
-        """KeystoneCreateProtocolResponse
+        r"""KeystoneCreateProtocolResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneCreateProtocolResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this KeystoneCreateProtocolResponse.
+        r"""Gets the protocol of this KeystoneCreateProtocolResponse.
 
         :return: The protocol of this KeystoneCreateProtocolResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolResult`
@@ -53,7 +53,7 @@ class KeystoneCreateProtocolResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this KeystoneCreateProtocolResponse.
+        r"""Sets the protocol of this KeystoneCreateProtocolResponse.
 
         :param protocol: The protocol of this KeystoneCreateProtocolResponse.
         :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolResult`

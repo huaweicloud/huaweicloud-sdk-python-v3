@@ -27,7 +27,7 @@ class AttachEip2Request:
     }
 
     def __init__(self, graph_id=None, body=None):
-        """AttachEip2Request
+        r"""AttachEip2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachEip2Request:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this AttachEip2Request.
+        r"""Gets the graph_id of this AttachEip2Request.
 
         图ID。
 
@@ -60,7 +60,7 @@ class AttachEip2Request:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this AttachEip2Request.
+        r"""Sets the graph_id of this AttachEip2Request.
 
         图ID。
 
@@ -71,7 +71,7 @@ class AttachEip2Request:
 
     @property
     def body(self):
-        """Gets the body of this AttachEip2Request.
+        r"""Gets the body of this AttachEip2Request.
 
         :return: The body of this AttachEip2Request.
         :rtype: :class:`huaweicloudsdkges.v2.AttachEipReq`
@@ -80,7 +80,7 @@ class AttachEip2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachEip2Request.
+        r"""Sets the body of this AttachEip2Request.
 
         :param body: The body of this AttachEip2Request.
         :type body: :class:`huaweicloudsdkges.v2.AttachEipReq`

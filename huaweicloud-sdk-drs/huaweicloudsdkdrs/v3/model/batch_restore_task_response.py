@@ -28,7 +28,7 @@ class BatchRestoreTaskResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchRestoreTaskResponse
+        r"""BatchRestoreTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchRestoreTaskResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchRestoreTaskResponse.
+        r"""Gets the results of this BatchRestoreTaskResponse.
 
         批量续传返回列表
 
@@ -62,7 +62,7 @@ class BatchRestoreTaskResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchRestoreTaskResponse.
+        r"""Sets the results of this BatchRestoreTaskResponse.
 
         批量续传返回列表
 
@@ -73,7 +73,7 @@ class BatchRestoreTaskResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchRestoreTaskResponse.
+        r"""Gets the count of this BatchRestoreTaskResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchRestoreTaskResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchRestoreTaskResponse.
+        r"""Sets the count of this BatchRestoreTaskResponse.
 
         总数
 

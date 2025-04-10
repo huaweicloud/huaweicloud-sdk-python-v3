@@ -28,7 +28,7 @@ class SearchDebugInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, publish_messages=None):
-        """SearchDebugInfoResponse
+        r"""SearchDebugInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchDebugInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this SearchDebugInfoResponse.
+        r"""Gets the total of this SearchDebugInfoResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class SearchDebugInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchDebugInfoResponse.
+        r"""Sets the total of this SearchDebugInfoResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class SearchDebugInfoResponse(SdkResponse):
 
     @property
     def publish_messages(self):
-        """Gets the publish_messages of this SearchDebugInfoResponse.
+        r"""Gets the publish_messages of this SearchDebugInfoResponse.
 
         发布信息列表
 
@@ -84,7 +84,7 @@ class SearchDebugInfoResponse(SdkResponse):
 
     @publish_messages.setter
     def publish_messages(self, publish_messages):
-        """Sets the publish_messages of this SearchDebugInfoResponse.
+        r"""Sets the publish_messages of this SearchDebugInfoResponse.
 
         发布信息列表
 

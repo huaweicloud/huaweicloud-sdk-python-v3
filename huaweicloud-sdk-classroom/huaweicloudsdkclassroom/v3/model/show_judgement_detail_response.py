@@ -36,7 +36,7 @@ class ShowJudgementDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_status=None, status=None, judgement_id=None, start_time=None, end_time=None, result=None):
-        """ShowJudgementDetailResponse
+        r"""ShowJudgementDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowJudgementDetailResponse.
+        r"""Gets the task_status of this ShowJudgementDetailResponse.
 
         任务回调状态:callback_success(回调成功)、callback_error(回调出错)
 
@@ -90,7 +90,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowJudgementDetailResponse.
+        r"""Sets the task_status of this ShowJudgementDetailResponse.
 
         任务回调状态:callback_success(回调成功)、callback_error(回调出错)
 
@@ -101,7 +101,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJudgementDetailResponse.
+        r"""Gets the status of this ShowJudgementDetailResponse.
 
         任务运行状态:success(成功)、compile_error(编译错误)、internal_error(系统内部错误)、run_timeout(运行超时)、judging(代码运行中)、runtime_error(运行出错)、output_match_error(不符合输出规范)
 
@@ -112,7 +112,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJudgementDetailResponse.
+        r"""Sets the status of this ShowJudgementDetailResponse.
 
         任务运行状态:success(成功)、compile_error(编译错误)、internal_error(系统内部错误)、run_timeout(运行超时)、judging(代码运行中)、runtime_error(运行出错)、output_match_error(不符合输出规范)
 
@@ -123,7 +123,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @property
     def judgement_id(self):
-        """Gets the judgement_id of this ShowJudgementDetailResponse.
+        r"""Gets the judgement_id of this ShowJudgementDetailResponse.
 
         判题任务ID
 
@@ -134,7 +134,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @judgement_id.setter
     def judgement_id(self, judgement_id):
-        """Sets the judgement_id of this ShowJudgementDetailResponse.
+        r"""Sets the judgement_id of this ShowJudgementDetailResponse.
 
         判题任务ID
 
@@ -145,7 +145,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowJudgementDetailResponse.
+        r"""Gets the start_time of this ShowJudgementDetailResponse.
 
         任务开始时间
 
@@ -156,7 +156,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowJudgementDetailResponse.
+        r"""Sets the start_time of this ShowJudgementDetailResponse.
 
         任务开始时间
 
@@ -167,7 +167,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJudgementDetailResponse.
+        r"""Gets the end_time of this ShowJudgementDetailResponse.
 
         任务结束时间
 
@@ -178,7 +178,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJudgementDetailResponse.
+        r"""Sets the end_time of this ShowJudgementDetailResponse.
 
         任务结束时间
 
@@ -189,7 +189,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowJudgementDetailResponse.
+        r"""Gets the result of this ShowJudgementDetailResponse.
 
         :return: The result of this ShowJudgementDetailResponse.
         :rtype: :class:`huaweicloudsdkclassroom.v3.JudgementResult`
@@ -198,7 +198,7 @@ class ShowJudgementDetailResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowJudgementDetailResponse.
+        r"""Sets the result of this ShowJudgementDetailResponse.
 
         :param result: The result of this ShowJudgementDetailResponse.
         :type result: :class:`huaweicloudsdkclassroom.v3.JudgementResult`

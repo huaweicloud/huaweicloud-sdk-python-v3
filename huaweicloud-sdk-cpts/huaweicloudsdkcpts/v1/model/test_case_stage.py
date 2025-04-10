@@ -63,7 +63,7 @@ class TestCaseStage:
     }
 
     def __init__(self, operate_mode=None, name=None, time=None, start_time=None, end_time=None, issue_num=None, count=None, pressure_mode=None, tps_value=None, current_user_num=None, current_tps=None, voltage_regulating_mode=None, maximum=None, minimum=None, loop_count=None, max_duration=None, ramp_up=None, peak_load_kpis=None, step_duration=None, step_size=None):
-        """TestCaseStage
+        r"""TestCaseStage
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class TestCaseStage:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this TestCaseStage.
+        r"""Gets the operate_mode of this TestCaseStage.
 
         压力阶段模式，0：时长模式；1：次数模式
 
@@ -187,7 +187,7 @@ class TestCaseStage:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this TestCaseStage.
+        r"""Sets the operate_mode of this TestCaseStage.
 
         压力阶段模式，0：时长模式；1：次数模式
 
@@ -198,7 +198,7 @@ class TestCaseStage:
 
     @property
     def name(self):
-        """Gets the name of this TestCaseStage.
+        r"""Gets the name of this TestCaseStage.
 
         阶段名称
 
@@ -209,7 +209,7 @@ class TestCaseStage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestCaseStage.
+        r"""Sets the name of this TestCaseStage.
 
         阶段名称
 
@@ -220,7 +220,7 @@ class TestCaseStage:
 
     @property
     def time(self):
-        """Gets the time of this TestCaseStage.
+        r"""Gets the time of this TestCaseStage.
 
         压测时长（单位：秒）
 
@@ -231,7 +231,7 @@ class TestCaseStage:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TestCaseStage.
+        r"""Sets the time of this TestCaseStage.
 
         压测时长（单位：秒）
 
@@ -242,7 +242,7 @@ class TestCaseStage:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TestCaseStage.
+        r"""Gets the start_time of this TestCaseStage.
 
         开始时间
 
@@ -253,7 +253,7 @@ class TestCaseStage:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TestCaseStage.
+        r"""Sets the start_time of this TestCaseStage.
 
         开始时间
 
@@ -264,7 +264,7 @@ class TestCaseStage:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TestCaseStage.
+        r"""Gets the end_time of this TestCaseStage.
 
         结束时间
 
@@ -275,7 +275,7 @@ class TestCaseStage:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TestCaseStage.
+        r"""Sets the end_time of this TestCaseStage.
 
         结束时间
 
@@ -286,7 +286,7 @@ class TestCaseStage:
 
     @property
     def issue_num(self):
-        """Gets the issue_num of this TestCaseStage.
+        r"""Gets the issue_num of this TestCaseStage.
 
         最大并发数
 
@@ -297,7 +297,7 @@ class TestCaseStage:
 
     @issue_num.setter
     def issue_num(self, issue_num):
-        """Sets the issue_num of this TestCaseStage.
+        r"""Sets the issue_num of this TestCaseStage.
 
         最大并发数
 
@@ -308,7 +308,7 @@ class TestCaseStage:
 
     @property
     def count(self):
-        """Gets the count of this TestCaseStage.
+        r"""Gets the count of this TestCaseStage.
 
         次数模式发送总次数
 
@@ -319,7 +319,7 @@ class TestCaseStage:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this TestCaseStage.
+        r"""Sets the count of this TestCaseStage.
 
         次数模式发送总次数
 
@@ -330,7 +330,7 @@ class TestCaseStage:
 
     @property
     def pressure_mode(self):
-        """Gets the pressure_mode of this TestCaseStage.
+        r"""Gets the pressure_mode of this TestCaseStage.
 
         压力模式，0：并发模式；1：TPS模式；2：摸高模式；3：浪涌并发模式；4：浪涌TPS模式；5：震荡并发模式；6：震荡TPS模式；7：智能摸高模式
 
@@ -341,7 +341,7 @@ class TestCaseStage:
 
     @pressure_mode.setter
     def pressure_mode(self, pressure_mode):
-        """Sets the pressure_mode of this TestCaseStage.
+        r"""Sets the pressure_mode of this TestCaseStage.
 
         压力模式，0：并发模式；1：TPS模式；2：摸高模式；3：浪涌并发模式；4：浪涌TPS模式；5：震荡并发模式；6：震荡TPS模式；7：智能摸高模式
 
@@ -352,7 +352,7 @@ class TestCaseStage:
 
     @property
     def tps_value(self):
-        """Gets the tps_value of this TestCaseStage.
+        r"""Gets the tps_value of this TestCaseStage.
 
         TPS模式下TPS值
 
@@ -363,7 +363,7 @@ class TestCaseStage:
 
     @tps_value.setter
     def tps_value(self, tps_value):
-        """Sets the tps_value of this TestCaseStage.
+        r"""Sets the tps_value of this TestCaseStage.
 
         TPS模式下TPS值
 
@@ -374,7 +374,7 @@ class TestCaseStage:
 
     @property
     def current_user_num(self):
-        """Gets the current_user_num of this TestCaseStage.
+        r"""Gets the current_user_num of this TestCaseStage.
 
         起始并发数
 
@@ -385,7 +385,7 @@ class TestCaseStage:
 
     @current_user_num.setter
     def current_user_num(self, current_user_num):
-        """Sets the current_user_num of this TestCaseStage.
+        r"""Sets the current_user_num of this TestCaseStage.
 
         起始并发数
 
@@ -396,7 +396,7 @@ class TestCaseStage:
 
     @property
     def current_tps(self):
-        """Gets the current_tps of this TestCaseStage.
+        r"""Gets the current_tps of this TestCaseStage.
 
         起始tps值
 
@@ -407,7 +407,7 @@ class TestCaseStage:
 
     @current_tps.setter
     def current_tps(self, current_tps):
-        """Sets the current_tps of this TestCaseStage.
+        r"""Sets the current_tps of this TestCaseStage.
 
         起始tps值
 
@@ -418,7 +418,7 @@ class TestCaseStage:
 
     @property
     def voltage_regulating_mode(self):
-        """Gets the voltage_regulating_mode of this TestCaseStage.
+        r"""Gets the voltage_regulating_mode of this TestCaseStage.
 
         调压模式，0：自动调压模式；1：手动调压模式
 
@@ -429,7 +429,7 @@ class TestCaseStage:
 
     @voltage_regulating_mode.setter
     def voltage_regulating_mode(self, voltage_regulating_mode):
-        """Sets the voltage_regulating_mode of this TestCaseStage.
+        r"""Sets the voltage_regulating_mode of this TestCaseStage.
 
         调压模式，0：自动调压模式；1：手动调压模式
 
@@ -440,7 +440,7 @@ class TestCaseStage:
 
     @property
     def maximum(self):
-        """Gets the maximum of this TestCaseStage.
+        r"""Gets the maximum of this TestCaseStage.
 
         浪涌/浪涌模式下最大并发数
 
@@ -451,7 +451,7 @@ class TestCaseStage:
 
     @maximum.setter
     def maximum(self, maximum):
-        """Sets the maximum of this TestCaseStage.
+        r"""Sets the maximum of this TestCaseStage.
 
         浪涌/浪涌模式下最大并发数
 
@@ -462,7 +462,7 @@ class TestCaseStage:
 
     @property
     def minimum(self):
-        """Gets the minimum of this TestCaseStage.
+        r"""Gets the minimum of this TestCaseStage.
 
         浪涌/浪涌模式下最小并发数
 
@@ -473,7 +473,7 @@ class TestCaseStage:
 
     @minimum.setter
     def minimum(self, minimum):
-        """Sets the minimum of this TestCaseStage.
+        r"""Sets the minimum of this TestCaseStage.
 
         浪涌/浪涌模式下最小并发数
 
@@ -484,7 +484,7 @@ class TestCaseStage:
 
     @property
     def loop_count(self):
-        """Gets the loop_count of this TestCaseStage.
+        r"""Gets the loop_count of this TestCaseStage.
 
         震荡/浪涌次数
 
@@ -495,7 +495,7 @@ class TestCaseStage:
 
     @loop_count.setter
     def loop_count(self, loop_count):
-        """Sets the loop_count of this TestCaseStage.
+        r"""Sets the loop_count of this TestCaseStage.
 
         震荡/浪涌次数
 
@@ -506,7 +506,7 @@ class TestCaseStage:
 
     @property
     def max_duration(self):
-        """Gets the max_duration of this TestCaseStage.
+        r"""Gets the max_duration of this TestCaseStage.
 
         浪涌模式下峰值持续时间
 
@@ -517,7 +517,7 @@ class TestCaseStage:
 
     @max_duration.setter
     def max_duration(self, max_duration):
-        """Sets the max_duration of this TestCaseStage.
+        r"""Sets the max_duration of this TestCaseStage.
 
         浪涌模式下峰值持续时间
 
@@ -528,7 +528,7 @@ class TestCaseStage:
 
     @property
     def ramp_up(self):
-        """Gets the ramp_up of this TestCaseStage.
+        r"""Gets the ramp_up of this TestCaseStage.
 
         摸高模式下爬坡时长（单位：秒）
 
@@ -539,7 +539,7 @@ class TestCaseStage:
 
     @ramp_up.setter
     def ramp_up(self, ramp_up):
-        """Sets the ramp_up of this TestCaseStage.
+        r"""Sets the ramp_up of this TestCaseStage.
 
         摸高模式下爬坡时长（单位：秒）
 
@@ -550,7 +550,7 @@ class TestCaseStage:
 
     @property
     def peak_load_kpis(self):
-        """Gets the peak_load_kpis of this TestCaseStage.
+        r"""Gets the peak_load_kpis of this TestCaseStage.
 
         :return: The peak_load_kpis of this TestCaseStage.
         :rtype: :class:`huaweicloudsdkcpts.v1.StageKpiItems`
@@ -559,7 +559,7 @@ class TestCaseStage:
 
     @peak_load_kpis.setter
     def peak_load_kpis(self, peak_load_kpis):
-        """Sets the peak_load_kpis of this TestCaseStage.
+        r"""Sets the peak_load_kpis of this TestCaseStage.
 
         :param peak_load_kpis: The peak_load_kpis of this TestCaseStage.
         :type peak_load_kpis: :class:`huaweicloudsdkcpts.v1.StageKpiItems`
@@ -568,7 +568,7 @@ class TestCaseStage:
 
     @property
     def step_duration(self):
-        """Gets the step_duration of this TestCaseStage.
+        r"""Gets the step_duration of this TestCaseStage.
 
         智能摸高模式下单步执行时长
 
@@ -579,7 +579,7 @@ class TestCaseStage:
 
     @step_duration.setter
     def step_duration(self, step_duration):
-        """Sets the step_duration of this TestCaseStage.
+        r"""Sets the step_duration of this TestCaseStage.
 
         智能摸高模式下单步执行时长
 
@@ -590,7 +590,7 @@ class TestCaseStage:
 
     @property
     def step_size(self):
-        """Gets the step_size of this TestCaseStage.
+        r"""Gets the step_size of this TestCaseStage.
 
         智能摸高模式下递增并发数
 
@@ -601,7 +601,7 @@ class TestCaseStage:
 
     @step_size.setter
     def step_size(self, step_size):
-        """Sets the step_size of this TestCaseStage.
+        r"""Sets the step_size of this TestCaseStage.
 
         智能摸高模式下递增并发数
 

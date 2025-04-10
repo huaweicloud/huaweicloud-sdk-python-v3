@@ -27,7 +27,7 @@ class DeleteArchiveRuleRequest:
     }
 
     def __init__(self, analyzer_id=None, archive_rule_id=None):
-        """DeleteArchiveRuleRequest
+        r"""DeleteArchiveRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteArchiveRuleRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this DeleteArchiveRuleRequest.
+        r"""Gets the analyzer_id of this DeleteArchiveRuleRequest.
 
         分析器的唯一标识符。
 
@@ -59,7 +59,7 @@ class DeleteArchiveRuleRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this DeleteArchiveRuleRequest.
+        r"""Sets the analyzer_id of this DeleteArchiveRuleRequest.
 
         分析器的唯一标识符。
 
@@ -70,7 +70,7 @@ class DeleteArchiveRuleRequest:
 
     @property
     def archive_rule_id(self):
-        """Gets the archive_rule_id of this DeleteArchiveRuleRequest.
+        r"""Gets the archive_rule_id of this DeleteArchiveRuleRequest.
 
         存档规则的唯一标识符。
 
@@ -81,7 +81,7 @@ class DeleteArchiveRuleRequest:
 
     @archive_rule_id.setter
     def archive_rule_id(self, archive_rule_id):
-        """Sets the archive_rule_id of this DeleteArchiveRuleRequest.
+        r"""Sets the archive_rule_id of this DeleteArchiveRuleRequest.
 
         存档规则的唯一标识符。
 

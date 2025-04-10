@@ -27,7 +27,7 @@ class ListTopStatisticsRequest:
     }
 
     def __init__(self, domain=None, date=None):
-        """ListTopStatisticsRequest
+        r"""ListTopStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListTopStatisticsRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListTopStatisticsRequest.
+        r"""Gets the domain of this ListTopStatisticsRequest.
 
         查询域名，暂只支持查询单个或者全部域名。  取值如下： - 单个加速域名，格式：example.test1.com。 - ALL：表示查询名下全部域名。
 
@@ -59,7 +59,7 @@ class ListTopStatisticsRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListTopStatisticsRequest.
+        r"""Sets the domain of this ListTopStatisticsRequest.
 
         查询域名，暂只支持查询单个或者全部域名。  取值如下： - 单个加速域名，格式：example.test1.com。 - ALL：表示查询名下全部域名。
 
@@ -70,7 +70,7 @@ class ListTopStatisticsRequest:
 
     @property
     def date(self):
-        """Gets the date of this ListTopStatisticsRequest.
+        r"""Gets the date of this ListTopStatisticsRequest.
 
         查询日期，格式为yyyymmdd - date必须为昨天或之前的日期。 - 最多只能查最近一个月内的数据。
 
@@ -81,7 +81,7 @@ class ListTopStatisticsRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListTopStatisticsRequest.
+        r"""Sets the date of this ListTopStatisticsRequest.
 
         查询日期，格式为yyyymmdd - date必须为昨天或之前的日期。 - 最多只能查最近一个月内的数据。
 

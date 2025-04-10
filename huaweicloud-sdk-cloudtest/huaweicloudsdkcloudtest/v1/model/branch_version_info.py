@@ -47,7 +47,7 @@ class BranchVersionInfo:
     }
 
     def __init__(self, name=None, number=None, is_master=None, pbi_id=None, pbi_name=None, plan_start_date=None, plan_start_timestamp=None, plan_end_date=None, plan_end_timestamp=None, asyn_git=None, project_uuid=None, project_name=None):
-        """BranchVersionInfo
+        r"""BranchVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class BranchVersionInfo:
 
     @property
     def name(self):
-        """Gets the name of this BranchVersionInfo.
+        r"""Gets the name of this BranchVersionInfo.
 
         名称
 
@@ -129,7 +129,7 @@ class BranchVersionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BranchVersionInfo.
+        r"""Sets the name of this BranchVersionInfo.
 
         名称
 
@@ -140,7 +140,7 @@ class BranchVersionInfo:
 
     @property
     def number(self):
-        """Gets the number of this BranchVersionInfo.
+        r"""Gets the number of this BranchVersionInfo.
 
         开发分支名称
 
@@ -151,7 +151,7 @@ class BranchVersionInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this BranchVersionInfo.
+        r"""Sets the number of this BranchVersionInfo.
 
         开发分支名称
 
@@ -162,7 +162,7 @@ class BranchVersionInfo:
 
     @property
     def is_master(self):
-        """Gets the is_master of this BranchVersionInfo.
+        r"""Gets the is_master of this BranchVersionInfo.
 
         是否为Master分支
 
@@ -173,7 +173,7 @@ class BranchVersionInfo:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this BranchVersionInfo.
+        r"""Sets the is_master of this BranchVersionInfo.
 
         是否为Master分支
 
@@ -184,7 +184,7 @@ class BranchVersionInfo:
 
     @property
     def pbi_id(self):
-        """Gets the pbi_id of this BranchVersionInfo.
+        r"""Gets the pbi_id of this BranchVersionInfo.
 
         PBI ID
 
@@ -195,7 +195,7 @@ class BranchVersionInfo:
 
     @pbi_id.setter
     def pbi_id(self, pbi_id):
-        """Sets the pbi_id of this BranchVersionInfo.
+        r"""Sets the pbi_id of this BranchVersionInfo.
 
         PBI ID
 
@@ -206,7 +206,7 @@ class BranchVersionInfo:
 
     @property
     def pbi_name(self):
-        """Gets the pbi_name of this BranchVersionInfo.
+        r"""Gets the pbi_name of this BranchVersionInfo.
 
         PBI信息
 
@@ -217,7 +217,7 @@ class BranchVersionInfo:
 
     @pbi_name.setter
     def pbi_name(self, pbi_name):
-        """Sets the pbi_name of this BranchVersionInfo.
+        r"""Sets the pbi_name of this BranchVersionInfo.
 
         PBI信息
 
@@ -228,7 +228,7 @@ class BranchVersionInfo:
 
     @property
     def plan_start_date(self):
-        """Gets the plan_start_date of this BranchVersionInfo.
+        r"""Gets the plan_start_date of this BranchVersionInfo.
 
         开始时间
 
@@ -239,7 +239,7 @@ class BranchVersionInfo:
 
     @plan_start_date.setter
     def plan_start_date(self, plan_start_date):
-        """Sets the plan_start_date of this BranchVersionInfo.
+        r"""Sets the plan_start_date of this BranchVersionInfo.
 
         开始时间
 
@@ -250,7 +250,7 @@ class BranchVersionInfo:
 
     @property
     def plan_start_timestamp(self):
-        """Gets the plan_start_timestamp of this BranchVersionInfo.
+        r"""Gets the plan_start_timestamp of this BranchVersionInfo.
 
         开始时间戳
 
@@ -261,7 +261,7 @@ class BranchVersionInfo:
 
     @plan_start_timestamp.setter
     def plan_start_timestamp(self, plan_start_timestamp):
-        """Sets the plan_start_timestamp of this BranchVersionInfo.
+        r"""Sets the plan_start_timestamp of this BranchVersionInfo.
 
         开始时间戳
 
@@ -272,7 +272,7 @@ class BranchVersionInfo:
 
     @property
     def plan_end_date(self):
-        """Gets the plan_end_date of this BranchVersionInfo.
+        r"""Gets the plan_end_date of this BranchVersionInfo.
 
         结束时间
 
@@ -283,7 +283,7 @@ class BranchVersionInfo:
 
     @plan_end_date.setter
     def plan_end_date(self, plan_end_date):
-        """Sets the plan_end_date of this BranchVersionInfo.
+        r"""Sets the plan_end_date of this BranchVersionInfo.
 
         结束时间
 
@@ -294,7 +294,7 @@ class BranchVersionInfo:
 
     @property
     def plan_end_timestamp(self):
-        """Gets the plan_end_timestamp of this BranchVersionInfo.
+        r"""Gets the plan_end_timestamp of this BranchVersionInfo.
 
         结束时间戳
 
@@ -305,7 +305,7 @@ class BranchVersionInfo:
 
     @plan_end_timestamp.setter
     def plan_end_timestamp(self, plan_end_timestamp):
-        """Sets the plan_end_timestamp of this BranchVersionInfo.
+        r"""Sets the plan_end_timestamp of this BranchVersionInfo.
 
         结束时间戳
 
@@ -316,7 +316,7 @@ class BranchVersionInfo:
 
     @property
     def asyn_git(self):
-        """Gets the asyn_git of this BranchVersionInfo.
+        r"""Gets the asyn_git of this BranchVersionInfo.
 
         是否同步git库
 
@@ -327,7 +327,7 @@ class BranchVersionInfo:
 
     @asyn_git.setter
     def asyn_git(self, asyn_git):
-        """Sets the asyn_git of this BranchVersionInfo.
+        r"""Sets the asyn_git of this BranchVersionInfo.
 
         是否同步git库
 
@@ -338,7 +338,7 @@ class BranchVersionInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this BranchVersionInfo.
+        r"""Gets the project_uuid of this BranchVersionInfo.
 
         项目ID（云龙场景，传入微服务ID）
 
@@ -349,7 +349,7 @@ class BranchVersionInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this BranchVersionInfo.
+        r"""Sets the project_uuid of this BranchVersionInfo.
 
         项目ID（云龙场景，传入微服务ID）
 
@@ -360,7 +360,7 @@ class BranchVersionInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this BranchVersionInfo.
+        r"""Gets the project_name of this BranchVersionInfo.
 
         项目名称（云龙场景，传入微服务名）
 
@@ -371,7 +371,7 @@ class BranchVersionInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this BranchVersionInfo.
+        r"""Sets the project_name of this BranchVersionInfo.
 
         项目名称（云龙场景，传入微服务名）
 

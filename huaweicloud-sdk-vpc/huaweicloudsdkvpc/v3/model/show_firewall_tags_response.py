@@ -28,7 +28,7 @@ class ShowFirewallTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, request_id=None):
-        """ShowFirewallTagsResponse
+        r"""ShowFirewallTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFirewallTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowFirewallTagsResponse.
+        r"""Gets the tags of this ShowFirewallTagsResponse.
 
         tag对象列表
 
@@ -62,7 +62,7 @@ class ShowFirewallTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowFirewallTagsResponse.
+        r"""Sets the tags of this ShowFirewallTagsResponse.
 
         tag对象列表
 
@@ -73,7 +73,7 @@ class ShowFirewallTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowFirewallTagsResponse.
+        r"""Gets the request_id of this ShowFirewallTagsResponse.
 
         请求ID
 
@@ -84,7 +84,7 @@ class ShowFirewallTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowFirewallTagsResponse.
+        r"""Sets the request_id of this ShowFirewallTagsResponse.
 
         请求ID
 

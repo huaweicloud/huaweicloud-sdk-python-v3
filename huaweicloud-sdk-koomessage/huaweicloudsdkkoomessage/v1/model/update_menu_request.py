@@ -27,7 +27,7 @@ class UpdateMenuRequest:
     }
 
     def __init__(self, menu_id=None, body=None):
-        """UpdateMenuRequest
+        r"""UpdateMenuRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMenuRequest:
 
     @property
     def menu_id(self):
-        """Gets the menu_id of this UpdateMenuRequest.
+        r"""Gets the menu_id of this UpdateMenuRequest.
 
         菜单ID。
 
@@ -60,7 +60,7 @@ class UpdateMenuRequest:
 
     @menu_id.setter
     def menu_id(self, menu_id):
-        """Sets the menu_id of this UpdateMenuRequest.
+        r"""Sets the menu_id of this UpdateMenuRequest.
 
         菜单ID。
 
@@ -71,7 +71,7 @@ class UpdateMenuRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMenuRequest.
+        r"""Gets the body of this UpdateMenuRequest.
 
         :return: The body of this UpdateMenuRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateMenuRequestBody`
@@ -80,7 +80,7 @@ class UpdateMenuRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMenuRequest.
+        r"""Sets the body of this UpdateMenuRequest.
 
         :param body: The body of this UpdateMenuRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UpdateMenuRequestBody`

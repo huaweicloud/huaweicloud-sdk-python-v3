@@ -32,7 +32,7 @@ class ListGlobalVariablesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, global_vars=None, count=None):
-        """ListGlobalVariablesResponse
+        r"""ListGlobalVariablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListGlobalVariablesResponse.
+        r"""Gets the is_success of this ListGlobalVariablesResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListGlobalVariablesResponse.
+        r"""Sets the is_success of this ListGlobalVariablesResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListGlobalVariablesResponse.
+        r"""Gets the message of this ListGlobalVariablesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListGlobalVariablesResponse.
+        r"""Sets the message of this ListGlobalVariablesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @property
     def global_vars(self):
-        """Gets the global_vars of this ListGlobalVariablesResponse.
+        r"""Gets the global_vars of this ListGlobalVariablesResponse.
 
         全局变量
 
@@ -120,7 +120,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @global_vars.setter
     def global_vars(self, global_vars):
-        """Sets the global_vars of this ListGlobalVariablesResponse.
+        r"""Sets the global_vars of this ListGlobalVariablesResponse.
 
         全局变量
 
@@ -131,7 +131,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListGlobalVariablesResponse.
+        r"""Gets the count of this ListGlobalVariablesResponse.
 
         全局变量总数
 
@@ -142,7 +142,7 @@ class ListGlobalVariablesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListGlobalVariablesResponse.
+        r"""Sets the count of this ListGlobalVariablesResponse.
 
         全局变量总数
 

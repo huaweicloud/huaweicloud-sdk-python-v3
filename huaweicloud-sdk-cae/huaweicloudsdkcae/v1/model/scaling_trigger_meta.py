@@ -31,7 +31,7 @@ class ScalingTriggerMeta:
     }
 
     def __init__(self, type=None, value=None, period_type=None, schedulers=None):
-        """ScalingTriggerMeta
+        r"""ScalingTriggerMeta
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ScalingTriggerMeta:
 
     @property
     def type(self):
-        """Gets the type of this ScalingTriggerMeta.
+        r"""Gets the type of this ScalingTriggerMeta.
 
         数据类型，当前只支持利用率，默认值为Utilization。  ScaleConfigurationDataTrigger.type为\"cpu、memory\"时，配置此参数。 
 
@@ -75,7 +75,7 @@ class ScalingTriggerMeta:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScalingTriggerMeta.
+        r"""Sets the type of this ScalingTriggerMeta.
 
         数据类型，当前只支持利用率，默认值为Utilization。  ScaleConfigurationDataTrigger.type为\"cpu、memory\"时，配置此参数。 
 
@@ -86,7 +86,7 @@ class ScalingTriggerMeta:
 
     @property
     def value(self):
-        """Gets the value of this ScalingTriggerMeta.
+        r"""Gets the value of this ScalingTriggerMeta.
 
         触发指标的阈值。  ScaleConfigurationDataTrigger.type为\"cpu、memory\"时，配置此参数。 
 
@@ -97,7 +97,7 @@ class ScalingTriggerMeta:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ScalingTriggerMeta.
+        r"""Sets the value of this ScalingTriggerMeta.
 
         触发指标的阈值。  ScaleConfigurationDataTrigger.type为\"cpu、memory\"时，配置此参数。 
 
@@ -108,7 +108,7 @@ class ScalingTriggerMeta:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ScalingTriggerMeta.
+        r"""Gets the period_type of this ScalingTriggerMeta.
 
         生效周期。  ScaleConfigurationDataTrigger.type为\"cron\"时，配置此参数。 
 
@@ -119,7 +119,7 @@ class ScalingTriggerMeta:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ScalingTriggerMeta.
+        r"""Sets the period_type of this ScalingTriggerMeta.
 
         生效周期。  ScaleConfigurationDataTrigger.type为\"cron\"时，配置此参数。 
 
@@ -130,7 +130,7 @@ class ScalingTriggerMeta:
 
     @property
     def schedulers(self):
-        """Gets the schedulers of this ScalingTriggerMeta.
+        r"""Gets the schedulers of this ScalingTriggerMeta.
 
         每个周期内触发的时间点和实例数。  ScaleConfigurationDataTrigger.type为\"cron\"时，配置此参数。 
 
@@ -141,7 +141,7 @@ class ScalingTriggerMeta:
 
     @schedulers.setter
     def schedulers(self, schedulers):
-        """Sets the schedulers of this ScalingTriggerMeta.
+        r"""Sets the schedulers of this ScalingTriggerMeta.
 
         每个周期内触发的时间点和实例数。  ScaleConfigurationDataTrigger.type为\"cron\"时，配置此参数。 
 

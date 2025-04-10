@@ -27,7 +27,7 @@ class UpgradeActionInfo:
     }
 
     def __init__(self, upgrade_action=None, enable=None):
-        """UpgradeActionInfo
+        r"""UpgradeActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpgradeActionInfo:
 
     @property
     def upgrade_action(self):
-        """Gets the upgrade_action of this UpgradeActionInfo.
+        r"""Gets the upgrade_action of this UpgradeActionInfo.
 
         升级操作,upgrade=升级,upgradeAutoCommit=升级自动提交,commit=提交,rollback=回滚。
 
@@ -61,7 +61,7 @@ class UpgradeActionInfo:
 
     @upgrade_action.setter
     def upgrade_action(self, upgrade_action):
-        """Sets the upgrade_action of this UpgradeActionInfo.
+        r"""Sets the upgrade_action of this UpgradeActionInfo.
 
         升级操作,upgrade=升级,upgradeAutoCommit=升级自动提交,commit=提交,rollback=回滚。
 
@@ -72,7 +72,7 @@ class UpgradeActionInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this UpgradeActionInfo.
+        r"""Gets the enable of this UpgradeActionInfo.
 
         可用，不可用。
 
@@ -83,7 +83,7 @@ class UpgradeActionInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpgradeActionInfo.
+        r"""Sets the enable of this UpgradeActionInfo.
 
         可用，不可用。
 

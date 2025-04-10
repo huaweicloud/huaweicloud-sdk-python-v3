@@ -27,7 +27,7 @@ class ComputeFlavorGroup:
     }
 
     def __init__(self, group_type=None, compute_flavors=None):
-        """ComputeFlavorGroup
+        r"""ComputeFlavorGroup
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ComputeFlavorGroup:
 
     @property
     def group_type(self):
-        """Gets the group_type of this ComputeFlavorGroup.
+        r"""Gets the group_type of this ComputeFlavorGroup.
 
         性能规格，包含以下状态：  normal：通用增强型。 normal2：通用增强Ⅱ型。 armFlavors：鲲鹏通用增强型。 dedicicateNormal（dedicatedNormalLocalssd）：x86独享型。 armLocalssd：鲲鹏通用型。 normalLocalssd：x86通用型。 general：通用型。 dedicated 对于PostgreSQL引擎：独享型
 
@@ -59,7 +59,7 @@ class ComputeFlavorGroup:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this ComputeFlavorGroup.
+        r"""Sets the group_type of this ComputeFlavorGroup.
 
         性能规格，包含以下状态：  normal：通用增强型。 normal2：通用增强Ⅱ型。 armFlavors：鲲鹏通用增强型。 dedicicateNormal（dedicatedNormalLocalssd）：x86独享型。 armLocalssd：鲲鹏通用型。 normalLocalssd：x86通用型。 general：通用型。 dedicated 对于PostgreSQL引擎：独享型
 
@@ -70,7 +70,7 @@ class ComputeFlavorGroup:
 
     @property
     def compute_flavors(self):
-        """Gets the compute_flavors of this ComputeFlavorGroup.
+        r"""Gets the compute_flavors of this ComputeFlavorGroup.
 
         计算规格列表
 
@@ -81,7 +81,7 @@ class ComputeFlavorGroup:
 
     @compute_flavors.setter
     def compute_flavors(self, compute_flavors):
-        """Sets the compute_flavors of this ComputeFlavorGroup.
+        r"""Sets the compute_flavors of this ComputeFlavorGroup.
 
         计算规格列表
 

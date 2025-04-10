@@ -28,7 +28,7 @@ class DeleteBuildJobResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """DeleteBuildJobResponse
+        r"""DeleteBuildJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteBuildJobResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteBuildJobResponse.
+        r"""Gets the result of this DeleteBuildJobResponse.
 
         :return: The result of this DeleteBuildJobResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobResponseBodyResult`
@@ -60,7 +60,7 @@ class DeleteBuildJobResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteBuildJobResponse.
+        r"""Sets the result of this DeleteBuildJobResponse.
 
         :param result: The result of this DeleteBuildJobResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobResponseBodyResult`
@@ -69,7 +69,7 @@ class DeleteBuildJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteBuildJobResponse.
+        r"""Gets the status of this DeleteBuildJobResponse.
 
         状态信息
 
@@ -80,7 +80,7 @@ class DeleteBuildJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteBuildJobResponse.
+        r"""Sets the status of this DeleteBuildJobResponse.
 
         状态信息
 

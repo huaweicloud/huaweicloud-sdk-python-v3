@@ -30,7 +30,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, globalconnection_bandwidths=None):
-        """ListGlobalConnectionBandwidthsResponse
+        r"""ListGlobalConnectionBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalConnectionBandwidthsResponse.
+        r"""Gets the request_id of this ListGlobalConnectionBandwidthsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalConnectionBandwidthsResponse.
+        r"""Sets the request_id of this ListGlobalConnectionBandwidthsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGlobalConnectionBandwidthsResponse.
+        r"""Gets the page_info of this ListGlobalConnectionBandwidthsResponse.
 
         :return: The page_info of this ListGlobalConnectionBandwidthsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGlobalConnectionBandwidthsResponse.
+        r"""Sets the page_info of this ListGlobalConnectionBandwidthsResponse.
 
         :param page_info: The page_info of this ListGlobalConnectionBandwidthsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
 
     @property
     def globalconnection_bandwidths(self):
-        """Gets the globalconnection_bandwidths of this ListGlobalConnectionBandwidthsResponse.
+        r"""Gets the globalconnection_bandwidths of this ListGlobalConnectionBandwidthsResponse.
 
         全域互联带宽列表响应体。
 
@@ -107,7 +107,7 @@ class ListGlobalConnectionBandwidthsResponse(SdkResponse):
 
     @globalconnection_bandwidths.setter
     def globalconnection_bandwidths(self, globalconnection_bandwidths):
-        """Sets the globalconnection_bandwidths of this ListGlobalConnectionBandwidthsResponse.
+        r"""Sets the globalconnection_bandwidths of this ListGlobalConnectionBandwidthsResponse.
 
         全域互联带宽列表响应体。
 

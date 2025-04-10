@@ -23,7 +23,7 @@ class UUID64Def:
     }
 
     def __init__(self):
-        """UUID64Def
+        r"""UUID64Def
 
         The model defined in huaweicloud sdk
 

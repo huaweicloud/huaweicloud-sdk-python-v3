@@ -25,7 +25,7 @@ class CreateDashboardGroupReq:
     }
 
     def __init__(self, group_name=None):
-        """CreateDashboardGroupReq
+        r"""CreateDashboardGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDashboardGroupReq:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateDashboardGroupReq.
+        r"""Gets the group_name of this CreateDashboardGroupReq.
 
         仪表盘分组名称
 
@@ -53,7 +53,7 @@ class CreateDashboardGroupReq:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateDashboardGroupReq.
+        r"""Sets the group_name of this CreateDashboardGroupReq.
 
         仪表盘分组名称
 

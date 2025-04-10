@@ -31,7 +31,7 @@ class CheckpointPlanCreate:
     }
 
     def __init__(self, id=None, name=None, resources=None, skipped_resources=None):
-        """CheckpointPlanCreate
+        r"""CheckpointPlanCreate
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CheckpointPlanCreate:
 
     @property
     def id(self):
-        """Gets the id of this CheckpointPlanCreate.
+        r"""Gets the id of this CheckpointPlanCreate.
 
         存储库id
 
@@ -73,7 +73,7 @@ class CheckpointPlanCreate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckpointPlanCreate.
+        r"""Sets the id of this CheckpointPlanCreate.
 
         存储库id
 
@@ -84,7 +84,7 @@ class CheckpointPlanCreate:
 
     @property
     def name(self):
-        """Gets the name of this CheckpointPlanCreate.
+        r"""Gets the name of this CheckpointPlanCreate.
 
         存储库名称
 
@@ -95,7 +95,7 @@ class CheckpointPlanCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckpointPlanCreate.
+        r"""Sets the name of this CheckpointPlanCreate.
 
         存储库名称
 
@@ -106,7 +106,7 @@ class CheckpointPlanCreate:
 
     @property
     def resources(self):
-        """Gets the resources of this CheckpointPlanCreate.
+        r"""Gets the resources of this CheckpointPlanCreate.
 
         备份对象
 
@@ -117,7 +117,7 @@ class CheckpointPlanCreate:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this CheckpointPlanCreate.
+        r"""Sets the resources of this CheckpointPlanCreate.
 
         备份对象
 
@@ -128,7 +128,7 @@ class CheckpointPlanCreate:
 
     @property
     def skipped_resources(self):
-        """Gets the skipped_resources of this CheckpointPlanCreate.
+        r"""Gets the skipped_resources of this CheckpointPlanCreate.
 
         备份时跳过的资源列表
 
@@ -139,7 +139,7 @@ class CheckpointPlanCreate:
 
     @skipped_resources.setter
     def skipped_resources(self, skipped_resources):
-        """Sets the skipped_resources of this CheckpointPlanCreate.
+        r"""Sets the skipped_resources of this CheckpointPlanCreate.
 
         备份时跳过的资源列表
 

@@ -27,7 +27,7 @@ class CompareFaceByFileRequestBody:
     }
 
     def __init__(self, image1_file=None, image2_file=None):
-        """CompareFaceByFileRequestBody
+        r"""CompareFaceByFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CompareFaceByFileRequestBody:
 
     @property
     def image1_file(self):
-        """Gets the image1_file of this CompareFaceByFileRequestBody.
+        r"""Gets the image1_file of this CompareFaceByFileRequestBody.
 
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 
@@ -59,7 +59,7 @@ class CompareFaceByFileRequestBody:
 
     @image1_file.setter
     def image1_file(self, image1_file):
-        """Sets the image1_file of this CompareFaceByFileRequestBody.
+        r"""Sets the image1_file of this CompareFaceByFileRequestBody.
 
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 
@@ -70,7 +70,7 @@ class CompareFaceByFileRequestBody:
 
     @property
     def image2_file(self):
-        """Gets the image2_file of this CompareFaceByFileRequestBody.
+        r"""Gets the image2_file of this CompareFaceByFileRequestBody.
 
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 
@@ -81,7 +81,7 @@ class CompareFaceByFileRequestBody:
 
     @image2_file.setter
     def image2_file(self, image2_file):
-        """Sets the image2_file of this CompareFaceByFileRequestBody.
+        r"""Sets the image2_file of this CompareFaceByFileRequestBody.
 
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 

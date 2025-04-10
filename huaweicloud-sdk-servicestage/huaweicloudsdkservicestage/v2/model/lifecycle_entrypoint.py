@@ -27,7 +27,7 @@ class LifecycleEntrypoint:
     }
 
     def __init__(self, command=None, args=None):
-        """LifecycleEntrypoint
+        r"""LifecycleEntrypoint
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LifecycleEntrypoint:
 
     @property
     def command(self):
-        """Gets the command of this LifecycleEntrypoint.
+        r"""Gets the command of this LifecycleEntrypoint.
 
         执行命令行
 
@@ -61,7 +61,7 @@ class LifecycleEntrypoint:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this LifecycleEntrypoint.
+        r"""Sets the command of this LifecycleEntrypoint.
 
         执行命令行
 
@@ -72,7 +72,7 @@ class LifecycleEntrypoint:
 
     @property
     def args(self):
-        """Gets the args of this LifecycleEntrypoint.
+        r"""Gets the args of this LifecycleEntrypoint.
 
         运行参数
 
@@ -83,7 +83,7 @@ class LifecycleEntrypoint:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this LifecycleEntrypoint.
+        r"""Sets the args of this LifecycleEntrypoint.
 
         运行参数
 

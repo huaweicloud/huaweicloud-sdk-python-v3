@@ -25,7 +25,7 @@ class ListCertTagsRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """ListCertTagsRequest
+        r"""ListCertTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListCertTagsRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ListCertTagsRequest.
+        r"""Gets the certificate_id of this ListCertTagsRequest.
 
         所需要查询标签列表的证书ID。
 
@@ -53,7 +53,7 @@ class ListCertTagsRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ListCertTagsRequest.
+        r"""Sets the certificate_id of this ListCertTagsRequest.
 
         所需要查询标签列表的证书ID。
 

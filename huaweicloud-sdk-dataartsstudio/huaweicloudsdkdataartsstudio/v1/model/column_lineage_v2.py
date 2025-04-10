@@ -27,7 +27,7 @@ class ColumnLineageV2:
     }
 
     def __init__(self, input_columns=None, output_columns=None):
-        """ColumnLineageV2
+        r"""ColumnLineageV2
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ColumnLineageV2:
 
     @property
     def input_columns(self):
-        """Gets the input_columns of this ColumnLineageV2.
+        r"""Gets the input_columns of this ColumnLineageV2.
 
         上游血缘字段列表，列表大小：1至100
 
@@ -59,7 +59,7 @@ class ColumnLineageV2:
 
     @input_columns.setter
     def input_columns(self, input_columns):
-        """Sets the input_columns of this ColumnLineageV2.
+        r"""Sets the input_columns of this ColumnLineageV2.
 
         上游血缘字段列表，列表大小：1至100
 
@@ -70,7 +70,7 @@ class ColumnLineageV2:
 
     @property
     def output_columns(self):
-        """Gets the output_columns of this ColumnLineageV2.
+        r"""Gets the output_columns of this ColumnLineageV2.
 
         下游血缘字段列表，列表大小：1至100
 
@@ -81,7 +81,7 @@ class ColumnLineageV2:
 
     @output_columns.setter
     def output_columns(self, output_columns):
-        """Sets the output_columns of this ColumnLineageV2.
+        r"""Sets the output_columns of this ColumnLineageV2.
 
         下游血缘字段列表，列表大小：1至100
 

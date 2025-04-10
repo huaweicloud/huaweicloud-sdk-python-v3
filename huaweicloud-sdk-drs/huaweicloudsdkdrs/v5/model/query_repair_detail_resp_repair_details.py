@@ -31,7 +31,7 @@ class QueryRepairDetailRespRepairDetails:
     }
 
     def __init__(self, source_meta=None, target_meta=None, repair_sql_state=None, repair_sql_info=None):
-        """QueryRepairDetailRespRepairDetails
+        r"""QueryRepairDetailRespRepairDetails
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @property
     def source_meta(self):
-        """Gets the source_meta of this QueryRepairDetailRespRepairDetails.
+        r"""Gets the source_meta of this QueryRepairDetailRespRepairDetails.
 
         源表标志列值。
 
@@ -75,7 +75,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @source_meta.setter
     def source_meta(self, source_meta):
-        """Sets the source_meta of this QueryRepairDetailRespRepairDetails.
+        r"""Sets the source_meta of this QueryRepairDetailRespRepairDetails.
 
         源表标志列值。
 
@@ -86,7 +86,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @property
     def target_meta(self):
-        """Gets the target_meta of this QueryRepairDetailRespRepairDetails.
+        r"""Gets the target_meta of this QueryRepairDetailRespRepairDetails.
 
         目标表标志列值。
 
@@ -97,7 +97,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @target_meta.setter
     def target_meta(self, target_meta):
-        """Sets the target_meta of this QueryRepairDetailRespRepairDetails.
+        r"""Sets the target_meta of this QueryRepairDetailRespRepairDetails.
 
         目标表标志列值。
 
@@ -108,7 +108,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @property
     def repair_sql_state(self):
-        """Gets the repair_sql_state of this QueryRepairDetailRespRepairDetails.
+        r"""Gets the repair_sql_state of this QueryRepairDetailRespRepairDetails.
 
         修复SQL状态。
 
@@ -119,7 +119,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @repair_sql_state.setter
     def repair_sql_state(self, repair_sql_state):
-        """Sets the repair_sql_state of this QueryRepairDetailRespRepairDetails.
+        r"""Sets the repair_sql_state of this QueryRepairDetailRespRepairDetails.
 
         修复SQL状态。
 
@@ -130,7 +130,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @property
     def repair_sql_info(self):
-        """Gets the repair_sql_info of this QueryRepairDetailRespRepairDetails.
+        r"""Gets the repair_sql_info of this QueryRepairDetailRespRepairDetails.
 
         修复SQL。
 
@@ -141,7 +141,7 @@ class QueryRepairDetailRespRepairDetails:
 
     @repair_sql_info.setter
     def repair_sql_info(self, repair_sql_info):
-        """Sets the repair_sql_info of this QueryRepairDetailRespRepairDetails.
+        r"""Sets the repair_sql_info of this QueryRepairDetailRespRepairDetails.
 
         修复SQL。
 

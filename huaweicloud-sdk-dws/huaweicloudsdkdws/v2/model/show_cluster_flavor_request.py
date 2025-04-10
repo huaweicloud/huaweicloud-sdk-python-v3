@@ -27,7 +27,7 @@ class ShowClusterFlavorRequest:
     }
 
     def __init__(self, cluster_id=None, namespace=None):
-        """ShowClusterFlavorRequest
+        r"""ShowClusterFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowClusterFlavorRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterFlavorRequest.
+        r"""Gets the cluster_id of this ShowClusterFlavorRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ShowClusterFlavorRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterFlavorRequest.
+        r"""Sets the cluster_id of this ShowClusterFlavorRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ShowClusterFlavorRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowClusterFlavorRequest.
+        r"""Gets the namespace of this ShowClusterFlavorRequest.
 
         命名空间
 
@@ -82,7 +82,7 @@ class ShowClusterFlavorRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowClusterFlavorRequest.
+        r"""Sets the namespace of this ShowClusterFlavorRequest.
 
         命名空间
 

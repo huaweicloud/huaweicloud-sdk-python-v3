@@ -25,7 +25,7 @@ class DeleteEdgeSiteRequest:
     }
 
     def __init__(self, site_id=None):
-        """DeleteEdgeSiteRequest
+        r"""DeleteEdgeSiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEdgeSiteRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this DeleteEdgeSiteRequest.
+        r"""Gets the site_id of this DeleteEdgeSiteRequest.
 
         边缘小站ID
 
@@ -53,7 +53,7 @@ class DeleteEdgeSiteRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this DeleteEdgeSiteRequest.
+        r"""Sets the site_id of this DeleteEdgeSiteRequest.
 
         边缘小站ID
 

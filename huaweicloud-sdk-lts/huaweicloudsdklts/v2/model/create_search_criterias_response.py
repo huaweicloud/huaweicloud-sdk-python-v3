@@ -26,7 +26,7 @@ class CreateSearchCriteriasResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateSearchCriteriasResponse
+        r"""CreateSearchCriteriasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSearchCriteriasResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSearchCriteriasResponse.
+        r"""Gets the id of this CreateSearchCriteriasResponse.
 
         快速查询id
 
@@ -55,7 +55,7 @@ class CreateSearchCriteriasResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSearchCriteriasResponse.
+        r"""Sets the id of this CreateSearchCriteriasResponse.
 
         快速查询id
 

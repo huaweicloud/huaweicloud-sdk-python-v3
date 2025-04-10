@@ -26,7 +26,7 @@ class ShowDesktopDetailResponse(SdkResponse):
     }
 
     def __init__(self, desktop=None):
-        """ShowDesktopDetailResponse
+        r"""ShowDesktopDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDesktopDetailResponse(SdkResponse):
 
     @property
     def desktop(self):
-        """Gets the desktop of this ShowDesktopDetailResponse.
+        r"""Gets the desktop of this ShowDesktopDetailResponse.
 
         :return: The desktop of this ShowDesktopDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopDetailInfo`
@@ -53,7 +53,7 @@ class ShowDesktopDetailResponse(SdkResponse):
 
     @desktop.setter
     def desktop(self, desktop):
-        """Sets the desktop of this ShowDesktopDetailResponse.
+        r"""Sets the desktop of this ShowDesktopDetailResponse.
 
         :param desktop: The desktop of this ShowDesktopDetailResponse.
         :type desktop: :class:`huaweicloudsdkworkspace.v2.DesktopDetailInfo`

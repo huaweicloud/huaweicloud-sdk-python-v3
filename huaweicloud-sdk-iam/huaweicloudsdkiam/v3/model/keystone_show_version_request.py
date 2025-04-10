@@ -23,7 +23,7 @@ class KeystoneShowVersionRequest:
     }
 
     def __init__(self):
-        """KeystoneShowVersionRequest
+        r"""KeystoneShowVersionRequest
 
         The model defined in huaweicloud sdk
 

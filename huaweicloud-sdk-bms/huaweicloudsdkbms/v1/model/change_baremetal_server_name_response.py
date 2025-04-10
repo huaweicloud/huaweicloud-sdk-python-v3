@@ -26,7 +26,7 @@ class ChangeBaremetalServerNameResponse(SdkResponse):
     }
 
     def __init__(self, server=None):
-        """ChangeBaremetalServerNameResponse
+        r"""ChangeBaremetalServerNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeBaremetalServerNameResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this ChangeBaremetalServerNameResponse.
+        r"""Gets the server of this ChangeBaremetalServerNameResponse.
 
         :return: The server of this ChangeBaremetalServerNameResponse.
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameResponsesServers`
@@ -53,7 +53,7 @@ class ChangeBaremetalServerNameResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ChangeBaremetalServerNameResponse.
+        r"""Sets the server of this ChangeBaremetalServerNameResponse.
 
         :param server: The server of this ChangeBaremetalServerNameResponse.
         :type server: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameResponsesServers`

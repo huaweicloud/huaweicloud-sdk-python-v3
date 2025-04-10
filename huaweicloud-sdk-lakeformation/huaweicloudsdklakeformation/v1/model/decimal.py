@@ -27,7 +27,7 @@ class Decimal:
     }
 
     def __init__(self, scale=None, unscaled=None):
-        """Decimal
+        r"""Decimal
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Decimal:
 
     @property
     def scale(self):
-        """Gets the scale of this Decimal.
+        r"""Gets the scale of this Decimal.
 
         整数部分
 
@@ -61,7 +61,7 @@ class Decimal:
 
     @scale.setter
     def scale(self, scale):
-        """Sets the scale of this Decimal.
+        r"""Sets the scale of this Decimal.
 
         整数部分
 
@@ -72,7 +72,7 @@ class Decimal:
 
     @property
     def unscaled(self):
-        """Gets the unscaled of this Decimal.
+        r"""Gets the unscaled of this Decimal.
 
         小数部分
 
@@ -83,7 +83,7 @@ class Decimal:
 
     @unscaled.setter
     def unscaled(self, unscaled):
-        """Sets the unscaled of this Decimal.
+        r"""Sets the unscaled of this Decimal.
 
         小数部分
 

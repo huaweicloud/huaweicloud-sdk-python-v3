@@ -25,7 +25,7 @@ class NodePoolMetadataUpdate:
     }
 
     def __init__(self, name=None):
-        """NodePoolMetadataUpdate
+        r"""NodePoolMetadataUpdate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NodePoolMetadataUpdate:
 
     @property
     def name(self):
-        """Gets the name of this NodePoolMetadataUpdate.
+        r"""Gets the name of this NodePoolMetadataUpdate.
 
         节点池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
@@ -53,7 +53,7 @@ class NodePoolMetadataUpdate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodePoolMetadataUpdate.
+        r"""Sets the name of this NodePoolMetadataUpdate.
 
         节点池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 

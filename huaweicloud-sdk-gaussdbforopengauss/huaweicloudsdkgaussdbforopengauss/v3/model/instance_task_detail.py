@@ -29,7 +29,7 @@ class InstanceTaskDetail:
     }
 
     def __init__(self, task_id=None, task_name=None, instance_id=None):
-        """InstanceTaskDetail
+        r"""InstanceTaskDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceTaskDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this InstanceTaskDetail.
+        r"""Gets the task_id of this InstanceTaskDetail.
 
         任务ID。
 
@@ -68,7 +68,7 @@ class InstanceTaskDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this InstanceTaskDetail.
+        r"""Sets the task_id of this InstanceTaskDetail.
 
         任务ID。
 
@@ -79,7 +79,7 @@ class InstanceTaskDetail:
 
     @property
     def task_name(self):
-        """Gets the task_name of this InstanceTaskDetail.
+        r"""Gets the task_name of this InstanceTaskDetail.
 
         任务名称。
 
@@ -90,7 +90,7 @@ class InstanceTaskDetail:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this InstanceTaskDetail.
+        r"""Sets the task_name of this InstanceTaskDetail.
 
         任务名称。
 
@@ -101,7 +101,7 @@ class InstanceTaskDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceTaskDetail.
+        r"""Gets the instance_id of this InstanceTaskDetail.
 
         实例ID。
 
@@ -112,7 +112,7 @@ class InstanceTaskDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceTaskDetail.
+        r"""Sets the instance_id of this InstanceTaskDetail.
 
         实例ID。
 

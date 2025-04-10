@@ -26,7 +26,7 @@ class ShowRelationByIdResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowRelationByIdResponse
+        r"""ShowRelationByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRelationByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowRelationByIdResponse.
+        r"""Gets the data of this ShowRelationByIdResponse.
 
         :return: The data of this ShowRelationByIdResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowRelationByIdResultData`
@@ -53,7 +53,7 @@ class ShowRelationByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowRelationByIdResponse.
+        r"""Sets the data of this ShowRelationByIdResponse.
 
         :param data: The data of this ShowRelationByIdResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowRelationByIdResultData`

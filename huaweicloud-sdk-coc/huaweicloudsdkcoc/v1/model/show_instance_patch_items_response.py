@@ -28,7 +28,7 @@ class ShowInstancePatchItemsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, compliance_items=None):
-        """ShowInstancePatchItemsResponse
+        r"""ShowInstancePatchItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowInstancePatchItemsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowInstancePatchItemsResponse.
+        r"""Gets the count of this ShowInstancePatchItemsResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ShowInstancePatchItemsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowInstancePatchItemsResponse.
+        r"""Sets the count of this ShowInstancePatchItemsResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ShowInstancePatchItemsResponse(SdkResponse):
 
     @property
     def compliance_items(self):
-        """Gets the compliance_items of this ShowInstancePatchItemsResponse.
+        r"""Gets the compliance_items of this ShowInstancePatchItemsResponse.
 
         补丁合规信息
 
@@ -84,7 +84,7 @@ class ShowInstancePatchItemsResponse(SdkResponse):
 
     @compliance_items.setter
     def compliance_items(self, compliance_items):
-        """Sets the compliance_items of this ShowInstancePatchItemsResponse.
+        r"""Sets the compliance_items of this ShowInstancePatchItemsResponse.
 
         补丁合规信息
 

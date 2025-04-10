@@ -41,7 +41,7 @@ class TermAssignmentHeader:
     }
 
     def __init__(self, confidence=None, steward=None, source=None, status=None, create_user=None, expression=None, display_text=None, term_guid=None, relation_guid=None):
-        """TermAssignmentHeader
+        r"""TermAssignmentHeader
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TermAssignmentHeader:
 
     @property
     def confidence(self):
-        """Gets the confidence of this TermAssignmentHeader.
+        r"""Gets the confidence of this TermAssignmentHeader.
 
         信任id
 
@@ -110,7 +110,7 @@ class TermAssignmentHeader:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this TermAssignmentHeader.
+        r"""Sets the confidence of this TermAssignmentHeader.
 
         信任id
 
@@ -121,7 +121,7 @@ class TermAssignmentHeader:
 
     @property
     def steward(self):
-        """Gets the steward of this TermAssignmentHeader.
+        r"""Gets the steward of this TermAssignmentHeader.
 
         管理员
 
@@ -132,7 +132,7 @@ class TermAssignmentHeader:
 
     @steward.setter
     def steward(self, steward):
-        """Sets the steward of this TermAssignmentHeader.
+        r"""Sets the steward of this TermAssignmentHeader.
 
         管理员
 
@@ -143,7 +143,7 @@ class TermAssignmentHeader:
 
     @property
     def source(self):
-        """Gets the source of this TermAssignmentHeader.
+        r"""Gets the source of this TermAssignmentHeader.
 
         来源
 
@@ -154,7 +154,7 @@ class TermAssignmentHeader:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this TermAssignmentHeader.
+        r"""Sets the source of this TermAssignmentHeader.
 
         来源
 
@@ -165,7 +165,7 @@ class TermAssignmentHeader:
 
     @property
     def status(self):
-        """Gets the status of this TermAssignmentHeader.
+        r"""Gets the status of this TermAssignmentHeader.
 
         状态 枚举值：DISCOVERED、PROPOSED、IMPORTED、VALIDATED、DEPRECATED、OBSOLETE、OTHER
 
@@ -176,7 +176,7 @@ class TermAssignmentHeader:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TermAssignmentHeader.
+        r"""Sets the status of this TermAssignmentHeader.
 
         状态 枚举值：DISCOVERED、PROPOSED、IMPORTED、VALIDATED、DEPRECATED、OBSOLETE、OTHER
 
@@ -187,7 +187,7 @@ class TermAssignmentHeader:
 
     @property
     def create_user(self):
-        """Gets the create_user of this TermAssignmentHeader.
+        r"""Gets the create_user of this TermAssignmentHeader.
 
         创建人
 
@@ -198,7 +198,7 @@ class TermAssignmentHeader:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this TermAssignmentHeader.
+        r"""Sets the create_user of this TermAssignmentHeader.
 
         创建人
 
@@ -209,7 +209,7 @@ class TermAssignmentHeader:
 
     @property
     def expression(self):
-        """Gets the expression of this TermAssignmentHeader.
+        r"""Gets the expression of this TermAssignmentHeader.
 
         表达式
 
@@ -220,7 +220,7 @@ class TermAssignmentHeader:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this TermAssignmentHeader.
+        r"""Sets the expression of this TermAssignmentHeader.
 
         表达式
 
@@ -231,7 +231,7 @@ class TermAssignmentHeader:
 
     @property
     def display_text(self):
-        """Gets the display_text of this TermAssignmentHeader.
+        r"""Gets the display_text of this TermAssignmentHeader.
 
         展示信息
 
@@ -242,7 +242,7 @@ class TermAssignmentHeader:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this TermAssignmentHeader.
+        r"""Sets the display_text of this TermAssignmentHeader.
 
         展示信息
 
@@ -253,7 +253,7 @@ class TermAssignmentHeader:
 
     @property
     def term_guid(self):
-        """Gets the term_guid of this TermAssignmentHeader.
+        r"""Gets the term_guid of this TermAssignmentHeader.
 
         标签guid
 
@@ -264,7 +264,7 @@ class TermAssignmentHeader:
 
     @term_guid.setter
     def term_guid(self, term_guid):
-        """Sets the term_guid of this TermAssignmentHeader.
+        r"""Sets the term_guid of this TermAssignmentHeader.
 
         标签guid
 
@@ -275,7 +275,7 @@ class TermAssignmentHeader:
 
     @property
     def relation_guid(self):
-        """Gets the relation_guid of this TermAssignmentHeader.
+        r"""Gets the relation_guid of this TermAssignmentHeader.
 
         关联guid
 
@@ -286,7 +286,7 @@ class TermAssignmentHeader:
 
     @relation_guid.setter
     def relation_guid(self, relation_guid):
-        """Sets the relation_guid of this TermAssignmentHeader.
+        r"""Sets the relation_guid of this TermAssignmentHeader.
 
         关联guid
 

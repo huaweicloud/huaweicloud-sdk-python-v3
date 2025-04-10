@@ -33,7 +33,7 @@ class BackPoolMemVO:
     }
 
     def __init__(self, id=None, cid=None, sim_price_plan_id=None, flow_used=None, sim_status=None):
-        """BackPoolMemVO
+        r"""BackPoolMemVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BackPoolMemVO:
 
     @property
     def id(self):
-        """Gets the id of this BackPoolMemVO.
+        r"""Gets the id of this BackPoolMemVO.
 
         流量池标识
 
@@ -82,7 +82,7 @@ class BackPoolMemVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackPoolMemVO.
+        r"""Sets the id of this BackPoolMemVO.
 
         流量池标识
 
@@ -93,7 +93,7 @@ class BackPoolMemVO:
 
     @property
     def cid(self):
-        """Gets the cid of this BackPoolMemVO.
+        r"""Gets the cid of this BackPoolMemVO.
 
         容器ID
 
@@ -104,7 +104,7 @@ class BackPoolMemVO:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this BackPoolMemVO.
+        r"""Sets the cid of this BackPoolMemVO.
 
         容器ID
 
@@ -115,7 +115,7 @@ class BackPoolMemVO:
 
     @property
     def sim_price_plan_id(self):
-        """Gets the sim_price_plan_id of this BackPoolMemVO.
+        r"""Gets the sim_price_plan_id of this BackPoolMemVO.
 
         套餐订购实例ID
 
@@ -126,7 +126,7 @@ class BackPoolMemVO:
 
     @sim_price_plan_id.setter
     def sim_price_plan_id(self, sim_price_plan_id):
-        """Sets the sim_price_plan_id of this BackPoolMemVO.
+        r"""Sets the sim_price_plan_id of this BackPoolMemVO.
 
         套餐订购实例ID
 
@@ -137,7 +137,7 @@ class BackPoolMemVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this BackPoolMemVO.
+        r"""Gets the flow_used of this BackPoolMemVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -148,7 +148,7 @@ class BackPoolMemVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this BackPoolMemVO.
+        r"""Sets the flow_used of this BackPoolMemVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -159,7 +159,7 @@ class BackPoolMemVO:
 
     @property
     def sim_status(self):
-        """Gets the sim_status of this BackPoolMemVO.
+        r"""Gets the sim_status of this BackPoolMemVO.
 
         卡当前状态：11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
 
@@ -170,7 +170,7 @@ class BackPoolMemVO:
 
     @sim_status.setter
     def sim_status(self, sim_status):
-        """Sets the sim_status of this BackPoolMemVO.
+        r"""Sets the sim_status of this BackPoolMemVO.
 
         卡当前状态：11-未激活，13-可激活，14-已停用，20-在用，30-已拆机
 

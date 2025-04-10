@@ -31,7 +31,7 @@ class FreezeCertRequest:
     }
 
     def __init__(self, user_name=None, blockchain_id=None, org_name=None, body=None):
-        """FreezeCertRequest
+        r"""FreezeCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class FreezeCertRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this FreezeCertRequest.
+        r"""Gets the user_name of this FreezeCertRequest.
 
         userName
 
@@ -72,7 +72,7 @@ class FreezeCertRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this FreezeCertRequest.
+        r"""Sets the user_name of this FreezeCertRequest.
 
         userName
 
@@ -83,7 +83,7 @@ class FreezeCertRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this FreezeCertRequest.
+        r"""Gets the blockchain_id of this FreezeCertRequest.
 
         blockchainID
 
@@ -94,7 +94,7 @@ class FreezeCertRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this FreezeCertRequest.
+        r"""Sets the blockchain_id of this FreezeCertRequest.
 
         blockchainID
 
@@ -105,7 +105,7 @@ class FreezeCertRequest:
 
     @property
     def org_name(self):
-        """Gets the org_name of this FreezeCertRequest.
+        r"""Gets the org_name of this FreezeCertRequest.
 
         orgName
 
@@ -116,7 +116,7 @@ class FreezeCertRequest:
 
     @org_name.setter
     def org_name(self, org_name):
-        """Sets the org_name of this FreezeCertRequest.
+        r"""Sets the org_name of this FreezeCertRequest.
 
         orgName
 
@@ -127,7 +127,7 @@ class FreezeCertRequest:
 
     @property
     def body(self):
-        """Gets the body of this FreezeCertRequest.
+        r"""Gets the body of this FreezeCertRequest.
 
         :return: The body of this FreezeCertRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`
@@ -136,7 +136,7 @@ class FreezeCertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this FreezeCertRequest.
+        r"""Sets the body of this FreezeCertRequest.
 
         :param body: The body of this FreezeCertRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`

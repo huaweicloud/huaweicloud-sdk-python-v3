@@ -29,7 +29,7 @@ class ListIndicatorsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """ListIndicatorsRequest
+        r"""ListIndicatorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListIndicatorsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIndicatorsRequest.
+        r"""Gets the project_id of this ListIndicatorsRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class ListIndicatorsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIndicatorsRequest.
+        r"""Sets the project_id of this ListIndicatorsRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class ListIndicatorsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListIndicatorsRequest.
+        r"""Gets the workspace_id of this ListIndicatorsRequest.
 
         工作空间ID
 
@@ -88,7 +88,7 @@ class ListIndicatorsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListIndicatorsRequest.
+        r"""Sets the workspace_id of this ListIndicatorsRequest.
 
         工作空间ID
 
@@ -99,7 +99,7 @@ class ListIndicatorsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListIndicatorsRequest.
+        r"""Gets the body of this ListIndicatorsRequest.
 
         :return: The body of this ListIndicatorsRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorListSearchRequest`
@@ -108,7 +108,7 @@ class ListIndicatorsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListIndicatorsRequest.
+        r"""Sets the body of this ListIndicatorsRequest.
 
         :param body: The body of this ListIndicatorsRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.IndicatorListSearchRequest`

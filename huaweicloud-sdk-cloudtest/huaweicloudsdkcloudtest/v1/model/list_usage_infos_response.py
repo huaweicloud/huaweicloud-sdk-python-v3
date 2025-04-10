@@ -26,7 +26,7 @@ class ListUsageInfosResponse(SdkResponse):
     }
 
     def __init__(self, value=None):
-        """ListUsageInfosResponse
+        r"""ListUsageInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUsageInfosResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListUsageInfosResponse.
+        r"""Gets the value of this ListUsageInfosResponse.
 
         :return: The value of this ListUsageInfosResponse.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.UsageInfos`]
@@ -53,7 +53,7 @@ class ListUsageInfosResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListUsageInfosResponse.
+        r"""Sets the value of this ListUsageInfosResponse.
 
         :param value: The value of this ListUsageInfosResponse.
         :type value: list[:class:`huaweicloudsdkcloudtest.v1.UsageInfos`]

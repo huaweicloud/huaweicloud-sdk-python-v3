@@ -28,7 +28,7 @@ class ListDbCacheMappingsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, dbcache_mappings=None):
-        """ListDbCacheMappingsResponse
+        r"""ListDbCacheMappingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDbCacheMappingsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDbCacheMappingsResponse.
+        r"""Gets the total_count of this ListDbCacheMappingsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListDbCacheMappingsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDbCacheMappingsResponse.
+        r"""Sets the total_count of this ListDbCacheMappingsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListDbCacheMappingsResponse(SdkResponse):
 
     @property
     def dbcache_mappings(self):
-        """Gets the dbcache_mappings of this ListDbCacheMappingsResponse.
+        r"""Gets the dbcache_mappings of this ListDbCacheMappingsResponse.
 
         内存加速映射信息。
 
@@ -84,7 +84,7 @@ class ListDbCacheMappingsResponse(SdkResponse):
 
     @dbcache_mappings.setter
     def dbcache_mappings(self, dbcache_mappings):
-        """Sets the dbcache_mappings of this ListDbCacheMappingsResponse.
+        r"""Sets the dbcache_mappings of this ListDbCacheMappingsResponse.
 
         内存加速映射信息。
 

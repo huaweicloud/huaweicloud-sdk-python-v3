@@ -44,7 +44,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, last_exec_time=None, check_type=None, created_at=None, metric_info=None):
-        """ShowTaskCmetricsResponse
+        r"""ShowTaskCmetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskCmetricsResponse.
+        r"""Gets the task_id of this ShowTaskCmetricsResponse.
 
         任务id
 
@@ -118,7 +118,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskCmetricsResponse.
+        r"""Sets the task_id of this ShowTaskCmetricsResponse.
 
         任务id
 
@@ -129,7 +129,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowTaskCmetricsResponse.
+        r"""Gets the task_name of this ShowTaskCmetricsResponse.
 
         任务名字
 
@@ -140,7 +140,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowTaskCmetricsResponse.
+        r"""Sets the task_name of this ShowTaskCmetricsResponse.
 
         任务名字
 
@@ -151,7 +151,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowTaskCmetricsResponse.
+        r"""Gets the creator_id of this ShowTaskCmetricsResponse.
 
         创建者id
 
@@ -162,7 +162,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowTaskCmetricsResponse.
+        r"""Sets the creator_id of this ShowTaskCmetricsResponse.
 
         创建者id
 
@@ -173,7 +173,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def git_url(self):
-        """Gets the git_url of this ShowTaskCmetricsResponse.
+        r"""Gets the git_url of this ShowTaskCmetricsResponse.
 
         代码仓地址
 
@@ -184,7 +184,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this ShowTaskCmetricsResponse.
+        r"""Sets the git_url of this ShowTaskCmetricsResponse.
 
         代码仓地址
 
@@ -195,7 +195,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def git_branch(self):
-        """Gets the git_branch of this ShowTaskCmetricsResponse.
+        r"""Gets the git_branch of this ShowTaskCmetricsResponse.
 
         代码仓分支
 
@@ -206,7 +206,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @git_branch.setter
     def git_branch(self, git_branch):
-        """Sets the git_branch of this ShowTaskCmetricsResponse.
+        r"""Sets the git_branch of this ShowTaskCmetricsResponse.
 
         代码仓分支
 
@@ -217,7 +217,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def last_check_time(self):
-        """Gets the last_check_time of this ShowTaskCmetricsResponse.
+        r"""Gets the last_check_time of this ShowTaskCmetricsResponse.
 
         上一次检查时间
 
@@ -228,7 +228,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @last_check_time.setter
     def last_check_time(self, last_check_time):
-        """Sets the last_check_time of this ShowTaskCmetricsResponse.
+        r"""Sets the last_check_time of this ShowTaskCmetricsResponse.
 
         上一次检查时间
 
@@ -239,7 +239,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def last_exec_time(self):
-        """Gets the last_exec_time of this ShowTaskCmetricsResponse.
+        r"""Gets the last_exec_time of this ShowTaskCmetricsResponse.
 
         上次执行时间
 
@@ -250,7 +250,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @last_exec_time.setter
     def last_exec_time(self, last_exec_time):
-        """Sets the last_exec_time of this ShowTaskCmetricsResponse.
+        r"""Sets the last_exec_time of this ShowTaskCmetricsResponse.
 
         上次执行时间
 
@@ -261,7 +261,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def check_type(self):
-        """Gets the check_type of this ShowTaskCmetricsResponse.
+        r"""Gets the check_type of this ShowTaskCmetricsResponse.
 
         检查类型
 
@@ -272,7 +272,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this ShowTaskCmetricsResponse.
+        r"""Sets the check_type of this ShowTaskCmetricsResponse.
 
         检查类型
 
@@ -283,7 +283,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowTaskCmetricsResponse.
+        r"""Gets the created_at of this ShowTaskCmetricsResponse.
 
         创建时间
 
@@ -294,7 +294,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowTaskCmetricsResponse.
+        r"""Sets the created_at of this ShowTaskCmetricsResponse.
 
         创建时间
 
@@ -305,7 +305,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @property
     def metric_info(self):
-        """Gets the metric_info of this ShowTaskCmetricsResponse.
+        r"""Gets the metric_info of this ShowTaskCmetricsResponse.
 
         :return: The metric_info of this ShowTaskCmetricsResponse.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.MetricInfo`
@@ -314,7 +314,7 @@ class ShowTaskCmetricsResponse(SdkResponse):
 
     @metric_info.setter
     def metric_info(self, metric_info):
-        """Sets the metric_info of this ShowTaskCmetricsResponse.
+        r"""Sets the metric_info of this ShowTaskCmetricsResponse.
 
         :param metric_info: The metric_info of this ShowTaskCmetricsResponse.
         :type metric_info: :class:`huaweicloudsdkcodeartscheck.v2.MetricInfo`

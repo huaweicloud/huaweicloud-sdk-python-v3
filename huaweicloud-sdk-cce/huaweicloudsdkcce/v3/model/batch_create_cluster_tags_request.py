@@ -27,7 +27,7 @@ class BatchCreateClusterTagsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """BatchCreateClusterTagsRequest
+        r"""BatchCreateClusterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateClusterTagsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BatchCreateClusterTagsRequest.
+        r"""Gets the cluster_id of this BatchCreateClusterTagsRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class BatchCreateClusterTagsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BatchCreateClusterTagsRequest.
+        r"""Sets the cluster_id of this BatchCreateClusterTagsRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class BatchCreateClusterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateClusterTagsRequest.
+        r"""Gets the body of this BatchCreateClusterTagsRequest.
 
         :return: The body of this BatchCreateClusterTagsRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.BatchCreateClusterTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateClusterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateClusterTagsRequest.
+        r"""Sets the body of this BatchCreateClusterTagsRequest.
 
         :param body: The body of this BatchCreateClusterTagsRequest.
         :type body: :class:`huaweicloudsdkcce.v3.BatchCreateClusterTagsRequestBody`

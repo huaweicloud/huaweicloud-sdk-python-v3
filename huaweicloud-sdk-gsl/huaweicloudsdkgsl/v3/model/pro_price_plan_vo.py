@@ -55,7 +55,7 @@ class ProPricePlanVo:
     }
 
     def __init__(self, price_plan_id=None, price_plan_name=None, description=None, flow_total=None, package_type=None, period=None, period_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None, location_type=None, sim_type=None, carrier_type=None, price=None):
-        """ProPricePlanVo
+        r"""ProPricePlanVo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ProPricePlanVo:
 
     @property
     def price_plan_id(self):
-        """Gets the price_plan_id of this ProPricePlanVo.
+        r"""Gets the price_plan_id of this ProPricePlanVo.
 
         套餐ID
 
@@ -159,7 +159,7 @@ class ProPricePlanVo:
 
     @price_plan_id.setter
     def price_plan_id(self, price_plan_id):
-        """Sets the price_plan_id of this ProPricePlanVo.
+        r"""Sets the price_plan_id of this ProPricePlanVo.
 
         套餐ID
 
@@ -170,7 +170,7 @@ class ProPricePlanVo:
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this ProPricePlanVo.
+        r"""Gets the price_plan_name of this ProPricePlanVo.
 
         套餐名称
 
@@ -181,7 +181,7 @@ class ProPricePlanVo:
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this ProPricePlanVo.
+        r"""Sets the price_plan_name of this ProPricePlanVo.
 
         套餐名称
 
@@ -192,7 +192,7 @@ class ProPricePlanVo:
 
     @property
     def description(self):
-        """Gets the description of this ProPricePlanVo.
+        r"""Gets the description of this ProPricePlanVo.
 
         描述
 
@@ -203,7 +203,7 @@ class ProPricePlanVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProPricePlanVo.
+        r"""Sets the description of this ProPricePlanVo.
 
         描述
 
@@ -214,7 +214,7 @@ class ProPricePlanVo:
 
     @property
     def flow_total(self):
-        """Gets the flow_total of this ProPricePlanVo.
+        r"""Gets the flow_total of this ProPricePlanVo.
 
         流量总量(MB)
 
@@ -225,7 +225,7 @@ class ProPricePlanVo:
 
     @flow_total.setter
     def flow_total(self, flow_total):
-        """Sets the flow_total of this ProPricePlanVo.
+        r"""Sets the flow_total of this ProPricePlanVo.
 
         流量总量(MB)
 
@@ -236,7 +236,7 @@ class ProPricePlanVo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ProPricePlanVo.
+        r"""Gets the package_type of this ProPricePlanVo.
 
         套餐类型 1基础套餐;2叠加包套餐;如果是国际漫游不区分基础套餐包和叠加包
 
@@ -247,7 +247,7 @@ class ProPricePlanVo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ProPricePlanVo.
+        r"""Sets the package_type of this ProPricePlanVo.
 
         套餐类型 1基础套餐;2叠加包套餐;如果是国际漫游不区分基础套餐包和叠加包
 
@@ -258,7 +258,7 @@ class ProPricePlanVo:
 
     @property
     def period(self):
-        """Gets the period of this ProPricePlanVo.
+        r"""Gets the period of this ProPricePlanVo.
 
         套餐周期
 
@@ -269,7 +269,7 @@ class ProPricePlanVo:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ProPricePlanVo.
+        r"""Sets the period of this ProPricePlanVo.
 
         套餐周期
 
@@ -280,7 +280,7 @@ class ProPricePlanVo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ProPricePlanVo.
+        r"""Gets the period_type of this ProPricePlanVo.
 
         套餐周期类型 10:日;20:月;30:季;40:半年;50:年
 
@@ -291,7 +291,7 @@ class ProPricePlanVo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ProPricePlanVo.
+        r"""Sets the period_type of this ProPricePlanVo.
 
         套餐周期类型 10:日;20:月;30:季;40:半年;50:年
 
@@ -302,7 +302,7 @@ class ProPricePlanVo:
 
     @property
     def effect_type(self):
-        """Gets the effect_type of this ProPricePlanVo.
+        r"""Gets the effect_type of this ProPricePlanVo.
 
         套餐生效类型 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效
 
@@ -313,7 +313,7 @@ class ProPricePlanVo:
 
     @effect_type.setter
     def effect_type(self, effect_type):
-        """Sets the effect_type of this ProPricePlanVo.
+        r"""Sets the effect_type of this ProPricePlanVo.
 
         套餐生效类型 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效
 
@@ -324,7 +324,7 @@ class ProPricePlanVo:
 
     @property
     def silent_period_day(self):
-        """Gets the silent_period_day of this ProPricePlanVo.
+        r"""Gets the silent_period_day of this ProPricePlanVo.
 
         沉默期
 
@@ -335,7 +335,7 @@ class ProPricePlanVo:
 
     @silent_period_day.setter
     def silent_period_day(self, silent_period_day):
-        """Sets the silent_period_day of this ProPricePlanVo.
+        r"""Sets the silent_period_day of this ProPricePlanVo.
 
         沉默期
 
@@ -346,7 +346,7 @@ class ProPricePlanVo:
 
     @property
     def silent_period_unit(self):
-        """Gets the silent_period_unit of this ProPricePlanVo.
+        r"""Gets the silent_period_unit of this ProPricePlanVo.
 
         沉默期单位 1.年 2.月 3.日
 
@@ -357,7 +357,7 @@ class ProPricePlanVo:
 
     @silent_period_unit.setter
     def silent_period_unit(self, silent_period_unit):
-        """Sets the silent_period_unit of this ProPricePlanVo.
+        r"""Sets the silent_period_unit of this ProPricePlanVo.
 
         沉默期单位 1.年 2.月 3.日
 
@@ -368,7 +368,7 @@ class ProPricePlanVo:
 
     @property
     def auto_renew(self):
-        """Gets the auto_renew of this ProPricePlanVo.
+        r"""Gets the auto_renew of this ProPricePlanVo.
 
         是否自动续订
 
@@ -379,7 +379,7 @@ class ProPricePlanVo:
 
     @auto_renew.setter
     def auto_renew(self, auto_renew):
-        """Sets the auto_renew of this ProPricePlanVo.
+        r"""Sets the auto_renew of this ProPricePlanVo.
 
         是否自动续订
 
@@ -390,7 +390,7 @@ class ProPricePlanVo:
 
     @property
     def location_desc(self):
-        """Gets the location_desc of this ProPricePlanVo.
+        r"""Gets the location_desc of this ProPricePlanVo.
 
         套餐适用区域
 
@@ -401,7 +401,7 @@ class ProPricePlanVo:
 
     @location_desc.setter
     def location_desc(self, location_desc):
-        """Sets the location_desc of this ProPricePlanVo.
+        r"""Sets the location_desc of this ProPricePlanVo.
 
         套餐适用区域
 
@@ -412,7 +412,7 @@ class ProPricePlanVo:
 
     @property
     def location_type(self):
-        """Gets the location_type of this ProPricePlanVo.
+        r"""Gets the location_type of this ProPricePlanVo.
 
         区域 1.中国 2.欧洲 3.大洋洲 4.非洲 5.亚太
 
@@ -423,7 +423,7 @@ class ProPricePlanVo:
 
     @location_type.setter
     def location_type(self, location_type):
-        """Sets the location_type of this ProPricePlanVo.
+        r"""Sets the location_type of this ProPricePlanVo.
 
         区域 1.中国 2.欧洲 3.大洋洲 4.非洲 5.亚太
 
@@ -434,7 +434,7 @@ class ProPricePlanVo:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this ProPricePlanVo.
+        r"""Gets the sim_type of this ProPricePlanVo.
 
         SIM卡类型 1.vSIM 2.eSIM 3.实体卡
 
@@ -445,7 +445,7 @@ class ProPricePlanVo:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this ProPricePlanVo.
+        r"""Sets the sim_type of this ProPricePlanVo.
 
         SIM卡类型 1.vSIM 2.eSIM 3.实体卡
 
@@ -456,7 +456,7 @@ class ProPricePlanVo:
 
     @property
     def carrier_type(self):
-        """Gets the carrier_type of this ProPricePlanVo.
+        r"""Gets the carrier_type of this ProPricePlanVo.
 
         运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉 
 
@@ -467,7 +467,7 @@ class ProPricePlanVo:
 
     @carrier_type.setter
     def carrier_type(self, carrier_type):
-        """Sets the carrier_type of this ProPricePlanVo.
+        r"""Sets the carrier_type of this ProPricePlanVo.
 
         运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉 
 
@@ -478,7 +478,7 @@ class ProPricePlanVo:
 
     @property
     def price(self):
-        """Gets the price of this ProPricePlanVo.
+        r"""Gets the price of this ProPricePlanVo.
 
         价格(分)
 
@@ -489,7 +489,7 @@ class ProPricePlanVo:
 
     @price.setter
     def price(self, price):
-        """Sets the price of this ProPricePlanVo.
+        r"""Sets the price of this ProPricePlanVo.
 
         价格(分)
 

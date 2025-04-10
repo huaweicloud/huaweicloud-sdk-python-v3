@@ -37,7 +37,7 @@ class DesktopDetachInfo:
     }
 
     def __init__(self, desktop_id=None, desktop_name=None, user_id=None, user_name=None, user_group=None, detach_time=None, type=None):
-        """DesktopDetachInfo
+        r"""DesktopDetachInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DesktopDetachInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopDetachInfo.
+        r"""Gets the desktop_id of this DesktopDetachInfo.
 
         桌面id
 
@@ -96,7 +96,7 @@ class DesktopDetachInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopDetachInfo.
+        r"""Sets the desktop_id of this DesktopDetachInfo.
 
         桌面id
 
@@ -107,7 +107,7 @@ class DesktopDetachInfo:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this DesktopDetachInfo.
+        r"""Gets the desktop_name of this DesktopDetachInfo.
 
         桌面名称
 
@@ -118,7 +118,7 @@ class DesktopDetachInfo:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this DesktopDetachInfo.
+        r"""Sets the desktop_name of this DesktopDetachInfo.
 
         桌面名称
 
@@ -129,7 +129,7 @@ class DesktopDetachInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DesktopDetachInfo.
+        r"""Gets the user_id of this DesktopDetachInfo.
 
         用户id
 
@@ -140,7 +140,7 @@ class DesktopDetachInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DesktopDetachInfo.
+        r"""Sets the user_id of this DesktopDetachInfo.
 
         用户id
 
@@ -151,7 +151,7 @@ class DesktopDetachInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DesktopDetachInfo.
+        r"""Gets the user_name of this DesktopDetachInfo.
 
         用户名称
 
@@ -162,7 +162,7 @@ class DesktopDetachInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DesktopDetachInfo.
+        r"""Sets the user_name of this DesktopDetachInfo.
 
         用户名称
 
@@ -173,7 +173,7 @@ class DesktopDetachInfo:
 
     @property
     def user_group(self):
-        """Gets the user_group of this DesktopDetachInfo.
+        r"""Gets the user_group of this DesktopDetachInfo.
 
         用户权限
 
@@ -184,7 +184,7 @@ class DesktopDetachInfo:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this DesktopDetachInfo.
+        r"""Sets the user_group of this DesktopDetachInfo.
 
         用户权限
 
@@ -195,7 +195,7 @@ class DesktopDetachInfo:
 
     @property
     def detach_time(self):
-        """Gets the detach_time of this DesktopDetachInfo.
+        r"""Gets the detach_time of this DesktopDetachInfo.
 
         解绑时间
 
@@ -206,7 +206,7 @@ class DesktopDetachInfo:
 
     @detach_time.setter
     def detach_time(self, detach_time):
-        """Sets the detach_time of this DesktopDetachInfo.
+        r"""Sets the detach_time of this DesktopDetachInfo.
 
         解绑时间
 
@@ -217,7 +217,7 @@ class DesktopDetachInfo:
 
     @property
     def type(self):
-        """Gets the type of this DesktopDetachInfo.
+        r"""Gets the type of this DesktopDetachInfo.
 
         对象类型，可选值为： - USER：用户。 - GROUP：用户组。
 
@@ -228,7 +228,7 @@ class DesktopDetachInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DesktopDetachInfo.
+        r"""Sets the type of this DesktopDetachInfo.
 
         对象类型，可选值为： - USER：用户。 - GROUP：用户组。
 

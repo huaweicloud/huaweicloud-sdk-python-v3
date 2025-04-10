@@ -26,7 +26,7 @@ class CreateVisionActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, active_code=None):
-        """CreateVisionActiveCodeResponse
+        r"""CreateVisionActiveCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateVisionActiveCodeResponse(SdkResponse):
 
     @property
     def active_code(self):
-        """Gets the active_code of this CreateVisionActiveCodeResponse.
+        r"""Gets the active_code of this CreateVisionActiveCodeResponse.
 
         激活码。
 
@@ -55,7 +55,7 @@ class CreateVisionActiveCodeResponse(SdkResponse):
 
     @active_code.setter
     def active_code(self, active_code):
-        """Sets the active_code of this CreateVisionActiveCodeResponse.
+        r"""Sets the active_code of this CreateVisionActiveCodeResponse.
 
         激活码。
 

@@ -23,7 +23,7 @@ class PropertyValue:
     }
 
     def __init__(self):
-        """PropertyValue
+        r"""PropertyValue
 
         The model defined in huaweicloud sdk
 

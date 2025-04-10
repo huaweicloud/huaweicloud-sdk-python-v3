@@ -25,7 +25,7 @@ class ShowPublicIpRequest:
     }
 
     def __init__(self, publicip_id=None):
-        """ShowPublicIpRequest
+        r"""ShowPublicIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPublicIpRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this ShowPublicIpRequest.
+        r"""Gets the publicip_id of this ShowPublicIpRequest.
 
         弹性公网IP ID。
 
@@ -53,7 +53,7 @@ class ShowPublicIpRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this ShowPublicIpRequest.
+        r"""Sets the publicip_id of this ShowPublicIpRequest.
 
         弹性公网IP ID。
 

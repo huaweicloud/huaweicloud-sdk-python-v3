@@ -35,7 +35,7 @@ class IpsRuleChangeRespBody:
     }
 
     def __init__(self, error_code=None, error_msg=None, group_id=None, id=None, ips_ids=None, result=None):
-        """IpsRuleChangeRespBody
+        r"""IpsRuleChangeRespBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IpsRuleChangeRespBody:
 
     @property
     def error_code(self):
-        """Gets the error_code of this IpsRuleChangeRespBody.
+        r"""Gets the error_code of this IpsRuleChangeRespBody.
 
         错误代码
 
@@ -89,7 +89,7 @@ class IpsRuleChangeRespBody:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this IpsRuleChangeRespBody.
+        r"""Sets the error_code of this IpsRuleChangeRespBody.
 
         错误代码
 
@@ -100,7 +100,7 @@ class IpsRuleChangeRespBody:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this IpsRuleChangeRespBody.
+        r"""Gets the error_msg of this IpsRuleChangeRespBody.
 
         错误信息
 
@@ -111,7 +111,7 @@ class IpsRuleChangeRespBody:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this IpsRuleChangeRespBody.
+        r"""Sets the error_msg of this IpsRuleChangeRespBody.
 
         错误信息
 
@@ -122,7 +122,7 @@ class IpsRuleChangeRespBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this IpsRuleChangeRespBody.
+        r"""Gets the group_id of this IpsRuleChangeRespBody.
 
         分组id
 
@@ -133,7 +133,7 @@ class IpsRuleChangeRespBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this IpsRuleChangeRespBody.
+        r"""Sets the group_id of this IpsRuleChangeRespBody.
 
         分组id
 
@@ -144,7 +144,7 @@ class IpsRuleChangeRespBody:
 
     @property
     def id(self):
-        """Gets the id of this IpsRuleChangeRespBody.
+        r"""Gets the id of this IpsRuleChangeRespBody.
 
         防火墙id
 
@@ -155,7 +155,7 @@ class IpsRuleChangeRespBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpsRuleChangeRespBody.
+        r"""Sets the id of this IpsRuleChangeRespBody.
 
         防火墙id
 
@@ -166,7 +166,7 @@ class IpsRuleChangeRespBody:
 
     @property
     def ips_ids(self):
-        """Gets the ips_ids of this IpsRuleChangeRespBody.
+        r"""Gets the ips_ids of this IpsRuleChangeRespBody.
 
         ips的id列表
 
@@ -177,7 +177,7 @@ class IpsRuleChangeRespBody:
 
     @ips_ids.setter
     def ips_ids(self, ips_ids):
-        """Sets the ips_ids of this IpsRuleChangeRespBody.
+        r"""Sets the ips_ids of this IpsRuleChangeRespBody.
 
         ips的id列表
 
@@ -188,7 +188,7 @@ class IpsRuleChangeRespBody:
 
     @property
     def result(self):
-        """Gets the result of this IpsRuleChangeRespBody.
+        r"""Gets the result of this IpsRuleChangeRespBody.
 
         修改结果
 
@@ -199,7 +199,7 @@ class IpsRuleChangeRespBody:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this IpsRuleChangeRespBody.
+        r"""Sets the result of this IpsRuleChangeRespBody.
 
         修改结果
 

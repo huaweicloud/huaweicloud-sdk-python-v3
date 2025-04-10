@@ -53,7 +53,7 @@ class CustomerOnDemandResource:
     }
 
     def __init__(self, customer_id=None, region_code=None, availability_zone_code=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, resource_id=None, resource_name=None, effective_time=None, expire_time=None, status=None, resource_spec_code=None, resource_info=None, product_spec_desc=None):
-        """CustomerOnDemandResource
+        r"""CustomerOnDemandResource
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class CustomerOnDemandResource:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this CustomerOnDemandResource.
+        r"""Gets the customer_id of this CustomerOnDemandResource.
 
         客户账号ID。
 
@@ -152,7 +152,7 @@ class CustomerOnDemandResource:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this CustomerOnDemandResource.
+        r"""Sets the customer_id of this CustomerOnDemandResource.
 
         客户账号ID。
 
@@ -163,7 +163,7 @@ class CustomerOnDemandResource:
 
     @property
     def region_code(self):
-        """Gets the region_code of this CustomerOnDemandResource.
+        r"""Gets the region_code of this CustomerOnDemandResource.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -174,7 +174,7 @@ class CustomerOnDemandResource:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this CustomerOnDemandResource.
+        r"""Sets the region_code of this CustomerOnDemandResource.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -185,7 +185,7 @@ class CustomerOnDemandResource:
 
     @property
     def availability_zone_code(self):
-        """Gets the availability_zone_code of this CustomerOnDemandResource.
+        r"""Gets the availability_zone_code of this CustomerOnDemandResource.
 
         所属可用区的编码。
 
@@ -196,7 +196,7 @@ class CustomerOnDemandResource:
 
     @availability_zone_code.setter
     def availability_zone_code(self, availability_zone_code):
-        """Sets the availability_zone_code of this CustomerOnDemandResource.
+        r"""Sets the availability_zone_code of this CustomerOnDemandResource.
 
         所属可用区的编码。
 
@@ -207,7 +207,7 @@ class CustomerOnDemandResource:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this CustomerOnDemandResource.
+        r"""Gets the service_type_code of this CustomerOnDemandResource.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -218,7 +218,7 @@ class CustomerOnDemandResource:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this CustomerOnDemandResource.
+        r"""Sets the service_type_code of this CustomerOnDemandResource.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -229,7 +229,7 @@ class CustomerOnDemandResource:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this CustomerOnDemandResource.
+        r"""Gets the resource_type_code of this CustomerOnDemandResource.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -240,7 +240,7 @@ class CustomerOnDemandResource:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this CustomerOnDemandResource.
+        r"""Sets the resource_type_code of this CustomerOnDemandResource.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -251,7 +251,7 @@ class CustomerOnDemandResource:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this CustomerOnDemandResource.
+        r"""Gets the service_type_name of this CustomerOnDemandResource.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -262,7 +262,7 @@ class CustomerOnDemandResource:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this CustomerOnDemandResource.
+        r"""Sets the service_type_name of this CustomerOnDemandResource.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -273,7 +273,7 @@ class CustomerOnDemandResource:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this CustomerOnDemandResource.
+        r"""Gets the resource_type_name of this CustomerOnDemandResource.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -284,7 +284,7 @@ class CustomerOnDemandResource:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this CustomerOnDemandResource.
+        r"""Sets the resource_type_name of this CustomerOnDemandResource.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -295,7 +295,7 @@ class CustomerOnDemandResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CustomerOnDemandResource.
+        r"""Gets the resource_id of this CustomerOnDemandResource.
 
         资源ID。
 
@@ -306,7 +306,7 @@ class CustomerOnDemandResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CustomerOnDemandResource.
+        r"""Sets the resource_id of this CustomerOnDemandResource.
 
         资源ID。
 
@@ -317,7 +317,7 @@ class CustomerOnDemandResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this CustomerOnDemandResource.
+        r"""Gets the resource_name of this CustomerOnDemandResource.
 
         资源实例名称。
 
@@ -328,7 +328,7 @@ class CustomerOnDemandResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this CustomerOnDemandResource.
+        r"""Sets the resource_name of this CustomerOnDemandResource.
 
         资源实例名称。
 
@@ -339,7 +339,7 @@ class CustomerOnDemandResource:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this CustomerOnDemandResource.
+        r"""Gets the effective_time of this CustomerOnDemandResource.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -350,7 +350,7 @@ class CustomerOnDemandResource:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this CustomerOnDemandResource.
+        r"""Sets the effective_time of this CustomerOnDemandResource.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -361,7 +361,7 @@ class CustomerOnDemandResource:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CustomerOnDemandResource.
+        r"""Gets the expire_time of this CustomerOnDemandResource.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -372,7 +372,7 @@ class CustomerOnDemandResource:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CustomerOnDemandResource.
+        r"""Sets the expire_time of this CustomerOnDemandResource.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -383,7 +383,7 @@ class CustomerOnDemandResource:
 
     @property
     def status(self):
-        """Gets the status of this CustomerOnDemandResource.
+        r"""Gets the status of this CustomerOnDemandResource.
 
         资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
@@ -394,7 +394,7 @@ class CustomerOnDemandResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CustomerOnDemandResource.
+        r"""Sets the status of this CustomerOnDemandResource.
 
         资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
@@ -405,7 +405,7 @@ class CustomerOnDemandResource:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this CustomerOnDemandResource.
+        r"""Gets the resource_spec_code of this CustomerOnDemandResource.
 
         云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
@@ -416,7 +416,7 @@ class CustomerOnDemandResource:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this CustomerOnDemandResource.
+        r"""Sets the resource_spec_code of this CustomerOnDemandResource.
 
         云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
@@ -427,7 +427,7 @@ class CustomerOnDemandResource:
 
     @property
     def resource_info(self):
-        """Gets the resource_info of this CustomerOnDemandResource.
+        r"""Gets the resource_info of this CustomerOnDemandResource.
 
         按需资源的容量大小。 格式如：\"resourceInfo\": \"{\\\"specSize\\\":40.0}\"
 
@@ -438,7 +438,7 @@ class CustomerOnDemandResource:
 
     @resource_info.setter
     def resource_info(self, resource_info):
-        """Sets the resource_info of this CustomerOnDemandResource.
+        r"""Sets the resource_info of this CustomerOnDemandResource.
 
         按需资源的容量大小。 格式如：\"resourceInfo\": \"{\\\"specSize\\\":40.0}\"
 
@@ -449,7 +449,7 @@ class CustomerOnDemandResource:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this CustomerOnDemandResource.
+        r"""Gets the product_spec_desc of this CustomerOnDemandResource.
 
         产品规格描述。例如： 虚拟机：“通用计算增强型|c6.2xlarge.4|8vCPUs|32GB|linux”硬盘：“云硬盘_SATA_LXH01|40.0GB”
 
@@ -460,7 +460,7 @@ class CustomerOnDemandResource:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this CustomerOnDemandResource.
+        r"""Sets the product_spec_desc of this CustomerOnDemandResource.
 
         产品规格描述。例如： 虚拟机：“通用计算增强型|c6.2xlarge.4|8vCPUs|32GB|linux”硬盘：“云硬盘_SATA_LXH01|40.0GB”
 

@@ -55,7 +55,7 @@ class Certificates:
     }
 
     def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, enc_cert_info=None, enterprise_project_id=None):
-        """Certificates
+        r"""Certificates
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class Certificates:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this Certificates.
+        r"""Gets the certificate_id of this Certificates.
 
         私有证书ID。
 
@@ -145,7 +145,7 @@ class Certificates:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this Certificates.
+        r"""Sets the certificate_id of this Certificates.
 
         私有证书ID。
 
@@ -156,7 +156,7 @@ class Certificates:
 
     @property
     def status(self):
-        """Gets the status of this Certificates.
+        r"""Gets the status of this Certificates.
 
         证书状态：   - **ISSUED** : 已签发；   - **EXPIRED** : 已过期；   - **REVOKED** : 已吊销。
 
@@ -167,7 +167,7 @@ class Certificates:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Certificates.
+        r"""Sets the status of this Certificates.
 
         证书状态：   - **ISSUED** : 已签发；   - **EXPIRED** : 已过期；   - **REVOKED** : 已吊销。
 
@@ -178,7 +178,7 @@ class Certificates:
 
     @property
     def issuer_id(self):
-        """Gets the issuer_id of this Certificates.
+        r"""Gets the issuer_id of this Certificates.
 
         父CA证书ID。
 
@@ -189,7 +189,7 @@ class Certificates:
 
     @issuer_id.setter
     def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this Certificates.
+        r"""Sets the issuer_id of this Certificates.
 
         父CA证书ID。
 
@@ -200,7 +200,7 @@ class Certificates:
 
     @property
     def issuer_name(self):
-        """Gets the issuer_name of this Certificates.
+        r"""Gets the issuer_name of this Certificates.
 
         父CA证书名称。
 
@@ -211,7 +211,7 @@ class Certificates:
 
     @issuer_name.setter
     def issuer_name(self, issuer_name):
-        """Sets the issuer_name of this Certificates.
+        r"""Sets the issuer_name of this Certificates.
 
         父CA证书名称。
 
@@ -222,7 +222,7 @@ class Certificates:
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this Certificates.
+        r"""Gets the key_algorithm of this Certificates.
 
         密钥算法。
 
@@ -233,7 +233,7 @@ class Certificates:
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this Certificates.
+        r"""Sets the key_algorithm of this Certificates.
 
         密钥算法。
 
@@ -244,7 +244,7 @@ class Certificates:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this Certificates.
+        r"""Gets the signature_algorithm of this Certificates.
 
         签名算法。
 
@@ -255,7 +255,7 @@ class Certificates:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this Certificates.
+        r"""Sets the signature_algorithm of this Certificates.
 
         签名算法。
 
@@ -266,7 +266,7 @@ class Certificates:
 
     @property
     def freeze_flag(self):
-        """Gets the freeze_flag of this Certificates.
+        r"""Gets the freeze_flag of this Certificates.
 
         冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
@@ -277,7 +277,7 @@ class Certificates:
 
     @freeze_flag.setter
     def freeze_flag(self, freeze_flag):
-        """Sets the freeze_flag of this Certificates.
+        r"""Sets the freeze_flag of this Certificates.
 
         冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
@@ -288,7 +288,7 @@ class Certificates:
 
     @property
     def gen_mode(self):
-        """Gets the gen_mode of this Certificates.
+        r"""Gets the gen_mode of this Certificates.
 
         证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
@@ -299,7 +299,7 @@ class Certificates:
 
     @gen_mode.setter
     def gen_mode(self, gen_mode):
-        """Sets the gen_mode of this Certificates.
+        r"""Sets the gen_mode of this Certificates.
 
         证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
@@ -310,7 +310,7 @@ class Certificates:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this Certificates.
+        r"""Gets the serial_number of this Certificates.
 
         序列号。
 
@@ -321,7 +321,7 @@ class Certificates:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this Certificates.
+        r"""Sets the serial_number of this Certificates.
 
         序列号。
 
@@ -332,7 +332,7 @@ class Certificates:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Certificates.
+        r"""Gets the create_time of this Certificates.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -343,7 +343,7 @@ class Certificates:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Certificates.
+        r"""Sets the create_time of this Certificates.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -354,7 +354,7 @@ class Certificates:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this Certificates.
+        r"""Gets the delete_time of this Certificates.
 
         证书删除时间，格式为时间戳（毫秒级）。
 
@@ -365,7 +365,7 @@ class Certificates:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this Certificates.
+        r"""Sets the delete_time of this Certificates.
 
         证书删除时间，格式为时间戳（毫秒级）。
 
@@ -376,7 +376,7 @@ class Certificates:
 
     @property
     def not_before(self):
-        """Gets the not_before of this Certificates.
+        r"""Gets the not_before of this Certificates.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -387,7 +387,7 @@ class Certificates:
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this Certificates.
+        r"""Sets the not_before of this Certificates.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -398,7 +398,7 @@ class Certificates:
 
     @property
     def not_after(self):
-        """Gets the not_after of this Certificates.
+        r"""Gets the not_after of this Certificates.
 
         证书到期时间，格式为时间戳（毫秒级）。
 
@@ -409,7 +409,7 @@ class Certificates:
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this Certificates.
+        r"""Sets the not_after of this Certificates.
 
         证书到期时间，格式为时间戳（毫秒级）。
 
@@ -420,7 +420,7 @@ class Certificates:
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this Certificates.
+        r"""Gets the distinguished_name of this Certificates.
 
         :return: The distinguished_name of this Certificates.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -429,7 +429,7 @@ class Certificates:
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this Certificates.
+        r"""Sets the distinguished_name of this Certificates.
 
         :param distinguished_name: The distinguished_name of this Certificates.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -438,7 +438,7 @@ class Certificates:
 
     @property
     def enc_cert_info(self):
-        """Gets the enc_cert_info of this Certificates.
+        r"""Gets the enc_cert_info of this Certificates.
 
         :return: The enc_cert_info of this Certificates.
         :rtype: :class:`huaweicloudsdkccm.v1.EncCertInfo`
@@ -447,7 +447,7 @@ class Certificates:
 
     @enc_cert_info.setter
     def enc_cert_info(self, enc_cert_info):
-        """Sets the enc_cert_info of this Certificates.
+        r"""Sets the enc_cert_info of this Certificates.
 
         :param enc_cert_info: The enc_cert_info of this Certificates.
         :type enc_cert_info: :class:`huaweicloudsdkccm.v1.EncCertInfo`
@@ -456,7 +456,7 @@ class Certificates:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Certificates.
+        r"""Gets the enterprise_project_id of this Certificates.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -467,7 +467,7 @@ class Certificates:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Certificates.
+        r"""Sets the enterprise_project_id of this Certificates.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 

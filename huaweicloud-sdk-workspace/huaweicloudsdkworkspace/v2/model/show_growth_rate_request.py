@@ -29,7 +29,7 @@ class ShowGrowthRateRequest:
     }
 
     def __init__(self, grow_period=None, metric_name=None, dim=None):
-        """ShowGrowthRateRequest
+        r"""ShowGrowthRateRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowGrowthRateRequest:
 
     @property
     def grow_period(self):
-        """Gets the grow_period of this ShowGrowthRateRequest.
+        r"""Gets the grow_period of this ShowGrowthRateRequest.
 
         环比周期 | DAY - 天 MONTH - 月
 
@@ -67,7 +67,7 @@ class ShowGrowthRateRequest:
 
     @grow_period.setter
     def grow_period(self, grow_period):
-        """Sets the grow_period of this ShowGrowthRateRequest.
+        r"""Sets the grow_period of this ShowGrowthRateRequest.
 
         环比周期 | DAY - 天 MONTH - 月
 
@@ -78,7 +78,7 @@ class ShowGrowthRateRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ShowGrowthRateRequest.
+        r"""Gets the metric_name of this ShowGrowthRateRequest.
 
         指标名称
 
@@ -89,7 +89,7 @@ class ShowGrowthRateRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowGrowthRateRequest.
+        r"""Sets the metric_name of this ShowGrowthRateRequest.
 
         指标名称
 
@@ -100,7 +100,7 @@ class ShowGrowthRateRequest:
 
     @property
     def dim(self):
-        """Gets the dim of this ShowGrowthRateRequest.
+        r"""Gets the dim of this ShowGrowthRateRequest.
 
         指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value
 
@@ -111,7 +111,7 @@ class ShowGrowthRateRequest:
 
     @dim.setter
     def dim(self, dim):
-        """Sets the dim of this ShowGrowthRateRequest.
+        r"""Sets the dim of this ShowGrowthRateRequest.
 
         指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value
 

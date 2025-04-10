@@ -42,7 +42,7 @@ class ServiceProviderConfigResponse(SdkResponse):
     }
 
     def __init__(self, schemas=None, documentation_uri=None, authentication_schemes=None, patch=None, bulk=None, filter=None, change_password=None, sort=None, etag=None):
-        """ServiceProviderConfigResponse
+        r"""ServiceProviderConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this ServiceProviderConfigResponse.
+        r"""Gets the schemas of this ServiceProviderConfigResponse.
 
         概要
 
@@ -111,7 +111,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this ServiceProviderConfigResponse.
+        r"""Sets the schemas of this ServiceProviderConfigResponse.
 
         概要
 
@@ -122,7 +122,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def documentation_uri(self):
-        """Gets the documentation_uri of this ServiceProviderConfigResponse.
+        r"""Gets the documentation_uri of this ServiceProviderConfigResponse.
 
         帮助文档链接
 
@@ -133,7 +133,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @documentation_uri.setter
     def documentation_uri(self, documentation_uri):
-        """Sets the documentation_uri of this ServiceProviderConfigResponse.
+        r"""Sets the documentation_uri of this ServiceProviderConfigResponse.
 
         帮助文档链接
 
@@ -144,7 +144,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def authentication_schemes(self):
-        """Gets the authentication_schemes of this ServiceProviderConfigResponse.
+        r"""Gets the authentication_schemes of this ServiceProviderConfigResponse.
 
         认证概要列表
 
@@ -155,7 +155,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @authentication_schemes.setter
     def authentication_schemes(self, authentication_schemes):
-        """Sets the authentication_schemes of this ServiceProviderConfigResponse.
+        r"""Sets the authentication_schemes of this ServiceProviderConfigResponse.
 
         认证概要列表
 
@@ -166,7 +166,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def patch(self):
-        """Gets the patch of this ServiceProviderConfigResponse.
+        r"""Gets the patch of this ServiceProviderConfigResponse.
 
         :return: The patch of this ServiceProviderConfigResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.PatchDto`
@@ -175,7 +175,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @patch.setter
     def patch(self, patch):
-        """Sets the patch of this ServiceProviderConfigResponse.
+        r"""Sets the patch of this ServiceProviderConfigResponse.
 
         :param patch: The patch of this ServiceProviderConfigResponse.
         :type patch: :class:`huaweicloudsdkidentitycenterscim.v1.PatchDto`
@@ -184,7 +184,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def bulk(self):
-        """Gets the bulk of this ServiceProviderConfigResponse.
+        r"""Gets the bulk of this ServiceProviderConfigResponse.
 
         :return: The bulk of this ServiceProviderConfigResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.BulkDto`
@@ -193,7 +193,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @bulk.setter
     def bulk(self, bulk):
-        """Sets the bulk of this ServiceProviderConfigResponse.
+        r"""Sets the bulk of this ServiceProviderConfigResponse.
 
         :param bulk: The bulk of this ServiceProviderConfigResponse.
         :type bulk: :class:`huaweicloudsdkidentitycenterscim.v1.BulkDto`
@@ -202,7 +202,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def filter(self):
-        """Gets the filter of this ServiceProviderConfigResponse.
+        r"""Gets the filter of this ServiceProviderConfigResponse.
 
         :return: The filter of this ServiceProviderConfigResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.FilterDto`
@@ -211,7 +211,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ServiceProviderConfigResponse.
+        r"""Sets the filter of this ServiceProviderConfigResponse.
 
         :param filter: The filter of this ServiceProviderConfigResponse.
         :type filter: :class:`huaweicloudsdkidentitycenterscim.v1.FilterDto`
@@ -220,7 +220,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def change_password(self):
-        """Gets the change_password of this ServiceProviderConfigResponse.
+        r"""Gets the change_password of this ServiceProviderConfigResponse.
 
         :return: The change_password of this ServiceProviderConfigResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.ChangePasswordDto`
@@ -229,7 +229,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @change_password.setter
     def change_password(self, change_password):
-        """Sets the change_password of this ServiceProviderConfigResponse.
+        r"""Sets the change_password of this ServiceProviderConfigResponse.
 
         :param change_password: The change_password of this ServiceProviderConfigResponse.
         :type change_password: :class:`huaweicloudsdkidentitycenterscim.v1.ChangePasswordDto`
@@ -238,7 +238,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def sort(self):
-        """Gets the sort of this ServiceProviderConfigResponse.
+        r"""Gets the sort of this ServiceProviderConfigResponse.
 
         :return: The sort of this ServiceProviderConfigResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.SortDto`
@@ -247,7 +247,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ServiceProviderConfigResponse.
+        r"""Sets the sort of this ServiceProviderConfigResponse.
 
         :param sort: The sort of this ServiceProviderConfigResponse.
         :type sort: :class:`huaweicloudsdkidentitycenterscim.v1.SortDto`
@@ -256,7 +256,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @property
     def etag(self):
-        """Gets the etag of this ServiceProviderConfigResponse.
+        r"""Gets the etag of this ServiceProviderConfigResponse.
 
         :return: The etag of this ServiceProviderConfigResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.EtagDto`
@@ -265,7 +265,7 @@ class ServiceProviderConfigResponse(SdkResponse):
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this ServiceProviderConfigResponse.
+        r"""Sets the etag of this ServiceProviderConfigResponse.
 
         :param etag: The etag of this ServiceProviderConfigResponse.
         :type etag: :class:`huaweicloudsdkidentitycenterscim.v1.EtagDto`

@@ -31,7 +31,7 @@ class DatabaseDiskDto:
     }
 
     def __init__(self, type=None, space=None, encrypt=None, used=None):
-        """DatabaseDiskDto
+        r"""DatabaseDiskDto
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DatabaseDiskDto:
 
     @property
     def type(self):
-        """Gets the type of this DatabaseDiskDto.
+        r"""Gets the type of this DatabaseDiskDto.
 
         磁盘类型
 
@@ -71,7 +71,7 @@ class DatabaseDiskDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatabaseDiskDto.
+        r"""Sets the type of this DatabaseDiskDto.
 
         磁盘类型
 
@@ -82,7 +82,7 @@ class DatabaseDiskDto:
 
     @property
     def space(self):
-        """Gets the space of this DatabaseDiskDto.
+        r"""Gets the space of this DatabaseDiskDto.
 
         磁盘大小，单位GB
 
@@ -93,7 +93,7 @@ class DatabaseDiskDto:
 
     @space.setter
     def space(self, space):
-        """Sets the space of this DatabaseDiskDto.
+        r"""Sets the space of this DatabaseDiskDto.
 
         磁盘大小，单位GB
 
@@ -104,7 +104,7 @@ class DatabaseDiskDto:
 
     @property
     def encrypt(self):
-        """Gets the encrypt of this DatabaseDiskDto.
+        r"""Gets the encrypt of this DatabaseDiskDto.
 
         是否加密
 
@@ -115,7 +115,7 @@ class DatabaseDiskDto:
 
     @encrypt.setter
     def encrypt(self, encrypt):
-        """Sets the encrypt of this DatabaseDiskDto.
+        r"""Sets the encrypt of this DatabaseDiskDto.
 
         是否加密
 
@@ -126,7 +126,7 @@ class DatabaseDiskDto:
 
     @property
     def used(self):
-        """Gets the used of this DatabaseDiskDto.
+        r"""Gets the used of this DatabaseDiskDto.
 
         磁盘已使用量，单位GB
 
@@ -137,7 +137,7 @@ class DatabaseDiskDto:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this DatabaseDiskDto.
+        r"""Sets the used of this DatabaseDiskDto.
 
         磁盘已使用量，单位GB
 

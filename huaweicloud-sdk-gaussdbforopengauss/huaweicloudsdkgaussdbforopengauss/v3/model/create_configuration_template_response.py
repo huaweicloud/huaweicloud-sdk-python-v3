@@ -30,7 +30,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, created_at=None):
-        """CreateConfigurationTemplateResponse
+        r"""CreateConfigurationTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateConfigurationTemplateResponse.
+        r"""Gets the id of this CreateConfigurationTemplateResponse.
 
         参数模板ID。
 
@@ -69,7 +69,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateConfigurationTemplateResponse.
+        r"""Sets the id of this CreateConfigurationTemplateResponse.
 
         参数模板ID。
 
@@ -80,7 +80,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateConfigurationTemplateResponse.
+        r"""Gets the name of this CreateConfigurationTemplateResponse.
 
         参数模板名称。
 
@@ -91,7 +91,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConfigurationTemplateResponse.
+        r"""Sets the name of this CreateConfigurationTemplateResponse.
 
         参数模板名称。
 
@@ -102,7 +102,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateConfigurationTemplateResponse.
+        r"""Gets the created_at of this CreateConfigurationTemplateResponse.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -113,7 +113,7 @@ class CreateConfigurationTemplateResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateConfigurationTemplateResponse.
+        r"""Sets the created_at of this CreateConfigurationTemplateResponse.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

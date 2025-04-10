@@ -43,7 +43,7 @@ class AlertNetworkList:
     }
 
     def __init__(self, direction=None, protocol=None, src_ip=None, src_port=None, src_domain=None, src_geo=None, dest_ip=None, dest_port=None, dest_domain=None, dest_geo=None):
-        """AlertNetworkList
+        r"""AlertNetworkList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AlertNetworkList:
 
     @property
     def direction(self):
-        """Gets the direction of this AlertNetworkList.
+        r"""Gets the direction of this AlertNetworkList.
 
         方向，取值范围：IN | OUT
 
@@ -117,7 +117,7 @@ class AlertNetworkList:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this AlertNetworkList.
+        r"""Sets the direction of this AlertNetworkList.
 
         方向，取值范围：IN | OUT
 
@@ -128,7 +128,7 @@ class AlertNetworkList:
 
     @property
     def protocol(self):
-        """Gets the protocol of this AlertNetworkList.
+        r"""Gets the protocol of this AlertNetworkList.
 
         协议，包含7层和4层的协议 参考：IANA registered name https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
 
@@ -139,7 +139,7 @@ class AlertNetworkList:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this AlertNetworkList.
+        r"""Sets the protocol of this AlertNetworkList.
 
         协议，包含7层和4层的协议 参考：IANA registered name https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
 
@@ -150,7 +150,7 @@ class AlertNetworkList:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this AlertNetworkList.
+        r"""Gets the src_ip of this AlertNetworkList.
 
         源IP地址
 
@@ -161,7 +161,7 @@ class AlertNetworkList:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this AlertNetworkList.
+        r"""Sets the src_ip of this AlertNetworkList.
 
         源IP地址
 
@@ -172,7 +172,7 @@ class AlertNetworkList:
 
     @property
     def src_port(self):
-        """Gets the src_port of this AlertNetworkList.
+        r"""Gets the src_port of this AlertNetworkList.
 
         源端口，0–65535
 
@@ -183,7 +183,7 @@ class AlertNetworkList:
 
     @src_port.setter
     def src_port(self, src_port):
-        """Sets the src_port of this AlertNetworkList.
+        r"""Sets the src_port of this AlertNetworkList.
 
         源端口，0–65535
 
@@ -194,7 +194,7 @@ class AlertNetworkList:
 
     @property
     def src_domain(self):
-        """Gets the src_domain of this AlertNetworkList.
+        r"""Gets the src_domain of this AlertNetworkList.
 
         源域名
 
@@ -205,7 +205,7 @@ class AlertNetworkList:
 
     @src_domain.setter
     def src_domain(self, src_domain):
-        """Sets the src_domain of this AlertNetworkList.
+        r"""Sets the src_domain of this AlertNetworkList.
 
         源域名
 
@@ -216,7 +216,7 @@ class AlertNetworkList:
 
     @property
     def src_geo(self):
-        """Gets the src_geo of this AlertNetworkList.
+        r"""Gets the src_geo of this AlertNetworkList.
 
         :return: The src_geo of this AlertNetworkList.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AlertSrcGeo`
@@ -225,7 +225,7 @@ class AlertNetworkList:
 
     @src_geo.setter
     def src_geo(self, src_geo):
-        """Sets the src_geo of this AlertNetworkList.
+        r"""Sets the src_geo of this AlertNetworkList.
 
         :param src_geo: The src_geo of this AlertNetworkList.
         :type src_geo: :class:`huaweicloudsdksecmaster.v2.AlertSrcGeo`
@@ -234,7 +234,7 @@ class AlertNetworkList:
 
     @property
     def dest_ip(self):
-        """Gets the dest_ip of this AlertNetworkList.
+        r"""Gets the dest_ip of this AlertNetworkList.
 
         目的IP地址
 
@@ -245,7 +245,7 @@ class AlertNetworkList:
 
     @dest_ip.setter
     def dest_ip(self, dest_ip):
-        """Sets the dest_ip of this AlertNetworkList.
+        r"""Sets the dest_ip of this AlertNetworkList.
 
         目的IP地址
 
@@ -256,7 +256,7 @@ class AlertNetworkList:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this AlertNetworkList.
+        r"""Gets the dest_port of this AlertNetworkList.
 
         目的端口，0–65535
 
@@ -267,7 +267,7 @@ class AlertNetworkList:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this AlertNetworkList.
+        r"""Sets the dest_port of this AlertNetworkList.
 
         目的端口，0–65535
 
@@ -278,7 +278,7 @@ class AlertNetworkList:
 
     @property
     def dest_domain(self):
-        """Gets the dest_domain of this AlertNetworkList.
+        r"""Gets the dest_domain of this AlertNetworkList.
 
         目的域名
 
@@ -289,7 +289,7 @@ class AlertNetworkList:
 
     @dest_domain.setter
     def dest_domain(self, dest_domain):
-        """Sets the dest_domain of this AlertNetworkList.
+        r"""Sets the dest_domain of this AlertNetworkList.
 
         目的域名
 
@@ -300,7 +300,7 @@ class AlertNetworkList:
 
     @property
     def dest_geo(self):
-        """Gets the dest_geo of this AlertNetworkList.
+        r"""Gets the dest_geo of this AlertNetworkList.
 
         :return: The dest_geo of this AlertNetworkList.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDestGeo`
@@ -309,7 +309,7 @@ class AlertNetworkList:
 
     @dest_geo.setter
     def dest_geo(self, dest_geo):
-        """Sets the dest_geo of this AlertNetworkList.
+        r"""Sets the dest_geo of this AlertNetworkList.
 
         :param dest_geo: The dest_geo of this AlertNetworkList.
         :type dest_geo: :class:`huaweicloudsdksecmaster.v2.AlertDestGeo`

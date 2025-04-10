@@ -75,7 +75,7 @@ class CreateRestoreInstanceRequestBody:
     }
 
     def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, restore_point=None, collation=None, tags=None, serverless_info=None, dry_run=None, is_auto_upgrade=None):
-        """CreateRestoreInstanceRequestBody
+        r"""CreateRestoreInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -214,7 +214,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateRestoreInstanceRequestBody.
+        r"""Gets the name of this CreateRestoreInstanceRequestBody.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围如下： - MySQL数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中文字符、中划线或者下划线，不能包含其他的特殊字符。 - PostgreSQL和SQL Server数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -225,7 +225,7 @@ class CreateRestoreInstanceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRestoreInstanceRequestBody.
+        r"""Sets the name of this CreateRestoreInstanceRequestBody.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围如下： - MySQL数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中文字符、中划线或者下划线，不能包含其他的特殊字符。 - PostgreSQL和SQL Server数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -236,7 +236,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateRestoreInstanceRequestBody.
+        r"""Gets the datastore of this CreateRestoreInstanceRequestBody.
 
         :return: The datastore of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -245,7 +245,7 @@ class CreateRestoreInstanceRequestBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateRestoreInstanceRequestBody.
+        r"""Sets the datastore of this CreateRestoreInstanceRequestBody.
 
         :param datastore: The datastore of this CreateRestoreInstanceRequestBody.
         :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -254,7 +254,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def ha(self):
-        """Gets the ha of this CreateRestoreInstanceRequestBody.
+        r"""Gets the ha of this CreateRestoreInstanceRequestBody.
 
         :return: The ha of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.Ha`
@@ -263,7 +263,7 @@ class CreateRestoreInstanceRequestBody:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this CreateRestoreInstanceRequestBody.
+        r"""Sets the ha of this CreateRestoreInstanceRequestBody.
 
         :param ha: The ha of this CreateRestoreInstanceRequestBody.
         :type ha: :class:`huaweicloudsdkrds.v3.Ha`
@@ -272,7 +272,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the configuration_id of this CreateRestoreInstanceRequestBody.
 
         参数模板ID。可调用[获取参数模板列表](https://support.huaweicloud.com/api-rds/rds_09_0301.html)接口返回的ID获取。
 
@@ -283,7 +283,7 @@ class CreateRestoreInstanceRequestBody:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the configuration_id of this CreateRestoreInstanceRequestBody.
 
         参数模板ID。可调用[获取参数模板列表](https://support.huaweicloud.com/api-rds/rds_09_0301.html)接口返回的ID获取。
 
@@ -294,7 +294,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this CreateRestoreInstanceRequestBody.
+        r"""Gets the port of this CreateRestoreInstanceRequestBody.
 
         数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE、2017 SE、2017 Web版，5050、5353和5986不可设置。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
 
@@ -305,7 +305,7 @@ class CreateRestoreInstanceRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateRestoreInstanceRequestBody.
+        r"""Sets the port of this CreateRestoreInstanceRequestBody.
 
         数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE、2017 SE、2017 Web版，5050、5353和5986不可设置。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
 
@@ -316,7 +316,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateRestoreInstanceRequestBody.
+        r"""Gets the password of this CreateRestoreInstanceRequestBody.
 
         数据库密码。创建只读实例时不可选，其它场景必选。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符。  其中允许的特殊字符如下： - MySQL数据库允许输入~!@#$%^*-_=+?,特殊字符。 - SQL Server数据库允许输入~!@#$%^*-_+?,特殊字符。 - PostgreSQL数据库允许输入~!@#%^*-_=+?,特殊字符。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -327,7 +327,7 @@ class CreateRestoreInstanceRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateRestoreInstanceRequestBody.
+        r"""Sets the password of this CreateRestoreInstanceRequestBody.
 
         数据库密码。创建只读实例时不可选，其它场景必选。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符。  其中允许的特殊字符如下： - MySQL数据库允许输入~!@#$%^*-_=+?,特殊字符。 - SQL Server数据库允许输入~!@#$%^*-_+?,特殊字符。 - PostgreSQL数据库允许输入~!@#%^*-_=+?,特殊字符。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -338,7 +338,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this CreateRestoreInstanceRequestBody.
+        r"""Gets the backup_strategy of this CreateRestoreInstanceRequestBody.
 
         :return: The backup_strategy of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -347,7 +347,7 @@ class CreateRestoreInstanceRequestBody:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this CreateRestoreInstanceRequestBody.
+        r"""Sets the backup_strategy of this CreateRestoreInstanceRequestBody.
 
         :param backup_strategy: The backup_strategy of this CreateRestoreInstanceRequestBody.
         :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -356,7 +356,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the enterprise_project_id of this CreateRestoreInstanceRequestBody.
 
         企业项目ID。 使用请参考《企业管理 API参考》的[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)响应消息表“enterprise_project字段数据结构说明”的“id”。
 
@@ -367,7 +367,7 @@ class CreateRestoreInstanceRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the enterprise_project_id of this CreateRestoreInstanceRequestBody.
 
         企业项目ID。 使用请参考《企业管理 API参考》的[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)响应消息表“enterprise_project字段数据结构说明”的“id”。
 
@@ -378,7 +378,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the disk_encryption_id of this CreateRestoreInstanceRequestBody.
 
         用于磁盘加密的密钥ID，默认为空。
 
@@ -389,7 +389,7 @@ class CreateRestoreInstanceRequestBody:
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the disk_encryption_id of this CreateRestoreInstanceRequestBody.
 
         用于磁盘加密的密钥ID，默认为空。
 
@@ -400,7 +400,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateRestoreInstanceRequestBody.
+        r"""Gets the flavor_ref of this CreateRestoreInstanceRequestBody.
 
         规格码,取值范围：非空。 使用[查询数据库规格](https://support.huaweicloud.com/api-rds/rds_06_0002.html)接口响应消息中的 flavors字段中“spec_code”获取且对应az_status为“在售”状态。
 
@@ -411,7 +411,7 @@ class CreateRestoreInstanceRequestBody:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateRestoreInstanceRequestBody.
+        r"""Sets the flavor_ref of this CreateRestoreInstanceRequestBody.
 
         规格码,取值范围：非空。 使用[查询数据库规格](https://support.huaweicloud.com/api-rds/rds_06_0002.html)接口响应消息中的 flavors字段中“spec_code”获取且对应az_status为“在售”状态。
 
@@ -422,7 +422,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateRestoreInstanceRequestBody.
+        r"""Gets the volume of this CreateRestoreInstanceRequestBody.
 
         :return: The volume of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.Volume`
@@ -431,7 +431,7 @@ class CreateRestoreInstanceRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateRestoreInstanceRequestBody.
+        r"""Sets the volume of this CreateRestoreInstanceRequestBody.
 
         :param volume: The volume of this CreateRestoreInstanceRequestBody.
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
@@ -440,7 +440,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def region(self):
-        """Gets the region of this CreateRestoreInstanceRequestBody.
+        r"""Gets the region of this CreateRestoreInstanceRequestBody.
 
         区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -451,7 +451,7 @@ class CreateRestoreInstanceRequestBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateRestoreInstanceRequestBody.
+        r"""Sets the region of this CreateRestoreInstanceRequestBody.
 
         区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -462,7 +462,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateRestoreInstanceRequestBody.
+        r"""Gets the availability_zone of this CreateRestoreInstanceRequestBody.
 
         可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
@@ -473,7 +473,7 @@ class CreateRestoreInstanceRequestBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateRestoreInstanceRequestBody.
+        r"""Sets the availability_zone of this CreateRestoreInstanceRequestBody.
 
         可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
@@ -484,7 +484,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the vpc_id of this CreateRestoreInstanceRequestBody.
 
         虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -495,7 +495,7 @@ class CreateRestoreInstanceRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the vpc_id of this CreateRestoreInstanceRequestBody.
 
         虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -506,7 +506,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the subnet_id of this CreateRestoreInstanceRequestBody.
 
         子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -517,7 +517,7 @@ class CreateRestoreInstanceRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the subnet_id of this CreateRestoreInstanceRequestBody.
 
         子网的网络ID信息。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -528,7 +528,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def data_vip(self):
-        """Gets the data_vip of this CreateRestoreInstanceRequestBody.
+        r"""Gets the data_vip of this CreateRestoreInstanceRequestBody.
 
         指定实例的内网IP,目前仅支持设置IPv4地址。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询私有IP列表](https://support.huaweicloud.com/api-vpc/vpc_privateip_0003.html),选择“device_owner”为空的私有IP。
 
@@ -539,7 +539,7 @@ class CreateRestoreInstanceRequestBody:
 
     @data_vip.setter
     def data_vip(self, data_vip):
-        """Sets the data_vip of this CreateRestoreInstanceRequestBody.
+        r"""Sets the data_vip of this CreateRestoreInstanceRequestBody.
 
         指定实例的内网IP,目前仅支持设置IPv4地址。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询私有IP列表](https://support.huaweicloud.com/api-vpc/vpc_privateip_0003.html),选择“device_owner”为空的私有IP。
 
@@ -550,7 +550,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the security_group_id of this CreateRestoreInstanceRequestBody.
 
         安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -561,7 +561,7 @@ class CreateRestoreInstanceRequestBody:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the security_group_id of this CreateRestoreInstanceRequestBody.
 
         安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。 获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。 SQL Server数据库和PostgreSQL数据库备份恢复到新实例时为必填项。
 
@@ -572,7 +572,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateRestoreInstanceRequestBody.
+        r"""Gets the charge_info of this CreateRestoreInstanceRequestBody.
 
         :return: The charge_info of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -581,7 +581,7 @@ class CreateRestoreInstanceRequestBody:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateRestoreInstanceRequestBody.
+        r"""Sets the charge_info of this CreateRestoreInstanceRequestBody.
 
         :param charge_info: The charge_info of this CreateRestoreInstanceRequestBody.
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -590,7 +590,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CreateRestoreInstanceRequestBody.
+        r"""Gets the time_zone of this CreateRestoreInstanceRequestBody.
 
         时区。  - 不选择时，各个引擎时区如下：   - MySQL国内站、国际站默认为UTC时间。   - PostgreSQL国内站、国际站默认为UTC时间。   - Microsoft SQL Server国内站默认为China Standard Time，国际站默认为UTC时间。 - MySQL和PostgreSQL引擎选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。 - Microsoft SQL Server引擎选择填写时，请参见“创建数据库实例”接口[表10](https://support.huaweicloud.com/api-rds/rds_01_0002.html#rds_01_0002__table613473883617) 时区与UTC偏移量对照表，填写时区列字符串，如：China Standard Time。
 
@@ -601,7 +601,7 @@ class CreateRestoreInstanceRequestBody:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CreateRestoreInstanceRequestBody.
+        r"""Sets the time_zone of this CreateRestoreInstanceRequestBody.
 
         时区。  - 不选择时，各个引擎时区如下：   - MySQL国内站、国际站默认为UTC时间。   - PostgreSQL国内站、国际站默认为UTC时间。   - Microsoft SQL Server国内站默认为China Standard Time，国际站默认为UTC时间。 - MySQL和PostgreSQL引擎选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。 - Microsoft SQL Server引擎选择填写时，请参见“创建数据库实例”接口[表10](https://support.huaweicloud.com/api-rds/rds_01_0002.html#rds_01_0002__table613473883617) 时区与UTC偏移量对照表，填写时区列字符串，如：China Standard Time。
 
@@ -612,7 +612,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def dsspool_id(self):
-        """Gets the dsspool_id of this CreateRestoreInstanceRequestBody.
+        r"""Gets the dsspool_id of this CreateRestoreInstanceRequestBody.
 
         Dec用户专属存储ID，每个az配置的专属存储不同，Dec用户创建实例时，对于数据库实例类型不是单机或只读的实例，需要分别为实例所有节点指定dsspoolId，并用逗号隔开。 获取方法如下： - 方法1：登录专属分布式存储服务DSS的控制台界面，查看专属存储列表，选择符合条件的az下的专属dss的ID。 - 方法2：通过专属分布式存储服务DSS的API接口查询，具体操作可参考[获取专属存储详情列表](https://support.huaweicloud.com/api-dss/dss_02_1002.html)。
 
@@ -623,7 +623,7 @@ class CreateRestoreInstanceRequestBody:
 
     @dsspool_id.setter
     def dsspool_id(self, dsspool_id):
-        """Sets the dsspool_id of this CreateRestoreInstanceRequestBody.
+        r"""Sets the dsspool_id of this CreateRestoreInstanceRequestBody.
 
         Dec用户专属存储ID，每个az配置的专属存储不同，Dec用户创建实例时，对于数据库实例类型不是单机或只读的实例，需要分别为实例所有节点指定dsspoolId，并用逗号隔开。 获取方法如下： - 方法1：登录专属分布式存储服务DSS的控制台界面，查看专属存储列表，选择符合条件的az下的专属dss的ID。 - 方法2：通过专属分布式存储服务DSS的API接口查询，具体操作可参考[获取专属存储详情列表](https://support.huaweicloud.com/api-dss/dss_02_1002.html)。
 
@@ -634,7 +634,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def restore_point(self):
-        """Gets the restore_point of this CreateRestoreInstanceRequestBody.
+        r"""Gets the restore_point of this CreateRestoreInstanceRequestBody.
 
         :return: The restore_point of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.RestorePoint`
@@ -643,7 +643,7 @@ class CreateRestoreInstanceRequestBody:
 
     @restore_point.setter
     def restore_point(self, restore_point):
-        """Sets the restore_point of this CreateRestoreInstanceRequestBody.
+        r"""Sets the restore_point of this CreateRestoreInstanceRequestBody.
 
         :param restore_point: The restore_point of this CreateRestoreInstanceRequestBody.
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
@@ -652,7 +652,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def collation(self):
-        """Gets the collation of this CreateRestoreInstanceRequestBody.
+        r"""Gets the collation of this CreateRestoreInstanceRequestBody.
 
         仅限Microsoft SQL Server实例创建使用。对于MySQL和PostgreSQL实例，该参数无意义。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。 取值范围：根据[查询SQL Server可用字符集](https://support.huaweicloud.com/api-rds/rds_05_0010.html)查询可设置的字符集。
 
@@ -663,7 +663,7 @@ class CreateRestoreInstanceRequestBody:
 
     @collation.setter
     def collation(self, collation):
-        """Sets the collation of this CreateRestoreInstanceRequestBody.
+        r"""Sets the collation of this CreateRestoreInstanceRequestBody.
 
         仅限Microsoft SQL Server实例创建使用。对于MySQL和PostgreSQL实例，该参数无意义。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。 取值范围：根据[查询SQL Server可用字符集](https://support.huaweicloud.com/api-rds/rds_05_0010.html)查询可设置的字符集。
 
@@ -674,7 +674,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateRestoreInstanceRequestBody.
+        r"""Gets the tags of this CreateRestoreInstanceRequestBody.
 
         标签列表。单个实例总标签数上限20个。
 
@@ -685,7 +685,7 @@ class CreateRestoreInstanceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateRestoreInstanceRequestBody.
+        r"""Sets the tags of this CreateRestoreInstanceRequestBody.
 
         标签列表。单个实例总标签数上限20个。
 
@@ -696,7 +696,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def serverless_info(self):
-        """Gets the serverless_info of this CreateRestoreInstanceRequestBody.
+        r"""Gets the serverless_info of this CreateRestoreInstanceRequestBody.
 
         :return: The serverless_info of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
@@ -705,7 +705,7 @@ class CreateRestoreInstanceRequestBody:
 
     @serverless_info.setter
     def serverless_info(self, serverless_info):
-        """Sets the serverless_info of this CreateRestoreInstanceRequestBody.
+        r"""Sets the serverless_info of this CreateRestoreInstanceRequestBody.
 
         :param serverless_info: The serverless_info of this CreateRestoreInstanceRequestBody.
         :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
@@ -714,7 +714,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this CreateRestoreInstanceRequestBody.
+        r"""Gets the dry_run of this CreateRestoreInstanceRequestBody.
 
         是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
 
@@ -725,7 +725,7 @@ class CreateRestoreInstanceRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this CreateRestoreInstanceRequestBody.
+        r"""Sets the dry_run of this CreateRestoreInstanceRequestBody.
 
         是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
 
@@ -736,7 +736,7 @@ class CreateRestoreInstanceRequestBody:
 
     @property
     def is_auto_upgrade(self):
-        """Gets the is_auto_upgrade of this CreateRestoreInstanceRequestBody.
+        r"""Gets the is_auto_upgrade of this CreateRestoreInstanceRequestBody.
 
         是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
 
@@ -747,7 +747,7 @@ class CreateRestoreInstanceRequestBody:
 
     @is_auto_upgrade.setter
     def is_auto_upgrade(self, is_auto_upgrade):
-        """Sets the is_auto_upgrade of this CreateRestoreInstanceRequestBody.
+        r"""Sets the is_auto_upgrade of this CreateRestoreInstanceRequestBody.
 
         是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
 

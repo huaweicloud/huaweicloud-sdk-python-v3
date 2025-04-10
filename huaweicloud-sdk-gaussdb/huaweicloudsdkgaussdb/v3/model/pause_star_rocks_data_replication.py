@@ -25,7 +25,7 @@ class PauseStarRocksDataReplication:
     }
 
     def __init__(self, task_name=None):
-        """PauseStarRocksDataReplication
+        r"""PauseStarRocksDataReplication
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PauseStarRocksDataReplication:
 
     @property
     def task_name(self):
-        """Gets the task_name of this PauseStarRocksDataReplication.
+        r"""Gets the task_name of this PauseStarRocksDataReplication.
 
         同步任务名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
 
@@ -53,7 +53,7 @@ class PauseStarRocksDataReplication:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this PauseStarRocksDataReplication.
+        r"""Sets the task_name of this PauseStarRocksDataReplication.
 
         同步任务名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
 

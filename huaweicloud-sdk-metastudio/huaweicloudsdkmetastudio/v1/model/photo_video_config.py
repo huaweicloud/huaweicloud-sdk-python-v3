@@ -29,7 +29,7 @@ class PhotoVideoConfig:
     }
 
     def __init__(self, codec=None, bitrate=None, frame_rate=None):
-        """PhotoVideoConfig
+        r"""PhotoVideoConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PhotoVideoConfig:
 
     @property
     def codec(self):
-        """Gets the codec of this PhotoVideoConfig.
+        r"""Gets the codec of this PhotoVideoConfig.
 
         视频编码格式及视频文件格式。 * H264：h264编码，输出mp4文件
 
@@ -67,7 +67,7 @@ class PhotoVideoConfig:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this PhotoVideoConfig.
+        r"""Sets the codec of this PhotoVideoConfig.
 
         视频编码格式及视频文件格式。 * H264：h264编码，输出mp4文件
 
@@ -78,7 +78,7 @@ class PhotoVideoConfig:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this PhotoVideoConfig.
+        r"""Gets the bitrate of this PhotoVideoConfig.
 
         **参数解释**： 输出平均码率。  单位：kbps。  最小值40，最大值30000。
 
@@ -89,7 +89,7 @@ class PhotoVideoConfig:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this PhotoVideoConfig.
+        r"""Sets the bitrate of this PhotoVideoConfig.
 
         **参数解释**： 输出平均码率。  单位：kbps。  最小值40，最大值30000。
 
@@ -100,7 +100,7 @@ class PhotoVideoConfig:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this PhotoVideoConfig.
+        r"""Gets the frame_rate of this PhotoVideoConfig.
 
         帧率。  单位：FPS。
 
@@ -111,7 +111,7 @@ class PhotoVideoConfig:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this PhotoVideoConfig.
+        r"""Sets the frame_rate of this PhotoVideoConfig.
 
         帧率。  单位：FPS。
 

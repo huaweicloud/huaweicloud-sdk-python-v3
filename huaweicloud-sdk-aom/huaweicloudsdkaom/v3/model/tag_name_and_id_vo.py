@@ -27,7 +27,7 @@ class TagNameAndIdVo:
     }
 
     def __init__(self, tag_id=None, tag_name=None):
-        """TagNameAndIdVo
+        r"""TagNameAndIdVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagNameAndIdVo:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this TagNameAndIdVo.
+        r"""Gets the tag_id of this TagNameAndIdVo.
 
         标签Id
 
@@ -61,7 +61,7 @@ class TagNameAndIdVo:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this TagNameAndIdVo.
+        r"""Sets the tag_id of this TagNameAndIdVo.
 
         标签Id
 
@@ -72,7 +72,7 @@ class TagNameAndIdVo:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this TagNameAndIdVo.
+        r"""Gets the tag_name of this TagNameAndIdVo.
 
         标签名称
 
@@ -83,7 +83,7 @@ class TagNameAndIdVo:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this TagNameAndIdVo.
+        r"""Sets the tag_name of this TagNameAndIdVo.
 
         标签名称
 

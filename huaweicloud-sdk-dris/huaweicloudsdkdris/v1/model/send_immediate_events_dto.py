@@ -27,7 +27,7 @@ class SendImmediateEventsDTO:
     }
 
     def __init__(self, send_config=None, immediate_event=None):
-        """SendImmediateEventsDTO
+        r"""SendImmediateEventsDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SendImmediateEventsDTO:
 
     @property
     def send_config(self):
-        """Gets the send_config of this SendImmediateEventsDTO.
+        r"""Gets the send_config of this SendImmediateEventsDTO.
 
         :return: The send_config of this SendImmediateEventsDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.SendConfig`
@@ -57,7 +57,7 @@ class SendImmediateEventsDTO:
 
     @send_config.setter
     def send_config(self, send_config):
-        """Sets the send_config of this SendImmediateEventsDTO.
+        r"""Sets the send_config of this SendImmediateEventsDTO.
 
         :param send_config: The send_config of this SendImmediateEventsDTO.
         :type send_config: :class:`huaweicloudsdkdris.v1.SendConfig`
@@ -66,7 +66,7 @@ class SendImmediateEventsDTO:
 
     @property
     def immediate_event(self):
-        """Gets the immediate_event of this SendImmediateEventsDTO.
+        r"""Gets the immediate_event of this SendImmediateEventsDTO.
 
         :return: The immediate_event of this SendImmediateEventsDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ImmediateEventDTO`
@@ -75,7 +75,7 @@ class SendImmediateEventsDTO:
 
     @immediate_event.setter
     def immediate_event(self, immediate_event):
-        """Sets the immediate_event of this SendImmediateEventsDTO.
+        r"""Sets the immediate_event of this SendImmediateEventsDTO.
 
         :param immediate_event: The immediate_event of this SendImmediateEventsDTO.
         :type immediate_event: :class:`huaweicloudsdkdris.v1.ImmediateEventDTO`

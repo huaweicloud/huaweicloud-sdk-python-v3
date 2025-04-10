@@ -39,7 +39,7 @@ class EcsNetWork:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None, os_ext_ip_sport_id=None, vpc_id=None, subnet_id=None, tenant_type=None):
-        """EcsNetWork
+        r"""EcsNetWork
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class EcsNetWork:
 
     @property
     def addr(self):
-        """Gets the addr of this EcsNetWork.
+        r"""Gets the addr of this EcsNetWork.
 
         IP地址信息。
 
@@ -103,7 +103,7 @@ class EcsNetWork:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this EcsNetWork.
+        r"""Sets the addr of this EcsNetWork.
 
         IP地址信息。
 
@@ -114,7 +114,7 @@ class EcsNetWork:
 
     @property
     def version(self):
-        """Gets the version of this EcsNetWork.
+        r"""Gets the version of this EcsNetWork.
 
         IP地址类型： `4` - IPV4 `6` - IPV6
 
@@ -125,7 +125,7 @@ class EcsNetWork:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EcsNetWork.
+        r"""Sets the version of this EcsNetWork.
 
         IP地址类型： `4` - IPV4 `6` - IPV6
 
@@ -136,7 +136,7 @@ class EcsNetWork:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this EcsNetWork.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this EcsNetWork.
 
         MAC地址。
 
@@ -147,7 +147,7 @@ class EcsNetWork:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this EcsNetWork.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this EcsNetWork.
 
         MAC地址。
 
@@ -158,7 +158,7 @@ class EcsNetWork:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this EcsNetWork.
+        r"""Gets the os_ext_ip_stype of this EcsNetWork.
 
         IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
@@ -169,7 +169,7 @@ class EcsNetWork:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this EcsNetWork.
+        r"""Sets the os_ext_ip_stype of this EcsNetWork.
 
         IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
@@ -180,7 +180,7 @@ class EcsNetWork:
 
     @property
     def os_ext_ip_sport_id(self):
-        """Gets the os_ext_ip_sport_id of this EcsNetWork.
+        r"""Gets the os_ext_ip_sport_id of this EcsNetWork.
 
         IP地址对应的端口ID。
 
@@ -191,7 +191,7 @@ class EcsNetWork:
 
     @os_ext_ip_sport_id.setter
     def os_ext_ip_sport_id(self, os_ext_ip_sport_id):
-        """Sets the os_ext_ip_sport_id of this EcsNetWork.
+        r"""Sets the os_ext_ip_sport_id of this EcsNetWork.
 
         IP地址对应的端口ID。
 
@@ -202,7 +202,7 @@ class EcsNetWork:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EcsNetWork.
+        r"""Gets the vpc_id of this EcsNetWork.
 
         虚拟私有云ID。
 
@@ -213,7 +213,7 @@ class EcsNetWork:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EcsNetWork.
+        r"""Sets the vpc_id of this EcsNetWork.
 
         虚拟私有云ID。
 
@@ -224,7 +224,7 @@ class EcsNetWork:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this EcsNetWork.
+        r"""Gets the subnet_id of this EcsNetWork.
 
         子网id。
 
@@ -235,7 +235,7 @@ class EcsNetWork:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EcsNetWork.
+        r"""Sets the subnet_id of this EcsNetWork.
 
         子网id。
 
@@ -246,7 +246,7 @@ class EcsNetWork:
 
     @property
     def tenant_type(self):
-        """Gets the tenant_type of this EcsNetWork.
+        r"""Gets the tenant_type of this EcsNetWork.
 
         租户类别: - tenant: 租户 - resource_tenant: 资源租户
 
@@ -257,7 +257,7 @@ class EcsNetWork:
 
     @tenant_type.setter
     def tenant_type(self, tenant_type):
-        """Sets the tenant_type of this EcsNetWork.
+        r"""Sets the tenant_type of this EcsNetWork.
 
         租户类别: - tenant: 租户 - resource_tenant: 资源租户
 

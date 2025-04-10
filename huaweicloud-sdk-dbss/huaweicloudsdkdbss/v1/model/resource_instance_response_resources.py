@@ -33,7 +33,7 @@ class ResourceInstanceResponseResources:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None, sys_tags=None):
-        """ResourceInstanceResponseResources
+        r"""ResourceInstanceResponseResources
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ResourceInstanceResponseResources:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceInstanceResponseResources.
+        r"""Gets the resource_id of this ResourceInstanceResponseResources.
 
         资源ID
 
@@ -78,7 +78,7 @@ class ResourceInstanceResponseResources:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceInstanceResponseResources.
+        r"""Sets the resource_id of this ResourceInstanceResponseResources.
 
         资源ID
 
@@ -89,7 +89,7 @@ class ResourceInstanceResponseResources:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceInstanceResponseResources.
+        r"""Gets the resource_name of this ResourceInstanceResponseResources.
 
         资源名称，资源没有名称时默认为空字符串，eip返回ip地址。
 
@@ -100,7 +100,7 @@ class ResourceInstanceResponseResources:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceInstanceResponseResources.
+        r"""Sets the resource_name of this ResourceInstanceResponseResources.
 
         资源名称，资源没有名称时默认为空字符串，eip返回ip地址。
 
@@ -111,7 +111,7 @@ class ResourceInstanceResponseResources:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ResourceInstanceResponseResources.
+        r"""Gets the resource_detail of this ResourceInstanceResponseResources.
 
         资源详情。 资源对象，用于扩展，默认为空。
 
@@ -122,7 +122,7 @@ class ResourceInstanceResponseResources:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ResourceInstanceResponseResources.
+        r"""Sets the resource_detail of this ResourceInstanceResponseResources.
 
         资源详情。 资源对象，用于扩展，默认为空。
 
@@ -133,7 +133,7 @@ class ResourceInstanceResponseResources:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceInstanceResponseResources.
+        r"""Gets the tags of this ResourceInstanceResponseResources.
 
         标签列表，没有标签默认为空数组
 
@@ -144,7 +144,7 @@ class ResourceInstanceResponseResources:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceInstanceResponseResources.
+        r"""Sets the tags of this ResourceInstanceResponseResources.
 
         标签列表，没有标签默认为空数组
 
@@ -155,7 +155,7 @@ class ResourceInstanceResponseResources:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ResourceInstanceResponseResources.
+        r"""Gets the sys_tags of this ResourceInstanceResponseResources.
 
         仅op_service权限才可以可以获取此字段： 目前只包含一个resource_tag 结构体 key：_sys_enterprise_project_id value：企业项目id，0表示默认企业项目 非op_service场景不能返回此字段
 
@@ -166,7 +166,7 @@ class ResourceInstanceResponseResources:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ResourceInstanceResponseResources.
+        r"""Sets the sys_tags of this ResourceInstanceResponseResources.
 
         仅op_service权限才可以可以获取此字段： 目前只包含一个resource_tag 结构体 key：_sys_enterprise_project_id value：企业项目id，0表示默认企业项目 非op_service场景不能返回此字段
 

@@ -29,7 +29,7 @@ class KeystoneUpdateProtocolRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, body=None):
-        """KeystoneUpdateProtocolRequest
+        r"""KeystoneUpdateProtocolRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class KeystoneUpdateProtocolRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this KeystoneUpdateProtocolRequest.
+        r"""Gets the idp_id of this KeystoneUpdateProtocolRequest.
 
         身份提供商ID。
 
@@ -66,7 +66,7 @@ class KeystoneUpdateProtocolRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this KeystoneUpdateProtocolRequest.
+        r"""Sets the idp_id of this KeystoneUpdateProtocolRequest.
 
         身份提供商ID。
 
@@ -77,7 +77,7 @@ class KeystoneUpdateProtocolRequest:
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this KeystoneUpdateProtocolRequest.
+        r"""Gets the protocol_id of this KeystoneUpdateProtocolRequest.
 
         待更新的协议ID。
 
@@ -88,7 +88,7 @@ class KeystoneUpdateProtocolRequest:
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this KeystoneUpdateProtocolRequest.
+        r"""Sets the protocol_id of this KeystoneUpdateProtocolRequest.
 
         待更新的协议ID。
 
@@ -99,7 +99,7 @@ class KeystoneUpdateProtocolRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateProtocolRequest.
+        r"""Gets the body of this KeystoneUpdateProtocolRequest.
 
         :return: The body of this KeystoneUpdateProtocolRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`
@@ -108,7 +108,7 @@ class KeystoneUpdateProtocolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateProtocolRequest.
+        r"""Sets the body of this KeystoneUpdateProtocolRequest.
 
         :param body: The body of this KeystoneUpdateProtocolRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`

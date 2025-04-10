@@ -33,7 +33,7 @@ class ContainerNodeInfo:
     }
 
     def __init__(self, host_id=None, host_name=None, host_status=None, agent_status=None, protect_status=None):
-        """ContainerNodeInfo
+        r"""ContainerNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ContainerNodeInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ContainerNodeInfo.
+        r"""Gets the host_id of this ContainerNodeInfo.
 
         节点id
 
@@ -82,7 +82,7 @@ class ContainerNodeInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ContainerNodeInfo.
+        r"""Sets the host_id of this ContainerNodeInfo.
 
         节点id
 
@@ -93,7 +93,7 @@ class ContainerNodeInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ContainerNodeInfo.
+        r"""Gets the host_name of this ContainerNodeInfo.
 
         节点（服务器）名称
 
@@ -104,7 +104,7 @@ class ContainerNodeInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ContainerNodeInfo.
+        r"""Sets the host_name of this ContainerNodeInfo.
 
         节点（服务器）名称
 
@@ -115,7 +115,7 @@ class ContainerNodeInfo:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ContainerNodeInfo.
+        r"""Gets the host_status of this ContainerNodeInfo.
 
         服务器状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
@@ -126,7 +126,7 @@ class ContainerNodeInfo:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ContainerNodeInfo.
+        r"""Sets the host_status of this ContainerNodeInfo.
 
         服务器状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
@@ -137,7 +137,7 @@ class ContainerNodeInfo:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ContainerNodeInfo.
+        r"""Gets the agent_status of this ContainerNodeInfo.
 
         Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
 
@@ -148,7 +148,7 @@ class ContainerNodeInfo:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ContainerNodeInfo.
+        r"""Sets the agent_status of this ContainerNodeInfo.
 
         Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
 
@@ -159,7 +159,7 @@ class ContainerNodeInfo:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ContainerNodeInfo.
+        r"""Gets the protect_status of this ContainerNodeInfo.
 
         防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
@@ -170,7 +170,7 @@ class ContainerNodeInfo:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ContainerNodeInfo.
+        r"""Sets the protect_status of this ContainerNodeInfo.
 
         防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 

@@ -33,7 +33,7 @@ class UserMigrationInfo:
     }
 
     def __init__(self, is_migrate_user=None, is_set_password=None, password=None, user_list=None, role_list=None):
-        """UserMigrationInfo
+        r"""UserMigrationInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UserMigrationInfo:
 
     @property
     def is_migrate_user(self):
-        """Gets the is_migrate_user of this UserMigrationInfo.
+        r"""Gets the is_migrate_user of this UserMigrationInfo.
 
         是否迁移用户。
 
@@ -80,7 +80,7 @@ class UserMigrationInfo:
 
     @is_migrate_user.setter
     def is_migrate_user(self, is_migrate_user):
-        """Sets the is_migrate_user of this UserMigrationInfo.
+        r"""Sets the is_migrate_user of this UserMigrationInfo.
 
         是否迁移用户。
 
@@ -91,7 +91,7 @@ class UserMigrationInfo:
 
     @property
     def is_set_password(self):
-        """Gets the is_set_password of this UserMigrationInfo.
+        r"""Gets the is_set_password of this UserMigrationInfo.
 
         是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景：  - 实时迁移场景：MySQL迁移。
 
@@ -102,7 +102,7 @@ class UserMigrationInfo:
 
     @is_set_password.setter
     def is_set_password(self, is_set_password):
-        """Sets the is_set_password of this UserMigrationInfo.
+        r"""Sets the is_set_password of this UserMigrationInfo.
 
         是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景：  - 实时迁移场景：MySQL迁移。
 
@@ -113,7 +113,7 @@ class UserMigrationInfo:
 
     @property
     def password(self):
-        """Gets the password of this UserMigrationInfo.
+        r"""Gets the password of this UserMigrationInfo.
 
         重置后的统一密码。统一重置密码为true时必填。 约束：密码不能为空。
 
@@ -124,7 +124,7 @@ class UserMigrationInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UserMigrationInfo.
+        r"""Sets the password of this UserMigrationInfo.
 
         重置后的统一密码。统一重置密码为true时必填。 约束：密码不能为空。
 
@@ -135,7 +135,7 @@ class UserMigrationInfo:
 
     @property
     def user_list(self):
-        """Gets the user_list of this UserMigrationInfo.
+        r"""Gets the user_list of this UserMigrationInfo.
 
         :return: The user_list of this UserMigrationInfo.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.UserMigrationList`]
@@ -144,7 +144,7 @@ class UserMigrationInfo:
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this UserMigrationInfo.
+        r"""Sets the user_list of this UserMigrationInfo.
 
         :param user_list: The user_list of this UserMigrationInfo.
         :type user_list: list[:class:`huaweicloudsdkdrs.v5.UserMigrationList`]
@@ -153,7 +153,7 @@ class UserMigrationInfo:
 
     @property
     def role_list(self):
-        """Gets the role_list of this UserMigrationInfo.
+        r"""Gets the role_list of this UserMigrationInfo.
 
         :return: The role_list of this UserMigrationInfo.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.UserMigrationRole`]
@@ -162,7 +162,7 @@ class UserMigrationInfo:
 
     @role_list.setter
     def role_list(self, role_list):
-        """Sets the role_list of this UserMigrationInfo.
+        r"""Sets the role_list of this UserMigrationInfo.
 
         :param role_list: The role_list of this UserMigrationInfo.
         :type role_list: list[:class:`huaweicloudsdkdrs.v5.UserMigrationRole`]

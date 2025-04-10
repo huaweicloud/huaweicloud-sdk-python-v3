@@ -26,7 +26,7 @@ class ImportCheckpointResponse(SdkResponse):
     }
 
     def __init__(self, sync=None):
-        """ImportCheckpointResponse
+        r"""ImportCheckpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportCheckpointResponse(SdkResponse):
 
     @property
     def sync(self):
-        """Gets the sync of this ImportCheckpointResponse.
+        r"""Gets the sync of this ImportCheckpointResponse.
 
         :return: The sync of this ImportCheckpointResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.SyncRespBody`
@@ -53,7 +53,7 @@ class ImportCheckpointResponse(SdkResponse):
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this ImportCheckpointResponse.
+        r"""Sets the sync of this ImportCheckpointResponse.
 
         :param sync: The sync of this ImportCheckpointResponse.
         :type sync: :class:`huaweicloudsdkcbr.v1.SyncRespBody`

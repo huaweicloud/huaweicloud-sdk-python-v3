@@ -27,7 +27,7 @@ class CreateMultiTasksRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateMultiTasksRequest
+        r"""CreateMultiTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMultiTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateMultiTasksRequest.
+        r"""Gets the instance_id of this CreateMultiTasksRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateMultiTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateMultiTasksRequest.
+        r"""Sets the instance_id of this CreateMultiTasksRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateMultiTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMultiTasksRequest.
+        r"""Gets the body of this CreateMultiTasksRequest.
 
         :return: The body of this CreateMultiTasksRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskRequestBody`
@@ -80,7 +80,7 @@ class CreateMultiTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMultiTasksRequest.
+        r"""Sets the body of this CreateMultiTasksRequest.
 
         :param body: The body of this CreateMultiTasksRequest.
         :type body: :class:`huaweicloudsdkroma.v2.MultiTaskRequestBody`

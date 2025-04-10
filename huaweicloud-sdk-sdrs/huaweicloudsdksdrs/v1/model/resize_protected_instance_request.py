@@ -27,7 +27,7 @@ class ResizeProtectedInstanceRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """ResizeProtectedInstanceRequest
+        r"""ResizeProtectedInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeProtectedInstanceRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this ResizeProtectedInstanceRequest.
+        r"""Gets the protected_instance_id of this ResizeProtectedInstanceRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class ResizeProtectedInstanceRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this ResizeProtectedInstanceRequest.
+        r"""Sets the protected_instance_id of this ResizeProtectedInstanceRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class ResizeProtectedInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeProtectedInstanceRequest.
+        r"""Gets the body of this ResizeProtectedInstanceRequest.
 
         :return: The body of this ResizeProtectedInstanceRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestBody`
@@ -80,7 +80,7 @@ class ResizeProtectedInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeProtectedInstanceRequest.
+        r"""Sets the body of this ResizeProtectedInstanceRequest.
 
         :param body: The body of this ResizeProtectedInstanceRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestBody`

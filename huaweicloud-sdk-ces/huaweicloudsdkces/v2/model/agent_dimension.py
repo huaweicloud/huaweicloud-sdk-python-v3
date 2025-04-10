@@ -29,7 +29,7 @@ class AgentDimension:
     }
 
     def __init__(self, name=None, value=None, origin_value=None):
-        """AgentDimension
+        r"""AgentDimension
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AgentDimension:
 
     @property
     def name(self):
-        """Gets the name of this AgentDimension.
+        r"""Gets the name of this AgentDimension.
 
         维度名称，枚举类型，类型有：   mount_point：挂载点，   disk：磁盘，   proc：进程，   gpu：显卡，   raid: RAID控制器
 
@@ -68,7 +68,7 @@ class AgentDimension:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgentDimension.
+        r"""Sets the name of this AgentDimension.
 
         维度名称，枚举类型，类型有：   mount_point：挂载点，   disk：磁盘，   proc：进程，   gpu：显卡，   raid: RAID控制器
 
@@ -79,7 +79,7 @@ class AgentDimension:
 
     @property
     def value(self):
-        """Gets the value of this AgentDimension.
+        r"""Gets the value of this AgentDimension.
 
         维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615
 
@@ -90,7 +90,7 @@ class AgentDimension:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AgentDimension.
+        r"""Sets the value of this AgentDimension.
 
         维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615
 
@@ -101,7 +101,7 @@ class AgentDimension:
 
     @property
     def origin_value(self):
-        """Gets the origin_value of this AgentDimension.
+        r"""Gets the origin_value of this AgentDimension.
 
         实际维度信息，字符串，如：vda。
 
@@ -112,7 +112,7 @@ class AgentDimension:
 
     @origin_value.setter
     def origin_value(self, origin_value):
-        """Sets the origin_value of this AgentDimension.
+        r"""Sets the origin_value of this AgentDimension.
 
         实际维度信息，字符串，如：vda。
 

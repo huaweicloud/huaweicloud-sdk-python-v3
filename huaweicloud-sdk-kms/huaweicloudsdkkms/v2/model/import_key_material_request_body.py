@@ -35,7 +35,7 @@ class ImportKeyMaterialRequestBody:
     }
 
     def __init__(self, key_id=None, import_token=None, encrypted_key_material=None, encrypted_privatekey=None, expiration_time=None, sequence=None):
-        """ImportKeyMaterialRequestBody
+        r"""ImportKeyMaterialRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ImportKeyMaterialRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ImportKeyMaterialRequestBody.
+        r"""Gets the key_id of this ImportKeyMaterialRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -86,7 +86,7 @@ class ImportKeyMaterialRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ImportKeyMaterialRequestBody.
+        r"""Sets the key_id of this ImportKeyMaterialRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -97,7 +97,7 @@ class ImportKeyMaterialRequestBody:
 
     @property
     def import_token(self):
-        """Gets the import_token of this ImportKeyMaterialRequestBody.
+        r"""Gets the import_token of this ImportKeyMaterialRequestBody.
 
         密钥导入令牌，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{200,6144}$”。
 
@@ -108,7 +108,7 @@ class ImportKeyMaterialRequestBody:
 
     @import_token.setter
     def import_token(self, import_token):
-        """Sets the import_token of this ImportKeyMaterialRequestBody.
+        r"""Sets the import_token of this ImportKeyMaterialRequestBody.
 
         密钥导入令牌，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{200,6144}$”。
 
@@ -119,7 +119,7 @@ class ImportKeyMaterialRequestBody:
 
     @property
     def encrypted_key_material(self):
-        """Gets the encrypted_key_material of this ImportKeyMaterialRequestBody.
+        r"""Gets the encrypted_key_material of this ImportKeyMaterialRequestBody.
 
         加密后的对称密钥材料，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{344,360}$”。若导入非对称密钥，则该参数为用于加密私钥的临时中间密钥。
 
@@ -130,7 +130,7 @@ class ImportKeyMaterialRequestBody:
 
     @encrypted_key_material.setter
     def encrypted_key_material(self, encrypted_key_material):
-        """Sets the encrypted_key_material of this ImportKeyMaterialRequestBody.
+        r"""Sets the encrypted_key_material of this ImportKeyMaterialRequestBody.
 
         加密后的对称密钥材料，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{344,360}$”。若导入非对称密钥，则该参数为用于加密私钥的临时中间密钥。
 
@@ -141,7 +141,7 @@ class ImportKeyMaterialRequestBody:
 
     @property
     def encrypted_privatekey(self):
-        """Gets the encrypted_privatekey of this ImportKeyMaterialRequestBody.
+        r"""Gets the encrypted_privatekey of this ImportKeyMaterialRequestBody.
 
         使用临时中间密钥加密后的私钥，导入非对称密钥需要该参数，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{200,6144}$”。
 
@@ -152,7 +152,7 @@ class ImportKeyMaterialRequestBody:
 
     @encrypted_privatekey.setter
     def encrypted_privatekey(self, encrypted_privatekey):
-        """Sets the encrypted_privatekey of this ImportKeyMaterialRequestBody.
+        r"""Sets the encrypted_privatekey of this ImportKeyMaterialRequestBody.
 
         使用临时中间密钥加密后的私钥，导入非对称密钥需要该参数，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{200,6144}$”。
 
@@ -163,7 +163,7 @@ class ImportKeyMaterialRequestBody:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this ImportKeyMaterialRequestBody.
+        r"""Gets the expiration_time of this ImportKeyMaterialRequestBody.
 
         密钥材料到期时间，时间戳，即从1970年1月1日至该时间的总秒数，KMS会在该时间的24小时内删除密钥材料。 例如：1550291833
 
@@ -174,7 +174,7 @@ class ImportKeyMaterialRequestBody:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this ImportKeyMaterialRequestBody.
+        r"""Sets the expiration_time of this ImportKeyMaterialRequestBody.
 
         密钥材料到期时间，时间戳，即从1970年1月1日至该时间的总秒数，KMS会在该时间的24小时内删除密钥材料。 例如：1550291833
 
@@ -185,7 +185,7 @@ class ImportKeyMaterialRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this ImportKeyMaterialRequestBody.
+        r"""Gets the sequence of this ImportKeyMaterialRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -196,7 +196,7 @@ class ImportKeyMaterialRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this ImportKeyMaterialRequestBody.
+        r"""Sets the sequence of this ImportKeyMaterialRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

@@ -41,7 +41,7 @@ class ClusterDetailInstances:
     }
 
     def __init__(self, status=None, resource_id=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None):
-        """ClusterDetailInstances
+        r"""ClusterDetailInstances
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ClusterDetailInstances:
 
     @property
     def status(self):
-        """Gets the status of this ClusterDetailInstances.
+        r"""Gets the status of this ClusterDetailInstances.
 
         节点状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
@@ -110,7 +110,7 @@ class ClusterDetailInstances:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterDetailInstances.
+        r"""Sets the status of this ClusterDetailInstances.
 
         节点状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
@@ -121,7 +121,7 @@ class ClusterDetailInstances:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ClusterDetailInstances.
+        r"""Gets the resource_id of this ClusterDetailInstances.
 
         该实例对应的资源Id。
 
@@ -132,7 +132,7 @@ class ClusterDetailInstances:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ClusterDetailInstances.
+        r"""Sets the resource_id of this ClusterDetailInstances.
 
         该实例对应的资源Id。
 
@@ -143,7 +143,7 @@ class ClusterDetailInstances:
 
     @property
     def type(self):
-        """Gets the type of this ClusterDetailInstances.
+        r"""Gets the type of this ClusterDetailInstances.
 
         当前节点的类型。
 
@@ -154,7 +154,7 @@ class ClusterDetailInstances:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterDetailInstances.
+        r"""Sets the type of this ClusterDetailInstances.
 
         当前节点的类型。
 
@@ -165,7 +165,7 @@ class ClusterDetailInstances:
 
     @property
     def id(self):
-        """Gets the id of this ClusterDetailInstances.
+        r"""Gets the id of this ClusterDetailInstances.
 
         实例ID。
 
@@ -176,7 +176,7 @@ class ClusterDetailInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterDetailInstances.
+        r"""Sets the id of this ClusterDetailInstances.
 
         实例ID。
 
@@ -187,7 +187,7 @@ class ClusterDetailInstances:
 
     @property
     def name(self):
-        """Gets the name of this ClusterDetailInstances.
+        r"""Gets the name of this ClusterDetailInstances.
 
         实例名字。
 
@@ -198,7 +198,7 @@ class ClusterDetailInstances:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterDetailInstances.
+        r"""Sets the name of this ClusterDetailInstances.
 
         实例名字。
 
@@ -209,7 +209,7 @@ class ClusterDetailInstances:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ClusterDetailInstances.
+        r"""Gets the spec_code of this ClusterDetailInstances.
 
         节点规格名称。
 
@@ -220,7 +220,7 @@ class ClusterDetailInstances:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ClusterDetailInstances.
+        r"""Sets the spec_code of this ClusterDetailInstances.
 
         节点规格名称。
 
@@ -231,7 +231,7 @@ class ClusterDetailInstances:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ClusterDetailInstances.
+        r"""Gets the az_code of this ClusterDetailInstances.
 
         节点所属AZ信息。
 
@@ -242,7 +242,7 @@ class ClusterDetailInstances:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ClusterDetailInstances.
+        r"""Sets the az_code of this ClusterDetailInstances.
 
         节点所属AZ信息。
 
@@ -253,7 +253,7 @@ class ClusterDetailInstances:
 
     @property
     def ip(self):
-        """Gets the ip of this ClusterDetailInstances.
+        r"""Gets the ip of this ClusterDetailInstances.
 
         实例ip信息。
 
@@ -264,7 +264,7 @@ class ClusterDetailInstances:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ClusterDetailInstances.
+        r"""Sets the ip of this ClusterDetailInstances.
 
         实例ip信息。
 
@@ -275,7 +275,7 @@ class ClusterDetailInstances:
 
     @property
     def volume(self):
-        """Gets the volume of this ClusterDetailInstances.
+        r"""Gets the volume of this ClusterDetailInstances.
 
         :return: The volume of this ClusterDetailInstances.
         :rtype: :class:`huaweicloudsdkcss.v1.ShowClusterVolumeRsp`
@@ -284,7 +284,7 @@ class ClusterDetailInstances:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ClusterDetailInstances.
+        r"""Sets the volume of this ClusterDetailInstances.
 
         :param volume: The volume of this ClusterDetailInstances.
         :type volume: :class:`huaweicloudsdkcss.v1.ShowClusterVolumeRsp`

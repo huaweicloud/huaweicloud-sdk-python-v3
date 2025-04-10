@@ -28,7 +28,7 @@ class ListVolumeResponse(SdkResponse):
     }
 
     def __init__(self, count=None, volumes=None):
-        """ListVolumeResponse
+        r"""ListVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVolumeResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVolumeResponse.
+        r"""Gets the count of this ListVolumeResponse.
 
         硬盘数量。
 
@@ -62,7 +62,7 @@ class ListVolumeResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVolumeResponse.
+        r"""Sets the count of this ListVolumeResponse.
 
         硬盘数量。
 
@@ -73,7 +73,7 @@ class ListVolumeResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ListVolumeResponse.
+        r"""Gets the volumes of this ListVolumeResponse.
 
         硬盘列表。
 
@@ -84,7 +84,7 @@ class ListVolumeResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ListVolumeResponse.
+        r"""Sets the volumes of this ListVolumeResponse.
 
         硬盘列表。
 

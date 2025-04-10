@@ -31,7 +31,7 @@ class ShowPrivateHookVersionMetadataRequest:
     }
 
     def __init__(self, client_request_id=None, hook_name=None, hook_version=None, hook_id=None):
-        """ShowPrivateHookVersionMetadataRequest
+        r"""ShowPrivateHookVersionMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ShowPrivateHookVersionMetadataRequest.
+        r"""Gets the client_request_id of this ShowPrivateHookVersionMetadataRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -72,7 +72,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ShowPrivateHookVersionMetadataRequest.
+        r"""Sets the client_request_id of this ShowPrivateHookVersionMetadataRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -83,7 +83,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @property
     def hook_name(self):
-        """Gets the hook_name of this ShowPrivateHookVersionMetadataRequest.
+        r"""Gets the hook_name of this ShowPrivateHookVersionMetadataRequest.
 
         私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
 
@@ -94,7 +94,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @hook_name.setter
     def hook_name(self, hook_name):
-        """Sets the hook_name of this ShowPrivateHookVersionMetadataRequest.
+        r"""Sets the hook_name of this ShowPrivateHookVersionMetadataRequest.
 
         私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
 
@@ -105,7 +105,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @property
     def hook_version(self):
-        """Gets the hook_version of this ShowPrivateHookVersionMetadataRequest.
+        r"""Gets the hook_version of this ShowPrivateHookVersionMetadataRequest.
 
         私有hook的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
 
@@ -116,7 +116,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @hook_version.setter
     def hook_version(self, hook_version):
-        """Sets the hook_version of this ShowPrivateHookVersionMetadataRequest.
+        r"""Sets the hook_version of this ShowPrivateHookVersionMetadataRequest.
 
         私有hook的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
 
@@ -127,7 +127,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @property
     def hook_id(self):
-        """Gets the hook_id of this ShowPrivateHookVersionMetadataRequest.
+        r"""Gets the hook_id of this ShowPrivateHookVersionMetadataRequest.
 
         私有hook（private-hook）的唯一Id。  此Id由资源编排服务在生成私有hook的时候生成，为UUID。  由于私有hook名称仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的私有hook，删除，再重新创建一个同名私有hook。  对于团队并行开发，用户可能希望确保，当前我操作的私有hook就是我认为的那个，而不是其他队友删除后创建的同名私有hook。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有hook所对应的Id都不相同，更新不会影响Id。如果给予的hook_id和当前hook的Id不一致，则返回400。
 
@@ -138,7 +138,7 @@ class ShowPrivateHookVersionMetadataRequest:
 
     @hook_id.setter
     def hook_id(self, hook_id):
-        """Sets the hook_id of this ShowPrivateHookVersionMetadataRequest.
+        r"""Sets the hook_id of this ShowPrivateHookVersionMetadataRequest.
 
         私有hook（private-hook）的唯一Id。  此Id由资源编排服务在生成私有hook的时候生成，为UUID。  由于私有hook名称仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的私有hook，删除，再重新创建一个同名私有hook。  对于团队并行开发，用户可能希望确保，当前我操作的私有hook就是我认为的那个，而不是其他队友删除后创建的同名私有hook。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有hook所对应的Id都不相同，更新不会影响Id。如果给予的hook_id和当前hook的Id不一致，则返回400。
 

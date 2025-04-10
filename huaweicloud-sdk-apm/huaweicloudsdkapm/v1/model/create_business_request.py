@@ -25,7 +25,7 @@ class CreateBusinessRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBusinessRequest
+        r"""CreateBusinessRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBusinessRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBusinessRequest.
+        r"""Gets the body of this CreateBusinessRequest.
 
         :return: The body of this CreateBusinessRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.CreateBusinessModel`
@@ -52,7 +52,7 @@ class CreateBusinessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBusinessRequest.
+        r"""Sets the body of this CreateBusinessRequest.
 
         :param body: The body of this CreateBusinessRequest.
         :type body: :class:`huaweicloudsdkapm.v1.CreateBusinessModel`

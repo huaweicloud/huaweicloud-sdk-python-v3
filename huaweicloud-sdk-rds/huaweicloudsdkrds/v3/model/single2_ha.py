@@ -25,7 +25,7 @@ class Single2Ha:
     }
 
     def __init__(self, single_to_ha=None):
-        """Single2Ha
+        r"""Single2Ha
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Single2Ha:
 
     @property
     def single_to_ha(self):
-        """Gets the single_to_ha of this Single2Ha.
+        r"""Gets the single_to_ha of this Single2Ha.
 
         :return: The single_to_ha of this Single2Ha.
         :rtype: :class:`huaweicloudsdkrds.v3.Single2HaObject`
@@ -51,7 +51,7 @@ class Single2Ha:
 
     @single_to_ha.setter
     def single_to_ha(self, single_to_ha):
-        """Sets the single_to_ha of this Single2Ha.
+        r"""Sets the single_to_ha of this Single2Ha.
 
         :param single_to_ha: The single_to_ha of this Single2Ha.
         :type single_to_ha: :class:`huaweicloudsdkrds.v3.Single2HaObject`

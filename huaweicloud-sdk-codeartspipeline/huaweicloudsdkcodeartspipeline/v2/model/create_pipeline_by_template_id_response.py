@@ -26,7 +26,7 @@ class CreatePipelineByTemplateIdResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None):
-        """CreatePipelineByTemplateIdResponse
+        r"""CreatePipelineByTemplateIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePipelineByTemplateIdResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this CreatePipelineByTemplateIdResponse.
+        r"""Gets the pipeline_id of this CreatePipelineByTemplateIdResponse.
 
         流水线ID
 
@@ -55,7 +55,7 @@ class CreatePipelineByTemplateIdResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this CreatePipelineByTemplateIdResponse.
+        r"""Sets the pipeline_id of this CreatePipelineByTemplateIdResponse.
 
         流水线ID
 

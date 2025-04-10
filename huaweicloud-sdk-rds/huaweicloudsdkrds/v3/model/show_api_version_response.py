@@ -28,7 +28,7 @@ class ShowApiVersionResponse(SdkResponse):
     }
 
     def __init__(self, versions=None, version=None):
-        """ShowApiVersionResponse
+        r"""ShowApiVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ShowApiVersionResponse.
+        r"""Gets the versions of this ShowApiVersionResponse.
 
         :return: The versions of this ShowApiVersionResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.ApiVersion`
@@ -60,7 +60,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ShowApiVersionResponse.
+        r"""Sets the versions of this ShowApiVersionResponse.
 
         :param versions: The versions of this ShowApiVersionResponse.
         :type versions: :class:`huaweicloudsdkrds.v3.ApiVersion`
@@ -69,7 +69,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowApiVersionResponse.
+        r"""Gets the version of this ShowApiVersionResponse.
 
         :return: The version of this ShowApiVersionResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.ApiVersion`
@@ -78,7 +78,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowApiVersionResponse.
+        r"""Sets the version of this ShowApiVersionResponse.
 
         :param version: The version of this ShowApiVersionResponse.
         :type version: :class:`huaweicloudsdkrds.v3.ApiVersion`

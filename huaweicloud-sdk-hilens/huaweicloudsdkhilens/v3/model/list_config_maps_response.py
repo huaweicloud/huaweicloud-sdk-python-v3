@@ -28,7 +28,7 @@ class ListConfigMapsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, configmaps=None):
-        """ListConfigMapsResponse
+        r"""ListConfigMapsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigMapsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListConfigMapsResponse.
+        r"""Gets the count of this ListConfigMapsResponse.
 
         配置项数量
 
@@ -62,7 +62,7 @@ class ListConfigMapsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListConfigMapsResponse.
+        r"""Sets the count of this ListConfigMapsResponse.
 
         配置项数量
 
@@ -73,7 +73,7 @@ class ListConfigMapsResponse(SdkResponse):
 
     @property
     def configmaps(self):
-        """Gets the configmaps of this ListConfigMapsResponse.
+        r"""Gets the configmaps of this ListConfigMapsResponse.
 
         配置项详情
 
@@ -84,7 +84,7 @@ class ListConfigMapsResponse(SdkResponse):
 
     @configmaps.setter
     def configmaps(self, configmaps):
-        """Sets the configmaps of this ListConfigMapsResponse.
+        r"""Sets the configmaps of this ListConfigMapsResponse.
 
         配置项详情
 

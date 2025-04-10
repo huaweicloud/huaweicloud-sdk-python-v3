@@ -29,7 +29,7 @@ class AggregatePolicyComplianceSummaryResult:
     }
 
     def __init__(self, resource_details=None, assignment_details=None, group_name=None):
-        """AggregatePolicyComplianceSummaryResult
+        r"""AggregatePolicyComplianceSummaryResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AggregatePolicyComplianceSummaryResult:
 
     @property
     def resource_details(self):
-        """Gets the resource_details of this AggregatePolicyComplianceSummaryResult.
+        r"""Gets the resource_details of this AggregatePolicyComplianceSummaryResult.
 
         :return: The resource_details of this AggregatePolicyComplianceSummaryResult.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyComplianceSummaryUnit`
@@ -66,7 +66,7 @@ class AggregatePolicyComplianceSummaryResult:
 
     @resource_details.setter
     def resource_details(self, resource_details):
-        """Sets the resource_details of this AggregatePolicyComplianceSummaryResult.
+        r"""Sets the resource_details of this AggregatePolicyComplianceSummaryResult.
 
         :param resource_details: The resource_details of this AggregatePolicyComplianceSummaryResult.
         :type resource_details: :class:`huaweicloudsdkrms.v1.PolicyComplianceSummaryUnit`
@@ -75,7 +75,7 @@ class AggregatePolicyComplianceSummaryResult:
 
     @property
     def assignment_details(self):
-        """Gets the assignment_details of this AggregatePolicyComplianceSummaryResult.
+        r"""Gets the assignment_details of this AggregatePolicyComplianceSummaryResult.
 
         :return: The assignment_details of this AggregatePolicyComplianceSummaryResult.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyComplianceSummaryUnit`
@@ -84,7 +84,7 @@ class AggregatePolicyComplianceSummaryResult:
 
     @assignment_details.setter
     def assignment_details(self, assignment_details):
-        """Sets the assignment_details of this AggregatePolicyComplianceSummaryResult.
+        r"""Sets the assignment_details of this AggregatePolicyComplianceSummaryResult.
 
         :param assignment_details: The assignment_details of this AggregatePolicyComplianceSummaryResult.
         :type assignment_details: :class:`huaweicloudsdkrms.v1.PolicyComplianceSummaryUnit`
@@ -93,7 +93,7 @@ class AggregatePolicyComplianceSummaryResult:
 
     @property
     def group_name(self):
-        """Gets the group_name of this AggregatePolicyComplianceSummaryResult.
+        r"""Gets the group_name of this AggregatePolicyComplianceSummaryResult.
 
         分组名称
 
@@ -104,7 +104,7 @@ class AggregatePolicyComplianceSummaryResult:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this AggregatePolicyComplianceSummaryResult.
+        r"""Sets the group_name of this AggregatePolicyComplianceSummaryResult.
 
         分组名称
 

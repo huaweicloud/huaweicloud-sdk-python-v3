@@ -29,7 +29,7 @@ class PluginInstallBasicParam:
     }
 
     def __init__(self, install_version=None, domain_ak=None, domain_sk=None):
-        """PluginInstallBasicParam
+        r"""PluginInstallBasicParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PluginInstallBasicParam:
 
     @property
     def install_version(self):
-        """Gets the install_version of this PluginInstallBasicParam.
+        r"""Gets the install_version of this PluginInstallBasicParam.
 
         指定安装的ICAgent版本。
 
@@ -68,7 +68,7 @@ class PluginInstallBasicParam:
 
     @install_version.setter
     def install_version(self, install_version):
-        """Sets the install_version of this PluginInstallBasicParam.
+        r"""Sets the install_version of this PluginInstallBasicParam.
 
         指定安装的ICAgent版本。
 
@@ -79,7 +79,7 @@ class PluginInstallBasicParam:
 
     @property
     def domain_ak(self):
-        """Gets the domain_ak of this PluginInstallBasicParam.
+        r"""Gets the domain_ak of this PluginInstallBasicParam.
 
         IAM账号AK，选填。.
 
@@ -90,7 +90,7 @@ class PluginInstallBasicParam:
 
     @domain_ak.setter
     def domain_ak(self, domain_ak):
-        """Sets the domain_ak of this PluginInstallBasicParam.
+        r"""Sets the domain_ak of this PluginInstallBasicParam.
 
         IAM账号AK，选填。.
 
@@ -101,7 +101,7 @@ class PluginInstallBasicParam:
 
     @property
     def domain_sk(self):
-        """Gets the domain_sk of this PluginInstallBasicParam.
+        r"""Gets the domain_sk of this PluginInstallBasicParam.
 
         IAM账号SK，选填。
 
@@ -112,7 +112,7 @@ class PluginInstallBasicParam:
 
     @domain_sk.setter
     def domain_sk(self, domain_sk):
-        """Sets the domain_sk of this PluginInstallBasicParam.
+        r"""Sets the domain_sk of this PluginInstallBasicParam.
 
         IAM账号SK，选填。
 

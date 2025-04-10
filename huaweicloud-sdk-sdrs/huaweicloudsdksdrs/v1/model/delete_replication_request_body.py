@@ -25,7 +25,7 @@ class DeleteReplicationRequestBody:
     }
 
     def __init__(self, replication=None):
-        """DeleteReplicationRequestBody
+        r"""DeleteReplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteReplicationRequestBody:
 
     @property
     def replication(self):
-        """Gets the replication of this DeleteReplicationRequestBody.
+        r"""Gets the replication of this DeleteReplicationRequestBody.
 
         :return: The replication of this DeleteReplicationRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequestParams`
@@ -51,7 +51,7 @@ class DeleteReplicationRequestBody:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this DeleteReplicationRequestBody.
+        r"""Sets the replication of this DeleteReplicationRequestBody.
 
         :param replication: The replication of this DeleteReplicationRequestBody.
         :type replication: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequestParams`

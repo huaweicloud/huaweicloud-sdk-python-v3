@@ -29,7 +29,7 @@ class CreateSecurityPermissionSetPermissionRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None, body=None):
-        """CreateSecurityPermissionSetPermissionRequest
+        r"""CreateSecurityPermissionSetPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSecurityPermissionSetPermissionRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this CreateSecurityPermissionSetPermissionRequest.
+        r"""Gets the permission_set_id of this CreateSecurityPermissionSetPermissionRequest.
 
         权限集id
 
@@ -66,7 +66,7 @@ class CreateSecurityPermissionSetPermissionRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this CreateSecurityPermissionSetPermissionRequest.
+        r"""Sets the permission_set_id of this CreateSecurityPermissionSetPermissionRequest.
 
         权限集id
 
@@ -77,7 +77,7 @@ class CreateSecurityPermissionSetPermissionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityPermissionSetPermissionRequest.
+        r"""Gets the workspace of this CreateSecurityPermissionSetPermissionRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class CreateSecurityPermissionSetPermissionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityPermissionSetPermissionRequest.
+        r"""Sets the workspace of this CreateSecurityPermissionSetPermissionRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class CreateSecurityPermissionSetPermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityPermissionSetPermissionRequest.
+        r"""Gets the body of this CreateSecurityPermissionSetPermissionRequest.
 
         :return: The body of this CreateSecurityPermissionSetPermissionRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionCreateDTO`
@@ -108,7 +108,7 @@ class CreateSecurityPermissionSetPermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityPermissionSetPermissionRequest.
+        r"""Sets the body of this CreateSecurityPermissionSetPermissionRequest.
 
         :param body: The body of this CreateSecurityPermissionSetPermissionRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionCreateDTO`

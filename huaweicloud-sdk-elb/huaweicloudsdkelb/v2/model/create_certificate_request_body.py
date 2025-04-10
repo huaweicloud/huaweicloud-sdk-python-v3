@@ -45,7 +45,7 @@ class CreateCertificateRequestBody:
     }
 
     def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=None, type=None, enterprise_project_id=None, source=None, protection_status=None, protection_reason=None):
-        """CreateCertificateRequestBody
+        r"""CreateCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CreateCertificateRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this CreateCertificateRequestBody.
+        r"""Gets the certificate of this CreateCertificateRequestBody.
 
         服务端公有密钥证书或者用于认证客户端证书的CA证书，由type字段区分。 格式：证书为PEM格式。
 
@@ -123,7 +123,7 @@ class CreateCertificateRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this CreateCertificateRequestBody.
+        r"""Sets the certificate of this CreateCertificateRequestBody.
 
         服务端公有密钥证书或者用于认证客户端证书的CA证书，由type字段区分。 格式：证书为PEM格式。
 
@@ -134,7 +134,7 @@ class CreateCertificateRequestBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CreateCertificateRequestBody.
+        r"""Gets the private_key of this CreateCertificateRequestBody.
 
         服务端的私有密钥。 格式：私钥为PEM格式。 该字段仅type为server时有效且为必选。 该字段在type为client时无效。
 
@@ -145,7 +145,7 @@ class CreateCertificateRequestBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CreateCertificateRequestBody.
+        r"""Sets the private_key of this CreateCertificateRequestBody.
 
         服务端的私有密钥。 格式：私钥为PEM格式。 该字段仅type为server时有效且为必选。 该字段在type为client时无效。
 
@@ -156,7 +156,7 @@ class CreateCertificateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateCertificateRequestBody.
+        r"""Gets the description of this CreateCertificateRequestBody.
 
         SSL证书的描述信息。支持的最大字符长度：255
 
@@ -167,7 +167,7 @@ class CreateCertificateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCertificateRequestBody.
+        r"""Sets the description of this CreateCertificateRequestBody.
 
         SSL证书的描述信息。支持的最大字符长度：255
 
@@ -178,7 +178,7 @@ class CreateCertificateRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateCertificateRequestBody.
+        r"""Gets the domain of this CreateCertificateRequestBody.
 
         服务端证书所签的域名。  取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com  该字段仅type为server时有效。
 
@@ -189,7 +189,7 @@ class CreateCertificateRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateCertificateRequestBody.
+        r"""Sets the domain of this CreateCertificateRequestBody.
 
         服务端证书所签的域名。  取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com  该字段仅type为server时有效。
 
@@ -200,7 +200,7 @@ class CreateCertificateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCertificateRequestBody.
+        r"""Gets the name of this CreateCertificateRequestBody.
 
         SSL证书的名称。支持的最大字符长度：255
 
@@ -211,7 +211,7 @@ class CreateCertificateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCertificateRequestBody.
+        r"""Sets the name of this CreateCertificateRequestBody.
 
         SSL证书的名称。支持的最大字符长度：255
 
@@ -222,7 +222,7 @@ class CreateCertificateRequestBody:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateCertificateRequestBody.
+        r"""Gets the admin_state_up of this CreateCertificateRequestBody.
 
         SSL证书的管理状态； 取值范围： true/false。 该字段为预留字段，暂未启用。只支持设定为true。
 
@@ -233,7 +233,7 @@ class CreateCertificateRequestBody:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateCertificateRequestBody.
+        r"""Sets the admin_state_up of this CreateCertificateRequestBody.
 
         SSL证书的管理状态； 取值范围： true/false。 该字段为预留字段，暂未启用。只支持设定为true。
 
@@ -244,7 +244,7 @@ class CreateCertificateRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateCertificateRequestBody.
+        r"""Gets the type of this CreateCertificateRequestBody.
 
         SSL证书的类型。默认值：server； 取值范围： server：服务端证书； client：客户端证书；
 
@@ -255,7 +255,7 @@ class CreateCertificateRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCertificateRequestBody.
+        r"""Sets the type of this CreateCertificateRequestBody.
 
         SSL证书的类型。默认值：server； 取值范围： server：服务端证书； client：客户端证书；
 
@@ -266,7 +266,7 @@ class CreateCertificateRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateRequestBody.
+        r"""Gets the enterprise_project_id of this CreateCertificateRequestBody.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -277,7 +277,7 @@ class CreateCertificateRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateRequestBody.
+        r"""Sets the enterprise_project_id of this CreateCertificateRequestBody.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -288,7 +288,7 @@ class CreateCertificateRequestBody:
 
     @property
     def source(self):
-        """Gets the source of this CreateCertificateRequestBody.
+        r"""Gets the source of this CreateCertificateRequestBody.
 
         参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
 
@@ -299,7 +299,7 @@ class CreateCertificateRequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateCertificateRequestBody.
+        r"""Sets the source of this CreateCertificateRequestBody.
 
         参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
 
@@ -310,7 +310,7 @@ class CreateCertificateRequestBody:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this CreateCertificateRequestBody.
+        r"""Gets the protection_status of this CreateCertificateRequestBody.
 
         参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
 
@@ -321,7 +321,7 @@ class CreateCertificateRequestBody:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this CreateCertificateRequestBody.
+        r"""Sets the protection_status of this CreateCertificateRequestBody.
 
         参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
 
@@ -332,7 +332,7 @@ class CreateCertificateRequestBody:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this CreateCertificateRequestBody.
+        r"""Gets the protection_reason of this CreateCertificateRequestBody.
 
         参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
 
@@ -343,7 +343,7 @@ class CreateCertificateRequestBody:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this CreateCertificateRequestBody.
+        r"""Sets the protection_reason of this CreateCertificateRequestBody.
 
         参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
 

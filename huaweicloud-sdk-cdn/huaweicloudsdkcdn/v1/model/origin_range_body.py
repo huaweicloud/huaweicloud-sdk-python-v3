@@ -27,7 +27,7 @@ class OriginRangeBody:
     }
 
     def __init__(self, range_status=None, domain_id=None):
-        """OriginRangeBody
+        r"""OriginRangeBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OriginRangeBody:
 
     @property
     def range_status(self):
-        """Gets the range_status of this OriginRangeBody.
+        r"""Gets the range_status of this OriginRangeBody.
 
         range状态（\"off\"/\"on\"）
 
@@ -61,7 +61,7 @@ class OriginRangeBody:
 
     @range_status.setter
     def range_status(self, range_status):
-        """Sets the range_status of this OriginRangeBody.
+        r"""Sets the range_status of this OriginRangeBody.
 
         range状态（\"off\"/\"on\"）
 
@@ -72,7 +72,7 @@ class OriginRangeBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this OriginRangeBody.
+        r"""Gets the domain_id of this OriginRangeBody.
 
         加速域名id。
 
@@ -83,7 +83,7 @@ class OriginRangeBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this OriginRangeBody.
+        r"""Sets the domain_id of this OriginRangeBody.
 
         加速域名id。
 

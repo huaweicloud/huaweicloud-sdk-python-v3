@@ -27,7 +27,7 @@ class Port:
     }
 
     def __init__(self, id=None, ip_address=None):
-        """Port
+        r"""Port
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Port:
 
     @property
     def id(self):
-        """Gets the id of this Port.
+        r"""Gets the id of this Port.
 
         私有IP唯一标识
 
@@ -61,7 +61,7 @@ class Port:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Port.
+        r"""Sets the id of this Port.
 
         私有IP唯一标识
 
@@ -72,7 +72,7 @@ class Port:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this Port.
+        r"""Gets the ip_address of this Port.
 
         私有IP地址
 
@@ -83,7 +83,7 @@ class Port:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this Port.
+        r"""Sets the ip_address of this Port.
 
         私有IP地址
 

@@ -25,7 +25,7 @@ class BatchUpdateSubscriptionsFilterPolicesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateSubscriptionsFilterPolicesRequest
+        r"""BatchUpdateSubscriptionsFilterPolicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateSubscriptionsFilterPolicesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateSubscriptionsFilterPolicesRequest.
+        r"""Gets the body of this BatchUpdateSubscriptionsFilterPolicesRequest.
 
         :return: The body of this BatchUpdateSubscriptionsFilterPolicesRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.BatchSubscriptionsFilterPolicesRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateSubscriptionsFilterPolicesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateSubscriptionsFilterPolicesRequest.
+        r"""Sets the body of this BatchUpdateSubscriptionsFilterPolicesRequest.
 
         :param body: The body of this BatchUpdateSubscriptionsFilterPolicesRequest.
         :type body: :class:`huaweicloudsdksmn.v2.BatchSubscriptionsFilterPolicesRequestBody`

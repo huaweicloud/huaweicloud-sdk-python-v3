@@ -93,7 +93,7 @@ class JobDetailResp:
     }
 
     def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None, diagnoses=None, repair_progress_info=None, repair_detail_info=None, repair_export_status=None):
-        """JobDetailResp
+        r"""JobDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -281,7 +281,7 @@ class JobDetailResp:
 
     @property
     def id(self):
-        """Gets the id of this JobDetailResp.
+        r"""Gets the id of this JobDetailResp.
 
         任务ID。
 
@@ -292,7 +292,7 @@ class JobDetailResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobDetailResp.
+        r"""Sets the id of this JobDetailResp.
 
         任务ID。
 
@@ -303,7 +303,7 @@ class JobDetailResp:
 
     @property
     def status(self):
-        """Gets the status of this JobDetailResp.
+        r"""Gets the status of this JobDetailResp.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -314,7 +314,7 @@ class JobDetailResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobDetailResp.
+        r"""Sets the status of this JobDetailResp.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -325,7 +325,7 @@ class JobDetailResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this JobDetailResp.
+        r"""Gets the create_time of this JobDetailResp.
 
         任务创建时间。
 
@@ -336,7 +336,7 @@ class JobDetailResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this JobDetailResp.
+        r"""Sets the create_time of this JobDetailResp.
 
         任务创建时间。
 
@@ -347,7 +347,7 @@ class JobDetailResp:
 
     @property
     def total_count(self):
-        """Gets the total_count of this JobDetailResp.
+        r"""Gets the total_count of this JobDetailResp.
 
         列表中的项目总数，与分页无关。
 
@@ -358,7 +358,7 @@ class JobDetailResp:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this JobDetailResp.
+        r"""Sets the total_count of this JobDetailResp.
 
         列表中的项目总数，与分页无关。
 
@@ -369,7 +369,7 @@ class JobDetailResp:
 
     @property
     def master_job_id(self):
-        """Gets the master_job_id of this JobDetailResp.
+        r"""Gets the master_job_id of this JobDetailResp.
 
         多任务主节点的任务ID。
 
@@ -380,7 +380,7 @@ class JobDetailResp:
 
     @master_job_id.setter
     def master_job_id(self, master_job_id):
-        """Sets the master_job_id of this JobDetailResp.
+        r"""Sets the master_job_id of this JobDetailResp.
 
         多任务主节点的任务ID。
 
@@ -391,7 +391,7 @@ class JobDetailResp:
 
     @property
     def base_info(self):
-        """Gets the base_info of this JobDetailResp.
+        r"""Gets the base_info of this JobDetailResp.
 
         :return: The base_info of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -400,7 +400,7 @@ class JobDetailResp:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this JobDetailResp.
+        r"""Sets the base_info of this JobDetailResp.
 
         :param base_info: The base_info of this JobDetailResp.
         :type base_info: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -409,7 +409,7 @@ class JobDetailResp:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this JobDetailResp.
+        r"""Gets the source_endpoint of this JobDetailResp.
 
         任务源数据库信息体。
 
@@ -420,7 +420,7 @@ class JobDetailResp:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this JobDetailResp.
+        r"""Sets the source_endpoint of this JobDetailResp.
 
         任务源数据库信息体。
 
@@ -431,7 +431,7 @@ class JobDetailResp:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this JobDetailResp.
+        r"""Gets the target_endpoint of this JobDetailResp.
 
         任务目标数据库信息体。
 
@@ -442,7 +442,7 @@ class JobDetailResp:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this JobDetailResp.
+        r"""Sets the target_endpoint of this JobDetailResp.
 
         任务目标数据库信息体。
 
@@ -453,7 +453,7 @@ class JobDetailResp:
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this JobDetailResp.
+        r"""Gets the alarm_notify of this JobDetailResp.
 
         :return: The alarm_notify of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -462,7 +462,7 @@ class JobDetailResp:
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this JobDetailResp.
+        r"""Sets the alarm_notify of this JobDetailResp.
 
         :param alarm_notify: The alarm_notify of this JobDetailResp.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -471,7 +471,7 @@ class JobDetailResp:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this JobDetailResp.
+        r"""Gets the speed_limit of this JobDetailResp.
 
         限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
@@ -482,7 +482,7 @@ class JobDetailResp:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this JobDetailResp.
+        r"""Sets the speed_limit of this JobDetailResp.
 
         限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
@@ -493,7 +493,7 @@ class JobDetailResp:
 
     @property
     def user_migration(self):
-        """Gets the user_migration of this JobDetailResp.
+        r"""Gets the user_migration of this JobDetailResp.
 
         :return: The user_migration of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -502,7 +502,7 @@ class JobDetailResp:
 
     @user_migration.setter
     def user_migration(self, user_migration):
-        """Sets the user_migration of this JobDetailResp.
+        r"""Sets the user_migration of this JobDetailResp.
 
         :param user_migration: The user_migration of this JobDetailResp.
         :type user_migration: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -511,7 +511,7 @@ class JobDetailResp:
 
     @property
     def policy_config(self):
-        """Gets the policy_config of this JobDetailResp.
+        r"""Gets the policy_config of this JobDetailResp.
 
         :return: The policy_config of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.PolicyConfig`
@@ -520,7 +520,7 @@ class JobDetailResp:
 
     @policy_config.setter
     def policy_config(self, policy_config):
-        """Sets the policy_config of this JobDetailResp.
+        r"""Sets the policy_config of this JobDetailResp.
 
         :param policy_config: The policy_config of this JobDetailResp.
         :type policy_config: :class:`huaweicloudsdkdrs.v5.PolicyConfig`
@@ -529,7 +529,7 @@ class JobDetailResp:
 
     @property
     def db_param(self):
-        """Gets the db_param of this JobDetailResp.
+        r"""Gets the db_param of this JobDetailResp.
 
         :return: The db_param of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.DbParamInfo`
@@ -538,7 +538,7 @@ class JobDetailResp:
 
     @db_param.setter
     def db_param(self, db_param):
-        """Sets the db_param of this JobDetailResp.
+        r"""Sets the db_param of this JobDetailResp.
 
         :param db_param: The db_param of this JobDetailResp.
         :type db_param: :class:`huaweicloudsdkdrs.v5.DbParamInfo`
@@ -547,7 +547,7 @@ class JobDetailResp:
 
     @property
     def tuning_params(self):
-        """Gets the tuning_params of this JobDetailResp.
+        r"""Gets the tuning_params of this JobDetailResp.
 
         :return: The tuning_params of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.TuningParamInfo`
@@ -556,7 +556,7 @@ class JobDetailResp:
 
     @tuning_params.setter
     def tuning_params(self, tuning_params):
-        """Sets the tuning_params of this JobDetailResp.
+        r"""Sets the tuning_params of this JobDetailResp.
 
         :param tuning_params: The tuning_params of this JobDetailResp.
         :type tuning_params: :class:`huaweicloudsdkdrs.v5.TuningParamInfo`
@@ -565,7 +565,7 @@ class JobDetailResp:
 
     @property
     def period_order(self):
-        """Gets the period_order of this JobDetailResp.
+        r"""Gets the period_order of this JobDetailResp.
 
         :return: The period_order of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -574,7 +574,7 @@ class JobDetailResp:
 
     @period_order.setter
     def period_order(self, period_order):
-        """Sets the period_order of this JobDetailResp.
+        r"""Sets the period_order of this JobDetailResp.
 
         :param period_order: The period_order of this JobDetailResp.
         :type period_order: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -583,7 +583,7 @@ class JobDetailResp:
 
     @property
     def node_info(self):
-        """Gets the node_info of this JobDetailResp.
+        r"""Gets the node_info of this JobDetailResp.
 
         :return: The node_info of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -592,7 +592,7 @@ class JobDetailResp:
 
     @node_info.setter
     def node_info(self, node_info):
-        """Sets the node_info of this JobDetailResp.
+        r"""Sets the node_info of this JobDetailResp.
 
         :param node_info: The node_info of this JobDetailResp.
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -601,7 +601,7 @@ class JobDetailResp:
 
     @property
     def logs(self):
-        """Gets the logs of this JobDetailResp.
+        r"""Gets the logs of this JobDetailResp.
 
         日志查询结果信息体。
 
@@ -612,7 +612,7 @@ class JobDetailResp:
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this JobDetailResp.
+        r"""Sets the logs of this JobDetailResp.
 
         日志查询结果信息体。
 
@@ -623,7 +623,7 @@ class JobDetailResp:
 
     @property
     def network_results(self):
-        """Gets the network_results of this JobDetailResp.
+        r"""Gets the network_results of this JobDetailResp.
 
         网络打通测试结果信息体。
 
@@ -634,7 +634,7 @@ class JobDetailResp:
 
     @network_results.setter
     def network_results(self, network_results):
-        """Sets the network_results of this JobDetailResp.
+        r"""Sets the network_results of this JobDetailResp.
 
         网络打通测试结果信息体。
 
@@ -645,7 +645,7 @@ class JobDetailResp:
 
     @property
     def precheck_result(self):
-        """Gets the precheck_result of this JobDetailResp.
+        r"""Gets the precheck_result of this JobDetailResp.
 
         :return: The precheck_result of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryPreCheckResult`
@@ -654,7 +654,7 @@ class JobDetailResp:
 
     @precheck_result.setter
     def precheck_result(self, precheck_result):
-        """Sets the precheck_result of this JobDetailResp.
+        r"""Sets the precheck_result of this JobDetailResp.
 
         :param precheck_result: The precheck_result of this JobDetailResp.
         :type precheck_result: :class:`huaweicloudsdkdrs.v5.QueryPreCheckResult`
@@ -663,7 +663,7 @@ class JobDetailResp:
 
     @property
     def progress_info(self):
-        """Gets the progress_info of this JobDetailResp.
+        r"""Gets the progress_info of this JobDetailResp.
 
         :return: The progress_info of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobProgressInfo`
@@ -672,7 +672,7 @@ class JobDetailResp:
 
     @progress_info.setter
     def progress_info(self, progress_info):
-        """Sets the progress_info of this JobDetailResp.
+        r"""Sets the progress_info of this JobDetailResp.
 
         :param progress_info: The progress_info of this JobDetailResp.
         :type progress_info: :class:`huaweicloudsdkdrs.v5.JobProgressInfo`
@@ -681,7 +681,7 @@ class JobDetailResp:
 
     @property
     def migration_object_progress_info(self):
-        """Gets the migration_object_progress_info of this JobDetailResp.
+        r"""Gets the migration_object_progress_info of this JobDetailResp.
 
         :return: The migration_object_progress_info of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryMigrationObjectProgressInfo`
@@ -690,7 +690,7 @@ class JobDetailResp:
 
     @migration_object_progress_info.setter
     def migration_object_progress_info(self, migration_object_progress_info):
-        """Sets the migration_object_progress_info of this JobDetailResp.
+        r"""Sets the migration_object_progress_info of this JobDetailResp.
 
         :param migration_object_progress_info: The migration_object_progress_info of this JobDetailResp.
         :type migration_object_progress_info: :class:`huaweicloudsdkdrs.v5.QueryMigrationObjectProgressInfo`
@@ -699,7 +699,7 @@ class JobDetailResp:
 
     @property
     def metrics(self):
-        """Gets the metrics of this JobDetailResp.
+        r"""Gets the metrics of this JobDetailResp.
 
         :return: The metrics of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryMetricResult`
@@ -708,7 +708,7 @@ class JobDetailResp:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this JobDetailResp.
+        r"""Sets the metrics of this JobDetailResp.
 
         :param metrics: The metrics of this JobDetailResp.
         :type metrics: :class:`huaweicloudsdkdrs.v5.QueryMetricResult`
@@ -717,7 +717,7 @@ class JobDetailResp:
 
     @property
     def compare_result(self):
-        """Gets the compare_result of this JobDetailResp.
+        r"""Gets the compare_result of this JobDetailResp.
 
         :return: The compare_result of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.CompareResultInfo`
@@ -726,7 +726,7 @@ class JobDetailResp:
 
     @compare_result.setter
     def compare_result(self, compare_result):
-        """Sets the compare_result of this JobDetailResp.
+        r"""Sets the compare_result of this JobDetailResp.
 
         :param compare_result: The compare_result of this JobDetailResp.
         :type compare_result: :class:`huaweicloudsdkdrs.v5.CompareResultInfo`
@@ -735,7 +735,7 @@ class JobDetailResp:
 
     @property
     def support_import_file_resp(self):
-        """Gets the support_import_file_resp of this JobDetailResp.
+        r"""Gets the support_import_file_resp of this JobDetailResp.
 
         :return: The support_import_file_resp of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.SupportImportFileResult`
@@ -744,7 +744,7 @@ class JobDetailResp:
 
     @support_import_file_resp.setter
     def support_import_file_resp(self, support_import_file_resp):
-        """Sets the support_import_file_resp of this JobDetailResp.
+        r"""Sets the support_import_file_resp of this JobDetailResp.
 
         :param support_import_file_resp: The support_import_file_resp of this JobDetailResp.
         :type support_import_file_resp: :class:`huaweicloudsdkdrs.v5.SupportImportFileResult`
@@ -753,7 +753,7 @@ class JobDetailResp:
 
     @property
     def instance_features(self):
-        """Gets the instance_features of this JobDetailResp.
+        r"""Gets the instance_features of this JobDetailResp.
 
         由开关和版本共同控制的任务级别的功能列表。
 
@@ -764,7 +764,7 @@ class JobDetailResp:
 
     @instance_features.setter
     def instance_features(self, instance_features):
-        """Sets the instance_features of this JobDetailResp.
+        r"""Sets the instance_features of this JobDetailResp.
 
         由开关和版本共同控制的任务级别的功能列表。
 
@@ -775,7 +775,7 @@ class JobDetailResp:
 
     @property
     def task_version(self):
-        """Gets the task_version of this JobDetailResp.
+        r"""Gets the task_version of this JobDetailResp.
 
         任务版本。
 
@@ -786,7 +786,7 @@ class JobDetailResp:
 
     @task_version.setter
     def task_version(self, task_version):
-        """Sets the task_version of this JobDetailResp.
+        r"""Sets the task_version of this JobDetailResp.
 
         任务版本。
 
@@ -797,7 +797,7 @@ class JobDetailResp:
 
     @property
     def connection_management(self):
-        """Gets the connection_management of this JobDetailResp.
+        r"""Gets the connection_management of this JobDetailResp.
 
         :return: The connection_management of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
@@ -806,7 +806,7 @@ class JobDetailResp:
 
     @connection_management.setter
     def connection_management(self, connection_management):
-        """Sets the connection_management of this JobDetailResp.
+        r"""Sets the connection_management of this JobDetailResp.
 
         :param connection_management: The connection_management of this JobDetailResp.
         :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
@@ -815,7 +815,7 @@ class JobDetailResp:
 
     @property
     def public_ip_list(self):
-        """Gets the public_ip_list of this JobDetailResp.
+        r"""Gets the public_ip_list of this JobDetailResp.
 
         指定公网IP的信息
 
@@ -826,7 +826,7 @@ class JobDetailResp:
 
     @public_ip_list.setter
     def public_ip_list(self, public_ip_list):
-        """Sets the public_ip_list of this JobDetailResp.
+        r"""Sets the public_ip_list of this JobDetailResp.
 
         指定公网IP的信息
 
@@ -837,7 +837,7 @@ class JobDetailResp:
 
     @property
     def bind_public_ip_state(self):
-        """Gets the bind_public_ip_state of this JobDetailResp.
+        r"""Gets the bind_public_ip_state of this JobDetailResp.
 
         是否成功绑定公网IP
 
@@ -848,7 +848,7 @@ class JobDetailResp:
 
     @bind_public_ip_state.setter
     def bind_public_ip_state(self, bind_public_ip_state):
-        """Sets the bind_public_ip_state of this JobDetailResp.
+        r"""Sets the bind_public_ip_state of this JobDetailResp.
 
         是否成功绑定公网IP
 
@@ -859,7 +859,7 @@ class JobDetailResp:
 
     @property
     def children(self):
-        """Gets the children of this JobDetailResp.
+        r"""Gets the children of this JobDetailResp.
 
         多任务时，存在子任务绑定失败时，返回子任务的信息
 
@@ -870,7 +870,7 @@ class JobDetailResp:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this JobDetailResp.
+        r"""Sets the children of this JobDetailResp.
 
         多任务时，存在子任务绑定失败时，返回子任务的信息
 
@@ -881,7 +881,7 @@ class JobDetailResp:
 
     @property
     def is_writable(self):
-        """Gets the is_writable of this JobDetailResp.
+        r"""Gets the is_writable of this JobDetailResp.
 
         解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
 
@@ -892,7 +892,7 @@ class JobDetailResp:
 
     @is_writable.setter
     def is_writable(self, is_writable):
-        """Sets the is_writable of this JobDetailResp.
+        r"""Sets the is_writable of this JobDetailResp.
 
         解除目标库只读操作后，目标库解除只读是否成功。 - pending：目标库解除操作进行中。 - success：目标库解除只读操作成功。
 
@@ -903,7 +903,7 @@ class JobDetailResp:
 
     @property
     def diagnoses(self):
-        """Gets the diagnoses of this JobDetailResp.
+        r"""Gets the diagnoses of this JobDetailResp.
 
         一键诊断结果。
 
@@ -914,7 +914,7 @@ class JobDetailResp:
 
     @diagnoses.setter
     def diagnoses(self, diagnoses):
-        """Sets the diagnoses of this JobDetailResp.
+        r"""Sets the diagnoses of this JobDetailResp.
 
         一键诊断结果。
 
@@ -925,7 +925,7 @@ class JobDetailResp:
 
     @property
     def repair_progress_info(self):
-        """Gets the repair_progress_info of this JobDetailResp.
+        r"""Gets the repair_progress_info of this JobDetailResp.
 
         :return: The repair_progress_info of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
@@ -934,7 +934,7 @@ class JobDetailResp:
 
     @repair_progress_info.setter
     def repair_progress_info(self, repair_progress_info):
-        """Sets the repair_progress_info of this JobDetailResp.
+        r"""Sets the repair_progress_info of this JobDetailResp.
 
         :param repair_progress_info: The repair_progress_info of this JobDetailResp.
         :type repair_progress_info: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
@@ -943,7 +943,7 @@ class JobDetailResp:
 
     @property
     def repair_detail_info(self):
-        """Gets the repair_detail_info of this JobDetailResp.
+        r"""Gets the repair_detail_info of this JobDetailResp.
 
         :return: The repair_detail_info of this JobDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
@@ -952,7 +952,7 @@ class JobDetailResp:
 
     @repair_detail_info.setter
     def repair_detail_info(self, repair_detail_info):
-        """Sets the repair_detail_info of this JobDetailResp.
+        r"""Sets the repair_detail_info of this JobDetailResp.
 
         :param repair_detail_info: The repair_detail_info of this JobDetailResp.
         :type repair_detail_info: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
@@ -961,7 +961,7 @@ class JobDetailResp:
 
     @property
     def repair_export_status(self):
-        """Gets the repair_export_status of this JobDetailResp.
+        r"""Gets the repair_export_status of this JobDetailResp.
 
         修复SQL导出状态。
 
@@ -972,7 +972,7 @@ class JobDetailResp:
 
     @repair_export_status.setter
     def repair_export_status(self, repair_export_status):
-        """Sets the repair_export_status of this JobDetailResp.
+        r"""Sets the repair_export_status of this JobDetailResp.
 
         修复SQL导出状态。
 

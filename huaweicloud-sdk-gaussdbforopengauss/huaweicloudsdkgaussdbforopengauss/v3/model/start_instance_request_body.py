@@ -25,7 +25,7 @@ class StartInstanceRequestBody:
     }
 
     def __init__(self, node_ids=None):
-        """StartInstanceRequestBody
+        r"""StartInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartInstanceRequestBody:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this StartInstanceRequestBody.
+        r"""Gets the node_ids of this StartInstanceRequestBody.
 
         需要启动的节点的ID，取值不能为null，如果为空列表则启动整个实例
 
@@ -53,7 +53,7 @@ class StartInstanceRequestBody:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this StartInstanceRequestBody.
+        r"""Sets the node_ids of this StartInstanceRequestBody.
 
         需要启动的节点的ID，取值不能为null，如果为空列表则启动整个实例
 

@@ -27,7 +27,7 @@ class AddDeployKeyV2Request:
     }
 
     def __init__(self, repository_id=None, body=None):
-        """AddDeployKeyV2Request
+        r"""AddDeployKeyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddDeployKeyV2Request:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this AddDeployKeyV2Request.
+        r"""Gets the repository_id of this AddDeployKeyV2Request.
 
         仓库主键id
 
@@ -60,7 +60,7 @@ class AddDeployKeyV2Request:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this AddDeployKeyV2Request.
+        r"""Sets the repository_id of this AddDeployKeyV2Request.
 
         仓库主键id
 
@@ -71,7 +71,7 @@ class AddDeployKeyV2Request:
 
     @property
     def body(self):
-        """Gets the body of this AddDeployKeyV2Request.
+        r"""Gets the body of this AddDeployKeyV2Request.
 
         :return: The body of this AddDeployKeyV2Request.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequestBody`
@@ -80,7 +80,7 @@ class AddDeployKeyV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDeployKeyV2Request.
+        r"""Sets the body of this AddDeployKeyV2Request.
 
         :param body: The body of this AddDeployKeyV2Request.
         :type body: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequestBody`

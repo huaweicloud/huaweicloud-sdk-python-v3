@@ -31,7 +31,7 @@ class MigrateCatalogRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None, body=None):
-        """MigrateCatalogRequest
+        r"""MigrateCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class MigrateCatalogRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this MigrateCatalogRequest.
+        r"""Gets the workspace of this MigrateCatalogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class MigrateCatalogRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this MigrateCatalogRequest.
+        r"""Sets the workspace of this MigrateCatalogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class MigrateCatalogRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this MigrateCatalogRequest.
+        r"""Gets the dlm_type of this MigrateCatalogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -95,7 +95,7 @@ class MigrateCatalogRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this MigrateCatalogRequest.
+        r"""Sets the dlm_type of this MigrateCatalogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -106,7 +106,7 @@ class MigrateCatalogRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this MigrateCatalogRequest.
+        r"""Gets the catalog_id of this MigrateCatalogRequest.
 
         目录编号。
 
@@ -117,7 +117,7 @@ class MigrateCatalogRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this MigrateCatalogRequest.
+        r"""Sets the catalog_id of this MigrateCatalogRequest.
 
         目录编号。
 
@@ -128,7 +128,7 @@ class MigrateCatalogRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateCatalogRequest.
+        r"""Gets the body of this MigrateCatalogRequest.
 
         :return: The body of this MigrateCatalogRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogMoveParaDTO`
@@ -137,7 +137,7 @@ class MigrateCatalogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateCatalogRequest.
+        r"""Sets the body of this MigrateCatalogRequest.
 
         :param body: The body of this MigrateCatalogRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CatalogMoveParaDTO`

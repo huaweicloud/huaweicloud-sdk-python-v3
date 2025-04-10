@@ -31,7 +31,7 @@ class StartAutoCreateSnapshotsReq:
     }
 
     def __init__(self, indices=None, keepday=None, period=None, prefix=None):
-        """StartAutoCreateSnapshotsReq
+        r"""StartAutoCreateSnapshotsReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class StartAutoCreateSnapshotsReq:
 
     @property
     def indices(self):
-        """Gets the indices of this StartAutoCreateSnapshotsReq.
+        r"""Gets the indices of this StartAutoCreateSnapshotsReq.
 
         指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。 0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。 默认值为\\*，表示恢复所有索引。
 
@@ -72,7 +72,7 @@ class StartAutoCreateSnapshotsReq:
 
     @indices.setter
     def indices(self, indices):
-        """Sets the indices of this StartAutoCreateSnapshotsReq.
+        r"""Sets the indices of this StartAutoCreateSnapshotsReq.
 
         指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。 0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。 默认值为\\*，表示恢复所有索引。
 
@@ -83,7 +83,7 @@ class StartAutoCreateSnapshotsReq:
 
     @property
     def keepday(self):
-        """Gets the keepday of this StartAutoCreateSnapshotsReq.
+        r"""Gets the keepday of this StartAutoCreateSnapshotsReq.
 
         设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
 
@@ -94,7 +94,7 @@ class StartAutoCreateSnapshotsReq:
 
     @keepday.setter
     def keepday(self, keepday):
-        """Sets the keepday of this StartAutoCreateSnapshotsReq.
+        r"""Sets the keepday of this StartAutoCreateSnapshotsReq.
 
         设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
 
@@ -105,7 +105,7 @@ class StartAutoCreateSnapshotsReq:
 
     @property
     def period(self):
-        """Gets the period of this StartAutoCreateSnapshotsReq.
+        r"""Gets the period of this StartAutoCreateSnapshotsReq.
 
         每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
 
@@ -116,7 +116,7 @@ class StartAutoCreateSnapshotsReq:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this StartAutoCreateSnapshotsReq.
+        r"""Sets the period of this StartAutoCreateSnapshotsReq.
 
         每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
 
@@ -127,7 +127,7 @@ class StartAutoCreateSnapshotsReq:
 
     @property
     def prefix(self):
-        """Gets the prefix of this StartAutoCreateSnapshotsReq.
+        r"""Gets the prefix of this StartAutoCreateSnapshotsReq.
 
         自动创建的快照名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
@@ -138,7 +138,7 @@ class StartAutoCreateSnapshotsReq:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this StartAutoCreateSnapshotsReq.
+        r"""Sets the prefix of this StartAutoCreateSnapshotsReq.
 
         自动创建的快照名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 

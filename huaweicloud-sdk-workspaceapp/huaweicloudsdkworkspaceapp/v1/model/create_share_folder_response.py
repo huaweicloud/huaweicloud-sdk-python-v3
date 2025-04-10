@@ -32,7 +32,7 @@ class CreateShareFolderResponse(SdkResponse):
     }
 
     def __init__(self, storage_claim_id=None, folder_path=None, delimiter=None, claim_mode=None):
-        """CreateShareFolderResponse
+        r"""CreateShareFolderResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @property
     def storage_claim_id(self):
-        """Gets the storage_claim_id of this CreateShareFolderResponse.
+        r"""Gets the storage_claim_id of this CreateShareFolderResponse.
 
         WKS存储目录声明ID。
 
@@ -76,7 +76,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @storage_claim_id.setter
     def storage_claim_id(self, storage_claim_id):
-        """Sets the storage_claim_id of this CreateShareFolderResponse.
+        r"""Sets the storage_claim_id of this CreateShareFolderResponse.
 
         WKS存储目录声明ID。
 
@@ -87,7 +87,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @property
     def folder_path(self):
-        """Gets the folder_path of this CreateShareFolderResponse.
+        r"""Gets the folder_path of this CreateShareFolderResponse.
 
         存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
@@ -98,7 +98,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @folder_path.setter
     def folder_path(self, folder_path):
-        """Sets the folder_path of this CreateShareFolderResponse.
+        r"""Sets the folder_path of this CreateShareFolderResponse.
 
         存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
@@ -109,7 +109,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this CreateShareFolderResponse.
+        r"""Gets the delimiter of this CreateShareFolderResponse.
 
         路径分隔符。
 
@@ -120,7 +120,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this CreateShareFolderResponse.
+        r"""Sets the delimiter of this CreateShareFolderResponse.
 
         路径分隔符。
 
@@ -131,7 +131,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @property
     def claim_mode(self):
-        """Gets the claim_mode of this CreateShareFolderResponse.
+        r"""Gets the claim_mode of this CreateShareFolderResponse.
 
         :return: The claim_mode of this CreateShareFolderResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
@@ -140,7 +140,7 @@ class CreateShareFolderResponse(SdkResponse):
 
     @claim_mode.setter
     def claim_mode(self, claim_mode):
-        """Sets the claim_mode of this CreateShareFolderResponse.
+        r"""Sets the claim_mode of this CreateShareFolderResponse.
 
         :param claim_mode: The claim_mode of this CreateShareFolderResponse.
         :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`

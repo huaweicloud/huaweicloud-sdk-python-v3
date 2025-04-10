@@ -27,7 +27,7 @@ class ShowStructTemplateRule:
     }
 
     def __init__(self, param=None, type=None):
-        """ShowStructTemplateRule
+        r"""ShowStructTemplateRule
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowStructTemplateRule:
 
     @property
     def param(self):
-        """Gets the param of this ShowStructTemplateRule.
+        r"""Gets the param of this ShowStructTemplateRule.
 
         测试
 
@@ -61,7 +61,7 @@ class ShowStructTemplateRule:
 
     @param.setter
     def param(self, param):
-        """Sets the param of this ShowStructTemplateRule.
+        r"""Sets the param of this ShowStructTemplateRule.
 
         测试
 
@@ -72,7 +72,7 @@ class ShowStructTemplateRule:
 
     @property
     def type(self):
-        """Gets the type of this ShowStructTemplateRule.
+        r"""Gets the type of this ShowStructTemplateRule.
 
         结构化类型
 
@@ -83,7 +83,7 @@ class ShowStructTemplateRule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowStructTemplateRule.
+        r"""Sets the type of this ShowStructTemplateRule.
 
         结构化类型
 

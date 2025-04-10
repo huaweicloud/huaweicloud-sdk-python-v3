@@ -24,7 +24,7 @@ class DeleteTtscVocabularyConfigsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTtscVocabularyConfigsResponse
+        r"""DeleteTtscVocabularyConfigsResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class CreatePipelineNewRequest:
     }
 
     def __init__(self, project_id=None, component_id=None, body=None):
-        """CreatePipelineNewRequest
+        r"""CreatePipelineNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePipelineNewRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePipelineNewRequest.
+        r"""Gets the project_id of this CreatePipelineNewRequest.
 
         项目ID
 
@@ -67,7 +67,7 @@ class CreatePipelineNewRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePipelineNewRequest.
+        r"""Sets the project_id of this CreatePipelineNewRequest.
 
         项目ID
 
@@ -78,7 +78,7 @@ class CreatePipelineNewRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this CreatePipelineNewRequest.
+        r"""Gets the component_id of this CreatePipelineNewRequest.
 
         组件ID
 
@@ -89,7 +89,7 @@ class CreatePipelineNewRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this CreatePipelineNewRequest.
+        r"""Sets the component_id of this CreatePipelineNewRequest.
 
         组件ID
 
@@ -100,7 +100,7 @@ class CreatePipelineNewRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePipelineNewRequest.
+        r"""Gets the body of this CreatePipelineNewRequest.
 
         :return: The body of this CreatePipelineNewRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineDTO`
@@ -109,7 +109,7 @@ class CreatePipelineNewRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePipelineNewRequest.
+        r"""Sets the body of this CreatePipelineNewRequest.
 
         :param body: The body of this CreatePipelineNewRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineDTO`

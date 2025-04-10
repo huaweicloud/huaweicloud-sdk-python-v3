@@ -30,7 +30,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
     }
 
     def __init__(self, name=None, selector=None, spec=None):
-        """ListGovernancePolicyByPolicyIdResponse
+        r"""ListGovernancePolicyByPolicyIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ListGovernancePolicyByPolicyIdResponse.
+        r"""Gets the name of this ListGovernancePolicyByPolicyIdResponse.
 
         治理策略名称
 
@@ -69,7 +69,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGovernancePolicyByPolicyIdResponse.
+        r"""Sets the name of this ListGovernancePolicyByPolicyIdResponse.
 
         治理策略名称
 
@@ -80,7 +80,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
 
     @property
     def selector(self):
-        """Gets the selector of this ListGovernancePolicyByPolicyIdResponse.
+        r"""Gets the selector of this ListGovernancePolicyByPolicyIdResponse.
 
         :return: The selector of this ListGovernancePolicyByPolicyIdResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -89,7 +89,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this ListGovernancePolicyByPolicyIdResponse.
+        r"""Sets the selector of this ListGovernancePolicyByPolicyIdResponse.
 
         :param selector: The selector of this ListGovernancePolicyByPolicyIdResponse.
         :type selector: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -98,7 +98,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ListGovernancePolicyByPolicyIdResponse.
+        r"""Gets the spec of this ListGovernancePolicyByPolicyIdResponse.
 
         治理策略定义内容
 
@@ -109,7 +109,7 @@ class ListGovernancePolicyByPolicyIdResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ListGovernancePolicyByPolicyIdResponse.
+        r"""Sets the spec of this ListGovernancePolicyByPolicyIdResponse.
 
         治理策略定义内容
 

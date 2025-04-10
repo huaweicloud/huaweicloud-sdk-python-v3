@@ -26,7 +26,7 @@ class BatchChangeDesktopNetworkResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchChangeDesktopNetworkResponse
+        r"""BatchChangeDesktopNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchChangeDesktopNetworkResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchChangeDesktopNetworkResponse.
+        r"""Gets the job_id of this BatchChangeDesktopNetworkResponse.
 
         任务id。
 
@@ -55,7 +55,7 @@ class BatchChangeDesktopNetworkResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchChangeDesktopNetworkResponse.
+        r"""Sets the job_id of this BatchChangeDesktopNetworkResponse.
 
         任务id。
 

@@ -27,7 +27,7 @@ class SubJobEntities:
     }
 
     def __init__(self, image_id=None, image_name=None):
-        """SubJobEntities
+        r"""SubJobEntities
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SubJobEntities:
 
     @property
     def image_id(self):
-        """Gets the image_id of this SubJobEntities.
+        r"""Gets the image_id of this SubJobEntities.
 
         镜像ID。
 
@@ -61,7 +61,7 @@ class SubJobEntities:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this SubJobEntities.
+        r"""Sets the image_id of this SubJobEntities.
 
         镜像ID。
 
@@ -72,7 +72,7 @@ class SubJobEntities:
 
     @property
     def image_name(self):
-        """Gets the image_name of this SubJobEntities.
+        r"""Gets the image_name of this SubJobEntities.
 
         镜像名称
 
@@ -83,7 +83,7 @@ class SubJobEntities:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this SubJobEntities.
+        r"""Sets the image_name of this SubJobEntities.
 
         镜像名称
 

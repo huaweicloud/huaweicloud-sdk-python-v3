@@ -27,7 +27,7 @@ class MysqlDatastoreInBackup:
     }
 
     def __init__(self, type=None, version=None):
-        """MysqlDatastoreInBackup
+        r"""MysqlDatastoreInBackup
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MysqlDatastoreInBackup:
 
     @property
     def type(self):
-        """Gets the type of this MysqlDatastoreInBackup.
+        r"""Gets the type of this MysqlDatastoreInBackup.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -59,7 +59,7 @@ class MysqlDatastoreInBackup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlDatastoreInBackup.
+        r"""Sets the type of this MysqlDatastoreInBackup.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -70,7 +70,7 @@ class MysqlDatastoreInBackup:
 
     @property
     def version(self):
-        """Gets the version of this MysqlDatastoreInBackup.
+        r"""Gets the version of this MysqlDatastoreInBackup.
 
         数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
@@ -81,7 +81,7 @@ class MysqlDatastoreInBackup:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MysqlDatastoreInBackup.
+        r"""Sets the version of this MysqlDatastoreInBackup.
 
         数据库版本。  数据库支持的版本信息，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
 

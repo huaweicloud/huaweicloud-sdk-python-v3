@@ -31,7 +31,7 @@ class Resource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Resource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Resource.
+        r"""Gets the resource_id of this Resource.
 
         :return: The resource_id of this Resource.
         :rtype: str
@@ -73,7 +73,7 @@ class Resource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Resource.
+        r"""Sets the resource_id of this Resource.
 
         :param resource_id: The resource_id of this Resource.
         :type resource_id: str
@@ -82,7 +82,7 @@ class Resource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this Resource.
+        r"""Gets the resource_detail of this Resource.
 
         :return: The resource_detail of this Resource.
         :rtype: object
@@ -91,7 +91,7 @@ class Resource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this Resource.
+        r"""Sets the resource_detail of this Resource.
 
         :param resource_detail: The resource_detail of this Resource.
         :type resource_detail: object
@@ -100,7 +100,7 @@ class Resource:
 
     @property
     def tags(self):
-        """Gets the tags of this Resource.
+        r"""Gets the tags of this Resource.
 
         :return: The tags of this Resource.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
@@ -109,7 +109,7 @@ class Resource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Resource.
+        r"""Sets the tags of this Resource.
 
         :param tags: The tags of this Resource.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
@@ -118,7 +118,7 @@ class Resource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this Resource.
+        r"""Gets the resource_name of this Resource.
 
         :return: The resource_name of this Resource.
         :rtype: str
@@ -127,7 +127,7 @@ class Resource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this Resource.
+        r"""Sets the resource_name of this Resource.
 
         :param resource_name: The resource_name of this Resource.
         :type resource_name: str

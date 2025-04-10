@@ -37,7 +37,7 @@ class ShowClusterRespClusterBrokers:
     }
 
     def __init__(self, host=None, port=None, broker_id=None, is_controller=None, version=None, register_time=None, is_health=None):
-        """ShowClusterRespClusterBrokers
+        r"""ShowClusterRespClusterBrokers
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def host(self):
-        """Gets the host of this ShowClusterRespClusterBrokers.
+        r"""Gets the host of this ShowClusterRespClusterBrokers.
 
         节点IP。
 
@@ -96,7 +96,7 @@ class ShowClusterRespClusterBrokers:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ShowClusterRespClusterBrokers.
+        r"""Sets the host of this ShowClusterRespClusterBrokers.
 
         节点IP。
 
@@ -107,7 +107,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def port(self):
-        """Gets the port of this ShowClusterRespClusterBrokers.
+        r"""Gets the port of this ShowClusterRespClusterBrokers.
 
         端口号。
 
@@ -118,7 +118,7 @@ class ShowClusterRespClusterBrokers:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowClusterRespClusterBrokers.
+        r"""Sets the port of this ShowClusterRespClusterBrokers.
 
         端口号。
 
@@ -129,7 +129,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def broker_id(self):
-        """Gets the broker_id of this ShowClusterRespClusterBrokers.
+        r"""Gets the broker_id of this ShowClusterRespClusterBrokers.
 
         节点ID。
 
@@ -140,7 +140,7 @@ class ShowClusterRespClusterBrokers:
 
     @broker_id.setter
     def broker_id(self, broker_id):
-        """Sets the broker_id of this ShowClusterRespClusterBrokers.
+        r"""Sets the broker_id of this ShowClusterRespClusterBrokers.
 
         节点ID。
 
@@ -151,7 +151,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def is_controller(self):
-        """Gets the is_controller of this ShowClusterRespClusterBrokers.
+        r"""Gets the is_controller of this ShowClusterRespClusterBrokers.
 
         是否为contoller节点。
 
@@ -162,7 +162,7 @@ class ShowClusterRespClusterBrokers:
 
     @is_controller.setter
     def is_controller(self, is_controller):
-        """Sets the is_controller of this ShowClusterRespClusterBrokers.
+        r"""Sets the is_controller of this ShowClusterRespClusterBrokers.
 
         是否为contoller节点。
 
@@ -173,7 +173,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def version(self):
-        """Gets the version of this ShowClusterRespClusterBrokers.
+        r"""Gets the version of this ShowClusterRespClusterBrokers.
 
         服务端版本。
 
@@ -184,7 +184,7 @@ class ShowClusterRespClusterBrokers:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowClusterRespClusterBrokers.
+        r"""Sets the version of this ShowClusterRespClusterBrokers.
 
         服务端版本。
 
@@ -195,7 +195,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def register_time(self):
-        """Gets the register_time of this ShowClusterRespClusterBrokers.
+        r"""Gets the register_time of this ShowClusterRespClusterBrokers.
 
         broker注册时间，为unix时间戳格式。
 
@@ -206,7 +206,7 @@ class ShowClusterRespClusterBrokers:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ShowClusterRespClusterBrokers.
+        r"""Sets the register_time of this ShowClusterRespClusterBrokers.
 
         broker注册时间，为unix时间戳格式。
 
@@ -217,7 +217,7 @@ class ShowClusterRespClusterBrokers:
 
     @property
     def is_health(self):
-        """Gets the is_health of this ShowClusterRespClusterBrokers.
+        r"""Gets the is_health of this ShowClusterRespClusterBrokers.
 
         Kafka实例节点的连通性是否正常。
 
@@ -228,7 +228,7 @@ class ShowClusterRespClusterBrokers:
 
     @is_health.setter
     def is_health(self, is_health):
-        """Sets the is_health of this ShowClusterRespClusterBrokers.
+        r"""Sets the is_health of this ShowClusterRespClusterBrokers.
 
         Kafka实例节点的连通性是否正常。
 

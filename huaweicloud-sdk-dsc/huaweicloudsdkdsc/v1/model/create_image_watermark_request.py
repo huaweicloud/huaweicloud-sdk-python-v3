@@ -25,7 +25,7 @@ class CreateImageWatermarkRequest:
     }
 
     def __init__(self, body=None):
-        """CreateImageWatermarkRequest
+        r"""CreateImageWatermarkRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateImageWatermarkRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateImageWatermarkRequest.
+        r"""Gets the body of this CreateImageWatermarkRequest.
 
         :return: The body of this CreateImageWatermarkRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequestBody`
@@ -52,7 +52,7 @@ class CreateImageWatermarkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateImageWatermarkRequest.
+        r"""Sets the body of this CreateImageWatermarkRequest.
 
         :param body: The body of this CreateImageWatermarkRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequestBody`

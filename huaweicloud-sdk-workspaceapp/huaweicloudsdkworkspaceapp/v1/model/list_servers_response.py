@@ -28,7 +28,7 @@ class ListServersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListServersResponse
+        r"""ListServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListServersResponse.
+        r"""Gets the count of this ListServersResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListServersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListServersResponse.
+        r"""Sets the count of this ListServersResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListServersResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListServersResponse.
+        r"""Gets the items of this ListServersResponse.
 
         服务器列表返回列表条目数量上限为分页的最大上限值。
 
@@ -84,7 +84,7 @@ class ListServersResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListServersResponse.
+        r"""Sets the items of this ListServersResponse.
 
         服务器列表返回列表条目数量上限为分页的最大上限值。
 

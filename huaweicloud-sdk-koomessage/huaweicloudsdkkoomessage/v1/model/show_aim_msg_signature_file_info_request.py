@@ -29,7 +29,7 @@ class ShowAimMsgSignatureFileInfoRequest:
     }
 
     def __init__(self, file_id=None, offset=None, limit=None):
-        """ShowAimMsgSignatureFileInfoRequest
+        r"""ShowAimMsgSignatureFileInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowAimMsgSignatureFileInfoRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowAimMsgSignatureFileInfoRequest.
+        r"""Gets the file_id of this ShowAimMsgSignatureFileInfoRequest.
 
         营业执照/授权委托书文件ID。
 
@@ -67,7 +67,7 @@ class ShowAimMsgSignatureFileInfoRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowAimMsgSignatureFileInfoRequest.
+        r"""Sets the file_id of this ShowAimMsgSignatureFileInfoRequest.
 
         营业执照/授权委托书文件ID。
 
@@ -78,7 +78,7 @@ class ShowAimMsgSignatureFileInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAimMsgSignatureFileInfoRequest.
+        r"""Gets the offset of this ShowAimMsgSignatureFileInfoRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -89,7 +89,7 @@ class ShowAimMsgSignatureFileInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAimMsgSignatureFileInfoRequest.
+        r"""Sets the offset of this ShowAimMsgSignatureFileInfoRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -100,7 +100,7 @@ class ShowAimMsgSignatureFileInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAimMsgSignatureFileInfoRequest.
+        r"""Gets the limit of this ShowAimMsgSignatureFileInfoRequest.
 
         每页显示的条目数量。
 
@@ -111,7 +111,7 @@ class ShowAimMsgSignatureFileInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAimMsgSignatureFileInfoRequest.
+        r"""Sets the limit of this ShowAimMsgSignatureFileInfoRequest.
 
         每页显示的条目数量。
 

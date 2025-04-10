@@ -27,7 +27,7 @@ class Dependent:
     }
 
     def __init__(self, name=None, dependent_services=None):
-        """Dependent
+        r"""Dependent
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Dependent:
 
     @property
     def name(self):
-        """Gets the name of this Dependent.
+        r"""Gets the name of this Dependent.
 
         部署方式。
 
@@ -61,7 +61,7 @@ class Dependent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Dependent.
+        r"""Sets the name of this Dependent.
 
         部署方式。
 
@@ -72,7 +72,7 @@ class Dependent:
 
     @property
     def dependent_services(self):
-        """Gets the dependent_services of this Dependent.
+        r"""Gets the dependent_services of this Dependent.
 
         依赖云资源信息
 
@@ -83,7 +83,7 @@ class Dependent:
 
     @dependent_services.setter
     def dependent_services(self, dependent_services):
-        """Sets the dependent_services of this Dependent.
+        r"""Sets the dependent_services of this Dependent.
 
         依赖云资源信息
 

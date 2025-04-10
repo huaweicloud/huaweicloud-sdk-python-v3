@@ -26,7 +26,7 @@ class CreateAgencyAccessResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateAgencyAccessResponse
+        r"""CreateAgencyAccessResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAgencyAccessResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateAgencyAccessResponse.
+        r"""Gets the body of this CreateAgencyAccessResponse.
 
         :return: The body of this CreateAgencyAccessResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.LTSAccessConfigInfoRespon200`]
@@ -53,7 +53,7 @@ class CreateAgencyAccessResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAgencyAccessResponse.
+        r"""Sets the body of this CreateAgencyAccessResponse.
 
         :param body: The body of this CreateAgencyAccessResponse.
         :type body: list[:class:`huaweicloudsdklts.v2.LTSAccessConfigInfoRespon200`]

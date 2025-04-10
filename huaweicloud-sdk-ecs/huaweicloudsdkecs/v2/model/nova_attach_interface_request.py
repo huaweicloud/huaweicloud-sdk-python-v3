@@ -27,7 +27,7 @@ class NovaAttachInterfaceRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """NovaAttachInterfaceRequest
+        r"""NovaAttachInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaAttachInterfaceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaAttachInterfaceRequest.
+        r"""Gets the server_id of this NovaAttachInterfaceRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class NovaAttachInterfaceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaAttachInterfaceRequest.
+        r"""Sets the server_id of this NovaAttachInterfaceRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class NovaAttachInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this NovaAttachInterfaceRequest.
+        r"""Gets the body of this NovaAttachInterfaceRequest.
 
         :return: The body of this NovaAttachInterfaceRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAttachInterfaceRequestBody`
@@ -80,7 +80,7 @@ class NovaAttachInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NovaAttachInterfaceRequest.
+        r"""Sets the body of this NovaAttachInterfaceRequest.
 
         :param body: The body of this NovaAttachInterfaceRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaAttachInterfaceRequestBody`

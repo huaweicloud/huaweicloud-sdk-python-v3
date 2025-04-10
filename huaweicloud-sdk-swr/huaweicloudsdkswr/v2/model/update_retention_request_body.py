@@ -27,7 +27,7 @@ class UpdateRetentionRequestBody:
     }
 
     def __init__(self, algorithm=None, rules=None):
-        """UpdateRetentionRequestBody
+        r"""UpdateRetentionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateRetentionRequestBody:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this UpdateRetentionRequestBody.
+        r"""Gets the algorithm of this UpdateRetentionRequestBody.
 
         老化规则匹配策略，固定为\"or\" 
 
@@ -59,7 +59,7 @@ class UpdateRetentionRequestBody:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this UpdateRetentionRequestBody.
+        r"""Sets the algorithm of this UpdateRetentionRequestBody.
 
         老化规则匹配策略，固定为\"or\" 
 
@@ -70,7 +70,7 @@ class UpdateRetentionRequestBody:
 
     @property
     def rules(self):
-        """Gets the rules of this UpdateRetentionRequestBody.
+        r"""Gets the rules of this UpdateRetentionRequestBody.
 
         镜像老化规则
 
@@ -81,7 +81,7 @@ class UpdateRetentionRequestBody:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this UpdateRetentionRequestBody.
+        r"""Sets the rules of this UpdateRetentionRequestBody.
 
         镜像老化规则
 

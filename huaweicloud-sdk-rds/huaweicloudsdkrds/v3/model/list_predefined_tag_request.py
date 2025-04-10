@@ -25,7 +25,7 @@ class ListPredefinedTagRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListPredefinedTagRequest
+        r"""ListPredefinedTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPredefinedTagRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPredefinedTagRequest.
+        r"""Gets the x_language of this ListPredefinedTagRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ListPredefinedTagRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPredefinedTagRequest.
+        r"""Sets the x_language of this ListPredefinedTagRequest.
 
         语言
 

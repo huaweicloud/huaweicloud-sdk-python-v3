@@ -27,7 +27,7 @@ class DeleteEnvironmentV2Request:
     }
 
     def __init__(self, instance_id=None, env_id=None):
-        """DeleteEnvironmentV2Request
+        r"""DeleteEnvironmentV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEnvironmentV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteEnvironmentV2Request.
+        r"""Gets the instance_id of this DeleteEnvironmentV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DeleteEnvironmentV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteEnvironmentV2Request.
+        r"""Sets the instance_id of this DeleteEnvironmentV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DeleteEnvironmentV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this DeleteEnvironmentV2Request.
+        r"""Gets the env_id of this DeleteEnvironmentV2Request.
 
         环境的ID
 
@@ -81,7 +81,7 @@ class DeleteEnvironmentV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this DeleteEnvironmentV2Request.
+        r"""Sets the env_id of this DeleteEnvironmentV2Request.
 
         环境的ID
 

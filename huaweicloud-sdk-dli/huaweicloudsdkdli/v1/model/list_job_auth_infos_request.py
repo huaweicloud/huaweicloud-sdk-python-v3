@@ -29,7 +29,7 @@ class ListJobAuthInfosRequest:
     }
 
     def __init__(self, auth_info_name=None, offset=None, limit=None):
-        """ListJobAuthInfosRequest
+        r"""ListJobAuthInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListJobAuthInfosRequest:
 
     @property
     def auth_info_name(self):
-        """Gets the auth_info_name of this ListJobAuthInfosRequest.
+        r"""Gets the auth_info_name of this ListJobAuthInfosRequest.
 
         认证信息名称
 
@@ -68,7 +68,7 @@ class ListJobAuthInfosRequest:
 
     @auth_info_name.setter
     def auth_info_name(self, auth_info_name):
-        """Sets the auth_info_name of this ListJobAuthInfosRequest.
+        r"""Sets the auth_info_name of this ListJobAuthInfosRequest.
 
         认证信息名称
 
@@ -79,7 +79,7 @@ class ListJobAuthInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobAuthInfosRequest.
+        r"""Gets the offset of this ListJobAuthInfosRequest.
 
         默认为0
 
@@ -90,7 +90,7 @@ class ListJobAuthInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobAuthInfosRequest.
+        r"""Sets the offset of this ListJobAuthInfosRequest.
 
         默认为0
 
@@ -101,7 +101,7 @@ class ListJobAuthInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobAuthInfosRequest.
+        r"""Gets the limit of this ListJobAuthInfosRequest.
 
         默认为100
 
@@ -112,7 +112,7 @@ class ListJobAuthInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobAuthInfosRequest.
+        r"""Sets the limit of this ListJobAuthInfosRequest.
 
         默认为100
 

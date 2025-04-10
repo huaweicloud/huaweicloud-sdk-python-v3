@@ -27,7 +27,7 @@ class ListTemplatesTwoRequest:
     }
 
     def __init__(self, repository_uuid=None, body=None):
-        """ListTemplatesTwoRequest
+        r"""ListTemplatesTwoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTemplatesTwoRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ListTemplatesTwoRequest.
+        r"""Gets the repository_uuid of this ListTemplatesTwoRequest.
 
         仓库id
 
@@ -60,7 +60,7 @@ class ListTemplatesTwoRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ListTemplatesTwoRequest.
+        r"""Sets the repository_uuid of this ListTemplatesTwoRequest.
 
         仓库id
 
@@ -71,7 +71,7 @@ class ListTemplatesTwoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTemplatesTwoRequest.
+        r"""Gets the body of this ListTemplatesTwoRequest.
 
         :return: The body of this ListTemplatesTwoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`
@@ -80,7 +80,7 @@ class ListTemplatesTwoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTemplatesTwoRequest.
+        r"""Sets the body of this ListTemplatesTwoRequest.
 
         :param body: The body of this ListTemplatesTwoRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`

@@ -41,7 +41,7 @@ class DocQueryAnswerDetail:
     }
 
     def __init__(self, answer=None, doc_id=None, end_index=None, paragraph_score=None, paragraph_text=None, phrase_score=None, start_index=None, total_score=None, paragraph_number=None):
-        """DocQueryAnswerDetail
+        r"""DocQueryAnswerDetail
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class DocQueryAnswerDetail:
 
     @property
     def answer(self):
-        """Gets the answer of this DocQueryAnswerDetail.
+        r"""Gets the answer of this DocQueryAnswerDetail.
 
         答案。
 
@@ -101,7 +101,7 @@ class DocQueryAnswerDetail:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this DocQueryAnswerDetail.
+        r"""Sets the answer of this DocQueryAnswerDetail.
 
         答案。
 
@@ -112,7 +112,7 @@ class DocQueryAnswerDetail:
 
     @property
     def doc_id(self):
-        """Gets the doc_id of this DocQueryAnswerDetail.
+        r"""Gets the doc_id of this DocQueryAnswerDetail.
 
         文档ID。
 
@@ -123,7 +123,7 @@ class DocQueryAnswerDetail:
 
     @doc_id.setter
     def doc_id(self, doc_id):
-        """Sets the doc_id of this DocQueryAnswerDetail.
+        r"""Sets the doc_id of this DocQueryAnswerDetail.
 
         文档ID。
 
@@ -134,7 +134,7 @@ class DocQueryAnswerDetail:
 
     @property
     def end_index(self):
-        """Gets the end_index of this DocQueryAnswerDetail.
+        r"""Gets the end_index of this DocQueryAnswerDetail.
 
         答案结束下标。
 
@@ -145,7 +145,7 @@ class DocQueryAnswerDetail:
 
     @end_index.setter
     def end_index(self, end_index):
-        """Sets the end_index of this DocQueryAnswerDetail.
+        r"""Sets the end_index of this DocQueryAnswerDetail.
 
         答案结束下标。
 
@@ -156,7 +156,7 @@ class DocQueryAnswerDetail:
 
     @property
     def paragraph_score(self):
-        """Gets the paragraph_score of this DocQueryAnswerDetail.
+        r"""Gets the paragraph_score of this DocQueryAnswerDetail.
 
         段落评分。
 
@@ -167,7 +167,7 @@ class DocQueryAnswerDetail:
 
     @paragraph_score.setter
     def paragraph_score(self, paragraph_score):
-        """Sets the paragraph_score of this DocQueryAnswerDetail.
+        r"""Sets the paragraph_score of this DocQueryAnswerDetail.
 
         段落评分。
 
@@ -178,7 +178,7 @@ class DocQueryAnswerDetail:
 
     @property
     def paragraph_text(self):
-        """Gets the paragraph_text of this DocQueryAnswerDetail.
+        r"""Gets the paragraph_text of this DocQueryAnswerDetail.
 
         段落文字。
 
@@ -189,7 +189,7 @@ class DocQueryAnswerDetail:
 
     @paragraph_text.setter
     def paragraph_text(self, paragraph_text):
-        """Sets the paragraph_text of this DocQueryAnswerDetail.
+        r"""Sets the paragraph_text of this DocQueryAnswerDetail.
 
         段落文字。
 
@@ -200,7 +200,7 @@ class DocQueryAnswerDetail:
 
     @property
     def phrase_score(self):
-        """Gets the phrase_score of this DocQueryAnswerDetail.
+        r"""Gets the phrase_score of this DocQueryAnswerDetail.
 
         文档问答阅读理解评分。
 
@@ -211,7 +211,7 @@ class DocQueryAnswerDetail:
 
     @phrase_score.setter
     def phrase_score(self, phrase_score):
-        """Sets the phrase_score of this DocQueryAnswerDetail.
+        r"""Sets the phrase_score of this DocQueryAnswerDetail.
 
         文档问答阅读理解评分。
 
@@ -222,7 +222,7 @@ class DocQueryAnswerDetail:
 
     @property
     def start_index(self):
-        """Gets the start_index of this DocQueryAnswerDetail.
+        r"""Gets the start_index of this DocQueryAnswerDetail.
 
         答案开始下标。
 
@@ -233,7 +233,7 @@ class DocQueryAnswerDetail:
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this DocQueryAnswerDetail.
+        r"""Sets the start_index of this DocQueryAnswerDetail.
 
         答案开始下标。
 
@@ -244,7 +244,7 @@ class DocQueryAnswerDetail:
 
     @property
     def total_score(self):
-        """Gets the total_score of this DocQueryAnswerDetail.
+        r"""Gets the total_score of this DocQueryAnswerDetail.
 
         文档问答总评分。
 
@@ -255,7 +255,7 @@ class DocQueryAnswerDetail:
 
     @total_score.setter
     def total_score(self, total_score):
-        """Sets the total_score of this DocQueryAnswerDetail.
+        r"""Sets the total_score of this DocQueryAnswerDetail.
 
         文档问答总评分。
 
@@ -266,7 +266,7 @@ class DocQueryAnswerDetail:
 
     @property
     def paragraph_number(self):
-        """Gets the paragraph_number of this DocQueryAnswerDetail.
+        r"""Gets the paragraph_number of this DocQueryAnswerDetail.
 
         段落在文档中的编号。
 
@@ -277,7 +277,7 @@ class DocQueryAnswerDetail:
 
     @paragraph_number.setter
     def paragraph_number(self, paragraph_number):
-        """Sets the paragraph_number of this DocQueryAnswerDetail.
+        r"""Sets the paragraph_number of this DocQueryAnswerDetail.
 
         段落在文档中的编号。
 

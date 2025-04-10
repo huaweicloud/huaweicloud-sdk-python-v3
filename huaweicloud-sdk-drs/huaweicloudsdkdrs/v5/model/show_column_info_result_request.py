@@ -33,7 +33,7 @@ class ShowColumnInfoResultRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, query_id=None, offset=None, limit=None):
-        """ShowColumnInfoResultRequest
+        r"""ShowColumnInfoResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowColumnInfoResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowColumnInfoResultRequest.
+        r"""Gets the job_id of this ShowColumnInfoResultRequest.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class ShowColumnInfoResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowColumnInfoResultRequest.
+        r"""Sets the job_id of this ShowColumnInfoResultRequest.
 
         任务ID。
 
@@ -91,7 +91,7 @@ class ShowColumnInfoResultRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowColumnInfoResultRequest.
+        r"""Gets the x_language of this ShowColumnInfoResultRequest.
 
         请求语言类型。
 
@@ -102,7 +102,7 @@ class ShowColumnInfoResultRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowColumnInfoResultRequest.
+        r"""Sets the x_language of this ShowColumnInfoResultRequest.
 
         请求语言类型。
 
@@ -113,7 +113,7 @@ class ShowColumnInfoResultRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowColumnInfoResultRequest.
+        r"""Gets the query_id of this ShowColumnInfoResultRequest.
 
         指定数据库表的列信息采集的ID，提交采集指定数据库表的列信息接口返回的ID。
 
@@ -124,7 +124,7 @@ class ShowColumnInfoResultRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowColumnInfoResultRequest.
+        r"""Sets the query_id of this ShowColumnInfoResultRequest.
 
         指定数据库表的列信息采集的ID，提交采集指定数据库表的列信息接口返回的ID。
 
@@ -135,7 +135,7 @@ class ShowColumnInfoResultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowColumnInfoResultRequest.
+        r"""Gets the offset of this ShowColumnInfoResultRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -146,7 +146,7 @@ class ShowColumnInfoResultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowColumnInfoResultRequest.
+        r"""Sets the offset of this ShowColumnInfoResultRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -157,7 +157,7 @@ class ShowColumnInfoResultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowColumnInfoResultRequest.
+        r"""Gets the limit of this ShowColumnInfoResultRequest.
 
         查询返回记录的数量限制。
 
@@ -168,7 +168,7 @@ class ShowColumnInfoResultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowColumnInfoResultRequest.
+        r"""Sets the limit of this ShowColumnInfoResultRequest.
 
         查询返回记录的数量限制。
 

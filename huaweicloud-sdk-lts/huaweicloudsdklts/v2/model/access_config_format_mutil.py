@@ -27,7 +27,7 @@ class AccessConfigFormatMutil:
     }
 
     def __init__(self, mode=None, value=None):
-        """AccessConfigFormatMutil
+        r"""AccessConfigFormatMutil
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AccessConfigFormatMutil:
 
     @property
     def mode(self):
-        """Gets the mode of this AccessConfigFormatMutil.
+        r"""Gets the mode of this AccessConfigFormatMutil.
 
         单行日志。time：日志时间，regular：正则模式。
 
@@ -59,7 +59,7 @@ class AccessConfigFormatMutil:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AccessConfigFormatMutil.
+        r"""Sets the mode of this AccessConfigFormatMutil.
 
         单行日志。time：日志时间，regular：正则模式。
 
@@ -70,7 +70,7 @@ class AccessConfigFormatMutil:
 
     @property
     def value(self):
-        """Gets the value of this AccessConfigFormatMutil.
+        r"""Gets the value of this AccessConfigFormatMutil.
 
         日志时间。 当mode为\"regular\"，则输入正则表达式 当mode为\"time\"，则时间通配符：用日志打印时间来标识一条日志数据，通过时间通配符来匹配日志，每条日志的行首显示日志的打印时间；如果日志中的时间格式为：2019-01-01 23:59:59，时间通配符应该填写为：YYYY-MM-DD hh:mm:ss；如果日志中的时间格式为：19-1-1 23:59:59，时间通配符应该填写为：YY-M-D hh:mm:ss
 
@@ -81,7 +81,7 @@ class AccessConfigFormatMutil:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AccessConfigFormatMutil.
+        r"""Sets the value of this AccessConfigFormatMutil.
 
         日志时间。 当mode为\"regular\"，则输入正则表达式 当mode为\"time\"，则时间通配符：用日志打印时间来标识一条日志数据，通过时间通配符来匹配日志，每条日志的行首显示日志的打印时间；如果日志中的时间格式为：2019-01-01 23:59:59，时间通配符应该填写为：YYYY-MM-DD hh:mm:ss；如果日志中的时间格式为：19-1-1 23:59:59，时间通配符应该填写为：YY-M-D hh:mm:ss
 

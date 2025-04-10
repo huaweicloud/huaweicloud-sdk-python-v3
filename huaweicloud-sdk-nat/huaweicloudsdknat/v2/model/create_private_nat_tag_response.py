@@ -24,7 +24,7 @@ class CreatePrivateNatTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreatePrivateNatTagResponse
+        r"""CreatePrivateNatTagResponse
 
         The model defined in huaweicloud sdk
 

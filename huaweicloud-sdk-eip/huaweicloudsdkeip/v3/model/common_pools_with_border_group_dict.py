@@ -27,7 +27,7 @@ class CommonPoolsWithBorderGroupDict:
     }
 
     def __init__(self, publicip_pools=None, public_border_group=None):
-        """CommonPoolsWithBorderGroupDict
+        r"""CommonPoolsWithBorderGroupDict
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CommonPoolsWithBorderGroupDict:
 
     @property
     def publicip_pools(self):
-        """Gets the publicip_pools of this CommonPoolsWithBorderGroupDict.
+        r"""Gets the publicip_pools of this CommonPoolsWithBorderGroupDict.
 
         同组的公共池列表
 
@@ -61,7 +61,7 @@ class CommonPoolsWithBorderGroupDict:
 
     @publicip_pools.setter
     def publicip_pools(self, publicip_pools):
-        """Sets the publicip_pools of this CommonPoolsWithBorderGroupDict.
+        r"""Sets the publicip_pools of this CommonPoolsWithBorderGroupDict.
 
         同组的公共池列表
 
@@ -72,7 +72,7 @@ class CommonPoolsWithBorderGroupDict:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this CommonPoolsWithBorderGroupDict.
+        r"""Gets the public_border_group of this CommonPoolsWithBorderGroupDict.
 
         分组：中心还是边缘
 
@@ -83,7 +83,7 @@ class CommonPoolsWithBorderGroupDict:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this CommonPoolsWithBorderGroupDict.
+        r"""Sets the public_border_group of this CommonPoolsWithBorderGroupDict.
 
         分组：中心还是边缘
 

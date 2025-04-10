@@ -31,7 +31,7 @@ class QosQualityData:
     }
 
     def __init__(self, uid=None, peerid=None, mid=None, data=None):
-        """QosQualityData
+        r"""QosQualityData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QosQualityData:
 
     @property
     def uid(self):
-        """Gets the uid of this QosQualityData.
+        r"""Gets the uid of this QosQualityData.
 
         用户id
 
@@ -75,7 +75,7 @@ class QosQualityData:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this QosQualityData.
+        r"""Sets the uid of this QosQualityData.
 
         用户id
 
@@ -86,7 +86,7 @@ class QosQualityData:
 
     @property
     def peerid(self):
-        """Gets the peerid of this QosQualityData.
+        r"""Gets the peerid of this QosQualityData.
 
         对端的用户ID，为0时表示本端上行数据
 
@@ -97,7 +97,7 @@ class QosQualityData:
 
     @peerid.setter
     def peerid(self, peerid):
-        """Sets the peerid of this QosQualityData.
+        r"""Sets the peerid of this QosQualityData.
 
         对端的用户ID，为0时表示本端上行数据
 
@@ -108,7 +108,7 @@ class QosQualityData:
 
     @property
     def mid(self):
-        """Gets the mid of this QosQualityData.
+        r"""Gets the mid of this QosQualityData.
 
         指标ID
 
@@ -119,7 +119,7 @@ class QosQualityData:
 
     @mid.setter
     def mid(self, mid):
-        """Sets the mid of this QosQualityData.
+        r"""Sets the mid of this QosQualityData.
 
         指标ID
 
@@ -130,7 +130,7 @@ class QosQualityData:
 
     @property
     def data(self):
-        """Gets the data of this QosQualityData.
+        r"""Gets the data of this QosQualityData.
 
         时间戳及相应时间的指标数值列表
 
@@ -141,7 +141,7 @@ class QosQualityData:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this QosQualityData.
+        r"""Sets the data of this QosQualityData.
 
         时间戳及相应时间的指标数值列表
 

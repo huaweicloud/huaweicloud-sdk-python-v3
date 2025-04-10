@@ -25,7 +25,7 @@ class DeleteJobRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteJobRequest
+        r"""DeleteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteJobRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteJobRequest.
+        r"""Gets the id of this DeleteJobRequest.
 
         :return: The id of this DeleteJobRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class DeleteJobRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteJobRequest.
+        r"""Sets the id of this DeleteJobRequest.
 
         :param id: The id of this DeleteJobRequest.
         :type id: str

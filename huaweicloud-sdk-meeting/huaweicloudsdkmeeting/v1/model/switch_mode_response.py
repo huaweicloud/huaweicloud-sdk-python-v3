@@ -24,7 +24,7 @@ class SwitchModeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchModeResponse
+        r"""SwitchModeResponse
 
         The model defined in huaweicloud sdk
 

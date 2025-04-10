@@ -25,7 +25,7 @@ class CreateRecordCallbackConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRecordCallbackConfigRequest
+        r"""CreateRecordCallbackConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRecordCallbackConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordCallbackConfigRequest.
+        r"""Gets the body of this CreateRecordCallbackConfigRequest.
 
         :return: The body of this CreateRecordCallbackConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`
@@ -52,7 +52,7 @@ class CreateRecordCallbackConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordCallbackConfigRequest.
+        r"""Sets the body of this CreateRecordCallbackConfigRequest.
 
         :param body: The body of this CreateRecordCallbackConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`

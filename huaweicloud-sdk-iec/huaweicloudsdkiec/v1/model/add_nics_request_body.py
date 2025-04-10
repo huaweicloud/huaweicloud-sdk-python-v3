@@ -35,7 +35,7 @@ class AddNicsRequestBody:
     }
 
     def __init__(self, vpc_id=None, security_groups=None, subnet_id=None, nic_num=None, ipv6_enable=None, ipv6_bandwidth=None):
-        """AddNicsRequestBody
+        r"""AddNicsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AddNicsRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AddNicsRequestBody.
+        r"""Gets the vpc_id of this AddNicsRequestBody.
 
         虚拟私有云ID。
 
@@ -86,7 +86,7 @@ class AddNicsRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AddNicsRequestBody.
+        r"""Sets the vpc_id of this AddNicsRequestBody.
 
         虚拟私有云ID。
 
@@ -97,7 +97,7 @@ class AddNicsRequestBody:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this AddNicsRequestBody.
+        r"""Gets the security_groups of this AddNicsRequestBody.
 
         安全组ID列表。
 
@@ -108,7 +108,7 @@ class AddNicsRequestBody:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this AddNicsRequestBody.
+        r"""Sets the security_groups of this AddNicsRequestBody.
 
         安全组ID列表。
 
@@ -119,7 +119,7 @@ class AddNicsRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AddNicsRequestBody.
+        r"""Gets the subnet_id of this AddNicsRequestBody.
 
         子网ID。  当subnet_id提供时，则在该子网下创建nic_num个网卡； 不输入，则自动分配subnet。 当添加网卡的VPC为手动规划VPC时，subnet_id必填。
 
@@ -130,7 +130,7 @@ class AddNicsRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AddNicsRequestBody.
+        r"""Sets the subnet_id of this AddNicsRequestBody.
 
         子网ID。  当subnet_id提供时，则在该子网下创建nic_num个网卡； 不输入，则自动分配subnet。 当添加网卡的VPC为手动规划VPC时，subnet_id必填。
 
@@ -141,7 +141,7 @@ class AddNicsRequestBody:
 
     @property
     def nic_num(self):
-        """Gets the nic_num of this AddNicsRequestBody.
+        r"""Gets the nic_num of this AddNicsRequestBody.
 
         待添加网卡数量。
 
@@ -152,7 +152,7 @@ class AddNicsRequestBody:
 
     @nic_num.setter
     def nic_num(self, nic_num):
-        """Sets the nic_num of this AddNicsRequestBody.
+        r"""Sets the nic_num of this AddNicsRequestBody.
 
         待添加网卡数量。
 
@@ -163,7 +163,7 @@ class AddNicsRequestBody:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this AddNicsRequestBody.
+        r"""Gets the ipv6_enable of this AddNicsRequestBody.
 
         是否支持IPv6  取值为true时，标识此网卡支持IPv6。
 
@@ -174,7 +174,7 @@ class AddNicsRequestBody:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this AddNicsRequestBody.
+        r"""Sets the ipv6_enable of this AddNicsRequestBody.
 
         是否支持IPv6  取值为true时，标识此网卡支持IPv6。
 
@@ -185,7 +185,7 @@ class AddNicsRequestBody:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this AddNicsRequestBody.
+        r"""Gets the ipv6_bandwidth of this AddNicsRequestBody.
 
         :return: The ipv6_bandwidth of this AddNicsRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.Ipv6BandwidthForNic`
@@ -194,7 +194,7 @@ class AddNicsRequestBody:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this AddNicsRequestBody.
+        r"""Sets the ipv6_bandwidth of this AddNicsRequestBody.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this AddNicsRequestBody.
         :type ipv6_bandwidth: :class:`huaweicloudsdkiec.v1.Ipv6BandwidthForNic`

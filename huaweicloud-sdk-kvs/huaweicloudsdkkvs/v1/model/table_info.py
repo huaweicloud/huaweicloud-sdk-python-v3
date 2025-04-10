@@ -25,7 +25,7 @@ class TableInfo:
     }
 
     def __init__(self, table_status=None):
-        """TableInfo
+        r"""TableInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TableInfo:
 
     @property
     def table_status(self):
-        """Gets the table_status of this TableInfo.
+        r"""Gets the table_status of this TableInfo.
 
         表状态。 - \"creating\" - \"active\" - \"deleting\"
 
@@ -54,7 +54,7 @@ class TableInfo:
 
     @table_status.setter
     def table_status(self, table_status):
-        """Sets the table_status of this TableInfo.
+        r"""Sets the table_status of this TableInfo.
 
         表状态。 - \"creating\" - \"active\" - \"deleting\"
 

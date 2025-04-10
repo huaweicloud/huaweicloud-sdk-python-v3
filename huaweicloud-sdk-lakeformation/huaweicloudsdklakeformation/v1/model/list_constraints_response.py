@@ -38,7 +38,7 @@ class ListConstraintsResponse(SdkResponse):
     }
 
     def __init__(self, constraint_type=None, foreign_keys=None, primary_keys=None, not_null_constraints=None, check_constraints=None, unique_constraints=None, default_constraints=None):
-        """ListConstraintsResponse
+        r"""ListConstraintsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def constraint_type(self):
-        """Gets the constraint_type of this ListConstraintsResponse.
+        r"""Gets the constraint_type of this ListConstraintsResponse.
 
         限制类型
 
@@ -97,7 +97,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @constraint_type.setter
     def constraint_type(self, constraint_type):
-        """Sets the constraint_type of this ListConstraintsResponse.
+        r"""Sets the constraint_type of this ListConstraintsResponse.
 
         限制类型
 
@@ -108,7 +108,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def foreign_keys(self):
-        """Gets the foreign_keys of this ListConstraintsResponse.
+        r"""Gets the foreign_keys of this ListConstraintsResponse.
 
         外键列表
 
@@ -119,7 +119,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @foreign_keys.setter
     def foreign_keys(self, foreign_keys):
-        """Sets the foreign_keys of this ListConstraintsResponse.
+        r"""Sets the foreign_keys of this ListConstraintsResponse.
 
         外键列表
 
@@ -130,7 +130,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def primary_keys(self):
-        """Gets the primary_keys of this ListConstraintsResponse.
+        r"""Gets the primary_keys of this ListConstraintsResponse.
 
         主键列表
 
@@ -141,7 +141,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @primary_keys.setter
     def primary_keys(self, primary_keys):
-        """Sets the primary_keys of this ListConstraintsResponse.
+        r"""Sets the primary_keys of this ListConstraintsResponse.
 
         主键列表
 
@@ -152,7 +152,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def not_null_constraints(self):
-        """Gets the not_null_constraints of this ListConstraintsResponse.
+        r"""Gets the not_null_constraints of this ListConstraintsResponse.
 
         非空限制列表
 
@@ -163,7 +163,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @not_null_constraints.setter
     def not_null_constraints(self, not_null_constraints):
-        """Sets the not_null_constraints of this ListConstraintsResponse.
+        r"""Sets the not_null_constraints of this ListConstraintsResponse.
 
         非空限制列表
 
@@ -174,7 +174,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def check_constraints(self):
-        """Gets the check_constraints of this ListConstraintsResponse.
+        r"""Gets the check_constraints of this ListConstraintsResponse.
 
         检查限制列表
 
@@ -185,7 +185,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @check_constraints.setter
     def check_constraints(self, check_constraints):
-        """Sets the check_constraints of this ListConstraintsResponse.
+        r"""Sets the check_constraints of this ListConstraintsResponse.
 
         检查限制列表
 
@@ -196,7 +196,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def unique_constraints(self):
-        """Gets the unique_constraints of this ListConstraintsResponse.
+        r"""Gets the unique_constraints of this ListConstraintsResponse.
 
         唯一值限制列表
 
@@ -207,7 +207,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @unique_constraints.setter
     def unique_constraints(self, unique_constraints):
-        """Sets the unique_constraints of this ListConstraintsResponse.
+        r"""Sets the unique_constraints of this ListConstraintsResponse.
 
         唯一值限制列表
 
@@ -218,7 +218,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @property
     def default_constraints(self):
-        """Gets the default_constraints of this ListConstraintsResponse.
+        r"""Gets the default_constraints of this ListConstraintsResponse.
 
         默认限制列表
 
@@ -229,7 +229,7 @@ class ListConstraintsResponse(SdkResponse):
 
     @default_constraints.setter
     def default_constraints(self, default_constraints):
-        """Sets the default_constraints of this ListConstraintsResponse.
+        r"""Sets the default_constraints of this ListConstraintsResponse.
 
         默认限制列表
 

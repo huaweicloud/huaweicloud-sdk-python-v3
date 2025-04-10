@@ -27,7 +27,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
     }
 
     def __init__(self, name=None, parent_name=None):
-        """BatchCreateApplicationViewRequestBodyComponentList
+        r"""BatchCreateApplicationViewRequestBodyComponentList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateApplicationViewRequestBodyComponentList.
+        r"""Gets the name of this BatchCreateApplicationViewRequestBodyComponentList.
 
         名称
 
@@ -61,7 +61,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateApplicationViewRequestBodyComponentList.
+        r"""Sets the name of this BatchCreateApplicationViewRequestBodyComponentList.
 
         名称
 
@@ -72,7 +72,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
 
     @property
     def parent_name(self):
-        """Gets the parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
+        r"""Gets the parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
 
         父节点code
 
@@ -83,7 +83,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
 
     @parent_name.setter
     def parent_name(self, parent_name):
-        """Sets the parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
+        r"""Sets the parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
 
         父节点code
 

@@ -35,7 +35,7 @@ class CreateVideoJobReq:
     }
 
     def __init__(self, name=None, description=None, input=None, output=None, service_config=None, service_version=None):
-        """CreateVideoJobReq
+        r"""CreateVideoJobReq
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateVideoJobReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateVideoJobReq.
+        r"""Gets the name of this CreateVideoJobReq.
 
         作业名称，只能由中文、字母（a～zA～Z）、数字（0～9）、中划线（-）、下划线（_）组成，长度范围为[1，100]。
 
@@ -85,7 +85,7 @@ class CreateVideoJobReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVideoJobReq.
+        r"""Sets the name of this CreateVideoJobReq.
 
         作业名称，只能由中文、字母（a～zA～Z）、数字（0～9）、中划线（-）、下划线（_）组成，长度范围为[1，100]。
 
@@ -96,7 +96,7 @@ class CreateVideoJobReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateVideoJobReq.
+        r"""Gets the description of this CreateVideoJobReq.
 
         作业描述信息，最大长度为500字符长度。
 
@@ -107,7 +107,7 @@ class CreateVideoJobReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVideoJobReq.
+        r"""Sets the description of this CreateVideoJobReq.
 
         作业描述信息，最大长度为500字符长度。
 
@@ -118,7 +118,7 @@ class CreateVideoJobReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateVideoJobReq.
+        r"""Gets the input of this CreateVideoJobReq.
 
         :return: The input of this CreateVideoJobReq.
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateVideoJobReqInput`
@@ -127,7 +127,7 @@ class CreateVideoJobReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateVideoJobReq.
+        r"""Sets the input of this CreateVideoJobReq.
 
         :param input: The input of this CreateVideoJobReq.
         :type input: :class:`huaweicloudsdkvcm.v2.CreateVideoJobReqInput`
@@ -136,7 +136,7 @@ class CreateVideoJobReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateVideoJobReq.
+        r"""Gets the output of this CreateVideoJobReq.
 
         :return: The output of this CreateVideoJobReq.
         :rtype: :class:`huaweicloudsdkvcm.v2.Output`
@@ -145,7 +145,7 @@ class CreateVideoJobReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateVideoJobReq.
+        r"""Sets the output of this CreateVideoJobReq.
 
         :param output: The output of this CreateVideoJobReq.
         :type output: :class:`huaweicloudsdkvcm.v2.Output`
@@ -154,7 +154,7 @@ class CreateVideoJobReq:
 
     @property
     def service_config(self):
-        """Gets the service_config of this CreateVideoJobReq.
+        r"""Gets the service_config of this CreateVideoJobReq.
 
         :return: The service_config of this CreateVideoJobReq.
         :rtype: :class:`huaweicloudsdkvcm.v2.ServiceConfig`
@@ -163,7 +163,7 @@ class CreateVideoJobReq:
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this CreateVideoJobReq.
+        r"""Sets the service_config of this CreateVideoJobReq.
 
         :param service_config: The service_config of this CreateVideoJobReq.
         :type service_config: :class:`huaweicloudsdkvcm.v2.ServiceConfig`
@@ -172,7 +172,7 @@ class CreateVideoJobReq:
 
     @property
     def service_version(self):
-        """Gets the service_version of this CreateVideoJobReq.
+        r"""Gets the service_version of this CreateVideoJobReq.
 
         功能版本为“1.2”。
 
@@ -183,7 +183,7 @@ class CreateVideoJobReq:
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this CreateVideoJobReq.
+        r"""Sets the service_version of this CreateVideoJobReq.
 
         功能版本为“1.2”。
 

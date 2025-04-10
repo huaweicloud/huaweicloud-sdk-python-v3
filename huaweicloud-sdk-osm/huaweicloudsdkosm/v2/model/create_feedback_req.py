@@ -29,7 +29,7 @@ class CreateFeedbackReq:
     }
 
     def __init__(self, type=None, content=None, is_helpful=None):
-        """CreateFeedbackReq
+        r"""CreateFeedbackReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateFeedbackReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateFeedbackReq.
+        r"""Gets the type of this CreateFeedbackReq.
 
         任务类型，例如 ecs诊断任务 1，rds诊断任务 2
 
@@ -66,7 +66,7 @@ class CreateFeedbackReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateFeedbackReq.
+        r"""Sets the type of this CreateFeedbackReq.
 
         任务类型，例如 ecs诊断任务 1，rds诊断任务 2
 
@@ -77,7 +77,7 @@ class CreateFeedbackReq:
 
     @property
     def content(self):
-        """Gets the content of this CreateFeedbackReq.
+        r"""Gets the content of this CreateFeedbackReq.
 
         反馈内容
 
@@ -88,7 +88,7 @@ class CreateFeedbackReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateFeedbackReq.
+        r"""Sets the content of this CreateFeedbackReq.
 
         反馈内容
 
@@ -99,7 +99,7 @@ class CreateFeedbackReq:
 
     @property
     def is_helpful(self):
-        """Gets the is_helpful of this CreateFeedbackReq.
+        r"""Gets the is_helpful of this CreateFeedbackReq.
 
         是否有帮助
 
@@ -110,7 +110,7 @@ class CreateFeedbackReq:
 
     @is_helpful.setter
     def is_helpful(self, is_helpful):
-        """Sets the is_helpful of this CreateFeedbackReq.
+        r"""Sets the is_helpful of this CreateFeedbackReq.
 
         是否有帮助
 

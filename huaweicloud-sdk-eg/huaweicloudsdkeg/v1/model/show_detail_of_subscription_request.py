@@ -27,7 +27,7 @@ class ShowDetailOfSubscriptionRequest:
     }
 
     def __init__(self, subscription_id=None, enterprise_project_id=None):
-        """ShowDetailOfSubscriptionRequest
+        r"""ShowDetailOfSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDetailOfSubscriptionRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this ShowDetailOfSubscriptionRequest.
+        r"""Gets the subscription_id of this ShowDetailOfSubscriptionRequest.
 
         事件订阅ID
 
@@ -60,7 +60,7 @@ class ShowDetailOfSubscriptionRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this ShowDetailOfSubscriptionRequest.
+        r"""Sets the subscription_id of this ShowDetailOfSubscriptionRequest.
 
         事件订阅ID
 
@@ -71,7 +71,7 @@ class ShowDetailOfSubscriptionRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDetailOfSubscriptionRequest.
+        r"""Gets the enterprise_project_id of this ShowDetailOfSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -82,7 +82,7 @@ class ShowDetailOfSubscriptionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDetailOfSubscriptionRequest.
+        r"""Sets the enterprise_project_id of this ShowDetailOfSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 

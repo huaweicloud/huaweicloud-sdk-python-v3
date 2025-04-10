@@ -29,7 +29,7 @@ class ProductGroupDelFailInfo:
     }
 
     def __init__(self, group_id=None, fail_reason=None, products=None):
-        """ProductGroupDelFailInfo
+        r"""ProductGroupDelFailInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ProductGroupDelFailInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ProductGroupDelFailInfo.
+        r"""Gets the group_id of this ProductGroupDelFailInfo.
 
         模板组ID
 
@@ -68,7 +68,7 @@ class ProductGroupDelFailInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ProductGroupDelFailInfo.
+        r"""Sets the group_id of this ProductGroupDelFailInfo.
 
         模板组ID
 
@@ -79,7 +79,7 @@ class ProductGroupDelFailInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ProductGroupDelFailInfo.
+        r"""Gets the fail_reason of this ProductGroupDelFailInfo.
 
         模板组删除失败的原因
 
@@ -90,7 +90,7 @@ class ProductGroupDelFailInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ProductGroupDelFailInfo.
+        r"""Sets the fail_reason of this ProductGroupDelFailInfo.
 
         模板组删除失败的原因
 
@@ -101,7 +101,7 @@ class ProductGroupDelFailInfo:
 
     @property
     def products(self):
-        """Gets the products of this ProductGroupDelFailInfo.
+        r"""Gets the products of this ProductGroupDelFailInfo.
 
         删除失败的产物的信息
 
@@ -112,7 +112,7 @@ class ProductGroupDelFailInfo:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ProductGroupDelFailInfo.
+        r"""Sets the products of this ProductGroupDelFailInfo.
 
         删除失败的产物的信息
 

@@ -29,7 +29,7 @@ class DeleteDatabasePermission:
     }
 
     def __init__(self, name=None, host=None, databases=None):
-        """DeleteDatabasePermission
+        r"""DeleteDatabasePermission
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteDatabasePermission:
 
     @property
     def name(self):
-        """Gets the name of this DeleteDatabasePermission.
+        r"""Gets the name of this DeleteDatabasePermission.
 
         数据库用户名
 
@@ -65,7 +65,7 @@ class DeleteDatabasePermission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteDatabasePermission.
+        r"""Sets the name of this DeleteDatabasePermission.
 
         数据库用户名
 
@@ -76,7 +76,7 @@ class DeleteDatabasePermission:
 
     @property
     def host(self):
-        """Gets the host of this DeleteDatabasePermission.
+        r"""Gets the host of this DeleteDatabasePermission.
 
         主机地址
 
@@ -87,7 +87,7 @@ class DeleteDatabasePermission:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this DeleteDatabasePermission.
+        r"""Sets the host of this DeleteDatabasePermission.
 
         主机地址
 
@@ -98,7 +98,7 @@ class DeleteDatabasePermission:
 
     @property
     def databases(self):
-        """Gets the databases of this DeleteDatabasePermission.
+        r"""Gets the databases of this DeleteDatabasePermission.
 
         数据库列表
 
@@ -109,7 +109,7 @@ class DeleteDatabasePermission:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this DeleteDatabasePermission.
+        r"""Sets the databases of this DeleteDatabasePermission.
 
         数据库列表
 

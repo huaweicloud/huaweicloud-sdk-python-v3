@@ -33,7 +33,7 @@ class EstimateChangeImageRequestBody:
     }
 
     def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, image_spec_code=None, image_id=None):
-        """EstimateChangeImageRequestBody
+        r"""EstimateChangeImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EstimateChangeImageRequestBody:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this EstimateChangeImageRequestBody.
+        r"""Gets the desktop_pool_id of this EstimateChangeImageRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -82,7 +82,7 @@ class EstimateChangeImageRequestBody:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this EstimateChangeImageRequestBody.
+        r"""Sets the desktop_pool_id of this EstimateChangeImageRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -93,7 +93,7 @@ class EstimateChangeImageRequestBody:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this EstimateChangeImageRequestBody.
+        r"""Gets the desktop_ids of this EstimateChangeImageRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -104,7 +104,7 @@ class EstimateChangeImageRequestBody:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this EstimateChangeImageRequestBody.
+        r"""Sets the desktop_ids of this EstimateChangeImageRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -115,7 +115,7 @@ class EstimateChangeImageRequestBody:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this EstimateChangeImageRequestBody.
+        r"""Gets the promotion_plan_id of this EstimateChangeImageRequestBody.
 
         促销计划ID
 
@@ -126,7 +126,7 @@ class EstimateChangeImageRequestBody:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this EstimateChangeImageRequestBody.
+        r"""Sets the promotion_plan_id of this EstimateChangeImageRequestBody.
 
         促销计划ID
 
@@ -137,7 +137,7 @@ class EstimateChangeImageRequestBody:
 
     @property
     def image_spec_code(self):
-        """Gets the image_spec_code of this EstimateChangeImageRequestBody.
+        r"""Gets the image_spec_code of this EstimateChangeImageRequestBody.
 
         云市场镜像的specCode，即将停用。image_spec_code与image_id同时存在时取image_id的值，两者不可同时为空。
 
@@ -148,7 +148,7 @@ class EstimateChangeImageRequestBody:
 
     @image_spec_code.setter
     def image_spec_code(self, image_spec_code):
-        """Sets the image_spec_code of this EstimateChangeImageRequestBody.
+        r"""Sets the image_spec_code of this EstimateChangeImageRequestBody.
 
         云市场镜像的specCode，即将停用。image_spec_code与image_id同时存在时取image_id的值，两者不可同时为空。
 
@@ -159,7 +159,7 @@ class EstimateChangeImageRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this EstimateChangeImageRequestBody.
+        r"""Gets the image_id of this EstimateChangeImageRequestBody.
 
         云市场镜像ID，建议使用image_id。
 
@@ -170,7 +170,7 @@ class EstimateChangeImageRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this EstimateChangeImageRequestBody.
+        r"""Sets the image_id of this EstimateChangeImageRequestBody.
 
         云市场镜像ID，建议使用image_id。
 

@@ -27,7 +27,7 @@ class BatchUpdateConsumerGroupRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchUpdateConsumerGroupRequest
+        r"""BatchUpdateConsumerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateConsumerGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchUpdateConsumerGroupRequest.
+        r"""Gets the instance_id of this BatchUpdateConsumerGroupRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchUpdateConsumerGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchUpdateConsumerGroupRequest.
+        r"""Sets the instance_id of this BatchUpdateConsumerGroupRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchUpdateConsumerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateConsumerGroupRequest.
+        r"""Gets the body of this BatchUpdateConsumerGroupRequest.
 
         :return: The body of this BatchUpdateConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupReq`
@@ -80,7 +80,7 @@ class BatchUpdateConsumerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateConsumerGroupRequest.
+        r"""Sets the body of this BatchUpdateConsumerGroupRequest.
 
         :param body: The body of this BatchUpdateConsumerGroupRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupReq`

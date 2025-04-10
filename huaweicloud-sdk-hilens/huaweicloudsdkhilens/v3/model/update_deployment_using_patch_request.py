@@ -27,7 +27,7 @@ class UpdateDeploymentUsingPatchRequest:
     }
 
     def __init__(self, deployment_id=None, body=None):
-        """UpdateDeploymentUsingPatchRequest
+        r"""UpdateDeploymentUsingPatchRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDeploymentUsingPatchRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this UpdateDeploymentUsingPatchRequest.
+        r"""Gets the deployment_id of this UpdateDeploymentUsingPatchRequest.
 
         部署ID
 
@@ -60,7 +60,7 @@ class UpdateDeploymentUsingPatchRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this UpdateDeploymentUsingPatchRequest.
+        r"""Sets the deployment_id of this UpdateDeploymentUsingPatchRequest.
 
         部署ID
 
@@ -71,7 +71,7 @@ class UpdateDeploymentUsingPatchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeploymentUsingPatchRequest.
+        r"""Gets the body of this UpdateDeploymentUsingPatchRequest.
 
         :return: The body of this UpdateDeploymentUsingPatchRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentPatchRequest`
@@ -80,7 +80,7 @@ class UpdateDeploymentUsingPatchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeploymentUsingPatchRequest.
+        r"""Sets the body of this UpdateDeploymentUsingPatchRequest.
 
         :param body: The body of this UpdateDeploymentUsingPatchRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.DeploymentPatchRequest`

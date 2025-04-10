@@ -29,7 +29,7 @@ class JobEntitiesResult:
     }
 
     def __init__(self, image_id=None, project_id=None, status=None):
-        """JobEntitiesResult
+        r"""JobEntitiesResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobEntitiesResult:
 
     @property
     def image_id(self):
-        """Gets the image_id of this JobEntitiesResult.
+        r"""Gets the image_id of this JobEntitiesResult.
 
         镜像ID。
 
@@ -68,7 +68,7 @@ class JobEntitiesResult:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this JobEntitiesResult.
+        r"""Sets the image_id of this JobEntitiesResult.
 
         镜像ID。
 
@@ -79,7 +79,7 @@ class JobEntitiesResult:
 
     @property
     def project_id(self):
-        """Gets the project_id of this JobEntitiesResult.
+        r"""Gets the project_id of this JobEntitiesResult.
 
         项目ID。
 
@@ -90,7 +90,7 @@ class JobEntitiesResult:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this JobEntitiesResult.
+        r"""Sets the project_id of this JobEntitiesResult.
 
         项目ID。
 
@@ -101,7 +101,7 @@ class JobEntitiesResult:
 
     @property
     def status(self):
-        """Gets the status of this JobEntitiesResult.
+        r"""Gets the status of this JobEntitiesResult.
 
         任务状态。
 
@@ -112,7 +112,7 @@ class JobEntitiesResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobEntitiesResult.
+        r"""Sets the status of this JobEntitiesResult.
 
         任务状态。
 

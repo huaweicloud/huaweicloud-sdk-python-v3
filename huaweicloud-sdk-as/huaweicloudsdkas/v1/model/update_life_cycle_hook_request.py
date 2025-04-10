@@ -29,7 +29,7 @@ class UpdateLifeCycleHookRequest:
     }
 
     def __init__(self, scaling_group_id=None, lifecycle_hook_name=None, body=None):
-        """UpdateLifeCycleHookRequest
+        r"""UpdateLifeCycleHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLifeCycleHookRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this UpdateLifeCycleHookRequest.
+        r"""Gets the scaling_group_id of this UpdateLifeCycleHookRequest.
 
         伸缩组标识。
 
@@ -66,7 +66,7 @@ class UpdateLifeCycleHookRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this UpdateLifeCycleHookRequest.
+        r"""Sets the scaling_group_id of this UpdateLifeCycleHookRequest.
 
         伸缩组标识。
 
@@ -77,7 +77,7 @@ class UpdateLifeCycleHookRequest:
 
     @property
     def lifecycle_hook_name(self):
-        """Gets the lifecycle_hook_name of this UpdateLifeCycleHookRequest.
+        r"""Gets the lifecycle_hook_name of this UpdateLifeCycleHookRequest.
 
         生命周期挂钩标识。
 
@@ -88,7 +88,7 @@ class UpdateLifeCycleHookRequest:
 
     @lifecycle_hook_name.setter
     def lifecycle_hook_name(self, lifecycle_hook_name):
-        """Sets the lifecycle_hook_name of this UpdateLifeCycleHookRequest.
+        r"""Sets the lifecycle_hook_name of this UpdateLifeCycleHookRequest.
 
         生命周期挂钩标识。
 
@@ -99,7 +99,7 @@ class UpdateLifeCycleHookRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLifeCycleHookRequest.
+        r"""Gets the body of this UpdateLifeCycleHookRequest.
 
         :return: The body of this UpdateLifeCycleHookRequest.
         :rtype: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookOption`
@@ -108,7 +108,7 @@ class UpdateLifeCycleHookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLifeCycleHookRequest.
+        r"""Sets the body of this UpdateLifeCycleHookRequest.
 
         :param body: The body of this UpdateLifeCycleHookRequest.
         :type body: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookOption`

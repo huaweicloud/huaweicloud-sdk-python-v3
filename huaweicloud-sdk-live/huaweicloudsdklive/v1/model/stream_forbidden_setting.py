@@ -31,7 +31,7 @@ class StreamForbiddenSetting:
     }
 
     def __init__(self, domain=None, app_name=None, stream_name=None, resume_time=None):
-        """StreamForbiddenSetting
+        r"""StreamForbiddenSetting
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class StreamForbiddenSetting:
 
     @property
     def domain(self):
-        """Gets the domain of this StreamForbiddenSetting.
+        r"""Gets the domain of this StreamForbiddenSetting.
 
         推流域名
 
@@ -72,7 +72,7 @@ class StreamForbiddenSetting:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this StreamForbiddenSetting.
+        r"""Sets the domain of this StreamForbiddenSetting.
 
         推流域名
 
@@ -83,7 +83,7 @@ class StreamForbiddenSetting:
 
     @property
     def app_name(self):
-        """Gets the app_name of this StreamForbiddenSetting.
+        r"""Gets the app_name of this StreamForbiddenSetting.
 
         流应用名称
 
@@ -94,7 +94,7 @@ class StreamForbiddenSetting:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this StreamForbiddenSetting.
+        r"""Sets the app_name of this StreamForbiddenSetting.
 
         流应用名称
 
@@ -105,7 +105,7 @@ class StreamForbiddenSetting:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this StreamForbiddenSetting.
+        r"""Gets the stream_name of this StreamForbiddenSetting.
 
         流名称
 
@@ -116,7 +116,7 @@ class StreamForbiddenSetting:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this StreamForbiddenSetting.
+        r"""Sets the stream_name of this StreamForbiddenSetting.
 
         流名称
 
@@ -127,7 +127,7 @@ class StreamForbiddenSetting:
 
     @property
     def resume_time(self):
-        """Gets the resume_time of this StreamForbiddenSetting.
+        r"""Gets the resume_time of this StreamForbiddenSetting.
 
         恢复流时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间，不指定则默认7天，最大禁推为90天
 
@@ -138,7 +138,7 @@ class StreamForbiddenSetting:
 
     @resume_time.setter
     def resume_time(self, resume_time):
-        """Sets the resume_time of this StreamForbiddenSetting.
+        r"""Sets the resume_time of this StreamForbiddenSetting.
 
         恢复流时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间，不指定则默认7天，最大禁推为90天
 

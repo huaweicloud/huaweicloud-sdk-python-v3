@@ -27,7 +27,7 @@ class ExportJobListRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ExportJobListRequest
+        r"""ExportJobListRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExportJobListRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExportJobListRequest.
+        r"""Gets the workspace of this ExportJobListRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class ExportJobListRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExportJobListRequest.
+        r"""Sets the workspace of this ExportJobListRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class ExportJobListRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportJobListRequest.
+        r"""Gets the body of this ExportJobListRequest.
 
         :return: The body of this ExportJobListRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
@@ -81,7 +81,7 @@ class ExportJobListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportJobListRequest.
+        r"""Sets the body of this ExportJobListRequest.
 
         :param body: The body of this ExportJobListRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`

@@ -30,7 +30,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_networks=None):
-        """ListCentralNetworksByTagsResponse
+        r"""ListCentralNetworksByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworksByTagsResponse.
+        r"""Gets the request_id of this ListCentralNetworksByTagsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworksByTagsResponse.
+        r"""Sets the request_id of this ListCentralNetworksByTagsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworksByTagsResponse.
+        r"""Gets the page_info of this ListCentralNetworksByTagsResponse.
 
         :return: The page_info of this ListCentralNetworksByTagsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworksByTagsResponse.
+        r"""Sets the page_info of this ListCentralNetworksByTagsResponse.
 
         :param page_info: The page_info of this ListCentralNetworksByTagsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
 
     @property
     def central_networks(self):
-        """Gets the central_networks of this ListCentralNetworksByTagsResponse.
+        r"""Gets the central_networks of this ListCentralNetworksByTagsResponse.
 
         中心网络列表。
 
@@ -107,7 +107,7 @@ class ListCentralNetworksByTagsResponse(SdkResponse):
 
     @central_networks.setter
     def central_networks(self, central_networks):
-        """Sets the central_networks of this ListCentralNetworksByTagsResponse.
+        r"""Sets the central_networks of this ListCentralNetworksByTagsResponse.
 
         中心网络列表。
 

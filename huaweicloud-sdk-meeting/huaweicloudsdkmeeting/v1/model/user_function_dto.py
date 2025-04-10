@@ -25,7 +25,7 @@ class UserFunctionDTO:
     }
 
     def __init__(self, enable_room=None):
-        """UserFunctionDTO
+        r"""UserFunctionDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UserFunctionDTO:
 
     @property
     def enable_room(self):
-        """Gets the enable_room of this UserFunctionDTO.
+        r"""Gets the enable_room of this UserFunctionDTO.
 
         是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 > 该参数将废弃，请勿使用。 
 
@@ -54,7 +54,7 @@ class UserFunctionDTO:
 
     @enable_room.setter
     def enable_room(self, enable_room):
-        """Sets the enable_room of this UserFunctionDTO.
+        r"""Sets the enable_room of this UserFunctionDTO.
 
         是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 > 该参数将废弃，请勿使用。 
 

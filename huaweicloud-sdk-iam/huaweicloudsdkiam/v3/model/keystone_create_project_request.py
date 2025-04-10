@@ -25,7 +25,7 @@ class KeystoneCreateProjectRequest:
     }
 
     def __init__(self, body=None):
-        """KeystoneCreateProjectRequest
+        r"""KeystoneCreateProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class KeystoneCreateProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateProjectRequest.
+        r"""Gets the body of this KeystoneCreateProjectRequest.
 
         :return: The body of this KeystoneCreateProjectRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectRequestBody`
@@ -52,7 +52,7 @@ class KeystoneCreateProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateProjectRequest.
+        r"""Sets the body of this KeystoneCreateProjectRequest.
 
         :param body: The body of this KeystoneCreateProjectRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectRequestBody`

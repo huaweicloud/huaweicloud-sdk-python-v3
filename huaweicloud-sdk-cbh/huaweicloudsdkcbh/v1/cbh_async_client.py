@@ -34,7 +34,7 @@ class CbhAsyncClient(Client):
         return client_builder
 
     def change_instance_network_async(self, request):
-        """修改实例网络
+        r"""修改实例网络
 
         修改云堡垒机实例网络。
         
@@ -101,7 +101,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def change_instance_order_async(self, request):
-        """创建变更云堡垒机实例订单
+        r"""创建变更云堡垒机实例订单
 
         创建变更云堡垒机实例订单。（调用此接口前先调用创建变更云堡垒机实例任务接口，当前接口未开放）
         
@@ -168,7 +168,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def create_cbh_async(self, request):
-        """创建云堡垒机实例
+        r"""创建云堡垒机实例
 
         创建云堡垒机实例。（创建云堡垒机实例订单前，先调用此接口）
         
@@ -233,7 +233,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def create_instance_order_async(self, request):
-        """创建云堡垒机实例订单
+        r"""创建云堡垒机实例订单
 
         创建云堡垒机实例订单。(调用此接口前先调用创建云堡垒机实例接口)
         
@@ -298,7 +298,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def install_cbh_eip_async(self, request):
-        """绑定弹性公网IP
+        r"""绑定弹性公网IP
 
         云堡垒机实例绑定弹性公网IP
         
@@ -365,7 +365,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def list_cbh_instance_async(self, request):
-        """获取CBH实例列表
+        r"""获取CBH实例列表
 
         获取当前租户下的云堡垒机实例列表。
         
@@ -428,7 +428,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def list_quota_status_async(self, request):
-        """获取弹性云服务器配额
+        r"""获取弹性云服务器配额
 
         获取当前租户所选择的可用分区、性能规格所对应的弹性云服务器是否可用。
         
@@ -495,7 +495,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def reset_login_method_async(self, request):
-        """重置admin用户多因子认证方式
+        r"""重置admin用户多因子认证方式
 
         重置admin用户多因子认证方式。
         
@@ -560,7 +560,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def reset_password_async(self, request):
-        """修改admin用户密码
+        r"""修改admin用户密码
 
         修改云堡垒机实例web登录admin用户密码。
         
@@ -625,7 +625,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def restart_cbh_instance_async(self, request):
-        """重启云堡垒机实例
+        r"""重启云堡垒机实例
 
         重启云堡垒机实例。
         
@@ -690,7 +690,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def search_quota_async(self, request):
-        """查询堡垒机配额
+        r"""查询堡垒机配额
 
         查询云堡垒机配额信息。
         
@@ -753,7 +753,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def show_available_zone_info_async(self, request):
-        """获取可用用分区信息
+        r"""获取可用用分区信息
 
         获取云堡垒机服务可用分区信息。
         
@@ -816,7 +816,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def show_network_configuration_async(self, request):
-        """检查云堡垒机网络
+        r"""检查云堡垒机网络
 
         检查云堡垒机实例网络信息。
         
@@ -881,7 +881,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def start_cbh_instance_async(self, request):
-        """启动云堡垒机实例
+        r"""启动云堡垒机实例
 
         启动云堡垒机实例。
         
@@ -946,7 +946,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def stop_cbh_instance_async(self, request):
-        """关闭云堡垒机实例
+        r"""关闭云堡垒机实例
 
         关闭云堡垒机实例。
         
@@ -1011,7 +1011,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def uninstall_cbh_eip_async(self, request):
-        """解绑弹性公网IP
+        r"""解绑弹性公网IP
 
         云堡垒机实例解绑弹性公网IP。
         
@@ -1078,7 +1078,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def upgrade_cbh_instance_async(self, request):
-        """升级云堡垒机实例
+        r"""升级云堡垒机实例
 
         升级云堡垒机实例
         
@@ -1143,7 +1143,7 @@ class CbhAsyncClient(Client):
         return http_info
 
     def login_cbh_async(self, request):
-        """获取IAM登录实例链接
+        r"""获取IAM登录实例链接
 
         获取当前IAM用户登录堡垒机的免登录链接
         

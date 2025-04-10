@@ -25,7 +25,7 @@ class ShowFlinkJobExecutionGraphRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowFlinkJobExecutionGraphRequest
+        r"""ShowFlinkJobExecutionGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlinkJobExecutionGraphRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowFlinkJobExecutionGraphRequest.
+        r"""Gets the job_id of this ShowFlinkJobExecutionGraphRequest.
 
         作业ID。
 
@@ -53,7 +53,7 @@ class ShowFlinkJobExecutionGraphRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowFlinkJobExecutionGraphRequest.
+        r"""Sets the job_id of this ShowFlinkJobExecutionGraphRequest.
 
         作业ID。
 

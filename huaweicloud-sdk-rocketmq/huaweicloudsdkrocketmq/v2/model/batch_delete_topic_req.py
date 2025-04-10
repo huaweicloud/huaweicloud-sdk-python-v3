@@ -25,7 +25,7 @@ class BatchDeleteTopicReq:
     }
 
     def __init__(self, topics=None):
-        """BatchDeleteTopicReq
+        r"""BatchDeleteTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteTopicReq:
 
     @property
     def topics(self):
-        """Gets the topics of this BatchDeleteTopicReq.
+        r"""Gets the topics of this BatchDeleteTopicReq.
 
         主题列表，当批量删除主题时使用。
 
@@ -54,7 +54,7 @@ class BatchDeleteTopicReq:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this BatchDeleteTopicReq.
+        r"""Sets the topics of this BatchDeleteTopicReq.
 
         主题列表，当批量删除主题时使用。
 

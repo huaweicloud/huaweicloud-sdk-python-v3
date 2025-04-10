@@ -26,7 +26,7 @@ class ListNasResponse(SdkResponse):
     }
 
     def __init__(self, nas=None):
-        """ListNasResponse
+        r"""ListNasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNasResponse(SdkResponse):
 
     @property
     def nas(self):
-        """Gets the nas of this ListNasResponse.
+        r"""Gets the nas of this ListNasResponse.
 
         北向NA列表
 
@@ -55,7 +55,7 @@ class ListNasResponse(SdkResponse):
 
     @nas.setter
     def nas(self, nas):
-        """Sets the nas of this ListNasResponse.
+        r"""Sets the nas of this ListNasResponse.
 
         北向NA列表
 

@@ -49,7 +49,7 @@ class OBSCommonConfig:
     }
 
     def __init__(self, column_map=None, path=None, delimiter=None, quote=None, escape=None, header=None, data_type=None, date_format=None, timestamp_format=None, null_value=None, comment=None, parse_mode=None, join_table=None):
-        """OBSCommonConfig
+        r"""OBSCommonConfig
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class OBSCommonConfig:
 
     @property
     def column_map(self):
-        """Gets the column_map of this OBSCommonConfig.
+        r"""Gets the column_map of this OBSCommonConfig.
 
         Map<String, String>结构
 
@@ -138,7 +138,7 @@ class OBSCommonConfig:
 
     @column_map.setter
     def column_map(self, column_map):
-        """Sets the column_map of this OBSCommonConfig.
+        r"""Sets the column_map of this OBSCommonConfig.
 
         Map<String, String>结构
 
@@ -149,7 +149,7 @@ class OBSCommonConfig:
 
     @property
     def path(self):
-        """Gets the path of this OBSCommonConfig.
+        r"""Gets the path of this OBSCommonConfig.
 
         路径
 
@@ -160,7 +160,7 @@ class OBSCommonConfig:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this OBSCommonConfig.
+        r"""Sets the path of this OBSCommonConfig.
 
         路径
 
@@ -171,7 +171,7 @@ class OBSCommonConfig:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this OBSCommonConfig.
+        r"""Gets the delimiter of this OBSCommonConfig.
 
         分隔符
 
@@ -182,7 +182,7 @@ class OBSCommonConfig:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this OBSCommonConfig.
+        r"""Sets the delimiter of this OBSCommonConfig.
 
         分隔符
 
@@ -193,7 +193,7 @@ class OBSCommonConfig:
 
     @property
     def quote(self):
-        """Gets the quote of this OBSCommonConfig.
+        r"""Gets the quote of this OBSCommonConfig.
 
         引用
 
@@ -204,7 +204,7 @@ class OBSCommonConfig:
 
     @quote.setter
     def quote(self, quote):
-        """Sets the quote of this OBSCommonConfig.
+        r"""Sets the quote of this OBSCommonConfig.
 
         引用
 
@@ -215,7 +215,7 @@ class OBSCommonConfig:
 
     @property
     def escape(self):
-        """Gets the escape of this OBSCommonConfig.
+        r"""Gets the escape of this OBSCommonConfig.
 
         规避
 
@@ -226,7 +226,7 @@ class OBSCommonConfig:
 
     @escape.setter
     def escape(self, escape):
-        """Sets the escape of this OBSCommonConfig.
+        r"""Sets the escape of this OBSCommonConfig.
 
         规避
 
@@ -237,7 +237,7 @@ class OBSCommonConfig:
 
     @property
     def header(self):
-        """Gets the header of this OBSCommonConfig.
+        r"""Gets the header of this OBSCommonConfig.
 
         是否是标头
 
@@ -248,7 +248,7 @@ class OBSCommonConfig:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this OBSCommonConfig.
+        r"""Sets the header of this OBSCommonConfig.
 
         是否是标头
 
@@ -259,7 +259,7 @@ class OBSCommonConfig:
 
     @property
     def data_type(self):
-        """Gets the data_type of this OBSCommonConfig.
+        r"""Gets the data_type of this OBSCommonConfig.
 
         数据类型
 
@@ -270,7 +270,7 @@ class OBSCommonConfig:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this OBSCommonConfig.
+        r"""Sets the data_type of this OBSCommonConfig.
 
         数据类型
 
@@ -281,7 +281,7 @@ class OBSCommonConfig:
 
     @property
     def date_format(self):
-        """Gets the date_format of this OBSCommonConfig.
+        r"""Gets the date_format of this OBSCommonConfig.
 
         数据格式
 
@@ -292,7 +292,7 @@ class OBSCommonConfig:
 
     @date_format.setter
     def date_format(self, date_format):
-        """Sets the date_format of this OBSCommonConfig.
+        r"""Sets the date_format of this OBSCommonConfig.
 
         数据格式
 
@@ -303,7 +303,7 @@ class OBSCommonConfig:
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this OBSCommonConfig.
+        r"""Gets the timestamp_format of this OBSCommonConfig.
 
         时间格式
 
@@ -314,7 +314,7 @@ class OBSCommonConfig:
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this OBSCommonConfig.
+        r"""Sets the timestamp_format of this OBSCommonConfig.
 
         时间格式
 
@@ -325,7 +325,7 @@ class OBSCommonConfig:
 
     @property
     def null_value(self):
-        """Gets the null_value of this OBSCommonConfig.
+        r"""Gets the null_value of this OBSCommonConfig.
 
         为空时默认值
 
@@ -336,7 +336,7 @@ class OBSCommonConfig:
 
     @null_value.setter
     def null_value(self, null_value):
-        """Sets the null_value of this OBSCommonConfig.
+        r"""Sets the null_value of this OBSCommonConfig.
 
         为空时默认值
 
@@ -347,7 +347,7 @@ class OBSCommonConfig:
 
     @property
     def comment(self):
-        """Gets the comment of this OBSCommonConfig.
+        r"""Gets the comment of this OBSCommonConfig.
 
         注解
 
@@ -358,7 +358,7 @@ class OBSCommonConfig:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this OBSCommonConfig.
+        r"""Sets the comment of this OBSCommonConfig.
 
         注解
 
@@ -369,7 +369,7 @@ class OBSCommonConfig:
 
     @property
     def parse_mode(self):
-        """Gets the parse_mode of this OBSCommonConfig.
+        r"""Gets the parse_mode of this OBSCommonConfig.
 
         解析模式
 
@@ -380,7 +380,7 @@ class OBSCommonConfig:
 
     @parse_mode.setter
     def parse_mode(self, parse_mode):
-        """Sets the parse_mode of this OBSCommonConfig.
+        r"""Sets the parse_mode of this OBSCommonConfig.
 
         解析模式
 
@@ -391,7 +391,7 @@ class OBSCommonConfig:
 
     @property
     def join_table(self):
-        """Gets the join_table of this OBSCommonConfig.
+        r"""Gets the join_table of this OBSCommonConfig.
 
         联表
 
@@ -402,7 +402,7 @@ class OBSCommonConfig:
 
     @join_table.setter
     def join_table(self, join_table):
-        """Sets the join_table of this OBSCommonConfig.
+        r"""Sets the join_table of this OBSCommonConfig.
 
         联表
 

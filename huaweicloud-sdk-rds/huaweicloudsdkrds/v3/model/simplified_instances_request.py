@@ -25,7 +25,7 @@ class SimplifiedInstancesRequest:
     }
 
     def __init__(self, instance_ids=None):
-        """SimplifiedInstancesRequest
+        r"""SimplifiedInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SimplifiedInstancesRequest:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this SimplifiedInstancesRequest.
+        r"""Gets the instance_ids of this SimplifiedInstancesRequest.
 
         实例id集合
 
@@ -53,7 +53,7 @@ class SimplifiedInstancesRequest:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this SimplifiedInstancesRequest.
+        r"""Sets the instance_ids of this SimplifiedInstancesRequest.
 
         实例id集合
 

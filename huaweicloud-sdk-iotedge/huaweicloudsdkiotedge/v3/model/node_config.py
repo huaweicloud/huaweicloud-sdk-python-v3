@@ -27,7 +27,7 @@ class NodeConfig:
     }
 
     def __init__(self, node_ip=None, node_name=None):
-        """NodeConfig
+        r"""NodeConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeConfig:
 
     @property
     def node_ip(self):
-        """Gets the node_ip of this NodeConfig.
+        r"""Gets the node_ip of this NodeConfig.
 
         节点IP
 
@@ -61,7 +61,7 @@ class NodeConfig:
 
     @node_ip.setter
     def node_ip(self, node_ip):
-        """Sets the node_ip of this NodeConfig.
+        r"""Sets the node_ip of this NodeConfig.
 
         节点IP
 
@@ -72,7 +72,7 @@ class NodeConfig:
 
     @property
     def node_name(self):
-        """Gets the node_name of this NodeConfig.
+        r"""Gets the node_name of this NodeConfig.
 
         节点名称
 
@@ -83,7 +83,7 @@ class NodeConfig:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this NodeConfig.
+        r"""Sets the node_name of this NodeConfig.
 
         节点名称
 

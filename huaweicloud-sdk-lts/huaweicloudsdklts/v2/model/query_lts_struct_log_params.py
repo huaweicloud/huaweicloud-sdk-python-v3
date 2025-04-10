@@ -31,7 +31,7 @@ class QueryLtsStructLogParams:
     }
 
     def __init__(self, start_time=None, end_time=None, sql_expression=None, original_content=None):
-        """QueryLtsStructLogParams
+        r"""QueryLtsStructLogParams
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class QueryLtsStructLogParams:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryLtsStructLogParams.
+        r"""Gets the start_time of this QueryLtsStructLogParams.
 
         搜索起始时间（UTC时间，毫秒级）。
 
@@ -73,7 +73,7 @@ class QueryLtsStructLogParams:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryLtsStructLogParams.
+        r"""Sets the start_time of this QueryLtsStructLogParams.
 
         搜索起始时间（UTC时间，毫秒级）。
 
@@ -84,7 +84,7 @@ class QueryLtsStructLogParams:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryLtsStructLogParams.
+        r"""Gets the end_time of this QueryLtsStructLogParams.
 
         搜索结束时间（UTC时间，毫秒级）。
 
@@ -95,7 +95,7 @@ class QueryLtsStructLogParams:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryLtsStructLogParams.
+        r"""Sets the end_time of this QueryLtsStructLogParams.
 
         搜索结束时间（UTC时间，毫秒级）。
 
@@ -106,7 +106,7 @@ class QueryLtsStructLogParams:
 
     @property
     def sql_expression(self):
-        """Gets the sql_expression of this QueryLtsStructLogParams.
+        r"""Gets the sql_expression of this QueryLtsStructLogParams.
 
         支持SQL语句搜索， 目前支持\"GROUP BY\", \"LIKE\"和\"WHERE\"。
 
@@ -117,7 +117,7 @@ class QueryLtsStructLogParams:
 
     @sql_expression.setter
     def sql_expression(self, sql_expression):
-        """Sets the sql_expression of this QueryLtsStructLogParams.
+        r"""Sets the sql_expression of this QueryLtsStructLogParams.
 
         支持SQL语句搜索， 目前支持\"GROUP BY\", \"LIKE\"和\"WHERE\"。
 
@@ -128,7 +128,7 @@ class QueryLtsStructLogParams:
 
     @property
     def original_content(self):
-        """Gets the original_content of this QueryLtsStructLogParams.
+        r"""Gets the original_content of this QueryLtsStructLogParams.
 
         返回内容中是否包含原始日志， 默认为false。
 
@@ -139,7 +139,7 @@ class QueryLtsStructLogParams:
 
     @original_content.setter
     def original_content(self, original_content):
-        """Sets the original_content of this QueryLtsStructLogParams.
+        r"""Sets the original_content of this QueryLtsStructLogParams.
 
         返回内容中是否包含原始日志， 默认为false。
 

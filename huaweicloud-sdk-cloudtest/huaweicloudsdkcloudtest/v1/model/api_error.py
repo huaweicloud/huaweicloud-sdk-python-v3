@@ -27,7 +27,7 @@ class ApiError:
     }
 
     def __init__(self, code=None, reason=None):
-        """ApiError
+        r"""ApiError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiError:
 
     @property
     def code(self):
-        """Gets the code of this ApiError.
+        r"""Gets the code of this ApiError.
 
         业务失败的错误码
 
@@ -61,7 +61,7 @@ class ApiError:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ApiError.
+        r"""Sets the code of this ApiError.
 
         业务失败的错误码
 
@@ -72,7 +72,7 @@ class ApiError:
 
     @property
     def reason(self):
-        """Gets the reason of this ApiError.
+        r"""Gets the reason of this ApiError.
 
         业务失败的提示内容
 
@@ -83,7 +83,7 @@ class ApiError:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ApiError.
+        r"""Sets the reason of this ApiError.
 
         业务失败的提示内容
 

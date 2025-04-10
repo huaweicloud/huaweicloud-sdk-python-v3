@@ -32,7 +32,7 @@ class RuntimeType:
     }
 
     def __init__(self):
-        """RuntimeType
+        r"""RuntimeType
 
         The model defined in huaweicloud sdk
 

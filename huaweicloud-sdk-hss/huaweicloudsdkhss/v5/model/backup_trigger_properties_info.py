@@ -27,7 +27,7 @@ class BackupTriggerPropertiesInfo:
     }
 
     def __init__(self, pattern=None, start_time=None):
-        """BackupTriggerPropertiesInfo
+        r"""BackupTriggerPropertiesInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BackupTriggerPropertiesInfo:
 
     @property
     def pattern(self):
-        """Gets the pattern of this BackupTriggerPropertiesInfo.
+        r"""Gets the pattern of this BackupTriggerPropertiesInfo.
 
         调度器的调度策略，长度限制为10240个字符，参照iCalendar RFC 2445规范，但仅支持FREQ、BYDAY、BYHOUR、BYMINUTE四个参数，其中FREQ仅支持WEEKLY和DAILY，BYDAY支持一周七天（MO、TU、WE、TH、FR、SA、SU），BYHOUR支持0-23小时，BYMINUTE支持0-59分钟，并且时间点间隔不能小于一小时，一个备份策略可以同时设置多个备份时间点，一天最多可以设置24个时间点。
 
@@ -61,7 +61,7 @@ class BackupTriggerPropertiesInfo:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this BackupTriggerPropertiesInfo.
+        r"""Sets the pattern of this BackupTriggerPropertiesInfo.
 
         调度器的调度策略，长度限制为10240个字符，参照iCalendar RFC 2445规范，但仅支持FREQ、BYDAY、BYHOUR、BYMINUTE四个参数，其中FREQ仅支持WEEKLY和DAILY，BYDAY支持一周七天（MO、TU、WE、TH、FR、SA、SU），BYHOUR支持0-23小时，BYMINUTE支持0-59分钟，并且时间点间隔不能小于一小时，一个备份策略可以同时设置多个备份时间点，一天最多可以设置24个时间点。
 
@@ -72,7 +72,7 @@ class BackupTriggerPropertiesInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BackupTriggerPropertiesInfo.
+        r"""Gets the start_time of this BackupTriggerPropertiesInfo.
 
         调度器开始时间，例如：2020-01-08 09:59:49
 
@@ -83,7 +83,7 @@ class BackupTriggerPropertiesInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BackupTriggerPropertiesInfo.
+        r"""Sets the start_time of this BackupTriggerPropertiesInfo.
 
         调度器开始时间，例如：2020-01-08 09:59:49
 

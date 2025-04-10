@@ -33,7 +33,7 @@ class MultiTaskInitBody:
     }
 
     def __init__(self, ext_info=None, source_datasource_id=None, target_datasource_id=None, task_id=None, auto_mapping=None):
-        """MultiTaskInitBody
+        r"""MultiTaskInitBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MultiTaskInitBody:
 
     @property
     def ext_info(self):
-        """Gets the ext_info of this MultiTaskInitBody.
+        r"""Gets the ext_info of this MultiTaskInitBody.
 
         :return: The ext_info of this MultiTaskInitBody.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`
@@ -80,7 +80,7 @@ class MultiTaskInitBody:
 
     @ext_info.setter
     def ext_info(self, ext_info):
-        """Sets the ext_info of this MultiTaskInitBody.
+        r"""Sets the ext_info of this MultiTaskInitBody.
 
         :param ext_info: The ext_info of this MultiTaskInitBody.
         :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`
@@ -89,7 +89,7 @@ class MultiTaskInitBody:
 
     @property
     def source_datasource_id(self):
-        """Gets the source_datasource_id of this MultiTaskInitBody.
+        r"""Gets the source_datasource_id of this MultiTaskInitBody.
 
         源端数据源ID
 
@@ -100,7 +100,7 @@ class MultiTaskInitBody:
 
     @source_datasource_id.setter
     def source_datasource_id(self, source_datasource_id):
-        """Sets the source_datasource_id of this MultiTaskInitBody.
+        r"""Sets the source_datasource_id of this MultiTaskInitBody.
 
         源端数据源ID
 
@@ -111,7 +111,7 @@ class MultiTaskInitBody:
 
     @property
     def target_datasource_id(self):
-        """Gets the target_datasource_id of this MultiTaskInitBody.
+        r"""Gets the target_datasource_id of this MultiTaskInitBody.
 
         目标端数据源ID
 
@@ -122,7 +122,7 @@ class MultiTaskInitBody:
 
     @target_datasource_id.setter
     def target_datasource_id(self, target_datasource_id):
-        """Sets the target_datasource_id of this MultiTaskInitBody.
+        r"""Sets the target_datasource_id of this MultiTaskInitBody.
 
         目标端数据源ID
 
@@ -133,7 +133,7 @@ class MultiTaskInitBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MultiTaskInitBody.
+        r"""Gets the task_id of this MultiTaskInitBody.
 
         任务ID，可以为空，为空时自动分配任务ID
 
@@ -144,7 +144,7 @@ class MultiTaskInitBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MultiTaskInitBody.
+        r"""Sets the task_id of this MultiTaskInitBody.
 
         任务ID，可以为空，为空时自动分配任务ID
 
@@ -155,7 +155,7 @@ class MultiTaskInitBody:
 
     @property
     def auto_mapping(self):
-        """Gets the auto_mapping of this MultiTaskInitBody.
+        r"""Gets the auto_mapping of this MultiTaskInitBody.
 
         是否自动建立源端到目标端映射
 
@@ -166,7 +166,7 @@ class MultiTaskInitBody:
 
     @auto_mapping.setter
     def auto_mapping(self, auto_mapping):
-        """Sets the auto_mapping of this MultiTaskInitBody.
+        r"""Sets the auto_mapping of this MultiTaskInitBody.
 
         是否自动建立源端到目标端映射
 

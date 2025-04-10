@@ -24,7 +24,7 @@ class UpdateStreamForbiddenResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateStreamForbiddenResponse
+        r"""UpdateStreamForbiddenResponse
 
         The model defined in huaweicloud sdk
 

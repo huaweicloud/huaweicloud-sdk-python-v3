@@ -25,7 +25,7 @@ class DeleteSiteRequest:
     }
 
     def __init__(self, site_id=None):
-        """DeleteSiteRequest
+        r"""DeleteSiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSiteRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this DeleteSiteRequest.
+        r"""Gets the site_id of this DeleteSiteRequest.
 
         站点ID。
 
@@ -53,7 +53,7 @@ class DeleteSiteRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this DeleteSiteRequest.
+        r"""Sets the site_id of this DeleteSiteRequest.
 
         站点ID。
 

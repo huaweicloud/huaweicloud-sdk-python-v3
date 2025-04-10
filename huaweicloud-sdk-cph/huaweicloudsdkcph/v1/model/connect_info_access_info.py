@@ -37,7 +37,7 @@ class ConnectInfoAccessInfo:
     }
 
     def __init__(self, access_ip=None, intranet_ip=None, access_ipv6=None, access_port=None, session_id=None, timestamp=None, ticket=None):
-        """ConnectInfoAccessInfo
+        r"""ConnectInfoAccessInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def access_ip(self):
-        """Gets the access_ip of this ConnectInfoAccessInfo.
+        r"""Gets the access_ip of this ConnectInfoAccessInfo.
 
         云手机实例的公网访问IP
 
@@ -96,7 +96,7 @@ class ConnectInfoAccessInfo:
 
     @access_ip.setter
     def access_ip(self, access_ip):
-        """Sets the access_ip of this ConnectInfoAccessInfo.
+        r"""Sets the access_ip of this ConnectInfoAccessInfo.
 
         云手机实例的公网访问IP
 
@@ -107,7 +107,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def intranet_ip(self):
-        """Gets the intranet_ip of this ConnectInfoAccessInfo.
+        r"""Gets the intranet_ip of this ConnectInfoAccessInfo.
 
         云手机实例的内网访问IP
 
@@ -118,7 +118,7 @@ class ConnectInfoAccessInfo:
 
     @intranet_ip.setter
     def intranet_ip(self, intranet_ip):
-        """Sets the intranet_ip of this ConnectInfoAccessInfo.
+        r"""Sets the intranet_ip of this ConnectInfoAccessInfo.
 
         云手机实例的内网访问IP
 
@@ -129,7 +129,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def access_ipv6(self):
-        """Gets the access_ipv6 of this ConnectInfoAccessInfo.
+        r"""Gets the access_ipv6 of this ConnectInfoAccessInfo.
 
         云手机服务器IPv6 IP
 
@@ -140,7 +140,7 @@ class ConnectInfoAccessInfo:
 
     @access_ipv6.setter
     def access_ipv6(self, access_ipv6):
-        """Sets the access_ipv6 of this ConnectInfoAccessInfo.
+        r"""Sets the access_ipv6 of this ConnectInfoAccessInfo.
 
         云手机服务器IPv6 IP
 
@@ -151,7 +151,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def access_port(self):
-        """Gets the access_port of this ConnectInfoAccessInfo.
+        r"""Gets the access_port of this ConnectInfoAccessInfo.
 
         云手机实例的访问端口
 
@@ -162,7 +162,7 @@ class ConnectInfoAccessInfo:
 
     @access_port.setter
     def access_port(self, access_port):
-        """Sets the access_port of this ConnectInfoAccessInfo.
+        r"""Sets the access_port of this ConnectInfoAccessInfo.
 
         云手机实例的访问端口
 
@@ -173,7 +173,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def session_id(self):
-        """Gets the session_id of this ConnectInfoAccessInfo.
+        r"""Gets the session_id of this ConnectInfoAccessInfo.
 
         本次接入的会话ID
 
@@ -184,7 +184,7 @@ class ConnectInfoAccessInfo:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this ConnectInfoAccessInfo.
+        r"""Sets the session_id of this ConnectInfoAccessInfo.
 
         本次接入的会话ID
 
@@ -195,7 +195,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ConnectInfoAccessInfo.
+        r"""Gets the timestamp of this ConnectInfoAccessInfo.
 
         时间戳
 
@@ -206,7 +206,7 @@ class ConnectInfoAccessInfo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ConnectInfoAccessInfo.
+        r"""Sets the timestamp of this ConnectInfoAccessInfo.
 
         时间戳
 
@@ -217,7 +217,7 @@ class ConnectInfoAccessInfo:
 
     @property
     def ticket(self):
-        """Gets the ticket of this ConnectInfoAccessInfo.
+        r"""Gets the ticket of this ConnectInfoAccessInfo.
 
         签名令牌
 
@@ -228,7 +228,7 @@ class ConnectInfoAccessInfo:
 
     @ticket.setter
     def ticket(self, ticket):
-        """Sets the ticket of this ConnectInfoAccessInfo.
+        r"""Sets the ticket of this ConnectInfoAccessInfo.
 
         签名令牌
 

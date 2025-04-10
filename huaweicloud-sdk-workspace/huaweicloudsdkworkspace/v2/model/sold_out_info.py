@@ -25,7 +25,7 @@ class SoldOutInfo:
     }
 
     def __init__(self, products=None):
-        """SoldOutInfo
+        r"""SoldOutInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SoldOutInfo:
 
     @property
     def products(self):
-        """Gets the products of this SoldOutInfo.
+        r"""Gets the products of this SoldOutInfo.
 
         售罄产品ID列表。
 
@@ -54,7 +54,7 @@ class SoldOutInfo:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this SoldOutInfo.
+        r"""Sets the products of this SoldOutInfo.
 
         售罄产品ID列表。
 

@@ -46,7 +46,7 @@ class ShowReplicationJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, create_time=None, finish_time=None, backup_info=None, base_info=None, target_db_info=None, options=None, new_db_names=None, instance_name=None, error_log=None):
-        """ShowReplicationJobResponse
+        r"""ShowReplicationJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowReplicationJobResponse.
+        r"""Gets the id of this ShowReplicationJobResponse.
 
         任务ID。
 
@@ -125,7 +125,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowReplicationJobResponse.
+        r"""Sets the id of this ShowReplicationJobResponse.
 
         任务ID。
 
@@ -136,7 +136,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowReplicationJobResponse.
+        r"""Gets the status of this ShowReplicationJobResponse.
 
         任务状态。
 
@@ -147,7 +147,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowReplicationJobResponse.
+        r"""Sets the status of this ShowReplicationJobResponse.
 
         任务状态。
 
@@ -158,7 +158,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowReplicationJobResponse.
+        r"""Gets the create_time of this ShowReplicationJobResponse.
 
         任务创建时间。
 
@@ -169,7 +169,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowReplicationJobResponse.
+        r"""Sets the create_time of this ShowReplicationJobResponse.
 
         任务创建时间。
 
@@ -180,7 +180,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this ShowReplicationJobResponse.
+        r"""Gets the finish_time of this ShowReplicationJobResponse.
 
         任务完成时间。
 
@@ -191,7 +191,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this ShowReplicationJobResponse.
+        r"""Sets the finish_time of this ShowReplicationJobResponse.
 
         任务完成时间。
 
@@ -202,7 +202,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def backup_info(self):
-        """Gets the backup_info of this ShowReplicationJobResponse.
+        r"""Gets the backup_info of this ShowReplicationJobResponse.
 
         :return: The backup_info of this ShowReplicationJobResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupInfoResp`
@@ -211,7 +211,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @backup_info.setter
     def backup_info(self, backup_info):
-        """Sets the backup_info of this ShowReplicationJobResponse.
+        r"""Sets the backup_info of this ShowReplicationJobResponse.
 
         :param backup_info: The backup_info of this ShowReplicationJobResponse.
         :type backup_info: :class:`huaweicloudsdkdrs.v5.BackupInfoResp`
@@ -220,7 +220,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def base_info(self):
-        """Gets the base_info of this ShowReplicationJobResponse.
+        r"""Gets the base_info of this ShowReplicationJobResponse.
 
         :return: The base_info of this ShowReplicationJobResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupJobBaseInfo`
@@ -229,7 +229,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this ShowReplicationJobResponse.
+        r"""Sets the base_info of this ShowReplicationJobResponse.
 
         :param base_info: The base_info of this ShowReplicationJobResponse.
         :type base_info: :class:`huaweicloudsdkdrs.v5.BackupJobBaseInfo`
@@ -238,7 +238,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def target_db_info(self):
-        """Gets the target_db_info of this ShowReplicationJobResponse.
+        r"""Gets the target_db_info of this ShowReplicationJobResponse.
 
         :return: The target_db_info of this ShowReplicationJobResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupJobEndpointInfo`
@@ -247,7 +247,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @target_db_info.setter
     def target_db_info(self, target_db_info):
-        """Sets the target_db_info of this ShowReplicationJobResponse.
+        r"""Sets the target_db_info of this ShowReplicationJobResponse.
 
         :param target_db_info: The target_db_info of this ShowReplicationJobResponse.
         :type target_db_info: :class:`huaweicloudsdkdrs.v5.BackupJobEndpointInfo`
@@ -256,7 +256,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def options(self):
-        """Gets the options of this ShowReplicationJobResponse.
+        r"""Gets the options of this ShowReplicationJobResponse.
 
         :return: The options of this ShowReplicationJobResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupRestoreOptionInfo`
@@ -265,7 +265,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @options.setter
     def options(self, options):
-        """Sets the options of this ShowReplicationJobResponse.
+        r"""Sets the options of this ShowReplicationJobResponse.
 
         :param options: The options of this ShowReplicationJobResponse.
         :type options: :class:`huaweicloudsdkdrs.v5.BackupRestoreOptionInfo`
@@ -274,7 +274,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def new_db_names(self):
-        """Gets the new_db_names of this ShowReplicationJobResponse.
+        r"""Gets the new_db_names of this ShowReplicationJobResponse.
 
         备份恢复数据库映射新名称。
 
@@ -285,7 +285,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @new_db_names.setter
     def new_db_names(self, new_db_names):
-        """Sets the new_db_names of this ShowReplicationJobResponse.
+        r"""Sets the new_db_names of this ShowReplicationJobResponse.
 
         备份恢复数据库映射新名称。
 
@@ -296,7 +296,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShowReplicationJobResponse.
+        r"""Gets the instance_name of this ShowReplicationJobResponse.
 
         RDS实例名称。
 
@@ -307,7 +307,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShowReplicationJobResponse.
+        r"""Sets the instance_name of this ShowReplicationJobResponse.
 
         RDS实例名称。
 
@@ -318,7 +318,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @property
     def error_log(self):
-        """Gets the error_log of this ShowReplicationJobResponse.
+        r"""Gets the error_log of this ShowReplicationJobResponse.
 
         迁移过程中失败原因。
 
@@ -329,7 +329,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
     @error_log.setter
     def error_log(self, error_log):
-        """Sets the error_log of this ShowReplicationJobResponse.
+        r"""Sets the error_log of this ShowReplicationJobResponse.
 
         迁移过程中失败原因。
 

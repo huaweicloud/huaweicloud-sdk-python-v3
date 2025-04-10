@@ -28,7 +28,7 @@ class ShowJobEventResponse(SdkResponse):
     }
 
     def __init__(self, count=None, events=None):
-        """ShowJobEventResponse
+        r"""ShowJobEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobEventResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowJobEventResponse.
+        r"""Gets the count of this ShowJobEventResponse.
 
         条数
 
@@ -62,7 +62,7 @@ class ShowJobEventResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowJobEventResponse.
+        r"""Sets the count of this ShowJobEventResponse.
 
         条数
 
@@ -73,7 +73,7 @@ class ShowJobEventResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ShowJobEventResponse.
+        r"""Gets the events of this ShowJobEventResponse.
 
         作业事件列表
 
@@ -84,7 +84,7 @@ class ShowJobEventResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ShowJobEventResponse.
+        r"""Sets the events of this ShowJobEventResponse.
 
         作业事件列表
 

@@ -27,7 +27,7 @@ class ScriptTaskInfoTaskScripts:
     }
 
     def __init__(self, id=None, name=None):
-        """ScriptTaskInfoTaskScripts
+        r"""ScriptTaskInfoTaskScripts
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScriptTaskInfoTaskScripts:
 
     @property
     def id(self):
-        """Gets the id of this ScriptTaskInfoTaskScripts.
+        r"""Gets the id of this ScriptTaskInfoTaskScripts.
 
         脚本ID。
 
@@ -61,7 +61,7 @@ class ScriptTaskInfoTaskScripts:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptTaskInfoTaskScripts.
+        r"""Sets the id of this ScriptTaskInfoTaskScripts.
 
         脚本ID。
 
@@ -72,7 +72,7 @@ class ScriptTaskInfoTaskScripts:
 
     @property
     def name(self):
-        """Gets the name of this ScriptTaskInfoTaskScripts.
+        r"""Gets the name of this ScriptTaskInfoTaskScripts.
 
         脚本名称。
 
@@ -83,7 +83,7 @@ class ScriptTaskInfoTaskScripts:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptTaskInfoTaskScripts.
+        r"""Sets the name of this ScriptTaskInfoTaskScripts.
 
         脚本名称。
 

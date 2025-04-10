@@ -25,7 +25,7 @@ class DeleteEvaluationProjectRequest:
     }
 
     def __init__(self, evaluation_project_id=None):
-        """DeleteEvaluationProjectRequest
+        r"""DeleteEvaluationProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEvaluationProjectRequest:
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this DeleteEvaluationProjectRequest.
+        r"""Gets the evaluation_project_id of this DeleteEvaluationProjectRequest.
 
         评估项目ID。
 
@@ -53,7 +53,7 @@ class DeleteEvaluationProjectRequest:
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this DeleteEvaluationProjectRequest.
+        r"""Sets the evaluation_project_id of this DeleteEvaluationProjectRequest.
 
         评估项目ID。
 

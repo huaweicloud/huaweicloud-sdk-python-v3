@@ -37,7 +37,7 @@ class ListJobHistoryParameter:
     }
 
     def __init__(self, name=None, old_value=None, new_value=None, is_update_success=None, is_applied=None, update_time=None, apply_time=None):
-        """ListJobHistoryParameter
+        r"""ListJobHistoryParameter
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListJobHistoryParameter:
 
     @property
     def name(self):
-        """Gets the name of this ListJobHistoryParameter.
+        r"""Gets the name of this ListJobHistoryParameter.
 
         参数名称。
 
@@ -90,7 +90,7 @@ class ListJobHistoryParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListJobHistoryParameter.
+        r"""Sets the name of this ListJobHistoryParameter.
 
         参数名称。
 
@@ -101,7 +101,7 @@ class ListJobHistoryParameter:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ListJobHistoryParameter.
+        r"""Gets the old_value of this ListJobHistoryParameter.
 
         旧参数值。
 
@@ -112,7 +112,7 @@ class ListJobHistoryParameter:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ListJobHistoryParameter.
+        r"""Sets the old_value of this ListJobHistoryParameter.
 
         旧参数值。
 
@@ -123,7 +123,7 @@ class ListJobHistoryParameter:
 
     @property
     def new_value(self):
-        """Gets the new_value of this ListJobHistoryParameter.
+        r"""Gets the new_value of this ListJobHistoryParameter.
 
         新参数值。
 
@@ -134,7 +134,7 @@ class ListJobHistoryParameter:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this ListJobHistoryParameter.
+        r"""Sets the new_value of this ListJobHistoryParameter.
 
         新参数值。
 
@@ -145,7 +145,7 @@ class ListJobHistoryParameter:
 
     @property
     def is_update_success(self):
-        """Gets the is_update_success of this ListJobHistoryParameter.
+        r"""Gets the is_update_success of this ListJobHistoryParameter.
 
         更新结果。true：成功，false：失败
 
@@ -156,7 +156,7 @@ class ListJobHistoryParameter:
 
     @is_update_success.setter
     def is_update_success(self, is_update_success):
-        """Sets the is_update_success of this ListJobHistoryParameter.
+        r"""Sets the is_update_success of this ListJobHistoryParameter.
 
         更新结果。true：成功，false：失败
 
@@ -167,7 +167,7 @@ class ListJobHistoryParameter:
 
     @property
     def is_applied(self):
-        """Gets the is_applied of this ListJobHistoryParameter.
+        r"""Gets the is_applied of this ListJobHistoryParameter.
 
         是否已应用。true：已应用，false：未应用
 
@@ -178,7 +178,7 @@ class ListJobHistoryParameter:
 
     @is_applied.setter
     def is_applied(self, is_applied):
-        """Sets the is_applied of this ListJobHistoryParameter.
+        r"""Sets the is_applied of this ListJobHistoryParameter.
 
         是否已应用。true：已应用，false：未应用
 
@@ -189,7 +189,7 @@ class ListJobHistoryParameter:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListJobHistoryParameter.
+        r"""Gets the update_time of this ListJobHistoryParameter.
 
         参数修改时间。
 
@@ -200,7 +200,7 @@ class ListJobHistoryParameter:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListJobHistoryParameter.
+        r"""Sets the update_time of this ListJobHistoryParameter.
 
         参数修改时间。
 
@@ -211,7 +211,7 @@ class ListJobHistoryParameter:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this ListJobHistoryParameter.
+        r"""Gets the apply_time of this ListJobHistoryParameter.
 
         参数应用时间。
 
@@ -222,7 +222,7 @@ class ListJobHistoryParameter:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this ListJobHistoryParameter.
+        r"""Sets the apply_time of this ListJobHistoryParameter.
 
         参数应用时间。
 

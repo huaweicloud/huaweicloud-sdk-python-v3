@@ -29,7 +29,7 @@ class UpdatePrincipalsRequest:
     }
 
     def __init__(self, instance_id=None, role_name=None, body=None):
-        """UpdatePrincipalsRequest
+        r"""UpdatePrincipalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePrincipalsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePrincipalsRequest.
+        r"""Gets the instance_id of this UpdatePrincipalsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -66,7 +66,7 @@ class UpdatePrincipalsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePrincipalsRequest.
+        r"""Sets the instance_id of this UpdatePrincipalsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -77,7 +77,7 @@ class UpdatePrincipalsRequest:
 
     @property
     def role_name(self):
-        """Gets the role_name of this UpdatePrincipalsRequest.
+        r"""Gets the role_name of this UpdatePrincipalsRequest.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -88,7 +88,7 @@ class UpdatePrincipalsRequest:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this UpdatePrincipalsRequest.
+        r"""Sets the role_name of this UpdatePrincipalsRequest.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -99,7 +99,7 @@ class UpdatePrincipalsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrincipalsRequest.
+        r"""Gets the body of this UpdatePrincipalsRequest.
 
         :return: The body of this UpdatePrincipalsRequest.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Principal`]
@@ -108,7 +108,7 @@ class UpdatePrincipalsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrincipalsRequest.
+        r"""Sets the body of this UpdatePrincipalsRequest.
 
         :param body: The body of this UpdatePrincipalsRequest.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Principal`]

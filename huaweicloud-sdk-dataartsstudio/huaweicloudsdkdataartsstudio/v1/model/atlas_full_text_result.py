@@ -27,7 +27,7 @@ class AtlasFullTextResult:
     }
 
     def __init__(self, entity=None, score=None):
-        """AtlasFullTextResult
+        r"""AtlasFullTextResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AtlasFullTextResult:
 
     @property
     def entity(self):
-        """Gets the entity of this AtlasFullTextResult.
+        r"""Gets the entity of this AtlasFullTextResult.
 
         :return: The entity of this AtlasFullTextResult.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AtlasEntityHeader`
@@ -59,7 +59,7 @@ class AtlasFullTextResult:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this AtlasFullTextResult.
+        r"""Sets the entity of this AtlasFullTextResult.
 
         :param entity: The entity of this AtlasFullTextResult.
         :type entity: :class:`huaweicloudsdkdataartsstudio.v1.AtlasEntityHeader`
@@ -68,7 +68,7 @@ class AtlasFullTextResult:
 
     @property
     def score(self):
-        """Gets the score of this AtlasFullTextResult.
+        r"""Gets the score of this AtlasFullTextResult.
 
         数值
 
@@ -79,7 +79,7 @@ class AtlasFullTextResult:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this AtlasFullTextResult.
+        r"""Sets the score of this AtlasFullTextResult.
 
         数值
 

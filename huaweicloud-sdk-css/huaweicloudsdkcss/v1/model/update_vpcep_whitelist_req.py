@@ -25,7 +25,7 @@ class UpdateVpcepWhitelistReq:
     }
 
     def __init__(self, vpc_permissions=None):
-        """UpdateVpcepWhitelistReq
+        r"""UpdateVpcepWhitelistReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpcepWhitelistReq:
 
     @property
     def vpc_permissions(self):
-        """Gets the vpc_permissions of this UpdateVpcepWhitelistReq.
+        r"""Gets the vpc_permissions of this UpdateVpcepWhitelistReq.
 
         白名单(用户的账号ID)。
 
@@ -53,7 +53,7 @@ class UpdateVpcepWhitelistReq:
 
     @vpc_permissions.setter
     def vpc_permissions(self, vpc_permissions):
-        """Sets the vpc_permissions of this UpdateVpcepWhitelistReq.
+        r"""Sets the vpc_permissions of this UpdateVpcepWhitelistReq.
 
         白名单(用户的账号ID)。
 

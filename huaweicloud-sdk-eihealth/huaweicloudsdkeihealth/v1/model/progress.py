@@ -27,7 +27,7 @@ class Progress:
     }
 
     def __init__(self, overall=None, estimated_finish_time=None):
-        """Progress
+        r"""Progress
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Progress:
 
     @property
     def overall(self):
-        """Gets the overall of this Progress.
+        r"""Gets the overall of this Progress.
 
         整体进度
 
@@ -61,7 +61,7 @@ class Progress:
 
     @overall.setter
     def overall(self, overall):
-        """Sets the overall of this Progress.
+        r"""Sets the overall of this Progress.
 
         整体进度
 
@@ -72,7 +72,7 @@ class Progress:
 
     @property
     def estimated_finish_time(self):
-        """Gets the estimated_finish_time of this Progress.
+        r"""Gets the estimated_finish_time of this Progress.
 
         预计结束时间，毫秒
 
@@ -83,7 +83,7 @@ class Progress:
 
     @estimated_finish_time.setter
     def estimated_finish_time(self, estimated_finish_time):
-        """Sets the estimated_finish_time of this Progress.
+        r"""Sets the estimated_finish_time of this Progress.
 
         预计结束时间，毫秒
 

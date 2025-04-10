@@ -31,7 +31,7 @@ class ImportPointsRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, update_type=None, body=None):
-        """ImportPointsRequest
+        r"""ImportPointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ImportPointsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ImportPointsRequest.
+        r"""Gets the edge_node_id of this ImportPointsRequest.
 
         边缘节点ID
 
@@ -72,7 +72,7 @@ class ImportPointsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ImportPointsRequest.
+        r"""Sets the edge_node_id of this ImportPointsRequest.
 
         边缘节点ID
 
@@ -83,7 +83,7 @@ class ImportPointsRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this ImportPointsRequest.
+        r"""Gets the ds_id of this ImportPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -94,7 +94,7 @@ class ImportPointsRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this ImportPointsRequest.
+        r"""Sets the ds_id of this ImportPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -105,7 +105,7 @@ class ImportPointsRequest:
 
     @property
     def update_type(self):
-        """Gets the update_type of this ImportPointsRequest.
+        r"""Gets the update_type of this ImportPointsRequest.
 
         该字段PARTIAL则增量覆盖，已有点位更新，新增点位插入;该字段为COMPLETE则全量覆盖，则删除数据源下所有点位，插入当前导入所有点位
 
@@ -116,7 +116,7 @@ class ImportPointsRequest:
 
     @update_type.setter
     def update_type(self, update_type):
-        """Sets the update_type of this ImportPointsRequest.
+        r"""Sets the update_type of this ImportPointsRequest.
 
         该字段PARTIAL则增量覆盖，已有点位更新，新增点位插入;该字段为COMPLETE则全量覆盖，则删除数据源下所有点位，插入当前导入所有点位
 
@@ -127,7 +127,7 @@ class ImportPointsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportPointsRequest.
+        r"""Gets the body of this ImportPointsRequest.
 
         :return: The body of this ImportPointsRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ImportPointsRequestBody`
@@ -136,7 +136,7 @@ class ImportPointsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportPointsRequest.
+        r"""Sets the body of this ImportPointsRequest.
 
         :param body: The body of this ImportPointsRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.ImportPointsRequestBody`

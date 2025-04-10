@@ -25,7 +25,7 @@ class SingleCreateJobReq:
     }
 
     def __init__(self, job=None):
-        """SingleCreateJobReq
+        r"""SingleCreateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SingleCreateJobReq:
 
     @property
     def job(self):
-        """Gets the job of this SingleCreateJobReq.
+        r"""Gets the job of this SingleCreateJobReq.
 
         :return: The job of this SingleCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.CreateJobReq`
@@ -51,7 +51,7 @@ class SingleCreateJobReq:
 
     @job.setter
     def job(self, job):
-        """Sets the job of this SingleCreateJobReq.
+        r"""Sets the job of this SingleCreateJobReq.
 
         :param job: The job of this SingleCreateJobReq.
         :type job: :class:`huaweicloudsdkdrs.v5.CreateJobReq`

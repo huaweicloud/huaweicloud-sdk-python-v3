@@ -25,7 +25,7 @@ class ListServerBlockDevicesRequest:
     }
 
     def __init__(self, server_id=None):
-        """ListServerBlockDevicesRequest
+        r"""ListServerBlockDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListServerBlockDevicesRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListServerBlockDevicesRequest.
+        r"""Gets the server_id of this ListServerBlockDevicesRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ListServerBlockDevicesRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListServerBlockDevicesRequest.
+        r"""Sets the server_id of this ListServerBlockDevicesRequest.
 
         云服务器ID。
 

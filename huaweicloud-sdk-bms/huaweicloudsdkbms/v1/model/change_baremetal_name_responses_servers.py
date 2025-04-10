@@ -113,7 +113,7 @@ class ChangeBaremetalNameResponsesServers:
     }
 
     def __init__(self, name=None, id=None, status=None, created=None, updated=None, flavor=None, image=None, tenant_id=None, key_name=None, user_id=None, metadata=None, host_id=None, addresses=None, security_groups=None, links=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, access_i_pv4=None, access_i_pv6=None, fault=None, config_drive=None, progress=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, sys_tags=None, enterprise_project_id=None, osscheduler_hints=None):
-        """ChangeBaremetalNameResponsesServers
+        r"""ChangeBaremetalNameResponsesServers
 
         The model defined in huaweicloud sdk
 
@@ -351,7 +351,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def name(self):
-        """Gets the name of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the name of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器名称
 
@@ -362,7 +362,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the name of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器名称
 
@@ -373,7 +373,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def id(self):
-        """Gets the id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器唯一标识ID
 
@@ -384,7 +384,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器唯一标识ID
 
@@ -395,7 +395,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def status(self):
-        """Gets the status of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the status of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器当前状态。ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
@@ -406,7 +406,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the status of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器当前状态。ACTIVE：运行中/正在关机/删除中BUILD：创建中ERROR：故障HARD_REBOOT：强制重启中REBOOT：重启中 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
@@ -417,7 +417,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def created(self):
-        """Gets the created of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the created of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
@@ -428,7 +428,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the created of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
@@ -439,7 +439,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def updated(self):
-        """Gets the updated of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the updated of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器上一次更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
@@ -450,7 +450,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the updated of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器上一次更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
@@ -461,7 +461,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the flavor of this ChangeBaremetalNameResponsesServers.
 
         :return: The flavor of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.FlavorInfo`
@@ -470,7 +470,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the flavor of this ChangeBaremetalNameResponsesServers.
 
         :param flavor: The flavor of this ChangeBaremetalNameResponsesServers.
         :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfo`
@@ -479,7 +479,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def image(self):
-        """Gets the image of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the image of this ChangeBaremetalNameResponsesServers.
 
         :return: The image of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.Image`
@@ -488,7 +488,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the image of this ChangeBaremetalNameResponsesServers.
 
         :param image: The image of this ChangeBaremetalNameResponsesServers.
         :type image: :class:`huaweicloudsdkbms.v1.Image`
@@ -497,7 +497,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the tenant_id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
 
@@ -508,7 +508,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the tenant_id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
 
@@ -519,7 +519,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the key_name of this ChangeBaremetalNameResponsesServers.
 
         SSH密钥名称
 
@@ -530,7 +530,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the key_name of this ChangeBaremetalNameResponsesServers.
 
         SSH密钥名称
 
@@ -541,7 +541,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the user_id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器所属用户ID。
 
@@ -552,7 +552,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the user_id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器所属用户ID。
 
@@ -563,7 +563,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the metadata of this ChangeBaremetalNameResponsesServers.
 
         :return: The metadata of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.MetadataInfos`
@@ -572,7 +572,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the metadata of this ChangeBaremetalNameResponsesServers.
 
         :param metadata: The metadata of this ChangeBaremetalNameResponsesServers.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataInfos`
@@ -581,7 +581,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the host_id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的主机ID
 
@@ -592,7 +592,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the host_id of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的主机ID
 
@@ -603,7 +603,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def addresses(self):
-        """Gets the addresses of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the addresses of this ChangeBaremetalNameResponsesServers.
 
         :return: The addresses of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.Addresses`
@@ -612,7 +612,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the addresses of this ChangeBaremetalNameResponsesServers.
 
         :param addresses: The addresses of this ChangeBaremetalNameResponsesServers.
         :type addresses: :class:`huaweicloudsdkbms.v1.Addresses`
@@ -621,7 +621,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the security_groups of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器所属安全组列表。
 
@@ -632,7 +632,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the security_groups of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器所属安全组列表。
 
@@ -643,7 +643,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def links(self):
-        """Gets the links of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the links of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器相关信息快捷链接
 
@@ -654,7 +654,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the links of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器相关信息快捷链接
 
@@ -665,7 +665,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_dc_fdisk_config of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，磁盘配置方式，取值为如下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
 
@@ -676,7 +676,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_dc_fdisk_config of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，磁盘配置方式，取值为如下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
 
@@ -687,7 +687,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_a_zavailability_zone(self):
-        """Gets the os_ext_a_zavailability_zone of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_a_zavailability_zone of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，可用分区编码。
 
@@ -698,7 +698,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_a_zavailability_zone.setter
     def os_ext_a_zavailability_zone(self, os_ext_a_zavailability_zone):
-        """Sets the os_ext_a_zavailability_zone of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_a_zavailability_zone of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，可用分区编码。
 
@@ -709,7 +709,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rhost(self):
-        """Gets the os_ext_srv_att_rhost of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rhost of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器宿主名称
 
@@ -720,7 +720,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rhost.setter
     def os_ext_srv_att_rhost(self, os_ext_srv_att_rhost):
-        """Sets the os_ext_srv_att_rhost of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rhost of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器宿主名称
 
@@ -731,7 +731,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rhypervisor_hostname(self):
-        """Gets the os_ext_srv_att_rhypervisor_hostname of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rhypervisor_hostname of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，hypervisor主机名称，由Nova virt驱动提供
 
@@ -742,7 +742,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rhypervisor_hostname.setter
     def os_ext_srv_att_rhypervisor_hostname(self, os_ext_srv_att_rhypervisor_hostname):
-        """Sets the os_ext_srv_att_rhypervisor_hostname of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rhypervisor_hostname of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，hypervisor主机名称，由Nova virt驱动提供
 
@@ -753,7 +753,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rinstance_name(self):
-        """Gets the os_ext_srv_att_rinstance_name of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rinstance_name of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器实例ID
 
@@ -764,7 +764,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rinstance_name.setter
     def os_ext_srv_att_rinstance_name(self, os_ext_srv_att_rinstance_name):
-        """Sets the os_ext_srv_att_rinstance_name of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rinstance_name of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器实例ID
 
@@ -775,7 +775,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_st_spower_state(self):
-        """Gets the os_ext_st_spower_state of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_st_spower_state of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
 
@@ -786,7 +786,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_st_spower_state.setter
     def os_ext_st_spower_state(self, os_ext_st_spower_state):
-        """Sets the os_ext_st_spower_state of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_st_spower_state of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
 
@@ -797,7 +797,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_st_stask_state(self):
-        """Gets the os_ext_st_stask_state of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_st_stask_state of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器任务状态。例如：rebooting表示重启中reboot_started表示普通重启reboot_started_hard表示强制重启powering-off表示关机中powering-on表示开机中rebuilding表示重建中scheduling表示调度中deleting表示删除中
 
@@ -808,7 +808,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_st_stask_state.setter
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
-        """Sets the os_ext_st_stask_state of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_st_stask_state of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器任务状态。例如：rebooting表示重启中reboot_started表示普通重启reboot_started_hard表示强制重启powering-off表示关机中powering-on表示开机中rebuilding表示重建中scheduling表示调度中deleting表示删除中
 
@@ -819,7 +819,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_st_svm_state(self):
-        """Gets the os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机REBOOT表示重启
 
@@ -830,7 +830,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_st_svm_state.setter
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
-        """Sets the os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_st_svm_state of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器状态。例如：RUNNING表示运行中SHUTOFF表示关机REBOOT表示重启
 
@@ -841,7 +841,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_srv_us_glaunched_at(self):
-        """Gets the os_srv_us_glaunched_at of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_srv_us_glaunched_at of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-25T03:40:25.000000
 
@@ -852,7 +852,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_srv_us_glaunched_at.setter
     def os_srv_us_glaunched_at(self, os_srv_us_glaunched_at):
-        """Sets the os_srv_us_glaunched_at of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_srv_us_glaunched_at of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-25T03:40:25.000000
 
@@ -863,7 +863,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_srv_us_gterminated_at(self):
-        """Gets the os_srv_us_gterminated_at of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_srv_us_gterminated_at of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器关闭时间。时间戳格式为ISO 8601，例如：2019-06-25T03:40:25.000000
 
@@ -874,7 +874,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_srv_us_gterminated_at.setter
     def os_srv_us_gterminated_at(self, os_srv_us_gterminated_at):
-        """Sets the os_srv_us_gterminated_at of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_srv_us_gterminated_at of this ChangeBaremetalNameResponsesServers.
 
         扩展属性，裸金属服务器关闭时间。时间戳格式为ISO 8601，例如：2019-06-25T03:40:25.000000
 
@@ -885,7 +885,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_extended_volumesvolumes_attached(self):
-        """Gets the os_extended_volumesvolumes_attached of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_extended_volumesvolumes_attached of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器挂载的云硬盘信息。详情请参见表 os-extended-volumes:volumes_attached字段数据结构说明。
 
@@ -896,7 +896,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_extended_volumesvolumes_attached.setter
     def os_extended_volumesvolumes_attached(self, os_extended_volumesvolumes_attached):
-        """Sets the os_extended_volumesvolumes_attached of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_extended_volumesvolumes_attached of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器挂载的云硬盘信息。详情请参见表 os-extended-volumes:volumes_attached字段数据结构说明。
 
@@ -907,7 +907,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def access_i_pv4(self):
-        """Gets the access_i_pv4 of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the access_i_pv4 of this ChangeBaremetalNameResponsesServers.
 
         预留属性
 
@@ -918,7 +918,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @access_i_pv4.setter
     def access_i_pv4(self, access_i_pv4):
-        """Sets the access_i_pv4 of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the access_i_pv4 of this ChangeBaremetalNameResponsesServers.
 
         预留属性
 
@@ -929,7 +929,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def access_i_pv6(self):
-        """Gets the access_i_pv6 of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the access_i_pv6 of this ChangeBaremetalNameResponsesServers.
 
         预留属性
 
@@ -940,7 +940,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @access_i_pv6.setter
     def access_i_pv6(self, access_i_pv6):
-        """Sets the access_i_pv6 of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the access_i_pv6 of this ChangeBaremetalNameResponsesServers.
 
         预留属性
 
@@ -951,7 +951,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def fault(self):
-        """Gets the fault of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the fault of this ChangeBaremetalNameResponsesServers.
 
         :return: The fault of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.Fault`
@@ -960,7 +960,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the fault of this ChangeBaremetalNameResponsesServers.
 
         :param fault: The fault of this ChangeBaremetalNameResponsesServers.
         :type fault: :class:`huaweicloudsdkbms.v1.Fault`
@@ -969,7 +969,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def config_drive(self):
-        """Gets the config_drive of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the config_drive of this ChangeBaremetalNameResponsesServers.
 
         config drive信息
 
@@ -980,7 +980,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @config_drive.setter
     def config_drive(self, config_drive):
-        """Sets the config_drive of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the config_drive of this ChangeBaremetalNameResponsesServers.
 
         config drive信息
 
@@ -991,7 +991,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def progress(self):
-        """Gets the progress of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the progress of this ChangeBaremetalNameResponsesServers.
 
         预留属性
 
@@ -1002,7 +1002,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the progress of this ChangeBaremetalNameResponsesServers.
 
         预留属性
 
@@ -1013,7 +1013,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def description(self):
-        """Gets the description of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the description of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的描述信息。
 
@@ -1024,7 +1024,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the description of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的描述信息。
 
@@ -1035,7 +1035,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the host_status of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
 
@@ -1046,7 +1046,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the host_status of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
 
@@ -1057,7 +1057,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rhostname of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的主机名
 
@@ -1068,7 +1068,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rhostname of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的主机名
 
@@ -1079,7 +1079,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rreservation_id(self):
-        """Gets the os_ext_srv_att_rreservation_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rreservation_id of this ChangeBaremetalNameResponsesServers.
 
         批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
 
@@ -1090,7 +1090,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rreservation_id.setter
     def os_ext_srv_att_rreservation_id(self, os_ext_srv_att_rreservation_id):
-        """Sets the os_ext_srv_att_rreservation_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rreservation_id of this ChangeBaremetalNameResponsesServers.
 
         批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
 
@@ -1101,7 +1101,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rlaunch_index(self):
-        """Gets the os_ext_srv_att_rlaunch_index of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rlaunch_index of this ChangeBaremetalNameResponsesServers.
 
         批量创建场景，裸金属服务器的启动顺序
 
@@ -1112,7 +1112,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rlaunch_index.setter
     def os_ext_srv_att_rlaunch_index(self, os_ext_srv_att_rlaunch_index):
-        """Sets the os_ext_srv_att_rlaunch_index of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rlaunch_index of this ChangeBaremetalNameResponsesServers.
 
         批量创建场景，裸金属服务器的启动顺序
 
@@ -1123,7 +1123,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rkernel_id(self):
-        """Gets the os_ext_srv_att_rkernel_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rkernel_id of this ChangeBaremetalNameResponsesServers.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
 
@@ -1134,7 +1134,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rkernel_id.setter
     def os_ext_srv_att_rkernel_id(self, os_ext_srv_att_rkernel_id):
-        """Sets the os_ext_srv_att_rkernel_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rkernel_id of this ChangeBaremetalNameResponsesServers.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
 
@@ -1145,7 +1145,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rramdisk_id(self):
-        """Gets the os_ext_srv_att_rramdisk_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rramdisk_id of this ChangeBaremetalNameResponsesServers.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -1156,7 +1156,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rramdisk_id.setter
     def os_ext_srv_att_rramdisk_id(self, os_ext_srv_att_rramdisk_id):
-        """Sets the os_ext_srv_att_rramdisk_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rramdisk_id of this ChangeBaremetalNameResponsesServers.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -1167,7 +1167,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_rroot_device_name(self):
-        """Gets the os_ext_srv_att_rroot_device_name of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_rroot_device_name of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器系统盘的设备名称，例如“/dev/sdb”。
 
@@ -1178,7 +1178,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_rroot_device_name.setter
     def os_ext_srv_att_rroot_device_name(self, os_ext_srv_att_rroot_device_name):
-        """Sets the os_ext_srv_att_rroot_device_name of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_rroot_device_name of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器系统盘的设备名称，例如“/dev/sdb”。
 
@@ -1189,7 +1189,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the os_ext_srv_att_ruser_data of this ChangeBaremetalNameResponsesServers.
 
         创建裸金属服务器时指定的user_data。取值为base64编码后的结果或空字符串。
 
@@ -1200,7 +1200,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the os_ext_srv_att_ruser_data of this ChangeBaremetalNameResponsesServers.
 
         创建裸金属服务器时指定的user_data。取值为base64编码后的结果或空字符串。
 
@@ -1211,7 +1211,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def locked(self):
-        """Gets the locked of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the locked of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器实例是否为锁定状态。true：锁定false：未锁定
 
@@ -1222,7 +1222,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the locked of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器实例是否为锁定状态。true：锁定false：未锁定
 
@@ -1233,7 +1233,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def tags(self):
-        """Gets the tags of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the tags of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器标签
 
@@ -1244,7 +1244,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the tags of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器标签
 
@@ -1255,7 +1255,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the sys_tags of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的系统标签
 
@@ -1266,7 +1266,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the sys_tags of this ChangeBaremetalNameResponsesServers.
 
         裸金属服务器的系统标签
 
@@ -1277,7 +1277,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the enterprise_project_id of this ChangeBaremetalNameResponsesServers.
 
         enterprise_project_id。
 
@@ -1288,7 +1288,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the enterprise_project_id of this ChangeBaremetalNameResponsesServers.
 
         enterprise_project_id。
 
@@ -1299,7 +1299,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @property
     def osscheduler_hints(self):
-        """Gets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
+        r"""Gets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
 
         :return: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`
@@ -1308,7 +1308,7 @@ class ChangeBaremetalNameResponsesServers:
 
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
-        """Sets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
+        r"""Sets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
 
         :param osscheduler_hints: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
         :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`

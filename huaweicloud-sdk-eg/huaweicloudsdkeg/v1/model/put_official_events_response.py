@@ -30,7 +30,7 @@ class PutOfficialEventsResponse(SdkResponse):
     }
 
     def __init__(self, failed_count=None, events=None, x_request_id=None):
-        """PutOfficialEventsResponse
+        r"""PutOfficialEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class PutOfficialEventsResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this PutOfficialEventsResponse.
+        r"""Gets the failed_count of this PutOfficialEventsResponse.
 
         发布失败的事件个数
 
@@ -69,7 +69,7 @@ class PutOfficialEventsResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this PutOfficialEventsResponse.
+        r"""Sets the failed_count of this PutOfficialEventsResponse.
 
         发布失败的事件个数
 
@@ -80,7 +80,7 @@ class PutOfficialEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this PutOfficialEventsResponse.
+        r"""Gets the events of this PutOfficialEventsResponse.
 
         事件列表
 
@@ -91,7 +91,7 @@ class PutOfficialEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this PutOfficialEventsResponse.
+        r"""Sets the events of this PutOfficialEventsResponse.
 
         事件列表
 
@@ -102,7 +102,7 @@ class PutOfficialEventsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this PutOfficialEventsResponse.
+        r"""Gets the x_request_id of this PutOfficialEventsResponse.
 
         :return: The x_request_id of this PutOfficialEventsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class PutOfficialEventsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this PutOfficialEventsResponse.
+        r"""Sets the x_request_id of this PutOfficialEventsResponse.
 
         :param x_request_id: The x_request_id of this PutOfficialEventsResponse.
         :type x_request_id: str

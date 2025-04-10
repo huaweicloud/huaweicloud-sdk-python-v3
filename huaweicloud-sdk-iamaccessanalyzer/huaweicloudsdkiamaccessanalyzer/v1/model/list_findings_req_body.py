@@ -29,7 +29,7 @@ class ListFindingsReqBody:
     }
 
     def __init__(self, filters=None, limit=None, marker=None):
-        """ListFindingsReqBody
+        r"""ListFindingsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListFindingsReqBody:
 
     @property
     def filters(self):
-        """Gets the filters of this ListFindingsReqBody.
+        r"""Gets the filters of this ListFindingsReqBody.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -68,7 +68,7 @@ class ListFindingsReqBody:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this ListFindingsReqBody.
+        r"""Sets the filters of this ListFindingsReqBody.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -79,7 +79,7 @@ class ListFindingsReqBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFindingsReqBody.
+        r"""Gets the limit of this ListFindingsReqBody.
 
         单页最大结果数。
 
@@ -90,7 +90,7 @@ class ListFindingsReqBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFindingsReqBody.
+        r"""Sets the limit of this ListFindingsReqBody.
 
         单页最大结果数。
 
@@ -101,7 +101,7 @@ class ListFindingsReqBody:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFindingsReqBody.
+        r"""Gets the marker of this ListFindingsReqBody.
 
         页面标记。
 
@@ -112,7 +112,7 @@ class ListFindingsReqBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFindingsReqBody.
+        r"""Sets the marker of this ListFindingsReqBody.
 
         页面标记。
 

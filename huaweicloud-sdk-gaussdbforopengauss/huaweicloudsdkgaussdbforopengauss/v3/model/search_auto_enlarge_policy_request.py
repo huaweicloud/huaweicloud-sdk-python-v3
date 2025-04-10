@@ -27,7 +27,7 @@ class SearchAutoEnlargePolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """SearchAutoEnlargePolicyRequest
+        r"""SearchAutoEnlargePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SearchAutoEnlargePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SearchAutoEnlargePolicyRequest.
+        r"""Gets the x_language of this SearchAutoEnlargePolicyRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class SearchAutoEnlargePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SearchAutoEnlargePolicyRequest.
+        r"""Sets the x_language of this SearchAutoEnlargePolicyRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class SearchAutoEnlargePolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SearchAutoEnlargePolicyRequest.
+        r"""Gets the instance_id of this SearchAutoEnlargePolicyRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class SearchAutoEnlargePolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SearchAutoEnlargePolicyRequest.
+        r"""Sets the instance_id of this SearchAutoEnlargePolicyRequest.
 
         实例ID。
 

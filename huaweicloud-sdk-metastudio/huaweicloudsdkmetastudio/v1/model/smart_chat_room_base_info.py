@@ -47,7 +47,7 @@ class SmartChatRoomBaseInfo:
     }
 
     def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, concurrency=None, voice_config_list=None, default_language=None, create_time=None, update_time=None):
-        """SmartChatRoomBaseInfo
+        r"""SmartChatRoomBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def room_id(self):
-        """Gets the room_id of this SmartChatRoomBaseInfo.
+        r"""Gets the room_id of this SmartChatRoomBaseInfo.
 
         智能交互对话ID
 
@@ -131,7 +131,7 @@ class SmartChatRoomBaseInfo:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this SmartChatRoomBaseInfo.
+        r"""Sets the room_id of this SmartChatRoomBaseInfo.
 
         智能交互对话ID
 
@@ -142,7 +142,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def room_name(self):
-        """Gets the room_name of this SmartChatRoomBaseInfo.
+        r"""Gets the room_name of this SmartChatRoomBaseInfo.
 
         智能交互对话名称
 
@@ -153,7 +153,7 @@ class SmartChatRoomBaseInfo:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this SmartChatRoomBaseInfo.
+        r"""Sets the room_name of this SmartChatRoomBaseInfo.
 
         智能交互对话名称
 
@@ -164,7 +164,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def room_description(self):
-        """Gets the room_description of this SmartChatRoomBaseInfo.
+        r"""Gets the room_description of this SmartChatRoomBaseInfo.
 
         智能交互对话描述。
 
@@ -175,7 +175,7 @@ class SmartChatRoomBaseInfo:
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this SmartChatRoomBaseInfo.
+        r"""Sets the room_description of this SmartChatRoomBaseInfo.
 
         智能交互对话描述。
 
@@ -186,7 +186,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this SmartChatRoomBaseInfo.
+        r"""Gets the robot_id of this SmartChatRoomBaseInfo.
 
         机器人ID。
 
@@ -197,7 +197,7 @@ class SmartChatRoomBaseInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this SmartChatRoomBaseInfo.
+        r"""Sets the robot_id of this SmartChatRoomBaseInfo.
 
         机器人ID。
 
@@ -208,7 +208,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this SmartChatRoomBaseInfo.
+        r"""Gets the cover_url of this SmartChatRoomBaseInfo.
 
         对话封面图URL
 
@@ -219,7 +219,7 @@ class SmartChatRoomBaseInfo:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this SmartChatRoomBaseInfo.
+        r"""Sets the cover_url of this SmartChatRoomBaseInfo.
 
         对话封面图URL
 
@@ -230,7 +230,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def model_infos(self):
-        """Gets the model_infos of this SmartChatRoomBaseInfo.
+        r"""Gets the model_infos of this SmartChatRoomBaseInfo.
 
         :return: The model_infos of this SmartChatRoomBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ModelInfo`
@@ -239,7 +239,7 @@ class SmartChatRoomBaseInfo:
 
     @model_infos.setter
     def model_infos(self, model_infos):
-        """Sets the model_infos of this SmartChatRoomBaseInfo.
+        r"""Sets the model_infos of this SmartChatRoomBaseInfo.
 
         :param model_infos: The model_infos of this SmartChatRoomBaseInfo.
         :type model_infos: :class:`huaweicloudsdkmetastudio.v1.ModelInfo`
@@ -248,7 +248,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this SmartChatRoomBaseInfo.
+        r"""Gets the voice_config of this SmartChatRoomBaseInfo.
 
         :return: The voice_config of this SmartChatRoomBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -257,7 +257,7 @@ class SmartChatRoomBaseInfo:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this SmartChatRoomBaseInfo.
+        r"""Sets the voice_config of this SmartChatRoomBaseInfo.
 
         :param voice_config: The voice_config of this SmartChatRoomBaseInfo.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -266,7 +266,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def concurrency(self):
-        """Gets the concurrency of this SmartChatRoomBaseInfo.
+        r"""Gets the concurrency of this SmartChatRoomBaseInfo.
 
         **参数解释**： 并发路数。
 
@@ -277,7 +277,7 @@ class SmartChatRoomBaseInfo:
 
     @concurrency.setter
     def concurrency(self, concurrency):
-        """Sets the concurrency of this SmartChatRoomBaseInfo.
+        r"""Sets the concurrency of this SmartChatRoomBaseInfo.
 
         **参数解释**： 并发路数。
 
@@ -288,7 +288,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def voice_config_list(self):
-        """Gets the voice_config_list of this SmartChatRoomBaseInfo.
+        r"""Gets the voice_config_list of this SmartChatRoomBaseInfo.
 
         语音配置参数列表。
 
@@ -299,7 +299,7 @@ class SmartChatRoomBaseInfo:
 
     @voice_config_list.setter
     def voice_config_list(self, voice_config_list):
-        """Sets the voice_config_list of this SmartChatRoomBaseInfo.
+        r"""Sets the voice_config_list of this SmartChatRoomBaseInfo.
 
         语音配置参数列表。
 
@@ -310,7 +310,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def default_language(self):
-        """Gets the default_language of this SmartChatRoomBaseInfo.
+        r"""Gets the default_language of this SmartChatRoomBaseInfo.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -321,7 +321,7 @@ class SmartChatRoomBaseInfo:
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this SmartChatRoomBaseInfo.
+        r"""Sets the default_language of this SmartChatRoomBaseInfo.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -332,7 +332,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmartChatRoomBaseInfo.
+        r"""Gets the create_time of this SmartChatRoomBaseInfo.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -343,7 +343,7 @@ class SmartChatRoomBaseInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmartChatRoomBaseInfo.
+        r"""Sets the create_time of this SmartChatRoomBaseInfo.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -354,7 +354,7 @@ class SmartChatRoomBaseInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SmartChatRoomBaseInfo.
+        r"""Gets the update_time of this SmartChatRoomBaseInfo.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -365,7 +365,7 @@ class SmartChatRoomBaseInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SmartChatRoomBaseInfo.
+        r"""Sets the update_time of this SmartChatRoomBaseInfo.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 

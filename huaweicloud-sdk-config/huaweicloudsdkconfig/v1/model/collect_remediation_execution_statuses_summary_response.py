@@ -28,7 +28,7 @@ class CollectRemediationExecutionStatusesSummaryResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """CollectRemediationExecutionStatusesSummaryResponse
+        r"""CollectRemediationExecutionStatusesSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CollectRemediationExecutionStatusesSummaryResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this CollectRemediationExecutionStatusesSummaryResponse.
+        r"""Gets the value of this CollectRemediationExecutionStatusesSummaryResponse.
 
         合规规则修正执行结果查询列表。
 
@@ -62,7 +62,7 @@ class CollectRemediationExecutionStatusesSummaryResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CollectRemediationExecutionStatusesSummaryResponse.
+        r"""Sets the value of this CollectRemediationExecutionStatusesSummaryResponse.
 
         合规规则修正执行结果查询列表。
 
@@ -73,7 +73,7 @@ class CollectRemediationExecutionStatusesSummaryResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this CollectRemediationExecutionStatusesSummaryResponse.
+        r"""Gets the page_info of this CollectRemediationExecutionStatusesSummaryResponse.
 
         :return: The page_info of this CollectRemediationExecutionStatusesSummaryResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class CollectRemediationExecutionStatusesSummaryResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this CollectRemediationExecutionStatusesSummaryResponse.
+        r"""Sets the page_info of this CollectRemediationExecutionStatusesSummaryResponse.
 
         :param page_info: The page_info of this CollectRemediationExecutionStatusesSummaryResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

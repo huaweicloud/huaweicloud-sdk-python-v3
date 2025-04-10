@@ -27,7 +27,7 @@ class ListProjectTemplatesRequest:
     }
 
     def __init__(self, arch=None, stack_id=None):
-        """ListProjectTemplatesRequest
+        r"""ListProjectTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListProjectTemplatesRequest:
 
     @property
     def arch(self):
-        """Gets the arch of this ListProjectTemplatesRequest.
+        r"""Gets the arch of this ListProjectTemplatesRequest.
 
         cpu架构 x86|arm
 
@@ -60,7 +60,7 @@ class ListProjectTemplatesRequest:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ListProjectTemplatesRequest.
+        r"""Sets the arch of this ListProjectTemplatesRequest.
 
         cpu架构 x86|arm
 
@@ -71,7 +71,7 @@ class ListProjectTemplatesRequest:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this ListProjectTemplatesRequest.
+        r"""Gets the stack_id of this ListProjectTemplatesRequest.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
@@ -82,7 +82,7 @@ class ListProjectTemplatesRequest:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this ListProjectTemplatesRequest.
+        r"""Sets the stack_id of this ListProjectTemplatesRequest.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 

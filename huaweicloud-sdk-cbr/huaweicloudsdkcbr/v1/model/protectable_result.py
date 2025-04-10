@@ -33,7 +33,7 @@ class ProtectableResult:
     }
 
     def __init__(self, code=None, reason=None, result=None, vault=None, message=None):
-        """ProtectableResult
+        r"""ProtectableResult
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ProtectableResult:
 
     @property
     def code(self):
-        """Gets the code of this ProtectableResult.
+        r"""Gets the code of this ProtectableResult.
 
         不支持备份的错误码
 
@@ -81,7 +81,7 @@ class ProtectableResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ProtectableResult.
+        r"""Sets the code of this ProtectableResult.
 
         不支持备份的错误码
 
@@ -92,7 +92,7 @@ class ProtectableResult:
 
     @property
     def reason(self):
-        """Gets the reason of this ProtectableResult.
+        r"""Gets the reason of this ProtectableResult.
 
         不支持备份的原因
 
@@ -103,7 +103,7 @@ class ProtectableResult:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ProtectableResult.
+        r"""Sets the reason of this ProtectableResult.
 
         不支持备份的原因
 
@@ -114,7 +114,7 @@ class ProtectableResult:
 
     @property
     def result(self):
-        """Gets the result of this ProtectableResult.
+        r"""Gets the result of this ProtectableResult.
 
         是否可备份
 
@@ -125,7 +125,7 @@ class ProtectableResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ProtectableResult.
+        r"""Sets the result of this ProtectableResult.
 
         是否可备份
 
@@ -136,7 +136,7 @@ class ProtectableResult:
 
     @property
     def vault(self):
-        """Gets the vault of this ProtectableResult.
+        r"""Gets the vault of this ProtectableResult.
 
         :return: The vault of this ProtectableResult.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultGet`
@@ -145,7 +145,7 @@ class ProtectableResult:
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this ProtectableResult.
+        r"""Sets the vault of this ProtectableResult.
 
         :param vault: The vault of this ProtectableResult.
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultGet`
@@ -154,7 +154,7 @@ class ProtectableResult:
 
     @property
     def message(self):
-        """Gets the message of this ProtectableResult.
+        r"""Gets the message of this ProtectableResult.
 
         资源不可备份的原因信息，当资源可保护性检验失败时才有该字段。
 
@@ -165,7 +165,7 @@ class ProtectableResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ProtectableResult.
+        r"""Sets the message of this ProtectableResult.
 
         资源不可备份的原因信息，当资源可保护性检验失败时才有该字段。
 

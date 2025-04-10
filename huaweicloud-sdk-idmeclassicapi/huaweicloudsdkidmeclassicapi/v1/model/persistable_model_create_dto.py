@@ -39,7 +39,7 @@ class PersistableModelCreateDTO:
     }
 
     def __init__(self, create_time=None, creator=None, id=None, last_update_time=None, modifier=None, rdm_extension_type=None, tenant=None, unique_key=None):
-        """PersistableModelCreateDTO
+        r"""PersistableModelCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PersistableModelCreateDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PersistableModelCreateDTO.
+        r"""Gets the create_time of this PersistableModelCreateDTO.
 
         **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -103,7 +103,7 @@ class PersistableModelCreateDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PersistableModelCreateDTO.
+        r"""Sets the create_time of this PersistableModelCreateDTO.
 
         **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -114,7 +114,7 @@ class PersistableModelCreateDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this PersistableModelCreateDTO.
+        r"""Gets the creator of this PersistableModelCreateDTO.
 
         **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -125,7 +125,7 @@ class PersistableModelCreateDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PersistableModelCreateDTO.
+        r"""Sets the creator of this PersistableModelCreateDTO.
 
         **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -136,7 +136,7 @@ class PersistableModelCreateDTO:
 
     @property
     def id(self):
-        """Gets the id of this PersistableModelCreateDTO.
+        r"""Gets the id of this PersistableModelCreateDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -147,7 +147,7 @@ class PersistableModelCreateDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersistableModelCreateDTO.
+        r"""Sets the id of this PersistableModelCreateDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -158,7 +158,7 @@ class PersistableModelCreateDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this PersistableModelCreateDTO.
+        r"""Gets the last_update_time of this PersistableModelCreateDTO.
 
         **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -169,7 +169,7 @@ class PersistableModelCreateDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this PersistableModelCreateDTO.
+        r"""Sets the last_update_time of this PersistableModelCreateDTO.
 
         **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -180,7 +180,7 @@ class PersistableModelCreateDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this PersistableModelCreateDTO.
+        r"""Gets the modifier of this PersistableModelCreateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -191,7 +191,7 @@ class PersistableModelCreateDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this PersistableModelCreateDTO.
+        r"""Sets the modifier of this PersistableModelCreateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -202,7 +202,7 @@ class PersistableModelCreateDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this PersistableModelCreateDTO.
+        r"""Gets the rdm_extension_type of this PersistableModelCreateDTO.
 
         **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -213,7 +213,7 @@ class PersistableModelCreateDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this PersistableModelCreateDTO.
+        r"""Sets the rdm_extension_type of this PersistableModelCreateDTO.
 
         **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -224,7 +224,7 @@ class PersistableModelCreateDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this PersistableModelCreateDTO.
+        r"""Gets the tenant of this PersistableModelCreateDTO.
 
         :return: The tenant of this PersistableModelCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -233,7 +233,7 @@ class PersistableModelCreateDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this PersistableModelCreateDTO.
+        r"""Sets the tenant of this PersistableModelCreateDTO.
 
         :param tenant: The tenant of this PersistableModelCreateDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -242,7 +242,7 @@ class PersistableModelCreateDTO:
 
     @property
     def unique_key(self):
-        """Gets the unique_key of this PersistableModelCreateDTO.
+        r"""Gets the unique_key of this PersistableModelCreateDTO.
 
         **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -253,7 +253,7 @@ class PersistableModelCreateDTO:
 
     @unique_key.setter
     def unique_key(self, unique_key):
-        """Sets the unique_key of this PersistableModelCreateDTO.
+        r"""Sets the unique_key of this PersistableModelCreateDTO.
 
         **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

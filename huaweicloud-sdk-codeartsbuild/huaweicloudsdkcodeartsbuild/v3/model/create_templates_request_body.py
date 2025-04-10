@@ -33,7 +33,7 @@ class CreateTemplatesRequestBody:
     }
 
     def __init__(self, template=None, name=None, description=None, tool_type=None, parameters=None):
-        """CreateTemplatesRequestBody
+        r"""CreateTemplatesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateTemplatesRequestBody:
 
     @property
     def template(self):
-        """Gets the template of this CreateTemplatesRequestBody.
+        r"""Gets the template of this CreateTemplatesRequestBody.
 
         :return: The template of this CreateTemplatesRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CreateTemplate`
@@ -78,7 +78,7 @@ class CreateTemplatesRequestBody:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this CreateTemplatesRequestBody.
+        r"""Sets the template of this CreateTemplatesRequestBody.
 
         :param template: The template of this CreateTemplatesRequestBody.
         :type template: :class:`huaweicloudsdkcodeartsbuild.v3.CreateTemplate`
@@ -87,7 +87,7 @@ class CreateTemplatesRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateTemplatesRequestBody.
+        r"""Gets the name of this CreateTemplatesRequestBody.
 
         模板命名
 
@@ -98,7 +98,7 @@ class CreateTemplatesRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTemplatesRequestBody.
+        r"""Sets the name of this CreateTemplatesRequestBody.
 
         模板命名
 
@@ -109,7 +109,7 @@ class CreateTemplatesRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateTemplatesRequestBody.
+        r"""Gets the description of this CreateTemplatesRequestBody.
 
         模板说明
 
@@ -120,7 +120,7 @@ class CreateTemplatesRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTemplatesRequestBody.
+        r"""Sets the description of this CreateTemplatesRequestBody.
 
         模板说明
 
@@ -131,7 +131,7 @@ class CreateTemplatesRequestBody:
 
     @property
     def tool_type(self):
-        """Gets the tool_type of this CreateTemplatesRequestBody.
+        r"""Gets the tool_type of this CreateTemplatesRequestBody.
 
         工具类型
 
@@ -142,7 +142,7 @@ class CreateTemplatesRequestBody:
 
     @tool_type.setter
     def tool_type(self, tool_type):
-        """Sets the tool_type of this CreateTemplatesRequestBody.
+        r"""Sets the tool_type of this CreateTemplatesRequestBody.
 
         工具类型
 
@@ -153,7 +153,7 @@ class CreateTemplatesRequestBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this CreateTemplatesRequestBody.
+        r"""Gets the parameters of this CreateTemplatesRequestBody.
 
         构建执行参数列表
 
@@ -164,7 +164,7 @@ class CreateTemplatesRequestBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this CreateTemplatesRequestBody.
+        r"""Sets the parameters of this CreateTemplatesRequestBody.
 
         构建执行参数列表
 

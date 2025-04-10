@@ -41,7 +41,7 @@ class TaskDefinitionDto:
     }
 
     def __init__(self, task_name=None, display_name=None, output_dir=None, whole_output_dir=None, io_acc_type=None, resources=None, location=None, inputs=None, app_info=None):
-        """TaskDefinitionDto
+        r"""TaskDefinitionDto
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TaskDefinitionDto:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskDefinitionDto.
+        r"""Gets the task_name of this TaskDefinitionDto.
 
         子任务实际名称
 
@@ -110,7 +110,7 @@ class TaskDefinitionDto:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskDefinitionDto.
+        r"""Sets the task_name of this TaskDefinitionDto.
 
         子任务实际名称
 
@@ -121,7 +121,7 @@ class TaskDefinitionDto:
 
     @property
     def display_name(self):
-        """Gets the display_name of this TaskDefinitionDto.
+        r"""Gets the display_name of this TaskDefinitionDto.
 
         流程的子任务展示名称
 
@@ -132,7 +132,7 @@ class TaskDefinitionDto:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this TaskDefinitionDto.
+        r"""Sets the display_name of this TaskDefinitionDto.
 
         流程的子任务展示名称
 
@@ -143,7 +143,7 @@ class TaskDefinitionDto:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this TaskDefinitionDto.
+        r"""Gets the output_dir of this TaskDefinitionDto.
 
         子任务的输出存放路径
 
@@ -154,7 +154,7 @@ class TaskDefinitionDto:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this TaskDefinitionDto.
+        r"""Sets the output_dir of this TaskDefinitionDto.
 
         子任务的输出存放路径
 
@@ -165,7 +165,7 @@ class TaskDefinitionDto:
 
     @property
     def whole_output_dir(self):
-        """Gets the whole_output_dir of this TaskDefinitionDto.
+        r"""Gets the whole_output_dir of this TaskDefinitionDto.
 
         子任务的完整输出路径，查看流程不会返回，查看作业时才会返回完整输出路径
 
@@ -176,7 +176,7 @@ class TaskDefinitionDto:
 
     @whole_output_dir.setter
     def whole_output_dir(self, whole_output_dir):
-        """Sets the whole_output_dir of this TaskDefinitionDto.
+        r"""Sets the whole_output_dir of this TaskDefinitionDto.
 
         子任务的完整输出路径，查看流程不会返回，查看作业时才会返回完整输出路径
 
@@ -187,7 +187,7 @@ class TaskDefinitionDto:
 
     @property
     def io_acc_type(self):
-        """Gets the io_acc_type of this TaskDefinitionDto.
+        r"""Gets the io_acc_type of this TaskDefinitionDto.
 
         子任务使用的IO加速类型，不填表示不使用；
 
@@ -198,7 +198,7 @@ class TaskDefinitionDto:
 
     @io_acc_type.setter
     def io_acc_type(self, io_acc_type):
-        """Sets the io_acc_type of this TaskDefinitionDto.
+        r"""Sets the io_acc_type of this TaskDefinitionDto.
 
         子任务使用的IO加速类型，不填表示不使用；
 
@@ -209,7 +209,7 @@ class TaskDefinitionDto:
 
     @property
     def resources(self):
-        """Gets the resources of this TaskDefinitionDto.
+        r"""Gets the resources of this TaskDefinitionDto.
 
         :return: The resources of this TaskDefinitionDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -218,7 +218,7 @@ class TaskDefinitionDto:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this TaskDefinitionDto.
+        r"""Sets the resources of this TaskDefinitionDto.
 
         :param resources: The resources of this TaskDefinitionDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -227,7 +227,7 @@ class TaskDefinitionDto:
 
     @property
     def location(self):
-        """Gets the location of this TaskDefinitionDto.
+        r"""Gets the location of this TaskDefinitionDto.
 
         :return: The location of this TaskDefinitionDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
@@ -236,7 +236,7 @@ class TaskDefinitionDto:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this TaskDefinitionDto.
+        r"""Sets the location of this TaskDefinitionDto.
 
         :param location: The location of this TaskDefinitionDto.
         :type location: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
@@ -245,7 +245,7 @@ class TaskDefinitionDto:
 
     @property
     def inputs(self):
-        """Gets the inputs of this TaskDefinitionDto.
+        r"""Gets the inputs of this TaskDefinitionDto.
 
         子任务的输入参数信息
 
@@ -256,7 +256,7 @@ class TaskDefinitionDto:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this TaskDefinitionDto.
+        r"""Sets the inputs of this TaskDefinitionDto.
 
         子任务的输入参数信息
 
@@ -267,7 +267,7 @@ class TaskDefinitionDto:
 
     @property
     def app_info(self):
-        """Gets the app_info of this TaskDefinitionDto.
+        r"""Gets the app_info of this TaskDefinitionDto.
 
         :return: The app_info of this TaskDefinitionDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AppInfoDto`
@@ -276,7 +276,7 @@ class TaskDefinitionDto:
 
     @app_info.setter
     def app_info(self, app_info):
-        """Sets the app_info of this TaskDefinitionDto.
+        r"""Sets the app_info of this TaskDefinitionDto.
 
         :param app_info: The app_info of this TaskDefinitionDto.
         :type app_info: :class:`huaweicloudsdkeihealth.v1.AppInfoDto`

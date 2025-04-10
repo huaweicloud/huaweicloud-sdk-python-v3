@@ -61,7 +61,7 @@ class QueryTranscodingsTaskResponse:
     }
 
     def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None, additional_manifests=None):
-        """QueryTranscodingsTaskResponse
+        r"""QueryTranscodingsTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def task_id(self):
-        """Gets the task_id of this QueryTranscodingsTaskResponse.
+        r"""Gets the task_id of this QueryTranscodingsTaskResponse.
 
         任务ID。
 
@@ -180,7 +180,7 @@ class QueryTranscodingsTaskResponse:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this QueryTranscodingsTaskResponse.
+        r"""Sets the task_id of this QueryTranscodingsTaskResponse.
 
         任务ID。
 
@@ -191,7 +191,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def status(self):
-        """Gets the status of this QueryTranscodingsTaskResponse.
+        r"""Gets the status of this QueryTranscodingsTaskResponse.
 
         任务执行状态。 
 
@@ -202,7 +202,7 @@ class QueryTranscodingsTaskResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryTranscodingsTaskResponse.
+        r"""Sets the status of this QueryTranscodingsTaskResponse.
 
         任务执行状态。 
 
@@ -213,7 +213,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def progress(self):
-        """Gets the progress of this QueryTranscodingsTaskResponse.
+        r"""Gets the progress of this QueryTranscodingsTaskResponse.
 
         任务执行进度百分比, 取值范围：[0, 100]。 
 
@@ -224,7 +224,7 @@ class QueryTranscodingsTaskResponse:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this QueryTranscodingsTaskResponse.
+        r"""Sets the progress of this QueryTranscodingsTaskResponse.
 
         任务执行进度百分比, 取值范围：[0, 100]。 
 
@@ -235,7 +235,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryTranscodingsTaskResponse.
+        r"""Gets the create_time of this QueryTranscodingsTaskResponse.
 
         转码任务启动时间 
 
@@ -246,7 +246,7 @@ class QueryTranscodingsTaskResponse:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryTranscodingsTaskResponse.
+        r"""Sets the create_time of this QueryTranscodingsTaskResponse.
 
         转码任务启动时间 
 
@@ -257,7 +257,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryTranscodingsTaskResponse.
+        r"""Gets the end_time of this QueryTranscodingsTaskResponse.
 
         转码任务结束时间 
 
@@ -268,7 +268,7 @@ class QueryTranscodingsTaskResponse:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryTranscodingsTaskResponse.
+        r"""Sets the end_time of this QueryTranscodingsTaskResponse.
 
         转码任务结束时间 
 
@@ -279,7 +279,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def trans_template_id(self):
-        """Gets the trans_template_id of this QueryTranscodingsTaskResponse.
+        r"""Gets the trans_template_id of this QueryTranscodingsTaskResponse.
 
         转码任务对应的转码模板ID 
 
@@ -290,7 +290,7 @@ class QueryTranscodingsTaskResponse:
 
     @trans_template_id.setter
     def trans_template_id(self, trans_template_id):
-        """Sets the trans_template_id of this QueryTranscodingsTaskResponse.
+        r"""Sets the trans_template_id of this QueryTranscodingsTaskResponse.
 
         转码任务对应的转码模板ID 
 
@@ -301,7 +301,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def input(self):
-        """Gets the input of this QueryTranscodingsTaskResponse.
+        r"""Gets the input of this QueryTranscodingsTaskResponse.
 
         :return: The input of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -310,7 +310,7 @@ class QueryTranscodingsTaskResponse:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this QueryTranscodingsTaskResponse.
+        r"""Sets the input of this QueryTranscodingsTaskResponse.
 
         :param input: The input of this QueryTranscodingsTaskResponse.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -319,7 +319,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def output(self):
-        """Gets the output of this QueryTranscodingsTaskResponse.
+        r"""Gets the output of this QueryTranscodingsTaskResponse.
 
         :return: The output of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -328,7 +328,7 @@ class QueryTranscodingsTaskResponse:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this QueryTranscodingsTaskResponse.
+        r"""Sets the output of this QueryTranscodingsTaskResponse.
 
         :param output: The output of this QueryTranscodingsTaskResponse.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -337,7 +337,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this QueryTranscodingsTaskResponse.
+        r"""Gets the output_file_name of this QueryTranscodingsTaskResponse.
 
         转码生成的文件名，数组类型，可能包含多个，包含截图文件名。 
 
@@ -348,7 +348,7 @@ class QueryTranscodingsTaskResponse:
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this QueryTranscodingsTaskResponse.
+        r"""Sets the output_file_name of this QueryTranscodingsTaskResponse.
 
         转码生成的文件名，数组类型，可能包含多个，包含截图文件名。 
 
@@ -359,7 +359,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def user_data(self):
-        """Gets the user_data of this QueryTranscodingsTaskResponse.
+        r"""Gets the user_data of this QueryTranscodingsTaskResponse.
 
         用户自定义数据。 
 
@@ -370,7 +370,7 @@ class QueryTranscodingsTaskResponse:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this QueryTranscodingsTaskResponse.
+        r"""Sets the user_data of this QueryTranscodingsTaskResponse.
 
         用户自定义数据。 
 
@@ -381,7 +381,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryTranscodingsTaskResponse.
+        r"""Gets the error_code of this QueryTranscodingsTaskResponse.
 
         转码任务的返回码。 
 
@@ -392,7 +392,7 @@ class QueryTranscodingsTaskResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryTranscodingsTaskResponse.
+        r"""Sets the error_code of this QueryTranscodingsTaskResponse.
 
         转码任务的返回码。 
 
@@ -403,7 +403,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def description(self):
-        """Gets the description of this QueryTranscodingsTaskResponse.
+        r"""Gets the description of this QueryTranscodingsTaskResponse.
 
         转码任务描述，当转码出现异常时，此字段为异常的原因。 
 
@@ -414,7 +414,7 @@ class QueryTranscodingsTaskResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryTranscodingsTaskResponse.
+        r"""Sets the description of this QueryTranscodingsTaskResponse.
 
         转码任务描述，当转码出现异常时，此字段为异常的原因。 
 
@@ -425,7 +425,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def tips(self):
-        """Gets the tips of this QueryTranscodingsTaskResponse.
+        r"""Gets the tips of this QueryTranscodingsTaskResponse.
 
         转码成功，但音频采样率过低时的提示。 
 
@@ -436,7 +436,7 @@ class QueryTranscodingsTaskResponse:
 
     @tips.setter
     def tips(self, tips):
-        """Sets the tips of this QueryTranscodingsTaskResponse.
+        r"""Sets the tips of this QueryTranscodingsTaskResponse.
 
         转码成功，但音频采样率过低时的提示。 
 
@@ -447,7 +447,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def transcode_detail(self):
-        """Gets the transcode_detail of this QueryTranscodingsTaskResponse.
+        r"""Gets the transcode_detail of this QueryTranscodingsTaskResponse.
 
         :return: The transcode_detail of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
@@ -456,7 +456,7 @@ class QueryTranscodingsTaskResponse:
 
     @transcode_detail.setter
     def transcode_detail(self, transcode_detail):
-        """Sets the transcode_detail of this QueryTranscodingsTaskResponse.
+        r"""Sets the transcode_detail of this QueryTranscodingsTaskResponse.
 
         :param transcode_detail: The transcode_detail of this QueryTranscodingsTaskResponse.
         :type transcode_detail: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
@@ -465,7 +465,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def thumbnail_output(self):
-        """Gets the thumbnail_output of this QueryTranscodingsTaskResponse.
+        r"""Gets the thumbnail_output of this QueryTranscodingsTaskResponse.
 
         :return: The thumbnail_output of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -474,7 +474,7 @@ class QueryTranscodingsTaskResponse:
 
     @thumbnail_output.setter
     def thumbnail_output(self, thumbnail_output):
-        """Sets the thumbnail_output of this QueryTranscodingsTaskResponse.
+        r"""Sets the thumbnail_output of this QueryTranscodingsTaskResponse.
 
         :param thumbnail_output: The thumbnail_output of this QueryTranscodingsTaskResponse.
         :type thumbnail_output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -483,7 +483,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def thumbnail_outputname(self):
-        """Gets the thumbnail_outputname of this QueryTranscodingsTaskResponse.
+        r"""Gets the thumbnail_outputname of this QueryTranscodingsTaskResponse.
 
         截图压缩包名。 
 
@@ -494,7 +494,7 @@ class QueryTranscodingsTaskResponse:
 
     @thumbnail_outputname.setter
     def thumbnail_outputname(self, thumbnail_outputname):
-        """Sets the thumbnail_outputname of this QueryTranscodingsTaskResponse.
+        r"""Sets the thumbnail_outputname of this QueryTranscodingsTaskResponse.
 
         截图压缩包名。 
 
@@ -505,7 +505,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def pic_info(self):
-        """Gets the pic_info of this QueryTranscodingsTaskResponse.
+        r"""Gets the pic_info of this QueryTranscodingsTaskResponse.
 
         截图文件信息。 
 
@@ -516,7 +516,7 @@ class QueryTranscodingsTaskResponse:
 
     @pic_info.setter
     def pic_info(self, pic_info):
-        """Sets the pic_info of this QueryTranscodingsTaskResponse.
+        r"""Sets the pic_info of this QueryTranscodingsTaskResponse.
 
         截图文件信息。 
 
@@ -527,7 +527,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def av_parameters(self):
-        """Gets the av_parameters of this QueryTranscodingsTaskResponse.
+        r"""Gets the av_parameters of this QueryTranscodingsTaskResponse.
 
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
@@ -538,7 +538,7 @@ class QueryTranscodingsTaskResponse:
 
     @av_parameters.setter
     def av_parameters(self, av_parameters):
-        """Sets the av_parameters of this QueryTranscodingsTaskResponse.
+        r"""Sets the av_parameters of this QueryTranscodingsTaskResponse.
 
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
@@ -549,7 +549,7 @@ class QueryTranscodingsTaskResponse:
 
     @property
     def additional_manifests(self):
-        """Gets the additional_manifests of this QueryTranscodingsTaskResponse.
+        r"""Gets the additional_manifests of this QueryTranscodingsTaskResponse.
 
         主索引定制参数。 
 
@@ -560,7 +560,7 @@ class QueryTranscodingsTaskResponse:
 
     @additional_manifests.setter
     def additional_manifests(self, additional_manifests):
-        """Sets the additional_manifests of this QueryTranscodingsTaskResponse.
+        r"""Sets the additional_manifests of this QueryTranscodingsTaskResponse.
 
         主索引定制参数。 
 

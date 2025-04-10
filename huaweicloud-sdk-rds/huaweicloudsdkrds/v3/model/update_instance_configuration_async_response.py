@@ -28,7 +28,7 @@ class UpdateInstanceConfigurationAsyncResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, restart_required=None):
-        """UpdateInstanceConfigurationAsyncResponse
+        r"""UpdateInstanceConfigurationAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateInstanceConfigurationAsyncResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateInstanceConfigurationAsyncResponse.
+        r"""Gets the job_id of this UpdateInstanceConfigurationAsyncResponse.
 
         任务流id
 
@@ -62,7 +62,7 @@ class UpdateInstanceConfigurationAsyncResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateInstanceConfigurationAsyncResponse.
+        r"""Sets the job_id of this UpdateInstanceConfigurationAsyncResponse.
 
         任务流id
 
@@ -73,7 +73,7 @@ class UpdateInstanceConfigurationAsyncResponse(SdkResponse):
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this UpdateInstanceConfigurationAsyncResponse.
+        r"""Gets the restart_required of this UpdateInstanceConfigurationAsyncResponse.
 
         实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
 
@@ -84,7 +84,7 @@ class UpdateInstanceConfigurationAsyncResponse(SdkResponse):
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this UpdateInstanceConfigurationAsyncResponse.
+        r"""Sets the restart_required of this UpdateInstanceConfigurationAsyncResponse.
 
         实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
 

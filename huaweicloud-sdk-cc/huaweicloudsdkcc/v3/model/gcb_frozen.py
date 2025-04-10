@@ -25,7 +25,7 @@ class GcbFrozen:
     }
 
     def __init__(self, frozen=None):
-        """GcbFrozen
+        r"""GcbFrozen
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbFrozen:
 
     @property
     def frozen(self):
-        """Gets the frozen of this GcbFrozen.
+        r"""Gets the frozen of this GcbFrozen.
 
         功能说明: 全域互联带宽是否冻结。 取值范围：     true-冻结     false-非冻结
 
@@ -54,7 +54,7 @@ class GcbFrozen:
 
     @frozen.setter
     def frozen(self, frozen):
-        """Sets the frozen of this GcbFrozen.
+        r"""Sets the frozen of this GcbFrozen.
 
         功能说明: 全域互联带宽是否冻结。 取值范围：     true-冻结     false-非冻结
 

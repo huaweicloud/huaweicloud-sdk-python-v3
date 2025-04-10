@@ -35,7 +35,7 @@ class TempDetailInfo:
     }
 
     def __init__(self, description=None, id=None, is_quoted=None, name=None, temp_type=None, update_time=None):
-        """TempDetailInfo
+        r"""TempDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TempDetailInfo:
 
     @property
     def description(self):
-        """Gets the description of this TempDetailInfo.
+        r"""Gets the description of this TempDetailInfo.
 
         描述
 
@@ -89,7 +89,7 @@ class TempDetailInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TempDetailInfo.
+        r"""Sets the description of this TempDetailInfo.
 
         描述
 
@@ -100,7 +100,7 @@ class TempDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this TempDetailInfo.
+        r"""Gets the id of this TempDetailInfo.
 
         事务id
 
@@ -111,7 +111,7 @@ class TempDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TempDetailInfo.
+        r"""Sets the id of this TempDetailInfo.
 
         事务id
 
@@ -122,7 +122,7 @@ class TempDetailInfo:
 
     @property
     def is_quoted(self):
-        """Gets the is_quoted of this TempDetailInfo.
+        r"""Gets the is_quoted of this TempDetailInfo.
 
         是否被引用
 
@@ -133,7 +133,7 @@ class TempDetailInfo:
 
     @is_quoted.setter
     def is_quoted(self, is_quoted):
-        """Sets the is_quoted of this TempDetailInfo.
+        r"""Sets the is_quoted of this TempDetailInfo.
 
         是否被引用
 
@@ -144,7 +144,7 @@ class TempDetailInfo:
 
     @property
     def name(self):
-        """Gets the name of this TempDetailInfo.
+        r"""Gets the name of this TempDetailInfo.
 
         事务名称
 
@@ -155,7 +155,7 @@ class TempDetailInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TempDetailInfo.
+        r"""Sets the name of this TempDetailInfo.
 
         事务名称
 
@@ -166,7 +166,7 @@ class TempDetailInfo:
 
     @property
     def temp_type(self):
-        """Gets the temp_type of this TempDetailInfo.
+        r"""Gets the temp_type of this TempDetailInfo.
 
         事务类型（已弃用，兼容性保留）
 
@@ -177,7 +177,7 @@ class TempDetailInfo:
 
     @temp_type.setter
     def temp_type(self, temp_type):
-        """Sets the temp_type of this TempDetailInfo.
+        r"""Sets the temp_type of this TempDetailInfo.
 
         事务类型（已弃用，兼容性保留）
 
@@ -188,7 +188,7 @@ class TempDetailInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TempDetailInfo.
+        r"""Gets the update_time of this TempDetailInfo.
 
         更新时间
 
@@ -199,7 +199,7 @@ class TempDetailInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TempDetailInfo.
+        r"""Sets the update_time of this TempDetailInfo.
 
         更新时间
 

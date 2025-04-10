@@ -29,7 +29,7 @@ class ExternalAccessesCreate:
     }
 
     def __init__(self, protocol=None, address=None, forward_port=None):
-        """ExternalAccessesCreate
+        r"""ExternalAccessesCreate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExternalAccessesCreate:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ExternalAccessesCreate.
+        r"""Gets the protocol of this ExternalAccessesCreate.
 
         协议，支持http、https。
 
@@ -65,7 +65,7 @@ class ExternalAccessesCreate:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ExternalAccessesCreate.
+        r"""Sets the protocol of this ExternalAccessesCreate.
 
         协议，支持http、https。
 
@@ -76,7 +76,7 @@ class ExternalAccessesCreate:
 
     @property
     def address(self):
-        """Gets the address of this ExternalAccessesCreate.
+        r"""Gets the address of this ExternalAccessesCreate.
 
         访问地址。
 
@@ -87,7 +87,7 @@ class ExternalAccessesCreate:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ExternalAccessesCreate.
+        r"""Sets the address of this ExternalAccessesCreate.
 
         访问地址。
 
@@ -98,7 +98,7 @@ class ExternalAccessesCreate:
 
     @property
     def forward_port(self):
-        """Gets the forward_port of this ExternalAccessesCreate.
+        r"""Gets the forward_port of this ExternalAccessesCreate.
 
         端口号。
 
@@ -109,7 +109,7 @@ class ExternalAccessesCreate:
 
     @forward_port.setter
     def forward_port(self, forward_port):
-        """Sets the forward_port of this ExternalAccessesCreate.
+        r"""Sets the forward_port of this ExternalAccessesCreate.
 
         端口号。
 

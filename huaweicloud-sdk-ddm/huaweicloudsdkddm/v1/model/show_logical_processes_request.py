@@ -31,7 +31,7 @@ class ShowLogicalProcessesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, keyword=None):
-        """ShowLogicalProcessesRequest
+        r"""ShowLogicalProcessesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowLogicalProcessesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowLogicalProcessesRequest.
+        r"""Gets the instance_id of this ShowLogicalProcessesRequest.
 
         DDM实例ID。
 
@@ -74,7 +74,7 @@ class ShowLogicalProcessesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowLogicalProcessesRequest.
+        r"""Sets the instance_id of this ShowLogicalProcessesRequest.
 
         DDM实例ID。
 
@@ -85,7 +85,7 @@ class ShowLogicalProcessesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowLogicalProcessesRequest.
+        r"""Gets the offset of this ShowLogicalProcessesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -96,7 +96,7 @@ class ShowLogicalProcessesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowLogicalProcessesRequest.
+        r"""Sets the offset of this ShowLogicalProcessesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -107,7 +107,7 @@ class ShowLogicalProcessesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowLogicalProcessesRequest.
+        r"""Gets the limit of this ShowLogicalProcessesRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -118,7 +118,7 @@ class ShowLogicalProcessesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowLogicalProcessesRequest.
+        r"""Sets the limit of this ShowLogicalProcessesRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -129,7 +129,7 @@ class ShowLogicalProcessesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ShowLogicalProcessesRequest.
+        r"""Gets the keyword of this ShowLogicalProcessesRequest.
 
         会话结果筛选关键字，支持返回结果全字段模糊匹配，长度最大255
 
@@ -140,7 +140,7 @@ class ShowLogicalProcessesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ShowLogicalProcessesRequest.
+        r"""Sets the keyword of this ShowLogicalProcessesRequest.
 
         会话结果筛选关键字，支持返回结果全字段模糊匹配，长度最大255
 

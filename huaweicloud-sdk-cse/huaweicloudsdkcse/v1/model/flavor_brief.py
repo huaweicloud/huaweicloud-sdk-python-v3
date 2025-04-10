@@ -29,7 +29,7 @@ class FlavorBrief:
     }
 
     def __init__(self, flavor=None, description=None, spec=None):
-        """FlavorBrief
+        r"""FlavorBrief
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlavorBrief:
 
     @property
     def flavor(self):
-        """Gets the flavor of this FlavorBrief.
+        r"""Gets the flavor of this FlavorBrief.
 
         微服务引擎规格
 
@@ -68,7 +68,7 @@ class FlavorBrief:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this FlavorBrief.
+        r"""Sets the flavor of this FlavorBrief.
 
         微服务引擎规格
 
@@ -79,7 +79,7 @@ class FlavorBrief:
 
     @property
     def description(self):
-        """Gets the description of this FlavorBrief.
+        r"""Gets the description of this FlavorBrief.
 
         微服务引擎规格描述
 
@@ -90,7 +90,7 @@ class FlavorBrief:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlavorBrief.
+        r"""Sets the description of this FlavorBrief.
 
         微服务引擎规格描述
 
@@ -101,7 +101,7 @@ class FlavorBrief:
 
     @property
     def spec(self):
-        """Gets the spec of this FlavorBrief.
+        r"""Gets the spec of this FlavorBrief.
 
         :return: The spec of this FlavorBrief.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineSpec`
@@ -110,7 +110,7 @@ class FlavorBrief:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this FlavorBrief.
+        r"""Sets the spec of this FlavorBrief.
 
         :param spec: The spec of this FlavorBrief.
         :type spec: :class:`huaweicloudsdkcse.v1.EngineSpec`

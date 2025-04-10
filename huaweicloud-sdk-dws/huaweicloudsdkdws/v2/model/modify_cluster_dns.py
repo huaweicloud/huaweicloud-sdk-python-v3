@@ -29,7 +29,7 @@ class ModifyClusterDns:
     }
 
     def __init__(self, name=None, type=None, ttl=None):
-        """ModifyClusterDns
+        r"""ModifyClusterDns
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ModifyClusterDns:
 
     @property
     def name(self):
-        """Gets the name of this ModifyClusterDns.
+        r"""Gets the name of this ModifyClusterDns.
 
         待修改的域名。
 
@@ -65,7 +65,7 @@ class ModifyClusterDns:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyClusterDns.
+        r"""Sets the name of this ModifyClusterDns.
 
         待修改的域名。
 
@@ -76,7 +76,7 @@ class ModifyClusterDns:
 
     @property
     def type(self):
-        """Gets the type of this ModifyClusterDns.
+        r"""Gets the type of this ModifyClusterDns.
 
         域名类型。 - public：公网域名。 - private：内网域名。
 
@@ -87,7 +87,7 @@ class ModifyClusterDns:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ModifyClusterDns.
+        r"""Sets the type of this ModifyClusterDns.
 
         域名类型。 - public：公网域名。 - private：内网域名。
 
@@ -98,7 +98,7 @@ class ModifyClusterDns:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ModifyClusterDns.
+        r"""Gets the ttl of this ModifyClusterDns.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
 
@@ -109,7 +109,7 @@ class ModifyClusterDns:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ModifyClusterDns.
+        r"""Sets the ttl of this ModifyClusterDns.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
 

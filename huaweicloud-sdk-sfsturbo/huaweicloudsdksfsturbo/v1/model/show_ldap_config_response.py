@@ -40,7 +40,7 @@ class ShowLdapConfigResponse(SdkResponse):
     }
 
     def __init__(self, url=None, base_dn=None, user_dn=None, filter_condition=None, backup_url=None, schema=None, search_timeout=None, allow_local_user=None):
-        """ShowLdapConfigResponse
+        r"""ShowLdapConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowLdapConfigResponse.
+        r"""Gets the url of this ShowLdapConfigResponse.
 
         ldap服务器的url
 
@@ -104,7 +104,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowLdapConfigResponse.
+        r"""Sets the url of this ShowLdapConfigResponse.
 
         ldap服务器的url
 
@@ -115,7 +115,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def base_dn(self):
-        """Gets the base_dn of this ShowLdapConfigResponse.
+        r"""Gets the base_dn of this ShowLdapConfigResponse.
 
         数据库中的域
 
@@ -126,7 +126,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @base_dn.setter
     def base_dn(self, base_dn):
-        """Sets the base_dn of this ShowLdapConfigResponse.
+        r"""Sets the base_dn of this ShowLdapConfigResponse.
 
         数据库中的域
 
@@ -137,7 +137,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def user_dn(self):
-        """Gets the user_dn of this ShowLdapConfigResponse.
+        r"""Gets the user_dn of this ShowLdapConfigResponse.
 
         用户区别名
 
@@ -148,7 +148,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @user_dn.setter
     def user_dn(self, user_dn):
-        """Sets the user_dn of this ShowLdapConfigResponse.
+        r"""Sets the user_dn of this ShowLdapConfigResponse.
 
         用户区别名
 
@@ -159,7 +159,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def filter_condition(self):
-        """Gets the filter_condition of this ShowLdapConfigResponse.
+        r"""Gets the filter_condition of this ShowLdapConfigResponse.
 
         过滤条件。保留字段，暂不支持
 
@@ -170,7 +170,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @filter_condition.setter
     def filter_condition(self, filter_condition):
-        """Sets the filter_condition of this ShowLdapConfigResponse.
+        r"""Sets the filter_condition of this ShowLdapConfigResponse.
 
         过滤条件。保留字段，暂不支持
 
@@ -181,7 +181,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def backup_url(self):
-        """Gets the backup_url of this ShowLdapConfigResponse.
+        r"""Gets the backup_url of this ShowLdapConfigResponse.
 
         ldap备节点的url
 
@@ -192,7 +192,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @backup_url.setter
     def backup_url(self, backup_url):
-        """Sets the backup_url of this ShowLdapConfigResponse.
+        r"""Sets the backup_url of this ShowLdapConfigResponse.
 
         ldap备节点的url
 
@@ -203,7 +203,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this ShowLdapConfigResponse.
+        r"""Gets the schema of this ShowLdapConfigResponse.
 
         ldap的schema，不填写则默认为RFC2307
 
@@ -214,7 +214,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowLdapConfigResponse.
+        r"""Sets the schema of this ShowLdapConfigResponse.
 
         ldap的schema，不填写则默认为RFC2307
 
@@ -225,7 +225,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def search_timeout(self):
-        """Gets the search_timeout of this ShowLdapConfigResponse.
+        r"""Gets the search_timeout of this ShowLdapConfigResponse.
 
         ldap搜索的超时时间，单位为秒。不填写则默认为3秒
 
@@ -236,7 +236,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @search_timeout.setter
     def search_timeout(self, search_timeout):
-        """Sets the search_timeout of this ShowLdapConfigResponse.
+        r"""Sets the search_timeout of this ShowLdapConfigResponse.
 
         ldap搜索的超时时间，单位为秒。不填写则默认为3秒
 
@@ -247,7 +247,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @property
     def allow_local_user(self):
-        """Gets the allow_local_user of this ShowLdapConfigResponse.
+        r"""Gets the allow_local_user of this ShowLdapConfigResponse.
 
         访问ldap服务器失败后是否允许使用本地用户鉴权
 
@@ -258,7 +258,7 @@ class ShowLdapConfigResponse(SdkResponse):
 
     @allow_local_user.setter
     def allow_local_user(self, allow_local_user):
-        """Sets the allow_local_user of this ShowLdapConfigResponse.
+        r"""Sets the allow_local_user of this ShowLdapConfigResponse.
 
         访问ldap服务器失败后是否允许使用本地用户鉴权
 

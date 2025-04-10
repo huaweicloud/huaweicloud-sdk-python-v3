@@ -41,7 +41,7 @@ class Thumbnail:
     }
 
     def __init__(self, type=None, quantity=None, quantity_time=None, time=None, dots=None, cover_position=None, format=None, aspect_ratio=None, max_length=None):
-        """Thumbnail
+        r"""Thumbnail
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class Thumbnail:
 
     @property
     def type(self):
-        """Gets the type of this Thumbnail.
+        r"""Gets the type of this Thumbnail.
 
         截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。 - quantity： 按照指定张数，根据视频时长等分视频截图。
 
@@ -109,7 +109,7 @@ class Thumbnail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Thumbnail.
+        r"""Sets the type of this Thumbnail.
 
         截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。 - quantity： 按照指定张数，根据视频时长等分视频截图。
 
@@ -120,7 +120,7 @@ class Thumbnail:
 
     @property
     def quantity(self):
-        """Gets the quantity of this Thumbnail.
+        r"""Gets the quantity of this Thumbnail.
 
         **type**取值为quantity时必填。 按照指定张数，根据视频时长等分视频截图。 取值范围：[1,10]之间的整数。
 
@@ -131,7 +131,7 @@ class Thumbnail:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this Thumbnail.
+        r"""Sets the quantity of this Thumbnail.
 
         **type**取值为quantity时必填。 按照指定张数，根据视频时长等分视频截图。 取值范围：[1,10]之间的整数。
 
@@ -142,7 +142,7 @@ class Thumbnail:
 
     @property
     def quantity_time(self):
-        """Gets the quantity_time of this Thumbnail.
+        r"""Gets the quantity_time of this Thumbnail.
 
         **type**取值为quantity时选填。 按照指定时间间隔取指定张数截图。 取值范围：[0,2147483647]之间的整数。
 
@@ -153,7 +153,7 @@ class Thumbnail:
 
     @quantity_time.setter
     def quantity_time(self, quantity_time):
-        """Sets the quantity_time of this Thumbnail.
+        r"""Sets the quantity_time of this Thumbnail.
 
         **type**取值为quantity时选填。 按照指定时间间隔取指定张数截图。 取值范围：[0,2147483647]之间的整数。
 
@@ -164,7 +164,7 @@ class Thumbnail:
 
     @property
     def time(self):
-        """Gets the time of this Thumbnail.
+        r"""Gets the time of this Thumbnail.
 
         根据时间间隔采样时的时间间隔值。单位：秒。 **type**取值为time时。 默认值：12 取值范围：[0,100]之间的整数。
 
@@ -175,7 +175,7 @@ class Thumbnail:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Thumbnail.
+        r"""Sets the time of this Thumbnail.
 
         根据时间间隔采样时的时间间隔值。单位：秒。 **type**取值为time时。 默认值：12 取值范围：[0,100]之间的整数。
 
@@ -186,7 +186,7 @@ class Thumbnail:
 
     @property
     def dots(self):
-        """Gets the dots of this Thumbnail.
+        r"""Gets the dots of this Thumbnail.
 
         **type**取值为dots时必填。指定时间截图时的时间点数组。
 
@@ -197,7 +197,7 @@ class Thumbnail:
 
     @dots.setter
     def dots(self, dots):
-        """Sets the dots of this Thumbnail.
+        r"""Sets the dots of this Thumbnail.
 
         **type**取值为dots时必填。指定时间截图时的时间点数组。
 
@@ -208,7 +208,7 @@ class Thumbnail:
 
     @property
     def cover_position(self):
-        """Gets the cover_position of this Thumbnail.
+        r"""Gets the cover_position of this Thumbnail.
 
         该值表示指定第几张截图作为封面。  默认值：1。
 
@@ -219,7 +219,7 @@ class Thumbnail:
 
     @cover_position.setter
     def cover_position(self, cover_position):
-        """Sets the cover_position of this Thumbnail.
+        r"""Sets the cover_position of this Thumbnail.
 
         该值表示指定第几张截图作为封面。  默认值：1。
 
@@ -230,7 +230,7 @@ class Thumbnail:
 
     @property
     def format(self):
-        """Gets the format of this Thumbnail.
+        r"""Gets the format of this Thumbnail.
 
         截图文件格式。  取值如下： - 1：jpg。  默认值：1 。
 
@@ -241,7 +241,7 @@ class Thumbnail:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this Thumbnail.
+        r"""Sets the format of this Thumbnail.
 
         截图文件格式。  取值如下： - 1：jpg。  默认值：1 。
 
@@ -252,7 +252,7 @@ class Thumbnail:
 
     @property
     def aspect_ratio(self):
-        """Gets the aspect_ratio of this Thumbnail.
+        r"""Gets the aspect_ratio of this Thumbnail.
 
         纵横比，图像缩放方式。  取值如下： - 0：自适应（保持原有宽高比）。 - 1：16:9。  默认值：0。
 
@@ -263,7 +263,7 @@ class Thumbnail:
 
     @aspect_ratio.setter
     def aspect_ratio(self, aspect_ratio):
-        """Sets the aspect_ratio of this Thumbnail.
+        r"""Sets the aspect_ratio of this Thumbnail.
 
         纵横比，图像缩放方式。  取值如下： - 0：自适应（保持原有宽高比）。 - 1：16:9。  默认值：0。
 
@@ -274,7 +274,7 @@ class Thumbnail:
 
     @property
     def max_length(self):
-        """Gets the max_length of this Thumbnail.
+        r"""Gets the max_length of this Thumbnail.
 
         截图最长边的尺寸。  单位：像素。  宽边尺寸按照该尺寸与原始视频像素等比缩放计算。
 
@@ -285,7 +285,7 @@ class Thumbnail:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this Thumbnail.
+        r"""Sets the max_length of this Thumbnail.
 
         截图最长边的尺寸。  单位：像素。  宽边尺寸按照该尺寸与原始视频像素等比缩放计算。
 

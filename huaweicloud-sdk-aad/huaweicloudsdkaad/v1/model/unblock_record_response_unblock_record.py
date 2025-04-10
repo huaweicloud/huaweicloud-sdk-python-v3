@@ -39,7 +39,7 @@ class UnblockRecordResponseUnblockRecord:
     }
 
     def __init__(self, ip=None, executor=None, block_id=None, blocking_time=None, unblocking_time=None, unblock_type=None, status=None, sort_time=None):
-        """UnblockRecordResponseUnblockRecord
+        r"""UnblockRecordResponseUnblockRecord
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def ip(self):
-        """Gets the ip of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the ip of this UnblockRecordResponseUnblockRecord.
 
         ip地址
 
@@ -103,7 +103,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the ip of this UnblockRecordResponseUnblockRecord.
 
         ip地址
 
@@ -114,7 +114,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def executor(self):
-        """Gets the executor of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the executor of this UnblockRecordResponseUnblockRecord.
 
         执行者
 
@@ -125,7 +125,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the executor of this UnblockRecordResponseUnblockRecord.
 
         执行者
 
@@ -136,7 +136,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def block_id(self):
-        """Gets the block_id of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the block_id of this UnblockRecordResponseUnblockRecord.
 
         封堵id
 
@@ -147,7 +147,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @block_id.setter
     def block_id(self, block_id):
-        """Sets the block_id of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the block_id of this UnblockRecordResponseUnblockRecord.
 
         封堵id
 
@@ -158,7 +158,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def blocking_time(self):
-        """Gets the blocking_time of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the blocking_time of this UnblockRecordResponseUnblockRecord.
 
         封堵时间
 
@@ -169,7 +169,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @blocking_time.setter
     def blocking_time(self, blocking_time):
-        """Sets the blocking_time of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the blocking_time of this UnblockRecordResponseUnblockRecord.
 
         封堵时间
 
@@ -180,7 +180,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def unblocking_time(self):
-        """Gets the unblocking_time of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the unblocking_time of this UnblockRecordResponseUnblockRecord.
 
         解封时间
 
@@ -191,7 +191,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @unblocking_time.setter
     def unblocking_time(self, unblocking_time):
-        """Sets the unblocking_time of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the unblocking_time of this UnblockRecordResponseUnblockRecord.
 
         解封时间
 
@@ -202,7 +202,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def unblock_type(self):
-        """Gets the unblock_type of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the unblock_type of this UnblockRecordResponseUnblockRecord.
 
         解封类型。manual：人工；automatic：自动
 
@@ -213,7 +213,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @unblock_type.setter
     def unblock_type(self, unblock_type):
-        """Sets the unblock_type of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the unblock_type of this UnblockRecordResponseUnblockRecord.
 
         解封类型。manual：人工；automatic：自动
 
@@ -224,7 +224,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def status(self):
-        """Gets the status of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the status of this UnblockRecordResponseUnblockRecord.
 
         状态。unblocking：解封中；success：成功；failed：失败
 
@@ -235,7 +235,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the status of this UnblockRecordResponseUnblockRecord.
 
         状态。unblocking：解封中；success：成功；failed：失败
 
@@ -246,7 +246,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @property
     def sort_time(self):
-        """Gets the sort_time of this UnblockRecordResponseUnblockRecord.
+        r"""Gets the sort_time of this UnblockRecordResponseUnblockRecord.
 
         时间
 
@@ -257,7 +257,7 @@ class UnblockRecordResponseUnblockRecord:
 
     @sort_time.setter
     def sort_time(self, sort_time):
-        """Sets the sort_time of this UnblockRecordResponseUnblockRecord.
+        r"""Sets the sort_time of this UnblockRecordResponseUnblockRecord.
 
         时间
 

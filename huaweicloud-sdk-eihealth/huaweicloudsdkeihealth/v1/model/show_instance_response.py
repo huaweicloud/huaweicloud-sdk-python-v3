@@ -48,7 +48,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, template=None, creator=None, create_time=None, update_time=None, data_count=None, source_project_name=None, source_project_id=None, source_id=None, is_prefab=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceResponse.
+        r"""Gets the id of this ShowInstanceResponse.
 
         实例id
 
@@ -132,7 +132,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceResponse.
+        r"""Sets the id of this ShowInstanceResponse.
 
         实例id
 
@@ -143,7 +143,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceResponse.
+        r"""Gets the name of this ShowInstanceResponse.
 
         实例名称
 
@@ -154,7 +154,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceResponse.
+        r"""Sets the name of this ShowInstanceResponse.
 
         实例名称
 
@@ -165,7 +165,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowInstanceResponse.
+        r"""Gets the description of this ShowInstanceResponse.
 
         描述
 
@@ -176,7 +176,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowInstanceResponse.
+        r"""Sets the description of this ShowInstanceResponse.
 
         描述
 
@@ -187,7 +187,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this ShowInstanceResponse.
+        r"""Gets the template of this ShowInstanceResponse.
 
         :return: The template of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TemplateRsp`
@@ -196,7 +196,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this ShowInstanceResponse.
+        r"""Sets the template of this ShowInstanceResponse.
 
         :param template: The template of this ShowInstanceResponse.
         :type template: :class:`huaweicloudsdkeihealth.v1.TemplateRsp`
@@ -205,7 +205,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowInstanceResponse.
+        r"""Gets the creator of this ShowInstanceResponse.
 
         创建者
 
@@ -216,7 +216,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowInstanceResponse.
+        r"""Sets the creator of this ShowInstanceResponse.
 
         创建者
 
@@ -227,7 +227,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowInstanceResponse.
+        r"""Gets the create_time of this ShowInstanceResponse.
 
         创建时间
 
@@ -238,7 +238,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowInstanceResponse.
+        r"""Sets the create_time of this ShowInstanceResponse.
 
         创建时间
 
@@ -249,7 +249,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowInstanceResponse.
+        r"""Gets the update_time of this ShowInstanceResponse.
 
         更新时间
 
@@ -260,7 +260,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowInstanceResponse.
+        r"""Sets the update_time of this ShowInstanceResponse.
 
         更新时间
 
@@ -271,7 +271,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def data_count(self):
-        """Gets the data_count of this ShowInstanceResponse.
+        r"""Gets the data_count of this ShowInstanceResponse.
 
         数据条目
 
@@ -282,7 +282,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @data_count.setter
     def data_count(self, data_count):
-        """Sets the data_count of this ShowInstanceResponse.
+        r"""Sets the data_count of this ShowInstanceResponse.
 
         数据条目
 
@@ -293,7 +293,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ShowInstanceResponse.
+        r"""Gets the source_project_name of this ShowInstanceResponse.
 
         源项目名
 
@@ -304,7 +304,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ShowInstanceResponse.
+        r"""Sets the source_project_name of this ShowInstanceResponse.
 
         源项目名
 
@@ -315,7 +315,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ShowInstanceResponse.
+        r"""Gets the source_project_id of this ShowInstanceResponse.
 
         源项目id
 
@@ -326,7 +326,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ShowInstanceResponse.
+        r"""Sets the source_project_id of this ShowInstanceResponse.
 
         源项目id
 
@@ -337,7 +337,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def source_id(self):
-        """Gets the source_id of this ShowInstanceResponse.
+        r"""Gets the source_id of this ShowInstanceResponse.
 
         源实例id
 
@@ -348,7 +348,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ShowInstanceResponse.
+        r"""Sets the source_id of this ShowInstanceResponse.
 
         源实例id
 
@@ -359,7 +359,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def is_prefab(self):
-        """Gets the is_prefab of this ShowInstanceResponse.
+        r"""Gets the is_prefab of this ShowInstanceResponse.
 
         是否为预置实例
 
@@ -370,7 +370,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @is_prefab.setter
     def is_prefab(self, is_prefab):
-        """Sets the is_prefab of this ShowInstanceResponse.
+        r"""Sets the is_prefab of this ShowInstanceResponse.
 
         是否为预置实例
 

@@ -27,7 +27,7 @@ class CreateStrategyRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """CreateStrategyRequest
+        r"""CreateStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateStrategyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateStrategyRequest.
+        r"""Gets the domain_id of this CreateStrategyRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class CreateStrategyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateStrategyRequest.
+        r"""Sets the domain_id of this CreateStrategyRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class CreateStrategyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStrategyRequest.
+        r"""Gets the body of this CreateStrategyRequest.
 
         :return: The body of this CreateStrategyRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreateRuleSetReq`
@@ -80,7 +80,7 @@ class CreateStrategyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStrategyRequest.
+        r"""Sets the body of this CreateStrategyRequest.
 
         :param body: The body of this CreateStrategyRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.CreateRuleSetReq`

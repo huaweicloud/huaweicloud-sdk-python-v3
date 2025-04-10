@@ -41,7 +41,7 @@ class ListPublicipsRequest:
     }
 
     def __init__(self, marker=None, limit=None, ip_version=None, enterprise_project_id=None, port_id=None, public_ip_address=None, private_ip_address=None, id=None, allow_share_bandwidth_type_any=None):
-        """ListPublicipsRequest
+        r"""ListPublicipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListPublicipsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPublicipsRequest.
+        r"""Gets the marker of this ListPublicipsRequest.
 
         取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
@@ -110,7 +110,7 @@ class ListPublicipsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPublicipsRequest.
+        r"""Sets the marker of this ListPublicipsRequest.
 
         取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
@@ -121,7 +121,7 @@ class ListPublicipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublicipsRequest.
+        r"""Gets the limit of this ListPublicipsRequest.
 
         功能说明：每页返回的个数  取值范围：0~intmax
 
@@ -132,7 +132,7 @@ class ListPublicipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublicipsRequest.
+        r"""Sets the limit of this ListPublicipsRequest.
 
         功能说明：每页返回的个数  取值范围：0~intmax
 
@@ -143,7 +143,7 @@ class ListPublicipsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListPublicipsRequest.
+        r"""Gets the ip_version of this ListPublicipsRequest.
 
         IP地址版本信息  4：IPv4  6：IPv6
 
@@ -154,7 +154,7 @@ class ListPublicipsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListPublicipsRequest.
+        r"""Sets the ip_version of this ListPublicipsRequest.
 
         IP地址版本信息  4：IPv4  6：IPv6
 
@@ -165,7 +165,7 @@ class ListPublicipsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPublicipsRequest.
+        r"""Gets the enterprise_project_id of this ListPublicipsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。
 
@@ -176,7 +176,7 @@ class ListPublicipsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPublicipsRequest.
+        r"""Sets the enterprise_project_id of this ListPublicipsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。
 
@@ -187,7 +187,7 @@ class ListPublicipsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ListPublicipsRequest.
+        r"""Gets the port_id of this ListPublicipsRequest.
 
         绑定弹性公网IP的端口id
 
@@ -198,7 +198,7 @@ class ListPublicipsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ListPublicipsRequest.
+        r"""Sets the port_id of this ListPublicipsRequest.
 
         绑定弹性公网IP的端口id
 
@@ -209,7 +209,7 @@ class ListPublicipsRequest:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this ListPublicipsRequest.
+        r"""Gets the public_ip_address of this ListPublicipsRequest.
 
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
@@ -220,7 +220,7 @@ class ListPublicipsRequest:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this ListPublicipsRequest.
+        r"""Sets the public_ip_address of this ListPublicipsRequest.
 
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
@@ -231,7 +231,7 @@ class ListPublicipsRequest:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this ListPublicipsRequest.
+        r"""Gets the private_ip_address of this ListPublicipsRequest.
 
         关联端口的私有IP地址
 
@@ -242,7 +242,7 @@ class ListPublicipsRequest:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this ListPublicipsRequest.
+        r"""Sets the private_ip_address of this ListPublicipsRequest.
 
         关联端口的私有IP地址
 
@@ -253,7 +253,7 @@ class ListPublicipsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPublicipsRequest.
+        r"""Gets the id of this ListPublicipsRequest.
 
         弹性公网IP唯一标识
 
@@ -264,7 +264,7 @@ class ListPublicipsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPublicipsRequest.
+        r"""Sets the id of this ListPublicipsRequest.
 
         弹性公网IP唯一标识
 
@@ -275,7 +275,7 @@ class ListPublicipsRequest:
 
     @property
     def allow_share_bandwidth_type_any(self):
-        """Gets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
+        r"""Gets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
 
         共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
 
@@ -286,7 +286,7 @@ class ListPublicipsRequest:
 
     @allow_share_bandwidth_type_any.setter
     def allow_share_bandwidth_type_any(self, allow_share_bandwidth_type_any):
-        """Sets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
+        r"""Sets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
 
         共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
 

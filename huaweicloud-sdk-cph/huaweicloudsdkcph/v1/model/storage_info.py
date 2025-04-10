@@ -33,7 +33,7 @@ class StorageInfo:
     }
 
     def __init__(self, phone_id=None, include_files=None, exclude_files=None, bucket_name=None, object_path=None):
-        """StorageInfo
+        r"""StorageInfo
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class StorageInfo:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this StorageInfo.
+        r"""Gets the phone_id of this StorageInfo.
 
         云手机ID。
 
@@ -78,7 +78,7 @@ class StorageInfo:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this StorageInfo.
+        r"""Sets the phone_id of this StorageInfo.
 
         云手机ID。
 
@@ -89,7 +89,7 @@ class StorageInfo:
 
     @property
     def include_files(self):
-        """Gets the include_files of this StorageInfo.
+        r"""Gets the include_files of this StorageInfo.
 
         需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、等号这些字符。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)](tag:hws)。
 
@@ -100,7 +100,7 @@ class StorageInfo:
 
     @include_files.setter
     def include_files(self, include_files):
-        """Sets the include_files of this StorageInfo.
+        r"""Sets the include_files of this StorageInfo.
 
         需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、等号这些字符。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)](tag:hws)。
 
@@ -111,7 +111,7 @@ class StorageInfo:
 
     @property
     def exclude_files(self):
-        """Gets the exclude_files of this StorageInfo.
+        r"""Gets the exclude_files of this StorageInfo.
 
         不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 路径要求同include_files。
 
@@ -122,7 +122,7 @@ class StorageInfo:
 
     @exclude_files.setter
     def exclude_files(self, exclude_files):
-        """Sets the exclude_files of this StorageInfo.
+        r"""Sets the exclude_files of this StorageInfo.
 
         不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 路径要求同include_files。
 
@@ -133,7 +133,7 @@ class StorageInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this StorageInfo.
+        r"""Gets the bucket_name of this StorageInfo.
 
         导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
 
@@ -144,7 +144,7 @@ class StorageInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this StorageInfo.
+        r"""Sets the bucket_name of this StorageInfo.
 
         导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
 
@@ -155,7 +155,7 @@ class StorageInfo:
 
     @property
     def object_path(self):
-        """Gets the object_path of this StorageInfo.
+        r"""Gets the object_path of this StorageInfo.
 
         导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
 
@@ -166,7 +166,7 @@ class StorageInfo:
 
     @object_path.setter
     def object_path(self, object_path):
-        """Sets the object_path of this StorageInfo.
+        r"""Sets the object_path of this StorageInfo.
 
         导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
 

@@ -33,7 +33,7 @@ class Type:
     }
 
     def __init__(self, business=None, category=None, classifier=None, tech_domain=None, properties=None):
-        """Type
+        r"""Type
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class Type:
 
     @property
     def business(self):
-        """Gets the business of this Type.
+        r"""Gets the business of this Type.
 
         事件所属业务领域标签，可选类别如下： attack – 攻击 vulnerability – 漏洞 compliance check – 合规检查 risk - 风险 public opinion - 舆情 illegal&violation - 违法违规 security bulletin - 公告
 
@@ -81,7 +81,7 @@ class Type:
 
     @business.setter
     def business(self, business):
-        """Sets the business of this Type.
+        r"""Sets the business of this Type.
 
         事件所属业务领域标签，可选类别如下： attack – 攻击 vulnerability – 漏洞 compliance check – 合规检查 risk - 风险 public opinion - 舆情 illegal&violation - 违法违规 security bulletin - 公告
 
@@ -92,7 +92,7 @@ class Type:
 
     @property
     def category(self):
-        """Gets the category of this Type.
+        r"""Gets the category of this Type.
 
         类别，推荐使用预定义的类型分类。
 
@@ -103,7 +103,7 @@ class Type:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this Type.
+        r"""Sets the category of this Type.
 
         类别，推荐使用预定义的类型分类。
 
@@ -114,7 +114,7 @@ class Type:
 
     @property
     def classifier(self):
-        """Gets the classifier of this Type.
+        r"""Gets the classifier of this Type.
 
         分类器，推荐使用预定义的分类器。 如果指定了分类器，则必须指定类别。
 
@@ -125,7 +125,7 @@ class Type:
 
     @classifier.setter
     def classifier(self, classifier):
-        """Sets the classifier of this Type.
+        r"""Sets the classifier of this Type.
 
         分类器，推荐使用预定义的分类器。 如果指定了分类器，则必须指定类别。
 
@@ -136,7 +136,7 @@ class Type:
 
     @property
     def tech_domain(self):
-        """Gets the tech_domain of this Type.
+        r"""Gets the tech_domain of this Type.
 
         技术领域标签： OS：主机 APP：应用 NET：网络 OPS：运维 CS：云服务 CSP：平台云服务
 
@@ -147,7 +147,7 @@ class Type:
 
     @tech_domain.setter
     def tech_domain(self, tech_domain):
-        """Sets the tech_domain of this Type.
+        r"""Sets the tech_domain of this Type.
 
         技术领域标签： OS：主机 APP：应用 NET：网络 OPS：运维 CS：云服务 CSP：平台云服务
 
@@ -158,7 +158,7 @@ class Type:
 
     @property
     def properties(self):
-        """Gets the properties of this Type.
+        r"""Gets the properties of this Type.
 
         :return: The properties of this Type.
         :rtype: :class:`huaweicloudsdksa.v1.TypeProperties`
@@ -167,7 +167,7 @@ class Type:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this Type.
+        r"""Sets the properties of this Type.
 
         :param properties: The properties of this Type.
         :type properties: :class:`huaweicloudsdksa.v1.TypeProperties`

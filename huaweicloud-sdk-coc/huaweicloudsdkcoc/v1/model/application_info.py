@@ -41,7 +41,7 @@ class ApplicationInfo:
     }
 
     def __init__(self, id=None, name=None, code=None, description=None, domain_id=None, parent_id=None, path=None, create_time=None, update_time=None):
-        """ApplicationInfo
+        r"""ApplicationInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ApplicationInfo:
 
     @property
     def id(self):
-        """Gets the id of this ApplicationInfo.
+        r"""Gets the id of this ApplicationInfo.
 
         :return: The id of this ApplicationInfo.
         :rtype: str
@@ -108,7 +108,7 @@ class ApplicationInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicationInfo.
+        r"""Sets the id of this ApplicationInfo.
 
         :param id: The id of this ApplicationInfo.
         :type id: str
@@ -117,7 +117,7 @@ class ApplicationInfo:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationInfo.
+        r"""Gets the name of this ApplicationInfo.
 
         :return: The name of this ApplicationInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class ApplicationInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationInfo.
+        r"""Sets the name of this ApplicationInfo.
 
         :param name: The name of this ApplicationInfo.
         :type name: str
@@ -135,7 +135,7 @@ class ApplicationInfo:
 
     @property
     def code(self):
-        """Gets the code of this ApplicationInfo.
+        r"""Gets the code of this ApplicationInfo.
 
         :return: The code of this ApplicationInfo.
         :rtype: str
@@ -144,7 +144,7 @@ class ApplicationInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ApplicationInfo.
+        r"""Sets the code of this ApplicationInfo.
 
         :param code: The code of this ApplicationInfo.
         :type code: str
@@ -153,7 +153,7 @@ class ApplicationInfo:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationInfo.
+        r"""Gets the description of this ApplicationInfo.
 
         :return: The description of this ApplicationInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ApplicationInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationInfo.
+        r"""Sets the description of this ApplicationInfo.
 
         :param description: The description of this ApplicationInfo.
         :type description: str
@@ -171,7 +171,7 @@ class ApplicationInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ApplicationInfo.
+        r"""Gets the domain_id of this ApplicationInfo.
 
         :return: The domain_id of this ApplicationInfo.
         :rtype: str
@@ -180,7 +180,7 @@ class ApplicationInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ApplicationInfo.
+        r"""Sets the domain_id of this ApplicationInfo.
 
         :param domain_id: The domain_id of this ApplicationInfo.
         :type domain_id: str
@@ -189,7 +189,7 @@ class ApplicationInfo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ApplicationInfo.
+        r"""Gets the parent_id of this ApplicationInfo.
 
         :return: The parent_id of this ApplicationInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class ApplicationInfo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ApplicationInfo.
+        r"""Sets the parent_id of this ApplicationInfo.
 
         :param parent_id: The parent_id of this ApplicationInfo.
         :type parent_id: str
@@ -207,7 +207,7 @@ class ApplicationInfo:
 
     @property
     def path(self):
-        """Gets the path of this ApplicationInfo.
+        r"""Gets the path of this ApplicationInfo.
 
         :return: The path of this ApplicationInfo.
         :rtype: str
@@ -216,7 +216,7 @@ class ApplicationInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ApplicationInfo.
+        r"""Sets the path of this ApplicationInfo.
 
         :param path: The path of this ApplicationInfo.
         :type path: str
@@ -225,7 +225,7 @@ class ApplicationInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApplicationInfo.
+        r"""Gets the create_time of this ApplicationInfo.
 
         :return: The create_time of this ApplicationInfo.
         :rtype: str
@@ -234,7 +234,7 @@ class ApplicationInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApplicationInfo.
+        r"""Sets the create_time of this ApplicationInfo.
 
         :param create_time: The create_time of this ApplicationInfo.
         :type create_time: str
@@ -243,7 +243,7 @@ class ApplicationInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApplicationInfo.
+        r"""Gets the update_time of this ApplicationInfo.
 
         :return: The update_time of this ApplicationInfo.
         :rtype: str
@@ -252,7 +252,7 @@ class ApplicationInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApplicationInfo.
+        r"""Sets the update_time of this ApplicationInfo.
 
         :param update_time: The update_time of this ApplicationInfo.
         :type update_time: str

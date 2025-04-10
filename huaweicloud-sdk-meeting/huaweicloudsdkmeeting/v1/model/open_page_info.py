@@ -29,7 +29,7 @@ class OpenPageInfo:
     }
 
     def __init__(self, offset=None, limit=None, count=None):
-        """OpenPageInfo
+        r"""OpenPageInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OpenPageInfo:
 
     @property
     def offset(self):
-        """Gets the offset of this OpenPageInfo.
+        r"""Gets the offset of this OpenPageInfo.
 
         偏移量。
 
@@ -65,7 +65,7 @@ class OpenPageInfo:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this OpenPageInfo.
+        r"""Sets the offset of this OpenPageInfo.
 
         偏移量。
 
@@ -76,7 +76,7 @@ class OpenPageInfo:
 
     @property
     def limit(self):
-        """Gets the limit of this OpenPageInfo.
+        r"""Gets the limit of this OpenPageInfo.
 
         每页的记录数。
 
@@ -87,7 +87,7 @@ class OpenPageInfo:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this OpenPageInfo.
+        r"""Sets the limit of this OpenPageInfo.
 
         每页的记录数。
 
@@ -98,7 +98,7 @@ class OpenPageInfo:
 
     @property
     def count(self):
-        """Gets the count of this OpenPageInfo.
+        r"""Gets the count of this OpenPageInfo.
 
         总记录数。
 
@@ -109,7 +109,7 @@ class OpenPageInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this OpenPageInfo.
+        r"""Sets the count of this OpenPageInfo.
 
         总记录数。
 

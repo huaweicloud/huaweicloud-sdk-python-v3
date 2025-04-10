@@ -25,7 +25,7 @@ class ShowMetricNamesSupportRequest:
     }
 
     def __init__(self, x_language=None):
-        """ShowMetricNamesSupportRequest
+        r"""ShowMetricNamesSupportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowMetricNamesSupportRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowMetricNamesSupportRequest.
+        r"""Gets the x_language of this ShowMetricNamesSupportRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ShowMetricNamesSupportRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowMetricNamesSupportRequest.
+        r"""Sets the x_language of this ShowMetricNamesSupportRequest.
 
         语言
 

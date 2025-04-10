@@ -25,7 +25,7 @@ class ListDatastoresRequest:
     }
 
     def __init__(self, datastore_name=None):
-        """ListDatastoresRequest
+        r"""ListDatastoresRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDatastoresRequest:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ListDatastoresRequest.
+        r"""Gets the datastore_name of this ListDatastoresRequest.
 
         数据库类型。   - GeminiDB Cassandra数据库实例，取值为“cassandra”。   - GeminiDB Mongo数据库实例，取值为“mongodb”。   - GeminiDB Influx数据库实例，取值为“influxdb”。   - GeminiDB Redis数据库实例，取值为“redis”。
 
@@ -53,7 +53,7 @@ class ListDatastoresRequest:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ListDatastoresRequest.
+        r"""Sets the datastore_name of this ListDatastoresRequest.
 
         数据库类型。   - GeminiDB Cassandra数据库实例，取值为“cassandra”。   - GeminiDB Mongo数据库实例，取值为“mongodb”。   - GeminiDB Influx数据库实例，取值为“influxdb”。   - GeminiDB Redis数据库实例，取值为“redis”。
 

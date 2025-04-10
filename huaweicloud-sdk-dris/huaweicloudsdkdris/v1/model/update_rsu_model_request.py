@@ -29,7 +29,7 @@ class UpdateRsuModelRequest:
     }
 
     def __init__(self, instance_id=None, rsu_model_id=None, body=None):
-        """UpdateRsuModelRequest
+        r"""UpdateRsuModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateRsuModelRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateRsuModelRequest.
+        r"""Gets the instance_id of this UpdateRsuModelRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -67,7 +67,7 @@ class UpdateRsuModelRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateRsuModelRequest.
+        r"""Sets the instance_id of this UpdateRsuModelRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -78,7 +78,7 @@ class UpdateRsuModelRequest:
 
     @property
     def rsu_model_id(self):
-        """Gets the rsu_model_id of this UpdateRsuModelRequest.
+        r"""Gets the rsu_model_id of this UpdateRsuModelRequest.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得。  **取值范围**：长度不小于1不超过36，只允许字母、数字、连接符（-）的组合。 
 
@@ -89,7 +89,7 @@ class UpdateRsuModelRequest:
 
     @rsu_model_id.setter
     def rsu_model_id(self, rsu_model_id):
-        """Sets the rsu_model_id of this UpdateRsuModelRequest.
+        r"""Sets the rsu_model_id of this UpdateRsuModelRequest.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得。  **取值范围**：长度不小于1不超过36，只允许字母、数字、连接符（-）的组合。 
 
@@ -100,7 +100,7 @@ class UpdateRsuModelRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRsuModelRequest.
+        r"""Gets the body of this UpdateRsuModelRequest.
 
         :return: The body of this UpdateRsuModelRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateRsuModel`
@@ -109,7 +109,7 @@ class UpdateRsuModelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRsuModelRequest.
+        r"""Sets the body of this UpdateRsuModelRequest.
 
         :param body: The body of this UpdateRsuModelRequest.
         :type body: :class:`huaweicloudsdkdris.v1.UpdateRsuModel`

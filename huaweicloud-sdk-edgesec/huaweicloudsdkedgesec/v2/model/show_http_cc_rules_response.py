@@ -28,7 +28,7 @@ class ShowHttpCcRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowHttpCcRulesResponse
+        r"""ShowHttpCcRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttpCcRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpCcRulesResponse.
+        r"""Gets the total of this ShowHttpCcRulesResponse.
 
         策略下cc规则数量
 
@@ -62,7 +62,7 @@ class ShowHttpCcRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpCcRulesResponse.
+        r"""Sets the total of this ShowHttpCcRulesResponse.
 
         策略下cc规则数量
 
@@ -73,7 +73,7 @@ class ShowHttpCcRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpCcRulesResponse.
+        r"""Gets the items of this ShowHttpCcRulesResponse.
 
         cc规则列表
 
@@ -84,7 +84,7 @@ class ShowHttpCcRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpCcRulesResponse.
+        r"""Sets the items of this ShowHttpCcRulesResponse.
 
         cc规则列表
 

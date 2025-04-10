@@ -36,7 +36,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
     }
 
     def __init__(self, progress=None, status=None, error_code=None, error_msg=None, start_time=None, end_time=None):
-        """ShowDetailsOfInstanceProgressV2Response
+        r"""ShowDetailsOfInstanceProgressV2Response
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Gets the progress of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建进度  单位：百分比
 
@@ -90,7 +90,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Sets the progress of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建进度  单位：百分比
 
@@ -101,7 +101,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Gets the status of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建状态 - creating：创建中 - success：创建成功 - failed：创建失败
 
@@ -112,7 +112,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Sets the status of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建状态 - creating：创建中 - success：创建成功 - failed：创建失败
 
@@ -123,7 +123,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Gets the error_code of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建失败错误码
 
@@ -134,7 +134,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Sets the error_code of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建失败错误码
 
@@ -145,7 +145,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Gets the error_msg of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建失败错误信息
 
@@ -156,7 +156,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Sets the error_msg of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建失败错误信息
 
@@ -167,7 +167,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Gets the start_time of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建开始时间。unix时间戳格式。
 
@@ -178,7 +178,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Sets the start_time of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建开始时间。unix时间戳格式。
 
@@ -189,7 +189,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Gets the end_time of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建结束时间。unix时间戳格式。
 
@@ -200,7 +200,7 @@ class ShowDetailsOfInstanceProgressV2Response(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowDetailsOfInstanceProgressV2Response.
+        r"""Sets the end_time of this ShowDetailsOfInstanceProgressV2Response.
 
         实例创建结束时间。unix时间戳格式。
 

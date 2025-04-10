@@ -28,7 +28,7 @@ class ListInstanceParamHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, histories=None):
-        """ListInstanceParamHistoriesResponse
+        r"""ListInstanceParamHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceParamHistoriesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInstanceParamHistoriesResponse.
+        r"""Gets the total_count of this ListInstanceParamHistoriesResponse.
 
         历史记录总数
 
@@ -62,7 +62,7 @@ class ListInstanceParamHistoriesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInstanceParamHistoriesResponse.
+        r"""Sets the total_count of this ListInstanceParamHistoriesResponse.
 
         历史记录总数
 
@@ -73,7 +73,7 @@ class ListInstanceParamHistoriesResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ListInstanceParamHistoriesResponse.
+        r"""Gets the histories of this ListInstanceParamHistoriesResponse.
 
         host列表
 
@@ -84,7 +84,7 @@ class ListInstanceParamHistoriesResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ListInstanceParamHistoriesResponse.
+        r"""Sets the histories of this ListInstanceParamHistoriesResponse.
 
         host列表
 

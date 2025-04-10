@@ -29,7 +29,7 @@ class CheckLigandDifferenceReq:
     }
 
     def __init__(self, method=None, file=None, ref_file=None):
-        """CheckLigandDifferenceReq
+        r"""CheckLigandDifferenceReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CheckLigandDifferenceReq:
 
     @property
     def method(self):
-        """Gets the method of this CheckLigandDifferenceReq.
+        r"""Gets the method of this CheckLigandDifferenceReq.
 
         :return: The method of this CheckLigandDifferenceReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceMethod`
@@ -63,7 +63,7 @@ class CheckLigandDifferenceReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this CheckLigandDifferenceReq.
+        r"""Sets the method of this CheckLigandDifferenceReq.
 
         :param method: The method of this CheckLigandDifferenceReq.
         :type method: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceMethod`
@@ -72,7 +72,7 @@ class CheckLigandDifferenceReq:
 
     @property
     def file(self):
-        """Gets the file of this CheckLigandDifferenceReq.
+        r"""Gets the file of this CheckLigandDifferenceReq.
 
         :return: The file of this CheckLigandDifferenceReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -81,7 +81,7 @@ class CheckLigandDifferenceReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CheckLigandDifferenceReq.
+        r"""Sets the file of this CheckLigandDifferenceReq.
 
         :param file: The file of this CheckLigandDifferenceReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -90,7 +90,7 @@ class CheckLigandDifferenceReq:
 
     @property
     def ref_file(self):
-        """Gets the ref_file of this CheckLigandDifferenceReq.
+        r"""Gets the ref_file of this CheckLigandDifferenceReq.
 
         :return: The ref_file of this CheckLigandDifferenceReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -99,7 +99,7 @@ class CheckLigandDifferenceReq:
 
     @ref_file.setter
     def ref_file(self, ref_file):
-        """Sets the ref_file of this CheckLigandDifferenceReq.
+        r"""Sets the ref_file of this CheckLigandDifferenceReq.
 
         :param ref_file: The ref_file of this CheckLigandDifferenceReq.
         :type ref_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`

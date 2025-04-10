@@ -25,7 +25,7 @@ class ShowEnhancedConnectionPrivilegeRequest:
     }
 
     def __init__(self, connection_id=None):
-        """ShowEnhancedConnectionPrivilegeRequest
+        r"""ShowEnhancedConnectionPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEnhancedConnectionPrivilegeRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowEnhancedConnectionPrivilegeRequest.
+        r"""Gets the connection_id of this ShowEnhancedConnectionPrivilegeRequest.
 
         增强型跨源连接ID。
 
@@ -53,7 +53,7 @@ class ShowEnhancedConnectionPrivilegeRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowEnhancedConnectionPrivilegeRequest.
+        r"""Sets the connection_id of this ShowEnhancedConnectionPrivilegeRequest.
 
         增强型跨源连接ID。
 

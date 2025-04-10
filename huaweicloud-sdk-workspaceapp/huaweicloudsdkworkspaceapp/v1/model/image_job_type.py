@@ -28,7 +28,7 @@ class ImageJobType:
     }
 
     def __init__(self):
-        """ImageJobType
+        r"""ImageJobType
 
         The model defined in huaweicloud sdk
 

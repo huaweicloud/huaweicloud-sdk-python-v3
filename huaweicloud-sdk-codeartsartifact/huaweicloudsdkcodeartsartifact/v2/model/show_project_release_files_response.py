@@ -26,7 +26,7 @@ class ShowProjectReleaseFilesResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ShowProjectReleaseFilesResponse
+        r"""ShowProjectReleaseFilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowProjectReleaseFilesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowProjectReleaseFilesResponse.
+        r"""Gets the result of this ShowProjectReleaseFilesResponse.
 
         :return: The result of this ShowProjectReleaseFilesResponse.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.StandardResponseResult`
@@ -53,7 +53,7 @@ class ShowProjectReleaseFilesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowProjectReleaseFilesResponse.
+        r"""Sets the result of this ShowProjectReleaseFilesResponse.
 
         :param result: The result of this ShowProjectReleaseFilesResponse.
         :type result: :class:`huaweicloudsdkcodeartsartifact.v2.StandardResponseResult`

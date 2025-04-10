@@ -36,7 +36,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
     }
 
     def __init__(self, skill_id=None, name=None, identify=None, create_time=None, update_time=None, x_request_id=None):
-        """ShowKnowledgeSkillResponse
+        r"""ShowKnowledgeSkillResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ShowKnowledgeSkillResponse.
+        r"""Gets the skill_id of this ShowKnowledgeSkillResponse.
 
         技能ID。
 
@@ -90,7 +90,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ShowKnowledgeSkillResponse.
+        r"""Sets the skill_id of this ShowKnowledgeSkillResponse.
 
         技能ID。
 
@@ -101,7 +101,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowKnowledgeSkillResponse.
+        r"""Gets the name of this ShowKnowledgeSkillResponse.
 
         技能名称。
 
@@ -112,7 +112,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowKnowledgeSkillResponse.
+        r"""Sets the name of this ShowKnowledgeSkillResponse.
 
         技能名称。
 
@@ -123,7 +123,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @property
     def identify(self):
-        """Gets the identify of this ShowKnowledgeSkillResponse.
+        r"""Gets the identify of this ShowKnowledgeSkillResponse.
 
         技能标识。
 
@@ -134,7 +134,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this ShowKnowledgeSkillResponse.
+        r"""Sets the identify of this ShowKnowledgeSkillResponse.
 
         技能标识。
 
@@ -145,7 +145,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowKnowledgeSkillResponse.
+        r"""Gets the create_time of this ShowKnowledgeSkillResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -156,7 +156,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowKnowledgeSkillResponse.
+        r"""Sets the create_time of this ShowKnowledgeSkillResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -167,7 +167,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowKnowledgeSkillResponse.
+        r"""Gets the update_time of this ShowKnowledgeSkillResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -178,7 +178,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowKnowledgeSkillResponse.
+        r"""Sets the update_time of this ShowKnowledgeSkillResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -189,7 +189,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowKnowledgeSkillResponse.
+        r"""Gets the x_request_id of this ShowKnowledgeSkillResponse.
 
         :return: The x_request_id of this ShowKnowledgeSkillResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowKnowledgeSkillResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowKnowledgeSkillResponse.
+        r"""Sets the x_request_id of this ShowKnowledgeSkillResponse.
 
         :param x_request_id: The x_request_id of this ShowKnowledgeSkillResponse.
         :type x_request_id: str

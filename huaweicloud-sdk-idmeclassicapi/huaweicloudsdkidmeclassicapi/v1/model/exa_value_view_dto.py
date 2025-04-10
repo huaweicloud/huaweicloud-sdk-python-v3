@@ -49,7 +49,7 @@ class EXAValueViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, id=None, last_update_time=None, modifier=None, name=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, tenant=None, type=None, value=None):
-        """EXAValueViewDTO
+        r"""EXAValueViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class EXAValueViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this EXAValueViewDTO.
+        r"""Gets the class_name of this EXAValueViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -138,7 +138,7 @@ class EXAValueViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this EXAValueViewDTO.
+        r"""Sets the class_name of this EXAValueViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -149,7 +149,7 @@ class EXAValueViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EXAValueViewDTO.
+        r"""Gets the create_time of this EXAValueViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -160,7 +160,7 @@ class EXAValueViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EXAValueViewDTO.
+        r"""Sets the create_time of this EXAValueViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -171,7 +171,7 @@ class EXAValueViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this EXAValueViewDTO.
+        r"""Gets the creator of this EXAValueViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -182,7 +182,7 @@ class EXAValueViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this EXAValueViewDTO.
+        r"""Sets the creator of this EXAValueViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -193,7 +193,7 @@ class EXAValueViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this EXAValueViewDTO.
+        r"""Gets the id of this EXAValueViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -204,7 +204,7 @@ class EXAValueViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EXAValueViewDTO.
+        r"""Sets the id of this EXAValueViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -215,7 +215,7 @@ class EXAValueViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this EXAValueViewDTO.
+        r"""Gets the last_update_time of this EXAValueViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -226,7 +226,7 @@ class EXAValueViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this EXAValueViewDTO.
+        r"""Sets the last_update_time of this EXAValueViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -237,7 +237,7 @@ class EXAValueViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this EXAValueViewDTO.
+        r"""Gets the modifier of this EXAValueViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -248,7 +248,7 @@ class EXAValueViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this EXAValueViewDTO.
+        r"""Sets the modifier of this EXAValueViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -259,7 +259,7 @@ class EXAValueViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this EXAValueViewDTO.
+        r"""Gets the name of this EXAValueViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -270,7 +270,7 @@ class EXAValueViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EXAValueViewDTO.
+        r"""Sets the name of this EXAValueViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -281,7 +281,7 @@ class EXAValueViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this EXAValueViewDTO.
+        r"""Gets the rdm_delete_flag of this EXAValueViewDTO.
 
         **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -292,7 +292,7 @@ class EXAValueViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this EXAValueViewDTO.
+        r"""Sets the rdm_delete_flag of this EXAValueViewDTO.
 
         **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -303,7 +303,7 @@ class EXAValueViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this EXAValueViewDTO.
+        r"""Gets the rdm_extension_type of this EXAValueViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -314,7 +314,7 @@ class EXAValueViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this EXAValueViewDTO.
+        r"""Sets the rdm_extension_type of this EXAValueViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -325,7 +325,7 @@ class EXAValueViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this EXAValueViewDTO.
+        r"""Gets the rdm_version of this EXAValueViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -336,7 +336,7 @@ class EXAValueViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this EXAValueViewDTO.
+        r"""Sets the rdm_version of this EXAValueViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -347,7 +347,7 @@ class EXAValueViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this EXAValueViewDTO.
+        r"""Gets the tenant of this EXAValueViewDTO.
 
         :return: The tenant of this EXAValueViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -356,7 +356,7 @@ class EXAValueViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this EXAValueViewDTO.
+        r"""Sets the tenant of this EXAValueViewDTO.
 
         :param tenant: The tenant of this EXAValueViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -365,7 +365,7 @@ class EXAValueViewDTO:
 
     @property
     def type(self):
-        """Gets the type of this EXAValueViewDTO.
+        r"""Gets the type of this EXAValueViewDTO.
 
         **参数解释：**  类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -376,7 +376,7 @@ class EXAValueViewDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EXAValueViewDTO.
+        r"""Sets the type of this EXAValueViewDTO.
 
         **参数解释：**  类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -387,7 +387,7 @@ class EXAValueViewDTO:
 
     @property
     def value(self):
-        """Gets the value of this EXAValueViewDTO.
+        r"""Gets the value of this EXAValueViewDTO.
 
         **参数解释：**  值。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -398,7 +398,7 @@ class EXAValueViewDTO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EXAValueViewDTO.
+        r"""Sets the value of this EXAValueViewDTO.
 
         **参数解释：**  值。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

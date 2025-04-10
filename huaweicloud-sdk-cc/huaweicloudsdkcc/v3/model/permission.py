@@ -47,7 +47,7 @@ class Permission:
     }
 
     def __init__(self, id=None, name=None, description=None, instance_id=None, project_id=None, region_id=None, created_at=None, domain_id=None, cloud_connection_id=None, status=None, instance_type=None, instance_domain_id=None):
-        """Permission
+        r"""Permission
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class Permission:
 
     @property
     def id(self):
-        """Gets the id of this Permission.
+        r"""Gets the id of this Permission.
 
         实例ID。
 
@@ -123,7 +123,7 @@ class Permission:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Permission.
+        r"""Sets the id of this Permission.
 
         实例ID。
 
@@ -134,7 +134,7 @@ class Permission:
 
     @property
     def name(self):
-        """Gets the name of this Permission.
+        r"""Gets the name of this Permission.
 
         实例名字。
 
@@ -145,7 +145,7 @@ class Permission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Permission.
+        r"""Sets the name of this Permission.
 
         实例名字。
 
@@ -156,7 +156,7 @@ class Permission:
 
     @property
     def description(self):
-        """Gets the description of this Permission.
+        r"""Gets the description of this Permission.
 
         实例描述。不支持 <>。
 
@@ -167,7 +167,7 @@ class Permission:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Permission.
+        r"""Sets the description of this Permission.
 
         实例描述。不支持 <>。
 
@@ -178,7 +178,7 @@ class Permission:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Permission.
+        r"""Gets the instance_id of this Permission.
 
         网络实例（VPC，VGW）的ID。
 
@@ -189,7 +189,7 @@ class Permission:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Permission.
+        r"""Sets the instance_id of this Permission.
 
         网络实例（VPC，VGW）的ID。
 
@@ -200,7 +200,7 @@ class Permission:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Permission.
+        r"""Gets the project_id of this Permission.
 
         实例所属项目ID。
 
@@ -211,7 +211,7 @@ class Permission:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Permission.
+        r"""Sets the project_id of this Permission.
 
         实例所属项目ID。
 
@@ -222,7 +222,7 @@ class Permission:
 
     @property
     def region_id(self):
-        """Gets the region_id of this Permission.
+        r"""Gets the region_id of this Permission.
 
         RegionID。
 
@@ -233,7 +233,7 @@ class Permission:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this Permission.
+        r"""Sets the region_id of this Permission.
 
         RegionID。
 
@@ -244,7 +244,7 @@ class Permission:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Permission.
+        r"""Gets the created_at of this Permission.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -255,7 +255,7 @@ class Permission:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Permission.
+        r"""Sets the created_at of this Permission.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -266,7 +266,7 @@ class Permission:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Permission.
+        r"""Gets the domain_id of this Permission.
 
         实例所属账号ID。
 
@@ -277,7 +277,7 @@ class Permission:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Permission.
+        r"""Sets the domain_id of this Permission.
 
         实例所属账号ID。
 
@@ -288,7 +288,7 @@ class Permission:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this Permission.
+        r"""Gets the cloud_connection_id of this Permission.
 
         云连接实例ID。
 
@@ -299,7 +299,7 @@ class Permission:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this Permission.
+        r"""Sets the cloud_connection_id of this Permission.
 
         云连接实例ID。
 
@@ -310,7 +310,7 @@ class Permission:
 
     @property
     def status(self):
-        """Gets the status of this Permission.
+        r"""Gets the status of this Permission.
 
         授权的状态。
 
@@ -321,7 +321,7 @@ class Permission:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Permission.
+        r"""Sets the status of this Permission.
 
         授权的状态。
 
@@ -332,7 +332,7 @@ class Permission:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this Permission.
+        r"""Gets the instance_type of this Permission.
 
         授权实例的类型。
 
@@ -343,7 +343,7 @@ class Permission:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this Permission.
+        r"""Sets the instance_type of this Permission.
 
         授权实例的类型。
 
@@ -354,7 +354,7 @@ class Permission:
 
     @property
     def instance_domain_id(self):
-        """Gets the instance_domain_id of this Permission.
+        r"""Gets the instance_domain_id of this Permission.
 
         被授权网络实例所属的账户ID。
 
@@ -365,7 +365,7 @@ class Permission:
 
     @instance_domain_id.setter
     def instance_domain_id(self, instance_domain_id):
-        """Sets the instance_domain_id of this Permission.
+        r"""Sets the instance_domain_id of this Permission.
 
         被授权网络实例所属的账户ID。
 

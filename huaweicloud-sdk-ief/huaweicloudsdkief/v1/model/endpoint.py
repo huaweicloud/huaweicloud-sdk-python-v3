@@ -25,7 +25,7 @@ class Endpoint:
     }
 
     def __init__(self, endpoint=None):
-        """Endpoint
+        r"""Endpoint
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Endpoint:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this Endpoint.
+        r"""Gets the endpoint of this Endpoint.
 
         :return: The endpoint of this Endpoint.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObj`
@@ -52,7 +52,7 @@ class Endpoint:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this Endpoint.
+        r"""Sets the endpoint of this Endpoint.
 
         :param endpoint: The endpoint of this Endpoint.
         :type endpoint: :class:`huaweicloudsdkief.v1.EndpointObj`

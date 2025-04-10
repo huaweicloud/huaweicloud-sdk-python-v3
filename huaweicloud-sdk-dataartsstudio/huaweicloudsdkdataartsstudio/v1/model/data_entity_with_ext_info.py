@@ -27,7 +27,7 @@ class DataEntityWithExtInfo:
     }
 
     def __init__(self, entity=None, referred_entities=None):
-        """DataEntityWithExtInfo
+        r"""DataEntityWithExtInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataEntityWithExtInfo:
 
     @property
     def entity(self):
-        """Gets the entity of this DataEntityWithExtInfo.
+        r"""Gets the entity of this DataEntityWithExtInfo.
 
         :return: The entity of this DataEntityWithExtInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -59,7 +59,7 @@ class DataEntityWithExtInfo:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this DataEntityWithExtInfo.
+        r"""Sets the entity of this DataEntityWithExtInfo.
 
         :param entity: The entity of this DataEntityWithExtInfo.
         :type entity: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -68,7 +68,7 @@ class DataEntityWithExtInfo:
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this DataEntityWithExtInfo.
+        r"""Gets the referred_entities of this DataEntityWithExtInfo.
 
         关联资产信息，结构体Map<String, Entity>
 
@@ -79,7 +79,7 @@ class DataEntityWithExtInfo:
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this DataEntityWithExtInfo.
+        r"""Sets the referred_entities of this DataEntityWithExtInfo.
 
         关联资产信息，结构体Map<String, Entity>
 

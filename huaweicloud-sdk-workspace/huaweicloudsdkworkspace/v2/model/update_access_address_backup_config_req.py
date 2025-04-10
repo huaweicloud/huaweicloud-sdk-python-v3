@@ -25,7 +25,7 @@ class UpdateAccessAddressBackupConfigReq:
     }
 
     def __init__(self, access_config=None):
-        """UpdateAccessAddressBackupConfigReq
+        r"""UpdateAccessAddressBackupConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAccessAddressBackupConfigReq:
 
     @property
     def access_config(self):
-        """Gets the access_config of this UpdateAccessAddressBackupConfigReq.
+        r"""Gets the access_config of this UpdateAccessAddressBackupConfigReq.
 
         接入配置列表信息。
 
@@ -54,7 +54,7 @@ class UpdateAccessAddressBackupConfigReq:
 
     @access_config.setter
     def access_config(self, access_config):
-        """Sets the access_config of this UpdateAccessAddressBackupConfigReq.
+        r"""Sets the access_config of this UpdateAccessAddressBackupConfigReq.
 
         接入配置列表信息。
 

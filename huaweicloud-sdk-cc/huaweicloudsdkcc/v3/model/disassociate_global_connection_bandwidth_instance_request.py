@@ -27,7 +27,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """DisassociateGlobalConnectionBandwidthInstanceRequest
+        r"""DisassociateGlobalConnectionBandwidthInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this DisassociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Gets the id of this DisassociateGlobalConnectionBandwidthInstanceRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisassociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Sets the id of this DisassociateGlobalConnectionBandwidthInstanceRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Gets the body of this DisassociateGlobalConnectionBandwidthInstanceRequest.
 
         :return: The body of this DisassociateGlobalConnectionBandwidthInstanceRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.DisassociateGlobalConnectionBandwidthInstanceRequestBody`
@@ -80,7 +80,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Sets the body of this DisassociateGlobalConnectionBandwidthInstanceRequest.
 
         :param body: The body of this DisassociateGlobalConnectionBandwidthInstanceRequest.
         :type body: :class:`huaweicloudsdkcc.v3.DisassociateGlobalConnectionBandwidthInstanceRequestBody`

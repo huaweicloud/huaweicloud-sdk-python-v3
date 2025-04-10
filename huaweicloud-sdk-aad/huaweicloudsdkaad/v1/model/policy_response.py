@@ -39,7 +39,7 @@ class PolicyResponse:
     }
 
     def __init__(self, id=None, package_id=None, package_name=None, name=None, description=None, region=None, clean_threshold=None, num_protected_ip=None):
-        """PolicyResponse
+        r"""PolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class PolicyResponse:
 
     @property
     def id(self):
-        """Gets the id of this PolicyResponse.
+        r"""Gets the id of this PolicyResponse.
 
         id
 
@@ -95,7 +95,7 @@ class PolicyResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyResponse.
+        r"""Sets the id of this PolicyResponse.
 
         id
 
@@ -106,7 +106,7 @@ class PolicyResponse:
 
     @property
     def package_id(self):
-        """Gets the package_id of this PolicyResponse.
+        r"""Gets the package_id of this PolicyResponse.
 
         防护包id
 
@@ -117,7 +117,7 @@ class PolicyResponse:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this PolicyResponse.
+        r"""Sets the package_id of this PolicyResponse.
 
         防护包id
 
@@ -128,7 +128,7 @@ class PolicyResponse:
 
     @property
     def package_name(self):
-        """Gets the package_name of this PolicyResponse.
+        r"""Gets the package_name of this PolicyResponse.
 
         防护包名
 
@@ -139,7 +139,7 @@ class PolicyResponse:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this PolicyResponse.
+        r"""Sets the package_name of this PolicyResponse.
 
         防护包名
 
@@ -150,7 +150,7 @@ class PolicyResponse:
 
     @property
     def name(self):
-        """Gets the name of this PolicyResponse.
+        r"""Gets the name of this PolicyResponse.
 
         策略名
 
@@ -161,7 +161,7 @@ class PolicyResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyResponse.
+        r"""Sets the name of this PolicyResponse.
 
         策略名
 
@@ -172,7 +172,7 @@ class PolicyResponse:
 
     @property
     def description(self):
-        """Gets the description of this PolicyResponse.
+        r"""Gets the description of this PolicyResponse.
 
         描述
 
@@ -183,7 +183,7 @@ class PolicyResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyResponse.
+        r"""Sets the description of this PolicyResponse.
 
         描述
 
@@ -194,7 +194,7 @@ class PolicyResponse:
 
     @property
     def region(self):
-        """Gets the region of this PolicyResponse.
+        r"""Gets the region of this PolicyResponse.
 
         所属region的id
 
@@ -205,7 +205,7 @@ class PolicyResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this PolicyResponse.
+        r"""Sets the region of this PolicyResponse.
 
         所属region的id
 
@@ -216,7 +216,7 @@ class PolicyResponse:
 
     @property
     def clean_threshold(self):
-        """Gets the clean_threshold of this PolicyResponse.
+        r"""Gets the clean_threshold of this PolicyResponse.
 
         清洗阈值
 
@@ -227,7 +227,7 @@ class PolicyResponse:
 
     @clean_threshold.setter
     def clean_threshold(self, clean_threshold):
-        """Sets the clean_threshold of this PolicyResponse.
+        r"""Sets the clean_threshold of this PolicyResponse.
 
         清洗阈值
 
@@ -238,7 +238,7 @@ class PolicyResponse:
 
     @property
     def num_protected_ip(self):
-        """Gets the num_protected_ip of this PolicyResponse.
+        r"""Gets the num_protected_ip of this PolicyResponse.
 
         防护ip数
 
@@ -249,7 +249,7 @@ class PolicyResponse:
 
     @num_protected_ip.setter
     def num_protected_ip(self, num_protected_ip):
-        """Sets the num_protected_ip of this PolicyResponse.
+        r"""Sets the num_protected_ip of this PolicyResponse.
 
         防护ip数
 

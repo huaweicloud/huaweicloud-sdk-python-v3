@@ -26,7 +26,7 @@ class ListFlowBySimCardsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListFlowBySimCardsResponse
+        r"""ListFlowBySimCardsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFlowBySimCardsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListFlowBySimCardsResponse.
+        r"""Gets the body of this ListFlowBySimCardsResponse.
 
         :return: The body of this ListFlowBySimCardsResponse.
         :rtype: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]
@@ -53,7 +53,7 @@ class ListFlowBySimCardsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFlowBySimCardsResponse.
+        r"""Sets the body of this ListFlowBySimCardsResponse.
 
         :param body: The body of this ListFlowBySimCardsResponse.
         :type body: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]

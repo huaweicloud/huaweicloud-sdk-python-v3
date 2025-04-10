@@ -31,7 +31,7 @@ class ListPublisherRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None, name=None):
-        """ListPublisherRequest
+        r"""ListPublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListPublisherRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListPublisherRequest.
+        r"""Gets the domain_id of this ListPublisherRequest.
 
         租户ID
 
@@ -72,7 +72,7 @@ class ListPublisherRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListPublisherRequest.
+        r"""Sets the domain_id of this ListPublisherRequest.
 
         租户ID
 
@@ -83,7 +83,7 @@ class ListPublisherRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublisherRequest.
+        r"""Gets the offset of this ListPublisherRequest.
 
         偏移
 
@@ -94,7 +94,7 @@ class ListPublisherRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublisherRequest.
+        r"""Sets the offset of this ListPublisherRequest.
 
         偏移
 
@@ -105,7 +105,7 @@ class ListPublisherRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublisherRequest.
+        r"""Gets the limit of this ListPublisherRequest.
 
         大小
 
@@ -116,7 +116,7 @@ class ListPublisherRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublisherRequest.
+        r"""Sets the limit of this ListPublisherRequest.
 
         大小
 
@@ -127,7 +127,7 @@ class ListPublisherRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPublisherRequest.
+        r"""Gets the name of this ListPublisherRequest.
 
         名称
 
@@ -138,7 +138,7 @@ class ListPublisherRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPublisherRequest.
+        r"""Sets the name of this ListPublisherRequest.
 
         名称
 

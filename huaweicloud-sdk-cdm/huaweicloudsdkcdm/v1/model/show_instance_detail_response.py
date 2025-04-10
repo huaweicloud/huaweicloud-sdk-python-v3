@@ -26,7 +26,7 @@ class ShowInstanceDetailResponse(SdkResponse):
     }
 
     def __init__(self, instance=None):
-        """ShowInstanceDetailResponse
+        r"""ShowInstanceDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ShowInstanceDetailResponse.
+        r"""Gets the instance of this ShowInstanceDetailResponse.
 
         :return: The instance of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterInstanceDetail`
@@ -53,7 +53,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowInstanceDetailResponse.
+        r"""Sets the instance of this ShowInstanceDetailResponse.
 
         :param instance: The instance of this ShowInstanceDetailResponse.
         :type instance: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterInstanceDetail`

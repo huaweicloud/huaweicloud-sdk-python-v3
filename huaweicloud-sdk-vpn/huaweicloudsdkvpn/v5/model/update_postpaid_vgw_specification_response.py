@@ -30,7 +30,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
     }
 
     def __init__(self, vpn_gateway=None, request_id=None, header_response_token=None):
-        """UpdatePostpaidVgwSpecificationResponse
+        r"""UpdatePostpaidVgwSpecificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
 
     @property
     def vpn_gateway(self):
-        """Gets the vpn_gateway of this UpdatePostpaidVgwSpecificationResponse.
+        r"""Gets the vpn_gateway of this UpdatePostpaidVgwSpecificationResponse.
 
         :return: The vpn_gateway of this UpdatePostpaidVgwSpecificationResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateResponseVpnGateway`
@@ -67,7 +67,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
 
     @vpn_gateway.setter
     def vpn_gateway(self, vpn_gateway):
-        """Sets the vpn_gateway of this UpdatePostpaidVgwSpecificationResponse.
+        r"""Sets the vpn_gateway of this UpdatePostpaidVgwSpecificationResponse.
 
         :param vpn_gateway: The vpn_gateway of this UpdatePostpaidVgwSpecificationResponse.
         :type vpn_gateway: :class:`huaweicloudsdkvpn.v5.UpdateResponseVpnGateway`
@@ -76,7 +76,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdatePostpaidVgwSpecificationResponse.
+        r"""Gets the request_id of this UpdatePostpaidVgwSpecificationResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdatePostpaidVgwSpecificationResponse.
+        r"""Sets the request_id of this UpdatePostpaidVgwSpecificationResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdatePostpaidVgwSpecificationResponse.
+        r"""Gets the header_response_token of this UpdatePostpaidVgwSpecificationResponse.
 
         :return: The header_response_token of this UpdatePostpaidVgwSpecificationResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdatePostpaidVgwSpecificationResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdatePostpaidVgwSpecificationResponse.
+        r"""Sets the header_response_token of this UpdatePostpaidVgwSpecificationResponse.
 
         :param header_response_token: The header_response_token of this UpdatePostpaidVgwSpecificationResponse.
         :type header_response_token: str

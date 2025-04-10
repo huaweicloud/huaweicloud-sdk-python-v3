@@ -31,7 +31,7 @@ class PersistentStorageClaim:
     }
 
     def __init__(self, storage_claim_id=None, folder_path=None, delimiter=None, claim_mode=None):
-        """PersistentStorageClaim
+        r"""PersistentStorageClaim
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PersistentStorageClaim:
 
     @property
     def storage_claim_id(self):
-        """Gets the storage_claim_id of this PersistentStorageClaim.
+        r"""Gets the storage_claim_id of this PersistentStorageClaim.
 
         WKS存储目录声明ID。
 
@@ -75,7 +75,7 @@ class PersistentStorageClaim:
 
     @storage_claim_id.setter
     def storage_claim_id(self, storage_claim_id):
-        """Sets the storage_claim_id of this PersistentStorageClaim.
+        r"""Sets the storage_claim_id of this PersistentStorageClaim.
 
         WKS存储目录声明ID。
 
@@ -86,7 +86,7 @@ class PersistentStorageClaim:
 
     @property
     def folder_path(self):
-        """Gets the folder_path of this PersistentStorageClaim.
+        r"""Gets the folder_path of this PersistentStorageClaim.
 
         存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
@@ -97,7 +97,7 @@ class PersistentStorageClaim:
 
     @folder_path.setter
     def folder_path(self, folder_path):
-        """Sets the folder_path of this PersistentStorageClaim.
+        r"""Sets the folder_path of this PersistentStorageClaim.
 
         存储对象路径。 注: path是对象在系统中的完整路径。 例如系统中存在如下目录结构的数据。 SFS-Tmp: └─shares   ├─image   └─video image的路径: shares/image/ video的路径: shares/video/
 
@@ -108,7 +108,7 @@ class PersistentStorageClaim:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this PersistentStorageClaim.
+        r"""Gets the delimiter of this PersistentStorageClaim.
 
         路径分隔符。
 
@@ -119,7 +119,7 @@ class PersistentStorageClaim:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this PersistentStorageClaim.
+        r"""Sets the delimiter of this PersistentStorageClaim.
 
         路径分隔符。
 
@@ -130,7 +130,7 @@ class PersistentStorageClaim:
 
     @property
     def claim_mode(self):
-        """Gets the claim_mode of this PersistentStorageClaim.
+        r"""Gets the claim_mode of this PersistentStorageClaim.
 
         :return: The claim_mode of this PersistentStorageClaim.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
@@ -139,7 +139,7 @@ class PersistentStorageClaim:
 
     @claim_mode.setter
     def claim_mode(self, claim_mode):
-        """Sets the claim_mode of this PersistentStorageClaim.
+        r"""Sets the claim_mode of this PersistentStorageClaim.
 
         :param claim_mode: The claim_mode of this PersistentStorageClaim.
         :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`

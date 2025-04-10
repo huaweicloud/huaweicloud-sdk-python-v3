@@ -27,7 +27,7 @@ class UpdateGlobalConnectionBandwidthRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateGlobalConnectionBandwidthRequest
+        r"""UpdateGlobalConnectionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGlobalConnectionBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateGlobalConnectionBandwidthRequest.
+        r"""Gets the id of this UpdateGlobalConnectionBandwidthRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateGlobalConnectionBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateGlobalConnectionBandwidthRequest.
+        r"""Sets the id of this UpdateGlobalConnectionBandwidthRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateGlobalConnectionBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGlobalConnectionBandwidthRequest.
+        r"""Gets the body of this UpdateGlobalConnectionBandwidthRequest.
 
         :return: The body of this UpdateGlobalConnectionBandwidthRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateGlobalConnectionBandwidthRequestBody`
@@ -80,7 +80,7 @@ class UpdateGlobalConnectionBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGlobalConnectionBandwidthRequest.
+        r"""Sets the body of this UpdateGlobalConnectionBandwidthRequest.
 
         :param body: The body of this UpdateGlobalConnectionBandwidthRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateGlobalConnectionBandwidthRequestBody`

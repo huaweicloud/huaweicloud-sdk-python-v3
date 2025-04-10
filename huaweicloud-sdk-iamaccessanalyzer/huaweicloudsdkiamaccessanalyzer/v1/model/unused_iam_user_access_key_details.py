@@ -27,7 +27,7 @@ class UnusedIamUserAccessKeyDetails:
     }
 
     def __init__(self, access_key_id=None, last_accessed=None):
-        """UnusedIamUserAccessKeyDetails
+        r"""UnusedIamUserAccessKeyDetails
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UnusedIamUserAccessKeyDetails:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this UnusedIamUserAccessKeyDetails.
+        r"""Gets the access_key_id of this UnusedIamUserAccessKeyDetails.
 
         用户访问密钥唯一标识符（ID）。
 
@@ -60,7 +60,7 @@ class UnusedIamUserAccessKeyDetails:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this UnusedIamUserAccessKeyDetails.
+        r"""Sets the access_key_id of this UnusedIamUserAccessKeyDetails.
 
         用户访问密钥唯一标识符（ID）。
 
@@ -71,7 +71,7 @@ class UnusedIamUserAccessKeyDetails:
 
     @property
     def last_accessed(self):
-        """Gets the last_accessed of this UnusedIamUserAccessKeyDetails.
+        r"""Gets the last_accessed of this UnusedIamUserAccessKeyDetails.
 
         用户访问密钥的最后访问时间。
 
@@ -82,7 +82,7 @@ class UnusedIamUserAccessKeyDetails:
 
     @last_accessed.setter
     def last_accessed(self, last_accessed):
-        """Sets the last_accessed of this UnusedIamUserAccessKeyDetails.
+        r"""Sets the last_accessed of this UnusedIamUserAccessKeyDetails.
 
         用户访问密钥的最后访问时间。
 

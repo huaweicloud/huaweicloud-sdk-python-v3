@@ -39,7 +39,7 @@ class PoliciesFileAndClipboard:
     }
 
     def __init__(self, file_redirection=None, clip_length_limit_flag_c2s=None, clip_length_limit_c2s=None, clip_length_limit_flag_s2c=None, clip_length_limit_s2c=None, fd_mobile_client_redir_enable=None, clipboard_redirection=None, clipboard_redirection_options=None):
-        """PoliciesFileAndClipboard
+        r"""PoliciesFileAndClipboard
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def file_redirection(self):
-        """Gets the file_redirection of this PoliciesFileAndClipboard.
+        r"""Gets the file_redirection of this PoliciesFileAndClipboard.
 
         :return: The file_redirection of this PoliciesFileAndClipboard.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirection`
@@ -101,7 +101,7 @@ class PoliciesFileAndClipboard:
 
     @file_redirection.setter
     def file_redirection(self, file_redirection):
-        """Sets the file_redirection of this PoliciesFileAndClipboard.
+        r"""Sets the file_redirection of this PoliciesFileAndClipboard.
 
         :param file_redirection: The file_redirection of this PoliciesFileAndClipboard.
         :type file_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirection`
@@ -110,7 +110,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clip_length_limit_flag_c2s(self):
-        """Gets the clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
+        r"""Gets the clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
 
         剪切板长度表示
 
@@ -121,7 +121,7 @@ class PoliciesFileAndClipboard:
 
     @clip_length_limit_flag_c2s.setter
     def clip_length_limit_flag_c2s(self, clip_length_limit_flag_c2s):
-        """Sets the clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
+        r"""Sets the clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
 
         剪切板长度表示
 
@@ -132,7 +132,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clip_length_limit_c2s(self):
-        """Gets the clip_length_limit_c2s of this PoliciesFileAndClipboard.
+        r"""Gets the clip_length_limit_c2s of this PoliciesFileAndClipboard.
 
         剪切板客户端长度
 
@@ -143,7 +143,7 @@ class PoliciesFileAndClipboard:
 
     @clip_length_limit_c2s.setter
     def clip_length_limit_c2s(self, clip_length_limit_c2s):
-        """Sets the clip_length_limit_c2s of this PoliciesFileAndClipboard.
+        r"""Sets the clip_length_limit_c2s of this PoliciesFileAndClipboard.
 
         剪切板客户端长度
 
@@ -154,7 +154,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clip_length_limit_flag_s2c(self):
-        """Gets the clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
+        r"""Gets the clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
 
         剪切板长度表示
 
@@ -165,7 +165,7 @@ class PoliciesFileAndClipboard:
 
     @clip_length_limit_flag_s2c.setter
     def clip_length_limit_flag_s2c(self, clip_length_limit_flag_s2c):
-        """Sets the clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
+        r"""Sets the clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
 
         剪切板长度表示
 
@@ -176,7 +176,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clip_length_limit_s2c(self):
-        """Gets the clip_length_limit_s2c of this PoliciesFileAndClipboard.
+        r"""Gets the clip_length_limit_s2c of this PoliciesFileAndClipboard.
 
         剪切板客户端长度
 
@@ -187,7 +187,7 @@ class PoliciesFileAndClipboard:
 
     @clip_length_limit_s2c.setter
     def clip_length_limit_s2c(self, clip_length_limit_s2c):
-        """Sets the clip_length_limit_s2c of this PoliciesFileAndClipboard.
+        r"""Sets the clip_length_limit_s2c of this PoliciesFileAndClipboard.
 
         剪切板客户端长度
 
@@ -198,7 +198,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def fd_mobile_client_redir_enable(self):
-        """Gets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
+        r"""Gets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
 
         移动客户端文件重定向：取值为： false：表示关闭。 true：表示开启。
 
@@ -209,7 +209,7 @@ class PoliciesFileAndClipboard:
 
     @fd_mobile_client_redir_enable.setter
     def fd_mobile_client_redir_enable(self, fd_mobile_client_redir_enable):
-        """Sets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
+        r"""Sets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
 
         移动客户端文件重定向：取值为： false：表示关闭。 true：表示开启。
 
@@ -220,7 +220,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clipboard_redirection(self):
-        """Gets the clipboard_redirection of this PoliciesFileAndClipboard.
+        r"""Gets the clipboard_redirection of this PoliciesFileAndClipboard.
 
         剪切板重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -231,7 +231,7 @@ class PoliciesFileAndClipboard:
 
     @clipboard_redirection.setter
     def clipboard_redirection(self, clipboard_redirection):
-        """Sets the clipboard_redirection of this PoliciesFileAndClipboard.
+        r"""Sets the clipboard_redirection of this PoliciesFileAndClipboard.
 
         剪切板重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -242,7 +242,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clipboard_redirection_options(self):
-        """Gets the clipboard_redirection_options of this PoliciesFileAndClipboard.
+        r"""Gets the clipboard_redirection_options of this PoliciesFileAndClipboard.
 
         :return: The clipboard_redirection_options of this PoliciesFileAndClipboard.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardClipboardRedirectionOptions`
@@ -251,7 +251,7 @@ class PoliciesFileAndClipboard:
 
     @clipboard_redirection_options.setter
     def clipboard_redirection_options(self, clipboard_redirection_options):
-        """Sets the clipboard_redirection_options of this PoliciesFileAndClipboard.
+        r"""Sets the clipboard_redirection_options of this PoliciesFileAndClipboard.
 
         :param clipboard_redirection_options: The clipboard_redirection_options of this PoliciesFileAndClipboard.
         :type clipboard_redirection_options: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardClipboardRedirectionOptions`

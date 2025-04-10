@@ -27,7 +27,7 @@ class ShowKnowledgeIntentRequest:
     }
 
     def __init__(self, x_app_user_id=None, intent_id=None):
-        """ShowKnowledgeIntentRequest
+        r"""ShowKnowledgeIntentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowKnowledgeIntentRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowKnowledgeIntentRequest.
+        r"""Gets the x_app_user_id of this ShowKnowledgeIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowKnowledgeIntentRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowKnowledgeIntentRequest.
+        r"""Sets the x_app_user_id of this ShowKnowledgeIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowKnowledgeIntentRequest:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this ShowKnowledgeIntentRequest.
+        r"""Gets the intent_id of this ShowKnowledgeIntentRequest.
 
         意图ID。
 
@@ -82,7 +82,7 @@ class ShowKnowledgeIntentRequest:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this ShowKnowledgeIntentRequest.
+        r"""Sets the intent_id of this ShowKnowledgeIntentRequest.
 
         意图ID。
 

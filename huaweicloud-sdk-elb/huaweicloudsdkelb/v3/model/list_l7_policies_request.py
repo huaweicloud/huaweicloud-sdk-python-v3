@@ -57,7 +57,7 @@ class ListL7PoliciesRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, enterprise_project_id=None, id=None, name=None, description=None, admin_state_up=None, listener_id=None, position=None, action=None, redirect_url=None, redirect_pool_id=None, redirect_listener_id=None, provisioning_status=None, display_all_rules=None, priority=None):
-        """ListL7PoliciesRequest
+        r"""ListL7PoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ListL7PoliciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListL7PoliciesRequest.
+        r"""Gets the marker of this ListL7PoliciesRequest.
 
         参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -166,7 +166,7 @@ class ListL7PoliciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListL7PoliciesRequest.
+        r"""Sets the marker of this ListL7PoliciesRequest.
 
         参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -177,7 +177,7 @@ class ListL7PoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListL7PoliciesRequest.
+        r"""Gets the limit of this ListL7PoliciesRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -188,7 +188,7 @@ class ListL7PoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListL7PoliciesRequest.
+        r"""Sets the limit of this ListL7PoliciesRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -199,7 +199,7 @@ class ListL7PoliciesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListL7PoliciesRequest.
+        r"""Gets the page_reverse of this ListL7PoliciesRequest.
 
         参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页。  默认取值：false
 
@@ -210,7 +210,7 @@ class ListL7PoliciesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListL7PoliciesRequest.
+        r"""Sets the page_reverse of this ListL7PoliciesRequest.
 
         参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页。  默认取值：false
 
@@ -221,7 +221,7 @@ class ListL7PoliciesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListL7PoliciesRequest.
+        r"""Gets the enterprise_project_id of this ListL7PoliciesRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:l7policies:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -232,7 +232,7 @@ class ListL7PoliciesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListL7PoliciesRequest.
+        r"""Sets the enterprise_project_id of this ListL7PoliciesRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:l7policies:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -243,7 +243,7 @@ class ListL7PoliciesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListL7PoliciesRequest.
+        r"""Gets the id of this ListL7PoliciesRequest.
 
         参数解释：转发策略ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -254,7 +254,7 @@ class ListL7PoliciesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListL7PoliciesRequest.
+        r"""Sets the id of this ListL7PoliciesRequest.
 
         参数解释：转发策略ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -265,7 +265,7 @@ class ListL7PoliciesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListL7PoliciesRequest.
+        r"""Gets the name of this ListL7PoliciesRequest.
 
         参数解释：转发策略名称。  支持多值查询，查询条件格式：**name=xxx&name=xxx**。
 
@@ -276,7 +276,7 @@ class ListL7PoliciesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListL7PoliciesRequest.
+        r"""Sets the name of this ListL7PoliciesRequest.
 
         参数解释：转发策略名称。  支持多值查询，查询条件格式：**name=xxx&name=xxx**。
 
@@ -287,7 +287,7 @@ class ListL7PoliciesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListL7PoliciesRequest.
+        r"""Gets the description of this ListL7PoliciesRequest.
 
         参数解释：转发策略额描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -298,7 +298,7 @@ class ListL7PoliciesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListL7PoliciesRequest.
+        r"""Sets the description of this ListL7PoliciesRequest.
 
         参数解释：转发策略额描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -309,7 +309,7 @@ class ListL7PoliciesRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListL7PoliciesRequest.
+        r"""Gets the admin_state_up of this ListL7PoliciesRequest.
 
         参数解释：转发策略的管理状态。
 
@@ -320,7 +320,7 @@ class ListL7PoliciesRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListL7PoliciesRequest.
+        r"""Sets the admin_state_up of this ListL7PoliciesRequest.
 
         参数解释：转发策略的管理状态。
 
@@ -331,7 +331,7 @@ class ListL7PoliciesRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListL7PoliciesRequest.
+        r"""Gets the listener_id of this ListL7PoliciesRequest.
 
         参数解释：转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id=xxx&listener_id=xxx*******。
 
@@ -342,7 +342,7 @@ class ListL7PoliciesRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListL7PoliciesRequest.
+        r"""Sets the listener_id of this ListL7PoliciesRequest.
 
         参数解释：转发策略所属的监听器ID。  支持多值查询，查询条件格式：*******listener_id=xxx&listener_id=xxx*******。
 
@@ -353,7 +353,7 @@ class ListL7PoliciesRequest:
 
     @property
     def position(self):
-        """Gets the position of this ListL7PoliciesRequest.
+        r"""Gets the position of this ListL7PoliciesRequest.
 
         参数解释：转发策略的优先级。  支持多值查询，查询条件格式：****position=xxx&position=xxx****。  不支持该字段，请勿使用。
 
@@ -364,7 +364,7 @@ class ListL7PoliciesRequest:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ListL7PoliciesRequest.
+        r"""Sets the position of this ListL7PoliciesRequest.
 
         参数解释：转发策略的优先级。  支持多值查询，查询条件格式：****position=xxx&position=xxx****。  不支持该字段，请勿使用。
 
@@ -375,7 +375,7 @@ class ListL7PoliciesRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListL7PoliciesRequest.
+        r"""Gets the action of this ListL7PoliciesRequest.
 
         参数解释：转发策略的转发动作。  取值范围： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action=xxx&action=xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
 
@@ -386,7 +386,7 @@ class ListL7PoliciesRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListL7PoliciesRequest.
+        r"""Sets the action of this ListL7PoliciesRequest.
 
         参数解释：转发策略的转发动作。  取值范围： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  支持多值查询，查询条件格式：*****action=xxx&action=xxx*****。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
 
@@ -397,7 +397,7 @@ class ListL7PoliciesRequest:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this ListL7PoliciesRequest.
+        r"""Gets the redirect_url of this ListL7PoliciesRequest.
 
         参数解释：转发到的url。  支持多值查询，查询条件格式：****redirect_url=xxx&redirect_url=xxx****。  不支持该字段，请勿使用。
 
@@ -408,7 +408,7 @@ class ListL7PoliciesRequest:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this ListL7PoliciesRequest.
+        r"""Sets the redirect_url of this ListL7PoliciesRequest.
 
         参数解释：转发到的url。  支持多值查询，查询条件格式：****redirect_url=xxx&redirect_url=xxx****。  不支持该字段，请勿使用。
 
@@ -419,7 +419,7 @@ class ListL7PoliciesRequest:
 
     @property
     def redirect_pool_id(self):
-        """Gets the redirect_pool_id of this ListL7PoliciesRequest.
+        r"""Gets the redirect_pool_id of this ListL7PoliciesRequest.
 
         参数解释：转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id=xxx&redirect_pool_id=xxx***。
 
@@ -430,7 +430,7 @@ class ListL7PoliciesRequest:
 
     @redirect_pool_id.setter
     def redirect_pool_id(self, redirect_pool_id):
-        """Sets the redirect_pool_id of this ListL7PoliciesRequest.
+        r"""Sets the redirect_pool_id of this ListL7PoliciesRequest.
 
         参数解释：转发到pool的ID。  支持多值查询，查询条件格式：***redirect_pool_id=xxx&redirect_pool_id=xxx***。
 
@@ -441,7 +441,7 @@ class ListL7PoliciesRequest:
 
     @property
     def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this ListL7PoliciesRequest.
+        r"""Gets the redirect_listener_id of this ListL7PoliciesRequest.
 
         参数解释：转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id=xxx&redirect_listener_id=xxx**。
 
@@ -452,7 +452,7 @@ class ListL7PoliciesRequest:
 
     @redirect_listener_id.setter
     def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this ListL7PoliciesRequest.
+        r"""Sets the redirect_listener_id of this ListL7PoliciesRequest.
 
         参数解释：转发到的listener的ID。  支持多值查询，查询条件格式：**redirect_listener_id=xxx&redirect_listener_id=xxx**。
 
@@ -463,7 +463,7 @@ class ListL7PoliciesRequest:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListL7PoliciesRequest.
+        r"""Gets the provisioning_status of this ListL7PoliciesRequest.
 
         参数解释：转发策略的配置状态。  取值范围： - ACTIVE: 表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
@@ -474,7 +474,7 @@ class ListL7PoliciesRequest:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListL7PoliciesRequest.
+        r"""Sets the provisioning_status of this ListL7PoliciesRequest.
 
         参数解释：转发策略的配置状态。  取值范围： - ACTIVE: 表示正常。 - ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
@@ -485,7 +485,7 @@ class ListL7PoliciesRequest:
 
     @property
     def display_all_rules(self):
-        """Gets the display_all_rules of this ListL7PoliciesRequest.
+        r"""Gets the display_all_rules of this ListL7PoliciesRequest.
 
         参数解释：是否显示转发策略下的rule详细信息。  取值范围： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
 
@@ -496,7 +496,7 @@ class ListL7PoliciesRequest:
 
     @display_all_rules.setter
     def display_all_rules(self, display_all_rules):
-        """Sets the display_all_rules of this ListL7PoliciesRequest.
+        r"""Sets the display_all_rules of this ListL7PoliciesRequest.
 
         参数解释：是否显示转发策略下的rule详细信息。  取值范围： - true：显示policy下面的rule的详细信息。 - false：只显示policy下面的rule的id信息
 
@@ -507,7 +507,7 @@ class ListL7PoliciesRequest:
 
     @property
     def priority(self):
-        """Gets the priority of this ListL7PoliciesRequest.
+        r"""Gets the priority of this ListL7PoliciesRequest.
 
         参数解释：转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority=xxx&priority=xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -518,7 +518,7 @@ class ListL7PoliciesRequest:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListL7PoliciesRequest.
+        r"""Sets the priority of this ListL7PoliciesRequest.
 
         参数解释：转发策略的优先级。数值越小，优先级越高。  支持多值查询，查询条件格式：*priority=xxx&priority=xxx*。  [不支持该字段，请勿使用。](tag:hcso_dt)
 

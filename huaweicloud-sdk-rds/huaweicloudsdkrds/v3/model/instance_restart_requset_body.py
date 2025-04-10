@@ -25,7 +25,7 @@ class InstanceRestartRequsetBody:
     }
 
     def __init__(self, restart=None):
-        """InstanceRestartRequsetBody
+        r"""InstanceRestartRequsetBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InstanceRestartRequsetBody:
 
     @property
     def restart(self):
-        """Gets the restart of this InstanceRestartRequsetBody.
+        r"""Gets the restart of this InstanceRestartRequsetBody.
 
         空值
 
@@ -53,7 +53,7 @@ class InstanceRestartRequsetBody:
 
     @restart.setter
     def restart(self, restart):
-        """Sets the restart of this InstanceRestartRequsetBody.
+        r"""Sets the restart of this InstanceRestartRequsetBody.
 
         空值
 

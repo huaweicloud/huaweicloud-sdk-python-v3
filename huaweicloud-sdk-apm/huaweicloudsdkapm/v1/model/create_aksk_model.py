@@ -25,7 +25,7 @@ class CreateAkskModel:
     }
 
     def __init__(self, descp=None):
-        """CreateAkskModel
+        r"""CreateAkskModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAkskModel:
 
     @property
     def descp(self):
-        """Gets the descp of this CreateAkskModel.
+        r"""Gets the descp of this CreateAkskModel.
 
         描述信息。
 
@@ -54,7 +54,7 @@ class CreateAkskModel:
 
     @descp.setter
     def descp(self, descp):
-        """Sets the descp of this CreateAkskModel.
+        r"""Sets the descp of this CreateAkskModel.
 
         描述信息。
 

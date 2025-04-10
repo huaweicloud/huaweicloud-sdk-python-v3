@@ -30,7 +30,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateMergeRequestDiscussionNoteResponse
+        r"""CreateMergeRequestDiscussionNoteResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateMergeRequestDiscussionNoteResponse.
+        r"""Gets the error of this CreateMergeRequestDiscussionNoteResponse.
 
         :return: The error of this CreateMergeRequestDiscussionNoteResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateMergeRequestDiscussionNoteResponse.
+        r"""Sets the error of this CreateMergeRequestDiscussionNoteResponse.
 
         :param error: The error of this CreateMergeRequestDiscussionNoteResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateMergeRequestDiscussionNoteResponse.
+        r"""Gets the result of this CreateMergeRequestDiscussionNoteResponse.
 
         :return: The result of this CreateMergeRequestDiscussionNoteResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.NoteDto`
@@ -85,7 +85,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateMergeRequestDiscussionNoteResponse.
+        r"""Sets the result of this CreateMergeRequestDiscussionNoteResponse.
 
         :param result: The result of this CreateMergeRequestDiscussionNoteResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.NoteDto`
@@ -94,7 +94,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateMergeRequestDiscussionNoteResponse.
+        r"""Gets the status of this CreateMergeRequestDiscussionNoteResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class CreateMergeRequestDiscussionNoteResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateMergeRequestDiscussionNoteResponse.
+        r"""Sets the status of this CreateMergeRequestDiscussionNoteResponse.
 
         响应状态
 

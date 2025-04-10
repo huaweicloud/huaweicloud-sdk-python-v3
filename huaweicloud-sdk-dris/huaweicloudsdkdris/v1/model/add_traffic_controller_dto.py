@@ -47,7 +47,7 @@ class AddTrafficControllerDTO:
     }
 
     def __init__(self, traffic_controller_id=None, esn=None, name=None, description=None, lat=None, lon=None, ele=None, pos_description=None, installation_mode=None, road_name=None, link_id=None, secret=None):
-        """AddTrafficControllerDTO
+        r"""AddTrafficControllerDTO
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class AddTrafficControllerDTO:
 
     @property
     def traffic_controller_id(self):
-        """Gets the traffic_controller_id of this AddTrafficControllerDTO.
+        r"""Gets the traffic_controller_id of this AddTrafficControllerDTO.
 
         **参数说明**：信号机设备ID，全局唯一。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -128,7 +128,7 @@ class AddTrafficControllerDTO:
 
     @traffic_controller_id.setter
     def traffic_controller_id(self, traffic_controller_id):
-        """Sets the traffic_controller_id of this AddTrafficControllerDTO.
+        r"""Sets the traffic_controller_id of this AddTrafficControllerDTO.
 
         **参数说明**：信号机设备ID，全局唯一。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -139,7 +139,7 @@ class AddTrafficControllerDTO:
 
     @property
     def esn(self):
-        """Gets the esn of this AddTrafficControllerDTO.
+        r"""Gets the esn of this AddTrafficControllerDTO.
 
         **参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -150,7 +150,7 @@ class AddTrafficControllerDTO:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this AddTrafficControllerDTO.
+        r"""Sets the esn of this AddTrafficControllerDTO.
 
         **参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -161,7 +161,7 @@ class AddTrafficControllerDTO:
 
     @property
     def name(self):
-        """Gets the name of this AddTrafficControllerDTO.
+        r"""Gets the name of this AddTrafficControllerDTO.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许汉字、字母、数字、以及_等字符的组合。 
 
@@ -172,7 +172,7 @@ class AddTrafficControllerDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddTrafficControllerDTO.
+        r"""Sets the name of this AddTrafficControllerDTO.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许汉字、字母、数字、以及_等字符的组合。 
 
@@ -183,7 +183,7 @@ class AddTrafficControllerDTO:
 
     @property
     def description(self):
-        """Gets the description of this AddTrafficControllerDTO.
+        r"""Gets the description of this AddTrafficControllerDTO.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合 
 
@@ -194,7 +194,7 @@ class AddTrafficControllerDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddTrafficControllerDTO.
+        r"""Sets the description of this AddTrafficControllerDTO.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合 
 
@@ -205,7 +205,7 @@ class AddTrafficControllerDTO:
 
     @property
     def lat(self):
-        """Gets the lat of this AddTrafficControllerDTO.
+        r"""Gets the lat of this AddTrafficControllerDTO.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -216,7 +216,7 @@ class AddTrafficControllerDTO:
 
     @lat.setter
     def lat(self, lat):
-        """Sets the lat of this AddTrafficControllerDTO.
+        r"""Sets the lat of this AddTrafficControllerDTO.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -227,7 +227,7 @@ class AddTrafficControllerDTO:
 
     @property
     def lon(self):
-        """Gets the lon of this AddTrafficControllerDTO.
+        r"""Gets the lon of this AddTrafficControllerDTO.
 
         **参数说明**：定义经度数值。东经为正，西经为负,单位°，精度小数点后7位。
 
@@ -238,7 +238,7 @@ class AddTrafficControllerDTO:
 
     @lon.setter
     def lon(self, lon):
-        """Sets the lon of this AddTrafficControllerDTO.
+        r"""Sets the lon of this AddTrafficControllerDTO.
 
         **参数说明**：定义经度数值。东经为正，西经为负,单位°，精度小数点后7位。
 
@@ -249,7 +249,7 @@ class AddTrafficControllerDTO:
 
     @property
     def ele(self):
-        """Gets the ele of this AddTrafficControllerDTO.
+        r"""Gets the ele of this AddTrafficControllerDTO.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -260,7 +260,7 @@ class AddTrafficControllerDTO:
 
     @ele.setter
     def ele(self, ele):
-        """Sets the ele of this AddTrafficControllerDTO.
+        r"""Sets the ele of this AddTrafficControllerDTO.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -271,7 +271,7 @@ class AddTrafficControllerDTO:
 
     @property
     def pos_description(self):
-        """Gets the pos_description of this AddTrafficControllerDTO.
+        r"""Gets the pos_description of this AddTrafficControllerDTO.
 
         **参数说明**：位置说明。  **取值范围**：长度不超过128，只允许字母、数字、以及_等字符的组合。 
 
@@ -282,7 +282,7 @@ class AddTrafficControllerDTO:
 
     @pos_description.setter
     def pos_description(self, pos_description):
-        """Sets the pos_description of this AddTrafficControllerDTO.
+        r"""Sets the pos_description of this AddTrafficControllerDTO.
 
         **参数说明**：位置说明。  **取值范围**：长度不超过128，只允许字母、数字、以及_等字符的组合。 
 
@@ -293,7 +293,7 @@ class AddTrafficControllerDTO:
 
     @property
     def installation_mode(self):
-        """Gets the installation_mode of this AddTrafficControllerDTO.
+        r"""Gets the installation_mode of this AddTrafficControllerDTO.
 
         **参数说明**：架设方式。  **取值范围**： - columnar：柱式 - road-side-attach：路侧附着式 - cantilever：悬臂式 - gantry：门架式 - lane-above-attach：车行道上方附着式\" 
 
@@ -304,7 +304,7 @@ class AddTrafficControllerDTO:
 
     @installation_mode.setter
     def installation_mode(self, installation_mode):
-        """Sets the installation_mode of this AddTrafficControllerDTO.
+        r"""Sets the installation_mode of this AddTrafficControllerDTO.
 
         **参数说明**：架设方式。  **取值范围**： - columnar：柱式 - road-side-attach：路侧附着式 - cantilever：悬臂式 - gantry：门架式 - lane-above-attach：车行道上方附着式\" 
 
@@ -315,7 +315,7 @@ class AddTrafficControllerDTO:
 
     @property
     def road_name(self):
-        """Gets the road_name of this AddTrafficControllerDTO.
+        r"""Gets the road_name of this AddTrafficControllerDTO.
 
         **参数说明**：所属道路名称，比如高速名称。  **取值范围**：长度不超过64，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -326,7 +326,7 @@ class AddTrafficControllerDTO:
 
     @road_name.setter
     def road_name(self, road_name):
-        """Sets the road_name of this AddTrafficControllerDTO.
+        r"""Sets the road_name of this AddTrafficControllerDTO.
 
         **参数说明**：所属道路名称，比如高速名称。  **取值范围**：长度不超过64，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -337,7 +337,7 @@ class AddTrafficControllerDTO:
 
     @property
     def link_id(self):
-        """Gets the link_id of this AddTrafficControllerDTO.
+        r"""Gets the link_id of this AddTrafficControllerDTO.
 
         **参数说明**：信号机设备所属路段ID。  **取值范围**：长度等于30，只允许大写字母、数字。 
 
@@ -348,7 +348,7 @@ class AddTrafficControllerDTO:
 
     @link_id.setter
     def link_id(self, link_id):
-        """Sets the link_id of this AddTrafficControllerDTO.
+        r"""Sets the link_id of this AddTrafficControllerDTO.
 
         **参数说明**：信号机设备所属路段ID。  **取值范围**：长度等于30，只允许大写字母、数字。 
 
@@ -359,7 +359,7 @@ class AddTrafficControllerDTO:
 
     @property
     def secret(self):
-        """Gets the secret of this AddTrafficControllerDTO.
+        r"""Gets the secret of this AddTrafficControllerDTO.
 
         **参数说明**：第三方信号机设备密钥，输入信号机型号ID后方可填写该字段以设置方信号机设备密码。 
 
@@ -370,7 +370,7 @@ class AddTrafficControllerDTO:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AddTrafficControllerDTO.
+        r"""Sets the secret of this AddTrafficControllerDTO.
 
         **参数说明**：第三方信号机设备密钥，输入信号机型号ID后方可填写该字段以设置方信号机设备密码。 
 

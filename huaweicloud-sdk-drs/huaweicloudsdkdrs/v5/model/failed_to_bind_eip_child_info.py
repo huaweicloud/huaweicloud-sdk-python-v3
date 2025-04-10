@@ -27,7 +27,7 @@ class FailedToBindEipChildInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """FailedToBindEipChildInfo
+        r"""FailedToBindEipChildInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FailedToBindEipChildInfo:
 
     @property
     def id(self):
-        """Gets the id of this FailedToBindEipChildInfo.
+        r"""Gets the id of this FailedToBindEipChildInfo.
 
         子任务ID
 
@@ -61,7 +61,7 @@ class FailedToBindEipChildInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FailedToBindEipChildInfo.
+        r"""Sets the id of this FailedToBindEipChildInfo.
 
         子任务ID
 
@@ -72,7 +72,7 @@ class FailedToBindEipChildInfo:
 
     @property
     def name(self):
-        """Gets the name of this FailedToBindEipChildInfo.
+        r"""Gets the name of this FailedToBindEipChildInfo.
 
         子任务名称
 
@@ -83,7 +83,7 @@ class FailedToBindEipChildInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FailedToBindEipChildInfo.
+        r"""Sets the name of this FailedToBindEipChildInfo.
 
         子任务名称
 

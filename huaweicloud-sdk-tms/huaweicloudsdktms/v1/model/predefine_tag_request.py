@@ -27,7 +27,7 @@ class PredefineTagRequest:
     }
 
     def __init__(self, key=None, value=None):
-        """PredefineTagRequest
+        r"""PredefineTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PredefineTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this PredefineTagRequest.
+        r"""Gets the key of this PredefineTagRequest.
 
         键。最大长度36个字符。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -59,7 +59,7 @@ class PredefineTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PredefineTagRequest.
+        r"""Sets the key of this PredefineTagRequest.
 
         键。最大长度36个字符。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -70,7 +70,7 @@ class PredefineTagRequest:
 
     @property
     def value(self):
-        """Gets the value of this PredefineTagRequest.
+        r"""Gets the value of this PredefineTagRequest.
 
         值。每个值最大长度43个字符，可以为空字符串。字符集：AZ，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -81,7 +81,7 @@ class PredefineTagRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PredefineTagRequest.
+        r"""Sets the value of this PredefineTagRequest.
 
         值。每个值最大长度43个字符，可以为空字符串。字符集：AZ，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 

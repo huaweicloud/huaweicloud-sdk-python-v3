@@ -26,7 +26,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
     }
 
     def __init__(self, customer_balances=None):
-        """ListCustomersBalancesDetailResponse
+        r"""ListCustomersBalancesDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
 
     @property
     def customer_balances(self):
-        """Gets the customer_balances of this ListCustomersBalancesDetailResponse.
+        r"""Gets the customer_balances of this ListCustomersBalancesDetailResponse.
 
         账户余额列表。只有成功的时候才返回。 此列表不包含非代售类子客户的数据。批量查询客户余额时，若入参携带了非代售类子客户，会被过滤。 具体请参见表2。
 
@@ -55,7 +55,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
 
     @customer_balances.setter
     def customer_balances(self, customer_balances):
-        """Sets the customer_balances of this ListCustomersBalancesDetailResponse.
+        r"""Sets the customer_balances of this ListCustomersBalancesDetailResponse.
 
         账户余额列表。只有成功的时候才返回。 此列表不包含非代售类子客户的数据。批量查询客户余额时，若入参携带了非代售类子客户，会被过滤。 具体请参见表2。
 

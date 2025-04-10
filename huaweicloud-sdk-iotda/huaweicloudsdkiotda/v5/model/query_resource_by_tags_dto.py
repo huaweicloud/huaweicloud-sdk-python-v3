@@ -27,7 +27,7 @@ class QueryResourceByTagsDTO:
     }
 
     def __init__(self, resource_type=None, tags=None):
-        """QueryResourceByTagsDTO
+        r"""QueryResourceByTagsDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryResourceByTagsDTO:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this QueryResourceByTagsDTO.
+        r"""Gets the resource_type of this QueryResourceByTagsDTO.
 
         **参数说明**：要查询的资源类型，当前支持设备（device）。
 
@@ -59,7 +59,7 @@ class QueryResourceByTagsDTO:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this QueryResourceByTagsDTO.
+        r"""Sets the resource_type of this QueryResourceByTagsDTO.
 
         **参数说明**：要查询的资源类型，当前支持设备（device）。
 
@@ -70,7 +70,7 @@ class QueryResourceByTagsDTO:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryResourceByTagsDTO.
+        r"""Gets the tags of this QueryResourceByTagsDTO.
 
         **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
 
@@ -81,7 +81,7 @@ class QueryResourceByTagsDTO:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryResourceByTagsDTO.
+        r"""Sets the tags of this QueryResourceByTagsDTO.
 
         **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
 

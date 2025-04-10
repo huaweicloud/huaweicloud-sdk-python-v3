@@ -47,7 +47,7 @@ class StyleInfo:
     }
 
     def __init__(self, name=None, description=None, project_id=None, status=None, sex=None, tags=None, style_assets=None, extra_meta=None, style_id=None, create_time=None, update_time=None, state=None):
-        """StyleInfo
+        r"""StyleInfo
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class StyleInfo:
 
     @property
     def name(self):
-        """Gets the name of this StyleInfo.
+        r"""Gets the name of this StyleInfo.
 
         数字人风格化名称
 
@@ -130,7 +130,7 @@ class StyleInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StyleInfo.
+        r"""Sets the name of this StyleInfo.
 
         数字人风格化名称
 
@@ -141,7 +141,7 @@ class StyleInfo:
 
     @property
     def description(self):
-        """Gets the description of this StyleInfo.
+        r"""Gets the description of this StyleInfo.
 
         数字人风格化描述
 
@@ -152,7 +152,7 @@ class StyleInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StyleInfo.
+        r"""Sets the description of this StyleInfo.
 
         数字人风格化描述
 
@@ -163,7 +163,7 @@ class StyleInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this StyleInfo.
+        r"""Gets the project_id of this StyleInfo.
 
         租户ID
 
@@ -174,7 +174,7 @@ class StyleInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this StyleInfo.
+        r"""Sets the project_id of this StyleInfo.
 
         租户ID
 
@@ -185,7 +185,7 @@ class StyleInfo:
 
     @property
     def status(self):
-        """Gets the status of this StyleInfo.
+        r"""Gets the status of this StyleInfo.
 
         状态
 
@@ -196,7 +196,7 @@ class StyleInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StyleInfo.
+        r"""Sets the status of this StyleInfo.
 
         状态
 
@@ -207,7 +207,7 @@ class StyleInfo:
 
     @property
     def sex(self):
-        """Gets the sex of this StyleInfo.
+        r"""Gets the sex of this StyleInfo.
 
         性别
 
@@ -218,7 +218,7 @@ class StyleInfo:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this StyleInfo.
+        r"""Sets the sex of this StyleInfo.
 
         性别
 
@@ -229,7 +229,7 @@ class StyleInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this StyleInfo.
+        r"""Gets the tags of this StyleInfo.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -240,7 +240,7 @@ class StyleInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this StyleInfo.
+        r"""Sets the tags of this StyleInfo.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -251,7 +251,7 @@ class StyleInfo:
 
     @property
     def style_assets(self):
-        """Gets the style_assets of this StyleInfo.
+        r"""Gets the style_assets of this StyleInfo.
 
         风格化素材资产组合。
 
@@ -262,7 +262,7 @@ class StyleInfo:
 
     @style_assets.setter
     def style_assets(self, style_assets):
-        """Sets the style_assets of this StyleInfo.
+        r"""Sets the style_assets of this StyleInfo.
 
         风格化素材资产组合。
 
@@ -273,7 +273,7 @@ class StyleInfo:
 
     @property
     def extra_meta(self):
-        """Gets the extra_meta of this StyleInfo.
+        r"""Gets the extra_meta of this StyleInfo.
 
         :return: The extra_meta of this StyleInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StyleExtraMeta`
@@ -282,7 +282,7 @@ class StyleInfo:
 
     @extra_meta.setter
     def extra_meta(self, extra_meta):
-        """Sets the extra_meta of this StyleInfo.
+        r"""Sets the extra_meta of this StyleInfo.
 
         :param extra_meta: The extra_meta of this StyleInfo.
         :type extra_meta: :class:`huaweicloudsdkmetastudio.v1.StyleExtraMeta`
@@ -291,7 +291,7 @@ class StyleInfo:
 
     @property
     def style_id(self):
-        """Gets the style_id of this StyleInfo.
+        r"""Gets the style_id of this StyleInfo.
 
         数字人风格ID
 
@@ -302,7 +302,7 @@ class StyleInfo:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this StyleInfo.
+        r"""Sets the style_id of this StyleInfo.
 
         数字人风格ID
 
@@ -313,7 +313,7 @@ class StyleInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StyleInfo.
+        r"""Gets the create_time of this StyleInfo.
 
         数字人风格创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -324,7 +324,7 @@ class StyleInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StyleInfo.
+        r"""Sets the create_time of this StyleInfo.
 
         数字人风格创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -335,7 +335,7 @@ class StyleInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StyleInfo.
+        r"""Gets the update_time of this StyleInfo.
 
         数字人风格更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -346,7 +346,7 @@ class StyleInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StyleInfo.
+        r"""Sets the update_time of this StyleInfo.
 
         数字人风格更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -357,7 +357,7 @@ class StyleInfo:
 
     @property
     def state(self):
-        """Gets the state of this StyleInfo.
+        r"""Gets the state of this StyleInfo.
 
         数字人风格状态枚举 * CREATING：创建中 * PUBLISHED：已发布 * DELETED：已删除 * UNPUBLISHED：未发布 * PUBLISHING：发布中
 
@@ -368,7 +368,7 @@ class StyleInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this StyleInfo.
+        r"""Sets the state of this StyleInfo.
 
         数字人风格状态枚举 * CREATING：创建中 * PUBLISHED：已发布 * DELETED：已删除 * UNPUBLISHED：未发布 * PUBLISHING：发布中
 

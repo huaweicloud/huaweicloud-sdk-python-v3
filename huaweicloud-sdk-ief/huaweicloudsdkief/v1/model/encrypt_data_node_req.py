@@ -25,7 +25,7 @@ class EncryptDataNodeReq:
     }
 
     def __init__(self, encrypt_datas=None):
-        """EncryptDataNodeReq
+        r"""EncryptDataNodeReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EncryptDataNodeReq:
 
     @property
     def encrypt_datas(self):
-        """Gets the encrypt_datas of this EncryptDataNodeReq.
+        r"""Gets the encrypt_datas of this EncryptDataNodeReq.
 
         加密数据ID列表
 
@@ -53,7 +53,7 @@ class EncryptDataNodeReq:
 
     @encrypt_datas.setter
     def encrypt_datas(self, encrypt_datas):
-        """Sets the encrypt_datas of this EncryptDataNodeReq.
+        r"""Sets the encrypt_datas of this EncryptDataNodeReq.
 
         加密数据ID列表
 

@@ -35,7 +35,7 @@ class PolicyResource:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, region_id=None, domain_id=None):
-        """PolicyResource
+        r"""PolicyResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PolicyResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PolicyResource.
+        r"""Gets the resource_id of this PolicyResource.
 
         资源id
 
@@ -89,7 +89,7 @@ class PolicyResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PolicyResource.
+        r"""Sets the resource_id of this PolicyResource.
 
         资源id
 
@@ -100,7 +100,7 @@ class PolicyResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this PolicyResource.
+        r"""Gets the resource_name of this PolicyResource.
 
         资源名称
 
@@ -111,7 +111,7 @@ class PolicyResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this PolicyResource.
+        r"""Sets the resource_name of this PolicyResource.
 
         资源名称
 
@@ -122,7 +122,7 @@ class PolicyResource:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this PolicyResource.
+        r"""Gets the resource_provider of this PolicyResource.
 
         云服务名称
 
@@ -133,7 +133,7 @@ class PolicyResource:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this PolicyResource.
+        r"""Sets the resource_provider of this PolicyResource.
 
         云服务名称
 
@@ -144,7 +144,7 @@ class PolicyResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PolicyResource.
+        r"""Gets the resource_type of this PolicyResource.
 
         资源类型
 
@@ -155,7 +155,7 @@ class PolicyResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PolicyResource.
+        r"""Sets the resource_type of this PolicyResource.
 
         资源类型
 
@@ -166,7 +166,7 @@ class PolicyResource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PolicyResource.
+        r"""Gets the region_id of this PolicyResource.
 
         区域id
 
@@ -177,7 +177,7 @@ class PolicyResource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PolicyResource.
+        r"""Sets the region_id of this PolicyResource.
 
         区域id
 
@@ -188,7 +188,7 @@ class PolicyResource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PolicyResource.
+        r"""Gets the domain_id of this PolicyResource.
 
         资源所属用户ID
 
@@ -199,7 +199,7 @@ class PolicyResource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PolicyResource.
+        r"""Sets the domain_id of this PolicyResource.
 
         资源所属用户ID
 

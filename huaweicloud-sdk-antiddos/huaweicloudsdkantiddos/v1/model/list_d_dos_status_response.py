@@ -28,7 +28,7 @@ class ListDDosStatusResponse(SdkResponse):
     }
 
     def __init__(self, total=None, ddos_status=None):
-        """ListDDosStatusResponse
+        r"""ListDDosStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDDosStatusResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDDosStatusResponse.
+        r"""Gets the total of this ListDDosStatusResponse.
 
         弹性IP总数
 
@@ -62,7 +62,7 @@ class ListDDosStatusResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDDosStatusResponse.
+        r"""Sets the total of this ListDDosStatusResponse.
 
         弹性IP总数
 
@@ -73,7 +73,7 @@ class ListDDosStatusResponse(SdkResponse):
 
     @property
     def ddos_status(self):
-        """Gets the ddos_status of this ListDDosStatusResponse.
+        r"""Gets the ddos_status of this ListDDosStatusResponse.
 
         防护状态列表
 
@@ -84,7 +84,7 @@ class ListDDosStatusResponse(SdkResponse):
 
     @ddos_status.setter
     def ddos_status(self, ddos_status):
-        """Sets the ddos_status of this ListDDosStatusResponse.
+        r"""Sets the ddos_status of this ListDDosStatusResponse.
 
         防护状态列表
 

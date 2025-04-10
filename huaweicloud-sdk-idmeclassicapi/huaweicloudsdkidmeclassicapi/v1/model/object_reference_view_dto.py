@@ -27,7 +27,7 @@ class ObjectReferenceViewDTO:
     }
 
     def __init__(self, clazz=None, id=None):
-        """ObjectReferenceViewDTO
+        r"""ObjectReferenceViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ObjectReferenceViewDTO:
 
     @property
     def clazz(self):
-        """Gets the clazz of this ObjectReferenceViewDTO.
+        r"""Gets the clazz of this ObjectReferenceViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -60,7 +60,7 @@ class ObjectReferenceViewDTO:
 
     @clazz.setter
     def clazz(self, clazz):
-        """Sets the clazz of this ObjectReferenceViewDTO.
+        r"""Sets the clazz of this ObjectReferenceViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -71,7 +71,7 @@ class ObjectReferenceViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this ObjectReferenceViewDTO.
+        r"""Gets the id of this ObjectReferenceViewDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class ObjectReferenceViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ObjectReferenceViewDTO.
+        r"""Sets the id of this ObjectReferenceViewDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

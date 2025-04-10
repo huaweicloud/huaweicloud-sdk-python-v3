@@ -26,7 +26,7 @@ class CreateWholeImageResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateWholeImageResponse
+        r"""CreateWholeImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateWholeImageResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateWholeImageResponse.
+        r"""Gets the job_id of this CreateWholeImageResponse.
 
         异步任务ID。
 
@@ -55,7 +55,7 @@ class CreateWholeImageResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateWholeImageResponse.
+        r"""Sets the job_id of this CreateWholeImageResponse.
 
         异步任务ID。
 

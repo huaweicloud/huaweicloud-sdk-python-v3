@@ -29,7 +29,7 @@ class ApplyConfigurationAsyncRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, body=None):
-        """ApplyConfigurationAsyncRequest
+        r"""ApplyConfigurationAsyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ApplyConfigurationAsyncRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ApplyConfigurationAsyncRequest.
+        r"""Gets the x_language of this ApplyConfigurationAsyncRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ApplyConfigurationAsyncRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ApplyConfigurationAsyncRequest.
+        r"""Sets the x_language of this ApplyConfigurationAsyncRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ApplyConfigurationAsyncRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ApplyConfigurationAsyncRequest.
+        r"""Gets the config_id of this ApplyConfigurationAsyncRequest.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class ApplyConfigurationAsyncRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ApplyConfigurationAsyncRequest.
+        r"""Sets the config_id of this ApplyConfigurationAsyncRequest.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class ApplyConfigurationAsyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyConfigurationAsyncRequest.
+        r"""Gets the body of this ApplyConfigurationAsyncRequest.
 
         :return: The body of this ApplyConfigurationAsyncRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`
@@ -109,7 +109,7 @@ class ApplyConfigurationAsyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyConfigurationAsyncRequest.
+        r"""Sets the body of this ApplyConfigurationAsyncRequest.
 
         :param body: The body of this ApplyConfigurationAsyncRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`

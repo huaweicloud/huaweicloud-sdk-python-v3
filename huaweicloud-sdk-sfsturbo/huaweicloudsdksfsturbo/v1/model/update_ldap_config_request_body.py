@@ -43,7 +43,7 @@ class UpdateLdapConfigRequestBody:
     }
 
     def __init__(self, url=None, base_dn=None, user_dn=None, password=None, vpc_id=None, filter_condition=None, backup_url=None, schema=None, search_timeout=None, allow_local_user=None):
-        """UpdateLdapConfigRequestBody
+        r"""UpdateLdapConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this UpdateLdapConfigRequestBody.
+        r"""Gets the url of this UpdateLdapConfigRequestBody.
 
         ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -117,7 +117,7 @@ class UpdateLdapConfigRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateLdapConfigRequestBody.
+        r"""Sets the url of this UpdateLdapConfigRequestBody.
 
         ldap服务器的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -128,7 +128,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def base_dn(self):
-        """Gets the base_dn of this UpdateLdapConfigRequestBody.
+        r"""Gets the base_dn of this UpdateLdapConfigRequestBody.
 
         数据库中的域
 
@@ -139,7 +139,7 @@ class UpdateLdapConfigRequestBody:
 
     @base_dn.setter
     def base_dn(self, base_dn):
-        """Sets the base_dn of this UpdateLdapConfigRequestBody.
+        r"""Sets the base_dn of this UpdateLdapConfigRequestBody.
 
         数据库中的域
 
@@ -150,7 +150,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def user_dn(self):
-        """Gets the user_dn of this UpdateLdapConfigRequestBody.
+        r"""Gets the user_dn of this UpdateLdapConfigRequestBody.
 
         用户区别名
 
@@ -161,7 +161,7 @@ class UpdateLdapConfigRequestBody:
 
     @user_dn.setter
     def user_dn(self, user_dn):
-        """Sets the user_dn of this UpdateLdapConfigRequestBody.
+        r"""Sets the user_dn of this UpdateLdapConfigRequestBody.
 
         用户区别名
 
@@ -172,7 +172,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this UpdateLdapConfigRequestBody.
+        r"""Gets the password of this UpdateLdapConfigRequestBody.
 
         ldap认证密码
 
@@ -183,7 +183,7 @@ class UpdateLdapConfigRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UpdateLdapConfigRequestBody.
+        r"""Sets the password of this UpdateLdapConfigRequestBody.
 
         ldap认证密码
 
@@ -194,7 +194,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this UpdateLdapConfigRequestBody.
+        r"""Gets the vpc_id of this UpdateLdapConfigRequestBody.
 
         vpc的id
 
@@ -205,7 +205,7 @@ class UpdateLdapConfigRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this UpdateLdapConfigRequestBody.
+        r"""Sets the vpc_id of this UpdateLdapConfigRequestBody.
 
         vpc的id
 
@@ -216,7 +216,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def filter_condition(self):
-        """Gets the filter_condition of this UpdateLdapConfigRequestBody.
+        r"""Gets the filter_condition of this UpdateLdapConfigRequestBody.
 
         过滤条件。保留字段，暂不支持
 
@@ -227,7 +227,7 @@ class UpdateLdapConfigRequestBody:
 
     @filter_condition.setter
     def filter_condition(self, filter_condition):
-        """Sets the filter_condition of this UpdateLdapConfigRequestBody.
+        r"""Sets the filter_condition of this UpdateLdapConfigRequestBody.
 
         过滤条件。保留字段，暂不支持
 
@@ -238,7 +238,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def backup_url(self):
-        """Gets the backup_url of this UpdateLdapConfigRequestBody.
+        r"""Gets the backup_url of this UpdateLdapConfigRequestBody.
 
         ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -249,7 +249,7 @@ class UpdateLdapConfigRequestBody:
 
     @backup_url.setter
     def backup_url(self, backup_url):
-        """Sets the backup_url of this UpdateLdapConfigRequestBody.
+        r"""Sets the backup_url of this UpdateLdapConfigRequestBody.
 
         ldap备节点的url，固定格式为 ldap://{ip_address}:{port_number} 或 ldaps://{ip_address}:{port_number}，例如ldap://192.168.xx.xx:60000
 
@@ -260,7 +260,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def schema(self):
-        """Gets the schema of this UpdateLdapConfigRequestBody.
+        r"""Gets the schema of this UpdateLdapConfigRequestBody.
 
         ldap的schema，不填写则默认为RFC2307
 
@@ -271,7 +271,7 @@ class UpdateLdapConfigRequestBody:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this UpdateLdapConfigRequestBody.
+        r"""Sets the schema of this UpdateLdapConfigRequestBody.
 
         ldap的schema，不填写则默认为RFC2307
 
@@ -282,7 +282,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def search_timeout(self):
-        """Gets the search_timeout of this UpdateLdapConfigRequestBody.
+        r"""Gets the search_timeout of this UpdateLdapConfigRequestBody.
 
         ldap搜索的超时时间，单位为秒。不填写则默认为3秒
 
@@ -293,7 +293,7 @@ class UpdateLdapConfigRequestBody:
 
     @search_timeout.setter
     def search_timeout(self, search_timeout):
-        """Sets the search_timeout of this UpdateLdapConfigRequestBody.
+        r"""Sets the search_timeout of this UpdateLdapConfigRequestBody.
 
         ldap搜索的超时时间，单位为秒。不填写则默认为3秒
 
@@ -304,7 +304,7 @@ class UpdateLdapConfigRequestBody:
 
     @property
     def allow_local_user(self):
-        """Gets the allow_local_user of this UpdateLdapConfigRequestBody.
+        r"""Gets the allow_local_user of this UpdateLdapConfigRequestBody.
 
         访问ldap服务器失败后是否允许使用本地用户鉴权
 
@@ -315,7 +315,7 @@ class UpdateLdapConfigRequestBody:
 
     @allow_local_user.setter
     def allow_local_user(self, allow_local_user):
-        """Sets the allow_local_user of this UpdateLdapConfigRequestBody.
+        r"""Sets the allow_local_user of this UpdateLdapConfigRequestBody.
 
         访问ldap服务器失败后是否允许使用本地用户鉴权
 

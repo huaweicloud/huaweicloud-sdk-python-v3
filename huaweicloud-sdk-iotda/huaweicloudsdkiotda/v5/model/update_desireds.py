@@ -25,7 +25,7 @@ class UpdateDesireds:
     }
 
     def __init__(self, shadow=None):
-        """UpdateDesireds
+        r"""UpdateDesireds
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDesireds:
 
     @property
     def shadow(self):
-        """Gets the shadow of this UpdateDesireds.
+        r"""Gets the shadow of this UpdateDesireds.
 
         **参数说明**：设备影子期望值构体。
 
@@ -54,7 +54,7 @@ class UpdateDesireds:
 
     @shadow.setter
     def shadow(self, shadow):
-        """Sets the shadow of this UpdateDesireds.
+        r"""Sets the shadow of this UpdateDesireds.
 
         **参数说明**：设备影子期望值构体。
 

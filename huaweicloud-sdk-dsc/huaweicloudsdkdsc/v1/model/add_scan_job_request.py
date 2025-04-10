@@ -25,7 +25,7 @@ class AddScanJobRequest:
     }
 
     def __init__(self, body=None):
-        """AddScanJobRequest
+        r"""AddScanJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddScanJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddScanJobRequest.
+        r"""Gets the body of this AddScanJobRequest.
 
         :return: The body of this AddScanJobRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.ScanJobRequest`
@@ -52,7 +52,7 @@ class AddScanJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddScanJobRequest.
+        r"""Sets the body of this AddScanJobRequest.
 
         :param body: The body of this AddScanJobRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.ScanJobRequest`

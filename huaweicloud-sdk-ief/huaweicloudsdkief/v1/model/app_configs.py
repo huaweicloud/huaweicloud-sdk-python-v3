@@ -37,7 +37,7 @@ class AppConfigs:
     }
 
     def __init__(self, privileged=None, run_as_user=None, host_network=None, restart_policy=None, ports=None, host_pid=None, dns_policy=None):
-        """AppConfigs
+        r"""AppConfigs
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AppConfigs:
 
     @property
     def privileged(self):
-        """Gets the privileged of this AppConfigs.
+        r"""Gets the privileged of this AppConfigs.
 
         默认为false，表示是否开启特权模式
 
@@ -96,7 +96,7 @@ class AppConfigs:
 
     @privileged.setter
     def privileged(self, privileged):
-        """Sets the privileged of this AppConfigs.
+        r"""Sets the privileged of this AppConfigs.
 
         默认为false，表示是否开启特权模式
 
@@ -107,7 +107,7 @@ class AppConfigs:
 
     @property
     def run_as_user(self):
-        """Gets the run_as_user of this AppConfigs.
+        r"""Gets the run_as_user of this AppConfigs.
 
         容器运行用户ID，输入范围为0~65534的整数
 
@@ -118,7 +118,7 @@ class AppConfigs:
 
     @run_as_user.setter
     def run_as_user(self, run_as_user):
-        """Sets the run_as_user of this AppConfigs.
+        r"""Sets the run_as_user of this AppConfigs.
 
         容器运行用户ID，输入范围为0~65534的整数
 
@@ -129,7 +129,7 @@ class AppConfigs:
 
     @property
     def host_network(self):
-        """Gets the host_network of this AppConfigs.
+        r"""Gets the host_network of this AppConfigs.
 
         默认为true，其中true表示主机网络，而false表示端口映射
 
@@ -140,7 +140,7 @@ class AppConfigs:
 
     @host_network.setter
     def host_network(self, host_network):
-        """Sets the host_network of this AppConfigs.
+        r"""Sets the host_network of this AppConfigs.
 
         默认为true，其中true表示主机网络，而false表示端口映射
 
@@ -151,7 +151,7 @@ class AppConfigs:
 
     @property
     def restart_policy(self):
-        """Gets the restart_policy of this AppConfigs.
+        r"""Gets the restart_policy of this AppConfigs.
 
         应用实例重启模式： - Always：当容器终止退出后，总是重启容器 - Onfailure：容器异常退出（退出码非0）时才重启容器 - Never：容器终止退出后，不重启容器
 
@@ -162,7 +162,7 @@ class AppConfigs:
 
     @restart_policy.setter
     def restart_policy(self, restart_policy):
-        """Sets the restart_policy of this AppConfigs.
+        r"""Sets the restart_policy of this AppConfigs.
 
         应用实例重启模式： - Always：当容器终止退出后，总是重启容器 - Onfailure：容器异常退出（退出码非0）时才重启容器 - Never：容器终止退出后，不重启容器
 
@@ -173,7 +173,7 @@ class AppConfigs:
 
     @property
     def ports(self):
-        """Gets the ports of this AppConfigs.
+        r"""Gets the ports of this AppConfigs.
 
         容器端口映射值
 
@@ -184,7 +184,7 @@ class AppConfigs:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this AppConfigs.
+        r"""Sets the ports of this AppConfigs.
 
         容器端口映射值
 
@@ -195,7 +195,7 @@ class AppConfigs:
 
     @property
     def host_pid(self):
-        """Gets the host_pid of this AppConfigs.
+        r"""Gets the host_pid of this AppConfigs.
 
         应用实例是否与主机共PID命名空间，默认值false
 
@@ -206,7 +206,7 @@ class AppConfigs:
 
     @host_pid.setter
     def host_pid(self, host_pid):
-        """Sets the host_pid of this AppConfigs.
+        r"""Sets the host_pid of this AppConfigs.
 
         应用实例是否与主机共PID命名空间，默认值false
 
@@ -217,7 +217,7 @@ class AppConfigs:
 
     @property
     def dns_policy(self):
-        """Gets the dns_policy of this AppConfigs.
+        r"""Gets the dns_policy of this AppConfigs.
 
         应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
 
@@ -228,7 +228,7 @@ class AppConfigs:
 
     @dns_policy.setter
     def dns_policy(self, dns_policy):
-        """Sets the dns_policy of this AppConfigs.
+        r"""Sets the dns_policy of this AppConfigs.
 
         应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
 

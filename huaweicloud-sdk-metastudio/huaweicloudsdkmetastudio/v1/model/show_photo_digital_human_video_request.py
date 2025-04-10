@@ -29,7 +29,7 @@ class ShowPhotoDigitalHumanVideoRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None, show_script=None):
-        """ShowPhotoDigitalHumanVideoRequest
+        r"""ShowPhotoDigitalHumanVideoRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowPhotoDigitalHumanVideoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPhotoDigitalHumanVideoRequest.
+        r"""Gets the job_id of this ShowPhotoDigitalHumanVideoRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class ShowPhotoDigitalHumanVideoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPhotoDigitalHumanVideoRequest.
+        r"""Sets the job_id of this ShowPhotoDigitalHumanVideoRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class ShowPhotoDigitalHumanVideoRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowPhotoDigitalHumanVideoRequest.
+        r"""Gets the x_app_user_id of this ShowPhotoDigitalHumanVideoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class ShowPhotoDigitalHumanVideoRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowPhotoDigitalHumanVideoRequest.
+        r"""Sets the x_app_user_id of this ShowPhotoDigitalHumanVideoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class ShowPhotoDigitalHumanVideoRequest:
 
     @property
     def show_script(self):
-        """Gets the show_script of this ShowPhotoDigitalHumanVideoRequest.
+        r"""Gets the show_script of this ShowPhotoDigitalHumanVideoRequest.
 
         是否需要返回剧本参数配置。
 
@@ -111,7 +111,7 @@ class ShowPhotoDigitalHumanVideoRequest:
 
     @show_script.setter
     def show_script(self, show_script):
-        """Sets the show_script of this ShowPhotoDigitalHumanVideoRequest.
+        r"""Sets the show_script of this ShowPhotoDigitalHumanVideoRequest.
 
         是否需要返回剧本参数配置。
 

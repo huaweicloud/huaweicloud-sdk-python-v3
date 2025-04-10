@@ -27,7 +27,7 @@ class UpdateLabelsReq:
     }
 
     def __init__(self, name=None, color=None):
-        """UpdateLabelsReq
+        r"""UpdateLabelsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateLabelsReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateLabelsReq.
+        r"""Gets the name of this UpdateLabelsReq.
 
         标签名称
 
@@ -59,7 +59,7 @@ class UpdateLabelsReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateLabelsReq.
+        r"""Sets the name of this UpdateLabelsReq.
 
         标签名称
 
@@ -70,7 +70,7 @@ class UpdateLabelsReq:
 
     @property
     def color(self):
-        """Gets the color of this UpdateLabelsReq.
+        r"""Gets the color of this UpdateLabelsReq.
 
         颜色id
 
@@ -81,7 +81,7 @@ class UpdateLabelsReq:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this UpdateLabelsReq.
+        r"""Sets the color of this UpdateLabelsReq.
 
         颜色id
 

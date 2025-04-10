@@ -32,7 +32,7 @@ class AddQueueResponse(SdkResponse):
     }
 
     def __init__(self, queue_id=None, queue_name=None, create_time=None, last_modify_time=None):
-        """AddQueueResponse
+        r"""AddQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class AddQueueResponse(SdkResponse):
 
     @property
     def queue_id(self):
-        """Gets the queue_id of this AddQueueResponse.
+        r"""Gets the queue_id of this AddQueueResponse.
 
         队列ID，用于唯一标识一个队列。
 
@@ -76,7 +76,7 @@ class AddQueueResponse(SdkResponse):
 
     @queue_id.setter
     def queue_id(self, queue_id):
-        """Sets the queue_id of this AddQueueResponse.
+        r"""Sets the queue_id of this AddQueueResponse.
 
         队列ID，用于唯一标识一个队列。
 
@@ -87,7 +87,7 @@ class AddQueueResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this AddQueueResponse.
+        r"""Gets the queue_name of this AddQueueResponse.
 
         队列名称，同一租户不允许重复。
 
@@ -98,7 +98,7 @@ class AddQueueResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this AddQueueResponse.
+        r"""Sets the queue_name of this AddQueueResponse.
 
         队列名称，同一租户不允许重复。
 
@@ -109,7 +109,7 @@ class AddQueueResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this AddQueueResponse.
+        r"""Gets the create_time of this AddQueueResponse.
 
         在物联网平台创建队列的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -120,7 +120,7 @@ class AddQueueResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AddQueueResponse.
+        r"""Sets the create_time of this AddQueueResponse.
 
         在物联网平台创建队列的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -131,7 +131,7 @@ class AddQueueResponse(SdkResponse):
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this AddQueueResponse.
+        r"""Gets the last_modify_time of this AddQueueResponse.
 
         在物联网平台最后修改队列的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -142,7 +142,7 @@ class AddQueueResponse(SdkResponse):
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this AddQueueResponse.
+        r"""Sets the last_modify_time of this AddQueueResponse.
 
         在物联网平台最后修改队列的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

@@ -25,7 +25,7 @@ class NodeAction:
     }
 
     def __init__(self, node=None):
-        """NodeAction
+        r"""NodeAction
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NodeAction:
 
     @property
     def node(self):
-        """Gets the node of this NodeAction.
+        r"""Gets the node of this NodeAction.
 
         :return: The node of this NodeAction.
         :rtype: :class:`huaweicloudsdkief.v1.Action`
@@ -51,7 +51,7 @@ class NodeAction:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this NodeAction.
+        r"""Sets the node of this NodeAction.
 
         :param node: The node of this NodeAction.
         :type node: :class:`huaweicloudsdkief.v1.Action`

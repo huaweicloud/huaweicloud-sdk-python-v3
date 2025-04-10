@@ -23,7 +23,7 @@ class UUID32Def:
     }
 
     def __init__(self):
-        """UUID32Def
+        r"""UUID32Def
 
         The model defined in huaweicloud sdk
 

@@ -24,7 +24,7 @@ class SetParticipantViewResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetParticipantViewResponse
+        r"""SetParticipantViewResponse
 
         The model defined in huaweicloud sdk
 

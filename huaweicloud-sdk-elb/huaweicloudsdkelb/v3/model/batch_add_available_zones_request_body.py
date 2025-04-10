@@ -25,7 +25,7 @@ class BatchAddAvailableZonesRequestBody:
     }
 
     def __init__(self, availability_zone_list=None):
-        """BatchAddAvailableZonesRequestBody
+        r"""BatchAddAvailableZonesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAddAvailableZonesRequestBody:
 
     @property
     def availability_zone_list(self):
-        """Gets the availability_zone_list of this BatchAddAvailableZonesRequestBody.
+        r"""Gets the availability_zone_list of this BatchAddAvailableZonesRequestBody.
 
         新增的可用区列表，不能为空。
 
@@ -53,7 +53,7 @@ class BatchAddAvailableZonesRequestBody:
 
     @availability_zone_list.setter
     def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this BatchAddAvailableZonesRequestBody.
+        r"""Sets the availability_zone_list of this BatchAddAvailableZonesRequestBody.
 
         新增的可用区列表，不能为空。
 

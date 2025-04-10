@@ -27,7 +27,7 @@ class UpdateAntiVirusRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """UpdateAntiVirusRuleRequest
+        r"""UpdateAntiVirusRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAntiVirusRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateAntiVirusRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateAntiVirusRuleRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -61,7 +61,7 @@ class UpdateAntiVirusRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateAntiVirusRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateAntiVirusRuleRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -72,7 +72,7 @@ class UpdateAntiVirusRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAntiVirusRuleRequest.
+        r"""Gets the body of this UpdateAntiVirusRuleRequest.
 
         :return: The body of this UpdateAntiVirusRuleRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.AntiVirusRuleDto`
@@ -81,7 +81,7 @@ class UpdateAntiVirusRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAntiVirusRuleRequest.
+        r"""Sets the body of this UpdateAntiVirusRuleRequest.
 
         :param body: The body of this UpdateAntiVirusRuleRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.AntiVirusRuleDto`

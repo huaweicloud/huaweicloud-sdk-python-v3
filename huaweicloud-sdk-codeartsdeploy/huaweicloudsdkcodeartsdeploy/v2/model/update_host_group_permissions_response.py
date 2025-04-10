@@ -52,7 +52,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, region=None, role_id=None, devuc_role_id_list=None, name=None, group_id=None, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_manage=None, can_copy=None, create_time=None, update_time=None, role_type=None):
-        """UpdateHostGroupPermissionsResponse
+        r"""UpdateHostGroupPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the region of this UpdateHostGroupPermissionsResponse.
 
         局点信息
 
@@ -146,7 +146,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the region of this UpdateHostGroupPermissionsResponse.
 
         局点信息
 
@@ -157,7 +157,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def role_id(self):
-        """Gets the role_id of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the role_id of this UpdateHostGroupPermissionsResponse.
 
         角色id
 
@@ -168,7 +168,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the role_id of this UpdateHostGroupPermissionsResponse.
 
         角色id
 
@@ -179,7 +179,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def devuc_role_id_list(self):
-        """Gets the devuc_role_id_list of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the devuc_role_id_list of this UpdateHostGroupPermissionsResponse.
 
         角色id列表
 
@@ -190,7 +190,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @devuc_role_id_list.setter
     def devuc_role_id_list(self, devuc_role_id_list):
-        """Sets the devuc_role_id_list of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the devuc_role_id_list of this UpdateHostGroupPermissionsResponse.
 
         角色id列表
 
@@ -201,7 +201,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the name of this UpdateHostGroupPermissionsResponse.
 
         角色名称
 
@@ -212,7 +212,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the name of this UpdateHostGroupPermissionsResponse.
 
         角色名称
 
@@ -223,7 +223,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the group_id of this UpdateHostGroupPermissionsResponse.
 
         主机集群id
 
@@ -234,7 +234,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the group_id of this UpdateHostGroupPermissionsResponse.
 
         主机集群id
 
@@ -245,7 +245,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def can_view(self):
-        """Gets the can_view of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the can_view of this UpdateHostGroupPermissionsResponse.
 
         是否有查看权限
 
@@ -256,7 +256,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the can_view of this UpdateHostGroupPermissionsResponse.
 
         是否有查看权限
 
@@ -267,7 +267,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the can_edit of this UpdateHostGroupPermissionsResponse.
 
         是否有编辑权限
 
@@ -278,7 +278,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the can_edit of this UpdateHostGroupPermissionsResponse.
 
         是否有编辑权限
 
@@ -289,7 +289,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the can_delete of this UpdateHostGroupPermissionsResponse.
 
         是否有删除权限
 
@@ -300,7 +300,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the can_delete of this UpdateHostGroupPermissionsResponse.
 
         是否有删除权限
 
@@ -311,7 +311,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def can_add_host(self):
-        """Gets the can_add_host of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the can_add_host of this UpdateHostGroupPermissionsResponse.
 
         是否有添加主机权限
 
@@ -322,7 +322,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @can_add_host.setter
     def can_add_host(self, can_add_host):
-        """Sets the can_add_host of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the can_add_host of this UpdateHostGroupPermissionsResponse.
 
         是否有添加主机权限
 
@@ -333,7 +333,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the can_manage of this UpdateHostGroupPermissionsResponse.
 
         是否有权限管理权限
 
@@ -344,7 +344,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the can_manage of this UpdateHostGroupPermissionsResponse.
 
         是否有权限管理权限
 
@@ -355,7 +355,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the can_copy of this UpdateHostGroupPermissionsResponse.
 
         是否有拷贝权限
 
@@ -366,7 +366,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the can_copy of this UpdateHostGroupPermissionsResponse.
 
         是否有拷贝权限
 
@@ -377,7 +377,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the create_time of this UpdateHostGroupPermissionsResponse.
 
         创建时间
 
@@ -388,7 +388,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the create_time of this UpdateHostGroupPermissionsResponse.
 
         创建时间
 
@@ -399,7 +399,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the update_time of this UpdateHostGroupPermissionsResponse.
 
         修改时间
 
@@ -410,7 +410,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the update_time of this UpdateHostGroupPermissionsResponse.
 
         修改时间
 
@@ -421,7 +421,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def role_type(self):
-        """Gets the role_type of this UpdateHostGroupPermissionsResponse.
+        r"""Gets the role_type of this UpdateHostGroupPermissionsResponse.
 
         角色类型，project-customized：自定义角色；template-project-customized：系统自定义角色； template-customized-inst：系统角色；cluster-creator：集群创建者；project_admin：项目创建者
 
@@ -432,7 +432,7 @@ class UpdateHostGroupPermissionsResponse(SdkResponse):
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this UpdateHostGroupPermissionsResponse.
+        r"""Sets the role_type of this UpdateHostGroupPermissionsResponse.
 
         角色类型，project-customized：自定义角色；template-project-customized：系统自定义角色； template-customized-inst：系统角色；cluster-creator：集群创建者；project_admin：项目创建者
 

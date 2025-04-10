@@ -26,7 +26,7 @@ class UpdateClusterSettingResponse(SdkResponse):
     }
 
     def __init__(self, modify_result=None):
-        """UpdateClusterSettingResponse
+        r"""UpdateClusterSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateClusterSettingResponse(SdkResponse):
 
     @property
     def modify_result(self):
-        """Gets the modify_result of this UpdateClusterSettingResponse.
+        r"""Gets the modify_result of this UpdateClusterSettingResponse.
 
         配置修改结果
 
@@ -55,7 +55,7 @@ class UpdateClusterSettingResponse(SdkResponse):
 
     @modify_result.setter
     def modify_result(self, modify_result):
-        """Sets the modify_result of this UpdateClusterSettingResponse.
+        r"""Sets the modify_result of this UpdateClusterSettingResponse.
 
         配置修改结果
 

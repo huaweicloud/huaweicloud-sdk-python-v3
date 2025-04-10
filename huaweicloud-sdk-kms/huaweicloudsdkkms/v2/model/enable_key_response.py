@@ -26,7 +26,7 @@ class EnableKeyResponse(SdkResponse):
     }
 
     def __init__(self, key_info=None):
-        """EnableKeyResponse
+        r"""EnableKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class EnableKeyResponse(SdkResponse):
 
     @property
     def key_info(self):
-        """Gets the key_info of this EnableKeyResponse.
+        r"""Gets the key_info of this EnableKeyResponse.
 
         :return: The key_info of this EnableKeyResponse.
         :rtype: :class:`huaweicloudsdkkms.v2.KeyStatusInfo`
@@ -53,7 +53,7 @@ class EnableKeyResponse(SdkResponse):
 
     @key_info.setter
     def key_info(self, key_info):
-        """Sets the key_info of this EnableKeyResponse.
+        r"""Sets the key_info of this EnableKeyResponse.
 
         :param key_info: The key_info of this EnableKeyResponse.
         :type key_info: :class:`huaweicloudsdkkms.v2.KeyStatusInfo`

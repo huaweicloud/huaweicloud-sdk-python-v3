@@ -28,7 +28,7 @@ class ListSessionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, sessions=None):
-        """ListSessionsResponse
+        r"""ListSessionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSessionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSessionsResponse.
+        r"""Gets the total_count of this ListSessionsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListSessionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSessionsResponse.
+        r"""Sets the total_count of this ListSessionsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListSessionsResponse(SdkResponse):
 
     @property
     def sessions(self):
-        """Gets the sessions of this ListSessionsResponse.
+        r"""Gets the sessions of this ListSessionsResponse.
 
         具体信息。
 
@@ -84,7 +84,7 @@ class ListSessionsResponse(SdkResponse):
 
     @sessions.setter
     def sessions(self, sessions):
-        """Sets the sessions of this ListSessionsResponse.
+        r"""Sets the sessions of this ListSessionsResponse.
 
         具体信息。
 

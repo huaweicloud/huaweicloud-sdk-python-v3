@@ -31,7 +31,7 @@ class ListAttributesRequest:
     }
 
     def __init__(self, cust_attr_name=None, limit=None, offset=None, status=None):
-        """ListAttributesRequest
+        r"""ListAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListAttributesRequest:
 
     @property
     def cust_attr_name(self):
-        """Gets the cust_attr_name of this ListAttributesRequest.
+        r"""Gets the cust_attr_name of this ListAttributesRequest.
 
         自定义属性名称
 
@@ -75,7 +75,7 @@ class ListAttributesRequest:
 
     @cust_attr_name.setter
     def cust_attr_name(self, cust_attr_name):
-        """Sets the cust_attr_name of this ListAttributesRequest.
+        r"""Sets the cust_attr_name of this ListAttributesRequest.
 
         自定义属性名称
 
@@ -86,7 +86,7 @@ class ListAttributesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAttributesRequest.
+        r"""Gets the limit of this ListAttributesRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -97,7 +97,7 @@ class ListAttributesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAttributesRequest.
+        r"""Sets the limit of this ListAttributesRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -108,7 +108,7 @@ class ListAttributesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAttributesRequest.
+        r"""Gets the offset of this ListAttributesRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -119,7 +119,7 @@ class ListAttributesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAttributesRequest.
+        r"""Sets the offset of this ListAttributesRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -130,7 +130,7 @@ class ListAttributesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAttributesRequest.
+        r"""Gets the status of this ListAttributesRequest.
 
         自定义属性状态：0 未启用，1 已启用。
 
@@ -141,7 +141,7 @@ class ListAttributesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAttributesRequest.
+        r"""Sets the status of this ListAttributesRequest.
 
         自定义属性状态：0 未启用，1 已启用。
 

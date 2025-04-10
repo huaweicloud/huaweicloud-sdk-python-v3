@@ -25,7 +25,7 @@ class ShowEndpointGroupRequest:
     }
 
     def __init__(self, endpoint_group_id=None):
-        """ShowEndpointGroupRequest
+        r"""ShowEndpointGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEndpointGroupRequest:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this ShowEndpointGroupRequest.
+        r"""Gets the endpoint_group_id of this ShowEndpointGroupRequest.
 
         终端节点组ID。
 
@@ -53,7 +53,7 @@ class ShowEndpointGroupRequest:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this ShowEndpointGroupRequest.
+        r"""Sets the endpoint_group_id of this ShowEndpointGroupRequest.
 
         终端节点组ID。
 

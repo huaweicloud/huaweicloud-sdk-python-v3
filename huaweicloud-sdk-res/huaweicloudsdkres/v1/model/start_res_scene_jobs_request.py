@@ -31,7 +31,7 @@ class StartResSceneJobsRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, action=None):
-        """StartResSceneJobsRequest
+        r"""StartResSceneJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class StartResSceneJobsRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this StartResSceneJobsRequest.
+        r"""Gets the content_type of this StartResSceneJobsRequest.
 
         内容类型，取值为application/json。
 
@@ -72,7 +72,7 @@ class StartResSceneJobsRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this StartResSceneJobsRequest.
+        r"""Sets the content_type of this StartResSceneJobsRequest.
 
         内容类型，取值为application/json。
 
@@ -83,7 +83,7 @@ class StartResSceneJobsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this StartResSceneJobsRequest.
+        r"""Gets the workspace_id of this StartResSceneJobsRequest.
 
         工作空间id。
 
@@ -94,7 +94,7 @@ class StartResSceneJobsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this StartResSceneJobsRequest.
+        r"""Sets the workspace_id of this StartResSceneJobsRequest.
 
         工作空间id。
 
@@ -105,7 +105,7 @@ class StartResSceneJobsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this StartResSceneJobsRequest.
+        r"""Gets the resource_id of this StartResSceneJobsRequest.
 
         资源id，可以为数据源id或场景id。
 
@@ -116,7 +116,7 @@ class StartResSceneJobsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this StartResSceneJobsRequest.
+        r"""Sets the resource_id of this StartResSceneJobsRequest.
 
         资源id，可以为数据源id或场景id。
 
@@ -127,7 +127,7 @@ class StartResSceneJobsRequest:
 
     @property
     def action(self):
-        """Gets the action of this StartResSceneJobsRequest.
+        r"""Gets the action of this StartResSceneJobsRequest.
 
         动作类型： - START，启动 - STOP，停止
 
@@ -138,7 +138,7 @@ class StartResSceneJobsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartResSceneJobsRequest.
+        r"""Sets the action of this StartResSceneJobsRequest.
 
         动作类型： - START，启动 - STOP，停止
 

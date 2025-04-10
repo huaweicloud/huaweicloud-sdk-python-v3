@@ -27,7 +27,7 @@ class MultipartUploadInfo:
     }
 
     def __init__(self, part_number=None, etag=None):
-        """MultipartUploadInfo
+        r"""MultipartUploadInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MultipartUploadInfo:
 
     @property
     def part_number(self):
-        """Gets the part_number of this MultipartUploadInfo.
+        r"""Gets the part_number of this MultipartUploadInfo.
 
         分片编号
 
@@ -61,7 +61,7 @@ class MultipartUploadInfo:
 
     @part_number.setter
     def part_number(self, part_number):
-        """Sets the part_number of this MultipartUploadInfo.
+        r"""Sets the part_number of this MultipartUploadInfo.
 
         分片编号
 
@@ -72,7 +72,7 @@ class MultipartUploadInfo:
 
     @property
     def etag(self):
-        """Gets the etag of this MultipartUploadInfo.
+        r"""Gets the etag of this MultipartUploadInfo.
 
         分片文件标识
 
@@ -83,7 +83,7 @@ class MultipartUploadInfo:
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this MultipartUploadInfo.
+        r"""Sets the etag of this MultipartUploadInfo.
 
         分片文件标识
 

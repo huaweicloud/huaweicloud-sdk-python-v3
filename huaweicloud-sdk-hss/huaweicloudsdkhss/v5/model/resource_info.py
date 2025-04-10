@@ -27,7 +27,7 @@ class ResourceInfo:
     }
 
     def __init__(self, host_id=None, history_backup_status=None):
-        """ResourceInfo
+        r"""ResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ResourceInfo.
+        r"""Gets the host_id of this ResourceInfo.
 
         主机id
 
@@ -61,7 +61,7 @@ class ResourceInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ResourceInfo.
+        r"""Sets the host_id of this ResourceInfo.
 
         主机id
 
@@ -72,7 +72,7 @@ class ResourceInfo:
 
     @property
     def history_backup_status(self):
-        """Gets the history_backup_status of this ResourceInfo.
+        r"""Gets the history_backup_status of this ResourceInfo.
 
         历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened
 
@@ -83,7 +83,7 @@ class ResourceInfo:
 
     @history_backup_status.setter
     def history_backup_status(self, history_backup_status):
-        """Sets the history_backup_status of this ResourceInfo.
+        r"""Sets the history_backup_status of this ResourceInfo.
 
         历史开启备份状态，通过筛选可用服务器的error_message或者status判断，如果error_message为空，则没有开启备份，该字段为closed；若不为空，则为opened
 

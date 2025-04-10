@@ -24,7 +24,7 @@ class ModifyDomainWebSwitchResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ModifyDomainWebSwitchResponse
+        r"""ModifyDomainWebSwitchResponse
 
         The model defined in huaweicloud sdk
 

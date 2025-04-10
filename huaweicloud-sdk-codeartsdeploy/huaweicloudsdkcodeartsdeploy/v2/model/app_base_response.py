@@ -31,7 +31,7 @@ class AppBaseResponse:
     }
 
     def __init__(self, id=None, name=None, region=None, arrange_infos=None):
-        """AppBaseResponse
+        r"""AppBaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AppBaseResponse:
 
     @property
     def id(self):
-        """Gets the id of this AppBaseResponse.
+        r"""Gets the id of this AppBaseResponse.
 
         创建的应用id
 
@@ -75,7 +75,7 @@ class AppBaseResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppBaseResponse.
+        r"""Sets the id of this AppBaseResponse.
 
         创建的应用id
 
@@ -86,7 +86,7 @@ class AppBaseResponse:
 
     @property
     def name(self):
-        """Gets the name of this AppBaseResponse.
+        r"""Gets the name of this AppBaseResponse.
 
         创建应用名称
 
@@ -97,7 +97,7 @@ class AppBaseResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppBaseResponse.
+        r"""Sets the name of this AppBaseResponse.
 
         创建应用名称
 
@@ -108,7 +108,7 @@ class AppBaseResponse:
 
     @property
     def region(self):
-        """Gets the region of this AppBaseResponse.
+        r"""Gets the region of this AppBaseResponse.
 
         应用所属区域
 
@@ -119,7 +119,7 @@ class AppBaseResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AppBaseResponse.
+        r"""Sets the region of this AppBaseResponse.
 
         应用所属区域
 
@@ -130,7 +130,7 @@ class AppBaseResponse:
 
     @property
     def arrange_infos(self):
-        """Gets the arrange_infos of this AppBaseResponse.
+        r"""Gets the arrange_infos of this AppBaseResponse.
 
         部署任务列表信息
 
@@ -141,7 +141,7 @@ class AppBaseResponse:
 
     @arrange_infos.setter
     def arrange_infos(self, arrange_infos):
-        """Sets the arrange_infos of this AppBaseResponse.
+        r"""Sets the arrange_infos of this AppBaseResponse.
 
         部署任务列表信息
 

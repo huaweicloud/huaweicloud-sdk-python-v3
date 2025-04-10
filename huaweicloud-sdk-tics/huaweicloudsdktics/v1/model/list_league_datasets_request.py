@@ -33,7 +33,7 @@ class ListLeagueDatasetsRequest:
     }
 
     def __init__(self, league_id=None, offset=None, limit=None, dataset_name=None, partner_name=None):
-        """ListLeagueDatasetsRequest
+        r"""ListLeagueDatasetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListLeagueDatasetsRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ListLeagueDatasetsRequest.
+        r"""Gets the league_id of this ListLeagueDatasetsRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -79,7 +79,7 @@ class ListLeagueDatasetsRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ListLeagueDatasetsRequest.
+        r"""Sets the league_id of this ListLeagueDatasetsRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -90,7 +90,7 @@ class ListLeagueDatasetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLeagueDatasetsRequest.
+        r"""Gets the offset of this ListLeagueDatasetsRequest.
 
         记录数偏移量 
 
@@ -101,7 +101,7 @@ class ListLeagueDatasetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLeagueDatasetsRequest.
+        r"""Sets the offset of this ListLeagueDatasetsRequest.
 
         记录数偏移量 
 
@@ -112,7 +112,7 @@ class ListLeagueDatasetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLeagueDatasetsRequest.
+        r"""Gets the limit of this ListLeagueDatasetsRequest.
 
         每页记录数，取值0-100
 
@@ -123,7 +123,7 @@ class ListLeagueDatasetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLeagueDatasetsRequest.
+        r"""Sets the limit of this ListLeagueDatasetsRequest.
 
         每页记录数，取值0-100
 
@@ -134,7 +134,7 @@ class ListLeagueDatasetsRequest:
 
     @property
     def dataset_name(self):
-        """Gets the dataset_name of this ListLeagueDatasetsRequest.
+        r"""Gets the dataset_name of this ListLeagueDatasetsRequest.
 
         数据集名称
 
@@ -145,7 +145,7 @@ class ListLeagueDatasetsRequest:
 
     @dataset_name.setter
     def dataset_name(self, dataset_name):
-        """Sets the dataset_name of this ListLeagueDatasetsRequest.
+        r"""Sets the dataset_name of this ListLeagueDatasetsRequest.
 
         数据集名称
 
@@ -156,7 +156,7 @@ class ListLeagueDatasetsRequest:
 
     @property
     def partner_name(self):
-        """Gets the partner_name of this ListLeagueDatasetsRequest.
+        r"""Gets the partner_name of this ListLeagueDatasetsRequest.
 
         partner_name
 
@@ -167,7 +167,7 @@ class ListLeagueDatasetsRequest:
 
     @partner_name.setter
     def partner_name(self, partner_name):
-        """Sets the partner_name of this ListLeagueDatasetsRequest.
+        r"""Sets the partner_name of this ListLeagueDatasetsRequest.
 
         partner_name
 

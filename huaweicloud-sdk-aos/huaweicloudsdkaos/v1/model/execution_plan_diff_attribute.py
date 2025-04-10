@@ -29,7 +29,7 @@ class ExecutionPlanDiffAttribute:
     }
 
     def __init__(self, name=None, previous_value=None, target_value=None):
-        """ExecutionPlanDiffAttribute
+        r"""ExecutionPlanDiffAttribute
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExecutionPlanDiffAttribute:
 
     @property
     def name(self):
-        """Gets the name of this ExecutionPlanDiffAttribute.
+        r"""Gets the name of this ExecutionPlanDiffAttribute.
 
         当前资源将要被修改的参数的名字。
 
@@ -68,7 +68,7 @@ class ExecutionPlanDiffAttribute:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecutionPlanDiffAttribute.
+        r"""Sets the name of this ExecutionPlanDiffAttribute.
 
         当前资源将要被修改的参数的名字。
 
@@ -79,7 +79,7 @@ class ExecutionPlanDiffAttribute:
 
     @property
     def previous_value(self):
-        """Gets the previous_value of this ExecutionPlanDiffAttribute.
+        r"""Gets the previous_value of this ExecutionPlanDiffAttribute.
 
         当前资源被修改的参数的原始值。  如果是资源创建的场景，则previous_value为空  如果远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  如果远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态
 
@@ -90,7 +90,7 @@ class ExecutionPlanDiffAttribute:
 
     @previous_value.setter
     def previous_value(self, previous_value):
-        """Sets the previous_value of this ExecutionPlanDiffAttribute.
+        r"""Sets the previous_value of this ExecutionPlanDiffAttribute.
 
         当前资源被修改的参数的原始值。  如果是资源创建的场景，则previous_value为空  如果远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  如果远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态
 
@@ -101,7 +101,7 @@ class ExecutionPlanDiffAttribute:
 
     @property
     def target_value(self):
-        """Gets the target_value of this ExecutionPlanDiffAttribute.
+        r"""Gets the target_value of this ExecutionPlanDiffAttribute.
 
         当前资源被修改的参数的目的值。  如果是资源删除的场景，则target_value为空  如果远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  如果远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态
 
@@ -112,7 +112,7 @@ class ExecutionPlanDiffAttribute:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this ExecutionPlanDiffAttribute.
+        r"""Sets the target_value of this ExecutionPlanDiffAttribute.
 
         当前资源被修改的参数的目的值。  如果是资源删除的场景，则target_value为空  如果远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  如果远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态
 

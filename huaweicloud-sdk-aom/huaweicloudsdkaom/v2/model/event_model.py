@@ -37,7 +37,7 @@ class EventModel:
     }
 
     def __init__(self, starts_at=None, ends_at=None, timeout=None, metadata=None, annotations=None, attach_rule=None, id=None):
-        """EventModel
+        r"""EventModel
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EventModel:
 
     @property
     def starts_at(self):
-        """Gets the starts_at of this EventModel.
+        r"""Gets the starts_at of this EventModel.
 
         事件或者告警产生的时间，CST毫秒级时间戳。
 
@@ -96,7 +96,7 @@ class EventModel:
 
     @starts_at.setter
     def starts_at(self, starts_at):
-        """Sets the starts_at of this EventModel.
+        r"""Sets the starts_at of this EventModel.
 
         事件或者告警产生的时间，CST毫秒级时间戳。
 
@@ -107,7 +107,7 @@ class EventModel:
 
     @property
     def ends_at(self):
-        """Gets the ends_at of this EventModel.
+        r"""Gets the ends_at of this EventModel.
 
         事件或者告警清除的时间，CST毫秒级时间戳，为0时表示未删除。
 
@@ -118,7 +118,7 @@ class EventModel:
 
     @ends_at.setter
     def ends_at(self, ends_at):
-        """Sets the ends_at of this EventModel.
+        r"""Sets the ends_at of this EventModel.
 
         事件或者告警清除的时间，CST毫秒级时间戳，为0时表示未删除。
 
@@ -129,7 +129,7 @@ class EventModel:
 
     @property
     def timeout(self):
-        """Gets the timeout of this EventModel.
+        r"""Gets the timeout of this EventModel.
 
         告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
@@ -140,7 +140,7 @@ class EventModel:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this EventModel.
+        r"""Sets the timeout of this EventModel.
 
         告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
@@ -151,7 +151,7 @@ class EventModel:
 
     @property
     def metadata(self):
-        """Gets the metadata of this EventModel.
+        r"""Gets the metadata of this EventModel.
 
         事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
 
@@ -162,7 +162,7 @@ class EventModel:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this EventModel.
+        r"""Sets the metadata of this EventModel.
 
         事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
 
@@ -173,7 +173,7 @@ class EventModel:
 
     @property
     def annotations(self):
-        """Gets the annotations of this EventModel.
+        r"""Gets the annotations of this EventModel.
 
         事件或者告警附加字段，可以为空。
 
@@ -184,7 +184,7 @@ class EventModel:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this EventModel.
+        r"""Sets the annotations of this EventModel.
 
         事件或者告警附加字段，可以为空。
 
@@ -195,7 +195,7 @@ class EventModel:
 
     @property
     def attach_rule(self):
-        """Gets the attach_rule of this EventModel.
+        r"""Gets the attach_rule of this EventModel.
 
         事件或者告警预留字段，为空。
 
@@ -206,7 +206,7 @@ class EventModel:
 
     @attach_rule.setter
     def attach_rule(self, attach_rule):
-        """Sets the attach_rule of this EventModel.
+        r"""Sets the attach_rule of this EventModel.
 
         事件或者告警预留字段，为空。
 
@@ -217,7 +217,7 @@ class EventModel:
 
     @property
     def id(self):
-        """Gets the id of this EventModel.
+        r"""Gets the id of this EventModel.
 
         事件或者告警id，系统会自动生成，上报无须填写该字段。
 
@@ -228,7 +228,7 @@ class EventModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EventModel.
+        r"""Sets the id of this EventModel.
 
         事件或者告警id，系统会自动生成，上报无须填写该字段。
 

@@ -29,7 +29,7 @@ class TagPolicyServiceDto:
     }
 
     def __init__(self, service_name=None, resource_types=None, support_all=None):
-        """TagPolicyServiceDto
+        r"""TagPolicyServiceDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TagPolicyServiceDto:
 
     @property
     def service_name(self):
-        """Gets the service_name of this TagPolicyServiceDto.
+        r"""Gets the service_name of this TagPolicyServiceDto.
 
         服务名称。
 
@@ -65,7 +65,7 @@ class TagPolicyServiceDto:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this TagPolicyServiceDto.
+        r"""Sets the service_name of this TagPolicyServiceDto.
 
         服务名称。
 
@@ -76,7 +76,7 @@ class TagPolicyServiceDto:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this TagPolicyServiceDto.
+        r"""Gets the resource_types of this TagPolicyServiceDto.
 
         资源类型。
 
@@ -87,7 +87,7 @@ class TagPolicyServiceDto:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this TagPolicyServiceDto.
+        r"""Sets the resource_types of this TagPolicyServiceDto.
 
         资源类型。
 
@@ -98,7 +98,7 @@ class TagPolicyServiceDto:
 
     @property
     def support_all(self):
-        """Gets the support_all of this TagPolicyServiceDto.
+        r"""Gets the support_all of this TagPolicyServiceDto.
 
         resource_type是否支持全量选择，即*
 
@@ -109,7 +109,7 @@ class TagPolicyServiceDto:
 
     @support_all.setter
     def support_all(self, support_all):
-        """Sets the support_all of this TagPolicyServiceDto.
+        r"""Sets the support_all of this TagPolicyServiceDto.
 
         resource_type是否支持全量选择，即*
 

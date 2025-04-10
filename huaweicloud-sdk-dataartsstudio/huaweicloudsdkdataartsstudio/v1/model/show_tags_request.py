@@ -27,7 +27,7 @@ class ShowTagsRequest:
     }
 
     def __init__(self, instance=None, body=None):
-        """ShowTagsRequest
+        r"""ShowTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTagsRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowTagsRequest.
+        r"""Gets the instance of this ShowTagsRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ShowTagsRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowTagsRequest.
+        r"""Sets the instance of this ShowTagsRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ShowTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowTagsRequest.
+        r"""Gets the body of this ShowTagsRequest.
 
         :return: The body of this ShowTagsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TagRequest`
@@ -80,7 +80,7 @@ class ShowTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTagsRequest.
+        r"""Sets the body of this ShowTagsRequest.
 
         :param body: The body of this ShowTagsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TagRequest`

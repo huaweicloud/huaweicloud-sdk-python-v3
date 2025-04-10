@@ -35,7 +35,7 @@ class EnterpriseProject:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None):
-        """EnterpriseProject
+        r"""EnterpriseProject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EnterpriseProject:
 
     @property
     def id(self):
-        """Gets the id of this EnterpriseProject.
+        r"""Gets the id of this EnterpriseProject.
 
         企业项目ID，0表示默认企业项目。
 
@@ -89,7 +89,7 @@ class EnterpriseProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnterpriseProject.
+        r"""Sets the id of this EnterpriseProject.
 
         企业项目ID，0表示默认企业项目。
 
@@ -100,7 +100,7 @@ class EnterpriseProject:
 
     @property
     def name(self):
-        """Gets the name of this EnterpriseProject.
+        r"""Gets the name of this EnterpriseProject.
 
         企业项目名称。
 
@@ -111,7 +111,7 @@ class EnterpriseProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnterpriseProject.
+        r"""Sets the name of this EnterpriseProject.
 
         企业项目名称。
 
@@ -122,7 +122,7 @@ class EnterpriseProject:
 
     @property
     def description(self):
-        """Gets the description of this EnterpriseProject.
+        r"""Gets the description of this EnterpriseProject.
 
         描述。
 
@@ -133,7 +133,7 @@ class EnterpriseProject:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnterpriseProject.
+        r"""Sets the description of this EnterpriseProject.
 
         描述。
 
@@ -144,7 +144,7 @@ class EnterpriseProject:
 
     @property
     def status(self):
-        """Gets the status of this EnterpriseProject.
+        r"""Gets the status of this EnterpriseProject.
 
         企业项目状态。 - 1：启用 - 2：停用
 
@@ -155,7 +155,7 @@ class EnterpriseProject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnterpriseProject.
+        r"""Sets the status of this EnterpriseProject.
 
         企业项目状态。 - 1：启用 - 2：停用
 
@@ -166,7 +166,7 @@ class EnterpriseProject:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EnterpriseProject.
+        r"""Gets the created_at of this EnterpriseProject.
 
         创建时间，例如：2023-01-20T07:18:26Z
 
@@ -177,7 +177,7 @@ class EnterpriseProject:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EnterpriseProject.
+        r"""Sets the created_at of this EnterpriseProject.
 
         创建时间，例如：2023-01-20T07:18:26Z
 
@@ -188,7 +188,7 @@ class EnterpriseProject:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EnterpriseProject.
+        r"""Gets the updated_at of this EnterpriseProject.
 
         更新时间，例如：2023-03-01T09:42:02Z
 
@@ -199,7 +199,7 @@ class EnterpriseProject:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EnterpriseProject.
+        r"""Sets the updated_at of this EnterpriseProject.
 
         更新时间，例如：2023-03-01T09:42:02Z
 

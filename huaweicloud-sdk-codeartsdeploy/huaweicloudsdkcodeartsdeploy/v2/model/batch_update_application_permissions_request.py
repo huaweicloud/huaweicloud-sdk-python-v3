@@ -25,7 +25,7 @@ class BatchUpdateApplicationPermissionsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateApplicationPermissionsRequest
+        r"""BatchUpdateApplicationPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateApplicationPermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateApplicationPermissionsRequest.
+        r"""Gets the body of this BatchUpdateApplicationPermissionsRequest.
 
         :return: The body of this BatchUpdateApplicationPermissionsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.BatchUpdateApplicationPermissionsRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateApplicationPermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateApplicationPermissionsRequest.
+        r"""Sets the body of this BatchUpdateApplicationPermissionsRequest.
 
         :param body: The body of this BatchUpdateApplicationPermissionsRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.BatchUpdateApplicationPermissionsRequestBody`

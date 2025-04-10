@@ -31,7 +31,7 @@ class ListEvaluationProjectsRequest:
     }
 
     def __init__(self, evaluation_project_name=None, evaluation_project_status=None, offset=None, limit=None):
-        """ListEvaluationProjectsRequest
+        r"""ListEvaluationProjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEvaluationProjectsRequest:
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this ListEvaluationProjectsRequest.
+        r"""Gets the evaluation_project_name of this ListEvaluationProjectsRequest.
 
         评估项目名称（模糊搜索）。
 
@@ -75,7 +75,7 @@ class ListEvaluationProjectsRequest:
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this ListEvaluationProjectsRequest.
+        r"""Sets the evaluation_project_name of this ListEvaluationProjectsRequest.
 
         评估项目名称（模糊搜索）。
 
@@ -86,7 +86,7 @@ class ListEvaluationProjectsRequest:
 
     @property
     def evaluation_project_status(self):
-        """Gets the evaluation_project_status of this ListEvaluationProjectsRequest.
+        r"""Gets the evaluation_project_status of this ListEvaluationProjectsRequest.
 
         评估项目状态。
 
@@ -97,7 +97,7 @@ class ListEvaluationProjectsRequest:
 
     @evaluation_project_status.setter
     def evaluation_project_status(self, evaluation_project_status):
-        """Sets the evaluation_project_status of this ListEvaluationProjectsRequest.
+        r"""Sets the evaluation_project_status of this ListEvaluationProjectsRequest.
 
         评估项目状态。
 
@@ -108,7 +108,7 @@ class ListEvaluationProjectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEvaluationProjectsRequest.
+        r"""Gets the offset of this ListEvaluationProjectsRequest.
 
         分页查询的偏移量。
 
@@ -119,7 +119,7 @@ class ListEvaluationProjectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEvaluationProjectsRequest.
+        r"""Sets the offset of this ListEvaluationProjectsRequest.
 
         分页查询的偏移量。
 
@@ -130,7 +130,7 @@ class ListEvaluationProjectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEvaluationProjectsRequest.
+        r"""Gets the limit of this ListEvaluationProjectsRequest.
 
         每页显示的条目数量。
 
@@ -141,7 +141,7 @@ class ListEvaluationProjectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEvaluationProjectsRequest.
+        r"""Sets the limit of this ListEvaluationProjectsRequest.
 
         每页显示的条目数量。
 

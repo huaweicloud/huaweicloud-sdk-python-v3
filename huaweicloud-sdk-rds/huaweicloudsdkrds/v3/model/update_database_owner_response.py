@@ -26,7 +26,7 @@ class UpdateDatabaseOwnerResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UpdateDatabaseOwnerResponse
+        r"""UpdateDatabaseOwnerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDatabaseOwnerResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this UpdateDatabaseOwnerResponse.
+        r"""Gets the resp of this UpdateDatabaseOwnerResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class UpdateDatabaseOwnerResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this UpdateDatabaseOwnerResponse.
+        r"""Sets the resp of this UpdateDatabaseOwnerResponse.
 
         调用正常时，返回“successful”。
 

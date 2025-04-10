@@ -43,7 +43,7 @@ class UpdatePolicyRequestBody:
     }
 
     def __init__(self, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None):
-        """UpdatePolicyRequestBody
+        r"""UpdatePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePolicyRequestBody.
+        r"""Gets the name of this UpdatePolicyRequestBody.
 
         防护策略名
 
@@ -117,7 +117,7 @@ class UpdatePolicyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePolicyRequestBody.
+        r"""Sets the name of this UpdatePolicyRequestBody.
 
         防护策略名
 
@@ -128,7 +128,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def level(self):
-        """Gets the level of this UpdatePolicyRequestBody.
+        r"""Gets the level of this UpdatePolicyRequestBody.
 
         Web基础防护等级   - 1 : 宽松，防护粒度较粗，只拦截攻击特征比较明显的请求。当误报情况较多的场景下，建议选择“宽松”模式。   - 2：中等，默认为“中等”防护模式，满足大多数场景下的Web防护需求。   - 3：严格，防护粒度最精细，可以拦截具有复杂的绕过特征的攻击请求，例如jolokia网络攻击、探测CGI漏洞、探测 Druid SQL注入攻击
 
@@ -139,7 +139,7 @@ class UpdatePolicyRequestBody:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this UpdatePolicyRequestBody.
+        r"""Sets the level of this UpdatePolicyRequestBody.
 
         Web基础防护等级   - 1 : 宽松，防护粒度较粗，只拦截攻击特征比较明显的请求。当误报情况较多的场景下，建议选择“宽松”模式。   - 2：中等，默认为“中等”防护模式，满足大多数场景下的Web防护需求。   - 3：严格，防护粒度最精细，可以拦截具有复杂的绕过特征的攻击请求，例如jolokia网络攻击、探测CGI漏洞、探测 Druid SQL注入攻击
 
@@ -150,7 +150,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def full_detection(self):
-        """Gets the full_detection of this UpdatePolicyRequestBody.
+        r"""Gets the full_detection of this UpdatePolicyRequestBody.
 
         精准防护中的检测模式。   - false：短路检测，当用户的请求符合精准防护中的拦截条件时，便立刻终止检测，进行拦截   - true ：全检测，请求符合精准防护中的拦截条件时，全检测不会立即拦截，会继续执行其他防护的检测，最后进行拦截。
 
@@ -161,7 +161,7 @@ class UpdatePolicyRequestBody:
 
     @full_detection.setter
     def full_detection(self, full_detection):
-        """Sets the full_detection of this UpdatePolicyRequestBody.
+        r"""Sets the full_detection of this UpdatePolicyRequestBody.
 
         精准防护中的检测模式。   - false：短路检测，当用户的请求符合精准防护中的拦截条件时，便立刻终止检测，进行拦截   - true ：全检测，请求符合精准防护中的拦截条件时，全检测不会立即拦截，会继续执行其他防护的检测，最后进行拦截。
 
@@ -172,7 +172,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def robot_action(self):
-        """Gets the robot_action of this UpdatePolicyRequestBody.
+        r"""Gets the robot_action of this UpdatePolicyRequestBody.
 
         :return: The robot_action of this UpdatePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.Action`
@@ -181,7 +181,7 @@ class UpdatePolicyRequestBody:
 
     @robot_action.setter
     def robot_action(self, robot_action):
-        """Sets the robot_action of this UpdatePolicyRequestBody.
+        r"""Sets the robot_action of this UpdatePolicyRequestBody.
 
         :param robot_action: The robot_action of this UpdatePolicyRequestBody.
         :type robot_action: :class:`huaweicloudsdkwaf.v1.Action`
@@ -190,7 +190,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdatePolicyRequestBody.
+        r"""Gets the action of this UpdatePolicyRequestBody.
 
         :return: The action of this UpdatePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -199,7 +199,7 @@ class UpdatePolicyRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdatePolicyRequestBody.
+        r"""Sets the action of this UpdatePolicyRequestBody.
 
         :param action: The action of this UpdatePolicyRequestBody.
         :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -208,7 +208,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def options(self):
-        """Gets the options of this UpdatePolicyRequestBody.
+        r"""Gets the options of this UpdatePolicyRequestBody.
 
         :return: The options of this UpdatePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
@@ -217,7 +217,7 @@ class UpdatePolicyRequestBody:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this UpdatePolicyRequestBody.
+        r"""Sets the options of this UpdatePolicyRequestBody.
 
         :param options: The options of this UpdatePolicyRequestBody.
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
@@ -226,7 +226,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def modulex_options(self):
-        """Gets the modulex_options of this UpdatePolicyRequestBody.
+        r"""Gets the modulex_options of this UpdatePolicyRequestBody.
 
         智能访问控制防护项相关配置信息，目前该特性还处于公测阶段，只有部分局点支持该特性
 
@@ -237,7 +237,7 @@ class UpdatePolicyRequestBody:
 
     @modulex_options.setter
     def modulex_options(self, modulex_options):
-        """Sets the modulex_options of this UpdatePolicyRequestBody.
+        r"""Sets the modulex_options of this UpdatePolicyRequestBody.
 
         智能访问控制防护项相关配置信息，目前该特性还处于公测阶段，只有部分局点支持该特性
 
@@ -248,7 +248,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this UpdatePolicyRequestBody.
+        r"""Gets the hosts of this UpdatePolicyRequestBody.
 
         与防护策略绑定的防护的域名id数组
 
@@ -259,7 +259,7 @@ class UpdatePolicyRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this UpdatePolicyRequestBody.
+        r"""Sets the hosts of this UpdatePolicyRequestBody.
 
         与防护策略绑定的防护的域名id数组
 
@@ -270,7 +270,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def bind_host(self):
-        """Gets the bind_host of this UpdatePolicyRequestBody.
+        r"""Gets the bind_host of this UpdatePolicyRequestBody.
 
         与防护策略绑定的防护的域名信息数组，相对于hosts字段，包含更详细的域名信息
 
@@ -281,7 +281,7 @@ class UpdatePolicyRequestBody:
 
     @bind_host.setter
     def bind_host(self, bind_host):
-        """Sets the bind_host of this UpdatePolicyRequestBody.
+        r"""Sets the bind_host of this UpdatePolicyRequestBody.
 
         与防护策略绑定的防护的域名信息数组，相对于hosts字段，包含更详细的域名信息
 
@@ -292,7 +292,7 @@ class UpdatePolicyRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this UpdatePolicyRequestBody.
+        r"""Gets the extend of this UpdatePolicyRequestBody.
 
         扩展字段，用于存放Web基础防护中一些开关配置等信息
 
@@ -303,7 +303,7 @@ class UpdatePolicyRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this UpdatePolicyRequestBody.
+        r"""Sets the extend of this UpdatePolicyRequestBody.
 
         扩展字段，用于存放Web基础防护中一些开关配置等信息
 

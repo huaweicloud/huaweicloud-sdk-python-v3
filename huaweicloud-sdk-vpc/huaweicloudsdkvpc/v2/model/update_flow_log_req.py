@@ -29,7 +29,7 @@ class UpdateFlowLogReq:
     }
 
     def __init__(self, name=None, description=None, admin_state=None):
-        """UpdateFlowLogReq
+        r"""UpdateFlowLogReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateFlowLogReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFlowLogReq.
+        r"""Gets the name of this UpdateFlowLogReq.
 
         功能说明：流日志名称 取值范围：0-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）
 
@@ -68,7 +68,7 @@ class UpdateFlowLogReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFlowLogReq.
+        r"""Sets the name of this UpdateFlowLogReq.
 
         功能说明：流日志名称 取值范围：0-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）
 
@@ -79,7 +79,7 @@ class UpdateFlowLogReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateFlowLogReq.
+        r"""Gets the description of this UpdateFlowLogReq.
 
         功能说明：流日志描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -90,7 +90,7 @@ class UpdateFlowLogReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFlowLogReq.
+        r"""Sets the description of this UpdateFlowLogReq.
 
         功能说明：流日志描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -101,7 +101,7 @@ class UpdateFlowLogReq:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this UpdateFlowLogReq.
+        r"""Gets the admin_state of this UpdateFlowLogReq.
 
         功能说明：流日志管理 取值范围：若为true，表明开启流日志。若为false，则关闭流日志。
 
@@ -112,7 +112,7 @@ class UpdateFlowLogReq:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this UpdateFlowLogReq.
+        r"""Sets the admin_state of this UpdateFlowLogReq.
 
         功能说明：流日志管理 取值范围：若为true，表明开启流日志。若为false，则关闭流日志。
 

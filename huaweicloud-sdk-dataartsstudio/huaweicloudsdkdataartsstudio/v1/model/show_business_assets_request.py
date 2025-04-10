@@ -27,7 +27,7 @@ class ShowBusinessAssetsRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ShowBusinessAssetsRequest
+        r"""ShowBusinessAssetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBusinessAssetsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowBusinessAssetsRequest.
+        r"""Gets the workspace of this ShowBusinessAssetsRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ShowBusinessAssetsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowBusinessAssetsRequest.
+        r"""Sets the workspace of this ShowBusinessAssetsRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ShowBusinessAssetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowBusinessAssetsRequest.
+        r"""Gets the body of this ShowBusinessAssetsRequest.
 
         :return: The body of this ShowBusinessAssetsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BusinessAssetRequest`
@@ -80,7 +80,7 @@ class ShowBusinessAssetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBusinessAssetsRequest.
+        r"""Sets the body of this ShowBusinessAssetsRequest.
 
         :param body: The body of this ShowBusinessAssetsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BusinessAssetRequest`

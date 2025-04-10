@@ -26,7 +26,7 @@ class ListCommitsResponse(SdkResponse):
     }
 
     def __init__(self, commits=None):
-        """ListCommitsResponse
+        r"""ListCommitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCommitsResponse(SdkResponse):
 
     @property
     def commits(self):
-        """Gets the commits of this ListCommitsResponse.
+        r"""Gets the commits of this ListCommitsResponse.
 
         提交记录列表。
 
@@ -55,7 +55,7 @@ class ListCommitsResponse(SdkResponse):
 
     @commits.setter
     def commits(self, commits):
-        """Sets the commits of this ListCommitsResponse.
+        r"""Sets the commits of this ListCommitsResponse.
 
         提交记录列表。
 

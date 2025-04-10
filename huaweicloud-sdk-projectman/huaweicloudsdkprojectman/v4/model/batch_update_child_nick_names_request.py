@@ -25,7 +25,7 @@ class BatchUpdateChildNickNamesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateChildNickNamesRequest
+        r"""BatchUpdateChildNickNamesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateChildNickNamesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateChildNickNamesRequest.
+        r"""Gets the body of this BatchUpdateChildNickNamesRequest.
 
         :return: The body of this BatchUpdateChildNickNamesRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateChildNickNamesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateChildNickNamesRequest.
+        r"""Sets the body of this BatchUpdateChildNickNamesRequest.
 
         :param body: The body of this BatchUpdateChildNickNamesRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`

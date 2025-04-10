@@ -28,7 +28,7 @@ class ListAllResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, page_info=None):
-        """ListAllResourcesResponse
+        r"""ListAllResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListAllResourcesResponse.
+        r"""Gets the resources of this ListAllResourcesResponse.
 
         资源列表
 
@@ -62,7 +62,7 @@ class ListAllResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListAllResourcesResponse.
+        r"""Sets the resources of this ListAllResourcesResponse.
 
         资源列表
 
@@ -73,7 +73,7 @@ class ListAllResourcesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAllResourcesResponse.
+        r"""Gets the page_info of this ListAllResourcesResponse.
 
         :return: The page_info of this ListAllResourcesResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListAllResourcesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAllResourcesResponse.
+        r"""Sets the page_info of this ListAllResourcesResponse.
 
         :param page_info: The page_info of this ListAllResourcesResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

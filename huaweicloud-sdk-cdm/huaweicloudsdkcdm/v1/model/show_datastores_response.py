@@ -26,7 +26,7 @@ class ShowDatastoresResponse(SdkResponse):
     }
 
     def __init__(self, datastores=None):
-        """ShowDatastoresResponse
+        r"""ShowDatastoresResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDatastoresResponse(SdkResponse):
 
     @property
     def datastores(self):
-        """Gets the datastores of this ShowDatastoresResponse.
+        r"""Gets the datastores of this ShowDatastoresResponse.
 
         数据库列表。
 
@@ -55,7 +55,7 @@ class ShowDatastoresResponse(SdkResponse):
 
     @datastores.setter
     def datastores(self, datastores):
-        """Sets the datastores of this ShowDatastoresResponse.
+        r"""Sets the datastores of this ShowDatastoresResponse.
 
         数据库列表。
 

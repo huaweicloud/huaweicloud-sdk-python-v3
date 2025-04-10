@@ -25,7 +25,7 @@ class DeleteSubNetworkInterfaceRequest:
     }
 
     def __init__(self, sub_network_interface_id=None):
-        """DeleteSubNetworkInterfaceRequest
+        r"""DeleteSubNetworkInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSubNetworkInterfaceRequest:
 
     @property
     def sub_network_interface_id(self):
-        """Gets the sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
+        r"""Gets the sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
 
         弹性辅助网卡唯一标识
 
@@ -53,7 +53,7 @@ class DeleteSubNetworkInterfaceRequest:
 
     @sub_network_interface_id.setter
     def sub_network_interface_id(self, sub_network_interface_id):
-        """Sets the sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
+        r"""Sets the sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
 
         弹性辅助网卡唯一标识
 

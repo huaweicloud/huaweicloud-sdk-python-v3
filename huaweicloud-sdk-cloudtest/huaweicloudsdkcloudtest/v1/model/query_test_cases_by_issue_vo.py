@@ -39,7 +39,7 @@ class QueryTestCasesByIssueVo:
     }
 
     def __init__(self, case_status_map=None, new_create=None, designing=None, finished=None, testing=None, test_case_num=None, testcases=None, total_count=None):
-        """QueryTestCasesByIssueVo
+        r"""QueryTestCasesByIssueVo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def case_status_map(self):
-        """Gets the case_status_map of this QueryTestCasesByIssueVo.
+        r"""Gets the case_status_map of this QueryTestCasesByIssueVo.
 
         用例状态
 
@@ -103,7 +103,7 @@ class QueryTestCasesByIssueVo:
 
     @case_status_map.setter
     def case_status_map(self, case_status_map):
-        """Sets the case_status_map of this QueryTestCasesByIssueVo.
+        r"""Sets the case_status_map of this QueryTestCasesByIssueVo.
 
         用例状态
 
@@ -114,7 +114,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def new_create(self):
-        """Gets the new_create of this QueryTestCasesByIssueVo.
+        r"""Gets the new_create of this QueryTestCasesByIssueVo.
 
         新建态
 
@@ -125,7 +125,7 @@ class QueryTestCasesByIssueVo:
 
     @new_create.setter
     def new_create(self, new_create):
-        """Sets the new_create of this QueryTestCasesByIssueVo.
+        r"""Sets the new_create of this QueryTestCasesByIssueVo.
 
         新建态
 
@@ -136,7 +136,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def designing(self):
-        """Gets the designing of this QueryTestCasesByIssueVo.
+        r"""Gets the designing of this QueryTestCasesByIssueVo.
 
         设计态
 
@@ -147,7 +147,7 @@ class QueryTestCasesByIssueVo:
 
     @designing.setter
     def designing(self, designing):
-        """Sets the designing of this QueryTestCasesByIssueVo.
+        r"""Sets the designing of this QueryTestCasesByIssueVo.
 
         设计态
 
@@ -158,7 +158,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def finished(self):
-        """Gets the finished of this QueryTestCasesByIssueVo.
+        r"""Gets the finished of this QueryTestCasesByIssueVo.
 
         完成态
 
@@ -169,7 +169,7 @@ class QueryTestCasesByIssueVo:
 
     @finished.setter
     def finished(self, finished):
-        """Sets the finished of this QueryTestCasesByIssueVo.
+        r"""Sets the finished of this QueryTestCasesByIssueVo.
 
         完成态
 
@@ -180,7 +180,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def testing(self):
-        """Gets the testing of this QueryTestCasesByIssueVo.
+        r"""Gets the testing of this QueryTestCasesByIssueVo.
 
         测试态
 
@@ -191,7 +191,7 @@ class QueryTestCasesByIssueVo:
 
     @testing.setter
     def testing(self, testing):
-        """Sets the testing of this QueryTestCasesByIssueVo.
+        r"""Sets the testing of this QueryTestCasesByIssueVo.
 
         测试态
 
@@ -202,7 +202,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def test_case_num(self):
-        """Gets the test_case_num of this QueryTestCasesByIssueVo.
+        r"""Gets the test_case_num of this QueryTestCasesByIssueVo.
 
         需求关联的用例数量
 
@@ -213,7 +213,7 @@ class QueryTestCasesByIssueVo:
 
     @test_case_num.setter
     def test_case_num(self, test_case_num):
-        """Sets the test_case_num of this QueryTestCasesByIssueVo.
+        r"""Sets the test_case_num of this QueryTestCasesByIssueVo.
 
         需求关联的用例数量
 
@@ -224,7 +224,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def testcases(self):
-        """Gets the testcases of this QueryTestCasesByIssueVo.
+        r"""Gets the testcases of this QueryTestCasesByIssueVo.
 
         用例详情
 
@@ -235,7 +235,7 @@ class QueryTestCasesByIssueVo:
 
     @testcases.setter
     def testcases(self, testcases):
-        """Sets the testcases of this QueryTestCasesByIssueVo.
+        r"""Sets the testcases of this QueryTestCasesByIssueVo.
 
         用例详情
 
@@ -246,7 +246,7 @@ class QueryTestCasesByIssueVo:
 
     @property
     def total_count(self):
-        """Gets the total_count of this QueryTestCasesByIssueVo.
+        r"""Gets the total_count of this QueryTestCasesByIssueVo.
 
         用例总数
 
@@ -257,7 +257,7 @@ class QueryTestCasesByIssueVo:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this QueryTestCasesByIssueVo.
+        r"""Sets the total_count of this QueryTestCasesByIssueVo.
 
         用例总数
 

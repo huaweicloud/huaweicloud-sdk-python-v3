@@ -27,7 +27,7 @@ class AtomicIndexVOSearchResultDataValue:
     }
 
     def __init__(self, records=None, total=None):
-        """AtomicIndexVOSearchResultDataValue
+        r"""AtomicIndexVOSearchResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AtomicIndexVOSearchResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this AtomicIndexVOSearchResultDataValue.
+        r"""Gets the records of this AtomicIndexVOSearchResultDataValue.
 
         AtomicIndexVO数组。
 
@@ -61,7 +61,7 @@ class AtomicIndexVOSearchResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this AtomicIndexVOSearchResultDataValue.
+        r"""Sets the records of this AtomicIndexVOSearchResultDataValue.
 
         AtomicIndexVO数组。
 
@@ -72,7 +72,7 @@ class AtomicIndexVOSearchResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this AtomicIndexVOSearchResultDataValue.
+        r"""Gets the total of this AtomicIndexVOSearchResultDataValue.
 
         总数。
 
@@ -83,7 +83,7 @@ class AtomicIndexVOSearchResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AtomicIndexVOSearchResultDataValue.
+        r"""Sets the total of this AtomicIndexVOSearchResultDataValue.
 
         总数。
 

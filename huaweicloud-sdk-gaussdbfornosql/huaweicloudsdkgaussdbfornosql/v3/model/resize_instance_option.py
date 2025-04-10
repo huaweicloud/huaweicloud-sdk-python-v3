@@ -25,7 +25,7 @@ class ResizeInstanceOption:
     }
 
     def __init__(self, target_spec_code=None):
-        """ResizeInstanceOption
+        r"""ResizeInstanceOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResizeInstanceOption:
 
     @property
     def target_spec_code(self):
-        """Gets the target_spec_code of this ResizeInstanceOption.
+        r"""Gets the target_spec_code of this ResizeInstanceOption.
 
         变更至新规格的资源规格编码。获取方法请参见查询数据库规格中响应参数“flavors.spec_code”的值。
 
@@ -53,7 +53,7 @@ class ResizeInstanceOption:
 
     @target_spec_code.setter
     def target_spec_code(self, target_spec_code):
-        """Sets the target_spec_code of this ResizeInstanceOption.
+        r"""Sets the target_spec_code of this ResizeInstanceOption.
 
         变更至新规格的资源规格编码。获取方法请参见查询数据库规格中响应参数“flavors.spec_code”的值。
 

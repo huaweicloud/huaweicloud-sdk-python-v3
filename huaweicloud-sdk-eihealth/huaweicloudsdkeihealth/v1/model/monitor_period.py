@@ -29,7 +29,7 @@ class MonitorPeriod:
     }
 
     def __init__(self):
-        """MonitorPeriod
+        r"""MonitorPeriod
 
         The model defined in huaweicloud sdk
 

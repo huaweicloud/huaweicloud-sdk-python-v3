@@ -27,7 +27,7 @@ class AssociateQueueToEnhancedConnectionRequest:
     }
 
     def __init__(self, connection_id=None, body=None):
-        """AssociateQueueToEnhancedConnectionRequest
+        r"""AssociateQueueToEnhancedConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateQueueToEnhancedConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this AssociateQueueToEnhancedConnectionRequest.
+        r"""Gets the connection_id of this AssociateQueueToEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -60,7 +60,7 @@ class AssociateQueueToEnhancedConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this AssociateQueueToEnhancedConnectionRequest.
+        r"""Sets the connection_id of this AssociateQueueToEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -71,7 +71,7 @@ class AssociateQueueToEnhancedConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateQueueToEnhancedConnectionRequest.
+        r"""Gets the body of this AssociateQueueToEnhancedConnectionRequest.
 
         :return: The body of this AssociateQueueToEnhancedConnectionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToEnhancedConnectionRequestBody`
@@ -80,7 +80,7 @@ class AssociateQueueToEnhancedConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateQueueToEnhancedConnectionRequest.
+        r"""Sets the body of this AssociateQueueToEnhancedConnectionRequest.
 
         :param body: The body of this AssociateQueueToEnhancedConnectionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToEnhancedConnectionRequestBody`

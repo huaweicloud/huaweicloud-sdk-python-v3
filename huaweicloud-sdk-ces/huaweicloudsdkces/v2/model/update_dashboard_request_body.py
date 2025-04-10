@@ -29,7 +29,7 @@ class UpdateDashboardRequestBody:
     }
 
     def __init__(self, dashboard_name=None, is_favorite=None, row_widget_num=None):
-        """UpdateDashboardRequestBody
+        r"""UpdateDashboardRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateDashboardRequestBody:
 
     @property
     def dashboard_name(self):
-        """Gets the dashboard_name of this UpdateDashboardRequestBody.
+        r"""Gets the dashboard_name of this UpdateDashboardRequestBody.
 
         自定义监控看板名称
 
@@ -68,7 +68,7 @@ class UpdateDashboardRequestBody:
 
     @dashboard_name.setter
     def dashboard_name(self, dashboard_name):
-        """Sets the dashboard_name of this UpdateDashboardRequestBody.
+        r"""Sets the dashboard_name of this UpdateDashboardRequestBody.
 
         自定义监控看板名称
 
@@ -79,7 +79,7 @@ class UpdateDashboardRequestBody:
 
     @property
     def is_favorite(self):
-        """Gets the is_favorite of this UpdateDashboardRequestBody.
+        r"""Gets the is_favorite of this UpdateDashboardRequestBody.
 
         监控看板是否标记收藏, true: 收藏, false: 未收藏
 
@@ -90,7 +90,7 @@ class UpdateDashboardRequestBody:
 
     @is_favorite.setter
     def is_favorite(self, is_favorite):
-        """Sets the is_favorite of this UpdateDashboardRequestBody.
+        r"""Sets the is_favorite of this UpdateDashboardRequestBody.
 
         监控看板是否标记收藏, true: 收藏, false: 未收藏
 
@@ -101,7 +101,7 @@ class UpdateDashboardRequestBody:
 
     @property
     def row_widget_num(self):
-        """Gets the row_widget_num of this UpdateDashboardRequestBody.
+        r"""Gets the row_widget_num of this UpdateDashboardRequestBody.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 
@@ -112,7 +112,7 @@ class UpdateDashboardRequestBody:
 
     @row_widget_num.setter
     def row_widget_num(self, row_widget_num):
-        """Sets the row_widget_num of this UpdateDashboardRequestBody.
+        r"""Sets the row_widget_num of this UpdateDashboardRequestBody.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 

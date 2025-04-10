@@ -53,7 +53,7 @@ class EnvironmentHostInfo:
     }
 
     def __init__(self, host_id=None, ip=None, port=None, permission=None, group_id=None, host_name=None, as_proxy=None, proxy_host_id=None, proxy_host_name=None, owner_id=None, owner_name=None, connection_status=None, lastest_connection_time=None, connection_result=None, nick_name=None):
-        """EnvironmentHostInfo
+        r"""EnvironmentHostInfo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class EnvironmentHostInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this EnvironmentHostInfo.
+        r"""Gets the host_id of this EnvironmentHostInfo.
 
         主机id
 
@@ -152,7 +152,7 @@ class EnvironmentHostInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this EnvironmentHostInfo.
+        r"""Sets the host_id of this EnvironmentHostInfo.
 
         主机id
 
@@ -163,7 +163,7 @@ class EnvironmentHostInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this EnvironmentHostInfo.
+        r"""Gets the ip of this EnvironmentHostInfo.
 
         主机ip，如：161.17.101.12
 
@@ -174,7 +174,7 @@ class EnvironmentHostInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this EnvironmentHostInfo.
+        r"""Sets the ip of this EnvironmentHostInfo.
 
         主机ip，如：161.17.101.12
 
@@ -185,7 +185,7 @@ class EnvironmentHostInfo:
 
     @property
     def port(self):
-        """Gets the port of this EnvironmentHostInfo.
+        r"""Gets the port of this EnvironmentHostInfo.
 
         ssh端口，如：22
 
@@ -196,7 +196,7 @@ class EnvironmentHostInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this EnvironmentHostInfo.
+        r"""Sets the port of this EnvironmentHostInfo.
 
         ssh端口，如：22
 
@@ -207,7 +207,7 @@ class EnvironmentHostInfo:
 
     @property
     def permission(self):
-        """Gets the permission of this EnvironmentHostInfo.
+        r"""Gets the permission of this EnvironmentHostInfo.
 
         :return: The permission of this EnvironmentHostInfo.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentHostPermission`
@@ -216,7 +216,7 @@ class EnvironmentHostInfo:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this EnvironmentHostInfo.
+        r"""Sets the permission of this EnvironmentHostInfo.
 
         :param permission: The permission of this EnvironmentHostInfo.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentHostPermission`
@@ -225,7 +225,7 @@ class EnvironmentHostInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this EnvironmentHostInfo.
+        r"""Gets the group_id of this EnvironmentHostInfo.
 
         主机集群id
 
@@ -236,7 +236,7 @@ class EnvironmentHostInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this EnvironmentHostInfo.
+        r"""Sets the group_id of this EnvironmentHostInfo.
 
         主机集群id
 
@@ -247,7 +247,7 @@ class EnvironmentHostInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this EnvironmentHostInfo.
+        r"""Gets the host_name of this EnvironmentHostInfo.
 
         主机名
 
@@ -258,7 +258,7 @@ class EnvironmentHostInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this EnvironmentHostInfo.
+        r"""Sets the host_name of this EnvironmentHostInfo.
 
         主机名
 
@@ -269,7 +269,7 @@ class EnvironmentHostInfo:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this EnvironmentHostInfo.
+        r"""Gets the as_proxy of this EnvironmentHostInfo.
 
         是否为代理机
 
@@ -280,7 +280,7 @@ class EnvironmentHostInfo:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this EnvironmentHostInfo.
+        r"""Sets the as_proxy of this EnvironmentHostInfo.
 
         是否为代理机
 
@@ -291,7 +291,7 @@ class EnvironmentHostInfo:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this EnvironmentHostInfo.
+        r"""Gets the proxy_host_id of this EnvironmentHostInfo.
 
         代理机id
 
@@ -302,7 +302,7 @@ class EnvironmentHostInfo:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this EnvironmentHostInfo.
+        r"""Sets the proxy_host_id of this EnvironmentHostInfo.
 
         代理机id
 
@@ -313,7 +313,7 @@ class EnvironmentHostInfo:
 
     @property
     def proxy_host_name(self):
-        """Gets the proxy_host_name of this EnvironmentHostInfo.
+        r"""Gets the proxy_host_name of this EnvironmentHostInfo.
 
         代理机名称
 
@@ -324,7 +324,7 @@ class EnvironmentHostInfo:
 
     @proxy_host_name.setter
     def proxy_host_name(self, proxy_host_name):
-        """Sets the proxy_host_name of this EnvironmentHostInfo.
+        r"""Sets the proxy_host_name of this EnvironmentHostInfo.
 
         代理机名称
 
@@ -335,7 +335,7 @@ class EnvironmentHostInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this EnvironmentHostInfo.
+        r"""Gets the owner_id of this EnvironmentHostInfo.
 
         主机所属人id
 
@@ -346,7 +346,7 @@ class EnvironmentHostInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this EnvironmentHostInfo.
+        r"""Sets the owner_id of this EnvironmentHostInfo.
 
         主机所属人id
 
@@ -357,7 +357,7 @@ class EnvironmentHostInfo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this EnvironmentHostInfo.
+        r"""Gets the owner_name of this EnvironmentHostInfo.
 
         主机所属人名称
 
@@ -368,7 +368,7 @@ class EnvironmentHostInfo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this EnvironmentHostInfo.
+        r"""Sets the owner_name of this EnvironmentHostInfo.
 
         主机所属人名称
 
@@ -379,7 +379,7 @@ class EnvironmentHostInfo:
 
     @property
     def connection_status(self):
-        """Gets the connection_status of this EnvironmentHostInfo.
+        r"""Gets the connection_status of this EnvironmentHostInfo.
 
         连通性状态
 
@@ -390,7 +390,7 @@ class EnvironmentHostInfo:
 
     @connection_status.setter
     def connection_status(self, connection_status):
-        """Sets the connection_status of this EnvironmentHostInfo.
+        r"""Sets the connection_status of this EnvironmentHostInfo.
 
         连通性状态
 
@@ -401,7 +401,7 @@ class EnvironmentHostInfo:
 
     @property
     def lastest_connection_time(self):
-        """Gets the lastest_connection_time of this EnvironmentHostInfo.
+        r"""Gets the lastest_connection_time of this EnvironmentHostInfo.
 
         上次连通时间
 
@@ -412,7 +412,7 @@ class EnvironmentHostInfo:
 
     @lastest_connection_time.setter
     def lastest_connection_time(self, lastest_connection_time):
-        """Sets the lastest_connection_time of this EnvironmentHostInfo.
+        r"""Sets the lastest_connection_time of this EnvironmentHostInfo.
 
         上次连通时间
 
@@ -423,7 +423,7 @@ class EnvironmentHostInfo:
 
     @property
     def connection_result(self):
-        """Gets the connection_result of this EnvironmentHostInfo.
+        r"""Gets the connection_result of this EnvironmentHostInfo.
 
         连通性验证结果
 
@@ -434,7 +434,7 @@ class EnvironmentHostInfo:
 
     @connection_result.setter
     def connection_result(self, connection_result):
-        """Sets the connection_result of this EnvironmentHostInfo.
+        r"""Sets the connection_result of this EnvironmentHostInfo.
 
         连通性验证结果
 
@@ -445,7 +445,7 @@ class EnvironmentHostInfo:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this EnvironmentHostInfo.
+        r"""Gets the nick_name of this EnvironmentHostInfo.
 
         创建人昵称
 
@@ -456,7 +456,7 @@ class EnvironmentHostInfo:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this EnvironmentHostInfo.
+        r"""Sets the nick_name of this EnvironmentHostInfo.
 
         创建人昵称
 

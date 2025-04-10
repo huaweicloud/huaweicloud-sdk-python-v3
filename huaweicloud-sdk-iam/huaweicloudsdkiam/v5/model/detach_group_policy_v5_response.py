@@ -24,7 +24,7 @@ class DetachGroupPolicyV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """DetachGroupPolicyV5Response
+        r"""DetachGroupPolicyV5Response
 
         The model defined in huaweicloud sdk
 

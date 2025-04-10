@@ -27,7 +27,7 @@ class DeleteDiagnosisTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteDiagnosisTaskRequest
+        r"""DeleteDiagnosisTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDiagnosisTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDiagnosisTaskRequest.
+        r"""Gets the instance_id of this DeleteDiagnosisTaskRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class DeleteDiagnosisTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDiagnosisTaskRequest.
+        r"""Sets the instance_id of this DeleteDiagnosisTaskRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class DeleteDiagnosisTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDiagnosisTaskRequest.
+        r"""Gets the body of this DeleteDiagnosisTaskRequest.
 
         :return: The body of this DeleteDiagnosisTaskRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteDiagnosisReportRequest`
@@ -80,7 +80,7 @@ class DeleteDiagnosisTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDiagnosisTaskRequest.
+        r"""Sets the body of this DeleteDiagnosisTaskRequest.
 
         :param body: The body of this DeleteDiagnosisTaskRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.DeleteDiagnosisReportRequest`

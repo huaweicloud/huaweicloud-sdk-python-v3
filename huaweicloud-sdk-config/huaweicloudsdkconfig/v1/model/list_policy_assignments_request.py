@@ -29,7 +29,7 @@ class ListPolicyAssignmentsRequest:
     }
 
     def __init__(self, policy_assignment_name=None, limit=None, marker=None):
-        """ListPolicyAssignmentsRequest
+        r"""ListPolicyAssignmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListPolicyAssignmentsRequest:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this ListPolicyAssignmentsRequest.
+        r"""Gets the policy_assignment_name of this ListPolicyAssignmentsRequest.
 
         合规规则名称
 
@@ -68,7 +68,7 @@ class ListPolicyAssignmentsRequest:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this ListPolicyAssignmentsRequest.
+        r"""Sets the policy_assignment_name of this ListPolicyAssignmentsRequest.
 
         合规规则名称
 
@@ -79,7 +79,7 @@ class ListPolicyAssignmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyAssignmentsRequest.
+        r"""Gets the limit of this ListPolicyAssignmentsRequest.
 
         最大的返回数量
 
@@ -90,7 +90,7 @@ class ListPolicyAssignmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyAssignmentsRequest.
+        r"""Sets the limit of this ListPolicyAssignmentsRequest.
 
         最大的返回数量
 
@@ -101,7 +101,7 @@ class ListPolicyAssignmentsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPolicyAssignmentsRequest.
+        r"""Gets the marker of this ListPolicyAssignmentsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -112,7 +112,7 @@ class ListPolicyAssignmentsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPolicyAssignmentsRequest.
+        r"""Sets the marker of this ListPolicyAssignmentsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

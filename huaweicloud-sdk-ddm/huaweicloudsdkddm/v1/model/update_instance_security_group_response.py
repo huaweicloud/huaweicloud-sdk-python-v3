@@ -26,7 +26,7 @@ class UpdateInstanceSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, security_group_id=None):
-        """UpdateInstanceSecurityGroupResponse
+        r"""UpdateInstanceSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateInstanceSecurityGroupResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this UpdateInstanceSecurityGroupResponse.
+        r"""Gets the security_group_id of this UpdateInstanceSecurityGroupResponse.
 
         安全组ID
 
@@ -55,7 +55,7 @@ class UpdateInstanceSecurityGroupResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this UpdateInstanceSecurityGroupResponse.
+        r"""Sets the security_group_id of this UpdateInstanceSecurityGroupResponse.
 
         安全组ID
 

@@ -77,7 +77,7 @@ class ConnectionInfo:
     }
 
     def __init__(self, auth_config=None, auth_config_id=None, auth_dynamic=None, auth_id=None, auth_info=None, auth_key=None, auth_name=None, auth_prop=None, auth_type=None, cdm_params_config=None, connection_name=None, connector_id=None, connector_name=None, create_time=None, created_by=None, description=None, domain_id=None, host_config=None, id=None, is_open=None, logo=None, project_id=None, status=None, type=None, updated_by=None, updated_time=None, user_id=None):
-        """ConnectionInfo
+        r"""ConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class ConnectionInfo:
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this ConnectionInfo.
+        r"""Gets the auth_config of this ConnectionInfo.
 
         :return: The auth_config of this ConnectionInfo.
         :rtype: object
@@ -234,7 +234,7 @@ class ConnectionInfo:
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this ConnectionInfo.
+        r"""Sets the auth_config of this ConnectionInfo.
 
         :param auth_config: The auth_config of this ConnectionInfo.
         :type auth_config: object
@@ -243,7 +243,7 @@ class ConnectionInfo:
 
     @property
     def auth_config_id(self):
-        """Gets the auth_config_id of this ConnectionInfo.
+        r"""Gets the auth_config_id of this ConnectionInfo.
 
         :return: The auth_config_id of this ConnectionInfo.
         :rtype: str
@@ -252,7 +252,7 @@ class ConnectionInfo:
 
     @auth_config_id.setter
     def auth_config_id(self, auth_config_id):
-        """Sets the auth_config_id of this ConnectionInfo.
+        r"""Sets the auth_config_id of this ConnectionInfo.
 
         :param auth_config_id: The auth_config_id of this ConnectionInfo.
         :type auth_config_id: str
@@ -261,7 +261,7 @@ class ConnectionInfo:
 
     @property
     def auth_dynamic(self):
-        """Gets the auth_dynamic of this ConnectionInfo.
+        r"""Gets the auth_dynamic of this ConnectionInfo.
 
         :return: The auth_dynamic of this ConnectionInfo.
         :rtype: object
@@ -270,7 +270,7 @@ class ConnectionInfo:
 
     @auth_dynamic.setter
     def auth_dynamic(self, auth_dynamic):
-        """Sets the auth_dynamic of this ConnectionInfo.
+        r"""Sets the auth_dynamic of this ConnectionInfo.
 
         :param auth_dynamic: The auth_dynamic of this ConnectionInfo.
         :type auth_dynamic: object
@@ -279,7 +279,7 @@ class ConnectionInfo:
 
     @property
     def auth_id(self):
-        """Gets the auth_id of this ConnectionInfo.
+        r"""Gets the auth_id of this ConnectionInfo.
 
         :return: The auth_id of this ConnectionInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class ConnectionInfo:
 
     @auth_id.setter
     def auth_id(self, auth_id):
-        """Sets the auth_id of this ConnectionInfo.
+        r"""Sets the auth_id of this ConnectionInfo.
 
         :param auth_id: The auth_id of this ConnectionInfo.
         :type auth_id: str
@@ -297,7 +297,7 @@ class ConnectionInfo:
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this ConnectionInfo.
+        r"""Gets the auth_info of this ConnectionInfo.
 
         :return: The auth_info of this ConnectionInfo.
         :rtype: object
@@ -306,7 +306,7 @@ class ConnectionInfo:
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this ConnectionInfo.
+        r"""Sets the auth_info of this ConnectionInfo.
 
         :param auth_info: The auth_info of this ConnectionInfo.
         :type auth_info: object
@@ -315,7 +315,7 @@ class ConnectionInfo:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this ConnectionInfo.
+        r"""Gets the auth_key of this ConnectionInfo.
 
         :return: The auth_key of this ConnectionInfo.
         :rtype: str
@@ -324,7 +324,7 @@ class ConnectionInfo:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this ConnectionInfo.
+        r"""Sets the auth_key of this ConnectionInfo.
 
         :param auth_key: The auth_key of this ConnectionInfo.
         :type auth_key: str
@@ -333,7 +333,7 @@ class ConnectionInfo:
 
     @property
     def auth_name(self):
-        """Gets the auth_name of this ConnectionInfo.
+        r"""Gets the auth_name of this ConnectionInfo.
 
         :return: The auth_name of this ConnectionInfo.
         :rtype: str
@@ -342,7 +342,7 @@ class ConnectionInfo:
 
     @auth_name.setter
     def auth_name(self, auth_name):
-        """Sets the auth_name of this ConnectionInfo.
+        r"""Sets the auth_name of this ConnectionInfo.
 
         :param auth_name: The auth_name of this ConnectionInfo.
         :type auth_name: str
@@ -351,7 +351,7 @@ class ConnectionInfo:
 
     @property
     def auth_prop(self):
-        """Gets the auth_prop of this ConnectionInfo.
+        r"""Gets the auth_prop of this ConnectionInfo.
 
         :return: The auth_prop of this ConnectionInfo.
         :rtype: object
@@ -360,7 +360,7 @@ class ConnectionInfo:
 
     @auth_prop.setter
     def auth_prop(self, auth_prop):
-        """Sets the auth_prop of this ConnectionInfo.
+        r"""Sets the auth_prop of this ConnectionInfo.
 
         :param auth_prop: The auth_prop of this ConnectionInfo.
         :type auth_prop: object
@@ -369,7 +369,7 @@ class ConnectionInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ConnectionInfo.
+        r"""Gets the auth_type of this ConnectionInfo.
 
         :return: The auth_type of this ConnectionInfo.
         :rtype: str
@@ -378,7 +378,7 @@ class ConnectionInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ConnectionInfo.
+        r"""Sets the auth_type of this ConnectionInfo.
 
         :param auth_type: The auth_type of this ConnectionInfo.
         :type auth_type: str
@@ -387,7 +387,7 @@ class ConnectionInfo:
 
     @property
     def cdm_params_config(self):
-        """Gets the cdm_params_config of this ConnectionInfo.
+        r"""Gets the cdm_params_config of this ConnectionInfo.
 
         :return: The cdm_params_config of this ConnectionInfo.
         :rtype: object
@@ -396,7 +396,7 @@ class ConnectionInfo:
 
     @cdm_params_config.setter
     def cdm_params_config(self, cdm_params_config):
-        """Sets the cdm_params_config of this ConnectionInfo.
+        r"""Sets the cdm_params_config of this ConnectionInfo.
 
         :param cdm_params_config: The cdm_params_config of this ConnectionInfo.
         :type cdm_params_config: object
@@ -405,7 +405,7 @@ class ConnectionInfo:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ConnectionInfo.
+        r"""Gets the connection_name of this ConnectionInfo.
 
         :return: The connection_name of this ConnectionInfo.
         :rtype: str
@@ -414,7 +414,7 @@ class ConnectionInfo:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ConnectionInfo.
+        r"""Sets the connection_name of this ConnectionInfo.
 
         :param connection_name: The connection_name of this ConnectionInfo.
         :type connection_name: str
@@ -423,7 +423,7 @@ class ConnectionInfo:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ConnectionInfo.
+        r"""Gets the connector_id of this ConnectionInfo.
 
         :return: The connector_id of this ConnectionInfo.
         :rtype: str
@@ -432,7 +432,7 @@ class ConnectionInfo:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ConnectionInfo.
+        r"""Sets the connector_id of this ConnectionInfo.
 
         :param connector_id: The connector_id of this ConnectionInfo.
         :type connector_id: str
@@ -441,7 +441,7 @@ class ConnectionInfo:
 
     @property
     def connector_name(self):
-        """Gets the connector_name of this ConnectionInfo.
+        r"""Gets the connector_name of this ConnectionInfo.
 
         :return: The connector_name of this ConnectionInfo.
         :rtype: str
@@ -450,7 +450,7 @@ class ConnectionInfo:
 
     @connector_name.setter
     def connector_name(self, connector_name):
-        """Sets the connector_name of this ConnectionInfo.
+        r"""Sets the connector_name of this ConnectionInfo.
 
         :param connector_name: The connector_name of this ConnectionInfo.
         :type connector_name: str
@@ -459,7 +459,7 @@ class ConnectionInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ConnectionInfo.
+        r"""Gets the create_time of this ConnectionInfo.
 
         :return: The create_time of this ConnectionInfo.
         :rtype: datetime
@@ -468,7 +468,7 @@ class ConnectionInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ConnectionInfo.
+        r"""Sets the create_time of this ConnectionInfo.
 
         :param create_time: The create_time of this ConnectionInfo.
         :type create_time: datetime
@@ -477,7 +477,7 @@ class ConnectionInfo:
 
     @property
     def created_by(self):
-        """Gets the created_by of this ConnectionInfo.
+        r"""Gets the created_by of this ConnectionInfo.
 
         :return: The created_by of this ConnectionInfo.
         :rtype: str
@@ -486,7 +486,7 @@ class ConnectionInfo:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ConnectionInfo.
+        r"""Sets the created_by of this ConnectionInfo.
 
         :param created_by: The created_by of this ConnectionInfo.
         :type created_by: str
@@ -495,7 +495,7 @@ class ConnectionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionInfo.
+        r"""Gets the description of this ConnectionInfo.
 
         :return: The description of this ConnectionInfo.
         :rtype: str
@@ -504,7 +504,7 @@ class ConnectionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionInfo.
+        r"""Sets the description of this ConnectionInfo.
 
         :param description: The description of this ConnectionInfo.
         :type description: str
@@ -513,7 +513,7 @@ class ConnectionInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ConnectionInfo.
+        r"""Gets the domain_id of this ConnectionInfo.
 
         :return: The domain_id of this ConnectionInfo.
         :rtype: str
@@ -522,7 +522,7 @@ class ConnectionInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ConnectionInfo.
+        r"""Sets the domain_id of this ConnectionInfo.
 
         :param domain_id: The domain_id of this ConnectionInfo.
         :type domain_id: str
@@ -531,7 +531,7 @@ class ConnectionInfo:
 
     @property
     def host_config(self):
-        """Gets the host_config of this ConnectionInfo.
+        r"""Gets the host_config of this ConnectionInfo.
 
         :return: The host_config of this ConnectionInfo.
         :rtype: object
@@ -540,7 +540,7 @@ class ConnectionInfo:
 
     @host_config.setter
     def host_config(self, host_config):
-        """Sets the host_config of this ConnectionInfo.
+        r"""Sets the host_config of this ConnectionInfo.
 
         :param host_config: The host_config of this ConnectionInfo.
         :type host_config: object
@@ -549,7 +549,7 @@ class ConnectionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ConnectionInfo.
+        r"""Gets the id of this ConnectionInfo.
 
         :return: The id of this ConnectionInfo.
         :rtype: str
@@ -558,7 +558,7 @@ class ConnectionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectionInfo.
+        r"""Sets the id of this ConnectionInfo.
 
         :param id: The id of this ConnectionInfo.
         :type id: str
@@ -567,7 +567,7 @@ class ConnectionInfo:
 
     @property
     def is_open(self):
-        """Gets the is_open of this ConnectionInfo.
+        r"""Gets the is_open of this ConnectionInfo.
 
         :return: The is_open of this ConnectionInfo.
         :rtype: int
@@ -576,7 +576,7 @@ class ConnectionInfo:
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this ConnectionInfo.
+        r"""Sets the is_open of this ConnectionInfo.
 
         :param is_open: The is_open of this ConnectionInfo.
         :type is_open: int
@@ -585,7 +585,7 @@ class ConnectionInfo:
 
     @property
     def logo(self):
-        """Gets the logo of this ConnectionInfo.
+        r"""Gets the logo of this ConnectionInfo.
 
         :return: The logo of this ConnectionInfo.
         :rtype: str
@@ -594,7 +594,7 @@ class ConnectionInfo:
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this ConnectionInfo.
+        r"""Sets the logo of this ConnectionInfo.
 
         :param logo: The logo of this ConnectionInfo.
         :type logo: str
@@ -603,7 +603,7 @@ class ConnectionInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ConnectionInfo.
+        r"""Gets the project_id of this ConnectionInfo.
 
         :return: The project_id of this ConnectionInfo.
         :rtype: str
@@ -612,7 +612,7 @@ class ConnectionInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ConnectionInfo.
+        r"""Sets the project_id of this ConnectionInfo.
 
         :param project_id: The project_id of this ConnectionInfo.
         :type project_id: str
@@ -621,7 +621,7 @@ class ConnectionInfo:
 
     @property
     def status(self):
-        """Gets the status of this ConnectionInfo.
+        r"""Gets the status of this ConnectionInfo.
 
         :return: The status of this ConnectionInfo.
         :rtype: str
@@ -630,7 +630,7 @@ class ConnectionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectionInfo.
+        r"""Sets the status of this ConnectionInfo.
 
         :param status: The status of this ConnectionInfo.
         :type status: str
@@ -639,7 +639,7 @@ class ConnectionInfo:
 
     @property
     def type(self):
-        """Gets the type of this ConnectionInfo.
+        r"""Gets the type of this ConnectionInfo.
 
         :return: The type of this ConnectionInfo.
         :rtype: str
@@ -648,7 +648,7 @@ class ConnectionInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionInfo.
+        r"""Sets the type of this ConnectionInfo.
 
         :param type: The type of this ConnectionInfo.
         :type type: str
@@ -657,7 +657,7 @@ class ConnectionInfo:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ConnectionInfo.
+        r"""Gets the updated_by of this ConnectionInfo.
 
         :return: The updated_by of this ConnectionInfo.
         :rtype: str
@@ -666,7 +666,7 @@ class ConnectionInfo:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ConnectionInfo.
+        r"""Sets the updated_by of this ConnectionInfo.
 
         :param updated_by: The updated_by of this ConnectionInfo.
         :type updated_by: str
@@ -675,7 +675,7 @@ class ConnectionInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ConnectionInfo.
+        r"""Gets the updated_time of this ConnectionInfo.
 
         :return: The updated_time of this ConnectionInfo.
         :rtype: datetime
@@ -684,7 +684,7 @@ class ConnectionInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ConnectionInfo.
+        r"""Sets the updated_time of this ConnectionInfo.
 
         :param updated_time: The updated_time of this ConnectionInfo.
         :type updated_time: datetime
@@ -693,7 +693,7 @@ class ConnectionInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ConnectionInfo.
+        r"""Gets the user_id of this ConnectionInfo.
 
         :return: The user_id of this ConnectionInfo.
         :rtype: str
@@ -702,7 +702,7 @@ class ConnectionInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ConnectionInfo.
+        r"""Sets the user_id of this ConnectionInfo.
 
         :param user_id: The user_id of this ConnectionInfo.
         :type user_id: str

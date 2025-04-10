@@ -34,7 +34,7 @@ class ShowCaseResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ShowCaseResultResponse
+        r"""ShowCaseResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCaseResultResponse.
+        r"""Gets the status of this ShowCaseResultResponse.
 
         success|error
 
@@ -83,7 +83,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCaseResultResponse.
+        r"""Sets the status of this ShowCaseResultResponse.
 
         success|error
 
@@ -94,7 +94,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowCaseResultResponse.
+        r"""Gets the result of this ShowCaseResultResponse.
 
         :return: The result of this ShowCaseResultResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestResultVo`
@@ -103,7 +103,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowCaseResultResponse.
+        r"""Sets the result of this ShowCaseResultResponse.
 
         :param result: The result of this ShowCaseResultResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestResultVo`
@@ -112,7 +112,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowCaseResultResponse.
+        r"""Gets the error of this ShowCaseResultResponse.
 
         :return: The error of this ShowCaseResultResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowCaseResultResponse.
+        r"""Sets the error of this ShowCaseResultResponse.
 
         :param error: The error of this ShowCaseResultResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowCaseResultResponse.
+        r"""Gets the request_id of this ShowCaseResultResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowCaseResultResponse.
+        r"""Sets the request_id of this ShowCaseResultResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this ShowCaseResultResponse.
+        r"""Gets the server_address of this ShowCaseResultResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class ShowCaseResultResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ShowCaseResultResponse.
+        r"""Sets the server_address of this ShowCaseResultResponse.
 
         对内接口才有此属性
 

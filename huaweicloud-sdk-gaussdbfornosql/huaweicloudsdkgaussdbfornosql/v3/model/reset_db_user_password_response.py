@@ -24,7 +24,7 @@ class ResetDbUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetDbUserPasswordResponse
+        r"""ResetDbUserPasswordResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class ShowControlOperateResponse(SdkResponse):
     }
 
     def __init__(self, control_operation=None):
-        """ShowControlOperateResponse
+        r"""ShowControlOperateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowControlOperateResponse(SdkResponse):
 
     @property
     def control_operation(self):
-        """Gets the control_operation of this ShowControlOperateResponse.
+        r"""Gets the control_operation of this ShowControlOperateResponse.
 
         :return: The control_operation of this ShowControlOperateResponse.
         :rtype: :class:`huaweicloudsdkrgc.v1.ControlOperation`
@@ -53,7 +53,7 @@ class ShowControlOperateResponse(SdkResponse):
 
     @control_operation.setter
     def control_operation(self, control_operation):
-        """Sets the control_operation of this ShowControlOperateResponse.
+        r"""Sets the control_operation of this ShowControlOperateResponse.
 
         :param control_operation: The control_operation of this ShowControlOperateResponse.
         :type control_operation: :class:`huaweicloudsdkrgc.v1.ControlOperation`

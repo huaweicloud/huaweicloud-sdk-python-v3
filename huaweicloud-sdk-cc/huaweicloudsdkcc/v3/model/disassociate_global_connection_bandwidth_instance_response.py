@@ -28,7 +28,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, gcbandwidths=None):
-        """DisassociateGlobalConnectionBandwidthInstanceResponse
+        r"""DisassociateGlobalConnectionBandwidthInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Gets the request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Sets the request_id of this DisassociateGlobalConnectionBandwidthInstanceResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @property
     def gcbandwidths(self):
-        """Gets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Gets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceResponse.
 
         全域互联带宽解绑实例响应详情。
 
@@ -82,7 +82,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @gcbandwidths.setter
     def gcbandwidths(self, gcbandwidths):
-        """Sets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Sets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceResponse.
 
         全域互联带宽解绑实例响应详情。
 

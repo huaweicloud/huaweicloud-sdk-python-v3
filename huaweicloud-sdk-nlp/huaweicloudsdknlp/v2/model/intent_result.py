@@ -31,7 +31,7 @@ class IntentResult:
     }
 
     def __init__(self, confidence=None, label=None, slots=None, text=None):
-        """IntentResult
+        r"""IntentResult
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class IntentResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this IntentResult.
+        r"""Gets the confidence of this IntentResult.
 
         标签label的置信度。
 
@@ -71,7 +71,7 @@ class IntentResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this IntentResult.
+        r"""Sets the confidence of this IntentResult.
 
         标签label的置信度。
 
@@ -82,7 +82,7 @@ class IntentResult:
 
     @property
     def label(self):
-        """Gets the label of this IntentResult.
+        r"""Gets the label of this IntentResult.
 
         文本的意图标签。标签共有以下9类，取值如下： weather：天气 time：报时 news：新闻 joke：笑话 translation：翻译 notification：提醒 alarm：闹钟 music：音乐 other：其它
 
@@ -93,7 +93,7 @@ class IntentResult:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this IntentResult.
+        r"""Sets the label of this IntentResult.
 
         文本的意图标签。标签共有以下9类，取值如下： weather：天气 time：报时 news：新闻 joke：笑话 translation：翻译 notification：提醒 alarm：闹钟 music：音乐 other：其它
 
@@ -104,7 +104,7 @@ class IntentResult:
 
     @property
     def slots(self):
-        """Gets the slots of this IntentResult.
+        r"""Gets the slots of this IntentResult.
 
         slot数据结构
 
@@ -115,7 +115,7 @@ class IntentResult:
 
     @slots.setter
     def slots(self, slots):
-        """Sets the slots of this IntentResult.
+        r"""Sets the slots of this IntentResult.
 
         slot数据结构
 
@@ -126,7 +126,7 @@ class IntentResult:
 
     @property
     def text(self):
-        """Gets the text of this IntentResult.
+        r"""Gets the text of this IntentResult.
 
         返回待分析文本。
 
@@ -137,7 +137,7 @@ class IntentResult:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this IntentResult.
+        r"""Sets the text of this IntentResult.
 
         返回待分析文本。
 

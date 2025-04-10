@@ -26,7 +26,7 @@ class RestartStarrocksInstanceResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """RestartStarrocksInstanceResponse
+        r"""RestartStarrocksInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartStarrocksInstanceResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this RestartStarrocksInstanceResponse.
+        r"""Gets the workflow_id of this RestartStarrocksInstanceResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class RestartStarrocksInstanceResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this RestartStarrocksInstanceResponse.
+        r"""Sets the workflow_id of this RestartStarrocksInstanceResponse.
 
         工作流ID。
 

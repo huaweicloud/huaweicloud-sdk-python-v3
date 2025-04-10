@@ -27,7 +27,7 @@ class ApiOperPluginInfo:
     }
 
     def __init__(self, env_id=None, plugin_ids=None):
-        """ApiOperPluginInfo
+        r"""ApiOperPluginInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ApiOperPluginInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiOperPluginInfo.
+        r"""Gets the env_id of this ApiOperPluginInfo.
 
         绑定API的环境编码。
 
@@ -59,7 +59,7 @@ class ApiOperPluginInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiOperPluginInfo.
+        r"""Sets the env_id of this ApiOperPluginInfo.
 
         绑定API的环境编码。
 
@@ -70,7 +70,7 @@ class ApiOperPluginInfo:
 
     @property
     def plugin_ids(self):
-        """Gets the plugin_ids of this ApiOperPluginInfo.
+        r"""Gets the plugin_ids of this ApiOperPluginInfo.
 
         绑定的插件编码列表。
 
@@ -81,7 +81,7 @@ class ApiOperPluginInfo:
 
     @plugin_ids.setter
     def plugin_ids(self, plugin_ids):
-        """Sets the plugin_ids of this ApiOperPluginInfo.
+        r"""Sets the plugin_ids of this ApiOperPluginInfo.
 
         绑定的插件编码列表。
 

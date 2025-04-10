@@ -29,7 +29,7 @@ class UpdateClusterSettingRequest:
     }
 
     def __init__(self, cluster_id=None, x_language=None, body=None):
-        """UpdateClusterSettingRequest
+        r"""UpdateClusterSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateClusterSettingRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateClusterSettingRequest.
+        r"""Gets the cluster_id of this UpdateClusterSettingRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class UpdateClusterSettingRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateClusterSettingRequest.
+        r"""Sets the cluster_id of this UpdateClusterSettingRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class UpdateClusterSettingRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateClusterSettingRequest.
+        r"""Gets the x_language of this UpdateClusterSettingRequest.
 
         语言类型
 
@@ -89,7 +89,7 @@ class UpdateClusterSettingRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateClusterSettingRequest.
+        r"""Sets the x_language of this UpdateClusterSettingRequest.
 
         语言类型
 
@@ -100,7 +100,7 @@ class UpdateClusterSettingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClusterSettingRequest.
+        r"""Gets the body of this UpdateClusterSettingRequest.
 
         :return: The body of this UpdateClusterSettingRequest.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.HbaseModifySettingV2Req`
@@ -109,7 +109,7 @@ class UpdateClusterSettingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClusterSettingRequest.
+        r"""Sets the body of this UpdateClusterSettingRequest.
 
         :param body: The body of this UpdateClusterSettingRequest.
         :type body: :class:`huaweicloudsdkcloudtable.v2.HbaseModifySettingV2Req`

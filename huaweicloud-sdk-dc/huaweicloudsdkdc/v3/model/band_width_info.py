@@ -27,7 +27,7 @@ class BandWidthInfo:
     }
 
     def __init__(self, bandwidth_size=None, gcb_id=None):
-        """BandWidthInfo
+        r"""BandWidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BandWidthInfo:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this BandWidthInfo.
+        r"""Gets the bandwidth_size of this BandWidthInfo.
 
         带宽值
 
@@ -61,7 +61,7 @@ class BandWidthInfo:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this BandWidthInfo.
+        r"""Sets the bandwidth_size of this BandWidthInfo.
 
         带宽值
 
@@ -72,7 +72,7 @@ class BandWidthInfo:
 
     @property
     def gcb_id(self):
-        """Gets the gcb_id of this BandWidthInfo.
+        r"""Gets the gcb_id of this BandWidthInfo.
 
         购买全域互连带宽包ID
 
@@ -83,7 +83,7 @@ class BandWidthInfo:
 
     @gcb_id.setter
     def gcb_id(self, gcb_id):
-        """Sets the gcb_id of this BandWidthInfo.
+        r"""Sets the gcb_id of this BandWidthInfo.
 
         购买全域互连带宽包ID
 

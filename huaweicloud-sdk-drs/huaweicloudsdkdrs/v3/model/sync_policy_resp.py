@@ -31,7 +31,7 @@ class SyncPolicyResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """SyncPolicyResp
+        r"""SyncPolicyResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SyncPolicyResp:
 
     @property
     def id(self):
-        """Gets the id of this SyncPolicyResp.
+        r"""Gets the id of this SyncPolicyResp.
 
         任务ID
 
@@ -75,7 +75,7 @@ class SyncPolicyResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SyncPolicyResp.
+        r"""Sets the id of this SyncPolicyResp.
 
         任务ID
 
@@ -86,7 +86,7 @@ class SyncPolicyResp:
 
     @property
     def status(self):
-        """Gets the status of this SyncPolicyResp.
+        r"""Gets the status of this SyncPolicyResp.
 
         状态 - success：成功 - failed：失败
 
@@ -97,7 +97,7 @@ class SyncPolicyResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SyncPolicyResp.
+        r"""Sets the status of this SyncPolicyResp.
 
         状态 - success：成功 - failed：失败
 
@@ -108,7 +108,7 @@ class SyncPolicyResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this SyncPolicyResp.
+        r"""Gets the error_code of this SyncPolicyResp.
 
         错误码
 
@@ -119,7 +119,7 @@ class SyncPolicyResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this SyncPolicyResp.
+        r"""Sets the error_code of this SyncPolicyResp.
 
         错误码
 
@@ -130,7 +130,7 @@ class SyncPolicyResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this SyncPolicyResp.
+        r"""Gets the error_msg of this SyncPolicyResp.
 
         错误信息
 
@@ -141,7 +141,7 @@ class SyncPolicyResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this SyncPolicyResp.
+        r"""Sets the error_msg of this SyncPolicyResp.
 
         错误信息
 

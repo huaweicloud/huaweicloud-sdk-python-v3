@@ -26,7 +26,7 @@ class ExecuteRevokeDatabaseUserRoleResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """ExecuteRevokeDatabaseUserRoleResponse
+        r"""ExecuteRevokeDatabaseUserRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteRevokeDatabaseUserRoleResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this ExecuteRevokeDatabaseUserRoleResponse.
+        r"""Gets the resp of this ExecuteRevokeDatabaseUserRoleResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class ExecuteRevokeDatabaseUserRoleResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this ExecuteRevokeDatabaseUserRoleResponse.
+        r"""Sets the resp of this ExecuteRevokeDatabaseUserRoleResponse.
 
         调用正常时，返回“successful”。
 

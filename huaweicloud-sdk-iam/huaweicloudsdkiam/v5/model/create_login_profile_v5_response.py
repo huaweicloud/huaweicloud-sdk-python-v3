@@ -26,7 +26,7 @@ class CreateLoginProfileV5Response(SdkResponse):
     }
 
     def __init__(self, login_profile=None):
-        """CreateLoginProfileV5Response
+        r"""CreateLoginProfileV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateLoginProfileV5Response(SdkResponse):
 
     @property
     def login_profile(self):
-        """Gets the login_profile of this CreateLoginProfileV5Response.
+        r"""Gets the login_profile of this CreateLoginProfileV5Response.
 
         :return: The login_profile of this CreateLoginProfileV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.LoginProfile`
@@ -53,7 +53,7 @@ class CreateLoginProfileV5Response(SdkResponse):
 
     @login_profile.setter
     def login_profile(self, login_profile):
-        """Sets the login_profile of this CreateLoginProfileV5Response.
+        r"""Sets the login_profile of this CreateLoginProfileV5Response.
 
         :param login_profile: The login_profile of this CreateLoginProfileV5Response.
         :type login_profile: :class:`huaweicloudsdkiam.v5.LoginProfile`

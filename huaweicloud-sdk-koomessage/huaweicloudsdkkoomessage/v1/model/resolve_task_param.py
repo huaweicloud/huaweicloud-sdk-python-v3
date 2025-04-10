@@ -29,7 +29,7 @@ class ResolveTaskParam:
     }
 
     def __init__(self, cust_flag=None, dync_params=None, custom_url=None):
-        """ResolveTaskParam
+        r"""ResolveTaskParam
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResolveTaskParam:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this ResolveTaskParam.
+        r"""Gets the cust_flag of this ResolveTaskParam.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -67,7 +67,7 @@ class ResolveTaskParam:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this ResolveTaskParam.
+        r"""Sets the cust_flag of this ResolveTaskParam.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -78,7 +78,7 @@ class ResolveTaskParam:
 
     @property
     def dync_params(self):
-        """Gets the dync_params of this ResolveTaskParam.
+        r"""Gets the dync_params of this ResolveTaskParam.
 
         动态参数。 > 使用动态参数模板时，aim_code_type字段只能为individual。 
 
@@ -89,7 +89,7 @@ class ResolveTaskParam:
 
     @dync_params.setter
     def dync_params(self, dync_params):
-        """Sets the dync_params of this ResolveTaskParam.
+        r"""Sets the dync_params of this ResolveTaskParam.
 
         动态参数。 > 使用动态参数模板时，aim_code_type字段只能为individual。 
 
@@ -100,7 +100,7 @@ class ResolveTaskParam:
 
     @property
     def custom_url(self):
-        """Gets the custom_url of this ResolveTaskParam.
+        r"""Gets the custom_url of this ResolveTaskParam.
 
         自定义跳转地址。长度要求不超过2048。 > - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 > - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 > - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 
 
@@ -111,7 +111,7 @@ class ResolveTaskParam:
 
     @custom_url.setter
     def custom_url(self, custom_url):
-        """Sets the custom_url of this ResolveTaskParam.
+        r"""Sets the custom_url of this ResolveTaskParam.
 
         自定义跳转地址。长度要求不超过2048。 > - 未填时，终端用户点击短信原文中的短链后，跳转智能信息模板H5页 > - 已填时，终端用户点击短信原文中的短链后，跳转该字段对应的页面，填写时必须为http或https作为前缀 > - 使用自定义跳转链接功能请联系KooMessage运营人员进行域名备案 
 

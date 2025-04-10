@@ -25,7 +25,7 @@ class ShowAzDetailsRequest:
     }
 
     def __init__(self, availability_zone_id=None):
-        """ShowAzDetailsRequest
+        r"""ShowAzDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAzDetailsRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ShowAzDetailsRequest.
+        r"""Gets the availability_zone_id of this ShowAzDetailsRequest.
 
         可用分区ID。
 
@@ -53,7 +53,7 @@ class ShowAzDetailsRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ShowAzDetailsRequest.
+        r"""Sets the availability_zone_id of this ShowAzDetailsRequest.
 
         可用分区ID。
 

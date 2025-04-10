@@ -35,7 +35,7 @@ class VersionItem:
     }
 
     def __init__(self, id=None, min_version=None, status=None, updated=None, version=None, links=None):
-        """VersionItem
+        r"""VersionItem
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class VersionItem:
 
     @property
     def id(self):
-        """Gets the id of this VersionItem.
+        r"""Gets the id of this VersionItem.
 
         版本ID（版本号），如v2。
 
@@ -83,7 +83,7 @@ class VersionItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionItem.
+        r"""Sets the id of this VersionItem.
 
         版本ID（版本号），如v2。
 
@@ -94,7 +94,7 @@ class VersionItem:
 
     @property
     def min_version(self):
-        """Gets the min_version of this VersionItem.
+        r"""Gets the min_version of this VersionItem.
 
         若该版本API支持微版本，则返回支持的最小微版本号；若不支持微版本，则返回空。
 
@@ -105,7 +105,7 @@ class VersionItem:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this VersionItem.
+        r"""Sets the min_version of this VersionItem.
 
         若该版本API支持微版本，则返回支持的最小微版本号；若不支持微版本，则返回空。
 
@@ -116,7 +116,7 @@ class VersionItem:
 
     @property
     def status(self):
-        """Gets the status of this VersionItem.
+        r"""Gets the status of this VersionItem.
 
         版本状态，为如下3种：  CURRENT：表示该版本为主推版本。  SUPPORTED：表示为老版本，但是现在还继续支持。  DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -127,7 +127,7 @@ class VersionItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionItem.
+        r"""Sets the status of this VersionItem.
 
         版本状态，为如下3种：  CURRENT：表示该版本为主推版本。  SUPPORTED：表示为老版本，但是现在还继续支持。  DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -138,7 +138,7 @@ class VersionItem:
 
     @property
     def updated(self):
-        """Gets the updated of this VersionItem.
+        r"""Gets the updated of this VersionItem.
 
         版本发布时间，要求用UTC时间格式表示。如v2发布的时间2014-06-28T12:20:21Z。
 
@@ -149,7 +149,7 @@ class VersionItem:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this VersionItem.
+        r"""Sets the updated of this VersionItem.
 
         版本发布时间，要求用UTC时间格式表示。如v2发布的时间2014-06-28T12:20:21Z。
 
@@ -160,7 +160,7 @@ class VersionItem:
 
     @property
     def version(self):
-        """Gets the version of this VersionItem.
+        r"""Gets the version of this VersionItem.
 
         若该版本API支持微版本，则返回支持的最大微版本号；若不支持微版本，则返回空。
 
@@ -171,7 +171,7 @@ class VersionItem:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionItem.
+        r"""Sets the version of this VersionItem.
 
         若该版本API支持微版本，则返回支持的最大微版本号；若不支持微版本，则返回空。
 
@@ -182,7 +182,7 @@ class VersionItem:
 
     @property
     def links(self):
-        """Gets the links of this VersionItem.
+        r"""Gets the links of this VersionItem.
 
         API的URL地址。
 
@@ -193,7 +193,7 @@ class VersionItem:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VersionItem.
+        r"""Sets the links of this VersionItem.
 
         API的URL地址。
 

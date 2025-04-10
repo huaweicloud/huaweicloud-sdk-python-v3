@@ -27,7 +27,7 @@ class ContainerConfigsResDTO:
     }
 
     def __init__(self, host_network=None, container_port_list=None):
-        """ContainerConfigsResDTO
+        r"""ContainerConfigsResDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ContainerConfigsResDTO:
 
     @property
     def host_network(self):
-        """Gets the host_network of this ContainerConfigsResDTO.
+        r"""Gets the host_network of this ContainerConfigsResDTO.
 
         是否使用主机网络模式
 
@@ -61,7 +61,7 @@ class ContainerConfigsResDTO:
 
     @host_network.setter
     def host_network(self, host_network):
-        """Sets the host_network of this ContainerConfigsResDTO.
+        r"""Sets the host_network of this ContainerConfigsResDTO.
 
         是否使用主机网络模式
 
@@ -72,7 +72,7 @@ class ContainerConfigsResDTO:
 
     @property
     def container_port_list(self):
-        """Gets the container_port_list of this ContainerConfigsResDTO.
+        r"""Gets the container_port_list of this ContainerConfigsResDTO.
 
         容器端口映射值
 
@@ -83,7 +83,7 @@ class ContainerConfigsResDTO:
 
     @container_port_list.setter
     def container_port_list(self, container_port_list):
-        """Sets the container_port_list of this ContainerConfigsResDTO.
+        r"""Sets the container_port_list of this ContainerConfigsResDTO.
 
         容器端口映射值
 

@@ -35,7 +35,7 @@ class LogsTree:
     }
 
     def __init__(self, blob_id=None, commit=None, file_name=None, file_path=None, md5=None, type=None):
-        """LogsTree
+        r"""LogsTree
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LogsTree:
 
     @property
     def blob_id(self):
-        """Gets the blob_id of this LogsTree.
+        r"""Gets the blob_id of this LogsTree.
 
         存储块id
 
@@ -89,7 +89,7 @@ class LogsTree:
 
     @blob_id.setter
     def blob_id(self, blob_id):
-        """Sets the blob_id of this LogsTree.
+        r"""Sets the blob_id of this LogsTree.
 
         存储块id
 
@@ -100,7 +100,7 @@ class LogsTree:
 
     @property
     def commit(self):
-        """Gets the commit of this LogsTree.
+        r"""Gets the commit of this LogsTree.
 
         :return: The commit of this LogsTree.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Commit`
@@ -109,7 +109,7 @@ class LogsTree:
 
     @commit.setter
     def commit(self, commit):
-        """Sets the commit of this LogsTree.
+        r"""Sets the commit of this LogsTree.
 
         :param commit: The commit of this LogsTree.
         :type commit: :class:`huaweicloudsdkcodehub.v3.Commit`
@@ -118,7 +118,7 @@ class LogsTree:
 
     @property
     def file_name(self):
-        """Gets the file_name of this LogsTree.
+        r"""Gets the file_name of this LogsTree.
 
         文件名称
 
@@ -129,7 +129,7 @@ class LogsTree:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this LogsTree.
+        r"""Sets the file_name of this LogsTree.
 
         文件名称
 
@@ -140,7 +140,7 @@ class LogsTree:
 
     @property
     def file_path(self):
-        """Gets the file_path of this LogsTree.
+        r"""Gets the file_path of this LogsTree.
 
         文件路径
 
@@ -151,7 +151,7 @@ class LogsTree:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this LogsTree.
+        r"""Sets the file_path of this LogsTree.
 
         文件路径
 
@@ -162,7 +162,7 @@ class LogsTree:
 
     @property
     def md5(self):
-        """Gets the md5 of this LogsTree.
+        r"""Gets the md5 of this LogsTree.
 
         MD5
 
@@ -173,7 +173,7 @@ class LogsTree:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this LogsTree.
+        r"""Sets the md5 of this LogsTree.
 
         MD5
 
@@ -184,7 +184,7 @@ class LogsTree:
 
     @property
     def type(self):
-        """Gets the type of this LogsTree.
+        r"""Gets the type of this LogsTree.
 
         存储类型
 
@@ -195,7 +195,7 @@ class LogsTree:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LogsTree.
+        r"""Sets the type of this LogsTree.
 
         存储类型
 

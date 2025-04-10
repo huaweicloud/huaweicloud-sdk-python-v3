@@ -31,7 +31,7 @@ class WorkerGroupSpec:
     }
 
     def __init__(self, name=None, spec_code=None, min_replicas=None, max_replicas=None):
-        """WorkerGroupSpec
+        r"""WorkerGroupSpec
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WorkerGroupSpec:
 
     @property
     def name(self):
-        """Gets the name of this WorkerGroupSpec.
+        r"""Gets the name of this WorkerGroupSpec.
 
         名称
 
@@ -75,7 +75,7 @@ class WorkerGroupSpec:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkerGroupSpec.
+        r"""Sets the name of this WorkerGroupSpec.
 
         名称
 
@@ -86,7 +86,7 @@ class WorkerGroupSpec:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this WorkerGroupSpec.
+        r"""Gets the spec_code of this WorkerGroupSpec.
 
         资源规格，从规格列表查询获取。
 
@@ -97,7 +97,7 @@ class WorkerGroupSpec:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this WorkerGroupSpec.
+        r"""Sets the spec_code of this WorkerGroupSpec.
 
         资源规格，从规格列表查询获取。
 
@@ -108,7 +108,7 @@ class WorkerGroupSpec:
 
     @property
     def min_replicas(self):
-        """Gets the min_replicas of this WorkerGroupSpec.
+        r"""Gets the min_replicas of this WorkerGroupSpec.
 
         最小副本数
 
@@ -119,7 +119,7 @@ class WorkerGroupSpec:
 
     @min_replicas.setter
     def min_replicas(self, min_replicas):
-        """Sets the min_replicas of this WorkerGroupSpec.
+        r"""Sets the min_replicas of this WorkerGroupSpec.
 
         最小副本数
 
@@ -130,7 +130,7 @@ class WorkerGroupSpec:
 
     @property
     def max_replicas(self):
-        """Gets the max_replicas of this WorkerGroupSpec.
+        r"""Gets the max_replicas of this WorkerGroupSpec.
 
         最大副本数
 
@@ -141,7 +141,7 @@ class WorkerGroupSpec:
 
     @max_replicas.setter
     def max_replicas(self, max_replicas):
-        """Sets the max_replicas of this WorkerGroupSpec.
+        r"""Sets the max_replicas of this WorkerGroupSpec.
 
         最大副本数
 

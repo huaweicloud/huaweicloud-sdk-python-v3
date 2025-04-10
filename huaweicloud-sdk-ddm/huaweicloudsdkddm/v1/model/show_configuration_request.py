@@ -25,7 +25,7 @@ class ShowConfigurationRequest:
     }
 
     def __init__(self, config_id=None):
-        """ShowConfigurationRequest
+        r"""ShowConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ShowConfigurationRequest.
+        r"""Gets the config_id of this ShowConfigurationRequest.
 
         参数模板ID。
 
@@ -53,7 +53,7 @@ class ShowConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ShowConfigurationRequest.
+        r"""Sets the config_id of this ShowConfigurationRequest.
 
         参数模板ID。
 

@@ -27,7 +27,7 @@ class BatchCreateJobsAsyncRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchCreateJobsAsyncRequest
+        r"""BatchCreateJobsAsyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchCreateJobsAsyncRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchCreateJobsAsyncRequest.
+        r"""Gets the x_language of this BatchCreateJobsAsyncRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class BatchCreateJobsAsyncRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchCreateJobsAsyncRequest.
+        r"""Sets the x_language of this BatchCreateJobsAsyncRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class BatchCreateJobsAsyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateJobsAsyncRequest.
+        r"""Gets the body of this BatchCreateJobsAsyncRequest.
 
         :return: The body of this BatchCreateJobsAsyncRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchAsyncCreateJobReq`
@@ -81,7 +81,7 @@ class BatchCreateJobsAsyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateJobsAsyncRequest.
+        r"""Sets the body of this BatchCreateJobsAsyncRequest.
 
         :param body: The body of this BatchCreateJobsAsyncRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.BatchAsyncCreateJobReq`

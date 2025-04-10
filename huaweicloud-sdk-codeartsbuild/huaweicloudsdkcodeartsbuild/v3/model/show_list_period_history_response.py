@@ -28,7 +28,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
     }
 
     def __init__(self, total=None, history_records=None):
-        """ShowListPeriodHistoryResponse
+        r"""ShowListPeriodHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowListPeriodHistoryResponse.
+        r"""Gets the total of this ShowListPeriodHistoryResponse.
 
         记录总数
 
@@ -62,7 +62,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowListPeriodHistoryResponse.
+        r"""Sets the total of this ShowListPeriodHistoryResponse.
 
         记录总数
 
@@ -73,7 +73,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
 
     @property
     def history_records(self):
-        """Gets the history_records of this ShowListPeriodHistoryResponse.
+        r"""Gets the history_records of this ShowListPeriodHistoryResponse.
 
         构建历史列表
 
@@ -84,7 +84,7 @@ class ShowListPeriodHistoryResponse(SdkResponse):
 
     @history_records.setter
     def history_records(self, history_records):
-        """Sets the history_records of this ShowListPeriodHistoryResponse.
+        r"""Sets the history_records of this ShowListPeriodHistoryResponse.
 
         构建历史列表
 

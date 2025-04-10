@@ -27,7 +27,7 @@ class SearchDevicesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SearchDevicesRequest
+        r"""SearchDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchDevicesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SearchDevicesRequest.
+        r"""Gets the instance_id of this SearchDevicesRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -61,7 +61,7 @@ class SearchDevicesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SearchDevicesRequest.
+        r"""Sets the instance_id of this SearchDevicesRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -72,7 +72,7 @@ class SearchDevicesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchDevicesRequest.
+        r"""Gets the body of this SearchDevicesRequest.
 
         :return: The body of this SearchDevicesRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.SearchSql`
@@ -81,7 +81,7 @@ class SearchDevicesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchDevicesRequest.
+        r"""Sets the body of this SearchDevicesRequest.
 
         :param body: The body of this SearchDevicesRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.SearchSql`

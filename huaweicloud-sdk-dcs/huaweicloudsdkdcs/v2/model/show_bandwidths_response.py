@@ -32,7 +32,7 @@ class ShowBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None, max_bandwidth=None, allow_modify=None, group_bandwidths=None):
-        """ShowBandwidthsResponse
+        r"""ShowBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this ShowBandwidthsResponse.
+        r"""Gets the bandwidth of this ShowBandwidthsResponse.
 
         实例当前带宽(Mbit/s)。
 
@@ -76,7 +76,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this ShowBandwidthsResponse.
+        r"""Sets the bandwidth of this ShowBandwidthsResponse.
 
         实例当前带宽(Mbit/s)。
 
@@ -87,7 +87,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @property
     def max_bandwidth(self):
-        """Gets the max_bandwidth of this ShowBandwidthsResponse.
+        r"""Gets the max_bandwidth of this ShowBandwidthsResponse.
 
         实例最大带宽(Mbit/s)。
 
@@ -98,7 +98,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @max_bandwidth.setter
     def max_bandwidth(self, max_bandwidth):
-        """Sets the max_bandwidth of this ShowBandwidthsResponse.
+        r"""Sets the max_bandwidth of this ShowBandwidthsResponse.
 
         实例最大带宽(Mbit/s)。
 
@@ -109,7 +109,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @property
     def allow_modify(self):
-        """Gets the allow_modify of this ShowBandwidthsResponse.
+        r"""Gets the allow_modify of this ShowBandwidthsResponse.
 
         是否支持调带宽。
 
@@ -120,7 +120,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @allow_modify.setter
     def allow_modify(self, allow_modify):
-        """Sets the allow_modify of this ShowBandwidthsResponse.
+        r"""Sets the allow_modify of this ShowBandwidthsResponse.
 
         是否支持调带宽。
 
@@ -131,7 +131,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @property
     def group_bandwidths(self):
-        """Gets the group_bandwidths of this ShowBandwidthsResponse.
+        r"""Gets the group_bandwidths of this ShowBandwidthsResponse.
 
         分片带宽列表。
 
@@ -142,7 +142,7 @@ class ShowBandwidthsResponse(SdkResponse):
 
     @group_bandwidths.setter
     def group_bandwidths(self, group_bandwidths):
-        """Sets the group_bandwidths of this ShowBandwidthsResponse.
+        r"""Sets the group_bandwidths of this ShowBandwidthsResponse.
 
         分片带宽列表。
 

@@ -26,7 +26,7 @@ class CreateIterationV4Response(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateIterationV4Response
+        r"""CreateIterationV4Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateIterationV4Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateIterationV4Response.
+        r"""Gets the id of this CreateIterationV4Response.
 
         迭代id
 
@@ -55,7 +55,7 @@ class CreateIterationV4Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIterationV4Response.
+        r"""Sets the id of this CreateIterationV4Response.
 
         迭代id
 

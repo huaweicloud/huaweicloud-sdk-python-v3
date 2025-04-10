@@ -41,7 +41,7 @@ class ListInterfacesRequest:
     }
 
     def __init__(self, instance_id=None, filter=None, resource_name=None, resource_type=None, principal_source=None, principal_type=None, principal_name=None, limit=None, marker=None):
-        """ListInterfacesRequest
+        r"""ListInterfacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListInterfacesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInterfacesRequest.
+        r"""Gets the instance_id of this ListInterfacesRequest.
 
         instance id
 
@@ -109,7 +109,7 @@ class ListInterfacesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInterfacesRequest.
+        r"""Sets the instance_id of this ListInterfacesRequest.
 
         instance id
 
@@ -120,7 +120,7 @@ class ListInterfacesRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListInterfacesRequest.
+        r"""Gets the filter of this ListInterfacesRequest.
 
         expression
 
@@ -131,7 +131,7 @@ class ListInterfacesRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListInterfacesRequest.
+        r"""Sets the filter of this ListInterfacesRequest.
 
         expression
 
@@ -142,7 +142,7 @@ class ListInterfacesRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListInterfacesRequest.
+        r"""Gets the resource_name of this ListInterfacesRequest.
 
         元数据资源全名
 
@@ -153,7 +153,7 @@ class ListInterfacesRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListInterfacesRequest.
+        r"""Sets the resource_name of this ListInterfacesRequest.
 
         元数据资源全名
 
@@ -164,7 +164,7 @@ class ListInterfacesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListInterfacesRequest.
+        r"""Gets the resource_type of this ListInterfacesRequest.
 
         元数据资源类型
 
@@ -175,7 +175,7 @@ class ListInterfacesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListInterfacesRequest.
+        r"""Sets the resource_type of this ListInterfacesRequest.
 
         元数据资源类型
 
@@ -186,7 +186,7 @@ class ListInterfacesRequest:
 
     @property
     def principal_source(self):
-        """Gets the principal_source of this ListInterfacesRequest.
+        r"""Gets the principal_source of this ListInterfacesRequest.
 
         授权主体来源
 
@@ -197,7 +197,7 @@ class ListInterfacesRequest:
 
     @principal_source.setter
     def principal_source(self, principal_source):
-        """Sets the principal_source of this ListInterfacesRequest.
+        r"""Sets the principal_source of this ListInterfacesRequest.
 
         授权主体来源
 
@@ -208,7 +208,7 @@ class ListInterfacesRequest:
 
     @property
     def principal_type(self):
-        """Gets the principal_type of this ListInterfacesRequest.
+        r"""Gets the principal_type of this ListInterfacesRequest.
 
         授权主体类型
 
@@ -219,7 +219,7 @@ class ListInterfacesRequest:
 
     @principal_type.setter
     def principal_type(self, principal_type):
-        """Sets the principal_type of this ListInterfacesRequest.
+        r"""Sets the principal_type of this ListInterfacesRequest.
 
         授权主体类型
 
@@ -230,7 +230,7 @@ class ListInterfacesRequest:
 
     @property
     def principal_name(self):
-        """Gets the principal_name of this ListInterfacesRequest.
+        r"""Gets the principal_name of this ListInterfacesRequest.
 
         授权主体名称
 
@@ -241,7 +241,7 @@ class ListInterfacesRequest:
 
     @principal_name.setter
     def principal_name(self, principal_name):
-        """Sets the principal_name of this ListInterfacesRequest.
+        r"""Sets the principal_name of this ListInterfacesRequest.
 
         授权主体名称
 
@@ -252,7 +252,7 @@ class ListInterfacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInterfacesRequest.
+        r"""Gets the limit of this ListInterfacesRequest.
 
         limit
 
@@ -263,7 +263,7 @@ class ListInterfacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInterfacesRequest.
+        r"""Sets the limit of this ListInterfacesRequest.
 
         limit
 
@@ -274,7 +274,7 @@ class ListInterfacesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListInterfacesRequest.
+        r"""Gets the marker of this ListInterfacesRequest.
 
         page token
 
@@ -285,7 +285,7 @@ class ListInterfacesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListInterfacesRequest.
+        r"""Sets the marker of this ListInterfacesRequest.
 
         page token
 

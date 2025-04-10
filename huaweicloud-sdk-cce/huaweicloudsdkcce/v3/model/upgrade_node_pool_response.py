@@ -26,7 +26,7 @@ class UpgradeNodePoolResponse(SdkResponse):
     }
 
     def __init__(self, jobid=None):
-        """UpgradeNodePoolResponse
+        r"""UpgradeNodePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeNodePoolResponse(SdkResponse):
 
     @property
     def jobid(self):
-        """Gets the jobid of this UpgradeNodePoolResponse.
+        r"""Gets the jobid of this UpgradeNodePoolResponse.
 
         Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
 
@@ -55,7 +55,7 @@ class UpgradeNodePoolResponse(SdkResponse):
 
     @jobid.setter
     def jobid(self, jobid):
-        """Sets the jobid of this UpgradeNodePoolResponse.
+        r"""Sets the jobid of this UpgradeNodePoolResponse.
 
         Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
 

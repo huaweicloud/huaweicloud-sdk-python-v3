@@ -27,7 +27,7 @@ class LtsOperationTraceReq:
     }
 
     def __init__(self, enable_audit=None, audit_log_group_name=None):
-        """LtsOperationTraceReq
+        r"""LtsOperationTraceReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LtsOperationTraceReq:
 
     @property
     def enable_audit(self):
-        """Gets the enable_audit of this LtsOperationTraceReq.
+        r"""Gets the enable_audit of this LtsOperationTraceReq.
 
         是否开启图审计，默认“false”。
 
@@ -61,7 +61,7 @@ class LtsOperationTraceReq:
 
     @enable_audit.setter
     def enable_audit(self, enable_audit):
-        """Sets the enable_audit of this LtsOperationTraceReq.
+        r"""Sets the enable_audit of this LtsOperationTraceReq.
 
         是否开启图审计，默认“false”。
 
@@ -72,7 +72,7 @@ class LtsOperationTraceReq:
 
     @property
     def audit_log_group_name(self):
-        """Gets the audit_log_group_name of this LtsOperationTraceReq.
+        r"""Gets the audit_log_group_name of this LtsOperationTraceReq.
 
         LTS日志组名称。
 
@@ -83,7 +83,7 @@ class LtsOperationTraceReq:
 
     @audit_log_group_name.setter
     def audit_log_group_name(self, audit_log_group_name):
-        """Sets the audit_log_group_name of this LtsOperationTraceReq.
+        r"""Sets the audit_log_group_name of this LtsOperationTraceReq.
 
         LTS日志组名称。
 

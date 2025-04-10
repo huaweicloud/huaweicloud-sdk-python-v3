@@ -27,7 +27,7 @@ class UpdateEnhancedConnectionRequest:
     }
 
     def __init__(self, connection_id=None, body=None):
-        """UpdateEnhancedConnectionRequest
+        r"""UpdateEnhancedConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEnhancedConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this UpdateEnhancedConnectionRequest.
+        r"""Gets the connection_id of this UpdateEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -60,7 +60,7 @@ class UpdateEnhancedConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this UpdateEnhancedConnectionRequest.
+        r"""Sets the connection_id of this UpdateEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -71,7 +71,7 @@ class UpdateEnhancedConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnhancedConnectionRequest.
+        r"""Gets the body of this UpdateEnhancedConnectionRequest.
 
         :return: The body of this UpdateEnhancedConnectionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateEnhancedConnectionRequestBody`
@@ -80,7 +80,7 @@ class UpdateEnhancedConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnhancedConnectionRequest.
+        r"""Sets the body of this UpdateEnhancedConnectionRequest.
 
         :param body: The body of this UpdateEnhancedConnectionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateEnhancedConnectionRequestBody`

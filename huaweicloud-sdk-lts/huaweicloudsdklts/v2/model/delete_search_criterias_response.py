@@ -24,7 +24,7 @@ class DeleteSearchCriteriasResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSearchCriteriasResponse
+        r"""DeleteSearchCriteriasResponse
 
         The model defined in huaweicloud sdk
 

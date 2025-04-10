@@ -25,7 +25,7 @@ class NeutronShowSubnetRequest:
     }
 
     def __init__(self, subnet_id=None):
-        """NeutronShowSubnetRequest
+        r"""NeutronShowSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronShowSubnetRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NeutronShowSubnetRequest.
+        r"""Gets the subnet_id of this NeutronShowSubnetRequest.
 
         子网ID
 
@@ -53,7 +53,7 @@ class NeutronShowSubnetRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NeutronShowSubnetRequest.
+        r"""Sets the subnet_id of this NeutronShowSubnetRequest.
 
         子网ID
 

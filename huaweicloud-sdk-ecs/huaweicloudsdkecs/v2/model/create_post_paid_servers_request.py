@@ -28,7 +28,7 @@ class CreatePostPaidServersRequest:
     }
 
     def __init__(self, x_client_token=None, body=None):
-        """CreatePostPaidServersRequest
+        r"""CreatePostPaidServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreatePostPaidServersRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreatePostPaidServersRequest.
+        r"""Gets the x_client_token of this CreatePostPaidServersRequest.
 
         保证客户端请求幂等性的标识
 
@@ -62,7 +62,7 @@ class CreatePostPaidServersRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreatePostPaidServersRequest.
+        r"""Sets the x_client_token of this CreatePostPaidServersRequest.
 
         保证客户端请求幂等性的标识
 
@@ -73,7 +73,7 @@ class CreatePostPaidServersRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostPaidServersRequest.
+        r"""Gets the body of this CreatePostPaidServersRequest.
 
         :return: The body of this CreatePostPaidServersRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`
@@ -82,7 +82,7 @@ class CreatePostPaidServersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostPaidServersRequest.
+        r"""Sets the body of this CreatePostPaidServersRequest.
 
         :param body: The body of this CreatePostPaidServersRequest.
         :type body: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`

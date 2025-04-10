@@ -24,7 +24,7 @@ class UpdateOneClickAlarmNotificationsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateOneClickAlarmNotificationsResponse
+        r"""UpdateOneClickAlarmNotificationsResponse
 
         The model defined in huaweicloud sdk
 

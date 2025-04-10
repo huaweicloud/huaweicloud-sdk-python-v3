@@ -29,7 +29,7 @@ class ListAlarmsRequest:
     }
 
     def __init__(self, limit=None, order=None, start=None):
-        """ListAlarmsRequest
+        r"""ListAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAlarmsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmsRequest.
+        r"""Gets the limit of this ListAlarmsRequest.
 
         取值范围(0,100]，默认值为100  用于限制结果数据条数。
 
@@ -68,7 +68,7 @@ class ListAlarmsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmsRequest.
+        r"""Sets the limit of this ListAlarmsRequest.
 
         取值范围(0,100]，默认值为100  用于限制结果数据条数。
 
@@ -79,7 +79,7 @@ class ListAlarmsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListAlarmsRequest.
+        r"""Gets the order of this ListAlarmsRequest.
 
         用于标识结果排序方法。  取值说明，默认值为desc。  asc：升序 desc：降序
 
@@ -90,7 +90,7 @@ class ListAlarmsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListAlarmsRequest.
+        r"""Sets the order of this ListAlarmsRequest.
 
         用于标识结果排序方法。  取值说明，默认值为desc。  asc：升序 desc：降序
 
@@ -101,7 +101,7 @@ class ListAlarmsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListAlarmsRequest.
+        r"""Gets the start of this ListAlarmsRequest.
 
         分页起始值，内容为alarm_id。
 
@@ -112,7 +112,7 @@ class ListAlarmsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListAlarmsRequest.
+        r"""Sets the start of this ListAlarmsRequest.
 
         分页起始值，内容为alarm_id。
 

@@ -31,7 +31,7 @@ class PushDomainApplication:
     }
 
     def __init__(self, name=None, hls_fragment=None, hls_ts_count=None, hls_min_frags=None):
-        """PushDomainApplication
+        r"""PushDomainApplication
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PushDomainApplication:
 
     @property
     def name(self):
-        """Gets the name of this PushDomainApplication.
+        r"""Gets the name of this PushDomainApplication.
 
         应用名，默认为live
 
@@ -75,7 +75,7 @@ class PushDomainApplication:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PushDomainApplication.
+        r"""Sets the name of this PushDomainApplication.
 
         应用名，默认为live
 
@@ -86,7 +86,7 @@ class PushDomainApplication:
 
     @property
     def hls_fragment(self):
-        """Gets the hls_fragment of this PushDomainApplication.
+        r"""Gets the hls_fragment of this PushDomainApplication.
 
         HLS切片时长，单位：s。
 
@@ -97,7 +97,7 @@ class PushDomainApplication:
 
     @hls_fragment.setter
     def hls_fragment(self, hls_fragment):
-        """Sets the hls_fragment of this PushDomainApplication.
+        r"""Sets the hls_fragment of this PushDomainApplication.
 
         HLS切片时长，单位：s。
 
@@ -108,7 +108,7 @@ class PushDomainApplication:
 
     @property
     def hls_ts_count(self):
-        """Gets the hls_ts_count of this PushDomainApplication.
+        r"""Gets the hls_ts_count of this PushDomainApplication.
 
         每个M3U8文件内ts切片个数
 
@@ -119,7 +119,7 @@ class PushDomainApplication:
 
     @hls_ts_count.setter
     def hls_ts_count(self, hls_ts_count):
-        """Sets the hls_ts_count of this PushDomainApplication.
+        r"""Sets the hls_ts_count of this PushDomainApplication.
 
         每个M3U8文件内ts切片个数
 
@@ -130,7 +130,7 @@ class PushDomainApplication:
 
     @property
     def hls_min_frags(self):
-        """Gets the hls_min_frags of this PushDomainApplication.
+        r"""Gets the hls_min_frags of this PushDomainApplication.
 
         每个M3U8文件内最小ts分片数
 
@@ -141,7 +141,7 @@ class PushDomainApplication:
 
     @hls_min_frags.setter
     def hls_min_frags(self, hls_min_frags):
-        """Sets the hls_min_frags of this PushDomainApplication.
+        r"""Sets the hls_min_frags of this PushDomainApplication.
 
         每个M3U8文件内最小ts分片数
 

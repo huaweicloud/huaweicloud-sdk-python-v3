@@ -31,7 +31,7 @@ class LoadBalancerStatusHealthMonitor:
     }
 
     def __init__(self, type=None, id=None, name=None, provisioning_status=None):
-        """LoadBalancerStatusHealthMonitor
+        r"""LoadBalancerStatusHealthMonitor
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @property
     def type(self):
-        """Gets the type of this LoadBalancerStatusHealthMonitor.
+        r"""Gets the type of this LoadBalancerStatusHealthMonitor.
 
         协议类型。取值：TCP、UDP_CONNECT或HTTP。
 
@@ -75,7 +75,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LoadBalancerStatusHealthMonitor.
+        r"""Sets the type of this LoadBalancerStatusHealthMonitor.
 
         协议类型。取值：TCP、UDP_CONNECT或HTTP。
 
@@ -86,7 +86,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerStatusHealthMonitor.
+        r"""Gets the id of this LoadBalancerStatusHealthMonitor.
 
         健康检查器ID。
 
@@ -97,7 +97,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerStatusHealthMonitor.
+        r"""Sets the id of this LoadBalancerStatusHealthMonitor.
 
         健康检查器ID。
 
@@ -108,7 +108,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @property
     def name(self):
-        """Gets the name of this LoadBalancerStatusHealthMonitor.
+        r"""Gets the name of this LoadBalancerStatusHealthMonitor.
 
         健康检查器名称。
 
@@ -119,7 +119,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadBalancerStatusHealthMonitor.
+        r"""Sets the name of this LoadBalancerStatusHealthMonitor.
 
         健康检查器名称。
 
@@ -130,7 +130,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancerStatusHealthMonitor.
+        r"""Gets the provisioning_status of this LoadBalancerStatusHealthMonitor.
 
         健康检查器的配置状态。取值：ACTIVE表示使用中。
 
@@ -141,7 +141,7 @@ class LoadBalancerStatusHealthMonitor:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancerStatusHealthMonitor.
+        r"""Sets the provisioning_status of this LoadBalancerStatusHealthMonitor.
 
         健康检查器的配置状态。取值：ACTIVE表示使用中。
 

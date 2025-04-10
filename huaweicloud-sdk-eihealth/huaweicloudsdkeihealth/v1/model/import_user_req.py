@@ -29,7 +29,7 @@ class ImportUserReq:
     }
 
     def __init__(self, iam_user_id=None, role=None, settings=None):
-        """ImportUserReq
+        r"""ImportUserReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportUserReq:
 
     @property
     def iam_user_id(self):
-        """Gets the iam_user_id of this ImportUserReq.
+        r"""Gets the iam_user_id of this ImportUserReq.
 
         IAM用户id
 
@@ -66,7 +66,7 @@ class ImportUserReq:
 
     @iam_user_id.setter
     def iam_user_id(self, iam_user_id):
-        """Sets the iam_user_id of this ImportUserReq.
+        r"""Sets the iam_user_id of this ImportUserReq.
 
         IAM用户id
 
@@ -77,7 +77,7 @@ class ImportUserReq:
 
     @property
     def role(self):
-        """Gets the role of this ImportUserReq.
+        r"""Gets the role of this ImportUserReq.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -88,7 +88,7 @@ class ImportUserReq:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ImportUserReq.
+        r"""Sets the role of this ImportUserReq.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -99,7 +99,7 @@ class ImportUserReq:
 
     @property
     def settings(self):
-        """Gets the settings of this ImportUserReq.
+        r"""Gets the settings of this ImportUserReq.
 
         :return: The settings of this ImportUserReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
@@ -108,7 +108,7 @@ class ImportUserReq:
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this ImportUserReq.
+        r"""Sets the settings of this ImportUserReq.
 
         :param settings: The settings of this ImportUserReq.
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`

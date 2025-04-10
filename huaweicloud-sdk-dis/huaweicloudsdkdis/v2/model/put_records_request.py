@@ -29,7 +29,7 @@ class PutRecordsRequest:
     }
 
     def __init__(self, stream_name=None, stream_id=None, records=None):
-        """PutRecordsRequest
+        r"""PutRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PutRecordsRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this PutRecordsRequest.
+        r"""Gets the stream_name of this PutRecordsRequest.
 
         已创建的通道名称。
 
@@ -66,7 +66,7 @@ class PutRecordsRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this PutRecordsRequest.
+        r"""Sets the stream_name of this PutRecordsRequest.
 
         已创建的通道名称。
 
@@ -77,7 +77,7 @@ class PutRecordsRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this PutRecordsRequest.
+        r"""Gets the stream_id of this PutRecordsRequest.
 
         通道唯一标识符。  当使用stream_name没有找到对应通道且stream_id不为空时，会使用stream_id去查找通道。  说明：  上传数据到被授权的通道时，必须配置此参数。
 
@@ -88,7 +88,7 @@ class PutRecordsRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this PutRecordsRequest.
+        r"""Sets the stream_id of this PutRecordsRequest.
 
         通道唯一标识符。  当使用stream_name没有找到对应通道且stream_id不为空时，会使用stream_id去查找通道。  说明：  上传数据到被授权的通道时，必须配置此参数。
 
@@ -99,7 +99,7 @@ class PutRecordsRequest:
 
     @property
     def records(self):
-        """Gets the records of this PutRecordsRequest.
+        r"""Gets the records of this PutRecordsRequest.
 
         待上传的记录列表。
 
@@ -110,7 +110,7 @@ class PutRecordsRequest:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this PutRecordsRequest.
+        r"""Sets the records of this PutRecordsRequest.
 
         待上传的记录列表。
 

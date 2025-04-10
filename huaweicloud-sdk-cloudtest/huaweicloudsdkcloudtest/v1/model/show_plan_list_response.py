@@ -26,7 +26,7 @@ class ShowPlanListResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowPlanListResponse
+        r"""ShowPlanListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPlanListResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowPlanListResponse.
+        r"""Gets the body of this ShowPlanListResponse.
 
         项目下查询测试计划列表返回结构
 
@@ -55,7 +55,7 @@ class ShowPlanListResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPlanListResponse.
+        r"""Sets the body of this ShowPlanListResponse.
 
         项目下查询测试计划列表返回结构
 

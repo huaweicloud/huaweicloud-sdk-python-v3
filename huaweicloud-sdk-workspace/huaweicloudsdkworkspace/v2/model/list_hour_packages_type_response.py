@@ -28,7 +28,7 @@ class ListHourPackagesTypeResponse(SdkResponse):
     }
 
     def __init__(self, hour_packages=None, total_count=None):
-        """ListHourPackagesTypeResponse
+        r"""ListHourPackagesTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHourPackagesTypeResponse(SdkResponse):
 
     @property
     def hour_packages(self):
-        """Gets the hour_packages of this ListHourPackagesTypeResponse.
+        r"""Gets the hour_packages of this ListHourPackagesTypeResponse.
 
         可订购小时包类型列表。
 
@@ -62,7 +62,7 @@ class ListHourPackagesTypeResponse(SdkResponse):
 
     @hour_packages.setter
     def hour_packages(self, hour_packages):
-        """Sets the hour_packages of this ListHourPackagesTypeResponse.
+        r"""Sets the hour_packages of this ListHourPackagesTypeResponse.
 
         可订购小时包类型列表。
 
@@ -73,7 +73,7 @@ class ListHourPackagesTypeResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListHourPackagesTypeResponse.
+        r"""Gets the total_count of this ListHourPackagesTypeResponse.
 
         云桌面支持的可用分区列表总数。
 
@@ -84,7 +84,7 @@ class ListHourPackagesTypeResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListHourPackagesTypeResponse.
+        r"""Sets the total_count of this ListHourPackagesTypeResponse.
 
         云桌面支持的可用分区列表总数。
 

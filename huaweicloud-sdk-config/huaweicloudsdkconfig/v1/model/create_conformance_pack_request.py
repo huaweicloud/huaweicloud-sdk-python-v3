@@ -27,7 +27,7 @@ class CreateConformancePackRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateConformancePackRequest
+        r"""CreateConformancePackRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateConformancePackRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateConformancePackRequest.
+        r"""Gets the x_language of this CreateConformancePackRequest.
 
         合规包信息语言，默认为\"en-us\"英文
 
@@ -61,7 +61,7 @@ class CreateConformancePackRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateConformancePackRequest.
+        r"""Sets the x_language of this CreateConformancePackRequest.
 
         合规包信息语言，默认为\"en-us\"英文
 
@@ -72,7 +72,7 @@ class CreateConformancePackRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConformancePackRequest.
+        r"""Gets the body of this CreateConformancePackRequest.
 
         :return: The body of this CreateConformancePackRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.ConformancePackRequestBody`
@@ -81,7 +81,7 @@ class CreateConformancePackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConformancePackRequest.
+        r"""Sets the body of this CreateConformancePackRequest.
 
         :param body: The body of this CreateConformancePackRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.ConformancePackRequestBody`

@@ -28,7 +28,7 @@ class CreateFactoryEnvResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, status_code=None):
-        """CreateFactoryEnvResponse
+        r"""CreateFactoryEnvResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateFactoryEnvResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateFactoryEnvResponse.
+        r"""Gets the is_success of this CreateFactoryEnvResponse.
 
         :return: The is_success of this CreateFactoryEnvResponse.
         :rtype: bool
@@ -60,7 +60,7 @@ class CreateFactoryEnvResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateFactoryEnvResponse.
+        r"""Sets the is_success of this CreateFactoryEnvResponse.
 
         :param is_success: The is_success of this CreateFactoryEnvResponse.
         :type is_success: bool
@@ -69,7 +69,7 @@ class CreateFactoryEnvResponse(SdkResponse):
 
     @property
     def status_code(self):
-        """Gets the status_code of this CreateFactoryEnvResponse.
+        r"""Gets the status_code of this CreateFactoryEnvResponse.
 
         :return: The status_code of this CreateFactoryEnvResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class CreateFactoryEnvResponse(SdkResponse):
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this CreateFactoryEnvResponse.
+        r"""Sets the status_code of this CreateFactoryEnvResponse.
 
         :param status_code: The status_code of this CreateFactoryEnvResponse.
         :type status_code: int

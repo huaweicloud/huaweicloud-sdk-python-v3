@@ -27,7 +27,7 @@ class Task:
     }
 
     def __init__(self, id=None, name=None):
-        """Task
+        r"""Task
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Task:
 
     @property
     def id(self):
-        """Gets the id of this Task.
+        r"""Gets the id of this Task.
 
         任务id
 
@@ -61,7 +61,7 @@ class Task:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Task.
+        r"""Sets the id of this Task.
 
         任务id
 
@@ -72,7 +72,7 @@ class Task:
 
     @property
     def name(self):
-        """Gets the name of this Task.
+        r"""Gets the name of this Task.
 
         任务名称
 
@@ -83,7 +83,7 @@ class Task:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Task.
+        r"""Sets the name of this Task.
 
         任务名称
 

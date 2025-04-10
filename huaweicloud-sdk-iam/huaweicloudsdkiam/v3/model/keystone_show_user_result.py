@@ -43,7 +43,7 @@ class KeystoneShowUserResult:
     }
 
     def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, access_mode=None):
-        """KeystoneShowUserResult
+        r"""KeystoneShowUserResult
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class KeystoneShowUserResult:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this KeystoneShowUserResult.
+        r"""Gets the pwd_status of this KeystoneShowUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -111,7 +111,7 @@ class KeystoneShowUserResult:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this KeystoneShowUserResult.
+        r"""Sets the pwd_status of this KeystoneShowUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -122,7 +122,7 @@ class KeystoneShowUserResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneShowUserResult.
+        r"""Gets the domain_id of this KeystoneShowUserResult.
 
         IAM用户所属账号ID。
 
@@ -133,7 +133,7 @@ class KeystoneShowUserResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneShowUserResult.
+        r"""Sets the domain_id of this KeystoneShowUserResult.
 
         IAM用户所属账号ID。
 
@@ -144,7 +144,7 @@ class KeystoneShowUserResult:
 
     @property
     def last_project_id(self):
-        """Gets the last_project_id of this KeystoneShowUserResult.
+        r"""Gets the last_project_id of this KeystoneShowUserResult.
 
         IAM用户退出系统前，在控制台最后访问的项目ID。
 
@@ -155,7 +155,7 @@ class KeystoneShowUserResult:
 
     @last_project_id.setter
     def last_project_id(self, last_project_id):
-        """Sets the last_project_id of this KeystoneShowUserResult.
+        r"""Sets the last_project_id of this KeystoneShowUserResult.
 
         IAM用户退出系统前，在控制台最后访问的项目ID。
 
@@ -166,7 +166,7 @@ class KeystoneShowUserResult:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneShowUserResult.
+        r"""Gets the name of this KeystoneShowUserResult.
 
         IAM用户名。
 
@@ -177,7 +177,7 @@ class KeystoneShowUserResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneShowUserResult.
+        r"""Sets the name of this KeystoneShowUserResult.
 
         IAM用户名。
 
@@ -188,7 +188,7 @@ class KeystoneShowUserResult:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneShowUserResult.
+        r"""Gets the description of this KeystoneShowUserResult.
 
         IAM用户描述信息。
 
@@ -199,7 +199,7 @@ class KeystoneShowUserResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneShowUserResult.
+        r"""Sets the description of this KeystoneShowUserResult.
 
         IAM用户描述信息。
 
@@ -210,7 +210,7 @@ class KeystoneShowUserResult:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this KeystoneShowUserResult.
+        r"""Gets the password_expires_at of this KeystoneShowUserResult.
 
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -221,7 +221,7 @@ class KeystoneShowUserResult:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this KeystoneShowUserResult.
+        r"""Sets the password_expires_at of this KeystoneShowUserResult.
 
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -232,7 +232,7 @@ class KeystoneShowUserResult:
 
     @property
     def links(self):
-        """Gets the links of this KeystoneShowUserResult.
+        r"""Gets the links of this KeystoneShowUserResult.
 
         :return: The links of this KeystoneShowUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -241,7 +241,7 @@ class KeystoneShowUserResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneShowUserResult.
+        r"""Sets the links of this KeystoneShowUserResult.
 
         :param links: The links of this KeystoneShowUserResult.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -250,7 +250,7 @@ class KeystoneShowUserResult:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneShowUserResult.
+        r"""Gets the id of this KeystoneShowUserResult.
 
         IAM用户ID。
 
@@ -261,7 +261,7 @@ class KeystoneShowUserResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneShowUserResult.
+        r"""Sets the id of this KeystoneShowUserResult.
 
         IAM用户ID。
 
@@ -272,7 +272,7 @@ class KeystoneShowUserResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneShowUserResult.
+        r"""Gets the enabled of this KeystoneShowUserResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
@@ -283,7 +283,7 @@ class KeystoneShowUserResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneShowUserResult.
+        r"""Sets the enabled of this KeystoneShowUserResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
@@ -294,7 +294,7 @@ class KeystoneShowUserResult:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this KeystoneShowUserResult.
+        r"""Gets the access_mode of this KeystoneShowUserResult.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -305,7 +305,7 @@ class KeystoneShowUserResult:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this KeystoneShowUserResult.
+        r"""Sets the access_mode of this KeystoneShowUserResult.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 

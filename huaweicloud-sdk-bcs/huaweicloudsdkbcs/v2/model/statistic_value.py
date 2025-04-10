@@ -27,7 +27,7 @@ class StatisticValue:
     }
 
     def __init__(self, statistic=None, value=None):
-        """StatisticValue
+        r"""StatisticValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatisticValue:
 
     @property
     def statistic(self):
-        """Gets the statistic of this StatisticValue.
+        r"""Gets the statistic of this StatisticValue.
 
         统计方式。
 
@@ -61,7 +61,7 @@ class StatisticValue:
 
     @statistic.setter
     def statistic(self, statistic):
-        """Sets the statistic of this StatisticValue.
+        r"""Sets the statistic of this StatisticValue.
 
         统计方式。
 
@@ -72,7 +72,7 @@ class StatisticValue:
 
     @property
     def value(self):
-        """Gets the value of this StatisticValue.
+        r"""Gets the value of this StatisticValue.
 
         统计结果。
 
@@ -83,7 +83,7 @@ class StatisticValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StatisticValue.
+        r"""Sets the value of this StatisticValue.
 
         统计结果。
 

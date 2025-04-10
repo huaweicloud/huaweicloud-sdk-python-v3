@@ -35,7 +35,7 @@ class IefEvent:
     }
 
     def __init__(self, event_type=None, operation=None, timestamp=None, topic=None, name=None, attributes=None):
-        """IefEvent
+        r"""IefEvent
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class IefEvent:
 
     @property
     def event_type(self):
-        """Gets the event_type of this IefEvent.
+        r"""Gets the event_type of this IefEvent.
 
         资源类型
 
@@ -84,7 +84,7 @@ class IefEvent:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this IefEvent.
+        r"""Sets the event_type of this IefEvent.
 
         资源类型
 
@@ -95,7 +95,7 @@ class IefEvent:
 
     @property
     def operation(self):
-        """Gets the operation of this IefEvent.
+        r"""Gets the operation of this IefEvent.
 
         资源的操作类型
 
@@ -106,7 +106,7 @@ class IefEvent:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this IefEvent.
+        r"""Sets the operation of this IefEvent.
 
         资源的操作类型
 
@@ -117,7 +117,7 @@ class IefEvent:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this IefEvent.
+        r"""Gets the timestamp of this IefEvent.
 
         事件产生的时间戳
 
@@ -128,7 +128,7 @@ class IefEvent:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this IefEvent.
+        r"""Sets the timestamp of this IefEvent.
 
         事件产生的时间戳
 
@@ -139,7 +139,7 @@ class IefEvent:
 
     @property
     def topic(self):
-        """Gets the topic of this IefEvent.
+        r"""Gets the topic of this IefEvent.
 
         消息发送的Topic
 
@@ -150,7 +150,7 @@ class IefEvent:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this IefEvent.
+        r"""Sets the topic of this IefEvent.
 
         消息发送的Topic
 
@@ -161,7 +161,7 @@ class IefEvent:
 
     @property
     def name(self):
-        """Gets the name of this IefEvent.
+        r"""Gets the name of this IefEvent.
 
         资源名称
 
@@ -172,7 +172,7 @@ class IefEvent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IefEvent.
+        r"""Sets the name of this IefEvent.
 
         资源名称
 
@@ -183,7 +183,7 @@ class IefEvent:
 
     @property
     def attributes(self):
-        """Gets the attributes of this IefEvent.
+        r"""Gets the attributes of this IefEvent.
 
         资源的属性
 
@@ -194,7 +194,7 @@ class IefEvent:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this IefEvent.
+        r"""Sets the attributes of this IefEvent.
 
         资源的属性
 

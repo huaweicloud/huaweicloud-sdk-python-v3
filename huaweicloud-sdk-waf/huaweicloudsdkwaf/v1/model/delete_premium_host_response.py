@@ -46,7 +46,7 @@ class DeletePremiumHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostname=None, extend=None, region=None, flag=None, description=None, policyid=None, protect_status=None, access_status=None, web_tag=None, host_id=None):
-        """DeletePremiumHostResponse
+        r"""DeletePremiumHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeletePremiumHostResponse.
+        r"""Gets the id of this DeletePremiumHostResponse.
 
         域名id
 
@@ -125,7 +125,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeletePremiumHostResponse.
+        r"""Sets the id of this DeletePremiumHostResponse.
 
         域名id
 
@@ -136,7 +136,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this DeletePremiumHostResponse.
+        r"""Gets the hostname of this DeletePremiumHostResponse.
 
         域名
 
@@ -147,7 +147,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this DeletePremiumHostResponse.
+        r"""Sets the hostname of this DeletePremiumHostResponse.
 
         域名
 
@@ -158,7 +158,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this DeletePremiumHostResponse.
+        r"""Gets the extend of this DeletePremiumHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -169,7 +169,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this DeletePremiumHostResponse.
+        r"""Sets the extend of this DeletePremiumHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -180,7 +180,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this DeletePremiumHostResponse.
+        r"""Gets the region of this DeletePremiumHostResponse.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -191,7 +191,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DeletePremiumHostResponse.
+        r"""Sets the region of this DeletePremiumHostResponse.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -202,7 +202,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this DeletePremiumHostResponse.
+        r"""Gets the flag of this DeletePremiumHostResponse.
 
         :return: The flag of this DeletePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -211,7 +211,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this DeletePremiumHostResponse.
+        r"""Sets the flag of this DeletePremiumHostResponse.
 
         :param flag: The flag of this DeletePremiumHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -220,7 +220,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeletePremiumHostResponse.
+        r"""Gets the description of this DeletePremiumHostResponse.
 
         域名描述
 
@@ -231,7 +231,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeletePremiumHostResponse.
+        r"""Sets the description of this DeletePremiumHostResponse.
 
         域名描述
 
@@ -242,7 +242,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this DeletePremiumHostResponse.
+        r"""Gets the policyid of this DeletePremiumHostResponse.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -253,7 +253,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this DeletePremiumHostResponse.
+        r"""Sets the policyid of this DeletePremiumHostResponse.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -264,7 +264,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this DeletePremiumHostResponse.
+        r"""Gets the protect_status of this DeletePremiumHostResponse.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -275,7 +275,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this DeletePremiumHostResponse.
+        r"""Sets the protect_status of this DeletePremiumHostResponse.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -286,7 +286,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this DeletePremiumHostResponse.
+        r"""Gets the access_status of this DeletePremiumHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -297,7 +297,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this DeletePremiumHostResponse.
+        r"""Sets the access_status of this DeletePremiumHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -308,7 +308,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this DeletePremiumHostResponse.
+        r"""Gets the web_tag of this DeletePremiumHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -319,7 +319,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this DeletePremiumHostResponse.
+        r"""Sets the web_tag of this DeletePremiumHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -330,7 +330,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @property
     def host_id(self):
-        """Gets the host_id of this DeletePremiumHostResponse.
+        r"""Gets the host_id of this DeletePremiumHostResponse.
 
         域名id，和id的值是一样的，属于冗余字段
 
@@ -341,7 +341,7 @@ class DeletePremiumHostResponse(SdkResponse):
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DeletePremiumHostResponse.
+        r"""Sets the host_id of this DeletePremiumHostResponse.
 
         域名id，和id的值是一样的，属于冗余字段
 

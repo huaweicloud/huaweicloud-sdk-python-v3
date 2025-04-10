@@ -27,7 +27,7 @@ class UploadResourcesRequestBody:
     }
 
     def __init__(self, paths=None, group=None):
-        """UploadResourcesRequestBody
+        r"""UploadResourcesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UploadResourcesRequestBody:
 
     @property
     def paths(self):
-        """Gets the paths of this UploadResourcesRequestBody.
+        r"""Gets the paths of this UploadResourcesRequestBody.
 
         用户OBS对象路径列表，OBS对象路径为OBS对象URL。
 
@@ -59,7 +59,7 @@ class UploadResourcesRequestBody:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this UploadResourcesRequestBody.
+        r"""Sets the paths of this UploadResourcesRequestBody.
 
         用户OBS对象路径列表，OBS对象路径为OBS对象URL。
 
@@ -70,7 +70,7 @@ class UploadResourcesRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this UploadResourcesRequestBody.
+        r"""Gets the group of this UploadResourcesRequestBody.
 
         所属资源分组名。
 
@@ -81,7 +81,7 @@ class UploadResourcesRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UploadResourcesRequestBody.
+        r"""Sets the group of this UploadResourcesRequestBody.
 
         所属资源分组名。
 

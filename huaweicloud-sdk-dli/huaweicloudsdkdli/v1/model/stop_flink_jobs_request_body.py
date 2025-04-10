@@ -27,7 +27,7 @@ class StopFlinkJobsRequestBody:
     }
 
     def __init__(self, trigger_savepoint=None, job_ids=None):
-        """StopFlinkJobsRequestBody
+        r"""StopFlinkJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopFlinkJobsRequestBody:
 
     @property
     def trigger_savepoint(self):
-        """Gets the trigger_savepoint of this StopFlinkJobsRequestBody.
+        r"""Gets the trigger_savepoint of this StopFlinkJobsRequestBody.
 
         在停止作业之前，用户可以选择是否对作业创建保存点，保存作业的状态信息。类型为boolean。  当triggerSavePoint为true时，表示创建保存点。 当triggerSavePoint为false时，表示不创建保存点。默认为false。
 
@@ -60,7 +60,7 @@ class StopFlinkJobsRequestBody:
 
     @trigger_savepoint.setter
     def trigger_savepoint(self, trigger_savepoint):
-        """Sets the trigger_savepoint of this StopFlinkJobsRequestBody.
+        r"""Sets the trigger_savepoint of this StopFlinkJobsRequestBody.
 
         在停止作业之前，用户可以选择是否对作业创建保存点，保存作业的状态信息。类型为boolean。  当triggerSavePoint为true时，表示创建保存点。 当triggerSavePoint为false时，表示不创建保存点。默认为false。
 
@@ -71,7 +71,7 @@ class StopFlinkJobsRequestBody:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this StopFlinkJobsRequestBody.
+        r"""Gets the job_ids of this StopFlinkJobsRequestBody.
 
         
 
@@ -82,7 +82,7 @@ class StopFlinkJobsRequestBody:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this StopFlinkJobsRequestBody.
+        r"""Sets the job_ids of this StopFlinkJobsRequestBody.
 
         
 

@@ -32,7 +32,7 @@ class GlanceListImagesResponse(SdkResponse):
     }
 
     def __init__(self, first=None, images=None, schema=None, next=None):
-        """GlanceListImagesResponse
+        r"""GlanceListImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @property
     def first(self):
-        """Gets the first of this GlanceListImagesResponse.
+        r"""Gets the first of this GlanceListImagesResponse.
 
         查询首页的URL。
 
@@ -76,7 +76,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @first.setter
     def first(self, first):
-        """Sets the first of this GlanceListImagesResponse.
+        r"""Sets the first of this GlanceListImagesResponse.
 
         查询首页的URL。
 
@@ -87,7 +87,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @property
     def images(self):
-        """Gets the images of this GlanceListImagesResponse.
+        r"""Gets the images of this GlanceListImagesResponse.
 
         资源类型。
 
@@ -98,7 +98,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @images.setter
     def images(self, images):
-        """Sets the images of this GlanceListImagesResponse.
+        r"""Sets the images of this GlanceListImagesResponse.
 
         资源类型。
 
@@ -109,7 +109,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceListImagesResponse.
+        r"""Gets the schema of this GlanceListImagesResponse.
 
         描述镜像列表模式的URL。
 
@@ -120,7 +120,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceListImagesResponse.
+        r"""Sets the schema of this GlanceListImagesResponse.
 
         描述镜像列表模式的URL。
 
@@ -131,7 +131,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @property
     def next(self):
-        """Gets the next of this GlanceListImagesResponse.
+        r"""Gets the next of this GlanceListImagesResponse.
 
         查询下一页的URL。当查询镜像列表最后一页时，不存在next。
 
@@ -142,7 +142,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     @next.setter
     def next(self, next):
-        """Sets the next of this GlanceListImagesResponse.
+        r"""Sets the next of this GlanceListImagesResponse.
 
         查询下一页的URL。当查询镜像列表最后一页时，不存在next。
 

@@ -26,7 +26,7 @@ class ChangeNodesStartStopStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ChangeNodesStartStopStatusResponse
+        r"""ChangeNodesStartStopStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeNodesStartStopStatusResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ChangeNodesStartStopStatusResponse.
+        r"""Gets the body of this ChangeNodesStartStopStatusResponse.
 
         :return: The body of this ChangeNodesStartStopStatusResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ChangeNodesStartStopStatusResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeNodesStartStopStatusResponse.
+        r"""Sets the body of this ChangeNodesStartStopStatusResponse.
 
         :param body: The body of this ChangeNodesStartStopStatusResponse.
         :type body: str

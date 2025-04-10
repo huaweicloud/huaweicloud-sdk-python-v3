@@ -59,7 +59,7 @@ class ThreatIntelProperties:
     }
 
     def __init__(self, file_md5=None, file_sha1=None, file_sha256=None, file_name=None, create_time=None, file_class=None, file_family=None, file_maltype=None, ip_resolves_to_refs=None, belongs_to_refs=None, ip_location=None, domain_family=None, domain_resolves_to_refs=None, domain_dns_type=None, url_host=None, url_resolves_to_refs=None, display_name=None, url_belongs_to_ref=None):
-        """ThreatIntelProperties
+        r"""ThreatIntelProperties
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class ThreatIntelProperties:
 
     @property
     def file_md5(self):
-        """Gets the file_md5 of this ThreatIntelProperties.
+        r"""Gets the file_md5 of this ThreatIntelProperties.
 
         恶意软件Md5。
 
@@ -173,7 +173,7 @@ class ThreatIntelProperties:
 
     @file_md5.setter
     def file_md5(self, file_md5):
-        """Sets the file_md5 of this ThreatIntelProperties.
+        r"""Sets the file_md5 of this ThreatIntelProperties.
 
         恶意软件Md5。
 
@@ -184,7 +184,7 @@ class ThreatIntelProperties:
 
     @property
     def file_sha1(self):
-        """Gets the file_sha1 of this ThreatIntelProperties.
+        r"""Gets the file_sha1 of this ThreatIntelProperties.
 
         恶意软件Sha1。
 
@@ -195,7 +195,7 @@ class ThreatIntelProperties:
 
     @file_sha1.setter
     def file_sha1(self, file_sha1):
-        """Sets the file_sha1 of this ThreatIntelProperties.
+        r"""Sets the file_sha1 of this ThreatIntelProperties.
 
         恶意软件Sha1。
 
@@ -206,7 +206,7 @@ class ThreatIntelProperties:
 
     @property
     def file_sha256(self):
-        """Gets the file_sha256 of this ThreatIntelProperties.
+        r"""Gets the file_sha256 of this ThreatIntelProperties.
 
         恶意软件Sha256值。
 
@@ -217,7 +217,7 @@ class ThreatIntelProperties:
 
     @file_sha256.setter
     def file_sha256(self, file_sha256):
-        """Sets the file_sha256 of this ThreatIntelProperties.
+        r"""Sets the file_sha256 of this ThreatIntelProperties.
 
         恶意软件Sha256值。
 
@@ -228,7 +228,7 @@ class ThreatIntelProperties:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ThreatIntelProperties.
+        r"""Gets the file_name of this ThreatIntelProperties.
 
         文件名称。
 
@@ -239,7 +239,7 @@ class ThreatIntelProperties:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ThreatIntelProperties.
+        r"""Sets the file_name of this ThreatIntelProperties.
 
         文件名称。
 
@@ -250,7 +250,7 @@ class ThreatIntelProperties:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ThreatIntelProperties.
+        r"""Gets the create_time of this ThreatIntelProperties.
 
         编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -261,7 +261,7 @@ class ThreatIntelProperties:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ThreatIntelProperties.
+        r"""Sets the create_time of this ThreatIntelProperties.
 
         编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -272,7 +272,7 @@ class ThreatIntelProperties:
 
     @property
     def file_class(self):
-        """Gets the file_class of this ThreatIntelProperties.
+        r"""Gets the file_class of this ThreatIntelProperties.
 
         文件类别，TEXT|XCODE。
 
@@ -283,7 +283,7 @@ class ThreatIntelProperties:
 
     @file_class.setter
     def file_class(self, file_class):
-        """Sets the file_class of this ThreatIntelProperties.
+        r"""Sets the file_class of this ThreatIntelProperties.
 
         文件类别，TEXT|XCODE。
 
@@ -294,7 +294,7 @@ class ThreatIntelProperties:
 
     @property
     def file_family(self):
-        """Gets the file_family of this ThreatIntelProperties.
+        r"""Gets the file_family of this ThreatIntelProperties.
 
         家族，例如：wannacry（勒索软件）。
 
@@ -305,7 +305,7 @@ class ThreatIntelProperties:
 
     @file_family.setter
     def file_family(self, file_family):
-        """Sets the file_family of this ThreatIntelProperties.
+        r"""Sets the file_family of this ThreatIntelProperties.
 
         家族，例如：wannacry（勒索软件）。
 
@@ -316,7 +316,7 @@ class ThreatIntelProperties:
 
     @property
     def file_maltype(self):
-        """Gets the file_maltype of this ThreatIntelProperties.
+        r"""Gets the file_maltype of this ThreatIntelProperties.
 
         类别，例如：trojan（特洛伊）。
 
@@ -327,7 +327,7 @@ class ThreatIntelProperties:
 
     @file_maltype.setter
     def file_maltype(self, file_maltype):
-        """Sets the file_maltype of this ThreatIntelProperties.
+        r"""Sets the file_maltype of this ThreatIntelProperties.
 
         类别，例如：trojan（特洛伊）。
 
@@ -338,7 +338,7 @@ class ThreatIntelProperties:
 
     @property
     def ip_resolves_to_refs(self):
-        """Gets the ip_resolves_to_refs of this ThreatIntelProperties.
+        r"""Gets the ip_resolves_to_refs of this ThreatIntelProperties.
 
         mac地址。
 
@@ -349,7 +349,7 @@ class ThreatIntelProperties:
 
     @ip_resolves_to_refs.setter
     def ip_resolves_to_refs(self, ip_resolves_to_refs):
-        """Sets the ip_resolves_to_refs of this ThreatIntelProperties.
+        r"""Sets the ip_resolves_to_refs of this ThreatIntelProperties.
 
         mac地址。
 
@@ -360,7 +360,7 @@ class ThreatIntelProperties:
 
     @property
     def belongs_to_refs(self):
-        """Gets the belongs_to_refs of this ThreatIntelProperties.
+        r"""Gets the belongs_to_refs of this ThreatIntelProperties.
 
         IP AS 自治系统。
 
@@ -371,7 +371,7 @@ class ThreatIntelProperties:
 
     @belongs_to_refs.setter
     def belongs_to_refs(self, belongs_to_refs):
-        """Sets the belongs_to_refs of this ThreatIntelProperties.
+        r"""Sets the belongs_to_refs of this ThreatIntelProperties.
 
         IP AS 自治系统。
 
@@ -382,7 +382,7 @@ class ThreatIntelProperties:
 
     @property
     def ip_location(self):
-        """Gets the ip_location of this ThreatIntelProperties.
+        r"""Gets the ip_location of this ThreatIntelProperties.
 
         地区 格式：country/provice/city/lngwgs/latwgs。
 
@@ -393,7 +393,7 @@ class ThreatIntelProperties:
 
     @ip_location.setter
     def ip_location(self, ip_location):
-        """Sets the ip_location of this ThreatIntelProperties.
+        r"""Sets the ip_location of this ThreatIntelProperties.
 
         地区 格式：country/provice/city/lngwgs/latwgs。
 
@@ -404,7 +404,7 @@ class ThreatIntelProperties:
 
     @property
     def domain_family(self):
-        """Gets the domain_family of this ThreatIntelProperties.
+        r"""Gets the domain_family of this ThreatIntelProperties.
 
         例如：banjori|iodine。
 
@@ -415,7 +415,7 @@ class ThreatIntelProperties:
 
     @domain_family.setter
     def domain_family(self, domain_family):
-        """Sets the domain_family of this ThreatIntelProperties.
+        r"""Sets the domain_family of this ThreatIntelProperties.
 
         例如：banjori|iodine。
 
@@ -426,7 +426,7 @@ class ThreatIntelProperties:
 
     @property
     def domain_resolves_to_refs(self):
-        """Gets the domain_resolves_to_refs of this ThreatIntelProperties.
+        r"""Gets the domain_resolves_to_refs of this ThreatIntelProperties.
 
         解析的IP地址。
 
@@ -437,7 +437,7 @@ class ThreatIntelProperties:
 
     @domain_resolves_to_refs.setter
     def domain_resolves_to_refs(self, domain_resolves_to_refs):
-        """Sets the domain_resolves_to_refs of this ThreatIntelProperties.
+        r"""Sets the domain_resolves_to_refs of this ThreatIntelProperties.
 
         解析的IP地址。
 
@@ -448,7 +448,7 @@ class ThreatIntelProperties:
 
     @property
     def domain_dns_type(self):
-        """Gets the domain_dns_type of this ThreatIntelProperties.
+        r"""Gets the domain_dns_type of this ThreatIntelProperties.
 
         DNS类别。A|NS|CNAME|TXT。
 
@@ -459,7 +459,7 @@ class ThreatIntelProperties:
 
     @domain_dns_type.setter
     def domain_dns_type(self, domain_dns_type):
-        """Sets the domain_dns_type of this ThreatIntelProperties.
+        r"""Sets the domain_dns_type of this ThreatIntelProperties.
 
         DNS类别。A|NS|CNAME|TXT。
 
@@ -470,7 +470,7 @@ class ThreatIntelProperties:
 
     @property
     def url_host(self):
-        """Gets the url_host of this ThreatIntelProperties.
+        r"""Gets the url_host of this ThreatIntelProperties.
 
         例：3ms.huawei.com。
 
@@ -481,7 +481,7 @@ class ThreatIntelProperties:
 
     @url_host.setter
     def url_host(self, url_host):
-        """Sets the url_host of this ThreatIntelProperties.
+        r"""Sets the url_host of this ThreatIntelProperties.
 
         例：3ms.huawei.com。
 
@@ -492,7 +492,7 @@ class ThreatIntelProperties:
 
     @property
     def url_resolves_to_refs(self):
-        """Gets the url_resolves_to_refs of this ThreatIntelProperties.
+        r"""Gets the url_resolves_to_refs of this ThreatIntelProperties.
 
         IP地址。
 
@@ -503,7 +503,7 @@ class ThreatIntelProperties:
 
     @url_resolves_to_refs.setter
     def url_resolves_to_refs(self, url_resolves_to_refs):
-        """Sets the url_resolves_to_refs of this ThreatIntelProperties.
+        r"""Sets the url_resolves_to_refs of this ThreatIntelProperties.
 
         IP地址。
 
@@ -514,7 +514,7 @@ class ThreatIntelProperties:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ThreatIntelProperties.
+        r"""Gets the display_name of this ThreatIntelProperties.
 
         显示名称。
 
@@ -525,7 +525,7 @@ class ThreatIntelProperties:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ThreatIntelProperties.
+        r"""Sets the display_name of this ThreatIntelProperties.
 
         显示名称。
 
@@ -536,7 +536,7 @@ class ThreatIntelProperties:
 
     @property
     def url_belongs_to_ref(self):
-        """Gets the url_belongs_to_ref of this ThreatIntelProperties.
+        r"""Gets the url_belongs_to_ref of this ThreatIntelProperties.
 
         邮箱账户，@之前部分。
 
@@ -547,7 +547,7 @@ class ThreatIntelProperties:
 
     @url_belongs_to_ref.setter
     def url_belongs_to_ref(self, url_belongs_to_ref):
-        """Sets the url_belongs_to_ref of this ThreatIntelProperties.
+        r"""Sets the url_belongs_to_ref of this ThreatIntelProperties.
 
         邮箱账户，@之前部分。
 

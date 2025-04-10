@@ -28,7 +28,7 @@ class CreateDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, x_request_id=None):
-        """CreateDomainResponse
+        r"""CreateDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this CreateDomainResponse.
+        r"""Gets the domain of this CreateDomainResponse.
 
         :return: The domain of this CreateDomainResponse.
         :rtype: :class:`huaweicloudsdkcdn.v2.CreateDomainResponseBodyContent`
@@ -60,7 +60,7 @@ class CreateDomainResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateDomainResponse.
+        r"""Sets the domain of this CreateDomainResponse.
 
         :param domain: The domain of this CreateDomainResponse.
         :type domain: :class:`huaweicloudsdkcdn.v2.CreateDomainResponseBodyContent`
@@ -69,7 +69,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateDomainResponse.
+        r"""Gets the x_request_id of this CreateDomainResponse.
 
         :return: The x_request_id of this CreateDomainResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateDomainResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateDomainResponse.
+        r"""Sets the x_request_id of this CreateDomainResponse.
 
         :param x_request_id: The x_request_id of this CreateDomainResponse.
         :type x_request_id: str

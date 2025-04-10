@@ -32,7 +32,7 @@ class ListAttributesResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, attributes=None):
-        """ListAttributesResponse
+        r"""ListAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAttributesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListAttributesResponse.
+        r"""Gets the limit of this ListAttributesResponse.
 
         每页记录数
 
@@ -76,7 +76,7 @@ class ListAttributesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAttributesResponse.
+        r"""Sets the limit of this ListAttributesResponse.
 
         每页记录数
 
@@ -87,7 +87,7 @@ class ListAttributesResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListAttributesResponse.
+        r"""Gets the offset of this ListAttributesResponse.
 
         页码
 
@@ -98,7 +98,7 @@ class ListAttributesResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAttributesResponse.
+        r"""Sets the offset of this ListAttributesResponse.
 
         页码
 
@@ -109,7 +109,7 @@ class ListAttributesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAttributesResponse.
+        r"""Gets the count of this ListAttributesResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListAttributesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAttributesResponse.
+        r"""Sets the count of this ListAttributesResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListAttributesResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this ListAttributesResponse.
+        r"""Gets the attributes of this ListAttributesResponse.
 
         自定义属性记录
 
@@ -142,7 +142,7 @@ class ListAttributesResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ListAttributesResponse.
+        r"""Sets the attributes of this ListAttributesResponse.
 
         自定义属性记录
 

@@ -27,7 +27,7 @@ class ResetManagerPasswordRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ResetManagerPasswordRequest
+        r"""ResetManagerPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetManagerPasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetManagerPasswordRequest.
+        r"""Gets the instance_id of this ResetManagerPasswordRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ResetManagerPasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetManagerPasswordRequest.
+        r"""Sets the instance_id of this ResetManagerPasswordRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ResetManagerPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetManagerPasswordRequest.
+        r"""Gets the body of this ResetManagerPasswordRequest.
 
         :return: The body of this ResetManagerPasswordRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordReq`
@@ -80,7 +80,7 @@ class ResetManagerPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetManagerPasswordRequest.
+        r"""Sets the body of this ResetManagerPasswordRequest.
 
         :param body: The body of this ResetManagerPasswordRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordReq`

@@ -34,7 +34,7 @@ class CreateVpnUserRequestBodyContent:
     }
 
     def __init__(self, name=None, password=None, description=None, user_group_id=None, static_ip=None):
-        """CreateVpnUserRequestBodyContent
+        r"""CreateVpnUserRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateVpnUserRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpnUserRequestBodyContent.
+        r"""Gets the name of this CreateVpnUserRequestBodyContent.
 
         用户名
 
@@ -81,7 +81,7 @@ class CreateVpnUserRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpnUserRequestBodyContent.
+        r"""Sets the name of this CreateVpnUserRequestBodyContent.
 
         用户名
 
@@ -92,7 +92,7 @@ class CreateVpnUserRequestBodyContent:
 
     @property
     def password(self):
-        """Gets the password of this CreateVpnUserRequestBodyContent.
+        r"""Gets the password of this CreateVpnUserRequestBodyContent.
 
         用户密码
 
@@ -103,7 +103,7 @@ class CreateVpnUserRequestBodyContent:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateVpnUserRequestBodyContent.
+        r"""Sets the password of this CreateVpnUserRequestBodyContent.
 
         用户密码
 
@@ -114,7 +114,7 @@ class CreateVpnUserRequestBodyContent:
 
     @property
     def description(self):
-        """Gets the description of this CreateVpnUserRequestBodyContent.
+        r"""Gets the description of this CreateVpnUserRequestBodyContent.
 
         用户描述，0-64字符，中文、英文、数字包含下划线
 
@@ -125,7 +125,7 @@ class CreateVpnUserRequestBodyContent:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVpnUserRequestBodyContent.
+        r"""Sets the description of this CreateVpnUserRequestBodyContent.
 
         用户描述，0-64字符，中文、英文、数字包含下划线
 
@@ -136,7 +136,7 @@ class CreateVpnUserRequestBodyContent:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this CreateVpnUserRequestBodyContent.
+        r"""Gets the user_group_id of this CreateVpnUserRequestBodyContent.
 
         所属用户组ID
 
@@ -147,7 +147,7 @@ class CreateVpnUserRequestBodyContent:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this CreateVpnUserRequestBodyContent.
+        r"""Sets the user_group_id of this CreateVpnUserRequestBodyContent.
 
         所属用户组ID
 
@@ -158,7 +158,7 @@ class CreateVpnUserRequestBodyContent:
 
     @property
     def static_ip(self):
-        """Gets the static_ip of this CreateVpnUserRequestBodyContent.
+        r"""Gets the static_ip of this CreateVpnUserRequestBodyContent.
 
         静态客户端IP地址，默认值disable，表示随机分配客户端IP
 
@@ -169,7 +169,7 @@ class CreateVpnUserRequestBodyContent:
 
     @static_ip.setter
     def static_ip(self, static_ip):
-        """Sets the static_ip of this CreateVpnUserRequestBodyContent.
+        r"""Sets the static_ip of this CreateVpnUserRequestBodyContent.
 
         静态客户端IP地址，默认值disable，表示随机分配客户端IP
 

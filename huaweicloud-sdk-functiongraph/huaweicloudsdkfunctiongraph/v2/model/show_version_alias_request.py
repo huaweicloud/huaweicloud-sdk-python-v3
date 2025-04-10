@@ -27,7 +27,7 @@ class ShowVersionAliasRequest:
     }
 
     def __init__(self, function_urn=None, alias_name=None):
-        """ShowVersionAliasRequest
+        r"""ShowVersionAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowVersionAliasRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ShowVersionAliasRequest.
+        r"""Gets the function_urn of this ShowVersionAliasRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class ShowVersionAliasRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ShowVersionAliasRequest.
+        r"""Sets the function_urn of this ShowVersionAliasRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class ShowVersionAliasRequest:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this ShowVersionAliasRequest.
+        r"""Gets the alias_name of this ShowVersionAliasRequest.
 
         要查询的别名名称。
 
@@ -81,7 +81,7 @@ class ShowVersionAliasRequest:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this ShowVersionAliasRequest.
+        r"""Sets the alias_name of this ShowVersionAliasRequest.
 
         要查询的别名名称。
 

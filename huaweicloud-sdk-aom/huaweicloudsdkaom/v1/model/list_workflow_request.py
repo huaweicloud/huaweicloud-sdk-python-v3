@@ -25,7 +25,7 @@ class ListWorkflowRequest:
     }
 
     def __init__(self, body=None):
-        """ListWorkflowRequest
+        r"""ListWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListWorkflowRequest.
+        r"""Gets the body of this ListWorkflowRequest.
 
         :return: The body of this ListWorkflowRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.WorkflowQueryParam`
@@ -52,7 +52,7 @@ class ListWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListWorkflowRequest.
+        r"""Sets the body of this ListWorkflowRequest.
 
         :param body: The body of this ListWorkflowRequest.
         :type body: :class:`huaweicloudsdkaom.v1.WorkflowQueryParam`

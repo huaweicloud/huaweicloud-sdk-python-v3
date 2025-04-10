@@ -35,7 +35,7 @@ class NameDto:
     }
 
     def __init__(self, formatted=None, family_name=None, given_name=None, middle_name=None, honorific_prefix=None, honorific_suffix=None):
-        """NameDto
+        r"""NameDto
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class NameDto:
 
     @property
     def formatted(self):
-        """Gets the formatted of this NameDto.
+        r"""Gets the formatted of this NameDto.
 
         包含要显示的名称的格式化版本的字符串
 
@@ -87,7 +87,7 @@ class NameDto:
 
     @formatted.setter
     def formatted(self, formatted):
-        """Sets the formatted of this NameDto.
+        r"""Sets the formatted of this NameDto.
 
         包含要显示的名称的格式化版本的字符串
 
@@ -98,7 +98,7 @@ class NameDto:
 
     @property
     def family_name(self):
-        """Gets the family_name of this NameDto.
+        r"""Gets the family_name of this NameDto.
 
         用户的姓氏
 
@@ -109,7 +109,7 @@ class NameDto:
 
     @family_name.setter
     def family_name(self, family_name):
-        """Sets the family_name of this NameDto.
+        r"""Sets the family_name of this NameDto.
 
         用户的姓氏
 
@@ -120,7 +120,7 @@ class NameDto:
 
     @property
     def given_name(self):
-        """Gets the given_name of this NameDto.
+        r"""Gets the given_name of this NameDto.
 
         用户的名字
 
@@ -131,7 +131,7 @@ class NameDto:
 
     @given_name.setter
     def given_name(self, given_name):
-        """Sets the given_name of this NameDto.
+        r"""Sets the given_name of this NameDto.
 
         用户的名字
 
@@ -142,7 +142,7 @@ class NameDto:
 
     @property
     def middle_name(self):
-        """Gets the middle_name of this NameDto.
+        r"""Gets the middle_name of this NameDto.
 
         用户的中间名
 
@@ -153,7 +153,7 @@ class NameDto:
 
     @middle_name.setter
     def middle_name(self, middle_name):
-        """Sets the middle_name of this NameDto.
+        r"""Sets the middle_name of this NameDto.
 
         用户的中间名
 
@@ -164,7 +164,7 @@ class NameDto:
 
     @property
     def honorific_prefix(self):
-        """Gets the honorific_prefix of this NameDto.
+        r"""Gets the honorific_prefix of this NameDto.
 
         用户的尊称前缀
 
@@ -175,7 +175,7 @@ class NameDto:
 
     @honorific_prefix.setter
     def honorific_prefix(self, honorific_prefix):
-        """Sets the honorific_prefix of this NameDto.
+        r"""Sets the honorific_prefix of this NameDto.
 
         用户的尊称前缀
 
@@ -186,7 +186,7 @@ class NameDto:
 
     @property
     def honorific_suffix(self):
-        """Gets the honorific_suffix of this NameDto.
+        r"""Gets the honorific_suffix of this NameDto.
 
         用户的尊称后缀
 
@@ -197,7 +197,7 @@ class NameDto:
 
     @honorific_suffix.setter
     def honorific_suffix(self, honorific_suffix):
-        """Sets the honorific_suffix of this NameDto.
+        r"""Sets the honorific_suffix of this NameDto.
 
         用户的尊称后缀
 

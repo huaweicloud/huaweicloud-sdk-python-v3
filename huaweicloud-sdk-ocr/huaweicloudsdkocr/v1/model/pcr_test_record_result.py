@@ -37,7 +37,7 @@ class PcrTestRecordResult:
     }
 
     def __init__(self, name=None, sampling_time=None, test_time=None, test_result=None, confidence=None, words_block_count=None, words_block_list=None):
-        """PcrTestRecordResult
+        r"""PcrTestRecordResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PcrTestRecordResult:
 
     @property
     def name(self):
-        """Gets the name of this PcrTestRecordResult.
+        r"""Gets the name of this PcrTestRecordResult.
 
         姓名 
 
@@ -89,7 +89,7 @@ class PcrTestRecordResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PcrTestRecordResult.
+        r"""Sets the name of this PcrTestRecordResult.
 
         姓名 
 
@@ -100,7 +100,7 @@ class PcrTestRecordResult:
 
     @property
     def sampling_time(self):
-        """Gets the sampling_time of this PcrTestRecordResult.
+        r"""Gets the sampling_time of this PcrTestRecordResult.
 
         核酸检测采样时间 
 
@@ -111,7 +111,7 @@ class PcrTestRecordResult:
 
     @sampling_time.setter
     def sampling_time(self, sampling_time):
-        """Sets the sampling_time of this PcrTestRecordResult.
+        r"""Sets the sampling_time of this PcrTestRecordResult.
 
         核酸检测采样时间 
 
@@ -122,7 +122,7 @@ class PcrTestRecordResult:
 
     @property
     def test_time(self):
-        """Gets the test_time of this PcrTestRecordResult.
+        r"""Gets the test_time of this PcrTestRecordResult.
 
         核酸检测结果更新时间 
 
@@ -133,7 +133,7 @@ class PcrTestRecordResult:
 
     @test_time.setter
     def test_time(self, test_time):
-        """Sets the test_time of this PcrTestRecordResult.
+        r"""Sets the test_time of this PcrTestRecordResult.
 
         核酸检测结果更新时间 
 
@@ -144,7 +144,7 @@ class PcrTestRecordResult:
 
     @property
     def test_result(self):
-        """Gets the test_result of this PcrTestRecordResult.
+        r"""Gets the test_result of this PcrTestRecordResult.
 
         核酸检测结果，可选值包括：  - \"positive\",即阳性  - \"negative\",即阴性  - \"unknown\",未知 
 
@@ -155,7 +155,7 @@ class PcrTestRecordResult:
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this PcrTestRecordResult.
+        r"""Sets the test_result of this PcrTestRecordResult.
 
         核酸检测结果，可选值包括：  - \"positive\",即阳性  - \"negative\",即阴性  - \"unknown\",未知 
 
@@ -166,7 +166,7 @@ class PcrTestRecordResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this PcrTestRecordResult.
+        r"""Gets the confidence of this PcrTestRecordResult.
 
         :return: The confidence of this PcrTestRecordResult.
         :rtype: :class:`huaweicloudsdkocr.v1.PcrTestRecordConfidence`
@@ -175,7 +175,7 @@ class PcrTestRecordResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this PcrTestRecordResult.
+        r"""Sets the confidence of this PcrTestRecordResult.
 
         :param confidence: The confidence of this PcrTestRecordResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.PcrTestRecordConfidence`
@@ -184,7 +184,7 @@ class PcrTestRecordResult:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this PcrTestRecordResult.
+        r"""Gets the words_block_count of this PcrTestRecordResult.
 
         代表检测识别出来的文字块数目。 
 
@@ -195,7 +195,7 @@ class PcrTestRecordResult:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this PcrTestRecordResult.
+        r"""Sets the words_block_count of this PcrTestRecordResult.
 
         代表检测识别出来的文字块数目。 
 
@@ -206,7 +206,7 @@ class PcrTestRecordResult:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this PcrTestRecordResult.
+        r"""Gets the words_block_list of this PcrTestRecordResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 
@@ -217,7 +217,7 @@ class PcrTestRecordResult:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this PcrTestRecordResult.
+        r"""Sets the words_block_list of this PcrTestRecordResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 

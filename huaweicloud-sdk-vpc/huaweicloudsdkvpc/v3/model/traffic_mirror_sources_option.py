@@ -25,7 +25,7 @@ class TrafficMirrorSourcesOption:
     }
 
     def __init__(self, traffic_mirror_sources=None):
-        """TrafficMirrorSourcesOption
+        r"""TrafficMirrorSourcesOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TrafficMirrorSourcesOption:
 
     @property
     def traffic_mirror_sources(self):
-        """Gets the traffic_mirror_sources of this TrafficMirrorSourcesOption.
+        r"""Gets the traffic_mirror_sources of this TrafficMirrorSourcesOption.
 
         功能说明：镜像源ID列表
 
@@ -53,7 +53,7 @@ class TrafficMirrorSourcesOption:
 
     @traffic_mirror_sources.setter
     def traffic_mirror_sources(self, traffic_mirror_sources):
-        """Sets the traffic_mirror_sources of this TrafficMirrorSourcesOption.
+        r"""Sets the traffic_mirror_sources of this TrafficMirrorSourcesOption.
 
         功能说明：镜像源ID列表
 

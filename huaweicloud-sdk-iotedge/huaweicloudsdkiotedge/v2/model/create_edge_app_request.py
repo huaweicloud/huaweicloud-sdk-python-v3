@@ -25,7 +25,7 @@ class CreateEdgeAppRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEdgeAppRequest
+        r"""CreateEdgeAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEdgeAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeAppRequest.
+        r"""Gets the body of this CreateEdgeAppRequest.
 
         :return: The body of this CreateEdgeAppRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`
@@ -52,7 +52,7 @@ class CreateEdgeAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeAppRequest.
+        r"""Sets the body of this CreateEdgeAppRequest.
 
         :param body: The body of this CreateEdgeAppRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`

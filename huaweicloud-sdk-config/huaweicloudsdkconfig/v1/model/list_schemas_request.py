@@ -27,7 +27,7 @@ class ListSchemasRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListSchemasRequest
+        r"""ListSchemasRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSchemasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSchemasRequest.
+        r"""Gets the limit of this ListSchemasRequest.
 
         最大的返回数量
 
@@ -61,7 +61,7 @@ class ListSchemasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSchemasRequest.
+        r"""Sets the limit of this ListSchemasRequest.
 
         最大的返回数量
 
@@ -72,7 +72,7 @@ class ListSchemasRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSchemasRequest.
+        r"""Gets the marker of this ListSchemasRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -83,7 +83,7 @@ class ListSchemasRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSchemasRequest.
+        r"""Sets the marker of this ListSchemasRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

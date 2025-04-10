@@ -29,7 +29,7 @@ class ListHistoryDatabaseRequest:
     }
 
     def __init__(self, engine=None, x_language=None, body=None):
-        """ListHistoryDatabaseRequest
+        r"""ListHistoryDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListHistoryDatabaseRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListHistoryDatabaseRequest.
+        r"""Gets the engine of this ListHistoryDatabaseRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写：postgresql,mysql
 
@@ -67,7 +67,7 @@ class ListHistoryDatabaseRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListHistoryDatabaseRequest.
+        r"""Sets the engine of this ListHistoryDatabaseRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写：postgresql,mysql
 
@@ -78,7 +78,7 @@ class ListHistoryDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHistoryDatabaseRequest.
+        r"""Gets the x_language of this ListHistoryDatabaseRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ListHistoryDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHistoryDatabaseRequest.
+        r"""Sets the x_language of this ListHistoryDatabaseRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ListHistoryDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListHistoryDatabaseRequest.
+        r"""Gets the body of this ListHistoryDatabaseRequest.
 
         :return: The body of this ListHistoryDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgreSQLHistoryDatabaseRequest`
@@ -109,7 +109,7 @@ class ListHistoryDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListHistoryDatabaseRequest.
+        r"""Sets the body of this ListHistoryDatabaseRequest.
 
         :param body: The body of this ListHistoryDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgreSQLHistoryDatabaseRequest`

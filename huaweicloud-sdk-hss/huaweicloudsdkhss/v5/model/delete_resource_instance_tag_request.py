@@ -29,7 +29,7 @@ class DeleteResourceInstanceTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, key=None):
-        """DeleteResourceInstanceTagRequest
+        r"""DeleteResourceInstanceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteResourceInstanceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteResourceInstanceTagRequest.
+        r"""Gets the resource_type of this DeleteResourceInstanceTagRequest.
 
         由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
 
@@ -65,7 +65,7 @@ class DeleteResourceInstanceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteResourceInstanceTagRequest.
+        r"""Sets the resource_type of this DeleteResourceInstanceTagRequest.
 
         由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
 
@@ -76,7 +76,7 @@ class DeleteResourceInstanceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResourceInstanceTagRequest.
+        r"""Gets the resource_id of this DeleteResourceInstanceTagRequest.
 
         由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
 
@@ -87,7 +87,7 @@ class DeleteResourceInstanceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResourceInstanceTagRequest.
+        r"""Sets the resource_id of this DeleteResourceInstanceTagRequest.
 
         由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
 
@@ -98,7 +98,7 @@ class DeleteResourceInstanceTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResourceInstanceTagRequest.
+        r"""Gets the key of this DeleteResourceInstanceTagRequest.
 
         待删除的key
 
@@ -109,7 +109,7 @@ class DeleteResourceInstanceTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResourceInstanceTagRequest.
+        r"""Sets the key of this DeleteResourceInstanceTagRequest.
 
         待删除的key
 

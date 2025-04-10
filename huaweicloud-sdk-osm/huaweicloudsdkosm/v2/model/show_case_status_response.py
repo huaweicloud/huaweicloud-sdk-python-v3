@@ -26,7 +26,7 @@ class ShowCaseStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ShowCaseStatusResponse
+        r"""ShowCaseStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCaseStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCaseStatusResponse.
+        r"""Gets the status of this ShowCaseStatusResponse.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -55,7 +55,7 @@ class ShowCaseStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCaseStatusResponse.
+        r"""Sets the status of this ShowCaseStatusResponse.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 

@@ -26,7 +26,7 @@ class ListVolumeProductInfoResponse(SdkResponse):
     }
 
     def __init__(self, volumes=None):
-        """ListVolumeProductInfoResponse
+        r"""ListVolumeProductInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListVolumeProductInfoResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ListVolumeProductInfoResponse.
+        r"""Gets the volumes of this ListVolumeProductInfoResponse.
 
         磁盘产品信息列表
 
@@ -55,7 +55,7 @@ class ListVolumeProductInfoResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ListVolumeProductInfoResponse.
+        r"""Sets the volumes of this ListVolumeProductInfoResponse.
 
         磁盘产品信息列表
 

@@ -25,7 +25,7 @@ class ListAuditInstanceJobsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ListAuditInstanceJobsRequest
+        r"""ListAuditInstanceJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAuditInstanceJobsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListAuditInstanceJobsRequest.
+        r"""Gets the resource_id of this ListAuditInstanceJobsRequest.
 
         资源ID。可在查询实例列表接口的resource_id获取。
 
@@ -53,7 +53,7 @@ class ListAuditInstanceJobsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListAuditInstanceJobsRequest.
+        r"""Sets the resource_id of this ListAuditInstanceJobsRequest.
 
         资源ID。可在查询实例列表接口的resource_id获取。
 

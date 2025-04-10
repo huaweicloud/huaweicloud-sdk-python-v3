@@ -28,7 +28,7 @@ class ListResourceTagsRequest:
     }
 
     def __init__(self, x_security_token=None, resource_type=None):
-        """ListResourceTagsRequest
+        r"""ListResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListResourceTagsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListResourceTagsRequest.
+        r"""Gets the x_security_token of this ListResourceTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class ListResourceTagsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListResourceTagsRequest.
+        r"""Sets the x_security_token of this ListResourceTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class ListResourceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourceTagsRequest.
+        r"""Gets the resource_type of this ListResourceTagsRequest.
 
         资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
@@ -83,7 +83,7 @@ class ListResourceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourceTagsRequest.
+        r"""Sets the resource_type of this ListResourceTagsRequest.
 
         资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 

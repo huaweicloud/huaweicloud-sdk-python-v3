@@ -29,7 +29,7 @@ class ListAccessPolicyObjectsRequest:
     }
 
     def __init__(self, access_policy_id=None, limit=None, offset=None):
-        """ListAccessPolicyObjectsRequest
+        r"""ListAccessPolicyObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAccessPolicyObjectsRequest:
 
     @property
     def access_policy_id(self):
-        """Gets the access_policy_id of this ListAccessPolicyObjectsRequest.
+        r"""Gets the access_policy_id of this ListAccessPolicyObjectsRequest.
 
         接入策略id。
 
@@ -67,7 +67,7 @@ class ListAccessPolicyObjectsRequest:
 
     @access_policy_id.setter
     def access_policy_id(self, access_policy_id):
-        """Sets the access_policy_id of this ListAccessPolicyObjectsRequest.
+        r"""Sets the access_policy_id of this ListAccessPolicyObjectsRequest.
 
         接入策略id。
 
@@ -78,7 +78,7 @@ class ListAccessPolicyObjectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccessPolicyObjectsRequest.
+        r"""Gets the limit of this ListAccessPolicyObjectsRequest.
 
         每页数量,范围0-2000,默认10。
 
@@ -89,7 +89,7 @@ class ListAccessPolicyObjectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccessPolicyObjectsRequest.
+        r"""Sets the limit of this ListAccessPolicyObjectsRequest.
 
         每页数量,范围0-2000,默认10。
 
@@ -100,7 +100,7 @@ class ListAccessPolicyObjectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAccessPolicyObjectsRequest.
+        r"""Gets the offset of this ListAccessPolicyObjectsRequest.
 
         偏移量,范围0-1999,默认0。
 
@@ -111,7 +111,7 @@ class ListAccessPolicyObjectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAccessPolicyObjectsRequest.
+        r"""Sets the offset of this ListAccessPolicyObjectsRequest.
 
         偏移量,范围0-1999,默认0。
 

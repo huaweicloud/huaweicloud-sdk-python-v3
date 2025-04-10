@@ -32,7 +32,7 @@ class ShowLineageResponse(SdkResponse):
     }
 
     def __init__(self, base_entity_guid=None, guid_entity_map=None, relations=None, referred_entities=None):
-        """ShowLineageResponse
+        r"""ShowLineageResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowLineageResponse(SdkResponse):
 
     @property
     def base_entity_guid(self):
-        """Gets the base_entity_guid of this ShowLineageResponse.
+        r"""Gets the base_entity_guid of this ShowLineageResponse.
 
         当前资产的guid
 
@@ -76,7 +76,7 @@ class ShowLineageResponse(SdkResponse):
 
     @base_entity_guid.setter
     def base_entity_guid(self, base_entity_guid):
-        """Sets the base_entity_guid of this ShowLineageResponse.
+        r"""Sets the base_entity_guid of this ShowLineageResponse.
 
         当前资产的guid
 
@@ -87,7 +87,7 @@ class ShowLineageResponse(SdkResponse):
 
     @property
     def guid_entity_map(self):
-        """Gets the guid_entity_map of this ShowLineageResponse.
+        r"""Gets the guid_entity_map of this ShowLineageResponse.
 
         实体集合Map(String, OpenEntityHeader)
 
@@ -98,7 +98,7 @@ class ShowLineageResponse(SdkResponse):
 
     @guid_entity_map.setter
     def guid_entity_map(self, guid_entity_map):
-        """Sets the guid_entity_map of this ShowLineageResponse.
+        r"""Sets the guid_entity_map of this ShowLineageResponse.
 
         实体集合Map(String, OpenEntityHeader)
 
@@ -109,7 +109,7 @@ class ShowLineageResponse(SdkResponse):
 
     @property
     def relations(self):
-        """Gets the relations of this ShowLineageResponse.
+        r"""Gets the relations of this ShowLineageResponse.
 
         血缘关系
 
@@ -120,7 +120,7 @@ class ShowLineageResponse(SdkResponse):
 
     @relations.setter
     def relations(self, relations):
-        """Sets the relations of this ShowLineageResponse.
+        r"""Sets the relations of this ShowLineageResponse.
 
         血缘关系
 
@@ -131,7 +131,7 @@ class ShowLineageResponse(SdkResponse):
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this ShowLineageResponse.
+        r"""Gets the referred_entities of this ShowLineageResponse.
 
         相关实体集合Map(String, OpenEntity)
 
@@ -142,7 +142,7 @@ class ShowLineageResponse(SdkResponse):
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this ShowLineageResponse.
+        r"""Sets the referred_entities of this ShowLineageResponse.
 
         相关实体集合Map(String, OpenEntity)
 

@@ -33,7 +33,7 @@ class ExerciseCard:
     }
 
     def __init__(self, name=None, exercise_id=None, description=None, resource_sub_type=None, target_score=None):
-        """ExerciseCard
+        r"""ExerciseCard
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ExerciseCard:
 
     @property
     def name(self):
-        """Gets the name of this ExerciseCard.
+        r"""Gets the name of this ExerciseCard.
 
         习题名称
 
@@ -77,7 +77,7 @@ class ExerciseCard:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExerciseCard.
+        r"""Sets the name of this ExerciseCard.
 
         习题名称
 
@@ -88,7 +88,7 @@ class ExerciseCard:
 
     @property
     def exercise_id(self):
-        """Gets the exercise_id of this ExerciseCard.
+        r"""Gets the exercise_id of this ExerciseCard.
 
         习题ID
 
@@ -99,7 +99,7 @@ class ExerciseCard:
 
     @exercise_id.setter
     def exercise_id(self, exercise_id):
-        """Sets the exercise_id of this ExerciseCard.
+        r"""Sets the exercise_id of this ExerciseCard.
 
         习题ID
 
@@ -110,7 +110,7 @@ class ExerciseCard:
 
     @property
     def description(self):
-        """Gets the description of this ExerciseCard.
+        r"""Gets the description of this ExerciseCard.
 
         习题描述
 
@@ -121,7 +121,7 @@ class ExerciseCard:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExerciseCard.
+        r"""Sets the description of this ExerciseCard.
 
         习题描述
 
@@ -132,7 +132,7 @@ class ExerciseCard:
 
     @property
     def resource_sub_type(self):
-        """Gets the resource_sub_type of this ExerciseCard.
+        r"""Gets the resource_sub_type of this ExerciseCard.
 
         习题子类型 1：函数c 2：函数c++ 3：函数Java 4：函数Python 5：单人项目java 6：单人项目Hadoop 7：通用 8：企业级软件项目 10：web习题 11：AI习题 12：单选题 13：多选题 14：填空题 15：单人项目C 16：单人项目C++
 
@@ -143,7 +143,7 @@ class ExerciseCard:
 
     @resource_sub_type.setter
     def resource_sub_type(self, resource_sub_type):
-        """Sets the resource_sub_type of this ExerciseCard.
+        r"""Sets the resource_sub_type of this ExerciseCard.
 
         习题子类型 1：函数c 2：函数c++ 3：函数Java 4：函数Python 5：单人项目java 6：单人项目Hadoop 7：通用 8：企业级软件项目 10：web习题 11：AI习题 12：单选题 13：多选题 14：填空题 15：单人项目C 16：单人项目C++
 
@@ -154,7 +154,7 @@ class ExerciseCard:
 
     @property
     def target_score(self):
-        """Gets the target_score of this ExerciseCard.
+        r"""Gets the target_score of this ExerciseCard.
 
         习题分值
 
@@ -165,7 +165,7 @@ class ExerciseCard:
 
     @target_score.setter
     def target_score(self, target_score):
-        """Sets the target_score of this ExerciseCard.
+        r"""Sets the target_score of this ExerciseCard.
 
         习题分值
 

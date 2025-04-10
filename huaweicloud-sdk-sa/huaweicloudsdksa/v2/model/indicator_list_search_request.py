@@ -39,7 +39,7 @@ class IndicatorListSearchRequest:
     }
 
     def __init__(self, ids=None, name=None, type=None, dataclass_id=None, condition=None, offset=None, limit=None, sort_by=None):
-        """IndicatorListSearchRequest
+        r"""IndicatorListSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class IndicatorListSearchRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this IndicatorListSearchRequest.
+        r"""Gets the ids of this IndicatorListSearchRequest.
 
         id list
 
@@ -103,7 +103,7 @@ class IndicatorListSearchRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this IndicatorListSearchRequest.
+        r"""Sets the ids of this IndicatorListSearchRequest.
 
         id list
 
@@ -114,7 +114,7 @@ class IndicatorListSearchRequest:
 
     @property
     def name(self):
-        """Gets the name of this IndicatorListSearchRequest.
+        r"""Gets the name of this IndicatorListSearchRequest.
 
         指标名称
 
@@ -125,7 +125,7 @@ class IndicatorListSearchRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IndicatorListSearchRequest.
+        r"""Sets the name of this IndicatorListSearchRequest.
 
         指标名称
 
@@ -136,7 +136,7 @@ class IndicatorListSearchRequest:
 
     @property
     def type(self):
-        """Gets the type of this IndicatorListSearchRequest.
+        r"""Gets the type of this IndicatorListSearchRequest.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -147,7 +147,7 @@ class IndicatorListSearchRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IndicatorListSearchRequest.
+        r"""Sets the type of this IndicatorListSearchRequest.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -158,7 +158,7 @@ class IndicatorListSearchRequest:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this IndicatorListSearchRequest.
+        r"""Gets the dataclass_id of this IndicatorListSearchRequest.
 
         数据类ID
 
@@ -169,7 +169,7 @@ class IndicatorListSearchRequest:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this IndicatorListSearchRequest.
+        r"""Sets the dataclass_id of this IndicatorListSearchRequest.
 
         数据类ID
 
@@ -180,7 +180,7 @@ class IndicatorListSearchRequest:
 
     @property
     def condition(self):
-        """Gets the condition of this IndicatorListSearchRequest.
+        r"""Gets the condition of this IndicatorListSearchRequest.
 
         search condition
 
@@ -191,7 +191,7 @@ class IndicatorListSearchRequest:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this IndicatorListSearchRequest.
+        r"""Sets the condition of this IndicatorListSearchRequest.
 
         search condition
 
@@ -202,7 +202,7 @@ class IndicatorListSearchRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this IndicatorListSearchRequest.
+        r"""Gets the offset of this IndicatorListSearchRequest.
 
         request offset, from 0
 
@@ -213,7 +213,7 @@ class IndicatorListSearchRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this IndicatorListSearchRequest.
+        r"""Sets the offset of this IndicatorListSearchRequest.
 
         request offset, from 0
 
@@ -224,7 +224,7 @@ class IndicatorListSearchRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this IndicatorListSearchRequest.
+        r"""Gets the limit of this IndicatorListSearchRequest.
 
         request limit size
 
@@ -235,7 +235,7 @@ class IndicatorListSearchRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this IndicatorListSearchRequest.
+        r"""Sets the limit of this IndicatorListSearchRequest.
 
         request limit size
 
@@ -246,7 +246,7 @@ class IndicatorListSearchRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this IndicatorListSearchRequest.
+        r"""Gets the sort_by of this IndicatorListSearchRequest.
 
         sort by property, create_time.
 
@@ -257,7 +257,7 @@ class IndicatorListSearchRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this IndicatorListSearchRequest.
+        r"""Sets the sort_by of this IndicatorListSearchRequest.
 
         sort by property, create_time.
 

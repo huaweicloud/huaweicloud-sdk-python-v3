@@ -26,7 +26,7 @@ class UpdateComparePolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateComparePolicyResponse
+        r"""UpdateComparePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateComparePolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateComparePolicyResponse.
+        r"""Gets the body of this UpdateComparePolicyResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class UpdateComparePolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateComparePolicyResponse.
+        r"""Sets the body of this UpdateComparePolicyResponse.
 
         空响应体。
 

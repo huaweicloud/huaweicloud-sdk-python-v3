@@ -27,7 +27,7 @@ class BatchCreateRequestBody:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """BatchCreateRequestBody
+        r"""BatchCreateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateRequestBody.
+        r"""Gets the tags of this BatchCreateRequestBody.
 
         资源标签
 
@@ -60,7 +60,7 @@ class BatchCreateRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateRequestBody.
+        r"""Sets the tags of this BatchCreateRequestBody.
 
         资源标签
 
@@ -71,7 +71,7 @@ class BatchCreateRequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this BatchCreateRequestBody.
+        r"""Gets the sys_tags of this BatchCreateRequestBody.
 
         系统标签
 
@@ -82,7 +82,7 @@ class BatchCreateRequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchCreateRequestBody.
+        r"""Sets the sys_tags of this BatchCreateRequestBody.
 
         系统标签
 

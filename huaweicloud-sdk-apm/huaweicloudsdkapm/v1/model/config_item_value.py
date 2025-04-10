@@ -49,7 +49,7 @@ class ConfigItemValue:
     }
 
     def __init__(self, config_name=None, display_name=None, config_data_type=None, max_length=None, min_value=None, max_value=None, option_values=None, default_value=None, since_version=None, dead_version=None, value=None, object_array_patterns=None, override_list=None):
-        """ConfigItemValue
+        r"""ConfigItemValue
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ConfigItemValue:
 
     @property
     def config_name(self):
-        """Gets the config_name of this ConfigItemValue.
+        r"""Gets the config_name of this ConfigItemValue.
 
         配置项名字
 
@@ -138,7 +138,7 @@ class ConfigItemValue:
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this ConfigItemValue.
+        r"""Sets the config_name of this ConfigItemValue.
 
         配置项名字
 
@@ -149,7 +149,7 @@ class ConfigItemValue:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ConfigItemValue.
+        r"""Gets the display_name of this ConfigItemValue.
 
         显示名称
 
@@ -160,7 +160,7 @@ class ConfigItemValue:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ConfigItemValue.
+        r"""Sets the display_name of this ConfigItemValue.
 
         显示名称
 
@@ -171,7 +171,7 @@ class ConfigItemValue:
 
     @property
     def config_data_type(self):
-        """Gets the config_data_type of this ConfigItemValue.
+        r"""Gets the config_data_type of this ConfigItemValue.
 
         数据类型
 
@@ -182,7 +182,7 @@ class ConfigItemValue:
 
     @config_data_type.setter
     def config_data_type(self, config_data_type):
-        """Sets the config_data_type of this ConfigItemValue.
+        r"""Sets the config_data_type of this ConfigItemValue.
 
         数据类型
 
@@ -193,7 +193,7 @@ class ConfigItemValue:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ConfigItemValue.
+        r"""Gets the max_length of this ConfigItemValue.
 
         最大长度
 
@@ -204,7 +204,7 @@ class ConfigItemValue:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ConfigItemValue.
+        r"""Sets the max_length of this ConfigItemValue.
 
         最大长度
 
@@ -215,7 +215,7 @@ class ConfigItemValue:
 
     @property
     def min_value(self):
-        """Gets the min_value of this ConfigItemValue.
+        r"""Gets the min_value of this ConfigItemValue.
 
         最小值
 
@@ -226,7 +226,7 @@ class ConfigItemValue:
 
     @min_value.setter
     def min_value(self, min_value):
-        """Sets the min_value of this ConfigItemValue.
+        r"""Sets the min_value of this ConfigItemValue.
 
         最小值
 
@@ -237,7 +237,7 @@ class ConfigItemValue:
 
     @property
     def max_value(self):
-        """Gets the max_value of this ConfigItemValue.
+        r"""Gets the max_value of this ConfigItemValue.
 
         最大值
 
@@ -248,7 +248,7 @@ class ConfigItemValue:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this ConfigItemValue.
+        r"""Sets the max_value of this ConfigItemValue.
 
         最大值
 
@@ -259,7 +259,7 @@ class ConfigItemValue:
 
     @property
     def option_values(self):
-        """Gets the option_values of this ConfigItemValue.
+        r"""Gets the option_values of this ConfigItemValue.
 
         可选值
 
@@ -270,7 +270,7 @@ class ConfigItemValue:
 
     @option_values.setter
     def option_values(self, option_values):
-        """Sets the option_values of this ConfigItemValue.
+        r"""Sets the option_values of this ConfigItemValue.
 
         可选值
 
@@ -281,7 +281,7 @@ class ConfigItemValue:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ConfigItemValue.
+        r"""Gets the default_value of this ConfigItemValue.
 
         默认值
 
@@ -292,7 +292,7 @@ class ConfigItemValue:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ConfigItemValue.
+        r"""Sets the default_value of this ConfigItemValue.
 
         默认值
 
@@ -303,7 +303,7 @@ class ConfigItemValue:
 
     @property
     def since_version(self):
-        """Gets the since_version of this ConfigItemValue.
+        r"""Gets the since_version of this ConfigItemValue.
 
         开始版本
 
@@ -314,7 +314,7 @@ class ConfigItemValue:
 
     @since_version.setter
     def since_version(self, since_version):
-        """Sets the since_version of this ConfigItemValue.
+        r"""Sets the since_version of this ConfigItemValue.
 
         开始版本
 
@@ -325,7 +325,7 @@ class ConfigItemValue:
 
     @property
     def dead_version(self):
-        """Gets the dead_version of this ConfigItemValue.
+        r"""Gets the dead_version of this ConfigItemValue.
 
         截至版本
 
@@ -336,7 +336,7 @@ class ConfigItemValue:
 
     @dead_version.setter
     def dead_version(self, dead_version):
-        """Sets the dead_version of this ConfigItemValue.
+        r"""Sets the dead_version of this ConfigItemValue.
 
         截至版本
 
@@ -347,7 +347,7 @@ class ConfigItemValue:
 
     @property
     def value(self):
-        """Gets the value of this ConfigItemValue.
+        r"""Gets the value of this ConfigItemValue.
 
         值
 
@@ -358,7 +358,7 @@ class ConfigItemValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigItemValue.
+        r"""Sets the value of this ConfigItemValue.
 
         值
 
@@ -369,7 +369,7 @@ class ConfigItemValue:
 
     @property
     def object_array_patterns(self):
-        """Gets the object_array_patterns of this ConfigItemValue.
+        r"""Gets the object_array_patterns of this ConfigItemValue.
 
         对象数组
 
@@ -380,7 +380,7 @@ class ConfigItemValue:
 
     @object_array_patterns.setter
     def object_array_patterns(self, object_array_patterns):
-        """Sets the object_array_patterns of this ConfigItemValue.
+        r"""Sets the object_array_patterns of this ConfigItemValue.
 
         对象数组
 
@@ -391,7 +391,7 @@ class ConfigItemValue:
 
     @property
     def override_list(self):
-        """Gets the override_list of this ConfigItemValue.
+        r"""Gets the override_list of this ConfigItemValue.
 
         实际生效值
 
@@ -402,7 +402,7 @@ class ConfigItemValue:
 
     @override_list.setter
     def override_list(self, override_list):
-        """Sets the override_list of this ConfigItemValue.
+        r"""Sets the override_list of this ConfigItemValue.
 
         实际生效值
 

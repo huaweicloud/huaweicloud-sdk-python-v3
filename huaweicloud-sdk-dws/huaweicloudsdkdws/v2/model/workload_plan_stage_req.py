@@ -25,7 +25,7 @@ class WorkloadPlanStageReq:
     }
 
     def __init__(self, workload_plan_stage=None):
-        """WorkloadPlanStageReq
+        r"""WorkloadPlanStageReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class WorkloadPlanStageReq:
 
     @property
     def workload_plan_stage(self):
-        """Gets the workload_plan_stage of this WorkloadPlanStageReq.
+        r"""Gets the workload_plan_stage of this WorkloadPlanStageReq.
 
         :return: The workload_plan_stage of this WorkloadPlanStageReq.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadPlanStageReqWorkloadPlanStage`
@@ -52,7 +52,7 @@ class WorkloadPlanStageReq:
 
     @workload_plan_stage.setter
     def workload_plan_stage(self, workload_plan_stage):
-        """Sets the workload_plan_stage of this WorkloadPlanStageReq.
+        r"""Sets the workload_plan_stage of this WorkloadPlanStageReq.
 
         :param workload_plan_stage: The workload_plan_stage of this WorkloadPlanStageReq.
         :type workload_plan_stage: :class:`huaweicloudsdkdws.v2.WorkloadPlanStageReqWorkloadPlanStage`

@@ -57,7 +57,7 @@ class ConnectorInfo0:
     }
 
     def __init__(self, auth_content=None, auth_id=None, auth_type=None, category=None, created_time=None, definition_ref=None, description=None, icon=None, id=None, name=None, need_auth=None, operations=None, provider=None, swagger=None, triggers=None, type=None, updated_time=None):
-        """ConnectorInfo0
+        r"""ConnectorInfo0
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ConnectorInfo0:
 
     @property
     def auth_content(self):
-        """Gets the auth_content of this ConnectorInfo0.
+        r"""Gets the auth_content of this ConnectorInfo0.
 
         :return: The auth_content of this ConnectorInfo0.
         :rtype: :class:`huaweicloudsdkmssi.v1.AuthConfigA`
@@ -164,7 +164,7 @@ class ConnectorInfo0:
 
     @auth_content.setter
     def auth_content(self, auth_content):
-        """Sets the auth_content of this ConnectorInfo0.
+        r"""Sets the auth_content of this ConnectorInfo0.
 
         :param auth_content: The auth_content of this ConnectorInfo0.
         :type auth_content: :class:`huaweicloudsdkmssi.v1.AuthConfigA`
@@ -173,7 +173,7 @@ class ConnectorInfo0:
 
     @property
     def auth_id(self):
-        """Gets the auth_id of this ConnectorInfo0.
+        r"""Gets the auth_id of this ConnectorInfo0.
 
         认证id
 
@@ -184,7 +184,7 @@ class ConnectorInfo0:
 
     @auth_id.setter
     def auth_id(self, auth_id):
-        """Sets the auth_id of this ConnectorInfo0.
+        r"""Sets the auth_id of this ConnectorInfo0.
 
         认证id
 
@@ -195,7 +195,7 @@ class ConnectorInfo0:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ConnectorInfo0.
+        r"""Gets the auth_type of this ConnectorInfo0.
 
         判断方式
 
@@ -206,7 +206,7 @@ class ConnectorInfo0:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ConnectorInfo0.
+        r"""Sets the auth_type of this ConnectorInfo0.
 
         判断方式
 
@@ -217,7 +217,7 @@ class ConnectorInfo0:
 
     @property
     def category(self):
-        """Gets the category of this ConnectorInfo0.
+        r"""Gets the category of this ConnectorInfo0.
 
         内置连接器查询
 
@@ -228,7 +228,7 @@ class ConnectorInfo0:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ConnectorInfo0.
+        r"""Sets the category of this ConnectorInfo0.
 
         内置连接器查询
 
@@ -239,7 +239,7 @@ class ConnectorInfo0:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ConnectorInfo0.
+        r"""Gets the created_time of this ConnectorInfo0.
 
         创建时间
 
@@ -250,7 +250,7 @@ class ConnectorInfo0:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ConnectorInfo0.
+        r"""Sets the created_time of this ConnectorInfo0.
 
         创建时间
 
@@ -261,7 +261,7 @@ class ConnectorInfo0:
 
     @property
     def definition_ref(self):
-        """Gets the definition_ref of this ConnectorInfo0.
+        r"""Gets the definition_ref of this ConnectorInfo0.
 
         连接器
 
@@ -272,7 +272,7 @@ class ConnectorInfo0:
 
     @definition_ref.setter
     def definition_ref(self, definition_ref):
-        """Sets the definition_ref of this ConnectorInfo0.
+        r"""Sets the definition_ref of this ConnectorInfo0.
 
         连接器
 
@@ -283,7 +283,7 @@ class ConnectorInfo0:
 
     @property
     def description(self):
-        """Gets the description of this ConnectorInfo0.
+        r"""Gets the description of this ConnectorInfo0.
 
         连接器描述
 
@@ -294,7 +294,7 @@ class ConnectorInfo0:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectorInfo0.
+        r"""Sets the description of this ConnectorInfo0.
 
         连接器描述
 
@@ -305,7 +305,7 @@ class ConnectorInfo0:
 
     @property
     def icon(self):
-        """Gets the icon of this ConnectorInfo0.
+        r"""Gets the icon of this ConnectorInfo0.
 
         logo base64编码
 
@@ -316,7 +316,7 @@ class ConnectorInfo0:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ConnectorInfo0.
+        r"""Sets the icon of this ConnectorInfo0.
 
         logo base64编码
 
@@ -327,7 +327,7 @@ class ConnectorInfo0:
 
     @property
     def id(self):
-        """Gets the id of this ConnectorInfo0.
+        r"""Gets the id of this ConnectorInfo0.
 
         连接器ID
 
@@ -338,7 +338,7 @@ class ConnectorInfo0:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectorInfo0.
+        r"""Sets the id of this ConnectorInfo0.
 
         连接器ID
 
@@ -349,7 +349,7 @@ class ConnectorInfo0:
 
     @property
     def name(self):
-        """Gets the name of this ConnectorInfo0.
+        r"""Gets the name of this ConnectorInfo0.
 
         连接器名称
 
@@ -360,7 +360,7 @@ class ConnectorInfo0:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectorInfo0.
+        r"""Sets the name of this ConnectorInfo0.
 
         连接器名称
 
@@ -371,7 +371,7 @@ class ConnectorInfo0:
 
     @property
     def need_auth(self):
-        """Gets the need_auth of this ConnectorInfo0.
+        r"""Gets the need_auth of this ConnectorInfo0.
 
         是否需要验证
 
@@ -382,7 +382,7 @@ class ConnectorInfo0:
 
     @need_auth.setter
     def need_auth(self, need_auth):
-        """Sets the need_auth of this ConnectorInfo0.
+        r"""Sets the need_auth of this ConnectorInfo0.
 
         是否需要验证
 
@@ -393,7 +393,7 @@ class ConnectorInfo0:
 
     @property
     def operations(self):
-        """Gets the operations of this ConnectorInfo0.
+        r"""Gets the operations of this ConnectorInfo0.
 
         视图数据
 
@@ -404,7 +404,7 @@ class ConnectorInfo0:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this ConnectorInfo0.
+        r"""Sets the operations of this ConnectorInfo0.
 
         视图数据
 
@@ -415,7 +415,7 @@ class ConnectorInfo0:
 
     @property
     def provider(self):
-        """Gets the provider of this ConnectorInfo0.
+        r"""Gets the provider of this ConnectorInfo0.
 
         供应商
 
@@ -426,7 +426,7 @@ class ConnectorInfo0:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ConnectorInfo0.
+        r"""Sets the provider of this ConnectorInfo0.
 
         供应商
 
@@ -437,7 +437,7 @@ class ConnectorInfo0:
 
     @property
     def swagger(self):
-        """Gets the swagger of this ConnectorInfo0.
+        r"""Gets the swagger of this ConnectorInfo0.
 
         swagger文档，大文本
 
@@ -448,7 +448,7 @@ class ConnectorInfo0:
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this ConnectorInfo0.
+        r"""Sets the swagger of this ConnectorInfo0.
 
         swagger文档，大文本
 
@@ -459,7 +459,7 @@ class ConnectorInfo0:
 
     @property
     def triggers(self):
-        """Gets the triggers of this ConnectorInfo0.
+        r"""Gets the triggers of this ConnectorInfo0.
 
         操作json
 
@@ -470,7 +470,7 @@ class ConnectorInfo0:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ConnectorInfo0.
+        r"""Sets the triggers of this ConnectorInfo0.
 
         操作json
 
@@ -481,7 +481,7 @@ class ConnectorInfo0:
 
     @property
     def type(self):
-        """Gets the type of this ConnectorInfo0.
+        r"""Gets the type of this ConnectorInfo0.
 
         连接器类型
 
@@ -492,7 +492,7 @@ class ConnectorInfo0:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectorInfo0.
+        r"""Sets the type of this ConnectorInfo0.
 
         连接器类型
 
@@ -503,7 +503,7 @@ class ConnectorInfo0:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ConnectorInfo0.
+        r"""Gets the updated_time of this ConnectorInfo0.
 
         修改时间
 
@@ -514,7 +514,7 @@ class ConnectorInfo0:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ConnectorInfo0.
+        r"""Sets the updated_time of this ConnectorInfo0.
 
         修改时间
 

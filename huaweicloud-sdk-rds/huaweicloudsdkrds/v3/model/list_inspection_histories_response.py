@@ -28,7 +28,7 @@ class ListInspectionHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, inspection_reports=None):
-        """ListInspectionHistoriesResponse
+        r"""ListInspectionHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInspectionHistoriesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInspectionHistoriesResponse.
+        r"""Gets the total_count of this ListInspectionHistoriesResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListInspectionHistoriesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInspectionHistoriesResponse.
+        r"""Sets the total_count of this ListInspectionHistoriesResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListInspectionHistoriesResponse(SdkResponse):
 
     @property
     def inspection_reports(self):
-        """Gets the inspection_reports of this ListInspectionHistoriesResponse.
+        r"""Gets the inspection_reports of this ListInspectionHistoriesResponse.
 
         检查报告信息。
 
@@ -84,7 +84,7 @@ class ListInspectionHistoriesResponse(SdkResponse):
 
     @inspection_reports.setter
     def inspection_reports(self, inspection_reports):
-        """Sets the inspection_reports of this ListInspectionHistoriesResponse.
+        r"""Sets the inspection_reports of this ListInspectionHistoriesResponse.
 
         检查报告信息。
 

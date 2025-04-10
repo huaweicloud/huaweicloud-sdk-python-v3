@@ -34,7 +34,7 @@ class CreateVpnUser:
     }
 
     def __init__(self, name=None, password=None, description=None, user_group_name=None, static_ip=None):
-        """CreateVpnUser
+        r"""CreateVpnUser
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateVpnUser:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpnUser.
+        r"""Gets the name of this CreateVpnUser.
 
         用户名
 
@@ -81,7 +81,7 @@ class CreateVpnUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpnUser.
+        r"""Sets the name of this CreateVpnUser.
 
         用户名
 
@@ -92,7 +92,7 @@ class CreateVpnUser:
 
     @property
     def password(self):
-        """Gets the password of this CreateVpnUser.
+        r"""Gets the password of this CreateVpnUser.
 
         用户密码
 
@@ -103,7 +103,7 @@ class CreateVpnUser:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateVpnUser.
+        r"""Sets the password of this CreateVpnUser.
 
         用户密码
 
@@ -114,7 +114,7 @@ class CreateVpnUser:
 
     @property
     def description(self):
-        """Gets the description of this CreateVpnUser.
+        r"""Gets the description of this CreateVpnUser.
 
         用户描述，0-64字符，中文、英文、数字包含下划线
 
@@ -125,7 +125,7 @@ class CreateVpnUser:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVpnUser.
+        r"""Sets the description of this CreateVpnUser.
 
         用户描述，0-64字符，中文、英文、数字包含下划线
 
@@ -136,7 +136,7 @@ class CreateVpnUser:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this CreateVpnUser.
+        r"""Gets the user_group_name of this CreateVpnUser.
 
         所属用户组名称
 
@@ -147,7 +147,7 @@ class CreateVpnUser:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this CreateVpnUser.
+        r"""Sets the user_group_name of this CreateVpnUser.
 
         所属用户组名称
 
@@ -158,7 +158,7 @@ class CreateVpnUser:
 
     @property
     def static_ip(self):
-        """Gets the static_ip of this CreateVpnUser.
+        r"""Gets the static_ip of this CreateVpnUser.
 
         静态客户端IP地址，默认值disable，表示随机分配客户端IP
 
@@ -169,7 +169,7 @@ class CreateVpnUser:
 
     @static_ip.setter
     def static_ip(self, static_ip):
-        """Sets the static_ip of this CreateVpnUser.
+        r"""Sets the static_ip of this CreateVpnUser.
 
         静态客户端IP地址，默认值disable，表示随机分配客户端IP
 

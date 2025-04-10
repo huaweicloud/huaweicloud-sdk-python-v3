@@ -37,7 +37,7 @@ class CreateGrantRequestBody:
     }
 
     def __init__(self, key_id=None, grantee_principal=None, operations=None, name=None, retiring_principal=None, grantee_principal_type=None, sequence=None):
-        """CreateGrantRequestBody
+        r"""CreateGrantRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateGrantRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateGrantRequestBody.
+        r"""Gets the key_id of this CreateGrantRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -93,7 +93,7 @@ class CreateGrantRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateGrantRequestBody.
+        r"""Sets the key_id of this CreateGrantRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -104,7 +104,7 @@ class CreateGrantRequestBody:
 
     @property
     def grantee_principal(self):
-        """Gets the grantee_principal of this CreateGrantRequestBody.
+        r"""Gets the grantee_principal of this CreateGrantRequestBody.
 
         被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -115,7 +115,7 @@ class CreateGrantRequestBody:
 
     @grantee_principal.setter
     def grantee_principal(self, grantee_principal):
-        """Sets the grantee_principal of this CreateGrantRequestBody.
+        r"""Sets the grantee_principal of this CreateGrantRequestBody.
 
         被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -126,7 +126,7 @@ class CreateGrantRequestBody:
 
     @property
     def operations(self):
-        """Gets the operations of this CreateGrantRequestBody.
+        r"""Gets the operations of this CreateGrantRequestBody.
 
         授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。  - “create-datakey” 创建数据密钥  - “create-datakey-without-plaintext” 创建不含明文数据密钥  - “encrypt-datakey” 加密数据密钥  - “decrypt-datakey” 解密数据密钥  - “describe-key” 查询密钥信息  - “retire-grant” 退役授权  - “encrypt-data” 加密数据  - “decrypt-data” 解密数据
 
@@ -137,7 +137,7 @@ class CreateGrantRequestBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this CreateGrantRequestBody.
+        r"""Sets the operations of this CreateGrantRequestBody.
 
         授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。  - “create-datakey” 创建数据密钥  - “create-datakey-without-plaintext” 创建不含明文数据密钥  - “encrypt-datakey” 加密数据密钥  - “decrypt-datakey” 解密数据密钥  - “describe-key” 查询密钥信息  - “retire-grant” 退役授权  - “encrypt-data” 加密数据  - “decrypt-data” 解密数据
 
@@ -148,7 +148,7 @@ class CreateGrantRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateGrantRequestBody.
+        r"""Gets the name of this CreateGrantRequestBody.
 
         授权名称，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
 
@@ -159,7 +159,7 @@ class CreateGrantRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGrantRequestBody.
+        r"""Sets the name of this CreateGrantRequestBody.
 
         授权名称，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
 
@@ -170,7 +170,7 @@ class CreateGrantRequestBody:
 
     @property
     def retiring_principal(self):
-        """Gets the retiring_principal of this CreateGrantRequestBody.
+        r"""Gets the retiring_principal of this CreateGrantRequestBody.
 
         可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -181,7 +181,7 @@ class CreateGrantRequestBody:
 
     @retiring_principal.setter
     def retiring_principal(self, retiring_principal):
-        """Sets the retiring_principal of this CreateGrantRequestBody.
+        r"""Sets the retiring_principal of this CreateGrantRequestBody.
 
         可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -192,7 +192,7 @@ class CreateGrantRequestBody:
 
     @property
     def grantee_principal_type(self):
-        """Gets the grantee_principal_type of this CreateGrantRequestBody.
+        r"""Gets the grantee_principal_type of this CreateGrantRequestBody.
 
         授权类型。有效值：“user”，“domain”。默认值为“user”。
 
@@ -203,7 +203,7 @@ class CreateGrantRequestBody:
 
     @grantee_principal_type.setter
     def grantee_principal_type(self, grantee_principal_type):
-        """Sets the grantee_principal_type of this CreateGrantRequestBody.
+        r"""Sets the grantee_principal_type of this CreateGrantRequestBody.
 
         授权类型。有效值：“user”，“domain”。默认值为“user”。
 
@@ -214,7 +214,7 @@ class CreateGrantRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CreateGrantRequestBody.
+        r"""Gets the sequence of this CreateGrantRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -225,7 +225,7 @@ class CreateGrantRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CreateGrantRequestBody.
+        r"""Sets the sequence of this CreateGrantRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

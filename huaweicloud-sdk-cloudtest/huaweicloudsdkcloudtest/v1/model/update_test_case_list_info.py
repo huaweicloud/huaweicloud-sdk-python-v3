@@ -233,7 +233,7 @@ class UpdateTestCaseListInfo:
     }
 
     def __init__(self, steps=None, attachments=None, author=None, name=None, rank=None, owner=None, preparation=None, remark=None, stage=None, activity=None, keywords=None, market=None, designer=None, tags=None, region=None, relate_type=None, service_type=None, only_change_script=None, add_to_iterator=None, need_update_relation=None, creation_version_uri=None, number=None, case_type=None, platform_type=None, test_type=None, design_note=None, test_step=None, expect_output=None, env_type=None, exe_platform=None, testcase_project=None, svn_script_path=None, map_restrict=None, network_script_name=None, auto_type=None, to_be_auto_exec=None, last_result=None, last_result_uri=None, feature_uri=None, interface_name=None, snp_no=None, dr_relation_id=None, test_base_num=None, automatically_executed=None, first_execute_time=None, detect_type=None, execute_param=None, test_feature=None, is_contract_testcase=None, time_cost=None, custom_field_1=None, custom_field_2=None, custom_field_3=None, custom_field_4=None, custom_field_5=None, custom_field_6=None, custom_field_7=None, custom_field_8=None, custom_field_9=None, custom_field_10=None, custom_field_11=None, custom_field_12=None, custom_field_13=None, custom_field_14=None, custom_field_15=None, custom_field_16=None, custom_field_17=None, custom_field_18=None, custom_field_19=None, custom_field_20=None, custom_field_21=None, custom_field_22=None, custom_field_23=None, custom_field_24=None, custom_field_25=None, be_auto_type_time=None, compare_number=None, scene_flag=None, base_flag=None, para_validator=None, knet_node_id=None, last_exe_author=None, cloud_carrier=None, market_place=None, test_mind_id=None, test_mind_url=None, commit_url=None, test_pattern_number=None, test_factor_number=None, status_code=None, result_code=None, release_id=None, label_id=None, label_names=None, module_id=None, execute_latest_time=None, execute_duration=None, is_keyword=None, release_dev=None, new_created=None, execute_parameter=None, project_uuid=None, version_uri=None, case_list=None, case_id_list=None):
-        """UpdateTestCaseListInfo
+        r"""UpdateTestCaseListInfo
 
         The model defined in huaweicloud sdk
 
@@ -770,7 +770,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def steps(self):
-        """Gets the steps of this UpdateTestCaseListInfo.
+        r"""Gets the steps of this UpdateTestCaseListInfo.
 
         对外测试步骤
 
@@ -781,7 +781,7 @@ class UpdateTestCaseListInfo:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this UpdateTestCaseListInfo.
+        r"""Sets the steps of this UpdateTestCaseListInfo.
 
         对外测试步骤
 
@@ -792,7 +792,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def attachments(self):
-        """Gets the attachments of this UpdateTestCaseListInfo.
+        r"""Gets the attachments of this UpdateTestCaseListInfo.
 
         对外附件
 
@@ -803,7 +803,7 @@ class UpdateTestCaseListInfo:
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this UpdateTestCaseListInfo.
+        r"""Sets the attachments of this UpdateTestCaseListInfo.
 
         对外附件
 
@@ -814,7 +814,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def author(self):
-        """Gets the author of this UpdateTestCaseListInfo.
+        r"""Gets the author of this UpdateTestCaseListInfo.
 
         创建人
 
@@ -825,7 +825,7 @@ class UpdateTestCaseListInfo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this UpdateTestCaseListInfo.
+        r"""Sets the author of this UpdateTestCaseListInfo.
 
         创建人
 
@@ -836,7 +836,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTestCaseListInfo.
+        r"""Gets the name of this UpdateTestCaseListInfo.
 
         名称
 
@@ -847,7 +847,7 @@ class UpdateTestCaseListInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTestCaseListInfo.
+        r"""Sets the name of this UpdateTestCaseListInfo.
 
         名称
 
@@ -858,7 +858,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def rank(self):
-        """Gets the rank of this UpdateTestCaseListInfo.
+        r"""Gets the rank of this UpdateTestCaseListInfo.
 
         用例等级
 
@@ -869,7 +869,7 @@ class UpdateTestCaseListInfo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this UpdateTestCaseListInfo.
+        r"""Sets the rank of this UpdateTestCaseListInfo.
 
         用例等级
 
@@ -880,7 +880,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this UpdateTestCaseListInfo.
+        r"""Gets the owner of this UpdateTestCaseListInfo.
 
         处理人
 
@@ -891,7 +891,7 @@ class UpdateTestCaseListInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UpdateTestCaseListInfo.
+        r"""Sets the owner of this UpdateTestCaseListInfo.
 
         处理人
 
@@ -902,7 +902,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def preparation(self):
-        """Gets the preparation of this UpdateTestCaseListInfo.
+        r"""Gets the preparation of this UpdateTestCaseListInfo.
 
         前置条件
 
@@ -913,7 +913,7 @@ class UpdateTestCaseListInfo:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this UpdateTestCaseListInfo.
+        r"""Sets the preparation of this UpdateTestCaseListInfo.
 
         前置条件
 
@@ -924,7 +924,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateTestCaseListInfo.
+        r"""Gets the remark of this UpdateTestCaseListInfo.
 
         备注
 
@@ -935,7 +935,7 @@ class UpdateTestCaseListInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateTestCaseListInfo.
+        r"""Sets the remark of this UpdateTestCaseListInfo.
 
         备注
 
@@ -946,7 +946,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this UpdateTestCaseListInfo.
+        r"""Gets the stage of this UpdateTestCaseListInfo.
 
         测试阶段
 
@@ -957,7 +957,7 @@ class UpdateTestCaseListInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this UpdateTestCaseListInfo.
+        r"""Sets the stage of this UpdateTestCaseListInfo.
 
         测试阶段
 
@@ -968,7 +968,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def activity(self):
-        """Gets the activity of this UpdateTestCaseListInfo.
+        r"""Gets the activity of this UpdateTestCaseListInfo.
 
         测试类型
 
@@ -979,7 +979,7 @@ class UpdateTestCaseListInfo:
 
     @activity.setter
     def activity(self, activity):
-        """Sets the activity of this UpdateTestCaseListInfo.
+        r"""Sets the activity of this UpdateTestCaseListInfo.
 
         测试类型
 
@@ -990,7 +990,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def keywords(self):
-        """Gets the keywords of this UpdateTestCaseListInfo.
+        r"""Gets the keywords of this UpdateTestCaseListInfo.
 
         关键词
 
@@ -1001,7 +1001,7 @@ class UpdateTestCaseListInfo:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this UpdateTestCaseListInfo.
+        r"""Sets the keywords of this UpdateTestCaseListInfo.
 
         关键词
 
@@ -1012,7 +1012,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def market(self):
-        """Gets the market of this UpdateTestCaseListInfo.
+        r"""Gets the market of this UpdateTestCaseListInfo.
 
         apitest标记是否代码已提交
 
@@ -1023,7 +1023,7 @@ class UpdateTestCaseListInfo:
 
     @market.setter
     def market(self, market):
-        """Sets the market of this UpdateTestCaseListInfo.
+        r"""Sets the market of this UpdateTestCaseListInfo.
 
         apitest标记是否代码已提交
 
@@ -1034,7 +1034,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def designer(self):
-        """Gets the designer of this UpdateTestCaseListInfo.
+        r"""Gets the designer of this UpdateTestCaseListInfo.
 
         设计者
 
@@ -1045,7 +1045,7 @@ class UpdateTestCaseListInfo:
 
     @designer.setter
     def designer(self, designer):
-        """Sets the designer of this UpdateTestCaseListInfo.
+        r"""Sets the designer of this UpdateTestCaseListInfo.
 
         设计者
 
@@ -1056,7 +1056,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateTestCaseListInfo.
+        r"""Gets the tags of this UpdateTestCaseListInfo.
 
         标签
 
@@ -1067,7 +1067,7 @@ class UpdateTestCaseListInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateTestCaseListInfo.
+        r"""Sets the tags of this UpdateTestCaseListInfo.
 
         标签
 
@@ -1078,7 +1078,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def region(self):
-        """Gets the region of this UpdateTestCaseListInfo.
+        r"""Gets the region of this UpdateTestCaseListInfo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -1089,7 +1089,7 @@ class UpdateTestCaseListInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UpdateTestCaseListInfo.
+        r"""Sets the region of this UpdateTestCaseListInfo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -1100,7 +1100,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def relate_type(self):
-        """Gets the relate_type of this UpdateTestCaseListInfo.
+        r"""Gets the relate_type of this UpdateTestCaseListInfo.
 
         对外关联资源类型
 
@@ -1111,7 +1111,7 @@ class UpdateTestCaseListInfo:
 
     @relate_type.setter
     def relate_type(self, relate_type):
-        """Sets the relate_type of this UpdateTestCaseListInfo.
+        r"""Sets the relate_type of this UpdateTestCaseListInfo.
 
         对外关联资源类型
 
@@ -1122,7 +1122,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this UpdateTestCaseListInfo.
+        r"""Gets the service_type of this UpdateTestCaseListInfo.
 
         服务类型
 
@@ -1133,7 +1133,7 @@ class UpdateTestCaseListInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this UpdateTestCaseListInfo.
+        r"""Sets the service_type of this UpdateTestCaseListInfo.
 
         服务类型
 
@@ -1144,7 +1144,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def only_change_script(self):
-        """Gets the only_change_script of this UpdateTestCaseListInfo.
+        r"""Gets the only_change_script of this UpdateTestCaseListInfo.
 
         对外只更新接口用例的java脚本路径标识
 
@@ -1155,7 +1155,7 @@ class UpdateTestCaseListInfo:
 
     @only_change_script.setter
     def only_change_script(self, only_change_script):
-        """Sets the only_change_script of this UpdateTestCaseListInfo.
+        r"""Sets the only_change_script of this UpdateTestCaseListInfo.
 
         对外只更新接口用例的java脚本路径标识
 
@@ -1166,7 +1166,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def add_to_iterator(self):
-        """Gets the add_to_iterator of this UpdateTestCaseListInfo.
+        r"""Gets the add_to_iterator of this UpdateTestCaseListInfo.
 
         对外需求添加到迭代标识
 
@@ -1177,7 +1177,7 @@ class UpdateTestCaseListInfo:
 
     @add_to_iterator.setter
     def add_to_iterator(self, add_to_iterator):
-        """Sets the add_to_iterator of this UpdateTestCaseListInfo.
+        r"""Sets the add_to_iterator of this UpdateTestCaseListInfo.
 
         对外需求添加到迭代标识
 
@@ -1188,7 +1188,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def need_update_relation(self):
-        """Gets the need_update_relation of this UpdateTestCaseListInfo.
+        r"""Gets the need_update_relation of this UpdateTestCaseListInfo.
 
         是否修改关联关系
 
@@ -1199,7 +1199,7 @@ class UpdateTestCaseListInfo:
 
     @need_update_relation.setter
     def need_update_relation(self, need_update_relation):
-        """Sets the need_update_relation of this UpdateTestCaseListInfo.
+        r"""Sets the need_update_relation of this UpdateTestCaseListInfo.
 
         是否修改关联关系
 
@@ -1210,7 +1210,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this UpdateTestCaseListInfo.
+        r"""Gets the creation_version_uri of this UpdateTestCaseListInfo.
 
         创建版本Uri
 
@@ -1221,7 +1221,7 @@ class UpdateTestCaseListInfo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this UpdateTestCaseListInfo.
+        r"""Sets the creation_version_uri of this UpdateTestCaseListInfo.
 
         创建版本Uri
 
@@ -1232,7 +1232,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def number(self):
-        """Gets the number of this UpdateTestCaseListInfo.
+        r"""Gets the number of this UpdateTestCaseListInfo.
 
         用例编号
 
@@ -1243,7 +1243,7 @@ class UpdateTestCaseListInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this UpdateTestCaseListInfo.
+        r"""Sets the number of this UpdateTestCaseListInfo.
 
         用例编号
 
@@ -1254,7 +1254,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def case_type(self):
-        """Gets the case_type of this UpdateTestCaseListInfo.
+        r"""Gets the case_type of this UpdateTestCaseListInfo.
 
         用例类型
 
@@ -1265,7 +1265,7 @@ class UpdateTestCaseListInfo:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this UpdateTestCaseListInfo.
+        r"""Sets the case_type of this UpdateTestCaseListInfo.
 
         用例类型
 
@@ -1276,7 +1276,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this UpdateTestCaseListInfo.
+        r"""Gets the platform_type of this UpdateTestCaseListInfo.
 
         执行平台类型
 
@@ -1287,7 +1287,7 @@ class UpdateTestCaseListInfo:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this UpdateTestCaseListInfo.
+        r"""Sets the platform_type of this UpdateTestCaseListInfo.
 
         执行平台类型
 
@@ -1298,7 +1298,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this UpdateTestCaseListInfo.
+        r"""Gets the test_type of this UpdateTestCaseListInfo.
 
         测试类型
 
@@ -1309,7 +1309,7 @@ class UpdateTestCaseListInfo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this UpdateTestCaseListInfo.
+        r"""Sets the test_type of this UpdateTestCaseListInfo.
 
         测试类型
 
@@ -1320,7 +1320,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def design_note(self):
-        """Gets the design_note of this UpdateTestCaseListInfo.
+        r"""Gets the design_note of this UpdateTestCaseListInfo.
 
         设计描述
 
@@ -1331,7 +1331,7 @@ class UpdateTestCaseListInfo:
 
     @design_note.setter
     def design_note(self, design_note):
-        """Sets the design_note of this UpdateTestCaseListInfo.
+        r"""Sets the design_note of this UpdateTestCaseListInfo.
 
         设计描述
 
@@ -1342,7 +1342,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this UpdateTestCaseListInfo.
+        r"""Gets the test_step of this UpdateTestCaseListInfo.
 
         测试步骤
 
@@ -1353,7 +1353,7 @@ class UpdateTestCaseListInfo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this UpdateTestCaseListInfo.
+        r"""Sets the test_step of this UpdateTestCaseListInfo.
 
         测试步骤
 
@@ -1364,7 +1364,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def expect_output(self):
-        """Gets the expect_output of this UpdateTestCaseListInfo.
+        r"""Gets the expect_output of this UpdateTestCaseListInfo.
 
         期望结果
 
@@ -1375,7 +1375,7 @@ class UpdateTestCaseListInfo:
 
     @expect_output.setter
     def expect_output(self, expect_output):
-        """Sets the expect_output of this UpdateTestCaseListInfo.
+        r"""Sets the expect_output of this UpdateTestCaseListInfo.
 
         期望结果
 
@@ -1386,7 +1386,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def env_type(self):
-        """Gets the env_type of this UpdateTestCaseListInfo.
+        r"""Gets the env_type of this UpdateTestCaseListInfo.
 
         测试环境类型
 
@@ -1397,7 +1397,7 @@ class UpdateTestCaseListInfo:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this UpdateTestCaseListInfo.
+        r"""Sets the env_type of this UpdateTestCaseListInfo.
 
         测试环境类型
 
@@ -1408,7 +1408,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def exe_platform(self):
-        """Gets the exe_platform of this UpdateTestCaseListInfo.
+        r"""Gets the exe_platform of this UpdateTestCaseListInfo.
 
         执行平台
 
@@ -1419,7 +1419,7 @@ class UpdateTestCaseListInfo:
 
     @exe_platform.setter
     def exe_platform(self, exe_platform):
-        """Sets the exe_platform of this UpdateTestCaseListInfo.
+        r"""Sets the exe_platform of this UpdateTestCaseListInfo.
 
         执行平台
 
@@ -1430,7 +1430,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def testcase_project(self):
-        """Gets the testcase_project of this UpdateTestCaseListInfo.
+        r"""Gets the testcase_project of this UpdateTestCaseListInfo.
 
         测试工程
 
@@ -1441,7 +1441,7 @@ class UpdateTestCaseListInfo:
 
     @testcase_project.setter
     def testcase_project(self, testcase_project):
-        """Sets the testcase_project of this UpdateTestCaseListInfo.
+        r"""Sets the testcase_project of this UpdateTestCaseListInfo.
 
         测试工程
 
@@ -1452,7 +1452,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def svn_script_path(self):
-        """Gets the svn_script_path of this UpdateTestCaseListInfo.
+        r"""Gets the svn_script_path of this UpdateTestCaseListInfo.
 
         脚本路径
 
@@ -1463,7 +1463,7 @@ class UpdateTestCaseListInfo:
 
     @svn_script_path.setter
     def svn_script_path(self, svn_script_path):
-        """Sets the svn_script_path of this UpdateTestCaseListInfo.
+        r"""Sets the svn_script_path of this UpdateTestCaseListInfo.
 
         脚本路径
 
@@ -1474,7 +1474,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def map_restrict(self):
-        """Gets the map_restrict of this UpdateTestCaseListInfo.
+        r"""Gets the map_restrict of this UpdateTestCaseListInfo.
 
         约束条件
 
@@ -1485,7 +1485,7 @@ class UpdateTestCaseListInfo:
 
     @map_restrict.setter
     def map_restrict(self, map_restrict):
-        """Sets the map_restrict of this UpdateTestCaseListInfo.
+        r"""Sets the map_restrict of this UpdateTestCaseListInfo.
 
         约束条件
 
@@ -1496,7 +1496,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def network_script_name(self):
-        """Gets the network_script_name of this UpdateTestCaseListInfo.
+        r"""Gets the network_script_name of this UpdateTestCaseListInfo.
 
         网络脚本名
 
@@ -1507,7 +1507,7 @@ class UpdateTestCaseListInfo:
 
     @network_script_name.setter
     def network_script_name(self, network_script_name):
-        """Sets the network_script_name of this UpdateTestCaseListInfo.
+        r"""Sets the network_script_name of this UpdateTestCaseListInfo.
 
         网络脚本名
 
@@ -1518,7 +1518,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def auto_type(self):
-        """Gets the auto_type of this UpdateTestCaseListInfo.
+        r"""Gets the auto_type of this UpdateTestCaseListInfo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1529,7 +1529,7 @@ class UpdateTestCaseListInfo:
 
     @auto_type.setter
     def auto_type(self, auto_type):
-        """Sets the auto_type of this UpdateTestCaseListInfo.
+        r"""Sets the auto_type of this UpdateTestCaseListInfo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1540,7 +1540,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def to_be_auto_exec(self):
-        """Gets the to_be_auto_exec of this UpdateTestCaseListInfo.
+        r"""Gets the to_be_auto_exec of this UpdateTestCaseListInfo.
 
         被自动化执行
 
@@ -1551,7 +1551,7 @@ class UpdateTestCaseListInfo:
 
     @to_be_auto_exec.setter
     def to_be_auto_exec(self, to_be_auto_exec):
-        """Sets the to_be_auto_exec of this UpdateTestCaseListInfo.
+        r"""Sets the to_be_auto_exec of this UpdateTestCaseListInfo.
 
         被自动化执行
 
@@ -1562,7 +1562,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def last_result(self):
-        """Gets the last_result of this UpdateTestCaseListInfo.
+        r"""Gets the last_result of this UpdateTestCaseListInfo.
 
         最后一次结果
 
@@ -1573,7 +1573,7 @@ class UpdateTestCaseListInfo:
 
     @last_result.setter
     def last_result(self, last_result):
-        """Sets the last_result of this UpdateTestCaseListInfo.
+        r"""Sets the last_result of this UpdateTestCaseListInfo.
 
         最后一次结果
 
@@ -1584,7 +1584,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def last_result_uri(self):
-        """Gets the last_result_uri of this UpdateTestCaseListInfo.
+        r"""Gets the last_result_uri of this UpdateTestCaseListInfo.
 
         最后一次结果Uri
 
@@ -1595,7 +1595,7 @@ class UpdateTestCaseListInfo:
 
     @last_result_uri.setter
     def last_result_uri(self, last_result_uri):
-        """Sets the last_result_uri of this UpdateTestCaseListInfo.
+        r"""Sets the last_result_uri of this UpdateTestCaseListInfo.
 
         最后一次结果Uri
 
@@ -1606,7 +1606,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this UpdateTestCaseListInfo.
+        r"""Gets the feature_uri of this UpdateTestCaseListInfo.
 
         目录Uri
 
@@ -1617,7 +1617,7 @@ class UpdateTestCaseListInfo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this UpdateTestCaseListInfo.
+        r"""Sets the feature_uri of this UpdateTestCaseListInfo.
 
         目录Uri
 
@@ -1628,7 +1628,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this UpdateTestCaseListInfo.
+        r"""Gets the interface_name of this UpdateTestCaseListInfo.
 
         测试接口名
 
@@ -1639,7 +1639,7 @@ class UpdateTestCaseListInfo:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this UpdateTestCaseListInfo.
+        r"""Sets the interface_name of this UpdateTestCaseListInfo.
 
         测试接口名
 
@@ -1650,7 +1650,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def snp_no(self):
-        """Gets the snp_no of this UpdateTestCaseListInfo.
+        r"""Gets the snp_no of this UpdateTestCaseListInfo.
 
         网络问题ID
 
@@ -1661,7 +1661,7 @@ class UpdateTestCaseListInfo:
 
     @snp_no.setter
     def snp_no(self, snp_no):
-        """Sets the snp_no of this UpdateTestCaseListInfo.
+        r"""Sets the snp_no of this UpdateTestCaseListInfo.
 
         网络问题ID
 
@@ -1672,7 +1672,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def dr_relation_id(self):
-        """Gets the dr_relation_id of this UpdateTestCaseListInfo.
+        r"""Gets the dr_relation_id of this UpdateTestCaseListInfo.
 
         关联需求编号
 
@@ -1683,7 +1683,7 @@ class UpdateTestCaseListInfo:
 
     @dr_relation_id.setter
     def dr_relation_id(self, dr_relation_id):
-        """Sets the dr_relation_id of this UpdateTestCaseListInfo.
+        r"""Sets the dr_relation_id of this UpdateTestCaseListInfo.
 
         关联需求编号
 
@@ -1694,7 +1694,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_base_num(self):
-        """Gets the test_base_num of this UpdateTestCaseListInfo.
+        r"""Gets the test_base_num of this UpdateTestCaseListInfo.
 
         测试基数
 
@@ -1705,7 +1705,7 @@ class UpdateTestCaseListInfo:
 
     @test_base_num.setter
     def test_base_num(self, test_base_num):
-        """Sets the test_base_num of this UpdateTestCaseListInfo.
+        r"""Sets the test_base_num of this UpdateTestCaseListInfo.
 
         测试基数
 
@@ -1716,7 +1716,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def automatically_executed(self):
-        """Gets the automatically_executed of this UpdateTestCaseListInfo.
+        r"""Gets the automatically_executed of this UpdateTestCaseListInfo.
 
         是否被自动化执行
 
@@ -1727,7 +1727,7 @@ class UpdateTestCaseListInfo:
 
     @automatically_executed.setter
     def automatically_executed(self, automatically_executed):
-        """Sets the automatically_executed of this UpdateTestCaseListInfo.
+        r"""Sets the automatically_executed of this UpdateTestCaseListInfo.
 
         是否被自动化执行
 
@@ -1738,7 +1738,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def first_execute_time(self):
-        """Gets the first_execute_time of this UpdateTestCaseListInfo.
+        r"""Gets the first_execute_time of this UpdateTestCaseListInfo.
 
         第一次执行时间
 
@@ -1749,7 +1749,7 @@ class UpdateTestCaseListInfo:
 
     @first_execute_time.setter
     def first_execute_time(self, first_execute_time):
-        """Sets the first_execute_time of this UpdateTestCaseListInfo.
+        r"""Sets the first_execute_time of this UpdateTestCaseListInfo.
 
         第一次执行时间
 
@@ -1760,7 +1760,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def detect_type(self):
-        """Gets the detect_type of this UpdateTestCaseListInfo.
+        r"""Gets the detect_type of this UpdateTestCaseListInfo.
 
         检测类型
 
@@ -1771,7 +1771,7 @@ class UpdateTestCaseListInfo:
 
     @detect_type.setter
     def detect_type(self, detect_type):
-        """Sets the detect_type of this UpdateTestCaseListInfo.
+        r"""Sets the detect_type of this UpdateTestCaseListInfo.
 
         检测类型
 
@@ -1782,7 +1782,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def execute_param(self):
-        """Gets the execute_param of this UpdateTestCaseListInfo.
+        r"""Gets the execute_param of this UpdateTestCaseListInfo.
 
         执行参数
 
@@ -1793,7 +1793,7 @@ class UpdateTestCaseListInfo:
 
     @execute_param.setter
     def execute_param(self, execute_param):
-        """Sets the execute_param of this UpdateTestCaseListInfo.
+        r"""Sets the execute_param of this UpdateTestCaseListInfo.
 
         执行参数
 
@@ -1804,7 +1804,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_feature(self):
-        """Gets the test_feature of this UpdateTestCaseListInfo.
+        r"""Gets the test_feature of this UpdateTestCaseListInfo.
 
         分析领域
 
@@ -1815,7 +1815,7 @@ class UpdateTestCaseListInfo:
 
     @test_feature.setter
     def test_feature(self, test_feature):
-        """Sets the test_feature of this UpdateTestCaseListInfo.
+        r"""Sets the test_feature of this UpdateTestCaseListInfo.
 
         分析领域
 
@@ -1826,7 +1826,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def is_contract_testcase(self):
-        """Gets the is_contract_testcase of this UpdateTestCaseListInfo.
+        r"""Gets the is_contract_testcase of this UpdateTestCaseListInfo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -1837,7 +1837,7 @@ class UpdateTestCaseListInfo:
 
     @is_contract_testcase.setter
     def is_contract_testcase(self, is_contract_testcase):
-        """Sets the is_contract_testcase of this UpdateTestCaseListInfo.
+        r"""Sets the is_contract_testcase of this UpdateTestCaseListInfo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -1848,7 +1848,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def time_cost(self):
-        """Gets the time_cost of this UpdateTestCaseListInfo.
+        r"""Gets the time_cost of this UpdateTestCaseListInfo.
 
         总共耗时
 
@@ -1859,7 +1859,7 @@ class UpdateTestCaseListInfo:
 
     @time_cost.setter
     def time_cost(self, time_cost):
-        """Sets the time_cost of this UpdateTestCaseListInfo.
+        r"""Sets the time_cost of this UpdateTestCaseListInfo.
 
         总共耗时
 
@@ -1870,7 +1870,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_1(self):
-        """Gets the custom_field_1 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_1 of this UpdateTestCaseListInfo.
 
         自定义字段1
 
@@ -1881,7 +1881,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_1.setter
     def custom_field_1(self, custom_field_1):
-        """Sets the custom_field_1 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_1 of this UpdateTestCaseListInfo.
 
         自定义字段1
 
@@ -1892,7 +1892,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_2(self):
-        """Gets the custom_field_2 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_2 of this UpdateTestCaseListInfo.
 
         自定义字段2
 
@@ -1903,7 +1903,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_2.setter
     def custom_field_2(self, custom_field_2):
-        """Sets the custom_field_2 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_2 of this UpdateTestCaseListInfo.
 
         自定义字段2
 
@@ -1914,7 +1914,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_3(self):
-        """Gets the custom_field_3 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_3 of this UpdateTestCaseListInfo.
 
         自定义字段3
 
@@ -1925,7 +1925,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_3.setter
     def custom_field_3(self, custom_field_3):
-        """Sets the custom_field_3 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_3 of this UpdateTestCaseListInfo.
 
         自定义字段3
 
@@ -1936,7 +1936,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_4(self):
-        """Gets the custom_field_4 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_4 of this UpdateTestCaseListInfo.
 
         自定义字段4
 
@@ -1947,7 +1947,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_4.setter
     def custom_field_4(self, custom_field_4):
-        """Sets the custom_field_4 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_4 of this UpdateTestCaseListInfo.
 
         自定义字段4
 
@@ -1958,7 +1958,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_5(self):
-        """Gets the custom_field_5 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_5 of this UpdateTestCaseListInfo.
 
         自定义字段5
 
@@ -1969,7 +1969,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_5.setter
     def custom_field_5(self, custom_field_5):
-        """Sets the custom_field_5 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_5 of this UpdateTestCaseListInfo.
 
         自定义字段5
 
@@ -1980,7 +1980,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_6(self):
-        """Gets the custom_field_6 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_6 of this UpdateTestCaseListInfo.
 
         自定义字段6
 
@@ -1991,7 +1991,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_6.setter
     def custom_field_6(self, custom_field_6):
-        """Sets the custom_field_6 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_6 of this UpdateTestCaseListInfo.
 
         自定义字段6
 
@@ -2002,7 +2002,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_7(self):
-        """Gets the custom_field_7 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_7 of this UpdateTestCaseListInfo.
 
         自定义字段7
 
@@ -2013,7 +2013,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_7.setter
     def custom_field_7(self, custom_field_7):
-        """Sets the custom_field_7 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_7 of this UpdateTestCaseListInfo.
 
         自定义字段7
 
@@ -2024,7 +2024,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_8(self):
-        """Gets the custom_field_8 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_8 of this UpdateTestCaseListInfo.
 
         自定义字段8
 
@@ -2035,7 +2035,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_8.setter
     def custom_field_8(self, custom_field_8):
-        """Sets the custom_field_8 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_8 of this UpdateTestCaseListInfo.
 
         自定义字段8
 
@@ -2046,7 +2046,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_9(self):
-        """Gets the custom_field_9 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_9 of this UpdateTestCaseListInfo.
 
         自定义字段9
 
@@ -2057,7 +2057,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_9.setter
     def custom_field_9(self, custom_field_9):
-        """Sets the custom_field_9 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_9 of this UpdateTestCaseListInfo.
 
         自定义字段9
 
@@ -2068,7 +2068,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_10(self):
-        """Gets the custom_field_10 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_10 of this UpdateTestCaseListInfo.
 
         自定义字段10
 
@@ -2079,7 +2079,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_10.setter
     def custom_field_10(self, custom_field_10):
-        """Sets the custom_field_10 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_10 of this UpdateTestCaseListInfo.
 
         自定义字段10
 
@@ -2090,7 +2090,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_11(self):
-        """Gets the custom_field_11 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_11 of this UpdateTestCaseListInfo.
 
         自定义字段11
 
@@ -2101,7 +2101,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_11.setter
     def custom_field_11(self, custom_field_11):
-        """Sets the custom_field_11 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_11 of this UpdateTestCaseListInfo.
 
         自定义字段11
 
@@ -2112,7 +2112,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_12(self):
-        """Gets the custom_field_12 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_12 of this UpdateTestCaseListInfo.
 
         自定义字段12
 
@@ -2123,7 +2123,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_12.setter
     def custom_field_12(self, custom_field_12):
-        """Sets the custom_field_12 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_12 of this UpdateTestCaseListInfo.
 
         自定义字段12
 
@@ -2134,7 +2134,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_13(self):
-        """Gets the custom_field_13 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_13 of this UpdateTestCaseListInfo.
 
         自定义字段13
 
@@ -2145,7 +2145,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_13.setter
     def custom_field_13(self, custom_field_13):
-        """Sets the custom_field_13 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_13 of this UpdateTestCaseListInfo.
 
         自定义字段13
 
@@ -2156,7 +2156,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_14(self):
-        """Gets the custom_field_14 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_14 of this UpdateTestCaseListInfo.
 
         自定义字段14
 
@@ -2167,7 +2167,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_14.setter
     def custom_field_14(self, custom_field_14):
-        """Sets the custom_field_14 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_14 of this UpdateTestCaseListInfo.
 
         自定义字段14
 
@@ -2178,7 +2178,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_15(self):
-        """Gets the custom_field_15 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_15 of this UpdateTestCaseListInfo.
 
         自定义字段15
 
@@ -2189,7 +2189,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_15.setter
     def custom_field_15(self, custom_field_15):
-        """Sets the custom_field_15 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_15 of this UpdateTestCaseListInfo.
 
         自定义字段15
 
@@ -2200,7 +2200,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_16(self):
-        """Gets the custom_field_16 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_16 of this UpdateTestCaseListInfo.
 
         自定义字段16
 
@@ -2211,7 +2211,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_16.setter
     def custom_field_16(self, custom_field_16):
-        """Sets the custom_field_16 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_16 of this UpdateTestCaseListInfo.
 
         自定义字段16
 
@@ -2222,7 +2222,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_17(self):
-        """Gets the custom_field_17 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_17 of this UpdateTestCaseListInfo.
 
         自定义字段17
 
@@ -2233,7 +2233,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_17.setter
     def custom_field_17(self, custom_field_17):
-        """Sets the custom_field_17 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_17 of this UpdateTestCaseListInfo.
 
         自定义字段17
 
@@ -2244,7 +2244,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_18(self):
-        """Gets the custom_field_18 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_18 of this UpdateTestCaseListInfo.
 
         自定义字段18
 
@@ -2255,7 +2255,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_18.setter
     def custom_field_18(self, custom_field_18):
-        """Sets the custom_field_18 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_18 of this UpdateTestCaseListInfo.
 
         自定义字段18
 
@@ -2266,7 +2266,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_19(self):
-        """Gets the custom_field_19 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_19 of this UpdateTestCaseListInfo.
 
         自定义字段19
 
@@ -2277,7 +2277,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_19.setter
     def custom_field_19(self, custom_field_19):
-        """Sets the custom_field_19 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_19 of this UpdateTestCaseListInfo.
 
         自定义字段19
 
@@ -2288,7 +2288,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_20(self):
-        """Gets the custom_field_20 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_20 of this UpdateTestCaseListInfo.
 
         自定义字段20
 
@@ -2299,7 +2299,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_20.setter
     def custom_field_20(self, custom_field_20):
-        """Sets the custom_field_20 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_20 of this UpdateTestCaseListInfo.
 
         自定义字段20
 
@@ -2310,7 +2310,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_21(self):
-        """Gets the custom_field_21 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_21 of this UpdateTestCaseListInfo.
 
         自定义字段21
 
@@ -2321,7 +2321,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_21.setter
     def custom_field_21(self, custom_field_21):
-        """Sets the custom_field_21 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_21 of this UpdateTestCaseListInfo.
 
         自定义字段21
 
@@ -2332,7 +2332,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_22(self):
-        """Gets the custom_field_22 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_22 of this UpdateTestCaseListInfo.
 
         自定义字段22
 
@@ -2343,7 +2343,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_22.setter
     def custom_field_22(self, custom_field_22):
-        """Sets the custom_field_22 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_22 of this UpdateTestCaseListInfo.
 
         自定义字段22
 
@@ -2354,7 +2354,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_23(self):
-        """Gets the custom_field_23 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_23 of this UpdateTestCaseListInfo.
 
         自定义字段23
 
@@ -2365,7 +2365,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_23.setter
     def custom_field_23(self, custom_field_23):
-        """Sets the custom_field_23 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_23 of this UpdateTestCaseListInfo.
 
         自定义字段23
 
@@ -2376,7 +2376,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_24(self):
-        """Gets the custom_field_24 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_24 of this UpdateTestCaseListInfo.
 
         自定义字段24
 
@@ -2387,7 +2387,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_24.setter
     def custom_field_24(self, custom_field_24):
-        """Sets the custom_field_24 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_24 of this UpdateTestCaseListInfo.
 
         自定义字段24
 
@@ -2398,7 +2398,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def custom_field_25(self):
-        """Gets the custom_field_25 of this UpdateTestCaseListInfo.
+        r"""Gets the custom_field_25 of this UpdateTestCaseListInfo.
 
         自定义字段25
 
@@ -2409,7 +2409,7 @@ class UpdateTestCaseListInfo:
 
     @custom_field_25.setter
     def custom_field_25(self, custom_field_25):
-        """Sets the custom_field_25 of this UpdateTestCaseListInfo.
+        r"""Sets the custom_field_25 of this UpdateTestCaseListInfo.
 
         自定义字段25
 
@@ -2420,7 +2420,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def be_auto_type_time(self):
-        """Gets the be_auto_type_time of this UpdateTestCaseListInfo.
+        r"""Gets the be_auto_type_time of this UpdateTestCaseListInfo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2431,7 +2431,7 @@ class UpdateTestCaseListInfo:
 
     @be_auto_type_time.setter
     def be_auto_type_time(self, be_auto_type_time):
-        """Sets the be_auto_type_time of this UpdateTestCaseListInfo.
+        r"""Sets the be_auto_type_time of this UpdateTestCaseListInfo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2442,7 +2442,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def compare_number(self):
-        """Gets the compare_number of this UpdateTestCaseListInfo.
+        r"""Gets the compare_number of this UpdateTestCaseListInfo.
 
         配对用例编号
 
@@ -2453,7 +2453,7 @@ class UpdateTestCaseListInfo:
 
     @compare_number.setter
     def compare_number(self, compare_number):
-        """Sets the compare_number of this UpdateTestCaseListInfo.
+        r"""Sets the compare_number of this UpdateTestCaseListInfo.
 
         配对用例编号
 
@@ -2464,7 +2464,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def scene_flag(self):
-        """Gets the scene_flag of this UpdateTestCaseListInfo.
+        r"""Gets the scene_flag of this UpdateTestCaseListInfo.
 
         场景标识
 
@@ -2475,7 +2475,7 @@ class UpdateTestCaseListInfo:
 
     @scene_flag.setter
     def scene_flag(self, scene_flag):
-        """Sets the scene_flag of this UpdateTestCaseListInfo.
+        r"""Sets the scene_flag of this UpdateTestCaseListInfo.
 
         场景标识
 
@@ -2486,7 +2486,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def base_flag(self):
-        """Gets the base_flag of this UpdateTestCaseListInfo.
+        r"""Gets the base_flag of this UpdateTestCaseListInfo.
 
         场景标识
 
@@ -2497,7 +2497,7 @@ class UpdateTestCaseListInfo:
 
     @base_flag.setter
     def base_flag(self, base_flag):
-        """Sets the base_flag of this UpdateTestCaseListInfo.
+        r"""Sets the base_flag of this UpdateTestCaseListInfo.
 
         场景标识
 
@@ -2508,7 +2508,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def para_validator(self):
-        """Gets the para_validator of this UpdateTestCaseListInfo.
+        r"""Gets the para_validator of this UpdateTestCaseListInfo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2519,7 +2519,7 @@ class UpdateTestCaseListInfo:
 
     @para_validator.setter
     def para_validator(self, para_validator):
-        """Sets the para_validator of this UpdateTestCaseListInfo.
+        r"""Sets the para_validator of this UpdateTestCaseListInfo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2530,7 +2530,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def knet_node_id(self):
-        """Gets the knet_node_id of this UpdateTestCaseListInfo.
+        r"""Gets the knet_node_id of this UpdateTestCaseListInfo.
 
         knet节点id
 
@@ -2541,7 +2541,7 @@ class UpdateTestCaseListInfo:
 
     @knet_node_id.setter
     def knet_node_id(self, knet_node_id):
-        """Sets the knet_node_id of this UpdateTestCaseListInfo.
+        r"""Sets the knet_node_id of this UpdateTestCaseListInfo.
 
         knet节点id
 
@@ -2552,7 +2552,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def last_exe_author(self):
-        """Gets the last_exe_author of this UpdateTestCaseListInfo.
+        r"""Gets the last_exe_author of this UpdateTestCaseListInfo.
 
         最后一次执行用户
 
@@ -2563,7 +2563,7 @@ class UpdateTestCaseListInfo:
 
     @last_exe_author.setter
     def last_exe_author(self, last_exe_author):
-        """Sets the last_exe_author of this UpdateTestCaseListInfo.
+        r"""Sets the last_exe_author of this UpdateTestCaseListInfo.
 
         最后一次执行用户
 
@@ -2574,7 +2574,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def cloud_carrier(self):
-        """Gets the cloud_carrier of this UpdateTestCaseListInfo.
+        r"""Gets the cloud_carrier of this UpdateTestCaseListInfo.
 
         运营商
 
@@ -2585,7 +2585,7 @@ class UpdateTestCaseListInfo:
 
     @cloud_carrier.setter
     def cloud_carrier(self, cloud_carrier):
-        """Sets the cloud_carrier of this UpdateTestCaseListInfo.
+        r"""Sets the cloud_carrier of this UpdateTestCaseListInfo.
 
         运营商
 
@@ -2596,7 +2596,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def market_place(self):
-        """Gets the market_place of this UpdateTestCaseListInfo.
+        r"""Gets the market_place of this UpdateTestCaseListInfo.
 
         应用市场
 
@@ -2607,7 +2607,7 @@ class UpdateTestCaseListInfo:
 
     @market_place.setter
     def market_place(self, market_place):
-        """Sets the market_place of this UpdateTestCaseListInfo.
+        r"""Sets the market_place of this UpdateTestCaseListInfo.
 
         应用市场
 
@@ -2618,7 +2618,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_mind_id(self):
-        """Gets the test_mind_id of this UpdateTestCaseListInfo.
+        r"""Gets the test_mind_id of this UpdateTestCaseListInfo.
 
         脑图id
 
@@ -2629,7 +2629,7 @@ class UpdateTestCaseListInfo:
 
     @test_mind_id.setter
     def test_mind_id(self, test_mind_id):
-        """Sets the test_mind_id of this UpdateTestCaseListInfo.
+        r"""Sets the test_mind_id of this UpdateTestCaseListInfo.
 
         脑图id
 
@@ -2640,7 +2640,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_mind_url(self):
-        """Gets the test_mind_url of this UpdateTestCaseListInfo.
+        r"""Gets the test_mind_url of this UpdateTestCaseListInfo.
 
         脑图url
 
@@ -2651,7 +2651,7 @@ class UpdateTestCaseListInfo:
 
     @test_mind_url.setter
     def test_mind_url(self, test_mind_url):
-        """Sets the test_mind_url of this UpdateTestCaseListInfo.
+        r"""Sets the test_mind_url of this UpdateTestCaseListInfo.
 
         脑图url
 
@@ -2662,7 +2662,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def commit_url(self):
-        """Gets the commit_url of this UpdateTestCaseListInfo.
+        r"""Gets the commit_url of this UpdateTestCaseListInfo.
 
         git提交url
 
@@ -2673,7 +2673,7 @@ class UpdateTestCaseListInfo:
 
     @commit_url.setter
     def commit_url(self, commit_url):
-        """Sets the commit_url of this UpdateTestCaseListInfo.
+        r"""Sets the commit_url of this UpdateTestCaseListInfo.
 
         git提交url
 
@@ -2684,7 +2684,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_pattern_number(self):
-        """Gets the test_pattern_number of this UpdateTestCaseListInfo.
+        r"""Gets the test_pattern_number of this UpdateTestCaseListInfo.
 
         测试模式编号
 
@@ -2695,7 +2695,7 @@ class UpdateTestCaseListInfo:
 
     @test_pattern_number.setter
     def test_pattern_number(self, test_pattern_number):
-        """Sets the test_pattern_number of this UpdateTestCaseListInfo.
+        r"""Sets the test_pattern_number of this UpdateTestCaseListInfo.
 
         测试模式编号
 
@@ -2706,7 +2706,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def test_factor_number(self):
-        """Gets the test_factor_number of this UpdateTestCaseListInfo.
+        r"""Gets the test_factor_number of this UpdateTestCaseListInfo.
 
         测试因子编号
 
@@ -2717,7 +2717,7 @@ class UpdateTestCaseListInfo:
 
     @test_factor_number.setter
     def test_factor_number(self, test_factor_number):
-        """Sets the test_factor_number of this UpdateTestCaseListInfo.
+        r"""Sets the test_factor_number of this UpdateTestCaseListInfo.
 
         测试因子编号
 
@@ -2728,7 +2728,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this UpdateTestCaseListInfo.
+        r"""Gets the status_code of this UpdateTestCaseListInfo.
 
         状态Code
 
@@ -2739,7 +2739,7 @@ class UpdateTestCaseListInfo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this UpdateTestCaseListInfo.
+        r"""Sets the status_code of this UpdateTestCaseListInfo.
 
         状态Code
 
@@ -2750,7 +2750,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this UpdateTestCaseListInfo.
+        r"""Gets the result_code of this UpdateTestCaseListInfo.
 
         结果Code
 
@@ -2761,7 +2761,7 @@ class UpdateTestCaseListInfo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this UpdateTestCaseListInfo.
+        r"""Sets the result_code of this UpdateTestCaseListInfo.
 
         结果Code
 
@@ -2772,7 +2772,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def release_id(self):
-        """Gets the release_id of this UpdateTestCaseListInfo.
+        r"""Gets the release_id of this UpdateTestCaseListInfo.
 
         迭代ID
 
@@ -2783,7 +2783,7 @@ class UpdateTestCaseListInfo:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this UpdateTestCaseListInfo.
+        r"""Sets the release_id of this UpdateTestCaseListInfo.
 
         迭代ID
 
@@ -2794,7 +2794,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def label_id(self):
-        """Gets the label_id of this UpdateTestCaseListInfo.
+        r"""Gets the label_id of this UpdateTestCaseListInfo.
 
         标签ID
 
@@ -2805,7 +2805,7 @@ class UpdateTestCaseListInfo:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this UpdateTestCaseListInfo.
+        r"""Sets the label_id of this UpdateTestCaseListInfo.
 
         标签ID
 
@@ -2816,7 +2816,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def label_names(self):
-        """Gets the label_names of this UpdateTestCaseListInfo.
+        r"""Gets the label_names of this UpdateTestCaseListInfo.
 
         对外用例操作时，标签名列表
 
@@ -2827,7 +2827,7 @@ class UpdateTestCaseListInfo:
 
     @label_names.setter
     def label_names(self, label_names):
-        """Sets the label_names of this UpdateTestCaseListInfo.
+        r"""Sets the label_names of this UpdateTestCaseListInfo.
 
         对外用例操作时，标签名列表
 
@@ -2838,7 +2838,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this UpdateTestCaseListInfo.
+        r"""Gets the module_id of this UpdateTestCaseListInfo.
 
         模块ID
 
@@ -2849,7 +2849,7 @@ class UpdateTestCaseListInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this UpdateTestCaseListInfo.
+        r"""Sets the module_id of this UpdateTestCaseListInfo.
 
         模块ID
 
@@ -2860,7 +2860,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def execute_latest_time(self):
-        """Gets the execute_latest_time of this UpdateTestCaseListInfo.
+        r"""Gets the execute_latest_time of this UpdateTestCaseListInfo.
 
         最后执行时间
 
@@ -2871,7 +2871,7 @@ class UpdateTestCaseListInfo:
 
     @execute_latest_time.setter
     def execute_latest_time(self, execute_latest_time):
-        """Sets the execute_latest_time of this UpdateTestCaseListInfo.
+        r"""Sets the execute_latest_time of this UpdateTestCaseListInfo.
 
         最后执行时间
 
@@ -2882,7 +2882,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def execute_duration(self):
-        """Gets the execute_duration of this UpdateTestCaseListInfo.
+        r"""Gets the execute_duration of this UpdateTestCaseListInfo.
 
         执行时长
 
@@ -2893,7 +2893,7 @@ class UpdateTestCaseListInfo:
 
     @execute_duration.setter
     def execute_duration(self, execute_duration):
-        """Sets the execute_duration of this UpdateTestCaseListInfo.
+        r"""Sets the execute_duration of this UpdateTestCaseListInfo.
 
         执行时长
 
@@ -2904,7 +2904,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this UpdateTestCaseListInfo.
+        r"""Gets the is_keyword of this UpdateTestCaseListInfo.
 
         是否关键用例
 
@@ -2915,7 +2915,7 @@ class UpdateTestCaseListInfo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this UpdateTestCaseListInfo.
+        r"""Sets the is_keyword of this UpdateTestCaseListInfo.
 
         是否关键用例
 
@@ -2926,7 +2926,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this UpdateTestCaseListInfo.
+        r"""Gets the release_dev of this UpdateTestCaseListInfo.
 
         测试版本号
 
@@ -2937,7 +2937,7 @@ class UpdateTestCaseListInfo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this UpdateTestCaseListInfo.
+        r"""Sets the release_dev of this UpdateTestCaseListInfo.
 
         测试版本号
 
@@ -2948,7 +2948,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def new_created(self):
-        """Gets the new_created of this UpdateTestCaseListInfo.
+        r"""Gets the new_created of this UpdateTestCaseListInfo.
 
         是否用户新增用例
 
@@ -2959,7 +2959,7 @@ class UpdateTestCaseListInfo:
 
     @new_created.setter
     def new_created(self, new_created):
-        """Sets the new_created of this UpdateTestCaseListInfo.
+        r"""Sets the new_created of this UpdateTestCaseListInfo.
 
         是否用户新增用例
 
@@ -2970,7 +2970,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def execute_parameter(self):
-        """Gets the execute_parameter of this UpdateTestCaseListInfo.
+        r"""Gets the execute_parameter of this UpdateTestCaseListInfo.
 
         执行参数
 
@@ -2981,7 +2981,7 @@ class UpdateTestCaseListInfo:
 
     @execute_parameter.setter
     def execute_parameter(self, execute_parameter):
-        """Sets the execute_parameter of this UpdateTestCaseListInfo.
+        r"""Sets the execute_parameter of this UpdateTestCaseListInfo.
 
         执行参数
 
@@ -2992,7 +2992,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this UpdateTestCaseListInfo.
+        r"""Gets the project_uuid of this UpdateTestCaseListInfo.
 
         项目ID，外部使用项目ID，内部使用默认值
 
@@ -3003,7 +3003,7 @@ class UpdateTestCaseListInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this UpdateTestCaseListInfo.
+        r"""Sets the project_uuid of this UpdateTestCaseListInfo.
 
         项目ID，外部使用项目ID，内部使用默认值
 
@@ -3014,7 +3014,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this UpdateTestCaseListInfo.
+        r"""Gets the version_uri of this UpdateTestCaseListInfo.
 
         分支或者迭代uri
 
@@ -3025,7 +3025,7 @@ class UpdateTestCaseListInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this UpdateTestCaseListInfo.
+        r"""Sets the version_uri of this UpdateTestCaseListInfo.
 
         分支或者迭代uri
 
@@ -3036,7 +3036,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def case_list(self):
-        """Gets the case_list of this UpdateTestCaseListInfo.
+        r"""Gets the case_list of this UpdateTestCaseListInfo.
 
         更新用例信息列表
 
@@ -3047,7 +3047,7 @@ class UpdateTestCaseListInfo:
 
     @case_list.setter
     def case_list(self, case_list):
-        """Sets the case_list of this UpdateTestCaseListInfo.
+        r"""Sets the case_list of this UpdateTestCaseListInfo.
 
         更新用例信息列表
 
@@ -3058,7 +3058,7 @@ class UpdateTestCaseListInfo:
 
     @property
     def case_id_list(self):
-        """Gets the case_id_list of this UpdateTestCaseListInfo.
+        r"""Gets the case_id_list of this UpdateTestCaseListInfo.
 
         批量更新用例id列表
 
@@ -3069,7 +3069,7 @@ class UpdateTestCaseListInfo:
 
     @case_id_list.setter
     def case_id_list(self, case_id_list):
-        """Sets the case_id_list of this UpdateTestCaseListInfo.
+        r"""Sets the case_id_list of this UpdateTestCaseListInfo.
 
         批量更新用例id列表
 

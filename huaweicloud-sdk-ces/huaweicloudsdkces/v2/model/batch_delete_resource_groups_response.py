@@ -26,7 +26,7 @@ class BatchDeleteResourceGroupsResponse(SdkResponse):
     }
 
     def __init__(self, group_ids=None):
-        """BatchDeleteResourceGroupsResponse
+        r"""BatchDeleteResourceGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteResourceGroupsResponse(SdkResponse):
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this BatchDeleteResourceGroupsResponse.
+        r"""Gets the group_ids of this BatchDeleteResourceGroupsResponse.
 
         成功删除的资源分组ID列表
 
@@ -55,7 +55,7 @@ class BatchDeleteResourceGroupsResponse(SdkResponse):
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this BatchDeleteResourceGroupsResponse.
+        r"""Sets the group_ids of this BatchDeleteResourceGroupsResponse.
 
         成功删除的资源分组ID列表
 

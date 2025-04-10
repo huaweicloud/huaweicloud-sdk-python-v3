@@ -27,7 +27,7 @@ class UpdateTransferRequestBody:
     }
 
     def __init__(self, log_transfer_id=None, log_transfer_info=None):
-        """UpdateTransferRequestBody
+        r"""UpdateTransferRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateTransferRequestBody:
 
     @property
     def log_transfer_id(self):
-        """Gets the log_transfer_id of this UpdateTransferRequestBody.
+        r"""Gets the log_transfer_id of this UpdateTransferRequestBody.
 
         日志转储ID
 
@@ -59,7 +59,7 @@ class UpdateTransferRequestBody:
 
     @log_transfer_id.setter
     def log_transfer_id(self, log_transfer_id):
-        """Sets the log_transfer_id of this UpdateTransferRequestBody.
+        r"""Sets the log_transfer_id of this UpdateTransferRequestBody.
 
         日志转储ID
 
@@ -70,7 +70,7 @@ class UpdateTransferRequestBody:
 
     @property
     def log_transfer_info(self):
-        """Gets the log_transfer_info of this UpdateTransferRequestBody.
+        r"""Gets the log_transfer_info of this UpdateTransferRequestBody.
 
         :return: The log_transfer_info of this UpdateTransferRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateTransferRequestBodyLogTransferInfo`
@@ -79,7 +79,7 @@ class UpdateTransferRequestBody:
 
     @log_transfer_info.setter
     def log_transfer_info(self, log_transfer_info):
-        """Sets the log_transfer_info of this UpdateTransferRequestBody.
+        r"""Sets the log_transfer_info of this UpdateTransferRequestBody.
 
         :param log_transfer_info: The log_transfer_info of this UpdateTransferRequestBody.
         :type log_transfer_info: :class:`huaweicloudsdklts.v2.UpdateTransferRequestBodyLogTransferInfo`

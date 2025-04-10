@@ -25,7 +25,7 @@ class UpdateObsTargetAttributesRequestBody:
     }
 
     def __init__(self, attributes=None):
-        """UpdateObsTargetAttributesRequestBody
+        r"""UpdateObsTargetAttributesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateObsTargetAttributesRequestBody:
 
     @property
     def attributes(self):
-        """Gets the attributes of this UpdateObsTargetAttributesRequestBody.
+        r"""Gets the attributes of this UpdateObsTargetAttributesRequestBody.
 
         :return: The attributes of this UpdateObsTargetAttributesRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
@@ -51,7 +51,7 @@ class UpdateObsTargetAttributesRequestBody:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this UpdateObsTargetAttributesRequestBody.
+        r"""Sets the attributes of this UpdateObsTargetAttributesRequestBody.
 
         :param attributes: The attributes of this UpdateObsTargetAttributesRequestBody.
         :type attributes: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`

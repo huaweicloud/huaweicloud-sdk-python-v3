@@ -27,7 +27,7 @@ class AddProtectedInstanceNicRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """AddProtectedInstanceNicRequest
+        r"""AddProtectedInstanceNicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddProtectedInstanceNicRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this AddProtectedInstanceNicRequest.
+        r"""Gets the protected_instance_id of this AddProtectedInstanceNicRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class AddProtectedInstanceNicRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this AddProtectedInstanceNicRequest.
+        r"""Sets the protected_instance_id of this AddProtectedInstanceNicRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class AddProtectedInstanceNicRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddProtectedInstanceNicRequest.
+        r"""Gets the body of this AddProtectedInstanceNicRequest.
 
         :return: The body of this AddProtectedInstanceNicRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddNicRequestBody`
@@ -80,7 +80,7 @@ class AddProtectedInstanceNicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddProtectedInstanceNicRequest.
+        r"""Sets the body of this AddProtectedInstanceNicRequest.
 
         :param body: The body of this AddProtectedInstanceNicRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddNicRequestBody`

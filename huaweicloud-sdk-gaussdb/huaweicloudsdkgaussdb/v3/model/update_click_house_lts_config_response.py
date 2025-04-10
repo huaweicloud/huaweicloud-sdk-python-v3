@@ -24,7 +24,7 @@ class UpdateClickHouseLtsConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateClickHouseLtsConfigResponse
+        r"""UpdateClickHouseLtsConfigResponse
 
         The model defined in huaweicloud sdk
 

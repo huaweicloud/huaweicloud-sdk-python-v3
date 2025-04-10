@@ -40,7 +40,7 @@ class ListWorkflowsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, total=None, offset=None, limit=None, message=None, success=None, data=None, x_request_id=None):
-        """ListWorkflowsResponse
+        r"""ListWorkflowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListWorkflowsResponse.
+        r"""Gets the code of this ListWorkflowsResponse.
 
         返回码
 
@@ -104,7 +104,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListWorkflowsResponse.
+        r"""Sets the code of this ListWorkflowsResponse.
 
         返回码
 
@@ -115,7 +115,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWorkflowsResponse.
+        r"""Gets the total of this ListWorkflowsResponse.
 
         数据总条数
 
@@ -126,7 +126,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkflowsResponse.
+        r"""Sets the total of this ListWorkflowsResponse.
 
         数据总条数
 
@@ -137,7 +137,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkflowsResponse.
+        r"""Gets the offset of this ListWorkflowsResponse.
 
         当前页大小
 
@@ -148,7 +148,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkflowsResponse.
+        r"""Sets the offset of this ListWorkflowsResponse.
 
         当前页大小
 
@@ -159,7 +159,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkflowsResponse.
+        r"""Gets the limit of this ListWorkflowsResponse.
 
         当前页码
 
@@ -170,7 +170,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkflowsResponse.
+        r"""Sets the limit of this ListWorkflowsResponse.
 
         当前页码
 
@@ -181,7 +181,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListWorkflowsResponse.
+        r"""Gets the message of this ListWorkflowsResponse.
 
         请求ID
 
@@ -192,7 +192,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListWorkflowsResponse.
+        r"""Sets the message of this ListWorkflowsResponse.
 
         请求ID
 
@@ -203,7 +203,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ListWorkflowsResponse.
+        r"""Gets the success of this ListWorkflowsResponse.
 
         是否成功
 
@@ -214,7 +214,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ListWorkflowsResponse.
+        r"""Sets the success of this ListWorkflowsResponse.
 
         是否成功
 
@@ -225,7 +225,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListWorkflowsResponse.
+        r"""Gets the data of this ListWorkflowsResponse.
 
         流程信息列表
 
@@ -236,7 +236,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListWorkflowsResponse.
+        r"""Sets the data of this ListWorkflowsResponse.
 
         流程信息列表
 
@@ -247,7 +247,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListWorkflowsResponse.
+        r"""Gets the x_request_id of this ListWorkflowsResponse.
 
         :return: The x_request_id of this ListWorkflowsResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class ListWorkflowsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListWorkflowsResponse.
+        r"""Sets the x_request_id of this ListWorkflowsResponse.
 
         :param x_request_id: The x_request_id of this ListWorkflowsResponse.
         :type x_request_id: str

@@ -26,7 +26,7 @@ class ShowEquipmentStaticRouteInfoResponse(SdkResponse):
     }
 
     def __init__(self, static_routes=None):
-        """ShowEquipmentStaticRouteInfoResponse
+        r"""ShowEquipmentStaticRouteInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEquipmentStaticRouteInfoResponse(SdkResponse):
 
     @property
     def static_routes(self):
-        """Gets the static_routes of this ShowEquipmentStaticRouteInfoResponse.
+        r"""Gets the static_routes of this ShowEquipmentStaticRouteInfoResponse.
 
         设备静态路由配置列表
 
@@ -55,7 +55,7 @@ class ShowEquipmentStaticRouteInfoResponse(SdkResponse):
 
     @static_routes.setter
     def static_routes(self, static_routes):
-        """Sets the static_routes of this ShowEquipmentStaticRouteInfoResponse.
+        r"""Sets the static_routes of this ShowEquipmentStaticRouteInfoResponse.
 
         设备静态路由配置列表
 

@@ -27,7 +27,7 @@ class DeviceTemplateUpdateDetailTags:
     }
 
     def __init__(self, key=None, value=None):
-        """DeviceTemplateUpdateDetailTags
+        r"""DeviceTemplateUpdateDetailTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeviceTemplateUpdateDetailTags:
 
     @property
     def key(self):
-        """Gets the key of this DeviceTemplateUpdateDetailTags.
+        r"""Gets the key of this DeviceTemplateUpdateDetailTags.
 
         标签key值，长度取值范围为1~36， 仅允许大小写英文字母、数字、下划线、中划线
 
@@ -61,7 +61,7 @@ class DeviceTemplateUpdateDetailTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeviceTemplateUpdateDetailTags.
+        r"""Sets the key of this DeviceTemplateUpdateDetailTags.
 
         标签key值，长度取值范围为1~36， 仅允许大小写英文字母、数字、下划线、中划线
 
@@ -72,7 +72,7 @@ class DeviceTemplateUpdateDetailTags:
 
     @property
     def value(self):
-        """Gets the value of this DeviceTemplateUpdateDetailTags.
+        r"""Gets the value of this DeviceTemplateUpdateDetailTags.
 
         标签value值，长度取值范围为0~43， 仅允许大小写英文字母、数字、下划线、中划线
 
@@ -83,7 +83,7 @@ class DeviceTemplateUpdateDetailTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeviceTemplateUpdateDetailTags.
+        r"""Sets the value of this DeviceTemplateUpdateDetailTags.
 
         标签value值，长度取值范围为0~43， 仅允许大小写英文字母、数字、下划线、中划线
 

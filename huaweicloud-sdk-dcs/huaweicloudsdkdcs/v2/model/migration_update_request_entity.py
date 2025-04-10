@@ -25,7 +25,7 @@ class MigrationUpdateRequestEntity:
     }
 
     def __init__(self, resume_mode=None):
-        """MigrationUpdateRequestEntity
+        r"""MigrationUpdateRequestEntity
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MigrationUpdateRequestEntity:
 
     @property
     def resume_mode(self):
-        """Gets the resume_mode of this MigrationUpdateRequestEntity.
+        r"""Gets the resume_mode of this MigrationUpdateRequestEntity.
 
         模式
 
@@ -54,7 +54,7 @@ class MigrationUpdateRequestEntity:
 
     @resume_mode.setter
     def resume_mode(self, resume_mode):
-        """Sets the resume_mode of this MigrationUpdateRequestEntity.
+        r"""Sets the resume_mode of this MigrationUpdateRequestEntity.
 
         模式
 

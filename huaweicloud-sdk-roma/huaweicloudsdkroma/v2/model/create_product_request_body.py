@@ -47,7 +47,7 @@ class CreateProductRequestBody:
     }
 
     def __init__(self, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, template_id=None, version=None, data_format=None):
-        """CreateProductRequestBody
+        r"""CreateProductRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class CreateProductRequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateProductRequestBody.
+        r"""Gets the app_id of this CreateProductRequestBody.
 
         应用ID
 
@@ -124,7 +124,7 @@ class CreateProductRequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateProductRequestBody.
+        r"""Sets the app_id of this CreateProductRequestBody.
 
         应用ID
 
@@ -135,7 +135,7 @@ class CreateProductRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateProductRequestBody.
+        r"""Gets the name of this CreateProductRequestBody.
 
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -146,7 +146,7 @@ class CreateProductRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProductRequestBody.
+        r"""Sets the name of this CreateProductRequestBody.
 
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -157,7 +157,7 @@ class CreateProductRequestBody:
 
     @property
     def manufacturer_id(self):
-        """Gets the manufacturer_id of this CreateProductRequestBody.
+        r"""Gets the manufacturer_id of this CreateProductRequestBody.
 
         产品供应商ID
 
@@ -168,7 +168,7 @@ class CreateProductRequestBody:
 
     @manufacturer_id.setter
     def manufacturer_id(self, manufacturer_id):
-        """Sets the manufacturer_id of this CreateProductRequestBody.
+        r"""Sets the manufacturer_id of this CreateProductRequestBody.
 
         产品供应商ID
 
@@ -179,7 +179,7 @@ class CreateProductRequestBody:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this CreateProductRequestBody.
+        r"""Gets the manufacturer_name of this CreateProductRequestBody.
 
         厂商名称
 
@@ -190,7 +190,7 @@ class CreateProductRequestBody:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this CreateProductRequestBody.
+        r"""Sets the manufacturer_name of this CreateProductRequestBody.
 
         厂商名称
 
@@ -201,7 +201,7 @@ class CreateProductRequestBody:
 
     @property
     def model(self):
-        """Gets the model of this CreateProductRequestBody.
+        r"""Gets the model of this CreateProductRequestBody.
 
         产品型号
 
@@ -212,7 +212,7 @@ class CreateProductRequestBody:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this CreateProductRequestBody.
+        r"""Sets the model of this CreateProductRequestBody.
 
         产品型号
 
@@ -223,7 +223,7 @@ class CreateProductRequestBody:
 
     @property
     def product_type(self):
-        """Gets the product_type of this CreateProductRequestBody.
+        r"""Gets the product_type of this CreateProductRequestBody.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -234,7 +234,7 @@ class CreateProductRequestBody:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this CreateProductRequestBody.
+        r"""Sets the product_type of this CreateProductRequestBody.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -245,7 +245,7 @@ class CreateProductRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateProductRequestBody.
+        r"""Gets the description of this CreateProductRequestBody.
 
         产品描述，长度0-200
 
@@ -256,7 +256,7 @@ class CreateProductRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProductRequestBody.
+        r"""Sets the description of this CreateProductRequestBody.
 
         产品描述，长度0-200
 
@@ -267,7 +267,7 @@ class CreateProductRequestBody:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this CreateProductRequestBody.
+        r"""Gets the protocol_type of this CreateProductRequestBody.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -278,7 +278,7 @@ class CreateProductRequestBody:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this CreateProductRequestBody.
+        r"""Sets the protocol_type of this CreateProductRequestBody.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -289,7 +289,7 @@ class CreateProductRequestBody:
 
     @property
     def device_type(self):
-        """Gets the device_type of this CreateProductRequestBody.
+        r"""Gets the device_type of this CreateProductRequestBody.
 
         产品的设备类型（默认Default）
 
@@ -300,7 +300,7 @@ class CreateProductRequestBody:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this CreateProductRequestBody.
+        r"""Sets the device_type of this CreateProductRequestBody.
 
         产品的设备类型（默认Default）
 
@@ -311,7 +311,7 @@ class CreateProductRequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateProductRequestBody.
+        r"""Gets the template_id of this CreateProductRequestBody.
 
         关联产品模板ID（使用产品模板创建产品时使用，否则为空），自动向下取整
 
@@ -322,7 +322,7 @@ class CreateProductRequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateProductRequestBody.
+        r"""Sets the template_id of this CreateProductRequestBody.
 
         关联产品模板ID（使用产品模板创建产品时使用，否则为空），自动向下取整
 
@@ -333,7 +333,7 @@ class CreateProductRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this CreateProductRequestBody.
+        r"""Gets the version of this CreateProductRequestBody.
 
         模型版本
 
@@ -344,7 +344,7 @@ class CreateProductRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateProductRequestBody.
+        r"""Sets the version of this CreateProductRequestBody.
 
         模型版本
 
@@ -355,7 +355,7 @@ class CreateProductRequestBody:
 
     @property
     def data_format(self):
-        """Gets the data_format of this CreateProductRequestBody.
+        r"""Gets the data_format of this CreateProductRequestBody.
 
         产品的数据格式 0-JSON 1-USER_DEFINED
 
@@ -366,7 +366,7 @@ class CreateProductRequestBody:
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this CreateProductRequestBody.
+        r"""Sets the data_format of this CreateProductRequestBody.
 
         产品的数据格式 0-JSON 1-USER_DEFINED
 

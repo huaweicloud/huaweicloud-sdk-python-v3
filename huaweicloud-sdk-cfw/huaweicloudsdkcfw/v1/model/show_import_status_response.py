@@ -26,7 +26,7 @@ class ShowImportStatusResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowImportStatusResponse
+        r"""ShowImportStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowImportStatusResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowImportStatusResponse.
+        r"""Gets the data of this ShowImportStatusResponse.
 
         :return: The data of this ShowImportStatusResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class ShowImportStatusResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowImportStatusResponse.
+        r"""Sets the data of this ShowImportStatusResponse.
 
         :param data: The data of this ShowImportStatusResponse.
         :type data: object

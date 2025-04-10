@@ -32,7 +32,7 @@ class ListJobAuthInfosResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, count=None, auth_infos=None):
-        """ListJobAuthInfosResponse
+        r"""ListJobAuthInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListJobAuthInfosResponse.
+        r"""Gets the is_success of this ListJobAuthInfosResponse.
 
         是否成功
 
@@ -76,7 +76,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListJobAuthInfosResponse.
+        r"""Sets the is_success of this ListJobAuthInfosResponse.
 
         是否成功
 
@@ -87,7 +87,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListJobAuthInfosResponse.
+        r"""Gets the message of this ListJobAuthInfosResponse.
 
         请求消息
 
@@ -98,7 +98,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListJobAuthInfosResponse.
+        r"""Sets the message of this ListJobAuthInfosResponse.
 
         请求消息
 
@@ -109,7 +109,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJobAuthInfosResponse.
+        r"""Gets the count of this ListJobAuthInfosResponse.
 
         认证信息个数
 
@@ -120,7 +120,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJobAuthInfosResponse.
+        r"""Sets the count of this ListJobAuthInfosResponse.
 
         认证信息个数
 
@@ -131,7 +131,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @property
     def auth_infos(self):
-        """Gets the auth_infos of this ListJobAuthInfosResponse.
+        r"""Gets the auth_infos of this ListJobAuthInfosResponse.
 
         认证信息列表
 
@@ -142,7 +142,7 @@ class ListJobAuthInfosResponse(SdkResponse):
 
     @auth_infos.setter
     def auth_infos(self, auth_infos):
-        """Sets the auth_infos of this ListJobAuthInfosResponse.
+        r"""Sets the auth_infos of this ListJobAuthInfosResponse.
 
         认证信息列表
 

@@ -27,7 +27,7 @@ class TimeSpan:
     }
 
     def __init__(self, _from=None, to=None):
-        """TimeSpan
+        r"""TimeSpan
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TimeSpan:
 
     @property
     def _from(self):
-        """Gets the _from of this TimeSpan.
+        r"""Gets the _from of this TimeSpan.
 
         起始时间
 
@@ -59,7 +59,7 @@ class TimeSpan:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this TimeSpan.
+        r"""Sets the _from of this TimeSpan.
 
         起始时间
 
@@ -70,7 +70,7 @@ class TimeSpan:
 
     @property
     def to(self):
-        """Gets the to of this TimeSpan.
+        r"""Gets the to of this TimeSpan.
 
         结束时间
 
@@ -81,7 +81,7 @@ class TimeSpan:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this TimeSpan.
+        r"""Sets the to of this TimeSpan.
 
         结束时间
 

@@ -27,7 +27,7 @@ class ResourceCheck:
     }
 
     def __init__(self, action=None, resource=None):
-        """ResourceCheck
+        r"""ResourceCheck
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceCheck:
 
     @property
     def action(self):
-        """Gets the action of this ResourceCheck.
+        r"""Gets the action of this ResourceCheck.
 
         校验类型，仅支持校验创建实例。
 
@@ -59,7 +59,7 @@ class ResourceCheck:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ResourceCheck.
+        r"""Sets the action of this ResourceCheck.
 
         校验类型，仅支持校验创建实例。
 
@@ -70,7 +70,7 @@ class ResourceCheck:
 
     @property
     def resource(self):
-        """Gets the resource of this ResourceCheck.
+        r"""Gets the resource of this ResourceCheck.
 
         :return: The resource of this ResourceCheck.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResourceCheckResource`
@@ -79,7 +79,7 @@ class ResourceCheck:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this ResourceCheck.
+        r"""Sets the resource of this ResourceCheck.
 
         :param resource: The resource of this ResourceCheck.
         :type resource: :class:`huaweicloudsdkgaussdb.v3.ResourceCheckResource`

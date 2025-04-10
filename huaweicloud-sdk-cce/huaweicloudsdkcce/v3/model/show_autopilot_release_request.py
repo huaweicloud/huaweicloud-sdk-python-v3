@@ -29,7 +29,7 @@ class ShowAutopilotReleaseRequest:
     }
 
     def __init__(self, name=None, namespace=None, cluster_id=None):
-        """ShowAutopilotReleaseRequest
+        r"""ShowAutopilotReleaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowAutopilotReleaseRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowAutopilotReleaseRequest.
+        r"""Gets the name of this ShowAutopilotReleaseRequest.
 
         模板实例名称
 
@@ -65,7 +65,7 @@ class ShowAutopilotReleaseRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAutopilotReleaseRequest.
+        r"""Sets the name of this ShowAutopilotReleaseRequest.
 
         模板实例名称
 
@@ -76,7 +76,7 @@ class ShowAutopilotReleaseRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowAutopilotReleaseRequest.
+        r"""Gets the namespace of this ShowAutopilotReleaseRequest.
 
         模板实例所在的命名空间
 
@@ -87,7 +87,7 @@ class ShowAutopilotReleaseRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowAutopilotReleaseRequest.
+        r"""Sets the namespace of this ShowAutopilotReleaseRequest.
 
         模板实例所在的命名空间
 
@@ -98,7 +98,7 @@ class ShowAutopilotReleaseRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowAutopilotReleaseRequest.
+        r"""Gets the cluster_id of this ShowAutopilotReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -109,7 +109,7 @@ class ShowAutopilotReleaseRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowAutopilotReleaseRequest.
+        r"""Sets the cluster_id of this ShowAutopilotReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

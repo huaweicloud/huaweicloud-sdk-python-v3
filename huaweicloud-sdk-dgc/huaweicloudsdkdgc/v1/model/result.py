@@ -39,7 +39,7 @@ class Result:
     }
 
     def __init__(self, message=None, schema=None, rows=None, row_count=None, input_row_count=None, result_count=None, duration=None, raw_result=None):
-        """Result
+        r"""Result
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Result:
 
     @property
     def message(self):
-        """Gets the message of this Result.
+        r"""Gets the message of this Result.
 
         结果返回信息
 
@@ -103,7 +103,7 @@ class Result:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Result.
+        r"""Sets the message of this Result.
 
         结果返回信息
 
@@ -114,7 +114,7 @@ class Result:
 
     @property
     def schema(self):
-        """Gets the schema of this Result.
+        r"""Gets the schema of this Result.
 
         元数据信息
 
@@ -125,7 +125,7 @@ class Result:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this Result.
+        r"""Sets the schema of this Result.
 
         元数据信息
 
@@ -136,7 +136,7 @@ class Result:
 
     @property
     def rows(self):
-        """Gets the rows of this Result.
+        r"""Gets the rows of this Result.
 
         每条结果的信息
 
@@ -147,7 +147,7 @@ class Result:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this Result.
+        r"""Sets the rows of this Result.
 
         每条结果的信息
 
@@ -158,7 +158,7 @@ class Result:
 
     @property
     def row_count(self):
-        """Gets the row_count of this Result.
+        r"""Gets the row_count of this Result.
 
         结果行数
 
@@ -169,7 +169,7 @@ class Result:
 
     @row_count.setter
     def row_count(self, row_count):
-        """Sets the row_count of this Result.
+        r"""Sets the row_count of this Result.
 
         结果行数
 
@@ -180,7 +180,7 @@ class Result:
 
     @property
     def input_row_count(self):
-        """Gets the input_row_count of this Result.
+        r"""Gets the input_row_count of this Result.
 
         输入结果的行数。（dli等脚本执行会执行此结果）
 
@@ -191,7 +191,7 @@ class Result:
 
     @input_row_count.setter
     def input_row_count(self, input_row_count):
-        """Sets the input_row_count of this Result.
+        r"""Sets the input_row_count of this Result.
 
         输入结果的行数。（dli等脚本执行会执行此结果）
 
@@ -202,7 +202,7 @@ class Result:
 
     @property
     def result_count(self):
-        """Gets the result_count of this Result.
+        r"""Gets the result_count of this Result.
 
         结果行数。（dli等脚本执行会执行此结果）
 
@@ -213,7 +213,7 @@ class Result:
 
     @result_count.setter
     def result_count(self, result_count):
-        """Sets the result_count of this Result.
+        r"""Sets the result_count of this Result.
 
         结果行数。（dli等脚本执行会执行此结果）
 
@@ -224,7 +224,7 @@ class Result:
 
     @property
     def duration(self):
-        """Gets the duration of this Result.
+        r"""Gets the duration of this Result.
 
         脚本运行时间
 
@@ -235,7 +235,7 @@ class Result:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this Result.
+        r"""Sets the duration of this Result.
 
         脚本运行时间
 
@@ -246,7 +246,7 @@ class Result:
 
     @property
     def raw_result(self):
-        """Gets the raw_result of this Result.
+        r"""Gets the raw_result of this Result.
 
         脚本结果信息
 
@@ -257,7 +257,7 @@ class Result:
 
     @raw_result.setter
     def raw_result(self, raw_result):
-        """Sets the raw_result of this Result.
+        r"""Sets the raw_result of this Result.
 
         脚本结果信息
 

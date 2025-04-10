@@ -25,7 +25,7 @@ class UpdateEdgeApplicationRequestDTO:
     }
 
     def __init__(self, description=None):
-        """UpdateEdgeApplicationRequestDTO
+        r"""UpdateEdgeApplicationRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateEdgeApplicationRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEdgeApplicationRequestDTO.
+        r"""Gets the description of this UpdateEdgeApplicationRequestDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -54,7 +54,7 @@ class UpdateEdgeApplicationRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEdgeApplicationRequestDTO.
+        r"""Sets the description of this UpdateEdgeApplicationRequestDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 

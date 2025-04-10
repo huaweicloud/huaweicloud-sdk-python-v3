@@ -37,7 +37,7 @@ class MicroServiceInfoCCE:
     }
 
     def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, label_key=None, label_value=None, cluster_name=None):
-        """MicroServiceInfoCCE
+        r"""MicroServiceInfoCCE
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class MicroServiceInfoCCE:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MicroServiceInfoCCE.
+        r"""Gets the cluster_id of this MicroServiceInfoCCE.
 
         云容器引擎集群编号
 
@@ -93,7 +93,7 @@ class MicroServiceInfoCCE:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MicroServiceInfoCCE.
+        r"""Sets the cluster_id of this MicroServiceInfoCCE.
 
         云容器引擎集群编号
 
@@ -104,7 +104,7 @@ class MicroServiceInfoCCE:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MicroServiceInfoCCE.
+        r"""Gets the namespace of this MicroServiceInfoCCE.
 
         命名空间
 
@@ -115,7 +115,7 @@ class MicroServiceInfoCCE:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MicroServiceInfoCCE.
+        r"""Sets the namespace of this MicroServiceInfoCCE.
 
         命名空间
 
@@ -126,7 +126,7 @@ class MicroServiceInfoCCE:
 
     @property
     def workload_type(self):
-        """Gets the workload_type of this MicroServiceInfoCCE.
+        r"""Gets the workload_type of this MicroServiceInfoCCE.
 
         工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
 
@@ -137,7 +137,7 @@ class MicroServiceInfoCCE:
 
     @workload_type.setter
     def workload_type(self, workload_type):
-        """Sets the workload_type of this MicroServiceInfoCCE.
+        r"""Sets the workload_type of this MicroServiceInfoCCE.
 
         工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
 
@@ -148,7 +148,7 @@ class MicroServiceInfoCCE:
 
     @property
     def app_name(self):
-        """Gets the app_name of this MicroServiceInfoCCE.
+        r"""Gets the app_name of this MicroServiceInfoCCE.
 
         APP名称
 
@@ -159,7 +159,7 @@ class MicroServiceInfoCCE:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this MicroServiceInfoCCE.
+        r"""Sets the app_name of this MicroServiceInfoCCE.
 
         APP名称
 
@@ -170,7 +170,7 @@ class MicroServiceInfoCCE:
 
     @property
     def label_key(self):
-        """Gets the label_key of this MicroServiceInfoCCE.
+        r"""Gets the label_key of this MicroServiceInfoCCE.
 
         标签名
 
@@ -181,7 +181,7 @@ class MicroServiceInfoCCE:
 
     @label_key.setter
     def label_key(self, label_key):
-        """Sets the label_key of this MicroServiceInfoCCE.
+        r"""Sets the label_key of this MicroServiceInfoCCE.
 
         标签名
 
@@ -192,7 +192,7 @@ class MicroServiceInfoCCE:
 
     @property
     def label_value(self):
-        """Gets the label_value of this MicroServiceInfoCCE.
+        r"""Gets the label_value of this MicroServiceInfoCCE.
 
         标签值
 
@@ -203,7 +203,7 @@ class MicroServiceInfoCCE:
 
     @label_value.setter
     def label_value(self, label_value):
-        """Sets the label_value of this MicroServiceInfoCCE.
+        r"""Sets the label_value of this MicroServiceInfoCCE.
 
         标签值
 
@@ -214,7 +214,7 @@ class MicroServiceInfoCCE:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this MicroServiceInfoCCE.
+        r"""Gets the cluster_name of this MicroServiceInfoCCE.
 
         云容器引擎集群名称
 
@@ -225,7 +225,7 @@ class MicroServiceInfoCCE:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this MicroServiceInfoCCE.
+        r"""Sets the cluster_name of this MicroServiceInfoCCE.
 
         云容器引擎集群名称
 

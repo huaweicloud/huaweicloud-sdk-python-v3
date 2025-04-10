@@ -51,7 +51,7 @@ class CreateServices:
     }
 
     def __init__(self, availability_zone=None, data_volumes=None, nics=None, ou_name=None, product_id=None, flavor_id=None, os_type=None, root_volume=None, server_group_id=None, service_type=None, subnet_id=None, vpc_id=None, security_groups=None, update_access_agent=None):
-        """CreateServices
+        r"""CreateServices
 
         The model defined in huaweicloud sdk
 
@@ -129,7 +129,7 @@ class CreateServices:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateServices.
+        r"""Gets the availability_zone of this CreateServices.
 
         可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -140,7 +140,7 @@ class CreateServices:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateServices.
+        r"""Sets the availability_zone of this CreateServices.
 
         可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -151,7 +151,7 @@ class CreateServices:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this CreateServices.
+        r"""Gets the data_volumes of this CreateServices.
 
         数据盘
 
@@ -162,7 +162,7 @@ class CreateServices:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this CreateServices.
+        r"""Sets the data_volumes of this CreateServices.
 
         数据盘
 
@@ -173,7 +173,7 @@ class CreateServices:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateServices.
+        r"""Gets the nics of this CreateServices.
 
         网卡信息，该字段当前未使用。
 
@@ -184,7 +184,7 @@ class CreateServices:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateServices.
+        r"""Sets the nics of this CreateServices.
 
         网卡信息，该字段当前未使用。
 
@@ -195,7 +195,7 @@ class CreateServices:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this CreateServices.
+        r"""Gets the ou_name of this CreateServices.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -206,7 +206,7 @@ class CreateServices:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this CreateServices.
+        r"""Sets the ou_name of this CreateServices.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -217,7 +217,7 @@ class CreateServices:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateServices.
+        r"""Gets the product_id of this CreateServices.
 
         产品ID。 > - 获取方式详见产品套餐管理ListProduct：\"GET  /v1/{project_id}/product\"。
 
@@ -228,7 +228,7 @@ class CreateServices:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateServices.
+        r"""Sets the product_id of this CreateServices.
 
         产品ID。 > - 获取方式详见产品套餐管理ListProduct：\"GET  /v1/{project_id}/product\"。
 
@@ -239,7 +239,7 @@ class CreateServices:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateServices.
+        r"""Gets the flavor_id of this CreateServices.
 
         规格ID。
 
@@ -250,7 +250,7 @@ class CreateServices:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateServices.
+        r"""Sets the flavor_id of this CreateServices.
 
         规格ID。
 
@@ -261,7 +261,7 @@ class CreateServices:
 
     @property
     def os_type(self):
-        """Gets the os_type of this CreateServices.
+        r"""Gets the os_type of this CreateServices.
 
         操作系统类型，当前仅支持Windows - Linux - Windows
 
@@ -272,7 +272,7 @@ class CreateServices:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this CreateServices.
+        r"""Sets the os_type of this CreateServices.
 
         操作系统类型，当前仅支持Windows - Linux - Windows
 
@@ -283,7 +283,7 @@ class CreateServices:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateServices.
+        r"""Gets the root_volume of this CreateServices.
 
         :return: The root_volume of this CreateServices.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -292,7 +292,7 @@ class CreateServices:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateServices.
+        r"""Sets the root_volume of this CreateServices.
 
         :param root_volume: The root_volume of this CreateServices.
         :type root_volume: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -301,7 +301,7 @@ class CreateServices:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this CreateServices.
+        r"""Gets the server_group_id of this CreateServices.
 
         服务器组ID, 云应用创建服务组时生成。
 
@@ -312,7 +312,7 @@ class CreateServices:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this CreateServices.
+        r"""Sets the server_group_id of this CreateServices.
 
         服务器组ID, 云应用创建服务组时生成。
 
@@ -323,7 +323,7 @@ class CreateServices:
 
     @property
     def service_type(self):
-        """Gets the service_type of this CreateServices.
+        r"""Gets the service_type of this CreateServices.
 
         云服务类型，云桌面固定为DEDICATED。
 
@@ -334,7 +334,7 @@ class CreateServices:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this CreateServices.
+        r"""Sets the service_type of this CreateServices.
 
         云服务类型，云桌面固定为DEDICATED。
 
@@ -345,7 +345,7 @@ class CreateServices:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateServices.
+        r"""Gets the subnet_id of this CreateServices.
 
         子网ID。
 
@@ -356,7 +356,7 @@ class CreateServices:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateServices.
+        r"""Sets the subnet_id of this CreateServices.
 
         子网ID。
 
@@ -367,7 +367,7 @@ class CreateServices:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateServices.
+        r"""Gets the vpc_id of this CreateServices.
 
         自动开户的时候,用于LiteAs第一次开户传进来。
 
@@ -378,7 +378,7 @@ class CreateServices:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateServices.
+        r"""Sets the vpc_id of this CreateServices.
 
         自动开户的时候,用于LiteAs第一次开户传进来。
 
@@ -389,7 +389,7 @@ class CreateServices:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateServices.
+        r"""Gets the security_groups of this CreateServices.
 
         服务器使用的安全组，如果不指定则默认使用服务器代理中指定的安全组。 **⚠ 警告: 预留属性，目前未使用**
 
@@ -400,7 +400,7 @@ class CreateServices:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateServices.
+        r"""Sets the security_groups of this CreateServices.
 
         服务器使用的安全组，如果不指定则默认使用服务器代理中指定的安全组。 **⚠ 警告: 预留属性，目前未使用**
 
@@ -411,7 +411,7 @@ class CreateServices:
 
     @property
     def update_access_agent(self):
-        """Gets the update_access_agent of this CreateServices.
+        r"""Gets the update_access_agent of this CreateServices.
 
         是否自动升级hda版本。
 
@@ -422,7 +422,7 @@ class CreateServices:
 
     @update_access_agent.setter
     def update_access_agent(self, update_access_agent):
-        """Sets the update_access_agent of this CreateServices.
+        r"""Sets the update_access_agent of this CreateServices.
 
         是否自动升级hda版本。
 

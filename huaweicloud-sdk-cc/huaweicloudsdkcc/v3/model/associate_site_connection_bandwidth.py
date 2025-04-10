@@ -27,7 +27,7 @@ class AssociateSiteConnectionBandwidth:
     }
 
     def __init__(self, global_connection_bandwidth_id=None, bandwidth_size=None):
-        """AssociateSiteConnectionBandwidth
+        r"""AssociateSiteConnectionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociateSiteConnectionBandwidth:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this AssociateSiteConnectionBandwidth.
+        r"""Gets the global_connection_bandwidth_id of this AssociateSiteConnectionBandwidth.
 
         全域互联带宽ID。
 
@@ -61,7 +61,7 @@ class AssociateSiteConnectionBandwidth:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this AssociateSiteConnectionBandwidth.
+        r"""Sets the global_connection_bandwidth_id of this AssociateSiteConnectionBandwidth.
 
         全域互联带宽ID。
 
@@ -72,7 +72,7 @@ class AssociateSiteConnectionBandwidth:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this AssociateSiteConnectionBandwidth.
+        r"""Gets the bandwidth_size of this AssociateSiteConnectionBandwidth.
 
         带宽值，单位Mbps。
 
@@ -83,7 +83,7 @@ class AssociateSiteConnectionBandwidth:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this AssociateSiteConnectionBandwidth.
+        r"""Sets the bandwidth_size of this AssociateSiteConnectionBandwidth.
 
         带宽值，单位Mbps。
 

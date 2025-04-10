@@ -27,7 +27,7 @@ class SetExceedCutNetRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """SetExceedCutNetRequest
+        r"""SetExceedCutNetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetExceedCutNetRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SetExceedCutNetRequest.
+        r"""Gets the sim_card_id of this SetExceedCutNetRequest.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -60,7 +60,7 @@ class SetExceedCutNetRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SetExceedCutNetRequest.
+        r"""Sets the sim_card_id of this SetExceedCutNetRequest.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -71,7 +71,7 @@ class SetExceedCutNetRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetExceedCutNetRequest.
+        r"""Gets the body of this SetExceedCutNetRequest.
 
         :return: The body of this SetExceedCutNetRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.ExceedCutNetReq`
@@ -80,7 +80,7 @@ class SetExceedCutNetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetExceedCutNetRequest.
+        r"""Sets the body of this SetExceedCutNetRequest.
 
         :param body: The body of this SetExceedCutNetRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.ExceedCutNetReq`

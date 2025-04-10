@@ -29,7 +29,7 @@ class UserStatusStatistic:
     }
 
     def __init__(self, user=None, item_count=None, data=None):
-        """UserStatusStatistic
+        r"""UserStatusStatistic
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UserStatusStatistic:
 
     @property
     def user(self):
-        """Gets the user of this UserStatusStatistic.
+        r"""Gets the user of this UserStatusStatistic.
 
         :return: The user of this UserStatusStatistic.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -66,7 +66,7 @@ class UserStatusStatistic:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UserStatusStatistic.
+        r"""Sets the user of this UserStatusStatistic.
 
         :param user: The user of this UserStatusStatistic.
         :type user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -75,7 +75,7 @@ class UserStatusStatistic:
 
     @property
     def item_count(self):
-        """Gets the item_count of this UserStatusStatistic.
+        r"""Gets the item_count of this UserStatusStatistic.
 
         满足条件的工作项总数
 
@@ -86,7 +86,7 @@ class UserStatusStatistic:
 
     @item_count.setter
     def item_count(self, item_count):
-        """Sets the item_count of this UserStatusStatistic.
+        r"""Sets the item_count of this UserStatusStatistic.
 
         满足条件的工作项总数
 
@@ -97,7 +97,7 @@ class UserStatusStatistic:
 
     @property
     def data(self):
-        """Gets the data of this UserStatusStatistic.
+        r"""Gets the data of this UserStatusStatistic.
 
         工作项对应状态的统计计数
 
@@ -108,7 +108,7 @@ class UserStatusStatistic:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UserStatusStatistic.
+        r"""Sets the data of this UserStatusStatistic.
 
         工作项对应状态的统计计数
 

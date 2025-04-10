@@ -27,7 +27,7 @@ class BatchAttachSharebwDict:
     }
 
     def __init__(self, bandwidth_id=None, publicip_id=None):
-        """BatchAttachSharebwDict
+        r"""BatchAttachSharebwDict
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchAttachSharebwDict:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this BatchAttachSharebwDict.
+        r"""Gets the bandwidth_id of this BatchAttachSharebwDict.
 
         - 共享带宽的id
 
@@ -61,7 +61,7 @@ class BatchAttachSharebwDict:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this BatchAttachSharebwDict.
+        r"""Sets the bandwidth_id of this BatchAttachSharebwDict.
 
         - 共享带宽的id
 
@@ -72,7 +72,7 @@ class BatchAttachSharebwDict:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this BatchAttachSharebwDict.
+        r"""Gets the publicip_id of this BatchAttachSharebwDict.
 
         - 弹性公网IP ID
 
@@ -83,7 +83,7 @@ class BatchAttachSharebwDict:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this BatchAttachSharebwDict.
+        r"""Sets the publicip_id of this BatchAttachSharebwDict.
 
         - 弹性公网IP ID
 

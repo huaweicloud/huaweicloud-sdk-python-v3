@@ -32,7 +32,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """CreatePlaybookApproveResponse
+        r"""CreatePlaybookApproveResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreatePlaybookApproveResponse.
+        r"""Gets the code of this CreatePlaybookApproveResponse.
 
         Error code
 
@@ -76,7 +76,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreatePlaybookApproveResponse.
+        r"""Sets the code of this CreatePlaybookApproveResponse.
 
         Error code
 
@@ -87,7 +87,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreatePlaybookApproveResponse.
+        r"""Gets the message of this CreatePlaybookApproveResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreatePlaybookApproveResponse.
+        r"""Sets the message of this CreatePlaybookApproveResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreatePlaybookApproveResponse.
+        r"""Gets the data of this CreatePlaybookApproveResponse.
 
         :return: The data of this CreatePlaybookApproveResponse.
         :rtype: :class:`huaweicloudsdksa.v2.ApproveOpinionDetail`
@@ -118,7 +118,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreatePlaybookApproveResponse.
+        r"""Sets the data of this CreatePlaybookApproveResponse.
 
         :param data: The data of this CreatePlaybookApproveResponse.
         :type data: :class:`huaweicloudsdksa.v2.ApproveOpinionDetail`
@@ -127,7 +127,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreatePlaybookApproveResponse.
+        r"""Gets the x_request_id of this CreatePlaybookApproveResponse.
 
         :return: The x_request_id of this CreatePlaybookApproveResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreatePlaybookApproveResponse.
+        r"""Sets the x_request_id of this CreatePlaybookApproveResponse.
 
         :param x_request_id: The x_request_id of this CreatePlaybookApproveResponse.
         :type x_request_id: str

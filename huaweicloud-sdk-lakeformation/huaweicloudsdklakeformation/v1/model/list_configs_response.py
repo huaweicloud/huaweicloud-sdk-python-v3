@@ -28,7 +28,7 @@ class ListConfigsResponse(SdkResponse):
     }
 
     def __init__(self, configs=None, page_info=None):
-        """ListConfigsResponse
+        r"""ListConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigsResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListConfigsResponse.
+        r"""Gets the configs of this ListConfigsResponse.
 
         配置项
 
@@ -62,7 +62,7 @@ class ListConfigsResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListConfigsResponse.
+        r"""Sets the configs of this ListConfigsResponse.
 
         配置项
 
@@ -73,7 +73,7 @@ class ListConfigsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListConfigsResponse.
+        r"""Gets the page_info of this ListConfigsResponse.
 
         :return: The page_info of this ListConfigsResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -82,7 +82,7 @@ class ListConfigsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListConfigsResponse.
+        r"""Sets the page_info of this ListConfigsResponse.
 
         :param page_info: The page_info of this ListConfigsResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

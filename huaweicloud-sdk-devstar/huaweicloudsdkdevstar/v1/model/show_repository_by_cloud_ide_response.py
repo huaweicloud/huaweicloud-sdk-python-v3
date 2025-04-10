@@ -26,7 +26,7 @@ class ShowRepositoryByCloudIdeResponse(SdkResponse):
     }
 
     def __init__(self, url=None):
-        """ShowRepositoryByCloudIdeResponse
+        r"""ShowRepositoryByCloudIdeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRepositoryByCloudIdeResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowRepositoryByCloudIdeResponse.
+        r"""Gets the url of this ShowRepositoryByCloudIdeResponse.
 
         CloudIde打开链接:https://xxx/cloudide/loading?instanceId=xxx&scmUrl=xxx
 
@@ -55,7 +55,7 @@ class ShowRepositoryByCloudIdeResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowRepositoryByCloudIdeResponse.
+        r"""Sets the url of this ShowRepositoryByCloudIdeResponse.
 
         CloudIde打开链接:https://xxx/cloudide/loading?instanceId=xxx&scmUrl=xxx
 

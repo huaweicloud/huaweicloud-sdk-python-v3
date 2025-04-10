@@ -41,7 +41,7 @@ class TagRecordVO:
     }
 
     def __init__(self, id=None, tag_id=None, tag_name=None, biz_id=None, biz_type=None, create_by=None, update_by=None, create_time=None, update_time=None):
-        """TagRecordVO
+        r"""TagRecordVO
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class TagRecordVO:
 
     @property
     def id(self):
-        """Gets the id of this TagRecordVO.
+        r"""Gets the id of this TagRecordVO.
 
         编码，ID字符串。
 
@@ -107,7 +107,7 @@ class TagRecordVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TagRecordVO.
+        r"""Sets the id of this TagRecordVO.
 
         编码，ID字符串。
 
@@ -118,7 +118,7 @@ class TagRecordVO:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this TagRecordVO.
+        r"""Gets the tag_id of this TagRecordVO.
 
         标签ID，ID字符串。
 
@@ -129,7 +129,7 @@ class TagRecordVO:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this TagRecordVO.
+        r"""Sets the tag_id of this TagRecordVO.
 
         标签ID，ID字符串。
 
@@ -140,7 +140,7 @@ class TagRecordVO:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this TagRecordVO.
+        r"""Gets the tag_name of this TagRecordVO.
 
         标签名称。
 
@@ -151,7 +151,7 @@ class TagRecordVO:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this TagRecordVO.
+        r"""Sets the tag_name of this TagRecordVO.
 
         标签名称。
 
@@ -162,7 +162,7 @@ class TagRecordVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this TagRecordVO.
+        r"""Gets the biz_id of this TagRecordVO.
 
         实体ID，ID字符串。
 
@@ -173,7 +173,7 @@ class TagRecordVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this TagRecordVO.
+        r"""Sets the biz_id of this TagRecordVO.
 
         实体ID，ID字符串。
 
@@ -184,7 +184,7 @@ class TagRecordVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this TagRecordVO.
+        r"""Gets the biz_type of this TagRecordVO.
 
         :return: The biz_type of this TagRecordVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -193,7 +193,7 @@ class TagRecordVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this TagRecordVO.
+        r"""Sets the biz_type of this TagRecordVO.
 
         :param biz_type: The biz_type of this TagRecordVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -202,7 +202,7 @@ class TagRecordVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this TagRecordVO.
+        r"""Gets the create_by of this TagRecordVO.
 
         创建人。
 
@@ -213,7 +213,7 @@ class TagRecordVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this TagRecordVO.
+        r"""Sets the create_by of this TagRecordVO.
 
         创建人。
 
@@ -224,7 +224,7 @@ class TagRecordVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this TagRecordVO.
+        r"""Gets the update_by of this TagRecordVO.
 
         更新人。
 
@@ -235,7 +235,7 @@ class TagRecordVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this TagRecordVO.
+        r"""Sets the update_by of this TagRecordVO.
 
         更新人。
 
@@ -246,7 +246,7 @@ class TagRecordVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TagRecordVO.
+        r"""Gets the create_time of this TagRecordVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -257,7 +257,7 @@ class TagRecordVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TagRecordVO.
+        r"""Sets the create_time of this TagRecordVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -268,7 +268,7 @@ class TagRecordVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TagRecordVO.
+        r"""Gets the update_time of this TagRecordVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -279,7 +279,7 @@ class TagRecordVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TagRecordVO.
+        r"""Sets the update_time of this TagRecordVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

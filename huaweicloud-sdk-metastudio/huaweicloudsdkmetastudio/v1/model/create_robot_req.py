@@ -47,7 +47,7 @@ class CreateRobotReq:
     }
 
     def __init__(self, name=None, app_type=None, room_id=None, robot_type=None, language=None, tail_silence_time=None, enable_question_audit=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
-        """CreateRobotReq
+        r"""CreateRobotReq
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateRobotReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateRobotReq.
+        r"""Gets the name of this CreateRobotReq.
 
         应用名称。
 
@@ -129,7 +129,7 @@ class CreateRobotReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRobotReq.
+        r"""Sets the name of this CreateRobotReq.
 
         应用名称。
 
@@ -140,7 +140,7 @@ class CreateRobotReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateRobotReq.
+        r"""Gets the app_type of this CreateRobotReq.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
@@ -151,7 +151,7 @@ class CreateRobotReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateRobotReq.
+        r"""Sets the app_type of this CreateRobotReq.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
@@ -162,7 +162,7 @@ class CreateRobotReq:
 
     @property
     def room_id(self):
-        """Gets the room_id of this CreateRobotReq.
+        r"""Gets the room_id of this CreateRobotReq.
 
         智能交互对话房间ID。
 
@@ -173,7 +173,7 @@ class CreateRobotReq:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this CreateRobotReq.
+        r"""Sets the room_id of this CreateRobotReq.
 
         智能交互对话房间ID。
 
@@ -184,7 +184,7 @@ class CreateRobotReq:
 
     @property
     def robot_type(self):
-        """Gets the robot_type of this CreateRobotReq.
+        r"""Gets the robot_type of this CreateRobotReq.
 
         :return: The robot_type of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
@@ -193,7 +193,7 @@ class CreateRobotReq:
 
     @robot_type.setter
     def robot_type(self, robot_type):
-        """Sets the robot_type of this CreateRobotReq.
+        r"""Sets the robot_type of this CreateRobotReq.
 
         :param robot_type: The robot_type of this CreateRobotReq.
         :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
@@ -202,7 +202,7 @@ class CreateRobotReq:
 
     @property
     def language(self):
-        """Gets the language of this CreateRobotReq.
+        r"""Gets the language of this CreateRobotReq.
 
         :return: The language of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -211,7 +211,7 @@ class CreateRobotReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateRobotReq.
+        r"""Sets the language of this CreateRobotReq.
 
         :param language: The language of this CreateRobotReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -220,7 +220,7 @@ class CreateRobotReq:
 
     @property
     def tail_silence_time(self):
-        """Gets the tail_silence_time of this CreateRobotReq.
+        r"""Gets the tail_silence_time of this CreateRobotReq.
 
         语音识别后端点静音时长默认500ms
 
@@ -231,7 +231,7 @@ class CreateRobotReq:
 
     @tail_silence_time.setter
     def tail_silence_time(self, tail_silence_time):
-        """Sets the tail_silence_time of this CreateRobotReq.
+        r"""Sets the tail_silence_time of this CreateRobotReq.
 
         语音识别后端点静音时长默认500ms
 
@@ -242,7 +242,7 @@ class CreateRobotReq:
 
     @property
     def enable_question_audit(self):
-        """Gets the enable_question_audit of this CreateRobotReq.
+        r"""Gets the enable_question_audit of this CreateRobotReq.
 
         提问文本审核开关
 
@@ -253,7 +253,7 @@ class CreateRobotReq:
 
     @enable_question_audit.setter
     def enable_question_audit(self, enable_question_audit):
-        """Sets the enable_question_audit of this CreateRobotReq.
+        r"""Sets the enable_question_audit of this CreateRobotReq.
 
         提问文本审核开关
 
@@ -264,7 +264,7 @@ class CreateRobotReq:
 
     @property
     def huawei_ei_cbs(self):
-        """Gets the huawei_ei_cbs of this CreateRobotReq.
+        r"""Gets the huawei_ei_cbs of this CreateRobotReq.
 
         :return: The huawei_ei_cbs of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -273,7 +273,7 @@ class CreateRobotReq:
 
     @huawei_ei_cbs.setter
     def huawei_ei_cbs(self, huawei_ei_cbs):
-        """Sets the huawei_ei_cbs of this CreateRobotReq.
+        r"""Sets the huawei_ei_cbs of this CreateRobotReq.
 
         :param huawei_ei_cbs: The huawei_ei_cbs of this CreateRobotReq.
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -282,7 +282,7 @@ class CreateRobotReq:
 
     @property
     def iflytek_aiui_config(self):
-        """Gets the iflytek_aiui_config of this CreateRobotReq.
+        r"""Gets the iflytek_aiui_config of this CreateRobotReq.
 
         :return: The iflytek_aiui_config of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
@@ -291,7 +291,7 @@ class CreateRobotReq:
 
     @iflytek_aiui_config.setter
     def iflytek_aiui_config(self, iflytek_aiui_config):
-        """Sets the iflytek_aiui_config of this CreateRobotReq.
+        r"""Sets the iflytek_aiui_config of this CreateRobotReq.
 
         :param iflytek_aiui_config: The iflytek_aiui_config of this CreateRobotReq.
         :type iflytek_aiui_config: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
@@ -300,7 +300,7 @@ class CreateRobotReq:
 
     @property
     def iflytek_spark(self):
-        """Gets the iflytek_spark of this CreateRobotReq.
+        r"""Gets the iflytek_spark of this CreateRobotReq.
 
         :return: The iflytek_spark of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
@@ -309,7 +309,7 @@ class CreateRobotReq:
 
     @iflytek_spark.setter
     def iflytek_spark(self, iflytek_spark):
-        """Sets the iflytek_spark of this CreateRobotReq.
+        r"""Sets the iflytek_spark of this CreateRobotReq.
 
         :param iflytek_spark: The iflytek_spark of this CreateRobotReq.
         :type iflytek_spark: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
@@ -318,7 +318,7 @@ class CreateRobotReq:
 
     @property
     def third_party_model_config(self):
-        """Gets the third_party_model_config of this CreateRobotReq.
+        r"""Gets the third_party_model_config of this CreateRobotReq.
 
         :return: The third_party_model_config of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
@@ -327,7 +327,7 @@ class CreateRobotReq:
 
     @third_party_model_config.setter
     def third_party_model_config(self, third_party_model_config):
-        """Sets the third_party_model_config of this CreateRobotReq.
+        r"""Sets the third_party_model_config of this CreateRobotReq.
 
         :param third_party_model_config: The third_party_model_config of this CreateRobotReq.
         :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
@@ -336,7 +336,7 @@ class CreateRobotReq:
 
     @property
     def mobvoi_config(self):
-        """Gets the mobvoi_config of this CreateRobotReq.
+        r"""Gets the mobvoi_config of this CreateRobotReq.
 
         :return: The mobvoi_config of this CreateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
@@ -345,7 +345,7 @@ class CreateRobotReq:
 
     @mobvoi_config.setter
     def mobvoi_config(self, mobvoi_config):
-        """Sets the mobvoi_config of this CreateRobotReq.
+        r"""Sets the mobvoi_config of this CreateRobotReq.
 
         :param mobvoi_config: The mobvoi_config of this CreateRobotReq.
         :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`

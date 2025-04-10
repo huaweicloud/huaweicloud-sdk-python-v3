@@ -30,7 +30,7 @@ class ShowTemplateByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowTemplateByPageResponse
+        r"""ShowTemplateByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTemplateByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTemplateByPageResponse.
+        r"""Gets the code of this ShowTemplateByPageResponse.
 
         :return: The code of this ShowTemplateByPageResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowTemplateByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTemplateByPageResponse.
+        r"""Sets the code of this ShowTemplateByPageResponse.
 
         :param code: The code of this ShowTemplateByPageResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowTemplateByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowTemplateByPageResponse.
+        r"""Gets the data of this ShowTemplateByPageResponse.
 
         :return: The data of this ShowTemplateByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTemplateV2`
@@ -85,7 +85,7 @@ class ShowTemplateByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowTemplateByPageResponse.
+        r"""Sets the data of this ShowTemplateByPageResponse.
 
         :param data: The data of this ShowTemplateByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTemplateV2`
@@ -94,7 +94,7 @@ class ShowTemplateByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTemplateByPageResponse.
+        r"""Gets the message of this ShowTemplateByPageResponse.
 
         :return: The message of this ShowTemplateByPageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowTemplateByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTemplateByPageResponse.
+        r"""Sets the message of this ShowTemplateByPageResponse.
 
         :param message: The message of this ShowTemplateByPageResponse.
         :type message: str

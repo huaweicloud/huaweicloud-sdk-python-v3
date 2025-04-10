@@ -113,7 +113,7 @@ class LoadBalancer:
     }
 
     def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, charge_mode=None, waf_failure_action=None, protection_status=None, protection_reason=None, log_group_id=None, log_topic_id=None):
-        """LoadBalancer
+        r"""LoadBalancer
 
         The model defined in huaweicloud sdk
 
@@ -315,7 +315,7 @@ class LoadBalancer:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancer.
+        r"""Gets the id of this LoadBalancer.
 
         参数解释：负载均衡器ID。
 
@@ -326,7 +326,7 @@ class LoadBalancer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancer.
+        r"""Sets the id of this LoadBalancer.
 
         参数解释：负载均衡器ID。
 
@@ -337,7 +337,7 @@ class LoadBalancer:
 
     @property
     def description(self):
-        """Gets the description of this LoadBalancer.
+        r"""Gets the description of this LoadBalancer.
 
         参数解释：负载均衡器描述信息。
 
@@ -348,7 +348,7 @@ class LoadBalancer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LoadBalancer.
+        r"""Sets the description of this LoadBalancer.
 
         参数解释：负载均衡器描述信息。
 
@@ -359,7 +359,7 @@ class LoadBalancer:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancer.
+        r"""Gets the provisioning_status of this LoadBalancer.
 
         参数解释：负载均衡器的配置状态。  取值范围： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
@@ -370,7 +370,7 @@ class LoadBalancer:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancer.
+        r"""Sets the provisioning_status of this LoadBalancer.
 
         参数解释：负载均衡器的配置状态。  取值范围： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
@@ -381,7 +381,7 @@ class LoadBalancer:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this LoadBalancer.
+        r"""Gets the admin_state_up of this LoadBalancer.
 
         参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
 
@@ -392,7 +392,7 @@ class LoadBalancer:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this LoadBalancer.
+        r"""Sets the admin_state_up of this LoadBalancer.
 
         参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
 
@@ -403,7 +403,7 @@ class LoadBalancer:
 
     @property
     def provider(self):
-        """Gets the provider of this LoadBalancer.
+        r"""Gets the provider of this LoadBalancer.
 
         参数解释：负载均衡器的生产者名称。固定为vlb。
 
@@ -414,7 +414,7 @@ class LoadBalancer:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this LoadBalancer.
+        r"""Sets the provider of this LoadBalancer.
 
         参数解释：负载均衡器的生产者名称。固定为vlb。
 
@@ -425,7 +425,7 @@ class LoadBalancer:
 
     @property
     def pools(self):
-        """Gets the pools of this LoadBalancer.
+        r"""Gets the pools of this LoadBalancer.
 
         参数解释：负载均衡器直接关联的后端服务器组的ID列表。
 
@@ -436,7 +436,7 @@ class LoadBalancer:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this LoadBalancer.
+        r"""Sets the pools of this LoadBalancer.
 
         参数解释：负载均衡器直接关联的后端服务器组的ID列表。
 
@@ -447,7 +447,7 @@ class LoadBalancer:
 
     @property
     def listeners(self):
-        """Gets the listeners of this LoadBalancer.
+        r"""Gets the listeners of this LoadBalancer.
 
         参数解释：负载均衡器关联的监听器的ID列表。
 
@@ -458,7 +458,7 @@ class LoadBalancer:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this LoadBalancer.
+        r"""Sets the listeners of this LoadBalancer.
 
         参数解释：负载均衡器关联的监听器的ID列表。
 
@@ -469,7 +469,7 @@ class LoadBalancer:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this LoadBalancer.
+        r"""Gets the operating_status of this LoadBalancer.
 
         参数解释：负载均衡器的操作状态。  取值范围： - ONLINE：在线。 - FROZEN：已冻结。
 
@@ -480,7 +480,7 @@ class LoadBalancer:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this LoadBalancer.
+        r"""Sets the operating_status of this LoadBalancer.
 
         参数解释：负载均衡器的操作状态。  取值范围： - ONLINE：在线。 - FROZEN：已冻结。
 
@@ -491,7 +491,7 @@ class LoadBalancer:
 
     @property
     def name(self):
-        """Gets the name of this LoadBalancer.
+        r"""Gets the name of this LoadBalancer.
 
         参数解释：负载均衡器的名称。
 
@@ -502,7 +502,7 @@ class LoadBalancer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadBalancer.
+        r"""Sets the name of this LoadBalancer.
 
         参数解释：负载均衡器的名称。
 
@@ -513,7 +513,7 @@ class LoadBalancer:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LoadBalancer.
+        r"""Gets the project_id of this LoadBalancer.
 
         参数解释：负载均衡器所属的项目ID。
 
@@ -524,7 +524,7 @@ class LoadBalancer:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LoadBalancer.
+        r"""Sets the project_id of this LoadBalancer.
 
         参数解释：负载均衡器所属的项目ID。
 
@@ -535,7 +535,7 @@ class LoadBalancer:
 
     @property
     def vip_subnet_cidr_id(self):
-        """Gets the vip_subnet_cidr_id of this LoadBalancer.
+        r"""Gets the vip_subnet_cidr_id of this LoadBalancer.
 
         参数解释：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。
 
@@ -546,7 +546,7 @@ class LoadBalancer:
 
     @vip_subnet_cidr_id.setter
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
-        """Sets the vip_subnet_cidr_id of this LoadBalancer.
+        r"""Sets the vip_subnet_cidr_id of this LoadBalancer.
 
         参数解释：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。
 
@@ -557,7 +557,7 @@ class LoadBalancer:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this LoadBalancer.
+        r"""Gets the vip_address of this LoadBalancer.
 
         参数解释：负载均衡器的IPv4虚拟IP地址。
 
@@ -568,7 +568,7 @@ class LoadBalancer:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this LoadBalancer.
+        r"""Sets the vip_address of this LoadBalancer.
 
         参数解释：负载均衡器的IPv4虚拟IP地址。
 
@@ -579,7 +579,7 @@ class LoadBalancer:
 
     @property
     def vip_port_id(self):
-        """Gets the vip_port_id of this LoadBalancer.
+        r"""Gets the vip_port_id of this LoadBalancer.
 
         参数解释：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)
 
@@ -590,7 +590,7 @@ class LoadBalancer:
 
     @vip_port_id.setter
     def vip_port_id(self, vip_port_id):
-        """Sets the vip_port_id of this LoadBalancer.
+        r"""Sets the vip_port_id of this LoadBalancer.
 
         参数解释：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)
 
@@ -601,7 +601,7 @@ class LoadBalancer:
 
     @property
     def tags(self):
-        """Gets the tags of this LoadBalancer.
+        r"""Gets the tags of this LoadBalancer.
 
         参数解释：负载均衡的标签列表。
 
@@ -612,7 +612,7 @@ class LoadBalancer:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this LoadBalancer.
+        r"""Sets the tags of this LoadBalancer.
 
         参数解释：负载均衡的标签列表。
 
@@ -623,7 +623,7 @@ class LoadBalancer:
 
     @property
     def created_at(self):
-        """Gets the created_at of this LoadBalancer.
+        r"""Gets the created_at of this LoadBalancer.
 
         参数解释：负载均衡器的创建时间。  取值范围： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -634,7 +634,7 @@ class LoadBalancer:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this LoadBalancer.
+        r"""Sets the created_at of this LoadBalancer.
 
         参数解释：负载均衡器的创建时间。  取值范围： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -645,7 +645,7 @@ class LoadBalancer:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this LoadBalancer.
+        r"""Gets the updated_at of this LoadBalancer.
 
         参数解释：负载均衡器的更新时间。  取值范围; 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -656,7 +656,7 @@ class LoadBalancer:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this LoadBalancer.
+        r"""Sets the updated_at of this LoadBalancer.
 
         参数解释：负载均衡器的更新时间。  取值范围; 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -667,7 +667,7 @@ class LoadBalancer:
 
     @property
     def guaranteed(self):
-        """Gets the guaranteed of this LoadBalancer.
+        r"""Gets the guaranteed of this LoadBalancer.
 
         参数解释：是否独享型LB。  取值范围： - false：共享型。 - true：独享型。
 
@@ -678,7 +678,7 @@ class LoadBalancer:
 
     @guaranteed.setter
     def guaranteed(self, guaranteed):
-        """Sets the guaranteed of this LoadBalancer.
+        r"""Sets the guaranteed of this LoadBalancer.
 
         参数解释：是否独享型LB。  取值范围： - false：共享型。 - true：独享型。
 
@@ -689,7 +689,7 @@ class LoadBalancer:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this LoadBalancer.
+        r"""Gets the vpc_id of this LoadBalancer.
 
         参数解释：负载均衡器所在VPC ID。
 
@@ -700,7 +700,7 @@ class LoadBalancer:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this LoadBalancer.
+        r"""Sets the vpc_id of this LoadBalancer.
 
         参数解释：负载均衡器所在VPC ID。
 
@@ -711,7 +711,7 @@ class LoadBalancer:
 
     @property
     def eips(self):
-        """Gets the eips of this LoadBalancer.
+        r"""Gets the eips of this LoadBalancer.
 
         参数解释：负载均衡器绑定的EIP。  约束限制：只支持绑定一个EIP。  注：该字段与publicips一致。
 
@@ -722,7 +722,7 @@ class LoadBalancer:
 
     @eips.setter
     def eips(self, eips):
-        """Sets the eips of this LoadBalancer.
+        r"""Sets the eips of this LoadBalancer.
 
         参数解释：负载均衡器绑定的EIP。  约束限制：只支持绑定一个EIP。  注：该字段与publicips一致。
 
@@ -733,7 +733,7 @@ class LoadBalancer:
 
     @property
     def ipv6_vip_address(self):
-        """Gets the ipv6_vip_address of this LoadBalancer.
+        r"""Gets the ipv6_vip_address of this LoadBalancer.
 
         参数解释：双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -744,7 +744,7 @@ class LoadBalancer:
 
     @ipv6_vip_address.setter
     def ipv6_vip_address(self, ipv6_vip_address):
-        """Sets the ipv6_vip_address of this LoadBalancer.
+        r"""Sets the ipv6_vip_address of this LoadBalancer.
 
         参数解释：双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -755,7 +755,7 @@ class LoadBalancer:
 
     @property
     def ipv6_vip_virsubnet_id(self):
-        """Gets the ipv6_vip_virsubnet_id of this LoadBalancer.
+        r"""Gets the ipv6_vip_virsubnet_id of this LoadBalancer.
 
         参数解释：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -766,7 +766,7 @@ class LoadBalancer:
 
     @ipv6_vip_virsubnet_id.setter
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
-        """Sets the ipv6_vip_virsubnet_id of this LoadBalancer.
+        r"""Sets the ipv6_vip_virsubnet_id of this LoadBalancer.
 
         参数解释：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -777,7 +777,7 @@ class LoadBalancer:
 
     @property
     def ipv6_vip_port_id(self):
-        """Gets the ipv6_vip_port_id of this LoadBalancer.
+        r"""Gets the ipv6_vip_port_id of this LoadBalancer.
 
         参数解释：双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -788,7 +788,7 @@ class LoadBalancer:
 
     @ipv6_vip_port_id.setter
     def ipv6_vip_port_id(self, ipv6_vip_port_id):
-        """Sets the ipv6_vip_port_id of this LoadBalancer.
+        r"""Sets the ipv6_vip_port_id of this LoadBalancer.
 
         参数解释：双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -799,7 +799,7 @@ class LoadBalancer:
 
     @property
     def availability_zone_list(self):
-        """Gets the availability_zone_list of this LoadBalancer.
+        r"""Gets the availability_zone_list of this LoadBalancer.
 
         参数解释：负载均衡器所在的可用区列表。
 
@@ -810,7 +810,7 @@ class LoadBalancer:
 
     @availability_zone_list.setter
     def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this LoadBalancer.
+        r"""Sets the availability_zone_list of this LoadBalancer.
 
         参数解释：负载均衡器所在的可用区列表。
 
@@ -821,7 +821,7 @@ class LoadBalancer:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this LoadBalancer.
+        r"""Gets the enterprise_project_id of this LoadBalancer.
 
         参数解释：企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注意：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,hcso_dt)
 
@@ -832,7 +832,7 @@ class LoadBalancer:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this LoadBalancer.
+        r"""Sets the enterprise_project_id of this LoadBalancer.
 
         参数解释：企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注意：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,hcso_dt)
 
@@ -843,7 +843,7 @@ class LoadBalancer:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this LoadBalancer.
+        r"""Gets the billing_info of this LoadBalancer.
 
         参数解释：资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -854,7 +854,7 @@ class LoadBalancer:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this LoadBalancer.
+        r"""Sets the billing_info of this LoadBalancer.
 
         参数解释：资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -865,7 +865,7 @@ class LoadBalancer:
 
     @property
     def l4_flavor_id(self):
-        """Gets the l4_flavor_id of this LoadBalancer.
+        r"""Gets the l4_flavor_id of this LoadBalancer.
 
         参数解释：网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  约束限制： - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
 
@@ -876,7 +876,7 @@ class LoadBalancer:
 
     @l4_flavor_id.setter
     def l4_flavor_id(self, l4_flavor_id):
-        """Sets the l4_flavor_id of this LoadBalancer.
+        r"""Sets the l4_flavor_id of this LoadBalancer.
 
         参数解释：网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  约束限制： - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
 
@@ -887,7 +887,7 @@ class LoadBalancer:
 
     @property
     def l4_scale_flavor_id(self):
-        """Gets the l4_scale_flavor_id of this LoadBalancer.
+        r"""Gets the l4_scale_flavor_id of this LoadBalancer.
 
         参数解释：四层弹性Flavor ID。  不支持该字段，请勿使用。
 
@@ -898,7 +898,7 @@ class LoadBalancer:
 
     @l4_scale_flavor_id.setter
     def l4_scale_flavor_id(self, l4_scale_flavor_id):
-        """Sets the l4_scale_flavor_id of this LoadBalancer.
+        r"""Sets the l4_scale_flavor_id of this LoadBalancer.
 
         参数解释：四层弹性Flavor ID。  不支持该字段，请勿使用。
 
@@ -909,7 +909,7 @@ class LoadBalancer:
 
     @property
     def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this LoadBalancer.
+        r"""Gets the l7_flavor_id of this LoadBalancer.
 
         参数解释：应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  约束限制： - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
 
@@ -920,7 +920,7 @@ class LoadBalancer:
 
     @l7_flavor_id.setter
     def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this LoadBalancer.
+        r"""Sets the l7_flavor_id of this LoadBalancer.
 
         参数解释：应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  约束限制： - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
 
@@ -931,7 +931,7 @@ class LoadBalancer:
 
     @property
     def l7_scale_flavor_id(self):
-        """Gets the l7_scale_flavor_id of this LoadBalancer.
+        r"""Gets the l7_scale_flavor_id of this LoadBalancer.
 
         参数解释：七层弹性Flavor ID。  不支持该字段，请勿使用。
 
@@ -942,7 +942,7 @@ class LoadBalancer:
 
     @l7_scale_flavor_id.setter
     def l7_scale_flavor_id(self, l7_scale_flavor_id):
-        """Sets the l7_scale_flavor_id of this LoadBalancer.
+        r"""Sets the l7_scale_flavor_id of this LoadBalancer.
 
         参数解释：七层弹性Flavor ID。  不支持该字段，请勿使用。
 
@@ -953,7 +953,7 @@ class LoadBalancer:
 
     @property
     def publicips(self):
-        """Gets the publicips of this LoadBalancer.
+        r"""Gets the publicips of this LoadBalancer.
 
         参数解释：负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
 
@@ -964,7 +964,7 @@ class LoadBalancer:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this LoadBalancer.
+        r"""Sets the publicips of this LoadBalancer.
 
         参数解释：负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
 
@@ -975,7 +975,7 @@ class LoadBalancer:
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this LoadBalancer.
+        r"""Gets the global_eips of this LoadBalancer.
 
         参数解释：负载均衡器绑定的global eip。  约束限制：只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
 
@@ -986,7 +986,7 @@ class LoadBalancer:
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this LoadBalancer.
+        r"""Sets the global_eips of this LoadBalancer.
 
         参数解释：负载均衡器绑定的global eip。  约束限制：只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
 
@@ -997,7 +997,7 @@ class LoadBalancer:
 
     @property
     def elb_virsubnet_ids(self):
-        """Gets the elb_virsubnet_ids of this LoadBalancer.
+        r"""Gets the elb_virsubnet_ids of this LoadBalancer.
 
         参数解释：下联面子网的网络ID列表。
 
@@ -1008,7 +1008,7 @@ class LoadBalancer:
 
     @elb_virsubnet_ids.setter
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
-        """Sets the elb_virsubnet_ids of this LoadBalancer.
+        r"""Sets the elb_virsubnet_ids of this LoadBalancer.
 
         参数解释：下联面子网的网络ID列表。
 
@@ -1019,7 +1019,7 @@ class LoadBalancer:
 
     @property
     def elb_virsubnet_type(self):
-        """Gets the elb_virsubnet_type of this LoadBalancer.
+        r"""Gets the elb_virsubnet_type of this LoadBalancer.
 
         参数解释：下联面子网类型。  取值范围： - ipv4：ipv4 - dualstack：双栈
 
@@ -1030,7 +1030,7 @@ class LoadBalancer:
 
     @elb_virsubnet_type.setter
     def elb_virsubnet_type(self, elb_virsubnet_type):
-        """Sets the elb_virsubnet_type of this LoadBalancer.
+        r"""Sets the elb_virsubnet_type of this LoadBalancer.
 
         参数解释：下联面子网类型。  取值范围： - ipv4：ipv4 - dualstack：双栈
 
@@ -1041,7 +1041,7 @@ class LoadBalancer:
 
     @property
     def ip_target_enable(self):
-        """Gets the ip_target_enable of this LoadBalancer.
+        r"""Gets the ip_target_enable of this LoadBalancer.
 
         参数解释：是否启用跨VPC后端转发。 [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他云、云下数据中心的服务器。](tag:srg,fcs)  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -1052,7 +1052,7 @@ class LoadBalancer:
 
     @ip_target_enable.setter
     def ip_target_enable(self, ip_target_enable):
-        """Sets the ip_target_enable of this LoadBalancer.
+        r"""Sets the ip_target_enable of this LoadBalancer.
 
         参数解释：是否启用跨VPC后端转发。 [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他云、云下数据中心的服务器。](tag:srg,fcs)  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -1063,7 +1063,7 @@ class LoadBalancer:
 
     @property
     def frozen_scene(self):
-        """Gets the frozen_scene of this LoadBalancer.
+        r"""Gets the frozen_scene of this LoadBalancer.
 
         参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
 
@@ -1074,7 +1074,7 @@ class LoadBalancer:
 
     @frozen_scene.setter
     def frozen_scene(self, frozen_scene):
-        """Sets the frozen_scene of this LoadBalancer.
+        r"""Sets the frozen_scene of this LoadBalancer.
 
         参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
 
@@ -1085,7 +1085,7 @@ class LoadBalancer:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this LoadBalancer.
+        r"""Gets the ipv6_bandwidth of this LoadBalancer.
 
         :return: The ipv6_bandwidth of this LoadBalancer.
         :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -1094,7 +1094,7 @@ class LoadBalancer:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this LoadBalancer.
+        r"""Sets the ipv6_bandwidth of this LoadBalancer.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this LoadBalancer.
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -1103,7 +1103,7 @@ class LoadBalancer:
 
     @property
     def deletion_protection_enable(self):
-        """Gets the deletion_protection_enable of this LoadBalancer.
+        r"""Gets the deletion_protection_enable of this LoadBalancer.
 
         参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -1114,7 +1114,7 @@ class LoadBalancer:
 
     @deletion_protection_enable.setter
     def deletion_protection_enable(self, deletion_protection_enable):
-        """Sets the deletion_protection_enable of this LoadBalancer.
+        r"""Sets the deletion_protection_enable of this LoadBalancer.
 
         参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -1125,7 +1125,7 @@ class LoadBalancer:
 
     @property
     def autoscaling(self):
-        """Gets the autoscaling of this LoadBalancer.
+        r"""Gets the autoscaling of this LoadBalancer.
 
         :return: The autoscaling of this LoadBalancer.
         :rtype: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
@@ -1134,7 +1134,7 @@ class LoadBalancer:
 
     @autoscaling.setter
     def autoscaling(self, autoscaling):
-        """Sets the autoscaling of this LoadBalancer.
+        r"""Sets the autoscaling of this LoadBalancer.
 
         :param autoscaling: The autoscaling of this LoadBalancer.
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
@@ -1143,7 +1143,7 @@ class LoadBalancer:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this LoadBalancer.
+        r"""Gets the public_border_group of this LoadBalancer.
 
         参数解释：LB所属AZ组。
 
@@ -1154,7 +1154,7 @@ class LoadBalancer:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this LoadBalancer.
+        r"""Sets the public_border_group of this LoadBalancer.
 
         参数解释：LB所属AZ组。
 
@@ -1165,7 +1165,7 @@ class LoadBalancer:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this LoadBalancer.
+        r"""Gets the charge_mode of this LoadBalancer.
 
         参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。
 
@@ -1176,7 +1176,7 @@ class LoadBalancer:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this LoadBalancer.
+        r"""Sets the charge_mode of this LoadBalancer.
 
         参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。
 
@@ -1187,7 +1187,7 @@ class LoadBalancer:
 
     @property
     def waf_failure_action(self):
-        """Gets the waf_failure_action of this LoadBalancer.
+        r"""Gets the waf_failure_action of this LoadBalancer.
 
         参数解释：WAF故障时的流量处理策略。  约束限制：只有绑定了waf的LB实例，该字段才会生效。  取值范围：discard:丢弃，forward: 转发到后端。  默认取值：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
@@ -1198,7 +1198,7 @@ class LoadBalancer:
 
     @waf_failure_action.setter
     def waf_failure_action(self, waf_failure_action):
-        """Sets the waf_failure_action of this LoadBalancer.
+        r"""Sets the waf_failure_action of this LoadBalancer.
 
         参数解释：WAF故障时的流量处理策略。  约束限制：只有绑定了waf的LB实例，该字段才会生效。  取值范围：discard:丢弃，forward: 转发到后端。  默认取值：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
@@ -1209,7 +1209,7 @@ class LoadBalancer:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this LoadBalancer.
+        r"""Gets the protection_status of this LoadBalancer.
 
         参数解释：修改保护状态。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
 
@@ -1220,7 +1220,7 @@ class LoadBalancer:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this LoadBalancer.
+        r"""Sets the protection_status of this LoadBalancer.
 
         参数解释：修改保护状态。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
 
@@ -1231,7 +1231,7 @@ class LoadBalancer:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this LoadBalancer.
+        r"""Gets the protection_reason of this LoadBalancer.
 
         参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
@@ -1242,7 +1242,7 @@ class LoadBalancer:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this LoadBalancer.
+        r"""Sets the protection_reason of this LoadBalancer.
 
         参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
@@ -1253,7 +1253,7 @@ class LoadBalancer:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LoadBalancer.
+        r"""Gets the log_group_id of this LoadBalancer.
 
         参数解释：LB所绑定的logtank对应的group id
 
@@ -1264,7 +1264,7 @@ class LoadBalancer:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LoadBalancer.
+        r"""Sets the log_group_id of this LoadBalancer.
 
         参数解释：LB所绑定的logtank对应的group id
 
@@ -1275,7 +1275,7 @@ class LoadBalancer:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this LoadBalancer.
+        r"""Gets the log_topic_id of this LoadBalancer.
 
         参数解释：LB所绑定的logtank对应的topic id
 
@@ -1286,7 +1286,7 @@ class LoadBalancer:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this LoadBalancer.
+        r"""Sets the log_topic_id of this LoadBalancer.
 
         参数解释：LB所绑定的logtank对应的topic id
 

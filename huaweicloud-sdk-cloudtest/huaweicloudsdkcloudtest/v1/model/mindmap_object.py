@@ -45,7 +45,7 @@ class MindmapObject:
     }
 
     def __init__(self, create_time=None, creator_name=None, creator_num=None, folder_id=None, folder_root_id=None, id=None, max_depth=None, mindmap=None, name=None, project_id=None, update_time=None):
-        """MindmapObject
+        r"""MindmapObject
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class MindmapObject:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MindmapObject.
+        r"""Gets the create_time of this MindmapObject.
 
         创建时间
 
@@ -124,7 +124,7 @@ class MindmapObject:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MindmapObject.
+        r"""Sets the create_time of this MindmapObject.
 
         创建时间
 
@@ -135,7 +135,7 @@ class MindmapObject:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this MindmapObject.
+        r"""Gets the creator_name of this MindmapObject.
 
         创建人名称
 
@@ -146,7 +146,7 @@ class MindmapObject:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this MindmapObject.
+        r"""Sets the creator_name of this MindmapObject.
 
         创建人名称
 
@@ -157,7 +157,7 @@ class MindmapObject:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this MindmapObject.
+        r"""Gets the creator_num of this MindmapObject.
 
         创建人工号
 
@@ -168,7 +168,7 @@ class MindmapObject:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this MindmapObject.
+        r"""Sets the creator_num of this MindmapObject.
 
         创建人工号
 
@@ -179,7 +179,7 @@ class MindmapObject:
 
     @property
     def folder_id(self):
-        """Gets the folder_id of this MindmapObject.
+        r"""Gets the folder_id of this MindmapObject.
 
         文件路径
 
@@ -190,7 +190,7 @@ class MindmapObject:
 
     @folder_id.setter
     def folder_id(self, folder_id):
-        """Sets the folder_id of this MindmapObject.
+        r"""Sets the folder_id of this MindmapObject.
 
         文件路径
 
@@ -201,7 +201,7 @@ class MindmapObject:
 
     @property
     def folder_root_id(self):
-        """Gets the folder_root_id of this MindmapObject.
+        r"""Gets the folder_root_id of this MindmapObject.
 
         根目录id
 
@@ -212,7 +212,7 @@ class MindmapObject:
 
     @folder_root_id.setter
     def folder_root_id(self, folder_root_id):
-        """Sets the folder_root_id of this MindmapObject.
+        r"""Sets the folder_root_id of this MindmapObject.
 
         根目录id
 
@@ -223,7 +223,7 @@ class MindmapObject:
 
     @property
     def id(self):
-        """Gets the id of this MindmapObject.
+        r"""Gets the id of this MindmapObject.
 
         id 主键
 
@@ -234,7 +234,7 @@ class MindmapObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MindmapObject.
+        r"""Sets the id of this MindmapObject.
 
         id 主键
 
@@ -245,7 +245,7 @@ class MindmapObject:
 
     @property
     def max_depth(self):
-        """Gets the max_depth of this MindmapObject.
+        r"""Gets the max_depth of this MindmapObject.
 
         脑图最大深度
 
@@ -256,7 +256,7 @@ class MindmapObject:
 
     @max_depth.setter
     def max_depth(self, max_depth):
-        """Sets the max_depth of this MindmapObject.
+        r"""Sets the max_depth of this MindmapObject.
 
         脑图最大深度
 
@@ -267,7 +267,7 @@ class MindmapObject:
 
     @property
     def mindmap(self):
-        """Gets the mindmap of this MindmapObject.
+        r"""Gets the mindmap of this MindmapObject.
 
         脑图JSON
 
@@ -278,7 +278,7 @@ class MindmapObject:
 
     @mindmap.setter
     def mindmap(self, mindmap):
-        """Sets the mindmap of this MindmapObject.
+        r"""Sets the mindmap of this MindmapObject.
 
         脑图JSON
 
@@ -289,7 +289,7 @@ class MindmapObject:
 
     @property
     def name(self):
-        """Gets the name of this MindmapObject.
+        r"""Gets the name of this MindmapObject.
 
         脑图名称
 
@@ -300,7 +300,7 @@ class MindmapObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MindmapObject.
+        r"""Sets the name of this MindmapObject.
 
         脑图名称
 
@@ -311,7 +311,7 @@ class MindmapObject:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MindmapObject.
+        r"""Gets the project_id of this MindmapObject.
 
         项目id
 
@@ -322,7 +322,7 @@ class MindmapObject:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MindmapObject.
+        r"""Sets the project_id of this MindmapObject.
 
         项目id
 
@@ -333,7 +333,7 @@ class MindmapObject:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MindmapObject.
+        r"""Gets the update_time of this MindmapObject.
 
         更新时间
 
@@ -344,7 +344,7 @@ class MindmapObject:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MindmapObject.
+        r"""Sets the update_time of this MindmapObject.
 
         更新时间
 

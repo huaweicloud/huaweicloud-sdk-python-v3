@@ -31,7 +31,7 @@ class ExpandVolumesReq:
     }
 
     def __init__(self, desktop_id=None, order_id=None, volume_id=None, new_size=None):
-        """ExpandVolumesReq
+        r"""ExpandVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ExpandVolumesReq:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ExpandVolumesReq.
+        r"""Gets the desktop_id of this ExpandVolumesReq.
 
         桌面ID。
 
@@ -75,7 +75,7 @@ class ExpandVolumesReq:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ExpandVolumesReq.
+        r"""Sets the desktop_id of this ExpandVolumesReq.
 
         桌面ID。
 
@@ -86,7 +86,7 @@ class ExpandVolumesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandVolumesReq.
+        r"""Gets the order_id of this ExpandVolumesReq.
 
         订单ID，包周期桌面扩容时使用。
 
@@ -97,7 +97,7 @@ class ExpandVolumesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandVolumesReq.
+        r"""Sets the order_id of this ExpandVolumesReq.
 
         订单ID，包周期桌面扩容时使用。
 
@@ -108,7 +108,7 @@ class ExpandVolumesReq:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ExpandVolumesReq.
+        r"""Gets the volume_id of this ExpandVolumesReq.
 
         磁盘ID。
 
@@ -119,7 +119,7 @@ class ExpandVolumesReq:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ExpandVolumesReq.
+        r"""Sets the volume_id of this ExpandVolumesReq.
 
         磁盘ID。
 
@@ -130,7 +130,7 @@ class ExpandVolumesReq:
 
     @property
     def new_size(self):
-        """Gets the new_size of this ExpandVolumesReq.
+        r"""Gets the new_size of this ExpandVolumesReq.
 
         扩容后的磁盘大小，单位为GB。
 
@@ -141,7 +141,7 @@ class ExpandVolumesReq:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this ExpandVolumesReq.
+        r"""Sets the new_size of this ExpandVolumesReq.
 
         扩容后的磁盘大小，单位为GB。
 

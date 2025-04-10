@@ -27,7 +27,7 @@ class SwitchAutoProtectStatusRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """SwitchAutoProtectStatusRequest
+        r"""SwitchAutoProtectStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SwitchAutoProtectStatusRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SwitchAutoProtectStatusRequest.
+        r"""Gets the enterprise_project_id of this SwitchAutoProtectStatusRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -61,7 +61,7 @@ class SwitchAutoProtectStatusRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SwitchAutoProtectStatusRequest.
+        r"""Sets the enterprise_project_id of this SwitchAutoProtectStatusRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -72,7 +72,7 @@ class SwitchAutoProtectStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchAutoProtectStatusRequest.
+        r"""Gets the body of this SwitchAutoProtectStatusRequest.
 
         :return: The body of this SwitchAutoProtectStatusRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.SwitchEipStatusDto`
@@ -81,7 +81,7 @@ class SwitchAutoProtectStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchAutoProtectStatusRequest.
+        r"""Sets the body of this SwitchAutoProtectStatusRequest.
 
         :param body: The body of this SwitchAutoProtectStatusRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.SwitchEipStatusDto`

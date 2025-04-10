@@ -27,7 +27,7 @@ class ConnectionsDesc:
     }
 
     def __init__(self, id=None, description=None):
-        """ConnectionsDesc
+        r"""ConnectionsDesc
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConnectionsDesc:
 
     @property
     def id(self):
-        """Gets the id of this ConnectionsDesc.
+        r"""Gets the id of this ConnectionsDesc.
 
         终端节点ID，UUID格式字符
 
@@ -59,7 +59,7 @@ class ConnectionsDesc:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectionsDesc.
+        r"""Sets the id of this ConnectionsDesc.
 
         终端节点ID，UUID格式字符
 
@@ -70,7 +70,7 @@ class ConnectionsDesc:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionsDesc.
+        r"""Gets the description of this ConnectionsDesc.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -81,7 +81,7 @@ class ConnectionsDesc:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionsDesc.
+        r"""Sets the description of this ConnectionsDesc.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 

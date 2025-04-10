@@ -27,7 +27,7 @@ class DatabasePermission:
     }
 
     def __init__(self, name=None, readonly=None):
-        """DatabasePermission
+        r"""DatabasePermission
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatabasePermission:
 
     @property
     def name(self):
-        """Gets the name of this DatabasePermission.
+        r"""Gets the name of this DatabasePermission.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class DatabasePermission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabasePermission.
+        r"""Sets the name of this DatabasePermission.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class DatabasePermission:
 
     @property
     def readonly(self):
-        """Gets the readonly of this DatabasePermission.
+        r"""Gets the readonly of this DatabasePermission.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 
@@ -81,7 +81,7 @@ class DatabasePermission:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this DatabasePermission.
+        r"""Sets the readonly of this DatabasePermission.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 

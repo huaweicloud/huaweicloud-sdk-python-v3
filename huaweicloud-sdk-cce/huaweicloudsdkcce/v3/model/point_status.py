@@ -35,7 +35,7 @@ class PointStatus:
     }
 
     def __init__(self, task_type=None, task_id=None, status=None, start_time_stamp=None, end_time_stamp=None, expire_time_stamp=None):
-        """PointStatus
+        r"""PointStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PointStatus:
 
     @property
     def task_type(self):
-        """Gets the task_type of this PointStatus.
+        r"""Gets the task_type of this PointStatus.
 
         :return: The task_type of this PointStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
@@ -87,7 +87,7 @@ class PointStatus:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this PointStatus.
+        r"""Sets the task_type of this PointStatus.
 
         :param task_type: The task_type of this PointStatus.
         :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
@@ -96,7 +96,7 @@ class PointStatus:
 
     @property
     def task_id(self):
-        """Gets the task_id of this PointStatus.
+        r"""Gets the task_id of this PointStatus.
 
         升级任务项ID
 
@@ -107,7 +107,7 @@ class PointStatus:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this PointStatus.
+        r"""Sets the task_id of this PointStatus.
 
         升级任务项ID
 
@@ -118,7 +118,7 @@ class PointStatus:
 
     @property
     def status(self):
-        """Gets the status of this PointStatus.
+        r"""Gets the status of this PointStatus.
 
         :return: The status of this PointStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkflowTaskStatus`
@@ -127,7 +127,7 @@ class PointStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PointStatus.
+        r"""Sets the status of this PointStatus.
 
         :param status: The status of this PointStatus.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeWorkflowTaskStatus`
@@ -136,7 +136,7 @@ class PointStatus:
 
     @property
     def start_time_stamp(self):
-        """Gets the start_time_stamp of this PointStatus.
+        r"""Gets the start_time_stamp of this PointStatus.
 
         升级任务开始时间
 
@@ -147,7 +147,7 @@ class PointStatus:
 
     @start_time_stamp.setter
     def start_time_stamp(self, start_time_stamp):
-        """Sets the start_time_stamp of this PointStatus.
+        r"""Sets the start_time_stamp of this PointStatus.
 
         升级任务开始时间
 
@@ -158,7 +158,7 @@ class PointStatus:
 
     @property
     def end_time_stamp(self):
-        """Gets the end_time_stamp of this PointStatus.
+        r"""Gets the end_time_stamp of this PointStatus.
 
         升级任务结束时间
 
@@ -169,7 +169,7 @@ class PointStatus:
 
     @end_time_stamp.setter
     def end_time_stamp(self, end_time_stamp):
-        """Sets the end_time_stamp of this PointStatus.
+        r"""Sets the end_time_stamp of this PointStatus.
 
         升级任务结束时间
 
@@ -180,7 +180,7 @@ class PointStatus:
 
     @property
     def expire_time_stamp(self):
-        """Gets the expire_time_stamp of this PointStatus.
+        r"""Gets the expire_time_stamp of this PointStatus.
 
         升级任务过期时间（当前仅升级前检查任务适用）
 
@@ -191,7 +191,7 @@ class PointStatus:
 
     @expire_time_stamp.setter
     def expire_time_stamp(self, expire_time_stamp):
-        """Sets the expire_time_stamp of this PointStatus.
+        r"""Sets the expire_time_stamp of this PointStatus.
 
         升级任务过期时间（当前仅升级前检查任务适用）
 

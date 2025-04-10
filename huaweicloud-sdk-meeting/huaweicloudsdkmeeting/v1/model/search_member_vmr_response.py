@@ -32,7 +32,7 @@ class SearchMemberVmrResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchMemberVmrResponse
+        r"""SearchMemberVmrResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchMemberVmrResponse.
+        r"""Gets the offset of this SearchMemberVmrResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchMemberVmrResponse.
+        r"""Sets the offset of this SearchMemberVmrResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchMemberVmrResponse.
+        r"""Gets the limit of this SearchMemberVmrResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchMemberVmrResponse.
+        r"""Sets the limit of this SearchMemberVmrResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchMemberVmrResponse.
+        r"""Gets the count of this SearchMemberVmrResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchMemberVmrResponse.
+        r"""Sets the count of this SearchMemberVmrResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchMemberVmrResponse.
+        r"""Gets the data of this SearchMemberVmrResponse.
 
         查询到的用户云会议室或个人会议ID列表。
 
@@ -142,7 +142,7 @@ class SearchMemberVmrResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchMemberVmrResponse.
+        r"""Sets the data of this SearchMemberVmrResponse.
 
         查询到的用户云会议室或个人会议ID列表。
 

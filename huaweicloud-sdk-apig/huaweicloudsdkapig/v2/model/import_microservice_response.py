@@ -30,7 +30,7 @@ class ImportMicroserviceResponse(SdkResponse):
     }
 
     def __init__(self, vpc_channel_id=None, api_group_id=None, apis=None):
-        """ImportMicroserviceResponse
+        r"""ImportMicroserviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ImportMicroserviceResponse(SdkResponse):
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this ImportMicroserviceResponse.
+        r"""Gets the vpc_channel_id of this ImportMicroserviceResponse.
 
         vpc通道编号
 
@@ -69,7 +69,7 @@ class ImportMicroserviceResponse(SdkResponse):
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this ImportMicroserviceResponse.
+        r"""Sets the vpc_channel_id of this ImportMicroserviceResponse.
 
         vpc通道编号
 
@@ -80,7 +80,7 @@ class ImportMicroserviceResponse(SdkResponse):
 
     @property
     def api_group_id(self):
-        """Gets the api_group_id of this ImportMicroserviceResponse.
+        r"""Gets the api_group_id of this ImportMicroserviceResponse.
 
         api分组编号
 
@@ -91,7 +91,7 @@ class ImportMicroserviceResponse(SdkResponse):
 
     @api_group_id.setter
     def api_group_id(self, api_group_id):
-        """Sets the api_group_id of this ImportMicroserviceResponse.
+        r"""Sets the api_group_id of this ImportMicroserviceResponse.
 
         api分组编号
 
@@ -102,7 +102,7 @@ class ImportMicroserviceResponse(SdkResponse):
 
     @property
     def apis(self):
-        """Gets the apis of this ImportMicroserviceResponse.
+        r"""Gets the apis of this ImportMicroserviceResponse.
 
         导入的api列表
 
@@ -113,7 +113,7 @@ class ImportMicroserviceResponse(SdkResponse):
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ImportMicroserviceResponse.
+        r"""Sets the apis of this ImportMicroserviceResponse.
 
         导入的api列表
 

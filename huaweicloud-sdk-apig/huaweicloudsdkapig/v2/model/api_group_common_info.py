@@ -41,7 +41,7 @@ class ApiGroupCommonInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domain_access_enabled=None):
-        """ApiGroupCommonInfo
+        r"""ApiGroupCommonInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ApiGroupCommonInfo:
 
     @property
     def id(self):
-        """Gets the id of this ApiGroupCommonInfo.
+        r"""Gets the id of this ApiGroupCommonInfo.
 
         编号
 
@@ -103,7 +103,7 @@ class ApiGroupCommonInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiGroupCommonInfo.
+        r"""Sets the id of this ApiGroupCommonInfo.
 
         编号
 
@@ -114,7 +114,7 @@ class ApiGroupCommonInfo:
 
     @property
     def name(self):
-        """Gets the name of this ApiGroupCommonInfo.
+        r"""Gets the name of this ApiGroupCommonInfo.
 
         API分组名称
 
@@ -125,7 +125,7 @@ class ApiGroupCommonInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiGroupCommonInfo.
+        r"""Sets the name of this ApiGroupCommonInfo.
 
         API分组名称
 
@@ -136,7 +136,7 @@ class ApiGroupCommonInfo:
 
     @property
     def status(self):
-        """Gets the status of this ApiGroupCommonInfo.
+        r"""Gets the status of this ApiGroupCommonInfo.
 
         状态   - 1： 有效
 
@@ -147,7 +147,7 @@ class ApiGroupCommonInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiGroupCommonInfo.
+        r"""Sets the status of this ApiGroupCommonInfo.
 
         状态   - 1： 有效
 
@@ -158,7 +158,7 @@ class ApiGroupCommonInfo:
 
     @property
     def sl_domain(self):
-        """Gets the sl_domain of this ApiGroupCommonInfo.
+        r"""Gets the sl_domain of this ApiGroupCommonInfo.
 
         系统默认分配的子域名
 
@@ -169,7 +169,7 @@ class ApiGroupCommonInfo:
 
     @sl_domain.setter
     def sl_domain(self, sl_domain):
-        """Sets the sl_domain of this ApiGroupCommonInfo.
+        r"""Sets the sl_domain of this ApiGroupCommonInfo.
 
         系统默认分配的子域名
 
@@ -180,7 +180,7 @@ class ApiGroupCommonInfo:
 
     @property
     def register_time(self):
-        """Gets the register_time of this ApiGroupCommonInfo.
+        r"""Gets the register_time of this ApiGroupCommonInfo.
 
         创建时间
 
@@ -191,7 +191,7 @@ class ApiGroupCommonInfo:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ApiGroupCommonInfo.
+        r"""Sets the register_time of this ApiGroupCommonInfo.
 
         创建时间
 
@@ -202,7 +202,7 @@ class ApiGroupCommonInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApiGroupCommonInfo.
+        r"""Gets the update_time of this ApiGroupCommonInfo.
 
         最近修改时间
 
@@ -213,7 +213,7 @@ class ApiGroupCommonInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApiGroupCommonInfo.
+        r"""Sets the update_time of this ApiGroupCommonInfo.
 
         最近修改时间
 
@@ -224,7 +224,7 @@ class ApiGroupCommonInfo:
 
     @property
     def on_sell_status(self):
-        """Gets the on_sell_status of this ApiGroupCommonInfo.
+        r"""Gets the on_sell_status of this ApiGroupCommonInfo.
 
         是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
 
@@ -235,7 +235,7 @@ class ApiGroupCommonInfo:
 
     @on_sell_status.setter
     def on_sell_status(self, on_sell_status):
-        """Sets the on_sell_status of this ApiGroupCommonInfo.
+        r"""Sets the on_sell_status of this ApiGroupCommonInfo.
 
         是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
 
@@ -246,7 +246,7 @@ class ApiGroupCommonInfo:
 
     @property
     def url_domains(self):
-        """Gets the url_domains of this ApiGroupCommonInfo.
+        r"""Gets the url_domains of this ApiGroupCommonInfo.
 
         分组上绑定的独立域名列表
 
@@ -257,7 +257,7 @@ class ApiGroupCommonInfo:
 
     @url_domains.setter
     def url_domains(self, url_domains):
-        """Sets the url_domains of this ApiGroupCommonInfo.
+        r"""Sets the url_domains of this ApiGroupCommonInfo.
 
         分组上绑定的独立域名列表
 
@@ -268,7 +268,7 @@ class ApiGroupCommonInfo:
 
     @property
     def sl_domain_access_enabled(self):
-        """Gets the sl_domain_access_enabled of this ApiGroupCommonInfo.
+        r"""Gets the sl_domain_access_enabled of this ApiGroupCommonInfo.
 
         调试域名是否可以访问，true表示可以访问，false表示禁止访问
 
@@ -279,7 +279,7 @@ class ApiGroupCommonInfo:
 
     @sl_domain_access_enabled.setter
     def sl_domain_access_enabled(self, sl_domain_access_enabled):
-        """Sets the sl_domain_access_enabled of this ApiGroupCommonInfo.
+        r"""Sets the sl_domain_access_enabled of this ApiGroupCommonInfo.
 
         调试域名是否可以访问，true表示可以访问，false表示禁止访问
 

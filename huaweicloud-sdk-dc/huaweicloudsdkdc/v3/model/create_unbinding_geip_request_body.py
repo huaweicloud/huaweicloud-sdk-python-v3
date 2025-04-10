@@ -25,7 +25,7 @@ class CreateUnbindingGeipRequestBody:
     }
 
     def __init__(self, global_eips=None):
-        """CreateUnbindingGeipRequestBody
+        r"""CreateUnbindingGeipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateUnbindingGeipRequestBody:
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this CreateUnbindingGeipRequestBody.
+        r"""Gets the global_eips of this CreateUnbindingGeipRequestBody.
 
         :return: The global_eips of this CreateUnbindingGeipRequestBody.
         :rtype: list[:class:`huaweicloudsdkdc.v3.UnbindingGeipBody`]
@@ -52,7 +52,7 @@ class CreateUnbindingGeipRequestBody:
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this CreateUnbindingGeipRequestBody.
+        r"""Sets the global_eips of this CreateUnbindingGeipRequestBody.
 
         :param global_eips: The global_eips of this CreateUnbindingGeipRequestBody.
         :type global_eips: list[:class:`huaweicloudsdkdc.v3.UnbindingGeipBody`]

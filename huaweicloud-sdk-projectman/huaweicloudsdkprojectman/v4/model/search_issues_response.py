@@ -28,7 +28,7 @@ class SearchIssuesResponse(SdkResponse):
     }
 
     def __init__(self, issue_list=None, total=None):
-        """SearchIssuesResponse
+        r"""SearchIssuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchIssuesResponse(SdkResponse):
 
     @property
     def issue_list(self):
-        """Gets the issue_list of this SearchIssuesResponse.
+        r"""Gets the issue_list of this SearchIssuesResponse.
 
         工作项信息列表
 
@@ -62,7 +62,7 @@ class SearchIssuesResponse(SdkResponse):
 
     @issue_list.setter
     def issue_list(self, issue_list):
-        """Sets the issue_list of this SearchIssuesResponse.
+        r"""Sets the issue_list of this SearchIssuesResponse.
 
         工作项信息列表
 
@@ -73,7 +73,7 @@ class SearchIssuesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this SearchIssuesResponse.
+        r"""Gets the total of this SearchIssuesResponse.
 
         工作项总数
 
@@ -84,7 +84,7 @@ class SearchIssuesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchIssuesResponse.
+        r"""Sets the total of this SearchIssuesResponse.
 
         工作项总数
 

@@ -33,7 +33,7 @@ class CdnIps:
     }
 
     def __init__(self, ip=None, belongs=None, region=None, isp=None, platform=None):
-        """CdnIps
+        r"""CdnIps
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CdnIps:
 
     @property
     def ip(self):
-        """Gets the ip of this CdnIps.
+        r"""Gets the ip of this CdnIps.
 
         需查询的IP地址。
 
@@ -82,7 +82,7 @@ class CdnIps:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CdnIps.
+        r"""Sets the ip of this CdnIps.
 
         需查询的IP地址。
 
@@ -93,7 +93,7 @@ class CdnIps:
 
     @property
     def belongs(self):
-        """Gets the belongs of this CdnIps.
+        r"""Gets the belongs of this CdnIps.
 
         是否是华为云CDN节点。（true:是华为云CDN节点，false:不是华为云CDN节点）
 
@@ -104,7 +104,7 @@ class CdnIps:
 
     @belongs.setter
     def belongs(self, belongs):
-        """Sets the belongs of this CdnIps.
+        r"""Sets the belongs of this CdnIps.
 
         是否是华为云CDN节点。（true:是华为云CDN节点，false:不是华为云CDN节点）
 
@@ -115,7 +115,7 @@ class CdnIps:
 
     @property
     def region(self):
-        """Gets the region of this CdnIps.
+        r"""Gets the region of this CdnIps.
 
         IP归属地省份。（Unknown:表示未知归属地）
 
@@ -126,7 +126,7 @@ class CdnIps:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CdnIps.
+        r"""Sets the region of this CdnIps.
 
         IP归属地省份。（Unknown:表示未知归属地）
 
@@ -137,7 +137,7 @@ class CdnIps:
 
     @property
     def isp(self):
-        """Gets the isp of this CdnIps.
+        r"""Gets the isp of this CdnIps.
 
         运营商名称。如果IP归属地未知，该字段返回null。
 
@@ -148,7 +148,7 @@ class CdnIps:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this CdnIps.
+        r"""Sets the isp of this CdnIps.
 
         运营商名称。如果IP归属地未知，该字段返回null。
 
@@ -159,7 +159,7 @@ class CdnIps:
 
     @property
     def platform(self):
-        """Gets the platform of this CdnIps.
+        r"""Gets the platform of this CdnIps.
 
         平台。如果IP归属地未知，该字段返回null。
 
@@ -170,7 +170,7 @@ class CdnIps:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this CdnIps.
+        r"""Sets the platform of this CdnIps.
 
         平台。如果IP归属地未知，该字段返回null。
 

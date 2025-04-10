@@ -59,7 +59,7 @@ class MultiTaskInitElement:
     }
 
     def __init__(self, ext_info=None, task_id=None, source_datasource_id=None, target_datasource_id=None, source_group=None, target_group=None, source_ds_id=None, target_ds_id=None, source_instance_id=None, target_instance_id=None, source_app_id=None, target_app_id=None, source_datasource_name=None, target_datasource_name=None, source_datasource_type=None, target_datasource_type=None, mappings=None, mappings_total_count=None):
-        """MultiTaskInitElement
+        r"""MultiTaskInitElement
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class MultiTaskInitElement:
 
     @property
     def ext_info(self):
-        """Gets the ext_info of this MultiTaskInitElement.
+        r"""Gets the ext_info of this MultiTaskInitElement.
 
         :return: The ext_info of this MultiTaskInitElement.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
@@ -171,7 +171,7 @@ class MultiTaskInitElement:
 
     @ext_info.setter
     def ext_info(self, ext_info):
-        """Sets the ext_info of this MultiTaskInitElement.
+        r"""Sets the ext_info of this MultiTaskInitElement.
 
         :param ext_info: The ext_info of this MultiTaskInitElement.
         :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
@@ -180,7 +180,7 @@ class MultiTaskInitElement:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MultiTaskInitElement.
+        r"""Gets the task_id of this MultiTaskInitElement.
 
         任务ID
 
@@ -191,7 +191,7 @@ class MultiTaskInitElement:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MultiTaskInitElement.
+        r"""Sets the task_id of this MultiTaskInitElement.
 
         任务ID
 
@@ -202,7 +202,7 @@ class MultiTaskInitElement:
 
     @property
     def source_datasource_id(self):
-        """Gets the source_datasource_id of this MultiTaskInitElement.
+        r"""Gets the source_datasource_id of this MultiTaskInitElement.
 
         源端数据源ID
 
@@ -213,7 +213,7 @@ class MultiTaskInitElement:
 
     @source_datasource_id.setter
     def source_datasource_id(self, source_datasource_id):
-        """Sets the source_datasource_id of this MultiTaskInitElement.
+        r"""Sets the source_datasource_id of this MultiTaskInitElement.
 
         源端数据源ID
 
@@ -224,7 +224,7 @@ class MultiTaskInitElement:
 
     @property
     def target_datasource_id(self):
-        """Gets the target_datasource_id of this MultiTaskInitElement.
+        r"""Gets the target_datasource_id of this MultiTaskInitElement.
 
         目标端数据源ID
 
@@ -235,7 +235,7 @@ class MultiTaskInitElement:
 
     @target_datasource_id.setter
     def target_datasource_id(self, target_datasource_id):
-        """Sets the target_datasource_id of this MultiTaskInitElement.
+        r"""Sets the target_datasource_id of this MultiTaskInitElement.
 
         目标端数据源ID
 
@@ -246,7 +246,7 @@ class MultiTaskInitElement:
 
     @property
     def source_group(self):
-        """Gets the source_group of this MultiTaskInitElement.
+        r"""Gets the source_group of this MultiTaskInitElement.
 
         源端组
 
@@ -257,7 +257,7 @@ class MultiTaskInitElement:
 
     @source_group.setter
     def source_group(self, source_group):
-        """Sets the source_group of this MultiTaskInitElement.
+        r"""Sets the source_group of this MultiTaskInitElement.
 
         源端组
 
@@ -268,7 +268,7 @@ class MultiTaskInitElement:
 
     @property
     def target_group(self):
-        """Gets the target_group of this MultiTaskInitElement.
+        r"""Gets the target_group of this MultiTaskInitElement.
 
         目标端组
 
@@ -279,7 +279,7 @@ class MultiTaskInitElement:
 
     @target_group.setter
     def target_group(self, target_group):
-        """Sets the target_group of this MultiTaskInitElement.
+        r"""Sets the target_group of this MultiTaskInitElement.
 
         目标端组
 
@@ -290,7 +290,7 @@ class MultiTaskInitElement:
 
     @property
     def source_ds_id(self):
-        """Gets the source_ds_id of this MultiTaskInitElement.
+        r"""Gets the source_ds_id of this MultiTaskInitElement.
 
         源端数据源ID
 
@@ -301,7 +301,7 @@ class MultiTaskInitElement:
 
     @source_ds_id.setter
     def source_ds_id(self, source_ds_id):
-        """Sets the source_ds_id of this MultiTaskInitElement.
+        r"""Sets the source_ds_id of this MultiTaskInitElement.
 
         源端数据源ID
 
@@ -312,7 +312,7 @@ class MultiTaskInitElement:
 
     @property
     def target_ds_id(self):
-        """Gets the target_ds_id of this MultiTaskInitElement.
+        r"""Gets the target_ds_id of this MultiTaskInitElement.
 
         目标端数据源ID
 
@@ -323,7 +323,7 @@ class MultiTaskInitElement:
 
     @target_ds_id.setter
     def target_ds_id(self, target_ds_id):
-        """Sets the target_ds_id of this MultiTaskInitElement.
+        r"""Sets the target_ds_id of this MultiTaskInitElement.
 
         目标端数据源ID
 
@@ -334,7 +334,7 @@ class MultiTaskInitElement:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this MultiTaskInitElement.
+        r"""Gets the source_instance_id of this MultiTaskInitElement.
 
         源端实例ID
 
@@ -345,7 +345,7 @@ class MultiTaskInitElement:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this MultiTaskInitElement.
+        r"""Sets the source_instance_id of this MultiTaskInitElement.
 
         源端实例ID
 
@@ -356,7 +356,7 @@ class MultiTaskInitElement:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this MultiTaskInitElement.
+        r"""Gets the target_instance_id of this MultiTaskInitElement.
 
         目标端实例ID
 
@@ -367,7 +367,7 @@ class MultiTaskInitElement:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this MultiTaskInitElement.
+        r"""Sets the target_instance_id of this MultiTaskInitElement.
 
         目标端实例ID
 
@@ -378,7 +378,7 @@ class MultiTaskInitElement:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this MultiTaskInitElement.
+        r"""Gets the source_app_id of this MultiTaskInitElement.
 
         源端数据源所属集成应用ID
 
@@ -389,7 +389,7 @@ class MultiTaskInitElement:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this MultiTaskInitElement.
+        r"""Sets the source_app_id of this MultiTaskInitElement.
 
         源端数据源所属集成应用ID
 
@@ -400,7 +400,7 @@ class MultiTaskInitElement:
 
     @property
     def target_app_id(self):
-        """Gets the target_app_id of this MultiTaskInitElement.
+        r"""Gets the target_app_id of this MultiTaskInitElement.
 
         目标端数据源所属集成应用ID
 
@@ -411,7 +411,7 @@ class MultiTaskInitElement:
 
     @target_app_id.setter
     def target_app_id(self, target_app_id):
-        """Sets the target_app_id of this MultiTaskInitElement.
+        r"""Sets the target_app_id of this MultiTaskInitElement.
 
         目标端数据源所属集成应用ID
 
@@ -422,7 +422,7 @@ class MultiTaskInitElement:
 
     @property
     def source_datasource_name(self):
-        """Gets the source_datasource_name of this MultiTaskInitElement.
+        r"""Gets the source_datasource_name of this MultiTaskInitElement.
 
         源端数据源的名称
 
@@ -433,7 +433,7 @@ class MultiTaskInitElement:
 
     @source_datasource_name.setter
     def source_datasource_name(self, source_datasource_name):
-        """Sets the source_datasource_name of this MultiTaskInitElement.
+        r"""Sets the source_datasource_name of this MultiTaskInitElement.
 
         源端数据源的名称
 
@@ -444,7 +444,7 @@ class MultiTaskInitElement:
 
     @property
     def target_datasource_name(self):
-        """Gets the target_datasource_name of this MultiTaskInitElement.
+        r"""Gets the target_datasource_name of this MultiTaskInitElement.
 
         目标端数据源的名称
 
@@ -455,7 +455,7 @@ class MultiTaskInitElement:
 
     @target_datasource_name.setter
     def target_datasource_name(self, target_datasource_name):
-        """Sets the target_datasource_name of this MultiTaskInitElement.
+        r"""Sets the target_datasource_name of this MultiTaskInitElement.
 
         目标端数据源的名称
 
@@ -466,7 +466,7 @@ class MultiTaskInitElement:
 
     @property
     def source_datasource_type(self):
-        """Gets the source_datasource_type of this MultiTaskInitElement.
+        r"""Gets the source_datasource_type of this MultiTaskInitElement.
 
         源端数据源的类型
 
@@ -477,7 +477,7 @@ class MultiTaskInitElement:
 
     @source_datasource_type.setter
     def source_datasource_type(self, source_datasource_type):
-        """Sets the source_datasource_type of this MultiTaskInitElement.
+        r"""Sets the source_datasource_type of this MultiTaskInitElement.
 
         源端数据源的类型
 
@@ -488,7 +488,7 @@ class MultiTaskInitElement:
 
     @property
     def target_datasource_type(self):
-        """Gets the target_datasource_type of this MultiTaskInitElement.
+        r"""Gets the target_datasource_type of this MultiTaskInitElement.
 
         目标端数据源的类型
 
@@ -499,7 +499,7 @@ class MultiTaskInitElement:
 
     @target_datasource_type.setter
     def target_datasource_type(self, target_datasource_type):
-        """Sets the target_datasource_type of this MultiTaskInitElement.
+        r"""Sets the target_datasource_type of this MultiTaskInitElement.
 
         目标端数据源的类型
 
@@ -510,7 +510,7 @@ class MultiTaskInitElement:
 
     @property
     def mappings(self):
-        """Gets the mappings of this MultiTaskInitElement.
+        r"""Gets the mappings of this MultiTaskInitElement.
 
         映射关系列表，只返回前10条
 
@@ -521,7 +521,7 @@ class MultiTaskInitElement:
 
     @mappings.setter
     def mappings(self, mappings):
-        """Sets the mappings of this MultiTaskInitElement.
+        r"""Sets the mappings of this MultiTaskInitElement.
 
         映射关系列表，只返回前10条
 
@@ -532,7 +532,7 @@ class MultiTaskInitElement:
 
     @property
     def mappings_total_count(self):
-        """Gets the mappings_total_count of this MultiTaskInitElement.
+        r"""Gets the mappings_total_count of this MultiTaskInitElement.
 
         映射关系总数
 
@@ -543,7 +543,7 @@ class MultiTaskInitElement:
 
     @mappings_total_count.setter
     def mappings_total_count(self, mappings_total_count):
-        """Sets the mappings_total_count of this MultiTaskInitElement.
+        r"""Sets the mappings_total_count of this MultiTaskInitElement.
 
         映射关系总数
 

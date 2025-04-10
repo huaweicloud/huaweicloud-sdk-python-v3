@@ -29,7 +29,7 @@ class UpdateEnvironmentVariableV2Request:
     }
 
     def __init__(self, instance_id=None, env_variable_id=None, body=None):
-        """UpdateEnvironmentVariableV2Request
+        r"""UpdateEnvironmentVariableV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEnvironmentVariableV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateEnvironmentVariableV2Request.
+        r"""Gets the instance_id of this UpdateEnvironmentVariableV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateEnvironmentVariableV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateEnvironmentVariableV2Request.
+        r"""Sets the instance_id of this UpdateEnvironmentVariableV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateEnvironmentVariableV2Request:
 
     @property
     def env_variable_id(self):
-        """Gets the env_variable_id of this UpdateEnvironmentVariableV2Request.
+        r"""Gets the env_variable_id of this UpdateEnvironmentVariableV2Request.
 
         环境变量的编号
 
@@ -88,7 +88,7 @@ class UpdateEnvironmentVariableV2Request:
 
     @env_variable_id.setter
     def env_variable_id(self, env_variable_id):
-        """Sets the env_variable_id of this UpdateEnvironmentVariableV2Request.
+        r"""Sets the env_variable_id of this UpdateEnvironmentVariableV2Request.
 
         环境变量的编号
 
@@ -99,7 +99,7 @@ class UpdateEnvironmentVariableV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnvironmentVariableV2Request.
+        r"""Gets the body of this UpdateEnvironmentVariableV2Request.
 
         :return: The body of this UpdateEnvironmentVariableV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.EnvVariableBase`
@@ -108,7 +108,7 @@ class UpdateEnvironmentVariableV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnvironmentVariableV2Request.
+        r"""Sets the body of this UpdateEnvironmentVariableV2Request.
 
         :param body: The body of this UpdateEnvironmentVariableV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.EnvVariableBase`

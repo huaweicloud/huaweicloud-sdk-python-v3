@@ -25,7 +25,7 @@ class UpdateVpnUserRequestBody:
     }
 
     def __init__(self, user=None):
-        """UpdateVpnUserRequestBody
+        r"""UpdateVpnUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpnUserRequestBody:
 
     @property
     def user(self):
-        """Gets the user of this UpdateVpnUserRequestBody.
+        r"""Gets the user of this UpdateVpnUserRequestBody.
 
         :return: The user of this UpdateVpnUserRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserRequestBodyContent`
@@ -51,7 +51,7 @@ class UpdateVpnUserRequestBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UpdateVpnUserRequestBody.
+        r"""Sets the user of this UpdateVpnUserRequestBody.
 
         :param user: The user of this UpdateVpnUserRequestBody.
         :type user: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserRequestBodyContent`

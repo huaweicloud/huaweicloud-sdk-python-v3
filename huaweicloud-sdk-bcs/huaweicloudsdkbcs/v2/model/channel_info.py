@@ -31,7 +31,7 @@ class ChannelInfo:
     }
 
     def __init__(self, name=None, org_names=None, org_name_hash=None, peers=None):
-        """ChannelInfo
+        r"""ChannelInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ChannelInfo:
 
     @property
     def name(self):
-        """Gets the name of this ChannelInfo.
+        r"""Gets the name of this ChannelInfo.
 
         通道名
 
@@ -75,7 +75,7 @@ class ChannelInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChannelInfo.
+        r"""Sets the name of this ChannelInfo.
 
         通道名
 
@@ -86,7 +86,7 @@ class ChannelInfo:
 
     @property
     def org_names(self):
-        """Gets the org_names of this ChannelInfo.
+        r"""Gets the org_names of this ChannelInfo.
 
         通道中组织名
 
@@ -97,7 +97,7 @@ class ChannelInfo:
 
     @org_names.setter
     def org_names(self, org_names):
-        """Sets the org_names of this ChannelInfo.
+        r"""Sets the org_names of this ChannelInfo.
 
         通道中组织名
 
@@ -108,7 +108,7 @@ class ChannelInfo:
 
     @property
     def org_name_hash(self):
-        """Gets the org_name_hash of this ChannelInfo.
+        r"""Gets the org_name_hash of this ChannelInfo.
 
         通道中组织名的哈希值
 
@@ -119,7 +119,7 @@ class ChannelInfo:
 
     @org_name_hash.setter
     def org_name_hash(self, org_name_hash):
-        """Sets the org_name_hash of this ChannelInfo.
+        r"""Sets the org_name_hash of this ChannelInfo.
 
         通道中组织名的哈希值
 
@@ -130,7 +130,7 @@ class ChannelInfo:
 
     @property
     def peers(self):
-        """Gets the peers of this ChannelInfo.
+        r"""Gets the peers of this ChannelInfo.
 
         key:组织名，value:peer节点数组
 
@@ -141,7 +141,7 @@ class ChannelInfo:
 
     @peers.setter
     def peers(self, peers):
-        """Sets the peers of this ChannelInfo.
+        r"""Sets the peers of this ChannelInfo.
 
         key:组织名，value:peer节点数组
 

@@ -26,7 +26,7 @@ class ListMessageTraceResponse(SdkResponse):
     }
 
     def __init__(self, trace=None):
-        """ListMessageTraceResponse
+        r"""ListMessageTraceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMessageTraceResponse(SdkResponse):
 
     @property
     def trace(self):
-        """Gets the trace of this ListMessageTraceResponse.
+        r"""Gets the trace of this ListMessageTraceResponse.
 
         消息轨迹列表。
 
@@ -55,7 +55,7 @@ class ListMessageTraceResponse(SdkResponse):
 
     @trace.setter
     def trace(self, trace):
-        """Sets the trace of this ListMessageTraceResponse.
+        r"""Sets the trace of this ListMessageTraceResponse.
 
         消息轨迹列表。
 

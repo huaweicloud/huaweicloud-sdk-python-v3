@@ -24,7 +24,7 @@ class CreateSharedTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateSharedTagResponse
+        r"""CreateSharedTagResponse
 
         The model defined in huaweicloud sdk
 

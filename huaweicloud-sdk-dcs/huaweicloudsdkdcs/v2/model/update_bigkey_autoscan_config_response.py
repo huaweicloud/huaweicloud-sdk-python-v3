@@ -32,7 +32,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, enable_auto_scan=None, schedule_at=None, updated_at=None):
-        """UpdateBigkeyAutoscanConfigResponse
+        r"""UpdateBigkeyAutoscanConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Gets the instance_id of this UpdateBigkeyAutoscanConfigResponse.
 
         实例ID
 
@@ -76,7 +76,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Sets the instance_id of this UpdateBigkeyAutoscanConfigResponse.
 
         实例ID
 
@@ -87,7 +87,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @property
     def enable_auto_scan(self):
-        """Gets the enable_auto_scan of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Gets the enable_auto_scan of this UpdateBigkeyAutoscanConfigResponse.
 
         是否开启自动分析
 
@@ -98,7 +98,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @enable_auto_scan.setter
     def enable_auto_scan(self, enable_auto_scan):
-        """Sets the enable_auto_scan of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Sets the enable_auto_scan of this UpdateBigkeyAutoscanConfigResponse.
 
         是否开启自动分析
 
@@ -109,7 +109,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @property
     def schedule_at(self):
-        """Gets the schedule_at of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Gets the schedule_at of this UpdateBigkeyAutoscanConfigResponse.
 
         每日分析时间，时间格式为21:00
 
@@ -120,7 +120,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @schedule_at.setter
     def schedule_at(self, schedule_at):
-        """Sets the schedule_at of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Sets the schedule_at of this UpdateBigkeyAutoscanConfigResponse.
 
         每日分析时间，时间格式为21:00
 
@@ -131,7 +131,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Gets the updated_at of this UpdateBigkeyAutoscanConfigResponse.
 
         配置更新时间，时间格式为2020-06-15T02:21:18.669Z
 
@@ -142,7 +142,7 @@ class UpdateBigkeyAutoscanConfigResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateBigkeyAutoscanConfigResponse.
+        r"""Sets the updated_at of this UpdateBigkeyAutoscanConfigResponse.
 
         配置更新时间，时间格式为2020-06-15T02:21:18.669Z
 

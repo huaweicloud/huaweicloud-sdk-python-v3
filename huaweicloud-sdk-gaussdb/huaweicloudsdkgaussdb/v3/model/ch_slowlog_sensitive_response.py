@@ -25,7 +25,7 @@ class ChSlowlogSensitiveResponse:
     }
 
     def __init__(self, open_slow_log_switch=None):
-        """ChSlowlogSensitiveResponse
+        r"""ChSlowlogSensitiveResponse
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChSlowlogSensitiveResponse:
 
     @property
     def open_slow_log_switch(self):
-        """Gets the open_slow_log_switch of this ChSlowlogSensitiveResponse.
+        r"""Gets the open_slow_log_switch of this ChSlowlogSensitiveResponse.
 
         慢日志脱敏开关。
 
@@ -53,7 +53,7 @@ class ChSlowlogSensitiveResponse:
 
     @open_slow_log_switch.setter
     def open_slow_log_switch(self, open_slow_log_switch):
-        """Sets the open_slow_log_switch of this ChSlowlogSensitiveResponse.
+        r"""Sets the open_slow_log_switch of this ChSlowlogSensitiveResponse.
 
         慢日志脱敏开关。
 

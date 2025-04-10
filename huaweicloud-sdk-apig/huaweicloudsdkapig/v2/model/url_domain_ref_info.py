@@ -49,7 +49,7 @@ class UrlDomainRefInfo:
     }
 
     def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None, ssl_id=None, ssl_name=None, api_group_id=None, api_group_name=None, instance_id=None):
-        """UrlDomainRefInfo
+        r"""UrlDomainRefInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class UrlDomainRefInfo:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this UrlDomainRefInfo.
+        r"""Gets the url_domain of this UrlDomainRefInfo.
 
         自定义域名
 
@@ -131,7 +131,7 @@ class UrlDomainRefInfo:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this UrlDomainRefInfo.
+        r"""Sets the url_domain of this UrlDomainRefInfo.
 
         自定义域名
 
@@ -142,7 +142,7 @@ class UrlDomainRefInfo:
 
     @property
     def id(self):
-        """Gets the id of this UrlDomainRefInfo.
+        r"""Gets the id of this UrlDomainRefInfo.
 
         自定义域名的编号
 
@@ -153,7 +153,7 @@ class UrlDomainRefInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UrlDomainRefInfo.
+        r"""Sets the id of this UrlDomainRefInfo.
 
         自定义域名的编号
 
@@ -164,7 +164,7 @@ class UrlDomainRefInfo:
 
     @property
     def status(self):
-        """Gets the status of this UrlDomainRefInfo.
+        r"""Gets the status of this UrlDomainRefInfo.
 
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
@@ -175,7 +175,7 @@ class UrlDomainRefInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlDomainRefInfo.
+        r"""Sets the status of this UrlDomainRefInfo.
 
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
@@ -186,7 +186,7 @@ class UrlDomainRefInfo:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomainRefInfo.
+        r"""Gets the min_ssl_version of this UrlDomainRefInfo.
 
         支持的最小SSL版本
 
@@ -197,7 +197,7 @@ class UrlDomainRefInfo:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomainRefInfo.
+        r"""Sets the min_ssl_version of this UrlDomainRefInfo.
 
         支持的最小SSL版本
 
@@ -208,7 +208,7 @@ class UrlDomainRefInfo:
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this UrlDomainRefInfo.
+        r"""Gets the is_http_redirect_to_https of this UrlDomainRefInfo.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -219,7 +219,7 @@ class UrlDomainRefInfo:
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this UrlDomainRefInfo.
+        r"""Sets the is_http_redirect_to_https of this UrlDomainRefInfo.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -230,7 +230,7 @@ class UrlDomainRefInfo:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this UrlDomainRefInfo.
+        r"""Gets the verified_client_certificate_enabled of this UrlDomainRefInfo.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -241,7 +241,7 @@ class UrlDomainRefInfo:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this UrlDomainRefInfo.
+        r"""Sets the verified_client_certificate_enabled of this UrlDomainRefInfo.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -252,7 +252,7 @@ class UrlDomainRefInfo:
 
     @property
     def ingress_http_port(self):
-        """Gets the ingress_http_port of this UrlDomainRefInfo.
+        r"""Gets the ingress_http_port of this UrlDomainRefInfo.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -263,7 +263,7 @@ class UrlDomainRefInfo:
 
     @ingress_http_port.setter
     def ingress_http_port(self, ingress_http_port):
-        """Sets the ingress_http_port of this UrlDomainRefInfo.
+        r"""Sets the ingress_http_port of this UrlDomainRefInfo.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -274,7 +274,7 @@ class UrlDomainRefInfo:
 
     @property
     def ingress_https_port(self):
-        """Gets the ingress_https_port of this UrlDomainRefInfo.
+        r"""Gets the ingress_https_port of this UrlDomainRefInfo.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -285,7 +285,7 @@ class UrlDomainRefInfo:
 
     @ingress_https_port.setter
     def ingress_https_port(self, ingress_https_port):
-        """Sets the ingress_https_port of this UrlDomainRefInfo.
+        r"""Sets the ingress_https_port of this UrlDomainRefInfo.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -296,7 +296,7 @@ class UrlDomainRefInfo:
 
     @property
     def ssl_id(self):
-        """Gets the ssl_id of this UrlDomainRefInfo.
+        r"""Gets the ssl_id of this UrlDomainRefInfo.
 
         证书ID
 
@@ -307,7 +307,7 @@ class UrlDomainRefInfo:
 
     @ssl_id.setter
     def ssl_id(self, ssl_id):
-        """Sets the ssl_id of this UrlDomainRefInfo.
+        r"""Sets the ssl_id of this UrlDomainRefInfo.
 
         证书ID
 
@@ -318,7 +318,7 @@ class UrlDomainRefInfo:
 
     @property
     def ssl_name(self):
-        """Gets the ssl_name of this UrlDomainRefInfo.
+        r"""Gets the ssl_name of this UrlDomainRefInfo.
 
         证书名称
 
@@ -329,7 +329,7 @@ class UrlDomainRefInfo:
 
     @ssl_name.setter
     def ssl_name(self, ssl_name):
-        """Sets the ssl_name of this UrlDomainRefInfo.
+        r"""Sets the ssl_name of this UrlDomainRefInfo.
 
         证书名称
 
@@ -340,7 +340,7 @@ class UrlDomainRefInfo:
 
     @property
     def api_group_id(self):
-        """Gets the api_group_id of this UrlDomainRefInfo.
+        r"""Gets the api_group_id of this UrlDomainRefInfo.
 
         所属API分组ID
 
@@ -351,7 +351,7 @@ class UrlDomainRefInfo:
 
     @api_group_id.setter
     def api_group_id(self, api_group_id):
-        """Sets the api_group_id of this UrlDomainRefInfo.
+        r"""Sets the api_group_id of this UrlDomainRefInfo.
 
         所属API分组ID
 
@@ -362,7 +362,7 @@ class UrlDomainRefInfo:
 
     @property
     def api_group_name(self):
-        """Gets the api_group_name of this UrlDomainRefInfo.
+        r"""Gets the api_group_name of this UrlDomainRefInfo.
 
         所属API分组名称
 
@@ -373,7 +373,7 @@ class UrlDomainRefInfo:
 
     @api_group_name.setter
     def api_group_name(self, api_group_name):
-        """Sets the api_group_name of this UrlDomainRefInfo.
+        r"""Sets the api_group_name of this UrlDomainRefInfo.
 
         所属API分组名称
 
@@ -384,7 +384,7 @@ class UrlDomainRefInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UrlDomainRefInfo.
+        r"""Gets the instance_id of this UrlDomainRefInfo.
 
         所属实例ID
 
@@ -395,7 +395,7 @@ class UrlDomainRefInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UrlDomainRefInfo.
+        r"""Sets the instance_id of this UrlDomainRefInfo.
 
         所属实例ID
 

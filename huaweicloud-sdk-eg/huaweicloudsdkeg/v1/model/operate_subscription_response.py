@@ -30,7 +30,7 @@ class OperateSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, failed_count=None, events=None, x_request_id=None):
-        """OperateSubscriptionResponse
+        r"""OperateSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this OperateSubscriptionResponse.
+        r"""Gets the failed_count of this OperateSubscriptionResponse.
 
         操作失败的订阅个数
 
@@ -69,7 +69,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this OperateSubscriptionResponse.
+        r"""Sets the failed_count of this OperateSubscriptionResponse.
 
         操作失败的订阅个数
 
@@ -80,7 +80,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this OperateSubscriptionResponse.
+        r"""Gets the events of this OperateSubscriptionResponse.
 
         事件列表
 
@@ -91,7 +91,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this OperateSubscriptionResponse.
+        r"""Sets the events of this OperateSubscriptionResponse.
 
         事件列表
 
@@ -102,7 +102,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this OperateSubscriptionResponse.
+        r"""Gets the x_request_id of this OperateSubscriptionResponse.
 
         :return: The x_request_id of this OperateSubscriptionResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this OperateSubscriptionResponse.
+        r"""Sets the x_request_id of this OperateSubscriptionResponse.
 
         :param x_request_id: The x_request_id of this OperateSubscriptionResponse.
         :type x_request_id: str

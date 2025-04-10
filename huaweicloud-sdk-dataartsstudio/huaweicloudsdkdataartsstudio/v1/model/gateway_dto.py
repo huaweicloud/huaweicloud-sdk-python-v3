@@ -31,7 +31,7 @@ class GatewayDTO:
     }
 
     def __init__(self, apig_type=None, apig_instance_id=None, group_id_in_apig=None, roma_app_id=None):
-        """GatewayDTO
+        r"""GatewayDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GatewayDTO:
 
     @property
     def apig_type(self):
-        """Gets the apig_type of this GatewayDTO.
+        r"""Gets the apig_type of this GatewayDTO.
 
         网关类型
 
@@ -75,7 +75,7 @@ class GatewayDTO:
 
     @apig_type.setter
     def apig_type(self, apig_type):
-        """Sets the apig_type of this GatewayDTO.
+        r"""Sets the apig_type of this GatewayDTO.
 
         网关类型
 
@@ -86,7 +86,7 @@ class GatewayDTO:
 
     @property
     def apig_instance_id(self):
-        """Gets the apig_instance_id of this GatewayDTO.
+        r"""Gets the apig_instance_id of this GatewayDTO.
 
         网关实例id
 
@@ -97,7 +97,7 @@ class GatewayDTO:
 
     @apig_instance_id.setter
     def apig_instance_id(self, apig_instance_id):
-        """Sets the apig_instance_id of this GatewayDTO.
+        r"""Sets the apig_instance_id of this GatewayDTO.
 
         网关实例id
 
@@ -108,7 +108,7 @@ class GatewayDTO:
 
     @property
     def group_id_in_apig(self):
-        """Gets the group_id_in_apig of this GatewayDTO.
+        r"""Gets the group_id_in_apig of this GatewayDTO.
 
         网关分组id
 
@@ -119,7 +119,7 @@ class GatewayDTO:
 
     @group_id_in_apig.setter
     def group_id_in_apig(self, group_id_in_apig):
-        """Sets the group_id_in_apig of this GatewayDTO.
+        r"""Sets the group_id_in_apig of this GatewayDTO.
 
         网关分组id
 
@@ -130,7 +130,7 @@ class GatewayDTO:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this GatewayDTO.
+        r"""Gets the roma_app_id of this GatewayDTO.
 
         roma网关集成应用id
 
@@ -141,7 +141,7 @@ class GatewayDTO:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this GatewayDTO.
+        r"""Sets the roma_app_id of this GatewayDTO.
 
         roma网关集成应用id
 

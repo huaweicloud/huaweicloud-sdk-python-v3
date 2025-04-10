@@ -43,7 +43,7 @@ class ListImagesRequest:
     }
 
     def __init__(self, os_type=None, image_type=None, platform=None, architecture=None, package_type=None, image_id=None, limit=None, offset=None, sort_field=None, sort_type=None):
-        """ListImagesRequest
+        r"""ListImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListImagesRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListImagesRequest.
+        r"""Gets the os_type of this ListImagesRequest.
 
         产品镜像的操作系统类型，如Windows。
 
@@ -117,7 +117,7 @@ class ListImagesRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListImagesRequest.
+        r"""Sets the os_type of this ListImagesRequest.
 
         产品镜像的操作系统类型，如Windows。
 
@@ -128,7 +128,7 @@ class ListImagesRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListImagesRequest.
+        r"""Gets the image_type of this ListImagesRequest.
 
         镜像类型。 -gold  公共镜像 -private  私有镜像
 
@@ -139,7 +139,7 @@ class ListImagesRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListImagesRequest.
+        r"""Sets the image_type of this ListImagesRequest.
 
         镜像类型。 -gold  公共镜像 -private  私有镜像
 
@@ -150,7 +150,7 @@ class ListImagesRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this ListImagesRequest.
+        r"""Gets the platform of this ListImagesRequest.
 
         镜像系统类型,如Windows。
 
@@ -161,7 +161,7 @@ class ListImagesRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ListImagesRequest.
+        r"""Sets the platform of this ListImagesRequest.
 
         镜像系统类型,如Windows。
 
@@ -172,7 +172,7 @@ class ListImagesRequest:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListImagesRequest.
+        r"""Gets the architecture of this ListImagesRequest.
 
         镜像架构：x86。
 
@@ -183,7 +183,7 @@ class ListImagesRequest:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListImagesRequest.
+        r"""Sets the architecture of this ListImagesRequest.
 
         镜像架构：x86。
 
@@ -194,7 +194,7 @@ class ListImagesRequest:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ListImagesRequest.
+        r"""Gets the package_type of this ListImagesRequest.
 
         套餐系列
 
@@ -205,7 +205,7 @@ class ListImagesRequest:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ListImagesRequest.
+        r"""Sets the package_type of this ListImagesRequest.
 
         套餐系列
 
@@ -216,7 +216,7 @@ class ListImagesRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImagesRequest.
+        r"""Gets the image_id of this ListImagesRequest.
 
         镜像Id
 
@@ -227,7 +227,7 @@ class ListImagesRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImagesRequest.
+        r"""Sets the image_id of this ListImagesRequest.
 
         镜像Id
 
@@ -238,7 +238,7 @@ class ListImagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImagesRequest.
+        r"""Gets the limit of this ListImagesRequest.
 
         每页数量，范围0-100，默认100。
 
@@ -249,7 +249,7 @@ class ListImagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImagesRequest.
+        r"""Sets the limit of this ListImagesRequest.
 
         每页数量，范围0-100，默认100。
 
@@ -260,7 +260,7 @@ class ListImagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImagesRequest.
+        r"""Gets the offset of this ListImagesRequest.
 
         偏移量,默认0。
 
@@ -271,7 +271,7 @@ class ListImagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImagesRequest.
+        r"""Sets the offset of this ListImagesRequest.
 
         偏移量,默认0。
 
@@ -282,7 +282,7 @@ class ListImagesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListImagesRequest.
+        r"""Gets the sort_field of this ListImagesRequest.
 
         用于排序，表示按照哪个字段排序。取值为镜像属性name、created_at字段，默认为name。
 
@@ -293,7 +293,7 @@ class ListImagesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListImagesRequest.
+        r"""Sets the sort_field of this ListImagesRequest.
 
         用于排序，表示按照哪个字段排序。取值为镜像属性name、created_at字段，默认为name。
 
@@ -304,7 +304,7 @@ class ListImagesRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListImagesRequest.
+        r"""Gets the sort_type of this ListImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为升序asc。
 
@@ -315,7 +315,7 @@ class ListImagesRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListImagesRequest.
+        r"""Sets the sort_type of this ListImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为升序asc。
 

@@ -27,7 +27,7 @@ class EipSpecBandwidth:
     }
 
     def __init__(self, size=None, sharetype=None):
-        """EipSpecBandwidth
+        r"""EipSpecBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EipSpecBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this EipSpecBandwidth.
+        r"""Gets the size of this EipSpecBandwidth.
 
         带宽大小
 
@@ -61,7 +61,7 @@ class EipSpecBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this EipSpecBandwidth.
+        r"""Sets the size of this EipSpecBandwidth.
 
         带宽大小
 
@@ -72,7 +72,7 @@ class EipSpecBandwidth:
 
     @property
     def sharetype(self):
-        """Gets the sharetype of this EipSpecBandwidth.
+        r"""Gets the sharetype of this EipSpecBandwidth.
 
         带宽类型
 
@@ -83,7 +83,7 @@ class EipSpecBandwidth:
 
     @sharetype.setter
     def sharetype(self, sharetype):
-        """Sets the sharetype of this EipSpecBandwidth.
+        r"""Sets the sharetype of this EipSpecBandwidth.
 
         带宽类型
 

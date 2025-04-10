@@ -25,7 +25,7 @@ class StopScriptExecutionRequest:
     }
 
     def __init__(self, body=None):
-        """StopScriptExecutionRequest
+        r"""StopScriptExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StopScriptExecutionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopScriptExecutionRequest.
+        r"""Gets the body of this StopScriptExecutionRequest.
 
         :return: The body of this StopScriptExecutionRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.StopScriptExecutionReq`
@@ -52,7 +52,7 @@ class StopScriptExecutionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopScriptExecutionRequest.
+        r"""Sets the body of this StopScriptExecutionRequest.
 
         :param body: The body of this StopScriptExecutionRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.StopScriptExecutionReq`

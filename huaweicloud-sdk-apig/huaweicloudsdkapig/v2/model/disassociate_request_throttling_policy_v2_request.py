@@ -27,7 +27,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_binding_id=None):
-        """DisassociateRequestThrottlingPolicyV2Request
+        r"""DisassociateRequestThrottlingPolicyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DisassociateRequestThrottlingPolicyV2Request.
+        r"""Gets the instance_id of this DisassociateRequestThrottlingPolicyV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DisassociateRequestThrottlingPolicyV2Request.
+        r"""Sets the instance_id of this DisassociateRequestThrottlingPolicyV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
 
     @property
     def throttle_binding_id(self):
-        """Gets the throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
+        r"""Gets the throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
 
         API和流控策略绑定关系的编号
 
@@ -81,7 +81,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
 
     @throttle_binding_id.setter
     def throttle_binding_id(self, throttle_binding_id):
-        """Sets the throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
+        r"""Sets the throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
 
         API和流控策略绑定关系的编号
 

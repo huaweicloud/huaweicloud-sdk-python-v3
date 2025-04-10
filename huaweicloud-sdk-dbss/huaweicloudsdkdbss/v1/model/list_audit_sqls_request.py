@@ -27,7 +27,7 @@ class ListAuditSqlsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListAuditSqlsRequest
+        r"""ListAuditSqlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAuditSqlsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditSqlsRequest.
+        r"""Gets the instance_id of this ListAuditSqlsRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class ListAuditSqlsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditSqlsRequest.
+        r"""Sets the instance_id of this ListAuditSqlsRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class ListAuditSqlsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAuditSqlsRequest.
+        r"""Gets the body of this ListAuditSqlsRequest.
 
         :return: The body of this ListAuditSqlsRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AuditSqlRequest`
@@ -80,7 +80,7 @@ class ListAuditSqlsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAuditSqlsRequest.
+        r"""Sets the body of this ListAuditSqlsRequest.
 
         :param body: The body of this ListAuditSqlsRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.AuditSqlRequest`

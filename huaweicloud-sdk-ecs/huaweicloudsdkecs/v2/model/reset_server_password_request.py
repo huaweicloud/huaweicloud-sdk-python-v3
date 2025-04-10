@@ -27,7 +27,7 @@ class ResetServerPasswordRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ResetServerPasswordRequest
+        r"""ResetServerPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetServerPasswordRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ResetServerPasswordRequest.
+        r"""Gets the server_id of this ResetServerPasswordRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class ResetServerPasswordRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ResetServerPasswordRequest.
+        r"""Sets the server_id of this ResetServerPasswordRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class ResetServerPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetServerPasswordRequest.
+        r"""Gets the body of this ResetServerPasswordRequest.
 
         :return: The body of this ResetServerPasswordRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ResetServerPasswordRequestBody`
@@ -80,7 +80,7 @@ class ResetServerPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetServerPasswordRequest.
+        r"""Sets the body of this ResetServerPasswordRequest.
 
         :param body: The body of this ResetServerPasswordRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ResetServerPasswordRequestBody`

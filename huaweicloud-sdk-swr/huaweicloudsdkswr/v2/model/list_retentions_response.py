@@ -26,7 +26,7 @@ class ListRetentionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListRetentionsResponse
+        r"""ListRetentionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRetentionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListRetentionsResponse.
+        r"""Gets the body of this ListRetentionsResponse.
 
         :return: The body of this ListRetentionsResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.Retention`]
@@ -53,7 +53,7 @@ class ListRetentionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRetentionsResponse.
+        r"""Sets the body of this ListRetentionsResponse.
 
         :param body: The body of this ListRetentionsResponse.
         :type body: list[:class:`huaweicloudsdkswr.v2.Retention`]

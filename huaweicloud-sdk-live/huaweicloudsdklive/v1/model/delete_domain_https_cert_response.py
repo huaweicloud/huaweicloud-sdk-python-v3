@@ -24,7 +24,7 @@ class DeleteDomainHttpsCertResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDomainHttpsCertResponse
+        r"""DeleteDomainHttpsCertResponse
 
         The model defined in huaweicloud sdk
 

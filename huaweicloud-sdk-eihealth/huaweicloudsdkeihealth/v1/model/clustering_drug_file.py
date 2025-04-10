@@ -31,7 +31,7 @@ class ClusteringDrugFile:
     }
 
     def __init__(self, source=None, url=None, format=None, data=None):
-        """ClusteringDrugFile
+        r"""ClusteringDrugFile
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ClusteringDrugFile:
 
     @property
     def source(self):
-        """Gets the source of this ClusteringDrugFile.
+        r"""Gets the source of this ClusteringDrugFile.
 
         :return: The source of this ClusteringDrugFile.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ClusteringFileSource`
@@ -72,7 +72,7 @@ class ClusteringDrugFile:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ClusteringDrugFile.
+        r"""Sets the source of this ClusteringDrugFile.
 
         :param source: The source of this ClusteringDrugFile.
         :type source: :class:`huaweicloudsdkeihealth.v1.ClusteringFileSource`
@@ -81,7 +81,7 @@ class ClusteringDrugFile:
 
     @property
     def url(self):
-        """Gets the url of this ClusteringDrugFile.
+        r"""Gets the url of this ClusteringDrugFile.
 
         文件URL，当数据源为用户私有数据中心为项目路径，为公共数据场景时为obs地址。
 
@@ -92,7 +92,7 @@ class ClusteringDrugFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ClusteringDrugFile.
+        r"""Sets the url of this ClusteringDrugFile.
 
         文件URL，当数据源为用户私有数据中心为项目路径，为公共数据场景时为obs地址。
 
@@ -103,7 +103,7 @@ class ClusteringDrugFile:
 
     @property
     def format(self):
-        """Gets the format of this ClusteringDrugFile.
+        r"""Gets the format of this ClusteringDrugFile.
 
         文件格式，支持SMI，仅数据源为RAW时提供。
 
@@ -114,7 +114,7 @@ class ClusteringDrugFile:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ClusteringDrugFile.
+        r"""Sets the format of this ClusteringDrugFile.
 
         文件格式，支持SMI，仅数据源为RAW时提供。
 
@@ -125,7 +125,7 @@ class ClusteringDrugFile:
 
     @property
     def data(self):
-        """Gets the data of this ClusteringDrugFile.
+        r"""Gets the data of this ClusteringDrugFile.
 
         文件原始数据，仅数据源为RAW时提供。
 
@@ -136,7 +136,7 @@ class ClusteringDrugFile:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ClusteringDrugFile.
+        r"""Sets the data of this ClusteringDrugFile.
 
         文件原始数据，仅数据源为RAW时提供。
 

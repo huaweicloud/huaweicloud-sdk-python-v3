@@ -39,7 +39,7 @@ class ShowClusterRespCluster:
     }
 
     def __init__(self, controller=None, brokers=None, topics_count=None, partitions_count=None, online_partitions_count=None, replicas_count=None, isr_replicas_count=None, consumers_count=None):
-        """ShowClusterRespCluster
+        r"""ShowClusterRespCluster
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ShowClusterRespCluster:
 
     @property
     def controller(self):
-        """Gets the controller of this ShowClusterRespCluster.
+        r"""Gets the controller of this ShowClusterRespCluster.
 
         控制器ID。
 
@@ -103,7 +103,7 @@ class ShowClusterRespCluster:
 
     @controller.setter
     def controller(self, controller):
-        """Sets the controller of this ShowClusterRespCluster.
+        r"""Sets the controller of this ShowClusterRespCluster.
 
         控制器ID。
 
@@ -114,7 +114,7 @@ class ShowClusterRespCluster:
 
     @property
     def brokers(self):
-        """Gets the brokers of this ShowClusterRespCluster.
+        r"""Gets the brokers of this ShowClusterRespCluster.
 
         节点列表。
 
@@ -125,7 +125,7 @@ class ShowClusterRespCluster:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ShowClusterRespCluster.
+        r"""Sets the brokers of this ShowClusterRespCluster.
 
         节点列表。
 
@@ -136,7 +136,7 @@ class ShowClusterRespCluster:
 
     @property
     def topics_count(self):
-        """Gets the topics_count of this ShowClusterRespCluster.
+        r"""Gets the topics_count of this ShowClusterRespCluster.
 
         主题数量。
 
@@ -147,7 +147,7 @@ class ShowClusterRespCluster:
 
     @topics_count.setter
     def topics_count(self, topics_count):
-        """Sets the topics_count of this ShowClusterRespCluster.
+        r"""Sets the topics_count of this ShowClusterRespCluster.
 
         主题数量。
 
@@ -158,7 +158,7 @@ class ShowClusterRespCluster:
 
     @property
     def partitions_count(self):
-        """Gets the partitions_count of this ShowClusterRespCluster.
+        r"""Gets the partitions_count of this ShowClusterRespCluster.
 
         分区数量。
 
@@ -169,7 +169,7 @@ class ShowClusterRespCluster:
 
     @partitions_count.setter
     def partitions_count(self, partitions_count):
-        """Sets the partitions_count of this ShowClusterRespCluster.
+        r"""Sets the partitions_count of this ShowClusterRespCluster.
 
         分区数量。
 
@@ -180,7 +180,7 @@ class ShowClusterRespCluster:
 
     @property
     def online_partitions_count(self):
-        """Gets the online_partitions_count of this ShowClusterRespCluster.
+        r"""Gets the online_partitions_count of this ShowClusterRespCluster.
 
         在线分区数量。
 
@@ -191,7 +191,7 @@ class ShowClusterRespCluster:
 
     @online_partitions_count.setter
     def online_partitions_count(self, online_partitions_count):
-        """Sets the online_partitions_count of this ShowClusterRespCluster.
+        r"""Sets the online_partitions_count of this ShowClusterRespCluster.
 
         在线分区数量。
 
@@ -202,7 +202,7 @@ class ShowClusterRespCluster:
 
     @property
     def replicas_count(self):
-        """Gets the replicas_count of this ShowClusterRespCluster.
+        r"""Gets the replicas_count of this ShowClusterRespCluster.
 
         副本数量。
 
@@ -213,7 +213,7 @@ class ShowClusterRespCluster:
 
     @replicas_count.setter
     def replicas_count(self, replicas_count):
-        """Sets the replicas_count of this ShowClusterRespCluster.
+        r"""Sets the replicas_count of this ShowClusterRespCluster.
 
         副本数量。
 
@@ -224,7 +224,7 @@ class ShowClusterRespCluster:
 
     @property
     def isr_replicas_count(self):
-        """Gets the isr_replicas_count of this ShowClusterRespCluster.
+        r"""Gets the isr_replicas_count of this ShowClusterRespCluster.
 
         ISR（In-Sync Replicas） 副本总数。
 
@@ -235,7 +235,7 @@ class ShowClusterRespCluster:
 
     @isr_replicas_count.setter
     def isr_replicas_count(self, isr_replicas_count):
-        """Sets the isr_replicas_count of this ShowClusterRespCluster.
+        r"""Sets the isr_replicas_count of this ShowClusterRespCluster.
 
         ISR（In-Sync Replicas） 副本总数。
 
@@ -246,7 +246,7 @@ class ShowClusterRespCluster:
 
     @property
     def consumers_count(self):
-        """Gets the consumers_count of this ShowClusterRespCluster.
+        r"""Gets the consumers_count of this ShowClusterRespCluster.
 
         消费组数量。
 
@@ -257,7 +257,7 @@ class ShowClusterRespCluster:
 
     @consumers_count.setter
     def consumers_count(self, consumers_count):
-        """Sets the consumers_count of this ShowClusterRespCluster.
+        r"""Sets the consumers_count of this ShowClusterRespCluster.
 
         消费组数量。
 

@@ -27,7 +27,7 @@ class ShowDefaultTemplateByPageRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowDefaultTemplateByPageRequest
+        r"""ShowDefaultTemplateByPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDefaultTemplateByPageRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowDefaultTemplateByPageRequest.
+        r"""Gets the project_id of this ShowDefaultTemplateByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowDefaultTemplateByPageRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowDefaultTemplateByPageRequest.
+        r"""Sets the project_id of this ShowDefaultTemplateByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowDefaultTemplateByPageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowDefaultTemplateByPageRequest.
+        r"""Gets the body of this ShowDefaultTemplateByPageRequest.
 
         :return: The body of this ShowDefaultTemplateByPageRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestGetDefaultTemplateParam`
@@ -80,7 +80,7 @@ class ShowDefaultTemplateByPageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDefaultTemplateByPageRequest.
+        r"""Sets the body of this ShowDefaultTemplateByPageRequest.
 
         :param body: The body of this ShowDefaultTemplateByPageRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestGetDefaultTemplateParam`

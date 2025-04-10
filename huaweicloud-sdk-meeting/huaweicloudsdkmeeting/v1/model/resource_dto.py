@@ -33,7 +33,7 @@ class ResourceDTO:
     }
 
     def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None):
-        """ResourceDTO
+        r"""ResourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ResourceDTO:
 
     @property
     def id(self):
-        """Gets the id of this ResourceDTO.
+        r"""Gets the id of this ResourceDTO.
 
         资源标识，不携带则后台自动生成。
 
@@ -79,7 +79,7 @@ class ResourceDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceDTO.
+        r"""Sets the id of this ResourceDTO.
 
         资源标识，不携带则后台自动生成。
 
@@ -90,7 +90,7 @@ class ResourceDTO:
 
     @property
     def type(self):
-        """Gets the type of this ResourceDTO.
+        r"""Gets the type of this ResourceDTO.
 
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
@@ -101,7 +101,7 @@ class ResourceDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceDTO.
+        r"""Sets the type of this ResourceDTO.
 
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
@@ -112,7 +112,7 @@ class ResourceDTO:
 
     @property
     def type_id(self):
-        """Gets the type_id of this ResourceDTO.
+        r"""Gets the type_id of this ResourceDTO.
 
         类型标识，比如资源类型为vmr，vmr又分为5方，10方等，该参数为vmrPkgId，用来区分子类别，详见如下： - vmr10:ff808081699b56d40169c410d5080179 - vmr50:ff808081699b56cb0169c411a0980152 - vmr100:ff808081699b56cb0169c41167850151 - vmr200:ff808081699b56d40169c410913d0178 - vmr25:ff808081699b56d40169c4111fe5017a - vmr300:ff8080816b9ec3ab016bdff237962e83 - vmr400:ff8080816b9ec475016bdff37efc279f - vmr500:ff8080816b9ec3ab016bdff338542e84
 
@@ -123,7 +123,7 @@ class ResourceDTO:
 
     @type_id.setter
     def type_id(self, type_id):
-        """Sets the type_id of this ResourceDTO.
+        r"""Sets the type_id of this ResourceDTO.
 
         类型标识，比如资源类型为vmr，vmr又分为5方，10方等，该参数为vmrPkgId，用来区分子类别，详见如下： - vmr10:ff808081699b56d40169c410d5080179 - vmr50:ff808081699b56cb0169c411a0980152 - vmr100:ff808081699b56cb0169c41167850151 - vmr200:ff808081699b56d40169c410913d0178 - vmr25:ff808081699b56d40169c4111fe5017a - vmr300:ff8080816b9ec3ab016bdff237962e83 - vmr400:ff8080816b9ec475016bdff37efc279f - vmr500:ff8080816b9ec3ab016bdff338542e84
 
@@ -134,7 +134,7 @@ class ResourceDTO:
 
     @property
     def count(self):
-        """Gets the count of this ResourceDTO.
+        r"""Gets the count of this ResourceDTO.
 
         资源数量。
 
@@ -145,7 +145,7 @@ class ResourceDTO:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ResourceDTO.
+        r"""Sets the count of this ResourceDTO.
 
         资源数量。
 
@@ -156,7 +156,7 @@ class ResourceDTO:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this ResourceDTO.
+        r"""Gets the expire_date of this ResourceDTO.
 
         到期时间,utc时间戳。
 
@@ -167,7 +167,7 @@ class ResourceDTO:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this ResourceDTO.
+        r"""Sets the expire_date of this ResourceDTO.
 
         到期时间,utc时间戳。
 

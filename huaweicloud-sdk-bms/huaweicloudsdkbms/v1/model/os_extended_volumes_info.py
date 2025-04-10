@@ -31,7 +31,7 @@ class OsExtendedVolumesInfo:
     }
 
     def __init__(self, id=None, delete_on_termination=None, boot_index=None, device=None):
-        """OsExtendedVolumesInfo
+        r"""OsExtendedVolumesInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OsExtendedVolumesInfo:
 
     @property
     def id(self):
-        """Gets the id of this OsExtendedVolumesInfo.
+        r"""Gets the id of this OsExtendedVolumesInfo.
 
         磁盘ID，格式为UUID
 
@@ -75,7 +75,7 @@ class OsExtendedVolumesInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OsExtendedVolumesInfo.
+        r"""Sets the id of this OsExtendedVolumesInfo.
 
         磁盘ID，格式为UUID
 
@@ -86,7 +86,7 @@ class OsExtendedVolumesInfo:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this OsExtendedVolumesInfo.
+        r"""Gets the delete_on_termination of this OsExtendedVolumesInfo.
 
         删裸金属服务器时是否一并删除该磁盘。true：是false：否
 
@@ -97,7 +97,7 @@ class OsExtendedVolumesInfo:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this OsExtendedVolumesInfo.
+        r"""Sets the delete_on_termination of this OsExtendedVolumesInfo.
 
         删裸金属服务器时是否一并删除该磁盘。true：是false：否
 
@@ -108,7 +108,7 @@ class OsExtendedVolumesInfo:
 
     @property
     def boot_index(self):
-        """Gets the boot_index of this OsExtendedVolumesInfo.
+        r"""Gets the boot_index of this OsExtendedVolumesInfo.
 
         启动标识，“0”代表启动盘，“-1“代表非启动盘
 
@@ -119,7 +119,7 @@ class OsExtendedVolumesInfo:
 
     @boot_index.setter
     def boot_index(self, boot_index):
-        """Sets the boot_index of this OsExtendedVolumesInfo.
+        r"""Sets the boot_index of this OsExtendedVolumesInfo.
 
         启动标识，“0”代表启动盘，“-1“代表非启动盘
 
@@ -130,7 +130,7 @@ class OsExtendedVolumesInfo:
 
     @property
     def device(self):
-        """Gets the device of this OsExtendedVolumesInfo.
+        r"""Gets the device of this OsExtendedVolumesInfo.
 
         磁盘设备名称，例如“/dev/sdb”。
 
@@ -141,7 +141,7 @@ class OsExtendedVolumesInfo:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this OsExtendedVolumesInfo.
+        r"""Sets the device of this OsExtendedVolumesInfo.
 
         磁盘设备名称，例如“/dev/sdb”。
 

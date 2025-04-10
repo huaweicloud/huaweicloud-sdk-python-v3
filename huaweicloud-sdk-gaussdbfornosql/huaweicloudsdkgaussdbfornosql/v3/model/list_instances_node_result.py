@@ -43,7 +43,7 @@ class ListInstancesNodeResult:
     }
 
     def __init__(self, id=None, name=None, status=None, role=None, subnet_id=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None, support_reduce=None):
-        """ListInstancesNodeResult
+        r"""ListInstancesNodeResult
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListInstancesNodeResult:
 
     @property
     def id(self):
-        """Gets the id of this ListInstancesNodeResult.
+        r"""Gets the id of this ListInstancesNodeResult.
 
         节点ID。
 
@@ -107,7 +107,7 @@ class ListInstancesNodeResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstancesNodeResult.
+        r"""Sets the id of this ListInstancesNodeResult.
 
         节点ID。
 
@@ -118,7 +118,7 @@ class ListInstancesNodeResult:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesNodeResult.
+        r"""Gets the name of this ListInstancesNodeResult.
 
         节点名称。
 
@@ -129,7 +129,7 @@ class ListInstancesNodeResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesNodeResult.
+        r"""Sets the name of this ListInstancesNodeResult.
 
         节点名称。
 
@@ -140,7 +140,7 @@ class ListInstancesNodeResult:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesNodeResult.
+        r"""Gets the status of this ListInstancesNodeResult.
 
         节点状态。
 
@@ -151,7 +151,7 @@ class ListInstancesNodeResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesNodeResult.
+        r"""Sets the status of this ListInstancesNodeResult.
 
         节点状态。
 
@@ -162,7 +162,7 @@ class ListInstancesNodeResult:
 
     @property
     def role(self):
-        """Gets the role of this ListInstancesNodeResult.
+        r"""Gets the role of this ListInstancesNodeResult.
 
         节点角色。 该参数仅对GeminiDB Mongo引擎的副本集实例有效。
 
@@ -173,7 +173,7 @@ class ListInstancesNodeResult:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ListInstancesNodeResult.
+        r"""Sets the role of this ListInstancesNodeResult.
 
         节点角色。 该参数仅对GeminiDB Mongo引擎的副本集实例有效。
 
@@ -184,7 +184,7 @@ class ListInstancesNodeResult:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListInstancesNodeResult.
+        r"""Gets the subnet_id of this ListInstancesNodeResult.
 
         节点所在的子网的ID。
 
@@ -195,7 +195,7 @@ class ListInstancesNodeResult:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListInstancesNodeResult.
+        r"""Sets the subnet_id of this ListInstancesNodeResult.
 
         节点所在的子网的ID。
 
@@ -206,7 +206,7 @@ class ListInstancesNodeResult:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListInstancesNodeResult.
+        r"""Gets the private_ip of this ListInstancesNodeResult.
 
         节点内网IP。在弹性云服务器创建成功后参数值存在，否则，值为\"\"。
 
@@ -217,7 +217,7 @@ class ListInstancesNodeResult:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListInstancesNodeResult.
+        r"""Sets the private_ip of this ListInstancesNodeResult.
 
         节点内网IP。在弹性云服务器创建成功后参数值存在，否则，值为\"\"。
 
@@ -228,7 +228,7 @@ class ListInstancesNodeResult:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListInstancesNodeResult.
+        r"""Gets the public_ip of this ListInstancesNodeResult.
 
         绑定的公网IP。该参数仅针对绑定了公网IP的节点有效。
 
@@ -239,7 +239,7 @@ class ListInstancesNodeResult:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListInstancesNodeResult.
+        r"""Sets the public_ip of this ListInstancesNodeResult.
 
         绑定的公网IP。该参数仅针对绑定了公网IP的节点有效。
 
@@ -250,7 +250,7 @@ class ListInstancesNodeResult:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListInstancesNodeResult.
+        r"""Gets the spec_code of this ListInstancesNodeResult.
 
         资源规格编码。关于实例的规格信息，请参见查询所有实例规格信息中响应参数“flavors.spec_code”的值。
 
@@ -261,7 +261,7 @@ class ListInstancesNodeResult:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListInstancesNodeResult.
+        r"""Sets the spec_code of this ListInstancesNodeResult.
 
         资源规格编码。关于实例的规格信息，请参见查询所有实例规格信息中响应参数“flavors.spec_code”的值。
 
@@ -272,7 +272,7 @@ class ListInstancesNodeResult:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListInstancesNodeResult.
+        r"""Gets the availability_zone of this ListInstancesNodeResult.
 
         可用区。
 
@@ -283,7 +283,7 @@ class ListInstancesNodeResult:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListInstancesNodeResult.
+        r"""Sets the availability_zone of this ListInstancesNodeResult.
 
         可用区。
 
@@ -294,7 +294,7 @@ class ListInstancesNodeResult:
 
     @property
     def support_reduce(self):
-        """Gets the support_reduce of this ListInstancesNodeResult.
+        r"""Gets the support_reduce of this ListInstancesNodeResult.
 
         是否支持节点缩容。 - true，表示该节点支持节点缩容。 - false，表示该节点不支持节点缩容。
 
@@ -305,7 +305,7 @@ class ListInstancesNodeResult:
 
     @support_reduce.setter
     def support_reduce(self, support_reduce):
-        """Sets the support_reduce of this ListInstancesNodeResult.
+        r"""Sets the support_reduce of this ListInstancesNodeResult.
 
         是否支持节点缩容。 - true，表示该节点支持节点缩容。 - false，表示该节点不支持节点缩容。
 

@@ -25,7 +25,7 @@ class BatchSetAttributesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchSetAttributesRequest
+        r"""BatchSetAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchSetAttributesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetAttributesRequest.
+        r"""Gets the body of this BatchSetAttributesRequest.
 
         :return: The body of this BatchSetAttributesRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesReq`
@@ -52,7 +52,7 @@ class BatchSetAttributesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetAttributesRequest.
+        r"""Sets the body of this BatchSetAttributesRequest.
 
         :param body: The body of this BatchSetAttributesRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesReq`

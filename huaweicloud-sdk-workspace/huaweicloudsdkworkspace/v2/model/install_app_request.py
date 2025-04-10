@@ -27,7 +27,7 @@ class InstallAppRequest:
     }
 
     def __init__(self, app_id=None, body=None):
-        """InstallAppRequest
+        r"""InstallAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InstallAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this InstallAppRequest.
+        r"""Gets the app_id of this InstallAppRequest.
 
         应用ID。
 
@@ -60,7 +60,7 @@ class InstallAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this InstallAppRequest.
+        r"""Sets the app_id of this InstallAppRequest.
 
         应用ID。
 
@@ -71,7 +71,7 @@ class InstallAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this InstallAppRequest.
+        r"""Gets the body of this InstallAppRequest.
 
         :return: The body of this InstallAppRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AutoInstallAppReq`
@@ -80,7 +80,7 @@ class InstallAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InstallAppRequest.
+        r"""Sets the body of this InstallAppRequest.
 
         :param body: The body of this InstallAppRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AutoInstallAppReq`

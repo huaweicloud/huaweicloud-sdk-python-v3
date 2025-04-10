@@ -25,7 +25,7 @@ class RestarInstanceInfo:
     }
 
     def __init__(self, type=None):
-        """RestarInstanceInfo
+        r"""RestarInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestarInstanceInfo:
 
     @property
     def type(self):
-        """Gets the type of this RestarInstanceInfo.
+        r"""Gets the type of this RestarInstanceInfo.
 
         重启的类型，soft或者hard。 - soft表示软重启（只重启进程）。 - hard表示强制重启（重启虚拟机）。
 
@@ -54,7 +54,7 @@ class RestarInstanceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RestarInstanceInfo.
+        r"""Sets the type of this RestarInstanceInfo.
 
         重启的类型，soft或者hard。 - soft表示软重启（只重启进程）。 - hard表示强制重启（重启虚拟机）。
 

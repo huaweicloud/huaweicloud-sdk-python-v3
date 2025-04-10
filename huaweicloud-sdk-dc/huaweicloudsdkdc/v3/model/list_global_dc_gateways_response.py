@@ -30,7 +30,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
     }
 
     def __init__(self, global_dc_gateways=None, page_info=None, request_id=None):
-        """ListGlobalDcGatewaysResponse
+        r"""ListGlobalDcGatewaysResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
 
     @property
     def global_dc_gateways(self):
-        """Gets the global_dc_gateways of this ListGlobalDcGatewaysResponse.
+        r"""Gets the global_dc_gateways of this ListGlobalDcGatewaysResponse.
 
         全域接入网关列表。
 
@@ -69,7 +69,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
 
     @global_dc_gateways.setter
     def global_dc_gateways(self, global_dc_gateways):
-        """Sets the global_dc_gateways of this ListGlobalDcGatewaysResponse.
+        r"""Sets the global_dc_gateways of this ListGlobalDcGatewaysResponse.
 
         全域接入网关列表。
 
@@ -80,7 +80,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGlobalDcGatewaysResponse.
+        r"""Gets the page_info of this ListGlobalDcGatewaysResponse.
 
         :return: The page_info of this ListGlobalDcGatewaysResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGlobalDcGatewaysResponse.
+        r"""Sets the page_info of this ListGlobalDcGatewaysResponse.
 
         :param page_info: The page_info of this ListGlobalDcGatewaysResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalDcGatewaysResponse.
+        r"""Gets the request_id of this ListGlobalDcGatewaysResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListGlobalDcGatewaysResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalDcGatewaysResponse.
+        r"""Sets the request_id of this ListGlobalDcGatewaysResponse.
 
         请求ID。
 

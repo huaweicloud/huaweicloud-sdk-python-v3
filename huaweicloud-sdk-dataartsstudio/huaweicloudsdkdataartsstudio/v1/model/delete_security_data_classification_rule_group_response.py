@@ -24,7 +24,7 @@ class DeleteSecurityDataClassificationRuleGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSecurityDataClassificationRuleGroupResponse
+        r"""DeleteSecurityDataClassificationRuleGroupResponse
 
         The model defined in huaweicloud sdk
 

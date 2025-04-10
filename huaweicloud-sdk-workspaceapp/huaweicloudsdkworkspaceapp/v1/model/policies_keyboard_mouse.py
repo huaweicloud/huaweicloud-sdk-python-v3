@@ -29,7 +29,7 @@ class PoliciesKeyboardMouse:
     }
 
     def __init__(self, mouse_feedback=None, mouse_simulation_mode=None, external_cursor_feedback=None):
-        """PoliciesKeyboardMouse
+        r"""PoliciesKeyboardMouse
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def mouse_feedback(self):
-        """Gets the mouse_feedback of this PoliciesKeyboardMouse.
+        r"""Gets the mouse_feedback of this PoliciesKeyboardMouse.
 
         虚拟机鼠标回馈。取值为： SELFADAPTION：自适应鼠标回馈。 FORCE：强制鼠标回馈。 CLOSE：关闭鼠标回馈。
 
@@ -68,7 +68,7 @@ class PoliciesKeyboardMouse:
 
     @mouse_feedback.setter
     def mouse_feedback(self, mouse_feedback):
-        """Sets the mouse_feedback of this PoliciesKeyboardMouse.
+        r"""Sets the mouse_feedback of this PoliciesKeyboardMouse.
 
         虚拟机鼠标回馈。取值为： SELFADAPTION：自适应鼠标回馈。 FORCE：强制鼠标回馈。 CLOSE：关闭鼠标回馈。
 
@@ -79,7 +79,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def mouse_simulation_mode(self):
-        """Gets the mouse_simulation_mode of this PoliciesKeyboardMouse.
+        r"""Gets the mouse_simulation_mode of this PoliciesKeyboardMouse.
 
         虚拟机鼠标模拟方式。取值为： ABSOLUTE_POSITION：绝对位置模拟。 RELATIVE_POSITION：相对位置模拟。
 
@@ -90,7 +90,7 @@ class PoliciesKeyboardMouse:
 
     @mouse_simulation_mode.setter
     def mouse_simulation_mode(self, mouse_simulation_mode):
-        """Sets the mouse_simulation_mode of this PoliciesKeyboardMouse.
+        r"""Sets the mouse_simulation_mode of this PoliciesKeyboardMouse.
 
         虚拟机鼠标模拟方式。取值为： ABSOLUTE_POSITION：绝对位置模拟。 RELATIVE_POSITION：相对位置模拟。
 
@@ -101,7 +101,7 @@ class PoliciesKeyboardMouse:
 
     @property
     def external_cursor_feedback(self):
-        """Gets the external_cursor_feedback of this PoliciesKeyboardMouse.
+        r"""Gets the external_cursor_feedback of this PoliciesKeyboardMouse.
 
         虚拟机外部光标反馈。取值为： false：表示关闭。 true：表示开启。
 
@@ -112,7 +112,7 @@ class PoliciesKeyboardMouse:
 
     @external_cursor_feedback.setter
     def external_cursor_feedback(self, external_cursor_feedback):
-        """Sets the external_cursor_feedback of this PoliciesKeyboardMouse.
+        r"""Sets the external_cursor_feedback of this PoliciesKeyboardMouse.
 
         虚拟机外部光标反馈。取值为： false：表示关闭。 true：表示开启。
 

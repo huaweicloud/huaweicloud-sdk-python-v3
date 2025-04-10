@@ -33,7 +33,7 @@ class ListStatisticsRequest:
     }
 
     def __init__(self, filter=None, period=None, option=None, limit=None, marker=None):
-        """ListStatisticsRequest
+        r"""ListStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListStatisticsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListStatisticsRequest.
+        r"""Gets the filter of this ListStatisticsRequest.
 
         参数过滤器。 monitor_data: 查询统计信息。 monthly_report：查询月度统计信息。
 
@@ -81,7 +81,7 @@ class ListStatisticsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListStatisticsRequest.
+        r"""Sets the filter of this ListStatisticsRequest.
 
         参数过滤器。 monitor_data: 查询统计信息。 monthly_report：查询月度统计信息。
 
@@ -92,7 +92,7 @@ class ListStatisticsRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListStatisticsRequest.
+        r"""Gets the period of this ListStatisticsRequest.
 
         时间段单位为分钟，与filter参数metric配合使用。
 
@@ -103,7 +103,7 @@ class ListStatisticsRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListStatisticsRequest.
+        r"""Sets the period of this ListStatisticsRequest.
 
         时间段单位为分钟，与filter参数metric配合使用。
 
@@ -114,7 +114,7 @@ class ListStatisticsRequest:
 
     @property
     def option(self):
-        """Gets the option of this ListStatisticsRequest.
+        r"""Gets the option of this ListStatisticsRequest.
 
         月度统计的维度，filter参数取值为monthly_report时才生效。 当取值不在以上范围时，默认取\"0\"。 - \"0\": 表示统计本月。 - \"1\": 表示统计上月。 - \"2\": 表示统计最近三个月。 - \"3\": 表示统计最近六个月。
 
@@ -125,7 +125,7 @@ class ListStatisticsRequest:
 
     @option.setter
     def option(self, option):
-        """Sets the option of this ListStatisticsRequest.
+        r"""Sets the option of this ListStatisticsRequest.
 
         月度统计的维度，filter参数取值为monthly_report时才生效。 当取值不在以上范围时，默认取\"0\"。 - \"0\": 表示统计本月。 - \"1\": 表示统计上月。 - \"2\": 表示统计最近三个月。 - \"3\": 表示统计最近六个月。
 
@@ -136,7 +136,7 @@ class ListStatisticsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStatisticsRequest.
+        r"""Gets the limit of this ListStatisticsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -147,7 +147,7 @@ class ListStatisticsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStatisticsRequest.
+        r"""Sets the limit of this ListStatisticsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -158,7 +158,7 @@ class ListStatisticsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListStatisticsRequest.
+        r"""Gets the marker of this ListStatisticsRequest.
 
         本次查询起始位置，默认值0
 
@@ -169,7 +169,7 @@ class ListStatisticsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListStatisticsRequest.
+        r"""Sets the marker of this ListStatisticsRequest.
 
         本次查询起始位置，默认值0
 

@@ -35,7 +35,7 @@ class SiteConnectionStateEnum:
     }
 
     def __init__(self):
-        """SiteConnectionStateEnum
+        r"""SiteConnectionStateEnum
 
         The model defined in huaweicloud sdk
 

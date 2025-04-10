@@ -31,7 +31,7 @@ class ServerAttachableQuantity:
     }
 
     def __init__(self, free_scsi=None, free_blk=None, free_disk=None, free_nic=None):
-        """ServerAttachableQuantity
+        r"""ServerAttachableQuantity
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ServerAttachableQuantity:
 
     @property
     def free_scsi(self):
-        """Gets the free_scsi of this ServerAttachableQuantity.
+        r"""Gets the free_scsi of this ServerAttachableQuantity.
 
         可挂载scsi卷数。
 
@@ -71,7 +71,7 @@ class ServerAttachableQuantity:
 
     @free_scsi.setter
     def free_scsi(self, free_scsi):
-        """Sets the free_scsi of this ServerAttachableQuantity.
+        r"""Sets the free_scsi of this ServerAttachableQuantity.
 
         可挂载scsi卷数。
 
@@ -82,7 +82,7 @@ class ServerAttachableQuantity:
 
     @property
     def free_blk(self):
-        """Gets the free_blk of this ServerAttachableQuantity.
+        r"""Gets the free_blk of this ServerAttachableQuantity.
 
         可挂载vbd卷数。
 
@@ -93,7 +93,7 @@ class ServerAttachableQuantity:
 
     @free_blk.setter
     def free_blk(self, free_blk):
-        """Sets the free_blk of this ServerAttachableQuantity.
+        r"""Sets the free_blk of this ServerAttachableQuantity.
 
         可挂载vbd卷数。
 
@@ -104,7 +104,7 @@ class ServerAttachableQuantity:
 
     @property
     def free_disk(self):
-        """Gets the free_disk of this ServerAttachableQuantity.
+        r"""Gets the free_disk of this ServerAttachableQuantity.
 
         可挂载卷数。
 
@@ -115,7 +115,7 @@ class ServerAttachableQuantity:
 
     @free_disk.setter
     def free_disk(self, free_disk):
-        """Sets the free_disk of this ServerAttachableQuantity.
+        r"""Sets the free_disk of this ServerAttachableQuantity.
 
         可挂载卷数。
 
@@ -126,7 +126,7 @@ class ServerAttachableQuantity:
 
     @property
     def free_nic(self):
-        """Gets the free_nic of this ServerAttachableQuantity.
+        r"""Gets the free_nic of this ServerAttachableQuantity.
 
         可挂载网卡数。
 
@@ -137,7 +137,7 @@ class ServerAttachableQuantity:
 
     @free_nic.setter
     def free_nic(self, free_nic):
-        """Sets the free_nic of this ServerAttachableQuantity.
+        r"""Sets the free_nic of this ServerAttachableQuantity.
 
         可挂载网卡数。
 

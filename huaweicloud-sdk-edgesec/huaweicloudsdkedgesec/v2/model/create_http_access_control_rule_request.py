@@ -27,7 +27,7 @@ class CreateHttpAccessControlRuleRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """CreateHttpAccessControlRuleRequest
+        r"""CreateHttpAccessControlRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHttpAccessControlRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateHttpAccessControlRuleRequest.
+        r"""Gets the policy_id of this CreateHttpAccessControlRuleRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class CreateHttpAccessControlRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateHttpAccessControlRuleRequest.
+        r"""Sets the policy_id of this CreateHttpAccessControlRuleRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class CreateHttpAccessControlRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpAccessControlRuleRequest.
+        r"""Gets the body of this CreateHttpAccessControlRuleRequest.
 
         :return: The body of this CreateHttpAccessControlRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpAccessControlRuleRequestBody`
@@ -80,7 +80,7 @@ class CreateHttpAccessControlRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpAccessControlRuleRequest.
+        r"""Sets the body of this CreateHttpAccessControlRuleRequest.
 
         :param body: The body of this CreateHttpAccessControlRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpAccessControlRuleRequestBody`

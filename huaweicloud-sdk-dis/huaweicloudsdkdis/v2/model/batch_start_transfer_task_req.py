@@ -27,7 +27,7 @@ class BatchStartTransferTaskReq:
     }
 
     def __init__(self, action=None, tasks=None):
-        """BatchStartTransferTaskReq
+        r"""BatchStartTransferTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchStartTransferTaskReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchStartTransferTaskReq.
+        r"""Gets the action of this BatchStartTransferTaskReq.
 
         转储任务操作，目前支持：  - start：启动转储任务
 
@@ -59,7 +59,7 @@ class BatchStartTransferTaskReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchStartTransferTaskReq.
+        r"""Sets the action of this BatchStartTransferTaskReq.
 
         转储任务操作，目前支持：  - start：启动转储任务
 
@@ -70,7 +70,7 @@ class BatchStartTransferTaskReq:
 
     @property
     def tasks(self):
-        """Gets the tasks of this BatchStartTransferTaskReq.
+        r"""Gets the tasks of this BatchStartTransferTaskReq.
 
         待操作的转储任务列表。
 
@@ -81,7 +81,7 @@ class BatchStartTransferTaskReq:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this BatchStartTransferTaskReq.
+        r"""Sets the tasks of this BatchStartTransferTaskReq.
 
         待操作的转储任务列表。
 

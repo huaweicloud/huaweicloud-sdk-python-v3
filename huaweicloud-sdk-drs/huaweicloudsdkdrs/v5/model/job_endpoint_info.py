@@ -41,7 +41,7 @@ class JobEndpointInfo:
     }
 
     def __init__(self, db_type=None, endpoint_type=None, endpoint_role=None, endpoint=None, cloud=None, vpc=None, config=None, ssl=None, customized_dns=None):
-        """JobEndpointInfo
+        r"""JobEndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class JobEndpointInfo:
 
     @property
     def db_type(self):
-        """Gets the db_type of this JobEndpointInfo.
+        r"""Gets the db_type of this JobEndpointInfo.
 
         数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
 
@@ -106,7 +106,7 @@ class JobEndpointInfo:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this JobEndpointInfo.
+        r"""Sets the db_type of this JobEndpointInfo.
 
         数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。 - redis：Redis。 - rediscluster：Redis集群版。 - gaussredis: GeminiDB Redis。 - mysql：MySQL。
 
@@ -117,7 +117,7 @@ class JobEndpointInfo:
 
     @property
     def endpoint_type(self):
-        """Gets the endpoint_type of this JobEndpointInfo.
+        r"""Gets the endpoint_type of this JobEndpointInfo.
 
         数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
@@ -128,7 +128,7 @@ class JobEndpointInfo:
 
     @endpoint_type.setter
     def endpoint_type(self, endpoint_type):
-        """Sets the endpoint_type of this JobEndpointInfo.
+        r"""Sets the endpoint_type of this JobEndpointInfo.
 
         数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
@@ -139,7 +139,7 @@ class JobEndpointInfo:
 
     @property
     def endpoint_role(self):
-        """Gets the endpoint_role of this JobEndpointInfo.
+        r"""Gets the endpoint_role of this JobEndpointInfo.
 
         数据库实例角色。取值： - so：源库。 - ta：目标库。
 
@@ -150,7 +150,7 @@ class JobEndpointInfo:
 
     @endpoint_role.setter
     def endpoint_role(self, endpoint_role):
-        """Sets the endpoint_role of this JobEndpointInfo.
+        r"""Sets the endpoint_role of this JobEndpointInfo.
 
         数据库实例角色。取值： - so：源库。 - ta：目标库。
 
@@ -161,7 +161,7 @@ class JobEndpointInfo:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this JobEndpointInfo.
+        r"""Gets the endpoint of this JobEndpointInfo.
 
         :return: The endpoint of this JobEndpointInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -170,7 +170,7 @@ class JobEndpointInfo:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this JobEndpointInfo.
+        r"""Sets the endpoint of this JobEndpointInfo.
 
         :param endpoint: The endpoint of this JobEndpointInfo.
         :type endpoint: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -179,7 +179,7 @@ class JobEndpointInfo:
 
     @property
     def cloud(self):
-        """Gets the cloud of this JobEndpointInfo.
+        r"""Gets the cloud of this JobEndpointInfo.
 
         :return: The cloud of this JobEndpointInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudBaseInfo`
@@ -188,7 +188,7 @@ class JobEndpointInfo:
 
     @cloud.setter
     def cloud(self, cloud):
-        """Sets the cloud of this JobEndpointInfo.
+        r"""Sets the cloud of this JobEndpointInfo.
 
         :param cloud: The cloud of this JobEndpointInfo.
         :type cloud: :class:`huaweicloudsdkdrs.v5.CloudBaseInfo`
@@ -197,7 +197,7 @@ class JobEndpointInfo:
 
     @property
     def vpc(self):
-        """Gets the vpc of this JobEndpointInfo.
+        r"""Gets the vpc of this JobEndpointInfo.
 
         :return: The vpc of this JobEndpointInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -206,7 +206,7 @@ class JobEndpointInfo:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this JobEndpointInfo.
+        r"""Sets the vpc of this JobEndpointInfo.
 
         :param vpc: The vpc of this JobEndpointInfo.
         :type vpc: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -215,7 +215,7 @@ class JobEndpointInfo:
 
     @property
     def config(self):
-        """Gets the config of this JobEndpointInfo.
+        r"""Gets the config of this JobEndpointInfo.
 
         :return: The config of this JobEndpointInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.BaseEndpointConfig`
@@ -224,7 +224,7 @@ class JobEndpointInfo:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this JobEndpointInfo.
+        r"""Sets the config of this JobEndpointInfo.
 
         :param config: The config of this JobEndpointInfo.
         :type config: :class:`huaweicloudsdkdrs.v5.BaseEndpointConfig`
@@ -233,7 +233,7 @@ class JobEndpointInfo:
 
     @property
     def ssl(self):
-        """Gets the ssl of this JobEndpointInfo.
+        r"""Gets the ssl of this JobEndpointInfo.
 
         :return: The ssl of this JobEndpointInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -242,7 +242,7 @@ class JobEndpointInfo:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this JobEndpointInfo.
+        r"""Sets the ssl of this JobEndpointInfo.
 
         :param ssl: The ssl of this JobEndpointInfo.
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -251,7 +251,7 @@ class JobEndpointInfo:
 
     @property
     def customized_dns(self):
-        """Gets the customized_dns of this JobEndpointInfo.
+        r"""Gets the customized_dns of this JobEndpointInfo.
 
         :return: The customized_dns of this JobEndpointInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.CustomizedDns`
@@ -260,7 +260,7 @@ class JobEndpointInfo:
 
     @customized_dns.setter
     def customized_dns(self, customized_dns):
-        """Sets the customized_dns of this JobEndpointInfo.
+        r"""Sets the customized_dns of this JobEndpointInfo.
 
         :param customized_dns: The customized_dns of this JobEndpointInfo.
         :type customized_dns: :class:`huaweicloudsdkdrs.v5.CustomizedDns`

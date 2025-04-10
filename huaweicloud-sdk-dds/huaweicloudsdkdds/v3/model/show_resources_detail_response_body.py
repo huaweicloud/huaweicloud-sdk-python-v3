@@ -31,7 +31,7 @@ class ShowResourcesDetailResponseBody:
     }
 
     def __init__(self, type=None, mode=None, quota=None, used=None):
-        """ShowResourcesDetailResponseBody
+        r"""ShowResourcesDetailResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this ShowResourcesDetailResponseBody.
+        r"""Gets the type of this ShowResourcesDetailResponseBody.
 
         配额资源类型，当前配额类型仅支持实例类型（instance）。
 
@@ -71,7 +71,7 @@ class ShowResourcesDetailResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResourcesDetailResponseBody.
+        r"""Sets the type of this ShowResourcesDetailResponseBody.
 
         配额资源类型，当前配额类型仅支持实例类型（instance）。
 
@@ -82,7 +82,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def mode(self):
-        """Gets the mode of this ShowResourcesDetailResponseBody.
+        r"""Gets the mode of this ShowResourcesDetailResponseBody.
 
         实例类型： - 若值为“Single”，则表示单节点实例配额信息。 - 若值为“ReplicaSet”，则表示副本集实例配额信息。 - 若值为“Sharding”，则表示集群实例配额信息。
 
@@ -93,7 +93,7 @@ class ShowResourcesDetailResponseBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowResourcesDetailResponseBody.
+        r"""Sets the mode of this ShowResourcesDetailResponseBody.
 
         实例类型： - 若值为“Single”，则表示单节点实例配额信息。 - 若值为“ReplicaSet”，则表示副本集实例配额信息。 - 若值为“Sharding”，则表示集群实例配额信息。
 
@@ -104,7 +104,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def quota(self):
-        """Gets the quota of this ShowResourcesDetailResponseBody.
+        r"""Gets the quota of this ShowResourcesDetailResponseBody.
 
         当前配额值。
 
@@ -115,7 +115,7 @@ class ShowResourcesDetailResponseBody:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ShowResourcesDetailResponseBody.
+        r"""Sets the quota of this ShowResourcesDetailResponseBody.
 
         当前配额值。
 
@@ -126,7 +126,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def used(self):
-        """Gets the used of this ShowResourcesDetailResponseBody.
+        r"""Gets the used of this ShowResourcesDetailResponseBody.
 
         已使用的资源数。
 
@@ -137,7 +137,7 @@ class ShowResourcesDetailResponseBody:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowResourcesDetailResponseBody.
+        r"""Sets the used of this ShowResourcesDetailResponseBody.
 
         已使用的资源数。
 

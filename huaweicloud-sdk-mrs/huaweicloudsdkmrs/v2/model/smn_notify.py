@@ -27,7 +27,7 @@ class SmnNotify:
     }
 
     def __init__(self, topic_urn=None, subscription_name=None):
-        """SmnNotify
+        r"""SmnNotify
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SmnNotify:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this SmnNotify.
+        r"""Gets the topic_urn of this SmnNotify.
 
         SMN消息通知服务的主题urn，如果需要开启告警订阅，则必填。
 
@@ -61,7 +61,7 @@ class SmnNotify:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this SmnNotify.
+        r"""Sets the topic_urn of this SmnNotify.
 
         SMN消息通知服务的主题urn，如果需要开启告警订阅，则必填。
 
@@ -72,7 +72,7 @@ class SmnNotify:
 
     @property
     def subscription_name(self):
-        """Gets the subscription_name of this SmnNotify.
+        r"""Gets the subscription_name of this SmnNotify.
 
         该订阅规则名称。如果不填写，则默认为default_alert_rule。
 
@@ -83,7 +83,7 @@ class SmnNotify:
 
     @subscription_name.setter
     def subscription_name(self, subscription_name):
-        """Sets the subscription_name of this SmnNotify.
+        r"""Sets the subscription_name of this SmnNotify.
 
         该订阅规则名称。如果不填写，则默认为default_alert_rule。
 

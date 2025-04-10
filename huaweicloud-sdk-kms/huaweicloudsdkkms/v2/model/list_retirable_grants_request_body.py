@@ -29,7 +29,7 @@ class ListRetirableGrantsRequestBody:
     }
 
     def __init__(self, limit=None, marker=None, sequence=None):
-        """ListRetirableGrantsRequestBody
+        r"""ListRetirableGrantsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListRetirableGrantsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRetirableGrantsRequestBody.
+        r"""Gets the limit of this ListRetirableGrantsRequestBody.
 
         指定查询可退役授权返回记录条数，如果查询记录条数小于存在的条数，响应参数“truncated”将返回“true”，表示存在分页。 取值在授权最大个数范围以内。例如：100
 
@@ -68,7 +68,7 @@ class ListRetirableGrantsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRetirableGrantsRequestBody.
+        r"""Sets the limit of this ListRetirableGrantsRequestBody.
 
         指定查询可退役授权返回记录条数，如果查询记录条数小于存在的条数，响应参数“truncated”将返回“true”，表示存在分页。 取值在授权最大个数范围以内。例如：100
 
@@ -79,7 +79,7 @@ class ListRetirableGrantsRequestBody:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRetirableGrantsRequestBody.
+        r"""Gets the marker of this ListRetirableGrantsRequestBody.
 
         分页查询起始位置标识。 分页查询收到的响应参数“truncated”为“true”时，可以发送连续的请求获取更多的记录条数，“marker”设置为响应的“next_marker”的值。例如：10。
 
@@ -90,7 +90,7 @@ class ListRetirableGrantsRequestBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRetirableGrantsRequestBody.
+        r"""Sets the marker of this ListRetirableGrantsRequestBody.
 
         分页查询起始位置标识。 分页查询收到的响应参数“truncated”为“true”时，可以发送连续的请求获取更多的记录条数，“marker”设置为响应的“next_marker”的值。例如：10。
 
@@ -101,7 +101,7 @@ class ListRetirableGrantsRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this ListRetirableGrantsRequestBody.
+        r"""Gets the sequence of this ListRetirableGrantsRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -112,7 +112,7 @@ class ListRetirableGrantsRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this ListRetirableGrantsRequestBody.
+        r"""Sets the sequence of this ListRetirableGrantsRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

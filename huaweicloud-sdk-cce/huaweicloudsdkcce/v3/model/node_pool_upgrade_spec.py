@@ -37,7 +37,7 @@ class NodePoolUpgradeSpec:
     }
 
     def __init__(self, node_pool_id=None, node_i_ds=None, force=None, node_template=None, max_unavailable=None, retry_times=None, skipped_nodes=None):
-        """NodePoolUpgradeSpec
+        r"""NodePoolUpgradeSpec
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def node_pool_id(self):
-        """Gets the node_pool_id of this NodePoolUpgradeSpec.
+        r"""Gets the node_pool_id of this NodePoolUpgradeSpec.
 
         节点池id。
 
@@ -95,7 +95,7 @@ class NodePoolUpgradeSpec:
 
     @node_pool_id.setter
     def node_pool_id(self, node_pool_id):
-        """Sets the node_pool_id of this NodePoolUpgradeSpec.
+        r"""Sets the node_pool_id of this NodePoolUpgradeSpec.
 
         节点池id。
 
@@ -106,7 +106,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def node_i_ds(self):
-        """Gets the node_i_ds of this NodePoolUpgradeSpec.
+        r"""Gets the node_i_ds of this NodePoolUpgradeSpec.
 
         :return: The node_i_ds of this NodePoolUpgradeSpec.
         :rtype: list[str]
@@ -115,7 +115,7 @@ class NodePoolUpgradeSpec:
 
     @node_i_ds.setter
     def node_i_ds(self, node_i_ds):
-        """Sets the node_i_ds of this NodePoolUpgradeSpec.
+        r"""Sets the node_i_ds of this NodePoolUpgradeSpec.
 
         :param node_i_ds: The node_i_ds of this NodePoolUpgradeSpec.
         :type node_i_ds: list[str]
@@ -124,7 +124,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def force(self):
-        """Gets the force of this NodePoolUpgradeSpec.
+        r"""Gets the force of this NodePoolUpgradeSpec.
 
         Pod无法驱逐时，是否强制重置。
 
@@ -135,7 +135,7 @@ class NodePoolUpgradeSpec:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this NodePoolUpgradeSpec.
+        r"""Sets the force of this NodePoolUpgradeSpec.
 
         Pod无法驱逐时，是否强制重置。
 
@@ -146,7 +146,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def node_template(self):
-        """Gets the node_template of this NodePoolUpgradeSpec.
+        r"""Gets the node_template of this NodePoolUpgradeSpec.
 
         :return: The node_template of this NodePoolUpgradeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplate`
@@ -155,7 +155,7 @@ class NodePoolUpgradeSpec:
 
     @node_template.setter
     def node_template(self, node_template):
-        """Sets the node_template of this NodePoolUpgradeSpec.
+        r"""Sets the node_template of this NodePoolUpgradeSpec.
 
         :param node_template: The node_template of this NodePoolUpgradeSpec.
         :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
@@ -164,7 +164,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def max_unavailable(self):
-        """Gets the max_unavailable of this NodePoolUpgradeSpec.
+        r"""Gets the max_unavailable of this NodePoolUpgradeSpec.
 
         :return: The max_unavailable of this NodePoolUpgradeSpec.
         :rtype: int
@@ -173,7 +173,7 @@ class NodePoolUpgradeSpec:
 
     @max_unavailable.setter
     def max_unavailable(self, max_unavailable):
-        """Sets the max_unavailable of this NodePoolUpgradeSpec.
+        r"""Sets the max_unavailable of this NodePoolUpgradeSpec.
 
         :param max_unavailable: The max_unavailable of this NodePoolUpgradeSpec.
         :type max_unavailable: int
@@ -182,7 +182,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this NodePoolUpgradeSpec.
+        r"""Gets the retry_times of this NodePoolUpgradeSpec.
 
         :return: The retry_times of this NodePoolUpgradeSpec.
         :rtype: int
@@ -191,7 +191,7 @@ class NodePoolUpgradeSpec:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this NodePoolUpgradeSpec.
+        r"""Sets the retry_times of this NodePoolUpgradeSpec.
 
         :param retry_times: The retry_times of this NodePoolUpgradeSpec.
         :type retry_times: int
@@ -200,7 +200,7 @@ class NodePoolUpgradeSpec:
 
     @property
     def skipped_nodes(self):
-        """Gets the skipped_nodes of this NodePoolUpgradeSpec.
+        r"""Gets the skipped_nodes of this NodePoolUpgradeSpec.
 
         :return: The skipped_nodes of this NodePoolUpgradeSpec.
         :rtype: list[str]
@@ -209,7 +209,7 @@ class NodePoolUpgradeSpec:
 
     @skipped_nodes.setter
     def skipped_nodes(self, skipped_nodes):
-        """Sets the skipped_nodes of this NodePoolUpgradeSpec.
+        r"""Sets the skipped_nodes of this NodePoolUpgradeSpec.
 
         :param skipped_nodes: The skipped_nodes of this NodePoolUpgradeSpec.
         :type skipped_nodes: list[str]

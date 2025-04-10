@@ -27,7 +27,7 @@ class ModifyTargetParamsReq:
     }
 
     def __init__(self, group=None, params=None):
-        """ModifyTargetParamsReq
+        r"""ModifyTargetParamsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyTargetParamsReq:
 
     @property
     def group(self):
-        """Gets the group of this ModifyTargetParamsReq.
+        r"""Gets the group of this ModifyTargetParamsReq.
 
         参数分组
 
@@ -59,7 +59,7 @@ class ModifyTargetParamsReq:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ModifyTargetParamsReq.
+        r"""Sets the group of this ModifyTargetParamsReq.
 
         参数分组
 
@@ -70,7 +70,7 @@ class ModifyTargetParamsReq:
 
     @property
     def params(self):
-        """Gets the params of this ModifyTargetParamsReq.
+        r"""Gets the params of this ModifyTargetParamsReq.
 
         修改的参数信息
 
@@ -81,7 +81,7 @@ class ModifyTargetParamsReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ModifyTargetParamsReq.
+        r"""Sets the params of this ModifyTargetParamsReq.
 
         修改的参数信息
 

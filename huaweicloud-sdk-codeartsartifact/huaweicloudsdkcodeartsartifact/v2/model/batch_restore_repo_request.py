@@ -25,7 +25,7 @@ class BatchRestoreRepoRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRestoreRepoRequest
+        r"""BatchRestoreRepoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRestoreRepoRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRestoreRepoRequest.
+        r"""Gets the body of this BatchRestoreRepoRequest.
 
         :return: The body of this BatchRestoreRepoRequest.
         :rtype: list[:class:`huaweicloudsdkcodeartsartifact.v2.IDETrashArtifactModel`]
@@ -52,7 +52,7 @@ class BatchRestoreRepoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRestoreRepoRequest.
+        r"""Sets the body of this BatchRestoreRepoRequest.
 
         :param body: The body of this BatchRestoreRepoRequest.
         :type body: list[:class:`huaweicloudsdkcodeartsartifact.v2.IDETrashArtifactModel`]

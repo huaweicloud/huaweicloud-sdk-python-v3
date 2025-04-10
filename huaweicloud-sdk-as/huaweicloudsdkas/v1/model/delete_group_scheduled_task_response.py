@@ -24,7 +24,7 @@ class DeleteGroupScheduledTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteGroupScheduledTaskResponse
+        r"""DeleteGroupScheduledTaskResponse
 
         The model defined in huaweicloud sdk
 

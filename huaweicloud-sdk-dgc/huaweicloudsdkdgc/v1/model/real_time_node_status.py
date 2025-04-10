@@ -31,7 +31,7 @@ class RealTimeNodeStatus:
     }
 
     def __init__(self, name=None, status=None, log_path=None, node_type=None):
-        """RealTimeNodeStatus
+        r"""RealTimeNodeStatus
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RealTimeNodeStatus:
 
     @property
     def name(self):
-        """Gets the name of this RealTimeNodeStatus.
+        r"""Gets the name of this RealTimeNodeStatus.
 
         :return: The name of this RealTimeNodeStatus.
         :rtype: str
@@ -73,7 +73,7 @@ class RealTimeNodeStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RealTimeNodeStatus.
+        r"""Sets the name of this RealTimeNodeStatus.
 
         :param name: The name of this RealTimeNodeStatus.
         :type name: str
@@ -82,7 +82,7 @@ class RealTimeNodeStatus:
 
     @property
     def status(self):
-        """Gets the status of this RealTimeNodeStatus.
+        r"""Gets the status of this RealTimeNodeStatus.
 
         :return: The status of this RealTimeNodeStatus.
         :rtype: str
@@ -91,7 +91,7 @@ class RealTimeNodeStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RealTimeNodeStatus.
+        r"""Sets the status of this RealTimeNodeStatus.
 
         :param status: The status of this RealTimeNodeStatus.
         :type status: str
@@ -100,7 +100,7 @@ class RealTimeNodeStatus:
 
     @property
     def log_path(self):
-        """Gets the log_path of this RealTimeNodeStatus.
+        r"""Gets the log_path of this RealTimeNodeStatus.
 
         :return: The log_path of this RealTimeNodeStatus.
         :rtype: str
@@ -109,7 +109,7 @@ class RealTimeNodeStatus:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this RealTimeNodeStatus.
+        r"""Sets the log_path of this RealTimeNodeStatus.
 
         :param log_path: The log_path of this RealTimeNodeStatus.
         :type log_path: str
@@ -118,7 +118,7 @@ class RealTimeNodeStatus:
 
     @property
     def node_type(self):
-        """Gets the node_type of this RealTimeNodeStatus.
+        r"""Gets the node_type of this RealTimeNodeStatus.
 
         :return: The node_type of this RealTimeNodeStatus.
         :rtype: str
@@ -127,7 +127,7 @@ class RealTimeNodeStatus:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this RealTimeNodeStatus.
+        r"""Sets the node_type of this RealTimeNodeStatus.
 
         :param node_type: The node_type of this RealTimeNodeStatus.
         :type node_type: str

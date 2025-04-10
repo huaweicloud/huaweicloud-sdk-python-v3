@@ -26,7 +26,7 @@ class ImportGraph2Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ImportGraph2Response
+        r"""ImportGraph2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportGraph2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportGraph2Response.
+        r"""Gets the job_id of this ImportGraph2Response.
 
         执行该异步任务的jobId。
 
@@ -55,7 +55,7 @@ class ImportGraph2Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportGraph2Response.
+        r"""Sets the job_id of this ImportGraph2Response.
 
         执行该异步任务的jobId。
 

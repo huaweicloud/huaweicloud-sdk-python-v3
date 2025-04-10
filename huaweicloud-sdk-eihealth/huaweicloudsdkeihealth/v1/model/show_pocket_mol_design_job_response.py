@@ -40,7 +40,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, receptor=None, ligands=None, num_trials=None, model_list=None, molecular_weight=None, optimization_mode=None, cluster_result=None):
-        """ShowPocketMolDesignJobResponse
+        r"""ShowPocketMolDesignJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowPocketMolDesignJobResponse.
+        r"""Gets the basic_info of this ShowPocketMolDesignJobResponse.
 
         :return: The basic_info of this ShowPocketMolDesignJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -102,7 +102,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowPocketMolDesignJobResponse.
+        r"""Sets the basic_info of this ShowPocketMolDesignJobResponse.
 
         :param basic_info: The basic_info of this ShowPocketMolDesignJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -111,7 +111,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def receptor(self):
-        """Gets the receptor of this ShowPocketMolDesignJobResponse.
+        r"""Gets the receptor of this ShowPocketMolDesignJobResponse.
 
         :return: The receptor of this ShowPocketMolDesignJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PocketMolDesignReceptorDto`
@@ -120,7 +120,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this ShowPocketMolDesignJobResponse.
+        r"""Sets the receptor of this ShowPocketMolDesignJobResponse.
 
         :param receptor: The receptor of this ShowPocketMolDesignJobResponse.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.PocketMolDesignReceptorDto`
@@ -129,7 +129,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def ligands(self):
-        """Gets the ligands of this ShowPocketMolDesignJobResponse.
+        r"""Gets the ligands of this ShowPocketMolDesignJobResponse.
 
         配体文件列表
 
@@ -140,7 +140,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this ShowPocketMolDesignJobResponse.
+        r"""Sets the ligands of this ShowPocketMolDesignJobResponse.
 
         配体文件列表
 
@@ -151,7 +151,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this ShowPocketMolDesignJobResponse.
+        r"""Gets the num_trials of this ShowPocketMolDesignJobResponse.
 
         生成分子数量
 
@@ -162,7 +162,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this ShowPocketMolDesignJobResponse.
+        r"""Sets the num_trials of this ShowPocketMolDesignJobResponse.
 
         生成分子数量
 
@@ -173,7 +173,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def model_list(self):
-        """Gets the model_list of this ShowPocketMolDesignJobResponse.
+        r"""Gets the model_list of this ShowPocketMolDesignJobResponse.
 
         模型列表
 
@@ -184,7 +184,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @model_list.setter
     def model_list(self, model_list):
-        """Sets the model_list of this ShowPocketMolDesignJobResponse.
+        r"""Sets the model_list of this ShowPocketMolDesignJobResponse.
 
         模型列表
 
@@ -195,7 +195,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def molecular_weight(self):
-        """Gets the molecular_weight of this ShowPocketMolDesignJobResponse.
+        r"""Gets the molecular_weight of this ShowPocketMolDesignJobResponse.
 
         分子量范围
 
@@ -206,7 +206,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @molecular_weight.setter
     def molecular_weight(self, molecular_weight):
-        """Sets the molecular_weight of this ShowPocketMolDesignJobResponse.
+        r"""Sets the molecular_weight of this ShowPocketMolDesignJobResponse.
 
         分子量范围
 
@@ -217,7 +217,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def optimization_mode(self):
-        """Gets the optimization_mode of this ShowPocketMolDesignJobResponse.
+        r"""Gets the optimization_mode of this ShowPocketMolDesignJobResponse.
 
         :return: The optimization_mode of this ShowPocketMolDesignJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
@@ -226,7 +226,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @optimization_mode.setter
     def optimization_mode(self, optimization_mode):
-        """Sets the optimization_mode of this ShowPocketMolDesignJobResponse.
+        r"""Sets the optimization_mode of this ShowPocketMolDesignJobResponse.
 
         :param optimization_mode: The optimization_mode of this ShowPocketMolDesignJobResponse.
         :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
@@ -235,7 +235,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @property
     def cluster_result(self):
-        """Gets the cluster_result of this ShowPocketMolDesignJobResponse.
+        r"""Gets the cluster_result of this ShowPocketMolDesignJobResponse.
 
         :return: The cluster_result of this ShowPocketMolDesignJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
@@ -244,7 +244,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
 
     @cluster_result.setter
     def cluster_result(self, cluster_result):
-        """Sets the cluster_result of this ShowPocketMolDesignJobResponse.
+        r"""Sets the cluster_result of this ShowPocketMolDesignJobResponse.
 
         :param cluster_result: The cluster_result of this ShowPocketMolDesignJobResponse.
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`

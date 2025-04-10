@@ -34,7 +34,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
     }
 
     def __init__(self, quota=None, total=None, offset=None, count=None, characters=None):
-        """ExecuteGetCharactersResponse
+        r"""ExecuteGetCharactersResponse
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ExecuteGetCharactersResponse.
+        r"""Gets the quota of this ExecuteGetCharactersResponse.
 
         配额
 
@@ -78,7 +78,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ExecuteGetCharactersResponse.
+        r"""Sets the quota of this ExecuteGetCharactersResponse.
 
         配额
 
@@ -89,7 +89,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ExecuteGetCharactersResponse.
+        r"""Gets the total of this ExecuteGetCharactersResponse.
 
         总数
 
@@ -100,7 +100,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ExecuteGetCharactersResponse.
+        r"""Sets the total of this ExecuteGetCharactersResponse.
 
         总数
 
@@ -111,7 +111,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetCharactersResponse.
+        r"""Gets the offset of this ExecuteGetCharactersResponse.
 
         偏移
 
@@ -122,7 +122,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetCharactersResponse.
+        r"""Sets the offset of this ExecuteGetCharactersResponse.
 
         偏移
 
@@ -133,7 +133,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ExecuteGetCharactersResponse.
+        r"""Gets the count of this ExecuteGetCharactersResponse.
 
         返回数量
 
@@ -144,7 +144,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ExecuteGetCharactersResponse.
+        r"""Sets the count of this ExecuteGetCharactersResponse.
 
         返回数量
 
@@ -155,7 +155,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @property
     def characters(self):
-        """Gets the characters of this ExecuteGetCharactersResponse.
+        r"""Gets the characters of this ExecuteGetCharactersResponse.
 
         形象列表
 
@@ -166,7 +166,7 @@ class ExecuteGetCharactersResponse(SdkResponse):
 
     @characters.setter
     def characters(self, characters):
-        """Sets the characters of this ExecuteGetCharactersResponse.
+        r"""Sets the characters of this ExecuteGetCharactersResponse.
 
         形象列表
 

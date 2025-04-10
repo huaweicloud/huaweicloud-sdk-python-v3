@@ -33,7 +33,7 @@ class ListGroupsForEnterpriseProjectResDetail:
     }
 
     def __init__(self, create_time=None, description=None, domain_id=None, id=None, name=None):
-        """ListGroupsForEnterpriseProjectResDetail
+        r"""ListGroupsForEnterpriseProjectResDetail
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Gets the create_time of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组创建时间。
 
@@ -77,7 +77,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Sets the create_time of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组创建时间。
 
@@ -88,7 +88,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @property
     def description(self):
-        """Gets the description of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Gets the description of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组描述。
 
@@ -99,7 +99,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Sets the description of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组描述。
 
@@ -110,7 +110,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Gets the domain_id of this ListGroupsForEnterpriseProjectResDetail.
 
         租户Id。
 
@@ -121,7 +121,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Sets the domain_id of this ListGroupsForEnterpriseProjectResDetail.
 
         租户Id。
 
@@ -132,7 +132,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @property
     def id(self):
-        """Gets the id of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Gets the id of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组Id。
 
@@ -143,7 +143,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Sets the id of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组Id。
 
@@ -154,7 +154,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @property
     def name(self):
-        """Gets the name of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Gets the name of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组名称。
 
@@ -165,7 +165,7 @@ class ListGroupsForEnterpriseProjectResDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGroupsForEnterpriseProjectResDetail.
+        r"""Sets the name of this ListGroupsForEnterpriseProjectResDetail.
 
         用户组名称。
 

@@ -29,7 +29,7 @@ class SubJobEntities:
     }
 
     def __init__(self, server_id=None, nic_id=None, errorcode_message=None):
-        """SubJobEntities
+        r"""SubJobEntities
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SubJobEntities:
 
     @property
     def server_id(self):
-        """Gets the server_id of this SubJobEntities.
+        r"""Gets the server_id of this SubJobEntities.
 
         云服务器相关操作显示server_id。
 
@@ -68,7 +68,7 @@ class SubJobEntities:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this SubJobEntities.
+        r"""Sets the server_id of this SubJobEntities.
 
         云服务器相关操作显示server_id。
 
@@ -79,7 +79,7 @@ class SubJobEntities:
 
     @property
     def nic_id(self):
-        """Gets the nic_id of this SubJobEntities.
+        r"""Gets the nic_id of this SubJobEntities.
 
         网卡相关操作显示nic_id。
 
@@ -90,7 +90,7 @@ class SubJobEntities:
 
     @nic_id.setter
     def nic_id(self, nic_id):
-        """Sets the nic_id of this SubJobEntities.
+        r"""Sets the nic_id of this SubJobEntities.
 
         网卡相关操作显示nic_id。
 
@@ -101,7 +101,7 @@ class SubJobEntities:
 
     @property
     def errorcode_message(self):
-        """Gets the errorcode_message of this SubJobEntities.
+        r"""Gets the errorcode_message of this SubJobEntities.
 
         子任务执行失败的具体原因。
 
@@ -112,7 +112,7 @@ class SubJobEntities:
 
     @errorcode_message.setter
     def errorcode_message(self, errorcode_message):
-        """Sets the errorcode_message of this SubJobEntities.
+        r"""Sets the errorcode_message of this SubJobEntities.
 
         子任务执行失败的具体原因。
 

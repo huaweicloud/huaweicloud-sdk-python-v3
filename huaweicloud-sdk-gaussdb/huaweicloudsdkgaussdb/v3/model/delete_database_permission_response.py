@@ -26,7 +26,7 @@ class DeleteDatabasePermissionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteDatabasePermissionResponse
+        r"""DeleteDatabasePermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDatabasePermissionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDatabasePermissionResponse.
+        r"""Gets the job_id of this DeleteDatabasePermissionResponse.
 
         删除数据库用户的数据库权限任务ID。
 
@@ -55,7 +55,7 @@ class DeleteDatabasePermissionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDatabasePermissionResponse.
+        r"""Sets the job_id of this DeleteDatabasePermissionResponse.
 
         删除数据库用户的数据库权限任务ID。
 

@@ -34,7 +34,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, server_id=None, job_id=None, error_msg=None, error_code=None):
-        """ChangeCloudPhoneServerResponse
+        r"""ChangeCloudPhoneServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ChangeCloudPhoneServerResponse.
+        r"""Gets the request_id of this ChangeCloudPhoneServerResponse.
 
         请求的唯一标识ID。
 
@@ -83,7 +83,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ChangeCloudPhoneServerResponse.
+        r"""Sets the request_id of this ChangeCloudPhoneServerResponse.
 
         请求的唯一标识ID。
 
@@ -94,7 +94,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeCloudPhoneServerResponse.
+        r"""Gets the server_id of this ChangeCloudPhoneServerResponse.
 
         服务器id。
 
@@ -105,7 +105,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeCloudPhoneServerResponse.
+        r"""Sets the server_id of this ChangeCloudPhoneServerResponse.
 
         服务器id。
 
@@ -116,7 +116,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeCloudPhoneServerResponse.
+        r"""Gets the job_id of this ChangeCloudPhoneServerResponse.
 
         任务id。
 
@@ -127,7 +127,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeCloudPhoneServerResponse.
+        r"""Sets the job_id of this ChangeCloudPhoneServerResponse.
 
         任务id。
 
@@ -138,7 +138,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ChangeCloudPhoneServerResponse.
+        r"""Gets the error_msg of this ChangeCloudPhoneServerResponse.
 
         任务错误码说明。
 
@@ -149,7 +149,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ChangeCloudPhoneServerResponse.
+        r"""Sets the error_msg of this ChangeCloudPhoneServerResponse.
 
         任务错误码说明。
 
@@ -160,7 +160,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ChangeCloudPhoneServerResponse.
+        r"""Gets the error_code of this ChangeCloudPhoneServerResponse.
 
         任务错误码。
 
@@ -171,7 +171,7 @@ class ChangeCloudPhoneServerResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ChangeCloudPhoneServerResponse.
+        r"""Sets the error_code of this ChangeCloudPhoneServerResponse.
 
         任务错误码。
 

@@ -39,7 +39,7 @@ class CreateSearchJobReq:
     }
 
     def __init__(self, basic_info=None, smiles=None, scaffold=None, top_n=None, databases=None, custom_databases=None, model_ids=None, search_method=None):
-        """CreateSearchJobReq
+        r"""CreateSearchJobReq
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class CreateSearchJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateSearchJobReq.
+        r"""Gets the basic_info of this CreateSearchJobReq.
 
         :return: The basic_info of this CreateSearchJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -99,7 +99,7 @@ class CreateSearchJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateSearchJobReq.
+        r"""Sets the basic_info of this CreateSearchJobReq.
 
         :param basic_info: The basic_info of this CreateSearchJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -108,7 +108,7 @@ class CreateSearchJobReq:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CreateSearchJobReq.
+        r"""Gets the smiles of this CreateSearchJobReq.
 
         分子SMILES表达式
 
@@ -119,7 +119,7 @@ class CreateSearchJobReq:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CreateSearchJobReq.
+        r"""Sets the smiles of this CreateSearchJobReq.
 
         分子SMILES表达式
 
@@ -130,7 +130,7 @@ class CreateSearchJobReq:
 
     @property
     def scaffold(self):
-        """Gets the scaffold of this CreateSearchJobReq.
+        r"""Gets the scaffold of this CreateSearchJobReq.
 
         分子骨架表达式
 
@@ -141,7 +141,7 @@ class CreateSearchJobReq:
 
     @scaffold.setter
     def scaffold(self, scaffold):
-        """Sets the scaffold of this CreateSearchJobReq.
+        r"""Sets the scaffold of this CreateSearchJobReq.
 
         分子骨架表达式
 
@@ -152,7 +152,7 @@ class CreateSearchJobReq:
 
     @property
     def top_n(self):
-        """Gets the top_n of this CreateSearchJobReq.
+        r"""Gets the top_n of this CreateSearchJobReq.
 
         最相似的top_n个
 
@@ -163,7 +163,7 @@ class CreateSearchJobReq:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this CreateSearchJobReq.
+        r"""Sets the top_n of this CreateSearchJobReq.
 
         最相似的top_n个
 
@@ -174,7 +174,7 @@ class CreateSearchJobReq:
 
     @property
     def databases(self):
-        """Gets the databases of this CreateSearchJobReq.
+        r"""Gets the databases of this CreateSearchJobReq.
 
         可供搜索分子的公共数据库名称列表
 
@@ -185,7 +185,7 @@ class CreateSearchJobReq:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateSearchJobReq.
+        r"""Sets the databases of this CreateSearchJobReq.
 
         可供搜索分子的公共数据库名称列表
 
@@ -196,7 +196,7 @@ class CreateSearchJobReq:
 
     @property
     def custom_databases(self):
-        """Gets the custom_databases of this CreateSearchJobReq.
+        r"""Gets the custom_databases of this CreateSearchJobReq.
 
         可供搜索分子的自定义数据库id列表
 
@@ -207,7 +207,7 @@ class CreateSearchJobReq:
 
     @custom_databases.setter
     def custom_databases(self, custom_databases):
-        """Sets the custom_databases of this CreateSearchJobReq.
+        r"""Sets the custom_databases of this CreateSearchJobReq.
 
         可供搜索分子的自定义数据库id列表
 
@@ -218,7 +218,7 @@ class CreateSearchJobReq:
 
     @property
     def model_ids(self):
-        """Gets the model_ids of this CreateSearchJobReq.
+        r"""Gets the model_ids of this CreateSearchJobReq.
 
         模型id列表
 
@@ -229,7 +229,7 @@ class CreateSearchJobReq:
 
     @model_ids.setter
     def model_ids(self, model_ids):
-        """Sets the model_ids of this CreateSearchJobReq.
+        r"""Sets the model_ids of this CreateSearchJobReq.
 
         模型id列表
 
@@ -240,7 +240,7 @@ class CreateSearchJobReq:
 
     @property
     def search_method(self):
-        """Gets the search_method of this CreateSearchJobReq.
+        r"""Gets the search_method of this CreateSearchJobReq.
 
         :return: The search_method of this CreateSearchJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SearchType`
@@ -249,7 +249,7 @@ class CreateSearchJobReq:
 
     @search_method.setter
     def search_method(self, search_method):
-        """Sets the search_method of this CreateSearchJobReq.
+        r"""Sets the search_method of this CreateSearchJobReq.
 
         :param search_method: The search_method of this CreateSearchJobReq.
         :type search_method: :class:`huaweicloudsdkeihealth.v1.SearchType`

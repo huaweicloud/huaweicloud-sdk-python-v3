@@ -31,7 +31,7 @@ class UpdateRetentionRequest:
     }
 
     def __init__(self, namespace=None, repository=None, retention_id=None, body=None):
-        """UpdateRetentionRequest
+        r"""UpdateRetentionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateRetentionRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateRetentionRequest.
+        r"""Gets the namespace of this UpdateRetentionRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -72,7 +72,7 @@ class UpdateRetentionRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateRetentionRequest.
+        r"""Sets the namespace of this UpdateRetentionRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -83,7 +83,7 @@ class UpdateRetentionRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this UpdateRetentionRequest.
+        r"""Gets the repository of this UpdateRetentionRequest.
 
         镜像仓库名称
 
@@ -94,7 +94,7 @@ class UpdateRetentionRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this UpdateRetentionRequest.
+        r"""Sets the repository of this UpdateRetentionRequest.
 
         镜像仓库名称
 
@@ -105,7 +105,7 @@ class UpdateRetentionRequest:
 
     @property
     def retention_id(self):
-        """Gets the retention_id of this UpdateRetentionRequest.
+        r"""Gets the retention_id of this UpdateRetentionRequest.
 
         镜像老化规则id
 
@@ -116,7 +116,7 @@ class UpdateRetentionRequest:
 
     @retention_id.setter
     def retention_id(self, retention_id):
-        """Sets the retention_id of this UpdateRetentionRequest.
+        r"""Sets the retention_id of this UpdateRetentionRequest.
 
         镜像老化规则id
 
@@ -127,7 +127,7 @@ class UpdateRetentionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRetentionRequest.
+        r"""Gets the body of this UpdateRetentionRequest.
 
         :return: The body of this UpdateRetentionRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequestBody`
@@ -136,7 +136,7 @@ class UpdateRetentionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRetentionRequest.
+        r"""Sets the body of this UpdateRetentionRequest.
 
         :param body: The body of this UpdateRetentionRequest.
         :type body: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequestBody`

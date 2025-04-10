@@ -26,7 +26,7 @@ class SearchDepartmentByNameResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SearchDepartmentByNameResponse
+        r"""SearchDepartmentByNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchDepartmentByNameResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SearchDepartmentByNameResponse.
+        r"""Gets the body of this SearchDepartmentByNameResponse.
 
         部门信息
 
@@ -55,7 +55,7 @@ class SearchDepartmentByNameResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchDepartmentByNameResponse.
+        r"""Sets the body of this SearchDepartmentByNameResponse.
 
         部门信息
 

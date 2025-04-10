@@ -28,7 +28,7 @@ class ListExercisesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListExercisesResponse
+        r"""ListExercisesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListExercisesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListExercisesResponse.
+        r"""Gets the total of this ListExercisesResponse.
 
         习题库数量
 
@@ -62,7 +62,7 @@ class ListExercisesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListExercisesResponse.
+        r"""Sets the total of this ListExercisesResponse.
 
         习题库数量
 
@@ -73,7 +73,7 @@ class ListExercisesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListExercisesResponse.
+        r"""Gets the data of this ListExercisesResponse.
 
         习题库列表
 
@@ -84,7 +84,7 @@ class ListExercisesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListExercisesResponse.
+        r"""Sets the data of this ListExercisesResponse.
 
         习题库列表
 

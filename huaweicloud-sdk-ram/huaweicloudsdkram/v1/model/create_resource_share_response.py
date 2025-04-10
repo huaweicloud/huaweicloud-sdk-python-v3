@@ -26,7 +26,7 @@ class CreateResourceShareResponse(SdkResponse):
     }
 
     def __init__(self, resource_share=None):
-        """CreateResourceShareResponse
+        r"""CreateResourceShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateResourceShareResponse(SdkResponse):
 
     @property
     def resource_share(self):
-        """Gets the resource_share of this CreateResourceShareResponse.
+        r"""Gets the resource_share of this CreateResourceShareResponse.
 
         :return: The resource_share of this CreateResourceShareResponse.
         :rtype: :class:`huaweicloudsdkram.v1.ResourceShare`
@@ -53,7 +53,7 @@ class CreateResourceShareResponse(SdkResponse):
 
     @resource_share.setter
     def resource_share(self, resource_share):
-        """Sets the resource_share of this CreateResourceShareResponse.
+        r"""Sets the resource_share of this CreateResourceShareResponse.
 
         :param resource_share: The resource_share of this CreateResourceShareResponse.
         :type resource_share: :class:`huaweicloudsdkram.v1.ResourceShare`

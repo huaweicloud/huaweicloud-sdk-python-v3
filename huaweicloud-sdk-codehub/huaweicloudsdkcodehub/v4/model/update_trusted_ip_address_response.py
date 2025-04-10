@@ -50,7 +50,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
     }
 
     def __init__(self, id=None, repository_id=None, ip_range=None, ip_type=None, ip_start=None, ip_end=None, view_flag=None, download_flag=None, upload_flag=None, remark=None, created_at=None, updated_at=None, order_flag=None):
-        """UpdateTrustedIpAddressResponse
+        r"""UpdateTrustedIpAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateTrustedIpAddressResponse.
+        r"""Gets the id of this UpdateTrustedIpAddressResponse.
 
         关联结果
 
@@ -139,7 +139,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTrustedIpAddressResponse.
+        r"""Sets the id of this UpdateTrustedIpAddressResponse.
 
         关联结果
 
@@ -150,7 +150,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this UpdateTrustedIpAddressResponse.
+        r"""Gets the repository_id of this UpdateTrustedIpAddressResponse.
 
         仓库id
 
@@ -161,7 +161,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this UpdateTrustedIpAddressResponse.
+        r"""Sets the repository_id of this UpdateTrustedIpAddressResponse.
 
         仓库id
 
@@ -172,7 +172,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this UpdateTrustedIpAddressResponse.
+        r"""Gets the ip_range of this UpdateTrustedIpAddressResponse.
 
         ip范围
 
@@ -183,7 +183,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this UpdateTrustedIpAddressResponse.
+        r"""Sets the ip_range of this UpdateTrustedIpAddressResponse.
 
         ip范围
 
@@ -194,7 +194,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this UpdateTrustedIpAddressResponse.
+        r"""Gets the ip_type of this UpdateTrustedIpAddressResponse.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -205,7 +205,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this UpdateTrustedIpAddressResponse.
+        r"""Sets the ip_type of this UpdateTrustedIpAddressResponse.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -216,7 +216,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_start(self):
-        """Gets the ip_start of this UpdateTrustedIpAddressResponse.
+        r"""Gets the ip_start of this UpdateTrustedIpAddressResponse.
 
         起始ip
 
@@ -227,7 +227,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @ip_start.setter
     def ip_start(self, ip_start):
-        """Sets the ip_start of this UpdateTrustedIpAddressResponse.
+        r"""Sets the ip_start of this UpdateTrustedIpAddressResponse.
 
         起始ip
 
@@ -238,7 +238,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_end(self):
-        """Gets the ip_end of this UpdateTrustedIpAddressResponse.
+        r"""Gets the ip_end of this UpdateTrustedIpAddressResponse.
 
         结束ip
 
@@ -249,7 +249,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @ip_end.setter
     def ip_end(self, ip_end):
-        """Sets the ip_end of this UpdateTrustedIpAddressResponse.
+        r"""Sets the ip_end of this UpdateTrustedIpAddressResponse.
 
         结束ip
 
@@ -260,7 +260,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def view_flag(self):
-        """Gets the view_flag of this UpdateTrustedIpAddressResponse.
+        r"""Gets the view_flag of this UpdateTrustedIpAddressResponse.
 
         是否允许访问代码仓库
 
@@ -271,7 +271,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @view_flag.setter
     def view_flag(self, view_flag):
-        """Sets the view_flag of this UpdateTrustedIpAddressResponse.
+        r"""Sets the view_flag of this UpdateTrustedIpAddressResponse.
 
         是否允许访问代码仓库
 
@@ -282,7 +282,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def download_flag(self):
-        """Gets the download_flag of this UpdateTrustedIpAddressResponse.
+        r"""Gets the download_flag of this UpdateTrustedIpAddressResponse.
 
         是否允许下载代码
 
@@ -293,7 +293,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @download_flag.setter
     def download_flag(self, download_flag):
-        """Sets the download_flag of this UpdateTrustedIpAddressResponse.
+        r"""Sets the download_flag of this UpdateTrustedIpAddressResponse.
 
         是否允许下载代码
 
@@ -304,7 +304,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def upload_flag(self):
-        """Gets the upload_flag of this UpdateTrustedIpAddressResponse.
+        r"""Gets the upload_flag of this UpdateTrustedIpAddressResponse.
 
         是否允许提交代码
 
@@ -315,7 +315,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @upload_flag.setter
     def upload_flag(self, upload_flag):
-        """Sets the upload_flag of this UpdateTrustedIpAddressResponse.
+        r"""Sets the upload_flag of this UpdateTrustedIpAddressResponse.
 
         是否允许提交代码
 
@@ -326,7 +326,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateTrustedIpAddressResponse.
+        r"""Gets the remark of this UpdateTrustedIpAddressResponse.
 
         备注
 
@@ -337,7 +337,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateTrustedIpAddressResponse.
+        r"""Sets the remark of this UpdateTrustedIpAddressResponse.
 
         备注
 
@@ -348,7 +348,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateTrustedIpAddressResponse.
+        r"""Gets the created_at of this UpdateTrustedIpAddressResponse.
 
         创建时间
 
@@ -359,7 +359,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateTrustedIpAddressResponse.
+        r"""Sets the created_at of this UpdateTrustedIpAddressResponse.
 
         创建时间
 
@@ -370,7 +370,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateTrustedIpAddressResponse.
+        r"""Gets the updated_at of this UpdateTrustedIpAddressResponse.
 
         更新时间
 
@@ -381,7 +381,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateTrustedIpAddressResponse.
+        r"""Sets the updated_at of this UpdateTrustedIpAddressResponse.
 
         更新时间
 
@@ -392,7 +392,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @property
     def order_flag(self):
-        """Gets the order_flag of this UpdateTrustedIpAddressResponse.
+        r"""Gets the order_flag of this UpdateTrustedIpAddressResponse.
 
         排序
 
@@ -403,7 +403,7 @@ class UpdateTrustedIpAddressResponse(SdkResponse):
 
     @order_flag.setter
     def order_flag(self, order_flag):
-        """Sets the order_flag of this UpdateTrustedIpAddressResponse.
+        r"""Sets the order_flag of this UpdateTrustedIpAddressResponse.
 
         排序
 

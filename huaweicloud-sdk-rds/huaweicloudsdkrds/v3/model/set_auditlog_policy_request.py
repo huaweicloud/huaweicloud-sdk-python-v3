@@ -29,7 +29,7 @@ class SetAuditlogPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetAuditlogPolicyRequest
+        r"""SetAuditlogPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetAuditlogPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetAuditlogPolicyRequest.
+        r"""Gets the x_language of this SetAuditlogPolicyRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SetAuditlogPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetAuditlogPolicyRequest.
+        r"""Sets the x_language of this SetAuditlogPolicyRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SetAuditlogPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetAuditlogPolicyRequest.
+        r"""Gets the instance_id of this SetAuditlogPolicyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetAuditlogPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetAuditlogPolicyRequest.
+        r"""Sets the instance_id of this SetAuditlogPolicyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetAuditlogPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetAuditlogPolicyRequest.
+        r"""Gets the body of this SetAuditlogPolicyRequest.
 
         :return: The body of this SetAuditlogPolicyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyRequestBody`
@@ -109,7 +109,7 @@ class SetAuditlogPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetAuditlogPolicyRequest.
+        r"""Sets the body of this SetAuditlogPolicyRequest.
 
         :param body: The body of this SetAuditlogPolicyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyRequestBody`

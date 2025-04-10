@@ -31,7 +31,7 @@ class ConsumerDetailResp:
     }
 
     def __init__(self, lag=None, max_offset=None, consumer_offset=None, brokers=None):
-        """ConsumerDetailResp
+        r"""ConsumerDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConsumerDetailResp:
 
     @property
     def lag(self):
-        """Gets the lag of this ConsumerDetailResp.
+        r"""Gets the lag of this ConsumerDetailResp.
 
         消费堆积总数。
 
@@ -75,7 +75,7 @@ class ConsumerDetailResp:
 
     @lag.setter
     def lag(self, lag):
-        """Sets the lag of this ConsumerDetailResp.
+        r"""Sets the lag of this ConsumerDetailResp.
 
         消费堆积总数。
 
@@ -86,7 +86,7 @@ class ConsumerDetailResp:
 
     @property
     def max_offset(self):
-        """Gets the max_offset of this ConsumerDetailResp.
+        r"""Gets the max_offset of this ConsumerDetailResp.
 
         消息总数。
 
@@ -97,7 +97,7 @@ class ConsumerDetailResp:
 
     @max_offset.setter
     def max_offset(self, max_offset):
-        """Sets the max_offset of this ConsumerDetailResp.
+        r"""Sets the max_offset of this ConsumerDetailResp.
 
         消息总数。
 
@@ -108,7 +108,7 @@ class ConsumerDetailResp:
 
     @property
     def consumer_offset(self):
-        """Gets the consumer_offset of this ConsumerDetailResp.
+        r"""Gets the consumer_offset of this ConsumerDetailResp.
 
         已消费消息数。
 
@@ -119,7 +119,7 @@ class ConsumerDetailResp:
 
     @consumer_offset.setter
     def consumer_offset(self, consumer_offset):
-        """Sets the consumer_offset of this ConsumerDetailResp.
+        r"""Sets the consumer_offset of this ConsumerDetailResp.
 
         已消费消息数。
 
@@ -130,7 +130,7 @@ class ConsumerDetailResp:
 
     @property
     def brokers(self):
-        """Gets the brokers of this ConsumerDetailResp.
+        r"""Gets the brokers of this ConsumerDetailResp.
 
         Topic关联代理（当查询Topic消费“详情”才显示此参数）。
 
@@ -141,7 +141,7 @@ class ConsumerDetailResp:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ConsumerDetailResp.
+        r"""Sets the brokers of this ConsumerDetailResp.
 
         Topic关联代理（当查询Topic消费“详情”才显示此参数）。
 

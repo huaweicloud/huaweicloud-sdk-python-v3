@@ -24,7 +24,7 @@ class UpdatePermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePermissionSetResponse
+        r"""UpdatePermissionSetResponse
 
         The model defined in huaweicloud sdk
 

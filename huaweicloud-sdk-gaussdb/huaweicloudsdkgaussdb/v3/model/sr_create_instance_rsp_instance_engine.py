@@ -27,7 +27,7 @@ class SrCreateInstanceRspInstanceEngine:
     }
 
     def __init__(self, type=None, version=None):
-        """SrCreateInstanceRspInstanceEngine
+        r"""SrCreateInstanceRspInstanceEngine
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SrCreateInstanceRspInstanceEngine:
 
     @property
     def type(self):
-        """Gets the type of this SrCreateInstanceRspInstanceEngine.
+        r"""Gets the type of this SrCreateInstanceRspInstanceEngine.
 
         引擎类型。
 
@@ -61,7 +61,7 @@ class SrCreateInstanceRspInstanceEngine:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SrCreateInstanceRspInstanceEngine.
+        r"""Sets the type of this SrCreateInstanceRspInstanceEngine.
 
         引擎类型。
 
@@ -72,7 +72,7 @@ class SrCreateInstanceRspInstanceEngine:
 
     @property
     def version(self):
-        """Gets the version of this SrCreateInstanceRspInstanceEngine.
+        r"""Gets the version of this SrCreateInstanceRspInstanceEngine.
 
         引擎大版本号。
 
@@ -83,7 +83,7 @@ class SrCreateInstanceRspInstanceEngine:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SrCreateInstanceRspInstanceEngine.
+        r"""Sets the version of this SrCreateInstanceRspInstanceEngine.
 
         引擎大版本号。
 

@@ -29,7 +29,7 @@ class CreateCommitResponseBodyStats:
     }
 
     def __init__(self, additions=None, deletions=None, total=None):
-        """CreateCommitResponseBodyStats
+        r"""CreateCommitResponseBodyStats
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateCommitResponseBodyStats:
 
     @property
     def additions(self):
-        """Gets the additions of this CreateCommitResponseBodyStats.
+        r"""Gets the additions of this CreateCommitResponseBodyStats.
 
         变更增加的行数
 
@@ -68,7 +68,7 @@ class CreateCommitResponseBodyStats:
 
     @additions.setter
     def additions(self, additions):
-        """Sets the additions of this CreateCommitResponseBodyStats.
+        r"""Sets the additions of this CreateCommitResponseBodyStats.
 
         变更增加的行数
 
@@ -79,7 +79,7 @@ class CreateCommitResponseBodyStats:
 
     @property
     def deletions(self):
-        """Gets the deletions of this CreateCommitResponseBodyStats.
+        r"""Gets the deletions of this CreateCommitResponseBodyStats.
 
         变更删除的行数
 
@@ -90,7 +90,7 @@ class CreateCommitResponseBodyStats:
 
     @deletions.setter
     def deletions(self, deletions):
-        """Sets the deletions of this CreateCommitResponseBodyStats.
+        r"""Sets the deletions of this CreateCommitResponseBodyStats.
 
         变更删除的行数
 
@@ -101,7 +101,7 @@ class CreateCommitResponseBodyStats:
 
     @property
     def total(self):
-        """Gets the total of this CreateCommitResponseBodyStats.
+        r"""Gets the total of this CreateCommitResponseBodyStats.
 
         变更的总行数
 
@@ -112,7 +112,7 @@ class CreateCommitResponseBodyStats:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CreateCommitResponseBodyStats.
+        r"""Sets the total of this CreateCommitResponseBodyStats.
 
         变更的总行数
 

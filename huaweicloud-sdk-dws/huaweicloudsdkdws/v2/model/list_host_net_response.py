@@ -26,7 +26,7 @@ class ListHostNetResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListHostNetResponse
+        r"""ListHostNetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHostNetResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListHostNetResponse.
+        r"""Gets the body of this ListHostNetResponse.
 
         :return: The body of this ListHostNetResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NetResp`]
@@ -53,7 +53,7 @@ class ListHostNetResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListHostNetResponse.
+        r"""Sets the body of this ListHostNetResponse.
 
         :param body: The body of this ListHostNetResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.NetResp`]

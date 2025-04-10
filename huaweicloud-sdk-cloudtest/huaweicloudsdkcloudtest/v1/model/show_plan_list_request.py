@@ -39,7 +39,7 @@ class ShowPlanListRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None, branch_uri=None, query_all_version=None, fix_version_ids=None):
-        """ShowPlanListRequest
+        r"""ShowPlanListRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ShowPlanListRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlanListRequest.
+        r"""Gets the project_id of this ShowPlanListRequest.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -100,7 +100,7 @@ class ShowPlanListRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlanListRequest.
+        r"""Sets the project_id of this ShowPlanListRequest.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -111,7 +111,7 @@ class ShowPlanListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPlanListRequest.
+        r"""Gets the offset of this ShowPlanListRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -122,7 +122,7 @@ class ShowPlanListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPlanListRequest.
+        r"""Sets the offset of this ShowPlanListRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -133,7 +133,7 @@ class ShowPlanListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPlanListRequest.
+        r"""Gets the limit of this ShowPlanListRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -144,7 +144,7 @@ class ShowPlanListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPlanListRequest.
+        r"""Sets the limit of this ShowPlanListRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -155,7 +155,7 @@ class ShowPlanListRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowPlanListRequest.
+        r"""Gets the name of this ShowPlanListRequest.
 
         模糊查询使用(针对测试计划名称)
 
@@ -166,7 +166,7 @@ class ShowPlanListRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPlanListRequest.
+        r"""Sets the name of this ShowPlanListRequest.
 
         模糊查询使用(针对测试计划名称)
 
@@ -177,7 +177,7 @@ class ShowPlanListRequest:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this ShowPlanListRequest.
+        r"""Gets the current_stage of this ShowPlanListRequest.
 
         测试计划所处阶段（create,design,execute,report）
 
@@ -188,7 +188,7 @@ class ShowPlanListRequest:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this ShowPlanListRequest.
+        r"""Sets the current_stage of this ShowPlanListRequest.
 
         测试计划所处阶段（create,design,execute,report）
 
@@ -199,7 +199,7 @@ class ShowPlanListRequest:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this ShowPlanListRequest.
+        r"""Gets the branch_uri of this ShowPlanListRequest.
 
         分支Uri，默认master
 
@@ -210,7 +210,7 @@ class ShowPlanListRequest:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this ShowPlanListRequest.
+        r"""Sets the branch_uri of this ShowPlanListRequest.
 
         分支Uri，默认master
 
@@ -221,7 +221,7 @@ class ShowPlanListRequest:
 
     @property
     def query_all_version(self):
-        """Gets the query_all_version of this ShowPlanListRequest.
+        r"""Gets the query_all_version of this ShowPlanListRequest.
 
         是否查询所有版本下测试计划，默认为false。若值为true, 查询所有版本下测试计划; 若为false, 查询branch_uri指定分支下的测试计划, branch_uri为空时默认为master
 
@@ -232,7 +232,7 @@ class ShowPlanListRequest:
 
     @query_all_version.setter
     def query_all_version(self, query_all_version):
-        """Sets the query_all_version of this ShowPlanListRequest.
+        r"""Sets the query_all_version of this ShowPlanListRequest.
 
         是否查询所有版本下测试计划，默认为false。若值为true, 查询所有版本下测试计划; 若为false, 查询branch_uri指定分支下的测试计划, branch_uri为空时默认为master
 
@@ -243,7 +243,7 @@ class ShowPlanListRequest:
 
     @property
     def fix_version_ids(self):
-        """Gets the fix_version_ids of this ShowPlanListRequest.
+        r"""Gets the fix_version_ids of this ShowPlanListRequest.
 
         测试计划关联的迭代。迭代id以逗号间隔
 
@@ -254,7 +254,7 @@ class ShowPlanListRequest:
 
     @fix_version_ids.setter
     def fix_version_ids(self, fix_version_ids):
-        """Sets the fix_version_ids of this ShowPlanListRequest.
+        r"""Sets the fix_version_ids of this ShowPlanListRequest.
 
         测试计划关联的迭代。迭代id以逗号间隔
 

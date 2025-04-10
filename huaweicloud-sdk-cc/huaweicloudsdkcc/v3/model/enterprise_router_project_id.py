@@ -25,7 +25,7 @@ class EnterpriseRouterProjectId:
     }
 
     def __init__(self, enterprise_router_project_id=None):
-        """EnterpriseRouterProjectId
+        r"""EnterpriseRouterProjectId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnterpriseRouterProjectId:
 
     @property
     def enterprise_router_project_id(self):
-        """Gets the enterprise_router_project_id of this EnterpriseRouterProjectId.
+        r"""Gets the enterprise_router_project_id of this EnterpriseRouterProjectId.
 
         企业路由器的项目ID。
 
@@ -53,7 +53,7 @@ class EnterpriseRouterProjectId:
 
     @enterprise_router_project_id.setter
     def enterprise_router_project_id(self, enterprise_router_project_id):
-        """Sets the enterprise_router_project_id of this EnterpriseRouterProjectId.
+        r"""Sets the enterprise_router_project_id of this EnterpriseRouterProjectId.
 
         企业路由器的项目ID。
 

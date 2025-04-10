@@ -27,7 +27,7 @@ class SaveMonitorItemConfigRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """SaveMonitorItemConfigRequest
+        r"""SaveMonitorItemConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SaveMonitorItemConfigRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this SaveMonitorItemConfigRequest.
+        r"""Gets the x_business_id of this SaveMonitorItemConfigRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class SaveMonitorItemConfigRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this SaveMonitorItemConfigRequest.
+        r"""Sets the x_business_id of this SaveMonitorItemConfigRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class SaveMonitorItemConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this SaveMonitorItemConfigRequest.
+        r"""Gets the body of this SaveMonitorItemConfigRequest.
 
         :return: The body of this SaveMonitorItemConfigRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.SaveMonitorItemParam`
@@ -80,7 +80,7 @@ class SaveMonitorItemConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SaveMonitorItemConfigRequest.
+        r"""Sets the body of this SaveMonitorItemConfigRequest.
 
         :param body: The body of this SaveMonitorItemConfigRequest.
         :type body: :class:`huaweicloudsdkapm.v1.SaveMonitorItemParam`

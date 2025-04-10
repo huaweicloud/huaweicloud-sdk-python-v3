@@ -30,7 +30,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
     }
 
     def __init__(self, total_objects_count=None, completed_objects_count=None, objects_list=None):
-        """ListSyntaxConversionProgressResponse
+        r"""ListSyntaxConversionProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
 
     @property
     def total_objects_count(self):
-        """Gets the total_objects_count of this ListSyntaxConversionProgressResponse.
+        r"""Gets the total_objects_count of this ListSyntaxConversionProgressResponse.
 
         对象总数。
 
@@ -69,7 +69,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
 
     @total_objects_count.setter
     def total_objects_count(self, total_objects_count):
-        """Sets the total_objects_count of this ListSyntaxConversionProgressResponse.
+        r"""Sets the total_objects_count of this ListSyntaxConversionProgressResponse.
 
         对象总数。
 
@@ -80,7 +80,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
 
     @property
     def completed_objects_count(self):
-        """Gets the completed_objects_count of this ListSyntaxConversionProgressResponse.
+        r"""Gets the completed_objects_count of this ListSyntaxConversionProgressResponse.
 
         完成语法转换的对象数量。
 
@@ -91,7 +91,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
 
     @completed_objects_count.setter
     def completed_objects_count(self, completed_objects_count):
-        """Sets the completed_objects_count of this ListSyntaxConversionProgressResponse.
+        r"""Sets the completed_objects_count of this ListSyntaxConversionProgressResponse.
 
         完成语法转换的对象数量。
 
@@ -102,7 +102,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
 
     @property
     def objects_list(self):
-        """Gets the objects_list of this ListSyntaxConversionProgressResponse.
+        r"""Gets the objects_list of this ListSyntaxConversionProgressResponse.
 
         语法转换的对象列表。
 
@@ -113,7 +113,7 @@ class ListSyntaxConversionProgressResponse(SdkResponse):
 
     @objects_list.setter
     def objects_list(self, objects_list):
-        """Sets the objects_list of this ListSyntaxConversionProgressResponse.
+        r"""Sets the objects_list of this ListSyntaxConversionProgressResponse.
 
         语法转换的对象列表。
 

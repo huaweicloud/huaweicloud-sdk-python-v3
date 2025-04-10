@@ -27,7 +27,7 @@ class UserTag:
     }
 
     def __init__(self, key=None, value=None):
-        """UserTag
+        r"""UserTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserTag:
 
     @property
     def key(self):
-        """Gets the key of this UserTag.
+        r"""Gets the key of this UserTag.
 
         云服务器标签的键。不得以\"CCE-\"或\"__type_baremetal\"开头
 
@@ -61,7 +61,7 @@ class UserTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UserTag.
+        r"""Sets the key of this UserTag.
 
         云服务器标签的键。不得以\"CCE-\"或\"__type_baremetal\"开头
 
@@ -72,7 +72,7 @@ class UserTag:
 
     @property
     def value(self):
-        """Gets the value of this UserTag.
+        r"""Gets the value of this UserTag.
 
         云服务器标签的值
 
@@ -83,7 +83,7 @@ class UserTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UserTag.
+        r"""Sets the value of this UserTag.
 
         云服务器标签的值
 

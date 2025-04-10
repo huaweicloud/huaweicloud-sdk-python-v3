@@ -38,7 +38,7 @@ class ShowImageJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, job_type=None, begin_time=None, end_time=None, status=None, sub_jobs_total=None, sub_jobs=None):
-        """ShowImageJobResponse
+        r"""ShowImageJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowImageJobResponse.
+        r"""Gets the id of this ShowImageJobResponse.
 
         任务ID。
 
@@ -97,7 +97,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowImageJobResponse.
+        r"""Sets the id of this ShowImageJobResponse.
 
         任务ID。
 
@@ -108,7 +108,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowImageJobResponse.
+        r"""Gets the job_type of this ShowImageJobResponse.
 
         :return: The job_type of this ShowImageJobResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
@@ -117,7 +117,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowImageJobResponse.
+        r"""Sets the job_type of this ShowImageJobResponse.
 
         :param job_type: The job_type of this ShowImageJobResponse.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
@@ -126,7 +126,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowImageJobResponse.
+        r"""Gets the begin_time of this ShowImageJobResponse.
 
         任务创建时间。
 
@@ -137,7 +137,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowImageJobResponse.
+        r"""Sets the begin_time of this ShowImageJobResponse.
 
         任务创建时间。
 
@@ -148,7 +148,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowImageJobResponse.
+        r"""Gets the end_time of this ShowImageJobResponse.
 
         任务结束时间。
 
@@ -159,7 +159,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowImageJobResponse.
+        r"""Sets the end_time of this ShowImageJobResponse.
 
         任务结束时间。
 
@@ -170,7 +170,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowImageJobResponse.
+        r"""Gets the status of this ShowImageJobResponse.
 
         :return: The status of this ShowImageJobResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobStatus`
@@ -179,7 +179,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowImageJobResponse.
+        r"""Sets the status of this ShowImageJobResponse.
 
         :param status: The status of this ShowImageJobResponse.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobStatus`
@@ -188,7 +188,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def sub_jobs_total(self):
-        """Gets the sub_jobs_total of this ShowImageJobResponse.
+        r"""Gets the sub_jobs_total of this ShowImageJobResponse.
 
         子任务总数。
 
@@ -199,7 +199,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @sub_jobs_total.setter
     def sub_jobs_total(self, sub_jobs_total):
-        """Sets the sub_jobs_total of this ShowImageJobResponse.
+        r"""Sets the sub_jobs_total of this ShowImageJobResponse.
 
         子任务总数。
 
@@ -210,7 +210,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this ShowImageJobResponse.
+        r"""Gets the sub_jobs of this ShowImageJobResponse.
 
         子任务列表
 
@@ -221,7 +221,7 @@ class ShowImageJobResponse(SdkResponse):
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this ShowImageJobResponse.
+        r"""Sets the sub_jobs of this ShowImageJobResponse.
 
         子任务列表
 

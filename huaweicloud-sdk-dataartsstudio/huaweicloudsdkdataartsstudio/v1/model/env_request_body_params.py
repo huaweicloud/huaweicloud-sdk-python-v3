@@ -31,7 +31,7 @@ class EnvRequestBodyParams:
     }
 
     def __init__(self, name=None, type=None, value=None, desc=None):
-        """EnvRequestBodyParams
+        r"""EnvRequestBodyParams
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EnvRequestBodyParams:
 
     @property
     def name(self):
-        """Gets the name of this EnvRequestBodyParams.
+        r"""Gets the name of this EnvRequestBodyParams.
 
         环境变量名称
 
@@ -75,7 +75,7 @@ class EnvRequestBodyParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvRequestBodyParams.
+        r"""Sets the name of this EnvRequestBodyParams.
 
         环境变量名称
 
@@ -86,7 +86,7 @@ class EnvRequestBodyParams:
 
     @property
     def type(self):
-        """Gets the type of this EnvRequestBodyParams.
+        r"""Gets the type of this EnvRequestBodyParams.
 
         环境变量类型
 
@@ -97,7 +97,7 @@ class EnvRequestBodyParams:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EnvRequestBodyParams.
+        r"""Sets the type of this EnvRequestBodyParams.
 
         环境变量类型
 
@@ -108,7 +108,7 @@ class EnvRequestBodyParams:
 
     @property
     def value(self):
-        """Gets the value of this EnvRequestBodyParams.
+        r"""Gets the value of this EnvRequestBodyParams.
 
         环境变量值
 
@@ -119,7 +119,7 @@ class EnvRequestBodyParams:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnvRequestBodyParams.
+        r"""Sets the value of this EnvRequestBodyParams.
 
         环境变量值
 
@@ -130,7 +130,7 @@ class EnvRequestBodyParams:
 
     @property
     def desc(self):
-        """Gets the desc of this EnvRequestBodyParams.
+        r"""Gets the desc of this EnvRequestBodyParams.
 
         描述信息
 
@@ -141,7 +141,7 @@ class EnvRequestBodyParams:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this EnvRequestBodyParams.
+        r"""Sets the desc of this EnvRequestBodyParams.
 
         描述信息
 

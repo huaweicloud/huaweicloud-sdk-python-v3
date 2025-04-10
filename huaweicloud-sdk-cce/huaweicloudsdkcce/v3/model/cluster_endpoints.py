@@ -27,7 +27,7 @@ class ClusterEndpoints:
     }
 
     def __init__(self, url=None, type=None):
-        """ClusterEndpoints
+        r"""ClusterEndpoints
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterEndpoints:
 
     @property
     def url(self):
-        """Gets the url of this ClusterEndpoints.
+        r"""Gets the url of this ClusterEndpoints.
 
         集群中 kube-apiserver 的访问地址
 
@@ -61,7 +61,7 @@ class ClusterEndpoints:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ClusterEndpoints.
+        r"""Sets the url of this ClusterEndpoints.
 
         集群中 kube-apiserver 的访问地址
 
@@ -72,7 +72,7 @@ class ClusterEndpoints:
 
     @property
     def type(self):
-        """Gets the type of this ClusterEndpoints.
+        r"""Gets the type of this ClusterEndpoints.
 
         集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
 
@@ -83,7 +83,7 @@ class ClusterEndpoints:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterEndpoints.
+        r"""Sets the type of this ClusterEndpoints.
 
         集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
 

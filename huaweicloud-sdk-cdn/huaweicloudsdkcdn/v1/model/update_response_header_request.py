@@ -29,7 +29,7 @@ class UpdateResponseHeaderRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None, body=None):
-        """UpdateResponseHeaderRequest
+        r"""UpdateResponseHeaderRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateResponseHeaderRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateResponseHeaderRequest.
+        r"""Gets the domain_id of this UpdateResponseHeaderRequest.
 
         加速域名ID。
 
@@ -67,7 +67,7 @@ class UpdateResponseHeaderRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateResponseHeaderRequest.
+        r"""Sets the domain_id of this UpdateResponseHeaderRequest.
 
         加速域名ID。
 
@@ -78,7 +78,7 @@ class UpdateResponseHeaderRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateResponseHeaderRequest.
+        r"""Gets the enterprise_project_id of this UpdateResponseHeaderRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -89,7 +89,7 @@ class UpdateResponseHeaderRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateResponseHeaderRequest.
+        r"""Sets the enterprise_project_id of this UpdateResponseHeaderRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -100,7 +100,7 @@ class UpdateResponseHeaderRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResponseHeaderRequest.
+        r"""Gets the body of this UpdateResponseHeaderRequest.
 
         :return: The body of this UpdateResponseHeaderRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.HeaderBody`
@@ -109,7 +109,7 @@ class UpdateResponseHeaderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResponseHeaderRequest.
+        r"""Sets the body of this UpdateResponseHeaderRequest.
 
         :param body: The body of this UpdateResponseHeaderRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.HeaderBody`

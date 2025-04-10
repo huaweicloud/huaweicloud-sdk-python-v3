@@ -28,7 +28,7 @@ class ListMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, count=None, migration_tasks=None):
-        """ListMigrationTaskResponse
+        r"""ListMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMigrationTaskResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMigrationTaskResponse.
+        r"""Gets the count of this ListMigrationTaskResponse.
 
         迁移任务数量。
 
@@ -62,7 +62,7 @@ class ListMigrationTaskResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMigrationTaskResponse.
+        r"""Sets the count of this ListMigrationTaskResponse.
 
         迁移任务数量。
 
@@ -73,7 +73,7 @@ class ListMigrationTaskResponse(SdkResponse):
 
     @property
     def migration_tasks(self):
-        """Gets the migration_tasks of this ListMigrationTaskResponse.
+        r"""Gets the migration_tasks of this ListMigrationTaskResponse.
 
         迁移任务列表。
 
@@ -84,7 +84,7 @@ class ListMigrationTaskResponse(SdkResponse):
 
     @migration_tasks.setter
     def migration_tasks(self, migration_tasks):
-        """Sets the migration_tasks of this ListMigrationTaskResponse.
+        r"""Sets the migration_tasks of this ListMigrationTaskResponse.
 
         迁移任务列表。
 

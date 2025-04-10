@@ -31,7 +31,7 @@ class MaintainWindowsEntity:
     }
 
     def __init__(self, default=None, end=None, begin=None, seq=None):
-        """MaintainWindowsEntity
+        r"""MaintainWindowsEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MaintainWindowsEntity:
 
     @property
     def default(self):
-        """Gets the default of this MaintainWindowsEntity.
+        r"""Gets the default of this MaintainWindowsEntity.
 
         是否为默认时间段。
 
@@ -75,7 +75,7 @@ class MaintainWindowsEntity:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this MaintainWindowsEntity.
+        r"""Sets the default of this MaintainWindowsEntity.
 
         是否为默认时间段。
 
@@ -86,7 +86,7 @@ class MaintainWindowsEntity:
 
     @property
     def end(self):
-        """Gets the end of this MaintainWindowsEntity.
+        r"""Gets the end of this MaintainWindowsEntity.
 
         维护时间窗结束时间。
 
@@ -97,7 +97,7 @@ class MaintainWindowsEntity:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this MaintainWindowsEntity.
+        r"""Sets the end of this MaintainWindowsEntity.
 
         维护时间窗结束时间。
 
@@ -108,7 +108,7 @@ class MaintainWindowsEntity:
 
     @property
     def begin(self):
-        """Gets the begin of this MaintainWindowsEntity.
+        r"""Gets the begin of this MaintainWindowsEntity.
 
         维护时间窗开始时间。
 
@@ -119,7 +119,7 @@ class MaintainWindowsEntity:
 
     @begin.setter
     def begin(self, begin):
-        """Sets the begin of this MaintainWindowsEntity.
+        r"""Sets the begin of this MaintainWindowsEntity.
 
         维护时间窗开始时间。
 
@@ -130,7 +130,7 @@ class MaintainWindowsEntity:
 
     @property
     def seq(self):
-        """Gets the seq of this MaintainWindowsEntity.
+        r"""Gets the seq of this MaintainWindowsEntity.
 
         序号。
 
@@ -141,7 +141,7 @@ class MaintainWindowsEntity:
 
     @seq.setter
     def seq(self, seq):
-        """Sets the seq of this MaintainWindowsEntity.
+        r"""Sets the seq of this MaintainWindowsEntity.
 
         序号。
 

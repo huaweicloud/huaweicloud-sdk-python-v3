@@ -29,7 +29,7 @@ class CreateHarvestTaskRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, body=None):
-        """CreateHarvestTaskRequest
+        r"""CreateHarvestTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateHarvestTaskRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this CreateHarvestTaskRequest.
+        r"""Gets the access_control_allow_internal of this CreateHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -68,7 +68,7 @@ class CreateHarvestTaskRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this CreateHarvestTaskRequest.
+        r"""Sets the access_control_allow_internal of this CreateHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -79,7 +79,7 @@ class CreateHarvestTaskRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this CreateHarvestTaskRequest.
+        r"""Gets the access_control_allow_external of this CreateHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -90,7 +90,7 @@ class CreateHarvestTaskRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this CreateHarvestTaskRequest.
+        r"""Sets the access_control_allow_external of this CreateHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -101,7 +101,7 @@ class CreateHarvestTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHarvestTaskRequest.
+        r"""Gets the body of this CreateHarvestTaskRequest.
 
         :return: The body of this CreateHarvestTaskRequest.
         :rtype: :class:`huaweicloudsdklive.v1.CreateHarvestTaskInfoReq`
@@ -110,7 +110,7 @@ class CreateHarvestTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHarvestTaskRequest.
+        r"""Sets the body of this CreateHarvestTaskRequest.
 
         :param body: The body of this CreateHarvestTaskRequest.
         :type body: :class:`huaweicloudsdklive.v1.CreateHarvestTaskInfoReq`

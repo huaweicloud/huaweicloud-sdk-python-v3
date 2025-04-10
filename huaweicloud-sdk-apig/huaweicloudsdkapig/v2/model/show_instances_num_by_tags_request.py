@@ -25,7 +25,7 @@ class ShowInstancesNumByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ShowInstancesNumByTagsRequest
+        r"""ShowInstancesNumByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowInstancesNumByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowInstancesNumByTagsRequest.
+        r"""Gets the body of this ShowInstancesNumByTagsRequest.
 
         :return: The body of this ShowInstancesNumByTagsRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.TmsQueryReq`
@@ -52,7 +52,7 @@ class ShowInstancesNumByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowInstancesNumByTagsRequest.
+        r"""Sets the body of this ShowInstancesNumByTagsRequest.
 
         :param body: The body of this ShowInstancesNumByTagsRequest.
         :type body: :class:`huaweicloudsdkapig.v2.TmsQueryReq`

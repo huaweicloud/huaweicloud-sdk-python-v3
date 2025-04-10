@@ -25,7 +25,7 @@ class CreateEnhancedConnectionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEnhancedConnectionRequest
+        r"""CreateEnhancedConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEnhancedConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEnhancedConnectionRequest.
+        r"""Gets the body of this CreateEnhancedConnectionRequest.
 
         :return: The body of this CreateEnhancedConnectionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequestBody`
@@ -52,7 +52,7 @@ class CreateEnhancedConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEnhancedConnectionRequest.
+        r"""Sets the body of this CreateEnhancedConnectionRequest.
 
         :param body: The body of this CreateEnhancedConnectionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequestBody`

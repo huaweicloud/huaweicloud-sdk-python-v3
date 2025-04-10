@@ -25,7 +25,7 @@ class ResendAuthorizedMailReq:
     }
 
     def __init__(self, records=None):
-        """ResendAuthorizedMailReq
+        r"""ResendAuthorizedMailReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResendAuthorizedMailReq:
 
     @property
     def records(self):
-        """Gets the records of this ResendAuthorizedMailReq.
+        r"""Gets the records of this ResendAuthorizedMailReq.
 
         授权记录ID列表。
 
@@ -53,7 +53,7 @@ class ResendAuthorizedMailReq:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ResendAuthorizedMailReq.
+        r"""Sets the records of this ResendAuthorizedMailReq.
 
         授权记录ID列表。
 

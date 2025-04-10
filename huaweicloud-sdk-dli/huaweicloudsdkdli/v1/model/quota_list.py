@@ -25,7 +25,7 @@ class QuotaList:
     }
 
     def __init__(self, resources=None):
-        """QuotaList
+        r"""QuotaList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QuotaList:
 
     @property
     def resources(self):
-        """Gets the resources of this QuotaList.
+        r"""Gets the resources of this QuotaList.
 
         :return: The resources of this QuotaList.
         :rtype: list[:class:`huaweicloudsdkdli.v1.QuotaInfo`]
@@ -52,7 +52,7 @@ class QuotaList:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this QuotaList.
+        r"""Sets the resources of this QuotaList.
 
         :param resources: The resources of this QuotaList.
         :type resources: list[:class:`huaweicloudsdkdli.v1.QuotaInfo`]

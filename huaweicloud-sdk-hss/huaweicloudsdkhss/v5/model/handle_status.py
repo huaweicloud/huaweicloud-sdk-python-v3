@@ -23,7 +23,7 @@ class HandleStatus:
     }
 
     def __init__(self):
-        """HandleStatus
+        r"""HandleStatus
 
         The model defined in huaweicloud sdk
 

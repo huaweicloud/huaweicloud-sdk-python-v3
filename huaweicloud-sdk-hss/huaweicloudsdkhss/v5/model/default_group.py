@@ -23,7 +23,7 @@ class DefaultGroup:
     }
 
     def __init__(self):
-        """DefaultGroup
+        r"""DefaultGroup
 
         The model defined in huaweicloud sdk
 

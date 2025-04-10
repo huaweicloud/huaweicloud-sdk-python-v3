@@ -26,7 +26,7 @@ class ListPluginExtensionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListPluginExtensionsResponse
+        r"""ListPluginExtensionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPluginExtensionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListPluginExtensionsResponse.
+        r"""Gets the body of this ListPluginExtensionsResponse.
 
         实例插件拓展信息
 
@@ -55,7 +55,7 @@ class ListPluginExtensionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPluginExtensionsResponse.
+        r"""Sets the body of this ListPluginExtensionsResponse.
 
         实例插件拓展信息
 

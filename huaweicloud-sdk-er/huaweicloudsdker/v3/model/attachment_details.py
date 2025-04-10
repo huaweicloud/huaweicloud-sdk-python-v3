@@ -51,7 +51,7 @@ class AttachmentDetails:
     }
 
     def __init__(self, id=None, name=None, description=None, state=None, created_at=None, updated_at=None, tags=None, project_id=None, er_id=None, resource_id=None, resource_type=None, resource_project_id=None, associated=None, route_table_id=None):
-        """AttachmentDetails
+        r"""AttachmentDetails
 
         The model defined in huaweicloud sdk
 
@@ -129,7 +129,7 @@ class AttachmentDetails:
 
     @property
     def id(self):
-        """Gets the id of this AttachmentDetails.
+        r"""Gets the id of this AttachmentDetails.
 
         连接ID
 
@@ -140,7 +140,7 @@ class AttachmentDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AttachmentDetails.
+        r"""Sets the id of this AttachmentDetails.
 
         连接ID
 
@@ -151,7 +151,7 @@ class AttachmentDetails:
 
     @property
     def name(self):
-        """Gets the name of this AttachmentDetails.
+        r"""Gets the name of this AttachmentDetails.
 
         连接名字
 
@@ -162,7 +162,7 @@ class AttachmentDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AttachmentDetails.
+        r"""Sets the name of this AttachmentDetails.
 
         连接名字
 
@@ -173,7 +173,7 @@ class AttachmentDetails:
 
     @property
     def description(self):
-        """Gets the description of this AttachmentDetails.
+        r"""Gets the description of this AttachmentDetails.
 
         描述信息
 
@@ -184,7 +184,7 @@ class AttachmentDetails:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AttachmentDetails.
+        r"""Sets the description of this AttachmentDetails.
 
         描述信息
 
@@ -195,7 +195,7 @@ class AttachmentDetails:
 
     @property
     def state(self):
-        """Gets the state of this AttachmentDetails.
+        r"""Gets the state of this AttachmentDetails.
 
         连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
 
@@ -206,7 +206,7 @@ class AttachmentDetails:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AttachmentDetails.
+        r"""Sets the state of this AttachmentDetails.
 
         连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
 
@@ -217,7 +217,7 @@ class AttachmentDetails:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AttachmentDetails.
+        r"""Gets the created_at of this AttachmentDetails.
 
         创建时间
 
@@ -228,7 +228,7 @@ class AttachmentDetails:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AttachmentDetails.
+        r"""Sets the created_at of this AttachmentDetails.
 
         创建时间
 
@@ -239,7 +239,7 @@ class AttachmentDetails:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AttachmentDetails.
+        r"""Gets the updated_at of this AttachmentDetails.
 
         更新时间
 
@@ -250,7 +250,7 @@ class AttachmentDetails:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AttachmentDetails.
+        r"""Sets the updated_at of this AttachmentDetails.
 
         更新时间
 
@@ -261,7 +261,7 @@ class AttachmentDetails:
 
     @property
     def tags(self):
-        """Gets the tags of this AttachmentDetails.
+        r"""Gets the tags of this AttachmentDetails.
 
         企业路由器关联tag
 
@@ -272,7 +272,7 @@ class AttachmentDetails:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AttachmentDetails.
+        r"""Sets the tags of this AttachmentDetails.
 
         企业路由器关联tag
 
@@ -283,7 +283,7 @@ class AttachmentDetails:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AttachmentDetails.
+        r"""Gets the project_id of this AttachmentDetails.
 
         项目ID
 
@@ -294,7 +294,7 @@ class AttachmentDetails:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AttachmentDetails.
+        r"""Sets the project_id of this AttachmentDetails.
 
         项目ID
 
@@ -305,7 +305,7 @@ class AttachmentDetails:
 
     @property
     def er_id(self):
-        """Gets the er_id of this AttachmentDetails.
+        r"""Gets the er_id of this AttachmentDetails.
 
         er id
 
@@ -316,7 +316,7 @@ class AttachmentDetails:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this AttachmentDetails.
+        r"""Sets the er_id of this AttachmentDetails.
 
         er id
 
@@ -327,7 +327,7 @@ class AttachmentDetails:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AttachmentDetails.
+        r"""Gets the resource_id of this AttachmentDetails.
 
         内部连接关联的资源ID
 
@@ -338,7 +338,7 @@ class AttachmentDetails:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AttachmentDetails.
+        r"""Sets the resource_id of this AttachmentDetails.
 
         内部连接关联的资源ID
 
@@ -349,7 +349,7 @@ class AttachmentDetails:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AttachmentDetails.
+        r"""Gets the resource_type of this AttachmentDetails.
 
         内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
 
@@ -360,7 +360,7 @@ class AttachmentDetails:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AttachmentDetails.
+        r"""Sets the resource_type of this AttachmentDetails.
 
         内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
 
@@ -371,7 +371,7 @@ class AttachmentDetails:
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this AttachmentDetails.
+        r"""Gets the resource_project_id of this AttachmentDetails.
 
         资源所属项目ID
 
@@ -382,7 +382,7 @@ class AttachmentDetails:
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this AttachmentDetails.
+        r"""Sets the resource_project_id of this AttachmentDetails.
 
         资源所属项目ID
 
@@ -393,7 +393,7 @@ class AttachmentDetails:
 
     @property
     def associated(self):
-        """Gets the associated of this AttachmentDetails.
+        r"""Gets the associated of this AttachmentDetails.
 
         表示此连接是否被关联
 
@@ -404,7 +404,7 @@ class AttachmentDetails:
 
     @associated.setter
     def associated(self, associated):
-        """Sets the associated of this AttachmentDetails.
+        r"""Sets the associated of this AttachmentDetails.
 
         表示此连接是否被关联
 
@@ -415,7 +415,7 @@ class AttachmentDetails:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this AttachmentDetails.
+        r"""Gets the route_table_id of this AttachmentDetails.
 
         关联路由表id
 
@@ -426,7 +426,7 @@ class AttachmentDetails:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this AttachmentDetails.
+        r"""Sets the route_table_id of this AttachmentDetails.
 
         关联路由表id
 

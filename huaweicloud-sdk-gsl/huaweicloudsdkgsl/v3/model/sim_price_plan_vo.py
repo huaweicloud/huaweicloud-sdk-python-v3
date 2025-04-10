@@ -67,7 +67,7 @@ class SimPricePlanVO:
     }
 
     def __init__(self, id=None, account_id=None, sim_card_id=None, status=None, price_plan_id=None, cid=None, order_id=None, create_time=None, active_time=None, stop_time=None, flow_total=None, flow_used=None, flow_left=None, using=None, price_plan_name=None, description=None, package_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None):
-        """SimPricePlanVO
+        r"""SimPricePlanVO
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class SimPricePlanVO:
 
     @property
     def id(self):
-        """Gets the id of this SimPricePlanVO.
+        r"""Gets the id of this SimPricePlanVO.
 
         套餐实例id
 
@@ -201,7 +201,7 @@ class SimPricePlanVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimPricePlanVO.
+        r"""Sets the id of this SimPricePlanVO.
 
         套餐实例id
 
@@ -212,7 +212,7 @@ class SimPricePlanVO:
 
     @property
     def account_id(self):
-        """Gets the account_id of this SimPricePlanVO.
+        r"""Gets the account_id of this SimPricePlanVO.
 
         账户id
 
@@ -223,7 +223,7 @@ class SimPricePlanVO:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this SimPricePlanVO.
+        r"""Sets the account_id of this SimPricePlanVO.
 
         账户id
 
@@ -234,7 +234,7 @@ class SimPricePlanVO:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SimPricePlanVO.
+        r"""Gets the sim_card_id of this SimPricePlanVO.
 
         sim卡id
 
@@ -245,7 +245,7 @@ class SimPricePlanVO:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SimPricePlanVO.
+        r"""Sets the sim_card_id of this SimPricePlanVO.
 
         sim卡id
 
@@ -256,7 +256,7 @@ class SimPricePlanVO:
 
     @property
     def status(self):
-        """Gets the status of this SimPricePlanVO.
+        r"""Gets the status of this SimPricePlanVO.
 
         套餐状态:0 已删除 1 可激活 2 在用 3. 使用完 4. 可激活 5 已停用 6. 启用失败
 
@@ -267,7 +267,7 @@ class SimPricePlanVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SimPricePlanVO.
+        r"""Sets the status of this SimPricePlanVO.
 
         套餐状态:0 已删除 1 可激活 2 在用 3. 使用完 4. 可激活 5 已停用 6. 启用失败
 
@@ -278,7 +278,7 @@ class SimPricePlanVO:
 
     @property
     def price_plan_id(self):
-        """Gets the price_plan_id of this SimPricePlanVO.
+        r"""Gets the price_plan_id of this SimPricePlanVO.
 
         套餐id
 
@@ -289,7 +289,7 @@ class SimPricePlanVO:
 
     @price_plan_id.setter
     def price_plan_id(self, price_plan_id):
-        """Sets the price_plan_id of this SimPricePlanVO.
+        r"""Sets the price_plan_id of this SimPricePlanVO.
 
         套餐id
 
@@ -300,7 +300,7 @@ class SimPricePlanVO:
 
     @property
     def cid(self):
-        """Gets the cid of this SimPricePlanVO.
+        r"""Gets the cid of this SimPricePlanVO.
 
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
@@ -311,7 +311,7 @@ class SimPricePlanVO:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this SimPricePlanVO.
+        r"""Sets the cid of this SimPricePlanVO.
 
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
@@ -322,7 +322,7 @@ class SimPricePlanVO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SimPricePlanVO.
+        r"""Gets the order_id of this SimPricePlanVO.
 
         订单id
 
@@ -333,7 +333,7 @@ class SimPricePlanVO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SimPricePlanVO.
+        r"""Sets the order_id of this SimPricePlanVO.
 
         订单id
 
@@ -344,7 +344,7 @@ class SimPricePlanVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SimPricePlanVO.
+        r"""Gets the create_time of this SimPricePlanVO.
 
         创建时间 例如2020-08-24T07:57:56.000Z
 
@@ -355,7 +355,7 @@ class SimPricePlanVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SimPricePlanVO.
+        r"""Sets the create_time of this SimPricePlanVO.
 
         创建时间 例如2020-08-24T07:57:56.000Z
 
@@ -366,7 +366,7 @@ class SimPricePlanVO:
 
     @property
     def active_time(self):
-        """Gets the active_time of this SimPricePlanVO.
+        r"""Gets the active_time of this SimPricePlanVO.
 
         激活时间 例如2020-10-31T16:00:00.000Z
 
@@ -377,7 +377,7 @@ class SimPricePlanVO:
 
     @active_time.setter
     def active_time(self, active_time):
-        """Sets the active_time of this SimPricePlanVO.
+        r"""Sets the active_time of this SimPricePlanVO.
 
         激活时间 例如2020-10-31T16:00:00.000Z
 
@@ -388,7 +388,7 @@ class SimPricePlanVO:
 
     @property
     def stop_time(self):
-        """Gets the stop_time of this SimPricePlanVO.
+        r"""Gets the stop_time of this SimPricePlanVO.
 
         停用时间 2021-10-31T16:00:00.000Z
 
@@ -399,7 +399,7 @@ class SimPricePlanVO:
 
     @stop_time.setter
     def stop_time(self, stop_time):
-        """Sets the stop_time of this SimPricePlanVO.
+        r"""Sets the stop_time of this SimPricePlanVO.
 
         停用时间 2021-10-31T16:00:00.000Z
 
@@ -410,7 +410,7 @@ class SimPricePlanVO:
 
     @property
     def flow_total(self):
-        """Gets the flow_total of this SimPricePlanVO.
+        r"""Gets the flow_total of this SimPricePlanVO.
 
         总流量(MB)
 
@@ -421,7 +421,7 @@ class SimPricePlanVO:
 
     @flow_total.setter
     def flow_total(self, flow_total):
-        """Sets the flow_total of this SimPricePlanVO.
+        r"""Sets the flow_total of this SimPricePlanVO.
 
         总流量(MB)
 
@@ -432,7 +432,7 @@ class SimPricePlanVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this SimPricePlanVO.
+        r"""Gets the flow_used of this SimPricePlanVO.
 
         已使用流量(MB)
 
@@ -443,7 +443,7 @@ class SimPricePlanVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this SimPricePlanVO.
+        r"""Sets the flow_used of this SimPricePlanVO.
 
         已使用流量(MB)
 
@@ -454,7 +454,7 @@ class SimPricePlanVO:
 
     @property
     def flow_left(self):
-        """Gets the flow_left of this SimPricePlanVO.
+        r"""Gets the flow_left of this SimPricePlanVO.
 
         剩余流量(MB)
 
@@ -465,7 +465,7 @@ class SimPricePlanVO:
 
     @flow_left.setter
     def flow_left(self, flow_left):
-        """Sets the flow_left of this SimPricePlanVO.
+        r"""Sets the flow_left of this SimPricePlanVO.
 
         剩余流量(MB)
 
@@ -476,7 +476,7 @@ class SimPricePlanVO:
 
     @property
     def using(self):
-        """Gets the using of this SimPricePlanVO.
+        r"""Gets the using of this SimPricePlanVO.
 
         是否使用中(0：否 1：是)
 
@@ -487,7 +487,7 @@ class SimPricePlanVO:
 
     @using.setter
     def using(self, using):
-        """Sets the using of this SimPricePlanVO.
+        r"""Sets the using of this SimPricePlanVO.
 
         是否使用中(0：否 1：是)
 
@@ -498,7 +498,7 @@ class SimPricePlanVO:
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this SimPricePlanVO.
+        r"""Gets the price_plan_name of this SimPricePlanVO.
 
         套餐名
 
@@ -509,7 +509,7 @@ class SimPricePlanVO:
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this SimPricePlanVO.
+        r"""Sets the price_plan_name of this SimPricePlanVO.
 
         套餐名
 
@@ -520,7 +520,7 @@ class SimPricePlanVO:
 
     @property
     def description(self):
-        """Gets the description of this SimPricePlanVO.
+        r"""Gets the description of this SimPricePlanVO.
 
         描述
 
@@ -531,7 +531,7 @@ class SimPricePlanVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SimPricePlanVO.
+        r"""Sets the description of this SimPricePlanVO.
 
         描述
 
@@ -542,7 +542,7 @@ class SimPricePlanVO:
 
     @property
     def package_type(self):
-        """Gets the package_type of this SimPricePlanVO.
+        r"""Gets the package_type of this SimPricePlanVO.
 
         套餐类型: 0.非自动续费 1.自动续费
 
@@ -553,7 +553,7 @@ class SimPricePlanVO:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this SimPricePlanVO.
+        r"""Sets the package_type of this SimPricePlanVO.
 
         套餐类型: 0.非自动续费 1.自动续费
 
@@ -564,7 +564,7 @@ class SimPricePlanVO:
 
     @property
     def effect_type(self):
-        """Gets the effect_type of this SimPricePlanVO.
+        r"""Gets the effect_type of this SimPricePlanVO.
 
         生效类型: 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效 
 
@@ -575,7 +575,7 @@ class SimPricePlanVO:
 
     @effect_type.setter
     def effect_type(self, effect_type):
-        """Sets the effect_type of this SimPricePlanVO.
+        r"""Sets the effect_type of this SimPricePlanVO.
 
         生效类型: 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效 
 
@@ -586,7 +586,7 @@ class SimPricePlanVO:
 
     @property
     def silent_period_day(self):
-        """Gets the silent_period_day of this SimPricePlanVO.
+        r"""Gets the silent_period_day of this SimPricePlanVO.
 
         沉默期
 
@@ -597,7 +597,7 @@ class SimPricePlanVO:
 
     @silent_period_day.setter
     def silent_period_day(self, silent_period_day):
-        """Sets the silent_period_day of this SimPricePlanVO.
+        r"""Sets the silent_period_day of this SimPricePlanVO.
 
         沉默期
 
@@ -608,7 +608,7 @@ class SimPricePlanVO:
 
     @property
     def silent_period_unit(self):
-        """Gets the silent_period_unit of this SimPricePlanVO.
+        r"""Gets the silent_period_unit of this SimPricePlanVO.
 
         沉默期单位: 1.年 2.月 3.日 
 
@@ -619,7 +619,7 @@ class SimPricePlanVO:
 
     @silent_period_unit.setter
     def silent_period_unit(self, silent_period_unit):
-        """Sets the silent_period_unit of this SimPricePlanVO.
+        r"""Sets the silent_period_unit of this SimPricePlanVO.
 
         沉默期单位: 1.年 2.月 3.日 
 
@@ -630,7 +630,7 @@ class SimPricePlanVO:
 
     @property
     def auto_renew(self):
-        """Gets the auto_renew of this SimPricePlanVO.
+        r"""Gets the auto_renew of this SimPricePlanVO.
 
         自动续订: 0.不自动续订 1.继续续订
 
@@ -641,7 +641,7 @@ class SimPricePlanVO:
 
     @auto_renew.setter
     def auto_renew(self, auto_renew):
-        """Sets the auto_renew of this SimPricePlanVO.
+        r"""Sets the auto_renew of this SimPricePlanVO.
 
         自动续订: 0.不自动续订 1.继续续订
 
@@ -652,7 +652,7 @@ class SimPricePlanVO:
 
     @property
     def location_desc(self):
-        """Gets the location_desc of this SimPricePlanVO.
+        r"""Gets the location_desc of this SimPricePlanVO.
 
         位置信息:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲5.  亚太
 
@@ -663,7 +663,7 @@ class SimPricePlanVO:
 
     @location_desc.setter
     def location_desc(self, location_desc):
-        """Sets the location_desc of this SimPricePlanVO.
+        r"""Sets the location_desc of this SimPricePlanVO.
 
         位置信息:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲5.  亚太
 

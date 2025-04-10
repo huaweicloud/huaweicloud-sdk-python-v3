@@ -25,7 +25,7 @@ class ImportCheckpointRequest:
     }
 
     def __init__(self, body=None):
-        """ImportCheckpointRequest
+        r"""ImportCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportCheckpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportCheckpointRequest.
+        r"""Gets the body of this ImportCheckpointRequest.
 
         :return: The body of this ImportCheckpointRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.SyncReq`
@@ -52,7 +52,7 @@ class ImportCheckpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportCheckpointRequest.
+        r"""Sets the body of this ImportCheckpointRequest.
 
         :param body: The body of this ImportCheckpointRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.SyncReq`

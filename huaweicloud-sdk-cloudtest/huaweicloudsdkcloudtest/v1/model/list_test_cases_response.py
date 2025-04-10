@@ -28,7 +28,7 @@ class ListTestCasesResponse(SdkResponse):
     }
 
     def __init__(self, values=None, total=None):
-        """ListTestCasesResponse
+        r"""ListTestCasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTestCasesResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ListTestCasesResponse.
+        r"""Gets the values of this ListTestCasesResponse.
 
         用例详情列表
 
@@ -62,7 +62,7 @@ class ListTestCasesResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ListTestCasesResponse.
+        r"""Sets the values of this ListTestCasesResponse.
 
         用例详情列表
 
@@ -73,7 +73,7 @@ class ListTestCasesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTestCasesResponse.
+        r"""Gets the total of this ListTestCasesResponse.
 
         用例总数
 
@@ -84,7 +84,7 @@ class ListTestCasesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTestCasesResponse.
+        r"""Sets the total of this ListTestCasesResponse.
 
         用例总数
 

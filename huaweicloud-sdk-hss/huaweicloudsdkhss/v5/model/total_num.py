@@ -23,7 +23,7 @@ class TotalNum:
     }
 
     def __init__(self):
-        """TotalNum
+        r"""TotalNum
 
         The model defined in huaweicloud sdk
 

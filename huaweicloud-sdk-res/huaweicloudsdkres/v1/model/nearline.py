@@ -29,7 +29,7 @@ class Nearline:
     }
 
     def __init__(self, item_topic=None, user_topic=None, behavior_topic=None):
-        """Nearline
+        r"""Nearline
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Nearline:
 
     @property
     def item_topic(self):
-        """Gets the item_topic of this Nearline.
+        r"""Gets the item_topic of this Nearline.
 
         :return: The item_topic of this Nearline.
         :rtype: :class:`huaweicloudsdkres.v1.Topic`
@@ -66,7 +66,7 @@ class Nearline:
 
     @item_topic.setter
     def item_topic(self, item_topic):
-        """Sets the item_topic of this Nearline.
+        r"""Sets the item_topic of this Nearline.
 
         :param item_topic: The item_topic of this Nearline.
         :type item_topic: :class:`huaweicloudsdkres.v1.Topic`
@@ -75,7 +75,7 @@ class Nearline:
 
     @property
     def user_topic(self):
-        """Gets the user_topic of this Nearline.
+        r"""Gets the user_topic of this Nearline.
 
         :return: The user_topic of this Nearline.
         :rtype: :class:`huaweicloudsdkres.v1.Topic`
@@ -84,7 +84,7 @@ class Nearline:
 
     @user_topic.setter
     def user_topic(self, user_topic):
-        """Sets the user_topic of this Nearline.
+        r"""Sets the user_topic of this Nearline.
 
         :param user_topic: The user_topic of this Nearline.
         :type user_topic: :class:`huaweicloudsdkres.v1.Topic`
@@ -93,7 +93,7 @@ class Nearline:
 
     @property
     def behavior_topic(self):
-        """Gets the behavior_topic of this Nearline.
+        r"""Gets the behavior_topic of this Nearline.
 
         :return: The behavior_topic of this Nearline.
         :rtype: :class:`huaweicloudsdkres.v1.Topic`
@@ -102,7 +102,7 @@ class Nearline:
 
     @behavior_topic.setter
     def behavior_topic(self, behavior_topic):
-        """Sets the behavior_topic of this Nearline.
+        r"""Sets the behavior_topic of this Nearline.
 
         :param behavior_topic: The behavior_topic of this Nearline.
         :type behavior_topic: :class:`huaweicloudsdkres.v1.Topic`

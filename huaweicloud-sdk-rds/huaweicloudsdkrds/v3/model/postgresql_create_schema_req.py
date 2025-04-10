@@ -27,7 +27,7 @@ class PostgresqlCreateSchemaReq:
     }
 
     def __init__(self, schema_name=None, owner=None):
-        """PostgresqlCreateSchemaReq
+        r"""PostgresqlCreateSchemaReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PostgresqlCreateSchemaReq:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PostgresqlCreateSchemaReq.
+        r"""Gets the schema_name of this PostgresqlCreateSchemaReq.
 
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库和已存在的schema重名。 RDS for PostgreSQL模板库包括postgres， template0 ，template1。  已存在的schema包括public，information_schema。
 
@@ -59,7 +59,7 @@ class PostgresqlCreateSchemaReq:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PostgresqlCreateSchemaReq.
+        r"""Sets the schema_name of this PostgresqlCreateSchemaReq.
 
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库和已存在的schema重名。 RDS for PostgreSQL模板库包括postgres， template0 ，template1。  已存在的schema包括public，information_schema。
 
@@ -70,7 +70,7 @@ class PostgresqlCreateSchemaReq:
 
     @property
     def owner(self):
-        """Gets the owner of this PostgresqlCreateSchemaReq.
+        r"""Gets the owner of this PostgresqlCreateSchemaReq.
 
         数据库属主用户。  数据库属主名称在1到63个字符之间，不能以“pg”和数字开头，不能和系统用户名称相同。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
@@ -81,7 +81,7 @@ class PostgresqlCreateSchemaReq:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PostgresqlCreateSchemaReq.
+        r"""Sets the owner of this PostgresqlCreateSchemaReq.
 
         数据库属主用户。  数据库属主名称在1到63个字符之间，不能以“pg”和数字开头，不能和系统用户名称相同。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 

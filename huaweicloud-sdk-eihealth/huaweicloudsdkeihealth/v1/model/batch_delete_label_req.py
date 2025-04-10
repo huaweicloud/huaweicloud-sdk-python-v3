@@ -25,7 +25,7 @@ class BatchDeleteLabelReq:
     }
 
     def __init__(self, ids=None):
-        """BatchDeleteLabelReq
+        r"""BatchDeleteLabelReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteLabelReq:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchDeleteLabelReq.
+        r"""Gets the ids of this BatchDeleteLabelReq.
 
         批量删除标签id列表
 
@@ -53,7 +53,7 @@ class BatchDeleteLabelReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchDeleteLabelReq.
+        r"""Sets the ids of this BatchDeleteLabelReq.
 
         批量删除标签id列表
 

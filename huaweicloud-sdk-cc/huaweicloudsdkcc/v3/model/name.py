@@ -25,7 +25,7 @@ class Name:
     }
 
     def __init__(self, name=None):
-        """Name
+        r"""Name
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Name:
 
     @property
     def name(self):
-        """Gets the name of this Name.
+        r"""Gets the name of this Name.
 
         实例名字。
 
@@ -53,7 +53,7 @@ class Name:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Name.
+        r"""Sets the name of this Name.
 
         实例名字。
 

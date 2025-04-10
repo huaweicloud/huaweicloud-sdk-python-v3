@@ -29,7 +29,7 @@ class SearchRestInfo:
     }
 
     def __init__(self, items=None, search_info=None, image_info=None):
-        """SearchRestInfo
+        r"""SearchRestInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SearchRestInfo:
 
     @property
     def items(self):
-        """Gets the items of this SearchRestInfo.
+        r"""Gets the items of this SearchRestInfo.
 
         搜索结果列表。
 
@@ -68,7 +68,7 @@ class SearchRestInfo:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this SearchRestInfo.
+        r"""Sets the items of this SearchRestInfo.
 
         搜索结果列表。
 
@@ -79,7 +79,7 @@ class SearchRestInfo:
 
     @property
     def search_info(self):
-        """Gets the search_info of this SearchRestInfo.
+        r"""Gets the search_info of this SearchRestInfo.
 
         :return: The search_info of this SearchRestInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchInfo`
@@ -88,7 +88,7 @@ class SearchRestInfo:
 
     @search_info.setter
     def search_info(self, search_info):
-        """Sets the search_info of this SearchRestInfo.
+        r"""Sets the search_info of this SearchRestInfo.
 
         :param search_info: The search_info of this SearchRestInfo.
         :type search_info: :class:`huaweicloudsdkimagesearch.v2.SearchInfo`
@@ -97,7 +97,7 @@ class SearchRestInfo:
 
     @property
     def image_info(self):
-        """Gets the image_info of this SearchRestInfo.
+        r"""Gets the image_info of this SearchRestInfo.
 
         :return: The image_info of this SearchRestInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchRestInfoImageInfo`
@@ -106,7 +106,7 @@ class SearchRestInfo:
 
     @image_info.setter
     def image_info(self, image_info):
-        """Sets the image_info of this SearchRestInfo.
+        r"""Sets the image_info of this SearchRestInfo.
 
         :param image_info: The image_info of this SearchRestInfo.
         :type image_info: :class:`huaweicloudsdkimagesearch.v2.SearchRestInfoImageInfo`

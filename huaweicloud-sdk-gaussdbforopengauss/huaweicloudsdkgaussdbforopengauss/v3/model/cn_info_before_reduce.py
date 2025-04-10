@@ -33,7 +33,7 @@ class CnInfoBeforeReduce:
     }
 
     def __init__(self, id=None, name=None, status=None, availability_zone=None, support_reduce=None):
-        """CnInfoBeforeReduce
+        r"""CnInfoBeforeReduce
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CnInfoBeforeReduce:
 
     @property
     def id(self):
-        """Gets the id of this CnInfoBeforeReduce.
+        r"""Gets the id of this CnInfoBeforeReduce.
 
         节点ID。
 
@@ -82,7 +82,7 @@ class CnInfoBeforeReduce:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CnInfoBeforeReduce.
+        r"""Sets the id of this CnInfoBeforeReduce.
 
         节点ID。
 
@@ -93,7 +93,7 @@ class CnInfoBeforeReduce:
 
     @property
     def name(self):
-        """Gets the name of this CnInfoBeforeReduce.
+        r"""Gets the name of this CnInfoBeforeReduce.
 
         节点名称。
 
@@ -104,7 +104,7 @@ class CnInfoBeforeReduce:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CnInfoBeforeReduce.
+        r"""Sets the name of this CnInfoBeforeReduce.
 
         节点名称。
 
@@ -115,7 +115,7 @@ class CnInfoBeforeReduce:
 
     @property
     def status(self):
-        """Gets the status of this CnInfoBeforeReduce.
+        r"""Gets the status of this CnInfoBeforeReduce.
 
         节点状态。 取值： 值为“normal”，表示节点正常。 值为“abnormal”，表示节点异常。 值为“creating”，表示节点正在创建。 值为“createfail”，表示节点创建失败。
 
@@ -126,7 +126,7 @@ class CnInfoBeforeReduce:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CnInfoBeforeReduce.
+        r"""Sets the status of this CnInfoBeforeReduce.
 
         节点状态。 取值： 值为“normal”，表示节点正常。 值为“abnormal”，表示节点异常。 值为“creating”，表示节点正在创建。 值为“createfail”，表示节点创建失败。
 
@@ -137,7 +137,7 @@ class CnInfoBeforeReduce:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CnInfoBeforeReduce.
+        r"""Gets the availability_zone of this CnInfoBeforeReduce.
 
         可用区。
 
@@ -148,7 +148,7 @@ class CnInfoBeforeReduce:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CnInfoBeforeReduce.
+        r"""Sets the availability_zone of this CnInfoBeforeReduce.
 
         可用区。
 
@@ -159,7 +159,7 @@ class CnInfoBeforeReduce:
 
     @property
     def support_reduce(self):
-        """Gets the support_reduce of this CnInfoBeforeReduce.
+        r"""Gets the support_reduce of this CnInfoBeforeReduce.
 
         是否允许删除。
 
@@ -170,7 +170,7 @@ class CnInfoBeforeReduce:
 
     @support_reduce.setter
     def support_reduce(self, support_reduce):
-        """Sets the support_reduce of this CnInfoBeforeReduce.
+        r"""Sets the support_reduce of this CnInfoBeforeReduce.
 
         是否允许删除。
 

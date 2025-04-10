@@ -35,7 +35,7 @@ class ConfigurationSummary2:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore=None, created=None, updated=None):
-        """ConfigurationSummary2
+        r"""ConfigurationSummary2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigurationSummary2:
 
     @property
     def id(self):
-        """Gets the id of this ConfigurationSummary2.
+        r"""Gets the id of this ConfigurationSummary2.
 
         参数组ID。
 
@@ -89,7 +89,7 @@ class ConfigurationSummary2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigurationSummary2.
+        r"""Sets the id of this ConfigurationSummary2.
 
         参数组ID。
 
@@ -100,7 +100,7 @@ class ConfigurationSummary2:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationSummary2.
+        r"""Gets the name of this ConfigurationSummary2.
 
         参数组名称。
 
@@ -111,7 +111,7 @@ class ConfigurationSummary2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationSummary2.
+        r"""Sets the name of this ConfigurationSummary2.
 
         参数组名称。
 
@@ -122,7 +122,7 @@ class ConfigurationSummary2:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationSummary2.
+        r"""Gets the description of this ConfigurationSummary2.
 
         参数组描述。
 
@@ -133,7 +133,7 @@ class ConfigurationSummary2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationSummary2.
+        r"""Sets the description of this ConfigurationSummary2.
 
         参数组描述。
 
@@ -144,7 +144,7 @@ class ConfigurationSummary2:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ConfigurationSummary2.
+        r"""Gets the datastore of this ConfigurationSummary2.
 
         :return: The datastore of this ConfigurationSummary2.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DatastoreResult`
@@ -153,7 +153,7 @@ class ConfigurationSummary2:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ConfigurationSummary2.
+        r"""Sets the datastore of this ConfigurationSummary2.
 
         :param datastore: The datastore of this ConfigurationSummary2.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.DatastoreResult`
@@ -162,7 +162,7 @@ class ConfigurationSummary2:
 
     @property
     def created(self):
-        """Gets the created of this ConfigurationSummary2.
+        r"""Gets the created of this ConfigurationSummary2.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量。
 
@@ -173,7 +173,7 @@ class ConfigurationSummary2:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ConfigurationSummary2.
+        r"""Sets the created of this ConfigurationSummary2.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量。
 
@@ -184,7 +184,7 @@ class ConfigurationSummary2:
 
     @property
     def updated(self):
-        """Gets the updated of this ConfigurationSummary2.
+        r"""Gets the updated of this ConfigurationSummary2.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量。
 
@@ -195,7 +195,7 @@ class ConfigurationSummary2:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ConfigurationSummary2.
+        r"""Sets the updated of this ConfigurationSummary2.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量。
 

@@ -25,7 +25,7 @@ class TerminateJobReq:
     }
 
     def __init__(self, force=None):
-        """TerminateJobReq
+        r"""TerminateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TerminateJobReq:
 
     @property
     def force(self):
-        """Gets the force of this TerminateJobReq.
+        r"""Gets the force of this TerminateJobReq.
 
         是否强制终止,默认为false
 
@@ -53,7 +53,7 @@ class TerminateJobReq:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this TerminateJobReq.
+        r"""Sets the force of this TerminateJobReq.
 
         是否强制终止,默认为false
 

@@ -40,7 +40,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
     }
 
     def __init__(self, id=None, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, sign_type=None, create_time=None, update_time=None):
-        """UpdateRecordCallbackConfigResponse
+        r"""UpdateRecordCallbackConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the id of this UpdateRecordCallbackConfigResponse.
 
         配置id，由服务端返回。创建或修改的时候不携带
 
@@ -104,7 +104,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the id of this UpdateRecordCallbackConfigResponse.
 
         配置id，由服务端返回。创建或修改的时候不携带
 
@@ -115,7 +115,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the publish_domain of this UpdateRecordCallbackConfigResponse.
 
         直播推流域名
 
@@ -126,7 +126,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the publish_domain of this UpdateRecordCallbackConfigResponse.
 
         直播推流域名
 
@@ -137,7 +137,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def app(self):
-        """Gets the app of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the app of this UpdateRecordCallbackConfigResponse.
 
         app名称。如果匹配任意需填写为*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
@@ -148,7 +148,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @app.setter
     def app(self, app):
-        """Sets the app of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the app of this UpdateRecordCallbackConfigResponse.
 
         app名称。如果匹配任意需填写为*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
@@ -159,7 +159,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def notify_callback_url(self):
-        """Gets the notify_callback_url of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the notify_callback_url of this UpdateRecordCallbackConfigResponse.
 
         录制回调通知url地址
 
@@ -170,7 +170,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @notify_callback_url.setter
     def notify_callback_url(self, notify_callback_url):
-        """Sets the notify_callback_url of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the notify_callback_url of this UpdateRecordCallbackConfigResponse.
 
         录制回调通知url地址
 
@@ -181,7 +181,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def notify_event_subscription(self):
-        """Gets the notify_event_subscription of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the notify_event_subscription of this UpdateRecordCallbackConfigResponse.
 
         订阅录制通知消息。消息类型。RECORD_NEW_FILE_START开始创建新的录制文件。RECORD_FILE_COMPLETE录制文件生成完成。RECORD_OVER录制结束。RECORD_FAILED表示录制失败。如果不填写,默认订阅RECORD_FILE_COMPLETE
 
@@ -192,7 +192,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @notify_event_subscription.setter
     def notify_event_subscription(self, notify_event_subscription):
-        """Sets the notify_event_subscription of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the notify_event_subscription of this UpdateRecordCallbackConfigResponse.
 
         订阅录制通知消息。消息类型。RECORD_NEW_FILE_START开始创建新的录制文件。RECORD_FILE_COMPLETE录制文件生成完成。RECORD_OVER录制结束。RECORD_FAILED表示录制失败。如果不填写,默认订阅RECORD_FILE_COMPLETE
 
@@ -203,7 +203,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def sign_type(self):
-        """Gets the sign_type of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the sign_type of this UpdateRecordCallbackConfigResponse.
 
         加密类型
 
@@ -214,7 +214,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @sign_type.setter
     def sign_type(self, sign_type):
-        """Sets the sign_type of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the sign_type of this UpdateRecordCallbackConfigResponse.
 
         加密类型
 
@@ -225,7 +225,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the create_time of this UpdateRecordCallbackConfigResponse.
 
         创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
@@ -236,7 +236,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the create_time of this UpdateRecordCallbackConfigResponse.
 
         创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
@@ -247,7 +247,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateRecordCallbackConfigResponse.
+        r"""Gets the update_time of this UpdateRecordCallbackConfigResponse.
 
         修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
@@ -258,7 +258,7 @@ class UpdateRecordCallbackConfigResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateRecordCallbackConfigResponse.
+        r"""Sets the update_time of this UpdateRecordCallbackConfigResponse.
 
         修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 

@@ -47,7 +47,7 @@ class TicsLeagueNoticeVo:
     }
 
     def __init__(self, bcs_channel_name=None, bcs_ip=None, bcs_org_name=None, block_chain_id=None, block_chain_name=None, create_time=None, creator_name=None, description=None, expire_time=None, id=None, name=None, partners=None):
-        """TicsLeagueNoticeVo
+        r"""TicsLeagueNoticeVo
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def bcs_channel_name(self):
-        """Gets the bcs_channel_name of this TicsLeagueNoticeVo.
+        r"""Gets the bcs_channel_name of this TicsLeagueNoticeVo.
 
         BCS通道名称
 
@@ -127,7 +127,7 @@ class TicsLeagueNoticeVo:
 
     @bcs_channel_name.setter
     def bcs_channel_name(self, bcs_channel_name):
-        """Sets the bcs_channel_name of this TicsLeagueNoticeVo.
+        r"""Sets the bcs_channel_name of this TicsLeagueNoticeVo.
 
         BCS通道名称
 
@@ -138,7 +138,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def bcs_ip(self):
-        """Gets the bcs_ip of this TicsLeagueNoticeVo.
+        r"""Gets the bcs_ip of this TicsLeagueNoticeVo.
 
         BCS浏览器ip
 
@@ -149,7 +149,7 @@ class TicsLeagueNoticeVo:
 
     @bcs_ip.setter
     def bcs_ip(self, bcs_ip):
-        """Sets the bcs_ip of this TicsLeagueNoticeVo.
+        r"""Sets the bcs_ip of this TicsLeagueNoticeVo.
 
         BCS浏览器ip
 
@@ -160,7 +160,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def bcs_org_name(self):
-        """Gets the bcs_org_name of this TicsLeagueNoticeVo.
+        r"""Gets the bcs_org_name of this TicsLeagueNoticeVo.
 
         BCS组织名称
 
@@ -171,7 +171,7 @@ class TicsLeagueNoticeVo:
 
     @bcs_org_name.setter
     def bcs_org_name(self, bcs_org_name):
-        """Sets the bcs_org_name of this TicsLeagueNoticeVo.
+        r"""Sets the bcs_org_name of this TicsLeagueNoticeVo.
 
         BCS组织名称
 
@@ -182,7 +182,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def block_chain_id(self):
-        """Gets the block_chain_id of this TicsLeagueNoticeVo.
+        r"""Gets the block_chain_id of this TicsLeagueNoticeVo.
 
         BCS服务实例ID
 
@@ -193,7 +193,7 @@ class TicsLeagueNoticeVo:
 
     @block_chain_id.setter
     def block_chain_id(self, block_chain_id):
-        """Sets the block_chain_id of this TicsLeagueNoticeVo.
+        r"""Sets the block_chain_id of this TicsLeagueNoticeVo.
 
         BCS服务实例ID
 
@@ -204,7 +204,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def block_chain_name(self):
-        """Gets the block_chain_name of this TicsLeagueNoticeVo.
+        r"""Gets the block_chain_name of this TicsLeagueNoticeVo.
 
         BCS服务实例名称
 
@@ -215,7 +215,7 @@ class TicsLeagueNoticeVo:
 
     @block_chain_name.setter
     def block_chain_name(self, block_chain_name):
-        """Sets the block_chain_name of this TicsLeagueNoticeVo.
+        r"""Sets the block_chain_name of this TicsLeagueNoticeVo.
 
         BCS服务实例名称
 
@@ -226,7 +226,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TicsLeagueNoticeVo.
+        r"""Gets the create_time of this TicsLeagueNoticeVo.
 
         创建时间
 
@@ -237,7 +237,7 @@ class TicsLeagueNoticeVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TicsLeagueNoticeVo.
+        r"""Sets the create_time of this TicsLeagueNoticeVo.
 
         创建时间
 
@@ -248,7 +248,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TicsLeagueNoticeVo.
+        r"""Gets the creator_name of this TicsLeagueNoticeVo.
 
         创建人名称
 
@@ -259,7 +259,7 @@ class TicsLeagueNoticeVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TicsLeagueNoticeVo.
+        r"""Sets the creator_name of this TicsLeagueNoticeVo.
 
         创建人名称
 
@@ -270,7 +270,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def description(self):
-        """Gets the description of this TicsLeagueNoticeVo.
+        r"""Gets the description of this TicsLeagueNoticeVo.
 
         描述信息
 
@@ -281,7 +281,7 @@ class TicsLeagueNoticeVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TicsLeagueNoticeVo.
+        r"""Sets the description of this TicsLeagueNoticeVo.
 
         描述信息
 
@@ -292,7 +292,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this TicsLeagueNoticeVo.
+        r"""Gets the expire_time of this TicsLeagueNoticeVo.
 
         过期时间
 
@@ -303,7 +303,7 @@ class TicsLeagueNoticeVo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this TicsLeagueNoticeVo.
+        r"""Sets the expire_time of this TicsLeagueNoticeVo.
 
         过期时间
 
@@ -314,7 +314,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def id(self):
-        """Gets the id of this TicsLeagueNoticeVo.
+        r"""Gets the id of this TicsLeagueNoticeVo.
 
         联盟id
 
@@ -325,7 +325,7 @@ class TicsLeagueNoticeVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicsLeagueNoticeVo.
+        r"""Sets the id of this TicsLeagueNoticeVo.
 
         联盟id
 
@@ -336,7 +336,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def name(self):
-        """Gets the name of this TicsLeagueNoticeVo.
+        r"""Gets the name of this TicsLeagueNoticeVo.
 
         联盟名称
 
@@ -347,7 +347,7 @@ class TicsLeagueNoticeVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TicsLeagueNoticeVo.
+        r"""Sets the name of this TicsLeagueNoticeVo.
 
         联盟名称
 
@@ -358,7 +358,7 @@ class TicsLeagueNoticeVo:
 
     @property
     def partners(self):
-        """Gets the partners of this TicsLeagueNoticeVo.
+        r"""Gets the partners of this TicsLeagueNoticeVo.
 
         联盟成员数
 
@@ -369,7 +369,7 @@ class TicsLeagueNoticeVo:
 
     @partners.setter
     def partners(self, partners):
-        """Sets the partners of this TicsLeagueNoticeVo.
+        r"""Sets the partners of this TicsLeagueNoticeVo.
 
         联盟成员数
 

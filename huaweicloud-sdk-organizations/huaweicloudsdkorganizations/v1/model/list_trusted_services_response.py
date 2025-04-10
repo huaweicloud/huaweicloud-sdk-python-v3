@@ -28,7 +28,7 @@ class ListTrustedServicesResponse(SdkResponse):
     }
 
     def __init__(self, trusted_services=None, page_info=None):
-        """ListTrustedServicesResponse
+        r"""ListTrustedServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTrustedServicesResponse(SdkResponse):
 
     @property
     def trusted_services(self):
-        """Gets the trusted_services of this ListTrustedServicesResponse.
+        r"""Gets the trusted_services of this ListTrustedServicesResponse.
 
         启用与组织集成的服务主体列表。
 
@@ -62,7 +62,7 @@ class ListTrustedServicesResponse(SdkResponse):
 
     @trusted_services.setter
     def trusted_services(self, trusted_services):
-        """Sets the trusted_services of this ListTrustedServicesResponse.
+        r"""Sets the trusted_services of this ListTrustedServicesResponse.
 
         启用与组织集成的服务主体列表。
 
@@ -73,7 +73,7 @@ class ListTrustedServicesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListTrustedServicesResponse.
+        r"""Gets the page_info of this ListTrustedServicesResponse.
 
         :return: The page_info of this ListTrustedServicesResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListTrustedServicesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListTrustedServicesResponse.
+        r"""Sets the page_info of this ListTrustedServicesResponse.
 
         :param page_info: The page_info of this ListTrustedServicesResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

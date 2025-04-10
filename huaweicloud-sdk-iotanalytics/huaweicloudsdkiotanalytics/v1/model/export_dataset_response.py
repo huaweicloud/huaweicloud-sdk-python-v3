@@ -24,7 +24,7 @@ class ExportDatasetResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ExportDatasetResponse
+        r"""ExportDatasetResponse
 
         The model defined in huaweicloud sdk
 

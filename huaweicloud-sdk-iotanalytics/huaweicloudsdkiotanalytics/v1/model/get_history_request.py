@@ -31,7 +31,7 @@ class GetHistoryRequest:
     }
 
     def __init__(self, time_span=None, tags=None, property_names=None, limit=None):
-        """GetHistoryRequest
+        r"""GetHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class GetHistoryRequest:
 
     @property
     def time_span(self):
-        """Gets the time_span of this GetHistoryRequest.
+        r"""Gets the time_span of this GetHistoryRequest.
 
         :return: The time_span of this GetHistoryRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
@@ -70,7 +70,7 @@ class GetHistoryRequest:
 
     @time_span.setter
     def time_span(self, time_span):
-        """Sets the time_span of this GetHistoryRequest.
+        r"""Sets the time_span of this GetHistoryRequest.
 
         :param time_span: The time_span of this GetHistoryRequest.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
@@ -79,7 +79,7 @@ class GetHistoryRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this GetHistoryRequest.
+        r"""Gets the tags of this GetHistoryRequest.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -90,7 +90,7 @@ class GetHistoryRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GetHistoryRequest.
+        r"""Sets the tags of this GetHistoryRequest.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -101,7 +101,7 @@ class GetHistoryRequest:
 
     @property
     def property_names(self):
-        """Gets the property_names of this GetHistoryRequest.
+        r"""Gets the property_names of this GetHistoryRequest.
 
         查询的属性列表
 
@@ -112,7 +112,7 @@ class GetHistoryRequest:
 
     @property_names.setter
     def property_names(self, property_names):
-        """Sets the property_names of this GetHistoryRequest.
+        r"""Sets the property_names of this GetHistoryRequest.
 
         查询的属性列表
 
@@ -123,7 +123,7 @@ class GetHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this GetHistoryRequest.
+        r"""Gets the limit of this GetHistoryRequest.
 
         返回值个数限制
 
@@ -134,7 +134,7 @@ class GetHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this GetHistoryRequest.
+        r"""Sets the limit of this GetHistoryRequest.
 
         返回值个数限制
 

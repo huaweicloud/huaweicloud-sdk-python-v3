@@ -28,7 +28,7 @@ class BatchSetPolicyResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchSetPolicyResponse
+        r"""BatchSetPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchSetPolicyResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchSetPolicyResponse.
+        r"""Gets the results of this BatchSetPolicyResponse.
 
         批量设置同步策略响应体
 
@@ -62,7 +62,7 @@ class BatchSetPolicyResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchSetPolicyResponse.
+        r"""Sets the results of this BatchSetPolicyResponse.
 
         批量设置同步策略响应体
 
@@ -73,7 +73,7 @@ class BatchSetPolicyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchSetPolicyResponse.
+        r"""Gets the count of this BatchSetPolicyResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchSetPolicyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchSetPolicyResponse.
+        r"""Sets the count of this BatchSetPolicyResponse.
 
         总数
 

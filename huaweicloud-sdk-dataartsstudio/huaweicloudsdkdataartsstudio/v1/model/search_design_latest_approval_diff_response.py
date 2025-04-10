@@ -26,7 +26,7 @@ class SearchDesignLatestApprovalDiffResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SearchDesignLatestApprovalDiffResponse
+        r"""SearchDesignLatestApprovalDiffResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchDesignLatestApprovalDiffResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchDesignLatestApprovalDiffResponse.
+        r"""Gets the data of this SearchDesignLatestApprovalDiffResponse.
 
         :return: The data of this SearchDesignLatestApprovalDiffResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVODetailData`
@@ -53,7 +53,7 @@ class SearchDesignLatestApprovalDiffResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchDesignLatestApprovalDiffResponse.
+        r"""Sets the data of this SearchDesignLatestApprovalDiffResponse.
 
         :param data: The data of this SearchDesignLatestApprovalDiffResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVODetailData`

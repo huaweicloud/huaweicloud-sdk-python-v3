@@ -37,7 +37,7 @@ class AomMappingRuleInfo:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, deployments_prefix=None, deployments=None, namespace=None, container_name=None, files=None):
-        """AomMappingRuleInfo
+        r"""AomMappingRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AomMappingRuleInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AomMappingRuleInfo.
+        r"""Gets the cluster_id of this AomMappingRuleInfo.
 
         集群id
 
@@ -91,7 +91,7 @@ class AomMappingRuleInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AomMappingRuleInfo.
+        r"""Sets the cluster_id of this AomMappingRuleInfo.
 
         集群id
 
@@ -102,7 +102,7 @@ class AomMappingRuleInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this AomMappingRuleInfo.
+        r"""Gets the cluster_name of this AomMappingRuleInfo.
 
         集群名称
 
@@ -113,7 +113,7 @@ class AomMappingRuleInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this AomMappingRuleInfo.
+        r"""Sets the cluster_name of this AomMappingRuleInfo.
 
         集群名称
 
@@ -124,7 +124,7 @@ class AomMappingRuleInfo:
 
     @property
     def deployments_prefix(self):
-        """Gets the deployments_prefix of this AomMappingRuleInfo.
+        r"""Gets the deployments_prefix of this AomMappingRuleInfo.
 
         日志流前缀
 
@@ -135,7 +135,7 @@ class AomMappingRuleInfo:
 
     @deployments_prefix.setter
     def deployments_prefix(self, deployments_prefix):
-        """Sets the deployments_prefix of this AomMappingRuleInfo.
+        r"""Sets the deployments_prefix of this AomMappingRuleInfo.
 
         日志流前缀
 
@@ -146,7 +146,7 @@ class AomMappingRuleInfo:
 
     @property
     def deployments(self):
-        """Gets the deployments of this AomMappingRuleInfo.
+        r"""Gets the deployments of this AomMappingRuleInfo.
 
         工作负载
 
@@ -157,7 +157,7 @@ class AomMappingRuleInfo:
 
     @deployments.setter
     def deployments(self, deployments):
-        """Sets the deployments of this AomMappingRuleInfo.
+        r"""Sets the deployments of this AomMappingRuleInfo.
 
         工作负载
 
@@ -168,7 +168,7 @@ class AomMappingRuleInfo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this AomMappingRuleInfo.
+        r"""Gets the namespace of this AomMappingRuleInfo.
 
         命名空间
 
@@ -179,7 +179,7 @@ class AomMappingRuleInfo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this AomMappingRuleInfo.
+        r"""Sets the namespace of this AomMappingRuleInfo.
 
         命名空间
 
@@ -190,7 +190,7 @@ class AomMappingRuleInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this AomMappingRuleInfo.
+        r"""Gets the container_name of this AomMappingRuleInfo.
 
         容器名称
 
@@ -201,7 +201,7 @@ class AomMappingRuleInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this AomMappingRuleInfo.
+        r"""Sets the container_name of this AomMappingRuleInfo.
 
         容器名称
 
@@ -212,7 +212,7 @@ class AomMappingRuleInfo:
 
     @property
     def files(self):
-        """Gets the files of this AomMappingRuleInfo.
+        r"""Gets the files of this AomMappingRuleInfo.
 
         接入规则详情
 
@@ -223,7 +223,7 @@ class AomMappingRuleInfo:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this AomMappingRuleInfo.
+        r"""Sets the files of this AomMappingRuleInfo.
 
         接入规则详情
 

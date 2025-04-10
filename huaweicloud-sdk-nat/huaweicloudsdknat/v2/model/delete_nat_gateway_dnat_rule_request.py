@@ -27,7 +27,7 @@ class DeleteNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, nat_gateway_id=None, dnat_rule_id=None):
-        """DeleteNatGatewayDnatRuleRequest
+        r"""DeleteNatGatewayDnatRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNatGatewayDnatRuleRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this DeleteNatGatewayDnatRuleRequest.
+        r"""Gets the nat_gateway_id of this DeleteNatGatewayDnatRuleRequest.
 
         公网NAT网关实例的ID。
 
@@ -59,7 +59,7 @@ class DeleteNatGatewayDnatRuleRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this DeleteNatGatewayDnatRuleRequest.
+        r"""Sets the nat_gateway_id of this DeleteNatGatewayDnatRuleRequest.
 
         公网NAT网关实例的ID。
 
@@ -70,7 +70,7 @@ class DeleteNatGatewayDnatRuleRequest:
 
     @property
     def dnat_rule_id(self):
-        """Gets the dnat_rule_id of this DeleteNatGatewayDnatRuleRequest.
+        r"""Gets the dnat_rule_id of this DeleteNatGatewayDnatRuleRequest.
 
         DNAT规则的ID。
 
@@ -81,7 +81,7 @@ class DeleteNatGatewayDnatRuleRequest:
 
     @dnat_rule_id.setter
     def dnat_rule_id(self, dnat_rule_id):
-        """Sets the dnat_rule_id of this DeleteNatGatewayDnatRuleRequest.
+        r"""Sets the dnat_rule_id of this DeleteNatGatewayDnatRuleRequest.
 
         DNAT规则的ID。
 

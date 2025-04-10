@@ -33,7 +33,7 @@ class UpdateFunctionCodeRequestBody:
     }
 
     def __init__(self, code_type=None, code_url=None, code_filename=None, func_code=None, depend_version_list=None):
-        """UpdateFunctionCodeRequestBody
+        r"""UpdateFunctionCodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UpdateFunctionCodeRequestBody:
 
     @property
     def code_type(self):
-        """Gets the code_type of this UpdateFunctionCodeRequestBody.
+        r"""Gets the code_type of this UpdateFunctionCodeRequestBody.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -80,7 +80,7 @@ class UpdateFunctionCodeRequestBody:
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this UpdateFunctionCodeRequestBody.
+        r"""Sets the code_type of this UpdateFunctionCodeRequestBody.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -91,7 +91,7 @@ class UpdateFunctionCodeRequestBody:
 
     @property
     def code_url(self):
-        """Gets the code_url of this UpdateFunctionCodeRequestBody.
+        r"""Gets the code_url of this UpdateFunctionCodeRequestBody.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -102,7 +102,7 @@ class UpdateFunctionCodeRequestBody:
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this UpdateFunctionCodeRequestBody.
+        r"""Sets the code_url of this UpdateFunctionCodeRequestBody.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -113,7 +113,7 @@ class UpdateFunctionCodeRequestBody:
 
     @property
     def code_filename(self):
-        """Gets the code_filename of this UpdateFunctionCodeRequestBody.
+        r"""Gets the code_filename of this UpdateFunctionCodeRequestBody.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -124,7 +124,7 @@ class UpdateFunctionCodeRequestBody:
 
     @code_filename.setter
     def code_filename(self, code_filename):
-        """Sets the code_filename of this UpdateFunctionCodeRequestBody.
+        r"""Sets the code_filename of this UpdateFunctionCodeRequestBody.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -135,7 +135,7 @@ class UpdateFunctionCodeRequestBody:
 
     @property
     def func_code(self):
-        """Gets the func_code of this UpdateFunctionCodeRequestBody.
+        r"""Gets the func_code of this UpdateFunctionCodeRequestBody.
 
         :return: The func_code of this UpdateFunctionCodeRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -144,7 +144,7 @@ class UpdateFunctionCodeRequestBody:
 
     @func_code.setter
     def func_code(self, func_code):
-        """Sets the func_code of this UpdateFunctionCodeRequestBody.
+        r"""Sets the func_code of this UpdateFunctionCodeRequestBody.
 
         :param func_code: The func_code of this UpdateFunctionCodeRequestBody.
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -153,7 +153,7 @@ class UpdateFunctionCodeRequestBody:
 
     @property
     def depend_version_list(self):
-        """Gets the depend_version_list of this UpdateFunctionCodeRequestBody.
+        r"""Gets the depend_version_list of this UpdateFunctionCodeRequestBody.
 
         依赖版本id列表
 
@@ -164,7 +164,7 @@ class UpdateFunctionCodeRequestBody:
 
     @depend_version_list.setter
     def depend_version_list(self, depend_version_list):
-        """Sets the depend_version_list of this UpdateFunctionCodeRequestBody.
+        r"""Sets the depend_version_list of this UpdateFunctionCodeRequestBody.
 
         依赖版本id列表
 

@@ -27,7 +27,7 @@ class UpdateServerAddress:
     }
 
     def __init__(self, version=None, addr=None):
-        """UpdateServerAddress
+        r"""UpdateServerAddress
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateServerAddress:
 
     @property
     def version(self):
-        """Gets the version of this UpdateServerAddress.
+        r"""Gets the version of this UpdateServerAddress.
 
         IP地址版本。  - 4：代表IPv4。 - 6：代表IPv6。
 
@@ -59,7 +59,7 @@ class UpdateServerAddress:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateServerAddress.
+        r"""Sets the version of this UpdateServerAddress.
 
         IP地址版本。  - 4：代表IPv4。 - 6：代表IPv6。
 
@@ -70,7 +70,7 @@ class UpdateServerAddress:
 
     @property
     def addr(self):
-        """Gets the addr of this UpdateServerAddress.
+        r"""Gets the addr of this UpdateServerAddress.
 
         IP地址。
 
@@ -81,7 +81,7 @@ class UpdateServerAddress:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this UpdateServerAddress.
+        r"""Sets the addr of this UpdateServerAddress.
 
         IP地址。
 

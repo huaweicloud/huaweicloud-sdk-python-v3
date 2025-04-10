@@ -35,7 +35,7 @@ class ValidateRobotReq:
     }
 
     def __init__(self, app_type=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
-        """ValidateRobotReq
+        r"""ValidateRobotReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ValidateRobotReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ValidateRobotReq.
+        r"""Gets the app_type of this ValidateRobotReq.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；8：奇妙问
 
@@ -88,7 +88,7 @@ class ValidateRobotReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ValidateRobotReq.
+        r"""Sets the app_type of this ValidateRobotReq.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；8：奇妙问
 
@@ -99,7 +99,7 @@ class ValidateRobotReq:
 
     @property
     def huawei_ei_cbs(self):
-        """Gets the huawei_ei_cbs of this ValidateRobotReq.
+        r"""Gets the huawei_ei_cbs of this ValidateRobotReq.
 
         :return: The huawei_ei_cbs of this ValidateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -108,7 +108,7 @@ class ValidateRobotReq:
 
     @huawei_ei_cbs.setter
     def huawei_ei_cbs(self, huawei_ei_cbs):
-        """Sets the huawei_ei_cbs of this ValidateRobotReq.
+        r"""Sets the huawei_ei_cbs of this ValidateRobotReq.
 
         :param huawei_ei_cbs: The huawei_ei_cbs of this ValidateRobotReq.
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -117,7 +117,7 @@ class ValidateRobotReq:
 
     @property
     def iflytek_aiui_config(self):
-        """Gets the iflytek_aiui_config of this ValidateRobotReq.
+        r"""Gets the iflytek_aiui_config of this ValidateRobotReq.
 
         :return: The iflytek_aiui_config of this ValidateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
@@ -126,7 +126,7 @@ class ValidateRobotReq:
 
     @iflytek_aiui_config.setter
     def iflytek_aiui_config(self, iflytek_aiui_config):
-        """Sets the iflytek_aiui_config of this ValidateRobotReq.
+        r"""Sets the iflytek_aiui_config of this ValidateRobotReq.
 
         :param iflytek_aiui_config: The iflytek_aiui_config of this ValidateRobotReq.
         :type iflytek_aiui_config: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
@@ -135,7 +135,7 @@ class ValidateRobotReq:
 
     @property
     def iflytek_spark(self):
-        """Gets the iflytek_spark of this ValidateRobotReq.
+        r"""Gets the iflytek_spark of this ValidateRobotReq.
 
         :return: The iflytek_spark of this ValidateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
@@ -144,7 +144,7 @@ class ValidateRobotReq:
 
     @iflytek_spark.setter
     def iflytek_spark(self, iflytek_spark):
-        """Sets the iflytek_spark of this ValidateRobotReq.
+        r"""Sets the iflytek_spark of this ValidateRobotReq.
 
         :param iflytek_spark: The iflytek_spark of this ValidateRobotReq.
         :type iflytek_spark: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
@@ -153,7 +153,7 @@ class ValidateRobotReq:
 
     @property
     def third_party_model_config(self):
-        """Gets the third_party_model_config of this ValidateRobotReq.
+        r"""Gets the third_party_model_config of this ValidateRobotReq.
 
         :return: The third_party_model_config of this ValidateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
@@ -162,7 +162,7 @@ class ValidateRobotReq:
 
     @third_party_model_config.setter
     def third_party_model_config(self, third_party_model_config):
-        """Sets the third_party_model_config of this ValidateRobotReq.
+        r"""Sets the third_party_model_config of this ValidateRobotReq.
 
         :param third_party_model_config: The third_party_model_config of this ValidateRobotReq.
         :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
@@ -171,7 +171,7 @@ class ValidateRobotReq:
 
     @property
     def mobvoi_config(self):
-        """Gets the mobvoi_config of this ValidateRobotReq.
+        r"""Gets the mobvoi_config of this ValidateRobotReq.
 
         :return: The mobvoi_config of this ValidateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
@@ -180,7 +180,7 @@ class ValidateRobotReq:
 
     @mobvoi_config.setter
     def mobvoi_config(self, mobvoi_config):
-        """Sets the mobvoi_config of this ValidateRobotReq.
+        r"""Sets the mobvoi_config of this ValidateRobotReq.
 
         :param mobvoi_config: The mobvoi_config of this ValidateRobotReq.
         :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`

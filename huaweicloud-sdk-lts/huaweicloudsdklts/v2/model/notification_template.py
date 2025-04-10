@@ -41,7 +41,7 @@ class NotificationTemplate:
     }
 
     def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None, create_time=None, modify_time=None, project_id=None):
-        """NotificationTemplate
+        r"""NotificationTemplate
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class NotificationTemplate:
 
     @property
     def name(self):
-        """Gets the name of this NotificationTemplate.
+        r"""Gets the name of this NotificationTemplate.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -103,7 +103,7 @@ class NotificationTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NotificationTemplate.
+        r"""Sets the name of this NotificationTemplate.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -114,7 +114,7 @@ class NotificationTemplate:
 
     @property
     def type(self):
-        """Gets the type of this NotificationTemplate.
+        r"""Gets the type of this NotificationTemplate.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -125,7 +125,7 @@ class NotificationTemplate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NotificationTemplate.
+        r"""Sets the type of this NotificationTemplate.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -136,7 +136,7 @@ class NotificationTemplate:
 
     @property
     def desc(self):
-        """Gets the desc of this NotificationTemplate.
+        r"""Gets the desc of this NotificationTemplate.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -147,7 +147,7 @@ class NotificationTemplate:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this NotificationTemplate.
+        r"""Sets the desc of this NotificationTemplate.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -158,7 +158,7 @@ class NotificationTemplate:
 
     @property
     def source(self):
-        """Gets the source of this NotificationTemplate.
+        r"""Gets the source of this NotificationTemplate.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -169,7 +169,7 @@ class NotificationTemplate:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this NotificationTemplate.
+        r"""Sets the source of this NotificationTemplate.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -180,7 +180,7 @@ class NotificationTemplate:
 
     @property
     def locale(self):
-        """Gets the locale of this NotificationTemplate.
+        r"""Gets the locale of this NotificationTemplate.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -191,7 +191,7 @@ class NotificationTemplate:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this NotificationTemplate.
+        r"""Sets the locale of this NotificationTemplate.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -202,7 +202,7 @@ class NotificationTemplate:
 
     @property
     def templates(self):
-        """Gets the templates of this NotificationTemplate.
+        r"""Gets the templates of this NotificationTemplate.
 
         模板正文，为一个数组
 
@@ -213,7 +213,7 @@ class NotificationTemplate:
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this NotificationTemplate.
+        r"""Sets the templates of this NotificationTemplate.
 
         模板正文，为一个数组
 
@@ -224,7 +224,7 @@ class NotificationTemplate:
 
     @property
     def create_time(self):
-        """Gets the create_time of this NotificationTemplate.
+        r"""Gets the create_time of this NotificationTemplate.
 
         创建时间，为毫秒时间戳
 
@@ -235,7 +235,7 @@ class NotificationTemplate:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this NotificationTemplate.
+        r"""Sets the create_time of this NotificationTemplate.
 
         创建时间，为毫秒时间戳
 
@@ -246,7 +246,7 @@ class NotificationTemplate:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this NotificationTemplate.
+        r"""Gets the modify_time of this NotificationTemplate.
 
         更新时间，为毫秒时间戳
 
@@ -257,7 +257,7 @@ class NotificationTemplate:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this NotificationTemplate.
+        r"""Sets the modify_time of this NotificationTemplate.
 
         更新时间，为毫秒时间戳
 
@@ -268,7 +268,7 @@ class NotificationTemplate:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NotificationTemplate.
+        r"""Gets the project_id of this NotificationTemplate.
 
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -279,7 +279,7 @@ class NotificationTemplate:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NotificationTemplate.
+        r"""Sets the project_id of this NotificationTemplate.
 
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 

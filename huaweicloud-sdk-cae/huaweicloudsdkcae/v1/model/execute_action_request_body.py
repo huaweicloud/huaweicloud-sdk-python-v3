@@ -31,7 +31,7 @@ class ExecuteActionRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
-        """ExecuteActionRequestBody
+        r"""ExecuteActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ExecuteActionRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this ExecuteActionRequestBody.
+        r"""Gets the api_version of this ExecuteActionRequestBody.
 
         :return: The api_version of this ExecuteActionRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -71,7 +71,7 @@ class ExecuteActionRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ExecuteActionRequestBody.
+        r"""Sets the api_version of this ExecuteActionRequestBody.
 
         :param api_version: The api_version of this ExecuteActionRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -80,7 +80,7 @@ class ExecuteActionRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this ExecuteActionRequestBody.
+        r"""Gets the kind of this ExecuteActionRequestBody.
 
         :return: The kind of this ExecuteActionRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ActionKindObj`
@@ -89,7 +89,7 @@ class ExecuteActionRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ExecuteActionRequestBody.
+        r"""Sets the kind of this ExecuteActionRequestBody.
 
         :param kind: The kind of this ExecuteActionRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.ActionKindObj`
@@ -98,7 +98,7 @@ class ExecuteActionRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ExecuteActionRequestBody.
+        r"""Gets the metadata of this ExecuteActionRequestBody.
 
         :return: The metadata of this ExecuteActionRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ExecuteActionRequestBodyMetadata`
@@ -107,7 +107,7 @@ class ExecuteActionRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ExecuteActionRequestBody.
+        r"""Sets the metadata of this ExecuteActionRequestBody.
 
         :param metadata: The metadata of this ExecuteActionRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.ExecuteActionRequestBodyMetadata`
@@ -116,7 +116,7 @@ class ExecuteActionRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this ExecuteActionRequestBody.
+        r"""Gets the spec of this ExecuteActionRequestBody.
 
         :return: The spec of this ExecuteActionRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ActionOnComponentSpec`
@@ -125,7 +125,7 @@ class ExecuteActionRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ExecuteActionRequestBody.
+        r"""Sets the spec of this ExecuteActionRequestBody.
 
         :param spec: The spec of this ExecuteActionRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.ActionOnComponentSpec`

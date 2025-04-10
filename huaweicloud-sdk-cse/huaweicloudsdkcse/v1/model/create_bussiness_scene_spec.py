@@ -27,7 +27,7 @@ class CreateBussinessSceneSpec:
     }
 
     def __init__(self, alias=None, matches=None):
-        """CreateBussinessSceneSpec
+        r"""CreateBussinessSceneSpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateBussinessSceneSpec:
 
     @property
     def alias(self):
-        """Gets the alias of this CreateBussinessSceneSpec.
+        r"""Gets the alias of this CreateBussinessSceneSpec.
 
         特征名称
 
@@ -61,7 +61,7 @@ class CreateBussinessSceneSpec:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CreateBussinessSceneSpec.
+        r"""Sets the alias of this CreateBussinessSceneSpec.
 
         特征名称
 
@@ -72,7 +72,7 @@ class CreateBussinessSceneSpec:
 
     @property
     def matches(self):
-        """Gets the matches of this CreateBussinessSceneSpec.
+        r"""Gets the matches of this CreateBussinessSceneSpec.
 
         匹配条件定义
 
@@ -83,7 +83,7 @@ class CreateBussinessSceneSpec:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this CreateBussinessSceneSpec.
+        r"""Sets the matches of this CreateBussinessSceneSpec.
 
         匹配条件定义
 

@@ -27,7 +27,7 @@ class DatabaseUser:
     }
 
     def __init__(self, name=None, login=None):
-        """DatabaseUser
+        r"""DatabaseUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DatabaseUser:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseUser.
+        r"""Gets the name of this DatabaseUser.
 
         用户名
 
@@ -61,7 +61,7 @@ class DatabaseUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseUser.
+        r"""Sets the name of this DatabaseUser.
 
         用户名
 
@@ -72,7 +72,7 @@ class DatabaseUser:
 
     @property
     def login(self):
-        """Gets the login of this DatabaseUser.
+        r"""Gets the login of this DatabaseUser.
 
         是否可以登陆
 
@@ -83,7 +83,7 @@ class DatabaseUser:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this DatabaseUser.
+        r"""Sets the login of this DatabaseUser.
 
         是否可以登陆
 

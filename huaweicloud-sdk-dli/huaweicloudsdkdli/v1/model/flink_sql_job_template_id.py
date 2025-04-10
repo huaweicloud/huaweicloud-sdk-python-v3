@@ -25,7 +25,7 @@ class FlinkSqlJobTemplateId:
     }
 
     def __init__(self, template_id=None):
-        """FlinkSqlJobTemplateId
+        r"""FlinkSqlJobTemplateId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FlinkSqlJobTemplateId:
 
     @property
     def template_id(self):
-        """Gets the template_id of this FlinkSqlJobTemplateId.
+        r"""Gets the template_id of this FlinkSqlJobTemplateId.
 
         模板ID。
 
@@ -54,7 +54,7 @@ class FlinkSqlJobTemplateId:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this FlinkSqlJobTemplateId.
+        r"""Sets the template_id of this FlinkSqlJobTemplateId.
 
         模板ID。
 

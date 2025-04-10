@@ -37,7 +37,7 @@ class CentralNetworkConnectionInfo:
     }
 
     def __init__(self, id=None, plane_id=None, global_connection_bandwidth_id=None, bandwidth_size=None, connection_type=None, connection_point_pair=None, state=None):
-        """CentralNetworkConnectionInfo
+        r"""CentralNetworkConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkConnectionInfo.
+        r"""Gets the id of this CentralNetworkConnectionInfo.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class CentralNetworkConnectionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkConnectionInfo.
+        r"""Sets the id of this CentralNetworkConnectionInfo.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def plane_id(self):
-        """Gets the plane_id of this CentralNetworkConnectionInfo.
+        r"""Gets the plane_id of this CentralNetworkConnectionInfo.
 
         中心网络平面ID。
 
@@ -113,7 +113,7 @@ class CentralNetworkConnectionInfo:
 
     @plane_id.setter
     def plane_id(self, plane_id):
-        """Sets the plane_id of this CentralNetworkConnectionInfo.
+        r"""Sets the plane_id of this CentralNetworkConnectionInfo.
 
         中心网络平面ID。
 
@@ -124,7 +124,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
+        r"""Gets the global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
 
         全域互联带宽ID。
 
@@ -135,7 +135,7 @@ class CentralNetworkConnectionInfo:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
+        r"""Sets the global_connection_bandwidth_id of this CentralNetworkConnectionInfo.
 
         全域互联带宽ID。
 
@@ -146,7 +146,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CentralNetworkConnectionInfo.
+        r"""Gets the bandwidth_size of this CentralNetworkConnectionInfo.
 
         带宽值，单位Mbps。
 
@@ -157,7 +157,7 @@ class CentralNetworkConnectionInfo:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CentralNetworkConnectionInfo.
+        r"""Sets the bandwidth_size of this CentralNetworkConnectionInfo.
 
         带宽值，单位Mbps。
 
@@ -168,7 +168,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this CentralNetworkConnectionInfo.
+        r"""Gets the connection_type of this CentralNetworkConnectionInfo.
 
         :return: The connection_type of this CentralNetworkConnectionInfo.
         :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
@@ -177,7 +177,7 @@ class CentralNetworkConnectionInfo:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this CentralNetworkConnectionInfo.
+        r"""Sets the connection_type of this CentralNetworkConnectionInfo.
 
         :param connection_type: The connection_type of this CentralNetworkConnectionInfo.
         :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
@@ -186,7 +186,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def connection_point_pair(self):
-        """Gets the connection_point_pair of this CentralNetworkConnectionInfo.
+        r"""Gets the connection_point_pair of this CentralNetworkConnectionInfo.
 
         中心网络连接的两个端点定义，长度固定为2的数组。
 
@@ -197,7 +197,7 @@ class CentralNetworkConnectionInfo:
 
     @connection_point_pair.setter
     def connection_point_pair(self, connection_point_pair):
-        """Sets the connection_point_pair of this CentralNetworkConnectionInfo.
+        r"""Sets the connection_point_pair of this CentralNetworkConnectionInfo.
 
         中心网络连接的两个端点定义，长度固定为2的数组。
 
@@ -208,7 +208,7 @@ class CentralNetworkConnectionInfo:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetworkConnectionInfo.
+        r"""Gets the state of this CentralNetworkConnectionInfo.
 
         :return: The state of this CentralNetworkConnectionInfo.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -217,7 +217,7 @@ class CentralNetworkConnectionInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetworkConnectionInfo.
+        r"""Sets the state of this CentralNetworkConnectionInfo.
 
         :param state: The state of this CentralNetworkConnectionInfo.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`

@@ -31,7 +31,7 @@ class OprecordCluster:
     }
 
     def __init__(self, cluster_type=None, name=None, cluster_id=None, node_infos=None):
-        """OprecordCluster
+        r"""OprecordCluster
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OprecordCluster:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this OprecordCluster.
+        r"""Gets the cluster_type of this OprecordCluster.
 
         集群类型
 
@@ -75,7 +75,7 @@ class OprecordCluster:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this OprecordCluster.
+        r"""Sets the cluster_type of this OprecordCluster.
 
         集群类型
 
@@ -86,7 +86,7 @@ class OprecordCluster:
 
     @property
     def name(self):
-        """Gets the name of this OprecordCluster.
+        r"""Gets the name of this OprecordCluster.
 
         集群名称
 
@@ -97,7 +97,7 @@ class OprecordCluster:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OprecordCluster.
+        r"""Sets the name of this OprecordCluster.
 
         集群名称
 
@@ -108,7 +108,7 @@ class OprecordCluster:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this OprecordCluster.
+        r"""Gets the cluster_id of this OprecordCluster.
 
         集群ID
 
@@ -119,7 +119,7 @@ class OprecordCluster:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this OprecordCluster.
+        r"""Sets the cluster_id of this OprecordCluster.
 
         集群ID
 
@@ -130,7 +130,7 @@ class OprecordCluster:
 
     @property
     def node_infos(self):
-        """Gets the node_infos of this OprecordCluster.
+        r"""Gets the node_infos of this OprecordCluster.
 
         节点信息
 
@@ -141,7 +141,7 @@ class OprecordCluster:
 
     @node_infos.setter
     def node_infos(self, node_infos):
-        """Sets the node_infos of this OprecordCluster.
+        r"""Sets the node_infos of this OprecordCluster.
 
         节点信息
 

@@ -27,7 +27,7 @@ class ShowDetailsOfAclPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, acl_id=None):
-        """ShowDetailsOfAclPolicyV2Request
+        r"""ShowDetailsOfAclPolicyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfAclPolicyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfAclPolicyV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfAclPolicyV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDetailsOfAclPolicyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfAclPolicyV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfAclPolicyV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDetailsOfAclPolicyV2Request:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this ShowDetailsOfAclPolicyV2Request.
+        r"""Gets the acl_id of this ShowDetailsOfAclPolicyV2Request.
 
         ACL策略的编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfAclPolicyV2Request:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this ShowDetailsOfAclPolicyV2Request.
+        r"""Sets the acl_id of this ShowDetailsOfAclPolicyV2Request.
 
         ACL策略的编号
 

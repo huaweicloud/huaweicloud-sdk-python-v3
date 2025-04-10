@@ -31,7 +31,7 @@ class Resources:
     }
 
     def __init__(self, quota=None, used=None, type=None, unit=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Resources:
 
     @property
     def quota(self):
-        """Gets the quota of this Resources.
+        r"""Gets the quota of this Resources.
 
         函数配额限制。
 
@@ -75,7 +75,7 @@ class Resources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Resources.
+        r"""Sets the quota of this Resources.
 
         函数配额限制。
 
@@ -86,7 +86,7 @@ class Resources:
 
     @property
     def used(self):
-        """Gets the used of this Resources.
+        r"""Gets the used of this Resources.
 
         已使用的配额。
 
@@ -97,7 +97,7 @@ class Resources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Resources.
+        r"""Sets the used of this Resources.
 
         已使用的配额。
 
@@ -108,7 +108,7 @@ class Resources:
 
     @property
     def type(self):
-        """Gets the type of this Resources.
+        r"""Gets the type of this Resources.
 
         资源类型。 fgs_func_scale_down_timeout：v1版本函数的实例闲置释放时间 fgs_func_occurs：v1版本函数为实例数配额, v2版本函数为预留实例配额 fgs_func_pat_idle_time：vpc函数的pat闲置释放时间 fgs_func_num：用户函数数量配额 fgs_func_code_size：用户函数总代码大小配额 fgs_workflow_num：用户函数流数量配额 fgs_on_demand_instance_limit：v2版本函数单函数最大实例数配额 fgs_func_qos_limit 用户函数实例数配额
 
@@ -119,7 +119,7 @@ class Resources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resources.
+        r"""Sets the type of this Resources.
 
         资源类型。 fgs_func_scale_down_timeout：v1版本函数的实例闲置释放时间 fgs_func_occurs：v1版本函数为实例数配额, v2版本函数为预留实例配额 fgs_func_pat_idle_time：vpc函数的pat闲置释放时间 fgs_func_num：用户函数数量配额 fgs_func_code_size：用户函数总代码大小配额 fgs_workflow_num：用户函数流数量配额 fgs_on_demand_instance_limit：v2版本函数单函数最大实例数配额 fgs_func_qos_limit 用户函数实例数配额
 
@@ -130,7 +130,7 @@ class Resources:
 
     @property
     def unit(self):
-        """Gets the unit of this Resources.
+        r"""Gets the unit of this Resources.
 
         资源的计数单位。fgs_func_code_size,单位为MB,其他场景无单位
 
@@ -141,7 +141,7 @@ class Resources:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Resources.
+        r"""Sets the unit of this Resources.
 
         资源的计数单位。fgs_func_code_size,单位为MB,其他场景无单位
 

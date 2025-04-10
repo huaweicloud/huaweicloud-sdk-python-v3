@@ -26,7 +26,7 @@ class StopInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StopInstanceResponse
+        r"""StopInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopInstanceResponse.
+        r"""Gets the job_id of this StopInstanceResponse.
 
         停止数据库的异步任务ID。
 
@@ -55,7 +55,7 @@ class StopInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopInstanceResponse.
+        r"""Sets the job_id of this StopInstanceResponse.
 
         停止数据库的异步任务ID。
 

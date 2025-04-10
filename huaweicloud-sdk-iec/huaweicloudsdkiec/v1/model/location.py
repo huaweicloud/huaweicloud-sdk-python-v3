@@ -45,7 +45,7 @@ class Location:
     }
 
     def __init__(self, site_id=None, area=None, province=None, city=None, operator=None, pool_id=None, stack_count=None, city_short_name=None, ipv6_enable=None, ipv6_bandwidth_enable=None, pool_id_v6=None):
-        """Location
+        r"""Location
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Location:
 
     @property
     def site_id(self):
-        """Gets the site_id of this Location.
+        r"""Gets the site_id of this Location.
 
         站点ID。
 
@@ -124,7 +124,7 @@ class Location:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this Location.
+        r"""Sets the site_id of this Location.
 
         站点ID。
 
@@ -135,7 +135,7 @@ class Location:
 
     @property
     def area(self):
-        """Gets the area of this Location.
+        r"""Gets the area of this Location.
 
         所在大区。
 
@@ -146,7 +146,7 @@ class Location:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this Location.
+        r"""Sets the area of this Location.
 
         所在大区。
 
@@ -157,7 +157,7 @@ class Location:
 
     @property
     def province(self):
-        """Gets the province of this Location.
+        r"""Gets the province of this Location.
 
         所属省份英文名称。 大小写通用，皆支持
 
@@ -168,7 +168,7 @@ class Location:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this Location.
+        r"""Sets the province of this Location.
 
         所属省份英文名称。 大小写通用，皆支持
 
@@ -179,7 +179,7 @@ class Location:
 
     @property
     def city(self):
-        """Gets the city of this Location.
+        r"""Gets the city of this Location.
 
         所在城市英文名称。
 
@@ -190,7 +190,7 @@ class Location:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this Location.
+        r"""Sets the city of this Location.
 
         所在城市英文名称。
 
@@ -201,7 +201,7 @@ class Location:
 
     @property
     def operator(self):
-        """Gets the operator of this Location.
+        r"""Gets the operator of this Location.
 
         所属运营商。
 
@@ -212,7 +212,7 @@ class Location:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this Location.
+        r"""Sets the operator of this Location.
 
         所属运营商。
 
@@ -223,7 +223,7 @@ class Location:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this Location.
+        r"""Gets the pool_id of this Location.
 
         线路ID。多线路场景下，创建的弹性公网IP在该线路下。
 
@@ -234,7 +234,7 @@ class Location:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this Location.
+        r"""Sets the pool_id of this Location.
 
         线路ID。多线路场景下，创建的弹性公网IP在该线路下。
 
@@ -245,7 +245,7 @@ class Location:
 
     @property
     def stack_count(self):
-        """Gets the stack_count of this Location.
+        r"""Gets the stack_count of this Location.
 
         站点需要发放的资源(组)总数。
 
@@ -256,7 +256,7 @@ class Location:
 
     @stack_count.setter
     def stack_count(self, stack_count):
-        """Sets the stack_count of this Location.
+        r"""Sets the stack_count of this Location.
 
         站点需要发放的资源(组)总数。
 
@@ -267,7 +267,7 @@ class Location:
 
     @property
     def city_short_name(self):
-        """Gets the city_short_name of this Location.
+        r"""Gets the city_short_name of this Location.
 
         城市简称。
 
@@ -278,7 +278,7 @@ class Location:
 
     @city_short_name.setter
     def city_short_name(self, city_short_name):
-        """Sets the city_short_name of this Location.
+        r"""Sets the city_short_name of this Location.
 
         城市简称。
 
@@ -289,7 +289,7 @@ class Location:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this Location.
+        r"""Gets the ipv6_enable of this Location.
 
         创建边缘实例是否开启IPv6。
 
@@ -300,7 +300,7 @@ class Location:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this Location.
+        r"""Sets the ipv6_enable of this Location.
 
         创建边缘实例是否开启IPv6。
 
@@ -311,7 +311,7 @@ class Location:
 
     @property
     def ipv6_bandwidth_enable(self):
-        """Gets the ipv6_bandwidth_enable of this Location.
+        r"""Gets the ipv6_bandwidth_enable of this Location.
 
         创建IPv6边缘实例是否支持公网访问。
 
@@ -322,7 +322,7 @@ class Location:
 
     @ipv6_bandwidth_enable.setter
     def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
-        """Sets the ipv6_bandwidth_enable of this Location.
+        r"""Sets the ipv6_bandwidth_enable of this Location.
 
         创建IPv6边缘实例是否支持公网访问。
 
@@ -333,7 +333,7 @@ class Location:
 
     @property
     def pool_id_v6(self):
-        """Gets the pool_id_v6 of this Location.
+        r"""Gets the pool_id_v6 of this Location.
 
         IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
 
@@ -344,7 +344,7 @@ class Location:
 
     @pool_id_v6.setter
     def pool_id_v6(self, pool_id_v6):
-        """Sets the pool_id_v6 of this Location.
+        r"""Sets the pool_id_v6 of this Location.
 
         IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
 

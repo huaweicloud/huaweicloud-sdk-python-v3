@@ -28,7 +28,7 @@ class ShowAllDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, count=None, datasources=None):
-        """ShowAllDataSourceResponse
+        r"""ShowAllDataSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAllDataSourceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowAllDataSourceResponse.
+        r"""Gets the count of this ShowAllDataSourceResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ShowAllDataSourceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowAllDataSourceResponse.
+        r"""Sets the count of this ShowAllDataSourceResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ShowAllDataSourceResponse(SdkResponse):
 
     @property
     def datasources(self):
-        """Gets the datasources of this ShowAllDataSourceResponse.
+        r"""Gets the datasources of this ShowAllDataSourceResponse.
 
         数据源列表
 
@@ -84,7 +84,7 @@ class ShowAllDataSourceResponse(SdkResponse):
 
     @datasources.setter
     def datasources(self, datasources):
-        """Sets the datasources of this ShowAllDataSourceResponse.
+        r"""Sets the datasources of this ShowAllDataSourceResponse.
 
         数据源列表
 

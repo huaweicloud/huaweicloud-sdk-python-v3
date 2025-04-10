@@ -25,7 +25,7 @@ class DetailInfo:
     }
 
     def __init__(self, response=None):
-        """DetailInfo
+        r"""DetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DetailInfo:
 
     @property
     def response(self):
-        """Gets the response of this DetailInfo.
+        r"""Gets the response of this DetailInfo.
 
         :return: The response of this DetailInfo.
         :rtype: :class:`huaweicloudsdkaad.v2.PageRespInfo`
@@ -52,7 +52,7 @@ class DetailInfo:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this DetailInfo.
+        r"""Sets the response of this DetailInfo.
 
         :param response: The response of this DetailInfo.
         :type response: :class:`huaweicloudsdkaad.v2.PageRespInfo`

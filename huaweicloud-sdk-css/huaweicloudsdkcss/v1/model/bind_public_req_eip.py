@@ -25,7 +25,7 @@ class BindPublicReqEip:
     }
 
     def __init__(self, band_width=None):
-        """BindPublicReqEip
+        r"""BindPublicReqEip
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BindPublicReqEip:
 
     @property
     def band_width(self):
-        """Gets the band_width of this BindPublicReqEip.
+        r"""Gets the band_width of this BindPublicReqEip.
 
         :return: The band_width of this BindPublicReqEip.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`
@@ -51,7 +51,7 @@ class BindPublicReqEip:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this BindPublicReqEip.
+        r"""Sets the band_width of this BindPublicReqEip.
 
         :param band_width: The band_width of this BindPublicReqEip.
         :type band_width: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`

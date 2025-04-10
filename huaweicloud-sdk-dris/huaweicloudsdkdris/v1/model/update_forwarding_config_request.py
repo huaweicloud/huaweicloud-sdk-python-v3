@@ -31,7 +31,7 @@ class UpdateForwardingConfigRequest:
     }
 
     def __init__(self, instance_id=None, forwarding_type=None, forwarding_config_id=None, body=None):
-        """UpdateForwardingConfigRequest
+        r"""UpdateForwardingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateForwardingConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateForwardingConfigRequest.
+        r"""Gets the instance_id of this UpdateForwardingConfigRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -73,7 +73,7 @@ class UpdateForwardingConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateForwardingConfigRequest.
+        r"""Sets the instance_id of this UpdateForwardingConfigRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -84,7 +84,7 @@ class UpdateForwardingConfigRequest:
 
     @property
     def forwarding_type(self):
-        """Gets the forwarding_type of this UpdateForwardingConfigRequest.
+        r"""Gets the forwarding_type of this UpdateForwardingConfigRequest.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka，mrskafka”。
 
@@ -95,7 +95,7 @@ class UpdateForwardingConfigRequest:
 
     @forwarding_type.setter
     def forwarding_type(self, forwarding_type):
-        """Sets the forwarding_type of this UpdateForwardingConfigRequest.
+        r"""Sets the forwarding_type of this UpdateForwardingConfigRequest.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka，mrskafka”。
 
@@ -106,7 +106,7 @@ class UpdateForwardingConfigRequest:
 
     @property
     def forwarding_config_id(self):
-        """Gets the forwarding_config_id of this UpdateForwardingConfigRequest.
+        r"""Gets the forwarding_config_id of this UpdateForwardingConfigRequest.
 
         **参数说明**：转发配置的唯一ID。
 
@@ -117,7 +117,7 @@ class UpdateForwardingConfigRequest:
 
     @forwarding_config_id.setter
     def forwarding_config_id(self, forwarding_config_id):
-        """Sets the forwarding_config_id of this UpdateForwardingConfigRequest.
+        r"""Sets the forwarding_config_id of this UpdateForwardingConfigRequest.
 
         **参数说明**：转发配置的唯一ID。
 
@@ -128,7 +128,7 @@ class UpdateForwardingConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateForwardingConfigRequest.
+        r"""Gets the body of this UpdateForwardingConfigRequest.
 
         :return: The body of this UpdateForwardingConfigRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateForwardingConfigRequestDTO`
@@ -137,7 +137,7 @@ class UpdateForwardingConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateForwardingConfigRequest.
+        r"""Sets the body of this UpdateForwardingConfigRequest.
 
         :param body: The body of this UpdateForwardingConfigRequest.
         :type body: :class:`huaweicloudsdkdris.v1.UpdateForwardingConfigRequestDTO`

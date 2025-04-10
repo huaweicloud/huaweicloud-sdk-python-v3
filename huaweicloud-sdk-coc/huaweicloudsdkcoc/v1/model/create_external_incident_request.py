@@ -49,7 +49,7 @@ class CreateExternalIncidentRequest:
     }
 
     def __init__(self, region=None, enterprise_project=None, current_cloud_service=None, incident_level=None, is_service_interrupt=None, incident_type=None, incident_title=None, incident_description=None, incident_source=None, incident_assignee=None, assignee_scene=None, assignee_role=None, creator=None):
-        """CreateExternalIncidentRequest
+        r"""CreateExternalIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def region(self):
-        """Gets the region of this CreateExternalIncidentRequest.
+        r"""Gets the region of this CreateExternalIncidentRequest.
 
         区域Code，如果自动拉起WarRoom则为必填，现在只支持1个
 
@@ -132,7 +132,7 @@ class CreateExternalIncidentRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateExternalIncidentRequest.
+        r"""Sets the region of this CreateExternalIncidentRequest.
 
         区域Code，如果自动拉起WarRoom则为必填，现在只支持1个
 
@@ -143,7 +143,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this CreateExternalIncidentRequest.
+        r"""Gets the enterprise_project of this CreateExternalIncidentRequest.
 
         企业项目ID，现在只支持1个
 
@@ -154,7 +154,7 @@ class CreateExternalIncidentRequest:
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this CreateExternalIncidentRequest.
+        r"""Sets the enterprise_project of this CreateExternalIncidentRequest.
 
         企业项目ID，现在只支持1个
 
@@ -165,7 +165,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def current_cloud_service(self):
-        """Gets the current_cloud_service of this CreateExternalIncidentRequest.
+        r"""Gets the current_cloud_service of this CreateExternalIncidentRequest.
 
         归属应用ID，现在只支持1个
 
@@ -176,7 +176,7 @@ class CreateExternalIncidentRequest:
 
     @current_cloud_service.setter
     def current_cloud_service(self, current_cloud_service):
-        """Sets the current_cloud_service of this CreateExternalIncidentRequest.
+        r"""Sets the current_cloud_service of this CreateExternalIncidentRequest.
 
         归属应用ID，现在只支持1个
 
@@ -187,7 +187,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def incident_level(self):
-        """Gets the incident_level of this CreateExternalIncidentRequest.
+        r"""Gets the incident_level of this CreateExternalIncidentRequest.
 
         事件级别 参考：枚举 事件级别incident_level
 
@@ -198,7 +198,7 @@ class CreateExternalIncidentRequest:
 
     @incident_level.setter
     def incident_level(self, incident_level):
-        """Sets the incident_level of this CreateExternalIncidentRequest.
+        r"""Sets the incident_level of this CreateExternalIncidentRequest.
 
         事件级别 参考：枚举 事件级别incident_level
 
@@ -209,7 +209,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def is_service_interrupt(self):
-        """Gets the is_service_interrupt of this CreateExternalIncidentRequest.
+        r"""Gets the is_service_interrupt of this CreateExternalIncidentRequest.
 
         业务是否中断，取值：true/false
 
@@ -220,7 +220,7 @@ class CreateExternalIncidentRequest:
 
     @is_service_interrupt.setter
     def is_service_interrupt(self, is_service_interrupt):
-        """Sets the is_service_interrupt of this CreateExternalIncidentRequest.
+        r"""Sets the is_service_interrupt of this CreateExternalIncidentRequest.
 
         业务是否中断，取值：true/false
 
@@ -231,7 +231,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this CreateExternalIncidentRequest.
+        r"""Gets the incident_type of this CreateExternalIncidentRequest.
 
         事件类别 参考：枚举 事件类别incident_type
 
@@ -242,7 +242,7 @@ class CreateExternalIncidentRequest:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this CreateExternalIncidentRequest.
+        r"""Sets the incident_type of this CreateExternalIncidentRequest.
 
         事件类别 参考：枚举 事件类别incident_type
 
@@ -253,7 +253,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def incident_title(self):
-        """Gets the incident_title of this CreateExternalIncidentRequest.
+        r"""Gets the incident_title of this CreateExternalIncidentRequest.
 
         事件标题，最大长度：200
 
@@ -264,7 +264,7 @@ class CreateExternalIncidentRequest:
 
     @incident_title.setter
     def incident_title(self, incident_title):
-        """Sets the incident_title of this CreateExternalIncidentRequest.
+        r"""Sets the incident_title of this CreateExternalIncidentRequest.
 
         事件标题，最大长度：200
 
@@ -275,7 +275,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def incident_description(self):
-        """Gets the incident_description of this CreateExternalIncidentRequest.
+        r"""Gets the incident_description of this CreateExternalIncidentRequest.
 
         事件描述，最大长度：600
 
@@ -286,7 +286,7 @@ class CreateExternalIncidentRequest:
 
     @incident_description.setter
     def incident_description(self, incident_description):
-        """Sets the incident_description of this CreateExternalIncidentRequest.
+        r"""Sets the incident_description of this CreateExternalIncidentRequest.
 
         事件描述，最大长度：600
 
@@ -297,7 +297,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def incident_source(self):
-        """Gets the incident_source of this CreateExternalIncidentRequest.
+        r"""Gets the incident_source of this CreateExternalIncidentRequest.
 
         单据来源 参考：枚举 事件来源incident_source
 
@@ -308,7 +308,7 @@ class CreateExternalIncidentRequest:
 
     @incident_source.setter
     def incident_source(self, incident_source):
-        """Sets the incident_source of this CreateExternalIncidentRequest.
+        r"""Sets the incident_source of this CreateExternalIncidentRequest.
 
         单据来源 参考：枚举 事件来源incident_source
 
@@ -319,7 +319,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def incident_assignee(self):
-        """Gets the incident_assignee of this CreateExternalIncidentRequest.
+        r"""Gets the incident_assignee of this CreateExternalIncidentRequest.
 
         责任人，排班场景和排班角色不能同时为空，现在只支持1个
 
@@ -330,7 +330,7 @@ class CreateExternalIncidentRequest:
 
     @incident_assignee.setter
     def incident_assignee(self, incident_assignee):
-        """Sets the incident_assignee of this CreateExternalIncidentRequest.
+        r"""Sets the incident_assignee of this CreateExternalIncidentRequest.
 
         责任人，排班场景和排班角色不能同时为空，现在只支持1个
 
@@ -341,7 +341,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def assignee_scene(self):
-        """Gets the assignee_scene of this CreateExternalIncidentRequest.
+        r"""Gets the assignee_scene of this CreateExternalIncidentRequest.
 
         排班场景，责任人和排班角色不能同时为空
 
@@ -352,7 +352,7 @@ class CreateExternalIncidentRequest:
 
     @assignee_scene.setter
     def assignee_scene(self, assignee_scene):
-        """Sets the assignee_scene of this CreateExternalIncidentRequest.
+        r"""Sets the assignee_scene of this CreateExternalIncidentRequest.
 
         排班场景，责任人和排班角色不能同时为空
 
@@ -363,7 +363,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def assignee_role(self):
-        """Gets the assignee_role of this CreateExternalIncidentRequest.
+        r"""Gets the assignee_role of this CreateExternalIncidentRequest.
 
         排班角色，排班场景和责任人不能同时为空
 
@@ -374,7 +374,7 @@ class CreateExternalIncidentRequest:
 
     @assignee_role.setter
     def assignee_role(self, assignee_role):
-        """Sets the assignee_role of this CreateExternalIncidentRequest.
+        r"""Sets the assignee_role of this CreateExternalIncidentRequest.
 
         排班角色，排班场景和责任人不能同时为空
 
@@ -385,7 +385,7 @@ class CreateExternalIncidentRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this CreateExternalIncidentRequest.
+        r"""Gets the creator of this CreateExternalIncidentRequest.
 
         创单人
 
@@ -396,7 +396,7 @@ class CreateExternalIncidentRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateExternalIncidentRequest.
+        r"""Sets the creator of this CreateExternalIncidentRequest.
 
         创单人
 

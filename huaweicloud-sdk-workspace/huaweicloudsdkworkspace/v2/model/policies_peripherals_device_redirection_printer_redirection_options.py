@@ -31,7 +31,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
     }
 
     def __init__(self, mobile_printer_enable=None, print_data_compression_mode=None, sync_client_default_printer_enable=None, universal_printer_driver=None):
-        """PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions
+        r"""PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @property
     def mobile_printer_enable(self):
-        """Gets the mobile_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Gets the mobile_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         移动客户端打印机重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -75,7 +75,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @mobile_printer_enable.setter
     def mobile_printer_enable(self, mobile_printer_enable):
-        """Sets the mobile_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Sets the mobile_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         移动客户端打印机重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -86,7 +86,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @property
     def print_data_compression_mode(self):
-        """Gets the print_data_compression_mode of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Gets the print_data_compression_mode of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         是否开启打印数据压缩模式。取值为： false：表示关闭。 true：表示开启。
 
@@ -97,7 +97,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @print_data_compression_mode.setter
     def print_data_compression_mode(self, print_data_compression_mode):
-        """Sets the print_data_compression_mode of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Sets the print_data_compression_mode of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         是否开启打印数据压缩模式。取值为： false：表示关闭。 true：表示开启。
 
@@ -108,7 +108,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @property
     def sync_client_default_printer_enable(self):
-        """Gets the sync_client_default_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Gets the sync_client_default_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         是否开启同步客户端默认打印机。取值为： false：表示关闭。 true：表示开启。
 
@@ -119,7 +119,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @sync_client_default_printer_enable.setter
     def sync_client_default_printer_enable(self, sync_client_default_printer_enable):
-        """Sets the sync_client_default_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Sets the sync_client_default_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         是否开启同步客户端默认打印机。取值为： false：表示关闭。 true：表示开启。
 
@@ -130,7 +130,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @property
     def universal_printer_driver(self):
-        """Gets the universal_printer_driver of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Gets the universal_printer_driver of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         通用打印机驱动。取值为：Default：linux客户端选择Universal Printing PS，windows客户端选择HDP XPSDrv Driver。HDP XPSDrv Driver。Universal Printing PCL 5。Universal Printing PCL 6。Universal Printing PS。
 
@@ -141,7 +141,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
 
     @universal_printer_driver.setter
     def universal_printer_driver(self, universal_printer_driver):
-        """Sets the universal_printer_driver of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        r"""Sets the universal_printer_driver of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
 
         通用打印机驱动。取值为：Default：linux客户端选择Universal Printing PS，windows客户端选择HDP XPSDrv Driver。HDP XPSDrv Driver。Universal Printing PCL 5。Universal Printing PCL 6。Universal Printing PS。
 

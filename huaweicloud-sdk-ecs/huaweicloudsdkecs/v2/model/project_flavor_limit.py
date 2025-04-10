@@ -23,7 +23,7 @@ class ProjectFlavorLimit:
     }
 
     def __init__(self):
-        """ProjectFlavorLimit
+        r"""ProjectFlavorLimit
 
         The model defined in huaweicloud sdk
 

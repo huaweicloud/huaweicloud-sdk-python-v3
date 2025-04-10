@@ -25,7 +25,7 @@ class RunCloseAudioStreamModerationJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """RunCloseAudioStreamModerationJobRequest
+        r"""RunCloseAudioStreamModerationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RunCloseAudioStreamModerationJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunCloseAudioStreamModerationJobRequest.
+        r"""Gets the job_id of this RunCloseAudioStreamModerationJobRequest.
 
         创建作业成功时，接口返回的job_id。
 
@@ -53,7 +53,7 @@ class RunCloseAudioStreamModerationJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunCloseAudioStreamModerationJobRequest.
+        r"""Sets the job_id of this RunCloseAudioStreamModerationJobRequest.
 
         创建作业成功时，接口返回的job_id。
 

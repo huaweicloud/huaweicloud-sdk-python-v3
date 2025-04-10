@@ -29,7 +29,7 @@ class ObsProperties:
     }
 
     def __init__(self, endpoint=None, bucket=None, key=None):
-        """ObsProperties
+        r"""ObsProperties
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObsProperties:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ObsProperties.
+        r"""Gets the endpoint of this ObsProperties.
 
         obs的终端地址，比如：https://obs.region_name.external_domain_name.com。
 
@@ -68,7 +68,7 @@ class ObsProperties:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ObsProperties.
+        r"""Sets the endpoint of this ObsProperties.
 
         obs的终端地址，比如：https://obs.region_name.external_domain_name.com。
 
@@ -79,7 +79,7 @@ class ObsProperties:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsProperties.
+        r"""Gets the bucket of this ObsProperties.
 
         软件包在obs的桶名。
 
@@ -90,7 +90,7 @@ class ObsProperties:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsProperties.
+        r"""Sets the bucket of this ObsProperties.
 
         软件包在obs的桶名。
 
@@ -101,7 +101,7 @@ class ObsProperties:
 
     @property
     def key(self):
-        """Gets the key of this ObsProperties.
+        r"""Gets the key of this ObsProperties.
 
         obs桶中的对象，一般是软件包名，有文件夹的话要加上文件夹的路径。比如test.jar或者demo/test.jar。
 
@@ -112,7 +112,7 @@ class ObsProperties:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ObsProperties.
+        r"""Sets the key of this ObsProperties.
 
         obs桶中的对象，一般是软件包名，有文件夹的话要加上文件夹的路径。比如test.jar或者demo/test.jar。
 

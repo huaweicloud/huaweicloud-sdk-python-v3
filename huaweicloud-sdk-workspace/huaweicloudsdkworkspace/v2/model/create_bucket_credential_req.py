@@ -25,7 +25,7 @@ class CreateBucketCredentialReq:
     }
 
     def __init__(self, file_name=None):
-        """CreateBucketCredentialReq
+        r"""CreateBucketCredentialReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateBucketCredentialReq:
 
     @property
     def file_name(self):
-        """Gets the file_name of this CreateBucketCredentialReq.
+        r"""Gets the file_name of this CreateBucketCredentialReq.
 
         文件完整名称,不允许包含如下字符:^;|~`{}[]<>。
 
@@ -53,7 +53,7 @@ class CreateBucketCredentialReq:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CreateBucketCredentialReq.
+        r"""Sets the file_name of this CreateBucketCredentialReq.
 
         文件完整名称,不允许包含如下字符:^;|~`{}[]<>。
 

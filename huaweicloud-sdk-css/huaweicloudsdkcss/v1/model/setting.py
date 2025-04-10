@@ -35,7 +35,7 @@ class Setting:
     }
 
     def __init__(self, workers=None, batch_size=None, batch_delay_ms=None, queue_type=None, queue_check_point_writes=None, queue_max_bytes_mb=None):
-        """Setting
+        r"""Setting
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class Setting:
 
     @property
     def workers(self):
-        """Gets the workers of this Setting.
+        r"""Gets the workers of this Setting.
 
         并行执行管道的Filters+Outputs阶段的工作线程数，默认值为CPU核数。
 
@@ -88,7 +88,7 @@ class Setting:
 
     @workers.setter
     def workers(self, workers):
-        """Sets the workers of this Setting.
+        r"""Sets the workers of this Setting.
 
         并行执行管道的Filters+Outputs阶段的工作线程数，默认值为CPU核数。
 
@@ -99,7 +99,7 @@ class Setting:
 
     @property
     def batch_size(self):
-        """Gets the batch_size of this Setting.
+        r"""Gets the batch_size of this Setting.
 
         单个工作线程在尝试执行其Filters和Outputs之前将从inputs收集的最大事件数，该值较大通常更有效，但会增加内存开销，默认为125。
 
@@ -110,7 +110,7 @@ class Setting:
 
     @batch_size.setter
     def batch_size(self, batch_size):
-        """Sets the batch_size of this Setting.
+        r"""Sets the batch_size of this Setting.
 
         单个工作线程在尝试执行其Filters和Outputs之前将从inputs收集的最大事件数，该值较大通常更有效，但会增加内存开销，默认为125。
 
@@ -121,7 +121,7 @@ class Setting:
 
     @property
     def batch_delay_ms(self):
-        """Gets the batch_delay_ms of this Setting.
+        r"""Gets the batch_delay_ms of this Setting.
 
         每个event被pipeline调度等待的最小时间。 单位毫秒。
 
@@ -132,7 +132,7 @@ class Setting:
 
     @batch_delay_ms.setter
     def batch_delay_ms(self, batch_delay_ms):
-        """Sets the batch_delay_ms of this Setting.
+        r"""Sets the batch_delay_ms of this Setting.
 
         每个event被pipeline调度等待的最小时间。 单位毫秒。
 
@@ -143,7 +143,7 @@ class Setting:
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this Setting.
+        r"""Gets the queue_type of this Setting.
 
         用于事件缓冲的内部队列模型。memory 为基于内存的传统队列，persisted为基于磁盘的ACKed持久化队列，默认值为memory。
 
@@ -154,7 +154,7 @@ class Setting:
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this Setting.
+        r"""Sets the queue_type of this Setting.
 
         用于事件缓冲的内部队列模型。memory 为基于内存的传统队列，persisted为基于磁盘的ACKed持久化队列，默认值为memory。
 
@@ -165,7 +165,7 @@ class Setting:
 
     @property
     def queue_check_point_writes(self):
-        """Gets the queue_check_point_writes of this Setting.
+        r"""Gets the queue_check_point_writes of this Setting.
 
         如果使用持久化队列，则表示强制执行检查点之前写入的最大事件数，默认值为1024。
 
@@ -176,7 +176,7 @@ class Setting:
 
     @queue_check_point_writes.setter
     def queue_check_point_writes(self, queue_check_point_writes):
-        """Sets the queue_check_point_writes of this Setting.
+        r"""Sets the queue_check_point_writes of this Setting.
 
         如果使用持久化队列，则表示强制执行检查点之前写入的最大事件数，默认值为1024。
 
@@ -187,7 +187,7 @@ class Setting:
 
     @property
     def queue_max_bytes_mb(self):
-        """Gets the queue_max_bytes_mb of this Setting.
+        r"""Gets the queue_max_bytes_mb of this Setting.
 
         如果使用持久化队列，则表示持久化队列的总容量（以兆字节MB为单位），确保磁盘的容量大于该值，默认值为1024。
 
@@ -198,7 +198,7 @@ class Setting:
 
     @queue_max_bytes_mb.setter
     def queue_max_bytes_mb(self, queue_max_bytes_mb):
-        """Sets the queue_max_bytes_mb of this Setting.
+        r"""Sets the queue_max_bytes_mb of this Setting.
 
         如果使用持久化队列，则表示持久化队列的总容量（以兆字节MB为单位），确保磁盘的容量大于该值，默认值为1024。
 

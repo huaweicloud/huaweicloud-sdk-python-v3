@@ -27,7 +27,7 @@ class DeleteGrantRequest:
     }
 
     def __init__(self, grantee_user=None, resource_id=None):
-        """DeleteGrantRequest
+        r"""DeleteGrantRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteGrantRequest:
 
     @property
     def grantee_user(self):
-        """Gets the grantee_user of this DeleteGrantRequest.
+        r"""Gets the grantee_user of this DeleteGrantRequest.
 
         被授权用户ID
 
@@ -60,7 +60,7 @@ class DeleteGrantRequest:
 
     @grantee_user.setter
     def grantee_user(self, grantee_user):
-        """Sets the grantee_user of this DeleteGrantRequest.
+        r"""Sets the grantee_user of this DeleteGrantRequest.
 
         被授权用户ID
 
@@ -71,7 +71,7 @@ class DeleteGrantRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteGrantRequest.
+        r"""Gets the resource_id of this DeleteGrantRequest.
 
         被授权资源ID
 
@@ -82,7 +82,7 @@ class DeleteGrantRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteGrantRequest.
+        r"""Sets the resource_id of this DeleteGrantRequest.
 
         被授权资源ID
 

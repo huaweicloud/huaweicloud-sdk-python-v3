@@ -31,7 +31,7 @@ class CreateInstanceFlavorResult:
     }
 
     def __init__(self, num=None, storage=None, size=None, spec_code=None):
-        """CreateInstanceFlavorResult
+        r"""CreateInstanceFlavorResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateInstanceFlavorResult:
 
     @property
     def num(self):
-        """Gets the num of this CreateInstanceFlavorResult.
+        r"""Gets the num of this CreateInstanceFlavorResult.
 
         节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
 
@@ -75,7 +75,7 @@ class CreateInstanceFlavorResult:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this CreateInstanceFlavorResult.
+        r"""Sets the num of this CreateInstanceFlavorResult.
 
         节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
 
@@ -86,7 +86,7 @@ class CreateInstanceFlavorResult:
 
     @property
     def storage(self):
-        """Gets the storage of this CreateInstanceFlavorResult.
+        r"""Gets the storage of this CreateInstanceFlavorResult.
 
         磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
 
@@ -97,7 +97,7 @@ class CreateInstanceFlavorResult:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this CreateInstanceFlavorResult.
+        r"""Sets the storage of this CreateInstanceFlavorResult.
 
         磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
 
@@ -108,7 +108,7 @@ class CreateInstanceFlavorResult:
 
     @property
     def size(self):
-        """Gets the size of this CreateInstanceFlavorResult.
+        r"""Gets the size of this CreateInstanceFlavorResult.
 
         磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
 
@@ -119,7 +119,7 @@ class CreateInstanceFlavorResult:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateInstanceFlavorResult.
+        r"""Sets the size of this CreateInstanceFlavorResult.
 
         磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
 
@@ -130,7 +130,7 @@ class CreateInstanceFlavorResult:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateInstanceFlavorResult.
+        r"""Gets the spec_code of this CreateInstanceFlavorResult.
 
         资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
 
@@ -141,7 +141,7 @@ class CreateInstanceFlavorResult:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateInstanceFlavorResult.
+        r"""Sets the spec_code of this CreateInstanceFlavorResult.
 
         资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
 

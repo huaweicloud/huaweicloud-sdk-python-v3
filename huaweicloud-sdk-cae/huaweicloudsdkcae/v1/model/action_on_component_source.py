@@ -31,7 +31,7 @@ class ActionOnComponentSource:
     }
 
     def __init__(self, code=None, type=None, sub_type=None, url=None):
-        """ActionOnComponentSource
+        r"""ActionOnComponentSource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ActionOnComponentSource:
 
     @property
     def code(self):
-        """Gets the code of this ActionOnComponentSource.
+        r"""Gets the code of this ActionOnComponentSource.
 
         :return: The code of this ActionOnComponentSource.
         :rtype: :class:`huaweicloudsdkcae.v1.Repo`
@@ -73,7 +73,7 @@ class ActionOnComponentSource:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ActionOnComponentSource.
+        r"""Sets the code of this ActionOnComponentSource.
 
         :param code: The code of this ActionOnComponentSource.
         :type code: :class:`huaweicloudsdkcae.v1.Repo`
@@ -82,7 +82,7 @@ class ActionOnComponentSource:
 
     @property
     def type(self):
-        """Gets the type of this ActionOnComponentSource.
+        r"""Gets the type of this ActionOnComponentSource.
 
         源类型。
 
@@ -93,7 +93,7 @@ class ActionOnComponentSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ActionOnComponentSource.
+        r"""Sets the type of this ActionOnComponentSource.
 
         源类型。
 
@@ -104,7 +104,7 @@ class ActionOnComponentSource:
 
     @property
     def sub_type(self):
-        """Gets the sub_type of this ActionOnComponentSource.
+        r"""Gets the sub_type of this ActionOnComponentSource.
 
         源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
 
@@ -115,7 +115,7 @@ class ActionOnComponentSource:
 
     @sub_type.setter
     def sub_type(self, sub_type):
-        """Sets the sub_type of this ActionOnComponentSource.
+        r"""Sets the sub_type of this ActionOnComponentSource.
 
         源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
 
@@ -126,7 +126,7 @@ class ActionOnComponentSource:
 
     @property
     def url(self):
-        """Gets the url of this ActionOnComponentSource.
+        r"""Gets the url of this ActionOnComponentSource.
 
         url地址。 - 源类型为image时，url地址为镜像地址。 - 源类型为code时，url地址为git地址。 - 源类型为softwarePackage时，url地址为软件包地址。
 
@@ -137,7 +137,7 @@ class ActionOnComponentSource:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ActionOnComponentSource.
+        r"""Sets the url of this ActionOnComponentSource.
 
         url地址。 - 源类型为image时，url地址为镜像地址。 - 源类型为code时，url地址为git地址。 - 源类型为softwarePackage时，url地址为软件包地址。
 

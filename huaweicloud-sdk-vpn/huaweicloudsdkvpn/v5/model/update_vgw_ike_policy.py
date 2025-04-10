@@ -31,7 +31,7 @@ class UpdateVgwIkePolicy:
     }
 
     def __init__(self, authentication_algorithm=None, encryption_algorithm=None, dh_group=None, lifetime_seconds=None):
-        """UpdateVgwIkePolicy
+        r"""UpdateVgwIkePolicy
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateVgwIkePolicy:
 
     @property
     def authentication_algorithm(self):
-        """Gets the authentication_algorithm of this UpdateVgwIkePolicy.
+        r"""Gets the authentication_algorithm of this UpdateVgwIkePolicy.
 
         加密算法
 
@@ -75,7 +75,7 @@ class UpdateVgwIkePolicy:
 
     @authentication_algorithm.setter
     def authentication_algorithm(self, authentication_algorithm):
-        """Sets the authentication_algorithm of this UpdateVgwIkePolicy.
+        r"""Sets the authentication_algorithm of this UpdateVgwIkePolicy.
 
         加密算法
 
@@ -86,7 +86,7 @@ class UpdateVgwIkePolicy:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this UpdateVgwIkePolicy.
+        r"""Gets the encryption_algorithm of this UpdateVgwIkePolicy.
 
         加密算法
 
@@ -97,7 +97,7 @@ class UpdateVgwIkePolicy:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this UpdateVgwIkePolicy.
+        r"""Sets the encryption_algorithm of this UpdateVgwIkePolicy.
 
         加密算法
 
@@ -108,7 +108,7 @@ class UpdateVgwIkePolicy:
 
     @property
     def dh_group(self):
-        """Gets the dh_group of this UpdateVgwIkePolicy.
+        r"""Gets the dh_group of this UpdateVgwIkePolicy.
 
         DH密钥组
 
@@ -119,7 +119,7 @@ class UpdateVgwIkePolicy:
 
     @dh_group.setter
     def dh_group(self, dh_group):
-        """Sets the dh_group of this UpdateVgwIkePolicy.
+        r"""Sets the dh_group of this UpdateVgwIkePolicy.
 
         DH密钥组
 
@@ -130,7 +130,7 @@ class UpdateVgwIkePolicy:
 
     @property
     def lifetime_seconds(self):
-        """Gets the lifetime_seconds of this UpdateVgwIkePolicy.
+        r"""Gets the lifetime_seconds of this UpdateVgwIkePolicy.
 
         表示SA的生存周期，当该生存周期超时后IKE SA将自动更新
 
@@ -141,7 +141,7 @@ class UpdateVgwIkePolicy:
 
     @lifetime_seconds.setter
     def lifetime_seconds(self, lifetime_seconds):
-        """Sets the lifetime_seconds of this UpdateVgwIkePolicy.
+        r"""Sets the lifetime_seconds of this UpdateVgwIkePolicy.
 
         表示SA的生存周期，当该生存周期超时后IKE SA将自动更新
 

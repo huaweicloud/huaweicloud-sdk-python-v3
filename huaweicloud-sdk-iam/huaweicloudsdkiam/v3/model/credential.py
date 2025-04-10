@@ -31,7 +31,7 @@ class Credential:
     }
 
     def __init__(self, expires_at=None, access=None, secret=None, securitytoken=None):
-        """Credential
+        r"""Credential
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Credential:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this Credential.
+        r"""Gets the expires_at of this Credential.
 
         AK/SK和securitytoken的过期时间。
 
@@ -71,7 +71,7 @@ class Credential:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this Credential.
+        r"""Sets the expires_at of this Credential.
 
         AK/SK和securitytoken的过期时间。
 
@@ -82,7 +82,7 @@ class Credential:
 
     @property
     def access(self):
-        """Gets the access of this Credential.
+        r"""Gets the access of this Credential.
 
         获取的AK。
 
@@ -93,7 +93,7 @@ class Credential:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this Credential.
+        r"""Sets the access of this Credential.
 
         获取的AK。
 
@@ -104,7 +104,7 @@ class Credential:
 
     @property
     def secret(self):
-        """Gets the secret of this Credential.
+        r"""Gets the secret of this Credential.
 
         获取的SK。
 
@@ -115,7 +115,7 @@ class Credential:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this Credential.
+        r"""Sets the secret of this Credential.
 
         获取的SK。
 
@@ -126,7 +126,7 @@ class Credential:
 
     @property
     def securitytoken(self):
-        """Gets the securitytoken of this Credential.
+        r"""Gets the securitytoken of this Credential.
 
         securitytoken是将所获的AK、SK等信息进行加密后的字符串。
 
@@ -137,7 +137,7 @@ class Credential:
 
     @securitytoken.setter
     def securitytoken(self, securitytoken):
-        """Sets the securitytoken of this Credential.
+        r"""Sets the securitytoken of this Credential.
 
         securitytoken是将所获的AK、SK等信息进行加密后的字符串。
 

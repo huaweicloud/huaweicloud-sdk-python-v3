@@ -45,7 +45,7 @@ class LiveSnapshotConfig:
     }
 
     def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, image_object_format=None, image_access_protocol=None, image_access_domain=None):
-        """LiveSnapshotConfig
+        r"""LiveSnapshotConfig
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class LiveSnapshotConfig:
 
     @property
     def domain(self):
-        """Gets the domain of this LiveSnapshotConfig.
+        r"""Gets the domain of this LiveSnapshotConfig.
 
         直播推流域名
 
@@ -119,7 +119,7 @@ class LiveSnapshotConfig:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this LiveSnapshotConfig.
+        r"""Sets the domain of this LiveSnapshotConfig.
 
         直播推流域名
 
@@ -130,7 +130,7 @@ class LiveSnapshotConfig:
 
     @property
     def app_name(self):
-        """Gets the app_name of this LiveSnapshotConfig.
+        r"""Gets the app_name of this LiveSnapshotConfig.
 
         应用名称
 
@@ -141,7 +141,7 @@ class LiveSnapshotConfig:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this LiveSnapshotConfig.
+        r"""Sets the app_name of this LiveSnapshotConfig.
 
         应用名称
 
@@ -152,7 +152,7 @@ class LiveSnapshotConfig:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this LiveSnapshotConfig.
+        r"""Gets the auth_key of this LiveSnapshotConfig.
 
         回调鉴权密钥值  长度范围：[32-128]  若需要使用回调鉴权功能，请配置鉴权密钥，否则，留空即可。
 
@@ -163,7 +163,7 @@ class LiveSnapshotConfig:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this LiveSnapshotConfig.
+        r"""Sets the auth_key of this LiveSnapshotConfig.
 
         回调鉴权密钥值  长度范围：[32-128]  若需要使用回调鉴权功能，请配置鉴权密钥，否则，留空即可。
 
@@ -174,7 +174,7 @@ class LiveSnapshotConfig:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this LiveSnapshotConfig.
+        r"""Gets the time_interval of this LiveSnapshotConfig.
 
         截图频率  取值范围：[5-3600]  单位：秒
 
@@ -185,7 +185,7 @@ class LiveSnapshotConfig:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this LiveSnapshotConfig.
+        r"""Sets the time_interval of this LiveSnapshotConfig.
 
         截图频率  取值范围：[5-3600]  单位：秒
 
@@ -196,7 +196,7 @@ class LiveSnapshotConfig:
 
     @property
     def object_write_mode(self):
-        """Gets the object_write_mode of this LiveSnapshotConfig.
+        r"""Gets the object_write_mode of this LiveSnapshotConfig.
 
         在OBS桶存储截图的方式：  - 0：实时截图，以时间戳命名截图文件，保存所有截图文件到OBS桶。例：snapshot/{domain}/{app_name}/{stream_name}/{UnixTimestamp}.jpg  - 1：覆盖截图，只保存最新的截图文件，新的截图会覆盖原来的截图文件。例：snapshot/{domain}/{app_name}/{stream_name}.jpg
 
@@ -207,7 +207,7 @@ class LiveSnapshotConfig:
 
     @object_write_mode.setter
     def object_write_mode(self, object_write_mode):
-        """Sets the object_write_mode of this LiveSnapshotConfig.
+        r"""Sets the object_write_mode of this LiveSnapshotConfig.
 
         在OBS桶存储截图的方式：  - 0：实时截图，以时间戳命名截图文件，保存所有截图文件到OBS桶。例：snapshot/{domain}/{app_name}/{stream_name}/{UnixTimestamp}.jpg  - 1：覆盖截图，只保存最新的截图文件，新的截图会覆盖原来的截图文件。例：snapshot/{domain}/{app_name}/{stream_name}.jpg
 
@@ -218,7 +218,7 @@ class LiveSnapshotConfig:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this LiveSnapshotConfig.
+        r"""Gets the obs_location of this LiveSnapshotConfig.
 
         :return: The obs_location of this LiveSnapshotConfig.
         :rtype: :class:`huaweicloudsdklive.v1.ObsFileAddr`
@@ -227,7 +227,7 @@ class LiveSnapshotConfig:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this LiveSnapshotConfig.
+        r"""Sets the obs_location of this LiveSnapshotConfig.
 
         :param obs_location: The obs_location of this LiveSnapshotConfig.
         :type obs_location: :class:`huaweicloudsdklive.v1.ObsFileAddr`
@@ -236,7 +236,7 @@ class LiveSnapshotConfig:
 
     @property
     def call_back_enable(self):
-        """Gets the call_back_enable of this LiveSnapshotConfig.
+        r"""Gets the call_back_enable of this LiveSnapshotConfig.
 
         是否启用回调通知 - on：启用。 - off：不启用。
 
@@ -247,7 +247,7 @@ class LiveSnapshotConfig:
 
     @call_back_enable.setter
     def call_back_enable(self, call_back_enable):
-        """Sets the call_back_enable of this LiveSnapshotConfig.
+        r"""Sets the call_back_enable of this LiveSnapshotConfig.
 
         是否启用回调通知 - on：启用。 - off：不启用。
 
@@ -258,7 +258,7 @@ class LiveSnapshotConfig:
 
     @property
     def call_back_url(self):
-        """Gets the call_back_url of this LiveSnapshotConfig.
+        r"""Gets the call_back_url of this LiveSnapshotConfig.
 
         通知服务器地址，必须是合法的URL且携带协议，协议支持http和https。截图完成后直播服务会向此地址推送截图状态信息。
 
@@ -269,7 +269,7 @@ class LiveSnapshotConfig:
 
     @call_back_url.setter
     def call_back_url(self, call_back_url):
-        """Sets the call_back_url of this LiveSnapshotConfig.
+        r"""Sets the call_back_url of this LiveSnapshotConfig.
 
         通知服务器地址，必须是合法的URL且携带协议，协议支持http和https。截图完成后直播服务会向此地址推送截图状态信息。
 
@@ -280,7 +280,7 @@ class LiveSnapshotConfig:
 
     @property
     def image_object_format(self):
-        """Gets the image_object_format of this LiveSnapshotConfig.
+        r"""Gets the image_object_format of this LiveSnapshotConfig.
 
         截图存储文件命名规则， 仅支持jpg格式 包含 - '{obs_object}' OBS存储路径，即obs_location.object的值  - '{domain}' 域名 - '{app}' 应用名 - '{stream}'  流名  其中实时截图模式下  - '{unix_time}'  时间戳，秒 - '{unix_time_milli}'  时间戳，毫秒 - '{fmt_time_utc}'   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - '{fmt_time_local}'  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
 
@@ -291,7 +291,7 @@ class LiveSnapshotConfig:
 
     @image_object_format.setter
     def image_object_format(self, image_object_format):
-        """Sets the image_object_format of this LiveSnapshotConfig.
+        r"""Sets the image_object_format of this LiveSnapshotConfig.
 
         截图存储文件命名规则， 仅支持jpg格式 包含 - '{obs_object}' OBS存储路径，即obs_location.object的值  - '{domain}' 域名 - '{app}' 应用名 - '{stream}'  流名  其中实时截图模式下  - '{unix_time}'  时间戳，秒 - '{unix_time_milli}'  时间戳，毫秒 - '{fmt_time_utc}'   格式化UTC时间, 格式：YYYYMMDDhhmmss, 如20060102070405 - '{fmt_time_local}'  格式化本地时间, 格式：YYYYMMDDhhmmss，如20060102150405 必选一个时间类型模板
 
@@ -302,7 +302,7 @@ class LiveSnapshotConfig:
 
     @property
     def image_access_protocol(self):
-        """Gets the image_access_protocol of this LiveSnapshotConfig.
+        r"""Gets the image_access_protocol of this LiveSnapshotConfig.
 
         截图存储文件访问协议， 仅支持http、https格式
 
@@ -313,7 +313,7 @@ class LiveSnapshotConfig:
 
     @image_access_protocol.setter
     def image_access_protocol(self, image_access_protocol):
-        """Sets the image_access_protocol of this LiveSnapshotConfig.
+        r"""Sets the image_access_protocol of this LiveSnapshotConfig.
 
         截图存储文件访问协议， 仅支持http、https格式
 
@@ -324,7 +324,7 @@ class LiveSnapshotConfig:
 
     @property
     def image_access_domain(self):
-        """Gets the image_access_domain of this LiveSnapshotConfig.
+        r"""Gets the image_access_domain of this LiveSnapshotConfig.
 
         截图存储文件访问域名
 
@@ -335,7 +335,7 @@ class LiveSnapshotConfig:
 
     @image_access_domain.setter
     def image_access_domain(self, image_access_domain):
-        """Sets the image_access_domain of this LiveSnapshotConfig.
+        r"""Sets the image_access_domain of this LiveSnapshotConfig.
 
         截图存储文件访问域名
 

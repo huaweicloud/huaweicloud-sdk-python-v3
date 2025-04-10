@@ -51,7 +51,7 @@ class SignApiBindingBase:
     }
 
     def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, req_method=None, tags=None):
-        """SignApiBindingBase
+        r"""SignApiBindingBase
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class SignApiBindingBase:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this SignApiBindingBase.
+        r"""Gets the publish_id of this SignApiBindingBase.
 
         API的发布编号
 
@@ -145,7 +145,7 @@ class SignApiBindingBase:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this SignApiBindingBase.
+        r"""Sets the publish_id of this SignApiBindingBase.
 
         API的发布编号
 
@@ -156,7 +156,7 @@ class SignApiBindingBase:
 
     @property
     def api_id(self):
-        """Gets the api_id of this SignApiBindingBase.
+        r"""Gets the api_id of this SignApiBindingBase.
 
         API编号
 
@@ -167,7 +167,7 @@ class SignApiBindingBase:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this SignApiBindingBase.
+        r"""Sets the api_id of this SignApiBindingBase.
 
         API编号
 
@@ -178,7 +178,7 @@ class SignApiBindingBase:
 
     @property
     def group_name(self):
-        """Gets the group_name of this SignApiBindingBase.
+        r"""Gets the group_name of this SignApiBindingBase.
 
         API所属分组的名称
 
@@ -189,7 +189,7 @@ class SignApiBindingBase:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this SignApiBindingBase.
+        r"""Sets the group_name of this SignApiBindingBase.
 
         API所属分组的名称
 
@@ -200,7 +200,7 @@ class SignApiBindingBase:
 
     @property
     def binding_time(self):
-        """Gets the binding_time of this SignApiBindingBase.
+        r"""Gets the binding_time of this SignApiBindingBase.
 
         绑定时间
 
@@ -211,7 +211,7 @@ class SignApiBindingBase:
 
     @binding_time.setter
     def binding_time(self, binding_time):
-        """Sets the binding_time of this SignApiBindingBase.
+        r"""Sets the binding_time of this SignApiBindingBase.
 
         绑定时间
 
@@ -222,7 +222,7 @@ class SignApiBindingBase:
 
     @property
     def env_id(self):
-        """Gets the env_id of this SignApiBindingBase.
+        r"""Gets the env_id of this SignApiBindingBase.
 
         API所属环境的编号
 
@@ -233,7 +233,7 @@ class SignApiBindingBase:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this SignApiBindingBase.
+        r"""Sets the env_id of this SignApiBindingBase.
 
         API所属环境的编号
 
@@ -244,7 +244,7 @@ class SignApiBindingBase:
 
     @property
     def env_name(self):
-        """Gets the env_name of this SignApiBindingBase.
+        r"""Gets the env_name of this SignApiBindingBase.
 
         API所属环境的名称
 
@@ -255,7 +255,7 @@ class SignApiBindingBase:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this SignApiBindingBase.
+        r"""Sets the env_name of this SignApiBindingBase.
 
         API所属环境的名称
 
@@ -266,7 +266,7 @@ class SignApiBindingBase:
 
     @property
     def api_type(self):
-        """Gets the api_type of this SignApiBindingBase.
+        r"""Gets the api_type of this SignApiBindingBase.
 
         API类型
 
@@ -277,7 +277,7 @@ class SignApiBindingBase:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this SignApiBindingBase.
+        r"""Sets the api_type of this SignApiBindingBase.
 
         API类型
 
@@ -288,7 +288,7 @@ class SignApiBindingBase:
 
     @property
     def api_name(self):
-        """Gets the api_name of this SignApiBindingBase.
+        r"""Gets the api_name of this SignApiBindingBase.
 
         API名称
 
@@ -299,7 +299,7 @@ class SignApiBindingBase:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this SignApiBindingBase.
+        r"""Sets the api_name of this SignApiBindingBase.
 
         API名称
 
@@ -310,7 +310,7 @@ class SignApiBindingBase:
 
     @property
     def id(self):
-        """Gets the id of this SignApiBindingBase.
+        r"""Gets the id of this SignApiBindingBase.
 
         绑定关系的ID
 
@@ -321,7 +321,7 @@ class SignApiBindingBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SignApiBindingBase.
+        r"""Sets the id of this SignApiBindingBase.
 
         绑定关系的ID
 
@@ -332,7 +332,7 @@ class SignApiBindingBase:
 
     @property
     def api_remark(self):
-        """Gets the api_remark of this SignApiBindingBase.
+        r"""Gets the api_remark of this SignApiBindingBase.
 
         API描述
 
@@ -343,7 +343,7 @@ class SignApiBindingBase:
 
     @api_remark.setter
     def api_remark(self, api_remark):
-        """Sets the api_remark of this SignApiBindingBase.
+        r"""Sets the api_remark of this SignApiBindingBase.
 
         API描述
 
@@ -354,7 +354,7 @@ class SignApiBindingBase:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this SignApiBindingBase.
+        r"""Gets the sign_id of this SignApiBindingBase.
 
         签名密钥的编号
 
@@ -365,7 +365,7 @@ class SignApiBindingBase:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this SignApiBindingBase.
+        r"""Sets the sign_id of this SignApiBindingBase.
 
         签名密钥的编号
 
@@ -376,7 +376,7 @@ class SignApiBindingBase:
 
     @property
     def sign_name(self):
-        """Gets the sign_name of this SignApiBindingBase.
+        r"""Gets the sign_name of this SignApiBindingBase.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -387,7 +387,7 @@ class SignApiBindingBase:
 
     @sign_name.setter
     def sign_name(self, sign_name):
-        """Sets the sign_name of this SignApiBindingBase.
+        r"""Sets the sign_name of this SignApiBindingBase.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -398,7 +398,7 @@ class SignApiBindingBase:
 
     @property
     def req_method(self):
-        """Gets the req_method of this SignApiBindingBase.
+        r"""Gets the req_method of this SignApiBindingBase.
 
         API请求方法
 
@@ -409,7 +409,7 @@ class SignApiBindingBase:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this SignApiBindingBase.
+        r"""Sets the req_method of this SignApiBindingBase.
 
         API请求方法
 
@@ -420,7 +420,7 @@ class SignApiBindingBase:
 
     @property
     def tags(self):
-        """Gets the tags of this SignApiBindingBase.
+        r"""Gets the tags of this SignApiBindingBase.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 
@@ -431,7 +431,7 @@ class SignApiBindingBase:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SignApiBindingBase.
+        r"""Sets the tags of this SignApiBindingBase.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 

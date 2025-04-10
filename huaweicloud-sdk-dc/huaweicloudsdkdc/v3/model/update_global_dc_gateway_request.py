@@ -27,7 +27,7 @@ class UpdateGlobalDcGatewayRequest:
     }
 
     def __init__(self, global_dc_gateway_id=None, body=None):
-        """UpdateGlobalDcGatewayRequest
+        r"""UpdateGlobalDcGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGlobalDcGatewayRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this UpdateGlobalDcGatewayRequest.
+        r"""Gets the global_dc_gateway_id of this UpdateGlobalDcGatewayRequest.
 
         全域接入网关ID
 
@@ -60,7 +60,7 @@ class UpdateGlobalDcGatewayRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this UpdateGlobalDcGatewayRequest.
+        r"""Sets the global_dc_gateway_id of this UpdateGlobalDcGatewayRequest.
 
         全域接入网关ID
 
@@ -71,7 +71,7 @@ class UpdateGlobalDcGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGlobalDcGatewayRequest.
+        r"""Gets the body of this UpdateGlobalDcGatewayRequest.
 
         :return: The body of this UpdateGlobalDcGatewayRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateGlobalDcGatewayRequestBody`
@@ -80,7 +80,7 @@ class UpdateGlobalDcGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGlobalDcGatewayRequest.
+        r"""Sets the body of this UpdateGlobalDcGatewayRequest.
 
         :param body: The body of this UpdateGlobalDcGatewayRequest.
         :type body: :class:`huaweicloudsdkdc.v3.UpdateGlobalDcGatewayRequestBody`

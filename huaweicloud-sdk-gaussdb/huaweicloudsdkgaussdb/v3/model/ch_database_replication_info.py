@@ -35,7 +35,7 @@ class ChDatabaseReplicationInfo:
     }
 
     def __init__(self, source_database=None, target_database=None, status=None, stage=None, percentage=None, catchup_stage=None):
-        """ChDatabaseReplicationInfo
+        r"""ChDatabaseReplicationInfo
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ChDatabaseReplicationInfo:
 
     @property
     def source_database(self):
-        """Gets the source_database of this ChDatabaseReplicationInfo.
+        r"""Gets the source_database of this ChDatabaseReplicationInfo.
 
         源数据库。
 
@@ -83,7 +83,7 @@ class ChDatabaseReplicationInfo:
 
     @source_database.setter
     def source_database(self, source_database):
-        """Sets the source_database of this ChDatabaseReplicationInfo.
+        r"""Sets the source_database of this ChDatabaseReplicationInfo.
 
         源数据库。
 
@@ -94,7 +94,7 @@ class ChDatabaseReplicationInfo:
 
     @property
     def target_database(self):
-        """Gets the target_database of this ChDatabaseReplicationInfo.
+        r"""Gets the target_database of this ChDatabaseReplicationInfo.
 
         目标数据库。
 
@@ -105,7 +105,7 @@ class ChDatabaseReplicationInfo:
 
     @target_database.setter
     def target_database(self, target_database):
-        """Sets the target_database of this ChDatabaseReplicationInfo.
+        r"""Sets the target_database of this ChDatabaseReplicationInfo.
 
         目标数据库。
 
@@ -116,7 +116,7 @@ class ChDatabaseReplicationInfo:
 
     @property
     def status(self):
-        """Gets the status of this ChDatabaseReplicationInfo.
+        r"""Gets the status of this ChDatabaseReplicationInfo.
 
         当前状态。 取值范围： - normal：正常 - abnormal：异常
 
@@ -127,7 +127,7 @@ class ChDatabaseReplicationInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChDatabaseReplicationInfo.
+        r"""Sets the status of this ChDatabaseReplicationInfo.
 
         当前状态。 取值范围： - normal：正常 - abnormal：异常
 
@@ -138,7 +138,7 @@ class ChDatabaseReplicationInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this ChDatabaseReplicationInfo.
+        r"""Gets the stage of this ChDatabaseReplicationInfo.
 
         同步阶段。 取值范围： - wait：等待同步 - failed：同步失败 - incremental：增量同步 - full：全量同步 - other：其他
 
@@ -149,7 +149,7 @@ class ChDatabaseReplicationInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this ChDatabaseReplicationInfo.
+        r"""Sets the stage of this ChDatabaseReplicationInfo.
 
         同步阶段。 取值范围： - wait：等待同步 - failed：同步失败 - incremental：增量同步 - full：全量同步 - other：其他
 
@@ -160,7 +160,7 @@ class ChDatabaseReplicationInfo:
 
     @property
     def percentage(self):
-        """Gets the percentage of this ChDatabaseReplicationInfo.
+        r"""Gets the percentage of this ChDatabaseReplicationInfo.
 
         进度百分比。
 
@@ -171,7 +171,7 @@ class ChDatabaseReplicationInfo:
 
     @percentage.setter
     def percentage(self, percentage):
-        """Sets the percentage of this ChDatabaseReplicationInfo.
+        r"""Sets the percentage of this ChDatabaseReplicationInfo.
 
         进度百分比。
 
@@ -182,7 +182,7 @@ class ChDatabaseReplicationInfo:
 
     @property
     def catchup_stage(self):
-        """Gets the catchup_stage of this ChDatabaseReplicationInfo.
+        r"""Gets the catchup_stage of this ChDatabaseReplicationInfo.
 
         追赶阶段。 取值范围： - wait：等待同步 - failed：同步失败 - incremental：增量同步 - full：全量同步 - other：其他
 
@@ -193,7 +193,7 @@ class ChDatabaseReplicationInfo:
 
     @catchup_stage.setter
     def catchup_stage(self, catchup_stage):
-        """Sets the catchup_stage of this ChDatabaseReplicationInfo.
+        r"""Sets the catchup_stage of this ChDatabaseReplicationInfo.
 
         追赶阶段。 取值范围： - wait：等待同步 - failed：同步失败 - incremental：增量同步 - full：全量同步 - other：其他
 

@@ -26,7 +26,7 @@ class ListDatabaseNamesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListDatabaseNamesResponse
+        r"""ListDatabaseNamesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDatabaseNamesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListDatabaseNamesResponse.
+        r"""Gets the body of this ListDatabaseNamesResponse.
 
         :return: The body of this ListDatabaseNamesResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ListDatabaseNamesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDatabaseNamesResponse.
+        r"""Sets the body of this ListDatabaseNamesResponse.
 
         :param body: The body of this ListDatabaseNamesResponse.
         :type body: list[str]

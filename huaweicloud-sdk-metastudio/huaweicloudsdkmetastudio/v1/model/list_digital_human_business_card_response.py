@@ -30,7 +30,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
     }
 
     def __init__(self, count=None, jobs=None, x_request_id=None):
-        """ListDigitalHumanBusinessCardResponse
+        r"""ListDigitalHumanBusinessCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDigitalHumanBusinessCardResponse.
+        r"""Gets the count of this ListDigitalHumanBusinessCardResponse.
 
         数字人名片制作任务总数。
 
@@ -69,7 +69,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDigitalHumanBusinessCardResponse.
+        r"""Sets the count of this ListDigitalHumanBusinessCardResponse.
 
         数字人名片制作任务总数。
 
@@ -80,7 +80,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListDigitalHumanBusinessCardResponse.
+        r"""Gets the jobs of this ListDigitalHumanBusinessCardResponse.
 
         数字人名片制作任务列表。
 
@@ -91,7 +91,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListDigitalHumanBusinessCardResponse.
+        r"""Sets the jobs of this ListDigitalHumanBusinessCardResponse.
 
         数字人名片制作任务列表。
 
@@ -102,7 +102,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDigitalHumanBusinessCardResponse.
+        r"""Gets the x_request_id of this ListDigitalHumanBusinessCardResponse.
 
         :return: The x_request_id of this ListDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListDigitalHumanBusinessCardResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDigitalHumanBusinessCardResponse.
+        r"""Sets the x_request_id of this ListDigitalHumanBusinessCardResponse.
 
         :param x_request_id: The x_request_id of this ListDigitalHumanBusinessCardResponse.
         :type x_request_id: str

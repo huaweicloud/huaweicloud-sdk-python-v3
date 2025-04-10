@@ -27,7 +27,7 @@ class AddDevDataRequest:
     }
 
     def __init__(self, datasource_id=None, body=None):
-        """AddDevDataRequest
+        r"""AddDevDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddDevDataRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this AddDevDataRequest.
+        r"""Gets the datasource_id of this AddDevDataRequest.
 
         数据源id
 
@@ -60,7 +60,7 @@ class AddDevDataRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this AddDevDataRequest.
+        r"""Sets the datasource_id of this AddDevDataRequest.
 
         数据源id
 
@@ -71,7 +71,7 @@ class AddDevDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDevDataRequest.
+        r"""Gets the body of this AddDevDataRequest.
 
         :return: The body of this AddDevDataRequest.
         :rtype: object
@@ -80,7 +80,7 @@ class AddDevDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDevDataRequest.
+        r"""Sets the body of this AddDevDataRequest.
 
         :param body: The body of this AddDevDataRequest.
         :type body: object

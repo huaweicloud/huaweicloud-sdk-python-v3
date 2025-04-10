@@ -25,7 +25,7 @@ class ShowFlowLogRequest:
     }
 
     def __init__(self, flowlog_id=None):
-        """ShowFlowLogRequest
+        r"""ShowFlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlowLogRequest:
 
     @property
     def flowlog_id(self):
-        """Gets the flowlog_id of this ShowFlowLogRequest.
+        r"""Gets the flowlog_id of this ShowFlowLogRequest.
 
         流日志资源唯一标识
 
@@ -53,7 +53,7 @@ class ShowFlowLogRequest:
 
     @flowlog_id.setter
     def flowlog_id(self, flowlog_id):
-        """Sets the flowlog_id of this ShowFlowLogRequest.
+        r"""Sets the flowlog_id of this ShowFlowLogRequest.
 
         流日志资源唯一标识
 

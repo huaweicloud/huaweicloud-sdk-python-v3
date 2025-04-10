@@ -31,7 +31,7 @@ class ShowTasksRulesetsRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, offset=None, limit=None):
-        """ShowTasksRulesetsRequest
+        r"""ShowTasksRulesetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowTasksRulesetsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTasksRulesetsRequest.
+        r"""Gets the project_id of this ShowTasksRulesetsRequest.
 
         项目ID
 
@@ -73,7 +73,7 @@ class ShowTasksRulesetsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTasksRulesetsRequest.
+        r"""Sets the project_id of this ShowTasksRulesetsRequest.
 
         项目ID
 
@@ -84,7 +84,7 @@ class ShowTasksRulesetsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTasksRulesetsRequest.
+        r"""Gets the task_id of this ShowTasksRulesetsRequest.
 
         任务ID
 
@@ -95,7 +95,7 @@ class ShowTasksRulesetsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTasksRulesetsRequest.
+        r"""Sets the task_id of this ShowTasksRulesetsRequest.
 
         任务ID
 
@@ -106,7 +106,7 @@ class ShowTasksRulesetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTasksRulesetsRequest.
+        r"""Gets the offset of this ShowTasksRulesetsRequest.
 
         分页索引，偏移量
 
@@ -117,7 +117,7 @@ class ShowTasksRulesetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTasksRulesetsRequest.
+        r"""Sets the offset of this ShowTasksRulesetsRequest.
 
         分页索引，偏移量
 
@@ -128,7 +128,7 @@ class ShowTasksRulesetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTasksRulesetsRequest.
+        r"""Gets the limit of this ShowTasksRulesetsRequest.
 
         每页显示的数量,每页最多显示1000条
 
@@ -139,7 +139,7 @@ class ShowTasksRulesetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTasksRulesetsRequest.
+        r"""Sets the limit of this ShowTasksRulesetsRequest.
 
         每页显示的数量,每页最多显示1000条
 

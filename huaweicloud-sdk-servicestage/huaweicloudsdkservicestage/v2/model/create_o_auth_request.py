@@ -29,7 +29,7 @@ class CreateOAuthRequest:
     }
 
     def __init__(self, repo_type=None, tag=None, body=None):
-        """CreateOAuthRequest
+        r"""CreateOAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateOAuthRequest:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this CreateOAuthRequest.
+        r"""Gets the repo_type of this CreateOAuthRequest.
 
         仓库类型。 支持OAuth授权的仓库类型有：github、gitlab、gitee、bitbucket。
 
@@ -67,7 +67,7 @@ class CreateOAuthRequest:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this CreateOAuthRequest.
+        r"""Sets the repo_type of this CreateOAuthRequest.
 
         仓库类型。 支持OAuth授权的仓库类型有：github、gitlab、gitee、bitbucket。
 
@@ -78,7 +78,7 @@ class CreateOAuthRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateOAuthRequest.
+        r"""Gets the tag of this CreateOAuthRequest.
 
         站点标签。 比如国际站的，?tag=intl。 默认为空。
 
@@ -89,7 +89,7 @@ class CreateOAuthRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateOAuthRequest.
+        r"""Sets the tag of this CreateOAuthRequest.
 
         站点标签。 比如国际站的，?tag=intl。 默认为空。
 
@@ -100,7 +100,7 @@ class CreateOAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOAuthRequest.
+        r"""Gets the body of this CreateOAuthRequest.
 
         :return: The body of this CreateOAuthRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.OAuth`
@@ -109,7 +109,7 @@ class CreateOAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOAuthRequest.
+        r"""Sets the body of this CreateOAuthRequest.
 
         :param body: The body of this CreateOAuthRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.OAuth`

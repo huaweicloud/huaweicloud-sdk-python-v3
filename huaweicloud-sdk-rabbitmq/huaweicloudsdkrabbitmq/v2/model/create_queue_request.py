@@ -29,7 +29,7 @@ class CreateQueueRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, body=None):
-        """CreateQueueRequest
+        r"""CreateQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateQueueRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateQueueRequest.
+        r"""Gets the instance_id of this CreateQueueRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateQueueRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateQueueRequest.
+        r"""Sets the instance_id of this CreateQueueRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateQueueRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this CreateQueueRequest.
+        r"""Gets the vhost of this CreateQueueRequest.
 
         Vhost名称
 
@@ -88,7 +88,7 @@ class CreateQueueRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this CreateQueueRequest.
+        r"""Sets the vhost of this CreateQueueRequest.
 
         Vhost名称
 
@@ -99,7 +99,7 @@ class CreateQueueRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQueueRequest.
+        r"""Gets the body of this CreateQueueRequest.
 
         :return: The body of this CreateQueueRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateQueueBody`
@@ -108,7 +108,7 @@ class CreateQueueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQueueRequest.
+        r"""Sets the body of this CreateQueueRequest.
 
         :param body: The body of this CreateQueueRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateQueueBody`

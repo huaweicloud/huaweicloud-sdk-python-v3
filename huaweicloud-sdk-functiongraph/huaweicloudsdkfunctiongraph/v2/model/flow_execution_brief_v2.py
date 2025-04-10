@@ -39,7 +39,7 @@ class FlowExecutionBriefV2:
     }
 
     def __init__(self, workflow_id=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, workflow_urn=None):
-        """FlowExecutionBriefV2
+        r"""FlowExecutionBriefV2
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FlowExecutionBriefV2:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this FlowExecutionBriefV2.
+        r"""Gets the workflow_id of this FlowExecutionBriefV2.
 
         函数流ID
 
@@ -103,7 +103,7 @@ class FlowExecutionBriefV2:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this FlowExecutionBriefV2.
+        r"""Sets the workflow_id of this FlowExecutionBriefV2.
 
         函数流ID
 
@@ -114,7 +114,7 @@ class FlowExecutionBriefV2:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this FlowExecutionBriefV2.
+        r"""Gets the execution_id of this FlowExecutionBriefV2.
 
         函数流执行ID
 
@@ -125,7 +125,7 @@ class FlowExecutionBriefV2:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this FlowExecutionBriefV2.
+        r"""Sets the execution_id of this FlowExecutionBriefV2.
 
         函数流执行ID
 
@@ -136,7 +136,7 @@ class FlowExecutionBriefV2:
 
     @property
     def status(self):
-        """Gets the status of this FlowExecutionBriefV2.
+        r"""Gets the status of this FlowExecutionBriefV2.
 
         函数流执行状态
 
@@ -147,7 +147,7 @@ class FlowExecutionBriefV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FlowExecutionBriefV2.
+        r"""Sets the status of this FlowExecutionBriefV2.
 
         函数流执行状态
 
@@ -158,7 +158,7 @@ class FlowExecutionBriefV2:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this FlowExecutionBriefV2.
+        r"""Gets the begin_time of this FlowExecutionBriefV2.
 
         开始时间（格式为yyyy-MM-dd'T'HH:mm:ss'Z',UTC时间）。
 
@@ -169,7 +169,7 @@ class FlowExecutionBriefV2:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this FlowExecutionBriefV2.
+        r"""Sets the begin_time of this FlowExecutionBriefV2.
 
         开始时间（格式为yyyy-MM-dd'T'HH:mm:ss'Z',UTC时间）。
 
@@ -180,7 +180,7 @@ class FlowExecutionBriefV2:
 
     @property
     def end_time(self):
-        """Gets the end_time of this FlowExecutionBriefV2.
+        r"""Gets the end_time of this FlowExecutionBriefV2.
 
         结束时间（格式为yyyy-MM-dd'T'HH:mm:ss'Z',UTC时间）。
 
@@ -191,7 +191,7 @@ class FlowExecutionBriefV2:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this FlowExecutionBriefV2.
+        r"""Sets the end_time of this FlowExecutionBriefV2.
 
         结束时间（格式为yyyy-MM-dd'T'HH:mm:ss'Z',UTC时间）。
 
@@ -202,7 +202,7 @@ class FlowExecutionBriefV2:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this FlowExecutionBriefV2.
+        r"""Gets the last_update_time of this FlowExecutionBriefV2.
 
         结束时间（格式为yyyy-MM-dd'T'HH:mm:ss'Z',UTC时间）。
 
@@ -213,7 +213,7 @@ class FlowExecutionBriefV2:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this FlowExecutionBriefV2.
+        r"""Sets the last_update_time of this FlowExecutionBriefV2.
 
         结束时间（格式为yyyy-MM-dd'T'HH:mm:ss'Z',UTC时间）。
 
@@ -224,7 +224,7 @@ class FlowExecutionBriefV2:
 
     @property
     def created_by(self):
-        """Gets the created_by of this FlowExecutionBriefV2.
+        r"""Gets the created_by of this FlowExecutionBriefV2.
 
         :return: The created_by of this FlowExecutionBriefV2.
         :rtype: str
@@ -233,7 +233,7 @@ class FlowExecutionBriefV2:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this FlowExecutionBriefV2.
+        r"""Sets the created_by of this FlowExecutionBriefV2.
 
         :param created_by: The created_by of this FlowExecutionBriefV2.
         :type created_by: str
@@ -242,7 +242,7 @@ class FlowExecutionBriefV2:
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this FlowExecutionBriefV2.
+        r"""Gets the workflow_urn of this FlowExecutionBriefV2.
 
         函数流执行urn
 
@@ -253,7 +253,7 @@ class FlowExecutionBriefV2:
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this FlowExecutionBriefV2.
+        r"""Sets the workflow_urn of this FlowExecutionBriefV2.
 
         函数流执行urn
 

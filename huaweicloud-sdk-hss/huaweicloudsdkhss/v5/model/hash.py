@@ -23,7 +23,7 @@ class Hash:
     }
 
     def __init__(self):
-        """Hash
+        r"""Hash
 
         The model defined in huaweicloud sdk
 

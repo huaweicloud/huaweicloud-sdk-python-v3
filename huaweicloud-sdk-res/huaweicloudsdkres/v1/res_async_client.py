@@ -34,7 +34,7 @@ class ResAsyncClient(Client):
         return client_builder
 
     def create_res_datasource_async(self, request):
-        """创建数据源
+        r"""创建数据源
 
         在指定的工作空间下面创建一个新的数据源。
         
@@ -103,7 +103,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def create_res_intelligent_scene_async(self, request):
-        """创建智能场景
+        r"""创建智能场景
 
         在指定工作空间下面创建智能场景。
         
@@ -172,7 +172,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def create_res_job_async(self, request):
-        """新建训练作业
+        r"""新建训练作业
 
         新建训练作业元数据，新建成功之后可手动执行此任务。
         
@@ -243,7 +243,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def create_res_jobs_async(self, request):
-        """新建多个训练作业
+        r"""新建多个训练作业
 
         批量新建作业。
         
@@ -314,7 +314,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def create_res_online_instance_async(self, request):
-        """新建在线服务
+        r"""新建在线服务
 
         新建在线服务元数据，新建成功之后可手动发布此服务。
         
@@ -385,7 +385,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def create_res_scene_async(self, request):
-        """创建自定义场景
+        r"""创建自定义场景
 
         在指定工作空间下面创建自定义场景。
         
@@ -454,7 +454,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def create_res_workspace_async(self, request):
-        """创建工作空间
+        r"""创建工作空间
 
         用于在推荐系统下面创建独立的工作空间，用于资源的隔离，用户可以在工作空间下面继续创建数据源、场景以及推荐任务等。是否有工作空间的操作权限取决于用户是否属于当前工作空间绑定的企业项目。
         
@@ -521,7 +521,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def delete_res_datasource_async(self, request):
-        """删除数据源
+        r"""删除数据源
 
         删除数据源。
         
@@ -590,7 +590,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def delete_res_job_async(self, request):
-        """删除训练作业
+        r"""删除训练作业
 
         删除指定作业。
         
@@ -661,7 +661,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def delete_res_online_instance_async(self, request):
-        """删除在线服务
+        r"""删除在线服务
 
         删除在线服务实例。
         
@@ -732,7 +732,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def delete_res_scene_async(self, request):
-        """删除场景
+        r"""删除场景
 
         该接口用于删除场景，删除之后不能恢复，请您谨慎操作。
         
@@ -801,7 +801,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def delete_res_workspace_async(self, request):
-        """删除工作空间
+        r"""删除工作空间
 
         删除指定工作空间。
         
@@ -868,7 +868,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def list_res_datasources_async(self, request):
-        """查询数据源列表
+        r"""查询数据源列表
 
         查询当前工作空间下的数据源列表。
         
@@ -935,7 +935,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def list_res_enterprises_async(self, request):
-        """查询企业项目列表
+        r"""查询企业项目列表
 
         查询用户在当前项目id下的企业项目列表。在创建工作空间时需要提供企业项目id。
         
@@ -1000,7 +1000,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def list_res_online_service_details_async(self, request):
-        """查询在线服务详情
+        r"""查询在线服务详情
 
         根据给定的workspace_id和resource_id及category查询在线服务。
         
@@ -1071,7 +1071,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def list_res_resource_spec_async(self, request):
-        """查询训练规格
+        r"""查询训练规格
 
         查询当前推荐系统所提供的离线计算规格，实时计算规格和排序模型训练规格。在创建数据源和场景时，需要提供此信息。
         
@@ -1136,7 +1136,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def list_res_scenes_async(self, request):
-        """查询场景列表
+        r"""查询场景列表
 
         查询当前工作空间下的场景列表。
         
@@ -1205,7 +1205,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def list_res_workspaces_async(self, request):
-        """查询工作空间列表
+        r"""查询工作空间列表
 
         用于查询当前用户具有操作权限的工作空间列表。
         
@@ -1270,7 +1270,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def show_res_datasource_async(self, request):
-        """查询数据源详情
+        r"""查询数据源详情
 
         查询指定数据源的详情信息。
         
@@ -1339,7 +1339,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def show_res_datasource_work_detail_async(self, request):
-        """查询数据源任务结果
+        r"""查询数据源任务结果
 
         查询指定数据源下离线任务的结果。其中包括数据格式，数据检测、数据探索及效果评估的内容。
         
@@ -1410,7 +1410,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def show_res_job_async(self, request):
-        """查询训练作业
+        r"""查询训练作业
 
         查询resource_id（数据源id或场景id）下的指定类型的作业。
         
@@ -1481,7 +1481,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def show_res_recall_set_async(self, request):
-        """查询训练作业候选集
+        r"""查询训练作业候选集
 
         查询给定workspaces_id和指定resource_id下的候选集。
         
@@ -1552,7 +1552,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def show_res_scene_async(self, request):
-        """查询场景详情
+        r"""查询场景详情
 
         查询指定场景的详情。
         
@@ -1621,7 +1621,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def show_res_wrokspace_async(self, request):
-        """查询工作空间详情
+        r"""查询工作空间详情
 
         查询指定工作空间的具体信息。
         
@@ -1688,7 +1688,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def start_res_job_async(self, request):
-        """执行作业
+        r"""执行作业
 
         执行独立的作业。
         
@@ -1761,7 +1761,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def start_res_scene_jobs_async(self, request):
-        """执行场景
+        r"""执行场景
 
         执行场景下面的所有作业和服务。
         
@@ -1832,7 +1832,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_datasource_async(self, request):
-        """修改数据源内容
+        r"""修改数据源内容
 
         修改指定数据源的配置内容。
         
@@ -1903,7 +1903,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_datastruct_async(self, request):
-        """修改数据源特征
+        r"""修改数据源特征
 
         修改数据源中的特征。
         
@@ -1974,7 +1974,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_intelligent_scene_async(self, request):
-        """更新智能场景内容
+        r"""更新智能场景内容
 
         更新智能场景的内容信息。
         
@@ -2045,7 +2045,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_job_async(self, request):
-        """修改训练作业参数
+        r"""修改训练作业参数
 
         修改指定作业的元数据信息。
         
@@ -2118,7 +2118,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_online_instance_async(self, request):
-        """修改在线服务参数
+        r"""修改在线服务参数
 
         修改指定在线服务的元数据内容。
         
@@ -2191,7 +2191,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_scene_async(self, request):
-        """更新自定义场景内容
+        r"""更新自定义场景内容
 
         更新自定义场景的内容信息。
         
@@ -2262,7 +2262,7 @@ class ResAsyncClient(Client):
         return http_info
 
     def update_res_workspace_async(self, request):
-        """更新工作空间
+        r"""更新工作空间
 
         更新工作空间信息, 只允许更新描述信息。
         

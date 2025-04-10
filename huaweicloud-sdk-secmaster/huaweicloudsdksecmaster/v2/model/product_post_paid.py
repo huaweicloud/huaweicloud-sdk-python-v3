@@ -43,7 +43,7 @@ class ProductPostPaid:
     }
 
     def __init__(self, id=None, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, usage_measure_id=None, usage_value=None, resource_size=None, usage_factor=None, resource_id=None):
-        """ProductPostPaid
+        r"""ProductPostPaid
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ProductPostPaid:
 
     @property
     def id(self):
-        """Gets the id of this ProductPostPaid.
+        r"""Gets the id of this ProductPostPaid.
 
         ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系
 
@@ -108,7 +108,7 @@ class ProductPostPaid:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProductPostPaid.
+        r"""Sets the id of this ProductPostPaid.
 
         ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系
 
@@ -119,7 +119,7 @@ class ProductPostPaid:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductPostPaid.
+        r"""Gets the product_id of this ProductPostPaid.
 
         产品Id，通过向CBC询价获取该商品的标识
 
@@ -130,7 +130,7 @@ class ProductPostPaid:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductPostPaid.
+        r"""Sets the product_id of this ProductPostPaid.
 
         产品Id，通过向CBC询价获取该商品的标识
 
@@ -141,7 +141,7 @@ class ProductPostPaid:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductPostPaid.
+        r"""Gets the cloud_service_type of this ProductPostPaid.
 
         云服务类型，固定值为hws.service.type.sa
 
@@ -152,7 +152,7 @@ class ProductPostPaid:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductPostPaid.
+        r"""Sets the cloud_service_type of this ProductPostPaid.
 
         云服务类型，固定值为hws.service.type.sa
 
@@ -163,7 +163,7 @@ class ProductPostPaid:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductPostPaid.
+        r"""Gets the resource_type of this ProductPostPaid.
 
         用户购买云服务产品的资源类型，例如SecMaster中的典型场景配置，资源类型为hws.resource.type.secmaster.typical
 
@@ -174,7 +174,7 @@ class ProductPostPaid:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductPostPaid.
+        r"""Sets the resource_type of this ProductPostPaid.
 
         用户购买云服务产品的资源类型，例如SecMaster中的典型场景配置，资源类型为hws.resource.type.secmaster.typical
 
@@ -185,7 +185,7 @@ class ProductPostPaid:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ProductPostPaid.
+        r"""Gets the resource_spec_code of this ProductPostPaid.
 
         用户购买云服务产品的资源规格，例如安全云脑中的的基础版，资源规格为secmaster.basic
 
@@ -196,7 +196,7 @@ class ProductPostPaid:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ProductPostPaid.
+        r"""Sets the resource_spec_code of this ProductPostPaid.
 
         用户购买云服务产品的资源规格，例如安全云脑中的的基础版，资源规格为secmaster.basic
 
@@ -207,7 +207,7 @@ class ProductPostPaid:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this ProductPostPaid.
+        r"""Gets the usage_measure_id of this ProductPostPaid.
 
         使用量单位标识，按需询价必填，例如按小时询价，使用量值为1，使用量单位为小时，枚举值如下： 4：小时 10：GB（带宽按流量询价使用） 11：MB（带宽按流量询价使用）
 
@@ -218,7 +218,7 @@ class ProductPostPaid:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this ProductPostPaid.
+        r"""Sets the usage_measure_id of this ProductPostPaid.
 
         使用量单位标识，按需询价必填，例如按小时询价，使用量值为1，使用量单位为小时，枚举值如下： 4：小时 10：GB（带宽按流量询价使用） 11：MB（带宽按流量询价使用）
 
@@ -229,7 +229,7 @@ class ProductPostPaid:
 
     @property
     def usage_value(self):
-        """Gets the usage_value of this ProductPostPaid.
+        r"""Gets the usage_value of this ProductPostPaid.
 
         使用量值，按需询价必填，例如按小时询价，使用量值为1，使用量单位为小时
 
@@ -240,7 +240,7 @@ class ProductPostPaid:
 
     @usage_value.setter
     def usage_value(self, usage_value):
-        """Sets the usage_value of this ProductPostPaid.
+        r"""Sets the usage_value of this ProductPostPaid.
 
         使用量值，按需询价必填，例如按小时询价，使用量值为1，使用量单位为小时
 
@@ -251,7 +251,7 @@ class ProductPostPaid:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ProductPostPaid.
+        r"""Gets the resource_size of this ProductPostPaid.
 
         配额个数
 
@@ -262,7 +262,7 @@ class ProductPostPaid:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ProductPostPaid.
+        r"""Sets the resource_size of this ProductPostPaid.
 
         配额个数
 
@@ -273,7 +273,7 @@ class ProductPostPaid:
 
     @property
     def usage_factor(self):
-        """Gets the usage_factor of this ProductPostPaid.
+        r"""Gets the usage_factor of this ProductPostPaid.
 
         使用量因子，按需计费必填，取值和话单中的使用量因子一致，云服务和使用量因子对应关系如下： 典型场景配置：Duration 态势管理：duration 安全编排：count 智能分析：flow
 
@@ -284,7 +284,7 @@ class ProductPostPaid:
 
     @usage_factor.setter
     def usage_factor(self, usage_factor):
-        """Sets the usage_factor of this ProductPostPaid.
+        r"""Sets the usage_factor of this ProductPostPaid.
 
         使用量因子，按需计费必填，取值和话单中的使用量因子一致，云服务和使用量因子对应关系如下： 典型场景配置：Duration 态势管理：duration 安全编排：count 智能分析：flow
 
@@ -295,7 +295,7 @@ class ProductPostPaid:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ProductPostPaid.
+        r"""Gets the resource_id of this ProductPostPaid.
 
         资源id，仅在增加配额的时候传入
 
@@ -306,7 +306,7 @@ class ProductPostPaid:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ProductPostPaid.
+        r"""Sets the resource_id of this ProductPostPaid.
 
         资源id，仅在增加配额的时候传入
 

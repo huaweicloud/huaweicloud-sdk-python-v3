@@ -26,7 +26,7 @@ class DeleteCompareJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteCompareJobResponse
+        r"""DeleteCompareJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteCompareJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteCompareJobResponse.
+        r"""Gets the body of this DeleteCompareJobResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class DeleteCompareJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteCompareJobResponse.
+        r"""Sets the body of this DeleteCompareJobResponse.
 
         空响应体。
 

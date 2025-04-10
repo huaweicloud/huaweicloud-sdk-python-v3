@@ -27,7 +27,7 @@ class RevokePostgresqlDbPrivilegeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """RevokePostgresqlDbPrivilegeRequest
+        r"""RevokePostgresqlDbPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RevokePostgresqlDbPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RevokePostgresqlDbPrivilegeRequest.
+        r"""Gets the instance_id of this RevokePostgresqlDbPrivilegeRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class RevokePostgresqlDbPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RevokePostgresqlDbPrivilegeRequest.
+        r"""Sets the instance_id of this RevokePostgresqlDbPrivilegeRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class RevokePostgresqlDbPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RevokePostgresqlDbPrivilegeRequest.
+        r"""Gets the body of this RevokePostgresqlDbPrivilegeRequest.
 
         :return: The body of this RevokePostgresqlDbPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RevokePostgresqlDbPrivilegeRequestBody`
@@ -80,7 +80,7 @@ class RevokePostgresqlDbPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokePostgresqlDbPrivilegeRequest.
+        r"""Sets the body of this RevokePostgresqlDbPrivilegeRequest.
 
         :param body: The body of this RevokePostgresqlDbPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.RevokePostgresqlDbPrivilegeRequestBody`

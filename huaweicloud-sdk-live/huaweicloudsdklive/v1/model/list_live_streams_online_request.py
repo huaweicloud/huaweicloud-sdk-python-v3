@@ -33,7 +33,7 @@ class ListLiveStreamsOnlineRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, offset=None, limit=None, stream=None):
-        """ListLiveStreamsOnlineRequest
+        r"""ListLiveStreamsOnlineRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListLiveStreamsOnlineRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListLiveStreamsOnlineRequest.
+        r"""Gets the publish_domain of this ListLiveStreamsOnlineRequest.
 
         推流域名
 
@@ -81,7 +81,7 @@ class ListLiveStreamsOnlineRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListLiveStreamsOnlineRequest.
+        r"""Sets the publish_domain of this ListLiveStreamsOnlineRequest.
 
         推流域名
 
@@ -92,7 +92,7 @@ class ListLiveStreamsOnlineRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListLiveStreamsOnlineRequest.
+        r"""Gets the app of this ListLiveStreamsOnlineRequest.
 
         应用名
 
@@ -103,7 +103,7 @@ class ListLiveStreamsOnlineRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListLiveStreamsOnlineRequest.
+        r"""Sets the app of this ListLiveStreamsOnlineRequest.
 
         应用名
 
@@ -114,7 +114,7 @@ class ListLiveStreamsOnlineRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLiveStreamsOnlineRequest.
+        r"""Gets the offset of this ListLiveStreamsOnlineRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -125,7 +125,7 @@ class ListLiveStreamsOnlineRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLiveStreamsOnlineRequest.
+        r"""Sets the offset of this ListLiveStreamsOnlineRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -136,7 +136,7 @@ class ListLiveStreamsOnlineRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLiveStreamsOnlineRequest.
+        r"""Gets the limit of this ListLiveStreamsOnlineRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -147,7 +147,7 @@ class ListLiveStreamsOnlineRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLiveStreamsOnlineRequest.
+        r"""Sets the limit of this ListLiveStreamsOnlineRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -158,7 +158,7 @@ class ListLiveStreamsOnlineRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListLiveStreamsOnlineRequest.
+        r"""Gets the stream of this ListLiveStreamsOnlineRequest.
 
         流名，用于单流查询，携带stream参数时app不能缺省
 
@@ -169,7 +169,7 @@ class ListLiveStreamsOnlineRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListLiveStreamsOnlineRequest.
+        r"""Sets the stream of this ListLiveStreamsOnlineRequest.
 
         流名，用于单流查询，携带stream参数时app不能缺省
 

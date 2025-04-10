@@ -27,7 +27,7 @@ class FilterV2:
     }
 
     def __init__(self, operator=None, filter_factor=None):
-        """FilterV2
+        r"""FilterV2
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FilterV2:
 
     @property
     def operator(self):
-        """Gets the operator of this FilterV2.
+        r"""Gets the operator of this FilterV2.
 
         运算符，0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -59,7 +59,7 @@ class FilterV2:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this FilterV2.
+        r"""Sets the operator of this FilterV2.
 
         运算符，0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。
 
@@ -70,7 +70,7 @@ class FilterV2:
 
     @property
     def filter_factor(self):
-        """Gets the filter_factor of this FilterV2.
+        r"""Gets the filter_factor of this FilterV2.
 
         :return: The filter_factor of this FilterV2.
         :rtype: :class:`huaweicloudsdkbssintl.v2.FilterFactor`
@@ -79,7 +79,7 @@ class FilterV2:
 
     @filter_factor.setter
     def filter_factor(self, filter_factor):
-        """Sets the filter_factor of this FilterV2.
+        r"""Sets the filter_factor of this FilterV2.
 
         :param filter_factor: The filter_factor of this FilterV2.
         :type filter_factor: :class:`huaweicloudsdkbssintl.v2.FilterFactor`

@@ -34,7 +34,7 @@ class AppCategoryEnum:
     }
 
     def __init__(self):
-        """AppCategoryEnum
+        r"""AppCategoryEnum
 
         The model defined in huaweicloud sdk
 

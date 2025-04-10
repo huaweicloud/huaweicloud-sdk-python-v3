@@ -41,7 +41,7 @@ class DisasterRecoveryCluster:
     }
 
     def __init__(self, id=None, name=None, cluster_az=None, role=None, region=None, status=None, progress=None, last_success_time=None, obs_bucket_name=None):
-        """DisasterRecoveryCluster
+        r"""DisasterRecoveryCluster
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DisasterRecoveryCluster:
 
     @property
     def id(self):
-        """Gets the id of this DisasterRecoveryCluster.
+        r"""Gets the id of this DisasterRecoveryCluster.
 
         容灾集群信息ID
 
@@ -110,7 +110,7 @@ class DisasterRecoveryCluster:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisasterRecoveryCluster.
+        r"""Sets the id of this DisasterRecoveryCluster.
 
         容灾集群信息ID
 
@@ -121,7 +121,7 @@ class DisasterRecoveryCluster:
 
     @property
     def name(self):
-        """Gets the name of this DisasterRecoveryCluster.
+        r"""Gets the name of this DisasterRecoveryCluster.
 
         容灾集群名称
 
@@ -132,7 +132,7 @@ class DisasterRecoveryCluster:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DisasterRecoveryCluster.
+        r"""Sets the name of this DisasterRecoveryCluster.
 
         容灾集群名称
 
@@ -143,7 +143,7 @@ class DisasterRecoveryCluster:
 
     @property
     def cluster_az(self):
-        """Gets the cluster_az of this DisasterRecoveryCluster.
+        r"""Gets the cluster_az of this DisasterRecoveryCluster.
 
         容灾集群所在AZ
 
@@ -154,7 +154,7 @@ class DisasterRecoveryCluster:
 
     @cluster_az.setter
     def cluster_az(self, cluster_az):
-        """Sets the cluster_az of this DisasterRecoveryCluster.
+        r"""Sets the cluster_az of this DisasterRecoveryCluster.
 
         容灾集群所在AZ
 
@@ -165,7 +165,7 @@ class DisasterRecoveryCluster:
 
     @property
     def role(self):
-        """Gets the role of this DisasterRecoveryCluster.
+        r"""Gets the role of this DisasterRecoveryCluster.
 
         容灾集群角色
 
@@ -176,7 +176,7 @@ class DisasterRecoveryCluster:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this DisasterRecoveryCluster.
+        r"""Sets the role of this DisasterRecoveryCluster.
 
         容灾集群角色
 
@@ -187,7 +187,7 @@ class DisasterRecoveryCluster:
 
     @property
     def region(self):
-        """Gets the region of this DisasterRecoveryCluster.
+        r"""Gets the region of this DisasterRecoveryCluster.
 
         容灾集群所在region
 
@@ -198,7 +198,7 @@ class DisasterRecoveryCluster:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DisasterRecoveryCluster.
+        r"""Sets the region of this DisasterRecoveryCluster.
 
         容灾集群所在region
 
@@ -209,7 +209,7 @@ class DisasterRecoveryCluster:
 
     @property
     def status(self):
-        """Gets the status of this DisasterRecoveryCluster.
+        r"""Gets the status of this DisasterRecoveryCluster.
 
         容灾集群状态
 
@@ -220,7 +220,7 @@ class DisasterRecoveryCluster:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DisasterRecoveryCluster.
+        r"""Sets the status of this DisasterRecoveryCluster.
 
         容灾集群状态
 
@@ -231,7 +231,7 @@ class DisasterRecoveryCluster:
 
     @property
     def progress(self):
-        """Gets the progress of this DisasterRecoveryCluster.
+        r"""Gets the progress of this DisasterRecoveryCluster.
 
         容灾进度
 
@@ -242,7 +242,7 @@ class DisasterRecoveryCluster:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this DisasterRecoveryCluster.
+        r"""Sets the progress of this DisasterRecoveryCluster.
 
         容灾进度
 
@@ -253,7 +253,7 @@ class DisasterRecoveryCluster:
 
     @property
     def last_success_time(self):
-        """Gets the last_success_time of this DisasterRecoveryCluster.
+        r"""Gets the last_success_time of this DisasterRecoveryCluster.
 
         上一次容灾时间
 
@@ -264,7 +264,7 @@ class DisasterRecoveryCluster:
 
     @last_success_time.setter
     def last_success_time(self, last_success_time):
-        """Sets the last_success_time of this DisasterRecoveryCluster.
+        r"""Sets the last_success_time of this DisasterRecoveryCluster.
 
         上一次容灾时间
 
@@ -275,7 +275,7 @@ class DisasterRecoveryCluster:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this DisasterRecoveryCluster.
+        r"""Gets the obs_bucket_name of this DisasterRecoveryCluster.
 
         OBS桶名称
 
@@ -286,7 +286,7 @@ class DisasterRecoveryCluster:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this DisasterRecoveryCluster.
+        r"""Sets the obs_bucket_name of this DisasterRecoveryCluster.
 
         OBS桶名称
 

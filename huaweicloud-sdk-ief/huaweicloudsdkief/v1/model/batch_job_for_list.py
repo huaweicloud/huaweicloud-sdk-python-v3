@@ -43,7 +43,7 @@ class BatchJobForList:
     }
 
     def __init__(self, job_id=None, job_name=None, job_type=None, created_at=None, status=None, task_total_count=None, task_success_count=None, task_failed_count=None, status_last_updated_at=None, description=None):
-        """BatchJobForList
+        r"""BatchJobForList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class BatchJobForList:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchJobForList.
+        r"""Gets the job_id of this BatchJobForList.
 
         批量处理作业ID
 
@@ -117,7 +117,7 @@ class BatchJobForList:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchJobForList.
+        r"""Sets the job_id of this BatchJobForList.
 
         批量处理作业ID
 
@@ -128,7 +128,7 @@ class BatchJobForList:
 
     @property
     def job_name(self):
-        """Gets the job_name of this BatchJobForList.
+        r"""Gets the job_name of this BatchJobForList.
 
         批量处理作业名称
 
@@ -139,7 +139,7 @@ class BatchJobForList:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this BatchJobForList.
+        r"""Sets the job_name of this BatchJobForList.
 
         批量处理作业名称
 
@@ -150,7 +150,7 @@ class BatchJobForList:
 
     @property
     def job_type(self):
-        """Gets the job_type of this BatchJobForList.
+        r"""Gets the job_type of this BatchJobForList.
 
         批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -161,7 +161,7 @@ class BatchJobForList:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this BatchJobForList.
+        r"""Sets the job_type of this BatchJobForList.
 
         批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -172,7 +172,7 @@ class BatchJobForList:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BatchJobForList.
+        r"""Gets the created_at of this BatchJobForList.
 
         创建时间戳
 
@@ -183,7 +183,7 @@ class BatchJobForList:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BatchJobForList.
+        r"""Sets the created_at of this BatchJobForList.
 
         创建时间戳
 
@@ -194,7 +194,7 @@ class BatchJobForList:
 
     @property
     def status(self):
-        """Gets the status of this BatchJobForList.
+        r"""Gets the status of this BatchJobForList.
 
         执行状态
 
@@ -205,7 +205,7 @@ class BatchJobForList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchJobForList.
+        r"""Sets the status of this BatchJobForList.
 
         执行状态
 
@@ -216,7 +216,7 @@ class BatchJobForList:
 
     @property
     def task_total_count(self):
-        """Gets the task_total_count of this BatchJobForList.
+        r"""Gets the task_total_count of this BatchJobForList.
 
         任务总数
 
@@ -227,7 +227,7 @@ class BatchJobForList:
 
     @task_total_count.setter
     def task_total_count(self, task_total_count):
-        """Sets the task_total_count of this BatchJobForList.
+        r"""Sets the task_total_count of this BatchJobForList.
 
         任务总数
 
@@ -238,7 +238,7 @@ class BatchJobForList:
 
     @property
     def task_success_count(self):
-        """Gets the task_success_count of this BatchJobForList.
+        r"""Gets the task_success_count of this BatchJobForList.
 
         任务项执行成功数
 
@@ -249,7 +249,7 @@ class BatchJobForList:
 
     @task_success_count.setter
     def task_success_count(self, task_success_count):
-        """Sets the task_success_count of this BatchJobForList.
+        r"""Sets the task_success_count of this BatchJobForList.
 
         任务项执行成功数
 
@@ -260,7 +260,7 @@ class BatchJobForList:
 
     @property
     def task_failed_count(self):
-        """Gets the task_failed_count of this BatchJobForList.
+        r"""Gets the task_failed_count of this BatchJobForList.
 
         任务项执行失败数
 
@@ -271,7 +271,7 @@ class BatchJobForList:
 
     @task_failed_count.setter
     def task_failed_count(self, task_failed_count):
-        """Sets the task_failed_count of this BatchJobForList.
+        r"""Sets the task_failed_count of this BatchJobForList.
 
         任务项执行失败数
 
@@ -282,7 +282,7 @@ class BatchJobForList:
 
     @property
     def status_last_updated_at(self):
-        """Gets the status_last_updated_at of this BatchJobForList.
+        r"""Gets the status_last_updated_at of this BatchJobForList.
 
         状态更新时间戳
 
@@ -293,7 +293,7 @@ class BatchJobForList:
 
     @status_last_updated_at.setter
     def status_last_updated_at(self, status_last_updated_at):
-        """Sets the status_last_updated_at of this BatchJobForList.
+        r"""Sets the status_last_updated_at of this BatchJobForList.
 
         状态更新时间戳
 
@@ -304,7 +304,7 @@ class BatchJobForList:
 
     @property
     def description(self):
-        """Gets the description of this BatchJobForList.
+        r"""Gets the description of this BatchJobForList.
 
         任务描述
 
@@ -315,7 +315,7 @@ class BatchJobForList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchJobForList.
+        r"""Sets the description of this BatchJobForList.
 
         任务描述
 

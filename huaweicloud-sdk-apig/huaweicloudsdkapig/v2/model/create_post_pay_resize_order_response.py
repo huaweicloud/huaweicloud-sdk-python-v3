@@ -30,7 +30,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, message=None, job_id=None):
-        """CreatePostPayResizeOrderResponse
+        r"""CreatePostPayResizeOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostPayResizeOrderResponse.
+        r"""Gets the instance_id of this CreatePostPayResizeOrderResponse.
 
         实例ID
 
@@ -69,7 +69,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostPayResizeOrderResponse.
+        r"""Sets the instance_id of this CreatePostPayResizeOrderResponse.
 
         实例ID
 
@@ -80,7 +80,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreatePostPayResizeOrderResponse.
+        r"""Gets the message of this CreatePostPayResizeOrderResponse.
 
         实例扩容任务信息
 
@@ -91,7 +91,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreatePostPayResizeOrderResponse.
+        r"""Sets the message of this CreatePostPayResizeOrderResponse.
 
         实例扩容任务信息
 
@@ -102,7 +102,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreatePostPayResizeOrderResponse.
+        r"""Gets the job_id of this CreatePostPayResizeOrderResponse.
 
         任务编号
 
@@ -113,7 +113,7 @@ class CreatePostPayResizeOrderResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreatePostPayResizeOrderResponse.
+        r"""Sets the job_id of this CreatePostPayResizeOrderResponse.
 
         任务编号
 

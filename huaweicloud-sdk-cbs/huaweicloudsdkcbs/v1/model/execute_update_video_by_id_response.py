@@ -24,7 +24,7 @@ class ExecuteUpdateVideoByIdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExecuteUpdateVideoByIdResponse
+        r"""ExecuteUpdateVideoByIdResponse
 
         The model defined in huaweicloud sdk
 

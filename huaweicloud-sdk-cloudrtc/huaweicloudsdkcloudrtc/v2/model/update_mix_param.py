@@ -37,7 +37,7 @@ class UpdateMixParam:
     }
 
     def __init__(self, layout_template=None, background_image=None, default_user_background_image=None, screen_background_image=None, max_idle_time=None, layout_panes=None, user_background_images=None):
-        """UpdateMixParam
+        r"""UpdateMixParam
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateMixParam:
 
     @property
     def layout_template(self):
-        """Gets the layout_template of this UpdateMixParam.
+        r"""Gets the layout_template of this UpdateMixParam.
 
         视频布局模板编号，仅支持自定义模板之间的更新。
 
@@ -96,7 +96,7 @@ class UpdateMixParam:
 
     @layout_template.setter
     def layout_template(self, layout_template):
-        """Sets the layout_template of this UpdateMixParam.
+        r"""Sets the layout_template of this UpdateMixParam.
 
         视频布局模板编号，仅支持自定义模板之间的更新。
 
@@ -107,7 +107,7 @@ class UpdateMixParam:
 
     @property
     def background_image(self):
-        """Gets the background_image of this UpdateMixParam.
+        r"""Gets the background_image of this UpdateMixParam.
 
         画布背景图地址，图片先上传obs。默认使用等比缩放裁剪，保证铺满。格式s3://bucket/object
 
@@ -118,7 +118,7 @@ class UpdateMixParam:
 
     @background_image.setter
     def background_image(self, background_image):
-        """Sets the background_image of this UpdateMixParam.
+        r"""Sets the background_image of this UpdateMixParam.
 
         画布背景图地址，图片先上传obs。默认使用等比缩放裁剪，保证铺满。格式s3://bucket/object
 
@@ -129,7 +129,7 @@ class UpdateMixParam:
 
     @property
     def default_user_background_image(self):
-        """Gets the default_user_background_image of this UpdateMixParam.
+        r"""Gets the default_user_background_image of this UpdateMixParam.
 
         默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
@@ -140,7 +140,7 @@ class UpdateMixParam:
 
     @default_user_background_image.setter
     def default_user_background_image(self, default_user_background_image):
-        """Sets the default_user_background_image of this UpdateMixParam.
+        r"""Sets the default_user_background_image of this UpdateMixParam.
 
         默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
@@ -151,7 +151,7 @@ class UpdateMixParam:
 
     @property
     def screen_background_image(self):
-        """Gets the screen_background_image of this UpdateMixParam.
+        r"""Gets the screen_background_image of this UpdateMixParam.
 
         共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
 
@@ -162,7 +162,7 @@ class UpdateMixParam:
 
     @screen_background_image.setter
     def screen_background_image(self, screen_background_image):
-        """Sets the screen_background_image of this UpdateMixParam.
+        r"""Sets the screen_background_image of this UpdateMixParam.
 
         共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
 
@@ -173,7 +173,7 @@ class UpdateMixParam:
 
     @property
     def max_idle_time(self):
-        """Gets the max_idle_time of this UpdateMixParam.
+        r"""Gets the max_idle_time of this UpdateMixParam.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -184,7 +184,7 @@ class UpdateMixParam:
 
     @max_idle_time.setter
     def max_idle_time(self, max_idle_time):
-        """Sets the max_idle_time of this UpdateMixParam.
+        r"""Sets the max_idle_time of this UpdateMixParam.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -195,7 +195,7 @@ class UpdateMixParam:
 
     @property
     def layout_panes(self):
-        """Gets the layout_panes of this UpdateMixParam.
+        r"""Gets the layout_panes of this UpdateMixParam.
 
         需要混流的视频列表。若不需要视频混流，则可不传递该参数。
 
@@ -206,7 +206,7 @@ class UpdateMixParam:
 
     @layout_panes.setter
     def layout_panes(self, layout_panes):
-        """Sets the layout_panes of this UpdateMixParam.
+        r"""Sets the layout_panes of this UpdateMixParam.
 
         需要混流的视频列表。若不需要视频混流，则可不传递该参数。
 
@@ -217,7 +217,7 @@ class UpdateMixParam:
 
     @property
     def user_background_images(self):
-        """Gets the user_background_images of this UpdateMixParam.
+        r"""Gets the user_background_images of this UpdateMixParam.
 
         指定用户背景图，优先级大于default_user_background_image
 
@@ -228,7 +228,7 @@ class UpdateMixParam:
 
     @user_background_images.setter
     def user_background_images(self, user_background_images):
-        """Sets the user_background_images of this UpdateMixParam.
+        r"""Sets the user_background_images of this UpdateMixParam.
 
         指定用户背景图，优先级大于default_user_background_image
 

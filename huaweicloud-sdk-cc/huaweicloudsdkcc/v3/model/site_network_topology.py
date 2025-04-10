@@ -25,7 +25,7 @@ class SiteNetworkTopology:
     }
 
     def __init__(self, topology=None):
-        """SiteNetworkTopology
+        r"""SiteNetworkTopology
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SiteNetworkTopology:
 
     @property
     def topology(self):
-        """Gets the topology of this SiteNetworkTopology.
+        r"""Gets the topology of this SiteNetworkTopology.
 
         :return: The topology of this SiteNetworkTopology.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
@@ -51,7 +51,7 @@ class SiteNetworkTopology:
 
     @topology.setter
     def topology(self, topology):
-        """Sets the topology of this SiteNetworkTopology.
+        r"""Sets the topology of this SiteNetworkTopology.
 
         :param topology: The topology of this SiteNetworkTopology.
         :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`

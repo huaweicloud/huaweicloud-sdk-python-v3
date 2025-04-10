@@ -24,7 +24,7 @@ class SubscribeEndpointResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SubscribeEndpointResponse
+        r"""SubscribeEndpointResponse
 
         The model defined in huaweicloud sdk
 

@@ -53,7 +53,7 @@ class BriefTaskRespBean:
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, created_date=None, version=None, last_modified_time=None, execute_status=None, source_app_id=None, target_app_id=None, source_instance_id=None, target_instance_id=None, ext_type=None, enterprise_project_id=None, task_tag=None):
-        """BriefTaskRespBean
+        r"""BriefTaskRespBean
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class BriefTaskRespBean:
 
     @property
     def task_id(self):
-        """Gets the task_id of this BriefTaskRespBean.
+        r"""Gets the task_id of this BriefTaskRespBean.
 
         任务ID
 
@@ -152,7 +152,7 @@ class BriefTaskRespBean:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this BriefTaskRespBean.
+        r"""Sets the task_id of this BriefTaskRespBean.
 
         任务ID
 
@@ -163,7 +163,7 @@ class BriefTaskRespBean:
 
     @property
     def task_name(self):
-        """Gets the task_name of this BriefTaskRespBean.
+        r"""Gets the task_name of this BriefTaskRespBean.
 
         任务名称
 
@@ -174,7 +174,7 @@ class BriefTaskRespBean:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this BriefTaskRespBean.
+        r"""Sets the task_name of this BriefTaskRespBean.
 
         任务名称
 
@@ -185,7 +185,7 @@ class BriefTaskRespBean:
 
     @property
     def task_type(self):
-        """Gets the task_type of this BriefTaskRespBean.
+        r"""Gets the task_type of this BriefTaskRespBean.
 
         任务类型 - REALTIME (实时) - TIMING (定时)
 
@@ -196,7 +196,7 @@ class BriefTaskRespBean:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this BriefTaskRespBean.
+        r"""Sets the task_type of this BriefTaskRespBean.
 
         任务类型 - REALTIME (实时) - TIMING (定时)
 
@@ -207,7 +207,7 @@ class BriefTaskRespBean:
 
     @property
     def status(self):
-        """Gets the status of this BriefTaskRespBean.
+        r"""Gets the status of this BriefTaskRespBean.
 
         任务状态 - 0 (停止/未启动) - 1 (运行中)
 
@@ -218,7 +218,7 @@ class BriefTaskRespBean:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BriefTaskRespBean.
+        r"""Sets the status of this BriefTaskRespBean.
 
         任务状态 - 0 (停止/未启动) - 1 (运行中)
 
@@ -229,7 +229,7 @@ class BriefTaskRespBean:
 
     @property
     def created_date(self):
-        """Gets the created_date of this BriefTaskRespBean.
+        r"""Gets the created_date of this BriefTaskRespBean.
 
         创建时间
 
@@ -240,7 +240,7 @@ class BriefTaskRespBean:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this BriefTaskRespBean.
+        r"""Sets the created_date of this BriefTaskRespBean.
 
         创建时间
 
@@ -251,7 +251,7 @@ class BriefTaskRespBean:
 
     @property
     def version(self):
-        """Gets the version of this BriefTaskRespBean.
+        r"""Gets the version of this BriefTaskRespBean.
 
         任务的版本
 
@@ -262,7 +262,7 @@ class BriefTaskRespBean:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BriefTaskRespBean.
+        r"""Sets the version of this BriefTaskRespBean.
 
         任务的版本
 
@@ -273,7 +273,7 @@ class BriefTaskRespBean:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this BriefTaskRespBean.
+        r"""Gets the last_modified_time of this BriefTaskRespBean.
 
         上次修改时间
 
@@ -284,7 +284,7 @@ class BriefTaskRespBean:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this BriefTaskRespBean.
+        r"""Sets the last_modified_time of this BriefTaskRespBean.
 
         上次修改时间
 
@@ -295,7 +295,7 @@ class BriefTaskRespBean:
 
     @property
     def execute_status(self):
-        """Gets the execute_status of this BriefTaskRespBean.
+        r"""Gets the execute_status of this BriefTaskRespBean.
 
         任务执行状态  - UNSTARTED (未启动)  - WAITING (等待执行)  - RUNNING (执行中)  - SUCCESS (执行成功)  - CANCELLED (任务取消)  - ERROR (执行异常)
 
@@ -306,7 +306,7 @@ class BriefTaskRespBean:
 
     @execute_status.setter
     def execute_status(self, execute_status):
-        """Sets the execute_status of this BriefTaskRespBean.
+        r"""Sets the execute_status of this BriefTaskRespBean.
 
         任务执行状态  - UNSTARTED (未启动)  - WAITING (等待执行)  - RUNNING (执行中)  - SUCCESS (执行成功)  - CANCELLED (任务取消)  - ERROR (执行异常)
 
@@ -317,7 +317,7 @@ class BriefTaskRespBean:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this BriefTaskRespBean.
+        r"""Gets the source_app_id of this BriefTaskRespBean.
 
         源端数据源所属应用ID
 
@@ -328,7 +328,7 @@ class BriefTaskRespBean:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this BriefTaskRespBean.
+        r"""Sets the source_app_id of this BriefTaskRespBean.
 
         源端数据源所属应用ID
 
@@ -339,7 +339,7 @@ class BriefTaskRespBean:
 
     @property
     def target_app_id(self):
-        """Gets the target_app_id of this BriefTaskRespBean.
+        r"""Gets the target_app_id of this BriefTaskRespBean.
 
         目标端数据源所属应用ID
 
@@ -350,7 +350,7 @@ class BriefTaskRespBean:
 
     @target_app_id.setter
     def target_app_id(self, target_app_id):
-        """Sets the target_app_id of this BriefTaskRespBean.
+        r"""Sets the target_app_id of this BriefTaskRespBean.
 
         目标端数据源所属应用ID
 
@@ -361,7 +361,7 @@ class BriefTaskRespBean:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this BriefTaskRespBean.
+        r"""Gets the source_instance_id of this BriefTaskRespBean.
 
         源端实例ID
 
@@ -372,7 +372,7 @@ class BriefTaskRespBean:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this BriefTaskRespBean.
+        r"""Sets the source_instance_id of this BriefTaskRespBean.
 
         源端实例ID
 
@@ -383,7 +383,7 @@ class BriefTaskRespBean:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this BriefTaskRespBean.
+        r"""Gets the target_instance_id of this BriefTaskRespBean.
 
         目标端实例ID
 
@@ -394,7 +394,7 @@ class BriefTaskRespBean:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this BriefTaskRespBean.
+        r"""Sets the target_instance_id of this BriefTaskRespBean.
 
         目标端实例ID
 
@@ -405,7 +405,7 @@ class BriefTaskRespBean:
 
     @property
     def ext_type(self):
-        """Gets the ext_type of this BriefTaskRespBean.
+        r"""Gets the ext_type of this BriefTaskRespBean.
 
         组合任务类型, 可为空
 
@@ -416,7 +416,7 @@ class BriefTaskRespBean:
 
     @ext_type.setter
     def ext_type(self, ext_type):
-        """Sets the ext_type of this BriefTaskRespBean.
+        r"""Sets the ext_type of this BriefTaskRespBean.
 
         组合任务类型, 可为空
 
@@ -427,7 +427,7 @@ class BriefTaskRespBean:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BriefTaskRespBean.
+        r"""Gets the enterprise_project_id of this BriefTaskRespBean.
 
         企业项目id
 
@@ -438,7 +438,7 @@ class BriefTaskRespBean:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BriefTaskRespBean.
+        r"""Sets the enterprise_project_id of this BriefTaskRespBean.
 
         企业项目id
 
@@ -449,7 +449,7 @@ class BriefTaskRespBean:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this BriefTaskRespBean.
+        r"""Gets the task_tag of this BriefTaskRespBean.
 
         任务标签
 
@@ -460,7 +460,7 @@ class BriefTaskRespBean:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this BriefTaskRespBean.
+        r"""Sets the task_tag of this BriefTaskRespBean.
 
         任务标签
 

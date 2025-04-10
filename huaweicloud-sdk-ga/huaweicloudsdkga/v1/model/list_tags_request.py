@@ -29,7 +29,7 @@ class ListTagsRequest:
     }
 
     def __init__(self, resource_type=None, limit=None, offset=None):
-        """ListTagsRequest
+        r"""ListTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagsRequest.
+        r"""Gets the resource_type of this ListTagsRequest.
 
         资源类型。
 
@@ -67,7 +67,7 @@ class ListTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagsRequest.
+        r"""Sets the resource_type of this ListTagsRequest.
 
         资源类型。
 
@@ -78,7 +78,7 @@ class ListTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagsRequest.
+        r"""Gets the limit of this ListTagsRequest.
 
         每页返回的个数。
 
@@ -89,7 +89,7 @@ class ListTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagsRequest.
+        r"""Sets the limit of this ListTagsRequest.
 
         每页返回的个数。
 
@@ -100,7 +100,7 @@ class ListTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagsRequest.
+        r"""Gets the offset of this ListTagsRequest.
 
         偏移量。
 
@@ -111,7 +111,7 @@ class ListTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagsRequest.
+        r"""Sets the offset of this ListTagsRequest.
 
         偏移量。
 

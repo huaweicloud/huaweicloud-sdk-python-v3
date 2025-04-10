@@ -25,7 +25,7 @@ class ModifyParameterReq:
     }
 
     def __init__(self, values=None):
-        """ModifyParameterReq
+        r"""ModifyParameterReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyParameterReq:
 
     @property
     def values(self):
-        """Gets the values of this ModifyParameterReq.
+        r"""Gets the values of this ModifyParameterReq.
 
         参数值对象，基于默认参数模板初始化的参数值。  key：参数名称，如“applier_thread_num”，“read_task_num”。为空时不修改参数值。 value：参数值，如“6”，“20”。key不为空时value也不可为空。
 
@@ -53,7 +53,7 @@ class ModifyParameterReq:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ModifyParameterReq.
+        r"""Sets the values of this ModifyParameterReq.
 
         参数值对象，基于默认参数模板初始化的参数值。  key：参数名称，如“applier_thread_num”，“read_task_num”。为空时不修改参数值。 value：参数值，如“6”，“20”。key不为空时value也不可为空。
 

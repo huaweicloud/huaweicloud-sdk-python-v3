@@ -28,7 +28,7 @@ class ListRunningTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListRunningTaskResponse
+        r"""ListRunningTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRunningTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRunningTaskResponse.
+        r"""Gets the total of this ListRunningTaskResponse.
 
         正在处理的任务总数。
 
@@ -62,7 +62,7 @@ class ListRunningTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRunningTaskResponse.
+        r"""Sets the total of this ListRunningTaskResponse.
 
         正在处理的任务总数。
 
@@ -73,7 +73,7 @@ class ListRunningTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListRunningTaskResponse.
+        r"""Gets the tasks of this ListRunningTaskResponse.
 
         正在处理的任务列表。
 
@@ -84,7 +84,7 @@ class ListRunningTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListRunningTaskResponse.
+        r"""Sets the tasks of this ListRunningTaskResponse.
 
         正在处理的任务列表。
 

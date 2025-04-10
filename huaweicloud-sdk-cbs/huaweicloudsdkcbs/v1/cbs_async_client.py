@@ -34,7 +34,7 @@ class CbsAsyncClient(Client):
         return client_builder
 
     def collect_hot_questions_async(self, request):
-        """热点问题统计
+        r"""热点问题统计
 
         获取完全匹配的热点标准问题列表。
         默认按照完全匹配标准问题被问及的频次降序排序。
@@ -112,7 +112,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def collect_key_words_async(self, request):
-        """关键词统计
+        r"""关键词统计
 
         用户问关键词统计。
         
@@ -183,7 +183,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def collect_reply_rates_async(self, request):
-        """问答统计
+        r"""问答统计
 
         指定领域获取指定时间范围内的问题答复率，支持按周期统计。
         如果领域未指定则表示获取所有领域的问题答复率。
@@ -259,7 +259,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def collect_session_stats_async(self, request):
-        """访问统计
+        r"""访问统计
 
         获取用户会话统计信息。
         
@@ -332,7 +332,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def create_session_async(self, request):
-        """开启会话
+        r"""开启会话
 
         问答会话API由开启会话、处理会话、关闭会话三个接口组成。用户可通过调用该接口创建会话。该接口仅支持老用户，新用户请优先使用问答机器人API接口进行调用。
         
@@ -399,7 +399,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def delete_session_async(self, request):
-        """关闭会话
+        r"""关闭会话
 
         问答会话API由开启会话、处理会话、关闭会话三个接口组成。用户可通过调用该接口关闭会话。该接口即将下线，请优先使用问答机器人API接口进行调用。
         
@@ -468,7 +468,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_compose_video_async(self, request):
-        """合成视频(按包周期收费)
+        r"""合成视频(按包周期收费)
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -532,7 +532,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_compose_video_ondemand_async(self, request):
-        """合成视频(按需收费)
+        r"""合成视频(按需收费)
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -596,7 +596,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_create_video_async(self, request):
-        """创建视频
+        r"""创建视频
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -660,7 +660,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_delete_video_by_id_async(self, request):
-        """删除视频
+        r"""删除视频
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -724,7 +724,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_deleteimage_by_id_async(self, request):
-        """删除图片
+        r"""删除图片
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -788,7 +788,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_get_character_info_by_id_async(self, request):
-        """获取形象详情
+        r"""获取形象详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -852,7 +852,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_get_characters_async(self, request):
-        """获取形象列表
+        r"""获取形象列表
 
         TODO:
         
@@ -931,7 +931,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_get_frams_list_by_images_id_async(self, request):
-        """获取播报框
+        r"""获取播报框
 
         获取指定图片可用的播报框列表
         
@@ -1000,7 +1000,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_get_images_list_async(self, request):
-        """获取图片列表
+        r"""获取图片列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1070,7 +1070,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_get_video_info_by_id_async(self, request):
-        """获取视频详情
+        r"""获取视频详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1134,7 +1134,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_get_videos_list_async(self, request):
-        """获取视频列表
+        r"""获取视频列表
 
         该接口用于获取视频列表。
         
@@ -1203,7 +1203,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_post_create_images_async(self, request):
-        """创建图片
+        r"""创建图片
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1275,7 +1275,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_qa_chat_async(self, request):
-        """问答机器人会话
+        r"""问答机器人会话
 
         用户调用该接口和机器人进行聊天。
         
@@ -1342,7 +1342,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_session_async(self, request):
-        """处理会话
+        r"""处理会话
 
         问答会话API由开启会话、处理会话、关闭会话三个接口组成。用户可通过调用该接口与机器人进行会话。该接口即将下线，请优先使用问答机器人API接口进行调用。
         
@@ -1413,7 +1413,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_update_image_name_async(self, request):
-        """修改图片名
+        r"""修改图片名
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1479,7 +1479,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_update_video_by_id_async(self, request):
-        """更新视频名
+        r"""更新视频名
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1545,7 +1545,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_update_video_info_by_id_async(self, request):
-        """配置视频
+        r"""配置视频
 
         通过该接口配置视频
         
@@ -1612,7 +1612,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_upload_image_async(self, request):
-        """上传播报插图
+        r"""上传播报插图
 
         上传图片并生成图片链接，图片需小于10m；
         同一个视频同时最多支持50张插图。
@@ -1684,7 +1684,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def execute_upload_ppt_async(self, request):
-        """通过pdf上传多张插图
+        r"""通过pdf上传多张插图
 
         当前仅支持上传PDF，如有PPT请将PPT转化为PDF再进行上传，文件需小于10m；
         该接口会将pdf每一页转换图片，并生成链接；
@@ -1755,7 +1755,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def list_suggestions_async(self, request):
-        """获取问题提示
+        r"""获取问题提示
 
         获取用户输入问题的提示问题列表。
         
@@ -1822,7 +1822,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def tag_labor_async(self, request):
-        """标记为转人工
+        r"""标记为转人工
 
         智能问答返回的结果后，用户是否转人工。
         
@@ -1889,7 +1889,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def tag_satisfaction_async(self, request):
-        """问答满意评价
+        r"""问答满意评价
 
         用户提出问题后，对智能问答返回的结果是否满意。
         
@@ -1958,7 +1958,7 @@ class CbsAsyncClient(Client):
         return http_info
 
     def post_requests_async(self, request):
-        """PostRequests
+        r"""PostRequests
 
         问答服务的输入为用户提问，输出是与输入最匹配的Top N(默认为top5)个知识点，知识点按得分从高到低排序。
         

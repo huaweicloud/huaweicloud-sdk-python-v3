@@ -27,7 +27,7 @@ class RestoreTableRequest:
     }
 
     def __init__(self, snapshot_id=None, body=None):
-        """RestoreTableRequest
+        r"""RestoreTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreTableRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this RestoreTableRequest.
+        r"""Gets the snapshot_id of this RestoreTableRequest.
 
         快照ID
 
@@ -60,7 +60,7 @@ class RestoreTableRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this RestoreTableRequest.
+        r"""Sets the snapshot_id of this RestoreTableRequest.
 
         快照ID
 
@@ -71,7 +71,7 @@ class RestoreTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreTableRequest.
+        r"""Gets the body of this RestoreTableRequest.
 
         :return: The body of this RestoreTableRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreTableRequestBody`
@@ -80,7 +80,7 @@ class RestoreTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreTableRequest.
+        r"""Sets the body of this RestoreTableRequest.
 
         :param body: The body of this RestoreTableRequest.
         :type body: :class:`huaweicloudsdkdws.v2.RestoreTableRequestBody`

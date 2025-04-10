@@ -25,7 +25,7 @@ class MigrateServerOption:
     }
 
     def __init__(self, dedicated_host_id=None):
-        """MigrateServerOption
+        r"""MigrateServerOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MigrateServerOption:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this MigrateServerOption.
+        r"""Gets the dedicated_host_id of this MigrateServerOption.
 
         专属主机ID。 当弹性云服务器从公共资源池迁移至专属主机上，或者弹性云服务器在专属主机之间迁移时，该字段生效。
 
@@ -54,7 +54,7 @@ class MigrateServerOption:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this MigrateServerOption.
+        r"""Sets the dedicated_host_id of this MigrateServerOption.
 
         专属主机ID。 当弹性云服务器从公共资源池迁移至专属主机上，或者弹性云服务器在专属主机之间迁移时，该字段生效。
 

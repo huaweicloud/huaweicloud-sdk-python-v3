@@ -25,7 +25,7 @@ class VaultDissociate:
     }
 
     def __init__(self, policy_id=None):
-        """VaultDissociate
+        r"""VaultDissociate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VaultDissociate:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this VaultDissociate.
+        r"""Gets the policy_id of this VaultDissociate.
 
         策略ID
 
@@ -53,7 +53,7 @@ class VaultDissociate:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this VaultDissociate.
+        r"""Sets the policy_id of this VaultDissociate.
 
         策略ID
 

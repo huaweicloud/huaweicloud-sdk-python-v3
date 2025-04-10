@@ -25,7 +25,7 @@ class BatchDeleteScheduleTaskRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteScheduleTaskRequest
+        r"""BatchDeleteScheduleTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteScheduleTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteScheduleTaskRequest.
+        r"""Gets the body of this BatchDeleteScheduleTaskRequest.
 
         :return: The body of this BatchDeleteScheduleTaskRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteScheduleTaskReq`
@@ -52,7 +52,7 @@ class BatchDeleteScheduleTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteScheduleTaskRequest.
+        r"""Sets the body of this BatchDeleteScheduleTaskRequest.
 
         :param body: The body of this BatchDeleteScheduleTaskRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteScheduleTaskReq`

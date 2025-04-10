@@ -27,7 +27,7 @@ class DeploymentHostsCopyRequest:
     }
 
     def __init__(self, host_uuids=None, target_group_id=None):
-        """DeploymentHostsCopyRequest
+        r"""DeploymentHostsCopyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeploymentHostsCopyRequest:
 
     @property
     def host_uuids(self):
-        """Gets the host_uuids of this DeploymentHostsCopyRequest.
+        r"""Gets the host_uuids of this DeploymentHostsCopyRequest.
 
         主机id列表
 
@@ -59,7 +59,7 @@ class DeploymentHostsCopyRequest:
 
     @host_uuids.setter
     def host_uuids(self, host_uuids):
-        """Sets the host_uuids of this DeploymentHostsCopyRequest.
+        r"""Sets the host_uuids of this DeploymentHostsCopyRequest.
 
         主机id列表
 
@@ -70,7 +70,7 @@ class DeploymentHostsCopyRequest:
 
     @property
     def target_group_id(self):
-        """Gets the target_group_id of this DeploymentHostsCopyRequest.
+        r"""Gets the target_group_id of this DeploymentHostsCopyRequest.
 
         目标主机集群id
 
@@ -81,7 +81,7 @@ class DeploymentHostsCopyRequest:
 
     @target_group_id.setter
     def target_group_id(self, target_group_id):
-        """Sets the target_group_id of this DeploymentHostsCopyRequest.
+        r"""Sets the target_group_id of this DeploymentHostsCopyRequest.
 
         目标主机集群id
 

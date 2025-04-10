@@ -27,7 +27,7 @@ class CriteriaSnake:
     }
 
     def __init__(self, filter_type=None, value=None):
-        """CriteriaSnake
+        r"""CriteriaSnake
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CriteriaSnake:
 
     @property
     def filter_type(self):
-        """Gets the filter_type of this CriteriaSnake.
+        r"""Gets the filter_type of this CriteriaSnake.
 
         过滤类型 - 1 按插件Tag过滤 - 2 按diplayName过滤 - 3 按publisherId过滤 - 4 按插件Id过滤 - 5 按插件分类过滤 - 7 按照作者名.插件名过滤 - 8 按Target（客户端）过滤 - 10 按关键字（客户端输入的）过滤 - 12 根据flags传入的值来进行过滤,eg:flags=2name就排除flags=2的插件. - 13 根据flags传入的值来进行过滤,eg:flags=2name就查询出flags=2的插件 - 18 按publisherName过滤 - 19 按publisherDisplayName过滤 - 102 按照插件状态排除插件 - 103 按照插件状态过滤出插件 - 107 supportIdeInfo - 108 根据插件ids查询
 
@@ -61,7 +61,7 @@ class CriteriaSnake:
 
     @filter_type.setter
     def filter_type(self, filter_type):
-        """Sets the filter_type of this CriteriaSnake.
+        r"""Sets the filter_type of this CriteriaSnake.
 
         过滤类型 - 1 按插件Tag过滤 - 2 按diplayName过滤 - 3 按publisherId过滤 - 4 按插件Id过滤 - 5 按插件分类过滤 - 7 按照作者名.插件名过滤 - 8 按Target（客户端）过滤 - 10 按关键字（客户端输入的）过滤 - 12 根据flags传入的值来进行过滤,eg:flags=2name就排除flags=2的插件. - 13 根据flags传入的值来进行过滤,eg:flags=2name就查询出flags=2的插件 - 18 按publisherName过滤 - 19 按publisherDisplayName过滤 - 102 按照插件状态排除插件 - 103 按照插件状态过滤出插件 - 107 supportIdeInfo - 108 根据插件ids查询
 
@@ -72,7 +72,7 @@ class CriteriaSnake:
 
     @property
     def value(self):
-        """Gets the value of this CriteriaSnake.
+        r"""Gets the value of this CriteriaSnake.
 
         过滤类型对应字段名称
 
@@ -83,7 +83,7 @@ class CriteriaSnake:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CriteriaSnake.
+        r"""Sets the value of this CriteriaSnake.
 
         过滤类型对应字段名称
 

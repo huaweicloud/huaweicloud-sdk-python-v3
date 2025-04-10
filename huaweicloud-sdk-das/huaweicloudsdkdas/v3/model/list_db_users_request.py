@@ -35,7 +35,7 @@ class ListDbUsersRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, db_user_id=None, db_username=None, x_language=None):
-        """ListDbUsersRequest
+        r"""ListDbUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListDbUsersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDbUsersRequest.
+        r"""Gets the instance_id of this ListDbUsersRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListDbUsersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDbUsersRequest.
+        r"""Sets the instance_id of this ListDbUsersRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListDbUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDbUsersRequest.
+        r"""Gets the offset of this ListDbUsersRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -110,7 +110,7 @@ class ListDbUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDbUsersRequest.
+        r"""Sets the offset of this ListDbUsersRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -121,7 +121,7 @@ class ListDbUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDbUsersRequest.
+        r"""Gets the limit of this ListDbUsersRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -132,7 +132,7 @@ class ListDbUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDbUsersRequest.
+        r"""Sets the limit of this ListDbUsersRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -143,7 +143,7 @@ class ListDbUsersRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this ListDbUsersRequest.
+        r"""Gets the db_user_id of this ListDbUsersRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -154,7 +154,7 @@ class ListDbUsersRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this ListDbUsersRequest.
+        r"""Sets the db_user_id of this ListDbUsersRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -165,7 +165,7 @@ class ListDbUsersRequest:
 
     @property
     def db_username(self):
-        """Gets the db_username of this ListDbUsersRequest.
+        r"""Gets the db_username of this ListDbUsersRequest.
 
         数据库用户名称
 
@@ -176,7 +176,7 @@ class ListDbUsersRequest:
 
     @db_username.setter
     def db_username(self, db_username):
-        """Sets the db_username of this ListDbUsersRequest.
+        r"""Sets the db_username of this ListDbUsersRequest.
 
         数据库用户名称
 
@@ -187,7 +187,7 @@ class ListDbUsersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDbUsersRequest.
+        r"""Gets the x_language of this ListDbUsersRequest.
 
         语言
 
@@ -198,7 +198,7 @@ class ListDbUsersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDbUsersRequest.
+        r"""Sets the x_language of this ListDbUsersRequest.
 
         语言
 

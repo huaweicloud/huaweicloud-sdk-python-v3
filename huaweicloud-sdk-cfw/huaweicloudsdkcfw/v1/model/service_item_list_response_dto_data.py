@@ -33,7 +33,7 @@ class ServiceItemListResponseDtoData:
     }
 
     def __init__(self, offset=None, limit=None, total=None, set_id=None, records=None):
-        """ServiceItemListResponseDtoData
+        r"""ServiceItemListResponseDtoData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ServiceItemListResponseDtoData:
 
     @property
     def offset(self):
-        """Gets the offset of this ServiceItemListResponseDtoData.
+        r"""Gets the offset of this ServiceItemListResponseDtoData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -82,7 +82,7 @@ class ServiceItemListResponseDtoData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ServiceItemListResponseDtoData.
+        r"""Sets the offset of this ServiceItemListResponseDtoData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -93,7 +93,7 @@ class ServiceItemListResponseDtoData:
 
     @property
     def limit(self):
-        """Gets the limit of this ServiceItemListResponseDtoData.
+        r"""Gets the limit of this ServiceItemListResponseDtoData.
 
         每页显示个数，范围为1-1024
 
@@ -104,7 +104,7 @@ class ServiceItemListResponseDtoData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ServiceItemListResponseDtoData.
+        r"""Sets the limit of this ServiceItemListResponseDtoData.
 
         每页显示个数，范围为1-1024
 
@@ -115,7 +115,7 @@ class ServiceItemListResponseDtoData:
 
     @property
     def total(self):
-        """Gets the total of this ServiceItemListResponseDtoData.
+        r"""Gets the total of this ServiceItemListResponseDtoData.
 
         服务组成员总数
 
@@ -126,7 +126,7 @@ class ServiceItemListResponseDtoData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ServiceItemListResponseDtoData.
+        r"""Sets the total of this ServiceItemListResponseDtoData.
 
         服务组成员总数
 
@@ -137,7 +137,7 @@ class ServiceItemListResponseDtoData:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ServiceItemListResponseDtoData.
+        r"""Gets the set_id of this ServiceItemListResponseDtoData.
 
         服务组id
 
@@ -148,7 +148,7 @@ class ServiceItemListResponseDtoData:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ServiceItemListResponseDtoData.
+        r"""Sets the set_id of this ServiceItemListResponseDtoData.
 
         服务组id
 
@@ -159,7 +159,7 @@ class ServiceItemListResponseDtoData:
 
     @property
     def records(self):
-        """Gets the records of this ServiceItemListResponseDtoData.
+        r"""Gets the records of this ServiceItemListResponseDtoData.
 
         记录
 
@@ -170,7 +170,7 @@ class ServiceItemListResponseDtoData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ServiceItemListResponseDtoData.
+        r"""Sets the records of this ServiceItemListResponseDtoData.
 
         记录
 

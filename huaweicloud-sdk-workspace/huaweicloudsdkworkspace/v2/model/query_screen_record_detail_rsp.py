@@ -51,7 +51,7 @@ class QueryScreenRecordDetailRsp:
     }
 
     def __init__(self, id=None, desktop_id=None, desktop_name=None, desktop_pool_id=None, username=None, size=None, type=None, status=None, video_filename=None, event_filename=None, start_time=None, end_time=None, update_time=None, duration=None):
-        """QueryScreenRecordDetailRsp
+        r"""QueryScreenRecordDetailRsp
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def id(self):
-        """Gets the id of this QueryScreenRecordDetailRsp.
+        r"""Gets the id of this QueryScreenRecordDetailRsp.
 
         主键UUID。
 
@@ -145,7 +145,7 @@ class QueryScreenRecordDetailRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryScreenRecordDetailRsp.
+        r"""Sets the id of this QueryScreenRecordDetailRsp.
 
         主键UUID。
 
@@ -156,7 +156,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this QueryScreenRecordDetailRsp.
+        r"""Gets the desktop_id of this QueryScreenRecordDetailRsp.
 
         桌面ID。
 
@@ -167,7 +167,7 @@ class QueryScreenRecordDetailRsp:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this QueryScreenRecordDetailRsp.
+        r"""Sets the desktop_id of this QueryScreenRecordDetailRsp.
 
         桌面ID。
 
@@ -178,7 +178,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this QueryScreenRecordDetailRsp.
+        r"""Gets the desktop_name of this QueryScreenRecordDetailRsp.
 
         桌面名称。
 
@@ -189,7 +189,7 @@ class QueryScreenRecordDetailRsp:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this QueryScreenRecordDetailRsp.
+        r"""Sets the desktop_name of this QueryScreenRecordDetailRsp.
 
         桌面名称。
 
@@ -200,7 +200,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this QueryScreenRecordDetailRsp.
+        r"""Gets the desktop_pool_id of this QueryScreenRecordDetailRsp.
 
         桌面池ID。
 
@@ -211,7 +211,7 @@ class QueryScreenRecordDetailRsp:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this QueryScreenRecordDetailRsp.
+        r"""Sets the desktop_pool_id of this QueryScreenRecordDetailRsp.
 
         桌面池ID。
 
@@ -222,7 +222,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def username(self):
-        """Gets the username of this QueryScreenRecordDetailRsp.
+        r"""Gets the username of this QueryScreenRecordDetailRsp.
 
         用户名称。
 
@@ -233,7 +233,7 @@ class QueryScreenRecordDetailRsp:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this QueryScreenRecordDetailRsp.
+        r"""Sets the username of this QueryScreenRecordDetailRsp.
 
         用户名称。
 
@@ -244,7 +244,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def size(self):
-        """Gets the size of this QueryScreenRecordDetailRsp.
+        r"""Gets the size of this QueryScreenRecordDetailRsp.
 
         文件大小（Byte）。
 
@@ -255,7 +255,7 @@ class QueryScreenRecordDetailRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this QueryScreenRecordDetailRsp.
+        r"""Sets the size of this QueryScreenRecordDetailRsp.
 
         文件大小（Byte）。
 
@@ -266,7 +266,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def type(self):
-        """Gets the type of this QueryScreenRecordDetailRsp.
+        r"""Gets the type of this QueryScreenRecordDetailRsp.
 
         录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
 
@@ -277,7 +277,7 @@ class QueryScreenRecordDetailRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryScreenRecordDetailRsp.
+        r"""Sets the type of this QueryScreenRecordDetailRsp.
 
         录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
 
@@ -288,7 +288,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def status(self):
-        """Gets the status of this QueryScreenRecordDetailRsp.
+        r"""Gets the status of this QueryScreenRecordDetailRsp.
 
         录屏状态。 - RECORDING：录制中。 - REC_COMPLETED：录制完成。 - REC_FAILED：录制失败。 - UPLOADING：上传中。 - UPLOAD_COMPLETED：上传完成。 - UPLOAD_FAILED：上传失败。
 
@@ -299,7 +299,7 @@ class QueryScreenRecordDetailRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryScreenRecordDetailRsp.
+        r"""Sets the status of this QueryScreenRecordDetailRsp.
 
         录屏状态。 - RECORDING：录制中。 - REC_COMPLETED：录制完成。 - REC_FAILED：录制失败。 - UPLOADING：上传中。 - UPLOAD_COMPLETED：上传完成。 - UPLOAD_FAILED：上传失败。
 
@@ -310,7 +310,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def video_filename(self):
-        """Gets the video_filename of this QueryScreenRecordDetailRsp.
+        r"""Gets the video_filename of this QueryScreenRecordDetailRsp.
 
         录屏文件名称。
 
@@ -321,7 +321,7 @@ class QueryScreenRecordDetailRsp:
 
     @video_filename.setter
     def video_filename(self, video_filename):
-        """Sets the video_filename of this QueryScreenRecordDetailRsp.
+        r"""Sets the video_filename of this QueryScreenRecordDetailRsp.
 
         录屏文件名称。
 
@@ -332,7 +332,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def event_filename(self):
-        """Gets the event_filename of this QueryScreenRecordDetailRsp.
+        r"""Gets the event_filename of this QueryScreenRecordDetailRsp.
 
         事件文件名称。
 
@@ -343,7 +343,7 @@ class QueryScreenRecordDetailRsp:
 
     @event_filename.setter
     def event_filename(self, event_filename):
-        """Sets the event_filename of this QueryScreenRecordDetailRsp.
+        r"""Sets the event_filename of this QueryScreenRecordDetailRsp.
 
         事件文件名称。
 
@@ -354,7 +354,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryScreenRecordDetailRsp.
+        r"""Gets the start_time of this QueryScreenRecordDetailRsp.
 
         开始时间（2024-10-15T10:04:41.263Z）。
 
@@ -365,7 +365,7 @@ class QueryScreenRecordDetailRsp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryScreenRecordDetailRsp.
+        r"""Sets the start_time of this QueryScreenRecordDetailRsp.
 
         开始时间（2024-10-15T10:04:41.263Z）。
 
@@ -376,7 +376,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryScreenRecordDetailRsp.
+        r"""Gets the end_time of this QueryScreenRecordDetailRsp.
 
         结束时间（2024-10-15T11:04:41.263Z）。
 
@@ -387,7 +387,7 @@ class QueryScreenRecordDetailRsp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryScreenRecordDetailRsp.
+        r"""Sets the end_time of this QueryScreenRecordDetailRsp.
 
         结束时间（2024-10-15T11:04:41.263Z）。
 
@@ -398,7 +398,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryScreenRecordDetailRsp.
+        r"""Gets the update_time of this QueryScreenRecordDetailRsp.
 
         更新时间（2024-10-15T11:04:41.263Z）。
 
@@ -409,7 +409,7 @@ class QueryScreenRecordDetailRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryScreenRecordDetailRsp.
+        r"""Sets the update_time of this QueryScreenRecordDetailRsp.
 
         更新时间（2024-10-15T11:04:41.263Z）。
 
@@ -420,7 +420,7 @@ class QueryScreenRecordDetailRsp:
 
     @property
     def duration(self):
-        """Gets the duration of this QueryScreenRecordDetailRsp.
+        r"""Gets the duration of this QueryScreenRecordDetailRsp.
 
         视频时长（秒）。
 
@@ -431,7 +431,7 @@ class QueryScreenRecordDetailRsp:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this QueryScreenRecordDetailRsp.
+        r"""Sets the duration of this QueryScreenRecordDetailRsp.
 
         视频时长（秒）。
 

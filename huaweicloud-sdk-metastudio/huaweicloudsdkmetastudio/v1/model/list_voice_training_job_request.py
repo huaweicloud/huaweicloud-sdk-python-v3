@@ -53,7 +53,7 @@ class ListVoiceTrainingJobRequest:
     }
 
     def __init__(self, offset=None, limit=None, create_until=None, create_since=None, update_until=None, update_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None, batch_name=None, sort_key=None, sort_dir=None):
-        """ListVoiceTrainingJobRequest
+        r"""ListVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVoiceTrainingJobRequest.
+        r"""Gets the offset of this ListVoiceTrainingJobRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -152,7 +152,7 @@ class ListVoiceTrainingJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVoiceTrainingJobRequest.
+        r"""Sets the offset of this ListVoiceTrainingJobRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -163,7 +163,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVoiceTrainingJobRequest.
+        r"""Gets the limit of this ListVoiceTrainingJobRequest.
 
         每页显示的条目数量。
 
@@ -174,7 +174,7 @@ class ListVoiceTrainingJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVoiceTrainingJobRequest.
+        r"""Sets the limit of this ListVoiceTrainingJobRequest.
 
         每页显示的条目数量。
 
@@ -185,7 +185,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListVoiceTrainingJobRequest.
+        r"""Gets the create_until of this ListVoiceTrainingJobRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -196,7 +196,7 @@ class ListVoiceTrainingJobRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListVoiceTrainingJobRequest.
+        r"""Sets the create_until of this ListVoiceTrainingJobRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -207,7 +207,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListVoiceTrainingJobRequest.
+        r"""Gets the create_since of this ListVoiceTrainingJobRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -218,7 +218,7 @@ class ListVoiceTrainingJobRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListVoiceTrainingJobRequest.
+        r"""Sets the create_since of this ListVoiceTrainingJobRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -229,7 +229,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def update_until(self):
-        """Gets the update_until of this ListVoiceTrainingJobRequest.
+        r"""Gets the update_until of this ListVoiceTrainingJobRequest.
 
         过滤更新时间<=输入时间的记录。
 
@@ -240,7 +240,7 @@ class ListVoiceTrainingJobRequest:
 
     @update_until.setter
     def update_until(self, update_until):
-        """Sets the update_until of this ListVoiceTrainingJobRequest.
+        r"""Sets the update_until of this ListVoiceTrainingJobRequest.
 
         过滤更新时间<=输入时间的记录。
 
@@ -251,7 +251,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def update_since(self):
-        """Gets the update_since of this ListVoiceTrainingJobRequest.
+        r"""Gets the update_since of this ListVoiceTrainingJobRequest.
 
         过滤更新时间>=输入时间的记录。
 
@@ -262,7 +262,7 @@ class ListVoiceTrainingJobRequest:
 
     @update_since.setter
     def update_since(self, update_since):
-        """Sets the update_since of this ListVoiceTrainingJobRequest.
+        r"""Sets the update_since of this ListVoiceTrainingJobRequest.
 
         过滤更新时间>=输入时间的记录。
 
@@ -273,7 +273,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListVoiceTrainingJobRequest.
+        r"""Gets the x_app_user_id of this ListVoiceTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -284,7 +284,7 @@ class ListVoiceTrainingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListVoiceTrainingJobRequest.
+        r"""Sets the x_app_user_id of this ListVoiceTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -295,7 +295,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListVoiceTrainingJobRequest.
+        r"""Gets the state of this ListVoiceTrainingJobRequest.
 
         任务状态，默认所有状态。 可多个状态查询，使用英文逗号分隔。 如state=FAILED,WAITING
 
@@ -306,7 +306,7 @@ class ListVoiceTrainingJobRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListVoiceTrainingJobRequest.
+        r"""Sets the state of this ListVoiceTrainingJobRequest.
 
         任务状态，默认所有状态。 可多个状态查询，使用英文逗号分隔。 如state=FAILED,WAITING
 
@@ -317,7 +317,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListVoiceTrainingJobRequest.
+        r"""Gets the job_id of this ListVoiceTrainingJobRequest.
 
         任务id。
 
@@ -328,7 +328,7 @@ class ListVoiceTrainingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListVoiceTrainingJobRequest.
+        r"""Sets the job_id of this ListVoiceTrainingJobRequest.
 
         任务id。
 
@@ -339,7 +339,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def voice_name(self):
-        """Gets the voice_name of this ListVoiceTrainingJobRequest.
+        r"""Gets the voice_name of this ListVoiceTrainingJobRequest.
 
         声音名称。
 
@@ -350,7 +350,7 @@ class ListVoiceTrainingJobRequest:
 
     @voice_name.setter
     def voice_name(self, voice_name):
-        """Sets the voice_name of this ListVoiceTrainingJobRequest.
+        r"""Sets the voice_name of this ListVoiceTrainingJobRequest.
 
         声音名称。
 
@@ -361,7 +361,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListVoiceTrainingJobRequest.
+        r"""Gets the tag of this ListVoiceTrainingJobRequest.
 
         任务标签。
 
@@ -372,7 +372,7 @@ class ListVoiceTrainingJobRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListVoiceTrainingJobRequest.
+        r"""Sets the tag of this ListVoiceTrainingJobRequest.
 
         任务标签。
 
@@ -383,7 +383,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListVoiceTrainingJobRequest.
+        r"""Gets the job_type of this ListVoiceTrainingJobRequest.
 
         训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
 
@@ -394,7 +394,7 @@ class ListVoiceTrainingJobRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListVoiceTrainingJobRequest.
+        r"""Sets the job_type of this ListVoiceTrainingJobRequest.
 
         训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
 
@@ -405,7 +405,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this ListVoiceTrainingJobRequest.
+        r"""Gets the batch_name of this ListVoiceTrainingJobRequest.
 
         批次名称。
 
@@ -416,7 +416,7 @@ class ListVoiceTrainingJobRequest:
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this ListVoiceTrainingJobRequest.
+        r"""Sets the batch_name of this ListVoiceTrainingJobRequest.
 
         批次名称。
 
@@ -427,7 +427,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListVoiceTrainingJobRequest.
+        r"""Gets the sort_key of this ListVoiceTrainingJobRequest.
 
         排序字段，当前支持：ceate_time/update_time
 
@@ -438,7 +438,7 @@ class ListVoiceTrainingJobRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListVoiceTrainingJobRequest.
+        r"""Sets the sort_key of this ListVoiceTrainingJobRequest.
 
         排序字段，当前支持：ceate_time/update_time
 
@@ -449,7 +449,7 @@ class ListVoiceTrainingJobRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListVoiceTrainingJobRequest.
+        r"""Gets the sort_dir of this ListVoiceTrainingJobRequest.
 
         排序规则：desc(降序)/asc(升序)
 
@@ -460,7 +460,7 @@ class ListVoiceTrainingJobRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListVoiceTrainingJobRequest.
+        r"""Sets the sort_dir of this ListVoiceTrainingJobRequest.
 
         排序规则：desc(降序)/asc(升序)
 

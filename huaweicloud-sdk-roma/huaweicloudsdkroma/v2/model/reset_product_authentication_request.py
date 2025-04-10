@@ -29,7 +29,7 @@ class ResetProductAuthenticationRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, body=None):
-        """ResetProductAuthenticationRequest
+        r"""ResetProductAuthenticationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetProductAuthenticationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetProductAuthenticationRequest.
+        r"""Gets the instance_id of this ResetProductAuthenticationRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ResetProductAuthenticationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetProductAuthenticationRequest.
+        r"""Sets the instance_id of this ResetProductAuthenticationRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ResetProductAuthenticationRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ResetProductAuthenticationRequest.
+        r"""Gets the product_id of this ResetProductAuthenticationRequest.
 
         产品ID
 
@@ -88,7 +88,7 @@ class ResetProductAuthenticationRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ResetProductAuthenticationRequest.
+        r"""Sets the product_id of this ResetProductAuthenticationRequest.
 
         产品ID
 
@@ -99,7 +99,7 @@ class ResetProductAuthenticationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetProductAuthenticationRequest.
+        r"""Gets the body of this ResetProductAuthenticationRequest.
 
         :return: The body of this ResetProductAuthenticationRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequestBody`
@@ -108,7 +108,7 @@ class ResetProductAuthenticationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetProductAuthenticationRequest.
+        r"""Sets the body of this ResetProductAuthenticationRequest.
 
         :param body: The body of this ResetProductAuthenticationRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequestBody`

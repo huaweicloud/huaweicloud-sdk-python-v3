@@ -29,7 +29,7 @@ class OutputRequest:
     }
 
     def __init__(self, name=None, output_static_asset_id=None, output_dynamic_asset_id=None):
-        """OutputRequest
+        r"""OutputRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class OutputRequest:
 
     @property
     def name(self):
-        """Gets the name of this OutputRequest.
+        r"""Gets the name of this OutputRequest.
 
         输出参数名称,formulas中定义的name
 
@@ -67,7 +67,7 @@ class OutputRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OutputRequest.
+        r"""Sets the name of this OutputRequest.
 
         输出参数名称,formulas中定义的name
 
@@ -78,7 +78,7 @@ class OutputRequest:
 
     @property
     def output_static_asset_id(self):
-        """Gets the output_static_asset_id of this OutputRequest.
+        r"""Gets the output_static_asset_id of this OutputRequest.
 
         输出资产ID，填写模型中定义的输出模型对应的某资产ID；创建资产时，如果是输出到本资产的模型，且output_static_asset_id和output_dynamic_asset_id都未配置，则后台自动配置output_static_asset_id为本资产ID；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -89,7 +89,7 @@ class OutputRequest:
 
     @output_static_asset_id.setter
     def output_static_asset_id(self, output_static_asset_id):
-        """Sets the output_static_asset_id of this OutputRequest.
+        r"""Sets the output_static_asset_id of this OutputRequest.
 
         输出资产ID，填写模型中定义的输出模型对应的某资产ID；创建资产时，如果是输出到本资产的模型，且output_static_asset_id和output_dynamic_asset_id都未配置，则后台自动配置output_static_asset_id为本资产ID；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -100,7 +100,7 @@ class OutputRequest:
 
     @property
     def output_dynamic_asset_id(self):
-        """Gets the output_dynamic_asset_id of this OutputRequest.
+        r"""Gets the output_dynamic_asset_id of this OutputRequest.
 
         输出资产ID，填写公式动态生成资产ID，可根据入参获取资产ID，如：GetAssetId(\"assetmodelName1\",\"staticPropertyName1\",paramA)；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -111,7 +111,7 @@ class OutputRequest:
 
     @output_dynamic_asset_id.setter
     def output_dynamic_asset_id(self, output_dynamic_asset_id):
-        """Sets the output_dynamic_asset_id of this OutputRequest.
+        r"""Sets the output_dynamic_asset_id of this OutputRequest.
 
         输出资产ID，填写公式动态生成资产ID，可根据入参获取资产ID，如：GetAssetId(\"assetmodelName1\",\"staticPropertyName1\",paramA)；修改资产时，如果output_static_asset_id为null则表示置空
 

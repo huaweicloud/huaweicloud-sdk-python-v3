@@ -28,7 +28,7 @@ class ListXellogFilesResponse(SdkResponse):
     }
 
     def __init__(self, list=None, count=None):
-        """ListXellogFilesResponse
+        r"""ListXellogFilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListXellogFilesResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ListXellogFilesResponse.
+        r"""Gets the list of this ListXellogFilesResponse.
 
         扩展日志文件返回体
 
@@ -62,7 +62,7 @@ class ListXellogFilesResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListXellogFilesResponse.
+        r"""Sets the list of this ListXellogFilesResponse.
 
         扩展日志文件返回体
 
@@ -73,7 +73,7 @@ class ListXellogFilesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListXellogFilesResponse.
+        r"""Gets the count of this ListXellogFilesResponse.
 
         扩展日志文件数量
 
@@ -84,7 +84,7 @@ class ListXellogFilesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListXellogFilesResponse.
+        r"""Sets the count of this ListXellogFilesResponse.
 
         扩展日志文件数量
 

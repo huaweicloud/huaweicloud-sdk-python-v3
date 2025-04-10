@@ -41,7 +41,7 @@ class GlobalVariable:
     }
 
     def __init__(self, id=None, var_name=None, var_value=None, project_id=None, user_id=None, is_sensitive=None, user_name=None, create_time=None, update_time=None):
-        """GlobalVariable
+        r"""GlobalVariable
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class GlobalVariable:
 
     @property
     def id(self):
-        """Gets the id of this GlobalVariable.
+        r"""Gets the id of this GlobalVariable.
 
         全局变量ID
 
@@ -110,7 +110,7 @@ class GlobalVariable:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalVariable.
+        r"""Sets the id of this GlobalVariable.
 
         全局变量ID
 
@@ -121,7 +121,7 @@ class GlobalVariable:
 
     @property
     def var_name(self):
-        """Gets the var_name of this GlobalVariable.
+        r"""Gets the var_name of this GlobalVariable.
 
         变量名称
 
@@ -132,7 +132,7 @@ class GlobalVariable:
 
     @var_name.setter
     def var_name(self, var_name):
-        """Sets the var_name of this GlobalVariable.
+        r"""Sets the var_name of this GlobalVariable.
 
         变量名称
 
@@ -143,7 +143,7 @@ class GlobalVariable:
 
     @property
     def var_value(self):
-        """Gets the var_value of this GlobalVariable.
+        r"""Gets the var_value of this GlobalVariable.
 
         变量的值
 
@@ -154,7 +154,7 @@ class GlobalVariable:
 
     @var_value.setter
     def var_value(self, var_value):
-        """Sets the var_value of this GlobalVariable.
+        r"""Sets the var_value of this GlobalVariable.
 
         变量的值
 
@@ -165,7 +165,7 @@ class GlobalVariable:
 
     @property
     def project_id(self):
-        """Gets the project_id of this GlobalVariable.
+        r"""Gets the project_id of this GlobalVariable.
 
         项目ID
 
@@ -176,7 +176,7 @@ class GlobalVariable:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GlobalVariable.
+        r"""Sets the project_id of this GlobalVariable.
 
         项目ID
 
@@ -187,7 +187,7 @@ class GlobalVariable:
 
     @property
     def user_id(self):
-        """Gets the user_id of this GlobalVariable.
+        r"""Gets the user_id of this GlobalVariable.
 
         用户ID
 
@@ -198,7 +198,7 @@ class GlobalVariable:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this GlobalVariable.
+        r"""Sets the user_id of this GlobalVariable.
 
         用户ID
 
@@ -209,7 +209,7 @@ class GlobalVariable:
 
     @property
     def is_sensitive(self):
-        """Gets the is_sensitive of this GlobalVariable.
+        r"""Gets the is_sensitive of this GlobalVariable.
 
         是否为敏感变量
 
@@ -220,7 +220,7 @@ class GlobalVariable:
 
     @is_sensitive.setter
     def is_sensitive(self, is_sensitive):
-        """Sets the is_sensitive of this GlobalVariable.
+        r"""Sets the is_sensitive of this GlobalVariable.
 
         是否为敏感变量
 
@@ -231,7 +231,7 @@ class GlobalVariable:
 
     @property
     def user_name(self):
-        """Gets the user_name of this GlobalVariable.
+        r"""Gets the user_name of this GlobalVariable.
 
         用户名称
 
@@ -242,7 +242,7 @@ class GlobalVariable:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this GlobalVariable.
+        r"""Sets the user_name of this GlobalVariable.
 
         用户名称
 
@@ -253,7 +253,7 @@ class GlobalVariable:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GlobalVariable.
+        r"""Gets the create_time of this GlobalVariable.
 
         创建时间。为UTC的时间戳。
 
@@ -264,7 +264,7 @@ class GlobalVariable:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GlobalVariable.
+        r"""Sets the create_time of this GlobalVariable.
 
         创建时间。为UTC的时间戳。
 
@@ -275,7 +275,7 @@ class GlobalVariable:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GlobalVariable.
+        r"""Gets the update_time of this GlobalVariable.
 
         更新时间。为UTC的时间戳。
 
@@ -286,7 +286,7 @@ class GlobalVariable:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GlobalVariable.
+        r"""Sets the update_time of this GlobalVariable.
 
         更新时间。为UTC的时间戳。
 

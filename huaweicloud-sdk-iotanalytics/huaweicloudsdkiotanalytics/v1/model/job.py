@@ -43,7 +43,7 @@ class Job:
     }
 
     def __init__(self, job_id=None, job_name=None, tags=None, created_time=None, modified_time=None, job_type=None, export_path=None, merge_result_file=None, sql_job=None, schedule=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class Job:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Job.
+        r"""Gets the job_id of this Job.
 
         仅在响应返回。作业ID。
 
@@ -115,7 +115,7 @@ class Job:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Job.
+        r"""Sets the job_id of this Job.
 
         仅在响应返回。作业ID。
 
@@ -126,7 +126,7 @@ class Job:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Job.
+        r"""Gets the job_name of this Job.
 
         作业名称。只能包含数字、英文字母、中文字母、下划线以及中划线。长度为1~128。
 
@@ -137,7 +137,7 @@ class Job:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Job.
+        r"""Sets the job_name of this Job.
 
         作业名称。只能包含数字、英文字母、中文字母、下划线以及中划线。长度为1~128。
 
@@ -148,7 +148,7 @@ class Job:
 
     @property
     def tags(self):
-        """Gets the tags of this Job.
+        r"""Gets the tags of this Job.
 
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
@@ -159,7 +159,7 @@ class Job:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Job.
+        r"""Sets the tags of this Job.
 
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
@@ -170,7 +170,7 @@ class Job:
 
     @property
     def created_time(self):
-        """Gets the created_time of this Job.
+        r"""Gets the created_time of this Job.
 
         仅在响应返回。创建时间。
 
@@ -181,7 +181,7 @@ class Job:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this Job.
+        r"""Sets the created_time of this Job.
 
         仅在响应返回。创建时间。
 
@@ -192,7 +192,7 @@ class Job:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this Job.
+        r"""Gets the modified_time of this Job.
 
         仅在响应返回。更新时间。
 
@@ -203,7 +203,7 @@ class Job:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this Job.
+        r"""Sets the modified_time of this Job.
 
         仅在响应返回。更新时间。
 
@@ -214,7 +214,7 @@ class Job:
 
     @property
     def job_type(self):
-        """Gets the job_type of this Job.
+        r"""Gets the job_type of this Job.
 
         作业类型。目前仅支持SqlJob.
 
@@ -225,7 +225,7 @@ class Job:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this Job.
+        r"""Sets the job_type of this Job.
 
         作业类型。目前仅支持SqlJob.
 
@@ -236,7 +236,7 @@ class Job:
 
     @property
     def export_path(self):
-        """Gets the export_path of this Job.
+        r"""Gets the export_path of this Job.
 
         作业查询结果导出到OBS的路径。覆写已存在文件。
 
@@ -247,7 +247,7 @@ class Job:
 
     @export_path.setter
     def export_path(self, export_path):
-        """Sets the export_path of this Job.
+        r"""Sets the export_path of this Job.
 
         作业查询结果导出到OBS的路径。覆写已存在文件。
 
@@ -258,7 +258,7 @@ class Job:
 
     @property
     def merge_result_file(self):
-        """Gets the merge_result_file of this Job.
+        r"""Gets the merge_result_file of this Job.
 
         导出文件时是否合并结果文件。true：合并成一个结果文件；false：不合并结果文件。
 
@@ -269,7 +269,7 @@ class Job:
 
     @merge_result_file.setter
     def merge_result_file(self, merge_result_file):
-        """Sets the merge_result_file of this Job.
+        r"""Sets the merge_result_file of this Job.
 
         导出文件时是否合并结果文件。true：合并成一个结果文件；false：不合并结果文件。
 
@@ -280,7 +280,7 @@ class Job:
 
     @property
     def sql_job(self):
-        """Gets the sql_job of this Job.
+        r"""Gets the sql_job of this Job.
 
         :return: The sql_job of this Job.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
@@ -289,7 +289,7 @@ class Job:
 
     @sql_job.setter
     def sql_job(self, sql_job):
-        """Sets the sql_job of this Job.
+        r"""Sets the sql_job of this Job.
 
         :param sql_job: The sql_job of this Job.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
@@ -298,7 +298,7 @@ class Job:
 
     @property
     def schedule(self):
-        """Gets the schedule of this Job.
+        r"""Gets the schedule of this Job.
 
         :return: The schedule of this Job.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
@@ -307,7 +307,7 @@ class Job:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this Job.
+        r"""Sets the schedule of this Job.
 
         :param schedule: The schedule of this Job.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.Schedule`

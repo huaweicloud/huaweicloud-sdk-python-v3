@@ -29,7 +29,7 @@ class ScaleNodePoolSpec:
     }
 
     def __init__(self, desired_node_count=None, scale_groups=None, options=None):
-        """ScaleNodePoolSpec
+        r"""ScaleNodePoolSpec
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ScaleNodePoolSpec:
 
     @property
     def desired_node_count(self):
-        """Gets the desired_node_count of this ScaleNodePoolSpec.
+        r"""Gets the desired_node_count of this ScaleNodePoolSpec.
 
         节点池期望节点数
 
@@ -66,7 +66,7 @@ class ScaleNodePoolSpec:
 
     @desired_node_count.setter
     def desired_node_count(self, desired_node_count):
-        """Sets the desired_node_count of this ScaleNodePoolSpec.
+        r"""Sets the desired_node_count of this ScaleNodePoolSpec.
 
         节点池期望节点数
 
@@ -77,7 +77,7 @@ class ScaleNodePoolSpec:
 
     @property
     def scale_groups(self):
-        """Gets the scale_groups of this ScaleNodePoolSpec.
+        r"""Gets the scale_groups of this ScaleNodePoolSpec.
 
         扩缩容的节点池，只能填一个伸缩组，如果要伸缩默认伸缩组填default
 
@@ -88,7 +88,7 @@ class ScaleNodePoolSpec:
 
     @scale_groups.setter
     def scale_groups(self, scale_groups):
-        """Sets the scale_groups of this ScaleNodePoolSpec.
+        r"""Sets the scale_groups of this ScaleNodePoolSpec.
 
         扩缩容的节点池，只能填一个伸缩组，如果要伸缩默认伸缩组填default
 
@@ -99,7 +99,7 @@ class ScaleNodePoolSpec:
 
     @property
     def options(self):
-        """Gets the options of this ScaleNodePoolSpec.
+        r"""Gets the options of this ScaleNodePoolSpec.
 
         :return: The options of this ScaleNodePoolSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleNodePoolOptions`
@@ -108,7 +108,7 @@ class ScaleNodePoolSpec:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this ScaleNodePoolSpec.
+        r"""Sets the options of this ScaleNodePoolSpec.
 
         :param options: The options of this ScaleNodePoolSpec.
         :type options: :class:`huaweicloudsdkcce.v3.ScaleNodePoolOptions`

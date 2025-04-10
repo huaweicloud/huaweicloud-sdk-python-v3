@@ -35,7 +35,7 @@ class SearchJobsRequestBody:
     }
 
     def __init__(self, name=None, page_num=None, page_size=None, order_by_column=None, sort_order=None, enterprise_project_id=None):
-        """SearchJobsRequestBody
+        r"""SearchJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class SearchJobsRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this SearchJobsRequestBody.
+        r"""Gets the name of this SearchJobsRequestBody.
 
         name为作业名称。
 
@@ -87,7 +87,7 @@ class SearchJobsRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchJobsRequestBody.
+        r"""Sets the name of this SearchJobsRequestBody.
 
         name为作业名称。
 
@@ -98,7 +98,7 @@ class SearchJobsRequestBody:
 
     @property
     def page_num(self):
-        """Gets the page_num of this SearchJobsRequestBody.
+        r"""Gets the page_num of this SearchJobsRequestBody.
 
         当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）。
 
@@ -109,7 +109,7 @@ class SearchJobsRequestBody:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this SearchJobsRequestBody.
+        r"""Sets the page_num of this SearchJobsRequestBody.
 
         当前页，查询的当前页，page_num为正整数，不能是0和负数，当输入参数为负数，0和大于1000，自动修正参数为1，默认值是1（用户不传，值是1）。
 
@@ -120,7 +120,7 @@ class SearchJobsRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this SearchJobsRequestBody.
+        r"""Gets the page_size of this SearchJobsRequestBody.
 
         每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）。
 
@@ -131,7 +131,7 @@ class SearchJobsRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this SearchJobsRequestBody.
+        r"""Sets the page_size of this SearchJobsRequestBody.
 
         每页显示的条数，每页查询的总条数，page_size为正整数，不能是0和负数，当输入参数为负数，0和大于101，自动修正参数为10，默认值是10（用户不传时，值是10）。
 
@@ -142,7 +142,7 @@ class SearchJobsRequestBody:
 
     @property
     def order_by_column(self):
-        """Gets the order_by_column of this SearchJobsRequestBody.
+        r"""Gets the order_by_column of this SearchJobsRequestBody.
 
         需要排序的字段(默认为更新时间),支持字段有name,create_time,update_time。
 
@@ -153,7 +153,7 @@ class SearchJobsRequestBody:
 
     @order_by_column.setter
     def order_by_column(self, order_by_column):
-        """Sets the order_by_column of this SearchJobsRequestBody.
+        r"""Sets the order_by_column of this SearchJobsRequestBody.
 
         需要排序的字段(默认为更新时间),支持字段有name,create_time,update_time。
 
@@ -164,7 +164,7 @@ class SearchJobsRequestBody:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this SearchJobsRequestBody.
+        r"""Gets the sort_order of this SearchJobsRequestBody.
 
         排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
@@ -175,7 +175,7 @@ class SearchJobsRequestBody:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this SearchJobsRequestBody.
+        r"""Sets the sort_order of this SearchJobsRequestBody.
 
         排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
@@ -186,7 +186,7 @@ class SearchJobsRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SearchJobsRequestBody.
+        r"""Gets the enterprise_project_id of this SearchJobsRequestBody.
 
         企业项目id
 
@@ -197,7 +197,7 @@ class SearchJobsRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SearchJobsRequestBody.
+        r"""Sets the enterprise_project_id of this SearchJobsRequestBody.
 
         企业项目id
 

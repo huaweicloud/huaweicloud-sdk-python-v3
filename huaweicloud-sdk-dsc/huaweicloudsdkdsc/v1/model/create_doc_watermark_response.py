@@ -24,7 +24,7 @@ class CreateDocWatermarkResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """CreateDocWatermarkResponse
+        r"""CreateDocWatermarkResponse
 
         The model defined in huaweicloud sdk
 

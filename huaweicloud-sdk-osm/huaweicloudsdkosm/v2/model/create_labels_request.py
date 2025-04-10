@@ -31,7 +31,7 @@ class CreateLabelsRequest:
     }
 
     def __init__(self, x_site=None, x_language=None, x_time_zone=None, body=None):
-        """CreateLabelsRequest
+        r"""CreateLabelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateLabelsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CreateLabelsRequest.
+        r"""Gets the x_site of this CreateLabelsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -75,7 +75,7 @@ class CreateLabelsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CreateLabelsRequest.
+        r"""Sets the x_site of this CreateLabelsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -86,7 +86,7 @@ class CreateLabelsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateLabelsRequest.
+        r"""Gets the x_language of this CreateLabelsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -97,7 +97,7 @@ class CreateLabelsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateLabelsRequest.
+        r"""Sets the x_language of this CreateLabelsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -108,7 +108,7 @@ class CreateLabelsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this CreateLabelsRequest.
+        r"""Gets the x_time_zone of this CreateLabelsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -119,7 +119,7 @@ class CreateLabelsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this CreateLabelsRequest.
+        r"""Sets the x_time_zone of this CreateLabelsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -130,7 +130,7 @@ class CreateLabelsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLabelsRequest.
+        r"""Gets the body of this CreateLabelsRequest.
 
         :return: The body of this CreateLabelsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateLabelsReq`
@@ -139,7 +139,7 @@ class CreateLabelsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLabelsRequest.
+        r"""Sets the body of this CreateLabelsRequest.
 
         :param body: The body of this CreateLabelsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateLabelsReq`

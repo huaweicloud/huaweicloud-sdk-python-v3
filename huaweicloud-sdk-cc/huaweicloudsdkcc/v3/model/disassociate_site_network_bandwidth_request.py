@@ -27,7 +27,7 @@ class DisassociateSiteNetworkBandwidthRequest:
     }
 
     def __init__(self, site_network_id=None, site_connection_id=None):
-        """DisassociateSiteNetworkBandwidthRequest
+        r"""DisassociateSiteNetworkBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateSiteNetworkBandwidthRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this DisassociateSiteNetworkBandwidthRequest.
+        r"""Gets the site_network_id of this DisassociateSiteNetworkBandwidthRequest.
 
         分支网络的ID。
 
@@ -59,7 +59,7 @@ class DisassociateSiteNetworkBandwidthRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this DisassociateSiteNetworkBandwidthRequest.
+        r"""Sets the site_network_id of this DisassociateSiteNetworkBandwidthRequest.
 
         分支网络的ID。
 
@@ -70,7 +70,7 @@ class DisassociateSiteNetworkBandwidthRequest:
 
     @property
     def site_connection_id(self):
-        """Gets the site_connection_id of this DisassociateSiteNetworkBandwidthRequest.
+        r"""Gets the site_connection_id of this DisassociateSiteNetworkBandwidthRequest.
 
         实例ID。
 
@@ -81,7 +81,7 @@ class DisassociateSiteNetworkBandwidthRequest:
 
     @site_connection_id.setter
     def site_connection_id(self, site_connection_id):
-        """Sets the site_connection_id of this DisassociateSiteNetworkBandwidthRequest.
+        r"""Sets the site_connection_id of this DisassociateSiteNetworkBandwidthRequest.
 
         实例ID。
 

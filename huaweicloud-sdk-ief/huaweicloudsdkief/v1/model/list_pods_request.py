@@ -39,7 +39,7 @@ class ListPodsRequest:
     }
 
     def __init__(self, node_id=None, group_id=None, deployment_id=None, deployment_ids=None, plugin_instance_name=None, limit=None, offset=None, ief_instance_id=None):
-        """ListPodsRequest
+        r"""ListPodsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListPodsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListPodsRequest.
+        r"""Gets the node_id of this ListPodsRequest.
 
         指定节点查询应用实例，可选， 与group_id、deployment_id、deployment_ids四选一
 
@@ -103,7 +103,7 @@ class ListPodsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListPodsRequest.
+        r"""Sets the node_id of this ListPodsRequest.
 
         指定节点查询应用实例，可选， 与group_id、deployment_id、deployment_ids四选一
 
@@ -114,7 +114,7 @@ class ListPodsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListPodsRequest.
+        r"""Gets the group_id of this ListPodsRequest.
 
         指定节点组查询应用实例，可选，与node_id、deployment_id、deployment_ids四选一
 
@@ -125,7 +125,7 @@ class ListPodsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListPodsRequest.
+        r"""Sets the group_id of this ListPodsRequest.
 
         指定节点组查询应用实例，可选，与node_id、deployment_id、deployment_ids四选一
 
@@ -136,7 +136,7 @@ class ListPodsRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ListPodsRequest.
+        r"""Gets the deployment_id of this ListPodsRequest.
 
         指定应用部署ID查询应用实例，可选， 与node_id、group_id、deployment_ids四选一
 
@@ -147,7 +147,7 @@ class ListPodsRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ListPodsRequest.
+        r"""Sets the deployment_id of this ListPodsRequest.
 
         指定应用部署ID查询应用实例，可选， 与node_id、group_id、deployment_ids四选一
 
@@ -158,7 +158,7 @@ class ListPodsRequest:
 
     @property
     def deployment_ids(self):
-        """Gets the deployment_ids of this ListPodsRequest.
+        r"""Gets the deployment_ids of this ListPodsRequest.
 
         指定应用部署ID列表查询应用实例，多个ID使用逗号分隔，可选， 与node_id、group_id、deployment_id四选一
 
@@ -169,7 +169,7 @@ class ListPodsRequest:
 
     @deployment_ids.setter
     def deployment_ids(self, deployment_ids):
-        """Sets the deployment_ids of this ListPodsRequest.
+        r"""Sets the deployment_ids of this ListPodsRequest.
 
         指定应用部署ID列表查询应用实例，多个ID使用逗号分隔，可选， 与node_id、group_id、deployment_id四选一
 
@@ -180,7 +180,7 @@ class ListPodsRequest:
 
     @property
     def plugin_instance_name(self):
-        """Gets the plugin_instance_name of this ListPodsRequest.
+        r"""Gets the plugin_instance_name of this ListPodsRequest.
 
         指定插件实例名称查询对应的应用实例列表，可选
 
@@ -191,7 +191,7 @@ class ListPodsRequest:
 
     @plugin_instance_name.setter
     def plugin_instance_name(self, plugin_instance_name):
-        """Sets the plugin_instance_name of this ListPodsRequest.
+        r"""Sets the plugin_instance_name of this ListPodsRequest.
 
         指定插件实例名称查询对应的应用实例列表，可选
 
@@ -202,7 +202,7 @@ class ListPodsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPodsRequest.
+        r"""Gets the limit of this ListPodsRequest.
 
         查询返回记录的数量限制
 
@@ -213,7 +213,7 @@ class ListPodsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPodsRequest.
+        r"""Sets the limit of this ListPodsRequest.
 
         查询返回记录的数量限制
 
@@ -224,7 +224,7 @@ class ListPodsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPodsRequest.
+        r"""Gets the offset of this ListPodsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -235,7 +235,7 @@ class ListPodsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPodsRequest.
+        r"""Sets the offset of this ListPodsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -246,7 +246,7 @@ class ListPodsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListPodsRequest.
+        r"""Gets the ief_instance_id of this ListPodsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -257,7 +257,7 @@ class ListPodsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListPodsRequest.
+        r"""Sets the ief_instance_id of this ListPodsRequest.
 
         铂金版实例ID，专业版实例为空值
 

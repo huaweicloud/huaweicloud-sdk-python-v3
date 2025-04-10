@@ -25,7 +25,7 @@ class ListFactLogicTablesResultData:
     }
 
     def __init__(self, value=None):
-        """ListFactLogicTablesResultData
+        r"""ListFactLogicTablesResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListFactLogicTablesResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListFactLogicTablesResultData.
+        r"""Gets the value of this ListFactLogicTablesResultData.
 
         :return: The value of this ListFactLogicTablesResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactLogicTablesResultDataValue`
@@ -52,7 +52,7 @@ class ListFactLogicTablesResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListFactLogicTablesResultData.
+        r"""Sets the value of this ListFactLogicTablesResultData.
 
         :param value: The value of this ListFactLogicTablesResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ListFactLogicTablesResultDataValue`

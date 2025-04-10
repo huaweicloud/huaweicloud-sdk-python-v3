@@ -25,7 +25,7 @@ class CreateDesktopUserRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDesktopUserRequest
+        r"""CreateDesktopUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDesktopUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopUserRequest.
+        r"""Gets the body of this CreateDesktopUserRequest.
 
         :return: The body of this CreateDesktopUserRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserRequest`
@@ -52,7 +52,7 @@ class CreateDesktopUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopUserRequest.
+        r"""Sets the body of this CreateDesktopUserRequest.
 
         :param body: The body of this CreateDesktopUserRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserRequest`

@@ -27,7 +27,7 @@ class AssociatePublicipsOption:
     }
 
     def __init__(self, associate_instance_type=None, associate_instance_id=None):
-        """AssociatePublicipsOption
+        r"""AssociatePublicipsOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociatePublicipsOption:
 
     @property
     def associate_instance_type(self):
-        """Gets the associate_instance_type of this AssociatePublicipsOption.
+        r"""Gets the associate_instance_type of this AssociatePublicipsOption.
 
         功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例 约束：associate_instance_type字段不允许为空 约束：双栈公网IP不允许修改绑定的实例
 
@@ -59,7 +59,7 @@ class AssociatePublicipsOption:
 
     @associate_instance_type.setter
     def associate_instance_type(self, associate_instance_type):
-        """Sets the associate_instance_type of this AssociatePublicipsOption.
+        r"""Sets the associate_instance_type of this AssociatePublicipsOption.
 
         功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例 约束：associate_instance_type字段不允许为空 约束：双栈公网IP不允许修改绑定的实例
 
@@ -70,7 +70,7 @@ class AssociatePublicipsOption:
 
     @property
     def associate_instance_id(self):
-        """Gets the associate_instance_id of this AssociatePublicipsOption.
+        r"""Gets the associate_instance_id of this AssociatePublicipsOption.
 
         功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； 约束：associate_instance_id不允许为空 约束：双栈公网IP不允许修改绑定的实例
 
@@ -81,7 +81,7 @@ class AssociatePublicipsOption:
 
     @associate_instance_id.setter
     def associate_instance_id(self, associate_instance_id):
-        """Sets the associate_instance_id of this AssociatePublicipsOption.
+        r"""Sets the associate_instance_id of this AssociatePublicipsOption.
 
         功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例； 约束：associate_instance_id不允许为空 约束：双栈公网IP不允许修改绑定的实例
 

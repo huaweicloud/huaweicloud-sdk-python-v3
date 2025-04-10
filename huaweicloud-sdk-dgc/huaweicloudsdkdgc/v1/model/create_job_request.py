@@ -27,7 +27,7 @@ class CreateJobRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateJobRequest
+        r"""CreateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateJobRequest.
+        r"""Gets the workspace of this CreateJobRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class CreateJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateJobRequest.
+        r"""Sets the workspace of this CreateJobRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class CreateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateJobRequest.
+        r"""Gets the body of this CreateJobRequest.
 
         :return: The body of this CreateJobRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.JobInfo`
@@ -81,7 +81,7 @@ class CreateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateJobRequest.
+        r"""Sets the body of this CreateJobRequest.
 
         :param body: The body of this CreateJobRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.JobInfo`

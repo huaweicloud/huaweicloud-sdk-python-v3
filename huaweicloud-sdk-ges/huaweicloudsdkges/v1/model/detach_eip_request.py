@@ -29,7 +29,7 @@ class DetachEipRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """DetachEipRequest
+        r"""DetachEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DetachEipRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this DetachEipRequest.
+        r"""Gets the graph_id of this DetachEipRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class DetachEipRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this DetachEipRequest.
+        r"""Sets the graph_id of this DetachEipRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class DetachEipRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this DetachEipRequest.
+        r"""Gets the action_id of this DetachEipRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class DetachEipRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this DetachEipRequest.
+        r"""Sets the action_id of this DetachEipRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class DetachEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this DetachEipRequest.
+        r"""Gets the body of this DetachEipRequest.
 
         :return: The body of this DetachEipRequest.
         :rtype: :class:`huaweicloudsdkges.v1.UnbindEipReq`
@@ -108,7 +108,7 @@ class DetachEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachEipRequest.
+        r"""Sets the body of this DetachEipRequest.
 
         :param body: The body of this DetachEipRequest.
         :type body: :class:`huaweicloudsdkges.v1.UnbindEipReq`

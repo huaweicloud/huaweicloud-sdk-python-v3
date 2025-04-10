@@ -25,7 +25,7 @@ class ImportPrivateKeyRequest:
     }
 
     def __init__(self, body=None):
-        """ImportPrivateKeyRequest
+        r"""ImportPrivateKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportPrivateKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportPrivateKeyRequest.
+        r"""Gets the body of this ImportPrivateKeyRequest.
 
         :return: The body of this ImportPrivateKeyRequest.
         :rtype: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyRequestBody`
@@ -52,7 +52,7 @@ class ImportPrivateKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportPrivateKeyRequest.
+        r"""Sets the body of this ImportPrivateKeyRequest.
 
         :param body: The body of this ImportPrivateKeyRequest.
         :type body: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyRequestBody`

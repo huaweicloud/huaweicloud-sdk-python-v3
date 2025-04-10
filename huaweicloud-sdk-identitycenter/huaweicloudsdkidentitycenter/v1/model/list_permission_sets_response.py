@@ -28,7 +28,7 @@ class ListPermissionSetsResponse(SdkResponse):
     }
 
     def __init__(self, permission_sets=None, page_info=None):
-        """ListPermissionSetsResponse
+        r"""ListPermissionSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPermissionSetsResponse(SdkResponse):
 
     @property
     def permission_sets(self):
-        """Gets the permission_sets of this ListPermissionSetsResponse.
+        r"""Gets the permission_sets of this ListPermissionSetsResponse.
 
         权限集列表
 
@@ -62,7 +62,7 @@ class ListPermissionSetsResponse(SdkResponse):
 
     @permission_sets.setter
     def permission_sets(self, permission_sets):
-        """Sets the permission_sets of this ListPermissionSetsResponse.
+        r"""Sets the permission_sets of this ListPermissionSetsResponse.
 
         权限集列表
 
@@ -73,7 +73,7 @@ class ListPermissionSetsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPermissionSetsResponse.
+        r"""Gets the page_info of this ListPermissionSetsResponse.
 
         :return: The page_info of this ListPermissionSetsResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListPermissionSetsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPermissionSetsResponse.
+        r"""Sets the page_info of this ListPermissionSetsResponse.
 
         :param page_info: The page_info of this ListPermissionSetsResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`

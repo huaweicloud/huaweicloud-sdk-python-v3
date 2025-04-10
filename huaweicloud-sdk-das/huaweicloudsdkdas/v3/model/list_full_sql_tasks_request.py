@@ -59,7 +59,7 @@ class ListFullSqlTasksRequest:
     }
 
     def __init__(self, instance_id=None, range_left=None, range_right=None, create_at_left=None, create_at_right=None, user=None, keyword=None, db_name=None, operation=None, thread_id=None, trx_id=None, status=None, sql_template_id=None, sort_field=None, asc=None, page=None, limit=None, x_language=None):
-        """ListFullSqlTasksRequest
+        r"""ListFullSqlTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListFullSqlTasksRequest.
+        r"""Gets the instance_id of this ListFullSqlTasksRequest.
 
         实例ID。
 
@@ -172,7 +172,7 @@ class ListFullSqlTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListFullSqlTasksRequest.
+        r"""Sets the instance_id of this ListFullSqlTasksRequest.
 
         实例ID。
 
@@ -183,7 +183,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def range_left(self):
-        """Gets the range_left of this ListFullSqlTasksRequest.
+        r"""Gets the range_left of this ListFullSqlTasksRequest.
 
         最小任务起止时间（Unix timestamp），单位：毫秒。
 
@@ -194,7 +194,7 @@ class ListFullSqlTasksRequest:
 
     @range_left.setter
     def range_left(self, range_left):
-        """Sets the range_left of this ListFullSqlTasksRequest.
+        r"""Sets the range_left of this ListFullSqlTasksRequest.
 
         最小任务起止时间（Unix timestamp），单位：毫秒。
 
@@ -205,7 +205,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def range_right(self):
-        """Gets the range_right of this ListFullSqlTasksRequest.
+        r"""Gets the range_right of this ListFullSqlTasksRequest.
 
         最大任务起止时间（Unix timestamp），单位：毫秒。
 
@@ -216,7 +216,7 @@ class ListFullSqlTasksRequest:
 
     @range_right.setter
     def range_right(self, range_right):
-        """Sets the range_right of this ListFullSqlTasksRequest.
+        r"""Sets the range_right of this ListFullSqlTasksRequest.
 
         最大任务起止时间（Unix timestamp），单位：毫秒。
 
@@ -227,7 +227,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def create_at_left(self):
-        """Gets the create_at_left of this ListFullSqlTasksRequest.
+        r"""Gets the create_at_left of this ListFullSqlTasksRequest.
 
         最小任务创建时间（Unix timestamp），单位：毫秒。
 
@@ -238,7 +238,7 @@ class ListFullSqlTasksRequest:
 
     @create_at_left.setter
     def create_at_left(self, create_at_left):
-        """Sets the create_at_left of this ListFullSqlTasksRequest.
+        r"""Sets the create_at_left of this ListFullSqlTasksRequest.
 
         最小任务创建时间（Unix timestamp），单位：毫秒。
 
@@ -249,7 +249,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def create_at_right(self):
-        """Gets the create_at_right of this ListFullSqlTasksRequest.
+        r"""Gets the create_at_right of this ListFullSqlTasksRequest.
 
         最大任务创建时间（Unix timestamp），单位：毫秒。
 
@@ -260,7 +260,7 @@ class ListFullSqlTasksRequest:
 
     @create_at_right.setter
     def create_at_right(self, create_at_right):
-        """Sets the create_at_right of this ListFullSqlTasksRequest.
+        r"""Sets the create_at_right of this ListFullSqlTasksRequest.
 
         最大任务创建时间（Unix timestamp），单位：毫秒。
 
@@ -271,7 +271,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def user(self):
-        """Gets the user of this ListFullSqlTasksRequest.
+        r"""Gets the user of this ListFullSqlTasksRequest.
 
         用户名。
 
@@ -282,7 +282,7 @@ class ListFullSqlTasksRequest:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ListFullSqlTasksRequest.
+        r"""Sets the user of this ListFullSqlTasksRequest.
 
         用户名。
 
@@ -293,7 +293,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListFullSqlTasksRequest.
+        r"""Gets the keyword of this ListFullSqlTasksRequest.
 
         关键字。
 
@@ -304,7 +304,7 @@ class ListFullSqlTasksRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListFullSqlTasksRequest.
+        r"""Sets the keyword of this ListFullSqlTasksRequest.
 
         关键字。
 
@@ -315,7 +315,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListFullSqlTasksRequest.
+        r"""Gets the db_name of this ListFullSqlTasksRequest.
 
         数据库名。
 
@@ -326,7 +326,7 @@ class ListFullSqlTasksRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListFullSqlTasksRequest.
+        r"""Sets the db_name of this ListFullSqlTasksRequest.
 
         数据库名。
 
@@ -337,7 +337,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def operation(self):
-        """Gets the operation of this ListFullSqlTasksRequest.
+        r"""Gets the operation of this ListFullSqlTasksRequest.
 
         操作类型。
 
@@ -348,7 +348,7 @@ class ListFullSqlTasksRequest:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ListFullSqlTasksRequest.
+        r"""Sets the operation of this ListFullSqlTasksRequest.
 
         操作类型。
 
@@ -359,7 +359,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def thread_id(self):
-        """Gets the thread_id of this ListFullSqlTasksRequest.
+        r"""Gets the thread_id of this ListFullSqlTasksRequest.
 
         线程ID。
 
@@ -370,7 +370,7 @@ class ListFullSqlTasksRequest:
 
     @thread_id.setter
     def thread_id(self, thread_id):
-        """Sets the thread_id of this ListFullSqlTasksRequest.
+        r"""Sets the thread_id of this ListFullSqlTasksRequest.
 
         线程ID。
 
@@ -381,7 +381,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def trx_id(self):
-        """Gets the trx_id of this ListFullSqlTasksRequest.
+        r"""Gets the trx_id of this ListFullSqlTasksRequest.
 
         事务ID。
 
@@ -392,7 +392,7 @@ class ListFullSqlTasksRequest:
 
     @trx_id.setter
     def trx_id(self, trx_id):
-        """Sets the trx_id of this ListFullSqlTasksRequest.
+        r"""Sets the trx_id of this ListFullSqlTasksRequest.
 
         事务ID。
 
@@ -403,7 +403,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListFullSqlTasksRequest.
+        r"""Gets the status of this ListFullSqlTasksRequest.
 
         执行状态（0:成功，1:失败）。
 
@@ -414,7 +414,7 @@ class ListFullSqlTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFullSqlTasksRequest.
+        r"""Sets the status of this ListFullSqlTasksRequest.
 
         执行状态（0:成功，1:失败）。
 
@@ -425,7 +425,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def sql_template_id(self):
-        """Gets the sql_template_id of this ListFullSqlTasksRequest.
+        r"""Gets the sql_template_id of this ListFullSqlTasksRequest.
 
         SQL模板ID。
 
@@ -436,7 +436,7 @@ class ListFullSqlTasksRequest:
 
     @sql_template_id.setter
     def sql_template_id(self, sql_template_id):
-        """Sets the sql_template_id of this ListFullSqlTasksRequest.
+        r"""Sets the sql_template_id of this ListFullSqlTasksRequest.
 
         SQL模板ID。
 
@@ -447,7 +447,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListFullSqlTasksRequest.
+        r"""Gets the sort_field of this ListFullSqlTasksRequest.
 
         排序字段（create_at:任务创建时间, range_start_at,range_end_at:任务起止时间）。
 
@@ -458,7 +458,7 @@ class ListFullSqlTasksRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListFullSqlTasksRequest.
+        r"""Sets the sort_field of this ListFullSqlTasksRequest.
 
         排序字段（create_at:任务创建时间, range_start_at,range_end_at:任务起止时间）。
 
@@ -469,7 +469,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def asc(self):
-        """Gets the asc of this ListFullSqlTasksRequest.
+        r"""Gets the asc of this ListFullSqlTasksRequest.
 
         排序顺序（true:正序, false:逆序）。
 
@@ -480,7 +480,7 @@ class ListFullSqlTasksRequest:
 
     @asc.setter
     def asc(self, asc):
-        """Sets the asc of this ListFullSqlTasksRequest.
+        r"""Sets the asc of this ListFullSqlTasksRequest.
 
         排序顺序（true:正序, false:逆序）。
 
@@ -491,7 +491,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListFullSqlTasksRequest.
+        r"""Gets the page of this ListFullSqlTasksRequest.
 
         页码。
 
@@ -502,7 +502,7 @@ class ListFullSqlTasksRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListFullSqlTasksRequest.
+        r"""Sets the page of this ListFullSqlTasksRequest.
 
         页码。
 
@@ -513,7 +513,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFullSqlTasksRequest.
+        r"""Gets the limit of this ListFullSqlTasksRequest.
 
         每页记录数。最大为100。
 
@@ -524,7 +524,7 @@ class ListFullSqlTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFullSqlTasksRequest.
+        r"""Sets the limit of this ListFullSqlTasksRequest.
 
         每页记录数。最大为100。
 
@@ -535,7 +535,7 @@ class ListFullSqlTasksRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListFullSqlTasksRequest.
+        r"""Gets the x_language of this ListFullSqlTasksRequest.
 
         请求语言类型。
 
@@ -546,7 +546,7 @@ class ListFullSqlTasksRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListFullSqlTasksRequest.
+        r"""Sets the x_language of this ListFullSqlTasksRequest.
 
         请求语言类型。
 

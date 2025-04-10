@@ -46,7 +46,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
     }
 
     def __init__(self, status=None, description=None, resources=None, create_time=None, update_time=None, group_name=None, owner=None, is_async=None, details=None, module_name=None, module_type=None):
-        """UploadJarJobResourcesResponse
+        r"""UploadJarJobResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UploadJarJobResourcesResponse.
+        r"""Gets the status of this UploadJarJobResourcesResponse.
 
         \"UPLOADING\"表示正在上传。 \"READY\"表示模块包已上传。 \"FAILED\"表示模块包上传失败。
 
@@ -125,7 +125,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadJarJobResourcesResponse.
+        r"""Sets the status of this UploadJarJobResourcesResponse.
 
         \"UPLOADING\"表示正在上传。 \"READY\"表示模块包已上传。 \"FAILED\"表示模块包上传失败。
 
@@ -136,7 +136,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UploadJarJobResourcesResponse.
+        r"""Gets the description of this UploadJarJobResourcesResponse.
 
         资源模块描述。
 
@@ -147,7 +147,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadJarJobResourcesResponse.
+        r"""Sets the description of this UploadJarJobResourcesResponse.
 
         资源模块描述。
 
@@ -158,7 +158,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this UploadJarJobResourcesResponse.
+        r"""Gets the resources of this UploadJarJobResourcesResponse.
 
         该资源模块包含的资源包名列表。
 
@@ -169,7 +169,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this UploadJarJobResourcesResponse.
+        r"""Sets the resources of this UploadJarJobResourcesResponse.
 
         该资源模块包含的资源包名列表。
 
@@ -180,7 +180,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UploadJarJobResourcesResponse.
+        r"""Gets the create_time of this UploadJarJobResourcesResponse.
 
         资源模块上传的unix时间戳。
 
@@ -191,7 +191,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UploadJarJobResourcesResponse.
+        r"""Sets the create_time of this UploadJarJobResourcesResponse.
 
         资源模块上传的unix时间戳。
 
@@ -202,7 +202,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UploadJarJobResourcesResponse.
+        r"""Gets the update_time of this UploadJarJobResourcesResponse.
 
         资源模块更新的unix时间戳。
 
@@ -213,7 +213,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UploadJarJobResourcesResponse.
+        r"""Sets the update_time of this UploadJarJobResourcesResponse.
 
         资源模块更新的unix时间戳。
 
@@ -224,7 +224,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this UploadJarJobResourcesResponse.
+        r"""Gets the group_name of this UploadJarJobResourcesResponse.
 
         模块名。
 
@@ -235,7 +235,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UploadJarJobResourcesResponse.
+        r"""Sets the group_name of this UploadJarJobResourcesResponse.
 
         模块名。
 
@@ -246,7 +246,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this UploadJarJobResourcesResponse.
+        r"""Gets the owner of this UploadJarJobResourcesResponse.
 
         资源包拥有者
 
@@ -257,7 +257,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UploadJarJobResourcesResponse.
+        r"""Sets the owner of this UploadJarJobResourcesResponse.
 
         资源包拥有者
 
@@ -268,7 +268,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def is_async(self):
-        """Gets the is_async of this UploadJarJobResourcesResponse.
+        r"""Gets the is_async of this UploadJarJobResourcesResponse.
 
         是否使用异步方式上传资源包。默认值为“false”，表示不使用异步方式。推荐使用异步方式上传资源包。
 
@@ -279,7 +279,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this UploadJarJobResourcesResponse.
+        r"""Sets the is_async of this UploadJarJobResourcesResponse.
 
         是否使用异步方式上传资源包。默认值为“false”，表示不使用异步方式。推荐使用异步方式上传资源包。
 
@@ -290,7 +290,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def details(self):
-        """Gets the details of this UploadJarJobResourcesResponse.
+        r"""Gets the details of this UploadJarJobResourcesResponse.
 
         分组资源包的详细信息
 
@@ -301,7 +301,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @details.setter
     def details(self, details):
-        """Sets the details of this UploadJarJobResourcesResponse.
+        r"""Sets the details of this UploadJarJobResourcesResponse.
 
         分组资源包的详细信息
 
@@ -312,7 +312,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def module_name(self):
-        """Gets the module_name of this UploadJarJobResourcesResponse.
+        r"""Gets the module_name of this UploadJarJobResourcesResponse.
 
         资源模块名
 
@@ -323,7 +323,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this UploadJarJobResourcesResponse.
+        r"""Sets the module_name of this UploadJarJobResourcesResponse.
 
         资源模块名
 
@@ -334,7 +334,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @property
     def module_type(self):
-        """Gets the module_type of this UploadJarJobResourcesResponse.
+        r"""Gets the module_type of this UploadJarJobResourcesResponse.
 
         资源模块类型。jar:用户jar文件;pyFile:用户python文件;file:用户文件
 
@@ -345,7 +345,7 @@ class UploadJarJobResourcesResponse(SdkResponse):
 
     @module_type.setter
     def module_type(self, module_type):
-        """Sets the module_type of this UploadJarJobResourcesResponse.
+        r"""Sets the module_type of this UploadJarJobResourcesResponse.
 
         资源模块类型。jar:用户jar文件;pyFile:用户python文件;file:用户文件
 

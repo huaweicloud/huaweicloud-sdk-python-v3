@@ -41,7 +41,7 @@ class UpdateScaleOutPolicyReq:
     }
 
     def __init__(self, name=None, max_nodes=None, min_nodes=None, cpu_rule_enable=None, cpu_percent=None, add_nodes_for_cpu_rule=None, mem_rule_enable=None, mem_percent=None, add_nodes_for_mem_rule=None):
-        """UpdateScaleOutPolicyReq
+        r"""UpdateScaleOutPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateScaleOutPolicyReq.
+        r"""Gets the name of this UpdateScaleOutPolicyReq.
 
         策略名称
 
@@ -110,7 +110,7 @@ class UpdateScaleOutPolicyReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateScaleOutPolicyReq.
+        r"""Sets the name of this UpdateScaleOutPolicyReq.
 
         策略名称
 
@@ -121,7 +121,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def max_nodes(self):
-        """Gets the max_nodes of this UpdateScaleOutPolicyReq.
+        r"""Gets the max_nodes of this UpdateScaleOutPolicyReq.
 
         扩容节点数上限
 
@@ -132,7 +132,7 @@ class UpdateScaleOutPolicyReq:
 
     @max_nodes.setter
     def max_nodes(self, max_nodes):
-        """Sets the max_nodes of this UpdateScaleOutPolicyReq.
+        r"""Sets the max_nodes of this UpdateScaleOutPolicyReq.
 
         扩容节点数上限
 
@@ -143,7 +143,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def min_nodes(self):
-        """Gets the min_nodes of this UpdateScaleOutPolicyReq.
+        r"""Gets the min_nodes of this UpdateScaleOutPolicyReq.
 
         扩容节点数下限
 
@@ -154,7 +154,7 @@ class UpdateScaleOutPolicyReq:
 
     @min_nodes.setter
     def min_nodes(self, min_nodes):
-        """Sets the min_nodes of this UpdateScaleOutPolicyReq.
+        r"""Sets the min_nodes of this UpdateScaleOutPolicyReq.
 
         扩容节点数下限
 
@@ -165,7 +165,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def cpu_rule_enable(self):
-        """Gets the cpu_rule_enable of this UpdateScaleOutPolicyReq.
+        r"""Gets the cpu_rule_enable of this UpdateScaleOutPolicyReq.
 
         是否启用cpu规则
 
@@ -176,7 +176,7 @@ class UpdateScaleOutPolicyReq:
 
     @cpu_rule_enable.setter
     def cpu_rule_enable(self, cpu_rule_enable):
-        """Sets the cpu_rule_enable of this UpdateScaleOutPolicyReq.
+        r"""Sets the cpu_rule_enable of this UpdateScaleOutPolicyReq.
 
         是否启用cpu规则
 
@@ -187,7 +187,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def cpu_percent(self):
-        """Gets the cpu_percent of this UpdateScaleOutPolicyReq.
+        r"""Gets the cpu_percent of this UpdateScaleOutPolicyReq.
 
         cpu分配率百分比
 
@@ -198,7 +198,7 @@ class UpdateScaleOutPolicyReq:
 
     @cpu_percent.setter
     def cpu_percent(self, cpu_percent):
-        """Sets the cpu_percent of this UpdateScaleOutPolicyReq.
+        r"""Sets the cpu_percent of this UpdateScaleOutPolicyReq.
 
         cpu分配率百分比
 
@@ -209,7 +209,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def add_nodes_for_cpu_rule(self):
-        """Gets the add_nodes_for_cpu_rule of this UpdateScaleOutPolicyReq.
+        r"""Gets the add_nodes_for_cpu_rule of this UpdateScaleOutPolicyReq.
 
         满足扩容策略中cpu分配率时增加的节点数
 
@@ -220,7 +220,7 @@ class UpdateScaleOutPolicyReq:
 
     @add_nodes_for_cpu_rule.setter
     def add_nodes_for_cpu_rule(self, add_nodes_for_cpu_rule):
-        """Sets the add_nodes_for_cpu_rule of this UpdateScaleOutPolicyReq.
+        r"""Sets the add_nodes_for_cpu_rule of this UpdateScaleOutPolicyReq.
 
         满足扩容策略中cpu分配率时增加的节点数
 
@@ -231,7 +231,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def mem_rule_enable(self):
-        """Gets the mem_rule_enable of this UpdateScaleOutPolicyReq.
+        r"""Gets the mem_rule_enable of this UpdateScaleOutPolicyReq.
 
         是否启用mem规则
 
@@ -242,7 +242,7 @@ class UpdateScaleOutPolicyReq:
 
     @mem_rule_enable.setter
     def mem_rule_enable(self, mem_rule_enable):
-        """Sets the mem_rule_enable of this UpdateScaleOutPolicyReq.
+        r"""Sets the mem_rule_enable of this UpdateScaleOutPolicyReq.
 
         是否启用mem规则
 
@@ -253,7 +253,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def mem_percent(self):
-        """Gets the mem_percent of this UpdateScaleOutPolicyReq.
+        r"""Gets the mem_percent of this UpdateScaleOutPolicyReq.
 
         mem分配率百分比
 
@@ -264,7 +264,7 @@ class UpdateScaleOutPolicyReq:
 
     @mem_percent.setter
     def mem_percent(self, mem_percent):
-        """Sets the mem_percent of this UpdateScaleOutPolicyReq.
+        r"""Sets the mem_percent of this UpdateScaleOutPolicyReq.
 
         mem分配率百分比
 
@@ -275,7 +275,7 @@ class UpdateScaleOutPolicyReq:
 
     @property
     def add_nodes_for_mem_rule(self):
-        """Gets the add_nodes_for_mem_rule of this UpdateScaleOutPolicyReq.
+        r"""Gets the add_nodes_for_mem_rule of this UpdateScaleOutPolicyReq.
 
         满足扩容策略中mem分配率时增加的节点数
 
@@ -286,7 +286,7 @@ class UpdateScaleOutPolicyReq:
 
     @add_nodes_for_mem_rule.setter
     def add_nodes_for_mem_rule(self, add_nodes_for_mem_rule):
-        """Sets the add_nodes_for_mem_rule of this UpdateScaleOutPolicyReq.
+        r"""Sets the add_nodes_for_mem_rule of this UpdateScaleOutPolicyReq.
 
         满足扩容策略中mem分配率时增加的节点数
 

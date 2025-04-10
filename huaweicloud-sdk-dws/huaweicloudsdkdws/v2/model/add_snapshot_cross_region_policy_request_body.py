@@ -33,7 +33,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     }
 
     def __init__(self, cluster_id=None, destination_project_id=None, destination_region=None, status=None, back_keep_day=None):
-        """AddSnapshotCrossRegionPolicyRequestBody
+        r"""AddSnapshotCrossRegionPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Gets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
         集群ID
 
@@ -77,7 +77,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Sets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
         集群ID
 
@@ -88,7 +88,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Gets the destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
         目的项目ID
 
@@ -99,7 +99,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Sets the destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
         目的项目ID
 
@@ -110,7 +110,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Gets the destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
 
         目的区域
 
@@ -121,7 +121,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Sets the destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
 
         目的区域
 
@@ -132,7 +132,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Gets the status of this AddSnapshotCrossRegionPolicyRequestBody.
 
         状态
 
@@ -143,7 +143,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Sets the status of this AddSnapshotCrossRegionPolicyRequestBody.
 
         状态
 
@@ -154,7 +154,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @property
     def back_keep_day(self):
-        """Gets the back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Gets the back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
 
         保留天数
 
@@ -165,7 +165,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
     @back_keep_day.setter
     def back_keep_day(self, back_keep_day):
-        """Sets the back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
+        r"""Sets the back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
 
         保留天数
 

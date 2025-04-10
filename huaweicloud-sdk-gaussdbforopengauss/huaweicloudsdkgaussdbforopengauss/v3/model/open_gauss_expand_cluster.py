@@ -27,7 +27,7 @@ class OpenGaussExpandCluster:
     }
 
     def __init__(self, coordinators=None, shard=None):
-        """OpenGaussExpandCluster
+        r"""OpenGaussExpandCluster
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenGaussExpandCluster:
 
     @property
     def coordinators(self):
-        """Gets the coordinators of this OpenGaussExpandCluster.
+        r"""Gets the coordinators of this OpenGaussExpandCluster.
 
         CN横向扩容时必填
 
@@ -61,7 +61,7 @@ class OpenGaussExpandCluster:
 
     @coordinators.setter
     def coordinators(self, coordinators):
-        """Sets the coordinators of this OpenGaussExpandCluster.
+        r"""Sets the coordinators of this OpenGaussExpandCluster.
 
         CN横向扩容时必填
 
@@ -72,7 +72,7 @@ class OpenGaussExpandCluster:
 
     @property
     def shard(self):
-        """Gets the shard of this OpenGaussExpandCluster.
+        r"""Gets the shard of this OpenGaussExpandCluster.
 
         :return: The shard of this OpenGaussExpandCluster.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`
@@ -81,7 +81,7 @@ class OpenGaussExpandCluster:
 
     @shard.setter
     def shard(self, shard):
-        """Sets the shard of this OpenGaussExpandCluster.
+        r"""Sets the shard of this OpenGaussExpandCluster.
 
         :param shard: The shard of this OpenGaussExpandCluster.
         :type shard: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`

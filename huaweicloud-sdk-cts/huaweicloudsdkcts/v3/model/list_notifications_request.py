@@ -27,7 +27,7 @@ class ListNotificationsRequest:
     }
 
     def __init__(self, notification_type=None, notification_name=None):
-        """ListNotificationsRequest
+        r"""ListNotificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListNotificationsRequest:
 
     @property
     def notification_type(self):
-        """Gets the notification_type of this ListNotificationsRequest.
+        r"""Gets the notification_type of this ListNotificationsRequest.
 
         通知类型。
 
@@ -60,7 +60,7 @@ class ListNotificationsRequest:
 
     @notification_type.setter
     def notification_type(self, notification_type):
-        """Sets the notification_type of this ListNotificationsRequest.
+        r"""Sets the notification_type of this ListNotificationsRequest.
 
         通知类型。
 
@@ -71,7 +71,7 @@ class ListNotificationsRequest:
 
     @property
     def notification_name(self):
-        """Gets the notification_name of this ListNotificationsRequest.
+        r"""Gets the notification_name of this ListNotificationsRequest.
 
         标识关键操作通知名称。 在不传入该字段的情况下，将查询当前租户所有的关键操作通知。
 
@@ -82,7 +82,7 @@ class ListNotificationsRequest:
 
     @notification_name.setter
     def notification_name(self, notification_name):
-        """Sets the notification_name of this ListNotificationsRequest.
+        r"""Sets the notification_name of this ListNotificationsRequest.
 
         标识关键操作通知名称。 在不传入该字段的情况下，将查询当前租户所有的关键操作通知。
 

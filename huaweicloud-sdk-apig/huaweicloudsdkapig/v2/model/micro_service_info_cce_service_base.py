@@ -29,7 +29,7 @@ class MicroServiceInfoCCEServiceBase:
     }
 
     def __init__(self, cluster_id=None, namespace=None, service_name=None):
-        """MicroServiceInfoCCEServiceBase
+        r"""MicroServiceInfoCCEServiceBase
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MicroServiceInfoCCEServiceBase:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MicroServiceInfoCCEServiceBase.
+        r"""Gets the cluster_id of this MicroServiceInfoCCEServiceBase.
 
         云容器引擎集群编号
 
@@ -65,7 +65,7 @@ class MicroServiceInfoCCEServiceBase:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MicroServiceInfoCCEServiceBase.
+        r"""Sets the cluster_id of this MicroServiceInfoCCEServiceBase.
 
         云容器引擎集群编号
 
@@ -76,7 +76,7 @@ class MicroServiceInfoCCEServiceBase:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MicroServiceInfoCCEServiceBase.
+        r"""Gets the namespace of this MicroServiceInfoCCEServiceBase.
 
         命名空间。1-63字符。只能包含小写字母、数字，以及 '-'，必须以字母开头，必须以字母数字结尾。
 
@@ -87,7 +87,7 @@ class MicroServiceInfoCCEServiceBase:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MicroServiceInfoCCEServiceBase.
+        r"""Sets the namespace of this MicroServiceInfoCCEServiceBase.
 
         命名空间。1-63字符。只能包含小写字母、数字，以及 '-'，必须以字母开头，必须以字母数字结尾。
 
@@ -98,7 +98,7 @@ class MicroServiceInfoCCEServiceBase:
 
     @property
     def service_name(self):
-        """Gets the service_name of this MicroServiceInfoCCEServiceBase.
+        r"""Gets the service_name of this MicroServiceInfoCCEServiceBase.
 
         Service名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -109,7 +109,7 @@ class MicroServiceInfoCCEServiceBase:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this MicroServiceInfoCCEServiceBase.
+        r"""Sets the service_name of this MicroServiceInfoCCEServiceBase.
 
         Service名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 

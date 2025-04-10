@@ -26,7 +26,7 @@ class ListVpcsResponse(SdkResponse):
     }
 
     def __init__(self, vpcs=None):
-        """ListVpcsResponse
+        r"""ListVpcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListVpcsResponse(SdkResponse):
 
     @property
     def vpcs(self):
-        """Gets the vpcs of this ListVpcsResponse.
+        r"""Gets the vpcs of this ListVpcsResponse.
 
         vpc对象列表
 
@@ -55,7 +55,7 @@ class ListVpcsResponse(SdkResponse):
 
     @vpcs.setter
     def vpcs(self, vpcs):
-        """Sets the vpcs of this ListVpcsResponse.
+        r"""Sets the vpcs of this ListVpcsResponse.
 
         vpc对象列表
 

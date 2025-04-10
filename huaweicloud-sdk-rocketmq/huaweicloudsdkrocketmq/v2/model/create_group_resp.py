@@ -25,7 +25,7 @@ class CreateGroupResp:
     }
 
     def __init__(self, name=None):
-        """CreateGroupResp
+        r"""CreateGroupResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGroupResp:
 
     @property
     def name(self):
-        """Gets the name of this CreateGroupResp.
+        r"""Gets the name of this CreateGroupResp.
 
         创建成功的消费组名称。
 
@@ -54,7 +54,7 @@ class CreateGroupResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGroupResp.
+        r"""Sets the name of this CreateGroupResp.
 
         创建成功的消费组名称。
 

@@ -31,7 +31,7 @@ class MatchFeaturePair:
     }
 
     def __init__(self, user_feature_name=None, item_feature_name=None, weight=None, match_count=None):
-        """MatchFeaturePair
+        r"""MatchFeaturePair
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MatchFeaturePair:
 
     @property
     def user_feature_name(self):
-        """Gets the user_feature_name of this MatchFeaturePair.
+        r"""Gets the user_feature_name of this MatchFeaturePair.
 
         用户特征。
 
@@ -75,7 +75,7 @@ class MatchFeaturePair:
 
     @user_feature_name.setter
     def user_feature_name(self, user_feature_name):
-        """Sets the user_feature_name of this MatchFeaturePair.
+        r"""Sets the user_feature_name of this MatchFeaturePair.
 
         用户特征。
 
@@ -86,7 +86,7 @@ class MatchFeaturePair:
 
     @property
     def item_feature_name(self):
-        """Gets the item_feature_name of this MatchFeaturePair.
+        r"""Gets the item_feature_name of this MatchFeaturePair.
 
         物品特征。
 
@@ -97,7 +97,7 @@ class MatchFeaturePair:
 
     @item_feature_name.setter
     def item_feature_name(self, item_feature_name):
-        """Sets the item_feature_name of this MatchFeaturePair.
+        r"""Sets the item_feature_name of this MatchFeaturePair.
 
         物品特征。
 
@@ -108,7 +108,7 @@ class MatchFeaturePair:
 
     @property
     def weight(self):
-        """Gets the weight of this MatchFeaturePair.
+        r"""Gets the weight of this MatchFeaturePair.
 
         权重。
 
@@ -119,7 +119,7 @@ class MatchFeaturePair:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this MatchFeaturePair.
+        r"""Sets the weight of this MatchFeaturePair.
 
         权重。
 
@@ -130,7 +130,7 @@ class MatchFeaturePair:
 
     @property
     def match_count(self):
-        """Gets the match_count of this MatchFeaturePair.
+        r"""Gets the match_count of this MatchFeaturePair.
 
         匹配个数度量。
 
@@ -141,7 +141,7 @@ class MatchFeaturePair:
 
     @match_count.setter
     def match_count(self, match_count):
-        """Sets the match_count of this MatchFeaturePair.
+        r"""Sets the match_count of this MatchFeaturePair.
 
         匹配个数度量。
 

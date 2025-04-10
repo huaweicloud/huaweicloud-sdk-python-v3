@@ -28,7 +28,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None):
-        """ShowAutoScalingHistoryResponse
+        r"""ShowAutoScalingHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowAutoScalingHistoryResponse.
+        r"""Gets the total_count of this ShowAutoScalingHistoryResponse.
 
         记录总数。
 
@@ -62,7 +62,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowAutoScalingHistoryResponse.
+        r"""Sets the total_count of this ShowAutoScalingHistoryResponse.
 
         记录总数。
 
@@ -73,7 +73,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ShowAutoScalingHistoryResponse.
+        r"""Gets the records of this ShowAutoScalingHistoryResponse.
 
         自动变配历史记录列表。
 
@@ -84,7 +84,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowAutoScalingHistoryResponse.
+        r"""Sets the records of this ShowAutoScalingHistoryResponse.
 
         自动变配历史记录列表。
 

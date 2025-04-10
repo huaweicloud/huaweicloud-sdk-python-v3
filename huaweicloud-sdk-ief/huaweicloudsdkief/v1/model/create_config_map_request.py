@@ -27,7 +27,7 @@ class CreateConfigMapRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateConfigMapRequest
+        r"""CreateConfigMapRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateConfigMapRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateConfigMapRequest.
+        r"""Gets the ief_instance_id of this CreateConfigMapRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateConfigMapRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateConfigMapRequest.
+        r"""Sets the ief_instance_id of this CreateConfigMapRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateConfigMapRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConfigMapRequest.
+        r"""Gets the body of this CreateConfigMapRequest.
 
         :return: The body of this CreateConfigMapRequest.
         :rtype: :class:`huaweicloudsdkief.v1.ConfigMaps`
@@ -81,7 +81,7 @@ class CreateConfigMapRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConfigMapRequest.
+        r"""Sets the body of this CreateConfigMapRequest.
 
         :param body: The body of this CreateConfigMapRequest.
         :type body: :class:`huaweicloudsdkief.v1.ConfigMaps`

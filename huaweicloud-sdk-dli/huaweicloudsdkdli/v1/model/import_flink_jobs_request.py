@@ -25,7 +25,7 @@ class ImportFlinkJobsRequest:
     }
 
     def __init__(self, body=None):
-        """ImportFlinkJobsRequest
+        r"""ImportFlinkJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportFlinkJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportFlinkJobsRequest.
+        r"""Gets the body of this ImportFlinkJobsRequest.
 
         :return: The body of this ImportFlinkJobsRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ImportFlinkJobsRequestBody`
@@ -52,7 +52,7 @@ class ImportFlinkJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportFlinkJobsRequest.
+        r"""Sets the body of this ImportFlinkJobsRequest.
 
         :param body: The body of this ImportFlinkJobsRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ImportFlinkJobsRequestBody`

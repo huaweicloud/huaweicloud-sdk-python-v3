@@ -43,7 +43,7 @@ class ListBindingGeip:
     }
 
     def __init__(self, global_eip_id=None, global_eip_segment_id=None, status=None, type=None, error_message=None, cidr=None, address_family=None, ie_vtep_ip=None, created_time=None, gcb_id=None):
-        """ListBindingGeip
+        r"""ListBindingGeip
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListBindingGeip:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this ListBindingGeip.
+        r"""Gets the global_eip_id of this ListBindingGeip.
 
         geip的id
 
@@ -117,7 +117,7 @@ class ListBindingGeip:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this ListBindingGeip.
+        r"""Sets the global_eip_id of this ListBindingGeip.
 
         geip的id
 
@@ -128,7 +128,7 @@ class ListBindingGeip:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this ListBindingGeip.
+        r"""Gets the global_eip_segment_id of this ListBindingGeip.
 
         网段geip的id
 
@@ -139,7 +139,7 @@ class ListBindingGeip:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this ListBindingGeip.
+        r"""Sets the global_eip_segment_id of this ListBindingGeip.
 
         网段geip的id
 
@@ -150,7 +150,7 @@ class ListBindingGeip:
 
     @property
     def status(self):
-        """Gets the status of this ListBindingGeip.
+        r"""Gets the status of this ListBindingGeip.
 
         geip的绑定状态
 
@@ -161,7 +161,7 @@ class ListBindingGeip:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBindingGeip.
+        r"""Sets the status of this ListBindingGeip.
 
         geip的绑定状态
 
@@ -172,7 +172,7 @@ class ListBindingGeip:
 
     @property
     def type(self):
-        """Gets the type of this ListBindingGeip.
+        r"""Gets the type of this ListBindingGeip.
 
         geip类型：IP_ADDRESS/IP_SEGMENT
 
@@ -183,7 +183,7 @@ class ListBindingGeip:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListBindingGeip.
+        r"""Sets the type of this ListBindingGeip.
 
         geip类型：IP_ADDRESS/IP_SEGMENT
 
@@ -194,7 +194,7 @@ class ListBindingGeip:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListBindingGeip.
+        r"""Gets the error_message of this ListBindingGeip.
 
         geip绑定失败的原因
 
@@ -205,7 +205,7 @@ class ListBindingGeip:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListBindingGeip.
+        r"""Sets the error_message of this ListBindingGeip.
 
         geip绑定失败的原因
 
@@ -216,7 +216,7 @@ class ListBindingGeip:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ListBindingGeip.
+        r"""Gets the cidr of this ListBindingGeip.
 
         geip的地址ip/mask
 
@@ -227,7 +227,7 @@ class ListBindingGeip:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ListBindingGeip.
+        r"""Sets the cidr of this ListBindingGeip.
 
         geip的地址ip/mask
 
@@ -238,7 +238,7 @@ class ListBindingGeip:
 
     @property
     def address_family(self):
-        """Gets the address_family of this ListBindingGeip.
+        r"""Gets the address_family of this ListBindingGeip.
 
         geip的地址簇
 
@@ -249,7 +249,7 @@ class ListBindingGeip:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this ListBindingGeip.
+        r"""Sets the address_family of this ListBindingGeip.
 
         geip的地址簇
 
@@ -260,7 +260,7 @@ class ListBindingGeip:
 
     @property
     def ie_vtep_ip(self):
-        """Gets the ie_vtep_ip of this ListBindingGeip.
+        r"""Gets the ie_vtep_ip of this ListBindingGeip.
 
         CloudPond的集群vtepIp
 
@@ -271,7 +271,7 @@ class ListBindingGeip:
 
     @ie_vtep_ip.setter
     def ie_vtep_ip(self, ie_vtep_ip):
-        """Sets the ie_vtep_ip of this ListBindingGeip.
+        r"""Sets the ie_vtep_ip of this ListBindingGeip.
 
         CloudPond的集群vtepIp
 
@@ -282,7 +282,7 @@ class ListBindingGeip:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ListBindingGeip.
+        r"""Gets the created_time of this ListBindingGeip.
 
         geip绑定时间
 
@@ -293,7 +293,7 @@ class ListBindingGeip:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ListBindingGeip.
+        r"""Sets the created_time of this ListBindingGeip.
 
         geip绑定时间
 
@@ -304,7 +304,7 @@ class ListBindingGeip:
 
     @property
     def gcb_id(self):
-        """Gets the gcb_id of this ListBindingGeip.
+        r"""Gets the gcb_id of this ListBindingGeip.
 
         带宽包的id
 
@@ -315,7 +315,7 @@ class ListBindingGeip:
 
     @gcb_id.setter
     def gcb_id(self, gcb_id):
-        """Sets the gcb_id of this ListBindingGeip.
+        r"""Sets the gcb_id of this ListBindingGeip.
 
         带宽包的id
 

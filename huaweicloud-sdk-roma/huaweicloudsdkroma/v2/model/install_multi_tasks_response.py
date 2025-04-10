@@ -26,7 +26,7 @@ class InstallMultiTasksResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """InstallMultiTasksResponse
+        r"""InstallMultiTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InstallMultiTasksResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this InstallMultiTasksResponse.
+        r"""Gets the body of this InstallMultiTasksResponse.
 
         :return: The body of this InstallMultiTasksResponse.
         :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskInitElement`]
@@ -53,7 +53,7 @@ class InstallMultiTasksResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InstallMultiTasksResponse.
+        r"""Sets the body of this InstallMultiTasksResponse.
 
         :param body: The body of this InstallMultiTasksResponse.
         :type body: list[:class:`huaweicloudsdkroma.v2.MultiTaskInitElement`]

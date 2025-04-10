@@ -29,7 +29,7 @@ class ShowIfUserNameRepeatRequest:
     }
 
     def __init__(self, service_id=None, user_id=None, user_name=None):
-        """ShowIfUserNameRepeatRequest
+        r"""ShowIfUserNameRepeatRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowIfUserNameRepeatRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowIfUserNameRepeatRequest.
+        r"""Gets the service_id of this ShowIfUserNameRepeatRequest.
 
         服务id
 
@@ -67,7 +67,7 @@ class ShowIfUserNameRepeatRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowIfUserNameRepeatRequest.
+        r"""Sets the service_id of this ShowIfUserNameRepeatRequest.
 
         服务id
 
@@ -78,7 +78,7 @@ class ShowIfUserNameRepeatRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowIfUserNameRepeatRequest.
+        r"""Gets the user_id of this ShowIfUserNameRepeatRequest.
 
         用户ID
 
@@ -89,7 +89,7 @@ class ShowIfUserNameRepeatRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowIfUserNameRepeatRequest.
+        r"""Sets the user_id of this ShowIfUserNameRepeatRequest.
 
         用户ID
 
@@ -100,7 +100,7 @@ class ShowIfUserNameRepeatRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowIfUserNameRepeatRequest.
+        r"""Gets the user_name of this ShowIfUserNameRepeatRequest.
 
         用户名
 
@@ -111,7 +111,7 @@ class ShowIfUserNameRepeatRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowIfUserNameRepeatRequest.
+        r"""Sets the user_name of this ShowIfUserNameRepeatRequest.
 
         用户名
 

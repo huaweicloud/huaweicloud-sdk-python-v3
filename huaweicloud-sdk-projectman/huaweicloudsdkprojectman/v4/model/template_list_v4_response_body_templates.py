@@ -33,7 +33,7 @@ class TemplateListV4ResponseBodyTemplates:
     }
 
     def __init__(self, id=None, project_id=None, tracker_id=None, description=None, issue_field_config=None):
-        """TemplateListV4ResponseBodyTemplates
+        r"""TemplateListV4ResponseBodyTemplates
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @property
     def id(self):
-        """Gets the id of this TemplateListV4ResponseBodyTemplates.
+        r"""Gets the id of this TemplateListV4ResponseBodyTemplates.
 
         模板id
 
@@ -82,7 +82,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateListV4ResponseBodyTemplates.
+        r"""Sets the id of this TemplateListV4ResponseBodyTemplates.
 
         模板id
 
@@ -93,7 +93,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TemplateListV4ResponseBodyTemplates.
+        r"""Gets the project_id of this TemplateListV4ResponseBodyTemplates.
 
         项目id
 
@@ -104,7 +104,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TemplateListV4ResponseBodyTemplates.
+        r"""Sets the project_id of this TemplateListV4ResponseBodyTemplates.
 
         项目id
 
@@ -115,7 +115,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this TemplateListV4ResponseBodyTemplates.
+        r"""Gets the tracker_id of this TemplateListV4ResponseBodyTemplates.
 
         工作项类型id
 
@@ -126,7 +126,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this TemplateListV4ResponseBodyTemplates.
+        r"""Sets the tracker_id of this TemplateListV4ResponseBodyTemplates.
 
         工作项类型id
 
@@ -137,7 +137,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @property
     def description(self):
-        """Gets the description of this TemplateListV4ResponseBodyTemplates.
+        r"""Gets the description of this TemplateListV4ResponseBodyTemplates.
 
         工作项详情模板描述内容
 
@@ -148,7 +148,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateListV4ResponseBodyTemplates.
+        r"""Sets the description of this TemplateListV4ResponseBodyTemplates.
 
         工作项详情模板描述内容
 
@@ -159,7 +159,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @property
     def issue_field_config(self):
-        """Gets the issue_field_config of this TemplateListV4ResponseBodyTemplates.
+        r"""Gets the issue_field_config of this TemplateListV4ResponseBodyTemplates.
 
         模板配置
 
@@ -170,7 +170,7 @@ class TemplateListV4ResponseBodyTemplates:
 
     @issue_field_config.setter
     def issue_field_config(self, issue_field_config):
-        """Sets the issue_field_config of this TemplateListV4ResponseBodyTemplates.
+        r"""Sets the issue_field_config of this TemplateListV4ResponseBodyTemplates.
 
         模板配置
 

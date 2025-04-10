@@ -33,7 +33,7 @@ class ListTranscodeTemplateRequest:
     }
 
     def __init__(self, group_id=None, is_default=None, offset=None, limit=None, query_string=None):
-        """ListTranscodeTemplateRequest
+        r"""ListTranscodeTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListTranscodeTemplateRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListTranscodeTemplateRequest.
+        r"""Gets the group_id of this ListTranscodeTemplateRequest.
 
         模板id 
 
@@ -82,7 +82,7 @@ class ListTranscodeTemplateRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListTranscodeTemplateRequest.
+        r"""Sets the group_id of this ListTranscodeTemplateRequest.
 
         模板id 
 
@@ -93,7 +93,7 @@ class ListTranscodeTemplateRequest:
 
     @property
     def is_default(self):
-        """Gets the is_default of this ListTranscodeTemplateRequest.
+        r"""Gets the is_default of this ListTranscodeTemplateRequest.
 
         是否默认 
 
@@ -104,7 +104,7 @@ class ListTranscodeTemplateRequest:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this ListTranscodeTemplateRequest.
+        r"""Sets the is_default of this ListTranscodeTemplateRequest.
 
         是否默认 
 
@@ -115,7 +115,7 @@ class ListTranscodeTemplateRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTranscodeTemplateRequest.
+        r"""Gets the offset of this ListTranscodeTemplateRequest.
 
         偏移量。默认为0。指定group_id时该参数无效。<br/> 
 
@@ -126,7 +126,7 @@ class ListTranscodeTemplateRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTranscodeTemplateRequest.
+        r"""Sets the offset of this ListTranscodeTemplateRequest.
 
         偏移量。默认为0。指定group_id时该参数无效。<br/> 
 
@@ -137,7 +137,7 @@ class ListTranscodeTemplateRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTranscodeTemplateRequest.
+        r"""Gets the limit of this ListTranscodeTemplateRequest.
 
         每页记录数。默认为10，范围[1,100]。指定group_id时该参数无效。<br/> 
 
@@ -148,7 +148,7 @@ class ListTranscodeTemplateRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTranscodeTemplateRequest.
+        r"""Sets the limit of this ListTranscodeTemplateRequest.
 
         每页记录数。默认为10，范围[1,100]。指定group_id时该参数无效。<br/> 
 
@@ -159,7 +159,7 @@ class ListTranscodeTemplateRequest:
 
     @property
     def query_string(self):
-        """Gets the query_string of this ListTranscodeTemplateRequest.
+        r"""Gets the query_string of this ListTranscodeTemplateRequest.
 
         按照模板名和描述模糊查询。指定group_id时该参数无效。<br/> 
 
@@ -170,7 +170,7 @@ class ListTranscodeTemplateRequest:
 
     @query_string.setter
     def query_string(self, query_string):
-        """Sets the query_string of this ListTranscodeTemplateRequest.
+        r"""Sets the query_string of this ListTranscodeTemplateRequest.
 
         按照模板名和描述模糊查询。指定group_id时该参数无效。<br/> 
 

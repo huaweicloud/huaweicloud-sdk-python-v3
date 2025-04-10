@@ -31,7 +31,7 @@ class UpdateEdgeModuleReqDTO:
     }
 
     def __init__(self, app_version=None, module_name=None, container_settings=None, desired_state=None):
-        """UpdateEdgeModuleReqDTO
+        r"""UpdateEdgeModuleReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateEdgeModuleReqDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this UpdateEdgeModuleReqDTO.
+        r"""Gets the app_version of this UpdateEdgeModuleReqDTO.
 
         边缘应用版本
 
@@ -75,7 +75,7 @@ class UpdateEdgeModuleReqDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this UpdateEdgeModuleReqDTO.
+        r"""Sets the app_version of this UpdateEdgeModuleReqDTO.
 
         边缘应用版本
 
@@ -86,7 +86,7 @@ class UpdateEdgeModuleReqDTO:
 
     @property
     def module_name(self):
-        """Gets the module_name of this UpdateEdgeModuleReqDTO.
+        r"""Gets the module_name of this UpdateEdgeModuleReqDTO.
 
         边缘模块名称
 
@@ -97,7 +97,7 @@ class UpdateEdgeModuleReqDTO:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this UpdateEdgeModuleReqDTO.
+        r"""Sets the module_name of this UpdateEdgeModuleReqDTO.
 
         边缘模块名称
 
@@ -108,7 +108,7 @@ class UpdateEdgeModuleReqDTO:
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this UpdateEdgeModuleReqDTO.
+        r"""Gets the container_settings of this UpdateEdgeModuleReqDTO.
 
         :return: The container_settings of this UpdateEdgeModuleReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
@@ -117,7 +117,7 @@ class UpdateEdgeModuleReqDTO:
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this UpdateEdgeModuleReqDTO.
+        r"""Sets the container_settings of this UpdateEdgeModuleReqDTO.
 
         :param container_settings: The container_settings of this UpdateEdgeModuleReqDTO.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
@@ -126,7 +126,7 @@ class UpdateEdgeModuleReqDTO:
 
     @property
     def desired_state(self):
-        """Gets the desired_state of this UpdateEdgeModuleReqDTO.
+        r"""Gets the desired_state of this UpdateEdgeModuleReqDTO.
 
         模块期望状态: RUNNING(升级后期望模块运行)，STOPPED(升级后期望模块停止)，空值默认继承升级前模块期望状态
 
@@ -137,7 +137,7 @@ class UpdateEdgeModuleReqDTO:
 
     @desired_state.setter
     def desired_state(self, desired_state):
-        """Sets the desired_state of this UpdateEdgeModuleReqDTO.
+        r"""Sets the desired_state of this UpdateEdgeModuleReqDTO.
 
         模块期望状态: RUNNING(升级后期望模块运行)，STOPPED(升级后期望模块停止)，空值默认继承升级前模块期望状态
 

@@ -27,7 +27,7 @@ class UpdateOrganizationPolicyRequest:
     }
 
     def __init__(self, organization_policy_id=None, body=None):
-        """UpdateOrganizationPolicyRequest
+        r"""UpdateOrganizationPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateOrganizationPolicyRequest:
 
     @property
     def organization_policy_id(self):
-        """Gets the organization_policy_id of this UpdateOrganizationPolicyRequest.
+        r"""Gets the organization_policy_id of this UpdateOrganizationPolicyRequest.
 
         组织策略ID
 
@@ -60,7 +60,7 @@ class UpdateOrganizationPolicyRequest:
 
     @organization_policy_id.setter
     def organization_policy_id(self, organization_policy_id):
-        """Sets the organization_policy_id of this UpdateOrganizationPolicyRequest.
+        r"""Sets the organization_policy_id of this UpdateOrganizationPolicyRequest.
 
         组织策略ID
 
@@ -71,7 +71,7 @@ class UpdateOrganizationPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOrganizationPolicyRequest.
+        r"""Gets the body of this UpdateOrganizationPolicyRequest.
 
         :return: The body of this UpdateOrganizationPolicyRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.OrganizationPolicyUpdateReq`
@@ -80,7 +80,7 @@ class UpdateOrganizationPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOrganizationPolicyRequest.
+        r"""Sets the body of this UpdateOrganizationPolicyRequest.
 
         :param body: The body of this UpdateOrganizationPolicyRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.OrganizationPolicyUpdateReq`

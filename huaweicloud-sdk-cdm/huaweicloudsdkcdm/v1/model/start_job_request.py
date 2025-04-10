@@ -29,7 +29,7 @@ class StartJobRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, body=None):
-        """StartJobRequest
+        r"""StartJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StartJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartJobRequest.
+        r"""Gets the cluster_id of this StartJobRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class StartJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartJobRequest.
+        r"""Sets the cluster_id of this StartJobRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class StartJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this StartJobRequest.
+        r"""Gets the job_name of this StartJobRequest.
 
         作业名称
 
@@ -88,7 +88,7 @@ class StartJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this StartJobRequest.
+        r"""Sets the job_name of this StartJobRequest.
 
         作业名称
 
@@ -99,7 +99,7 @@ class StartJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartJobRequest.
+        r"""Gets the body of this StartJobRequest.
 
         :return: The body of this StartJobRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStartJobReq`
@@ -108,7 +108,7 @@ class StartJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartJobRequest.
+        r"""Sets the body of this StartJobRequest.
 
         :param body: The body of this StartJobRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmStartJobReq`

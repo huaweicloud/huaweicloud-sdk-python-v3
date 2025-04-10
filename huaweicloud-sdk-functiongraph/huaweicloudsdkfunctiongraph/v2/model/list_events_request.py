@@ -25,7 +25,7 @@ class ListEventsRequest:
     }
 
     def __init__(self, function_urn=None):
-        """ListEventsRequest
+        r"""ListEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEventsRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListEventsRequest.
+        r"""Gets the function_urn of this ListEventsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -53,7 +53,7 @@ class ListEventsRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListEventsRequest.
+        r"""Sets the function_urn of this ListEventsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 

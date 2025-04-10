@@ -29,7 +29,7 @@ class ExecuteDeviceControlsSetRequest:
     }
 
     def __init__(self, edge_node_id=None, device_id=None, body=None):
-        """ExecuteDeviceControlsSetRequest
+        r"""ExecuteDeviceControlsSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteDeviceControlsSetRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ExecuteDeviceControlsSetRequest.
+        r"""Gets the edge_node_id of this ExecuteDeviceControlsSetRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class ExecuteDeviceControlsSetRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ExecuteDeviceControlsSetRequest.
+        r"""Sets the edge_node_id of this ExecuteDeviceControlsSetRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class ExecuteDeviceControlsSetRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ExecuteDeviceControlsSetRequest.
+        r"""Gets the device_id of this ExecuteDeviceControlsSetRequest.
 
         设备ID
 
@@ -88,7 +88,7 @@ class ExecuteDeviceControlsSetRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ExecuteDeviceControlsSetRequest.
+        r"""Sets the device_id of this ExecuteDeviceControlsSetRequest.
 
         设备ID
 
@@ -99,7 +99,7 @@ class ExecuteDeviceControlsSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteDeviceControlsSetRequest.
+        r"""Gets the body of this ExecuteDeviceControlsSetRequest.
 
         :return: The body of this ExecuteDeviceControlsSetRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceControlSetReqDTO`
@@ -108,7 +108,7 @@ class ExecuteDeviceControlsSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteDeviceControlsSetRequest.
+        r"""Sets the body of this ExecuteDeviceControlsSetRequest.
 
         :param body: The body of this ExecuteDeviceControlsSetRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.DeviceControlSetReqDTO`

@@ -29,7 +29,7 @@ class DeleteScriptRequest:
     }
 
     def __init__(self, workspace=None, script_name=None, body=None):
-        """DeleteScriptRequest
+        r"""DeleteScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteScriptRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteScriptRequest.
+        r"""Gets the workspace of this DeleteScriptRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class DeleteScriptRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteScriptRequest.
+        r"""Sets the workspace of this DeleteScriptRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class DeleteScriptRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this DeleteScriptRequest.
+        r"""Gets the script_name of this DeleteScriptRequest.
 
         :return: The script_name of this DeleteScriptRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class DeleteScriptRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this DeleteScriptRequest.
+        r"""Sets the script_name of this DeleteScriptRequest.
 
         :param script_name: The script_name of this DeleteScriptRequest.
         :type script_name: str
@@ -96,7 +96,7 @@ class DeleteScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteScriptRequest.
+        r"""Gets the body of this DeleteScriptRequest.
 
         :return: The body of this DeleteScriptRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteReq`
@@ -105,7 +105,7 @@ class DeleteScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteScriptRequest.
+        r"""Sets the body of this DeleteScriptRequest.
 
         :param body: The body of this DeleteScriptRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.DeleteReq`

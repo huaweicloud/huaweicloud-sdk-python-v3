@@ -25,7 +25,7 @@ class BatchIdBody:
     }
 
     def __init__(self, ids=None):
-        """BatchIdBody
+        r"""BatchIdBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchIdBody:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchIdBody.
+        r"""Gets the ids of this BatchIdBody.
 
         批量id
 
@@ -54,7 +54,7 @@ class BatchIdBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchIdBody.
+        r"""Sets the ids of this BatchIdBody.
 
         批量id
 

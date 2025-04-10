@@ -29,7 +29,7 @@ class NodeSelector:
     }
 
     def __init__(self, key=None, value=None, operator=None):
-        """NodeSelector
+        r"""NodeSelector
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class NodeSelector:
 
     @property
     def key(self):
-        """Gets the key of this NodeSelector.
+        r"""Gets the key of this NodeSelector.
 
         标签键
 
@@ -66,7 +66,7 @@ class NodeSelector:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this NodeSelector.
+        r"""Sets the key of this NodeSelector.
 
         标签键
 
@@ -77,7 +77,7 @@ class NodeSelector:
 
     @property
     def value(self):
-        """Gets the value of this NodeSelector.
+        r"""Gets the value of this NodeSelector.
 
         标签值列表
 
@@ -88,7 +88,7 @@ class NodeSelector:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this NodeSelector.
+        r"""Sets the value of this NodeSelector.
 
         标签值列表
 
@@ -99,7 +99,7 @@ class NodeSelector:
 
     @property
     def operator(self):
-        """Gets the operator of this NodeSelector.
+        r"""Gets the operator of this NodeSelector.
 
         标签逻辑运算符
 
@@ -110,7 +110,7 @@ class NodeSelector:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this NodeSelector.
+        r"""Sets the operator of this NodeSelector.
 
         标签逻辑运算符
 

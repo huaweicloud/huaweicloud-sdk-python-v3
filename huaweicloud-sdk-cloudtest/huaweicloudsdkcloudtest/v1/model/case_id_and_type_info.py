@@ -27,7 +27,7 @@ class CaseIdAndTypeInfo:
     }
 
     def __init__(self, id=None, type=None):
-        """CaseIdAndTypeInfo
+        r"""CaseIdAndTypeInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaseIdAndTypeInfo:
 
     @property
     def id(self):
-        """Gets the id of this CaseIdAndTypeInfo.
+        r"""Gets the id of this CaseIdAndTypeInfo.
 
         用例id
 
@@ -61,7 +61,7 @@ class CaseIdAndTypeInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CaseIdAndTypeInfo.
+        r"""Sets the id of this CaseIdAndTypeInfo.
 
         用例id
 
@@ -72,7 +72,7 @@ class CaseIdAndTypeInfo:
 
     @property
     def type(self):
-        """Gets the type of this CaseIdAndTypeInfo.
+        r"""Gets the type of this CaseIdAndTypeInfo.
 
         用例类型, 对应ServiceType
 
@@ -83,7 +83,7 @@ class CaseIdAndTypeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CaseIdAndTypeInfo.
+        r"""Sets the type of this CaseIdAndTypeInfo.
 
         用例类型, 对应ServiceType
 

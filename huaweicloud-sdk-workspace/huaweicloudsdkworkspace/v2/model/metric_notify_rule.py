@@ -37,7 +37,7 @@ class MetricNotifyRule:
     }
 
     def __init__(self, rule_id=None, metric_name=None, threshold=None, comparison_operator=None, interval=None, enable=None, notify_object=None):
-        """MetricNotifyRule
+        r"""MetricNotifyRule
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class MetricNotifyRule:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this MetricNotifyRule.
+        r"""Gets the rule_id of this MetricNotifyRule.
 
         规则ID
 
@@ -96,7 +96,7 @@ class MetricNotifyRule:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this MetricNotifyRule.
+        r"""Sets the rule_id of this MetricNotifyRule.
 
         规则ID
 
@@ -107,7 +107,7 @@ class MetricNotifyRule:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this MetricNotifyRule.
+        r"""Gets the metric_name of this MetricNotifyRule.
 
         统计指标名称，目前仅支持固定值：desktop_idle_duration * `desktop_idle_duration` -  桌面空闲时长
 
@@ -118,7 +118,7 @@ class MetricNotifyRule:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this MetricNotifyRule.
+        r"""Sets the metric_name of this MetricNotifyRule.
 
         统计指标名称，目前仅支持固定值：desktop_idle_duration * `desktop_idle_duration` -  桌面空闲时长
 
@@ -129,7 +129,7 @@ class MetricNotifyRule:
 
     @property
     def threshold(self):
-        """Gets the threshold of this MetricNotifyRule.
+        r"""Gets the threshold of this MetricNotifyRule.
 
         统计持续周期(天)
 
@@ -140,7 +140,7 @@ class MetricNotifyRule:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this MetricNotifyRule.
+        r"""Sets the threshold of this MetricNotifyRule.
 
         统计持续周期(天)
 
@@ -151,7 +151,7 @@ class MetricNotifyRule:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this MetricNotifyRule.
+        r"""Gets the comparison_operator of this MetricNotifyRule.
 
         统计指标对应的统计值和threshold进行比较的条件 * `>=` -  统计指标大于等于threshold时触发 * `>` -   统计指标大于threshold时触发 * `=` -  统计指标等于threshold时触发 * `<=` -  统计指标小于等于threshold时触发 * `<` -  统计指标小于threshold时触发
 
@@ -162,7 +162,7 @@ class MetricNotifyRule:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this MetricNotifyRule.
+        r"""Sets the comparison_operator of this MetricNotifyRule.
 
         统计指标对应的统计值和threshold进行比较的条件 * `>=` -  统计指标大于等于threshold时触发 * `>` -   统计指标大于threshold时触发 * `=` -  统计指标等于threshold时触发 * `<=` -  统计指标小于等于threshold时触发 * `<` -  统计指标小于threshold时触发
 
@@ -173,7 +173,7 @@ class MetricNotifyRule:
 
     @property
     def interval(self):
-        """Gets the interval of this MetricNotifyRule.
+        r"""Gets the interval of this MetricNotifyRule.
 
         触发通知后；下次通知的间隔时间;默认每天一次
 
@@ -184,7 +184,7 @@ class MetricNotifyRule:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this MetricNotifyRule.
+        r"""Sets the interval of this MetricNotifyRule.
 
         触发通知后；下次通知的间隔时间;默认每天一次
 
@@ -195,7 +195,7 @@ class MetricNotifyRule:
 
     @property
     def enable(self):
-        """Gets the enable of this MetricNotifyRule.
+        r"""Gets the enable of this MetricNotifyRule.
 
         启禁用规则 true:启用 false:禁用
 
@@ -206,7 +206,7 @@ class MetricNotifyRule:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this MetricNotifyRule.
+        r"""Sets the enable of this MetricNotifyRule.
 
         启禁用规则 true:启用 false:禁用
 
@@ -217,7 +217,7 @@ class MetricNotifyRule:
 
     @property
     def notify_object(self):
-        """Gets the notify_object of this MetricNotifyRule.
+        r"""Gets the notify_object of this MetricNotifyRule.
 
         通知对象;smn的主题urn
 
@@ -228,7 +228,7 @@ class MetricNotifyRule:
 
     @notify_object.setter
     def notify_object(self, notify_object):
-        """Sets the notify_object of this MetricNotifyRule.
+        r"""Sets the notify_object of this MetricNotifyRule.
 
         通知对象;smn的主题urn
 

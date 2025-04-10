@@ -32,7 +32,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
     }
 
     def __init__(self, image_frames=None, total=None, offset=None, count=None):
-        """ExecuteGetFramsListByImagesIdResponse
+        r"""ExecuteGetFramsListByImagesIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @property
     def image_frames(self):
-        """Gets the image_frames of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Gets the image_frames of this ExecuteGetFramsListByImagesIdResponse.
 
         播报框
 
@@ -76,7 +76,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @image_frames.setter
     def image_frames(self, image_frames):
-        """Sets the image_frames of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Sets the image_frames of this ExecuteGetFramsListByImagesIdResponse.
 
         播报框
 
@@ -87,7 +87,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Gets the total of this ExecuteGetFramsListByImagesIdResponse.
 
         播报框总数
 
@@ -98,7 +98,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Sets the total of this ExecuteGetFramsListByImagesIdResponse.
 
         播报框总数
 
@@ -109,7 +109,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Gets the offset of this ExecuteGetFramsListByImagesIdResponse.
 
         起始偏移量
 
@@ -120,7 +120,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Sets the offset of this ExecuteGetFramsListByImagesIdResponse.
 
         起始偏移量
 
@@ -131,7 +131,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Gets the count of this ExecuteGetFramsListByImagesIdResponse.
 
         本次查询数量
 
@@ -142,7 +142,7 @@ class ExecuteGetFramsListByImagesIdResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ExecuteGetFramsListByImagesIdResponse.
+        r"""Sets the count of this ExecuteGetFramsListByImagesIdResponse.
 
         本次查询数量
 

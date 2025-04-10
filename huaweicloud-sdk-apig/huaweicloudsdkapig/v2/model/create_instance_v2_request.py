@@ -25,7 +25,7 @@ class CreateInstanceV2Request:
     }
 
     def __init__(self, body=None):
-        """CreateInstanceV2Request
+        r"""CreateInstanceV2Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateInstanceV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceV2Request.
+        r"""Gets the body of this CreateInstanceV2Request.
 
         :return: The body of this CreateInstanceV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.InstanceCreateReq`
@@ -52,7 +52,7 @@ class CreateInstanceV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceV2Request.
+        r"""Sets the body of this CreateInstanceV2Request.
 
         :param body: The body of this CreateInstanceV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.InstanceCreateReq`

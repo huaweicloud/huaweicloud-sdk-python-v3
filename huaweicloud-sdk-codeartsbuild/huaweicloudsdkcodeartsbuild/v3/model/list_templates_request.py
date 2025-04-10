@@ -29,7 +29,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, name=None, page=None, page_size=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTemplatesRequest.
+        r"""Gets the name of this ListTemplatesRequest.
 
         检索的模板的名字模糊查询
 
@@ -68,7 +68,7 @@ class ListTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTemplatesRequest.
+        r"""Sets the name of this ListTemplatesRequest.
 
         检索的模板的名字模糊查询
 
@@ -79,7 +79,7 @@ class ListTemplatesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListTemplatesRequest.
+        r"""Gets the page of this ListTemplatesRequest.
 
         分页页码， 表示从此页开始查询
 
@@ -90,7 +90,7 @@ class ListTemplatesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListTemplatesRequest.
+        r"""Sets the page of this ListTemplatesRequest.
 
         分页页码， 表示从此页开始查询
 
@@ -101,7 +101,7 @@ class ListTemplatesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTemplatesRequest.
+        r"""Gets the page_size of this ListTemplatesRequest.
 
         每页显示的条目数量，page_size小于等于100
 
@@ -112,7 +112,7 @@ class ListTemplatesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTemplatesRequest.
+        r"""Sets the page_size of this ListTemplatesRequest.
 
         每页显示的条目数量，page_size小于等于100
 

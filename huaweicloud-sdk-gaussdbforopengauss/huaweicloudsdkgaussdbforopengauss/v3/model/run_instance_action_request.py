@@ -29,7 +29,7 @@ class RunInstanceActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """RunInstanceActionRequest
+        r"""RunInstanceActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunInstanceActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RunInstanceActionRequest.
+        r"""Gets the x_language of this RunInstanceActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class RunInstanceActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RunInstanceActionRequest.
+        r"""Sets the x_language of this RunInstanceActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class RunInstanceActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RunInstanceActionRequest.
+        r"""Gets the instance_id of this RunInstanceActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class RunInstanceActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RunInstanceActionRequest.
+        r"""Sets the instance_id of this RunInstanceActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class RunInstanceActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunInstanceActionRequest.
+        r"""Gets the body of this RunInstanceActionRequest.
 
         :return: The body of this RunInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceActionRequest`
@@ -109,7 +109,7 @@ class RunInstanceActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunInstanceActionRequest.
+        r"""Sets the body of this RunInstanceActionRequest.
 
         :param body: The body of this RunInstanceActionRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceActionRequest`

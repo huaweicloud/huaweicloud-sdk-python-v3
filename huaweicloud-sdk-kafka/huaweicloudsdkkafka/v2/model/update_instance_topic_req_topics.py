@@ -39,7 +39,7 @@ class UpdateInstanceTopicReqTopics:
     }
 
     def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None, new_partition_brokers=None, topic_other_configs=None, topic_desc=None):
-        """UpdateInstanceTopicReqTopics
+        r"""UpdateInstanceTopicReqTopics
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def id(self):
-        """Gets the id of this UpdateInstanceTopicReqTopics.
+        r"""Gets the id of this UpdateInstanceTopicReqTopics.
 
         topic名称，不支持修改。
 
@@ -102,7 +102,7 @@ class UpdateInstanceTopicReqTopics:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateInstanceTopicReqTopics.
+        r"""Sets the id of this UpdateInstanceTopicReqTopics.
 
         topic名称，不支持修改。
 
@@ -113,7 +113,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def retention_time(self):
-        """Gets the retention_time of this UpdateInstanceTopicReqTopics.
+        r"""Gets the retention_time of this UpdateInstanceTopicReqTopics.
 
         老化时间，单位小时。
 
@@ -124,7 +124,7 @@ class UpdateInstanceTopicReqTopics:
 
     @retention_time.setter
     def retention_time(self, retention_time):
-        """Sets the retention_time of this UpdateInstanceTopicReqTopics.
+        r"""Sets the retention_time of this UpdateInstanceTopicReqTopics.
 
         老化时间，单位小时。
 
@@ -135,7 +135,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def sync_replication(self):
-        """Gets the sync_replication of this UpdateInstanceTopicReqTopics.
+        r"""Gets the sync_replication of this UpdateInstanceTopicReqTopics.
 
         是否同步复制。
 
@@ -146,7 +146,7 @@ class UpdateInstanceTopicReqTopics:
 
     @sync_replication.setter
     def sync_replication(self, sync_replication):
-        """Sets the sync_replication of this UpdateInstanceTopicReqTopics.
+        r"""Sets the sync_replication of this UpdateInstanceTopicReqTopics.
 
         是否同步复制。
 
@@ -157,7 +157,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def sync_message_flush(self):
-        """Gets the sync_message_flush of this UpdateInstanceTopicReqTopics.
+        r"""Gets the sync_message_flush of this UpdateInstanceTopicReqTopics.
 
         是否同步落盘。
 
@@ -168,7 +168,7 @@ class UpdateInstanceTopicReqTopics:
 
     @sync_message_flush.setter
     def sync_message_flush(self, sync_message_flush):
-        """Sets the sync_message_flush of this UpdateInstanceTopicReqTopics.
+        r"""Sets the sync_message_flush of this UpdateInstanceTopicReqTopics.
 
         是否同步落盘。
 
@@ -179,7 +179,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def new_partition_numbers(self):
-        """Gets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
+        r"""Gets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
 
         分区数。
 
@@ -190,7 +190,7 @@ class UpdateInstanceTopicReqTopics:
 
     @new_partition_numbers.setter
     def new_partition_numbers(self, new_partition_numbers):
-        """Sets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
+        r"""Sets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
 
         分区数。
 
@@ -201,7 +201,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def new_partition_brokers(self):
-        """Gets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
+        r"""Gets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
 
         增加分区时指定broker列表
 
@@ -212,7 +212,7 @@ class UpdateInstanceTopicReqTopics:
 
     @new_partition_brokers.setter
     def new_partition_brokers(self, new_partition_brokers):
-        """Sets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
+        r"""Sets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
 
         增加分区时指定broker列表
 
@@ -223,7 +223,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def topic_other_configs(self):
-        """Gets the topic_other_configs of this UpdateInstanceTopicReqTopics.
+        r"""Gets the topic_other_configs of this UpdateInstanceTopicReqTopics.
 
         topic配置
 
@@ -234,7 +234,7 @@ class UpdateInstanceTopicReqTopics:
 
     @topic_other_configs.setter
     def topic_other_configs(self, topic_other_configs):
-        """Sets the topic_other_configs of this UpdateInstanceTopicReqTopics.
+        r"""Sets the topic_other_configs of this UpdateInstanceTopicReqTopics.
 
         topic配置
 
@@ -245,7 +245,7 @@ class UpdateInstanceTopicReqTopics:
 
     @property
     def topic_desc(self):
-        """Gets the topic_desc of this UpdateInstanceTopicReqTopics.
+        r"""Gets the topic_desc of this UpdateInstanceTopicReqTopics.
 
         topic描述
 
@@ -256,7 +256,7 @@ class UpdateInstanceTopicReqTopics:
 
     @topic_desc.setter
     def topic_desc(self, topic_desc):
-        """Sets the topic_desc of this UpdateInstanceTopicReqTopics.
+        r"""Sets the topic_desc of this UpdateInstanceTopicReqTopics.
 
         topic描述
 

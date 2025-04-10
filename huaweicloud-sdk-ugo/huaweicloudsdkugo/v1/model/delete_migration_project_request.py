@@ -25,7 +25,7 @@ class DeleteMigrationProjectRequest:
     }
 
     def __init__(self, migration_project_id=None):
-        """DeleteMigrationProjectRequest
+        r"""DeleteMigrationProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMigrationProjectRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this DeleteMigrationProjectRequest.
+        r"""Gets the migration_project_id of this DeleteMigrationProjectRequest.
 
         迁移项目ID。
 
@@ -53,7 +53,7 @@ class DeleteMigrationProjectRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this DeleteMigrationProjectRequest.
+        r"""Sets the migration_project_id of this DeleteMigrationProjectRequest.
 
         迁移项目ID。
 

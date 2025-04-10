@@ -31,7 +31,7 @@ class UpdateReleaseReqBody:
     }
 
     def __init__(self, chart_id=None, action=None, parameters=None, values=None):
-        """UpdateReleaseReqBody
+        r"""UpdateReleaseReqBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateReleaseReqBody:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this UpdateReleaseReqBody.
+        r"""Gets the chart_id of this UpdateReleaseReqBody.
 
         模板ID
 
@@ -71,7 +71,7 @@ class UpdateReleaseReqBody:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this UpdateReleaseReqBody.
+        r"""Sets the chart_id of this UpdateReleaseReqBody.
 
         模板ID
 
@@ -82,7 +82,7 @@ class UpdateReleaseReqBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateReleaseReqBody.
+        r"""Gets the action of this UpdateReleaseReqBody.
 
         更新操作，升级为upgrade，回退为rollback
 
@@ -93,7 +93,7 @@ class UpdateReleaseReqBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateReleaseReqBody.
+        r"""Sets the action of this UpdateReleaseReqBody.
 
         更新操作，升级为upgrade，回退为rollback
 
@@ -104,7 +104,7 @@ class UpdateReleaseReqBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this UpdateReleaseReqBody.
+        r"""Gets the parameters of this UpdateReleaseReqBody.
 
         :return: The parameters of this UpdateReleaseReqBody.
         :rtype: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
@@ -113,7 +113,7 @@ class UpdateReleaseReqBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this UpdateReleaseReqBody.
+        r"""Sets the parameters of this UpdateReleaseReqBody.
 
         :param parameters: The parameters of this UpdateReleaseReqBody.
         :type parameters: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
@@ -122,7 +122,7 @@ class UpdateReleaseReqBody:
 
     @property
     def values(self):
-        """Gets the values of this UpdateReleaseReqBody.
+        r"""Gets the values of this UpdateReleaseReqBody.
 
         :return: The values of this UpdateReleaseReqBody.
         :rtype: :class:`huaweicloudsdkcce.v3.CreateReleaseReqBodyValues`
@@ -131,7 +131,7 @@ class UpdateReleaseReqBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateReleaseReqBody.
+        r"""Sets the values of this UpdateReleaseReqBody.
 
         :param values: The values of this UpdateReleaseReqBody.
         :type values: :class:`huaweicloudsdkcce.v3.CreateReleaseReqBodyValues`

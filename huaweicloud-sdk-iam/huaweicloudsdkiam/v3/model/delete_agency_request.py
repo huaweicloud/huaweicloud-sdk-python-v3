@@ -25,7 +25,7 @@ class DeleteAgencyRequest:
     }
 
     def __init__(self, agency_id=None):
-        """DeleteAgencyRequest
+        r"""DeleteAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this DeleteAgencyRequest.
+        r"""Gets the agency_id of this DeleteAgencyRequest.
 
         待删除的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class DeleteAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this DeleteAgencyRequest.
+        r"""Sets the agency_id of this DeleteAgencyRequest.
 
         待删除的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

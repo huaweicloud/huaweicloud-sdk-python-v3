@@ -42,7 +42,7 @@ class ListChartsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, sql=None, title=None, type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, config=None):
-        """ListChartsResponse
+        r"""ListChartsResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListChartsResponse.
+        r"""Gets the id of this ListChartsResponse.
 
         id
 
@@ -111,7 +111,7 @@ class ListChartsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListChartsResponse.
+        r"""Sets the id of this ListChartsResponse.
 
         id
 
@@ -122,7 +122,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def sql(self):
-        """Gets the sql of this ListChartsResponse.
+        r"""Gets the sql of this ListChartsResponse.
 
         sql语句
 
@@ -133,7 +133,7 @@ class ListChartsResponse(SdkResponse):
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this ListChartsResponse.
+        r"""Sets the sql of this ListChartsResponse.
 
         sql语句
 
@@ -144,7 +144,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ListChartsResponse.
+        r"""Gets the title of this ListChartsResponse.
 
         图表名称
 
@@ -155,7 +155,7 @@ class ListChartsResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ListChartsResponse.
+        r"""Sets the title of this ListChartsResponse.
 
         图表名称
 
@@ -166,7 +166,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ListChartsResponse.
+        r"""Gets the type of this ListChartsResponse.
 
         图表类型
 
@@ -177,7 +177,7 @@ class ListChartsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListChartsResponse.
+        r"""Sets the type of this ListChartsResponse.
 
         图表类型
 
@@ -188,7 +188,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListChartsResponse.
+        r"""Gets the log_group_id of this ListChartsResponse.
 
         日志组id
 
@@ -199,7 +199,7 @@ class ListChartsResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListChartsResponse.
+        r"""Sets the log_group_id of this ListChartsResponse.
 
         日志组id
 
@@ -210,7 +210,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this ListChartsResponse.
+        r"""Gets the log_group_name of this ListChartsResponse.
 
         日志组名称
 
@@ -221,7 +221,7 @@ class ListChartsResponse(SdkResponse):
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this ListChartsResponse.
+        r"""Sets the log_group_name of this ListChartsResponse.
 
         日志组名称
 
@@ -232,7 +232,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListChartsResponse.
+        r"""Gets the log_stream_id of this ListChartsResponse.
 
         日志组id
 
@@ -243,7 +243,7 @@ class ListChartsResponse(SdkResponse):
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListChartsResponse.
+        r"""Sets the log_stream_id of this ListChartsResponse.
 
         日志组id
 
@@ -254,7 +254,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this ListChartsResponse.
+        r"""Gets the log_stream_name of this ListChartsResponse.
 
         日志流名称
 
@@ -265,7 +265,7 @@ class ListChartsResponse(SdkResponse):
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this ListChartsResponse.
+        r"""Sets the log_stream_name of this ListChartsResponse.
 
         日志流名称
 
@@ -276,7 +276,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this ListChartsResponse.
+        r"""Gets the config of this ListChartsResponse.
 
         :return: The config of this ListChartsResponse.
         :rtype: :class:`huaweicloudsdklts.v2.ChartConfig`
@@ -285,7 +285,7 @@ class ListChartsResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ListChartsResponse.
+        r"""Sets the config of this ListChartsResponse.
 
         :param config: The config of this ListChartsResponse.
         :type config: :class:`huaweicloudsdklts.v2.ChartConfig`

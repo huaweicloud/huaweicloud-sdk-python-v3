@@ -27,7 +27,7 @@ class BatchImportSmnInfoReq:
     }
 
     def __init__(self, jobs=None, alarm_notify_info=None):
-        """BatchImportSmnInfoReq
+        r"""BatchImportSmnInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchImportSmnInfoReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchImportSmnInfoReq.
+        r"""Gets the jobs of this BatchImportSmnInfoReq.
 
         任务信息
 
@@ -59,7 +59,7 @@ class BatchImportSmnInfoReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchImportSmnInfoReq.
+        r"""Sets the jobs of this BatchImportSmnInfoReq.
 
         任务信息
 
@@ -70,7 +70,7 @@ class BatchImportSmnInfoReq:
 
     @property
     def alarm_notify_info(self):
-        """Gets the alarm_notify_info of this BatchImportSmnInfoReq.
+        r"""Gets the alarm_notify_info of this BatchImportSmnInfoReq.
 
         :return: The alarm_notify_info of this BatchImportSmnInfoReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`
@@ -79,7 +79,7 @@ class BatchImportSmnInfoReq:
 
     @alarm_notify_info.setter
     def alarm_notify_info(self, alarm_notify_info):
-        """Sets the alarm_notify_info of this BatchImportSmnInfoReq.
+        r"""Sets the alarm_notify_info of this BatchImportSmnInfoReq.
 
         :param alarm_notify_info: The alarm_notify_info of this BatchImportSmnInfoReq.
         :type alarm_notify_info: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`

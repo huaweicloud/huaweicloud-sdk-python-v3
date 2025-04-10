@@ -29,7 +29,7 @@ class ReqDeleteTag:
     }
 
     def __init__(self, project_id=None, resources=None, tags=None):
-        """ReqDeleteTag
+        r"""ReqDeleteTag
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ReqDeleteTag:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ReqDeleteTag.
+        r"""Gets the project_id of this ReqDeleteTag.
 
         项目ID，resource_type为region级别服务时为必选项。
 
@@ -66,7 +66,7 @@ class ReqDeleteTag:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ReqDeleteTag.
+        r"""Sets the project_id of this ReqDeleteTag.
 
         项目ID，resource_type为region级别服务时为必选项。
 
@@ -77,7 +77,7 @@ class ReqDeleteTag:
 
     @property
     def resources(self):
-        """Gets the resources of this ReqDeleteTag.
+        r"""Gets the resources of this ReqDeleteTag.
 
         资源列表
 
@@ -88,7 +88,7 @@ class ReqDeleteTag:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ReqDeleteTag.
+        r"""Sets the resources of this ReqDeleteTag.
 
         资源列表
 
@@ -99,7 +99,7 @@ class ReqDeleteTag:
 
     @property
     def tags(self):
-        """Gets the tags of this ReqDeleteTag.
+        r"""Gets the tags of this ReqDeleteTag.
 
         标签列表
 
@@ -110,7 +110,7 @@ class ReqDeleteTag:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ReqDeleteTag.
+        r"""Sets the tags of this ReqDeleteTag.
 
         标签列表
 

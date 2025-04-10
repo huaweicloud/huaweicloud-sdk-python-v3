@@ -27,7 +27,7 @@ class KvOperIds:
     }
 
     def __init__(self, put_kv_ids=None, delete_kv_ids=None):
-        """KvOperIds
+        r"""KvOperIds
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KvOperIds:
 
     @property
     def put_kv_ids(self):
-        """Gets the put_kv_ids of this KvOperIds.
+        r"""Gets the put_kv_ids of this KvOperIds.
 
         上传kv操作, \"oper_id\"数组。 - 数组元素：请求内的操作编码，未成功的操作返回该标识。
 
@@ -61,7 +61,7 @@ class KvOperIds:
 
     @put_kv_ids.setter
     def put_kv_ids(self, put_kv_ids):
-        """Sets the put_kv_ids of this KvOperIds.
+        r"""Sets the put_kv_ids of this KvOperIds.
 
         上传kv操作, \"oper_id\"数组。 - 数组元素：请求内的操作编码，未成功的操作返回该标识。
 
@@ -72,7 +72,7 @@ class KvOperIds:
 
     @property
     def delete_kv_ids(self):
-        """Gets the delete_kv_ids of this KvOperIds.
+        r"""Gets the delete_kv_ids of this KvOperIds.
 
         请求内的操作编码，未成功的操作返回该标识。 - 数组元素：请求内的操作编码，未成功的操作返回该标识。
 
@@ -83,7 +83,7 @@ class KvOperIds:
 
     @delete_kv_ids.setter
     def delete_kv_ids(self, delete_kv_ids):
-        """Sets the delete_kv_ids of this KvOperIds.
+        r"""Sets the delete_kv_ids of this KvOperIds.
 
         请求内的操作编码，未成功的操作返回该标识。 - 数组元素：请求内的操作编码，未成功的操作返回该标识。
 

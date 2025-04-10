@@ -31,7 +31,7 @@ class InstallApkRequestBody:
     }
 
     def __init__(self, command=None, content=None, phone_ids=None, server_ids=None):
-        """InstallApkRequestBody
+        r"""InstallApkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class InstallApkRequestBody:
 
     @property
     def command(self):
-        """Gets the command of this InstallApkRequestBody.
+        r"""Gets the command of this InstallApkRequestBody.
 
         安装单apk场景填写install，多apk场景填写install-multiple。
 
@@ -73,7 +73,7 @@ class InstallApkRequestBody:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this InstallApkRequestBody.
+        r"""Sets the command of this InstallApkRequestBody.
 
         安装单apk场景填写install，多apk场景填写install-multiple。
 
@@ -84,7 +84,7 @@ class InstallApkRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this InstallApkRequestBody.
+        r"""Gets the content of this InstallApkRequestBody.
 
         指定OBS桶中的apk文件（需要提前上传到指定桶中）。 只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。  单apk场景，只能传一个apk，最大长度为1024字节；多apk场景，最多传50个apk，中间用空格分开，最大长度8100字节。
 
@@ -95,7 +95,7 @@ class InstallApkRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this InstallApkRequestBody.
+        r"""Sets the content of this InstallApkRequestBody.
 
         指定OBS桶中的apk文件（需要提前上传到指定桶中）。 只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。推送的文件只支持apk文件类型。  单apk场景，只能传一个apk，最大长度为1024字节；多apk场景，最多传50个apk，中间用空格分开，最大长度8100字节。
 
@@ -106,7 +106,7 @@ class InstallApkRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this InstallApkRequestBody.
+        r"""Gets the phone_ids of this InstallApkRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -117,7 +117,7 @@ class InstallApkRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this InstallApkRequestBody.
+        r"""Sets the phone_ids of this InstallApkRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -128,7 +128,7 @@ class InstallApkRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this InstallApkRequestBody.
+        r"""Gets the server_ids of this InstallApkRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -139,7 +139,7 @@ class InstallApkRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this InstallApkRequestBody.
+        r"""Sets the server_ids of this InstallApkRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 

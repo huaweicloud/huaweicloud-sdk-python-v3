@@ -29,7 +29,7 @@ class CreateObjectLevelCompareJobRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, body=None):
-        """CreateObjectLevelCompareJobRequest
+        r"""CreateObjectLevelCompareJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateObjectLevelCompareJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateObjectLevelCompareJobRequest.
+        r"""Gets the x_language of this CreateObjectLevelCompareJobRequest.
 
         请求语言类型。
 
@@ -67,7 +67,7 @@ class CreateObjectLevelCompareJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateObjectLevelCompareJobRequest.
+        r"""Sets the x_language of this CreateObjectLevelCompareJobRequest.
 
         请求语言类型。
 
@@ -78,7 +78,7 @@ class CreateObjectLevelCompareJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateObjectLevelCompareJobRequest.
+        r"""Gets the job_id of this CreateObjectLevelCompareJobRequest.
 
         任务ID。
 
@@ -89,7 +89,7 @@ class CreateObjectLevelCompareJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateObjectLevelCompareJobRequest.
+        r"""Sets the job_id of this CreateObjectLevelCompareJobRequest.
 
         任务ID。
 
@@ -100,7 +100,7 @@ class CreateObjectLevelCompareJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateObjectLevelCompareJobRequest.
+        r"""Gets the body of this CreateObjectLevelCompareJobRequest.
 
         :return: The body of this CreateObjectLevelCompareJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateObjectCompareJobReq`
@@ -109,7 +109,7 @@ class CreateObjectLevelCompareJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateObjectLevelCompareJobRequest.
+        r"""Sets the body of this CreateObjectLevelCompareJobRequest.
 
         :param body: The body of this CreateObjectLevelCompareJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.CreateObjectCompareJobReq`

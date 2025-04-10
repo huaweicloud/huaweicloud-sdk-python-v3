@@ -27,7 +27,7 @@ class TargetList:
     }
 
     def __init__(self, target_rsu_ids=None, target_obu_ids=None):
-        """TargetList
+        r"""TargetList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TargetList:
 
     @property
     def target_rsu_ids(self):
-        """Gets the target_rsu_ids of this TargetList.
+        r"""Gets the target_rsu_ids of this TargetList.
 
         **参数说明**：通过LTE-PC5传输通道（by_lte_pc5参数值为true）下发的rsu id列表。如果rsu id列表为空，则匹配事件范围内的在线rsu进行下发。
 
@@ -61,7 +61,7 @@ class TargetList:
 
     @target_rsu_ids.setter
     def target_rsu_ids(self, target_rsu_ids):
-        """Sets the target_rsu_ids of this TargetList.
+        r"""Sets the target_rsu_ids of this TargetList.
 
         **参数说明**：通过LTE-PC5传输通道（by_lte_pc5参数值为true）下发的rsu id列表。如果rsu id列表为空，则匹配事件范围内的在线rsu进行下发。
 
@@ -72,7 +72,7 @@ class TargetList:
 
     @property
     def target_obu_ids(self):
-        """Gets the target_obu_ids of this TargetList.
+        r"""Gets the target_obu_ids of this TargetList.
 
         **参数说明**：通过LTE-Uu的传输通道（by_lte_uu参数值为true）下发的obu id列表。注意obu id列表不能为空。
 
@@ -83,7 +83,7 @@ class TargetList:
 
     @target_obu_ids.setter
     def target_obu_ids(self, target_obu_ids):
-        """Sets the target_obu_ids of this TargetList.
+        r"""Sets the target_obu_ids of this TargetList.
 
         **参数说明**：通过LTE-Uu的传输通道（by_lte_uu参数值为true）下发的obu id列表。注意obu id列表不能为空。
 

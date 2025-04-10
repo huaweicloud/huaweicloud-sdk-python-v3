@@ -26,7 +26,7 @@ class UpdateVaultResponse(SdkResponse):
     }
 
     def __init__(self, vault=None):
-        """UpdateVaultResponse
+        r"""UpdateVaultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateVaultResponse(SdkResponse):
 
     @property
     def vault(self):
-        """Gets the vault of this UpdateVaultResponse.
+        r"""Gets the vault of this UpdateVaultResponse.
 
         :return: The vault of this UpdateVaultResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.Vault`
@@ -53,7 +53,7 @@ class UpdateVaultResponse(SdkResponse):
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this UpdateVaultResponse.
+        r"""Sets the vault of this UpdateVaultResponse.
 
         :param vault: The vault of this UpdateVaultResponse.
         :type vault: :class:`huaweicloudsdkcbr.v1.Vault`

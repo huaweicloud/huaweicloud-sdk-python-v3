@@ -31,7 +31,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     }
 
     def __init__(self, max_task=None, min_task=None, max_node=None, min_node=None):
-        """ListEngineSupportFeaturesPropertiesEntity
+        r"""ListEngineSupportFeaturesPropertiesEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @property
     def max_task(self):
-        """Gets the max_task of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Gets the max_task of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最大任务数。
 
@@ -75,7 +75,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @max_task.setter
     def max_task(self, max_task):
-        """Sets the max_task of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Sets the max_task of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最大任务数。
 
@@ -86,7 +86,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @property
     def min_task(self):
-        """Gets the min_task of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Gets the min_task of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最小任务数。
 
@@ -97,7 +97,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @min_task.setter
     def min_task(self, min_task):
-        """Sets the min_task of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Sets the min_task of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最小任务数。
 
@@ -108,7 +108,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @property
     def max_node(self):
-        """Gets the max_node of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Gets the max_node of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最大节点数。
 
@@ -119,7 +119,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @max_node.setter
     def max_node(self, max_node):
-        """Sets the max_node of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Sets the max_node of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最大节点数。
 
@@ -130,7 +130,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @property
     def min_node(self):
-        """Gets the min_node of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Gets the min_node of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最小节点数。
 
@@ -141,7 +141,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
     @min_node.setter
     def min_node(self, min_node):
-        """Sets the min_node of this ListEngineSupportFeaturesPropertiesEntity.
+        r"""Sets the min_node of this ListEngineSupportFeaturesPropertiesEntity.
 
         转储功能的最小节点数。
 

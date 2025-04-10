@@ -29,7 +29,7 @@ class IteratorListFilterInfo:
     }
 
     def __init__(self, pi_sprints=None, plan_end_date_start=None, plan_end_date_end=None):
-        """IteratorListFilterInfo
+        r"""IteratorListFilterInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IteratorListFilterInfo:
 
     @property
     def pi_sprints(self):
-        """Gets the pi_sprints of this IteratorListFilterInfo.
+        r"""Gets the pi_sprints of this IteratorListFilterInfo.
 
         pi过滤条件
 
@@ -68,7 +68,7 @@ class IteratorListFilterInfo:
 
     @pi_sprints.setter
     def pi_sprints(self, pi_sprints):
-        """Sets the pi_sprints of this IteratorListFilterInfo.
+        r"""Sets the pi_sprints of this IteratorListFilterInfo.
 
         pi过滤条件
 
@@ -79,7 +79,7 @@ class IteratorListFilterInfo:
 
     @property
     def plan_end_date_start(self):
-        """Gets the plan_end_date_start of this IteratorListFilterInfo.
+        r"""Gets the plan_end_date_start of this IteratorListFilterInfo.
 
         计划结束间过滤开始时间点
 
@@ -90,7 +90,7 @@ class IteratorListFilterInfo:
 
     @plan_end_date_start.setter
     def plan_end_date_start(self, plan_end_date_start):
-        """Sets the plan_end_date_start of this IteratorListFilterInfo.
+        r"""Sets the plan_end_date_start of this IteratorListFilterInfo.
 
         计划结束间过滤开始时间点
 
@@ -101,7 +101,7 @@ class IteratorListFilterInfo:
 
     @property
     def plan_end_date_end(self):
-        """Gets the plan_end_date_end of this IteratorListFilterInfo.
+        r"""Gets the plan_end_date_end of this IteratorListFilterInfo.
 
         计划结束时间过滤结束时间点
 
@@ -112,7 +112,7 @@ class IteratorListFilterInfo:
 
     @plan_end_date_end.setter
     def plan_end_date_end(self, plan_end_date_end):
-        """Sets the plan_end_date_end of this IteratorListFilterInfo.
+        r"""Sets the plan_end_date_end of this IteratorListFilterInfo.
 
         计划结束时间过滤结束时间点
 

@@ -26,7 +26,7 @@ class ShowJobConfigResponse(SdkResponse):
     }
 
     def __init__(self, job_retain_number=None):
-        """ShowJobConfigResponse
+        r"""ShowJobConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowJobConfigResponse(SdkResponse):
 
     @property
     def job_retain_number(self):
-        """Gets the job_retain_number of this ShowJobConfigResponse.
+        r"""Gets the job_retain_number of this ShowJobConfigResponse.
 
         作业保存条数
 
@@ -55,7 +55,7 @@ class ShowJobConfigResponse(SdkResponse):
 
     @job_retain_number.setter
     def job_retain_number(self, job_retain_number):
-        """Sets the job_retain_number of this ShowJobConfigResponse.
+        r"""Sets the job_retain_number of this ShowJobConfigResponse.
 
         作业保存条数
 

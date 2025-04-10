@@ -41,7 +41,7 @@ class SecretDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, workspace_id=None, project_id=None, created_at=None, updated_at=None, secrets=None, tags=None):
-        """SecretDetail
+        r"""SecretDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SecretDetail:
 
     @property
     def id(self):
-        """Gets the id of this SecretDetail.
+        r"""Gets the id of this SecretDetail.
 
         密钥ID
 
@@ -110,7 +110,7 @@ class SecretDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecretDetail.
+        r"""Sets the id of this SecretDetail.
 
         密钥ID
 
@@ -121,7 +121,7 @@ class SecretDetail:
 
     @property
     def name(self):
-        """Gets the name of this SecretDetail.
+        r"""Gets the name of this SecretDetail.
 
         密钥名称
 
@@ -132,7 +132,7 @@ class SecretDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecretDetail.
+        r"""Sets the name of this SecretDetail.
 
         密钥名称
 
@@ -143,7 +143,7 @@ class SecretDetail:
 
     @property
     def description(self):
-        """Gets the description of this SecretDetail.
+        r"""Gets the description of this SecretDetail.
 
         密钥描述
 
@@ -154,7 +154,7 @@ class SecretDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecretDetail.
+        r"""Sets the description of this SecretDetail.
 
         密钥描述
 
@@ -165,7 +165,7 @@ class SecretDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this SecretDetail.
+        r"""Gets the workspace_id of this SecretDetail.
 
         工作空间ID
 
@@ -176,7 +176,7 @@ class SecretDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this SecretDetail.
+        r"""Sets the workspace_id of this SecretDetail.
 
         工作空间ID
 
@@ -187,7 +187,7 @@ class SecretDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SecretDetail.
+        r"""Gets the project_id of this SecretDetail.
 
         项目ID
 
@@ -198,7 +198,7 @@ class SecretDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SecretDetail.
+        r"""Sets the project_id of this SecretDetail.
 
         项目ID
 
@@ -209,7 +209,7 @@ class SecretDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecretDetail.
+        r"""Gets the created_at of this SecretDetail.
 
         密钥创建时间
 
@@ -220,7 +220,7 @@ class SecretDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecretDetail.
+        r"""Sets the created_at of this SecretDetail.
 
         密钥创建时间
 
@@ -231,7 +231,7 @@ class SecretDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecretDetail.
+        r"""Gets the updated_at of this SecretDetail.
 
         密钥更新时间
 
@@ -242,7 +242,7 @@ class SecretDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecretDetail.
+        r"""Sets the updated_at of this SecretDetail.
 
         密钥更新时间
 
@@ -253,7 +253,7 @@ class SecretDetail:
 
     @property
     def secrets(self):
-        """Gets the secrets of this SecretDetail.
+        r"""Gets the secrets of this SecretDetail.
 
         密钥列表
 
@@ -264,7 +264,7 @@ class SecretDetail:
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this SecretDetail.
+        r"""Sets the secrets of this SecretDetail.
 
         密钥列表
 
@@ -275,7 +275,7 @@ class SecretDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this SecretDetail.
+        r"""Gets the tags of this SecretDetail.
 
         标签列表
 
@@ -286,7 +286,7 @@ class SecretDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SecretDetail.
+        r"""Sets the tags of this SecretDetail.
 
         标签列表
 

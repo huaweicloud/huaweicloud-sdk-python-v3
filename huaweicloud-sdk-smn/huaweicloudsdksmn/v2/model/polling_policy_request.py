@@ -27,7 +27,7 @@ class PollingPolicyRequest:
     }
 
     def __init__(self, order=None, subscription_urns=None):
-        """PollingPolicyRequest
+        r"""PollingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PollingPolicyRequest:
 
     @property
     def order(self):
-        """Gets the order of this PollingPolicyRequest.
+        r"""Gets the order of this PollingPolicyRequest.
 
         当前轮询的序号。
 
@@ -59,7 +59,7 @@ class PollingPolicyRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this PollingPolicyRequest.
+        r"""Sets the order of this PollingPolicyRequest.
 
         当前轮询的序号。
 
@@ -70,7 +70,7 @@ class PollingPolicyRequest:
 
     @property
     def subscription_urns(self):
-        """Gets the subscription_urns of this PollingPolicyRequest.
+        r"""Gets the subscription_urns of this PollingPolicyRequest.
 
         订阅终端urn列表。
 
@@ -81,7 +81,7 @@ class PollingPolicyRequest:
 
     @subscription_urns.setter
     def subscription_urns(self, subscription_urns):
-        """Sets the subscription_urns of this PollingPolicyRequest.
+        r"""Sets the subscription_urns of this PollingPolicyRequest.
 
         订阅终端urn列表。
 

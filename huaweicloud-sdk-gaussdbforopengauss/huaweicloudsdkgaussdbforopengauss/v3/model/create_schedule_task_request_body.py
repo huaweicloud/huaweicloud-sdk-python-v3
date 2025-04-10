@@ -33,7 +33,7 @@ class CreateScheduleTaskRequestBody:
     }
 
     def __init__(self, instance_ids=None, start_time=None, upgrade_type=None, upgrade_action=None, target_version=None):
-        """CreateScheduleTaskRequestBody
+        r"""CreateScheduleTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreateScheduleTaskRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this CreateScheduleTaskRequestBody.
+        r"""Gets the instance_ids of this CreateScheduleTaskRequestBody.
 
         实例ID列表。
 
@@ -77,7 +77,7 @@ class CreateScheduleTaskRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this CreateScheduleTaskRequestBody.
+        r"""Sets the instance_ids of this CreateScheduleTaskRequestBody.
 
         实例ID列表。
 
@@ -88,7 +88,7 @@ class CreateScheduleTaskRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateScheduleTaskRequestBody.
+        r"""Gets the start_time of this CreateScheduleTaskRequestBody.
 
         任务开始时间。
 
@@ -99,7 +99,7 @@ class CreateScheduleTaskRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateScheduleTaskRequestBody.
+        r"""Sets the start_time of this CreateScheduleTaskRequestBody.
 
         任务开始时间。
 
@@ -110,7 +110,7 @@ class CreateScheduleTaskRequestBody:
 
     @property
     def upgrade_type(self):
-        """Gets the upgrade_type of this CreateScheduleTaskRequestBody.
+        r"""Gets the upgrade_type of this CreateScheduleTaskRequestBody.
 
         实例升级类型。
 
@@ -121,7 +121,7 @@ class CreateScheduleTaskRequestBody:
 
     @upgrade_type.setter
     def upgrade_type(self, upgrade_type):
-        """Sets the upgrade_type of this CreateScheduleTaskRequestBody.
+        r"""Sets the upgrade_type of this CreateScheduleTaskRequestBody.
 
         实例升级类型。
 
@@ -132,7 +132,7 @@ class CreateScheduleTaskRequestBody:
 
     @property
     def upgrade_action(self):
-        """Gets the upgrade_action of this CreateScheduleTaskRequestBody.
+        r"""Gets the upgrade_action of this CreateScheduleTaskRequestBody.
 
         实例升级操作。
 
@@ -143,7 +143,7 @@ class CreateScheduleTaskRequestBody:
 
     @upgrade_action.setter
     def upgrade_action(self, upgrade_action):
-        """Sets the upgrade_action of this CreateScheduleTaskRequestBody.
+        r"""Sets the upgrade_action of this CreateScheduleTaskRequestBody.
 
         实例升级操作。
 
@@ -154,7 +154,7 @@ class CreateScheduleTaskRequestBody:
 
     @property
     def target_version(self):
-        """Gets the target_version of this CreateScheduleTaskRequestBody.
+        r"""Gets the target_version of this CreateScheduleTaskRequestBody.
 
         实例升级目标版本。
 
@@ -165,7 +165,7 @@ class CreateScheduleTaskRequestBody:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this CreateScheduleTaskRequestBody.
+        r"""Sets the target_version of this CreateScheduleTaskRequestBody.
 
         实例升级目标版本。
 

@@ -26,7 +26,7 @@ class SynchronizeInstancesResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """SynchronizeInstancesResponse
+        r"""SynchronizeInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SynchronizeInstancesResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this SynchronizeInstancesResponse.
+        r"""Gets the success of this SynchronizeInstancesResponse.
 
         任务创建是否成功。
 
@@ -55,7 +55,7 @@ class SynchronizeInstancesResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this SynchronizeInstancesResponse.
+        r"""Sets the success of this SynchronizeInstancesResponse.
 
         任务创建是否成功。
 

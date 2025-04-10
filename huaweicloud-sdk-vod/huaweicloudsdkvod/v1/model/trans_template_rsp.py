@@ -41,7 +41,7 @@ class TransTemplateRsp:
     }
 
     def __init__(self, group_id=None, name=None, is_default=None, type=None, is_auto_encrypt=None, quality_info_list=None, watermark_template_ids=None, description=None, common=None):
-        """TransTemplateRsp
+        r"""TransTemplateRsp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TransTemplateRsp:
 
     @property
     def group_id(self):
-        """Gets the group_id of this TransTemplateRsp.
+        r"""Gets the group_id of this TransTemplateRsp.
 
         模板组id<br/> 
 
@@ -110,7 +110,7 @@ class TransTemplateRsp:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this TransTemplateRsp.
+        r"""Sets the group_id of this TransTemplateRsp.
 
         模板组id<br/> 
 
@@ -121,7 +121,7 @@ class TransTemplateRsp:
 
     @property
     def name(self):
-        """Gets the name of this TransTemplateRsp.
+        r"""Gets the name of this TransTemplateRsp.
 
         模板组名称<br/> 
 
@@ -132,7 +132,7 @@ class TransTemplateRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TransTemplateRsp.
+        r"""Sets the name of this TransTemplateRsp.
 
         模板组名称<br/> 
 
@@ -143,7 +143,7 @@ class TransTemplateRsp:
 
     @property
     def is_default(self):
-        """Gets the is_default of this TransTemplateRsp.
+        r"""Gets the is_default of this TransTemplateRsp.
 
         是否设置成默认转码模板<br/> 
 
@@ -154,7 +154,7 @@ class TransTemplateRsp:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this TransTemplateRsp.
+        r"""Sets the is_default of this TransTemplateRsp.
 
         是否设置成默认转码模板<br/> 
 
@@ -165,7 +165,7 @@ class TransTemplateRsp:
 
     @property
     def type(self):
-        """Gets the type of this TransTemplateRsp.
+        r"""Gets the type of this TransTemplateRsp.
 
         模板组类型<br/> 
 
@@ -176,7 +176,7 @@ class TransTemplateRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TransTemplateRsp.
+        r"""Sets the type of this TransTemplateRsp.
 
         模板组类型<br/> 
 
@@ -187,7 +187,7 @@ class TransTemplateRsp:
 
     @property
     def is_auto_encrypt(self):
-        """Gets the is_auto_encrypt of this TransTemplateRsp.
+        r"""Gets the is_auto_encrypt of this TransTemplateRsp.
 
         是否开启加密
 
@@ -198,7 +198,7 @@ class TransTemplateRsp:
 
     @is_auto_encrypt.setter
     def is_auto_encrypt(self, is_auto_encrypt):
-        """Sets the is_auto_encrypt of this TransTemplateRsp.
+        r"""Sets the is_auto_encrypt of this TransTemplateRsp.
 
         是否开启加密
 
@@ -209,7 +209,7 @@ class TransTemplateRsp:
 
     @property
     def quality_info_list(self):
-        """Gets the quality_info_list of this TransTemplateRsp.
+        r"""Gets the quality_info_list of this TransTemplateRsp.
 
         画质配置信息列表<br/> 
 
@@ -220,7 +220,7 @@ class TransTemplateRsp:
 
     @quality_info_list.setter
     def quality_info_list(self, quality_info_list):
-        """Sets the quality_info_list of this TransTemplateRsp.
+        r"""Sets the quality_info_list of this TransTemplateRsp.
 
         画质配置信息列表<br/> 
 
@@ -231,7 +231,7 @@ class TransTemplateRsp:
 
     @property
     def watermark_template_ids(self):
-        """Gets the watermark_template_ids of this TransTemplateRsp.
+        r"""Gets the watermark_template_ids of this TransTemplateRsp.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -242,7 +242,7 @@ class TransTemplateRsp:
 
     @watermark_template_ids.setter
     def watermark_template_ids(self, watermark_template_ids):
-        """Sets the watermark_template_ids of this TransTemplateRsp.
+        r"""Sets the watermark_template_ids of this TransTemplateRsp.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -253,7 +253,7 @@ class TransTemplateRsp:
 
     @property
     def description(self):
-        """Gets the description of this TransTemplateRsp.
+        r"""Gets the description of this TransTemplateRsp.
 
         模板介绍<br/> 
 
@@ -264,7 +264,7 @@ class TransTemplateRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TransTemplateRsp.
+        r"""Sets the description of this TransTemplateRsp.
 
         模板介绍<br/> 
 
@@ -275,7 +275,7 @@ class TransTemplateRsp:
 
     @property
     def common(self):
-        """Gets the common of this TransTemplateRsp.
+        r"""Gets the common of this TransTemplateRsp.
 
         :return: The common of this TransTemplateRsp.
         :rtype: :class:`huaweicloudsdkvod.v1.CommonInfo`
@@ -284,7 +284,7 @@ class TransTemplateRsp:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TransTemplateRsp.
+        r"""Sets the common of this TransTemplateRsp.
 
         :param common: The common of this TransTemplateRsp.
         :type common: :class:`huaweicloudsdkvod.v1.CommonInfo`

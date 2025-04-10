@@ -27,7 +27,7 @@ class BatchUpdateRecordSetWithLineRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """BatchUpdateRecordSetWithLineRequest
+        r"""BatchUpdateRecordSetWithLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateRecordSetWithLineRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this BatchUpdateRecordSetWithLineRequest.
+        r"""Gets the zone_id of this BatchUpdateRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -60,7 +60,7 @@ class BatchUpdateRecordSetWithLineRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this BatchUpdateRecordSetWithLineRequest.
+        r"""Sets the zone_id of this BatchUpdateRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -71,7 +71,7 @@ class BatchUpdateRecordSetWithLineRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateRecordSetWithLineRequest.
+        r"""Gets the body of this BatchUpdateRecordSetWithLineRequest.
 
         :return: The body of this BatchUpdateRecordSetWithLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequestBody`
@@ -80,7 +80,7 @@ class BatchUpdateRecordSetWithLineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateRecordSetWithLineRequest.
+        r"""Sets the body of this BatchUpdateRecordSetWithLineRequest.
 
         :param body: The body of this BatchUpdateRecordSetWithLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequestBody`

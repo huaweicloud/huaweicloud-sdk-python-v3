@@ -25,7 +25,7 @@ class ChangeIncidentRequestBody:
     }
 
     def __init__(self, data_object=None):
-        """ChangeIncidentRequestBody
+        r"""ChangeIncidentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeIncidentRequestBody:
 
     @property
     def data_object(self):
-        """Gets the data_object of this ChangeIncidentRequestBody.
+        r"""Gets the data_object of this ChangeIncidentRequestBody.
 
         :return: The data_object of this ChangeIncidentRequestBody.
         :rtype: :class:`huaweicloudsdksa.v2.Incident`
@@ -52,7 +52,7 @@ class ChangeIncidentRequestBody:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this ChangeIncidentRequestBody.
+        r"""Sets the data_object of this ChangeIncidentRequestBody.
 
         :param data_object: The data_object of this ChangeIncidentRequestBody.
         :type data_object: :class:`huaweicloudsdksa.v2.Incident`

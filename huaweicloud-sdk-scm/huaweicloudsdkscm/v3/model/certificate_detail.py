@@ -57,7 +57,7 @@ class CertificateDetail:
     }
 
     def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None, domain_id=None, enterprise_project_id=None):
-        """CertificateDetail
+        r"""CertificateDetail
 
         The model defined in huaweicloud sdk
 
@@ -139,7 +139,7 @@ class CertificateDetail:
 
     @property
     def id(self):
-        """Gets the id of this CertificateDetail.
+        r"""Gets the id of this CertificateDetail.
 
         证书id。
 
@@ -150,7 +150,7 @@ class CertificateDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertificateDetail.
+        r"""Sets the id of this CertificateDetail.
 
         证书id。
 
@@ -161,7 +161,7 @@ class CertificateDetail:
 
     @property
     def name(self):
-        """Gets the name of this CertificateDetail.
+        r"""Gets the name of this CertificateDetail.
 
         证书名称。
 
@@ -172,7 +172,7 @@ class CertificateDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertificateDetail.
+        r"""Sets the name of this CertificateDetail.
 
         证书名称。
 
@@ -183,7 +183,7 @@ class CertificateDetail:
 
     @property
     def domain(self):
-        """Gets the domain of this CertificateDetail.
+        r"""Gets the domain of this CertificateDetail.
 
         证书绑定的域名。
 
@@ -194,7 +194,7 @@ class CertificateDetail:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CertificateDetail.
+        r"""Sets the domain of this CertificateDetail.
 
         证书绑定的域名。
 
@@ -205,7 +205,7 @@ class CertificateDetail:
 
     @property
     def sans(self):
-        """Gets the sans of this CertificateDetail.
+        r"""Gets the sans of this CertificateDetail.
 
         多域名证书绑定的附加域名。
 
@@ -216,7 +216,7 @@ class CertificateDetail:
 
     @sans.setter
     def sans(self, sans):
-        """Sets the sans of this CertificateDetail.
+        r"""Sets the sans of this CertificateDetail.
 
         多域名证书绑定的附加域名。
 
@@ -227,7 +227,7 @@ class CertificateDetail:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CertificateDetail.
+        r"""Gets the signature_algorithm of this CertificateDetail.
 
         签名算法。
 
@@ -238,7 +238,7 @@ class CertificateDetail:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CertificateDetail.
+        r"""Sets the signature_algorithm of this CertificateDetail.
 
         签名算法。
 
@@ -249,7 +249,7 @@ class CertificateDetail:
 
     @property
     def deploy_support(self):
-        """Gets the deploy_support of this CertificateDetail.
+        r"""Gets the deploy_support of this CertificateDetail.
 
         是否支持部署。
 
@@ -260,7 +260,7 @@ class CertificateDetail:
 
     @deploy_support.setter
     def deploy_support(self, deploy_support):
-        """Sets the deploy_support of this CertificateDetail.
+        r"""Sets the deploy_support of this CertificateDetail.
 
         是否支持部署。
 
@@ -271,7 +271,7 @@ class CertificateDetail:
 
     @property
     def type(self):
-        """Gets the type of this CertificateDetail.
+        r"""Gets the type of this CertificateDetail.
 
         证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO
 
@@ -282,7 +282,7 @@ class CertificateDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CertificateDetail.
+        r"""Sets the type of this CertificateDetail.
 
         证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO
 
@@ -293,7 +293,7 @@ class CertificateDetail:
 
     @property
     def brand(self):
-        """Gets the brand of this CertificateDetail.
+        r"""Gets the brand of this CertificateDetail.
 
         证书品牌。取值如下：GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA
 
@@ -304,7 +304,7 @@ class CertificateDetail:
 
     @brand.setter
     def brand(self, brand):
-        """Sets the brand of this CertificateDetail.
+        r"""Sets the brand of this CertificateDetail.
 
         证书品牌。取值如下：GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA
 
@@ -315,7 +315,7 @@ class CertificateDetail:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CertificateDetail.
+        r"""Gets the expire_time of this CertificateDetail.
 
         证书过期时间。
 
@@ -326,7 +326,7 @@ class CertificateDetail:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CertificateDetail.
+        r"""Sets the expire_time of this CertificateDetail.
 
         证书过期时间。
 
@@ -337,7 +337,7 @@ class CertificateDetail:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this CertificateDetail.
+        r"""Gets the domain_type of this CertificateDetail.
 
         域名类型。取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
 
@@ -348,7 +348,7 @@ class CertificateDetail:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this CertificateDetail.
+        r"""Sets the domain_type of this CertificateDetail.
 
         域名类型。取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
 
@@ -359,7 +359,7 @@ class CertificateDetail:
 
     @property
     def validity_period(self):
-        """Gets the validity_period of this CertificateDetail.
+        r"""Gets the validity_period of this CertificateDetail.
 
         证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
 
@@ -370,7 +370,7 @@ class CertificateDetail:
 
     @validity_period.setter
     def validity_period(self, validity_period):
-        """Sets the validity_period of this CertificateDetail.
+        r"""Sets the validity_period of this CertificateDetail.
 
         证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
 
@@ -381,7 +381,7 @@ class CertificateDetail:
 
     @property
     def status(self):
-        """Gets the status of this CertificateDetail.
+        r"""Gets the status of this CertificateDetail.
 
         证书状态，取值如下： - PAID：证书已支付；待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - CANCLEREVOKING：证书取消吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
 
@@ -392,7 +392,7 @@ class CertificateDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CertificateDetail.
+        r"""Sets the status of this CertificateDetail.
 
         证书状态，取值如下： - PAID：证书已支付；待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - CANCLEREVOKING：证书取消吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
 
@@ -403,7 +403,7 @@ class CertificateDetail:
 
     @property
     def domain_count(self):
-        """Gets the domain_count of this CertificateDetail.
+        r"""Gets the domain_count of this CertificateDetail.
 
         证书可绑定域名个数。
 
@@ -414,7 +414,7 @@ class CertificateDetail:
 
     @domain_count.setter
     def domain_count(self, domain_count):
-        """Sets the domain_count of this CertificateDetail.
+        r"""Sets the domain_count of this CertificateDetail.
 
         证书可绑定域名个数。
 
@@ -425,7 +425,7 @@ class CertificateDetail:
 
     @property
     def wildcard_count(self):
-        """Gets the wildcard_count of this CertificateDetail.
+        r"""Gets the wildcard_count of this CertificateDetail.
 
         证书可绑定泛域名个数。
 
@@ -436,7 +436,7 @@ class CertificateDetail:
 
     @wildcard_count.setter
     def wildcard_count(self, wildcard_count):
-        """Sets the wildcard_count of this CertificateDetail.
+        r"""Sets the wildcard_count of this CertificateDetail.
 
         证书可绑定泛域名个数。
 
@@ -447,7 +447,7 @@ class CertificateDetail:
 
     @property
     def description(self):
-        """Gets the description of this CertificateDetail.
+        r"""Gets the description of this CertificateDetail.
 
         证书描述。
 
@@ -458,7 +458,7 @@ class CertificateDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CertificateDetail.
+        r"""Sets the description of this CertificateDetail.
 
         证书描述。
 
@@ -469,7 +469,7 @@ class CertificateDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CertificateDetail.
+        r"""Gets the domain_id of this CertificateDetail.
 
         账号ID。
 
@@ -480,7 +480,7 @@ class CertificateDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CertificateDetail.
+        r"""Sets the domain_id of this CertificateDetail.
 
         账号ID。
 
@@ -491,7 +491,7 @@ class CertificateDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CertificateDetail.
+        r"""Gets the enterprise_project_id of this CertificateDetail.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -502,7 +502,7 @@ class CertificateDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CertificateDetail.
+        r"""Sets the enterprise_project_id of this CertificateDetail.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 

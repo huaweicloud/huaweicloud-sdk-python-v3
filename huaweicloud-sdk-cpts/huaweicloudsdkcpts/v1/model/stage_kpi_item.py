@@ -27,7 +27,7 @@ class StageKpiItem:
     }
 
     def __init__(self, comparison=None, value=None):
-        """StageKpiItem
+        r"""StageKpiItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StageKpiItem:
 
     @property
     def comparison(self):
-        """Gets the comparison of this StageKpiItem.
+        r"""Gets the comparison of this StageKpiItem.
 
         比较符
 
@@ -61,7 +61,7 @@ class StageKpiItem:
 
     @comparison.setter
     def comparison(self, comparison):
-        """Sets the comparison of this StageKpiItem.
+        r"""Sets the comparison of this StageKpiItem.
 
         比较符
 
@@ -72,7 +72,7 @@ class StageKpiItem:
 
     @property
     def value(self):
-        """Gets the value of this StageKpiItem.
+        r"""Gets the value of this StageKpiItem.
 
         比较值
 
@@ -83,7 +83,7 @@ class StageKpiItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StageKpiItem.
+        r"""Sets the value of this StageKpiItem.
 
         比较值
 

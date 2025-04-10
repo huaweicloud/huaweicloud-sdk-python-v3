@@ -25,7 +25,7 @@ class BatchInternetBandwidthsGlobalEipResponseBody:
     }
 
     def __init__(self, job_id=None):
-        """BatchInternetBandwidthsGlobalEipResponseBody
+        r"""BatchInternetBandwidthsGlobalEipResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchInternetBandwidthsGlobalEipResponseBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchInternetBandwidthsGlobalEipResponseBody.
+        r"""Gets the job_id of this BatchInternetBandwidthsGlobalEipResponseBody.
 
         请求完成的job id
 
@@ -53,7 +53,7 @@ class BatchInternetBandwidthsGlobalEipResponseBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchInternetBandwidthsGlobalEipResponseBody.
+        r"""Sets the job_id of this BatchInternetBandwidthsGlobalEipResponseBody.
 
         请求完成的job id
 

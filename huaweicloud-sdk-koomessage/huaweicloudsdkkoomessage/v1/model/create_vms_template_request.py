@@ -25,7 +25,7 @@ class CreateVmsTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVmsTemplateRequest
+        r"""CreateVmsTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVmsTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVmsTemplateRequest.
+        r"""Gets the body of this CreateVmsTemplateRequest.
 
         :return: The body of this CreateVmsTemplateRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateVmsTemplateRequestBody`
@@ -52,7 +52,7 @@ class CreateVmsTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVmsTemplateRequest.
+        r"""Sets the body of this CreateVmsTemplateRequest.
 
         :param body: The body of this CreateVmsTemplateRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CreateVmsTemplateRequestBody`

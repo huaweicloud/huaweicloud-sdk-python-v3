@@ -27,7 +27,7 @@ class IotdaContentRsp:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """IotdaContentRsp
+        r"""IotdaContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IotdaContentRsp:
 
     @property
     def iotda_instance_id(self):
-        """Gets the iotda_instance_id of this IotdaContentRsp.
+        r"""Gets the iotda_instance_id of this IotdaContentRsp.
 
         IoTDA实例Id
 
@@ -59,7 +59,7 @@ class IotdaContentRsp:
 
     @iotda_instance_id.setter
     def iotda_instance_id(self, iotda_instance_id):
-        """Sets the iotda_instance_id of this IotdaContentRsp.
+        r"""Sets the iotda_instance_id of this IotdaContentRsp.
 
         IoTDA实例Id
 
@@ -70,7 +70,7 @@ class IotdaContentRsp:
 
     @property
     def rules(self):
-        """Gets the rules of this IotdaContentRsp.
+        r"""Gets the rules of this IotdaContentRsp.
 
         在IoTDA实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 
@@ -81,7 +81,7 @@ class IotdaContentRsp:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this IotdaContentRsp.
+        r"""Sets the rules of this IotdaContentRsp.
 
         在IoTDA实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 

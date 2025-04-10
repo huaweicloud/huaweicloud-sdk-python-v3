@@ -27,7 +27,7 @@ class SearchAfterParam:
     }
 
     def __init__(self, score=None, id=None):
-        """SearchAfterParam
+        r"""SearchAfterParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchAfterParam:
 
     @property
     def score(self):
-        """Gets the score of this SearchAfterParam.
+        r"""Gets the score of this SearchAfterParam.
 
         结果的得分。
 
@@ -61,7 +61,7 @@ class SearchAfterParam:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this SearchAfterParam.
+        r"""Sets the score of this SearchAfterParam.
 
         结果的得分。
 
@@ -72,7 +72,7 @@ class SearchAfterParam:
 
     @property
     def id(self):
-        """Gets the id of this SearchAfterParam.
+        r"""Gets the id of this SearchAfterParam.
 
         结果的唯一ID。
 
@@ -83,7 +83,7 @@ class SearchAfterParam:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SearchAfterParam.
+        r"""Sets the id of this SearchAfterParam.
 
         结果的唯一ID。
 

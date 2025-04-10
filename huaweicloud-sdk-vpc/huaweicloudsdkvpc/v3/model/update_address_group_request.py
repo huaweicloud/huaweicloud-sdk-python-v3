@@ -27,7 +27,7 @@ class UpdateAddressGroupRequest:
     }
 
     def __init__(self, address_group_id=None, body=None):
-        """UpdateAddressGroupRequest
+        r"""UpdateAddressGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAddressGroupRequest:
 
     @property
     def address_group_id(self):
-        """Gets the address_group_id of this UpdateAddressGroupRequest.
+        r"""Gets the address_group_id of this UpdateAddressGroupRequest.
 
         地址组的唯一标识
 
@@ -60,7 +60,7 @@ class UpdateAddressGroupRequest:
 
     @address_group_id.setter
     def address_group_id(self, address_group_id):
-        """Sets the address_group_id of this UpdateAddressGroupRequest.
+        r"""Sets the address_group_id of this UpdateAddressGroupRequest.
 
         地址组的唯一标识
 
@@ -71,7 +71,7 @@ class UpdateAddressGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAddressGroupRequest.
+        r"""Gets the body of this UpdateAddressGroupRequest.
 
         :return: The body of this UpdateAddressGroupRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequestBody`
@@ -80,7 +80,7 @@ class UpdateAddressGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAddressGroupRequest.
+        r"""Sets the body of this UpdateAddressGroupRequest.
 
         :param body: The body of this UpdateAddressGroupRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequestBody`

@@ -30,7 +30,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None, total=None, size=None):
-        """ShowInstanceMessagesResponse
+        r"""ShowInstanceMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
     @property
     def messages(self):
-        """Gets the messages of this ShowInstanceMessagesResponse.
+        r"""Gets the messages of this ShowInstanceMessagesResponse.
 
         消息列表。
 
@@ -69,7 +69,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this ShowInstanceMessagesResponse.
+        r"""Sets the messages of this ShowInstanceMessagesResponse.
 
         消息列表。
 
@@ -80,7 +80,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowInstanceMessagesResponse.
+        r"""Gets the total of this ShowInstanceMessagesResponse.
 
         消息总条数。
 
@@ -91,7 +91,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowInstanceMessagesResponse.
+        r"""Sets the total of this ShowInstanceMessagesResponse.
 
         消息总条数。
 
@@ -102,7 +102,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowInstanceMessagesResponse.
+        r"""Gets the size of this ShowInstanceMessagesResponse.
 
         每页消息条数。
 
@@ -113,7 +113,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowInstanceMessagesResponse.
+        r"""Sets the size of this ShowInstanceMessagesResponse.
 
         每页消息条数。
 

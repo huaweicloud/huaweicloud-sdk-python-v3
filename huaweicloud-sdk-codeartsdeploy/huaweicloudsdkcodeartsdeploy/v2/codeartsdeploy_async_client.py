@@ -34,7 +34,7 @@ class CodeArtsDeployAsyncClient(Client):
         return client_builder
 
     def create_app_groups_async(self, request):
-        """创建分组
+        r"""创建分组
 
         创建分组。
         
@@ -101,7 +101,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_app_groups_async(self, request):
-        """删除分组
+        r"""删除分组
 
         删除分组。
         
@@ -168,7 +168,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_app_groups_async(self, request):
-        """查询分组列表
+        r"""查询分组列表
 
         查询分组列表。
         
@@ -233,7 +233,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def move_app_groups_async(self, request):
-        """移动分组
+        r"""移动分组
 
         往上或者往下移动单个分组,用来在页面上调整分组位置。
         
@@ -300,7 +300,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def move_app_to_group_async(self, request):
-        """移动应用至指定分组
+        r"""移动应用至指定分组
 
         将应用移动至指定分组（支持批量）。
         
@@ -367,7 +367,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_app_groups_async(self, request):
-        """修改分组
+        r"""修改分组
 
         修改分组。
         
@@ -436,7 +436,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def batch_update_application_permissions_async(self, request):
-        """批量修改应用权限
+        r"""批量修改应用权限
 
         批量修改应用权限。
         
@@ -501,7 +501,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def batch_update_permission_level_async(self, request):
-        """批量配置应用下鉴权级别
+        r"""批量配置应用下鉴权级别
 
         批量配置应用下鉴权级别为项目级或实例级。
         
@@ -566,7 +566,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def check_can_create_async(self, request):
-        """查询当前用户是否有项目下创建应用权限
+        r"""查询当前用户是否有项目下创建应用权限
 
         查询当前用户是否有项目下创建应用权限。
         
@@ -631,7 +631,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_application_permissions_async(self, request):
-        """查询应用实例级/项目级权限矩阵
+        r"""查询应用实例级/项目级权限矩阵
 
         查询应用实例级/项目级权限矩阵，传递app_id时，查询应用实例级权限矩阵；未传app_id，传递project_id时，查询应用项目级权限矩阵。
         
@@ -698,7 +698,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_task_success_rate_async(self, request):
-        """获取指定应用的应用部署成功率
+        r"""获取指定应用的应用部署成功率
 
         获取指定应用的应用部署成功率。
         
@@ -765,7 +765,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_project_success_rate_async(self, request):
-        """获取指定项目的应用部署成功率
+        r"""获取指定项目的应用部署成功率
 
         获取指定项目的应用部署成功率。
         
@@ -834,7 +834,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def batch_delete_app_async(self, request):
-        """批量删除项目下应用
+        r"""批量删除项目下应用
 
         批量删除项目下应用。
         
@@ -899,7 +899,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def check_is_duplicate_app_name_async(self, request):
-        """查询项目下是否存在同名应用
+        r"""查询项目下是否存在同名应用
 
         查询项目下是否存在同名应用。
         
@@ -966,7 +966,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def copy_application_async(self, request):
-        """复制应用
+        r"""复制应用
 
         复制应用。
         
@@ -1031,7 +1031,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_app_async(self, request):
-        """新建应用
+        r"""新建应用
 
         新建应用。
         
@@ -1096,7 +1096,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_deploy_task_by_template_async(self, request):
-        """通过模板新建应用
+        r"""通过模板新建应用
 
         通过模板新建应用。该接口于2024年09月30日后不再维护，推荐使用新版CreateApp接口。
         
@@ -1161,7 +1161,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_application_async(self, request):
-        """删除应用
+        r"""删除应用
 
         根据应用id删除应用。
         
@@ -1226,7 +1226,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_deploy_task_async(self, request):
-        """删除应用
+        r"""删除应用
 
         根据部署任务id删除应用。该接口于2024年09月30日后不再维护，推荐使用新版DeleteApplication接口。
         
@@ -1291,7 +1291,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_all_app_async(self, request):
-        """获取应用列表
+        r"""获取应用列表
 
         查询项目下应用列表。
         
@@ -1356,7 +1356,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_deploy_task_history_by_date_async(self, request):
-        """根据开始时间和结束时间查询项目下指定应用的历史部署记录列表
+        r"""根据开始时间和结束时间查询项目下指定应用的历史部署记录列表
 
         根据开始时间和结束时间查询项目下指定应用的历史部署记录列表。
         
@@ -1431,7 +1431,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_deploy_tasks_async(self, request):
-        """获取应用列表
+        r"""获取应用列表
 
         查询项目下应用列表。该接口于2024年09月30日后不再维护，推荐使用新版ListAllApp接口。
         
@@ -1500,7 +1500,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_app_detail_by_id_async(self, request):
-        """获取应用详情
+        r"""获取应用详情
 
         根据应用id获取应用详情。
         
@@ -1565,7 +1565,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_deploy_task_detail_async(self, request):
-        """获取应用详情
+        r"""获取应用详情
 
         根据部署任务id获取应用详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowAppDetailById接口。
         
@@ -1630,7 +1630,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_execution_params_async(self, request):
-        """查询部署记录的执行参数
+        r"""查询部署记录的执行参数
 
         查询部署记录的执行参数。
         
@@ -1697,7 +1697,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def start_deploy_task_async(self, request):
-        """部署应用
+        r"""部署应用
 
         根据部署任务id部署应用。
         
@@ -1764,7 +1764,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_app_disable_status_async(self, request):
-        """禁用/取消禁用应用
+        r"""禁用/取消禁用应用
 
         禁用/取消禁用应用。
         
@@ -1831,7 +1831,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_app_info_async(self, request):
-        """更新应用
+        r"""更新应用
 
         更新应用。
         
@@ -1896,7 +1896,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_environment_async(self, request):
-        """应用下创建环境
+        r"""应用下创建环境
 
         应用下创建环境。
         
@@ -1963,7 +1963,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_environment_async(self, request):
-        """删除应用下的环境
+        r"""删除应用下的环境
 
         删除应用下的环境。
         
@@ -2030,7 +2030,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_host_from_environment_async(self, request):
-        """环境下删除主机
+        r"""环境下删除主机
 
         环境下删除主机。
         
@@ -2099,7 +2099,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def import_host_to_environment_async(self, request):
-        """环境下导入主机
+        r"""环境下导入主机
 
         环境下导入主机。
         
@@ -2168,7 +2168,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_environment_hosts_async(self, request):
-        """查询环境内的主机列表
+        r"""查询环境内的主机列表
 
         查询环境内的主机列表。
         
@@ -2243,7 +2243,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_environments_async(self, request):
-        """查询应用下环境列表
+        r"""查询应用下环境列表
 
         查询应用下环境列表。
         
@@ -2320,7 +2320,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_environment_detail_async(self, request):
-        """查询环境详情
+        r"""查询环境详情
 
         查询环境详情。
         
@@ -2387,7 +2387,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_environment_async(self, request):
-        """应用下编辑环境
+        r"""应用下编辑环境
 
         应用下编辑环境。
         
@@ -2456,7 +2456,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_environment_permissions_async(self, request):
-        """查询环境权限
+        r"""查询环境权限
 
         查询环境权限。
         
@@ -2523,7 +2523,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_environment_permission_async(self, request):
-        """编辑环境权限
+        r"""编辑环境权限
 
         编辑环境权限。
         
@@ -2592,7 +2592,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def batch_delete_hosts_async(self, request):
-        """批量删除主机集群下的主机
+        r"""批量删除主机集群下的主机
 
         批量删除主机集群下的主机。
         
@@ -2659,7 +2659,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def copy_hosts_to_target_async(self, request):
-        """批量复制主机至目标主机集群
+        r"""批量复制主机至目标主机集群
 
         批量复制主机至目标主机集群。
         
@@ -2726,7 +2726,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_deployment_host_async(self, request):
-        """新建主机
+        r"""新建主机
 
         在指定主机集群下新建主机。该接口于2024年09月30日后不再维护，推荐使用新版CreateHost接口。
         
@@ -2793,7 +2793,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_host_async(self, request):
-        """新建主机
+        r"""新建主机
 
         在指定主机集群下新建主机。
         
@@ -2860,7 +2860,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_deployment_host_async(self, request):
-        """删除主机
+        r"""删除主机
 
         根据主机id删除主机。该接口于2024年9月30日后不再维护。
         
@@ -2927,7 +2927,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_host_async(self, request):
-        """删除主机集群下主机
+        r"""删除主机集群下主机
 
         根据主机id删除主机集群下主机。
         
@@ -2994,7 +2994,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_hosts_async(self, request):
-        """查询主机列表
+        r"""查询主机列表
 
         根据主机集群id查询指定主机集群下的主机列表。该接口于2024年09月30日后不再维护，推荐使用新版ListNewHosts接口。
         
@@ -3073,7 +3073,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_new_hosts_async(self, request):
-        """查询主机列表
+        r"""查询主机列表
 
         根据主机集群id查询指定主机集群下的主机列表。
         
@@ -3152,7 +3152,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_deployment_host_detail_async(self, request):
-        """查询主机详情
+        r"""查询主机详情
 
         根据主机id查询主机详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowHostDetail接口。
         
@@ -3219,7 +3219,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_host_detail_async(self, request):
-        """查询主机详情
+        r"""查询主机详情
 
         根据主机id查询主机详情。
         
@@ -3286,7 +3286,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_deployment_host_async(self, request):
-        """修改主机
+        r"""修改主机
 
         根据主机id修改主机信息。该接口于2024年9月30日后不再维护。
         
@@ -3355,7 +3355,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_host_info_async(self, request):
-        """编辑主机集群下主机信息
+        r"""编辑主机集群下主机信息
 
         根据主机id编辑主机集群下主机信息。
         
@@ -3424,7 +3424,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_deployment_group_async(self, request):
-        """新建主机集群
+        r"""新建主机集群
 
         在项目下新建主机集群。该接口于2024年09月30日后不再维护，推荐使用新版CreateHostCluster接口。
         
@@ -3489,7 +3489,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def create_host_cluster_async(self, request):
-        """新建主机集群
+        r"""新建主机集群
 
         在项目下新建主机集群。
         
@@ -3554,7 +3554,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_deployment_group_async(self, request):
-        """删除主机集群
+        r"""删除主机集群
 
         根据主机集群id删除主机集群。该接口于2024年9月30日后不再维护。
         
@@ -3619,7 +3619,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def delete_host_cluster_async(self, request):
-        """删除主机集群
+        r"""删除主机集群
 
         根据主机集群id删除主机集群。
         
@@ -3684,7 +3684,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_associate_environments_infos_async(self, request):
-        """查询主机集群关联环境信息
+        r"""查询主机集群关联环境信息
 
         查询主机集群关联环境信息。
         
@@ -3753,7 +3753,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_host_clusters_async(self, request):
-        """查询主机集群列表
+        r"""查询主机集群列表
 
         按条件查询主机集群列表。
         
@@ -3834,7 +3834,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_host_group_base_infos_async(self, request):
-        """查询应用下环境基本信息列表
+        r"""查询应用下环境基本信息列表
 
         查询应用下环境基本信息列表。
         
@@ -3909,7 +3909,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_host_groups_async(self, request):
-        """查询主机集群列表
+        r"""查询主机集群列表
 
         按条件查询主机集群列表。该接口于2024年09月30日后不再维护，推荐使用新版ListHostClusters接口。
         
@@ -3988,7 +3988,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_deployment_group_detail_async(self, request):
-        """查询主机集群详情
+        r"""查询主机集群详情
 
         根据主机集群id查询主机集群详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowHostClusterDetail接口。
         
@@ -4053,7 +4053,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def show_host_cluster_detail_async(self, request):
-        """查询主机集群详情
+        r"""查询主机集群详情
 
         根据主机集群id查询主机集群详情。
         
@@ -4118,7 +4118,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_deployment_group_async(self, request):
-        """修改主机集群
+        r"""修改主机集群
 
         根据主机集群id修改主机集群信息。该接口于2024年9月30日后不再维护。
         
@@ -4185,7 +4185,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_host_cluster_async(self, request):
-        """编辑主机集群
+        r"""编辑主机集群
 
         编辑主机集群。
         
@@ -4252,7 +4252,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def check_whether_host_group_can_be_created_async(self, request):
-        """判断当前用户在项目下是否有权限创建主机集群
+        r"""判断当前用户在项目下是否有权限创建主机集群
 
         判断当前用户在项目下是否有权限创建主机集群。
         
@@ -4317,7 +4317,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def list_host_group_permissions_async(self, request):
-        """查询主机集群权限矩阵
+        r"""查询主机集群权限矩阵
 
         根据主机集群id查询主机集群权限矩阵。
         
@@ -4382,7 +4382,7 @@ class CodeArtsDeployAsyncClient(Client):
         return http_info
 
     def update_host_group_permissions_async(self, request):
-        """修改主机集群权限矩阵
+        r"""修改主机集群权限矩阵
 
         根据主机集群id修改主机集群权限矩阵。
         

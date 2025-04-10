@@ -61,7 +61,7 @@ class Detail:
     }
 
     def __init__(self, source_key=None, regex=None, keys=None, multi_line_regex=None, keep_source=None, keep_source_if_parse_error=None, split_sep=None, split_type=None, fields=None, drop_keys=None, source_keys=None, dest_keys=None, expand_depth=None, expand_connector=None, source_format=None, source_value=None, set_time=None, include=None, exclude=None):
-        """Detail
+        r"""Detail
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class Detail:
 
     @property
     def source_key(self):
-        """Gets the source_key of this Detail.
+        r"""Gets the source_key of this Detail.
 
         自定义时间key字段名称
 
@@ -180,7 +180,7 @@ class Detail:
 
     @source_key.setter
     def source_key(self, source_key):
-        """Sets the source_key of this Detail.
+        r"""Sets the source_key of this Detail.
 
         自定义时间key字段名称
 
@@ -191,7 +191,7 @@ class Detail:
 
     @property
     def regex(self):
-        """Gets the regex of this Detail.
+        r"""Gets the regex of this Detail.
 
         正则解析正则表达式 单行完全正则，多行完全正则需填此字段
 
@@ -202,7 +202,7 @@ class Detail:
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this Detail.
+        r"""Sets the regex of this Detail.
 
         正则解析正则表达式 单行完全正则，多行完全正则需填此字段
 
@@ -213,7 +213,7 @@ class Detail:
 
     @property
     def keys(self):
-        """Gets the keys of this Detail.
+        r"""Gets the keys of this Detail.
 
         字段名称列表 与field_name字段保持一致
 
@@ -224,7 +224,7 @@ class Detail:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this Detail.
+        r"""Sets the keys of this Detail.
 
         字段名称列表 与field_name字段保持一致
 
@@ -235,7 +235,7 @@ class Detail:
 
     @property
     def multi_line_regex(self):
-        """Gets the multi_line_regex of this Detail.
+        r"""Gets the multi_line_regex of this Detail.
 
         首行正则表达式
 
@@ -246,7 +246,7 @@ class Detail:
 
     @multi_line_regex.setter
     def multi_line_regex(self, multi_line_regex):
-        """Sets the multi_line_regex of this Detail.
+        r"""Sets the multi_line_regex of this Detail.
 
         首行正则表达式
 
@@ -257,7 +257,7 @@ class Detail:
 
     @property
     def keep_source(self):
-        """Gets the keep_source of this Detail.
+        r"""Gets the keep_source of this Detail.
 
         是否上传原始日志
 
@@ -268,7 +268,7 @@ class Detail:
 
     @keep_source.setter
     def keep_source(self, keep_source):
-        """Sets the keep_source of this Detail.
+        r"""Sets the keep_source of this Detail.
 
         是否上传原始日志
 
@@ -279,7 +279,7 @@ class Detail:
 
     @property
     def keep_source_if_parse_error(self):
-        """Gets the keep_source_if_parse_error of this Detail.
+        r"""Gets the keep_source_if_parse_error of this Detail.
 
         是否上传解析失败日志
 
@@ -290,7 +290,7 @@ class Detail:
 
     @keep_source_if_parse_error.setter
     def keep_source_if_parse_error(self, keep_source_if_parse_error):
-        """Sets the keep_source_if_parse_error of this Detail.
+        r"""Sets the keep_source_if_parse_error of this Detail.
 
         是否上传解析失败日志
 
@@ -301,7 +301,7 @@ class Detail:
 
     @property
     def split_sep(self):
-        """Gets the split_sep of this Detail.
+        r"""Gets the split_sep of this Detail.
 
         分隔符 自定义字符最大长度10，自定义字符串最大长度30
 
@@ -312,7 +312,7 @@ class Detail:
 
     @split_sep.setter
     def split_sep(self, split_sep):
-        """Sets the split_sep of this Detail.
+        r"""Sets the split_sep of this Detail.
 
         分隔符 自定义字符最大长度10，自定义字符串最大长度30
 
@@ -323,7 +323,7 @@ class Detail:
 
     @property
     def split_type(self):
-        """Gets the split_type of this Detail.
+        r"""Gets the split_type of this Detail.
 
         分隔符类型：char-自定义字符；special_char-不可见字符；string-自定义字符串
 
@@ -334,7 +334,7 @@ class Detail:
 
     @split_type.setter
     def split_type(self, split_type):
-        """Sets the split_type of this Detail.
+        r"""Sets the split_type of this Detail.
 
         分隔符类型：char-自定义字符；special_char-不可见字符；string-自定义字符串
 
@@ -345,7 +345,7 @@ class Detail:
 
     @property
     def fields(self):
-        """Gets the fields of this Detail.
+        r"""Gets the fields of this Detail.
 
         添加的字段列表：<字段名称 : 字段内容>
 
@@ -356,7 +356,7 @@ class Detail:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this Detail.
+        r"""Sets the fields of this Detail.
 
         添加的字段列表：<字段名称 : 字段内容>
 
@@ -367,7 +367,7 @@ class Detail:
 
     @property
     def drop_keys(self):
-        """Gets the drop_keys of this Detail.
+        r"""Gets the drop_keys of this Detail.
 
         删除的字段列表
 
@@ -378,7 +378,7 @@ class Detail:
 
     @drop_keys.setter
     def drop_keys(self, drop_keys):
-        """Sets the drop_keys of this Detail.
+        r"""Sets the drop_keys of this Detail.
 
         删除的字段列表
 
@@ -389,7 +389,7 @@ class Detail:
 
     @property
     def source_keys(self):
-        """Gets the source_keys of this Detail.
+        r"""Gets the source_keys of this Detail.
 
         字段重命名源字段名称列表
 
@@ -400,7 +400,7 @@ class Detail:
 
     @source_keys.setter
     def source_keys(self, source_keys):
-        """Sets the source_keys of this Detail.
+        r"""Sets the source_keys of this Detail.
 
         字段重命名源字段名称列表
 
@@ -411,7 +411,7 @@ class Detail:
 
     @property
     def dest_keys(self):
-        """Gets the dest_keys of this Detail.
+        r"""Gets the dest_keys of this Detail.
 
         字段重命名替换的字段名称列表
 
@@ -422,7 +422,7 @@ class Detail:
 
     @dest_keys.setter
     def dest_keys(self, dest_keys):
-        """Sets the dest_keys of this Detail.
+        r"""Sets the dest_keys of this Detail.
 
         字段重命名替换的字段名称列表
 
@@ -433,7 +433,7 @@ class Detail:
 
     @property
     def expand_depth(self):
-        """Gets the expand_depth of this Detail.
+        r"""Gets the expand_depth of this Detail.
 
         json解析深度，默认为1层最大4层
 
@@ -444,7 +444,7 @@ class Detail:
 
     @expand_depth.setter
     def expand_depth(self, expand_depth):
-        """Sets the expand_depth of this Detail.
+        r"""Sets the expand_depth of this Detail.
 
         json解析深度，默认为1层最大4层
 
@@ -455,7 +455,7 @@ class Detail:
 
     @property
     def expand_connector(self):
-        """Gets the expand_connector of this Detail.
+        r"""Gets the expand_connector of this Detail.
 
         json解析字段名称连接符
 
@@ -466,7 +466,7 @@ class Detail:
 
     @expand_connector.setter
     def expand_connector(self, expand_connector):
-        """Sets the expand_connector of this Detail.
+        r"""Sets the expand_connector of this Detail.
 
         json解析字段名称连接符
 
@@ -477,7 +477,7 @@ class Detail:
 
     @property
     def source_format(self):
-        """Gets the source_format of this Detail.
+        r"""Gets the source_format of this Detail.
 
         自定义时间时间格式
 
@@ -488,7 +488,7 @@ class Detail:
 
     @source_format.setter
     def source_format(self, source_format):
-        """Sets the source_format of this Detail.
+        r"""Sets the source_format of this Detail.
 
         自定义时间时间格式
 
@@ -499,7 +499,7 @@ class Detail:
 
     @property
     def source_value(self):
-        """Gets the source_value of this Detail.
+        r"""Gets the source_value of this Detail.
 
         自定义时间字段value
 
@@ -510,7 +510,7 @@ class Detail:
 
     @source_value.setter
     def source_value(self, source_value):
-        """Sets the source_value of this Detail.
+        r"""Sets the source_value of this Detail.
 
         自定义时间字段value
 
@@ -521,7 +521,7 @@ class Detail:
 
     @property
     def set_time(self):
-        """Gets the set_time of this Detail.
+        r"""Gets the set_time of this Detail.
 
         是否开启自定义时间的开关
 
@@ -532,7 +532,7 @@ class Detail:
 
     @set_time.setter
     def set_time(self, set_time):
-        """Sets the set_time of this Detail.
+        r"""Sets the set_time of this Detail.
 
         是否开启自定义时间的开关
 
@@ -543,7 +543,7 @@ class Detail:
 
     @property
     def include(self):
-        """Gets the include of this Detail.
+        r"""Gets the include of this Detail.
 
         日志过滤白名单规则 key长度最大为256，value最大长度为128，key不可以重复
 
@@ -554,7 +554,7 @@ class Detail:
 
     @include.setter
     def include(self, include):
-        """Sets the include of this Detail.
+        r"""Sets the include of this Detail.
 
         日志过滤白名单规则 key长度最大为256，value最大长度为128，key不可以重复
 
@@ -565,7 +565,7 @@ class Detail:
 
     @property
     def exclude(self):
-        """Gets the exclude of this Detail.
+        r"""Gets the exclude of this Detail.
 
         日志过滤白名单规则 key长度最大为256，value最大长度为128，key不可以重复
 
@@ -576,7 +576,7 @@ class Detail:
 
     @exclude.setter
     def exclude(self, exclude):
-        """Sets the exclude of this Detail.
+        r"""Sets the exclude of this Detail.
 
         日志过滤白名单规则 key长度最大为256，value最大长度为128，key不可以重复
 

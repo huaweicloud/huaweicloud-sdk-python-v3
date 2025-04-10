@@ -37,7 +37,7 @@ class BatchCreateSubNetworkInterfaceOption:
     }
 
     def __init__(self, virsubnet_id=None, parent_id=None, security_groups=None, description=None, ipv6_enable=None, project_id=None, allowed_address_pairs=None):
-        """BatchCreateSubNetworkInterfaceOption
+        r"""BatchCreateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the virsubnet_id of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：虚拟子网ID 取值范围：标准UUID
 
@@ -94,7 +94,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the virsubnet_id of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：虚拟子网ID 取值范围：标准UUID
 
@@ -105,7 +105,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the parent_id of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：宿主网络接口的ID 取值范围：标注UUID 约束：必须是实际存在的端口ID
 
@@ -116,7 +116,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the parent_id of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：宿主网络接口的ID 取值范围：标注UUID 约束：必须是实际存在的端口ID
 
@@ -127,7 +127,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the security_groups of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -138,7 +138,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the security_groups of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -149,7 +149,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def description(self):
-        """Gets the description of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the description of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -160,7 +160,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the description of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -171,7 +171,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the ipv6_enable of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡是否启用ipv6地址 取值范围：true（开启)，false（关闭） 默认值：false
 
@@ -182,7 +182,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the ipv6_enable of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡是否启用ipv6地址 取值范围：true（开启)，false（关闭） 默认值：false
 
@@ -193,7 +193,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the project_id of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
 
@@ -204,7 +204,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the project_id of this BatchCreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
 
@@ -215,7 +215,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this BatchCreateSubNetworkInterfaceOption.
+        r"""Gets the allowed_address_pairs of this BatchCreateSubNetworkInterfaceOption.
 
         1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
 
@@ -226,7 +226,7 @@ class BatchCreateSubNetworkInterfaceOption:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this BatchCreateSubNetworkInterfaceOption.
+        r"""Sets the allowed_address_pairs of this BatchCreateSubNetworkInterfaceOption.
 
         1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
 

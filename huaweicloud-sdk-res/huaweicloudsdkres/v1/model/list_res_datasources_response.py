@@ -32,7 +32,7 @@ class ListResDatasourcesResponse(SdkResponse):
     }
 
     def __init__(self, datasources=None, is_success=None, message=None, error_code=None):
-        """ListResDatasourcesResponse
+        r"""ListResDatasourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @property
     def datasources(self):
-        """Gets the datasources of this ListResDatasourcesResponse.
+        r"""Gets the datasources of this ListResDatasourcesResponse.
 
         数据源详情列表。
 
@@ -76,7 +76,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @datasources.setter
     def datasources(self, datasources):
-        """Sets the datasources of this ListResDatasourcesResponse.
+        r"""Sets the datasources of this ListResDatasourcesResponse.
 
         数据源详情列表。
 
@@ -87,7 +87,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListResDatasourcesResponse.
+        r"""Gets the is_success of this ListResDatasourcesResponse.
 
         是否成功。
 
@@ -98,7 +98,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListResDatasourcesResponse.
+        r"""Sets the is_success of this ListResDatasourcesResponse.
 
         是否成功。
 
@@ -109,7 +109,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListResDatasourcesResponse.
+        r"""Gets the message of this ListResDatasourcesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -120,7 +120,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListResDatasourcesResponse.
+        r"""Sets the message of this ListResDatasourcesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -131,7 +131,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListResDatasourcesResponse.
+        r"""Gets the error_code of this ListResDatasourcesResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -142,7 +142,7 @@ class ListResDatasourcesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListResDatasourcesResponse.
+        r"""Sets the error_code of this ListResDatasourcesResponse.
 
         错误码（请求成功时，不返回此字段）。
 

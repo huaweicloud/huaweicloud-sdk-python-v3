@@ -32,7 +32,7 @@ class ShowAgentConfigResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """ShowAgentConfigResponse
+        r"""ShowAgentConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowAgentConfigResponse.
+        r"""Gets the code of this ShowAgentConfigResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowAgentConfigResponse.
+        r"""Sets the code of this ShowAgentConfigResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowAgentConfigResponse.
+        r"""Gets the message of this ShowAgentConfigResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowAgentConfigResponse.
+        r"""Sets the message of this ShowAgentConfigResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowAgentConfigResponse.
+        r"""Gets the extend of this ShowAgentConfigResponse.
 
         扩展信息
 
@@ -120,7 +120,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowAgentConfigResponse.
+        r"""Sets the extend of this ShowAgentConfigResponse.
 
         扩展信息
 
@@ -131,7 +131,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowAgentConfigResponse.
+        r"""Gets the result of this ShowAgentConfigResponse.
 
         :return: The result of this ShowAgentConfigResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.AgentConfig`
@@ -140,7 +140,7 @@ class ShowAgentConfigResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowAgentConfigResponse.
+        r"""Sets the result of this ShowAgentConfigResponse.
 
         :param result: The result of this ShowAgentConfigResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.AgentConfig`

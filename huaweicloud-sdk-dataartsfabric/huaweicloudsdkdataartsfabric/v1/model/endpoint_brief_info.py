@@ -51,7 +51,7 @@ class EndpointBriefInfo:
     }
 
     def __init__(self, visibility=None, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, owner=None, cap=None, reserved_resource=None, ray_resource=None, error_code=None, error_msg=None):
-        """EndpointBriefInfo
+        r"""EndpointBriefInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class EndpointBriefInfo:
 
     @property
     def visibility(self):
-        """Gets the visibility of this EndpointBriefInfo.
+        r"""Gets the visibility of this EndpointBriefInfo.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -138,7 +138,7 @@ class EndpointBriefInfo:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this EndpointBriefInfo.
+        r"""Sets the visibility of this EndpointBriefInfo.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -149,7 +149,7 @@ class EndpointBriefInfo:
 
     @property
     def id(self):
-        """Gets the id of this EndpointBriefInfo.
+        r"""Gets the id of this EndpointBriefInfo.
 
         Endpoint Id，32~36位的英文、数字、短横组合。
 
@@ -160,7 +160,7 @@ class EndpointBriefInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointBriefInfo.
+        r"""Sets the id of this EndpointBriefInfo.
 
         Endpoint Id，32~36位的英文、数字、短横组合。
 
@@ -171,7 +171,7 @@ class EndpointBriefInfo:
 
     @property
     def name(self):
-        """Gets the name of this EndpointBriefInfo.
+        r"""Gets the name of this EndpointBriefInfo.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -182,7 +182,7 @@ class EndpointBriefInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointBriefInfo.
+        r"""Sets the name of this EndpointBriefInfo.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -193,7 +193,7 @@ class EndpointBriefInfo:
 
     @property
     def type(self):
-        """Gets the type of this EndpointBriefInfo.
+        r"""Gets the type of this EndpointBriefInfo.
 
         :return: The type of this EndpointBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
@@ -202,7 +202,7 @@ class EndpointBriefInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EndpointBriefInfo.
+        r"""Sets the type of this EndpointBriefInfo.
 
         :param type: The type of this EndpointBriefInfo.
         :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
@@ -211,7 +211,7 @@ class EndpointBriefInfo:
 
     @property
     def status(self):
-        """Gets the status of this EndpointBriefInfo.
+        r"""Gets the status of this EndpointBriefInfo.
 
         :return: The status of this EndpointBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
@@ -220,7 +220,7 @@ class EndpointBriefInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EndpointBriefInfo.
+        r"""Sets the status of this EndpointBriefInfo.
 
         :param status: The status of this EndpointBriefInfo.
         :type status: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
@@ -229,7 +229,7 @@ class EndpointBriefInfo:
 
     @property
     def description(self):
-        """Gets the description of this EndpointBriefInfo.
+        r"""Gets the description of this EndpointBriefInfo.
 
         描述信息
 
@@ -240,7 +240,7 @@ class EndpointBriefInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointBriefInfo.
+        r"""Sets the description of this EndpointBriefInfo.
 
         描述信息
 
@@ -251,7 +251,7 @@ class EndpointBriefInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EndpointBriefInfo.
+        r"""Gets the create_time of this EndpointBriefInfo.
 
         创建时间
 
@@ -262,7 +262,7 @@ class EndpointBriefInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EndpointBriefInfo.
+        r"""Sets the create_time of this EndpointBriefInfo.
 
         创建时间
 
@@ -273,7 +273,7 @@ class EndpointBriefInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this EndpointBriefInfo.
+        r"""Gets the update_time of this EndpointBriefInfo.
 
         更新时间
 
@@ -284,7 +284,7 @@ class EndpointBriefInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this EndpointBriefInfo.
+        r"""Sets the update_time of this EndpointBriefInfo.
 
         更新时间
 
@@ -295,7 +295,7 @@ class EndpointBriefInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this EndpointBriefInfo.
+        r"""Gets the owner of this EndpointBriefInfo.
 
         :return: The owner of this EndpointBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -304,7 +304,7 @@ class EndpointBriefInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this EndpointBriefInfo.
+        r"""Sets the owner of this EndpointBriefInfo.
 
         :param owner: The owner of this EndpointBriefInfo.
         :type owner: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -313,7 +313,7 @@ class EndpointBriefInfo:
 
     @property
     def cap(self):
-        """Gets the cap of this EndpointBriefInfo.
+        r"""Gets the cap of this EndpointBriefInfo.
 
         :return: The cap of this EndpointBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -322,7 +322,7 @@ class EndpointBriefInfo:
 
     @cap.setter
     def cap(self, cap):
-        """Sets the cap of this EndpointBriefInfo.
+        r"""Sets the cap of this EndpointBriefInfo.
 
         :param cap: The cap of this EndpointBriefInfo.
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -331,7 +331,7 @@ class EndpointBriefInfo:
 
     @property
     def reserved_resource(self):
-        """Gets the reserved_resource of this EndpointBriefInfo.
+        r"""Gets the reserved_resource of this EndpointBriefInfo.
 
         :return: The reserved_resource of this EndpointBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -340,7 +340,7 @@ class EndpointBriefInfo:
 
     @reserved_resource.setter
     def reserved_resource(self, reserved_resource):
-        """Sets the reserved_resource of this EndpointBriefInfo.
+        r"""Sets the reserved_resource of this EndpointBriefInfo.
 
         :param reserved_resource: The reserved_resource of this EndpointBriefInfo.
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -349,7 +349,7 @@ class EndpointBriefInfo:
 
     @property
     def ray_resource(self):
-        """Gets the ray_resource of this EndpointBriefInfo.
+        r"""Gets the ray_resource of this EndpointBriefInfo.
 
         :return: The ray_resource of this EndpointBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInfo`
@@ -358,7 +358,7 @@ class EndpointBriefInfo:
 
     @ray_resource.setter
     def ray_resource(self, ray_resource):
-        """Sets the ray_resource of this EndpointBriefInfo.
+        r"""Sets the ray_resource of this EndpointBriefInfo.
 
         :param ray_resource: The ray_resource of this EndpointBriefInfo.
         :type ray_resource: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInfo`
@@ -367,7 +367,7 @@ class EndpointBriefInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this EndpointBriefInfo.
+        r"""Gets the error_code of this EndpointBriefInfo.
 
         失败状态时的错误编码
 
@@ -378,7 +378,7 @@ class EndpointBriefInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this EndpointBriefInfo.
+        r"""Sets the error_code of this EndpointBriefInfo.
 
         失败状态时的错误编码
 
@@ -389,7 +389,7 @@ class EndpointBriefInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this EndpointBriefInfo.
+        r"""Gets the error_msg of this EndpointBriefInfo.
 
         失败状态时的错误信息
 
@@ -400,7 +400,7 @@ class EndpointBriefInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this EndpointBriefInfo.
+        r"""Sets the error_msg of this EndpointBriefInfo.
 
         失败状态时的错误信息
 

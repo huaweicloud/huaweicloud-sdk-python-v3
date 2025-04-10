@@ -32,7 +32,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """ListHistoryWebinarsResponse
+        r"""ListHistoryWebinarsResponse
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListHistoryWebinarsResponse.
+        r"""Gets the offset of this ListHistoryWebinarsResponse.
 
         偏移量。
 
@@ -73,7 +73,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHistoryWebinarsResponse.
+        r"""Sets the offset of this ListHistoryWebinarsResponse.
 
         偏移量。
 
@@ -84,7 +84,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListHistoryWebinarsResponse.
+        r"""Gets the limit of this ListHistoryWebinarsResponse.
 
         每页的记录数。
 
@@ -95,7 +95,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHistoryWebinarsResponse.
+        r"""Sets the limit of this ListHistoryWebinarsResponse.
 
         每页的记录数。
 
@@ -106,7 +106,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListHistoryWebinarsResponse.
+        r"""Gets the count of this ListHistoryWebinarsResponse.
 
         总记录数。
 
@@ -117,7 +117,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListHistoryWebinarsResponse.
+        r"""Sets the count of this ListHistoryWebinarsResponse.
 
         总记录数。
 
@@ -128,7 +128,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListHistoryWebinarsResponse.
+        r"""Gets the data of this ListHistoryWebinarsResponse.
 
         历史网络研讨会信息列表。
 
@@ -139,7 +139,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListHistoryWebinarsResponse.
+        r"""Sets the data of this ListHistoryWebinarsResponse.
 
         历史网络研讨会信息列表。
 

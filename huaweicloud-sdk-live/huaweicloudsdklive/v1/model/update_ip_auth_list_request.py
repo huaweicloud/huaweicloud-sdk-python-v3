@@ -25,7 +25,7 @@ class UpdateIpAuthListRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateIpAuthListRequest
+        r"""UpdateIpAuthListRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateIpAuthListRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIpAuthListRequest.
+        r"""Gets the body of this UpdateIpAuthListRequest.
 
         :return: The body of this UpdateIpAuthListRequest.
         :rtype: :class:`huaweicloudsdklive.v1.IPAuthInfo`
@@ -52,7 +52,7 @@ class UpdateIpAuthListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIpAuthListRequest.
+        r"""Sets the body of this UpdateIpAuthListRequest.
 
         :param body: The body of this UpdateIpAuthListRequest.
         :type body: :class:`huaweicloudsdklive.v1.IPAuthInfo`

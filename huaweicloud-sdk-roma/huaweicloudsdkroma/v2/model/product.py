@@ -61,7 +61,7 @@ class Product:
     }
 
     def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, authentication=None, created_datetime=None, app_name=None, data_format=None):
-        """Product
+        r"""Product
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class Product:
 
     @property
     def permissions(self):
-        """Gets the permissions of this Product.
+        r"""Gets the permissions of this Product.
 
         权限
 
@@ -180,7 +180,7 @@ class Product:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this Product.
+        r"""Sets the permissions of this Product.
 
         权限
 
@@ -191,7 +191,7 @@ class Product:
 
     @property
     def id(self):
-        """Gets the id of this Product.
+        r"""Gets the id of this Product.
 
         产品ID
 
@@ -202,7 +202,7 @@ class Product:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Product.
+        r"""Sets the id of this Product.
 
         产品ID
 
@@ -213,7 +213,7 @@ class Product:
 
     @property
     def product_serial(self):
-        """Gets the product_serial of this Product.
+        r"""Gets the product_serial of this Product.
 
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
@@ -224,7 +224,7 @@ class Product:
 
     @product_serial.setter
     def product_serial(self, product_serial):
-        """Sets the product_serial of this Product.
+        r"""Sets the product_serial of this Product.
 
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
@@ -235,7 +235,7 @@ class Product:
 
     @property
     def app_id(self):
-        """Gets the app_id of this Product.
+        r"""Gets the app_id of this Product.
 
         应用ID
 
@@ -246,7 +246,7 @@ class Product:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this Product.
+        r"""Sets the app_id of this Product.
 
         应用ID
 
@@ -257,7 +257,7 @@ class Product:
 
     @property
     def name(self):
-        """Gets the name of this Product.
+        r"""Gets the name of this Product.
 
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -268,7 +268,7 @@ class Product:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Product.
+        r"""Sets the name of this Product.
 
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -279,7 +279,7 @@ class Product:
 
     @property
     def manufacturer_id(self):
-        """Gets the manufacturer_id of this Product.
+        r"""Gets the manufacturer_id of this Product.
 
         产品供应商ID
 
@@ -290,7 +290,7 @@ class Product:
 
     @manufacturer_id.setter
     def manufacturer_id(self, manufacturer_id):
-        """Sets the manufacturer_id of this Product.
+        r"""Sets the manufacturer_id of this Product.
 
         产品供应商ID
 
@@ -301,7 +301,7 @@ class Product:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this Product.
+        r"""Gets the manufacturer_name of this Product.
 
         厂商名称
 
@@ -312,7 +312,7 @@ class Product:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this Product.
+        r"""Sets the manufacturer_name of this Product.
 
         厂商名称
 
@@ -323,7 +323,7 @@ class Product:
 
     @property
     def model(self):
-        """Gets the model of this Product.
+        r"""Gets the model of this Product.
 
         产品型号
 
@@ -334,7 +334,7 @@ class Product:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this Product.
+        r"""Sets the model of this Product.
 
         产品型号
 
@@ -345,7 +345,7 @@ class Product:
 
     @property
     def product_type(self):
-        """Gets the product_type of this Product.
+        r"""Gets the product_type of this Product.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -356,7 +356,7 @@ class Product:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this Product.
+        r"""Sets the product_type of this Product.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -367,7 +367,7 @@ class Product:
 
     @property
     def description(self):
-        """Gets the description of this Product.
+        r"""Gets the description of this Product.
 
         产品描述，长度0-200
 
@@ -378,7 +378,7 @@ class Product:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Product.
+        r"""Sets the description of this Product.
 
         产品描述，长度0-200
 
@@ -389,7 +389,7 @@ class Product:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this Product.
+        r"""Gets the protocol_type of this Product.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -400,7 +400,7 @@ class Product:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this Product.
+        r"""Sets the protocol_type of this Product.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -411,7 +411,7 @@ class Product:
 
     @property
     def device_type(self):
-        """Gets the device_type of this Product.
+        r"""Gets the device_type of this Product.
 
         产品的设备类型（默认Default）
 
@@ -422,7 +422,7 @@ class Product:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this Product.
+        r"""Sets the device_type of this Product.
 
         产品的设备类型（默认Default）
 
@@ -433,7 +433,7 @@ class Product:
 
     @property
     def version(self):
-        """Gets the version of this Product.
+        r"""Gets the version of this Product.
 
         产品版本
 
@@ -444,7 +444,7 @@ class Product:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Product.
+        r"""Sets the version of this Product.
 
         产品版本
 
@@ -455,7 +455,7 @@ class Product:
 
     @property
     def created_user(self):
-        """Gets the created_user of this Product.
+        r"""Gets the created_user of this Product.
 
         :return: The created_user of this Product.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -464,7 +464,7 @@ class Product:
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this Product.
+        r"""Sets the created_user of this Product.
 
         :param created_user: The created_user of this Product.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -473,7 +473,7 @@ class Product:
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this Product.
+        r"""Gets the last_updated_user of this Product.
 
         :return: The last_updated_user of this Product.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -482,7 +482,7 @@ class Product:
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this Product.
+        r"""Sets the last_updated_user of this Product.
 
         :param last_updated_user: The last_updated_user of this Product.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -491,7 +491,7 @@ class Product:
 
     @property
     def authentication(self):
-        """Gets the authentication of this Product.
+        r"""Gets the authentication of this Product.
 
         :return: The authentication of this Product.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -500,7 +500,7 @@ class Product:
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this Product.
+        r"""Sets the authentication of this Product.
 
         :param authentication: The authentication of this Product.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -509,7 +509,7 @@ class Product:
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this Product.
+        r"""Gets the created_datetime of this Product.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -520,7 +520,7 @@ class Product:
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this Product.
+        r"""Sets the created_datetime of this Product.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -531,7 +531,7 @@ class Product:
 
     @property
     def app_name(self):
-        """Gets the app_name of this Product.
+        r"""Gets the app_name of this Product.
 
         应用名称
 
@@ -542,7 +542,7 @@ class Product:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this Product.
+        r"""Sets the app_name of this Product.
 
         应用名称
 
@@ -553,7 +553,7 @@ class Product:
 
     @property
     def data_format(self):
-        """Gets the data_format of this Product.
+        r"""Gets the data_format of this Product.
 
         data_format 0-JSON 1-USER_DEFINED
 
@@ -564,7 +564,7 @@ class Product:
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this Product.
+        r"""Sets the data_format of this Product.
 
         data_format 0-JSON 1-USER_DEFINED
 

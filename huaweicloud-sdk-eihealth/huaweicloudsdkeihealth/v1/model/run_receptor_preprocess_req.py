@@ -33,7 +33,7 @@ class RunReceptorPreprocessReq:
     }
 
     def __init__(self, file=None, remove_water=None, remove_ion=None, remove_ligand=None, add_hydrogen=None):
-        """RunReceptorPreprocessReq
+        r"""RunReceptorPreprocessReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class RunReceptorPreprocessReq:
 
     @property
     def file(self):
-        """Gets the file of this RunReceptorPreprocessReq.
+        r"""Gets the file of this RunReceptorPreprocessReq.
 
         :return: The file of this RunReceptorPreprocessReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -79,7 +79,7 @@ class RunReceptorPreprocessReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this RunReceptorPreprocessReq.
+        r"""Sets the file of this RunReceptorPreprocessReq.
 
         :param file: The file of this RunReceptorPreprocessReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -88,7 +88,7 @@ class RunReceptorPreprocessReq:
 
     @property
     def remove_water(self):
-        """Gets the remove_water of this RunReceptorPreprocessReq.
+        r"""Gets the remove_water of this RunReceptorPreprocessReq.
 
         去除水分子
 
@@ -99,7 +99,7 @@ class RunReceptorPreprocessReq:
 
     @remove_water.setter
     def remove_water(self, remove_water):
-        """Sets the remove_water of this RunReceptorPreprocessReq.
+        r"""Sets the remove_water of this RunReceptorPreprocessReq.
 
         去除水分子
 
@@ -110,7 +110,7 @@ class RunReceptorPreprocessReq:
 
     @property
     def remove_ion(self):
-        """Gets the remove_ion of this RunReceptorPreprocessReq.
+        r"""Gets the remove_ion of this RunReceptorPreprocessReq.
 
         去除离子
 
@@ -121,7 +121,7 @@ class RunReceptorPreprocessReq:
 
     @remove_ion.setter
     def remove_ion(self, remove_ion):
-        """Sets the remove_ion of this RunReceptorPreprocessReq.
+        r"""Sets the remove_ion of this RunReceptorPreprocessReq.
 
         去除离子
 
@@ -132,7 +132,7 @@ class RunReceptorPreprocessReq:
 
     @property
     def remove_ligand(self):
-        """Gets the remove_ligand of this RunReceptorPreprocessReq.
+        r"""Gets the remove_ligand of this RunReceptorPreprocessReq.
 
         去除配体分子
 
@@ -143,7 +143,7 @@ class RunReceptorPreprocessReq:
 
     @remove_ligand.setter
     def remove_ligand(self, remove_ligand):
-        """Sets the remove_ligand of this RunReceptorPreprocessReq.
+        r"""Sets the remove_ligand of this RunReceptorPreprocessReq.
 
         去除配体分子
 
@@ -154,7 +154,7 @@ class RunReceptorPreprocessReq:
 
     @property
     def add_hydrogen(self):
-        """Gets the add_hydrogen of this RunReceptorPreprocessReq.
+        r"""Gets the add_hydrogen of this RunReceptorPreprocessReq.
 
         增加氢原子
 
@@ -165,7 +165,7 @@ class RunReceptorPreprocessReq:
 
     @add_hydrogen.setter
     def add_hydrogen(self, add_hydrogen):
-        """Sets the add_hydrogen of this RunReceptorPreprocessReq.
+        r"""Sets the add_hydrogen of this RunReceptorPreprocessReq.
 
         增加氢原子
 

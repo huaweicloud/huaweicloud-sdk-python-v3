@@ -27,7 +27,7 @@ class ImageTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ImageTag
+        r"""ImageTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageTag:
 
     @property
     def key(self):
-        """Gets the key of this ImageTag.
+        r"""Gets the key of this ImageTag.
 
         标签key值
 
@@ -61,7 +61,7 @@ class ImageTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ImageTag.
+        r"""Sets the key of this ImageTag.
 
         标签key值
 
@@ -72,7 +72,7 @@ class ImageTag:
 
     @property
     def value(self):
-        """Gets the value of this ImageTag.
+        r"""Gets the value of this ImageTag.
 
         标签value值
 
@@ -83,7 +83,7 @@ class ImageTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ImageTag.
+        r"""Sets the value of this ImageTag.
 
         标签value值
 

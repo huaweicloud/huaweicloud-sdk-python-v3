@@ -27,7 +27,7 @@ class KeystoneListEndpointsRequest:
     }
 
     def __init__(self, interface=None, service_id=None):
-        """KeystoneListEndpointsRequest
+        r"""KeystoneListEndpointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeystoneListEndpointsRequest:
 
     @property
     def interface(self):
-        """Gets the interface of this KeystoneListEndpointsRequest.
+        r"""Gets the interface of this KeystoneListEndpointsRequest.
 
         终端节点平面。可能取值为：public、internal或admin。public： 用户可在公共网络接口上看到。internal：用户可在内部网络接口上看到。admin：管理员可以在安全的网络接口上看到。
 
@@ -61,7 +61,7 @@ class KeystoneListEndpointsRequest:
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this KeystoneListEndpointsRequest.
+        r"""Sets the interface of this KeystoneListEndpointsRequest.
 
         终端节点平面。可能取值为：public、internal或admin。public： 用户可在公共网络接口上看到。internal：用户可在内部网络接口上看到。admin：管理员可以在安全的网络接口上看到。
 
@@ -72,7 +72,7 @@ class KeystoneListEndpointsRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this KeystoneListEndpointsRequest.
+        r"""Gets the service_id of this KeystoneListEndpointsRequest.
 
         服务ID。
 
@@ -83,7 +83,7 @@ class KeystoneListEndpointsRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this KeystoneListEndpointsRequest.
+        r"""Sets the service_id of this KeystoneListEndpointsRequest.
 
         服务ID。
 

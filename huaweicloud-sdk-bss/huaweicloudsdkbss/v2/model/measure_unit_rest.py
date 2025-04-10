@@ -31,7 +31,7 @@ class MeasureUnitRest:
     }
 
     def __init__(self, measure_id=None, measure_name=None, abbreviation=None, measure_type=None):
-        """MeasureUnitRest
+        r"""MeasureUnitRest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MeasureUnitRest:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this MeasureUnitRest.
+        r"""Gets the measure_id of this MeasureUnitRest.
 
         度量单位ID。 例如：10表示GB。
 
@@ -75,7 +75,7 @@ class MeasureUnitRest:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this MeasureUnitRest.
+        r"""Sets the measure_id of this MeasureUnitRest.
 
         度量单位ID。 例如：10表示GB。
 
@@ -86,7 +86,7 @@ class MeasureUnitRest:
 
     @property
     def measure_name(self):
-        """Gets the measure_name of this MeasureUnitRest.
+        r"""Gets the measure_name of this MeasureUnitRest.
 
         度量单位的名称，根据查询的语言类型返回结果。 例如：GB。
 
@@ -97,7 +97,7 @@ class MeasureUnitRest:
 
     @measure_name.setter
     def measure_name(self, measure_name):
-        """Sets the measure_name of this MeasureUnitRest.
+        r"""Sets the measure_name of this MeasureUnitRest.
 
         度量单位的名称，根据查询的语言类型返回结果。 例如：GB。
 
@@ -108,7 +108,7 @@ class MeasureUnitRest:
 
     @property
     def abbreviation(self):
-        """Gets the abbreviation of this MeasureUnitRest.
+        r"""Gets the abbreviation of this MeasureUnitRest.
 
         度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“G”。
 
@@ -119,7 +119,7 @@ class MeasureUnitRest:
 
     @abbreviation.setter
     def abbreviation(self, abbreviation):
-        """Sets the abbreviation of this MeasureUnitRest.
+        r"""Sets the abbreviation of this MeasureUnitRest.
 
         度量单位名称的英文缩写。 例如：度量单位名称“GB”的英文缩写为“G”。
 
@@ -130,7 +130,7 @@ class MeasureUnitRest:
 
     @property
     def measure_type(self):
-        """Gets the measure_type of this MeasureUnitRest.
+        r"""Gets the measure_type of this MeasureUnitRest.
 
         度量类型。 1：货币2：时长3：流量4：数量6：长度7：容量9：行数10：周期11：频率12：个数15：容量*时长16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens82：帧98：缓存带宽x时长
 
@@ -141,7 +141,7 @@ class MeasureUnitRest:
 
     @measure_type.setter
     def measure_type(self, measure_type):
-        """Sets the measure_type of this MeasureUnitRest.
+        r"""Sets the measure_type of this MeasureUnitRest.
 
         度量类型。 1：货币2：时长3：流量4：数量6：长度7：容量9：行数10：周期11：频率12：个数15：容量*时长16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量24：分辨率26：通用资源包抵扣单位27：核数*时长28：内存*时长29：IOPS*时长30：吞吐量*时长31：个/时长40：流量（1000进制）41：1K Tokens82：帧98：缓存带宽x时长
 

@@ -35,7 +35,7 @@ class CreateKafkaUserClientQuotaTaskReq:
     }
 
     def __init__(self, user=None, client=None, user_default=None, client_default=None, producer_byte_rate=None, consumer_byte_rate=None):
-        """CreateKafkaUserClientQuotaTaskReq
+        r"""CreateKafkaUserClientQuotaTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @property
     def user(self):
-        """Gets the user of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Gets the user of this CreateKafkaUserClientQuotaTaskReq.
 
         用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
@@ -89,7 +89,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Sets the user of this CreateKafkaUserClientQuotaTaskReq.
 
         用户名。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
@@ -100,7 +100,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @property
     def client(self):
-        """Gets the client of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Gets the client of this CreateKafkaUserClientQuotaTaskReq.
 
         客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
@@ -111,7 +111,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Sets the client of this CreateKafkaUserClientQuotaTaskReq.
 
         客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
 
@@ -122,7 +122,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @property
     def user_default(self):
-        """Gets the user_default of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Gets the user_default of this CreateKafkaUserClientQuotaTaskReq.
 
         是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
 
@@ -133,7 +133,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @user_default.setter
     def user_default(self, user_default):
-        """Sets the user_default of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Sets the user_default of this CreateKafkaUserClientQuotaTaskReq.
 
         是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
 
@@ -144,7 +144,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @property
     def client_default(self):
-        """Gets the client_default of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Gets the client_default of this CreateKafkaUserClientQuotaTaskReq.
 
         是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
 
@@ -155,7 +155,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @client_default.setter
     def client_default(self, client_default):
-        """Sets the client_default of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Sets the client_default of this CreateKafkaUserClientQuotaTaskReq.
 
         是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
 
@@ -166,7 +166,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @property
     def producer_byte_rate(self):
-        """Gets the producer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Gets the producer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
 
         生产上限速率（单位为B/s）。
 
@@ -177,7 +177,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @producer_byte_rate.setter
     def producer_byte_rate(self, producer_byte_rate):
-        """Sets the producer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Sets the producer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
 
         生产上限速率（单位为B/s）。
 
@@ -188,7 +188,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @property
     def consumer_byte_rate(self):
-        """Gets the consumer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Gets the consumer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
 
         消费上限速率（单位为B/s）。  > “生产上限速率”和“消费上限速率”不可同时为空。
 
@@ -199,7 +199,7 @@ class CreateKafkaUserClientQuotaTaskReq:
 
     @consumer_byte_rate.setter
     def consumer_byte_rate(self, consumer_byte_rate):
-        """Sets the consumer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
+        r"""Sets the consumer_byte_rate of this CreateKafkaUserClientQuotaTaskReq.
 
         消费上限速率（单位为B/s）。  > “生产上限速率”和“消费上限速率”不可同时为空。
 

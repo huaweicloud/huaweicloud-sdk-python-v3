@@ -29,7 +29,7 @@ class VarsStructure:
     }
 
     def __init__(self, var_key=None, var_value=None, encryption=None):
-        """VarsStructure
+        r"""VarsStructure
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class VarsStructure:
 
     @property
     def var_key(self):
-        """Gets the var_key of this VarsStructure.
+        r"""Gets the var_key of this VarsStructure.
 
         参数的名字
 
@@ -66,7 +66,7 @@ class VarsStructure:
 
     @var_key.setter
     def var_key(self, var_key):
-        """Sets the var_key of this VarsStructure.
+        r"""Sets the var_key of this VarsStructure.
 
         参数的名字
 
@@ -77,7 +77,7 @@ class VarsStructure:
 
     @property
     def var_value(self):
-        """Gets the var_value of this VarsStructure.
+        r"""Gets the var_value of this VarsStructure.
 
         参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如'10'。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body
 
@@ -88,7 +88,7 @@ class VarsStructure:
 
     @var_value.setter
     def var_value(self, var_value):
-        """Sets the var_value of this VarsStructure.
+        r"""Sets the var_value of this VarsStructure.
 
         参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如'10'。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body
 
@@ -99,7 +99,7 @@ class VarsStructure:
 
     @property
     def encryption(self):
-        """Gets the encryption of this VarsStructure.
+        r"""Gets the encryption of this VarsStructure.
 
         :return: The encryption of this VarsStructure.
         :rtype: :class:`huaweicloudsdkaos.v1.EncryptionStructure`
@@ -108,7 +108,7 @@ class VarsStructure:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this VarsStructure.
+        r"""Sets the encryption of this VarsStructure.
 
         :param encryption: The encryption of this VarsStructure.
         :type encryption: :class:`huaweicloudsdkaos.v1.EncryptionStructure`

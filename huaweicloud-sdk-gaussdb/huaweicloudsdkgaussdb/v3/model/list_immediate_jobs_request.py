@@ -39,7 +39,7 @@ class ListImmediateJobsRequest:
     }
 
     def __init__(self, x_language=None, status=None, job_name=None, job_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ListImmediateJobsRequest
+        r"""ListImmediateJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListImmediateJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListImmediateJobsRequest.
+        r"""Gets the x_language of this ListImmediateJobsRequest.
 
         语言。
 
@@ -103,7 +103,7 @@ class ListImmediateJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListImmediateJobsRequest.
+        r"""Sets the x_language of this ListImmediateJobsRequest.
 
         语言。
 
@@ -114,7 +114,7 @@ class ListImmediateJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListImmediateJobsRequest.
+        r"""Gets the status of this ListImmediateJobsRequest.
 
         任务执行状态。 取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。 - 值为“Pending”，表示任务未执行。
 
@@ -125,7 +125,7 @@ class ListImmediateJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListImmediateJobsRequest.
+        r"""Sets the status of this ListImmediateJobsRequest.
 
         任务执行状态。 取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。 - 值为“Pending”，表示任务未执行。
 
@@ -136,7 +136,7 @@ class ListImmediateJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListImmediateJobsRequest.
+        r"""Gets the job_name of this ListImmediateJobsRequest.
 
         任务名称。取值有：  - \"CreateGaussDBforMySQLInstance\"表示创建实例。  - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。  - \"AddGaussDBforMySQLNodes\"表示添加节点。  - \"DeleteGaussDBforMySQLNode\"表示删除节点。  - \"RebootGaussDBforMySQLInstance\"表示重启实例。  - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。  - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。  - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。  - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。  - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。  - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。  - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。  - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。  - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。  - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。  - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。  - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。  - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。  - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。  - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。  - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。  - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。  - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。  - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
 
@@ -147,7 +147,7 @@ class ListImmediateJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListImmediateJobsRequest.
+        r"""Sets the job_name of this ListImmediateJobsRequest.
 
         任务名称。取值有：  - \"CreateGaussDBforMySQLInstance\"表示创建实例。  - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。  - \"AddGaussDBforMySQLNodes\"表示添加节点。  - \"DeleteGaussDBforMySQLNode\"表示删除节点。  - \"RebootGaussDBforMySQLInstance\"表示重启实例。  - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。  - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。  - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。  - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。  - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。  - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。  - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。  - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。  - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。  - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。  - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。  - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。  - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。  - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。  - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。  - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。  - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。  - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。  - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
 
@@ -158,7 +158,7 @@ class ListImmediateJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListImmediateJobsRequest.
+        r"""Gets the job_id of this ListImmediateJobsRequest.
 
         任务ID。
 
@@ -169,7 +169,7 @@ class ListImmediateJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListImmediateJobsRequest.
+        r"""Sets the job_id of this ListImmediateJobsRequest.
 
         任务ID。
 
@@ -180,7 +180,7 @@ class ListImmediateJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImmediateJobsRequest.
+        r"""Gets the offset of this ListImmediateJobsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
 
@@ -191,7 +191,7 @@ class ListImmediateJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImmediateJobsRequest.
+        r"""Sets the offset of this ListImmediateJobsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
 
@@ -202,7 +202,7 @@ class ListImmediateJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImmediateJobsRequest.
+        r"""Gets the limit of this ListImmediateJobsRequest.
 
         查询记录数。默认为10，取值为10、20、50。
 
@@ -213,7 +213,7 @@ class ListImmediateJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImmediateJobsRequest.
+        r"""Sets the limit of this ListImmediateJobsRequest.
 
         查询记录数。默认为10，取值为10、20、50。
 
@@ -224,7 +224,7 @@ class ListImmediateJobsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListImmediateJobsRequest.
+        r"""Gets the start_time of this ListImmediateJobsRequest.
 
         起始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -235,7 +235,7 @@ class ListImmediateJobsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListImmediateJobsRequest.
+        r"""Sets the start_time of this ListImmediateJobsRequest.
 
         起始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -246,7 +246,7 @@ class ListImmediateJobsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListImmediateJobsRequest.
+        r"""Gets the end_time of this ListImmediateJobsRequest.
 
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -257,7 +257,7 @@ class ListImmediateJobsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListImmediateJobsRequest.
+        r"""Sets the end_time of this ListImmediateJobsRequest.
 
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 

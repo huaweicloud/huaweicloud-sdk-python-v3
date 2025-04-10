@@ -31,7 +31,7 @@ class ShowStepOutputsRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None, step_run_ids=None):
-        """ShowStepOutputsRequest
+        r"""ShowStepOutputsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowStepOutputsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowStepOutputsRequest.
+        r"""Gets the project_id of this ShowStepOutputsRequest.
 
         项目ID
 
@@ -72,7 +72,7 @@ class ShowStepOutputsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowStepOutputsRequest.
+        r"""Sets the project_id of this ShowStepOutputsRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class ShowStepOutputsRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowStepOutputsRequest.
+        r"""Gets the pipeline_id of this ShowStepOutputsRequest.
 
         流水线ID
 
@@ -94,7 +94,7 @@ class ShowStepOutputsRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowStepOutputsRequest.
+        r"""Sets the pipeline_id of this ShowStepOutputsRequest.
 
         流水线ID
 
@@ -105,7 +105,7 @@ class ShowStepOutputsRequest:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this ShowStepOutputsRequest.
+        r"""Gets the pipeline_run_id of this ShowStepOutputsRequest.
 
         流水线运行实例ID
 
@@ -116,7 +116,7 @@ class ShowStepOutputsRequest:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this ShowStepOutputsRequest.
+        r"""Sets the pipeline_run_id of this ShowStepOutputsRequest.
 
         流水线运行实例ID
 
@@ -127,7 +127,7 @@ class ShowStepOutputsRequest:
 
     @property
     def step_run_ids(self):
-        """Gets the step_run_ids of this ShowStepOutputsRequest.
+        r"""Gets the step_run_ids of this ShowStepOutputsRequest.
 
         :return: The step_run_ids of this ShowStepOutputsRequest.
         :rtype: str
@@ -136,7 +136,7 @@ class ShowStepOutputsRequest:
 
     @step_run_ids.setter
     def step_run_ids(self, step_run_ids):
-        """Sets the step_run_ids of this ShowStepOutputsRequest.
+        r"""Sets the step_run_ids of this ShowStepOutputsRequest.
 
         :param step_run_ids: The step_run_ids of this ShowStepOutputsRequest.
         :type step_run_ids: str

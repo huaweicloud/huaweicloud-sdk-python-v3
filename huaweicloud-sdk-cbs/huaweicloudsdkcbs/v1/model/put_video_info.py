@@ -31,7 +31,7 @@ class PutVideoInfo:
     }
 
     def __init__(self, tts_config=None, video_config=None, character_config=None, read_config=None):
-        """PutVideoInfo
+        r"""PutVideoInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class PutVideoInfo:
 
     @property
     def tts_config(self):
-        """Gets the tts_config of this PutVideoInfo.
+        r"""Gets the tts_config of this PutVideoInfo.
 
         :return: The tts_config of this PutVideoInfo.
         :rtype: :class:`huaweicloudsdkcbs.v1.TtsConfig`
@@ -69,7 +69,7 @@ class PutVideoInfo:
 
     @tts_config.setter
     def tts_config(self, tts_config):
-        """Sets the tts_config of this PutVideoInfo.
+        r"""Sets the tts_config of this PutVideoInfo.
 
         :param tts_config: The tts_config of this PutVideoInfo.
         :type tts_config: :class:`huaweicloudsdkcbs.v1.TtsConfig`
@@ -78,7 +78,7 @@ class PutVideoInfo:
 
     @property
     def video_config(self):
-        """Gets the video_config of this PutVideoInfo.
+        r"""Gets the video_config of this PutVideoInfo.
 
         :return: The video_config of this PutVideoInfo.
         :rtype: :class:`huaweicloudsdkcbs.v1.VideoConfig`
@@ -87,7 +87,7 @@ class PutVideoInfo:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this PutVideoInfo.
+        r"""Sets the video_config of this PutVideoInfo.
 
         :param video_config: The video_config of this PutVideoInfo.
         :type video_config: :class:`huaweicloudsdkcbs.v1.VideoConfig`
@@ -96,7 +96,7 @@ class PutVideoInfo:
 
     @property
     def character_config(self):
-        """Gets the character_config of this PutVideoInfo.
+        r"""Gets the character_config of this PutVideoInfo.
 
         :return: The character_config of this PutVideoInfo.
         :rtype: :class:`huaweicloudsdkcbs.v1.CharacterConfig`
@@ -105,7 +105,7 @@ class PutVideoInfo:
 
     @character_config.setter
     def character_config(self, character_config):
-        """Sets the character_config of this PutVideoInfo.
+        r"""Sets the character_config of this PutVideoInfo.
 
         :param character_config: The character_config of this PutVideoInfo.
         :type character_config: :class:`huaweicloudsdkcbs.v1.CharacterConfig`
@@ -114,7 +114,7 @@ class PutVideoInfo:
 
     @property
     def read_config(self):
-        """Gets the read_config of this PutVideoInfo.
+        r"""Gets the read_config of this PutVideoInfo.
 
         :return: The read_config of this PutVideoInfo.
         :rtype: :class:`huaweicloudsdkcbs.v1.ReadConfig`
@@ -123,7 +123,7 @@ class PutVideoInfo:
 
     @read_config.setter
     def read_config(self, read_config):
-        """Sets the read_config of this PutVideoInfo.
+        r"""Sets the read_config of this PutVideoInfo.
 
         :param read_config: The read_config of this PutVideoInfo.
         :type read_config: :class:`huaweicloudsdkcbs.v1.ReadConfig`

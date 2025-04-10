@@ -27,7 +27,7 @@ class ResizePostPaidServerRequestBody:
     }
 
     def __init__(self, resize=None, dry_run=None):
-        """ResizePostPaidServerRequestBody
+        r"""ResizePostPaidServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizePostPaidServerRequestBody:
 
     @property
     def resize(self):
-        """Gets the resize of this ResizePostPaidServerRequestBody.
+        r"""Gets the resize of this ResizePostPaidServerRequestBody.
 
         :return: The resize of this ResizePostPaidServerRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerOption`
@@ -58,7 +58,7 @@ class ResizePostPaidServerRequestBody:
 
     @resize.setter
     def resize(self, resize):
-        """Sets the resize of this ResizePostPaidServerRequestBody.
+        r"""Sets the resize of this ResizePostPaidServerRequestBody.
 
         :param resize: The resize of this ResizePostPaidServerRequestBody.
         :type resize: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerOption`
@@ -67,7 +67,7 @@ class ResizePostPaidServerRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this ResizePostPaidServerRequestBody.
+        r"""Gets the dry_run of this ResizePostPaidServerRequestBody.
 
         是否只预检此次请求。  true：发送检查请求，不会变更云服务器规格。检查项包括是否填写了必需参数、请求格式等。  如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行变更云服务器规格请求。
 
@@ -78,7 +78,7 @@ class ResizePostPaidServerRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this ResizePostPaidServerRequestBody.
+        r"""Sets the dry_run of this ResizePostPaidServerRequestBody.
 
         是否只预检此次请求。  true：发送检查请求，不会变更云服务器规格。检查项包括是否填写了必需参数、请求格式等。  如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行变更云服务器规格请求。
 

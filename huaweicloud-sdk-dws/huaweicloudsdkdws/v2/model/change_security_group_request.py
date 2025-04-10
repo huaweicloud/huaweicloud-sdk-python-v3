@@ -27,7 +27,7 @@ class ChangeSecurityGroupRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ChangeSecurityGroupRequest
+        r"""ChangeSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeSecurityGroupRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ChangeSecurityGroupRequest.
+        r"""Gets the cluster_id of this ChangeSecurityGroupRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ChangeSecurityGroupRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ChangeSecurityGroupRequest.
+        r"""Sets the cluster_id of this ChangeSecurityGroupRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ChangeSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeSecurityGroupRequest.
+        r"""Gets the body of this ChangeSecurityGroupRequest.
 
         :return: The body of this ChangeSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ChangeSecurityGroupRequestBody`
@@ -80,7 +80,7 @@ class ChangeSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeSecurityGroupRequest.
+        r"""Sets the body of this ChangeSecurityGroupRequest.
 
         :param body: The body of this ChangeSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ChangeSecurityGroupRequestBody`

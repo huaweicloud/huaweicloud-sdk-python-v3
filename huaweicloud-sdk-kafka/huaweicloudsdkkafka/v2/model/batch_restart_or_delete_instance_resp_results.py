@@ -27,7 +27,7 @@ class BatchRestartOrDeleteInstanceRespResults:
     }
 
     def __init__(self, result=None, instance=None):
-        """BatchRestartOrDeleteInstanceRespResults
+        r"""BatchRestartOrDeleteInstanceRespResults
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchRestartOrDeleteInstanceRespResults:
 
     @property
     def result(self):
-        """Gets the result of this BatchRestartOrDeleteInstanceRespResults.
+        r"""Gets the result of this BatchRestartOrDeleteInstanceRespResults.
 
         操作结果。   - success: 操作成功   - failed: 操作失败 
 
@@ -61,7 +61,7 @@ class BatchRestartOrDeleteInstanceRespResults:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchRestartOrDeleteInstanceRespResults.
+        r"""Sets the result of this BatchRestartOrDeleteInstanceRespResults.
 
         操作结果。   - success: 操作成功   - failed: 操作失败 
 
@@ -72,7 +72,7 @@ class BatchRestartOrDeleteInstanceRespResults:
 
     @property
     def instance(self):
-        """Gets the instance of this BatchRestartOrDeleteInstanceRespResults.
+        r"""Gets the instance of this BatchRestartOrDeleteInstanceRespResults.
 
         实例ID。
 
@@ -83,7 +83,7 @@ class BatchRestartOrDeleteInstanceRespResults:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this BatchRestartOrDeleteInstanceRespResults.
+        r"""Sets the instance of this BatchRestartOrDeleteInstanceRespResults.
 
         实例ID。
 

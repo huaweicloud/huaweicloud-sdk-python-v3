@@ -51,7 +51,7 @@ class Create2dModelTrainingJobReq:
     }
 
     def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, model_version=None, is_flexus=None, is_only_human_model=None, audio_source_type=None, voice_properties=None, supported_service=None):
-        """Create2dModelTrainingJobReq
+        r"""Create2dModelTrainingJobReq
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def name(self):
-        """Gets the name of this Create2dModelTrainingJobReq.
+        r"""Gets the name of this Create2dModelTrainingJobReq.
 
         分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
 
@@ -144,7 +144,7 @@ class Create2dModelTrainingJobReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Create2dModelTrainingJobReq.
+        r"""Sets the name of this Create2dModelTrainingJobReq.
 
         分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
 
@@ -155,7 +155,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def contact(self):
-        """Gets the contact of this Create2dModelTrainingJobReq.
+        r"""Gets the contact of this Create2dModelTrainingJobReq.
 
         分身数字人训练任务创建者的手机号。
 
@@ -166,7 +166,7 @@ class Create2dModelTrainingJobReq:
 
     @contact.setter
     def contact(self, contact):
-        """Sets the contact of this Create2dModelTrainingJobReq.
+        r"""Sets the contact of this Create2dModelTrainingJobReq.
 
         分身数字人训练任务创建者的手机号。
 
@@ -177,7 +177,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def command_message(self):
-        """Gets the command_message of this Create2dModelTrainingJobReq.
+        r"""Gets the command_message of this Create2dModelTrainingJobReq.
 
         命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
 
@@ -188,7 +188,7 @@ class Create2dModelTrainingJobReq:
 
     @command_message.setter
     def command_message(self, command_message):
-        """Sets the command_message of this Create2dModelTrainingJobReq.
+        r"""Sets the command_message of this Create2dModelTrainingJobReq.
 
         命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO：上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
 
@@ -199,7 +199,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def video_multipart_count(self):
-        """Gets the video_multipart_count of this Create2dModelTrainingJobReq.
+        r"""Gets the video_multipart_count of this Create2dModelTrainingJobReq.
 
         训练视频上传分片数（上传时对唯一训练视频文件的数据分片，用于对该文件的并发上传，不是分多个视频文件上传）。
 
@@ -210,7 +210,7 @@ class Create2dModelTrainingJobReq:
 
     @video_multipart_count.setter
     def video_multipart_count(self, video_multipart_count):
-        """Sets the video_multipart_count of this Create2dModelTrainingJobReq.
+        r"""Sets the video_multipart_count of this Create2dModelTrainingJobReq.
 
         训练视频上传分片数（上传时对唯一训练视频文件的数据分片，用于对该文件的并发上传，不是分多个视频文件上传）。
 
@@ -221,7 +221,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def action_video_multipart_count(self):
-        """Gets the action_video_multipart_count of this Create2dModelTrainingJobReq.
+        r"""Gets the action_video_multipart_count of this Create2dModelTrainingJobReq.
 
         动作视频上传分片数。
 
@@ -232,7 +232,7 @@ class Create2dModelTrainingJobReq:
 
     @action_video_multipart_count.setter
     def action_video_multipart_count(self, action_video_multipart_count):
-        """Sets the action_video_multipart_count of this Create2dModelTrainingJobReq.
+        r"""Sets the action_video_multipart_count of this Create2dModelTrainingJobReq.
 
         动作视频上传分片数。
 
@@ -243,7 +243,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def is_background_replacement(self):
-        """Gets the is_background_replacement of this Create2dModelTrainingJobReq.
+        r"""Gets the is_background_replacement of this Create2dModelTrainingJobReq.
 
         分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
 
@@ -254,7 +254,7 @@ class Create2dModelTrainingJobReq:
 
     @is_background_replacement.setter
     def is_background_replacement(self, is_background_replacement):
-        """Sets the is_background_replacement of this Create2dModelTrainingJobReq.
+        r"""Sets the is_background_replacement of this Create2dModelTrainingJobReq.
 
         分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
 
@@ -265,7 +265,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this Create2dModelTrainingJobReq.
+        r"""Gets the batch_name of this Create2dModelTrainingJobReq.
 
         分身数字人训练任务的批次名称。
 
@@ -276,7 +276,7 @@ class Create2dModelTrainingJobReq:
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this Create2dModelTrainingJobReq.
+        r"""Sets the batch_name of this Create2dModelTrainingJobReq.
 
         分身数字人训练任务的批次名称。
 
@@ -287,7 +287,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def tags(self):
-        """Gets the tags of this Create2dModelTrainingJobReq.
+        r"""Gets the tags of this Create2dModelTrainingJobReq.
 
         分身数字人训练任务标签。
 
@@ -298,7 +298,7 @@ class Create2dModelTrainingJobReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Create2dModelTrainingJobReq.
+        r"""Sets the tags of this Create2dModelTrainingJobReq.
 
         分身数字人训练任务标签。
 
@@ -309,7 +309,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def model_version(self):
-        """Gets the model_version of this Create2dModelTrainingJobReq.
+        r"""Gets the model_version of this Create2dModelTrainingJobReq.
 
         分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
@@ -320,7 +320,7 @@ class Create2dModelTrainingJobReq:
 
     @model_version.setter
     def model_version(self, model_version):
-        """Sets the model_version of this Create2dModelTrainingJobReq.
+        r"""Sets the model_version of this Create2dModelTrainingJobReq.
 
         分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
@@ -331,7 +331,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def is_flexus(self):
-        """Gets the is_flexus of this Create2dModelTrainingJobReq.
+        r"""Gets the is_flexus of this Create2dModelTrainingJobReq.
 
         是否是基础版的形象训练
 
@@ -342,7 +342,7 @@ class Create2dModelTrainingJobReq:
 
     @is_flexus.setter
     def is_flexus(self, is_flexus):
-        """Sets the is_flexus of this Create2dModelTrainingJobReq.
+        r"""Sets the is_flexus of this Create2dModelTrainingJobReq.
 
         是否是基础版的形象训练
 
@@ -353,7 +353,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def is_only_human_model(self):
-        """Gets the is_only_human_model of this Create2dModelTrainingJobReq.
+        r"""Gets the is_only_human_model of this Create2dModelTrainingJobReq.
 
         是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
 
@@ -364,7 +364,7 @@ class Create2dModelTrainingJobReq:
 
     @is_only_human_model.setter
     def is_only_human_model(self, is_only_human_model):
-        """Sets the is_only_human_model of this Create2dModelTrainingJobReq.
+        r"""Sets the is_only_human_model of this Create2dModelTrainingJobReq.
 
         是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
 
@@ -375,7 +375,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def audio_source_type(self):
-        """Gets the audio_source_type of this Create2dModelTrainingJobReq.
+        r"""Gets the audio_source_type of this Create2dModelTrainingJobReq.
 
         声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
 
@@ -386,7 +386,7 @@ class Create2dModelTrainingJobReq:
 
     @audio_source_type.setter
     def audio_source_type(self, audio_source_type):
-        """Sets the audio_source_type of this Create2dModelTrainingJobReq.
+        r"""Sets the audio_source_type of this Create2dModelTrainingJobReq.
 
         声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
 
@@ -397,7 +397,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def voice_properties(self):
-        """Gets the voice_properties of this Create2dModelTrainingJobReq.
+        r"""Gets the voice_properties of this Create2dModelTrainingJobReq.
 
         :return: The voice_properties of this Create2dModelTrainingJobReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
@@ -406,7 +406,7 @@ class Create2dModelTrainingJobReq:
 
     @voice_properties.setter
     def voice_properties(self, voice_properties):
-        """Sets the voice_properties of this Create2dModelTrainingJobReq.
+        r"""Sets the voice_properties of this Create2dModelTrainingJobReq.
 
         :param voice_properties: The voice_properties of this Create2dModelTrainingJobReq.
         :type voice_properties: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
@@ -415,7 +415,7 @@ class Create2dModelTrainingJobReq:
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this Create2dModelTrainingJobReq.
+        r"""Gets the supported_service of this Create2dModelTrainingJobReq.
 
         该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
@@ -426,7 +426,7 @@ class Create2dModelTrainingJobReq:
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this Create2dModelTrainingJobReq.
+        r"""Sets the supported_service of this Create2dModelTrainingJobReq.
 
         该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 

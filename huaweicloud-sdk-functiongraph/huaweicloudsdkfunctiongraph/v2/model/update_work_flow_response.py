@@ -40,7 +40,7 @@ class UpdateWorkFlowResponse(SdkResponse):
     }
 
     def __init__(self, enable_stream_response=None, id=None, workflow_urn=None, name=None, description=None, created_time=None, updated_time=None, created_by=None):
-        """UpdateWorkFlowResponse
+        r"""UpdateWorkFlowResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def enable_stream_response(self):
-        """Gets the enable_stream_response of this UpdateWorkFlowResponse.
+        r"""Gets the enable_stream_response of this UpdateWorkFlowResponse.
 
         函数流是否返回流式数据
 
@@ -104,7 +104,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @enable_stream_response.setter
     def enable_stream_response(self, enable_stream_response):
-        """Sets the enable_stream_response of this UpdateWorkFlowResponse.
+        r"""Sets the enable_stream_response of this UpdateWorkFlowResponse.
 
         函数流是否返回流式数据
 
@@ -115,7 +115,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateWorkFlowResponse.
+        r"""Gets the id of this UpdateWorkFlowResponse.
 
         唯一标识ID，流程定义ID
 
@@ -126,7 +126,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateWorkFlowResponse.
+        r"""Sets the id of this UpdateWorkFlowResponse.
 
         唯一标识ID，流程定义ID
 
@@ -137,7 +137,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this UpdateWorkFlowResponse.
+        r"""Gets the workflow_urn of this UpdateWorkFlowResponse.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -148,7 +148,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this UpdateWorkFlowResponse.
+        r"""Sets the workflow_urn of this UpdateWorkFlowResponse.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -159,7 +159,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateWorkFlowResponse.
+        r"""Gets the name of this UpdateWorkFlowResponse.
 
         流程定义名称
 
@@ -170,7 +170,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateWorkFlowResponse.
+        r"""Sets the name of this UpdateWorkFlowResponse.
 
         流程定义名称
 
@@ -181,7 +181,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateWorkFlowResponse.
+        r"""Gets the description of this UpdateWorkFlowResponse.
 
         流程定义描述
 
@@ -192,7 +192,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateWorkFlowResponse.
+        r"""Sets the description of this UpdateWorkFlowResponse.
 
         流程定义描述
 
@@ -203,7 +203,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateWorkFlowResponse.
+        r"""Gets the created_time of this UpdateWorkFlowResponse.
 
         流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -214,7 +214,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateWorkFlowResponse.
+        r"""Sets the created_time of this UpdateWorkFlowResponse.
 
         流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -225,7 +225,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this UpdateWorkFlowResponse.
+        r"""Gets the updated_time of this UpdateWorkFlowResponse.
 
         流程修改时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -236,7 +236,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this UpdateWorkFlowResponse.
+        r"""Sets the updated_time of this UpdateWorkFlowResponse.
 
         流程修改时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -247,7 +247,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this UpdateWorkFlowResponse.
+        r"""Gets the created_by of this UpdateWorkFlowResponse.
 
         流程创建者
 
@@ -258,7 +258,7 @@ class UpdateWorkFlowResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this UpdateWorkFlowResponse.
+        r"""Sets the created_by of this UpdateWorkFlowResponse.
 
         流程创建者
 

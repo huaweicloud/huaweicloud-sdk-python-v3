@@ -35,7 +35,7 @@ class RunSyncCommandJob:
     }
 
     def __init__(self, phone_id=None, job_id=None, status=None, error_code=None, error_msg=None, execute_msg=None):
-        """RunSyncCommandJob
+        r"""RunSyncCommandJob
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RunSyncCommandJob:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this RunSyncCommandJob.
+        r"""Gets the phone_id of this RunSyncCommandJob.
 
         云手机的唯一标识，云手机相关任务包含此字段。
 
@@ -89,7 +89,7 @@ class RunSyncCommandJob:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this RunSyncCommandJob.
+        r"""Sets the phone_id of this RunSyncCommandJob.
 
         云手机的唯一标识，云手机相关任务包含此字段。
 
@@ -100,7 +100,7 @@ class RunSyncCommandJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunSyncCommandJob.
+        r"""Gets the job_id of this RunSyncCommandJob.
 
         任务的唯一标识。
 
@@ -111,7 +111,7 @@ class RunSyncCommandJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunSyncCommandJob.
+        r"""Sets the job_id of this RunSyncCommandJob.
 
         任务的唯一标识。
 
@@ -122,7 +122,7 @@ class RunSyncCommandJob:
 
     @property
     def status(self):
-        """Gets the status of this RunSyncCommandJob.
+        r"""Gets the status of this RunSyncCommandJob.
 
         任务状态 - 2：成功 - 1：运行中 - -1：失败
 
@@ -133,7 +133,7 @@ class RunSyncCommandJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RunSyncCommandJob.
+        r"""Sets the status of this RunSyncCommandJob.
 
         任务状态 - 2：成功 - 1：运行中 - -1：失败
 
@@ -144,7 +144,7 @@ class RunSyncCommandJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunSyncCommandJob.
+        r"""Gets the error_code of this RunSyncCommandJob.
 
         任务错误码。
 
@@ -155,7 +155,7 @@ class RunSyncCommandJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunSyncCommandJob.
+        r"""Sets the error_code of this RunSyncCommandJob.
 
         任务错误码。
 
@@ -166,7 +166,7 @@ class RunSyncCommandJob:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunSyncCommandJob.
+        r"""Gets the error_msg of this RunSyncCommandJob.
 
         任务错误码说明。
 
@@ -177,7 +177,7 @@ class RunSyncCommandJob:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunSyncCommandJob.
+        r"""Sets the error_msg of this RunSyncCommandJob.
 
         任务错误码说明。
 
@@ -188,7 +188,7 @@ class RunSyncCommandJob:
 
     @property
     def execute_msg(self):
-        """Gets the execute_msg of this RunSyncCommandJob.
+        r"""Gets the execute_msg of this RunSyncCommandJob.
 
         任务执行返回内容，最长1024字节。
 
@@ -199,7 +199,7 @@ class RunSyncCommandJob:
 
     @execute_msg.setter
     def execute_msg(self, execute_msg):
-        """Sets the execute_msg of this RunSyncCommandJob.
+        r"""Sets the execute_msg of this RunSyncCommandJob.
 
         任务执行返回内容，最长1024字节。
 

@@ -31,7 +31,7 @@ class ShowDbObjectTemplateResultRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, type=None, file_export_object_level=None):
-        """ShowDbObjectTemplateResultRequest
+        r"""ShowDbObjectTemplateResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDbObjectTemplateResultRequest.
+        r"""Gets the job_id of this ShowDbObjectTemplateResultRequest.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDbObjectTemplateResultRequest.
+        r"""Sets the job_id of this ShowDbObjectTemplateResultRequest.
 
         任务ID。
 
@@ -84,7 +84,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDbObjectTemplateResultRequest.
+        r"""Gets the x_language of this ShowDbObjectTemplateResultRequest.
 
         请求语言类型。
 
@@ -95,7 +95,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDbObjectTemplateResultRequest.
+        r"""Sets the x_language of this ShowDbObjectTemplateResultRequest.
 
         请求语言类型。
 
@@ -106,7 +106,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowDbObjectTemplateResultRequest.
+        r"""Gets the type of this ShowDbObjectTemplateResultRequest.
 
         导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。 - change: 获取新增和删除的对象结果（当再编辑时使用）
 
@@ -117,7 +117,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDbObjectTemplateResultRequest.
+        r"""Sets the type of this ShowDbObjectTemplateResultRequest.
 
         导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。 - change: 获取新增和删除的对象结果（当再编辑时使用）
 
@@ -128,7 +128,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @property
     def file_export_object_level(self):
-        """Gets the file_export_object_level of this ShowDbObjectTemplateResultRequest.
+        r"""Gets the file_export_object_level of this ShowDbObjectTemplateResultRequest.
 
         默认为空。当进行列加工导入时，查询列加工导入进度，取值column。
 
@@ -139,7 +139,7 @@ class ShowDbObjectTemplateResultRequest:
 
     @file_export_object_level.setter
     def file_export_object_level(self, file_export_object_level):
-        """Sets the file_export_object_level of this ShowDbObjectTemplateResultRequest.
+        r"""Sets the file_export_object_level of this ShowDbObjectTemplateResultRequest.
 
         默认为空。当进行列加工导入时，查询列加工导入进度，取值column。
 

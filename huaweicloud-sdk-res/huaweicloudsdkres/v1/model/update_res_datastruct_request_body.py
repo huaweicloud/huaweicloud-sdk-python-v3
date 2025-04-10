@@ -29,7 +29,7 @@ class UpdateResDatastructRequestBody:
     }
 
     def __init__(self, name=None, data_config=None, specs_config=None):
-        """UpdateResDatastructRequestBody
+        r"""UpdateResDatastructRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateResDatastructRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateResDatastructRequestBody.
+        r"""Gets the name of this UpdateResDatastructRequestBody.
 
         数据源名称:，1-64位字母、数字、下划线、中划线组合。
 
@@ -65,7 +65,7 @@ class UpdateResDatastructRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateResDatastructRequestBody.
+        r"""Sets the name of this UpdateResDatastructRequestBody.
 
         数据源名称:，1-64位字母、数字、下划线、中划线组合。
 
@@ -76,7 +76,7 @@ class UpdateResDatastructRequestBody:
 
     @property
     def data_config(self):
-        """Gets the data_config of this UpdateResDatastructRequestBody.
+        r"""Gets the data_config of this UpdateResDatastructRequestBody.
 
         :return: The data_config of this UpdateResDatastructRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -85,7 +85,7 @@ class UpdateResDatastructRequestBody:
 
     @data_config.setter
     def data_config(self, data_config):
-        """Sets the data_config of this UpdateResDatastructRequestBody.
+        r"""Sets the data_config of this UpdateResDatastructRequestBody.
 
         :param data_config: The data_config of this UpdateResDatastructRequestBody.
         :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -94,7 +94,7 @@ class UpdateResDatastructRequestBody:
 
     @property
     def specs_config(self):
-        """Gets the specs_config of this UpdateResDatastructRequestBody.
+        r"""Gets the specs_config of this UpdateResDatastructRequestBody.
 
         :return: The specs_config of this UpdateResDatastructRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -103,7 +103,7 @@ class UpdateResDatastructRequestBody:
 
     @specs_config.setter
     def specs_config(self, specs_config):
-        """Sets the specs_config of this UpdateResDatastructRequestBody.
+        r"""Sets the specs_config of this UpdateResDatastructRequestBody.
 
         :param specs_config: The specs_config of this UpdateResDatastructRequestBody.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`

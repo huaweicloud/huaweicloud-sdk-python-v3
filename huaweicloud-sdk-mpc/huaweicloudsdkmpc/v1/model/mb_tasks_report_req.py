@@ -33,7 +33,7 @@ class MbTasksReportReq:
     }
 
     def __init__(self, task_id=None, status=None, task_name=None, retry=None, parameter=None):
-        """MbTasksReportReq
+        r"""MbTasksReportReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MbTasksReportReq:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MbTasksReportReq.
+        r"""Gets the task_id of this MbTasksReportReq.
 
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 
@@ -82,7 +82,7 @@ class MbTasksReportReq:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MbTasksReportReq.
+        r"""Sets the task_id of this MbTasksReportReq.
 
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 
@@ -93,7 +93,7 @@ class MbTasksReportReq:
 
     @property
     def status(self):
-        """Gets the status of this MbTasksReportReq.
+        r"""Gets the status of this MbTasksReportReq.
 
         任务执行状态。 取值为RUNNING/FINISHED/FAILED。 
 
@@ -104,7 +104,7 @@ class MbTasksReportReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MbTasksReportReq.
+        r"""Sets the status of this MbTasksReportReq.
 
         任务执行状态。 取值为RUNNING/FINISHED/FAILED。 
 
@@ -115,7 +115,7 @@ class MbTasksReportReq:
 
     @property
     def task_name(self):
-        """Gets the task_name of this MbTasksReportReq.
+        r"""Gets the task_name of this MbTasksReportReq.
 
         任务名称。 取值为RESET_TRACKS/MERGE_CHANNELS。 
 
@@ -126,7 +126,7 @@ class MbTasksReportReq:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this MbTasksReportReq.
+        r"""Sets the task_name of this MbTasksReportReq.
 
         任务名称。 取值为RESET_TRACKS/MERGE_CHANNELS。 
 
@@ -137,7 +137,7 @@ class MbTasksReportReq:
 
     @property
     def retry(self):
-        """Gets the retry of this MbTasksReportReq.
+        r"""Gets the retry of this MbTasksReportReq.
 
         失败任务是否重试。 
 
@@ -148,7 +148,7 @@ class MbTasksReportReq:
 
     @retry.setter
     def retry(self, retry):
-        """Sets the retry of this MbTasksReportReq.
+        r"""Sets the retry of this MbTasksReportReq.
 
         失败任务是否重试。 
 
@@ -159,7 +159,7 @@ class MbTasksReportReq:
 
     @property
     def parameter(self):
-        """Gets the parameter of this MbTasksReportReq.
+        r"""Gets the parameter of this MbTasksReportReq.
 
         :return: The parameter of this MbTasksReportReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`
@@ -168,7 +168,7 @@ class MbTasksReportReq:
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this MbTasksReportReq.
+        r"""Sets the parameter of this MbTasksReportReq.
 
         :param parameter: The parameter of this MbTasksReportReq.
         :type parameter: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`

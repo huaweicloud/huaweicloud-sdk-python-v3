@@ -28,7 +28,7 @@ class CreateAccountRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """CreateAccountRequest
+        r"""CreateAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAccountRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CreateAccountRequest.
+        r"""Gets the x_security_token of this CreateAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -62,7 +62,7 @@ class CreateAccountRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CreateAccountRequest.
+        r"""Sets the x_security_token of this CreateAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -73,7 +73,7 @@ class CreateAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAccountRequest.
+        r"""Gets the body of this CreateAccountRequest.
 
         :return: The body of this CreateAccountRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateAccountReqBody`
@@ -82,7 +82,7 @@ class CreateAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAccountRequest.
+        r"""Sets the body of this CreateAccountRequest.
 
         :param body: The body of this CreateAccountRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.CreateAccountReqBody`

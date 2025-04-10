@@ -25,7 +25,7 @@ class ShowNetworkInstanceRequest:
     }
 
     def __init__(self, id=None):
-        """ShowNetworkInstanceRequest
+        r"""ShowNetworkInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNetworkInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowNetworkInstanceRequest.
+        r"""Gets the id of this ShowNetworkInstanceRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowNetworkInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNetworkInstanceRequest.
+        r"""Sets the id of this ShowNetworkInstanceRequest.
 
         实例ID。
 

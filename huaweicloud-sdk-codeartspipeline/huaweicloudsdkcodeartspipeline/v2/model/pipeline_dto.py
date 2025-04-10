@@ -49,7 +49,7 @@ class PipelineDTO:
     }
 
     def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None, group_id=None, id=None, concurrency_control=None):
-        """PipelineDTO
+        r"""PipelineDTO
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class PipelineDTO:
 
     @property
     def name(self):
-        """Gets the name of this PipelineDTO.
+        r"""Gets the name of this PipelineDTO.
 
         流水线名称
 
@@ -135,7 +135,7 @@ class PipelineDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineDTO.
+        r"""Sets the name of this PipelineDTO.
 
         流水线名称
 
@@ -146,7 +146,7 @@ class PipelineDTO:
 
     @property
     def description(self):
-        """Gets the description of this PipelineDTO.
+        r"""Gets the description of this PipelineDTO.
 
         流水线描述
 
@@ -157,7 +157,7 @@ class PipelineDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineDTO.
+        r"""Sets the description of this PipelineDTO.
 
         流水线描述
 
@@ -168,7 +168,7 @@ class PipelineDTO:
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this PipelineDTO.
+        r"""Gets the is_publish of this PipelineDTO.
 
         是否为发布流水线
 
@@ -179,7 +179,7 @@ class PipelineDTO:
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this PipelineDTO.
+        r"""Sets the is_publish of this PipelineDTO.
 
         是否为发布流水线
 
@@ -190,7 +190,7 @@ class PipelineDTO:
 
     @property
     def sources(self):
-        """Gets the sources of this PipelineDTO.
+        r"""Gets the sources of this PipelineDTO.
 
         流水线源
 
@@ -201,7 +201,7 @@ class PipelineDTO:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this PipelineDTO.
+        r"""Sets the sources of this PipelineDTO.
 
         流水线源
 
@@ -212,7 +212,7 @@ class PipelineDTO:
 
     @property
     def variables(self):
-        """Gets the variables of this PipelineDTO.
+        r"""Gets the variables of this PipelineDTO.
 
         流水线自定义全局变量
 
@@ -223,7 +223,7 @@ class PipelineDTO:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this PipelineDTO.
+        r"""Sets the variables of this PipelineDTO.
 
         流水线自定义全局变量
 
@@ -234,7 +234,7 @@ class PipelineDTO:
 
     @property
     def schedules(self):
-        """Gets the schedules of this PipelineDTO.
+        r"""Gets the schedules of this PipelineDTO.
 
         流水线定时执行配置
 
@@ -245,7 +245,7 @@ class PipelineDTO:
 
     @schedules.setter
     def schedules(self, schedules):
-        """Sets the schedules of this PipelineDTO.
+        r"""Sets the schedules of this PipelineDTO.
 
         流水线定时执行配置
 
@@ -256,7 +256,7 @@ class PipelineDTO:
 
     @property
     def triggers(self):
-        """Gets the triggers of this PipelineDTO.
+        r"""Gets the triggers of this PipelineDTO.
 
         流水线代码事件触发配置
 
@@ -267,7 +267,7 @@ class PipelineDTO:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this PipelineDTO.
+        r"""Sets the triggers of this PipelineDTO.
 
         流水线代码事件触发配置
 
@@ -278,7 +278,7 @@ class PipelineDTO:
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this PipelineDTO.
+        r"""Gets the manifest_version of this PipelineDTO.
 
         流水线结构定义版本，新版默认为3.0
 
@@ -289,7 +289,7 @@ class PipelineDTO:
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this PipelineDTO.
+        r"""Sets the manifest_version of this PipelineDTO.
 
         流水线结构定义版本，新版默认为3.0
 
@@ -300,7 +300,7 @@ class PipelineDTO:
 
     @property
     def definition(self):
-        """Gets the definition of this PipelineDTO.
+        r"""Gets the definition of this PipelineDTO.
 
         流水线结构定义
 
@@ -311,7 +311,7 @@ class PipelineDTO:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this PipelineDTO.
+        r"""Sets the definition of this PipelineDTO.
 
         流水线结构定义
 
@@ -322,7 +322,7 @@ class PipelineDTO:
 
     @property
     def project_name(self):
-        """Gets the project_name of this PipelineDTO.
+        r"""Gets the project_name of this PipelineDTO.
 
         项目名称
 
@@ -333,7 +333,7 @@ class PipelineDTO:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this PipelineDTO.
+        r"""Sets the project_name of this PipelineDTO.
 
         项目名称
 
@@ -344,7 +344,7 @@ class PipelineDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PipelineDTO.
+        r"""Gets the group_id of this PipelineDTO.
 
         流水线组ID
 
@@ -355,7 +355,7 @@ class PipelineDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PipelineDTO.
+        r"""Sets the group_id of this PipelineDTO.
 
         流水线组ID
 
@@ -366,7 +366,7 @@ class PipelineDTO:
 
     @property
     def id(self):
-        """Gets the id of this PipelineDTO.
+        r"""Gets the id of this PipelineDTO.
 
         若为复制场景，则为原流水线ID
 
@@ -377,7 +377,7 @@ class PipelineDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineDTO.
+        r"""Sets the id of this PipelineDTO.
 
         若为复制场景，则为原流水线ID
 
@@ -388,7 +388,7 @@ class PipelineDTO:
 
     @property
     def concurrency_control(self):
-        """Gets the concurrency_control of this PipelineDTO.
+        r"""Gets the concurrency_control of this PipelineDTO.
 
         :return: The concurrency_control of this PipelineDTO.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineConcurrencyMgmt`
@@ -397,7 +397,7 @@ class PipelineDTO:
 
     @concurrency_control.setter
     def concurrency_control(self, concurrency_control):
-        """Sets the concurrency_control of this PipelineDTO.
+        r"""Sets the concurrency_control of this PipelineDTO.
 
         :param concurrency_control: The concurrency_control of this PipelineDTO.
         :type concurrency_control: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineConcurrencyMgmt`

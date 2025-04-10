@@ -27,7 +27,7 @@ class KbqaAnswers:
     }
 
     def __init__(self, answer=None, score=None):
-        """KbqaAnswers
+        r"""KbqaAnswers
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KbqaAnswers:
 
     @property
     def answer(self):
-        """Gets the answer of this KbqaAnswers.
+        r"""Gets the answer of this KbqaAnswers.
 
         答案。
 
@@ -59,7 +59,7 @@ class KbqaAnswers:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this KbqaAnswers.
+        r"""Sets the answer of this KbqaAnswers.
 
         答案。
 
@@ -70,7 +70,7 @@ class KbqaAnswers:
 
     @property
     def score(self):
-        """Gets the score of this KbqaAnswers.
+        r"""Gets the score of this KbqaAnswers.
 
         答案评分。
 
@@ -81,7 +81,7 @@ class KbqaAnswers:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this KbqaAnswers.
+        r"""Sets the score of this KbqaAnswers.
 
         答案评分。
 

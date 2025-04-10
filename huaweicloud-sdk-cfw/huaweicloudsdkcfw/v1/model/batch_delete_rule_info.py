@@ -27,7 +27,7 @@ class BatchDeleteRuleInfo:
     }
 
     def __init__(self, name=None, id=None):
-        """BatchDeleteRuleInfo
+        r"""BatchDeleteRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteRuleInfo:
 
     @property
     def name(self):
-        """Gets the name of this BatchDeleteRuleInfo.
+        r"""Gets the name of this BatchDeleteRuleInfo.
 
         批量删除的acl的名称
 
@@ -61,7 +61,7 @@ class BatchDeleteRuleInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchDeleteRuleInfo.
+        r"""Sets the name of this BatchDeleteRuleInfo.
 
         批量删除的acl的名称
 
@@ -72,7 +72,7 @@ class BatchDeleteRuleInfo:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteRuleInfo.
+        r"""Gets the id of this BatchDeleteRuleInfo.
 
         批量删除的acl的id
 
@@ -83,7 +83,7 @@ class BatchDeleteRuleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteRuleInfo.
+        r"""Sets the id of this BatchDeleteRuleInfo.
 
         批量删除的acl的id
 

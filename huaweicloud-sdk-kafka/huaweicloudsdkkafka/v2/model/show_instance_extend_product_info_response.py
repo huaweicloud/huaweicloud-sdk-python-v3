@@ -28,7 +28,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
     }
 
     def __init__(self, hourly=None, monthly=None):
-        """ShowInstanceExtendProductInfoResponse
+        r"""ShowInstanceExtendProductInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
 
     @property
     def hourly(self):
-        """Gets the hourly of this ShowInstanceExtendProductInfoResponse.
+        r"""Gets the hourly of this ShowInstanceExtendProductInfoResponse.
 
         表示[按需付费的](tag:hws,hws_hk,hws_ocb,ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)产品列表。
 
@@ -62,7 +62,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
 
     @hourly.setter
     def hourly(self, hourly):
-        """Sets the hourly of this ShowInstanceExtendProductInfoResponse.
+        r"""Sets the hourly of this ShowInstanceExtendProductInfoResponse.
 
         表示[按需付费的](tag:hws,hws_hk,hws_ocb,ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)产品列表。
 
@@ -73,7 +73,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
 
     @property
     def monthly(self):
-        """Gets the monthly of this ShowInstanceExtendProductInfoResponse.
+        r"""Gets the monthly of this ShowInstanceExtendProductInfoResponse.
 
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
@@ -84,7 +84,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
 
     @monthly.setter
     def monthly(self, monthly):
-        """Sets the monthly of this ShowInstanceExtendProductInfoResponse.
+        r"""Sets the monthly of this ShowInstanceExtendProductInfoResponse.
 
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 

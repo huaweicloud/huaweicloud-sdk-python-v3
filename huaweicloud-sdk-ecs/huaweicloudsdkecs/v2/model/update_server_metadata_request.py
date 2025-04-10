@@ -27,7 +27,7 @@ class UpdateServerMetadataRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateServerMetadataRequest
+        r"""UpdateServerMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateServerMetadataRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateServerMetadataRequest.
+        r"""Gets the server_id of this UpdateServerMetadataRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class UpdateServerMetadataRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateServerMetadataRequest.
+        r"""Sets the server_id of this UpdateServerMetadataRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class UpdateServerMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerMetadataRequest.
+        r"""Gets the body of this UpdateServerMetadataRequest.
 
         :return: The body of this UpdateServerMetadataRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`
@@ -80,7 +80,7 @@ class UpdateServerMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerMetadataRequest.
+        r"""Sets the body of this UpdateServerMetadataRequest.
 
         :param body: The body of this UpdateServerMetadataRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`

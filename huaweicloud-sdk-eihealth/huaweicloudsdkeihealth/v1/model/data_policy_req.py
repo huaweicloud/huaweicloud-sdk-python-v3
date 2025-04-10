@@ -25,7 +25,7 @@ class DataPolicyReq:
     }
 
     def __init__(self, delete_policy=None):
-        """DataPolicyReq
+        r"""DataPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DataPolicyReq:
 
     @property
     def delete_policy(self):
-        """Gets the delete_policy of this DataPolicyReq.
+        r"""Gets the delete_policy of this DataPolicyReq.
 
         :return: The delete_policy of this DataPolicyReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PolicyType`
@@ -51,7 +51,7 @@ class DataPolicyReq:
 
     @delete_policy.setter
     def delete_policy(self, delete_policy):
-        """Sets the delete_policy of this DataPolicyReq.
+        r"""Sets the delete_policy of this DataPolicyReq.
 
         :param delete_policy: The delete_policy of this DataPolicyReq.
         :type delete_policy: :class:`huaweicloudsdkeihealth.v1.PolicyType`

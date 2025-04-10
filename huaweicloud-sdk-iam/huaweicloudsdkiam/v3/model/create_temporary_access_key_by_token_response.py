@@ -26,7 +26,7 @@ class CreateTemporaryAccessKeyByTokenResponse(SdkResponse):
     }
 
     def __init__(self, credential=None):
-        """CreateTemporaryAccessKeyByTokenResponse
+        r"""CreateTemporaryAccessKeyByTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTemporaryAccessKeyByTokenResponse(SdkResponse):
 
     @property
     def credential(self):
-        """Gets the credential of this CreateTemporaryAccessKeyByTokenResponse.
+        r"""Gets the credential of this CreateTemporaryAccessKeyByTokenResponse.
 
         :return: The credential of this CreateTemporaryAccessKeyByTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Credential`
@@ -53,7 +53,7 @@ class CreateTemporaryAccessKeyByTokenResponse(SdkResponse):
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this CreateTemporaryAccessKeyByTokenResponse.
+        r"""Sets the credential of this CreateTemporaryAccessKeyByTokenResponse.
 
         :param credential: The credential of this CreateTemporaryAccessKeyByTokenResponse.
         :type credential: :class:`huaweicloudsdkiam.v3.Credential`

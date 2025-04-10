@@ -43,7 +43,7 @@ class AssetExtraMeta:
     }
 
     def __init__(self, human_model_meta=None, voice_model_meta=None, ppt_meta=None, animation_meta=None, scene_meta=None, material_meta=None, human_model_2d_meta=None, image_meta=None, video_meta=None, audio_meta=None):
-        """AssetExtraMeta
+        r"""AssetExtraMeta
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AssetExtraMeta:
 
     @property
     def human_model_meta(self):
-        """Gets the human_model_meta of this AssetExtraMeta.
+        r"""Gets the human_model_meta of this AssetExtraMeta.
 
         :return: The human_model_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HumanModelAssetMeta`
@@ -115,7 +115,7 @@ class AssetExtraMeta:
 
     @human_model_meta.setter
     def human_model_meta(self, human_model_meta):
-        """Sets the human_model_meta of this AssetExtraMeta.
+        r"""Sets the human_model_meta of this AssetExtraMeta.
 
         :param human_model_meta: The human_model_meta of this AssetExtraMeta.
         :type human_model_meta: :class:`huaweicloudsdkmetastudio.v1.HumanModelAssetMeta`
@@ -124,7 +124,7 @@ class AssetExtraMeta:
 
     @property
     def voice_model_meta(self):
-        """Gets the voice_model_meta of this AssetExtraMeta.
+        r"""Gets the voice_model_meta of this AssetExtraMeta.
 
         :return: The voice_model_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceModelAssetMeta`
@@ -133,7 +133,7 @@ class AssetExtraMeta:
 
     @voice_model_meta.setter
     def voice_model_meta(self, voice_model_meta):
-        """Sets the voice_model_meta of this AssetExtraMeta.
+        r"""Sets the voice_model_meta of this AssetExtraMeta.
 
         :param voice_model_meta: The voice_model_meta of this AssetExtraMeta.
         :type voice_model_meta: :class:`huaweicloudsdkmetastudio.v1.VoiceModelAssetMeta`
@@ -142,7 +142,7 @@ class AssetExtraMeta:
 
     @property
     def ppt_meta(self):
-        """Gets the ppt_meta of this AssetExtraMeta.
+        r"""Gets the ppt_meta of this AssetExtraMeta.
 
         :return: The ppt_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PPTAssetMeta`
@@ -151,7 +151,7 @@ class AssetExtraMeta:
 
     @ppt_meta.setter
     def ppt_meta(self, ppt_meta):
-        """Sets the ppt_meta of this AssetExtraMeta.
+        r"""Sets the ppt_meta of this AssetExtraMeta.
 
         :param ppt_meta: The ppt_meta of this AssetExtraMeta.
         :type ppt_meta: :class:`huaweicloudsdkmetastudio.v1.PPTAssetMeta`
@@ -160,7 +160,7 @@ class AssetExtraMeta:
 
     @property
     def animation_meta(self):
-        """Gets the animation_meta of this AssetExtraMeta.
+        r"""Gets the animation_meta of this AssetExtraMeta.
 
         :return: The animation_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AnimationAssetMeta`
@@ -169,7 +169,7 @@ class AssetExtraMeta:
 
     @animation_meta.setter
     def animation_meta(self, animation_meta):
-        """Sets the animation_meta of this AssetExtraMeta.
+        r"""Sets the animation_meta of this AssetExtraMeta.
 
         :param animation_meta: The animation_meta of this AssetExtraMeta.
         :type animation_meta: :class:`huaweicloudsdkmetastudio.v1.AnimationAssetMeta`
@@ -178,7 +178,7 @@ class AssetExtraMeta:
 
     @property
     def scene_meta(self):
-        """Gets the scene_meta of this AssetExtraMeta.
+        r"""Gets the scene_meta of this AssetExtraMeta.
 
         :return: The scene_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SceneAssetMeta`
@@ -187,7 +187,7 @@ class AssetExtraMeta:
 
     @scene_meta.setter
     def scene_meta(self, scene_meta):
-        """Sets the scene_meta of this AssetExtraMeta.
+        r"""Sets the scene_meta of this AssetExtraMeta.
 
         :param scene_meta: The scene_meta of this AssetExtraMeta.
         :type scene_meta: :class:`huaweicloudsdkmetastudio.v1.SceneAssetMeta`
@@ -196,7 +196,7 @@ class AssetExtraMeta:
 
     @property
     def material_meta(self):
-        """Gets the material_meta of this AssetExtraMeta.
+        r"""Gets the material_meta of this AssetExtraMeta.
 
         :return: The material_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.MaterialAssetMeta`
@@ -205,7 +205,7 @@ class AssetExtraMeta:
 
     @material_meta.setter
     def material_meta(self, material_meta):
-        """Sets the material_meta of this AssetExtraMeta.
+        r"""Sets the material_meta of this AssetExtraMeta.
 
         :param material_meta: The material_meta of this AssetExtraMeta.
         :type material_meta: :class:`huaweicloudsdkmetastudio.v1.MaterialAssetMeta`
@@ -214,7 +214,7 @@ class AssetExtraMeta:
 
     @property
     def human_model_2d_meta(self):
-        """Gets the human_model_2d_meta of this AssetExtraMeta.
+        r"""Gets the human_model_2d_meta of this AssetExtraMeta.
 
         :return: The human_model_2d_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
@@ -223,7 +223,7 @@ class AssetExtraMeta:
 
     @human_model_2d_meta.setter
     def human_model_2d_meta(self, human_model_2d_meta):
-        """Sets the human_model_2d_meta of this AssetExtraMeta.
+        r"""Sets the human_model_2d_meta of this AssetExtraMeta.
 
         :param human_model_2d_meta: The human_model_2d_meta of this AssetExtraMeta.
         :type human_model_2d_meta: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
@@ -232,7 +232,7 @@ class AssetExtraMeta:
 
     @property
     def image_meta(self):
-        """Gets the image_meta of this AssetExtraMeta.
+        r"""Gets the image_meta of this AssetExtraMeta.
 
         :return: The image_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ImageAssetMeta`
@@ -241,7 +241,7 @@ class AssetExtraMeta:
 
     @image_meta.setter
     def image_meta(self, image_meta):
-        """Sets the image_meta of this AssetExtraMeta.
+        r"""Sets the image_meta of this AssetExtraMeta.
 
         :param image_meta: The image_meta of this AssetExtraMeta.
         :type image_meta: :class:`huaweicloudsdkmetastudio.v1.ImageAssetMeta`
@@ -250,7 +250,7 @@ class AssetExtraMeta:
 
     @property
     def video_meta(self):
-        """Gets the video_meta of this AssetExtraMeta.
+        r"""Gets the video_meta of this AssetExtraMeta.
 
         :return: The video_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoAssetMeta`
@@ -259,7 +259,7 @@ class AssetExtraMeta:
 
     @video_meta.setter
     def video_meta(self, video_meta):
-        """Sets the video_meta of this AssetExtraMeta.
+        r"""Sets the video_meta of this AssetExtraMeta.
 
         :param video_meta: The video_meta of this AssetExtraMeta.
         :type video_meta: :class:`huaweicloudsdkmetastudio.v1.VideoAssetMeta`
@@ -268,7 +268,7 @@ class AssetExtraMeta:
 
     @property
     def audio_meta(self):
-        """Gets the audio_meta of this AssetExtraMeta.
+        r"""Gets the audio_meta of this AssetExtraMeta.
 
         :return: The audio_meta of this AssetExtraMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AudioAssetMeta`
@@ -277,7 +277,7 @@ class AssetExtraMeta:
 
     @audio_meta.setter
     def audio_meta(self, audio_meta):
-        """Sets the audio_meta of this AssetExtraMeta.
+        r"""Sets the audio_meta of this AssetExtraMeta.
 
         :param audio_meta: The audio_meta of this AssetExtraMeta.
         :type audio_meta: :class:`huaweicloudsdkmetastudio.v1.AudioAssetMeta`

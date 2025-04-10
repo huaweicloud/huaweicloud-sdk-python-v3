@@ -31,7 +31,7 @@ class TransformMetrics:
     }
 
     def __init__(self, time_span=None, tags=None, metrics=None, limit=None):
-        """TransformMetrics
+        r"""TransformMetrics
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class TransformMetrics:
 
     @property
     def time_span(self):
-        """Gets the time_span of this TransformMetrics.
+        r"""Gets the time_span of this TransformMetrics.
 
         :return: The time_span of this TransformMetrics.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
@@ -70,7 +70,7 @@ class TransformMetrics:
 
     @time_span.setter
     def time_span(self, time_span):
-        """Sets the time_span of this TransformMetrics.
+        r"""Sets the time_span of this TransformMetrics.
 
         :param time_span: The time_span of this TransformMetrics.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
@@ -79,7 +79,7 @@ class TransformMetrics:
 
     @property
     def tags(self):
-        """Gets the tags of this TransformMetrics.
+        r"""Gets the tags of this TransformMetrics.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -90,7 +90,7 @@ class TransformMetrics:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TransformMetrics.
+        r"""Sets the tags of this TransformMetrics.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -101,7 +101,7 @@ class TransformMetrics:
 
     @property
     def metrics(self):
-        """Gets the metrics of this TransformMetrics.
+        r"""Gets the metrics of this TransformMetrics.
 
         查询的测量指标列表
 
@@ -112,7 +112,7 @@ class TransformMetrics:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this TransformMetrics.
+        r"""Sets the metrics of this TransformMetrics.
 
         查询的测量指标列表
 
@@ -123,7 +123,7 @@ class TransformMetrics:
 
     @property
     def limit(self):
-        """Gets the limit of this TransformMetrics.
+        r"""Gets the limit of this TransformMetrics.
 
         返回值个数限制
 
@@ -134,7 +134,7 @@ class TransformMetrics:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this TransformMetrics.
+        r"""Sets the limit of this TransformMetrics.
 
         返回值个数限制
 

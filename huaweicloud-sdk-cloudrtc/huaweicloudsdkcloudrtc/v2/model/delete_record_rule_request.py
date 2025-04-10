@@ -35,7 +35,7 @@ class DeleteRecordRuleRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, rule_id=None):
-        """DeleteRecordRuleRequest
+        r"""DeleteRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteRecordRuleRequest.
+        r"""Gets the content_type of this DeleteRecordRuleRequest.
 
         内容类型。
 
@@ -86,7 +86,7 @@ class DeleteRecordRuleRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteRecordRuleRequest.
+        r"""Sets the content_type of this DeleteRecordRuleRequest.
 
         内容类型。
 
@@ -97,7 +97,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeleteRecordRuleRequest.
+        r"""Gets the authorization of this DeleteRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -108,7 +108,7 @@ class DeleteRecordRuleRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeleteRecordRuleRequest.
+        r"""Sets the authorization of this DeleteRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -119,7 +119,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this DeleteRecordRuleRequest.
+        r"""Gets the x_sdk_date of this DeleteRecordRuleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -130,7 +130,7 @@ class DeleteRecordRuleRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this DeleteRecordRuleRequest.
+        r"""Sets the x_sdk_date of this DeleteRecordRuleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -141,7 +141,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this DeleteRecordRuleRequest.
+        r"""Gets the x_project_id of this DeleteRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -152,7 +152,7 @@ class DeleteRecordRuleRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this DeleteRecordRuleRequest.
+        r"""Sets the x_project_id of this DeleteRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -163,7 +163,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteRecordRuleRequest.
+        r"""Gets the app_id of this DeleteRecordRuleRequest.
 
         应用id
 
@@ -174,7 +174,7 @@ class DeleteRecordRuleRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteRecordRuleRequest.
+        r"""Sets the app_id of this DeleteRecordRuleRequest.
 
         应用id
 
@@ -185,7 +185,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteRecordRuleRequest.
+        r"""Gets the rule_id of this DeleteRecordRuleRequest.
 
         规则id
 
@@ -196,7 +196,7 @@ class DeleteRecordRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteRecordRuleRequest.
+        r"""Sets the rule_id of this DeleteRecordRuleRequest.
 
         规则id
 

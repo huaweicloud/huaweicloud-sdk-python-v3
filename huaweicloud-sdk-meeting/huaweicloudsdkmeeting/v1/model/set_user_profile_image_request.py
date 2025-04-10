@@ -29,7 +29,7 @@ class SetUserProfileImageRequest:
     }
 
     def __init__(self, x_request_id=None, user_id=None, body=None):
-        """SetUserProfileImageRequest
+        r"""SetUserProfileImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetUserProfileImageRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SetUserProfileImageRequest.
+        r"""Gets the x_request_id of this SetUserProfileImageRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class SetUserProfileImageRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SetUserProfileImageRequest.
+        r"""Sets the x_request_id of this SetUserProfileImageRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class SetUserProfileImageRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this SetUserProfileImageRequest.
+        r"""Gets the user_id of this SetUserProfileImageRequest.
 
         设置头像的企业用户id
 
@@ -89,7 +89,7 @@ class SetUserProfileImageRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this SetUserProfileImageRequest.
+        r"""Sets the user_id of this SetUserProfileImageRequest.
 
         设置头像的企业用户id
 
@@ -100,7 +100,7 @@ class SetUserProfileImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetUserProfileImageRequest.
+        r"""Gets the body of this SetUserProfileImageRequest.
 
         :return: The body of this SetUserProfileImageRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetUserProfileImageRequestBody`
@@ -109,7 +109,7 @@ class SetUserProfileImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetUserProfileImageRequest.
+        r"""Sets the body of this SetUserProfileImageRequest.
 
         :param body: The body of this SetUserProfileImageRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.SetUserProfileImageRequestBody`

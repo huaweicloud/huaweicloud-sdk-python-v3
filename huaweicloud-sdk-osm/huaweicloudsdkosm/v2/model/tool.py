@@ -37,7 +37,7 @@ class Tool:
     }
 
     def __init__(self, id=None, name=None, url=None, icon=None, problem_type_id=None, business_type_id=None, product_type_id=None):
-        """Tool
+        r"""Tool
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class Tool:
 
     @property
     def id(self):
-        """Gets the id of this Tool.
+        r"""Gets the id of this Tool.
 
         工具Id
 
@@ -94,7 +94,7 @@ class Tool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Tool.
+        r"""Sets the id of this Tool.
 
         工具Id
 
@@ -105,7 +105,7 @@ class Tool:
 
     @property
     def name(self):
-        """Gets the name of this Tool.
+        r"""Gets the name of this Tool.
 
         工具名称
 
@@ -116,7 +116,7 @@ class Tool:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Tool.
+        r"""Sets the name of this Tool.
 
         工具名称
 
@@ -127,7 +127,7 @@ class Tool:
 
     @property
     def url(self):
-        """Gets the url of this Tool.
+        r"""Gets the url of this Tool.
 
         工具链接
 
@@ -138,7 +138,7 @@ class Tool:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Tool.
+        r"""Sets the url of this Tool.
 
         工具链接
 
@@ -149,7 +149,7 @@ class Tool:
 
     @property
     def icon(self):
-        """Gets the icon of this Tool.
+        r"""Gets the icon of this Tool.
 
         图标内容，Base64格式
 
@@ -160,7 +160,7 @@ class Tool:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this Tool.
+        r"""Sets the icon of this Tool.
 
         图标内容，Base64格式
 
@@ -171,7 +171,7 @@ class Tool:
 
     @property
     def problem_type_id(self):
-        """Gets the problem_type_id of this Tool.
+        r"""Gets the problem_type_id of this Tool.
 
         问题分类Id
 
@@ -182,7 +182,7 @@ class Tool:
 
     @problem_type_id.setter
     def problem_type_id(self, problem_type_id):
-        """Sets the problem_type_id of this Tool.
+        r"""Sets the problem_type_id of this Tool.
 
         问题分类Id
 
@@ -193,7 +193,7 @@ class Tool:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this Tool.
+        r"""Gets the business_type_id of this Tool.
 
         业务类型Id
 
@@ -204,7 +204,7 @@ class Tool:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this Tool.
+        r"""Sets the business_type_id of this Tool.
 
         业务类型Id
 
@@ -215,7 +215,7 @@ class Tool:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this Tool.
+        r"""Gets the product_type_id of this Tool.
 
         产品类型Id
 
@@ -226,7 +226,7 @@ class Tool:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this Tool.
+        r"""Sets the product_type_id of this Tool.
 
         产品类型Id
 

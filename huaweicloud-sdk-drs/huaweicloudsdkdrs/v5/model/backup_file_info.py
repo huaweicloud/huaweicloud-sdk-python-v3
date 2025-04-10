@@ -31,7 +31,7 @@ class BackupFileInfo:
     }
 
     def __init__(self, name=None, obs_path=None, rds_version=None, rds_source_instance_id=None):
-        """BackupFileInfo
+        r"""BackupFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BackupFileInfo:
 
     @property
     def name(self):
-        """Gets the name of this BackupFileInfo.
+        r"""Gets the name of this BackupFileInfo.
 
         备份文件名称。
 
@@ -74,7 +74,7 @@ class BackupFileInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupFileInfo.
+        r"""Sets the name of this BackupFileInfo.
 
         备份文件名称。
 
@@ -85,7 +85,7 @@ class BackupFileInfo:
 
     @property
     def obs_path(self):
-        """Gets the obs_path of this BackupFileInfo.
+        r"""Gets the obs_path of this BackupFileInfo.
 
         OBS桶中文件路径。  OBS场景：必选  RDS场景：缺省
 
@@ -96,7 +96,7 @@ class BackupFileInfo:
 
     @obs_path.setter
     def obs_path(self, obs_path):
-        """Sets the obs_path of this BackupFileInfo.
+        r"""Sets the obs_path of this BackupFileInfo.
 
         OBS桶中文件路径。  OBS场景：必选  RDS场景：缺省
 
@@ -107,7 +107,7 @@ class BackupFileInfo:
 
     @property
     def rds_version(self):
-        """Gets the rds_version of this BackupFileInfo.
+        r"""Gets the rds_version of this BackupFileInfo.
 
         bak文件数据库版本。  OBS场景：缺省  RDS场景：必选
 
@@ -118,7 +118,7 @@ class BackupFileInfo:
 
     @rds_version.setter
     def rds_version(self, rds_version):
-        """Sets the rds_version of this BackupFileInfo.
+        r"""Sets the rds_version of this BackupFileInfo.
 
         bak文件数据库版本。  OBS场景：缺省  RDS场景：必选
 
@@ -129,7 +129,7 @@ class BackupFileInfo:
 
     @property
     def rds_source_instance_id(self):
-        """Gets the rds_source_instance_id of this BackupFileInfo.
+        r"""Gets the rds_source_instance_id of this BackupFileInfo.
 
         bak文件所属实例。  OBS场景：缺省  RDS场景：必选
 
@@ -140,7 +140,7 @@ class BackupFileInfo:
 
     @rds_source_instance_id.setter
     def rds_source_instance_id(self, rds_source_instance_id):
-        """Sets the rds_source_instance_id of this BackupFileInfo.
+        r"""Sets the rds_source_instance_id of this BackupFileInfo.
 
         bak文件所属实例。  OBS场景：缺省  RDS场景：必选
 

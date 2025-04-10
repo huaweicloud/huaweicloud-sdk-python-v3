@@ -24,7 +24,7 @@ class KeystoneCheckroleForGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneCheckroleForGroupResponse
+        r"""KeystoneCheckroleForGroupResponse
 
         The model defined in huaweicloud sdk
 

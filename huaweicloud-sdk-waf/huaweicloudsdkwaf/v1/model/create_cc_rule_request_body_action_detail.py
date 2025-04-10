@@ -25,7 +25,7 @@ class CreateCcRuleRequestBodyActionDetail:
     }
 
     def __init__(self, response=None):
-        """CreateCcRuleRequestBodyActionDetail
+        r"""CreateCcRuleRequestBodyActionDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCcRuleRequestBodyActionDetail:
 
     @property
     def response(self):
-        """Gets the response of this CreateCcRuleRequestBodyActionDetail.
+        r"""Gets the response of this CreateCcRuleRequestBodyActionDetail.
 
         :return: The response of this CreateCcRuleRequestBodyActionDetail.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyActionDetailResponse`
@@ -52,7 +52,7 @@ class CreateCcRuleRequestBodyActionDetail:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this CreateCcRuleRequestBodyActionDetail.
+        r"""Sets the response of this CreateCcRuleRequestBodyActionDetail.
 
         :param response: The response of this CreateCcRuleRequestBodyActionDetail.
         :type response: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyActionDetailResponse`

@@ -29,7 +29,7 @@ class RestoreInfo:
     }
 
     def __init__(self, phone_id=None, bucket_name=None, object_path=None):
-        """RestoreInfo
+        r"""RestoreInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RestoreInfo:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this RestoreInfo.
+        r"""Gets the phone_id of this RestoreInfo.
 
         云手机ID。
 
@@ -65,7 +65,7 @@ class RestoreInfo:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this RestoreInfo.
+        r"""Sets the phone_id of this RestoreInfo.
 
         云手机ID。
 
@@ -76,7 +76,7 @@ class RestoreInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this RestoreInfo.
+        r"""Gets the bucket_name of this RestoreInfo.
 
         导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
 
@@ -87,7 +87,7 @@ class RestoreInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this RestoreInfo.
+        r"""Sets the bucket_name of this RestoreInfo.
 
         导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
 
@@ -98,7 +98,7 @@ class RestoreInfo:
 
     @property
     def object_path(self):
-        """Gets the object_path of this RestoreInfo.
+        r"""Gets the object_path of this RestoreInfo.
 
         导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。
 
@@ -109,7 +109,7 @@ class RestoreInfo:
 
     @object_path.setter
     def object_path(self, object_path):
-        """Sets the object_path of this RestoreInfo.
+        r"""Sets the object_path of this RestoreInfo.
 
         导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。
 

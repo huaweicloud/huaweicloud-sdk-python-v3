@@ -29,7 +29,7 @@ class BuildStep:
     }
 
     def __init__(self, name=None, status=None, build_time=None):
-        """BuildStep
+        r"""BuildStep
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BuildStep:
 
     @property
     def name(self):
-        """Gets the name of this BuildStep.
+        r"""Gets the name of this BuildStep.
 
         步骤名称
 
@@ -68,7 +68,7 @@ class BuildStep:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BuildStep.
+        r"""Sets the name of this BuildStep.
 
         步骤名称
 
@@ -79,7 +79,7 @@ class BuildStep:
 
     @property
     def status(self):
-        """Gets the status of this BuildStep.
+        r"""Gets the status of this BuildStep.
 
         步骤状态,可选值（running运行中，success成功，error失败，未运行为空字符串）
 
@@ -90,7 +90,7 @@ class BuildStep:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BuildStep.
+        r"""Sets the status of this BuildStep.
 
         步骤状态,可选值（running运行中，success成功，error失败，未运行为空字符串）
 
@@ -101,7 +101,7 @@ class BuildStep:
 
     @property
     def build_time(self):
-        """Gets the build_time of this BuildStep.
+        r"""Gets the build_time of this BuildStep.
 
         步骤执行时长，单位ms
 
@@ -112,7 +112,7 @@ class BuildStep:
 
     @build_time.setter
     def build_time(self, build_time):
-        """Sets the build_time of this BuildStep.
+        r"""Sets the build_time of this BuildStep.
 
         步骤执行时长，单位ms
 

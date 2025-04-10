@@ -27,7 +27,7 @@ class BatchSetRecordSetsStatusRequestBody:
     }
 
     def __init__(self, status=None, recordset_ids=None):
-        """BatchSetRecordSetsStatusRequestBody
+        r"""BatchSetRecordSetsStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchSetRecordSetsStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this BatchSetRecordSetsStatusRequestBody.
+        r"""Gets the status of this BatchSetRecordSetsStatusRequestBody.
 
         待设置Record Set状态，当前仅支持DISABLE或ENABLE。
 
@@ -59,7 +59,7 @@ class BatchSetRecordSetsStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchSetRecordSetsStatusRequestBody.
+        r"""Sets the status of this BatchSetRecordSetsStatusRequestBody.
 
         待设置Record Set状态，当前仅支持DISABLE或ENABLE。
 
@@ -70,7 +70,7 @@ class BatchSetRecordSetsStatusRequestBody:
 
     @property
     def recordset_ids(self):
-        """Gets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
+        r"""Gets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
 
         待设置Record Set ID列表。 最多支持50个。
 
@@ -81,7 +81,7 @@ class BatchSetRecordSetsStatusRequestBody:
 
     @recordset_ids.setter
     def recordset_ids(self, recordset_ids):
-        """Sets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
+        r"""Sets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
 
         待设置Record Set ID列表。 最多支持50个。
 

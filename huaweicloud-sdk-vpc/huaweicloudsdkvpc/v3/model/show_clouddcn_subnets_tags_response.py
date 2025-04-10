@@ -30,7 +30,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None, sys_tags=None):
-        """ShowClouddcnSubnetsTagsResponse
+        r"""ShowClouddcnSubnetsTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowClouddcnSubnetsTagsResponse.
+        r"""Gets the request_id of this ShowClouddcnSubnetsTagsResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowClouddcnSubnetsTagsResponse.
+        r"""Sets the request_id of this ShowClouddcnSubnetsTagsResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowClouddcnSubnetsTagsResponse.
+        r"""Gets the tags of this ShowClouddcnSubnetsTagsResponse.
 
         单个资源的租户标签列表。
 
@@ -91,7 +91,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowClouddcnSubnetsTagsResponse.
+        r"""Sets the tags of this ShowClouddcnSubnetsTagsResponse.
 
         单个资源的租户标签列表。
 
@@ -102,7 +102,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowClouddcnSubnetsTagsResponse.
+        r"""Gets the sys_tags of this ShowClouddcnSubnetsTagsResponse.
 
         单个资源的系统标签列表。
 
@@ -113,7 +113,7 @@ class ShowClouddcnSubnetsTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowClouddcnSubnetsTagsResponse.
+        r"""Sets the sys_tags of this ShowClouddcnSubnetsTagsResponse.
 
         单个资源的系统标签列表。
 

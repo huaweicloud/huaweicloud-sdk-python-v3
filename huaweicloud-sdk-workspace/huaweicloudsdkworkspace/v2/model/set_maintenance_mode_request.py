@@ -25,7 +25,7 @@ class SetMaintenanceModeRequest:
     }
 
     def __init__(self, body=None):
-        """SetMaintenanceModeRequest
+        r"""SetMaintenanceModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetMaintenanceModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetMaintenanceModeRequest.
+        r"""Gets the body of this SetMaintenanceModeRequest.
 
         :return: The body of this SetMaintenanceModeRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchSetMaintenanceModeReq`
@@ -52,7 +52,7 @@ class SetMaintenanceModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetMaintenanceModeRequest.
+        r"""Sets the body of this SetMaintenanceModeRequest.
 
         :param body: The body of this SetMaintenanceModeRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchSetMaintenanceModeReq`

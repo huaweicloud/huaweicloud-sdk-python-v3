@@ -30,7 +30,7 @@ class AddImageMemberResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, error_msg=None, error_code=None):
-        """AddImageMemberResponse
+        r"""AddImageMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddImageMemberResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddImageMemberResponse.
+        r"""Gets the request_id of this AddImageMemberResponse.
 
         请求id
 
@@ -69,7 +69,7 @@ class AddImageMemberResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddImageMemberResponse.
+        r"""Sets the request_id of this AddImageMemberResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class AddImageMemberResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AddImageMemberResponse.
+        r"""Gets the error_msg of this AddImageMemberResponse.
 
         任务错误码说明。
 
@@ -91,7 +91,7 @@ class AddImageMemberResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AddImageMemberResponse.
+        r"""Sets the error_msg of this AddImageMemberResponse.
 
         任务错误码说明。
 
@@ -102,7 +102,7 @@ class AddImageMemberResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this AddImageMemberResponse.
+        r"""Gets the error_code of this AddImageMemberResponse.
 
         任务错误码。
 
@@ -113,7 +113,7 @@ class AddImageMemberResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AddImageMemberResponse.
+        r"""Sets the error_code of this AddImageMemberResponse.
 
         任务错误码。
 

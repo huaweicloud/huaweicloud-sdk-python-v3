@@ -59,7 +59,7 @@ class EipBandwidthResponseBody:
     }
 
     def __init__(self, admin_state=None, ingress_size=None, rule_quota=None, ratio_95peak_plus=None, enable_bandwidth_rules=None, bandwidth_rules=None, public_border_group=None, bandwidth_type=None, billinginfo=None, id=None, name=None, publicip_info=None, type=None, size=None, tenant_id=None, tags=None, created_at=None, updated_at=None):
-        """EipBandwidthResponseBody
+        r"""EipBandwidthResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class EipBandwidthResponseBody:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this EipBandwidthResponseBody.
+        r"""Gets the admin_state of this EipBandwidthResponseBody.
 
         - 功能说明：带宽状态 - 取值范围：normal，freezed
 
@@ -173,7 +173,7 @@ class EipBandwidthResponseBody:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this EipBandwidthResponseBody.
+        r"""Sets the admin_state of this EipBandwidthResponseBody.
 
         - 功能说明：带宽状态 - 取值范围：normal，freezed
 
@@ -184,7 +184,7 @@ class EipBandwidthResponseBody:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this EipBandwidthResponseBody.
+        r"""Gets the ingress_size of this EipBandwidthResponseBody.
 
         - 功能说明：入网大小，单位Mbit/s
 
@@ -195,7 +195,7 @@ class EipBandwidthResponseBody:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this EipBandwidthResponseBody.
+        r"""Sets the ingress_size of this EipBandwidthResponseBody.
 
         - 功能说明：入网大小，单位Mbit/s
 
@@ -206,7 +206,7 @@ class EipBandwidthResponseBody:
 
     @property
     def rule_quota(self):
-        """Gets the rule_quota of this EipBandwidthResponseBody.
+        r"""Gets the rule_quota of this EipBandwidthResponseBody.
 
         - 功能说明：规则数值，最低阈值可调节
 
@@ -217,7 +217,7 @@ class EipBandwidthResponseBody:
 
     @rule_quota.setter
     def rule_quota(self, rule_quota):
-        """Sets the rule_quota of this EipBandwidthResponseBody.
+        r"""Sets the rule_quota of this EipBandwidthResponseBody.
 
         - 功能说明：规则数值，最低阈值可调节
 
@@ -228,7 +228,7 @@ class EipBandwidthResponseBody:
 
     @property
     def ratio_95peak_plus(self):
-        """Gets the ratio_95peak_plus of this EipBandwidthResponseBody.
+        r"""Gets the ratio_95peak_plus of this EipBandwidthResponseBody.
 
         - 功能说明：增强型95带宽保底率，最低保底率为20
 
@@ -239,7 +239,7 @@ class EipBandwidthResponseBody:
 
     @ratio_95peak_plus.setter
     def ratio_95peak_plus(self, ratio_95peak_plus):
-        """Sets the ratio_95peak_plus of this EipBandwidthResponseBody.
+        r"""Sets the ratio_95peak_plus of this EipBandwidthResponseBody.
 
         - 功能说明：增强型95带宽保底率，最低保底率为20
 
@@ -250,7 +250,7 @@ class EipBandwidthResponseBody:
 
     @property
     def enable_bandwidth_rules(self):
-        """Gets the enable_bandwidth_rules of this EipBandwidthResponseBody.
+        r"""Gets the enable_bandwidth_rules of this EipBandwidthResponseBody.
 
         - 功能说明：带宽分组使能，表明开启带宽分组限速功能。
 
@@ -261,7 +261,7 @@ class EipBandwidthResponseBody:
 
     @enable_bandwidth_rules.setter
     def enable_bandwidth_rules(self, enable_bandwidth_rules):
-        """Sets the enable_bandwidth_rules of this EipBandwidthResponseBody.
+        r"""Sets the enable_bandwidth_rules of this EipBandwidthResponseBody.
 
         - 功能说明：带宽分组使能，表明开启带宽分组限速功能。
 
@@ -272,7 +272,7 @@ class EipBandwidthResponseBody:
 
     @property
     def bandwidth_rules(self):
-        """Gets the bandwidth_rules of this EipBandwidthResponseBody.
+        r"""Gets the bandwidth_rules of this EipBandwidthResponseBody.
 
         - 功能说明：带宽规则对象（该字段仅在上海1局点返回）
 
@@ -283,7 +283,7 @@ class EipBandwidthResponseBody:
 
     @bandwidth_rules.setter
     def bandwidth_rules(self, bandwidth_rules):
-        """Sets the bandwidth_rules of this EipBandwidthResponseBody.
+        r"""Sets the bandwidth_rules of this EipBandwidthResponseBody.
 
         - 功能说明：带宽规则对象（该字段仅在上海1局点返回）
 
@@ -294,7 +294,7 @@ class EipBandwidthResponseBody:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this EipBandwidthResponseBody.
+        r"""Gets the public_border_group of this EipBandwidthResponseBody.
 
         - 功能说明：带宽AZ属性，表征中心和边缘。中心带宽默认为center
 
@@ -305,7 +305,7 @@ class EipBandwidthResponseBody:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this EipBandwidthResponseBody.
+        r"""Sets the public_border_group of this EipBandwidthResponseBody.
 
         - 功能说明：带宽AZ属性，表征中心和边缘。中心带宽默认为center
 
@@ -316,7 +316,7 @@ class EipBandwidthResponseBody:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this EipBandwidthResponseBody.
+        r"""Gets the bandwidth_type of this EipBandwidthResponseBody.
 
         - 功能说明：带宽类型，共享带宽默认为share。 - 取值范围：share，bgp，telcom，sbgp等。  share：共享带宽；  bgp：动态bgp；  telcom ：联通；  sbgp：静态bgp。
 
@@ -327,7 +327,7 @@ class EipBandwidthResponseBody:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this EipBandwidthResponseBody.
+        r"""Sets the bandwidth_type of this EipBandwidthResponseBody.
 
         - 功能说明：带宽类型，共享带宽默认为share。 - 取值范围：share，bgp，telcom，sbgp等。  share：共享带宽；  bgp：动态bgp；  telcom ：联通；  sbgp：静态bgp。
 
@@ -338,7 +338,7 @@ class EipBandwidthResponseBody:
 
     @property
     def billinginfo(self):
-        """Gets the billinginfo of this EipBandwidthResponseBody.
+        r"""Gets the billinginfo of this EipBandwidthResponseBody.
 
         - 功能说明：账单信息，
 
@@ -349,7 +349,7 @@ class EipBandwidthResponseBody:
 
     @billinginfo.setter
     def billinginfo(self, billinginfo):
-        """Sets the billinginfo of this EipBandwidthResponseBody.
+        r"""Sets the billinginfo of this EipBandwidthResponseBody.
 
         - 功能说明：账单信息，
 
@@ -360,7 +360,7 @@ class EipBandwidthResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this EipBandwidthResponseBody.
+        r"""Gets the id of this EipBandwidthResponseBody.
 
         - 功能说明：带宽唯一标识
 
@@ -371,7 +371,7 @@ class EipBandwidthResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EipBandwidthResponseBody.
+        r"""Sets the id of this EipBandwidthResponseBody.
 
         - 功能说明：带宽唯一标识
 
@@ -382,7 +382,7 @@ class EipBandwidthResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this EipBandwidthResponseBody.
+        r"""Gets the name of this EipBandwidthResponseBody.
 
         - 功能说明：带宽名称 - 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -393,7 +393,7 @@ class EipBandwidthResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EipBandwidthResponseBody.
+        r"""Sets the name of this EipBandwidthResponseBody.
 
         - 功能说明：带宽名称 - 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -404,7 +404,7 @@ class EipBandwidthResponseBody:
 
     @property
     def publicip_info(self):
-        """Gets the publicip_info of this EipBandwidthResponseBody.
+        r"""Gets the publicip_info of this EipBandwidthResponseBody.
 
         - 功能说明：带宽对应的弹性公网IP信息 - 约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -415,7 +415,7 @@ class EipBandwidthResponseBody:
 
     @publicip_info.setter
     def publicip_info(self, publicip_info):
-        """Sets the publicip_info of this EipBandwidthResponseBody.
+        r"""Sets the publicip_info of this EipBandwidthResponseBody.
 
         - 功能说明：带宽对应的弹性公网IP信息 - 约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -426,7 +426,7 @@ class EipBandwidthResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this EipBandwidthResponseBody.
+        r"""Gets the type of this EipBandwidthResponseBody.
 
         - 功能说明：带宽类型，标识是否是共享带宽 - 取值范围：WHOLE，PER。  WHOLE表示共享带宽；PER表示独享带宽
 
@@ -437,7 +437,7 @@ class EipBandwidthResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EipBandwidthResponseBody.
+        r"""Sets the type of this EipBandwidthResponseBody.
 
         - 功能说明：带宽类型，标识是否是共享带宽 - 取值范围：WHOLE，PER。  WHOLE表示共享带宽；PER表示独享带宽
 
@@ -448,7 +448,7 @@ class EipBandwidthResponseBody:
 
     @property
     def size(self):
-        """Gets the size of this EipBandwidthResponseBody.
+        r"""Gets the size of this EipBandwidthResponseBody.
 
         - 功能说明：带宽大小 - 取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -459,7 +459,7 @@ class EipBandwidthResponseBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this EipBandwidthResponseBody.
+        r"""Sets the size of this EipBandwidthResponseBody.
 
         - 功能说明：带宽大小 - 取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -470,7 +470,7 @@ class EipBandwidthResponseBody:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this EipBandwidthResponseBody.
+        r"""Gets the tenant_id of this EipBandwidthResponseBody.
 
         - 功能说明：用户所属项目ID
 
@@ -481,7 +481,7 @@ class EipBandwidthResponseBody:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this EipBandwidthResponseBody.
+        r"""Sets the tenant_id of this EipBandwidthResponseBody.
 
         - 功能说明：用户所属项目ID
 
@@ -492,7 +492,7 @@ class EipBandwidthResponseBody:
 
     @property
     def tags(self):
-        """Gets the tags of this EipBandwidthResponseBody.
+        r"""Gets the tags of this EipBandwidthResponseBody.
 
         - 功能说明：\"公网EIP标签\"
 
@@ -503,7 +503,7 @@ class EipBandwidthResponseBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EipBandwidthResponseBody.
+        r"""Sets the tags of this EipBandwidthResponseBody.
 
         - 功能说明：\"公网EIP标签\"
 
@@ -514,7 +514,7 @@ class EipBandwidthResponseBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EipBandwidthResponseBody.
+        r"""Gets the created_at of this EipBandwidthResponseBody.
 
         - 功能说明：资源创建时间，采用UTC时间，格式：YYYY-MM-DDTHH:MM:SS
 
@@ -525,7 +525,7 @@ class EipBandwidthResponseBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EipBandwidthResponseBody.
+        r"""Sets the created_at of this EipBandwidthResponseBody.
 
         - 功能说明：资源创建时间，采用UTC时间，格式：YYYY-MM-DDTHH:MM:SS
 
@@ -536,7 +536,7 @@ class EipBandwidthResponseBody:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EipBandwidthResponseBody.
+        r"""Gets the updated_at of this EipBandwidthResponseBody.
 
         - 功能说明：资源更新时间，采用UTC时间，格式：YYYY-MM-DDTHH:MM:SS
 
@@ -547,7 +547,7 @@ class EipBandwidthResponseBody:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EipBandwidthResponseBody.
+        r"""Sets the updated_at of this EipBandwidthResponseBody.
 
         - 功能说明：资源更新时间，采用UTC时间，格式：YYYY-MM-DDTHH:MM:SS
 

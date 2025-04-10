@@ -26,7 +26,7 @@ class EnableOrDisableElbResponse(SdkResponse):
     }
 
     def __init__(self, elb_id=None):
-        """EnableOrDisableElbResponse
+        r"""EnableOrDisableElbResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class EnableOrDisableElbResponse(SdkResponse):
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this EnableOrDisableElbResponse.
+        r"""Gets the elb_id of this EnableOrDisableElbResponse.
 
         负载均衡器id。
 
@@ -55,7 +55,7 @@ class EnableOrDisableElbResponse(SdkResponse):
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this EnableOrDisableElbResponse.
+        r"""Sets the elb_id of this EnableOrDisableElbResponse.
 
         负载均衡器id。
 

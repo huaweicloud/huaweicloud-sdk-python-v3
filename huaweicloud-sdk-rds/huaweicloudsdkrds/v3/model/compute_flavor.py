@@ -33,7 +33,7 @@ class ComputeFlavor:
     }
 
     def __init__(self, id=None, code=None, vcpus=None, ram=None, az_status=None):
-        """ComputeFlavor
+        r"""ComputeFlavor
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ComputeFlavor:
 
     @property
     def id(self):
-        """Gets the id of this ComputeFlavor.
+        r"""Gets the id of this ComputeFlavor.
 
         规格ID，该字段唯一。
 
@@ -77,7 +77,7 @@ class ComputeFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComputeFlavor.
+        r"""Sets the id of this ComputeFlavor.
 
         规格ID，该字段唯一。
 
@@ -88,7 +88,7 @@ class ComputeFlavor:
 
     @property
     def code(self):
-        """Gets the code of this ComputeFlavor.
+        r"""Gets the code of this ComputeFlavor.
 
         资源规格编码。例如：rds.pg.m1.xlarge.rr。  更多规格说明请参考数据库实例规格。  “rds”代表RDS产品。 “pg”代表数据库引擎。 “m1.xlarge”代表性能规格，为高内存类型。 “rr”表示只读实例（“.ha”表示主备实例）。
 
@@ -99,7 +99,7 @@ class ComputeFlavor:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ComputeFlavor.
+        r"""Sets the code of this ComputeFlavor.
 
         资源规格编码。例如：rds.pg.m1.xlarge.rr。  更多规格说明请参考数据库实例规格。  “rds”代表RDS产品。 “pg”代表数据库引擎。 “m1.xlarge”代表性能规格，为高内存类型。 “rr”表示只读实例（“.ha”表示主备实例）。
 
@@ -110,7 +110,7 @@ class ComputeFlavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ComputeFlavor.
+        r"""Gets the vcpus of this ComputeFlavor.
 
         CPU大小。例如：1表示1U。
 
@@ -121,7 +121,7 @@ class ComputeFlavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ComputeFlavor.
+        r"""Sets the vcpus of this ComputeFlavor.
 
         CPU大小。例如：1表示1U。
 
@@ -132,7 +132,7 @@ class ComputeFlavor:
 
     @property
     def ram(self):
-        """Gets the ram of this ComputeFlavor.
+        r"""Gets the ram of this ComputeFlavor.
 
         内存大小，单位为GB。
 
@@ -143,7 +143,7 @@ class ComputeFlavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ComputeFlavor.
+        r"""Sets the ram of this ComputeFlavor.
 
         内存大小，单位为GB。
 
@@ -154,7 +154,7 @@ class ComputeFlavor:
 
     @property
     def az_status(self):
-        """Gets the az_status of this ComputeFlavor.
+        r"""Gets the az_status of this ComputeFlavor.
 
         规格所在az的状态，包含以下状态：  normal：在售。 unsupported：暂不支持该规格。 sellout：售罄。
 
@@ -165,7 +165,7 @@ class ComputeFlavor:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this ComputeFlavor.
+        r"""Sets the az_status of this ComputeFlavor.
 
         规格所在az的状态，包含以下状态：  normal：在售。 unsupported：暂不支持该规格。 sellout：售罄。
 

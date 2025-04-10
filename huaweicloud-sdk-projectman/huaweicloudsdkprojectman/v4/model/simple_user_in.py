@@ -29,7 +29,7 @@ class SimpleUserIn:
     }
 
     def __init__(self, id=None, identifier=None, name=None):
-        """SimpleUserIn
+        r"""SimpleUserIn
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SimpleUserIn:
 
     @property
     def id(self):
-        """Gets the id of this SimpleUserIn.
+        r"""Gets the id of this SimpleUserIn.
 
         用户id
 
@@ -68,7 +68,7 @@ class SimpleUserIn:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimpleUserIn.
+        r"""Sets the id of this SimpleUserIn.
 
         用户id
 
@@ -79,7 +79,7 @@ class SimpleUserIn:
 
     @property
     def identifier(self):
-        """Gets the identifier of this SimpleUserIn.
+        r"""Gets the identifier of this SimpleUserIn.
 
         用户uuid
 
@@ -90,7 +90,7 @@ class SimpleUserIn:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this SimpleUserIn.
+        r"""Sets the identifier of this SimpleUserIn.
 
         用户uuid
 
@@ -101,7 +101,7 @@ class SimpleUserIn:
 
     @property
     def name(self):
-        """Gets the name of this SimpleUserIn.
+        r"""Gets the name of this SimpleUserIn.
 
         用户名称
 
@@ -112,7 +112,7 @@ class SimpleUserIn:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SimpleUserIn.
+        r"""Sets the name of this SimpleUserIn.
 
         用户名称
 

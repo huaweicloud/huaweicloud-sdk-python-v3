@@ -31,7 +31,7 @@ class CountMultiResourcesRequest:
     }
 
     def __init__(self, vendor=None, view_id=None, is_resource=None, region_id=None):
-        """CountMultiResourcesRequest
+        r"""CountMultiResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CountMultiResourcesRequest:
 
     @property
     def vendor(self):
-        """Gets the vendor of this CountMultiResourcesRequest.
+        r"""Gets the vendor of this CountMultiResourcesRequest.
 
         厂商来源（默认RMS，可填RMS/ALI/AWS）
 
@@ -74,7 +74,7 @@ class CountMultiResourcesRequest:
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this CountMultiResourcesRequest.
+        r"""Sets the vendor of this CountMultiResourcesRequest.
 
         厂商来源（默认RMS，可填RMS/ALI/AWS）
 
@@ -85,7 +85,7 @@ class CountMultiResourcesRequest:
 
     @property
     def view_id(self):
-        """Gets the view_id of this CountMultiResourcesRequest.
+        r"""Gets the view_id of this CountMultiResourcesRequest.
 
         视图 id，视图模式下必填
 
@@ -96,7 +96,7 @@ class CountMultiResourcesRequest:
 
     @view_id.setter
     def view_id(self, view_id):
-        """Sets the view_id of this CountMultiResourcesRequest.
+        r"""Sets the view_id of this CountMultiResourcesRequest.
 
         视图 id，视图模式下必填
 
@@ -107,7 +107,7 @@ class CountMultiResourcesRequest:
 
     @property
     def is_resource(self):
-        """Gets the is_resource of this CountMultiResourcesRequest.
+        r"""Gets the is_resource of this CountMultiResourcesRequest.
 
         是否为资源模块
 
@@ -118,7 +118,7 @@ class CountMultiResourcesRequest:
 
     @is_resource.setter
     def is_resource(self, is_resource):
-        """Sets the is_resource of this CountMultiResourcesRequest.
+        r"""Sets the is_resource of this CountMultiResourcesRequest.
 
         是否为资源模块
 
@@ -129,7 +129,7 @@ class CountMultiResourcesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CountMultiResourcesRequest.
+        r"""Gets the region_id of this CountMultiResourcesRequest.
 
         区域 id
 
@@ -140,7 +140,7 @@ class CountMultiResourcesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CountMultiResourcesRequest.
+        r"""Sets the region_id of this CountMultiResourcesRequest.
 
         区域 id
 

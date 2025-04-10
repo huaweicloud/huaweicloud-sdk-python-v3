@@ -25,7 +25,7 @@ class ListAuthorizableTicketsReq:
     }
 
     def __init__(self, request_params=None):
-        """ListAuthorizableTicketsReq
+        r"""ListAuthorizableTicketsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAuthorizableTicketsReq:
 
     @property
     def request_params(self):
-        """Gets the request_params of this ListAuthorizableTicketsReq.
+        r"""Gets the request_params of this ListAuthorizableTicketsReq.
 
         搜索结果
 
@@ -54,7 +54,7 @@ class ListAuthorizableTicketsReq:
 
     @request_params.setter
     def request_params(self, request_params):
-        """Sets the request_params of this ListAuthorizableTicketsReq.
+        r"""Sets the request_params of this ListAuthorizableTicketsReq.
 
         搜索结果
 

@@ -27,7 +27,7 @@ class UnbindInstanceTagsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UnbindInstanceTagsRequest
+        r"""UnbindInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UnbindInstanceTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UnbindInstanceTagsRequest.
+        r"""Gets the instance_id of this UnbindInstanceTagsRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -60,7 +60,7 @@ class UnbindInstanceTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UnbindInstanceTagsRequest.
+        r"""Sets the instance_id of this UnbindInstanceTagsRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -71,7 +71,7 @@ class UnbindInstanceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnbindInstanceTagsRequest.
+        r"""Gets the body of this UnbindInstanceTagsRequest.
 
         :return: The body of this UnbindInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdkiotdm.v5.UnbindInstanceTags`
@@ -80,7 +80,7 @@ class UnbindInstanceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnbindInstanceTagsRequest.
+        r"""Sets the body of this UnbindInstanceTagsRequest.
 
         :param body: The body of this UnbindInstanceTagsRequest.
         :type body: :class:`huaweicloudsdkiotdm.v5.UnbindInstanceTags`

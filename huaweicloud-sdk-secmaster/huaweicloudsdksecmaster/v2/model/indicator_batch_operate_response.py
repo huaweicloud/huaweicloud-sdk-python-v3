@@ -27,7 +27,7 @@ class IndicatorBatchOperateResponse:
     }
 
     def __init__(self, success_ids=None, error_ids=None):
-        """IndicatorBatchOperateResponse
+        r"""IndicatorBatchOperateResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IndicatorBatchOperateResponse:
 
     @property
     def success_ids(self):
-        """Gets the success_ids of this IndicatorBatchOperateResponse.
+        r"""Gets the success_ids of this IndicatorBatchOperateResponse.
 
         成功ID列表
 
@@ -60,7 +60,7 @@ class IndicatorBatchOperateResponse:
 
     @success_ids.setter
     def success_ids(self, success_ids):
-        """Sets the success_ids of this IndicatorBatchOperateResponse.
+        r"""Sets the success_ids of this IndicatorBatchOperateResponse.
 
         成功ID列表
 
@@ -71,7 +71,7 @@ class IndicatorBatchOperateResponse:
 
     @property
     def error_ids(self):
-        """Gets the error_ids of this IndicatorBatchOperateResponse.
+        r"""Gets the error_ids of this IndicatorBatchOperateResponse.
 
         失败ID列表
 
@@ -82,7 +82,7 @@ class IndicatorBatchOperateResponse:
 
     @error_ids.setter
     def error_ids(self, error_ids):
-        """Sets the error_ids of this IndicatorBatchOperateResponse.
+        r"""Sets the error_ids of this IndicatorBatchOperateResponse.
 
         失败ID列表
 

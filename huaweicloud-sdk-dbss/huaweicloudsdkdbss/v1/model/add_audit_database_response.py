@@ -26,7 +26,7 @@ class AddAuditDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """AddAuditDatabaseResponse
+        r"""AddAuditDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddAuditDatabaseResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddAuditDatabaseResponse.
+        r"""Gets the id of this AddAuditDatabaseResponse.
 
         数据库ID
 
@@ -55,7 +55,7 @@ class AddAuditDatabaseResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddAuditDatabaseResponse.
+        r"""Sets the id of this AddAuditDatabaseResponse.
 
         数据库ID
 

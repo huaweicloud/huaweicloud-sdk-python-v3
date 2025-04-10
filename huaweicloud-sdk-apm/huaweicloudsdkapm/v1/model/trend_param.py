@@ -35,7 +35,7 @@ class TrendParam:
     }
 
     def __init__(self, view_config=None, instance_id=None, monitor_item_id=None, env_id=None, start_time=None, end_time=None):
-        """TrendParam
+        r"""TrendParam
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TrendParam:
 
     @property
     def view_config(self):
-        """Gets the view_config of this TrendParam.
+        r"""Gets the view_config of this TrendParam.
 
         :return: The view_config of this TrendParam.
         :rtype: :class:`huaweicloudsdkapm.v1.TrendView`
@@ -83,7 +83,7 @@ class TrendParam:
 
     @view_config.setter
     def view_config(self, view_config):
-        """Sets the view_config of this TrendParam.
+        r"""Sets the view_config of this TrendParam.
 
         :param view_config: The view_config of this TrendParam.
         :type view_config: :class:`huaweicloudsdkapm.v1.TrendView`
@@ -92,7 +92,7 @@ class TrendParam:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TrendParam.
+        r"""Gets the instance_id of this TrendParam.
 
         实例id。
 
@@ -103,7 +103,7 @@ class TrendParam:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TrendParam.
+        r"""Sets the instance_id of this TrendParam.
 
         实例id。
 
@@ -114,7 +114,7 @@ class TrendParam:
 
     @property
     def monitor_item_id(self):
-        """Gets the monitor_item_id of this TrendParam.
+        r"""Gets the monitor_item_id of this TrendParam.
 
         监控项id。
 
@@ -125,7 +125,7 @@ class TrendParam:
 
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
-        """Sets the monitor_item_id of this TrendParam.
+        r"""Sets the monitor_item_id of this TrendParam.
 
         监控项id。
 
@@ -136,7 +136,7 @@ class TrendParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TrendParam.
+        r"""Gets the env_id of this TrendParam.
 
         环境id。
 
@@ -147,7 +147,7 @@ class TrendParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TrendParam.
+        r"""Sets the env_id of this TrendParam.
 
         环境id。
 
@@ -158,7 +158,7 @@ class TrendParam:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TrendParam.
+        r"""Gets the start_time of this TrendParam.
 
         开始时间。
 
@@ -169,7 +169,7 @@ class TrendParam:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TrendParam.
+        r"""Sets the start_time of this TrendParam.
 
         开始时间。
 
@@ -180,7 +180,7 @@ class TrendParam:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TrendParam.
+        r"""Gets the end_time of this TrendParam.
 
         结束时间。
 
@@ -191,7 +191,7 @@ class TrendParam:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TrendParam.
+        r"""Sets the end_time of this TrendParam.
 
         结束时间。
 

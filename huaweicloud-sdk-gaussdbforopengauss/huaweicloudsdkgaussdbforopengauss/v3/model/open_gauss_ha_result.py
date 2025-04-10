@@ -31,7 +31,7 @@ class OpenGaussHaResult:
     }
 
     def __init__(self, mode=None, replication_mode=None, consistency=None, consistency_protocol=None):
-        """OpenGaussHaResult
+        r"""OpenGaussHaResult
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class OpenGaussHaResult:
 
     @property
     def mode(self):
-        """Gets the mode of this OpenGaussHaResult.
+        r"""Gets the mode of this OpenGaussHaResult.
 
         GaussDB 分布式模式，返回值为：enterprise（企业版）；主备版，返回值为：centralization_standard(主备版)。
 
@@ -72,7 +72,7 @@ class OpenGaussHaResult:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this OpenGaussHaResult.
+        r"""Sets the mode of this OpenGaussHaResult.
 
         GaussDB 分布式模式，返回值为：enterprise（企业版）；主备版，返回值为：centralization_standard(主备版)。
 
@@ -83,7 +83,7 @@ class OpenGaussHaResult:
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this OpenGaussHaResult.
+        r"""Gets the replication_mode of this OpenGaussHaResult.
 
         备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
 
@@ -94,7 +94,7 @@ class OpenGaussHaResult:
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this OpenGaussHaResult.
+        r"""Sets the replication_mode of this OpenGaussHaResult.
 
         备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
 
@@ -105,7 +105,7 @@ class OpenGaussHaResult:
 
     @property
     def consistency(self):
-        """Gets the consistency of this OpenGaussHaResult.
+        r"""Gets the consistency of this OpenGaussHaResult.
 
         GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 
@@ -116,7 +116,7 @@ class OpenGaussHaResult:
 
     @consistency.setter
     def consistency(self, consistency):
-        """Sets the consistency of this OpenGaussHaResult.
+        r"""Sets the consistency of this OpenGaussHaResult.
 
         GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 
@@ -127,7 +127,7 @@ class OpenGaussHaResult:
 
     @property
     def consistency_protocol(self):
-        """Gets the consistency_protocol of this OpenGaussHaResult.
+        r"""Gets the consistency_protocol of this OpenGaussHaResult.
 
         指定副本一致性协议类型，取值范围：quorum | paxos。不填时，默认为quorum。
 
@@ -138,7 +138,7 @@ class OpenGaussHaResult:
 
     @consistency_protocol.setter
     def consistency_protocol(self, consistency_protocol):
-        """Sets the consistency_protocol of this OpenGaussHaResult.
+        r"""Sets the consistency_protocol of this OpenGaussHaResult.
 
         指定副本一致性协议类型，取值范围：quorum | paxos。不填时，默认为quorum。
 

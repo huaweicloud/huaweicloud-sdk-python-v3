@@ -38,7 +38,7 @@ class CreateIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, ips=None, size=None, rules=None, description=None, timestamp=None):
-        """CreateIpGroupResponse
+        r"""CreateIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateIpGroupResponse.
+        r"""Gets the id of this CreateIpGroupResponse.
 
         地址组id
 
@@ -97,7 +97,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIpGroupResponse.
+        r"""Sets the id of this CreateIpGroupResponse.
 
         地址组id
 
@@ -108,7 +108,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateIpGroupResponse.
+        r"""Gets the name of this CreateIpGroupResponse.
 
         地址组名称
 
@@ -119,7 +119,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIpGroupResponse.
+        r"""Sets the name of this CreateIpGroupResponse.
 
         地址组名称
 
@@ -130,7 +130,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this CreateIpGroupResponse.
+        r"""Gets the ips of this CreateIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -141,7 +141,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this CreateIpGroupResponse.
+        r"""Sets the ips of this CreateIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -152,7 +152,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this CreateIpGroupResponse.
+        r"""Gets the size of this CreateIpGroupResponse.
 
         地址组长度
 
@@ -163,7 +163,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateIpGroupResponse.
+        r"""Sets the size of this CreateIpGroupResponse.
 
         地址组长度
 
@@ -174,7 +174,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this CreateIpGroupResponse.
+        r"""Gets the rules of this CreateIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -185,7 +185,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CreateIpGroupResponse.
+        r"""Sets the rules of this CreateIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -196,7 +196,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateIpGroupResponse.
+        r"""Gets the description of this CreateIpGroupResponse.
 
         地址组描述
 
@@ -207,7 +207,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIpGroupResponse.
+        r"""Sets the description of this CreateIpGroupResponse.
 
         地址组描述
 
@@ -218,7 +218,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateIpGroupResponse.
+        r"""Gets the timestamp of this CreateIpGroupResponse.
 
         时间戳
 
@@ -229,7 +229,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateIpGroupResponse.
+        r"""Sets the timestamp of this CreateIpGroupResponse.
 
         时间戳
 

@@ -61,7 +61,7 @@ class CouponInfoV2:
     }
 
     def __init__(self, coupon_id=None, coupon_code=None, status=None, coupon_type=None, measure_id=None, face_value=None, effective_time=None, expire_time=None, plan_name=None, plan_desc=None, use_limits=None, active_time=None, last_used_time=None, create_time=None, coupon_version=None, balance=None, used_by_order_id=None, coupon_usage=None, coupon_group=None):
-        """CouponInfoV2
+        r"""CouponInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class CouponInfoV2:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this CouponInfoV2.
+        r"""Gets the coupon_id of this CouponInfoV2.
 
         优惠券实例ID。
 
@@ -180,7 +180,7 @@ class CouponInfoV2:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this CouponInfoV2.
+        r"""Sets the coupon_id of this CouponInfoV2.
 
         优惠券实例ID。
 
@@ -191,7 +191,7 @@ class CouponInfoV2:
 
     @property
     def coupon_code(self):
-        """Gets the coupon_code of this CouponInfoV2.
+        r"""Gets the coupon_code of this CouponInfoV2.
 
         优惠券编码。
 
@@ -202,7 +202,7 @@ class CouponInfoV2:
 
     @coupon_code.setter
     def coupon_code(self, coupon_code):
-        """Sets the coupon_code of this CouponInfoV2.
+        r"""Sets the coupon_code of this CouponInfoV2.
 
         优惠券编码。
 
@@ -213,7 +213,7 @@ class CouponInfoV2:
 
     @property
     def status(self):
-        """Gets the status of this CouponInfoV2.
+        r"""Gets the status of this CouponInfoV2.
 
         优惠券状态： 1：未激活2：待使用
 
@@ -224,7 +224,7 @@ class CouponInfoV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CouponInfoV2.
+        r"""Sets the status of this CouponInfoV2.
 
         优惠券状态： 1：未激活2：待使用
 
@@ -235,7 +235,7 @@ class CouponInfoV2:
 
     @property
     def coupon_type(self):
-        """Gets the coupon_type of this CouponInfoV2.
+        r"""Gets the coupon_type of this CouponInfoV2.
 
         优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
@@ -246,7 +246,7 @@ class CouponInfoV2:
 
     @coupon_type.setter
     def coupon_type(self, coupon_type):
-        """Sets the coupon_type of this CouponInfoV2.
+        r"""Sets the coupon_type of this CouponInfoV2.
 
         优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
@@ -257,7 +257,7 @@ class CouponInfoV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this CouponInfoV2.
+        r"""Gets the measure_id of this CouponInfoV2.
 
         面额单位： 1：元。
 
@@ -268,7 +268,7 @@ class CouponInfoV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this CouponInfoV2.
+        r"""Sets the measure_id of this CouponInfoV2.
 
         面额单位： 1：元。
 
@@ -279,7 +279,7 @@ class CouponInfoV2:
 
     @property
     def face_value(self):
-        """Gets the face_value of this CouponInfoV2.
+        r"""Gets the face_value of this CouponInfoV2.
 
         面值。
 
@@ -290,7 +290,7 @@ class CouponInfoV2:
 
     @face_value.setter
     def face_value(self, face_value):
-        """Sets the face_value of this CouponInfoV2.
+        r"""Sets the face_value of this CouponInfoV2.
 
         面值。
 
@@ -301,7 +301,7 @@ class CouponInfoV2:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this CouponInfoV2.
+        r"""Gets the effective_time of this CouponInfoV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -312,7 +312,7 @@ class CouponInfoV2:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this CouponInfoV2.
+        r"""Sets the effective_time of this CouponInfoV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -323,7 +323,7 @@ class CouponInfoV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CouponInfoV2.
+        r"""Gets the expire_time of this CouponInfoV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -334,7 +334,7 @@ class CouponInfoV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CouponInfoV2.
+        r"""Sets the expire_time of this CouponInfoV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -345,7 +345,7 @@ class CouponInfoV2:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this CouponInfoV2.
+        r"""Gets the plan_name of this CouponInfoV2.
 
         促销计划名称。
 
@@ -356,7 +356,7 @@ class CouponInfoV2:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this CouponInfoV2.
+        r"""Sets the plan_name of this CouponInfoV2.
 
         促销计划名称。
 
@@ -367,7 +367,7 @@ class CouponInfoV2:
 
     @property
     def plan_desc(self):
-        """Gets the plan_desc of this CouponInfoV2.
+        r"""Gets the plan_desc of this CouponInfoV2.
 
         促销计划描述。
 
@@ -378,7 +378,7 @@ class CouponInfoV2:
 
     @plan_desc.setter
     def plan_desc(self, plan_desc):
-        """Sets the plan_desc of this CouponInfoV2.
+        r"""Sets the plan_desc of this CouponInfoV2.
 
         促销计划描述。
 
@@ -389,7 +389,7 @@ class CouponInfoV2:
 
     @property
     def use_limits(self):
-        """Gets the use_limits of this CouponInfoV2.
+        r"""Gets the use_limits of this CouponInfoV2.
 
         优惠券限制。 具体请参见表3。
 
@@ -400,7 +400,7 @@ class CouponInfoV2:
 
     @use_limits.setter
     def use_limits(self, use_limits):
-        """Sets the use_limits of this CouponInfoV2.
+        r"""Sets the use_limits of this CouponInfoV2.
 
         优惠券限制。 具体请参见表3。
 
@@ -411,7 +411,7 @@ class CouponInfoV2:
 
     @property
     def active_time(self):
-        """Gets the active_time of this CouponInfoV2.
+        r"""Gets the active_time of this CouponInfoV2.
 
         激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -422,7 +422,7 @@ class CouponInfoV2:
 
     @active_time.setter
     def active_time(self, active_time):
-        """Sets the active_time of this CouponInfoV2.
+        r"""Sets the active_time of this CouponInfoV2.
 
         激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -433,7 +433,7 @@ class CouponInfoV2:
 
     @property
     def last_used_time(self):
-        """Gets the last_used_time of this CouponInfoV2.
+        r"""Gets the last_used_time of this CouponInfoV2.
 
         上一次使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -444,7 +444,7 @@ class CouponInfoV2:
 
     @last_used_time.setter
     def last_used_time(self, last_used_time):
-        """Sets the last_used_time of this CouponInfoV2.
+        r"""Sets the last_used_time of this CouponInfoV2.
 
         上一次使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -455,7 +455,7 @@ class CouponInfoV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CouponInfoV2.
+        r"""Gets the create_time of this CouponInfoV2.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -466,7 +466,7 @@ class CouponInfoV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CouponInfoV2.
+        r"""Sets the create_time of this CouponInfoV2.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -477,7 +477,7 @@ class CouponInfoV2:
 
     @property
     def coupon_version(self):
-        """Gets the coupon_version of this CouponInfoV2.
+        r"""Gets the coupon_version of this CouponInfoV2.
 
         优惠券版本。 1：老版本（包含三种：代金券、折扣券和奖金券）2：新版本（只有代金券）
 
@@ -488,7 +488,7 @@ class CouponInfoV2:
 
     @coupon_version.setter
     def coupon_version(self, coupon_version):
-        """Sets the coupon_version of this CouponInfoV2.
+        r"""Sets the coupon_version of this CouponInfoV2.
 
         优惠券版本。 1：老版本（包含三种：代金券、折扣券和奖金券）2：新版本（只有代金券）
 
@@ -499,7 +499,7 @@ class CouponInfoV2:
 
     @property
     def balance(self):
-        """Gets the balance of this CouponInfoV2.
+        r"""Gets the balance of this CouponInfoV2.
 
         余额。
 
@@ -510,7 +510,7 @@ class CouponInfoV2:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this CouponInfoV2.
+        r"""Sets the balance of this CouponInfoV2.
 
         余额。
 
@@ -521,7 +521,7 @@ class CouponInfoV2:
 
     @property
     def used_by_order_id(self):
-        """Gets the used_by_order_id of this CouponInfoV2.
+        r"""Gets the used_by_order_id of this CouponInfoV2.
 
         使用优惠券的订单ID。表示有订单正在使用这个优惠券，优惠券已被锁定，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
@@ -532,7 +532,7 @@ class CouponInfoV2:
 
     @used_by_order_id.setter
     def used_by_order_id(self, used_by_order_id):
-        """Sets the used_by_order_id of this CouponInfoV2.
+        r"""Sets the used_by_order_id of this CouponInfoV2.
 
         使用优惠券的订单ID。表示有订单正在使用这个优惠券，优惠券已被锁定，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
@@ -543,7 +543,7 @@ class CouponInfoV2:
 
     @property
     def coupon_usage(self):
-        """Gets the coupon_usage of this CouponInfoV2.
+        r"""Gets the coupon_usage of this CouponInfoV2.
 
         优惠券用途。
 
@@ -554,7 +554,7 @@ class CouponInfoV2:
 
     @coupon_usage.setter
     def coupon_usage(self, coupon_usage):
-        """Sets the coupon_usage of this CouponInfoV2.
+        r"""Sets the coupon_usage of this CouponInfoV2.
 
         优惠券用途。
 
@@ -565,7 +565,7 @@ class CouponInfoV2:
 
     @property
     def coupon_group(self):
-        """Gets the coupon_group of this CouponInfoV2.
+        r"""Gets the coupon_group of this CouponInfoV2.
 
         优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
@@ -576,7 +576,7 @@ class CouponInfoV2:
 
     @coupon_group.setter
     def coupon_group(self, coupon_group):
-        """Sets the coupon_group of this CouponInfoV2.
+        r"""Sets the coupon_group of this CouponInfoV2.
 
         优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 

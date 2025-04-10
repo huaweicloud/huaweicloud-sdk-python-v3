@@ -28,7 +28,7 @@ class ListReceivedHandshakesResponse(SdkResponse):
     }
 
     def __init__(self, handshakes=None, page_info=None):
-        """ListReceivedHandshakesResponse
+        r"""ListReceivedHandshakesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListReceivedHandshakesResponse(SdkResponse):
 
     @property
     def handshakes(self):
-        """Gets the handshakes of this ListReceivedHandshakesResponse.
+        r"""Gets the handshakes of this ListReceivedHandshakesResponse.
 
         邀请（握手）对象的列表，其中包含与指定账号关联的每个邀请（握手）的详细信息。
 
@@ -62,7 +62,7 @@ class ListReceivedHandshakesResponse(SdkResponse):
 
     @handshakes.setter
     def handshakes(self, handshakes):
-        """Sets the handshakes of this ListReceivedHandshakesResponse.
+        r"""Sets the handshakes of this ListReceivedHandshakesResponse.
 
         邀请（握手）对象的列表，其中包含与指定账号关联的每个邀请（握手）的详细信息。
 
@@ -73,7 +73,7 @@ class ListReceivedHandshakesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListReceivedHandshakesResponse.
+        r"""Gets the page_info of this ListReceivedHandshakesResponse.
 
         :return: The page_info of this ListReceivedHandshakesResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListReceivedHandshakesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListReceivedHandshakesResponse.
+        r"""Sets the page_info of this ListReceivedHandshakesResponse.
 
         :param page_info: The page_info of this ListReceivedHandshakesResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

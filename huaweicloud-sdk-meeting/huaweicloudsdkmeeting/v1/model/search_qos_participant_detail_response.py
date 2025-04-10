@@ -28,7 +28,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
     }
 
     def __init__(self, user=None, qos=None):
-        """SearchQosParticipantDetailResponse
+        r"""SearchQosParticipantDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this SearchQosParticipantDetailResponse.
+        r"""Gets the user of this SearchQosParticipantDetailResponse.
 
         :return: The user of this SearchQosParticipantDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`
@@ -60,7 +60,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this SearchQosParticipantDetailResponse.
+        r"""Sets the user of this SearchQosParticipantDetailResponse.
 
         :param user: The user of this SearchQosParticipantDetailResponse.
         :type user: :class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`
@@ -69,7 +69,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
     @property
     def qos(self):
-        """Gets the qos of this SearchQosParticipantDetailResponse.
+        r"""Gets the qos of this SearchQosParticipantDetailResponse.
 
         :return: The qos of this SearchQosParticipantDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosInfo`
@@ -78,7 +78,7 @@ class SearchQosParticipantDetailResponse(SdkResponse):
 
     @qos.setter
     def qos(self, qos):
-        """Sets the qos of this SearchQosParticipantDetailResponse.
+        r"""Sets the qos of this SearchQosParticipantDetailResponse.
 
         :param qos: The qos of this SearchQosParticipantDetailResponse.
         :type qos: :class:`huaweicloudsdkmeeting.v1.QosInfo`

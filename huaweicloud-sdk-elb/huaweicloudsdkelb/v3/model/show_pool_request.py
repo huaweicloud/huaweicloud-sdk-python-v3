@@ -25,7 +25,7 @@ class ShowPoolRequest:
     }
 
     def __init__(self, pool_id=None):
-        """ShowPoolRequest
+        r"""ShowPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ShowPoolRequest.
+        r"""Gets the pool_id of this ShowPoolRequest.
 
         参数解释：后端服务器组ID。
 
@@ -53,7 +53,7 @@ class ShowPoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ShowPoolRequest.
+        r"""Sets the pool_id of this ShowPoolRequest.
 
         参数解释：后端服务器组ID。
 

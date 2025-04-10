@@ -26,7 +26,7 @@ class AddPartitionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddPartitionsResponse
+        r"""AddPartitionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddPartitionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddPartitionsResponse.
+        r"""Gets the body of this AddPartitionsResponse.
 
         :return: The body of this AddPartitionsResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Partition`]
@@ -53,7 +53,7 @@ class AddPartitionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddPartitionsResponse.
+        r"""Sets the body of this AddPartitionsResponse.
 
         :param body: The body of this AddPartitionsResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Partition`]

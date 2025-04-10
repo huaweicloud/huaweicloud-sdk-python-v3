@@ -25,7 +25,7 @@ class HealthReportSummaryInfo:
     }
 
     def __init__(self, analysis_results=None):
-        """HealthReportSummaryInfo
+        r"""HealthReportSummaryInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HealthReportSummaryInfo:
 
     @property
     def analysis_results(self):
-        """Gets the analysis_results of this HealthReportSummaryInfo.
+        r"""Gets the analysis_results of this HealthReportSummaryInfo.
 
         分析结果列表
 
@@ -53,7 +53,7 @@ class HealthReportSummaryInfo:
 
     @analysis_results.setter
     def analysis_results(self, analysis_results):
-        """Sets the analysis_results of this HealthReportSummaryInfo.
+        r"""Sets the analysis_results of this HealthReportSummaryInfo.
 
         分析结果列表
 

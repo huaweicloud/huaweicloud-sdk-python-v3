@@ -27,7 +27,7 @@ class BalancerActiveWindow:
     }
 
     def __init__(self, start_time=None, stop_time=None):
-        """BalancerActiveWindow
+        r"""BalancerActiveWindow
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BalancerActiveWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BalancerActiveWindow.
+        r"""Gets the start_time of this BalancerActiveWindow.
 
         活动时间窗开始时间。
 
@@ -61,7 +61,7 @@ class BalancerActiveWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BalancerActiveWindow.
+        r"""Sets the start_time of this BalancerActiveWindow.
 
         活动时间窗开始时间。
 
@@ -72,7 +72,7 @@ class BalancerActiveWindow:
 
     @property
     def stop_time(self):
-        """Gets the stop_time of this BalancerActiveWindow.
+        r"""Gets the stop_time of this BalancerActiveWindow.
 
         活动时间窗结束时间。
 
@@ -83,7 +83,7 @@ class BalancerActiveWindow:
 
     @stop_time.setter
     def stop_time(self, stop_time):
-        """Sets the stop_time of this BalancerActiveWindow.
+        r"""Sets the stop_time of this BalancerActiveWindow.
 
         活动时间窗结束时间。
 

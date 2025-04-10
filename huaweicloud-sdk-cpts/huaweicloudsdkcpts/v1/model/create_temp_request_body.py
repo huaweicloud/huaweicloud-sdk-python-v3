@@ -33,7 +33,7 @@ class CreateTempRequestBody:
     }
 
     def __init__(self, project_id=None, temp_type=None, name=None, description=None, contents=None):
-        """CreateTempRequestBody
+        r"""CreateTempRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateTempRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTempRequestBody.
+        r"""Gets the project_id of this CreateTempRequestBody.
 
         所属工程id
 
@@ -79,7 +79,7 @@ class CreateTempRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTempRequestBody.
+        r"""Sets the project_id of this CreateTempRequestBody.
 
         所属工程id
 
@@ -90,7 +90,7 @@ class CreateTempRequestBody:
 
     @property
     def temp_type(self):
-        """Gets the temp_type of this CreateTempRequestBody.
+        r"""Gets the temp_type of this CreateTempRequestBody.
 
         事务类型
 
@@ -101,7 +101,7 @@ class CreateTempRequestBody:
 
     @temp_type.setter
     def temp_type(self, temp_type):
-        """Sets the temp_type of this CreateTempRequestBody.
+        r"""Sets the temp_type of this CreateTempRequestBody.
 
         事务类型
 
@@ -112,7 +112,7 @@ class CreateTempRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateTempRequestBody.
+        r"""Gets the name of this CreateTempRequestBody.
 
         事务名称
 
@@ -123,7 +123,7 @@ class CreateTempRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTempRequestBody.
+        r"""Sets the name of this CreateTempRequestBody.
 
         事务名称
 
@@ -134,7 +134,7 @@ class CreateTempRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateTempRequestBody.
+        r"""Gets the description of this CreateTempRequestBody.
 
         描述信息
 
@@ -145,7 +145,7 @@ class CreateTempRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTempRequestBody.
+        r"""Sets the description of this CreateTempRequestBody.
 
         描述信息
 
@@ -156,7 +156,7 @@ class CreateTempRequestBody:
 
     @property
     def contents(self):
-        """Gets the contents of this CreateTempRequestBody.
+        r"""Gets the contents of this CreateTempRequestBody.
 
         事务脚本信息
 
@@ -167,7 +167,7 @@ class CreateTempRequestBody:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CreateTempRequestBody.
+        r"""Sets the contents of this CreateTempRequestBody.
 
         事务脚本信息
 

@@ -26,7 +26,7 @@ class ChangeDesktopToImageResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeDesktopToImageResponse
+        r"""ChangeDesktopToImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeDesktopToImageResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeDesktopToImageResponse.
+        r"""Gets the job_id of this ChangeDesktopToImageResponse.
 
         桌面转镜像任务id。
 
@@ -55,7 +55,7 @@ class ChangeDesktopToImageResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeDesktopToImageResponse.
+        r"""Sets the job_id of this ChangeDesktopToImageResponse.
 
         桌面转镜像任务id。
 

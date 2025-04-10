@@ -27,7 +27,7 @@ class RecallFiled:
     }
 
     def __init__(self, name=None, value=None):
-        """RecallFiled
+        r"""RecallFiled
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RecallFiled:
 
     @property
     def name(self):
-        """Gets the name of this RecallFiled.
+        r"""Gets the name of this RecallFiled.
 
         字段名称。
 
@@ -61,7 +61,7 @@ class RecallFiled:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecallFiled.
+        r"""Sets the name of this RecallFiled.
 
         字段名称。
 
@@ -72,7 +72,7 @@ class RecallFiled:
 
     @property
     def value(self):
-        """Gets the value of this RecallFiled.
+        r"""Gets the value of this RecallFiled.
 
         使用字段值的个数。
 
@@ -83,7 +83,7 @@ class RecallFiled:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RecallFiled.
+        r"""Sets the value of this RecallFiled.
 
         使用字段值的个数。
 

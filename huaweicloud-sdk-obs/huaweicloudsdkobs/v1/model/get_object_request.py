@@ -65,7 +65,7 @@ class GetObjectRequest:
     }
 
     def __init__(self, bucket_name=None, object_key=None, date=None, response_content_type=None, response_content_language=None, response_expires=None, response_cache_control=None, response_content_disposition=None, response_content_encoding=None, version_id=None, x_image_process=None, attname=None, range=None, if_modified_since=None, if_unmodified_since=None, if_match=None, if_none_match=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None):
-        """GetObjectRequest
+        r"""GetObjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class GetObjectRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this GetObjectRequest.
+        r"""Gets the bucket_name of this GetObjectRequest.
 
         Name of the bucket.
 
@@ -187,7 +187,7 @@ class GetObjectRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this GetObjectRequest.
+        r"""Sets the bucket_name of this GetObjectRequest.
 
         Name of the bucket.
 
@@ -198,7 +198,7 @@ class GetObjectRequest:
 
     @property
     def object_key(self):
-        """Gets the object_key of this GetObjectRequest.
+        r"""Gets the object_key of this GetObjectRequest.
 
         Object key for which this operation was initiated.
 
@@ -209,7 +209,7 @@ class GetObjectRequest:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this GetObjectRequest.
+        r"""Sets the object_key of this GetObjectRequest.
 
         Object key for which this operation was initiated.
 
@@ -220,7 +220,7 @@ class GetObjectRequest:
 
     @property
     def date(self):
-        """Gets the date of this GetObjectRequest.
+        r"""Gets the date of this GetObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -231,7 +231,7 @@ class GetObjectRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetObjectRequest.
+        r"""Sets the date of this GetObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -242,7 +242,7 @@ class GetObjectRequest:
 
     @property
     def response_content_type(self):
-        """Gets the response_content_type of this GetObjectRequest.
+        r"""Gets the response_content_type of this GetObjectRequest.
 
         Overrides the **Content-Type** header in the response.
 
@@ -253,7 +253,7 @@ class GetObjectRequest:
 
     @response_content_type.setter
     def response_content_type(self, response_content_type):
-        """Sets the response_content_type of this GetObjectRequest.
+        r"""Sets the response_content_type of this GetObjectRequest.
 
         Overrides the **Content-Type** header in the response.
 
@@ -264,7 +264,7 @@ class GetObjectRequest:
 
     @property
     def response_content_language(self):
-        """Gets the response_content_language of this GetObjectRequest.
+        r"""Gets the response_content_language of this GetObjectRequest.
 
         Overrides the **Content-Language** header in the response.
 
@@ -275,7 +275,7 @@ class GetObjectRequest:
 
     @response_content_language.setter
     def response_content_language(self, response_content_language):
-        """Sets the response_content_language of this GetObjectRequest.
+        r"""Sets the response_content_language of this GetObjectRequest.
 
         Overrides the **Content-Language** header in the response.
 
@@ -286,7 +286,7 @@ class GetObjectRequest:
 
     @property
     def response_expires(self):
-        """Gets the response_expires of this GetObjectRequest.
+        r"""Gets the response_expires of this GetObjectRequest.
 
         Overrides the **Expires** header in the response.
 
@@ -297,7 +297,7 @@ class GetObjectRequest:
 
     @response_expires.setter
     def response_expires(self, response_expires):
-        """Sets the response_expires of this GetObjectRequest.
+        r"""Sets the response_expires of this GetObjectRequest.
 
         Overrides the **Expires** header in the response.
 
@@ -308,7 +308,7 @@ class GetObjectRequest:
 
     @property
     def response_cache_control(self):
-        """Gets the response_cache_control of this GetObjectRequest.
+        r"""Gets the response_cache_control of this GetObjectRequest.
 
         Overrides the **Cache-Control** header in the response.
 
@@ -319,7 +319,7 @@ class GetObjectRequest:
 
     @response_cache_control.setter
     def response_cache_control(self, response_cache_control):
-        """Sets the response_cache_control of this GetObjectRequest.
+        r"""Sets the response_cache_control of this GetObjectRequest.
 
         Overrides the **Cache-Control** header in the response.
 
@@ -330,7 +330,7 @@ class GetObjectRequest:
 
     @property
     def response_content_disposition(self):
-        """Gets the response_content_disposition of this GetObjectRequest.
+        r"""Gets the response_content_disposition of this GetObjectRequest.
 
         Overrides the **Content-Disposition** header in the response.  Example: response-content-disposition=attachment; filename*=utf-8''name1  In this example, the downloaded object is renamed **name1**. If **name1** contains Chinese characters, the Chinese characters must be URL-encoded.
 
@@ -341,7 +341,7 @@ class GetObjectRequest:
 
     @response_content_disposition.setter
     def response_content_disposition(self, response_content_disposition):
-        """Sets the response_content_disposition of this GetObjectRequest.
+        r"""Sets the response_content_disposition of this GetObjectRequest.
 
         Overrides the **Content-Disposition** header in the response.  Example: response-content-disposition=attachment; filename*=utf-8''name1  In this example, the downloaded object is renamed **name1**. If **name1** contains Chinese characters, the Chinese characters must be URL-encoded.
 
@@ -352,7 +352,7 @@ class GetObjectRequest:
 
     @property
     def response_content_encoding(self):
-        """Gets the response_content_encoding of this GetObjectRequest.
+        r"""Gets the response_content_encoding of this GetObjectRequest.
 
         Overrides the **Content-Encoding** header in the response.
 
@@ -363,7 +363,7 @@ class GetObjectRequest:
 
     @response_content_encoding.setter
     def response_content_encoding(self, response_content_encoding):
-        """Sets the response_content_encoding of this GetObjectRequest.
+        r"""Sets the response_content_encoding of this GetObjectRequest.
 
         Overrides the **Content-Encoding** header in the response.
 
@@ -374,7 +374,7 @@ class GetObjectRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this GetObjectRequest.
+        r"""Gets the version_id of this GetObjectRequest.
 
         Version ID of the object you want to download.
 
@@ -385,7 +385,7 @@ class GetObjectRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this GetObjectRequest.
+        r"""Sets the version_id of this GetObjectRequest.
 
         Version ID of the object you want to download.
 
@@ -396,7 +396,7 @@ class GetObjectRequest:
 
     @property
     def x_image_process(self):
-        """Gets the x_image_process of this GetObjectRequest.
+        r"""Gets the x_image_process of this GetObjectRequest.
 
         Image processing service.Examples:Command: x-image-process=image/commandsStyle: x-image-process=style/stylenameFor details, see the [Image Processing Feature Guide](https://support.huaweicloud.com/intl/en-us/fg-obs/obs_01_0001.html).
 
@@ -407,7 +407,7 @@ class GetObjectRequest:
 
     @x_image_process.setter
     def x_image_process(self, x_image_process):
-        """Sets the x_image_process of this GetObjectRequest.
+        r"""Sets the x_image_process of this GetObjectRequest.
 
         Image processing service.Examples:Command: x-image-process=image/commandsStyle: x-image-process=style/stylenameFor details, see the [Image Processing Feature Guide](https://support.huaweicloud.com/intl/en-us/fg-obs/obs_01_0001.html).
 
@@ -418,7 +418,7 @@ class GetObjectRequest:
 
     @property
     def attname(self):
-        """Gets the attname of this GetObjectRequest.
+        r"""Gets the attname of this GetObjectRequest.
 
         Overrides the **Content-Disposition** header in the response.  Example: attname=name1  The downloaded object is renamed **name1**.
 
@@ -429,7 +429,7 @@ class GetObjectRequest:
 
     @attname.setter
     def attname(self, attname):
-        """Sets the attname of this GetObjectRequest.
+        r"""Sets the attname of this GetObjectRequest.
 
         Overrides the **Content-Disposition** header in the response.  Example: attname=name1  The downloaded object is renamed **name1**.
 
@@ -440,7 +440,7 @@ class GetObjectRequest:
 
     @property
     def range(self):
-        """Gets the range of this GetObjectRequest.
+        r"""Gets the range of this GetObjectRequest.
 
         Obtains the content within the scope defined by **Range**. If the **Range** header is invalid, the entire object is obtained.**Range** consists of a start value and an end value. Its start value is mandatory and ranges from 0 to the object length minus 1. If **Range** contains only a start value, the object content from the start value to the default maximum start value is obtained.With the **Range** header carried, the ETag in the response is still the ETag of the object, instead of that of the object content defined by the **Range** header.bytes=byte_rangeExample 1: bytes=0-4Example 2: bytes=1024Example 3: bytes=10-20,30-40 (multiple ranges)
 
@@ -451,7 +451,7 @@ class GetObjectRequest:
 
     @range.setter
     def range(self, range):
-        """Sets the range of this GetObjectRequest.
+        r"""Sets the range of this GetObjectRequest.
 
         Obtains the content within the scope defined by **Range**. If the **Range** header is invalid, the entire object is obtained.**Range** consists of a start value and an end value. Its start value is mandatory and ranges from 0 to the object length minus 1. If **Range** contains only a start value, the object content from the start value to the default maximum start value is obtained.With the **Range** header carried, the ETag in the response is still the ETag of the object, instead of that of the object content defined by the **Range** header.bytes=byte_rangeExample 1: bytes=0-4Example 2: bytes=1024Example 3: bytes=10-20,30-40 (multiple ranges)
 
@@ -462,7 +462,7 @@ class GetObjectRequest:
 
     @property
     def if_modified_since(self):
-        """Gets the if_modified_since of this GetObjectRequest.
+        r"""Gets the if_modified_since of this GetObjectRequest.
 
         Returns the object only if it has been modified since the time specified in the request, or **304 Not Modified** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
@@ -473,7 +473,7 @@ class GetObjectRequest:
 
     @if_modified_since.setter
     def if_modified_since(self, if_modified_since):
-        """Sets the if_modified_since of this GetObjectRequest.
+        r"""Sets the if_modified_since of this GetObjectRequest.
 
         Returns the object only if it has been modified since the time specified in the request, or **304 Not Modified** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
@@ -484,7 +484,7 @@ class GetObjectRequest:
 
     @property
     def if_unmodified_since(self):
-        """Gets the if_unmodified_since of this GetObjectRequest.
+        r"""Gets the if_unmodified_since of this GetObjectRequest.
 
         Returns the object only if it has not been modified since the time specified in the request, or **412 Precondition Failed** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
@@ -495,7 +495,7 @@ class GetObjectRequest:
 
     @if_unmodified_since.setter
     def if_unmodified_since(self, if_unmodified_since):
-        """Sets the if_unmodified_since of this GetObjectRequest.
+        r"""Sets the if_unmodified_since of this GetObjectRequest.
 
         Returns the object only if it has not been modified since the time specified in the request, or **412 Precondition Failed** is returned.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**
 
@@ -506,7 +506,7 @@ class GetObjectRequest:
 
     @property
     def if_match(self):
-        """Gets the if_match of this GetObjectRequest.
+        r"""Gets the if_match of this GetObjectRequest.
 
         Returns the object only if its ETag is the same as the one specified in the request, or **412 Precondition Failed** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
@@ -517,7 +517,7 @@ class GetObjectRequest:
 
     @if_match.setter
     def if_match(self, if_match):
-        """Sets the if_match of this GetObjectRequest.
+        r"""Sets the if_match of this GetObjectRequest.
 
         Returns the object only if its ETag is the same as the one specified in the request, or **412 Precondition Failed** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
@@ -528,7 +528,7 @@ class GetObjectRequest:
 
     @property
     def if_none_match(self):
-        """Gets the if_none_match of this GetObjectRequest.
+        r"""Gets the if_none_match of this GetObjectRequest.
 
         Returns the object only if its ETag is different from the one specified in the request, or **304 Not Modified** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
@@ -539,7 +539,7 @@ class GetObjectRequest:
 
     @if_none_match.setter
     def if_none_match(self, if_none_match):
-        """Sets the if_none_match of this GetObjectRequest.
+        r"""Sets the if_none_match of this GetObjectRequest.
 
         Returns the object only if its ETag is different from the one specified in the request, or **304 Not Modified** is returned.  (ETag example: 0f64741bf7cb1089e988e4585d0d3434)
 
@@ -550,7 +550,7 @@ class GetObjectRequest:
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
 
         The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -561,7 +561,7 @@ class GetObjectRequest:
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectRequest.
 
         The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -572,7 +572,7 @@ class GetObjectRequest:
 
     @property
     def x_obs_server_side_encryption_customer_key(self):
-        """Gets the x_obs_server_side_encryption_customer_key of this GetObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key of this GetObjectRequest.
 
         Encryption key used for SSE-C. This key is used to decrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -583,7 +583,7 @@ class GetObjectRequest:
 
     @x_obs_server_side_encryption_customer_key.setter
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
-        """Sets the x_obs_server_side_encryption_customer_key of this GetObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key of this GetObjectRequest.
 
         Encryption key used for SSE-C. This key is used to decrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -594,7 +594,7 @@ class GetObjectRequest:
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
 
         MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
@@ -605,7 +605,7 @@ class GetObjectRequest:
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectRequest.
 
         MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 

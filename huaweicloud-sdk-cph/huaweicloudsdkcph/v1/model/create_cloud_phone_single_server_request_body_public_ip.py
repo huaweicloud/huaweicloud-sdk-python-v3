@@ -31,7 +31,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
     }
 
     def __init__(self, ids=None, type=None, count=None, band_width=None):
-        """CreateCloudPhoneSingleServerRequestBodyPublicIp
+        r"""CreateCloudPhoneSingleServerRequestBodyPublicIp
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @property
     def ids(self):
-        """Gets the ids of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Gets the ids of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         指定已有的EIP进行云手机裸服务器创建，当前只支持传入一个已有的EIP ID。指定EIP后public_ip结构体中count字段和type字段不生效。
 
@@ -74,7 +74,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Sets the ids of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         指定已有的EIP进行云手机裸服务器创建，当前只支持传入一个已有的EIP ID。指定EIP后public_ip结构体中count字段和type字段不生效。
 
@@ -85,7 +85,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @property
     def type(self):
-        """Gets the type of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Gets the type of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         弹性公网IP的类型。 例如： 5_telcom：电信 5_union：联通 5_bgp：全动态BGP 5_sbgp：静态BGP
 
@@ -96,7 +96,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Sets the type of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         弹性公网IP的类型。 例如： 5_telcom：电信 5_union：联通 5_bgp：全动态BGP 5_sbgp：静态BGP
 
@@ -107,7 +107,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @property
     def count(self):
-        """Gets the count of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Gets the count of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         Eip数量。默认为0。取值范围为【0,1】
 
@@ -118,7 +118,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Sets the count of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         Eip数量。默认为0。取值范围为【0,1】
 
@@ -129,7 +129,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @property
     def band_width(self):
-        """Gets the band_width of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Gets the band_width of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         :return: The band_width of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth`
@@ -138,7 +138,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIp:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
+        r"""Sets the band_width of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
 
         :param band_width: The band_width of this CreateCloudPhoneSingleServerRequestBodyPublicIp.
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth`

@@ -33,7 +33,7 @@ class ExitEntryPermitEndorsementInfo:
     }
 
     def __init__(self, endorsement_type=None, valid_round_trips=None, endorsement_valid_period=None, remark=None, issue_info=None):
-        """ExitEntryPermitEndorsementInfo
+        r"""ExitEntryPermitEndorsementInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @property
     def endorsement_type(self):
-        """Gets the endorsement_type of this ExitEntryPermitEndorsementInfo.
+        r"""Gets the endorsement_type of this ExitEntryPermitEndorsementInfo.
 
         签注种类。 
 
@@ -82,7 +82,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @endorsement_type.setter
     def endorsement_type(self, endorsement_type):
-        """Sets the endorsement_type of this ExitEntryPermitEndorsementInfo.
+        r"""Sets the endorsement_type of this ExitEntryPermitEndorsementInfo.
 
         签注种类。 
 
@@ -93,7 +93,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @property
     def valid_round_trips(self):
-        """Gets the valid_round_trips of this ExitEntryPermitEndorsementInfo.
+        r"""Gets the valid_round_trips of this ExitEntryPermitEndorsementInfo.
 
         签注往返有效次数。 
 
@@ -104,7 +104,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @valid_round_trips.setter
     def valid_round_trips(self, valid_round_trips):
-        """Sets the valid_round_trips of this ExitEntryPermitEndorsementInfo.
+        r"""Sets the valid_round_trips of this ExitEntryPermitEndorsementInfo.
 
         签注往返有效次数。 
 
@@ -115,7 +115,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @property
     def endorsement_valid_period(self):
-        """Gets the endorsement_valid_period of this ExitEntryPermitEndorsementInfo.
+        r"""Gets the endorsement_valid_period of this ExitEntryPermitEndorsementInfo.
 
         签注有效期。 
 
@@ -126,7 +126,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @endorsement_valid_period.setter
     def endorsement_valid_period(self, endorsement_valid_period):
-        """Sets the endorsement_valid_period of this ExitEntryPermitEndorsementInfo.
+        r"""Sets the endorsement_valid_period of this ExitEntryPermitEndorsementInfo.
 
         签注有效期。 
 
@@ -137,7 +137,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ExitEntryPermitEndorsementInfo.
+        r"""Gets the remark of this ExitEntryPermitEndorsementInfo.
 
         签注备注。 
 
@@ -148,7 +148,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ExitEntryPermitEndorsementInfo.
+        r"""Sets the remark of this ExitEntryPermitEndorsementInfo.
 
         签注备注。 
 
@@ -159,7 +159,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @property
     def issue_info(self):
-        """Gets the issue_info of this ExitEntryPermitEndorsementInfo.
+        r"""Gets the issue_info of this ExitEntryPermitEndorsementInfo.
 
         签注签发信息。 
 
@@ -170,7 +170,7 @@ class ExitEntryPermitEndorsementInfo:
 
     @issue_info.setter
     def issue_info(self, issue_info):
-        """Sets the issue_info of this ExitEntryPermitEndorsementInfo.
+        r"""Sets the issue_info of this ExitEntryPermitEndorsementInfo.
 
         签注签发信息。 
 

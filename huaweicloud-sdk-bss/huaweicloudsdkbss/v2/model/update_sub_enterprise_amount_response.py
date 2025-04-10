@@ -24,7 +24,7 @@ class UpdateSubEnterpriseAmountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateSubEnterpriseAmountResponse
+        r"""UpdateSubEnterpriseAmountResponse
 
         The model defined in huaweicloud sdk
 

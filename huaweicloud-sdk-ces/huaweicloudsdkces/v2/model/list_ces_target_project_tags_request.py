@@ -25,7 +25,7 @@ class ListCesTargetProjectTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListCesTargetProjectTagsRequest
+        r"""ListCesTargetProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListCesTargetProjectTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListCesTargetProjectTagsRequest.
+        r"""Gets the resource_type of this ListCesTargetProjectTagsRequest.
 
         资源类型。CES-alarm：告警规则
 
@@ -53,7 +53,7 @@ class ListCesTargetProjectTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListCesTargetProjectTagsRequest.
+        r"""Sets the resource_type of this ListCesTargetProjectTagsRequest.
 
         资源类型。CES-alarm：告警规则
 

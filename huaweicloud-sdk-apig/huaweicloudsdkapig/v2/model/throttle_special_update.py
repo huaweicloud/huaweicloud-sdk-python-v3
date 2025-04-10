@@ -25,7 +25,7 @@ class ThrottleSpecialUpdate:
     }
 
     def __init__(self, call_limits=None):
-        """ThrottleSpecialUpdate
+        r"""ThrottleSpecialUpdate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ThrottleSpecialUpdate:
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this ThrottleSpecialUpdate.
+        r"""Gets the call_limits of this ThrottleSpecialUpdate.
 
         流控时间内特殊对象能够访问API的最大次数限制
 
@@ -53,7 +53,7 @@ class ThrottleSpecialUpdate:
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this ThrottleSpecialUpdate.
+        r"""Sets the call_limits of this ThrottleSpecialUpdate.
 
         流控时间内特殊对象能够访问API的最大次数限制
 

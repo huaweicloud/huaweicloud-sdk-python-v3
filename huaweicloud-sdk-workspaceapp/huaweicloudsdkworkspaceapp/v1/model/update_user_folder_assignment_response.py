@@ -24,7 +24,7 @@ class UpdateUserFolderAssignmentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateUserFolderAssignmentResponse
+        r"""UpdateUserFolderAssignmentResponse
 
         The model defined in huaweicloud sdk
 

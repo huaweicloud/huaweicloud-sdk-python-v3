@@ -29,7 +29,7 @@ class SiteNetworkTopologyEnum:
     }
 
     def __init__(self):
-        """SiteNetworkTopologyEnum
+        r"""SiteNetworkTopologyEnum
 
         The model defined in huaweicloud sdk
 

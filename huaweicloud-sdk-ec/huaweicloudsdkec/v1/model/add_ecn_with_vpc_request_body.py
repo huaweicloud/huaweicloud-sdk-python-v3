@@ -33,7 +33,7 @@ class AddEcnWithVpcRequestBody:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, local_subnet_list=None, region_project_id=None, region_id=None):
-        """AddEcnWithVpcRequestBody
+        r"""AddEcnWithVpcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AddEcnWithVpcRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AddEcnWithVpcRequestBody.
+        r"""Gets the vpc_id of this AddEcnWithVpcRequestBody.
 
         虚拟私有云ID
 
@@ -77,7 +77,7 @@ class AddEcnWithVpcRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AddEcnWithVpcRequestBody.
+        r"""Sets the vpc_id of this AddEcnWithVpcRequestBody.
 
         虚拟私有云ID
 
@@ -88,7 +88,7 @@ class AddEcnWithVpcRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AddEcnWithVpcRequestBody.
+        r"""Gets the subnet_id of this AddEcnWithVpcRequestBody.
 
         子网ID
 
@@ -99,7 +99,7 @@ class AddEcnWithVpcRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AddEcnWithVpcRequestBody.
+        r"""Sets the subnet_id of this AddEcnWithVpcRequestBody.
 
         子网ID
 
@@ -110,7 +110,7 @@ class AddEcnWithVpcRequestBody:
 
     @property
     def local_subnet_list(self):
-        """Gets the local_subnet_list of this AddEcnWithVpcRequestBody.
+        r"""Gets the local_subnet_list of this AddEcnWithVpcRequestBody.
 
         本端子网列表
 
@@ -121,7 +121,7 @@ class AddEcnWithVpcRequestBody:
 
     @local_subnet_list.setter
     def local_subnet_list(self, local_subnet_list):
-        """Sets the local_subnet_list of this AddEcnWithVpcRequestBody.
+        r"""Sets the local_subnet_list of this AddEcnWithVpcRequestBody.
 
         本端子网列表
 
@@ -132,7 +132,7 @@ class AddEcnWithVpcRequestBody:
 
     @property
     def region_project_id(self):
-        """Gets the region_project_id of this AddEcnWithVpcRequestBody.
+        r"""Gets the region_project_id of this AddEcnWithVpcRequestBody.
 
         虚拟私有云区域项目ID
 
@@ -143,7 +143,7 @@ class AddEcnWithVpcRequestBody:
 
     @region_project_id.setter
     def region_project_id(self, region_project_id):
-        """Sets the region_project_id of this AddEcnWithVpcRequestBody.
+        r"""Sets the region_project_id of this AddEcnWithVpcRequestBody.
 
         虚拟私有云区域项目ID
 
@@ -154,7 +154,7 @@ class AddEcnWithVpcRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AddEcnWithVpcRequestBody.
+        r"""Gets the region_id of this AddEcnWithVpcRequestBody.
 
         区域ID
 
@@ -165,7 +165,7 @@ class AddEcnWithVpcRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AddEcnWithVpcRequestBody.
+        r"""Sets the region_id of this AddEcnWithVpcRequestBody.
 
         区域ID
 

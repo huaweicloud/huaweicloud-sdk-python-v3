@@ -38,7 +38,7 @@ class ExportCertificateResponse(SdkResponse):
     }
 
     def __init__(self, private_key=None, certificate=None, certificate_chain=None, enc_certificate=None, enc_private_key=None, enc_sm2_enveloped_key=None, signed_and_enveloped_data=None):
-        """ExportCertificateResponse
+        r"""ExportCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this ExportCertificateResponse.
+        r"""Gets the private_key of this ExportCertificateResponse.
 
         私钥内容。
 
@@ -97,7 +97,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ExportCertificateResponse.
+        r"""Sets the private_key of this ExportCertificateResponse.
 
         私钥内容。
 
@@ -108,7 +108,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this ExportCertificateResponse.
+        r"""Gets the certificate of this ExportCertificateResponse.
 
         证书内容。
 
@@ -119,7 +119,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ExportCertificateResponse.
+        r"""Sets the certificate of this ExportCertificateResponse.
 
         证书内容。
 
@@ -130,7 +130,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this ExportCertificateResponse.
+        r"""Gets the certificate_chain of this ExportCertificateResponse.
 
         证书链内容。
 
@@ -141,7 +141,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this ExportCertificateResponse.
+        r"""Sets the certificate_chain of this ExportCertificateResponse.
 
         证书链内容。
 
@@ -152,7 +152,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this ExportCertificateResponse.
+        r"""Gets the enc_certificate of this ExportCertificateResponse.
 
         加密证书内容。
 
@@ -163,7 +163,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this ExportCertificateResponse.
+        r"""Sets the enc_certificate of this ExportCertificateResponse.
 
         加密证书内容。
 
@@ -174,7 +174,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this ExportCertificateResponse.
+        r"""Gets the enc_private_key of this ExportCertificateResponse.
 
         加密私钥内容。
 
@@ -185,7 +185,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this ExportCertificateResponse.
+        r"""Sets the enc_private_key of this ExportCertificateResponse.
 
         加密私钥内容。
 
@@ -196,7 +196,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def enc_sm2_enveloped_key(self):
-        """Gets the enc_sm2_enveloped_key of this ExportCertificateResponse.
+        r"""Gets the enc_sm2_enveloped_key of this ExportCertificateResponse.
 
         加密私钥的国密GMT0009标准规范SM2数字信封。
 
@@ -207,7 +207,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @enc_sm2_enveloped_key.setter
     def enc_sm2_enveloped_key(self, enc_sm2_enveloped_key):
-        """Sets the enc_sm2_enveloped_key of this ExportCertificateResponse.
+        r"""Sets the enc_sm2_enveloped_key of this ExportCertificateResponse.
 
         加密私钥的国密GMT0009标准规范SM2数字信封。
 
@@ -218,7 +218,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def signed_and_enveloped_data(self):
-        """Gets the signed_and_enveloped_data of this ExportCertificateResponse.
+        r"""Gets the signed_and_enveloped_data of this ExportCertificateResponse.
 
         加密私钥的国密GMT0010标准规范签名数字信封。
 
@@ -229,7 +229,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @signed_and_enveloped_data.setter
     def signed_and_enveloped_data(self, signed_and_enveloped_data):
-        """Sets the signed_and_enveloped_data of this ExportCertificateResponse.
+        r"""Sets the signed_and_enveloped_data of this ExportCertificateResponse.
 
         加密私钥的国密GMT0010标准规范签名数字信封。
 

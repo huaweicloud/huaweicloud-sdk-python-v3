@@ -31,7 +31,7 @@ class TestCaseExecuteBean:
     }
 
     def __init__(self, testcase_id=None, execute_id=None, result_id=None, start_time=None):
-        """TestCaseExecuteBean
+        r"""TestCaseExecuteBean
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TestCaseExecuteBean:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this TestCaseExecuteBean.
+        r"""Gets the testcase_id of this TestCaseExecuteBean.
 
         测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
 
@@ -71,7 +71,7 @@ class TestCaseExecuteBean:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this TestCaseExecuteBean.
+        r"""Sets the testcase_id of this TestCaseExecuteBean.
 
         测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
 
@@ -82,7 +82,7 @@ class TestCaseExecuteBean:
 
     @property
     def execute_id(self):
-        """Gets the execute_id of this TestCaseExecuteBean.
+        r"""Gets the execute_id of this TestCaseExecuteBean.
 
         注册服务执行id，该值不允许重复，不超过32位字符
 
@@ -93,7 +93,7 @@ class TestCaseExecuteBean:
 
     @execute_id.setter
     def execute_id(self, execute_id):
-        """Sets the execute_id of this TestCaseExecuteBean.
+        r"""Sets the execute_id of this TestCaseExecuteBean.
 
         注册服务执行id，该值不允许重复，不超过32位字符
 
@@ -104,7 +104,7 @@ class TestCaseExecuteBean:
 
     @property
     def result_id(self):
-        """Gets the result_id of this TestCaseExecuteBean.
+        r"""Gets the result_id of this TestCaseExecuteBean.
 
         测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
 
@@ -115,7 +115,7 @@ class TestCaseExecuteBean:
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this TestCaseExecuteBean.
+        r"""Sets the result_id of this TestCaseExecuteBean.
 
         测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
 
@@ -126,7 +126,7 @@ class TestCaseExecuteBean:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TestCaseExecuteBean.
+        r"""Gets the start_time of this TestCaseExecuteBean.
 
         用例开始执行的时间戳，在执行开始时该字段必传
 
@@ -137,7 +137,7 @@ class TestCaseExecuteBean:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TestCaseExecuteBean.
+        r"""Sets the start_time of this TestCaseExecuteBean.
 
         用例开始执行的时间戳，在执行开始时该字段必传
 

@@ -27,7 +27,7 @@ class UpdateTsvi:
     }
 
     def __init__(self, id=None, enable=None):
-        """UpdateTsvi
+        r"""UpdateTsvi
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateTsvi:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTsvi.
+        r"""Gets the id of this UpdateTsvi.
 
         服务器ID。
 
@@ -59,7 +59,7 @@ class UpdateTsvi:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTsvi.
+        r"""Sets the id of this UpdateTsvi.
 
         服务器ID。
 
@@ -70,7 +70,7 @@ class UpdateTsvi:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateTsvi.
+        r"""Gets the enable of this UpdateTsvi.
 
         **⚠ 预留字段，不使用，是否启用虚拟IP功能与服务器组配置保持一致。 是否启用虚拟IP功能。 开关只在租户配置允许启用虚拟IP场景有效，否则忽略传值并设置为关闭。
 
@@ -81,7 +81,7 @@ class UpdateTsvi:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateTsvi.
+        r"""Sets the enable of this UpdateTsvi.
 
         **⚠ 预留字段，不使用，是否启用虚拟IP功能与服务器组配置保持一致。 是否启用虚拟IP功能。 开关只在租户配置允许启用虚拟IP场景有效，否则忽略传值并设置为关闭。
 

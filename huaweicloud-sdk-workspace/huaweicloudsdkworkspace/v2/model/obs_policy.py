@@ -27,7 +27,7 @@ class ObsPolicy:
     }
 
     def __init__(self, version=None, statement=None):
-        """ObsPolicy
+        r"""ObsPolicy
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ObsPolicy:
 
     @property
     def version(self):
-        """Gets the version of this ObsPolicy.
+        r"""Gets the version of this ObsPolicy.
 
         版本号。
 
@@ -61,7 +61,7 @@ class ObsPolicy:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ObsPolicy.
+        r"""Sets the version of this ObsPolicy.
 
         版本号。
 
@@ -72,7 +72,7 @@ class ObsPolicy:
 
     @property
     def statement(self):
-        """Gets the statement of this ObsPolicy.
+        r"""Gets the statement of this ObsPolicy.
 
         :return: The statement of this ObsPolicy.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ObsPolicyStatement`
@@ -81,7 +81,7 @@ class ObsPolicy:
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this ObsPolicy.
+        r"""Sets the statement of this ObsPolicy.
 
         :param statement: The statement of this ObsPolicy.
         :type statement: :class:`huaweicloudsdkworkspace.v2.ObsPolicyStatement`

@@ -34,7 +34,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """ShowAutopilotPreCheckResponse
+        r"""ShowAutopilotPreCheckResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowAutopilotPreCheckResponse.
+        r"""Gets the api_version of this ShowAutopilotPreCheckResponse.
 
         api版本，默认为v3
 
@@ -83,7 +83,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowAutopilotPreCheckResponse.
+        r"""Sets the api_version of this ShowAutopilotPreCheckResponse.
 
         api版本，默认为v3
 
@@ -94,7 +94,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowAutopilotPreCheckResponse.
+        r"""Gets the kind of this ShowAutopilotPreCheckResponse.
 
         资源类型，默认为PreCheckTask
 
@@ -105,7 +105,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowAutopilotPreCheckResponse.
+        r"""Sets the kind of this ShowAutopilotPreCheckResponse.
 
         资源类型，默认为PreCheckTask
 
@@ -116,7 +116,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowAutopilotPreCheckResponse.
+        r"""Gets the metadata of this ShowAutopilotPreCheckResponse.
 
         :return: The metadata of this ShowAutopilotPreCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckTaskMetadata`
@@ -125,7 +125,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowAutopilotPreCheckResponse.
+        r"""Sets the metadata of this ShowAutopilotPreCheckResponse.
 
         :param metadata: The metadata of this ShowAutopilotPreCheckResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.PrecheckTaskMetadata`
@@ -134,7 +134,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowAutopilotPreCheckResponse.
+        r"""Gets the spec of this ShowAutopilotPreCheckResponse.
 
         :return: The spec of this ShowAutopilotPreCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -143,7 +143,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowAutopilotPreCheckResponse.
+        r"""Sets the spec of this ShowAutopilotPreCheckResponse.
 
         :param spec: The spec of this ShowAutopilotPreCheckResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -152,7 +152,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAutopilotPreCheckResponse.
+        r"""Gets the status of this ShowAutopilotPreCheckResponse.
 
         :return: The status of this ShowAutopilotPreCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckStatus`
@@ -161,7 +161,7 @@ class ShowAutopilotPreCheckResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAutopilotPreCheckResponse.
+        r"""Sets the status of this ShowAutopilotPreCheckResponse.
 
         :param status: The status of this ShowAutopilotPreCheckResponse.
         :type status: :class:`huaweicloudsdkcce.v3.PrecheckStatus`

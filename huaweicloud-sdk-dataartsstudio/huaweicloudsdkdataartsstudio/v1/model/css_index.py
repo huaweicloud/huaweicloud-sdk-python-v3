@@ -33,7 +33,7 @@ class CssIndex:
     }
 
     def __init__(self, index_name=None, index_guid=None, index_qualified_name=None, index_doc_count=None, index_data_size=None):
-        """CssIndex
+        r"""CssIndex
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CssIndex:
 
     @property
     def index_name(self):
-        """Gets the index_name of this CssIndex.
+        r"""Gets the index_name of this CssIndex.
 
         索引名称
 
@@ -82,7 +82,7 @@ class CssIndex:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this CssIndex.
+        r"""Sets the index_name of this CssIndex.
 
         索引名称
 
@@ -93,7 +93,7 @@ class CssIndex:
 
     @property
     def index_guid(self):
-        """Gets the index_guid of this CssIndex.
+        r"""Gets the index_guid of this CssIndex.
 
         索引的guid
 
@@ -104,7 +104,7 @@ class CssIndex:
 
     @index_guid.setter
     def index_guid(self, index_guid):
-        """Sets the index_guid of this CssIndex.
+        r"""Sets the index_guid of this CssIndex.
 
         索引的guid
 
@@ -115,7 +115,7 @@ class CssIndex:
 
     @property
     def index_qualified_name(self):
-        """Gets the index_qualified_name of this CssIndex.
+        r"""Gets the index_qualified_name of this CssIndex.
 
         索引的唯一标识名称
 
@@ -126,7 +126,7 @@ class CssIndex:
 
     @index_qualified_name.setter
     def index_qualified_name(self, index_qualified_name):
-        """Sets the index_qualified_name of this CssIndex.
+        r"""Sets the index_qualified_name of this CssIndex.
 
         索引的唯一标识名称
 
@@ -137,7 +137,7 @@ class CssIndex:
 
     @property
     def index_doc_count(self):
-        """Gets the index_doc_count of this CssIndex.
+        r"""Gets the index_doc_count of this CssIndex.
 
         索引中文档总数
 
@@ -148,7 +148,7 @@ class CssIndex:
 
     @index_doc_count.setter
     def index_doc_count(self, index_doc_count):
-        """Sets the index_doc_count of this CssIndex.
+        r"""Sets the index_doc_count of this CssIndex.
 
         索引中文档总数
 
@@ -159,7 +159,7 @@ class CssIndex:
 
     @property
     def index_data_size(self):
-        """Gets the index_data_size of this CssIndex.
+        r"""Gets the index_data_size of this CssIndex.
 
         索引数据量大小
 
@@ -170,7 +170,7 @@ class CssIndex:
 
     @index_data_size.setter
     def index_data_size(self, index_data_size):
-        """Sets the index_data_size of this CssIndex.
+        r"""Sets the index_data_size of this CssIndex.
 
         索引数据量大小
 

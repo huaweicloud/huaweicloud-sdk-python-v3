@@ -29,7 +29,7 @@ class FlowPps:
     }
 
     def __init__(self, utime=None, attack_pps=None, normal_pps=None):
-        """FlowPps
+        r"""FlowPps
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlowPps:
 
     @property
     def utime(self):
-        """Gets the utime of this FlowPps.
+        r"""Gets the utime of this FlowPps.
 
         数据时间
 
@@ -68,7 +68,7 @@ class FlowPps:
 
     @utime.setter
     def utime(self, utime):
-        """Sets the utime of this FlowPps.
+        r"""Sets the utime of this FlowPps.
 
         数据时间
 
@@ -79,7 +79,7 @@ class FlowPps:
 
     @property
     def attack_pps(self):
-        """Gets the attack_pps of this FlowPps.
+        r"""Gets the attack_pps of this FlowPps.
 
         攻击包速率
 
@@ -90,7 +90,7 @@ class FlowPps:
 
     @attack_pps.setter
     def attack_pps(self, attack_pps):
-        """Sets the attack_pps of this FlowPps.
+        r"""Sets the attack_pps of this FlowPps.
 
         攻击包速率
 
@@ -101,7 +101,7 @@ class FlowPps:
 
     @property
     def normal_pps(self):
-        """Gets the normal_pps of this FlowPps.
+        r"""Gets the normal_pps of this FlowPps.
 
         正常包速率
 
@@ -112,7 +112,7 @@ class FlowPps:
 
     @normal_pps.setter
     def normal_pps(self, normal_pps):
-        """Sets the normal_pps of this FlowPps.
+        r"""Sets the normal_pps of this FlowPps.
 
         正常包速率
 

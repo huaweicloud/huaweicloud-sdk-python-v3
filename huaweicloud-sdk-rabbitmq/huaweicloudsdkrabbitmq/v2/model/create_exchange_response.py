@@ -38,7 +38,7 @@ class CreateExchangeResponse(SdkResponse):
     }
 
     def __init__(self, durable=None, default=None, internal=None, name=None, auto_delete=None, type=None, vhost=None):
-        """CreateExchangeResponse
+        r"""CreateExchangeResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def durable(self):
-        """Gets the durable of this CreateExchangeResponse.
+        r"""Gets the durable of this CreateExchangeResponse.
 
         是否持久化
 
@@ -97,7 +97,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this CreateExchangeResponse.
+        r"""Sets the durable of this CreateExchangeResponse.
 
         是否持久化
 
@@ -108,7 +108,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def default(self):
-        """Gets the default of this CreateExchangeResponse.
+        r"""Gets the default of this CreateExchangeResponse.
 
         是否是默认Exchange
 
@@ -119,7 +119,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @default.setter
     def default(self, default):
-        """Sets the default of this CreateExchangeResponse.
+        r"""Sets the default of this CreateExchangeResponse.
 
         是否是默认Exchange
 
@@ -130,7 +130,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def internal(self):
-        """Gets the internal of this CreateExchangeResponse.
+        r"""Gets the internal of this CreateExchangeResponse.
 
         是否是内部Exchange
 
@@ -141,7 +141,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @internal.setter
     def internal(self, internal):
-        """Sets the internal of this CreateExchangeResponse.
+        r"""Sets the internal of this CreateExchangeResponse.
 
         是否是内部Exchange
 
@@ -152,7 +152,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateExchangeResponse.
+        r"""Gets the name of this CreateExchangeResponse.
 
         Exchange名称
 
@@ -163,7 +163,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateExchangeResponse.
+        r"""Sets the name of this CreateExchangeResponse.
 
         Exchange名称
 
@@ -174,7 +174,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this CreateExchangeResponse.
+        r"""Gets the auto_delete of this CreateExchangeResponse.
 
         是否自动删除
 
@@ -185,7 +185,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this CreateExchangeResponse.
+        r"""Sets the auto_delete of this CreateExchangeResponse.
 
         是否自动删除
 
@@ -196,7 +196,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateExchangeResponse.
+        r"""Gets the type of this CreateExchangeResponse.
 
         Exchange类型
 
@@ -207,7 +207,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateExchangeResponse.
+        r"""Sets the type of this CreateExchangeResponse.
 
         Exchange类型
 
@@ -218,7 +218,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @property
     def vhost(self):
-        """Gets the vhost of this CreateExchangeResponse.
+        r"""Gets the vhost of this CreateExchangeResponse.
 
         所属Vhost
 
@@ -229,7 +229,7 @@ class CreateExchangeResponse(SdkResponse):
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this CreateExchangeResponse.
+        r"""Sets the vhost of this CreateExchangeResponse.
 
         所属Vhost
 

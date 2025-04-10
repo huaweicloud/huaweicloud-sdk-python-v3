@@ -25,7 +25,7 @@ class TopologyTree:
     }
 
     def __init__(self, tree=None):
-        """TopologyTree
+        r"""TopologyTree
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TopologyTree:
 
     @property
     def tree(self):
-        """Gets the tree of this TopologyTree.
+        r"""Gets the tree of this TopologyTree.
 
         拓扑树节点。
 
@@ -54,7 +54,7 @@ class TopologyTree:
 
     @tree.setter
     def tree(self, tree):
-        """Sets the tree of this TopologyTree.
+        r"""Sets the tree of this TopologyTree.
 
         拓扑树节点。
 

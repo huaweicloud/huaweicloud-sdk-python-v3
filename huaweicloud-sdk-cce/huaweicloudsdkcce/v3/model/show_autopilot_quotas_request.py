@@ -23,7 +23,7 @@ class ShowAutopilotQuotasRequest:
     }
 
     def __init__(self):
-        """ShowAutopilotQuotasRequest
+        r"""ShowAutopilotQuotasRequest
 
         The model defined in huaweicloud sdk
 

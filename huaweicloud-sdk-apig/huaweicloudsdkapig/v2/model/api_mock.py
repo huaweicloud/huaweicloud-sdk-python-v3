@@ -39,7 +39,7 @@ class ApiMock:
     }
 
     def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None, id=None, register_time=None, status=None, update_time=None):
-        """ApiMock
+        r"""ApiMock
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ApiMock:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiMock.
+        r"""Gets the remark of this ApiMock.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -103,7 +103,7 @@ class ApiMock:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiMock.
+        r"""Sets the remark of this ApiMock.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -114,7 +114,7 @@ class ApiMock:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiMock.
+        r"""Gets the result_content of this ApiMock.
 
         返回结果
 
@@ -125,7 +125,7 @@ class ApiMock:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiMock.
+        r"""Sets the result_content of this ApiMock.
 
         返回结果
 
@@ -136,7 +136,7 @@ class ApiMock:
 
     @property
     def version(self):
-        """Gets the version of this ApiMock.
+        r"""Gets the version of this ApiMock.
 
         版本。字符长度不超过64
 
@@ -147,7 +147,7 @@ class ApiMock:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiMock.
+        r"""Sets the version of this ApiMock.
 
         版本。字符长度不超过64
 
@@ -158,7 +158,7 @@ class ApiMock:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiMock.
+        r"""Gets the authorizer_id of this ApiMock.
 
         后端自定义认证ID
 
@@ -169,7 +169,7 @@ class ApiMock:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiMock.
+        r"""Sets the authorizer_id of this ApiMock.
 
         后端自定义认证ID
 
@@ -180,7 +180,7 @@ class ApiMock:
 
     @property
     def id(self):
-        """Gets the id of this ApiMock.
+        r"""Gets the id of this ApiMock.
 
         编号
 
@@ -191,7 +191,7 @@ class ApiMock:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiMock.
+        r"""Sets the id of this ApiMock.
 
         编号
 
@@ -202,7 +202,7 @@ class ApiMock:
 
     @property
     def register_time(self):
-        """Gets the register_time of this ApiMock.
+        r"""Gets the register_time of this ApiMock.
 
         注册时间
 
@@ -213,7 +213,7 @@ class ApiMock:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ApiMock.
+        r"""Sets the register_time of this ApiMock.
 
         注册时间
 
@@ -224,7 +224,7 @@ class ApiMock:
 
     @property
     def status(self):
-        """Gets the status of this ApiMock.
+        r"""Gets the status of this ApiMock.
 
         后端状态   - 1： 有效
 
@@ -235,7 +235,7 @@ class ApiMock:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiMock.
+        r"""Sets the status of this ApiMock.
 
         后端状态   - 1： 有效
 
@@ -246,7 +246,7 @@ class ApiMock:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApiMock.
+        r"""Gets the update_time of this ApiMock.
 
         修改时间
 
@@ -257,7 +257,7 @@ class ApiMock:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApiMock.
+        r"""Sets the update_time of this ApiMock.
 
         修改时间
 

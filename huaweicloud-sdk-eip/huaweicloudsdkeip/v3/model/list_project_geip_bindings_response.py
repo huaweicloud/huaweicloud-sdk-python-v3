@@ -28,7 +28,7 @@ class ListProjectGeipBindingsResponse(SdkResponse):
     }
 
     def __init__(self, geip_bindings=None, request_id=None):
-        """ListProjectGeipBindingsResponse
+        r"""ListProjectGeipBindingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectGeipBindingsResponse(SdkResponse):
 
     @property
     def geip_bindings(self):
-        """Gets the geip_bindings of this ListProjectGeipBindingsResponse.
+        r"""Gets the geip_bindings of this ListProjectGeipBindingsResponse.
 
         geip绑定关系对象
 
@@ -62,7 +62,7 @@ class ListProjectGeipBindingsResponse(SdkResponse):
 
     @geip_bindings.setter
     def geip_bindings(self, geip_bindings):
-        """Sets the geip_bindings of this ListProjectGeipBindingsResponse.
+        r"""Sets the geip_bindings of this ListProjectGeipBindingsResponse.
 
         geip绑定关系对象
 
@@ -73,7 +73,7 @@ class ListProjectGeipBindingsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListProjectGeipBindingsResponse.
+        r"""Gets the request_id of this ListProjectGeipBindingsResponse.
 
         本次请求编号
 
@@ -84,7 +84,7 @@ class ListProjectGeipBindingsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListProjectGeipBindingsResponse.
+        r"""Sets the request_id of this ListProjectGeipBindingsResponse.
 
         本次请求编号
 

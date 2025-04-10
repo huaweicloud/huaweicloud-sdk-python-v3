@@ -27,7 +27,7 @@ class BatchDeleteListenerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteListenerTagsRequestBody
+        r"""BatchDeleteListenerTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteListenerTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteListenerTagsRequestBody.
+        r"""Gets the action of this BatchDeleteListenerTagsRequestBody.
 
         操作类型。 取值范围：delete- 删除标签。
 
@@ -59,7 +59,7 @@ class BatchDeleteListenerTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteListenerTagsRequestBody.
+        r"""Sets the action of this BatchDeleteListenerTagsRequestBody.
 
         操作类型。 取值范围：delete- 删除标签。
 
@@ -70,7 +70,7 @@ class BatchDeleteListenerTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteListenerTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteListenerTagsRequestBody.
 
         标签对象列表。
 
@@ -81,7 +81,7 @@ class BatchDeleteListenerTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteListenerTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteListenerTagsRequestBody.
 
         标签对象列表。
 

@@ -37,7 +37,7 @@ class Task:
     }
 
     def __init__(self, task_id=None, task_name=None, status=None, reason=None, created_at=None, target_id=None, extension_info=None):
-        """Task
+        r"""Task
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Task:
 
     @property
     def task_id(self):
-        """Gets the task_id of this Task.
+        r"""Gets the task_id of this Task.
 
         任务项ID
 
@@ -96,7 +96,7 @@ class Task:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this Task.
+        r"""Sets the task_id of this Task.
 
         任务项ID
 
@@ -107,7 +107,7 @@ class Task:
 
     @property
     def task_name(self):
-        """Gets the task_name of this Task.
+        r"""Gets the task_name of this Task.
 
         任务项名称
 
@@ -118,7 +118,7 @@ class Task:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this Task.
+        r"""Sets the task_name of this Task.
 
         任务项名称
 
@@ -129,7 +129,7 @@ class Task:
 
     @property
     def status(self):
-        """Gets the status of this Task.
+        r"""Gets the status of this Task.
 
         任务项状态
 
@@ -140,7 +140,7 @@ class Task:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Task.
+        r"""Sets the status of this Task.
 
         任务项状态
 
@@ -151,7 +151,7 @@ class Task:
 
     @property
     def reason(self):
-        """Gets the reason of this Task.
+        r"""Gets the reason of this Task.
 
         任务项失败的原因
 
@@ -162,7 +162,7 @@ class Task:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this Task.
+        r"""Sets the reason of this Task.
 
         任务项失败的原因
 
@@ -173,7 +173,7 @@ class Task:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Task.
+        r"""Gets the created_at of this Task.
 
         创建时间戳
 
@@ -184,7 +184,7 @@ class Task:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Task.
+        r"""Sets the created_at of this Task.
 
         创建时间戳
 
@@ -195,7 +195,7 @@ class Task:
 
     @property
     def target_id(self):
-        """Gets the target_id of this Task.
+        r"""Gets the target_id of this Task.
 
         批量处理对象ID
 
@@ -206,7 +206,7 @@ class Task:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this Task.
+        r"""Sets the target_id of this Task.
 
         批量处理对象ID
 
@@ -217,7 +217,7 @@ class Task:
 
     @property
     def extension_info(self):
-        """Gets the extension_info of this Task.
+        r"""Gets the extension_info of this Task.
 
         批量处理对象基本信息
 
@@ -228,7 +228,7 @@ class Task:
 
     @extension_info.setter
     def extension_info(self, extension_info):
-        """Sets the extension_info of this Task.
+        r"""Sets the extension_info of this Task.
 
         批量处理对象基本信息
 

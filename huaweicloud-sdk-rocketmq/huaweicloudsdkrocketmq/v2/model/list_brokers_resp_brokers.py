@@ -27,7 +27,7 @@ class ListBrokersRespBrokers:
     }
 
     def __init__(self, ids=None, broker_name=None):
-        """ListBrokersRespBrokers
+        r"""ListBrokersRespBrokers
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListBrokersRespBrokers:
 
     @property
     def ids(self):
-        """Gets the ids of this ListBrokersRespBrokers.
+        r"""Gets the ids of this ListBrokersRespBrokers.
 
         全部代理ID。
 
@@ -61,7 +61,7 @@ class ListBrokersRespBrokers:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ListBrokersRespBrokers.
+        r"""Sets the ids of this ListBrokersRespBrokers.
 
         全部代理ID。
 
@@ -72,7 +72,7 @@ class ListBrokersRespBrokers:
 
     @property
     def broker_name(self):
-        """Gets the broker_name of this ListBrokersRespBrokers.
+        r"""Gets the broker_name of this ListBrokersRespBrokers.
 
         节点名称。
 
@@ -83,7 +83,7 @@ class ListBrokersRespBrokers:
 
     @broker_name.setter
     def broker_name(self, broker_name):
-        """Sets the broker_name of this ListBrokersRespBrokers.
+        r"""Sets the broker_name of this ListBrokersRespBrokers.
 
         节点名称。
 

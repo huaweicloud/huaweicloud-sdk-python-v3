@@ -49,7 +49,7 @@ class ConnectionInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, error_info=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, type=None, kafka_detail=None, created_time=None, updated_time=None):
-        """ConnectionInfo
+        r"""ConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ConnectionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ConnectionInfo.
+        r"""Gets the id of this ConnectionInfo.
 
         事件源ID
 
@@ -138,7 +138,7 @@ class ConnectionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectionInfo.
+        r"""Sets the id of this ConnectionInfo.
 
         事件源ID
 
@@ -149,7 +149,7 @@ class ConnectionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConnectionInfo.
+        r"""Gets the name of this ConnectionInfo.
 
         目标连接名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -160,7 +160,7 @@ class ConnectionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionInfo.
+        r"""Sets the name of this ConnectionInfo.
 
         目标连接名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -171,7 +171,7 @@ class ConnectionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionInfo.
+        r"""Gets the description of this ConnectionInfo.
 
         目标连接描述
 
@@ -182,7 +182,7 @@ class ConnectionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionInfo.
+        r"""Sets the description of this ConnectionInfo.
 
         目标连接描述
 
@@ -193,7 +193,7 @@ class ConnectionInfo:
 
     @property
     def status(self):
-        """Gets the status of this ConnectionInfo.
+        r"""Gets the status of this ConnectionInfo.
 
         目标连接状态
 
@@ -204,7 +204,7 @@ class ConnectionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectionInfo.
+        r"""Sets the status of this ConnectionInfo.
 
         目标连接状态
 
@@ -215,7 +215,7 @@ class ConnectionInfo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this ConnectionInfo.
+        r"""Gets the error_info of this ConnectionInfo.
 
         :return: The error_info of this ConnectionInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -224,7 +224,7 @@ class ConnectionInfo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ConnectionInfo.
+        r"""Sets the error_info of this ConnectionInfo.
 
         :param error_info: The error_info of this ConnectionInfo.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -233,7 +233,7 @@ class ConnectionInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ConnectionInfo.
+        r"""Gets the vpc_id of this ConnectionInfo.
 
         待连接的VPC ID
 
@@ -244,7 +244,7 @@ class ConnectionInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ConnectionInfo.
+        r"""Sets the vpc_id of this ConnectionInfo.
 
         待连接的VPC ID
 
@@ -255,7 +255,7 @@ class ConnectionInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ConnectionInfo.
+        r"""Gets the subnet_id of this ConnectionInfo.
 
         待连接的子网ID
 
@@ -266,7 +266,7 @@ class ConnectionInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ConnectionInfo.
+        r"""Sets the subnet_id of this ConnectionInfo.
 
         待连接的子网ID
 
@@ -277,7 +277,7 @@ class ConnectionInfo:
 
     @property
     def agency(self):
-        """Gets the agency of this ConnectionInfo.
+        r"""Gets the agency of this ConnectionInfo.
 
         私网目标连接使用的用户委托名称
 
@@ -288,7 +288,7 @@ class ConnectionInfo:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this ConnectionInfo.
+        r"""Sets the agency of this ConnectionInfo.
 
         私网目标连接使用的用户委托名称
 
@@ -299,7 +299,7 @@ class ConnectionInfo:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ConnectionInfo.
+        r"""Gets the flavor of this ConnectionInfo.
 
         :return: The flavor of this ConnectionInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -308,7 +308,7 @@ class ConnectionInfo:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ConnectionInfo.
+        r"""Sets the flavor of this ConnectionInfo.
 
         :param flavor: The flavor of this ConnectionInfo.
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -317,7 +317,7 @@ class ConnectionInfo:
 
     @property
     def type(self):
-        """Gets the type of this ConnectionInfo.
+        r"""Gets the type of this ConnectionInfo.
 
         :return: The type of this ConnectionInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -326,7 +326,7 @@ class ConnectionInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionInfo.
+        r"""Sets the type of this ConnectionInfo.
 
         :param type: The type of this ConnectionInfo.
         :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -335,7 +335,7 @@ class ConnectionInfo:
 
     @property
     def kafka_detail(self):
-        """Gets the kafka_detail of this ConnectionInfo.
+        r"""Gets the kafka_detail of this ConnectionInfo.
 
         :return: The kafka_detail of this ConnectionInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -344,7 +344,7 @@ class ConnectionInfo:
 
     @kafka_detail.setter
     def kafka_detail(self, kafka_detail):
-        """Sets the kafka_detail of this ConnectionInfo.
+        r"""Sets the kafka_detail of this ConnectionInfo.
 
         :param kafka_detail: The kafka_detail of this ConnectionInfo.
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -353,7 +353,7 @@ class ConnectionInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ConnectionInfo.
+        r"""Gets the created_time of this ConnectionInfo.
 
         创建UTC时间
 
@@ -364,7 +364,7 @@ class ConnectionInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ConnectionInfo.
+        r"""Sets the created_time of this ConnectionInfo.
 
         创建UTC时间
 
@@ -375,7 +375,7 @@ class ConnectionInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ConnectionInfo.
+        r"""Gets the updated_time of this ConnectionInfo.
 
         更新UTC时间
 
@@ -386,7 +386,7 @@ class ConnectionInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ConnectionInfo.
+        r"""Sets the updated_time of this ConnectionInfo.
 
         更新UTC时间
 

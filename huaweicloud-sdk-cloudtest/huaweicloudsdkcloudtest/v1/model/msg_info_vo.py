@@ -63,7 +63,7 @@ class MsgInfoVo:
     }
 
     def __init__(self, alert_channels=None, alert_groups=None, alert_level=None, alert_num=None, alert_time=None, alert_type=None, content=None, id=None, link=None, location_names=None, send_alert_type=None, sub_task_case_id=None, sub_task_case_start_time=None, sub_task_id=None, sub_task_start_time=None, task_id=None, task_name=None, test_case_id=None, test_case_name=None, test_suite_type=None):
-        """MsgInfoVo
+        r"""MsgInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class MsgInfoVo:
 
     @property
     def alert_channels(self):
-        """Gets the alert_channels of this MsgInfoVo.
+        r"""Gets the alert_channels of this MsgInfoVo.
 
         告警渠道
 
@@ -187,7 +187,7 @@ class MsgInfoVo:
 
     @alert_channels.setter
     def alert_channels(self, alert_channels):
-        """Sets the alert_channels of this MsgInfoVo.
+        r"""Sets the alert_channels of this MsgInfoVo.
 
         告警渠道
 
@@ -198,7 +198,7 @@ class MsgInfoVo:
 
     @property
     def alert_groups(self):
-        """Gets the alert_groups of this MsgInfoVo.
+        r"""Gets the alert_groups of this MsgInfoVo.
 
         告警分组
 
@@ -209,7 +209,7 @@ class MsgInfoVo:
 
     @alert_groups.setter
     def alert_groups(self, alert_groups):
-        """Sets the alert_groups of this MsgInfoVo.
+        r"""Sets the alert_groups of this MsgInfoVo.
 
         告警分组
 
@@ -220,7 +220,7 @@ class MsgInfoVo:
 
     @property
     def alert_level(self):
-        """Gets the alert_level of this MsgInfoVo.
+        r"""Gets the alert_level of this MsgInfoVo.
 
         告警级别
 
@@ -231,7 +231,7 @@ class MsgInfoVo:
 
     @alert_level.setter
     def alert_level(self, alert_level):
-        """Sets the alert_level of this MsgInfoVo.
+        r"""Sets the alert_level of this MsgInfoVo.
 
         告警级别
 
@@ -242,7 +242,7 @@ class MsgInfoVo:
 
     @property
     def alert_num(self):
-        """Gets the alert_num of this MsgInfoVo.
+        r"""Gets the alert_num of this MsgInfoVo.
 
         总告警次数
 
@@ -253,7 +253,7 @@ class MsgInfoVo:
 
     @alert_num.setter
     def alert_num(self, alert_num):
-        """Sets the alert_num of this MsgInfoVo.
+        r"""Sets the alert_num of this MsgInfoVo.
 
         总告警次数
 
@@ -264,7 +264,7 @@ class MsgInfoVo:
 
     @property
     def alert_time(self):
-        """Gets the alert_time of this MsgInfoVo.
+        r"""Gets the alert_time of this MsgInfoVo.
 
         告警时间
 
@@ -275,7 +275,7 @@ class MsgInfoVo:
 
     @alert_time.setter
     def alert_time(self, alert_time):
-        """Sets the alert_time of this MsgInfoVo.
+        r"""Sets the alert_time of this MsgInfoVo.
 
         告警时间
 
@@ -286,7 +286,7 @@ class MsgInfoVo:
 
     @property
     def alert_type(self):
-        """Gets the alert_type of this MsgInfoVo.
+        r"""Gets the alert_type of this MsgInfoVo.
 
         告警类型
 
@@ -297,7 +297,7 @@ class MsgInfoVo:
 
     @alert_type.setter
     def alert_type(self, alert_type):
-        """Sets the alert_type of this MsgInfoVo.
+        r"""Sets the alert_type of this MsgInfoVo.
 
         告警类型
 
@@ -308,7 +308,7 @@ class MsgInfoVo:
 
     @property
     def content(self):
-        """Gets the content of this MsgInfoVo.
+        r"""Gets the content of this MsgInfoVo.
 
         告警内容
 
@@ -319,7 +319,7 @@ class MsgInfoVo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this MsgInfoVo.
+        r"""Sets the content of this MsgInfoVo.
 
         告警内容
 
@@ -330,7 +330,7 @@ class MsgInfoVo:
 
     @property
     def id(self):
-        """Gets the id of this MsgInfoVo.
+        r"""Gets the id of this MsgInfoVo.
 
         MsgInfo的id
 
@@ -341,7 +341,7 @@ class MsgInfoVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MsgInfoVo.
+        r"""Sets the id of this MsgInfoVo.
 
         MsgInfo的id
 
@@ -352,7 +352,7 @@ class MsgInfoVo:
 
     @property
     def link(self):
-        """Gets the link of this MsgInfoVo.
+        r"""Gets the link of this MsgInfoVo.
 
         链接
 
@@ -363,7 +363,7 @@ class MsgInfoVo:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this MsgInfoVo.
+        r"""Sets the link of this MsgInfoVo.
 
         链接
 
@@ -374,7 +374,7 @@ class MsgInfoVo:
 
     @property
     def location_names(self):
-        """Gets the location_names of this MsgInfoVo.
+        r"""Gets the location_names of this MsgInfoVo.
 
         执行机区域
 
@@ -385,7 +385,7 @@ class MsgInfoVo:
 
     @location_names.setter
     def location_names(self, location_names):
-        """Sets the location_names of this MsgInfoVo.
+        r"""Sets the location_names of this MsgInfoVo.
 
         执行机区域
 
@@ -396,7 +396,7 @@ class MsgInfoVo:
 
     @property
     def send_alert_type(self):
-        """Gets the send_alert_type of this MsgInfoVo.
+        r"""Gets the send_alert_type of this MsgInfoVo.
 
         发送告警类型
 
@@ -407,7 +407,7 @@ class MsgInfoVo:
 
     @send_alert_type.setter
     def send_alert_type(self, send_alert_type):
-        """Sets the send_alert_type of this MsgInfoVo.
+        r"""Sets the send_alert_type of this MsgInfoVo.
 
         发送告警类型
 
@@ -418,7 +418,7 @@ class MsgInfoVo:
 
     @property
     def sub_task_case_id(self):
-        """Gets the sub_task_case_id of this MsgInfoVo.
+        r"""Gets the sub_task_case_id of this MsgInfoVo.
 
         子任务用例id
 
@@ -429,7 +429,7 @@ class MsgInfoVo:
 
     @sub_task_case_id.setter
     def sub_task_case_id(self, sub_task_case_id):
-        """Sets the sub_task_case_id of this MsgInfoVo.
+        r"""Sets the sub_task_case_id of this MsgInfoVo.
 
         子任务用例id
 
@@ -440,7 +440,7 @@ class MsgInfoVo:
 
     @property
     def sub_task_case_start_time(self):
-        """Gets the sub_task_case_start_time of this MsgInfoVo.
+        r"""Gets the sub_task_case_start_time of this MsgInfoVo.
 
         子任务用例开始时间
 
@@ -451,7 +451,7 @@ class MsgInfoVo:
 
     @sub_task_case_start_time.setter
     def sub_task_case_start_time(self, sub_task_case_start_time):
-        """Sets the sub_task_case_start_time of this MsgInfoVo.
+        r"""Sets the sub_task_case_start_time of this MsgInfoVo.
 
         子任务用例开始时间
 
@@ -462,7 +462,7 @@ class MsgInfoVo:
 
     @property
     def sub_task_id(self):
-        """Gets the sub_task_id of this MsgInfoVo.
+        r"""Gets the sub_task_id of this MsgInfoVo.
 
         子任务id
 
@@ -473,7 +473,7 @@ class MsgInfoVo:
 
     @sub_task_id.setter
     def sub_task_id(self, sub_task_id):
-        """Sets the sub_task_id of this MsgInfoVo.
+        r"""Sets the sub_task_id of this MsgInfoVo.
 
         子任务id
 
@@ -484,7 +484,7 @@ class MsgInfoVo:
 
     @property
     def sub_task_start_time(self):
-        """Gets the sub_task_start_time of this MsgInfoVo.
+        r"""Gets the sub_task_start_time of this MsgInfoVo.
 
         子任务开始时间
 
@@ -495,7 +495,7 @@ class MsgInfoVo:
 
     @sub_task_start_time.setter
     def sub_task_start_time(self, sub_task_start_time):
-        """Sets the sub_task_start_time of this MsgInfoVo.
+        r"""Sets the sub_task_start_time of this MsgInfoVo.
 
         子任务开始时间
 
@@ -506,7 +506,7 @@ class MsgInfoVo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MsgInfoVo.
+        r"""Gets the task_id of this MsgInfoVo.
 
         任务id
 
@@ -517,7 +517,7 @@ class MsgInfoVo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MsgInfoVo.
+        r"""Sets the task_id of this MsgInfoVo.
 
         任务id
 
@@ -528,7 +528,7 @@ class MsgInfoVo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this MsgInfoVo.
+        r"""Gets the task_name of this MsgInfoVo.
 
         任务名
 
@@ -539,7 +539,7 @@ class MsgInfoVo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this MsgInfoVo.
+        r"""Sets the task_name of this MsgInfoVo.
 
         任务名
 
@@ -550,7 +550,7 @@ class MsgInfoVo:
 
     @property
     def test_case_id(self):
-        """Gets the test_case_id of this MsgInfoVo.
+        r"""Gets the test_case_id of this MsgInfoVo.
 
         用例id
 
@@ -561,7 +561,7 @@ class MsgInfoVo:
 
     @test_case_id.setter
     def test_case_id(self, test_case_id):
-        """Sets the test_case_id of this MsgInfoVo.
+        r"""Sets the test_case_id of this MsgInfoVo.
 
         用例id
 
@@ -572,7 +572,7 @@ class MsgInfoVo:
 
     @property
     def test_case_name(self):
-        """Gets the test_case_name of this MsgInfoVo.
+        r"""Gets the test_case_name of this MsgInfoVo.
 
         用例名称
 
@@ -583,7 +583,7 @@ class MsgInfoVo:
 
     @test_case_name.setter
     def test_case_name(self, test_case_name):
-        """Sets the test_case_name of this MsgInfoVo.
+        r"""Sets the test_case_name of this MsgInfoVo.
 
         用例名称
 
@@ -594,7 +594,7 @@ class MsgInfoVo:
 
     @property
     def test_suite_type(self):
-        """Gets the test_suite_type of this MsgInfoVo.
+        r"""Gets the test_suite_type of this MsgInfoVo.
 
         测试套类型
 
@@ -605,7 +605,7 @@ class MsgInfoVo:
 
     @test_suite_type.setter
     def test_suite_type(self, test_suite_type):
-        """Sets the test_suite_type of this MsgInfoVo.
+        r"""Sets the test_suite_type of this MsgInfoVo.
 
         测试套类型
 

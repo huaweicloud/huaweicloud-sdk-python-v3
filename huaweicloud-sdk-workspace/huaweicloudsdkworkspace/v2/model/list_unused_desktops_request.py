@@ -31,7 +31,7 @@ class ListUnusedDesktopsRequest:
     }
 
     def __init__(self, offset=None, limit=None, start_time=None, end_time=None):
-        """ListUnusedDesktopsRequest
+        r"""ListUnusedDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListUnusedDesktopsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUnusedDesktopsRequest.
+        r"""Gets the offset of this ListUnusedDesktopsRequest.
 
         从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
 
@@ -75,7 +75,7 @@ class ListUnusedDesktopsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUnusedDesktopsRequest.
+        r"""Sets the offset of this ListUnusedDesktopsRequest.
 
         从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
 
@@ -86,7 +86,7 @@ class ListUnusedDesktopsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUnusedDesktopsRequest.
+        r"""Gets the limit of this ListUnusedDesktopsRequest.
 
         查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-2000，默认值1000。
 
@@ -97,7 +97,7 @@ class ListUnusedDesktopsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUnusedDesktopsRequest.
+        r"""Sets the limit of this ListUnusedDesktopsRequest.
 
         查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-2000，默认值1000。
 
@@ -108,7 +108,7 @@ class ListUnusedDesktopsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUnusedDesktopsRequest.
+        r"""Gets the start_time of this ListUnusedDesktopsRequest.
 
         开始时间：由日期加时间组成，UTC格式，格式：yyyy-MM-ddTHH:mm:ss.SSSZ，若未输入，则查询现在到前一天的未使用的桌面。
 
@@ -119,7 +119,7 @@ class ListUnusedDesktopsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUnusedDesktopsRequest.
+        r"""Sets the start_time of this ListUnusedDesktopsRequest.
 
         开始时间：由日期加时间组成，UTC格式，格式：yyyy-MM-ddTHH:mm:ss.SSSZ，若未输入，则查询现在到前一天的未使用的桌面。
 
@@ -130,7 +130,7 @@ class ListUnusedDesktopsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUnusedDesktopsRequest.
+        r"""Gets the end_time of this ListUnusedDesktopsRequest.
 
         结束时间：由日期加时间组成，UTC格式，格式：yyyy-MM-ddTHH:mm:ss.SSSZ，若未输入，则查询现在到前一天的未使用的桌面。
 
@@ -141,7 +141,7 @@ class ListUnusedDesktopsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUnusedDesktopsRequest.
+        r"""Sets the end_time of this ListUnusedDesktopsRequest.
 
         结束时间：由日期加时间组成，UTC格式，格式：yyyy-MM-ddTHH:mm:ss.SSSZ，若未输入，则查询现在到前一天的未使用的桌面。
 

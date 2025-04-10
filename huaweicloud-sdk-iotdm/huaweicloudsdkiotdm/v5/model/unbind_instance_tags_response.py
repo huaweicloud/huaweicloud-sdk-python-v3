@@ -26,7 +26,7 @@ class UnbindInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UnbindInstanceTagsResponse
+        r"""UnbindInstanceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnbindInstanceTagsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UnbindInstanceTagsResponse.
+        r"""Gets the body of this UnbindInstanceTagsResponse.
 
         :return: The body of this UnbindInstanceTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UnbindInstanceTagsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnbindInstanceTagsResponse.
+        r"""Sets the body of this UnbindInstanceTagsResponse.
 
         :param body: The body of this UnbindInstanceTagsResponse.
         :type body: str

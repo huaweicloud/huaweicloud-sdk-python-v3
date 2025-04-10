@@ -35,7 +35,7 @@ class CreateNodePoolStatus:
     }
 
     def __init__(self, current_node=None, creating_node=None, deleting_node=None, phase=None, conditions=None, scale_group_statuses=None):
-        """CreateNodePoolStatus
+        r"""CreateNodePoolStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateNodePoolStatus:
 
     @property
     def current_node(self):
-        """Gets the current_node of this CreateNodePoolStatus.
+        r"""Gets the current_node of this CreateNodePoolStatus.
 
         当前节点池中所有节点数量（不含删除中的节点）。
 
@@ -89,7 +89,7 @@ class CreateNodePoolStatus:
 
     @current_node.setter
     def current_node(self, current_node):
-        """Sets the current_node of this CreateNodePoolStatus.
+        r"""Sets the current_node of this CreateNodePoolStatus.
 
         当前节点池中所有节点数量（不含删除中的节点）。
 
@@ -100,7 +100,7 @@ class CreateNodePoolStatus:
 
     @property
     def creating_node(self):
-        """Gets the creating_node of this CreateNodePoolStatus.
+        r"""Gets the creating_node of this CreateNodePoolStatus.
 
         当前节点池中处于创建流程中的节点数量。
 
@@ -111,7 +111,7 @@ class CreateNodePoolStatus:
 
     @creating_node.setter
     def creating_node(self, creating_node):
-        """Sets the creating_node of this CreateNodePoolStatus.
+        r"""Sets the creating_node of this CreateNodePoolStatus.
 
         当前节点池中处于创建流程中的节点数量。
 
@@ -122,7 +122,7 @@ class CreateNodePoolStatus:
 
     @property
     def deleting_node(self):
-        """Gets the deleting_node of this CreateNodePoolStatus.
+        r"""Gets the deleting_node of this CreateNodePoolStatus.
 
         当前节点池中删除中的节点数量。
 
@@ -133,7 +133,7 @@ class CreateNodePoolStatus:
 
     @deleting_node.setter
     def deleting_node(self, deleting_node):
-        """Sets the deleting_node of this CreateNodePoolStatus.
+        r"""Sets the deleting_node of this CreateNodePoolStatus.
 
         当前节点池中删除中的节点数量。
 
@@ -144,7 +144,7 @@ class CreateNodePoolStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this CreateNodePoolStatus.
+        r"""Gets the phase of this CreateNodePoolStatus.
 
         节点池状态。 - 空值：可用（节点池当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（节点池当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（节点池当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：节点池当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） > 上述节点池状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： > - 节点池扩缩状态：可通过currentNode/creatingNode/deletingNode节点状态统计信息，精确感知当前节点池扩缩状态。 > - 节点池可扩容状态：可通过conditions感知节点池详细状态，其中\"Scalable\"可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
 
@@ -155,7 +155,7 @@ class CreateNodePoolStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this CreateNodePoolStatus.
+        r"""Sets the phase of this CreateNodePoolStatus.
 
         节点池状态。 - 空值：可用（节点池当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（节点池当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（节点池当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：节点池当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） > 上述节点池状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： > - 节点池扩缩状态：可通过currentNode/creatingNode/deletingNode节点状态统计信息，精确感知当前节点池扩缩状态。 > - 节点池可扩容状态：可通过conditions感知节点池详细状态，其中\"Scalable\"可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
 
@@ -166,7 +166,7 @@ class CreateNodePoolStatus:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateNodePoolStatus.
+        r"""Gets the conditions of this CreateNodePoolStatus.
 
         节点池当前详细状态列表，详情参见Condition类型定义。 
 
@@ -177,7 +177,7 @@ class CreateNodePoolStatus:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateNodePoolStatus.
+        r"""Sets the conditions of this CreateNodePoolStatus.
 
         节点池当前详细状态列表，详情参见Condition类型定义。 
 
@@ -188,7 +188,7 @@ class CreateNodePoolStatus:
 
     @property
     def scale_group_statuses(self):
-        """Gets the scale_group_statuses of this CreateNodePoolStatus.
+        r"""Gets the scale_group_statuses of this CreateNodePoolStatus.
 
         伸缩组当前详细状态信息，详情参见ScaleGroupStatus类型定义
 
@@ -199,7 +199,7 @@ class CreateNodePoolStatus:
 
     @scale_group_statuses.setter
     def scale_group_statuses(self, scale_group_statuses):
-        """Sets the scale_group_statuses of this CreateNodePoolStatus.
+        r"""Sets the scale_group_statuses of this CreateNodePoolStatus.
 
         伸缩组当前详细状态信息，详情参见ScaleGroupStatus类型定义
 

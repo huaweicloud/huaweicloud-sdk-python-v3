@@ -43,7 +43,7 @@ class LTSAccessConfigInfoRespon200:
     }
 
     def __init__(self, access_config_id=None, project_id=None, access_config_name=None, access_config_type=None, group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, create_time=None, agency_log_access=None):
-        """LTSAccessConfigInfoRespon200
+        r"""LTSAccessConfigInfoRespon200
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def access_config_id(self):
-        """Gets the access_config_id of this LTSAccessConfigInfoRespon200.
+        r"""Gets the access_config_id of this LTSAccessConfigInfoRespon200.
 
         跨账号日志接入id
 
@@ -117,7 +117,7 @@ class LTSAccessConfigInfoRespon200:
 
     @access_config_id.setter
     def access_config_id(self, access_config_id):
-        """Sets the access_config_id of this LTSAccessConfigInfoRespon200.
+        r"""Sets the access_config_id of this LTSAccessConfigInfoRespon200.
 
         跨账号日志接入id
 
@@ -128,7 +128,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LTSAccessConfigInfoRespon200.
+        r"""Gets the project_id of this LTSAccessConfigInfoRespon200.
 
         项目ID
 
@@ -139,7 +139,7 @@ class LTSAccessConfigInfoRespon200:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LTSAccessConfigInfoRespon200.
+        r"""Sets the project_id of this LTSAccessConfigInfoRespon200.
 
         项目ID
 
@@ -150,7 +150,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def access_config_name(self):
-        """Gets the access_config_name of this LTSAccessConfigInfoRespon200.
+        r"""Gets the access_config_name of this LTSAccessConfigInfoRespon200.
 
         跨账号日志接入名称
 
@@ -161,7 +161,7 @@ class LTSAccessConfigInfoRespon200:
 
     @access_config_name.setter
     def access_config_name(self, access_config_name):
-        """Sets the access_config_name of this LTSAccessConfigInfoRespon200.
+        r"""Sets the access_config_name of this LTSAccessConfigInfoRespon200.
 
         跨账号日志接入名称
 
@@ -172,7 +172,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def access_config_type(self):
-        """Gets the access_config_type of this LTSAccessConfigInfoRespon200.
+        r"""Gets the access_config_type of this LTSAccessConfigInfoRespon200.
 
         跨账号日志接入类型
 
@@ -183,7 +183,7 @@ class LTSAccessConfigInfoRespon200:
 
     @access_config_type.setter
     def access_config_type(self, access_config_type):
-        """Sets the access_config_type of this LTSAccessConfigInfoRespon200.
+        r"""Sets the access_config_type of this LTSAccessConfigInfoRespon200.
 
         跨账号日志接入类型
 
@@ -194,7 +194,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def group_id(self):
-        """Gets the group_id of this LTSAccessConfigInfoRespon200.
+        r"""Gets the group_id of this LTSAccessConfigInfoRespon200.
 
         日志组ID
 
@@ -205,7 +205,7 @@ class LTSAccessConfigInfoRespon200:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this LTSAccessConfigInfoRespon200.
+        r"""Sets the group_id of this LTSAccessConfigInfoRespon200.
 
         日志组ID
 
@@ -216,7 +216,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this LTSAccessConfigInfoRespon200.
+        r"""Gets the log_group_name of this LTSAccessConfigInfoRespon200.
 
         日志组名称
 
@@ -227,7 +227,7 @@ class LTSAccessConfigInfoRespon200:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this LTSAccessConfigInfoRespon200.
+        r"""Sets the log_group_name of this LTSAccessConfigInfoRespon200.
 
         日志组名称
 
@@ -238,7 +238,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this LTSAccessConfigInfoRespon200.
+        r"""Gets the log_stream_id of this LTSAccessConfigInfoRespon200.
 
         日志流ID
 
@@ -249,7 +249,7 @@ class LTSAccessConfigInfoRespon200:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LTSAccessConfigInfoRespon200.
+        r"""Sets the log_stream_id of this LTSAccessConfigInfoRespon200.
 
         日志流ID
 
@@ -260,7 +260,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this LTSAccessConfigInfoRespon200.
+        r"""Gets the log_stream_name of this LTSAccessConfigInfoRespon200.
 
         日志流名称
 
@@ -271,7 +271,7 @@ class LTSAccessConfigInfoRespon200:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this LTSAccessConfigInfoRespon200.
+        r"""Sets the log_stream_name of this LTSAccessConfigInfoRespon200.
 
         日志流名称
 
@@ -282,7 +282,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def create_time(self):
-        """Gets the create_time of this LTSAccessConfigInfoRespon200.
+        r"""Gets the create_time of this LTSAccessConfigInfoRespon200.
 
         创建时间
 
@@ -293,7 +293,7 @@ class LTSAccessConfigInfoRespon200:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this LTSAccessConfigInfoRespon200.
+        r"""Sets the create_time of this LTSAccessConfigInfoRespon200.
 
         创建时间
 
@@ -304,7 +304,7 @@ class LTSAccessConfigInfoRespon200:
 
     @property
     def agency_log_access(self):
-        """Gets the agency_log_access of this LTSAccessConfigInfoRespon200.
+        r"""Gets the agency_log_access of this LTSAccessConfigInfoRespon200.
 
         :return: The agency_log_access of this LTSAccessConfigInfoRespon200.
         :rtype: :class:`huaweicloudsdklts.v2.PreviewAgencyLogAccessReqBody`
@@ -313,7 +313,7 @@ class LTSAccessConfigInfoRespon200:
 
     @agency_log_access.setter
     def agency_log_access(self, agency_log_access):
-        """Sets the agency_log_access of this LTSAccessConfigInfoRespon200.
+        r"""Sets the agency_log_access of this LTSAccessConfigInfoRespon200.
 
         :param agency_log_access: The agency_log_access of this LTSAccessConfigInfoRespon200.
         :type agency_log_access: :class:`huaweicloudsdklts.v2.PreviewAgencyLogAccessReqBody`

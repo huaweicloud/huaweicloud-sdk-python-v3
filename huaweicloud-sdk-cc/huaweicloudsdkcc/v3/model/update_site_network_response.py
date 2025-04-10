@@ -28,7 +28,7 @@ class UpdateSiteNetworkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, site_network=None):
-        """UpdateSiteNetworkResponse
+        r"""UpdateSiteNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSiteNetworkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateSiteNetworkResponse.
+        r"""Gets the request_id of this UpdateSiteNetworkResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class UpdateSiteNetworkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateSiteNetworkResponse.
+        r"""Sets the request_id of this UpdateSiteNetworkResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class UpdateSiteNetworkResponse(SdkResponse):
 
     @property
     def site_network(self):
-        """Gets the site_network of this UpdateSiteNetworkResponse.
+        r"""Gets the site_network of this UpdateSiteNetworkResponse.
 
         :return: The site_network of this UpdateSiteNetworkResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkEntry`
@@ -80,7 +80,7 @@ class UpdateSiteNetworkResponse(SdkResponse):
 
     @site_network.setter
     def site_network(self, site_network):
-        """Sets the site_network of this UpdateSiteNetworkResponse.
+        r"""Sets the site_network of this UpdateSiteNetworkResponse.
 
         :param site_network: The site_network of this UpdateSiteNetworkResponse.
         :type site_network: :class:`huaweicloudsdkcc.v3.SiteNetworkEntry`

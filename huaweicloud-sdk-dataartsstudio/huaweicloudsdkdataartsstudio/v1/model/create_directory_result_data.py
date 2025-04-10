@@ -25,7 +25,7 @@ class CreateDirectoryResultData:
     }
 
     def __init__(self, value=None):
-        """CreateDirectoryResultData
+        r"""CreateDirectoryResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDirectoryResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateDirectoryResultData.
+        r"""Gets the value of this CreateDirectoryResultData.
 
         :return: The value of this CreateDirectoryResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`
@@ -52,7 +52,7 @@ class CreateDirectoryResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateDirectoryResultData.
+        r"""Sets the value of this CreateDirectoryResultData.
 
         :param value: The value of this CreateDirectoryResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.DirectoryVO`

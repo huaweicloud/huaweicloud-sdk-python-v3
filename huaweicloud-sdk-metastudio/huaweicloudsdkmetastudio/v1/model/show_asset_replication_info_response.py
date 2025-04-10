@@ -34,7 +34,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, asset_info=None, encryption_info=None, expire_time=None, x_request_id=None):
-        """ShowAssetReplicationInfoResponse
+        r"""ShowAssetReplicationInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetReplicationInfoResponse.
+        r"""Gets the asset_id of this ShowAssetReplicationInfoResponse.
 
         资产ID。
 
@@ -83,7 +83,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetReplicationInfoResponse.
+        r"""Sets the asset_id of this ShowAssetReplicationInfoResponse.
 
         资产ID。
 
@@ -94,7 +94,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @property
     def asset_info(self):
-        """Gets the asset_info of this ShowAssetReplicationInfoResponse.
+        r"""Gets the asset_info of this ShowAssetReplicationInfoResponse.
 
         加密后的资产信息。
 
@@ -105,7 +105,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @asset_info.setter
     def asset_info(self, asset_info):
-        """Sets the asset_info of this ShowAssetReplicationInfoResponse.
+        r"""Sets the asset_info of this ShowAssetReplicationInfoResponse.
 
         加密后的资产信息。
 
@@ -116,7 +116,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @property
     def encryption_info(self):
-        """Gets the encryption_info of this ShowAssetReplicationInfoResponse.
+        r"""Gets the encryption_info of this ShowAssetReplicationInfoResponse.
 
         :return: The encryption_info of this ShowAssetReplicationInfoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
@@ -125,7 +125,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @encryption_info.setter
     def encryption_info(self, encryption_info):
-        """Sets the encryption_info of this ShowAssetReplicationInfoResponse.
+        r"""Sets the encryption_info of this ShowAssetReplicationInfoResponse.
 
         :param encryption_info: The encryption_info of this ShowAssetReplicationInfoResponse.
         :type encryption_info: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
@@ -134,7 +134,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowAssetReplicationInfoResponse.
+        r"""Gets the expire_time of this ShowAssetReplicationInfoResponse.
 
         过期时间
 
@@ -145,7 +145,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowAssetReplicationInfoResponse.
+        r"""Sets the expire_time of this ShowAssetReplicationInfoResponse.
 
         过期时间
 
@@ -156,7 +156,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAssetReplicationInfoResponse.
+        r"""Gets the x_request_id of this ShowAssetReplicationInfoResponse.
 
         :return: The x_request_id of this ShowAssetReplicationInfoResponse.
         :rtype: str
@@ -165,7 +165,7 @@ class ShowAssetReplicationInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAssetReplicationInfoResponse.
+        r"""Sets the x_request_id of this ShowAssetReplicationInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowAssetReplicationInfoResponse.
         :type x_request_id: str

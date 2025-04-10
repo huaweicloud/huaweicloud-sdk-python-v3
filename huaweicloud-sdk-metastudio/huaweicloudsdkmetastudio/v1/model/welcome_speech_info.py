@@ -37,7 +37,7 @@ class WelcomeSpeechInfo:
     }
 
     def __init__(self, welcome_speech_id=None, welcome_speech=None, enable_welcome_speech=None, language=None, robot_id=None, create_time=None, update_time=None):
-        """WelcomeSpeechInfo
+        r"""WelcomeSpeechInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class WelcomeSpeechInfo:
 
     @property
     def welcome_speech_id(self):
-        """Gets the welcome_speech_id of this WelcomeSpeechInfo.
+        r"""Gets the welcome_speech_id of this WelcomeSpeechInfo.
 
         欢迎词ID。
 
@@ -96,7 +96,7 @@ class WelcomeSpeechInfo:
 
     @welcome_speech_id.setter
     def welcome_speech_id(self, welcome_speech_id):
-        """Sets the welcome_speech_id of this WelcomeSpeechInfo.
+        r"""Sets the welcome_speech_id of this WelcomeSpeechInfo.
 
         欢迎词ID。
 
@@ -107,7 +107,7 @@ class WelcomeSpeechInfo:
 
     @property
     def welcome_speech(self):
-        """Gets the welcome_speech of this WelcomeSpeechInfo.
+        r"""Gets the welcome_speech of this WelcomeSpeechInfo.
 
         欢迎词。
 
@@ -118,7 +118,7 @@ class WelcomeSpeechInfo:
 
     @welcome_speech.setter
     def welcome_speech(self, welcome_speech):
-        """Sets the welcome_speech of this WelcomeSpeechInfo.
+        r"""Sets the welcome_speech of this WelcomeSpeechInfo.
 
         欢迎词。
 
@@ -129,7 +129,7 @@ class WelcomeSpeechInfo:
 
     @property
     def enable_welcome_speech(self):
-        """Gets the enable_welcome_speech of this WelcomeSpeechInfo.
+        r"""Gets the enable_welcome_speech of this WelcomeSpeechInfo.
 
         欢迎词功能开关。
 
@@ -140,7 +140,7 @@ class WelcomeSpeechInfo:
 
     @enable_welcome_speech.setter
     def enable_welcome_speech(self, enable_welcome_speech):
-        """Sets the enable_welcome_speech of this WelcomeSpeechInfo.
+        r"""Sets the enable_welcome_speech of this WelcomeSpeechInfo.
 
         欢迎词功能开关。
 
@@ -151,7 +151,7 @@ class WelcomeSpeechInfo:
 
     @property
     def language(self):
-        """Gets the language of this WelcomeSpeechInfo.
+        r"""Gets the language of this WelcomeSpeechInfo.
 
         :return: The language of this WelcomeSpeechInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -160,7 +160,7 @@ class WelcomeSpeechInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this WelcomeSpeechInfo.
+        r"""Sets the language of this WelcomeSpeechInfo.
 
         :param language: The language of this WelcomeSpeechInfo.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -169,7 +169,7 @@ class WelcomeSpeechInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this WelcomeSpeechInfo.
+        r"""Gets the robot_id of this WelcomeSpeechInfo.
 
         应用ID。
 
@@ -180,7 +180,7 @@ class WelcomeSpeechInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this WelcomeSpeechInfo.
+        r"""Sets the robot_id of this WelcomeSpeechInfo.
 
         应用ID。
 
@@ -191,7 +191,7 @@ class WelcomeSpeechInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WelcomeSpeechInfo.
+        r"""Gets the create_time of this WelcomeSpeechInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -202,7 +202,7 @@ class WelcomeSpeechInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WelcomeSpeechInfo.
+        r"""Sets the create_time of this WelcomeSpeechInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -213,7 +213,7 @@ class WelcomeSpeechInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this WelcomeSpeechInfo.
+        r"""Gets the update_time of this WelcomeSpeechInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -224,7 +224,7 @@ class WelcomeSpeechInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this WelcomeSpeechInfo.
+        r"""Sets the update_time of this WelcomeSpeechInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

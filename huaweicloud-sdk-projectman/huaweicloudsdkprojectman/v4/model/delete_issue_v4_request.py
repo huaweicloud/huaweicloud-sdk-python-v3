@@ -27,7 +27,7 @@ class DeleteIssueV4Request:
     }
 
     def __init__(self, project_id=None, issue_id=None):
-        """DeleteIssueV4Request
+        r"""DeleteIssueV4Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteIssueV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteIssueV4Request.
+        r"""Gets the project_id of this DeleteIssueV4Request.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class DeleteIssueV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteIssueV4Request.
+        r"""Sets the project_id of this DeleteIssueV4Request.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class DeleteIssueV4Request:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this DeleteIssueV4Request.
+        r"""Gets the issue_id of this DeleteIssueV4Request.
 
         工作项id
 
@@ -81,7 +81,7 @@ class DeleteIssueV4Request:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this DeleteIssueV4Request.
+        r"""Sets the issue_id of this DeleteIssueV4Request.
 
         工作项id
 

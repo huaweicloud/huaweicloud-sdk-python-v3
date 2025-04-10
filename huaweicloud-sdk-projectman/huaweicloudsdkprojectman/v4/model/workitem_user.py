@@ -29,7 +29,7 @@ class WorkitemUser:
     }
 
     def __init__(self, id=None, name=None, nick_name=None):
-        """WorkitemUser
+        r"""WorkitemUser
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WorkitemUser:
 
     @property
     def id(self):
-        """Gets the id of this WorkitemUser.
+        r"""Gets the id of this WorkitemUser.
 
         用户32位uuid
 
@@ -68,7 +68,7 @@ class WorkitemUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkitemUser.
+        r"""Sets the id of this WorkitemUser.
 
         用户32位uuid
 
@@ -79,7 +79,7 @@ class WorkitemUser:
 
     @property
     def name(self):
-        """Gets the name of this WorkitemUser.
+        r"""Gets the name of this WorkitemUser.
 
         用户名
 
@@ -90,7 +90,7 @@ class WorkitemUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkitemUser.
+        r"""Sets the name of this WorkitemUser.
 
         用户名
 
@@ -101,7 +101,7 @@ class WorkitemUser:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this WorkitemUser.
+        r"""Gets the nick_name of this WorkitemUser.
 
         昵称
 
@@ -112,7 +112,7 @@ class WorkitemUser:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this WorkitemUser.
+        r"""Sets the nick_name of this WorkitemUser.
 
         昵称
 

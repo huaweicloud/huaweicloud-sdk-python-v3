@@ -27,7 +27,7 @@ class CreatedUser:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """CreatedUser
+        r"""CreatedUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatedUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreatedUser.
+        r"""Gets the user_id of this CreatedUser.
 
         用户ID
 
@@ -61,7 +61,7 @@ class CreatedUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreatedUser.
+        r"""Sets the user_id of this CreatedUser.
 
         用户ID
 
@@ -72,7 +72,7 @@ class CreatedUser:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreatedUser.
+        r"""Gets the user_name of this CreatedUser.
 
         用户名
 
@@ -83,7 +83,7 @@ class CreatedUser:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreatedUser.
+        r"""Sets the user_name of this CreatedUser.
 
         用户名
 

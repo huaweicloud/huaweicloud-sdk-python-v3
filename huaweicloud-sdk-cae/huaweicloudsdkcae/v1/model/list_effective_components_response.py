@@ -30,7 +30,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListEffectiveComponentsResponse
+        r"""ListEffectiveComponentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListEffectiveComponentsResponse.
+        r"""Gets the api_version of this ListEffectiveComponentsResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListEffectiveComponentsResponse.
+        r"""Sets the api_version of this ListEffectiveComponentsResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListEffectiveComponentsResponse.
+        r"""Gets the kind of this ListEffectiveComponentsResponse.
 
         资源种类。
 
@@ -91,7 +91,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListEffectiveComponentsResponse.
+        r"""Sets the kind of this ListEffectiveComponentsResponse.
 
         资源种类。
 
@@ -102,7 +102,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListEffectiveComponentsResponse.
+        r"""Gets the items of this ListEffectiveComponentsResponse.
 
         定时启停规则所包含的所有应用，只在生效范围为application的时候需要填写。
 
@@ -113,7 +113,7 @@ class ListEffectiveComponentsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListEffectiveComponentsResponse.
+        r"""Sets the items of this ListEffectiveComponentsResponse.
 
         定时启停规则所包含的所有应用，只在生效范围为application的时候需要填写。
 

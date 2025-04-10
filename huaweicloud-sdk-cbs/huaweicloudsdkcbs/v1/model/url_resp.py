@@ -29,7 +29,7 @@ class UrlResp:
     }
 
     def __init__(self, id=None, name=None, url=None):
-        """UrlResp
+        r"""UrlResp
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UrlResp:
 
     @property
     def id(self):
-        """Gets the id of this UrlResp.
+        r"""Gets the id of this UrlResp.
 
         图片id
 
@@ -66,7 +66,7 @@ class UrlResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UrlResp.
+        r"""Sets the id of this UrlResp.
 
         图片id
 
@@ -77,7 +77,7 @@ class UrlResp:
 
     @property
     def name(self):
-        """Gets the name of this UrlResp.
+        r"""Gets the name of this UrlResp.
 
         
 
@@ -88,7 +88,7 @@ class UrlResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UrlResp.
+        r"""Sets the name of this UrlResp.
 
         
 
@@ -99,7 +99,7 @@ class UrlResp:
 
     @property
     def url(self):
-        """Gets the url of this UrlResp.
+        r"""Gets the url of this UrlResp.
 
         访问地址
 
@@ -110,7 +110,7 @@ class UrlResp:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UrlResp.
+        r"""Sets the url of this UrlResp.
 
         访问地址
 

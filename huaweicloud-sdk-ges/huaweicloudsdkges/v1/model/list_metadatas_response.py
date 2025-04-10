@@ -32,7 +32,7 @@ class ListMetadatasResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, schema_count=None, schema_list=None):
-        """ListMetadatasResponse
+        r"""ListMetadatasResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListMetadatasResponse.
+        r"""Gets the error_message of this ListMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -76,7 +76,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListMetadatasResponse.
+        r"""Sets the error_message of this ListMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -87,7 +87,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListMetadatasResponse.
+        r"""Gets the error_code of this ListMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -98,7 +98,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListMetadatasResponse.
+        r"""Sets the error_code of this ListMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -109,7 +109,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @property
     def schema_count(self):
-        """Gets the schema_count of this ListMetadatasResponse.
+        r"""Gets the schema_count of this ListMetadatasResponse.
 
         元数据返回个数。请求失败时，字段为空。
 
@@ -120,7 +120,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @schema_count.setter
     def schema_count(self, schema_count):
-        """Sets the schema_count of this ListMetadatasResponse.
+        r"""Sets the schema_count of this ListMetadatasResponse.
 
         元数据返回个数。请求失败时，字段为空。
 
@@ -131,7 +131,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @property
     def schema_list(self):
-        """Gets the schema_list of this ListMetadatasResponse.
+        r"""Gets the schema_list of this ListMetadatasResponse.
 
         当前projectId下的所有元数据列表。请求失败时，字段为空。
 
@@ -142,7 +142,7 @@ class ListMetadatasResponse(SdkResponse):
 
     @schema_list.setter
     def schema_list(self, schema_list):
-        """Sets the schema_list of this ListMetadatasResponse.
+        r"""Sets the schema_list of this ListMetadatasResponse.
 
         当前projectId下的所有元数据列表。请求失败时，字段为空。
 

@@ -35,7 +35,7 @@ class SkillResponse:
     }
 
     def __init__(self, skill_id=None, skill_version=None, frame=None, candidate=None, locked=None, related_intenions=None):
-        """SkillResponse
+        r"""SkillResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class SkillResponse:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this SkillResponse.
+        r"""Gets the skill_id of this SkillResponse.
 
         技能ID。
 
@@ -83,7 +83,7 @@ class SkillResponse:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this SkillResponse.
+        r"""Sets the skill_id of this SkillResponse.
 
         技能ID。
 
@@ -94,7 +94,7 @@ class SkillResponse:
 
     @property
     def skill_version(self):
-        """Gets the skill_version of this SkillResponse.
+        r"""Gets the skill_version of this SkillResponse.
 
         技能模型版本。
 
@@ -105,7 +105,7 @@ class SkillResponse:
 
     @skill_version.setter
     def skill_version(self, skill_version):
-        """Sets the skill_version of this SkillResponse.
+        r"""Sets the skill_version of this SkillResponse.
 
         技能模型版本。
 
@@ -116,7 +116,7 @@ class SkillResponse:
 
     @property
     def frame(self):
-        """Gets the frame of this SkillResponse.
+        r"""Gets the frame of this SkillResponse.
 
         :return: The frame of this SkillResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.Frame`
@@ -125,7 +125,7 @@ class SkillResponse:
 
     @frame.setter
     def frame(self, frame):
-        """Sets the frame of this SkillResponse.
+        r"""Sets the frame of this SkillResponse.
 
         :param frame: The frame of this SkillResponse.
         :type frame: :class:`huaweicloudsdkcbs.v1.Frame`
@@ -134,7 +134,7 @@ class SkillResponse:
 
     @property
     def candidate(self):
-        """Gets the candidate of this SkillResponse.
+        r"""Gets the candidate of this SkillResponse.
 
         :return: The candidate of this SkillResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.CandidateIntention`
@@ -143,7 +143,7 @@ class SkillResponse:
 
     @candidate.setter
     def candidate(self, candidate):
-        """Sets the candidate of this SkillResponse.
+        r"""Sets the candidate of this SkillResponse.
 
         :param candidate: The candidate of this SkillResponse.
         :type candidate: :class:`huaweicloudsdkcbs.v1.CandidateIntention`
@@ -152,7 +152,7 @@ class SkillResponse:
 
     @property
     def locked(self):
-        """Gets the locked of this SkillResponse.
+        r"""Gets the locked of this SkillResponse.
 
         技能是否锁定。
 
@@ -163,7 +163,7 @@ class SkillResponse:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this SkillResponse.
+        r"""Sets the locked of this SkillResponse.
 
         技能是否锁定。
 
@@ -174,7 +174,7 @@ class SkillResponse:
 
     @property
     def related_intenions(self):
-        """Gets the related_intenions of this SkillResponse.
+        r"""Gets the related_intenions of this SkillResponse.
 
         相关意图信息。
 
@@ -185,7 +185,7 @@ class SkillResponse:
 
     @related_intenions.setter
     def related_intenions(self, related_intenions):
-        """Sets the related_intenions of this SkillResponse.
+        r"""Sets the related_intenions of this SkillResponse.
 
         相关意图信息。
 

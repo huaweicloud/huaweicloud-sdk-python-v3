@@ -29,7 +29,7 @@ class CreateAnticrawlerRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
-        """CreateAnticrawlerRuleRequest
+        r"""CreateAnticrawlerRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateAnticrawlerRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateAnticrawlerRuleRequest.
+        r"""Gets the enterprise_project_id of this CreateAnticrawlerRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class CreateAnticrawlerRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateAnticrawlerRuleRequest.
+        r"""Sets the enterprise_project_id of this CreateAnticrawlerRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class CreateAnticrawlerRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateAnticrawlerRuleRequest.
+        r"""Gets the policy_id of this CreateAnticrawlerRuleRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -89,7 +89,7 @@ class CreateAnticrawlerRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateAnticrawlerRuleRequest.
+        r"""Sets the policy_id of this CreateAnticrawlerRuleRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -100,7 +100,7 @@ class CreateAnticrawlerRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAnticrawlerRuleRequest.
+        r"""Gets the body of this CreateAnticrawlerRuleRequest.
 
         :return: The body of this CreateAnticrawlerRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAnticrawlerRuleRequestbody`
@@ -109,7 +109,7 @@ class CreateAnticrawlerRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAnticrawlerRuleRequest.
+        r"""Sets the body of this CreateAnticrawlerRuleRequest.
 
         :param body: The body of this CreateAnticrawlerRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateAnticrawlerRuleRequestbody`

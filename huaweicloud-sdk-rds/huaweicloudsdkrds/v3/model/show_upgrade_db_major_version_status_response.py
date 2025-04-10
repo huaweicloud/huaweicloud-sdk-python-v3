@@ -34,7 +34,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, target_version=None, start_time=None, check_expiration_time=None, detail=None):
-        """ShowUpgradeDbMajorVersionStatusResponse
+        r"""ShowUpgradeDbMajorVersionStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Gets the status of this ShowUpgradeDbMajorVersionStatusResponse.
 
         实例大版本升级状态 \" running\"：预检查或大版本升级进行中 \" success\"：预检查或大版本升级成功 \" failed\"：预检查或大版本升级失败
 
@@ -83,7 +83,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Sets the status of this ShowUpgradeDbMajorVersionStatusResponse.
 
         实例大版本升级状态 \" running\"：预检查或大版本升级进行中 \" success\"：预检查或大版本升级成功 \" failed\"：预检查或大版本升级失败
 
@@ -94,7 +94,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @property
     def target_version(self):
-        """Gets the target_version of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Gets the target_version of this ShowUpgradeDbMajorVersionStatusResponse.
 
         目标版本。
 
@@ -105,7 +105,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Sets the target_version of this ShowUpgradeDbMajorVersionStatusResponse.
 
         目标版本。
 
@@ -116,7 +116,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Gets the start_time of this ShowUpgradeDbMajorVersionStatusResponse.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -127,7 +127,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Sets the start_time of this ShowUpgradeDbMajorVersionStatusResponse.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -138,7 +138,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @property
     def check_expiration_time(self):
-        """Gets the check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Gets the check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
 
         检查成功时，检查报告到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 该字段仅在action为check时返回。
 
@@ -149,7 +149,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @check_expiration_time.setter
     def check_expiration_time(self, check_expiration_time):
-        """Sets the check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Sets the check_expiration_time of this ShowUpgradeDbMajorVersionStatusResponse.
 
         检查成功时，检查报告到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 该字段仅在action为check时返回。
 
@@ -160,7 +160,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Gets the detail of this ShowUpgradeDbMajorVersionStatusResponse.
 
         预检查或升级报告信息。
 
@@ -171,7 +171,7 @@ class ShowUpgradeDbMajorVersionStatusResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowUpgradeDbMajorVersionStatusResponse.
+        r"""Sets the detail of this ShowUpgradeDbMajorVersionStatusResponse.
 
         预检查或升级报告信息。
 

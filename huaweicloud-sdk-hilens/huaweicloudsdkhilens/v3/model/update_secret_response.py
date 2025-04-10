@@ -28,7 +28,7 @@ class UpdateSecretResponse(SdkResponse):
     }
 
     def __init__(self, workspace_id=None, secret=None):
-        """UpdateSecretResponse
+        r"""UpdateSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateSecretResponse(SdkResponse):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateSecretResponse.
+        r"""Gets the workspace_id of this UpdateSecretResponse.
 
         工作空间ID
 
@@ -62,7 +62,7 @@ class UpdateSecretResponse(SdkResponse):
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateSecretResponse.
+        r"""Sets the workspace_id of this UpdateSecretResponse.
 
         工作空间ID
 
@@ -73,7 +73,7 @@ class UpdateSecretResponse(SdkResponse):
 
     @property
     def secret(self):
-        """Gets the secret of this UpdateSecretResponse.
+        r"""Gets the secret of this UpdateSecretResponse.
 
         :return: The secret of this UpdateSecretResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateUpdateSecretRespSecret`
@@ -82,7 +82,7 @@ class UpdateSecretResponse(SdkResponse):
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this UpdateSecretResponse.
+        r"""Sets the secret of this UpdateSecretResponse.
 
         :param secret: The secret of this UpdateSecretResponse.
         :type secret: :class:`huaweicloudsdkhilens.v3.CreateUpdateSecretRespSecret`

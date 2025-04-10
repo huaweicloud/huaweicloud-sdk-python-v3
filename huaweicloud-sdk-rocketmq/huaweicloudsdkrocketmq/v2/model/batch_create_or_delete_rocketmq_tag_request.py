@@ -27,7 +27,7 @@ class BatchCreateOrDeleteRocketmqTagRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteRocketmqTagRequest
+        r"""BatchCreateOrDeleteRocketmqTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateOrDeleteRocketmqTagRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCreateOrDeleteRocketmqTagRequest.
+        r"""Gets the instance_id of this BatchCreateOrDeleteRocketmqTagRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchCreateOrDeleteRocketmqTagRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateOrDeleteRocketmqTagRequest.
+        r"""Sets the instance_id of this BatchCreateOrDeleteRocketmqTagRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchCreateOrDeleteRocketmqTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateOrDeleteRocketmqTagRequest.
+        r"""Gets the body of this BatchCreateOrDeleteRocketmqTagRequest.
 
         :return: The body of this BatchCreateOrDeleteRocketmqTagRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchCreateOrDeleteTagReq`
@@ -80,7 +80,7 @@ class BatchCreateOrDeleteRocketmqTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateOrDeleteRocketmqTagRequest.
+        r"""Sets the body of this BatchCreateOrDeleteRocketmqTagRequest.
 
         :param body: The body of this BatchCreateOrDeleteRocketmqTagRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.BatchCreateOrDeleteTagReq`

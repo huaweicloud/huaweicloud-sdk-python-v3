@@ -28,7 +28,7 @@ class ListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, endpoints=None, total_count=None):
-        """ListEndpointsResponse
+        r"""ListEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ListEndpointsResponse.
+        r"""Gets the endpoints of this ListEndpointsResponse.
 
         终端节点列表。
 
@@ -62,7 +62,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ListEndpointsResponse.
+        r"""Sets the endpoints of this ListEndpointsResponse.
 
         终端节点列表。
 
@@ -73,7 +73,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEndpointsResponse.
+        r"""Gets the total_count of this ListEndpointsResponse.
 
         满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 
@@ -84,7 +84,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEndpointsResponse.
+        r"""Sets the total_count of this ListEndpointsResponse.
 
         满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 

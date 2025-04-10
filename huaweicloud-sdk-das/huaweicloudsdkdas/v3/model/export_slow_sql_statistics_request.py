@@ -29,7 +29,7 @@ class ExportSlowSqlStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ExportSlowSqlStatisticsRequest
+        r"""ExportSlowSqlStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExportSlowSqlStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportSlowSqlStatisticsRequest.
+        r"""Gets the instance_id of this ExportSlowSqlStatisticsRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ExportSlowSqlStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportSlowSqlStatisticsRequest.
+        r"""Sets the instance_id of this ExportSlowSqlStatisticsRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ExportSlowSqlStatisticsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportSlowSqlStatisticsRequest.
+        r"""Gets the x_language of this ExportSlowSqlStatisticsRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class ExportSlowSqlStatisticsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportSlowSqlStatisticsRequest.
+        r"""Sets the x_language of this ExportSlowSqlStatisticsRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class ExportSlowSqlStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportSlowSqlStatisticsRequest.
+        r"""Gets the body of this ExportSlowSqlStatisticsRequest.
 
         :return: The body of this ExportSlowSqlStatisticsRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowSqlStatisticsRequestBody`
@@ -109,7 +109,7 @@ class ExportSlowSqlStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportSlowSqlStatisticsRequest.
+        r"""Sets the body of this ExportSlowSqlStatisticsRequest.
 
         :param body: The body of this ExportSlowSqlStatisticsRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ExportSlowSqlStatisticsRequestBody`

@@ -45,7 +45,7 @@ class QueryAvailableRdsList:
     }
 
     def __init__(self, id=None, project_id=None, status=None, name=None, engine_name=None, engine_software_version=None, private_ip=None, mode=None, port=None, az_code=None, time_zone=None):
-        """QueryAvailableRdsList
+        r"""QueryAvailableRdsList
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class QueryAvailableRdsList:
 
     @property
     def id(self):
-        """Gets the id of this QueryAvailableRdsList.
+        r"""Gets the id of this QueryAvailableRdsList.
 
         数据库实例 ID。
 
@@ -124,7 +124,7 @@ class QueryAvailableRdsList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryAvailableRdsList.
+        r"""Sets the id of this QueryAvailableRdsList.
 
         数据库实例 ID。
 
@@ -135,7 +135,7 @@ class QueryAvailableRdsList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this QueryAvailableRdsList.
+        r"""Gets the project_id of this QueryAvailableRdsList.
 
         数据库实例所在租户在某一region下的project ID。
 
@@ -146,7 +146,7 @@ class QueryAvailableRdsList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this QueryAvailableRdsList.
+        r"""Sets the project_id of this QueryAvailableRdsList.
 
         数据库实例所在租户在某一region下的project ID。
 
@@ -157,7 +157,7 @@ class QueryAvailableRdsList:
 
     @property
     def status(self):
-        """Gets the status of this QueryAvailableRdsList.
+        r"""Gets the status of this QueryAvailableRdsList.
 
         数据库实例状态。
 
@@ -168,7 +168,7 @@ class QueryAvailableRdsList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryAvailableRdsList.
+        r"""Sets the status of this QueryAvailableRdsList.
 
         数据库实例状态。
 
@@ -179,7 +179,7 @@ class QueryAvailableRdsList:
 
     @property
     def name(self):
-        """Gets the name of this QueryAvailableRdsList.
+        r"""Gets the name of this QueryAvailableRdsList.
 
         数据库实例名称。
 
@@ -190,7 +190,7 @@ class QueryAvailableRdsList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryAvailableRdsList.
+        r"""Sets the name of this QueryAvailableRdsList.
 
         数据库实例名称。
 
@@ -201,7 +201,7 @@ class QueryAvailableRdsList:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this QueryAvailableRdsList.
+        r"""Gets the engine_name of this QueryAvailableRdsList.
 
         数据库实例引擎名称。
 
@@ -212,7 +212,7 @@ class QueryAvailableRdsList:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this QueryAvailableRdsList.
+        r"""Sets the engine_name of this QueryAvailableRdsList.
 
         数据库实例引擎名称。
 
@@ -223,7 +223,7 @@ class QueryAvailableRdsList:
 
     @property
     def engine_software_version(self):
-        """Gets the engine_software_version of this QueryAvailableRdsList.
+        r"""Gets the engine_software_version of this QueryAvailableRdsList.
 
         数据库实例引擎版本。
 
@@ -234,7 +234,7 @@ class QueryAvailableRdsList:
 
     @engine_software_version.setter
     def engine_software_version(self, engine_software_version):
-        """Sets the engine_software_version of this QueryAvailableRdsList.
+        r"""Sets the engine_software_version of this QueryAvailableRdsList.
 
         数据库实例引擎版本。
 
@@ -245,7 +245,7 @@ class QueryAvailableRdsList:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this QueryAvailableRdsList.
+        r"""Gets the private_ip of this QueryAvailableRdsList.
 
         数据库实例内网连接地址。
 
@@ -256,7 +256,7 @@ class QueryAvailableRdsList:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this QueryAvailableRdsList.
+        r"""Sets the private_ip of this QueryAvailableRdsList.
 
         数据库实例内网连接地址。
 
@@ -267,7 +267,7 @@ class QueryAvailableRdsList:
 
     @property
     def mode(self):
-        """Gets the mode of this QueryAvailableRdsList.
+        r"""Gets the mode of this QueryAvailableRdsList.
 
         数据库实例类型（主备或单机）。
 
@@ -278,7 +278,7 @@ class QueryAvailableRdsList:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this QueryAvailableRdsList.
+        r"""Sets the mode of this QueryAvailableRdsList.
 
         数据库实例类型（主备或单机）。
 
@@ -289,7 +289,7 @@ class QueryAvailableRdsList:
 
     @property
     def port(self):
-        """Gets the port of this QueryAvailableRdsList.
+        r"""Gets the port of this QueryAvailableRdsList.
 
         数据库实例端口。
 
@@ -300,7 +300,7 @@ class QueryAvailableRdsList:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this QueryAvailableRdsList.
+        r"""Sets the port of this QueryAvailableRdsList.
 
         数据库实例端口。
 
@@ -311,7 +311,7 @@ class QueryAvailableRdsList:
 
     @property
     def az_code(self):
-        """Gets the az_code of this QueryAvailableRdsList.
+        r"""Gets the az_code of this QueryAvailableRdsList.
 
         可用区。
 
@@ -322,7 +322,7 @@ class QueryAvailableRdsList:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this QueryAvailableRdsList.
+        r"""Sets the az_code of this QueryAvailableRdsList.
 
         可用区。
 
@@ -333,7 +333,7 @@ class QueryAvailableRdsList:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this QueryAvailableRdsList.
+        r"""Gets the time_zone of this QueryAvailableRdsList.
 
         时区。
 
@@ -344,7 +344,7 @@ class QueryAvailableRdsList:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this QueryAvailableRdsList.
+        r"""Sets the time_zone of this QueryAvailableRdsList.
 
         时区。
 

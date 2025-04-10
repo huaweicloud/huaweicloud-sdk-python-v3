@@ -27,7 +27,7 @@ class DeleteEdgeNodeRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None):
-        """DeleteEdgeNodeRequest
+        r"""DeleteEdgeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteEdgeNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteEdgeNodeRequest.
+        r"""Gets the node_id of this DeleteEdgeNodeRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class DeleteEdgeNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteEdgeNodeRequest.
+        r"""Sets the node_id of this DeleteEdgeNodeRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class DeleteEdgeNodeRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteEdgeNodeRequest.
+        r"""Gets the ief_instance_id of this DeleteEdgeNodeRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class DeleteEdgeNodeRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteEdgeNodeRequest.
+        r"""Sets the ief_instance_id of this DeleteEdgeNodeRequest.
 
         铂金版实例ID，专业版实例为空值
 

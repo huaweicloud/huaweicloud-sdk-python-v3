@@ -30,7 +30,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None, x_auth_token=None):
-        """ListElasticResourcePoolScaleRecordsResponse
+        r"""ListElasticResourcePoolScaleRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListElasticResourcePoolScaleRecordsResponse.
+        r"""Gets the count of this ListElasticResourcePoolScaleRecordsResponse.
 
         返回数组长度
 
@@ -69,7 +69,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListElasticResourcePoolScaleRecordsResponse.
+        r"""Sets the count of this ListElasticResourcePoolScaleRecordsResponse.
 
         返回数组长度
 
@@ -80,7 +80,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListElasticResourcePoolScaleRecordsResponse.
+        r"""Gets the items of this ListElasticResourcePoolScaleRecordsResponse.
 
         数组中返回的数据
 
@@ -91,7 +91,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListElasticResourcePoolScaleRecordsResponse.
+        r"""Sets the items of this ListElasticResourcePoolScaleRecordsResponse.
 
         数组中返回的数据
 
@@ -102,7 +102,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     @property
     def x_auth_token(self):
-        """Gets the x_auth_token of this ListElasticResourcePoolScaleRecordsResponse.
+        r"""Gets the x_auth_token of this ListElasticResourcePoolScaleRecordsResponse.
 
         :return: The x_auth_token of this ListElasticResourcePoolScaleRecordsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListElasticResourcePoolScaleRecordsResponse(SdkResponse):
 
     @x_auth_token.setter
     def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this ListElasticResourcePoolScaleRecordsResponse.
+        r"""Sets the x_auth_token of this ListElasticResourcePoolScaleRecordsResponse.
 
         :param x_auth_token: The x_auth_token of this ListElasticResourcePoolScaleRecordsResponse.
         :type x_auth_token: str

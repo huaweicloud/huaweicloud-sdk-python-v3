@@ -27,7 +27,7 @@ class CreateImageRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateImageRequest
+        r"""CreateImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateImageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateImageRequest.
+        r"""Gets the eihealth_project_id of this CreateImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateImageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateImageRequest.
+        r"""Sets the eihealth_project_id of this CreateImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateImageRequest.
+        r"""Gets the body of this CreateImageRequest.
 
         :return: The body of this CreateImageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateImageReq`
@@ -80,7 +80,7 @@ class CreateImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateImageRequest.
+        r"""Sets the body of this CreateImageRequest.
 
         :param body: The body of this CreateImageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateImageReq`

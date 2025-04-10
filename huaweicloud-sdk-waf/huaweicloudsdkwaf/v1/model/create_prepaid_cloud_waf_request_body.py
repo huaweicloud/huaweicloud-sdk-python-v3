@@ -39,7 +39,7 @@ class CreatePrepaidCloudWafRequestBody:
     }
 
     def __init__(self, project_id=None, is_auto_pay=None, is_auto_renew=None, region_id=None, waf_product_info=None, domain_expack_product_info=None, bandwidth_expack_product_info=None, rule_expack_product_info=None):
-        """CreatePrepaidCloudWafRequestBody
+        r"""CreatePrepaidCloudWafRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the project_id of this CreatePrepaidCloudWafRequestBody.
 
         项目id
 
@@ -99,7 +99,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the project_id of this CreatePrepaidCloudWafRequestBody.
 
         项目id
 
@@ -110,7 +110,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the is_auto_pay of this CreatePrepaidCloudWafRequestBody.
 
         是否自动支付    - false: 否（需要客户手动去支付）   - true：是（自动支付）
 
@@ -121,7 +121,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the is_auto_pay of this CreatePrepaidCloudWafRequestBody.
 
         是否自动支付    - false: 否（需要客户手动去支付）   - true：是（自动支付）
 
@@ -132,7 +132,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the is_auto_renew of this CreatePrepaidCloudWafRequestBody.
 
         是否自动续订   -  true：自动续订   - false：不自动续订
 
@@ -143,7 +143,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the is_auto_renew of this CreatePrepaidCloudWafRequestBody.
 
         是否自动续订   -  true：自动续订   - false：不自动续订
 
@@ -154,7 +154,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the region_id of this CreatePrepaidCloudWafRequestBody.
 
         region Id
 
@@ -165,7 +165,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the region_id of this CreatePrepaidCloudWafRequestBody.
 
         region Id
 
@@ -176,7 +176,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def waf_product_info(self):
-        """Gets the waf_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the waf_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :return: The waf_product_info of this CreatePrepaidCloudWafRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.WafProductInfo`
@@ -185,7 +185,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @waf_product_info.setter
     def waf_product_info(self, waf_product_info):
-        """Sets the waf_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the waf_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :param waf_product_info: The waf_product_info of this CreatePrepaidCloudWafRequestBody.
         :type waf_product_info: :class:`huaweicloudsdkwaf.v1.WafProductInfo`
@@ -194,7 +194,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def domain_expack_product_info(self):
-        """Gets the domain_expack_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the domain_expack_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :return: The domain_expack_product_info of this CreatePrepaidCloudWafRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.ExpackProductInfo`
@@ -203,7 +203,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @domain_expack_product_info.setter
     def domain_expack_product_info(self, domain_expack_product_info):
-        """Sets the domain_expack_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the domain_expack_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :param domain_expack_product_info: The domain_expack_product_info of this CreatePrepaidCloudWafRequestBody.
         :type domain_expack_product_info: :class:`huaweicloudsdkwaf.v1.ExpackProductInfo`
@@ -212,7 +212,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def bandwidth_expack_product_info(self):
-        """Gets the bandwidth_expack_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the bandwidth_expack_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :return: The bandwidth_expack_product_info of this CreatePrepaidCloudWafRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.ExpackProductInfo`
@@ -221,7 +221,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @bandwidth_expack_product_info.setter
     def bandwidth_expack_product_info(self, bandwidth_expack_product_info):
-        """Sets the bandwidth_expack_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the bandwidth_expack_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :param bandwidth_expack_product_info: The bandwidth_expack_product_info of this CreatePrepaidCloudWafRequestBody.
         :type bandwidth_expack_product_info: :class:`huaweicloudsdkwaf.v1.ExpackProductInfo`
@@ -230,7 +230,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @property
     def rule_expack_product_info(self):
-        """Gets the rule_expack_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Gets the rule_expack_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :return: The rule_expack_product_info of this CreatePrepaidCloudWafRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.ExpackProductInfo`
@@ -239,7 +239,7 @@ class CreatePrepaidCloudWafRequestBody:
 
     @rule_expack_product_info.setter
     def rule_expack_product_info(self, rule_expack_product_info):
-        """Sets the rule_expack_product_info of this CreatePrepaidCloudWafRequestBody.
+        r"""Sets the rule_expack_product_info of this CreatePrepaidCloudWafRequestBody.
 
         :param rule_expack_product_info: The rule_expack_product_info of this CreatePrepaidCloudWafRequestBody.
         :type rule_expack_product_info: :class:`huaweicloudsdkwaf.v1.ExpackProductInfo`

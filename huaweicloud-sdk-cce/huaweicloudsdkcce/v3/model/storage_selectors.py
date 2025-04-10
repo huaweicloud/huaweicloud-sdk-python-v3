@@ -29,7 +29,7 @@ class StorageSelectors:
     }
 
     def __init__(self, name=None, storage_type=None, match_labels=None):
-        """StorageSelectors
+        r"""StorageSelectors
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StorageSelectors:
 
     @property
     def name(self):
-        """Gets the name of this StorageSelectors.
+        r"""Gets the name of this StorageSelectors.
 
         selector的名字，作为storageGroup中selectorNames的索引，因此各个selector间的名字不能重复。
 
@@ -66,7 +66,7 @@ class StorageSelectors:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StorageSelectors.
+        r"""Sets the name of this StorageSelectors.
 
         selector的名字，作为storageGroup中selectorNames的索引，因此各个selector间的名字不能重复。
 
@@ -77,7 +77,7 @@ class StorageSelectors:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this StorageSelectors.
+        r"""Gets the storage_type of this StorageSelectors.
 
         存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。 
 
@@ -88,7 +88,7 @@ class StorageSelectors:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this StorageSelectors.
+        r"""Sets the storage_type of this StorageSelectors.
 
         存储类型，当前仅支持evs（云硬盘）或local（本地盘）；local存储类型不支持磁盘选择，所有本地盘将被组成一个VG，因此也仅允许只有一个local类型的storageSelector。 
 
@@ -99,7 +99,7 @@ class StorageSelectors:
 
     @property
     def match_labels(self):
-        """Gets the match_labels of this StorageSelectors.
+        r"""Gets the match_labels of this StorageSelectors.
 
         :return: The match_labels of this StorageSelectors.
         :rtype: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`
@@ -108,7 +108,7 @@ class StorageSelectors:
 
     @match_labels.setter
     def match_labels(self, match_labels):
-        """Sets the match_labels of this StorageSelectors.
+        r"""Sets the match_labels of this StorageSelectors.
 
         :param match_labels: The match_labels of this StorageSelectors.
         :type match_labels: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`

@@ -26,7 +26,7 @@ class ShowRecyclePolicyResponse(SdkResponse):
     }
 
     def __init__(self, recycle_policy=None):
-        """ShowRecyclePolicyResponse
+        r"""ShowRecyclePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRecyclePolicyResponse(SdkResponse):
 
     @property
     def recycle_policy(self):
-        """Gets the recycle_policy of this ShowRecyclePolicyResponse.
+        r"""Gets the recycle_policy of this ShowRecyclePolicyResponse.
 
         :return: The recycle_policy of this ShowRecyclePolicyResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RecyclePolicy`
@@ -53,7 +53,7 @@ class ShowRecyclePolicyResponse(SdkResponse):
 
     @recycle_policy.setter
     def recycle_policy(self, recycle_policy):
-        """Sets the recycle_policy of this ShowRecyclePolicyResponse.
+        r"""Sets the recycle_policy of this ShowRecyclePolicyResponse.
 
         :param recycle_policy: The recycle_policy of this ShowRecyclePolicyResponse.
         :type recycle_policy: :class:`huaweicloudsdkgaussdb.v3.RecyclePolicy`

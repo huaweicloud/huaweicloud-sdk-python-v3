@@ -25,7 +25,7 @@ class CreateProjectRelatedRepositoryRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProjectRelatedRepositoryRequest
+        r"""CreateProjectRelatedRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProjectRelatedRepositoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectRelatedRepositoryRequest.
+        r"""Gets the body of this CreateProjectRelatedRepositoryRequest.
 
         :return: The body of this CreateProjectRelatedRepositoryRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.IDEPrivilageProjectInfo`
@@ -52,7 +52,7 @@ class CreateProjectRelatedRepositoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectRelatedRepositoryRequest.
+        r"""Sets the body of this CreateProjectRelatedRepositoryRequest.
 
         :param body: The body of this CreateProjectRelatedRepositoryRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.IDEPrivilageProjectInfo`

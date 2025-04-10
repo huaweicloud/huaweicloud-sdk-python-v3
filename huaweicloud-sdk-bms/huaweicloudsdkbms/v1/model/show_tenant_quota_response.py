@@ -26,7 +26,7 @@ class ShowTenantQuotaResponse(SdkResponse):
     }
 
     def __init__(self, absolute=None):
-        """ShowTenantQuotaResponse
+        r"""ShowTenantQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTenantQuotaResponse(SdkResponse):
 
     @property
     def absolute(self):
-        """Gets the absolute of this ShowTenantQuotaResponse.
+        r"""Gets the absolute of this ShowTenantQuotaResponse.
 
         :return: The absolute of this ShowTenantQuotaResponse.
         :rtype: :class:`huaweicloudsdkbms.v1.Absolute`
@@ -53,7 +53,7 @@ class ShowTenantQuotaResponse(SdkResponse):
 
     @absolute.setter
     def absolute(self, absolute):
-        """Sets the absolute of this ShowTenantQuotaResponse.
+        r"""Sets the absolute of this ShowTenantQuotaResponse.
 
         :param absolute: The absolute of this ShowTenantQuotaResponse.
         :type absolute: :class:`huaweicloudsdkbms.v1.Absolute`

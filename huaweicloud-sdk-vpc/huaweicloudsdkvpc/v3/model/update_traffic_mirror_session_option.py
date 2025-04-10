@@ -41,7 +41,7 @@ class UpdateTrafficMirrorSessionOption:
     }
 
     def __init__(self, name=None, description=None, traffic_mirror_filter_id=None, traffic_mirror_target_id=None, traffic_mirror_target_type=None, virtual_network_id=None, packet_length=None, priority=None, enabled=None):
-        """UpdateTrafficMirrorSessionOption
+        r"""UpdateTrafficMirrorSessionOption
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the name of this UpdateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -110,7 +110,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the name of this UpdateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -121,7 +121,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the description of this UpdateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -132,7 +132,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the description of this UpdateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -143,7 +143,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_filter_id(self):
-        """Gets the traffic_mirror_filter_id of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_filter_id of this UpdateTrafficMirrorSessionOption.
 
         功能说明：流量镜像筛选条件ID
 
@@ -154,7 +154,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @traffic_mirror_filter_id.setter
     def traffic_mirror_filter_id(self, traffic_mirror_filter_id):
-        """Sets the traffic_mirror_filter_id of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_filter_id of this UpdateTrafficMirrorSessionOption.
 
         功能说明：流量镜像筛选条件ID
 
@@ -165,7 +165,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_target_id(self):
-        """Gets the traffic_mirror_target_id of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_target_id of this UpdateTrafficMirrorSessionOption.
 
         功能说明：镜像目标ID
 
@@ -176,7 +176,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @traffic_mirror_target_id.setter
     def traffic_mirror_target_id(self, traffic_mirror_target_id):
-        """Sets the traffic_mirror_target_id of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_target_id of this UpdateTrafficMirrorSessionOption.
 
         功能说明：镜像目标ID
 
@@ -187,7 +187,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_target_type(self):
-        """Gets the traffic_mirror_target_type of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_target_type of this UpdateTrafficMirrorSessionOption.
 
         功能说明：镜像目的类型 取值范围：     eni：弹性网卡     elb：私网弹性负载均衡
 
@@ -198,7 +198,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @traffic_mirror_target_type.setter
     def traffic_mirror_target_type(self, traffic_mirror_target_type):
-        """Sets the traffic_mirror_target_type of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_target_type of this UpdateTrafficMirrorSessionOption.
 
         功能说明：镜像目的类型 取值范围：     eni：弹性网卡     elb：私网弹性负载均衡
 
@@ -209,7 +209,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def virtual_network_id(self):
-        """Gets the virtual_network_id of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the virtual_network_id of this UpdateTrafficMirrorSessionOption.
 
         功能说明：指定VNI，用于在镜像目的区分不同会话的镜像流量 取值范围：0~16777215
 
@@ -220,7 +220,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @virtual_network_id.setter
     def virtual_network_id(self, virtual_network_id):
-        """Sets the virtual_network_id of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the virtual_network_id of this UpdateTrafficMirrorSessionOption.
 
         功能说明：指定VNI，用于在镜像目的区分不同会话的镜像流量 取值范围：0~16777215
 
@@ -231,7 +231,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def packet_length(self):
-        """Gets the packet_length of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the packet_length of this UpdateTrafficMirrorSessionOption.
 
         功能说明：最大传输单元MTU 取值范围：1~1460
 
@@ -242,7 +242,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @packet_length.setter
     def packet_length(self, packet_length):
-        """Sets the packet_length of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the packet_length of this UpdateTrafficMirrorSessionOption.
 
         功能说明：最大传输单元MTU 取值范围：1~1460
 
@@ -253,7 +253,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the priority of this UpdateTrafficMirrorSessionOption.
 
         功能说明：会话优先级 取值范围：1~32766
 
@@ -264,7 +264,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the priority of this UpdateTrafficMirrorSessionOption.
 
         功能说明：会话优先级 取值范围：1~32766
 
@@ -275,7 +275,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateTrafficMirrorSessionOption.
+        r"""Gets the enabled of this UpdateTrafficMirrorSessionOption.
 
         功能说明：是否开启会话 取值范围：true、false
 
@@ -286,7 +286,7 @@ class UpdateTrafficMirrorSessionOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateTrafficMirrorSessionOption.
+        r"""Sets the enabled of this UpdateTrafficMirrorSessionOption.
 
         功能说明：是否开启会话 取值范围：true、false
 

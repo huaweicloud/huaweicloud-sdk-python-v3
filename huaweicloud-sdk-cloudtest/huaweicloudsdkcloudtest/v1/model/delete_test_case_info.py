@@ -29,7 +29,7 @@ class DeleteTestCaseInfo:
     }
 
     def __init__(self, project_uuid=None, version_uri=None, case_ids=None):
-        """DeleteTestCaseInfo
+        r"""DeleteTestCaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteTestCaseInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this DeleteTestCaseInfo.
+        r"""Gets the project_uuid of this DeleteTestCaseInfo.
 
         项目id
 
@@ -67,7 +67,7 @@ class DeleteTestCaseInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this DeleteTestCaseInfo.
+        r"""Sets the project_uuid of this DeleteTestCaseInfo.
 
         项目id
 
@@ -78,7 +78,7 @@ class DeleteTestCaseInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this DeleteTestCaseInfo.
+        r"""Gets the version_uri of this DeleteTestCaseInfo.
 
         分支uri
 
@@ -89,7 +89,7 @@ class DeleteTestCaseInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this DeleteTestCaseInfo.
+        r"""Sets the version_uri of this DeleteTestCaseInfo.
 
         分支uri
 
@@ -100,7 +100,7 @@ class DeleteTestCaseInfo:
 
     @property
     def case_ids(self):
-        """Gets the case_ids of this DeleteTestCaseInfo.
+        r"""Gets the case_ids of this DeleteTestCaseInfo.
 
         用例id列表
 
@@ -111,7 +111,7 @@ class DeleteTestCaseInfo:
 
     @case_ids.setter
     def case_ids(self, case_ids):
-        """Sets the case_ids of this DeleteTestCaseInfo.
+        r"""Sets the case_ids of this DeleteTestCaseInfo.
 
         用例id列表
 

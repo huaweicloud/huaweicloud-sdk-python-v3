@@ -29,7 +29,7 @@ class UpdateFollow302SwitchRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None, body=None):
-        """UpdateFollow302SwitchRequest
+        r"""UpdateFollow302SwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateFollow302SwitchRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateFollow302SwitchRequest.
+        r"""Gets the domain_id of this UpdateFollow302SwitchRequest.
 
         加速域名id。
 
@@ -67,7 +67,7 @@ class UpdateFollow302SwitchRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateFollow302SwitchRequest.
+        r"""Sets the domain_id of this UpdateFollow302SwitchRequest.
 
         加速域名id。
 
@@ -78,7 +78,7 @@ class UpdateFollow302SwitchRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateFollow302SwitchRequest.
+        r"""Gets the enterprise_project_id of this UpdateFollow302SwitchRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -89,7 +89,7 @@ class UpdateFollow302SwitchRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateFollow302SwitchRequest.
+        r"""Sets the enterprise_project_id of this UpdateFollow302SwitchRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -100,7 +100,7 @@ class UpdateFollow302SwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFollow302SwitchRequest.
+        r"""Gets the body of this UpdateFollow302SwitchRequest.
 
         :return: The body of this UpdateFollow302SwitchRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`
@@ -109,7 +109,7 @@ class UpdateFollow302SwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFollow302SwitchRequest.
+        r"""Sets the body of this UpdateFollow302SwitchRequest.
 
         :param body: The body of this UpdateFollow302SwitchRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`

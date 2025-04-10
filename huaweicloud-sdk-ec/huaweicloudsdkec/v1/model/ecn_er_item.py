@@ -35,7 +35,7 @@ class EcnErItem:
     }
 
     def __init__(self, id=None, er_id=None, region_id=None, status=None, health_status=None, created_at=None):
-        """EcnErItem
+        r"""EcnErItem
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class EcnErItem:
 
     @property
     def id(self):
-        """Gets the id of this EcnErItem.
+        r"""Gets the id of this EcnErItem.
 
         企业连接网络关联企业路由器ID
 
@@ -86,7 +86,7 @@ class EcnErItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EcnErItem.
+        r"""Sets the id of this EcnErItem.
 
         企业连接网络关联企业路由器ID
 
@@ -97,7 +97,7 @@ class EcnErItem:
 
     @property
     def er_id(self):
-        """Gets the er_id of this EcnErItem.
+        r"""Gets the er_id of this EcnErItem.
 
         企业路由器ID
 
@@ -108,7 +108,7 @@ class EcnErItem:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this EcnErItem.
+        r"""Sets the er_id of this EcnErItem.
 
         企业路由器ID
 
@@ -119,7 +119,7 @@ class EcnErItem:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EcnErItem.
+        r"""Gets the region_id of this EcnErItem.
 
         区域ID
 
@@ -130,7 +130,7 @@ class EcnErItem:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EcnErItem.
+        r"""Sets the region_id of this EcnErItem.
 
         区域ID
 
@@ -141,7 +141,7 @@ class EcnErItem:
 
     @property
     def status(self):
-        """Gets the status of this EcnErItem.
+        r"""Gets the status of this EcnErItem.
 
         状态
 
@@ -152,7 +152,7 @@ class EcnErItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EcnErItem.
+        r"""Sets the status of this EcnErItem.
 
         状态
 
@@ -163,7 +163,7 @@ class EcnErItem:
 
     @property
     def health_status(self):
-        """Gets the health_status of this EcnErItem.
+        r"""Gets the health_status of this EcnErItem.
 
         健康状态
 
@@ -174,7 +174,7 @@ class EcnErItem:
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this EcnErItem.
+        r"""Sets the health_status of this EcnErItem.
 
         健康状态
 
@@ -185,7 +185,7 @@ class EcnErItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EcnErItem.
+        r"""Gets the created_at of this EcnErItem.
 
         创建时间
 
@@ -196,7 +196,7 @@ class EcnErItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EcnErItem.
+        r"""Sets the created_at of this EcnErItem.
 
         创建时间
 

@@ -29,7 +29,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
     }
 
     def __init__(self, system__encrypted=None, system__cmkid=None, byol=None):
-        """ReinstallSeverMetadataWithoutCloudInitOption
+        r"""ReinstallSeverMetadataWithoutCloudInitOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
 
     @property
     def system__encrypted(self):
-        """Gets the system__encrypted of this ReinstallSeverMetadataWithoutCloudInitOption.
+        r"""Gets the system__encrypted of this ReinstallSeverMetadataWithoutCloudInitOption.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
@@ -68,7 +68,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
 
     @system__encrypted.setter
     def system__encrypted(self, system__encrypted):
-        """Sets the system__encrypted of this ReinstallSeverMetadataWithoutCloudInitOption.
+        r"""Sets the system__encrypted of this ReinstallSeverMetadataWithoutCloudInitOption.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
@@ -79,7 +79,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
 
     @property
     def system__cmkid(self):
-        """Gets the system__cmkid of this ReinstallSeverMetadataWithoutCloudInitOption.
+        r"""Gets the system__cmkid of this ReinstallSeverMetadataWithoutCloudInitOption.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  > 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
 
@@ -90,7 +90,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
 
     @system__cmkid.setter
     def system__cmkid(self, system__cmkid):
-        """Sets the system__cmkid of this ReinstallSeverMetadataWithoutCloudInitOption.
+        r"""Sets the system__cmkid of this ReinstallSeverMetadataWithoutCloudInitOption.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  > 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
 
@@ -101,7 +101,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
 
     @property
     def byol(self):
-        """Gets the byol of this ReinstallSeverMetadataWithoutCloudInitOption.
+        r"""Gets the byol of this ReinstallSeverMetadataWithoutCloudInitOption.
 
         如果您已拥有操作系统或软件的许可证（一般是指按物理插槽数、物理内核数等进行认证的许可证），您可以通过自带许可（BYOL）的方式将业务完整迁移到云平台，继续使用您的许可证。 - true： 使用自有license - 其他值： 视为非法参数，接口报错
 
@@ -112,7 +112,7 @@ class ReinstallSeverMetadataWithoutCloudInitOption:
 
     @byol.setter
     def byol(self, byol):
-        """Sets the byol of this ReinstallSeverMetadataWithoutCloudInitOption.
+        r"""Sets the byol of this ReinstallSeverMetadataWithoutCloudInitOption.
 
         如果您已拥有操作系统或软件的许可证（一般是指按物理插槽数、物理内核数等进行认证的许可证），您可以通过自带许可（BYOL）的方式将业务完整迁移到云平台，继续使用您的许可证。 - true： 使用自有license - 其他值： 视为非法参数，接口报错
 

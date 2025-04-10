@@ -29,7 +29,7 @@ class SwitchShardRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SwitchShardRequest
+        r"""SwitchShardRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SwitchShardRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchShardRequest.
+        r"""Gets the x_language of this SwitchShardRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SwitchShardRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchShardRequest.
+        r"""Sets the x_language of this SwitchShardRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SwitchShardRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchShardRequest.
+        r"""Gets the instance_id of this SwitchShardRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SwitchShardRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchShardRequest.
+        r"""Sets the instance_id of this SwitchShardRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SwitchShardRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchShardRequest.
+        r"""Gets the body of this SwitchShardRequest.
 
         :return: The body of this SwitchShardRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequestBody`
@@ -109,7 +109,7 @@ class SwitchShardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchShardRequest.
+        r"""Sets the body of this SwitchShardRequest.
 
         :param body: The body of this SwitchShardRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequestBody`

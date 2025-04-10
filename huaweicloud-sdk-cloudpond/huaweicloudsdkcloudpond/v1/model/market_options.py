@@ -18,16 +18,18 @@ class MarketOptions:
 
     openapi_types = {
         'charge_mode': 'ChargeMode',
-        'prepaid_options': 'PrepaidOptions'
+        'prepaid_options': 'PrepaidOptions',
+        'strategies': 'list[Strategy]'
     }
 
     attribute_map = {
         'charge_mode': 'charge_mode',
-        'prepaid_options': 'prepaid_options'
+        'prepaid_options': 'prepaid_options',
+        'strategies': 'strategies'
     }
 
-    def __init__(self, charge_mode=None, prepaid_options=None):
-        """MarketOptions
+    def __init__(self, charge_mode=None, prepaid_options=None, strategies=None):
+        r"""MarketOptions
 
         The model defined in huaweicloud sdk
 
@@ -35,22 +37,27 @@ class MarketOptions:
         :type charge_mode: :class:`huaweicloudsdkcloudpond.v1.ChargeMode`
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkcloudpond.v1.PrepaidOptions`
+        :param strategies: 
+        :type strategies: list[:class:`huaweicloudsdkcloudpond.v1.Strategy`]
         """
         
         
 
         self._charge_mode = None
         self._prepaid_options = None
+        self._strategies = None
         self.discriminator = None
 
         if charge_mode is not None:
             self.charge_mode = charge_mode
         if prepaid_options is not None:
             self.prepaid_options = prepaid_options
+        if strategies is not None:
+            self.strategies = strategies
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this MarketOptions.
+        r"""Gets the charge_mode of this MarketOptions.
 
         :return: The charge_mode of this MarketOptions.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ChargeMode`
@@ -59,7 +66,7 @@ class MarketOptions:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this MarketOptions.
+        r"""Sets the charge_mode of this MarketOptions.
 
         :param charge_mode: The charge_mode of this MarketOptions.
         :type charge_mode: :class:`huaweicloudsdkcloudpond.v1.ChargeMode`
@@ -68,7 +75,7 @@ class MarketOptions:
 
     @property
     def prepaid_options(self):
-        """Gets the prepaid_options of this MarketOptions.
+        r"""Gets the prepaid_options of this MarketOptions.
 
         :return: The prepaid_options of this MarketOptions.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.PrepaidOptions`
@@ -77,12 +84,30 @@ class MarketOptions:
 
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
-        """Sets the prepaid_options of this MarketOptions.
+        r"""Sets the prepaid_options of this MarketOptions.
 
         :param prepaid_options: The prepaid_options of this MarketOptions.
         :type prepaid_options: :class:`huaweicloudsdkcloudpond.v1.PrepaidOptions`
         """
         self._prepaid_options = prepaid_options
+
+    @property
+    def strategies(self):
+        r"""Gets the strategies of this MarketOptions.
+
+        :return: The strategies of this MarketOptions.
+        :rtype: list[:class:`huaweicloudsdkcloudpond.v1.Strategy`]
+        """
+        return self._strategies
+
+    @strategies.setter
+    def strategies(self, strategies):
+        r"""Sets the strategies of this MarketOptions.
+
+        :param strategies: The strategies of this MarketOptions.
+        :type strategies: list[:class:`huaweicloudsdkcloudpond.v1.Strategy`]
+        """
+        self._strategies = strategies
 
     def to_dict(self):
         """Returns the model properties as a dict"""

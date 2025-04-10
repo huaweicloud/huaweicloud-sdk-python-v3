@@ -31,7 +31,7 @@ class ToolInfoDto:
     }
 
     def __init__(self, tool_id=None, tool_name=None, tool_version=None, tool_type=None):
-        """ToolInfoDto
+        r"""ToolInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ToolInfoDto:
 
     @property
     def tool_id(self):
-        """Gets the tool_id of this ToolInfoDto.
+        r"""Gets the tool_id of this ToolInfoDto.
 
         作业依赖的组件id
 
@@ -75,7 +75,7 @@ class ToolInfoDto:
 
     @tool_id.setter
     def tool_id(self, tool_id):
-        """Sets the tool_id of this ToolInfoDto.
+        r"""Sets the tool_id of this ToolInfoDto.
 
         作业依赖的组件id
 
@@ -86,7 +86,7 @@ class ToolInfoDto:
 
     @property
     def tool_name(self):
-        """Gets the tool_name of this ToolInfoDto.
+        r"""Gets the tool_name of this ToolInfoDto.
 
         作业依赖的组件名称
 
@@ -97,7 +97,7 @@ class ToolInfoDto:
 
     @tool_name.setter
     def tool_name(self, tool_name):
-        """Sets the tool_name of this ToolInfoDto.
+        r"""Sets the tool_name of this ToolInfoDto.
 
         作业依赖的组件名称
 
@@ -108,7 +108,7 @@ class ToolInfoDto:
 
     @property
     def tool_version(self):
-        """Gets the tool_version of this ToolInfoDto.
+        r"""Gets the tool_version of this ToolInfoDto.
 
         作业依赖的组件版本
 
@@ -119,7 +119,7 @@ class ToolInfoDto:
 
     @tool_version.setter
     def tool_version(self, tool_version):
-        """Sets the tool_version of this ToolInfoDto.
+        r"""Sets the tool_version of this ToolInfoDto.
 
         作业依赖的组件版本
 
@@ -130,7 +130,7 @@ class ToolInfoDto:
 
     @property
     def tool_type(self):
-        """Gets the tool_type of this ToolInfoDto.
+        r"""Gets the tool_type of this ToolInfoDto.
 
         作业依赖的组件类型，取值范围app|workflow
 
@@ -141,7 +141,7 @@ class ToolInfoDto:
 
     @tool_type.setter
     def tool_type(self, tool_type):
-        """Sets the tool_type of this ToolInfoDto.
+        r"""Sets the tool_type of this ToolInfoDto.
 
         作业依赖的组件类型，取值范围app|workflow
 

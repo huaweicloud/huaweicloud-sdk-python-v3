@@ -25,7 +25,7 @@ class ExecuteUploadPptRequestBody:
     }
 
     def __init__(self, file=None):
-        """ExecuteUploadPptRequestBody
+        r"""ExecuteUploadPptRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteUploadPptRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ExecuteUploadPptRequestBody.
+        r"""Gets the file of this ExecuteUploadPptRequestBody.
 
         ppt文件
 
@@ -53,7 +53,7 @@ class ExecuteUploadPptRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ExecuteUploadPptRequestBody.
+        r"""Sets the file of this ExecuteUploadPptRequestBody.
 
         ppt文件
 

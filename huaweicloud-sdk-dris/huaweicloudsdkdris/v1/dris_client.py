@@ -34,7 +34,7 @@ class DrisClient(Client):
         return client_builder
 
     def create_data_channel(self, request):
-        """创建业务通道
+        r"""创建业务通道
 
         创建业务通道，用于创建Edge消息上报的数据通道。
         
@@ -103,7 +103,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_data_channel(self, request):
-        """删除业务通道
+        r"""删除业务通道
 
         删除业务通道
         
@@ -170,7 +170,7 @@ class DrisClient(Client):
         return http_info
 
     def show_data_channel(self, request):
-        """查询业务通道
+        r"""查询业务通道
 
         查询业务通道
         
@@ -237,7 +237,7 @@ class DrisClient(Client):
         return http_info
 
     def update_data_channel(self, request):
-        """修改业务通道
+        r"""修改业务通道
 
         修改业务通道
         
@@ -306,7 +306,7 @@ class DrisClient(Client):
         return http_info
 
     def create_v2x_edge(self, request):
-        """创建Edge
+        r"""创建Edge
 
         创建Edge
         
@@ -373,7 +373,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_v2_x_edge_by_v2x_edge_id(self, request):
-        """删除Edge
+        r"""删除Edge
 
         删除Edge之前需要删除Edge下的业务通道和关联设备。
         
@@ -440,7 +440,7 @@ class DrisClient(Client):
         return http_info
 
     def list_v2x_edges(self, request):
-        """查询Edge列表
+        r"""查询Edge列表
 
         查询Edge列表
         
@@ -511,7 +511,7 @@ class DrisClient(Client):
         return http_info
 
     def show_deployment_code(self, request):
-        """生成部署应用安装命令
+        r"""生成部署应用安装命令
 
         生成部署应用安装命令,然后在ITS800或者ATLAS500上通过Shell执行
         
@@ -578,7 +578,7 @@ class DrisClient(Client):
         return http_info
 
     def show_v2x_edge_detail(self, request):
-        """查询Edge
+        r"""查询Edge
 
         查询Edge
         
@@ -645,7 +645,7 @@ class DrisClient(Client):
         return http_info
 
     def update_v2x_edge(self, request):
-        """修改Edge
+        r"""修改Edge
 
         修改Edge
         
@@ -714,7 +714,7 @@ class DrisClient(Client):
         return http_info
 
     def add_forwarding_configs(self, request):
-        """创建数据转发配置
+        r"""创建数据转发配置
 
         创建数据转发配置。当前仅支持数据转发至kafka，数据转发配置成功添加后配置中的Topic消息将会转发至指定的brokers。
         
@@ -781,7 +781,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_forwarding_config(self, request):
-        """删除数据转发配置
+        r"""删除数据转发配置
 
         根据转发配置的唯一ID（forwarding_config_id）删除数据转发配置，删除后配置中订阅的topic消息将不会被转发至brokers。
         
@@ -850,7 +850,7 @@ class DrisClient(Client):
         return http_info
 
     def show_forwarding_config(self, request):
-        """查询数据转发配置
+        r"""查询数据转发配置
 
         根据转发配置的唯一ID（forwarding_config_id）查询数据转发配置
         
@@ -919,7 +919,7 @@ class DrisClient(Client):
         return http_info
 
     def show_forwarding_configs(self, request):
-        """查询数据转发配置列表
+        r"""查询数据转发配置列表
 
         查询数据转发配置列表
         
@@ -990,7 +990,7 @@ class DrisClient(Client):
         return http_info
 
     def update_forwarding_config(self, request):
-        """修改数据转发配置
+        r"""修改数据转发配置
 
         根据转发配置的唯一ID（forwarding_config_id）修改数据转发配置，当前支持更新的字段有topicPrefix、userTopics、brokers，需要把该字段新的对应值全量写入。
         
@@ -1061,7 +1061,7 @@ class DrisClient(Client):
         return http_info
 
     def list_edge_flows(self, request):
-        """查询历史交通统计信息列表
+        r"""查询历史交通统计信息列表
 
         查询历史交通统计信息列表
         
@@ -1136,7 +1136,7 @@ class DrisClient(Client):
         return http_info
 
     def show_history_traffic_events(self, request):
-        """查询历史交通事件列表
+        r"""查询历史交通事件列表
 
         查询历史交通事件列表
         
@@ -1217,7 +1217,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_ipcs(self, request):
-        """查询IPC列表
+        r"""查询IPC列表
 
         获取多个IPC资源
         
@@ -1290,7 +1290,7 @@ class DrisClient(Client):
         return http_info
 
     def show_ipc(self, request):
-        """查询IPC
+        r"""查询IPC
 
         查询IPC
         
@@ -1357,7 +1357,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_radars(self, request):
-        """查询雷达列表
+        r"""查询雷达列表
 
         查询雷达列表
         
@@ -1430,7 +1430,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_rsus(self, request):
-        """查询RSU列表
+        r"""查询RSU列表
 
         查询RSU列表
         
@@ -1507,7 +1507,7 @@ class DrisClient(Client):
         return http_info
 
     def create_rsu(self, request):
-        """创建RSU
+        r"""创建RSU
 
         创建RSU
         
@@ -1574,7 +1574,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_rsu(self, request):
-        """删除RSU
+        r"""删除RSU
 
         删除RSU
         
@@ -1641,7 +1641,7 @@ class DrisClient(Client):
         return http_info
 
     def update_rsu(self, request):
-        """修改RSU
+        r"""修改RSU
 
         修改RSU
         
@@ -1710,7 +1710,7 @@ class DrisClient(Client):
         return http_info
 
     def send_immediate_event(self, request):
-        """创建即时交通事件
+        r"""创建即时交通事件
 
         创建即时交通事件，平台分发即时交通事件给目标设备的接口。事件一旦创建便会立即下发且只会下发一次。
         
@@ -1777,7 +1777,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_traffic_events(self, request):
-        """查询长期交通事件列表
+        r"""查询长期交通事件列表
 
         条件查询交通事件
         
@@ -1867,7 +1867,7 @@ class DrisClient(Client):
         return http_info
 
     def create_traffic_event(self, request):
-        """创建长期交通事件
+        r"""创建长期交通事件
 
         创建长期交通事件时，平台根据事件的起始时间和结束时间确定当前长期交通事件的状态。对于活跃状态的交通事件会立即下发给在事件影响范围内的RSU，对于未来事件则是在事件开始时间点下发到在事件影响范围内的RSU，过期事件不会下发。
         
@@ -1934,7 +1934,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_traffic_event(self, request):
-        """删除长期交通事件
+        r"""删除长期交通事件
 
         刪除长期交通事件
         
@@ -2001,7 +2001,7 @@ class DrisClient(Client):
         return http_info
 
     def show_traffic_event(self, request):
-        """查询长期交通事件
+        r"""查询长期交通事件
 
         查询长期交通事件
         
@@ -2068,7 +2068,7 @@ class DrisClient(Client):
         return http_info
 
     def update_traffic_event(self, request):
-        """修改长期交通事件
+        r"""修改长期交通事件
 
         修改长期交通事件
         
@@ -2137,7 +2137,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_traffic_controllers(self, request):
-        """查询信号机列表
+        r"""查询信号机列表
 
         查询信号机列表
         
@@ -2212,7 +2212,7 @@ class DrisClient(Client):
         return http_info
 
     def create_traffic_controller(self, request):
-        """创建信号机
+        r"""创建信号机
 
         创建信号机
         
@@ -2279,7 +2279,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_traffic_controller(self, request):
-        """删除信号机
+        r"""删除信号机
 
         删除信号机
         
@@ -2346,7 +2346,7 @@ class DrisClient(Client):
         return http_info
 
     def update_traffic_controller(self, request):
-        """修改信号机
+        r"""修改信号机
 
         修改信号机
         
@@ -2415,7 +2415,7 @@ class DrisClient(Client):
         return http_info
 
     def create_v2x_edge_app(self, request):
-        """部署边缘应用
+        r"""部署边缘应用
 
         **部署边缘应用前需确保**：
         
@@ -2494,7 +2494,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_v2_x_edge_app_by_edge_app_id(self, request):
-        """删除边缘应用
+        r"""删除边缘应用
 
         删除系统应用（$edgetepa）前应先删除业务通道。如删除边缘应用接口调用成功，稍后边缘设备将会自动删除应用无需手动操作。
         
@@ -2563,7 +2563,7 @@ class DrisClient(Client):
         return http_info
 
     def list_v2x_edge_app(self, request):
-        """查询边缘应用列表
+        r"""查询边缘应用列表
 
         查询边缘应用列表
         
@@ -2634,7 +2634,7 @@ class DrisClient(Client):
         return http_info
 
     def show_v2_x_edge_app_detail_by_edge_app_id(self, request):
-        """查询边缘应用
+        r"""查询边缘应用
 
         查询边缘应用
         
@@ -2703,7 +2703,7 @@ class DrisClient(Client):
         return http_info
 
     def update_v2x_edge_app(self, request):
-        """升级边缘应用
+        r"""升级边缘应用
 
         **升级边缘应用前需确保**：
         
@@ -2784,7 +2784,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_vehicles(self, request):
-        """查询车辆列表
+        r"""查询车辆列表
 
         查询车辆列表
         
@@ -2857,7 +2857,7 @@ class DrisClient(Client):
         return http_info
 
     def create_vehicle(self, request):
-        """创建车辆
+        r"""创建车辆
 
         创建车辆
         
@@ -2924,7 +2924,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_vehicle(self, request):
-        """删除车辆
+        r"""删除车辆
 
         删除车辆
         
@@ -2991,7 +2991,7 @@ class DrisClient(Client):
         return http_info
 
     def update_vehicle(self, request):
-        """修改车辆
+        r"""修改车辆
 
         修改车辆
         
@@ -3060,7 +3060,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_edge_apps(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         查询应用列表
         
@@ -3131,7 +3131,7 @@ class DrisClient(Client):
         return http_info
 
     def create_edge_app(self, request):
-        """创建应用
+        r"""创建应用
 
         创建应用
         
@@ -3198,7 +3198,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_edge_app(self, request):
-        """删除应用
+        r"""删除应用
 
         删除应用
         
@@ -3265,7 +3265,7 @@ class DrisClient(Client):
         return http_info
 
     def update_edge_app(self, request):
-        """修改应用
+        r"""修改应用
 
         修改应用
         
@@ -3334,7 +3334,7 @@ class DrisClient(Client):
         return http_info
 
     def batch_show_edge_app_versions(self, request):
-        """查询应用版本列表
+        r"""查询应用版本列表
 
         查询应用版本列表
         
@@ -3409,7 +3409,7 @@ class DrisClient(Client):
         return http_info
 
     def create_edge_application_version(self, request):
-        """创建应用版本
+        r"""创建应用版本
 
         创建应用版本
         
@@ -3478,7 +3478,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_edge_application_version(self, request):
-        """删除应用版本
+        r"""删除应用版本
 
         删除应用版本
         
@@ -3547,7 +3547,7 @@ class DrisClient(Client):
         return http_info
 
     def show_edge_application_version(self, request):
-        """查询应用版本
+        r"""查询应用版本
 
         查询应用版本
         
@@ -3616,7 +3616,7 @@ class DrisClient(Client):
         return http_info
 
     def update_edge_application_version(self, request):
-        """修改应用版本
+        r"""修改应用版本
 
         修改应用版本
         
@@ -3687,7 +3687,7 @@ class DrisClient(Client):
         return http_info
 
     def update_edge_application_version_state(self, request):
-        """更新应用版本状态
+        r"""更新应用版本状态
 
         更新应用版本状态。
         
@@ -3758,7 +3758,7 @@ class DrisClient(Client):
         return http_info
 
     def create_rsu_model(self, request):
-        """创建RSU型号
+        r"""创建RSU型号
 
         调用此接口可创建RSU型号。
         
@@ -3825,7 +3825,7 @@ class DrisClient(Client):
         return http_info
 
     def delete_rsu_model(self, request):
-        """删除RSU型号
+        r"""删除RSU型号
 
         可调用此接口删除已创建的RSU型号。
         
@@ -3892,7 +3892,7 @@ class DrisClient(Client):
         return http_info
 
     def list_rsu_models(self, request):
-        """查询RSU型号列表
+        r"""查询RSU型号列表
 
         可调用此接口查询已创建RSU型号列表。
         
@@ -3963,7 +3963,7 @@ class DrisClient(Client):
         return http_info
 
     def show_rsu_model(self, request):
-        """查询RSU型号
+        r"""查询RSU型号
 
         可调用此接口查询已创建的RSU型号。
         
@@ -4030,7 +4030,7 @@ class DrisClient(Client):
         return http_info
 
     def update_rsu_model(self, request):
-        """修改RSU型号
+        r"""修改RSU型号
 
         可调用此接口修改已创建的RSU型号。
         

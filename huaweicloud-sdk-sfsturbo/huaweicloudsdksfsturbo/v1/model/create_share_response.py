@@ -30,7 +30,7 @@ class CreateShareResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """CreateShareResponse
+        r"""CreateShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateShareResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateShareResponse.
+        r"""Gets the id of this CreateShareResponse.
 
         创建的SFS Turbo文件系统ID。
 
@@ -69,7 +69,7 @@ class CreateShareResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateShareResponse.
+        r"""Sets the id of this CreateShareResponse.
 
         创建的SFS Turbo文件系统ID。
 
@@ -80,7 +80,7 @@ class CreateShareResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateShareResponse.
+        r"""Gets the name of this CreateShareResponse.
 
         创建的SFS Turbo文件系统名称。
 
@@ -91,7 +91,7 @@ class CreateShareResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateShareResponse.
+        r"""Sets the name of this CreateShareResponse.
 
         创建的SFS Turbo文件系统名称。
 
@@ -102,7 +102,7 @@ class CreateShareResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateShareResponse.
+        r"""Gets the status of this CreateShareResponse.
 
         SFS Turbo文件系统的状态
 
@@ -113,7 +113,7 @@ class CreateShareResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateShareResponse.
+        r"""Sets the status of this CreateShareResponse.
 
         SFS Turbo文件系统的状态
 

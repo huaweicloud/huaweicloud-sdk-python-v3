@@ -29,7 +29,7 @@ class ListCentralNetworksByTagsRequest:
     }
 
     def __init__(self, limit=None, marker=None, body=None):
-        """ListCentralNetworksByTagsRequest
+        r"""ListCentralNetworksByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListCentralNetworksByTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCentralNetworksByTagsRequest.
+        r"""Gets the limit of this ListCentralNetworksByTagsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -68,7 +68,7 @@ class ListCentralNetworksByTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCentralNetworksByTagsRequest.
+        r"""Sets the limit of this ListCentralNetworksByTagsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -79,7 +79,7 @@ class ListCentralNetworksByTagsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCentralNetworksByTagsRequest.
+        r"""Gets the marker of this ListCentralNetworksByTagsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -90,7 +90,7 @@ class ListCentralNetworksByTagsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCentralNetworksByTagsRequest.
+        r"""Sets the marker of this ListCentralNetworksByTagsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -101,7 +101,7 @@ class ListCentralNetworksByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCentralNetworksByTagsRequest.
+        r"""Gets the body of this ListCentralNetworksByTagsRequest.
 
         :return: The body of this ListCentralNetworksByTagsRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworksByTagsRequestBody`
@@ -110,7 +110,7 @@ class ListCentralNetworksByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCentralNetworksByTagsRequest.
+        r"""Sets the body of this ListCentralNetworksByTagsRequest.
 
         :param body: The body of this ListCentralNetworksByTagsRequest.
         :type body: :class:`huaweicloudsdkcc.v3.ListCentralNetworksByTagsRequestBody`

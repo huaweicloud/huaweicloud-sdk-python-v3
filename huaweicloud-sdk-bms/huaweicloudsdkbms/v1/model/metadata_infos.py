@@ -25,7 +25,7 @@ class MetadataInfos:
     }
 
     def __init__(self, key=None):
-        """MetadataInfos
+        r"""MetadataInfos
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MetadataInfos:
 
     @property
     def key(self):
-        """Gets the key of this MetadataInfos.
+        r"""Gets the key of this MetadataInfos.
 
         metadata键、值。键、值长度均不大于255字节。
 
@@ -54,7 +54,7 @@ class MetadataInfos:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MetadataInfos.
+        r"""Sets the key of this MetadataInfos.
 
         metadata键、值。键、值长度均不大于255字节。
 

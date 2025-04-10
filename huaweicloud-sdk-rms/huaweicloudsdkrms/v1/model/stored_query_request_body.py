@@ -29,7 +29,7 @@ class StoredQueryRequestBody:
     }
 
     def __init__(self, name=None, description=None, expression=None):
-        """StoredQueryRequestBody
+        r"""StoredQueryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StoredQueryRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this StoredQueryRequestBody.
+        r"""Gets the name of this StoredQueryRequestBody.
 
         ResourceQL 名字
 
@@ -66,7 +66,7 @@ class StoredQueryRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StoredQueryRequestBody.
+        r"""Sets the name of this StoredQueryRequestBody.
 
         ResourceQL 名字
 
@@ -77,7 +77,7 @@ class StoredQueryRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this StoredQueryRequestBody.
+        r"""Gets the description of this StoredQueryRequestBody.
 
         ResourceQL 描述
 
@@ -88,7 +88,7 @@ class StoredQueryRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StoredQueryRequestBody.
+        r"""Sets the description of this StoredQueryRequestBody.
 
         ResourceQL 描述
 
@@ -99,7 +99,7 @@ class StoredQueryRequestBody:
 
     @property
     def expression(self):
-        """Gets the expression of this StoredQueryRequestBody.
+        r"""Gets the expression of this StoredQueryRequestBody.
 
         ResourceQL 表达式
 
@@ -110,7 +110,7 @@ class StoredQueryRequestBody:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this StoredQueryRequestBody.
+        r"""Sets the expression of this StoredQueryRequestBody.
 
         ResourceQL 表达式
 

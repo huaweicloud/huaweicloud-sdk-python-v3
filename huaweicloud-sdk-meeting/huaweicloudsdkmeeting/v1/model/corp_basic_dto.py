@@ -45,7 +45,7 @@ class CorpBasicDTO:
     }
 
     def __init__(self, name=None, domain=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None, language=None, time_zone_id=None):
-        """CorpBasicDTO
+        r"""CorpBasicDTO
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CorpBasicDTO:
 
     @property
     def name(self):
-        """Gets the name of this CorpBasicDTO.
+        r"""Gets the name of this CorpBasicDTO.
 
         企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
@@ -123,7 +123,7 @@ class CorpBasicDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CorpBasicDTO.
+        r"""Sets the name of this CorpBasicDTO.
 
         企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
@@ -134,7 +134,7 @@ class CorpBasicDTO:
 
     @property
     def domain(self):
-        """Gets the domain of this CorpBasicDTO.
+        r"""Gets the domain of this CorpBasicDTO.
 
         企业域名。
 
@@ -145,7 +145,7 @@ class CorpBasicDTO:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CorpBasicDTO.
+        r"""Sets the domain of this CorpBasicDTO.
 
         企业域名。
 
@@ -156,7 +156,7 @@ class CorpBasicDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this CorpBasicDTO.
+        r"""Gets the phone of this CorpBasicDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -167,7 +167,7 @@ class CorpBasicDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CorpBasicDTO.
+        r"""Sets the phone of this CorpBasicDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -178,7 +178,7 @@ class CorpBasicDTO:
 
     @property
     def country(self):
-        """Gets the country of this CorpBasicDTO.
+        r"""Gets the country of this CorpBasicDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -189,7 +189,7 @@ class CorpBasicDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this CorpBasicDTO.
+        r"""Sets the country of this CorpBasicDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -200,7 +200,7 @@ class CorpBasicDTO:
 
     @property
     def fax(self):
-        """Gets the fax of this CorpBasicDTO.
+        r"""Gets the fax of this CorpBasicDTO.
 
         传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -211,7 +211,7 @@ class CorpBasicDTO:
 
     @fax.setter
     def fax(self, fax):
-        """Sets the fax of this CorpBasicDTO.
+        r"""Sets the fax of this CorpBasicDTO.
 
         传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -222,7 +222,7 @@ class CorpBasicDTO:
 
     @property
     def email(self):
-        """Gets the email of this CorpBasicDTO.
+        r"""Gets the email of this CorpBasicDTO.
 
         邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
@@ -233,7 +233,7 @@ class CorpBasicDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CorpBasicDTO.
+        r"""Sets the email of this CorpBasicDTO.
 
         邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
@@ -244,7 +244,7 @@ class CorpBasicDTO:
 
     @property
     def address(self):
-        """Gets the address of this CorpBasicDTO.
+        r"""Gets the address of this CorpBasicDTO.
 
         地址。
 
@@ -255,7 +255,7 @@ class CorpBasicDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CorpBasicDTO.
+        r"""Sets the address of this CorpBasicDTO.
 
         地址。
 
@@ -266,7 +266,7 @@ class CorpBasicDTO:
 
     @property
     def description(self):
-        """Gets the description of this CorpBasicDTO.
+        r"""Gets the description of this CorpBasicDTO.
 
         备注。
 
@@ -277,7 +277,7 @@ class CorpBasicDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CorpBasicDTO.
+        r"""Sets the description of this CorpBasicDTO.
 
         备注。
 
@@ -288,7 +288,7 @@ class CorpBasicDTO:
 
     @property
     def sp_id(self):
-        """Gets the sp_id of this CorpBasicDTO.
+        r"""Gets the sp_id of this CorpBasicDTO.
 
         企业归属的SP ID。仅在查询时返回。
 
@@ -299,7 +299,7 @@ class CorpBasicDTO:
 
     @sp_id.setter
     def sp_id(self, sp_id):
-        """Sets the sp_id of this CorpBasicDTO.
+        r"""Sets the sp_id of this CorpBasicDTO.
 
         企业归属的SP ID。仅在查询时返回。
 
@@ -310,7 +310,7 @@ class CorpBasicDTO:
 
     @property
     def language(self):
-        """Gets the language of this CorpBasicDTO.
+        r"""Gets the language of this CorpBasicDTO.
 
         企业提示音语言设置,zh-CN或en-US。
 
@@ -321,7 +321,7 @@ class CorpBasicDTO:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CorpBasicDTO.
+        r"""Sets the language of this CorpBasicDTO.
 
         企业提示音语言设置,zh-CN或en-US。
 
@@ -332,7 +332,7 @@ class CorpBasicDTO:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this CorpBasicDTO.
+        r"""Gets the time_zone_id of this CorpBasicDTO.
 
         时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: [[时区表](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html)](tag:hws)[[时区表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html)](tag:hk) 。 
 
@@ -343,7 +343,7 @@ class CorpBasicDTO:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this CorpBasicDTO.
+        r"""Sets the time_zone_id of this CorpBasicDTO.
 
         时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: [[时区表](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html)](tag:hws)[[时区表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html)](tag:hk) 。 
 

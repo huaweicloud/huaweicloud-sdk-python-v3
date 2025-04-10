@@ -25,7 +25,7 @@ class ApplyInternetRequest:
     }
 
     def __init__(self, body=None):
-        """ApplyInternetRequest
+        r"""ApplyInternetRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApplyInternetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyInternetRequest.
+        r"""Gets the body of this ApplyInternetRequest.
 
         :return: The body of this ApplyInternetRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyInternetReq`
@@ -52,7 +52,7 @@ class ApplyInternetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyInternetRequest.
+        r"""Sets the body of this ApplyInternetRequest.
 
         :param body: The body of this ApplyInternetRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ApplyInternetReq`

@@ -24,7 +24,7 @@ class CommitVerificationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CommitVerificationResponse
+        r"""CommitVerificationResponse
 
         The model defined in huaweicloud sdk
 

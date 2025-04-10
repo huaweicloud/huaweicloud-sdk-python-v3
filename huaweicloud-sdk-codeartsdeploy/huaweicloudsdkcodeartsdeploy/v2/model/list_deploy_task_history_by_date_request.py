@@ -35,7 +35,7 @@ class ListDeployTaskHistoryByDateRequest:
     }
 
     def __init__(self, project_id=None, id=None, page=None, size=None, start_date=None, end_date=None):
-        """ListDeployTaskHistoryByDateRequest
+        r"""ListDeployTaskHistoryByDateRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDeployTaskHistoryByDateRequest.
+        r"""Gets the project_id of this ListDeployTaskHistoryByDateRequest.
 
         项目id
 
@@ -83,7 +83,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDeployTaskHistoryByDateRequest.
+        r"""Sets the project_id of this ListDeployTaskHistoryByDateRequest.
 
         项目id
 
@@ -94,7 +94,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListDeployTaskHistoryByDateRequest.
+        r"""Gets the id of this ListDeployTaskHistoryByDateRequest.
 
         任务id
 
@@ -105,7 +105,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListDeployTaskHistoryByDateRequest.
+        r"""Sets the id of this ListDeployTaskHistoryByDateRequest.
 
         任务id
 
@@ -116,7 +116,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListDeployTaskHistoryByDateRequest.
+        r"""Gets the page of this ListDeployTaskHistoryByDateRequest.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -127,7 +127,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListDeployTaskHistoryByDateRequest.
+        r"""Sets the page of this ListDeployTaskHistoryByDateRequest.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -138,7 +138,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListDeployTaskHistoryByDateRequest.
+        r"""Gets the size of this ListDeployTaskHistoryByDateRequest.
 
         每页显示的条目数量，size小于等于100
 
@@ -149,7 +149,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDeployTaskHistoryByDateRequest.
+        r"""Sets the size of this ListDeployTaskHistoryByDateRequest.
 
         每页显示的条目数量，size小于等于100
 
@@ -160,7 +160,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListDeployTaskHistoryByDateRequest.
+        r"""Gets the start_date of this ListDeployTaskHistoryByDateRequest.
 
         区间开始时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
@@ -171,7 +171,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListDeployTaskHistoryByDateRequest.
+        r"""Sets the start_date of this ListDeployTaskHistoryByDateRequest.
 
         区间开始时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
@@ -182,7 +182,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListDeployTaskHistoryByDateRequest.
+        r"""Gets the end_date of this ListDeployTaskHistoryByDateRequest.
 
         区间结束时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
@@ -193,7 +193,7 @@ class ListDeployTaskHistoryByDateRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListDeployTaskHistoryByDateRequest.
+        r"""Sets the end_date of this ListDeployTaskHistoryByDateRequest.
 
         区间结束时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 

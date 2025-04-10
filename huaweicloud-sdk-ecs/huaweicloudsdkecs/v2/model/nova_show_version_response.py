@@ -26,7 +26,7 @@ class NovaShowVersionResponse(SdkResponse):
     }
 
     def __init__(self, version=None):
-        """NovaShowVersionResponse
+        r"""NovaShowVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaShowVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this NovaShowVersionResponse.
+        r"""Gets the version of this NovaShowVersionResponse.
 
         :return: The version of this NovaShowVersionResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaVersionDetail`
@@ -53,7 +53,7 @@ class NovaShowVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NovaShowVersionResponse.
+        r"""Sets the version of this NovaShowVersionResponse.
 
         :param version: The version of this NovaShowVersionResponse.
         :type version: :class:`huaweicloudsdkecs.v2.NovaVersionDetail`

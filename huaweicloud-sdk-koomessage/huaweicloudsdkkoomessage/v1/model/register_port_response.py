@@ -26,7 +26,7 @@ class RegisterPortResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """RegisterPortResponse
+        r"""RegisterPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterPortResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this RegisterPortResponse.
+        r"""Gets the data of this RegisterPortResponse.
 
         :return: The data of this RegisterPortResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.RegisterPortResponseModel`
@@ -53,7 +53,7 @@ class RegisterPortResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RegisterPortResponse.
+        r"""Sets the data of this RegisterPortResponse.
 
         :param data: The data of this RegisterPortResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.RegisterPortResponseModel`

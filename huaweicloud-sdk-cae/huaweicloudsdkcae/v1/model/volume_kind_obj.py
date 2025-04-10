@@ -26,7 +26,7 @@ class VolumeKindObj:
     }
 
     def __init__(self):
-        """VolumeKindObj
+        r"""VolumeKindObj
 
         The model defined in huaweicloud sdk
 

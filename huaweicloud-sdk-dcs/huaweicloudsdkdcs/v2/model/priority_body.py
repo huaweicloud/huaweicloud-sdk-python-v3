@@ -25,7 +25,7 @@ class PriorityBody:
     }
 
     def __init__(self, slave_priority_weight=None):
-        """PriorityBody
+        r"""PriorityBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PriorityBody:
 
     @property
     def slave_priority_weight(self):
-        """Gets the slave_priority_weight of this PriorityBody.
+        r"""Gets the slave_priority_weight of this PriorityBody.
 
         副本优先级，取值范围是0到100，0为默认禁止倒换。
 
@@ -53,7 +53,7 @@ class PriorityBody:
 
     @slave_priority_weight.setter
     def slave_priority_weight(self, slave_priority_weight):
-        """Sets the slave_priority_weight of this PriorityBody.
+        r"""Sets the slave_priority_weight of this PriorityBody.
 
         副本优先级，取值范围是0到100，0为默认禁止倒换。
 

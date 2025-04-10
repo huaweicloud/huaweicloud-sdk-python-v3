@@ -29,7 +29,7 @@ class CaseQueryLabel:
     }
 
     def __init__(self, label_id=None, name=None, color=None):
-        """CaseQueryLabel
+        r"""CaseQueryLabel
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseQueryLabel:
 
     @property
     def label_id(self):
-        """Gets the label_id of this CaseQueryLabel.
+        r"""Gets the label_id of this CaseQueryLabel.
 
         标签标识
 
@@ -68,7 +68,7 @@ class CaseQueryLabel:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this CaseQueryLabel.
+        r"""Sets the label_id of this CaseQueryLabel.
 
         标签标识
 
@@ -79,7 +79,7 @@ class CaseQueryLabel:
 
     @property
     def name(self):
-        """Gets the name of this CaseQueryLabel.
+        r"""Gets the name of this CaseQueryLabel.
 
         标签名称
 
@@ -90,7 +90,7 @@ class CaseQueryLabel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaseQueryLabel.
+        r"""Sets the name of this CaseQueryLabel.
 
         标签名称
 
@@ -101,7 +101,7 @@ class CaseQueryLabel:
 
     @property
     def color(self):
-        """Gets the color of this CaseQueryLabel.
+        r"""Gets the color of this CaseQueryLabel.
 
         标签颜色
 
@@ -112,7 +112,7 @@ class CaseQueryLabel:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this CaseQueryLabel.
+        r"""Sets the color of this CaseQueryLabel.
 
         标签颜色
 

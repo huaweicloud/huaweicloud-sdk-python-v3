@@ -31,7 +31,7 @@ class RootVolume:
     }
 
     def __init__(self, volumetype=None, size=None, cluster_id=None, cluster_type=None):
-        """RootVolume
+        r"""RootVolume
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RootVolume:
 
     @property
     def volumetype(self):
-        """Gets the volumetype of this RootVolume.
+        r"""Gets the volumetype of this RootVolume.
 
         裸金属服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型SAS：高IO磁盘类型SSD：超高IO磁盘类型
 
@@ -73,7 +73,7 @@ class RootVolume:
 
     @volumetype.setter
     def volumetype(self, volumetype):
-        """Sets the volumetype of this RootVolume.
+        r"""Sets the volumetype of this RootVolume.
 
         裸金属服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型SAS：高IO磁盘类型SSD：超高IO磁盘类型
 
@@ -84,7 +84,7 @@ class RootVolume:
 
     @property
     def size(self):
-        """Gets the size of this RootVolume.
+        r"""Gets the size of this RootVolume.
 
         系统盘大小，容量单位为GB，输入大小范围为[40-1024]。约束：系统盘大小取值应不小于镜像中系统盘的最小值（min_disk属性）。
 
@@ -95,7 +95,7 @@ class RootVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this RootVolume.
+        r"""Sets the size of this RootVolume.
 
         系统盘大小，容量单位为GB，输入大小范围为[40-1024]。约束：系统盘大小取值应不小于镜像中系统盘的最小值（min_disk属性）。
 
@@ -106,7 +106,7 @@ class RootVolume:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RootVolume.
+        r"""Gets the cluster_id of this RootVolume.
 
         裸金属服务器系统盘对应的存储池的ID。 说明：使用专属分布式存储时需要该字段。存储池ID可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
@@ -117,7 +117,7 @@ class RootVolume:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RootVolume.
+        r"""Sets the cluster_id of this RootVolume.
 
         裸金属服务器系统盘对应的存储池的ID。 说明：使用专属分布式存储时需要该字段。存储池ID可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
@@ -128,7 +128,7 @@ class RootVolume:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this RootVolume.
+        r"""Gets the cluster_type of this RootVolume.
 
         裸金属服务器系统盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 
@@ -139,7 +139,7 @@ class RootVolume:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this RootVolume.
+        r"""Sets the cluster_type of this RootVolume.
 
         裸金属服务器系统盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
 

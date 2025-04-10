@@ -31,7 +31,7 @@ class RemoveNodesTask:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None, status=None):
-        """RemoveNodesTask
+        r"""RemoveNodesTask
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class RemoveNodesTask:
 
     @property
     def api_version(self):
-        """Gets the api_version of this RemoveNodesTask.
+        r"""Gets the api_version of this RemoveNodesTask.
 
         API版本，固定值“v3”。
 
@@ -74,7 +74,7 @@ class RemoveNodesTask:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this RemoveNodesTask.
+        r"""Sets the api_version of this RemoveNodesTask.
 
         API版本，固定值“v3”。
 
@@ -85,7 +85,7 @@ class RemoveNodesTask:
 
     @property
     def kind(self):
-        """Gets the kind of this RemoveNodesTask.
+        r"""Gets the kind of this RemoveNodesTask.
 
         API类型，固定值“RemoveNodesTask”。
 
@@ -96,7 +96,7 @@ class RemoveNodesTask:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this RemoveNodesTask.
+        r"""Sets the kind of this RemoveNodesTask.
 
         API类型，固定值“RemoveNodesTask”。
 
@@ -107,7 +107,7 @@ class RemoveNodesTask:
 
     @property
     def spec(self):
-        """Gets the spec of this RemoveNodesTask.
+        r"""Gets the spec of this RemoveNodesTask.
 
         :return: The spec of this RemoveNodesTask.
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -116,7 +116,7 @@ class RemoveNodesTask:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this RemoveNodesTask.
+        r"""Sets the spec of this RemoveNodesTask.
 
         :param spec: The spec of this RemoveNodesTask.
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -125,7 +125,7 @@ class RemoveNodesTask:
 
     @property
     def status(self):
-        """Gets the status of this RemoveNodesTask.
+        r"""Gets the status of this RemoveNodesTask.
 
         :return: The status of this RemoveNodesTask.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
@@ -134,7 +134,7 @@ class RemoveNodesTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RemoveNodesTask.
+        r"""Sets the status of this RemoveNodesTask.
 
         :param status: The status of this RemoveNodesTask.
         :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`

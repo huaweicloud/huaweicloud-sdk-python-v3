@@ -29,7 +29,7 @@ class CatalogMetaDataEventInfo:
     }
 
     def __init__(self, event_ts=None, event_type=None, event_message=None):
-        """CatalogMetaDataEventInfo
+        r"""CatalogMetaDataEventInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CatalogMetaDataEventInfo:
 
     @property
     def event_ts(self):
-        """Gets the event_ts of this CatalogMetaDataEventInfo.
+        r"""Gets the event_ts of this CatalogMetaDataEventInfo.
 
         事件发生时的时间戳
 
@@ -68,7 +68,7 @@ class CatalogMetaDataEventInfo:
 
     @event_ts.setter
     def event_ts(self, event_ts):
-        """Sets the event_ts of this CatalogMetaDataEventInfo.
+        r"""Sets the event_ts of this CatalogMetaDataEventInfo.
 
         事件发生时的时间戳
 
@@ -79,7 +79,7 @@ class CatalogMetaDataEventInfo:
 
     @property
     def event_type(self):
-        """Gets the event_type of this CatalogMetaDataEventInfo.
+        r"""Gets the event_type of this CatalogMetaDataEventInfo.
 
         事件类型
 
@@ -90,7 +90,7 @@ class CatalogMetaDataEventInfo:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this CatalogMetaDataEventInfo.
+        r"""Sets the event_type of this CatalogMetaDataEventInfo.
 
         事件类型
 
@@ -101,7 +101,7 @@ class CatalogMetaDataEventInfo:
 
     @property
     def event_message(self):
-        """Gets the event_message of this CatalogMetaDataEventInfo.
+        r"""Gets the event_message of this CatalogMetaDataEventInfo.
 
         事件消息，Map<String,Object>结构
 
@@ -112,7 +112,7 @@ class CatalogMetaDataEventInfo:
 
     @event_message.setter
     def event_message(self, event_message):
-        """Sets the event_message of this CatalogMetaDataEventInfo.
+        r"""Sets the event_message of this CatalogMetaDataEventInfo.
 
         事件消息，Map<String,Object>结构
 

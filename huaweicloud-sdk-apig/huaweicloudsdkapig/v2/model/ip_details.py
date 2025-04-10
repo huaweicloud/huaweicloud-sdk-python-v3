@@ -29,7 +29,7 @@ class IpDetails:
     }
 
     def __init__(self, ip_address=None, ipv6_address=None, bandwidth_size=None):
-        """IpDetails
+        r"""IpDetails
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IpDetails:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this IpDetails.
+        r"""Gets the ip_address of this IpDetails.
 
         IP地址
 
@@ -68,7 +68,7 @@ class IpDetails:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this IpDetails.
+        r"""Sets the ip_address of this IpDetails.
 
         IP地址
 
@@ -79,7 +79,7 @@ class IpDetails:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this IpDetails.
+        r"""Gets the ipv6_address of this IpDetails.
 
         IPV6地址
 
@@ -90,7 +90,7 @@ class IpDetails:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this IpDetails.
+        r"""Sets the ipv6_address of this IpDetails.
 
         IPV6地址
 
@@ -101,7 +101,7 @@ class IpDetails:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this IpDetails.
+        r"""Gets the bandwidth_size of this IpDetails.
 
         带宽大小
 
@@ -112,7 +112,7 @@ class IpDetails:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this IpDetails.
+        r"""Sets the bandwidth_size of this IpDetails.
 
         带宽大小
 

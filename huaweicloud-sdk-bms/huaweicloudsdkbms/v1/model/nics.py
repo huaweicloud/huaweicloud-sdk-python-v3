@@ -29,7 +29,7 @@ class Nics:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, allowed_address_pairs=None):
-        """Nics
+        r"""Nics
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Nics:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Nics.
+        r"""Gets the subnet_id of this Nics.
 
         裸金属服务器网卡所在的子网信息。需要指定vpcid对应VPC下已创建的子网（subnet）的网络ID（network_id），UUID格式。子网（subnet）的网络ID（network_id）可以从虚拟私有云控制台或者参考《虚拟私有云API参考》的“查询子网列表”章节获取。
 
@@ -67,7 +67,7 @@ class Nics:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Nics.
+        r"""Sets the subnet_id of this Nics.
 
         裸金属服务器网卡所在的子网信息。需要指定vpcid对应VPC下已创建的子网（subnet）的网络ID（network_id），UUID格式。子网（subnet）的网络ID（network_id）可以从虚拟私有云控制台或者参考《虚拟私有云API参考》的“查询子网列表”章节获取。
 
@@ -78,7 +78,7 @@ class Nics:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this Nics.
+        r"""Gets the ip_address of this Nics.
 
         创建裸金属服务器网卡的IP地址，IPv4格式,约束：不填或空字符串，默认在网络（network）对应的子网中自动分配一个未使用的IP作网卡的IP地址。若指定IP地址，该IP地址必须在网络（network）对应的子网的网段内，且未被使用。
 
@@ -89,7 +89,7 @@ class Nics:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this Nics.
+        r"""Sets the ip_address of this Nics.
 
         创建裸金属服务器网卡的IP地址，IPv4格式,约束：不填或空字符串，默认在网络（network）对应的子网中自动分配一个未使用的IP作网卡的IP地址。若指定IP地址，该IP地址必须在网络（network）对应的子网的网段内，且未被使用。
 
@@ -100,7 +100,7 @@ class Nics:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this Nics.
+        r"""Gets the allowed_address_pairs of this Nics.
 
         IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
 
@@ -111,7 +111,7 @@ class Nics:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this Nics.
+        r"""Sets the allowed_address_pairs of this Nics.
 
         IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
 

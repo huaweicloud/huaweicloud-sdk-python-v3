@@ -32,7 +32,7 @@ class CreateTagResourceRequest:
     }
 
     def __init__(self, x_security_token=None, resource_type=None, resource_id=None, body=None):
-        """CreateTagResourceRequest
+        r"""CreateTagResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateTagResourceRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CreateTagResourceRequest.
+        r"""Gets the x_security_token of this CreateTagResourceRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -74,7 +74,7 @@ class CreateTagResourceRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CreateTagResourceRequest.
+        r"""Sets the x_security_token of this CreateTagResourceRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -85,7 +85,7 @@ class CreateTagResourceRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateTagResourceRequest.
+        r"""Gets the resource_type of this CreateTagResourceRequest.
 
         资源类型 identitycenter:permissionset（权限集）
 
@@ -96,7 +96,7 @@ class CreateTagResourceRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateTagResourceRequest.
+        r"""Sets the resource_type of this CreateTagResourceRequest.
 
         资源类型 identitycenter:permissionset（权限集）
 
@@ -107,7 +107,7 @@ class CreateTagResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateTagResourceRequest.
+        r"""Gets the resource_id of this CreateTagResourceRequest.
 
         权限集的唯一标识符（ID）。
 
@@ -118,7 +118,7 @@ class CreateTagResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateTagResourceRequest.
+        r"""Sets the resource_id of this CreateTagResourceRequest.
 
         权限集的唯一标识符（ID）。
 
@@ -129,7 +129,7 @@ class CreateTagResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagResourceRequest.
+        r"""Gets the body of this CreateTagResourceRequest.
 
         :return: The body of this CreateTagResourceRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.TagResourceReqBody`
@@ -138,7 +138,7 @@ class CreateTagResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagResourceRequest.
+        r"""Sets the body of this CreateTagResourceRequest.
 
         :param body: The body of this CreateTagResourceRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.TagResourceReqBody`

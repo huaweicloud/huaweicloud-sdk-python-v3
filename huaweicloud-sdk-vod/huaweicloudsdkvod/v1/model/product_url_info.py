@@ -25,7 +25,7 @@ class ProductUrlInfo:
     }
 
     def __init__(self, url=None):
-        """ProductUrlInfo
+        r"""ProductUrlInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProductUrlInfo:
 
     @property
     def url(self):
-        """Gets the url of this ProductUrlInfo.
+        r"""Gets the url of this ProductUrlInfo.
 
         删除的产物URL
 
@@ -54,7 +54,7 @@ class ProductUrlInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ProductUrlInfo.
+        r"""Sets the url of this ProductUrlInfo.
 
         删除的产物URL
 

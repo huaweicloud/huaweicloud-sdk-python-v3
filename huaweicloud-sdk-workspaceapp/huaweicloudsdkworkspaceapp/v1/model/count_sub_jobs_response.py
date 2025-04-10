@@ -26,7 +26,7 @@ class CountSubJobsResponse(SdkResponse):
     }
 
     def __init__(self, count=None):
-        """CountSubJobsResponse
+        r"""CountSubJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountSubJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this CountSubJobsResponse.
+        r"""Gets the count of this CountSubJobsResponse.
 
         总数。
 
@@ -55,7 +55,7 @@ class CountSubJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CountSubJobsResponse.
+        r"""Sets the count of this CountSubJobsResponse.
 
         总数。
 

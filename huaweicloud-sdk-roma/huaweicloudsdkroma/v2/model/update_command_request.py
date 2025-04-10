@@ -31,7 +31,7 @@ class UpdateCommandRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, body=None):
-        """UpdateCommandRequest
+        r"""UpdateCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateCommandRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateCommandRequest.
+        r"""Gets the instance_id of this UpdateCommandRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class UpdateCommandRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateCommandRequest.
+        r"""Sets the instance_id of this UpdateCommandRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class UpdateCommandRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateCommandRequest.
+        r"""Gets the service_id of this UpdateCommandRequest.
 
         服务ID
 
@@ -94,7 +94,7 @@ class UpdateCommandRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateCommandRequest.
+        r"""Sets the service_id of this UpdateCommandRequest.
 
         服务ID
 
@@ -105,7 +105,7 @@ class UpdateCommandRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this UpdateCommandRequest.
+        r"""Gets the command_id of this UpdateCommandRequest.
 
         命令ID
 
@@ -116,7 +116,7 @@ class UpdateCommandRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this UpdateCommandRequest.
+        r"""Sets the command_id of this UpdateCommandRequest.
 
         命令ID
 
@@ -127,7 +127,7 @@ class UpdateCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCommandRequest.
+        r"""Gets the body of this UpdateCommandRequest.
 
         :return: The body of this UpdateCommandRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCommandRequestBody`
@@ -136,7 +136,7 @@ class UpdateCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCommandRequest.
+        r"""Sets the body of this UpdateCommandRequest.
 
         :param body: The body of this UpdateCommandRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateCommandRequestBody`

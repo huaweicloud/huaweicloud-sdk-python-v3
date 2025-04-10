@@ -35,7 +35,7 @@ class ApiPolicyRespBase:
     }
 
     def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
-        """ApiPolicyRespBase
+        r"""ApiPolicyRespBase
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ApiPolicyRespBase:
 
     @property
     def id(self):
-        """Gets the id of this ApiPolicyRespBase.
+        r"""Gets the id of this ApiPolicyRespBase.
 
         编号
 
@@ -86,7 +86,7 @@ class ApiPolicyRespBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiPolicyRespBase.
+        r"""Sets the id of this ApiPolicyRespBase.
 
         编号
 
@@ -97,7 +97,7 @@ class ApiPolicyRespBase:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyRespBase.
+        r"""Gets the effect_mode of this ApiPolicyRespBase.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -108,7 +108,7 @@ class ApiPolicyRespBase:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyRespBase.
+        r"""Sets the effect_mode of this ApiPolicyRespBase.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -119,7 +119,7 @@ class ApiPolicyRespBase:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyRespBase.
+        r"""Gets the name of this ApiPolicyRespBase.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -130,7 +130,7 @@ class ApiPolicyRespBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyRespBase.
+        r"""Sets the name of this ApiPolicyRespBase.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -141,7 +141,7 @@ class ApiPolicyRespBase:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyRespBase.
+        r"""Gets the backend_params of this ApiPolicyRespBase.
 
         后端参数列表
 
@@ -152,7 +152,7 @@ class ApiPolicyRespBase:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyRespBase.
+        r"""Sets the backend_params of this ApiPolicyRespBase.
 
         后端参数列表
 
@@ -163,7 +163,7 @@ class ApiPolicyRespBase:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyRespBase.
+        r"""Gets the conditions of this ApiPolicyRespBase.
 
         策略条件列表
 
@@ -174,7 +174,7 @@ class ApiPolicyRespBase:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyRespBase.
+        r"""Sets the conditions of this ApiPolicyRespBase.
 
         策略条件列表
 
@@ -185,7 +185,7 @@ class ApiPolicyRespBase:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyRespBase.
+        r"""Gets the authorizer_id of this ApiPolicyRespBase.
 
         后端自定义认证对象的ID
 
@@ -196,7 +196,7 @@ class ApiPolicyRespBase:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyRespBase.
+        r"""Sets the authorizer_id of this ApiPolicyRespBase.
 
         后端自定义认证对象的ID
 

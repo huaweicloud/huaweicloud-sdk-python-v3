@@ -33,7 +33,7 @@ class UpdateBuildJobSteps:
     }
 
     def __init__(self, properties=None, module_id=None, name=None, version=None, enable=None):
-        """UpdateBuildJobSteps
+        r"""UpdateBuildJobSteps
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UpdateBuildJobSteps:
 
     @property
     def properties(self):
-        """Gets the properties of this UpdateBuildJobSteps.
+        r"""Gets the properties of this UpdateBuildJobSteps.
 
         具体的构建步骤
 
@@ -80,7 +80,7 @@ class UpdateBuildJobSteps:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this UpdateBuildJobSteps.
+        r"""Sets the properties of this UpdateBuildJobSteps.
 
         具体的构建步骤
 
@@ -91,7 +91,7 @@ class UpdateBuildJobSteps:
 
     @property
     def module_id(self):
-        """Gets the module_id of this UpdateBuildJobSteps.
+        r"""Gets the module_id of this UpdateBuildJobSteps.
 
         构建模块id
 
@@ -102,7 +102,7 @@ class UpdateBuildJobSteps:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this UpdateBuildJobSteps.
+        r"""Sets the module_id of this UpdateBuildJobSteps.
 
         构建模块id
 
@@ -113,7 +113,7 @@ class UpdateBuildJobSteps:
 
     @property
     def name(self):
-        """Gets the name of this UpdateBuildJobSteps.
+        r"""Gets the name of this UpdateBuildJobSteps.
 
         构建模块名称
 
@@ -124,7 +124,7 @@ class UpdateBuildJobSteps:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateBuildJobSteps.
+        r"""Sets the name of this UpdateBuildJobSteps.
 
         构建模块名称
 
@@ -135,7 +135,7 @@ class UpdateBuildJobSteps:
 
     @property
     def version(self):
-        """Gets the version of this UpdateBuildJobSteps.
+        r"""Gets the version of this UpdateBuildJobSteps.
 
         构建版本
 
@@ -146,7 +146,7 @@ class UpdateBuildJobSteps:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateBuildJobSteps.
+        r"""Sets the version of this UpdateBuildJobSteps.
 
         构建版本
 
@@ -157,7 +157,7 @@ class UpdateBuildJobSteps:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateBuildJobSteps.
+        r"""Gets the enable of this UpdateBuildJobSteps.
 
         是否开启
 
@@ -168,7 +168,7 @@ class UpdateBuildJobSteps:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateBuildJobSteps.
+        r"""Sets the enable of this UpdateBuildJobSteps.
 
         是否开启
 

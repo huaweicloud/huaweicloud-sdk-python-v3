@@ -24,7 +24,7 @@ class DeleteAccessKeyV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAccessKeyV5Response
+        r"""DeleteAccessKeyV5Response
 
         The model defined in huaweicloud sdk
 

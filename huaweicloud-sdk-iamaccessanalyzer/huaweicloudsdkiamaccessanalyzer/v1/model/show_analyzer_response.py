@@ -26,7 +26,7 @@ class ShowAnalyzerResponse(SdkResponse):
     }
 
     def __init__(self, analyzer=None):
-        """ShowAnalyzerResponse
+        r"""ShowAnalyzerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAnalyzerResponse(SdkResponse):
 
     @property
     def analyzer(self):
-        """Gets the analyzer of this ShowAnalyzerResponse.
+        r"""Gets the analyzer of this ShowAnalyzerResponse.
 
         :return: The analyzer of this ShowAnalyzerResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerSummary`
@@ -53,7 +53,7 @@ class ShowAnalyzerResponse(SdkResponse):
 
     @analyzer.setter
     def analyzer(self, analyzer):
-        """Sets the analyzer of this ShowAnalyzerResponse.
+        r"""Sets the analyzer of this ShowAnalyzerResponse.
 
         :param analyzer: The analyzer of this ShowAnalyzerResponse.
         :type analyzer: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerSummary`

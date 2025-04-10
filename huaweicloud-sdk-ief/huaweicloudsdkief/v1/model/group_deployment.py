@@ -35,7 +35,7 @@ class GroupDeployment:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None):
-        """GroupDeployment
+        r"""GroupDeployment
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GroupDeployment:
 
     @property
     def id(self):
-        """Gets the id of this GroupDeployment.
+        r"""Gets the id of this GroupDeployment.
 
         应用部署uuid
 
@@ -89,7 +89,7 @@ class GroupDeployment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupDeployment.
+        r"""Sets the id of this GroupDeployment.
 
         应用部署uuid
 
@@ -100,7 +100,7 @@ class GroupDeployment:
 
     @property
     def name(self):
-        """Gets the name of this GroupDeployment.
+        r"""Gets the name of this GroupDeployment.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
@@ -111,7 +111,7 @@ class GroupDeployment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupDeployment.
+        r"""Sets the name of this GroupDeployment.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
@@ -122,7 +122,7 @@ class GroupDeployment:
 
     @property
     def description(self):
-        """Gets the description of this GroupDeployment.
+        r"""Gets the description of this GroupDeployment.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -133,7 +133,7 @@ class GroupDeployment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GroupDeployment.
+        r"""Sets the description of this GroupDeployment.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -144,7 +144,7 @@ class GroupDeployment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this GroupDeployment.
+        r"""Gets the project_id of this GroupDeployment.
 
         项目ID
 
@@ -155,7 +155,7 @@ class GroupDeployment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GroupDeployment.
+        r"""Sets the project_id of this GroupDeployment.
 
         项目ID
 
@@ -166,7 +166,7 @@ class GroupDeployment:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GroupDeployment.
+        r"""Gets the created_at of this GroupDeployment.
 
         应用部署创建时间
 
@@ -177,7 +177,7 @@ class GroupDeployment:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GroupDeployment.
+        r"""Sets the created_at of this GroupDeployment.
 
         应用部署创建时间
 
@@ -188,7 +188,7 @@ class GroupDeployment:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GroupDeployment.
+        r"""Gets the updated_at of this GroupDeployment.
 
         应用部署更新时间
 
@@ -199,7 +199,7 @@ class GroupDeployment:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GroupDeployment.
+        r"""Sets the updated_at of this GroupDeployment.
 
         应用部署更新时间
 

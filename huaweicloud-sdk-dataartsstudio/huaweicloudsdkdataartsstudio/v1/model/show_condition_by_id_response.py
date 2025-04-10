@@ -26,7 +26,7 @@ class ShowConditionByIdResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowConditionByIdResponse
+        r"""ShowConditionByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowConditionByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowConditionByIdResponse.
+        r"""Gets the data of this ShowConditionByIdResponse.
 
         :return: The data of this ShowConditionByIdResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowConditionByIdResultData`
@@ -53,7 +53,7 @@ class ShowConditionByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowConditionByIdResponse.
+        r"""Sets the data of this ShowConditionByIdResponse.
 
         :param data: The data of this ShowConditionByIdResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowConditionByIdResultData`

@@ -29,7 +29,7 @@ class PodAffinityTerm:
     }
 
     def __init__(self, label_selector=None, namespaces=None, topology_key=None):
-        """PodAffinityTerm
+        r"""PodAffinityTerm
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PodAffinityTerm:
 
     @property
     def label_selector(self):
-        """Gets the label_selector of this PodAffinityTerm.
+        r"""Gets the label_selector of this PodAffinityTerm.
 
         :return: The label_selector of this PodAffinityTerm.
         :rtype: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
@@ -66,7 +66,7 @@ class PodAffinityTerm:
 
     @label_selector.setter
     def label_selector(self, label_selector):
-        """Sets the label_selector of this PodAffinityTerm.
+        r"""Sets the label_selector of this PodAffinityTerm.
 
         :param label_selector: The label_selector of this PodAffinityTerm.
         :type label_selector: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
@@ -75,7 +75,7 @@ class PodAffinityTerm:
 
     @property
     def namespaces(self):
-        """Gets the namespaces of this PodAffinityTerm.
+        r"""Gets the namespaces of this PodAffinityTerm.
 
         命名空间
 
@@ -86,7 +86,7 @@ class PodAffinityTerm:
 
     @namespaces.setter
     def namespaces(self, namespaces):
-        """Sets the namespaces of this PodAffinityTerm.
+        r"""Sets the namespaces of this PodAffinityTerm.
 
         命名空间
 
@@ -97,7 +97,7 @@ class PodAffinityTerm:
 
     @property
     def topology_key(self):
-        """Gets the topology_key of this PodAffinityTerm.
+        r"""Gets the topology_key of this PodAffinityTerm.
 
         拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 
@@ -108,7 +108,7 @@ class PodAffinityTerm:
 
     @topology_key.setter
     def topology_key(self, topology_key):
-        """Sets the topology_key of this PodAffinityTerm.
+        r"""Sets the topology_key of this PodAffinityTerm.
 
         拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 

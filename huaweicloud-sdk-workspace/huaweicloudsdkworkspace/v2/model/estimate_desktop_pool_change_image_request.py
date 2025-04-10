@@ -25,7 +25,7 @@ class EstimateDesktopPoolChangeImageRequest:
     }
 
     def __init__(self, body=None):
-        """EstimateDesktopPoolChangeImageRequest
+        r"""EstimateDesktopPoolChangeImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EstimateDesktopPoolChangeImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this EstimateDesktopPoolChangeImageRequest.
+        r"""Gets the body of this EstimateDesktopPoolChangeImageRequest.
 
         :return: The body of this EstimateDesktopPoolChangeImageRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateChangeImageRequestBody`
@@ -52,7 +52,7 @@ class EstimateDesktopPoolChangeImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EstimateDesktopPoolChangeImageRequest.
+        r"""Sets the body of this EstimateDesktopPoolChangeImageRequest.
 
         :param body: The body of this EstimateDesktopPoolChangeImageRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EstimateChangeImageRequestBody`

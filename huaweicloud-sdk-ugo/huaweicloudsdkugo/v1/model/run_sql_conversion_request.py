@@ -25,7 +25,7 @@ class RunSqlConversionRequest:
     }
 
     def __init__(self, body=None):
-        """RunSqlConversionRequest
+        r"""RunSqlConversionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunSqlConversionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSqlConversionRequest.
+        r"""Gets the body of this RunSqlConversionRequest.
 
         :return: The body of this RunSqlConversionRequest.
         :rtype: :class:`huaweicloudsdkugo.v1.SqlConvertReq`
@@ -52,7 +52,7 @@ class RunSqlConversionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSqlConversionRequest.
+        r"""Sets the body of this RunSqlConversionRequest.
 
         :param body: The body of this RunSqlConversionRequest.
         :type body: :class:`huaweicloudsdkugo.v1.SqlConvertReq`

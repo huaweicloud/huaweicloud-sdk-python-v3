@@ -27,7 +27,7 @@ class CreateEquipmentRequest:
     }
 
     def __init__(self, ieg_id=None, body=None):
-        """CreateEquipmentRequest
+        r"""CreateEquipmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEquipmentRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this CreateEquipmentRequest.
+        r"""Gets the ieg_id of this CreateEquipmentRequest.
 
         智能企业网关ID
 
@@ -60,7 +60,7 @@ class CreateEquipmentRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this CreateEquipmentRequest.
+        r"""Sets the ieg_id of this CreateEquipmentRequest.
 
         智能企业网关ID
 
@@ -71,7 +71,7 @@ class CreateEquipmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEquipmentRequest.
+        r"""Gets the body of this CreateEquipmentRequest.
 
         :return: The body of this CreateEquipmentRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EquipmentActivate`
@@ -80,7 +80,7 @@ class CreateEquipmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEquipmentRequest.
+        r"""Sets the body of this CreateEquipmentRequest.
 
         :param body: The body of this CreateEquipmentRequest.
         :type body: :class:`huaweicloudsdkec.v1.EquipmentActivate`

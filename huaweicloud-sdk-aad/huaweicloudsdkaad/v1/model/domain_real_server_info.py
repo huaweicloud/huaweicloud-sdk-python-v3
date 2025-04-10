@@ -27,7 +27,7 @@ class DomainRealServerInfo:
     }
 
     def __init__(self, real_server_type=None, real_servers=None):
-        """DomainRealServerInfo
+        r"""DomainRealServerInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DomainRealServerInfo:
 
     @property
     def real_server_type(self):
-        """Gets the real_server_type of this DomainRealServerInfo.
+        r"""Gets the real_server_type of this DomainRealServerInfo.
 
         源站类型
 
@@ -61,7 +61,7 @@ class DomainRealServerInfo:
 
     @real_server_type.setter
     def real_server_type(self, real_server_type):
-        """Sets the real_server_type of this DomainRealServerInfo.
+        r"""Sets the real_server_type of this DomainRealServerInfo.
 
         源站类型
 
@@ -72,7 +72,7 @@ class DomainRealServerInfo:
 
     @property
     def real_servers(self):
-        """Gets the real_servers of this DomainRealServerInfo.
+        r"""Gets the real_servers of this DomainRealServerInfo.
 
         源站
 
@@ -83,7 +83,7 @@ class DomainRealServerInfo:
 
     @real_servers.setter
     def real_servers(self, real_servers):
-        """Sets the real_servers of this DomainRealServerInfo.
+        r"""Sets the real_servers of this DomainRealServerInfo.
 
         源站
 

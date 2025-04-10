@@ -30,7 +30,7 @@ class SyncGetChatResultResponse(SdkResponse):
     }
 
     def __init__(self, text=None, request_id=None, status=None):
-        """SyncGetChatResultResponse
+        r"""SyncGetChatResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SyncGetChatResultResponse(SdkResponse):
 
     @property
     def text(self):
-        """Gets the text of this SyncGetChatResultResponse.
+        r"""Gets the text of this SyncGetChatResultResponse.
 
         text
 
@@ -69,7 +69,7 @@ class SyncGetChatResultResponse(SdkResponse):
 
     @text.setter
     def text(self, text):
-        """Sets the text of this SyncGetChatResultResponse.
+        r"""Sets the text of this SyncGetChatResultResponse.
 
         text
 
@@ -80,7 +80,7 @@ class SyncGetChatResultResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this SyncGetChatResultResponse.
+        r"""Gets the request_id of this SyncGetChatResultResponse.
 
         request id
 
@@ -91,7 +91,7 @@ class SyncGetChatResultResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this SyncGetChatResultResponse.
+        r"""Sets the request_id of this SyncGetChatResultResponse.
 
         request id
 
@@ -102,7 +102,7 @@ class SyncGetChatResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SyncGetChatResultResponse.
+        r"""Gets the status of this SyncGetChatResultResponse.
 
         status
 
@@ -113,7 +113,7 @@ class SyncGetChatResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SyncGetChatResultResponse.
+        r"""Sets the status of this SyncGetChatResultResponse.
 
         status
 

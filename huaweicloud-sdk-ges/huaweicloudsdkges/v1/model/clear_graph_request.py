@@ -29,7 +29,7 @@ class ClearGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, clear_metadata=None):
-        """ClearGraphRequest
+        r"""ClearGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ClearGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ClearGraphRequest.
+        r"""Gets the graph_id of this ClearGraphRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class ClearGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ClearGraphRequest.
+        r"""Sets the graph_id of this ClearGraphRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class ClearGraphRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ClearGraphRequest.
+        r"""Gets the action_id of this ClearGraphRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class ClearGraphRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ClearGraphRequest.
+        r"""Sets the action_id of this ClearGraphRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class ClearGraphRequest:
 
     @property
     def clear_metadata(self):
-        """Gets the clear_metadata of this ClearGraphRequest.
+        r"""Gets the clear_metadata of this ClearGraphRequest.
 
         是否清空图关联的元数据。建议清除。
 
@@ -110,7 +110,7 @@ class ClearGraphRequest:
 
     @clear_metadata.setter
     def clear_metadata(self, clear_metadata):
-        """Sets the clear_metadata of this ClearGraphRequest.
+        r"""Sets the clear_metadata of this ClearGraphRequest.
 
         是否清空图关联的元数据。建议清除。
 

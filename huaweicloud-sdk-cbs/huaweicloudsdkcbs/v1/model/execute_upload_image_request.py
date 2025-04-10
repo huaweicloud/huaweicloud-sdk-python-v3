@@ -29,7 +29,7 @@ class ExecuteUploadImageRequest:
     }
 
     def __init__(self, video_id=None, name=None, body=None):
-        """ExecuteUploadImageRequest
+        r"""ExecuteUploadImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteUploadImageRequest:
 
     @property
     def video_id(self):
-        """Gets the video_id of this ExecuteUploadImageRequest.
+        r"""Gets the video_id of this ExecuteUploadImageRequest.
 
         视频id
 
@@ -66,7 +66,7 @@ class ExecuteUploadImageRequest:
 
     @video_id.setter
     def video_id(self, video_id):
-        """Sets the video_id of this ExecuteUploadImageRequest.
+        r"""Sets the video_id of this ExecuteUploadImageRequest.
 
         视频id
 
@@ -77,7 +77,7 @@ class ExecuteUploadImageRequest:
 
     @property
     def name(self):
-        """Gets the name of this ExecuteUploadImageRequest.
+        r"""Gets the name of this ExecuteUploadImageRequest.
 
         图片名
 
@@ -88,7 +88,7 @@ class ExecuteUploadImageRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecuteUploadImageRequest.
+        r"""Sets the name of this ExecuteUploadImageRequest.
 
         图片名
 
@@ -99,7 +99,7 @@ class ExecuteUploadImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteUploadImageRequest.
+        r"""Gets the body of this ExecuteUploadImageRequest.
 
         :return: The body of this ExecuteUploadImageRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageRequestBody`
@@ -108,7 +108,7 @@ class ExecuteUploadImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteUploadImageRequest.
+        r"""Sets the body of this ExecuteUploadImageRequest.
 
         :param body: The body of this ExecuteUploadImageRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageRequestBody`

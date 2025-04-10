@@ -27,7 +27,7 @@ class Tag:
     }
 
     def __init__(self, is_double_name=None, name=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Tag:
 
     @property
     def is_double_name(self):
-        """Gets the is_double_name of this Tag.
+        r"""Gets the is_double_name of this Tag.
 
         是否与分支重名
 
@@ -61,7 +61,7 @@ class Tag:
 
     @is_double_name.setter
     def is_double_name(self, is_double_name):
-        """Sets the is_double_name of this Tag.
+        r"""Sets the is_double_name of this Tag.
 
         是否与分支重名
 
@@ -72,7 +72,7 @@ class Tag:
 
     @property
     def name(self):
-        """Gets the name of this Tag.
+        r"""Gets the name of this Tag.
 
         标签名
 
@@ -83,7 +83,7 @@ class Tag:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Tag.
+        r"""Sets the name of this Tag.
 
         标签名
 

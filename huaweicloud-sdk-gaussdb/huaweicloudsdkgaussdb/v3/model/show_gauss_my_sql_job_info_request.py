@@ -27,7 +27,7 @@ class ShowGaussMySqlJobInfoRequest:
     }
 
     def __init__(self, x_language=None, id=None):
-        """ShowGaussMySqlJobInfoRequest
+        r"""ShowGaussMySqlJobInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGaussMySqlJobInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlJobInfoRequest.
+        r"""Gets the x_language of this ShowGaussMySqlJobInfoRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowGaussMySqlJobInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlJobInfoRequest.
+        r"""Sets the x_language of this ShowGaussMySqlJobInfoRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowGaussMySqlJobInfoRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowGaussMySqlJobInfoRequest.
+        r"""Gets the id of this ShowGaussMySqlJobInfoRequest.
 
         任务ID。
 
@@ -82,7 +82,7 @@ class ShowGaussMySqlJobInfoRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowGaussMySqlJobInfoRequest.
+        r"""Sets the id of this ShowGaussMySqlJobInfoRequest.
 
         任务ID。
 

@@ -23,7 +23,7 @@ class NotificationBeginTime:
     }
 
     def __init__(self):
-        """NotificationBeginTime
+        r"""NotificationBeginTime
 
         The model defined in huaweicloud sdk
 

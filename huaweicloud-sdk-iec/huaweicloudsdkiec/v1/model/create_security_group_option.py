@@ -27,7 +27,7 @@ class CreateSecurityGroupOption:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateSecurityGroupOption
+        r"""CreateSecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecurityGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateSecurityGroupOption.
+        r"""Gets the name of this CreateSecurityGroupOption.
 
         安全组的名称。
 
@@ -60,7 +60,7 @@ class CreateSecurityGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSecurityGroupOption.
+        r"""Sets the name of this CreateSecurityGroupOption.
 
         安全组的名称。
 
@@ -71,7 +71,7 @@ class CreateSecurityGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateSecurityGroupOption.
+        r"""Gets the description of this CreateSecurityGroupOption.
 
         安全组的描述。非必填项，默认值为空。
 
@@ -82,7 +82,7 @@ class CreateSecurityGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSecurityGroupOption.
+        r"""Sets the description of this CreateSecurityGroupOption.
 
         安全组的描述。非必填项，默认值为空。
 

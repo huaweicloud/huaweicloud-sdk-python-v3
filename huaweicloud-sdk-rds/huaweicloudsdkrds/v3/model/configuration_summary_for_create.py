@@ -37,7 +37,7 @@ class ConfigurationSummaryForCreate:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None):
-        """ConfigurationSummaryForCreate
+        r"""ConfigurationSummaryForCreate
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def id(self):
-        """Gets the id of this ConfigurationSummaryForCreate.
+        r"""Gets the id of this ConfigurationSummaryForCreate.
 
         参数组ID。
 
@@ -90,7 +90,7 @@ class ConfigurationSummaryForCreate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigurationSummaryForCreate.
+        r"""Sets the id of this ConfigurationSummaryForCreate.
 
         参数组ID。
 
@@ -101,7 +101,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationSummaryForCreate.
+        r"""Gets the name of this ConfigurationSummaryForCreate.
 
         参数组名称。
 
@@ -112,7 +112,7 @@ class ConfigurationSummaryForCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationSummaryForCreate.
+        r"""Sets the name of this ConfigurationSummaryForCreate.
 
         参数组名称。
 
@@ -123,7 +123,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationSummaryForCreate.
+        r"""Gets the description of this ConfigurationSummaryForCreate.
 
         参数组描述。
 
@@ -134,7 +134,7 @@ class ConfigurationSummaryForCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationSummaryForCreate.
+        r"""Sets the description of this ConfigurationSummaryForCreate.
 
         参数组描述。
 
@@ -145,7 +145,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this ConfigurationSummaryForCreate.
+        r"""Gets the datastore_version_name of this ConfigurationSummaryForCreate.
 
         引擎版本。
 
@@ -156,7 +156,7 @@ class ConfigurationSummaryForCreate:
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this ConfigurationSummaryForCreate.
+        r"""Sets the datastore_version_name of this ConfigurationSummaryForCreate.
 
         引擎版本。
 
@@ -167,7 +167,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ConfigurationSummaryForCreate.
+        r"""Gets the datastore_name of this ConfigurationSummaryForCreate.
 
         引擎名。
 
@@ -178,7 +178,7 @@ class ConfigurationSummaryForCreate:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ConfigurationSummaryForCreate.
+        r"""Sets the datastore_name of this ConfigurationSummaryForCreate.
 
         引擎名。
 
@@ -189,7 +189,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def created(self):
-        """Gets the created of this ConfigurationSummaryForCreate.
+        r"""Gets the created of this ConfigurationSummaryForCreate.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -200,7 +200,7 @@ class ConfigurationSummaryForCreate:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ConfigurationSummaryForCreate.
+        r"""Sets the created of this ConfigurationSummaryForCreate.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -211,7 +211,7 @@ class ConfigurationSummaryForCreate:
 
     @property
     def updated(self):
-        """Gets the updated of this ConfigurationSummaryForCreate.
+        r"""Gets the updated of this ConfigurationSummaryForCreate.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -222,7 +222,7 @@ class ConfigurationSummaryForCreate:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ConfigurationSummaryForCreate.
+        r"""Sets the updated of this ConfigurationSummaryForCreate.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

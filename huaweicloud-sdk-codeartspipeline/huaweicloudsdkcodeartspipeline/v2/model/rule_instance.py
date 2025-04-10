@@ -45,7 +45,7 @@ class RuleInstance:
     }
 
     def __init__(self, id=None, type=None, name=None, version=None, plugin_id=None, plugin_name=None, plugin_version=None, is_valid=None, editable=None, content=None, parent=None):
-        """RuleInstance
+        r"""RuleInstance
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class RuleInstance:
 
     @property
     def id(self):
-        """Gets the id of this RuleInstance.
+        r"""Gets the id of this RuleInstance.
 
         规则实例ID
 
@@ -118,7 +118,7 @@ class RuleInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleInstance.
+        r"""Sets the id of this RuleInstance.
 
         规则实例ID
 
@@ -129,7 +129,7 @@ class RuleInstance:
 
     @property
     def type(self):
-        """Gets the type of this RuleInstance.
+        r"""Gets the type of this RuleInstance.
 
         规则类型ID
 
@@ -140,7 +140,7 @@ class RuleInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleInstance.
+        r"""Sets the type of this RuleInstance.
 
         规则类型ID
 
@@ -151,7 +151,7 @@ class RuleInstance:
 
     @property
     def name(self):
-        """Gets the name of this RuleInstance.
+        r"""Gets the name of this RuleInstance.
 
         规则名称
 
@@ -162,7 +162,7 @@ class RuleInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleInstance.
+        r"""Sets the name of this RuleInstance.
 
         规则名称
 
@@ -173,7 +173,7 @@ class RuleInstance:
 
     @property
     def version(self):
-        """Gets the version of this RuleInstance.
+        r"""Gets the version of this RuleInstance.
 
         规则版本
 
@@ -184,7 +184,7 @@ class RuleInstance:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RuleInstance.
+        r"""Sets the version of this RuleInstance.
 
         规则版本
 
@@ -195,7 +195,7 @@ class RuleInstance:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this RuleInstance.
+        r"""Gets the plugin_id of this RuleInstance.
 
         插件ID
 
@@ -206,7 +206,7 @@ class RuleInstance:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this RuleInstance.
+        r"""Sets the plugin_id of this RuleInstance.
 
         插件ID
 
@@ -217,7 +217,7 @@ class RuleInstance:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this RuleInstance.
+        r"""Gets the plugin_name of this RuleInstance.
 
         插件名称
 
@@ -228,7 +228,7 @@ class RuleInstance:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this RuleInstance.
+        r"""Sets the plugin_name of this RuleInstance.
 
         插件名称
 
@@ -239,7 +239,7 @@ class RuleInstance:
 
     @property
     def plugin_version(self):
-        """Gets the plugin_version of this RuleInstance.
+        r"""Gets the plugin_version of this RuleInstance.
 
         插件版本号
 
@@ -250,7 +250,7 @@ class RuleInstance:
 
     @plugin_version.setter
     def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this RuleInstance.
+        r"""Sets the plugin_version of this RuleInstance.
 
         插件版本号
 
@@ -261,7 +261,7 @@ class RuleInstance:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this RuleInstance.
+        r"""Gets the is_valid of this RuleInstance.
 
         是否生效
 
@@ -272,7 +272,7 @@ class RuleInstance:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this RuleInstance.
+        r"""Sets the is_valid of this RuleInstance.
 
         是否生效
 
@@ -283,7 +283,7 @@ class RuleInstance:
 
     @property
     def editable(self):
-        """Gets the editable of this RuleInstance.
+        r"""Gets the editable of this RuleInstance.
 
         是否可编辑
 
@@ -294,7 +294,7 @@ class RuleInstance:
 
     @editable.setter
     def editable(self, editable):
-        """Sets the editable of this RuleInstance.
+        r"""Sets the editable of this RuleInstance.
 
         是否可编辑
 
@@ -305,7 +305,7 @@ class RuleInstance:
 
     @property
     def content(self):
-        """Gets the content of this RuleInstance.
+        r"""Gets the content of this RuleInstance.
 
         规则属性列表
 
@@ -316,7 +316,7 @@ class RuleInstance:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this RuleInstance.
+        r"""Sets the content of this RuleInstance.
 
         规则属性列表
 
@@ -327,7 +327,7 @@ class RuleInstance:
 
     @property
     def parent(self):
-        """Gets the parent of this RuleInstance.
+        r"""Gets the parent of this RuleInstance.
 
         :return: The parent of this RuleInstance.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RuleSet`
@@ -336,7 +336,7 @@ class RuleInstance:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this RuleInstance.
+        r"""Sets the parent of this RuleInstance.
 
         :param parent: The parent of this RuleInstance.
         :type parent: :class:`huaweicloudsdkcodeartspipeline.v2.RuleSet`

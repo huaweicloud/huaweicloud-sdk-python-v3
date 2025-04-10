@@ -35,7 +35,7 @@ class CommitCheckpointReq:
     }
 
     def __init__(self, app_name=None, checkpoint_type=None, stream_name=None, partition_id=None, sequence_number=None, metadata=None):
-        """CommitCheckpointReq
+        r"""CommitCheckpointReq
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CommitCheckpointReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this CommitCheckpointReq.
+        r"""Gets the app_name of this CommitCheckpointReq.
 
         APP的名称，用户数据消费程序的唯一标识符，需要先通过创建App接口创建。
 
@@ -84,7 +84,7 @@ class CommitCheckpointReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CommitCheckpointReq.
+        r"""Sets the app_name of this CommitCheckpointReq.
 
         APP的名称，用户数据消费程序的唯一标识符，需要先通过创建App接口创建。
 
@@ -95,7 +95,7 @@ class CommitCheckpointReq:
 
     @property
     def checkpoint_type(self):
-        """Gets the checkpoint_type of this CommitCheckpointReq.
+        r"""Gets the checkpoint_type of this CommitCheckpointReq.
 
         Checkpoint类型。  - LAST_READ：在数据库中只记录序列号。
 
@@ -106,7 +106,7 @@ class CommitCheckpointReq:
 
     @checkpoint_type.setter
     def checkpoint_type(self, checkpoint_type):
-        """Sets the checkpoint_type of this CommitCheckpointReq.
+        r"""Sets the checkpoint_type of this CommitCheckpointReq.
 
         Checkpoint类型。  - LAST_READ：在数据库中只记录序列号。
 
@@ -117,7 +117,7 @@ class CommitCheckpointReq:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this CommitCheckpointReq.
+        r"""Gets the stream_name of this CommitCheckpointReq.
 
         已创建的通道名称。
 
@@ -128,7 +128,7 @@ class CommitCheckpointReq:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this CommitCheckpointReq.
+        r"""Sets the stream_name of this CommitCheckpointReq.
 
         已创建的通道名称。
 
@@ -139,7 +139,7 @@ class CommitCheckpointReq:
 
     @property
     def partition_id(self):
-        """Gets the partition_id of this CommitCheckpointReq.
+        r"""Gets the partition_id of this CommitCheckpointReq.
 
         通道的分区标识符。 可定义为如下两种样式： - shardId-0000000000 - 0 比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -150,7 +150,7 @@ class CommitCheckpointReq:
 
     @partition_id.setter
     def partition_id(self, partition_id):
-        """Sets the partition_id of this CommitCheckpointReq.
+        r"""Sets the partition_id of this CommitCheckpointReq.
 
         通道的分区标识符。 可定义为如下两种样式： - shardId-0000000000 - 0 比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -161,7 +161,7 @@ class CommitCheckpointReq:
 
     @property
     def sequence_number(self):
-        """Gets the sequence_number of this CommitCheckpointReq.
+        r"""Gets the sequence_number of this CommitCheckpointReq.
 
         需要提交的序列号，用来记录该通道的消费检查点，需要保证该序列号处于有效范围内。
 
@@ -172,7 +172,7 @@ class CommitCheckpointReq:
 
     @sequence_number.setter
     def sequence_number(self, sequence_number):
-        """Sets the sequence_number of this CommitCheckpointReq.
+        r"""Sets the sequence_number of this CommitCheckpointReq.
 
         需要提交的序列号，用来记录该通道的消费检查点，需要保证该序列号处于有效范围内。
 
@@ -183,7 +183,7 @@ class CommitCheckpointReq:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CommitCheckpointReq.
+        r"""Gets the metadata of this CommitCheckpointReq.
 
         用户消费程序端的元数据信息。  元数据信息的最大长度为1000个字符。
 
@@ -194,7 +194,7 @@ class CommitCheckpointReq:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CommitCheckpointReq.
+        r"""Sets the metadata of this CommitCheckpointReq.
 
         用户消费程序端的元数据信息。  元数据信息的最大长度为1000个字符。
 

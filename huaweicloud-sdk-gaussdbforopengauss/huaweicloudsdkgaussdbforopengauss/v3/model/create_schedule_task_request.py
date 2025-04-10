@@ -27,7 +27,7 @@ class CreateScheduleTaskRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateScheduleTaskRequest
+        r"""CreateScheduleTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateScheduleTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateScheduleTaskRequest.
+        r"""Gets the x_language of this CreateScheduleTaskRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class CreateScheduleTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateScheduleTaskRequest.
+        r"""Sets the x_language of this CreateScheduleTaskRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class CreateScheduleTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScheduleTaskRequest.
+        r"""Gets the body of this CreateScheduleTaskRequest.
 
         :return: The body of this CreateScheduleTaskRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateScheduleTaskRequestBody`
@@ -81,7 +81,7 @@ class CreateScheduleTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScheduleTaskRequest.
+        r"""Sets the body of this CreateScheduleTaskRequest.
 
         :param body: The body of this CreateScheduleTaskRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateScheduleTaskRequestBody`

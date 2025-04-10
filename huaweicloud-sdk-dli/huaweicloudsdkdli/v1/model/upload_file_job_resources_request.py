@@ -27,7 +27,7 @@ class UploadFileJobResourcesRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UploadFileJobResourcesRequest
+        r"""UploadFileJobResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadFileJobResourcesRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UploadFileJobResourcesRequest.
+        r"""Gets the user_id of this UploadFileJobResourcesRequest.
 
         :return: The user_id of this UploadFileJobResourcesRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class UploadFileJobResourcesRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UploadFileJobResourcesRequest.
+        r"""Sets the user_id of this UploadFileJobResourcesRequest.
 
         :param user_id: The user_id of this UploadFileJobResourcesRequest.
         :type user_id: str
@@ -68,7 +68,7 @@ class UploadFileJobResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadFileJobResourcesRequest.
+        r"""Gets the body of this UploadFileJobResourcesRequest.
 
         :return: The body of this UploadFileJobResourcesRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UploadResourcesRequestBody`
@@ -77,7 +77,7 @@ class UploadFileJobResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadFileJobResourcesRequest.
+        r"""Sets the body of this UploadFileJobResourcesRequest.
 
         :param body: The body of this UploadFileJobResourcesRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UploadResourcesRequestBody`

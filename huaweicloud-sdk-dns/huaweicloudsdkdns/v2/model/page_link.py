@@ -27,7 +27,7 @@ class PageLink:
     }
 
     def __init__(self, _self=None, next=None):
-        """PageLink
+        r"""PageLink
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PageLink:
 
     @property
     def _self(self):
-        """Gets the _self of this PageLink.
+        r"""Gets the _self of this PageLink.
 
         当前资源的链接。
 
@@ -61,7 +61,7 @@ class PageLink:
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this PageLink.
+        r"""Sets the _self of this PageLink.
 
         当前资源的链接。
 
@@ -72,7 +72,7 @@ class PageLink:
 
     @property
     def next(self):
-        """Gets the next of this PageLink.
+        r"""Gets the next of this PageLink.
 
         下一页资源的链接。
 
@@ -83,7 +83,7 @@ class PageLink:
 
     @next.setter
     def next(self, next):
-        """Sets the next of this PageLink.
+        r"""Sets the next of this PageLink.
 
         下一页资源的链接。
 

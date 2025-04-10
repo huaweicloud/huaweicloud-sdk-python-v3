@@ -30,7 +30,7 @@ class ShowDomainsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain_used_quota=None, domain_list=None):
-        """ShowDomainsResponse
+        r"""ShowDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDomainsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowDomainsResponse.
+        r"""Gets the total of this ShowDomainsResponse.
 
         全部防护域名的数量
 
@@ -69,7 +69,7 @@ class ShowDomainsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowDomainsResponse.
+        r"""Sets the total of this ShowDomainsResponse.
 
         全部防护域名的数量
 
@@ -80,7 +80,7 @@ class ShowDomainsResponse(SdkResponse):
 
     @property
     def domain_used_quota(self):
-        """Gets the domain_used_quota of this ShowDomainsResponse.
+        r"""Gets the domain_used_quota of this ShowDomainsResponse.
 
         域名已使用配额
 
@@ -91,7 +91,7 @@ class ShowDomainsResponse(SdkResponse):
 
     @domain_used_quota.setter
     def domain_used_quota(self, domain_used_quota):
-        """Sets the domain_used_quota of this ShowDomainsResponse.
+        r"""Sets the domain_used_quota of this ShowDomainsResponse.
 
         域名已使用配额
 
@@ -102,7 +102,7 @@ class ShowDomainsResponse(SdkResponse):
 
     @property
     def domain_list(self):
-        """Gets the domain_list of this ShowDomainsResponse.
+        r"""Gets the domain_list of this ShowDomainsResponse.
 
         详细的防护域名信息
 
@@ -113,7 +113,7 @@ class ShowDomainsResponse(SdkResponse):
 
     @domain_list.setter
     def domain_list(self, domain_list):
-        """Sets the domain_list of this ShowDomainsResponse.
+        r"""Sets the domain_list of this ShowDomainsResponse.
 
         详细的防护域名信息
 

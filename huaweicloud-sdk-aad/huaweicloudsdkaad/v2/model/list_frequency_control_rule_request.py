@@ -25,7 +25,7 @@ class ListFrequencyControlRuleRequest:
     }
 
     def __init__(self, domain_name=None):
-        """ListFrequencyControlRuleRequest
+        r"""ListFrequencyControlRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListFrequencyControlRuleRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListFrequencyControlRuleRequest.
+        r"""Gets the domain_name of this ListFrequencyControlRuleRequest.
 
         域名
 
@@ -53,7 +53,7 @@ class ListFrequencyControlRuleRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListFrequencyControlRuleRequest.
+        r"""Sets the domain_name of this ListFrequencyControlRuleRequest.
 
         域名
 

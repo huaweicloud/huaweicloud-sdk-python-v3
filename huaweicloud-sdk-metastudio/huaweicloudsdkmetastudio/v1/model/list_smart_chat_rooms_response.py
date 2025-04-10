@@ -32,7 +32,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, count_concurrency=None, smart_chat_rooms=None, x_request_id=None):
-        """ListSmartChatRoomsResponse
+        r"""ListSmartChatRoomsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSmartChatRoomsResponse.
+        r"""Gets the count of this ListSmartChatRoomsResponse.
 
         **参数解释**： 智能交互对话总数。
 
@@ -76,7 +76,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSmartChatRoomsResponse.
+        r"""Sets the count of this ListSmartChatRoomsResponse.
 
         **参数解释**： 智能交互对话总数。
 
@@ -87,7 +87,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @property
     def count_concurrency(self):
-        """Gets the count_concurrency of this ListSmartChatRoomsResponse.
+        r"""Gets the count_concurrency of this ListSmartChatRoomsResponse.
 
         **参数解释**： 智能交互对话总并发路数。
 
@@ -98,7 +98,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @count_concurrency.setter
     def count_concurrency(self, count_concurrency):
-        """Sets the count_concurrency of this ListSmartChatRoomsResponse.
+        r"""Sets the count_concurrency of this ListSmartChatRoomsResponse.
 
         **参数解释**： 智能交互对话总并发路数。
 
@@ -109,7 +109,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @property
     def smart_chat_rooms(self):
-        """Gets the smart_chat_rooms of this ListSmartChatRoomsResponse.
+        r"""Gets the smart_chat_rooms of this ListSmartChatRoomsResponse.
 
         智能交互对话列表。
 
@@ -120,7 +120,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @smart_chat_rooms.setter
     def smart_chat_rooms(self, smart_chat_rooms):
-        """Sets the smart_chat_rooms of this ListSmartChatRoomsResponse.
+        r"""Sets the smart_chat_rooms of this ListSmartChatRoomsResponse.
 
         智能交互对话列表。
 
@@ -131,7 +131,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSmartChatRoomsResponse.
+        r"""Gets the x_request_id of this ListSmartChatRoomsResponse.
 
         :return: The x_request_id of this ListSmartChatRoomsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSmartChatRoomsResponse.
+        r"""Sets the x_request_id of this ListSmartChatRoomsResponse.
 
         :param x_request_id: The x_request_id of this ListSmartChatRoomsResponse.
         :type x_request_id: str

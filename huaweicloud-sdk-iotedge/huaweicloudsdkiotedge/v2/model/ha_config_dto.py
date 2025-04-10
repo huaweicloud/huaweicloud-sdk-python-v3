@@ -27,7 +27,7 @@ class HaConfigDTO:
     }
 
     def __init__(self, ha_type=None, active_standby_config=None):
-        """HaConfigDTO
+        r"""HaConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HaConfigDTO:
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this HaConfigDTO.
+        r"""Gets the ha_type of this HaConfigDTO.
 
         节点高可用类型双活或者主备
 
@@ -61,7 +61,7 @@ class HaConfigDTO:
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this HaConfigDTO.
+        r"""Sets the ha_type of this HaConfigDTO.
 
         节点高可用类型双活或者主备
 
@@ -72,7 +72,7 @@ class HaConfigDTO:
 
     @property
     def active_standby_config(self):
-        """Gets the active_standby_config of this HaConfigDTO.
+        r"""Gets the active_standby_config of this HaConfigDTO.
 
         :return: The active_standby_config of this HaConfigDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ActiveStandbyConfigDTO`
@@ -81,7 +81,7 @@ class HaConfigDTO:
 
     @active_standby_config.setter
     def active_standby_config(self, active_standby_config):
-        """Sets the active_standby_config of this HaConfigDTO.
+        r"""Sets the active_standby_config of this HaConfigDTO.
 
         :param active_standby_config: The active_standby_config of this HaConfigDTO.
         :type active_standby_config: :class:`huaweicloudsdkiotedge.v2.ActiveStandbyConfigDTO`

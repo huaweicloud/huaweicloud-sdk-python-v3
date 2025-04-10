@@ -25,7 +25,7 @@ class ExecutePostCreateImagesRequest:
     }
 
     def __init__(self, body=None):
-        """ExecutePostCreateImagesRequest
+        r"""ExecutePostCreateImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecutePostCreateImagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecutePostCreateImagesRequest.
+        r"""Gets the body of this ExecutePostCreateImagesRequest.
 
         :return: The body of this ExecutePostCreateImagesRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostImagesReq`
@@ -52,7 +52,7 @@ class ExecutePostCreateImagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecutePostCreateImagesRequest.
+        r"""Sets the body of this ExecutePostCreateImagesRequest.
 
         :param body: The body of this ExecutePostCreateImagesRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostImagesReq`

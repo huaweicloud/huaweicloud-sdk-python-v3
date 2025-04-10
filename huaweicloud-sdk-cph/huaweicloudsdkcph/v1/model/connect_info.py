@@ -27,7 +27,7 @@ class ConnectInfo:
     }
 
     def __init__(self, phone_id=None, access_info=None):
-        """ConnectInfo
+        r"""ConnectInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConnectInfo:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this ConnectInfo.
+        r"""Gets the phone_id of this ConnectInfo.
 
         云手机的唯一标识。
 
@@ -61,7 +61,7 @@ class ConnectInfo:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this ConnectInfo.
+        r"""Sets the phone_id of this ConnectInfo.
 
         云手机的唯一标识。
 
@@ -72,7 +72,7 @@ class ConnectInfo:
 
     @property
     def access_info(self):
-        """Gets the access_info of this ConnectInfo.
+        r"""Gets the access_info of this ConnectInfo.
 
         :return: The access_info of this ConnectInfo.
         :rtype: :class:`huaweicloudsdkcph.v1.ConnectInfoAccessInfo`
@@ -81,7 +81,7 @@ class ConnectInfo:
 
     @access_info.setter
     def access_info(self, access_info):
-        """Sets the access_info of this ConnectInfo.
+        r"""Sets the access_info of this ConnectInfo.
 
         :param access_info: The access_info of this ConnectInfo.
         :type access_info: :class:`huaweicloudsdkcph.v1.ConnectInfoAccessInfo`

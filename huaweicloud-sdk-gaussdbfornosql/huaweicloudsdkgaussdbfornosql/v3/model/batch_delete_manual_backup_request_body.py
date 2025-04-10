@@ -25,7 +25,7 @@ class BatchDeleteManualBackupRequestBody:
     }
 
     def __init__(self, backup_ids=None):
-        """BatchDeleteManualBackupRequestBody
+        r"""BatchDeleteManualBackupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteManualBackupRequestBody:
 
     @property
     def backup_ids(self):
-        """Gets the backup_ids of this BatchDeleteManualBackupRequestBody.
+        r"""Gets the backup_ids of this BatchDeleteManualBackupRequestBody.
 
         需要批量删除的手动备份id列表，最多一次不超过10条
 
@@ -53,7 +53,7 @@ class BatchDeleteManualBackupRequestBody:
 
     @backup_ids.setter
     def backup_ids(self, backup_ids):
-        """Sets the backup_ids of this BatchDeleteManualBackupRequestBody.
+        r"""Sets the backup_ids of this BatchDeleteManualBackupRequestBody.
 
         需要批量删除的手动备份id列表，最多一次不超过10条
 

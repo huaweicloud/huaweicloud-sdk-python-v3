@@ -25,7 +25,7 @@ class ShowProgressDetailRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowProgressDetailRequest
+        r"""ShowProgressDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowProgressDetailRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowProgressDetailRequest.
+        r"""Gets the task_id of this ShowProgressDetailRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class ShowProgressDetailRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowProgressDetailRequest.
+        r"""Sets the task_id of this ShowProgressDetailRequest.
 
         任务ID
 

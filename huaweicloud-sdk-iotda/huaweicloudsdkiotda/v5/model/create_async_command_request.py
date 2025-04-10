@@ -29,7 +29,7 @@ class CreateAsyncCommandRequest:
     }
 
     def __init__(self, device_id=None, instance_id=None, body=None):
-        """CreateAsyncCommandRequest
+        r"""CreateAsyncCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateAsyncCommandRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateAsyncCommandRequest.
+        r"""Gets the device_id of this CreateAsyncCommandRequest.
 
         **参数说明**：下发命令的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -67,7 +67,7 @@ class CreateAsyncCommandRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateAsyncCommandRequest.
+        r"""Sets the device_id of this CreateAsyncCommandRequest.
 
         **参数说明**：下发命令的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -78,7 +78,7 @@ class CreateAsyncCommandRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAsyncCommandRequest.
+        r"""Gets the instance_id of this CreateAsyncCommandRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -89,7 +89,7 @@ class CreateAsyncCommandRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAsyncCommandRequest.
+        r"""Sets the instance_id of this CreateAsyncCommandRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -100,7 +100,7 @@ class CreateAsyncCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAsyncCommandRequest.
+        r"""Gets the body of this CreateAsyncCommandRequest.
 
         :return: The body of this CreateAsyncCommandRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.AsyncDeviceCommandRequest`
@@ -109,7 +109,7 @@ class CreateAsyncCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAsyncCommandRequest.
+        r"""Sets the body of this CreateAsyncCommandRequest.
 
         :param body: The body of this CreateAsyncCommandRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.AsyncDeviceCommandRequest`

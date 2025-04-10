@@ -30,7 +30,7 @@ class RunSentimentResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunSentimentResponse
+        r"""RunSentimentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunSentimentResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunSentimentResponse.
+        r"""Gets the result of this RunSentimentResponse.
 
         :return: The result of this RunSentimentResponse.
         :rtype: :class:`huaweicloudsdknlp.v2.HWCloudSentimentResp`
@@ -67,7 +67,7 @@ class RunSentimentResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunSentimentResponse.
+        r"""Sets the result of this RunSentimentResponse.
 
         :param result: The result of this RunSentimentResponse.
         :type result: :class:`huaweicloudsdknlp.v2.HWCloudSentimentResp`
@@ -76,7 +76,7 @@ class RunSentimentResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunSentimentResponse.
+        r"""Gets the error_code of this RunSentimentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -87,7 +87,7 @@ class RunSentimentResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunSentimentResponse.
+        r"""Sets the error_code of this RunSentimentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -98,7 +98,7 @@ class RunSentimentResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunSentimentResponse.
+        r"""Gets the error_msg of this RunSentimentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -109,7 +109,7 @@ class RunSentimentResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunSentimentResponse.
+        r"""Sets the error_msg of this RunSentimentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

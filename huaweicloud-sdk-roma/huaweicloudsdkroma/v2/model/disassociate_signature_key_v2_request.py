@@ -27,7 +27,7 @@ class DisassociateSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, sign_bindings_id=None):
-        """DisassociateSignatureKeyV2Request
+        r"""DisassociateSignatureKeyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateSignatureKeyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DisassociateSignatureKeyV2Request.
+        r"""Gets the instance_id of this DisassociateSignatureKeyV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DisassociateSignatureKeyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DisassociateSignatureKeyV2Request.
+        r"""Sets the instance_id of this DisassociateSignatureKeyV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DisassociateSignatureKeyV2Request:
 
     @property
     def sign_bindings_id(self):
-        """Gets the sign_bindings_id of this DisassociateSignatureKeyV2Request.
+        r"""Gets the sign_bindings_id of this DisassociateSignatureKeyV2Request.
 
         API与签名密钥的绑定关系编号
 
@@ -81,7 +81,7 @@ class DisassociateSignatureKeyV2Request:
 
     @sign_bindings_id.setter
     def sign_bindings_id(self, sign_bindings_id):
-        """Sets the sign_bindings_id of this DisassociateSignatureKeyV2Request.
+        r"""Sets the sign_bindings_id of this DisassociateSignatureKeyV2Request.
 
         API与签名密钥的绑定关系编号
 

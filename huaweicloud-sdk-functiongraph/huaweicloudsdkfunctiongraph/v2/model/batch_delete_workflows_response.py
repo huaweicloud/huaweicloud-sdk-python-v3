@@ -28,7 +28,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
     }
 
     def __init__(self, success=None, fail=None):
-        """BatchDeleteWorkflowsResponse
+        r"""BatchDeleteWorkflowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this BatchDeleteWorkflowsResponse.
+        r"""Gets the success of this BatchDeleteWorkflowsResponse.
 
         成功流程URN列表
 
@@ -62,7 +62,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchDeleteWorkflowsResponse.
+        r"""Sets the success of this BatchDeleteWorkflowsResponse.
 
         成功流程URN列表
 
@@ -73,7 +73,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
 
     @property
     def fail(self):
-        """Gets the fail of this BatchDeleteWorkflowsResponse.
+        r"""Gets the fail of this BatchDeleteWorkflowsResponse.
 
         错误流程详情
 
@@ -84,7 +84,7 @@ class BatchDeleteWorkflowsResponse(SdkResponse):
 
     @fail.setter
     def fail(self, fail):
-        """Sets the fail of this BatchDeleteWorkflowsResponse.
+        r"""Sets the fail of this BatchDeleteWorkflowsResponse.
 
         错误流程详情
 

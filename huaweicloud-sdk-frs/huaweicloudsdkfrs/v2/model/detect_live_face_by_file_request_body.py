@@ -25,7 +25,7 @@ class DetectLiveFaceByFileRequestBody:
     }
 
     def __init__(self, image_file=None):
-        """DetectLiveFaceByFileRequestBody
+        r"""DetectLiveFaceByFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetectLiveFaceByFileRequestBody:
 
     @property
     def image_file(self):
-        """Gets the image_file of this DetectLiveFaceByFileRequestBody.
+        r"""Gets the image_file of this DetectLiveFaceByFileRequestBody.
 
         本地图片文件。上传文件时，请求格式为multipart。
 
@@ -53,7 +53,7 @@ class DetectLiveFaceByFileRequestBody:
 
     @image_file.setter
     def image_file(self, image_file):
-        """Sets the image_file of this DetectLiveFaceByFileRequestBody.
+        r"""Sets the image_file of this DetectLiveFaceByFileRequestBody.
 
         本地图片文件。上传文件时，请求格式为multipart。
 

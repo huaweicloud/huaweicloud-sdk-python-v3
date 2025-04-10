@@ -26,7 +26,7 @@ class UpgradeProxyVersionResponse(SdkResponse):
     }
 
     def __init__(self, update_result=None):
-        """UpgradeProxyVersionResponse
+        r"""UpgradeProxyVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeProxyVersionResponse(SdkResponse):
 
     @property
     def update_result(self):
-        """Gets the update_result of this UpgradeProxyVersionResponse.
+        r"""Gets the update_result of this UpgradeProxyVersionResponse.
 
         数据库代理升级信息列表。
 
@@ -55,7 +55,7 @@ class UpgradeProxyVersionResponse(SdkResponse):
 
     @update_result.setter
     def update_result(self, update_result):
-        """Sets the update_result of this UpgradeProxyVersionResponse.
+        r"""Sets the update_result of this UpgradeProxyVersionResponse.
 
         数据库代理升级信息列表。
 

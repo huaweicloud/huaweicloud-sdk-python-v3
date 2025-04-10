@@ -47,7 +47,7 @@ class AcceleratorDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, ip_sets=None, created_at=None, updated_at=None, domain_id=None, enterprise_project_id=None, flavor_id=None, frozen_info=None, tags=None):
-        """AcceleratorDetail
+        r"""AcceleratorDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AcceleratorDetail:
 
     @property
     def id(self):
-        """Gets the id of this AcceleratorDetail.
+        r"""Gets the id of this AcceleratorDetail.
 
         全球加速器ID。
 
@@ -131,7 +131,7 @@ class AcceleratorDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AcceleratorDetail.
+        r"""Sets the id of this AcceleratorDetail.
 
         全球加速器ID。
 
@@ -142,7 +142,7 @@ class AcceleratorDetail:
 
     @property
     def name(self):
-        """Gets the name of this AcceleratorDetail.
+        r"""Gets the name of this AcceleratorDetail.
 
         全球加速器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -153,7 +153,7 @@ class AcceleratorDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AcceleratorDetail.
+        r"""Sets the name of this AcceleratorDetail.
 
         全球加速器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -164,7 +164,7 @@ class AcceleratorDetail:
 
     @property
     def description(self):
-        """Gets the description of this AcceleratorDetail.
+        r"""Gets the description of this AcceleratorDetail.
 
         全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -175,7 +175,7 @@ class AcceleratorDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AcceleratorDetail.
+        r"""Sets the description of this AcceleratorDetail.
 
         全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -186,7 +186,7 @@ class AcceleratorDetail:
 
     @property
     def status(self):
-        """Gets the status of this AcceleratorDetail.
+        r"""Gets the status of this AcceleratorDetail.
 
         :return: The status of this AcceleratorDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -195,7 +195,7 @@ class AcceleratorDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AcceleratorDetail.
+        r"""Sets the status of this AcceleratorDetail.
 
         :param status: The status of this AcceleratorDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -204,7 +204,7 @@ class AcceleratorDetail:
 
     @property
     def ip_sets(self):
-        """Gets the ip_sets of this AcceleratorDetail.
+        r"""Gets the ip_sets of this AcceleratorDetail.
 
         全球加速器IP列表。
 
@@ -215,7 +215,7 @@ class AcceleratorDetail:
 
     @ip_sets.setter
     def ip_sets(self, ip_sets):
-        """Sets the ip_sets of this AcceleratorDetail.
+        r"""Sets the ip_sets of this AcceleratorDetail.
 
         全球加速器IP列表。
 
@@ -226,7 +226,7 @@ class AcceleratorDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AcceleratorDetail.
+        r"""Gets the created_at of this AcceleratorDetail.
 
         创建时间。
 
@@ -237,7 +237,7 @@ class AcceleratorDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AcceleratorDetail.
+        r"""Sets the created_at of this AcceleratorDetail.
 
         创建时间。
 
@@ -248,7 +248,7 @@ class AcceleratorDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AcceleratorDetail.
+        r"""Gets the updated_at of this AcceleratorDetail.
 
         更新时间。
 
@@ -259,7 +259,7 @@ class AcceleratorDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AcceleratorDetail.
+        r"""Sets the updated_at of this AcceleratorDetail.
 
         更新时间。
 
@@ -270,7 +270,7 @@ class AcceleratorDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AcceleratorDetail.
+        r"""Gets the domain_id of this AcceleratorDetail.
 
         租户ID。
 
@@ -281,7 +281,7 @@ class AcceleratorDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AcceleratorDetail.
+        r"""Sets the domain_id of this AcceleratorDetail.
 
         租户ID。
 
@@ -292,7 +292,7 @@ class AcceleratorDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AcceleratorDetail.
+        r"""Gets the enterprise_project_id of this AcceleratorDetail.
 
         租户的企业项目ID。
 
@@ -303,7 +303,7 @@ class AcceleratorDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AcceleratorDetail.
+        r"""Sets the enterprise_project_id of this AcceleratorDetail.
 
         租户的企业项目ID。
 
@@ -314,7 +314,7 @@ class AcceleratorDetail:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this AcceleratorDetail.
+        r"""Gets the flavor_id of this AcceleratorDetail.
 
         规格ID。
 
@@ -325,7 +325,7 @@ class AcceleratorDetail:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this AcceleratorDetail.
+        r"""Sets the flavor_id of this AcceleratorDetail.
 
         规格ID。
 
@@ -336,7 +336,7 @@ class AcceleratorDetail:
 
     @property
     def frozen_info(self):
-        """Gets the frozen_info of this AcceleratorDetail.
+        r"""Gets the frozen_info of this AcceleratorDetail.
 
         :return: The frozen_info of this AcceleratorDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -345,7 +345,7 @@ class AcceleratorDetail:
 
     @frozen_info.setter
     def frozen_info(self, frozen_info):
-        """Sets the frozen_info of this AcceleratorDetail.
+        r"""Sets the frozen_info of this AcceleratorDetail.
 
         :param frozen_info: The frozen_info of this AcceleratorDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -354,7 +354,7 @@ class AcceleratorDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this AcceleratorDetail.
+        r"""Gets the tags of this AcceleratorDetail.
 
         标签列表。
 
@@ -365,7 +365,7 @@ class AcceleratorDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AcceleratorDetail.
+        r"""Sets the tags of this AcceleratorDetail.
 
         标签列表。
 

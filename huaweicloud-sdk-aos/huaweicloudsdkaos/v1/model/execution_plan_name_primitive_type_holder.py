@@ -25,7 +25,7 @@ class ExecutionPlanNamePrimitiveTypeHolder:
     }
 
     def __init__(self, execution_plan_name=None):
-        """ExecutionPlanNamePrimitiveTypeHolder
+        r"""ExecutionPlanNamePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecutionPlanNamePrimitiveTypeHolder:
 
     @property
     def execution_plan_name(self):
-        """Gets the execution_plan_name of this ExecutionPlanNamePrimitiveTypeHolder.
+        r"""Gets the execution_plan_name of this ExecutionPlanNamePrimitiveTypeHolder.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -53,7 +53,7 @@ class ExecutionPlanNamePrimitiveTypeHolder:
 
     @execution_plan_name.setter
     def execution_plan_name(self, execution_plan_name):
-        """Sets the execution_plan_name of this ExecutionPlanNamePrimitiveTypeHolder.
+        r"""Sets the execution_plan_name of this ExecutionPlanNamePrimitiveTypeHolder.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 

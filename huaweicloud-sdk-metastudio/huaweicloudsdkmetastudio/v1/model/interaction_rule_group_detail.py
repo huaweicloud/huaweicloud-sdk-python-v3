@@ -33,7 +33,7 @@ class InteractionRuleGroupDetail:
     }
 
     def __init__(self, group_id=None, group_name=None, interaction_rules=None, create_time=None, update_time=None):
-        """InteractionRuleGroupDetail
+        r"""InteractionRuleGroupDetail
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class InteractionRuleGroupDetail:
 
     @property
     def group_id(self):
-        """Gets the group_id of this InteractionRuleGroupDetail.
+        r"""Gets the group_id of this InteractionRuleGroupDetail.
 
         互动规则库ID
 
@@ -81,7 +81,7 @@ class InteractionRuleGroupDetail:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this InteractionRuleGroupDetail.
+        r"""Sets the group_id of this InteractionRuleGroupDetail.
 
         互动规则库ID
 
@@ -92,7 +92,7 @@ class InteractionRuleGroupDetail:
 
     @property
     def group_name(self):
-        """Gets the group_name of this InteractionRuleGroupDetail.
+        r"""Gets the group_name of this InteractionRuleGroupDetail.
 
         互动规则库名称
 
@@ -103,7 +103,7 @@ class InteractionRuleGroupDetail:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this InteractionRuleGroupDetail.
+        r"""Sets the group_name of this InteractionRuleGroupDetail.
 
         互动规则库名称
 
@@ -114,7 +114,7 @@ class InteractionRuleGroupDetail:
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this InteractionRuleGroupDetail.
+        r"""Gets the interaction_rules of this InteractionRuleGroupDetail.
 
         互动规则列表
 
@@ -125,7 +125,7 @@ class InteractionRuleGroupDetail:
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this InteractionRuleGroupDetail.
+        r"""Sets the interaction_rules of this InteractionRuleGroupDetail.
 
         互动规则列表
 
@@ -136,7 +136,7 @@ class InteractionRuleGroupDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InteractionRuleGroupDetail.
+        r"""Gets the create_time of this InteractionRuleGroupDetail.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -147,7 +147,7 @@ class InteractionRuleGroupDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InteractionRuleGroupDetail.
+        r"""Sets the create_time of this InteractionRuleGroupDetail.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -158,7 +158,7 @@ class InteractionRuleGroupDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this InteractionRuleGroupDetail.
+        r"""Gets the update_time of this InteractionRuleGroupDetail.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -169,7 +169,7 @@ class InteractionRuleGroupDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this InteractionRuleGroupDetail.
+        r"""Sets the update_time of this InteractionRuleGroupDetail.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 

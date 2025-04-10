@@ -37,7 +37,7 @@ class ListScheduledTasksRequest:
     }
 
     def __init__(self, offset=None, limit=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None):
-        """ListScheduledTasksRequest
+        r"""ListScheduledTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListScheduledTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduledTasksRequest.
+        r"""Gets the offset of this ListScheduledTasksRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -94,7 +94,7 @@ class ListScheduledTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduledTasksRequest.
+        r"""Sets the offset of this ListScheduledTasksRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -105,7 +105,7 @@ class ListScheduledTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduledTasksRequest.
+        r"""Gets the limit of this ListScheduledTasksRequest.
 
         用于分页查询，每页返回的个数，取值范围0~50。
 
@@ -116,7 +116,7 @@ class ListScheduledTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduledTasksRequest.
+        r"""Sets the limit of this ListScheduledTasksRequest.
 
         用于分页查询，每页返回的个数，取值范围0~50。
 
@@ -127,7 +127,7 @@ class ListScheduledTasksRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListScheduledTasksRequest.
+        r"""Gets the task_name of this ListScheduledTasksRequest.
 
         任务名称。
 
@@ -138,7 +138,7 @@ class ListScheduledTasksRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListScheduledTasksRequest.
+        r"""Sets the task_name of this ListScheduledTasksRequest.
 
         任务名称。
 
@@ -149,7 +149,7 @@ class ListScheduledTasksRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListScheduledTasksRequest.
+        r"""Gets the task_type of this ListScheduledTasksRequest.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建EVS镜像。
 
@@ -160,7 +160,7 @@ class ListScheduledTasksRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListScheduledTasksRequest.
+        r"""Sets the task_type of this ListScheduledTasksRequest.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建EVS镜像。
 
@@ -171,7 +171,7 @@ class ListScheduledTasksRequest:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ListScheduledTasksRequest.
+        r"""Gets the scheduled_type of this ListScheduledTasksRequest.
 
         执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月，LIFE_CYCLE：触发式。指定LIFE_CYCLE时，才返回触发式任务。
 
@@ -182,7 +182,7 @@ class ListScheduledTasksRequest:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ListScheduledTasksRequest.
+        r"""Sets the scheduled_type of this ListScheduledTasksRequest.
 
         执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月，LIFE_CYCLE：触发式。指定LIFE_CYCLE时，才返回触发式任务。
 
@@ -193,7 +193,7 @@ class ListScheduledTasksRequest:
 
     @property
     def life_cycle_type(self):
-        """Gets the life_cycle_type of this ListScheduledTasksRequest.
+        r"""Gets the life_cycle_type of this ListScheduledTasksRequest.
 
         触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
@@ -204,7 +204,7 @@ class ListScheduledTasksRequest:
 
     @life_cycle_type.setter
     def life_cycle_type(self, life_cycle_type):
-        """Sets the life_cycle_type of this ListScheduledTasksRequest.
+        r"""Sets the life_cycle_type of this ListScheduledTasksRequest.
 
         触发场景类型。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
@@ -215,7 +215,7 @@ class ListScheduledTasksRequest:
 
     @property
     def last_status(self):
-        """Gets the last_status of this ListScheduledTasksRequest.
+        r"""Gets the last_status of this ListScheduledTasksRequest.
 
         最近一次执行状态。SUCCESS：成功，SKIP：跳过，FAIL：失败。
 
@@ -226,7 +226,7 @@ class ListScheduledTasksRequest:
 
     @last_status.setter
     def last_status(self, last_status):
-        """Sets the last_status of this ListScheduledTasksRequest.
+        r"""Sets the last_status of this ListScheduledTasksRequest.
 
         最近一次执行状态。SUCCESS：成功，SKIP：跳过，FAIL：失败。
 

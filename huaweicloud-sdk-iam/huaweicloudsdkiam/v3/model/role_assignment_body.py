@@ -35,7 +35,7 @@ class RoleAssignmentBody:
     }
 
     def __init__(self, user=None, role=None, group=None, agency=None, scope=None, is_inherited=None):
-        """RoleAssignmentBody
+        r"""RoleAssignmentBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RoleAssignmentBody:
 
     @property
     def user(self):
-        """Gets the user of this RoleAssignmentBody.
+        r"""Gets the user of this RoleAssignmentBody.
 
         :return: The user of this RoleAssignmentBody.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleUserAssignmentId`
@@ -87,7 +87,7 @@ class RoleAssignmentBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this RoleAssignmentBody.
+        r"""Sets the user of this RoleAssignmentBody.
 
         :param user: The user of this RoleAssignmentBody.
         :type user: :class:`huaweicloudsdkiam.v3.RoleUserAssignmentId`
@@ -96,7 +96,7 @@ class RoleAssignmentBody:
 
     @property
     def role(self):
-        """Gets the role of this RoleAssignmentBody.
+        r"""Gets the role of this RoleAssignmentBody.
 
         :return: The role of this RoleAssignmentBody.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleAssignmentId`
@@ -105,7 +105,7 @@ class RoleAssignmentBody:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this RoleAssignmentBody.
+        r"""Sets the role of this RoleAssignmentBody.
 
         :param role: The role of this RoleAssignmentBody.
         :type role: :class:`huaweicloudsdkiam.v3.RoleAssignmentId`
@@ -114,7 +114,7 @@ class RoleAssignmentBody:
 
     @property
     def group(self):
-        """Gets the group of this RoleAssignmentBody.
+        r"""Gets the group of this RoleAssignmentBody.
 
         :return: The group of this RoleAssignmentBody.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleGroupAssignmentId`
@@ -123,7 +123,7 @@ class RoleAssignmentBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this RoleAssignmentBody.
+        r"""Sets the group of this RoleAssignmentBody.
 
         :param group: The group of this RoleAssignmentBody.
         :type group: :class:`huaweicloudsdkiam.v3.RoleGroupAssignmentId`
@@ -132,7 +132,7 @@ class RoleAssignmentBody:
 
     @property
     def agency(self):
-        """Gets the agency of this RoleAssignmentBody.
+        r"""Gets the agency of this RoleAssignmentBody.
 
         :return: The agency of this RoleAssignmentBody.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleAgencyAssignmentId`
@@ -141,7 +141,7 @@ class RoleAssignmentBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this RoleAssignmentBody.
+        r"""Sets the agency of this RoleAssignmentBody.
 
         :param agency: The agency of this RoleAssignmentBody.
         :type agency: :class:`huaweicloudsdkiam.v3.RoleAgencyAssignmentId`
@@ -150,7 +150,7 @@ class RoleAssignmentBody:
 
     @property
     def scope(self):
-        """Gets the scope of this RoleAssignmentBody.
+        r"""Gets the scope of this RoleAssignmentBody.
 
         :return: The scope of this RoleAssignmentBody.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleAssignmentScope`
@@ -159,7 +159,7 @@ class RoleAssignmentBody:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this RoleAssignmentBody.
+        r"""Sets the scope of this RoleAssignmentBody.
 
         :param scope: The scope of this RoleAssignmentBody.
         :type scope: :class:`huaweicloudsdkiam.v3.RoleAssignmentScope`
@@ -168,7 +168,7 @@ class RoleAssignmentBody:
 
     @property
     def is_inherited(self):
-        """Gets the is_inherited of this RoleAssignmentBody.
+        r"""Gets the is_inherited of this RoleAssignmentBody.
 
         是否基于所有项目授权。
 
@@ -179,7 +179,7 @@ class RoleAssignmentBody:
 
     @is_inherited.setter
     def is_inherited(self, is_inherited):
-        """Sets the is_inherited of this RoleAssignmentBody.
+        r"""Sets the is_inherited of this RoleAssignmentBody.
 
         是否基于所有项目授权。
 

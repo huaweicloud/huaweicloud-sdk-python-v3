@@ -29,7 +29,7 @@ class DeviceDataRecord:
     }
 
     def __init__(self, disk_quota=None, age=None, state=None):
-        """DeviceDataRecord
+        r"""DeviceDataRecord
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeviceDataRecord:
 
     @property
     def disk_quota(self):
-        """Gets the disk_quota of this DeviceDataRecord.
+        r"""Gets the disk_quota of this DeviceDataRecord.
 
         磁盘配额，单位MB，参考值，只能保证在这个值左右
 
@@ -65,7 +65,7 @@ class DeviceDataRecord:
 
     @disk_quota.setter
     def disk_quota(self, disk_quota):
-        """Sets the disk_quota of this DeviceDataRecord.
+        r"""Sets the disk_quota of this DeviceDataRecord.
 
         磁盘配额，单位MB，参考值，只能保证在这个值左右
 
@@ -76,7 +76,7 @@ class DeviceDataRecord:
 
     @property
     def age(self):
-        """Gets the age of this DeviceDataRecord.
+        r"""Gets the age of this DeviceDataRecord.
 
         老化时间，日志压缩文件名时间戳老于这个时间就会发生老化删除
 
@@ -87,7 +87,7 @@ class DeviceDataRecord:
 
     @age.setter
     def age(self, age):
-        """Sets the age of this DeviceDataRecord.
+        r"""Sets the age of this DeviceDataRecord.
 
         老化时间，日志压缩文件名时间戳老于这个时间就会发生老化删除
 
@@ -98,7 +98,7 @@ class DeviceDataRecord:
 
     @property
     def state(self):
-        """Gets the state of this DeviceDataRecord.
+        r"""Gets the state of this DeviceDataRecord.
 
         配置开关，true启用数据打印，false不启用数据打印
 
@@ -109,7 +109,7 @@ class DeviceDataRecord:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DeviceDataRecord.
+        r"""Sets the state of this DeviceDataRecord.
 
         配置开关，true启用数据打印，false不启用数据打印
 

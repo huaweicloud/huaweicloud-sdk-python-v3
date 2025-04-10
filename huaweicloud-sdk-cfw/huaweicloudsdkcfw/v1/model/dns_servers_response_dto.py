@@ -33,7 +33,7 @@ class DnsServersResponseDTO:
     }
 
     def __init__(self, id=None, is_applied=None, is_customized=None, server_ip=None, health_check_domain_name=None):
-        """DnsServersResponseDTO
+        r"""DnsServersResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DnsServersResponseDTO:
 
     @property
     def id(self):
-        """Gets the id of this DnsServersResponseDTO.
+        r"""Gets the id of this DnsServersResponseDTO.
 
         域名服务器id
 
@@ -82,7 +82,7 @@ class DnsServersResponseDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DnsServersResponseDTO.
+        r"""Sets the id of this DnsServersResponseDTO.
 
         域名服务器id
 
@@ -93,7 +93,7 @@ class DnsServersResponseDTO:
 
     @property
     def is_applied(self):
-        """Gets the is_applied of this DnsServersResponseDTO.
+        r"""Gets the is_applied of this DnsServersResponseDTO.
 
         域名服务器是否应用，0否 1是
 
@@ -104,7 +104,7 @@ class DnsServersResponseDTO:
 
     @is_applied.setter
     def is_applied(self, is_applied):
-        """Sets the is_applied of this DnsServersResponseDTO.
+        r"""Sets the is_applied of this DnsServersResponseDTO.
 
         域名服务器是否应用，0否 1是
 
@@ -115,7 +115,7 @@ class DnsServersResponseDTO:
 
     @property
     def is_customized(self):
-        """Gets the is_customized of this DnsServersResponseDTO.
+        r"""Gets the is_customized of this DnsServersResponseDTO.
 
         域名服务器是否是用户自定义的dns服务器，0否 1是
 
@@ -126,7 +126,7 @@ class DnsServersResponseDTO:
 
     @is_customized.setter
     def is_customized(self, is_customized):
-        """Sets the is_customized of this DnsServersResponseDTO.
+        r"""Sets the is_customized of this DnsServersResponseDTO.
 
         域名服务器是否是用户自定义的dns服务器，0否 1是
 
@@ -137,7 +137,7 @@ class DnsServersResponseDTO:
 
     @property
     def server_ip(self):
-        """Gets the server_ip of this DnsServersResponseDTO.
+        r"""Gets the server_ip of this DnsServersResponseDTO.
 
         DNS服务器IP
 
@@ -148,7 +148,7 @@ class DnsServersResponseDTO:
 
     @server_ip.setter
     def server_ip(self, server_ip):
-        """Sets the server_ip of this DnsServersResponseDTO.
+        r"""Sets the server_ip of this DnsServersResponseDTO.
 
         DNS服务器IP
 
@@ -159,7 +159,7 @@ class DnsServersResponseDTO:
 
     @property
     def health_check_domain_name(self):
-        """Gets the health_check_domain_name of this DnsServersResponseDTO.
+        r"""Gets the health_check_domain_name of this DnsServersResponseDTO.
 
         健康检查域名
 
@@ -170,7 +170,7 @@ class DnsServersResponseDTO:
 
     @health_check_domain_name.setter
     def health_check_domain_name(self, health_check_domain_name):
-        """Sets the health_check_domain_name of this DnsServersResponseDTO.
+        r"""Sets the health_check_domain_name of this DnsServersResponseDTO.
 
         健康检查域名
 

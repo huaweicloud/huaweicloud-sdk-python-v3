@@ -24,7 +24,7 @@ class DeleteThumbnailsTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteThumbnailsTaskResponse
+        r"""DeleteThumbnailsTaskResponse
 
         The model defined in huaweicloud sdk
 

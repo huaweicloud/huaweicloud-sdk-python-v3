@@ -31,7 +31,7 @@ class HostAuthorizationBody:
     }
 
     def __init__(self, username=None, password=None, private_key=None, trusted_type=None):
-        """HostAuthorizationBody
+        r"""HostAuthorizationBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class HostAuthorizationBody:
 
     @property
     def username(self):
-        """Gets the username of this HostAuthorizationBody.
+        r"""Gets the username of this HostAuthorizationBody.
 
         用户名，可输入中英文，数字和符号(-_.)。
 
@@ -73,7 +73,7 @@ class HostAuthorizationBody:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this HostAuthorizationBody.
+        r"""Sets the username of this HostAuthorizationBody.
 
         用户名，可输入中英文，数字和符号(-_.)。
 
@@ -84,7 +84,7 @@ class HostAuthorizationBody:
 
     @property
     def password(self):
-        """Gets the password of this HostAuthorizationBody.
+        r"""Gets the password of this HostAuthorizationBody.
 
         密码，认证类型为0时，密码必填。
 
@@ -95,7 +95,7 @@ class HostAuthorizationBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this HostAuthorizationBody.
+        r"""Sets the password of this HostAuthorizationBody.
 
         密码，认证类型为0时，密码必填。
 
@@ -106,7 +106,7 @@ class HostAuthorizationBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this HostAuthorizationBody.
+        r"""Gets the private_key of this HostAuthorizationBody.
 
         密钥，认证类型为1时，密钥必填
 
@@ -117,7 +117,7 @@ class HostAuthorizationBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this HostAuthorizationBody.
+        r"""Sets the private_key of this HostAuthorizationBody.
 
         密钥，认证类型为1时，密钥必填
 
@@ -128,7 +128,7 @@ class HostAuthorizationBody:
 
     @property
     def trusted_type(self):
-        """Gets the trusted_type of this HostAuthorizationBody.
+        r"""Gets the trusted_type of this HostAuthorizationBody.
 
         认证类型，0表示使用密码认证，1表示使用密钥认证
 
@@ -139,7 +139,7 @@ class HostAuthorizationBody:
 
     @trusted_type.setter
     def trusted_type(self, trusted_type):
-        """Sets the trusted_type of this HostAuthorizationBody.
+        r"""Sets the trusted_type of this HostAuthorizationBody.
 
         认证类型，0表示使用密码认证，1表示使用密钥认证
 

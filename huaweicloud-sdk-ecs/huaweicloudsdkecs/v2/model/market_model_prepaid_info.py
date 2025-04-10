@@ -25,7 +25,7 @@ class MarketModelPrepaidInfo:
     }
 
     def __init__(self, expired_time=None):
-        """MarketModelPrepaidInfo
+        r"""MarketModelPrepaidInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MarketModelPrepaidInfo:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this MarketModelPrepaidInfo.
+        r"""Gets the expired_time of this MarketModelPrepaidInfo.
 
         :return: The expired_time of this MarketModelPrepaidInfo.
         :rtype: str
@@ -52,7 +52,7 @@ class MarketModelPrepaidInfo:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this MarketModelPrepaidInfo.
+        r"""Sets the expired_time of this MarketModelPrepaidInfo.
 
         :param expired_time: The expired_time of this MarketModelPrepaidInfo.
         :type expired_time: str

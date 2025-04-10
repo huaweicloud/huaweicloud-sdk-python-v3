@@ -25,7 +25,7 @@ class CreateBackupRequest:
     }
 
     def __init__(self, graph_id=None):
-        """CreateBackupRequest
+        r"""CreateBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateBackupRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this CreateBackupRequest.
+        r"""Gets the graph_id of this CreateBackupRequest.
 
         图ID。
 
@@ -53,7 +53,7 @@ class CreateBackupRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this CreateBackupRequest.
+        r"""Sets the graph_id of this CreateBackupRequest.
 
         图ID。
 

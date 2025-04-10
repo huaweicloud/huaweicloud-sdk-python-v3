@@ -29,7 +29,7 @@ class NetConfig:
     }
 
     def __init__(self, vpc_id=None, nic_num=None, allowed_address_pairs=None):
-        """NetConfig
+        r"""NetConfig
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class NetConfig:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this NetConfig.
+        r"""Gets the vpc_id of this NetConfig.
 
         边缘网络ID。  约束： - 创建边缘业务仅支持使用系统规划的虚拟私有云。
 
@@ -66,7 +66,7 @@ class NetConfig:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this NetConfig.
+        r"""Sets the vpc_id of this NetConfig.
 
         边缘网络ID。  约束： - 创建边缘业务仅支持使用系统规划的虚拟私有云。
 
@@ -77,7 +77,7 @@ class NetConfig:
 
     @property
     def nic_num(self):
-        """Gets the nic_num of this NetConfig.
+        r"""Gets the nic_num of this NetConfig.
 
         边缘实例绑定的网卡数量。  约束：一台边缘实例最少绑定一张网卡，最多绑定8张网卡。
 
@@ -88,7 +88,7 @@ class NetConfig:
 
     @nic_num.setter
     def nic_num(self, nic_num):
-        """Sets the nic_num of this NetConfig.
+        r"""Sets the nic_num of this NetConfig.
 
         边缘实例绑定的网卡数量。  约束：一台边缘实例最少绑定一张网卡，最多绑定8张网卡。
 
@@ -99,7 +99,7 @@ class NetConfig:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this NetConfig.
+        r"""Gets the allowed_address_pairs of this NetConfig.
 
         - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
 
@@ -110,7 +110,7 @@ class NetConfig:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this NetConfig.
+        r"""Sets the allowed_address_pairs of this NetConfig.
 
         - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关
 

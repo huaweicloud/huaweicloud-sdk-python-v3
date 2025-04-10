@@ -26,7 +26,7 @@ class ShowSlowLogDesensitizationResponse(SdkResponse):
     }
 
     def __init__(self, desensitization_status=None):
-        """ShowSlowLogDesensitizationResponse
+        r"""ShowSlowLogDesensitizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSlowLogDesensitizationResponse(SdkResponse):
 
     @property
     def desensitization_status(self):
-        """Gets the desensitization_status of this ShowSlowLogDesensitizationResponse.
+        r"""Gets the desensitization_status of this ShowSlowLogDesensitizationResponse.
 
         实例慢日志脱敏开启状态，取值：  - on 开启  - off 关闭
 
@@ -55,7 +55,7 @@ class ShowSlowLogDesensitizationResponse(SdkResponse):
 
     @desensitization_status.setter
     def desensitization_status(self, desensitization_status):
-        """Sets the desensitization_status of this ShowSlowLogDesensitizationResponse.
+        r"""Sets the desensitization_status of this ShowSlowLogDesensitizationResponse.
 
         实例慢日志脱敏开启状态，取值：  - on 开启  - off 关闭
 

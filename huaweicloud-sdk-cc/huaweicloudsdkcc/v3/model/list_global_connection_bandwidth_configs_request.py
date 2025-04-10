@@ -23,7 +23,7 @@ class ListGlobalConnectionBandwidthConfigsRequest:
     }
 
     def __init__(self):
-        """ListGlobalConnectionBandwidthConfigsRequest
+        r"""ListGlobalConnectionBandwidthConfigsRequest
 
         The model defined in huaweicloud sdk
 

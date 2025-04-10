@@ -30,7 +30,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain=None, logs=None):
-        """ListLiveSampleLogsResponse
+        r"""ListLiveSampleLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListLiveSampleLogsResponse.
+        r"""Gets the total of this ListLiveSampleLogsResponse.
 
         符合查询条件的总条目数
 
@@ -69,7 +69,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListLiveSampleLogsResponse.
+        r"""Sets the total of this ListLiveSampleLogsResponse.
 
         符合查询条件的总条目数
 
@@ -80,7 +80,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ListLiveSampleLogsResponse.
+        r"""Gets the domain of this ListLiveSampleLogsResponse.
 
         播放域名
 
@@ -91,7 +91,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListLiveSampleLogsResponse.
+        r"""Sets the domain of this ListLiveSampleLogsResponse.
 
         播放域名
 
@@ -102,7 +102,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ListLiveSampleLogsResponse.
+        r"""Gets the logs of this ListLiveSampleLogsResponse.
 
         日志信息列表
 
@@ -113,7 +113,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ListLiveSampleLogsResponse.
+        r"""Sets the logs of this ListLiveSampleLogsResponse.
 
         日志信息列表
 

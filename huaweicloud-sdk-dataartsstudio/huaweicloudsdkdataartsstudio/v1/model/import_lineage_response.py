@@ -26,7 +26,7 @@ class ImportLineageResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ImportLineageResponse
+        r"""ImportLineageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportLineageResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ImportLineageResponse.
+        r"""Gets the body of this ImportLineageResponse.
 
         血缘导入结果
 
@@ -55,7 +55,7 @@ class ImportLineageResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportLineageResponse.
+        r"""Sets the body of this ImportLineageResponse.
 
         血缘导入结果
 

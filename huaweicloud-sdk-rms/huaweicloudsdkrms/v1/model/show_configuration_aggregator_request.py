@@ -25,7 +25,7 @@ class ShowConfigurationAggregatorRequest:
     }
 
     def __init__(self, aggregator_id=None):
-        """ShowConfigurationAggregatorRequest
+        r"""ShowConfigurationAggregatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConfigurationAggregatorRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this ShowConfigurationAggregatorRequest.
+        r"""Gets the aggregator_id of this ShowConfigurationAggregatorRequest.
 
         资源聚合器ID。
 
@@ -53,7 +53,7 @@ class ShowConfigurationAggregatorRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this ShowConfigurationAggregatorRequest.
+        r"""Sets the aggregator_id of this ShowConfigurationAggregatorRequest.
 
         资源聚合器ID。
 

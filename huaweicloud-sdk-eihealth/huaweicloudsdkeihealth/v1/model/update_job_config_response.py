@@ -24,7 +24,7 @@ class UpdateJobConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateJobConfigResponse
+        r"""UpdateJobConfigResponse
 
         The model defined in huaweicloud sdk
 

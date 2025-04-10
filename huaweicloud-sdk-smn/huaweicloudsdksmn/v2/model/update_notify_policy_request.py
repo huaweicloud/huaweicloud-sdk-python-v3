@@ -29,7 +29,7 @@ class UpdateNotifyPolicyRequest:
     }
 
     def __init__(self, topic_urn=None, notify_policy_id=None, body=None):
-        """UpdateNotifyPolicyRequest
+        r"""UpdateNotifyPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateNotifyPolicyRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateNotifyPolicyRequest.
+        r"""Gets the topic_urn of this UpdateNotifyPolicyRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -66,7 +66,7 @@ class UpdateNotifyPolicyRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateNotifyPolicyRequest.
+        r"""Sets the topic_urn of this UpdateNotifyPolicyRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -77,7 +77,7 @@ class UpdateNotifyPolicyRequest:
 
     @property
     def notify_policy_id(self):
-        """Gets the notify_policy_id of this UpdateNotifyPolicyRequest.
+        r"""Gets the notify_policy_id of this UpdateNotifyPolicyRequest.
 
         通知策略ID。
 
@@ -88,7 +88,7 @@ class UpdateNotifyPolicyRequest:
 
     @notify_policy_id.setter
     def notify_policy_id(self, notify_policy_id):
-        """Sets the notify_policy_id of this UpdateNotifyPolicyRequest.
+        r"""Sets the notify_policy_id of this UpdateNotifyPolicyRequest.
 
         通知策略ID。
 
@@ -99,7 +99,7 @@ class UpdateNotifyPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNotifyPolicyRequest.
+        r"""Gets the body of this UpdateNotifyPolicyRequest.
 
         :return: The body of this UpdateNotifyPolicyRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.NotifyPolicyRequestBody`
@@ -108,7 +108,7 @@ class UpdateNotifyPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNotifyPolicyRequest.
+        r"""Sets the body of this UpdateNotifyPolicyRequest.
 
         :param body: The body of this UpdateNotifyPolicyRequest.
         :type body: :class:`huaweicloudsdksmn.v2.NotifyPolicyRequestBody`

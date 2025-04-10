@@ -25,7 +25,7 @@ class UpdateAccessKeyReqBody:
     }
 
     def __init__(self, status=None):
-        """UpdateAccessKeyReqBody
+        r"""UpdateAccessKeyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAccessKeyReqBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateAccessKeyReqBody.
+        r"""Gets the status of this UpdateAccessKeyReqBody.
 
         :return: The status of this UpdateAccessKeyReqBody.
         :rtype: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
@@ -51,7 +51,7 @@ class UpdateAccessKeyReqBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAccessKeyReqBody.
+        r"""Sets the status of this UpdateAccessKeyReqBody.
 
         :param status: The status of this UpdateAccessKeyReqBody.
         :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`

@@ -27,7 +27,7 @@ class UpdateTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateTaskRequest
+        r"""UpdateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskRequest.
+        r"""Gets the task_id of this UpdateTaskRequest.
 
         迁移任务ID
 
@@ -60,7 +60,7 @@ class UpdateTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskRequest.
+        r"""Sets the task_id of this UpdateTaskRequest.
 
         迁移任务ID
 
@@ -71,7 +71,7 @@ class UpdateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskRequest.
+        r"""Gets the body of this UpdateTaskRequest.
 
         :return: The body of this UpdateTaskRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PutTaskReq`
@@ -80,7 +80,7 @@ class UpdateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskRequest.
+        r"""Sets the body of this UpdateTaskRequest.
 
         :param body: The body of this UpdateTaskRequest.
         :type body: :class:`huaweicloudsdksms.v3.PutTaskReq`

@@ -28,7 +28,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
     }
 
     def __init__(self, success=None, instance_id=None):
-        """UpdateReadAndWriteStrategyResponse
+        r"""UpdateReadAndWriteStrategyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this UpdateReadAndWriteStrategyResponse.
+        r"""Gets the success of this UpdateReadAndWriteStrategyResponse.
 
         操作是否成功。
 
@@ -62,7 +62,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UpdateReadAndWriteStrategyResponse.
+        r"""Sets the success of this UpdateReadAndWriteStrategyResponse.
 
         操作是否成功。
 
@@ -73,7 +73,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateReadAndWriteStrategyResponse.
+        r"""Gets the instance_id of this UpdateReadAndWriteStrategyResponse.
 
         DDM实例ID。
 
@@ -84,7 +84,7 @@ class UpdateReadAndWriteStrategyResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateReadAndWriteStrategyResponse.
+        r"""Sets the instance_id of this UpdateReadAndWriteStrategyResponse.
 
         DDM实例ID。
 

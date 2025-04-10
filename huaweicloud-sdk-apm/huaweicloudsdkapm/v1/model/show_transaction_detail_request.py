@@ -27,7 +27,7 @@ class ShowTransactionDetailRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ShowTransactionDetailRequest
+        r"""ShowTransactionDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTransactionDetailRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowTransactionDetailRequest.
+        r"""Gets the x_business_id of this ShowTransactionDetailRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ShowTransactionDetailRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowTransactionDetailRequest.
+        r"""Sets the x_business_id of this ShowTransactionDetailRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ShowTransactionDetailRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowTransactionDetailRequest.
+        r"""Gets the body of this ShowTransactionDetailRequest.
 
         :return: The body of this ShowTransactionDetailRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TxDetailRequest`
@@ -80,7 +80,7 @@ class ShowTransactionDetailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTransactionDetailRequest.
+        r"""Sets the body of this ShowTransactionDetailRequest.
 
         :param body: The body of this ShowTransactionDetailRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TxDetailRequest`

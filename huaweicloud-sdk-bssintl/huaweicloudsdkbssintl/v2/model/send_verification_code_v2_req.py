@@ -31,7 +31,7 @@ class SendVerificationCodeV2Req:
     }
 
     def __init__(self, receiver_type=None, timeout=None, email=None, lang=None):
-        """SendVerificationCodeV2Req
+        r"""SendVerificationCodeV2Req
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def receiver_type(self):
-        """Gets the receiver_type of this SendVerificationCodeV2Req.
+        r"""Gets the receiver_type of this SendVerificationCodeV2Req.
 
         发送验证码的类型： 2：发送邮件验证码
 
@@ -73,7 +73,7 @@ class SendVerificationCodeV2Req:
 
     @receiver_type.setter
     def receiver_type(self, receiver_type):
-        """Sets the receiver_type of this SendVerificationCodeV2Req.
+        r"""Sets the receiver_type of this SendVerificationCodeV2Req.
 
         发送验证码的类型： 2：发送邮件验证码
 
@@ -84,7 +84,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def timeout(self):
-        """Gets the timeout of this SendVerificationCodeV2Req.
+        r"""Gets the timeout of this SendVerificationCodeV2Req.
 
         发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
 
@@ -95,7 +95,7 @@ class SendVerificationCodeV2Req:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this SendVerificationCodeV2Req.
+        r"""Sets the timeout of this SendVerificationCodeV2Req.
 
         发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
 
@@ -106,7 +106,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def email(self):
-        """Gets the email of this SendVerificationCodeV2Req.
+        r"""Gets the email of this SendVerificationCodeV2Req.
 
         指定发送验证码的邮箱地址。
 
@@ -117,7 +117,7 @@ class SendVerificationCodeV2Req:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this SendVerificationCodeV2Req.
+        r"""Sets the email of this SendVerificationCodeV2Req.
 
         指定发送验证码的邮箱地址。
 
@@ -128,7 +128,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def lang(self):
-        """Gets the lang of this SendVerificationCodeV2Req.
+        r"""Gets the lang of this SendVerificationCodeV2Req.
 
         根据该参数的取值选择发送邮件验证码的语言。 zh-cn：中文en-us：英文
 
@@ -139,7 +139,7 @@ class SendVerificationCodeV2Req:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this SendVerificationCodeV2Req.
+        r"""Sets the lang of this SendVerificationCodeV2Req.
 
         根据该参数的取值选择发送邮件验证码的语言。 zh-cn：中文en-us：英文
 

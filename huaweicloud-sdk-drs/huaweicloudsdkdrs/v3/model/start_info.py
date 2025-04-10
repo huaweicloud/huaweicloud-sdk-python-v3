@@ -27,7 +27,7 @@ class StartInfo:
     }
 
     def __init__(self, job_id=None, start_time=None):
-        """StartInfo
+        r"""StartInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartInfo.
+        r"""Gets the job_id of this StartInfo.
 
         任务id。
 
@@ -60,7 +60,7 @@ class StartInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartInfo.
+        r"""Sets the job_id of this StartInfo.
 
         任务id。
 
@@ -71,7 +71,7 @@ class StartInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StartInfo.
+        r"""Gets the start_time of this StartInfo.
 
         任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
 
@@ -82,7 +82,7 @@ class StartInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StartInfo.
+        r"""Sets the start_time of this StartInfo.
 
         任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
 

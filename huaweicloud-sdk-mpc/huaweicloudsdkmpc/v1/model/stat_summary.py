@@ -27,7 +27,7 @@ class StatSummary:
     }
 
     def __init__(self, value=None, date=None):
-        """StatSummary
+        r"""StatSummary
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatSummary:
 
     @property
     def value(self):
-        """Gets the value of this StatSummary.
+        r"""Gets the value of this StatSummary.
 
         精确到小数点后两位。 
 
@@ -61,7 +61,7 @@ class StatSummary:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StatSummary.
+        r"""Sets the value of this StatSummary.
 
         精确到小数点后两位。 
 
@@ -72,7 +72,7 @@ class StatSummary:
 
     @property
     def date(self):
-        """Gets the date of this StatSummary.
+        r"""Gets the date of this StatSummary.
 
         日期,精确到天,格式样例：2018/03/01。 
 
@@ -83,7 +83,7 @@ class StatSummary:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this StatSummary.
+        r"""Sets the date of this StatSummary.
 
         日期,精确到天,格式样例：2018/03/01。 
 

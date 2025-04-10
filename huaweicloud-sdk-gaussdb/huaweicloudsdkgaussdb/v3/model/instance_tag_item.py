@@ -27,7 +27,7 @@ class InstanceTagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """InstanceTagItem
+        r"""InstanceTagItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InstanceTagItem:
 
     @property
     def key(self):
-        """Gets the key of this InstanceTagItem.
+        r"""Gets the key of this InstanceTagItem.
 
         标签键。
 
@@ -59,7 +59,7 @@ class InstanceTagItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this InstanceTagItem.
+        r"""Sets the key of this InstanceTagItem.
 
         标签键。
 
@@ -70,7 +70,7 @@ class InstanceTagItem:
 
     @property
     def value(self):
-        """Gets the value of this InstanceTagItem.
+        r"""Gets the value of this InstanceTagItem.
 
         标签值。
 
@@ -81,7 +81,7 @@ class InstanceTagItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this InstanceTagItem.
+        r"""Sets the value of this InstanceTagItem.
 
         标签值。
 

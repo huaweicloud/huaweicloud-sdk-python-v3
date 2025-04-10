@@ -39,7 +39,7 @@ class AddBlackWhiteListDto:
     }
 
     def __init__(self, object_id=None, list_type=None, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
-        """AddBlackWhiteListDto
+        r"""AddBlackWhiteListDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AddBlackWhiteListDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AddBlackWhiteListDto.
+        r"""Gets the object_id of this AddBlackWhiteListDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -96,7 +96,7 @@ class AddBlackWhiteListDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AddBlackWhiteListDto.
+        r"""Sets the object_id of this AddBlackWhiteListDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -107,7 +107,7 @@ class AddBlackWhiteListDto:
 
     @property
     def list_type(self):
-        """Gets the list_type of this AddBlackWhiteListDto.
+        r"""Gets the list_type of this AddBlackWhiteListDto.
 
         黑白名单类型4：黑名单，5：白名单
 
@@ -118,7 +118,7 @@ class AddBlackWhiteListDto:
 
     @list_type.setter
     def list_type(self, list_type):
-        """Sets the list_type of this AddBlackWhiteListDto.
+        r"""Sets the list_type of this AddBlackWhiteListDto.
 
         黑白名单类型4：黑名单，5：白名单
 
@@ -129,7 +129,7 @@ class AddBlackWhiteListDto:
 
     @property
     def direction(self):
-        """Gets the direction of this AddBlackWhiteListDto.
+        r"""Gets the direction of this AddBlackWhiteListDto.
 
         地址方向0：源地址1：目的地址
 
@@ -140,7 +140,7 @@ class AddBlackWhiteListDto:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this AddBlackWhiteListDto.
+        r"""Sets the direction of this AddBlackWhiteListDto.
 
         地址方向0：源地址1：目的地址
 
@@ -151,7 +151,7 @@ class AddBlackWhiteListDto:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddBlackWhiteListDto.
+        r"""Gets the address_type of this AddBlackWhiteListDto.
 
         ip地址类型 0：ipv4，1:ipv6
 
@@ -162,7 +162,7 @@ class AddBlackWhiteListDto:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddBlackWhiteListDto.
+        r"""Sets the address_type of this AddBlackWhiteListDto.
 
         ip地址类型 0：ipv4，1:ipv6
 
@@ -173,7 +173,7 @@ class AddBlackWhiteListDto:
 
     @property
     def address(self):
-        """Gets the address of this AddBlackWhiteListDto.
+        r"""Gets the address of this AddBlackWhiteListDto.
 
         ip地址
 
@@ -184,7 +184,7 @@ class AddBlackWhiteListDto:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this AddBlackWhiteListDto.
+        r"""Sets the address of this AddBlackWhiteListDto.
 
         ip地址
 
@@ -195,7 +195,7 @@ class AddBlackWhiteListDto:
 
     @property
     def protocol(self):
-        """Gets the protocol of this AddBlackWhiteListDto.
+        r"""Gets the protocol of this AddBlackWhiteListDto.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
 
@@ -206,7 +206,7 @@ class AddBlackWhiteListDto:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this AddBlackWhiteListDto.
+        r"""Sets the protocol of this AddBlackWhiteListDto.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
 
@@ -217,7 +217,7 @@ class AddBlackWhiteListDto:
 
     @property
     def port(self):
-        """Gets the port of this AddBlackWhiteListDto.
+        r"""Gets the port of this AddBlackWhiteListDto.
 
         目的端口
 
@@ -228,7 +228,7 @@ class AddBlackWhiteListDto:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AddBlackWhiteListDto.
+        r"""Sets the port of this AddBlackWhiteListDto.
 
         目的端口
 
@@ -239,7 +239,7 @@ class AddBlackWhiteListDto:
 
     @property
     def description(self):
-        """Gets the description of this AddBlackWhiteListDto.
+        r"""Gets the description of this AddBlackWhiteListDto.
 
         描述
 
@@ -250,7 +250,7 @@ class AddBlackWhiteListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddBlackWhiteListDto.
+        r"""Sets the description of this AddBlackWhiteListDto.
 
         描述
 

@@ -24,7 +24,7 @@ class UninstallCbhEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UninstallCbhEipResponse
+        r"""UninstallCbhEipResponse
 
         The model defined in huaweicloud sdk
 

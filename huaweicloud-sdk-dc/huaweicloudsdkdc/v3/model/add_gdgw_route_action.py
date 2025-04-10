@@ -31,7 +31,7 @@ class AddGdgwRouteAction:
     }
 
     def __init__(self, destination=None, nexthop=None, description=None, type=None):
-        """AddGdgwRouteAction
+        r"""AddGdgwRouteAction
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class AddGdgwRouteAction:
 
     @property
     def destination(self):
-        """Gets the destination of this AddGdgwRouteAction.
+        r"""Gets the destination of this AddGdgwRouteAction.
 
         路由子网
 
@@ -73,7 +73,7 @@ class AddGdgwRouteAction:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this AddGdgwRouteAction.
+        r"""Sets the destination of this AddGdgwRouteAction.
 
         路由子网
 
@@ -84,7 +84,7 @@ class AddGdgwRouteAction:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this AddGdgwRouteAction.
+        r"""Gets the nexthop of this AddGdgwRouteAction.
 
         下一跳id
 
@@ -95,7 +95,7 @@ class AddGdgwRouteAction:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this AddGdgwRouteAction.
+        r"""Sets the nexthop of this AddGdgwRouteAction.
 
         下一跳id
 
@@ -106,7 +106,7 @@ class AddGdgwRouteAction:
 
     @property
     def description(self):
-        """Gets the description of this AddGdgwRouteAction.
+        r"""Gets the description of this AddGdgwRouteAction.
 
         路由描述
 
@@ -117,7 +117,7 @@ class AddGdgwRouteAction:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddGdgwRouteAction.
+        r"""Sets the description of this AddGdgwRouteAction.
 
         路由描述
 
@@ -128,7 +128,7 @@ class AddGdgwRouteAction:
 
     @property
     def type(self):
-        """Gets the type of this AddGdgwRouteAction.
+        r"""Gets the type of this AddGdgwRouteAction.
 
         :return: The type of this AddGdgwRouteAction.
         :rtype: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
@@ -137,7 +137,7 @@ class AddGdgwRouteAction:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddGdgwRouteAction.
+        r"""Sets the type of this AddGdgwRouteAction.
 
         :param type: The type of this AddGdgwRouteAction.
         :type type: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`

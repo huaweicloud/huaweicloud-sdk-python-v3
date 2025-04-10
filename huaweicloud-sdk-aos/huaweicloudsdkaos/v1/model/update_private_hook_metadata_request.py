@@ -29,7 +29,7 @@ class UpdatePrivateHookMetadataRequest:
     }
 
     def __init__(self, client_request_id=None, hook_name=None, body=None):
-        """UpdatePrivateHookMetadataRequest
+        r"""UpdatePrivateHookMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePrivateHookMetadataRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this UpdatePrivateHookMetadataRequest.
+        r"""Gets the client_request_id of this UpdatePrivateHookMetadataRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class UpdatePrivateHookMetadataRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this UpdatePrivateHookMetadataRequest.
+        r"""Sets the client_request_id of this UpdatePrivateHookMetadataRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class UpdatePrivateHookMetadataRequest:
 
     @property
     def hook_name(self):
-        """Gets the hook_name of this UpdatePrivateHookMetadataRequest.
+        r"""Gets the hook_name of this UpdatePrivateHookMetadataRequest.
 
         私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
 
@@ -88,7 +88,7 @@ class UpdatePrivateHookMetadataRequest:
 
     @hook_name.setter
     def hook_name(self, hook_name):
-        """Sets the hook_name of this UpdatePrivateHookMetadataRequest.
+        r"""Sets the hook_name of this UpdatePrivateHookMetadataRequest.
 
         私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
 
@@ -99,7 +99,7 @@ class UpdatePrivateHookMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrivateHookMetadataRequest.
+        r"""Gets the body of this UpdatePrivateHookMetadataRequest.
 
         :return: The body of this UpdatePrivateHookMetadataRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.UpdatePrivateHookMetadataRequestBody`
@@ -108,7 +108,7 @@ class UpdatePrivateHookMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrivateHookMetadataRequest.
+        r"""Sets the body of this UpdatePrivateHookMetadataRequest.
 
         :param body: The body of this UpdatePrivateHookMetadataRequest.
         :type body: :class:`huaweicloudsdkaos.v1.UpdatePrivateHookMetadataRequestBody`

@@ -35,7 +35,7 @@ class ListRecordRulesRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, offset=None, limit=None):
-        """ListRecordRulesRequest
+        r"""ListRecordRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListRecordRulesRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListRecordRulesRequest.
+        r"""Gets the publish_domain of this ListRecordRulesRequest.
 
         直播推流域名
 
@@ -89,7 +89,7 @@ class ListRecordRulesRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListRecordRulesRequest.
+        r"""Sets the publish_domain of this ListRecordRulesRequest.
 
         直播推流域名
 
@@ -100,7 +100,7 @@ class ListRecordRulesRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRecordRulesRequest.
+        r"""Gets the app of this ListRecordRulesRequest.
 
         流应用名称
 
@@ -111,7 +111,7 @@ class ListRecordRulesRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRecordRulesRequest.
+        r"""Sets the app of this ListRecordRulesRequest.
 
         流应用名称
 
@@ -122,7 +122,7 @@ class ListRecordRulesRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListRecordRulesRequest.
+        r"""Gets the stream of this ListRecordRulesRequest.
 
         流名称
 
@@ -133,7 +133,7 @@ class ListRecordRulesRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListRecordRulesRequest.
+        r"""Sets the stream of this ListRecordRulesRequest.
 
         流名称
 
@@ -144,7 +144,7 @@ class ListRecordRulesRequest:
 
     @property
     def record_type(self):
-        """Gets the record_type of this ListRecordRulesRequest.
+        r"""Gets the record_type of this ListRecordRulesRequest.
 
         录制类型，如果不填写则查询所有录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
 
@@ -155,7 +155,7 @@ class ListRecordRulesRequest:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this ListRecordRulesRequest.
+        r"""Sets the record_type of this ListRecordRulesRequest.
 
         录制类型，如果不填写则查询所有录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD，ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 - PLAN_RECORD：计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD：按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。 
 
@@ -166,7 +166,7 @@ class ListRecordRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecordRulesRequest.
+        r"""Gets the offset of this ListRecordRulesRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -177,7 +177,7 @@ class ListRecordRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecordRulesRequest.
+        r"""Sets the offset of this ListRecordRulesRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -188,7 +188,7 @@ class ListRecordRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecordRulesRequest.
+        r"""Gets the limit of this ListRecordRulesRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -199,7 +199,7 @@ class ListRecordRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecordRulesRequest.
+        r"""Sets the limit of this ListRecordRulesRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 

@@ -25,7 +25,7 @@ class ListScalingHistoryRequest:
     }
 
     def __init__(self, id=None):
-        """ListScalingHistoryRequest
+        r"""ListScalingHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListScalingHistoryRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListScalingHistoryRequest.
+        r"""Gets the id of this ListScalingHistoryRequest.
 
         策略id
 
@@ -53,7 +53,7 @@ class ListScalingHistoryRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListScalingHistoryRequest.
+        r"""Sets the id of this ListScalingHistoryRequest.
 
         策略id
 

@@ -27,7 +27,7 @@ class AttachServerVolumeRequestBody:
     }
 
     def __init__(self, volume_attachment=None, dry_run=None):
-        """AttachServerVolumeRequestBody
+        r"""AttachServerVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachServerVolumeRequestBody:
 
     @property
     def volume_attachment(self):
-        """Gets the volume_attachment of this AttachServerVolumeRequestBody.
+        r"""Gets the volume_attachment of this AttachServerVolumeRequestBody.
 
         :return: The volume_attachment of this AttachServerVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.AttachServerVolumeOption`
@@ -58,7 +58,7 @@ class AttachServerVolumeRequestBody:
 
     @volume_attachment.setter
     def volume_attachment(self, volume_attachment):
-        """Sets the volume_attachment of this AttachServerVolumeRequestBody.
+        r"""Sets the volume_attachment of this AttachServerVolumeRequestBody.
 
         :param volume_attachment: The volume_attachment of this AttachServerVolumeRequestBody.
         :type volume_attachment: :class:`huaweicloudsdkecs.v2.AttachServerVolumeOption`
@@ -67,7 +67,7 @@ class AttachServerVolumeRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this AttachServerVolumeRequestBody.
+        r"""Gets the dry_run of this AttachServerVolumeRequestBody.
 
         是否只预检此次请求。  - true：发送检查请求，不会挂载磁盘。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应结果。 - false：发送正常请求，通过检查后并且进行挂载磁盘请求。 默认值：false
 
@@ -78,7 +78,7 @@ class AttachServerVolumeRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this AttachServerVolumeRequestBody.
+        r"""Sets the dry_run of this AttachServerVolumeRequestBody.
 
         是否只预检此次请求。  - true：发送检查请求，不会挂载磁盘。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应结果。 - false：发送正常请求，通过检查后并且进行挂载磁盘请求。 默认值：false
 

@@ -35,7 +35,7 @@ class ImageTaggingItemBody:
     }
 
     def __init__(self, confidence=None, type=None, tag=None, i18n_tag=None, i18n_type=None, instances=None):
-        """ImageTaggingItemBody
+        r"""ImageTaggingItemBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ImageTaggingItemBody:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageTaggingItemBody.
+        r"""Gets the confidence of this ImageTaggingItemBody.
 
         置信度，将Float型置信度转为String类型返回,取值范围：0-100。
 
@@ -89,7 +89,7 @@ class ImageTaggingItemBody:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageTaggingItemBody.
+        r"""Sets the confidence of this ImageTaggingItemBody.
 
         置信度，将Float型置信度转为String类型返回,取值范围：0-100。
 
@@ -100,7 +100,7 @@ class ImageTaggingItemBody:
 
     @property
     def type(self):
-        """Gets the type of this ImageTaggingItemBody.
+        r"""Gets the type of this ImageTaggingItemBody.
 
         标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)。 
 
@@ -111,7 +111,7 @@ class ImageTaggingItemBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImageTaggingItemBody.
+        r"""Sets the type of this ImageTaggingItemBody.
 
         标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)。 
 
@@ -122,7 +122,7 @@ class ImageTaggingItemBody:
 
     @property
     def tag(self):
-        """Gets the tag of this ImageTaggingItemBody.
+        r"""Gets the tag of this ImageTaggingItemBody.
 
         标签名称。
 
@@ -133,7 +133,7 @@ class ImageTaggingItemBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ImageTaggingItemBody.
+        r"""Sets the tag of this ImageTaggingItemBody.
 
         标签名称。
 
@@ -144,7 +144,7 @@ class ImageTaggingItemBody:
 
     @property
     def i18n_tag(self):
-        """Gets the i18n_tag of this ImageTaggingItemBody.
+        r"""Gets the i18n_tag of this ImageTaggingItemBody.
 
         :return: The i18n_tag of this ImageTaggingItemBody.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nTag`
@@ -153,7 +153,7 @@ class ImageTaggingItemBody:
 
     @i18n_tag.setter
     def i18n_tag(self, i18n_tag):
-        """Sets the i18n_tag of this ImageTaggingItemBody.
+        r"""Sets the i18n_tag of this ImageTaggingItemBody.
 
         :param i18n_tag: The i18n_tag of this ImageTaggingItemBody.
         :type i18n_tag: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nTag`
@@ -162,7 +162,7 @@ class ImageTaggingItemBody:
 
     @property
     def i18n_type(self):
-        """Gets the i18n_type of this ImageTaggingItemBody.
+        r"""Gets the i18n_type of this ImageTaggingItemBody.
 
         :return: The i18n_type of this ImageTaggingItemBody.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nType`
@@ -171,7 +171,7 @@ class ImageTaggingItemBody:
 
     @i18n_type.setter
     def i18n_type(self, i18n_type):
-        """Sets the i18n_type of this ImageTaggingItemBody.
+        r"""Sets the i18n_type of this ImageTaggingItemBody.
 
         :param i18n_type: The i18n_type of this ImageTaggingItemBody.
         :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nType`
@@ -180,7 +180,7 @@ class ImageTaggingItemBody:
 
     @property
     def instances(self):
-        """Gets the instances of this ImageTaggingItemBody.
+        r"""Gets the instances of this ImageTaggingItemBody.
 
         目标检测框信息(该服务不返回目标检测信息)。
 
@@ -191,7 +191,7 @@ class ImageTaggingItemBody:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ImageTaggingItemBody.
+        r"""Sets the instances of this ImageTaggingItemBody.
 
         目标检测框信息(该服务不返回目标检测信息)。
 

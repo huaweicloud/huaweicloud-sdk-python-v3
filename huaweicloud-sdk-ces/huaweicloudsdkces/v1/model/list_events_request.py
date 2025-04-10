@@ -35,7 +35,7 @@ class ListEventsRequest:
     }
 
     def __init__(self, event_type=None, event_name=None, _from=None, to=None, start=None, limit=None):
-        """ListEventsRequest
+        r"""ListEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListEventsRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListEventsRequest.
+        r"""Gets the event_type of this ListEventsRequest.
 
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
@@ -89,7 +89,7 @@ class ListEventsRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListEventsRequest.
+        r"""Sets the event_type of this ListEventsRequest.
 
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
@@ -100,7 +100,7 @@ class ListEventsRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListEventsRequest.
+        r"""Gets the event_name of this ListEventsRequest.
 
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
@@ -111,7 +111,7 @@ class ListEventsRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListEventsRequest.
+        r"""Sets the event_name of this ListEventsRequest.
 
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
@@ -122,7 +122,7 @@ class ListEventsRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListEventsRequest.
+        r"""Gets the _from of this ListEventsRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
@@ -133,7 +133,7 @@ class ListEventsRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListEventsRequest.
+        r"""Sets the _from of this ListEventsRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
@@ -144,7 +144,7 @@ class ListEventsRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListEventsRequest.
+        r"""Gets the to of this ListEventsRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
@@ -155,7 +155,7 @@ class ListEventsRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListEventsRequest.
+        r"""Sets the to of this ListEventsRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
@@ -166,7 +166,7 @@ class ListEventsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListEventsRequest.
+        r"""Gets the start of this ListEventsRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -177,7 +177,7 @@ class ListEventsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListEventsRequest.
+        r"""Sets the start of this ListEventsRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -188,7 +188,7 @@ class ListEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventsRequest.
+        r"""Gets the limit of this ListEventsRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
@@ -199,7 +199,7 @@ class ListEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventsRequest.
+        r"""Sets the limit of this ListEventsRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 

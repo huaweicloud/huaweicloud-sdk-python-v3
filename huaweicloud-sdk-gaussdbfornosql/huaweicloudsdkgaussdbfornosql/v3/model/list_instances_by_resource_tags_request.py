@@ -25,7 +25,7 @@ class ListInstancesByResourceTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListInstancesByResourceTagsRequest
+        r"""ListInstancesByResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListInstancesByResourceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstancesByResourceTagsRequest.
+        r"""Gets the body of this ListInstancesByResourceTagsRequest.
 
         :return: The body of this ListInstancesByResourceTagsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListInstancesByResourceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstancesByResourceTagsRequest.
+        r"""Sets the body of this ListInstancesByResourceTagsRequest.
 
         :param body: The body of this ListInstancesByResourceTagsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`

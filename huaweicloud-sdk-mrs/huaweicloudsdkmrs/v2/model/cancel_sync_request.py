@@ -27,7 +27,7 @@ class CancelSyncRequest:
     }
 
     def __init__(self, group_names=None, user_names=None):
-        """CancelSyncRequest
+        r"""CancelSyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CancelSyncRequest:
 
     @property
     def group_names(self):
-        """Gets the group_names of this CancelSyncRequest.
+        r"""Gets the group_names of this CancelSyncRequest.
 
         指定取消同步的IAM用户组。
 
@@ -61,7 +61,7 @@ class CancelSyncRequest:
 
     @group_names.setter
     def group_names(self, group_names):
-        """Sets the group_names of this CancelSyncRequest.
+        r"""Sets the group_names of this CancelSyncRequest.
 
         指定取消同步的IAM用户组。
 
@@ -72,7 +72,7 @@ class CancelSyncRequest:
 
     @property
     def user_names(self):
-        """Gets the user_names of this CancelSyncRequest.
+        r"""Gets the user_names of this CancelSyncRequest.
 
         指定同步的IAM用户。
 
@@ -83,7 +83,7 @@ class CancelSyncRequest:
 
     @user_names.setter
     def user_names(self, user_names):
-        """Sets the user_names of this CancelSyncRequest.
+        r"""Sets the user_names of this CancelSyncRequest.
 
         指定同步的IAM用户。
 

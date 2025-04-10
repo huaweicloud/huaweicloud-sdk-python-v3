@@ -25,7 +25,7 @@ class ResetDatabasePasswordRequest:
     }
 
     def __init__(self, users=None):
-        """ResetDatabasePasswordRequest
+        r"""ResetDatabasePasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResetDatabasePasswordRequest:
 
     @property
     def users(self):
-        """Gets the users of this ResetDatabasePasswordRequest.
+        r"""Gets the users of this ResetDatabasePasswordRequest.
 
         准备修改密码的数据库用户列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class ResetDatabasePasswordRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ResetDatabasePasswordRequest.
+        r"""Sets the users of this ResetDatabasePasswordRequest.
 
         准备修改密码的数据库用户列表，列表最大长度为50。
 

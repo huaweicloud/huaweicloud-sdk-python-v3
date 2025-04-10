@@ -25,7 +25,7 @@ class ExecutionPlanStatusMessagePrimitiveTypeHolder:
     }
 
     def __init__(self, status_message=None):
-        """ExecutionPlanStatusMessagePrimitiveTypeHolder
+        r"""ExecutionPlanStatusMessagePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecutionPlanStatusMessagePrimitiveTypeHolder:
 
     @property
     def status_message(self):
-        """Gets the status_message of this ExecutionPlanStatusMessagePrimitiveTypeHolder.
+        r"""Gets the status_message of this ExecutionPlanStatusMessagePrimitiveTypeHolder.
 
         当执行计划的状态为创建失败状态（即为 `CREATION_FAILED` 时），将会展示简要的错误信息总结以供debug
 
@@ -54,7 +54,7 @@ class ExecutionPlanStatusMessagePrimitiveTypeHolder:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this ExecutionPlanStatusMessagePrimitiveTypeHolder.
+        r"""Sets the status_message of this ExecutionPlanStatusMessagePrimitiveTypeHolder.
 
         当执行计划的状态为创建失败状态（即为 `CREATION_FAILED` 时），将会展示简要的错误信息总结以供debug
 

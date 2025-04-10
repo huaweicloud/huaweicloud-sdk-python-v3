@@ -26,7 +26,7 @@ class ShowAuditlogDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, links=None):
-        """ShowAuditlogDownloadLinkResponse
+        r"""ShowAuditlogDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAuditlogDownloadLinkResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowAuditlogDownloadLinkResponse.
+        r"""Gets the links of this ShowAuditlogDownloadLinkResponse.
 
         审计日志下载链接列表。
 
@@ -55,7 +55,7 @@ class ShowAuditlogDownloadLinkResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowAuditlogDownloadLinkResponse.
+        r"""Sets the links of this ShowAuditlogDownloadLinkResponse.
 
         审计日志下载链接列表。
 

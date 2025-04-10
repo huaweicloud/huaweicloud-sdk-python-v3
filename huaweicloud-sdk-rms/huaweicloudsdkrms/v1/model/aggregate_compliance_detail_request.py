@@ -35,7 +35,7 @@ class AggregateComplianceDetailRequest:
     }
 
     def __init__(self, aggregator_id=None, account_id=None, compliance_state=None, policy_assignment_name=None, resource_name=None, resource_id=None):
-        """AggregateComplianceDetailRequest
+        r"""AggregateComplianceDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AggregateComplianceDetailRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregateComplianceDetailRequest.
+        r"""Gets the aggregator_id of this AggregateComplianceDetailRequest.
 
         资源聚合器ID
 
@@ -86,7 +86,7 @@ class AggregateComplianceDetailRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregateComplianceDetailRequest.
+        r"""Sets the aggregator_id of this AggregateComplianceDetailRequest.
 
         资源聚合器ID
 
@@ -97,7 +97,7 @@ class AggregateComplianceDetailRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AggregateComplianceDetailRequest.
+        r"""Gets the account_id of this AggregateComplianceDetailRequest.
 
         源帐号ID
 
@@ -108,7 +108,7 @@ class AggregateComplianceDetailRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AggregateComplianceDetailRequest.
+        r"""Sets the account_id of this AggregateComplianceDetailRequest.
 
         源帐号ID
 
@@ -119,7 +119,7 @@ class AggregateComplianceDetailRequest:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this AggregateComplianceDetailRequest.
+        r"""Gets the compliance_state of this AggregateComplianceDetailRequest.
 
         合规结果。
 
@@ -130,7 +130,7 @@ class AggregateComplianceDetailRequest:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this AggregateComplianceDetailRequest.
+        r"""Sets the compliance_state of this AggregateComplianceDetailRequest.
 
         合规结果。
 
@@ -141,7 +141,7 @@ class AggregateComplianceDetailRequest:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this AggregateComplianceDetailRequest.
+        r"""Gets the policy_assignment_name of this AggregateComplianceDetailRequest.
 
         合规规则名称
 
@@ -152,7 +152,7 @@ class AggregateComplianceDetailRequest:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this AggregateComplianceDetailRequest.
+        r"""Sets the policy_assignment_name of this AggregateComplianceDetailRequest.
 
         合规规则名称
 
@@ -163,7 +163,7 @@ class AggregateComplianceDetailRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this AggregateComplianceDetailRequest.
+        r"""Gets the resource_name of this AggregateComplianceDetailRequest.
 
         资源名称
 
@@ -174,7 +174,7 @@ class AggregateComplianceDetailRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this AggregateComplianceDetailRequest.
+        r"""Sets the resource_name of this AggregateComplianceDetailRequest.
 
         资源名称
 
@@ -185,7 +185,7 @@ class AggregateComplianceDetailRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AggregateComplianceDetailRequest.
+        r"""Gets the resource_id of this AggregateComplianceDetailRequest.
 
         资源ID
 
@@ -196,7 +196,7 @@ class AggregateComplianceDetailRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AggregateComplianceDetailRequest.
+        r"""Sets the resource_id of this AggregateComplianceDetailRequest.
 
         资源ID
 

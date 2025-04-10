@@ -30,7 +30,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
     }
 
     def __init__(self, share_bandwidth_types=None, request_id=None, page_info=None):
-        """ListShareBandwidthTypesResponse
+        r"""ListShareBandwidthTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
     @property
     def share_bandwidth_types(self):
-        """Gets the share_bandwidth_types of this ListShareBandwidthTypesResponse.
+        r"""Gets the share_bandwidth_types of this ListShareBandwidthTypesResponse.
 
         功能说明：共享带宽类型对象
 
@@ -69,7 +69,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
     @share_bandwidth_types.setter
     def share_bandwidth_types(self, share_bandwidth_types):
-        """Sets the share_bandwidth_types of this ListShareBandwidthTypesResponse.
+        r"""Sets the share_bandwidth_types of this ListShareBandwidthTypesResponse.
 
         功能说明：共享带宽类型对象
 
@@ -80,7 +80,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListShareBandwidthTypesResponse.
+        r"""Gets the request_id of this ListShareBandwidthTypesResponse.
 
         本次请求的编号
 
@@ -91,7 +91,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListShareBandwidthTypesResponse.
+        r"""Sets the request_id of this ListShareBandwidthTypesResponse.
 
         本次请求的编号
 
@@ -102,7 +102,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListShareBandwidthTypesResponse.
+        r"""Gets the page_info of this ListShareBandwidthTypesResponse.
 
         :return: The page_info of this ListShareBandwidthTypesResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
@@ -111,7 +111,7 @@ class ListShareBandwidthTypesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListShareBandwidthTypesResponse.
+        r"""Sets the page_info of this ListShareBandwidthTypesResponse.
 
         :param page_info: The page_info of this ListShareBandwidthTypesResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`

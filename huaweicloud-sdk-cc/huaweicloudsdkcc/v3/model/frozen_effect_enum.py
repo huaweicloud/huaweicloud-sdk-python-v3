@@ -27,7 +27,7 @@ class FrozenEffectEnum:
     }
 
     def __init__(self):
-        """FrozenEffectEnum
+        r"""FrozenEffectEnum
 
         The model defined in huaweicloud sdk
 

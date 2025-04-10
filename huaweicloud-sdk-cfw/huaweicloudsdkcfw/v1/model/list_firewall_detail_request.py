@@ -35,7 +35,7 @@ class ListFirewallDetailRequest:
     }
 
     def __init__(self, offset=None, limit=None, service_type=None, enterprise_project_id=None, fw_instance_id=None, name=None):
-        """ListFirewallDetailRequest
+        r"""ListFirewallDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListFirewallDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFirewallDetailRequest.
+        r"""Gets the offset of this ListFirewallDetailRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -86,7 +86,7 @@ class ListFirewallDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFirewallDetailRequest.
+        r"""Sets the offset of this ListFirewallDetailRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -97,7 +97,7 @@ class ListFirewallDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFirewallDetailRequest.
+        r"""Gets the limit of this ListFirewallDetailRequest.
 
         每页显示个数，范围为1-1024
 
@@ -108,7 +108,7 @@ class ListFirewallDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFirewallDetailRequest.
+        r"""Sets the limit of this ListFirewallDetailRequest.
 
         每页显示个数，范围为1-1024
 
@@ -119,7 +119,7 @@ class ListFirewallDetailRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListFirewallDetailRequest.
+        r"""Gets the service_type of this ListFirewallDetailRequest.
 
         服务类型，目前仅支持0互联网防护
 
@@ -130,7 +130,7 @@ class ListFirewallDetailRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListFirewallDetailRequest.
+        r"""Sets the service_type of this ListFirewallDetailRequest.
 
         服务类型，目前仅支持0互联网防护
 
@@ -141,7 +141,7 @@ class ListFirewallDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFirewallDetailRequest.
+        r"""Gets the enterprise_project_id of this ListFirewallDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -152,7 +152,7 @@ class ListFirewallDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFirewallDetailRequest.
+        r"""Sets the enterprise_project_id of this ListFirewallDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -163,7 +163,7 @@ class ListFirewallDetailRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListFirewallDetailRequest.
+        r"""Gets the fw_instance_id of this ListFirewallDetailRequest.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
@@ -174,7 +174,7 @@ class ListFirewallDetailRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListFirewallDetailRequest.
+        r"""Sets the fw_instance_id of this ListFirewallDetailRequest.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
@@ -185,7 +185,7 @@ class ListFirewallDetailRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFirewallDetailRequest.
+        r"""Gets the name of this ListFirewallDetailRequest.
 
         防火墙名称
 
@@ -196,7 +196,7 @@ class ListFirewallDetailRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFirewallDetailRequest.
+        r"""Sets the name of this ListFirewallDetailRequest.
 
         防火墙名称
 

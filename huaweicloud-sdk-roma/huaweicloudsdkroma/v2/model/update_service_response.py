@@ -44,7 +44,7 @@ class UpdateServiceResponse(SdkResponse):
     }
 
     def __init__(self, product_template_id=None, product_id=None, service_id=None, service_name=None, description=None, status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """UpdateServiceResponse
+        r"""UpdateServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def product_template_id(self):
-        """Gets the product_template_id of this UpdateServiceResponse.
+        r"""Gets the product_template_id of this UpdateServiceResponse.
 
         服务归属的产品模板ID
 
@@ -118,7 +118,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @product_template_id.setter
     def product_template_id(self, product_template_id):
-        """Sets the product_template_id of this UpdateServiceResponse.
+        r"""Sets the product_template_id of this UpdateServiceResponse.
 
         服务归属的产品模板ID
 
@@ -129,7 +129,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this UpdateServiceResponse.
+        r"""Gets the product_id of this UpdateServiceResponse.
 
         服务归属的产品ID
 
@@ -140,7 +140,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this UpdateServiceResponse.
+        r"""Sets the product_id of this UpdateServiceResponse.
 
         服务归属的产品ID
 
@@ -151,7 +151,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateServiceResponse.
+        r"""Gets the service_id of this UpdateServiceResponse.
 
         服务ID
 
@@ -162,7 +162,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateServiceResponse.
+        r"""Sets the service_id of this UpdateServiceResponse.
 
         服务ID
 
@@ -173,7 +173,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def service_name(self):
-        """Gets the service_name of this UpdateServiceResponse.
+        r"""Gets the service_name of this UpdateServiceResponse.
 
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -184,7 +184,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this UpdateServiceResponse.
+        r"""Sets the service_name of this UpdateServiceResponse.
 
         服务名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -195,7 +195,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateServiceResponse.
+        r"""Gets the description of this UpdateServiceResponse.
 
         服务描述，长度0-200
 
@@ -206,7 +206,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServiceResponse.
+        r"""Sets the description of this UpdateServiceResponse.
 
         服务描述，长度0-200
 
@@ -217,7 +217,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateServiceResponse.
+        r"""Gets the status of this UpdateServiceResponse.
 
         服务状态 0-启用 1-停用
 
@@ -228,7 +228,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateServiceResponse.
+        r"""Sets the status of this UpdateServiceResponse.
 
         服务状态 0-启用 1-停用
 
@@ -239,7 +239,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def created_user(self):
-        """Gets the created_user of this UpdateServiceResponse.
+        r"""Gets the created_user of this UpdateServiceResponse.
 
         :return: The created_user of this UpdateServiceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -248,7 +248,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this UpdateServiceResponse.
+        r"""Sets the created_user of this UpdateServiceResponse.
 
         :param created_user: The created_user of this UpdateServiceResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -257,7 +257,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this UpdateServiceResponse.
+        r"""Gets the last_updated_user of this UpdateServiceResponse.
 
         :return: The last_updated_user of this UpdateServiceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -266,7 +266,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this UpdateServiceResponse.
+        r"""Sets the last_updated_user of this UpdateServiceResponse.
 
         :param last_updated_user: The last_updated_user of this UpdateServiceResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -275,7 +275,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this UpdateServiceResponse.
+        r"""Gets the created_datetime of this UpdateServiceResponse.
 
         创建时间止，格式timestamp(ms)，使用UTC时区
 
@@ -286,7 +286,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this UpdateServiceResponse.
+        r"""Sets the created_datetime of this UpdateServiceResponse.
 
         创建时间止，格式timestamp(ms)，使用UTC时区
 
@@ -297,7 +297,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this UpdateServiceResponse.
+        r"""Gets the last_updated_datetime of this UpdateServiceResponse.
 
         最后修改时间止，格式timestamp(ms)，使用UTC时区
 
@@ -308,7 +308,7 @@ class UpdateServiceResponse(SdkResponse):
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this UpdateServiceResponse.
+        r"""Sets the last_updated_datetime of this UpdateServiceResponse.
 
         最后修改时间止，格式timestamp(ms)，使用UTC时区
 

@@ -27,7 +27,7 @@ class TrendQueryData:
     }
 
     def __init__(self, result=None, timestamp=None):
-        """TrendQueryData
+        r"""TrendQueryData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TrendQueryData:
 
     @property
     def result(self):
-        """Gets the result of this TrendQueryData.
+        r"""Gets the result of this TrendQueryData.
 
         查询结果。
 
@@ -61,7 +61,7 @@ class TrendQueryData:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this TrendQueryData.
+        r"""Sets the result of this TrendQueryData.
 
         查询结果。
 
@@ -72,7 +72,7 @@ class TrendQueryData:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this TrendQueryData.
+        r"""Gets the timestamp of this TrendQueryData.
 
         时间戳。
 
@@ -83,7 +83,7 @@ class TrendQueryData:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this TrendQueryData.
+        r"""Sets the timestamp of this TrendQueryData.
 
         时间戳。
 

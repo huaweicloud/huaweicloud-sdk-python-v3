@@ -43,7 +43,7 @@ class VolumeDetail:
     }
 
     def __init__(self, encrypt_flag=None, kms_key=None, key_alias=None, type=None, size=None, kms_grant_id=None, device=None, id=None, volume_id=None, cluster_id=None):
-        """VolumeDetail
+        r"""VolumeDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class VolumeDetail:
 
     @property
     def encrypt_flag(self):
-        """Gets the encrypt_flag of this VolumeDetail.
+        r"""Gets the encrypt_flag of this VolumeDetail.
 
         标识磁盘是否加密，如果为1就是加密，0非加密。
 
@@ -117,7 +117,7 @@ class VolumeDetail:
 
     @encrypt_flag.setter
     def encrypt_flag(self, encrypt_flag):
-        """Sets the encrypt_flag of this VolumeDetail.
+        r"""Sets the encrypt_flag of this VolumeDetail.
 
         标识磁盘是否加密，如果为1就是加密，0非加密。
 
@@ -128,7 +128,7 @@ class VolumeDetail:
 
     @property
     def kms_key(self):
-        """Gets the kms_key of this VolumeDetail.
+        r"""Gets the kms_key of this VolumeDetail.
 
         如果磁盘加密，传递的密钥。
 
@@ -139,7 +139,7 @@ class VolumeDetail:
 
     @kms_key.setter
     def kms_key(self, kms_key):
-        """Sets the kms_key of this VolumeDetail.
+        r"""Sets the kms_key of this VolumeDetail.
 
         如果磁盘加密，传递的密钥。
 
@@ -150,7 +150,7 @@ class VolumeDetail:
 
     @property
     def key_alias(self):
-        """Gets the key_alias of this VolumeDetail.
+        r"""Gets the key_alias of this VolumeDetail.
 
         如果磁盘加密，传递的密钥。
 
@@ -161,7 +161,7 @@ class VolumeDetail:
 
     @key_alias.setter
     def key_alias(self, key_alias):
-        """Sets the key_alias of this VolumeDetail.
+        r"""Sets the key_alias of this VolumeDetail.
 
         如果磁盘加密，传递的密钥。
 
@@ -172,7 +172,7 @@ class VolumeDetail:
 
     @property
     def type(self):
-        """Gets the type of this VolumeDetail.
+        r"""Gets the type of this VolumeDetail.
 
         :return: The type of this VolumeDetail.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -181,7 +181,7 @@ class VolumeDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VolumeDetail.
+        r"""Sets the type of this VolumeDetail.
 
         :param type: The type of this VolumeDetail.
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -190,7 +190,7 @@ class VolumeDetail:
 
     @property
     def size(self):
-        """Gets the size of this VolumeDetail.
+        r"""Gets the size of this VolumeDetail.
 
         磁盘容量，单位GB。
 
@@ -201,7 +201,7 @@ class VolumeDetail:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeDetail.
+        r"""Sets the size of this VolumeDetail.
 
         磁盘容量，单位GB。
 
@@ -212,7 +212,7 @@ class VolumeDetail:
 
     @property
     def kms_grant_id(self):
-        """Gets the kms_grant_id of this VolumeDetail.
+        r"""Gets the kms_grant_id of this VolumeDetail.
 
         如果磁盘加密，授权ID。
 
@@ -223,7 +223,7 @@ class VolumeDetail:
 
     @kms_grant_id.setter
     def kms_grant_id(self, kms_grant_id):
-        """Sets the kms_grant_id of this VolumeDetail.
+        r"""Sets the kms_grant_id of this VolumeDetail.
 
         如果磁盘加密，授权ID。
 
@@ -234,7 +234,7 @@ class VolumeDetail:
 
     @property
     def device(self):
-        """Gets the device of this VolumeDetail.
+        r"""Gets the device of this VolumeDetail.
 
         挂载目录。
 
@@ -245,7 +245,7 @@ class VolumeDetail:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this VolumeDetail.
+        r"""Sets the device of this VolumeDetail.
 
         挂载目录。
 
@@ -256,7 +256,7 @@ class VolumeDetail:
 
     @property
     def id(self):
-        """Gets the id of this VolumeDetail.
+        r"""Gets the id of this VolumeDetail.
 
         磁盘表唯一标识ID。
 
@@ -267,7 +267,7 @@ class VolumeDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeDetail.
+        r"""Sets the id of this VolumeDetail.
 
         磁盘表唯一标识ID。
 
@@ -278,7 +278,7 @@ class VolumeDetail:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this VolumeDetail.
+        r"""Gets the volume_id of this VolumeDetail.
 
         磁盘ID。
 
@@ -289,7 +289,7 @@ class VolumeDetail:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this VolumeDetail.
+        r"""Sets the volume_id of this VolumeDetail.
 
         磁盘ID。
 
@@ -300,7 +300,7 @@ class VolumeDetail:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this VolumeDetail.
+        r"""Gets the cluster_id of this VolumeDetail.
 
         专属分布式存储池id。
 
@@ -311,7 +311,7 @@ class VolumeDetail:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this VolumeDetail.
+        r"""Sets the cluster_id of this VolumeDetail.
 
         专属分布式存储池id。
 

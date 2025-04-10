@@ -28,7 +28,7 @@ class ListJobOperationLogResponse(SdkResponse):
     }
 
     def __init__(self, count=None, operations=None):
-        """ListJobOperationLogResponse
+        r"""ListJobOperationLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJobOperationLogResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJobOperationLogResponse.
+        r"""Gets the count of this ListJobOperationLogResponse.
 
         满足查询要求的操作日志总数
 
@@ -62,7 +62,7 @@ class ListJobOperationLogResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJobOperationLogResponse.
+        r"""Sets the count of this ListJobOperationLogResponse.
 
         满足查询要求的操作日志总数
 
@@ -73,7 +73,7 @@ class ListJobOperationLogResponse(SdkResponse):
 
     @property
     def operations(self):
-        """Gets the operations of this ListJobOperationLogResponse.
+        r"""Gets the operations of this ListJobOperationLogResponse.
 
         操作日志列表
 
@@ -84,7 +84,7 @@ class ListJobOperationLogResponse(SdkResponse):
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this ListJobOperationLogResponse.
+        r"""Sets the operations of this ListJobOperationLogResponse.
 
         操作日志列表
 

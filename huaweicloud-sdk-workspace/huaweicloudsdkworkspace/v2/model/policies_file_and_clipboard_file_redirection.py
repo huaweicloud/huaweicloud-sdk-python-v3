@@ -31,7 +31,7 @@ class PoliciesFileAndClipboardFileRedirection:
     }
 
     def __init__(self, redirection_mode=None, options=None, vm_send_file_client=None, redirection_send_file_options=None):
-        """PoliciesFileAndClipboardFileRedirection
+        r"""PoliciesFileAndClipboardFileRedirection
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @property
     def redirection_mode(self):
-        """Gets the redirection_mode of this PoliciesFileAndClipboardFileRedirection.
+        r"""Gets the redirection_mode of this PoliciesFileAndClipboardFileRedirection.
 
         文件重定向。取值为： DISABLED：表示禁用。（默认） READ_ONLY：表示只读。 READ_AND_WRITE：表示读写。
 
@@ -75,7 +75,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @redirection_mode.setter
     def redirection_mode(self, redirection_mode):
-        """Sets the redirection_mode of this PoliciesFileAndClipboardFileRedirection.
+        r"""Sets the redirection_mode of this PoliciesFileAndClipboardFileRedirection.
 
         文件重定向。取值为： DISABLED：表示禁用。（默认） READ_ONLY：表示只读。 READ_AND_WRITE：表示读写。
 
@@ -86,7 +86,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesFileAndClipboardFileRedirection.
+        r"""Gets the options of this PoliciesFileAndClipboardFileRedirection.
 
         :return: The options of this PoliciesFileAndClipboardFileRedirection.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirectionOptions`
@@ -95,7 +95,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesFileAndClipboardFileRedirection.
+        r"""Sets the options of this PoliciesFileAndClipboardFileRedirection.
 
         :param options: The options of this PoliciesFileAndClipboardFileRedirection.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirectionOptions`
@@ -104,7 +104,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @property
     def vm_send_file_client(self):
-        """Gets the vm_send_file_client of this PoliciesFileAndClipboardFileRedirection.
+        r"""Gets the vm_send_file_client of this PoliciesFileAndClipboardFileRedirection.
 
         是否开启发送文件（虚机到客户端）。取值为： false：表示关闭。 true：表示开启。
 
@@ -115,7 +115,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @vm_send_file_client.setter
     def vm_send_file_client(self, vm_send_file_client):
-        """Sets the vm_send_file_client of this PoliciesFileAndClipboardFileRedirection.
+        r"""Sets the vm_send_file_client of this PoliciesFileAndClipboardFileRedirection.
 
         是否开启发送文件（虚机到客户端）。取值为： false：表示关闭。 true：表示开启。
 
@@ -126,7 +126,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @property
     def redirection_send_file_options(self):
-        """Gets the redirection_send_file_options of this PoliciesFileAndClipboardFileRedirection.
+        r"""Gets the redirection_send_file_options of this PoliciesFileAndClipboardFileRedirection.
 
         :return: The redirection_send_file_options of this PoliciesFileAndClipboardFileRedirection.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions`
@@ -135,7 +135,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     @redirection_send_file_options.setter
     def redirection_send_file_options(self, redirection_send_file_options):
-        """Sets the redirection_send_file_options of this PoliciesFileAndClipboardFileRedirection.
+        r"""Sets the redirection_send_file_options of this PoliciesFileAndClipboardFileRedirection.
 
         :param redirection_send_file_options: The redirection_send_file_options of this PoliciesFileAndClipboardFileRedirection.
         :type redirection_send_file_options: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions`

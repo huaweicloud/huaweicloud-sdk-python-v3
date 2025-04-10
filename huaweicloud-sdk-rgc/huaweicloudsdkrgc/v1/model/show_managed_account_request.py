@@ -25,7 +25,7 @@ class ShowManagedAccountRequest:
     }
 
     def __init__(self, managed_account_id=None):
-        """ShowManagedAccountRequest
+        r"""ShowManagedAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowManagedAccountRequest:
 
     @property
     def managed_account_id(self):
-        """Gets the managed_account_id of this ShowManagedAccountRequest.
+        r"""Gets the managed_account_id of this ShowManagedAccountRequest.
 
         纳管账号ID。
 
@@ -53,7 +53,7 @@ class ShowManagedAccountRequest:
 
     @managed_account_id.setter
     def managed_account_id(self, managed_account_id):
-        """Sets the managed_account_id of this ShowManagedAccountRequest.
+        r"""Sets the managed_account_id of this ShowManagedAccountRequest.
 
         纳管账号ID。
 

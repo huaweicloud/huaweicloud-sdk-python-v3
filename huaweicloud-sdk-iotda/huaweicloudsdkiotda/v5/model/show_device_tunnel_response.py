@@ -38,7 +38,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
     }
 
     def __init__(self, tunnel_id=None, device_id=None, create_time=None, closed_time=None, status=None, source_connect_state=None, device_connect_state=None):
-        """ShowDeviceTunnelResponse
+        r"""ShowDeviceTunnelResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def tunnel_id(self):
-        """Gets the tunnel_id of this ShowDeviceTunnelResponse.
+        r"""Gets the tunnel_id of this ShowDeviceTunnelResponse.
 
         隧道ID
 
@@ -97,7 +97,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @tunnel_id.setter
     def tunnel_id(self, tunnel_id):
-        """Sets the tunnel_id of this ShowDeviceTunnelResponse.
+        r"""Sets the tunnel_id of this ShowDeviceTunnelResponse.
 
         隧道ID
 
@@ -108,7 +108,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowDeviceTunnelResponse.
+        r"""Gets the device_id of this ShowDeviceTunnelResponse.
 
         设备ID
 
@@ -119,7 +119,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowDeviceTunnelResponse.
+        r"""Sets the device_id of this ShowDeviceTunnelResponse.
 
         设备ID
 
@@ -130,7 +130,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDeviceTunnelResponse.
+        r"""Gets the create_time of this ShowDeviceTunnelResponse.
 
         隧道创建时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -141,7 +141,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDeviceTunnelResponse.
+        r"""Sets the create_time of this ShowDeviceTunnelResponse.
 
         隧道创建时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -152,7 +152,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def closed_time(self):
-        """Gets the closed_time of this ShowDeviceTunnelResponse.
+        r"""Gets the closed_time of this ShowDeviceTunnelResponse.
 
         隧道更新时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -163,7 +163,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @closed_time.setter
     def closed_time(self, closed_time):
-        """Sets the closed_time of this ShowDeviceTunnelResponse.
+        r"""Sets the closed_time of this ShowDeviceTunnelResponse.
 
         隧道更新时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -174,7 +174,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDeviceTunnelResponse.
+        r"""Gets the status of this ShowDeviceTunnelResponse.
 
         隧道状态 CLOSED | OPEN
 
@@ -185,7 +185,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDeviceTunnelResponse.
+        r"""Sets the status of this ShowDeviceTunnelResponse.
 
         隧道状态 CLOSED | OPEN
 
@@ -196,7 +196,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def source_connect_state(self):
-        """Gets the source_connect_state of this ShowDeviceTunnelResponse.
+        r"""Gets the source_connect_state of this ShowDeviceTunnelResponse.
 
         :return: The source_connect_state of this ShowDeviceTunnelResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConnectState`
@@ -205,7 +205,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @source_connect_state.setter
     def source_connect_state(self, source_connect_state):
-        """Sets the source_connect_state of this ShowDeviceTunnelResponse.
+        r"""Sets the source_connect_state of this ShowDeviceTunnelResponse.
 
         :param source_connect_state: The source_connect_state of this ShowDeviceTunnelResponse.
         :type source_connect_state: :class:`huaweicloudsdkiotda.v5.ConnectState`
@@ -214,7 +214,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @property
     def device_connect_state(self):
-        """Gets the device_connect_state of this ShowDeviceTunnelResponse.
+        r"""Gets the device_connect_state of this ShowDeviceTunnelResponse.
 
         :return: The device_connect_state of this ShowDeviceTunnelResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConnectState`
@@ -223,7 +223,7 @@ class ShowDeviceTunnelResponse(SdkResponse):
 
     @device_connect_state.setter
     def device_connect_state(self, device_connect_state):
-        """Sets the device_connect_state of this ShowDeviceTunnelResponse.
+        r"""Sets the device_connect_state of this ShowDeviceTunnelResponse.
 
         :param device_connect_state: The device_connect_state of this ShowDeviceTunnelResponse.
         :type device_connect_state: :class:`huaweicloudsdkiotda.v5.ConnectState`

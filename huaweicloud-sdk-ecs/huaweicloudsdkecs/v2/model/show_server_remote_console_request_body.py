@@ -25,7 +25,7 @@ class ShowServerRemoteConsoleRequestBody:
     }
 
     def __init__(self, remote_console=None):
-        """ShowServerRemoteConsoleRequestBody
+        r"""ShowServerRemoteConsoleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerRemoteConsoleRequestBody:
 
     @property
     def remote_console(self):
-        """Gets the remote_console of this ShowServerRemoteConsoleRequestBody.
+        r"""Gets the remote_console of this ShowServerRemoteConsoleRequestBody.
 
         :return: The remote_console of this ShowServerRemoteConsoleRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`
@@ -51,7 +51,7 @@ class ShowServerRemoteConsoleRequestBody:
 
     @remote_console.setter
     def remote_console(self, remote_console):
-        """Sets the remote_console of this ShowServerRemoteConsoleRequestBody.
+        r"""Sets the remote_console of this ShowServerRemoteConsoleRequestBody.
 
         :param remote_console: The remote_console of this ShowServerRemoteConsoleRequestBody.
         :type remote_console: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`

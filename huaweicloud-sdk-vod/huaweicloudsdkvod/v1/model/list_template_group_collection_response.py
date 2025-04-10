@@ -28,7 +28,7 @@ class ListTemplateGroupCollectionResponse(SdkResponse):
     }
 
     def __init__(self, template_group_collection_list=None, total=None):
-        """ListTemplateGroupCollectionResponse
+        r"""ListTemplateGroupCollectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplateGroupCollectionResponse(SdkResponse):
 
     @property
     def template_group_collection_list(self):
-        """Gets the template_group_collection_list of this ListTemplateGroupCollectionResponse.
+        r"""Gets the template_group_collection_list of this ListTemplateGroupCollectionResponse.
 
         模板组集合信息<br/> 
 
@@ -62,7 +62,7 @@ class ListTemplateGroupCollectionResponse(SdkResponse):
 
     @template_group_collection_list.setter
     def template_group_collection_list(self, template_group_collection_list):
-        """Sets the template_group_collection_list of this ListTemplateGroupCollectionResponse.
+        r"""Sets the template_group_collection_list of this ListTemplateGroupCollectionResponse.
 
         模板组集合信息<br/> 
 
@@ -73,7 +73,7 @@ class ListTemplateGroupCollectionResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTemplateGroupCollectionResponse.
+        r"""Gets the total of this ListTemplateGroupCollectionResponse.
 
         总记录条数<br/> 
 
@@ -84,7 +84,7 @@ class ListTemplateGroupCollectionResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTemplateGroupCollectionResponse.
+        r"""Sets the total of this ListTemplateGroupCollectionResponse.
 
         总记录条数<br/> 
 

@@ -25,7 +25,7 @@ class ValidateWeakPasswordRequest:
     }
 
     def __init__(self, body=None):
-        """ValidateWeakPasswordRequest
+        r"""ValidateWeakPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ValidateWeakPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateWeakPasswordRequest.
+        r"""Gets the body of this ValidateWeakPasswordRequest.
 
         :return: The body of this ValidateWeakPasswordRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.WeakPasswordReq`
@@ -52,7 +52,7 @@ class ValidateWeakPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateWeakPasswordRequest.
+        r"""Sets the body of this ValidateWeakPasswordRequest.
 
         :param body: The body of this ValidateWeakPasswordRequest.
         :type body: :class:`huaweicloudsdkddm.v1.WeakPasswordReq`

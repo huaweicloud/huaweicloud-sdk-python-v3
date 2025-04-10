@@ -25,7 +25,7 @@ class ImportAssetRequestBody:
     }
 
     def __init__(self, excel_file=None):
-        """ImportAssetRequestBody
+        r"""ImportAssetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportAssetRequestBody:
 
     @property
     def excel_file(self):
-        """Gets the excel_file of this ImportAssetRequestBody.
+        r"""Gets the excel_file of this ImportAssetRequestBody.
 
         导入文件
 
@@ -53,7 +53,7 @@ class ImportAssetRequestBody:
 
     @excel_file.setter
     def excel_file(self, excel_file):
-        """Sets the excel_file of this ImportAssetRequestBody.
+        r"""Sets the excel_file of this ImportAssetRequestBody.
 
         导入文件
 

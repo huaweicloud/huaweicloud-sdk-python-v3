@@ -33,7 +33,7 @@ class AssociateIssueDetail:
     }
 
     def __init__(self, subject=None, issue_id=None, project=None, user=None, status=None):
-        """AssociateIssueDetail
+        r"""AssociateIssueDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AssociateIssueDetail:
 
     @property
     def subject(self):
-        """Gets the subject of this AssociateIssueDetail.
+        r"""Gets the subject of this AssociateIssueDetail.
 
         工作项标题
 
@@ -82,7 +82,7 @@ class AssociateIssueDetail:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this AssociateIssueDetail.
+        r"""Sets the subject of this AssociateIssueDetail.
 
         工作项标题
 
@@ -93,7 +93,7 @@ class AssociateIssueDetail:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this AssociateIssueDetail.
+        r"""Gets the issue_id of this AssociateIssueDetail.
 
         工作项ID
 
@@ -104,7 +104,7 @@ class AssociateIssueDetail:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this AssociateIssueDetail.
+        r"""Sets the issue_id of this AssociateIssueDetail.
 
         工作项ID
 
@@ -115,7 +115,7 @@ class AssociateIssueDetail:
 
     @property
     def project(self):
-        """Gets the project of this AssociateIssueDetail.
+        r"""Gets the project of this AssociateIssueDetail.
 
         :return: The project of this AssociateIssueDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -124,7 +124,7 @@ class AssociateIssueDetail:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this AssociateIssueDetail.
+        r"""Sets the project of this AssociateIssueDetail.
 
         :param project: The project of this AssociateIssueDetail.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -133,7 +133,7 @@ class AssociateIssueDetail:
 
     @property
     def user(self):
-        """Gets the user of this AssociateIssueDetail.
+        r"""Gets the user of this AssociateIssueDetail.
 
         :return: The user of this AssociateIssueDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -142,7 +142,7 @@ class AssociateIssueDetail:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this AssociateIssueDetail.
+        r"""Sets the user of this AssociateIssueDetail.
 
         :param user: The user of this AssociateIssueDetail.
         :type user: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -151,7 +151,7 @@ class AssociateIssueDetail:
 
     @property
     def status(self):
-        """Gets the status of this AssociateIssueDetail.
+        r"""Gets the status of this AssociateIssueDetail.
 
         :return: The status of this AssociateIssueDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusVo`
@@ -160,7 +160,7 @@ class AssociateIssueDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociateIssueDetail.
+        r"""Sets the status of this AssociateIssueDetail.
 
         :param status: The status of this AssociateIssueDetail.
         :type status: :class:`huaweicloudsdkprojectman.v4.StatusVo`

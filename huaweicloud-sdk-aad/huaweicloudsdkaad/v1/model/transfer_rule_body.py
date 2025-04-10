@@ -31,7 +31,7 @@ class TransferRuleBody:
     }
 
     def __init__(self, forward_protocol=None, forward_port=None, source_port=None, source_ip=None):
-        """TransferRuleBody
+        r"""TransferRuleBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TransferRuleBody:
 
     @property
     def forward_protocol(self):
-        """Gets the forward_protocol of this TransferRuleBody.
+        r"""Gets the forward_protocol of this TransferRuleBody.
 
         转发协议，tcp或udp
 
@@ -75,7 +75,7 @@ class TransferRuleBody:
 
     @forward_protocol.setter
     def forward_protocol(self, forward_protocol):
-        """Sets the forward_protocol of this TransferRuleBody.
+        r"""Sets the forward_protocol of this TransferRuleBody.
 
         转发协议，tcp或udp
 
@@ -86,7 +86,7 @@ class TransferRuleBody:
 
     @property
     def forward_port(self):
-        """Gets the forward_port of this TransferRuleBody.
+        r"""Gets the forward_port of this TransferRuleBody.
 
         转发端口
 
@@ -97,7 +97,7 @@ class TransferRuleBody:
 
     @forward_port.setter
     def forward_port(self, forward_port):
-        """Sets the forward_port of this TransferRuleBody.
+        r"""Sets the forward_port of this TransferRuleBody.
 
         转发端口
 
@@ -108,7 +108,7 @@ class TransferRuleBody:
 
     @property
     def source_port(self):
-        """Gets the source_port of this TransferRuleBody.
+        r"""Gets the source_port of this TransferRuleBody.
 
         源站端口
 
@@ -119,7 +119,7 @@ class TransferRuleBody:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this TransferRuleBody.
+        r"""Sets the source_port of this TransferRuleBody.
 
         源站端口
 
@@ -130,7 +130,7 @@ class TransferRuleBody:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this TransferRuleBody.
+        r"""Gets the source_ip of this TransferRuleBody.
 
         源站IP，多个IP用逗号隔开，限制20个IP
 
@@ -141,7 +141,7 @@ class TransferRuleBody:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this TransferRuleBody.
+        r"""Sets the source_ip of this TransferRuleBody.
 
         源站IP，多个IP用逗号隔开，限制20个IP
 

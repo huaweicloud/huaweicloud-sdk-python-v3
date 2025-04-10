@@ -29,7 +29,7 @@ class PicInfoNotify:
     }
 
     def __init__(self, index=None, id=None, share=None):
-        """PicInfoNotify
+        r"""PicInfoNotify
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PicInfoNotify:
 
     @property
     def index(self):
-        """Gets the index of this PicInfoNotify.
+        r"""Gets the index of this PicInfoNotify.
 
         多画面中每个画面的编号，编号从1开始。
 
@@ -68,7 +68,7 @@ class PicInfoNotify:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this PicInfoNotify.
+        r"""Sets the index of this PicInfoNotify.
 
         多画面中每个画面的编号，编号从1开始。
 
@@ -79,7 +79,7 @@ class PicInfoNotify:
 
     @property
     def id(self):
-        """Gets the id of this PicInfoNotify.
+        r"""Gets the id of this PicInfoNotify.
 
         每个画面中的与会者SIP号码。SIP号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)获取。
 
@@ -90,7 +90,7 @@ class PicInfoNotify:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PicInfoNotify.
+        r"""Sets the id of this PicInfoNotify.
 
         每个画面中的与会者SIP号码。SIP号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)获取。
 
@@ -101,7 +101,7 @@ class PicInfoNotify:
 
     @property
     def share(self):
-        """Gets the share of this PicInfoNotify.
+        r"""Gets the share of this PicInfoNotify.
 
         是否为辅流。 * 0： 不是辅流 * 1： 是辅流 
 
@@ -112,7 +112,7 @@ class PicInfoNotify:
 
     @share.setter
     def share(self, share):
-        """Sets the share of this PicInfoNotify.
+        r"""Sets the share of this PicInfoNotify.
 
         是否为辅流。 * 0： 不是辅流 * 1： 是辅流 
 

@@ -29,7 +29,7 @@ class CreateDigitalAssetRequest:
     }
 
     def __init__(self, x_app_user_id=None, x_mss_authorization=None, body=None):
-        """CreateDigitalAssetRequest
+        r"""CreateDigitalAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateDigitalAssetRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateDigitalAssetRequest.
+        r"""Gets the x_app_user_id of this CreateDigitalAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -68,7 +68,7 @@ class CreateDigitalAssetRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateDigitalAssetRequest.
+        r"""Sets the x_app_user_id of this CreateDigitalAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -79,7 +79,7 @@ class CreateDigitalAssetRequest:
 
     @property
     def x_mss_authorization(self):
-        """Gets the x_mss_authorization of this CreateDigitalAssetRequest.
+        r"""Gets the x_mss_authorization of this CreateDigitalAssetRequest.
 
         数字人内部token
 
@@ -90,7 +90,7 @@ class CreateDigitalAssetRequest:
 
     @x_mss_authorization.setter
     def x_mss_authorization(self, x_mss_authorization):
-        """Sets the x_mss_authorization of this CreateDigitalAssetRequest.
+        r"""Sets the x_mss_authorization of this CreateDigitalAssetRequest.
 
         数字人内部token
 
@@ -101,7 +101,7 @@ class CreateDigitalAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDigitalAssetRequest.
+        r"""Gets the body of this CreateDigitalAssetRequest.
 
         :return: The body of this CreateDigitalAssetRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetRequestBody`
@@ -110,7 +110,7 @@ class CreateDigitalAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDigitalAssetRequest.
+        r"""Sets the body of this CreateDigitalAssetRequest.
 
         :param body: The body of this CreateDigitalAssetRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetRequestBody`

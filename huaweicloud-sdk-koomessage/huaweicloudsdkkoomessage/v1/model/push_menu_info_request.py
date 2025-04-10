@@ -25,7 +25,7 @@ class PushMenuInfoRequest:
     }
 
     def __init__(self, menu_id=None):
-        """PushMenuInfoRequest
+        r"""PushMenuInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PushMenuInfoRequest:
 
     @property
     def menu_id(self):
-        """Gets the menu_id of this PushMenuInfoRequest.
+        r"""Gets the menu_id of this PushMenuInfoRequest.
 
         菜单ID。
 
@@ -53,7 +53,7 @@ class PushMenuInfoRequest:
 
     @menu_id.setter
     def menu_id(self, menu_id):
-        """Sets the menu_id of this PushMenuInfoRequest.
+        r"""Sets the menu_id of this PushMenuInfoRequest.
 
         菜单ID。
 

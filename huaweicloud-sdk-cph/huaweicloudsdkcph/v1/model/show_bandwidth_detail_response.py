@@ -28,7 +28,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, band_widths=None):
-        """ShowBandwidthDetailResponse
+        r"""ShowBandwidthDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowBandwidthDetailResponse.
+        r"""Gets the request_id of this ShowBandwidthDetailResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowBandwidthDetailResponse.
+        r"""Sets the request_id of this ShowBandwidthDetailResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
     @property
     def band_widths(self):
-        """Gets the band_widths of this ShowBandwidthDetailResponse.
+        r"""Gets the band_widths of this ShowBandwidthDetailResponse.
 
         带宽信息。
 
@@ -84,7 +84,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
     @band_widths.setter
     def band_widths(self, band_widths):
-        """Sets the band_widths of this ShowBandwidthDetailResponse.
+        r"""Sets the band_widths of this ShowBandwidthDetailResponse.
 
         带宽信息。
 

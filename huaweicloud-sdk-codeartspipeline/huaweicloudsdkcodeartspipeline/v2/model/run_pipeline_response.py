@@ -26,7 +26,7 @@ class RunPipelineResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_run_id=None):
-        """RunPipelineResponse
+        r"""RunPipelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunPipelineResponse(SdkResponse):
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this RunPipelineResponse.
+        r"""Gets the pipeline_run_id of this RunPipelineResponse.
 
         :return: The pipeline_run_id of this RunPipelineResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RunPipelineResponse(SdkResponse):
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this RunPipelineResponse.
+        r"""Sets the pipeline_run_id of this RunPipelineResponse.
 
         :param pipeline_run_id: The pipeline_run_id of this RunPipelineResponse.
         :type pipeline_run_id: str

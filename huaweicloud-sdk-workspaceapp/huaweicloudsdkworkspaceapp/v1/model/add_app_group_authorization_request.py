@@ -27,7 +27,7 @@ class AddAppGroupAuthorizationRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """AddAppGroupAuthorizationRequest
+        r"""AddAppGroupAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddAppGroupAuthorizationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AddAppGroupAuthorizationRequest.
+        r"""Gets the x_language of this AddAppGroupAuthorizationRequest.
 
         语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
@@ -61,7 +61,7 @@ class AddAppGroupAuthorizationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AddAppGroupAuthorizationRequest.
+        r"""Sets the x_language of this AddAppGroupAuthorizationRequest.
 
         语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
@@ -72,7 +72,7 @@ class AddAppGroupAuthorizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAppGroupAuthorizationRequest.
+        r"""Gets the body of this AddAppGroupAuthorizationRequest.
 
         :return: The body of this AddAppGroupAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppGroupAuthorizeReq`
@@ -81,7 +81,7 @@ class AddAppGroupAuthorizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAppGroupAuthorizationRequest.
+        r"""Sets the body of this AddAppGroupAuthorizationRequest.
 
         :param body: The body of this AddAppGroupAuthorizationRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AppGroupAuthorizeReq`

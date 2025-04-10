@@ -49,7 +49,7 @@ class TemplateRO:
     }
 
     def __init__(self, id=None, name=None, directory_id=None, dimension_id=None, description=None, sql_info=None, result_description=None, publish=None, origin_name=None, abnormal_table_template=None, user_define_version_name=None, version_num=None, status=None):
-        """TemplateRO
+        r"""TemplateRO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TemplateRO:
 
     @property
     def id(self):
-        """Gets the id of this TemplateRO.
+        r"""Gets the id of this TemplateRO.
 
         template id
 
@@ -138,7 +138,7 @@ class TemplateRO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateRO.
+        r"""Sets the id of this TemplateRO.
 
         template id
 
@@ -149,7 +149,7 @@ class TemplateRO:
 
     @property
     def name(self):
-        """Gets the name of this TemplateRO.
+        r"""Gets the name of this TemplateRO.
 
         template name
 
@@ -160,7 +160,7 @@ class TemplateRO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateRO.
+        r"""Sets the name of this TemplateRO.
 
         template name
 
@@ -171,7 +171,7 @@ class TemplateRO:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this TemplateRO.
+        r"""Gets the directory_id of this TemplateRO.
 
         目录
 
@@ -182,7 +182,7 @@ class TemplateRO:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this TemplateRO.
+        r"""Sets the directory_id of this TemplateRO.
 
         目录
 
@@ -193,7 +193,7 @@ class TemplateRO:
 
     @property
     def dimension_id(self):
-        """Gets the dimension_id of this TemplateRO.
+        r"""Gets the dimension_id of this TemplateRO.
 
         维度ID, 1:完整性,2:唯一性,3:及时性,4:有效性,5:准确性,6:一致性
 
@@ -204,7 +204,7 @@ class TemplateRO:
 
     @dimension_id.setter
     def dimension_id(self, dimension_id):
-        """Sets the dimension_id of this TemplateRO.
+        r"""Sets the dimension_id of this TemplateRO.
 
         维度ID, 1:完整性,2:唯一性,3:及时性,4:有效性,5:准确性,6:一致性
 
@@ -215,7 +215,7 @@ class TemplateRO:
 
     @property
     def description(self):
-        """Gets the description of this TemplateRO.
+        r"""Gets the description of this TemplateRO.
 
         描述
 
@@ -226,7 +226,7 @@ class TemplateRO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateRO.
+        r"""Sets the description of this TemplateRO.
 
         描述
 
@@ -237,7 +237,7 @@ class TemplateRO:
 
     @property
     def sql_info(self):
-        """Gets the sql_info of this TemplateRO.
+        r"""Gets the sql_info of this TemplateRO.
 
         模板中的sql内容
 
@@ -248,7 +248,7 @@ class TemplateRO:
 
     @sql_info.setter
     def sql_info(self, sql_info):
-        """Sets the sql_info of this TemplateRO.
+        r"""Sets the sql_info of this TemplateRO.
 
         模板中的sql内容
 
@@ -259,7 +259,7 @@ class TemplateRO:
 
     @property
     def result_description(self):
-        """Gets the result_description of this TemplateRO.
+        r"""Gets the result_description of this TemplateRO.
 
         结果说明
 
@@ -270,7 +270,7 @@ class TemplateRO:
 
     @result_description.setter
     def result_description(self, result_description):
-        """Sets the result_description of this TemplateRO.
+        r"""Sets the result_description of this TemplateRO.
 
         结果说明
 
@@ -281,7 +281,7 @@ class TemplateRO:
 
     @property
     def publish(self):
-        """Gets the publish of this TemplateRO.
+        r"""Gets the publish of this TemplateRO.
 
         是否是发布操作， true：发布新版本  false：普通的保存操作
 
@@ -292,7 +292,7 @@ class TemplateRO:
 
     @publish.setter
     def publish(self, publish):
-        """Sets the publish of this TemplateRO.
+        r"""Sets the publish of this TemplateRO.
 
         是否是发布操作， true：发布新版本  false：普通的保存操作
 
@@ -303,7 +303,7 @@ class TemplateRO:
 
     @property
     def origin_name(self):
-        """Gets the origin_name of this TemplateRO.
+        r"""Gets the origin_name of this TemplateRO.
 
         修改前的模板名
 
@@ -314,7 +314,7 @@ class TemplateRO:
 
     @origin_name.setter
     def origin_name(self, origin_name):
-        """Sets the origin_name of this TemplateRO.
+        r"""Sets the origin_name of this TemplateRO.
 
         修改前的模板名
 
@@ -325,7 +325,7 @@ class TemplateRO:
 
     @property
     def abnormal_table_template(self):
-        """Gets the abnormal_table_template of this TemplateRO.
+        r"""Gets the abnormal_table_template of this TemplateRO.
 
         异常表模板
 
@@ -336,7 +336,7 @@ class TemplateRO:
 
     @abnormal_table_template.setter
     def abnormal_table_template(self, abnormal_table_template):
-        """Sets the abnormal_table_template of this TemplateRO.
+        r"""Sets the abnormal_table_template of this TemplateRO.
 
         异常表模板
 
@@ -347,7 +347,7 @@ class TemplateRO:
 
     @property
     def user_define_version_name(self):
-        """Gets the user_define_version_name of this TemplateRO.
+        r"""Gets the user_define_version_name of this TemplateRO.
 
         用户自定义版本名
 
@@ -358,7 +358,7 @@ class TemplateRO:
 
     @user_define_version_name.setter
     def user_define_version_name(self, user_define_version_name):
-        """Sets the user_define_version_name of this TemplateRO.
+        r"""Sets the user_define_version_name of this TemplateRO.
 
         用户自定义版本名
 
@@ -369,7 +369,7 @@ class TemplateRO:
 
     @property
     def version_num(self):
-        """Gets the version_num of this TemplateRO.
+        r"""Gets the version_num of this TemplateRO.
 
         获取模板信息时候的版本号
 
@@ -380,7 +380,7 @@ class TemplateRO:
 
     @version_num.setter
     def version_num(self, version_num):
-        """Sets the version_num of this TemplateRO.
+        r"""Sets the version_num of this TemplateRO.
 
         获取模板信息时候的版本号
 
@@ -391,7 +391,7 @@ class TemplateRO:
 
     @property
     def status(self):
-        """Gets the status of this TemplateRO.
+        r"""Gets the status of this TemplateRO.
 
         规则模板状态,0表示下线1表示已发布
 
@@ -402,7 +402,7 @@ class TemplateRO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TemplateRO.
+        r"""Sets the status of this TemplateRO.
 
         规则模板状态,0表示下线1表示已发布
 

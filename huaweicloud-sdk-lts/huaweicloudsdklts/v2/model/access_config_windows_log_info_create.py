@@ -29,7 +29,7 @@ class AccessConfigWindowsLogInfoCreate:
     }
 
     def __init__(self, categorys=None, time_offset=None, event_level=None):
-        """AccessConfigWindowsLogInfoCreate
+        r"""AccessConfigWindowsLogInfoCreate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     @property
     def categorys(self):
-        """Gets the categorys of this AccessConfigWindowsLogInfoCreate.
+        r"""Gets the categorys of this AccessConfigWindowsLogInfoCreate.
 
         采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
 
@@ -65,7 +65,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     @categorys.setter
     def categorys(self, categorys):
-        """Sets the categorys of this AccessConfigWindowsLogInfoCreate.
+        r"""Sets the categorys of this AccessConfigWindowsLogInfoCreate.
 
         采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
 
@@ -76,7 +76,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     @property
     def time_offset(self):
-        """Gets the time_offset of this AccessConfigWindowsLogInfoCreate.
+        r"""Gets the time_offset of this AccessConfigWindowsLogInfoCreate.
 
         :return: The time_offset of this AccessConfigWindowsLogInfoCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffset`
@@ -85,7 +85,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     @time_offset.setter
     def time_offset(self, time_offset):
-        """Sets the time_offset of this AccessConfigWindowsLogInfoCreate.
+        r"""Sets the time_offset of this AccessConfigWindowsLogInfoCreate.
 
         :param time_offset: The time_offset of this AccessConfigWindowsLogInfoCreate.
         :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffset`
@@ -94,7 +94,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     @property
     def event_level(self):
-        """Gets the event_level of this AccessConfigWindowsLogInfoCreate.
+        r"""Gets the event_level of this AccessConfigWindowsLogInfoCreate.
 
         事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
 
@@ -105,7 +105,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this AccessConfigWindowsLogInfoCreate.
+        r"""Sets the event_level of this AccessConfigWindowsLogInfoCreate.
 
         事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
 

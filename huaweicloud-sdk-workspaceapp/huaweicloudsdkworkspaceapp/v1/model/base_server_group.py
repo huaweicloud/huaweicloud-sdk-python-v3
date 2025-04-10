@@ -67,7 +67,7 @@ class BaseServerGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None, enterprise_project_id=None, primary_server_group_ids=None, secondary_server_group_ids=None, server_group_status=None, site_type=None, site_id=None):
-        """BaseServerGroup
+        r"""BaseServerGroup
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class BaseServerGroup:
 
     @property
     def id(self):
-        """Gets the id of this BaseServerGroup.
+        r"""Gets the id of this BaseServerGroup.
 
         服务器组的唯一标识。
 
@@ -201,7 +201,7 @@ class BaseServerGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseServerGroup.
+        r"""Sets the id of this BaseServerGroup.
 
         服务器组的唯一标识。
 
@@ -212,7 +212,7 @@ class BaseServerGroup:
 
     @property
     def name(self):
-        """Gets the name of this BaseServerGroup.
+        r"""Gets the name of this BaseServerGroup.
 
         服务器组名称。
 
@@ -223,7 +223,7 @@ class BaseServerGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseServerGroup.
+        r"""Sets the name of this BaseServerGroup.
 
         服务器组名称。
 
@@ -234,7 +234,7 @@ class BaseServerGroup:
 
     @property
     def description(self):
-        """Gets the description of this BaseServerGroup.
+        r"""Gets the description of this BaseServerGroup.
 
         服务器组描述。
 
@@ -245,7 +245,7 @@ class BaseServerGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseServerGroup.
+        r"""Sets the description of this BaseServerGroup.
 
         服务器组描述。
 
@@ -256,7 +256,7 @@ class BaseServerGroup:
 
     @property
     def image_id(self):
-        """Gets the image_id of this BaseServerGroup.
+        r"""Gets the image_id of this BaseServerGroup.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -267,7 +267,7 @@ class BaseServerGroup:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this BaseServerGroup.
+        r"""Sets the image_id of this BaseServerGroup.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -278,7 +278,7 @@ class BaseServerGroup:
 
     @property
     def os_type(self):
-        """Gets the os_type of this BaseServerGroup.
+        r"""Gets the os_type of this BaseServerGroup.
 
         :return: The os_type of this BaseServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -287,7 +287,7 @@ class BaseServerGroup:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this BaseServerGroup.
+        r"""Sets the os_type of this BaseServerGroup.
 
         :param os_type: The os_type of this BaseServerGroup.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -296,7 +296,7 @@ class BaseServerGroup:
 
     @property
     def product_id(self):
-        """Gets the product_id of this BaseServerGroup.
+        r"""Gets the product_id of this BaseServerGroup.
 
         产品id。
 
@@ -307,7 +307,7 @@ class BaseServerGroup:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this BaseServerGroup.
+        r"""Sets the product_id of this BaseServerGroup.
 
         产品id。
 
@@ -318,7 +318,7 @@ class BaseServerGroup:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this BaseServerGroup.
+        r"""Gets the subnet_id of this BaseServerGroup.
 
         网卡对应的子网ID。
 
@@ -329,7 +329,7 @@ class BaseServerGroup:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this BaseServerGroup.
+        r"""Sets the subnet_id of this BaseServerGroup.
 
         网卡对应的子网ID。
 
@@ -340,7 +340,7 @@ class BaseServerGroup:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this BaseServerGroup.
+        r"""Gets the system_disk_type of this BaseServerGroup.
 
         :return: The system_disk_type of this BaseServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -349,7 +349,7 @@ class BaseServerGroup:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this BaseServerGroup.
+        r"""Sets the system_disk_type of this BaseServerGroup.
 
         :param system_disk_type: The system_disk_type of this BaseServerGroup.
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -358,7 +358,7 @@ class BaseServerGroup:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this BaseServerGroup.
+        r"""Gets the system_disk_size of this BaseServerGroup.
 
         磁盘容量，单位GB。
 
@@ -369,7 +369,7 @@ class BaseServerGroup:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this BaseServerGroup.
+        r"""Sets the system_disk_size of this BaseServerGroup.
 
         磁盘容量，单位GB。
 
@@ -380,7 +380,7 @@ class BaseServerGroup:
 
     @property
     def is_vdi(self):
-        """Gets the is_vdi of this BaseServerGroup.
+        r"""Gets the is_vdi of this BaseServerGroup.
 
         是否为vdi单会话模式。
 
@@ -391,7 +391,7 @@ class BaseServerGroup:
 
     @is_vdi.setter
     def is_vdi(self, is_vdi):
-        """Sets the is_vdi of this BaseServerGroup.
+        r"""Sets the is_vdi of this BaseServerGroup.
 
         是否为vdi单会话模式。
 
@@ -402,7 +402,7 @@ class BaseServerGroup:
 
     @property
     def extra_session_type(self):
-        """Gets the extra_session_type of this BaseServerGroup.
+        r"""Gets the extra_session_type of this BaseServerGroup.
 
         :return: The extra_session_type of this BaseServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -411,7 +411,7 @@ class BaseServerGroup:
 
     @extra_session_type.setter
     def extra_session_type(self, extra_session_type):
-        """Sets the extra_session_type of this BaseServerGroup.
+        r"""Sets the extra_session_type of this BaseServerGroup.
 
         :param extra_session_type: The extra_session_type of this BaseServerGroup.
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -420,7 +420,7 @@ class BaseServerGroup:
 
     @property
     def extra_session_size(self):
-        """Gets the extra_session_size of this BaseServerGroup.
+        r"""Gets the extra_session_size of this BaseServerGroup.
 
         付费会话个数。
 
@@ -431,7 +431,7 @@ class BaseServerGroup:
 
     @extra_session_size.setter
     def extra_session_size(self, extra_session_size):
-        """Sets the extra_session_size of this BaseServerGroup.
+        r"""Sets the extra_session_size of this BaseServerGroup.
 
         付费会话个数。
 
@@ -442,7 +442,7 @@ class BaseServerGroup:
 
     @property
     def app_type(self):
-        """Gets the app_type of this BaseServerGroup.
+        r"""Gets the app_type of this BaseServerGroup.
 
         :return: The app_type of this BaseServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -451,7 +451,7 @@ class BaseServerGroup:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this BaseServerGroup.
+        r"""Sets the app_type of this BaseServerGroup.
 
         :param app_type: The app_type of this BaseServerGroup.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -460,7 +460,7 @@ class BaseServerGroup:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BaseServerGroup.
+        r"""Gets the create_time of this BaseServerGroup.
 
         服务器组创建时间
 
@@ -471,7 +471,7 @@ class BaseServerGroup:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BaseServerGroup.
+        r"""Sets the create_time of this BaseServerGroup.
 
         服务器组创建时间
 
@@ -482,7 +482,7 @@ class BaseServerGroup:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BaseServerGroup.
+        r"""Gets the update_time of this BaseServerGroup.
 
         服务器组更新时间
 
@@ -493,7 +493,7 @@ class BaseServerGroup:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BaseServerGroup.
+        r"""Sets the update_time of this BaseServerGroup.
 
         服务器组更新时间
 
@@ -504,7 +504,7 @@ class BaseServerGroup:
 
     @property
     def storage_mount_policy(self):
-        """Gets the storage_mount_policy of this BaseServerGroup.
+        r"""Gets the storage_mount_policy of this BaseServerGroup.
 
         :return: The storage_mount_policy of this BaseServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -513,7 +513,7 @@ class BaseServerGroup:
 
     @storage_mount_policy.setter
     def storage_mount_policy(self, storage_mount_policy):
-        """Sets the storage_mount_policy of this BaseServerGroup.
+        r"""Sets the storage_mount_policy of this BaseServerGroup.
 
         :param storage_mount_policy: The storage_mount_policy of this BaseServerGroup.
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -522,7 +522,7 @@ class BaseServerGroup:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BaseServerGroup.
+        r"""Gets the enterprise_project_id of this BaseServerGroup.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -533,7 +533,7 @@ class BaseServerGroup:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BaseServerGroup.
+        r"""Sets the enterprise_project_id of this BaseServerGroup.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -544,7 +544,7 @@ class BaseServerGroup:
 
     @property
     def primary_server_group_ids(self):
-        """Gets the primary_server_group_ids of this BaseServerGroup.
+        r"""Gets the primary_server_group_ids of this BaseServerGroup.
 
         主服务器组id列表。
 
@@ -555,7 +555,7 @@ class BaseServerGroup:
 
     @primary_server_group_ids.setter
     def primary_server_group_ids(self, primary_server_group_ids):
-        """Sets the primary_server_group_ids of this BaseServerGroup.
+        r"""Sets the primary_server_group_ids of this BaseServerGroup.
 
         主服务器组id列表。
 
@@ -566,7 +566,7 @@ class BaseServerGroup:
 
     @property
     def secondary_server_group_ids(self):
-        """Gets the secondary_server_group_ids of this BaseServerGroup.
+        r"""Gets the secondary_server_group_ids of this BaseServerGroup.
 
         备服务器组id列表。
 
@@ -577,7 +577,7 @@ class BaseServerGroup:
 
     @secondary_server_group_ids.setter
     def secondary_server_group_ids(self, secondary_server_group_ids):
-        """Sets the secondary_server_group_ids of this BaseServerGroup.
+        r"""Sets the secondary_server_group_ids of this BaseServerGroup.
 
         备服务器组id列表。
 
@@ -588,7 +588,7 @@ class BaseServerGroup:
 
     @property
     def server_group_status(self):
-        """Gets the server_group_status of this BaseServerGroup.
+        r"""Gets the server_group_status of this BaseServerGroup.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -599,7 +599,7 @@ class BaseServerGroup:
 
     @server_group_status.setter
     def server_group_status(self, server_group_status):
-        """Sets the server_group_status of this BaseServerGroup.
+        r"""Sets the server_group_status of this BaseServerGroup.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -610,7 +610,7 @@ class BaseServerGroup:
 
     @property
     def site_type(self):
-        """Gets the site_type of this BaseServerGroup.
+        r"""Gets the site_type of this BaseServerGroup.
 
         站点类型 - CENTER/IES
 
@@ -621,7 +621,7 @@ class BaseServerGroup:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this BaseServerGroup.
+        r"""Sets the site_type of this BaseServerGroup.
 
         站点类型 - CENTER/IES
 
@@ -632,7 +632,7 @@ class BaseServerGroup:
 
     @property
     def site_id(self):
-        """Gets the site_id of this BaseServerGroup.
+        r"""Gets the site_id of this BaseServerGroup.
 
         站点id
 
@@ -643,7 +643,7 @@ class BaseServerGroup:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this BaseServerGroup.
+        r"""Sets the site_id of this BaseServerGroup.
 
         站点id
 

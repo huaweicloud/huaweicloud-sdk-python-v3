@@ -27,7 +27,7 @@ class ListKernelPluginsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ListKernelPluginsRequest
+        r"""ListKernelPluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListKernelPluginsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListKernelPluginsRequest.
+        r"""Gets the x_language of this ListKernelPluginsRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ListKernelPluginsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListKernelPluginsRequest.
+        r"""Sets the x_language of this ListKernelPluginsRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ListKernelPluginsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListKernelPluginsRequest.
+        r"""Gets the instance_id of this ListKernelPluginsRequest.
 
         查询实例已安装的插件列表的实例ID
 
@@ -82,7 +82,7 @@ class ListKernelPluginsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListKernelPluginsRequest.
+        r"""Sets the instance_id of this ListKernelPluginsRequest.
 
         查询实例已安装的插件列表的实例ID
 

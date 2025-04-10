@@ -27,7 +27,7 @@ class ShowBlockchainFlavorsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ShowBlockchainFlavorsRequest
+        r"""ShowBlockchainFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowBlockchainFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowBlockchainFlavorsRequest.
+        r"""Gets the limit of this ShowBlockchainFlavorsRequest.
 
         取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
 
@@ -61,7 +61,7 @@ class ShowBlockchainFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowBlockchainFlavorsRequest.
+        r"""Sets the limit of this ShowBlockchainFlavorsRequest.
 
         取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
 
@@ -72,7 +72,7 @@ class ShowBlockchainFlavorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowBlockchainFlavorsRequest.
+        r"""Gets the offset of this ShowBlockchainFlavorsRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -83,7 +83,7 @@ class ShowBlockchainFlavorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowBlockchainFlavorsRequest.
+        r"""Sets the offset of this ShowBlockchainFlavorsRequest.
 
         分页查询起始位置，为非负整数。
 

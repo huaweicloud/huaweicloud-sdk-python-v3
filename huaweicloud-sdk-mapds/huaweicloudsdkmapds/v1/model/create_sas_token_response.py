@@ -30,7 +30,7 @@ class CreateSasTokenResponse(SdkResponse):
     }
 
     def __init__(self, client_id=None, expiry=None, signature=None):
-        """CreateSasTokenResponse
+        r"""CreateSasTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateSasTokenResponse(SdkResponse):
 
     @property
     def client_id(self):
-        """Gets the client_id of this CreateSasTokenResponse.
+        r"""Gets the client_id of this CreateSasTokenResponse.
 
         API key的client_id
 
@@ -69,7 +69,7 @@ class CreateSasTokenResponse(SdkResponse):
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this CreateSasTokenResponse.
+        r"""Sets the client_id of this CreateSasTokenResponse.
 
         API key的client_id
 
@@ -80,7 +80,7 @@ class CreateSasTokenResponse(SdkResponse):
 
     @property
     def expiry(self):
-        """Gets the expiry of this CreateSasTokenResponse.
+        r"""Gets the expiry of this CreateSasTokenResponse.
 
         超期时间，UTC格式
 
@@ -91,7 +91,7 @@ class CreateSasTokenResponse(SdkResponse):
 
     @expiry.setter
     def expiry(self, expiry):
-        """Sets the expiry of this CreateSasTokenResponse.
+        r"""Sets the expiry of this CreateSasTokenResponse.
 
         超期时间，UTC格式
 
@@ -102,7 +102,7 @@ class CreateSasTokenResponse(SdkResponse):
 
     @property
     def signature(self):
-        """Gets the signature of this CreateSasTokenResponse.
+        r"""Gets the signature of this CreateSasTokenResponse.
 
         签名字符串
 
@@ -113,7 +113,7 @@ class CreateSasTokenResponse(SdkResponse):
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this CreateSasTokenResponse.
+        r"""Sets the signature of this CreateSasTokenResponse.
 
         签名字符串
 

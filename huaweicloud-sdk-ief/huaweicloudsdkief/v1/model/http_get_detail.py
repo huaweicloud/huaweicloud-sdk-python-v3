@@ -31,7 +31,7 @@ class HttpGetDetail:
     }
 
     def __init__(self, path=None, port=None, host=None, scheme=None):
-        """HttpGetDetail
+        r"""HttpGetDetail
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class HttpGetDetail:
 
     @property
     def path(self):
-        """Gets the path of this HttpGetDetail.
+        r"""Gets the path of this HttpGetDetail.
 
         必须要以/开头，构造结果为：协议类型://主机地址:端口路径
 
@@ -73,7 +73,7 @@ class HttpGetDetail:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this HttpGetDetail.
+        r"""Sets the path of this HttpGetDetail.
 
         必须要以/开头，构造结果为：协议类型://主机地址:端口路径
 
@@ -84,7 +84,7 @@ class HttpGetDetail:
 
     @property
     def port(self):
-        """Gets the port of this HttpGetDetail.
+        r"""Gets the port of this HttpGetDetail.
 
         探测的http端口，1到65535之间的整数
 
@@ -95,7 +95,7 @@ class HttpGetDetail:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HttpGetDetail.
+        r"""Sets the port of this HttpGetDetail.
 
         探测的http端口，1到65535之间的整数
 
@@ -106,7 +106,7 @@ class HttpGetDetail:
 
     @property
     def host(self):
-        """Gets the host of this HttpGetDetail.
+        r"""Gets the host of this HttpGetDetail.
 
         请求的主机地址，默认为容器IP
 
@@ -117,7 +117,7 @@ class HttpGetDetail:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this HttpGetDetail.
+        r"""Sets the host of this HttpGetDetail.
 
         请求的主机地址，默认为容器IP
 
@@ -128,7 +128,7 @@ class HttpGetDetail:
 
     @property
     def scheme(self):
-        """Gets the scheme of this HttpGetDetail.
+        r"""Gets the scheme of this HttpGetDetail.
 
         协议类型，HTTP或HTTPS，默认HTTP
 
@@ -139,7 +139,7 @@ class HttpGetDetail:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this HttpGetDetail.
+        r"""Sets the scheme of this HttpGetDetail.
 
         协议类型，HTTP或HTTPS，默认HTTP
 

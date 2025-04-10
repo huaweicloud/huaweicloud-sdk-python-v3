@@ -27,7 +27,7 @@ class MysqlAvailableZoneInfo:
     }
 
     def __init__(self, code=None, description=None):
-        """MysqlAvailableZoneInfo
+        r"""MysqlAvailableZoneInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MysqlAvailableZoneInfo:
 
     @property
     def code(self):
-        """Gets the code of this MysqlAvailableZoneInfo.
+        r"""Gets the code of this MysqlAvailableZoneInfo.
 
         可用区编码。
 
@@ -61,7 +61,7 @@ class MysqlAvailableZoneInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this MysqlAvailableZoneInfo.
+        r"""Sets the code of this MysqlAvailableZoneInfo.
 
         可用区编码。
 
@@ -72,7 +72,7 @@ class MysqlAvailableZoneInfo:
 
     @property
     def description(self):
-        """Gets the description of this MysqlAvailableZoneInfo.
+        r"""Gets the description of this MysqlAvailableZoneInfo.
 
         可用区描述。
 
@@ -83,7 +83,7 @@ class MysqlAvailableZoneInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MysqlAvailableZoneInfo.
+        r"""Sets the description of this MysqlAvailableZoneInfo.
 
         可用区描述。
 

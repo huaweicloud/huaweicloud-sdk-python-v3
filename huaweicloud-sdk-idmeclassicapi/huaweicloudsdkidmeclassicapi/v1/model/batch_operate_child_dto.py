@@ -27,7 +27,7 @@ class BatchOperateChildDTO:
     }
 
     def __init__(self, child_list=None, parent_id=None):
-        """BatchOperateChildDTO
+        r"""BatchOperateChildDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchOperateChildDTO:
 
     @property
     def child_list(self):
-        """Gets the child_list of this BatchOperateChildDTO.
+        r"""Gets the child_list of this BatchOperateChildDTO.
 
         **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -59,7 +59,7 @@ class BatchOperateChildDTO:
 
     @child_list.setter
     def child_list(self, child_list):
-        """Sets the child_list of this BatchOperateChildDTO.
+        r"""Sets the child_list of this BatchOperateChildDTO.
 
         **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -70,7 +70,7 @@ class BatchOperateChildDTO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this BatchOperateChildDTO.
+        r"""Gets the parent_id of this BatchOperateChildDTO.
 
         **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -81,7 +81,7 @@ class BatchOperateChildDTO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this BatchOperateChildDTO.
+        r"""Sets the parent_id of this BatchOperateChildDTO.
 
         **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

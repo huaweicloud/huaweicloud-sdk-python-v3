@@ -27,7 +27,7 @@ class UpdateUserInfoRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateUserInfoRequest
+        r"""UpdateUserInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateUserInfoRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateUserInfoRequest.
+        r"""Gets the user_id of this UpdateUserInfoRequest.
 
         用户ID。
 
@@ -60,7 +60,7 @@ class UpdateUserInfoRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateUserInfoRequest.
+        r"""Sets the user_id of this UpdateUserInfoRequest.
 
         用户ID。
 
@@ -71,7 +71,7 @@ class UpdateUserInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserInfoRequest.
+        r"""Gets the body of this UpdateUserInfoRequest.
 
         :return: The body of this UpdateUserInfoRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EditUserReq`
@@ -80,7 +80,7 @@ class UpdateUserInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserInfoRequest.
+        r"""Sets the body of this UpdateUserInfoRequest.
 
         :param body: The body of this UpdateUserInfoRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EditUserReq`

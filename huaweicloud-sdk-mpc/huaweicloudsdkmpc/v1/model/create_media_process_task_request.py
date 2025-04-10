@@ -25,7 +25,7 @@ class CreateMediaProcessTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMediaProcessTaskRequest
+        r"""CreateMediaProcessTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMediaProcessTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMediaProcessTaskRequest.
+        r"""Gets the body of this CreateMediaProcessTaskRequest.
 
         :return: The body of this CreateMediaProcessTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`
@@ -52,7 +52,7 @@ class CreateMediaProcessTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMediaProcessTaskRequest.
+        r"""Sets the body of this CreateMediaProcessTaskRequest.
 
         :param body: The body of this CreateMediaProcessTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`

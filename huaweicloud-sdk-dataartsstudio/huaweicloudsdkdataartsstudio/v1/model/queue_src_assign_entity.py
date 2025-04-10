@@ -53,7 +53,7 @@ class QueueSrcAssignEntity:
     }
 
     def __init__(self, id=None, source_type=None, queue_name=None, queue_type=None, queue_attr=None, conn_id=None, conn_name=None, cluster_id=None, cluster_name=None, create_time=None, create_user=None, update_time=None, update_user=None, project_id=None, description=None):
-        """QueueSrcAssignEntity
+        r"""QueueSrcAssignEntity
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class QueueSrcAssignEntity:
 
     @property
     def id(self):
-        """Gets the id of this QueueSrcAssignEntity.
+        r"""Gets the id of this QueueSrcAssignEntity.
 
         队列资源id。
 
@@ -152,7 +152,7 @@ class QueueSrcAssignEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueueSrcAssignEntity.
+        r"""Sets the id of this QueueSrcAssignEntity.
 
         队列资源id。
 
@@ -163,7 +163,7 @@ class QueueSrcAssignEntity:
 
     @property
     def source_type(self):
-        """Gets the source_type of this QueueSrcAssignEntity.
+        r"""Gets the source_type of this QueueSrcAssignEntity.
 
         队列资源服务名称。
 
@@ -174,7 +174,7 @@ class QueueSrcAssignEntity:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this QueueSrcAssignEntity.
+        r"""Sets the source_type of this QueueSrcAssignEntity.
 
         队列资源服务名称。
 
@@ -185,7 +185,7 @@ class QueueSrcAssignEntity:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this QueueSrcAssignEntity.
+        r"""Gets the queue_name of this QueueSrcAssignEntity.
 
         队列名称。
 
@@ -196,7 +196,7 @@ class QueueSrcAssignEntity:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this QueueSrcAssignEntity.
+        r"""Sets the queue_name of this QueueSrcAssignEntity.
 
         队列名称。
 
@@ -207,7 +207,7 @@ class QueueSrcAssignEntity:
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this QueueSrcAssignEntity.
+        r"""Gets the queue_type of this QueueSrcAssignEntity.
 
         队列类型。
 
@@ -218,7 +218,7 @@ class QueueSrcAssignEntity:
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this QueueSrcAssignEntity.
+        r"""Sets the queue_type of this QueueSrcAssignEntity.
 
         队列类型。
 
@@ -229,7 +229,7 @@ class QueueSrcAssignEntity:
 
     @property
     def queue_attr(self):
-        """Gets the queue_attr of this QueueSrcAssignEntity.
+        r"""Gets the queue_attr of this QueueSrcAssignEntity.
 
         队列属性(0:默认,1:实时队列,2:离线队列), 当前只有yarn队列涉及。
 
@@ -240,7 +240,7 @@ class QueueSrcAssignEntity:
 
     @queue_attr.setter
     def queue_attr(self, queue_attr):
-        """Sets the queue_attr of this QueueSrcAssignEntity.
+        r"""Sets the queue_attr of this QueueSrcAssignEntity.
 
         队列属性(0:默认,1:实时队列,2:离线队列), 当前只有yarn队列涉及。
 
@@ -251,7 +251,7 @@ class QueueSrcAssignEntity:
 
     @property
     def conn_id(self):
-        """Gets the conn_id of this QueueSrcAssignEntity.
+        r"""Gets the conn_id of this QueueSrcAssignEntity.
 
         数据连接id。
 
@@ -262,7 +262,7 @@ class QueueSrcAssignEntity:
 
     @conn_id.setter
     def conn_id(self, conn_id):
-        """Sets the conn_id of this QueueSrcAssignEntity.
+        r"""Sets the conn_id of this QueueSrcAssignEntity.
 
         数据连接id。
 
@@ -273,7 +273,7 @@ class QueueSrcAssignEntity:
 
     @property
     def conn_name(self):
-        """Gets the conn_name of this QueueSrcAssignEntity.
+        r"""Gets the conn_name of this QueueSrcAssignEntity.
 
         数据连接名称。
 
@@ -284,7 +284,7 @@ class QueueSrcAssignEntity:
 
     @conn_name.setter
     def conn_name(self, conn_name):
-        """Sets the conn_name of this QueueSrcAssignEntity.
+        r"""Sets the conn_name of this QueueSrcAssignEntity.
 
         数据连接名称。
 
@@ -295,7 +295,7 @@ class QueueSrcAssignEntity:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this QueueSrcAssignEntity.
+        r"""Gets the cluster_id of this QueueSrcAssignEntity.
 
         集群id。
 
@@ -306,7 +306,7 @@ class QueueSrcAssignEntity:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this QueueSrcAssignEntity.
+        r"""Sets the cluster_id of this QueueSrcAssignEntity.
 
         集群id。
 
@@ -317,7 +317,7 @@ class QueueSrcAssignEntity:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this QueueSrcAssignEntity.
+        r"""Gets the cluster_name of this QueueSrcAssignEntity.
 
         集群名称。
 
@@ -328,7 +328,7 @@ class QueueSrcAssignEntity:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this QueueSrcAssignEntity.
+        r"""Sets the cluster_name of this QueueSrcAssignEntity.
 
         集群名称。
 
@@ -339,7 +339,7 @@ class QueueSrcAssignEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueueSrcAssignEntity.
+        r"""Gets the create_time of this QueueSrcAssignEntity.
 
         队列加入此空间的时间。
 
@@ -350,7 +350,7 @@ class QueueSrcAssignEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueueSrcAssignEntity.
+        r"""Sets the create_time of this QueueSrcAssignEntity.
 
         队列加入此空间的时间。
 
@@ -361,7 +361,7 @@ class QueueSrcAssignEntity:
 
     @property
     def create_user(self):
-        """Gets the create_user of this QueueSrcAssignEntity.
+        r"""Gets the create_user of this QueueSrcAssignEntity.
 
         队列加入此的操作人。
 
@@ -372,7 +372,7 @@ class QueueSrcAssignEntity:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this QueueSrcAssignEntity.
+        r"""Sets the create_user of this QueueSrcAssignEntity.
 
         队列加入此的操作人。
 
@@ -383,7 +383,7 @@ class QueueSrcAssignEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueueSrcAssignEntity.
+        r"""Gets the update_time of this QueueSrcAssignEntity.
 
         当前空间下管理的队列更新时间。
 
@@ -394,7 +394,7 @@ class QueueSrcAssignEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueueSrcAssignEntity.
+        r"""Sets the update_time of this QueueSrcAssignEntity.
 
         当前空间下管理的队列更新时间。
 
@@ -405,7 +405,7 @@ class QueueSrcAssignEntity:
 
     @property
     def update_user(self):
-        """Gets the update_user of this QueueSrcAssignEntity.
+        r"""Gets the update_user of this QueueSrcAssignEntity.
 
         当前空间下管理的队列更新人。
 
@@ -416,7 +416,7 @@ class QueueSrcAssignEntity:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this QueueSrcAssignEntity.
+        r"""Sets the update_user of this QueueSrcAssignEntity.
 
         当前空间下管理的队列更新人。
 
@@ -427,7 +427,7 @@ class QueueSrcAssignEntity:
 
     @property
     def project_id(self):
-        """Gets the project_id of this QueueSrcAssignEntity.
+        r"""Gets the project_id of this QueueSrcAssignEntity.
 
         项目id。
 
@@ -438,7 +438,7 @@ class QueueSrcAssignEntity:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this QueueSrcAssignEntity.
+        r"""Sets the project_id of this QueueSrcAssignEntity.
 
         项目id。
 
@@ -449,7 +449,7 @@ class QueueSrcAssignEntity:
 
     @property
     def description(self):
-        """Gets the description of this QueueSrcAssignEntity.
+        r"""Gets the description of this QueueSrcAssignEntity.
 
         当前空间分配资源附加的描述信息。
 
@@ -460,7 +460,7 @@ class QueueSrcAssignEntity:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueueSrcAssignEntity.
+        r"""Sets the description of this QueueSrcAssignEntity.
 
         当前空间分配资源附加的描述信息。
 

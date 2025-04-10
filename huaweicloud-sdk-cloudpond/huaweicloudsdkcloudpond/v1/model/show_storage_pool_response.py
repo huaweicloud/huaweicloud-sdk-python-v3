@@ -26,7 +26,7 @@ class ShowStoragePoolResponse(SdkResponse):
     }
 
     def __init__(self, storage_pool=None):
-        """ShowStoragePoolResponse
+        r"""ShowStoragePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowStoragePoolResponse(SdkResponse):
 
     @property
     def storage_pool(self):
-        """Gets the storage_pool of this ShowStoragePoolResponse.
+        r"""Gets the storage_pool of this ShowStoragePoolResponse.
 
         :return: The storage_pool of this ShowStoragePoolResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.StoragePool`
@@ -53,7 +53,7 @@ class ShowStoragePoolResponse(SdkResponse):
 
     @storage_pool.setter
     def storage_pool(self, storage_pool):
-        """Sets the storage_pool of this ShowStoragePoolResponse.
+        r"""Sets the storage_pool of this ShowStoragePoolResponse.
 
         :param storage_pool: The storage_pool of this ShowStoragePoolResponse.
         :type storage_pool: :class:`huaweicloudsdkcloudpond.v1.StoragePool`

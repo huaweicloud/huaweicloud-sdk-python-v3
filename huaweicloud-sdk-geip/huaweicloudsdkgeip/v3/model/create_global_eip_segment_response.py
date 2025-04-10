@@ -30,7 +30,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, global_eip_segment=None, x_request_id=None):
-        """CreateGlobalEipSegmentResponse
+        r"""CreateGlobalEipSegmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateGlobalEipSegmentResponse.
+        r"""Gets the job_id of this CreateGlobalEipSegmentResponse.
 
         本次请求的job id
 
@@ -69,7 +69,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateGlobalEipSegmentResponse.
+        r"""Sets the job_id of this CreateGlobalEipSegmentResponse.
 
         本次请求的job id
 
@@ -80,7 +80,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
 
     @property
     def global_eip_segment(self):
-        """Gets the global_eip_segment of this CreateGlobalEipSegmentResponse.
+        r"""Gets the global_eip_segment of this CreateGlobalEipSegmentResponse.
 
         :return: The global_eip_segment of this CreateGlobalEipSegmentResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ShortGlobalEipSegment`
@@ -89,7 +89,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
 
     @global_eip_segment.setter
     def global_eip_segment(self, global_eip_segment):
-        """Sets the global_eip_segment of this CreateGlobalEipSegmentResponse.
+        r"""Sets the global_eip_segment of this CreateGlobalEipSegmentResponse.
 
         :param global_eip_segment: The global_eip_segment of this CreateGlobalEipSegmentResponse.
         :type global_eip_segment: :class:`huaweicloudsdkgeip.v3.ShortGlobalEipSegment`
@@ -98,7 +98,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateGlobalEipSegmentResponse.
+        r"""Gets the x_request_id of this CreateGlobalEipSegmentResponse.
 
         :return: The x_request_id of this CreateGlobalEipSegmentResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateGlobalEipSegmentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateGlobalEipSegmentResponse.
+        r"""Sets the x_request_id of this CreateGlobalEipSegmentResponse.
 
         :param x_request_id: The x_request_id of this CreateGlobalEipSegmentResponse.
         :type x_request_id: str

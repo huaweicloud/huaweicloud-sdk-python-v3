@@ -29,7 +29,7 @@ class QualityInfo:
     }
 
     def __init__(self, video=None, audio=None, format=None):
-        """QualityInfo
+        r"""QualityInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class QualityInfo:
 
     @property
     def video(self):
-        """Gets the video of this QualityInfo.
+        r"""Gets the video of this QualityInfo.
 
         :return: The video of this QualityInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
@@ -65,7 +65,7 @@ class QualityInfo:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this QualityInfo.
+        r"""Sets the video of this QualityInfo.
 
         :param video: The video of this QualityInfo.
         :type video: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
@@ -74,7 +74,7 @@ class QualityInfo:
 
     @property
     def audio(self):
-        """Gets the audio of this QualityInfo.
+        r"""Gets the audio of this QualityInfo.
 
         :return: The audio of this QualityInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`
@@ -83,7 +83,7 @@ class QualityInfo:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this QualityInfo.
+        r"""Sets the audio of this QualityInfo.
 
         :param audio: The audio of this QualityInfo.
         :type audio: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`
@@ -92,7 +92,7 @@ class QualityInfo:
 
     @property
     def format(self):
-        """Gets the format of this QualityInfo.
+        r"""Gets the format of this QualityInfo.
 
         格式。
 
@@ -103,7 +103,7 @@ class QualityInfo:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this QualityInfo.
+        r"""Sets the format of this QualityInfo.
 
         格式。
 

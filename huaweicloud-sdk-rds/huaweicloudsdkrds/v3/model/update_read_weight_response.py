@@ -26,7 +26,7 @@ class UpdateReadWeightResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateReadWeightResponse
+        r"""UpdateReadWeightResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateReadWeightResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateReadWeightResponse.
+        r"""Gets the result of this UpdateReadWeightResponse.
 
         修改读写分离权重或延时阈值的结果。
 
@@ -55,7 +55,7 @@ class UpdateReadWeightResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateReadWeightResponse.
+        r"""Sets the result of this UpdateReadWeightResponse.
 
         修改读写分离权重或延时阈值的结果。
 

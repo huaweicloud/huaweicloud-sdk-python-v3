@@ -27,7 +27,7 @@ class ScriptListPage:
     }
 
     def __init__(self, total=None, data=None):
-        """ScriptListPage
+        r"""ScriptListPage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScriptListPage:
 
     @property
     def total(self):
-        """Gets the total of this ScriptListPage.
+        r"""Gets the total of this ScriptListPage.
 
         总条数
 
@@ -59,7 +59,7 @@ class ScriptListPage:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ScriptListPage.
+        r"""Sets the total of this ScriptListPage.
 
         总条数
 
@@ -70,7 +70,7 @@ class ScriptListPage:
 
     @property
     def data(self):
-        """Gets the data of this ScriptListPage.
+        r"""Gets the data of this ScriptListPage.
 
         单页数据列表
 
@@ -81,7 +81,7 @@ class ScriptListPage:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ScriptListPage.
+        r"""Sets the data of this ScriptListPage.
 
         单页数据列表
 

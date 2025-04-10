@@ -25,7 +25,7 @@ class CancelReadonlyClusterRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """CancelReadonlyClusterRequest
+        r"""CancelReadonlyClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelReadonlyClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CancelReadonlyClusterRequest.
+        r"""Gets the cluster_id of this CancelReadonlyClusterRequest.
 
         集群的ID。
 
@@ -53,7 +53,7 @@ class CancelReadonlyClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CancelReadonlyClusterRequest.
+        r"""Sets the cluster_id of this CancelReadonlyClusterRequest.
 
         集群的ID。
 

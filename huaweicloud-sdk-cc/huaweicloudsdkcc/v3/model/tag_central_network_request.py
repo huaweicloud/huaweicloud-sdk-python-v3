@@ -27,7 +27,7 @@ class TagCentralNetworkRequest:
     }
 
     def __init__(self, central_network_id=None, body=None):
-        """TagCentralNetworkRequest
+        r"""TagCentralNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagCentralNetworkRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this TagCentralNetworkRequest.
+        r"""Gets the central_network_id of this TagCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -60,7 +60,7 @@ class TagCentralNetworkRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this TagCentralNetworkRequest.
+        r"""Sets the central_network_id of this TagCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -71,7 +71,7 @@ class TagCentralNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this TagCentralNetworkRequest.
+        r"""Gets the body of this TagCentralNetworkRequest.
 
         :return: The body of this TagCentralNetworkRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.TagCentralNetworkRequestBody`
@@ -80,7 +80,7 @@ class TagCentralNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagCentralNetworkRequest.
+        r"""Sets the body of this TagCentralNetworkRequest.
 
         :param body: The body of this TagCentralNetworkRequest.
         :type body: :class:`huaweicloudsdkcc.v3.TagCentralNetworkRequestBody`

@@ -28,7 +28,7 @@ class RecognizeRealEstateCertificateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeRealEstateCertificateResponse
+        r"""RecognizeRealEstateCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeRealEstateCertificateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeRealEstateCertificateResponse.
+        r"""Gets the result of this RecognizeRealEstateCertificateResponse.
 
         :return: The result of this RecognizeRealEstateCertificateResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.RealEstateCertificateResult`
@@ -60,7 +60,7 @@ class RecognizeRealEstateCertificateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeRealEstateCertificateResponse.
+        r"""Sets the result of this RecognizeRealEstateCertificateResponse.
 
         :param result: The result of this RecognizeRealEstateCertificateResponse.
         :type result: :class:`huaweicloudsdkocr.v1.RealEstateCertificateResult`
@@ -69,7 +69,7 @@ class RecognizeRealEstateCertificateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeRealEstateCertificateResponse.
+        r"""Gets the x_request_id of this RecognizeRealEstateCertificateResponse.
 
         :return: The x_request_id of this RecognizeRealEstateCertificateResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeRealEstateCertificateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeRealEstateCertificateResponse.
+        r"""Sets the x_request_id of this RecognizeRealEstateCertificateResponse.
 
         :param x_request_id: The x_request_id of this RecognizeRealEstateCertificateResponse.
         :type x_request_id: str

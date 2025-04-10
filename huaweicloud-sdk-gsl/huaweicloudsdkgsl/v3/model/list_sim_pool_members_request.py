@@ -33,7 +33,7 @@ class ListSimPoolMembersRequest:
     }
 
     def __init__(self, sim_pool_id=None, cid=None, limit=None, offset=None, billing_cycle=None):
-        """ListSimPoolMembersRequest
+        r"""ListSimPoolMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListSimPoolMembersRequest:
 
     @property
     def sim_pool_id(self):
-        """Gets the sim_pool_id of this ListSimPoolMembersRequest.
+        r"""Gets the sim_pool_id of this ListSimPoolMembersRequest.
 
         流量池标识
 
@@ -80,7 +80,7 @@ class ListSimPoolMembersRequest:
 
     @sim_pool_id.setter
     def sim_pool_id(self, sim_pool_id):
-        """Sets the sim_pool_id of this ListSimPoolMembersRequest.
+        r"""Sets the sim_pool_id of this ListSimPoolMembersRequest.
 
         流量池标识
 
@@ -91,7 +91,7 @@ class ListSimPoolMembersRequest:
 
     @property
     def cid(self):
-        """Gets the cid of this ListSimPoolMembersRequest.
+        r"""Gets the cid of this ListSimPoolMembersRequest.
 
         容器ID
 
@@ -102,7 +102,7 @@ class ListSimPoolMembersRequest:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this ListSimPoolMembersRequest.
+        r"""Sets the cid of this ListSimPoolMembersRequest.
 
         容器ID
 
@@ -113,7 +113,7 @@ class ListSimPoolMembersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimPoolMembersRequest.
+        r"""Gets the limit of this ListSimPoolMembersRequest.
 
         每页记录数
 
@@ -124,7 +124,7 @@ class ListSimPoolMembersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimPoolMembersRequest.
+        r"""Sets the limit of this ListSimPoolMembersRequest.
 
         每页记录数
 
@@ -135,7 +135,7 @@ class ListSimPoolMembersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimPoolMembersRequest.
+        r"""Gets the offset of this ListSimPoolMembersRequest.
 
         页码
 
@@ -146,7 +146,7 @@ class ListSimPoolMembersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimPoolMembersRequest.
+        r"""Sets the offset of this ListSimPoolMembersRequest.
 
         页码
 
@@ -157,7 +157,7 @@ class ListSimPoolMembersRequest:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this ListSimPoolMembersRequest.
+        r"""Gets the billing_cycle of this ListSimPoolMembersRequest.
 
         账期，例如：2021-04
 
@@ -168,7 +168,7 @@ class ListSimPoolMembersRequest:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this ListSimPoolMembersRequest.
+        r"""Sets the billing_cycle of this ListSimPoolMembersRequest.
 
         账期，例如：2021-04
 

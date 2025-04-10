@@ -29,7 +29,7 @@ class UpdateEdgeNodeDeviceRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None, body=None):
-        """UpdateEdgeNodeDeviceRequest
+        r"""UpdateEdgeNodeDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateEdgeNodeDeviceRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateEdgeNodeDeviceRequest.
+        r"""Gets the node_id of this UpdateEdgeNodeDeviceRequest.
 
         节点ID
 
@@ -67,7 +67,7 @@ class UpdateEdgeNodeDeviceRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateEdgeNodeDeviceRequest.
+        r"""Sets the node_id of this UpdateEdgeNodeDeviceRequest.
 
         节点ID
 
@@ -78,7 +78,7 @@ class UpdateEdgeNodeDeviceRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateEdgeNodeDeviceRequest.
+        r"""Gets the ief_instance_id of this UpdateEdgeNodeDeviceRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -89,7 +89,7 @@ class UpdateEdgeNodeDeviceRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateEdgeNodeDeviceRequest.
+        r"""Sets the ief_instance_id of this UpdateEdgeNodeDeviceRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -100,7 +100,7 @@ class UpdateEdgeNodeDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeNodeDeviceRequest.
+        r"""Gets the body of this UpdateEdgeNodeDeviceRequest.
 
         :return: The body of this UpdateEdgeNodeDeviceRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Devices`
@@ -109,7 +109,7 @@ class UpdateEdgeNodeDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeNodeDeviceRequest.
+        r"""Sets the body of this UpdateEdgeNodeDeviceRequest.
 
         :param body: The body of this UpdateEdgeNodeDeviceRequest.
         :type body: :class:`huaweicloudsdkief.v1.Devices`

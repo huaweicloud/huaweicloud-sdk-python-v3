@@ -27,7 +27,7 @@ class BatchCreateRequestBodySysTags:
     }
 
     def __init__(self, key=None, value=None):
-        """BatchCreateRequestBodySysTags
+        r"""BatchCreateRequestBodySysTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateRequestBodySysTags:
 
     @property
     def key(self):
-        """Gets the key of this BatchCreateRequestBodySysTags.
+        r"""Gets the key of this BatchCreateRequestBodySysTags.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -59,7 +59,7 @@ class BatchCreateRequestBodySysTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BatchCreateRequestBodySysTags.
+        r"""Sets the key of this BatchCreateRequestBodySysTags.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -70,7 +70,7 @@ class BatchCreateRequestBodySysTags:
 
     @property
     def value(self):
-        """Gets the value of this BatchCreateRequestBodySysTags.
+        r"""Gets the value of this BatchCreateRequestBodySysTags.
 
         标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 
@@ -81,7 +81,7 @@ class BatchCreateRequestBodySysTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchCreateRequestBodySysTags.
+        r"""Sets the value of this BatchCreateRequestBodySysTags.
 
         标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 

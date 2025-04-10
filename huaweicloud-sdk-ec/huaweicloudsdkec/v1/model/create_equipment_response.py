@@ -48,7 +48,7 @@ class CreateEquipmentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ieg_id=None, esn=None, name=None, type=None, ha_type=None, version=None, active_at=None, go_live_at=None, start_up_at=None, cloud_access_status=None, status=None):
-        """CreateEquipmentResponse
+        r"""CreateEquipmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEquipmentResponse.
+        r"""Gets the id of this CreateEquipmentResponse.
 
         智能企业网关设备ID
 
@@ -132,7 +132,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEquipmentResponse.
+        r"""Sets the id of this CreateEquipmentResponse.
 
         智能企业网关设备ID
 
@@ -143,7 +143,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this CreateEquipmentResponse.
+        r"""Gets the ieg_id of this CreateEquipmentResponse.
 
         智能企业网关ID
 
@@ -154,7 +154,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this CreateEquipmentResponse.
+        r"""Sets the ieg_id of this CreateEquipmentResponse.
 
         智能企业网关ID
 
@@ -165,7 +165,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this CreateEquipmentResponse.
+        r"""Gets the esn of this CreateEquipmentResponse.
 
         esn
 
@@ -176,7 +176,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this CreateEquipmentResponse.
+        r"""Sets the esn of this CreateEquipmentResponse.
 
         esn
 
@@ -187,7 +187,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEquipmentResponse.
+        r"""Gets the name of this CreateEquipmentResponse.
 
         设备名字
 
@@ -198,7 +198,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEquipmentResponse.
+        r"""Sets the name of this CreateEquipmentResponse.
 
         设备名字
 
@@ -209,7 +209,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateEquipmentResponse.
+        r"""Gets the type of this CreateEquipmentResponse.
 
         设备类型
 
@@ -220,7 +220,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateEquipmentResponse.
+        r"""Sets the type of this CreateEquipmentResponse.
 
         设备类型
 
@@ -231,7 +231,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this CreateEquipmentResponse.
+        r"""Gets the ha_type of this CreateEquipmentResponse.
 
         高可用类型
 
@@ -242,7 +242,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this CreateEquipmentResponse.
+        r"""Sets the ha_type of this CreateEquipmentResponse.
 
         高可用类型
 
@@ -253,7 +253,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateEquipmentResponse.
+        r"""Gets the version of this CreateEquipmentResponse.
 
         设备软件版本
 
@@ -264,7 +264,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateEquipmentResponse.
+        r"""Sets the version of this CreateEquipmentResponse.
 
         设备软件版本
 
@@ -275,7 +275,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def active_at(self):
-        """Gets the active_at of this CreateEquipmentResponse.
+        r"""Gets the active_at of this CreateEquipmentResponse.
 
         激活时间
 
@@ -286,7 +286,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this CreateEquipmentResponse.
+        r"""Sets the active_at of this CreateEquipmentResponse.
 
         激活时间
 
@@ -297,7 +297,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def go_live_at(self):
-        """Gets the go_live_at of this CreateEquipmentResponse.
+        r"""Gets the go_live_at of this CreateEquipmentResponse.
 
         上线时间
 
@@ -308,7 +308,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @go_live_at.setter
     def go_live_at(self, go_live_at):
-        """Sets the go_live_at of this CreateEquipmentResponse.
+        r"""Sets the go_live_at of this CreateEquipmentResponse.
 
         上线时间
 
@@ -319,7 +319,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def start_up_at(self):
-        """Gets the start_up_at of this CreateEquipmentResponse.
+        r"""Gets the start_up_at of this CreateEquipmentResponse.
 
         设备启动时间
 
@@ -330,7 +330,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @start_up_at.setter
     def start_up_at(self, start_up_at):
-        """Sets the start_up_at of this CreateEquipmentResponse.
+        r"""Sets the start_up_at of this CreateEquipmentResponse.
 
         设备启动时间
 
@@ -341,7 +341,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def cloud_access_status(self):
-        """Gets the cloud_access_status of this CreateEquipmentResponse.
+        r"""Gets the cloud_access_status of this CreateEquipmentResponse.
 
         VPN状态
 
@@ -352,7 +352,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @cloud_access_status.setter
     def cloud_access_status(self, cloud_access_status):
-        """Sets the cloud_access_status of this CreateEquipmentResponse.
+        r"""Sets the cloud_access_status of this CreateEquipmentResponse.
 
         VPN状态
 
@@ -363,7 +363,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateEquipmentResponse.
+        r"""Gets the status of this CreateEquipmentResponse.
 
         状态
 
@@ -374,7 +374,7 @@ class CreateEquipmentResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateEquipmentResponse.
+        r"""Sets the status of this CreateEquipmentResponse.
 
         状态
 

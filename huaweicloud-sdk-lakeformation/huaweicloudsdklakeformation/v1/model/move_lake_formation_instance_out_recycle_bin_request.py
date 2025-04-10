@@ -25,7 +25,7 @@ class MoveLakeFormationInstanceOutRecycleBinRequest:
     }
 
     def __init__(self, instance_id=None):
-        """MoveLakeFormationInstanceOutRecycleBinRequest
+        r"""MoveLakeFormationInstanceOutRecycleBinRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MoveLakeFormationInstanceOutRecycleBinRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MoveLakeFormationInstanceOutRecycleBinRequest.
+        r"""Gets the instance_id of this MoveLakeFormationInstanceOutRecycleBinRequest.
 
         LakeFormation实例ID
 
@@ -53,7 +53,7 @@ class MoveLakeFormationInstanceOutRecycleBinRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MoveLakeFormationInstanceOutRecycleBinRequest.
+        r"""Sets the instance_id of this MoveLakeFormationInstanceOutRecycleBinRequest.
 
         LakeFormation实例ID
 

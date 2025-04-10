@@ -27,7 +27,7 @@ class BatchTagRequest:
     }
 
     def __init__(self, instance=None, body=None):
-        """BatchTagRequest
+        r"""BatchTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchTagRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this BatchTagRequest.
+        r"""Gets the instance of this BatchTagRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -60,7 +60,7 @@ class BatchTagRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this BatchTagRequest.
+        r"""Sets the instance of this BatchTagRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -71,7 +71,7 @@ class BatchTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchTagRequest.
+        r"""Gets the body of this BatchTagRequest.
 
         :return: The body of this BatchTagRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchRecommendationRequest`
@@ -80,7 +80,7 @@ class BatchTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchTagRequest.
+        r"""Sets the body of this BatchTagRequest.
 
         :param body: The body of this BatchTagRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BatchRecommendationRequest`

@@ -31,7 +31,7 @@ class ReportdetailsInfo:
     }
 
     def __init__(self, data=None, page_index=None, page_size=None, total=None):
-        """ReportdetailsInfo
+        r"""ReportdetailsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ReportdetailsInfo:
 
     @property
     def data(self):
-        """Gets the data of this ReportdetailsInfo.
+        r"""Gets the data of this ReportdetailsInfo.
 
         表格数据
 
@@ -75,7 +75,7 @@ class ReportdetailsInfo:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ReportdetailsInfo.
+        r"""Sets the data of this ReportdetailsInfo.
 
         表格数据
 
@@ -86,7 +86,7 @@ class ReportdetailsInfo:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ReportdetailsInfo.
+        r"""Gets the page_index of this ReportdetailsInfo.
 
         页码
 
@@ -97,7 +97,7 @@ class ReportdetailsInfo:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ReportdetailsInfo.
+        r"""Sets the page_index of this ReportdetailsInfo.
 
         页码
 
@@ -108,7 +108,7 @@ class ReportdetailsInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ReportdetailsInfo.
+        r"""Gets the page_size of this ReportdetailsInfo.
 
         每页大小
 
@@ -119,7 +119,7 @@ class ReportdetailsInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ReportdetailsInfo.
+        r"""Sets the page_size of this ReportdetailsInfo.
 
         每页大小
 
@@ -130,7 +130,7 @@ class ReportdetailsInfo:
 
     @property
     def total(self):
-        """Gets the total of this ReportdetailsInfo.
+        r"""Gets the total of this ReportdetailsInfo.
 
         总记录数
 
@@ -141,7 +141,7 @@ class ReportdetailsInfo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ReportdetailsInfo.
+        r"""Sets the total of this ReportdetailsInfo.
 
         总记录数
 

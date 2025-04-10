@@ -28,7 +28,7 @@ class ListServerHdaDetailsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListServerHdaDetailsResponse
+        r"""ListServerHdaDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServerHdaDetailsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListServerHdaDetailsResponse.
+        r"""Gets the count of this ListServerHdaDetailsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListServerHdaDetailsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListServerHdaDetailsResponse.
+        r"""Sets the count of this ListServerHdaDetailsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListServerHdaDetailsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListServerHdaDetailsResponse.
+        r"""Gets the items of this ListServerHdaDetailsResponse.
 
         返回列表条目数量上限为分页的最大上限值。
 
@@ -84,7 +84,7 @@ class ListServerHdaDetailsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListServerHdaDetailsResponse.
+        r"""Sets the items of this ListServerHdaDetailsResponse.
 
         返回列表条目数量上限为分页的最大上限值。
 

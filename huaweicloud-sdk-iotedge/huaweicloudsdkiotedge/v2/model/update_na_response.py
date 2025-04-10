@@ -42,7 +42,7 @@ class UpdateNaResponse(SdkResponse):
     }
 
     def __init__(self, na_id=None, name=None, description=None, endpoint=None, auth_type=None, access_type=None, access_roma_info=None, create_time=None, update_time=None):
-        """UpdateNaResponse
+        r"""UpdateNaResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def na_id(self):
-        """Gets the na_id of this UpdateNaResponse.
+        r"""Gets the na_id of this UpdateNaResponse.
 
         NA系统ID，提供给其他系统访问的唯一标识
 
@@ -111,7 +111,7 @@ class UpdateNaResponse(SdkResponse):
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this UpdateNaResponse.
+        r"""Sets the na_id of this UpdateNaResponse.
 
         NA系统ID，提供给其他系统访问的唯一标识
 
@@ -122,7 +122,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateNaResponse.
+        r"""Gets the name of this UpdateNaResponse.
 
         NA系统名称
 
@@ -133,7 +133,7 @@ class UpdateNaResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNaResponse.
+        r"""Sets the name of this UpdateNaResponse.
 
         NA系统名称
 
@@ -144,7 +144,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateNaResponse.
+        r"""Gets the description of this UpdateNaResponse.
 
         北向NA系统描述
 
@@ -155,7 +155,7 @@ class UpdateNaResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNaResponse.
+        r"""Sets the description of this UpdateNaResponse.
 
         北向NA系统描述
 
@@ -166,7 +166,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this UpdateNaResponse.
+        r"""Gets the endpoint of this UpdateNaResponse.
 
         访问URL地址
 
@@ -177,7 +177,7 @@ class UpdateNaResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this UpdateNaResponse.
+        r"""Sets the endpoint of this UpdateNaResponse.
 
         访问URL地址
 
@@ -188,7 +188,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this UpdateNaResponse.
+        r"""Gets the auth_type of this UpdateNaResponse.
 
         鉴权方式
 
@@ -199,7 +199,7 @@ class UpdateNaResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this UpdateNaResponse.
+        r"""Sets the auth_type of this UpdateNaResponse.
 
         鉴权方式
 
@@ -210,7 +210,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def access_type(self):
-        """Gets the access_type of this UpdateNaResponse.
+        r"""Gets the access_type of this UpdateNaResponse.
 
         接入类型
 
@@ -221,7 +221,7 @@ class UpdateNaResponse(SdkResponse):
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this UpdateNaResponse.
+        r"""Sets the access_type of this UpdateNaResponse.
 
         接入类型
 
@@ -232,7 +232,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def access_roma_info(self):
-        """Gets the access_roma_info of this UpdateNaResponse.
+        r"""Gets the access_roma_info of this UpdateNaResponse.
 
         :return: The access_roma_info of this UpdateNaResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
@@ -241,7 +241,7 @@ class UpdateNaResponse(SdkResponse):
 
     @access_roma_info.setter
     def access_roma_info(self, access_roma_info):
-        """Sets the access_roma_info of this UpdateNaResponse.
+        r"""Sets the access_roma_info of this UpdateNaResponse.
 
         :param access_roma_info: The access_roma_info of this UpdateNaResponse.
         :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
@@ -250,7 +250,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateNaResponse.
+        r"""Gets the create_time of this UpdateNaResponse.
 
         创建时间
 
@@ -261,7 +261,7 @@ class UpdateNaResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateNaResponse.
+        r"""Sets the create_time of this UpdateNaResponse.
 
         创建时间
 
@@ -272,7 +272,7 @@ class UpdateNaResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateNaResponse.
+        r"""Gets the update_time of this UpdateNaResponse.
 
         更新时间
 
@@ -283,7 +283,7 @@ class UpdateNaResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateNaResponse.
+        r"""Sets the update_time of this UpdateNaResponse.
 
         更新时间
 

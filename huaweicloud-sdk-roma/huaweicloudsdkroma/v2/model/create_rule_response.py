@@ -46,7 +46,7 @@ class CreateRuleResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, rule_id=None, name=None, app_id=None, description=None, status=None, data_parsing_status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """CreateRuleResponse
+        r"""CreateRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this CreateRuleResponse.
+        r"""Gets the permissions of this CreateRuleResponse.
 
         权限
 
@@ -125,7 +125,7 @@ class CreateRuleResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this CreateRuleResponse.
+        r"""Sets the permissions of this CreateRuleResponse.
 
         权限
 
@@ -136,7 +136,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this CreateRuleResponse.
+        r"""Gets the rule_id of this CreateRuleResponse.
 
         规则ID
 
@@ -147,7 +147,7 @@ class CreateRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this CreateRuleResponse.
+        r"""Sets the rule_id of this CreateRuleResponse.
 
         规则ID
 
@@ -158,7 +158,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateRuleResponse.
+        r"""Gets the name of this CreateRuleResponse.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -169,7 +169,7 @@ class CreateRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRuleResponse.
+        r"""Sets the name of this CreateRuleResponse.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -180,7 +180,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateRuleResponse.
+        r"""Gets the app_id of this CreateRuleResponse.
 
         应用ID
 
@@ -191,7 +191,7 @@ class CreateRuleResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateRuleResponse.
+        r"""Sets the app_id of this CreateRuleResponse.
 
         应用ID
 
@@ -202,7 +202,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateRuleResponse.
+        r"""Gets the description of this CreateRuleResponse.
 
         描述
 
@@ -213,7 +213,7 @@ class CreateRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRuleResponse.
+        r"""Sets the description of this CreateRuleResponse.
 
         描述
 
@@ -224,7 +224,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRuleResponse.
+        r"""Gets the status of this CreateRuleResponse.
 
         规则状态 0-启用 1-停用
 
@@ -235,7 +235,7 @@ class CreateRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRuleResponse.
+        r"""Sets the status of this CreateRuleResponse.
 
         规则状态 0-启用 1-停用
 
@@ -246,7 +246,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def data_parsing_status(self):
-        """Gets the data_parsing_status of this CreateRuleResponse.
+        r"""Gets the data_parsing_status of this CreateRuleResponse.
 
         数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
 
@@ -257,7 +257,7 @@ class CreateRuleResponse(SdkResponse):
 
     @data_parsing_status.setter
     def data_parsing_status(self, data_parsing_status):
-        """Sets the data_parsing_status of this CreateRuleResponse.
+        r"""Sets the data_parsing_status of this CreateRuleResponse.
 
         数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
 
@@ -268,7 +268,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def created_user(self):
-        """Gets the created_user of this CreateRuleResponse.
+        r"""Gets the created_user of this CreateRuleResponse.
 
         :return: The created_user of this CreateRuleResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -277,7 +277,7 @@ class CreateRuleResponse(SdkResponse):
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this CreateRuleResponse.
+        r"""Sets the created_user of this CreateRuleResponse.
 
         :param created_user: The created_user of this CreateRuleResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -286,7 +286,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this CreateRuleResponse.
+        r"""Gets the last_updated_user of this CreateRuleResponse.
 
         :return: The last_updated_user of this CreateRuleResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -295,7 +295,7 @@ class CreateRuleResponse(SdkResponse):
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this CreateRuleResponse.
+        r"""Sets the last_updated_user of this CreateRuleResponse.
 
         :param last_updated_user: The last_updated_user of this CreateRuleResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -304,7 +304,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this CreateRuleResponse.
+        r"""Gets the created_datetime of this CreateRuleResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -315,7 +315,7 @@ class CreateRuleResponse(SdkResponse):
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this CreateRuleResponse.
+        r"""Sets the created_datetime of this CreateRuleResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -326,7 +326,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this CreateRuleResponse.
+        r"""Gets the last_updated_datetime of this CreateRuleResponse.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -337,7 +337,7 @@ class CreateRuleResponse(SdkResponse):
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this CreateRuleResponse.
+        r"""Sets the last_updated_datetime of this CreateRuleResponse.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 

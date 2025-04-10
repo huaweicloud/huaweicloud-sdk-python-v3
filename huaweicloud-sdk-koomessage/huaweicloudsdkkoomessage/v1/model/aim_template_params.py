@@ -37,7 +37,7 @@ class AIMTemplateParams:
     }
 
     def __init__(self, type=None, name=None, has_length=None, fix_length=None, length_restrict=None, min_length=None, max_length=None):
-        """AIMTemplateParams
+        r"""AIMTemplateParams
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AIMTemplateParams:
 
     @property
     def type(self):
-        """Gets the type of this AIMTemplateParams.
+        r"""Gets the type of this AIMTemplateParams.
 
         参数类型。 - string：文本 - integer：数字 
 
@@ -96,7 +96,7 @@ class AIMTemplateParams:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AIMTemplateParams.
+        r"""Sets the type of this AIMTemplateParams.
 
         参数类型。 - string：文本 - integer：数字 
 
@@ -107,7 +107,7 @@ class AIMTemplateParams:
 
     @property
     def name(self):
-        """Gets the name of this AIMTemplateParams.
+        r"""Gets the name of this AIMTemplateParams.
 
         参数名称。
 
@@ -118,7 +118,7 @@ class AIMTemplateParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AIMTemplateParams.
+        r"""Sets the name of this AIMTemplateParams.
 
         参数名称。
 
@@ -129,7 +129,7 @@ class AIMTemplateParams:
 
     @property
     def has_length(self):
-        """Gets the has_length of this AIMTemplateParams.
+        r"""Gets the has_length of this AIMTemplateParams.
 
         动态参数是否长度限制。 - false：不可设置  - true：可设置 
 
@@ -140,7 +140,7 @@ class AIMTemplateParams:
 
     @has_length.setter
     def has_length(self, has_length):
-        """Sets the has_length of this AIMTemplateParams.
+        r"""Sets the has_length of this AIMTemplateParams.
 
         动态参数是否长度限制。 - false：不可设置  - true：可设置 
 
@@ -151,7 +151,7 @@ class AIMTemplateParams:
 
     @property
     def fix_length(self):
-        """Gets the fix_length of this AIMTemplateParams.
+        r"""Gets the fix_length of this AIMTemplateParams.
 
         固定长度。
 
@@ -162,7 +162,7 @@ class AIMTemplateParams:
 
     @fix_length.setter
     def fix_length(self, fix_length):
-        """Sets the fix_length of this AIMTemplateParams.
+        r"""Sets the fix_length of this AIMTemplateParams.
 
         固定长度。
 
@@ -173,7 +173,7 @@ class AIMTemplateParams:
 
     @property
     def length_restrict(self):
-        """Gets the length_restrict of this AIMTemplateParams.
+        r"""Gets the length_restrict of this AIMTemplateParams.
 
         长度限制。
 
@@ -184,7 +184,7 @@ class AIMTemplateParams:
 
     @length_restrict.setter
     def length_restrict(self, length_restrict):
-        """Sets the length_restrict of this AIMTemplateParams.
+        r"""Sets the length_restrict of this AIMTemplateParams.
 
         长度限制。
 
@@ -195,7 +195,7 @@ class AIMTemplateParams:
 
     @property
     def min_length(self):
-        """Gets the min_length of this AIMTemplateParams.
+        r"""Gets the min_length of this AIMTemplateParams.
 
         最小长度。
 
@@ -206,7 +206,7 @@ class AIMTemplateParams:
 
     @min_length.setter
     def min_length(self, min_length):
-        """Sets the min_length of this AIMTemplateParams.
+        r"""Sets the min_length of this AIMTemplateParams.
 
         最小长度。
 
@@ -217,7 +217,7 @@ class AIMTemplateParams:
 
     @property
     def max_length(self):
-        """Gets the max_length of this AIMTemplateParams.
+        r"""Gets the max_length of this AIMTemplateParams.
 
         最大长度。
 
@@ -228,7 +228,7 @@ class AIMTemplateParams:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this AIMTemplateParams.
+        r"""Sets the max_length of this AIMTemplateParams.
 
         最大长度。
 

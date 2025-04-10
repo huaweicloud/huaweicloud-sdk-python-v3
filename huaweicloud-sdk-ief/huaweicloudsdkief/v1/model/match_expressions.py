@@ -25,7 +25,7 @@ class MatchExpressions:
     }
 
     def __init__(self, match_expressions=None):
-        """MatchExpressions
+        r"""MatchExpressions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MatchExpressions:
 
     @property
     def match_expressions(self):
-        """Gets the match_expressions of this MatchExpressions.
+        r"""Gets the match_expressions of this MatchExpressions.
 
         匹配规则表达式
 
@@ -54,7 +54,7 @@ class MatchExpressions:
 
     @match_expressions.setter
     def match_expressions(self, match_expressions):
-        """Sets the match_expressions of this MatchExpressions.
+        r"""Sets the match_expressions of this MatchExpressions.
 
         匹配规则表达式
 

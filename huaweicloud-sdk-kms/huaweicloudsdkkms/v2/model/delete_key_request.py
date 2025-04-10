@@ -25,7 +25,7 @@ class DeleteKeyRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteKeyRequest
+        r"""DeleteKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteKeyRequest.
+        r"""Gets the body of this DeleteKeyRequest.
 
         :return: The body of this DeleteKeyRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ScheduleKeyDeletionRequestBody`
@@ -52,7 +52,7 @@ class DeleteKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteKeyRequest.
+        r"""Sets the body of this DeleteKeyRequest.
 
         :param body: The body of this DeleteKeyRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ScheduleKeyDeletionRequestBody`

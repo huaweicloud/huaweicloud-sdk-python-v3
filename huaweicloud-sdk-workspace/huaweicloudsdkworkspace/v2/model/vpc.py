@@ -29,7 +29,7 @@ class Vpc:
     }
 
     def __init__(self, id=None, name=None, cidr=None):
-        """Vpc
+        r"""Vpc
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Vpc:
 
     @property
     def id(self):
-        """Gets the id of this Vpc.
+        r"""Gets the id of this Vpc.
 
         桌面所在vpcId
 
@@ -68,7 +68,7 @@ class Vpc:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Vpc.
+        r"""Sets the id of this Vpc.
 
         桌面所在vpcId
 
@@ -79,7 +79,7 @@ class Vpc:
 
     @property
     def name(self):
-        """Gets the name of this Vpc.
+        r"""Gets the name of this Vpc.
 
         桌面所在vpc名称
 
@@ -90,7 +90,7 @@ class Vpc:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Vpc.
+        r"""Sets the name of this Vpc.
 
         桌面所在vpc名称
 
@@ -101,7 +101,7 @@ class Vpc:
 
     @property
     def cidr(self):
-        """Gets the cidr of this Vpc.
+        r"""Gets the cidr of this Vpc.
 
         桌面所在vpc网段
 
@@ -112,7 +112,7 @@ class Vpc:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this Vpc.
+        r"""Sets the cidr of this Vpc.
 
         桌面所在vpc网段
 

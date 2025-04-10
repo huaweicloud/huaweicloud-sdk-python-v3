@@ -29,7 +29,7 @@ class UserAuth:
     }
 
     def __init__(self, user_id=None, user_name=None, auth=None):
-        """UserAuth
+        r"""UserAuth
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UserAuth:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UserAuth.
+        r"""Gets the user_id of this UserAuth.
 
         用户id，需要从IAM服务获取
 
@@ -65,7 +65,7 @@ class UserAuth:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UserAuth.
+        r"""Sets the user_id of this UserAuth.
 
         用户id，需要从IAM服务获取
 
@@ -76,7 +76,7 @@ class UserAuth:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserAuth.
+        r"""Gets the user_name of this UserAuth.
 
         用户名，需要从IAM服务获取
 
@@ -87,7 +87,7 @@ class UserAuth:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserAuth.
+        r"""Sets the user_name of this UserAuth.
 
         用户名，需要从IAM服务获取
 
@@ -98,7 +98,7 @@ class UserAuth:
 
     @property
     def auth(self):
-        """Gets the auth of this UserAuth.
+        r"""Gets the auth of this UserAuth.
 
         用户权限，7表示管理权限，3表示编辑权限，1表示读取权限
 
@@ -109,7 +109,7 @@ class UserAuth:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this UserAuth.
+        r"""Sets the auth of this UserAuth.
 
         用户权限，7表示管理权限，3表示编辑权限，1表示读取权限
 

@@ -29,7 +29,7 @@ class RecordDownloadUrlDO:
     }
 
     def __init__(self, token=None, file_type=None, url=None):
-        """RecordDownloadUrlDO
+        r"""RecordDownloadUrlDO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RecordDownloadUrlDO:
 
     @property
     def token(self):
-        """Gets the token of this RecordDownloadUrlDO.
+        r"""Gets the token of this RecordDownloadUrlDO.
 
         下载鉴权token，下载文件时，使用该token鉴权。（一小时内有效，使用后立即失效）。
 
@@ -68,7 +68,7 @@ class RecordDownloadUrlDO:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this RecordDownloadUrlDO.
+        r"""Sets the token of this RecordDownloadUrlDO.
 
         下载鉴权token，下载文件时，使用该token鉴权。（一小时内有效，使用后立即失效）。
 
@@ -79,7 +79,7 @@ class RecordDownloadUrlDO:
 
     @property
     def file_type(self):
-        """Gets the file_type of this RecordDownloadUrlDO.
+        r"""Gets the file_type of this RecordDownloadUrlDO.
 
         文件类型。 * Aux：辅流（会议中的共享画面；分辨率为720p） * Hd：高清（会议中的视频画面；分辨率和会议中视频画面的分辨率一致，1080p或者720p） * Sd：标清（会议中视频画面和共享画面的合成画面，视频画面是大画面，共享画面是小画面，共享画面布局在右下方；分辨率为4CIF） > 单个MP4文件大小不超过1GB。 
 
@@ -90,7 +90,7 @@ class RecordDownloadUrlDO:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this RecordDownloadUrlDO.
+        r"""Sets the file_type of this RecordDownloadUrlDO.
 
         文件类型。 * Aux：辅流（会议中的共享画面；分辨率为720p） * Hd：高清（会议中的视频画面；分辨率和会议中视频画面的分辨率一致，1080p或者720p） * Sd：标清（会议中视频画面和共享画面的合成画面，视频画面是大画面，共享画面是小画面，共享画面布局在右下方；分辨率为4CIF） > 单个MP4文件大小不超过1GB。 
 
@@ -101,7 +101,7 @@ class RecordDownloadUrlDO:
 
     @property
     def url(self):
-        """Gets the url of this RecordDownloadUrlDO.
+        r"""Gets the url of this RecordDownloadUrlDO.
 
         文件下载url，最大1000个字符。
 
@@ -112,7 +112,7 @@ class RecordDownloadUrlDO:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this RecordDownloadUrlDO.
+        r"""Sets the url of this RecordDownloadUrlDO.
 
         文件下载url，最大1000个字符。
 

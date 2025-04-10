@@ -24,7 +24,7 @@ class UpdateVpcepWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateVpcepWhitelistResponse
+        r"""UpdateVpcepWhitelistResponse
 
         The model defined in huaweicloud sdk
 

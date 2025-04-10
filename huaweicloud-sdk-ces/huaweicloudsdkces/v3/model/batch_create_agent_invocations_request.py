@@ -25,7 +25,7 @@ class BatchCreateAgentInvocationsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateAgentInvocationsRequest
+        r"""BatchCreateAgentInvocationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateAgentInvocationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateAgentInvocationsRequest.
+        r"""Gets the body of this BatchCreateAgentInvocationsRequest.
 
         :return: The body of this BatchCreateAgentInvocationsRequest.
         :rtype: :class:`huaweicloudsdkces.v3.BatchCreateInvocationRequestBody`
@@ -52,7 +52,7 @@ class BatchCreateAgentInvocationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateAgentInvocationsRequest.
+        r"""Sets the body of this BatchCreateAgentInvocationsRequest.
 
         :param body: The body of this BatchCreateAgentInvocationsRequest.
         :type body: :class:`huaweicloudsdkces.v3.BatchCreateInvocationRequestBody`

@@ -27,7 +27,7 @@ class PipelineGroupUpdateDTO:
     }
 
     def __init__(self, name=None, id=None):
-        """PipelineGroupUpdateDTO
+        r"""PipelineGroupUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PipelineGroupUpdateDTO:
 
     @property
     def name(self):
-        """Gets the name of this PipelineGroupUpdateDTO.
+        r"""Gets the name of this PipelineGroupUpdateDTO.
 
         流水线分组名
 
@@ -59,7 +59,7 @@ class PipelineGroupUpdateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineGroupUpdateDTO.
+        r"""Sets the name of this PipelineGroupUpdateDTO.
 
         流水线分组名
 
@@ -70,7 +70,7 @@ class PipelineGroupUpdateDTO:
 
     @property
     def id(self):
-        """Gets the id of this PipelineGroupUpdateDTO.
+        r"""Gets the id of this PipelineGroupUpdateDTO.
 
         流水线分组ID
 
@@ -81,7 +81,7 @@ class PipelineGroupUpdateDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineGroupUpdateDTO.
+        r"""Sets the id of this PipelineGroupUpdateDTO.
 
         流水线分组ID
 

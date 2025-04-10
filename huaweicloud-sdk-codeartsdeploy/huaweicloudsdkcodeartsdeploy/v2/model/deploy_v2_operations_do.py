@@ -39,7 +39,7 @@ class DeployV2OperationsDO:
     }
 
     def __init__(self, id=None, name=None, description=None, code=None, params=None, entrance=None, version=None, module_id=None):
-        """DeployV2OperationsDO
+        r"""DeployV2OperationsDO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DeployV2OperationsDO:
 
     @property
     def id(self):
-        """Gets the id of this DeployV2OperationsDO.
+        r"""Gets the id of this DeployV2OperationsDO.
 
         步骤id
 
@@ -103,7 +103,7 @@ class DeployV2OperationsDO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeployV2OperationsDO.
+        r"""Sets the id of this DeployV2OperationsDO.
 
         步骤id
 
@@ -114,7 +114,7 @@ class DeployV2OperationsDO:
 
     @property
     def name(self):
-        """Gets the name of this DeployV2OperationsDO.
+        r"""Gets the name of this DeployV2OperationsDO.
 
         步骤名称
 
@@ -125,7 +125,7 @@ class DeployV2OperationsDO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeployV2OperationsDO.
+        r"""Sets the name of this DeployV2OperationsDO.
 
         步骤名称
 
@@ -136,7 +136,7 @@ class DeployV2OperationsDO:
 
     @property
     def description(self):
-        """Gets the description of this DeployV2OperationsDO.
+        r"""Gets the description of this DeployV2OperationsDO.
 
         步骤描述
 
@@ -147,7 +147,7 @@ class DeployV2OperationsDO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeployV2OperationsDO.
+        r"""Sets the description of this DeployV2OperationsDO.
 
         步骤描述
 
@@ -158,7 +158,7 @@ class DeployV2OperationsDO:
 
     @property
     def code(self):
-        """Gets the code of this DeployV2OperationsDO.
+        r"""Gets the code of this DeployV2OperationsDO.
 
         下载地址
 
@@ -169,7 +169,7 @@ class DeployV2OperationsDO:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeployV2OperationsDO.
+        r"""Sets the code of this DeployV2OperationsDO.
 
         下载地址
 
@@ -180,7 +180,7 @@ class DeployV2OperationsDO:
 
     @property
     def params(self):
-        """Gets the params of this DeployV2OperationsDO.
+        r"""Gets the params of this DeployV2OperationsDO.
 
         步骤详细定义
 
@@ -191,7 +191,7 @@ class DeployV2OperationsDO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this DeployV2OperationsDO.
+        r"""Sets the params of this DeployV2OperationsDO.
 
         步骤详细定义
 
@@ -202,7 +202,7 @@ class DeployV2OperationsDO:
 
     @property
     def entrance(self):
-        """Gets the entrance of this DeployV2OperationsDO.
+        r"""Gets the entrance of this DeployV2OperationsDO.
 
         入口函数
 
@@ -213,7 +213,7 @@ class DeployV2OperationsDO:
 
     @entrance.setter
     def entrance(self, entrance):
-        """Sets the entrance of this DeployV2OperationsDO.
+        r"""Sets the entrance of this DeployV2OperationsDO.
 
         入口函数
 
@@ -224,7 +224,7 @@ class DeployV2OperationsDO:
 
     @property
     def version(self):
-        """Gets the version of this DeployV2OperationsDO.
+        r"""Gets the version of this DeployV2OperationsDO.
 
         版本
 
@@ -235,7 +235,7 @@ class DeployV2OperationsDO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeployV2OperationsDO.
+        r"""Sets the version of this DeployV2OperationsDO.
 
         版本
 
@@ -246,7 +246,7 @@ class DeployV2OperationsDO:
 
     @property
     def module_id(self):
-        """Gets the module_id of this DeployV2OperationsDO.
+        r"""Gets the module_id of this DeployV2OperationsDO.
 
         模块id
 
@@ -257,7 +257,7 @@ class DeployV2OperationsDO:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this DeployV2OperationsDO.
+        r"""Sets the module_id of this DeployV2OperationsDO.
 
         模块id
 

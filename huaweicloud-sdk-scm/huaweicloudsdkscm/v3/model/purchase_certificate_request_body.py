@@ -51,7 +51,7 @@ class PurchaseCertificateRequestBody:
     }
 
     def __init__(self, cert_brand=None, cert_type=None, domain_type=None, effective_time=None, domain_numbers=None, order_number=None, agree_privacy_protection=None, primary_domain_type=None, single_domain_number=None, wildcard_domain_number=None, is_auto_pay=None, enterprise_project_id=None, order_id=None, tags=None):
-        """PurchaseCertificateRequestBody
+        r"""PurchaseCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def cert_brand(self):
-        """Gets the cert_brand of this PurchaseCertificateRequestBody.
+        r"""Gets the cert_brand of this PurchaseCertificateRequestBody.
 
         证书品牌，取值如下： - GEOTRUST - GLOBALSIGN - SYMANTEC - CFCA - TRUSTASIA - VTRUS
 
@@ -138,7 +138,7 @@ class PurchaseCertificateRequestBody:
 
     @cert_brand.setter
     def cert_brand(self, cert_brand):
-        """Sets the cert_brand of this PurchaseCertificateRequestBody.
+        r"""Sets the cert_brand of this PurchaseCertificateRequestBody.
 
         证书品牌，取值如下： - GEOTRUST - GLOBALSIGN - SYMANTEC - CFCA - TRUSTASIA - VTRUS
 
@@ -149,7 +149,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def cert_type(self):
-        """Gets the cert_type of this PurchaseCertificateRequestBody.
+        r"""Gets the cert_type of this PurchaseCertificateRequestBody.
 
         证书类型，取值如下： - DV_SSL_CERT - DV_SSL_CERT_BASIC - EV_SSL_CERT - EV_SSL_CERT_PRO - OV_SSL_CERT - OV_SSL_CERT_PRO
 
@@ -160,7 +160,7 @@ class PurchaseCertificateRequestBody:
 
     @cert_type.setter
     def cert_type(self, cert_type):
-        """Sets the cert_type of this PurchaseCertificateRequestBody.
+        r"""Sets the cert_type of this PurchaseCertificateRequestBody.
 
         证书类型，取值如下： - DV_SSL_CERT - DV_SSL_CERT_BASIC - EV_SSL_CERT - EV_SSL_CERT_PRO - OV_SSL_CERT - OV_SSL_CERT_PRO
 
@@ -171,7 +171,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this PurchaseCertificateRequestBody.
+        r"""Gets the domain_type of this PurchaseCertificateRequestBody.
 
         域名类型，取值如下： - SINGLE_DOMAIN：单域名类型。 - MULTI_DOMAIN：多域名类型。 - WILDCARD：泛域名类型。
 
@@ -182,7 +182,7 @@ class PurchaseCertificateRequestBody:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this PurchaseCertificateRequestBody.
+        r"""Sets the domain_type of this PurchaseCertificateRequestBody.
 
         域名类型，取值如下： - SINGLE_DOMAIN：单域名类型。 - MULTI_DOMAIN：多域名类型。 - WILDCARD：泛域名类型。
 
@@ -193,7 +193,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this PurchaseCertificateRequestBody.
+        r"""Gets the effective_time of this PurchaseCertificateRequestBody.
 
         证书有效期（年）。
 
@@ -204,7 +204,7 @@ class PurchaseCertificateRequestBody:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this PurchaseCertificateRequestBody.
+        r"""Sets the effective_time of this PurchaseCertificateRequestBody.
 
         证书有效期（年）。
 
@@ -215,7 +215,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def domain_numbers(self):
-        """Gets the domain_numbers of this PurchaseCertificateRequestBody.
+        r"""Gets the domain_numbers of this PurchaseCertificateRequestBody.
 
         域名数量。 - 当“domain_type”选择的是“SINGLE_DOMAIN”或“WILDCARD”类型的证书时，域名数量取值为“1”。 - 当“domain_type”选择的是“MULTI_DOMAIN”类型的证书时，域名数量取值范围为“2~100”。
 
@@ -226,7 +226,7 @@ class PurchaseCertificateRequestBody:
 
     @domain_numbers.setter
     def domain_numbers(self, domain_numbers):
-        """Sets the domain_numbers of this PurchaseCertificateRequestBody.
+        r"""Sets the domain_numbers of this PurchaseCertificateRequestBody.
 
         域名数量。 - 当“domain_type”选择的是“SINGLE_DOMAIN”或“WILDCARD”类型的证书时，域名数量取值为“1”。 - 当“domain_type”选择的是“MULTI_DOMAIN”类型的证书时，域名数量取值范围为“2~100”。
 
@@ -237,7 +237,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def order_number(self):
-        """Gets the order_number of this PurchaseCertificateRequestBody.
+        r"""Gets the order_number of this PurchaseCertificateRequestBody.
 
         购买的证书数量。取值范围为1~100。
 
@@ -248,7 +248,7 @@ class PurchaseCertificateRequestBody:
 
     @order_number.setter
     def order_number(self, order_number):
-        """Sets the order_number of this PurchaseCertificateRequestBody.
+        r"""Sets the order_number of this PurchaseCertificateRequestBody.
 
         购买的证书数量。取值范围为1~100。
 
@@ -259,7 +259,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def agree_privacy_protection(self):
-        """Gets the agree_privacy_protection of this PurchaseCertificateRequestBody.
+        r"""Gets the agree_privacy_protection of this PurchaseCertificateRequestBody.
 
         是否同意隐私协议，此处仅能设置为true才能成功购买证书。 - true：同意隐私协议。 - false：不同意隐私协议。
 
@@ -270,7 +270,7 @@ class PurchaseCertificateRequestBody:
 
     @agree_privacy_protection.setter
     def agree_privacy_protection(self, agree_privacy_protection):
-        """Sets the agree_privacy_protection of this PurchaseCertificateRequestBody.
+        r"""Sets the agree_privacy_protection of this PurchaseCertificateRequestBody.
 
         是否同意隐私协议，此处仅能设置为true才能成功购买证书。 - true：同意隐私协议。 - false：不同意隐私协议。
 
@@ -281,7 +281,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def primary_domain_type(self):
-        """Gets the primary_domain_type of this PurchaseCertificateRequestBody.
+        r"""Gets the primary_domain_type of this PurchaseCertificateRequestBody.
 
         多域名中的主域名类型。 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
 
@@ -292,7 +292,7 @@ class PurchaseCertificateRequestBody:
 
     @primary_domain_type.setter
     def primary_domain_type(self, primary_domain_type):
-        """Sets the primary_domain_type of this PurchaseCertificateRequestBody.
+        r"""Sets the primary_domain_type of this PurchaseCertificateRequestBody.
 
         多域名中的主域名类型。 - SINGLE_DOMAIN：主单域名 - WILDCARD_DOMAIN：主泛域名
 
@@ -303,7 +303,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def single_domain_number(self):
-        """Gets the single_domain_number of this PurchaseCertificateRequestBody.
+        r"""Gets the single_domain_number of this PurchaseCertificateRequestBody.
 
         附加单域名数量。
 
@@ -314,7 +314,7 @@ class PurchaseCertificateRequestBody:
 
     @single_domain_number.setter
     def single_domain_number(self, single_domain_number):
-        """Sets the single_domain_number of this PurchaseCertificateRequestBody.
+        r"""Sets the single_domain_number of this PurchaseCertificateRequestBody.
 
         附加单域名数量。
 
@@ -325,7 +325,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def wildcard_domain_number(self):
-        """Gets the wildcard_domain_number of this PurchaseCertificateRequestBody.
+        r"""Gets the wildcard_domain_number of this PurchaseCertificateRequestBody.
 
         附加泛域名数量。
 
@@ -336,7 +336,7 @@ class PurchaseCertificateRequestBody:
 
     @wildcard_domain_number.setter
     def wildcard_domain_number(self, wildcard_domain_number):
-        """Sets the wildcard_domain_number of this PurchaseCertificateRequestBody.
+        r"""Sets the wildcard_domain_number of this PurchaseCertificateRequestBody.
 
         附加泛域名数量。
 
@@ -347,7 +347,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this PurchaseCertificateRequestBody.
+        r"""Gets the is_auto_pay of this PurchaseCertificateRequestBody.
 
         是否开启自动支付。 - true：开启自动支付。 - false：不开启自动支付。
 
@@ -358,7 +358,7 @@ class PurchaseCertificateRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this PurchaseCertificateRequestBody.
+        r"""Sets the is_auto_pay of this PurchaseCertificateRequestBody.
 
         是否开启自动支付。 - true：开启自动支付。 - false：不开启自动支付。
 
@@ -369,7 +369,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PurchaseCertificateRequestBody.
+        r"""Gets the enterprise_project_id of this PurchaseCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -380,7 +380,7 @@ class PurchaseCertificateRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PurchaseCertificateRequestBody.
+        r"""Sets the enterprise_project_id of this PurchaseCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -391,7 +391,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def order_id(self):
-        """Gets the order_id of this PurchaseCertificateRequestBody.
+        r"""Gets the order_id of this PurchaseCertificateRequestBody.
 
         订单号。仅组合购买场景使用。
 
@@ -402,7 +402,7 @@ class PurchaseCertificateRequestBody:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PurchaseCertificateRequestBody.
+        r"""Sets the order_id of this PurchaseCertificateRequestBody.
 
         订单号。仅组合购买场景使用。
 
@@ -413,7 +413,7 @@ class PurchaseCertificateRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this PurchaseCertificateRequestBody.
+        r"""Gets the tags of this PurchaseCertificateRequestBody.
 
         标签列表。
 
@@ -424,7 +424,7 @@ class PurchaseCertificateRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PurchaseCertificateRequestBody.
+        r"""Sets the tags of this PurchaseCertificateRequestBody.
 
         标签列表。
 

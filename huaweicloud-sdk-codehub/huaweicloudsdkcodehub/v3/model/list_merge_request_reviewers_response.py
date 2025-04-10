@@ -28,7 +28,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ListMergeRequestReviewersResponse
+        r"""ListMergeRequestReviewersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListMergeRequestReviewersResponse.
+        r"""Gets the result of this ListMergeRequestReviewersResponse.
 
         :return: The result of this ListMergeRequestReviewersResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeRequestApprovalReviewersDto`
@@ -60,7 +60,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListMergeRequestReviewersResponse.
+        r"""Sets the result of this ListMergeRequestReviewersResponse.
 
         :param result: The result of this ListMergeRequestReviewersResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.MergeRequestApprovalReviewersDto`
@@ -69,7 +69,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListMergeRequestReviewersResponse.
+        r"""Gets the status of this ListMergeRequestReviewersResponse.
 
         响应状态
 
@@ -80,7 +80,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMergeRequestReviewersResponse.
+        r"""Sets the status of this ListMergeRequestReviewersResponse.
 
         响应状态
 

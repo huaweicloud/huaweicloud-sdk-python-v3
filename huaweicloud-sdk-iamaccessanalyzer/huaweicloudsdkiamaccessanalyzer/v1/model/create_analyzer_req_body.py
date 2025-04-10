@@ -32,7 +32,7 @@ class CreateAnalyzerReqBody:
     }
 
     def __init__(self, configuration=None, name=None, tags=None, type=None):
-        """CreateAnalyzerReqBody
+        r"""CreateAnalyzerReqBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateAnalyzerReqBody:
 
     @property
     def configuration(self):
-        """Gets the configuration of this CreateAnalyzerReqBody.
+        r"""Gets the configuration of this CreateAnalyzerReqBody.
 
         :return: The configuration of this CreateAnalyzerReqBody.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
@@ -72,7 +72,7 @@ class CreateAnalyzerReqBody:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this CreateAnalyzerReqBody.
+        r"""Sets the configuration of this CreateAnalyzerReqBody.
 
         :param configuration: The configuration of this CreateAnalyzerReqBody.
         :type configuration: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfiguration`
@@ -81,7 +81,7 @@ class CreateAnalyzerReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateAnalyzerReqBody.
+        r"""Gets the name of this CreateAnalyzerReqBody.
 
         分析器的名称。
 
@@ -92,7 +92,7 @@ class CreateAnalyzerReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAnalyzerReqBody.
+        r"""Sets the name of this CreateAnalyzerReqBody.
 
         分析器的名称。
 
@@ -103,7 +103,7 @@ class CreateAnalyzerReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateAnalyzerReqBody.
+        r"""Gets the tags of this CreateAnalyzerReqBody.
 
         自定义标签列表。
 
@@ -114,7 +114,7 @@ class CreateAnalyzerReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateAnalyzerReqBody.
+        r"""Sets the tags of this CreateAnalyzerReqBody.
 
         自定义标签列表。
 
@@ -125,7 +125,7 @@ class CreateAnalyzerReqBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateAnalyzerReqBody.
+        r"""Gets the type of this CreateAnalyzerReqBody.
 
         :return: The type of this CreateAnalyzerReqBody.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
@@ -134,7 +134,7 @@ class CreateAnalyzerReqBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateAnalyzerReqBody.
+        r"""Sets the type of this CreateAnalyzerReqBody.
 
         :param type: The type of this CreateAnalyzerReqBody.
         :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`

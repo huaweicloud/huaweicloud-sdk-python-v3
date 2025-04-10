@@ -24,7 +24,7 @@ class BatchAddScalingInstancesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAddScalingInstancesResponse
+        r"""BatchAddScalingInstancesResponse
 
         The model defined in huaweicloud sdk
 

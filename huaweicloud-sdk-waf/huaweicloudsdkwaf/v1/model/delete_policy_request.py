@@ -27,7 +27,7 @@ class DeletePolicyRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None):
-        """DeletePolicyRequest
+        r"""DeletePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeletePolicyRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeletePolicyRequest.
+        r"""Gets the enterprise_project_id of this DeletePolicyRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -60,7 +60,7 @@ class DeletePolicyRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeletePolicyRequest.
+        r"""Sets the enterprise_project_id of this DeletePolicyRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -71,7 +71,7 @@ class DeletePolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeletePolicyRequest.
+        r"""Gets the policy_id of this DeletePolicyRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -82,7 +82,7 @@ class DeletePolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeletePolicyRequest.
+        r"""Sets the policy_id of this DeletePolicyRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 

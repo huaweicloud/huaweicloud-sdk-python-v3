@@ -31,7 +31,7 @@ class TaskData:
     }
 
     def __init__(self, streams=None, task_id=None, start_time_info=None, source_usage_estimate=None):
-        """TaskData
+        r"""TaskData
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class TaskData:
 
     @property
     def streams(self):
-        """Gets the streams of this TaskData.
+        r"""Gets the streams of this TaskData.
 
         作业流详情
 
@@ -74,7 +74,7 @@ class TaskData:
 
     @streams.setter
     def streams(self, streams):
-        """Sets the streams of this TaskData.
+        r"""Sets the streams of this TaskData.
 
         作业流详情
 
@@ -85,7 +85,7 @@ class TaskData:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskData.
+        r"""Gets the task_id of this TaskData.
 
         作业id
 
@@ -96,7 +96,7 @@ class TaskData:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskData.
+        r"""Sets the task_id of this TaskData.
 
         作业id
 
@@ -107,7 +107,7 @@ class TaskData:
 
     @property
     def start_time_info(self):
-        """Gets the start_time_info of this TaskData.
+        r"""Gets the start_time_info of this TaskData.
 
         :return: The start_time_info of this TaskData.
         :rtype: :class:`huaweicloudsdkhilens.v3.StartTimeInfo`
@@ -116,7 +116,7 @@ class TaskData:
 
     @start_time_info.setter
     def start_time_info(self, start_time_info):
-        """Sets the start_time_info of this TaskData.
+        r"""Sets the start_time_info of this TaskData.
 
         :param start_time_info: The start_time_info of this TaskData.
         :type start_time_info: :class:`huaweicloudsdkhilens.v3.StartTimeInfo`
@@ -125,7 +125,7 @@ class TaskData:
 
     @property
     def source_usage_estimate(self):
-        """Gets the source_usage_estimate of this TaskData.
+        r"""Gets the source_usage_estimate of this TaskData.
 
         :return: The source_usage_estimate of this TaskData.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskSourceUsageEstimate`
@@ -134,7 +134,7 @@ class TaskData:
 
     @source_usage_estimate.setter
     def source_usage_estimate(self, source_usage_estimate):
-        """Sets the source_usage_estimate of this TaskData.
+        r"""Sets the source_usage_estimate of this TaskData.
 
         :param source_usage_estimate: The source_usage_estimate of this TaskData.
         :type source_usage_estimate: :class:`huaweicloudsdkhilens.v3.TaskSourceUsageEstimate`

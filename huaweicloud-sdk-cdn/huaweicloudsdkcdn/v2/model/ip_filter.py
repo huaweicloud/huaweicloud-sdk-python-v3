@@ -27,7 +27,7 @@ class IpFilter:
     }
 
     def __init__(self, type=None, value=None):
-        """IpFilter
+        r"""IpFilter
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IpFilter:
 
     @property
     def type(self):
-        """Gets the type of this IpFilter.
+        r"""Gets the type of this IpFilter.
 
         IP黑白名单类型，off：关闭IP黑白名单，black：IP黑名单，white：IP白名单。
 
@@ -60,7 +60,7 @@ class IpFilter:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IpFilter.
+        r"""Sets the type of this IpFilter.
 
         IP黑白名单类型，off：关闭IP黑白名单，black：IP黑名单，white：IP白名单。
 
@@ -71,7 +71,7 @@ class IpFilter:
 
     @property
     def value(self):
-        """Gets the value of this IpFilter.
+        r"""Gets the value of this IpFilter.
 
         配置IP黑白名单，当type=off时，非必传， 支持IPv6,支持配置IP地址和IP&掩码格式的网段, 多条规则用“,”分割,最多支持配置150个, 多个完全重复的IP/IP段将合并为一个,不支持带通配符的地址，如192.168.0.*。
 
@@ -82,7 +82,7 @@ class IpFilter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this IpFilter.
+        r"""Sets the value of this IpFilter.
 
         配置IP黑白名单，当type=off时，非必传， 支持IPv6,支持配置IP地址和IP&掩码格式的网段, 多条规则用“,”分割,最多支持配置150个, 多个完全重复的IP/IP段将合并为一个,不支持带通配符的地址，如192.168.0.*。
 

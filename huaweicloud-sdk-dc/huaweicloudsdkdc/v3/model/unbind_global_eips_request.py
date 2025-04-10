@@ -27,7 +27,7 @@ class UnbindGlobalEipsRequest:
     }
 
     def __init__(self, connect_gateway_id=None, body=None):
-        """UnbindGlobalEipsRequest
+        r"""UnbindGlobalEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UnbindGlobalEipsRequest:
 
     @property
     def connect_gateway_id(self):
-        """Gets the connect_gateway_id of this UnbindGlobalEipsRequest.
+        r"""Gets the connect_gateway_id of this UnbindGlobalEipsRequest.
 
         互联网关ID
 
@@ -60,7 +60,7 @@ class UnbindGlobalEipsRequest:
 
     @connect_gateway_id.setter
     def connect_gateway_id(self, connect_gateway_id):
-        """Sets the connect_gateway_id of this UnbindGlobalEipsRequest.
+        r"""Sets the connect_gateway_id of this UnbindGlobalEipsRequest.
 
         互联网关ID
 
@@ -71,7 +71,7 @@ class UnbindGlobalEipsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnbindGlobalEipsRequest.
+        r"""Gets the body of this UnbindGlobalEipsRequest.
 
         :return: The body of this UnbindGlobalEipsRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateUnbindingGeipRequestBody`
@@ -80,7 +80,7 @@ class UnbindGlobalEipsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnbindGlobalEipsRequest.
+        r"""Sets the body of this UnbindGlobalEipsRequest.
 
         :param body: The body of this UnbindGlobalEipsRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateUnbindingGeipRequestBody`

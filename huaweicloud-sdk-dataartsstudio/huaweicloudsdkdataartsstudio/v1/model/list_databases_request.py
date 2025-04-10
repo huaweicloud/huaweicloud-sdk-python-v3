@@ -31,7 +31,7 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, workspace=None, connection_id=None, limit=None, offset=None):
-        """ListDatabasesRequest
+        r"""ListDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListDatabasesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDatabasesRequest.
+        r"""Gets the workspace of this ListDatabasesRequest.
 
         数据所在空间的id值
 
@@ -73,7 +73,7 @@ class ListDatabasesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDatabasesRequest.
+        r"""Sets the workspace of this ListDatabasesRequest.
 
         数据所在空间的id值
 
@@ -84,7 +84,7 @@ class ListDatabasesRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListDatabasesRequest.
+        r"""Gets the connection_id of this ListDatabasesRequest.
 
         数据连接id
 
@@ -95,7 +95,7 @@ class ListDatabasesRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListDatabasesRequest.
+        r"""Sets the connection_id of this ListDatabasesRequest.
 
         数据连接id
 
@@ -106,7 +106,7 @@ class ListDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabasesRequest.
+        r"""Gets the limit of this ListDatabasesRequest.
 
         数据条数限制
 
@@ -117,7 +117,7 @@ class ListDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabasesRequest.
+        r"""Sets the limit of this ListDatabasesRequest.
 
         数据条数限制
 
@@ -128,7 +128,7 @@ class ListDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatabasesRequest.
+        r"""Gets the offset of this ListDatabasesRequest.
 
         偏移量
 
@@ -139,7 +139,7 @@ class ListDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatabasesRequest.
+        r"""Sets the offset of this ListDatabasesRequest.
 
         偏移量
 

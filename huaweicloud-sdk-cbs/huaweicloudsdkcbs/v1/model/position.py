@@ -27,7 +27,7 @@ class Position:
     }
 
     def __init__(self, x=None, y=None):
-        """Position
+        r"""Position
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Position:
 
     @property
     def x(self):
-        """Gets the x of this Position.
+        r"""Gets the x of this Position.
 
         像素坐标x
 
@@ -59,7 +59,7 @@ class Position:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this Position.
+        r"""Sets the x of this Position.
 
         像素坐标x
 
@@ -70,7 +70,7 @@ class Position:
 
     @property
     def y(self):
-        """Gets the y of this Position.
+        r"""Gets the y of this Position.
 
         像素坐标x
 
@@ -81,7 +81,7 @@ class Position:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this Position.
+        r"""Sets the y of this Position.
 
         像素坐标x
 

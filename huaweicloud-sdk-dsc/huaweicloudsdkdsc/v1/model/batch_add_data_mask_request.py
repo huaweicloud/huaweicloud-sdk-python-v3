@@ -25,7 +25,7 @@ class BatchAddDataMaskRequest:
     }
 
     def __init__(self, body=None):
-        """BatchAddDataMaskRequest
+        r"""BatchAddDataMaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAddDataMaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddDataMaskRequest.
+        r"""Gets the body of this BatchAddDataMaskRequest.
 
         :return: The body of this BatchAddDataMaskRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.DynamicDataMask`
@@ -52,7 +52,7 @@ class BatchAddDataMaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddDataMaskRequest.
+        r"""Sets the body of this BatchAddDataMaskRequest.
 
         :param body: The body of this BatchAddDataMaskRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.DynamicDataMask`

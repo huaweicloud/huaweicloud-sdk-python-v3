@@ -25,7 +25,7 @@ class ShowKmsTagsRequest:
     }
 
     def __init__(self, key_id=None):
-        """ShowKmsTagsRequest
+        r"""ShowKmsTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowKmsTagsRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ShowKmsTagsRequest.
+        r"""Gets the key_id of this ShowKmsTagsRequest.
 
         密钥ID
 
@@ -53,7 +53,7 @@ class ShowKmsTagsRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ShowKmsTagsRequest.
+        r"""Sets the key_id of this ShowKmsTagsRequest.
 
         密钥ID
 

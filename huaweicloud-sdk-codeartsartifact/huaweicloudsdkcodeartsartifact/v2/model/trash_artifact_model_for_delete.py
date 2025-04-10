@@ -33,7 +33,7 @@ class TrashArtifactModelForDelete:
     }
 
     def __init__(self, id=None, fomat=None, uri=None, status=None, include_pattern=None):
-        """TrashArtifactModelForDelete
+        r"""TrashArtifactModelForDelete
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class TrashArtifactModelForDelete:
 
     @property
     def id(self):
-        """Gets the id of this TrashArtifactModelForDelete.
+        r"""Gets the id of this TrashArtifactModelForDelete.
 
         仓库id
 
@@ -78,7 +78,7 @@ class TrashArtifactModelForDelete:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TrashArtifactModelForDelete.
+        r"""Sets the id of this TrashArtifactModelForDelete.
 
         仓库id
 
@@ -89,7 +89,7 @@ class TrashArtifactModelForDelete:
 
     @property
     def fomat(self):
-        """Gets the fomat of this TrashArtifactModelForDelete.
+        r"""Gets the fomat of this TrashArtifactModelForDelete.
 
         仓库类型
 
@@ -100,7 +100,7 @@ class TrashArtifactModelForDelete:
 
     @fomat.setter
     def fomat(self, fomat):
-        """Sets the fomat of this TrashArtifactModelForDelete.
+        r"""Sets the fomat of this TrashArtifactModelForDelete.
 
         仓库类型
 
@@ -111,7 +111,7 @@ class TrashArtifactModelForDelete:
 
     @property
     def uri(self):
-        """Gets the uri of this TrashArtifactModelForDelete.
+        r"""Gets the uri of this TrashArtifactModelForDelete.
 
         URI
 
@@ -122,7 +122,7 @@ class TrashArtifactModelForDelete:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TrashArtifactModelForDelete.
+        r"""Sets the uri of this TrashArtifactModelForDelete.
 
         URI
 
@@ -133,7 +133,7 @@ class TrashArtifactModelForDelete:
 
     @property
     def status(self):
-        """Gets the status of this TrashArtifactModelForDelete.
+        r"""Gets the status of this TrashArtifactModelForDelete.
 
         状态
 
@@ -144,7 +144,7 @@ class TrashArtifactModelForDelete:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TrashArtifactModelForDelete.
+        r"""Sets the status of this TrashArtifactModelForDelete.
 
         状态
 
@@ -155,7 +155,7 @@ class TrashArtifactModelForDelete:
 
     @property
     def include_pattern(self):
-        """Gets the include_pattern of this TrashArtifactModelForDelete.
+        r"""Gets the include_pattern of this TrashArtifactModelForDelete.
 
         路径白名单
 
@@ -166,7 +166,7 @@ class TrashArtifactModelForDelete:
 
     @include_pattern.setter
     def include_pattern(self, include_pattern):
-        """Sets the include_pattern of this TrashArtifactModelForDelete.
+        r"""Sets the include_pattern of this TrashArtifactModelForDelete.
 
         路径白名单
 

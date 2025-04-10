@@ -34,7 +34,7 @@ class ShowOperationResponse(SdkResponse):
     }
 
     def __init__(self, operation_id=None, percentage_complete=None, status=None, percentage_details=None, message=None):
-        """ShowOperationResponse
+        r"""ShowOperationResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowOperationResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this ShowOperationResponse.
+        r"""Gets the operation_id of this ShowOperationResponse.
 
         操作ID。
 
@@ -83,7 +83,7 @@ class ShowOperationResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this ShowOperationResponse.
+        r"""Sets the operation_id of this ShowOperationResponse.
 
         操作ID。
 
@@ -94,7 +94,7 @@ class ShowOperationResponse(SdkResponse):
 
     @property
     def percentage_complete(self):
-        """Gets the percentage_complete of this ShowOperationResponse.
+        r"""Gets the percentage_complete of this ShowOperationResponse.
 
         完成进度百分比。
 
@@ -105,7 +105,7 @@ class ShowOperationResponse(SdkResponse):
 
     @percentage_complete.setter
     def percentage_complete(self, percentage_complete):
-        """Sets the percentage_complete of this ShowOperationResponse.
+        r"""Sets the percentage_complete of this ShowOperationResponse.
 
         完成进度百分比。
 
@@ -116,7 +116,7 @@ class ShowOperationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowOperationResponse.
+        r"""Gets the status of this ShowOperationResponse.
 
         状态。
 
@@ -127,7 +127,7 @@ class ShowOperationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowOperationResponse.
+        r"""Sets the status of this ShowOperationResponse.
 
         状态。
 
@@ -138,7 +138,7 @@ class ShowOperationResponse(SdkResponse):
 
     @property
     def percentage_details(self):
-        """Gets the percentage_details of this ShowOperationResponse.
+        r"""Gets the percentage_details of this ShowOperationResponse.
 
         创建账号、纳管注册OU、纳管账号的详细进度信息。
 
@@ -149,7 +149,7 @@ class ShowOperationResponse(SdkResponse):
 
     @percentage_details.setter
     def percentage_details(self, percentage_details):
-        """Sets the percentage_details of this ShowOperationResponse.
+        r"""Sets the percentage_details of this ShowOperationResponse.
 
         创建账号、纳管注册OU、纳管账号的详细进度信息。
 
@@ -160,7 +160,7 @@ class ShowOperationResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowOperationResponse.
+        r"""Gets the message of this ShowOperationResponse.
 
         创建账号、纳管注册OU、纳管账号的错误信息描述。
 
@@ -171,7 +171,7 @@ class ShowOperationResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowOperationResponse.
+        r"""Sets the message of this ShowOperationResponse.
 
         创建账号、纳管注册OU、纳管账号的错误信息描述。
 

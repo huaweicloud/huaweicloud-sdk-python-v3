@@ -29,7 +29,7 @@ class BatchOperateJobRsp:
     }
 
     def __init__(self, id=None, status=None, message=None):
-        """BatchOperateJobRsp
+        r"""BatchOperateJobRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchOperateJobRsp:
 
     @property
     def id(self):
-        """Gets the id of this BatchOperateJobRsp.
+        r"""Gets the id of this BatchOperateJobRsp.
 
         作业id
 
@@ -68,7 +68,7 @@ class BatchOperateJobRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchOperateJobRsp.
+        r"""Sets the id of this BatchOperateJobRsp.
 
         作业id
 
@@ -79,7 +79,7 @@ class BatchOperateJobRsp:
 
     @property
     def status(self):
-        """Gets the status of this BatchOperateJobRsp.
+        r"""Gets the status of this BatchOperateJobRsp.
 
         :return: The status of this BatchOperateJobRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobStatus`
@@ -88,7 +88,7 @@ class BatchOperateJobRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchOperateJobRsp.
+        r"""Sets the status of this BatchOperateJobRsp.
 
         :param status: The status of this BatchOperateJobRsp.
         :type status: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobStatus`
@@ -97,7 +97,7 @@ class BatchOperateJobRsp:
 
     @property
     def message(self):
-        """Gets the message of this BatchOperateJobRsp.
+        r"""Gets the message of this BatchOperateJobRsp.
 
         操作结果失败信息，仅在操作失败时会返回
 
@@ -108,7 +108,7 @@ class BatchOperateJobRsp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this BatchOperateJobRsp.
+        r"""Sets the message of this BatchOperateJobRsp.
 
         操作结果失败信息，仅在操作失败时会返回
 

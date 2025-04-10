@@ -33,7 +33,7 @@ class VolumeAttach:
     }
 
     def __init__(self, id=None, delete_on_termination=None, device=None, boot_index=None, size=None):
-        """VolumeAttach
+        r"""VolumeAttach
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class VolumeAttach:
 
     @property
     def id(self):
-        """Gets the id of this VolumeAttach.
+        r"""Gets the id of this VolumeAttach.
 
         云磁盘ID。
 
@@ -81,7 +81,7 @@ class VolumeAttach:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeAttach.
+        r"""Sets the id of this VolumeAttach.
 
         云磁盘ID。
 
@@ -92,7 +92,7 @@ class VolumeAttach:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this VolumeAttach.
+        r"""Gets the delete_on_termination of this VolumeAttach.
 
         一个标志，指示在删除服务器时是否删除附加的卷。 默认情况下，这是False
 
@@ -103,7 +103,7 @@ class VolumeAttach:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this VolumeAttach.
+        r"""Sets the delete_on_termination of this VolumeAttach.
 
         一个标志，指示在删除服务器时是否删除附加的卷。 默认情况下，这是False
 
@@ -114,7 +114,7 @@ class VolumeAttach:
 
     @property
     def device(self):
-        """Gets the device of this VolumeAttach.
+        r"""Gets the device of this VolumeAttach.
 
         挂载点
 
@@ -125,7 +125,7 @@ class VolumeAttach:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this VolumeAttach.
+        r"""Sets the device of this VolumeAttach.
 
         挂载点
 
@@ -136,7 +136,7 @@ class VolumeAttach:
 
     @property
     def boot_index(self):
-        """Gets the boot_index of this VolumeAttach.
+        r"""Gets the boot_index of this VolumeAttach.
 
         盘在云服务器上的挂载顺序，0表示启动盘。
 
@@ -147,7 +147,7 @@ class VolumeAttach:
 
     @boot_index.setter
     def boot_index(self, boot_index):
-        """Sets the boot_index of this VolumeAttach.
+        r"""Sets the boot_index of this VolumeAttach.
 
         盘在云服务器上的挂载顺序，0表示启动盘。
 
@@ -158,7 +158,7 @@ class VolumeAttach:
 
     @property
     def size(self):
-        """Gets the size of this VolumeAttach.
+        r"""Gets the size of this VolumeAttach.
 
         云盘大小（单位：GB）。
 
@@ -169,7 +169,7 @@ class VolumeAttach:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeAttach.
+        r"""Sets the size of this VolumeAttach.
 
         云盘大小（单位：GB）。
 

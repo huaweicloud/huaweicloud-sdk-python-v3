@@ -39,7 +39,7 @@ class ListSubscriptionsRequest:
     }
 
     def __init__(self, channel_id=None, offset=None, limit=None, sort=None, name=None, fuzzy_name=None, connection_id=None, enterprise_project_id=None):
-        """ListSubscriptionsRequest
+        r"""ListSubscriptionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListSubscriptionsRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ListSubscriptionsRequest.
+        r"""Gets the channel_id of this ListSubscriptionsRequest.
 
         指定查询的事件通道ID
 
@@ -103,7 +103,7 @@ class ListSubscriptionsRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ListSubscriptionsRequest.
+        r"""Sets the channel_id of this ListSubscriptionsRequest.
 
         指定查询的事件通道ID
 
@@ -114,7 +114,7 @@ class ListSubscriptionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubscriptionsRequest.
+        r"""Gets the offset of this ListSubscriptionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -125,7 +125,7 @@ class ListSubscriptionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubscriptionsRequest.
+        r"""Sets the offset of this ListSubscriptionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -136,7 +136,7 @@ class ListSubscriptionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubscriptionsRequest.
+        r"""Gets the limit of this ListSubscriptionsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -147,7 +147,7 @@ class ListSubscriptionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubscriptionsRequest.
+        r"""Sets the limit of this ListSubscriptionsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -158,7 +158,7 @@ class ListSubscriptionsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListSubscriptionsRequest.
+        r"""Gets the sort of this ListSubscriptionsRequest.
 
         指定查询排序
 
@@ -169,7 +169,7 @@ class ListSubscriptionsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListSubscriptionsRequest.
+        r"""Sets the sort of this ListSubscriptionsRequest.
 
         指定查询排序
 
@@ -180,7 +180,7 @@ class ListSubscriptionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSubscriptionsRequest.
+        r"""Gets the name of this ListSubscriptionsRequest.
 
         指定查询的事件订阅名称，精准匹配
 
@@ -191,7 +191,7 @@ class ListSubscriptionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSubscriptionsRequest.
+        r"""Sets the name of this ListSubscriptionsRequest.
 
         指定查询的事件订阅名称，精准匹配
 
@@ -202,7 +202,7 @@ class ListSubscriptionsRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListSubscriptionsRequest.
+        r"""Gets the fuzzy_name of this ListSubscriptionsRequest.
 
         指定查询的事件订阅名称，模糊匹配
 
@@ -213,7 +213,7 @@ class ListSubscriptionsRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListSubscriptionsRequest.
+        r"""Sets the fuzzy_name of this ListSubscriptionsRequest.
 
         指定查询的事件订阅名称，模糊匹配
 
@@ -224,7 +224,7 @@ class ListSubscriptionsRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListSubscriptionsRequest.
+        r"""Gets the connection_id of this ListSubscriptionsRequest.
 
         目标连接 id
 
@@ -235,7 +235,7 @@ class ListSubscriptionsRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListSubscriptionsRequest.
+        r"""Sets the connection_id of this ListSubscriptionsRequest.
 
         目标连接 id
 
@@ -246,7 +246,7 @@ class ListSubscriptionsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSubscriptionsRequest.
+        r"""Gets the enterprise_project_id of this ListSubscriptionsRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -257,7 +257,7 @@ class ListSubscriptionsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSubscriptionsRequest.
+        r"""Sets the enterprise_project_id of this ListSubscriptionsRequest.
 
         创建订阅时所使用的企业项目id
 

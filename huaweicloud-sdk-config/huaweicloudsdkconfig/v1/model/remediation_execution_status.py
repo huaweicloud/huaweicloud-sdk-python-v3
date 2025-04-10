@@ -31,7 +31,7 @@ class RemediationExecutionStatus:
     }
 
     def __init__(self, resource_key=None, invocation_time=None, state=None, message=None):
-        """RemediationExecutionStatus
+        r"""RemediationExecutionStatus
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RemediationExecutionStatus:
 
     @property
     def resource_key(self):
-        """Gets the resource_key of this RemediationExecutionStatus.
+        r"""Gets the resource_key of this RemediationExecutionStatus.
 
         :return: The resource_key of this RemediationExecutionStatus.
         :rtype: :class:`huaweicloudsdkconfig.v1.RemediationResourceKey`
@@ -73,7 +73,7 @@ class RemediationExecutionStatus:
 
     @resource_key.setter
     def resource_key(self, resource_key):
-        """Sets the resource_key of this RemediationExecutionStatus.
+        r"""Sets the resource_key of this RemediationExecutionStatus.
 
         :param resource_key: The resource_key of this RemediationExecutionStatus.
         :type resource_key: :class:`huaweicloudsdkconfig.v1.RemediationResourceKey`
@@ -82,7 +82,7 @@ class RemediationExecutionStatus:
 
     @property
     def invocation_time(self):
-        """Gets the invocation_time of this RemediationExecutionStatus.
+        r"""Gets the invocation_time of this RemediationExecutionStatus.
 
         补救执行的开始时间。
 
@@ -93,7 +93,7 @@ class RemediationExecutionStatus:
 
     @invocation_time.setter
     def invocation_time(self, invocation_time):
-        """Sets the invocation_time of this RemediationExecutionStatus.
+        r"""Sets the invocation_time of this RemediationExecutionStatus.
 
         补救执行的开始时间。
 
@@ -104,7 +104,7 @@ class RemediationExecutionStatus:
 
     @property
     def state(self):
-        """Gets the state of this RemediationExecutionStatus.
+        r"""Gets the state of this RemediationExecutionStatus.
 
         合规规则修正执行的状态。
 
@@ -115,7 +115,7 @@ class RemediationExecutionStatus:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RemediationExecutionStatus.
+        r"""Sets the state of this RemediationExecutionStatus.
 
         合规规则修正执行的状态。
 
@@ -126,7 +126,7 @@ class RemediationExecutionStatus:
 
     @property
     def message(self):
-        """Gets the message of this RemediationExecutionStatus.
+        r"""Gets the message of this RemediationExecutionStatus.
 
         合规规则修正执行的信息。
 
@@ -137,7 +137,7 @@ class RemediationExecutionStatus:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RemediationExecutionStatus.
+        r"""Sets the message of this RemediationExecutionStatus.
 
         合规规则修正执行的信息。
 

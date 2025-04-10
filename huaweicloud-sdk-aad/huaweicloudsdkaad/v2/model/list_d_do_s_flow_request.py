@@ -33,7 +33,7 @@ class ListDDoSFlowRequest:
     }
 
     def __init__(self, instance_id=None, ip=None, type=None, start_time=None, end_time=None):
-        """ListDDoSFlowRequest
+        r"""ListDDoSFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListDDoSFlowRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDDoSFlowRequest.
+        r"""Gets the instance_id of this ListDDoSFlowRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ListDDoSFlowRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDDoSFlowRequest.
+        r"""Sets the instance_id of this ListDDoSFlowRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListDDoSFlowRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListDDoSFlowRequest.
+        r"""Gets the ip of this ListDDoSFlowRequest.
 
         高防IP
 
@@ -99,7 +99,7 @@ class ListDDoSFlowRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListDDoSFlowRequest.
+        r"""Sets the ip of this ListDDoSFlowRequest.
 
         高防IP
 
@@ -110,7 +110,7 @@ class ListDDoSFlowRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDDoSFlowRequest.
+        r"""Gets the type of this ListDDoSFlowRequest.
 
         请求类型 pps、bps
 
@@ -121,7 +121,7 @@ class ListDDoSFlowRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDDoSFlowRequest.
+        r"""Sets the type of this ListDDoSFlowRequest.
 
         请求类型 pps、bps
 
@@ -132,7 +132,7 @@ class ListDDoSFlowRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDDoSFlowRequest.
+        r"""Gets the start_time of this ListDDoSFlowRequest.
 
         开始时间（毫秒时间戳）
 
@@ -143,7 +143,7 @@ class ListDDoSFlowRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDDoSFlowRequest.
+        r"""Sets the start_time of this ListDDoSFlowRequest.
 
         开始时间（毫秒时间戳）
 
@@ -154,7 +154,7 @@ class ListDDoSFlowRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDDoSFlowRequest.
+        r"""Gets the end_time of this ListDDoSFlowRequest.
 
         结束时间（毫秒时间戳）
 
@@ -165,7 +165,7 @@ class ListDDoSFlowRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDDoSFlowRequest.
+        r"""Sets the end_time of this ListDDoSFlowRequest.
 
         结束时间（毫秒时间戳）
 

@@ -29,7 +29,7 @@ class RouteServerBody:
     }
 
     def __init__(self, back_protocol=None, address=None, port=None):
-        """RouteServerBody
+        r"""RouteServerBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RouteServerBody:
 
     @property
     def back_protocol(self):
-        """Gets the back_protocol of this RouteServerBody.
+        r"""Gets the back_protocol of this RouteServerBody.
 
         WAF转发客户端请求到防护域名源站服务器的协议
 
@@ -68,7 +68,7 @@ class RouteServerBody:
 
     @back_protocol.setter
     def back_protocol(self, back_protocol):
-        """Sets the back_protocol of this RouteServerBody.
+        r"""Sets the back_protocol of this RouteServerBody.
 
         WAF转发客户端请求到防护域名源站服务器的协议
 
@@ -79,7 +79,7 @@ class RouteServerBody:
 
     @property
     def address(self):
-        """Gets the address of this RouteServerBody.
+        r"""Gets the address of this RouteServerBody.
 
         客户端访问的源站服务器的IP地址
 
@@ -90,7 +90,7 @@ class RouteServerBody:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this RouteServerBody.
+        r"""Sets the address of this RouteServerBody.
 
         客户端访问的源站服务器的IP地址
 
@@ -101,7 +101,7 @@ class RouteServerBody:
 
     @property
     def port(self):
-        """Gets the port of this RouteServerBody.
+        r"""Gets the port of this RouteServerBody.
 
         WAF转发客户端请求到源站服务的业务端口
 
@@ -112,7 +112,7 @@ class RouteServerBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RouteServerBody.
+        r"""Sets the port of this RouteServerBody.
 
         WAF转发客户端请求到源站服务的业务端口
 

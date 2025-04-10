@@ -30,7 +30,7 @@ class ShowDiffCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowDiffCommitResponse
+        r"""ShowDiffCommitResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowDiffCommitResponse.
+        r"""Gets the error of this ShowDiffCommitResponse.
 
         :return: The error of this ShowDiffCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowDiffCommitResponse.
+        r"""Sets the error of this ShowDiffCommitResponse.
 
         :param error: The error of this ShowDiffCommitResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowDiffCommitResponse.
+        r"""Gets the result of this ShowDiffCommitResponse.
 
         差异列表
 
@@ -87,7 +87,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowDiffCommitResponse.
+        r"""Sets the result of this ShowDiffCommitResponse.
 
         差异列表
 
@@ -98,7 +98,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDiffCommitResponse.
+        r"""Gets the status of this ShowDiffCommitResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class ShowDiffCommitResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDiffCommitResponse.
+        r"""Sets the status of this ShowDiffCommitResponse.
 
         响应状态
 

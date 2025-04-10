@@ -26,7 +26,7 @@ class ListSimPricePlansResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListSimPricePlansResponse
+        r"""ListSimPricePlansResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSimPricePlansResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListSimPricePlansResponse.
+        r"""Gets the body of this ListSimPricePlansResponse.
 
         :return: The body of this ListSimPricePlansResponse.
         :rtype: list[:class:`huaweicloudsdkgsl.v3.SimPricePlanVO`]
@@ -53,7 +53,7 @@ class ListSimPricePlansResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSimPricePlansResponse.
+        r"""Sets the body of this ListSimPricePlansResponse.
 
         :param body: The body of this ListSimPricePlansResponse.
         :type body: list[:class:`huaweicloudsdkgsl.v3.SimPricePlanVO`]

@@ -27,7 +27,7 @@ class PushCertificateRequestBody:
     }
 
     def __init__(self, target_project=None, target_service=None):
-        """PushCertificateRequestBody
+        r"""PushCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PushCertificateRequestBody:
 
     @property
     def target_project(self):
-        """Gets the target_project of this PushCertificateRequestBody.
+        r"""Gets the target_project of this PushCertificateRequestBody.
 
         推送到的目标服务所在的区域。
 
@@ -59,7 +59,7 @@ class PushCertificateRequestBody:
 
     @target_project.setter
     def target_project(self, target_project):
-        """Sets the target_project of this PushCertificateRequestBody.
+        r"""Sets the target_project of this PushCertificateRequestBody.
 
         推送到的目标服务所在的区域。
 
@@ -70,7 +70,7 @@ class PushCertificateRequestBody:
 
     @property
     def target_service(self):
-        """Gets the target_service of this PushCertificateRequestBody.
+        r"""Gets the target_service of this PushCertificateRequestBody.
 
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
@@ -81,7 +81,7 @@ class PushCertificateRequestBody:
 
     @target_service.setter
     def target_service(self, target_service):
-        """Sets the target_service of this PushCertificateRequestBody.
+        r"""Sets the target_service of this PushCertificateRequestBody.
 
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 

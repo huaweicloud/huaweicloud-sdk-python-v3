@@ -27,7 +27,7 @@ class UpdateChartRequest:
     }
 
     def __init__(self, chart_id=None, body=None):
-        """UpdateChartRequest
+        r"""UpdateChartRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateChartRequest:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this UpdateChartRequest.
+        r"""Gets the chart_id of this UpdateChartRequest.
 
         模板的ID
 
@@ -60,7 +60,7 @@ class UpdateChartRequest:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this UpdateChartRequest.
+        r"""Sets the chart_id of this UpdateChartRequest.
 
         模板的ID
 
@@ -71,7 +71,7 @@ class UpdateChartRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateChartRequest.
+        r"""Gets the body of this UpdateChartRequest.
 
         :return: The body of this UpdateChartRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateChartRequestBody`
@@ -80,7 +80,7 @@ class UpdateChartRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateChartRequest.
+        r"""Sets the body of this UpdateChartRequest.
 
         :param body: The body of this UpdateChartRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpdateChartRequestBody`

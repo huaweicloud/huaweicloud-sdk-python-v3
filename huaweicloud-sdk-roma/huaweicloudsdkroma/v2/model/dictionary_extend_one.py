@@ -23,7 +23,7 @@ class DictionaryExtendOne:
     }
 
     def __init__(self):
-        """DictionaryExtendOne
+        r"""DictionaryExtendOne
 
         The model defined in huaweicloud sdk
 

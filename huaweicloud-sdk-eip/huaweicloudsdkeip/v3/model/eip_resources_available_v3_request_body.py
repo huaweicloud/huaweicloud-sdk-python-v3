@@ -27,7 +27,7 @@ class EipResourcesAvailableV3RequestBody:
     }
 
     def __init__(self, type=None, limit=None):
-        """EipResourcesAvailableV3RequestBody
+        r"""EipResourcesAvailableV3RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EipResourcesAvailableV3RequestBody:
 
     @property
     def type(self):
-        """Gets the type of this EipResourcesAvailableV3RequestBody.
+        r"""Gets the type of this EipResourcesAvailableV3RequestBody.
 
         公共池类型
 
@@ -60,7 +60,7 @@ class EipResourcesAvailableV3RequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EipResourcesAvailableV3RequestBody.
+        r"""Sets the type of this EipResourcesAvailableV3RequestBody.
 
         公共池类型
 
@@ -71,7 +71,7 @@ class EipResourcesAvailableV3RequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this EipResourcesAvailableV3RequestBody.
+        r"""Gets the limit of this EipResourcesAvailableV3RequestBody.
 
         查询的公共池数量
 
@@ -82,7 +82,7 @@ class EipResourcesAvailableV3RequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this EipResourcesAvailableV3RequestBody.
+        r"""Sets the limit of this EipResourcesAvailableV3RequestBody.
 
         查询的公共池数量
 

@@ -27,7 +27,7 @@ class ParamsReqBean:
     }
 
     def __init__(self, key=None, target_value=None):
-        """ParamsReqBean
+        r"""ParamsReqBean
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ParamsReqBean:
 
     @property
     def key(self):
-        """Gets the key of this ParamsReqBean.
+        r"""Gets the key of this ParamsReqBean.
 
         数据库参数名
 
@@ -59,7 +59,7 @@ class ParamsReqBean:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ParamsReqBean.
+        r"""Sets the key of this ParamsReqBean.
 
         数据库参数名
 
@@ -70,7 +70,7 @@ class ParamsReqBean:
 
     @property
     def target_value(self):
-        """Gets the target_value of this ParamsReqBean.
+        r"""Gets the target_value of this ParamsReqBean.
 
         目标数据库参数值
 
@@ -81,7 +81,7 @@ class ParamsReqBean:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this ParamsReqBean.
+        r"""Sets the target_value of this ParamsReqBean.
 
         目标数据库参数值
 

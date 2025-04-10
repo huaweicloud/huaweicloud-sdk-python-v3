@@ -24,7 +24,7 @@ class DownloadImageFileResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadImageFileResponse
+        r"""DownloadImageFileResponse
 
         The model defined in huaweicloud sdk
 

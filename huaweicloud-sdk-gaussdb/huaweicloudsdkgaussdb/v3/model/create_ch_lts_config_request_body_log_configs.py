@@ -31,7 +31,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
     }
 
     def __init__(self, instance_id=None, log_type=None, lts_group_id=None, lts_stream_id=None):
-        """CreateChLtsConfigRequestBodyLogConfigs
+        r"""CreateChLtsConfigRequestBodyLogConfigs
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Gets the instance_id of this CreateChLtsConfigRequestBodyLogConfigs.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Sets the instance_id of this CreateChLtsConfigRequestBodyLogConfigs.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -82,7 +82,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @property
     def log_type(self):
-        """Gets the log_type of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Gets the log_type of this CreateChLtsConfigRequestBodyLogConfigs.
 
         查询日志类型。当前仅支持slow_log。
 
@@ -93,7 +93,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Sets the log_type of this CreateChLtsConfigRequestBodyLogConfigs.
 
         查询日志类型。当前仅支持slow_log。
 
@@ -104,7 +104,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Gets the lts_group_id of this CreateChLtsConfigRequestBodyLogConfigs.
 
         LTS日志组id。
 
@@ -115,7 +115,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Sets the lts_group_id of this CreateChLtsConfigRequestBodyLogConfigs.
 
         LTS日志组id。
 
@@ -126,7 +126,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Gets the lts_stream_id of this CreateChLtsConfigRequestBodyLogConfigs.
 
         LTS日志流id。
 
@@ -137,7 +137,7 @@ class CreateChLtsConfigRequestBodyLogConfigs:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this CreateChLtsConfigRequestBodyLogConfigs.
+        r"""Sets the lts_stream_id of this CreateChLtsConfigRequestBodyLogConfigs.
 
         LTS日志流id。
 

@@ -25,7 +25,7 @@ class ShowNextflowRequest:
     }
 
     def __init__(self, id=None):
-        """ShowNextflowRequest
+        r"""ShowNextflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNextflowRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowNextflowRequest.
+        r"""Gets the id of this ShowNextflowRequest.
 
         引擎ID
 
@@ -53,7 +53,7 @@ class ShowNextflowRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNextflowRequest.
+        r"""Sets the id of this ShowNextflowRequest.
 
         引擎ID
 

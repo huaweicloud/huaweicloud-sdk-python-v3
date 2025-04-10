@@ -29,7 +29,7 @@ class ConfigurationLifecycle:
     }
 
     def __init__(self, entrypoint=None, post_start=None, pre_stop=None):
-        """ConfigurationLifecycle
+        r"""ConfigurationLifecycle
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConfigurationLifecycle:
 
     @property
     def entrypoint(self):
-        """Gets the entrypoint of this ConfigurationLifecycle.
+        r"""Gets the entrypoint of this ConfigurationLifecycle.
 
         :return: The entrypoint of this ConfigurationLifecycle.
         :rtype: :class:`huaweicloudsdkservicestage.v2.LifecycleEntrypoint`
@@ -66,7 +66,7 @@ class ConfigurationLifecycle:
 
     @entrypoint.setter
     def entrypoint(self, entrypoint):
-        """Sets the entrypoint of this ConfigurationLifecycle.
+        r"""Sets the entrypoint of this ConfigurationLifecycle.
 
         :param entrypoint: The entrypoint of this ConfigurationLifecycle.
         :type entrypoint: :class:`huaweicloudsdkservicestage.v2.LifecycleEntrypoint`
@@ -75,7 +75,7 @@ class ConfigurationLifecycle:
 
     @property
     def post_start(self):
-        """Gets the post_start of this ConfigurationLifecycle.
+        r"""Gets the post_start of this ConfigurationLifecycle.
 
         :return: The post_start of this ConfigurationLifecycle.
         :rtype: :class:`huaweicloudsdkservicestage.v2.LifecycleProcess`
@@ -84,7 +84,7 @@ class ConfigurationLifecycle:
 
     @post_start.setter
     def post_start(self, post_start):
-        """Sets the post_start of this ConfigurationLifecycle.
+        r"""Sets the post_start of this ConfigurationLifecycle.
 
         :param post_start: The post_start of this ConfigurationLifecycle.
         :type post_start: :class:`huaweicloudsdkservicestage.v2.LifecycleProcess`
@@ -93,7 +93,7 @@ class ConfigurationLifecycle:
 
     @property
     def pre_stop(self):
-        """Gets the pre_stop of this ConfigurationLifecycle.
+        r"""Gets the pre_stop of this ConfigurationLifecycle.
 
         :return: The pre_stop of this ConfigurationLifecycle.
         :rtype: :class:`huaweicloudsdkservicestage.v2.LifecycleProcess`
@@ -102,7 +102,7 @@ class ConfigurationLifecycle:
 
     @pre_stop.setter
     def pre_stop(self, pre_stop):
-        """Sets the pre_stop of this ConfigurationLifecycle.
+        r"""Sets the pre_stop of this ConfigurationLifecycle.
 
         :param pre_stop: The pre_stop of this ConfigurationLifecycle.
         :type pre_stop: :class:`huaweicloudsdkservicestage.v2.LifecycleProcess`

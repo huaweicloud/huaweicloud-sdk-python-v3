@@ -27,7 +27,7 @@ class CreateClusterTagRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateClusterTagRequest
+        r"""CreateClusterTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusterTagRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterTagRequest.
+        r"""Gets the cluster_id of this CreateClusterTagRequest.
 
         集群ID。
 
@@ -60,7 +60,7 @@ class CreateClusterTagRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterTagRequest.
+        r"""Sets the cluster_id of this CreateClusterTagRequest.
 
         集群ID。
 
@@ -71,7 +71,7 @@ class CreateClusterTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClusterTagRequest.
+        r"""Gets the body of this CreateClusterTagRequest.
 
         :return: The body of this CreateClusterTagRequest.
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateTagReq`
@@ -80,7 +80,7 @@ class CreateClusterTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClusterTagRequest.
+        r"""Sets the body of this CreateClusterTagRequest.
 
         :param body: The body of this CreateClusterTagRequest.
         :type body: :class:`huaweicloudsdkmrs.v1.CreateTagReq`

@@ -29,7 +29,7 @@ class DeleteStreamForbiddenRequest:
     }
 
     def __init__(self, domain=None, app_name=None, stream_name=None):
-        """DeleteStreamForbiddenRequest
+        r"""DeleteStreamForbiddenRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteStreamForbiddenRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteStreamForbiddenRequest.
+        r"""Gets the domain of this DeleteStreamForbiddenRequest.
 
         推流域名
 
@@ -65,7 +65,7 @@ class DeleteStreamForbiddenRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteStreamForbiddenRequest.
+        r"""Sets the domain of this DeleteStreamForbiddenRequest.
 
         推流域名
 
@@ -76,7 +76,7 @@ class DeleteStreamForbiddenRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DeleteStreamForbiddenRequest.
+        r"""Gets the app_name of this DeleteStreamForbiddenRequest.
 
         RTMP应用名称
 
@@ -87,7 +87,7 @@ class DeleteStreamForbiddenRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DeleteStreamForbiddenRequest.
+        r"""Sets the app_name of this DeleteStreamForbiddenRequest.
 
         RTMP应用名称
 
@@ -98,7 +98,7 @@ class DeleteStreamForbiddenRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DeleteStreamForbiddenRequest.
+        r"""Gets the stream_name of this DeleteStreamForbiddenRequest.
 
         流名称
 
@@ -109,7 +109,7 @@ class DeleteStreamForbiddenRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DeleteStreamForbiddenRequest.
+        r"""Sets the stream_name of this DeleteStreamForbiddenRequest.
 
         流名称
 

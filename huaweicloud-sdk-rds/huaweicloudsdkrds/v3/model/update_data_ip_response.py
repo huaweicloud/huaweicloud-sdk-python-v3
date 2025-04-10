@@ -26,7 +26,7 @@ class UpdateDataIpResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """UpdateDataIpResponse
+        r"""UpdateDataIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDataIpResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this UpdateDataIpResponse.
+        r"""Gets the workflow_id of this UpdateDataIpResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class UpdateDataIpResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this UpdateDataIpResponse.
+        r"""Sets the workflow_id of this UpdateDataIpResponse.
 
         任务ID
 

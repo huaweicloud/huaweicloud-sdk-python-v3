@@ -38,7 +38,7 @@ class ListCompareResultResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, object_level_compare_results=None, line_compare_results=None, content_compare_results=None, compare_task_list_results=None, error_code=None, error_msg=None):
-        """ListCompareResultResponse
+        r"""ListCompareResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListCompareResultResponse.
+        r"""Gets the job_id of this ListCompareResultResponse.
 
         任务id。
 
@@ -97,7 +97,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListCompareResultResponse.
+        r"""Sets the job_id of this ListCompareResultResponse.
 
         任务id。
 
@@ -108,7 +108,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def object_level_compare_results(self):
-        """Gets the object_level_compare_results of this ListCompareResultResponse.
+        r"""Gets the object_level_compare_results of this ListCompareResultResponse.
 
         :return: The object_level_compare_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.ObjectCompareResult`
@@ -117,7 +117,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @object_level_compare_results.setter
     def object_level_compare_results(self, object_level_compare_results):
-        """Sets the object_level_compare_results of this ListCompareResultResponse.
+        r"""Sets the object_level_compare_results of this ListCompareResultResponse.
 
         :param object_level_compare_results: The object_level_compare_results of this ListCompareResultResponse.
         :type object_level_compare_results: :class:`huaweicloudsdkdrs.v3.ObjectCompareResult`
@@ -126,7 +126,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def line_compare_results(self):
-        """Gets the line_compare_results of this ListCompareResultResponse.
+        r"""Gets the line_compare_results of this ListCompareResultResponse.
 
         :return: The line_compare_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.LineCompareResult`
@@ -135,7 +135,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @line_compare_results.setter
     def line_compare_results(self, line_compare_results):
-        """Sets the line_compare_results of this ListCompareResultResponse.
+        r"""Sets the line_compare_results of this ListCompareResultResponse.
 
         :param line_compare_results: The line_compare_results of this ListCompareResultResponse.
         :type line_compare_results: :class:`huaweicloudsdkdrs.v3.LineCompareResult`
@@ -144,7 +144,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def content_compare_results(self):
-        """Gets the content_compare_results of this ListCompareResultResponse.
+        r"""Gets the content_compare_results of this ListCompareResultResponse.
 
         :return: The content_compare_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.ContentCompareResult`
@@ -153,7 +153,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @content_compare_results.setter
     def content_compare_results(self, content_compare_results):
-        """Sets the content_compare_results of this ListCompareResultResponse.
+        r"""Sets the content_compare_results of this ListCompareResultResponse.
 
         :param content_compare_results: The content_compare_results of this ListCompareResultResponse.
         :type content_compare_results: :class:`huaweicloudsdkdrs.v3.ContentCompareResult`
@@ -162,7 +162,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def compare_task_list_results(self):
-        """Gets the compare_task_list_results of this ListCompareResultResponse.
+        r"""Gets the compare_task_list_results of this ListCompareResultResponse.
 
         :return: The compare_task_list_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.CompareTaskListResult`
@@ -171,7 +171,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @compare_task_list_results.setter
     def compare_task_list_results(self, compare_task_list_results):
-        """Sets the compare_task_list_results of this ListCompareResultResponse.
+        r"""Sets the compare_task_list_results of this ListCompareResultResponse.
 
         :param compare_task_list_results: The compare_task_list_results of this ListCompareResultResponse.
         :type compare_task_list_results: :class:`huaweicloudsdkdrs.v3.CompareTaskListResult`
@@ -180,7 +180,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListCompareResultResponse.
+        r"""Gets the error_code of this ListCompareResultResponse.
 
         错误码。
 
@@ -191,7 +191,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListCompareResultResponse.
+        r"""Sets the error_code of this ListCompareResultResponse.
 
         错误码。
 
@@ -202,7 +202,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListCompareResultResponse.
+        r"""Gets the error_msg of this ListCompareResultResponse.
 
         错误信息。
 
@@ -213,7 +213,7 @@ class ListCompareResultResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListCompareResultResponse.
+        r"""Sets the error_msg of this ListCompareResultResponse.
 
         错误信息。
 

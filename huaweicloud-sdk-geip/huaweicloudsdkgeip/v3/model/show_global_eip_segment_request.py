@@ -27,7 +27,7 @@ class ShowGlobalEipSegmentRequest:
     }
 
     def __init__(self, global_eip_segment_id=None, fields=None):
-        """ShowGlobalEipSegmentRequest
+        r"""ShowGlobalEipSegmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGlobalEipSegmentRequest:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this ShowGlobalEipSegmentRequest.
+        r"""Gets the global_eip_segment_id of this ShowGlobalEipSegmentRequest.
 
         :return: The global_eip_segment_id of this ShowGlobalEipSegmentRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowGlobalEipSegmentRequest:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this ShowGlobalEipSegmentRequest.
+        r"""Sets the global_eip_segment_id of this ShowGlobalEipSegmentRequest.
 
         :param global_eip_segment_id: The global_eip_segment_id of this ShowGlobalEipSegmentRequest.
         :type global_eip_segment_id: str
@@ -67,7 +67,7 @@ class ShowGlobalEipSegmentRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowGlobalEipSegmentRequest.
+        r"""Gets the fields of this ShowGlobalEipSegmentRequest.
 
         :return: The fields of this ShowGlobalEipSegmentRequest.
         :rtype: list[str]
@@ -76,7 +76,7 @@ class ShowGlobalEipSegmentRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowGlobalEipSegmentRequest.
+        r"""Sets the fields of this ShowGlobalEipSegmentRequest.
 
         :param fields: The fields of this ShowGlobalEipSegmentRequest.
         :type fields: list[str]

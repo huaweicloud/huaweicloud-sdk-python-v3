@@ -40,7 +40,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobResponse.
+        r"""Gets the status of this ShowJobResponse.
 
         job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
 
@@ -104,7 +104,7 @@ class ShowJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobResponse.
+        r"""Sets the status of this ShowJobResponse.
 
         job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
 
@@ -115,7 +115,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowJobResponse.
+        r"""Gets the entities of this ShowJobResponse.
 
         :return: The entities of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.JobEntities`
@@ -124,7 +124,7 @@ class ShowJobResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowJobResponse.
+        r"""Sets the entities of this ShowJobResponse.
 
         :param entities: The entities of this ShowJobResponse.
         :type entities: :class:`huaweicloudsdkevs.v2.JobEntities`
@@ -133,7 +133,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobResponse.
+        r"""Gets the job_id of this ShowJobResponse.
 
         job的ID。
 
@@ -144,7 +144,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobResponse.
+        r"""Sets the job_id of this ShowJobResponse.
 
         job的ID。
 
@@ -155,7 +155,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobResponse.
+        r"""Gets the job_type of this ShowJobResponse.
 
         job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
 
@@ -166,7 +166,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobResponse.
+        r"""Sets the job_type of this ShowJobResponse.
 
         job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
 
@@ -177,7 +177,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobResponse.
+        r"""Gets the begin_time of this ShowJobResponse.
 
         开始时间。
 
@@ -188,7 +188,7 @@ class ShowJobResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobResponse.
+        r"""Sets the begin_time of this ShowJobResponse.
 
         开始时间。
 
@@ -199,7 +199,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobResponse.
+        r"""Gets the end_time of this ShowJobResponse.
 
         结束时间。
 
@@ -210,7 +210,7 @@ class ShowJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobResponse.
+        r"""Sets the end_time of this ShowJobResponse.
 
         结束时间。
 
@@ -221,7 +221,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowJobResponse.
+        r"""Gets the error_code of this ShowJobResponse.
 
         job执行失败时的错误码。
 
@@ -232,7 +232,7 @@ class ShowJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowJobResponse.
+        r"""Sets the error_code of this ShowJobResponse.
 
         job执行失败时的错误码。
 
@@ -243,7 +243,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobResponse.
+        r"""Gets the fail_reason of this ShowJobResponse.
 
         job执行失败时的错误原因。
 
@@ -254,7 +254,7 @@ class ShowJobResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobResponse.
+        r"""Sets the fail_reason of this ShowJobResponse.
 
         job执行失败时的错误原因。
 

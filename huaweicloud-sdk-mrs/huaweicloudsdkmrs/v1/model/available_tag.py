@@ -29,7 +29,7 @@ class AvailableTag:
     }
 
     def __init__(self, mode=None, alias=None, public_border_group=None):
-        """AvailableTag
+        r"""AvailableTag
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AvailableTag:
 
     @property
     def mode(self):
-        """Gets the mode of this AvailableTag.
+        r"""Gets the mode of this AvailableTag.
 
         可用区计费模式，分为专属dedicated和共享shard
 
@@ -68,7 +68,7 @@ class AvailableTag:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AvailableTag.
+        r"""Sets the mode of this AvailableTag.
 
         可用区计费模式，分为专属dedicated和共享shard
 
@@ -79,7 +79,7 @@ class AvailableTag:
 
     @property
     def alias(self):
-        """Gets the alias of this AvailableTag.
+        r"""Gets the alias of this AvailableTag.
 
         az的别名
 
@@ -90,7 +90,7 @@ class AvailableTag:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AvailableTag.
+        r"""Sets the alias of this AvailableTag.
 
         az的别名
 
@@ -101,7 +101,7 @@ class AvailableTag:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this AvailableTag.
+        r"""Gets the public_border_group of this AvailableTag.
 
         所属group。默认为”center”
 
@@ -112,7 +112,7 @@ class AvailableTag:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this AvailableTag.
+        r"""Sets the public_border_group of this AvailableTag.
 
         所属group。默认为”center”
 

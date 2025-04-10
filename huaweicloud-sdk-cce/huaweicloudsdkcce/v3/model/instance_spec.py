@@ -39,7 +39,7 @@ class InstanceSpec:
     }
 
     def __init__(self, cluster_id=None, version=None, addon_template_name=None, addon_template_type=None, addon_template_logo=None, addon_template_labels=None, description=None, values=None):
-        """InstanceSpec
+        r"""InstanceSpec
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class InstanceSpec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this InstanceSpec.
+        r"""Gets the cluster_id of this InstanceSpec.
 
         集群id
 
@@ -97,7 +97,7 @@ class InstanceSpec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this InstanceSpec.
+        r"""Sets the cluster_id of this InstanceSpec.
 
         集群id
 
@@ -108,7 +108,7 @@ class InstanceSpec:
 
     @property
     def version(self):
-        """Gets the version of this InstanceSpec.
+        r"""Gets the version of this InstanceSpec.
 
         插件模板版本号，如1.0.0
 
@@ -119,7 +119,7 @@ class InstanceSpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceSpec.
+        r"""Sets the version of this InstanceSpec.
 
         插件模板版本号，如1.0.0
 
@@ -130,7 +130,7 @@ class InstanceSpec:
 
     @property
     def addon_template_name(self):
-        """Gets the addon_template_name of this InstanceSpec.
+        r"""Gets the addon_template_name of this InstanceSpec.
 
         插件模板名称，如coredns
 
@@ -141,7 +141,7 @@ class InstanceSpec:
 
     @addon_template_name.setter
     def addon_template_name(self, addon_template_name):
-        """Sets the addon_template_name of this InstanceSpec.
+        r"""Sets the addon_template_name of this InstanceSpec.
 
         插件模板名称，如coredns
 
@@ -152,7 +152,7 @@ class InstanceSpec:
 
     @property
     def addon_template_type(self):
-        """Gets the addon_template_type of this InstanceSpec.
+        r"""Gets the addon_template_type of this InstanceSpec.
 
         插件模板类型
 
@@ -163,7 +163,7 @@ class InstanceSpec:
 
     @addon_template_type.setter
     def addon_template_type(self, addon_template_type):
-        """Sets the addon_template_type of this InstanceSpec.
+        r"""Sets the addon_template_type of this InstanceSpec.
 
         插件模板类型
 
@@ -174,7 +174,7 @@ class InstanceSpec:
 
     @property
     def addon_template_logo(self):
-        """Gets the addon_template_logo of this InstanceSpec.
+        r"""Gets the addon_template_logo of this InstanceSpec.
 
         插件模板logo图片的地址
 
@@ -185,7 +185,7 @@ class InstanceSpec:
 
     @addon_template_logo.setter
     def addon_template_logo(self, addon_template_logo):
-        """Sets the addon_template_logo of this InstanceSpec.
+        r"""Sets the addon_template_logo of this InstanceSpec.
 
         插件模板logo图片的地址
 
@@ -196,7 +196,7 @@ class InstanceSpec:
 
     @property
     def addon_template_labels(self):
-        """Gets the addon_template_labels of this InstanceSpec.
+        r"""Gets the addon_template_labels of this InstanceSpec.
 
         插件模板所属类型
 
@@ -207,7 +207,7 @@ class InstanceSpec:
 
     @addon_template_labels.setter
     def addon_template_labels(self, addon_template_labels):
-        """Sets the addon_template_labels of this InstanceSpec.
+        r"""Sets the addon_template_labels of this InstanceSpec.
 
         插件模板所属类型
 
@@ -218,7 +218,7 @@ class InstanceSpec:
 
     @property
     def description(self):
-        """Gets the description of this InstanceSpec.
+        r"""Gets the description of this InstanceSpec.
 
         插件模板描述
 
@@ -229,7 +229,7 @@ class InstanceSpec:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceSpec.
+        r"""Sets the description of this InstanceSpec.
 
         插件模板描述
 
@@ -240,7 +240,7 @@ class InstanceSpec:
 
     @property
     def values(self):
-        """Gets the values of this InstanceSpec.
+        r"""Gets the values of this InstanceSpec.
 
         插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
 
@@ -251,7 +251,7 @@ class InstanceSpec:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this InstanceSpec.
+        r"""Sets the values of this InstanceSpec.
 
         插件模板安装参数（各插件不同），请根据具体插件模板信息填写安装参数。
 

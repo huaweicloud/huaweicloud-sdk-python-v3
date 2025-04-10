@@ -50,7 +50,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, currency=None, total_count=None, total_amount=None, debt_amount=None, coupon_amount=None, cashcoupon_amount=None, storedcard_amount=None, debit_amount=None, credit_amount=None, measure_id=None, bill_sums=None):
-        """ListMonthlyExpendituresResponse
+        r"""ListMonthlyExpendituresResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListMonthlyExpendituresResponse.
+        r"""Gets the error_code of this ListMonthlyExpendituresResponse.
 
         返回码
 
@@ -139,7 +139,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListMonthlyExpendituresResponse.
+        r"""Sets the error_code of this ListMonthlyExpendituresResponse.
 
         返回码
 
@@ -150,7 +150,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListMonthlyExpendituresResponse.
+        r"""Gets the error_msg of this ListMonthlyExpendituresResponse.
 
         返回码描述
 
@@ -161,7 +161,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListMonthlyExpendituresResponse.
+        r"""Sets the error_msg of this ListMonthlyExpendituresResponse.
 
         返回码描述
 
@@ -172,7 +172,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListMonthlyExpendituresResponse.
+        r"""Gets the currency of this ListMonthlyExpendituresResponse.
 
         货币单位代码 USD：美元
 
@@ -183,7 +183,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListMonthlyExpendituresResponse.
+        r"""Sets the currency of this ListMonthlyExpendituresResponse.
 
         货币单位代码 USD：美元
 
@@ -194,7 +194,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListMonthlyExpendituresResponse.
+        r"""Gets the total_count of this ListMonthlyExpendituresResponse.
 
         总条数
 
@@ -205,7 +205,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListMonthlyExpendituresResponse.
+        r"""Sets the total_count of this ListMonthlyExpendituresResponse.
 
         总条数
 
@@ -216,7 +216,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def total_amount(self):
-        """Gets the total_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the total_amount of this ListMonthlyExpendituresResponse.
 
         总金额（包含退订）。
 
@@ -227,7 +227,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @total_amount.setter
     def total_amount(self, total_amount):
-        """Sets the total_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the total_amount of this ListMonthlyExpendituresResponse.
 
         总金额（包含退订）。
 
@@ -238,7 +238,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the debt_amount of this ListMonthlyExpendituresResponse.
 
         总欠费金额。
 
@@ -249,7 +249,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the debt_amount of this ListMonthlyExpendituresResponse.
 
         总欠费金额。
 
@@ -260,7 +260,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the coupon_amount of this ListMonthlyExpendituresResponse.
 
         代金券金额。
 
@@ -271,7 +271,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the coupon_amount of this ListMonthlyExpendituresResponse.
 
         代金券金额。
 
@@ -282,7 +282,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def cashcoupon_amount(self):
-        """Gets the cashcoupon_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the cashcoupon_amount of this ListMonthlyExpendituresResponse.
 
         现金券金额，预留。
 
@@ -293,7 +293,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @cashcoupon_amount.setter
     def cashcoupon_amount(self, cashcoupon_amount):
-        """Sets the cashcoupon_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the cashcoupon_amount of this ListMonthlyExpendituresResponse.
 
         现金券金额，预留。
 
@@ -304,7 +304,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def storedcard_amount(self):
-        """Gets the storedcard_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the storedcard_amount of this ListMonthlyExpendituresResponse.
 
         储值卡金额，预留。
 
@@ -315,7 +315,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @storedcard_amount.setter
     def storedcard_amount(self, storedcard_amount):
-        """Sets the storedcard_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the storedcard_amount of this ListMonthlyExpendituresResponse.
 
         储值卡金额，预留。
 
@@ -326,7 +326,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def debit_amount(self):
-        """Gets the debit_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the debit_amount of this ListMonthlyExpendituresResponse.
 
         现金账户金额。
 
@@ -337,7 +337,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @debit_amount.setter
     def debit_amount(self, debit_amount):
-        """Sets the debit_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the debit_amount of this ListMonthlyExpendituresResponse.
 
         现金账户金额。
 
@@ -348,7 +348,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this ListMonthlyExpendituresResponse.
+        r"""Gets the credit_amount of this ListMonthlyExpendituresResponse.
 
         信用账户金额。
 
@@ -359,7 +359,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this ListMonthlyExpendituresResponse.
+        r"""Sets the credit_amount of this ListMonthlyExpendituresResponse.
 
         信用账户金额。
 
@@ -370,7 +370,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ListMonthlyExpendituresResponse.
+        r"""Gets the measure_id of this ListMonthlyExpendituresResponse.
 
         金额单位。 1：元3：分 默认值为3。
 
@@ -381,7 +381,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ListMonthlyExpendituresResponse.
+        r"""Sets the measure_id of this ListMonthlyExpendituresResponse.
 
         金额单位。 1：元3：分 默认值为3。
 
@@ -392,7 +392,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @property
     def bill_sums(self):
-        """Gets the bill_sums of this ListMonthlyExpendituresResponse.
+        r"""Gets the bill_sums of this ListMonthlyExpendituresResponse.
 
         账单记录，具体参考表3。
 
@@ -403,7 +403,7 @@ class ListMonthlyExpendituresResponse(SdkResponse):
 
     @bill_sums.setter
     def bill_sums(self, bill_sums):
-        """Sets the bill_sums of this ListMonthlyExpendituresResponse.
+        r"""Sets the bill_sums of this ListMonthlyExpendituresResponse.
 
         账单记录，具体参考表3。
 

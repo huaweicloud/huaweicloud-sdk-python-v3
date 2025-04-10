@@ -25,7 +25,7 @@ class CountPortsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """CountPortsByTagsRequest
+        r"""CountPortsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountPortsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountPortsByTagsRequest.
+        r"""Gets the body of this CountPortsByTagsRequest.
 
         :return: The body of this CountPortsByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CountPortsByTagsRequestBody`
@@ -52,7 +52,7 @@ class CountPortsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountPortsByTagsRequest.
+        r"""Sets the body of this CountPortsByTagsRequest.
 
         :param body: The body of this CountPortsByTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CountPortsByTagsRequestBody`

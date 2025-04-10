@@ -39,7 +39,7 @@ class ObjectsCompareTaskInfo:
     }
 
     def __init__(self, create_time=None, compare_results=None, start_time=None, status=None, export_status=None, report_remain_seconds=None, compare_job_id=None, error_msg=None):
-        """ObjectsCompareTaskInfo
+        r"""ObjectsCompareTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ObjectsCompareTaskInfo.
+        r"""Gets the create_time of this ObjectsCompareTaskInfo.
 
         对比任务创建时间。
 
@@ -103,7 +103,7 @@ class ObjectsCompareTaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ObjectsCompareTaskInfo.
+        r"""Sets the create_time of this ObjectsCompareTaskInfo.
 
         对比任务创建时间。
 
@@ -114,7 +114,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def compare_results(self):
-        """Gets the compare_results of this ObjectsCompareTaskInfo.
+        r"""Gets the compare_results of this ObjectsCompareTaskInfo.
 
         对比结果。
 
@@ -125,7 +125,7 @@ class ObjectsCompareTaskInfo:
 
     @compare_results.setter
     def compare_results(self, compare_results):
-        """Sets the compare_results of this ObjectsCompareTaskInfo.
+        r"""Sets the compare_results of this ObjectsCompareTaskInfo.
 
         对比结果。
 
@@ -136,7 +136,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ObjectsCompareTaskInfo.
+        r"""Gets the start_time of this ObjectsCompareTaskInfo.
 
         对比任务开始时间。
 
@@ -147,7 +147,7 @@ class ObjectsCompareTaskInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ObjectsCompareTaskInfo.
+        r"""Sets the start_time of this ObjectsCompareTaskInfo.
 
         对比任务开始时间。
 
@@ -158,7 +158,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this ObjectsCompareTaskInfo.
+        r"""Gets the status of this ObjectsCompareTaskInfo.
 
         对比任务状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。
 
@@ -169,7 +169,7 @@ class ObjectsCompareTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ObjectsCompareTaskInfo.
+        r"""Sets the status of this ObjectsCompareTaskInfo.
 
         对比任务状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。
 
@@ -180,7 +180,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def export_status(self):
-        """Gets the export_status of this ObjectsCompareTaskInfo.
+        r"""Gets the export_status of this ObjectsCompareTaskInfo.
 
         导出比对结果状态。
 
@@ -191,7 +191,7 @@ class ObjectsCompareTaskInfo:
 
     @export_status.setter
     def export_status(self, export_status):
-        """Sets the export_status of this ObjectsCompareTaskInfo.
+        r"""Sets the export_status of this ObjectsCompareTaskInfo.
 
         导出比对结果状态。
 
@@ -202,7 +202,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def report_remain_seconds(self):
-        """Gets the report_remain_seconds of this ObjectsCompareTaskInfo.
+        r"""Gets the report_remain_seconds of this ObjectsCompareTaskInfo.
 
         导出比对结果有效期剩余时间。
 
@@ -213,7 +213,7 @@ class ObjectsCompareTaskInfo:
 
     @report_remain_seconds.setter
     def report_remain_seconds(self, report_remain_seconds):
-        """Sets the report_remain_seconds of this ObjectsCompareTaskInfo.
+        r"""Sets the report_remain_seconds of this ObjectsCompareTaskInfo.
 
         导出比对结果有效期剩余时间。
 
@@ -224,7 +224,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ObjectsCompareTaskInfo.
+        r"""Gets the compare_job_id of this ObjectsCompareTaskInfo.
 
         对比任务ID。
 
@@ -235,7 +235,7 @@ class ObjectsCompareTaskInfo:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ObjectsCompareTaskInfo.
+        r"""Sets the compare_job_id of this ObjectsCompareTaskInfo.
 
         对比任务ID。
 
@@ -246,7 +246,7 @@ class ObjectsCompareTaskInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ObjectsCompareTaskInfo.
+        r"""Gets the error_msg of this ObjectsCompareTaskInfo.
 
         失败原因。
 
@@ -257,7 +257,7 @@ class ObjectsCompareTaskInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ObjectsCompareTaskInfo.
+        r"""Sets the error_msg of this ObjectsCompareTaskInfo.
 
         失败原因。
 

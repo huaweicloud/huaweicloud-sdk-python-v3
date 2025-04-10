@@ -25,7 +25,7 @@ class KeystoneListUsersForGroupByAdminRequest:
     }
 
     def __init__(self, group_id=None):
-        """KeystoneListUsersForGroupByAdminRequest
+        r"""KeystoneListUsersForGroupByAdminRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneListUsersForGroupByAdminRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneListUsersForGroupByAdminRequest.
+        r"""Gets the group_id of this KeystoneListUsersForGroupByAdminRequest.
 
         待查询的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class KeystoneListUsersForGroupByAdminRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneListUsersForGroupByAdminRequest.
+        r"""Sets the group_id of this KeystoneListUsersForGroupByAdminRequest.
 
         待查询的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

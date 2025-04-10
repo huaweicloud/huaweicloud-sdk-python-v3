@@ -27,7 +27,7 @@ class CreateDesktopRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """CreateDesktopRequest
+        r"""CreateDesktopRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDesktopRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this CreateDesktopRequest.
+        r"""Gets the service_transaction_id of this CreateDesktopRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class CreateDesktopRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this CreateDesktopRequest.
+        r"""Sets the service_transaction_id of this CreateDesktopRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class CreateDesktopRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopRequest.
+        r"""Gets the body of this CreateDesktopRequest.
 
         :return: The body of this CreateDesktopRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`
@@ -81,7 +81,7 @@ class CreateDesktopRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopRequest.
+        r"""Sets the body of this CreateDesktopRequest.
 
         :param body: The body of this CreateDesktopRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`

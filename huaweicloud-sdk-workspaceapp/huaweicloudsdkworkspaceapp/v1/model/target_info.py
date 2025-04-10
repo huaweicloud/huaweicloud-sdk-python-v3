@@ -29,7 +29,7 @@ class TargetInfo:
     }
 
     def __init__(self, target_type=None, target_id=None, target_name=None):
-        """TargetInfo
+        r"""TargetInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TargetInfo:
 
     @property
     def target_type(self):
-        """Gets the target_type of this TargetInfo.
+        r"""Gets the target_type of this TargetInfo.
 
         :return: The target_type of this TargetInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTargetTypeEnum`
@@ -64,7 +64,7 @@ class TargetInfo:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this TargetInfo.
+        r"""Sets the target_type of this TargetInfo.
 
         :param target_type: The target_type of this TargetInfo.
         :type target_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTargetTypeEnum`
@@ -73,7 +73,7 @@ class TargetInfo:
 
     @property
     def target_id(self):
-        """Gets the target_id of this TargetInfo.
+        r"""Gets the target_id of this TargetInfo.
 
         对象id。
 
@@ -84,7 +84,7 @@ class TargetInfo:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this TargetInfo.
+        r"""Sets the target_id of this TargetInfo.
 
         对象id。
 
@@ -95,7 +95,7 @@ class TargetInfo:
 
     @property
     def target_name(self):
-        """Gets the target_name of this TargetInfo.
+        r"""Gets the target_name of this TargetInfo.
 
         对象名称。
 
@@ -106,7 +106,7 @@ class TargetInfo:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this TargetInfo.
+        r"""Sets the target_name of this TargetInfo.
 
         对象名称。
 

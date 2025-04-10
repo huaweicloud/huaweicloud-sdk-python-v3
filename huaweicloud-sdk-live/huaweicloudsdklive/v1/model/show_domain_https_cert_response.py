@@ -36,7 +36,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
     }
 
     def __init__(self, certificate_format=None, certificate=None, certificate_key=None, force_redirect=None, gm_certificate=None, tls_certificate=None):
-        """ShowDomainHttpsCertResponse
+        r"""ShowDomainHttpsCertResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @property
     def certificate_format(self):
-        """Gets the certificate_format of this ShowDomainHttpsCertResponse.
+        r"""Gets the certificate_format of this ShowDomainHttpsCertResponse.
 
         证书格式，默认为PEM，当前只支持PEM格式
 
@@ -90,7 +90,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @certificate_format.setter
     def certificate_format(self, certificate_format):
-        """Sets the certificate_format of this ShowDomainHttpsCertResponse.
+        r"""Sets the certificate_format of this ShowDomainHttpsCertResponse.
 
         证书格式，默认为PEM，当前只支持PEM格式
 
@@ -101,7 +101,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this ShowDomainHttpsCertResponse.
+        r"""Gets the certificate of this ShowDomainHttpsCertResponse.
 
         证书内容
 
@@ -112,7 +112,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ShowDomainHttpsCertResponse.
+        r"""Sets the certificate of this ShowDomainHttpsCertResponse.
 
         证书内容
 
@@ -123,7 +123,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @property
     def certificate_key(self):
-        """Gets the certificate_key of this ShowDomainHttpsCertResponse.
+        r"""Gets the certificate_key of this ShowDomainHttpsCertResponse.
 
         私钥内容
 
@@ -134,7 +134,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @certificate_key.setter
     def certificate_key(self, certificate_key):
-        """Sets the certificate_key of this ShowDomainHttpsCertResponse.
+        r"""Sets the certificate_key of this ShowDomainHttpsCertResponse.
 
         私钥内容
 
@@ -145,7 +145,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @property
     def force_redirect(self):
-        """Gets the force_redirect of this ShowDomainHttpsCertResponse.
+        r"""Gets the force_redirect of this ShowDomainHttpsCertResponse.
 
         是否开启重定向，默认false
 
@@ -156,7 +156,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @force_redirect.setter
     def force_redirect(self, force_redirect):
-        """Sets the force_redirect of this ShowDomainHttpsCertResponse.
+        r"""Sets the force_redirect of this ShowDomainHttpsCertResponse.
 
         是否开启重定向，默认false
 
@@ -167,7 +167,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @property
     def gm_certificate(self):
-        """Gets the gm_certificate of this ShowDomainHttpsCertResponse.
+        r"""Gets the gm_certificate of this ShowDomainHttpsCertResponse.
 
         :return: The gm_certificate of this ShowDomainHttpsCertResponse.
         :rtype: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
@@ -176,7 +176,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @gm_certificate.setter
     def gm_certificate(self, gm_certificate):
-        """Sets the gm_certificate of this ShowDomainHttpsCertResponse.
+        r"""Sets the gm_certificate of this ShowDomainHttpsCertResponse.
 
         :param gm_certificate: The gm_certificate of this ShowDomainHttpsCertResponse.
         :type gm_certificate: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
@@ -185,7 +185,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @property
     def tls_certificate(self):
-        """Gets the tls_certificate of this ShowDomainHttpsCertResponse.
+        r"""Gets the tls_certificate of this ShowDomainHttpsCertResponse.
 
         :return: The tls_certificate of this ShowDomainHttpsCertResponse.
         :rtype: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`
@@ -194,7 +194,7 @@ class ShowDomainHttpsCertResponse(SdkResponse):
 
     @tls_certificate.setter
     def tls_certificate(self, tls_certificate):
-        """Sets the tls_certificate of this ShowDomainHttpsCertResponse.
+        r"""Sets the tls_certificate of this ShowDomainHttpsCertResponse.
 
         :param tls_certificate: The tls_certificate of this ShowDomainHttpsCertResponse.
         :type tls_certificate: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`

@@ -27,7 +27,7 @@ class CreateScalingNotificationRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """CreateScalingNotificationRequest
+        r"""CreateScalingNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateScalingNotificationRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this CreateScalingNotificationRequest.
+        r"""Gets the scaling_group_id of this CreateScalingNotificationRequest.
 
         伸缩组标识。
 
@@ -60,7 +60,7 @@ class CreateScalingNotificationRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this CreateScalingNotificationRequest.
+        r"""Sets the scaling_group_id of this CreateScalingNotificationRequest.
 
         伸缩组标识。
 
@@ -71,7 +71,7 @@ class CreateScalingNotificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScalingNotificationRequest.
+        r"""Gets the body of this CreateScalingNotificationRequest.
 
         :return: The body of this CreateScalingNotificationRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateNotificationOption`
@@ -80,7 +80,7 @@ class CreateScalingNotificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScalingNotificationRequest.
+        r"""Sets the body of this CreateScalingNotificationRequest.
 
         :param body: The body of this CreateScalingNotificationRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateNotificationOption`

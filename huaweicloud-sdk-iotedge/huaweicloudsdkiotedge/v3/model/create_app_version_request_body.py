@@ -27,7 +27,7 @@ class CreateAppVersionRequestBody:
     }
 
     def __init__(self, chart=None, images=None):
-        """CreateAppVersionRequestBody
+        r"""CreateAppVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAppVersionRequestBody:
 
     @property
     def chart(self):
-        """Gets the chart of this CreateAppVersionRequestBody.
+        r"""Gets the chart of this CreateAppVersionRequestBody.
 
         chart包。当前仅支持tgz文件格式。
 
@@ -60,7 +60,7 @@ class CreateAppVersionRequestBody:
 
     @chart.setter
     def chart(self, chart):
-        """Sets the chart of this CreateAppVersionRequestBody.
+        r"""Sets the chart of this CreateAppVersionRequestBody.
 
         chart包。当前仅支持tgz文件格式。
 
@@ -71,7 +71,7 @@ class CreateAppVersionRequestBody:
 
     @property
     def images(self):
-        """Gets the images of this CreateAppVersionRequestBody.
+        r"""Gets the images of this CreateAppVersionRequestBody.
 
         应用包含的镜像列表
 
@@ -82,7 +82,7 @@ class CreateAppVersionRequestBody:
 
     @images.setter
     def images(self, images):
-        """Sets the images of this CreateAppVersionRequestBody.
+        r"""Sets the images of this CreateAppVersionRequestBody.
 
         应用包含的镜像列表
 

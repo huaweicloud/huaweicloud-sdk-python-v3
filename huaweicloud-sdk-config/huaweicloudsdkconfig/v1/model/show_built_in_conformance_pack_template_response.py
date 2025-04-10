@@ -34,7 +34,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, template_key=None, description=None, template_body=None, parameters=None):
-        """ShowBuiltInConformancePackTemplateResponse
+        r"""ShowBuiltInConformancePackTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Gets the id of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板ID。
 
@@ -83,7 +83,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Sets the id of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板ID。
 
@@ -94,7 +94,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @property
     def template_key(self):
-        """Gets the template_key of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Gets the template_key of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板名称。
 
@@ -105,7 +105,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Sets the template_key of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板名称。
 
@@ -116,7 +116,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Gets the description of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板描述。
 
@@ -127,7 +127,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Sets the description of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板描述。
 
@@ -138,7 +138,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @property
     def template_body(self):
-        """Gets the template_body of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Gets the template_body of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板内容。
 
@@ -149,7 +149,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Sets the template_body of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板内容。
 
@@ -160,7 +160,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Gets the parameters of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板参数。
 
@@ -171,7 +171,7 @@ class ShowBuiltInConformancePackTemplateResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowBuiltInConformancePackTemplateResponse.
+        r"""Sets the parameters of this ShowBuiltInConformancePackTemplateResponse.
 
         预定义合规包模板参数。
 

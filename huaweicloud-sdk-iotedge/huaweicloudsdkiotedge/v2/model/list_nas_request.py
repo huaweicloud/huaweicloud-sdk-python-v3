@@ -29,7 +29,7 @@ class ListNasRequest:
     }
 
     def __init__(self, name=None, offset=None, limit=None):
-        """ListNasRequest
+        r"""ListNasRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListNasRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListNasRequest.
+        r"""Gets the name of this ListNasRequest.
 
         NA名称搜索关键字
 
@@ -68,7 +68,7 @@ class ListNasRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListNasRequest.
+        r"""Sets the name of this ListNasRequest.
 
         NA名称搜索关键字
 
@@ -79,7 +79,7 @@ class ListNasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNasRequest.
+        r"""Gets the offset of this ListNasRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -90,7 +90,7 @@ class ListNasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNasRequest.
+        r"""Sets the offset of this ListNasRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -101,7 +101,7 @@ class ListNasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNasRequest.
+        r"""Gets the limit of this ListNasRequest.
 
         每页记录数，取值范围为非负整数，默认值为10
 
@@ -112,7 +112,7 @@ class ListNasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNasRequest.
+        r"""Sets the limit of this ListNasRequest.
 
         每页记录数，取值范围为非负整数，默认值为10
 

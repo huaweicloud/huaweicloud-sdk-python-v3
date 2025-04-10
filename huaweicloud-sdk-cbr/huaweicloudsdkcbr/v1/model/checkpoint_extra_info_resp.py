@@ -29,7 +29,7 @@ class CheckpointExtraInfoResp:
     }
 
     def __init__(self, name=None, description=None, retention_duration=None):
-        """CheckpointExtraInfoResp
+        r"""CheckpointExtraInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckpointExtraInfoResp:
 
     @property
     def name(self):
-        """Gets the name of this CheckpointExtraInfoResp.
+        r"""Gets the name of this CheckpointExtraInfoResp.
 
         备份名称
 
@@ -68,7 +68,7 @@ class CheckpointExtraInfoResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckpointExtraInfoResp.
+        r"""Sets the name of this CheckpointExtraInfoResp.
 
         备份名称
 
@@ -79,7 +79,7 @@ class CheckpointExtraInfoResp:
 
     @property
     def description(self):
-        """Gets the description of this CheckpointExtraInfoResp.
+        r"""Gets the description of this CheckpointExtraInfoResp.
 
         备份描述
 
@@ -90,7 +90,7 @@ class CheckpointExtraInfoResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckpointExtraInfoResp.
+        r"""Sets the description of this CheckpointExtraInfoResp.
 
         备份描述
 
@@ -101,7 +101,7 @@ class CheckpointExtraInfoResp:
 
     @property
     def retention_duration(self):
-        """Gets the retention_duration of this CheckpointExtraInfoResp.
+        r"""Gets the retention_duration of this CheckpointExtraInfoResp.
 
         备份保留天数
 
@@ -112,7 +112,7 @@ class CheckpointExtraInfoResp:
 
     @retention_duration.setter
     def retention_duration(self, retention_duration):
-        """Sets the retention_duration of this CheckpointExtraInfoResp.
+        r"""Sets the retention_duration of this CheckpointExtraInfoResp.
 
         备份保留天数
 

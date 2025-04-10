@@ -28,7 +28,7 @@ class ListAccountAgenciesResponse(SdkResponse):
     }
 
     def __init__(self, agency_list=None, page_info=None):
-        """ListAccountAgenciesResponse
+        r"""ListAccountAgenciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccountAgenciesResponse(SdkResponse):
 
     @property
     def agency_list(self):
-        """Gets the agency_list of this ListAccountAgenciesResponse.
+        r"""Gets the agency_list of this ListAccountAgenciesResponse.
 
         满足查询条件的委托或信任委托对象列表
 
@@ -62,7 +62,7 @@ class ListAccountAgenciesResponse(SdkResponse):
 
     @agency_list.setter
     def agency_list(self, agency_list):
-        """Sets the agency_list of this ListAccountAgenciesResponse.
+        r"""Sets the agency_list of this ListAccountAgenciesResponse.
 
         满足查询条件的委托或信任委托对象列表
 
@@ -73,7 +73,7 @@ class ListAccountAgenciesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAccountAgenciesResponse.
+        r"""Gets the page_info of this ListAccountAgenciesResponse.
 
         :return: The page_info of this ListAccountAgenciesResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterportalapi.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListAccountAgenciesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAccountAgenciesResponse.
+        r"""Sets the page_info of this ListAccountAgenciesResponse.
 
         :param page_info: The page_info of this ListAccountAgenciesResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenterportalapi.v1.PageInfoDto`

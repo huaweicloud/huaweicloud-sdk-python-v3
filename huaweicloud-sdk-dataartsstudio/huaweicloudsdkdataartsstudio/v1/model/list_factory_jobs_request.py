@@ -35,7 +35,7 @@ class ListFactoryJobsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, job_type=None, job_name=None, tags=None):
-        """ListFactoryJobsRequest
+        r"""ListFactoryJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListFactoryJobsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListFactoryJobsRequest.
+        r"""Gets the workspace of this ListFactoryJobsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -88,7 +88,7 @@ class ListFactoryJobsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListFactoryJobsRequest.
+        r"""Sets the workspace of this ListFactoryJobsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -99,7 +99,7 @@ class ListFactoryJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFactoryJobsRequest.
+        r"""Gets the limit of this ListFactoryJobsRequest.
 
         分页参数：每页限定数量
 
@@ -110,7 +110,7 @@ class ListFactoryJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFactoryJobsRequest.
+        r"""Sets the limit of this ListFactoryJobsRequest.
 
         分页参数：每页限定数量
 
@@ -121,7 +121,7 @@ class ListFactoryJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFactoryJobsRequest.
+        r"""Gets the offset of this ListFactoryJobsRequest.
 
         分页参数：页数
 
@@ -132,7 +132,7 @@ class ListFactoryJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFactoryJobsRequest.
+        r"""Sets the offset of this ListFactoryJobsRequest.
 
         分页参数：页数
 
@@ -143,7 +143,7 @@ class ListFactoryJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListFactoryJobsRequest.
+        r"""Gets the job_type of this ListFactoryJobsRequest.
 
         作业类型:  - REAL_TIME: 实时处理  - BATCH: 批处理
 
@@ -154,7 +154,7 @@ class ListFactoryJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListFactoryJobsRequest.
+        r"""Sets the job_type of this ListFactoryJobsRequest.
 
         作业类型:  - REAL_TIME: 实时处理  - BATCH: 批处理
 
@@ -165,7 +165,7 @@ class ListFactoryJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListFactoryJobsRequest.
+        r"""Gets the job_name of this ListFactoryJobsRequest.
 
         作业名称
 
@@ -176,7 +176,7 @@ class ListFactoryJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListFactoryJobsRequest.
+        r"""Sets the job_name of this ListFactoryJobsRequest.
 
         作业名称
 
@@ -187,7 +187,7 @@ class ListFactoryJobsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListFactoryJobsRequest.
+        r"""Gets the tags of this ListFactoryJobsRequest.
 
         作业标签
 
@@ -198,7 +198,7 @@ class ListFactoryJobsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFactoryJobsRequest.
+        r"""Sets the tags of this ListFactoryJobsRequest.
 
         作业标签
 

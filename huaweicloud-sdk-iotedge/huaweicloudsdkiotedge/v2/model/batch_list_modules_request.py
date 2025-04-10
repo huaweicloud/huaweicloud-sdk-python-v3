@@ -33,7 +33,7 @@ class BatchListModulesRequest:
     }
 
     def __init__(self, edge_node_id=None, offset=None, limit=None, app_type=None, function_type=None):
-        """BatchListModulesRequest
+        r"""BatchListModulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BatchListModulesRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this BatchListModulesRequest.
+        r"""Gets the edge_node_id of this BatchListModulesRequest.
 
         边缘节点ID
 
@@ -81,7 +81,7 @@ class BatchListModulesRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this BatchListModulesRequest.
+        r"""Sets the edge_node_id of this BatchListModulesRequest.
 
         边缘节点ID
 
@@ -92,7 +92,7 @@ class BatchListModulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListModulesRequest.
+        r"""Gets the offset of this BatchListModulesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -103,7 +103,7 @@ class BatchListModulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListModulesRequest.
+        r"""Sets the offset of this BatchListModulesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -114,7 +114,7 @@ class BatchListModulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListModulesRequest.
+        r"""Gets the limit of this BatchListModulesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -125,7 +125,7 @@ class BatchListModulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListModulesRequest.
+        r"""Sets the limit of this BatchListModulesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -136,7 +136,7 @@ class BatchListModulesRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this BatchListModulesRequest.
+        r"""Gets the app_type of this BatchListModulesRequest.
 
         应用类型
 
@@ -147,7 +147,7 @@ class BatchListModulesRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this BatchListModulesRequest.
+        r"""Sets the app_type of this BatchListModulesRequest.
 
         应用类型
 
@@ -158,7 +158,7 @@ class BatchListModulesRequest:
 
     @property
     def function_type(self):
-        """Gets the function_type of this BatchListModulesRequest.
+        r"""Gets the function_type of this BatchListModulesRequest.
 
         功能类型
 
@@ -169,7 +169,7 @@ class BatchListModulesRequest:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this BatchListModulesRequest.
+        r"""Sets the function_type of this BatchListModulesRequest.
 
         功能类型
 

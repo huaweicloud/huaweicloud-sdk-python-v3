@@ -27,7 +27,7 @@ class SwitchSslRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchSslRequest
+        r"""SwitchSslRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchSslRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchSslRequest.
+        r"""Gets the instance_id of this SwitchSslRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SwitchSslRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchSslRequest.
+        r"""Sets the instance_id of this SwitchSslRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SwitchSslRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchSslRequest.
+        r"""Gets the body of this SwitchSslRequest.
 
         :return: The body of this SwitchSslRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSslRequestBody`
@@ -80,7 +80,7 @@ class SwitchSslRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchSslRequest.
+        r"""Sets the body of this SwitchSslRequest.
 
         :param body: The body of this SwitchSslRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSslRequestBody`

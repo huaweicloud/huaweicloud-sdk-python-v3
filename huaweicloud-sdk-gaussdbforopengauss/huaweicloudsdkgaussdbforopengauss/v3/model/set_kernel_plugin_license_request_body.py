@@ -25,7 +25,7 @@ class SetKernelPluginLicenseRequestBody:
     }
 
     def __init__(self, license_str=None):
-        """SetKernelPluginLicenseRequestBody
+        r"""SetKernelPluginLicenseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetKernelPluginLicenseRequestBody:
 
     @property
     def license_str(self):
-        """Gets the license_str of this SetKernelPluginLicenseRequestBody.
+        r"""Gets the license_str of this SetKernelPluginLicenseRequestBody.
 
         license
 
@@ -53,7 +53,7 @@ class SetKernelPluginLicenseRequestBody:
 
     @license_str.setter
     def license_str(self, license_str):
-        """Sets the license_str of this SetKernelPluginLicenseRequestBody.
+        r"""Sets the license_str of this SetKernelPluginLicenseRequestBody.
 
         license
 

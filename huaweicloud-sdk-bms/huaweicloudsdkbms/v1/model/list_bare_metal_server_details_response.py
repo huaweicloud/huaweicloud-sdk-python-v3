@@ -26,7 +26,7 @@ class ListBareMetalServerDetailsResponse(SdkResponse):
     }
 
     def __init__(self, server=None):
-        """ListBareMetalServerDetailsResponse
+        r"""ListBareMetalServerDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBareMetalServerDetailsResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this ListBareMetalServerDetailsResponse.
+        r"""Gets the server of this ListBareMetalServerDetailsResponse.
 
         :return: The server of this ListBareMetalServerDetailsResponse.
         :rtype: :class:`huaweicloudsdkbms.v1.ServerDetails`
@@ -53,7 +53,7 @@ class ListBareMetalServerDetailsResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ListBareMetalServerDetailsResponse.
+        r"""Sets the server of this ListBareMetalServerDetailsResponse.
 
         :param server: The server of this ListBareMetalServerDetailsResponse.
         :type server: :class:`huaweicloudsdkbms.v1.ServerDetails`

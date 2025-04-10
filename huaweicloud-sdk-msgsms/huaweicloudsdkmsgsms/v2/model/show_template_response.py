@@ -84,7 +84,7 @@ class ShowTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, tenant=None, template_name=None, template_id=None, template_type=None, app_name=None, app_key=None, sign_id=None, template_content=None, has_variable=None, template_desc=None, review_desc=None, review_order=None, flow_status=None, universal_template=None, status=None, region=None, brackets=None, site=None, urge_status=None, urge_time=None, urge_desc=None, send_country1=None, send_country2=None, send_country3=None, is_support_multiomp=None, country_name=None):
-        """ShowTemplateResponse
+        r"""ShowTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -247,7 +247,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTemplateResponse.
+        r"""Gets the id of this ShowTemplateResponse.
 
         模板主键ID，用于获取、修改、删除模板以及查询模板变量的唯一标识
 
@@ -258,7 +258,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTemplateResponse.
+        r"""Sets the id of this ShowTemplateResponse.
 
         模板主键ID，用于获取、修改、删除模板以及查询模板变量的唯一标识
 
@@ -269,7 +269,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTemplateResponse.
+        r"""Gets the create_time of this ShowTemplateResponse.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -280,7 +280,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTemplateResponse.
+        r"""Sets the create_time of this ShowTemplateResponse.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -291,7 +291,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowTemplateResponse.
+        r"""Gets the update_time of this ShowTemplateResponse.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -302,7 +302,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowTemplateResponse.
+        r"""Sets the update_time of this ShowTemplateResponse.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -313,7 +313,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ShowTemplateResponse.
+        r"""Gets the customer_id of this ShowTemplateResponse.
 
         租户customer id
 
@@ -324,7 +324,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ShowTemplateResponse.
+        r"""Sets the customer_id of this ShowTemplateResponse.
 
         租户customer id
 
@@ -335,7 +335,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def tenant(self):
-        """Gets the tenant of this ShowTemplateResponse.
+        r"""Gets the tenant of this ShowTemplateResponse.
 
         :return: The tenant of this ShowTemplateResponse.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -344,7 +344,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this ShowTemplateResponse.
+        r"""Sets the tenant of this ShowTemplateResponse.
 
         :param tenant: The tenant of this ShowTemplateResponse.
         :type tenant: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -353,7 +353,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowTemplateResponse.
+        r"""Gets the template_name of this ShowTemplateResponse.
 
         模板名称
 
@@ -364,7 +364,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowTemplateResponse.
+        r"""Sets the template_name of this ShowTemplateResponse.
 
         模板名称
 
@@ -375,7 +375,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateResponse.
+        r"""Gets the template_id of this ShowTemplateResponse.
 
         模板ID
 
@@ -386,7 +386,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateResponse.
+        r"""Sets the template_id of this ShowTemplateResponse.
 
         模板ID
 
@@ -397,7 +397,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def template_type(self):
-        """Gets the template_type of this ShowTemplateResponse.
+        r"""Gets the template_type of this ShowTemplateResponse.
 
         模板类型
 
@@ -408,7 +408,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ShowTemplateResponse.
+        r"""Sets the template_type of this ShowTemplateResponse.
 
         模板类型
 
@@ -419,7 +419,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowTemplateResponse.
+        r"""Gets the app_name of this ShowTemplateResponse.
 
         应用名称
 
@@ -430,7 +430,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowTemplateResponse.
+        r"""Sets the app_name of this ShowTemplateResponse.
 
         应用名称
 
@@ -441,7 +441,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this ShowTemplateResponse.
+        r"""Gets the app_key of this ShowTemplateResponse.
 
         应用key
 
@@ -452,7 +452,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ShowTemplateResponse.
+        r"""Sets the app_key of this ShowTemplateResponse.
 
         应用key
 
@@ -463,7 +463,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this ShowTemplateResponse.
+        r"""Gets the sign_id of this ShowTemplateResponse.
 
         签名主键id
 
@@ -474,7 +474,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this ShowTemplateResponse.
+        r"""Sets the sign_id of this ShowTemplateResponse.
 
         签名主键id
 
@@ -485,7 +485,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def template_content(self):
-        """Gets the template_content of this ShowTemplateResponse.
+        r"""Gets the template_content of this ShowTemplateResponse.
 
         模板内容
 
@@ -496,7 +496,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @template_content.setter
     def template_content(self, template_content):
-        """Sets the template_content of this ShowTemplateResponse.
+        r"""Sets the template_content of this ShowTemplateResponse.
 
         模板内容
 
@@ -507,7 +507,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def has_variable(self):
-        """Gets the has_variable of this ShowTemplateResponse.
+        r"""Gets the has_variable of this ShowTemplateResponse.
 
         是否有变量
 
@@ -518,7 +518,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @has_variable.setter
     def has_variable(self, has_variable):
-        """Sets the has_variable of this ShowTemplateResponse.
+        r"""Sets the has_variable of this ShowTemplateResponse.
 
         是否有变量
 
@@ -529,7 +529,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def template_desc(self):
-        """Gets the template_desc of this ShowTemplateResponse.
+        r"""Gets the template_desc of this ShowTemplateResponse.
 
         申请描述
 
@@ -540,7 +540,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @template_desc.setter
     def template_desc(self, template_desc):
-        """Sets the template_desc of this ShowTemplateResponse.
+        r"""Sets the template_desc of this ShowTemplateResponse.
 
         申请描述
 
@@ -551,7 +551,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def review_desc(self):
-        """Gets the review_desc of this ShowTemplateResponse.
+        r"""Gets the review_desc of this ShowTemplateResponse.
 
         审核意见
 
@@ -562,7 +562,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @review_desc.setter
     def review_desc(self, review_desc):
-        """Sets the review_desc of this ShowTemplateResponse.
+        r"""Sets the review_desc of this ShowTemplateResponse.
 
         审核意见
 
@@ -573,7 +573,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def review_order(self):
-        """Gets the review_order of this ShowTemplateResponse.
+        r"""Gets the review_order of this ShowTemplateResponse.
 
         审核人账号
 
@@ -584,7 +584,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @review_order.setter
     def review_order(self, review_order):
-        """Sets the review_order of this ShowTemplateResponse.
+        r"""Sets the review_order of this ShowTemplateResponse.
 
         审核人账号
 
@@ -595,7 +595,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def flow_status(self):
-        """Gets the flow_status of this ShowTemplateResponse.
+        r"""Gets the flow_status of this ShowTemplateResponse.
 
         流程状态
 
@@ -606,7 +606,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @flow_status.setter
     def flow_status(self, flow_status):
-        """Sets the flow_status of this ShowTemplateResponse.
+        r"""Sets the flow_status of this ShowTemplateResponse.
 
         流程状态
 
@@ -617,7 +617,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def universal_template(self):
-        """Gets the universal_template of this ShowTemplateResponse.
+        r"""Gets the universal_template of this ShowTemplateResponse.
 
         是否是通用模板
 
@@ -628,7 +628,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @universal_template.setter
     def universal_template(self, universal_template):
-        """Sets the universal_template of this ShowTemplateResponse.
+        r"""Sets the universal_template of this ShowTemplateResponse.
 
         是否是通用模板
 
@@ -639,7 +639,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTemplateResponse.
+        r"""Gets the status of this ShowTemplateResponse.
 
         模板状态
 
@@ -650,7 +650,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTemplateResponse.
+        r"""Sets the status of this ShowTemplateResponse.
 
         模板状态
 
@@ -661,7 +661,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowTemplateResponse.
+        r"""Gets the region of this ShowTemplateResponse.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -672,7 +672,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowTemplateResponse.
+        r"""Sets the region of this ShowTemplateResponse.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -683,7 +683,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def brackets(self):
-        """Gets the brackets of this ShowTemplateResponse.
+        r"""Gets the brackets of this ShowTemplateResponse.
 
         中括号类型 支持枚举值：  CN: 中文类型  GB: 英文类型
 
@@ -694,7 +694,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @brackets.setter
     def brackets(self, brackets):
-        """Sets the brackets of this ShowTemplateResponse.
+        r"""Sets the brackets of this ShowTemplateResponse.
 
         中括号类型 支持枚举值：  CN: 中文类型  GB: 英文类型
 
@@ -705,7 +705,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def site(self):
-        """Gets the site of this ShowTemplateResponse.
+        r"""Gets the site of this ShowTemplateResponse.
 
         站点
 
@@ -716,7 +716,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @site.setter
     def site(self, site):
-        """Sets the site of this ShowTemplateResponse.
+        r"""Sets the site of this ShowTemplateResponse.
 
         站点
 
@@ -727,7 +727,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def urge_status(self):
-        """Gets the urge_status of this ShowTemplateResponse.
+        r"""Gets the urge_status of this ShowTemplateResponse.
 
         催审状态
 
@@ -738,7 +738,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @urge_status.setter
     def urge_status(self, urge_status):
-        """Sets the urge_status of this ShowTemplateResponse.
+        r"""Sets the urge_status of this ShowTemplateResponse.
 
         催审状态
 
@@ -749,7 +749,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def urge_time(self):
-        """Gets the urge_time of this ShowTemplateResponse.
+        r"""Gets the urge_time of this ShowTemplateResponse.
 
         催审时间
 
@@ -760,7 +760,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @urge_time.setter
     def urge_time(self, urge_time):
-        """Sets the urge_time of this ShowTemplateResponse.
+        r"""Sets the urge_time of this ShowTemplateResponse.
 
         催审时间
 
@@ -771,7 +771,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def urge_desc(self):
-        """Gets the urge_desc of this ShowTemplateResponse.
+        r"""Gets the urge_desc of this ShowTemplateResponse.
 
         催审描述
 
@@ -782,7 +782,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @urge_desc.setter
     def urge_desc(self, urge_desc):
-        """Sets the urge_desc of this ShowTemplateResponse.
+        r"""Sets the urge_desc of this ShowTemplateResponse.
 
         催审描述
 
@@ -793,7 +793,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def send_country1(self):
-        """Gets the send_country1 of this ShowTemplateResponse.
+        r"""Gets the send_country1 of this ShowTemplateResponse.
 
         发送国家1
 
@@ -804,7 +804,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @send_country1.setter
     def send_country1(self, send_country1):
-        """Sets the send_country1 of this ShowTemplateResponse.
+        r"""Sets the send_country1 of this ShowTemplateResponse.
 
         发送国家1
 
@@ -815,7 +815,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def send_country2(self):
-        """Gets the send_country2 of this ShowTemplateResponse.
+        r"""Gets the send_country2 of this ShowTemplateResponse.
 
         发送国家2
 
@@ -826,7 +826,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @send_country2.setter
     def send_country2(self, send_country2):
-        """Sets the send_country2 of this ShowTemplateResponse.
+        r"""Sets the send_country2 of this ShowTemplateResponse.
 
         发送国家2
 
@@ -837,7 +837,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def send_country3(self):
-        """Gets the send_country3 of this ShowTemplateResponse.
+        r"""Gets the send_country3 of this ShowTemplateResponse.
 
         发送国家3
 
@@ -848,7 +848,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @send_country3.setter
     def send_country3(self, send_country3):
-        """Sets the send_country3 of this ShowTemplateResponse.
+        r"""Sets the send_country3 of this ShowTemplateResponse.
 
         发送国家3
 
@@ -859,7 +859,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def is_support_multiomp(self):
-        """Gets the is_support_multiomp of this ShowTemplateResponse.
+        r"""Gets the is_support_multiomp of this ShowTemplateResponse.
 
         是否支持多OMP
 
@@ -870,7 +870,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @is_support_multiomp.setter
     def is_support_multiomp(self, is_support_multiomp):
-        """Sets the is_support_multiomp of this ShowTemplateResponse.
+        r"""Sets the is_support_multiomp of this ShowTemplateResponse.
 
         是否支持多OMP
 
@@ -881,7 +881,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def country_name(self):
-        """Gets the country_name of this ShowTemplateResponse.
+        r"""Gets the country_name of this ShowTemplateResponse.
 
         国家名称列表，返回发送国家前三名的国家名称，国家名称间以\"~\"分隔
 
@@ -892,7 +892,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @country_name.setter
     def country_name(self, country_name):
-        """Sets the country_name of this ShowTemplateResponse.
+        r"""Sets the country_name of this ShowTemplateResponse.
 
         国家名称列表，返回发送国家前三名的国家名称，国家名称间以\"~\"分隔
 

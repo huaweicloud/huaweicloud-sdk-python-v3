@@ -34,7 +34,7 @@ class CfwAsyncClient(Client):
         return client_builder
 
     def add_address_item_async(self, request):
-        """添加地址组成员
+        r"""添加地址组成员
 
         添加地址组成员
         
@@ -103,7 +103,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_address_set_async(self, request):
-        """添加地址组
+        r"""添加地址组
 
         添加地址组
         
@@ -172,7 +172,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_black_white_list_async(self, request):
-        """创建黑白名单规则
+        r"""创建黑白名单规则
 
         创建黑白名单规则
         
@@ -241,7 +241,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_domain_set_async(self, request):
-        """添加域名组
+        r"""添加域名组
 
         添加域名组
         
@@ -310,7 +310,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_domains_async(self, request):
-        """添加域名列表
+        r"""添加域名列表
 
         添加域名列表
         
@@ -381,7 +381,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_log_config_async(self, request):
-        """创建日志配置
+        r"""创建日志配置
 
         创建日志配置
         
@@ -450,7 +450,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_service_items_async(self, request):
-        """新建服务成员
+        r"""新建服务成员
 
         批量添加服务组成员
         
@@ -519,7 +519,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_service_set_async(self, request):
-        """新建服务组
+        r"""新建服务组
 
         创建服务组
         
@@ -588,7 +588,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def batch_delete_address_items_async(self, request):
-        """批量删除地址组成员
+        r"""批量删除地址组成员
 
         批量删除地址组成员
         
@@ -657,7 +657,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def batch_delete_domain_set_async(self, request):
-        """批量删除域名组
+        r"""批量删除域名组
 
         批量删除域名组
         
@@ -726,7 +726,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def batch_delete_service_items_async(self, request):
-        """批量删除服务组成员信息
+        r"""批量删除服务组成员信息
 
         批量删除服务组成员信息
         
@@ -795,7 +795,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def cancel_capture_task_async(self, request):
-        """取消抓包任务
+        r"""取消抓包任务
 
         取消抓包任务
         
@@ -864,7 +864,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def change_east_west_firewall_status_async(self, request):
-        """修改东西向防火墙防护状态
+        r"""修改东西向防火墙防护状态
 
         东西向防护开启/关闭
         
@@ -933,7 +933,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def create_capture_task_async(self, request):
-        """创建抓包任务
+        r"""创建抓包任务
 
         创建抓包任务，每个任务只能执行一次。
         
@@ -1002,7 +1002,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def create_east_west_firewall_async(self, request):
-        """创建东西向防火墙
+        r"""创建东西向防火墙
 
         创建东西向防火墙
         
@@ -1071,7 +1071,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def create_firewall_async(self, request):
-        """创建防火墙
+        r"""创建防火墙
 
         创建防火墙
         
@@ -1138,7 +1138,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def create_tag_async(self, request):
-        """标签创建接口
+        r"""标签创建接口
 
         创建标签
         
@@ -1205,7 +1205,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_address_item_async(self, request):
-        """删除地址组成员
+        r"""删除地址组成员
 
         删除地址组成员
         
@@ -1274,7 +1274,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_address_set_async(self, request):
-        """删除地址组
+        r"""删除地址组
 
         删除地址组
         
@@ -1343,7 +1343,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_black_white_list_async(self, request):
-        """删除黑白名单规则
+        r"""删除黑白名单规则
 
         删除黑白名单规则
         
@@ -1412,7 +1412,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_capture_task_async(self, request):
-        """批量删除抓包任务
+        r"""批量删除抓包任务
 
         批量删除抓包任务
         
@@ -1481,7 +1481,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_domain_set_async(self, request):
-        """删除域名组
+        r"""删除域名组
 
         删除域名组
         
@@ -1550,7 +1550,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_domains_async(self, request):
-        """删除域名列表
+        r"""删除域名列表
 
         删除域名列表
         
@@ -1621,7 +1621,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_firewall_async(self, request):
-        """删除防火墙
+        r"""删除防火墙
 
         删除防火墙，仅按需生效
         
@@ -1686,7 +1686,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_service_item_async(self, request):
-        """删除服务成员
+        r"""删除服务成员
 
         删除服务组成员
         
@@ -1755,7 +1755,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_service_set_async(self, request):
-        """删除服务组
+        r"""删除服务组
 
         删除服务组
         
@@ -1824,7 +1824,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_tag_async(self, request):
-        """删除标签
+        r"""删除标签
 
         删除标签
         
@@ -1891,7 +1891,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_access_control_logs_async(self, request):
-        """查询访问控制日志
+        r"""查询访问控制日志
 
         查询访问控制日志
         
@@ -2004,7 +2004,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_address_items_async(self, request):
-        """查询地址组成员
+        r"""查询地址组成员
 
         查询地址组成员
         
@@ -2083,7 +2083,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_address_set_detail_async(self, request):
-        """查询地址组详细信息
+        r"""查询地址组详细信息
 
         查询地址组详细
         
@@ -2154,7 +2154,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_address_sets_async(self, request):
-        """查询地址组列表
+        r"""查询地址组列表
 
         查询地址组列表
         
@@ -2237,7 +2237,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_attack_logs_async(self, request):
-        """查询攻击日志
+        r"""查询攻击日志
 
         查询攻击日志
         
@@ -2356,7 +2356,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_black_white_lists_async(self, request):
-        """查询黑白名单列表
+        r"""查询黑白名单列表
 
         查询黑白名单列表
         
@@ -2437,7 +2437,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_capture_result_async(self, request):
-        """获取抓包任务结果
+        r"""获取抓包任务结果
 
         获取抓包任务结果
         
@@ -2511,7 +2511,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_capture_task_async(self, request):
-        """查询抓包任务
+        r"""查询抓包任务
 
         查询抓包任务
         
@@ -2582,7 +2582,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_dns_servers_async(self, request):
-        """查询dns服务器列表
+        r"""查询dns服务器列表
 
         查询dns服务器列表
         
@@ -2653,7 +2653,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_domain_parse_detail_async(self, request):
-        """查询域名解析ip地址
+        r"""查询域名解析ip地址
 
         测试域名有效性
         
@@ -2724,7 +2724,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_domain_parse_ip_async(self, request):
-        """获取域名地址解析结果
+        r"""获取域名地址解析结果
 
         获取域名地址解析结果
         
@@ -2797,7 +2797,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_domain_sets_async(self, request):
-        """查询域名组列表
+        r"""查询域名组列表
 
         查询域名组列表
         
@@ -2876,7 +2876,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_domains_async(self, request):
-        """获取域名组下域名列表
+        r"""获取域名组下域名列表
 
         获取域名组下域名列表
         
@@ -2953,7 +2953,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_east_west_firewall_async(self, request):
-        """获取东西向防火墙信息
+        r"""获取东西向防火墙信息
 
         获取东西向防火墙信息
         
@@ -3024,7 +3024,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_firewall_detail_async(self, request):
-        """查询防火墙详细信息
+        r"""查询防火墙详细信息
 
         查询防火墙实例
         
@@ -3099,7 +3099,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_firewall_list_async(self, request):
-        """查询防火墙列表
+        r"""查询防火墙列表
 
         查询防火墙列表
         
@@ -3166,7 +3166,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_flow_logs_async(self, request):
-        """查询流日志
+        r"""查询流日志
 
         查询流日志
         
@@ -3275,7 +3275,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_job_async(self, request):
-        """获取CFW任务执行状态
+        r"""获取CFW任务执行状态
 
         获取CFW任务执行状态
         
@@ -3340,7 +3340,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_log_config_async(self, request):
-        """获取日志配置
+        r"""获取日志配置
 
         获取日志配置
         
@@ -3407,7 +3407,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询标签信息
+        r"""查询标签信息
 
         查询标签信息
         
@@ -3476,7 +3476,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_protected_vpcs_async(self, request):
-        """查询防护VPC数
+        r"""查询防护VPC数
 
         查询防护vpc信息
         
@@ -3545,7 +3545,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_resource_tags_async(self, request):
-        """查询资源标签信息
+        r"""查询资源标签信息
 
         查询资源标签信息
         
@@ -3612,7 +3612,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_service_items_async(self, request):
-        """查询服务成员列表
+        r"""查询服务成员列表
 
         查询服务组成员列表
         
@@ -3689,7 +3689,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_service_set_detail_async(self, request):
-        """查询服务组详情
+        r"""查询服务组详情
 
         查询服务组细节
         
@@ -3760,7 +3760,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_service_sets_async(self, request):
-        """获取服务组列表
+        r"""获取服务组列表
 
         获取服务组列表
         
@@ -3837,7 +3837,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def save_tags_async(self, request):
-        """保存资源标签接口
+        r"""保存资源标签接口
 
         保存资源标签接口
         
@@ -3906,7 +3906,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_alarm_config_async(self, request):
-        """获取告警配置信息
+        r"""获取告警配置信息
 
         获取告警配置信息
         
@@ -3973,7 +3973,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_anti_virus_rule_async(self, request):
-        """获取防火墙反病毒规则信息
+        r"""获取防火墙反病毒规则信息
 
         获取防火墙反病毒规则信息
         
@@ -4046,7 +4046,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_anti_virus_switch_async(self, request):
-        """查看反病毒开关
+        r"""查看反病毒开关
 
         查看反病毒开关
         
@@ -4113,7 +4113,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_domain_set_detail_async(self, request):
-        """查看域名组详情
+        r"""查看域名组详情
 
         查看域名组详情
         
@@ -4182,7 +4182,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_address_set_async(self, request):
-        """更新地址组信息
+        r"""更新地址组信息
 
         更新地址组信息
         
@@ -4253,7 +4253,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_alarm_config_async(self, request):
-        """修改告警配置接口
+        r"""修改告警配置接口
 
         修改告警配置接口
         
@@ -4322,7 +4322,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_anti_virus_rule_async(self, request):
-        """修改反病毒规则
+        r"""修改反病毒规则
 
         修改反病毒规则
         
@@ -4389,7 +4389,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_anti_virus_switch_async(self, request):
-        """修改反病毒开关
+        r"""修改反病毒开关
 
         修改反病毒开关
         
@@ -4456,7 +4456,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_black_white_list_async(self, request):
-        """更新黑白名单列表
+        r"""更新黑白名单列表
 
         更新黑白名单列表
         
@@ -4527,7 +4527,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_dns_servers_async(self, request):
-        """更新dns服务器列表
+        r"""更新dns服务器列表
 
         更新dns服务器列表
         
@@ -4596,7 +4596,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_domain_set_async(self, request):
-        """更新域名组
+        r"""更新域名组
 
         更新域名组
         
@@ -4667,7 +4667,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_log_config_async(self, request):
-        """更新日志配置
+        r"""更新日志配置
 
         更新日志配置
         
@@ -4736,7 +4736,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_service_set_async(self, request):
-        """修改服务组
+        r"""修改服务组
 
         更新服务组
         
@@ -4807,7 +4807,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def add_acl_rule_async(self, request):
-        """创建ACL规则
+        r"""创建ACL规则
 
         创建ACL规则
         
@@ -4876,7 +4876,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def batch_delete_acl_rules_async(self, request):
-        """批量删除Acl规则
+        r"""批量删除Acl规则
 
         批量删除Acl规则
         
@@ -4945,7 +4945,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def batch_update_acl_rule_actions_async(self, request):
-        """批量更新规则动作
+        r"""批量更新规则动作
 
         批量更新规则动作
         
@@ -5014,7 +5014,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_acl_rule_async(self, request):
-        """删除ACL规则
+        r"""删除ACL规则
 
         删除ACL规则组
         
@@ -5083,7 +5083,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def delete_acl_rule_hit_count_async(self, request):
-        """删除规则击中次数
+        r"""删除规则击中次数
 
         清除规则击中次数
         
@@ -5152,7 +5152,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_acl_rule_hit_count_async(self, request):
-        """获取规则击中次数
+        r"""获取规则击中次数
 
         获取规则击中次数
         
@@ -5221,7 +5221,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_acl_rules_async(self, request):
-        """查询防护规则
+        r"""查询防护规则
 
         查询防护规则
         
@@ -5318,7 +5318,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_regions_async(self, request):
-        """查看region列表
+        r"""查看region列表
 
         查看region列表
         
@@ -5385,7 +5385,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_rule_acl_tags_async(self, request):
-        """查询规则标签
+        r"""查询规则标签
 
         查询规则标签
         
@@ -5456,7 +5456,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_import_status_async(self, request):
-        """查看导入状态接口
+        r"""查看导入状态接口
 
         查看导入状态接口
         
@@ -5523,7 +5523,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_acl_rule_async(self, request):
-        """更新ACL规则
+        r"""更新ACL规则
 
         更新ACL规则
         
@@ -5594,7 +5594,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_acl_rule_order_async(self, request):
-        """ACL防护规则优先级设置
+        r"""ACL防护规则优先级设置
 
         ACL防护规则优先级设置
         
@@ -5665,7 +5665,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def change_eip_status_async(self, request):
-        """弹性IP开启关闭
+        r"""弹性IP开启关闭
 
         开启关闭EIP，客户购买EIP后首次开启EIP防护前需使用ListEips同步EIP资产，sync字段设置为1。
         
@@ -5734,7 +5734,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_alarm_whitelist_async(self, request):
-        """查看eip告警白名单
+        r"""查看eip告警白名单
 
         查看eip告警白名单
         
@@ -5807,7 +5807,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_eip_count_async(self, request):
-        """查询Eip个数
+        r"""查询Eip个数
 
         查询Eip个数
         
@@ -5876,7 +5876,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_eips_async(self, request):
-        """弹性IP列表查询
+        r"""弹性IP列表查询
 
         弹性IP列表查询
         
@@ -5965,7 +5965,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_auto_protect_status_async(self, request):
-        """获取eip自动防护状态信息
+        r"""获取eip自动防护状态信息
 
         获取eip自动防护状态信息
         
@@ -6032,7 +6032,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def switch_auto_protect_status_async(self, request):
-        """修改eip自动防护开关
+        r"""修改eip自动防护开关
 
         修改eip自动防护开关
         
@@ -6099,7 +6099,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def change_ips_protect_mode_async(self, request):
-        """切换防护模式
+        r"""切换防护模式
 
         切换防护模式
         
@@ -6168,7 +6168,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def change_ips_rule_mode_async(self, request):
-        """改变ips规则模式
+        r"""改变ips规则模式
 
         改变ips规则模式
         
@@ -6235,7 +6235,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def change_ips_switch_status_async(self, request):
-        """IPS特性开关操作
+        r"""IPS特性开关操作
 
         切换开关状态
         
@@ -6304,7 +6304,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_customer_ips_async(self, request):
-        """获取自定义ips规则
+        r"""获取自定义ips规则
 
         获取自定义ips规则
         
@@ -6391,7 +6391,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_ips_protect_mode_async(self, request):
-        """查询防护模式
+        r"""查询防护模式
 
         查询防护模式
         
@@ -6460,7 +6460,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_ips_rules_async(self, request):
-        """查询频率ips规则信息
+        r"""查询频率ips规则信息
 
         查询频率ips规则信息
         
@@ -6527,7 +6527,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_ips_rules1_async(self, request):
-        """获取ips规则列表
+        r"""获取ips规则列表
 
         获取ips规则列表
         
@@ -6620,7 +6620,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def list_ips_switch_status_async(self, request):
-        """查询IPS特性开关状态
+        r"""查询IPS特性开关状态
 
         查询IPS特性开关状态
         
@@ -6689,7 +6689,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def show_ips_update_time_async(self, request):
-        """获取ips规则细节
+        r"""获取ips规则细节
 
         获取ips规则细节
         
@@ -6756,7 +6756,7 @@ class CfwAsyncClient(Client):
         return http_info
 
     def update_advanced_ips_rule_async(self, request):
-        """创建频率ips规则
+        r"""创建频率ips规则
 
         创建频率ips规则
         

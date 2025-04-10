@@ -29,7 +29,7 @@ class NicForSingleServer:
     }
 
     def __init__(self, subnet_id=None, ipv6_enable=None, ipv6_band_width_id=None):
-        """NicForSingleServer
+        r"""NicForSingleServer
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class NicForSingleServer:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NicForSingleServer.
+        r"""Gets the subnet_id of this NicForSingleServer.
 
         租户自定义的子网 ID，为待创建的云手机裸服务器所属的子网。 需要指定vpc_id对应VPC下已创建的子网（subnet）的网络ID，UUID格式
 
@@ -67,7 +67,7 @@ class NicForSingleServer:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NicForSingleServer.
+        r"""Sets the subnet_id of this NicForSingleServer.
 
         租户自定义的子网 ID，为待创建的云手机裸服务器所属的子网。 需要指定vpc_id对应VPC下已创建的子网（subnet）的网络ID，UUID格式
 
@@ -78,7 +78,7 @@ class NicForSingleServer:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this NicForSingleServer.
+        r"""Gets the ipv6_enable of this NicForSingleServer.
 
         是否支持ipv6，默认不支持ipv6。 false：不支持ipv6 true：支持ipv6
 
@@ -89,7 +89,7 @@ class NicForSingleServer:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this NicForSingleServer.
+        r"""Sets the ipv6_enable of this NicForSingleServer.
 
         是否支持ipv6，默认不支持ipv6。 false：不支持ipv6 true：支持ipv6
 
@@ -100,7 +100,7 @@ class NicForSingleServer:
 
     @property
     def ipv6_band_width_id(self):
-        """Gets the ipv6_band_width_id of this NicForSingleServer.
+        r"""Gets the ipv6_band_width_id of this NicForSingleServer.
 
         ipv6绑定的共享带宽ID。
 
@@ -111,7 +111,7 @@ class NicForSingleServer:
 
     @ipv6_band_width_id.setter
     def ipv6_band_width_id(self, ipv6_band_width_id):
-        """Sets the ipv6_band_width_id of this NicForSingleServer.
+        r"""Sets the ipv6_band_width_id of this NicForSingleServer.
 
         ipv6绑定的共享带宽ID。
 

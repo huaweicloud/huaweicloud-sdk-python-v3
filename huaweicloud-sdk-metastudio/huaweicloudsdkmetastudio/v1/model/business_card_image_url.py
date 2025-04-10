@@ -27,7 +27,7 @@ class BusinessCardImageUrl:
     }
 
     def __init__(self, human_image_url=None, logo_image=None):
-        """BusinessCardImageUrl
+        r"""BusinessCardImageUrl
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BusinessCardImageUrl:
 
     @property
     def human_image_url(self):
-        """Gets the human_image_url of this BusinessCardImageUrl.
+        r"""Gets the human_image_url of this BusinessCardImageUrl.
 
         任务照片下载URL。
 
@@ -61,7 +61,7 @@ class BusinessCardImageUrl:
 
     @human_image_url.setter
     def human_image_url(self, human_image_url):
-        """Sets the human_image_url of this BusinessCardImageUrl.
+        r"""Sets the human_image_url of this BusinessCardImageUrl.
 
         任务照片下载URL。
 
@@ -72,7 +72,7 @@ class BusinessCardImageUrl:
 
     @property
     def logo_image(self):
-        """Gets the logo_image of this BusinessCardImageUrl.
+        r"""Gets the logo_image of this BusinessCardImageUrl.
 
         Logo图片下载URL。
 
@@ -83,7 +83,7 @@ class BusinessCardImageUrl:
 
     @logo_image.setter
     def logo_image(self, logo_image):
-        """Sets the logo_image of this BusinessCardImageUrl.
+        r"""Sets the logo_image of this BusinessCardImageUrl.
 
         Logo图片下载URL。
 

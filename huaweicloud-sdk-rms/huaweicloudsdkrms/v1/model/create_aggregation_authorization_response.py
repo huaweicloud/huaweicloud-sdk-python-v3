@@ -30,7 +30,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self, aggregation_authorization_urn=None, authorized_account_id=None, created_at=None):
-        """CreateAggregationAuthorizationResponse
+        r"""CreateAggregationAuthorizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
 
     @property
     def aggregation_authorization_urn(self):
-        """Gets the aggregation_authorization_urn of this CreateAggregationAuthorizationResponse.
+        r"""Gets the aggregation_authorization_urn of this CreateAggregationAuthorizationResponse.
 
         资源聚合器授权标识符。
 
@@ -69,7 +69,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
 
     @aggregation_authorization_urn.setter
     def aggregation_authorization_urn(self, aggregation_authorization_urn):
-        """Sets the aggregation_authorization_urn of this CreateAggregationAuthorizationResponse.
+        r"""Sets the aggregation_authorization_urn of this CreateAggregationAuthorizationResponse.
 
         资源聚合器授权标识符。
 
@@ -80,7 +80,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
 
     @property
     def authorized_account_id(self):
-        """Gets the authorized_account_id of this CreateAggregationAuthorizationResponse.
+        r"""Gets the authorized_account_id of this CreateAggregationAuthorizationResponse.
 
         授权的资源聚合器的帐号ID。
 
@@ -91,7 +91,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
 
     @authorized_account_id.setter
     def authorized_account_id(self, authorized_account_id):
-        """Sets the authorized_account_id of this CreateAggregationAuthorizationResponse.
+        r"""Sets the authorized_account_id of this CreateAggregationAuthorizationResponse.
 
         授权的资源聚合器的帐号ID。
 
@@ -102,7 +102,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateAggregationAuthorizationResponse.
+        r"""Gets the created_at of this CreateAggregationAuthorizationResponse.
 
         资源聚合器授权的创建时间。
 
@@ -113,7 +113,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateAggregationAuthorizationResponse.
+        r"""Sets the created_at of this CreateAggregationAuthorizationResponse.
 
         资源聚合器授权的创建时间。
 

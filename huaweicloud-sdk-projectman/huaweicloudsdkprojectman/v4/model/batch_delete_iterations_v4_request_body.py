@@ -25,7 +25,7 @@ class BatchDeleteIterationsV4RequestBody:
     }
 
     def __init__(self, iteration_ids=None):
-        """BatchDeleteIterationsV4RequestBody
+        r"""BatchDeleteIterationsV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteIterationsV4RequestBody:
 
     @property
     def iteration_ids(self):
-        """Gets the iteration_ids of this BatchDeleteIterationsV4RequestBody.
+        r"""Gets the iteration_ids of this BatchDeleteIterationsV4RequestBody.
 
         迭代的id
 
@@ -53,7 +53,7 @@ class BatchDeleteIterationsV4RequestBody:
 
     @iteration_ids.setter
     def iteration_ids(self, iteration_ids):
-        """Sets the iteration_ids of this BatchDeleteIterationsV4RequestBody.
+        r"""Sets the iteration_ids of this BatchDeleteIterationsV4RequestBody.
 
         迭代的id
 

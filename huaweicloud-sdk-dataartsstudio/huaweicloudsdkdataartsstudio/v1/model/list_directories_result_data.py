@@ -25,7 +25,7 @@ class ListDirectoriesResultData:
     }
 
     def __init__(self, value=None):
-        """ListDirectoriesResultData
+        r"""ListDirectoriesResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDirectoriesResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListDirectoriesResultData.
+        r"""Gets the value of this ListDirectoriesResultData.
 
         value，统一的返回结果的外层数据结构。
 
@@ -54,7 +54,7 @@ class ListDirectoriesResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListDirectoriesResultData.
+        r"""Sets the value of this ListDirectoriesResultData.
 
         value，统一的返回结果的外层数据结构。
 

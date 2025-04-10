@@ -31,7 +31,7 @@ class TurboInfo:
     }
 
     def __init__(self, share_type=None, type=None, available_zone=None, resource_spec_code=None):
-        """TurboInfo
+        r"""TurboInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TurboInfo:
 
     @property
     def share_type(self):
-        """Gets the share_type of this TurboInfo.
+        r"""Gets the share_type of this TurboInfo.
 
         共享方式，固定值为“STANDARD”
 
@@ -71,7 +71,7 @@ class TurboInfo:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this TurboInfo.
+        r"""Sets the share_type of this TurboInfo.
 
         共享方式，固定值为“STANDARD”
 
@@ -82,7 +82,7 @@ class TurboInfo:
 
     @property
     def type(self):
-        """Gets the type of this TurboInfo.
+        r"""Gets the type of this TurboInfo.
 
         类型，固定值为“efs-ha”
 
@@ -93,7 +93,7 @@ class TurboInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TurboInfo.
+        r"""Sets the type of this TurboInfo.
 
         类型，固定值为“efs-ha”
 
@@ -104,7 +104,7 @@ class TurboInfo:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this TurboInfo.
+        r"""Gets the available_zone of this TurboInfo.
 
         可用区，可填空字符串(\"\")。
 
@@ -115,7 +115,7 @@ class TurboInfo:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this TurboInfo.
+        r"""Sets the available_zone of this TurboInfo.
 
         可用区，可填空字符串(\"\")。
 
@@ -126,7 +126,7 @@ class TurboInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this TurboInfo.
+        r"""Gets the resource_spec_code of this TurboInfo.
 
         规格，固定值为“sfs.turbo.standard”
 
@@ -137,7 +137,7 @@ class TurboInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this TurboInfo.
+        r"""Sets the resource_spec_code of this TurboInfo.
 
         规格，固定值为“sfs.turbo.standard”
 

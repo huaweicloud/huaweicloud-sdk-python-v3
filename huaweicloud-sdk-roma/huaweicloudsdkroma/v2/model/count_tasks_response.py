@@ -28,7 +28,7 @@ class CountTasksResponse(SdkResponse):
     }
 
     def __init__(self, common_task_details=None, cdc_task_details=None):
-        """CountTasksResponse
+        r"""CountTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CountTasksResponse(SdkResponse):
 
     @property
     def common_task_details(self):
-        """Gets the common_task_details of this CountTasksResponse.
+        r"""Gets the common_task_details of this CountTasksResponse.
 
         :return: The common_task_details of this CountTasksResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
@@ -60,7 +60,7 @@ class CountTasksResponse(SdkResponse):
 
     @common_task_details.setter
     def common_task_details(self, common_task_details):
-        """Sets the common_task_details of this CountTasksResponse.
+        r"""Sets the common_task_details of this CountTasksResponse.
 
         :param common_task_details: The common_task_details of this CountTasksResponse.
         :type common_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
@@ -69,7 +69,7 @@ class CountTasksResponse(SdkResponse):
 
     @property
     def cdc_task_details(self):
-        """Gets the cdc_task_details of this CountTasksResponse.
+        r"""Gets the cdc_task_details of this CountTasksResponse.
 
         :return: The cdc_task_details of this CountTasksResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
@@ -78,7 +78,7 @@ class CountTasksResponse(SdkResponse):
 
     @cdc_task_details.setter
     def cdc_task_details(self, cdc_task_details):
-        """Sets the cdc_task_details of this CountTasksResponse.
+        r"""Sets the cdc_task_details of this CountTasksResponse.
 
         :param cdc_task_details: The cdc_task_details of this CountTasksResponse.
         :type cdc_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`

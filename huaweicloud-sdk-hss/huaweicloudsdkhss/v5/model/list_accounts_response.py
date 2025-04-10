@@ -30,7 +30,7 @@ class ListAccountsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None, x_request_id=None):
-        """ListAccountsResponse
+        r"""ListAccountsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAccountsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListAccountsResponse.
+        r"""Gets the total_num of this ListAccountsResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListAccountsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListAccountsResponse.
+        r"""Sets the total_num of this ListAccountsResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListAccountsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListAccountsResponse.
+        r"""Gets the data_list of this ListAccountsResponse.
 
         事件列表详情
 
@@ -91,7 +91,7 @@ class ListAccountsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListAccountsResponse.
+        r"""Sets the data_list of this ListAccountsResponse.
 
         事件列表详情
 
@@ -102,7 +102,7 @@ class ListAccountsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAccountsResponse.
+        r"""Gets the x_request_id of this ListAccountsResponse.
 
         :return: The x_request_id of this ListAccountsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAccountsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAccountsResponse.
+        r"""Sets the x_request_id of this ListAccountsResponse.
 
         :param x_request_id: The x_request_id of this ListAccountsResponse.
         :type x_request_id: str

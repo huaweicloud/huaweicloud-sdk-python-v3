@@ -27,7 +27,7 @@ class ExtendProductSupportFeaturesEntity:
     }
 
     def __init__(self, name=None, properties=None):
-        """ExtendProductSupportFeaturesEntity
+        r"""ExtendProductSupportFeaturesEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtendProductSupportFeaturesEntity:
 
     @property
     def name(self):
-        """Gets the name of this ExtendProductSupportFeaturesEntity.
+        r"""Gets the name of this ExtendProductSupportFeaturesEntity.
 
         特性名称。
 
@@ -61,7 +61,7 @@ class ExtendProductSupportFeaturesEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtendProductSupportFeaturesEntity.
+        r"""Sets the name of this ExtendProductSupportFeaturesEntity.
 
         特性名称。
 
@@ -72,7 +72,7 @@ class ExtendProductSupportFeaturesEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this ExtendProductSupportFeaturesEntity.
+        r"""Gets the properties of this ExtendProductSupportFeaturesEntity.
 
         功能特性的键值对。
 
@@ -83,7 +83,7 @@ class ExtendProductSupportFeaturesEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ExtendProductSupportFeaturesEntity.
+        r"""Sets the properties of this ExtendProductSupportFeaturesEntity.
 
         功能特性的键值对。
 

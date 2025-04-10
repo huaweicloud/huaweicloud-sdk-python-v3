@@ -26,7 +26,7 @@ class ShowBucketStorageResponse(SdkResponse):
     }
 
     def __init__(self, size=None):
-        """ShowBucketStorageResponse
+        r"""ShowBucketStorageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBucketStorageResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowBucketStorageResponse.
+        r"""Gets the size of this ShowBucketStorageResponse.
 
         已用存量（字节）
 
@@ -55,7 +55,7 @@ class ShowBucketStorageResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowBucketStorageResponse.
+        r"""Sets the size of this ShowBucketStorageResponse.
 
         已用存量（字节）
 

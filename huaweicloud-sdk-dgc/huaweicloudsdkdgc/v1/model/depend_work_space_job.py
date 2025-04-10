@@ -35,7 +35,7 @@ class DependWorkSpaceJob:
     }
 
     def __init__(self, depend_on_last_period=None, job_name=None, work_space_id=None, work_space=None, depend_type=None, depend_on_last_n_period_value=None):
-        """DependWorkSpaceJob
+        r"""DependWorkSpaceJob
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DependWorkSpaceJob:
 
     @property
     def depend_on_last_period(self):
-        """Gets the depend_on_last_period of this DependWorkSpaceJob.
+        r"""Gets the depend_on_last_period of this DependWorkSpaceJob.
 
         是否依赖最近一个周期
 
@@ -89,7 +89,7 @@ class DependWorkSpaceJob:
 
     @depend_on_last_period.setter
     def depend_on_last_period(self, depend_on_last_period):
-        """Sets the depend_on_last_period of this DependWorkSpaceJob.
+        r"""Sets the depend_on_last_period of this DependWorkSpaceJob.
 
         是否依赖最近一个周期
 
@@ -100,7 +100,7 @@ class DependWorkSpaceJob:
 
     @property
     def job_name(self):
-        """Gets the job_name of this DependWorkSpaceJob.
+        r"""Gets the job_name of this DependWorkSpaceJob.
 
         作业名
 
@@ -111,7 +111,7 @@ class DependWorkSpaceJob:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this DependWorkSpaceJob.
+        r"""Sets the job_name of this DependWorkSpaceJob.
 
         作业名
 
@@ -122,7 +122,7 @@ class DependWorkSpaceJob:
 
     @property
     def work_space_id(self):
-        """Gets the work_space_id of this DependWorkSpaceJob.
+        r"""Gets the work_space_id of this DependWorkSpaceJob.
 
         工作空间名ID
 
@@ -133,7 +133,7 @@ class DependWorkSpaceJob:
 
     @work_space_id.setter
     def work_space_id(self, work_space_id):
-        """Sets the work_space_id of this DependWorkSpaceJob.
+        r"""Sets the work_space_id of this DependWorkSpaceJob.
 
         工作空间名ID
 
@@ -144,7 +144,7 @@ class DependWorkSpaceJob:
 
     @property
     def work_space(self):
-        """Gets the work_space of this DependWorkSpaceJob.
+        r"""Gets the work_space of this DependWorkSpaceJob.
 
         工作空间名
 
@@ -155,7 +155,7 @@ class DependWorkSpaceJob:
 
     @work_space.setter
     def work_space(self, work_space):
-        """Sets the work_space of this DependWorkSpaceJob.
+        r"""Sets the work_space of this DependWorkSpaceJob.
 
         工作空间名
 
@@ -166,7 +166,7 @@ class DependWorkSpaceJob:
 
     @property
     def depend_type(self):
-        """Gets the depend_type of this DependWorkSpaceJob.
+        r"""Gets the depend_type of this DependWorkSpaceJob.
 
         依赖的规则
 
@@ -177,7 +177,7 @@ class DependWorkSpaceJob:
 
     @depend_type.setter
     def depend_type(self, depend_type):
-        """Sets the depend_type of this DependWorkSpaceJob.
+        r"""Sets the depend_type of this DependWorkSpaceJob.
 
         依赖的规则
 
@@ -188,7 +188,7 @@ class DependWorkSpaceJob:
 
     @property
     def depend_on_last_n_period_value(self):
-        """Gets the depend_on_last_n_period_value of this DependWorkSpaceJob.
+        r"""Gets the depend_on_last_n_period_value of this DependWorkSpaceJob.
 
         依赖上N个周期
 
@@ -199,7 +199,7 @@ class DependWorkSpaceJob:
 
     @depend_on_last_n_period_value.setter
     def depend_on_last_n_period_value(self, depend_on_last_n_period_value):
-        """Sets the depend_on_last_n_period_value of this DependWorkSpaceJob.
+        r"""Sets the depend_on_last_n_period_value of this DependWorkSpaceJob.
 
         依赖上N个周期
 

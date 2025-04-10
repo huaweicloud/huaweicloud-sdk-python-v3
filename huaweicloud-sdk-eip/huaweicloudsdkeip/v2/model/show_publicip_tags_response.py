@@ -26,7 +26,7 @@ class ShowPublicipTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowPublicipTagsResponse
+        r"""ShowPublicipTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPublicipTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowPublicipTagsResponse.
+        r"""Gets the tags of this ShowPublicipTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ShowPublicipTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowPublicipTagsResponse.
+        r"""Sets the tags of this ShowPublicipTagsResponse.
 
         标签列表
 

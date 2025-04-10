@@ -27,7 +27,7 @@ class RunCheckDataRequest:
     }
 
     def __init__(self, service_name=None, body=None):
-        """RunCheckDataRequest
+        r"""RunCheckDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunCheckDataRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this RunCheckDataRequest.
+        r"""Gets the service_name of this RunCheckDataRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -60,7 +60,7 @@ class RunCheckDataRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this RunCheckDataRequest.
+        r"""Sets the service_name of this RunCheckDataRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -71,7 +71,7 @@ class RunCheckDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunCheckDataRequest.
+        r"""Gets the body of this RunCheckDataRequest.
 
         :return: The body of this RunCheckDataRequest.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.CheckParam`
@@ -80,7 +80,7 @@ class RunCheckDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCheckDataRequest.
+        r"""Sets the body of this RunCheckDataRequest.
 
         :param body: The body of this RunCheckDataRequest.
         :type body: :class:`huaweicloudsdkimagesearch.v2.CheckParam`

@@ -41,7 +41,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, name=None, cluster_name=None, database_name=None, table_name=None, order_by=None, order_by_asc=None):
-        """ListSecurityDynamicMaskingPoliciesRequest
+        r"""ListSecurityDynamicMaskingPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the workspace of this ListSecurityDynamicMaskingPoliciesRequest.
 
         DataArts Studio工作空间ID
 
@@ -109,7 +109,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the workspace of this ListSecurityDynamicMaskingPoliciesRequest.
 
         DataArts Studio工作空间ID
 
@@ -120,7 +120,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the limit of this ListSecurityDynamicMaskingPoliciesRequest.
 
         limit
 
@@ -131,7 +131,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the limit of this ListSecurityDynamicMaskingPoliciesRequest.
 
         limit
 
@@ -142,7 +142,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the offset of this ListSecurityDynamicMaskingPoliciesRequest.
 
         offset
 
@@ -153,7 +153,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the offset of this ListSecurityDynamicMaskingPoliciesRequest.
 
         offset
 
@@ -164,7 +164,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         动态脱敏策略名称。
 
@@ -175,7 +175,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         动态脱敏策略名称。
 
@@ -186,7 +186,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the cluster_name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         集群名称
 
@@ -197,7 +197,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the cluster_name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         集群名称
 
@@ -208,7 +208,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the database_name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         数据库名称
 
@@ -219,7 +219,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the database_name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         数据库名称
 
@@ -230,7 +230,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the table_name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         表名称
 
@@ -241,7 +241,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the table_name of this ListSecurityDynamicMaskingPoliciesRequest.
 
         表名称
 
@@ -252,7 +252,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the order_by of this ListSecurityDynamicMaskingPoliciesRequest.
 
         排序参数，UPDATE_TIME。
 
@@ -263,7 +263,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the order_by of this ListSecurityDynamicMaskingPoliciesRequest.
 
         排序参数，UPDATE_TIME。
 
@@ -274,7 +274,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def order_by_asc(self):
-        """Gets the order_by_asc of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the order_by_asc of this ListSecurityDynamicMaskingPoliciesRequest.
 
         是否升序（仅指定排序参数时有效）。
 
@@ -285,7 +285,7 @@ class ListSecurityDynamicMaskingPoliciesRequest:
 
     @order_by_asc.setter
     def order_by_asc(self, order_by_asc):
-        """Sets the order_by_asc of this ListSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the order_by_asc of this ListSecurityDynamicMaskingPoliciesRequest.
 
         是否升序（仅指定排序参数时有效）。
 

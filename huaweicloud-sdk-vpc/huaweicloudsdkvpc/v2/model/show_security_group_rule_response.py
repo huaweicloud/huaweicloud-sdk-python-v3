@@ -26,7 +26,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
     }
 
     def __init__(self, security_group_rule=None):
-        """ShowSecurityGroupRuleResponse
+        r"""ShowSecurityGroupRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
 
     @property
     def security_group_rule(self):
-        """Gets the security_group_rule of this ShowSecurityGroupRuleResponse.
+        r"""Gets the security_group_rule of this ShowSecurityGroupRuleResponse.
 
         :return: The security_group_rule of this ShowSecurityGroupRuleResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.SecurityGroupRule`
@@ -53,7 +53,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
 
     @security_group_rule.setter
     def security_group_rule(self, security_group_rule):
-        """Sets the security_group_rule of this ShowSecurityGroupRuleResponse.
+        r"""Sets the security_group_rule of this ShowSecurityGroupRuleResponse.
 
         :param security_group_rule: The security_group_rule of this ShowSecurityGroupRuleResponse.
         :type security_group_rule: :class:`huaweicloudsdkvpc.v2.SecurityGroupRule`

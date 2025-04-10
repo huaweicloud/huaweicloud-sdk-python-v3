@@ -25,7 +25,7 @@ class CreateRsaDatakeyPairRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRsaDatakeyPairRequest
+        r"""CreateRsaDatakeyPairRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRsaDatakeyPairRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRsaDatakeyPairRequest.
+        r"""Gets the body of this CreateRsaDatakeyPairRequest.
 
         :return: The body of this CreateRsaDatakeyPairRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.CreateRsaDatakeyPairRequestBody`
@@ -52,7 +52,7 @@ class CreateRsaDatakeyPairRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRsaDatakeyPairRequest.
+        r"""Sets the body of this CreateRsaDatakeyPairRequest.
 
         :param body: The body of this CreateRsaDatakeyPairRequest.
         :type body: :class:`huaweicloudsdkkms.v2.CreateRsaDatakeyPairRequestBody`

@@ -25,7 +25,7 @@ class BatchAttachSharableVolumesRequestBody:
     }
 
     def __init__(self, serverinfo=None):
-        """BatchAttachSharableVolumesRequestBody
+        r"""BatchAttachSharableVolumesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAttachSharableVolumesRequestBody:
 
     @property
     def serverinfo(self):
-        """Gets the serverinfo of this BatchAttachSharableVolumesRequestBody.
+        r"""Gets the serverinfo of this BatchAttachSharableVolumesRequestBody.
 
         共享磁盘需要挂载的弹性云服务器列表。
 
@@ -53,7 +53,7 @@ class BatchAttachSharableVolumesRequestBody:
 
     @serverinfo.setter
     def serverinfo(self, serverinfo):
-        """Sets the serverinfo of this BatchAttachSharableVolumesRequestBody.
+        r"""Sets the serverinfo of this BatchAttachSharableVolumesRequestBody.
 
         共享磁盘需要挂载的弹性云服务器列表。
 

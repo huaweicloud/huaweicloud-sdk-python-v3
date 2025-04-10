@@ -27,7 +27,7 @@ class BatchDeletePacifyWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """BatchDeletePacifyWordsRequest
+        r"""BatchDeletePacifyWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeletePacifyWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this BatchDeletePacifyWordsRequest.
+        r"""Gets the x_app_user_id of this BatchDeletePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class BatchDeletePacifyWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this BatchDeletePacifyWordsRequest.
+        r"""Sets the x_app_user_id of this BatchDeletePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class BatchDeletePacifyWordsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePacifyWordsRequest.
+        r"""Gets the body of this BatchDeletePacifyWordsRequest.
 
         :return: The body of this BatchDeletePacifyWordsRequest.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class BatchDeletePacifyWordsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePacifyWordsRequest.
+        r"""Sets the body of this BatchDeletePacifyWordsRequest.
 
         :param body: The body of this BatchDeletePacifyWordsRequest.
         :type body: list[str]

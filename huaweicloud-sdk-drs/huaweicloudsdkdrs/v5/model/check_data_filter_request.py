@@ -29,7 +29,7 @@ class CheckDataFilterRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """CheckDataFilterRequest
+        r"""CheckDataFilterRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CheckDataFilterRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CheckDataFilterRequest.
+        r"""Gets the job_id of this CheckDataFilterRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class CheckDataFilterRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CheckDataFilterRequest.
+        r"""Sets the job_id of this CheckDataFilterRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class CheckDataFilterRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckDataFilterRequest.
+        r"""Gets the x_language of this CheckDataFilterRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CheckDataFilterRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckDataFilterRequest.
+        r"""Sets the x_language of this CheckDataFilterRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CheckDataFilterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckDataFilterRequest.
+        r"""Gets the body of this CheckDataFilterRequest.
 
         :return: The body of this CheckDataFilterRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.DataProcessReq`
@@ -109,7 +109,7 @@ class CheckDataFilterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckDataFilterRequest.
+        r"""Sets the body of this CheckDataFilterRequest.
 
         :param body: The body of this CheckDataFilterRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.DataProcessReq`

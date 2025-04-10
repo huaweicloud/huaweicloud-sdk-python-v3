@@ -25,7 +25,7 @@ class PostgreSQLRestoreTableRequest:
     }
 
     def __init__(self, instances=None):
-        """PostgreSQLRestoreTableRequest
+        r"""PostgreSQLRestoreTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PostgreSQLRestoreTableRequest:
 
     @property
     def instances(self):
-        """Gets the instances of this PostgreSQLRestoreTableRequest.
+        r"""Gets the instances of this PostgreSQLRestoreTableRequest.
 
         表信息
 
@@ -54,7 +54,7 @@ class PostgreSQLRestoreTableRequest:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this PostgreSQLRestoreTableRequest.
+        r"""Sets the instances of this PostgreSQLRestoreTableRequest.
 
         表信息
 

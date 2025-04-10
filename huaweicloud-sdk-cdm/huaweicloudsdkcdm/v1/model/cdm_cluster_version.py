@@ -37,7 +37,7 @@ class CdmClusterVersion:
     }
 
     def __init__(self, active=None, id=None, image=None, name=None, packages=None, datastore=None, links=None):
-        """CdmClusterVersion
+        r"""CdmClusterVersion
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CdmClusterVersion:
 
     @property
     def active(self):
-        """Gets the active of this CdmClusterVersion.
+        r"""Gets the active of this CdmClusterVersion.
 
         版本状态。
 
@@ -96,7 +96,7 @@ class CdmClusterVersion:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this CdmClusterVersion.
+        r"""Sets the active of this CdmClusterVersion.
 
         版本状态。
 
@@ -107,7 +107,7 @@ class CdmClusterVersion:
 
     @property
     def id(self):
-        """Gets the id of this CdmClusterVersion.
+        r"""Gets the id of this CdmClusterVersion.
 
         版本ID。
 
@@ -118,7 +118,7 @@ class CdmClusterVersion:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CdmClusterVersion.
+        r"""Sets the id of this CdmClusterVersion.
 
         版本ID。
 
@@ -129,7 +129,7 @@ class CdmClusterVersion:
 
     @property
     def image(self):
-        """Gets the image of this CdmClusterVersion.
+        r"""Gets the image of this CdmClusterVersion.
 
         版本镜像。
 
@@ -140,7 +140,7 @@ class CdmClusterVersion:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CdmClusterVersion.
+        r"""Sets the image of this CdmClusterVersion.
 
         版本镜像。
 
@@ -151,7 +151,7 @@ class CdmClusterVersion:
 
     @property
     def name(self):
-        """Gets the name of this CdmClusterVersion.
+        r"""Gets the name of this CdmClusterVersion.
 
         版本名称。
 
@@ -162,7 +162,7 @@ class CdmClusterVersion:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdmClusterVersion.
+        r"""Sets the name of this CdmClusterVersion.
 
         版本名称。
 
@@ -173,7 +173,7 @@ class CdmClusterVersion:
 
     @property
     def packages(self):
-        """Gets the packages of this CdmClusterVersion.
+        r"""Gets the packages of this CdmClusterVersion.
 
         版本的包。
 
@@ -184,7 +184,7 @@ class CdmClusterVersion:
 
     @packages.setter
     def packages(self, packages):
-        """Sets the packages of this CdmClusterVersion.
+        r"""Sets the packages of this CdmClusterVersion.
 
         版本的包。
 
@@ -195,7 +195,7 @@ class CdmClusterVersion:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CdmClusterVersion.
+        r"""Gets the datastore of this CdmClusterVersion.
 
         服务ID，用于区分不同服务。
 
@@ -206,7 +206,7 @@ class CdmClusterVersion:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CdmClusterVersion.
+        r"""Sets the datastore of this CdmClusterVersion.
 
         服务ID，用于区分不同服务。
 
@@ -217,7 +217,7 @@ class CdmClusterVersion:
 
     @property
     def links(self):
-        """Gets the links of this CdmClusterVersion.
+        r"""Gets the links of this CdmClusterVersion.
 
         链接信息。
 
@@ -228,7 +228,7 @@ class CdmClusterVersion:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CdmClusterVersion.
+        r"""Sets the links of this CdmClusterVersion.
 
         链接信息。
 

@@ -35,7 +35,7 @@ class RecordInfoDO:
     }
 
     def __init__(self, subject=None, begin_time=None, segment_offset=None, segment_limit=None, segment_count=None, segment_list=None):
-        """RecordInfoDO
+        r"""RecordInfoDO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RecordInfoDO:
 
     @property
     def subject(self):
-        """Gets the subject of this RecordInfoDO.
+        r"""Gets the subject of this RecordInfoDO.
 
         会议主题
 
@@ -89,7 +89,7 @@ class RecordInfoDO:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this RecordInfoDO.
+        r"""Sets the subject of this RecordInfoDO.
 
         会议主题
 
@@ -100,7 +100,7 @@ class RecordInfoDO:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this RecordInfoDO.
+        r"""Gets the begin_time of this RecordInfoDO.
 
         会议录制开始时间
 
@@ -111,7 +111,7 @@ class RecordInfoDO:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this RecordInfoDO.
+        r"""Sets the begin_time of this RecordInfoDO.
 
         会议录制开始时间
 
@@ -122,7 +122,7 @@ class RecordInfoDO:
 
     @property
     def segment_offset(self):
-        """Gets the segment_offset of this RecordInfoDO.
+        r"""Gets the segment_offset of this RecordInfoDO.
 
         录制段落查询偏移量
 
@@ -133,7 +133,7 @@ class RecordInfoDO:
 
     @segment_offset.setter
     def segment_offset(self, segment_offset):
-        """Sets the segment_offset of this RecordInfoDO.
+        r"""Sets the segment_offset of this RecordInfoDO.
 
         录制段落查询偏移量
 
@@ -144,7 +144,7 @@ class RecordInfoDO:
 
     @property
     def segment_limit(self):
-        """Gets the segment_limit of this RecordInfoDO.
+        r"""Gets the segment_limit of this RecordInfoDO.
 
         录制段落查询数量
 
@@ -155,7 +155,7 @@ class RecordInfoDO:
 
     @segment_limit.setter
     def segment_limit(self, segment_limit):
-        """Sets the segment_limit of this RecordInfoDO.
+        r"""Sets the segment_limit of this RecordInfoDO.
 
         录制段落查询数量
 
@@ -166,7 +166,7 @@ class RecordInfoDO:
 
     @property
     def segment_count(self):
-        """Gets the segment_count of this RecordInfoDO.
+        r"""Gets the segment_count of this RecordInfoDO.
 
         录制段落总数
 
@@ -177,7 +177,7 @@ class RecordInfoDO:
 
     @segment_count.setter
     def segment_count(self, segment_count):
-        """Sets the segment_count of this RecordInfoDO.
+        r"""Sets the segment_count of this RecordInfoDO.
 
         录制段落总数
 
@@ -188,7 +188,7 @@ class RecordInfoDO:
 
     @property
     def segment_list(self):
-        """Gets the segment_list of this RecordInfoDO.
+        r"""Gets the segment_list of this RecordInfoDO.
 
         录制人工启动/停止分段列表
 
@@ -199,7 +199,7 @@ class RecordInfoDO:
 
     @segment_list.setter
     def segment_list(self, segment_list):
-        """Sets the segment_list of this RecordInfoDO.
+        r"""Sets the segment_list of this RecordInfoDO.
 
         录制人工启动/停止分段列表
 

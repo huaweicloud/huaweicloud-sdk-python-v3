@@ -29,7 +29,7 @@ class TransformMetric:
     }
 
     def __init__(self, inputs=None, metric_name=None, expression=None):
-        """TransformMetric
+        r"""TransformMetric
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TransformMetric:
 
     @property
     def inputs(self):
-        """Gets the inputs of this TransformMetric.
+        r"""Gets the inputs of this TransformMetric.
 
         声明属性作为表达式参数
 
@@ -65,7 +65,7 @@ class TransformMetric:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this TransformMetric.
+        r"""Sets the inputs of this TransformMetric.
 
         声明属性作为表达式参数
 
@@ -76,7 +76,7 @@ class TransformMetric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this TransformMetric.
+        r"""Gets the metric_name of this TransformMetric.
 
         指标名称
 
@@ -87,7 +87,7 @@ class TransformMetric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this TransformMetric.
+        r"""Sets the metric_name of this TransformMetric.
 
         指标名称
 
@@ -98,7 +98,7 @@ class TransformMetric:
 
     @property
     def expression(self):
-        """Gets the expression of this TransformMetric.
+        r"""Gets the expression of this TransformMetric.
 
         表达式
 
@@ -109,7 +109,7 @@ class TransformMetric:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this TransformMetric.
+        r"""Sets the expression of this TransformMetric.
 
         表达式
 

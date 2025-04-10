@@ -29,7 +29,7 @@ class RestoreInfo:
     }
 
     def __init__(self, backup_id=None, source_instance_id=None, restore_time=None):
-        """RestoreInfo
+        r"""RestoreInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RestoreInfo:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestoreInfo.
+        r"""Gets the backup_id of this RestoreInfo.
 
         备份文件ID。  用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
 
@@ -68,7 +68,7 @@ class RestoreInfo:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestoreInfo.
+        r"""Sets the backup_id of this RestoreInfo.
 
         备份文件ID。  用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
 
@@ -79,7 +79,7 @@ class RestoreInfo:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this RestoreInfo.
+        r"""Gets the source_instance_id of this RestoreInfo.
 
         数据恢复参考的指定实例的ID。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
 
@@ -90,7 +90,7 @@ class RestoreInfo:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this RestoreInfo.
+        r"""Sets the source_instance_id of this RestoreInfo.
 
         数据恢复参考的指定实例的ID。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
 
@@ -101,7 +101,7 @@ class RestoreInfo:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestoreInfo.
+        r"""Gets the restore_time of this RestoreInfo.
 
         数据恢复的指定的时间点。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。取值为UTC 13位毫秒数，可通过[查询实例可恢复的时间段]接口进行查询。
 
@@ -112,7 +112,7 @@ class RestoreInfo:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestoreInfo.
+        r"""Sets the restore_time of this RestoreInfo.
 
         数据恢复的指定的时间点。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。取值为UTC 13位毫秒数，可通过[查询实例可恢复的时间段]接口进行查询。
 

@@ -52,7 +52,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
     }
 
     def __init__(self, source_db_size=None, source_db_schema=None, source_db_cpu=None, source_db_character_set=None, source_db_os=None, source_db_instance_num=None, source_db_ram=None, source_db_info=None, source_db_phy_ram=None, source_db_version=None, source_db_conf=None, source_db_clock=None, evaluation_project_id=None, evaluation_project_name=None):
-        """ShowEvaluationProjectDetailResponse
+        r"""ShowEvaluationProjectDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_size(self):
-        """Gets the source_db_size of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_size of this ShowEvaluationProjectDetailResponse.
 
         数据库大小。
 
@@ -146,7 +146,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_size.setter
     def source_db_size(self, source_db_size):
-        """Sets the source_db_size of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_size of this ShowEvaluationProjectDetailResponse.
 
         数据库大小。
 
@@ -157,7 +157,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_schema(self):
-        """Gets the source_db_schema of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_schema of this ShowEvaluationProjectDetailResponse.
 
         数据库schema个数。
 
@@ -168,7 +168,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_schema.setter
     def source_db_schema(self, source_db_schema):
-        """Sets the source_db_schema of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_schema of this ShowEvaluationProjectDetailResponse.
 
         数据库schema个数。
 
@@ -179,7 +179,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_cpu(self):
-        """Gets the source_db_cpu of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_cpu of this ShowEvaluationProjectDetailResponse.
 
         数据库CPU个数。
 
@@ -190,7 +190,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_cpu.setter
     def source_db_cpu(self, source_db_cpu):
-        """Sets the source_db_cpu of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_cpu of this ShowEvaluationProjectDetailResponse.
 
         数据库CPU个数。
 
@@ -201,7 +201,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_character_set(self):
-        """Gets the source_db_character_set of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_character_set of this ShowEvaluationProjectDetailResponse.
 
         数据库字符集。
 
@@ -212,7 +212,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_character_set.setter
     def source_db_character_set(self, source_db_character_set):
-        """Sets the source_db_character_set of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_character_set of this ShowEvaluationProjectDetailResponse.
 
         数据库字符集。
 
@@ -223,7 +223,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_os(self):
-        """Gets the source_db_os of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_os of this ShowEvaluationProjectDetailResponse.
 
         数据库操作系统。
 
@@ -234,7 +234,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_os.setter
     def source_db_os(self, source_db_os):
-        """Sets the source_db_os of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_os of this ShowEvaluationProjectDetailResponse.
 
         数据库操作系统。
 
@@ -245,7 +245,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_instance_num(self):
-        """Gets the source_db_instance_num of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_instance_num of this ShowEvaluationProjectDetailResponse.
 
         实例数量。
 
@@ -256,7 +256,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_instance_num.setter
     def source_db_instance_num(self, source_db_instance_num):
-        """Sets the source_db_instance_num of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_instance_num of this ShowEvaluationProjectDetailResponse.
 
         实例数量。
 
@@ -267,7 +267,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_ram(self):
-        """Gets the source_db_ram of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_ram of this ShowEvaluationProjectDetailResponse.
 
         数据库内存。
 
@@ -278,7 +278,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_ram.setter
     def source_db_ram(self, source_db_ram):
-        """Sets the source_db_ram of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_ram of this ShowEvaluationProjectDetailResponse.
 
         数据库内存。
 
@@ -289,7 +289,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_info(self):
-        """Gets the source_db_info of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_info of this ShowEvaluationProjectDetailResponse.
 
         :return: The source_db_info of this ShowEvaluationProjectDetailResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.SourceDB`
@@ -298,7 +298,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_info.setter
     def source_db_info(self, source_db_info):
-        """Sets the source_db_info of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_info of this ShowEvaluationProjectDetailResponse.
 
         :param source_db_info: The source_db_info of this ShowEvaluationProjectDetailResponse.
         :type source_db_info: :class:`huaweicloudsdkugo.v1.SourceDB`
@@ -307,7 +307,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_phy_ram(self):
-        """Gets the source_db_phy_ram of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_phy_ram of this ShowEvaluationProjectDetailResponse.
 
         数据库物理RAM。
 
@@ -318,7 +318,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_phy_ram.setter
     def source_db_phy_ram(self, source_db_phy_ram):
-        """Sets the source_db_phy_ram of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_phy_ram of this ShowEvaluationProjectDetailResponse.
 
         数据库物理RAM。
 
@@ -329,7 +329,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_version(self):
-        """Gets the source_db_version of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_version of this ShowEvaluationProjectDetailResponse.
 
         数据库版本。
 
@@ -340,7 +340,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_version.setter
     def source_db_version(self, source_db_version):
-        """Sets the source_db_version of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_version of this ShowEvaluationProjectDetailResponse.
 
         数据库版本。
 
@@ -351,7 +351,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_conf(self):
-        """Gets the source_db_conf of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_conf of this ShowEvaluationProjectDetailResponse.
 
         数据库配置。
 
@@ -362,7 +362,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_conf.setter
     def source_db_conf(self, source_db_conf):
-        """Sets the source_db_conf of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_conf of this ShowEvaluationProjectDetailResponse.
 
         数据库配置。
 
@@ -373,7 +373,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_clock(self):
-        """Gets the source_db_clock of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the source_db_clock of this ShowEvaluationProjectDetailResponse.
 
         数据库时区。
 
@@ -384,7 +384,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @source_db_clock.setter
     def source_db_clock(self, source_db_clock):
-        """Sets the source_db_clock of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the source_db_clock of this ShowEvaluationProjectDetailResponse.
 
         数据库时区。
 
@@ -395,7 +395,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the evaluation_project_id of this ShowEvaluationProjectDetailResponse.
 
         评估项目ID。
 
@@ -406,7 +406,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the evaluation_project_id of this ShowEvaluationProjectDetailResponse.
 
         评估项目ID。
 
@@ -417,7 +417,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this ShowEvaluationProjectDetailResponse.
+        r"""Gets the evaluation_project_name of this ShowEvaluationProjectDetailResponse.
 
         评估项目名称。
 
@@ -428,7 +428,7 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this ShowEvaluationProjectDetailResponse.
+        r"""Sets the evaluation_project_name of this ShowEvaluationProjectDetailResponse.
 
         评估项目名称。
 

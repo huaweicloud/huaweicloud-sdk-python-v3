@@ -47,7 +47,7 @@ class WorkspaceListElem:
     }
 
     def __init__(self, workspace_id=None, ma_workspace_id=None, project_id=None, name=None, description=None, enterprise_project_id=None, enterprise_project_name=None, create_time=None, update_time=None, owner=None, user_id=None, used_flag=None):
-        """WorkspaceListElem
+        r"""WorkspaceListElem
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class WorkspaceListElem:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this WorkspaceListElem.
+        r"""Gets the workspace_id of this WorkspaceListElem.
 
         工作空间id
 
@@ -131,7 +131,7 @@ class WorkspaceListElem:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this WorkspaceListElem.
+        r"""Sets the workspace_id of this WorkspaceListElem.
 
         工作空间id
 
@@ -142,7 +142,7 @@ class WorkspaceListElem:
 
     @property
     def ma_workspace_id(self):
-        """Gets the ma_workspace_id of this WorkspaceListElem.
+        r"""Gets the ma_workspace_id of this WorkspaceListElem.
 
         对应的Modelarts工作空间的id
 
@@ -153,7 +153,7 @@ class WorkspaceListElem:
 
     @ma_workspace_id.setter
     def ma_workspace_id(self, ma_workspace_id):
-        """Sets the ma_workspace_id of this WorkspaceListElem.
+        r"""Sets the ma_workspace_id of this WorkspaceListElem.
 
         对应的Modelarts工作空间的id
 
@@ -164,7 +164,7 @@ class WorkspaceListElem:
 
     @property
     def project_id(self):
-        """Gets the project_id of this WorkspaceListElem.
+        r"""Gets the project_id of this WorkspaceListElem.
 
         项目ID
 
@@ -175,7 +175,7 @@ class WorkspaceListElem:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this WorkspaceListElem.
+        r"""Sets the project_id of this WorkspaceListElem.
 
         项目ID
 
@@ -186,7 +186,7 @@ class WorkspaceListElem:
 
     @property
     def name(self):
-        """Gets the name of this WorkspaceListElem.
+        r"""Gets the name of this WorkspaceListElem.
 
         工作空间名称
 
@@ -197,7 +197,7 @@ class WorkspaceListElem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkspaceListElem.
+        r"""Sets the name of this WorkspaceListElem.
 
         工作空间名称
 
@@ -208,7 +208,7 @@ class WorkspaceListElem:
 
     @property
     def description(self):
-        """Gets the description of this WorkspaceListElem.
+        r"""Gets the description of this WorkspaceListElem.
 
         工作空间描述
 
@@ -219,7 +219,7 @@ class WorkspaceListElem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkspaceListElem.
+        r"""Sets the description of this WorkspaceListElem.
 
         工作空间描述
 
@@ -230,7 +230,7 @@ class WorkspaceListElem:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this WorkspaceListElem.
+        r"""Gets the enterprise_project_id of this WorkspaceListElem.
 
         企业项目ID
 
@@ -241,7 +241,7 @@ class WorkspaceListElem:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this WorkspaceListElem.
+        r"""Sets the enterprise_project_id of this WorkspaceListElem.
 
         企业项目ID
 
@@ -252,7 +252,7 @@ class WorkspaceListElem:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this WorkspaceListElem.
+        r"""Gets the enterprise_project_name of this WorkspaceListElem.
 
         企业项目名称
 
@@ -263,7 +263,7 @@ class WorkspaceListElem:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this WorkspaceListElem.
+        r"""Sets the enterprise_project_name of this WorkspaceListElem.
 
         企业项目名称
 
@@ -274,7 +274,7 @@ class WorkspaceListElem:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WorkspaceListElem.
+        r"""Gets the create_time of this WorkspaceListElem.
 
         创建时间
 
@@ -285,7 +285,7 @@ class WorkspaceListElem:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WorkspaceListElem.
+        r"""Sets the create_time of this WorkspaceListElem.
 
         创建时间
 
@@ -296,7 +296,7 @@ class WorkspaceListElem:
 
     @property
     def update_time(self):
-        """Gets the update_time of this WorkspaceListElem.
+        r"""Gets the update_time of this WorkspaceListElem.
 
         更新时间
 
@@ -307,7 +307,7 @@ class WorkspaceListElem:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this WorkspaceListElem.
+        r"""Sets the update_time of this WorkspaceListElem.
 
         更新时间
 
@@ -318,7 +318,7 @@ class WorkspaceListElem:
 
     @property
     def owner(self):
-        """Gets the owner of this WorkspaceListElem.
+        r"""Gets the owner of this WorkspaceListElem.
 
         创建者
 
@@ -329,7 +329,7 @@ class WorkspaceListElem:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this WorkspaceListElem.
+        r"""Sets the owner of this WorkspaceListElem.
 
         创建者
 
@@ -340,7 +340,7 @@ class WorkspaceListElem:
 
     @property
     def user_id(self):
-        """Gets the user_id of this WorkspaceListElem.
+        r"""Gets the user_id of this WorkspaceListElem.
 
         创建者的USER_ID
 
@@ -351,7 +351,7 @@ class WorkspaceListElem:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this WorkspaceListElem.
+        r"""Sets the user_id of this WorkspaceListElem.
 
         创建者的USER_ID
 
@@ -362,7 +362,7 @@ class WorkspaceListElem:
 
     @property
     def used_flag(self):
-        """Gets the used_flag of this WorkspaceListElem.
+        r"""Gets the used_flag of this WorkspaceListElem.
 
         正在被使用
 
@@ -373,7 +373,7 @@ class WorkspaceListElem:
 
     @used_flag.setter
     def used_flag(self, used_flag):
-        """Sets the used_flag of this WorkspaceListElem.
+        r"""Sets the used_flag of this WorkspaceListElem.
 
         正在被使用
 

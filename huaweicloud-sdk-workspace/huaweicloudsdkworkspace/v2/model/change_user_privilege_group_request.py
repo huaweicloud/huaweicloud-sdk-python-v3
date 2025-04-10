@@ -25,7 +25,7 @@ class ChangeUserPrivilegeGroupRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeUserPrivilegeGroupRequest
+        r"""ChangeUserPrivilegeGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeUserPrivilegeGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeUserPrivilegeGroupRequest.
+        r"""Gets the body of this ChangeUserPrivilegeGroupRequest.
 
         :return: The body of this ChangeUserPrivilegeGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeUserPrivilegeGroupReq`
@@ -52,7 +52,7 @@ class ChangeUserPrivilegeGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeUserPrivilegeGroupRequest.
+        r"""Sets the body of this ChangeUserPrivilegeGroupRequest.
 
         :param body: The body of this ChangeUserPrivilegeGroupRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ChangeUserPrivilegeGroupReq`

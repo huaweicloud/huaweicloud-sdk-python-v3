@@ -31,7 +31,7 @@ class ServerJob:
     }
 
     def __init__(self, server_id=None, job_id=None, error_code=None, error_msg=None):
-        """ServerJob
+        r"""ServerJob
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ServerJob:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerJob.
+        r"""Gets the server_id of this ServerJob.
 
         云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
@@ -75,7 +75,7 @@ class ServerJob:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerJob.
+        r"""Sets the server_id of this ServerJob.
 
         云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
@@ -86,7 +86,7 @@ class ServerJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ServerJob.
+        r"""Gets the job_id of this ServerJob.
 
         任务的唯一标识。
 
@@ -97,7 +97,7 @@ class ServerJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ServerJob.
+        r"""Sets the job_id of this ServerJob.
 
         任务的唯一标识。
 
@@ -108,7 +108,7 @@ class ServerJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ServerJob.
+        r"""Gets the error_code of this ServerJob.
 
         错误码。
 
@@ -119,7 +119,7 @@ class ServerJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ServerJob.
+        r"""Sets the error_code of this ServerJob.
 
         错误码。
 
@@ -130,7 +130,7 @@ class ServerJob:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ServerJob.
+        r"""Gets the error_msg of this ServerJob.
 
         错误说明。
 
@@ -141,7 +141,7 @@ class ServerJob:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ServerJob.
+        r"""Sets the error_msg of this ServerJob.
 
         错误说明。
 

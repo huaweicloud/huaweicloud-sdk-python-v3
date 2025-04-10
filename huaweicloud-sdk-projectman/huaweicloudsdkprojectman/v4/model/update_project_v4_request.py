@@ -27,7 +27,7 @@ class UpdateProjectV4Request:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UpdateProjectV4Request
+        r"""UpdateProjectV4Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateProjectV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateProjectV4Request.
+        r"""Gets the project_id of this UpdateProjectV4Request.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class UpdateProjectV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateProjectV4Request.
+        r"""Sets the project_id of this UpdateProjectV4Request.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class UpdateProjectV4Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProjectV4Request.
+        r"""Gets the body of this UpdateProjectV4Request.
 
         :return: The body of this UpdateProjectV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectRequestV4`
@@ -80,7 +80,7 @@ class UpdateProjectV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProjectV4Request.
+        r"""Sets the body of this UpdateProjectV4Request.
 
         :param body: The body of this UpdateProjectV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.UpdateProjectRequestV4`

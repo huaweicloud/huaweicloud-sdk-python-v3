@@ -27,7 +27,7 @@ class CreateGaussMySqlBackupRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateGaussMySqlBackupRequest
+        r"""CreateGaussMySqlBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateGaussMySqlBackupRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateGaussMySqlBackupRequest.
+        r"""Gets the x_language of this CreateGaussMySqlBackupRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class CreateGaussMySqlBackupRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateGaussMySqlBackupRequest.
+        r"""Sets the x_language of this CreateGaussMySqlBackupRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class CreateGaussMySqlBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGaussMySqlBackupRequest.
+        r"""Gets the body of this CreateGaussMySqlBackupRequest.
 
         :return: The body of this CreateGaussMySqlBackupRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`
@@ -81,7 +81,7 @@ class CreateGaussMySqlBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGaussMySqlBackupRequest.
+        r"""Sets the body of this CreateGaussMySqlBackupRequest.
 
         :param body: The body of this CreateGaussMySqlBackupRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`

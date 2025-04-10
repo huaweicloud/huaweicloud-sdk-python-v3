@@ -27,7 +27,7 @@ class RoleInfoInput:
     }
 
     def __init__(self, role_name=None, principal_source=None):
-        """RoleInfoInput
+        r"""RoleInfoInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RoleInfoInput:
 
     @property
     def role_name(self):
-        """Gets the role_name of this RoleInfoInput.
+        r"""Gets the role_name of this RoleInfoInput.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -59,7 +59,7 @@ class RoleInfoInput:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this RoleInfoInput.
+        r"""Sets the role_name of this RoleInfoInput.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -70,7 +70,7 @@ class RoleInfoInput:
 
     @property
     def principal_source(self):
-        """Gets the principal_source of this RoleInfoInput.
+        r"""Gets the principal_source of this RoleInfoInput.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
@@ -81,7 +81,7 @@ class RoleInfoInput:
 
     @principal_source.setter
     def principal_source(self, principal_source):
-        """Sets the principal_source of this RoleInfoInput.
+        r"""Sets the principal_source of this RoleInfoInput.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 

@@ -41,7 +41,7 @@ class ComponentRecordView:
     }
 
     def __init__(self, begin_time=None, end_time=None, description=None, instance_id=None, version=None, current_used=None, status=None, deploy_type=None, jobs=None):
-        """ComponentRecordView
+        r"""ComponentRecordView
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ComponentRecordView:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ComponentRecordView.
+        r"""Gets the begin_time of this ComponentRecordView.
 
         :return: The begin_time of this ComponentRecordView.
         :rtype: str
@@ -108,7 +108,7 @@ class ComponentRecordView:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ComponentRecordView.
+        r"""Sets the begin_time of this ComponentRecordView.
 
         :param begin_time: The begin_time of this ComponentRecordView.
         :type begin_time: str
@@ -117,7 +117,7 @@ class ComponentRecordView:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ComponentRecordView.
+        r"""Gets the end_time of this ComponentRecordView.
 
         :return: The end_time of this ComponentRecordView.
         :rtype: str
@@ -126,7 +126,7 @@ class ComponentRecordView:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ComponentRecordView.
+        r"""Sets the end_time of this ComponentRecordView.
 
         :param end_time: The end_time of this ComponentRecordView.
         :type end_time: str
@@ -135,7 +135,7 @@ class ComponentRecordView:
 
     @property
     def description(self):
-        """Gets the description of this ComponentRecordView.
+        r"""Gets the description of this ComponentRecordView.
 
         :return: The description of this ComponentRecordView.
         :rtype: object
@@ -144,7 +144,7 @@ class ComponentRecordView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentRecordView.
+        r"""Sets the description of this ComponentRecordView.
 
         :param description: The description of this ComponentRecordView.
         :type description: object
@@ -153,7 +153,7 @@ class ComponentRecordView:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ComponentRecordView.
+        r"""Gets the instance_id of this ComponentRecordView.
 
         :return: The instance_id of this ComponentRecordView.
         :rtype: str
@@ -162,7 +162,7 @@ class ComponentRecordView:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ComponentRecordView.
+        r"""Sets the instance_id of this ComponentRecordView.
 
         :param instance_id: The instance_id of this ComponentRecordView.
         :type instance_id: str
@@ -171,7 +171,7 @@ class ComponentRecordView:
 
     @property
     def version(self):
-        """Gets the version of this ComponentRecordView.
+        r"""Gets the version of this ComponentRecordView.
 
         :return: The version of this ComponentRecordView.
         :rtype: str
@@ -180,7 +180,7 @@ class ComponentRecordView:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentRecordView.
+        r"""Sets the version of this ComponentRecordView.
 
         :param version: The version of this ComponentRecordView.
         :type version: str
@@ -189,7 +189,7 @@ class ComponentRecordView:
 
     @property
     def current_used(self):
-        """Gets the current_used of this ComponentRecordView.
+        r"""Gets the current_used of this ComponentRecordView.
 
         :return: The current_used of this ComponentRecordView.
         :rtype: bool
@@ -198,7 +198,7 @@ class ComponentRecordView:
 
     @current_used.setter
     def current_used(self, current_used):
-        """Sets the current_used of this ComponentRecordView.
+        r"""Sets the current_used of this ComponentRecordView.
 
         :param current_used: The current_used of this ComponentRecordView.
         :type current_used: bool
@@ -207,7 +207,7 @@ class ComponentRecordView:
 
     @property
     def status(self):
-        """Gets the status of this ComponentRecordView.
+        r"""Gets the status of this ComponentRecordView.
 
         :return: The status of this ComponentRecordView.
         :rtype: str
@@ -216,7 +216,7 @@ class ComponentRecordView:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentRecordView.
+        r"""Sets the status of this ComponentRecordView.
 
         :param status: The status of this ComponentRecordView.
         :type status: str
@@ -225,7 +225,7 @@ class ComponentRecordView:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this ComponentRecordView.
+        r"""Gets the deploy_type of this ComponentRecordView.
 
         :return: The deploy_type of this ComponentRecordView.
         :rtype: str
@@ -234,7 +234,7 @@ class ComponentRecordView:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this ComponentRecordView.
+        r"""Sets the deploy_type of this ComponentRecordView.
 
         :param deploy_type: The deploy_type of this ComponentRecordView.
         :type deploy_type: str
@@ -243,7 +243,7 @@ class ComponentRecordView:
 
     @property
     def jobs(self):
-        """Gets the jobs of this ComponentRecordView.
+        r"""Gets the jobs of this ComponentRecordView.
 
         :return: The jobs of this ComponentRecordView.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.RecordJob`]
@@ -252,7 +252,7 @@ class ComponentRecordView:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ComponentRecordView.
+        r"""Sets the jobs of this ComponentRecordView.
 
         :param jobs: The jobs of this ComponentRecordView.
         :type jobs: list[:class:`huaweicloudsdkservicestage.v3.RecordJob`]

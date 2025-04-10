@@ -25,7 +25,7 @@ class ReconfigureExtDataSourceActionReq:
     }
 
     def __init__(self, reconfigure=None):
-        """ReconfigureExtDataSourceActionReq
+        r"""ReconfigureExtDataSourceActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReconfigureExtDataSourceActionReq:
 
     @property
     def reconfigure(self):
-        """Gets the reconfigure of this ReconfigureExtDataSourceActionReq.
+        r"""Gets the reconfigure of this ReconfigureExtDataSourceActionReq.
 
         :return: The reconfigure of this ReconfigureExtDataSourceActionReq.
         :rtype: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceAction`
@@ -51,7 +51,7 @@ class ReconfigureExtDataSourceActionReq:
 
     @reconfigure.setter
     def reconfigure(self, reconfigure):
-        """Sets the reconfigure of this ReconfigureExtDataSourceActionReq.
+        r"""Sets the reconfigure of this ReconfigureExtDataSourceActionReq.
 
         :param reconfigure: The reconfigure of this ReconfigureExtDataSourceActionReq.
         :type reconfigure: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceAction`

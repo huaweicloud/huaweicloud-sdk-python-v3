@@ -30,7 +30,7 @@ class ListBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, eip_bandwidths=None, page_info=None, request_id=None):
-        """ListBandwidthResponse
+        r"""ListBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListBandwidthResponse(SdkResponse):
 
     @property
     def eip_bandwidths(self):
-        """Gets the eip_bandwidths of this ListBandwidthResponse.
+        r"""Gets the eip_bandwidths of this ListBandwidthResponse.
 
         带宽列表对象
 
@@ -69,7 +69,7 @@ class ListBandwidthResponse(SdkResponse):
 
     @eip_bandwidths.setter
     def eip_bandwidths(self, eip_bandwidths):
-        """Sets the eip_bandwidths of this ListBandwidthResponse.
+        r"""Sets the eip_bandwidths of this ListBandwidthResponse.
 
         带宽列表对象
 
@@ -80,7 +80,7 @@ class ListBandwidthResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListBandwidthResponse.
+        r"""Gets the page_info of this ListBandwidthResponse.
 
         :return: The page_info of this ListBandwidthResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
@@ -89,7 +89,7 @@ class ListBandwidthResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListBandwidthResponse.
+        r"""Sets the page_info of this ListBandwidthResponse.
 
         :param page_info: The page_info of this ListBandwidthResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
@@ -98,7 +98,7 @@ class ListBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListBandwidthResponse.
+        r"""Gets the request_id of this ListBandwidthResponse.
 
         本次请求的编号
 
@@ -109,7 +109,7 @@ class ListBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthResponse.
+        r"""Sets the request_id of this ListBandwidthResponse.
 
         本次请求的编号
 

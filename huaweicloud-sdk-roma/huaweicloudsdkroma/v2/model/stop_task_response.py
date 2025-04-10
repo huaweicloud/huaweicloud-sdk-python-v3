@@ -26,7 +26,7 @@ class StopTaskResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """StopTaskResponse
+        r"""StopTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this StopTaskResponse.
+        r"""Gets the message of this StopTaskResponse.
 
         手工启动/停止任务成功返回消息
 
@@ -55,7 +55,7 @@ class StopTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this StopTaskResponse.
+        r"""Sets the message of this StopTaskResponse.
 
         手工启动/停止任务成功返回消息
 

@@ -51,7 +51,7 @@ class NetResp:
     }
 
     def __init__(self, virtual_cluster_id=None, ctime=None, host_id=None, host_name=None, instance_name=None, up=None, speed=None, recv_packets=None, send_packets=None, recv_drop=None, recv_rate=None, send_rate=None, io_rate=None, interface_name=None):
-        """NetResp
+        r"""NetResp
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class NetResp:
 
     @property
     def virtual_cluster_id(self):
-        """Gets the virtual_cluster_id of this NetResp.
+        r"""Gets the virtual_cluster_id of this NetResp.
 
         虚拟集群ID。
 
@@ -145,7 +145,7 @@ class NetResp:
 
     @virtual_cluster_id.setter
     def virtual_cluster_id(self, virtual_cluster_id):
-        """Sets the virtual_cluster_id of this NetResp.
+        r"""Sets the virtual_cluster_id of this NetResp.
 
         虚拟集群ID。
 
@@ -156,7 +156,7 @@ class NetResp:
 
     @property
     def ctime(self):
-        """Gets the ctime of this NetResp.
+        r"""Gets the ctime of this NetResp.
 
         查询时间。
 
@@ -167,7 +167,7 @@ class NetResp:
 
     @ctime.setter
     def ctime(self, ctime):
-        """Sets the ctime of this NetResp.
+        r"""Sets the ctime of this NetResp.
 
         查询时间。
 
@@ -178,7 +178,7 @@ class NetResp:
 
     @property
     def host_id(self):
-        """Gets the host_id of this NetResp.
+        r"""Gets the host_id of this NetResp.
 
         主机ID。
 
@@ -189,7 +189,7 @@ class NetResp:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this NetResp.
+        r"""Sets the host_id of this NetResp.
 
         主机ID。
 
@@ -200,7 +200,7 @@ class NetResp:
 
     @property
     def host_name(self):
-        """Gets the host_name of this NetResp.
+        r"""Gets the host_name of this NetResp.
 
         主机名称。
 
@@ -211,7 +211,7 @@ class NetResp:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this NetResp.
+        r"""Sets the host_name of this NetResp.
 
         主机名称。
 
@@ -222,7 +222,7 @@ class NetResp:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this NetResp.
+        r"""Gets the instance_name of this NetResp.
 
         实例名称。
 
@@ -233,7 +233,7 @@ class NetResp:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this NetResp.
+        r"""Sets the instance_name of this NetResp.
 
         实例名称。
 
@@ -244,7 +244,7 @@ class NetResp:
 
     @property
     def up(self):
-        """Gets the up of this NetResp.
+        r"""Gets the up of this NetResp.
 
         网卡状态（true代表up/false代表down）。
 
@@ -255,7 +255,7 @@ class NetResp:
 
     @up.setter
     def up(self, up):
-        """Sets the up of this NetResp.
+        r"""Sets the up of this NetResp.
 
         网卡状态（true代表up/false代表down）。
 
@@ -266,7 +266,7 @@ class NetResp:
 
     @property
     def speed(self):
-        """Gets the speed of this NetResp.
+        r"""Gets the speed of this NetResp.
 
         网卡速度(Mbps)。
 
@@ -277,7 +277,7 @@ class NetResp:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this NetResp.
+        r"""Sets the speed of this NetResp.
 
         网卡速度(Mbps)。
 
@@ -288,7 +288,7 @@ class NetResp:
 
     @property
     def recv_packets(self):
-        """Gets the recv_packets of this NetResp.
+        r"""Gets the recv_packets of this NetResp.
 
         接收包数(个)。
 
@@ -299,7 +299,7 @@ class NetResp:
 
     @recv_packets.setter
     def recv_packets(self, recv_packets):
-        """Sets the recv_packets of this NetResp.
+        r"""Sets the recv_packets of this NetResp.
 
         接收包数(个)。
 
@@ -310,7 +310,7 @@ class NetResp:
 
     @property
     def send_packets(self):
-        """Gets the send_packets of this NetResp.
+        r"""Gets the send_packets of this NetResp.
 
         发送包数(个)。
 
@@ -321,7 +321,7 @@ class NetResp:
 
     @send_packets.setter
     def send_packets(self, send_packets):
-        """Sets the send_packets of this NetResp.
+        r"""Sets the send_packets of this NetResp.
 
         发送包数(个)。
 
@@ -332,7 +332,7 @@ class NetResp:
 
     @property
     def recv_drop(self):
-        """Gets the recv_drop of this NetResp.
+        r"""Gets the recv_drop of this NetResp.
 
         接收丢包数(个)。
 
@@ -343,7 +343,7 @@ class NetResp:
 
     @recv_drop.setter
     def recv_drop(self, recv_drop):
-        """Sets the recv_drop of this NetResp.
+        r"""Sets the recv_drop of this NetResp.
 
         接收丢包数(个)。
 
@@ -354,7 +354,7 @@ class NetResp:
 
     @property
     def recv_rate(self):
-        """Gets the recv_rate of this NetResp.
+        r"""Gets the recv_rate of this NetResp.
 
         接收速率(KB/s)。
 
@@ -365,7 +365,7 @@ class NetResp:
 
     @recv_rate.setter
     def recv_rate(self, recv_rate):
-        """Sets the recv_rate of this NetResp.
+        r"""Sets the recv_rate of this NetResp.
 
         接收速率(KB/s)。
 
@@ -376,7 +376,7 @@ class NetResp:
 
     @property
     def send_rate(self):
-        """Gets the send_rate of this NetResp.
+        r"""Gets the send_rate of this NetResp.
 
         发送速率(KB/s)。
 
@@ -387,7 +387,7 @@ class NetResp:
 
     @send_rate.setter
     def send_rate(self, send_rate):
-        """Sets the send_rate of this NetResp.
+        r"""Sets the send_rate of this NetResp.
 
         发送速率(KB/s)。
 
@@ -398,7 +398,7 @@ class NetResp:
 
     @property
     def io_rate(self):
-        """Gets the io_rate of this NetResp.
+        r"""Gets the io_rate of this NetResp.
 
         网络速率(KB/s)。
 
@@ -409,7 +409,7 @@ class NetResp:
 
     @io_rate.setter
     def io_rate(self, io_rate):
-        """Sets the io_rate of this NetResp.
+        r"""Sets the io_rate of this NetResp.
 
         网络速率(KB/s)。
 
@@ -420,7 +420,7 @@ class NetResp:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this NetResp.
+        r"""Gets the interface_name of this NetResp.
 
         网卡名称。
 
@@ -431,7 +431,7 @@ class NetResp:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this NetResp.
+        r"""Sets the interface_name of this NetResp.
 
         网卡名称。
 

@@ -73,7 +73,7 @@ class MetricRequest2Dividend:
     }
 
     def __init__(self, custom_field16=None, custom_field17=None, custom_field18=None, custom_field19=None, custom_field20=None, custom_field21=None, custom_field22=None, custom_field23=None, custom_field24=None, custom_field25=None, custom_field26=None, custom_field27=None, custom_field28=None, custom_field29=None, custom_field30=None, custom_field31=None, custom_field32=None, custom_field33=None, custom_field34=None, custom_field35=None, custom_field36=None, custom_field37=None, custom_field38=None, custom_field39=None, custom_field40=None):
-        """MetricRequest2Dividend
+        r"""MetricRequest2Dividend
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field16(self):
-        """Gets the custom_field16 of this MetricRequest2Dividend.
+        r"""Gets the custom_field16 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -222,7 +222,7 @@ class MetricRequest2Dividend:
 
     @custom_field16.setter
     def custom_field16(self, custom_field16):
-        """Sets the custom_field16 of this MetricRequest2Dividend.
+        r"""Sets the custom_field16 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -233,7 +233,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field17(self):
-        """Gets the custom_field17 of this MetricRequest2Dividend.
+        r"""Gets the custom_field17 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -244,7 +244,7 @@ class MetricRequest2Dividend:
 
     @custom_field17.setter
     def custom_field17(self, custom_field17):
-        """Sets the custom_field17 of this MetricRequest2Dividend.
+        r"""Sets the custom_field17 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -255,7 +255,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field18(self):
-        """Gets the custom_field18 of this MetricRequest2Dividend.
+        r"""Gets the custom_field18 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -266,7 +266,7 @@ class MetricRequest2Dividend:
 
     @custom_field18.setter
     def custom_field18(self, custom_field18):
-        """Sets the custom_field18 of this MetricRequest2Dividend.
+        r"""Sets the custom_field18 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -277,7 +277,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field19(self):
-        """Gets the custom_field19 of this MetricRequest2Dividend.
+        r"""Gets the custom_field19 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -288,7 +288,7 @@ class MetricRequest2Dividend:
 
     @custom_field19.setter
     def custom_field19(self, custom_field19):
-        """Sets the custom_field19 of this MetricRequest2Dividend.
+        r"""Sets the custom_field19 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -299,7 +299,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field20(self):
-        """Gets the custom_field20 of this MetricRequest2Dividend.
+        r"""Gets the custom_field20 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -310,7 +310,7 @@ class MetricRequest2Dividend:
 
     @custom_field20.setter
     def custom_field20(self, custom_field20):
-        """Sets the custom_field20 of this MetricRequest2Dividend.
+        r"""Sets the custom_field20 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -321,7 +321,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field21(self):
-        """Gets the custom_field21 of this MetricRequest2Dividend.
+        r"""Gets the custom_field21 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -332,7 +332,7 @@ class MetricRequest2Dividend:
 
     @custom_field21.setter
     def custom_field21(self, custom_field21):
-        """Sets the custom_field21 of this MetricRequest2Dividend.
+        r"""Sets the custom_field21 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -343,7 +343,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field22(self):
-        """Gets the custom_field22 of this MetricRequest2Dividend.
+        r"""Gets the custom_field22 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -354,7 +354,7 @@ class MetricRequest2Dividend:
 
     @custom_field22.setter
     def custom_field22(self, custom_field22):
-        """Sets the custom_field22 of this MetricRequest2Dividend.
+        r"""Sets the custom_field22 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -365,7 +365,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field23(self):
-        """Gets the custom_field23 of this MetricRequest2Dividend.
+        r"""Gets the custom_field23 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -376,7 +376,7 @@ class MetricRequest2Dividend:
 
     @custom_field23.setter
     def custom_field23(self, custom_field23):
-        """Sets the custom_field23 of this MetricRequest2Dividend.
+        r"""Sets the custom_field23 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -387,7 +387,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field24(self):
-        """Gets the custom_field24 of this MetricRequest2Dividend.
+        r"""Gets the custom_field24 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -398,7 +398,7 @@ class MetricRequest2Dividend:
 
     @custom_field24.setter
     def custom_field24(self, custom_field24):
-        """Sets the custom_field24 of this MetricRequest2Dividend.
+        r"""Sets the custom_field24 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -409,7 +409,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field25(self):
-        """Gets the custom_field25 of this MetricRequest2Dividend.
+        r"""Gets the custom_field25 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -420,7 +420,7 @@ class MetricRequest2Dividend:
 
     @custom_field25.setter
     def custom_field25(self, custom_field25):
-        """Sets the custom_field25 of this MetricRequest2Dividend.
+        r"""Sets the custom_field25 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -431,7 +431,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field26(self):
-        """Gets the custom_field26 of this MetricRequest2Dividend.
+        r"""Gets the custom_field26 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -442,7 +442,7 @@ class MetricRequest2Dividend:
 
     @custom_field26.setter
     def custom_field26(self, custom_field26):
-        """Sets the custom_field26 of this MetricRequest2Dividend.
+        r"""Sets the custom_field26 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -453,7 +453,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field27(self):
-        """Gets the custom_field27 of this MetricRequest2Dividend.
+        r"""Gets the custom_field27 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -464,7 +464,7 @@ class MetricRequest2Dividend:
 
     @custom_field27.setter
     def custom_field27(self, custom_field27):
-        """Sets the custom_field27 of this MetricRequest2Dividend.
+        r"""Sets the custom_field27 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -475,7 +475,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field28(self):
-        """Gets the custom_field28 of this MetricRequest2Dividend.
+        r"""Gets the custom_field28 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -486,7 +486,7 @@ class MetricRequest2Dividend:
 
     @custom_field28.setter
     def custom_field28(self, custom_field28):
-        """Sets the custom_field28 of this MetricRequest2Dividend.
+        r"""Sets the custom_field28 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -497,7 +497,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field29(self):
-        """Gets the custom_field29 of this MetricRequest2Dividend.
+        r"""Gets the custom_field29 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -508,7 +508,7 @@ class MetricRequest2Dividend:
 
     @custom_field29.setter
     def custom_field29(self, custom_field29):
-        """Sets the custom_field29 of this MetricRequest2Dividend.
+        r"""Sets the custom_field29 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -519,7 +519,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field30(self):
-        """Gets the custom_field30 of this MetricRequest2Dividend.
+        r"""Gets the custom_field30 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -530,7 +530,7 @@ class MetricRequest2Dividend:
 
     @custom_field30.setter
     def custom_field30(self, custom_field30):
-        """Sets the custom_field30 of this MetricRequest2Dividend.
+        r"""Sets the custom_field30 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -541,7 +541,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field31(self):
-        """Gets the custom_field31 of this MetricRequest2Dividend.
+        r"""Gets the custom_field31 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -552,7 +552,7 @@ class MetricRequest2Dividend:
 
     @custom_field31.setter
     def custom_field31(self, custom_field31):
-        """Sets the custom_field31 of this MetricRequest2Dividend.
+        r"""Sets the custom_field31 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -563,7 +563,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field32(self):
-        """Gets the custom_field32 of this MetricRequest2Dividend.
+        r"""Gets the custom_field32 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -574,7 +574,7 @@ class MetricRequest2Dividend:
 
     @custom_field32.setter
     def custom_field32(self, custom_field32):
-        """Sets the custom_field32 of this MetricRequest2Dividend.
+        r"""Sets the custom_field32 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -585,7 +585,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field33(self):
-        """Gets the custom_field33 of this MetricRequest2Dividend.
+        r"""Gets the custom_field33 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -596,7 +596,7 @@ class MetricRequest2Dividend:
 
     @custom_field33.setter
     def custom_field33(self, custom_field33):
-        """Sets the custom_field33 of this MetricRequest2Dividend.
+        r"""Sets the custom_field33 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -607,7 +607,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field34(self):
-        """Gets the custom_field34 of this MetricRequest2Dividend.
+        r"""Gets the custom_field34 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -618,7 +618,7 @@ class MetricRequest2Dividend:
 
     @custom_field34.setter
     def custom_field34(self, custom_field34):
-        """Sets the custom_field34 of this MetricRequest2Dividend.
+        r"""Sets the custom_field34 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -629,7 +629,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field35(self):
-        """Gets the custom_field35 of this MetricRequest2Dividend.
+        r"""Gets the custom_field35 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -640,7 +640,7 @@ class MetricRequest2Dividend:
 
     @custom_field35.setter
     def custom_field35(self, custom_field35):
-        """Sets the custom_field35 of this MetricRequest2Dividend.
+        r"""Sets the custom_field35 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -651,7 +651,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field36(self):
-        """Gets the custom_field36 of this MetricRequest2Dividend.
+        r"""Gets the custom_field36 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -662,7 +662,7 @@ class MetricRequest2Dividend:
 
     @custom_field36.setter
     def custom_field36(self, custom_field36):
-        """Sets the custom_field36 of this MetricRequest2Dividend.
+        r"""Sets the custom_field36 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -673,7 +673,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field37(self):
-        """Gets the custom_field37 of this MetricRequest2Dividend.
+        r"""Gets the custom_field37 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -684,7 +684,7 @@ class MetricRequest2Dividend:
 
     @custom_field37.setter
     def custom_field37(self, custom_field37):
-        """Sets the custom_field37 of this MetricRequest2Dividend.
+        r"""Sets the custom_field37 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -695,7 +695,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field38(self):
-        """Gets the custom_field38 of this MetricRequest2Dividend.
+        r"""Gets the custom_field38 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -706,7 +706,7 @@ class MetricRequest2Dividend:
 
     @custom_field38.setter
     def custom_field38(self, custom_field38):
-        """Sets the custom_field38 of this MetricRequest2Dividend.
+        r"""Sets the custom_field38 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -717,7 +717,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field39(self):
-        """Gets the custom_field39 of this MetricRequest2Dividend.
+        r"""Gets the custom_field39 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -728,7 +728,7 @@ class MetricRequest2Dividend:
 
     @custom_field39.setter
     def custom_field39(self, custom_field39):
-        """Sets the custom_field39 of this MetricRequest2Dividend.
+        r"""Sets the custom_field39 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -739,7 +739,7 @@ class MetricRequest2Dividend:
 
     @property
     def custom_field40(self):
-        """Gets the custom_field40 of this MetricRequest2Dividend.
+        r"""Gets the custom_field40 of this MetricRequest2Dividend.
 
         自定义字段
 
@@ -750,7 +750,7 @@ class MetricRequest2Dividend:
 
     @custom_field40.setter
     def custom_field40(self, custom_field40):
-        """Sets the custom_field40 of this MetricRequest2Dividend.
+        r"""Sets the custom_field40 of this MetricRequest2Dividend.
 
         自定义字段
 

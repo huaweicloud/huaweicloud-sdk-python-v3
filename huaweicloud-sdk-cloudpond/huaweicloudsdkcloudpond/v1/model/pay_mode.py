@@ -27,7 +27,7 @@ class PayMode:
     }
 
     def __init__(self):
-        """PayMode
+        r"""PayMode
 
         The model defined in huaweicloud sdk
 

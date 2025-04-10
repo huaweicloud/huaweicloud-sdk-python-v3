@@ -31,7 +31,7 @@ class MappingJoinFieldVO:
     }
 
     def __init__(self, field1_id=None, field2_id=None, field1_name=None, field2_name=None):
-        """MappingJoinFieldVO
+        r"""MappingJoinFieldVO
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class MappingJoinFieldVO:
 
     @property
     def field1_id(self):
-        """Gets the field1_id of this MappingJoinFieldVO.
+        r"""Gets the field1_id of this MappingJoinFieldVO.
 
         属性1ID，ID字符串。
 
@@ -71,7 +71,7 @@ class MappingJoinFieldVO:
 
     @field1_id.setter
     def field1_id(self, field1_id):
-        """Sets the field1_id of this MappingJoinFieldVO.
+        r"""Sets the field1_id of this MappingJoinFieldVO.
 
         属性1ID，ID字符串。
 
@@ -82,7 +82,7 @@ class MappingJoinFieldVO:
 
     @property
     def field2_id(self):
-        """Gets the field2_id of this MappingJoinFieldVO.
+        r"""Gets the field2_id of this MappingJoinFieldVO.
 
         属性2ID，ID字符串。
 
@@ -93,7 +93,7 @@ class MappingJoinFieldVO:
 
     @field2_id.setter
     def field2_id(self, field2_id):
-        """Sets the field2_id of this MappingJoinFieldVO.
+        r"""Sets the field2_id of this MappingJoinFieldVO.
 
         属性2ID，ID字符串。
 
@@ -104,7 +104,7 @@ class MappingJoinFieldVO:
 
     @property
     def field1_name(self):
-        """Gets the field1_name of this MappingJoinFieldVO.
+        r"""Gets the field1_name of this MappingJoinFieldVO.
 
         属性1名称。
 
@@ -115,7 +115,7 @@ class MappingJoinFieldVO:
 
     @field1_name.setter
     def field1_name(self, field1_name):
-        """Sets the field1_name of this MappingJoinFieldVO.
+        r"""Sets the field1_name of this MappingJoinFieldVO.
 
         属性1名称。
 
@@ -126,7 +126,7 @@ class MappingJoinFieldVO:
 
     @property
     def field2_name(self):
-        """Gets the field2_name of this MappingJoinFieldVO.
+        r"""Gets the field2_name of this MappingJoinFieldVO.
 
         属性2名称。
 
@@ -137,7 +137,7 @@ class MappingJoinFieldVO:
 
     @field2_name.setter
     def field2_name(self, field2_name):
-        """Sets the field2_name of this MappingJoinFieldVO.
+        r"""Sets the field2_name of this MappingJoinFieldVO.
 
         属性2名称。
 

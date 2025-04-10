@@ -24,7 +24,7 @@ class BatchAddDeviceToGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAddDeviceToGroupResponse
+        r"""BatchAddDeviceToGroupResponse
 
         The model defined in huaweicloud sdk
 

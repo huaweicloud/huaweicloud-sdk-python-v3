@@ -33,7 +33,7 @@ class PoliciesPeripheralsDeviceRedirection:
     }
 
     def __init__(self, printer_redirection=None, session_printer=None, camera_redirection=None, twain_redirection_enable=None, image_compression_level=None):
-        """PoliciesPeripheralsDeviceRedirection
+        r"""PoliciesPeripheralsDeviceRedirection
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @property
     def printer_redirection(self):
-        """Gets the printer_redirection of this PoliciesPeripheralsDeviceRedirection.
+        r"""Gets the printer_redirection of this PoliciesPeripheralsDeviceRedirection.
 
         :return: The printer_redirection of this PoliciesPeripheralsDeviceRedirection.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionPrinterRedirection`
@@ -80,7 +80,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @printer_redirection.setter
     def printer_redirection(self, printer_redirection):
-        """Sets the printer_redirection of this PoliciesPeripheralsDeviceRedirection.
+        r"""Sets the printer_redirection of this PoliciesPeripheralsDeviceRedirection.
 
         :param printer_redirection: The printer_redirection of this PoliciesPeripheralsDeviceRedirection.
         :type printer_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionPrinterRedirection`
@@ -89,7 +89,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @property
     def session_printer(self):
-        """Gets the session_printer of this PoliciesPeripheralsDeviceRedirection.
+        r"""Gets the session_printer of this PoliciesPeripheralsDeviceRedirection.
 
         :return: The session_printer of this PoliciesPeripheralsDeviceRedirection.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionSessionPrinter`
@@ -98,7 +98,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @session_printer.setter
     def session_printer(self, session_printer):
-        """Sets the session_printer of this PoliciesPeripheralsDeviceRedirection.
+        r"""Sets the session_printer of this PoliciesPeripheralsDeviceRedirection.
 
         :param session_printer: The session_printer of this PoliciesPeripheralsDeviceRedirection.
         :type session_printer: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionSessionPrinter`
@@ -107,7 +107,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @property
     def camera_redirection(self):
-        """Gets the camera_redirection of this PoliciesPeripheralsDeviceRedirection.
+        r"""Gets the camera_redirection of this PoliciesPeripheralsDeviceRedirection.
 
         :return: The camera_redirection of this PoliciesPeripheralsDeviceRedirection.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionCameraRedirection`
@@ -116,7 +116,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @camera_redirection.setter
     def camera_redirection(self, camera_redirection):
-        """Sets the camera_redirection of this PoliciesPeripheralsDeviceRedirection.
+        r"""Sets the camera_redirection of this PoliciesPeripheralsDeviceRedirection.
 
         :param camera_redirection: The camera_redirection of this PoliciesPeripheralsDeviceRedirection.
         :type camera_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionCameraRedirection`
@@ -125,7 +125,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @property
     def twain_redirection_enable(self):
-        """Gets the twain_redirection_enable of this PoliciesPeripheralsDeviceRedirection.
+        r"""Gets the twain_redirection_enable of this PoliciesPeripheralsDeviceRedirection.
 
         是否开启TWAIN设备重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -136,7 +136,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @twain_redirection_enable.setter
     def twain_redirection_enable(self, twain_redirection_enable):
-        """Sets the twain_redirection_enable of this PoliciesPeripheralsDeviceRedirection.
+        r"""Sets the twain_redirection_enable of this PoliciesPeripheralsDeviceRedirection.
 
         是否开启TWAIN设备重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -147,7 +147,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @property
     def image_compression_level(self):
-        """Gets the image_compression_level of this PoliciesPeripheralsDeviceRedirection.
+        r"""Gets the image_compression_level of this PoliciesPeripheralsDeviceRedirection.
 
         图形压缩级别。取值为： - 不压缩：none。 - 低（速度最快）：low。 - 中（速度适中）：medium。 - 高（速度最慢）：high。 - 无损（无损压缩）：lossless。 - 低损（低损压缩）：low-loss。 - 中损（中损压缩）：medium-loss。 - 高损（高损压缩）：high-loss。
 
@@ -158,7 +158,7 @@ class PoliciesPeripheralsDeviceRedirection:
 
     @image_compression_level.setter
     def image_compression_level(self, image_compression_level):
-        """Sets the image_compression_level of this PoliciesPeripheralsDeviceRedirection.
+        r"""Sets the image_compression_level of this PoliciesPeripheralsDeviceRedirection.
 
         图形压缩级别。取值为： - 不压缩：none。 - 低（速度最快）：low。 - 中（速度适中）：medium。 - 高（速度最慢）：high。 - 无损（无损压缩）：lossless。 - 低损（低损压缩）：low-loss。 - 中损（中损压缩）：medium-loss。 - 高损（高损压缩）：high-loss。
 

@@ -29,7 +29,7 @@ class EnableAlertRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """EnableAlertRuleRequest
+        r"""EnableAlertRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EnableAlertRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EnableAlertRuleRequest.
+        r"""Gets the project_id of this EnableAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -66,7 +66,7 @@ class EnableAlertRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EnableAlertRuleRequest.
+        r"""Sets the project_id of this EnableAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -77,7 +77,7 @@ class EnableAlertRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this EnableAlertRuleRequest.
+        r"""Gets the workspace_id of this EnableAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -88,7 +88,7 @@ class EnableAlertRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this EnableAlertRuleRequest.
+        r"""Sets the workspace_id of this EnableAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -99,7 +99,7 @@ class EnableAlertRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableAlertRuleRequest.
+        r"""Gets the body of this EnableAlertRuleRequest.
 
         :return: The body of this EnableAlertRuleRequest.
         :rtype: list[str]
@@ -108,7 +108,7 @@ class EnableAlertRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableAlertRuleRequest.
+        r"""Sets the body of this EnableAlertRuleRequest.
 
         :param body: The body of this EnableAlertRuleRequest.
         :type body: list[str]

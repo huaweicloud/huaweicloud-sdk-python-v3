@@ -35,7 +35,7 @@ class QuotaItemInfo:
     }
 
     def __init__(self, name=None, type=None, max=None, min=None, quota=None, used=None):
-        """QuotaItemInfo
+        r"""QuotaItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QuotaItemInfo:
 
     @property
     def name(self):
-        """Gets the name of this QuotaItemInfo.
+        r"""Gets the name of this QuotaItemInfo.
 
         名称
 
@@ -89,7 +89,7 @@ class QuotaItemInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QuotaItemInfo.
+        r"""Sets the name of this QuotaItemInfo.
 
         名称
 
@@ -100,7 +100,7 @@ class QuotaItemInfo:
 
     @property
     def type(self):
-        """Gets the type of this QuotaItemInfo.
+        r"""Gets the type of this QuotaItemInfo.
 
         配额类型
 
@@ -111,7 +111,7 @@ class QuotaItemInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaItemInfo.
+        r"""Sets the type of this QuotaItemInfo.
 
         配额类型
 
@@ -122,7 +122,7 @@ class QuotaItemInfo:
 
     @property
     def max(self):
-        """Gets the max of this QuotaItemInfo.
+        r"""Gets the max of this QuotaItemInfo.
 
         配额最大值
 
@@ -133,7 +133,7 @@ class QuotaItemInfo:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this QuotaItemInfo.
+        r"""Sets the max of this QuotaItemInfo.
 
         配额最大值
 
@@ -144,7 +144,7 @@ class QuotaItemInfo:
 
     @property
     def min(self):
-        """Gets the min of this QuotaItemInfo.
+        r"""Gets the min of this QuotaItemInfo.
 
         配额最小值
 
@@ -155,7 +155,7 @@ class QuotaItemInfo:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaItemInfo.
+        r"""Sets the min of this QuotaItemInfo.
 
         配额最小值
 
@@ -166,7 +166,7 @@ class QuotaItemInfo:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaItemInfo.
+        r"""Gets the quota of this QuotaItemInfo.
 
         当前租户的配额
 
@@ -177,7 +177,7 @@ class QuotaItemInfo:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaItemInfo.
+        r"""Sets the quota of this QuotaItemInfo.
 
         当前租户的配额
 
@@ -188,7 +188,7 @@ class QuotaItemInfo:
 
     @property
     def used(self):
-        """Gets the used of this QuotaItemInfo.
+        r"""Gets the used of this QuotaItemInfo.
 
         当前租户已使用的配额
 
@@ -199,7 +199,7 @@ class QuotaItemInfo:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaItemInfo.
+        r"""Sets the used of this QuotaItemInfo.
 
         当前租户已使用的配额
 

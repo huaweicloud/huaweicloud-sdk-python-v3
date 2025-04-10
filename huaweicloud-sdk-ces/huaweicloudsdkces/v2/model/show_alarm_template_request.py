@@ -25,7 +25,7 @@ class ShowAlarmTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """ShowAlarmTemplateRequest
+        r"""ShowAlarmTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAlarmTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowAlarmTemplateRequest.
+        r"""Gets the template_id of this ShowAlarmTemplateRequest.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -53,7 +53,7 @@ class ShowAlarmTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowAlarmTemplateRequest.
+        r"""Sets the template_id of this ShowAlarmTemplateRequest.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 

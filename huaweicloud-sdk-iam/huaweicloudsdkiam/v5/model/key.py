@@ -23,7 +23,7 @@ class Key:
     }
 
     def __init__(self):
-        """Key
+        r"""Key
 
         The model defined in huaweicloud sdk
 

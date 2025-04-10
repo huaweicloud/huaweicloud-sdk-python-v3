@@ -27,7 +27,7 @@ class FileCreate:
     }
 
     def __init__(self, message=None, content=None):
-        """FileCreate
+        r"""FileCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FileCreate:
 
     @property
     def message(self):
-        """Gets the message of this FileCreate.
+        r"""Gets the message of this FileCreate.
 
         提交描述。
 
@@ -59,7 +59,7 @@ class FileCreate:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this FileCreate.
+        r"""Sets the message of this FileCreate.
 
         提交描述。
 
@@ -70,7 +70,7 @@ class FileCreate:
 
     @property
     def content(self):
-        """Gets the content of this FileCreate.
+        r"""Gets the content of this FileCreate.
 
         经base64编码的文件内容。
 
@@ -81,7 +81,7 @@ class FileCreate:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this FileCreate.
+        r"""Sets the content of this FileCreate.
 
         经base64编码的文件内容。
 

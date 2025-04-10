@@ -29,7 +29,7 @@ class DriverInfo:
     }
 
     def __init__(self, driver_name=None, last_modified=None, size=None):
-        """DriverInfo
+        r"""DriverInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DriverInfo:
 
     @property
     def driver_name(self):
-        """Gets the driver_name of this DriverInfo.
+        r"""Gets the driver_name of this DriverInfo.
 
         文件名称。
 
@@ -68,7 +68,7 @@ class DriverInfo:
 
     @driver_name.setter
     def driver_name(self, driver_name):
-        """Sets the driver_name of this DriverInfo.
+        r"""Sets the driver_name of this DriverInfo.
 
         文件名称。
 
@@ -79,7 +79,7 @@ class DriverInfo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this DriverInfo.
+        r"""Gets the last_modified of this DriverInfo.
 
         最后修改时间。
 
@@ -90,7 +90,7 @@ class DriverInfo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this DriverInfo.
+        r"""Sets the last_modified of this DriverInfo.
 
         最后修改时间。
 
@@ -101,7 +101,7 @@ class DriverInfo:
 
     @property
     def size(self):
-        """Gets the size of this DriverInfo.
+        r"""Gets the size of this DriverInfo.
 
         文件大小，单位：byte
 
@@ -112,7 +112,7 @@ class DriverInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DriverInfo.
+        r"""Sets the size of this DriverInfo.
 
         文件大小，单位：byte
 

@@ -24,7 +24,7 @@ class ResetMessageOffsetWithEngineResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetMessageOffsetWithEngineResponse
+        r"""ResetMessageOffsetWithEngineResponse
 
         The model defined in huaweicloud sdk
 

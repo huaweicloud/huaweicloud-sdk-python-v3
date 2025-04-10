@@ -28,7 +28,7 @@ class ShowSourceIpResponse(SdkResponse):
     }
 
     def __init__(self, source_ip=None, last_modify=None):
-        """ShowSourceIpResponse
+        r"""ShowSourceIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSourceIpResponse(SdkResponse):
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this ShowSourceIpResponse.
+        r"""Gets the source_ip of this ShowSourceIpResponse.
 
         源站信息列表
 
@@ -62,7 +62,7 @@ class ShowSourceIpResponse(SdkResponse):
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this ShowSourceIpResponse.
+        r"""Sets the source_ip of this ShowSourceIpResponse.
 
         源站信息列表
 
@@ -73,7 +73,7 @@ class ShowSourceIpResponse(SdkResponse):
 
     @property
     def last_modify(self):
-        """Gets the last_modify of this ShowSourceIpResponse.
+        r"""Gets the last_modify of this ShowSourceIpResponse.
 
         回源Ip最后更新时间
 
@@ -84,7 +84,7 @@ class ShowSourceIpResponse(SdkResponse):
 
     @last_modify.setter
     def last_modify(self, last_modify):
-        """Sets the last_modify of this ShowSourceIpResponse.
+        r"""Sets the last_modify of this ShowSourceIpResponse.
 
         回源Ip最后更新时间
 

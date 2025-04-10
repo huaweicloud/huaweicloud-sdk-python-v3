@@ -26,7 +26,7 @@ class DisassociateListenerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """DisassociateListenerResponse
+        r"""DisassociateListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisassociateListenerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DisassociateListenerResponse.
+        r"""Gets the request_id of this DisassociateListenerResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class DisassociateListenerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DisassociateListenerResponse.
+        r"""Sets the request_id of this DisassociateListenerResponse.
 
         请求ID。
 

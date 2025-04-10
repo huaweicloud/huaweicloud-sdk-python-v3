@@ -26,7 +26,7 @@ class ShowListenerResponse(SdkResponse):
     }
 
     def __init__(self, listener=None):
-        """ShowListenerResponse
+        r"""ShowListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowListenerResponse(SdkResponse):
 
     @property
     def listener(self):
-        """Gets the listener of this ShowListenerResponse.
+        r"""Gets the listener of this ShowListenerResponse.
 
         :return: The listener of this ShowListenerResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.ListenerResp`
@@ -53,7 +53,7 @@ class ShowListenerResponse(SdkResponse):
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this ShowListenerResponse.
+        r"""Sets the listener of this ShowListenerResponse.
 
         :param listener: The listener of this ShowListenerResponse.
         :type listener: :class:`huaweicloudsdkelb.v2.ListenerResp`

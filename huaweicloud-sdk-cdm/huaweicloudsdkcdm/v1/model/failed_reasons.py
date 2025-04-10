@@ -25,7 +25,7 @@ class FailedReasons:
     }
 
     def __init__(self, create_failed=None):
-        """FailedReasons
+        r"""FailedReasons
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FailedReasons:
 
     @property
     def create_failed(self):
-        """Gets the create_failed of this FailedReasons.
+        r"""Gets the create_failed of this FailedReasons.
 
         :return: The create_failed of this FailedReasons.
         :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasonsCREATEFAILED`
@@ -52,7 +52,7 @@ class FailedReasons:
 
     @create_failed.setter
     def create_failed(self, create_failed):
-        """Sets the create_failed of this FailedReasons.
+        r"""Sets the create_failed of this FailedReasons.
 
         :param create_failed: The create_failed of this FailedReasons.
         :type create_failed: :class:`huaweicloudsdkcdm.v1.FailedReasonsCREATEFAILED`

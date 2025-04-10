@@ -37,7 +37,7 @@ class ListBatchJobsRequest:
     }
 
     def __init__(self, offset=None, limit=None, has_schedule=None, job_name=None, schedule_status=None, order_by=None, order=None):
-        """ListBatchJobsRequest
+        r"""ListBatchJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListBatchJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBatchJobsRequest.
+        r"""Gets the offset of this ListBatchJobsRequest.
 
         当前偏移量，默认为0。
 
@@ -96,7 +96,7 @@ class ListBatchJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBatchJobsRequest.
+        r"""Sets the offset of this ListBatchJobsRequest.
 
         当前偏移量，默认为0。
 
@@ -107,7 +107,7 @@ class ListBatchJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBatchJobsRequest.
+        r"""Gets the limit of this ListBatchJobsRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -118,7 +118,7 @@ class ListBatchJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBatchJobsRequest.
+        r"""Sets the limit of this ListBatchJobsRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -129,7 +129,7 @@ class ListBatchJobsRequest:
 
     @property
     def has_schedule(self):
-        """Gets the has_schedule of this ListBatchJobsRequest.
+        r"""Gets the has_schedule of this ListBatchJobsRequest.
 
         是否定时作业。true：定时作业：false：不是定时作业。为空时：所有作业。
 
@@ -140,7 +140,7 @@ class ListBatchJobsRequest:
 
     @has_schedule.setter
     def has_schedule(self, has_schedule):
-        """Sets the has_schedule of this ListBatchJobsRequest.
+        r"""Sets the has_schedule of this ListBatchJobsRequest.
 
         是否定时作业。true：定时作业：false：不是定时作业。为空时：所有作业。
 
@@ -151,7 +151,7 @@ class ListBatchJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListBatchJobsRequest.
+        r"""Gets the job_name of this ListBatchJobsRequest.
 
         作业名称
 
@@ -162,7 +162,7 @@ class ListBatchJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListBatchJobsRequest.
+        r"""Sets the job_name of this ListBatchJobsRequest.
 
         作业名称
 
@@ -173,7 +173,7 @@ class ListBatchJobsRequest:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this ListBatchJobsRequest.
+        r"""Gets the schedule_status of this ListBatchJobsRequest.
 
         调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
 
@@ -184,7 +184,7 @@ class ListBatchJobsRequest:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this ListBatchJobsRequest.
+        r"""Sets the schedule_status of this ListBatchJobsRequest.
 
         调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
 
@@ -195,7 +195,7 @@ class ListBatchJobsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListBatchJobsRequest.
+        r"""Gets the order_by of this ListBatchJobsRequest.
 
         指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
 
@@ -206,7 +206,7 @@ class ListBatchJobsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListBatchJobsRequest.
+        r"""Sets the order_by of this ListBatchJobsRequest.
 
         指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
 
@@ -217,7 +217,7 @@ class ListBatchJobsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListBatchJobsRequest.
+        r"""Gets the order of this ListBatchJobsRequest.
 
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 
@@ -228,7 +228,7 @@ class ListBatchJobsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListBatchJobsRequest.
+        r"""Sets the order of this ListBatchJobsRequest.
 
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 

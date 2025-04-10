@@ -29,7 +29,7 @@ class PredefineTag:
     }
 
     def __init__(self, key=None, value=None, update_time=None):
-        """PredefineTag
+        r"""PredefineTag
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PredefineTag:
 
     @property
     def key(self):
-        """Gets the key of this PredefineTag.
+        r"""Gets the key of this PredefineTag.
 
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -65,7 +65,7 @@ class PredefineTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PredefineTag.
+        r"""Sets the key of this PredefineTag.
 
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -76,7 +76,7 @@ class PredefineTag:
 
     @property
     def value(self):
-        """Gets the value of this PredefineTag.
+        r"""Gets the value of this PredefineTag.
 
         值。 每个值最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -87,7 +87,7 @@ class PredefineTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PredefineTag.
+        r"""Sets the value of this PredefineTag.
 
         值。 每个值最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -98,7 +98,7 @@ class PredefineTag:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PredefineTag.
+        r"""Gets the update_time of this PredefineTag.
 
         更新时间，采用UTC时间表示。2016-12-09T00:00:00Z
 
@@ -109,7 +109,7 @@ class PredefineTag:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PredefineTag.
+        r"""Sets the update_time of this PredefineTag.
 
         更新时间，采用UTC时间表示。2016-12-09T00:00:00Z
 

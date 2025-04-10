@@ -31,7 +31,7 @@ class ListSecurityGroupRulesRequest:
     }
 
     def __init__(self, marker=None, limit=None, security_group_id=None, remote_ip_prefix=None):
-        """ListSecurityGroupRulesRequest
+        r"""ListSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecurityGroupRulesRequest.
+        r"""Gets the marker of this ListSecurityGroupRulesRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页
 
@@ -75,7 +75,7 @@ class ListSecurityGroupRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecurityGroupRulesRequest.
+        r"""Sets the marker of this ListSecurityGroupRulesRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页
 
@@ -86,7 +86,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityGroupRulesRequest.
+        r"""Gets the limit of this ListSecurityGroupRulesRequest.
 
         每页返回的个数
 
@@ -97,7 +97,7 @@ class ListSecurityGroupRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityGroupRulesRequest.
+        r"""Sets the limit of this ListSecurityGroupRulesRequest.
 
         每页返回的个数
 
@@ -108,7 +108,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ListSecurityGroupRulesRequest.
+        r"""Gets the security_group_id of this ListSecurityGroupRulesRequest.
 
         安全组ID
 
@@ -119,7 +119,7 @@ class ListSecurityGroupRulesRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ListSecurityGroupRulesRequest.
+        r"""Sets the security_group_id of this ListSecurityGroupRulesRequest.
 
         安全组ID
 
@@ -130,7 +130,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
+        r"""Gets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
 
         功能说明：远端IP地址 取值范围：cidr格式
 
@@ -141,7 +141,7 @@ class ListSecurityGroupRulesRequest:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
+        r"""Sets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
 
         功能说明：远端IP地址 取值范围：cidr格式
 

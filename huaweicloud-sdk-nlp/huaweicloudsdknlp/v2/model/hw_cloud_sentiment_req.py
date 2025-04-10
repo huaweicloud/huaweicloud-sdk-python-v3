@@ -27,7 +27,7 @@ class HWCloudSentimentReq:
     }
 
     def __init__(self, content=None, lang=None):
-        """HWCloudSentimentReq
+        r"""HWCloudSentimentReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class HWCloudSentimentReq:
 
     @property
     def content(self):
-        """Gets the content of this HWCloudSentimentReq.
+        r"""Gets the content of this HWCloudSentimentReq.
 
         待分析文本。文本编码要求为utf-8。仅支持中文和英文情感分析。 限定180个字符以内，超过180个字符，只截取前180个字符。 
 
@@ -60,7 +60,7 @@ class HWCloudSentimentReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this HWCloudSentimentReq.
+        r"""Sets the content of this HWCloudSentimentReq.
 
         待分析文本。文本编码要求为utf-8。仅支持中文和英文情感分析。 限定180个字符以内，超过180个字符，只截取前180个字符。 
 
@@ -71,7 +71,7 @@ class HWCloudSentimentReq:
 
     @property
     def lang(self):
-        """Gets the lang of this HWCloudSentimentReq.
+        r"""Gets the lang of this HWCloudSentimentReq.
 
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 
@@ -82,7 +82,7 @@ class HWCloudSentimentReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this HWCloudSentimentReq.
+        r"""Sets the lang of this HWCloudSentimentReq.
 
         支持的文本语言类型，目前支持中文（zh）和英文（en），默认为中文。
 

@@ -33,7 +33,7 @@ class RespDataByIdCardImage:
     }
 
     def __init__(self, verification_result=None, verification_message=None, verification_code=None, similarity=None, idcard_result=None):
-        """RespDataByIdCardImage
+        r"""RespDataByIdCardImage
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class RespDataByIdCardImage:
 
     @property
     def verification_result(self):
-        """Gets the verification_result of this RespDataByIdCardImage.
+        r"""Gets the verification_result of this RespDataByIdCardImage.
 
         审核校验结果： \"valid\"表示身份审核通过； \"invalid\"表示身份审核不通过； \"nonexistent\"表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
 
@@ -77,7 +77,7 @@ class RespDataByIdCardImage:
 
     @verification_result.setter
     def verification_result(self, verification_result):
-        """Sets the verification_result of this RespDataByIdCardImage.
+        r"""Sets the verification_result of this RespDataByIdCardImage.
 
         审核校验结果： \"valid\"表示身份审核通过； \"invalid\"表示身份审核不通过； \"nonexistent\"表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
 
@@ -88,7 +88,7 @@ class RespDataByIdCardImage:
 
     @property
     def verification_message(self):
-        """Gets the verification_message of this RespDataByIdCardImage.
+        r"""Gets the verification_message of this RespDataByIdCardImage.
 
         审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -99,7 +99,7 @@ class RespDataByIdCardImage:
 
     @verification_message.setter
     def verification_message(self, verification_message):
-        """Sets the verification_message of this RespDataByIdCardImage.
+        r"""Sets the verification_message of this RespDataByIdCardImage.
 
         审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -110,7 +110,7 @@ class RespDataByIdCardImage:
 
     @property
     def verification_code(self):
-        """Gets the verification_code of this RespDataByIdCardImage.
+        r"""Gets the verification_code of this RespDataByIdCardImage.
 
         审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -121,7 +121,7 @@ class RespDataByIdCardImage:
 
     @verification_code.setter
     def verification_code(self, verification_code):
-        """Sets the verification_code of this RespDataByIdCardImage.
+        r"""Sets the verification_code of this RespDataByIdCardImage.
 
         审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -132,7 +132,7 @@ class RespDataByIdCardImage:
 
     @property
     def similarity(self):
-        """Gets the similarity of this RespDataByIdCardImage.
+        r"""Gets the similarity of this RespDataByIdCardImage.
 
         人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
@@ -143,7 +143,7 @@ class RespDataByIdCardImage:
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this RespDataByIdCardImage.
+        r"""Sets the similarity of this RespDataByIdCardImage.
 
         人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
@@ -154,7 +154,7 @@ class RespDataByIdCardImage:
 
     @property
     def idcard_result(self):
-        """Gets the idcard_result of this RespDataByIdCardImage.
+        r"""Gets the idcard_result of this RespDataByIdCardImage.
 
         :return: The idcard_result of this RespDataByIdCardImage.
         :rtype: :class:`huaweicloudsdkivs.v2.IdcardResult`
@@ -163,7 +163,7 @@ class RespDataByIdCardImage:
 
     @idcard_result.setter
     def idcard_result(self, idcard_result):
-        """Sets the idcard_result of this RespDataByIdCardImage.
+        r"""Sets the idcard_result of this RespDataByIdCardImage.
 
         :param idcard_result: The idcard_result of this RespDataByIdCardImage.
         :type idcard_result: :class:`huaweicloudsdkivs.v2.IdcardResult`

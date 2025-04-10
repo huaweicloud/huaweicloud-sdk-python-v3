@@ -26,7 +26,7 @@ class ListPostgresqlHbaInfoHistoryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListPostgresqlHbaInfoHistoryResponse
+        r"""ListPostgresqlHbaInfoHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPostgresqlHbaInfoHistoryResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListPostgresqlHbaInfoHistoryResponse.
+        r"""Gets the body of this ListPostgresqlHbaInfoHistoryResponse.
 
         :return: The body of this ListPostgresqlHbaInfoHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaHistory`]
@@ -53,7 +53,7 @@ class ListPostgresqlHbaInfoHistoryResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPostgresqlHbaInfoHistoryResponse.
+        r"""Sets the body of this ListPostgresqlHbaInfoHistoryResponse.
 
         :param body: The body of this ListPostgresqlHbaInfoHistoryResponse.
         :type body: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaHistory`]

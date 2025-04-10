@@ -28,7 +28,7 @@ class ListTrustedIpAddressesResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_total=None):
-        """ListTrustedIpAddressesResponse
+        r"""ListTrustedIpAddressesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTrustedIpAddressesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTrustedIpAddressesResponse.
+        r"""Gets the body of this ListTrustedIpAddressesResponse.
 
         仓库ip白名单列表
 
@@ -62,7 +62,7 @@ class ListTrustedIpAddressesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTrustedIpAddressesResponse.
+        r"""Sets the body of this ListTrustedIpAddressesResponse.
 
         仓库ip白名单列表
 
@@ -73,7 +73,7 @@ class ListTrustedIpAddressesResponse(SdkResponse):
 
     @property
     def x_total(self):
-        """Gets the x_total of this ListTrustedIpAddressesResponse.
+        r"""Gets the x_total of this ListTrustedIpAddressesResponse.
 
         :return: The x_total of this ListTrustedIpAddressesResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListTrustedIpAddressesResponse(SdkResponse):
 
     @x_total.setter
     def x_total(self, x_total):
-        """Sets the x_total of this ListTrustedIpAddressesResponse.
+        r"""Sets the x_total of this ListTrustedIpAddressesResponse.
 
         :param x_total: The x_total of this ListTrustedIpAddressesResponse.
         :type x_total: str

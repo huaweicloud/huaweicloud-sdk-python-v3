@@ -26,7 +26,7 @@ class CreateHealthmonitorResponse(SdkResponse):
     }
 
     def __init__(self, healthmonitor=None):
-        """CreateHealthmonitorResponse
+        r"""CreateHealthmonitorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateHealthmonitorResponse(SdkResponse):
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this CreateHealthmonitorResponse.
+        r"""Gets the healthmonitor of this CreateHealthmonitorResponse.
 
         :return: The healthmonitor of this CreateHealthmonitorResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.HealthmonitorResp`
@@ -53,7 +53,7 @@ class CreateHealthmonitorResponse(SdkResponse):
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this CreateHealthmonitorResponse.
+        r"""Sets the healthmonitor of this CreateHealthmonitorResponse.
 
         :param healthmonitor: The healthmonitor of this CreateHealthmonitorResponse.
         :type healthmonitor: :class:`huaweicloudsdkelb.v2.HealthmonitorResp`

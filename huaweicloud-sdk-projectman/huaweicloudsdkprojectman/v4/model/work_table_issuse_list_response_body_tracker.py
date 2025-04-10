@@ -27,7 +27,7 @@ class WorkTableIssuseListResponseBodyTracker:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkTableIssuseListResponseBodyTracker
+        r"""WorkTableIssuseListResponseBodyTracker
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkTableIssuseListResponseBodyTracker:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyTracker.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyTracker.
 
         工作项类型id
 
@@ -61,7 +61,7 @@ class WorkTableIssuseListResponseBodyTracker:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyTracker.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyTracker.
 
         工作项类型id
 
@@ -72,7 +72,7 @@ class WorkTableIssuseListResponseBodyTracker:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodyTracker.
+        r"""Gets the name of this WorkTableIssuseListResponseBodyTracker.
 
         工作项类型名称
 
@@ -83,7 +83,7 @@ class WorkTableIssuseListResponseBodyTracker:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodyTracker.
+        r"""Sets the name of this WorkTableIssuseListResponseBodyTracker.
 
         工作项类型名称
 

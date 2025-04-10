@@ -25,7 +25,7 @@ class FsDirUasge:
     }
 
     def __init__(self, used_capacity=None):
-        """FsDirUasge
+        r"""FsDirUasge
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FsDirUasge:
 
     @property
     def used_capacity(self):
-        """Gets the used_capacity of this FsDirUasge.
+        r"""Gets the used_capacity of this FsDirUasge.
 
         占用容量，单位：byte
 
@@ -53,7 +53,7 @@ class FsDirUasge:
 
     @used_capacity.setter
     def used_capacity(self, used_capacity):
-        """Sets the used_capacity of this FsDirUasge.
+        r"""Sets the used_capacity of this FsDirUasge.
 
         占用容量，单位：byte
 

@@ -31,7 +31,7 @@ class ListAssociatedWikisRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, limit=None, offset=None):
-        """ListAssociatedWikisRequest
+        r"""ListAssociatedWikisRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAssociatedWikisRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAssociatedWikisRequest.
+        r"""Gets the project_id of this ListAssociatedWikisRequest.
 
         devcloud项目的32位id
 
@@ -73,7 +73,7 @@ class ListAssociatedWikisRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAssociatedWikisRequest.
+        r"""Sets the project_id of this ListAssociatedWikisRequest.
 
         devcloud项目的32位id
 
@@ -84,7 +84,7 @@ class ListAssociatedWikisRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ListAssociatedWikisRequest.
+        r"""Gets the issue_id of this ListAssociatedWikisRequest.
 
         工作项ID
 
@@ -95,7 +95,7 @@ class ListAssociatedWikisRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ListAssociatedWikisRequest.
+        r"""Sets the issue_id of this ListAssociatedWikisRequest.
 
         工作项ID
 
@@ -106,7 +106,7 @@ class ListAssociatedWikisRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssociatedWikisRequest.
+        r"""Gets the limit of this ListAssociatedWikisRequest.
 
         每页数量
 
@@ -117,7 +117,7 @@ class ListAssociatedWikisRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssociatedWikisRequest.
+        r"""Sets the limit of this ListAssociatedWikisRequest.
 
         每页数量
 
@@ -128,7 +128,7 @@ class ListAssociatedWikisRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssociatedWikisRequest.
+        r"""Gets the offset of this ListAssociatedWikisRequest.
 
         偏移量
 
@@ -139,7 +139,7 @@ class ListAssociatedWikisRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssociatedWikisRequest.
+        r"""Sets the offset of this ListAssociatedWikisRequest.
 
         偏移量
 

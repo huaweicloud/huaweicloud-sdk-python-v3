@@ -29,7 +29,7 @@ class AutoInstallAppReq:
     }
 
     def __init__(self, install_command=None, uninstall_command=None, users=None):
-        """AutoInstallAppReq
+        r"""AutoInstallAppReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AutoInstallAppReq:
 
     @property
     def install_command(self):
-        """Gets the install_command of this AutoInstallAppReq.
+        r"""Gets the install_command of this AutoInstallAppReq.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -68,7 +68,7 @@ class AutoInstallAppReq:
 
     @install_command.setter
     def install_command(self, install_command):
-        """Sets the install_command of this AutoInstallAppReq.
+        r"""Sets the install_command of this AutoInstallAppReq.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -79,7 +79,7 @@ class AutoInstallAppReq:
 
     @property
     def uninstall_command(self):
-        """Gets the uninstall_command of this AutoInstallAppReq.
+        r"""Gets the uninstall_command of this AutoInstallAppReq.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -90,7 +90,7 @@ class AutoInstallAppReq:
 
     @uninstall_command.setter
     def uninstall_command(self, uninstall_command):
-        """Sets the uninstall_command of this AutoInstallAppReq.
+        r"""Sets the uninstall_command of this AutoInstallAppReq.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -101,7 +101,7 @@ class AutoInstallAppReq:
 
     @property
     def users(self):
-        """Gets the users of this AutoInstallAppReq.
+        r"""Gets the users of this AutoInstallAppReq.
 
         指定安装用户。
 
@@ -112,7 +112,7 @@ class AutoInstallAppReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this AutoInstallAppReq.
+        r"""Sets the users of this AutoInstallAppReq.
 
         指定安装用户。
 

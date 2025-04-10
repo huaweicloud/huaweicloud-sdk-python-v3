@@ -35,7 +35,7 @@ class MessageTemplate:
     }
 
     def __init__(self, message_template_id=None, message_template_name=None, protocol=None, tag_names=None, create_time=None, update_time=None):
-        """MessageTemplate
+        r"""MessageTemplate
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class MessageTemplate:
 
     @property
     def message_template_id(self):
-        """Gets the message_template_id of this MessageTemplate.
+        r"""Gets the message_template_id of this MessageTemplate.
 
         模板ID。
 
@@ -83,7 +83,7 @@ class MessageTemplate:
 
     @message_template_id.setter
     def message_template_id(self, message_template_id):
-        """Sets the message_template_id of this MessageTemplate.
+        r"""Sets the message_template_id of this MessageTemplate.
 
         模板ID。
 
@@ -94,7 +94,7 @@ class MessageTemplate:
 
     @property
     def message_template_name(self):
-        """Gets the message_template_name of this MessageTemplate.
+        r"""Gets the message_template_name of this MessageTemplate.
 
         模板名称。
 
@@ -105,7 +105,7 @@ class MessageTemplate:
 
     @message_template_name.setter
     def message_template_name(self, message_template_name):
-        """Sets the message_template_name of this MessageTemplate.
+        r"""Sets the message_template_name of this MessageTemplate.
 
         模板名称。
 
@@ -116,7 +116,7 @@ class MessageTemplate:
 
     @property
     def protocol(self):
-        """Gets the protocol of this MessageTemplate.
+        r"""Gets the protocol of this MessageTemplate.
 
         模板协议类型。  目前支持的协议包括：  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
@@ -127,7 +127,7 @@ class MessageTemplate:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this MessageTemplate.
+        r"""Sets the protocol of this MessageTemplate.
 
         模板协议类型。  目前支持的协议包括：  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
@@ -138,7 +138,7 @@ class MessageTemplate:
 
     @property
     def tag_names(self):
-        """Gets the tag_names of this MessageTemplate.
+        r"""Gets the tag_names of this MessageTemplate.
 
         模板tag列表
 
@@ -149,7 +149,7 @@ class MessageTemplate:
 
     @tag_names.setter
     def tag_names(self, tag_names):
-        """Sets the tag_names of this MessageTemplate.
+        r"""Sets the tag_names of this MessageTemplate.
 
         模板tag列表
 
@@ -160,7 +160,7 @@ class MessageTemplate:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MessageTemplate.
+        r"""Gets the create_time of this MessageTemplate.
 
         模板创建时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -171,7 +171,7 @@ class MessageTemplate:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MessageTemplate.
+        r"""Sets the create_time of this MessageTemplate.
 
         模板创建时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -182,7 +182,7 @@ class MessageTemplate:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MessageTemplate.
+        r"""Gets the update_time of this MessageTemplate.
 
         模板最后更新时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -193,7 +193,7 @@ class MessageTemplate:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MessageTemplate.
+        r"""Sets the update_time of this MessageTemplate.
 
         模板最后更新时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 

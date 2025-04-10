@@ -37,7 +37,7 @@ class ReplayErrorSqlTemplateResp:
     }
 
     def __init__(self, sql_template=None, sql_template_md5=None, target_name=None, schema_name=None, query_type=None, target_type=None, count=None):
-        """ReplayErrorSqlTemplateResp
+        r"""ReplayErrorSqlTemplateResp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def sql_template(self):
-        """Gets the sql_template of this ReplayErrorSqlTemplateResp.
+        r"""Gets the sql_template of this ReplayErrorSqlTemplateResp.
 
         SQL模板
 
@@ -96,7 +96,7 @@ class ReplayErrorSqlTemplateResp:
 
     @sql_template.setter
     def sql_template(self, sql_template):
-        """Sets the sql_template of this ReplayErrorSqlTemplateResp.
+        r"""Sets the sql_template of this ReplayErrorSqlTemplateResp.
 
         SQL模板
 
@@ -107,7 +107,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def sql_template_md5(self):
-        """Gets the sql_template_md5 of this ReplayErrorSqlTemplateResp.
+        r"""Gets the sql_template_md5 of this ReplayErrorSqlTemplateResp.
 
         SQL模板MD5
 
@@ -118,7 +118,7 @@ class ReplayErrorSqlTemplateResp:
 
     @sql_template_md5.setter
     def sql_template_md5(self, sql_template_md5):
-        """Sets the sql_template_md5 of this ReplayErrorSqlTemplateResp.
+        r"""Sets the sql_template_md5 of this ReplayErrorSqlTemplateResp.
 
         SQL模板MD5
 
@@ -129,7 +129,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def target_name(self):
-        """Gets the target_name of this ReplayErrorSqlTemplateResp.
+        r"""Gets the target_name of this ReplayErrorSqlTemplateResp.
 
         目标库昵称
 
@@ -140,7 +140,7 @@ class ReplayErrorSqlTemplateResp:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this ReplayErrorSqlTemplateResp.
+        r"""Sets the target_name of this ReplayErrorSqlTemplateResp.
 
         目标库昵称
 
@@ -151,7 +151,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ReplayErrorSqlTemplateResp.
+        r"""Gets the schema_name of this ReplayErrorSqlTemplateResp.
 
         schema名称
 
@@ -162,7 +162,7 @@ class ReplayErrorSqlTemplateResp:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ReplayErrorSqlTemplateResp.
+        r"""Sets the schema_name of this ReplayErrorSqlTemplateResp.
 
         schema名称
 
@@ -173,7 +173,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ReplayErrorSqlTemplateResp.
+        r"""Gets the query_type of this ReplayErrorSqlTemplateResp.
 
         SQL类型
 
@@ -184,7 +184,7 @@ class ReplayErrorSqlTemplateResp:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ReplayErrorSqlTemplateResp.
+        r"""Sets the query_type of this ReplayErrorSqlTemplateResp.
 
         SQL类型
 
@@ -195,7 +195,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ReplayErrorSqlTemplateResp.
+        r"""Gets the target_type of this ReplayErrorSqlTemplateResp.
 
         目标库类型
 
@@ -206,7 +206,7 @@ class ReplayErrorSqlTemplateResp:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ReplayErrorSqlTemplateResp.
+        r"""Sets the target_type of this ReplayErrorSqlTemplateResp.
 
         目标库类型
 
@@ -217,7 +217,7 @@ class ReplayErrorSqlTemplateResp:
 
     @property
     def count(self):
-        """Gets the count of this ReplayErrorSqlTemplateResp.
+        r"""Gets the count of this ReplayErrorSqlTemplateResp.
 
         归类的SQL数量
 
@@ -228,7 +228,7 @@ class ReplayErrorSqlTemplateResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ReplayErrorSqlTemplateResp.
+        r"""Sets the count of this ReplayErrorSqlTemplateResp.
 
         归类的SQL数量
 

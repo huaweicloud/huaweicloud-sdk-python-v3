@@ -29,7 +29,7 @@ class BatchDeleteResourceTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchDeleteResourceTagRequest
+        r"""BatchDeleteResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchDeleteResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchDeleteResourceTagRequest.
+        r"""Gets the resource_type of this BatchDeleteResourceTagRequest.
 
         资源类型。 - auditInstance
 
@@ -66,7 +66,7 @@ class BatchDeleteResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchDeleteResourceTagRequest.
+        r"""Sets the resource_type of this BatchDeleteResourceTagRequest.
 
         资源类型。 - auditInstance
 
@@ -77,7 +77,7 @@ class BatchDeleteResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteResourceTagRequest.
+        r"""Gets the resource_id of this BatchDeleteResourceTagRequest.
 
         资源ID。可在查询实例列表接口的resource_id字段获取。
 
@@ -88,7 +88,7 @@ class BatchDeleteResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteResourceTagRequest.
+        r"""Sets the resource_id of this BatchDeleteResourceTagRequest.
 
         资源ID。可在查询实例列表接口的resource_id字段获取。
 
@@ -99,7 +99,7 @@ class BatchDeleteResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteResourceTagRequest.
+        r"""Gets the body of this BatchDeleteResourceTagRequest.
 
         :return: The body of this BatchDeleteResourceTagRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.ResourceTagDeleteRequest`
@@ -108,7 +108,7 @@ class BatchDeleteResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteResourceTagRequest.
+        r"""Sets the body of this BatchDeleteResourceTagRequest.
 
         :param body: The body of this BatchDeleteResourceTagRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagDeleteRequest`

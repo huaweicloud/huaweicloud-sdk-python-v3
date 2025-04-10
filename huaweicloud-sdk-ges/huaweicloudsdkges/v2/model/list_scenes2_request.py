@@ -29,7 +29,7 @@ class ListScenes2Request:
     }
 
     def __init__(self, scene_name=None, application_name=None, graph_id=None):
-        """ListScenes2Request
+        r"""ListScenes2Request
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListScenes2Request:
 
     @property
     def scene_name(self):
-        """Gets the scene_name of this ListScenes2Request.
+        r"""Gets the scene_name of this ListScenes2Request.
 
         场景名称。 当有且只有scene_name有值时，返回对应scene_name下的所有application详情。 当有且只有scene_name、application_name有值时，返回与application_name对应的application详情。 当scene_name、application_name、graph_id均无值时,返回所有SceneApplication
 
@@ -68,7 +68,7 @@ class ListScenes2Request:
 
     @scene_name.setter
     def scene_name(self, scene_name):
-        """Sets the scene_name of this ListScenes2Request.
+        r"""Sets the scene_name of this ListScenes2Request.
 
         场景名称。 当有且只有scene_name有值时，返回对应scene_name下的所有application详情。 当有且只有scene_name、application_name有值时，返回与application_name对应的application详情。 当scene_name、application_name、graph_id均无值时,返回所有SceneApplication
 
@@ -79,7 +79,7 @@ class ListScenes2Request:
 
     @property
     def application_name(self):
-        """Gets the application_name of this ListScenes2Request.
+        r"""Gets the application_name of this ListScenes2Request.
 
         应用程序名字。 当有且只有scene_name、application_name有值时，返回与application_name对应的application详情。 当scene_name、application_name、graph_id均无值时,返回所有SceneApplication。
 
@@ -90,7 +90,7 @@ class ListScenes2Request:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this ListScenes2Request.
+        r"""Sets the application_name of this ListScenes2Request.
 
         应用程序名字。 当有且只有scene_name、application_name有值时，返回与application_name对应的application详情。 当scene_name、application_name、graph_id均无值时,返回所有SceneApplication。
 
@@ -101,7 +101,7 @@ class ListScenes2Request:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ListScenes2Request.
+        r"""Gets the graph_id of this ListScenes2Request.
 
         图ID。 当有且只有graph_id有值时，返回对应图id下所订阅的application详情。 当scene_name、application_name、graph_id均无值时,返回所有SceneApplication。
 
@@ -112,7 +112,7 @@ class ListScenes2Request:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ListScenes2Request.
+        r"""Sets the graph_id of this ListScenes2Request.
 
         图ID。 当有且只有graph_id有值时，返回对应图id下所订阅的application详情。 当scene_name、application_name、graph_id均无值时,返回所有SceneApplication。
 

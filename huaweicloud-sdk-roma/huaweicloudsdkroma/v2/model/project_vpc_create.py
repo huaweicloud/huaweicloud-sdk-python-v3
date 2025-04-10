@@ -45,7 +45,7 @@ class ProjectVpcCreate:
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None, member_groups=None, members=None, vpc_health_config=None, microservice_info=None, instance_ids=None):
-        """ProjectVpcCreate
+        r"""ProjectVpcCreate
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class ProjectVpcCreate:
 
     @property
     def name(self):
-        """Gets the name of this ProjectVpcCreate.
+        r"""Gets the name of this ProjectVpcCreate.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -119,7 +119,7 @@ class ProjectVpcCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectVpcCreate.
+        r"""Sets the name of this ProjectVpcCreate.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -130,7 +130,7 @@ class ProjectVpcCreate:
 
     @property
     def port(self):
-        """Gets the port of this ProjectVpcCreate.
+        r"""Gets the port of this ProjectVpcCreate.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -141,7 +141,7 @@ class ProjectVpcCreate:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ProjectVpcCreate.
+        r"""Sets the port of this ProjectVpcCreate.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -152,7 +152,7 @@ class ProjectVpcCreate:
 
     @property
     def balance_strategy(self):
-        """Gets the balance_strategy of this ProjectVpcCreate.
+        r"""Gets the balance_strategy of this ProjectVpcCreate.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -163,7 +163,7 @@ class ProjectVpcCreate:
 
     @balance_strategy.setter
     def balance_strategy(self, balance_strategy):
-        """Sets the balance_strategy of this ProjectVpcCreate.
+        r"""Sets the balance_strategy of this ProjectVpcCreate.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -174,7 +174,7 @@ class ProjectVpcCreate:
 
     @property
     def member_type(self):
-        """Gets the member_type of this ProjectVpcCreate.
+        r"""Gets the member_type of this ProjectVpcCreate.
 
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
@@ -185,7 +185,7 @@ class ProjectVpcCreate:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this ProjectVpcCreate.
+        r"""Sets the member_type of this ProjectVpcCreate.
 
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
@@ -196,7 +196,7 @@ class ProjectVpcCreate:
 
     @property
     def type(self):
-        """Gets the type of this ProjectVpcCreate.
+        r"""Gets the type of this ProjectVpcCreate.
 
         vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
 
@@ -207,7 +207,7 @@ class ProjectVpcCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProjectVpcCreate.
+        r"""Sets the type of this ProjectVpcCreate.
 
         vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
 
@@ -218,7 +218,7 @@ class ProjectVpcCreate:
 
     @property
     def dict_code(self):
-        """Gets the dict_code of this ProjectVpcCreate.
+        r"""Gets the dict_code of this ProjectVpcCreate.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -229,7 +229,7 @@ class ProjectVpcCreate:
 
     @dict_code.setter
     def dict_code(self, dict_code):
-        """Sets the dict_code of this ProjectVpcCreate.
+        r"""Sets the dict_code of this ProjectVpcCreate.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -240,7 +240,7 @@ class ProjectVpcCreate:
 
     @property
     def member_groups(self):
-        """Gets the member_groups of this ProjectVpcCreate.
+        r"""Gets the member_groups of this ProjectVpcCreate.
 
         VPC通道后端服务器组列表
 
@@ -251,7 +251,7 @@ class ProjectVpcCreate:
 
     @member_groups.setter
     def member_groups(self, member_groups):
-        """Sets the member_groups of this ProjectVpcCreate.
+        r"""Sets the member_groups of this ProjectVpcCreate.
 
         VPC通道后端服务器组列表
 
@@ -262,7 +262,7 @@ class ProjectVpcCreate:
 
     @property
     def members(self):
-        """Gets the members of this ProjectVpcCreate.
+        r"""Gets the members of this ProjectVpcCreate.
 
         VPC后端实例列表。
 
@@ -273,7 +273,7 @@ class ProjectVpcCreate:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ProjectVpcCreate.
+        r"""Sets the members of this ProjectVpcCreate.
 
         VPC后端实例列表。
 
@@ -284,7 +284,7 @@ class ProjectVpcCreate:
 
     @property
     def vpc_health_config(self):
-        """Gets the vpc_health_config of this ProjectVpcCreate.
+        r"""Gets the vpc_health_config of this ProjectVpcCreate.
 
         :return: The vpc_health_config of this ProjectVpcCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
@@ -293,7 +293,7 @@ class ProjectVpcCreate:
 
     @vpc_health_config.setter
     def vpc_health_config(self, vpc_health_config):
-        """Sets the vpc_health_config of this ProjectVpcCreate.
+        r"""Sets the vpc_health_config of this ProjectVpcCreate.
 
         :param vpc_health_config: The vpc_health_config of this ProjectVpcCreate.
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
@@ -302,7 +302,7 @@ class ProjectVpcCreate:
 
     @property
     def microservice_info(self):
-        """Gets the microservice_info of this ProjectVpcCreate.
+        r"""Gets the microservice_info of this ProjectVpcCreate.
 
         :return: The microservice_info of this ProjectVpcCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceCreate`
@@ -311,7 +311,7 @@ class ProjectVpcCreate:
 
     @microservice_info.setter
     def microservice_info(self, microservice_info):
-        """Sets the microservice_info of this ProjectVpcCreate.
+        r"""Sets the microservice_info of this ProjectVpcCreate.
 
         :param microservice_info: The microservice_info of this ProjectVpcCreate.
         :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceCreate`
@@ -320,7 +320,7 @@ class ProjectVpcCreate:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ProjectVpcCreate.
+        r"""Gets the instance_ids of this ProjectVpcCreate.
 
         关联实例列表。至少包含一个实例编号，最多10个，如需扩大配额请联系技术工程师修改PROJECT_VPC_OPERATOR_NUM_LIMIT配置。
 
@@ -331,7 +331,7 @@ class ProjectVpcCreate:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ProjectVpcCreate.
+        r"""Sets the instance_ids of this ProjectVpcCreate.
 
         关联实例列表。至少包含一个实例编号，最多10个，如需扩大配额请联系技术工程师修改PROJECT_VPC_OPERATOR_NUM_LIMIT配置。
 

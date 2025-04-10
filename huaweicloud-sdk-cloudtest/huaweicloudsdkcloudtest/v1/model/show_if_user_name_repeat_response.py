@@ -26,7 +26,7 @@ class ShowIfUserNameRepeatResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowIfUserNameRepeatResponse
+        r"""ShowIfUserNameRepeatResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowIfUserNameRepeatResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowIfUserNameRepeatResponse.
+        r"""Gets the body of this ShowIfUserNameRepeatResponse.
 
         :return: The body of this ShowIfUserNameRepeatResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowIfUserNameRepeatResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowIfUserNameRepeatResponse.
+        r"""Sets the body of this ShowIfUserNameRepeatResponse.
 
         :param body: The body of this ShowIfUserNameRepeatResponse.
         :type body: str

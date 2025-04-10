@@ -25,7 +25,7 @@ class DTSchedule:
     }
 
     def __init__(self, period=None):
-        """DTSchedule
+        r"""DTSchedule
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DTSchedule:
 
     @property
     def period(self):
-        """Gets the period of this DTSchedule.
+        r"""Gets the period of this DTSchedule.
 
         调度周期，正则： \"1m|5m|15m|1h\"，表示从每小时第0分0秒开始，每1m、5m、15m、1h调度
 
@@ -53,7 +53,7 @@ class DTSchedule:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this DTSchedule.
+        r"""Sets the period of this DTSchedule.
 
         调度周期，正则： \"1m|5m|15m|1h\"，表示从每小时第0分0秒开始，每1m、5m、15m、1h调度
 

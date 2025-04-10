@@ -31,7 +31,7 @@ class PageParticipant:
     }
 
     def __init__(self, data=None, offset=None, limit=None, count=None):
-        """PageParticipant
+        r"""PageParticipant
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PageParticipant:
 
     @property
     def data(self):
-        """Gets the data of this PageParticipant.
+        r"""Gets the data of this PageParticipant.
 
         被邀请的与会者信息。包含预约会议时邀请的与会者和会中主持人邀请的与会者。
 
@@ -75,7 +75,7 @@ class PageParticipant:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PageParticipant.
+        r"""Sets the data of this PageParticipant.
 
         被邀请的与会者信息。包含预约会议时邀请的与会者和会中主持人邀请的与会者。
 
@@ -86,7 +86,7 @@ class PageParticipant:
 
     @property
     def offset(self):
-        """Gets the offset of this PageParticipant.
+        r"""Gets the offset of this PageParticipant.
 
         查询偏移量。
 
@@ -97,7 +97,7 @@ class PageParticipant:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this PageParticipant.
+        r"""Sets the offset of this PageParticipant.
 
         查询偏移量。
 
@@ -108,7 +108,7 @@ class PageParticipant:
 
     @property
     def limit(self):
-        """Gets the limit of this PageParticipant.
+        r"""Gets the limit of this PageParticipant.
 
         每页的记录数。
 
@@ -119,7 +119,7 @@ class PageParticipant:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this PageParticipant.
+        r"""Sets the limit of this PageParticipant.
 
         每页的记录数。
 
@@ -130,7 +130,7 @@ class PageParticipant:
 
     @property
     def count(self):
-        """Gets the count of this PageParticipant.
+        r"""Gets the count of this PageParticipant.
 
         总记录数。
 
@@ -141,7 +141,7 @@ class PageParticipant:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this PageParticipant.
+        r"""Sets the count of this PageParticipant.
 
         总记录数。
 

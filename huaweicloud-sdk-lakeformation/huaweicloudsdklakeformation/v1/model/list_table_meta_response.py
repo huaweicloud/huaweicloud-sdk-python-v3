@@ -28,7 +28,7 @@ class ListTableMetaResponse(SdkResponse):
     }
 
     def __init__(self, table_metas=None, page_info=None):
-        """ListTableMetaResponse
+        r"""ListTableMetaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTableMetaResponse(SdkResponse):
 
     @property
     def table_metas(self):
-        """Gets the table_metas of this ListTableMetaResponse.
+        r"""Gets the table_metas of this ListTableMetaResponse.
 
         :return: The table_metas of this ListTableMetaResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.TableMeta`]
@@ -60,7 +60,7 @@ class ListTableMetaResponse(SdkResponse):
 
     @table_metas.setter
     def table_metas(self, table_metas):
-        """Sets the table_metas of this ListTableMetaResponse.
+        r"""Sets the table_metas of this ListTableMetaResponse.
 
         :param table_metas: The table_metas of this ListTableMetaResponse.
         :type table_metas: list[:class:`huaweicloudsdklakeformation.v1.TableMeta`]
@@ -69,7 +69,7 @@ class ListTableMetaResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListTableMetaResponse.
+        r"""Gets the page_info of this ListTableMetaResponse.
 
         :return: The page_info of this ListTableMetaResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -78,7 +78,7 @@ class ListTableMetaResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListTableMetaResponse.
+        r"""Sets the page_info of this ListTableMetaResponse.
 
         :param page_info: The page_info of this ListTableMetaResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

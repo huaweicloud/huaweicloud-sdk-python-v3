@@ -29,7 +29,7 @@ class CreateFASReq:
     }
 
     def __init__(self, audio_file_download_url=None, frame_rate=None, emotion=None):
-        """CreateFASReq
+        r"""CreateFASReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateFASReq:
 
     @property
     def audio_file_download_url(self):
-        """Gets the audio_file_download_url of this CreateFASReq.
+        r"""Gets the audio_file_download_url of this CreateFASReq.
 
         语音驱动音频文件下载URL，格式为AAC或者MP3
 
@@ -66,7 +66,7 @@ class CreateFASReq:
 
     @audio_file_download_url.setter
     def audio_file_download_url(self, audio_file_download_url):
-        """Sets the audio_file_download_url of this CreateFASReq.
+        r"""Sets the audio_file_download_url of this CreateFASReq.
 
         语音驱动音频文件下载URL，格式为AAC或者MP3
 
@@ -77,7 +77,7 @@ class CreateFASReq:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this CreateFASReq.
+        r"""Gets the frame_rate of this CreateFASReq.
 
         期望的输出帧率
 
@@ -88,7 +88,7 @@ class CreateFASReq:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this CreateFASReq.
+        r"""Sets the frame_rate of this CreateFASReq.
 
         期望的输出帧率
 
@@ -99,7 +99,7 @@ class CreateFASReq:
 
     @property
     def emotion(self):
-        """Gets the emotion of this CreateFASReq.
+        r"""Gets the emotion of this CreateFASReq.
 
         情绪： 0：平静（默认） 1：开心 2：哀伤 3：愤怒
 
@@ -110,7 +110,7 @@ class CreateFASReq:
 
     @emotion.setter
     def emotion(self, emotion):
-        """Sets the emotion of this CreateFASReq.
+        r"""Sets the emotion of this CreateFASReq.
 
         情绪： 0：平静（默认） 1：开心 2：哀伤 3：愤怒
 

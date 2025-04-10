@@ -29,7 +29,7 @@ class SwitchLogReplayRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """SwitchLogReplayRequest
+        r"""SwitchLogReplayRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SwitchLogReplayRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchLogReplayRequest.
+        r"""Gets the instance_id of this SwitchLogReplayRequest.
 
         实例id
 
@@ -66,7 +66,7 @@ class SwitchLogReplayRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchLogReplayRequest.
+        r"""Sets the instance_id of this SwitchLogReplayRequest.
 
         实例id
 
@@ -77,7 +77,7 @@ class SwitchLogReplayRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchLogReplayRequest.
+        r"""Gets the x_language of this SwitchLogReplayRequest.
 
         语言
 
@@ -88,7 +88,7 @@ class SwitchLogReplayRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchLogReplayRequest.
+        r"""Sets the x_language of this SwitchLogReplayRequest.
 
         语言
 
@@ -99,7 +99,7 @@ class SwitchLogReplayRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchLogReplayRequest.
+        r"""Gets the body of this SwitchLogReplayRequest.
 
         :return: The body of this SwitchLogReplayRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SwitchLogReplayRequestBody`
@@ -108,7 +108,7 @@ class SwitchLogReplayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchLogReplayRequest.
+        r"""Sets the body of this SwitchLogReplayRequest.
 
         :param body: The body of this SwitchLogReplayRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SwitchLogReplayRequestBody`

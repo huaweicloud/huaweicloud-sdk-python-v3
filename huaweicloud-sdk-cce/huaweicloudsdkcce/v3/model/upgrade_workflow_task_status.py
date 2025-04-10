@@ -30,7 +30,7 @@ class UpgradeWorkflowTaskStatus:
     }
 
     def __init__(self):
-        """UpgradeWorkflowTaskStatus
+        r"""UpgradeWorkflowTaskStatus
 
         The model defined in huaweicloud sdk
 

@@ -52,7 +52,7 @@ class CreateEndpointResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, vpc_id=None, subnet_id=None, domain=None, description=None, status=None, error_info=None, type=None, scalable=None, created_time=None, updated_time=None, endpoints=None, x_request_id=None):
-        """CreateEndpointResponse
+        r"""CreateEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEndpointResponse.
+        r"""Gets the id of this CreateEndpointResponse.
 
         访问端点ID
 
@@ -146,7 +146,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEndpointResponse.
+        r"""Sets the id of this CreateEndpointResponse.
 
         访问端点ID
 
@@ -157,7 +157,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEndpointResponse.
+        r"""Gets the name of this CreateEndpointResponse.
 
         用户指定的访问端点名称
 
@@ -168,7 +168,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEndpointResponse.
+        r"""Sets the name of this CreateEndpointResponse.
 
         用户指定的访问端点名称
 
@@ -179,7 +179,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateEndpointResponse.
+        r"""Gets the vpc_id of this CreateEndpointResponse.
 
         访问端点所在的VPC的ID
 
@@ -190,7 +190,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateEndpointResponse.
+        r"""Sets the vpc_id of this CreateEndpointResponse.
 
         访问端点所在的VPC的ID
 
@@ -201,7 +201,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateEndpointResponse.
+        r"""Gets the subnet_id of this CreateEndpointResponse.
 
         访问端点所在的子网的ID
 
@@ -212,7 +212,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateEndpointResponse.
+        r"""Sets the subnet_id of this CreateEndpointResponse.
 
         访问端点所在的子网的ID
 
@@ -223,7 +223,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this CreateEndpointResponse.
+        r"""Gets the domain of this CreateEndpointResponse.
 
         访问域名
 
@@ -234,7 +234,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateEndpointResponse.
+        r"""Sets the domain of this CreateEndpointResponse.
 
         访问域名
 
@@ -245,7 +245,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateEndpointResponse.
+        r"""Gets the description of this CreateEndpointResponse.
 
         描述
 
@@ -256,7 +256,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEndpointResponse.
+        r"""Sets the description of this CreateEndpointResponse.
 
         描述
 
@@ -267,7 +267,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateEndpointResponse.
+        r"""Gets the status of this CreateEndpointResponse.
 
         访问端点状态
 
@@ -278,7 +278,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateEndpointResponse.
+        r"""Sets the status of this CreateEndpointResponse.
 
         访问端点状态
 
@@ -289,7 +289,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this CreateEndpointResponse.
+        r"""Gets the error_info of this CreateEndpointResponse.
 
         :return: The error_info of this CreateEndpointResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -298,7 +298,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this CreateEndpointResponse.
+        r"""Sets the error_info of this CreateEndpointResponse.
 
         :param error_info: The error_info of this CreateEndpointResponse.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -307,7 +307,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateEndpointResponse.
+        r"""Gets the type of this CreateEndpointResponse.
 
         访问端点类型
 
@@ -318,7 +318,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateEndpointResponse.
+        r"""Sets the type of this CreateEndpointResponse.
 
         访问端点类型
 
@@ -329,7 +329,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def scalable(self):
-        """Gets the scalable of this CreateEndpointResponse.
+        r"""Gets the scalable of this CreateEndpointResponse.
 
         是否可更新
 
@@ -340,7 +340,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @scalable.setter
     def scalable(self, scalable):
-        """Sets the scalable of this CreateEndpointResponse.
+        r"""Sets the scalable of this CreateEndpointResponse.
 
         是否可更新
 
@@ -351,7 +351,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateEndpointResponse.
+        r"""Gets the created_time of this CreateEndpointResponse.
 
         创建UTC时间
 
@@ -362,7 +362,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateEndpointResponse.
+        r"""Sets the created_time of this CreateEndpointResponse.
 
         创建UTC时间
 
@@ -373,7 +373,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this CreateEndpointResponse.
+        r"""Gets the updated_time of this CreateEndpointResponse.
 
         更新UTC时间
 
@@ -384,7 +384,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this CreateEndpointResponse.
+        r"""Sets the updated_time of this CreateEndpointResponse.
 
         更新UTC时间
 
@@ -395,7 +395,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this CreateEndpointResponse.
+        r"""Gets the endpoints of this CreateEndpointResponse.
 
         访问端点终端节点列表
 
@@ -406,7 +406,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this CreateEndpointResponse.
+        r"""Sets the endpoints of this CreateEndpointResponse.
 
         访问端点终端节点列表
 
@@ -417,7 +417,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateEndpointResponse.
+        r"""Gets the x_request_id of this CreateEndpointResponse.
 
         :return: The x_request_id of this CreateEndpointResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateEndpointResponse.
+        r"""Sets the x_request_id of this CreateEndpointResponse.
 
         :param x_request_id: The x_request_id of this CreateEndpointResponse.
         :type x_request_id: str

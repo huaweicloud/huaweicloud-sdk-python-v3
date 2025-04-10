@@ -26,7 +26,7 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowGaussMySqlProjectQuotasResponse
+        r"""ShowGaussMySqlProjectQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowGaussMySqlProjectQuotasResponse.
+        r"""Gets the quotas of this ShowGaussMySqlProjectQuotasResponse.
 
         :return: The quotas of this ShowGaussMySqlProjectQuotasResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`
@@ -53,7 +53,7 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowGaussMySqlProjectQuotasResponse.
+        r"""Sets the quotas of this ShowGaussMySqlProjectQuotasResponse.
 
         :param quotas: The quotas of this ShowGaussMySqlProjectQuotasResponse.
         :type quotas: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`

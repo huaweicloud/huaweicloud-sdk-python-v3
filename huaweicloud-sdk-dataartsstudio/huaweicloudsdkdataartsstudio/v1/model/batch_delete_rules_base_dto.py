@@ -25,7 +25,7 @@ class BatchDeleteRulesBaseDTO:
     }
 
     def __init__(self, rule_ids=None):
-        """BatchDeleteRulesBaseDTO
+        r"""BatchDeleteRulesBaseDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteRulesBaseDTO:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this BatchDeleteRulesBaseDTO.
+        r"""Gets the rule_ids of this BatchDeleteRulesBaseDTO.
 
         识别规则id列表
 
@@ -53,7 +53,7 @@ class BatchDeleteRulesBaseDTO:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this BatchDeleteRulesBaseDTO.
+        r"""Sets the rule_ids of this BatchDeleteRulesBaseDTO.
 
         识别规则id列表
 

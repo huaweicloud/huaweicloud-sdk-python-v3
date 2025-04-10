@@ -29,7 +29,7 @@ class UserSafeDto:
     }
 
     def __init__(self, id=None, name=None, username=None):
-        """UserSafeDto
+        r"""UserSafeDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UserSafeDto:
 
     @property
     def id(self):
-        """Gets the id of this UserSafeDto.
+        r"""Gets the id of this UserSafeDto.
 
         用户id
 
@@ -68,7 +68,7 @@ class UserSafeDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserSafeDto.
+        r"""Sets the id of this UserSafeDto.
 
         用户id
 
@@ -79,7 +79,7 @@ class UserSafeDto:
 
     @property
     def name(self):
-        """Gets the name of this UserSafeDto.
+        r"""Gets the name of this UserSafeDto.
 
         姓名
 
@@ -90,7 +90,7 @@ class UserSafeDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserSafeDto.
+        r"""Sets the name of this UserSafeDto.
 
         姓名
 
@@ -101,7 +101,7 @@ class UserSafeDto:
 
     @property
     def username(self):
-        """Gets the username of this UserSafeDto.
+        r"""Gets the username of this UserSafeDto.
 
         用户名
 
@@ -112,7 +112,7 @@ class UserSafeDto:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UserSafeDto.
+        r"""Sets the username of this UserSafeDto.
 
         用户名
 

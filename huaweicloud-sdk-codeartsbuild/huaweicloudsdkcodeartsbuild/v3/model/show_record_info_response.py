@@ -32,7 +32,7 @@ class ShowRecordInfoResponse(SdkResponse):
     }
 
     def __init__(self, success=None, message=None, err_code=None, result=None):
-        """ShowRecordInfoResponse
+        r"""ShowRecordInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ShowRecordInfoResponse.
+        r"""Gets the success of this ShowRecordInfoResponse.
 
         状态
 
@@ -76,7 +76,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ShowRecordInfoResponse.
+        r"""Sets the success of this ShowRecordInfoResponse.
 
         状态
 
@@ -87,7 +87,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowRecordInfoResponse.
+        r"""Gets the message of this ShowRecordInfoResponse.
 
         消息
 
@@ -98,7 +98,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowRecordInfoResponse.
+        r"""Sets the message of this ShowRecordInfoResponse.
 
         消息
 
@@ -109,7 +109,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def err_code(self):
-        """Gets the err_code of this ShowRecordInfoResponse.
+        r"""Gets the err_code of this ShowRecordInfoResponse.
 
         错误码
 
@@ -120,7 +120,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @err_code.setter
     def err_code(self, err_code):
-        """Sets the err_code of this ShowRecordInfoResponse.
+        r"""Sets the err_code of this ShowRecordInfoResponse.
 
         错误码
 
@@ -131,7 +131,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowRecordInfoResponse.
+        r"""Gets the result of this ShowRecordInfoResponse.
 
         :return: The result of this ShowRecordInfoResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.RecordInfoResult`
@@ -140,7 +140,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowRecordInfoResponse.
+        r"""Sets the result of this ShowRecordInfoResponse.
 
         :param result: The result of this ShowRecordInfoResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.RecordInfoResult`

@@ -25,7 +25,7 @@ class InviteShareDTO:
     }
 
     def __init__(self, share=None):
-        """InviteShareDTO
+        r"""InviteShareDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InviteShareDTO:
 
     @property
     def share(self):
-        """Gets the share of this InviteShareDTO.
+        r"""Gets the share of this InviteShareDTO.
 
         邀请标志。 * 0：取消邀请 * 1：邀请 
 
@@ -53,7 +53,7 @@ class InviteShareDTO:
 
     @share.setter
     def share(self, share):
-        """Sets the share of this InviteShareDTO.
+        r"""Sets the share of this InviteShareDTO.
 
         邀请标志。 * 0：取消邀请 * 1：邀请 
 

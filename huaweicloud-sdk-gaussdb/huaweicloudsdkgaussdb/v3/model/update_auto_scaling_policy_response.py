@@ -30,7 +30,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, switch_status=None):
-        """UpdateAutoScalingPolicyResponse
+        r"""UpdateAutoScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAutoScalingPolicyResponse.
+        r"""Gets the instance_id of this UpdateAutoScalingPolicyResponse.
 
         实例ID。
 
@@ -69,7 +69,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAutoScalingPolicyResponse.
+        r"""Sets the instance_id of this UpdateAutoScalingPolicyResponse.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this UpdateAutoScalingPolicyResponse.
+        r"""Gets the instance_name of this UpdateAutoScalingPolicyResponse.
 
         实例名称。
 
@@ -91,7 +91,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this UpdateAutoScalingPolicyResponse.
+        r"""Sets the instance_name of this UpdateAutoScalingPolicyResponse.
 
         实例名称。
 
@@ -102,7 +102,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this UpdateAutoScalingPolicyResponse.
+        r"""Gets the switch_status of this UpdateAutoScalingPolicyResponse.
 
         :return: The switch_status of this UpdateAutoScalingPolicyResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.AutoScalingSwitchStatus`
@@ -111,7 +111,7 @@ class UpdateAutoScalingPolicyResponse(SdkResponse):
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this UpdateAutoScalingPolicyResponse.
+        r"""Sets the switch_status of this UpdateAutoScalingPolicyResponse.
 
         :param switch_status: The switch_status of this UpdateAutoScalingPolicyResponse.
         :type switch_status: :class:`huaweicloudsdkgaussdb.v3.AutoScalingSwitchStatus`

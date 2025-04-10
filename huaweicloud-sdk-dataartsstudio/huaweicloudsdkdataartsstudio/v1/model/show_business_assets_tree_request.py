@@ -27,7 +27,7 @@ class ShowBusinessAssetsTreeRequest:
     }
 
     def __init__(self, workspace=None, guid=None):
-        """ShowBusinessAssetsTreeRequest
+        r"""ShowBusinessAssetsTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBusinessAssetsTreeRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowBusinessAssetsTreeRequest.
+        r"""Gets the workspace of this ShowBusinessAssetsTreeRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -60,7 +60,7 @@ class ShowBusinessAssetsTreeRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowBusinessAssetsTreeRequest.
+        r"""Sets the workspace of this ShowBusinessAssetsTreeRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -71,7 +71,7 @@ class ShowBusinessAssetsTreeRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowBusinessAssetsTreeRequest.
+        r"""Gets the guid of this ShowBusinessAssetsTreeRequest.
 
         资产guid，未填充时查询LV1级别业务资产,获取方法请参见[数据开发作业ID](dataartsstudio_02_0351.xml)
 
@@ -82,7 +82,7 @@ class ShowBusinessAssetsTreeRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowBusinessAssetsTreeRequest.
+        r"""Sets the guid of this ShowBusinessAssetsTreeRequest.
 
         资产guid，未填充时查询LV1级别业务资产,获取方法请参见[数据开发作业ID](dataartsstudio_02_0351.xml)
 

@@ -29,7 +29,7 @@ class ListTemplatesV2Request:
     }
 
     def __init__(self, x_language=None, action_id=None, body=None):
-        """ListTemplatesV2Request
+        r"""ListTemplatesV2Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTemplatesV2Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTemplatesV2Request.
+        r"""Gets the x_language of this ListTemplatesV2Request.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -67,7 +67,7 @@ class ListTemplatesV2Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTemplatesV2Request.
+        r"""Sets the x_language of this ListTemplatesV2Request.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -78,7 +78,7 @@ class ListTemplatesV2Request:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ListTemplatesV2Request.
+        r"""Gets the action_id of this ListTemplatesV2Request.
 
         请填写固定值“query”。
 
@@ -89,7 +89,7 @@ class ListTemplatesV2Request:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ListTemplatesV2Request.
+        r"""Sets the action_id of this ListTemplatesV2Request.
 
         请填写固定值“query”。
 
@@ -100,7 +100,7 @@ class ListTemplatesV2Request:
 
     @property
     def body(self):
-        """Gets the body of this ListTemplatesV2Request.
+        r"""Gets the body of this ListTemplatesV2Request.
 
         :return: The body of this ListTemplatesV2Request.
         :rtype: :class:`huaweicloudsdkdevstar.v1.TemplateQueryV2`
@@ -109,7 +109,7 @@ class ListTemplatesV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTemplatesV2Request.
+        r"""Sets the body of this ListTemplatesV2Request.
 
         :param body: The body of this ListTemplatesV2Request.
         :type body: :class:`huaweicloudsdkdevstar.v1.TemplateQueryV2`

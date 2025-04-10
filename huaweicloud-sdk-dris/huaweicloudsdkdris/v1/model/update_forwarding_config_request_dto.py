@@ -27,7 +27,7 @@ class UpdateForwardingConfigRequestDTO:
     }
 
     def __init__(self, kafka_config=None, mrs_kafka_config=None):
-        """UpdateForwardingConfigRequestDTO
+        r"""UpdateForwardingConfigRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateForwardingConfigRequestDTO:
 
     @property
     def kafka_config(self):
-        """Gets the kafka_config of this UpdateForwardingConfigRequestDTO.
+        r"""Gets the kafka_config of this UpdateForwardingConfigRequestDTO.
 
         :return: The kafka_config of this UpdateForwardingConfigRequestDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateKafkaConfigRequestDTO`
@@ -59,7 +59,7 @@ class UpdateForwardingConfigRequestDTO:
 
     @kafka_config.setter
     def kafka_config(self, kafka_config):
-        """Sets the kafka_config of this UpdateForwardingConfigRequestDTO.
+        r"""Sets the kafka_config of this UpdateForwardingConfigRequestDTO.
 
         :param kafka_config: The kafka_config of this UpdateForwardingConfigRequestDTO.
         :type kafka_config: :class:`huaweicloudsdkdris.v1.UpdateKafkaConfigRequestDTO`
@@ -68,7 +68,7 @@ class UpdateForwardingConfigRequestDTO:
 
     @property
     def mrs_kafka_config(self):
-        """Gets the mrs_kafka_config of this UpdateForwardingConfigRequestDTO.
+        r"""Gets the mrs_kafka_config of this UpdateForwardingConfigRequestDTO.
 
         :return: The mrs_kafka_config of this UpdateForwardingConfigRequestDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateMrsKafkaConfigRequestDTO`
@@ -77,7 +77,7 @@ class UpdateForwardingConfigRequestDTO:
 
     @mrs_kafka_config.setter
     def mrs_kafka_config(self, mrs_kafka_config):
-        """Sets the mrs_kafka_config of this UpdateForwardingConfigRequestDTO.
+        r"""Sets the mrs_kafka_config of this UpdateForwardingConfigRequestDTO.
 
         :param mrs_kafka_config: The mrs_kafka_config of this UpdateForwardingConfigRequestDTO.
         :type mrs_kafka_config: :class:`huaweicloudsdkdris.v1.UpdateMrsKafkaConfigRequestDTO`

@@ -24,7 +24,7 @@ class DeleteVirtualGatewayResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVirtualGatewayResponse
+        r"""DeleteVirtualGatewayResponse
 
         The model defined in huaweicloud sdk
 

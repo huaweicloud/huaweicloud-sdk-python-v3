@@ -29,7 +29,7 @@ class BatchTagAddActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """BatchTagAddActionRequest
+        r"""BatchTagAddActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchTagAddActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchTagAddActionRequest.
+        r"""Gets the x_language of this BatchTagAddActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class BatchTagAddActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchTagAddActionRequest.
+        r"""Sets the x_language of this BatchTagAddActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class BatchTagAddActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchTagAddActionRequest.
+        r"""Gets the instance_id of this BatchTagAddActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class BatchTagAddActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchTagAddActionRequest.
+        r"""Sets the instance_id of this BatchTagAddActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class BatchTagAddActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchTagAddActionRequest.
+        r"""Gets the body of this BatchTagAddActionRequest.
 
         :return: The body of this BatchTagAddActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.BatchTagActionAddRequestBody`
@@ -109,7 +109,7 @@ class BatchTagAddActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchTagAddActionRequest.
+        r"""Sets the body of this BatchTagAddActionRequest.
 
         :param body: The body of this BatchTagAddActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.BatchTagActionAddRequestBody`

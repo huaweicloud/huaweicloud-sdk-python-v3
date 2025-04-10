@@ -26,7 +26,7 @@ class UpdatePrincipalsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdatePrincipalsResponse
+        r"""UpdatePrincipalsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePrincipalsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrincipalsResponse.
+        r"""Gets the body of this UpdatePrincipalsResponse.
 
         :return: The body of this UpdatePrincipalsResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Principal`]
@@ -53,7 +53,7 @@ class UpdatePrincipalsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrincipalsResponse.
+        r"""Sets the body of this UpdatePrincipalsResponse.
 
         :param body: The body of this UpdatePrincipalsResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Principal`]

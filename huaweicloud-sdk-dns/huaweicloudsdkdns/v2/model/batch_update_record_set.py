@@ -33,7 +33,7 @@ class BatchUpdateRecordSet:
     }
 
     def __init__(self, id=None, description=None, ttl=None, weight=None, records=None):
-        """BatchUpdateRecordSet
+        r"""BatchUpdateRecordSet
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BatchUpdateRecordSet:
 
     @property
     def id(self):
-        """Gets the id of this BatchUpdateRecordSet.
+        r"""Gets the id of this BatchUpdateRecordSet.
 
         RecordSet资源ID。
 
@@ -80,7 +80,7 @@ class BatchUpdateRecordSet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchUpdateRecordSet.
+        r"""Sets the id of this BatchUpdateRecordSet.
 
         RecordSet资源ID。
 
@@ -91,7 +91,7 @@ class BatchUpdateRecordSet:
 
     @property
     def description(self):
-        """Gets the description of this BatchUpdateRecordSet.
+        r"""Gets the description of this BatchUpdateRecordSet.
 
         RecordSet资源描述。
 
@@ -102,7 +102,7 @@ class BatchUpdateRecordSet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchUpdateRecordSet.
+        r"""Sets the description of this BatchUpdateRecordSet.
 
         RecordSet资源描述。
 
@@ -113,7 +113,7 @@ class BatchUpdateRecordSet:
 
     @property
     def ttl(self):
-        """Gets the ttl of this BatchUpdateRecordSet.
+        r"""Gets the ttl of this BatchUpdateRecordSet.
 
         Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
 
@@ -124,7 +124,7 @@ class BatchUpdateRecordSet:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this BatchUpdateRecordSet.
+        r"""Sets the ttl of this BatchUpdateRecordSet.
 
         Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
 
@@ -135,7 +135,7 @@ class BatchUpdateRecordSet:
 
     @property
     def weight(self):
-        """Gets the weight of this BatchUpdateRecordSet.
+        r"""Gets the weight of this BatchUpdateRecordSet.
 
         解析记录的权重，默认为null。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
 
@@ -146,7 +146,7 @@ class BatchUpdateRecordSet:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this BatchUpdateRecordSet.
+        r"""Sets the weight of this BatchUpdateRecordSet.
 
         解析记录的权重，默认为null。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
 
@@ -157,7 +157,7 @@ class BatchUpdateRecordSet:
 
     @property
     def records(self):
-        """Gets the records of this BatchUpdateRecordSet.
+        r"""Gets the records of this BatchUpdateRecordSet.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -168,7 +168,7 @@ class BatchUpdateRecordSet:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this BatchUpdateRecordSet.
+        r"""Sets the records of this BatchUpdateRecordSet.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 

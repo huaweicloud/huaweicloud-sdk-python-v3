@@ -28,7 +28,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_request_id=None):
-        """ListAlertRuleMetricsResponse
+        r"""ListAlertRuleMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAlertRuleMetricsResponse.
+        r"""Gets the body of this ListAlertRuleMetricsResponse.
 
         ListAlertRuleMetricsResponseBody
 
@@ -62,7 +62,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAlertRuleMetricsResponse.
+        r"""Sets the body of this ListAlertRuleMetricsResponse.
 
         ListAlertRuleMetricsResponseBody
 
@@ -73,7 +73,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAlertRuleMetricsResponse.
+        r"""Gets the x_request_id of this ListAlertRuleMetricsResponse.
 
         :return: The x_request_id of this ListAlertRuleMetricsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListAlertRuleMetricsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAlertRuleMetricsResponse.
+        r"""Sets the x_request_id of this ListAlertRuleMetricsResponse.
 
         :param x_request_id: The x_request_id of this ListAlertRuleMetricsResponse.
         :type x_request_id: str

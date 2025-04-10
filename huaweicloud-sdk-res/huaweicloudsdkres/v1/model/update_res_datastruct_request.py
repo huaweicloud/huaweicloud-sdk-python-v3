@@ -31,7 +31,7 @@ class UpdateResDatastructRequest:
     }
 
     def __init__(self, content_type=None, datasource_id=None, workspace_id=None, body=None):
-        """UpdateResDatastructRequest
+        r"""UpdateResDatastructRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateResDatastructRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateResDatastructRequest.
+        r"""Gets the content_type of this UpdateResDatastructRequest.
 
         内容类型，取值为application/json。
 
@@ -72,7 +72,7 @@ class UpdateResDatastructRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateResDatastructRequest.
+        r"""Sets the content_type of this UpdateResDatastructRequest.
 
         内容类型，取值为application/json。
 
@@ -83,7 +83,7 @@ class UpdateResDatastructRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this UpdateResDatastructRequest.
+        r"""Gets the datasource_id of this UpdateResDatastructRequest.
 
         数据源id。
 
@@ -94,7 +94,7 @@ class UpdateResDatastructRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this UpdateResDatastructRequest.
+        r"""Sets the datasource_id of this UpdateResDatastructRequest.
 
         数据源id。
 
@@ -105,7 +105,7 @@ class UpdateResDatastructRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateResDatastructRequest.
+        r"""Gets the workspace_id of this UpdateResDatastructRequest.
 
         工作空间id。
 
@@ -116,7 +116,7 @@ class UpdateResDatastructRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateResDatastructRequest.
+        r"""Sets the workspace_id of this UpdateResDatastructRequest.
 
         工作空间id。
 
@@ -127,7 +127,7 @@ class UpdateResDatastructRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResDatastructRequest.
+        r"""Gets the body of this UpdateResDatastructRequest.
 
         :return: The body of this UpdateResDatastructRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`
@@ -136,7 +136,7 @@ class UpdateResDatastructRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResDatastructRequest.
+        r"""Sets the body of this UpdateResDatastructRequest.
 
         :param body: The body of this UpdateResDatastructRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`

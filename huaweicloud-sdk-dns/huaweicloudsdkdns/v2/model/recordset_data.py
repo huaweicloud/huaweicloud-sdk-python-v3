@@ -59,7 +59,7 @@ class RecordsetData:
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, ttl=None, records=None, status=None, zone_id=None, zone_name=None, line=None, alias_target=None, created_at=None, updated_at=None, health_check_id=None, default=None, project_id=None, links=None, weight=None):
-        """RecordsetData
+        r"""RecordsetData
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class RecordsetData:
 
     @property
     def id(self):
-        """Gets the id of this RecordsetData.
+        r"""Gets the id of this RecordsetData.
 
         Record Set的ID。
 
@@ -173,7 +173,7 @@ class RecordsetData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecordsetData.
+        r"""Sets the id of this RecordsetData.
 
         Record Set的ID。
 
@@ -184,7 +184,7 @@ class RecordsetData:
 
     @property
     def name(self):
-        """Gets the name of this RecordsetData.
+        r"""Gets the name of this RecordsetData.
 
         Record Set的名称。
 
@@ -195,7 +195,7 @@ class RecordsetData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecordsetData.
+        r"""Sets the name of this RecordsetData.
 
         Record Set的名称。
 
@@ -206,7 +206,7 @@ class RecordsetData:
 
     @property
     def description(self):
-        """Gets the description of this RecordsetData.
+        r"""Gets the description of this RecordsetData.
 
         Record Set的描述信息。
 
@@ -217,7 +217,7 @@ class RecordsetData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RecordsetData.
+        r"""Sets the description of this RecordsetData.
 
         Record Set的描述信息。
 
@@ -228,7 +228,7 @@ class RecordsetData:
 
     @property
     def type(self):
-        """Gets the type of this RecordsetData.
+        r"""Gets the type of this RecordsetData.
 
         记录类型。
 
@@ -239,7 +239,7 @@ class RecordsetData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RecordsetData.
+        r"""Sets the type of this RecordsetData.
 
         记录类型。
 
@@ -250,7 +250,7 @@ class RecordsetData:
 
     @property
     def ttl(self):
-        """Gets the ttl of this RecordsetData.
+        r"""Gets the ttl of this RecordsetData.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -261,7 +261,7 @@ class RecordsetData:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this RecordsetData.
+        r"""Sets the ttl of this RecordsetData.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -272,7 +272,7 @@ class RecordsetData:
 
     @property
     def records(self):
-        """Gets the records of this RecordsetData.
+        r"""Gets the records of this RecordsetData.
 
         域名解析后的值。
 
@@ -283,7 +283,7 @@ class RecordsetData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this RecordsetData.
+        r"""Sets the records of this RecordsetData.
 
         域名解析后的值。
 
@@ -294,7 +294,7 @@ class RecordsetData:
 
     @property
     def status(self):
-        """Gets the status of this RecordsetData.
+        r"""Gets the status of this RecordsetData.
 
         资源状态。
 
@@ -305,7 +305,7 @@ class RecordsetData:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RecordsetData.
+        r"""Sets the status of this RecordsetData.
 
         资源状态。
 
@@ -316,7 +316,7 @@ class RecordsetData:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this RecordsetData.
+        r"""Gets the zone_id of this RecordsetData.
 
         托管该记录的zone_id。
 
@@ -327,7 +327,7 @@ class RecordsetData:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this RecordsetData.
+        r"""Sets the zone_id of this RecordsetData.
 
         托管该记录的zone_id。
 
@@ -338,7 +338,7 @@ class RecordsetData:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this RecordsetData.
+        r"""Gets the zone_name of this RecordsetData.
 
         托管该记录的zone_name。
 
@@ -349,7 +349,7 @@ class RecordsetData:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this RecordsetData.
+        r"""Sets the zone_name of this RecordsetData.
 
         托管该记录的zone_name。
 
@@ -360,7 +360,7 @@ class RecordsetData:
 
     @property
     def line(self):
-        """Gets the line of this RecordsetData.
+        r"""Gets the line of this RecordsetData.
 
         解析线路ID。
 
@@ -371,7 +371,7 @@ class RecordsetData:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this RecordsetData.
+        r"""Sets the line of this RecordsetData.
 
         解析线路ID。
 
@@ -382,7 +382,7 @@ class RecordsetData:
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this RecordsetData.
+        r"""Gets the alias_target of this RecordsetData.
 
         :return: The alias_target of this RecordsetData.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -391,7 +391,7 @@ class RecordsetData:
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this RecordsetData.
+        r"""Sets the alias_target of this RecordsetData.
 
         :param alias_target: The alias_target of this RecordsetData.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -400,7 +400,7 @@ class RecordsetData:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RecordsetData.
+        r"""Gets the created_at of this RecordsetData.
 
         创建时间。
 
@@ -411,7 +411,7 @@ class RecordsetData:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RecordsetData.
+        r"""Sets the created_at of this RecordsetData.
 
         创建时间。
 
@@ -422,7 +422,7 @@ class RecordsetData:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RecordsetData.
+        r"""Gets the updated_at of this RecordsetData.
 
         更新时间。
 
@@ -433,7 +433,7 @@ class RecordsetData:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RecordsetData.
+        r"""Sets the updated_at of this RecordsetData.
 
         更新时间。
 
@@ -444,7 +444,7 @@ class RecordsetData:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this RecordsetData.
+        r"""Gets the health_check_id of this RecordsetData.
 
         健康检查ID。
 
@@ -455,7 +455,7 @@ class RecordsetData:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this RecordsetData.
+        r"""Sets the health_check_id of this RecordsetData.
 
         健康检查ID。
 
@@ -466,7 +466,7 @@ class RecordsetData:
 
     @property
     def default(self):
-        """Gets the default of this RecordsetData.
+        r"""Gets the default of this RecordsetData.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -477,7 +477,7 @@ class RecordsetData:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this RecordsetData.
+        r"""Sets the default of this RecordsetData.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -488,7 +488,7 @@ class RecordsetData:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RecordsetData.
+        r"""Gets the project_id of this RecordsetData.
 
         该Record Set所属的项目ID。
 
@@ -499,7 +499,7 @@ class RecordsetData:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RecordsetData.
+        r"""Sets the project_id of this RecordsetData.
 
         该Record Set所属的项目ID。
 
@@ -510,7 +510,7 @@ class RecordsetData:
 
     @property
     def links(self):
-        """Gets the links of this RecordsetData.
+        r"""Gets the links of this RecordsetData.
 
         :return: The links of this RecordsetData.
         :rtype: :class:`huaweicloudsdkdns.v2.Link`
@@ -519,7 +519,7 @@ class RecordsetData:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this RecordsetData.
+        r"""Sets the links of this RecordsetData.
 
         :param links: The links of this RecordsetData.
         :type links: :class:`huaweicloudsdkdns.v2.Link`
@@ -528,7 +528,7 @@ class RecordsetData:
 
     @property
     def weight(self):
-        """Gets the weight of this RecordsetData.
+        r"""Gets the weight of this RecordsetData.
 
         解析记录的权重。
 
@@ -539,7 +539,7 @@ class RecordsetData:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this RecordsetData.
+        r"""Sets the weight of this RecordsetData.
 
         解析记录的权重。
 

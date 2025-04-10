@@ -25,7 +25,7 @@ class ShowStreamTagsRequest:
     }
 
     def __init__(self, stream_id=None):
-        """ShowStreamTagsRequest
+        r"""ShowStreamTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowStreamTagsRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ShowStreamTagsRequest.
+        r"""Gets the stream_id of this ShowStreamTagsRequest.
 
         通道ID。
 
@@ -53,7 +53,7 @@ class ShowStreamTagsRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ShowStreamTagsRequest.
+        r"""Sets the stream_id of this ShowStreamTagsRequest.
 
         通道ID。
 

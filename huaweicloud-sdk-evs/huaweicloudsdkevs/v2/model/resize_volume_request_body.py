@@ -27,7 +27,7 @@ class ResizeVolumeRequestBody:
     }
 
     def __init__(self, bss_param=None, os_extend=None):
-        """ResizeVolumeRequestBody
+        r"""ResizeVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeVolumeRequestBody:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this ResizeVolumeRequestBody.
+        r"""Gets the bss_param of this ResizeVolumeRequestBody.
 
         :return: The bss_param of this ResizeVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.BssParamForResizeVolume`
@@ -58,7 +58,7 @@ class ResizeVolumeRequestBody:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this ResizeVolumeRequestBody.
+        r"""Sets the bss_param of this ResizeVolumeRequestBody.
 
         :param bss_param: The bss_param of this ResizeVolumeRequestBody.
         :type bss_param: :class:`huaweicloudsdkevs.v2.BssParamForResizeVolume`
@@ -67,7 +67,7 @@ class ResizeVolumeRequestBody:
 
     @property
     def os_extend(self):
-        """Gets the os_extend of this ResizeVolumeRequestBody.
+        r"""Gets the os_extend of this ResizeVolumeRequestBody.
 
         :return: The os_extend of this ResizeVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.OsExtend`
@@ -76,7 +76,7 @@ class ResizeVolumeRequestBody:
 
     @os_extend.setter
     def os_extend(self, os_extend):
-        """Sets the os_extend of this ResizeVolumeRequestBody.
+        r"""Sets the os_extend of this ResizeVolumeRequestBody.
 
         :param os_extend: The os_extend of this ResizeVolumeRequestBody.
         :type os_extend: :class:`huaweicloudsdkevs.v2.OsExtend`

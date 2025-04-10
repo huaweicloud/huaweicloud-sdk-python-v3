@@ -28,7 +28,7 @@ class ListAccessInfosResponse(SdkResponse):
     }
 
     def __init__(self, access_infos=None, total=None):
-        """ListAccessInfosResponse
+        r"""ListAccessInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccessInfosResponse(SdkResponse):
 
     @property
     def access_infos(self):
-        """Gets the access_infos of this ListAccessInfosResponse.
+        r"""Gets the access_infos of this ListAccessInfosResponse.
 
         accessinfo列表
 
@@ -62,7 +62,7 @@ class ListAccessInfosResponse(SdkResponse):
 
     @access_infos.setter
     def access_infos(self, access_infos):
-        """Sets the access_infos of this ListAccessInfosResponse.
+        r"""Sets the access_infos of this ListAccessInfosResponse.
 
         accessinfo列表
 
@@ -73,7 +73,7 @@ class ListAccessInfosResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAccessInfosResponse.
+        r"""Gets the total of this ListAccessInfosResponse.
 
         accessinfo总数
 
@@ -84,7 +84,7 @@ class ListAccessInfosResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAccessInfosResponse.
+        r"""Sets the total of this ListAccessInfosResponse.
 
         accessinfo总数
 

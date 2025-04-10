@@ -34,7 +34,7 @@ class StopJobActionResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, id=None, name=None, status=None):
-        """StopJobActionResponse
+        r"""StopJobActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class StopJobActionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this StopJobActionResponse.
+        r"""Gets the error_code of this StopJobActionResponse.
 
         错误码。
 
@@ -78,7 +78,7 @@ class StopJobActionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this StopJobActionResponse.
+        r"""Sets the error_code of this StopJobActionResponse.
 
         错误码。
 
@@ -89,7 +89,7 @@ class StopJobActionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this StopJobActionResponse.
+        r"""Gets the error_msg of this StopJobActionResponse.
 
         错误描述。
 
@@ -100,7 +100,7 @@ class StopJobActionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this StopJobActionResponse.
+        r"""Sets the error_msg of this StopJobActionResponse.
 
         错误描述。
 
@@ -111,7 +111,7 @@ class StopJobActionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this StopJobActionResponse.
+        r"""Gets the id of this StopJobActionResponse.
 
         任务ID。
 
@@ -122,7 +122,7 @@ class StopJobActionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StopJobActionResponse.
+        r"""Sets the id of this StopJobActionResponse.
 
         任务ID。
 
@@ -133,7 +133,7 @@ class StopJobActionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this StopJobActionResponse.
+        r"""Gets the name of this StopJobActionResponse.
 
         任务名称。
 
@@ -144,7 +144,7 @@ class StopJobActionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StopJobActionResponse.
+        r"""Sets the name of this StopJobActionResponse.
 
         任务名称。
 
@@ -155,7 +155,7 @@ class StopJobActionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this StopJobActionResponse.
+        r"""Gets the status of this StopJobActionResponse.
 
         操作结果。
 
@@ -166,7 +166,7 @@ class StopJobActionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StopJobActionResponse.
+        r"""Sets the status of this StopJobActionResponse.
 
         操作结果。
 

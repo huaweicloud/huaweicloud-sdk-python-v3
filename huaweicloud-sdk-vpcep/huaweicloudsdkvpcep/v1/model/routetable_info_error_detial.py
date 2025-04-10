@@ -27,7 +27,7 @@ class RoutetableInfoErrorDetial:
     }
 
     def __init__(self, id=None, error_message=None):
-        """RoutetableInfoErrorDetial
+        r"""RoutetableInfoErrorDetial
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RoutetableInfoErrorDetial:
 
     @property
     def id(self):
-        """Gets the id of this RoutetableInfoErrorDetial.
+        r"""Gets the id of this RoutetableInfoErrorDetial.
 
         路由表ID。
 
@@ -61,7 +61,7 @@ class RoutetableInfoErrorDetial:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RoutetableInfoErrorDetial.
+        r"""Sets the id of this RoutetableInfoErrorDetial.
 
         路由表ID。
 
@@ -72,7 +72,7 @@ class RoutetableInfoErrorDetial:
 
     @property
     def error_message(self):
-        """Gets the error_message of this RoutetableInfoErrorDetial.
+        r"""Gets the error_message of this RoutetableInfoErrorDetial.
 
         详细错误信息。
 
@@ -83,7 +83,7 @@ class RoutetableInfoErrorDetial:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this RoutetableInfoErrorDetial.
+        r"""Sets the error_message of this RoutetableInfoErrorDetial.
 
         详细错误信息。
 

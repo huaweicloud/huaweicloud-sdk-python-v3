@@ -29,7 +29,7 @@ class QuerySelectObjectInfoReq:
     }
 
     def __init__(self, db_names=None, type=None, is_refresh=None):
-        """QuerySelectObjectInfoReq
+        r"""QuerySelectObjectInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class QuerySelectObjectInfoReq:
 
     @property
     def db_names(self):
-        """Gets the db_names of this QuerySelectObjectInfoReq.
+        r"""Gets the db_names of this QuerySelectObjectInfoReq.
 
         查询指定库的信息。
 
@@ -67,7 +67,7 @@ class QuerySelectObjectInfoReq:
 
     @db_names.setter
     def db_names(self, db_names):
-        """Sets the db_names of this QuerySelectObjectInfoReq.
+        r"""Sets the db_names of this QuerySelectObjectInfoReq.
 
         查询指定库的信息。
 
@@ -78,7 +78,7 @@ class QuerySelectObjectInfoReq:
 
     @property
     def type(self):
-        """Gets the type of this QuerySelectObjectInfoReq.
+        r"""Gets the type of this QuerySelectObjectInfoReq.
 
         查询对象信息类型，取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
@@ -89,7 +89,7 @@ class QuerySelectObjectInfoReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuerySelectObjectInfoReq.
+        r"""Sets the type of this QuerySelectObjectInfoReq.
 
         查询对象信息类型，取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
@@ -100,7 +100,7 @@ class QuerySelectObjectInfoReq:
 
     @property
     def is_refresh(self):
-        """Gets the is_refresh of this QuerySelectObjectInfoReq.
+        r"""Gets the is_refresh of this QuerySelectObjectInfoReq.
 
         是否强制刷新。取值： - true：是，表示从源库重新查询。 - false：否，表示从已缓存中数据查询。
 
@@ -111,7 +111,7 @@ class QuerySelectObjectInfoReq:
 
     @is_refresh.setter
     def is_refresh(self, is_refresh):
-        """Sets the is_refresh of this QuerySelectObjectInfoReq.
+        r"""Sets the is_refresh of this QuerySelectObjectInfoReq.
 
         是否强制刷新。取值： - true：是，表示从源库重新查询。 - false：否，表示从已缓存中数据查询。
 

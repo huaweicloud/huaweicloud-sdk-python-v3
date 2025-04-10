@@ -29,7 +29,7 @@ class SetAutoUpgradePolicyRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """SetAutoUpgradePolicyRequest
+        r"""SetAutoUpgradePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetAutoUpgradePolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetAutoUpgradePolicyRequest.
+        r"""Gets the instance_id of this SetAutoUpgradePolicyRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class SetAutoUpgradePolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetAutoUpgradePolicyRequest.
+        r"""Sets the instance_id of this SetAutoUpgradePolicyRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class SetAutoUpgradePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetAutoUpgradePolicyRequest.
+        r"""Gets the x_language of this SetAutoUpgradePolicyRequest.
 
         语言。默认en-us。
 
@@ -89,7 +89,7 @@ class SetAutoUpgradePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetAutoUpgradePolicyRequest.
+        r"""Sets the x_language of this SetAutoUpgradePolicyRequest.
 
         语言。默认en-us。
 
@@ -100,7 +100,7 @@ class SetAutoUpgradePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetAutoUpgradePolicyRequest.
+        r"""Gets the body of this SetAutoUpgradePolicyRequest.
 
         :return: The body of this SetAutoUpgradePolicyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.CustomerModifyAutoUpgradePolicyReq`
@@ -109,7 +109,7 @@ class SetAutoUpgradePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetAutoUpgradePolicyRequest.
+        r"""Sets the body of this SetAutoUpgradePolicyRequest.
 
         :param body: The body of this SetAutoUpgradePolicyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.CustomerModifyAutoUpgradePolicyReq`

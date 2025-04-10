@@ -30,7 +30,7 @@ class ShowDomainCertificateResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, domain_name=None, cert_info=None):
-        """ShowDomainCertificateResponse
+        r"""ShowDomainCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDomainCertificateResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainCertificateResponse.
+        r"""Gets the domain_id of this ShowDomainCertificateResponse.
 
         域名id
 
@@ -69,7 +69,7 @@ class ShowDomainCertificateResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainCertificateResponse.
+        r"""Sets the domain_id of this ShowDomainCertificateResponse.
 
         域名id
 
@@ -80,7 +80,7 @@ class ShowDomainCertificateResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainCertificateResponse.
+        r"""Gets the domain_name of this ShowDomainCertificateResponse.
 
         域名
 
@@ -91,7 +91,7 @@ class ShowDomainCertificateResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainCertificateResponse.
+        r"""Sets the domain_name of this ShowDomainCertificateResponse.
 
         域名
 
@@ -102,7 +102,7 @@ class ShowDomainCertificateResponse(SdkResponse):
 
     @property
     def cert_info(self):
-        """Gets the cert_info of this ShowDomainCertificateResponse.
+        r"""Gets the cert_info of this ShowDomainCertificateResponse.
 
         :return: The cert_info of this ShowDomainCertificateResponse.
         :rtype: :class:`huaweicloudsdkaad.v2.CertInfo`
@@ -111,7 +111,7 @@ class ShowDomainCertificateResponse(SdkResponse):
 
     @cert_info.setter
     def cert_info(self, cert_info):
-        """Sets the cert_info of this ShowDomainCertificateResponse.
+        r"""Sets the cert_info of this ShowDomainCertificateResponse.
 
         :param cert_info: The cert_info of this ShowDomainCertificateResponse.
         :type cert_info: :class:`huaweicloudsdkaad.v2.CertInfo`

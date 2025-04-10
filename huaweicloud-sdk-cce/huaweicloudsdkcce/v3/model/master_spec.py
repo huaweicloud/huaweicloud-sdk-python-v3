@@ -25,7 +25,7 @@ class MasterSpec:
     }
 
     def __init__(self, availability_zone=None):
-        """MasterSpec
+        r"""MasterSpec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MasterSpec:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this MasterSpec.
+        r"""Gets the availability_zone of this MasterSpec.
 
         可用区
 
@@ -54,7 +54,7 @@ class MasterSpec:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this MasterSpec.
+        r"""Sets the availability_zone of this MasterSpec.
 
         可用区
 

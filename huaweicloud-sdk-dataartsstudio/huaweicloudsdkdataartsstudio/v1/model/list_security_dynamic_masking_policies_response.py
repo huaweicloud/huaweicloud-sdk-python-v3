@@ -28,7 +28,7 @@ class ListSecurityDynamicMaskingPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, policies=None):
-        """ListSecurityDynamicMaskingPoliciesResponse
+        r"""ListSecurityDynamicMaskingPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityDynamicMaskingPoliciesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityDynamicMaskingPoliciesResponse.
+        r"""Gets the total of this ListSecurityDynamicMaskingPoliciesResponse.
 
         动态脱敏策略总条数。
 
@@ -62,7 +62,7 @@ class ListSecurityDynamicMaskingPoliciesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityDynamicMaskingPoliciesResponse.
+        r"""Sets the total of this ListSecurityDynamicMaskingPoliciesResponse.
 
         动态脱敏策略总条数。
 
@@ -73,7 +73,7 @@ class ListSecurityDynamicMaskingPoliciesResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListSecurityDynamicMaskingPoliciesResponse.
+        r"""Gets the policies of this ListSecurityDynamicMaskingPoliciesResponse.
 
         动态数据脱敏策略列表。
 
@@ -84,7 +84,7 @@ class ListSecurityDynamicMaskingPoliciesResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListSecurityDynamicMaskingPoliciesResponse.
+        r"""Sets the policies of this ListSecurityDynamicMaskingPoliciesResponse.
 
         动态数据脱敏策略列表。
 

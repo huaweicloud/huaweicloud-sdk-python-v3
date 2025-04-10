@@ -25,7 +25,7 @@ class DeleteInterRegionBandwidthRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteInterRegionBandwidthRequest
+        r"""DeleteInterRegionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteInterRegionBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteInterRegionBandwidthRequest.
+        r"""Gets the id of this DeleteInterRegionBandwidthRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DeleteInterRegionBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteInterRegionBandwidthRequest.
+        r"""Sets the id of this DeleteInterRegionBandwidthRequest.
 
         实例ID。
 

@@ -27,7 +27,7 @@ class ResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTag
+        r"""ResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTag.
+        r"""Gets the key of this ResourceTag.
 
         标签键 - 不能为空。 - 对于同一资源键值唯一。 - 长度不超过36个字符。 - 标签的键必须唯一且输入不能为空。 
 
@@ -60,7 +60,7 @@ class ResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTag.
+        r"""Sets the key of this ResourceTag.
 
         标签键 - 不能为空。 - 对于同一资源键值唯一。 - 长度不超过36个字符。 - 标签的键必须唯一且输入不能为空。 
 
@@ -71,7 +71,7 @@ class ResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTag.
+        r"""Gets the value of this ResourceTag.
 
         标签值 - action为create时必选。action为delete时非必选。 - 长度不超过43个字符。 
 
@@ -82,7 +82,7 @@ class ResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTag.
+        r"""Sets the value of this ResourceTag.
 
         标签值 - action为create时必选。action为delete时非必选。 - 长度不超过43个字符。 
 

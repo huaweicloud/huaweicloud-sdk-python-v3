@@ -26,7 +26,7 @@ class MoveLakeFormationInstanceOutRecycleBinResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """MoveLakeFormationInstanceOutRecycleBinResponse
+        r"""MoveLakeFormationInstanceOutRecycleBinResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class MoveLakeFormationInstanceOutRecycleBinResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this MoveLakeFormationInstanceOutRecycleBinResponse.
+        r"""Gets the x_request_id of this MoveLakeFormationInstanceOutRecycleBinResponse.
 
         :return: The x_request_id of this MoveLakeFormationInstanceOutRecycleBinResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class MoveLakeFormationInstanceOutRecycleBinResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this MoveLakeFormationInstanceOutRecycleBinResponse.
+        r"""Sets the x_request_id of this MoveLakeFormationInstanceOutRecycleBinResponse.
 
         :param x_request_id: The x_request_id of this MoveLakeFormationInstanceOutRecycleBinResponse.
         :type x_request_id: str

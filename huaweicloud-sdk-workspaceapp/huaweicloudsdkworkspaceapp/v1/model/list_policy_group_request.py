@@ -31,7 +31,7 @@ class ListPolicyGroupRequest:
     }
 
     def __init__(self, offset=None, limit=None, policy_group_name=None, policy_group_type=None):
-        """ListPolicyGroupRequest
+        r"""ListPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListPolicyGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPolicyGroupRequest.
+        r"""Gets the offset of this ListPolicyGroupRequest.
 
         查询的偏移量。
 
@@ -75,7 +75,7 @@ class ListPolicyGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPolicyGroupRequest.
+        r"""Sets the offset of this ListPolicyGroupRequest.
 
         查询的偏移量。
 
@@ -86,7 +86,7 @@ class ListPolicyGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyGroupRequest.
+        r"""Gets the limit of this ListPolicyGroupRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -97,7 +97,7 @@ class ListPolicyGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyGroupRequest.
+        r"""Sets the limit of this ListPolicyGroupRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -108,7 +108,7 @@ class ListPolicyGroupRequest:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this ListPolicyGroupRequest.
+        r"""Gets the policy_group_name of this ListPolicyGroupRequest.
 
         根据策略组名字过滤结果。
 
@@ -119,7 +119,7 @@ class ListPolicyGroupRequest:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this ListPolicyGroupRequest.
+        r"""Sets the policy_group_name of this ListPolicyGroupRequest.
 
         根据策略组名字过滤结果。
 
@@ -130,7 +130,7 @@ class ListPolicyGroupRequest:
 
     @property
     def policy_group_type(self):
-        """Gets the policy_group_type of this ListPolicyGroupRequest.
+        r"""Gets the policy_group_type of this ListPolicyGroupRequest.
 
         根据策略组类型名字过滤结果。
 
@@ -141,7 +141,7 @@ class ListPolicyGroupRequest:
 
     @policy_group_type.setter
     def policy_group_type(self, policy_group_type):
-        """Sets the policy_group_type of this ListPolicyGroupRequest.
+        r"""Sets the policy_group_type of this ListPolicyGroupRequest.
 
         根据策略组类型名字过滤结果。
 

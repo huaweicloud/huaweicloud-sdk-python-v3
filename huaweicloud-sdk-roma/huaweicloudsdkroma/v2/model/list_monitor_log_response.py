@@ -30,7 +30,7 @@ class ListMonitorLogResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListMonitorLogResponse
+        r"""ListMonitorLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMonitorLogResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMonitorLogResponse.
+        r"""Gets the total of this ListMonitorLogResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListMonitorLogResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMonitorLogResponse.
+        r"""Sets the total of this ListMonitorLogResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListMonitorLogResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListMonitorLogResponse.
+        r"""Gets the size of this ListMonitorLogResponse.
 
         当前页日志数量
 
@@ -91,7 +91,7 @@ class ListMonitorLogResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListMonitorLogResponse.
+        r"""Sets the size of this ListMonitorLogResponse.
 
         当前页日志数量
 
@@ -102,7 +102,7 @@ class ListMonitorLogResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ListMonitorLogResponse.
+        r"""Gets the entities of this ListMonitorLogResponse.
 
         任务监控日志当前页元素
 
@@ -113,7 +113,7 @@ class ListMonitorLogResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ListMonitorLogResponse.
+        r"""Sets the entities of this ListMonitorLogResponse.
 
         任务监控日志当前页元素
 

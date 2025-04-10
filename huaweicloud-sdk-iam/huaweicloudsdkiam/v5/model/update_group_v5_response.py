@@ -26,7 +26,7 @@ class UpdateGroupV5Response(SdkResponse):
     }
 
     def __init__(self, group=None):
-        """UpdateGroupV5Response
+        r"""UpdateGroupV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGroupV5Response(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this UpdateGroupV5Response.
+        r"""Gets the group of this UpdateGroupV5Response.
 
         :return: The group of this UpdateGroupV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.Group`
@@ -53,7 +53,7 @@ class UpdateGroupV5Response(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UpdateGroupV5Response.
+        r"""Sets the group of this UpdateGroupV5Response.
 
         :param group: The group of this UpdateGroupV5Response.
         :type group: :class:`huaweicloudsdkiam.v5.Group`

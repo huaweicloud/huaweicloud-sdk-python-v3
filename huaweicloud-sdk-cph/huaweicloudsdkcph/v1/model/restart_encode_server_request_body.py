@@ -25,7 +25,7 @@ class RestartEncodeServerRequestBody:
     }
 
     def __init__(self, encode_server_ids=None):
-        """RestartEncodeServerRequestBody
+        r"""RestartEncodeServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestartEncodeServerRequestBody:
 
     @property
     def encode_server_ids(self):
-        """Gets the encode_server_ids of this RestartEncodeServerRequestBody.
+        r"""Gets the encode_server_ids of this RestartEncodeServerRequestBody.
 
         待重启的编码服务的ID。
 
@@ -53,7 +53,7 @@ class RestartEncodeServerRequestBody:
 
     @encode_server_ids.setter
     def encode_server_ids(self, encode_server_ids):
-        """Sets the encode_server_ids of this RestartEncodeServerRequestBody.
+        r"""Sets the encode_server_ids of this RestartEncodeServerRequestBody.
 
         待重启的编码服务的ID。
 

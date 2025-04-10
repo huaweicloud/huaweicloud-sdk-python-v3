@@ -28,7 +28,7 @@ class ListGroupScheduledTasksResponse(SdkResponse):
     }
 
     def __init__(self, page_info=None, scheduled_tasks=None):
-        """ListGroupScheduledTasksResponse
+        r"""ListGroupScheduledTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupScheduledTasksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGroupScheduledTasksResponse.
+        r"""Gets the page_info of this ListGroupScheduledTasksResponse.
 
         :return: The page_info of this ListGroupScheduledTasksResponse.
         :rtype: :class:`huaweicloudsdkas.v1.PageInfo`
@@ -60,7 +60,7 @@ class ListGroupScheduledTasksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGroupScheduledTasksResponse.
+        r"""Sets the page_info of this ListGroupScheduledTasksResponse.
 
         :param page_info: The page_info of this ListGroupScheduledTasksResponse.
         :type page_info: :class:`huaweicloudsdkas.v1.PageInfo`
@@ -69,7 +69,7 @@ class ListGroupScheduledTasksResponse(SdkResponse):
 
     @property
     def scheduled_tasks(self):
-        """Gets the scheduled_tasks of this ListGroupScheduledTasksResponse.
+        r"""Gets the scheduled_tasks of this ListGroupScheduledTasksResponse.
 
         计划任务列表
 
@@ -80,7 +80,7 @@ class ListGroupScheduledTasksResponse(SdkResponse):
 
     @scheduled_tasks.setter
     def scheduled_tasks(self, scheduled_tasks):
-        """Sets the scheduled_tasks of this ListGroupScheduledTasksResponse.
+        r"""Sets the scheduled_tasks of this ListGroupScheduledTasksResponse.
 
         计划任务列表
 

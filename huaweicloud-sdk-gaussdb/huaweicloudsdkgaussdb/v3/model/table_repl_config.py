@@ -29,7 +29,7 @@ class TableReplConfig:
     }
 
     def __init__(self, repl_type=None, repl_scope=None, tables=None):
-        """TableReplConfig
+        r"""TableReplConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TableReplConfig:
 
     @property
     def repl_type(self):
-        """Gets the repl_type of this TableReplConfig.
+        r"""Gets the repl_type of this TableReplConfig.
 
         表同步类型。include_tables:白名单,exclude_tables:黑名单。
 
@@ -68,7 +68,7 @@ class TableReplConfig:
 
     @repl_type.setter
     def repl_type(self, repl_type):
-        """Sets the repl_type of this TableReplConfig.
+        r"""Sets the repl_type of this TableReplConfig.
 
         表同步类型。include_tables:白名单,exclude_tables:黑名单。
 
@@ -79,7 +79,7 @@ class TableReplConfig:
 
     @property
     def repl_scope(self):
-        """Gets the repl_scope of this TableReplConfig.
+        r"""Gets the repl_scope of this TableReplConfig.
 
         表同步范围。all:全量同步，part:部分同步。
 
@@ -90,7 +90,7 @@ class TableReplConfig:
 
     @repl_scope.setter
     def repl_scope(self, repl_scope):
-        """Sets the repl_scope of this TableReplConfig.
+        r"""Sets the repl_scope of this TableReplConfig.
 
         表同步范围。all:全量同步，part:部分同步。
 
@@ -101,7 +101,7 @@ class TableReplConfig:
 
     @property
     def tables(self):
-        """Gets the tables of this TableReplConfig.
+        r"""Gets the tables of this TableReplConfig.
 
         白名单或黑名单的表范围。
 
@@ -112,7 +112,7 @@ class TableReplConfig:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this TableReplConfig.
+        r"""Sets the tables of this TableReplConfig.
 
         白名单或黑名单的表范围。
 

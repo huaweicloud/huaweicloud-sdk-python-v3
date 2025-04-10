@@ -33,7 +33,7 @@ class AppliedHistoriesResult:
     }
 
     def __init__(self, instance_id=None, instance_name=None, apply_result=None, applied_at=None, error_code=None):
-        """AppliedHistoriesResult
+        r"""AppliedHistoriesResult
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AppliedHistoriesResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AppliedHistoriesResult.
+        r"""Gets the instance_id of this AppliedHistoriesResult.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class AppliedHistoriesResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AppliedHistoriesResult.
+        r"""Sets the instance_id of this AppliedHistoriesResult.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class AppliedHistoriesResult:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this AppliedHistoriesResult.
+        r"""Gets the instance_name of this AppliedHistoriesResult.
 
         实例名称。
 
@@ -99,7 +99,7 @@ class AppliedHistoriesResult:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this AppliedHistoriesResult.
+        r"""Sets the instance_name of this AppliedHistoriesResult.
 
         实例名称。
 
@@ -110,7 +110,7 @@ class AppliedHistoriesResult:
 
     @property
     def apply_result(self):
-        """Gets the apply_result of this AppliedHistoriesResult.
+        r"""Gets the apply_result of this AppliedHistoriesResult.
 
         应用状态 (SUCCESS | FAILED)。
 
@@ -121,7 +121,7 @@ class AppliedHistoriesResult:
 
     @apply_result.setter
     def apply_result(self, apply_result):
-        """Sets the apply_result of this AppliedHistoriesResult.
+        r"""Sets the apply_result of this AppliedHistoriesResult.
 
         应用状态 (SUCCESS | FAILED)。
 
@@ -132,7 +132,7 @@ class AppliedHistoriesResult:
 
     @property
     def applied_at(self):
-        """Gets the applied_at of this AppliedHistoriesResult.
+        r"""Gets the applied_at of this AppliedHistoriesResult.
 
         应用时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -143,7 +143,7 @@ class AppliedHistoriesResult:
 
     @applied_at.setter
     def applied_at(self, applied_at):
-        """Sets the applied_at of this AppliedHistoriesResult.
+        r"""Sets the applied_at of this AppliedHistoriesResult.
 
         应用时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -154,7 +154,7 @@ class AppliedHistoriesResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AppliedHistoriesResult.
+        r"""Gets the error_code of this AppliedHistoriesResult.
 
         失败原因错误码，如DBS.280005。
 
@@ -165,7 +165,7 @@ class AppliedHistoriesResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AppliedHistoriesResult.
+        r"""Sets the error_code of this AppliedHistoriesResult.
 
         失败原因错误码，如DBS.280005。
 

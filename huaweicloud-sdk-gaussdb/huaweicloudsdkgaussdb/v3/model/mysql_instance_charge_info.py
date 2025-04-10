@@ -27,7 +27,7 @@ class MysqlInstanceChargeInfo:
     }
 
     def __init__(self, charge_mode=None, order_id=None):
-        """MysqlInstanceChargeInfo
+        r"""MysqlInstanceChargeInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MysqlInstanceChargeInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this MysqlInstanceChargeInfo.
+        r"""Gets the charge_mode of this MysqlInstanceChargeInfo.
 
         计费模式。
 
@@ -60,7 +60,7 @@ class MysqlInstanceChargeInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this MysqlInstanceChargeInfo.
+        r"""Sets the charge_mode of this MysqlInstanceChargeInfo.
 
         计费模式。
 
@@ -71,7 +71,7 @@ class MysqlInstanceChargeInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this MysqlInstanceChargeInfo.
+        r"""Gets the order_id of this MysqlInstanceChargeInfo.
 
         订单号。
 
@@ -82,7 +82,7 @@ class MysqlInstanceChargeInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this MysqlInstanceChargeInfo.
+        r"""Sets the order_id of this MysqlInstanceChargeInfo.
 
         订单号。
 

@@ -35,7 +35,7 @@ class DevicesInGroup:
     }
 
     def __init__(self, device_id=None, device_name=None, product_id=None, product_name=None, status=None, online_status=None):
-        """DevicesInGroup
+        r"""DevicesInGroup
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DevicesInGroup:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DevicesInGroup.
+        r"""Gets the device_id of this DevicesInGroup.
 
         设备ID
 
@@ -89,7 +89,7 @@ class DevicesInGroup:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DevicesInGroup.
+        r"""Sets the device_id of this DevicesInGroup.
 
         设备ID
 
@@ -100,7 +100,7 @@ class DevicesInGroup:
 
     @property
     def device_name(self):
-        """Gets the device_name of this DevicesInGroup.
+        r"""Gets the device_name of this DevicesInGroup.
 
         设备名称
 
@@ -111,7 +111,7 @@ class DevicesInGroup:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this DevicesInGroup.
+        r"""Sets the device_name of this DevicesInGroup.
 
         设备名称
 
@@ -122,7 +122,7 @@ class DevicesInGroup:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DevicesInGroup.
+        r"""Gets the product_id of this DevicesInGroup.
 
         产品ID
 
@@ -133,7 +133,7 @@ class DevicesInGroup:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DevicesInGroup.
+        r"""Sets the product_id of this DevicesInGroup.
 
         产品ID
 
@@ -144,7 +144,7 @@ class DevicesInGroup:
 
     @property
     def product_name(self):
-        """Gets the product_name of this DevicesInGroup.
+        r"""Gets the product_name of this DevicesInGroup.
 
         产品名称
 
@@ -155,7 +155,7 @@ class DevicesInGroup:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this DevicesInGroup.
+        r"""Sets the product_name of this DevicesInGroup.
 
         产品名称
 
@@ -166,7 +166,7 @@ class DevicesInGroup:
 
     @property
     def status(self):
-        """Gets the status of this DevicesInGroup.
+        r"""Gets the status of this DevicesInGroup.
 
         设备状态 0-启用 1-禁用
 
@@ -177,7 +177,7 @@ class DevicesInGroup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DevicesInGroup.
+        r"""Sets the status of this DevicesInGroup.
 
         设备状态 0-启用 1-禁用
 
@@ -188,7 +188,7 @@ class DevicesInGroup:
 
     @property
     def online_status(self):
-        """Gets the online_status of this DevicesInGroup.
+        r"""Gets the online_status of this DevicesInGroup.
 
         是否在线 0-未连接 1-在线 2-离线
 
@@ -199,7 +199,7 @@ class DevicesInGroup:
 
     @online_status.setter
     def online_status(self, online_status):
-        """Sets the online_status of this DevicesInGroup.
+        r"""Sets the online_status of this DevicesInGroup.
 
         是否在线 0-未连接 1-在线 2-离线
 

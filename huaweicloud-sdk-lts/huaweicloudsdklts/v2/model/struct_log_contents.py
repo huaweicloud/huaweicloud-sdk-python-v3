@@ -27,7 +27,7 @@ class StructLogContents:
     }
 
     def __init__(self, log_content=None, line_num=None):
-        """StructLogContents
+        r"""StructLogContents
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StructLogContents:
 
     @property
     def log_content(self):
-        """Gets the log_content of this StructLogContents.
+        r"""Gets the log_content of this StructLogContents.
 
         日志原数据。
 
@@ -61,7 +61,7 @@ class StructLogContents:
 
     @log_content.setter
     def log_content(self, log_content):
-        """Sets the log_content of this StructLogContents.
+        r"""Sets the log_content of this StructLogContents.
 
         日志原数据。
 
@@ -72,7 +72,7 @@ class StructLogContents:
 
     @property
     def line_num(self):
-        """Gets the line_num of this StructLogContents.
+        r"""Gets the line_num of this StructLogContents.
 
         日志单行序列号。
 
@@ -83,7 +83,7 @@ class StructLogContents:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this StructLogContents.
+        r"""Sets the line_num of this StructLogContents.
 
         日志单行序列号。
 

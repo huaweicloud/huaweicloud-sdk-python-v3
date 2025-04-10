@@ -24,7 +24,7 @@ class ApplyArchiveRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ApplyArchiveRuleResponse
+        r"""ApplyArchiveRuleResponse
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class ListJobsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, jobs=None):
-        """ListJobsResponse
+        r"""ListJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListJobsResponse.
+        r"""Gets the total of this ListJobsResponse.
 
         :return: The total of this ListJobsResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListJobsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListJobsResponse.
+        r"""Sets the total of this ListJobsResponse.
 
         :param total: The total of this ListJobsResponse.
         :type total: int
@@ -69,7 +69,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListJobsResponse.
+        r"""Gets the jobs of this ListJobsResponse.
 
         :return: The jobs of this ListJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.JobInfo`]
@@ -78,7 +78,7 @@ class ListJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListJobsResponse.
+        r"""Sets the jobs of this ListJobsResponse.
 
         :param jobs: The jobs of this ListJobsResponse.
         :type jobs: list[:class:`huaweicloudsdkdlf.v1.JobInfo`]

@@ -30,7 +30,7 @@ class ExportFlinkJobsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, zip_file=None):
-        """ExportFlinkJobsResponse
+        r"""ExportFlinkJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ExportFlinkJobsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ExportFlinkJobsResponse.
+        r"""Gets the is_success of this ExportFlinkJobsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ExportFlinkJobsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ExportFlinkJobsResponse.
+        r"""Sets the is_success of this ExportFlinkJobsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ExportFlinkJobsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ExportFlinkJobsResponse.
+        r"""Gets the message of this ExportFlinkJobsResponse.
 
         消息内容
 
@@ -91,7 +91,7 @@ class ExportFlinkJobsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ExportFlinkJobsResponse.
+        r"""Sets the message of this ExportFlinkJobsResponse.
 
         消息内容
 
@@ -102,7 +102,7 @@ class ExportFlinkJobsResponse(SdkResponse):
 
     @property
     def zip_file(self):
-        """Gets the zip_file of this ExportFlinkJobsResponse.
+        r"""Gets the zip_file of this ExportFlinkJobsResponse.
 
         OBS上导出作业zip文件名。
 
@@ -113,7 +113,7 @@ class ExportFlinkJobsResponse(SdkResponse):
 
     @zip_file.setter
     def zip_file(self, zip_file):
-        """Sets the zip_file of this ExportFlinkJobsResponse.
+        r"""Sets the zip_file of this ExportFlinkJobsResponse.
 
         OBS上导出作业zip文件名。
 

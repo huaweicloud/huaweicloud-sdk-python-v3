@@ -27,7 +27,7 @@ class OperItem:
     }
 
     def __init__(self, put_kv=None, delete_kv=None):
-        """OperItem
+        r"""OperItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OperItem:
 
     @property
     def put_kv(self):
-        """Gets the put_kv of this OperItem.
+        r"""Gets the put_kv of this OperItem.
 
         :return: The put_kv of this OperItem.
         :rtype: :class:`huaweicloudsdkkvs.v1.PutKv`
@@ -59,7 +59,7 @@ class OperItem:
 
     @put_kv.setter
     def put_kv(self, put_kv):
-        """Sets the put_kv of this OperItem.
+        r"""Sets the put_kv of this OperItem.
 
         :param put_kv: The put_kv of this OperItem.
         :type put_kv: :class:`huaweicloudsdkkvs.v1.PutKv`
@@ -68,7 +68,7 @@ class OperItem:
 
     @property
     def delete_kv(self):
-        """Gets the delete_kv of this OperItem.
+        r"""Gets the delete_kv of this OperItem.
 
         :return: The delete_kv of this OperItem.
         :rtype: :class:`huaweicloudsdkkvs.v1.DeleteKv`
@@ -77,7 +77,7 @@ class OperItem:
 
     @delete_kv.setter
     def delete_kv(self, delete_kv):
-        """Sets the delete_kv of this OperItem.
+        r"""Sets the delete_kv of this OperItem.
 
         :param delete_kv: The delete_kv of this OperItem.
         :type delete_kv: :class:`huaweicloudsdkkvs.v1.DeleteKv`

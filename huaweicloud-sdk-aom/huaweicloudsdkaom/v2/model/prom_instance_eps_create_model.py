@@ -47,7 +47,7 @@ class PromInstanceEpsCreateModel:
     }
 
     def __init__(self, prom_name=None, prom_id=None, prom_type=None, prom_version=None, prom_create_timestamp=None, prom_update_timestamp=None, prom_status=None, enterprise_project_id=None, project_id=None, deleted_time=None, prom_spec_config=None, cce_spec_config=None):
-        """PromInstanceEpsCreateModel
+        r"""PromInstanceEpsCreateModel
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_name(self):
-        """Gets the prom_name of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_name of this PromInstanceEpsCreateModel.
 
         Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
 
@@ -129,7 +129,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_name.setter
     def prom_name(self, prom_name):
-        """Sets the prom_name of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_name of this PromInstanceEpsCreateModel.
 
         Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
 
@@ -140,7 +140,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_id(self):
-        """Gets the prom_id of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_id of this PromInstanceEpsCreateModel.
 
         Prometheus实例id。
 
@@ -151,7 +151,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_id.setter
     def prom_id(self, prom_id):
-        """Sets the prom_id of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_id of this PromInstanceEpsCreateModel.
 
         Prometheus实例id。
 
@@ -162,7 +162,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_type(self):
-        """Gets the prom_type of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_type of this PromInstanceEpsCreateModel.
 
         Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
@@ -173,7 +173,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_type.setter
     def prom_type(self, prom_type):
-        """Sets the prom_type of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_type of this PromInstanceEpsCreateModel.
 
         Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
@@ -184,7 +184,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_version(self):
-        """Gets the prom_version of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_version of this PromInstanceEpsCreateModel.
 
         Prometheus实例版本号。
 
@@ -195,7 +195,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_version.setter
     def prom_version(self, prom_version):
-        """Sets the prom_version of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_version of this PromInstanceEpsCreateModel.
 
         Prometheus实例版本号。
 
@@ -206,7 +206,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_create_timestamp(self):
-        """Gets the prom_create_timestamp of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_create_timestamp of this PromInstanceEpsCreateModel.
 
         Prometheus实例创建时间戳。
 
@@ -217,7 +217,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_create_timestamp.setter
     def prom_create_timestamp(self, prom_create_timestamp):
-        """Sets the prom_create_timestamp of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_create_timestamp of this PromInstanceEpsCreateModel.
 
         Prometheus实例创建时间戳。
 
@@ -228,7 +228,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_update_timestamp(self):
-        """Gets the prom_update_timestamp of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_update_timestamp of this PromInstanceEpsCreateModel.
 
         Prometheus实例更新时间戳。
 
@@ -239,7 +239,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_update_timestamp.setter
     def prom_update_timestamp(self, prom_update_timestamp):
-        """Sets the prom_update_timestamp of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_update_timestamp of this PromInstanceEpsCreateModel.
 
         Prometheus实例更新时间戳。
 
@@ -250,7 +250,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_status(self):
-        """Gets the prom_status of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_status of this PromInstanceEpsCreateModel.
 
         Prometheus实例状态。
 
@@ -261,7 +261,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_status.setter
     def prom_status(self, prom_status):
-        """Sets the prom_status of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_status of this PromInstanceEpsCreateModel.
 
         Prometheus实例状态。
 
@@ -272,7 +272,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PromInstanceEpsCreateModel.
+        r"""Gets the enterprise_project_id of this PromInstanceEpsCreateModel.
 
         Prometheus实例所属的企业项目。
 
@@ -283,7 +283,7 @@ class PromInstanceEpsCreateModel:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PromInstanceEpsCreateModel.
+        r"""Sets the enterprise_project_id of this PromInstanceEpsCreateModel.
 
         Prometheus实例所属的企业项目。
 
@@ -294,7 +294,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PromInstanceEpsCreateModel.
+        r"""Gets the project_id of this PromInstanceEpsCreateModel.
 
         Prometheus实例所属projectId。
 
@@ -305,7 +305,7 @@ class PromInstanceEpsCreateModel:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PromInstanceEpsCreateModel.
+        r"""Sets the project_id of this PromInstanceEpsCreateModel.
 
         Prometheus实例所属projectId。
 
@@ -316,7 +316,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def deleted_time(self):
-        """Gets the deleted_time of this PromInstanceEpsCreateModel.
+        r"""Gets the deleted_time of this PromInstanceEpsCreateModel.
 
         删除时间。
 
@@ -327,7 +327,7 @@ class PromInstanceEpsCreateModel:
 
     @deleted_time.setter
     def deleted_time(self, deleted_time):
-        """Sets the deleted_time of this PromInstanceEpsCreateModel.
+        r"""Sets the deleted_time of this PromInstanceEpsCreateModel.
 
         删除时间。
 
@@ -338,7 +338,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def prom_spec_config(self):
-        """Gets the prom_spec_config of this PromInstanceEpsCreateModel.
+        r"""Gets the prom_spec_config of this PromInstanceEpsCreateModel.
 
         :return: The prom_spec_config of this PromInstanceEpsCreateModel.
         :rtype: :class:`huaweicloudsdkaom.v2.PromConfigModel`
@@ -347,7 +347,7 @@ class PromInstanceEpsCreateModel:
 
     @prom_spec_config.setter
     def prom_spec_config(self, prom_spec_config):
-        """Sets the prom_spec_config of this PromInstanceEpsCreateModel.
+        r"""Sets the prom_spec_config of this PromInstanceEpsCreateModel.
 
         :param prom_spec_config: The prom_spec_config of this PromInstanceEpsCreateModel.
         :type prom_spec_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
@@ -356,7 +356,7 @@ class PromInstanceEpsCreateModel:
 
     @property
     def cce_spec_config(self):
-        """Gets the cce_spec_config of this PromInstanceEpsCreateModel.
+        r"""Gets the cce_spec_config of this PromInstanceEpsCreateModel.
 
         Prometheus实例所属CCE特殊配置。
 
@@ -367,7 +367,7 @@ class PromInstanceEpsCreateModel:
 
     @cce_spec_config.setter
     def cce_spec_config(self, cce_spec_config):
-        """Sets the cce_spec_config of this PromInstanceEpsCreateModel.
+        r"""Sets the cce_spec_config of this PromInstanceEpsCreateModel.
 
         Prometheus实例所属CCE特殊配置。
 

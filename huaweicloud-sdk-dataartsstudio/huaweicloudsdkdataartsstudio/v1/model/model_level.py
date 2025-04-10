@@ -29,7 +29,7 @@ class ModelLevel:
     }
 
     def __init__(self):
-        """ModelLevel
+        r"""ModelLevel
 
         The model defined in huaweicloud sdk
 

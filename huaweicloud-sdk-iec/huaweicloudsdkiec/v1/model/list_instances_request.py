@@ -41,7 +41,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, offset=None, limit=None, status=None, name=None, area=None, province=None, city=None, edgecloud_id=None, site_id=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         页码。 当前页面数，默认为0。 取值大于等于0，取值为0时返回第1页
 
@@ -110,7 +110,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         页码。 当前页面数，默认为0。 取值大于等于0，取值为0时返回第1页
 
@@ -121,7 +121,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         查询返回边缘实例列表当前页面的数量。 每页默认值是25，最多返回1000台边缘实例的信息，如果数据量过大建议设置成100。
 
@@ -132,7 +132,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         查询返回边缘实例列表当前页面的数量。 每页默认值是25，最多返回1000台边缘实例的信息，如果数据量过大建议设置成100。
 
@@ -143,7 +143,7 @@ class ListInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesRequest.
+        r"""Gets the status of this ListInstancesRequest.
 
         边缘实例的状态。 取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE。  非上面范围的status字段将返回空列表。 > 当边缘实例处于中间状态时，查询范围如下： - ACTIVE，查询范围：ACTIVE，REBOOT，HARD_REBOOT，REBUILD，MIGRATING - SHUTOFF，查询范围：SHUTOFF，RESIZE，REBUILD - ERROR，查询范围：ERROR，REBUILD - VERIFY_RESIZE，查询范围：VERIFY_RESIZE，REVERT_RESIZE
 
@@ -154,7 +154,7 @@ class ListInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesRequest.
+        r"""Sets the status of this ListInstancesRequest.
 
         边缘实例的状态。 取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE。  非上面范围的status字段将返回空列表。 > 当边缘实例处于中间状态时，查询范围如下： - ACTIVE，查询范围：ACTIVE，REBOOT，HARD_REBOOT，REBUILD，MIGRATING - SHUTOFF，查询范围：SHUTOFF，RESIZE，REBUILD - ERROR，查询范围：ERROR，REBUILD - VERIFY_RESIZE，查询范围：VERIFY_RESIZE，REVERT_RESIZE
 
@@ -165,7 +165,7 @@ class ListInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesRequest.
+        r"""Gets the name of this ListInstancesRequest.
 
         查询条件，边缘实例名称。
 
@@ -176,7 +176,7 @@ class ListInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesRequest.
+        r"""Sets the name of this ListInstancesRequest.
 
         查询条件，边缘实例名称。
 
@@ -187,7 +187,7 @@ class ListInstancesRequest:
 
     @property
     def area(self):
-        """Gets the area of this ListInstancesRequest.
+        r"""Gets the area of this ListInstancesRequest.
 
         边缘实例所在大区。
 
@@ -198,7 +198,7 @@ class ListInstancesRequest:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this ListInstancesRequest.
+        r"""Sets the area of this ListInstancesRequest.
 
         边缘实例所在大区。
 
@@ -209,7 +209,7 @@ class ListInstancesRequest:
 
     @property
     def province(self):
-        """Gets the province of this ListInstancesRequest.
+        r"""Gets the province of this ListInstancesRequest.
 
         边缘实例所在省份。
 
@@ -220,7 +220,7 @@ class ListInstancesRequest:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this ListInstancesRequest.
+        r"""Sets the province of this ListInstancesRequest.
 
         边缘实例所在省份。
 
@@ -231,7 +231,7 @@ class ListInstancesRequest:
 
     @property
     def city(self):
-        """Gets the city of this ListInstancesRequest.
+        r"""Gets the city of this ListInstancesRequest.
 
         边缘实例所在城市。
 
@@ -242,7 +242,7 @@ class ListInstancesRequest:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this ListInstancesRequest.
+        r"""Sets the city of this ListInstancesRequest.
 
         边缘实例所在城市。
 
@@ -253,7 +253,7 @@ class ListInstancesRequest:
 
     @property
     def edgecloud_id(self):
-        """Gets the edgecloud_id of this ListInstancesRequest.
+        r"""Gets the edgecloud_id of this ListInstancesRequest.
 
         边缘业务ID。
 
@@ -264,7 +264,7 @@ class ListInstancesRequest:
 
     @edgecloud_id.setter
     def edgecloud_id(self, edgecloud_id):
-        """Sets the edgecloud_id of this ListInstancesRequest.
+        r"""Sets the edgecloud_id of this ListInstancesRequest.
 
         边缘业务ID。
 
@@ -275,7 +275,7 @@ class ListInstancesRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListInstancesRequest.
+        r"""Gets the site_id of this ListInstancesRequest.
 
         站点ID。
 
@@ -286,7 +286,7 @@ class ListInstancesRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListInstancesRequest.
+        r"""Sets the site_id of this ListInstancesRequest.
 
         站点ID。
 

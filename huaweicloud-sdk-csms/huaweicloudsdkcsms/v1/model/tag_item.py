@@ -27,7 +27,7 @@ class TagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TagItem
+        r"""TagItem
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagItem:
 
     @property
     def key(self):
-        """Gets the key of this TagItem.
+        r"""Gets the key of this TagItem.
 
         标签的名称。 同一个凭据，一个标签键只能对应一个标签值；不同的凭据可以使用相同的标签键。 用户最多可以给单个凭据添加20个标签。  约束：取值范围为1到128个字符，满足正则匹配\"^((?!\\\\s)(?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:=+\\\\-@]*)(?<!\\\\s)$\"
 
@@ -60,7 +60,7 @@ class TagItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagItem.
+        r"""Sets the key of this TagItem.
 
         标签的名称。 同一个凭据，一个标签键只能对应一个标签值；不同的凭据可以使用相同的标签键。 用户最多可以给单个凭据添加20个标签。  约束：取值范围为1到128个字符，满足正则匹配\"^((?!\\\\s)(?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:=+\\\\-@]*)(?<!\\\\s)$\"
 
@@ -71,7 +71,7 @@ class TagItem:
 
     @property
     def value(self):
-        """Gets the value of this TagItem.
+        r"""Gets the value of this TagItem.
 
         标签的值。  约束：取值范围不超过255个字符，满足正则匹配\"^([\\\\p{L}\\\\p{Z}\\\\p{N}_.:\\/=+\\\\-@]*)$\"
 
@@ -82,7 +82,7 @@ class TagItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagItem.
+        r"""Sets the value of this TagItem.
 
         标签的值。  约束：取值范围不超过255个字符，满足正则匹配\"^([\\\\p{L}\\\\p{Z}\\\\p{N}_.:\\/=+\\\\-@]*)$\"
 

@@ -29,7 +29,7 @@ class CopyConfigurationRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, body=None):
-        """CopyConfigurationRequest
+        r"""CopyConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CopyConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CopyConfigurationRequest.
+        r"""Gets the x_language of this CopyConfigurationRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class CopyConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CopyConfigurationRequest.
+        r"""Sets the x_language of this CopyConfigurationRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class CopyConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this CopyConfigurationRequest.
+        r"""Gets the config_id of this CopyConfigurationRequest.
 
         被复制的参数模板ID。
 
@@ -89,7 +89,7 @@ class CopyConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this CopyConfigurationRequest.
+        r"""Sets the config_id of this CopyConfigurationRequest.
 
         被复制的参数模板ID。
 
@@ -100,7 +100,7 @@ class CopyConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyConfigurationRequest.
+        r"""Gets the body of this CopyConfigurationRequest.
 
         :return: The body of this CopyConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ParamGroupCopyRequestBody`
@@ -109,7 +109,7 @@ class CopyConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyConfigurationRequest.
+        r"""Sets the body of this CopyConfigurationRequest.
 
         :param body: The body of this CopyConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ParamGroupCopyRequestBody`

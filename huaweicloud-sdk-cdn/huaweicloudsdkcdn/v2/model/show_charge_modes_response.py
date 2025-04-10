@@ -26,7 +26,7 @@ class ShowChargeModesResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ShowChargeModesResponse
+        r"""ShowChargeModesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowChargeModesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowChargeModesResponse.
+        r"""Gets the result of this ShowChargeModesResponse.
 
         计费模式查询结果
 
@@ -55,7 +55,7 @@ class ShowChargeModesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowChargeModesResponse.
+        r"""Sets the result of this ShowChargeModesResponse.
 
         计费模式查询结果
 

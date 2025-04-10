@@ -26,7 +26,7 @@ class AddIndependentNodeResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """AddIndependentNodeResponse
+        r"""AddIndependentNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddIndependentNodeResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddIndependentNodeResponse.
+        r"""Gets the id of this AddIndependentNodeResponse.
 
         集群ID。
 
@@ -55,7 +55,7 @@ class AddIndependentNodeResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddIndependentNodeResponse.
+        r"""Sets the id of this AddIndependentNodeResponse.
 
         集群ID。
 

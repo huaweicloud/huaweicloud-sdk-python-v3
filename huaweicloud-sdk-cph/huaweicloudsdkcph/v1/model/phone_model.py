@@ -59,7 +59,7 @@ class PhoneModel:
     }
 
     def __init__(self, server_model_name=None, phone_model_name=None, status=None, cpu=None, memory=None, disk=None, resolution=None, extend_spec=None, spec_code=None, phone_capacity=None, image_label=None, product_type=None, phone_model_version=None, dpi=None, fps=None, volume_mode=None, render_fps=None, stream_fps=None):
-        """PhoneModel
+        r"""PhoneModel
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class PhoneModel:
 
     @property
     def server_model_name(self):
-        """Gets the server_model_name of this PhoneModel.
+        r"""Gets the server_model_name of this PhoneModel.
 
         云手机服务器的规格名称，不超过64个字节。
 
@@ -173,7 +173,7 @@ class PhoneModel:
 
     @server_model_name.setter
     def server_model_name(self, server_model_name):
-        """Sets the server_model_name of this PhoneModel.
+        r"""Sets the server_model_name of this PhoneModel.
 
         云手机服务器的规格名称，不超过64个字节。
 
@@ -184,7 +184,7 @@ class PhoneModel:
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this PhoneModel.
+        r"""Gets the phone_model_name of this PhoneModel.
 
         云手机的规格名称，不超过64个字节。
 
@@ -195,7 +195,7 @@ class PhoneModel:
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this PhoneModel.
+        r"""Sets the phone_model_name of this PhoneModel.
 
         云手机的规格名称，不超过64个字节。
 
@@ -206,7 +206,7 @@ class PhoneModel:
 
     @property
     def status(self):
-        """Gets the status of this PhoneModel.
+        r"""Gets the status of this PhoneModel.
 
         规格状态。 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
 
@@ -217,7 +217,7 @@ class PhoneModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PhoneModel.
+        r"""Sets the status of this PhoneModel.
 
         规格状态。 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
 
@@ -228,7 +228,7 @@ class PhoneModel:
 
     @property
     def cpu(self):
-        """Gets the cpu of this PhoneModel.
+        r"""Gets the cpu of this PhoneModel.
 
         CPU核数。
 
@@ -239,7 +239,7 @@ class PhoneModel:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this PhoneModel.
+        r"""Sets the cpu of this PhoneModel.
 
         CPU核数。
 
@@ -250,7 +250,7 @@ class PhoneModel:
 
     @property
     def memory(self):
-        """Gets the memory of this PhoneModel.
+        r"""Gets the memory of this PhoneModel.
 
         内存大小，单位：MB。
 
@@ -261,7 +261,7 @@ class PhoneModel:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this PhoneModel.
+        r"""Sets the memory of this PhoneModel.
 
         内存大小，单位：MB。
 
@@ -272,7 +272,7 @@ class PhoneModel:
 
     @property
     def disk(self):
-        """Gets the disk of this PhoneModel.
+        r"""Gets the disk of this PhoneModel.
 
         系统存储大小，单位：GiB。
 
@@ -283,7 +283,7 @@ class PhoneModel:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this PhoneModel.
+        r"""Sets the disk of this PhoneModel.
 
         系统存储大小，单位：GiB。
 
@@ -294,7 +294,7 @@ class PhoneModel:
 
     @property
     def resolution(self):
-        """Gets the resolution of this PhoneModel.
+        r"""Gets the resolution of this PhoneModel.
 
         分辨率，不超过16个字节。
 
@@ -305,7 +305,7 @@ class PhoneModel:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this PhoneModel.
+        r"""Sets the resolution of this PhoneModel.
 
         分辨率，不超过16个字节。
 
@@ -316,7 +316,7 @@ class PhoneModel:
 
     @property
     def extend_spec(self):
-        """Gets the extend_spec of this PhoneModel.
+        r"""Gets the extend_spec of this PhoneModel.
 
         扩展描述，不超过512个字节。
 
@@ -327,7 +327,7 @@ class PhoneModel:
 
     @extend_spec.setter
     def extend_spec(self, extend_spec):
-        """Sets the extend_spec of this PhoneModel.
+        r"""Sets the extend_spec of this PhoneModel.
 
         扩展描述，不超过512个字节。
 
@@ -338,7 +338,7 @@ class PhoneModel:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this PhoneModel.
+        r"""Gets the spec_code of this PhoneModel.
 
         规格名称，不超过64个字节。
 
@@ -349,7 +349,7 @@ class PhoneModel:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this PhoneModel.
+        r"""Sets the spec_code of this PhoneModel.
 
         规格名称，不超过64个字节。
 
@@ -360,7 +360,7 @@ class PhoneModel:
 
     @property
     def phone_capacity(self):
-        """Gets the phone_capacity of this PhoneModel.
+        r"""Gets the phone_capacity of this PhoneModel.
 
         当前云手机规格包含的云手机个数。
 
@@ -371,7 +371,7 @@ class PhoneModel:
 
     @phone_capacity.setter
     def phone_capacity(self, phone_capacity):
-        """Sets the phone_capacity of this PhoneModel.
+        r"""Sets the phone_capacity of this PhoneModel.
 
         当前云手机规格包含的云手机个数。
 
@@ -382,7 +382,7 @@ class PhoneModel:
 
     @property
     def image_label(self):
-        """Gets the image_label of this PhoneModel.
+        r"""Gets the image_label of this PhoneModel.
 
         镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_phone_1620 - cloud_game - cloud_game_1620
 
@@ -393,7 +393,7 @@ class PhoneModel:
 
     @image_label.setter
     def image_label(self, image_label):
-        """Sets the image_label of this PhoneModel.
+        r"""Sets the image_label of this PhoneModel.
 
         镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_phone_1620 - cloud_game - cloud_game_1620
 
@@ -404,7 +404,7 @@ class PhoneModel:
 
     @property
     def product_type(self):
-        """Gets the product_type of this PhoneModel.
+        r"""Gets the product_type of this PhoneModel.
 
         产品类型。 - 0：云手机 - 1：云手游
 
@@ -415,7 +415,7 @@ class PhoneModel:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this PhoneModel.
+        r"""Sets the product_type of this PhoneModel.
 
         产品类型。 - 0：云手机 - 1：云手游
 
@@ -426,7 +426,7 @@ class PhoneModel:
 
     @property
     def phone_model_version(self):
-        """Gets the phone_model_version of this PhoneModel.
+        r"""Gets the phone_model_version of this PhoneModel.
 
         规格版本： - 0：规格1.0 - 1：规格2.0
 
@@ -437,7 +437,7 @@ class PhoneModel:
 
     @phone_model_version.setter
     def phone_model_version(self, phone_model_version):
-        """Sets the phone_model_version of this PhoneModel.
+        r"""Sets the phone_model_version of this PhoneModel.
 
         规格版本： - 0：规格1.0 - 1：规格2.0
 
@@ -448,7 +448,7 @@ class PhoneModel:
 
     @property
     def dpi(self):
-        """Gets the dpi of this PhoneModel.
+        r"""Gets the dpi of this PhoneModel.
 
         每英寸点数。
 
@@ -459,7 +459,7 @@ class PhoneModel:
 
     @dpi.setter
     def dpi(self, dpi):
-        """Sets the dpi of this PhoneModel.
+        r"""Sets the dpi of this PhoneModel.
 
         每英寸点数。
 
@@ -470,7 +470,7 @@ class PhoneModel:
 
     @property
     def fps(self):
-        """Gets the fps of this PhoneModel.
+        r"""Gets the fps of this PhoneModel.
 
         渲染帧率。
 
@@ -481,7 +481,7 @@ class PhoneModel:
 
     @fps.setter
     def fps(self, fps):
-        """Sets the fps of this PhoneModel.
+        r"""Sets the fps of this PhoneModel.
 
         渲染帧率。
 
@@ -492,7 +492,7 @@ class PhoneModel:
 
     @property
     def volume_mode(self):
-        """Gets the volume_mode of this PhoneModel.
+        r"""Gets the volume_mode of this PhoneModel.
 
         手机物理磁盘是否独立。 - 0：不独立 - 1：独立
 
@@ -503,7 +503,7 @@ class PhoneModel:
 
     @volume_mode.setter
     def volume_mode(self, volume_mode):
-        """Sets the volume_mode of this PhoneModel.
+        r"""Sets the volume_mode of this PhoneModel.
 
         手机物理磁盘是否独立。 - 0：不独立 - 1：独立
 
@@ -514,7 +514,7 @@ class PhoneModel:
 
     @property
     def render_fps(self):
-        """Gets the render_fps of this PhoneModel.
+        r"""Gets the render_fps of this PhoneModel.
 
         渲染帧率。
 
@@ -525,7 +525,7 @@ class PhoneModel:
 
     @render_fps.setter
     def render_fps(self, render_fps):
-        """Sets the render_fps of this PhoneModel.
+        r"""Sets the render_fps of this PhoneModel.
 
         渲染帧率。
 
@@ -536,7 +536,7 @@ class PhoneModel:
 
     @property
     def stream_fps(self):
-        """Gets the stream_fps of this PhoneModel.
+        r"""Gets the stream_fps of this PhoneModel.
 
         出流帧率。
 
@@ -547,7 +547,7 @@ class PhoneModel:
 
     @stream_fps.setter
     def stream_fps(self, stream_fps):
-        """Sets the stream_fps of this PhoneModel.
+        r"""Sets the stream_fps of this PhoneModel.
 
         出流帧率。
 

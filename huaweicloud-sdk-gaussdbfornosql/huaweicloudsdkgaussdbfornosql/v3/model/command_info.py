@@ -27,7 +27,7 @@ class CommandInfo:
     }
 
     def __init__(self, origin_name=None, name=None):
-        """CommandInfo
+        r"""CommandInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CommandInfo:
 
     @property
     def origin_name(self):
-        """Gets the origin_name of this CommandInfo.
+        r"""Gets the origin_name of this CommandInfo.
 
         原高危命令，当前支持的有：keys、flushdb、flushall、hgetall、hkeys、hvals、smembers
 
@@ -59,7 +59,7 @@ class CommandInfo:
 
     @origin_name.setter
     def origin_name(self, origin_name):
-        """Sets the origin_name of this CommandInfo.
+        r"""Sets the origin_name of this CommandInfo.
 
         原高危命令，当前支持的有：keys、flushdb、flushall、hgetall、hkeys、hvals、smembers
 
@@ -70,7 +70,7 @@ class CommandInfo:
 
     @property
     def name(self):
-        """Gets the name of this CommandInfo.
+        r"""Gets the name of this CommandInfo.
 
         当前生效的命令名称，当为空时表示命令禁用，允许修改为30个字符以内数字、字母和下划线的组合
 
@@ -81,7 +81,7 @@ class CommandInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CommandInfo.
+        r"""Sets the name of this CommandInfo.
 
         当前生效的命令名称，当为空时表示命令禁用，允许修改为30个字符以内数字、字母和下划线的组合
 

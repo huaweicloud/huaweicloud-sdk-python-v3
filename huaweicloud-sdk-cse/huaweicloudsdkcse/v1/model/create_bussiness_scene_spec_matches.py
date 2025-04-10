@@ -33,7 +33,7 @@ class CreateBussinessSceneSpecMatches:
     }
 
     def __init__(self, name=None, api_path=None, headers=None, method=None, service_name=None):
-        """CreateBussinessSceneSpecMatches
+        r"""CreateBussinessSceneSpecMatches
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateBussinessSceneSpecMatches:
 
     @property
     def name(self):
-        """Gets the name of this CreateBussinessSceneSpecMatches.
+        r"""Gets the name of this CreateBussinessSceneSpecMatches.
 
         条件名称
 
@@ -82,7 +82,7 @@ class CreateBussinessSceneSpecMatches:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBussinessSceneSpecMatches.
+        r"""Sets the name of this CreateBussinessSceneSpecMatches.
 
         条件名称
 
@@ -93,7 +93,7 @@ class CreateBussinessSceneSpecMatches:
 
     @property
     def api_path(self):
-        """Gets the api_path of this CreateBussinessSceneSpecMatches.
+        r"""Gets the api_path of this CreateBussinessSceneSpecMatches.
 
         匹配的PATH
 
@@ -104,7 +104,7 @@ class CreateBussinessSceneSpecMatches:
 
     @api_path.setter
     def api_path(self, api_path):
-        """Sets the api_path of this CreateBussinessSceneSpecMatches.
+        r"""Sets the api_path of this CreateBussinessSceneSpecMatches.
 
         匹配的PATH
 
@@ -115,7 +115,7 @@ class CreateBussinessSceneSpecMatches:
 
     @property
     def headers(self):
-        """Gets the headers of this CreateBussinessSceneSpecMatches.
+        r"""Gets the headers of this CreateBussinessSceneSpecMatches.
 
         匹配的Headers
 
@@ -126,7 +126,7 @@ class CreateBussinessSceneSpecMatches:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this CreateBussinessSceneSpecMatches.
+        r"""Sets the headers of this CreateBussinessSceneSpecMatches.
 
         匹配的Headers
 
@@ -137,7 +137,7 @@ class CreateBussinessSceneSpecMatches:
 
     @property
     def method(self):
-        """Gets the method of this CreateBussinessSceneSpecMatches.
+        r"""Gets the method of this CreateBussinessSceneSpecMatches.
 
         匹配的Method列表
 
@@ -148,7 +148,7 @@ class CreateBussinessSceneSpecMatches:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this CreateBussinessSceneSpecMatches.
+        r"""Sets the method of this CreateBussinessSceneSpecMatches.
 
         匹配的Method列表
 
@@ -159,7 +159,7 @@ class CreateBussinessSceneSpecMatches:
 
     @property
     def service_name(self):
-        """Gets the service_name of this CreateBussinessSceneSpecMatches.
+        r"""Gets the service_name of this CreateBussinessSceneSpecMatches.
 
         匹配的微服务名称
 
@@ -170,7 +170,7 @@ class CreateBussinessSceneSpecMatches:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this CreateBussinessSceneSpecMatches.
+        r"""Sets the service_name of this CreateBussinessSceneSpecMatches.
 
         匹配的微服务名称
 

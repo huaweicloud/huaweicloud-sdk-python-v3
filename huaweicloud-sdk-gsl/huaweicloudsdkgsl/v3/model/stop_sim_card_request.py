@@ -27,7 +27,7 @@ class StopSimCardRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """StopSimCardRequest
+        r"""StopSimCardRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopSimCardRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this StopSimCardRequest.
+        r"""Gets the sim_card_id of this StopSimCardRequest.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -60,7 +60,7 @@ class StopSimCardRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this StopSimCardRequest.
+        r"""Sets the sim_card_id of this StopSimCardRequest.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -71,7 +71,7 @@ class StopSimCardRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopSimCardRequest.
+        r"""Gets the body of this StopSimCardRequest.
 
         :return: The body of this StopSimCardRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`
@@ -80,7 +80,7 @@ class StopSimCardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopSimCardRequest.
+        r"""Sets the body of this StopSimCardRequest.
 
         :param body: The body of this StopSimCardRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`

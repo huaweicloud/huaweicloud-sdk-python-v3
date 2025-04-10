@@ -27,7 +27,7 @@ class OutputLocalpath:
     }
 
     def __init__(self, mount_source_path=None, data_category=None):
-        """OutputLocalpath
+        r"""OutputLocalpath
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OutputLocalpath:
 
     @property
     def mount_source_path(self):
-        """Gets the mount_source_path of this OutputLocalpath.
+        r"""Gets the mount_source_path of this OutputLocalpath.
 
         挂载源路径，存放作业运行结果的路径，必须为linux路径，且最大长度为255，例如“/home”。
 
@@ -61,7 +61,7 @@ class OutputLocalpath:
 
     @mount_source_path.setter
     def mount_source_path(self, mount_source_path):
-        """Sets the mount_source_path of this OutputLocalpath.
+        r"""Sets the mount_source_path of this OutputLocalpath.
 
         挂载源路径，存放作业运行结果的路径，必须为linux路径，且最大长度为255，例如“/home”。
 
@@ -72,7 +72,7 @@ class OutputLocalpath:
 
     @property
     def data_category(self):
-        """Gets the data_category of this OutputLocalpath.
+        r"""Gets the data_category of this OutputLocalpath.
 
         作业输出数据类别的列表，默认值为[]。有这个列表时，表示希望这个输出结果中存放dataCategory列表内的数据。 取值范围为[FaceImage,OriginImage]。 - FaceImage：表示发送人脸图。 - OriginImage：表示发送原始图。
 
@@ -83,7 +83,7 @@ class OutputLocalpath:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this OutputLocalpath.
+        r"""Sets the data_category of this OutputLocalpath.
 
         作业输出数据类别的列表，默认值为[]。有这个列表时，表示希望这个输出结果中存放dataCategory列表内的数据。 取值范围为[FaceImage,OriginImage]。 - FaceImage：表示发送人脸图。 - OriginImage：表示发送原始图。
 

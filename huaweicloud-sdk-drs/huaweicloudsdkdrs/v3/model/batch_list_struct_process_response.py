@@ -28,7 +28,7 @@ class BatchListStructProcessResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchListStructProcessResponse
+        r"""BatchListStructProcessResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchListStructProcessResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchListStructProcessResponse.
+        r"""Gets the results of this BatchListStructProcessResponse.
 
         批量查询灾备初始化进度返回列表
 
@@ -62,7 +62,7 @@ class BatchListStructProcessResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchListStructProcessResponse.
+        r"""Sets the results of this BatchListStructProcessResponse.
 
         批量查询灾备初始化进度返回列表
 
@@ -73,7 +73,7 @@ class BatchListStructProcessResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListStructProcessResponse.
+        r"""Gets the count of this BatchListStructProcessResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchListStructProcessResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListStructProcessResponse.
+        r"""Sets the count of this BatchListStructProcessResponse.
 
         总数
 

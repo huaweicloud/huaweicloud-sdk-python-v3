@@ -29,7 +29,7 @@ class UpdateAccessClientRequest:
     }
 
     def __init__(self, instance_id=None, client_id=None, body=None):
-        """UpdateAccessClientRequest
+        r"""UpdateAccessClientRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAccessClientRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAccessClientRequest.
+        r"""Gets the instance_id of this UpdateAccessClientRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -66,7 +66,7 @@ class UpdateAccessClientRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAccessClientRequest.
+        r"""Sets the instance_id of this UpdateAccessClientRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -77,7 +77,7 @@ class UpdateAccessClientRequest:
 
     @property
     def client_id(self):
-        """Gets the client_id of this UpdateAccessClientRequest.
+        r"""Gets the client_id of this UpdateAccessClientRequest.
 
         客户端ID。创建客户端时自动生成。
 
@@ -88,7 +88,7 @@ class UpdateAccessClientRequest:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this UpdateAccessClientRequest.
+        r"""Sets the client_id of this UpdateAccessClientRequest.
 
         客户端ID。创建客户端时自动生成。
 
@@ -99,7 +99,7 @@ class UpdateAccessClientRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAccessClientRequest.
+        r"""Gets the body of this UpdateAccessClientRequest.
 
         :return: The body of this UpdateAccessClientRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateAccessClientRequestBody`
@@ -108,7 +108,7 @@ class UpdateAccessClientRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAccessClientRequest.
+        r"""Sets the body of this UpdateAccessClientRequest.
 
         :param body: The body of this UpdateAccessClientRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.UpdateAccessClientRequestBody`

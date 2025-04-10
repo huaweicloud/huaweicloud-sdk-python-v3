@@ -29,7 +29,7 @@ class CompareDesignVersionsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, ids=None):
-        """CompareDesignVersionsRequest
+        r"""CompareDesignVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CompareDesignVersionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CompareDesignVersionsRequest.
+        r"""Gets the workspace of this CompareDesignVersionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class CompareDesignVersionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CompareDesignVersionsRequest.
+        r"""Sets the workspace of this CompareDesignVersionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class CompareDesignVersionsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this CompareDesignVersionsRequest.
+        r"""Gets the x_project_id of this CompareDesignVersionsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -88,7 +88,7 @@ class CompareDesignVersionsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this CompareDesignVersionsRequest.
+        r"""Sets the x_project_id of this CompareDesignVersionsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -99,7 +99,7 @@ class CompareDesignVersionsRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this CompareDesignVersionsRequest.
+        r"""Gets the ids of this CompareDesignVersionsRequest.
 
         实体ID数组，ID字符串。
 
@@ -110,7 +110,7 @@ class CompareDesignVersionsRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this CompareDesignVersionsRequest.
+        r"""Sets the ids of this CompareDesignVersionsRequest.
 
         实体ID数组，ID字符串。
 

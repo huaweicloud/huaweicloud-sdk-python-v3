@@ -35,7 +35,7 @@ class KeystoneUpdateUserOption:
     }
 
     def __init__(self, domain_id=None, name=None, password=None, enabled=None, description=None, pwd_status=None):
-        """KeystoneUpdateUserOption
+        r"""KeystoneUpdateUserOption
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class KeystoneUpdateUserOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneUpdateUserOption.
+        r"""Gets the domain_id of this KeystoneUpdateUserOption.
 
         IAM用户所属账号ID。
 
@@ -89,7 +89,7 @@ class KeystoneUpdateUserOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneUpdateUserOption.
+        r"""Sets the domain_id of this KeystoneUpdateUserOption.
 
         IAM用户所属账号ID。
 
@@ -100,7 +100,7 @@ class KeystoneUpdateUserOption:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneUpdateUserOption.
+        r"""Gets the name of this KeystoneUpdateUserOption.
 
         新IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头
 
@@ -111,7 +111,7 @@ class KeystoneUpdateUserOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneUpdateUserOption.
+        r"""Sets the name of this KeystoneUpdateUserOption.
 
         新IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头
 
@@ -122,7 +122,7 @@ class KeystoneUpdateUserOption:
 
     @property
     def password(self):
-        """Gets the password of this KeystoneUpdateUserOption.
+        r"""Gets the password of this KeystoneUpdateUserOption.
 
         IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。 - 新密码不能与当前密码相同。
 
@@ -133,7 +133,7 @@ class KeystoneUpdateUserOption:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this KeystoneUpdateUserOption.
+        r"""Sets the password of this KeystoneUpdateUserOption.
 
         IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。 - 新密码不能与当前密码相同。
 
@@ -144,7 +144,7 @@ class KeystoneUpdateUserOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneUpdateUserOption.
+        r"""Gets the enabled of this KeystoneUpdateUserOption.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -155,7 +155,7 @@ class KeystoneUpdateUserOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneUpdateUserOption.
+        r"""Sets the enabled of this KeystoneUpdateUserOption.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -166,7 +166,7 @@ class KeystoneUpdateUserOption:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneUpdateUserOption.
+        r"""Gets the description of this KeystoneUpdateUserOption.
 
         IAM用户新描述信息。
 
@@ -177,7 +177,7 @@ class KeystoneUpdateUserOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneUpdateUserOption.
+        r"""Sets the description of this KeystoneUpdateUserOption.
 
         IAM用户新描述信息。
 
@@ -188,7 +188,7 @@ class KeystoneUpdateUserOption:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this KeystoneUpdateUserOption.
+        r"""Gets the pwd_status of this KeystoneUpdateUserOption.
 
         IAM用户密码状态。true:需要修改密码,false:正常。
 
@@ -199,7 +199,7 @@ class KeystoneUpdateUserOption:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this KeystoneUpdateUserOption.
+        r"""Sets the pwd_status of this KeystoneUpdateUserOption.
 
         IAM用户密码状态。true:需要修改密码,false:正常。
 

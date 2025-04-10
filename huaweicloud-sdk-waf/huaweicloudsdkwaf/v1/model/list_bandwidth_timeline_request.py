@@ -37,7 +37,7 @@ class ListBandwidthTimelineRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None, group_by=None, display_option=None):
-        """ListBandwidthTimelineRequest
+        r"""ListBandwidthTimelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListBandwidthTimelineRequest.
+        r"""Gets the enterprise_project_id of this ListBandwidthTimelineRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -94,7 +94,7 @@ class ListBandwidthTimelineRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListBandwidthTimelineRequest.
+        r"""Sets the enterprise_project_id of this ListBandwidthTimelineRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -105,7 +105,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListBandwidthTimelineRequest.
+        r"""Gets the _from of this ListBandwidthTimelineRequest.
 
         查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -116,7 +116,7 @@ class ListBandwidthTimelineRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListBandwidthTimelineRequest.
+        r"""Sets the _from of this ListBandwidthTimelineRequest.
 
         查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -127,7 +127,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListBandwidthTimelineRequest.
+        r"""Gets the to of this ListBandwidthTimelineRequest.
 
         查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -138,7 +138,7 @@ class ListBandwidthTimelineRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListBandwidthTimelineRequest.
+        r"""Sets the to of this ListBandwidthTimelineRequest.
 
         查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -149,7 +149,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListBandwidthTimelineRequest.
+        r"""Gets the hosts of this ListBandwidthTimelineRequest.
 
         域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -160,7 +160,7 @@ class ListBandwidthTimelineRequest:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListBandwidthTimelineRequest.
+        r"""Sets the hosts of this ListBandwidthTimelineRequest.
 
         域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -171,7 +171,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def instances(self):
-        """Gets the instances of this ListBandwidthTimelineRequest.
+        r"""Gets the instances of this ListBandwidthTimelineRequest.
 
         引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
 
@@ -182,7 +182,7 @@ class ListBandwidthTimelineRequest:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListBandwidthTimelineRequest.
+        r"""Sets the instances of this ListBandwidthTimelineRequest.
 
         引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
 
@@ -193,7 +193,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ListBandwidthTimelineRequest.
+        r"""Gets the group_by of this ListBandwidthTimelineRequest.
 
         展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示。
 
@@ -204,7 +204,7 @@ class ListBandwidthTimelineRequest:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ListBandwidthTimelineRequest.
+        r"""Sets the group_by of this ListBandwidthTimelineRequest.
 
         展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示。
 
@@ -215,7 +215,7 @@ class ListBandwidthTimelineRequest:
 
     @property
     def display_option(self):
-        """Gets the display_option of this ListBandwidthTimelineRequest.
+        r"""Gets the display_option of this ListBandwidthTimelineRequest.
 
         发送/接受字节数，查看峰值请输入1，查看平均值请输入0
 
@@ -226,7 +226,7 @@ class ListBandwidthTimelineRequest:
 
     @display_option.setter
     def display_option(self, display_option):
-        """Sets the display_option of this ListBandwidthTimelineRequest.
+        r"""Sets the display_option of this ListBandwidthTimelineRequest.
 
         发送/接受字节数，查看峰值请输入1，查看平均值请输入0
 

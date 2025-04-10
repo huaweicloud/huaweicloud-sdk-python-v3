@@ -27,7 +27,7 @@ class UpdateFlinkJarJobRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """UpdateFlinkJarJobRequest
+        r"""UpdateFlinkJarJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFlinkJarJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateFlinkJarJobRequest.
+        r"""Gets the job_id of this UpdateFlinkJarJobRequest.
 
         作业ID。
 
@@ -60,7 +60,7 @@ class UpdateFlinkJarJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateFlinkJarJobRequest.
+        r"""Sets the job_id of this UpdateFlinkJarJobRequest.
 
         作业ID。
 
@@ -71,7 +71,7 @@ class UpdateFlinkJarJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlinkJarJobRequest.
+        r"""Gets the body of this UpdateFlinkJarJobRequest.
 
         :return: The body of this UpdateFlinkJarJobRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarJobRequestBody`
@@ -80,7 +80,7 @@ class UpdateFlinkJarJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlinkJarJobRequest.
+        r"""Sets the body of this UpdateFlinkJarJobRequest.
 
         :param body: The body of this UpdateFlinkJarJobRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarJobRequestBody`

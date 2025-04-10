@@ -51,7 +51,7 @@ class JobResp:
     }
 
     def __init__(self, create_time=None, create_user=None, job_type=None, last_instance_end_time=None, last_instance_status=None, last_update_time=None, last_update_user=None, name=None, owner=None, path=None, priority=None, single_node_job_flag=None, start_time=None, status=None):
-        """JobResp
+        r"""JobResp
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class JobResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this JobResp.
+        r"""Gets the create_time of this JobResp.
 
         创建时间
 
@@ -145,7 +145,7 @@ class JobResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this JobResp.
+        r"""Sets the create_time of this JobResp.
 
         创建时间
 
@@ -156,7 +156,7 @@ class JobResp:
 
     @property
     def create_user(self):
-        """Gets the create_user of this JobResp.
+        r"""Gets the create_user of this JobResp.
 
         创建用户
 
@@ -167,7 +167,7 @@ class JobResp:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this JobResp.
+        r"""Sets the create_user of this JobResp.
 
         创建用户
 
@@ -178,7 +178,7 @@ class JobResp:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobResp.
+        r"""Gets the job_type of this JobResp.
 
         作业类型:  - REAL_TIME: 实时处理  - BATCH: 批处理
 
@@ -189,7 +189,7 @@ class JobResp:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobResp.
+        r"""Sets the job_type of this JobResp.
 
         作业类型:  - REAL_TIME: 实时处理  - BATCH: 批处理
 
@@ -200,7 +200,7 @@ class JobResp:
 
     @property
     def last_instance_end_time(self):
-        """Gets the last_instance_end_time of this JobResp.
+        r"""Gets the last_instance_end_time of this JobResp.
 
         最近实例的运行结束时间
 
@@ -211,7 +211,7 @@ class JobResp:
 
     @last_instance_end_time.setter
     def last_instance_end_time(self, last_instance_end_time):
-        """Sets the last_instance_end_time of this JobResp.
+        r"""Sets the last_instance_end_time of this JobResp.
 
         最近实例的运行结束时间
 
@@ -222,7 +222,7 @@ class JobResp:
 
     @property
     def last_instance_status(self):
-        """Gets the last_instance_status of this JobResp.
+        r"""Gets the last_instance_status of this JobResp.
 
         最近实例的运行状态
 
@@ -233,7 +233,7 @@ class JobResp:
 
     @last_instance_status.setter
     def last_instance_status(self, last_instance_status):
-        """Sets the last_instance_status of this JobResp.
+        r"""Sets the last_instance_status of this JobResp.
 
         最近实例的运行状态
 
@@ -244,7 +244,7 @@ class JobResp:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this JobResp.
+        r"""Gets the last_update_time of this JobResp.
 
         最后更新时间
 
@@ -255,7 +255,7 @@ class JobResp:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this JobResp.
+        r"""Sets the last_update_time of this JobResp.
 
         最后更新时间
 
@@ -266,7 +266,7 @@ class JobResp:
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this JobResp.
+        r"""Gets the last_update_user of this JobResp.
 
         最后修改人
 
@@ -277,7 +277,7 @@ class JobResp:
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this JobResp.
+        r"""Sets the last_update_user of this JobResp.
 
         最后修改人
 
@@ -288,7 +288,7 @@ class JobResp:
 
     @property
     def name(self):
-        """Gets the name of this JobResp.
+        r"""Gets the name of this JobResp.
 
         作业名称
 
@@ -299,7 +299,7 @@ class JobResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobResp.
+        r"""Sets the name of this JobResp.
 
         作业名称
 
@@ -310,7 +310,7 @@ class JobResp:
 
     @property
     def owner(self):
-        """Gets the owner of this JobResp.
+        r"""Gets the owner of this JobResp.
 
         责任人
 
@@ -321,7 +321,7 @@ class JobResp:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this JobResp.
+        r"""Sets the owner of this JobResp.
 
         责任人
 
@@ -332,7 +332,7 @@ class JobResp:
 
     @property
     def path(self):
-        """Gets the path of this JobResp.
+        r"""Gets the path of this JobResp.
 
         作业目录路径
 
@@ -343,7 +343,7 @@ class JobResp:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this JobResp.
+        r"""Sets the path of this JobResp.
 
         作业目录路径
 
@@ -354,7 +354,7 @@ class JobResp:
 
     @property
     def priority(self):
-        """Gets the priority of this JobResp.
+        r"""Gets the priority of this JobResp.
 
         作业优先级
 
@@ -365,7 +365,7 @@ class JobResp:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this JobResp.
+        r"""Sets the priority of this JobResp.
 
         作业优先级
 
@@ -376,7 +376,7 @@ class JobResp:
 
     @property
     def single_node_job_flag(self):
-        """Gets the single_node_job_flag of this JobResp.
+        r"""Gets the single_node_job_flag of this JobResp.
 
         单算子作业标识
 
@@ -387,7 +387,7 @@ class JobResp:
 
     @single_node_job_flag.setter
     def single_node_job_flag(self, single_node_job_flag):
-        """Sets the single_node_job_flag of this JobResp.
+        r"""Sets the single_node_job_flag of this JobResp.
 
         单算子作业标识
 
@@ -398,7 +398,7 @@ class JobResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobResp.
+        r"""Gets the start_time of this JobResp.
 
         作业启动时间
 
@@ -409,7 +409,7 @@ class JobResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobResp.
+        r"""Sets the start_time of this JobResp.
 
         作业启动时间
 
@@ -420,7 +420,7 @@ class JobResp:
 
     @property
     def status(self):
-        """Gets the status of this JobResp.
+        r"""Gets the status of this JobResp.
 
         作业状态
 
@@ -431,7 +431,7 @@ class JobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobResp.
+        r"""Sets the status of this JobResp.
 
         作业状态
 

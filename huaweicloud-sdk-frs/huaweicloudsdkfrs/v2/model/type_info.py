@@ -25,7 +25,7 @@ class TypeInfo:
     }
 
     def __init__(self, type=None):
-        """TypeInfo
+        r"""TypeInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TypeInfo:
 
     @property
     def type(self):
-        """Gets the type of this TypeInfo.
+        r"""Gets the type of this TypeInfo.
 
         数据类型:string,integer,double,long等。
 
@@ -54,7 +54,7 @@ class TypeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TypeInfo.
+        r"""Sets the type of this TypeInfo.
 
         数据类型:string,integer,double,long等。
 

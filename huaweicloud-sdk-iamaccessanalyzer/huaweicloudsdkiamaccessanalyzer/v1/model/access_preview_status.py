@@ -28,7 +28,7 @@ class AccessPreviewStatus:
     }
 
     def __init__(self):
-        """AccessPreviewStatus
+        r"""AccessPreviewStatus
 
         The model defined in huaweicloud sdk
 

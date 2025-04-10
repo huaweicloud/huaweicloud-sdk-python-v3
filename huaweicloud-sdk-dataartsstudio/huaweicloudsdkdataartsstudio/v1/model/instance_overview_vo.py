@@ -39,7 +39,7 @@ class InstanceOverviewVo:
     }
 
     def __init__(self, id=None, name=None, task_id=None, task_type=None, run_status=None, notify_status=None, start_time=None, end_time=None):
-        """InstanceOverviewVo
+        r"""InstanceOverviewVo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class InstanceOverviewVo:
 
     @property
     def id(self):
-        """Gets the id of this InstanceOverviewVo.
+        r"""Gets the id of this InstanceOverviewVo.
 
         id
 
@@ -103,7 +103,7 @@ class InstanceOverviewVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceOverviewVo.
+        r"""Sets the id of this InstanceOverviewVo.
 
         id
 
@@ -114,7 +114,7 @@ class InstanceOverviewVo:
 
     @property
     def name(self):
-        """Gets the name of this InstanceOverviewVo.
+        r"""Gets the name of this InstanceOverviewVo.
 
         名称
 
@@ -125,7 +125,7 @@ class InstanceOverviewVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceOverviewVo.
+        r"""Sets the name of this InstanceOverviewVo.
 
         名称
 
@@ -136,7 +136,7 @@ class InstanceOverviewVo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this InstanceOverviewVo.
+        r"""Gets the task_id of this InstanceOverviewVo.
 
         task id
 
@@ -147,7 +147,7 @@ class InstanceOverviewVo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this InstanceOverviewVo.
+        r"""Sets the task_id of this InstanceOverviewVo.
 
         task id
 
@@ -158,7 +158,7 @@ class InstanceOverviewVo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this InstanceOverviewVo.
+        r"""Gets the task_type of this InstanceOverviewVo.
 
         QUALITY_TASK:质量作业,CONSISTENCY_TASK:对账作业
 
@@ -169,7 +169,7 @@ class InstanceOverviewVo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this InstanceOverviewVo.
+        r"""Sets the task_type of this InstanceOverviewVo.
 
         QUALITY_TASK:质量作业,CONSISTENCY_TASK:对账作业
 
@@ -180,7 +180,7 @@ class InstanceOverviewVo:
 
     @property
     def run_status(self):
-        """Gets the run_status of this InstanceOverviewVo.
+        r"""Gets the run_status of this InstanceOverviewVo.
 
         RUNNING:运行中,FAILED:失败,ALARMING:报警,SUCCESS:正常
 
@@ -191,7 +191,7 @@ class InstanceOverviewVo:
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this InstanceOverviewVo.
+        r"""Sets the run_status of this InstanceOverviewVo.
 
         RUNNING:运行中,FAILED:失败,ALARMING:报警,SUCCESS:正常
 
@@ -202,7 +202,7 @@ class InstanceOverviewVo:
 
     @property
     def notify_status(self):
-        """Gets the notify_status of this InstanceOverviewVo.
+        r"""Gets the notify_status of this InstanceOverviewVo.
 
         NOT_TRIGGERED:未触发,SUCCESS:成功,FAILED:失败
 
@@ -213,7 +213,7 @@ class InstanceOverviewVo:
 
     @notify_status.setter
     def notify_status(self, notify_status):
-        """Sets the notify_status of this InstanceOverviewVo.
+        r"""Sets the notify_status of this InstanceOverviewVo.
 
         NOT_TRIGGERED:未触发,SUCCESS:成功,FAILED:失败
 
@@ -224,7 +224,7 @@ class InstanceOverviewVo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this InstanceOverviewVo.
+        r"""Gets the start_time of this InstanceOverviewVo.
 
         开始时间
 
@@ -235,7 +235,7 @@ class InstanceOverviewVo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this InstanceOverviewVo.
+        r"""Sets the start_time of this InstanceOverviewVo.
 
         开始时间
 
@@ -246,7 +246,7 @@ class InstanceOverviewVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this InstanceOverviewVo.
+        r"""Gets the end_time of this InstanceOverviewVo.
 
         结束时间
 
@@ -257,7 +257,7 @@ class InstanceOverviewVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this InstanceOverviewVo.
+        r"""Sets the end_time of this InstanceOverviewVo.
 
         结束时间
 

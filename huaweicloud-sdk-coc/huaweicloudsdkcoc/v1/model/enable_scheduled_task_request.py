@@ -27,7 +27,7 @@ class EnableScheduledTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """EnableScheduledTaskRequest
+        r"""EnableScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EnableScheduledTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this EnableScheduledTaskRequest.
+        r"""Gets the task_id of this EnableScheduledTaskRequest.
 
         ID of ScheduledTask
 
@@ -60,7 +60,7 @@ class EnableScheduledTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this EnableScheduledTaskRequest.
+        r"""Sets the task_id of this EnableScheduledTaskRequest.
 
         ID of ScheduledTask
 
@@ -71,7 +71,7 @@ class EnableScheduledTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableScheduledTaskRequest.
+        r"""Gets the body of this EnableScheduledTaskRequest.
 
         :return: The body of this EnableScheduledTaskRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.EnableScheduledTaskRequestBody`
@@ -80,7 +80,7 @@ class EnableScheduledTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableScheduledTaskRequest.
+        r"""Sets the body of this EnableScheduledTaskRequest.
 
         :param body: The body of this EnableScheduledTaskRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.EnableScheduledTaskRequestBody`

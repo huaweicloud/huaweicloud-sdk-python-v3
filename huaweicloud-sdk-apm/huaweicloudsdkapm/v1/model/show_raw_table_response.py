@@ -36,7 +36,7 @@ class ShowRawTableResponse(SdkResponse):
     }
 
     def __init__(self, row_list=None, latest_data_time=None, table_direction=None, result_id=None, real_start_time=None, real_end_time=None):
-        """ShowRawTableResponse
+        r"""ShowRawTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @property
     def row_list(self):
-        """Gets the row_list of this ShowRawTableResponse.
+        r"""Gets the row_list of this ShowRawTableResponse.
 
         :return: The row_list of this ShowRawTableResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
@@ -88,7 +88,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @row_list.setter
     def row_list(self, row_list):
-        """Sets the row_list of this ShowRawTableResponse.
+        r"""Sets the row_list of this ShowRawTableResponse.
 
         :param row_list: The row_list of this ShowRawTableResponse.
         :type row_list: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
@@ -97,7 +97,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @property
     def latest_data_time(self):
-        """Gets the latest_data_time of this ShowRawTableResponse.
+        r"""Gets the latest_data_time of this ShowRawTableResponse.
 
         最近一笔数据的时间。
 
@@ -108,7 +108,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @latest_data_time.setter
     def latest_data_time(self, latest_data_time):
-        """Sets the latest_data_time of this ShowRawTableResponse.
+        r"""Sets the latest_data_time of this ShowRawTableResponse.
 
         最近一笔数据的时间。
 
@@ -119,7 +119,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @property
     def table_direction(self):
-        """Gets the table_direction of this ShowRawTableResponse.
+        r"""Gets the table_direction of this ShowRawTableResponse.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -130,7 +130,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @table_direction.setter
     def table_direction(self, table_direction):
-        """Sets the table_direction of this ShowRawTableResponse.
+        r"""Sets the table_direction of this ShowRawTableResponse.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -141,7 +141,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @property
     def result_id(self):
-        """Gets the result_id of this ShowRawTableResponse.
+        r"""Gets the result_id of this ShowRawTableResponse.
 
         上次请求id。
 
@@ -152,7 +152,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this ShowRawTableResponse.
+        r"""Sets the result_id of this ShowRawTableResponse.
 
         上次请求id。
 
@@ -163,7 +163,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @property
     def real_start_time(self):
-        """Gets the real_start_time of this ShowRawTableResponse.
+        r"""Gets the real_start_time of this ShowRawTableResponse.
 
         实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数。
 
@@ -174,7 +174,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @real_start_time.setter
     def real_start_time(self, real_start_time):
-        """Sets the real_start_time of this ShowRawTableResponse.
+        r"""Sets the real_start_time of this ShowRawTableResponse.
 
         实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数。
 
@@ -185,7 +185,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @property
     def real_end_time(self):
-        """Gets the real_end_time of this ShowRawTableResponse.
+        r"""Gets the real_end_time of this ShowRawTableResponse.
 
         实际结束的时间。
 
@@ -196,7 +196,7 @@ class ShowRawTableResponse(SdkResponse):
 
     @real_end_time.setter
     def real_end_time(self, real_end_time):
-        """Sets the real_end_time of this ShowRawTableResponse.
+        r"""Sets the real_end_time of this ShowRawTableResponse.
 
         实际结束的时间。
 

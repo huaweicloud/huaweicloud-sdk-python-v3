@@ -30,7 +30,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, edge_apps=None):
-        """BatchListEdgeAppsResponse
+        r"""BatchListEdgeAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListEdgeAppsResponse.
+        r"""Gets the count of this BatchListEdgeAppsResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListEdgeAppsResponse.
+        r"""Sets the count of this BatchListEdgeAppsResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListEdgeAppsResponse.
+        r"""Gets the page_info of this BatchListEdgeAppsResponse.
 
         :return: The page_info of this BatchListEdgeAppsResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListEdgeAppsResponse.
+        r"""Sets the page_info of this BatchListEdgeAppsResponse.
 
         :param page_info: The page_info of this BatchListEdgeAppsResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
 
     @property
     def edge_apps(self):
-        """Gets the edge_apps of this BatchListEdgeAppsResponse.
+        r"""Gets the edge_apps of this BatchListEdgeAppsResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class BatchListEdgeAppsResponse(SdkResponse):
 
     @edge_apps.setter
     def edge_apps(self, edge_apps):
-        """Sets the edge_apps of this BatchListEdgeAppsResponse.
+        r"""Sets the edge_apps of this BatchListEdgeAppsResponse.
 
         每页记录数
 

@@ -31,7 +31,7 @@ class ReplaySlowSqlResp:
     }
 
     def __init__(self, object_type=None, slow_sql=None, old_time=None, replay_time=None):
-        """ReplaySlowSqlResp
+        r"""ReplaySlowSqlResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ReplaySlowSqlResp:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ReplaySlowSqlResp.
+        r"""Gets the object_type of this ReplaySlowSqlResp.
 
         SQL语句类型
 
@@ -75,7 +75,7 @@ class ReplaySlowSqlResp:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ReplaySlowSqlResp.
+        r"""Sets the object_type of this ReplaySlowSqlResp.
 
         SQL语句类型
 
@@ -86,7 +86,7 @@ class ReplaySlowSqlResp:
 
     @property
     def slow_sql(self):
-        """Gets the slow_sql of this ReplaySlowSqlResp.
+        r"""Gets the slow_sql of this ReplaySlowSqlResp.
 
         SQL语句
 
@@ -97,7 +97,7 @@ class ReplaySlowSqlResp:
 
     @slow_sql.setter
     def slow_sql(self, slow_sql):
-        """Sets the slow_sql of this ReplaySlowSqlResp.
+        r"""Sets the slow_sql of this ReplaySlowSqlResp.
 
         SQL语句
 
@@ -108,7 +108,7 @@ class ReplaySlowSqlResp:
 
     @property
     def old_time(self):
-        """Gets the old_time of this ReplaySlowSqlResp.
+        r"""Gets the old_time of this ReplaySlowSqlResp.
 
         源库执行耗时
 
@@ -119,7 +119,7 @@ class ReplaySlowSqlResp:
 
     @old_time.setter
     def old_time(self, old_time):
-        """Sets the old_time of this ReplaySlowSqlResp.
+        r"""Sets the old_time of this ReplaySlowSqlResp.
 
         源库执行耗时
 
@@ -130,7 +130,7 @@ class ReplaySlowSqlResp:
 
     @property
     def replay_time(self):
-        """Gets the replay_time of this ReplaySlowSqlResp.
+        r"""Gets the replay_time of this ReplaySlowSqlResp.
 
         目标库回放执行耗时
 
@@ -141,7 +141,7 @@ class ReplaySlowSqlResp:
 
     @replay_time.setter
     def replay_time(self, replay_time):
-        """Sets the replay_time of this ReplaySlowSqlResp.
+        r"""Sets the replay_time of this ReplaySlowSqlResp.
 
         目标库回放执行耗时
 

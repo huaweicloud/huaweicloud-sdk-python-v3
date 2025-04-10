@@ -42,7 +42,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
     }
 
     def __init__(self, dns_verify_type=None, dns_verify_name=None, file_verify_url=None, domain_name=None, verify_domain_name=None, file_verify_filename=None, verify_content=None, file_verify_domains=None, x_request_id=None):
-        """ShowVerifyDomainOwnerInfoResponse
+        r"""ShowVerifyDomainOwnerInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def dns_verify_type(self):
-        """Gets the dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
 
         DNS解析类型。
 
@@ -111,7 +111,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @dns_verify_type.setter
     def dns_verify_type(self, dns_verify_type):
-        """Sets the dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
 
         DNS解析类型。
 
@@ -122,7 +122,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def dns_verify_name(self):
-        """Gets the dns_verify_name of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the dns_verify_name of this ShowVerifyDomainOwnerInfoResponse.
 
         DNS解析主机记录名称。
 
@@ -133,7 +133,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @dns_verify_name.setter
     def dns_verify_name(self, dns_verify_name):
-        """Sets the dns_verify_name of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the dns_verify_name of this ShowVerifyDomainOwnerInfoResponse.
 
         DNS解析主机记录名称。
 
@@ -144,7 +144,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def file_verify_url(self):
-        """Gets the file_verify_url of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the file_verify_url of this ShowVerifyDomainOwnerInfoResponse.
 
         文件校验URL地址。
 
@@ -155,7 +155,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @file_verify_url.setter
     def file_verify_url(self, file_verify_url):
-        """Sets the file_verify_url of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the file_verify_url of this ShowVerifyDomainOwnerInfoResponse.
 
         文件校验URL地址。
 
@@ -166,7 +166,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the domain_name of this ShowVerifyDomainOwnerInfoResponse.
 
         加速域名。
 
@@ -177,7 +177,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the domain_name of this ShowVerifyDomainOwnerInfoResponse.
 
         加速域名。
 
@@ -188,7 +188,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def verify_domain_name(self):
-        """Gets the verify_domain_name of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the verify_domain_name of this ShowVerifyDomainOwnerInfoResponse.
 
         校验域名。
 
@@ -199,7 +199,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @verify_domain_name.setter
     def verify_domain_name(self, verify_domain_name):
-        """Sets the verify_domain_name of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the verify_domain_name of this ShowVerifyDomainOwnerInfoResponse.
 
         校验域名。
 
@@ -210,7 +210,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def file_verify_filename(self):
-        """Gets the file_verify_filename of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the file_verify_filename of this ShowVerifyDomainOwnerInfoResponse.
 
         文件校验的校验文件名。
 
@@ -221,7 +221,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @file_verify_filename.setter
     def file_verify_filename(self, file_verify_filename):
-        """Sets the file_verify_filename of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the file_verify_filename of this ShowVerifyDomainOwnerInfoResponse.
 
         文件校验的校验文件名。
 
@@ -232,7 +232,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def verify_content(self):
-        """Gets the verify_content of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the verify_content of this ShowVerifyDomainOwnerInfoResponse.
 
         校验值，解析值或者文件内容。
 
@@ -243,7 +243,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @verify_content.setter
     def verify_content(self, verify_content):
-        """Sets the verify_content of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the verify_content of this ShowVerifyDomainOwnerInfoResponse.
 
         校验值，解析值或者文件内容。
 
@@ -254,7 +254,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def file_verify_domains(self):
-        """Gets the file_verify_domains of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the file_verify_domains of this ShowVerifyDomainOwnerInfoResponse.
 
         文件校验域名列表。
 
@@ -265,7 +265,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @file_verify_domains.setter
     def file_verify_domains(self, file_verify_domains):
-        """Sets the file_verify_domains of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the file_verify_domains of this ShowVerifyDomainOwnerInfoResponse.
 
         文件校验域名列表。
 
@@ -276,7 +276,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Gets the x_request_id of this ShowVerifyDomainOwnerInfoResponse.
 
         :return: The x_request_id of this ShowVerifyDomainOwnerInfoResponse.
         :rtype: str
@@ -285,7 +285,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowVerifyDomainOwnerInfoResponse.
+        r"""Sets the x_request_id of this ShowVerifyDomainOwnerInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowVerifyDomainOwnerInfoResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class PoliciesClientClientType:
     }
 
     def __init__(self, client_type_limit=None, options=None):
-        """PoliciesClientClientType
+        r"""PoliciesClientClientType
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesClientClientType:
 
     @property
     def client_type_limit(self):
-        """Gets the client_type_limit of this PoliciesClientClientType.
+        r"""Gets the client_type_limit of this PoliciesClientClientType.
 
         是否开启终端类型登录管控。 false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesClientClientType:
 
     @client_type_limit.setter
     def client_type_limit(self, client_type_limit):
-        """Sets the client_type_limit of this PoliciesClientClientType.
+        r"""Sets the client_type_limit of this PoliciesClientClientType.
 
         是否开启终端类型登录管控。 false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesClientClientType:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesClientClientType.
+        r"""Gets the options of this PoliciesClientClientType.
 
         :return: The options of this PoliciesClientClientType.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesClientClientTypeOptions`
@@ -81,7 +81,7 @@ class PoliciesClientClientType:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesClientClientType.
+        r"""Sets the options of this PoliciesClientClientType.
 
         :param options: The options of this PoliciesClientClientType.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesClientClientTypeOptions`

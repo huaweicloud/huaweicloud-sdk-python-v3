@@ -30,7 +30,7 @@ class ListTransferTasksResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, quota=None, tasks=None):
-        """ListTransferTasksResponse
+        r"""ListTransferTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTransferTasksResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListTransferTasksResponse.
+        r"""Gets the total_number of this ListTransferTasksResponse.
 
         转储任务总数。
 
@@ -69,7 +69,7 @@ class ListTransferTasksResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListTransferTasksResponse.
+        r"""Sets the total_number of this ListTransferTasksResponse.
 
         转储任务总数。
 
@@ -80,7 +80,7 @@ class ListTransferTasksResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ListTransferTasksResponse.
+        r"""Gets the quota of this ListTransferTasksResponse.
 
         可创建的转储任务配额。
 
@@ -91,7 +91,7 @@ class ListTransferTasksResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ListTransferTasksResponse.
+        r"""Sets the quota of this ListTransferTasksResponse.
 
         可创建的转储任务配额。
 
@@ -102,7 +102,7 @@ class ListTransferTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListTransferTasksResponse.
+        r"""Gets the tasks of this ListTransferTasksResponse.
 
         转储任务列表。
 
@@ -113,7 +113,7 @@ class ListTransferTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListTransferTasksResponse.
+        r"""Sets the tasks of this ListTransferTasksResponse.
 
         转储任务列表。
 

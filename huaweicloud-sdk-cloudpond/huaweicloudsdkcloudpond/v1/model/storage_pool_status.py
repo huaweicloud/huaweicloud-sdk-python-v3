@@ -29,7 +29,7 @@ class StoragePoolStatus:
     }
 
     def __init__(self):
-        """StoragePoolStatus
+        r"""StoragePoolStatus
 
         The model defined in huaweicloud sdk
 

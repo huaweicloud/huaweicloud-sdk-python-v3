@@ -27,7 +27,7 @@ class TagMatches:
     }
 
     def __init__(self, key=None, value=None):
-        """TagMatches
+        r"""TagMatches
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagMatches:
 
     @property
     def key(self):
-        """Gets the key of this TagMatches.
+        r"""Gets the key of this TagMatches.
 
         为要匹配的字段。 约束：值只能为resource_name。
 
@@ -61,7 +61,7 @@ class TagMatches:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagMatches.
+        r"""Sets the key of this TagMatches.
 
         为要匹配的字段。 约束：值只能为resource_name。
 
@@ -72,7 +72,7 @@ class TagMatches:
 
     @property
     def value(self):
-        """Gets the value of this TagMatches.
+        r"""Gets the value of this TagMatches.
 
         模糊匹配的值。  约束：最大长度为255个字符，为空返回空值。
 
@@ -83,7 +83,7 @@ class TagMatches:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagMatches.
+        r"""Sets the value of this TagMatches.
 
         模糊匹配的值。  约束：最大长度为255个字符，为空返回空值。
 

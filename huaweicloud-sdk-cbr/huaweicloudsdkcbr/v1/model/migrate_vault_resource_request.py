@@ -27,7 +27,7 @@ class MigrateVaultResourceRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """MigrateVaultResourceRequest
+        r"""MigrateVaultResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MigrateVaultResourceRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this MigrateVaultResourceRequest.
+        r"""Gets the vault_id of this MigrateVaultResourceRequest.
 
         :return: The vault_id of this MigrateVaultResourceRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class MigrateVaultResourceRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this MigrateVaultResourceRequest.
+        r"""Sets the vault_id of this MigrateVaultResourceRequest.
 
         :param vault_id: The vault_id of this MigrateVaultResourceRequest.
         :type vault_id: str
@@ -67,7 +67,7 @@ class MigrateVaultResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateVaultResourceRequest.
+        r"""Gets the body of this MigrateVaultResourceRequest.
 
         :return: The body of this MigrateVaultResourceRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultMigrateResourceReq`
@@ -76,7 +76,7 @@ class MigrateVaultResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateVaultResourceRequest.
+        r"""Sets the body of this MigrateVaultResourceRequest.
 
         :param body: The body of this MigrateVaultResourceRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultMigrateResourceReq`

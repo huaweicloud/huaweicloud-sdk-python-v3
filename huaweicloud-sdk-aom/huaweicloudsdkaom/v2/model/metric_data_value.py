@@ -27,7 +27,7 @@ class MetricDataValue:
     }
 
     def __init__(self, data_points=None, metric=None):
-        """MetricDataValue
+        r"""MetricDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetricDataValue:
 
     @property
     def data_points(self):
-        """Gets the data_points of this MetricDataValue.
+        r"""Gets the data_points of this MetricDataValue.
 
         重点指标。
 
@@ -61,7 +61,7 @@ class MetricDataValue:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this MetricDataValue.
+        r"""Sets the data_points of this MetricDataValue.
 
         重点指标。
 
@@ -72,7 +72,7 @@ class MetricDataValue:
 
     @property
     def metric(self):
-        """Gets the metric of this MetricDataValue.
+        r"""Gets the metric of this MetricDataValue.
 
         :return: The metric of this MetricDataValue.
         :rtype: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
@@ -81,7 +81,7 @@ class MetricDataValue:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this MetricDataValue.
+        r"""Sets the metric of this MetricDataValue.
 
         :param metric: The metric of this MetricDataValue.
         :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`

@@ -25,7 +25,7 @@ class ShowBaremetalServerTagsRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowBaremetalServerTagsRequest
+        r"""ShowBaremetalServerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBaremetalServerTagsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowBaremetalServerTagsRequest.
+        r"""Gets the server_id of this ShowBaremetalServerTagsRequest.
 
         :return: The server_id of this ShowBaremetalServerTagsRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class ShowBaremetalServerTagsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowBaremetalServerTagsRequest.
+        r"""Sets the server_id of this ShowBaremetalServerTagsRequest.
 
         :param server_id: The server_id of this ShowBaremetalServerTagsRequest.
         :type server_id: str

@@ -33,7 +33,7 @@ class OutputResponse:
     }
 
     def __init__(self, name=None, output_static_asset_id=None, output_dynamic_asset_id=None, output_asset_model_id=None, output_property=None):
-        """OutputResponse
+        r"""OutputResponse
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class OutputResponse:
 
     @property
     def name(self):
-        """Gets the name of this OutputResponse.
+        r"""Gets the name of this OutputResponse.
 
         输出参数名称,formulas中定义的name
 
@@ -81,7 +81,7 @@ class OutputResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OutputResponse.
+        r"""Sets the name of this OutputResponse.
 
         输出参数名称,formulas中定义的name
 
@@ -92,7 +92,7 @@ class OutputResponse:
 
     @property
     def output_static_asset_id(self):
-        """Gets the output_static_asset_id of this OutputResponse.
+        r"""Gets the output_static_asset_id of this OutputResponse.
 
         输出资产ID，填写模型中定义的输出模型对应的某资产ID；创建资产时，如果是输出到本资产的模型，且output_static_asset_id和output_dynamic_asset_id都未配置，则后台自动配置output_static_asset_id为本资产ID；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -103,7 +103,7 @@ class OutputResponse:
 
     @output_static_asset_id.setter
     def output_static_asset_id(self, output_static_asset_id):
-        """Sets the output_static_asset_id of this OutputResponse.
+        r"""Sets the output_static_asset_id of this OutputResponse.
 
         输出资产ID，填写模型中定义的输出模型对应的某资产ID；创建资产时，如果是输出到本资产的模型，且output_static_asset_id和output_dynamic_asset_id都未配置，则后台自动配置output_static_asset_id为本资产ID；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -114,7 +114,7 @@ class OutputResponse:
 
     @property
     def output_dynamic_asset_id(self):
-        """Gets the output_dynamic_asset_id of this OutputResponse.
+        r"""Gets the output_dynamic_asset_id of this OutputResponse.
 
         输出资产ID，填写公式动态生成资产ID，可根据入参获取资产ID，如：GetAssetId(\"assetmodelName1\",\"staticPropertyName1\",paramA)；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -125,7 +125,7 @@ class OutputResponse:
 
     @output_dynamic_asset_id.setter
     def output_dynamic_asset_id(self, output_dynamic_asset_id):
-        """Sets the output_dynamic_asset_id of this OutputResponse.
+        r"""Sets the output_dynamic_asset_id of this OutputResponse.
 
         输出资产ID，填写公式动态生成资产ID，可根据入参获取资产ID，如：GetAssetId(\"assetmodelName1\",\"staticPropertyName1\",paramA)；修改资产时，如果output_static_asset_id为null则表示置空
 
@@ -136,7 +136,7 @@ class OutputResponse:
 
     @property
     def output_asset_model_id(self):
-        """Gets the output_asset_model_id of this OutputResponse.
+        r"""Gets the output_asset_model_id of this OutputResponse.
 
         输出模型ID，如果输出到本模型可以不携带
 
@@ -147,7 +147,7 @@ class OutputResponse:
 
     @output_asset_model_id.setter
     def output_asset_model_id(self, output_asset_model_id):
-        """Sets the output_asset_model_id of this OutputResponse.
+        r"""Sets the output_asset_model_id of this OutputResponse.
 
         输出模型ID，如果输出到本模型可以不携带
 
@@ -158,7 +158,7 @@ class OutputResponse:
 
     @property
     def output_property(self):
-        """Gets the output_property of this OutputResponse.
+        r"""Gets the output_property of this OutputResponse.
 
         输出属性名
 
@@ -169,7 +169,7 @@ class OutputResponse:
 
     @output_property.setter
     def output_property(self, output_property):
-        """Sets the output_property of this OutputResponse.
+        r"""Sets the output_property of this OutputResponse.
 
         输出属性名
 

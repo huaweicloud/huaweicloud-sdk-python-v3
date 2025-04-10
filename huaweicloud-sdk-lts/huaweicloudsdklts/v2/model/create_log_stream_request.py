@@ -27,7 +27,7 @@ class CreateLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None, body=None):
-        """CreateLogStreamRequest
+        r"""CreateLogStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLogStreamRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateLogStreamRequest.
+        r"""Gets the log_group_id of this CreateLogStreamRequest.
 
         租户想创建的日志流所在的日志组的groupid，一般为36位字符串。
 
@@ -60,7 +60,7 @@ class CreateLogStreamRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateLogStreamRequest.
+        r"""Sets the log_group_id of this CreateLogStreamRequest.
 
         租户想创建的日志流所在的日志组的groupid，一般为36位字符串。
 
@@ -71,7 +71,7 @@ class CreateLogStreamRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogStreamRequest.
+        r"""Gets the body of this CreateLogStreamRequest.
 
         :return: The body of this CreateLogStreamRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`
@@ -80,7 +80,7 @@ class CreateLogStreamRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogStreamRequest.
+        r"""Sets the body of this CreateLogStreamRequest.
 
         :param body: The body of this CreateLogStreamRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`

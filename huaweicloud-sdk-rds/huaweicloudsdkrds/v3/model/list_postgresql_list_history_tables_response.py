@@ -28,7 +28,7 @@ class ListPostgresqlListHistoryTablesResponse(SdkResponse):
     }
 
     def __init__(self, table_limit=None, instances=None):
-        """ListPostgresqlListHistoryTablesResponse
+        r"""ListPostgresqlListHistoryTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPostgresqlListHistoryTablesResponse(SdkResponse):
 
     @property
     def table_limit(self):
-        """Gets the table_limit of this ListPostgresqlListHistoryTablesResponse.
+        r"""Gets the table_limit of this ListPostgresqlListHistoryTablesResponse.
 
         恢复表数量限制个数
 
@@ -62,7 +62,7 @@ class ListPostgresqlListHistoryTablesResponse(SdkResponse):
 
     @table_limit.setter
     def table_limit(self, table_limit):
-        """Sets the table_limit of this ListPostgresqlListHistoryTablesResponse.
+        r"""Sets the table_limit of this ListPostgresqlListHistoryTablesResponse.
 
         恢复表数量限制个数
 
@@ -73,7 +73,7 @@ class ListPostgresqlListHistoryTablesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListPostgresqlListHistoryTablesResponse.
+        r"""Gets the instances of this ListPostgresqlListHistoryTablesResponse.
 
         实例信息
 
@@ -84,7 +84,7 @@ class ListPostgresqlListHistoryTablesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListPostgresqlListHistoryTablesResponse.
+        r"""Sets the instances of this ListPostgresqlListHistoryTablesResponse.
 
         实例信息
 

@@ -29,7 +29,7 @@ class WorkloadQueueInfo:
     }
 
     def __init__(self, workload_queue_name=None, logical_cluster_name=None, resource_item_list=None):
-        """WorkloadQueueInfo
+        r"""WorkloadQueueInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class WorkloadQueueInfo:
 
     @property
     def workload_queue_name(self):
-        """Gets the workload_queue_name of this WorkloadQueueInfo.
+        r"""Gets the workload_queue_name of this WorkloadQueueInfo.
 
         资源池名称。
 
@@ -66,7 +66,7 @@ class WorkloadQueueInfo:
 
     @workload_queue_name.setter
     def workload_queue_name(self, workload_queue_name):
-        """Sets the workload_queue_name of this WorkloadQueueInfo.
+        r"""Sets the workload_queue_name of this WorkloadQueueInfo.
 
         资源池名称。
 
@@ -77,7 +77,7 @@ class WorkloadQueueInfo:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this WorkloadQueueInfo.
+        r"""Gets the logical_cluster_name of this WorkloadQueueInfo.
 
         逻辑集群名称。
 
@@ -88,7 +88,7 @@ class WorkloadQueueInfo:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this WorkloadQueueInfo.
+        r"""Sets the logical_cluster_name of this WorkloadQueueInfo.
 
         逻辑集群名称。
 
@@ -99,7 +99,7 @@ class WorkloadQueueInfo:
 
     @property
     def resource_item_list(self):
-        """Gets the resource_item_list of this WorkloadQueueInfo.
+        r"""Gets the resource_item_list of this WorkloadQueueInfo.
 
         资源配置队列。
 
@@ -110,7 +110,7 @@ class WorkloadQueueInfo:
 
     @resource_item_list.setter
     def resource_item_list(self, resource_item_list):
-        """Sets the resource_item_list of this WorkloadQueueInfo.
+        r"""Sets the resource_item_list of this WorkloadQueueInfo.
 
         资源配置队列。
 

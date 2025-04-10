@@ -29,7 +29,7 @@ class Rule:
     }
 
     def __init__(self, template=None, params=None, tag_selectors=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Rule:
 
     @property
     def template(self):
-        """Gets the template of this Rule.
+        r"""Gets the template of this Rule.
 
         回收类型，date_rule、tag_rule
 
@@ -65,7 +65,7 @@ class Rule:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this Rule.
+        r"""Sets the template of this Rule.
 
         回收类型，date_rule、tag_rule
 
@@ -76,7 +76,7 @@ class Rule:
 
     @property
     def params(self):
-        """Gets the params of this Rule.
+        r"""Gets the params of this Rule.
 
         template是date_rule时，设置params为{\"days\": \"xxx\"} template是tag_rule时，设置params为{\"num\": \"xxx\"} 
 
@@ -87,7 +87,7 @@ class Rule:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this Rule.
+        r"""Sets the params of this Rule.
 
         template是date_rule时，设置params为{\"days\": \"xxx\"} template是tag_rule时，设置params为{\"num\": \"xxx\"} 
 
@@ -98,7 +98,7 @@ class Rule:
 
     @property
     def tag_selectors(self):
-        """Gets the tag_selectors of this Rule.
+        r"""Gets the tag_selectors of this Rule.
 
         例外镜像
 
@@ -109,7 +109,7 @@ class Rule:
 
     @tag_selectors.setter
     def tag_selectors(self, tag_selectors):
-        """Sets the tag_selectors of this Rule.
+        r"""Sets the tag_selectors of this Rule.
 
         例外镜像
 

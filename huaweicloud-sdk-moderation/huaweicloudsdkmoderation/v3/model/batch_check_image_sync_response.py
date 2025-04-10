@@ -28,7 +28,7 @@ class BatchCheckImageSyncResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, results=None):
-        """BatchCheckImageSyncResponse
+        r"""BatchCheckImageSyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCheckImageSyncResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCheckImageSyncResponse.
+        r"""Gets the request_id of this BatchCheckImageSyncResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -62,7 +62,7 @@ class BatchCheckImageSyncResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCheckImageSyncResponse.
+        r"""Sets the request_id of this BatchCheckImageSyncResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -73,7 +73,7 @@ class BatchCheckImageSyncResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchCheckImageSyncResponse.
+        r"""Gets the results of this BatchCheckImageSyncResponse.
 
         调用结果。
 
@@ -84,7 +84,7 @@ class BatchCheckImageSyncResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchCheckImageSyncResponse.
+        r"""Sets the results of this BatchCheckImageSyncResponse.
 
         调用结果。
 

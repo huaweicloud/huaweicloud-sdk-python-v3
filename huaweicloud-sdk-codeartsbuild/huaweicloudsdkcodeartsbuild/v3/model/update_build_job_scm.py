@@ -43,7 +43,7 @@ class UpdateBuildJobScm:
     }
 
     def __init__(self, branch=None, url=None, repo_id=None, web_url=None, scm_type=None, is_auto_build=None, build_type=None, depth=None, end_point_id=None, source=None):
-        """UpdateBuildJobScm
+        r"""UpdateBuildJobScm
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class UpdateBuildJobScm:
 
     @property
     def branch(self):
-        """Gets the branch of this UpdateBuildJobScm.
+        r"""Gets the branch of this UpdateBuildJobScm.
 
         代码分支
 
@@ -115,7 +115,7 @@ class UpdateBuildJobScm:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this UpdateBuildJobScm.
+        r"""Sets the branch of this UpdateBuildJobScm.
 
         代码分支
 
@@ -126,7 +126,7 @@ class UpdateBuildJobScm:
 
     @property
     def url(self):
-        """Gets the url of this UpdateBuildJobScm.
+        r"""Gets the url of this UpdateBuildJobScm.
 
         代码仓地址
 
@@ -137,7 +137,7 @@ class UpdateBuildJobScm:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateBuildJobScm.
+        r"""Sets the url of this UpdateBuildJobScm.
 
         代码仓地址
 
@@ -148,7 +148,7 @@ class UpdateBuildJobScm:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this UpdateBuildJobScm.
+        r"""Gets the repo_id of this UpdateBuildJobScm.
 
         repo的id
 
@@ -159,7 +159,7 @@ class UpdateBuildJobScm:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this UpdateBuildJobScm.
+        r"""Sets the repo_id of this UpdateBuildJobScm.
 
         repo的id
 
@@ -170,7 +170,7 @@ class UpdateBuildJobScm:
 
     @property
     def web_url(self):
-        """Gets the web_url of this UpdateBuildJobScm.
+        r"""Gets the web_url of this UpdateBuildJobScm.
 
         代码仓http地址
 
@@ -181,7 +181,7 @@ class UpdateBuildJobScm:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this UpdateBuildJobScm.
+        r"""Sets the web_url of this UpdateBuildJobScm.
 
         代码仓http地址
 
@@ -192,7 +192,7 @@ class UpdateBuildJobScm:
 
     @property
     def scm_type(self):
-        """Gets the scm_type of this UpdateBuildJobScm.
+        r"""Gets the scm_type of this UpdateBuildJobScm.
 
         仓库类别，Repo、Github等
 
@@ -203,7 +203,7 @@ class UpdateBuildJobScm:
 
     @scm_type.setter
     def scm_type(self, scm_type):
-        """Sets the scm_type of this UpdateBuildJobScm.
+        r"""Sets the scm_type of this UpdateBuildJobScm.
 
         仓库类别，Repo、Github等
 
@@ -214,7 +214,7 @@ class UpdateBuildJobScm:
 
     @property
     def is_auto_build(self):
-        """Gets the is_auto_build of this UpdateBuildJobScm.
+        r"""Gets the is_auto_build of this UpdateBuildJobScm.
 
         是否自动构建
 
@@ -225,7 +225,7 @@ class UpdateBuildJobScm:
 
     @is_auto_build.setter
     def is_auto_build(self, is_auto_build):
-        """Sets the is_auto_build of this UpdateBuildJobScm.
+        r"""Sets the is_auto_build of this UpdateBuildJobScm.
 
         是否自动构建
 
@@ -236,7 +236,7 @@ class UpdateBuildJobScm:
 
     @property
     def build_type(self):
-        """Gets the build_type of this UpdateBuildJobScm.
+        r"""Gets the build_type of this UpdateBuildJobScm.
 
         构建类别
 
@@ -247,7 +247,7 @@ class UpdateBuildJobScm:
 
     @build_type.setter
     def build_type(self, build_type):
-        """Sets the build_type of this UpdateBuildJobScm.
+        r"""Sets the build_type of this UpdateBuildJobScm.
 
         构建类别
 
@@ -258,7 +258,7 @@ class UpdateBuildJobScm:
 
     @property
     def depth(self):
-        """Gets the depth of this UpdateBuildJobScm.
+        r"""Gets the depth of this UpdateBuildJobScm.
 
         克隆深度
 
@@ -269,7 +269,7 @@ class UpdateBuildJobScm:
 
     @depth.setter
     def depth(self, depth):
-        """Sets the depth of this UpdateBuildJobScm.
+        r"""Sets the depth of this UpdateBuildJobScm.
 
         克隆深度
 
@@ -280,7 +280,7 @@ class UpdateBuildJobScm:
 
     @property
     def end_point_id(self):
-        """Gets the end_point_id of this UpdateBuildJobScm.
+        r"""Gets the end_point_id of this UpdateBuildJobScm.
 
         endpointId
 
@@ -291,7 +291,7 @@ class UpdateBuildJobScm:
 
     @end_point_id.setter
     def end_point_id(self, end_point_id):
-        """Sets the end_point_id of this UpdateBuildJobScm.
+        r"""Sets the end_point_id of this UpdateBuildJobScm.
 
         endpointId
 
@@ -302,7 +302,7 @@ class UpdateBuildJobScm:
 
     @property
     def source(self):
-        """Gets the source of this UpdateBuildJobScm.
+        r"""Gets the source of this UpdateBuildJobScm.
 
         source
 
@@ -313,7 +313,7 @@ class UpdateBuildJobScm:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateBuildJobScm.
+        r"""Sets the source of this UpdateBuildJobScm.
 
         source
 

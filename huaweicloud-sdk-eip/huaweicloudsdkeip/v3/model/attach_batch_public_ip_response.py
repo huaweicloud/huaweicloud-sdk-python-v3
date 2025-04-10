@@ -28,7 +28,7 @@ class AttachBatchPublicIpResponse(SdkResponse):
     }
 
     def __init__(self, publicips=None, request_id=None):
-        """AttachBatchPublicIpResponse
+        r"""AttachBatchPublicIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AttachBatchPublicIpResponse(SdkResponse):
 
     @property
     def publicips(self):
-        """Gets the publicips of this AttachBatchPublicIpResponse.
+        r"""Gets the publicips of this AttachBatchPublicIpResponse.
 
         弹性公网IP对象
 
@@ -62,7 +62,7 @@ class AttachBatchPublicIpResponse(SdkResponse):
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this AttachBatchPublicIpResponse.
+        r"""Sets the publicips of this AttachBatchPublicIpResponse.
 
         弹性公网IP对象
 
@@ -73,7 +73,7 @@ class AttachBatchPublicIpResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AttachBatchPublicIpResponse.
+        r"""Gets the request_id of this AttachBatchPublicIpResponse.
 
         本次请求编号
 
@@ -84,7 +84,7 @@ class AttachBatchPublicIpResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AttachBatchPublicIpResponse.
+        r"""Sets the request_id of this AttachBatchPublicIpResponse.
 
         本次请求编号
 

@@ -35,7 +35,7 @@ class TaskRuntimeDto:
     }
 
     def __init__(self, task_name=None, create_time=None, finish_time=None, actual_running_time=None, status=None, sub_tasks=None):
-        """TaskRuntimeDto
+        r"""TaskRuntimeDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TaskRuntimeDto:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskRuntimeDto.
+        r"""Gets the task_name of this TaskRuntimeDto.
 
         作业子任务名称
 
@@ -89,7 +89,7 @@ class TaskRuntimeDto:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskRuntimeDto.
+        r"""Sets the task_name of this TaskRuntimeDto.
 
         作业子任务名称
 
@@ -100,7 +100,7 @@ class TaskRuntimeDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskRuntimeDto.
+        r"""Gets the create_time of this TaskRuntimeDto.
 
         作业子任务运行创建时间
 
@@ -111,7 +111,7 @@ class TaskRuntimeDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskRuntimeDto.
+        r"""Sets the create_time of this TaskRuntimeDto.
 
         作业子任务运行创建时间
 
@@ -122,7 +122,7 @@ class TaskRuntimeDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this TaskRuntimeDto.
+        r"""Gets the finish_time of this TaskRuntimeDto.
 
         作业子任务运行结束时间
 
@@ -133,7 +133,7 @@ class TaskRuntimeDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this TaskRuntimeDto.
+        r"""Sets the finish_time of this TaskRuntimeDto.
 
         作业子任务运行结束时间
 
@@ -144,7 +144,7 @@ class TaskRuntimeDto:
 
     @property
     def actual_running_time(self):
-        """Gets the actual_running_time of this TaskRuntimeDto.
+        r"""Gets the actual_running_time of this TaskRuntimeDto.
 
         作业子任务实际运行时间
 
@@ -155,7 +155,7 @@ class TaskRuntimeDto:
 
     @actual_running_time.setter
     def actual_running_time(self, actual_running_time):
-        """Sets the actual_running_time of this TaskRuntimeDto.
+        r"""Sets the actual_running_time of this TaskRuntimeDto.
 
         作业子任务实际运行时间
 
@@ -166,7 +166,7 @@ class TaskRuntimeDto:
 
     @property
     def status(self):
-        """Gets the status of this TaskRuntimeDto.
+        r"""Gets the status of this TaskRuntimeDto.
 
         作业子任务运行状态
 
@@ -177,7 +177,7 @@ class TaskRuntimeDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskRuntimeDto.
+        r"""Sets the status of this TaskRuntimeDto.
 
         作业子任务运行状态
 
@@ -188,7 +188,7 @@ class TaskRuntimeDto:
 
     @property
     def sub_tasks(self):
-        """Gets the sub_tasks of this TaskRuntimeDto.
+        r"""Gets the sub_tasks of this TaskRuntimeDto.
 
         作业子任务的并发实例列表
 
@@ -199,7 +199,7 @@ class TaskRuntimeDto:
 
     @sub_tasks.setter
     def sub_tasks(self, sub_tasks):
-        """Sets the sub_tasks of this TaskRuntimeDto.
+        r"""Sets the sub_tasks of this TaskRuntimeDto.
 
         作业子任务的并发实例列表
 

@@ -26,7 +26,7 @@ class ShowAggregationLogicTableByIdResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowAggregationLogicTableByIdResponse
+        r"""ShowAggregationLogicTableByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAggregationLogicTableByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowAggregationLogicTableByIdResponse.
+        r"""Gets the data of this ShowAggregationLogicTableByIdResponse.
 
         :return: The data of this ShowAggregationLogicTableByIdResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVODetailData`
@@ -53,7 +53,7 @@ class ShowAggregationLogicTableByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowAggregationLogicTableByIdResponse.
+        r"""Sets the data of this ShowAggregationLogicTableByIdResponse.
 
         :param data: The data of this ShowAggregationLogicTableByIdResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVODetailData`

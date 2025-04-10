@@ -29,7 +29,7 @@ class UpdateInstanceParamRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateInstanceParamRequest
+        r"""UpdateInstanceParamRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateInstanceParamRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceParamRequest.
+        r"""Gets the instance_id of this UpdateInstanceParamRequest.
 
         DDM实例ID
 
@@ -67,7 +67,7 @@ class UpdateInstanceParamRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceParamRequest.
+        r"""Sets the instance_id of this UpdateInstanceParamRequest.
 
         DDM实例ID
 
@@ -78,7 +78,7 @@ class UpdateInstanceParamRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateInstanceParamRequest.
+        r"""Gets the x_language of this UpdateInstanceParamRequest.
 
         语种，默认中文。中文:zh-cn;英文:en-us
 
@@ -89,7 +89,7 @@ class UpdateInstanceParamRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateInstanceParamRequest.
+        r"""Sets the x_language of this UpdateInstanceParamRequest.
 
         语种，默认中文。中文:zh-cn;英文:en-us
 
@@ -100,7 +100,7 @@ class UpdateInstanceParamRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceParamRequest.
+        r"""Gets the body of this UpdateInstanceParamRequest.
 
         :return: The body of this UpdateInstanceParamRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateParametersReq`
@@ -109,7 +109,7 @@ class UpdateInstanceParamRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceParamRequest.
+        r"""Sets the body of this UpdateInstanceParamRequest.
 
         :param body: The body of this UpdateInstanceParamRequest.
         :type body: :class:`huaweicloudsdkddm.v1.UpdateParametersReq`

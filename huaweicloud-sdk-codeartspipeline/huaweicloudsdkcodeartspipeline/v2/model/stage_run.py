@@ -55,7 +55,7 @@ class StageRun:
     }
 
     def __init__(self, id=None, category=None, name=None, identifier=None, run_always=None, parallel=None, is_select=None, sequence=None, depends_on=None, condition=None, status=None, start_time=None, end_time=None, pre=None, post=None, jobs=None):
-        """StageRun
+        r"""StageRun
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class StageRun:
 
     @property
     def id(self):
-        """Gets the id of this StageRun.
+        r"""Gets the id of this StageRun.
 
         阶段ID
 
@@ -159,7 +159,7 @@ class StageRun:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StageRun.
+        r"""Sets the id of this StageRun.
 
         阶段ID
 
@@ -170,7 +170,7 @@ class StageRun:
 
     @property
     def category(self):
-        """Gets the category of this StageRun.
+        r"""Gets the category of this StageRun.
 
         阶段类型
 
@@ -181,7 +181,7 @@ class StageRun:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this StageRun.
+        r"""Sets the category of this StageRun.
 
         阶段类型
 
@@ -192,7 +192,7 @@ class StageRun:
 
     @property
     def name(self):
-        """Gets the name of this StageRun.
+        r"""Gets the name of this StageRun.
 
         阶段名称
 
@@ -203,7 +203,7 @@ class StageRun:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StageRun.
+        r"""Sets the name of this StageRun.
 
         阶段名称
 
@@ -214,7 +214,7 @@ class StageRun:
 
     @property
     def identifier(self):
-        """Gets the identifier of this StageRun.
+        r"""Gets the identifier of this StageRun.
 
         唯一标识
 
@@ -225,7 +225,7 @@ class StageRun:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this StageRun.
+        r"""Sets the identifier of this StageRun.
 
         唯一标识
 
@@ -236,7 +236,7 @@ class StageRun:
 
     @property
     def run_always(self):
-        """Gets the run_always of this StageRun.
+        r"""Gets the run_always of this StageRun.
 
         是否总是运行
 
@@ -247,7 +247,7 @@ class StageRun:
 
     @run_always.setter
     def run_always(self, run_always):
-        """Sets the run_always of this StageRun.
+        r"""Sets the run_always of this StageRun.
 
         是否总是运行
 
@@ -258,7 +258,7 @@ class StageRun:
 
     @property
     def parallel(self):
-        """Gets the parallel of this StageRun.
+        r"""Gets the parallel of this StageRun.
 
         是否并行
 
@@ -269,7 +269,7 @@ class StageRun:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this StageRun.
+        r"""Sets the parallel of this StageRun.
 
         是否并行
 
@@ -280,7 +280,7 @@ class StageRun:
 
     @property
     def is_select(self):
-        """Gets the is_select of this StageRun.
+        r"""Gets the is_select of this StageRun.
 
         是否选中
 
@@ -291,7 +291,7 @@ class StageRun:
 
     @is_select.setter
     def is_select(self, is_select):
-        """Sets the is_select of this StageRun.
+        r"""Sets the is_select of this StageRun.
 
         是否选中
 
@@ -302,7 +302,7 @@ class StageRun:
 
     @property
     def sequence(self):
-        """Gets the sequence of this StageRun.
+        r"""Gets the sequence of this StageRun.
 
         序列号
 
@@ -313,7 +313,7 @@ class StageRun:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this StageRun.
+        r"""Sets the sequence of this StageRun.
 
         序列号
 
@@ -324,7 +324,7 @@ class StageRun:
 
     @property
     def depends_on(self):
-        """Gets the depends_on of this StageRun.
+        r"""Gets the depends_on of this StageRun.
 
         依赖
 
@@ -335,7 +335,7 @@ class StageRun:
 
     @depends_on.setter
     def depends_on(self, depends_on):
-        """Sets the depends_on of this StageRun.
+        r"""Sets the depends_on of this StageRun.
 
         依赖
 
@@ -346,7 +346,7 @@ class StageRun:
 
     @property
     def condition(self):
-        """Gets the condition of this StageRun.
+        r"""Gets the condition of this StageRun.
 
         运行条件
 
@@ -357,7 +357,7 @@ class StageRun:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this StageRun.
+        r"""Sets the condition of this StageRun.
 
         运行条件
 
@@ -368,7 +368,7 @@ class StageRun:
 
     @property
     def status(self):
-        """Gets the status of this StageRun.
+        r"""Gets the status of this StageRun.
 
         状态
 
@@ -379,7 +379,7 @@ class StageRun:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StageRun.
+        r"""Sets the status of this StageRun.
 
         状态
 
@@ -390,7 +390,7 @@ class StageRun:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StageRun.
+        r"""Gets the start_time of this StageRun.
 
         开始时间
 
@@ -401,7 +401,7 @@ class StageRun:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StageRun.
+        r"""Sets the start_time of this StageRun.
 
         开始时间
 
@@ -412,7 +412,7 @@ class StageRun:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StageRun.
+        r"""Gets the end_time of this StageRun.
 
         结束时间
 
@@ -423,7 +423,7 @@ class StageRun:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StageRun.
+        r"""Sets the end_time of this StageRun.
 
         结束时间
 
@@ -434,7 +434,7 @@ class StageRun:
 
     @property
     def pre(self):
-        """Gets the pre of this StageRun.
+        r"""Gets the pre of this StageRun.
 
         阶段准入
 
@@ -445,7 +445,7 @@ class StageRun:
 
     @pre.setter
     def pre(self, pre):
-        """Sets the pre of this StageRun.
+        r"""Sets the pre of this StageRun.
 
         阶段准入
 
@@ -456,7 +456,7 @@ class StageRun:
 
     @property
     def post(self):
-        """Gets the post of this StageRun.
+        r"""Gets the post of this StageRun.
 
         阶段准出
 
@@ -467,7 +467,7 @@ class StageRun:
 
     @post.setter
     def post(self, post):
-        """Sets the post of this StageRun.
+        r"""Sets the post of this StageRun.
 
         阶段准出
 
@@ -478,7 +478,7 @@ class StageRun:
 
     @property
     def jobs(self):
-        """Gets the jobs of this StageRun.
+        r"""Gets the jobs of this StageRun.
 
         任务
 
@@ -489,7 +489,7 @@ class StageRun:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this StageRun.
+        r"""Sets the jobs of this StageRun.
 
         任务
 

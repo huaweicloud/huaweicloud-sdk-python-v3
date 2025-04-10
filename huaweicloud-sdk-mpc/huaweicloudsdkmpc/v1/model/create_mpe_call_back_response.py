@@ -24,7 +24,7 @@ class CreateMpeCallBackResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateMpeCallBackResponse
+        r"""CreateMpeCallBackResponse
 
         The model defined in huaweicloud sdk
 

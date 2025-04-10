@@ -25,7 +25,7 @@ class PoolHealth:
     }
 
     def __init__(self, minimum_healthy_member_count=None):
-        """PoolHealth
+        r"""PoolHealth
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoolHealth:
 
     @property
     def minimum_healthy_member_count(self):
-        """Gets the minimum_healthy_member_count of this PoolHealth.
+        r"""Gets the minimum_healthy_member_count of this PoolHealth.
 
         参数解释：当健康检查在线的member个数小于该个数，判定pool的state为不健康。  取值范围： - 0：默认值，不生效。 - 1：全下线转发生效。
 
@@ -54,7 +54,7 @@ class PoolHealth:
 
     @minimum_healthy_member_count.setter
     def minimum_healthy_member_count(self, minimum_healthy_member_count):
-        """Sets the minimum_healthy_member_count of this PoolHealth.
+        r"""Sets the minimum_healthy_member_count of this PoolHealth.
 
         参数解释：当健康检查在线的member个数小于该个数，判定pool的state为不健康。  取值范围： - 0：默认值，不生效。 - 1：全下线转发生效。
 

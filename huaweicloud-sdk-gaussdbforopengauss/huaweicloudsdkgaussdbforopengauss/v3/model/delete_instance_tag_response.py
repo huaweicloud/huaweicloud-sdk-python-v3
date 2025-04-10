@@ -30,7 +30,7 @@ class DeleteInstanceTagResponse(SdkResponse):
     }
 
     def __init__(self, result=None, instance_id=None, instance_name=None):
-        """DeleteInstanceTagResponse
+        r"""DeleteInstanceTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteInstanceTagResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteInstanceTagResponse.
+        r"""Gets the result of this DeleteInstanceTagResponse.
 
         处理结果
 
@@ -69,7 +69,7 @@ class DeleteInstanceTagResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteInstanceTagResponse.
+        r"""Sets the result of this DeleteInstanceTagResponse.
 
         处理结果
 
@@ -80,7 +80,7 @@ class DeleteInstanceTagResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteInstanceTagResponse.
+        r"""Gets the instance_id of this DeleteInstanceTagResponse.
 
         实例ID
 
@@ -91,7 +91,7 @@ class DeleteInstanceTagResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteInstanceTagResponse.
+        r"""Sets the instance_id of this DeleteInstanceTagResponse.
 
         实例ID
 
@@ -102,7 +102,7 @@ class DeleteInstanceTagResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this DeleteInstanceTagResponse.
+        r"""Gets the instance_name of this DeleteInstanceTagResponse.
 
         实例名称
 
@@ -113,7 +113,7 @@ class DeleteInstanceTagResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this DeleteInstanceTagResponse.
+        r"""Sets the instance_name of this DeleteInstanceTagResponse.
 
         实例名称
 

@@ -27,7 +27,7 @@ class LogicEntityNodes:
     }
 
     def __init__(self, logic_entity_guid=None, logic_entity_name=None):
-        """LogicEntityNodes
+        r"""LogicEntityNodes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LogicEntityNodes:
 
     @property
     def logic_entity_guid(self):
-        """Gets the logic_entity_guid of this LogicEntityNodes.
+        r"""Gets the logic_entity_guid of this LogicEntityNodes.
 
         业务资产guid
 
@@ -61,7 +61,7 @@ class LogicEntityNodes:
 
     @logic_entity_guid.setter
     def logic_entity_guid(self, logic_entity_guid):
-        """Sets the logic_entity_guid of this LogicEntityNodes.
+        r"""Sets the logic_entity_guid of this LogicEntityNodes.
 
         业务资产guid
 
@@ -72,7 +72,7 @@ class LogicEntityNodes:
 
     @property
     def logic_entity_name(self):
-        """Gets the logic_entity_name of this LogicEntityNodes.
+        r"""Gets the logic_entity_name of this LogicEntityNodes.
 
         业务资产名称
 
@@ -83,7 +83,7 @@ class LogicEntityNodes:
 
     @logic_entity_name.setter
     def logic_entity_name(self, logic_entity_name):
-        """Sets the logic_entity_name of this LogicEntityNodes.
+        r"""Sets the logic_entity_name of this LogicEntityNodes.
 
         业务资产名称
 

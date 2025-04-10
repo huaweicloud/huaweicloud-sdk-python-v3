@@ -82,7 +82,7 @@ class ShowServerResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ip=None, name=None, hostname=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, firmware=None, init_target_server=None, cpu_quantity=None, memory=None, current_task=None, disks=None, volume_groups=None, btrfs_list=None, networks=None, checks=None, migration_cycle=None, state_action_time=None, replicatesize=None, totalsize=None, last_visit_time=None, stage_action_time=None, agent_version=None, has_tc=None):
-        """ShowServerResponse
+        r"""ShowServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -240,7 +240,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowServerResponse.
+        r"""Gets the id of this ShowServerResponse.
 
         源端服务器ID
 
@@ -251,7 +251,7 @@ class ShowServerResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowServerResponse.
+        r"""Sets the id of this ShowServerResponse.
 
         源端服务器ID
 
@@ -262,7 +262,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ShowServerResponse.
+        r"""Gets the ip of this ShowServerResponse.
 
         源端服务器的IP
 
@@ -273,7 +273,7 @@ class ShowServerResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowServerResponse.
+        r"""Sets the ip of this ShowServerResponse.
 
         源端服务器的IP
 
@@ -284,7 +284,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowServerResponse.
+        r"""Gets the name of this ShowServerResponse.
 
         用来区分不同源端服务器的名称
 
@@ -295,7 +295,7 @@ class ShowServerResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowServerResponse.
+        r"""Sets the name of this ShowServerResponse.
 
         用来区分不同源端服务器的名称
 
@@ -306,7 +306,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this ShowServerResponse.
+        r"""Gets the hostname of this ShowServerResponse.
 
         源端主机名，注册源端必选，更新非必选
 
@@ -317,7 +317,7 @@ class ShowServerResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this ShowServerResponse.
+        r"""Sets the hostname of this ShowServerResponse.
 
         源端主机名，注册源端必选，更新非必选
 
@@ -328,7 +328,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowServerResponse.
+        r"""Gets the enterprise_project_id of this ShowServerResponse.
 
         企业项目ID
 
@@ -339,7 +339,7 @@ class ShowServerResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowServerResponse.
+        r"""Sets the enterprise_project_id of this ShowServerResponse.
 
         企业项目ID
 
@@ -350,7 +350,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def add_date(self):
-        """Gets the add_date of this ShowServerResponse.
+        r"""Gets the add_date of this ShowServerResponse.
 
         源端服务器注册的时间
 
@@ -361,7 +361,7 @@ class ShowServerResponse(SdkResponse):
 
     @add_date.setter
     def add_date(self, add_date):
-        """Sets the add_date of this ShowServerResponse.
+        r"""Sets the add_date of this ShowServerResponse.
 
         源端服务器注册的时间
 
@@ -372,7 +372,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowServerResponse.
+        r"""Gets the os_type of this ShowServerResponse.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -383,7 +383,7 @@ class ShowServerResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowServerResponse.
+        r"""Sets the os_type of this ShowServerResponse.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -394,7 +394,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this ShowServerResponse.
+        r"""Gets the os_version of this ShowServerResponse.
 
         操作系统版本，注册必选，更新非必选
 
@@ -405,7 +405,7 @@ class ShowServerResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ShowServerResponse.
+        r"""Sets the os_version of this ShowServerResponse.
 
         操作系统版本，注册必选，更新非必选
 
@@ -416,7 +416,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def oem_system(self):
-        """Gets the oem_system of this ShowServerResponse.
+        r"""Gets the oem_system of this ShowServerResponse.
 
         是否是OEM操作系统(Windows)
 
@@ -427,7 +427,7 @@ class ShowServerResponse(SdkResponse):
 
     @oem_system.setter
     def oem_system(self, oem_system):
-        """Sets the oem_system of this ShowServerResponse.
+        r"""Sets the oem_system of this ShowServerResponse.
 
         是否是OEM操作系统(Windows)
 
@@ -438,7 +438,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowServerResponse.
+        r"""Gets the state of this ShowServerResponse.
 
         当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -449,7 +449,7 @@ class ShowServerResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowServerResponse.
+        r"""Sets the state of this ShowServerResponse.
 
         当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -460,7 +460,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def connected(self):
-        """Gets the connected of this ShowServerResponse.
+        r"""Gets the connected of this ShowServerResponse.
 
         与Agent连接状态
 
@@ -471,7 +471,7 @@ class ShowServerResponse(SdkResponse):
 
     @connected.setter
     def connected(self, connected):
-        """Sets the connected of this ShowServerResponse.
+        r"""Sets the connected of this ShowServerResponse.
 
         与Agent连接状态
 
@@ -482,7 +482,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def firmware(self):
-        """Gets the firmware of this ShowServerResponse.
+        r"""Gets the firmware of this ShowServerResponse.
 
         源端服务器启动类型，如BIOS或者UEFI
 
@@ -493,7 +493,7 @@ class ShowServerResponse(SdkResponse):
 
     @firmware.setter
     def firmware(self, firmware):
-        """Sets the firmware of this ShowServerResponse.
+        r"""Sets the firmware of this ShowServerResponse.
 
         源端服务器启动类型，如BIOS或者UEFI
 
@@ -504,7 +504,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def init_target_server(self):
-        """Gets the init_target_server of this ShowServerResponse.
+        r"""Gets the init_target_server of this ShowServerResponse.
 
         :return: The init_target_server of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdksms.v3.InitTargetServer`
@@ -513,7 +513,7 @@ class ShowServerResponse(SdkResponse):
 
     @init_target_server.setter
     def init_target_server(self, init_target_server):
-        """Sets the init_target_server of this ShowServerResponse.
+        r"""Sets the init_target_server of this ShowServerResponse.
 
         :param init_target_server: The init_target_server of this ShowServerResponse.
         :type init_target_server: :class:`huaweicloudsdksms.v3.InitTargetServer`
@@ -522,7 +522,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def cpu_quantity(self):
-        """Gets the cpu_quantity of this ShowServerResponse.
+        r"""Gets the cpu_quantity of this ShowServerResponse.
 
         源端CPU核心数
 
@@ -533,7 +533,7 @@ class ShowServerResponse(SdkResponse):
 
     @cpu_quantity.setter
     def cpu_quantity(self, cpu_quantity):
-        """Sets the cpu_quantity of this ShowServerResponse.
+        r"""Sets the cpu_quantity of this ShowServerResponse.
 
         源端CPU核心数
 
@@ -544,7 +544,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def memory(self):
-        """Gets the memory of this ShowServerResponse.
+        r"""Gets the memory of this ShowServerResponse.
 
         源端服务器物理内存大小，单位MB
 
@@ -555,7 +555,7 @@ class ShowServerResponse(SdkResponse):
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ShowServerResponse.
+        r"""Sets the memory of this ShowServerResponse.
 
         源端服务器物理内存大小，单位MB
 
@@ -566,7 +566,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def current_task(self):
-        """Gets the current_task of this ShowServerResponse.
+        r"""Gets the current_task of this ShowServerResponse.
 
         :return: The current_task of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdksms.v3.TaskByServerSource`
@@ -575,7 +575,7 @@ class ShowServerResponse(SdkResponse):
 
     @current_task.setter
     def current_task(self, current_task):
-        """Sets the current_task of this ShowServerResponse.
+        r"""Sets the current_task of this ShowServerResponse.
 
         :param current_task: The current_task of this ShowServerResponse.
         :type current_task: :class:`huaweicloudsdksms.v3.TaskByServerSource`
@@ -584,7 +584,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def disks(self):
-        """Gets the disks of this ShowServerResponse.
+        r"""Gets the disks of this ShowServerResponse.
 
         源端服务器磁盘信息
 
@@ -595,7 +595,7 @@ class ShowServerResponse(SdkResponse):
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this ShowServerResponse.
+        r"""Sets the disks of this ShowServerResponse.
 
         源端服务器磁盘信息
 
@@ -606,7 +606,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this ShowServerResponse.
+        r"""Gets the volume_groups of this ShowServerResponse.
 
         源端服务器的卷组信息，Linux必选，如果没有卷组，输入[]
 
@@ -617,7 +617,7 @@ class ShowServerResponse(SdkResponse):
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this ShowServerResponse.
+        r"""Sets the volume_groups of this ShowServerResponse.
 
         源端服务器的卷组信息，Linux必选，如果没有卷组，输入[]
 
@@ -628,7 +628,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def btrfs_list(self):
-        """Gets the btrfs_list of this ShowServerResponse.
+        r"""Gets the btrfs_list of this ShowServerResponse.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -639,7 +639,7 @@ class ShowServerResponse(SdkResponse):
 
     @btrfs_list.setter
     def btrfs_list(self, btrfs_list):
-        """Sets the btrfs_list of this ShowServerResponse.
+        r"""Sets the btrfs_list of this ShowServerResponse.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -650,7 +650,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def networks(self):
-        """Gets the networks of this ShowServerResponse.
+        r"""Gets the networks of this ShowServerResponse.
 
         源端服务器的网卡信息
 
@@ -661,7 +661,7 @@ class ShowServerResponse(SdkResponse):
 
     @networks.setter
     def networks(self, networks):
-        """Sets the networks of this ShowServerResponse.
+        r"""Sets the networks of this ShowServerResponse.
 
         源端服务器的网卡信息
 
@@ -672,7 +672,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def checks(self):
-        """Gets the checks of this ShowServerResponse.
+        r"""Gets the checks of this ShowServerResponse.
 
         源端环境校验信息
 
@@ -683,7 +683,7 @@ class ShowServerResponse(SdkResponse):
 
     @checks.setter
     def checks(self, checks):
-        """Sets the checks of this ShowServerResponse.
+        r"""Sets the checks of this ShowServerResponse.
 
         源端环境校验信息
 
@@ -694,7 +694,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def migration_cycle(self):
-        """Gets the migration_cycle of this ShowServerResponse.
+        r"""Gets the migration_cycle of this ShowServerResponse.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
@@ -705,7 +705,7 @@ class ShowServerResponse(SdkResponse):
 
     @migration_cycle.setter
     def migration_cycle(self, migration_cycle):
-        """Sets the migration_cycle of this ShowServerResponse.
+        r"""Sets the migration_cycle of this ShowServerResponse.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
@@ -716,7 +716,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def state_action_time(self):
-        """Gets the state_action_time of this ShowServerResponse.
+        r"""Gets the state_action_time of this ShowServerResponse.
 
         源端状态（state）上次发生变化的时间戳
 
@@ -727,7 +727,7 @@ class ShowServerResponse(SdkResponse):
 
     @state_action_time.setter
     def state_action_time(self, state_action_time):
-        """Sets the state_action_time of this ShowServerResponse.
+        r"""Sets the state_action_time of this ShowServerResponse.
 
         源端状态（state）上次发生变化的时间戳
 
@@ -738,7 +738,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def replicatesize(self):
-        """Gets the replicatesize of this ShowServerResponse.
+        r"""Gets the replicatesize of this ShowServerResponse.
 
         已经完成迁移的大小（B）
 
@@ -749,7 +749,7 @@ class ShowServerResponse(SdkResponse):
 
     @replicatesize.setter
     def replicatesize(self, replicatesize):
-        """Sets the replicatesize of this ShowServerResponse.
+        r"""Sets the replicatesize of this ShowServerResponse.
 
         已经完成迁移的大小（B）
 
@@ -760,7 +760,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def totalsize(self):
-        """Gets the totalsize of this ShowServerResponse.
+        r"""Gets the totalsize of this ShowServerResponse.
 
         需要迁移的数据量总大小（B）
 
@@ -771,7 +771,7 @@ class ShowServerResponse(SdkResponse):
 
     @totalsize.setter
     def totalsize(self, totalsize):
-        """Sets the totalsize of this ShowServerResponse.
+        r"""Sets the totalsize of this ShowServerResponse.
 
         需要迁移的数据量总大小（B）
 
@@ -782,7 +782,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def last_visit_time(self):
-        """Gets the last_visit_time of this ShowServerResponse.
+        r"""Gets the last_visit_time of this ShowServerResponse.
 
         agent上一次连接状态发生变化的时间戳
 
@@ -793,7 +793,7 @@ class ShowServerResponse(SdkResponse):
 
     @last_visit_time.setter
     def last_visit_time(self, last_visit_time):
-        """Sets the last_visit_time of this ShowServerResponse.
+        r"""Sets the last_visit_time of this ShowServerResponse.
 
         agent上一次连接状态发生变化的时间戳
 
@@ -804,7 +804,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def stage_action_time(self):
-        """Gets the stage_action_time of this ShowServerResponse.
+        r"""Gets the stage_action_time of this ShowServerResponse.
 
         迁移周期（migration_cycle）上一次变化的时间戳
 
@@ -815,7 +815,7 @@ class ShowServerResponse(SdkResponse):
 
     @stage_action_time.setter
     def stage_action_time(self, stage_action_time):
-        """Sets the stage_action_time of this ShowServerResponse.
+        r"""Sets the stage_action_time of this ShowServerResponse.
 
         迁移周期（migration_cycle）上一次变化的时间戳
 
@@ -826,7 +826,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this ShowServerResponse.
+        r"""Gets the agent_version of this ShowServerResponse.
 
         Agent版本信息
 
@@ -837,7 +837,7 @@ class ShowServerResponse(SdkResponse):
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this ShowServerResponse.
+        r"""Sets the agent_version of this ShowServerResponse.
 
         Agent版本信息
 
@@ -848,7 +848,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def has_tc(self):
-        """Gets the has_tc of this ShowServerResponse.
+        r"""Gets the has_tc of this ShowServerResponse.
 
         是否安装tc组件，Linux系统此参数为必选
 
@@ -859,7 +859,7 @@ class ShowServerResponse(SdkResponse):
 
     @has_tc.setter
     def has_tc(self, has_tc):
-        """Sets the has_tc of this ShowServerResponse.
+        r"""Sets the has_tc of this ShowServerResponse.
 
         是否安装tc组件，Linux系统此参数为必选
 

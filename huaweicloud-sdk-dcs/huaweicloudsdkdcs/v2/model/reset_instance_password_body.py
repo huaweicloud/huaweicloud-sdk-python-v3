@@ -27,7 +27,7 @@ class ResetInstancePasswordBody:
     }
 
     def __init__(self, new_password=None, no_password_access=None):
-        """ResetInstancePasswordBody
+        r"""ResetInstancePasswordBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResetInstancePasswordBody:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ResetInstancePasswordBody.
+        r"""Gets the new_password of this ResetInstancePasswordBody.
 
         重置的新密码
 
@@ -61,7 +61,7 @@ class ResetInstancePasswordBody:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ResetInstancePasswordBody.
+        r"""Sets the new_password of this ResetInstancePasswordBody.
 
         重置的新密码
 
@@ -72,7 +72,7 @@ class ResetInstancePasswordBody:
 
     @property
     def no_password_access(self):
-        """Gets the no_password_access of this ResetInstancePasswordBody.
+        r"""Gets the no_password_access of this ResetInstancePasswordBody.
 
         是否重置为免密码访问缓存实例
 
@@ -83,7 +83,7 @@ class ResetInstancePasswordBody:
 
     @no_password_access.setter
     def no_password_access(self, no_password_access):
-        """Sets the no_password_access of this ResetInstancePasswordBody.
+        r"""Sets the no_password_access of this ResetInstancePasswordBody.
 
         是否重置为免密码访问缓存实例
 

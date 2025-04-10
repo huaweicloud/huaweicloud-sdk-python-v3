@@ -27,7 +27,7 @@ class AddMembersReq:
     }
 
     def __init__(self, members=None, domains=None):
-        """AddMembersReq
+        r"""AddMembersReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddMembersReq:
 
     @property
     def members(self):
-        """Gets the members of this AddMembersReq.
+        r"""Gets the members of this AddMembersReq.
 
         列表，待添加备份共享成员的project_id。
 
@@ -61,7 +61,7 @@ class AddMembersReq:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this AddMembersReq.
+        r"""Sets the members of this AddMembersReq.
 
         列表，待添加备份共享成员的project_id。
 
@@ -72,7 +72,7 @@ class AddMembersReq:
 
     @property
     def domains(self):
-        """Gets the domains of this AddMembersReq.
+        r"""Gets the domains of this AddMembersReq.
 
         列表，待添加备份共享成员的domain_id。 > 该特性目前属于公测阶段，部分region可能无法使用.
 
@@ -83,7 +83,7 @@ class AddMembersReq:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this AddMembersReq.
+        r"""Sets the domains of this AddMembersReq.
 
         列表，待添加备份共享成员的domain_id。 > 该特性目前属于公测阶段，部分region可能无法使用.
 

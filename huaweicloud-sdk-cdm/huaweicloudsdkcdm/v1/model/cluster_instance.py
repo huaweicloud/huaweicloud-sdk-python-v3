@@ -31,7 +31,7 @@ class ClusterInstance:
     }
 
     def __init__(self, id=None, name=None, type=None, shard_id=None):
-        """ClusterInstance
+        r"""ClusterInstance
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ClusterInstance:
 
     @property
     def id(self):
-        """Gets the id of this ClusterInstance.
+        r"""Gets the id of this ClusterInstance.
 
         节点的虚拟机ID。
 
@@ -75,7 +75,7 @@ class ClusterInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterInstance.
+        r"""Sets the id of this ClusterInstance.
 
         节点的虚拟机ID。
 
@@ -86,7 +86,7 @@ class ClusterInstance:
 
     @property
     def name(self):
-        """Gets the name of this ClusterInstance.
+        r"""Gets the name of this ClusterInstance.
 
         节点的虚拟机名称。
 
@@ -97,7 +97,7 @@ class ClusterInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterInstance.
+        r"""Sets the name of this ClusterInstance.
 
         节点的虚拟机名称。
 
@@ -108,7 +108,7 @@ class ClusterInstance:
 
     @property
     def type(self):
-        """Gets the type of this ClusterInstance.
+        r"""Gets the type of this ClusterInstance.
 
         节点类型，只支持一种类型“cdm”。
 
@@ -119,7 +119,7 @@ class ClusterInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterInstance.
+        r"""Sets the type of this ClusterInstance.
 
         节点类型，只支持一种类型“cdm”。
 
@@ -130,7 +130,7 @@ class ClusterInstance:
 
     @property
     def shard_id(self):
-        """Gets the shard_id of this ClusterInstance.
+        r"""Gets the shard_id of this ClusterInstance.
 
         分片ID
 
@@ -141,7 +141,7 @@ class ClusterInstance:
 
     @shard_id.setter
     def shard_id(self, shard_id):
-        """Sets the shard_id of this ClusterInstance.
+        r"""Sets the shard_id of this ClusterInstance.
 
         分片ID
 

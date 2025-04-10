@@ -26,7 +26,7 @@ class CreateDesktopUserResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateDesktopUserResponse
+        r"""CreateDesktopUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesktopUserResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDesktopUserResponse.
+        r"""Gets the id of this CreateDesktopUserResponse.
 
         用户id。
 
@@ -55,7 +55,7 @@ class CreateDesktopUserResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDesktopUserResponse.
+        r"""Sets the id of this CreateDesktopUserResponse.
 
         用户id。
 

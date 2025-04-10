@@ -31,7 +31,7 @@ class DeviceResource:
     }
 
     def __init__(self, device_name=None, node_id=None, product_id=None, tags=None):
-        """DeviceResource
+        r"""DeviceResource
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DeviceResource:
 
     @property
     def device_name(self):
-        """Gets the device_name of this DeviceResource.
+        r"""Gets the device_name of this DeviceResource.
 
         :return: The device_name of this DeviceResource.
         :rtype: :class:`huaweicloudsdkiotda.v5.ParameterRef`
@@ -71,7 +71,7 @@ class DeviceResource:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this DeviceResource.
+        r"""Sets the device_name of this DeviceResource.
 
         :param device_name: The device_name of this DeviceResource.
         :type device_name: :class:`huaweicloudsdkiotda.v5.ParameterRef`
@@ -80,7 +80,7 @@ class DeviceResource:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeviceResource.
+        r"""Gets the node_id of this DeviceResource.
 
         :return: The node_id of this DeviceResource.
         :rtype: :class:`huaweicloudsdkiotda.v5.ParameterRef`
@@ -89,7 +89,7 @@ class DeviceResource:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeviceResource.
+        r"""Sets the node_id of this DeviceResource.
 
         :param node_id: The node_id of this DeviceResource.
         :type node_id: :class:`huaweicloudsdkiotda.v5.ParameterRef`
@@ -98,7 +98,7 @@ class DeviceResource:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DeviceResource.
+        r"""Gets the product_id of this DeviceResource.
 
         **参数说明**：设备所属的产品id，可以是一个明确的静态字符串id，也可以是动态的模板参数引用 - 明确的静态字符串：\"642bf260f2f9030e44210d8d\"。**取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。\" - 参数引用: {\"ref\" : \"iotda::certificate::country\"}
 
@@ -109,7 +109,7 @@ class DeviceResource:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DeviceResource.
+        r"""Sets the product_id of this DeviceResource.
 
         **参数说明**：设备所属的产品id，可以是一个明确的静态字符串id，也可以是动态的模板参数引用 - 明确的静态字符串：\"642bf260f2f9030e44210d8d\"。**取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。\" - 参数引用: {\"ref\" : \"iotda::certificate::country\"}
 
@@ -120,7 +120,7 @@ class DeviceResource:
 
     @property
     def tags(self):
-        """Gets the tags of this DeviceResource.
+        r"""Gets the tags of this DeviceResource.
 
         **参数说明**：设备绑定的标签列表
 
@@ -131,7 +131,7 @@ class DeviceResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeviceResource.
+        r"""Sets the tags of this DeviceResource.
 
         **参数说明**：设备绑定的标签列表
 

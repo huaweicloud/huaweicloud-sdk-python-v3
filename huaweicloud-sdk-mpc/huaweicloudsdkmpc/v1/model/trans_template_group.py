@@ -33,7 +33,7 @@ class TransTemplateGroup:
     }
 
     def __init__(self, name=None, videos=None, audio=None, video_common=None, common=None):
-        """TransTemplateGroup
+        r"""TransTemplateGroup
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class TransTemplateGroup:
 
     @property
     def name(self):
-        """Gets the name of this TransTemplateGroup.
+        r"""Gets the name of this TransTemplateGroup.
 
         模板组名称 
 
@@ -81,7 +81,7 @@ class TransTemplateGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TransTemplateGroup.
+        r"""Sets the name of this TransTemplateGroup.
 
         模板组名称 
 
@@ -92,7 +92,7 @@ class TransTemplateGroup:
 
     @property
     def videos(self):
-        """Gets the videos of this TransTemplateGroup.
+        r"""Gets the videos of this TransTemplateGroup.
 
         视频信息列表 
 
@@ -103,7 +103,7 @@ class TransTemplateGroup:
 
     @videos.setter
     def videos(self, videos):
-        """Sets the videos of this TransTemplateGroup.
+        r"""Sets the videos of this TransTemplateGroup.
 
         视频信息列表 
 
@@ -114,7 +114,7 @@ class TransTemplateGroup:
 
     @property
     def audio(self):
-        """Gets the audio of this TransTemplateGroup.
+        r"""Gets the audio of this TransTemplateGroup.
 
         :return: The audio of this TransTemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -123,7 +123,7 @@ class TransTemplateGroup:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this TransTemplateGroup.
+        r"""Sets the audio of this TransTemplateGroup.
 
         :param audio: The audio of this TransTemplateGroup.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -132,7 +132,7 @@ class TransTemplateGroup:
 
     @property
     def video_common(self):
-        """Gets the video_common of this TransTemplateGroup.
+        r"""Gets the video_common of this TransTemplateGroup.
 
         :return: The video_common of this TransTemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -141,7 +141,7 @@ class TransTemplateGroup:
 
     @video_common.setter
     def video_common(self, video_common):
-        """Sets the video_common of this TransTemplateGroup.
+        r"""Sets the video_common of this TransTemplateGroup.
 
         :param video_common: The video_common of this TransTemplateGroup.
         :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -150,7 +150,7 @@ class TransTemplateGroup:
 
     @property
     def common(self):
-        """Gets the common of this TransTemplateGroup.
+        r"""Gets the common of this TransTemplateGroup.
 
         :return: The common of this TransTemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
@@ -159,7 +159,7 @@ class TransTemplateGroup:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TransTemplateGroup.
+        r"""Sets the common of this TransTemplateGroup.
 
         :param common: The common of this TransTemplateGroup.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

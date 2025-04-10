@@ -25,7 +25,7 @@ class UntagResourceReqBody:
     }
 
     def __init__(self, tag_keys=None):
-        """UntagResourceReqBody
+        r"""UntagResourceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UntagResourceReqBody:
 
     @property
     def tag_keys(self):
-        """Gets the tag_keys of this UntagResourceReqBody.
+        r"""Gets the tag_keys of this UntagResourceReqBody.
 
         待删除的标签键列表。
 
@@ -53,7 +53,7 @@ class UntagResourceReqBody:
 
     @tag_keys.setter
     def tag_keys(self, tag_keys):
-        """Sets the tag_keys of this UntagResourceReqBody.
+        r"""Sets the tag_keys of this UntagResourceReqBody.
 
         待删除的标签键列表。
 

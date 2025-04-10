@@ -28,7 +28,7 @@ class ShowTaskDefectsResponse(SdkResponse):
     }
 
     def __init__(self, defects=None, total=None):
-        """ShowTaskDefectsResponse
+        r"""ShowTaskDefectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTaskDefectsResponse(SdkResponse):
 
     @property
     def defects(self):
-        """Gets the defects of this ShowTaskDefectsResponse.
+        r"""Gets the defects of this ShowTaskDefectsResponse.
 
         缺陷详情信息
 
@@ -62,7 +62,7 @@ class ShowTaskDefectsResponse(SdkResponse):
 
     @defects.setter
     def defects(self, defects):
-        """Sets the defects of this ShowTaskDefectsResponse.
+        r"""Sets the defects of this ShowTaskDefectsResponse.
 
         缺陷详情信息
 
@@ -73,7 +73,7 @@ class ShowTaskDefectsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTaskDefectsResponse.
+        r"""Gets the total of this ShowTaskDefectsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowTaskDefectsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTaskDefectsResponse.
+        r"""Sets the total of this ShowTaskDefectsResponse.
 
         总数
 

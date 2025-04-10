@@ -31,7 +31,7 @@ class JobScriptBatchListModel:
     }
 
     def __init__(self, batch_index=None, total_instances=None, rotation_strategy=None, properties=None):
-        """JobScriptBatchListModel
+        r"""JobScriptBatchListModel
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class JobScriptBatchListModel:
 
     @property
     def batch_index(self):
-        """Gets the batch_index of this JobScriptBatchListModel.
+        r"""Gets the batch_index of this JobScriptBatchListModel.
 
         批次索引，从1开始
 
@@ -75,7 +75,7 @@ class JobScriptBatchListModel:
 
     @batch_index.setter
     def batch_index(self, batch_index):
-        """Sets the batch_index of this JobScriptBatchListModel.
+        r"""Sets the batch_index of this JobScriptBatchListModel.
 
         批次索引，从1开始
 
@@ -86,7 +86,7 @@ class JobScriptBatchListModel:
 
     @property
     def total_instances(self):
-        """Gets the total_instances of this JobScriptBatchListModel.
+        r"""Gets the total_instances of this JobScriptBatchListModel.
 
         批次内实例节点数量
 
@@ -97,7 +97,7 @@ class JobScriptBatchListModel:
 
     @total_instances.setter
     def total_instances(self, total_instances):
-        """Sets the total_instances of this JobScriptBatchListModel.
+        r"""Sets the total_instances of this JobScriptBatchListModel.
 
         批次内实例节点数量
 
@@ -108,7 +108,7 @@ class JobScriptBatchListModel:
 
     @property
     def rotation_strategy(self):
-        """Gets the rotation_strategy of this JobScriptBatchListModel.
+        r"""Gets the rotation_strategy of this JobScriptBatchListModel.
 
         暂停继续策略
 
@@ -119,7 +119,7 @@ class JobScriptBatchListModel:
 
     @rotation_strategy.setter
     def rotation_strategy(self, rotation_strategy):
-        """Sets the rotation_strategy of this JobScriptBatchListModel.
+        r"""Sets the rotation_strategy of this JobScriptBatchListModel.
 
         暂停继续策略
 
@@ -130,7 +130,7 @@ class JobScriptBatchListModel:
 
     @property
     def properties(self):
-        """Gets the properties of this JobScriptBatchListModel.
+        r"""Gets the properties of this JobScriptBatchListModel.
 
         批次标签：
 
@@ -141,7 +141,7 @@ class JobScriptBatchListModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this JobScriptBatchListModel.
+        r"""Sets the properties of this JobScriptBatchListModel.
 
         批次标签：
 

@@ -35,7 +35,7 @@ class CreateSnapshotPolicyRequestBody:
     }
 
     def __init__(self, keep_day=None, backup_strategies=None, device_name=None, server_port=None, backup_param=None, server_ips=None):
-        """CreateSnapshotPolicyRequestBody
+        r"""CreateSnapshotPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @property
     def keep_day(self):
-        """Gets the keep_day of this CreateSnapshotPolicyRequestBody.
+        r"""Gets the keep_day of this CreateSnapshotPolicyRequestBody.
 
         保留天数。输入值必须在1-31之间。
 
@@ -89,7 +89,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @keep_day.setter
     def keep_day(self, keep_day):
-        """Sets the keep_day of this CreateSnapshotPolicyRequestBody.
+        r"""Sets the keep_day of this CreateSnapshotPolicyRequestBody.
 
         保留天数。输入值必须在1-31之间。
 
@@ -100,7 +100,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @property
     def backup_strategies(self):
-        """Gets the backup_strategies of this CreateSnapshotPolicyRequestBody.
+        r"""Gets the backup_strategies of this CreateSnapshotPolicyRequestBody.
 
         策略列表信息。当需要添加策略时该参数为必选。
 
@@ -111,7 +111,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @backup_strategies.setter
     def backup_strategies(self, backup_strategies):
-        """Sets the backup_strategies of this CreateSnapshotPolicyRequestBody.
+        r"""Sets the backup_strategies of this CreateSnapshotPolicyRequestBody.
 
         策略列表信息。当需要添加策略时该参数为必选。
 
@@ -122,7 +122,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @property
     def device_name(self):
-        """Gets the device_name of this CreateSnapshotPolicyRequestBody.
+        r"""Gets the device_name of this CreateSnapshotPolicyRequestBody.
 
         备份设备。支持OBS、NBU和NFS。
 
@@ -133,7 +133,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this CreateSnapshotPolicyRequestBody.
+        r"""Sets the device_name of this CreateSnapshotPolicyRequestBody.
 
         备份设备。支持OBS、NBU和NFS。
 
@@ -144,7 +144,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @property
     def server_port(self):
-        """Gets the server_port of this CreateSnapshotPolicyRequestBody.
+        r"""Gets the server_port of this CreateSnapshotPolicyRequestBody.
 
         NBU备份介质端口。备份介质为NBU时该字段必填。
 
@@ -155,7 +155,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @server_port.setter
     def server_port(self, server_port):
-        """Sets the server_port of this CreateSnapshotPolicyRequestBody.
+        r"""Sets the server_port of this CreateSnapshotPolicyRequestBody.
 
         NBU备份介质端口。备份介质为NBU时该字段必填。
 
@@ -166,7 +166,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @property
     def backup_param(self):
-        """Gets the backup_param of this CreateSnapshotPolicyRequestBody.
+        r"""Gets the backup_param of this CreateSnapshotPolicyRequestBody.
 
         NBU备份参数。备份介质为NBU时该字段必选。
 
@@ -177,7 +177,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @backup_param.setter
     def backup_param(self, backup_param):
-        """Sets the backup_param of this CreateSnapshotPolicyRequestBody.
+        r"""Sets the backup_param of this CreateSnapshotPolicyRequestBody.
 
         NBU备份参数。备份介质为NBU时该字段必选。
 
@@ -188,7 +188,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @property
     def server_ips(self):
-        """Gets the server_ips of this CreateSnapshotPolicyRequestBody.
+        r"""Gets the server_ips of this CreateSnapshotPolicyRequestBody.
 
         备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。
 
@@ -199,7 +199,7 @@ class CreateSnapshotPolicyRequestBody:
 
     @server_ips.setter
     def server_ips(self, server_ips):
-        """Sets the server_ips of this CreateSnapshotPolicyRequestBody.
+        r"""Sets the server_ips of this CreateSnapshotPolicyRequestBody.
 
         备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。
 

@@ -29,7 +29,7 @@ class UpdateToPeriodRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateToPeriodRequest
+        r"""UpdateToPeriodRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateToPeriodRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateToPeriodRequest.
+        r"""Gets the instance_id of this UpdateToPeriodRequest.
 
         操作的实例ID
 
@@ -66,7 +66,7 @@ class UpdateToPeriodRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateToPeriodRequest.
+        r"""Sets the instance_id of this UpdateToPeriodRequest.
 
         操作的实例ID
 
@@ -77,7 +77,7 @@ class UpdateToPeriodRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateToPeriodRequest.
+        r"""Gets the x_language of this UpdateToPeriodRequest.
 
         语言
 
@@ -88,7 +88,7 @@ class UpdateToPeriodRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateToPeriodRequest.
+        r"""Sets the x_language of this UpdateToPeriodRequest.
 
         语言
 
@@ -99,7 +99,7 @@ class UpdateToPeriodRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateToPeriodRequest.
+        r"""Gets the body of this UpdateToPeriodRequest.
 
         :return: The body of this UpdateToPeriodRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ToPeriodReq`
@@ -108,7 +108,7 @@ class UpdateToPeriodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateToPeriodRequest.
+        r"""Sets the body of this UpdateToPeriodRequest.
 
         :param body: The body of this UpdateToPeriodRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ToPeriodReq`

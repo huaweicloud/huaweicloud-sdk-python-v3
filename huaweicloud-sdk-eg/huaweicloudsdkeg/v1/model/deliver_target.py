@@ -31,7 +31,7 @@ class DeliverTarget:
     }
 
     def __init__(self, deliver_target_id=None, deliver_target_name=None, deliver_status=None, deliver_detail_list=None):
-        """DeliverTarget
+        r"""DeliverTarget
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeliverTarget:
 
     @property
     def deliver_target_id(self):
-        """Gets the deliver_target_id of this DeliverTarget.
+        r"""Gets the deliver_target_id of this DeliverTarget.
 
         投递目标ID，即事件目标ID
 
@@ -75,7 +75,7 @@ class DeliverTarget:
 
     @deliver_target_id.setter
     def deliver_target_id(self, deliver_target_id):
-        """Sets the deliver_target_id of this DeliverTarget.
+        r"""Sets the deliver_target_id of this DeliverTarget.
 
         投递目标ID，即事件目标ID
 
@@ -86,7 +86,7 @@ class DeliverTarget:
 
     @property
     def deliver_target_name(self):
-        """Gets the deliver_target_name of this DeliverTarget.
+        r"""Gets the deliver_target_name of this DeliverTarget.
 
         投递目标名称，及事件目标名称
 
@@ -97,7 +97,7 @@ class DeliverTarget:
 
     @deliver_target_name.setter
     def deliver_target_name(self, deliver_target_name):
-        """Sets the deliver_target_name of this DeliverTarget.
+        r"""Sets the deliver_target_name of this DeliverTarget.
 
         投递目标名称，及事件目标名称
 
@@ -108,7 +108,7 @@ class DeliverTarget:
 
     @property
     def deliver_status(self):
-        """Gets the deliver_status of this DeliverTarget.
+        r"""Gets the deliver_status of this DeliverTarget.
 
         投递状态 SUCCESS Or FAILED
 
@@ -119,7 +119,7 @@ class DeliverTarget:
 
     @deliver_status.setter
     def deliver_status(self, deliver_status):
-        """Sets the deliver_status of this DeliverTarget.
+        r"""Sets the deliver_status of this DeliverTarget.
 
         投递状态 SUCCESS Or FAILED
 
@@ -130,7 +130,7 @@ class DeliverTarget:
 
     @property
     def deliver_detail_list(self):
-        """Gets the deliver_detail_list of this DeliverTarget.
+        r"""Gets the deliver_detail_list of this DeliverTarget.
 
         考虑展示的个数 例如限制只展示最新三条
 
@@ -141,7 +141,7 @@ class DeliverTarget:
 
     @deliver_detail_list.setter
     def deliver_detail_list(self, deliver_detail_list):
-        """Sets the deliver_detail_list of this DeliverTarget.
+        r"""Sets the deliver_detail_list of this DeliverTarget.
 
         考虑展示的个数 例如限制只展示最新三条
 

@@ -37,7 +37,7 @@ class RouterDetailRespDTO:
     }
 
     def __init__(self, route_id=None, input_module_id=None, output_module_id=None, input=None, output=None, sql=None, available=None):
-        """RouterDetailRespDTO
+        r"""RouterDetailRespDTO
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class RouterDetailRespDTO:
 
     @property
     def route_id(self):
-        """Gets the route_id of this RouterDetailRespDTO.
+        r"""Gets the route_id of this RouterDetailRespDTO.
 
         路由ID，节点下唯一
 
@@ -95,7 +95,7 @@ class RouterDetailRespDTO:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this RouterDetailRespDTO.
+        r"""Sets the route_id of this RouterDetailRespDTO.
 
         路由ID，节点下唯一
 
@@ -106,7 +106,7 @@ class RouterDetailRespDTO:
 
     @property
     def input_module_id(self):
-        """Gets the input_module_id of this RouterDetailRespDTO.
+        r"""Gets the input_module_id of this RouterDetailRespDTO.
 
         输入点所在模块的模块ID
 
@@ -117,7 +117,7 @@ class RouterDetailRespDTO:
 
     @input_module_id.setter
     def input_module_id(self, input_module_id):
-        """Sets the input_module_id of this RouterDetailRespDTO.
+        r"""Sets the input_module_id of this RouterDetailRespDTO.
 
         输入点所在模块的模块ID
 
@@ -128,7 +128,7 @@ class RouterDetailRespDTO:
 
     @property
     def output_module_id(self):
-        """Gets the output_module_id of this RouterDetailRespDTO.
+        r"""Gets the output_module_id of this RouterDetailRespDTO.
 
         输出点所在模块的模块ID
 
@@ -139,7 +139,7 @@ class RouterDetailRespDTO:
 
     @output_module_id.setter
     def output_module_id(self, output_module_id):
-        """Sets the output_module_id of this RouterDetailRespDTO.
+        r"""Sets the output_module_id of this RouterDetailRespDTO.
 
         输出点所在模块的模块ID
 
@@ -150,7 +150,7 @@ class RouterDetailRespDTO:
 
     @property
     def input(self):
-        """Gets the input of this RouterDetailRespDTO.
+        r"""Gets the input of this RouterDetailRespDTO.
 
         输入点名称
 
@@ -161,7 +161,7 @@ class RouterDetailRespDTO:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this RouterDetailRespDTO.
+        r"""Sets the input of this RouterDetailRespDTO.
 
         输入点名称
 
@@ -172,7 +172,7 @@ class RouterDetailRespDTO:
 
     @property
     def output(self):
-        """Gets the output of this RouterDetailRespDTO.
+        r"""Gets the output of this RouterDetailRespDTO.
 
         输出点名称
 
@@ -183,7 +183,7 @@ class RouterDetailRespDTO:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this RouterDetailRespDTO.
+        r"""Sets the output of this RouterDetailRespDTO.
 
         输出点名称
 
@@ -194,7 +194,7 @@ class RouterDetailRespDTO:
 
     @property
     def sql(self):
-        """Gets the sql of this RouterDetailRespDTO.
+        r"""Gets the sql of this RouterDetailRespDTO.
 
         sql參數
 
@@ -205,7 +205,7 @@ class RouterDetailRespDTO:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this RouterDetailRespDTO.
+        r"""Sets the sql of this RouterDetailRespDTO.
 
         sql參數
 
@@ -216,7 +216,7 @@ class RouterDetailRespDTO:
 
     @property
     def available(self):
-        """Gets the available of this RouterDetailRespDTO.
+        r"""Gets the available of this RouterDetailRespDTO.
 
         是否可用
 
@@ -227,7 +227,7 @@ class RouterDetailRespDTO:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this RouterDetailRespDTO.
+        r"""Sets the available of this RouterDetailRespDTO.
 
         是否可用
 

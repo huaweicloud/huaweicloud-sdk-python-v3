@@ -27,7 +27,7 @@ class ListLtsLogPolicyRespondBodyInstanceLtsConfigs:
     }
 
     def __init__(self, instance=None, lts_configs=None):
-        """ListLtsLogPolicyRespondBodyInstanceLtsConfigs
+        r"""ListLtsLogPolicyRespondBodyInstanceLtsConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListLtsLogPolicyRespondBodyInstanceLtsConfigs:
 
     @property
     def instance(self):
-        """Gets the instance of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
+        r"""Gets the instance of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
 
         :return: The instance of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
         :rtype: :class:`huaweicloudsdkdds.v3.ListLtsLogPolicyRespondBodyInstance`
@@ -59,7 +59,7 @@ class ListLtsLogPolicyRespondBodyInstanceLtsConfigs:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
+        r"""Sets the instance of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
 
         :param instance: The instance of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
         :type instance: :class:`huaweicloudsdkdds.v3.ListLtsLogPolicyRespondBodyInstance`
@@ -68,7 +68,7 @@ class ListLtsLogPolicyRespondBodyInstanceLtsConfigs:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
+        r"""Gets the lts_configs of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
 
         LTS日志配置明细。从未设置LTS日志流，不返回该字段。
 
@@ -79,7 +79,7 @@ class ListLtsLogPolicyRespondBodyInstanceLtsConfigs:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
+        r"""Sets the lts_configs of this ListLtsLogPolicyRespondBodyInstanceLtsConfigs.
 
         LTS日志配置明细。从未设置LTS日志流，不返回该字段。
 

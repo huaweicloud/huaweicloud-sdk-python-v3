@@ -27,7 +27,7 @@ class DeleteModuleRequest:
     }
 
     def __init__(self, edge_node_id=None, module_id=None):
-        """DeleteModuleRequest
+        r"""DeleteModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteModuleRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this DeleteModuleRequest.
+        r"""Gets the edge_node_id of this DeleteModuleRequest.
 
         边缘节点ID
 
@@ -59,7 +59,7 @@ class DeleteModuleRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this DeleteModuleRequest.
+        r"""Sets the edge_node_id of this DeleteModuleRequest.
 
         边缘节点ID
 
@@ -70,7 +70,7 @@ class DeleteModuleRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this DeleteModuleRequest.
+        r"""Gets the module_id of this DeleteModuleRequest.
 
         边缘模块ID
 
@@ -81,7 +81,7 @@ class DeleteModuleRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this DeleteModuleRequest.
+        r"""Sets the module_id of this DeleteModuleRequest.
 
         边缘模块ID
 

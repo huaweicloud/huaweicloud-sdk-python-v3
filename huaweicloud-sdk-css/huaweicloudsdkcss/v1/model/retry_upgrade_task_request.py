@@ -29,7 +29,7 @@ class RetryUpgradeTaskRequest:
     }
 
     def __init__(self, cluster_id=None, action_id=None, retry_mode=None):
-        """RetryUpgradeTaskRequest
+        r"""RetryUpgradeTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RetryUpgradeTaskRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RetryUpgradeTaskRequest.
+        r"""Gets the cluster_id of this RetryUpgradeTaskRequest.
 
         待重试的集群ID。
 
@@ -66,7 +66,7 @@ class RetryUpgradeTaskRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RetryUpgradeTaskRequest.
+        r"""Sets the cluster_id of this RetryUpgradeTaskRequest.
 
         待重试的集群ID。
 
@@ -77,7 +77,7 @@ class RetryUpgradeTaskRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this RetryUpgradeTaskRequest.
+        r"""Gets the action_id of this RetryUpgradeTaskRequest.
 
         待重试的任务ID。
 
@@ -88,7 +88,7 @@ class RetryUpgradeTaskRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this RetryUpgradeTaskRequest.
+        r"""Sets the action_id of this RetryUpgradeTaskRequest.
 
         待重试的任务ID。
 
@@ -99,7 +99,7 @@ class RetryUpgradeTaskRequest:
 
     @property
     def retry_mode(self):
-        """Gets the retry_mode of this RetryUpgradeTaskRequest.
+        r"""Gets the retry_mode of this RetryUpgradeTaskRequest.
 
         当该参数不为空时，终止该任务的影响。当前仅支持abort。
 
@@ -110,7 +110,7 @@ class RetryUpgradeTaskRequest:
 
     @retry_mode.setter
     def retry_mode(self, retry_mode):
-        """Sets the retry_mode of this RetryUpgradeTaskRequest.
+        r"""Sets the retry_mode of this RetryUpgradeTaskRequest.
 
         当该参数不为空时，终止该任务的影响。当前仅支持abort。
 

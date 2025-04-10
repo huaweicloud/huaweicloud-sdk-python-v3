@@ -28,7 +28,7 @@ class ShowDirectConnectLocationResponse(SdkResponse):
     }
 
     def __init__(self, direct_connect_location=None, request_id=None):
-        """ShowDirectConnectLocationResponse
+        r"""ShowDirectConnectLocationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDirectConnectLocationResponse(SdkResponse):
 
     @property
     def direct_connect_location(self):
-        """Gets the direct_connect_location of this ShowDirectConnectLocationResponse.
+        r"""Gets the direct_connect_location of this ShowDirectConnectLocationResponse.
 
         :return: The direct_connect_location of this ShowDirectConnectLocationResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.DirectConnectLocationEntry`
@@ -60,7 +60,7 @@ class ShowDirectConnectLocationResponse(SdkResponse):
 
     @direct_connect_location.setter
     def direct_connect_location(self, direct_connect_location):
-        """Sets the direct_connect_location of this ShowDirectConnectLocationResponse.
+        r"""Sets the direct_connect_location of this ShowDirectConnectLocationResponse.
 
         :param direct_connect_location: The direct_connect_location of this ShowDirectConnectLocationResponse.
         :type direct_connect_location: :class:`huaweicloudsdkdc.v3.DirectConnectLocationEntry`
@@ -69,7 +69,7 @@ class ShowDirectConnectLocationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowDirectConnectLocationResponse.
+        r"""Gets the request_id of this ShowDirectConnectLocationResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowDirectConnectLocationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowDirectConnectLocationResponse.
+        r"""Sets the request_id of this ShowDirectConnectLocationResponse.
 
         请求ID。
 

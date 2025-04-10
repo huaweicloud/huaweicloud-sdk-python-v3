@@ -27,7 +27,7 @@ class KeyStatusInfo:
     }
 
     def __init__(self, key_id=None, key_state=None):
-        """KeyStatusInfo
+        r"""KeyStatusInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeyStatusInfo:
 
     @property
     def key_id(self):
-        """Gets the key_id of this KeyStatusInfo.
+        r"""Gets the key_id of this KeyStatusInfo.
 
         密钥ID
 
@@ -61,7 +61,7 @@ class KeyStatusInfo:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this KeyStatusInfo.
+        r"""Sets the key_id of this KeyStatusInfo.
 
         密钥ID
 
@@ -72,7 +72,7 @@ class KeyStatusInfo:
 
     @property
     def key_state(self):
-        """Gets the key_state of this KeyStatusInfo.
+        r"""Gets the key_state of this KeyStatusInfo.
 
         密钥状态： - 2为启用状态 - 3为禁用状态 - 4为计划删除状态 - 5为等待导入状态 - 7为冻结状态
 
@@ -83,7 +83,7 @@ class KeyStatusInfo:
 
     @key_state.setter
     def key_state(self, key_state):
-        """Sets the key_state of this KeyStatusInfo.
+        r"""Sets the key_state of this KeyStatusInfo.
 
         密钥状态： - 2为启用状态 - 3为禁用状态 - 4为计划删除状态 - 5为等待导入状态 - 7为冻结状态
 

@@ -27,7 +27,7 @@ class ImageDto:
     }
 
     def __init__(self, type=None, version=None):
-        """ImageDto
+        r"""ImageDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageDto:
 
     @property
     def type(self):
-        """Gets the type of this ImageDto.
+        r"""Gets the type of this ImageDto.
 
         镜像类型
 
@@ -61,7 +61,7 @@ class ImageDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImageDto.
+        r"""Sets the type of this ImageDto.
 
         镜像类型
 
@@ -72,7 +72,7 @@ class ImageDto:
 
     @property
     def version(self):
-        """Gets the version of this ImageDto.
+        r"""Gets the version of this ImageDto.
 
         镜像版本
 
@@ -83,7 +83,7 @@ class ImageDto:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ImageDto.
+        r"""Sets the version of this ImageDto.
 
         镜像版本
 

@@ -24,7 +24,7 @@ class UpdateTaskSettingsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTaskSettingsResponse
+        r"""UpdateTaskSettingsResponse
 
         The model defined in huaweicloud sdk
 

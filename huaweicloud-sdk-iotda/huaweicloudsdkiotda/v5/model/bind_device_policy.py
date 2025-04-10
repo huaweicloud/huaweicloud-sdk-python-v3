@@ -27,7 +27,7 @@ class BindDevicePolicy:
     }
 
     def __init__(self, target_type=None, target_ids=None):
-        """BindDevicePolicy
+        r"""BindDevicePolicy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BindDevicePolicy:
 
     @property
     def target_type(self):
-        """Gets the target_type of this BindDevicePolicy.
+        r"""Gets the target_type of this BindDevicePolicy.
 
         **参数说明**：策略绑定的目标类型。 **取值范围**：device|product|app，device表示设备，product表示产品，app表示整个资源空间。
 
@@ -59,7 +59,7 @@ class BindDevicePolicy:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this BindDevicePolicy.
+        r"""Sets the target_type of this BindDevicePolicy.
 
         **参数说明**：策略绑定的目标类型。 **取值范围**：device|product|app，device表示设备，product表示产品，app表示整个资源空间。
 
@@ -70,7 +70,7 @@ class BindDevicePolicy:
 
     @property
     def target_ids(self):
-        """Gets the target_ids of this BindDevicePolicy.
+        r"""Gets the target_ids of this BindDevicePolicy.
 
         策略绑定的目标ID列表 
 
@@ -81,7 +81,7 @@ class BindDevicePolicy:
 
     @target_ids.setter
     def target_ids(self, target_ids):
-        """Sets the target_ids of this BindDevicePolicy.
+        r"""Sets the target_ids of this BindDevicePolicy.
 
         策略绑定的目标ID列表 
 

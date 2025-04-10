@@ -26,7 +26,7 @@ class SwitchGaussMySqlConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchGaussMySqlConfigurationResponse
+        r"""SwitchGaussMySqlConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchGaussMySqlConfigurationResponse.
+        r"""Gets the job_id of this SwitchGaussMySqlConfigurationResponse.
 
         应用参数模板的任务ID。
 
@@ -55,7 +55,7 @@ class SwitchGaussMySqlConfigurationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchGaussMySqlConfigurationResponse.
+        r"""Sets the job_id of this SwitchGaussMySqlConfigurationResponse.
 
         应用参数模板的任务ID。
 

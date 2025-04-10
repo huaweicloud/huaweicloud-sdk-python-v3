@@ -29,7 +29,7 @@ class PackagesListRequestBody:
     }
 
     def __init__(self, filter=None, page_size=None, start_index=None):
-        """PackagesListRequestBody
+        r"""PackagesListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PackagesListRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this PackagesListRequestBody.
+        r"""Gets the filter of this PackagesListRequestBody.
 
         :return: The filter of this PackagesListRequestBody.
         :rtype: :class:`huaweicloudsdkclassroom.v3.PackageFilter`
@@ -66,7 +66,7 @@ class PackagesListRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this PackagesListRequestBody.
+        r"""Sets the filter of this PackagesListRequestBody.
 
         :param filter: The filter of this PackagesListRequestBody.
         :type filter: :class:`huaweicloudsdkclassroom.v3.PackageFilter`
@@ -75,7 +75,7 @@ class PackagesListRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this PackagesListRequestBody.
+        r"""Gets the page_size of this PackagesListRequestBody.
 
         每页数量
 
@@ -86,7 +86,7 @@ class PackagesListRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this PackagesListRequestBody.
+        r"""Sets the page_size of this PackagesListRequestBody.
 
         每页数量
 
@@ -97,7 +97,7 @@ class PackagesListRequestBody:
 
     @property
     def start_index(self):
-        """Gets the start_index of this PackagesListRequestBody.
+        r"""Gets the start_index of this PackagesListRequestBody.
 
         起始页
 
@@ -108,7 +108,7 @@ class PackagesListRequestBody:
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this PackagesListRequestBody.
+        r"""Sets the start_index of this PackagesListRequestBody.
 
         起始页
 

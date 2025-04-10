@@ -25,7 +25,7 @@ class EndpointPermissionList:
     }
 
     def __init__(self, permissions=None):
-        """EndpointPermissionList
+        r"""EndpointPermissionList
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EndpointPermissionList:
 
     @property
     def permissions(self):
-        """Gets the permissions of this EndpointPermissionList.
+        r"""Gets the permissions of this EndpointPermissionList.
 
         白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
@@ -53,7 +53,7 @@ class EndpointPermissionList:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this EndpointPermissionList.
+        r"""Sets the permissions of this EndpointPermissionList.
 
         白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 

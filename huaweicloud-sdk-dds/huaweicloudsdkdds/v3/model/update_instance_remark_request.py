@@ -27,7 +27,7 @@ class UpdateInstanceRemarkRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceRemarkRequest
+        r"""UpdateInstanceRemarkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceRemarkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceRemarkRequest.
+        r"""Gets the instance_id of this UpdateInstanceRemarkRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class UpdateInstanceRemarkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceRemarkRequest.
+        r"""Sets the instance_id of this UpdateInstanceRemarkRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class UpdateInstanceRemarkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceRemarkRequest.
+        r"""Gets the body of this UpdateInstanceRemarkRequest.
 
         :return: The body of this UpdateInstanceRemarkRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkRequestBody`
@@ -80,7 +80,7 @@ class UpdateInstanceRemarkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceRemarkRequest.
+        r"""Sets the body of this UpdateInstanceRemarkRequest.
 
         :param body: The body of this UpdateInstanceRemarkRequest.
         :type body: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkRequestBody`

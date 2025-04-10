@@ -40,7 +40,7 @@ class CreatePluginResponse(SdkResponse):
     }
 
     def __init__(self, plugin_id=None, plugin_name=None, plugin_type=None, plugin_scope=None, plugin_content=None, remark=None, create_time=None, update_time=None):
-        """CreatePluginResponse
+        r"""CreatePluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this CreatePluginResponse.
+        r"""Gets the plugin_id of this CreatePluginResponse.
 
         插件编码。
 
@@ -104,7 +104,7 @@ class CreatePluginResponse(SdkResponse):
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this CreatePluginResponse.
+        r"""Sets the plugin_id of this CreatePluginResponse.
 
         插件编码。
 
@@ -115,7 +115,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this CreatePluginResponse.
+        r"""Gets the plugin_name of this CreatePluginResponse.
 
         插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -126,7 +126,7 @@ class CreatePluginResponse(SdkResponse):
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this CreatePluginResponse.
+        r"""Sets the plugin_name of this CreatePluginResponse.
 
         插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -137,7 +137,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def plugin_type(self):
-        """Gets the plugin_type of this CreatePluginResponse.
+        r"""Gets the plugin_type of this CreatePluginResponse.
 
         插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像
 
@@ -148,7 +148,7 @@ class CreatePluginResponse(SdkResponse):
 
     @plugin_type.setter
     def plugin_type(self, plugin_type):
-        """Sets the plugin_type of this CreatePluginResponse.
+        r"""Sets the plugin_type of this CreatePluginResponse.
 
         插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像
 
@@ -159,7 +159,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def plugin_scope(self):
-        """Gets the plugin_scope of this CreatePluginResponse.
+        r"""Gets the plugin_scope of this CreatePluginResponse.
 
         插件可见范围。global：全局可见；
 
@@ -170,7 +170,7 @@ class CreatePluginResponse(SdkResponse):
 
     @plugin_scope.setter
     def plugin_scope(self, plugin_scope):
-        """Sets the plugin_scope of this CreatePluginResponse.
+        r"""Sets the plugin_scope of this CreatePluginResponse.
 
         插件可见范围。global：全局可见；
 
@@ -181,7 +181,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def plugin_content(self):
-        """Gets the plugin_content of this CreatePluginResponse.
+        r"""Gets the plugin_content of this CreatePluginResponse.
 
         插件定义内容，支持json。参考提供的具体模型定义  CorsPluginContent：跨域资源共享 定义内容 SetRespHeadersContent：HTTP响应头管理 定义内容 KafkaLogContent：Kafka日志推送 定义内容 BreakerContent：断路器 定义内容 RateLimitContent 流量控制 定义内容 ThirdAuthContent: 第三方认证 定义内容 ProxyCacheContent: 响应缓存 定义内容 ProxyMirrorContent: 请求镜像 定义内容
 
@@ -192,7 +192,7 @@ class CreatePluginResponse(SdkResponse):
 
     @plugin_content.setter
     def plugin_content(self, plugin_content):
-        """Sets the plugin_content of this CreatePluginResponse.
+        r"""Sets the plugin_content of this CreatePluginResponse.
 
         插件定义内容，支持json。参考提供的具体模型定义  CorsPluginContent：跨域资源共享 定义内容 SetRespHeadersContent：HTTP响应头管理 定义内容 KafkaLogContent：Kafka日志推送 定义内容 BreakerContent：断路器 定义内容 RateLimitContent 流量控制 定义内容 ThirdAuthContent: 第三方认证 定义内容 ProxyCacheContent: 响应缓存 定义内容 ProxyMirrorContent: 请求镜像 定义内容
 
@@ -203,7 +203,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this CreatePluginResponse.
+        r"""Gets the remark of this CreatePluginResponse.
 
         插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -214,7 +214,7 @@ class CreatePluginResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CreatePluginResponse.
+        r"""Sets the remark of this CreatePluginResponse.
 
         插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -225,7 +225,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreatePluginResponse.
+        r"""Gets the create_time of this CreatePluginResponse.
 
         创建时间。
 
@@ -236,7 +236,7 @@ class CreatePluginResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreatePluginResponse.
+        r"""Sets the create_time of this CreatePluginResponse.
 
         创建时间。
 
@@ -247,7 +247,7 @@ class CreatePluginResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreatePluginResponse.
+        r"""Gets the update_time of this CreatePluginResponse.
 
         更新时间。
 
@@ -258,7 +258,7 @@ class CreatePluginResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreatePluginResponse.
+        r"""Sets the update_time of this CreatePluginResponse.
 
         更新时间。
 

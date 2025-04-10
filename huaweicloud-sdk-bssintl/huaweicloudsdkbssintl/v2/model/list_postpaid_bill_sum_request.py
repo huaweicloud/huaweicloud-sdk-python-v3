@@ -25,7 +25,7 @@ class ListPostpaidBillSumRequest:
     }
 
     def __init__(self, bill_cycle=None):
-        """ListPostpaidBillSumRequest
+        r"""ListPostpaidBillSumRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPostpaidBillSumRequest:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this ListPostpaidBillSumRequest.
+        r"""Gets the bill_cycle of this ListPostpaidBillSumRequest.
 
         账单所归属的月份。格式：YYYY-MM。
 
@@ -53,7 +53,7 @@ class ListPostpaidBillSumRequest:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this ListPostpaidBillSumRequest.
+        r"""Sets the bill_cycle of this ListPostpaidBillSumRequest.
 
         账单所归属的月份。格式：YYYY-MM。
 

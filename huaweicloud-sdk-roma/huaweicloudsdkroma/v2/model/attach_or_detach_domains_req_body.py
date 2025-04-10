@@ -25,7 +25,7 @@ class AttachOrDetachDomainsReqBody:
     }
 
     def __init__(self, domains=None):
-        """AttachOrDetachDomainsReqBody
+        r"""AttachOrDetachDomainsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachOrDetachDomainsReqBody:
 
     @property
     def domains(self):
-        """Gets the domains of this AttachOrDetachDomainsReqBody.
+        r"""Gets the domains of this AttachOrDetachDomainsReqBody.
 
         证书绑定或解绑域名列表
 
@@ -53,7 +53,7 @@ class AttachOrDetachDomainsReqBody:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this AttachOrDetachDomainsReqBody.
+        r"""Sets the domains of this AttachOrDetachDomainsReqBody.
 
         证书绑定或解绑域名列表
 

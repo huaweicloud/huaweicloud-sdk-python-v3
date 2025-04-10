@@ -36,7 +36,7 @@ class CreateSimSmMapsResponse(SdkResponse):
     }
 
     def __init__(self, url=None, id=None, created_at=None, updated_at=None, file=None, version=None):
-        """CreateSimSmMapsResponse
+        r"""CreateSimSmMapsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this CreateSimSmMapsResponse.
+        r"""Gets the url of this CreateSimSmMapsResponse.
 
         地址
 
@@ -90,7 +90,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateSimSmMapsResponse.
+        r"""Sets the url of this CreateSimSmMapsResponse.
 
         地址
 
@@ -101,7 +101,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSimSmMapsResponse.
+        r"""Gets the id of this CreateSimSmMapsResponse.
 
         ID
 
@@ -112,7 +112,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSimSmMapsResponse.
+        r"""Sets the id of this CreateSimSmMapsResponse.
 
         ID
 
@@ -123,7 +123,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateSimSmMapsResponse.
+        r"""Gets the created_at of this CreateSimSmMapsResponse.
 
         创建时间
 
@@ -134,7 +134,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateSimSmMapsResponse.
+        r"""Sets the created_at of this CreateSimSmMapsResponse.
 
         创建时间
 
@@ -145,7 +145,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateSimSmMapsResponse.
+        r"""Gets the updated_at of this CreateSimSmMapsResponse.
 
         更新时间
 
@@ -156,7 +156,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateSimSmMapsResponse.
+        r"""Sets the updated_at of this CreateSimSmMapsResponse.
 
         更新时间
 
@@ -167,7 +167,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @property
     def file(self):
-        """Gets the file of this CreateSimSmMapsResponse.
+        r"""Gets the file of this CreateSimSmMapsResponse.
 
         :return: The file of this CreateSimSmMapsResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.FileCreateSrlz`
@@ -176,7 +176,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateSimSmMapsResponse.
+        r"""Sets the file of this CreateSimSmMapsResponse.
 
         :param file: The file of this CreateSimSmMapsResponse.
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateSrlz`
@@ -185,7 +185,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateSimSmMapsResponse.
+        r"""Gets the version of this CreateSimSmMapsResponse.
 
         :return: The version of this CreateSimSmMapsResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
@@ -194,7 +194,7 @@ class CreateSimSmMapsResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateSimSmMapsResponse.
+        r"""Sets the version of this CreateSimSmMapsResponse.
 
         :param version: The version of this CreateSimSmMapsResponse.
         :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`

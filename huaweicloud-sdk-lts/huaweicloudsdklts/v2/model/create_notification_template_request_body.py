@@ -35,7 +35,7 @@ class CreateNotificationTemplateRequestBody:
     }
 
     def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None):
-        """CreateNotificationTemplateRequestBody
+        r"""CreateNotificationTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateNotificationTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateNotificationTemplateRequestBody.
+        r"""Gets the name of this CreateNotificationTemplateRequestBody.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -85,7 +85,7 @@ class CreateNotificationTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNotificationTemplateRequestBody.
+        r"""Sets the name of this CreateNotificationTemplateRequestBody.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -96,7 +96,7 @@ class CreateNotificationTemplateRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateNotificationTemplateRequestBody.
+        r"""Gets the type of this CreateNotificationTemplateRequestBody.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -107,7 +107,7 @@ class CreateNotificationTemplateRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNotificationTemplateRequestBody.
+        r"""Sets the type of this CreateNotificationTemplateRequestBody.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -118,7 +118,7 @@ class CreateNotificationTemplateRequestBody:
 
     @property
     def desc(self):
-        """Gets the desc of this CreateNotificationTemplateRequestBody.
+        r"""Gets the desc of this CreateNotificationTemplateRequestBody.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -129,7 +129,7 @@ class CreateNotificationTemplateRequestBody:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this CreateNotificationTemplateRequestBody.
+        r"""Sets the desc of this CreateNotificationTemplateRequestBody.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -140,7 +140,7 @@ class CreateNotificationTemplateRequestBody:
 
     @property
     def source(self):
-        """Gets the source of this CreateNotificationTemplateRequestBody.
+        r"""Gets the source of this CreateNotificationTemplateRequestBody.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -151,7 +151,7 @@ class CreateNotificationTemplateRequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateNotificationTemplateRequestBody.
+        r"""Sets the source of this CreateNotificationTemplateRequestBody.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -162,7 +162,7 @@ class CreateNotificationTemplateRequestBody:
 
     @property
     def locale(self):
-        """Gets the locale of this CreateNotificationTemplateRequestBody.
+        r"""Gets the locale of this CreateNotificationTemplateRequestBody.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -173,7 +173,7 @@ class CreateNotificationTemplateRequestBody:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this CreateNotificationTemplateRequestBody.
+        r"""Sets the locale of this CreateNotificationTemplateRequestBody.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -184,7 +184,7 @@ class CreateNotificationTemplateRequestBody:
 
     @property
     def templates(self):
-        """Gets the templates of this CreateNotificationTemplateRequestBody.
+        r"""Gets the templates of this CreateNotificationTemplateRequestBody.
 
         模板正文，为一个数组
 
@@ -195,7 +195,7 @@ class CreateNotificationTemplateRequestBody:
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this CreateNotificationTemplateRequestBody.
+        r"""Sets the templates of this CreateNotificationTemplateRequestBody.
 
         模板正文，为一个数组
 

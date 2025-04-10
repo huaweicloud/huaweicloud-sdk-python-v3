@@ -25,7 +25,7 @@ class ValidateCssConnectionRequest:
     }
 
     def __init__(self, body=None):
-        """ValidateCssConnectionRequest
+        r"""ValidateCssConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ValidateCssConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateCssConnectionRequest.
+        r"""Gets the body of this ValidateCssConnectionRequest.
 
         :return: The body of this ValidateCssConnectionRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCssClusterReq`
@@ -52,7 +52,7 @@ class ValidateCssConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateCssConnectionRequest.
+        r"""Sets the body of this ValidateCssConnectionRequest.
 
         :param body: The body of this ValidateCssConnectionRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateCssClusterReq`

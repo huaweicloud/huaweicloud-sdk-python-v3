@@ -37,7 +37,7 @@ class AspectAdvanceOpinion:
     }
 
     def __init__(self, aspect_category=None, label=None, confidence=None, aspect_term=None, opinion_term=None, span=None, tag=None):
-        """AspectAdvanceOpinion
+        r"""AspectAdvanceOpinion
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AspectAdvanceOpinion:
 
     @property
     def aspect_category(self):
-        """Gets the aspect_category of this AspectAdvanceOpinion.
+        r"""Gets the aspect_category of this AspectAdvanceOpinion.
 
         属性类别 手机领域：['整体','内存','外形设计','屏幕','性价比','拍照','散热','电池','人脸识别','信号','指纹识别','音质','握持手感','活动配件赠品','防水','客服','物流派送','包装'] 汽车领域：['动力','外观','内饰','空间','操控', '舒适性', '性价比','能耗']
 
@@ -91,7 +91,7 @@ class AspectAdvanceOpinion:
 
     @aspect_category.setter
     def aspect_category(self, aspect_category):
-        """Sets the aspect_category of this AspectAdvanceOpinion.
+        r"""Sets the aspect_category of this AspectAdvanceOpinion.
 
         属性类别 手机领域：['整体','内存','外形设计','屏幕','性价比','拍照','散热','电池','人脸识别','信号','指纹识别','音质','握持手感','活动配件赠品','防水','客服','物流派送','包装'] 汽车领域：['动力','外观','内饰','空间','操控', '舒适性', '性价比','能耗']
 
@@ -102,7 +102,7 @@ class AspectAdvanceOpinion:
 
     @property
     def label(self):
-        """Gets the label of this AspectAdvanceOpinion.
+        r"""Gets the label of this AspectAdvanceOpinion.
 
         情感标签，0：负向，1：正向
 
@@ -113,7 +113,7 @@ class AspectAdvanceOpinion:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this AspectAdvanceOpinion.
+        r"""Sets the label of this AspectAdvanceOpinion.
 
         情感标签，0：负向，1：正向
 
@@ -124,7 +124,7 @@ class AspectAdvanceOpinion:
 
     @property
     def confidence(self):
-        """Gets the confidence of this AspectAdvanceOpinion.
+        r"""Gets the confidence of this AspectAdvanceOpinion.
 
         情感标签置信度
 
@@ -135,7 +135,7 @@ class AspectAdvanceOpinion:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this AspectAdvanceOpinion.
+        r"""Sets the confidence of this AspectAdvanceOpinion.
 
         情感标签置信度
 
@@ -146,7 +146,7 @@ class AspectAdvanceOpinion:
 
     @property
     def aspect_term(self):
-        """Gets the aspect_term of this AspectAdvanceOpinion.
+        r"""Gets the aspect_term of this AspectAdvanceOpinion.
 
         属性描述词，预留参数，暂不支持。
 
@@ -157,7 +157,7 @@ class AspectAdvanceOpinion:
 
     @aspect_term.setter
     def aspect_term(self, aspect_term):
-        """Sets the aspect_term of this AspectAdvanceOpinion.
+        r"""Sets the aspect_term of this AspectAdvanceOpinion.
 
         属性描述词，预留参数，暂不支持。
 
@@ -168,7 +168,7 @@ class AspectAdvanceOpinion:
 
     @property
     def opinion_term(self):
-        """Gets the opinion_term of this AspectAdvanceOpinion.
+        r"""Gets the opinion_term of this AspectAdvanceOpinion.
 
         观点描述词，预留参数，暂不支持。
 
@@ -179,7 +179,7 @@ class AspectAdvanceOpinion:
 
     @opinion_term.setter
     def opinion_term(self, opinion_term):
-        """Sets the opinion_term of this AspectAdvanceOpinion.
+        r"""Sets the opinion_term of this AspectAdvanceOpinion.
 
         观点描述词，预留参数，暂不支持。
 
@@ -190,7 +190,7 @@ class AspectAdvanceOpinion:
 
     @property
     def span(self):
-        """Gets the span of this AspectAdvanceOpinion.
+        r"""Gets the span of this AspectAdvanceOpinion.
 
         属性评价起始位置，预留参数，暂不支持。
 
@@ -201,7 +201,7 @@ class AspectAdvanceOpinion:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this AspectAdvanceOpinion.
+        r"""Sets the span of this AspectAdvanceOpinion.
 
         属性评价起始位置，预留参数，暂不支持。
 
@@ -212,7 +212,7 @@ class AspectAdvanceOpinion:
 
     @property
     def tag(self):
-        """Gets the tag of this AspectAdvanceOpinion.
+        r"""Gets the tag of this AspectAdvanceOpinion.
 
         观点标签，预留参数，暂不支持。
 
@@ -223,7 +223,7 @@ class AspectAdvanceOpinion:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AspectAdvanceOpinion.
+        r"""Sets the tag of this AspectAdvanceOpinion.
 
         观点标签，预留参数，暂不支持。
 

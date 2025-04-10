@@ -25,7 +25,7 @@ class BatchRemoveEndpointServicePermissionsRequestBody:
     }
 
     def __init__(self, permissions=None):
-        """BatchRemoveEndpointServicePermissionsRequestBody
+        r"""BatchRemoveEndpointServicePermissionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchRemoveEndpointServicePermissionsRequestBody:
 
     @property
     def permissions(self):
-        """Gets the permissions of this BatchRemoveEndpointServicePermissionsRequestBody.
+        r"""Gets the permissions of this BatchRemoveEndpointServicePermissionsRequestBody.
 
         终端节点服务白名单
 
@@ -53,7 +53,7 @@ class BatchRemoveEndpointServicePermissionsRequestBody:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this BatchRemoveEndpointServicePermissionsRequestBody.
+        r"""Sets the permissions of this BatchRemoveEndpointServicePermissionsRequestBody.
 
         终端节点服务白名单
 

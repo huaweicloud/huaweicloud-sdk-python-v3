@@ -26,7 +26,7 @@ class ReclaimIndirectPartnerAccountResponse(SdkResponse):
     }
 
     def __init__(self, trans_id=None):
-        """ReclaimIndirectPartnerAccountResponse
+        r"""ReclaimIndirectPartnerAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ReclaimIndirectPartnerAccountResponse(SdkResponse):
 
     @property
     def trans_id(self):
-        """Gets the trans_id of this ReclaimIndirectPartnerAccountResponse.
+        r"""Gets the trans_id of this ReclaimIndirectPartnerAccountResponse.
 
         事务流水ID，只有成功响应才会返回。
 
@@ -55,7 +55,7 @@ class ReclaimIndirectPartnerAccountResponse(SdkResponse):
 
     @trans_id.setter
     def trans_id(self, trans_id):
-        """Sets the trans_id of this ReclaimIndirectPartnerAccountResponse.
+        r"""Sets the trans_id of this ReclaimIndirectPartnerAccountResponse.
 
         事务流水ID，只有成功响应才会返回。
 

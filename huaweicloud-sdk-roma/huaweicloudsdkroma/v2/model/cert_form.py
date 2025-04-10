@@ -35,7 +35,7 @@ class CertForm:
     }
 
     def __init__(self, name=None, cert_content=None, private_key=None, type=None, instance_id=None, trusted_root_ca=None):
-        """CertForm
+        r"""CertForm
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CertForm:
 
     @property
     def name(self):
-        """Gets the name of this CertForm.
+        r"""Gets the name of this CertForm.
 
         证书名称。长度为4 ~ 50位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。
 
@@ -86,7 +86,7 @@ class CertForm:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertForm.
+        r"""Sets the name of this CertForm.
 
         证书名称。长度为4 ~ 50位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。
 
@@ -97,7 +97,7 @@ class CertForm:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this CertForm.
+        r"""Gets the cert_content of this CertForm.
 
         证书内容
 
@@ -108,7 +108,7 @@ class CertForm:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this CertForm.
+        r"""Sets the cert_content of this CertForm.
 
         证书内容
 
@@ -119,7 +119,7 @@ class CertForm:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CertForm.
+        r"""Gets the private_key of this CertForm.
 
         证书私钥
 
@@ -130,7 +130,7 @@ class CertForm:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CertForm.
+        r"""Sets the private_key of this CertForm.
 
         证书私钥
 
@@ -141,7 +141,7 @@ class CertForm:
 
     @property
     def type(self):
-        """Gets the type of this CertForm.
+        r"""Gets the type of this CertForm.
 
         证书可见范围
 
@@ -152,7 +152,7 @@ class CertForm:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CertForm.
+        r"""Sets the type of this CertForm.
 
         证书可见范围
 
@@ -163,7 +163,7 @@ class CertForm:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CertForm.
+        r"""Gets the instance_id of this CertForm.
 
         所属实例ID，当type=instance时必填
 
@@ -174,7 +174,7 @@ class CertForm:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CertForm.
+        r"""Sets the instance_id of this CertForm.
 
         所属实例ID，当type=instance时必填
 
@@ -185,7 +185,7 @@ class CertForm:
 
     @property
     def trusted_root_ca(self):
-        """Gets the trusted_root_ca of this CertForm.
+        r"""Gets the trusted_root_ca of this CertForm.
 
         信任的根证书CA  [暂不支持](tag:fcs;hcs;g42;Site)
 
@@ -196,7 +196,7 @@ class CertForm:
 
     @trusted_root_ca.setter
     def trusted_root_ca(self, trusted_root_ca):
-        """Sets the trusted_root_ca of this CertForm.
+        r"""Sets the trusted_root_ca of this CertForm.
 
         信任的根证书CA  [暂不支持](tag:fcs;hcs;g42;Site)
 

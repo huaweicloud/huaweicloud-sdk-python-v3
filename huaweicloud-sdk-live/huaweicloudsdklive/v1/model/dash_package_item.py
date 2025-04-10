@@ -47,7 +47,7 @@ class DashPackageItem:
     }
 
     def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ads=None, ext_args=None, request_args=None, ad_marker=None, suggested_presentation_delay=None, minimum_update_period=None, min_buffer_time=None):
-        """DashPackageItem
+        r"""DashPackageItem
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class DashPackageItem:
 
     @property
     def url(self):
-        """Gets the url of this DashPackageItem.
+        r"""Gets the url of this DashPackageItem.
 
         客户自定义的拉流地址，包括方法、域名、路径
 
@@ -129,7 +129,7 @@ class DashPackageItem:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DashPackageItem.
+        r"""Sets the url of this DashPackageItem.
 
         客户自定义的拉流地址，包括方法、域名、路径
 
@@ -140,7 +140,7 @@ class DashPackageItem:
 
     @property
     def stream_selection(self):
-        """Gets the stream_selection of this DashPackageItem.
+        r"""Gets the stream_selection of this DashPackageItem.
 
         从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
 
@@ -151,7 +151,7 @@ class DashPackageItem:
 
     @stream_selection.setter
     def stream_selection(self, stream_selection):
-        """Sets the stream_selection of this DashPackageItem.
+        r"""Sets the stream_selection of this DashPackageItem.
 
         从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
 
@@ -162,7 +162,7 @@ class DashPackageItem:
 
     @property
     def segment_duration_seconds(self):
-        """Gets the segment_duration_seconds of this DashPackageItem.
+        r"""Gets the segment_duration_seconds of this DashPackageItem.
 
         频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
@@ -173,7 +173,7 @@ class DashPackageItem:
 
     @segment_duration_seconds.setter
     def segment_duration_seconds(self, segment_duration_seconds):
-        """Sets the segment_duration_seconds of this DashPackageItem.
+        r"""Sets the segment_duration_seconds of this DashPackageItem.
 
         频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
@@ -184,7 +184,7 @@ class DashPackageItem:
 
     @property
     def playlist_window_seconds(self):
-        """Gets the playlist_window_seconds of this DashPackageItem.
+        r"""Gets the playlist_window_seconds of this DashPackageItem.
 
         频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
 
@@ -195,7 +195,7 @@ class DashPackageItem:
 
     @playlist_window_seconds.setter
     def playlist_window_seconds(self, playlist_window_seconds):
-        """Sets the playlist_window_seconds of this DashPackageItem.
+        r"""Sets the playlist_window_seconds of this DashPackageItem.
 
         频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
 
@@ -206,7 +206,7 @@ class DashPackageItem:
 
     @property
     def encryption(self):
-        """Gets the encryption of this DashPackageItem.
+        r"""Gets the encryption of this DashPackageItem.
 
         :return: The encryption of this DashPackageItem.
         :rtype: :class:`huaweicloudsdklive.v1.Encryption`
@@ -215,7 +215,7 @@ class DashPackageItem:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this DashPackageItem.
+        r"""Sets the encryption of this DashPackageItem.
 
         :param encryption: The encryption of this DashPackageItem.
         :type encryption: :class:`huaweicloudsdklive.v1.Encryption`
@@ -224,7 +224,7 @@ class DashPackageItem:
 
     @property
     def ads(self):
-        """Gets the ads of this DashPackageItem.
+        r"""Gets the ads of this DashPackageItem.
 
         广告配置
 
@@ -235,7 +235,7 @@ class DashPackageItem:
 
     @ads.setter
     def ads(self, ads):
-        """Sets the ads of this DashPackageItem.
+        r"""Sets the ads of this DashPackageItem.
 
         广告配置
 
@@ -246,7 +246,7 @@ class DashPackageItem:
 
     @property
     def ext_args(self):
-        """Gets the ext_args of this DashPackageItem.
+        r"""Gets the ext_args of this DashPackageItem.
 
         其他额外参数
 
@@ -257,7 +257,7 @@ class DashPackageItem:
 
     @ext_args.setter
     def ext_args(self, ext_args):
-        """Sets the ext_args of this DashPackageItem.
+        r"""Sets the ext_args of this DashPackageItem.
 
         其他额外参数
 
@@ -268,7 +268,7 @@ class DashPackageItem:
 
     @property
     def request_args(self):
-        """Gets the request_args of this DashPackageItem.
+        r"""Gets the request_args of this DashPackageItem.
 
         :return: The request_args of this DashPackageItem.
         :rtype: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
@@ -277,7 +277,7 @@ class DashPackageItem:
 
     @request_args.setter
     def request_args(self, request_args):
-        """Sets the request_args of this DashPackageItem.
+        r"""Sets the request_args of this DashPackageItem.
 
         :param request_args: The request_args of this DashPackageItem.
         :type request_args: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
@@ -286,7 +286,7 @@ class DashPackageItem:
 
     @property
     def ad_marker(self):
-        """Gets the ad_marker of this DashPackageItem.
+        r"""Gets the ad_marker of this DashPackageItem.
 
         广告标识。DASH取值：\"xml+bin\"
 
@@ -297,7 +297,7 @@ class DashPackageItem:
 
     @ad_marker.setter
     def ad_marker(self, ad_marker):
-        """Sets the ad_marker of this DashPackageItem.
+        r"""Sets the ad_marker of this DashPackageItem.
 
         广告标识。DASH取值：\"xml+bin\"
 
@@ -308,7 +308,7 @@ class DashPackageItem:
 
     @property
     def suggested_presentation_delay(self):
-        """Gets the suggested_presentation_delay of this DashPackageItem.
+        r"""Gets the suggested_presentation_delay of this DashPackageItem.
 
         建议播放延迟。单位：秒。取值范围：[1 - 120]
 
@@ -319,7 +319,7 @@ class DashPackageItem:
 
     @suggested_presentation_delay.setter
     def suggested_presentation_delay(self, suggested_presentation_delay):
-        """Sets the suggested_presentation_delay of this DashPackageItem.
+        r"""Sets the suggested_presentation_delay of this DashPackageItem.
 
         建议播放延迟。单位：秒。取值范围：[1 - 120]
 
@@ -330,7 +330,7 @@ class DashPackageItem:
 
     @property
     def minimum_update_period(self):
-        """Gets the minimum_update_period of this DashPackageItem.
+        r"""Gets the minimum_update_period of this DashPackageItem.
 
         索引最短更新周期。单位：秒。取值范围：[1 - 120]
 
@@ -341,7 +341,7 @@ class DashPackageItem:
 
     @minimum_update_period.setter
     def minimum_update_period(self, minimum_update_period):
-        """Sets the minimum_update_period of this DashPackageItem.
+        r"""Sets the minimum_update_period of this DashPackageItem.
 
         索引最短更新周期。单位：秒。取值范围：[1 - 120]
 
@@ -352,7 +352,7 @@ class DashPackageItem:
 
     @property
     def min_buffer_time(self):
-        """Gets the min_buffer_time of this DashPackageItem.
+        r"""Gets the min_buffer_time of this DashPackageItem.
 
         最小缓冲时间。单位：秒。取值范围：[1 - 120]
 
@@ -363,7 +363,7 @@ class DashPackageItem:
 
     @min_buffer_time.setter
     def min_buffer_time(self, min_buffer_time):
-        """Sets the min_buffer_time of this DashPackageItem.
+        r"""Sets the min_buffer_time of this DashPackageItem.
 
         最小缓冲时间。单位：秒。取值范围：[1 - 120]
 

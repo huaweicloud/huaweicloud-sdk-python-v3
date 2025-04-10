@@ -27,7 +27,7 @@ class AppUpdateDTO:
     }
 
     def __init__(self, name=None, description=None):
-        """AppUpdateDTO
+        r"""AppUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppUpdateDTO:
 
     @property
     def name(self):
-        """Gets the name of this AppUpdateDTO.
+        r"""Gets the name of this AppUpdateDTO.
 
         应用名称
 
@@ -61,7 +61,7 @@ class AppUpdateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppUpdateDTO.
+        r"""Sets the name of this AppUpdateDTO.
 
         应用名称
 
@@ -72,7 +72,7 @@ class AppUpdateDTO:
 
     @property
     def description(self):
-        """Gets the description of this AppUpdateDTO.
+        r"""Gets the description of this AppUpdateDTO.
 
         应用描述
 
@@ -83,7 +83,7 @@ class AppUpdateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppUpdateDTO.
+        r"""Sets the description of this AppUpdateDTO.
 
         应用描述
 

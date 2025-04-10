@@ -25,7 +25,7 @@ class SwitchSecondLevelMonitoringRequestBody:
     }
 
     def __init__(self, enabled=None):
-        """SwitchSecondLevelMonitoringRequestBody
+        r"""SwitchSecondLevelMonitoringRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchSecondLevelMonitoringRequestBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this SwitchSecondLevelMonitoringRequestBody.
+        r"""Gets the enabled of this SwitchSecondLevelMonitoringRequestBody.
 
         是否开启秒级监控。 取值为true为开启，取值为false为关闭。
 
@@ -53,7 +53,7 @@ class SwitchSecondLevelMonitoringRequestBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this SwitchSecondLevelMonitoringRequestBody.
+        r"""Sets the enabled of this SwitchSecondLevelMonitoringRequestBody.
 
         是否开启秒级监控。 取值为true为开启，取值为false为关闭。
 

@@ -24,7 +24,7 @@ class CreateMigrationProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateMigrationProjectResponse
+        r"""CreateMigrationProjectResponse
 
         The model defined in huaweicloud sdk
 

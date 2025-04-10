@@ -25,7 +25,7 @@ class ReportTaskInfo:
     }
 
     def __init__(self, vum=None):
-        """ReportTaskInfo
+        r"""ReportTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReportTaskInfo:
 
     @property
     def vum(self):
-        """Gets the vum of this ReportTaskInfo.
+        r"""Gets the vum of this ReportTaskInfo.
 
         分钟*并发数
 
@@ -54,7 +54,7 @@ class ReportTaskInfo:
 
     @vum.setter
     def vum(self, vum):
-        """Sets the vum of this ReportTaskInfo.
+        r"""Sets the vum of this ReportTaskInfo.
 
         分钟*并发数
 

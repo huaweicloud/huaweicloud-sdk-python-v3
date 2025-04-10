@@ -33,7 +33,7 @@ class RecomendAnswer:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, score=None, domain=None, top_score_question=None):
-        """RecomendAnswer
+        r"""RecomendAnswer
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RecomendAnswer:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this RecomendAnswer.
+        r"""Gets the qa_pair_id of this RecomendAnswer.
 
         问答对ID。
 
@@ -82,7 +82,7 @@ class RecomendAnswer:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this RecomendAnswer.
+        r"""Sets the qa_pair_id of this RecomendAnswer.
 
         问答对ID。
 
@@ -93,7 +93,7 @@ class RecomendAnswer:
 
     @property
     def st_question(self):
-        """Gets the st_question of this RecomendAnswer.
+        r"""Gets the st_question of this RecomendAnswer.
 
         标准问题。
 
@@ -104,7 +104,7 @@ class RecomendAnswer:
 
     @st_question.setter
     def st_question(self, st_question):
-        """Sets the st_question of this RecomendAnswer.
+        r"""Sets the st_question of this RecomendAnswer.
 
         标准问题。
 
@@ -115,7 +115,7 @@ class RecomendAnswer:
 
     @property
     def score(self):
-        """Gets the score of this RecomendAnswer.
+        r"""Gets the score of this RecomendAnswer.
 
         相似度得分，精确到小数点后3位。
 
@@ -126,7 +126,7 @@ class RecomendAnswer:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this RecomendAnswer.
+        r"""Sets the score of this RecomendAnswer.
 
         相似度得分，精确到小数点后3位。
 
@@ -137,7 +137,7 @@ class RecomendAnswer:
 
     @property
     def domain(self):
-        """Gets the domain of this RecomendAnswer.
+        r"""Gets the domain of this RecomendAnswer.
 
         所属领域。
 
@@ -148,7 +148,7 @@ class RecomendAnswer:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this RecomendAnswer.
+        r"""Sets the domain of this RecomendAnswer.
 
         所属领域。
 
@@ -159,7 +159,7 @@ class RecomendAnswer:
 
     @property
     def top_score_question(self):
-        """Gets the top_score_question of this RecomendAnswer.
+        r"""Gets the top_score_question of this RecomendAnswer.
 
         最高评分的扩展问或标准问。
 
@@ -170,7 +170,7 @@ class RecomendAnswer:
 
     @top_score_question.setter
     def top_score_question(self, top_score_question):
-        """Sets the top_score_question of this RecomendAnswer.
+        r"""Sets the top_score_question of this RecomendAnswer.
 
         最高评分的扩展问或标准问。
 

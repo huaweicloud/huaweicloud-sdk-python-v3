@@ -43,7 +43,7 @@ class SchemaInfo:
     }
 
     def __init__(self, schema_name=None, database_name=None, total_value=None, perm_space=None, skew_percent=None, min_value=None, max_value=None, min_dn=None, max_dn=None, dn_num=None):
-        """SchemaInfo
+        r"""SchemaInfo
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class SchemaInfo:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this SchemaInfo.
+        r"""Gets the schema_name of this SchemaInfo.
 
         Schema名称。
 
@@ -107,7 +107,7 @@ class SchemaInfo:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this SchemaInfo.
+        r"""Sets the schema_name of this SchemaInfo.
 
         Schema名称。
 
@@ -118,7 +118,7 @@ class SchemaInfo:
 
     @property
     def database_name(self):
-        """Gets the database_name of this SchemaInfo.
+        r"""Gets the database_name of this SchemaInfo.
 
         数据库名称。
 
@@ -129,7 +129,7 @@ class SchemaInfo:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this SchemaInfo.
+        r"""Sets the database_name of this SchemaInfo.
 
         数据库名称。
 
@@ -140,7 +140,7 @@ class SchemaInfo:
 
     @property
     def total_value(self):
-        """Gets the total_value of this SchemaInfo.
+        r"""Gets the total_value of this SchemaInfo.
 
         集群schema使用空间总值。
 
@@ -151,7 +151,7 @@ class SchemaInfo:
 
     @total_value.setter
     def total_value(self, total_value):
-        """Sets the total_value of this SchemaInfo.
+        r"""Sets the total_value of this SchemaInfo.
 
         集群schema使用空间总值。
 
@@ -162,7 +162,7 @@ class SchemaInfo:
 
     @property
     def perm_space(self):
-        """Gets the perm_space of this SchemaInfo.
+        r"""Gets the perm_space of this SchemaInfo.
 
         Schema空间阈值。
 
@@ -173,7 +173,7 @@ class SchemaInfo:
 
     @perm_space.setter
     def perm_space(self, perm_space):
-        """Sets the perm_space of this SchemaInfo.
+        r"""Sets the perm_space of this SchemaInfo.
 
         Schema空间阈值。
 
@@ -184,7 +184,7 @@ class SchemaInfo:
 
     @property
     def skew_percent(self):
-        """Gets the skew_percent of this SchemaInfo.
+        r"""Gets the skew_percent of this SchemaInfo.
 
         倾斜率。
 
@@ -195,7 +195,7 @@ class SchemaInfo:
 
     @skew_percent.setter
     def skew_percent(self, skew_percent):
-        """Sets the skew_percent of this SchemaInfo.
+        r"""Sets the skew_percent of this SchemaInfo.
 
         倾斜率。
 
@@ -206,7 +206,7 @@ class SchemaInfo:
 
     @property
     def min_value(self):
-        """Gets the min_value of this SchemaInfo.
+        r"""Gets the min_value of this SchemaInfo.
 
         最小值。
 
@@ -217,7 +217,7 @@ class SchemaInfo:
 
     @min_value.setter
     def min_value(self, min_value):
-        """Sets the min_value of this SchemaInfo.
+        r"""Sets the min_value of this SchemaInfo.
 
         最小值。
 
@@ -228,7 +228,7 @@ class SchemaInfo:
 
     @property
     def max_value(self):
-        """Gets the max_value of this SchemaInfo.
+        r"""Gets the max_value of this SchemaInfo.
 
         最大值。
 
@@ -239,7 +239,7 @@ class SchemaInfo:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this SchemaInfo.
+        r"""Sets the max_value of this SchemaInfo.
 
         最大值。
 
@@ -250,7 +250,7 @@ class SchemaInfo:
 
     @property
     def min_dn(self):
-        """Gets the min_dn of this SchemaInfo.
+        r"""Gets the min_dn of this SchemaInfo.
 
         最小dn节点。
 
@@ -261,7 +261,7 @@ class SchemaInfo:
 
     @min_dn.setter
     def min_dn(self, min_dn):
-        """Sets the min_dn of this SchemaInfo.
+        r"""Sets the min_dn of this SchemaInfo.
 
         最小dn节点。
 
@@ -272,7 +272,7 @@ class SchemaInfo:
 
     @property
     def max_dn(self):
-        """Gets the max_dn of this SchemaInfo.
+        r"""Gets the max_dn of this SchemaInfo.
 
         最大cn节点。
 
@@ -283,7 +283,7 @@ class SchemaInfo:
 
     @max_dn.setter
     def max_dn(self, max_dn):
-        """Sets the max_dn of this SchemaInfo.
+        r"""Sets the max_dn of this SchemaInfo.
 
         最大cn节点。
 
@@ -294,7 +294,7 @@ class SchemaInfo:
 
     @property
     def dn_num(self):
-        """Gets the dn_num of this SchemaInfo.
+        r"""Gets the dn_num of this SchemaInfo.
 
         dn节点数量。
 
@@ -305,7 +305,7 @@ class SchemaInfo:
 
     @dn_num.setter
     def dn_num(self, dn_num):
-        """Sets the dn_num of this SchemaInfo.
+        r"""Sets the dn_num of this SchemaInfo.
 
         dn节点数量。
 

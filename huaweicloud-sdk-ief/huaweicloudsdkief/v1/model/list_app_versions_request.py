@@ -31,7 +31,7 @@ class ListAppVersionsRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None, limit=None, offset=None):
-        """ListAppVersionsRequest
+        r"""ListAppVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAppVersionsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListAppVersionsRequest.
+        r"""Gets the ief_instance_id of this ListAppVersionsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -74,7 +74,7 @@ class ListAppVersionsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListAppVersionsRequest.
+        r"""Sets the ief_instance_id of this ListAppVersionsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -85,7 +85,7 @@ class ListAppVersionsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppVersionsRequest.
+        r"""Gets the app_id of this ListAppVersionsRequest.
 
         应用模板ID
 
@@ -96,7 +96,7 @@ class ListAppVersionsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppVersionsRequest.
+        r"""Sets the app_id of this ListAppVersionsRequest.
 
         应用模板ID
 
@@ -107,7 +107,7 @@ class ListAppVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppVersionsRequest.
+        r"""Gets the limit of this ListAppVersionsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认为1000
 
@@ -118,7 +118,7 @@ class ListAppVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppVersionsRequest.
+        r"""Sets the limit of this ListAppVersionsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认为1000
 
@@ -129,7 +129,7 @@ class ListAppVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppVersionsRequest.
+        r"""Gets the offset of this ListAppVersionsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -140,7 +140,7 @@ class ListAppVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppVersionsRequest.
+        r"""Sets the offset of this ListAppVersionsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 

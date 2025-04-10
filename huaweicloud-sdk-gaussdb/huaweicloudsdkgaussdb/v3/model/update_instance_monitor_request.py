@@ -29,7 +29,7 @@ class UpdateInstanceMonitorRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateInstanceMonitorRequest
+        r"""UpdateInstanceMonitorRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateInstanceMonitorRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateInstanceMonitorRequest.
+        r"""Gets the x_language of this UpdateInstanceMonitorRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateInstanceMonitorRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateInstanceMonitorRequest.
+        r"""Sets the x_language of this UpdateInstanceMonitorRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateInstanceMonitorRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceMonitorRequest.
+        r"""Gets the instance_id of this UpdateInstanceMonitorRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateInstanceMonitorRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceMonitorRequest.
+        r"""Sets the instance_id of this UpdateInstanceMonitorRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateInstanceMonitorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceMonitorRequest.
+        r"""Gets the body of this UpdateInstanceMonitorRequest.
 
         :return: The body of this UpdateInstanceMonitorRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyInstanceMonitorRequestBody`
@@ -109,7 +109,7 @@ class UpdateInstanceMonitorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceMonitorRequest.
+        r"""Sets the body of this UpdateInstanceMonitorRequest.
 
         :param body: The body of this UpdateInstanceMonitorRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyInstanceMonitorRequestBody`

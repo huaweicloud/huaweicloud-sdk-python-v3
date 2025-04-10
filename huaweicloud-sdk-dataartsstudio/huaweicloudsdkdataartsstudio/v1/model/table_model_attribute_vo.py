@@ -83,7 +83,7 @@ class TableModelAttributeVO:
     }
 
     def __init__(self, id=None, name_en=None, name_ch=None, description=None, obs_location=None, create_by=None, update_by=None, data_type=None, domain_type=None, data_type_extend=None, is_primary_key=None, is_partition_key=None, is_foreign_key=None, extend_field=None, not_null=None, ordinal=None, table_model_id=None, create_time=None, update_time=None, tags=None, secrecy_levels=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None, code=None, related_logic_attr_id=None, related_logic_attr_name=None, related_logic_attr_name_en=None):
-        """TableModelAttributeVO
+        r"""TableModelAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -242,7 +242,7 @@ class TableModelAttributeVO:
 
     @property
     def id(self):
-        """Gets the id of this TableModelAttributeVO.
+        r"""Gets the id of this TableModelAttributeVO.
 
         编码，ID字符串。
 
@@ -253,7 +253,7 @@ class TableModelAttributeVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TableModelAttributeVO.
+        r"""Sets the id of this TableModelAttributeVO.
 
         编码，ID字符串。
 
@@ -264,7 +264,7 @@ class TableModelAttributeVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this TableModelAttributeVO.
+        r"""Gets the name_en of this TableModelAttributeVO.
 
         字段名。
 
@@ -275,7 +275,7 @@ class TableModelAttributeVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this TableModelAttributeVO.
+        r"""Sets the name_en of this TableModelAttributeVO.
 
         字段名。
 
@@ -286,7 +286,7 @@ class TableModelAttributeVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this TableModelAttributeVO.
+        r"""Gets the name_ch of this TableModelAttributeVO.
 
         业务属性。
 
@@ -297,7 +297,7 @@ class TableModelAttributeVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this TableModelAttributeVO.
+        r"""Sets the name_ch of this TableModelAttributeVO.
 
         业务属性。
 
@@ -308,7 +308,7 @@ class TableModelAttributeVO:
 
     @property
     def description(self):
-        """Gets the description of this TableModelAttributeVO.
+        r"""Gets the description of this TableModelAttributeVO.
 
         描述。
 
@@ -319,7 +319,7 @@ class TableModelAttributeVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TableModelAttributeVO.
+        r"""Sets the description of this TableModelAttributeVO.
 
         描述。
 
@@ -330,7 +330,7 @@ class TableModelAttributeVO:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this TableModelAttributeVO.
+        r"""Gets the obs_location of this TableModelAttributeVO.
 
         obs路径，子路径。
 
@@ -341,7 +341,7 @@ class TableModelAttributeVO:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this TableModelAttributeVO.
+        r"""Sets the obs_location of this TableModelAttributeVO.
 
         obs路径，子路径。
 
@@ -352,7 +352,7 @@ class TableModelAttributeVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this TableModelAttributeVO.
+        r"""Gets the create_by of this TableModelAttributeVO.
 
         创建人。
 
@@ -363,7 +363,7 @@ class TableModelAttributeVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this TableModelAttributeVO.
+        r"""Sets the create_by of this TableModelAttributeVO.
 
         创建人。
 
@@ -374,7 +374,7 @@ class TableModelAttributeVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this TableModelAttributeVO.
+        r"""Gets the update_by of this TableModelAttributeVO.
 
         更新人。
 
@@ -385,7 +385,7 @@ class TableModelAttributeVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this TableModelAttributeVO.
+        r"""Sets the update_by of this TableModelAttributeVO.
 
         更新人。
 
@@ -396,7 +396,7 @@ class TableModelAttributeVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this TableModelAttributeVO.
+        r"""Gets the data_type of this TableModelAttributeVO.
 
         字段类型。
 
@@ -407,7 +407,7 @@ class TableModelAttributeVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this TableModelAttributeVO.
+        r"""Sets the data_type of this TableModelAttributeVO.
 
         字段类型。
 
@@ -418,7 +418,7 @@ class TableModelAttributeVO:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this TableModelAttributeVO.
+        r"""Gets the domain_type of this TableModelAttributeVO.
 
         :return: The domain_type of this TableModelAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -427,7 +427,7 @@ class TableModelAttributeVO:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this TableModelAttributeVO.
+        r"""Sets the domain_type of this TableModelAttributeVO.
 
         :param domain_type: The domain_type of this TableModelAttributeVO.
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -436,7 +436,7 @@ class TableModelAttributeVO:
 
     @property
     def data_type_extend(self):
-        """Gets the data_type_extend of this TableModelAttributeVO.
+        r"""Gets the data_type_extend of this TableModelAttributeVO.
 
         数据类型扩展字段。
 
@@ -447,7 +447,7 @@ class TableModelAttributeVO:
 
     @data_type_extend.setter
     def data_type_extend(self, data_type_extend):
-        """Sets the data_type_extend of this TableModelAttributeVO.
+        r"""Sets the data_type_extend of this TableModelAttributeVO.
 
         数据类型扩展字段。
 
@@ -458,7 +458,7 @@ class TableModelAttributeVO:
 
     @property
     def is_primary_key(self):
-        """Gets the is_primary_key of this TableModelAttributeVO.
+        r"""Gets the is_primary_key of this TableModelAttributeVO.
 
         是否主键。
 
@@ -469,7 +469,7 @@ class TableModelAttributeVO:
 
     @is_primary_key.setter
     def is_primary_key(self, is_primary_key):
-        """Sets the is_primary_key of this TableModelAttributeVO.
+        r"""Sets the is_primary_key of this TableModelAttributeVO.
 
         是否主键。
 
@@ -480,7 +480,7 @@ class TableModelAttributeVO:
 
     @property
     def is_partition_key(self):
-        """Gets the is_partition_key of this TableModelAttributeVO.
+        r"""Gets the is_partition_key of this TableModelAttributeVO.
 
         是否分区键。
 
@@ -491,7 +491,7 @@ class TableModelAttributeVO:
 
     @is_partition_key.setter
     def is_partition_key(self, is_partition_key):
-        """Sets the is_partition_key of this TableModelAttributeVO.
+        r"""Sets the is_partition_key of this TableModelAttributeVO.
 
         是否分区键。
 
@@ -502,7 +502,7 @@ class TableModelAttributeVO:
 
     @property
     def is_foreign_key(self):
-        """Gets the is_foreign_key of this TableModelAttributeVO.
+        r"""Gets the is_foreign_key of this TableModelAttributeVO.
 
         是否外键。
 
@@ -513,7 +513,7 @@ class TableModelAttributeVO:
 
     @is_foreign_key.setter
     def is_foreign_key(self, is_foreign_key):
-        """Sets the is_foreign_key of this TableModelAttributeVO.
+        r"""Sets the is_foreign_key of this TableModelAttributeVO.
 
         是否外键。
 
@@ -524,7 +524,7 @@ class TableModelAttributeVO:
 
     @property
     def extend_field(self):
-        """Gets the extend_field of this TableModelAttributeVO.
+        r"""Gets the extend_field of this TableModelAttributeVO.
 
         是否继承的属性。
 
@@ -535,7 +535,7 @@ class TableModelAttributeVO:
 
     @extend_field.setter
     def extend_field(self, extend_field):
-        """Sets the extend_field of this TableModelAttributeVO.
+        r"""Sets the extend_field of this TableModelAttributeVO.
 
         是否继承的属性。
 
@@ -546,7 +546,7 @@ class TableModelAttributeVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this TableModelAttributeVO.
+        r"""Gets the not_null of this TableModelAttributeVO.
 
         是否不为空。
 
@@ -557,7 +557,7 @@ class TableModelAttributeVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this TableModelAttributeVO.
+        r"""Sets the not_null of this TableModelAttributeVO.
 
         是否不为空。
 
@@ -568,7 +568,7 @@ class TableModelAttributeVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this TableModelAttributeVO.
+        r"""Gets the ordinal of this TableModelAttributeVO.
 
         序号。
 
@@ -579,7 +579,7 @@ class TableModelAttributeVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this TableModelAttributeVO.
+        r"""Sets the ordinal of this TableModelAttributeVO.
 
         序号。
 
@@ -590,7 +590,7 @@ class TableModelAttributeVO:
 
     @property
     def table_model_id(self):
-        """Gets the table_model_id of this TableModelAttributeVO.
+        r"""Gets the table_model_id of this TableModelAttributeVO.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -601,7 +601,7 @@ class TableModelAttributeVO:
 
     @table_model_id.setter
     def table_model_id(self, table_model_id):
-        """Sets the table_model_id of this TableModelAttributeVO.
+        r"""Sets the table_model_id of this TableModelAttributeVO.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -612,7 +612,7 @@ class TableModelAttributeVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TableModelAttributeVO.
+        r"""Gets the create_time of this TableModelAttributeVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -623,7 +623,7 @@ class TableModelAttributeVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TableModelAttributeVO.
+        r"""Sets the create_time of this TableModelAttributeVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -634,7 +634,7 @@ class TableModelAttributeVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TableModelAttributeVO.
+        r"""Gets the update_time of this TableModelAttributeVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -645,7 +645,7 @@ class TableModelAttributeVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TableModelAttributeVO.
+        r"""Sets the update_time of this TableModelAttributeVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -656,7 +656,7 @@ class TableModelAttributeVO:
 
     @property
     def tags(self):
-        """Gets the tags of this TableModelAttributeVO.
+        r"""Gets the tags of this TableModelAttributeVO.
 
         表标签，只读。
 
@@ -667,7 +667,7 @@ class TableModelAttributeVO:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TableModelAttributeVO.
+        r"""Sets the tags of this TableModelAttributeVO.
 
         表标签，只读。
 
@@ -678,7 +678,7 @@ class TableModelAttributeVO:
 
     @property
     def secrecy_levels(self):
-        """Gets the secrecy_levels of this TableModelAttributeVO.
+        r"""Gets the secrecy_levels of this TableModelAttributeVO.
 
         密级
 
@@ -689,7 +689,7 @@ class TableModelAttributeVO:
 
     @secrecy_levels.setter
     def secrecy_levels(self, secrecy_levels):
-        """Sets the secrecy_levels of this TableModelAttributeVO.
+        r"""Sets the secrecy_levels of this TableModelAttributeVO.
 
         密级
 
@@ -700,7 +700,7 @@ class TableModelAttributeVO:
 
     @property
     def stand_row_id(self):
-        """Gets the stand_row_id of this TableModelAttributeVO.
+        r"""Gets the stand_row_id of this TableModelAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -711,7 +711,7 @@ class TableModelAttributeVO:
 
     @stand_row_id.setter
     def stand_row_id(self, stand_row_id):
-        """Sets the stand_row_id of this TableModelAttributeVO.
+        r"""Sets the stand_row_id of this TableModelAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -722,7 +722,7 @@ class TableModelAttributeVO:
 
     @property
     def stand_row_name(self):
-        """Gets the stand_row_name of this TableModelAttributeVO.
+        r"""Gets the stand_row_name of this TableModelAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -733,7 +733,7 @@ class TableModelAttributeVO:
 
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
-        """Sets the stand_row_name of this TableModelAttributeVO.
+        r"""Sets the stand_row_name of this TableModelAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -744,7 +744,7 @@ class TableModelAttributeVO:
 
     @property
     def quality_infos(self):
-        """Gets the quality_infos of this TableModelAttributeVO.
+        r"""Gets the quality_infos of this TableModelAttributeVO.
 
         质量信息，只读。
 
@@ -755,7 +755,7 @@ class TableModelAttributeVO:
 
     @quality_infos.setter
     def quality_infos(self, quality_infos):
-        """Sets the quality_infos of this TableModelAttributeVO.
+        r"""Sets the quality_infos of this TableModelAttributeVO.
 
         质量信息，只读。
 
@@ -766,7 +766,7 @@ class TableModelAttributeVO:
 
     @property
     def alias(self):
-        """Gets the alias of this TableModelAttributeVO.
+        r"""Gets the alias of this TableModelAttributeVO.
 
         别名。
 
@@ -777,7 +777,7 @@ class TableModelAttributeVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this TableModelAttributeVO.
+        r"""Sets the alias of this TableModelAttributeVO.
 
         别名。
 
@@ -788,7 +788,7 @@ class TableModelAttributeVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this TableModelAttributeVO.
+        r"""Gets the self_defined_fields of this TableModelAttributeVO.
 
         自定义项。
 
@@ -799,7 +799,7 @@ class TableModelAttributeVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this TableModelAttributeVO.
+        r"""Sets the self_defined_fields of this TableModelAttributeVO.
 
         自定义项。
 
@@ -810,7 +810,7 @@ class TableModelAttributeVO:
 
     @property
     def code(self):
-        """Gets the code of this TableModelAttributeVO.
+        r"""Gets the code of this TableModelAttributeVO.
 
         逻辑属性编码
 
@@ -821,7 +821,7 @@ class TableModelAttributeVO:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this TableModelAttributeVO.
+        r"""Sets the code of this TableModelAttributeVO.
 
         逻辑属性编码
 
@@ -832,7 +832,7 @@ class TableModelAttributeVO:
 
     @property
     def related_logic_attr_id(self):
-        """Gets the related_logic_attr_id of this TableModelAttributeVO.
+        r"""Gets the related_logic_attr_id of this TableModelAttributeVO.
 
         关联逻辑属性ID，ID字符串。
 
@@ -843,7 +843,7 @@ class TableModelAttributeVO:
 
     @related_logic_attr_id.setter
     def related_logic_attr_id(self, related_logic_attr_id):
-        """Sets the related_logic_attr_id of this TableModelAttributeVO.
+        r"""Sets the related_logic_attr_id of this TableModelAttributeVO.
 
         关联逻辑属性ID，ID字符串。
 
@@ -854,7 +854,7 @@ class TableModelAttributeVO:
 
     @property
     def related_logic_attr_name(self):
-        """Gets the related_logic_attr_name of this TableModelAttributeVO.
+        r"""Gets the related_logic_attr_name of this TableModelAttributeVO.
 
         关联逻辑实体属性中文名称
 
@@ -865,7 +865,7 @@ class TableModelAttributeVO:
 
     @related_logic_attr_name.setter
     def related_logic_attr_name(self, related_logic_attr_name):
-        """Sets the related_logic_attr_name of this TableModelAttributeVO.
+        r"""Sets the related_logic_attr_name of this TableModelAttributeVO.
 
         关联逻辑实体属性中文名称
 
@@ -876,7 +876,7 @@ class TableModelAttributeVO:
 
     @property
     def related_logic_attr_name_en(self):
-        """Gets the related_logic_attr_name_en of this TableModelAttributeVO.
+        r"""Gets the related_logic_attr_name_en of this TableModelAttributeVO.
 
         关联逻辑实体属性英文名称
 
@@ -887,7 +887,7 @@ class TableModelAttributeVO:
 
     @related_logic_attr_name_en.setter
     def related_logic_attr_name_en(self, related_logic_attr_name_en):
-        """Sets the related_logic_attr_name_en of this TableModelAttributeVO.
+        r"""Sets the related_logic_attr_name_en of this TableModelAttributeVO.
 
         关联逻辑实体属性英文名称
 

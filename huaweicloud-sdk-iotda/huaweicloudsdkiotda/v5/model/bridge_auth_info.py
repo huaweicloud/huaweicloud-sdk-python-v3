@@ -27,7 +27,7 @@ class BridgeAuthInfo:
     }
 
     def __init__(self, auth_type=None, secret=None):
-        """BridgeAuthInfo
+        r"""BridgeAuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BridgeAuthInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this BridgeAuthInfo.
+        r"""Gets the auth_type of this BridgeAuthInfo.
 
         鉴权类型。当前支持密钥认证接入(SECRET)。使用密钥认证接入方式(SECRET)填写secret字段，不填写auth_type默认为密钥认证接入方式(SECRET)。
 
@@ -61,7 +61,7 @@ class BridgeAuthInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this BridgeAuthInfo.
+        r"""Sets the auth_type of this BridgeAuthInfo.
 
         鉴权类型。当前支持密钥认证接入(SECRET)。使用密钥认证接入方式(SECRET)填写secret字段，不填写auth_type默认为密钥认证接入方式(SECRET)。
 
@@ -72,7 +72,7 @@ class BridgeAuthInfo:
 
     @property
     def secret(self):
-        """Gets the secret of this BridgeAuthInfo.
+        r"""Gets the secret of this BridgeAuthInfo.
 
         网桥密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。
 
@@ -83,7 +83,7 @@ class BridgeAuthInfo:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this BridgeAuthInfo.
+        r"""Sets the secret of this BridgeAuthInfo.
 
         网桥密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。
 

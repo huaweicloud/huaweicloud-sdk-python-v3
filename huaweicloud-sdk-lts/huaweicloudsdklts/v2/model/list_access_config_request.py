@@ -25,7 +25,7 @@ class ListAccessConfigRequest:
     }
 
     def __init__(self, body=None):
-        """ListAccessConfigRequest
+        r"""ListAccessConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAccessConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAccessConfigRequest.
+        r"""Gets the body of this ListAccessConfigRequest.
 
         :return: The body of this ListAccessConfigRequest.
         :rtype: :class:`huaweicloudsdklts.v2.GetAccessConfigListRequestBody`
@@ -52,7 +52,7 @@ class ListAccessConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAccessConfigRequest.
+        r"""Sets the body of this ListAccessConfigRequest.
 
         :param body: The body of this ListAccessConfigRequest.
         :type body: :class:`huaweicloudsdklts.v2.GetAccessConfigListRequestBody`

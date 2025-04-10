@@ -25,7 +25,7 @@ class DeleteAlarmSubRequest:
     }
 
     def __init__(self, alarm_sub_id=None):
-        """DeleteAlarmSubRequest
+        r"""DeleteAlarmSubRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAlarmSubRequest:
 
     @property
     def alarm_sub_id(self):
-        """Gets the alarm_sub_id of this DeleteAlarmSubRequest.
+        r"""Gets the alarm_sub_id of this DeleteAlarmSubRequest.
 
         告警订阅ID
 
@@ -53,7 +53,7 @@ class DeleteAlarmSubRequest:
 
     @alarm_sub_id.setter
     def alarm_sub_id(self, alarm_sub_id):
-        """Sets the alarm_sub_id of this DeleteAlarmSubRequest.
+        r"""Sets the alarm_sub_id of this DeleteAlarmSubRequest.
 
         告警订阅ID
 

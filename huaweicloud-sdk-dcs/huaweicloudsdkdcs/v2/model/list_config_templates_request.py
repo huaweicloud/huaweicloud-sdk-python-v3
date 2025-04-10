@@ -41,7 +41,7 @@ class ListConfigTemplatesRequest:
     }
 
     def __init__(self, name=None, template_id=None, type=None, engine=None, engine_version=None, cache_mode=None, description=None, offset=None, limit=None):
-        """ListConfigTemplatesRequest
+        r"""ListConfigTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListConfigTemplatesRequest.
+        r"""Gets the name of this ListConfigTemplatesRequest.
 
         参数模板名称，支持模糊查找
 
@@ -109,7 +109,7 @@ class ListConfigTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConfigTemplatesRequest.
+        r"""Sets the name of this ListConfigTemplatesRequest.
 
         参数模板名称，支持模糊查找
 
@@ -120,7 +120,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ListConfigTemplatesRequest.
+        r"""Gets the template_id of this ListConfigTemplatesRequest.
 
         模板ID
 
@@ -131,7 +131,7 @@ class ListConfigTemplatesRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ListConfigTemplatesRequest.
+        r"""Sets the template_id of this ListConfigTemplatesRequest.
 
         模板ID
 
@@ -142,7 +142,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListConfigTemplatesRequest.
+        r"""Gets the type of this ListConfigTemplatesRequest.
 
         模板类型
 
@@ -153,7 +153,7 @@ class ListConfigTemplatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListConfigTemplatesRequest.
+        r"""Sets the type of this ListConfigTemplatesRequest.
 
         模板类型
 
@@ -164,7 +164,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListConfigTemplatesRequest.
+        r"""Gets the engine of this ListConfigTemplatesRequest.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -175,7 +175,7 @@ class ListConfigTemplatesRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListConfigTemplatesRequest.
+        r"""Sets the engine of this ListConfigTemplatesRequest.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -186,7 +186,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ListConfigTemplatesRequest.
+        r"""Gets the engine_version of this ListConfigTemplatesRequest.
 
         缓存版本。  当缓存引擎为Redis时，取值为[3.0/4.0/5.0](tag:ctc,cmc)[3.0/4.0/5.0/6.0](tag:ocb,otc,sbc,g42,tm)[4.0/5.0/6.0](tag:hws,hws_hk)。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -197,7 +197,7 @@ class ListConfigTemplatesRequest:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ListConfigTemplatesRequest.
+        r"""Sets the engine_version of this ListConfigTemplatesRequest.
 
         缓存版本。  当缓存引擎为Redis时，取值为[3.0/4.0/5.0](tag:ctc,cmc)[3.0/4.0/5.0/6.0](tag:ocb,otc,sbc,g42,tm)[4.0/5.0/6.0](tag:hws,hws_hk)。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -208,7 +208,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this ListConfigTemplatesRequest.
+        r"""Gets the cache_mode of this ListConfigTemplatesRequest.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split：表示读写分离实例](tag:hws) 
 
@@ -219,7 +219,7 @@ class ListConfigTemplatesRequest:
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this ListConfigTemplatesRequest.
+        r"""Sets the cache_mode of this ListConfigTemplatesRequest.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split：表示读写分离实例](tag:hws) 
 
@@ -230,7 +230,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListConfigTemplatesRequest.
+        r"""Gets the description of this ListConfigTemplatesRequest.
 
         模板的描述信息
 
@@ -241,7 +241,7 @@ class ListConfigTemplatesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListConfigTemplatesRequest.
+        r"""Sets the description of this ListConfigTemplatesRequest.
 
         模板的描述信息
 
@@ -252,7 +252,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConfigTemplatesRequest.
+        r"""Gets the offset of this ListConfigTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -263,7 +263,7 @@ class ListConfigTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConfigTemplatesRequest.
+        r"""Sets the offset of this ListConfigTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -274,7 +274,7 @@ class ListConfigTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigTemplatesRequest.
+        r"""Gets the limit of this ListConfigTemplatesRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
@@ -285,7 +285,7 @@ class ListConfigTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigTemplatesRequest.
+        r"""Sets the limit of this ListConfigTemplatesRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 

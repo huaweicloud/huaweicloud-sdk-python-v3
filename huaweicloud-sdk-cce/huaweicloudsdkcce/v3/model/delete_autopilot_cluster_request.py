@@ -37,7 +37,7 @@ class DeleteAutopilotClusterRequest:
     }
 
     def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_net=None, delete_obs=None, delete_sfs30=None, lts_reclaim_policy=None):
-        """DeleteAutopilotClusterRequest
+        r"""DeleteAutopilotClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteAutopilotClusterRequest.
+        r"""Gets the cluster_id of this DeleteAutopilotClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -95,7 +95,7 @@ class DeleteAutopilotClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteAutopilotClusterRequest.
+        r"""Sets the cluster_id of this DeleteAutopilotClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -106,7 +106,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def delete_efs(self):
-        """Gets the delete_efs of this DeleteAutopilotClusterRequest.
+        r"""Gets the delete_efs of this DeleteAutopilotClusterRequest.
 
         是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -117,7 +117,7 @@ class DeleteAutopilotClusterRequest:
 
     @delete_efs.setter
     def delete_efs(self, delete_efs):
-        """Sets the delete_efs of this DeleteAutopilotClusterRequest.
+        r"""Sets the delete_efs of this DeleteAutopilotClusterRequest.
 
         是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -128,7 +128,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def delete_eni(self):
-        """Gets the delete_eni of this DeleteAutopilotClusterRequest.
+        r"""Gets the delete_eni of this DeleteAutopilotClusterRequest.
 
         是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -139,7 +139,7 @@ class DeleteAutopilotClusterRequest:
 
     @delete_eni.setter
     def delete_eni(self, delete_eni):
-        """Sets the delete_eni of this DeleteAutopilotClusterRequest.
+        r"""Sets the delete_eni of this DeleteAutopilotClusterRequest.
 
         是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -150,7 +150,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def delete_net(self):
-        """Gets the delete_net of this DeleteAutopilotClusterRequest.
+        r"""Gets the delete_net of this DeleteAutopilotClusterRequest.
 
         是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -161,7 +161,7 @@ class DeleteAutopilotClusterRequest:
 
     @delete_net.setter
     def delete_net(self, delete_net):
-        """Sets the delete_net of this DeleteAutopilotClusterRequest.
+        r"""Sets the delete_net of this DeleteAutopilotClusterRequest.
 
         是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -172,7 +172,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def delete_obs(self):
-        """Gets the delete_obs of this DeleteAutopilotClusterRequest.
+        r"""Gets the delete_obs of this DeleteAutopilotClusterRequest.
 
         是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -183,7 +183,7 @@ class DeleteAutopilotClusterRequest:
 
     @delete_obs.setter
     def delete_obs(self, delete_obs):
-        """Sets the delete_obs of this DeleteAutopilotClusterRequest.
+        r"""Sets the delete_obs of this DeleteAutopilotClusterRequest.
 
         是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -194,7 +194,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def delete_sfs30(self):
-        """Gets the delete_sfs30 of this DeleteAutopilotClusterRequest.
+        r"""Gets the delete_sfs30 of this DeleteAutopilotClusterRequest.
 
         是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -205,7 +205,7 @@ class DeleteAutopilotClusterRequest:
 
     @delete_sfs30.setter
     def delete_sfs30(self, delete_sfs30):
-        """Sets the delete_sfs30 of this DeleteAutopilotClusterRequest.
+        r"""Sets the delete_sfs30 of this DeleteAutopilotClusterRequest.
 
         是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -216,7 +216,7 @@ class DeleteAutopilotClusterRequest:
 
     @property
     def lts_reclaim_policy(self):
-        """Gets the lts_reclaim_policy of this DeleteAutopilotClusterRequest.
+        r"""Gets the lts_reclaim_policy of this DeleteAutopilotClusterRequest.
 
         是否删除LTS资源（日志组/日志流）。 枚举取值： - Delete_Log_Group：删除日志组，失败则忽略，并继续执行后续流程。 - Delete_Master_Log_Stream：删除Master接入日志流，失败则忽略，并继续执行后续流程，默认选项。 - Retain：跳过删除流程。
 
@@ -227,7 +227,7 @@ class DeleteAutopilotClusterRequest:
 
     @lts_reclaim_policy.setter
     def lts_reclaim_policy(self, lts_reclaim_policy):
-        """Sets the lts_reclaim_policy of this DeleteAutopilotClusterRequest.
+        r"""Sets the lts_reclaim_policy of this DeleteAutopilotClusterRequest.
 
         是否删除LTS资源（日志组/日志流）。 枚举取值： - Delete_Log_Group：删除日志组，失败则忽略，并继续执行后续流程。 - Delete_Master_Log_Stream：删除Master接入日志流，失败则忽略，并继续执行后续流程，默认选项。 - Retain：跳过删除流程。
 

@@ -25,7 +25,7 @@ class ShowSecretEventRequest:
     }
 
     def __init__(self, event_name=None):
-        """ShowSecretEventRequest
+        r"""ShowSecretEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecretEventRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ShowSecretEventRequest.
+        r"""Gets the event_name of this ShowSecretEventRequest.
 
         事件通知的名称。
 
@@ -53,7 +53,7 @@ class ShowSecretEventRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ShowSecretEventRequest.
+        r"""Sets the event_name of this ShowSecretEventRequest.
 
         事件通知的名称。
 

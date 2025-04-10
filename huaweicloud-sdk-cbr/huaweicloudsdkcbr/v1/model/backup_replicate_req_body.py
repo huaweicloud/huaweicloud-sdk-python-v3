@@ -35,7 +35,7 @@ class BackupReplicateReqBody:
     }
 
     def __init__(self, description=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, name=None):
-        """BackupReplicateReqBody
+        r"""BackupReplicateReqBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class BackupReplicateReqBody:
 
     @property
     def description(self):
-        """Gets the description of this BackupReplicateReqBody.
+        r"""Gets the description of this BackupReplicateReqBody.
 
         复制的描述
 
@@ -86,7 +86,7 @@ class BackupReplicateReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupReplicateReqBody.
+        r"""Sets the description of this BackupReplicateReqBody.
 
         复制的描述
 
@@ -97,7 +97,7 @@ class BackupReplicateReqBody:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this BackupReplicateReqBody.
+        r"""Gets the destination_project_id of this BackupReplicateReqBody.
 
         复制的目标项目ID
 
@@ -108,7 +108,7 @@ class BackupReplicateReqBody:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this BackupReplicateReqBody.
+        r"""Sets the destination_project_id of this BackupReplicateReqBody.
 
         复制的目标项目ID
 
@@ -119,7 +119,7 @@ class BackupReplicateReqBody:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this BackupReplicateReqBody.
+        r"""Gets the destination_region of this BackupReplicateReqBody.
 
         复制的目标区域
 
@@ -130,7 +130,7 @@ class BackupReplicateReqBody:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this BackupReplicateReqBody.
+        r"""Sets the destination_region of this BackupReplicateReqBody.
 
         复制的目标区域
 
@@ -141,7 +141,7 @@ class BackupReplicateReqBody:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this BackupReplicateReqBody.
+        r"""Gets the destination_vault_id of this BackupReplicateReqBody.
 
         复制的目标区域的存储库ID
 
@@ -152,7 +152,7 @@ class BackupReplicateReqBody:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this BackupReplicateReqBody.
+        r"""Sets the destination_vault_id of this BackupReplicateReqBody.
 
         复制的目标区域的存储库ID
 
@@ -163,7 +163,7 @@ class BackupReplicateReqBody:
 
     @property
     def enable_acceleration(self):
-        """Gets the enable_acceleration of this BackupReplicateReqBody.
+        r"""Gets the enable_acceleration of this BackupReplicateReqBody.
 
         跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速。
 
@@ -174,7 +174,7 @@ class BackupReplicateReqBody:
 
     @enable_acceleration.setter
     def enable_acceleration(self, enable_acceleration):
-        """Sets the enable_acceleration of this BackupReplicateReqBody.
+        r"""Sets the enable_acceleration of this BackupReplicateReqBody.
 
         跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速。
 
@@ -185,7 +185,7 @@ class BackupReplicateReqBody:
 
     @property
     def name(self):
-        """Gets the name of this BackupReplicateReqBody.
+        r"""Gets the name of this BackupReplicateReqBody.
 
         复制名称
 
@@ -196,7 +196,7 @@ class BackupReplicateReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupReplicateReqBody.
+        r"""Sets the name of this BackupReplicateReqBody.
 
         复制名称
 

@@ -29,7 +29,7 @@ class UpdateCertReq:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """UpdateCertReq
+        r"""UpdateCertReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateCertReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateCertReq.
+        r"""Gets the api_version of this UpdateCertReq.
 
         :return: The api_version of this UpdateCertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class UpdateCertReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateCertReq.
+        r"""Sets the api_version of this UpdateCertReq.
 
         :param api_version: The api_version of this UpdateCertReq.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class UpdateCertReq:
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateCertReq.
+        r"""Gets the kind of this UpdateCertReq.
 
         :return: The kind of this UpdateCertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -81,7 +81,7 @@ class UpdateCertReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateCertReq.
+        r"""Sets the kind of this UpdateCertReq.
 
         :param kind: The kind of this UpdateCertReq.
         :type kind: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -90,7 +90,7 @@ class UpdateCertReq:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateCertReq.
+        r"""Gets the spec of this UpdateCertReq.
 
         :return: The spec of this UpdateCertReq.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateSpecCert`
@@ -99,7 +99,7 @@ class UpdateCertReq:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateCertReq.
+        r"""Sets the spec of this UpdateCertReq.
 
         :param spec: The spec of this UpdateCertReq.
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateSpecCert`

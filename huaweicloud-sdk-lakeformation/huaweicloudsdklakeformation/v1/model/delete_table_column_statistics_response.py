@@ -24,7 +24,7 @@ class DeleteTableColumnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTableColumnStatisticsResponse
+        r"""DeleteTableColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 

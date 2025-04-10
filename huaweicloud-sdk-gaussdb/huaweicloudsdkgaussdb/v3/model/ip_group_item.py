@@ -27,7 +27,7 @@ class IpGroupItem:
     }
 
     def __init__(self, ip=None, description=None):
-        """IpGroupItem
+        r"""IpGroupItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpGroupItem:
 
     @property
     def ip(self):
-        """Gets the ip of this IpGroupItem.
+        r"""Gets the ip of this IpGroupItem.
 
         ip或者网段
 
@@ -59,7 +59,7 @@ class IpGroupItem:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this IpGroupItem.
+        r"""Sets the ip of this IpGroupItem.
 
         ip或者网段
 
@@ -70,7 +70,7 @@ class IpGroupItem:
 
     @property
     def description(self):
-        """Gets the description of this IpGroupItem.
+        r"""Gets the description of this IpGroupItem.
 
         ip的描述
 
@@ -81,7 +81,7 @@ class IpGroupItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpGroupItem.
+        r"""Sets the description of this IpGroupItem.
 
         ip的描述
 

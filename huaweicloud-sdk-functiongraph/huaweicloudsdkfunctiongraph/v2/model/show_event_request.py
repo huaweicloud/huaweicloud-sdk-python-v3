@@ -27,7 +27,7 @@ class ShowEventRequest:
     }
 
     def __init__(self, function_urn=None, event_id=None):
-        """ShowEventRequest
+        r"""ShowEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEventRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ShowEventRequest.
+        r"""Gets the function_urn of this ShowEventRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class ShowEventRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ShowEventRequest.
+        r"""Sets the function_urn of this ShowEventRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class ShowEventRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ShowEventRequest.
+        r"""Gets the event_id of this ShowEventRequest.
 
         测试事件ID
 
@@ -81,7 +81,7 @@ class ShowEventRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ShowEventRequest.
+        r"""Sets the event_id of this ShowEventRequest.
 
         测试事件ID
 

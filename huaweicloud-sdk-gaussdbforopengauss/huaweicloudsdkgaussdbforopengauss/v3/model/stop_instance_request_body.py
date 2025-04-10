@@ -25,7 +25,7 @@ class StopInstanceRequestBody:
     }
 
     def __init__(self, node_ids=None):
-        """StopInstanceRequestBody
+        r"""StopInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopInstanceRequestBody:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this StopInstanceRequestBody.
+        r"""Gets the node_ids of this StopInstanceRequestBody.
 
         需要停止的节点的ID，取值不能为null，如果为空列表则停止整个实例
 
@@ -53,7 +53,7 @@ class StopInstanceRequestBody:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this StopInstanceRequestBody.
+        r"""Sets the node_ids of this StopInstanceRequestBody.
 
         需要停止的节点的ID，取值不能为null，如果为空列表则停止整个实例
 

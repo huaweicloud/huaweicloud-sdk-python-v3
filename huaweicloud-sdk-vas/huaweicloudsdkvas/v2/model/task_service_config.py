@@ -25,7 +25,7 @@ class TaskServiceConfig:
     }
 
     def __init__(self, common=None):
-        """TaskServiceConfig
+        r"""TaskServiceConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskServiceConfig:
 
     @property
     def common(self):
-        """Gets the common of this TaskServiceConfig.
+        r"""Gets the common of this TaskServiceConfig.
 
         作业运行时指定的具体的算法配置项，部分服务需填且必填。整体呈json格式，具体配置项参见相应算法服务的说明。
 
@@ -54,7 +54,7 @@ class TaskServiceConfig:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TaskServiceConfig.
+        r"""Sets the common of this TaskServiceConfig.
 
         作业运行时指定的具体的算法配置项，部分服务需填且必填。整体呈json格式，具体配置项参见相应算法服务的说明。
 

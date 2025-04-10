@@ -37,7 +37,7 @@ class ListChannelsRequest:
     }
 
     def __init__(self, offset=None, limit=None, sort=None, provider_type=None, name=None, fuzzy_name=None, enterprise_project_id=None):
-        """ListChannelsRequest
+        r"""ListChannelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListChannelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListChannelsRequest.
+        r"""Gets the offset of this ListChannelsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -96,7 +96,7 @@ class ListChannelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListChannelsRequest.
+        r"""Sets the offset of this ListChannelsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -107,7 +107,7 @@ class ListChannelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListChannelsRequest.
+        r"""Gets the limit of this ListChannelsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -118,7 +118,7 @@ class ListChannelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListChannelsRequest.
+        r"""Sets the limit of this ListChannelsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -129,7 +129,7 @@ class ListChannelsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListChannelsRequest.
+        r"""Gets the sort of this ListChannelsRequest.
 
         指定查询排序
 
@@ -140,7 +140,7 @@ class ListChannelsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListChannelsRequest.
+        r"""Sets the sort of this ListChannelsRequest.
 
         指定查询排序
 
@@ -151,7 +151,7 @@ class ListChannelsRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListChannelsRequest.
+        r"""Gets the provider_type of this ListChannelsRequest.
 
         指定查询提供方的类型
 
@@ -162,7 +162,7 @@ class ListChannelsRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListChannelsRequest.
+        r"""Sets the provider_type of this ListChannelsRequest.
 
         指定查询提供方的类型
 
@@ -173,7 +173,7 @@ class ListChannelsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListChannelsRequest.
+        r"""Gets the name of this ListChannelsRequest.
 
         指定查询的事件通道名称，精准匹配
 
@@ -184,7 +184,7 @@ class ListChannelsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListChannelsRequest.
+        r"""Sets the name of this ListChannelsRequest.
 
         指定查询的事件通道名称，精准匹配
 
@@ -195,7 +195,7 @@ class ListChannelsRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListChannelsRequest.
+        r"""Gets the fuzzy_name of this ListChannelsRequest.
 
         指定查询的事件通道名称，模糊匹配
 
@@ -206,7 +206,7 @@ class ListChannelsRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListChannelsRequest.
+        r"""Sets the fuzzy_name of this ListChannelsRequest.
 
         指定查询的事件通道名称，模糊匹配
 
@@ -217,7 +217,7 @@ class ListChannelsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListChannelsRequest.
+        r"""Gets the enterprise_project_id of this ListChannelsRequest.
 
         指定查询的企业项目id，精确匹配
 
@@ -228,7 +228,7 @@ class ListChannelsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListChannelsRequest.
+        r"""Sets the enterprise_project_id of this ListChannelsRequest.
 
         指定查询的企业项目id，精确匹配
 

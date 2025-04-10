@@ -46,7 +46,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, type=None, status=None, src_target=None, src_prefix=None, dest_target=None, dest_prefix=None, start_time=None, end_time=None, message=None, x_request_id=None):
-        """ShowHpcCacheTaskResponse
+        r"""ShowHpcCacheTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowHpcCacheTaskResponse.
+        r"""Gets the task_id of this ShowHpcCacheTaskResponse.
 
         任务ID
 
@@ -125,7 +125,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowHpcCacheTaskResponse.
+        r"""Sets the task_id of this ShowHpcCacheTaskResponse.
 
         任务ID
 
@@ -136,7 +136,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowHpcCacheTaskResponse.
+        r"""Gets the type of this ShowHpcCacheTaskResponse.
 
         任务类型
 
@@ -147,7 +147,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowHpcCacheTaskResponse.
+        r"""Sets the type of this ShowHpcCacheTaskResponse.
 
         任务类型
 
@@ -158,7 +158,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHpcCacheTaskResponse.
+        r"""Gets the status of this ShowHpcCacheTaskResponse.
 
         任务状态
 
@@ -169,7 +169,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHpcCacheTaskResponse.
+        r"""Sets the status of this ShowHpcCacheTaskResponse.
 
         任务状态
 
@@ -180,7 +180,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def src_target(self):
-        """Gets the src_target of this ShowHpcCacheTaskResponse.
+        r"""Gets the src_target of this ShowHpcCacheTaskResponse.
 
         联动目录名称
 
@@ -191,7 +191,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @src_target.setter
     def src_target(self, src_target):
-        """Sets the src_target of this ShowHpcCacheTaskResponse.
+        r"""Sets the src_target of this ShowHpcCacheTaskResponse.
 
         联动目录名称
 
@@ -202,7 +202,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def src_prefix(self):
-        """Gets the src_prefix of this ShowHpcCacheTaskResponse.
+        r"""Gets the src_prefix of this ShowHpcCacheTaskResponse.
 
         导入导出任务的源端路径前缀
 
@@ -213,7 +213,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @src_prefix.setter
     def src_prefix(self, src_prefix):
-        """Sets the src_prefix of this ShowHpcCacheTaskResponse.
+        r"""Sets the src_prefix of this ShowHpcCacheTaskResponse.
 
         导入导出任务的源端路径前缀
 
@@ -224,7 +224,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def dest_target(self):
-        """Gets the dest_target of this ShowHpcCacheTaskResponse.
+        r"""Gets the dest_target of this ShowHpcCacheTaskResponse.
 
         和src_target保持一致
 
@@ -235,7 +235,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @dest_target.setter
     def dest_target(self, dest_target):
-        """Sets the dest_target of this ShowHpcCacheTaskResponse.
+        r"""Sets the dest_target of this ShowHpcCacheTaskResponse.
 
         和src_target保持一致
 
@@ -246,7 +246,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def dest_prefix(self):
-        """Gets the dest_prefix of this ShowHpcCacheTaskResponse.
+        r"""Gets the dest_prefix of this ShowHpcCacheTaskResponse.
 
         和src_prefix保持一致
 
@@ -257,7 +257,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @dest_prefix.setter
     def dest_prefix(self, dest_prefix):
-        """Sets the dest_prefix of this ShowHpcCacheTaskResponse.
+        r"""Sets the dest_prefix of this ShowHpcCacheTaskResponse.
 
         和src_prefix保持一致
 
@@ -268,7 +268,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHpcCacheTaskResponse.
+        r"""Gets the start_time of this ShowHpcCacheTaskResponse.
 
         任务开始时间
 
@@ -279,7 +279,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHpcCacheTaskResponse.
+        r"""Sets the start_time of this ShowHpcCacheTaskResponse.
 
         任务开始时间
 
@@ -290,7 +290,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHpcCacheTaskResponse.
+        r"""Gets the end_time of this ShowHpcCacheTaskResponse.
 
         任务结束时间
 
@@ -301,7 +301,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHpcCacheTaskResponse.
+        r"""Sets the end_time of this ShowHpcCacheTaskResponse.
 
         任务结束时间
 
@@ -312,7 +312,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowHpcCacheTaskResponse.
+        r"""Gets the message of this ShowHpcCacheTaskResponse.
 
         任务执行结果信息
 
@@ -323,7 +323,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowHpcCacheTaskResponse.
+        r"""Sets the message of this ShowHpcCacheTaskResponse.
 
         任务执行结果信息
 
@@ -334,7 +334,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowHpcCacheTaskResponse.
+        r"""Gets the x_request_id of this ShowHpcCacheTaskResponse.
 
         :return: The x_request_id of this ShowHpcCacheTaskResponse.
         :rtype: str
@@ -343,7 +343,7 @@ class ShowHpcCacheTaskResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowHpcCacheTaskResponse.
+        r"""Sets the x_request_id of this ShowHpcCacheTaskResponse.
 
         :param x_request_id: The x_request_id of this ShowHpcCacheTaskResponse.
         :type x_request_id: str

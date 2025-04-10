@@ -27,7 +27,7 @@ class AccessControl:
     }
 
     def __init__(self, black=None, white=None):
-        """AccessControl
+        r"""AccessControl
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessControl:
 
     @property
     def black(self):
-        """Gets the black of this AccessControl.
+        r"""Gets the black of this AccessControl.
 
         黑名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
@@ -61,7 +61,7 @@ class AccessControl:
 
     @black.setter
     def black(self, black):
-        """Sets the black of this AccessControl.
+        r"""Sets the black of this AccessControl.
 
         黑名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
@@ -72,7 +72,7 @@ class AccessControl:
 
     @property
     def white(self):
-        """Gets the white of this AccessControl.
+        r"""Gets the white of this AccessControl.
 
         白名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 
@@ -83,7 +83,7 @@ class AccessControl:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this AccessControl.
+        r"""Sets the white of this AccessControl.
 
         白名单数组。 - 每行一个IP地址或网段，以回车结束。 - 每个IP地址组最多可添加300个IP地址或网段。 
 

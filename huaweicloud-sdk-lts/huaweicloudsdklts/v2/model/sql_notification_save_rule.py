@@ -33,7 +33,7 @@ class SqlNotificationSaveRule:
     }
 
     def __init__(self, language=None, timezone=None, user_name=None, topics=None, template_name=None):
-        """SqlNotificationSaveRule
+        r"""SqlNotificationSaveRule
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class SqlNotificationSaveRule:
 
     @property
     def language(self):
-        """Gets the language of this SqlNotificationSaveRule.
+        r"""Gets the language of this SqlNotificationSaveRule.
 
         首选项对应的语言
 
@@ -78,7 +78,7 @@ class SqlNotificationSaveRule:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SqlNotificationSaveRule.
+        r"""Sets the language of this SqlNotificationSaveRule.
 
         首选项对应的语言
 
@@ -89,7 +89,7 @@ class SqlNotificationSaveRule:
 
     @property
     def timezone(self):
-        """Gets the timezone of this SqlNotificationSaveRule.
+        r"""Gets the timezone of this SqlNotificationSaveRule.
 
         首选项对应的时区信息
 
@@ -100,7 +100,7 @@ class SqlNotificationSaveRule:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this SqlNotificationSaveRule.
+        r"""Sets the timezone of this SqlNotificationSaveRule.
 
         首选项对应的时区信息
 
@@ -111,7 +111,7 @@ class SqlNotificationSaveRule:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SqlNotificationSaveRule.
+        r"""Gets the user_name of this SqlNotificationSaveRule.
 
         用户名
 
@@ -122,7 +122,7 @@ class SqlNotificationSaveRule:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SqlNotificationSaveRule.
+        r"""Sets the user_name of this SqlNotificationSaveRule.
 
         用户名
 
@@ -133,7 +133,7 @@ class SqlNotificationSaveRule:
 
     @property
     def topics(self):
-        """Gets the topics of this SqlNotificationSaveRule.
+        r"""Gets the topics of this SqlNotificationSaveRule.
 
         主题信息
 
@@ -144,7 +144,7 @@ class SqlNotificationSaveRule:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this SqlNotificationSaveRule.
+        r"""Sets the topics of this SqlNotificationSaveRule.
 
         主题信息
 
@@ -155,7 +155,7 @@ class SqlNotificationSaveRule:
 
     @property
     def template_name(self):
-        """Gets the template_name of this SqlNotificationSaveRule.
+        r"""Gets the template_name of this SqlNotificationSaveRule.
 
         消息模板名称
 
@@ -166,7 +166,7 @@ class SqlNotificationSaveRule:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this SqlNotificationSaveRule.
+        r"""Sets the template_name of this SqlNotificationSaveRule.
 
         消息模板名称
 

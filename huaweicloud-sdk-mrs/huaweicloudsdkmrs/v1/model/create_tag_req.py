@@ -25,7 +25,7 @@ class CreateTagReq:
     }
 
     def __init__(self, tag=None):
-        """CreateTagReq
+        r"""CreateTagReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateTagReq:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateTagReq.
+        r"""Gets the tag of this CreateTagReq.
 
         :return: The tag of this CreateTagReq.
         :rtype: :class:`huaweicloudsdkmrs.v1.Tag`
@@ -51,7 +51,7 @@ class CreateTagReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateTagReq.
+        r"""Sets the tag of this CreateTagReq.
 
         :param tag: The tag of this CreateTagReq.
         :type tag: :class:`huaweicloudsdkmrs.v1.Tag`

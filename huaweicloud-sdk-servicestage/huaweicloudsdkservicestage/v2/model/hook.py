@@ -29,7 +29,7 @@ class Hook:
     }
 
     def __init__(self, id=None, type=None, callback_url=None):
-        """Hook
+        r"""Hook
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Hook:
 
     @property
     def id(self):
-        """Gets the id of this Hook.
+        r"""Gets the id of this Hook.
 
         hook ID。
 
@@ -65,7 +65,7 @@ class Hook:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Hook.
+        r"""Sets the id of this Hook.
 
         hook ID。
 
@@ -76,7 +76,7 @@ class Hook:
 
     @property
     def type(self):
-        """Gets the type of this Hook.
+        r"""Gets the type of this Hook.
 
         hook类型。
 
@@ -87,7 +87,7 @@ class Hook:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Hook.
+        r"""Sets the type of this Hook.
 
         hook类型。
 
@@ -98,7 +98,7 @@ class Hook:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this Hook.
+        r"""Gets the callback_url of this Hook.
 
         回滚URL。
 
@@ -109,7 +109,7 @@ class Hook:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this Hook.
+        r"""Sets the callback_url of this Hook.
 
         回滚URL。
 

@@ -26,7 +26,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None):
-        """CreateDeploymentGroupResponse
+        r"""CreateDeploymentGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateDeploymentGroupResponse.
+        r"""Gets the group_id of this CreateDeploymentGroupResponse.
 
         主机集群id
 
@@ -55,7 +55,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateDeploymentGroupResponse.
+        r"""Sets the group_id of this CreateDeploymentGroupResponse.
 
         主机集群id
 

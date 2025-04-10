@@ -29,7 +29,7 @@ class ShowDataRequest:
     }
 
     def __init__(self, x_need_content=None, eihealth_project_id=None, path=None):
-        """ShowDataRequest
+        r"""ShowDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDataRequest:
 
     @property
     def x_need_content(self):
-        """Gets the x_need_content of this ShowDataRequest.
+        r"""Gets the x_need_content of this ShowDataRequest.
 
         返回文件内容
 
@@ -66,7 +66,7 @@ class ShowDataRequest:
 
     @x_need_content.setter
     def x_need_content(self, x_need_content):
-        """Sets the x_need_content of this ShowDataRequest.
+        r"""Sets the x_need_content of this ShowDataRequest.
 
         返回文件内容
 
@@ -77,7 +77,7 @@ class ShowDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowDataRequest.
+        r"""Gets the eihealth_project_id of this ShowDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -88,7 +88,7 @@ class ShowDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowDataRequest.
+        r"""Sets the eihealth_project_id of this ShowDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -99,7 +99,7 @@ class ShowDataRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowDataRequest.
+        r"""Gets the path of this ShowDataRequest.
 
         对象全路径（项目名称:|路径）
 
@@ -110,7 +110,7 @@ class ShowDataRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowDataRequest.
+        r"""Sets the path of this ShowDataRequest.
 
         对象全路径（项目名称:|路径）
 

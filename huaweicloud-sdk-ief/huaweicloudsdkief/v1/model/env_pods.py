@@ -27,7 +27,7 @@ class EnvPods:
     }
 
     def __init__(self, name=None, value=None):
-        """EnvPods
+        r"""EnvPods
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EnvPods:
 
     @property
     def name(self):
-        """Gets the name of this EnvPods.
+        r"""Gets the name of this EnvPods.
 
         环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
 
@@ -60,7 +60,7 @@ class EnvPods:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvPods.
+        r"""Sets the name of this EnvPods.
 
         环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
 
@@ -71,7 +71,7 @@ class EnvPods:
 
     @property
     def value(self):
-        """Gets the value of this EnvPods.
+        r"""Gets the value of this EnvPods.
 
         环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
 
@@ -82,7 +82,7 @@ class EnvPods:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnvPods.
+        r"""Sets the value of this EnvPods.
 
         环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
 

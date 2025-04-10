@@ -25,7 +25,7 @@ class ModifyEpsQuotasRequest:
     }
 
     def __init__(self, body=None):
-        """ModifyEpsQuotasRequest
+        r"""ModifyEpsQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyEpsQuotasRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyEpsQuotasRequest.
+        r"""Gets the body of this ModifyEpsQuotasRequest.
 
         :return: The body of this ModifyEpsQuotasRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlModiflyEpsQuotasRequestBody`
@@ -52,7 +52,7 @@ class ModifyEpsQuotasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyEpsQuotasRequest.
+        r"""Sets the body of this ModifyEpsQuotasRequest.
 
         :param body: The body of this ModifyEpsQuotasRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlModiflyEpsQuotasRequestBody`

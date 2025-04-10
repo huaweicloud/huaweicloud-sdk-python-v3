@@ -31,7 +31,7 @@ class ListResOnlineServiceDetailsRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, category=None):
-        """ListResOnlineServiceDetailsRequest
+        r"""ListResOnlineServiceDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListResOnlineServiceDetailsRequest.
+        r"""Gets the content_type of this ListResOnlineServiceDetailsRequest.
 
         内容类型，取值为application/json。
 
@@ -71,7 +71,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListResOnlineServiceDetailsRequest.
+        r"""Sets the content_type of this ListResOnlineServiceDetailsRequest.
 
         内容类型，取值为application/json。
 
@@ -82,7 +82,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListResOnlineServiceDetailsRequest.
+        r"""Gets the workspace_id of this ListResOnlineServiceDetailsRequest.
 
         工作空间id。
 
@@ -93,7 +93,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListResOnlineServiceDetailsRequest.
+        r"""Sets the workspace_id of this ListResOnlineServiceDetailsRequest.
 
         工作空间id。
 
@@ -104,7 +104,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListResOnlineServiceDetailsRequest.
+        r"""Gets the resource_id of this ListResOnlineServiceDetailsRequest.
 
         资源id。
 
@@ -115,7 +115,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListResOnlineServiceDetailsRequest.
+        r"""Sets the resource_id of this ListResOnlineServiceDetailsRequest.
 
         资源id。
 
@@ -126,7 +126,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListResOnlineServiceDetailsRequest.
+        r"""Gets the category of this ListResOnlineServiceDetailsRequest.
 
         服务类别： - SERVICE，在线服务
 
@@ -137,7 +137,7 @@ class ListResOnlineServiceDetailsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListResOnlineServiceDetailsRequest.
+        r"""Sets the category of this ListResOnlineServiceDetailsRequest.
 
         服务类别： - SERVICE，在线服务
 

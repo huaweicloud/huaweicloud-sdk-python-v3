@@ -28,7 +28,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ListTakeOverTaskResponse
+        r"""ListTakeOverTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTakeOverTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListTakeOverTaskResponse.
+        r"""Gets the tasks of this ListTakeOverTaskResponse.
 
         托管任务信息。
 
@@ -62,7 +62,7 @@ class ListTakeOverTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListTakeOverTaskResponse.
+        r"""Sets the tasks of this ListTakeOverTaskResponse.
 
         托管任务信息。
 
@@ -73,7 +73,7 @@ class ListTakeOverTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTakeOverTaskResponse.
+        r"""Gets the total of this ListTakeOverTaskResponse.
 
         任务数量。
 
@@ -84,7 +84,7 @@ class ListTakeOverTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTakeOverTaskResponse.
+        r"""Sets the total of this ListTakeOverTaskResponse.
 
         任务数量。
 

@@ -32,7 +32,7 @@ class BatchImportSecretsResponse(SdkResponse):
     }
 
     def __init__(self, error_list=None, total=None, success=None, failed=None):
-        """BatchImportSecretsResponse
+        r"""BatchImportSecretsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @property
     def error_list(self):
-        """Gets the error_list of this BatchImportSecretsResponse.
+        r"""Gets the error_list of this BatchImportSecretsResponse.
 
         失败描述
 
@@ -76,7 +76,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @error_list.setter
     def error_list(self, error_list):
-        """Sets the error_list of this BatchImportSecretsResponse.
+        r"""Sets the error_list of this BatchImportSecretsResponse.
 
         失败描述
 
@@ -87,7 +87,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this BatchImportSecretsResponse.
+        r"""Gets the total of this BatchImportSecretsResponse.
 
         总条数
 
@@ -98,7 +98,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BatchImportSecretsResponse.
+        r"""Sets the total of this BatchImportSecretsResponse.
 
         总条数
 
@@ -109,7 +109,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this BatchImportSecretsResponse.
+        r"""Gets the success of this BatchImportSecretsResponse.
 
         成功条数
 
@@ -120,7 +120,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchImportSecretsResponse.
+        r"""Sets the success of this BatchImportSecretsResponse.
 
         成功条数
 
@@ -131,7 +131,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @property
     def failed(self):
-        """Gets the failed of this BatchImportSecretsResponse.
+        r"""Gets the failed of this BatchImportSecretsResponse.
 
         失败条数
 
@@ -142,7 +142,7 @@ class BatchImportSecretsResponse(SdkResponse):
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this BatchImportSecretsResponse.
+        r"""Sets the failed of this BatchImportSecretsResponse.
 
         失败条数
 

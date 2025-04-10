@@ -31,7 +31,7 @@ class TaskTimingFrequency:
     }
 
     def __init__(self, interval=None, duration=None, begin_at=None, end_at=None):
-        """TaskTimingFrequency
+        r"""TaskTimingFrequency
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class TaskTimingFrequency:
 
     @property
     def interval(self):
-        """Gets the interval of this TaskTimingFrequency.
+        r"""Gets the interval of this TaskTimingFrequency.
 
         相邻两次执行之间的间隔，频率模式必填。取值范围在5~720之间，单位：分钟。
 
@@ -73,7 +73,7 @@ class TaskTimingFrequency:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this TaskTimingFrequency.
+        r"""Sets the interval of this TaskTimingFrequency.
 
         相邻两次执行之间的间隔，频率模式必填。取值范围在5~720之间，单位：分钟。
 
@@ -84,7 +84,7 @@ class TaskTimingFrequency:
 
     @property
     def duration(self):
-        """Gets the duration of this TaskTimingFrequency.
+        r"""Gets the duration of this TaskTimingFrequency.
 
         单次执行的运行时长，频率模式必填。取值范围在5~720之间，单位：分钟。
 
@@ -95,7 +95,7 @@ class TaskTimingFrequency:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this TaskTimingFrequency.
+        r"""Sets the duration of this TaskTimingFrequency.
 
         单次执行的运行时长，频率模式必填。取值范围在5~720之间，单位：分钟。
 
@@ -106,7 +106,7 @@ class TaskTimingFrequency:
 
     @property
     def begin_at(self):
-        """Gets the begin_at of this TaskTimingFrequency.
+        r"""Gets the begin_at of this TaskTimingFrequency.
 
         单日内执行的起始时间，选填。格式形如hh:mm:ss。
 
@@ -117,7 +117,7 @@ class TaskTimingFrequency:
 
     @begin_at.setter
     def begin_at(self, begin_at):
-        """Sets the begin_at of this TaskTimingFrequency.
+        r"""Sets the begin_at of this TaskTimingFrequency.
 
         单日内执行的起始时间，选填。格式形如hh:mm:ss。
 
@@ -128,7 +128,7 @@ class TaskTimingFrequency:
 
     @property
     def end_at(self):
-        """Gets the end_at of this TaskTimingFrequency.
+        r"""Gets the end_at of this TaskTimingFrequency.
 
         单日内执行的结束时间，选填。格式形如hh:mm:ss。
 
@@ -139,7 +139,7 @@ class TaskTimingFrequency:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this TaskTimingFrequency.
+        r"""Sets the end_at of this TaskTimingFrequency.
 
         单日内执行的结束时间，选填。格式形如hh:mm:ss。
 

@@ -28,7 +28,7 @@ class ShowExtremumInfoResponse(SdkResponse):
     }
 
     def __init__(self, maximum=None, minimum=None):
-        """ShowExtremumInfoResponse
+        r"""ShowExtremumInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowExtremumInfoResponse(SdkResponse):
 
     @property
     def maximum(self):
-        """Gets the maximum of this ShowExtremumInfoResponse.
+        r"""Gets the maximum of this ShowExtremumInfoResponse.
 
         :return: The maximum of this ShowExtremumInfoResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`
@@ -60,7 +60,7 @@ class ShowExtremumInfoResponse(SdkResponse):
 
     @maximum.setter
     def maximum(self, maximum):
-        """Sets the maximum of this ShowExtremumInfoResponse.
+        r"""Sets the maximum of this ShowExtremumInfoResponse.
 
         :param maximum: The maximum of this ShowExtremumInfoResponse.
         :type maximum: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`
@@ -69,7 +69,7 @@ class ShowExtremumInfoResponse(SdkResponse):
 
     @property
     def minimum(self):
-        """Gets the minimum of this ShowExtremumInfoResponse.
+        r"""Gets the minimum of this ShowExtremumInfoResponse.
 
         :return: The minimum of this ShowExtremumInfoResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`
@@ -78,7 +78,7 @@ class ShowExtremumInfoResponse(SdkResponse):
 
     @minimum.setter
     def minimum(self, minimum):
-        """Sets the minimum of this ShowExtremumInfoResponse.
+        r"""Sets the minimum of this ShowExtremumInfoResponse.
 
         :param minimum: The minimum of this ShowExtremumInfoResponse.
         :type minimum: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`

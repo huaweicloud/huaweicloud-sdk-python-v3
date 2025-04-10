@@ -29,7 +29,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     }
 
     def __init__(self, charging_mode=None, product_id=None, order_id=None):
-        """ShowCloudPhoneServerDetailResponseBodyMetadata
+        r"""ShowCloudPhoneServerDetailResponseBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        r"""Gets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
         计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
 
@@ -68,7 +68,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        r"""Sets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
         计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
 
@@ -79,7 +79,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        r"""Gets the product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
         产品ID，不超过64个字节。
 
@@ -90,7 +90,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        r"""Sets the product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
         产品ID，不超过64个字节。
 
@@ -101,7 +101,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        r"""Gets the order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
         订单ID，不超过64个字节。
 
@@ -112,7 +112,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
+        r"""Sets the order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
         订单ID，不超过64个字节。
 

@@ -29,7 +29,7 @@ class ParameterGroup:
     }
 
     def __init__(self, id=None, name=None, status=None):
-        """ParameterGroup
+        r"""ParameterGroup
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ParameterGroup:
 
     @property
     def id(self):
-        """Gets the id of this ParameterGroup.
+        r"""Gets the id of this ParameterGroup.
 
         参数组ID
 
@@ -65,7 +65,7 @@ class ParameterGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ParameterGroup.
+        r"""Sets the id of this ParameterGroup.
 
         参数组ID
 
@@ -76,7 +76,7 @@ class ParameterGroup:
 
     @property
     def name(self):
-        """Gets the name of this ParameterGroup.
+        r"""Gets the name of this ParameterGroup.
 
         参数组名称
 
@@ -87,7 +87,7 @@ class ParameterGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParameterGroup.
+        r"""Sets the name of this ParameterGroup.
 
         参数组名称
 
@@ -98,7 +98,7 @@ class ParameterGroup:
 
     @property
     def status(self):
-        """Gets the status of this ParameterGroup.
+        r"""Gets the status of this ParameterGroup.
 
         集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
 
@@ -109,7 +109,7 @@ class ParameterGroup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ParameterGroup.
+        r"""Sets the status of this ParameterGroup.
 
         集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
 

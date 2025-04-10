@@ -30,7 +30,7 @@ class DeleteRepoMemberResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteRepoMemberResponse
+        r"""DeleteRepoMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteRepoMemberResponse.
+        r"""Gets the error of this DeleteRepoMemberResponse.
 
         :return: The error of this DeleteRepoMemberResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteRepoMemberResponse.
+        r"""Sets the error of this DeleteRepoMemberResponse.
 
         :param error: The error of this DeleteRepoMemberResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteRepoMemberResponse.
+        r"""Gets the result of this DeleteRepoMemberResponse.
 
         :return: The result of this DeleteRepoMemberResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Empty`
@@ -85,7 +85,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteRepoMemberResponse.
+        r"""Sets the result of this DeleteRepoMemberResponse.
 
         :param result: The result of this DeleteRepoMemberResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Empty`
@@ -94,7 +94,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteRepoMemberResponse.
+        r"""Gets the status of this DeleteRepoMemberResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class DeleteRepoMemberResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteRepoMemberResponse.
+        r"""Sets the status of this DeleteRepoMemberResponse.
 
         响应状态
 

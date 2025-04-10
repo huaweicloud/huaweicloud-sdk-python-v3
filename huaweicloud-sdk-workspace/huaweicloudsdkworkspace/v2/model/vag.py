@@ -95,7 +95,7 @@ class Vag:
     }
 
     def __init__(self, id=None, project_id=None, site_id=None, vag_ip=None, private_ip=None, private_ipv6=None, vag_port_id=None, ssh_user=None, ssh_pwd=None, vm_id=None, name=None, internal_ip=None, internal_ipv6=None, internal_port_id=None, external_ip=None, external_id=None, root_user=None, root_pwd=None, status=None, availability_zone=None, create_time=None, create_time_str=None, state=None, number_of_online_user=None, running_status=None, domain_id=None, version=None, latest_version=None, access_edge_version=None, tenant_lock=None, resource_pool_id=None, role=None, resource_pool_type=None, edge_sk=None, has_heartbeat=None, user_count=None):
-        """Vag
+        r"""Vag
 
         The model defined in huaweicloud sdk
 
@@ -288,7 +288,7 @@ class Vag:
 
     @property
     def id(self):
-        """Gets the id of this Vag.
+        r"""Gets the id of this Vag.
 
         vAG信息ID
 
@@ -299,7 +299,7 @@ class Vag:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Vag.
+        r"""Sets the id of this Vag.
 
         vAG信息ID
 
@@ -310,7 +310,7 @@ class Vag:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Vag.
+        r"""Gets the project_id of this Vag.
 
         项目ID
 
@@ -321,7 +321,7 @@ class Vag:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Vag.
+        r"""Sets the project_id of this Vag.
 
         项目ID
 
@@ -332,7 +332,7 @@ class Vag:
 
     @property
     def site_id(self):
-        """Gets the site_id of this Vag.
+        r"""Gets the site_id of this Vag.
 
         站点ID
 
@@ -343,7 +343,7 @@ class Vag:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this Vag.
+        r"""Sets the site_id of this Vag.
 
         站点ID
 
@@ -354,7 +354,7 @@ class Vag:
 
     @property
     def vag_ip(self):
-        """Gets the vag_ip of this Vag.
+        r"""Gets the vag_ip of this Vag.
 
         vAG IP，与管理节点相同的IP
 
@@ -365,7 +365,7 @@ class Vag:
 
     @vag_ip.setter
     def vag_ip(self, vag_ip):
-        """Sets the vag_ip of this Vag.
+        r"""Sets the vag_ip of this Vag.
 
         vAG IP，与管理节点相同的IP
 
@@ -376,7 +376,7 @@ class Vag:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this Vag.
+        r"""Gets the private_ip of this Vag.
 
         vAG内网IP，HDA往这个IP上报心跳
 
@@ -387,7 +387,7 @@ class Vag:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this Vag.
+        r"""Sets the private_ip of this Vag.
 
         vAG内网IP，HDA往这个IP上报心跳
 
@@ -398,7 +398,7 @@ class Vag:
 
     @property
     def private_ipv6(self):
-        """Gets the private_ipv6 of this Vag.
+        r"""Gets the private_ipv6 of this Vag.
 
         vAG内网IPv6
 
@@ -409,7 +409,7 @@ class Vag:
 
     @private_ipv6.setter
     def private_ipv6(self, private_ipv6):
-        """Sets the private_ipv6 of this Vag.
+        r"""Sets the private_ipv6 of this Vag.
 
         vAG内网IPv6
 
@@ -420,7 +420,7 @@ class Vag:
 
     @property
     def vag_port_id(self):
-        """Gets the vag_port_id of this Vag.
+        r"""Gets the vag_port_id of this Vag.
 
         vAG端口ID，与管理节点相同的端口的ID
 
@@ -431,7 +431,7 @@ class Vag:
 
     @vag_port_id.setter
     def vag_port_id(self, vag_port_id):
-        """Sets the vag_port_id of this Vag.
+        r"""Sets the vag_port_id of this Vag.
 
         vAG端口ID，与管理节点相同的端口的ID
 
@@ -442,7 +442,7 @@ class Vag:
 
     @property
     def ssh_user(self):
-        """Gets the ssh_user of this Vag.
+        r"""Gets the ssh_user of this Vag.
 
         SSH用户的名称，固定为gandalf
 
@@ -453,7 +453,7 @@ class Vag:
 
     @ssh_user.setter
     def ssh_user(self, ssh_user):
-        """Sets the ssh_user of this Vag.
+        r"""Sets the ssh_user of this Vag.
 
         SSH用户的名称，固定为gandalf
 
@@ -464,7 +464,7 @@ class Vag:
 
     @property
     def ssh_pwd(self):
-        """Gets the ssh_pwd of this Vag.
+        r"""Gets the ssh_pwd of this Vag.
 
         SSH用户的密码
 
@@ -475,7 +475,7 @@ class Vag:
 
     @ssh_pwd.setter
     def ssh_pwd(self, ssh_pwd):
-        """Sets the ssh_pwd of this Vag.
+        r"""Sets the ssh_pwd of this Vag.
 
         SSH用户的密码
 
@@ -486,7 +486,7 @@ class Vag:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this Vag.
+        r"""Gets the vm_id of this Vag.
 
         vAG所属ECS的ID
 
@@ -497,7 +497,7 @@ class Vag:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this Vag.
+        r"""Sets the vm_id of this Vag.
 
         vAG所属ECS的ID
 
@@ -508,7 +508,7 @@ class Vag:
 
     @property
     def name(self):
-        """Gets the name of this Vag.
+        r"""Gets the name of this Vag.
 
         vAG所属机器名
 
@@ -519,7 +519,7 @@ class Vag:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Vag.
+        r"""Sets the name of this Vag.
 
         vAG所属机器名
 
@@ -530,7 +530,7 @@ class Vag:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this Vag.
+        r"""Gets the internal_ip of this Vag.
 
         vAG内部通信IP，最终租户VPC的子网IP
 
@@ -541,7 +541,7 @@ class Vag:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this Vag.
+        r"""Sets the internal_ip of this Vag.
 
         vAG内部通信IP，最终租户VPC的子网IP
 
@@ -552,7 +552,7 @@ class Vag:
 
     @property
     def internal_ipv6(self):
-        """Gets the internal_ipv6 of this Vag.
+        r"""Gets the internal_ipv6 of this Vag.
 
         vAG内部通信IPV6
 
@@ -563,7 +563,7 @@ class Vag:
 
     @internal_ipv6.setter
     def internal_ipv6(self, internal_ipv6):
-        """Sets the internal_ipv6 of this Vag.
+        r"""Sets the internal_ipv6 of this Vag.
 
         vAG内部通信IPV6
 
@@ -574,7 +574,7 @@ class Vag:
 
     @property
     def internal_port_id(self):
-        """Gets the internal_port_id of this Vag.
+        r"""Gets the internal_port_id of this Vag.
 
         vAG内部通信端口ID，最终租户VPC的子网中端口的ID
 
@@ -585,7 +585,7 @@ class Vag:
 
     @internal_port_id.setter
     def internal_port_id(self, internal_port_id):
-        """Sets the internal_port_id of this Vag.
+        r"""Sets the internal_port_id of this Vag.
 
         vAG内部通信端口ID，最终租户VPC的子网中端口的ID
 
@@ -596,7 +596,7 @@ class Vag:
 
     @property
     def external_ip(self):
-        """Gets the external_ip of this Vag.
+        r"""Gets the external_ip of this Vag.
 
         外部通信IP，可能独立的EIP
 
@@ -607,7 +607,7 @@ class Vag:
 
     @external_ip.setter
     def external_ip(self, external_ip):
-        """Sets the external_ip of this Vag.
+        r"""Sets the external_ip of this Vag.
 
         外部通信IP，可能独立的EIP
 
@@ -618,7 +618,7 @@ class Vag:
 
     @property
     def external_id(self):
-        """Gets the external_id of this Vag.
+        r"""Gets the external_id of this Vag.
 
         外部通信ID，可能独立的EIP ID
 
@@ -629,7 +629,7 @@ class Vag:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this Vag.
+        r"""Sets the external_id of this Vag.
 
         外部通信ID，可能独立的EIP ID
 
@@ -640,7 +640,7 @@ class Vag:
 
     @property
     def root_user(self):
-        """Gets the root_user of this Vag.
+        r"""Gets the root_user of this Vag.
 
         root用户的名称，固定为root
 
@@ -651,7 +651,7 @@ class Vag:
 
     @root_user.setter
     def root_user(self, root_user):
-        """Sets the root_user of this Vag.
+        r"""Sets the root_user of this Vag.
 
         root用户的名称，固定为root
 
@@ -662,7 +662,7 @@ class Vag:
 
     @property
     def root_pwd(self):
-        """Gets the root_pwd of this Vag.
+        r"""Gets the root_pwd of this Vag.
 
         root用户的密码
 
@@ -673,7 +673,7 @@ class Vag:
 
     @root_pwd.setter
     def root_pwd(self, root_pwd):
-        """Sets the root_pwd of this Vag.
+        r"""Sets the root_pwd of this Vag.
 
         root用户的密码
 
@@ -684,7 +684,7 @@ class Vag:
 
     @property
     def status(self):
-        """Gets the status of this Vag.
+        r"""Gets the status of this Vag.
 
         vag操作状态
 
@@ -695,7 +695,7 @@ class Vag:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Vag.
+        r"""Sets the status of this Vag.
 
         vag操作状态
 
@@ -706,7 +706,7 @@ class Vag:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Vag.
+        r"""Gets the availability_zone of this Vag.
 
         可用分区
 
@@ -717,7 +717,7 @@ class Vag:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Vag.
+        r"""Sets the availability_zone of this Vag.
 
         可用分区
 
@@ -728,7 +728,7 @@ class Vag:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Vag.
+        r"""Gets the create_time of this Vag.
 
         创建时间
 
@@ -739,7 +739,7 @@ class Vag:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Vag.
+        r"""Sets the create_time of this Vag.
 
         创建时间
 
@@ -750,7 +750,7 @@ class Vag:
 
     @property
     def create_time_str(self):
-        """Gets the create_time_str of this Vag.
+        r"""Gets the create_time_str of this Vag.
 
         创建时间字符串
 
@@ -761,7 +761,7 @@ class Vag:
 
     @create_time_str.setter
     def create_time_str(self, create_time_str):
-        """Sets the create_time_str of this Vag.
+        r"""Sets the create_time_str of this Vag.
 
         创建时间字符串
 
@@ -772,7 +772,7 @@ class Vag:
 
     @property
     def state(self):
-        """Gets the state of this Vag.
+        r"""Gets the state of this Vag.
 
         vag服务状态 NOT_USE：维护，ON_USE：启用，CANCELLATION：退服
 
@@ -783,7 +783,7 @@ class Vag:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Vag.
+        r"""Sets the state of this Vag.
 
         vag服务状态 NOT_USE：维护，ON_USE：启用，CANCELLATION：退服
 
@@ -794,7 +794,7 @@ class Vag:
 
     @property
     def number_of_online_user(self):
-        """Gets the number_of_online_user of this Vag.
+        r"""Gets the number_of_online_user of this Vag.
 
         在线用户数
 
@@ -805,7 +805,7 @@ class Vag:
 
     @number_of_online_user.setter
     def number_of_online_user(self, number_of_online_user):
-        """Sets the number_of_online_user of this Vag.
+        r"""Sets the number_of_online_user of this Vag.
 
         在线用户数
 
@@ -816,7 +816,7 @@ class Vag:
 
     @property
     def running_status(self):
-        """Gets the running_status of this Vag.
+        r"""Gets the running_status of this Vag.
 
         vag运行状态
 
@@ -827,7 +827,7 @@ class Vag:
 
     @running_status.setter
     def running_status(self, running_status):
-        """Sets the running_status of this Vag.
+        r"""Sets the running_status of this Vag.
 
         vag运行状态
 
@@ -838,7 +838,7 @@ class Vag:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Vag.
+        r"""Gets the domain_id of this Vag.
 
         租户侧domainId
 
@@ -849,7 +849,7 @@ class Vag:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Vag.
+        r"""Sets the domain_id of this Vag.
 
         租户侧domainId
 
@@ -860,7 +860,7 @@ class Vag:
 
     @property
     def version(self):
-        """Gets the version of this Vag.
+        r"""Gets the version of this Vag.
 
         vag当前版本号
 
@@ -871,7 +871,7 @@ class Vag:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Vag.
+        r"""Sets the version of this Vag.
 
         vag当前版本号
 
@@ -882,7 +882,7 @@ class Vag:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this Vag.
+        r"""Gets the latest_version of this Vag.
 
         vag最新版本号。
 
@@ -893,7 +893,7 @@ class Vag:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this Vag.
+        r"""Sets the latest_version of this Vag.
 
         vag最新版本号。
 
@@ -904,7 +904,7 @@ class Vag:
 
     @property
     def access_edge_version(self):
-        """Gets the access_edge_version of this Vag.
+        r"""Gets the access_edge_version of this Vag.
 
         wksAccessEdge版本号
 
@@ -915,7 +915,7 @@ class Vag:
 
     @access_edge_version.setter
     def access_edge_version(self, access_edge_version):
-        """Sets the access_edge_version of this Vag.
+        r"""Sets the access_edge_version of this Vag.
 
         wksAccessEdge版本号
 
@@ -926,7 +926,7 @@ class Vag:
 
     @property
     def tenant_lock(self):
-        """Gets the tenant_lock of this Vag.
+        r"""Gets the tenant_lock of this Vag.
 
         项目是否被锁定 0是未锁定 1是锁定
 
@@ -937,7 +937,7 @@ class Vag:
 
     @tenant_lock.setter
     def tenant_lock(self, tenant_lock):
-        """Sets the tenant_lock of this Vag.
+        r"""Sets the tenant_lock of this Vag.
 
         项目是否被锁定 0是未锁定 1是锁定
 
@@ -948,7 +948,7 @@ class Vag:
 
     @property
     def resource_pool_id(self):
-        """Gets the resource_pool_id of this Vag.
+        r"""Gets the resource_pool_id of this Vag.
 
         资源池id
 
@@ -959,7 +959,7 @@ class Vag:
 
     @resource_pool_id.setter
     def resource_pool_id(self, resource_pool_id):
-        """Sets the resource_pool_id of this Vag.
+        r"""Sets the resource_pool_id of this Vag.
 
         资源池id
 
@@ -970,7 +970,7 @@ class Vag:
 
     @property
     def role(self):
-        """Gets the role of this Vag.
+        r"""Gets the role of this Vag.
 
         agent角色，如：vag,vap4down,vap4up,authConnector
 
@@ -981,7 +981,7 @@ class Vag:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this Vag.
+        r"""Sets the role of this Vag.
 
         agent角色，如：vag,vap4down,vap4up,authConnector
 
@@ -992,7 +992,7 @@ class Vag:
 
     @property
     def resource_pool_type(self):
-        """Gets the resource_pool_type of this Vag.
+        r"""Gets the resource_pool_type of this Vag.
 
         资源池类型，public,private
 
@@ -1003,7 +1003,7 @@ class Vag:
 
     @resource_pool_type.setter
     def resource_pool_type(self, resource_pool_type):
-        """Sets the resource_pool_type of this Vag.
+        r"""Sets the resource_pool_type of this Vag.
 
         资源池类型，public,private
 
@@ -1014,7 +1014,7 @@ class Vag:
 
     @property
     def edge_sk(self):
-        """Gets the edge_sk of this Vag.
+        r"""Gets the edge_sk of this Vag.
 
         边缘sk
 
@@ -1025,7 +1025,7 @@ class Vag:
 
     @edge_sk.setter
     def edge_sk(self, edge_sk):
-        """Sets the edge_sk of this Vag.
+        r"""Sets the edge_sk of this Vag.
 
         边缘sk
 
@@ -1036,7 +1036,7 @@ class Vag:
 
     @property
     def has_heartbeat(self):
-        """Gets the has_heartbeat of this Vag.
+        r"""Gets the has_heartbeat of this Vag.
 
         是否有心跳
 
@@ -1047,7 +1047,7 @@ class Vag:
 
     @has_heartbeat.setter
     def has_heartbeat(self, has_heartbeat):
-        """Sets the has_heartbeat of this Vag.
+        r"""Sets the has_heartbeat of this Vag.
 
         是否有心跳
 
@@ -1058,7 +1058,7 @@ class Vag:
 
     @property
     def user_count(self):
-        """Gets the user_count of this Vag.
+        r"""Gets the user_count of this Vag.
 
         VAG负载个数
 
@@ -1069,7 +1069,7 @@ class Vag:
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this Vag.
+        r"""Sets the user_count of this Vag.
 
         VAG负载个数
 

@@ -27,7 +27,7 @@ class UpdateEnterpriseRouterRequest:
     }
 
     def __init__(self, er_id=None, body=None):
-        """UpdateEnterpriseRouterRequest
+        r"""UpdateEnterpriseRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEnterpriseRouterRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this UpdateEnterpriseRouterRequest.
+        r"""Gets the er_id of this UpdateEnterpriseRouterRequest.
 
         企业路由器实例ID
 
@@ -60,7 +60,7 @@ class UpdateEnterpriseRouterRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this UpdateEnterpriseRouterRequest.
+        r"""Sets the er_id of this UpdateEnterpriseRouterRequest.
 
         企业路由器实例ID
 
@@ -71,7 +71,7 @@ class UpdateEnterpriseRouterRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnterpriseRouterRequest.
+        r"""Gets the body of this UpdateEnterpriseRouterRequest.
 
         :return: The body of this UpdateEnterpriseRouterRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequestBody`
@@ -80,7 +80,7 @@ class UpdateEnterpriseRouterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnterpriseRouterRequest.
+        r"""Sets the body of this UpdateEnterpriseRouterRequest.
 
         :param body: The body of this UpdateEnterpriseRouterRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequestBody`

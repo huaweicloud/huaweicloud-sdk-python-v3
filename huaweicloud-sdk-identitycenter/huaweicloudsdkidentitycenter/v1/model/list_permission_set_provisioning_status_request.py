@@ -34,7 +34,7 @@ class ListPermissionSetProvisioningStatusRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, limit=None, marker=None, status=None):
-        """ListPermissionSetProvisioningStatusRequest
+        r"""ListPermissionSetProvisioningStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListPermissionSetProvisioningStatusRequest.
+        r"""Gets the x_security_token of this ListPermissionSetProvisioningStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListPermissionSetProvisioningStatusRequest.
+        r"""Sets the x_security_token of this ListPermissionSetProvisioningStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPermissionSetProvisioningStatusRequest.
+        r"""Gets the instance_id of this ListPermissionSetProvisioningStatusRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -104,7 +104,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPermissionSetProvisioningStatusRequest.
+        r"""Sets the instance_id of this ListPermissionSetProvisioningStatusRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -115,7 +115,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermissionSetProvisioningStatusRequest.
+        r"""Gets the limit of this ListPermissionSetProvisioningStatusRequest.
 
         每个请求返回的最大结果数
 
@@ -126,7 +126,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermissionSetProvisioningStatusRequest.
+        r"""Sets the limit of this ListPermissionSetProvisioningStatusRequest.
 
         每个请求返回的最大结果数
 
@@ -137,7 +137,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPermissionSetProvisioningStatusRequest.
+        r"""Gets the marker of this ListPermissionSetProvisioningStatusRequest.
 
         分页标记
 
@@ -148,7 +148,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPermissionSetProvisioningStatusRequest.
+        r"""Sets the marker of this ListPermissionSetProvisioningStatusRequest.
 
         分页标记
 
@@ -159,7 +159,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPermissionSetProvisioningStatusRequest.
+        r"""Gets the status of this ListPermissionSetProvisioningStatusRequest.
 
         根据传递的属性值过滤操作状态列表
 
@@ -170,7 +170,7 @@ class ListPermissionSetProvisioningStatusRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPermissionSetProvisioningStatusRequest.
+        r"""Sets the status of this ListPermissionSetProvisioningStatusRequest.
 
         根据传递的属性值过滤操作状态列表
 

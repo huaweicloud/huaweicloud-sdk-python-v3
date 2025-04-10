@@ -28,7 +28,7 @@ class EstimateAddResourcesResponse(SdkResponse):
     }
 
     def __init__(self, currency=None, cloud_service_rating_results=None):
-        """EstimateAddResourcesResponse
+        r"""EstimateAddResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class EstimateAddResourcesResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this EstimateAddResourcesResponse.
+        r"""Gets the currency of this EstimateAddResourcesResponse.
 
         币种，比如CNY
 
@@ -62,7 +62,7 @@ class EstimateAddResourcesResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this EstimateAddResourcesResponse.
+        r"""Sets the currency of this EstimateAddResourcesResponse.
 
         币种，比如CNY
 
@@ -73,7 +73,7 @@ class EstimateAddResourcesResponse(SdkResponse):
 
     @property
     def cloud_service_rating_results(self):
-        """Gets the cloud_service_rating_results of this EstimateAddResourcesResponse.
+        r"""Gets the cloud_service_rating_results of this EstimateAddResourcesResponse.
 
         询价结果
 
@@ -84,7 +84,7 @@ class EstimateAddResourcesResponse(SdkResponse):
 
     @cloud_service_rating_results.setter
     def cloud_service_rating_results(self, cloud_service_rating_results):
-        """Sets the cloud_service_rating_results of this EstimateAddResourcesResponse.
+        r"""Sets the cloud_service_rating_results of this EstimateAddResourcesResponse.
 
         询价结果
 

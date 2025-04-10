@@ -26,7 +26,7 @@ class ListRelationResponse(SdkResponse):
     }
 
     def __init__(self, case_relation_list=None):
-        """ListRelationResponse
+        r"""ListRelationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRelationResponse(SdkResponse):
 
     @property
     def case_relation_list(self):
-        """Gets the case_relation_list of this ListRelationResponse.
+        r"""Gets the case_relation_list of this ListRelationResponse.
 
         关联工单列表
 
@@ -55,7 +55,7 @@ class ListRelationResponse(SdkResponse):
 
     @case_relation_list.setter
     def case_relation_list(self, case_relation_list):
-        """Sets the case_relation_list of this ListRelationResponse.
+        r"""Sets the case_relation_list of this ListRelationResponse.
 
         关联工单列表
 

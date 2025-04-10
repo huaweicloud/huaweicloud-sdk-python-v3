@@ -27,7 +27,7 @@ class DeleteRecordSetsRequest:
     }
 
     def __init__(self, zone_id=None, recordset_id=None):
-        """DeleteRecordSetsRequest
+        r"""DeleteRecordSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRecordSetsRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this DeleteRecordSetsRequest.
+        r"""Gets the zone_id of this DeleteRecordSetsRequest.
 
         Record Set所属的zone_id。
 
@@ -59,7 +59,7 @@ class DeleteRecordSetsRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this DeleteRecordSetsRequest.
+        r"""Sets the zone_id of this DeleteRecordSetsRequest.
 
         Record Set所属的zone_id。
 
@@ -70,7 +70,7 @@ class DeleteRecordSetsRequest:
 
     @property
     def recordset_id(self):
-        """Gets the recordset_id of this DeleteRecordSetsRequest.
+        r"""Gets the recordset_id of this DeleteRecordSetsRequest.
 
         Record Set的id信息。
 
@@ -81,7 +81,7 @@ class DeleteRecordSetsRequest:
 
     @recordset_id.setter
     def recordset_id(self, recordset_id):
-        """Sets the recordset_id of this DeleteRecordSetsRequest.
+        r"""Sets the recordset_id of this DeleteRecordSetsRequest.
 
         Record Set的id信息。
 

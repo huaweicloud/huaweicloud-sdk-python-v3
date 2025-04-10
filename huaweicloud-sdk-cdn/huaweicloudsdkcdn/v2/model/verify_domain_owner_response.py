@@ -28,7 +28,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """VerifyDomainOwnerResponse
+        r"""VerifyDomainOwnerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this VerifyDomainOwnerResponse.
+        r"""Gets the result of this VerifyDomainOwnerResponse.
 
         验证是否通过，true：通过，false：不通过。
 
@@ -62,7 +62,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this VerifyDomainOwnerResponse.
+        r"""Sets the result of this VerifyDomainOwnerResponse.
 
         验证是否通过，true：通过，false：不通过。
 
@@ -73,7 +73,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this VerifyDomainOwnerResponse.
+        r"""Gets the x_request_id of this VerifyDomainOwnerResponse.
 
         :return: The x_request_id of this VerifyDomainOwnerResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class VerifyDomainOwnerResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this VerifyDomainOwnerResponse.
+        r"""Sets the x_request_id of this VerifyDomainOwnerResponse.
 
         :param x_request_id: The x_request_id of this VerifyDomainOwnerResponse.
         :type x_request_id: str

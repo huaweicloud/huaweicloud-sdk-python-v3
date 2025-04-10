@@ -35,7 +35,7 @@ class ListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, enterprise_project_id=None):
-        """ListSecurityGroupsRequest
+        r"""ListSecurityGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityGroupsRequest.
+        r"""Gets the limit of this ListSecurityGroupsRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -89,7 +89,7 @@ class ListSecurityGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityGroupsRequest.
+        r"""Sets the limit of this ListSecurityGroupsRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -100,7 +100,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecurityGroupsRequest.
+        r"""Gets the marker of this ListSecurityGroupsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -111,7 +111,7 @@ class ListSecurityGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecurityGroupsRequest.
+        r"""Sets the marker of this ListSecurityGroupsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -122,7 +122,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSecurityGroupsRequest.
+        r"""Gets the id of this ListSecurityGroupsRequest.
 
         功能说明：安全组资源ID。可以使用该字段精确过滤安全组，支持多个ID
 
@@ -133,7 +133,7 @@ class ListSecurityGroupsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSecurityGroupsRequest.
+        r"""Sets the id of this ListSecurityGroupsRequest.
 
         功能说明：安全组资源ID。可以使用该字段精确过滤安全组，支持多个ID
 
@@ -144,7 +144,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecurityGroupsRequest.
+        r"""Gets the name of this ListSecurityGroupsRequest.
 
         功能说明：安全组名称。可以使用该字段精确过滤满足条件的安全组，支持传入多个name过滤
 
@@ -155,7 +155,7 @@ class ListSecurityGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecurityGroupsRequest.
+        r"""Sets the name of this ListSecurityGroupsRequest.
 
         功能说明：安全组名称。可以使用该字段精确过滤满足条件的安全组，支持传入多个name过滤
 
@@ -166,7 +166,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListSecurityGroupsRequest.
+        r"""Gets the description of this ListSecurityGroupsRequest.
 
         功能说明：安全组描述新增。可以使用该字段精确过滤安全组，支持传入多个描述进行过滤
 
@@ -177,7 +177,7 @@ class ListSecurityGroupsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListSecurityGroupsRequest.
+        r"""Sets the description of this ListSecurityGroupsRequest.
 
         功能说明：安全组描述新增。可以使用该字段精确过滤安全组，支持传入多个描述进行过滤
 
@@ -188,7 +188,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSecurityGroupsRequest.
+        r"""Gets the enterprise_project_id of this ListSecurityGroupsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 约束：若需要查询当前用户所有有权限查看企业项目绑定的安全组，请传参all_granted_eps。
 
@@ -199,7 +199,7 @@ class ListSecurityGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSecurityGroupsRequest.
+        r"""Sets the enterprise_project_id of this ListSecurityGroupsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 约束：若需要查询当前用户所有有权限查看企业项目绑定的安全组，请传参all_granted_eps。
 

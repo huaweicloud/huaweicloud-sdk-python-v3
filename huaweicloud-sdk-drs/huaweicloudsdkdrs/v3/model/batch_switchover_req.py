@@ -25,7 +25,7 @@ class BatchSwitchoverReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchSwitchoverReq
+        r"""BatchSwitchoverReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchSwitchoverReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchSwitchoverReq.
+        r"""Gets the jobs of this BatchSwitchoverReq.
 
         批量主备调换的任务详情ID请求列表
 
@@ -53,7 +53,7 @@ class BatchSwitchoverReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchSwitchoverReq.
+        r"""Sets the jobs of this BatchSwitchoverReq.
 
         批量主备调换的任务详情ID请求列表
 

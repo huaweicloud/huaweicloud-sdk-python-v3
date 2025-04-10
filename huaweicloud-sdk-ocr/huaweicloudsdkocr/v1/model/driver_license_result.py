@@ -65,7 +65,7 @@ class DriverLicenseResult:
     }
 
     def __init__(self, type=None, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, accumulated_scores=None, status=None, generation_date=None, current_time=None, text_location=None, front=None, back=None):
-        """DriverLicenseResult
+        r"""DriverLicenseResult
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class DriverLicenseResult:
 
     @property
     def type(self):
-        """Gets the type of this DriverLicenseResult.
+        r"""Gets the type of this DriverLicenseResult.
 
         驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
 
@@ -194,7 +194,7 @@ class DriverLicenseResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DriverLicenseResult.
+        r"""Sets the type of this DriverLicenseResult.
 
         驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
 
@@ -205,7 +205,7 @@ class DriverLicenseResult:
 
     @property
     def number(self):
-        """Gets the number of this DriverLicenseResult.
+        r"""Gets the number of this DriverLicenseResult.
 
         驾驶证号。 
 
@@ -216,7 +216,7 @@ class DriverLicenseResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this DriverLicenseResult.
+        r"""Sets the number of this DriverLicenseResult.
 
         驾驶证号。 
 
@@ -227,7 +227,7 @@ class DriverLicenseResult:
 
     @property
     def name(self):
-        """Gets the name of this DriverLicenseResult.
+        r"""Gets the name of this DriverLicenseResult.
 
         姓名。 
 
@@ -238,7 +238,7 @@ class DriverLicenseResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DriverLicenseResult.
+        r"""Sets the name of this DriverLicenseResult.
 
         姓名。 
 
@@ -249,7 +249,7 @@ class DriverLicenseResult:
 
     @property
     def sex(self):
-        """Gets the sex of this DriverLicenseResult.
+        r"""Gets the sex of this DriverLicenseResult.
 
         性别。 
 
@@ -260,7 +260,7 @@ class DriverLicenseResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this DriverLicenseResult.
+        r"""Sets the sex of this DriverLicenseResult.
 
         性别。 
 
@@ -271,7 +271,7 @@ class DriverLicenseResult:
 
     @property
     def nationality(self):
-        """Gets the nationality of this DriverLicenseResult.
+        r"""Gets the nationality of this DriverLicenseResult.
 
         国籍。 
 
@@ -282,7 +282,7 @@ class DriverLicenseResult:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this DriverLicenseResult.
+        r"""Sets the nationality of this DriverLicenseResult.
 
         国籍。 
 
@@ -293,7 +293,7 @@ class DriverLicenseResult:
 
     @property
     def address(self):
-        """Gets the address of this DriverLicenseResult.
+        r"""Gets the address of this DriverLicenseResult.
 
         住址。 
 
@@ -304,7 +304,7 @@ class DriverLicenseResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this DriverLicenseResult.
+        r"""Sets the address of this DriverLicenseResult.
 
         住址。 
 
@@ -315,7 +315,7 @@ class DriverLicenseResult:
 
     @property
     def birth(self):
-        """Gets the birth of this DriverLicenseResult.
+        r"""Gets the birth of this DriverLicenseResult.
 
         出生日期。 
 
@@ -326,7 +326,7 @@ class DriverLicenseResult:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this DriverLicenseResult.
+        r"""Sets the birth of this DriverLicenseResult.
 
         出生日期。 
 
@@ -337,7 +337,7 @@ class DriverLicenseResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this DriverLicenseResult.
+        r"""Gets the issue_date of this DriverLicenseResult.
 
         初次领证日期。 
 
@@ -348,7 +348,7 @@ class DriverLicenseResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this DriverLicenseResult.
+        r"""Sets the issue_date of this DriverLicenseResult.
 
         初次领证日期。 
 
@@ -359,7 +359,7 @@ class DriverLicenseResult:
 
     @property
     def _class(self):
-        """Gets the _class of this DriverLicenseResult.
+        r"""Gets the _class of this DriverLicenseResult.
 
         准驾类型。 
 
@@ -370,7 +370,7 @@ class DriverLicenseResult:
 
     @_class.setter
     def _class(self, _class):
-        """Sets the _class of this DriverLicenseResult.
+        r"""Sets the _class of this DriverLicenseResult.
 
         准驾类型。 
 
@@ -381,7 +381,7 @@ class DriverLicenseResult:
 
     @property
     def valid_from(self):
-        """Gets the valid_from of this DriverLicenseResult.
+        r"""Gets the valid_from of this DriverLicenseResult.
 
         有效起始日期。 
 
@@ -392,7 +392,7 @@ class DriverLicenseResult:
 
     @valid_from.setter
     def valid_from(self, valid_from):
-        """Sets the valid_from of this DriverLicenseResult.
+        r"""Sets the valid_from of this DriverLicenseResult.
 
         有效起始日期。 
 
@@ -403,7 +403,7 @@ class DriverLicenseResult:
 
     @property
     def valid_to(self):
-        """Gets the valid_to of this DriverLicenseResult.
+        r"""Gets the valid_to of this DriverLicenseResult.
 
         有效结束日期。 
 
@@ -414,7 +414,7 @@ class DriverLicenseResult:
 
     @valid_to.setter
     def valid_to(self, valid_to):
-        """Sets the valid_to of this DriverLicenseResult.
+        r"""Sets the valid_to of this DriverLicenseResult.
 
         有效结束日期。 
 
@@ -425,7 +425,7 @@ class DriverLicenseResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this DriverLicenseResult.
+        r"""Gets the issuing_authority of this DriverLicenseResult.
 
         发证机关。 
 
@@ -436,7 +436,7 @@ class DriverLicenseResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this DriverLicenseResult.
+        r"""Sets the issuing_authority of this DriverLicenseResult.
 
         发证机关。 
 
@@ -447,7 +447,7 @@ class DriverLicenseResult:
 
     @property
     def file_number(self):
-        """Gets the file_number of this DriverLicenseResult.
+        r"""Gets the file_number of this DriverLicenseResult.
 
         档案编号。 
 
@@ -458,7 +458,7 @@ class DriverLicenseResult:
 
     @file_number.setter
     def file_number(self, file_number):
-        """Sets the file_number of this DriverLicenseResult.
+        r"""Sets the file_number of this DriverLicenseResult.
 
         档案编号。 
 
@@ -469,7 +469,7 @@ class DriverLicenseResult:
 
     @property
     def record(self):
-        """Gets the record of this DriverLicenseResult.
+        r"""Gets the record of this DriverLicenseResult.
 
         记录。 
 
@@ -480,7 +480,7 @@ class DriverLicenseResult:
 
     @record.setter
     def record(self, record):
-        """Sets the record of this DriverLicenseResult.
+        r"""Sets the record of this DriverLicenseResult.
 
         记录。 
 
@@ -491,7 +491,7 @@ class DriverLicenseResult:
 
     @property
     def accumulated_scores(self):
-        """Gets the accumulated_scores of this DriverLicenseResult.
+        r"""Gets the accumulated_scores of this DriverLicenseResult.
 
         累积记分。 
 
@@ -502,7 +502,7 @@ class DriverLicenseResult:
 
     @accumulated_scores.setter
     def accumulated_scores(self, accumulated_scores):
-        """Sets the accumulated_scores of this DriverLicenseResult.
+        r"""Sets the accumulated_scores of this DriverLicenseResult.
 
         累积记分。 
 
@@ -513,7 +513,7 @@ class DriverLicenseResult:
 
     @property
     def status(self):
-        """Gets the status of this DriverLicenseResult.
+        r"""Gets the status of this DriverLicenseResult.
 
         状态。
 
@@ -524,7 +524,7 @@ class DriverLicenseResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DriverLicenseResult.
+        r"""Sets the status of this DriverLicenseResult.
 
         状态。
 
@@ -535,7 +535,7 @@ class DriverLicenseResult:
 
     @property
     def generation_date(self):
-        """Gets the generation_date of this DriverLicenseResult.
+        r"""Gets the generation_date of this DriverLicenseResult.
 
         生成时间。 
 
@@ -546,7 +546,7 @@ class DriverLicenseResult:
 
     @generation_date.setter
     def generation_date(self, generation_date):
-        """Sets the generation_date of this DriverLicenseResult.
+        r"""Sets the generation_date of this DriverLicenseResult.
 
         生成时间。 
 
@@ -557,7 +557,7 @@ class DriverLicenseResult:
 
     @property
     def current_time(self):
-        """Gets the current_time of this DriverLicenseResult.
+        r"""Gets the current_time of this DriverLicenseResult.
 
         当前时间。 
 
@@ -568,7 +568,7 @@ class DriverLicenseResult:
 
     @current_time.setter
     def current_time(self, current_time):
-        """Sets the current_time of this DriverLicenseResult.
+        r"""Sets the current_time of this DriverLicenseResult.
 
         当前时间。 
 
@@ -579,7 +579,7 @@ class DriverLicenseResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this DriverLicenseResult.
+        r"""Gets the text_location of this DriverLicenseResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -590,7 +590,7 @@ class DriverLicenseResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this DriverLicenseResult.
+        r"""Sets the text_location of this DriverLicenseResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -601,7 +601,7 @@ class DriverLicenseResult:
 
     @property
     def front(self):
-        """Gets the front of this DriverLicenseResult.
+        r"""Gets the front of this DriverLicenseResult.
 
         :return: The front of this DriverLicenseResult.
         :rtype: :class:`huaweicloudsdkocr.v1.DriverLicenseFront`
@@ -610,7 +610,7 @@ class DriverLicenseResult:
 
     @front.setter
     def front(self, front):
-        """Sets the front of this DriverLicenseResult.
+        r"""Sets the front of this DriverLicenseResult.
 
         :param front: The front of this DriverLicenseResult.
         :type front: :class:`huaweicloudsdkocr.v1.DriverLicenseFront`
@@ -619,7 +619,7 @@ class DriverLicenseResult:
 
     @property
     def back(self):
-        """Gets the back of this DriverLicenseResult.
+        r"""Gets the back of this DriverLicenseResult.
 
         :return: The back of this DriverLicenseResult.
         :rtype: :class:`huaweicloudsdkocr.v1.DriverLicenseBack`
@@ -628,7 +628,7 @@ class DriverLicenseResult:
 
     @back.setter
     def back(self, back):
-        """Sets the back of this DriverLicenseResult.
+        r"""Sets the back of this DriverLicenseResult.
 
         :param back: The back of this DriverLicenseResult.
         :type back: :class:`huaweicloudsdkocr.v1.DriverLicenseBack`

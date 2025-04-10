@@ -25,7 +25,7 @@ class CreateTemplate:
     }
 
     def __init__(self, steps=None):
-        """CreateTemplate
+        r"""CreateTemplate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateTemplate:
 
     @property
     def steps(self):
-        """Gets the steps of this CreateTemplate.
+        r"""Gets the steps of this CreateTemplate.
 
         构建执行的步骤
 
@@ -53,7 +53,7 @@ class CreateTemplate:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this CreateTemplate.
+        r"""Sets the steps of this CreateTemplate.
 
         构建执行的步骤
 

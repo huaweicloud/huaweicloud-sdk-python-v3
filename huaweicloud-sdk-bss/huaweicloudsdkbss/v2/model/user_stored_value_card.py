@@ -37,7 +37,7 @@ class UserStoredValueCard:
     }
 
     def __init__(self, card_id=None, card_name=None, status=None, face_value=None, balance=None, effective_time=None, expire_time=None):
-        """UserStoredValueCard
+        r"""UserStoredValueCard
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UserStoredValueCard:
 
     @property
     def card_id(self):
-        """Gets the card_id of this UserStoredValueCard.
+        r"""Gets the card_id of this UserStoredValueCard.
 
         储值卡ID。
 
@@ -96,7 +96,7 @@ class UserStoredValueCard:
 
     @card_id.setter
     def card_id(self, card_id):
-        """Sets the card_id of this UserStoredValueCard.
+        r"""Sets the card_id of this UserStoredValueCard.
 
         储值卡ID。
 
@@ -107,7 +107,7 @@ class UserStoredValueCard:
 
     @property
     def card_name(self):
-        """Gets the card_name of this UserStoredValueCard.
+        r"""Gets the card_name of this UserStoredValueCard.
 
         储值卡名称。
 
@@ -118,7 +118,7 @@ class UserStoredValueCard:
 
     @card_name.setter
     def card_name(self, card_name):
-        """Sets the card_name of this UserStoredValueCard.
+        r"""Sets the card_name of this UserStoredValueCard.
 
         储值卡名称。
 
@@ -129,7 +129,7 @@ class UserStoredValueCard:
 
     @property
     def status(self):
-        """Gets the status of this UserStoredValueCard.
+        r"""Gets the status of this UserStoredValueCard.
 
         状态： 1：可使用 2：已用完
 
@@ -140,7 +140,7 @@ class UserStoredValueCard:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UserStoredValueCard.
+        r"""Sets the status of this UserStoredValueCard.
 
         状态： 1：可使用 2：已用完
 
@@ -151,7 +151,7 @@ class UserStoredValueCard:
 
     @property
     def face_value(self):
-        """Gets the face_value of this UserStoredValueCard.
+        r"""Gets the face_value of this UserStoredValueCard.
 
         储值卡面值。
 
@@ -162,7 +162,7 @@ class UserStoredValueCard:
 
     @face_value.setter
     def face_value(self, face_value):
-        """Sets the face_value of this UserStoredValueCard.
+        r"""Sets the face_value of this UserStoredValueCard.
 
         储值卡面值。
 
@@ -173,7 +173,7 @@ class UserStoredValueCard:
 
     @property
     def balance(self):
-        """Gets the balance of this UserStoredValueCard.
+        r"""Gets the balance of this UserStoredValueCard.
 
         储值卡余额。
 
@@ -184,7 +184,7 @@ class UserStoredValueCard:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this UserStoredValueCard.
+        r"""Sets the balance of this UserStoredValueCard.
 
         储值卡余额。
 
@@ -195,7 +195,7 @@ class UserStoredValueCard:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this UserStoredValueCard.
+        r"""Gets the effective_time of this UserStoredValueCard.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -206,7 +206,7 @@ class UserStoredValueCard:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this UserStoredValueCard.
+        r"""Sets the effective_time of this UserStoredValueCard.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -217,7 +217,7 @@ class UserStoredValueCard:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UserStoredValueCard.
+        r"""Gets the expire_time of this UserStoredValueCard.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -228,7 +228,7 @@ class UserStoredValueCard:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UserStoredValueCard.
+        r"""Sets the expire_time of this UserStoredValueCard.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 

@@ -27,7 +27,7 @@ class TelModel:
     }
 
     def __init__(self, tel=None, usage=None):
-        """TelModel
+        r"""TelModel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TelModel:
 
     @property
     def tel(self):
-        """Gets the tel of this TelModel.
+        r"""Gets the tel of this TelModel.
 
         电话号码（只能包含数字和”-“，且开头和结尾必须为数字）。
 
@@ -59,7 +59,7 @@ class TelModel:
 
     @tel.setter
     def tel(self, tel):
-        """Sets the tel of this TelModel.
+        r"""Sets the tel of this TelModel.
 
         电话号码（只能包含数字和”-“，且开头和结尾必须为数字）。
 
@@ -70,7 +70,7 @@ class TelModel:
 
     @property
     def usage(self):
-        """Gets the usage of this TelModel.
+        r"""Gets the usage of this TelModel.
 
         号码用途。  > 号码用途长度范围为1-30个字符，中文占2个字符，英文占1个字符。 
 
@@ -81,7 +81,7 @@ class TelModel:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this TelModel.
+        r"""Sets the usage of this TelModel.
 
         号码用途。  > 号码用途长度范围为1-30个字符，中文占2个字符，英文占1个字符。 
 

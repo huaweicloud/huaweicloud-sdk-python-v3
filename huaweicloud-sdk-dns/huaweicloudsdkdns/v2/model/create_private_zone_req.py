@@ -41,7 +41,7 @@ class CreatePrivateZoneReq:
     }
 
     def __init__(self, name=None, description=None, zone_type=None, email=None, ttl=None, router=None, proxy_pattern=None, tags=None, enterprise_project_id=None):
-        """CreatePrivateZoneReq
+        r"""CreatePrivateZoneReq
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreatePrivateZoneReq:
 
     @property
     def name(self):
-        """Gets the name of this CreatePrivateZoneReq.
+        r"""Gets the name of this CreatePrivateZoneReq.
 
         待创建的域名。
 
@@ -107,7 +107,7 @@ class CreatePrivateZoneReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePrivateZoneReq.
+        r"""Sets the name of this CreatePrivateZoneReq.
 
         待创建的域名。
 
@@ -118,7 +118,7 @@ class CreatePrivateZoneReq:
 
     @property
     def description(self):
-        """Gets the description of this CreatePrivateZoneReq.
+        r"""Gets the description of this CreatePrivateZoneReq.
 
         域名的描述信息。
 
@@ -129,7 +129,7 @@ class CreatePrivateZoneReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePrivateZoneReq.
+        r"""Sets the description of this CreatePrivateZoneReq.
 
         域名的描述信息。
 
@@ -140,7 +140,7 @@ class CreatePrivateZoneReq:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this CreatePrivateZoneReq.
+        r"""Gets the zone_type of this CreatePrivateZoneReq.
 
         域名类型。取值：private。
 
@@ -151,7 +151,7 @@ class CreatePrivateZoneReq:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this CreatePrivateZoneReq.
+        r"""Sets the zone_type of this CreatePrivateZoneReq.
 
         域名类型。取值：private。
 
@@ -162,7 +162,7 @@ class CreatePrivateZoneReq:
 
     @property
     def email(self):
-        """Gets the email of this CreatePrivateZoneReq.
+        r"""Gets the email of this CreatePrivateZoneReq.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -173,7 +173,7 @@ class CreatePrivateZoneReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreatePrivateZoneReq.
+        r"""Sets the email of this CreatePrivateZoneReq.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -184,7 +184,7 @@ class CreatePrivateZoneReq:
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreatePrivateZoneReq.
+        r"""Gets the ttl of this CreatePrivateZoneReq.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
@@ -195,7 +195,7 @@ class CreatePrivateZoneReq:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreatePrivateZoneReq.
+        r"""Sets the ttl of this CreatePrivateZoneReq.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
@@ -206,7 +206,7 @@ class CreatePrivateZoneReq:
 
     @property
     def router(self):
-        """Gets the router of this CreatePrivateZoneReq.
+        r"""Gets the router of this CreatePrivateZoneReq.
 
         :return: The router of this CreatePrivateZoneReq.
         :rtype: :class:`huaweicloudsdkdns.v2.Router`
@@ -215,7 +215,7 @@ class CreatePrivateZoneReq:
 
     @router.setter
     def router(self, router):
-        """Sets the router of this CreatePrivateZoneReq.
+        r"""Sets the router of this CreatePrivateZoneReq.
 
         :param router: The router of this CreatePrivateZoneReq.
         :type router: :class:`huaweicloudsdkdns.v2.Router`
@@ -224,7 +224,7 @@ class CreatePrivateZoneReq:
 
     @property
     def proxy_pattern(self):
-        """Gets the proxy_pattern of this CreatePrivateZoneReq.
+        r"""Gets the proxy_pattern of this CreatePrivateZoneReq.
 
         内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
@@ -235,7 +235,7 @@ class CreatePrivateZoneReq:
 
     @proxy_pattern.setter
     def proxy_pattern(self, proxy_pattern):
-        """Sets the proxy_pattern of this CreatePrivateZoneReq.
+        r"""Sets the proxy_pattern of this CreatePrivateZoneReq.
 
         内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
@@ -246,7 +246,7 @@ class CreatePrivateZoneReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatePrivateZoneReq.
+        r"""Gets the tags of this CreatePrivateZoneReq.
 
         资源标签。
 
@@ -257,7 +257,7 @@ class CreatePrivateZoneReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatePrivateZoneReq.
+        r"""Sets the tags of this CreatePrivateZoneReq.
 
         资源标签。
 
@@ -268,7 +268,7 @@ class CreatePrivateZoneReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePrivateZoneReq.
+        r"""Gets the enterprise_project_id of this CreatePrivateZoneReq.
 
         域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
@@ -279,7 +279,7 @@ class CreatePrivateZoneReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePrivateZoneReq.
+        r"""Sets the enterprise_project_id of this CreatePrivateZoneReq.
 
         域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 

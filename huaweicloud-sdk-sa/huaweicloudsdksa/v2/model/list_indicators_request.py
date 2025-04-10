@@ -35,7 +35,7 @@ class ListIndicatorsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, order=None, from_date=None, to_date=None, body=None):
-        """ListIndicatorsRequest
+        r"""ListIndicatorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListIndicatorsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIndicatorsRequest.
+        r"""Gets the project_id of this ListIndicatorsRequest.
 
         ID of project
 
@@ -87,7 +87,7 @@ class ListIndicatorsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIndicatorsRequest.
+        r"""Sets the project_id of this ListIndicatorsRequest.
 
         ID of project
 
@@ -98,7 +98,7 @@ class ListIndicatorsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListIndicatorsRequest.
+        r"""Gets the workspace_id of this ListIndicatorsRequest.
 
         workspace id
 
@@ -109,7 +109,7 @@ class ListIndicatorsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListIndicatorsRequest.
+        r"""Sets the workspace_id of this ListIndicatorsRequest.
 
         workspace id
 
@@ -120,7 +120,7 @@ class ListIndicatorsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListIndicatorsRequest.
+        r"""Gets the order of this ListIndicatorsRequest.
 
         sort order, ASC, DESC.
 
@@ -131,7 +131,7 @@ class ListIndicatorsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListIndicatorsRequest.
+        r"""Sets the order of this ListIndicatorsRequest.
 
         sort order, ASC, DESC.
 
@@ -142,7 +142,7 @@ class ListIndicatorsRequest:
 
     @property
     def from_date(self):
-        """Gets the from_date of this ListIndicatorsRequest.
+        r"""Gets the from_date of this ListIndicatorsRequest.
 
         起始时间
 
@@ -153,7 +153,7 @@ class ListIndicatorsRequest:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this ListIndicatorsRequest.
+        r"""Sets the from_date of this ListIndicatorsRequest.
 
         起始时间
 
@@ -164,7 +164,7 @@ class ListIndicatorsRequest:
 
     @property
     def to_date(self):
-        """Gets the to_date of this ListIndicatorsRequest.
+        r"""Gets the to_date of this ListIndicatorsRequest.
 
         结束时间
 
@@ -175,7 +175,7 @@ class ListIndicatorsRequest:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this ListIndicatorsRequest.
+        r"""Sets the to_date of this ListIndicatorsRequest.
 
         结束时间
 
@@ -186,7 +186,7 @@ class ListIndicatorsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListIndicatorsRequest.
+        r"""Gets the body of this ListIndicatorsRequest.
 
         :return: The body of this ListIndicatorsRequest.
         :rtype: :class:`huaweicloudsdksa.v2.IndicatorListSearchRequest`
@@ -195,7 +195,7 @@ class ListIndicatorsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListIndicatorsRequest.
+        r"""Sets the body of this ListIndicatorsRequest.
 
         :param body: The body of this ListIndicatorsRequest.
         :type body: :class:`huaweicloudsdksa.v2.IndicatorListSearchRequest`

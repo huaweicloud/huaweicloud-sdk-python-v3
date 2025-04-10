@@ -30,7 +30,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None, tags=None):
-        """ListClouddcnSubnetsTagsResponse
+        r"""ListClouddcnSubnetsTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListClouddcnSubnetsTagsResponse.
+        r"""Gets the request_id of this ListClouddcnSubnetsTagsResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListClouddcnSubnetsTagsResponse.
+        r"""Sets the request_id of this ListClouddcnSubnetsTagsResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListClouddcnSubnetsTagsResponse.
+        r"""Gets the total_count of this ListClouddcnSubnetsTagsResponse.
 
         当前列表中资源数量。
 
@@ -91,7 +91,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListClouddcnSubnetsTagsResponse.
+        r"""Sets the total_count of this ListClouddcnSubnetsTagsResponse.
 
         当前列表中资源数量。
 
@@ -102,7 +102,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListClouddcnSubnetsTagsResponse.
+        r"""Gets the tags of this ListClouddcnSubnetsTagsResponse.
 
         tag列表信息
 
@@ -113,7 +113,7 @@ class ListClouddcnSubnetsTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListClouddcnSubnetsTagsResponse.
+        r"""Sets the tags of this ListClouddcnSubnetsTagsResponse.
 
         tag列表信息
 

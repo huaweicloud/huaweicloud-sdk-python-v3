@@ -37,7 +37,7 @@ class CreateJobResp:
     }
 
     def __init__(self, id=None, name=None, status=None, create_time=None, error_code=None, error_msg=None, child_ids=None):
-        """CreateJobResp
+        r"""CreateJobResp
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateJobResp:
 
     @property
     def id(self):
-        """Gets the id of this CreateJobResp.
+        r"""Gets the id of this CreateJobResp.
 
         任务ID
 
@@ -95,7 +95,7 @@ class CreateJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateJobResp.
+        r"""Sets the id of this CreateJobResp.
 
         任务ID
 
@@ -106,7 +106,7 @@ class CreateJobResp:
 
     @property
     def name(self):
-        """Gets the name of this CreateJobResp.
+        r"""Gets the name of this CreateJobResp.
 
         任务名称
 
@@ -117,7 +117,7 @@ class CreateJobResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateJobResp.
+        r"""Sets the name of this CreateJobResp.
 
         任务名称
 
@@ -128,7 +128,7 @@ class CreateJobResp:
 
     @property
     def status(self):
-        """Gets the status of this CreateJobResp.
+        r"""Gets the status of this CreateJobResp.
 
         任务状态
 
@@ -139,7 +139,7 @@ class CreateJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateJobResp.
+        r"""Sets the status of this CreateJobResp.
 
         任务状态
 
@@ -150,7 +150,7 @@ class CreateJobResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateJobResp.
+        r"""Gets the create_time of this CreateJobResp.
 
         创建时间，时间戳
 
@@ -161,7 +161,7 @@ class CreateJobResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateJobResp.
+        r"""Sets the create_time of this CreateJobResp.
 
         创建时间，时间戳
 
@@ -172,7 +172,7 @@ class CreateJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateJobResp.
+        r"""Gets the error_code of this CreateJobResp.
 
         错误码
 
@@ -183,7 +183,7 @@ class CreateJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateJobResp.
+        r"""Sets the error_code of this CreateJobResp.
 
         错误码
 
@@ -194,7 +194,7 @@ class CreateJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateJobResp.
+        r"""Gets the error_msg of this CreateJobResp.
 
         错误信息
 
@@ -205,7 +205,7 @@ class CreateJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateJobResp.
+        r"""Sets the error_msg of this CreateJobResp.
 
         错误信息
 
@@ -216,7 +216,7 @@ class CreateJobResp:
 
     @property
     def child_ids(self):
-        """Gets the child_ids of this CreateJobResp.
+        r"""Gets the child_ids of this CreateJobResp.
 
         子任务ID，有子任务时返回该字段。
 
@@ -227,7 +227,7 @@ class CreateJobResp:
 
     @child_ids.setter
     def child_ids(self, child_ids):
-        """Sets the child_ids of this CreateJobResp.
+        r"""Sets the child_ids of this CreateJobResp.
 
         子任务ID，有子任务时返回该字段。
 

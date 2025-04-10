@@ -35,7 +35,7 @@ class FaceSearchFaceIdReq:
     }
 
     def __init__(self, filter=None, top_n=None, face_id=None, return_fields=None, threshold=None, sort=None):
-        """FaceSearchFaceIdReq
+        r"""FaceSearchFaceIdReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class FaceSearchFaceIdReq:
 
     @property
     def filter(self):
-        """Gets the filter of this FaceSearchFaceIdReq.
+        r"""Gets the filter of this FaceSearchFaceIdReq.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -88,7 +88,7 @@ class FaceSearchFaceIdReq:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this FaceSearchFaceIdReq.
+        r"""Sets the filter of this FaceSearchFaceIdReq.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -99,7 +99,7 @@ class FaceSearchFaceIdReq:
 
     @property
     def top_n(self):
-        """Gets the top_n of this FaceSearchFaceIdReq.
+        r"""Gets the top_n of this FaceSearchFaceIdReq.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -110,7 +110,7 @@ class FaceSearchFaceIdReq:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this FaceSearchFaceIdReq.
+        r"""Sets the top_n of this FaceSearchFaceIdReq.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -121,7 +121,7 @@ class FaceSearchFaceIdReq:
 
     @property
     def face_id(self):
-        """Gets the face_id of this FaceSearchFaceIdReq.
+        r"""Gets the face_id of this FaceSearchFaceIdReq.
 
         导入人脸时，系统返回的人脸编号，即人脸ID。
 
@@ -132,7 +132,7 @@ class FaceSearchFaceIdReq:
 
     @face_id.setter
     def face_id(self, face_id):
-        """Sets the face_id of this FaceSearchFaceIdReq.
+        r"""Sets the face_id of this FaceSearchFaceIdReq.
 
         导入人脸时，系统返回的人脸编号，即人脸ID。
 
@@ -143,7 +143,7 @@ class FaceSearchFaceIdReq:
 
     @property
     def return_fields(self):
-        """Gets the return_fields of this FaceSearchFaceIdReq.
+        r"""Gets the return_fields of this FaceSearchFaceIdReq.
 
         指定返回的自定义字段。
 
@@ -154,7 +154,7 @@ class FaceSearchFaceIdReq:
 
     @return_fields.setter
     def return_fields(self, return_fields):
-        """Sets the return_fields of this FaceSearchFaceIdReq.
+        r"""Sets the return_fields of this FaceSearchFaceIdReq.
 
         指定返回的自定义字段。
 
@@ -165,7 +165,7 @@ class FaceSearchFaceIdReq:
 
     @property
     def threshold(self):
-        """Gets the threshold of this FaceSearchFaceIdReq.
+        r"""Gets the threshold of this FaceSearchFaceIdReq.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -176,7 +176,7 @@ class FaceSearchFaceIdReq:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this FaceSearchFaceIdReq.
+        r"""Sets the threshold of this FaceSearchFaceIdReq.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -187,7 +187,7 @@ class FaceSearchFaceIdReq:
 
     @property
     def sort(self):
-        """Gets the sort of this FaceSearchFaceIdReq.
+        r"""Gets the sort of this FaceSearchFaceIdReq.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
@@ -198,7 +198,7 @@ class FaceSearchFaceIdReq:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this FaceSearchFaceIdReq.
+        r"""Sets the sort of this FaceSearchFaceIdReq.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 

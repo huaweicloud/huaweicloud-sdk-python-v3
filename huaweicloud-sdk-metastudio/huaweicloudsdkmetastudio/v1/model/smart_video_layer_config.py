@@ -29,7 +29,7 @@ class SmartVideoLayerConfig:
     }
 
     def __init__(self, video_url=None, video_cover_url=None, display_duration=None):
-        """SmartVideoLayerConfig
+        r"""SmartVideoLayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SmartVideoLayerConfig:
 
     @property
     def video_url(self):
-        """Gets the video_url of this SmartVideoLayerConfig.
+        r"""Gets the video_url of this SmartVideoLayerConfig.
 
         视频文件的URL。
 
@@ -67,7 +67,7 @@ class SmartVideoLayerConfig:
 
     @video_url.setter
     def video_url(self, video_url):
-        """Sets the video_url of this SmartVideoLayerConfig.
+        r"""Sets the video_url of this SmartVideoLayerConfig.
 
         视频文件的URL。
 
@@ -78,7 +78,7 @@ class SmartVideoLayerConfig:
 
     @property
     def video_cover_url(self):
-        """Gets the video_cover_url of this SmartVideoLayerConfig.
+        r"""Gets the video_cover_url of this SmartVideoLayerConfig.
 
         视频封面文件的URL。
 
@@ -89,7 +89,7 @@ class SmartVideoLayerConfig:
 
     @video_cover_url.setter
     def video_cover_url(self, video_cover_url):
-        """Sets the video_cover_url of this SmartVideoLayerConfig.
+        r"""Sets the video_cover_url of this SmartVideoLayerConfig.
 
         视频封面文件的URL。
 
@@ -100,7 +100,7 @@ class SmartVideoLayerConfig:
 
     @property
     def display_duration(self):
-        """Gets the display_duration of this SmartVideoLayerConfig.
+        r"""Gets the display_duration of this SmartVideoLayerConfig.
 
         **参数解释**： 图片显示时长，单位s。  显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致。若未携带，则与匹配的关键词语音内容时长保持一致。
 
@@ -111,7 +111,7 @@ class SmartVideoLayerConfig:
 
     @display_duration.setter
     def display_duration(self, display_duration):
-        """Sets the display_duration of this SmartVideoLayerConfig.
+        r"""Sets the display_duration of this SmartVideoLayerConfig.
 
         **参数解释**： 图片显示时长，单位s。  显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致。若未携带，则与匹配的关键词语音内容时长保持一致。
 

@@ -25,7 +25,7 @@ class CreateAkSkRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAkSkRequest
+        r"""CreateAkSkRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAkSkRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAkSkRequest.
+        r"""Gets the body of this CreateAkSkRequest.
 
         :return: The body of this CreateAkSkRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.CreateAkskModel`
@@ -52,7 +52,7 @@ class CreateAkSkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAkSkRequest.
+        r"""Sets the body of this CreateAkSkRequest.
 
         :param body: The body of this CreateAkSkRequest.
         :type body: :class:`huaweicloudsdkapm.v1.CreateAkskModel`

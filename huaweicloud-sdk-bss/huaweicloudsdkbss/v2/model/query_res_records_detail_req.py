@@ -59,7 +59,7 @@ class QueryResRecordsDetailReq:
     }
 
     def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None, query_type=None, bill_cycle_begin=None, bill_cycle_end=None, payer_account_id=None):
-        """QueryResRecordsDetailReq
+        r"""QueryResRecordsDetailReq
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def cycle(self):
-        """Gets the cycle of this QueryResRecordsDetailReq.
+        r"""Gets the cycle of this QueryResRecordsDetailReq.
 
         查询的资源详单所在账期，东八区时间，格式为YYYY-MM。 示例：2019-01。  说明： 不支持2019年1月份之前的资源详单。
 
@@ -172,7 +172,7 @@ class QueryResRecordsDetailReq:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this QueryResRecordsDetailReq.
+        r"""Sets the cycle of this QueryResRecordsDetailReq.
 
         查询的资源详单所在账期，东八区时间，格式为YYYY-MM。 示例：2019-01。  说明： 不支持2019年1月份之前的资源详单。
 
@@ -183,7 +183,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this QueryResRecordsDetailReq.
+        r"""Gets the cloud_service_type of this QueryResRecordsDetailReq.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -194,7 +194,7 @@ class QueryResRecordsDetailReq:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this QueryResRecordsDetailReq.
+        r"""Sets the cloud_service_type of this QueryResRecordsDetailReq.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -205,7 +205,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this QueryResRecordsDetailReq.
+        r"""Gets the resource_type of this QueryResRecordsDetailReq.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -216,7 +216,7 @@ class QueryResRecordsDetailReq:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this QueryResRecordsDetailReq.
+        r"""Sets the resource_type of this QueryResRecordsDetailReq.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -227,7 +227,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def region(self):
-        """Gets the region of this QueryResRecordsDetailReq.
+        r"""Gets the region of this QueryResRecordsDetailReq.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -238,7 +238,7 @@ class QueryResRecordsDetailReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this QueryResRecordsDetailReq.
+        r"""Sets the region of this QueryResRecordsDetailReq.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -249,7 +249,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def res_instance_id(self):
-        """Gets the res_instance_id of this QueryResRecordsDetailReq.
+        r"""Gets the res_instance_id of this QueryResRecordsDetailReq.
 
         资源实例ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -260,7 +260,7 @@ class QueryResRecordsDetailReq:
 
     @res_instance_id.setter
     def res_instance_id(self, res_instance_id):
-        """Sets the res_instance_id of this QueryResRecordsDetailReq.
+        r"""Sets the res_instance_id of this QueryResRecordsDetailReq.
 
         资源实例ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -271,7 +271,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this QueryResRecordsDetailReq.
+        r"""Gets the charge_mode of this QueryResRecordsDetailReq.
 
         计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
 
@@ -282,7 +282,7 @@ class QueryResRecordsDetailReq:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this QueryResRecordsDetailReq.
+        r"""Sets the charge_mode of this QueryResRecordsDetailReq.
 
         计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
 
@@ -293,7 +293,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this QueryResRecordsDetailReq.
+        r"""Gets the bill_type of this QueryResRecordsDetailReq.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
 
@@ -304,7 +304,7 @@ class QueryResRecordsDetailReq:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this QueryResRecordsDetailReq.
+        r"""Sets the bill_type of this QueryResRecordsDetailReq.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
 
@@ -315,7 +315,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QueryResRecordsDetailReq.
+        r"""Gets the enterprise_project_id of this QueryResRecordsDetailReq.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -326,7 +326,7 @@ class QueryResRecordsDetailReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QueryResRecordsDetailReq.
+        r"""Sets the enterprise_project_id of this QueryResRecordsDetailReq.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -337,7 +337,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def include_zero_record(self):
-        """Gets the include_zero_record of this QueryResRecordsDetailReq.
+        r"""Gets the include_zero_record of this QueryResRecordsDetailReq.
 
         返回是否包含应付金额为0的记录。 true: 包含false: 不包含 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -348,7 +348,7 @@ class QueryResRecordsDetailReq:
 
     @include_zero_record.setter
     def include_zero_record(self, include_zero_record):
-        """Sets the include_zero_record of this QueryResRecordsDetailReq.
+        r"""Sets the include_zero_record of this QueryResRecordsDetailReq.
 
         返回是否包含应付金额为0的记录。 true: 包含false: 不包含 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -359,7 +359,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryResRecordsDetailReq.
+        r"""Gets the offset of this QueryResRecordsDetailReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -370,7 +370,7 @@ class QueryResRecordsDetailReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryResRecordsDetailReq.
+        r"""Sets the offset of this QueryResRecordsDetailReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -381,7 +381,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryResRecordsDetailReq.
+        r"""Gets the limit of this QueryResRecordsDetailReq.
 
         页面大小。默认值为10。
 
@@ -392,7 +392,7 @@ class QueryResRecordsDetailReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryResRecordsDetailReq.
+        r"""Sets the limit of this QueryResRecordsDetailReq.
 
         页面大小。默认值为10。
 
@@ -403,7 +403,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def method(self):
-        """Gets the method of this QueryResRecordsDetailReq.
+        r"""Gets the method of this QueryResRecordsDetailReq.
 
         查询方式。 oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 此参数不携带或携带值为空串或携带值为null时，默认值为“all”，如果没有企业子客户，all的时候也是查询客户自己的数据。  说明： 若需要查询财务独立企业子的账单信息，前提是子账号已经接受了企业主账号的“允许查看子账号消费信息”的申请。申请方法见“变更子账号权限”。
 
@@ -414,7 +414,7 @@ class QueryResRecordsDetailReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this QueryResRecordsDetailReq.
+        r"""Sets the method of this QueryResRecordsDetailReq.
 
         查询方式。 oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 此参数不携带或携带值为空串或携带值为null时，默认值为“all”，如果没有企业子客户，all的时候也是查询客户自己的数据。  说明： 若需要查询财务独立企业子的账单信息，前提是子账号已经接受了企业主账号的“允许查看子账号消费信息”的申请。申请方法见“变更子账号权限”。
 
@@ -425,7 +425,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this QueryResRecordsDetailReq.
+        r"""Gets the sub_customer_id of this QueryResRecordsDetailReq.
 
         企业子账号ID。  说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -436,7 +436,7 @@ class QueryResRecordsDetailReq:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this QueryResRecordsDetailReq.
+        r"""Sets the sub_customer_id of this QueryResRecordsDetailReq.
 
         企业子账号ID。  说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -447,7 +447,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def statistic_type(self):
-        """Gets the statistic_type of this QueryResRecordsDetailReq.
+        r"""Gets the statistic_type of this QueryResRecordsDetailReq.
 
         统计类型。默认值为1。 1：按账期2：按天3：按明细
 
@@ -458,7 +458,7 @@ class QueryResRecordsDetailReq:
 
     @statistic_type.setter
     def statistic_type(self, statistic_type):
-        """Sets the statistic_type of this QueryResRecordsDetailReq.
+        r"""Sets the statistic_type of this QueryResRecordsDetailReq.
 
         统计类型。默认值为1。 1：按账期2：按天3：按明细
 
@@ -469,7 +469,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def query_type(self):
-        """Gets the query_type of this QueryResRecordsDetailReq.
+        r"""Gets the query_type of this QueryResRecordsDetailReq.
 
         查询类型。默认值为BILLCYCLE。 BILLCYCLE：按月DAILY：按天仅当statistic_type=2或3时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。
 
@@ -480,7 +480,7 @@ class QueryResRecordsDetailReq:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this QueryResRecordsDetailReq.
+        r"""Sets the query_type of this QueryResRecordsDetailReq.
 
         查询类型。默认值为BILLCYCLE。 BILLCYCLE：按月DAILY：按天仅当statistic_type=2或3时，支持传递query_type=DAILY。该参数不携带或携带值为null或携带为空串时，取默认值BILLCYCLE。
 
@@ -491,7 +491,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def bill_cycle_begin(self):
-        """Gets the bill_cycle_begin of this QueryResRecordsDetailReq.
+        r"""Gets the bill_cycle_begin of this QueryResRecordsDetailReq.
 
         账期开始时间。格式为YYYY-MM-DD。 仅当query_type=DAILY时，必须传递账期开始时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。
 
@@ -502,7 +502,7 @@ class QueryResRecordsDetailReq:
 
     @bill_cycle_begin.setter
     def bill_cycle_begin(self, bill_cycle_begin):
-        """Sets the bill_cycle_begin of this QueryResRecordsDetailReq.
+        r"""Sets the bill_cycle_begin of this QueryResRecordsDetailReq.
 
         账期开始时间。格式为YYYY-MM-DD。 仅当query_type=DAILY时，必须传递账期开始时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。
 
@@ -513,7 +513,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def bill_cycle_end(self):
-        """Gets the bill_cycle_end of this QueryResRecordsDetailReq.
+        r"""Gets the bill_cycle_end of this QueryResRecordsDetailReq.
 
         账期结束时间。格式为YYYY-MM-DD。 仅当query_type=DAILY时，必须传递账期结束时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。
 
@@ -524,7 +524,7 @@ class QueryResRecordsDetailReq:
 
     @bill_cycle_end.setter
     def bill_cycle_end(self, bill_cycle_end):
-        """Sets the bill_cycle_end of this QueryResRecordsDetailReq.
+        r"""Sets the bill_cycle_end of this QueryResRecordsDetailReq.
 
         账期结束时间。格式为YYYY-MM-DD。 仅当query_type=DAILY时，必须传递账期结束时间。该参数不携带或携带值为null或携带为空串时，不作为筛选条件。
 
@@ -535,7 +535,7 @@ class QueryResRecordsDetailReq:
 
     @property
     def payer_account_id(self):
-        """Gets the payer_account_id of this QueryResRecordsDetailReq.
+        r"""Gets the payer_account_id of this QueryResRecordsDetailReq.
 
         |参数名称：支付账号ID。| |参数的约束及描述：普通客户、财务独立企业子客户查询消费记录，只能查询到客户自己的消费记录，该参数不携带或携带为自身ID时，查询的都只是自身的消费记录； 企业主客户查询消费记录，不携带时，查询的是自身的、财务托管企业子、财务独立企业子的消费记录；入参自身ID时，查询的是自身的、财务托管企业子的消费记录；也可入参其名下财务独立企业子的客户ID，只查询该财务独立企业子的消费记录； 财务托管企业子查询消费记录，入参自身ID时，查询的是未与企业主关联时的消费记录；入参企业主客户ID时，查询的是与企业主关联后的消费记录；不携带时查询以上全部消费记录|
 
@@ -546,7 +546,7 @@ class QueryResRecordsDetailReq:
 
     @payer_account_id.setter
     def payer_account_id(self, payer_account_id):
-        """Sets the payer_account_id of this QueryResRecordsDetailReq.
+        r"""Sets the payer_account_id of this QueryResRecordsDetailReq.
 
         |参数名称：支付账号ID。| |参数的约束及描述：普通客户、财务独立企业子客户查询消费记录，只能查询到客户自己的消费记录，该参数不携带或携带为自身ID时，查询的都只是自身的消费记录； 企业主客户查询消费记录，不携带时，查询的是自身的、财务托管企业子、财务独立企业子的消费记录；入参自身ID时，查询的是自身的、财务托管企业子的消费记录；也可入参其名下财务独立企业子的客户ID，只查询该财务独立企业子的消费记录； 财务托管企业子查询消费记录，入参自身ID时，查询的是未与企业主关联时的消费记录；入参企业主客户ID时，查询的是与企业主关联后的消费记录；不携带时查询以上全部消费记录|
 

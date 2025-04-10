@@ -35,7 +35,7 @@ class AggregateMetrics:
     }
 
     def __init__(self, time_span=None, interval=None, offset=None, tags=None, metrics=None, limit=None):
-        """AggregateMetrics
+        r"""AggregateMetrics
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AggregateMetrics:
 
     @property
     def time_span(self):
-        """Gets the time_span of this AggregateMetrics.
+        r"""Gets the time_span of this AggregateMetrics.
 
         :return: The time_span of this AggregateMetrics.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
@@ -84,7 +84,7 @@ class AggregateMetrics:
 
     @time_span.setter
     def time_span(self, time_span):
-        """Sets the time_span of this AggregateMetrics.
+        r"""Sets the time_span of this AggregateMetrics.
 
         :param time_span: The time_span of this AggregateMetrics.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
@@ -93,7 +93,7 @@ class AggregateMetrics:
 
     @property
     def interval(self):
-        """Gets the interval of this AggregateMetrics.
+        r"""Gets the interval of this AggregateMetrics.
 
         聚合时间间隔, 示例：\"1d|1h|10m|10s\"
 
@@ -104,7 +104,7 @@ class AggregateMetrics:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this AggregateMetrics.
+        r"""Sets the interval of this AggregateMetrics.
 
         聚合时间间隔, 示例：\"1d|1h|10m|10s\"
 
@@ -115,7 +115,7 @@ class AggregateMetrics:
 
     @property
     def offset(self):
-        """Gets the offset of this AggregateMetrics.
+        r"""Gets the offset of this AggregateMetrics.
 
         聚合时间偏移量, 需要小于interval, 示例： \"1h|10m|10s\"
 
@@ -126,7 +126,7 @@ class AggregateMetrics:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this AggregateMetrics.
+        r"""Sets the offset of this AggregateMetrics.
 
         聚合时间偏移量, 需要小于interval, 示例： \"1h|10m|10s\"
 
@@ -137,7 +137,7 @@ class AggregateMetrics:
 
     @property
     def tags(self):
-        """Gets the tags of this AggregateMetrics.
+        r"""Gets the tags of this AggregateMetrics.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -148,7 +148,7 @@ class AggregateMetrics:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AggregateMetrics.
+        r"""Sets the tags of this AggregateMetrics.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -159,7 +159,7 @@ class AggregateMetrics:
 
     @property
     def metrics(self):
-        """Gets the metrics of this AggregateMetrics.
+        r"""Gets the metrics of this AggregateMetrics.
 
         查询的测量指标列表
 
@@ -170,7 +170,7 @@ class AggregateMetrics:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this AggregateMetrics.
+        r"""Sets the metrics of this AggregateMetrics.
 
         查询的测量指标列表
 
@@ -181,7 +181,7 @@ class AggregateMetrics:
 
     @property
     def limit(self):
-        """Gets the limit of this AggregateMetrics.
+        r"""Gets the limit of this AggregateMetrics.
 
         返回值个数限制
 
@@ -192,7 +192,7 @@ class AggregateMetrics:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this AggregateMetrics.
+        r"""Sets the limit of this AggregateMetrics.
 
         返回值个数限制
 

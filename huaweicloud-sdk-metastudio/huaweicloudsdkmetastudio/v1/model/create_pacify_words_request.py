@@ -27,7 +27,7 @@ class CreatePacifyWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreatePacifyWordsRequest
+        r"""CreatePacifyWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePacifyWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreatePacifyWordsRequest.
+        r"""Gets the x_app_user_id of this CreatePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreatePacifyWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreatePacifyWordsRequest.
+        r"""Sets the x_app_user_id of this CreatePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreatePacifyWordsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePacifyWordsRequest.
+        r"""Gets the body of this CreatePacifyWordsRequest.
 
         :return: The body of this CreatePacifyWordsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePacifyWordsReq`
@@ -81,7 +81,7 @@ class CreatePacifyWordsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePacifyWordsRequest.
+        r"""Sets the body of this CreatePacifyWordsRequest.
 
         :param body: The body of this CreatePacifyWordsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreatePacifyWordsReq`

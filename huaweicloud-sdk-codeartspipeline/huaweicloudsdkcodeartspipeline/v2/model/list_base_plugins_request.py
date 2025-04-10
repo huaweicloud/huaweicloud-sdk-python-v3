@@ -31,7 +31,7 @@ class ListBasePluginsRequest:
     }
 
     def __init__(self, domain_id=None, attribution=None, offset=None, limit=None):
-        """ListBasePluginsRequest
+        r"""ListBasePluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListBasePluginsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListBasePluginsRequest.
+        r"""Gets the domain_id of this ListBasePluginsRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ListBasePluginsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListBasePluginsRequest.
+        r"""Sets the domain_id of this ListBasePluginsRequest.
 
         租户ID
 
@@ -82,7 +82,7 @@ class ListBasePluginsRequest:
 
     @property
     def attribution(self):
-        """Gets the attribution of this ListBasePluginsRequest.
+        r"""Gets the attribution of this ListBasePluginsRequest.
 
         插件属性,可选official、published
 
@@ -93,7 +93,7 @@ class ListBasePluginsRequest:
 
     @attribution.setter
     def attribution(self, attribution):
-        """Sets the attribution of this ListBasePluginsRequest.
+        r"""Sets the attribution of this ListBasePluginsRequest.
 
         插件属性,可选official、published
 
@@ -104,7 +104,7 @@ class ListBasePluginsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBasePluginsRequest.
+        r"""Gets the offset of this ListBasePluginsRequest.
 
         偏移
 
@@ -115,7 +115,7 @@ class ListBasePluginsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBasePluginsRequest.
+        r"""Sets the offset of this ListBasePluginsRequest.
 
         偏移
 
@@ -126,7 +126,7 @@ class ListBasePluginsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBasePluginsRequest.
+        r"""Gets the limit of this ListBasePluginsRequest.
 
         大小
 
@@ -137,7 +137,7 @@ class ListBasePluginsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBasePluginsRequest.
+        r"""Sets the limit of this ListBasePluginsRequest.
 
         大小
 

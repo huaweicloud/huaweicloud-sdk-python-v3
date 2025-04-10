@@ -28,7 +28,7 @@ class BatchCreateSecurityGroupRulesResponse(SdkResponse):
     }
 
     def __init__(self, security_group_rules=None, request_id=None):
-        """BatchCreateSecurityGroupRulesResponse
+        r"""BatchCreateSecurityGroupRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCreateSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this BatchCreateSecurityGroupRulesResponse.
+        r"""Gets the security_group_rules of this BatchCreateSecurityGroupRulesResponse.
 
         批量创建安全组规则的响应体
 
@@ -62,7 +62,7 @@ class BatchCreateSecurityGroupRulesResponse(SdkResponse):
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this BatchCreateSecurityGroupRulesResponse.
+        r"""Sets the security_group_rules of this BatchCreateSecurityGroupRulesResponse.
 
         批量创建安全组规则的响应体
 
@@ -73,7 +73,7 @@ class BatchCreateSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCreateSecurityGroupRulesResponse.
+        r"""Gets the request_id of this BatchCreateSecurityGroupRulesResponse.
 
         请求ID
 
@@ -84,7 +84,7 @@ class BatchCreateSecurityGroupRulesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCreateSecurityGroupRulesResponse.
+        r"""Sets the request_id of this BatchCreateSecurityGroupRulesResponse.
 
         请求ID
 

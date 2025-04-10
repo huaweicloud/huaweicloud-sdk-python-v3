@@ -27,7 +27,7 @@ class ExportDlqMessageRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExportDlqMessageRequest
+        r"""ExportDlqMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportDlqMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportDlqMessageRequest.
+        r"""Gets the instance_id of this ExportDlqMessageRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ExportDlqMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportDlqMessageRequest.
+        r"""Sets the instance_id of this ExportDlqMessageRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ExportDlqMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportDlqMessageRequest.
+        r"""Gets the body of this ExportDlqMessageRequest.
 
         :return: The body of this ExportDlqMessageRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageReq`
@@ -80,7 +80,7 @@ class ExportDlqMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportDlqMessageRequest.
+        r"""Sets the body of this ExportDlqMessageRequest.
 
         :param body: The body of this ExportDlqMessageRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageReq`

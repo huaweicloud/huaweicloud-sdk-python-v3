@@ -31,7 +31,7 @@ class CheckRestInfo:
     }
 
     def __init__(self, existed=None, item_info=None, items=None, check_info=None):
-        """CheckRestInfo
+        r"""CheckRestInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CheckRestInfo:
 
     @property
     def existed(self):
-        """Gets the existed of this CheckRestInfo.
+        r"""Gets the existed of this CheckRestInfo.
 
         数据是否存在，存在返回true，不存在返回false。仅在指定ID检查时包含该字段。
 
@@ -75,7 +75,7 @@ class CheckRestInfo:
 
     @existed.setter
     def existed(self, existed):
-        """Sets the existed of this CheckRestInfo.
+        r"""Sets the existed of this CheckRestInfo.
 
         数据是否存在，存在返回true，不存在返回false。仅在指定ID检查时包含该字段。
 
@@ -86,7 +86,7 @@ class CheckRestInfo:
 
     @property
     def item_info(self):
-        """Gets the item_info of this CheckRestInfo.
+        r"""Gets the item_info of this CheckRestInfo.
 
         :return: The item_info of this CheckRestInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.ItemSource`
@@ -95,7 +95,7 @@ class CheckRestInfo:
 
     @item_info.setter
     def item_info(self, item_info):
-        """Sets the item_info of this CheckRestInfo.
+        r"""Sets the item_info of this CheckRestInfo.
 
         :param item_info: The item_info of this CheckRestInfo.
         :type item_info: :class:`huaweicloudsdkimagesearch.v2.ItemSource`
@@ -104,7 +104,7 @@ class CheckRestInfo:
 
     @property
     def items(self):
-        """Gets the items of this CheckRestInfo.
+        r"""Gets the items of this CheckRestInfo.
 
         检查结果列表，仅在条件检查时包含该字段。
 
@@ -115,7 +115,7 @@ class CheckRestInfo:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this CheckRestInfo.
+        r"""Sets the items of this CheckRestInfo.
 
         检查结果列表，仅在条件检查时包含该字段。
 
@@ -126,7 +126,7 @@ class CheckRestInfo:
 
     @property
     def check_info(self):
-        """Gets the check_info of this CheckRestInfo.
+        r"""Gets the check_info of this CheckRestInfo.
 
         :return: The check_info of this CheckRestInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.CheckInfo`
@@ -135,7 +135,7 @@ class CheckRestInfo:
 
     @check_info.setter
     def check_info(self, check_info):
-        """Sets the check_info of this CheckRestInfo.
+        r"""Sets the check_info of this CheckRestInfo.
 
         :param check_info: The check_info of this CheckRestInfo.
         :type check_info: :class:`huaweicloudsdkimagesearch.v2.CheckInfo`

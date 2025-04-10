@@ -70,7 +70,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, training_input_source_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None, output_language=None, is_remake=None):
-        """ShowVoiceTrainingJobResponse
+        r"""ShowVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowVoiceTrainingJobResponse.
+        r"""Gets the job_type of this ShowVoiceTrainingJobResponse.
 
         :return: The job_type of this ShowVoiceTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.JobType`
@@ -207,7 +207,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowVoiceTrainingJobResponse.
+        r"""Sets the job_type of this ShowVoiceTrainingJobResponse.
 
         :param job_type: The job_type of this ShowVoiceTrainingJobResponse.
         :type job_type: :class:`huaweicloudsdkmetastudio.v1.JobType`
@@ -216,7 +216,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowVoiceTrainingJobResponse.
+        r"""Gets the job_id of this ShowVoiceTrainingJobResponse.
 
         任务id。
 
@@ -227,7 +227,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowVoiceTrainingJobResponse.
+        r"""Sets the job_id of this ShowVoiceTrainingJobResponse.
 
         任务id。
 
@@ -238,7 +238,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this ShowVoiceTrainingJobResponse.
+        r"""Gets the app_user_id of this ShowVoiceTrainingJobResponse.
 
         用户id。
 
@@ -249,7 +249,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this ShowVoiceTrainingJobResponse.
+        r"""Sets the app_user_id of this ShowVoiceTrainingJobResponse.
 
         用户id。
 
@@ -260,7 +260,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def voice_name(self):
-        """Gets the voice_name of this ShowVoiceTrainingJobResponse.
+        r"""Gets the voice_name of this ShowVoiceTrainingJobResponse.
 
         音色名称。该名称会作为资产库中音色模型资产名称。
 
@@ -271,7 +271,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @voice_name.setter
     def voice_name(self, voice_name):
-        """Sets the voice_name of this ShowVoiceTrainingJobResponse.
+        r"""Sets the voice_name of this ShowVoiceTrainingJobResponse.
 
         音色名称。该名称会作为资产库中音色模型资产名称。
 
@@ -282,7 +282,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def sex(self):
-        """Gets the sex of this ShowVoiceTrainingJobResponse.
+        r"""Gets the sex of this ShowVoiceTrainingJobResponse.
 
         性别。 * FEMALE: 女性 * MALE: 是男性
 
@@ -293,7 +293,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this ShowVoiceTrainingJobResponse.
+        r"""Sets the sex of this ShowVoiceTrainingJobResponse.
 
         性别。 * FEMALE: 女性 * MALE: 是男性
 
@@ -304,7 +304,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowVoiceTrainingJobResponse.
+        r"""Gets the language of this ShowVoiceTrainingJobResponse.
 
         语言。
 
@@ -315,7 +315,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowVoiceTrainingJobResponse.
+        r"""Sets the language of this ShowVoiceTrainingJobResponse.
 
         语言。
 
@@ -326,7 +326,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowVoiceTrainingJobResponse.
+        r"""Gets the state of this ShowVoiceTrainingJobResponse.
 
         :return: The state of this ShowVoiceTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.JobState`
@@ -335,7 +335,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowVoiceTrainingJobResponse.
+        r"""Sets the state of this ShowVoiceTrainingJobResponse.
 
         :param state: The state of this ShowVoiceTrainingJobResponse.
         :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
@@ -344,7 +344,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def reject_times(self):
-        """Gets the reject_times of this ShowVoiceTrainingJobResponse.
+        r"""Gets the reject_times of this ShowVoiceTrainingJobResponse.
 
         本次任务中该状态出现的次数
 
@@ -355,7 +355,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @reject_times.setter
     def reject_times(self, reject_times):
-        """Sets the reject_times of this ShowVoiceTrainingJobResponse.
+        r"""Sets the reject_times of this ShowVoiceTrainingJobResponse.
 
         本次任务中该状态出现的次数
 
@@ -366,7 +366,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowVoiceTrainingJobResponse.
+        r"""Gets the asset_id of this ShowVoiceTrainingJobResponse.
 
         当任务状态为成功时呈现,音色模型在资产库中的id。
 
@@ -377,7 +377,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowVoiceTrainingJobResponse.
+        r"""Sets the asset_id of this ShowVoiceTrainingJobResponse.
 
         当任务状态为成功时呈现,音色模型在资产库中的id。
 
@@ -388,7 +388,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def job_failed_code(self):
-        """Gets the job_failed_code of this ShowVoiceTrainingJobResponse.
+        r"""Gets the job_failed_code of this ShowVoiceTrainingJobResponse.
 
         当任务失败时呈现,失败错误码。
 
@@ -399,7 +399,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @job_failed_code.setter
     def job_failed_code(self, job_failed_code):
-        """Sets the job_failed_code of this ShowVoiceTrainingJobResponse.
+        r"""Sets the job_failed_code of this ShowVoiceTrainingJobResponse.
 
         当任务失败时呈现,失败错误码。
 
@@ -410,7 +410,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def job_failed_reason(self):
-        """Gets the job_failed_reason of this ShowVoiceTrainingJobResponse.
+        r"""Gets the job_failed_reason of this ShowVoiceTrainingJobResponse.
 
         当任务失败时呈现,失败原因。
 
@@ -421,7 +421,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @job_failed_reason.setter
     def job_failed_reason(self, job_failed_reason):
-        """Sets the job_failed_reason of this ShowVoiceTrainingJobResponse.
+        r"""Sets the job_failed_reason of this ShowVoiceTrainingJobResponse.
 
         当任务失败时呈现,失败原因。
 
@@ -432,7 +432,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowVoiceTrainingJobResponse.
+        r"""Gets the create_time of this ShowVoiceTrainingJobResponse.
 
         任务创建时间。
 
@@ -443,7 +443,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowVoiceTrainingJobResponse.
+        r"""Sets the create_time of this ShowVoiceTrainingJobResponse.
 
         任务创建时间。
 
@@ -454,7 +454,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this ShowVoiceTrainingJobResponse.
+        r"""Gets the lastupdate_time of this ShowVoiceTrainingJobResponse.
 
         任务状态更新时间。
 
@@ -465,7 +465,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this ShowVoiceTrainingJobResponse.
+        r"""Sets the lastupdate_time of this ShowVoiceTrainingJobResponse.
 
         任务状态更新时间。
 
@@ -476,7 +476,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def voice_authorization_url(self):
-        """Gets the voice_authorization_url of this ShowVoiceTrainingJobResponse.
+        r"""Gets the voice_authorization_url of this ShowVoiceTrainingJobResponse.
 
         用户授权书连接。
 
@@ -487,7 +487,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @voice_authorization_url.setter
     def voice_authorization_url(self, voice_authorization_url):
-        """Sets the voice_authorization_url of this ShowVoiceTrainingJobResponse.
+        r"""Sets the voice_authorization_url of this ShowVoiceTrainingJobResponse.
 
         用户授权书连接。
 
@@ -498,7 +498,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def training_input_source_url(self):
-        """Gets the training_input_source_url of this ShowVoiceTrainingJobResponse.
+        r"""Gets the training_input_source_url of this ShowVoiceTrainingJobResponse.
 
         用户原始输入数据url。
 
@@ -509,7 +509,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @training_input_source_url.setter
     def training_input_source_url(self, training_input_source_url):
-        """Sets the training_input_source_url of this ShowVoiceTrainingJobResponse.
+        r"""Sets the training_input_source_url of this ShowVoiceTrainingJobResponse.
 
         用户原始输入数据url。
 
@@ -520,7 +520,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def create_type(self):
-        """Gets the create_type of this ShowVoiceTrainingJobResponse.
+        r"""Gets the create_type of this ShowVoiceTrainingJobResponse.
 
         :return: The create_type of this ShowVoiceTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateType`
@@ -529,7 +529,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this ShowVoiceTrainingJobResponse.
+        r"""Sets the create_type of this ShowVoiceTrainingJobResponse.
 
         :param create_type: The create_type of this ShowVoiceTrainingJobResponse.
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
@@ -538,7 +538,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def tag(self):
-        """Gets the tag of this ShowVoiceTrainingJobResponse.
+        r"""Gets the tag of this ShowVoiceTrainingJobResponse.
 
         :return: The tag of this ShowVoiceTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.JobTag`
@@ -547,7 +547,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowVoiceTrainingJobResponse.
+        r"""Sets the tag of this ShowVoiceTrainingJobResponse.
 
         :param tag: The tag of this ShowVoiceTrainingJobResponse.
         :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
@@ -556,7 +556,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def phone(self):
-        """Gets the phone of this ShowVoiceTrainingJobResponse.
+        r"""Gets the phone of this ShowVoiceTrainingJobResponse.
 
         手机号
 
@@ -567,7 +567,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ShowVoiceTrainingJobResponse.
+        r"""Sets the phone of this ShowVoiceTrainingJobResponse.
 
         手机号
 
@@ -578,7 +578,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def dhtms_job_id(self):
-        """Gets the dhtms_job_id of this ShowVoiceTrainingJobResponse.
+        r"""Gets the dhtms_job_id of this ShowVoiceTrainingJobResponse.
 
         形象制作任务id
 
@@ -589,7 +589,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @dhtms_job_id.setter
     def dhtms_job_id(self, dhtms_job_id):
-        """Sets the dhtms_job_id of this ShowVoiceTrainingJobResponse.
+        r"""Sets the dhtms_job_id of this ShowVoiceTrainingJobResponse.
 
         形象制作任务id
 
@@ -600,7 +600,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this ShowVoiceTrainingJobResponse.
+        r"""Gets the batch_name of this ShowVoiceTrainingJobResponse.
 
         批次名称
 
@@ -611,7 +611,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this ShowVoiceTrainingJobResponse.
+        r"""Sets the batch_name of this ShowVoiceTrainingJobResponse.
 
         批次名称
 
@@ -622,7 +622,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def allocated_resource(self):
-        """Gets the allocated_resource of this ShowVoiceTrainingJobResponse.
+        r"""Gets the allocated_resource of this ShowVoiceTrainingJobResponse.
 
         :return: The allocated_resource of this ShowVoiceTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
@@ -631,7 +631,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @allocated_resource.setter
     def allocated_resource(self, allocated_resource):
-        """Sets the allocated_resource of this ShowVoiceTrainingJobResponse.
+        r"""Sets the allocated_resource of this ShowVoiceTrainingJobResponse.
 
         :param allocated_resource: The allocated_resource of this ShowVoiceTrainingJobResponse.
         :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.VoiceTrainingAllocatedResource`
@@ -640,7 +640,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def output_language(self):
-        """Gets the output_language of this ShowVoiceTrainingJobResponse.
+        r"""Gets the output_language of this ShowVoiceTrainingJobResponse.
 
         模型输出语言类型
 
@@ -651,7 +651,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @output_language.setter
     def output_language(self, output_language):
-        """Sets the output_language of this ShowVoiceTrainingJobResponse.
+        r"""Sets the output_language of this ShowVoiceTrainingJobResponse.
 
         模型输出语言类型
 
@@ -662,7 +662,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def is_remake(self):
-        """Gets the is_remake of this ShowVoiceTrainingJobResponse.
+        r"""Gets the is_remake of this ShowVoiceTrainingJobResponse.
 
         任务是否重做
 
@@ -673,7 +673,7 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
 
     @is_remake.setter
     def is_remake(self, is_remake):
-        """Sets the is_remake of this ShowVoiceTrainingJobResponse.
+        r"""Sets the is_remake of this ShowVoiceTrainingJobResponse.
 
         任务是否重做
 

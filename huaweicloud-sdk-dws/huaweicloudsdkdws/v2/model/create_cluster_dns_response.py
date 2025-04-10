@@ -24,7 +24,7 @@ class CreateClusterDnsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateClusterDnsResponse
+        r"""CreateClusterDnsResponse
 
         The model defined in huaweicloud sdk
 

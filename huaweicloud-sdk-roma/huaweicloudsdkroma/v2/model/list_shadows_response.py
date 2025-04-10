@@ -26,7 +26,7 @@ class ListShadowsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListShadowsResponse
+        r"""ListShadowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListShadowsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListShadowsResponse.
+        r"""Gets the body of this ListShadowsResponse.
 
         :return: The body of this ListShadowsResponse.
         :rtype: list[:class:`huaweicloudsdkroma.v2.ShadowService`]
@@ -53,7 +53,7 @@ class ListShadowsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListShadowsResponse.
+        r"""Sets the body of this ListShadowsResponse.
 
         :param body: The body of this ListShadowsResponse.
         :type body: list[:class:`huaweicloudsdkroma.v2.ShadowService`]

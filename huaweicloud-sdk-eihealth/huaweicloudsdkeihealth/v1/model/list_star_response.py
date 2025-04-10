@@ -28,7 +28,7 @@ class ListStarResponse(SdkResponse):
     }
 
     def __init__(self, count=None, assets=None):
-        """ListStarResponse
+        r"""ListStarResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStarResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListStarResponse.
+        r"""Gets the count of this ListStarResponse.
 
         资产总数
 
@@ -62,7 +62,7 @@ class ListStarResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListStarResponse.
+        r"""Sets the count of this ListStarResponse.
 
         资产总数
 
@@ -73,7 +73,7 @@ class ListStarResponse(SdkResponse):
 
     @property
     def assets(self):
-        """Gets the assets of this ListStarResponse.
+        r"""Gets the assets of this ListStarResponse.
 
         资产列表
 
@@ -84,7 +84,7 @@ class ListStarResponse(SdkResponse):
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this ListStarResponse.
+        r"""Sets the assets of this ListStarResponse.
 
         资产列表
 

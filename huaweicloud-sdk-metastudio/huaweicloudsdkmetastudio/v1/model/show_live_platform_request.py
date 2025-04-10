@@ -27,7 +27,7 @@ class ShowLivePlatformRequest:
     }
 
     def __init__(self, platform_id=None, x_app_user_id=None):
-        """ShowLivePlatformRequest
+        r"""ShowLivePlatformRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowLivePlatformRequest:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this ShowLivePlatformRequest.
+        r"""Gets the platform_id of this ShowLivePlatformRequest.
 
         直播平台ID。
 
@@ -60,7 +60,7 @@ class ShowLivePlatformRequest:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this ShowLivePlatformRequest.
+        r"""Sets the platform_id of this ShowLivePlatformRequest.
 
         直播平台ID。
 
@@ -71,7 +71,7 @@ class ShowLivePlatformRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowLivePlatformRequest.
+        r"""Gets the x_app_user_id of this ShowLivePlatformRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class ShowLivePlatformRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowLivePlatformRequest.
+        r"""Sets the x_app_user_id of this ShowLivePlatformRequest.
 
         第三方用户ID。不允许输入中文。
 

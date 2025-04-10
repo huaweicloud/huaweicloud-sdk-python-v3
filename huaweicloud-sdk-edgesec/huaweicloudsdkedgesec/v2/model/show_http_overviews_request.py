@@ -33,7 +33,7 @@ class ShowHttpOverviewsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, top=None, domain_name=None):
-        """ShowHttpOverviewsRequest
+        r"""ShowHttpOverviewsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowHttpOverviewsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpOverviewsRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpOverviewsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -80,7 +80,7 @@ class ShowHttpOverviewsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpOverviewsRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpOverviewsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -91,7 +91,7 @@ class ShowHttpOverviewsRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ShowHttpOverviewsRequest.
+        r"""Gets the _from of this ShowHttpOverviewsRequest.
 
         起始时间
 
@@ -102,7 +102,7 @@ class ShowHttpOverviewsRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ShowHttpOverviewsRequest.
+        r"""Sets the _from of this ShowHttpOverviewsRequest.
 
         起始时间
 
@@ -113,7 +113,7 @@ class ShowHttpOverviewsRequest:
 
     @property
     def to(self):
-        """Gets the to of this ShowHttpOverviewsRequest.
+        r"""Gets the to of this ShowHttpOverviewsRequest.
 
         结束时间
 
@@ -124,7 +124,7 @@ class ShowHttpOverviewsRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ShowHttpOverviewsRequest.
+        r"""Sets the to of this ShowHttpOverviewsRequest.
 
         结束时间
 
@@ -135,7 +135,7 @@ class ShowHttpOverviewsRequest:
 
     @property
     def top(self):
-        """Gets the top of this ShowHttpOverviewsRequest.
+        r"""Gets the top of this ShowHttpOverviewsRequest.
 
         要查询的前几的结果
 
@@ -146,7 +146,7 @@ class ShowHttpOverviewsRequest:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this ShowHttpOverviewsRequest.
+        r"""Sets the top of this ShowHttpOverviewsRequest.
 
         要查询的前几的结果
 
@@ -157,7 +157,7 @@ class ShowHttpOverviewsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowHttpOverviewsRequest.
+        r"""Gets the domain_name of this ShowHttpOverviewsRequest.
 
         域名
 
@@ -168,7 +168,7 @@ class ShowHttpOverviewsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowHttpOverviewsRequest.
+        r"""Sets the domain_name of this ShowHttpOverviewsRequest.
 
         域名
 

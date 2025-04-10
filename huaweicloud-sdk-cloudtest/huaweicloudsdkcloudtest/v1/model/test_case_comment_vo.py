@@ -47,7 +47,7 @@ class TestCaseCommentVo:
     }
 
     def __init__(self, uri=None, creator=None, comment=None, notifier=None, test_case_uri=None, create_time=None, create_time_timestamp=None, update_time=None, update_time_timestamp=None, project_uuid=None, version_uri=None, display_name=None):
-        """TestCaseCommentVo
+        r"""TestCaseCommentVo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TestCaseCommentVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestCaseCommentVo.
+        r"""Gets the uri of this TestCaseCommentVo.
 
         :return: The uri of this TestCaseCommentVo.
         :rtype: str
@@ -129,7 +129,7 @@ class TestCaseCommentVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestCaseCommentVo.
+        r"""Sets the uri of this TestCaseCommentVo.
 
         :param uri: The uri of this TestCaseCommentVo.
         :type uri: str
@@ -138,7 +138,7 @@ class TestCaseCommentVo:
 
     @property
     def creator(self):
-        """Gets the creator of this TestCaseCommentVo.
+        r"""Gets the creator of this TestCaseCommentVo.
 
         :return: The creator of this TestCaseCommentVo.
         :rtype: str
@@ -147,7 +147,7 @@ class TestCaseCommentVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TestCaseCommentVo.
+        r"""Sets the creator of this TestCaseCommentVo.
 
         :param creator: The creator of this TestCaseCommentVo.
         :type creator: str
@@ -156,7 +156,7 @@ class TestCaseCommentVo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestCaseCommentVo.
+        r"""Gets the comment of this TestCaseCommentVo.
 
         :return: The comment of this TestCaseCommentVo.
         :rtype: str
@@ -165,7 +165,7 @@ class TestCaseCommentVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestCaseCommentVo.
+        r"""Sets the comment of this TestCaseCommentVo.
 
         :param comment: The comment of this TestCaseCommentVo.
         :type comment: str
@@ -174,7 +174,7 @@ class TestCaseCommentVo:
 
     @property
     def notifier(self):
-        """Gets the notifier of this TestCaseCommentVo.
+        r"""Gets the notifier of this TestCaseCommentVo.
 
         :return: The notifier of this TestCaseCommentVo.
         :rtype: list[str]
@@ -183,7 +183,7 @@ class TestCaseCommentVo:
 
     @notifier.setter
     def notifier(self, notifier):
-        """Sets the notifier of this TestCaseCommentVo.
+        r"""Sets the notifier of this TestCaseCommentVo.
 
         :param notifier: The notifier of this TestCaseCommentVo.
         :type notifier: list[str]
@@ -192,7 +192,7 @@ class TestCaseCommentVo:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this TestCaseCommentVo.
+        r"""Gets the test_case_uri of this TestCaseCommentVo.
 
         :return: The test_case_uri of this TestCaseCommentVo.
         :rtype: str
@@ -201,7 +201,7 @@ class TestCaseCommentVo:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this TestCaseCommentVo.
+        r"""Sets the test_case_uri of this TestCaseCommentVo.
 
         :param test_case_uri: The test_case_uri of this TestCaseCommentVo.
         :type test_case_uri: str
@@ -210,7 +210,7 @@ class TestCaseCommentVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TestCaseCommentVo.
+        r"""Gets the create_time of this TestCaseCommentVo.
 
         :return: The create_time of this TestCaseCommentVo.
         :rtype: datetime
@@ -219,7 +219,7 @@ class TestCaseCommentVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TestCaseCommentVo.
+        r"""Sets the create_time of this TestCaseCommentVo.
 
         :param create_time: The create_time of this TestCaseCommentVo.
         :type create_time: datetime
@@ -228,7 +228,7 @@ class TestCaseCommentVo:
 
     @property
     def create_time_timestamp(self):
-        """Gets the create_time_timestamp of this TestCaseCommentVo.
+        r"""Gets the create_time_timestamp of this TestCaseCommentVo.
 
         创建时间时间戳
 
@@ -239,7 +239,7 @@ class TestCaseCommentVo:
 
     @create_time_timestamp.setter
     def create_time_timestamp(self, create_time_timestamp):
-        """Sets the create_time_timestamp of this TestCaseCommentVo.
+        r"""Sets the create_time_timestamp of this TestCaseCommentVo.
 
         创建时间时间戳
 
@@ -250,7 +250,7 @@ class TestCaseCommentVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TestCaseCommentVo.
+        r"""Gets the update_time of this TestCaseCommentVo.
 
         :return: The update_time of this TestCaseCommentVo.
         :rtype: datetime
@@ -259,7 +259,7 @@ class TestCaseCommentVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TestCaseCommentVo.
+        r"""Sets the update_time of this TestCaseCommentVo.
 
         :param update_time: The update_time of this TestCaseCommentVo.
         :type update_time: datetime
@@ -268,7 +268,7 @@ class TestCaseCommentVo:
 
     @property
     def update_time_timestamp(self):
-        """Gets the update_time_timestamp of this TestCaseCommentVo.
+        r"""Gets the update_time_timestamp of this TestCaseCommentVo.
 
         更新时间时间戳
 
@@ -279,7 +279,7 @@ class TestCaseCommentVo:
 
     @update_time_timestamp.setter
     def update_time_timestamp(self, update_time_timestamp):
-        """Sets the update_time_timestamp of this TestCaseCommentVo.
+        r"""Sets the update_time_timestamp of this TestCaseCommentVo.
 
         更新时间时间戳
 
@@ -290,7 +290,7 @@ class TestCaseCommentVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestCaseCommentVo.
+        r"""Gets the project_uuid of this TestCaseCommentVo.
 
         :return: The project_uuid of this TestCaseCommentVo.
         :rtype: str
@@ -299,7 +299,7 @@ class TestCaseCommentVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestCaseCommentVo.
+        r"""Sets the project_uuid of this TestCaseCommentVo.
 
         :param project_uuid: The project_uuid of this TestCaseCommentVo.
         :type project_uuid: str
@@ -308,7 +308,7 @@ class TestCaseCommentVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCaseCommentVo.
+        r"""Gets the version_uri of this TestCaseCommentVo.
 
         :return: The version_uri of this TestCaseCommentVo.
         :rtype: str
@@ -317,7 +317,7 @@ class TestCaseCommentVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCaseCommentVo.
+        r"""Sets the version_uri of this TestCaseCommentVo.
 
         :param version_uri: The version_uri of this TestCaseCommentVo.
         :type version_uri: str
@@ -326,7 +326,7 @@ class TestCaseCommentVo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this TestCaseCommentVo.
+        r"""Gets the display_name of this TestCaseCommentVo.
 
         :return: The display_name of this TestCaseCommentVo.
         :rtype: str
@@ -335,7 +335,7 @@ class TestCaseCommentVo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this TestCaseCommentVo.
+        r"""Sets the display_name of this TestCaseCommentVo.
 
         :param display_name: The display_name of this TestCaseCommentVo.
         :type display_name: str

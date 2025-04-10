@@ -31,7 +31,7 @@ class ListInstancesDatastoreResult:
     }
 
     def __init__(self, type=None, version=None, patch_available=None, whole_version=None):
-        """ListInstancesDatastoreResult
+        r"""ListInstancesDatastoreResult
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListInstancesDatastoreResult:
 
     @property
     def type(self):
-        """Gets the type of this ListInstancesDatastoreResult.
+        r"""Gets the type of this ListInstancesDatastoreResult.
 
         数据库引擎。
 
@@ -71,7 +71,7 @@ class ListInstancesDatastoreResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInstancesDatastoreResult.
+        r"""Sets the type of this ListInstancesDatastoreResult.
 
         数据库引擎。
 
@@ -82,7 +82,7 @@ class ListInstancesDatastoreResult:
 
     @property
     def version(self):
-        """Gets the version of this ListInstancesDatastoreResult.
+        r"""Gets the version of this ListInstancesDatastoreResult.
 
         数据库版本号。
 
@@ -93,7 +93,7 @@ class ListInstancesDatastoreResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListInstancesDatastoreResult.
+        r"""Sets the version of this ListInstancesDatastoreResult.
 
         数据库版本号。
 
@@ -104,7 +104,7 @@ class ListInstancesDatastoreResult:
 
     @property
     def patch_available(self):
-        """Gets the patch_available of this ListInstancesDatastoreResult.
+        r"""Gets the patch_available of this ListInstancesDatastoreResult.
 
         是否有补丁版本的数据库支持升级，返回true时可以通过升级补丁接口进行数据库升级，否则不允许升级补丁。
 
@@ -115,7 +115,7 @@ class ListInstancesDatastoreResult:
 
     @patch_available.setter
     def patch_available(self, patch_available):
-        """Sets the patch_available of this ListInstancesDatastoreResult.
+        r"""Sets the patch_available of this ListInstancesDatastoreResult.
 
         是否有补丁版本的数据库支持升级，返回true时可以通过升级补丁接口进行数据库升级，否则不允许升级补丁。
 
@@ -126,7 +126,7 @@ class ListInstancesDatastoreResult:
 
     @property
     def whole_version(self):
-        """Gets the whole_version of this ListInstancesDatastoreResult.
+        r"""Gets the whole_version of this ListInstancesDatastoreResult.
 
         数据库的完整版本号(目前只有GeminiDB Cassandra支持)。
 
@@ -137,7 +137,7 @@ class ListInstancesDatastoreResult:
 
     @whole_version.setter
     def whole_version(self, whole_version):
-        """Sets the whole_version of this ListInstancesDatastoreResult.
+        r"""Sets the whole_version of this ListInstancesDatastoreResult.
 
         数据库的完整版本号(目前只有GeminiDB Cassandra支持)。
 

@@ -29,7 +29,7 @@ class ApplicationNameRule:
     }
 
     def __init__(self, name_type=None, args=None, value=None):
-        """ApplicationNameRule
+        r"""ApplicationNameRule
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ApplicationNameRule:
 
     @property
     def name_type(self):
-        """Gets the name_type of this ApplicationNameRule.
+        r"""Gets the name_type of this ApplicationNameRule.
 
         取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
 
@@ -66,7 +66,7 @@ class ApplicationNameRule:
 
     @name_type.setter
     def name_type(self, name_type):
-        """Sets the name_type of this ApplicationNameRule.
+        r"""Sets the name_type of this ApplicationNameRule.
 
         取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
 
@@ -77,7 +77,7 @@ class ApplicationNameRule:
 
     @property
     def args(self):
-        """Gets the args of this ApplicationNameRule.
+        r"""Gets the args of this ApplicationNameRule.
 
         输入值。
 
@@ -88,7 +88,7 @@ class ApplicationNameRule:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this ApplicationNameRule.
+        r"""Sets the args of this ApplicationNameRule.
 
         输入值。
 
@@ -99,7 +99,7 @@ class ApplicationNameRule:
 
     @property
     def value(self):
-        """Gets the value of this ApplicationNameRule.
+        r"""Gets the value of this ApplicationNameRule.
 
         服务名(仅nameType为cmdLineHash时填写)。
 
@@ -110,7 +110,7 @@ class ApplicationNameRule:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ApplicationNameRule.
+        r"""Sets the value of this ApplicationNameRule.
 
         服务名(仅nameType为cmdLineHash时填写)。
 

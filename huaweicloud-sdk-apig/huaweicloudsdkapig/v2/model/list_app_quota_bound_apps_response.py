@@ -30,7 +30,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apps=None):
-        """ListAppQuotaBoundAppsResponse
+        r"""ListAppQuotaBoundAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListAppQuotaBoundAppsResponse.
+        r"""Gets the size of this ListAppQuotaBoundAppsResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAppQuotaBoundAppsResponse.
+        r"""Sets the size of this ListAppQuotaBoundAppsResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAppQuotaBoundAppsResponse.
+        r"""Gets the total of this ListAppQuotaBoundAppsResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAppQuotaBoundAppsResponse.
+        r"""Sets the total of this ListAppQuotaBoundAppsResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListAppQuotaBoundAppsResponse.
+        r"""Gets the apps of this ListAppQuotaBoundAppsResponse.
 
         凭据列表
 
@@ -111,7 +111,7 @@ class ListAppQuotaBoundAppsResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListAppQuotaBoundAppsResponse.
+        r"""Sets the apps of this ListAppQuotaBoundAppsResponse.
 
         凭据列表
 

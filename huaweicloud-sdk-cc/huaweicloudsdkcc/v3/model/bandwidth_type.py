@@ -25,7 +25,7 @@ class BandwidthType:
     }
 
     def __init__(self, bandwidth_type=None):
-        """BandwidthType
+        r"""BandwidthType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BandwidthType:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this BandwidthType.
+        r"""Gets the bandwidth_type of this BandwidthType.
 
         :return: The bandwidth_type of this BandwidthType.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -51,7 +51,7 @@ class BandwidthType:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this BandwidthType.
+        r"""Sets the bandwidth_type of this BandwidthType.
 
         :param bandwidth_type: The bandwidth_type of this BandwidthType.
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`

@@ -27,7 +27,7 @@ class AddImageMemberRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """AddImageMemberRequest
+        r"""AddImageMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddImageMemberRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this AddImageMemberRequest.
+        r"""Gets the image_id of this AddImageMemberRequest.
 
         镜像id。
 
@@ -60,7 +60,7 @@ class AddImageMemberRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this AddImageMemberRequest.
+        r"""Sets the image_id of this AddImageMemberRequest.
 
         镜像id。
 
@@ -71,7 +71,7 @@ class AddImageMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddImageMemberRequest.
+        r"""Gets the body of this AddImageMemberRequest.
 
         :return: The body of this AddImageMemberRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.AddImageMemberRequestBody`
@@ -80,7 +80,7 @@ class AddImageMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddImageMemberRequest.
+        r"""Sets the body of this AddImageMemberRequest.
 
         :param body: The body of this AddImageMemberRequest.
         :type body: :class:`huaweicloudsdkcph.v1.AddImageMemberRequestBody`

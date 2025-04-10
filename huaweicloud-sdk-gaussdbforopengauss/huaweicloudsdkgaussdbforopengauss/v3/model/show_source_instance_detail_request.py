@@ -31,7 +31,7 @@ class ShowSourceInstanceDetailRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, restore_time=None, backup_id=None):
-        """ShowSourceInstanceDetailRequest
+        r"""ShowSourceInstanceDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowSourceInstanceDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSourceInstanceDetailRequest.
+        r"""Gets the x_language of this ShowSourceInstanceDetailRequest.
 
         语言。默认值：en-us。
 
@@ -75,7 +75,7 @@ class ShowSourceInstanceDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSourceInstanceDetailRequest.
+        r"""Sets the x_language of this ShowSourceInstanceDetailRequest.
 
         语言。默认值：en-us。
 
@@ -86,7 +86,7 @@ class ShowSourceInstanceDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSourceInstanceDetailRequest.
+        r"""Gets the instance_id of this ShowSourceInstanceDetailRequest.
 
         原实例ID。  (instance_id 、restore_time为一组)
 
@@ -97,7 +97,7 @@ class ShowSourceInstanceDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSourceInstanceDetailRequest.
+        r"""Sets the instance_id of this ShowSourceInstanceDetailRequest.
 
         原实例ID。  (instance_id 、restore_time为一组)
 
@@ -108,7 +108,7 @@ class ShowSourceInstanceDetailRequest:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ShowSourceInstanceDetailRequest.
+        r"""Gets the restore_time of this ShowSourceInstanceDetailRequest.
 
         UNIX时间戳格式，单位是毫秒，时区是UTC，某时间点实例的信息。  (instance_id 、restore_time为一组)
 
@@ -119,7 +119,7 @@ class ShowSourceInstanceDetailRequest:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ShowSourceInstanceDetailRequest.
+        r"""Sets the restore_time of this ShowSourceInstanceDetailRequest.
 
         UNIX时间戳格式，单位是毫秒，时区是UTC，某时间点实例的信息。  (instance_id 、restore_time为一组)
 
@@ -130,7 +130,7 @@ class ShowSourceInstanceDetailRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowSourceInstanceDetailRequest.
+        r"""Gets the backup_id of this ShowSourceInstanceDetailRequest.
 
         备份ID。  (backup_id为一组)  备份ID不为空时，可以不需要实例ID和时间戳。
 
@@ -141,7 +141,7 @@ class ShowSourceInstanceDetailRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowSourceInstanceDetailRequest.
+        r"""Sets the backup_id of this ShowSourceInstanceDetailRequest.
 
         备份ID。  (backup_id为一组)  备份ID不为空时，可以不需要实例ID和时间戳。
 

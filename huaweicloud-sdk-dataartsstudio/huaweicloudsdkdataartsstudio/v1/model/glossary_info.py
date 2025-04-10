@@ -33,7 +33,7 @@ class GlossaryInfo:
     }
 
     def __init__(self, name=None, description=None, guid=None, create_user=None, create_time=None):
-        """GlossaryInfo
+        r"""GlossaryInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class GlossaryInfo:
 
     @property
     def name(self):
-        """Gets the name of this GlossaryInfo.
+        r"""Gets the name of this GlossaryInfo.
 
         标签名称
 
@@ -82,7 +82,7 @@ class GlossaryInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlossaryInfo.
+        r"""Sets the name of this GlossaryInfo.
 
         标签名称
 
@@ -93,7 +93,7 @@ class GlossaryInfo:
 
     @property
     def description(self):
-        """Gets the description of this GlossaryInfo.
+        r"""Gets the description of this GlossaryInfo.
 
         描述
 
@@ -104,7 +104,7 @@ class GlossaryInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlossaryInfo.
+        r"""Sets the description of this GlossaryInfo.
 
         描述
 
@@ -115,7 +115,7 @@ class GlossaryInfo:
 
     @property
     def guid(self):
-        """Gets the guid of this GlossaryInfo.
+        r"""Gets the guid of this GlossaryInfo.
 
         标签的guid
 
@@ -126,7 +126,7 @@ class GlossaryInfo:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this GlossaryInfo.
+        r"""Sets the guid of this GlossaryInfo.
 
         标签的guid
 
@@ -137,7 +137,7 @@ class GlossaryInfo:
 
     @property
     def create_user(self):
-        """Gets the create_user of this GlossaryInfo.
+        r"""Gets the create_user of this GlossaryInfo.
 
         创建用户
 
@@ -148,7 +148,7 @@ class GlossaryInfo:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this GlossaryInfo.
+        r"""Sets the create_user of this GlossaryInfo.
 
         创建用户
 
@@ -159,7 +159,7 @@ class GlossaryInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GlossaryInfo.
+        r"""Gets the create_time of this GlossaryInfo.
 
         创建时间
 
@@ -170,7 +170,7 @@ class GlossaryInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GlossaryInfo.
+        r"""Sets the create_time of this GlossaryInfo.
 
         创建时间
 

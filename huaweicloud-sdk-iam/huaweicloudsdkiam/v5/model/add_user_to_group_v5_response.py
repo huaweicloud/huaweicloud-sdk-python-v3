@@ -24,7 +24,7 @@ class AddUserToGroupV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """AddUserToGroupV5Response
+        r"""AddUserToGroupV5Response
 
         The model defined in huaweicloud sdk
 

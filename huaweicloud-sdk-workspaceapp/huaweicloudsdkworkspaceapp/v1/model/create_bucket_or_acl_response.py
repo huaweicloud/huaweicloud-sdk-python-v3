@@ -24,7 +24,7 @@ class CreateBucketOrAclResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateBucketOrAclResponse
+        r"""CreateBucketOrAclResponse
 
         The model defined in huaweicloud sdk
 

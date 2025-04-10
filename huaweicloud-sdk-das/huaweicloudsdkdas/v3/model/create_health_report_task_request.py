@@ -29,7 +29,7 @@ class CreateHealthReportTaskRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CreateHealthReportTaskRequest
+        r"""CreateHealthReportTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateHealthReportTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateHealthReportTaskRequest.
+        r"""Gets the instance_id of this CreateHealthReportTaskRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class CreateHealthReportTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateHealthReportTaskRequest.
+        r"""Sets the instance_id of this CreateHealthReportTaskRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class CreateHealthReportTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateHealthReportTaskRequest.
+        r"""Gets the x_language of this CreateHealthReportTaskRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CreateHealthReportTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateHealthReportTaskRequest.
+        r"""Sets the x_language of this CreateHealthReportTaskRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CreateHealthReportTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHealthReportTaskRequest.
+        r"""Gets the body of this CreateHealthReportTaskRequest.
 
         :return: The body of this CreateHealthReportTaskRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateHealthReportReq`
@@ -109,7 +109,7 @@ class CreateHealthReportTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHealthReportTaskRequest.
+        r"""Sets the body of this CreateHealthReportTaskRequest.
 
         :param body: The body of this CreateHealthReportTaskRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateHealthReportReq`

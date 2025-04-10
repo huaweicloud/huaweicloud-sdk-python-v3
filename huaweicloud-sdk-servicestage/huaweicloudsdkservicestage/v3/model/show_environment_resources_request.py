@@ -25,7 +25,7 @@ class ShowEnvironmentResourcesRequest:
     }
 
     def __init__(self, environment_id=None):
-        """ShowEnvironmentResourcesRequest
+        r"""ShowEnvironmentResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEnvironmentResourcesRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ShowEnvironmentResourcesRequest.
+        r"""Gets the environment_id of this ShowEnvironmentResourcesRequest.
 
         环境id
 
@@ -53,7 +53,7 @@ class ShowEnvironmentResourcesRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ShowEnvironmentResourcesRequest.
+        r"""Sets the environment_id of this ShowEnvironmentResourcesRequest.
 
         环境id
 

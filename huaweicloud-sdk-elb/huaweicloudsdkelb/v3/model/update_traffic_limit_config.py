@@ -29,7 +29,7 @@ class UpdateTrafficLimitConfig:
     }
 
     def __init__(self, qps=None, per_source_ip_qps=None, burst=None):
-        """UpdateTrafficLimitConfig
+        r"""UpdateTrafficLimitConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateTrafficLimitConfig:
 
     @property
     def qps(self):
-        """Gets the qps of this UpdateTrafficLimitConfig.
+        r"""Gets the qps of this UpdateTrafficLimitConfig.
 
         参数解释：转发策略qps限速。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
@@ -68,7 +68,7 @@ class UpdateTrafficLimitConfig:
 
     @qps.setter
     def qps(self, qps):
-        """Sets the qps of this UpdateTrafficLimitConfig.
+        r"""Sets the qps of this UpdateTrafficLimitConfig.
 
         参数解释：转发策略qps限速。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
@@ -79,7 +79,7 @@ class UpdateTrafficLimitConfig:
 
     @property
     def per_source_ip_qps(self):
-        """Gets the per_source_ip_qps of this UpdateTrafficLimitConfig.
+        r"""Gets the per_source_ip_qps of this UpdateTrafficLimitConfig.
 
         参数解释：对转发策略单源(单个客户端IP)进行限速。  约束限制： - quic监听器下转发策略不支持配置单源限速。 - 指定该字段时，赋值可以为0或者为null。 - 如果qps不为0，per_source_ip_qps需要小于qps。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
@@ -90,7 +90,7 @@ class UpdateTrafficLimitConfig:
 
     @per_source_ip_qps.setter
     def per_source_ip_qps(self, per_source_ip_qps):
-        """Sets the per_source_ip_qps of this UpdateTrafficLimitConfig.
+        r"""Sets the per_source_ip_qps of this UpdateTrafficLimitConfig.
 
         参数解释：对转发策略单源(单个客户端IP)进行限速。  约束限制： - quic监听器下转发策略不支持配置单源限速。 - 指定该字段时，赋值可以为0或者为null。 - 如果qps不为0，per_source_ip_qps需要小于qps。  取值范围：0-100000，单位：个/秒。0表示不限速。
 
@@ -101,7 +101,7 @@ class UpdateTrafficLimitConfig:
 
     @property
     def burst(self):
-        """Gets the burst of this UpdateTrafficLimitConfig.
+        r"""Gets the burst of this UpdateTrafficLimitConfig.
 
         参数解释：设置当单源qps超限时，允许的局部突增请求数量。超出该限制的请求将返回503。  取值范围：0-100000，单位：个/秒。
 
@@ -112,7 +112,7 @@ class UpdateTrafficLimitConfig:
 
     @burst.setter
     def burst(self, burst):
-        """Sets the burst of this UpdateTrafficLimitConfig.
+        r"""Sets the burst of this UpdateTrafficLimitConfig.
 
         参数解释：设置当单源qps超限时，允许的局部突增请求数量。超出该限制的请求将返回503。  取值范围：0-100000，单位：个/秒。
 

@@ -25,7 +25,7 @@ class PayOrdersRequest:
     }
 
     def __init__(self, body=None):
-        """PayOrdersRequest
+        r"""PayOrdersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PayOrdersRequest:
 
     @property
     def body(self):
-        """Gets the body of this PayOrdersRequest.
+        r"""Gets the body of this PayOrdersRequest.
 
         :return: The body of this PayOrdersRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.PayCustomerOrderV3Req`
@@ -52,7 +52,7 @@ class PayOrdersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PayOrdersRequest.
+        r"""Sets the body of this PayOrdersRequest.
 
         :param body: The body of this PayOrdersRequest.
         :type body: :class:`huaweicloudsdkbss.v2.PayCustomerOrderV3Req`

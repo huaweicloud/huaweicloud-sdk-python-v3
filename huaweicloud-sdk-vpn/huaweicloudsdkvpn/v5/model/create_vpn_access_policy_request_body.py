@@ -25,7 +25,7 @@ class CreateVpnAccessPolicyRequestBody:
     }
 
     def __init__(self, access_policy=None):
-        """CreateVpnAccessPolicyRequestBody
+        r"""CreateVpnAccessPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVpnAccessPolicyRequestBody:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this CreateVpnAccessPolicyRequestBody.
+        r"""Gets the access_policy of this CreateVpnAccessPolicyRequestBody.
 
         :return: The access_policy of this CreateVpnAccessPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnAccessPolicyRequestBodyContent`
@@ -51,7 +51,7 @@ class CreateVpnAccessPolicyRequestBody:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this CreateVpnAccessPolicyRequestBody.
+        r"""Sets the access_policy of this CreateVpnAccessPolicyRequestBody.
 
         :param access_policy: The access_policy of this CreateVpnAccessPolicyRequestBody.
         :type access_policy: :class:`huaweicloudsdkvpn.v5.CreateVpnAccessPolicyRequestBodyContent`

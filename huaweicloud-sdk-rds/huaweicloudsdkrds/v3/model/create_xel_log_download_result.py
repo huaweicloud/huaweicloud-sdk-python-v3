@@ -35,7 +35,7 @@ class CreateXelLogDownloadResult:
     }
 
     def __init__(self, file_name=None, status=None, file_size=None, file_link=None, create_at=None, update_at=None):
-        """CreateXelLogDownloadResult
+        r"""CreateXelLogDownloadResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateXelLogDownloadResult:
 
     @property
     def file_name(self):
-        """Gets the file_name of this CreateXelLogDownloadResult.
+        r"""Gets the file_name of this CreateXelLogDownloadResult.
 
         下载文件名
 
@@ -83,7 +83,7 @@ class CreateXelLogDownloadResult:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CreateXelLogDownloadResult.
+        r"""Sets the file_name of this CreateXelLogDownloadResult.
 
         下载文件名
 
@@ -94,7 +94,7 @@ class CreateXelLogDownloadResult:
 
     @property
     def status(self):
-        """Gets the status of this CreateXelLogDownloadResult.
+        r"""Gets the status of this CreateXelLogDownloadResult.
 
         生成链接的生成状态。FINISH，表示下载链接已经生成完成。EXPORTING，，表示正在生成文件。FAILED，表示存在日志文件准备失败。
 
@@ -105,7 +105,7 @@ class CreateXelLogDownloadResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateXelLogDownloadResult.
+        r"""Sets the status of this CreateXelLogDownloadResult.
 
         生成链接的生成状态。FINISH，表示下载链接已经生成完成。EXPORTING，，表示正在生成文件。FAILED，表示存在日志文件准备失败。
 
@@ -116,7 +116,7 @@ class CreateXelLogDownloadResult:
 
     @property
     def file_size(self):
-        """Gets the file_size of this CreateXelLogDownloadResult.
+        r"""Gets the file_size of this CreateXelLogDownloadResult.
 
         日志大小，单位：KB
 
@@ -127,7 +127,7 @@ class CreateXelLogDownloadResult:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this CreateXelLogDownloadResult.
+        r"""Sets the file_size of this CreateXelLogDownloadResult.
 
         日志大小，单位：KB
 
@@ -138,7 +138,7 @@ class CreateXelLogDownloadResult:
 
     @property
     def file_link(self):
-        """Gets the file_link of this CreateXelLogDownloadResult.
+        r"""Gets the file_link of this CreateXelLogDownloadResult.
 
         下载链接,链接的生成状态为EXPORTING，或者FAILED不予返回
 
@@ -149,7 +149,7 @@ class CreateXelLogDownloadResult:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this CreateXelLogDownloadResult.
+        r"""Sets the file_link of this CreateXelLogDownloadResult.
 
         下载链接,链接的生成状态为EXPORTING，或者FAILED不予返回
 
@@ -160,7 +160,7 @@ class CreateXelLogDownloadResult:
 
     @property
     def create_at(self):
-        """Gets the create_at of this CreateXelLogDownloadResult.
+        r"""Gets the create_at of this CreateXelLogDownloadResult.
 
         生成时间
 
@@ -171,7 +171,7 @@ class CreateXelLogDownloadResult:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this CreateXelLogDownloadResult.
+        r"""Sets the create_at of this CreateXelLogDownloadResult.
 
         生成时间
 
@@ -182,7 +182,7 @@ class CreateXelLogDownloadResult:
 
     @property
     def update_at(self):
-        """Gets the update_at of this CreateXelLogDownloadResult.
+        r"""Gets the update_at of this CreateXelLogDownloadResult.
 
         更新时间
 
@@ -193,7 +193,7 @@ class CreateXelLogDownloadResult:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this CreateXelLogDownloadResult.
+        r"""Sets the update_at of this CreateXelLogDownloadResult.
 
         更新时间
 

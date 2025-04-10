@@ -42,7 +42,7 @@ class ModifyPluginResponse(SdkResponse):
     }
 
     def __init__(self, image_pull_policy=None, image_pull_secret=None, phase=None, plugin_config=None, plugin_name=None, priority=None, sha256=None, url=None, verification_key=None):
-        """ModifyPluginResponse
+        r"""ModifyPluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def image_pull_policy(self):
-        """Gets the image_pull_policy of this ModifyPluginResponse.
+        r"""Gets the image_pull_policy of this ModifyPluginResponse.
 
         拉取OCI镜像的行为
 
@@ -111,7 +111,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @image_pull_policy.setter
     def image_pull_policy(self, image_pull_policy):
-        """Sets the image_pull_policy of this ModifyPluginResponse.
+        r"""Sets the image_pull_policy of this ModifyPluginResponse.
 
         拉取OCI镜像的行为
 
@@ -122,7 +122,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def image_pull_secret(self):
-        """Gets the image_pull_secret of this ModifyPluginResponse.
+        r"""Gets the image_pull_secret of this ModifyPluginResponse.
 
         拉取OCI 镜像的凭据
 
@@ -133,7 +133,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @image_pull_secret.setter
     def image_pull_secret(self, image_pull_secret):
-        """Sets the image_pull_secret of this ModifyPluginResponse.
+        r"""Sets the image_pull_secret of this ModifyPluginResponse.
 
         拉取OCI 镜像的凭据
 
@@ -144,7 +144,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def phase(self):
-        """Gets the phase of this ModifyPluginResponse.
+        r"""Gets the phase of this ModifyPluginResponse.
 
         确定插件将在过滤器链中的何处注入。
 
@@ -155,7 +155,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this ModifyPluginResponse.
+        r"""Sets the phase of this ModifyPluginResponse.
 
         确定插件将在过滤器链中的何处注入。
 
@@ -166,7 +166,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def plugin_config(self):
-        """Gets the plugin_config of this ModifyPluginResponse.
+        r"""Gets the plugin_config of this ModifyPluginResponse.
 
         传递给插件的配置。
 
@@ -177,7 +177,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @plugin_config.setter
     def plugin_config(self, plugin_config):
-        """Sets the plugin_config of this ModifyPluginResponse.
+        r"""Sets the plugin_config of this ModifyPluginResponse.
 
         传递给插件的配置。
 
@@ -188,7 +188,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ModifyPluginResponse.
+        r"""Gets the plugin_name of this ModifyPluginResponse.
 
         插件名。
 
@@ -199,7 +199,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ModifyPluginResponse.
+        r"""Sets the plugin_name of this ModifyPluginResponse.
 
         插件名。
 
@@ -210,7 +210,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ModifyPluginResponse.
+        r"""Gets the priority of this ModifyPluginResponse.
 
         插件的调用优先级。
 
@@ -221,7 +221,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ModifyPluginResponse.
+        r"""Sets the priority of this ModifyPluginResponse.
 
         插件的调用优先级。
 
@@ -232,7 +232,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def sha256(self):
-        """Gets the sha256 of this ModifyPluginResponse.
+        r"""Gets the sha256 of this ModifyPluginResponse.
 
         用于校验插件和容器的校验和。
 
@@ -243,7 +243,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this ModifyPluginResponse.
+        r"""Sets the sha256 of this ModifyPluginResponse.
 
         用于校验插件和容器的校验和。
 
@@ -254,7 +254,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ModifyPluginResponse.
+        r"""Gets the url of this ModifyPluginResponse.
 
         插件或容器的下载地址。
 
@@ -265,7 +265,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ModifyPluginResponse.
+        r"""Sets the url of this ModifyPluginResponse.
 
         插件或容器的下载地址。
 
@@ -276,7 +276,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @property
     def verification_key(self):
-        """Gets the verification_key of this ModifyPluginResponse.
+        r"""Gets the verification_key of this ModifyPluginResponse.
 
         校验值。
 
@@ -287,7 +287,7 @@ class ModifyPluginResponse(SdkResponse):
 
     @verification_key.setter
     def verification_key(self, verification_key):
-        """Sets the verification_key of this ModifyPluginResponse.
+        r"""Sets the verification_key of this ModifyPluginResponse.
 
         校验值。
 

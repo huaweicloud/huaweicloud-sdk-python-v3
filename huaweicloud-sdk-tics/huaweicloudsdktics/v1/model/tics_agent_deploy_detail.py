@@ -49,7 +49,7 @@ class TicsAgentDeployDetail:
     }
 
     def __init__(self, agent_access_address=None, agent_id=None, cce_cluster_id=None, cce_cluster_name=None, console_ip=None, console_port=None, host_path=None, ief_instance_id=None, namespace_name=None, obs_pvc_name=None, persistence_id=None, resource_spec_code=None, web_port=None):
-        """TicsAgentDeployDetail
+        r"""TicsAgentDeployDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TicsAgentDeployDetail:
 
     @property
     def agent_access_address(self):
-        """Gets the agent_access_address of this TicsAgentDeployDetail.
+        r"""Gets the agent_access_address of this TicsAgentDeployDetail.
 
         可信节点访问地址
 
@@ -138,7 +138,7 @@ class TicsAgentDeployDetail:
 
     @agent_access_address.setter
     def agent_access_address(self, agent_access_address):
-        """Sets the agent_access_address of this TicsAgentDeployDetail.
+        r"""Sets the agent_access_address of this TicsAgentDeployDetail.
 
         可信节点访问地址
 
@@ -149,7 +149,7 @@ class TicsAgentDeployDetail:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this TicsAgentDeployDetail.
+        r"""Gets the agent_id of this TicsAgentDeployDetail.
 
         可信节点Id
 
@@ -160,7 +160,7 @@ class TicsAgentDeployDetail:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this TicsAgentDeployDetail.
+        r"""Sets the agent_id of this TicsAgentDeployDetail.
 
         可信节点Id
 
@@ -171,7 +171,7 @@ class TicsAgentDeployDetail:
 
     @property
     def cce_cluster_id(self):
-        """Gets the cce_cluster_id of this TicsAgentDeployDetail.
+        r"""Gets the cce_cluster_id of this TicsAgentDeployDetail.
 
         可信节点所在cce集群的Id
 
@@ -182,7 +182,7 @@ class TicsAgentDeployDetail:
 
     @cce_cluster_id.setter
     def cce_cluster_id(self, cce_cluster_id):
-        """Sets the cce_cluster_id of this TicsAgentDeployDetail.
+        r"""Sets the cce_cluster_id of this TicsAgentDeployDetail.
 
         可信节点所在cce集群的Id
 
@@ -193,7 +193,7 @@ class TicsAgentDeployDetail:
 
     @property
     def cce_cluster_name(self):
-        """Gets the cce_cluster_name of this TicsAgentDeployDetail.
+        r"""Gets the cce_cluster_name of this TicsAgentDeployDetail.
 
         可信节点所在cce集群的名称
 
@@ -204,7 +204,7 @@ class TicsAgentDeployDetail:
 
     @cce_cluster_name.setter
     def cce_cluster_name(self, cce_cluster_name):
-        """Sets the cce_cluster_name of this TicsAgentDeployDetail.
+        r"""Sets the cce_cluster_name of this TicsAgentDeployDetail.
 
         可信节点所在cce集群的名称
 
@@ -215,7 +215,7 @@ class TicsAgentDeployDetail:
 
     @property
     def console_ip(self):
-        """Gets the console_ip of this TicsAgentDeployDetail.
+        r"""Gets the console_ip of this TicsAgentDeployDetail.
 
         可信节点所在ip
 
@@ -226,7 +226,7 @@ class TicsAgentDeployDetail:
 
     @console_ip.setter
     def console_ip(self, console_ip):
-        """Sets the console_ip of this TicsAgentDeployDetail.
+        r"""Sets the console_ip of this TicsAgentDeployDetail.
 
         可信节点所在ip
 
@@ -237,7 +237,7 @@ class TicsAgentDeployDetail:
 
     @property
     def console_port(self):
-        """Gets the console_port of this TicsAgentDeployDetail.
+        r"""Gets the console_port of this TicsAgentDeployDetail.
 
         可信节点服务端口
 
@@ -248,7 +248,7 @@ class TicsAgentDeployDetail:
 
     @console_port.setter
     def console_port(self, console_port):
-        """Sets the console_port of this TicsAgentDeployDetail.
+        r"""Sets the console_port of this TicsAgentDeployDetail.
 
         可信节点服务端口
 
@@ -259,7 +259,7 @@ class TicsAgentDeployDetail:
 
     @property
     def host_path(self):
-        """Gets the host_path of this TicsAgentDeployDetail.
+        r"""Gets the host_path of this TicsAgentDeployDetail.
 
         主机挂载路径，本地挂载才会有值
 
@@ -270,7 +270,7 @@ class TicsAgentDeployDetail:
 
     @host_path.setter
     def host_path(self, host_path):
-        """Sets the host_path of this TicsAgentDeployDetail.
+        r"""Sets the host_path of this TicsAgentDeployDetail.
 
         主机挂载路径，本地挂载才会有值
 
@@ -281,7 +281,7 @@ class TicsAgentDeployDetail:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this TicsAgentDeployDetail.
+        r"""Gets the ief_instance_id of this TicsAgentDeployDetail.
 
         ief白金版实例id, 仅IEF高可用部署有值
 
@@ -292,7 +292,7 @@ class TicsAgentDeployDetail:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this TicsAgentDeployDetail.
+        r"""Sets the ief_instance_id of this TicsAgentDeployDetail.
 
         ief白金版实例id, 仅IEF高可用部署有值
 
@@ -303,7 +303,7 @@ class TicsAgentDeployDetail:
 
     @property
     def namespace_name(self):
-        """Gets the namespace_name of this TicsAgentDeployDetail.
+        r"""Gets the namespace_name of this TicsAgentDeployDetail.
 
         命名空间名称
 
@@ -314,7 +314,7 @@ class TicsAgentDeployDetail:
 
     @namespace_name.setter
     def namespace_name(self, namespace_name):
-        """Sets the namespace_name of this TicsAgentDeployDetail.
+        r"""Sets the namespace_name of this TicsAgentDeployDetail.
 
         命名空间名称
 
@@ -325,7 +325,7 @@ class TicsAgentDeployDetail:
 
     @property
     def obs_pvc_name(self):
-        """Gets the obs_pvc_name of this TicsAgentDeployDetail.
+        r"""Gets the obs_pvc_name of this TicsAgentDeployDetail.
 
         可信节点CCE部署场景，对象文件存储PVC
 
@@ -336,7 +336,7 @@ class TicsAgentDeployDetail:
 
     @obs_pvc_name.setter
     def obs_pvc_name(self, obs_pvc_name):
-        """Sets the obs_pvc_name of this TicsAgentDeployDetail.
+        r"""Sets the obs_pvc_name of this TicsAgentDeployDetail.
 
         可信节点CCE部署场景，对象文件存储PVC
 
@@ -347,7 +347,7 @@ class TicsAgentDeployDetail:
 
     @property
     def persistence_id(self):
-        """Gets the persistence_id of this TicsAgentDeployDetail.
+        r"""Gets the persistence_id of this TicsAgentDeployDetail.
 
         持久化存储唯一标识
 
@@ -358,7 +358,7 @@ class TicsAgentDeployDetail:
 
     @persistence_id.setter
     def persistence_id(self, persistence_id):
-        """Sets the persistence_id of this TicsAgentDeployDetail.
+        r"""Sets the persistence_id of this TicsAgentDeployDetail.
 
         持久化存储唯一标识
 
@@ -369,7 +369,7 @@ class TicsAgentDeployDetail:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this TicsAgentDeployDetail.
+        r"""Gets the resource_spec_code of this TicsAgentDeployDetail.
 
         代理部署规格
 
@@ -380,7 +380,7 @@ class TicsAgentDeployDetail:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this TicsAgentDeployDetail.
+        r"""Sets the resource_spec_code of this TicsAgentDeployDetail.
 
         代理部署规格
 
@@ -391,7 +391,7 @@ class TicsAgentDeployDetail:
 
     @property
     def web_port(self):
-        """Gets the web_port of this TicsAgentDeployDetail.
+        r"""Gets the web_port of this TicsAgentDeployDetail.
 
         可信节点访问端口
 
@@ -402,7 +402,7 @@ class TicsAgentDeployDetail:
 
     @web_port.setter
     def web_port(self, web_port):
-        """Sets the web_port of this TicsAgentDeployDetail.
+        r"""Sets the web_port of this TicsAgentDeployDetail.
 
         可信节点访问端口
 

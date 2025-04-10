@@ -29,7 +29,7 @@ class ListAuditRuleScopesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListAuditRuleScopesRequest
+        r"""ListAuditRuleScopesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAuditRuleScopesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditRuleScopesRequest.
+        r"""Gets the instance_id of this ListAuditRuleScopesRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -67,7 +67,7 @@ class ListAuditRuleScopesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditRuleScopesRequest.
+        r"""Sets the instance_id of this ListAuditRuleScopesRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -78,7 +78,7 @@ class ListAuditRuleScopesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuditRuleScopesRequest.
+        r"""Gets the offset of this ListAuditRuleScopesRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ListAuditRuleScopesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuditRuleScopesRequest.
+        r"""Sets the offset of this ListAuditRuleScopesRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ListAuditRuleScopesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditRuleScopesRequest.
+        r"""Gets the limit of this ListAuditRuleScopesRequest.
 
         查询记录数
 
@@ -111,7 +111,7 @@ class ListAuditRuleScopesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditRuleScopesRequest.
+        r"""Sets the limit of this ListAuditRuleScopesRequest.
 
         查询记录数
 

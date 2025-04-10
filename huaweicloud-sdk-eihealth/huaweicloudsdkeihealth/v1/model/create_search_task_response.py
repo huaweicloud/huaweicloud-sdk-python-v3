@@ -26,7 +26,7 @@ class CreateSearchTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateSearchTaskResponse
+        r"""CreateSearchTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSearchTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateSearchTaskResponse.
+        r"""Gets the body of this CreateSearchTaskResponse.
 
         分子搜索任务ID
 
@@ -55,7 +55,7 @@ class CreateSearchTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSearchTaskResponse.
+        r"""Sets the body of this CreateSearchTaskResponse.
 
         分子搜索任务ID
 

@@ -31,7 +31,7 @@ class OutputWithModel:
     }
 
     def __init__(self, name=None, output_asset_model_id=None, output_asset_model_name=None, output_property=None):
-        """OutputWithModel
+        r"""OutputWithModel
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class OutputWithModel:
 
     @property
     def name(self):
-        """Gets the name of this OutputWithModel.
+        r"""Gets the name of this OutputWithModel.
 
         输出参数名称,formulas中定义的name
 
@@ -73,7 +73,7 @@ class OutputWithModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OutputWithModel.
+        r"""Sets the name of this OutputWithModel.
 
         输出参数名称,formulas中定义的name
 
@@ -84,7 +84,7 @@ class OutputWithModel:
 
     @property
     def output_asset_model_id(self):
-        """Gets the output_asset_model_id of this OutputWithModel.
+        r"""Gets the output_asset_model_id of this OutputWithModel.
 
         输出模型ID，如果输出到本模型可以不携带；使用导入模型和导出模型接口时，该字段无效
 
@@ -95,7 +95,7 @@ class OutputWithModel:
 
     @output_asset_model_id.setter
     def output_asset_model_id(self, output_asset_model_id):
-        """Sets the output_asset_model_id of this OutputWithModel.
+        r"""Sets the output_asset_model_id of this OutputWithModel.
 
         输出模型ID，如果输出到本模型可以不携带；使用导入模型和导出模型接口时，该字段无效
 
@@ -106,7 +106,7 @@ class OutputWithModel:
 
     @property
     def output_asset_model_name(self):
-        """Gets the output_asset_model_name of this OutputWithModel.
+        r"""Gets the output_asset_model_name of this OutputWithModel.
 
         输出模型名称，请求中携带该字段时可以不携带output_asset_model_id
 
@@ -117,7 +117,7 @@ class OutputWithModel:
 
     @output_asset_model_name.setter
     def output_asset_model_name(self, output_asset_model_name):
-        """Sets the output_asset_model_name of this OutputWithModel.
+        r"""Sets the output_asset_model_name of this OutputWithModel.
 
         输出模型名称，请求中携带该字段时可以不携带output_asset_model_id
 
@@ -128,7 +128,7 @@ class OutputWithModel:
 
     @property
     def output_property(self):
-        """Gets the output_property of this OutputWithModel.
+        r"""Gets the output_property of this OutputWithModel.
 
         输出属性名
 
@@ -139,7 +139,7 @@ class OutputWithModel:
 
     @output_property.setter
     def output_property(self, output_property):
-        """Sets the output_property of this OutputWithModel.
+        r"""Sets the output_property of this OutputWithModel.
 
         输出属性名
 

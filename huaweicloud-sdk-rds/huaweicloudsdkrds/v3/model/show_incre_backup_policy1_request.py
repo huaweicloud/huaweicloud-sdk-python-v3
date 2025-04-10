@@ -25,7 +25,7 @@ class ShowIncreBackupPolicy1Request:
     }
 
     def __init__(self, instance_id=None):
-        """ShowIncreBackupPolicy1Request
+        r"""ShowIncreBackupPolicy1Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowIncreBackupPolicy1Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowIncreBackupPolicy1Request.
+        r"""Gets the instance_id of this ShowIncreBackupPolicy1Request.
 
         instance id
 
@@ -53,7 +53,7 @@ class ShowIncreBackupPolicy1Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowIncreBackupPolicy1Request.
+        r"""Sets the instance_id of this ShowIncreBackupPolicy1Request.
 
         instance id
 

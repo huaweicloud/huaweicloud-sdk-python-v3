@@ -30,7 +30,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, bandwidth_packages=None):
-        """ListBandwidthPackagesResponse
+        r"""ListBandwidthPackagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListBandwidthPackagesResponse.
+        r"""Gets the request_id of this ListBandwidthPackagesResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthPackagesResponse.
+        r"""Sets the request_id of this ListBandwidthPackagesResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListBandwidthPackagesResponse.
+        r"""Gets the page_info of this ListBandwidthPackagesResponse.
 
         :return: The page_info of this ListBandwidthPackagesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListBandwidthPackagesResponse.
+        r"""Sets the page_info of this ListBandwidthPackagesResponse.
 
         :param page_info: The page_info of this ListBandwidthPackagesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
 
     @property
     def bandwidth_packages(self):
-        """Gets the bandwidth_packages of this ListBandwidthPackagesResponse.
+        r"""Gets the bandwidth_packages of this ListBandwidthPackagesResponse.
 
         带宽包实例列表。
 
@@ -107,7 +107,7 @@ class ListBandwidthPackagesResponse(SdkResponse):
 
     @bandwidth_packages.setter
     def bandwidth_packages(self, bandwidth_packages):
-        """Sets the bandwidth_packages of this ListBandwidthPackagesResponse.
+        r"""Sets the bandwidth_packages of this ListBandwidthPackagesResponse.
 
         带宽包实例列表。
 

@@ -26,7 +26,7 @@ class ShowMrsVersionListResponse(SdkResponse):
     }
 
     def __init__(self, cluster_versions=None):
-        """ShowMrsVersionListResponse
+        r"""ShowMrsVersionListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMrsVersionListResponse(SdkResponse):
 
     @property
     def cluster_versions(self):
-        """Gets the cluster_versions of this ShowMrsVersionListResponse.
+        r"""Gets the cluster_versions of this ShowMrsVersionListResponse.
 
         可用集群版本列表
 
@@ -55,7 +55,7 @@ class ShowMrsVersionListResponse(SdkResponse):
 
     @cluster_versions.setter
     def cluster_versions(self, cluster_versions):
-        """Sets the cluster_versions of this ShowMrsVersionListResponse.
+        r"""Sets the cluster_versions of this ShowMrsVersionListResponse.
 
         可用集群版本列表
 

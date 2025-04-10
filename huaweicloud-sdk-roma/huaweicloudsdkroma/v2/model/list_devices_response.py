@@ -38,7 +38,7 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, items=None):
-        """ListDevicesResponse
+        r"""ListDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDevicesResponse.
+        r"""Gets the total of this ListDevicesResponse.
 
         总数
 
@@ -97,7 +97,7 @@ class ListDevicesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDevicesResponse.
+        r"""Sets the total of this ListDevicesResponse.
 
         总数
 
@@ -108,7 +108,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListDevicesResponse.
+        r"""Gets the size of this ListDevicesResponse.
 
         本次返回数量
 
@@ -119,7 +119,7 @@ class ListDevicesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDevicesResponse.
+        r"""Sets the size of this ListDevicesResponse.
 
         本次返回数量
 
@@ -130,7 +130,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def connect_address(self):
-        """Gets the connect_address of this ListDevicesResponse.
+        r"""Gets the connect_address of this ListDevicesResponse.
 
         设备接入地址
 
@@ -141,7 +141,7 @@ class ListDevicesResponse(SdkResponse):
 
     @connect_address.setter
     def connect_address(self, connect_address):
-        """Sets the connect_address of this ListDevicesResponse.
+        r"""Sets the connect_address of this ListDevicesResponse.
 
         设备接入地址
 
@@ -152,7 +152,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def ssl_connect_address(self):
-        """Gets the ssl_connect_address of this ListDevicesResponse.
+        r"""Gets the ssl_connect_address of this ListDevicesResponse.
 
         设备接入SSL地址
 
@@ -163,7 +163,7 @@ class ListDevicesResponse(SdkResponse):
 
     @ssl_connect_address.setter
     def ssl_connect_address(self, ssl_connect_address):
-        """Sets the ssl_connect_address of this ListDevicesResponse.
+        r"""Sets the ssl_connect_address of this ListDevicesResponse.
 
         设备接入SSL地址
 
@@ -174,7 +174,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def ipv6_connect_address(self):
-        """Gets the ipv6_connect_address of this ListDevicesResponse.
+        r"""Gets the ipv6_connect_address of this ListDevicesResponse.
 
         设备接入IPV6地址
 
@@ -185,7 +185,7 @@ class ListDevicesResponse(SdkResponse):
 
     @ipv6_connect_address.setter
     def ipv6_connect_address(self, ipv6_connect_address):
-        """Sets the ipv6_connect_address of this ListDevicesResponse.
+        r"""Sets the ipv6_connect_address of this ListDevicesResponse.
 
         设备接入IPV6地址
 
@@ -196,7 +196,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def ipv6_ssl_connect_address(self):
-        """Gets the ipv6_ssl_connect_address of this ListDevicesResponse.
+        r"""Gets the ipv6_ssl_connect_address of this ListDevicesResponse.
 
         设备接入IPV6 SSL地址
 
@@ -207,7 +207,7 @@ class ListDevicesResponse(SdkResponse):
 
     @ipv6_ssl_connect_address.setter
     def ipv6_ssl_connect_address(self, ipv6_ssl_connect_address):
-        """Sets the ipv6_ssl_connect_address of this ListDevicesResponse.
+        r"""Sets the ipv6_ssl_connect_address of this ListDevicesResponse.
 
         设备接入IPV6 SSL地址
 
@@ -218,7 +218,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListDevicesResponse.
+        r"""Gets the items of this ListDevicesResponse.
 
         设备ID列表
 
@@ -229,7 +229,7 @@ class ListDevicesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListDevicesResponse.
+        r"""Sets the items of this ListDevicesResponse.
 
         设备ID列表
 

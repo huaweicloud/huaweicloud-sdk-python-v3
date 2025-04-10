@@ -28,7 +28,7 @@ class RetypeVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """RetypeVolumeResponse
+        r"""RetypeVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RetypeVolumeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RetypeVolumeResponse.
+        r"""Gets the job_id of this RetypeVolumeResponse.
 
         任务ID，云硬盘为按需计费时返回该参数。 > 说明： >  > 如果需要查询job的状态，请参考：\"[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)\"。
 
@@ -62,7 +62,7 @@ class RetypeVolumeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RetypeVolumeResponse.
+        r"""Sets the job_id of this RetypeVolumeResponse.
 
         任务ID，云硬盘为按需计费时返回该参数。 > 说明： >  > 如果需要查询job的状态，请参考：\"[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)\"。
 
@@ -73,7 +73,7 @@ class RetypeVolumeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this RetypeVolumeResponse.
+        r"""Gets the order_id of this RetypeVolumeResponse.
 
         订单ID，云硬盘为包周期计费时返回该参数。 > 说明： >  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 
@@ -84,7 +84,7 @@ class RetypeVolumeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this RetypeVolumeResponse.
+        r"""Sets the order_id of this RetypeVolumeResponse.
 
         订单ID，云硬盘为包周期计费时返回该参数。 > 说明： >  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 

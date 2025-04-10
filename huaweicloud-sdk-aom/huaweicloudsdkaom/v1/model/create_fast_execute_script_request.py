@@ -25,7 +25,7 @@ class CreateFastExecuteScriptRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFastExecuteScriptRequest
+        r"""CreateFastExecuteScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFastExecuteScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFastExecuteScriptRequest.
+        r"""Gets the body of this CreateFastExecuteScriptRequest.
 
         :return: The body of this CreateFastExecuteScriptRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.HISFastScript`
@@ -52,7 +52,7 @@ class CreateFastExecuteScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFastExecuteScriptRequest.
+        r"""Sets the body of this CreateFastExecuteScriptRequest.
 
         :param body: The body of this CreateFastExecuteScriptRequest.
         :type body: :class:`huaweicloudsdkaom.v1.HISFastScript`

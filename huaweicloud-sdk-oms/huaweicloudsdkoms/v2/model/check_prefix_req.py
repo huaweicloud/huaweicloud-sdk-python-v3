@@ -41,7 +41,7 @@ class CheckPrefixReq:
     }
 
     def __init__(self, cloud_type=None, ak=None, sk=None, json_auth_file=None, app_id=None, bucket_name=None, file_name=None, data_center=None, security_token=None):
-        """CheckPrefixReq
+        r"""CheckPrefixReq
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class CheckPrefixReq:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this CheckPrefixReq.
+        r"""Gets the cloud_type of this CheckPrefixReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
@@ -106,7 +106,7 @@ class CheckPrefixReq:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this CheckPrefixReq.
+        r"""Sets the cloud_type of this CheckPrefixReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
@@ -117,7 +117,7 @@ class CheckPrefixReq:
 
     @property
     def ak(self):
-        """Gets the ak of this CheckPrefixReq.
+        r"""Gets the ak of this CheckPrefixReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -128,7 +128,7 @@ class CheckPrefixReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this CheckPrefixReq.
+        r"""Sets the ak of this CheckPrefixReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -139,7 +139,7 @@ class CheckPrefixReq:
 
     @property
     def sk(self):
-        """Gets the sk of this CheckPrefixReq.
+        r"""Gets the sk of this CheckPrefixReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -150,7 +150,7 @@ class CheckPrefixReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this CheckPrefixReq.
+        r"""Sets the sk of this CheckPrefixReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -161,7 +161,7 @@ class CheckPrefixReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this CheckPrefixReq.
+        r"""Gets the json_auth_file of this CheckPrefixReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -172,7 +172,7 @@ class CheckPrefixReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this CheckPrefixReq.
+        r"""Sets the json_auth_file of this CheckPrefixReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -183,7 +183,7 @@ class CheckPrefixReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CheckPrefixReq.
+        r"""Gets the app_id of this CheckPrefixReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -194,7 +194,7 @@ class CheckPrefixReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CheckPrefixReq.
+        r"""Sets the app_id of this CheckPrefixReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -205,7 +205,7 @@ class CheckPrefixReq:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CheckPrefixReq.
+        r"""Gets the bucket_name of this CheckPrefixReq.
 
         桶名
 
@@ -216,7 +216,7 @@ class CheckPrefixReq:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CheckPrefixReq.
+        r"""Sets the bucket_name of this CheckPrefixReq.
 
         桶名
 
@@ -227,7 +227,7 @@ class CheckPrefixReq:
 
     @property
     def file_name(self):
-        """Gets the file_name of this CheckPrefixReq.
+        r"""Gets the file_name of this CheckPrefixReq.
 
         前缀名称
 
@@ -238,7 +238,7 @@ class CheckPrefixReq:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CheckPrefixReq.
+        r"""Sets the file_name of this CheckPrefixReq.
 
         前缀名称
 
@@ -249,7 +249,7 @@ class CheckPrefixReq:
 
     @property
     def data_center(self):
-        """Gets the data_center of this CheckPrefixReq.
+        r"""Gets the data_center of this CheckPrefixReq.
 
         数据中心，区域
 
@@ -260,7 +260,7 @@ class CheckPrefixReq:
 
     @data_center.setter
     def data_center(self, data_center):
-        """Sets the data_center of this CheckPrefixReq.
+        r"""Sets the data_center of this CheckPrefixReq.
 
         数据中心，区域
 
@@ -271,7 +271,7 @@ class CheckPrefixReq:
 
     @property
     def security_token(self):
-        """Gets the security_token of this CheckPrefixReq.
+        r"""Gets the security_token of this CheckPrefixReq.
 
         安全令牌
 
@@ -282,7 +282,7 @@ class CheckPrefixReq:
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this CheckPrefixReq.
+        r"""Sets the security_token of this CheckPrefixReq.
 
         安全令牌
 

@@ -45,7 +45,7 @@ class ListGlobalConnectionBandwidthsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, enterprise_project_id=None, instance_id=None, instance_type=None, binding_service=None, type=None, admin_state=None, charge_mode=None):
-        """ListGlobalConnectionBandwidthsRequest
+        r"""ListGlobalConnectionBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the limit of this ListGlobalConnectionBandwidthsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -124,7 +124,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the limit of this ListGlobalConnectionBandwidthsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -135,7 +135,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the marker of this ListGlobalConnectionBandwidthsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -146,7 +146,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the marker of this ListGlobalConnectionBandwidthsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -157,7 +157,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the id of this ListGlobalConnectionBandwidthsRequest.
 
         根据id查询，可查询多个id。
 
@@ -168,7 +168,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the id of this ListGlobalConnectionBandwidthsRequest.
 
         根据id查询，可查询多个id。
 
@@ -179,7 +179,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the name of this ListGlobalConnectionBandwidthsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -190,7 +190,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the name of this ListGlobalConnectionBandwidthsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -201,7 +201,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the enterprise_project_id of this ListGlobalConnectionBandwidthsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -212,7 +212,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the enterprise_project_id of this ListGlobalConnectionBandwidthsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -223,7 +223,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the instance_id of this ListGlobalConnectionBandwidthsRequest.
 
         根据绑定实例id过滤全域互联带宽列表。
 
@@ -234,7 +234,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the instance_id of this ListGlobalConnectionBandwidthsRequest.
 
         根据绑定实例id过滤全域互联带宽列表。
 
@@ -245,7 +245,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the instance_type of this ListGlobalConnectionBandwidthsRequest.
 
         根据绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
 
@@ -256,7 +256,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the instance_type of this ListGlobalConnectionBandwidthsRequest.
 
         根据绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
 
@@ -267,7 +267,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def binding_service(self):
-        """Gets the binding_service of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the binding_service of this ListGlobalConnectionBandwidthsRequest.
 
         根据支持绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
 
@@ -278,7 +278,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @binding_service.setter
     def binding_service(self, binding_service):
-        """Sets the binding_service of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the binding_service of this ListGlobalConnectionBandwidthsRequest.
 
         根据支持绑定实例类型过滤全域互联带宽列表。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络
 
@@ -289,7 +289,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the type of this ListGlobalConnectionBandwidthsRequest.
 
         根据带宽类型过滤全域互联带宽列表。带宽类型： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -300,7 +300,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the type of this ListGlobalConnectionBandwidthsRequest.
 
         根据带宽类型过滤全域互联带宽列表。带宽类型： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -311,7 +311,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the admin_state of this ListGlobalConnectionBandwidthsRequest.
 
         根据带宽状态过滤全域互联带宽列表： - NORMAL: 正常 - FREEZED: 冻结
 
@@ -322,7 +322,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the admin_state of this ListGlobalConnectionBandwidthsRequest.
 
         根据带宽状态过滤全域互联带宽列表： - NORMAL: 正常 - FREEZED: 冻结
 
@@ -333,7 +333,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListGlobalConnectionBandwidthsRequest.
+        r"""Gets the charge_mode of this ListGlobalConnectionBandwidthsRequest.
 
         根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费 - 95avr (日95计费)
 
@@ -344,7 +344,7 @@ class ListGlobalConnectionBandwidthsRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListGlobalConnectionBandwidthsRequest.
+        r"""Sets the charge_mode of this ListGlobalConnectionBandwidthsRequest.
 
         根据计费方式过滤全域互联带宽列表： - bwd: 按带宽计费 - 95: 按传统型95计费 - 95avr (日95计费)
 

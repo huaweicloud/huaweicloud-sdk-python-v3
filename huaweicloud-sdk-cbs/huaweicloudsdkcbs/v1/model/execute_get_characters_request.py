@@ -37,7 +37,7 @@ class ExecuteGetCharactersRequest:
     }
 
     def __init__(self, offset=None, limit=None, type=None, train_status=None, character_name=None, support_interact=None, gender=None):
-        """ExecuteGetCharactersRequest
+        r"""ExecuteGetCharactersRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetCharactersRequest.
+        r"""Gets the offset of this ExecuteGetCharactersRequest.
 
         :return: The offset of this ExecuteGetCharactersRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ExecuteGetCharactersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetCharactersRequest.
+        r"""Sets the offset of this ExecuteGetCharactersRequest.
 
         :param offset: The offset of this ExecuteGetCharactersRequest.
         :type offset: str
@@ -103,7 +103,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExecuteGetCharactersRequest.
+        r"""Gets the limit of this ExecuteGetCharactersRequest.
 
         :return: The limit of this ExecuteGetCharactersRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ExecuteGetCharactersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExecuteGetCharactersRequest.
+        r"""Sets the limit of this ExecuteGetCharactersRequest.
 
         :param limit: The limit of this ExecuteGetCharactersRequest.
         :type limit: str
@@ -121,7 +121,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def type(self):
-        """Gets the type of this ExecuteGetCharactersRequest.
+        r"""Gets the type of this ExecuteGetCharactersRequest.
 
         形象类型： 0：预制形象 1：用户自定义形象
 
@@ -132,7 +132,7 @@ class ExecuteGetCharactersRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExecuteGetCharactersRequest.
+        r"""Sets the type of this ExecuteGetCharactersRequest.
 
         形象类型： 0：预制形象 1：用户自定义形象
 
@@ -143,7 +143,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def train_status(self):
-        """Gets the train_status of this ExecuteGetCharactersRequest.
+        r"""Gets the train_status of this ExecuteGetCharactersRequest.
 
         训练状态： 0：预处理 1：训练中 2：训练成功 3：训练失败 4：预览视频生成中
 
@@ -154,7 +154,7 @@ class ExecuteGetCharactersRequest:
 
     @train_status.setter
     def train_status(self, train_status):
-        """Sets the train_status of this ExecuteGetCharactersRequest.
+        r"""Sets the train_status of this ExecuteGetCharactersRequest.
 
         训练状态： 0：预处理 1：训练中 2：训练成功 3：训练失败 4：预览视频生成中
 
@@ -165,7 +165,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def character_name(self):
-        """Gets the character_name of this ExecuteGetCharactersRequest.
+        r"""Gets the character_name of this ExecuteGetCharactersRequest.
 
         :return: The character_name of this ExecuteGetCharactersRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ExecuteGetCharactersRequest:
 
     @character_name.setter
     def character_name(self, character_name):
-        """Sets the character_name of this ExecuteGetCharactersRequest.
+        r"""Sets the character_name of this ExecuteGetCharactersRequest.
 
         :param character_name: The character_name of this ExecuteGetCharactersRequest.
         :type character_name: str
@@ -183,7 +183,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def support_interact(self):
-        """Gets the support_interact of this ExecuteGetCharactersRequest.
+        r"""Gets the support_interact of this ExecuteGetCharactersRequest.
 
         是否只获取支持交互式的数字人；默认：false 获取全部
 
@@ -194,7 +194,7 @@ class ExecuteGetCharactersRequest:
 
     @support_interact.setter
     def support_interact(self, support_interact):
-        """Sets the support_interact of this ExecuteGetCharactersRequest.
+        r"""Sets the support_interact of this ExecuteGetCharactersRequest.
 
         是否只获取支持交互式的数字人；默认：false 获取全部
 
@@ -205,7 +205,7 @@ class ExecuteGetCharactersRequest:
 
     @property
     def gender(self):
-        """Gets the gender of this ExecuteGetCharactersRequest.
+        r"""Gets the gender of this ExecuteGetCharactersRequest.
 
         性别
 
@@ -216,7 +216,7 @@ class ExecuteGetCharactersRequest:
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this ExecuteGetCharactersRequest.
+        r"""Sets the gender of this ExecuteGetCharactersRequest.
 
         性别
 

@@ -31,7 +31,7 @@ class ImportSmnResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """ImportSmnResp
+        r"""ImportSmnResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ImportSmnResp:
 
     @property
     def id(self):
-        """Gets the id of this ImportSmnResp.
+        r"""Gets the id of this ImportSmnResp.
 
         任务ID
 
@@ -75,7 +75,7 @@ class ImportSmnResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportSmnResp.
+        r"""Sets the id of this ImportSmnResp.
 
         任务ID
 
@@ -86,7 +86,7 @@ class ImportSmnResp:
 
     @property
     def status(self):
-        """Gets the status of this ImportSmnResp.
+        r"""Gets the status of this ImportSmnResp.
 
         状态
 
@@ -97,7 +97,7 @@ class ImportSmnResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImportSmnResp.
+        r"""Sets the status of this ImportSmnResp.
 
         状态
 
@@ -108,7 +108,7 @@ class ImportSmnResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ImportSmnResp.
+        r"""Gets the error_code of this ImportSmnResp.
 
         错误码
 
@@ -119,7 +119,7 @@ class ImportSmnResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ImportSmnResp.
+        r"""Sets the error_code of this ImportSmnResp.
 
         错误码
 
@@ -130,7 +130,7 @@ class ImportSmnResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ImportSmnResp.
+        r"""Gets the error_msg of this ImportSmnResp.
 
         错误信息
 
@@ -141,7 +141,7 @@ class ImportSmnResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ImportSmnResp.
+        r"""Sets the error_msg of this ImportSmnResp.
 
         错误信息
 

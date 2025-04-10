@@ -27,7 +27,7 @@ class RealtimeScaleDimensionValue:
     }
 
     def __init__(self, dimension=None, online_users=None):
-        """RealtimeScaleDimensionValue
+        r"""RealtimeScaleDimensionValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RealtimeScaleDimensionValue:
 
     @property
     def dimension(self):
-        """Gets the dimension of this RealtimeScaleDimensionValue.
+        r"""Gets the dimension of this RealtimeScaleDimensionValue.
 
         维度值，如查询维度为region，则此处取值可能为GD 
 
@@ -61,7 +61,7 @@ class RealtimeScaleDimensionValue:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this RealtimeScaleDimensionValue.
+        r"""Sets the dimension of this RealtimeScaleDimensionValue.
 
         维度值，如查询维度为region，则此处取值可能为GD 
 
@@ -72,7 +72,7 @@ class RealtimeScaleDimensionValue:
 
     @property
     def online_users(self):
-        """Gets the online_users of this RealtimeScaleDimensionValue.
+        r"""Gets the online_users of this RealtimeScaleDimensionValue.
 
         在线观众数
 
@@ -83,7 +83,7 @@ class RealtimeScaleDimensionValue:
 
     @online_users.setter
     def online_users(self, online_users):
-        """Sets the online_users of this RealtimeScaleDimensionValue.
+        r"""Sets the online_users of this RealtimeScaleDimensionValue.
 
         在线观众数
 

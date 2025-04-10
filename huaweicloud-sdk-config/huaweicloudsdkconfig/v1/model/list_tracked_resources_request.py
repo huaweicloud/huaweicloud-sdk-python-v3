@@ -41,7 +41,7 @@ class ListTrackedResourcesRequest:
     }
 
     def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None, id=None, name=None, tags=None, resource_deleted=None):
-        """ListTrackedResourcesRequest
+        r"""ListTrackedResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListTrackedResourcesRequest.
+        r"""Gets the region_id of this ListTrackedResourcesRequest.
 
         区域ID
 
@@ -110,7 +110,7 @@ class ListTrackedResourcesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListTrackedResourcesRequest.
+        r"""Sets the region_id of this ListTrackedResourcesRequest.
 
         区域ID
 
@@ -121,7 +121,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ListTrackedResourcesRequest.
+        r"""Gets the ep_id of this ListTrackedResourcesRequest.
 
         企业项目ID
 
@@ -132,7 +132,7 @@ class ListTrackedResourcesRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ListTrackedResourcesRequest.
+        r"""Sets the ep_id of this ListTrackedResourcesRequest.
 
         企业项目ID
 
@@ -143,7 +143,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListTrackedResourcesRequest.
+        r"""Gets the type of this ListTrackedResourcesRequest.
 
         资源类型（provider.type）
 
@@ -154,7 +154,7 @@ class ListTrackedResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListTrackedResourcesRequest.
+        r"""Sets the type of this ListTrackedResourcesRequest.
 
         资源类型（provider.type）
 
@@ -165,7 +165,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTrackedResourcesRequest.
+        r"""Gets the limit of this ListTrackedResourcesRequest.
 
         最大的返回数量。
 
@@ -176,7 +176,7 @@ class ListTrackedResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTrackedResourcesRequest.
+        r"""Sets the limit of this ListTrackedResourcesRequest.
 
         最大的返回数量。
 
@@ -187,7 +187,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTrackedResourcesRequest.
+        r"""Gets the marker of this ListTrackedResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -198,7 +198,7 @@ class ListTrackedResourcesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTrackedResourcesRequest.
+        r"""Sets the marker of this ListTrackedResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -209,7 +209,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTrackedResourcesRequest.
+        r"""Gets the id of this ListTrackedResourcesRequest.
 
         资源ID
 
@@ -220,7 +220,7 @@ class ListTrackedResourcesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTrackedResourcesRequest.
+        r"""Sets the id of this ListTrackedResourcesRequest.
 
         资源ID
 
@@ -231,7 +231,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTrackedResourcesRequest.
+        r"""Gets the name of this ListTrackedResourcesRequest.
 
         资源名称
 
@@ -242,7 +242,7 @@ class ListTrackedResourcesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTrackedResourcesRequest.
+        r"""Sets the name of this ListTrackedResourcesRequest.
 
         资源名称
 
@@ -253,7 +253,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListTrackedResourcesRequest.
+        r"""Gets the tags of this ListTrackedResourcesRequest.
 
         标签列表
 
@@ -264,7 +264,7 @@ class ListTrackedResourcesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTrackedResourcesRequest.
+        r"""Sets the tags of this ListTrackedResourcesRequest.
 
         标签列表
 
@@ -275,7 +275,7 @@ class ListTrackedResourcesRequest:
 
     @property
     def resource_deleted(self):
-        """Gets the resource_deleted of this ListTrackedResourcesRequest.
+        r"""Gets the resource_deleted of this ListTrackedResourcesRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 
@@ -286,7 +286,7 @@ class ListTrackedResourcesRequest:
 
     @resource_deleted.setter
     def resource_deleted(self, resource_deleted):
-        """Sets the resource_deleted of this ListTrackedResourcesRequest.
+        r"""Sets the resource_deleted of this ListTrackedResourcesRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 

@@ -33,7 +33,7 @@ class RoutingRuleAction:
     }
 
     def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None):
-        """RoutingRuleAction
+        r"""RoutingRuleAction
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RoutingRuleAction:
 
     @property
     def action_id(self):
-        """Gets the action_id of this RoutingRuleAction.
+        r"""Gets the action_id of this RoutingRuleAction.
 
         规则动作ID，用于唯一标识一条规则动作，在创建规则动作时由物联网平台分配获得，创建时无需携带，由平台统一分配唯一的action_id。
 
@@ -82,7 +82,7 @@ class RoutingRuleAction:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this RoutingRuleAction.
+        r"""Sets the action_id of this RoutingRuleAction.
 
         规则动作ID，用于唯一标识一条规则动作，在创建规则动作时由物联网平台分配获得，创建时无需携带，由平台统一分配唯一的action_id。
 
@@ -93,7 +93,7 @@ class RoutingRuleAction:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RoutingRuleAction.
+        r"""Gets the rule_id of this RoutingRuleAction.
 
         规则动作对应的的规则触发条件ID。
 
@@ -104,7 +104,7 @@ class RoutingRuleAction:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RoutingRuleAction.
+        r"""Sets the rule_id of this RoutingRuleAction.
 
         规则动作对应的的规则触发条件ID。
 
@@ -115,7 +115,7 @@ class RoutingRuleAction:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RoutingRuleAction.
+        r"""Gets the app_id of this RoutingRuleAction.
 
         资源空间ID。
 
@@ -126,7 +126,7 @@ class RoutingRuleAction:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RoutingRuleAction.
+        r"""Sets the app_id of this RoutingRuleAction.
 
         资源空间ID。
 
@@ -137,7 +137,7 @@ class RoutingRuleAction:
 
     @property
     def channel(self):
-        """Gets the channel of this RoutingRuleAction.
+        r"""Gets the channel of this RoutingRuleAction.
 
         规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 [- ROMA_FORWARDING: 转发Roma消息类型。（仅企业版支持）](tag:hws) - INFLUXDB_FORWARDING：转发InfluxDB消息类型。[（仅标准版和企业版支持）](tag:hws) - MYSQL_FORWARDING：转发MySQL消息类型。[（仅标准版和企业版支持）](tag:hws) - FUNCTIONGRAPH_FORWARDING：转发FunctionGraph消息类型。[（仅标准版和企业版支持）](tag:hws) [- MRS_KAFKA_FORWARDING：转发MRS_KAFKA消息类型。（仅企业版支持）](tag:hws) [- DMS_ROCKETMQ_FORWARDING：转发RocketMQ消息类型。（仅标准版和企业版支持）](tag:hws)
 
@@ -148,7 +148,7 @@ class RoutingRuleAction:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this RoutingRuleAction.
+        r"""Sets the channel of this RoutingRuleAction.
 
         规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 [- ROMA_FORWARDING: 转发Roma消息类型。（仅企业版支持）](tag:hws) - INFLUXDB_FORWARDING：转发InfluxDB消息类型。[（仅标准版和企业版支持）](tag:hws) - MYSQL_FORWARDING：转发MySQL消息类型。[（仅标准版和企业版支持）](tag:hws) - FUNCTIONGRAPH_FORWARDING：转发FunctionGraph消息类型。[（仅标准版和企业版支持）](tag:hws) [- MRS_KAFKA_FORWARDING：转发MRS_KAFKA消息类型。（仅企业版支持）](tag:hws) [- DMS_ROCKETMQ_FORWARDING：转发RocketMQ消息类型。（仅标准版和企业版支持）](tag:hws)
 
@@ -159,7 +159,7 @@ class RoutingRuleAction:
 
     @property
     def channel_detail(self):
-        """Gets the channel_detail of this RoutingRuleAction.
+        r"""Gets the channel_detail of this RoutingRuleAction.
 
         :return: The channel_detail of this RoutingRuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
@@ -168,7 +168,7 @@ class RoutingRuleAction:
 
     @channel_detail.setter
     def channel_detail(self, channel_detail):
-        """Sets the channel_detail of this RoutingRuleAction.
+        r"""Sets the channel_detail of this RoutingRuleAction.
 
         :param channel_detail: The channel_detail of this RoutingRuleAction.
         :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`

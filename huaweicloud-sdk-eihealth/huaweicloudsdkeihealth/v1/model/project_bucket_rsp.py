@@ -31,7 +31,7 @@ class ProjectBucketRsp:
     }
 
     def __init__(self, eihealth_project_id=None, eihealth_project_name=None, type=None, quote_root=None):
-        """ProjectBucketRsp
+        r"""ProjectBucketRsp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProjectBucketRsp:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ProjectBucketRsp.
+        r"""Gets the eihealth_project_id of this ProjectBucketRsp.
 
         项目编号
 
@@ -75,7 +75,7 @@ class ProjectBucketRsp:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ProjectBucketRsp.
+        r"""Sets the eihealth_project_id of this ProjectBucketRsp.
 
         项目编号
 
@@ -86,7 +86,7 @@ class ProjectBucketRsp:
 
     @property
     def eihealth_project_name(self):
-        """Gets the eihealth_project_name of this ProjectBucketRsp.
+        r"""Gets the eihealth_project_name of this ProjectBucketRsp.
 
         项目名称
 
@@ -97,7 +97,7 @@ class ProjectBucketRsp:
 
     @eihealth_project_name.setter
     def eihealth_project_name(self, eihealth_project_name):
-        """Sets the eihealth_project_name of this ProjectBucketRsp.
+        r"""Sets the eihealth_project_name of this ProjectBucketRsp.
 
         项目名称
 
@@ -108,7 +108,7 @@ class ProjectBucketRsp:
 
     @property
     def type(self):
-        """Gets the type of this ProjectBucketRsp.
+        r"""Gets the type of this ProjectBucketRsp.
 
         桶类型(real:项目桶,quote:引用桶)
 
@@ -119,7 +119,7 @@ class ProjectBucketRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProjectBucketRsp.
+        r"""Sets the type of this ProjectBucketRsp.
 
         桶类型(real:项目桶,quote:引用桶)
 
@@ -130,7 +130,7 @@ class ProjectBucketRsp:
 
     @property
     def quote_root(self):
-        """Gets the quote_root of this ProjectBucketRsp.
+        r"""Gets the quote_root of this ProjectBucketRsp.
 
         是否引用桶根路径
 
@@ -141,7 +141,7 @@ class ProjectBucketRsp:
 
     @quote_root.setter
     def quote_root(self, quote_root):
-        """Sets the quote_root of this ProjectBucketRsp.
+        r"""Sets the quote_root of this ProjectBucketRsp.
 
         是否引用桶根路径
 

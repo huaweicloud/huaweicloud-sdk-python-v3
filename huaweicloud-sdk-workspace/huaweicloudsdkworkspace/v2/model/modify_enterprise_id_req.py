@@ -25,7 +25,7 @@ class ModifyEnterpriseIdReq:
     }
 
     def __init__(self, enterprise_id=None):
-        """ModifyEnterpriseIdReq
+        r"""ModifyEnterpriseIdReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyEnterpriseIdReq:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this ModifyEnterpriseIdReq.
+        r"""Gets the enterprise_id of this ModifyEnterpriseIdReq.
 
         企业ID
 
@@ -53,7 +53,7 @@ class ModifyEnterpriseIdReq:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this ModifyEnterpriseIdReq.
+        r"""Sets the enterprise_id of this ModifyEnterpriseIdReq.
 
         企业ID
 

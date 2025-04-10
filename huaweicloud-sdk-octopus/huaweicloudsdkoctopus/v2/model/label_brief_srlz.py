@@ -37,7 +37,7 @@ class LabelBriefSrlz:
     }
 
     def __init__(self, name=None, url=None, id=None, family=None, root=None, tag_type=None, parent_names=None):
-        """LabelBriefSrlz
+        r"""LabelBriefSrlz
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class LabelBriefSrlz:
 
     @property
     def name(self):
-        """Gets the name of this LabelBriefSrlz.
+        r"""Gets the name of this LabelBriefSrlz.
 
         标签名称
 
@@ -90,7 +90,7 @@ class LabelBriefSrlz:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LabelBriefSrlz.
+        r"""Sets the name of this LabelBriefSrlz.
 
         标签名称
 
@@ -101,7 +101,7 @@ class LabelBriefSrlz:
 
     @property
     def url(self):
-        """Gets the url of this LabelBriefSrlz.
+        r"""Gets the url of this LabelBriefSrlz.
 
         标签地址
 
@@ -112,7 +112,7 @@ class LabelBriefSrlz:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this LabelBriefSrlz.
+        r"""Sets the url of this LabelBriefSrlz.
 
         标签地址
 
@@ -123,7 +123,7 @@ class LabelBriefSrlz:
 
     @property
     def id(self):
-        """Gets the id of this LabelBriefSrlz.
+        r"""Gets the id of this LabelBriefSrlz.
 
         标签ID
 
@@ -134,7 +134,7 @@ class LabelBriefSrlz:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LabelBriefSrlz.
+        r"""Sets the id of this LabelBriefSrlz.
 
         标签ID
 
@@ -145,7 +145,7 @@ class LabelBriefSrlz:
 
     @property
     def family(self):
-        """Gets the family of this LabelBriefSrlz.
+        r"""Gets the family of this LabelBriefSrlz.
 
         :return: The family of this LabelBriefSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.FamilyEnum`
@@ -154,7 +154,7 @@ class LabelBriefSrlz:
 
     @family.setter
     def family(self, family):
-        """Sets the family of this LabelBriefSrlz.
+        r"""Sets the family of this LabelBriefSrlz.
 
         :param family: The family of this LabelBriefSrlz.
         :type family: :class:`huaweicloudsdkoctopus.v2.FamilyEnum`
@@ -163,7 +163,7 @@ class LabelBriefSrlz:
 
     @property
     def root(self):
-        """Gets the root of this LabelBriefSrlz.
+        r"""Gets the root of this LabelBriefSrlz.
 
         根标签
 
@@ -174,7 +174,7 @@ class LabelBriefSrlz:
 
     @root.setter
     def root(self, root):
-        """Sets the root of this LabelBriefSrlz.
+        r"""Sets the root of this LabelBriefSrlz.
 
         根标签
 
@@ -185,7 +185,7 @@ class LabelBriefSrlz:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this LabelBriefSrlz.
+        r"""Gets the tag_type of this LabelBriefSrlz.
 
         标签类型
 
@@ -196,7 +196,7 @@ class LabelBriefSrlz:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this LabelBriefSrlz.
+        r"""Sets the tag_type of this LabelBriefSrlz.
 
         标签类型
 
@@ -207,7 +207,7 @@ class LabelBriefSrlz:
 
     @property
     def parent_names(self):
-        """Gets the parent_names of this LabelBriefSrlz.
+        r"""Gets the parent_names of this LabelBriefSrlz.
 
         父标签名称
 
@@ -218,7 +218,7 @@ class LabelBriefSrlz:
 
     @parent_names.setter
     def parent_names(self, parent_names):
-        """Sets the parent_names of this LabelBriefSrlz.
+        r"""Sets the parent_names of this LabelBriefSrlz.
 
         父标签名称
 

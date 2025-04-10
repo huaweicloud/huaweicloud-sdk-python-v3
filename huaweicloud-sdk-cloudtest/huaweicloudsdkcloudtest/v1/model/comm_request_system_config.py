@@ -25,7 +25,7 @@ class CommRequestSystemConfig:
     }
 
     def __init__(self, params=None):
-        """CommRequestSystemConfig
+        r"""CommRequestSystemConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestSystemConfig:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestSystemConfig.
+        r"""Gets the params of this CommRequestSystemConfig.
 
         :return: The params of this CommRequestSystemConfig.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.SystemConfig`
@@ -51,7 +51,7 @@ class CommRequestSystemConfig:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestSystemConfig.
+        r"""Sets the params of this CommRequestSystemConfig.
 
         :param params: The params of this CommRequestSystemConfig.
         :type params: :class:`huaweicloudsdkcloudtest.v1.SystemConfig`

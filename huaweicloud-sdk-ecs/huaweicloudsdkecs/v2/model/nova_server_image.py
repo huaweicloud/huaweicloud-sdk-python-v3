@@ -27,7 +27,7 @@ class NovaServerImage:
     }
 
     def __init__(self, id=None, links=None):
-        """NovaServerImage
+        r"""NovaServerImage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NovaServerImage:
 
     @property
     def id(self):
-        """Gets the id of this NovaServerImage.
+        r"""Gets the id of this NovaServerImage.
 
         镜像ID。
 
@@ -59,7 +59,7 @@ class NovaServerImage:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaServerImage.
+        r"""Sets the id of this NovaServerImage.
 
         镜像ID。
 
@@ -70,7 +70,7 @@ class NovaServerImage:
 
     @property
     def links(self):
-        """Gets the links of this NovaServerImage.
+        r"""Gets the links of this NovaServerImage.
 
         云服务器类型相关标记快捷链接信息。
 
@@ -81,7 +81,7 @@ class NovaServerImage:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this NovaServerImage.
+        r"""Sets the links of this NovaServerImage.
 
         云服务器类型相关标记快捷链接信息。
 

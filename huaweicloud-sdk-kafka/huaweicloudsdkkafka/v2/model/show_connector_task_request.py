@@ -27,7 +27,7 @@ class ShowConnectorTaskRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None):
-        """ShowConnectorTaskRequest
+        r"""ShowConnectorTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowConnectorTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowConnectorTaskRequest.
+        r"""Gets the instance_id of this ShowConnectorTaskRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowConnectorTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowConnectorTaskRequest.
+        r"""Sets the instance_id of this ShowConnectorTaskRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowConnectorTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowConnectorTaskRequest.
+        r"""Gets the task_id of this ShowConnectorTaskRequest.
 
         Smart Connector任务ID。
 
@@ -81,7 +81,7 @@ class ShowConnectorTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowConnectorTaskRequest.
+        r"""Sets the task_id of this ShowConnectorTaskRequest.
 
         Smart Connector任务ID。
 

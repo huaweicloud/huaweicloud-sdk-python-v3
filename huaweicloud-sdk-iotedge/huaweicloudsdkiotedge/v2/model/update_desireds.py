@@ -25,7 +25,7 @@ class UpdateDesireds:
     }
 
     def __init__(self, config=None):
-        """UpdateDesireds
+        r"""UpdateDesireds
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDesireds:
 
     @property
     def config(self):
-        """Gets the config of this UpdateDesireds.
+        r"""Gets the config of this UpdateDesireds.
 
         设备配置，内容由产品的$config服务定义。
 
@@ -54,7 +54,7 @@ class UpdateDesireds:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this UpdateDesireds.
+        r"""Sets the config of this UpdateDesireds.
 
         设备配置，内容由产品的$config服务定义。
 

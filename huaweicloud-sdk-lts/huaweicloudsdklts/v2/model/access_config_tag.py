@@ -27,7 +27,7 @@ class AccessConfigTag:
     }
 
     def __init__(self, key=None, value=None):
-        """AccessConfigTag
+        r"""AccessConfigTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessConfigTag:
 
     @property
     def key(self):
-        """Gets the key of this AccessConfigTag.
+        r"""Gets the key of this AccessConfigTag.
 
         :return: The key of this AccessConfigTag.
         :rtype: str
@@ -59,7 +59,7 @@ class AccessConfigTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AccessConfigTag.
+        r"""Sets the key of this AccessConfigTag.
 
         :param key: The key of this AccessConfigTag.
         :type key: str
@@ -68,7 +68,7 @@ class AccessConfigTag:
 
     @property
     def value(self):
-        """Gets the value of this AccessConfigTag.
+        r"""Gets the value of this AccessConfigTag.
 
         :return: The value of this AccessConfigTag.
         :rtype: str
@@ -77,7 +77,7 @@ class AccessConfigTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AccessConfigTag.
+        r"""Sets the value of this AccessConfigTag.
 
         :param value: The value of this AccessConfigTag.
         :type value: str

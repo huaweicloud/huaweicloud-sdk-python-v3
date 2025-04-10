@@ -45,7 +45,7 @@ class EnvNodeModel:
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, app_id=None, business_name=None, inner_domain_id=None, name=None, is_default=None, app_name=None, business_id=None, region=None):
-        """EnvNodeModel
+        r"""EnvNodeModel
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EnvNodeModel:
 
     @property
     def id(self):
-        """Gets the id of this EnvNodeModel.
+        r"""Gets the id of this EnvNodeModel.
 
         环境id。
 
@@ -124,7 +124,7 @@ class EnvNodeModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvNodeModel.
+        r"""Sets the id of this EnvNodeModel.
 
         环境id。
 
@@ -135,7 +135,7 @@ class EnvNodeModel:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this EnvNodeModel.
+        r"""Gets the gmt_create of this EnvNodeModel.
 
         创建时间。
 
@@ -146,7 +146,7 @@ class EnvNodeModel:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this EnvNodeModel.
+        r"""Sets the gmt_create of this EnvNodeModel.
 
         创建时间。
 
@@ -157,7 +157,7 @@ class EnvNodeModel:
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this EnvNodeModel.
+        r"""Gets the gmt_modify of this EnvNodeModel.
 
         修改时间。
 
@@ -168,7 +168,7 @@ class EnvNodeModel:
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this EnvNodeModel.
+        r"""Sets the gmt_modify of this EnvNodeModel.
 
         修改时间。
 
@@ -179,7 +179,7 @@ class EnvNodeModel:
 
     @property
     def app_id(self):
-        """Gets the app_id of this EnvNodeModel.
+        r"""Gets the app_id of this EnvNodeModel.
 
         组件id。
 
@@ -190,7 +190,7 @@ class EnvNodeModel:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this EnvNodeModel.
+        r"""Sets the app_id of this EnvNodeModel.
 
         组件id。
 
@@ -201,7 +201,7 @@ class EnvNodeModel:
 
     @property
     def business_name(self):
-        """Gets the business_name of this EnvNodeModel.
+        r"""Gets the business_name of this EnvNodeModel.
 
         应用名称。
 
@@ -212,7 +212,7 @@ class EnvNodeModel:
 
     @business_name.setter
     def business_name(self, business_name):
-        """Sets the business_name of this EnvNodeModel.
+        r"""Sets the business_name of this EnvNodeModel.
 
         应用名称。
 
@@ -223,7 +223,7 @@ class EnvNodeModel:
 
     @property
     def inner_domain_id(self):
-        """Gets the inner_domain_id of this EnvNodeModel.
+        r"""Gets the inner_domain_id of this EnvNodeModel.
 
         租户id。
 
@@ -234,7 +234,7 @@ class EnvNodeModel:
 
     @inner_domain_id.setter
     def inner_domain_id(self, inner_domain_id):
-        """Sets the inner_domain_id of this EnvNodeModel.
+        r"""Sets the inner_domain_id of this EnvNodeModel.
 
         租户id。
 
@@ -245,7 +245,7 @@ class EnvNodeModel:
 
     @property
     def name(self):
-        """Gets the name of this EnvNodeModel.
+        r"""Gets the name of this EnvNodeModel.
 
         环境名称。
 
@@ -256,7 +256,7 @@ class EnvNodeModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvNodeModel.
+        r"""Sets the name of this EnvNodeModel.
 
         环境名称。
 
@@ -267,7 +267,7 @@ class EnvNodeModel:
 
     @property
     def is_default(self):
-        """Gets the is_default of this EnvNodeModel.
+        r"""Gets the is_default of this EnvNodeModel.
 
         是否是默认环境。
 
@@ -278,7 +278,7 @@ class EnvNodeModel:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this EnvNodeModel.
+        r"""Sets the is_default of this EnvNodeModel.
 
         是否是默认环境。
 
@@ -289,7 +289,7 @@ class EnvNodeModel:
 
     @property
     def app_name(self):
-        """Gets the app_name of this EnvNodeModel.
+        r"""Gets the app_name of this EnvNodeModel.
 
         组件名称。
 
@@ -300,7 +300,7 @@ class EnvNodeModel:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this EnvNodeModel.
+        r"""Sets the app_name of this EnvNodeModel.
 
         组件名称。
 
@@ -311,7 +311,7 @@ class EnvNodeModel:
 
     @property
     def business_id(self):
-        """Gets the business_id of this EnvNodeModel.
+        r"""Gets the business_id of this EnvNodeModel.
 
         应用id。
 
@@ -322,7 +322,7 @@ class EnvNodeModel:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this EnvNodeModel.
+        r"""Sets the business_id of this EnvNodeModel.
 
         应用id。
 
@@ -333,7 +333,7 @@ class EnvNodeModel:
 
     @property
     def region(self):
-        """Gets the region of this EnvNodeModel.
+        r"""Gets the region of this EnvNodeModel.
 
         区域。
 
@@ -344,7 +344,7 @@ class EnvNodeModel:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this EnvNodeModel.
+        r"""Sets the region of this EnvNodeModel.
 
         区域。
 

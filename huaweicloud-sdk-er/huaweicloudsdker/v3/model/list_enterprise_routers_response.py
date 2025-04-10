@@ -30,7 +30,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, page_info=None, request_id=None):
-        """ListEnterpriseRoutersResponse
+        r"""ListEnterpriseRoutersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListEnterpriseRoutersResponse.
+        r"""Gets the instances of this ListEnterpriseRoutersResponse.
 
         企业路由器列表
 
@@ -69,7 +69,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListEnterpriseRoutersResponse.
+        r"""Sets the instances of this ListEnterpriseRoutersResponse.
 
         企业路由器列表
 
@@ -80,7 +80,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEnterpriseRoutersResponse.
+        r"""Gets the page_info of this ListEnterpriseRoutersResponse.
 
         :return: The page_info of this ListEnterpriseRoutersResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEnterpriseRoutersResponse.
+        r"""Sets the page_info of this ListEnterpriseRoutersResponse.
 
         :param page_info: The page_info of this ListEnterpriseRoutersResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListEnterpriseRoutersResponse.
+        r"""Gets the request_id of this ListEnterpriseRoutersResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ListEnterpriseRoutersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListEnterpriseRoutersResponse.
+        r"""Sets the request_id of this ListEnterpriseRoutersResponse.
 
         请求ID
 

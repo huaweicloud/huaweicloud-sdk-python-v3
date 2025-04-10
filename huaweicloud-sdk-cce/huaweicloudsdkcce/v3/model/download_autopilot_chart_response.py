@@ -24,7 +24,7 @@ class DownloadAutopilotChartResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadAutopilotChartResponse
+        r"""DownloadAutopilotChartResponse
 
         The model defined in huaweicloud sdk
 

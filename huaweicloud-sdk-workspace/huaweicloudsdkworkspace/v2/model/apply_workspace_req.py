@@ -55,7 +55,7 @@ class ApplyWorkspaceReq:
     }
 
     def __init__(self, auth_type=None, ad_domains=None, third_gateway_info=None, enterprise_id=None, vpc_id=None, subnet_ids=None, manage_subnet_cidr=None, access_mode=None, apply_shared_vpc_dedicated_param=None, dedicated_subnets=None, availability_zone=None, publicip_type=None, assist_auth_config=None, site_configs=None, is_send_email=None, enterprise_project_id=None):
-        """ApplyWorkspaceReq
+        r"""ApplyWorkspaceReq
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class ApplyWorkspaceReq:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ApplyWorkspaceReq.
+        r"""Gets the auth_type of this ApplyWorkspaceReq.
 
         主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
 
@@ -158,7 +158,7 @@ class ApplyWorkspaceReq:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ApplyWorkspaceReq.
+        r"""Sets the auth_type of this ApplyWorkspaceReq.
 
         主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
 
@@ -169,7 +169,7 @@ class ApplyWorkspaceReq:
 
     @property
     def ad_domains(self):
-        """Gets the ad_domains of this ApplyWorkspaceReq.
+        r"""Gets the ad_domains of this ApplyWorkspaceReq.
 
         :return: The ad_domains of this ApplyWorkspaceReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -178,7 +178,7 @@ class ApplyWorkspaceReq:
 
     @ad_domains.setter
     def ad_domains(self, ad_domains):
-        """Sets the ad_domains of this ApplyWorkspaceReq.
+        r"""Sets the ad_domains of this ApplyWorkspaceReq.
 
         :param ad_domains: The ad_domains of this ApplyWorkspaceReq.
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -187,7 +187,7 @@ class ApplyWorkspaceReq:
 
     @property
     def third_gateway_info(self):
-        """Gets the third_gateway_info of this ApplyWorkspaceReq.
+        r"""Gets the third_gateway_info of this ApplyWorkspaceReq.
 
         :return: The third_gateway_info of this ApplyWorkspaceReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
@@ -196,7 +196,7 @@ class ApplyWorkspaceReq:
 
     @third_gateway_info.setter
     def third_gateway_info(self, third_gateway_info):
-        """Sets the third_gateway_info of this ApplyWorkspaceReq.
+        r"""Sets the third_gateway_info of this ApplyWorkspaceReq.
 
         :param third_gateway_info: The third_gateway_info of this ApplyWorkspaceReq.
         :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
@@ -205,7 +205,7 @@ class ApplyWorkspaceReq:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this ApplyWorkspaceReq.
+        r"""Gets the enterprise_id of this ApplyWorkspaceReq.
 
         企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
 
@@ -216,7 +216,7 @@ class ApplyWorkspaceReq:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this ApplyWorkspaceReq.
+        r"""Sets the enterprise_id of this ApplyWorkspaceReq.
 
         企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
 
@@ -227,7 +227,7 @@ class ApplyWorkspaceReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ApplyWorkspaceReq.
+        r"""Gets the vpc_id of this ApplyWorkspaceReq.
 
         VPC ID。
 
@@ -238,7 +238,7 @@ class ApplyWorkspaceReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ApplyWorkspaceReq.
+        r"""Sets the vpc_id of this ApplyWorkspaceReq.
 
         VPC ID。
 
@@ -249,7 +249,7 @@ class ApplyWorkspaceReq:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this ApplyWorkspaceReq.
+        r"""Gets the subnet_ids of this ApplyWorkspaceReq.
 
         指定业务子网的网络ID，子网不能与172.16.0.0/12冲突。
 
@@ -260,7 +260,7 @@ class ApplyWorkspaceReq:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this ApplyWorkspaceReq.
+        r"""Sets the subnet_ids of this ApplyWorkspaceReq.
 
         指定业务子网的网络ID，子网不能与172.16.0.0/12冲突。
 
@@ -271,7 +271,7 @@ class ApplyWorkspaceReq:
 
     @property
     def manage_subnet_cidr(self):
-        """Gets the manage_subnet_cidr of this ApplyWorkspaceReq.
+        r"""Gets the manage_subnet_cidr of this ApplyWorkspaceReq.
 
         管理子网网段。 注：不能与172.16.0.0/12以及subnet_ids参数下子网的网段冲突。
 
@@ -282,7 +282,7 @@ class ApplyWorkspaceReq:
 
     @manage_subnet_cidr.setter
     def manage_subnet_cidr(self, manage_subnet_cidr):
-        """Sets the manage_subnet_cidr of this ApplyWorkspaceReq.
+        r"""Sets the manage_subnet_cidr of this ApplyWorkspaceReq.
 
         管理子网网段。 注：不能与172.16.0.0/12以及subnet_ids参数下子网的网段冲突。
 
@@ -293,7 +293,7 @@ class ApplyWorkspaceReq:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this ApplyWorkspaceReq.
+        r"""Gets the access_mode of this ApplyWorkspaceReq.
 
         接入方式。 - INTERNET：表示Internet接入。 - DEDICATED：表示专线接入。 - BOTH：表示两种接入方式都支持。
 
@@ -304,7 +304,7 @@ class ApplyWorkspaceReq:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this ApplyWorkspaceReq.
+        r"""Sets the access_mode of this ApplyWorkspaceReq.
 
         接入方式。 - INTERNET：表示Internet接入。 - DEDICATED：表示专线接入。 - BOTH：表示两种接入方式都支持。
 
@@ -315,7 +315,7 @@ class ApplyWorkspaceReq:
 
     @property
     def apply_shared_vpc_dedicated_param(self):
-        """Gets the apply_shared_vpc_dedicated_param of this ApplyWorkspaceReq.
+        r"""Gets the apply_shared_vpc_dedicated_param of this ApplyWorkspaceReq.
 
         :return: The apply_shared_vpc_dedicated_param of this ApplyWorkspaceReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -324,7 +324,7 @@ class ApplyWorkspaceReq:
 
     @apply_shared_vpc_dedicated_param.setter
     def apply_shared_vpc_dedicated_param(self, apply_shared_vpc_dedicated_param):
-        """Sets the apply_shared_vpc_dedicated_param of this ApplyWorkspaceReq.
+        r"""Sets the apply_shared_vpc_dedicated_param of this ApplyWorkspaceReq.
 
         :param apply_shared_vpc_dedicated_param: The apply_shared_vpc_dedicated_param of this ApplyWorkspaceReq.
         :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -333,7 +333,7 @@ class ApplyWorkspaceReq:
 
     @property
     def dedicated_subnets(self):
-        """Gets the dedicated_subnets of this ApplyWorkspaceReq.
+        r"""Gets the dedicated_subnets of this ApplyWorkspaceReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -344,7 +344,7 @@ class ApplyWorkspaceReq:
 
     @dedicated_subnets.setter
     def dedicated_subnets(self, dedicated_subnets):
-        """Sets the dedicated_subnets of this ApplyWorkspaceReq.
+        r"""Sets the dedicated_subnets of this ApplyWorkspaceReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -355,7 +355,7 @@ class ApplyWorkspaceReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ApplyWorkspaceReq.
+        r"""Gets the availability_zone of this ApplyWorkspaceReq.
 
         开通服务资源使用的可用分区。
 
@@ -366,7 +366,7 @@ class ApplyWorkspaceReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ApplyWorkspaceReq.
+        r"""Sets the availability_zone of this ApplyWorkspaceReq.
 
         开通服务资源使用的可用分区。
 
@@ -377,7 +377,7 @@ class ApplyWorkspaceReq:
 
     @property
     def publicip_type(self):
-        """Gets the publicip_type of this ApplyWorkspaceReq.
+        r"""Gets the publicip_type of this ApplyWorkspaceReq.
 
         外部网络。
 
@@ -388,7 +388,7 @@ class ApplyWorkspaceReq:
 
     @publicip_type.setter
     def publicip_type(self, publicip_type):
-        """Sets the publicip_type of this ApplyWorkspaceReq.
+        r"""Sets the publicip_type of this ApplyWorkspaceReq.
 
         外部网络。
 
@@ -399,7 +399,7 @@ class ApplyWorkspaceReq:
 
     @property
     def assist_auth_config(self):
-        """Gets the assist_auth_config of this ApplyWorkspaceReq.
+        r"""Gets the assist_auth_config of this ApplyWorkspaceReq.
 
         :return: The assist_auth_config of this ApplyWorkspaceReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`
@@ -408,7 +408,7 @@ class ApplyWorkspaceReq:
 
     @assist_auth_config.setter
     def assist_auth_config(self, assist_auth_config):
-        """Sets the assist_auth_config of this ApplyWorkspaceReq.
+        r"""Sets the assist_auth_config of this ApplyWorkspaceReq.
 
         :param assist_auth_config: The assist_auth_config of this ApplyWorkspaceReq.
         :type assist_auth_config: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`
@@ -417,7 +417,7 @@ class ApplyWorkspaceReq:
 
     @property
     def site_configs(self):
-        """Gets the site_configs of this ApplyWorkspaceReq.
+        r"""Gets the site_configs of this ApplyWorkspaceReq.
 
         边缘开户信息
 
@@ -428,7 +428,7 @@ class ApplyWorkspaceReq:
 
     @site_configs.setter
     def site_configs(self, site_configs):
-        """Sets the site_configs of this ApplyWorkspaceReq.
+        r"""Sets the site_configs of this ApplyWorkspaceReq.
 
         边缘开户信息
 
@@ -439,7 +439,7 @@ class ApplyWorkspaceReq:
 
     @property
     def is_send_email(self):
-        """Gets the is_send_email of this ApplyWorkspaceReq.
+        r"""Gets the is_send_email of this ApplyWorkspaceReq.
 
         桌面退订是否发送邮件通知。
 
@@ -450,7 +450,7 @@ class ApplyWorkspaceReq:
 
     @is_send_email.setter
     def is_send_email(self, is_send_email):
-        """Sets the is_send_email of this ApplyWorkspaceReq.
+        r"""Sets the is_send_email of this ApplyWorkspaceReq.
 
         桌面退订是否发送邮件通知。
 
@@ -461,7 +461,7 @@ class ApplyWorkspaceReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplyWorkspaceReq.
+        r"""Gets the enterprise_project_id of this ApplyWorkspaceReq.
 
         企业项目ID，默认\"0\"
 
@@ -472,7 +472,7 @@ class ApplyWorkspaceReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplyWorkspaceReq.
+        r"""Sets the enterprise_project_id of this ApplyWorkspaceReq.
 
         企业项目ID，默认\"0\"
 

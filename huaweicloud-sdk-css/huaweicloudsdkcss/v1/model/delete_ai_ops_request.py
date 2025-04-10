@@ -27,7 +27,7 @@ class DeleteAiOpsRequest:
     }
 
     def __init__(self, cluster_id=None, aiops_id=None):
-        """DeleteAiOpsRequest
+        r"""DeleteAiOpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAiOpsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteAiOpsRequest.
+        r"""Gets the cluster_id of this DeleteAiOpsRequest.
 
         指定待删除的集群ID。
 
@@ -59,7 +59,7 @@ class DeleteAiOpsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteAiOpsRequest.
+        r"""Sets the cluster_id of this DeleteAiOpsRequest.
 
         指定待删除的集群ID。
 
@@ -70,7 +70,7 @@ class DeleteAiOpsRequest:
 
     @property
     def aiops_id(self):
-        """Gets the aiops_id of this DeleteAiOpsRequest.
+        r"""Gets the aiops_id of this DeleteAiOpsRequest.
 
         指定检测任务ID。
 
@@ -81,7 +81,7 @@ class DeleteAiOpsRequest:
 
     @aiops_id.setter
     def aiops_id(self, aiops_id):
-        """Sets the aiops_id of this DeleteAiOpsRequest.
+        r"""Sets the aiops_id of this DeleteAiOpsRequest.
 
         指定检测任务ID。
 

@@ -27,7 +27,7 @@ class AssociatePublicipsRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """AssociatePublicipsRequest
+        r"""AssociatePublicipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociatePublicipsRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this AssociatePublicipsRequest.
+        r"""Gets the publicip_id of this AssociatePublicipsRequest.
 
         弹性公网IP的ID
 
@@ -60,7 +60,7 @@ class AssociatePublicipsRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this AssociatePublicipsRequest.
+        r"""Sets the publicip_id of this AssociatePublicipsRequest.
 
         弹性公网IP的ID
 
@@ -71,7 +71,7 @@ class AssociatePublicipsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociatePublicipsRequest.
+        r"""Gets the body of this AssociatePublicipsRequest.
 
         :return: The body of this AssociatePublicipsRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.AssociatePublicipsRequestBody`
@@ -80,7 +80,7 @@ class AssociatePublicipsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociatePublicipsRequest.
+        r"""Sets the body of this AssociatePublicipsRequest.
 
         :param body: The body of this AssociatePublicipsRequest.
         :type body: :class:`huaweicloudsdkeip.v3.AssociatePublicipsRequestBody`

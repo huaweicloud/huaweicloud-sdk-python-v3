@@ -26,7 +26,7 @@ class ListVersionResponse(SdkResponse):
     }
 
     def __init__(self, version=None):
-        """ListVersionResponse
+        r"""ListVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ListVersionResponse.
+        r"""Gets the version of this ListVersionResponse.
 
         :return: The version of this ListVersionResponse.
         :rtype: :class:`huaweicloudsdksmn.v2.VersionItem`
@@ -53,7 +53,7 @@ class ListVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListVersionResponse.
+        r"""Sets the version of this ListVersionResponse.
 
         :param version: The version of this ListVersionResponse.
         :type version: :class:`huaweicloudsdksmn.v2.VersionItem`

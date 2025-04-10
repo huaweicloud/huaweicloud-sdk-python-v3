@@ -39,11 +39,11 @@ class ListRiskConfigsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, check_name=None, group_id=None, severity=None, standard=None, host_id=None, limit=None, offset=None):
-        """ListRiskConfigsRequest
+        r"""ListRiskConfigsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
@@ -92,9 +92,9 @@ class ListRiskConfigsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListRiskConfigsRequest.
+        r"""Gets the enterprise_project_id of this ListRiskConfigsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListRiskConfigsRequest.
         :rtype: str
@@ -103,9 +103,9 @@ class ListRiskConfigsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListRiskConfigsRequest.
+        r"""Sets the enterprise_project_id of this ListRiskConfigsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListRiskConfigsRequest.
         :type enterprise_project_id: str
@@ -114,7 +114,7 @@ class ListRiskConfigsRequest:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ListRiskConfigsRequest.
+        r"""Gets the check_name of this ListRiskConfigsRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -125,7 +125,7 @@ class ListRiskConfigsRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ListRiskConfigsRequest.
+        r"""Sets the check_name of this ListRiskConfigsRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -136,7 +136,7 @@ class ListRiskConfigsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListRiskConfigsRequest.
+        r"""Gets the group_id of this ListRiskConfigsRequest.
 
         策略组ID
 
@@ -147,7 +147,7 @@ class ListRiskConfigsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListRiskConfigsRequest.
+        r"""Sets the group_id of this ListRiskConfigsRequest.
 
         策略组ID
 
@@ -158,7 +158,7 @@ class ListRiskConfigsRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListRiskConfigsRequest.
+        r"""Gets the severity of this ListRiskConfigsRequest.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -169,7 +169,7 @@ class ListRiskConfigsRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListRiskConfigsRequest.
+        r"""Sets the severity of this ListRiskConfigsRequest.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -180,7 +180,7 @@ class ListRiskConfigsRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ListRiskConfigsRequest.
+        r"""Gets the standard of this ListRiskConfigsRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -191,7 +191,7 @@ class ListRiskConfigsRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ListRiskConfigsRequest.
+        r"""Sets the standard of this ListRiskConfigsRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -202,7 +202,7 @@ class ListRiskConfigsRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListRiskConfigsRequest.
+        r"""Gets the host_id of this ListRiskConfigsRequest.
 
         主机id
 
@@ -213,7 +213,7 @@ class ListRiskConfigsRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListRiskConfigsRequest.
+        r"""Sets the host_id of this ListRiskConfigsRequest.
 
         主机id
 
@@ -224,7 +224,7 @@ class ListRiskConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRiskConfigsRequest.
+        r"""Gets the limit of this ListRiskConfigsRequest.
 
         每页显示数量
 
@@ -235,7 +235,7 @@ class ListRiskConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRiskConfigsRequest.
+        r"""Sets the limit of this ListRiskConfigsRequest.
 
         每页显示数量
 
@@ -246,7 +246,7 @@ class ListRiskConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRiskConfigsRequest.
+        r"""Gets the offset of this ListRiskConfigsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -257,7 +257,7 @@ class ListRiskConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRiskConfigsRequest.
+        r"""Sets the offset of this ListRiskConfigsRequest.
 
         偏移量：指定返回记录的开始位置
 

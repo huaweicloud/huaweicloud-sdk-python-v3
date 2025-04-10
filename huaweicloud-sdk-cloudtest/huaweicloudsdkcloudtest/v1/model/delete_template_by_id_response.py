@@ -30,7 +30,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """DeleteTemplateByIdResponse
+        r"""DeleteTemplateByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteTemplateByIdResponse.
+        r"""Gets the code of this DeleteTemplateByIdResponse.
 
         :return: The code of this DeleteTemplateByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteTemplateByIdResponse.
+        r"""Sets the code of this DeleteTemplateByIdResponse.
 
         :param code: The code of this DeleteTemplateByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteTemplateByIdResponse.
+        r"""Gets the data of this DeleteTemplateByIdResponse.
 
         :return: The data of this DeleteTemplateByIdResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteTemplateByIdResponse.
+        r"""Sets the data of this DeleteTemplateByIdResponse.
 
         :param data: The data of this DeleteTemplateByIdResponse.
         :type data: object
@@ -94,7 +94,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteTemplateByIdResponse.
+        r"""Gets the message of this DeleteTemplateByIdResponse.
 
         :return: The message of this DeleteTemplateByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DeleteTemplateByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteTemplateByIdResponse.
+        r"""Sets the message of this DeleteTemplateByIdResponse.
 
         :param message: The message of this DeleteTemplateByIdResponse.
         :type message: str

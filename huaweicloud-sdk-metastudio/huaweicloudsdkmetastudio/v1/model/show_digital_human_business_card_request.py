@@ -27,7 +27,7 @@ class ShowDigitalHumanBusinessCardRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None):
-        """ShowDigitalHumanBusinessCardRequest
+        r"""ShowDigitalHumanBusinessCardRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDigitalHumanBusinessCardRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDigitalHumanBusinessCardRequest.
+        r"""Gets the job_id of this ShowDigitalHumanBusinessCardRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class ShowDigitalHumanBusinessCardRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDigitalHumanBusinessCardRequest.
+        r"""Sets the job_id of this ShowDigitalHumanBusinessCardRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class ShowDigitalHumanBusinessCardRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowDigitalHumanBusinessCardRequest.
+        r"""Gets the x_app_user_id of this ShowDigitalHumanBusinessCardRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class ShowDigitalHumanBusinessCardRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowDigitalHumanBusinessCardRequest.
+        r"""Sets the x_app_user_id of this ShowDigitalHumanBusinessCardRequest.
 
         第三方用户ID。不允许输入中文。
 

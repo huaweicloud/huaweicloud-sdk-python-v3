@@ -35,7 +35,7 @@ class RadiusGatewayConfig:
     }
 
     def __init__(self, enable=None, app_id=None, password=None, token_url=None, verification_cipher_url=None, cert_content=None):
-        """RadiusGatewayConfig
+        r"""RadiusGatewayConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RadiusGatewayConfig:
 
     @property
     def enable(self):
-        """Gets the enable of this RadiusGatewayConfig.
+        r"""Gets the enable of this RadiusGatewayConfig.
 
         是否启用
 
@@ -89,7 +89,7 @@ class RadiusGatewayConfig:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this RadiusGatewayConfig.
+        r"""Sets the enable of this RadiusGatewayConfig.
 
         是否启用
 
@@ -100,7 +100,7 @@ class RadiusGatewayConfig:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RadiusGatewayConfig.
+        r"""Gets the app_id of this RadiusGatewayConfig.
 
         用户名
 
@@ -111,7 +111,7 @@ class RadiusGatewayConfig:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RadiusGatewayConfig.
+        r"""Sets the app_id of this RadiusGatewayConfig.
 
         用户名
 
@@ -122,7 +122,7 @@ class RadiusGatewayConfig:
 
     @property
     def password(self):
-        """Gets the password of this RadiusGatewayConfig.
+        r"""Gets the password of this RadiusGatewayConfig.
 
         密码
 
@@ -133,7 +133,7 @@ class RadiusGatewayConfig:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this RadiusGatewayConfig.
+        r"""Sets the password of this RadiusGatewayConfig.
 
         密码
 
@@ -144,7 +144,7 @@ class RadiusGatewayConfig:
 
     @property
     def token_url(self):
-        """Gets the token_url of this RadiusGatewayConfig.
+        r"""Gets the token_url of this RadiusGatewayConfig.
 
         获取token地址
 
@@ -155,7 +155,7 @@ class RadiusGatewayConfig:
 
     @token_url.setter
     def token_url(self, token_url):
-        """Sets the token_url of this RadiusGatewayConfig.
+        r"""Sets the token_url of this RadiusGatewayConfig.
 
         获取token地址
 
@@ -166,7 +166,7 @@ class RadiusGatewayConfig:
 
     @property
     def verification_cipher_url(self):
-        """Gets the verification_cipher_url of this RadiusGatewayConfig.
+        r"""Gets the verification_cipher_url of this RadiusGatewayConfig.
 
         获取验证码地址
 
@@ -177,7 +177,7 @@ class RadiusGatewayConfig:
 
     @verification_cipher_url.setter
     def verification_cipher_url(self, verification_cipher_url):
-        """Sets the verification_cipher_url of this RadiusGatewayConfig.
+        r"""Sets the verification_cipher_url of this RadiusGatewayConfig.
 
         获取验证码地址
 
@@ -188,7 +188,7 @@ class RadiusGatewayConfig:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this RadiusGatewayConfig.
+        r"""Gets the cert_content of this RadiusGatewayConfig.
 
         证书内容（PEM）
 
@@ -199,7 +199,7 @@ class RadiusGatewayConfig:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this RadiusGatewayConfig.
+        r"""Sets the cert_content of this RadiusGatewayConfig.
 
         证书内容（PEM）
 

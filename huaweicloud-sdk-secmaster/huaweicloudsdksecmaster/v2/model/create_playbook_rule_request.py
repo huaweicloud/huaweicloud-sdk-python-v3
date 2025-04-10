@@ -31,7 +31,7 @@ class CreatePlaybookRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, body=None):
-        """CreatePlaybookRuleRequest
+        r"""CreatePlaybookRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePlaybookRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePlaybookRuleRequest.
+        r"""Gets the project_id of this CreatePlaybookRuleRequest.
 
         项目ID
 
@@ -72,7 +72,7 @@ class CreatePlaybookRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePlaybookRuleRequest.
+        r"""Sets the project_id of this CreatePlaybookRuleRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class CreatePlaybookRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookRuleRequest.
+        r"""Gets the workspace_id of this CreatePlaybookRuleRequest.
 
         工作空间ID
 
@@ -94,7 +94,7 @@ class CreatePlaybookRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookRuleRequest.
+        r"""Sets the workspace_id of this CreatePlaybookRuleRequest.
 
         工作空间ID
 
@@ -105,7 +105,7 @@ class CreatePlaybookRuleRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreatePlaybookRuleRequest.
+        r"""Gets the version_id of this CreatePlaybookRuleRequest.
 
         剧本版本ID
 
@@ -116,7 +116,7 @@ class CreatePlaybookRuleRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreatePlaybookRuleRequest.
+        r"""Sets the version_id of this CreatePlaybookRuleRequest.
 
         剧本版本ID
 
@@ -127,7 +127,7 @@ class CreatePlaybookRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePlaybookRuleRequest.
+        r"""Gets the body of this CreatePlaybookRuleRequest.
 
         :return: The body of this CreatePlaybookRuleRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateRuleInfo`
@@ -136,7 +136,7 @@ class CreatePlaybookRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePlaybookRuleRequest.
+        r"""Sets the body of this CreatePlaybookRuleRequest.
 
         :param body: The body of this CreatePlaybookRuleRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.CreateRuleInfo`

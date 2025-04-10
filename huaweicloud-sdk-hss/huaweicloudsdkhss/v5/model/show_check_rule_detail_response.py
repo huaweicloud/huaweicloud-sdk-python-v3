@@ -34,7 +34,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     }
 
     def __init__(self, description=None, reference=None, audit=None, remediation=None, check_info_list=None):
-        """ShowCheckRuleDetailResponse
+        r"""ShowCheckRuleDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowCheckRuleDetailResponse.
+        r"""Gets the description of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的描述
 
@@ -83,7 +83,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCheckRuleDetailResponse.
+        r"""Sets the description of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的描述
 
@@ -94,7 +94,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @property
     def reference(self):
-        """Gets the reference of this ShowCheckRuleDetailResponse.
+        r"""Gets the reference of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的制定依据
 
@@ -105,7 +105,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @reference.setter
     def reference(self, reference):
-        """Sets the reference of this ShowCheckRuleDetailResponse.
+        r"""Sets the reference of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的制定依据
 
@@ -116,7 +116,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @property
     def audit(self):
-        """Gets the audit of this ShowCheckRuleDetailResponse.
+        r"""Gets the audit of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的审计描述
 
@@ -127,7 +127,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @audit.setter
     def audit(self, audit):
-        """Sets the audit of this ShowCheckRuleDetailResponse.
+        r"""Sets the audit of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的审计描述
 
@@ -138,7 +138,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @property
     def remediation(self):
-        """Gets the remediation of this ShowCheckRuleDetailResponse.
+        r"""Gets the remediation of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的修改建议
 
@@ -149,7 +149,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @remediation.setter
     def remediation(self, remediation):
-        """Sets the remediation of this ShowCheckRuleDetailResponse.
+        r"""Sets the remediation of this ShowCheckRuleDetailResponse.
 
         当前检查项（检测规则）的修改建议
 
@@ -160,7 +160,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @property
     def check_info_list(self):
-        """Gets the check_info_list of this ShowCheckRuleDetailResponse.
+        r"""Gets the check_info_list of this ShowCheckRuleDetailResponse.
 
         检测用例信息
 
@@ -171,7 +171,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
     @check_info_list.setter
     def check_info_list(self, check_info_list):
-        """Sets the check_info_list of this ShowCheckRuleDetailResponse.
+        r"""Sets the check_info_list of this ShowCheckRuleDetailResponse.
 
         检测用例信息
 

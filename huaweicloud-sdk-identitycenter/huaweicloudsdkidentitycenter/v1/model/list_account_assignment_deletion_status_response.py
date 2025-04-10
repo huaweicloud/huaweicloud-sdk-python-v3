@@ -28,7 +28,7 @@ class ListAccountAssignmentDeletionStatusResponse(SdkResponse):
     }
 
     def __init__(self, account_assignments_deletion_status=None, page_info=None):
-        """ListAccountAssignmentDeletionStatusResponse
+        r"""ListAccountAssignmentDeletionStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccountAssignmentDeletionStatusResponse(SdkResponse):
 
     @property
     def account_assignments_deletion_status(self):
-        """Gets the account_assignments_deletion_status of this ListAccountAssignmentDeletionStatusResponse.
+        r"""Gets the account_assignments_deletion_status of this ListAccountAssignmentDeletionStatusResponse.
 
         操作状态列表
 
@@ -62,7 +62,7 @@ class ListAccountAssignmentDeletionStatusResponse(SdkResponse):
 
     @account_assignments_deletion_status.setter
     def account_assignments_deletion_status(self, account_assignments_deletion_status):
-        """Sets the account_assignments_deletion_status of this ListAccountAssignmentDeletionStatusResponse.
+        r"""Sets the account_assignments_deletion_status of this ListAccountAssignmentDeletionStatusResponse.
 
         操作状态列表
 
@@ -73,7 +73,7 @@ class ListAccountAssignmentDeletionStatusResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAccountAssignmentDeletionStatusResponse.
+        r"""Gets the page_info of this ListAccountAssignmentDeletionStatusResponse.
 
         :return: The page_info of this ListAccountAssignmentDeletionStatusResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListAccountAssignmentDeletionStatusResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAccountAssignmentDeletionStatusResponse.
+        r"""Sets the page_info of this ListAccountAssignmentDeletionStatusResponse.
 
         :param page_info: The page_info of this ListAccountAssignmentDeletionStatusResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`

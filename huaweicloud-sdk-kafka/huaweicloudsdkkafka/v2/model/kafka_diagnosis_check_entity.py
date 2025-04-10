@@ -29,7 +29,7 @@ class KafkaDiagnosisCheckEntity:
     }
 
     def __init__(self, name=None, reason=None, success=None):
-        """KafkaDiagnosisCheckEntity
+        r"""KafkaDiagnosisCheckEntity
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class KafkaDiagnosisCheckEntity:
 
     @property
     def name(self):
-        """Gets the name of this KafkaDiagnosisCheckEntity.
+        r"""Gets the name of this KafkaDiagnosisCheckEntity.
 
         预检查项名称
 
@@ -65,7 +65,7 @@ class KafkaDiagnosisCheckEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KafkaDiagnosisCheckEntity.
+        r"""Sets the name of this KafkaDiagnosisCheckEntity.
 
         预检查项名称
 
@@ -76,7 +76,7 @@ class KafkaDiagnosisCheckEntity:
 
     @property
     def reason(self):
-        """Gets the reason of this KafkaDiagnosisCheckEntity.
+        r"""Gets the reason of this KafkaDiagnosisCheckEntity.
 
         预检查失败原因
 
@@ -87,7 +87,7 @@ class KafkaDiagnosisCheckEntity:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this KafkaDiagnosisCheckEntity.
+        r"""Sets the reason of this KafkaDiagnosisCheckEntity.
 
         预检查失败原因
 
@@ -98,7 +98,7 @@ class KafkaDiagnosisCheckEntity:
 
     @property
     def success(self):
-        """Gets the success of this KafkaDiagnosisCheckEntity.
+        r"""Gets the success of this KafkaDiagnosisCheckEntity.
 
         预检查是否正常
 
@@ -109,7 +109,7 @@ class KafkaDiagnosisCheckEntity:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this KafkaDiagnosisCheckEntity.
+        r"""Sets the success of this KafkaDiagnosisCheckEntity.
 
         预检查是否正常
 

@@ -26,7 +26,7 @@ class CreateDesktopNamePolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_id=None):
-        """CreateDesktopNamePolicyResponse
+        r"""CreateDesktopNamePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesktopNamePolicyResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateDesktopNamePolicyResponse.
+        r"""Gets the policy_id of this CreateDesktopNamePolicyResponse.
 
         策略id。
 
@@ -55,7 +55,7 @@ class CreateDesktopNamePolicyResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateDesktopNamePolicyResponse.
+        r"""Sets the policy_id of this CreateDesktopNamePolicyResponse.
 
         策略id。
 

@@ -27,7 +27,7 @@ class OpenGaussDatastoreOption:
     }
 
     def __init__(self, type=None, version=None):
-        """OpenGaussDatastoreOption
+        r"""OpenGaussDatastoreOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class OpenGaussDatastoreOption:
 
     @property
     def type(self):
-        """Gets the type of this OpenGaussDatastoreOption.
+        r"""Gets the type of this OpenGaussDatastoreOption.
 
         数据库引擎，不区分大小写，取值如下：  GaussDB。
 
@@ -60,7 +60,7 @@ class OpenGaussDatastoreOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenGaussDatastoreOption.
+        r"""Sets the type of this OpenGaussDatastoreOption.
 
         数据库引擎，不区分大小写，取值如下：  GaussDB。
 
@@ -71,7 +71,7 @@ class OpenGaussDatastoreOption:
 
     @property
     def version(self):
-        """Gets the version of this OpenGaussDatastoreOption.
+        r"""Gets the version of this OpenGaussDatastoreOption.
 
         数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDB&api=ListDatastores)。
 
@@ -82,7 +82,7 @@ class OpenGaussDatastoreOption:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this OpenGaussDatastoreOption.
+        r"""Sets the version of this OpenGaussDatastoreOption.
 
         数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDB&api=ListDatastores)。
 

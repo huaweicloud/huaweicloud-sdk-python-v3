@@ -27,7 +27,7 @@ class AddVaultResourceRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """AddVaultResourceRequest
+        r"""AddVaultResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddVaultResourceRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this AddVaultResourceRequest.
+        r"""Gets the vault_id of this AddVaultResourceRequest.
 
         存储库ID
 
@@ -60,7 +60,7 @@ class AddVaultResourceRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this AddVaultResourceRequest.
+        r"""Sets the vault_id of this AddVaultResourceRequest.
 
         存储库ID
 
@@ -71,7 +71,7 @@ class AddVaultResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddVaultResourceRequest.
+        r"""Gets the body of this AddVaultResourceRequest.
 
         :return: The body of this AddVaultResourceRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultAddResourceReq`
@@ -80,7 +80,7 @@ class AddVaultResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddVaultResourceRequest.
+        r"""Sets the body of this AddVaultResourceRequest.
 
         :param body: The body of this AddVaultResourceRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultAddResourceReq`

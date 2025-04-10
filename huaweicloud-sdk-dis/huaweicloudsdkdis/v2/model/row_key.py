@@ -27,7 +27,7 @@ class RowKey:
     }
 
     def __init__(self, value=None, type=None):
-        """RowKey
+        r"""RowKey
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RowKey:
 
     @property
     def value(self):
-        """Gets the value of this RowKey.
+        r"""Gets the value of this RowKey.
 
         通道内JSON数据的JSON属性名，用于生成HBase数据的rowkey。
 
@@ -59,7 +59,7 @@ class RowKey:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RowKey.
+        r"""Sets the value of this RowKey.
 
         通道内JSON数据的JSON属性名，用于生成HBase数据的rowkey。
 
@@ -70,7 +70,7 @@ class RowKey:
 
     @property
     def type(self):
-        """Gets the type of this RowKey.
+        r"""Gets the type of this RowKey.
 
         通道内JSON数据的JSON属性的类型名称。
 
@@ -81,7 +81,7 @@ class RowKey:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RowKey.
+        r"""Sets the type of this RowKey.
 
         通道内JSON数据的JSON属性的类型名称。
 

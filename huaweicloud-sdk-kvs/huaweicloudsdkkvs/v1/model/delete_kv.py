@@ -27,7 +27,7 @@ class DeleteKv:
     }
 
     def __init__(self, oper_id=None, primary_key=None):
-        """DeleteKv
+        r"""DeleteKv
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteKv:
 
     @property
     def oper_id(self):
-        """Gets the oper_id of this DeleteKv.
+        r"""Gets the oper_id of this DeleteKv.
 
         请求内的操作编码，未成功的操作返回该标识。
 
@@ -59,7 +59,7 @@ class DeleteKv:
 
     @oper_id.setter
     def oper_id(self, oper_id):
-        """Sets the oper_id of this DeleteKv.
+        r"""Sets the oper_id of this DeleteKv.
 
         请求内的操作编码，未成功的操作返回该标识。
 
@@ -70,7 +70,7 @@ class DeleteKv:
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this DeleteKv.
+        r"""Gets the primary_key of this DeleteKv.
 
         用户自定义的主键名及值。
 
@@ -81,7 +81,7 @@ class DeleteKv:
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this DeleteKv.
+        r"""Sets the primary_key of this DeleteKv.
 
         用户自定义的主键名及值。
 

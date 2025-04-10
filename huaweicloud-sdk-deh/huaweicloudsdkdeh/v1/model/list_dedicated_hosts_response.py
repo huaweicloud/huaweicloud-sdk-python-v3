@@ -28,7 +28,7 @@ class ListDedicatedHostsResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_hosts=None, total=None):
-        """ListDedicatedHostsResponse
+        r"""ListDedicatedHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDedicatedHostsResponse(SdkResponse):
 
     @property
     def dedicated_hosts(self):
-        """Gets the dedicated_hosts of this ListDedicatedHostsResponse.
+        r"""Gets the dedicated_hosts of this ListDedicatedHostsResponse.
 
         满足查询条件的专属主机。
 
@@ -62,7 +62,7 @@ class ListDedicatedHostsResponse(SdkResponse):
 
     @dedicated_hosts.setter
     def dedicated_hosts(self, dedicated_hosts):
-        """Sets the dedicated_hosts of this ListDedicatedHostsResponse.
+        r"""Sets the dedicated_hosts of this ListDedicatedHostsResponse.
 
         满足查询条件的专属主机。
 
@@ -73,7 +73,7 @@ class ListDedicatedHostsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDedicatedHostsResponse.
+        r"""Gets the total of this ListDedicatedHostsResponse.
 
         满足查询条件的专属主机数量。
 
@@ -84,7 +84,7 @@ class ListDedicatedHostsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDedicatedHostsResponse.
+        r"""Sets the total of this ListDedicatedHostsResponse.
 
         满足查询条件的专属主机数量。
 

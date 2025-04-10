@@ -31,7 +31,7 @@ class ListTemplateGroupRequest:
     }
 
     def __init__(self, group_id=None, status=None, page=None, size=None):
-        """ListTemplateGroupRequest
+        r"""ListTemplateGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTemplateGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListTemplateGroupRequest.
+        r"""Gets the group_id of this ListTemplateGroupRequest.
 
         模板组id
 
@@ -75,7 +75,7 @@ class ListTemplateGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListTemplateGroupRequest.
+        r"""Sets the group_id of this ListTemplateGroupRequest.
 
         模板组id
 
@@ -86,7 +86,7 @@ class ListTemplateGroupRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTemplateGroupRequest.
+        r"""Gets the status of this ListTemplateGroupRequest.
 
         模板启用状态
 
@@ -97,7 +97,7 @@ class ListTemplateGroupRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTemplateGroupRequest.
+        r"""Sets the status of this ListTemplateGroupRequest.
 
         模板启用状态
 
@@ -108,7 +108,7 @@ class ListTemplateGroupRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListTemplateGroupRequest.
+        r"""Gets the page of this ListTemplateGroupRequest.
 
         分页编号。  默认为0，指定group_id时该参数无效。
 
@@ -119,7 +119,7 @@ class ListTemplateGroupRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListTemplateGroupRequest.
+        r"""Sets the page of this ListTemplateGroupRequest.
 
         分页编号。  默认为0，指定group_id时该参数无效。
 
@@ -130,7 +130,7 @@ class ListTemplateGroupRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListTemplateGroupRequest.
+        r"""Gets the size of this ListTemplateGroupRequest.
 
         每页记录数。  默认为10，范围[1,100]。指定group_id时该参数无效。
 
@@ -141,7 +141,7 @@ class ListTemplateGroupRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTemplateGroupRequest.
+        r"""Sets the size of this ListTemplateGroupRequest.
 
         每页记录数。  默认为10，范围[1,100]。指定group_id时该参数无效。
 

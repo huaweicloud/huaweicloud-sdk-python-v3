@@ -33,7 +33,7 @@ class CreateNacosNamespacesRequest:
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, custom_namespace_id=None, namespace_name=None, namespace_desc=None):
-        """CreateNacosNamespacesRequest
+        r"""CreateNacosNamespacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateNacosNamespacesRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this CreateNacosNamespacesRequest.
+        r"""Gets the x_engine_id of this CreateNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -78,7 +78,7 @@ class CreateNacosNamespacesRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this CreateNacosNamespacesRequest.
+        r"""Sets the x_engine_id of this CreateNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -89,7 +89,7 @@ class CreateNacosNamespacesRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this CreateNacosNamespacesRequest.
+        r"""Gets the x_enterprise_project_id of this CreateNacosNamespacesRequest.
 
         企业项目ID
 
@@ -100,7 +100,7 @@ class CreateNacosNamespacesRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this CreateNacosNamespacesRequest.
+        r"""Sets the x_enterprise_project_id of this CreateNacosNamespacesRequest.
 
         企业项目ID
 
@@ -111,7 +111,7 @@ class CreateNacosNamespacesRequest:
 
     @property
     def custom_namespace_id(self):
-        """Gets the custom_namespace_id of this CreateNacosNamespacesRequest.
+        r"""Gets the custom_namespace_id of this CreateNacosNamespacesRequest.
 
         命名空间ID，仅支持大小写字母、数字、短划线（-）和下划线（_），不超过128个字符。
 
@@ -122,7 +122,7 @@ class CreateNacosNamespacesRequest:
 
     @custom_namespace_id.setter
     def custom_namespace_id(self, custom_namespace_id):
-        """Sets the custom_namespace_id of this CreateNacosNamespacesRequest.
+        r"""Sets the custom_namespace_id of this CreateNacosNamespacesRequest.
 
         命名空间ID，仅支持大小写字母、数字、短划线（-）和下划线（_），不超过128个字符。
 
@@ -133,7 +133,7 @@ class CreateNacosNamespacesRequest:
 
     @property
     def namespace_name(self):
-        """Gets the namespace_name of this CreateNacosNamespacesRequest.
+        r"""Gets the namespace_name of this CreateNacosNamespacesRequest.
 
         命名空间名，支持非@、#、$、%、^、&、*，不超过128个字符。
 
@@ -144,7 +144,7 @@ class CreateNacosNamespacesRequest:
 
     @namespace_name.setter
     def namespace_name(self, namespace_name):
-        """Sets the namespace_name of this CreateNacosNamespacesRequest.
+        r"""Sets the namespace_name of this CreateNacosNamespacesRequest.
 
         命名空间名，支持非@、#、$、%、^、&、*，不超过128个字符。
 
@@ -155,7 +155,7 @@ class CreateNacosNamespacesRequest:
 
     @property
     def namespace_desc(self):
-        """Gets the namespace_desc of this CreateNacosNamespacesRequest.
+        r"""Gets the namespace_desc of this CreateNacosNamespacesRequest.
 
         命名空间描述，不超过256个字符。
 
@@ -166,7 +166,7 @@ class CreateNacosNamespacesRequest:
 
     @namespace_desc.setter
     def namespace_desc(self, namespace_desc):
-        """Sets the namespace_desc of this CreateNacosNamespacesRequest.
+        r"""Sets the namespace_desc of this CreateNacosNamespacesRequest.
 
         命名空间描述，不超过256个字符。
 

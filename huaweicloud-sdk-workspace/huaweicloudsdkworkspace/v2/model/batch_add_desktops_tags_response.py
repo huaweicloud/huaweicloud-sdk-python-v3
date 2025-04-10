@@ -24,7 +24,7 @@ class BatchAddDesktopsTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAddDesktopsTagsResponse
+        r"""BatchAddDesktopsTagsResponse
 
         The model defined in huaweicloud sdk
 

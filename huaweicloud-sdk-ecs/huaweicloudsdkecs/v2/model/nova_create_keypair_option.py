@@ -31,7 +31,7 @@ class NovaCreateKeypairOption:
     }
 
     def __init__(self, public_key=None, type=None, name=None, user_id=None):
-        """NovaCreateKeypairOption
+        r"""NovaCreateKeypairOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class NovaCreateKeypairOption:
 
     @property
     def public_key(self):
-        """Gets the public_key of this NovaCreateKeypairOption.
+        r"""Gets the public_key of this NovaCreateKeypairOption.
 
         导入的公钥信息。  建议导入的公钥长度不大于1024字节。  说明：  - 长度超过1024字节会导致云服务器注入该密钥失败。
 
@@ -74,7 +74,7 @@ class NovaCreateKeypairOption:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this NovaCreateKeypairOption.
+        r"""Sets the public_key of this NovaCreateKeypairOption.
 
         导入的公钥信息。  建议导入的公钥长度不大于1024字节。  说明：  - 长度超过1024字节会导致云服务器注入该密钥失败。
 
@@ -85,7 +85,7 @@ class NovaCreateKeypairOption:
 
     @property
     def type(self):
-        """Gets the type of this NovaCreateKeypairOption.
+        r"""Gets the type of this NovaCreateKeypairOption.
 
         密钥类型，值为“ssh”或“x509”。  说明：  - 微版本2.2支持。
 
@@ -96,7 +96,7 @@ class NovaCreateKeypairOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NovaCreateKeypairOption.
+        r"""Sets the type of this NovaCreateKeypairOption.
 
         密钥类型，值为“ssh”或“x509”。  说明：  - 微版本2.2支持。
 
@@ -107,7 +107,7 @@ class NovaCreateKeypairOption:
 
     @property
     def name(self):
-        """Gets the name of this NovaCreateKeypairOption.
+        r"""Gets the name of this NovaCreateKeypairOption.
 
         密钥名称。  新创建的密钥名称不能和已有密钥名称相同。
 
@@ -118,7 +118,7 @@ class NovaCreateKeypairOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaCreateKeypairOption.
+        r"""Sets the name of this NovaCreateKeypairOption.
 
         密钥名称。  新创建的密钥名称不能和已有密钥名称相同。
 
@@ -129,7 +129,7 @@ class NovaCreateKeypairOption:
 
     @property
     def user_id(self):
-        """Gets the user_id of this NovaCreateKeypairOption.
+        r"""Gets the user_id of this NovaCreateKeypairOption.
 
         密钥的用户ID。  说明：  - 微版本2.10支持。
 
@@ -140,7 +140,7 @@ class NovaCreateKeypairOption:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this NovaCreateKeypairOption.
+        r"""Sets the user_id of this NovaCreateKeypairOption.
 
         密钥的用户ID。  说明：  - 微版本2.10支持。
 

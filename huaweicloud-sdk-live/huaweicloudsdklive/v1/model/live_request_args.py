@@ -27,7 +27,7 @@ class LiveRequestArgs:
     }
 
     def __init__(self, delay=None, unit=None):
-        """LiveRequestArgs
+        r"""LiveRequestArgs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LiveRequestArgs:
 
     @property
     def delay(self):
-        """Gets the delay of this LiveRequestArgs.
+        r"""Gets the delay of this LiveRequestArgs.
 
         时延字段
 
@@ -61,7 +61,7 @@ class LiveRequestArgs:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this LiveRequestArgs.
+        r"""Sets the delay of this LiveRequestArgs.
 
         时延字段
 
@@ -72,7 +72,7 @@ class LiveRequestArgs:
 
     @property
     def unit(self):
-        """Gets the unit of this LiveRequestArgs.
+        r"""Gets the unit of this LiveRequestArgs.
 
         单位
 
@@ -83,7 +83,7 @@ class LiveRequestArgs:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this LiveRequestArgs.
+        r"""Sets the unit of this LiveRequestArgs.
 
         单位
 

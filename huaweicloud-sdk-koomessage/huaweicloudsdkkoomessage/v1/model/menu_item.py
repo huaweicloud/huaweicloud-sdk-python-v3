@@ -33,7 +33,7 @@ class MenuItem:
     }
 
     def __init__(self, name=None, action_type=None, content=None, ext_msg=None, sub_menu_items=None):
-        """MenuItem
+        r"""MenuItem
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class MenuItem:
 
     @property
     def name(self):
-        """Gets the name of this MenuItem.
+        r"""Gets the name of this MenuItem.
 
         子菜单名称。  1. 一级菜单名长度和菜单数量有关，具体约束为：     - 当菜单数量为1个时，菜单名长度范围在1-24个字符。    - 当菜单数量为2个时，菜单名长度范围在1-12个字符。    - 当菜单数量为3个时，菜单名长度范围在1-8个字符。  2. 二级菜单名长度范围恒为1-16个字符。  > 以上字符区分中英文，一个中文占2个字符，字母和数字占1个字符，且同时生效的一组菜单内名称不能重复。
 
@@ -80,7 +80,7 @@ class MenuItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MenuItem.
+        r"""Sets the name of this MenuItem.
 
         子菜单名称。  1. 一级菜单名长度和菜单数量有关，具体约束为：     - 当菜单数量为1个时，菜单名长度范围在1-24个字符。    - 当菜单数量为2个时，菜单名长度范围在1-12个字符。    - 当菜单数量为3个时，菜单名长度范围在1-8个字符。  2. 二级菜单名长度范围恒为1-16个字符。  > 以上字符区分中英文，一个中文占2个字符，字母和数字占1个字符，且同时生效的一组菜单内名称不能重复。
 
@@ -91,7 +91,7 @@ class MenuItem:
 
     @property
     def action_type(self):
-        """Gets the action_type of this MenuItem.
+        r"""Gets the action_type of this MenuItem.
 
         菜单动作类型。 - OPEN_SUBMENU：打开子菜单 - OPEN_URL：打开URL - CALLING：拨打电话 - OPEN_APP：打开APP - OPEN_QUICK：打开快应用 
 
@@ -102,7 +102,7 @@ class MenuItem:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this MenuItem.
+        r"""Sets the action_type of this MenuItem.
 
         菜单动作类型。 - OPEN_SUBMENU：打开子菜单 - OPEN_URL：打开URL - CALLING：拨打电话 - OPEN_APP：打开APP - OPEN_QUICK：打开快应用 
 
@@ -113,7 +113,7 @@ class MenuItem:
 
     @property
     def content(self):
-        """Gets the content of this MenuItem.
+        r"""Gets the content of this MenuItem.
 
         对应值类型。对应不同action_type值，content含义如下： - action_type=OPEN_SUBMENU：不填 - action_type=OPEN_URL：参数数值为跳转URL - action_type=CALLING：参数数值为电话号码 - action_type=OPEN_APP：参数数值为APP的跳转deeplink - action_type=OPEN_QUICK：参数数值为快应用跳转的deeplink 
 
@@ -124,7 +124,7 @@ class MenuItem:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this MenuItem.
+        r"""Sets the content of this MenuItem.
 
         对应值类型。对应不同action_type值，content含义如下： - action_type=OPEN_SUBMENU：不填 - action_type=OPEN_URL：参数数值为跳转URL - action_type=CALLING：参数数值为电话号码 - action_type=OPEN_APP：参数数值为APP的跳转deeplink - action_type=OPEN_QUICK：参数数值为快应用跳转的deeplink 
 
@@ -135,7 +135,7 @@ class MenuItem:
 
     @property
     def ext_msg(self):
-        """Gets the ext_msg of this MenuItem.
+        r"""Gets the ext_msg of this MenuItem.
 
         :return: The ext_msg of this MenuItem.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ExtMsg`
@@ -144,7 +144,7 @@ class MenuItem:
 
     @ext_msg.setter
     def ext_msg(self, ext_msg):
-        """Sets the ext_msg of this MenuItem.
+        r"""Sets the ext_msg of this MenuItem.
 
         :param ext_msg: The ext_msg of this MenuItem.
         :type ext_msg: :class:`huaweicloudsdkkoomessage.v1.ExtMsg`
@@ -153,7 +153,7 @@ class MenuItem:
 
     @property
     def sub_menu_items(self):
-        """Gets the sub_menu_items of this MenuItem.
+        r"""Gets the sub_menu_items of this MenuItem.
 
         子菜单配置项。  > 仅当action_type=OPEN_SUBMENU时生效，且该项内不允许再配置子菜单。 
 
@@ -164,7 +164,7 @@ class MenuItem:
 
     @sub_menu_items.setter
     def sub_menu_items(self, sub_menu_items):
-        """Sets the sub_menu_items of this MenuItem.
+        r"""Sets the sub_menu_items of this MenuItem.
 
         子菜单配置项。  > 仅当action_type=OPEN_SUBMENU时生效，且该项内不允许再配置子菜单。 
 

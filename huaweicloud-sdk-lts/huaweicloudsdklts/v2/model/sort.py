@@ -27,7 +27,7 @@ class Sort:
     }
 
     def __init__(self, order_by=None, order=None):
-        """Sort
+        r"""Sort
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Sort:
 
     @property
     def order_by(self):
-        """Gets the order_by of this Sort.
+        r"""Gets the order_by of this Sort.
 
         排序字段
 
@@ -59,7 +59,7 @@ class Sort:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this Sort.
+        r"""Sets the order_by of this Sort.
 
         排序字段
 
@@ -70,7 +70,7 @@ class Sort:
 
     @property
     def order(self):
-        """Gets the order of this Sort.
+        r"""Gets the order of this Sort.
 
         排序顺序
 
@@ -81,7 +81,7 @@ class Sort:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this Sort.
+        r"""Sets the order of this Sort.
 
         排序顺序
 

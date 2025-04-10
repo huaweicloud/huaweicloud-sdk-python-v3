@@ -50,7 +50,7 @@ class UploadAutopilotChartResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, values=None, translate=None, instruction=None, version=None, description=None, source=None, icon_url=None, public=None, chart_url=None, create_at=None, update_at=None):
-        """UploadAutopilotChartResponse
+        r"""UploadAutopilotChartResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UploadAutopilotChartResponse.
+        r"""Gets the id of this UploadAutopilotChartResponse.
 
         模板ID
 
@@ -139,7 +139,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadAutopilotChartResponse.
+        r"""Sets the id of this UploadAutopilotChartResponse.
 
         模板ID
 
@@ -150,7 +150,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UploadAutopilotChartResponse.
+        r"""Gets the name of this UploadAutopilotChartResponse.
 
         模板名称
 
@@ -161,7 +161,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadAutopilotChartResponse.
+        r"""Sets the name of this UploadAutopilotChartResponse.
 
         模板名称
 
@@ -172,7 +172,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this UploadAutopilotChartResponse.
+        r"""Gets the values of this UploadAutopilotChartResponse.
 
         模板值
 
@@ -183,7 +183,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UploadAutopilotChartResponse.
+        r"""Sets the values of this UploadAutopilotChartResponse.
 
         模板值
 
@@ -194,7 +194,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def translate(self):
-        """Gets the translate of this UploadAutopilotChartResponse.
+        r"""Gets the translate of this UploadAutopilotChartResponse.
 
         模板翻译资源
 
@@ -205,7 +205,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @translate.setter
     def translate(self, translate):
-        """Sets the translate of this UploadAutopilotChartResponse.
+        r"""Sets the translate of this UploadAutopilotChartResponse.
 
         模板翻译资源
 
@@ -216,7 +216,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def instruction(self):
-        """Gets the instruction of this UploadAutopilotChartResponse.
+        r"""Gets the instruction of this UploadAutopilotChartResponse.
 
         模板介绍
 
@@ -227,7 +227,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @instruction.setter
     def instruction(self, instruction):
-        """Sets the instruction of this UploadAutopilotChartResponse.
+        r"""Sets the instruction of this UploadAutopilotChartResponse.
 
         模板介绍
 
@@ -238,7 +238,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UploadAutopilotChartResponse.
+        r"""Gets the version of this UploadAutopilotChartResponse.
 
         模板版本
 
@@ -249,7 +249,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UploadAutopilotChartResponse.
+        r"""Sets the version of this UploadAutopilotChartResponse.
 
         模板版本
 
@@ -260,7 +260,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UploadAutopilotChartResponse.
+        r"""Gets the description of this UploadAutopilotChartResponse.
 
         模板描述
 
@@ -271,7 +271,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadAutopilotChartResponse.
+        r"""Sets the description of this UploadAutopilotChartResponse.
 
         模板描述
 
@@ -282,7 +282,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this UploadAutopilotChartResponse.
+        r"""Gets the source of this UploadAutopilotChartResponse.
 
         模板的来源
 
@@ -293,7 +293,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UploadAutopilotChartResponse.
+        r"""Sets the source of this UploadAutopilotChartResponse.
 
         模板的来源
 
@@ -304,7 +304,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this UploadAutopilotChartResponse.
+        r"""Gets the icon_url of this UploadAutopilotChartResponse.
 
         模板的图标链接
 
@@ -315,7 +315,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this UploadAutopilotChartResponse.
+        r"""Sets the icon_url of this UploadAutopilotChartResponse.
 
         模板的图标链接
 
@@ -326,7 +326,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def public(self):
-        """Gets the public of this UploadAutopilotChartResponse.
+        r"""Gets the public of this UploadAutopilotChartResponse.
 
         是否公开模板
 
@@ -337,7 +337,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @public.setter
     def public(self, public):
-        """Sets the public of this UploadAutopilotChartResponse.
+        r"""Sets the public of this UploadAutopilotChartResponse.
 
         是否公开模板
 
@@ -348,7 +348,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def chart_url(self):
-        """Gets the chart_url of this UploadAutopilotChartResponse.
+        r"""Gets the chart_url of this UploadAutopilotChartResponse.
 
         模板的链接
 
@@ -359,7 +359,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @chart_url.setter
     def chart_url(self, chart_url):
-        """Sets the chart_url of this UploadAutopilotChartResponse.
+        r"""Sets the chart_url of this UploadAutopilotChartResponse.
 
         模板的链接
 
@@ -370,7 +370,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this UploadAutopilotChartResponse.
+        r"""Gets the create_at of this UploadAutopilotChartResponse.
 
         创建时间
 
@@ -381,7 +381,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this UploadAutopilotChartResponse.
+        r"""Sets the create_at of this UploadAutopilotChartResponse.
 
         创建时间
 
@@ -392,7 +392,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @property
     def update_at(self):
-        """Gets the update_at of this UploadAutopilotChartResponse.
+        r"""Gets the update_at of this UploadAutopilotChartResponse.
 
         更新时间
 
@@ -403,7 +403,7 @@ class UploadAutopilotChartResponse(SdkResponse):
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this UploadAutopilotChartResponse.
+        r"""Sets the update_at of this UploadAutopilotChartResponse.
 
         更新时间
 

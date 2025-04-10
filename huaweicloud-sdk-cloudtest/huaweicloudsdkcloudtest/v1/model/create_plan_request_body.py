@@ -31,7 +31,7 @@ class CreatePlanRequestBody:
     }
 
     def __init__(self, name=None, assigned_id=None, service_id_list=None, plan_cycle=None):
-        """CreatePlanRequestBody
+        r"""CreatePlanRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePlanRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreatePlanRequestBody.
+        r"""Gets the name of this CreatePlanRequestBody.
 
         计划名称
 
@@ -72,7 +72,7 @@ class CreatePlanRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePlanRequestBody.
+        r"""Sets the name of this CreatePlanRequestBody.
 
         计划名称
 
@@ -83,7 +83,7 @@ class CreatePlanRequestBody:
 
     @property
     def assigned_id(self):
-        """Gets the assigned_id of this CreatePlanRequestBody.
+        r"""Gets the assigned_id of this CreatePlanRequestBody.
 
         处理者id，不填时默认使用当前用户
 
@@ -94,7 +94,7 @@ class CreatePlanRequestBody:
 
     @assigned_id.setter
     def assigned_id(self, assigned_id):
-        """Sets the assigned_id of this CreatePlanRequestBody.
+        r"""Sets the assigned_id of this CreatePlanRequestBody.
 
         处理者id，不填时默认使用当前用户
 
@@ -105,7 +105,7 @@ class CreatePlanRequestBody:
 
     @property
     def service_id_list(self):
-        """Gets the service_id_list of this CreatePlanRequestBody.
+        r"""Gets the service_id_list of this CreatePlanRequestBody.
 
         计划下包含的用例类型，数组长度小于10个
 
@@ -116,7 +116,7 @@ class CreatePlanRequestBody:
 
     @service_id_list.setter
     def service_id_list(self, service_id_list):
-        """Sets the service_id_list of this CreatePlanRequestBody.
+        r"""Sets the service_id_list of this CreatePlanRequestBody.
 
         计划下包含的用例类型，数组长度小于10个
 
@@ -127,7 +127,7 @@ class CreatePlanRequestBody:
 
     @property
     def plan_cycle(self):
-        """Gets the plan_cycle of this CreatePlanRequestBody.
+        r"""Gets the plan_cycle of this CreatePlanRequestBody.
 
         :return: The plan_cycle of this CreatePlanRequestBody.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`
@@ -136,7 +136,7 @@ class CreatePlanRequestBody:
 
     @plan_cycle.setter
     def plan_cycle(self, plan_cycle):
-        """Sets the plan_cycle of this CreatePlanRequestBody.
+        r"""Sets the plan_cycle of this CreatePlanRequestBody.
 
         :param plan_cycle: The plan_cycle of this CreatePlanRequestBody.
         :type plan_cycle: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`

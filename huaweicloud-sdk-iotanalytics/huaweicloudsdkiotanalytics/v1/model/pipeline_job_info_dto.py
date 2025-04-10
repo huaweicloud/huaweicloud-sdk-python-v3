@@ -49,7 +49,7 @@ class PipelineJobInfoDto:
     }
 
     def __init__(self, pipeline_id=None, pipeline_name=None, data_source_id=None, data_store_list=None, pipeline_description=None, tag_list=None, pipeline_state=None, status=None, rtu=None, created_time=None, modified_time=None, user_id=None, has_savepoint=None):
-        """PipelineJobInfoDto
+        r"""PipelineJobInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class PipelineJobInfoDto:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineJobInfoDto.
+        r"""Gets the pipeline_id of this PipelineJobInfoDto.
 
         管道ID
 
@@ -138,7 +138,7 @@ class PipelineJobInfoDto:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineJobInfoDto.
+        r"""Sets the pipeline_id of this PipelineJobInfoDto.
 
         管道ID
 
@@ -149,7 +149,7 @@ class PipelineJobInfoDto:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this PipelineJobInfoDto.
+        r"""Gets the pipeline_name of this PipelineJobInfoDto.
 
         管道名称
 
@@ -160,7 +160,7 @@ class PipelineJobInfoDto:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this PipelineJobInfoDto.
+        r"""Sets the pipeline_name of this PipelineJobInfoDto.
 
         管道名称
 
@@ -171,7 +171,7 @@ class PipelineJobInfoDto:
 
     @property
     def data_source_id(self):
-        """Gets the data_source_id of this PipelineJobInfoDto.
+        r"""Gets the data_source_id of this PipelineJobInfoDto.
 
         数据源ID
 
@@ -182,7 +182,7 @@ class PipelineJobInfoDto:
 
     @data_source_id.setter
     def data_source_id(self, data_source_id):
-        """Sets the data_source_id of this PipelineJobInfoDto.
+        r"""Sets the data_source_id of this PipelineJobInfoDto.
 
         数据源ID
 
@@ -193,7 +193,7 @@ class PipelineJobInfoDto:
 
     @property
     def data_store_list(self):
-        """Gets the data_store_list of this PipelineJobInfoDto.
+        r"""Gets the data_store_list of this PipelineJobInfoDto.
 
         存储列表
 
@@ -204,7 +204,7 @@ class PipelineJobInfoDto:
 
     @data_store_list.setter
     def data_store_list(self, data_store_list):
-        """Sets the data_store_list of this PipelineJobInfoDto.
+        r"""Sets the data_store_list of this PipelineJobInfoDto.
 
         存储列表
 
@@ -215,7 +215,7 @@ class PipelineJobInfoDto:
 
     @property
     def pipeline_description(self):
-        """Gets the pipeline_description of this PipelineJobInfoDto.
+        r"""Gets the pipeline_description of this PipelineJobInfoDto.
 
         管道描述
 
@@ -226,7 +226,7 @@ class PipelineJobInfoDto:
 
     @pipeline_description.setter
     def pipeline_description(self, pipeline_description):
-        """Sets the pipeline_description of this PipelineJobInfoDto.
+        r"""Sets the pipeline_description of this PipelineJobInfoDto.
 
         管道描述
 
@@ -237,7 +237,7 @@ class PipelineJobInfoDto:
 
     @property
     def tag_list(self):
-        """Gets the tag_list of this PipelineJobInfoDto.
+        r"""Gets the tag_list of this PipelineJobInfoDto.
 
         存储列表
 
@@ -248,7 +248,7 @@ class PipelineJobInfoDto:
 
     @tag_list.setter
     def tag_list(self, tag_list):
-        """Sets the tag_list of this PipelineJobInfoDto.
+        r"""Sets the tag_list of this PipelineJobInfoDto.
 
         存储列表
 
@@ -259,7 +259,7 @@ class PipelineJobInfoDto:
 
     @property
     def pipeline_state(self):
-        """Gets the pipeline_state of this PipelineJobInfoDto.
+        r"""Gets the pipeline_state of this PipelineJobInfoDto.
 
         管道状态
 
@@ -270,7 +270,7 @@ class PipelineJobInfoDto:
 
     @pipeline_state.setter
     def pipeline_state(self, pipeline_state):
-        """Sets the pipeline_state of this PipelineJobInfoDto.
+        r"""Sets the pipeline_state of this PipelineJobInfoDto.
 
         管道状态
 
@@ -281,7 +281,7 @@ class PipelineJobInfoDto:
 
     @property
     def status(self):
-        """Gets the status of this PipelineJobInfoDto.
+        r"""Gets the status of this PipelineJobInfoDto.
 
         操作状态
 
@@ -292,7 +292,7 @@ class PipelineJobInfoDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineJobInfoDto.
+        r"""Sets the status of this PipelineJobInfoDto.
 
         操作状态
 
@@ -303,7 +303,7 @@ class PipelineJobInfoDto:
 
     @property
     def rtu(self):
-        """Gets the rtu of this PipelineJobInfoDto.
+        r"""Gets the rtu of this PipelineJobInfoDto.
 
         运行管道的RTU个数
 
@@ -314,7 +314,7 @@ class PipelineJobInfoDto:
 
     @rtu.setter
     def rtu(self, rtu):
-        """Sets the rtu of this PipelineJobInfoDto.
+        r"""Sets the rtu of this PipelineJobInfoDto.
 
         运行管道的RTU个数
 
@@ -325,7 +325,7 @@ class PipelineJobInfoDto:
 
     @property
     def created_time(self):
-        """Gets the created_time of this PipelineJobInfoDto.
+        r"""Gets the created_time of this PipelineJobInfoDto.
 
         创建时间
 
@@ -336,7 +336,7 @@ class PipelineJobInfoDto:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this PipelineJobInfoDto.
+        r"""Sets the created_time of this PipelineJobInfoDto.
 
         创建时间
 
@@ -347,7 +347,7 @@ class PipelineJobInfoDto:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this PipelineJobInfoDto.
+        r"""Gets the modified_time of this PipelineJobInfoDto.
 
         修改时间
 
@@ -358,7 +358,7 @@ class PipelineJobInfoDto:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this PipelineJobInfoDto.
+        r"""Sets the modified_time of this PipelineJobInfoDto.
 
         修改时间
 
@@ -369,7 +369,7 @@ class PipelineJobInfoDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PipelineJobInfoDto.
+        r"""Gets the user_id of this PipelineJobInfoDto.
 
         用户ID
 
@@ -380,7 +380,7 @@ class PipelineJobInfoDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PipelineJobInfoDto.
+        r"""Sets the user_id of this PipelineJobInfoDto.
 
         用户ID
 
@@ -391,7 +391,7 @@ class PipelineJobInfoDto:
 
     @property
     def has_savepoint(self):
-        """Gets the has_savepoint of this PipelineJobInfoDto.
+        r"""Gets the has_savepoint of this PipelineJobInfoDto.
 
         已停止的管道作业是否有历史缓存数据
 
@@ -402,7 +402,7 @@ class PipelineJobInfoDto:
 
     @has_savepoint.setter
     def has_savepoint(self, has_savepoint):
-        """Sets the has_savepoint of this PipelineJobInfoDto.
+        r"""Sets the has_savepoint of this PipelineJobInfoDto.
 
         已停止的管道作业是否有历史缓存数据
 

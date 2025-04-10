@@ -27,7 +27,7 @@ class DeleteSubJobsReq:
     }
 
     def __init__(self, job_ids=None, delete_by_status=None):
-        """DeleteSubJobsReq
+        r"""DeleteSubJobsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteSubJobsReq:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this DeleteSubJobsReq.
+        r"""Gets the job_ids of this DeleteSubJobsReq.
 
         任务ID列表，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
 
@@ -61,7 +61,7 @@ class DeleteSubJobsReq:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this DeleteSubJobsReq.
+        r"""Sets the job_ids of this DeleteSubJobsReq.
 
         任务ID列表，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
 
@@ -72,7 +72,7 @@ class DeleteSubJobsReq:
 
     @property
     def delete_by_status(self):
-        """Gets the delete_by_status of this DeleteSubJobsReq.
+        r"""Gets the delete_by_status of this DeleteSubJobsReq.
 
         通过任务状态删除，只能删除以下的两种状态 SUCCESS：成功。 FAILED：失败。job_ids和delete_by_status必传一个。
 
@@ -83,7 +83,7 @@ class DeleteSubJobsReq:
 
     @delete_by_status.setter
     def delete_by_status(self, delete_by_status):
-        """Sets the delete_by_status of this DeleteSubJobsReq.
+        r"""Sets the delete_by_status of this DeleteSubJobsReq.
 
         通过任务状态删除，只能删除以下的两种状态 SUCCESS：成功。 FAILED：失败。job_ids和delete_by_status必传一个。
 

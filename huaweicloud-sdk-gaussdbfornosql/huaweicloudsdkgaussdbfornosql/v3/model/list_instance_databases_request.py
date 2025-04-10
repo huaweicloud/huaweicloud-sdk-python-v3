@@ -29,7 +29,7 @@ class ListInstanceDatabasesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListInstanceDatabasesRequest
+        r"""ListInstanceDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListInstanceDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceDatabasesRequest.
+        r"""Gets the instance_id of this ListInstanceDatabasesRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListInstanceDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceDatabasesRequest.
+        r"""Sets the instance_id of this ListInstanceDatabasesRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListInstanceDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceDatabasesRequest.
+        r"""Gets the offset of this ListInstanceDatabasesRequest.
 
         索引位置，偏移量。    - 从第一条数据偏移offset条数据后开始查询，默认为0。   - 取值必须为数字，且不能为负数。
 
@@ -89,7 +89,7 @@ class ListInstanceDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceDatabasesRequest.
+        r"""Sets the offset of this ListInstanceDatabasesRequest.
 
         索引位置，偏移量。    - 从第一条数据偏移offset条数据后开始查询，默认为0。   - 取值必须为数字，且不能为负数。
 
@@ -100,7 +100,7 @@ class ListInstanceDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceDatabasesRequest.
+        r"""Gets the limit of this ListInstanceDatabasesRequest.
 
         查询个数上限值。  - 取值范围：1~100。 - 不传该参数时，默认查询前100条信息。
 
@@ -111,7 +111,7 @@ class ListInstanceDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceDatabasesRequest.
+        r"""Sets the limit of this ListInstanceDatabasesRequest.
 
         查询个数上限值。  - 取值范围：1~100。 - 不传该参数时，默认查询前100条信息。
 

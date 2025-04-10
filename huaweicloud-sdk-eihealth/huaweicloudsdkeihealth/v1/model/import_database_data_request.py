@@ -29,7 +29,7 @@ class ImportDatabaseDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, database_id=None, body=None):
-        """ImportDatabaseDataRequest
+        r"""ImportDatabaseDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportDatabaseDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ImportDatabaseDataRequest.
+        r"""Gets the eihealth_project_id of this ImportDatabaseDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class ImportDatabaseDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ImportDatabaseDataRequest.
+        r"""Sets the eihealth_project_id of this ImportDatabaseDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class ImportDatabaseDataRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this ImportDatabaseDataRequest.
+        r"""Gets the database_id of this ImportDatabaseDataRequest.
 
         数据库实例id
 
@@ -88,7 +88,7 @@ class ImportDatabaseDataRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this ImportDatabaseDataRequest.
+        r"""Sets the database_id of this ImportDatabaseDataRequest.
 
         数据库实例id
 
@@ -99,7 +99,7 @@ class ImportDatabaseDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportDatabaseDataRequest.
+        r"""Gets the body of this ImportDatabaseDataRequest.
 
         :return: The body of this ImportDatabaseDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataReq`
@@ -108,7 +108,7 @@ class ImportDatabaseDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportDatabaseDataRequest.
+        r"""Sets the body of this ImportDatabaseDataRequest.
 
         :param body: The body of this ImportDatabaseDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataReq`

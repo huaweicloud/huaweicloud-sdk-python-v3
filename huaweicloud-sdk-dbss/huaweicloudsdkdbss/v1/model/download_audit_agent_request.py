@@ -27,7 +27,7 @@ class DownloadAuditAgentRequest:
     }
 
     def __init__(self, instance_id=None, agent_id=None):
-        """DownloadAuditAgentRequest
+        r"""DownloadAuditAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadAuditAgentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DownloadAuditAgentRequest.
+        r"""Gets the instance_id of this DownloadAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -59,7 +59,7 @@ class DownloadAuditAgentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DownloadAuditAgentRequest.
+        r"""Sets the instance_id of this DownloadAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -70,7 +70,7 @@ class DownloadAuditAgentRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this DownloadAuditAgentRequest.
+        r"""Gets the agent_id of this DownloadAuditAgentRequest.
 
         agent ID。可在查询数据库agent列表接口ID字段获取。
 
@@ -81,7 +81,7 @@ class DownloadAuditAgentRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this DownloadAuditAgentRequest.
+        r"""Sets the agent_id of this DownloadAuditAgentRequest.
 
         agent ID。可在查询数据库agent列表接口ID字段获取。
 

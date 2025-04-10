@@ -27,7 +27,7 @@ class UpdateTrafficMirrorFilterRuleRequest:
     }
 
     def __init__(self, traffic_mirror_filter_rule_id=None, body=None):
-        """UpdateTrafficMirrorFilterRuleRequest
+        r"""UpdateTrafficMirrorFilterRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTrafficMirrorFilterRuleRequest:
 
     @property
     def traffic_mirror_filter_rule_id(self):
-        """Gets the traffic_mirror_filter_rule_id of this UpdateTrafficMirrorFilterRuleRequest.
+        r"""Gets the traffic_mirror_filter_rule_id of this UpdateTrafficMirrorFilterRuleRequest.
 
         流量镜像筛选条件规则ID
 
@@ -60,7 +60,7 @@ class UpdateTrafficMirrorFilterRuleRequest:
 
     @traffic_mirror_filter_rule_id.setter
     def traffic_mirror_filter_rule_id(self, traffic_mirror_filter_rule_id):
-        """Sets the traffic_mirror_filter_rule_id of this UpdateTrafficMirrorFilterRuleRequest.
+        r"""Sets the traffic_mirror_filter_rule_id of this UpdateTrafficMirrorFilterRuleRequest.
 
         流量镜像筛选条件规则ID
 
@@ -71,7 +71,7 @@ class UpdateTrafficMirrorFilterRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTrafficMirrorFilterRuleRequest.
+        r"""Gets the body of this UpdateTrafficMirrorFilterRuleRequest.
 
         :return: The body of this UpdateTrafficMirrorFilterRuleRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRuleRequestBody`
@@ -80,7 +80,7 @@ class UpdateTrafficMirrorFilterRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTrafficMirrorFilterRuleRequest.
+        r"""Sets the body of this UpdateTrafficMirrorFilterRuleRequest.
 
         :param body: The body of this UpdateTrafficMirrorFilterRuleRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRuleRequestBody`

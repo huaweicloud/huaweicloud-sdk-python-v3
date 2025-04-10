@@ -26,7 +26,7 @@ class ShowSslCertDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, download_link=None):
-        """ShowSslCertDownloadLinkResponse
+        r"""ShowSslCertDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSslCertDownloadLinkResponse(SdkResponse):
 
     @property
     def download_link(self):
-        """Gets the download_link of this ShowSslCertDownloadLinkResponse.
+        r"""Gets the download_link of this ShowSslCertDownloadLinkResponse.
 
         ssl下载链接。
 
@@ -55,7 +55,7 @@ class ShowSslCertDownloadLinkResponse(SdkResponse):
 
     @download_link.setter
     def download_link(self, download_link):
-        """Sets the download_link of this ShowSslCertDownloadLinkResponse.
+        r"""Sets the download_link of this ShowSslCertDownloadLinkResponse.
 
         ssl下载链接。
 

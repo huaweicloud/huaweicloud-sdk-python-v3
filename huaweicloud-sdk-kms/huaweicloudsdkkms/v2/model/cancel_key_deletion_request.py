@@ -25,7 +25,7 @@ class CancelKeyDeletionRequest:
     }
 
     def __init__(self, body=None):
-        """CancelKeyDeletionRequest
+        r"""CancelKeyDeletionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CancelKeyDeletionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelKeyDeletionRequest.
+        r"""Gets the body of this CancelKeyDeletionRequest.
 
         :return: The body of this CancelKeyDeletionRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class CancelKeyDeletionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelKeyDeletionRequest.
+        r"""Sets the body of this CancelKeyDeletionRequest.
 
         :param body: The body of this CancelKeyDeletionRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

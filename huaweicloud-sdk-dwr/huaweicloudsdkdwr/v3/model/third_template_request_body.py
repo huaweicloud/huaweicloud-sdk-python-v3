@@ -47,7 +47,7 @@ class ThirdTemplateRequestBody:
     }
 
     def __init__(self, category=None, inputs=None, dynamic_source_definition=None, need_policy=None, func_provider=None, func_name=None, func_description=None, func_link=None, app_urn=None, bill_value=None, agency=None, register_status=None):
-        """ThirdTemplateRequestBody
+        r"""ThirdTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this ThirdTemplateRequestBody.
+        r"""Gets the category of this ThirdTemplateRequestBody.
 
         必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符。
 
@@ -127,7 +127,7 @@ class ThirdTemplateRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ThirdTemplateRequestBody.
+        r"""Sets the category of this ThirdTemplateRequestBody.
 
         必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符。
 
@@ -138,7 +138,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def inputs(self):
-        """Gets the inputs of this ThirdTemplateRequestBody.
+        r"""Gets the inputs of this ThirdTemplateRequestBody.
 
         Inputs参数
 
@@ -149,7 +149,7 @@ class ThirdTemplateRequestBody:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ThirdTemplateRequestBody.
+        r"""Sets the inputs of this ThirdTemplateRequestBody.
 
         Inputs参数
 
@@ -160,7 +160,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def dynamic_source_definition(self):
-        """Gets the dynamic_source_definition of this ThirdTemplateRequestBody.
+        r"""Gets the dynamic_source_definition of this ThirdTemplateRequestBody.
 
         根据DWR自定义的函数模板创建属于用户的function，并指定该参数设置的参数值。
 
@@ -171,7 +171,7 @@ class ThirdTemplateRequestBody:
 
     @dynamic_source_definition.setter
     def dynamic_source_definition(self, dynamic_source_definition):
-        """Sets the dynamic_source_definition of this ThirdTemplateRequestBody.
+        r"""Sets the dynamic_source_definition of this ThirdTemplateRequestBody.
 
         根据DWR自定义的函数模板创建属于用户的function，并指定该参数设置的参数值。
 
@@ -182,7 +182,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def need_policy(self):
-        """Gets the need_policy of this ThirdTemplateRequestBody.
+        r"""Gets the need_policy of this ThirdTemplateRequestBody.
 
         算子执行时需要的权限信息。
 
@@ -193,7 +193,7 @@ class ThirdTemplateRequestBody:
 
     @need_policy.setter
     def need_policy(self, need_policy):
-        """Sets the need_policy of this ThirdTemplateRequestBody.
+        r"""Sets the need_policy of this ThirdTemplateRequestBody.
 
         算子执行时需要的权限信息。
 
@@ -204,7 +204,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def func_provider(self):
-        """Gets the func_provider of this ThirdTemplateRequestBody.
+        r"""Gets the func_provider of this ThirdTemplateRequestBody.
 
         算子提供方。 英文：必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于32个字符。 中文：只能由中文、字母、数字、下划线和中划线组成，长度小于等于32个字符。
 
@@ -215,7 +215,7 @@ class ThirdTemplateRequestBody:
 
     @func_provider.setter
     def func_provider(self, func_provider):
-        """Sets the func_provider of this ThirdTemplateRequestBody.
+        r"""Sets the func_provider of this ThirdTemplateRequestBody.
 
         算子提供方。 英文：必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于32个字符。 中文：只能由中文、字母、数字、下划线和中划线组成，长度小于等于32个字符。
 
@@ -226,7 +226,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def func_name(self):
-        """Gets the func_name of this ThirdTemplateRequestBody.
+        r"""Gets the func_name of this ThirdTemplateRequestBody.
 
         算子名称。 英文：必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于50个字符。 中文：只能由中文、字母、数字、下划线和中划线组成，长度小于等于50个字符。
 
@@ -237,7 +237,7 @@ class ThirdTemplateRequestBody:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this ThirdTemplateRequestBody.
+        r"""Sets the func_name of this ThirdTemplateRequestBody.
 
         算子名称。 英文：必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于50个字符。 中文：只能由中文、字母、数字、下划线和中划线组成，长度小于等于50个字符。
 
@@ -248,7 +248,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def func_description(self):
-        """Gets the func_description of this ThirdTemplateRequestBody.
+        r"""Gets the func_description of this ThirdTemplateRequestBody.
 
         算子描述。 英文：长度最小为0，最长为256，可以是数字、大小写字母以及英文的逗号，句号，冒号，中划线,，下划线，空格。 中文：长度最小为0，最长为256，可以是中文、数字、大小写字母以及中英文的逗号，句号，冒号，中划线，下划线，空格。
 
@@ -259,7 +259,7 @@ class ThirdTemplateRequestBody:
 
     @func_description.setter
     def func_description(self, func_description):
-        """Sets the func_description of this ThirdTemplateRequestBody.
+        r"""Sets the func_description of this ThirdTemplateRequestBody.
 
         算子描述。 英文：长度最小为0，最长为256，可以是数字、大小写字母以及英文的逗号，句号，冒号，中划线,，下划线，空格。 中文：长度最小为0，最长为256，可以是中文、数字、大小写字母以及中英文的逗号，句号，冒号，中划线，下划线，空格。
 
@@ -270,7 +270,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def func_link(self):
-        """Gets the func_link of this ThirdTemplateRequestBody.
+        r"""Gets the func_link of this ThirdTemplateRequestBody.
 
         云市场链接。 需要包含中文， 长度最小为0，最长为512，须遵守http协议中定义的规则。
 
@@ -281,7 +281,7 @@ class ThirdTemplateRequestBody:
 
     @func_link.setter
     def func_link(self, func_link):
-        """Sets the func_link of this ThirdTemplateRequestBody.
+        r"""Sets the func_link of this ThirdTemplateRequestBody.
 
         云市场链接。 需要包含中文， 长度最小为0，最长为512，须遵守http协议中定义的规则。
 
@@ -292,7 +292,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def app_urn(self):
-        """Gets the app_urn of this ThirdTemplateRequestBody.
+        r"""Gets the app_urn of this ThirdTemplateRequestBody.
 
         serverless算子应用程序urn
 
@@ -303,7 +303,7 @@ class ThirdTemplateRequestBody:
 
     @app_urn.setter
     def app_urn(self, app_urn):
-        """Sets the app_urn of this ThirdTemplateRequestBody.
+        r"""Sets the app_urn of this ThirdTemplateRequestBody.
 
         serverless算子应用程序urn
 
@@ -314,7 +314,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def bill_value(self):
-        """Gets the bill_value of this ThirdTemplateRequestBody.
+        r"""Gets the bill_value of this ThirdTemplateRequestBody.
 
         Serverless计费单价
 
@@ -325,7 +325,7 @@ class ThirdTemplateRequestBody:
 
     @bill_value.setter
     def bill_value(self, bill_value):
-        """Sets the bill_value of this ThirdTemplateRequestBody.
+        r"""Sets the bill_value of this ThirdTemplateRequestBody.
 
         Serverless计费单价
 
@@ -336,7 +336,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def agency(self):
-        """Gets the agency of this ThirdTemplateRequestBody.
+        r"""Gets the agency of this ThirdTemplateRequestBody.
 
         serverless所需要委托名
 
@@ -347,7 +347,7 @@ class ThirdTemplateRequestBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this ThirdTemplateRequestBody.
+        r"""Sets the agency of this ThirdTemplateRequestBody.
 
         serverless所需要委托名
 
@@ -358,7 +358,7 @@ class ThirdTemplateRequestBody:
 
     @property
     def register_status(self):
-        """Gets the register_status of this ThirdTemplateRequestBody.
+        r"""Gets the register_status of this ThirdTemplateRequestBody.
 
         算子状态。初始创建时为init_created。申请提交时传入submit_approve。 算子状态。申请提交时传入submit_approve。
 
@@ -369,7 +369,7 @@ class ThirdTemplateRequestBody:
 
     @register_status.setter
     def register_status(self, register_status):
-        """Sets the register_status of this ThirdTemplateRequestBody.
+        r"""Sets the register_status of this ThirdTemplateRequestBody.
 
         算子状态。初始创建时为init_created。申请提交时传入submit_approve。 算子状态。申请提交时传入submit_approve。
 

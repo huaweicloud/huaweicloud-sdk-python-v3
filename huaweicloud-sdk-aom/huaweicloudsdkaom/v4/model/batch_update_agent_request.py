@@ -25,7 +25,7 @@ class BatchUpdateAgentRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateAgentRequest
+        r"""BatchUpdateAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateAgentRequest.
+        r"""Gets the body of this BatchUpdateAgentRequest.
 
         :return: The body of this BatchUpdateAgentRequest.
         :rtype: :class:`huaweicloudsdkaom.v4.AgentUpgradeParam`
@@ -52,7 +52,7 @@ class BatchUpdateAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateAgentRequest.
+        r"""Sets the body of this BatchUpdateAgentRequest.
 
         :param body: The body of this BatchUpdateAgentRequest.
         :type body: :class:`huaweicloudsdkaom.v4.AgentUpgradeParam`

@@ -47,7 +47,7 @@ class QuotaResourcesResponseInfo:
     }
 
     def __init__(self, resource_id=None, version=None, quota_status=None, used_status=None, host_id=None, host_name=None, charging_mode=None, tags=None, expire_time=None, shared_quota=None, enterprise_project_id=None, enterprise_project_name=None):
-        """QuotaResourcesResponseInfo
+        r"""QuotaResourcesResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this QuotaResourcesResponseInfo.
+        r"""Gets the resource_id of this QuotaResourcesResponseInfo.
 
         主机安全配额的资源ID
 
@@ -131,7 +131,7 @@ class QuotaResourcesResponseInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this QuotaResourcesResponseInfo.
+        r"""Sets the resource_id of this QuotaResourcesResponseInfo.
 
         主机安全配额的资源ID
 
@@ -142,7 +142,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def version(self):
-        """Gets the version of this QuotaResourcesResponseInfo.
+        r"""Gets the version of this QuotaResourcesResponseInfo.
 
         资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
@@ -153,7 +153,7 @@ class QuotaResourcesResponseInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QuotaResourcesResponseInfo.
+        r"""Sets the version of this QuotaResourcesResponseInfo.
 
         资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
@@ -164,7 +164,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def quota_status(self):
-        """Gets the quota_status of this QuotaResourcesResponseInfo.
+        r"""Gets the quota_status of this QuotaResourcesResponseInfo.
 
         配额状态   - normal : 正常   - expired : 已过期   - freeze : 已冻结
 
@@ -175,7 +175,7 @@ class QuotaResourcesResponseInfo:
 
     @quota_status.setter
     def quota_status(self, quota_status):
-        """Sets the quota_status of this QuotaResourcesResponseInfo.
+        r"""Sets the quota_status of this QuotaResourcesResponseInfo.
 
         配额状态   - normal : 正常   - expired : 已过期   - freeze : 已冻结
 
@@ -186,7 +186,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def used_status(self):
-        """Gets the used_status of this QuotaResourcesResponseInfo.
+        r"""Gets the used_status of this QuotaResourcesResponseInfo.
 
         使用状态   - idle : 空闲   - used : 使用中
 
@@ -197,7 +197,7 @@ class QuotaResourcesResponseInfo:
 
     @used_status.setter
     def used_status(self, used_status):
-        """Sets the used_status of this QuotaResourcesResponseInfo.
+        r"""Sets the used_status of this QuotaResourcesResponseInfo.
 
         使用状态   - idle : 空闲   - used : 使用中
 
@@ -208,7 +208,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this QuotaResourcesResponseInfo.
+        r"""Gets the host_id of this QuotaResourcesResponseInfo.
 
         主机ID
 
@@ -219,7 +219,7 @@ class QuotaResourcesResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this QuotaResourcesResponseInfo.
+        r"""Sets the host_id of this QuotaResourcesResponseInfo.
 
         主机ID
 
@@ -230,7 +230,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this QuotaResourcesResponseInfo.
+        r"""Gets the host_name of this QuotaResourcesResponseInfo.
 
         服务器名称
 
@@ -241,7 +241,7 @@ class QuotaResourcesResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this QuotaResourcesResponseInfo.
+        r"""Sets the host_name of this QuotaResourcesResponseInfo.
 
         服务器名称
 
@@ -252,7 +252,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this QuotaResourcesResponseInfo.
+        r"""Gets the charging_mode of this QuotaResourcesResponseInfo.
 
         计费模式   - packet_cycle : 包周期   - on_demand : 按需
 
@@ -263,7 +263,7 @@ class QuotaResourcesResponseInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this QuotaResourcesResponseInfo.
+        r"""Sets the charging_mode of this QuotaResourcesResponseInfo.
 
         计费模式   - packet_cycle : 包周期   - on_demand : 按需
 
@@ -274,7 +274,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this QuotaResourcesResponseInfo.
+        r"""Gets the tags of this QuotaResourcesResponseInfo.
 
         标签
 
@@ -285,7 +285,7 @@ class QuotaResourcesResponseInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QuotaResourcesResponseInfo.
+        r"""Sets the tags of this QuotaResourcesResponseInfo.
 
         标签
 
@@ -296,7 +296,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this QuotaResourcesResponseInfo.
+        r"""Gets the expire_time of this QuotaResourcesResponseInfo.
 
         过期时间，-1表示没有到期时间
 
@@ -307,7 +307,7 @@ class QuotaResourcesResponseInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this QuotaResourcesResponseInfo.
+        r"""Sets the expire_time of this QuotaResourcesResponseInfo.
 
         过期时间，-1表示没有到期时间
 
@@ -318,7 +318,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def shared_quota(self):
-        """Gets the shared_quota of this QuotaResourcesResponseInfo.
+        r"""Gets the shared_quota of this QuotaResourcesResponseInfo.
 
         是否共享配额   - shared：共享的   - unshared：非共享的
 
@@ -329,7 +329,7 @@ class QuotaResourcesResponseInfo:
 
     @shared_quota.setter
     def shared_quota(self, shared_quota):
-        """Sets the shared_quota of this QuotaResourcesResponseInfo.
+        r"""Sets the shared_quota of this QuotaResourcesResponseInfo.
 
         是否共享配额   - shared：共享的   - unshared：非共享的
 
@@ -340,7 +340,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QuotaResourcesResponseInfo.
+        r"""Gets the enterprise_project_id of this QuotaResourcesResponseInfo.
 
         企业项目ID
 
@@ -351,7 +351,7 @@ class QuotaResourcesResponseInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QuotaResourcesResponseInfo.
+        r"""Sets the enterprise_project_id of this QuotaResourcesResponseInfo.
 
         企业项目ID
 
@@ -362,7 +362,7 @@ class QuotaResourcesResponseInfo:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this QuotaResourcesResponseInfo.
+        r"""Gets the enterprise_project_name of this QuotaResourcesResponseInfo.
 
         所属企业项目名称
 
@@ -373,7 +373,7 @@ class QuotaResourcesResponseInfo:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this QuotaResourcesResponseInfo.
+        r"""Sets the enterprise_project_name of this QuotaResourcesResponseInfo.
 
         所属企业项目名称
 

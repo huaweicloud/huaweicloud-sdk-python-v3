@@ -25,7 +25,7 @@ class ShowAlarmRuleRequest:
     }
 
     def __init__(self, alarm_rule_id=None):
-        """ShowAlarmRuleRequest
+        r"""ShowAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAlarmRuleRequest:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this ShowAlarmRuleRequest.
+        r"""Gets the alarm_rule_id of this ShowAlarmRuleRequest.
 
         阈值规则ID。
 
@@ -53,7 +53,7 @@ class ShowAlarmRuleRequest:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this ShowAlarmRuleRequest.
+        r"""Sets the alarm_rule_id of this ShowAlarmRuleRequest.
 
         阈值规则ID。
 

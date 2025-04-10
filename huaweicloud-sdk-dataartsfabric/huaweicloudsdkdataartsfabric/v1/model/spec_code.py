@@ -23,7 +23,7 @@ class SpecCode:
     }
 
     def __init__(self):
-        """SpecCode
+        r"""SpecCode
 
         The model defined in huaweicloud sdk
 

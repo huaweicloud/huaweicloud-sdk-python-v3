@@ -33,7 +33,7 @@ class DateColumnStatisticsData:
     }
 
     def __init__(self, minimum_value=None, maximum_value=None, number_of_null=None, number_of_distinct_value=None, bit_vector=None):
-        """DateColumnStatisticsData
+        r"""DateColumnStatisticsData
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DateColumnStatisticsData:
 
     @property
     def minimum_value(self):
-        """Gets the minimum_value of this DateColumnStatisticsData.
+        r"""Gets the minimum_value of this DateColumnStatisticsData.
 
         列中的最小时间戳
 
@@ -80,7 +80,7 @@ class DateColumnStatisticsData:
 
     @minimum_value.setter
     def minimum_value(self, minimum_value):
-        """Sets the minimum_value of this DateColumnStatisticsData.
+        r"""Sets the minimum_value of this DateColumnStatisticsData.
 
         列中的最小时间戳
 
@@ -91,7 +91,7 @@ class DateColumnStatisticsData:
 
     @property
     def maximum_value(self):
-        """Gets the maximum_value of this DateColumnStatisticsData.
+        r"""Gets the maximum_value of this DateColumnStatisticsData.
 
         列中的最大时间戳
 
@@ -102,7 +102,7 @@ class DateColumnStatisticsData:
 
     @maximum_value.setter
     def maximum_value(self, maximum_value):
-        """Sets the maximum_value of this DateColumnStatisticsData.
+        r"""Sets the maximum_value of this DateColumnStatisticsData.
 
         列中的最大时间戳
 
@@ -113,7 +113,7 @@ class DateColumnStatisticsData:
 
     @property
     def number_of_null(self):
-        """Gets the number_of_null of this DateColumnStatisticsData.
+        r"""Gets the number_of_null of this DateColumnStatisticsData.
 
         列中空值个数
 
@@ -124,7 +124,7 @@ class DateColumnStatisticsData:
 
     @number_of_null.setter
     def number_of_null(self, number_of_null):
-        """Sets the number_of_null of this DateColumnStatisticsData.
+        r"""Sets the number_of_null of this DateColumnStatisticsData.
 
         列中空值个数
 
@@ -135,7 +135,7 @@ class DateColumnStatisticsData:
 
     @property
     def number_of_distinct_value(self):
-        """Gets the number_of_distinct_value of this DateColumnStatisticsData.
+        r"""Gets the number_of_distinct_value of this DateColumnStatisticsData.
 
         列中去重后的时间戳个数
 
@@ -146,7 +146,7 @@ class DateColumnStatisticsData:
 
     @number_of_distinct_value.setter
     def number_of_distinct_value(self, number_of_distinct_value):
-        """Sets the number_of_distinct_value of this DateColumnStatisticsData.
+        r"""Sets the number_of_distinct_value of this DateColumnStatisticsData.
 
         列中去重后的时间戳个数
 
@@ -157,7 +157,7 @@ class DateColumnStatisticsData:
 
     @property
     def bit_vector(self):
-        """Gets the bit_vector of this DateColumnStatisticsData.
+        r"""Gets the bit_vector of this DateColumnStatisticsData.
 
         估算唯一值使用的位图
 
@@ -168,7 +168,7 @@ class DateColumnStatisticsData:
 
     @bit_vector.setter
     def bit_vector(self, bit_vector):
-        """Sets the bit_vector of this DateColumnStatisticsData.
+        r"""Sets the bit_vector of this DateColumnStatisticsData.
 
         估算唯一值使用的位图
 

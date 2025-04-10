@@ -29,7 +29,7 @@ class ShowRedisBigKeysRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, key_types=None):
-        """ShowRedisBigKeysRequestBody
+        r"""ShowRedisBigKeysRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowRedisBigKeysRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRedisBigKeysRequestBody.
+        r"""Gets the offset of this ShowRedisBigKeysRequestBody.
 
         索引位置偏移量，表示从查询到的大key列表偏移offset条数据后查询对应的大key信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从第一条大key开始查询。
 
@@ -68,7 +68,7 @@ class ShowRedisBigKeysRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRedisBigKeysRequestBody.
+        r"""Sets the offset of this ShowRedisBigKeysRequestBody.
 
         索引位置偏移量，表示从查询到的大key列表偏移offset条数据后查询对应的大key信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从第一条大key开始查询。
 
@@ -79,7 +79,7 @@ class ShowRedisBigKeysRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRedisBigKeysRequestBody.
+        r"""Gets the limit of this ShowRedisBigKeysRequestBody.
 
         查询个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条大key。
 
@@ -90,7 +90,7 @@ class ShowRedisBigKeysRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRedisBigKeysRequestBody.
+        r"""Sets the limit of this ShowRedisBigKeysRequestBody.
 
         查询个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条大key。
 
@@ -101,7 +101,7 @@ class ShowRedisBigKeysRequestBody:
 
     @property
     def key_types(self):
-        """Gets the key_types of this ShowRedisBigKeysRequestBody.
+        r"""Gets the key_types of this ShowRedisBigKeysRequestBody.
 
         大key的类型,一个字符串列表,支持\"string\",\"hash\",\"zset\",\"set\",\"list\",\"stream\"六种类型。
 
@@ -112,7 +112,7 @@ class ShowRedisBigKeysRequestBody:
 
     @key_types.setter
     def key_types(self, key_types):
-        """Sets the key_types of this ShowRedisBigKeysRequestBody.
+        r"""Sets the key_types of this ShowRedisBigKeysRequestBody.
 
         大key的类型,一个字符串列表,支持\"string\",\"hash\",\"zset\",\"set\",\"list\",\"stream\"六种类型。
 

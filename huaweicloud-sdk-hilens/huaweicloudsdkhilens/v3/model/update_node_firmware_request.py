@@ -29,7 +29,7 @@ class UpdateNodeFirmwareRequest:
     }
 
     def __init__(self, node_id=None, firmware_id=None, x_expired_time=None):
-        """UpdateNodeFirmwareRequest
+        r"""UpdateNodeFirmwareRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateNodeFirmwareRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateNodeFirmwareRequest.
+        r"""Gets the node_id of this UpdateNodeFirmwareRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -66,7 +66,7 @@ class UpdateNodeFirmwareRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateNodeFirmwareRequest.
+        r"""Sets the node_id of this UpdateNodeFirmwareRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -77,7 +77,7 @@ class UpdateNodeFirmwareRequest:
 
     @property
     def firmware_id(self):
-        """Gets the firmware_id of this UpdateNodeFirmwareRequest.
+        r"""Gets the firmware_id of this UpdateNodeFirmwareRequest.
 
         固件ID,，从专业版HiLens控制台固件管理[查询固件列表](ListFirmwares.xml)获取
 
@@ -88,7 +88,7 @@ class UpdateNodeFirmwareRequest:
 
     @firmware_id.setter
     def firmware_id(self, firmware_id):
-        """Sets the firmware_id of this UpdateNodeFirmwareRequest.
+        r"""Sets the firmware_id of this UpdateNodeFirmwareRequest.
 
         固件ID,，从专业版HiLens控制台固件管理[查询固件列表](ListFirmwares.xml)获取
 
@@ -99,7 +99,7 @@ class UpdateNodeFirmwareRequest:
 
     @property
     def x_expired_time(self):
-        """Gets the x_expired_time of this UpdateNodeFirmwareRequest.
+        r"""Gets the x_expired_time of this UpdateNodeFirmwareRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 
@@ -110,7 +110,7 @@ class UpdateNodeFirmwareRequest:
 
     @x_expired_time.setter
     def x_expired_time(self, x_expired_time):
-        """Sets the x_expired_time of this UpdateNodeFirmwareRequest.
+        r"""Sets the x_expired_time of this UpdateNodeFirmwareRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 

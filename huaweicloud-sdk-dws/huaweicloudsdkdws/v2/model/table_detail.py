@@ -27,7 +27,7 @@ class TableDetail:
     }
 
     def __init__(self, schema_name=None, table_name=None):
-        """TableDetail
+        r"""TableDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TableDetail:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this TableDetail.
+        r"""Gets the schema_name of this TableDetail.
 
         schema名称
 
@@ -59,7 +59,7 @@ class TableDetail:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this TableDetail.
+        r"""Sets the schema_name of this TableDetail.
 
         schema名称
 
@@ -70,7 +70,7 @@ class TableDetail:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TableDetail.
+        r"""Gets the table_name of this TableDetail.
 
         表名称
 
@@ -81,7 +81,7 @@ class TableDetail:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TableDetail.
+        r"""Sets the table_name of this TableDetail.
 
         表名称
 

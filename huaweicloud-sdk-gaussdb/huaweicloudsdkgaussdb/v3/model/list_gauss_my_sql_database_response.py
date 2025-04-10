@@ -28,7 +28,7 @@ class ListGaussMySqlDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListGaussMySqlDatabaseResponse
+        r"""ListGaussMySqlDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGaussMySqlDatabaseResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListGaussMySqlDatabaseResponse.
+        r"""Gets the databases of this ListGaussMySqlDatabaseResponse.
 
         数据库信息列表。
 
@@ -62,7 +62,7 @@ class ListGaussMySqlDatabaseResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListGaussMySqlDatabaseResponse.
+        r"""Sets the databases of this ListGaussMySqlDatabaseResponse.
 
         数据库信息列表。
 
@@ -73,7 +73,7 @@ class ListGaussMySqlDatabaseResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGaussMySqlDatabaseResponse.
+        r"""Gets the total_count of this ListGaussMySqlDatabaseResponse.
 
         数据库总数。
 
@@ -84,7 +84,7 @@ class ListGaussMySqlDatabaseResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGaussMySqlDatabaseResponse.
+        r"""Sets the total_count of this ListGaussMySqlDatabaseResponse.
 
         数据库总数。
 

@@ -36,7 +36,7 @@ class ShowAppsOverviewResponse(SdkResponse):
     }
 
     def __init__(self, apply_num=None, call_num=None, success_num=None, fail_num=None, legal_num=None, illegal_num=None):
-        """ShowAppsOverviewResponse
+        r"""ShowAppsOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @property
     def apply_num(self):
-        """Gets the apply_num of this ShowAppsOverviewResponse.
+        r"""Gets the apply_num of this ShowAppsOverviewResponse.
 
         申请量
 
@@ -90,7 +90,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @apply_num.setter
     def apply_num(self, apply_num):
-        """Sets the apply_num of this ShowAppsOverviewResponse.
+        r"""Sets the apply_num of this ShowAppsOverviewResponse.
 
         申请量
 
@@ -101,7 +101,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @property
     def call_num(self):
-        """Gets the call_num of this ShowAppsOverviewResponse.
+        r"""Gets the call_num of this ShowAppsOverviewResponse.
 
         调用总量
 
@@ -112,7 +112,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this ShowAppsOverviewResponse.
+        r"""Sets the call_num of this ShowAppsOverviewResponse.
 
         调用总量
 
@@ -123,7 +123,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @property
     def success_num(self):
-        """Gets the success_num of this ShowAppsOverviewResponse.
+        r"""Gets the success_num of this ShowAppsOverviewResponse.
 
         成功调用量(取数成功)
 
@@ -134,7 +134,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ShowAppsOverviewResponse.
+        r"""Sets the success_num of this ShowAppsOverviewResponse.
 
         成功调用量(取数成功)
 
@@ -145,7 +145,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this ShowAppsOverviewResponse.
+        r"""Gets the fail_num of this ShowAppsOverviewResponse.
 
         失败调用量(取数失败)
 
@@ -156,7 +156,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this ShowAppsOverviewResponse.
+        r"""Sets the fail_num of this ShowAppsOverviewResponse.
 
         失败调用量(取数失败)
 
@@ -167,7 +167,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @property
     def legal_num(self):
-        """Gets the legal_num of this ShowAppsOverviewResponse.
+        r"""Gets the legal_num of this ShowAppsOverviewResponse.
 
         合法调用量(通过校验)
 
@@ -178,7 +178,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @legal_num.setter
     def legal_num(self, legal_num):
-        """Sets the legal_num of this ShowAppsOverviewResponse.
+        r"""Sets the legal_num of this ShowAppsOverviewResponse.
 
         合法调用量(通过校验)
 
@@ -189,7 +189,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @property
     def illegal_num(self):
-        """Gets the illegal_num of this ShowAppsOverviewResponse.
+        r"""Gets the illegal_num of this ShowAppsOverviewResponse.
 
         非法调用量(无法通过校验)
 
@@ -200,7 +200,7 @@ class ShowAppsOverviewResponse(SdkResponse):
 
     @illegal_num.setter
     def illegal_num(self, illegal_num):
-        """Sets the illegal_num of this ShowAppsOverviewResponse.
+        r"""Sets the illegal_num of this ShowAppsOverviewResponse.
 
         非法调用量(无法通过校验)
 

@@ -27,7 +27,7 @@ class CreateRobotRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateRobotRequest
+        r"""CreateRobotRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateRobotRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateRobotRequest.
+        r"""Gets the x_app_user_id of this CreateRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateRobotRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateRobotRequest.
+        r"""Sets the x_app_user_id of this CreateRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateRobotRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRobotRequest.
+        r"""Gets the body of this CreateRobotRequest.
 
         :return: The body of this CreateRobotRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateRobotReq`
@@ -81,7 +81,7 @@ class CreateRobotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRobotRequest.
+        r"""Sets the body of this CreateRobotRequest.
 
         :param body: The body of this CreateRobotRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateRobotReq`

@@ -31,7 +31,7 @@ class BatchImportConfigRequestBody:
     }
 
     def __init__(self, id=None, name=None, value=None, description=None):
-        """BatchImportConfigRequestBody
+        r"""BatchImportConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BatchImportConfigRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this BatchImportConfigRequestBody.
+        r"""Gets the id of this BatchImportConfigRequestBody.
 
         配置项ID
 
@@ -72,7 +72,7 @@ class BatchImportConfigRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchImportConfigRequestBody.
+        r"""Sets the id of this BatchImportConfigRequestBody.
 
         配置项ID
 
@@ -83,7 +83,7 @@ class BatchImportConfigRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this BatchImportConfigRequestBody.
+        r"""Gets the name of this BatchImportConfigRequestBody.
 
         配置项名称
 
@@ -94,7 +94,7 @@ class BatchImportConfigRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchImportConfigRequestBody.
+        r"""Sets the name of this BatchImportConfigRequestBody.
 
         配置项名称
 
@@ -105,7 +105,7 @@ class BatchImportConfigRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this BatchImportConfigRequestBody.
+        r"""Gets the value of this BatchImportConfigRequestBody.
 
         配置项详情，长度2MB以内
 
@@ -116,7 +116,7 @@ class BatchImportConfigRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchImportConfigRequestBody.
+        r"""Sets the value of this BatchImportConfigRequestBody.
 
         配置项详情，长度2MB以内
 
@@ -127,7 +127,7 @@ class BatchImportConfigRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this BatchImportConfigRequestBody.
+        r"""Gets the description of this BatchImportConfigRequestBody.
 
         配置项描述
 
@@ -138,7 +138,7 @@ class BatchImportConfigRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchImportConfigRequestBody.
+        r"""Sets the description of this BatchImportConfigRequestBody.
 
         配置项描述
 

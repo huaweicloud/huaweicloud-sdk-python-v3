@@ -32,7 +32,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, created=None, choices=None, usage=None):
-        """ExecuteChatCompletionResponse
+        r"""ExecuteChatCompletionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteChatCompletionResponse.
+        r"""Gets the id of this ExecuteChatCompletionResponse.
 
         响应ID
 
@@ -76,7 +76,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteChatCompletionResponse.
+        r"""Sets the id of this ExecuteChatCompletionResponse.
 
         响应ID
 
@@ -87,7 +87,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ExecuteChatCompletionResponse.
+        r"""Gets the created of this ExecuteChatCompletionResponse.
 
         响应时间
 
@@ -98,7 +98,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ExecuteChatCompletionResponse.
+        r"""Sets the created of this ExecuteChatCompletionResponse.
 
         响应时间
 
@@ -109,7 +109,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @property
     def choices(self):
-        """Gets the choices of this ExecuteChatCompletionResponse.
+        r"""Gets the choices of this ExecuteChatCompletionResponse.
 
         模型回复
 
@@ -120,7 +120,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @choices.setter
     def choices(self, choices):
-        """Sets the choices of this ExecuteChatCompletionResponse.
+        r"""Sets the choices of this ExecuteChatCompletionResponse.
 
         模型回复
 
@@ -131,7 +131,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @property
     def usage(self):
-        """Gets the usage of this ExecuteChatCompletionResponse.
+        r"""Gets the usage of this ExecuteChatCompletionResponse.
 
         :return: The usage of this ExecuteChatCompletionResponse.
         :rtype: :class:`huaweicloudsdkpangulargemodels.v2.CompletionUsage`
@@ -140,7 +140,7 @@ class ExecuteChatCompletionResponse(SdkResponse):
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ExecuteChatCompletionResponse.
+        r"""Sets the usage of this ExecuteChatCompletionResponse.
 
         :param usage: The usage of this ExecuteChatCompletionResponse.
         :type usage: :class:`huaweicloudsdkpangulargemodels.v2.CompletionUsage`

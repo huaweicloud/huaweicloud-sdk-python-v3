@@ -25,7 +25,7 @@ class ListInstanceMaintenanceWindowRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListInstanceMaintenanceWindowRequest
+        r"""ListInstanceMaintenanceWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListInstanceMaintenanceWindowRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceMaintenanceWindowRequest.
+        r"""Gets the instance_id of this ListInstanceMaintenanceWindowRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ListInstanceMaintenanceWindowRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceMaintenanceWindowRequest.
+        r"""Sets the instance_id of this ListInstanceMaintenanceWindowRequest.
 
         实例ID。
 

@@ -41,7 +41,7 @@ class ListAppDetailsRequest:
     }
 
     def __init__(self, app_name=None, start_time=None, end_time=None, limit=None, offset=None, region=None, sort_dir=None, sort_key=None, status=None):
-        """ListAppDetailsRequest
+        r"""ListAppDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAppDetailsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppDetailsRequest.
+        r"""Gets the app_name of this ListAppDetailsRequest.
 
         应用名称
 
@@ -110,7 +110,7 @@ class ListAppDetailsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppDetailsRequest.
+        r"""Sets the app_name of this ListAppDetailsRequest.
 
         应用名称
 
@@ -121,7 +121,7 @@ class ListAppDetailsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAppDetailsRequest.
+        r"""Gets the start_time of this ListAppDetailsRequest.
 
         开始时间
 
@@ -132,7 +132,7 @@ class ListAppDetailsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAppDetailsRequest.
+        r"""Sets the start_time of this ListAppDetailsRequest.
 
         开始时间
 
@@ -143,7 +143,7 @@ class ListAppDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAppDetailsRequest.
+        r"""Gets the end_time of this ListAppDetailsRequest.
 
         结束时间
 
@@ -154,7 +154,7 @@ class ListAppDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAppDetailsRequest.
+        r"""Sets the end_time of this ListAppDetailsRequest.
 
         结束时间
 
@@ -165,7 +165,7 @@ class ListAppDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppDetailsRequest.
+        r"""Gets the limit of this ListAppDetailsRequest.
 
         数量
 
@@ -176,7 +176,7 @@ class ListAppDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppDetailsRequest.
+        r"""Sets the limit of this ListAppDetailsRequest.
 
         数量
 
@@ -187,7 +187,7 @@ class ListAppDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppDetailsRequest.
+        r"""Gets the offset of this ListAppDetailsRequest.
 
         偏移量
 
@@ -198,7 +198,7 @@ class ListAppDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppDetailsRequest.
+        r"""Sets the offset of this ListAppDetailsRequest.
 
         偏移量
 
@@ -209,7 +209,7 @@ class ListAppDetailsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListAppDetailsRequest.
+        r"""Gets the region of this ListAppDetailsRequest.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -220,7 +220,7 @@ class ListAppDetailsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListAppDetailsRequest.
+        r"""Sets the region of this ListAppDetailsRequest.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -231,7 +231,7 @@ class ListAppDetailsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAppDetailsRequest.
+        r"""Gets the sort_dir of this ListAppDetailsRequest.
 
         排序方式 1. desc：降序 2. asc：升序
 
@@ -242,7 +242,7 @@ class ListAppDetailsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAppDetailsRequest.
+        r"""Sets the sort_dir of this ListAppDetailsRequest.
 
         排序方式 1. desc：降序 2. asc：升序
 
@@ -253,7 +253,7 @@ class ListAppDetailsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAppDetailsRequest.
+        r"""Gets the sort_key of this ListAppDetailsRequest.
 
         排序字段
 
@@ -264,7 +264,7 @@ class ListAppDetailsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAppDetailsRequest.
+        r"""Sets the sort_key of this ListAppDetailsRequest.
 
         排序字段
 
@@ -275,7 +275,7 @@ class ListAppDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAppDetailsRequest.
+        r"""Gets the status of this ListAppDetailsRequest.
 
         应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。   4. PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 
@@ -286,7 +286,7 @@ class ListAppDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAppDetailsRequest.
+        r"""Sets the status of this ListAppDetailsRequest.
 
         应用状态   1. CREATED：待上线。应用暂未创建成功，请稍候。   2. SUSPENDED：暂停。无法发起业务请求。当客户所发短信内容触发业务违规，或客户申请退订短信业务时，运营经理会将客户短信应用暂停。   3. LAUNCHED：正常。应用添加成功，可以正常使用。   4. PROCESSING：资源待分配。请联系客户经理或通过工单系统申请配置资源。
 

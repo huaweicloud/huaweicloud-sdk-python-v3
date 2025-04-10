@@ -27,7 +27,7 @@ class UpdateNaRequest:
     }
 
     def __init__(self, na_id=None, body=None):
-        """UpdateNaRequest
+        r"""UpdateNaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNaRequest:
 
     @property
     def na_id(self):
-        """Gets the na_id of this UpdateNaRequest.
+        r"""Gets the na_id of this UpdateNaRequest.
 
         北向数据接收端点ID
 
@@ -60,7 +60,7 @@ class UpdateNaRequest:
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this UpdateNaRequest.
+        r"""Sets the na_id of this UpdateNaRequest.
 
         北向数据接收端点ID
 
@@ -71,7 +71,7 @@ class UpdateNaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNaRequest.
+        r"""Gets the body of this UpdateNaRequest.
 
         :return: The body of this UpdateNaRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`
@@ -80,7 +80,7 @@ class UpdateNaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNaRequest.
+        r"""Sets the body of this UpdateNaRequest.
 
         :param body: The body of this UpdateNaRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`

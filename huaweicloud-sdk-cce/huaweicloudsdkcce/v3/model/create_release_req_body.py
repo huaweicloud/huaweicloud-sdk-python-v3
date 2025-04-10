@@ -37,7 +37,7 @@ class CreateReleaseReqBody:
     }
 
     def __init__(self, chart_id=None, description=None, name=None, namespace=None, version=None, parameters=None, values=None):
-        """CreateReleaseReqBody
+        r"""CreateReleaseReqBody
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class CreateReleaseReqBody:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this CreateReleaseReqBody.
+        r"""Gets the chart_id of this CreateReleaseReqBody.
 
         模板ID
 
@@ -91,7 +91,7 @@ class CreateReleaseReqBody:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this CreateReleaseReqBody.
+        r"""Sets the chart_id of this CreateReleaseReqBody.
 
         模板ID
 
@@ -102,7 +102,7 @@ class CreateReleaseReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateReleaseReqBody.
+        r"""Gets the description of this CreateReleaseReqBody.
 
         模板实例描述
 
@@ -113,7 +113,7 @@ class CreateReleaseReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateReleaseReqBody.
+        r"""Sets the description of this CreateReleaseReqBody.
 
         模板实例描述
 
@@ -124,7 +124,7 @@ class CreateReleaseReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateReleaseReqBody.
+        r"""Gets the name of this CreateReleaseReqBody.
 
         模板实例名称
 
@@ -135,7 +135,7 @@ class CreateReleaseReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateReleaseReqBody.
+        r"""Sets the name of this CreateReleaseReqBody.
 
         模板实例名称
 
@@ -146,7 +146,7 @@ class CreateReleaseReqBody:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateReleaseReqBody.
+        r"""Gets the namespace of this CreateReleaseReqBody.
 
         模板实例所在的命名空间
 
@@ -157,7 +157,7 @@ class CreateReleaseReqBody:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateReleaseReqBody.
+        r"""Sets the namespace of this CreateReleaseReqBody.
 
         模板实例所在的命名空间
 
@@ -168,7 +168,7 @@ class CreateReleaseReqBody:
 
     @property
     def version(self):
-        """Gets the version of this CreateReleaseReqBody.
+        r"""Gets the version of this CreateReleaseReqBody.
 
         模板实例版本号
 
@@ -179,7 +179,7 @@ class CreateReleaseReqBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateReleaseReqBody.
+        r"""Sets the version of this CreateReleaseReqBody.
 
         模板实例版本号
 
@@ -190,7 +190,7 @@ class CreateReleaseReqBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this CreateReleaseReqBody.
+        r"""Gets the parameters of this CreateReleaseReqBody.
 
         :return: The parameters of this CreateReleaseReqBody.
         :rtype: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
@@ -199,7 +199,7 @@ class CreateReleaseReqBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this CreateReleaseReqBody.
+        r"""Sets the parameters of this CreateReleaseReqBody.
 
         :param parameters: The parameters of this CreateReleaseReqBody.
         :type parameters: :class:`huaweicloudsdkcce.v3.ReleaseReqBodyParams`
@@ -208,7 +208,7 @@ class CreateReleaseReqBody:
 
     @property
     def values(self):
-        """Gets the values of this CreateReleaseReqBody.
+        r"""Gets the values of this CreateReleaseReqBody.
 
         :return: The values of this CreateReleaseReqBody.
         :rtype: :class:`huaweicloudsdkcce.v3.CreateReleaseReqBodyValues`
@@ -217,7 +217,7 @@ class CreateReleaseReqBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateReleaseReqBody.
+        r"""Sets the values of this CreateReleaseReqBody.
 
         :param values: The values of this CreateReleaseReqBody.
         :type values: :class:`huaweicloudsdkcce.v3.CreateReleaseReqBodyValues`

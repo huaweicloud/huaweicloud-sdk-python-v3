@@ -31,7 +31,7 @@ class ConnectionInfo:
     }
 
     def __init__(self, name=None, type=None, config=None, description=None):
-        """ConnectionInfo
+        r"""ConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ConnectionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConnectionInfo.
+        r"""Gets the name of this ConnectionInfo.
 
         :return: The name of this ConnectionInfo.
         :rtype: str
@@ -71,7 +71,7 @@ class ConnectionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionInfo.
+        r"""Sets the name of this ConnectionInfo.
 
         :param name: The name of this ConnectionInfo.
         :type name: str
@@ -80,7 +80,7 @@ class ConnectionInfo:
 
     @property
     def type(self):
-        """Gets the type of this ConnectionInfo.
+        r"""Gets the type of this ConnectionInfo.
 
         :return: The type of this ConnectionInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class ConnectionInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionInfo.
+        r"""Sets the type of this ConnectionInfo.
 
         :param type: The type of this ConnectionInfo.
         :type type: str
@@ -98,7 +98,7 @@ class ConnectionInfo:
 
     @property
     def config(self):
-        """Gets the config of this ConnectionInfo.
+        r"""Gets the config of this ConnectionInfo.
 
         :return: The config of this ConnectionInfo.
         :rtype: object
@@ -107,7 +107,7 @@ class ConnectionInfo:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ConnectionInfo.
+        r"""Sets the config of this ConnectionInfo.
 
         :param config: The config of this ConnectionInfo.
         :type config: object
@@ -116,7 +116,7 @@ class ConnectionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionInfo.
+        r"""Gets the description of this ConnectionInfo.
 
         :return: The description of this ConnectionInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class ConnectionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionInfo.
+        r"""Sets the description of this ConnectionInfo.
 
         :param description: The description of this ConnectionInfo.
         :type description: str

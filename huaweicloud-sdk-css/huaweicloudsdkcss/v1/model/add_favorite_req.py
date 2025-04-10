@@ -27,7 +27,7 @@ class AddFavoriteReq:
     }
 
     def __init__(self, name=None, template=None):
-        """AddFavoriteReq
+        r"""AddFavoriteReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddFavoriteReq:
 
     @property
     def name(self):
-        """Gets the name of this AddFavoriteReq.
+        r"""Gets the name of this AddFavoriteReq.
 
         配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
@@ -59,7 +59,7 @@ class AddFavoriteReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddFavoriteReq.
+        r"""Sets the name of this AddFavoriteReq.
 
         配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
@@ -70,7 +70,7 @@ class AddFavoriteReq:
 
     @property
     def template(self):
-        """Gets the template of this AddFavoriteReq.
+        r"""Gets the template of this AddFavoriteReq.
 
         :return: The template of this AddFavoriteReq.
         :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`
@@ -79,7 +79,7 @@ class AddFavoriteReq:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this AddFavoriteReq.
+        r"""Sets the template of this AddFavoriteReq.
 
         :param template: The template of this AddFavoriteReq.
         :type template: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`

@@ -37,7 +37,7 @@ class DataobjectSearch:
     }
 
     def __init__(self, limit=None, offset=None, sort_by=None, order=None, from_date=None, to_date=None, condition=None):
-        """DataobjectSearch
+        r"""DataobjectSearch
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DataobjectSearch:
 
     @property
     def limit(self):
-        """Gets the limit of this DataobjectSearch.
+        r"""Gets the limit of this DataobjectSearch.
 
         limit
 
@@ -96,7 +96,7 @@ class DataobjectSearch:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this DataobjectSearch.
+        r"""Sets the limit of this DataobjectSearch.
 
         limit
 
@@ -107,7 +107,7 @@ class DataobjectSearch:
 
     @property
     def offset(self):
-        """Gets the offset of this DataobjectSearch.
+        r"""Gets the offset of this DataobjectSearch.
 
         offset
 
@@ -118,7 +118,7 @@ class DataobjectSearch:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this DataobjectSearch.
+        r"""Sets the offset of this DataobjectSearch.
 
         offset
 
@@ -129,7 +129,7 @@ class DataobjectSearch:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this DataobjectSearch.
+        r"""Gets the sort_by of this DataobjectSearch.
 
         sortby
 
@@ -140,7 +140,7 @@ class DataobjectSearch:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this DataobjectSearch.
+        r"""Sets the sort_by of this DataobjectSearch.
 
         sortby
 
@@ -151,7 +151,7 @@ class DataobjectSearch:
 
     @property
     def order(self):
-        """Gets the order of this DataobjectSearch.
+        r"""Gets the order of this DataobjectSearch.
 
         order
 
@@ -162,7 +162,7 @@ class DataobjectSearch:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this DataobjectSearch.
+        r"""Sets the order of this DataobjectSearch.
 
         order
 
@@ -173,7 +173,7 @@ class DataobjectSearch:
 
     @property
     def from_date(self):
-        """Gets the from_date of this DataobjectSearch.
+        r"""Gets the from_date of this DataobjectSearch.
 
         search start time
 
@@ -184,7 +184,7 @@ class DataobjectSearch:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this DataobjectSearch.
+        r"""Sets the from_date of this DataobjectSearch.
 
         search start time
 
@@ -195,7 +195,7 @@ class DataobjectSearch:
 
     @property
     def to_date(self):
-        """Gets the to_date of this DataobjectSearch.
+        r"""Gets the to_date of this DataobjectSearch.
 
         search end time
 
@@ -206,7 +206,7 @@ class DataobjectSearch:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this DataobjectSearch.
+        r"""Sets the to_date of this DataobjectSearch.
 
         search end time
 
@@ -217,7 +217,7 @@ class DataobjectSearch:
 
     @property
     def condition(self):
-        """Gets the condition of this DataobjectSearch.
+        r"""Gets the condition of this DataobjectSearch.
 
         :return: The condition of this DataobjectSearch.
         :rtype: :class:`huaweicloudsdksa.v2.DataobjectSearchCondition`
@@ -226,7 +226,7 @@ class DataobjectSearch:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this DataobjectSearch.
+        r"""Sets the condition of this DataobjectSearch.
 
         :param condition: The condition of this DataobjectSearch.
         :type condition: :class:`huaweicloudsdksa.v2.DataobjectSearchCondition`

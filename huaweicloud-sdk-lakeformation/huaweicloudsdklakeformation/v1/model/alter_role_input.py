@@ -27,7 +27,7 @@ class AlterRoleInput:
     }
 
     def __init__(self, description=None, role_name=None):
-        """AlterRoleInput
+        r"""AlterRoleInput
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AlterRoleInput:
 
     @property
     def description(self):
-        """Gets the description of this AlterRoleInput.
+        r"""Gets the description of this AlterRoleInput.
 
         描述信息。最大长度为4000个字符。
 
@@ -60,7 +60,7 @@ class AlterRoleInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AlterRoleInput.
+        r"""Sets the description of this AlterRoleInput.
 
         描述信息。最大长度为4000个字符。
 
@@ -71,7 +71,7 @@ class AlterRoleInput:
 
     @property
     def role_name(self):
-        """Gets the role_name of this AlterRoleInput.
+        r"""Gets the role_name of this AlterRoleInput.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -82,7 +82,7 @@ class AlterRoleInput:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this AlterRoleInput.
+        r"""Sets the role_name of this AlterRoleInput.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 

@@ -47,7 +47,7 @@ class TargetLoadbalancerParam:
     }
 
     def __init__(self, name=None, availability_zone_list=None, vip_subnet_cidr_id=None, vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_address=None, elb_virsubnet_ids=None, l4_flavor_id=None, l7_flavor_id=None, enterprise_project_id=None, reuse_pool=None, guaranteed=None):
-        """TargetLoadbalancerParam
+        r"""TargetLoadbalancerParam
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TargetLoadbalancerParam:
 
     @property
     def name(self):
-        """Gets the name of this TargetLoadbalancerParam.
+        r"""Gets the name of this TargetLoadbalancerParam.
 
         新实例名称。 可选，不选时使用源负载均衡器名称加copy-x的后缀作为新实例名称。
 
@@ -131,7 +131,7 @@ class TargetLoadbalancerParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetLoadbalancerParam.
+        r"""Sets the name of this TargetLoadbalancerParam.
 
         新实例名称。 可选，不选时使用源负载均衡器名称加copy-x的后缀作为新实例名称。
 
@@ -142,7 +142,7 @@ class TargetLoadbalancerParam:
 
     @property
     def availability_zone_list(self):
-        """Gets the availability_zone_list of this TargetLoadbalancerParam.
+        r"""Gets the availability_zone_list of this TargetLoadbalancerParam.
 
         新实例所属可用区。 可选，不选时使用源负载均衡器的可用区。 只在独享型复制场景可配置。
 
@@ -153,7 +153,7 @@ class TargetLoadbalancerParam:
 
     @availability_zone_list.setter
     def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this TargetLoadbalancerParam.
+        r"""Sets the availability_zone_list of this TargetLoadbalancerParam.
 
         新实例所属可用区。 可选，不选时使用源负载均衡器的可用区。 只在独享型复制场景可配置。
 
@@ -164,7 +164,7 @@ class TargetLoadbalancerParam:
 
     @property
     def vip_subnet_cidr_id(self):
-        """Gets the vip_subnet_cidr_id of this TargetLoadbalancerParam.
+        r"""Gets the vip_subnet_cidr_id of this TargetLoadbalancerParam.
 
         新实例所属子网的ipv4子网id。 可选，不选时使用源负载均衡器的ipv4子网。 所选子网需要与源负载均衡器在同一个vpc内。
 
@@ -175,7 +175,7 @@ class TargetLoadbalancerParam:
 
     @vip_subnet_cidr_id.setter
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
-        """Sets the vip_subnet_cidr_id of this TargetLoadbalancerParam.
+        r"""Sets the vip_subnet_cidr_id of this TargetLoadbalancerParam.
 
         新实例所属子网的ipv4子网id。 可选，不选时使用源负载均衡器的ipv4子网。 所选子网需要与源负载均衡器在同一个vpc内。
 
@@ -186,7 +186,7 @@ class TargetLoadbalancerParam:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this TargetLoadbalancerParam.
+        r"""Gets the vip_address of this TargetLoadbalancerParam.
 
         新实例的ipv4私网地址。 可选，不选时随机分配。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -197,7 +197,7 @@ class TargetLoadbalancerParam:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this TargetLoadbalancerParam.
+        r"""Sets the vip_address of this TargetLoadbalancerParam.
 
         新实例的ipv4私网地址。 可选，不选时随机分配。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -208,7 +208,7 @@ class TargetLoadbalancerParam:
 
     @property
     def ipv6_vip_virsubnet_id(self):
-        """Gets the ipv6_vip_virsubnet_id of this TargetLoadbalancerParam.
+        r"""Gets the ipv6_vip_virsubnet_id of this TargetLoadbalancerParam.
 
         新实例ipv6网络所属的子网网络id。 可选，不选时使用源负载均衡器的子网。 所选子网需要与源负载均衡器在同一个vpc内。 只在独享型复制场景可配。
 
@@ -219,7 +219,7 @@ class TargetLoadbalancerParam:
 
     @ipv6_vip_virsubnet_id.setter
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
-        """Sets the ipv6_vip_virsubnet_id of this TargetLoadbalancerParam.
+        r"""Sets the ipv6_vip_virsubnet_id of this TargetLoadbalancerParam.
 
         新实例ipv6网络所属的子网网络id。 可选，不选时使用源负载均衡器的子网。 所选子网需要与源负载均衡器在同一个vpc内。 只在独享型复制场景可配。
 
@@ -230,7 +230,7 @@ class TargetLoadbalancerParam:
 
     @property
     def ipv6_vip_address(self):
-        """Gets the ipv6_vip_address of this TargetLoadbalancerParam.
+        r"""Gets the ipv6_vip_address of this TargetLoadbalancerParam.
 
         新实例的ipv6地址。 可选，不选时随机分配。 只在独享型复制场景可配。
 
@@ -241,7 +241,7 @@ class TargetLoadbalancerParam:
 
     @ipv6_vip_address.setter
     def ipv6_vip_address(self, ipv6_vip_address):
-        """Sets the ipv6_vip_address of this TargetLoadbalancerParam.
+        r"""Sets the ipv6_vip_address of this TargetLoadbalancerParam.
 
         新实例的ipv6地址。 可选，不选时随机分配。 只在独享型复制场景可配。
 
@@ -252,7 +252,7 @@ class TargetLoadbalancerParam:
 
     @property
     def elb_virsubnet_ids(self):
-        """Gets the elb_virsubnet_ids of this TargetLoadbalancerParam.
+        r"""Gets the elb_virsubnet_ids of this TargetLoadbalancerParam.
 
         新实例后端子网的网络id。 可选，不选时使用源负载均衡器的后端子网。 所选子网需要与源负载均衡器在同一个vpc内。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -263,7 +263,7 @@ class TargetLoadbalancerParam:
 
     @elb_virsubnet_ids.setter
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
-        """Sets the elb_virsubnet_ids of this TargetLoadbalancerParam.
+        r"""Sets the elb_virsubnet_ids of this TargetLoadbalancerParam.
 
         新实例后端子网的网络id。 可选，不选时使用源负载均衡器的后端子网。 所选子网需要与源负载均衡器在同一个vpc内。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -274,7 +274,7 @@ class TargetLoadbalancerParam:
 
     @property
     def l4_flavor_id(self):
-        """Gets the l4_flavor_id of this TargetLoadbalancerParam.
+        r"""Gets the l4_flavor_id of this TargetLoadbalancerParam.
 
         新实例4层规格。 可选，不选时使用源负载均衡器的4层规格。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -285,7 +285,7 @@ class TargetLoadbalancerParam:
 
     @l4_flavor_id.setter
     def l4_flavor_id(self, l4_flavor_id):
-        """Sets the l4_flavor_id of this TargetLoadbalancerParam.
+        r"""Sets the l4_flavor_id of this TargetLoadbalancerParam.
 
         新实例4层规格。 可选，不选时使用源负载均衡器的4层规格。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -296,7 +296,7 @@ class TargetLoadbalancerParam:
 
     @property
     def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this TargetLoadbalancerParam.
+        r"""Gets the l7_flavor_id of this TargetLoadbalancerParam.
 
         新实例7层规格。 可选，不选时使用源负载均衡器的7层规格。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -307,7 +307,7 @@ class TargetLoadbalancerParam:
 
     @l7_flavor_id.setter
     def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this TargetLoadbalancerParam.
+        r"""Sets the l7_flavor_id of this TargetLoadbalancerParam.
 
         新实例7层规格。 可选，不选时使用源负载均衡器的7层规格。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -318,7 +318,7 @@ class TargetLoadbalancerParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this TargetLoadbalancerParam.
+        r"""Gets the enterprise_project_id of this TargetLoadbalancerParam.
 
         新实例所属企业项目。 可选，不选时使用源负载均衡器的企业项目
 
@@ -329,7 +329,7 @@ class TargetLoadbalancerParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this TargetLoadbalancerParam.
+        r"""Sets the enterprise_project_id of this TargetLoadbalancerParam.
 
         新实例所属企业项目。 可选，不选时使用源负载均衡器的企业项目
 
@@ -340,7 +340,7 @@ class TargetLoadbalancerParam:
 
     @property
     def reuse_pool(self):
-        """Gets the reuse_pool of this TargetLoadbalancerParam.
+        r"""Gets the reuse_pool of this TargetLoadbalancerParam.
 
         新实例是否复用源ELB的后端服务器组和后端服务器标识。 可选，配置为true时需要开启后端服务器组多实例挂载功能。 不选时默认新创建后端服务器组。 enterprise_project_id选项配置使用其他企业项目时，该选项失效。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -351,7 +351,7 @@ class TargetLoadbalancerParam:
 
     @reuse_pool.setter
     def reuse_pool(self, reuse_pool):
-        """Sets the reuse_pool of this TargetLoadbalancerParam.
+        r"""Sets the reuse_pool of this TargetLoadbalancerParam.
 
         新实例是否复用源ELB的后端服务器组和后端服务器标识。 可选，配置为true时需要开启后端服务器组多实例挂载功能。 不选时默认新创建后端服务器组。 enterprise_project_id选项配置使用其他企业项目时，该选项失效。 只在独享型复制场景、共享型复制为独享型场景可配。
 
@@ -362,7 +362,7 @@ class TargetLoadbalancerParam:
 
     @property
     def guaranteed(self):
-        """Gets the guaranteed of this TargetLoadbalancerParam.
+        r"""Gets the guaranteed of this TargetLoadbalancerParam.
 
         新实例类型。 可选配置。 独享型复制场景默认为true，若显式指定，只能配置为true。 共享型复制场景默认为false，若显式指定，配置为false表示新复制共享型实例，配置为true表示新复制独享型实例。
 
@@ -373,7 +373,7 @@ class TargetLoadbalancerParam:
 
     @guaranteed.setter
     def guaranteed(self, guaranteed):
-        """Sets the guaranteed of this TargetLoadbalancerParam.
+        r"""Sets the guaranteed of this TargetLoadbalancerParam.
 
         新实例类型。 可选配置。 独享型复制场景默认为true，若显式指定，只能配置为true。 共享型复制场景默认为false，若显式指定，配置为false表示新复制共享型实例，配置为true表示新复制独享型实例。
 

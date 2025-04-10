@@ -37,7 +37,7 @@ class Attachment:
     }
 
     def __init__(self, attached_at=None, attachment_id=None, device=None, host_name=None, id=None, server_id=None, volume_id=None):
-        """Attachment
+        r"""Attachment
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Attachment:
 
     @property
     def attached_at(self):
-        """Gets the attached_at of this Attachment.
+        r"""Gets the attached_at of this Attachment.
 
         挂载的时间信息。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -89,7 +89,7 @@ class Attachment:
 
     @attached_at.setter
     def attached_at(self, attached_at):
-        """Sets the attached_at of this Attachment.
+        r"""Sets the attached_at of this Attachment.
 
         挂载的时间信息。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -100,7 +100,7 @@ class Attachment:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this Attachment.
+        r"""Gets the attachment_id of this Attachment.
 
         挂载信息对应的ID。
 
@@ -111,7 +111,7 @@ class Attachment:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this Attachment.
+        r"""Sets the attachment_id of this Attachment.
 
         挂载信息对应的ID。
 
@@ -122,7 +122,7 @@ class Attachment:
 
     @property
     def device(self):
-        """Gets the device of this Attachment.
+        r"""Gets the device of this Attachment.
 
         挂载点。
 
@@ -133,7 +133,7 @@ class Attachment:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this Attachment.
+        r"""Sets the device of this Attachment.
 
         挂载点。
 
@@ -144,7 +144,7 @@ class Attachment:
 
     @property
     def host_name(self):
-        """Gets the host_name of this Attachment.
+        r"""Gets the host_name of this Attachment.
 
         云硬盘挂载到的云服务器对应的物理主机的名称。
 
@@ -155,7 +155,7 @@ class Attachment:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this Attachment.
+        r"""Sets the host_name of this Attachment.
 
         云硬盘挂载到的云服务器对应的物理主机的名称。
 
@@ -166,7 +166,7 @@ class Attachment:
 
     @property
     def id(self):
-        """Gets the id of this Attachment.
+        r"""Gets the id of this Attachment.
 
         挂载的资源ID。
 
@@ -177,7 +177,7 @@ class Attachment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Attachment.
+        r"""Sets the id of this Attachment.
 
         挂载的资源ID。
 
@@ -188,7 +188,7 @@ class Attachment:
 
     @property
     def server_id(self):
-        """Gets the server_id of this Attachment.
+        r"""Gets the server_id of this Attachment.
 
         云硬盘挂载到的云服务器的 ID。
 
@@ -199,7 +199,7 @@ class Attachment:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this Attachment.
+        r"""Sets the server_id of this Attachment.
 
         云硬盘挂载到的云服务器的 ID。
 
@@ -210,7 +210,7 @@ class Attachment:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this Attachment.
+        r"""Gets the volume_id of this Attachment.
 
         云硬盘ID。
 
@@ -221,7 +221,7 @@ class Attachment:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this Attachment.
+        r"""Sets the volume_id of this Attachment.
 
         云硬盘ID。
 

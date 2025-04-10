@@ -31,7 +31,7 @@ class DebugCaseRequest:
     }
 
     def __init__(self, test_suite_id=None, task_id=None, case_id=None, body=None):
-        """DebugCaseRequest
+        r"""DebugCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DebugCaseRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this DebugCaseRequest.
+        r"""Gets the test_suite_id of this DebugCaseRequest.
 
         测试工程id
 
@@ -72,7 +72,7 @@ class DebugCaseRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this DebugCaseRequest.
+        r"""Sets the test_suite_id of this DebugCaseRequest.
 
         测试工程id
 
@@ -83,7 +83,7 @@ class DebugCaseRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DebugCaseRequest.
+        r"""Gets the task_id of this DebugCaseRequest.
 
         任务id
 
@@ -94,7 +94,7 @@ class DebugCaseRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DebugCaseRequest.
+        r"""Sets the task_id of this DebugCaseRequest.
 
         任务id
 
@@ -105,7 +105,7 @@ class DebugCaseRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this DebugCaseRequest.
+        r"""Gets the case_id of this DebugCaseRequest.
 
         用例id
 
@@ -116,7 +116,7 @@ class DebugCaseRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this DebugCaseRequest.
+        r"""Sets the case_id of this DebugCaseRequest.
 
         用例id
 
@@ -127,7 +127,7 @@ class DebugCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this DebugCaseRequest.
+        r"""Gets the body of this DebugCaseRequest.
 
         :return: The body of this DebugCaseRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`
@@ -136,7 +136,7 @@ class DebugCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DebugCaseRequest.
+        r"""Sets the body of this DebugCaseRequest.
 
         :param body: The body of this DebugCaseRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`

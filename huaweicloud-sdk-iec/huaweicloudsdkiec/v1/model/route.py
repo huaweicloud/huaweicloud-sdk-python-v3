@@ -31,7 +31,7 @@ class Route:
     }
 
     def __init__(self, type=None, destination=None, nexthop=None, description=None):
-        """Route
+        r"""Route
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Route:
 
     @property
     def type(self):
-        """Gets the type of this Route.
+        r"""Gets the type of this Route.
 
         路由的类型  取值范围：     1）ecs：弹性云服务器     2）vip：虚拟IP     3）local：系统路由，不可修改和删除
 
@@ -75,7 +75,7 @@ class Route:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Route.
+        r"""Sets the type of this Route.
 
         路由的类型  取值范围：     1）ecs：弹性云服务器     2）vip：虚拟IP     3）local：系统路由，不可修改和删除
 
@@ -86,7 +86,7 @@ class Route:
 
     @property
     def destination(self):
-        """Gets the destination of this Route.
+        r"""Gets the destination of this Route.
 
         路由的目的网段  约束：合法的CIDR格式
 
@@ -97,7 +97,7 @@ class Route:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this Route.
+        r"""Sets the destination of this Route.
 
         路由的目的网段  约束：合法的CIDR格式
 
@@ -108,7 +108,7 @@ class Route:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this Route.
+        r"""Gets the nexthop of this Route.
 
         路由下一跳对象的ID  取值范围：     1）当type为ecs时，传入ecs实例ID；     2）当type为vip时，取值为vip对应的IP地址；
 
@@ -119,7 +119,7 @@ class Route:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this Route.
+        r"""Sets the nexthop of this Route.
 
         路由下一跳对象的ID  取值范围：     1）当type为ecs时，传入ecs实例ID；     2）当type为vip时，取值为vip对应的IP地址；
 
@@ -130,7 +130,7 @@ class Route:
 
     @property
     def description(self):
-        """Gets the description of this Route.
+        r"""Gets the description of this Route.
 
         路由的描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -141,7 +141,7 @@ class Route:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Route.
+        r"""Sets the description of this Route.
 
         路由的描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 

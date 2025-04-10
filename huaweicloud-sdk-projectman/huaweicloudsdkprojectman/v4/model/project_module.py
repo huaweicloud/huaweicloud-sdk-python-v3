@@ -35,7 +35,7 @@ class ProjectModule:
     }
 
     def __init__(self, module_id=None, module_name=None, owner=None, deepth=None, is_parent=None, children=None):
-        """ProjectModule
+        r"""ProjectModule
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProjectModule:
 
     @property
     def module_id(self):
-        """Gets the module_id of this ProjectModule.
+        r"""Gets the module_id of this ProjectModule.
 
         模块id
 
@@ -89,7 +89,7 @@ class ProjectModule:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this ProjectModule.
+        r"""Sets the module_id of this ProjectModule.
 
         模块id
 
@@ -100,7 +100,7 @@ class ProjectModule:
 
     @property
     def module_name(self):
-        """Gets the module_name of this ProjectModule.
+        r"""Gets the module_name of this ProjectModule.
 
         模块名称
 
@@ -111,7 +111,7 @@ class ProjectModule:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this ProjectModule.
+        r"""Sets the module_name of this ProjectModule.
 
         模块名称
 
@@ -122,7 +122,7 @@ class ProjectModule:
 
     @property
     def owner(self):
-        """Gets the owner of this ProjectModule.
+        r"""Gets the owner of this ProjectModule.
 
         :return: The owner of this ProjectModule.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`
@@ -131,7 +131,7 @@ class ProjectModule:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ProjectModule.
+        r"""Sets the owner of this ProjectModule.
 
         :param owner: The owner of this ProjectModule.
         :type owner: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`
@@ -140,7 +140,7 @@ class ProjectModule:
 
     @property
     def deepth(self):
-        """Gets the deepth of this ProjectModule.
+        r"""Gets the deepth of this ProjectModule.
 
         模块层级
 
@@ -151,7 +151,7 @@ class ProjectModule:
 
     @deepth.setter
     def deepth(self, deepth):
-        """Sets the deepth of this ProjectModule.
+        r"""Sets the deepth of this ProjectModule.
 
         模块层级
 
@@ -162,7 +162,7 @@ class ProjectModule:
 
     @property
     def is_parent(self):
-        """Gets the is_parent of this ProjectModule.
+        r"""Gets the is_parent of this ProjectModule.
 
         是否是父级，true 父模块， false 非父模块
 
@@ -173,7 +173,7 @@ class ProjectModule:
 
     @is_parent.setter
     def is_parent(self, is_parent):
-        """Sets the is_parent of this ProjectModule.
+        r"""Sets the is_parent of this ProjectModule.
 
         是否是父级，true 父模块， false 非父模块
 
@@ -184,7 +184,7 @@ class ProjectModule:
 
     @property
     def children(self):
-        """Gets the children of this ProjectModule.
+        r"""Gets the children of this ProjectModule.
 
         子模块信息
 
@@ -195,7 +195,7 @@ class ProjectModule:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ProjectModule.
+        r"""Sets the children of this ProjectModule.
 
         子模块信息
 

@@ -31,7 +31,7 @@ class ListMetricItemsRequest:
     }
 
     def __init__(self, type=None, limit=None, start=None, body=None):
-        """ListMetricItemsRequest
+        r"""ListMetricItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListMetricItemsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListMetricItemsRequest.
+        r"""Gets the type of this ListMetricItemsRequest.
 
         指标查询方式。
 
@@ -75,7 +75,7 @@ class ListMetricItemsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListMetricItemsRequest.
+        r"""Sets the type of this ListMetricItemsRequest.
 
         指标查询方式。
 
@@ -86,7 +86,7 @@ class ListMetricItemsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetricItemsRequest.
+        r"""Gets the limit of this ListMetricItemsRequest.
 
         用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
@@ -97,7 +97,7 @@ class ListMetricItemsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetricItemsRequest.
+        r"""Sets the limit of this ListMetricItemsRequest.
 
         用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
@@ -108,7 +108,7 @@ class ListMetricItemsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListMetricItemsRequest.
+        r"""Gets the start of this ListMetricItemsRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -119,7 +119,7 @@ class ListMetricItemsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListMetricItemsRequest.
+        r"""Sets the start of this ListMetricItemsRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -130,7 +130,7 @@ class ListMetricItemsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListMetricItemsRequest.
+        r"""Gets the body of this ListMetricItemsRequest.
 
         :return: The body of this ListMetricItemsRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.MetricAPIQueryItemParam`
@@ -139,7 +139,7 @@ class ListMetricItemsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMetricItemsRequest.
+        r"""Sets the body of this ListMetricItemsRequest.
 
         :param body: The body of this ListMetricItemsRequest.
         :type body: :class:`huaweicloudsdkaom.v2.MetricAPIQueryItemParam`

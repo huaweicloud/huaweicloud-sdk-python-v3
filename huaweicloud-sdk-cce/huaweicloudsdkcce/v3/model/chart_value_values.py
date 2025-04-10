@@ -25,7 +25,7 @@ class ChartValueValues:
     }
 
     def __init__(self, basic=None):
-        """ChartValueValues
+        r"""ChartValueValues
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChartValueValues:
 
     @property
     def basic(self):
-        """Gets the basic of this ChartValueValues.
+        r"""Gets the basic of this ChartValueValues.
 
         :return: The basic of this ChartValueValues.
         :rtype: object
@@ -52,7 +52,7 @@ class ChartValueValues:
 
     @basic.setter
     def basic(self, basic):
-        """Sets the basic of this ChartValueValues.
+        r"""Sets the basic of this ChartValueValues.
 
         :param basic: The basic of this ChartValueValues.
         :type basic: object

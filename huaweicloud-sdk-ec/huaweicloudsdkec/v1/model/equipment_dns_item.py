@@ -27,7 +27,7 @@ class EquipmentDnsItem:
     }
 
     def __init__(self, master_dns=None, slave_dns=None):
-        """EquipmentDnsItem
+        r"""EquipmentDnsItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EquipmentDnsItem:
 
     @property
     def master_dns(self):
-        """Gets the master_dns of this EquipmentDnsItem.
+        r"""Gets the master_dns of this EquipmentDnsItem.
 
         主DNS
 
@@ -61,7 +61,7 @@ class EquipmentDnsItem:
 
     @master_dns.setter
     def master_dns(self, master_dns):
-        """Sets the master_dns of this EquipmentDnsItem.
+        r"""Sets the master_dns of this EquipmentDnsItem.
 
         主DNS
 
@@ -72,7 +72,7 @@ class EquipmentDnsItem:
 
     @property
     def slave_dns(self):
-        """Gets the slave_dns of this EquipmentDnsItem.
+        r"""Gets the slave_dns of this EquipmentDnsItem.
 
         备DNS
 
@@ -83,7 +83,7 @@ class EquipmentDnsItem:
 
     @slave_dns.setter
     def slave_dns(self, slave_dns):
-        """Sets the slave_dns of this EquipmentDnsItem.
+        r"""Sets the slave_dns of this EquipmentDnsItem.
 
         备DNS
 

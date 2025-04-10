@@ -37,7 +37,7 @@ class CreateTranscodeTemplate:
     }
 
     def __init__(self, name=None, is_default=None, is_auto_encrypt=None, quality_info_list=None, common=None, watermark_template_ids=None, description=None):
-        """CreateTranscodeTemplate
+        r"""CreateTranscodeTemplate
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateTranscodeTemplate:
 
     @property
     def name(self):
-        """Gets the name of this CreateTranscodeTemplate.
+        r"""Gets the name of this CreateTranscodeTemplate.
 
         模板组名称<br/> 
 
@@ -93,7 +93,7 @@ class CreateTranscodeTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTranscodeTemplate.
+        r"""Sets the name of this CreateTranscodeTemplate.
 
         模板组名称<br/> 
 
@@ -104,7 +104,7 @@ class CreateTranscodeTemplate:
 
     @property
     def is_default(self):
-        """Gets the is_default of this CreateTranscodeTemplate.
+        r"""Gets the is_default of this CreateTranscodeTemplate.
 
         是否设置成默认转码模板<br/> 
 
@@ -115,7 +115,7 @@ class CreateTranscodeTemplate:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this CreateTranscodeTemplate.
+        r"""Sets the is_default of this CreateTranscodeTemplate.
 
         是否设置成默认转码模板<br/> 
 
@@ -126,7 +126,7 @@ class CreateTranscodeTemplate:
 
     @property
     def is_auto_encrypt(self):
-        """Gets the is_auto_encrypt of this CreateTranscodeTemplate.
+        r"""Gets the is_auto_encrypt of this CreateTranscodeTemplate.
 
         是否开启加密
 
@@ -137,7 +137,7 @@ class CreateTranscodeTemplate:
 
     @is_auto_encrypt.setter
     def is_auto_encrypt(self, is_auto_encrypt):
-        """Sets the is_auto_encrypt of this CreateTranscodeTemplate.
+        r"""Sets the is_auto_encrypt of this CreateTranscodeTemplate.
 
         是否开启加密
 
@@ -148,7 +148,7 @@ class CreateTranscodeTemplate:
 
     @property
     def quality_info_list(self):
-        """Gets the quality_info_list of this CreateTranscodeTemplate.
+        r"""Gets the quality_info_list of this CreateTranscodeTemplate.
 
         画质配置信息列表<br/> 
 
@@ -159,7 +159,7 @@ class CreateTranscodeTemplate:
 
     @quality_info_list.setter
     def quality_info_list(self, quality_info_list):
-        """Sets the quality_info_list of this CreateTranscodeTemplate.
+        r"""Sets the quality_info_list of this CreateTranscodeTemplate.
 
         画质配置信息列表<br/> 
 
@@ -170,7 +170,7 @@ class CreateTranscodeTemplate:
 
     @property
     def common(self):
-        """Gets the common of this CreateTranscodeTemplate.
+        r"""Gets the common of this CreateTranscodeTemplate.
 
         :return: The common of this CreateTranscodeTemplate.
         :rtype: :class:`huaweicloudsdkvod.v1.CommonInfo`
@@ -179,7 +179,7 @@ class CreateTranscodeTemplate:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this CreateTranscodeTemplate.
+        r"""Sets the common of this CreateTranscodeTemplate.
 
         :param common: The common of this CreateTranscodeTemplate.
         :type common: :class:`huaweicloudsdkvod.v1.CommonInfo`
@@ -188,7 +188,7 @@ class CreateTranscodeTemplate:
 
     @property
     def watermark_template_ids(self):
-        """Gets the watermark_template_ids of this CreateTranscodeTemplate.
+        r"""Gets the watermark_template_ids of this CreateTranscodeTemplate.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -199,7 +199,7 @@ class CreateTranscodeTemplate:
 
     @watermark_template_ids.setter
     def watermark_template_ids(self, watermark_template_ids):
-        """Sets the watermark_template_ids of this CreateTranscodeTemplate.
+        r"""Sets the watermark_template_ids of this CreateTranscodeTemplate.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -210,7 +210,7 @@ class CreateTranscodeTemplate:
 
     @property
     def description(self):
-        """Gets the description of this CreateTranscodeTemplate.
+        r"""Gets the description of this CreateTranscodeTemplate.
 
         模板介绍<br/> 
 
@@ -221,7 +221,7 @@ class CreateTranscodeTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTranscodeTemplate.
+        r"""Sets the description of this CreateTranscodeTemplate.
 
         模板介绍<br/> 
 

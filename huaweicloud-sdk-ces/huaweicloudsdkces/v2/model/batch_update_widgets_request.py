@@ -25,7 +25,7 @@ class BatchUpdateWidgetsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateWidgetsRequest
+        r"""BatchUpdateWidgetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateWidgetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateWidgetsRequest.
+        r"""Gets the body of this BatchUpdateWidgetsRequest.
 
         待修改的监控视图列表
 
@@ -54,7 +54,7 @@ class BatchUpdateWidgetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateWidgetsRequest.
+        r"""Sets the body of this BatchUpdateWidgetsRequest.
 
         待修改的监控视图列表
 

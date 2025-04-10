@@ -43,7 +43,7 @@ class SourcesInfo:
     }
 
     def __init__(self, url=None, bitrate=None, width=None, height=None, enable_snapshot=None, bitrate_for3u8=None, passphrase=None, backup_urls=None, stream_id=None, latency=None):
-        """SourcesInfo
+        r"""SourcesInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SourcesInfo:
 
     @property
     def url(self):
-        """Gets the url of this SourcesInfo.
+        r"""Gets the url of this SourcesInfo.
 
         频道源流URL，用于外部拉流
 
@@ -117,7 +117,7 @@ class SourcesInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SourcesInfo.
+        r"""Sets the url of this SourcesInfo.
 
         频道源流URL，用于外部拉流
 
@@ -128,7 +128,7 @@ class SourcesInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this SourcesInfo.
+        r"""Gets the bitrate of this SourcesInfo.
 
         码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
@@ -139,7 +139,7 @@ class SourcesInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this SourcesInfo.
+        r"""Sets the bitrate of this SourcesInfo.
 
         码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
@@ -150,7 +150,7 @@ class SourcesInfo:
 
     @property
     def width(self):
-        """Gets the width of this SourcesInfo.
+        r"""Gets the width of this SourcesInfo.
 
         分辨率对应宽的值，非必填项  取值范围：0 - 4096（4K）
 
@@ -161,7 +161,7 @@ class SourcesInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this SourcesInfo.
+        r"""Sets the width of this SourcesInfo.
 
         分辨率对应宽的值，非必填项  取值范围：0 - 4096（4K）
 
@@ -172,7 +172,7 @@ class SourcesInfo:
 
     @property
     def height(self):
-        """Gets the height of this SourcesInfo.
+        r"""Gets the height of this SourcesInfo.
 
         分辨率对应高的值，非必填项  取值范围：0 - 2160（4K）
 
@@ -183,7 +183,7 @@ class SourcesInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this SourcesInfo.
+        r"""Sets the height of this SourcesInfo.
 
         分辨率对应高的值，非必填项  取值范围：0 - 2160（4K）
 
@@ -194,7 +194,7 @@ class SourcesInfo:
 
     @property
     def enable_snapshot(self):
-        """Gets the enable_snapshot of this SourcesInfo.
+        r"""Gets the enable_snapshot of this SourcesInfo.
 
         描述是否使用该流做截图
 
@@ -205,7 +205,7 @@ class SourcesInfo:
 
     @enable_snapshot.setter
     def enable_snapshot(self, enable_snapshot):
-        """Sets the enable_snapshot of this SourcesInfo.
+        r"""Sets the enable_snapshot of this SourcesInfo.
 
         描述是否使用该流做截图
 
@@ -216,7 +216,7 @@ class SourcesInfo:
 
     @property
     def bitrate_for3u8(self):
-        """Gets the bitrate_for3u8 of this SourcesInfo.
+        r"""Gets the bitrate_for3u8 of this SourcesInfo.
 
         是否使用bitrate来固定码率。默认值：false
 
@@ -227,7 +227,7 @@ class SourcesInfo:
 
     @bitrate_for3u8.setter
     def bitrate_for3u8(self, bitrate_for3u8):
-        """Sets the bitrate_for3u8 of this SourcesInfo.
+        r"""Sets the bitrate_for3u8 of this SourcesInfo.
 
         是否使用bitrate来固定码率。默认值：false
 
@@ -238,7 +238,7 @@ class SourcesInfo:
 
     @property
     def passphrase(self):
-        """Gets the passphrase of this SourcesInfo.
+        r"""Gets the passphrase of this SourcesInfo.
 
         协议为SRT_PUSH时的加密信息
 
@@ -249,7 +249,7 @@ class SourcesInfo:
 
     @passphrase.setter
     def passphrase(self, passphrase):
-        """Sets the passphrase of this SourcesInfo.
+        r"""Sets the passphrase of this SourcesInfo.
 
         协议为SRT_PUSH时的加密信息
 
@@ -260,7 +260,7 @@ class SourcesInfo:
 
     @property
     def backup_urls(self):
-        """Gets the backup_urls of this SourcesInfo.
+        r"""Gets the backup_urls of this SourcesInfo.
 
         备入流地址列表
 
@@ -271,7 +271,7 @@ class SourcesInfo:
 
     @backup_urls.setter
     def backup_urls(self, backup_urls):
-        """Sets the backup_urls of this SourcesInfo.
+        r"""Sets the backup_urls of this SourcesInfo.
 
         备入流地址列表
 
@@ -282,7 +282,7 @@ class SourcesInfo:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this SourcesInfo.
+        r"""Gets the stream_id of this SourcesInfo.
 
         频道为SRT_PULL类型时，拉流地址的Stream ID。
 
@@ -293,7 +293,7 @@ class SourcesInfo:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this SourcesInfo.
+        r"""Sets the stream_id of this SourcesInfo.
 
         频道为SRT_PULL类型时，拉流地址的Stream ID。
 
@@ -304,7 +304,7 @@ class SourcesInfo:
 
     @property
     def latency(self):
-        """Gets the latency of this SourcesInfo.
+        r"""Gets the latency of this SourcesInfo.
 
         频道为SRT_PULL类型时的拉流时延。
 
@@ -315,7 +315,7 @@ class SourcesInfo:
 
     @latency.setter
     def latency(self, latency):
-        """Sets the latency of this SourcesInfo.
+        r"""Sets the latency of this SourcesInfo.
 
         频道为SRT_PULL类型时的拉流时延。
 

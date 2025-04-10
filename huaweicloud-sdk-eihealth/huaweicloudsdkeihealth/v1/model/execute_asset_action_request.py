@@ -29,7 +29,7 @@ class ExecuteAssetActionRequest:
     }
 
     def __init__(self, asset_id=None, version=None, body=None):
-        """ExecuteAssetActionRequest
+        r"""ExecuteAssetActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteAssetActionRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ExecuteAssetActionRequest.
+        r"""Gets the asset_id of this ExecuteAssetActionRequest.
 
         资产id
 
@@ -66,7 +66,7 @@ class ExecuteAssetActionRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ExecuteAssetActionRequest.
+        r"""Sets the asset_id of this ExecuteAssetActionRequest.
 
         资产id
 
@@ -77,7 +77,7 @@ class ExecuteAssetActionRequest:
 
     @property
     def version(self):
-        """Gets the version of this ExecuteAssetActionRequest.
+        r"""Gets the version of this ExecuteAssetActionRequest.
 
         version
 
@@ -88,7 +88,7 @@ class ExecuteAssetActionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ExecuteAssetActionRequest.
+        r"""Sets the version of this ExecuteAssetActionRequest.
 
         version
 
@@ -99,7 +99,7 @@ class ExecuteAssetActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteAssetActionRequest.
+        r"""Gets the body of this ExecuteAssetActionRequest.
 
         :return: The body of this ExecuteAssetActionRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ManageAssetReq`
@@ -108,7 +108,7 @@ class ExecuteAssetActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteAssetActionRequest.
+        r"""Sets the body of this ExecuteAssetActionRequest.
 
         :param body: The body of this ExecuteAssetActionRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ManageAssetReq`

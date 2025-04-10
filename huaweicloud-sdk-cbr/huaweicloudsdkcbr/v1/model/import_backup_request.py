@@ -25,7 +25,7 @@ class ImportBackupRequest:
     }
 
     def __init__(self, body=None):
-        """ImportBackupRequest
+        r"""ImportBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportBackupRequest.
+        r"""Gets the body of this ImportBackupRequest.
 
         :return: The body of this ImportBackupRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupSyncReq`
@@ -52,7 +52,7 @@ class ImportBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportBackupRequest.
+        r"""Sets the body of this ImportBackupRequest.
 
         :param body: The body of this ImportBackupRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BackupSyncReq`

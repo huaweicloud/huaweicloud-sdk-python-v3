@@ -29,7 +29,7 @@ class RankETLFilter:
     }
 
     def __init__(self, filter_type=None, time_type=None, is_monday_first=None):
-        """RankETLFilter
+        r"""RankETLFilter
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RankETLFilter:
 
     @property
     def filter_type(self):
-        """Gets the filter_type of this RankETLFilter.
+        r"""Gets the filter_type of this RankETLFilter.
 
         行为去重方式： - abs_weight，权重绝对值 - date，日期
 
@@ -66,7 +66,7 @@ class RankETLFilter:
 
     @filter_type.setter
     def filter_type(self, filter_type):
-        """Sets the filter_type of this RankETLFilter.
+        r"""Sets the filter_type of this RankETLFilter.
 
         行为去重方式： - abs_weight，权重绝对值 - date，日期
 
@@ -77,7 +77,7 @@ class RankETLFilter:
 
     @property
     def time_type(self):
-        """Gets the time_type of this RankETLFilter.
+        r"""Gets the time_type of this RankETLFilter.
 
         时间类型： - day，天 - week，周 - month，月 
 
@@ -88,7 +88,7 @@ class RankETLFilter:
 
     @time_type.setter
     def time_type(self, time_type):
-        """Sets the time_type of this RankETLFilter.
+        r"""Sets the time_type of this RankETLFilter.
 
         时间类型： - day，天 - week，周 - month，月 
 
@@ -99,7 +99,7 @@ class RankETLFilter:
 
     @property
     def is_monday_first(self):
-        """Gets the is_monday_first of this RankETLFilter.
+        r"""Gets the is_monday_first of this RankETLFilter.
 
         周一是否是第一天。
 
@@ -110,7 +110,7 @@ class RankETLFilter:
 
     @is_monday_first.setter
     def is_monday_first(self, is_monday_first):
-        """Sets the is_monday_first of this RankETLFilter.
+        r"""Sets the is_monday_first of this RankETLFilter.
 
         周一是否是第一天。
 

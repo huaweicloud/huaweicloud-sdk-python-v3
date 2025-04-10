@@ -27,7 +27,7 @@ class ListBizMetricsResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListBizMetricsResultDataValue
+        r"""ListBizMetricsResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListBizMetricsResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListBizMetricsResultDataValue.
+        r"""Gets the total of this ListBizMetricsResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListBizMetricsResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBizMetricsResultDataValue.
+        r"""Sets the total of this ListBizMetricsResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListBizMetricsResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListBizMetricsResultDataValue.
+        r"""Gets the records of this ListBizMetricsResultDataValue.
 
         BizMetricVO信息。
 
@@ -83,7 +83,7 @@ class ListBizMetricsResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListBizMetricsResultDataValue.
+        r"""Sets the records of this ListBizMetricsResultDataValue.
 
         BizMetricVO信息。
 

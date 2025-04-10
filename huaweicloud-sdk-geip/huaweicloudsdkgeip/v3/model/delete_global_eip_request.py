@@ -25,7 +25,7 @@ class DeleteGlobalEipRequest:
     }
 
     def __init__(self, global_eip_id=None):
-        """DeleteGlobalEipRequest
+        r"""DeleteGlobalEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteGlobalEipRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this DeleteGlobalEipRequest.
+        r"""Gets the global_eip_id of this DeleteGlobalEipRequest.
 
         :return: The global_eip_id of this DeleteGlobalEipRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class DeleteGlobalEipRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this DeleteGlobalEipRequest.
+        r"""Sets the global_eip_id of this DeleteGlobalEipRequest.
 
         :param global_eip_id: The global_eip_id of this DeleteGlobalEipRequest.
         :type global_eip_id: str

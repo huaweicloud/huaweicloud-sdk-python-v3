@@ -25,7 +25,7 @@ class AcceptServiceContractRequest:
     }
 
     def __init__(self, type=None):
-        """AcceptServiceContractRequest
+        r"""AcceptServiceContractRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AcceptServiceContractRequest:
 
     @property
     def type(self):
-        """Gets the type of this AcceptServiceContractRequest.
+        r"""Gets the type of this AcceptServiceContractRequest.
 
         服务协议名称 使用公共Action的免责声明协议: use_public_action_privacy_statement 注册公共Action的免责声明协议: register_public_action_privacy_statement
 
@@ -53,7 +53,7 @@ class AcceptServiceContractRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AcceptServiceContractRequest.
+        r"""Sets the type of this AcceptServiceContractRequest.
 
         服务协议名称 使用公共Action的免责声明协议: use_public_action_privacy_statement 注册公共Action的免责声明协议: register_public_action_privacy_statement
 

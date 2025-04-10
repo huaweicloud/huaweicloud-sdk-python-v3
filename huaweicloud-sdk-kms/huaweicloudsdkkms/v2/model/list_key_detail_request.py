@@ -25,7 +25,7 @@ class ListKeyDetailRequest:
     }
 
     def __init__(self, body=None):
-        """ListKeyDetailRequest
+        r"""ListKeyDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListKeyDetailRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListKeyDetailRequest.
+        r"""Gets the body of this ListKeyDetailRequest.
 
         :return: The body of this ListKeyDetailRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class ListKeyDetailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListKeyDetailRequest.
+        r"""Sets the body of this ListKeyDetailRequest.
 
         :param body: The body of this ListKeyDetailRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

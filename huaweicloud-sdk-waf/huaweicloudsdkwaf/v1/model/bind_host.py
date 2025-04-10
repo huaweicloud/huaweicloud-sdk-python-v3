@@ -31,7 +31,7 @@ class BindHost:
     }
 
     def __init__(self, id=None, hostname=None, waf_type=None, mode=None):
-        """BindHost
+        r"""BindHost
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BindHost:
 
     @property
     def id(self):
-        """Gets the id of this BindHost.
+        r"""Gets the id of this BindHost.
 
         域名ID
 
@@ -75,7 +75,7 @@ class BindHost:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BindHost.
+        r"""Sets the id of this BindHost.
 
         域名ID
 
@@ -86,7 +86,7 @@ class BindHost:
 
     @property
     def hostname(self):
-        """Gets the hostname of this BindHost.
+        r"""Gets the hostname of this BindHost.
 
         域名
 
@@ -97,7 +97,7 @@ class BindHost:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this BindHost.
+        r"""Sets the hostname of this BindHost.
 
         域名
 
@@ -108,7 +108,7 @@ class BindHost:
 
     @property
     def waf_type(self):
-        """Gets the waf_type of this BindHost.
+        r"""Gets the waf_type of this BindHost.
 
         域名对应模式：cloud（云模式）/premium（独享模式）
 
@@ -119,7 +119,7 @@ class BindHost:
 
     @waf_type.setter
     def waf_type(self, waf_type):
-        """Sets the waf_type of this BindHost.
+        r"""Sets the waf_type of this BindHost.
 
         域名对应模式：cloud（云模式）/premium（独享模式）
 
@@ -130,7 +130,7 @@ class BindHost:
 
     @property
     def mode(self):
-        """Gets the mode of this BindHost.
+        r"""Gets the mode of this BindHost.
 
         仅独享模式涉及特殊域名模式
 
@@ -141,7 +141,7 @@ class BindHost:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this BindHost.
+        r"""Sets the mode of this BindHost.
 
         仅独享模式涉及特殊域名模式
 

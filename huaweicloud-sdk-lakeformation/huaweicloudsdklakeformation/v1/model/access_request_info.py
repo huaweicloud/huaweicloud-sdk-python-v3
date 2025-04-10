@@ -27,7 +27,7 @@ class AccessRequestInfo:
     }
 
     def __init__(self, vpcep_id=None, domain=None):
-        """AccessRequestInfo
+        r"""AccessRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AccessRequestInfo:
 
     @property
     def vpcep_id(self):
-        """Gets the vpcep_id of this AccessRequestInfo.
+        r"""Gets the vpcep_id of this AccessRequestInfo.
 
         服务创建的id
 
@@ -59,7 +59,7 @@ class AccessRequestInfo:
 
     @vpcep_id.setter
     def vpcep_id(self, vpcep_id):
-        """Sets the vpcep_id of this AccessRequestInfo.
+        r"""Sets the vpcep_id of this AccessRequestInfo.
 
         服务创建的id
 
@@ -70,7 +70,7 @@ class AccessRequestInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this AccessRequestInfo.
+        r"""Gets the domain of this AccessRequestInfo.
 
         分组独立域名
 
@@ -81,7 +81,7 @@ class AccessRequestInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AccessRequestInfo.
+        r"""Sets the domain of this AccessRequestInfo.
 
         分组独立域名
 

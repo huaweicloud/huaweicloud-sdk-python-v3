@@ -27,7 +27,7 @@ class UpdateDomainKeyChainRequest:
     }
 
     def __init__(self, domain=None, body=None):
-        """UpdateDomainKeyChainRequest
+        r"""UpdateDomainKeyChainRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDomainKeyChainRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this UpdateDomainKeyChainRequest.
+        r"""Gets the domain of this UpdateDomainKeyChainRequest.
 
         直播域名，包括推流域名和播放域名
 
@@ -60,7 +60,7 @@ class UpdateDomainKeyChainRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UpdateDomainKeyChainRequest.
+        r"""Sets the domain of this UpdateDomainKeyChainRequest.
 
         直播域名，包括推流域名和播放域名
 
@@ -71,7 +71,7 @@ class UpdateDomainKeyChainRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainKeyChainRequest.
+        r"""Gets the body of this UpdateDomainKeyChainRequest.
 
         :return: The body of this UpdateDomainKeyChainRequest.
         :rtype: :class:`huaweicloudsdklive.v1.KeyChainInfo`
@@ -80,7 +80,7 @@ class UpdateDomainKeyChainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainKeyChainRequest.
+        r"""Sets the body of this UpdateDomainKeyChainRequest.
 
         :param body: The body of this UpdateDomainKeyChainRequest.
         :type body: :class:`huaweicloudsdklive.v1.KeyChainInfo`

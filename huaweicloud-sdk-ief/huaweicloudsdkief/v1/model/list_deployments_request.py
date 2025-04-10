@@ -37,7 +37,7 @@ class ListDeploymentsRequest:
     }
 
     def __init__(self, ief_instance_id=None, limit=None, offset=None, sort=None, name=None, node_id=None, group_id=None):
-        """ListDeploymentsRequest
+        r"""ListDeploymentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListDeploymentsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListDeploymentsRequest.
+        r"""Gets the ief_instance_id of this ListDeploymentsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -96,7 +96,7 @@ class ListDeploymentsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListDeploymentsRequest.
+        r"""Sets the ief_instance_id of this ListDeploymentsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -107,7 +107,7 @@ class ListDeploymentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDeploymentsRequest.
+        r"""Gets the limit of this ListDeploymentsRequest.
 
         每页显示的条目数量，最大100，默认值10
 
@@ -118,7 +118,7 @@ class ListDeploymentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDeploymentsRequest.
+        r"""Sets the limit of this ListDeploymentsRequest.
 
         每页显示的条目数量，最大100，默认值10
 
@@ -129,7 +129,7 @@ class ListDeploymentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDeploymentsRequest.
+        r"""Gets the offset of this ListDeploymentsRequest.
 
         查询的起始位置，默认值0
 
@@ -140,7 +140,7 @@ class ListDeploymentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDeploymentsRequest.
+        r"""Sets the offset of this ListDeploymentsRequest.
 
         查询的起始位置，默认值0
 
@@ -151,7 +151,7 @@ class ListDeploymentsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListDeploymentsRequest.
+        r"""Gets the sort of this ListDeploymentsRequest.
 
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
@@ -162,7 +162,7 @@ class ListDeploymentsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListDeploymentsRequest.
+        r"""Sets the sort of this ListDeploymentsRequest.
 
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
@@ -173,7 +173,7 @@ class ListDeploymentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDeploymentsRequest.
+        r"""Gets the name of this ListDeploymentsRequest.
 
         deployment名称（支持模糊匹配）
 
@@ -184,7 +184,7 @@ class ListDeploymentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDeploymentsRequest.
+        r"""Sets the name of this ListDeploymentsRequest.
 
         deployment名称（支持模糊匹配）
 
@@ -195,7 +195,7 @@ class ListDeploymentsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListDeploymentsRequest.
+        r"""Gets the node_id of this ListDeploymentsRequest.
 
         节点ID，查询部署在该节点下的应用列表，和group_id不可同时请求
 
@@ -206,7 +206,7 @@ class ListDeploymentsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListDeploymentsRequest.
+        r"""Sets the node_id of this ListDeploymentsRequest.
 
         节点ID，查询部署在该节点下的应用列表，和group_id不可同时请求
 
@@ -217,7 +217,7 @@ class ListDeploymentsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListDeploymentsRequest.
+        r"""Gets the group_id of this ListDeploymentsRequest.
 
         节点组ID，查询部署在该节点组的应用列表，和node_id不可同时请求
 
@@ -228,7 +228,7 @@ class ListDeploymentsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListDeploymentsRequest.
+        r"""Sets the group_id of this ListDeploymentsRequest.
 
         节点组ID，查询部署在该节点组的应用列表，和node_id不可同时请求
 

@@ -41,7 +41,7 @@ class QueryDesktopByTagReq:
     }
 
     def __init__(self, offset=None, limit=None, action=None, without_any_tag=None, matches=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None):
-        """QueryDesktopByTagReq
+        r"""QueryDesktopByTagReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryDesktopByTagReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryDesktopByTagReq.
+        r"""Gets the offset of this QueryDesktopByTagReq.
 
         默认为0
 
@@ -110,7 +110,7 @@ class QueryDesktopByTagReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryDesktopByTagReq.
+        r"""Sets the offset of this QueryDesktopByTagReq.
 
         默认为0
 
@@ -121,7 +121,7 @@ class QueryDesktopByTagReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryDesktopByTagReq.
+        r"""Gets the limit of this QueryDesktopByTagReq.
 
         默认为1000
 
@@ -132,7 +132,7 @@ class QueryDesktopByTagReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryDesktopByTagReq.
+        r"""Sets the limit of this QueryDesktopByTagReq.
 
         默认为1000
 
@@ -143,7 +143,7 @@ class QueryDesktopByTagReq:
 
     @property
     def action(self):
-        """Gets the action of this QueryDesktopByTagReq.
+        r"""Gets the action of this QueryDesktopByTagReq.
 
         如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
 
@@ -154,7 +154,7 @@ class QueryDesktopByTagReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this QueryDesktopByTagReq.
+        r"""Sets the action of this QueryDesktopByTagReq.
 
         如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
 
@@ -165,7 +165,7 @@ class QueryDesktopByTagReq:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this QueryDesktopByTagReq.
+        r"""Gets the without_any_tag of this QueryDesktopByTagReq.
 
         包含任意一个标签,该字段为true时查询所有不带标签的资源
 
@@ -176,7 +176,7 @@ class QueryDesktopByTagReq:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this QueryDesktopByTagReq.
+        r"""Sets the without_any_tag of this QueryDesktopByTagReq.
 
         包含任意一个标签,该字段为true时查询所有不带标签的资源
 
@@ -187,7 +187,7 @@ class QueryDesktopByTagReq:
 
     @property
     def matches(self):
-        """Gets the matches of this QueryDesktopByTagReq.
+        r"""Gets the matches of this QueryDesktopByTagReq.
 
         match对象
 
@@ -198,7 +198,7 @@ class QueryDesktopByTagReq:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this QueryDesktopByTagReq.
+        r"""Sets the matches of this QueryDesktopByTagReq.
 
         match对象
 
@@ -209,7 +209,7 @@ class QueryDesktopByTagReq:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryDesktopByTagReq.
+        r"""Gets the tags of this QueryDesktopByTagReq.
 
         包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value
 
@@ -220,7 +220,7 @@ class QueryDesktopByTagReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryDesktopByTagReq.
+        r"""Sets the tags of this QueryDesktopByTagReq.
 
         包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value
 
@@ -231,7 +231,7 @@ class QueryDesktopByTagReq:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this QueryDesktopByTagReq.
+        r"""Gets the tags_any of this QueryDesktopByTagReq.
 
         包含任意标签，若全都不包含，不符合，一个key对应多个value
 
@@ -242,7 +242,7 @@ class QueryDesktopByTagReq:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this QueryDesktopByTagReq.
+        r"""Sets the tags_any of this QueryDesktopByTagReq.
 
         包含任意标签，若全都不包含，不符合，一个key对应多个value
 
@@ -253,7 +253,7 @@ class QueryDesktopByTagReq:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this QueryDesktopByTagReq.
+        r"""Gets the not_tags of this QueryDesktopByTagReq.
 
         不包含标签，只要有一个不包含，就符合了，一个key对应多个value
 
@@ -264,7 +264,7 @@ class QueryDesktopByTagReq:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this QueryDesktopByTagReq.
+        r"""Sets the not_tags of this QueryDesktopByTagReq.
 
         不包含标签，只要有一个不包含，就符合了，一个key对应多个value
 
@@ -275,7 +275,7 @@ class QueryDesktopByTagReq:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this QueryDesktopByTagReq.
+        r"""Gets the not_tags_any of this QueryDesktopByTagReq.
 
         不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value
 
@@ -286,7 +286,7 @@ class QueryDesktopByTagReq:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this QueryDesktopByTagReq.
+        r"""Sets the not_tags_any of this QueryDesktopByTagReq.
 
         不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value
 

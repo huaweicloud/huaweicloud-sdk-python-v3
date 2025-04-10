@@ -35,7 +35,7 @@ class HealthReportTableSpaceStat:
     }
 
     def __init__(self, size_top=None, rows_top=None, size_incr_top=None, rows_incr_top=None, analyze_success=None, error_message=None):
-        """HealthReportTableSpaceStat
+        r"""HealthReportTableSpaceStat
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class HealthReportTableSpaceStat:
 
     @property
     def size_top(self):
-        """Gets the size_top of this HealthReportTableSpaceStat.
+        r"""Gets the size_top of this HealthReportTableSpaceStat.
 
         表大小Top列表。
 
@@ -83,7 +83,7 @@ class HealthReportTableSpaceStat:
 
     @size_top.setter
     def size_top(self, size_top):
-        """Sets the size_top of this HealthReportTableSpaceStat.
+        r"""Sets the size_top of this HealthReportTableSpaceStat.
 
         表大小Top列表。
 
@@ -94,7 +94,7 @@ class HealthReportTableSpaceStat:
 
     @property
     def rows_top(self):
-        """Gets the rows_top of this HealthReportTableSpaceStat.
+        r"""Gets the rows_top of this HealthReportTableSpaceStat.
 
         表行数量Top列表。
 
@@ -105,7 +105,7 @@ class HealthReportTableSpaceStat:
 
     @rows_top.setter
     def rows_top(self, rows_top):
-        """Sets the rows_top of this HealthReportTableSpaceStat.
+        r"""Sets the rows_top of this HealthReportTableSpaceStat.
 
         表行数量Top列表。
 
@@ -116,7 +116,7 @@ class HealthReportTableSpaceStat:
 
     @property
     def size_incr_top(self):
-        """Gets the size_incr_top of this HealthReportTableSpaceStat.
+        r"""Gets the size_incr_top of this HealthReportTableSpaceStat.
 
         表大小增长Top列表。
 
@@ -127,7 +127,7 @@ class HealthReportTableSpaceStat:
 
     @size_incr_top.setter
     def size_incr_top(self, size_incr_top):
-        """Sets the size_incr_top of this HealthReportTableSpaceStat.
+        r"""Sets the size_incr_top of this HealthReportTableSpaceStat.
 
         表大小增长Top列表。
 
@@ -138,7 +138,7 @@ class HealthReportTableSpaceStat:
 
     @property
     def rows_incr_top(self):
-        """Gets the rows_incr_top of this HealthReportTableSpaceStat.
+        r"""Gets the rows_incr_top of this HealthReportTableSpaceStat.
 
         表行数量增长Top列表。
 
@@ -149,7 +149,7 @@ class HealthReportTableSpaceStat:
 
     @rows_incr_top.setter
     def rows_incr_top(self, rows_incr_top):
-        """Sets the rows_incr_top of this HealthReportTableSpaceStat.
+        r"""Sets the rows_incr_top of this HealthReportTableSpaceStat.
 
         表行数量增长Top列表。
 
@@ -160,7 +160,7 @@ class HealthReportTableSpaceStat:
 
     @property
     def analyze_success(self):
-        """Gets the analyze_success of this HealthReportTableSpaceStat.
+        r"""Gets the analyze_success of this HealthReportTableSpaceStat.
 
         统计分析是否成功。
 
@@ -171,7 +171,7 @@ class HealthReportTableSpaceStat:
 
     @analyze_success.setter
     def analyze_success(self, analyze_success):
-        """Sets the analyze_success of this HealthReportTableSpaceStat.
+        r"""Sets the analyze_success of this HealthReportTableSpaceStat.
 
         统计分析是否成功。
 
@@ -182,7 +182,7 @@ class HealthReportTableSpaceStat:
 
     @property
     def error_message(self):
-        """Gets the error_message of this HealthReportTableSpaceStat.
+        r"""Gets the error_message of this HealthReportTableSpaceStat.
 
         错误信息。
 
@@ -193,7 +193,7 @@ class HealthReportTableSpaceStat:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this HealthReportTableSpaceStat.
+        r"""Sets the error_message of this HealthReportTableSpaceStat.
 
         错误信息。
 

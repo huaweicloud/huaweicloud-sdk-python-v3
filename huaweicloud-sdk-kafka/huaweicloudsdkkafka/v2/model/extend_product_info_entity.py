@@ -43,7 +43,7 @@ class ExtendProductInfoEntity:
     }
 
     def __init__(self, type=None, product_id=None, ecs_flavor_id=None, arch_types=None, charging_mode=None, ios=None, support_features=None, properties=None, available_zones=None, unavailable_zones=None):
-        """ExtendProductInfoEntity
+        r"""ExtendProductInfoEntity
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ExtendProductInfoEntity:
 
     @property
     def type(self):
-        """Gets the type of this ExtendProductInfoEntity.
+        r"""Gets the type of this ExtendProductInfoEntity.
 
         实例类型。
 
@@ -117,7 +117,7 @@ class ExtendProductInfoEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExtendProductInfoEntity.
+        r"""Sets the type of this ExtendProductInfoEntity.
 
         实例类型。
 
@@ -128,7 +128,7 @@ class ExtendProductInfoEntity:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ExtendProductInfoEntity.
+        r"""Gets the product_id of this ExtendProductInfoEntity.
 
         产品ID。
 
@@ -139,7 +139,7 @@ class ExtendProductInfoEntity:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ExtendProductInfoEntity.
+        r"""Sets the product_id of this ExtendProductInfoEntity.
 
         产品ID。
 
@@ -150,7 +150,7 @@ class ExtendProductInfoEntity:
 
     @property
     def ecs_flavor_id(self):
-        """Gets the ecs_flavor_id of this ExtendProductInfoEntity.
+        r"""Gets the ecs_flavor_id of this ExtendProductInfoEntity.
 
         该产品使用的ECS规格。
 
@@ -161,7 +161,7 @@ class ExtendProductInfoEntity:
 
     @ecs_flavor_id.setter
     def ecs_flavor_id(self, ecs_flavor_id):
-        """Sets the ecs_flavor_id of this ExtendProductInfoEntity.
+        r"""Sets the ecs_flavor_id of this ExtendProductInfoEntity.
 
         该产品使用的ECS规格。
 
@@ -172,7 +172,7 @@ class ExtendProductInfoEntity:
 
     @property
     def arch_types(self):
-        """Gets the arch_types of this ExtendProductInfoEntity.
+        r"""Gets the arch_types of this ExtendProductInfoEntity.
 
         支持的CPU架构类型。
 
@@ -183,7 +183,7 @@ class ExtendProductInfoEntity:
 
     @arch_types.setter
     def arch_types(self, arch_types):
-        """Sets the arch_types of this ExtendProductInfoEntity.
+        r"""Sets the arch_types of this ExtendProductInfoEntity.
 
         支持的CPU架构类型。
 
@@ -194,7 +194,7 @@ class ExtendProductInfoEntity:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ExtendProductInfoEntity.
+        r"""Gets the charging_mode of this ExtendProductInfoEntity.
 
         支持的计费模式类型。
 
@@ -205,7 +205,7 @@ class ExtendProductInfoEntity:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ExtendProductInfoEntity.
+        r"""Sets the charging_mode of this ExtendProductInfoEntity.
 
         支持的计费模式类型。
 
@@ -216,7 +216,7 @@ class ExtendProductInfoEntity:
 
     @property
     def ios(self):
-        """Gets the ios of this ExtendProductInfoEntity.
+        r"""Gets the ios of this ExtendProductInfoEntity.
 
         磁盘IO信息。
 
@@ -227,7 +227,7 @@ class ExtendProductInfoEntity:
 
     @ios.setter
     def ios(self, ios):
-        """Sets the ios of this ExtendProductInfoEntity.
+        r"""Sets the ios of this ExtendProductInfoEntity.
 
         磁盘IO信息。
 
@@ -238,7 +238,7 @@ class ExtendProductInfoEntity:
 
     @property
     def support_features(self):
-        """Gets the support_features of this ExtendProductInfoEntity.
+        r"""Gets the support_features of this ExtendProductInfoEntity.
 
         支持的特性功能。
 
@@ -249,7 +249,7 @@ class ExtendProductInfoEntity:
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this ExtendProductInfoEntity.
+        r"""Sets the support_features of this ExtendProductInfoEntity.
 
         支持的特性功能。
 
@@ -260,7 +260,7 @@ class ExtendProductInfoEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this ExtendProductInfoEntity.
+        r"""Gets the properties of this ExtendProductInfoEntity.
 
         :return: The properties of this ExtendProductInfoEntity.
         :rtype: :class:`huaweicloudsdkkafka.v2.ExtendProductPropertiesEntity`
@@ -269,7 +269,7 @@ class ExtendProductInfoEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ExtendProductInfoEntity.
+        r"""Sets the properties of this ExtendProductInfoEntity.
 
         :param properties: The properties of this ExtendProductInfoEntity.
         :type properties: :class:`huaweicloudsdkkafka.v2.ExtendProductPropertiesEntity`
@@ -278,7 +278,7 @@ class ExtendProductInfoEntity:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ExtendProductInfoEntity.
+        r"""Gets the available_zones of this ExtendProductInfoEntity.
 
         有可用资源的可用区列表。
 
@@ -289,7 +289,7 @@ class ExtendProductInfoEntity:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ExtendProductInfoEntity.
+        r"""Sets the available_zones of this ExtendProductInfoEntity.
 
         有可用资源的可用区列表。
 
@@ -300,7 +300,7 @@ class ExtendProductInfoEntity:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this ExtendProductInfoEntity.
+        r"""Gets the unavailable_zones of this ExtendProductInfoEntity.
 
         资源售罄的可用区列表。
 
@@ -311,7 +311,7 @@ class ExtendProductInfoEntity:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this ExtendProductInfoEntity.
+        r"""Sets the unavailable_zones of this ExtendProductInfoEntity.
 
         资源售罄的可用区列表。
 

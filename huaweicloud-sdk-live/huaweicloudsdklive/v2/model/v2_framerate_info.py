@@ -35,7 +35,7 @@ class V2FramerateInfo:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, start_time=None, end_time=None, data_list=None):
-        """V2FramerateInfo
+        r"""V2FramerateInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class V2FramerateInfo:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this V2FramerateInfo.
+        r"""Gets the publish_domain of this V2FramerateInfo.
 
         推流域名。
 
@@ -89,7 +89,7 @@ class V2FramerateInfo:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this V2FramerateInfo.
+        r"""Sets the publish_domain of this V2FramerateInfo.
 
         推流域名。
 
@@ -100,7 +100,7 @@ class V2FramerateInfo:
 
     @property
     def app(self):
-        """Gets the app of this V2FramerateInfo.
+        r"""Gets the app of this V2FramerateInfo.
 
         应用名称。
 
@@ -111,7 +111,7 @@ class V2FramerateInfo:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this V2FramerateInfo.
+        r"""Sets the app of this V2FramerateInfo.
 
         应用名称。
 
@@ -122,7 +122,7 @@ class V2FramerateInfo:
 
     @property
     def stream(self):
-        """Gets the stream of this V2FramerateInfo.
+        r"""Gets the stream of this V2FramerateInfo.
 
         流名。
 
@@ -133,7 +133,7 @@ class V2FramerateInfo:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this V2FramerateInfo.
+        r"""Sets the stream of this V2FramerateInfo.
 
         流名。
 
@@ -144,7 +144,7 @@ class V2FramerateInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this V2FramerateInfo.
+        r"""Gets the start_time of this V2FramerateInfo.
 
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -155,7 +155,7 @@ class V2FramerateInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this V2FramerateInfo.
+        r"""Sets the start_time of this V2FramerateInfo.
 
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -166,7 +166,7 @@ class V2FramerateInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this V2FramerateInfo.
+        r"""Gets the end_time of this V2FramerateInfo.
 
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -177,7 +177,7 @@ class V2FramerateInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this V2FramerateInfo.
+        r"""Sets the end_time of this V2FramerateInfo.
 
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -188,7 +188,7 @@ class V2FramerateInfo:
 
     @property
     def data_list(self):
-        """Gets the data_list of this V2FramerateInfo.
+        r"""Gets the data_list of this V2FramerateInfo.
 
         帧率信息列表，单位为fps。
 
@@ -199,7 +199,7 @@ class V2FramerateInfo:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this V2FramerateInfo.
+        r"""Sets the data_list of this V2FramerateInfo.
 
         帧率信息列表，单位为fps。
 

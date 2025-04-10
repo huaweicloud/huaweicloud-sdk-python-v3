@@ -271,7 +271,7 @@ class TestCaseVo:
     }
 
     def __init__(self, uri=None, type=None, author=None, name=None, rank=None, preparation=None, remark=None, stage=None, activity=None, keywords=None, market=None, designer=None, tags=None, execute_parameter=None, region=None, owner=None, last_modifier=None, last_modified=None, last_modified_timestamp=None, last_change_time=None, version_uri=None, origin_uri=None, parent_uri=None, parent_path=None, creation_version_uri=None, creation_date=None, creation_date_timestamp=None, author_name=None, comment=None, number=None, case_type=None, platform_type=None, service_type=None, service_type_name=None, test_type=None, test_type_name=None, design_note=None, test_step=None, expect_output=None, env_type=None, exe_platform=None, testcase_project=None, svn_script_path=None, map_restrict=None, network_script_name=None, auto_type=None, to_be_auto_exec=None, last_result=None, last_result_uri=None, feature_uri=None, feature_name=None, interface_name=None, snp_no=None, dr_relation_id=None, issue_name=None, test_base_num=None, automatically_executed=None, first_execute_time=None, detect_type=None, execute_param=None, test_feature=None, is_contract_testcase=None, time_cost=None, be_auto_type_time=None, compare_number=None, scene_flag=None, base_flag=None, para_validator=None, knet_node_id=None, last_exe_author=None, cloud_carrier=None, market_place=None, test_mind_id=None, test_mind_url=None, commit_url=None, test_pattern_number=None, test_factor_number=None, status_code=None, result_code=None, release_id=None, label_id=None, labels=None, module_id=None, module_name=None, module_path=None, module_path_name=None, execute_latest_time=None, execute_duration=None, execute_times=None, is_keyword=None, release_dev=None, new_created=None, project_uuid=None, creation_version_name=None, feature_path=None, testcase_uri=None, owner_name=None, iterator_case_uri=None, script_link=None, custom_field_1=None, custom_field_2=None, custom_field_3=None, custom_field_4=None, custom_field_5=None, custom_field_6=None, custom_field_7=None, custom_field_8=None, custom_field_9=None, custom_field_10=None, custom_field_11=None, custom_field_12=None, custom_field_13=None, custom_field_14=None, custom_field_15=None, custom_field_16=None, custom_field_17=None, custom_field_18=None, custom_field_19=None, custom_field_20=None, custom_field_21=None, custom_field_22=None, custom_field_23=None, custom_field_24=None, custom_field_25=None):
-        """TestCaseVo
+        r"""TestCaseVo
 
         The model defined in huaweicloud sdk
 
@@ -904,7 +904,7 @@ class TestCaseVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestCaseVo.
+        r"""Gets the uri of this TestCaseVo.
 
         资源URI
 
@@ -915,7 +915,7 @@ class TestCaseVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestCaseVo.
+        r"""Sets the uri of this TestCaseVo.
 
         资源URI
 
@@ -926,7 +926,7 @@ class TestCaseVo:
 
     @property
     def type(self):
-        """Gets the type of this TestCaseVo.
+        r"""Gets the type of this TestCaseVo.
 
         资源类型
 
@@ -937,7 +937,7 @@ class TestCaseVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TestCaseVo.
+        r"""Sets the type of this TestCaseVo.
 
         资源类型
 
@@ -948,7 +948,7 @@ class TestCaseVo:
 
     @property
     def author(self):
-        """Gets the author of this TestCaseVo.
+        r"""Gets the author of this TestCaseVo.
 
         创建人
 
@@ -959,7 +959,7 @@ class TestCaseVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TestCaseVo.
+        r"""Sets the author of this TestCaseVo.
 
         创建人
 
@@ -970,7 +970,7 @@ class TestCaseVo:
 
     @property
     def name(self):
-        """Gets the name of this TestCaseVo.
+        r"""Gets the name of this TestCaseVo.
 
         名称
 
@@ -981,7 +981,7 @@ class TestCaseVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestCaseVo.
+        r"""Sets the name of this TestCaseVo.
 
         名称
 
@@ -992,7 +992,7 @@ class TestCaseVo:
 
     @property
     def rank(self):
-        """Gets the rank of this TestCaseVo.
+        r"""Gets the rank of this TestCaseVo.
 
         级别
 
@@ -1003,7 +1003,7 @@ class TestCaseVo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this TestCaseVo.
+        r"""Sets the rank of this TestCaseVo.
 
         级别
 
@@ -1014,7 +1014,7 @@ class TestCaseVo:
 
     @property
     def preparation(self):
-        """Gets the preparation of this TestCaseVo.
+        r"""Gets the preparation of this TestCaseVo.
 
         前置条件
 
@@ -1025,7 +1025,7 @@ class TestCaseVo:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this TestCaseVo.
+        r"""Sets the preparation of this TestCaseVo.
 
         前置条件
 
@@ -1036,7 +1036,7 @@ class TestCaseVo:
 
     @property
     def remark(self):
-        """Gets the remark of this TestCaseVo.
+        r"""Gets the remark of this TestCaseVo.
 
         备注
 
@@ -1047,7 +1047,7 @@ class TestCaseVo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this TestCaseVo.
+        r"""Sets the remark of this TestCaseVo.
 
         备注
 
@@ -1058,7 +1058,7 @@ class TestCaseVo:
 
     @property
     def stage(self):
-        """Gets the stage of this TestCaseVo.
+        r"""Gets the stage of this TestCaseVo.
 
         测试阶段
 
@@ -1069,7 +1069,7 @@ class TestCaseVo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TestCaseVo.
+        r"""Sets the stage of this TestCaseVo.
 
         测试阶段
 
@@ -1080,7 +1080,7 @@ class TestCaseVo:
 
     @property
     def activity(self):
-        """Gets the activity of this TestCaseVo.
+        r"""Gets the activity of this TestCaseVo.
 
         测试类型
 
@@ -1091,7 +1091,7 @@ class TestCaseVo:
 
     @activity.setter
     def activity(self, activity):
-        """Sets the activity of this TestCaseVo.
+        r"""Sets the activity of this TestCaseVo.
 
         测试类型
 
@@ -1102,7 +1102,7 @@ class TestCaseVo:
 
     @property
     def keywords(self):
-        """Gets the keywords of this TestCaseVo.
+        r"""Gets the keywords of this TestCaseVo.
 
         关键词
 
@@ -1113,7 +1113,7 @@ class TestCaseVo:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this TestCaseVo.
+        r"""Sets the keywords of this TestCaseVo.
 
         关键词
 
@@ -1124,7 +1124,7 @@ class TestCaseVo:
 
     @property
     def market(self):
-        """Gets the market of this TestCaseVo.
+        r"""Gets the market of this TestCaseVo.
 
         apitest标记是否代码已提交
 
@@ -1135,7 +1135,7 @@ class TestCaseVo:
 
     @market.setter
     def market(self, market):
-        """Sets the market of this TestCaseVo.
+        r"""Sets the market of this TestCaseVo.
 
         apitest标记是否代码已提交
 
@@ -1146,7 +1146,7 @@ class TestCaseVo:
 
     @property
     def designer(self):
-        """Gets the designer of this TestCaseVo.
+        r"""Gets the designer of this TestCaseVo.
 
         设计者
 
@@ -1157,7 +1157,7 @@ class TestCaseVo:
 
     @designer.setter
     def designer(self, designer):
-        """Sets the designer of this TestCaseVo.
+        r"""Sets the designer of this TestCaseVo.
 
         设计者
 
@@ -1168,7 +1168,7 @@ class TestCaseVo:
 
     @property
     def tags(self):
-        """Gets the tags of this TestCaseVo.
+        r"""Gets the tags of this TestCaseVo.
 
         标签
 
@@ -1179,7 +1179,7 @@ class TestCaseVo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TestCaseVo.
+        r"""Sets the tags of this TestCaseVo.
 
         标签
 
@@ -1190,7 +1190,7 @@ class TestCaseVo:
 
     @property
     def execute_parameter(self):
-        """Gets the execute_parameter of this TestCaseVo.
+        r"""Gets the execute_parameter of this TestCaseVo.
 
         执行参数
 
@@ -1201,7 +1201,7 @@ class TestCaseVo:
 
     @execute_parameter.setter
     def execute_parameter(self, execute_parameter):
-        """Sets the execute_parameter of this TestCaseVo.
+        r"""Sets the execute_parameter of this TestCaseVo.
 
         执行参数
 
@@ -1212,7 +1212,7 @@ class TestCaseVo:
 
     @property
     def region(self):
-        """Gets the region of this TestCaseVo.
+        r"""Gets the region of this TestCaseVo.
 
         逻辑region
 
@@ -1223,7 +1223,7 @@ class TestCaseVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestCaseVo.
+        r"""Sets the region of this TestCaseVo.
 
         逻辑region
 
@@ -1234,7 +1234,7 @@ class TestCaseVo:
 
     @property
     def owner(self):
-        """Gets the owner of this TestCaseVo.
+        r"""Gets the owner of this TestCaseVo.
 
         处理人id，IteratorTestCase字段
 
@@ -1245,7 +1245,7 @@ class TestCaseVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestCaseVo.
+        r"""Sets the owner of this TestCaseVo.
 
         处理人id，IteratorTestCase字段
 
@@ -1256,7 +1256,7 @@ class TestCaseVo:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this TestCaseVo.
+        r"""Gets the last_modifier of this TestCaseVo.
 
         最后修改人
 
@@ -1267,7 +1267,7 @@ class TestCaseVo:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this TestCaseVo.
+        r"""Sets the last_modifier of this TestCaseVo.
 
         最后修改人
 
@@ -1278,7 +1278,7 @@ class TestCaseVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TestCaseVo.
+        r"""Gets the last_modified of this TestCaseVo.
 
         最后修改时间
 
@@ -1289,7 +1289,7 @@ class TestCaseVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TestCaseVo.
+        r"""Sets the last_modified of this TestCaseVo.
 
         最后修改时间
 
@@ -1300,7 +1300,7 @@ class TestCaseVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this TestCaseVo.
+        r"""Gets the last_modified_timestamp of this TestCaseVo.
 
         修改时间时间戳
 
@@ -1311,7 +1311,7 @@ class TestCaseVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this TestCaseVo.
+        r"""Sets the last_modified_timestamp of this TestCaseVo.
 
         修改时间时间戳
 
@@ -1322,7 +1322,7 @@ class TestCaseVo:
 
     @property
     def last_change_time(self):
-        """Gets the last_change_time of this TestCaseVo.
+        r"""Gets the last_change_time of this TestCaseVo.
 
         最后变更时间
 
@@ -1333,7 +1333,7 @@ class TestCaseVo:
 
     @last_change_time.setter
     def last_change_time(self, last_change_time):
-        """Sets the last_change_time of this TestCaseVo.
+        r"""Sets the last_change_time of this TestCaseVo.
 
         最后变更时间
 
@@ -1344,7 +1344,7 @@ class TestCaseVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCaseVo.
+        r"""Gets the version_uri of this TestCaseVo.
 
         版本URI
 
@@ -1355,7 +1355,7 @@ class TestCaseVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCaseVo.
+        r"""Sets the version_uri of this TestCaseVo.
 
         版本URI
 
@@ -1366,7 +1366,7 @@ class TestCaseVo:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this TestCaseVo.
+        r"""Gets the origin_uri of this TestCaseVo.
 
         源资源URI
 
@@ -1377,7 +1377,7 @@ class TestCaseVo:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this TestCaseVo.
+        r"""Sets the origin_uri of this TestCaseVo.
 
         源资源URI
 
@@ -1388,7 +1388,7 @@ class TestCaseVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this TestCaseVo.
+        r"""Gets the parent_uri of this TestCaseVo.
 
         父资源URI
 
@@ -1399,7 +1399,7 @@ class TestCaseVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this TestCaseVo.
+        r"""Sets the parent_uri of this TestCaseVo.
 
         父资源URI
 
@@ -1410,7 +1410,7 @@ class TestCaseVo:
 
     @property
     def parent_path(self):
-        """Gets the parent_path of this TestCaseVo.
+        r"""Gets the parent_path of this TestCaseVo.
 
         父资源路径
 
@@ -1421,7 +1421,7 @@ class TestCaseVo:
 
     @parent_path.setter
     def parent_path(self, parent_path):
-        """Sets the parent_path of this TestCaseVo.
+        r"""Sets the parent_path of this TestCaseVo.
 
         父资源路径
 
@@ -1432,7 +1432,7 @@ class TestCaseVo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this TestCaseVo.
+        r"""Gets the creation_version_uri of this TestCaseVo.
 
         创建版本URI
 
@@ -1443,7 +1443,7 @@ class TestCaseVo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this TestCaseVo.
+        r"""Sets the creation_version_uri of this TestCaseVo.
 
         创建版本URI
 
@@ -1454,7 +1454,7 @@ class TestCaseVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TestCaseVo.
+        r"""Gets the creation_date of this TestCaseVo.
 
         创建时间
 
@@ -1465,7 +1465,7 @@ class TestCaseVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TestCaseVo.
+        r"""Sets the creation_date of this TestCaseVo.
 
         创建时间
 
@@ -1476,7 +1476,7 @@ class TestCaseVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this TestCaseVo.
+        r"""Gets the creation_date_timestamp of this TestCaseVo.
 
         创建时间时间戳
 
@@ -1487,7 +1487,7 @@ class TestCaseVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this TestCaseVo.
+        r"""Sets the creation_date_timestamp of this TestCaseVo.
 
         创建时间时间戳
 
@@ -1498,7 +1498,7 @@ class TestCaseVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this TestCaseVo.
+        r"""Gets the author_name of this TestCaseVo.
 
         创建人名称
 
@@ -1509,7 +1509,7 @@ class TestCaseVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this TestCaseVo.
+        r"""Sets the author_name of this TestCaseVo.
 
         创建人名称
 
@@ -1520,7 +1520,7 @@ class TestCaseVo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestCaseVo.
+        r"""Gets the comment of this TestCaseVo.
 
         备注
 
@@ -1531,7 +1531,7 @@ class TestCaseVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestCaseVo.
+        r"""Sets the comment of this TestCaseVo.
 
         备注
 
@@ -1542,7 +1542,7 @@ class TestCaseVo:
 
     @property
     def number(self):
-        """Gets the number of this TestCaseVo.
+        r"""Gets the number of this TestCaseVo.
 
         编号
 
@@ -1553,7 +1553,7 @@ class TestCaseVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestCaseVo.
+        r"""Sets the number of this TestCaseVo.
 
         编号
 
@@ -1564,7 +1564,7 @@ class TestCaseVo:
 
     @property
     def case_type(self):
-        """Gets the case_type of this TestCaseVo.
+        r"""Gets the case_type of this TestCaseVo.
 
         用例类型
 
@@ -1575,7 +1575,7 @@ class TestCaseVo:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this TestCaseVo.
+        r"""Sets the case_type of this TestCaseVo.
 
         用例类型
 
@@ -1586,7 +1586,7 @@ class TestCaseVo:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this TestCaseVo.
+        r"""Gets the platform_type of this TestCaseVo.
 
         执行平台类型
 
@@ -1597,7 +1597,7 @@ class TestCaseVo:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this TestCaseVo.
+        r"""Sets the platform_type of this TestCaseVo.
 
         执行平台类型
 
@@ -1608,7 +1608,7 @@ class TestCaseVo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TestCaseVo.
+        r"""Gets the service_type of this TestCaseVo.
 
         服务类型
 
@@ -1619,7 +1619,7 @@ class TestCaseVo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TestCaseVo.
+        r"""Sets the service_type of this TestCaseVo.
 
         服务类型
 
@@ -1630,7 +1630,7 @@ class TestCaseVo:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this TestCaseVo.
+        r"""Gets the service_type_name of this TestCaseVo.
 
         服务类型名称
 
@@ -1641,7 +1641,7 @@ class TestCaseVo:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this TestCaseVo.
+        r"""Sets the service_type_name of this TestCaseVo.
 
         服务类型名称
 
@@ -1652,7 +1652,7 @@ class TestCaseVo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this TestCaseVo.
+        r"""Gets the test_type of this TestCaseVo.
 
         测试类型
 
@@ -1663,7 +1663,7 @@ class TestCaseVo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this TestCaseVo.
+        r"""Sets the test_type of this TestCaseVo.
 
         测试类型
 
@@ -1674,7 +1674,7 @@ class TestCaseVo:
 
     @property
     def test_type_name(self):
-        """Gets the test_type_name of this TestCaseVo.
+        r"""Gets the test_type_name of this TestCaseVo.
 
         测试类型名称
 
@@ -1685,7 +1685,7 @@ class TestCaseVo:
 
     @test_type_name.setter
     def test_type_name(self, test_type_name):
-        """Sets the test_type_name of this TestCaseVo.
+        r"""Sets the test_type_name of this TestCaseVo.
 
         测试类型名称
 
@@ -1696,7 +1696,7 @@ class TestCaseVo:
 
     @property
     def design_note(self):
-        """Gets the design_note of this TestCaseVo.
+        r"""Gets the design_note of this TestCaseVo.
 
         设计描述
 
@@ -1707,7 +1707,7 @@ class TestCaseVo:
 
     @design_note.setter
     def design_note(self, design_note):
-        """Sets the design_note of this TestCaseVo.
+        r"""Sets the design_note of this TestCaseVo.
 
         设计描述
 
@@ -1718,7 +1718,7 @@ class TestCaseVo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TestCaseVo.
+        r"""Gets the test_step of this TestCaseVo.
 
         测试步骤
 
@@ -1729,7 +1729,7 @@ class TestCaseVo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TestCaseVo.
+        r"""Sets the test_step of this TestCaseVo.
 
         测试步骤
 
@@ -1740,7 +1740,7 @@ class TestCaseVo:
 
     @property
     def expect_output(self):
-        """Gets the expect_output of this TestCaseVo.
+        r"""Gets the expect_output of this TestCaseVo.
 
         期望结果
 
@@ -1751,7 +1751,7 @@ class TestCaseVo:
 
     @expect_output.setter
     def expect_output(self, expect_output):
-        """Sets the expect_output of this TestCaseVo.
+        r"""Sets the expect_output of this TestCaseVo.
 
         期望结果
 
@@ -1762,7 +1762,7 @@ class TestCaseVo:
 
     @property
     def env_type(self):
-        """Gets the env_type of this TestCaseVo.
+        r"""Gets the env_type of this TestCaseVo.
 
         测试环境类型
 
@@ -1773,7 +1773,7 @@ class TestCaseVo:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this TestCaseVo.
+        r"""Sets the env_type of this TestCaseVo.
 
         测试环境类型
 
@@ -1784,7 +1784,7 @@ class TestCaseVo:
 
     @property
     def exe_platform(self):
-        """Gets the exe_platform of this TestCaseVo.
+        r"""Gets the exe_platform of this TestCaseVo.
 
         执行平台
 
@@ -1795,7 +1795,7 @@ class TestCaseVo:
 
     @exe_platform.setter
     def exe_platform(self, exe_platform):
-        """Sets the exe_platform of this TestCaseVo.
+        r"""Sets the exe_platform of this TestCaseVo.
 
         执行平台
 
@@ -1806,7 +1806,7 @@ class TestCaseVo:
 
     @property
     def testcase_project(self):
-        """Gets the testcase_project of this TestCaseVo.
+        r"""Gets the testcase_project of this TestCaseVo.
 
         测试工程
 
@@ -1817,7 +1817,7 @@ class TestCaseVo:
 
     @testcase_project.setter
     def testcase_project(self, testcase_project):
-        """Sets the testcase_project of this TestCaseVo.
+        r"""Sets the testcase_project of this TestCaseVo.
 
         测试工程
 
@@ -1828,7 +1828,7 @@ class TestCaseVo:
 
     @property
     def svn_script_path(self):
-        """Gets the svn_script_path of this TestCaseVo.
+        r"""Gets the svn_script_path of this TestCaseVo.
 
         脚本路径
 
@@ -1839,7 +1839,7 @@ class TestCaseVo:
 
     @svn_script_path.setter
     def svn_script_path(self, svn_script_path):
-        """Sets the svn_script_path of this TestCaseVo.
+        r"""Sets the svn_script_path of this TestCaseVo.
 
         脚本路径
 
@@ -1850,7 +1850,7 @@ class TestCaseVo:
 
     @property
     def map_restrict(self):
-        """Gets the map_restrict of this TestCaseVo.
+        r"""Gets the map_restrict of this TestCaseVo.
 
         约束条件
 
@@ -1861,7 +1861,7 @@ class TestCaseVo:
 
     @map_restrict.setter
     def map_restrict(self, map_restrict):
-        """Sets the map_restrict of this TestCaseVo.
+        r"""Sets the map_restrict of this TestCaseVo.
 
         约束条件
 
@@ -1872,7 +1872,7 @@ class TestCaseVo:
 
     @property
     def network_script_name(self):
-        """Gets the network_script_name of this TestCaseVo.
+        r"""Gets the network_script_name of this TestCaseVo.
 
         网络脚本名
 
@@ -1883,7 +1883,7 @@ class TestCaseVo:
 
     @network_script_name.setter
     def network_script_name(self, network_script_name):
-        """Sets the network_script_name of this TestCaseVo.
+        r"""Sets the network_script_name of this TestCaseVo.
 
         网络脚本名
 
@@ -1894,7 +1894,7 @@ class TestCaseVo:
 
     @property
     def auto_type(self):
-        """Gets the auto_type of this TestCaseVo.
+        r"""Gets the auto_type of this TestCaseVo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1905,7 +1905,7 @@ class TestCaseVo:
 
     @auto_type.setter
     def auto_type(self, auto_type):
-        """Sets the auto_type of this TestCaseVo.
+        r"""Sets the auto_type of this TestCaseVo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1916,7 +1916,7 @@ class TestCaseVo:
 
     @property
     def to_be_auto_exec(self):
-        """Gets the to_be_auto_exec of this TestCaseVo.
+        r"""Gets the to_be_auto_exec of this TestCaseVo.
 
         被自动化执行
 
@@ -1927,7 +1927,7 @@ class TestCaseVo:
 
     @to_be_auto_exec.setter
     def to_be_auto_exec(self, to_be_auto_exec):
-        """Sets the to_be_auto_exec of this TestCaseVo.
+        r"""Sets the to_be_auto_exec of this TestCaseVo.
 
         被自动化执行
 
@@ -1938,7 +1938,7 @@ class TestCaseVo:
 
     @property
     def last_result(self):
-        """Gets the last_result of this TestCaseVo.
+        r"""Gets the last_result of this TestCaseVo.
 
         最后一次结果
 
@@ -1949,7 +1949,7 @@ class TestCaseVo:
 
     @last_result.setter
     def last_result(self, last_result):
-        """Sets the last_result of this TestCaseVo.
+        r"""Sets the last_result of this TestCaseVo.
 
         最后一次结果
 
@@ -1960,7 +1960,7 @@ class TestCaseVo:
 
     @property
     def last_result_uri(self):
-        """Gets the last_result_uri of this TestCaseVo.
+        r"""Gets the last_result_uri of this TestCaseVo.
 
         最后一次结果Uri
 
@@ -1971,7 +1971,7 @@ class TestCaseVo:
 
     @last_result_uri.setter
     def last_result_uri(self, last_result_uri):
-        """Sets the last_result_uri of this TestCaseVo.
+        r"""Sets the last_result_uri of this TestCaseVo.
 
         最后一次结果Uri
 
@@ -1982,7 +1982,7 @@ class TestCaseVo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this TestCaseVo.
+        r"""Gets the feature_uri of this TestCaseVo.
 
         目录Uri
 
@@ -1993,7 +1993,7 @@ class TestCaseVo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this TestCaseVo.
+        r"""Sets the feature_uri of this TestCaseVo.
 
         目录Uri
 
@@ -2004,7 +2004,7 @@ class TestCaseVo:
 
     @property
     def feature_name(self):
-        """Gets the feature_name of this TestCaseVo.
+        r"""Gets the feature_name of this TestCaseVo.
 
         目录名称
 
@@ -2015,7 +2015,7 @@ class TestCaseVo:
 
     @feature_name.setter
     def feature_name(self, feature_name):
-        """Sets the feature_name of this TestCaseVo.
+        r"""Sets the feature_name of this TestCaseVo.
 
         目录名称
 
@@ -2026,7 +2026,7 @@ class TestCaseVo:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this TestCaseVo.
+        r"""Gets the interface_name of this TestCaseVo.
 
         测试接口名
 
@@ -2037,7 +2037,7 @@ class TestCaseVo:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this TestCaseVo.
+        r"""Sets the interface_name of this TestCaseVo.
 
         测试接口名
 
@@ -2048,7 +2048,7 @@ class TestCaseVo:
 
     @property
     def snp_no(self):
-        """Gets the snp_no of this TestCaseVo.
+        r"""Gets the snp_no of this TestCaseVo.
 
         网络问题ID
 
@@ -2059,7 +2059,7 @@ class TestCaseVo:
 
     @snp_no.setter
     def snp_no(self, snp_no):
-        """Sets the snp_no of this TestCaseVo.
+        r"""Sets the snp_no of this TestCaseVo.
 
         网络问题ID
 
@@ -2070,7 +2070,7 @@ class TestCaseVo:
 
     @property
     def dr_relation_id(self):
-        """Gets the dr_relation_id of this TestCaseVo.
+        r"""Gets the dr_relation_id of this TestCaseVo.
 
         关联需求编号
 
@@ -2081,7 +2081,7 @@ class TestCaseVo:
 
     @dr_relation_id.setter
     def dr_relation_id(self, dr_relation_id):
-        """Sets the dr_relation_id of this TestCaseVo.
+        r"""Sets the dr_relation_id of this TestCaseVo.
 
         关联需求编号
 
@@ -2092,7 +2092,7 @@ class TestCaseVo:
 
     @property
     def issue_name(self):
-        """Gets the issue_name of this TestCaseVo.
+        r"""Gets the issue_name of this TestCaseVo.
 
         需求名称
 
@@ -2103,7 +2103,7 @@ class TestCaseVo:
 
     @issue_name.setter
     def issue_name(self, issue_name):
-        """Sets the issue_name of this TestCaseVo.
+        r"""Sets the issue_name of this TestCaseVo.
 
         需求名称
 
@@ -2114,7 +2114,7 @@ class TestCaseVo:
 
     @property
     def test_base_num(self):
-        """Gets the test_base_num of this TestCaseVo.
+        r"""Gets the test_base_num of this TestCaseVo.
 
         测试基数
 
@@ -2125,7 +2125,7 @@ class TestCaseVo:
 
     @test_base_num.setter
     def test_base_num(self, test_base_num):
-        """Sets the test_base_num of this TestCaseVo.
+        r"""Sets the test_base_num of this TestCaseVo.
 
         测试基数
 
@@ -2136,7 +2136,7 @@ class TestCaseVo:
 
     @property
     def automatically_executed(self):
-        """Gets the automatically_executed of this TestCaseVo.
+        r"""Gets the automatically_executed of this TestCaseVo.
 
         是否被自动化执行
 
@@ -2147,7 +2147,7 @@ class TestCaseVo:
 
     @automatically_executed.setter
     def automatically_executed(self, automatically_executed):
-        """Sets the automatically_executed of this TestCaseVo.
+        r"""Sets the automatically_executed of this TestCaseVo.
 
         是否被自动化执行
 
@@ -2158,7 +2158,7 @@ class TestCaseVo:
 
     @property
     def first_execute_time(self):
-        """Gets the first_execute_time of this TestCaseVo.
+        r"""Gets the first_execute_time of this TestCaseVo.
 
         第一次执行时间
 
@@ -2169,7 +2169,7 @@ class TestCaseVo:
 
     @first_execute_time.setter
     def first_execute_time(self, first_execute_time):
-        """Sets the first_execute_time of this TestCaseVo.
+        r"""Sets the first_execute_time of this TestCaseVo.
 
         第一次执行时间
 
@@ -2180,7 +2180,7 @@ class TestCaseVo:
 
     @property
     def detect_type(self):
-        """Gets the detect_type of this TestCaseVo.
+        r"""Gets the detect_type of this TestCaseVo.
 
         检测类型
 
@@ -2191,7 +2191,7 @@ class TestCaseVo:
 
     @detect_type.setter
     def detect_type(self, detect_type):
-        """Sets the detect_type of this TestCaseVo.
+        r"""Sets the detect_type of this TestCaseVo.
 
         检测类型
 
@@ -2202,7 +2202,7 @@ class TestCaseVo:
 
     @property
     def execute_param(self):
-        """Gets the execute_param of this TestCaseVo.
+        r"""Gets the execute_param of this TestCaseVo.
 
         执行参数
 
@@ -2213,7 +2213,7 @@ class TestCaseVo:
 
     @execute_param.setter
     def execute_param(self, execute_param):
-        """Sets the execute_param of this TestCaseVo.
+        r"""Sets the execute_param of this TestCaseVo.
 
         执行参数
 
@@ -2224,7 +2224,7 @@ class TestCaseVo:
 
     @property
     def test_feature(self):
-        """Gets the test_feature of this TestCaseVo.
+        r"""Gets the test_feature of this TestCaseVo.
 
         分析领域
 
@@ -2235,7 +2235,7 @@ class TestCaseVo:
 
     @test_feature.setter
     def test_feature(self, test_feature):
-        """Sets the test_feature of this TestCaseVo.
+        r"""Sets the test_feature of this TestCaseVo.
 
         分析领域
 
@@ -2246,7 +2246,7 @@ class TestCaseVo:
 
     @property
     def is_contract_testcase(self):
-        """Gets the is_contract_testcase of this TestCaseVo.
+        r"""Gets the is_contract_testcase of this TestCaseVo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -2257,7 +2257,7 @@ class TestCaseVo:
 
     @is_contract_testcase.setter
     def is_contract_testcase(self, is_contract_testcase):
-        """Sets the is_contract_testcase of this TestCaseVo.
+        r"""Sets the is_contract_testcase of this TestCaseVo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -2268,7 +2268,7 @@ class TestCaseVo:
 
     @property
     def time_cost(self):
-        """Gets the time_cost of this TestCaseVo.
+        r"""Gets the time_cost of this TestCaseVo.
 
         总共耗时
 
@@ -2279,7 +2279,7 @@ class TestCaseVo:
 
     @time_cost.setter
     def time_cost(self, time_cost):
-        """Sets the time_cost of this TestCaseVo.
+        r"""Sets the time_cost of this TestCaseVo.
 
         总共耗时
 
@@ -2290,7 +2290,7 @@ class TestCaseVo:
 
     @property
     def be_auto_type_time(self):
-        """Gets the be_auto_type_time of this TestCaseVo.
+        r"""Gets the be_auto_type_time of this TestCaseVo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2301,7 +2301,7 @@ class TestCaseVo:
 
     @be_auto_type_time.setter
     def be_auto_type_time(self, be_auto_type_time):
-        """Sets the be_auto_type_time of this TestCaseVo.
+        r"""Sets the be_auto_type_time of this TestCaseVo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2312,7 +2312,7 @@ class TestCaseVo:
 
     @property
     def compare_number(self):
-        """Gets the compare_number of this TestCaseVo.
+        r"""Gets the compare_number of this TestCaseVo.
 
         配对用例编号
 
@@ -2323,7 +2323,7 @@ class TestCaseVo:
 
     @compare_number.setter
     def compare_number(self, compare_number):
-        """Sets the compare_number of this TestCaseVo.
+        r"""Sets the compare_number of this TestCaseVo.
 
         配对用例编号
 
@@ -2334,7 +2334,7 @@ class TestCaseVo:
 
     @property
     def scene_flag(self):
-        """Gets the scene_flag of this TestCaseVo.
+        r"""Gets the scene_flag of this TestCaseVo.
 
         场景标识
 
@@ -2345,7 +2345,7 @@ class TestCaseVo:
 
     @scene_flag.setter
     def scene_flag(self, scene_flag):
-        """Sets the scene_flag of this TestCaseVo.
+        r"""Sets the scene_flag of this TestCaseVo.
 
         场景标识
 
@@ -2356,7 +2356,7 @@ class TestCaseVo:
 
     @property
     def base_flag(self):
-        """Gets the base_flag of this TestCaseVo.
+        r"""Gets the base_flag of this TestCaseVo.
 
         场景标识
 
@@ -2367,7 +2367,7 @@ class TestCaseVo:
 
     @base_flag.setter
     def base_flag(self, base_flag):
-        """Sets the base_flag of this TestCaseVo.
+        r"""Sets the base_flag of this TestCaseVo.
 
         场景标识
 
@@ -2378,7 +2378,7 @@ class TestCaseVo:
 
     @property
     def para_validator(self):
-        """Gets the para_validator of this TestCaseVo.
+        r"""Gets the para_validator of this TestCaseVo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2389,7 +2389,7 @@ class TestCaseVo:
 
     @para_validator.setter
     def para_validator(self, para_validator):
-        """Sets the para_validator of this TestCaseVo.
+        r"""Sets the para_validator of this TestCaseVo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2400,7 +2400,7 @@ class TestCaseVo:
 
     @property
     def knet_node_id(self):
-        """Gets the knet_node_id of this TestCaseVo.
+        r"""Gets the knet_node_id of this TestCaseVo.
 
         knet节点id
 
@@ -2411,7 +2411,7 @@ class TestCaseVo:
 
     @knet_node_id.setter
     def knet_node_id(self, knet_node_id):
-        """Sets the knet_node_id of this TestCaseVo.
+        r"""Sets the knet_node_id of this TestCaseVo.
 
         knet节点id
 
@@ -2422,7 +2422,7 @@ class TestCaseVo:
 
     @property
     def last_exe_author(self):
-        """Gets the last_exe_author of this TestCaseVo.
+        r"""Gets the last_exe_author of this TestCaseVo.
 
         最后一次执行用户
 
@@ -2433,7 +2433,7 @@ class TestCaseVo:
 
     @last_exe_author.setter
     def last_exe_author(self, last_exe_author):
-        """Sets the last_exe_author of this TestCaseVo.
+        r"""Sets the last_exe_author of this TestCaseVo.
 
         最后一次执行用户
 
@@ -2444,7 +2444,7 @@ class TestCaseVo:
 
     @property
     def cloud_carrier(self):
-        """Gets the cloud_carrier of this TestCaseVo.
+        r"""Gets the cloud_carrier of this TestCaseVo.
 
         运营商
 
@@ -2455,7 +2455,7 @@ class TestCaseVo:
 
     @cloud_carrier.setter
     def cloud_carrier(self, cloud_carrier):
-        """Sets the cloud_carrier of this TestCaseVo.
+        r"""Sets the cloud_carrier of this TestCaseVo.
 
         运营商
 
@@ -2466,7 +2466,7 @@ class TestCaseVo:
 
     @property
     def market_place(self):
-        """Gets the market_place of this TestCaseVo.
+        r"""Gets the market_place of this TestCaseVo.
 
         应用市场
 
@@ -2477,7 +2477,7 @@ class TestCaseVo:
 
     @market_place.setter
     def market_place(self, market_place):
-        """Sets the market_place of this TestCaseVo.
+        r"""Sets the market_place of this TestCaseVo.
 
         应用市场
 
@@ -2488,7 +2488,7 @@ class TestCaseVo:
 
     @property
     def test_mind_id(self):
-        """Gets the test_mind_id of this TestCaseVo.
+        r"""Gets the test_mind_id of this TestCaseVo.
 
         脑图id
 
@@ -2499,7 +2499,7 @@ class TestCaseVo:
 
     @test_mind_id.setter
     def test_mind_id(self, test_mind_id):
-        """Sets the test_mind_id of this TestCaseVo.
+        r"""Sets the test_mind_id of this TestCaseVo.
 
         脑图id
 
@@ -2510,7 +2510,7 @@ class TestCaseVo:
 
     @property
     def test_mind_url(self):
-        """Gets the test_mind_url of this TestCaseVo.
+        r"""Gets the test_mind_url of this TestCaseVo.
 
         脑图url
 
@@ -2521,7 +2521,7 @@ class TestCaseVo:
 
     @test_mind_url.setter
     def test_mind_url(self, test_mind_url):
-        """Sets the test_mind_url of this TestCaseVo.
+        r"""Sets the test_mind_url of this TestCaseVo.
 
         脑图url
 
@@ -2532,7 +2532,7 @@ class TestCaseVo:
 
     @property
     def commit_url(self):
-        """Gets the commit_url of this TestCaseVo.
+        r"""Gets the commit_url of this TestCaseVo.
 
         git提交url
 
@@ -2543,7 +2543,7 @@ class TestCaseVo:
 
     @commit_url.setter
     def commit_url(self, commit_url):
-        """Sets the commit_url of this TestCaseVo.
+        r"""Sets the commit_url of this TestCaseVo.
 
         git提交url
 
@@ -2554,7 +2554,7 @@ class TestCaseVo:
 
     @property
     def test_pattern_number(self):
-        """Gets the test_pattern_number of this TestCaseVo.
+        r"""Gets the test_pattern_number of this TestCaseVo.
 
         测试模式编号
 
@@ -2565,7 +2565,7 @@ class TestCaseVo:
 
     @test_pattern_number.setter
     def test_pattern_number(self, test_pattern_number):
-        """Sets the test_pattern_number of this TestCaseVo.
+        r"""Sets the test_pattern_number of this TestCaseVo.
 
         测试模式编号
 
@@ -2576,7 +2576,7 @@ class TestCaseVo:
 
     @property
     def test_factor_number(self):
-        """Gets the test_factor_number of this TestCaseVo.
+        r"""Gets the test_factor_number of this TestCaseVo.
 
         测试因子编号
 
@@ -2587,7 +2587,7 @@ class TestCaseVo:
 
     @test_factor_number.setter
     def test_factor_number(self, test_factor_number):
-        """Sets the test_factor_number of this TestCaseVo.
+        r"""Sets the test_factor_number of this TestCaseVo.
 
         测试因子编号
 
@@ -2598,7 +2598,7 @@ class TestCaseVo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this TestCaseVo.
+        r"""Gets the status_code of this TestCaseVo.
 
         状态Code
 
@@ -2609,7 +2609,7 @@ class TestCaseVo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this TestCaseVo.
+        r"""Sets the status_code of this TestCaseVo.
 
         状态Code
 
@@ -2620,7 +2620,7 @@ class TestCaseVo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this TestCaseVo.
+        r"""Gets the result_code of this TestCaseVo.
 
         结果Code
 
@@ -2631,7 +2631,7 @@ class TestCaseVo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this TestCaseVo.
+        r"""Sets the result_code of this TestCaseVo.
 
         结果Code
 
@@ -2642,7 +2642,7 @@ class TestCaseVo:
 
     @property
     def release_id(self):
-        """Gets the release_id of this TestCaseVo.
+        r"""Gets the release_id of this TestCaseVo.
 
         迭代ID
 
@@ -2653,7 +2653,7 @@ class TestCaseVo:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this TestCaseVo.
+        r"""Sets the release_id of this TestCaseVo.
 
         迭代ID
 
@@ -2664,7 +2664,7 @@ class TestCaseVo:
 
     @property
     def label_id(self):
-        """Gets the label_id of this TestCaseVo.
+        r"""Gets the label_id of this TestCaseVo.
 
         标签ID
 
@@ -2675,7 +2675,7 @@ class TestCaseVo:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this TestCaseVo.
+        r"""Sets the label_id of this TestCaseVo.
 
         标签ID
 
@@ -2686,7 +2686,7 @@ class TestCaseVo:
 
     @property
     def labels(self):
-        """Gets the labels of this TestCaseVo.
+        r"""Gets the labels of this TestCaseVo.
 
         用例标签名称列表
 
@@ -2697,7 +2697,7 @@ class TestCaseVo:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this TestCaseVo.
+        r"""Sets the labels of this TestCaseVo.
 
         用例标签名称列表
 
@@ -2708,7 +2708,7 @@ class TestCaseVo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this TestCaseVo.
+        r"""Gets the module_id of this TestCaseVo.
 
         模块ID
 
@@ -2719,7 +2719,7 @@ class TestCaseVo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this TestCaseVo.
+        r"""Sets the module_id of this TestCaseVo.
 
         模块ID
 
@@ -2730,7 +2730,7 @@ class TestCaseVo:
 
     @property
     def module_name(self):
-        """Gets the module_name of this TestCaseVo.
+        r"""Gets the module_name of this TestCaseVo.
 
         模块名称
 
@@ -2741,7 +2741,7 @@ class TestCaseVo:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this TestCaseVo.
+        r"""Sets the module_name of this TestCaseVo.
 
         模块名称
 
@@ -2752,7 +2752,7 @@ class TestCaseVo:
 
     @property
     def module_path(self):
-        """Gets the module_path of this TestCaseVo.
+        r"""Gets the module_path of this TestCaseVo.
 
         模块path
 
@@ -2763,7 +2763,7 @@ class TestCaseVo:
 
     @module_path.setter
     def module_path(self, module_path):
-        """Sets the module_path of this TestCaseVo.
+        r"""Sets the module_path of this TestCaseVo.
 
         模块path
 
@@ -2774,7 +2774,7 @@ class TestCaseVo:
 
     @property
     def module_path_name(self):
-        """Gets the module_path_name of this TestCaseVo.
+        r"""Gets the module_path_name of this TestCaseVo.
 
         模块路径名称
 
@@ -2785,7 +2785,7 @@ class TestCaseVo:
 
     @module_path_name.setter
     def module_path_name(self, module_path_name):
-        """Sets the module_path_name of this TestCaseVo.
+        r"""Sets the module_path_name of this TestCaseVo.
 
         模块路径名称
 
@@ -2796,7 +2796,7 @@ class TestCaseVo:
 
     @property
     def execute_latest_time(self):
-        """Gets the execute_latest_time of this TestCaseVo.
+        r"""Gets the execute_latest_time of this TestCaseVo.
 
         最后执行时间
 
@@ -2807,7 +2807,7 @@ class TestCaseVo:
 
     @execute_latest_time.setter
     def execute_latest_time(self, execute_latest_time):
-        """Sets the execute_latest_time of this TestCaseVo.
+        r"""Sets the execute_latest_time of this TestCaseVo.
 
         最后执行时间
 
@@ -2818,7 +2818,7 @@ class TestCaseVo:
 
     @property
     def execute_duration(self):
-        """Gets the execute_duration of this TestCaseVo.
+        r"""Gets the execute_duration of this TestCaseVo.
 
         执行时长
 
@@ -2829,7 +2829,7 @@ class TestCaseVo:
 
     @execute_duration.setter
     def execute_duration(self, execute_duration):
-        """Sets the execute_duration of this TestCaseVo.
+        r"""Sets the execute_duration of this TestCaseVo.
 
         执行时长
 
@@ -2840,7 +2840,7 @@ class TestCaseVo:
 
     @property
     def execute_times(self):
-        """Gets the execute_times of this TestCaseVo.
+        r"""Gets the execute_times of this TestCaseVo.
 
         执行次数
 
@@ -2851,7 +2851,7 @@ class TestCaseVo:
 
     @execute_times.setter
     def execute_times(self, execute_times):
-        """Sets the execute_times of this TestCaseVo.
+        r"""Sets the execute_times of this TestCaseVo.
 
         执行次数
 
@@ -2862,7 +2862,7 @@ class TestCaseVo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this TestCaseVo.
+        r"""Gets the is_keyword of this TestCaseVo.
 
         是否关键用例
 
@@ -2873,7 +2873,7 @@ class TestCaseVo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this TestCaseVo.
+        r"""Sets the is_keyword of this TestCaseVo.
 
         是否关键用例
 
@@ -2884,7 +2884,7 @@ class TestCaseVo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TestCaseVo.
+        r"""Gets the release_dev of this TestCaseVo.
 
         测试版本号
 
@@ -2895,7 +2895,7 @@ class TestCaseVo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TestCaseVo.
+        r"""Sets the release_dev of this TestCaseVo.
 
         测试版本号
 
@@ -2906,7 +2906,7 @@ class TestCaseVo:
 
     @property
     def new_created(self):
-        """Gets the new_created of this TestCaseVo.
+        r"""Gets the new_created of this TestCaseVo.
 
         是否用户新增用例
 
@@ -2917,7 +2917,7 @@ class TestCaseVo:
 
     @new_created.setter
     def new_created(self, new_created):
-        """Sets the new_created of this TestCaseVo.
+        r"""Sets the new_created of this TestCaseVo.
 
         是否用户新增用例
 
@@ -2928,7 +2928,7 @@ class TestCaseVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestCaseVo.
+        r"""Gets the project_uuid of this TestCaseVo.
 
         项目ID
 
@@ -2939,7 +2939,7 @@ class TestCaseVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestCaseVo.
+        r"""Sets the project_uuid of this TestCaseVo.
 
         项目ID
 
@@ -2950,7 +2950,7 @@ class TestCaseVo:
 
     @property
     def creation_version_name(self):
-        """Gets the creation_version_name of this TestCaseVo.
+        r"""Gets the creation_version_name of this TestCaseVo.
 
         创建版本名称，原逻辑marshall添加字段
 
@@ -2961,7 +2961,7 @@ class TestCaseVo:
 
     @creation_version_name.setter
     def creation_version_name(self, creation_version_name):
-        """Sets the creation_version_name of this TestCaseVo.
+        r"""Sets the creation_version_name of this TestCaseVo.
 
         创建版本名称，原逻辑marshall添加字段
 
@@ -2972,7 +2972,7 @@ class TestCaseVo:
 
     @property
     def feature_path(self):
-        """Gets the feature_path of this TestCaseVo.
+        r"""Gets the feature_path of this TestCaseVo.
 
         特性路径，原逻辑marshall添加字段
 
@@ -2983,7 +2983,7 @@ class TestCaseVo:
 
     @feature_path.setter
     def feature_path(self, feature_path):
-        """Sets the feature_path of this TestCaseVo.
+        r"""Sets the feature_path of this TestCaseVo.
 
         特性路径，原逻辑marshall添加字段
 
@@ -2994,7 +2994,7 @@ class TestCaseVo:
 
     @property
     def testcase_uri(self):
-        """Gets the testcase_uri of this TestCaseVo.
+        r"""Gets the testcase_uri of this TestCaseVo.
 
         实体用例Uri，IteratorTestCase字段
 
@@ -3005,7 +3005,7 @@ class TestCaseVo:
 
     @testcase_uri.setter
     def testcase_uri(self, testcase_uri):
-        """Sets the testcase_uri of this TestCaseVo.
+        r"""Sets the testcase_uri of this TestCaseVo.
 
         实体用例Uri，IteratorTestCase字段
 
@@ -3016,7 +3016,7 @@ class TestCaseVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this TestCaseVo.
+        r"""Gets the owner_name of this TestCaseVo.
 
         处理人名称
 
@@ -3027,7 +3027,7 @@ class TestCaseVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this TestCaseVo.
+        r"""Sets the owner_name of this TestCaseVo.
 
         处理人名称
 
@@ -3038,7 +3038,7 @@ class TestCaseVo:
 
     @property
     def iterator_case_uri(self):
-        """Gets the iterator_case_uri of this TestCaseVo.
+        r"""Gets the iterator_case_uri of this TestCaseVo.
 
         迭代用例Uri，IteratorTestCase字段
 
@@ -3049,7 +3049,7 @@ class TestCaseVo:
 
     @iterator_case_uri.setter
     def iterator_case_uri(self, iterator_case_uri):
-        """Sets the iterator_case_uri of this TestCaseVo.
+        r"""Sets the iterator_case_uri of this TestCaseVo.
 
         迭代用例Uri，IteratorTestCase字段
 
@@ -3060,7 +3060,7 @@ class TestCaseVo:
 
     @property
     def script_link(self):
-        """Gets the script_link of this TestCaseVo.
+        r"""Gets the script_link of this TestCaseVo.
 
         脚本链接scriptLink
 
@@ -3071,7 +3071,7 @@ class TestCaseVo:
 
     @script_link.setter
     def script_link(self, script_link):
-        """Sets the script_link of this TestCaseVo.
+        r"""Sets the script_link of this TestCaseVo.
 
         脚本链接scriptLink
 
@@ -3082,7 +3082,7 @@ class TestCaseVo:
 
     @property
     def custom_field_1(self):
-        """Gets the custom_field_1 of this TestCaseVo.
+        r"""Gets the custom_field_1 of this TestCaseVo.
 
         自定义字段1
 
@@ -3093,7 +3093,7 @@ class TestCaseVo:
 
     @custom_field_1.setter
     def custom_field_1(self, custom_field_1):
-        """Sets the custom_field_1 of this TestCaseVo.
+        r"""Sets the custom_field_1 of this TestCaseVo.
 
         自定义字段1
 
@@ -3104,7 +3104,7 @@ class TestCaseVo:
 
     @property
     def custom_field_2(self):
-        """Gets the custom_field_2 of this TestCaseVo.
+        r"""Gets the custom_field_2 of this TestCaseVo.
 
         自定义字段2
 
@@ -3115,7 +3115,7 @@ class TestCaseVo:
 
     @custom_field_2.setter
     def custom_field_2(self, custom_field_2):
-        """Sets the custom_field_2 of this TestCaseVo.
+        r"""Sets the custom_field_2 of this TestCaseVo.
 
         自定义字段2
 
@@ -3126,7 +3126,7 @@ class TestCaseVo:
 
     @property
     def custom_field_3(self):
-        """Gets the custom_field_3 of this TestCaseVo.
+        r"""Gets the custom_field_3 of this TestCaseVo.
 
         自定义字段3
 
@@ -3137,7 +3137,7 @@ class TestCaseVo:
 
     @custom_field_3.setter
     def custom_field_3(self, custom_field_3):
-        """Sets the custom_field_3 of this TestCaseVo.
+        r"""Sets the custom_field_3 of this TestCaseVo.
 
         自定义字段3
 
@@ -3148,7 +3148,7 @@ class TestCaseVo:
 
     @property
     def custom_field_4(self):
-        """Gets the custom_field_4 of this TestCaseVo.
+        r"""Gets the custom_field_4 of this TestCaseVo.
 
         自定义字段4
 
@@ -3159,7 +3159,7 @@ class TestCaseVo:
 
     @custom_field_4.setter
     def custom_field_4(self, custom_field_4):
-        """Sets the custom_field_4 of this TestCaseVo.
+        r"""Sets the custom_field_4 of this TestCaseVo.
 
         自定义字段4
 
@@ -3170,7 +3170,7 @@ class TestCaseVo:
 
     @property
     def custom_field_5(self):
-        """Gets the custom_field_5 of this TestCaseVo.
+        r"""Gets the custom_field_5 of this TestCaseVo.
 
         自定义字段5
 
@@ -3181,7 +3181,7 @@ class TestCaseVo:
 
     @custom_field_5.setter
     def custom_field_5(self, custom_field_5):
-        """Sets the custom_field_5 of this TestCaseVo.
+        r"""Sets the custom_field_5 of this TestCaseVo.
 
         自定义字段5
 
@@ -3192,7 +3192,7 @@ class TestCaseVo:
 
     @property
     def custom_field_6(self):
-        """Gets the custom_field_6 of this TestCaseVo.
+        r"""Gets the custom_field_6 of this TestCaseVo.
 
         自定义字段6
 
@@ -3203,7 +3203,7 @@ class TestCaseVo:
 
     @custom_field_6.setter
     def custom_field_6(self, custom_field_6):
-        """Sets the custom_field_6 of this TestCaseVo.
+        r"""Sets the custom_field_6 of this TestCaseVo.
 
         自定义字段6
 
@@ -3214,7 +3214,7 @@ class TestCaseVo:
 
     @property
     def custom_field_7(self):
-        """Gets the custom_field_7 of this TestCaseVo.
+        r"""Gets the custom_field_7 of this TestCaseVo.
 
         自定义字段7
 
@@ -3225,7 +3225,7 @@ class TestCaseVo:
 
     @custom_field_7.setter
     def custom_field_7(self, custom_field_7):
-        """Sets the custom_field_7 of this TestCaseVo.
+        r"""Sets the custom_field_7 of this TestCaseVo.
 
         自定义字段7
 
@@ -3236,7 +3236,7 @@ class TestCaseVo:
 
     @property
     def custom_field_8(self):
-        """Gets the custom_field_8 of this TestCaseVo.
+        r"""Gets the custom_field_8 of this TestCaseVo.
 
         自定义字段8
 
@@ -3247,7 +3247,7 @@ class TestCaseVo:
 
     @custom_field_8.setter
     def custom_field_8(self, custom_field_8):
-        """Sets the custom_field_8 of this TestCaseVo.
+        r"""Sets the custom_field_8 of this TestCaseVo.
 
         自定义字段8
 
@@ -3258,7 +3258,7 @@ class TestCaseVo:
 
     @property
     def custom_field_9(self):
-        """Gets the custom_field_9 of this TestCaseVo.
+        r"""Gets the custom_field_9 of this TestCaseVo.
 
         自定义字段9
 
@@ -3269,7 +3269,7 @@ class TestCaseVo:
 
     @custom_field_9.setter
     def custom_field_9(self, custom_field_9):
-        """Sets the custom_field_9 of this TestCaseVo.
+        r"""Sets the custom_field_9 of this TestCaseVo.
 
         自定义字段9
 
@@ -3280,7 +3280,7 @@ class TestCaseVo:
 
     @property
     def custom_field_10(self):
-        """Gets the custom_field_10 of this TestCaseVo.
+        r"""Gets the custom_field_10 of this TestCaseVo.
 
         自定义字段10
 
@@ -3291,7 +3291,7 @@ class TestCaseVo:
 
     @custom_field_10.setter
     def custom_field_10(self, custom_field_10):
-        """Sets the custom_field_10 of this TestCaseVo.
+        r"""Sets the custom_field_10 of this TestCaseVo.
 
         自定义字段10
 
@@ -3302,7 +3302,7 @@ class TestCaseVo:
 
     @property
     def custom_field_11(self):
-        """Gets the custom_field_11 of this TestCaseVo.
+        r"""Gets the custom_field_11 of this TestCaseVo.
 
         自定义字段11
 
@@ -3313,7 +3313,7 @@ class TestCaseVo:
 
     @custom_field_11.setter
     def custom_field_11(self, custom_field_11):
-        """Sets the custom_field_11 of this TestCaseVo.
+        r"""Sets the custom_field_11 of this TestCaseVo.
 
         自定义字段11
 
@@ -3324,7 +3324,7 @@ class TestCaseVo:
 
     @property
     def custom_field_12(self):
-        """Gets the custom_field_12 of this TestCaseVo.
+        r"""Gets the custom_field_12 of this TestCaseVo.
 
         自定义字段12
 
@@ -3335,7 +3335,7 @@ class TestCaseVo:
 
     @custom_field_12.setter
     def custom_field_12(self, custom_field_12):
-        """Sets the custom_field_12 of this TestCaseVo.
+        r"""Sets the custom_field_12 of this TestCaseVo.
 
         自定义字段12
 
@@ -3346,7 +3346,7 @@ class TestCaseVo:
 
     @property
     def custom_field_13(self):
-        """Gets the custom_field_13 of this TestCaseVo.
+        r"""Gets the custom_field_13 of this TestCaseVo.
 
         自定义字段13
 
@@ -3357,7 +3357,7 @@ class TestCaseVo:
 
     @custom_field_13.setter
     def custom_field_13(self, custom_field_13):
-        """Sets the custom_field_13 of this TestCaseVo.
+        r"""Sets the custom_field_13 of this TestCaseVo.
 
         自定义字段13
 
@@ -3368,7 +3368,7 @@ class TestCaseVo:
 
     @property
     def custom_field_14(self):
-        """Gets the custom_field_14 of this TestCaseVo.
+        r"""Gets the custom_field_14 of this TestCaseVo.
 
         自定义字段14
 
@@ -3379,7 +3379,7 @@ class TestCaseVo:
 
     @custom_field_14.setter
     def custom_field_14(self, custom_field_14):
-        """Sets the custom_field_14 of this TestCaseVo.
+        r"""Sets the custom_field_14 of this TestCaseVo.
 
         自定义字段14
 
@@ -3390,7 +3390,7 @@ class TestCaseVo:
 
     @property
     def custom_field_15(self):
-        """Gets the custom_field_15 of this TestCaseVo.
+        r"""Gets the custom_field_15 of this TestCaseVo.
 
         自定义字段15
 
@@ -3401,7 +3401,7 @@ class TestCaseVo:
 
     @custom_field_15.setter
     def custom_field_15(self, custom_field_15):
-        """Sets the custom_field_15 of this TestCaseVo.
+        r"""Sets the custom_field_15 of this TestCaseVo.
 
         自定义字段15
 
@@ -3412,7 +3412,7 @@ class TestCaseVo:
 
     @property
     def custom_field_16(self):
-        """Gets the custom_field_16 of this TestCaseVo.
+        r"""Gets the custom_field_16 of this TestCaseVo.
 
         自定义字段16
 
@@ -3423,7 +3423,7 @@ class TestCaseVo:
 
     @custom_field_16.setter
     def custom_field_16(self, custom_field_16):
-        """Sets the custom_field_16 of this TestCaseVo.
+        r"""Sets the custom_field_16 of this TestCaseVo.
 
         自定义字段16
 
@@ -3434,7 +3434,7 @@ class TestCaseVo:
 
     @property
     def custom_field_17(self):
-        """Gets the custom_field_17 of this TestCaseVo.
+        r"""Gets the custom_field_17 of this TestCaseVo.
 
         自定义字段17
 
@@ -3445,7 +3445,7 @@ class TestCaseVo:
 
     @custom_field_17.setter
     def custom_field_17(self, custom_field_17):
-        """Sets the custom_field_17 of this TestCaseVo.
+        r"""Sets the custom_field_17 of this TestCaseVo.
 
         自定义字段17
 
@@ -3456,7 +3456,7 @@ class TestCaseVo:
 
     @property
     def custom_field_18(self):
-        """Gets the custom_field_18 of this TestCaseVo.
+        r"""Gets the custom_field_18 of this TestCaseVo.
 
         自定义字段18
 
@@ -3467,7 +3467,7 @@ class TestCaseVo:
 
     @custom_field_18.setter
     def custom_field_18(self, custom_field_18):
-        """Sets the custom_field_18 of this TestCaseVo.
+        r"""Sets the custom_field_18 of this TestCaseVo.
 
         自定义字段18
 
@@ -3478,7 +3478,7 @@ class TestCaseVo:
 
     @property
     def custom_field_19(self):
-        """Gets the custom_field_19 of this TestCaseVo.
+        r"""Gets the custom_field_19 of this TestCaseVo.
 
         自定义字段19
 
@@ -3489,7 +3489,7 @@ class TestCaseVo:
 
     @custom_field_19.setter
     def custom_field_19(self, custom_field_19):
-        """Sets the custom_field_19 of this TestCaseVo.
+        r"""Sets the custom_field_19 of this TestCaseVo.
 
         自定义字段19
 
@@ -3500,7 +3500,7 @@ class TestCaseVo:
 
     @property
     def custom_field_20(self):
-        """Gets the custom_field_20 of this TestCaseVo.
+        r"""Gets the custom_field_20 of this TestCaseVo.
 
         自定义字段20
 
@@ -3511,7 +3511,7 @@ class TestCaseVo:
 
     @custom_field_20.setter
     def custom_field_20(self, custom_field_20):
-        """Sets the custom_field_20 of this TestCaseVo.
+        r"""Sets the custom_field_20 of this TestCaseVo.
 
         自定义字段20
 
@@ -3522,7 +3522,7 @@ class TestCaseVo:
 
     @property
     def custom_field_21(self):
-        """Gets the custom_field_21 of this TestCaseVo.
+        r"""Gets the custom_field_21 of this TestCaseVo.
 
         自定义字段21
 
@@ -3533,7 +3533,7 @@ class TestCaseVo:
 
     @custom_field_21.setter
     def custom_field_21(self, custom_field_21):
-        """Sets the custom_field_21 of this TestCaseVo.
+        r"""Sets the custom_field_21 of this TestCaseVo.
 
         自定义字段21
 
@@ -3544,7 +3544,7 @@ class TestCaseVo:
 
     @property
     def custom_field_22(self):
-        """Gets the custom_field_22 of this TestCaseVo.
+        r"""Gets the custom_field_22 of this TestCaseVo.
 
         自定义字段22
 
@@ -3555,7 +3555,7 @@ class TestCaseVo:
 
     @custom_field_22.setter
     def custom_field_22(self, custom_field_22):
-        """Sets the custom_field_22 of this TestCaseVo.
+        r"""Sets the custom_field_22 of this TestCaseVo.
 
         自定义字段22
 
@@ -3566,7 +3566,7 @@ class TestCaseVo:
 
     @property
     def custom_field_23(self):
-        """Gets the custom_field_23 of this TestCaseVo.
+        r"""Gets the custom_field_23 of this TestCaseVo.
 
         自定义字段23
 
@@ -3577,7 +3577,7 @@ class TestCaseVo:
 
     @custom_field_23.setter
     def custom_field_23(self, custom_field_23):
-        """Sets the custom_field_23 of this TestCaseVo.
+        r"""Sets the custom_field_23 of this TestCaseVo.
 
         自定义字段23
 
@@ -3588,7 +3588,7 @@ class TestCaseVo:
 
     @property
     def custom_field_24(self):
-        """Gets the custom_field_24 of this TestCaseVo.
+        r"""Gets the custom_field_24 of this TestCaseVo.
 
         自定义字段24
 
@@ -3599,7 +3599,7 @@ class TestCaseVo:
 
     @custom_field_24.setter
     def custom_field_24(self, custom_field_24):
-        """Sets the custom_field_24 of this TestCaseVo.
+        r"""Sets the custom_field_24 of this TestCaseVo.
 
         自定义字段24
 
@@ -3610,7 +3610,7 @@ class TestCaseVo:
 
     @property
     def custom_field_25(self):
-        """Gets the custom_field_25 of this TestCaseVo.
+        r"""Gets the custom_field_25 of this TestCaseVo.
 
         自定义字段25
 
@@ -3621,7 +3621,7 @@ class TestCaseVo:
 
     @custom_field_25.setter
     def custom_field_25(self, custom_field_25):
-        """Sets the custom_field_25 of this TestCaseVo.
+        r"""Sets the custom_field_25 of this TestCaseVo.
 
         自定义字段25
 

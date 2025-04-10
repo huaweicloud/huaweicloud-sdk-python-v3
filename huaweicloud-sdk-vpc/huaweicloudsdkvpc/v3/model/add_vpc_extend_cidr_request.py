@@ -27,7 +27,7 @@ class AddVpcExtendCidrRequest:
     }
 
     def __init__(self, vpc_id=None, body=None):
-        """AddVpcExtendCidrRequest
+        r"""AddVpcExtendCidrRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddVpcExtendCidrRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AddVpcExtendCidrRequest.
+        r"""Gets the vpc_id of this AddVpcExtendCidrRequest.
 
         VPC资源ID
 
@@ -60,7 +60,7 @@ class AddVpcExtendCidrRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AddVpcExtendCidrRequest.
+        r"""Sets the vpc_id of this AddVpcExtendCidrRequest.
 
         VPC资源ID
 
@@ -71,7 +71,7 @@ class AddVpcExtendCidrRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddVpcExtendCidrRequest.
+        r"""Gets the body of this AddVpcExtendCidrRequest.
 
         :return: The body of this AddVpcExtendCidrRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequestBody`
@@ -80,7 +80,7 @@ class AddVpcExtendCidrRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddVpcExtendCidrRequest.
+        r"""Sets the body of this AddVpcExtendCidrRequest.
 
         :param body: The body of this AddVpcExtendCidrRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequestBody`

@@ -29,7 +29,7 @@ class ValueInAttributes:
     }
 
     def __init__(self, value=None, optional=None, metadata=None):
-        """ValueInAttributes
+        r"""ValueInAttributes
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ValueInAttributes:
 
     @property
     def value(self):
-        """Gets the value of this ValueInAttributes.
+        r"""Gets the value of this ValueInAttributes.
 
         value 最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
@@ -67,7 +67,7 @@ class ValueInAttributes:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ValueInAttributes.
+        r"""Sets the value of this ValueInAttributes.
 
         value 最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
@@ -78,7 +78,7 @@ class ValueInAttributes:
 
     @property
     def optional(self):
-        """Gets the optional of this ValueInAttributes.
+        r"""Gets the optional of this ValueInAttributes.
 
         标识属性是否可选，默认为true
 
@@ -89,7 +89,7 @@ class ValueInAttributes:
 
     @optional.setter
     def optional(self, optional):
-        """Sets the optional of this ValueInAttributes.
+        r"""Sets the optional of this ValueInAttributes.
 
         标识属性是否可选，默认为true
 
@@ -100,7 +100,7 @@ class ValueInAttributes:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ValueInAttributes.
+        r"""Gets the metadata of this ValueInAttributes.
 
         :return: The metadata of this ValueInAttributes.
         :rtype: :class:`huaweicloudsdkief.v1.Metadata`
@@ -109,7 +109,7 @@ class ValueInAttributes:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ValueInAttributes.
+        r"""Sets the metadata of this ValueInAttributes.
 
         :param metadata: The metadata of this ValueInAttributes.
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`

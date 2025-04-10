@@ -27,7 +27,7 @@ class CertInfo:
     }
 
     def __init__(self, category=None, download_link=None):
-        """CertInfo
+        r"""CertInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CertInfo:
 
     @property
     def category(self):
-        """Gets the category of this CertInfo.
+        r"""Gets the category of this CertInfo.
 
         证书种类
 
@@ -59,7 +59,7 @@ class CertInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CertInfo.
+        r"""Sets the category of this CertInfo.
 
         证书种类
 
@@ -70,7 +70,7 @@ class CertInfo:
 
     @property
     def download_link(self):
-        """Gets the download_link of this CertInfo.
+        r"""Gets the download_link of this CertInfo.
 
         证书下载链接
 
@@ -81,7 +81,7 @@ class CertInfo:
 
     @download_link.setter
     def download_link(self, download_link):
-        """Sets the download_link of this CertInfo.
+        r"""Sets the download_link of this CertInfo.
 
         证书下载链接
 

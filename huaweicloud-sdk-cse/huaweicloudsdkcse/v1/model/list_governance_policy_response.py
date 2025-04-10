@@ -26,7 +26,7 @@ class ListGovernancePolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListGovernancePolicyResponse
+        r"""ListGovernancePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListGovernancePolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListGovernancePolicyResponse.
+        r"""Gets the body of this ListGovernancePolicyResponse.
 
         查询治理策略列表响应结构体。
 
@@ -55,7 +55,7 @@ class ListGovernancePolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListGovernancePolicyResponse.
+        r"""Sets the body of this ListGovernancePolicyResponse.
 
         查询治理策略列表响应结构体。
 

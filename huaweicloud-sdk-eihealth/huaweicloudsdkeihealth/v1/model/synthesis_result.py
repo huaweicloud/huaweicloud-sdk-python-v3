@@ -33,7 +33,7 @@ class SynthesisResult:
     }
 
     def __init__(self, smiles=None, top_n=None, max_search_depth=None, max_prediction_per_product=None, result=None):
-        """SynthesisResult
+        r"""SynthesisResult
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class SynthesisResult:
 
     @property
     def smiles(self):
-        """Gets the smiles of this SynthesisResult.
+        r"""Gets the smiles of this SynthesisResult.
 
         分子SMILES表达式
 
@@ -77,7 +77,7 @@ class SynthesisResult:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this SynthesisResult.
+        r"""Sets the smiles of this SynthesisResult.
 
         分子SMILES表达式
 
@@ -88,7 +88,7 @@ class SynthesisResult:
 
     @property
     def top_n(self):
-        """Gets the top_n of this SynthesisResult.
+        r"""Gets the top_n of this SynthesisResult.
 
         期望返回的条目数
 
@@ -99,7 +99,7 @@ class SynthesisResult:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this SynthesisResult.
+        r"""Sets the top_n of this SynthesisResult.
 
         期望返回的条目数
 
@@ -110,7 +110,7 @@ class SynthesisResult:
 
     @property
     def max_search_depth(self):
-        """Gets the max_search_depth of this SynthesisResult.
+        r"""Gets the max_search_depth of this SynthesisResult.
 
         期望搜索的最大深度
 
@@ -121,7 +121,7 @@ class SynthesisResult:
 
     @max_search_depth.setter
     def max_search_depth(self, max_search_depth):
-        """Sets the max_search_depth of this SynthesisResult.
+        r"""Sets the max_search_depth of this SynthesisResult.
 
         期望搜索的最大深度
 
@@ -132,7 +132,7 @@ class SynthesisResult:
 
     @property
     def max_prediction_per_product(self):
-        """Gets the max_prediction_per_product of this SynthesisResult.
+        r"""Gets the max_prediction_per_product of this SynthesisResult.
 
         期望每个产物的最多反应数量
 
@@ -143,7 +143,7 @@ class SynthesisResult:
 
     @max_prediction_per_product.setter
     def max_prediction_per_product(self, max_prediction_per_product):
-        """Sets the max_prediction_per_product of this SynthesisResult.
+        r"""Sets the max_prediction_per_product of this SynthesisResult.
 
         期望每个产物的最多反应数量
 
@@ -154,7 +154,7 @@ class SynthesisResult:
 
     @property
     def result(self):
-        """Gets the result of this SynthesisResult.
+        r"""Gets the result of this SynthesisResult.
 
         :return: The result of this SynthesisResult.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SynthesisResultResult`
@@ -163,7 +163,7 @@ class SynthesisResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SynthesisResult.
+        r"""Sets the result of this SynthesisResult.
 
         :param result: The result of this SynthesisResult.
         :type result: :class:`huaweicloudsdkeihealth.v1.SynthesisResultResult`

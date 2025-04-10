@@ -27,7 +27,7 @@ class SearchCodeTablesResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """SearchCodeTablesResultDataValue
+        r"""SearchCodeTablesResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchCodeTablesResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this SearchCodeTablesResultDataValue.
+        r"""Gets the total of this SearchCodeTablesResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class SearchCodeTablesResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchCodeTablesResultDataValue.
+        r"""Sets the total of this SearchCodeTablesResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class SearchCodeTablesResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this SearchCodeTablesResultDataValue.
+        r"""Gets the records of this SearchCodeTablesResultDataValue.
 
         查询到的码表对象（CodeTableVO）数组。
 
@@ -83,7 +83,7 @@ class SearchCodeTablesResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this SearchCodeTablesResultDataValue.
+        r"""Sets the records of this SearchCodeTablesResultDataValue.
 
         查询到的码表对象（CodeTableVO）数组。
 

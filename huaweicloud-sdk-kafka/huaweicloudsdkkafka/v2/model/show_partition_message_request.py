@@ -31,7 +31,7 @@ class ShowPartitionMessageRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, partition=None, message_offset=None):
-        """ShowPartitionMessageRequest
+        r"""ShowPartitionMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowPartitionMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPartitionMessageRequest.
+        r"""Gets the instance_id of this ShowPartitionMessageRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ShowPartitionMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPartitionMessageRequest.
+        r"""Sets the instance_id of this ShowPartitionMessageRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ShowPartitionMessageRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowPartitionMessageRequest.
+        r"""Gets the topic of this ShowPartitionMessageRequest.
 
         Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -93,7 +93,7 @@ class ShowPartitionMessageRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowPartitionMessageRequest.
+        r"""Sets the topic of this ShowPartitionMessageRequest.
 
         Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -104,7 +104,7 @@ class ShowPartitionMessageRequest:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowPartitionMessageRequest.
+        r"""Gets the partition of this ShowPartitionMessageRequest.
 
         分区编号。
 
@@ -115,7 +115,7 @@ class ShowPartitionMessageRequest:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowPartitionMessageRequest.
+        r"""Sets the partition of this ShowPartitionMessageRequest.
 
         分区编号。
 
@@ -126,7 +126,7 @@ class ShowPartitionMessageRequest:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ShowPartitionMessageRequest.
+        r"""Gets the message_offset of this ShowPartitionMessageRequest.
 
         消息位置。
 
@@ -137,7 +137,7 @@ class ShowPartitionMessageRequest:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowPartitionMessageRequest.
+        r"""Sets the message_offset of this ShowPartitionMessageRequest.
 
         消息位置。
 

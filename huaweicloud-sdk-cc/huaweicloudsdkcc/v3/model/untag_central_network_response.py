@@ -26,7 +26,7 @@ class UntagCentralNetworkResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UntagCentralNetworkResponse
+        r"""UntagCentralNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UntagCentralNetworkResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UntagCentralNetworkResponse.
+        r"""Gets the x_request_id of this UntagCentralNetworkResponse.
 
         :return: The x_request_id of this UntagCentralNetworkResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UntagCentralNetworkResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UntagCentralNetworkResponse.
+        r"""Sets the x_request_id of this UntagCentralNetworkResponse.
 
         :param x_request_id: The x_request_id of this UntagCentralNetworkResponse.
         :type x_request_id: str

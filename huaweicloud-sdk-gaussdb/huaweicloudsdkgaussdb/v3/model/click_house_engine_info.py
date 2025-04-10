@@ -27,7 +27,7 @@ class ClickHouseEngineInfo:
     }
 
     def __init__(self, type=None, version=None):
-        """ClickHouseEngineInfo
+        r"""ClickHouseEngineInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ClickHouseEngineInfo:
 
     @property
     def type(self):
-        """Gets the type of this ClickHouseEngineInfo.
+        r"""Gets the type of this ClickHouseEngineInfo.
 
         数据库引擎类型，现在只支持click-house。
 
@@ -59,7 +59,7 @@ class ClickHouseEngineInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClickHouseEngineInfo.
+        r"""Sets the type of this ClickHouseEngineInfo.
 
         数据库引擎类型，现在只支持click-house。
 
@@ -70,7 +70,7 @@ class ClickHouseEngineInfo:
 
     @property
     def version(self):
-        """Gets the version of this ClickHouseEngineInfo.
+        r"""Gets the version of this ClickHouseEngineInfo.
 
         数据库版本，可通过“HTAP查询引擎信息”获取。 一位数的大版本号。
 
@@ -81,7 +81,7 @@ class ClickHouseEngineInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClickHouseEngineInfo.
+        r"""Sets the version of this ClickHouseEngineInfo.
 
         数据库版本，可通过“HTAP查询引擎信息”获取。 一位数的大版本号。
 

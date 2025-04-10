@@ -31,7 +31,7 @@ class LbaasListener:
     }
 
     def __init__(self, listener_id=None, pool_id=None, protocol_port=None, weight=None):
-        """LbaasListener
+        r"""LbaasListener
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LbaasListener:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this LbaasListener.
+        r"""Gets the listener_id of this LbaasListener.
 
         监听器ID。
 
@@ -75,7 +75,7 @@ class LbaasListener:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this LbaasListener.
+        r"""Sets the listener_id of this LbaasListener.
 
         监听器ID。
 
@@ -86,7 +86,7 @@ class LbaasListener:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this LbaasListener.
+        r"""Gets the pool_id of this LbaasListener.
 
         后端云服务器组ID。
 
@@ -97,7 +97,7 @@ class LbaasListener:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this LbaasListener.
+        r"""Sets the pool_id of this LbaasListener.
 
         后端云服务器组ID。
 
@@ -108,7 +108,7 @@ class LbaasListener:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this LbaasListener.
+        r"""Gets the protocol_port of this LbaasListener.
 
         后端协议端口，指后端云服务器监听的端口。
 
@@ -119,7 +119,7 @@ class LbaasListener:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this LbaasListener.
+        r"""Sets the protocol_port of this LbaasListener.
 
         后端协议端口，指后端云服务器监听的端口。
 
@@ -130,7 +130,7 @@ class LbaasListener:
 
     @property
     def weight(self):
-        """Gets the weight of this LbaasListener.
+        r"""Gets the weight of this LbaasListener.
 
         权重，指后端云服务器分发得到请求的数量比例。
 
@@ -141,7 +141,7 @@ class LbaasListener:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this LbaasListener.
+        r"""Sets the weight of this LbaasListener.
 
         权重，指后端云服务器分发得到请求的数量比例。
 

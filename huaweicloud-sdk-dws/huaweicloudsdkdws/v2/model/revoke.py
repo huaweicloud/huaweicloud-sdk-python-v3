@@ -27,7 +27,7 @@ class Revoke:
     }
 
     def __init__(self, permission=None, revoke_with=None):
-        """Revoke
+        r"""Revoke
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Revoke:
 
     @property
     def permission(self):
-        """Gets the permission of this Revoke.
+        r"""Gets the permission of this Revoke.
 
         权限名称，根据不通数据库对象类型，拥有权限不同 - database  CREATE | CONNECT | TEMPORARY | TEMP  ALL  PRIVILEGES - schema  CREATE | USAGE | ALTER | DROP  ALL  PRIVILEGES - table  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - view  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES   | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - column  SELECT | INSERT | UPDATE | REFERENCES  ALL  PRIVILEGES - function  EXECUTE  ALL  PRIVILEGES - sequence  SELECT | UPDATE | USAGE  ALL  PRIVILEGES - nodegroup  CREATE | USAGE | COMPUTE  ALL  PRIVILEGES - role  role_name（角色名称）
 
@@ -59,7 +59,7 @@ class Revoke:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this Revoke.
+        r"""Sets the permission of this Revoke.
 
         权限名称，根据不通数据库对象类型，拥有权限不同 - database  CREATE | CONNECT | TEMPORARY | TEMP  ALL  PRIVILEGES - schema  CREATE | USAGE | ALTER | DROP  ALL  PRIVILEGES - table  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - view  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES   | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - column  SELECT | INSERT | UPDATE | REFERENCES  ALL  PRIVILEGES - function  EXECUTE  ALL  PRIVILEGES - sequence  SELECT | UPDATE | USAGE  ALL  PRIVILEGES - nodegroup  CREATE | USAGE | COMPUTE  ALL  PRIVILEGES - role  role_name（角色名称）
 
@@ -70,7 +70,7 @@ class Revoke:
 
     @property
     def revoke_with(self):
-        """Gets the revoke_with of this Revoke.
+        r"""Gets the revoke_with of this Revoke.
 
         是否仅移除授权选项
 
@@ -81,7 +81,7 @@ class Revoke:
 
     @revoke_with.setter
     def revoke_with(self, revoke_with):
-        """Sets the revoke_with of this Revoke.
+        r"""Sets the revoke_with of this Revoke.
 
         是否仅移除授权选项
 

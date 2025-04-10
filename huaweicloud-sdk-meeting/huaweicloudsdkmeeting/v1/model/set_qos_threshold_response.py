@@ -28,7 +28,7 @@ class SetQosThresholdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None):
-        """SetQosThresholdResponse
+        r"""SetQosThresholdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SetQosThresholdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this SetQosThresholdResponse.
+        r"""Gets the code of this SetQosThresholdResponse.
 
         返回码
 
@@ -62,7 +62,7 @@ class SetQosThresholdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SetQosThresholdResponse.
+        r"""Sets the code of this SetQosThresholdResponse.
 
         返回码
 
@@ -73,7 +73,7 @@ class SetQosThresholdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this SetQosThresholdResponse.
+        r"""Gets the message of this SetQosThresholdResponse.
 
         返回信息
 
@@ -84,7 +84,7 @@ class SetQosThresholdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SetQosThresholdResponse.
+        r"""Sets the message of this SetQosThresholdResponse.
 
         返回信息
 

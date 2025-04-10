@@ -27,7 +27,7 @@ class ShowConcurrencyPackageUsingRequest:
     }
 
     def __init__(self, service_id=None, test_type=None):
-        """ShowConcurrencyPackageUsingRequest
+        r"""ShowConcurrencyPackageUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowConcurrencyPackageUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowConcurrencyPackageUsingRequest.
+        r"""Gets the service_id of this ShowConcurrencyPackageUsingRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ShowConcurrencyPackageUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowConcurrencyPackageUsingRequest.
+        r"""Sets the service_id of this ShowConcurrencyPackageUsingRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ShowConcurrencyPackageUsingRequest:
 
     @property
     def test_type(self):
-        """Gets the test_type of this ShowConcurrencyPackageUsingRequest.
+        r"""Gets the test_type of this ShowConcurrencyPackageUsingRequest.
 
         test_type
 
@@ -82,7 +82,7 @@ class ShowConcurrencyPackageUsingRequest:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this ShowConcurrencyPackageUsingRequest.
+        r"""Sets the test_type of this ShowConcurrencyPackageUsingRequest.
 
         test_type
 

@@ -31,7 +31,7 @@ class Topics:
     }
 
     def __init__(self, name=None, topic_urn=None, display_name=None, push_policy=None):
-        """Topics
+        r"""Topics
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Topics:
 
     @property
     def name(self):
-        """Gets the name of this Topics.
+        r"""Gets the name of this Topics.
 
         主题名称
 
@@ -73,7 +73,7 @@ class Topics:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Topics.
+        r"""Sets the name of this Topics.
 
         主题名称
 
@@ -84,7 +84,7 @@ class Topics:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this Topics.
+        r"""Gets the topic_urn of this Topics.
 
         Topic的唯一的资源标识。
 
@@ -95,7 +95,7 @@ class Topics:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this Topics.
+        r"""Sets the topic_urn of this Topics.
 
         Topic的唯一的资源标识。
 
@@ -106,7 +106,7 @@ class Topics:
 
     @property
     def display_name(self):
-        """Gets the display_name of this Topics.
+        r"""Gets the display_name of this Topics.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示
 
@@ -117,7 +117,7 @@ class Topics:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this Topics.
+        r"""Sets the display_name of this Topics.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示
 
@@ -128,7 +128,7 @@ class Topics:
 
     @property
     def push_policy(self):
-        """Gets the push_policy of this Topics.
+        r"""Gets the push_policy of this Topics.
 
         消息推送的策略
 
@@ -139,7 +139,7 @@ class Topics:
 
     @push_policy.setter
     def push_policy(self, push_policy):
-        """Sets the push_policy of this Topics.
+        r"""Sets the push_policy of this Topics.
 
         消息推送的策略
 

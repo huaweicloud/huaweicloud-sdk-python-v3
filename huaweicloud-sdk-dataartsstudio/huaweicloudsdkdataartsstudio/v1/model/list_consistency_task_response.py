@@ -28,7 +28,7 @@ class ListConsistencyTaskResponse(SdkResponse):
     }
 
     def __init__(self, count=None, resources=None):
-        """ListConsistencyTaskResponse
+        r"""ListConsistencyTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConsistencyTaskResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListConsistencyTaskResponse.
+        r"""Gets the count of this ListConsistencyTaskResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListConsistencyTaskResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListConsistencyTaskResponse.
+        r"""Sets the count of this ListConsistencyTaskResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListConsistencyTaskResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListConsistencyTaskResponse.
+        r"""Gets the resources of this ListConsistencyTaskResponse.
 
         分页数据
 
@@ -84,7 +84,7 @@ class ListConsistencyTaskResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListConsistencyTaskResponse.
+        r"""Sets the resources of this ListConsistencyTaskResponse.
 
         分页数据
 

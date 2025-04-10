@@ -27,7 +27,7 @@ class CopyBackupRequest:
     }
 
     def __init__(self, backup_id=None, body=None):
-        """CopyBackupRequest
+        r"""CopyBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this CopyBackupRequest.
+        r"""Gets the backup_id of this CopyBackupRequest.
 
         复制的备份ID
 
@@ -60,7 +60,7 @@ class CopyBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this CopyBackupRequest.
+        r"""Sets the backup_id of this CopyBackupRequest.
 
         复制的备份ID
 
@@ -71,7 +71,7 @@ class CopyBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyBackupRequest.
+        r"""Gets the body of this CopyBackupRequest.
 
         :return: The body of this CopyBackupRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateReq`
@@ -80,7 +80,7 @@ class CopyBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyBackupRequest.
+        r"""Sets the body of this CopyBackupRequest.
 
         :param body: The body of this CopyBackupRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BackupReplicateReq`

@@ -39,7 +39,7 @@ class AddAppIdResponse(SdkResponse):
     }
 
     def __init__(self, app_name=None, app_id=None, app_key=None, description=None, create_time=None, last_update_time=None, status=None):
-        """AddAppIdResponse
+        r"""AddAppIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this AddAppIdResponse.
+        r"""Gets the app_name of this AddAppIdResponse.
 
         企业应用名称
 
@@ -98,7 +98,7 @@ class AddAppIdResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AddAppIdResponse.
+        r"""Sets the app_name of this AddAppIdResponse.
 
         企业应用名称
 
@@ -109,7 +109,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddAppIdResponse.
+        r"""Gets the app_id of this AddAppIdResponse.
 
         企业应用ID
 
@@ -120,7 +120,7 @@ class AddAppIdResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddAppIdResponse.
+        r"""Sets the app_id of this AddAppIdResponse.
 
         企业应用ID
 
@@ -131,7 +131,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this AddAppIdResponse.
+        r"""Gets the app_key of this AddAppIdResponse.
 
         企业应用appkey
 
@@ -142,7 +142,7 @@ class AddAppIdResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AddAppIdResponse.
+        r"""Sets the app_key of this AddAppIdResponse.
 
         企业应用appkey
 
@@ -153,7 +153,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this AddAppIdResponse.
+        r"""Gets the description of this AddAppIdResponse.
 
         企业应用描述
 
@@ -164,7 +164,7 @@ class AddAppIdResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddAppIdResponse.
+        r"""Sets the description of this AddAppIdResponse.
 
         企业应用描述
 
@@ -175,7 +175,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this AddAppIdResponse.
+        r"""Gets the create_time of this AddAppIdResponse.
 
         企业应用创建时间
 
@@ -186,7 +186,7 @@ class AddAppIdResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AddAppIdResponse.
+        r"""Sets the create_time of this AddAppIdResponse.
 
         企业应用创建时间
 
@@ -197,7 +197,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this AddAppIdResponse.
+        r"""Gets the last_update_time of this AddAppIdResponse.
 
         最近修改时间
 
@@ -208,7 +208,7 @@ class AddAppIdResponse(SdkResponse):
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this AddAppIdResponse.
+        r"""Sets the last_update_time of this AddAppIdResponse.
 
         最近修改时间
 
@@ -219,7 +219,7 @@ class AddAppIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddAppIdResponse.
+        r"""Gets the status of this AddAppIdResponse.
 
         企业应用状态  * 0：正常  * 1：停用 
 
@@ -230,7 +230,7 @@ class AddAppIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddAppIdResponse.
+        r"""Sets the status of this AddAppIdResponse.
 
         企业应用状态  * 0：正常  * 1：停用 
 

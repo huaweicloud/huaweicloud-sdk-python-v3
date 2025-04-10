@@ -29,7 +29,7 @@ class ShowWelcomeSpeechSwitchRequest:
     }
 
     def __init__(self, x_app_user_id=None, robot_id=None, language=None):
-        """ShowWelcomeSpeechSwitchRequest
+        r"""ShowWelcomeSpeechSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowWelcomeSpeechSwitchRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowWelcomeSpeechSwitchRequest.
+        r"""Gets the x_app_user_id of this ShowWelcomeSpeechSwitchRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class ShowWelcomeSpeechSwitchRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowWelcomeSpeechSwitchRequest.
+        r"""Sets the x_app_user_id of this ShowWelcomeSpeechSwitchRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class ShowWelcomeSpeechSwitchRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ShowWelcomeSpeechSwitchRequest.
+        r"""Gets the robot_id of this ShowWelcomeSpeechSwitchRequest.
 
         应用ID。
 
@@ -89,7 +89,7 @@ class ShowWelcomeSpeechSwitchRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ShowWelcomeSpeechSwitchRequest.
+        r"""Sets the robot_id of this ShowWelcomeSpeechSwitchRequest.
 
         应用ID。
 
@@ -100,7 +100,7 @@ class ShowWelcomeSpeechSwitchRequest:
 
     @property
     def language(self):
-        """Gets the language of this ShowWelcomeSpeechSwitchRequest.
+        r"""Gets the language of this ShowWelcomeSpeechSwitchRequest.
 
         智能交互语言  * CN:中文  * EN:英文
 
@@ -111,7 +111,7 @@ class ShowWelcomeSpeechSwitchRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowWelcomeSpeechSwitchRequest.
+        r"""Sets the language of this ShowWelcomeSpeechSwitchRequest.
 
         智能交互语言  * CN:中文  * EN:英文
 

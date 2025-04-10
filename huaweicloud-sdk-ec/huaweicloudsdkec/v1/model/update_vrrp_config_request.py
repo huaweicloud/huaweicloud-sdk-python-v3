@@ -29,7 +29,7 @@ class UpdateVrrpConfigRequest:
     }
 
     def __init__(self, ieg_id=None, virtual_router_id=None, body=None):
-        """UpdateVrrpConfigRequest
+        r"""UpdateVrrpConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVrrpConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateVrrpConfigRequest.
+        r"""Gets the ieg_id of this UpdateVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateVrrpConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateVrrpConfigRequest.
+        r"""Sets the ieg_id of this UpdateVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateVrrpConfigRequest:
 
     @property
     def virtual_router_id(self):
-        """Gets the virtual_router_id of this UpdateVrrpConfigRequest.
+        r"""Gets the virtual_router_id of this UpdateVrrpConfigRequest.
 
         虚路由ID
 
@@ -88,7 +88,7 @@ class UpdateVrrpConfigRequest:
 
     @virtual_router_id.setter
     def virtual_router_id(self, virtual_router_id):
-        """Sets the virtual_router_id of this UpdateVrrpConfigRequest.
+        r"""Sets the virtual_router_id of this UpdateVrrpConfigRequest.
 
         虚路由ID
 
@@ -99,7 +99,7 @@ class UpdateVrrpConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVrrpConfigRequest.
+        r"""Gets the body of this UpdateVrrpConfigRequest.
 
         :return: The body of this UpdateVrrpConfigRequest.
         :rtype: :class:`huaweicloudsdkec.v1.CreateUpdateVrrpConfigRequestBody`
@@ -108,7 +108,7 @@ class UpdateVrrpConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVrrpConfigRequest.
+        r"""Sets the body of this UpdateVrrpConfigRequest.
 
         :param body: The body of this UpdateVrrpConfigRequest.
         :type body: :class:`huaweicloudsdkec.v1.CreateUpdateVrrpConfigRequestBody`

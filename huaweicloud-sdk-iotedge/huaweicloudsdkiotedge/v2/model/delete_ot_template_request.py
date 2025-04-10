@@ -25,7 +25,7 @@ class DeleteOtTemplateRequest:
     }
 
     def __init__(self, tpl_id=None):
-        """DeleteOtTemplateRequest
+        r"""DeleteOtTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteOtTemplateRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this DeleteOtTemplateRequest.
+        r"""Gets the tpl_id of this DeleteOtTemplateRequest.
 
         模板id，节点下唯一。
 
@@ -53,7 +53,7 @@ class DeleteOtTemplateRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this DeleteOtTemplateRequest.
+        r"""Sets the tpl_id of this DeleteOtTemplateRequest.
 
         模板id，节点下唯一。
 

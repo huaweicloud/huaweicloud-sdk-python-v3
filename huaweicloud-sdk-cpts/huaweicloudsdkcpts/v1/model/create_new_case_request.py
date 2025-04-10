@@ -25,7 +25,7 @@ class CreateNewCaseRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNewCaseRequest
+        r"""CreateNewCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNewCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNewCaseRequest.
+        r"""Gets the body of this CreateNewCaseRequest.
 
         :return: The body of this CreateNewCaseRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
@@ -52,7 +52,7 @@ class CreateNewCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNewCaseRequest.
+        r"""Sets the body of this CreateNewCaseRequest.
 
         :param body: The body of this CreateNewCaseRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`

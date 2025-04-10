@@ -29,7 +29,7 @@ class UpdatePermissionSetReqBody:
     }
 
     def __init__(self, description=None, relay_state=None, session_duration=None):
-        """UpdatePermissionSetReqBody
+        r"""UpdatePermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePermissionSetReqBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePermissionSetReqBody.
+        r"""Gets the description of this UpdatePermissionSetReqBody.
 
         权限集描述
 
@@ -68,7 +68,7 @@ class UpdatePermissionSetReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePermissionSetReqBody.
+        r"""Sets the description of this UpdatePermissionSetReqBody.
 
         权限集描述
 
@@ -79,7 +79,7 @@ class UpdatePermissionSetReqBody:
 
     @property
     def relay_state(self):
-        """Gets the relay_state of this UpdatePermissionSetReqBody.
+        r"""Gets the relay_state of this UpdatePermissionSetReqBody.
 
         用于在联合身份验证过程中重定向应用程序中的用户
 
@@ -90,7 +90,7 @@ class UpdatePermissionSetReqBody:
 
     @relay_state.setter
     def relay_state(self, relay_state):
-        """Sets the relay_state of this UpdatePermissionSetReqBody.
+        r"""Sets the relay_state of this UpdatePermissionSetReqBody.
 
         用于在联合身份验证过程中重定向应用程序中的用户
 
@@ -101,7 +101,7 @@ class UpdatePermissionSetReqBody:
 
     @property
     def session_duration(self):
-        """Gets the session_duration of this UpdatePermissionSetReqBody.
+        r"""Gets the session_duration of this UpdatePermissionSetReqBody.
 
         应用程序用户会话在ISO-8601标准中有效的时间长度
 
@@ -112,7 +112,7 @@ class UpdatePermissionSetReqBody:
 
     @session_duration.setter
     def session_duration(self, session_duration):
-        """Sets the session_duration of this UpdatePermissionSetReqBody.
+        r"""Sets the session_duration of this UpdatePermissionSetReqBody.
 
         应用程序用户会话在ISO-8601标准中有效的时间长度
 

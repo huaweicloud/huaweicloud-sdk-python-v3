@@ -29,7 +29,7 @@ class AccessPolicyObjectInfo:
     }
 
     def __init__(self, object_id=None, object_type=None, object_name=None):
-        """AccessPolicyObjectInfo
+        r"""AccessPolicyObjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AccessPolicyObjectInfo:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AccessPolicyObjectInfo.
+        r"""Gets the object_id of this AccessPolicyObjectInfo.
 
         黑名单中的对象id。
 
@@ -66,7 +66,7 @@ class AccessPolicyObjectInfo:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AccessPolicyObjectInfo.
+        r"""Sets the object_id of this AccessPolicyObjectInfo.
 
         黑名单中的对象id。
 
@@ -77,7 +77,7 @@ class AccessPolicyObjectInfo:
 
     @property
     def object_type(self):
-        """Gets the object_type of this AccessPolicyObjectInfo.
+        r"""Gets the object_type of this AccessPolicyObjectInfo.
 
         对象类型。 * USER： 用户 * USERGROUP： 用户组
 
@@ -88,7 +88,7 @@ class AccessPolicyObjectInfo:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this AccessPolicyObjectInfo.
+        r"""Sets the object_type of this AccessPolicyObjectInfo.
 
         对象类型。 * USER： 用户 * USERGROUP： 用户组
 
@@ -99,7 +99,7 @@ class AccessPolicyObjectInfo:
 
     @property
     def object_name(self):
-        """Gets the object_name of this AccessPolicyObjectInfo.
+        r"""Gets the object_name of this AccessPolicyObjectInfo.
 
         对象名。后续此参数不会校验。
 
@@ -110,7 +110,7 @@ class AccessPolicyObjectInfo:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this AccessPolicyObjectInfo.
+        r"""Sets the object_name of this AccessPolicyObjectInfo.
 
         对象名。后续此参数不会校验。
 

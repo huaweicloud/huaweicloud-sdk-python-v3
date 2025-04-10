@@ -25,7 +25,7 @@ class DeleteWebHookConfigRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteWebHookConfigRequest
+        r"""DeleteWebHookConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteWebHookConfigRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteWebHookConfigRequest.
+        r"""Gets the id of this DeleteWebHookConfigRequest.
 
         订阅配置记录ID。
 
@@ -53,7 +53,7 @@ class DeleteWebHookConfigRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteWebHookConfigRequest.
+        r"""Sets the id of this DeleteWebHookConfigRequest.
 
         订阅配置记录ID。
 

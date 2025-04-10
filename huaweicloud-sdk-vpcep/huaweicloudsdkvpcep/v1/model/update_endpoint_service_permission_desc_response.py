@@ -26,7 +26,7 @@ class UpdateEndpointServicePermissionDescResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None):
-        """UpdateEndpointServicePermissionDescResponse
+        r"""UpdateEndpointServicePermissionDescResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEndpointServicePermissionDescResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this UpdateEndpointServicePermissionDescResponse.
+        r"""Gets the permissions of this UpdateEndpointServicePermissionDescResponse.
 
         终端节点服务白名单
 
@@ -55,7 +55,7 @@ class UpdateEndpointServicePermissionDescResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this UpdateEndpointServicePermissionDescResponse.
+        r"""Sets the permissions of this UpdateEndpointServicePermissionDescResponse.
 
         终端节点服务白名单
 

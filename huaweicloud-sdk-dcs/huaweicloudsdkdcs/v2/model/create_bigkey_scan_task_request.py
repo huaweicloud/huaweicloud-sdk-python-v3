@@ -25,7 +25,7 @@ class CreateBigkeyScanTaskRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CreateBigkeyScanTaskRequest
+        r"""CreateBigkeyScanTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateBigkeyScanTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateBigkeyScanTaskRequest.
+        r"""Gets the instance_id of this CreateBigkeyScanTaskRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class CreateBigkeyScanTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateBigkeyScanTaskRequest.
+        r"""Sets the instance_id of this CreateBigkeyScanTaskRequest.
 
         实例ID。
 

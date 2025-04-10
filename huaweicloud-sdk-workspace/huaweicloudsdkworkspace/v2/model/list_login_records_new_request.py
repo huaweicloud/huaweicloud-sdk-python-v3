@@ -41,7 +41,7 @@ class ListLoginRecordsNewRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None):
-        """ListLoginRecordsNewRequest
+        r"""ListLoginRecordsNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListLoginRecordsNewRequest.
+        r"""Gets the start_time of this ListLoginRecordsNewRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数。
 
@@ -110,7 +110,7 @@ class ListLoginRecordsNewRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListLoginRecordsNewRequest.
+        r"""Sets the start_time of this ListLoginRecordsNewRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数。
 
@@ -121,7 +121,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListLoginRecordsNewRequest.
+        r"""Gets the end_time of this ListLoginRecordsNewRequest.
 
         查询的终止时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数。
 
@@ -132,7 +132,7 @@ class ListLoginRecordsNewRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListLoginRecordsNewRequest.
+        r"""Sets the end_time of this ListLoginRecordsNewRequest.
 
         查询的终止时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数。
 
@@ -143,7 +143,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListLoginRecordsNewRequest.
+        r"""Gets the user_name of this ListLoginRecordsNewRequest.
 
         登录桌面的用户名。
 
@@ -154,7 +154,7 @@ class ListLoginRecordsNewRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListLoginRecordsNewRequest.
+        r"""Sets the user_name of this ListLoginRecordsNewRequest.
 
         登录桌面的用户名。
 
@@ -165,7 +165,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ListLoginRecordsNewRequest.
+        r"""Gets the computer_name of this ListLoginRecordsNewRequest.
 
         计算机名（操作系统信息中可见）。
 
@@ -176,7 +176,7 @@ class ListLoginRecordsNewRequest:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ListLoginRecordsNewRequest.
+        r"""Sets the computer_name of this ListLoginRecordsNewRequest.
 
         计算机名（操作系统信息中可见）。
 
@@ -187,7 +187,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def terminal_type(self):
-        """Gets the terminal_type of this ListLoginRecordsNewRequest.
+        r"""Gets the terminal_type of this ListLoginRecordsNewRequest.
 
         登录桌面的终端系统类型，当前支持：WI（云桌面客户端）。
 
@@ -198,7 +198,7 @@ class ListLoginRecordsNewRequest:
 
     @terminal_type.setter
     def terminal_type(self, terminal_type):
-        """Sets the terminal_type of this ListLoginRecordsNewRequest.
+        r"""Sets the terminal_type of this ListLoginRecordsNewRequest.
 
         登录桌面的终端系统类型，当前支持：WI（云桌面客户端）。
 
@@ -209,7 +209,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLoginRecordsNewRequest.
+        r"""Gets the offset of this ListLoginRecordsNewRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -220,7 +220,7 @@ class ListLoginRecordsNewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLoginRecordsNewRequest.
+        r"""Sets the offset of this ListLoginRecordsNewRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -231,7 +231,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLoginRecordsNewRequest.
+        r"""Gets the limit of this ListLoginRecordsNewRequest.
 
         用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
 
@@ -242,7 +242,7 @@ class ListLoginRecordsNewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLoginRecordsNewRequest.
+        r"""Sets the limit of this ListLoginRecordsNewRequest.
 
         用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
 
@@ -253,7 +253,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def min_network_rtt(self):
-        """Gets the min_network_rtt of this ListLoginRecordsNewRequest.
+        r"""Gets the min_network_rtt of this ListLoginRecordsNewRequest.
 
         查询端到端时延的最小值
 
@@ -264,7 +264,7 @@ class ListLoginRecordsNewRequest:
 
     @min_network_rtt.setter
     def min_network_rtt(self, min_network_rtt):
-        """Sets the min_network_rtt of this ListLoginRecordsNewRequest.
+        r"""Sets the min_network_rtt of this ListLoginRecordsNewRequest.
 
         查询端到端时延的最小值
 
@@ -275,7 +275,7 @@ class ListLoginRecordsNewRequest:
 
     @property
     def max_network_rtt(self):
-        """Gets the max_network_rtt of this ListLoginRecordsNewRequest.
+        r"""Gets the max_network_rtt of this ListLoginRecordsNewRequest.
 
         查询端到端时延的最大值
 
@@ -286,7 +286,7 @@ class ListLoginRecordsNewRequest:
 
     @max_network_rtt.setter
     def max_network_rtt(self, max_network_rtt):
-        """Sets the max_network_rtt of this ListLoginRecordsNewRequest.
+        r"""Sets the max_network_rtt of this ListLoginRecordsNewRequest.
 
         查询端到端时延的最大值
 

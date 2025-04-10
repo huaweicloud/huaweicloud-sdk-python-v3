@@ -28,7 +28,7 @@ class ShowJobExercisesResponse(SdkResponse):
     }
 
     def __init__(self, group_exercises=None, total=None):
-        """ShowJobExercisesResponse
+        r"""ShowJobExercisesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobExercisesResponse(SdkResponse):
 
     @property
     def group_exercises(self):
-        """Gets the group_exercises of this ShowJobExercisesResponse.
+        r"""Gets the group_exercises of this ShowJobExercisesResponse.
 
         作业下习题列表
 
@@ -62,7 +62,7 @@ class ShowJobExercisesResponse(SdkResponse):
 
     @group_exercises.setter
     def group_exercises(self, group_exercises):
-        """Sets the group_exercises of this ShowJobExercisesResponse.
+        r"""Sets the group_exercises of this ShowJobExercisesResponse.
 
         作业下习题列表
 
@@ -73,7 +73,7 @@ class ShowJobExercisesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowJobExercisesResponse.
+        r"""Gets the total of this ShowJobExercisesResponse.
 
         作业下习题总数
 
@@ -84,7 +84,7 @@ class ShowJobExercisesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowJobExercisesResponse.
+        r"""Sets the total of this ShowJobExercisesResponse.
 
         作业下习题总数
 

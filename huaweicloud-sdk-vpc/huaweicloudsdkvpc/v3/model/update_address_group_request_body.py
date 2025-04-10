@@ -27,7 +27,7 @@ class UpdateAddressGroupRequestBody:
     }
 
     def __init__(self, dry_run=None, address_group=None):
-        """UpdateAddressGroupRequestBody
+        r"""UpdateAddressGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAddressGroupRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this UpdateAddressGroupRequestBody.
+        r"""Gets the dry_run of this UpdateAddressGroupRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新地址组内容。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新地址组。
 
@@ -60,7 +60,7 @@ class UpdateAddressGroupRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this UpdateAddressGroupRequestBody.
+        r"""Sets the dry_run of this UpdateAddressGroupRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新地址组内容。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新地址组。
 
@@ -71,7 +71,7 @@ class UpdateAddressGroupRequestBody:
 
     @property
     def address_group(self):
-        """Gets the address_group of this UpdateAddressGroupRequestBody.
+        r"""Gets the address_group of this UpdateAddressGroupRequestBody.
 
         :return: The address_group of this UpdateAddressGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`
@@ -80,7 +80,7 @@ class UpdateAddressGroupRequestBody:
 
     @address_group.setter
     def address_group(self, address_group):
-        """Sets the address_group of this UpdateAddressGroupRequestBody.
+        r"""Sets the address_group of this UpdateAddressGroupRequestBody.
 
         :param address_group: The address_group of this UpdateAddressGroupRequestBody.
         :type address_group: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`

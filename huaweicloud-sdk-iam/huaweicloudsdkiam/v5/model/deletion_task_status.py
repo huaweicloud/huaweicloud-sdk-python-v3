@@ -29,7 +29,7 @@ class DeletionTaskStatus:
     }
 
     def __init__(self):
-        """DeletionTaskStatus
+        r"""DeletionTaskStatus
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class IndicatorCreateRequest:
     }
 
     def __init__(self, name=None, format_version=None, type=None, trigger_flag=None, data_object=None):
-        """IndicatorCreateRequest
+        r"""IndicatorCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IndicatorCreateRequest:
 
     @property
     def name(self):
-        """Gets the name of this IndicatorCreateRequest.
+        r"""Gets the name of this IndicatorCreateRequest.
 
         指标名称
 
@@ -82,7 +82,7 @@ class IndicatorCreateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IndicatorCreateRequest.
+        r"""Sets the name of this IndicatorCreateRequest.
 
         指标名称
 
@@ -93,7 +93,7 @@ class IndicatorCreateRequest:
 
     @property
     def format_version(self):
-        """Gets the format_version of this IndicatorCreateRequest.
+        r"""Gets the format_version of this IndicatorCreateRequest.
 
         版本号
 
@@ -104,7 +104,7 @@ class IndicatorCreateRequest:
 
     @format_version.setter
     def format_version(self, format_version):
-        """Sets the format_version of this IndicatorCreateRequest.
+        r"""Sets the format_version of this IndicatorCreateRequest.
 
         版本号
 
@@ -115,7 +115,7 @@ class IndicatorCreateRequest:
 
     @property
     def type(self):
-        """Gets the type of this IndicatorCreateRequest.
+        r"""Gets the type of this IndicatorCreateRequest.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -126,7 +126,7 @@ class IndicatorCreateRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IndicatorCreateRequest.
+        r"""Sets the type of this IndicatorCreateRequest.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -137,7 +137,7 @@ class IndicatorCreateRequest:
 
     @property
     def trigger_flag(self):
-        """Gets the trigger_flag of this IndicatorCreateRequest.
+        r"""Gets the trigger_flag of this IndicatorCreateRequest.
 
         触发标志
 
@@ -148,7 +148,7 @@ class IndicatorCreateRequest:
 
     @trigger_flag.setter
     def trigger_flag(self, trigger_flag):
-        """Sets the trigger_flag of this IndicatorCreateRequest.
+        r"""Sets the trigger_flag of this IndicatorCreateRequest.
 
         触发标志
 
@@ -159,7 +159,7 @@ class IndicatorCreateRequest:
 
     @property
     def data_object(self):
-        """Gets the data_object of this IndicatorCreateRequest.
+        r"""Gets the data_object of this IndicatorCreateRequest.
 
         :return: The data_object of this IndicatorCreateRequest.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIndicatorDetail`
@@ -168,7 +168,7 @@ class IndicatorCreateRequest:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this IndicatorCreateRequest.
+        r"""Sets the data_object of this IndicatorCreateRequest.
 
         :param data_object: The data_object of this IndicatorCreateRequest.
         :type data_object: :class:`huaweicloudsdksa.v2.CreateIndicatorDetail`

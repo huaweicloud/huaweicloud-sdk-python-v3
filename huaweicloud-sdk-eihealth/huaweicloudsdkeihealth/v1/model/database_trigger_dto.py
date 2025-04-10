@@ -29,7 +29,7 @@ class DatabaseTriggerDto:
     }
 
     def __init__(self, name=None, judge_mode=None, value=None):
-        """DatabaseTriggerDto
+        r"""DatabaseTriggerDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DatabaseTriggerDto:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseTriggerDto.
+        r"""Gets the name of this DatabaseTriggerDto.
 
         触发器的列名，取值范围：[1,63]
 
@@ -65,7 +65,7 @@ class DatabaseTriggerDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseTriggerDto.
+        r"""Sets the name of this DatabaseTriggerDto.
 
         触发器的列名，取值范围：[1,63]
 
@@ -76,7 +76,7 @@ class DatabaseTriggerDto:
 
     @property
     def judge_mode(self):
-        """Gets the judge_mode of this DatabaseTriggerDto.
+        r"""Gets the judge_mode of this DatabaseTriggerDto.
 
         :return: The judge_mode of this DatabaseTriggerDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TriggerJudgeMode`
@@ -85,7 +85,7 @@ class DatabaseTriggerDto:
 
     @judge_mode.setter
     def judge_mode(self, judge_mode):
-        """Sets the judge_mode of this DatabaseTriggerDto.
+        r"""Sets the judge_mode of this DatabaseTriggerDto.
 
         :param judge_mode: The judge_mode of this DatabaseTriggerDto.
         :type judge_mode: :class:`huaweicloudsdkeihealth.v1.TriggerJudgeMode`
@@ -94,7 +94,7 @@ class DatabaseTriggerDto:
 
     @property
     def value(self):
-        """Gets the value of this DatabaseTriggerDto.
+        r"""Gets the value of this DatabaseTriggerDto.
 
         触发器的取值，取值范围：[1,128]
 
@@ -105,7 +105,7 @@ class DatabaseTriggerDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DatabaseTriggerDto.
+        r"""Sets the value of this DatabaseTriggerDto.
 
         触发器的取值，取值范围：[1,128]
 

@@ -29,7 +29,7 @@ class ShowDeploymentFormRequest:
     }
 
     def __init__(self, x_language=None, solution=None, instance_id=None):
-        """ShowDeploymentFormRequest
+        r"""ShowDeploymentFormRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowDeploymentFormRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDeploymentFormRequest.
+        r"""Gets the x_language of this ShowDeploymentFormRequest.
 
         语言。
 
@@ -68,7 +68,7 @@ class ShowDeploymentFormRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDeploymentFormRequest.
+        r"""Sets the x_language of this ShowDeploymentFormRequest.
 
         语言。
 
@@ -79,7 +79,7 @@ class ShowDeploymentFormRequest:
 
     @property
     def solution(self):
-        """Gets the solution of this ShowDeploymentFormRequest.
+        r"""Gets the solution of this ShowDeploymentFormRequest.
 
         解决方案模板名称。
 
@@ -90,7 +90,7 @@ class ShowDeploymentFormRequest:
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this ShowDeploymentFormRequest.
+        r"""Sets the solution of this ShowDeploymentFormRequest.
 
         解决方案模板名称。
 
@@ -101,7 +101,7 @@ class ShowDeploymentFormRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDeploymentFormRequest.
+        r"""Gets the instance_id of this ShowDeploymentFormRequest.
 
         实例ID。
 
@@ -112,7 +112,7 @@ class ShowDeploymentFormRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDeploymentFormRequest.
+        r"""Sets the instance_id of this ShowDeploymentFormRequest.
 
         实例ID。
 

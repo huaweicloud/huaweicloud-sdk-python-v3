@@ -41,7 +41,7 @@ class Desktop:
     }
 
     def __init__(self, user_name=None, user_email=None, user_phone=None, user_group=None, computer_name=None, os_host_name=None, nics=None, ou_name=None, desktop_name_prefix=None):
-        """Desktop
+        r"""Desktop
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class Desktop:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Desktop.
+        r"""Gets the user_name of this Desktop.
 
         桌面所属的用户，当桌面创建成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。
 
@@ -109,7 +109,7 @@ class Desktop:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Desktop.
+        r"""Sets the user_name of this Desktop.
 
         桌面所属的用户，当桌面创建成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。
 
@@ -120,7 +120,7 @@ class Desktop:
 
     @property
     def user_email(self):
-        """Gets the user_email of this Desktop.
+        r"""Gets the user_email of this Desktop.
 
         合法用户邮箱，桌面创建成功后系统会通过发送邮件的方式通知用户。
 
@@ -131,7 +131,7 @@ class Desktop:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this Desktop.
+        r"""Sets the user_email of this Desktop.
 
         合法用户邮箱，桌面创建成功后系统会通过发送邮件的方式通知用户。
 
@@ -142,7 +142,7 @@ class Desktop:
 
     @property
     def user_phone(self):
-        """Gets the user_phone of this Desktop.
+        r"""Gets the user_phone of this Desktop.
 
         合法用户手机号。
 
@@ -153,7 +153,7 @@ class Desktop:
 
     @user_phone.setter
     def user_phone(self, user_phone):
-        """Sets the user_phone of this Desktop.
+        r"""Sets the user_phone of this Desktop.
 
         合法用户手机号。
 
@@ -164,7 +164,7 @@ class Desktop:
 
     @property
     def user_group(self):
-        """Gets the user_group of this Desktop.
+        r"""Gets the user_group of this Desktop.
 
         桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -175,7 +175,7 @@ class Desktop:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this Desktop.
+        r"""Sets the user_group of this Desktop.
 
         桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -186,7 +186,7 @@ class Desktop:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this Desktop.
+        r"""Gets the computer_name of this Desktop.
 
         桌面名，桌面名必须保证唯一。桌面名称只允许输入大写字母、小写字母、中文、数字、中划线，以字母或数字开头、不能以中划线结尾，长度范围为1~15(中文字符长度为2，数字及英文字符长度为1)。
 
@@ -197,7 +197,7 @@ class Desktop:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this Desktop.
+        r"""Sets the computer_name of this Desktop.
 
         桌面名，桌面名必须保证唯一。桌面名称只允许输入大写字母、小写字母、中文、数字、中划线，以字母或数字开头、不能以中划线结尾，长度范围为1~15(中文字符长度为2，数字及英文字符长度为1)。
 
@@ -208,7 +208,7 @@ class Desktop:
 
     @property
     def os_host_name(self):
-        """Gets the os_host_name of this Desktop.
+        r"""Gets the os_host_name of this Desktop.
 
         系统计算机名。
 
@@ -219,7 +219,7 @@ class Desktop:
 
     @os_host_name.setter
     def os_host_name(self, os_host_name):
-        """Sets the os_host_name of this Desktop.
+        r"""Sets the os_host_name of this Desktop.
 
         系统计算机名。
 
@@ -230,7 +230,7 @@ class Desktop:
 
     @property
     def nics(self):
-        """Gets the nics of this Desktop.
+        r"""Gets the nics of this Desktop.
 
         桌面对应的网卡信息，如果不指定则使用默认网卡。
 
@@ -241,7 +241,7 @@ class Desktop:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this Desktop.
+        r"""Sets the nics of this Desktop.
 
         桌面对应的网卡信息，如果不指定则使用默认网卡。
 
@@ -252,7 +252,7 @@ class Desktop:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this Desktop.
+        r"""Gets the ou_name of this Desktop.
 
         此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效。只允许输入汉字，半角字母，数字，空格，以及-_/$!@&*?.范围内的特殊字符，字符范围是1～255，OU名称不能包含分隔符(/),多级OU使用/隔开，最多支持五级，/前后不能有空格，例如3级的OU格式:ab/cd/ef。
 
@@ -263,7 +263,7 @@ class Desktop:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this Desktop.
+        r"""Sets the ou_name of this Desktop.
 
         此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效。只允许输入汉字，半角字母，数字，空格，以及-_/$!@&*?.范围内的特殊字符，字符范围是1～255，OU名称不能包含分隔符(/),多级OU使用/隔开，最多支持五级，/前后不能有空格，例如3级的OU格式:ab/cd/ef。
 
@@ -274,7 +274,7 @@ class Desktop:
 
     @property
     def desktop_name_prefix(self):
-        """Gets the desktop_name_prefix of this Desktop.
+        r"""Gets the desktop_name_prefix of this Desktop.
 
         桌面名称前缀，不指定\"computer_name\"时生效。
 
@@ -285,7 +285,7 @@ class Desktop:
 
     @desktop_name_prefix.setter
     def desktop_name_prefix(self, desktop_name_prefix):
-        """Sets the desktop_name_prefix of this Desktop.
+        r"""Sets the desktop_name_prefix of this Desktop.
 
         桌面名称前缀，不指定\"computer_name\"时生效。
 

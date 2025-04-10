@@ -49,7 +49,7 @@ class ListWorkTableIssueRequestV4RequestBody:
     }
 
     def __init__(self, offset=None, limit=None, subject=None, created_on=None, updated_on=None, closed_on=None, start_date=None, due_date=None, tracker_id=None, status_id=None, author_id=None, developer_id=None, priority_id=None):
-        """ListWorkTableIssueRequestV4RequestBody
+        r"""ListWorkTableIssueRequestV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the offset of this ListWorkTableIssueRequestV4RequestBody.
 
         偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -138,7 +138,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the offset of this ListWorkTableIssueRequestV4RequestBody.
 
         偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -149,7 +149,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the limit of this ListWorkTableIssueRequestV4RequestBody.
 
         每页显示数量
 
@@ -160,7 +160,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the limit of this ListWorkTableIssueRequestV4RequestBody.
 
         每页显示数量
 
@@ -171,7 +171,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def subject(self):
-        """Gets the subject of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the subject of this ListWorkTableIssueRequestV4RequestBody.
 
         搜索关键词
 
@@ -182,7 +182,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the subject of this ListWorkTableIssueRequestV4RequestBody.
 
         搜索关键词
 
@@ -193,7 +193,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def created_on(self):
-        """Gets the created_on of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the created_on of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项创建时间区间
 
@@ -204,7 +204,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @created_on.setter
     def created_on(self, created_on):
-        """Sets the created_on of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the created_on of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项创建时间区间
 
@@ -215,7 +215,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def updated_on(self):
-        """Gets the updated_on of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the updated_on of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项更新时间区间
 
@@ -226,7 +226,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @updated_on.setter
     def updated_on(self, updated_on):
-        """Sets the updated_on of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the updated_on of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项更新时间区间
 
@@ -237,7 +237,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def closed_on(self):
-        """Gets the closed_on of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the closed_on of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项结束时间区间
 
@@ -248,7 +248,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @closed_on.setter
     def closed_on(self, closed_on):
-        """Sets the closed_on of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the closed_on of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项结束时间区间
 
@@ -259,7 +259,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the start_date of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项预计开始日期区间
 
@@ -270,7 +270,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the start_date of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项预计开始日期区间
 
@@ -281,7 +281,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def due_date(self):
-        """Gets the due_date of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the due_date of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项预计结束日期区间
 
@@ -292,7 +292,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @due_date.setter
     def due_date(self, due_date):
-        """Sets the due_date of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the due_date of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项预计结束日期区间
 
@@ -303,7 +303,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the tracker_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项类型
 
@@ -314,7 +314,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the tracker_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项类型
 
@@ -325,7 +325,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def status_id(self):
-        """Gets the status_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the status_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项状态
 
@@ -336,7 +336,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the status_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项状态
 
@@ -347,7 +347,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def author_id(self):
-        """Gets the author_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the author_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项创建人id
 
@@ -358,7 +358,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @author_id.setter
     def author_id(self, author_id):
-        """Sets the author_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the author_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项创建人id
 
@@ -369,7 +369,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def developer_id(self):
-        """Gets the developer_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the developer_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项开发人员id
 
@@ -380,7 +380,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @developer_id.setter
     def developer_id(self, developer_id):
-        """Sets the developer_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the developer_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项开发人员id
 
@@ -391,7 +391,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @property
     def priority_id(self):
-        """Gets the priority_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Gets the priority_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项优先级id
 
@@ -402,7 +402,7 @@ class ListWorkTableIssueRequestV4RequestBody:
 
     @priority_id.setter
     def priority_id(self, priority_id):
-        """Sets the priority_id of this ListWorkTableIssueRequestV4RequestBody.
+        r"""Sets the priority_id of this ListWorkTableIssueRequestV4RequestBody.
 
         工作项优先级id
 

@@ -26,7 +26,7 @@ class DeletePostgresqlDbUserResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """DeletePostgresqlDbUserResponse
+        r"""DeletePostgresqlDbUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePostgresqlDbUserResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this DeletePostgresqlDbUserResponse.
+        r"""Gets the resp of this DeletePostgresqlDbUserResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class DeletePostgresqlDbUserResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this DeletePostgresqlDbUserResponse.
+        r"""Sets the resp of this DeletePostgresqlDbUserResponse.
 
         操作结果。
 

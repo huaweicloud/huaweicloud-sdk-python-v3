@@ -30,7 +30,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, resources=None, total_count=None):
-        """ListDesktopByTagsResponse
+        r"""ListDesktopByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDesktopByTagsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopByTagsResponse.
+        r"""Gets the offset of this ListDesktopByTagsResponse.
 
         指定查询信息列表的偏移量，默认为0
 
@@ -69,7 +69,7 @@ class ListDesktopByTagsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopByTagsResponse.
+        r"""Sets the offset of this ListDesktopByTagsResponse.
 
         指定查询信息列表的偏移量，默认为0
 
@@ -80,7 +80,7 @@ class ListDesktopByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListDesktopByTagsResponse.
+        r"""Gets the resources of this ListDesktopByTagsResponse.
 
         资源对象
 
@@ -91,7 +91,7 @@ class ListDesktopByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListDesktopByTagsResponse.
+        r"""Sets the resources of this ListDesktopByTagsResponse.
 
         资源对象
 
@@ -102,7 +102,7 @@ class ListDesktopByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopByTagsResponse.
+        r"""Gets the total_count of this ListDesktopByTagsResponse.
 
         数量
 
@@ -113,7 +113,7 @@ class ListDesktopByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopByTagsResponse.
+        r"""Sets the total_count of this ListDesktopByTagsResponse.
 
         数量
 

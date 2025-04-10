@@ -25,7 +25,7 @@ class EstimateChangeImagesRequest:
     }
 
     def __init__(self, body=None):
-        """EstimateChangeImagesRequest
+        r"""EstimateChangeImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EstimateChangeImagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this EstimateChangeImagesRequest.
+        r"""Gets the body of this EstimateChangeImagesRequest.
 
         :return: The body of this EstimateChangeImagesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateChangeImageRequestBody`
@@ -52,7 +52,7 @@ class EstimateChangeImagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EstimateChangeImagesRequest.
+        r"""Sets the body of this EstimateChangeImagesRequest.
 
         :param body: The body of this EstimateChangeImagesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EstimateChangeImageRequestBody`

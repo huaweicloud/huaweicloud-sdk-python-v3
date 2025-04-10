@@ -29,7 +29,7 @@ class EnableConfigurationRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, body=None):
-        """EnableConfigurationRequest
+        r"""EnableConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EnableConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this EnableConfigurationRequest.
+        r"""Gets the x_language of this EnableConfigurationRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class EnableConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this EnableConfigurationRequest.
+        r"""Sets the x_language of this EnableConfigurationRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class EnableConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this EnableConfigurationRequest.
+        r"""Gets the config_id of this EnableConfigurationRequest.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class EnableConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this EnableConfigurationRequest.
+        r"""Sets the config_id of this EnableConfigurationRequest.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class EnableConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableConfigurationRequest.
+        r"""Gets the body of this EnableConfigurationRequest.
 
         :return: The body of this EnableConfigurationRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`
@@ -109,7 +109,7 @@ class EnableConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableConfigurationRequest.
+        r"""Sets the body of this EnableConfigurationRequest.
 
         :param body: The body of this EnableConfigurationRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`

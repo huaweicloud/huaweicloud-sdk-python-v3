@@ -35,7 +35,7 @@ class SqlJobTemplate:
     }
 
     def __init__(self, sql_id=None, sql_name=None, sql=None, description=None, group=None, owner=None):
-        """SqlJobTemplate
+        r"""SqlJobTemplate
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SqlJobTemplate:
 
     @property
     def sql_id(self):
-        """Gets the sql_id of this SqlJobTemplate.
+        r"""Gets the sql_id of this SqlJobTemplate.
 
         SQL模板ID。
 
@@ -89,7 +89,7 @@ class SqlJobTemplate:
 
     @sql_id.setter
     def sql_id(self, sql_id):
-        """Sets the sql_id of this SqlJobTemplate.
+        r"""Sets the sql_id of this SqlJobTemplate.
 
         SQL模板ID。
 
@@ -100,7 +100,7 @@ class SqlJobTemplate:
 
     @property
     def sql_name(self):
-        """Gets the sql_name of this SqlJobTemplate.
+        r"""Gets the sql_name of this SqlJobTemplate.
 
         SQL模板名称。
 
@@ -111,7 +111,7 @@ class SqlJobTemplate:
 
     @sql_name.setter
     def sql_name(self, sql_name):
-        """Sets the sql_name of this SqlJobTemplate.
+        r"""Sets the sql_name of this SqlJobTemplate.
 
         SQL模板名称。
 
@@ -122,7 +122,7 @@ class SqlJobTemplate:
 
     @property
     def sql(self):
-        """Gets the sql of this SqlJobTemplate.
+        r"""Gets the sql of this SqlJobTemplate.
 
         SQL模板文本。
 
@@ -133,7 +133,7 @@ class SqlJobTemplate:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this SqlJobTemplate.
+        r"""Sets the sql of this SqlJobTemplate.
 
         SQL模板文本。
 
@@ -144,7 +144,7 @@ class SqlJobTemplate:
 
     @property
     def description(self):
-        """Gets the description of this SqlJobTemplate.
+        r"""Gets the description of this SqlJobTemplate.
 
         SQL模板描述信息。
 
@@ -155,7 +155,7 @@ class SqlJobTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SqlJobTemplate.
+        r"""Sets the description of this SqlJobTemplate.
 
         SQL模板描述信息。
 
@@ -166,7 +166,7 @@ class SqlJobTemplate:
 
     @property
     def group(self):
-        """Gets the group of this SqlJobTemplate.
+        r"""Gets the group of this SqlJobTemplate.
 
         分组名称。
 
@@ -177,7 +177,7 @@ class SqlJobTemplate:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this SqlJobTemplate.
+        r"""Sets the group of this SqlJobTemplate.
 
         分组名称。
 
@@ -188,7 +188,7 @@ class SqlJobTemplate:
 
     @property
     def owner(self):
-        """Gets the owner of this SqlJobTemplate.
+        r"""Gets the owner of this SqlJobTemplate.
 
         SQL模板的创建者。
 
@@ -199,7 +199,7 @@ class SqlJobTemplate:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SqlJobTemplate.
+        r"""Sets the owner of this SqlJobTemplate.
 
         SQL模板的创建者。
 

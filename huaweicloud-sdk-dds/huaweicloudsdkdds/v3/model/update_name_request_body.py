@@ -25,7 +25,7 @@ class UpdateNameRequestBody:
     }
 
     def __init__(self, new_instance_name=None):
-        """UpdateNameRequestBody
+        r"""UpdateNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNameRequestBody:
 
     @property
     def new_instance_name(self):
-        """Gets the new_instance_name of this UpdateNameRequestBody.
+        r"""Gets the new_instance_name of this UpdateNameRequestBody.
 
         新实例名称。用于表示实例的名称，允许和已有名称重复。取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -53,7 +53,7 @@ class UpdateNameRequestBody:
 
     @new_instance_name.setter
     def new_instance_name(self, new_instance_name):
-        """Sets the new_instance_name of this UpdateNameRequestBody.
+        r"""Sets the new_instance_name of this UpdateNameRequestBody.
 
         新实例名称。用于表示实例的名称，允许和已有名称重复。取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 

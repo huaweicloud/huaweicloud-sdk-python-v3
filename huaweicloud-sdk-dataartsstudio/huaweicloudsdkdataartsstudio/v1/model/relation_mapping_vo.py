@@ -43,7 +43,7 @@ class RelationMappingVO:
     }
 
     def __init__(self, id=None, relation_id=None, source_field_id=None, target_field_id=None, source_field_name=None, target_field_name=None, create_by=None, update_by=None, create_time=None, update_time=None):
-        """RelationMappingVO
+        r"""RelationMappingVO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RelationMappingVO:
 
     @property
     def id(self):
-        """Gets the id of this RelationMappingVO.
+        r"""Gets the id of this RelationMappingVO.
 
         编码，ID字符串。
 
@@ -117,7 +117,7 @@ class RelationMappingVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RelationMappingVO.
+        r"""Sets the id of this RelationMappingVO.
 
         编码，ID字符串。
 
@@ -128,7 +128,7 @@ class RelationMappingVO:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this RelationMappingVO.
+        r"""Gets the relation_id of this RelationMappingVO.
 
         关系ID，ID字符串。
 
@@ -139,7 +139,7 @@ class RelationMappingVO:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this RelationMappingVO.
+        r"""Sets the relation_id of this RelationMappingVO.
 
         关系ID，ID字符串。
 
@@ -150,7 +150,7 @@ class RelationMappingVO:
 
     @property
     def source_field_id(self):
-        """Gets the source_field_id of this RelationMappingVO.
+        r"""Gets the source_field_id of this RelationMappingVO.
 
         源字段ID，ID字符串。
 
@@ -161,7 +161,7 @@ class RelationMappingVO:
 
     @source_field_id.setter
     def source_field_id(self, source_field_id):
-        """Sets the source_field_id of this RelationMappingVO.
+        r"""Sets the source_field_id of this RelationMappingVO.
 
         源字段ID，ID字符串。
 
@@ -172,7 +172,7 @@ class RelationMappingVO:
 
     @property
     def target_field_id(self):
-        """Gets the target_field_id of this RelationMappingVO.
+        r"""Gets the target_field_id of this RelationMappingVO.
 
         目标字段ID，ID字符串。
 
@@ -183,7 +183,7 @@ class RelationMappingVO:
 
     @target_field_id.setter
     def target_field_id(self, target_field_id):
-        """Sets the target_field_id of this RelationMappingVO.
+        r"""Sets the target_field_id of this RelationMappingVO.
 
         目标字段ID，ID字符串。
 
@@ -194,7 +194,7 @@ class RelationMappingVO:
 
     @property
     def source_field_name(self):
-        """Gets the source_field_name of this RelationMappingVO.
+        r"""Gets the source_field_name of this RelationMappingVO.
 
         源表名称。
 
@@ -205,7 +205,7 @@ class RelationMappingVO:
 
     @source_field_name.setter
     def source_field_name(self, source_field_name):
-        """Sets the source_field_name of this RelationMappingVO.
+        r"""Sets the source_field_name of this RelationMappingVO.
 
         源表名称。
 
@@ -216,7 +216,7 @@ class RelationMappingVO:
 
     @property
     def target_field_name(self):
-        """Gets the target_field_name of this RelationMappingVO.
+        r"""Gets the target_field_name of this RelationMappingVO.
 
         目的表名称。
 
@@ -227,7 +227,7 @@ class RelationMappingVO:
 
     @target_field_name.setter
     def target_field_name(self, target_field_name):
-        """Sets the target_field_name of this RelationMappingVO.
+        r"""Sets the target_field_name of this RelationMappingVO.
 
         目的表名称。
 
@@ -238,7 +238,7 @@ class RelationMappingVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this RelationMappingVO.
+        r"""Gets the create_by of this RelationMappingVO.
 
         创建人。
 
@@ -249,7 +249,7 @@ class RelationMappingVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this RelationMappingVO.
+        r"""Sets the create_by of this RelationMappingVO.
 
         创建人。
 
@@ -260,7 +260,7 @@ class RelationMappingVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this RelationMappingVO.
+        r"""Gets the update_by of this RelationMappingVO.
 
         更新人。
 
@@ -271,7 +271,7 @@ class RelationMappingVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this RelationMappingVO.
+        r"""Sets the update_by of this RelationMappingVO.
 
         更新人。
 
@@ -282,7 +282,7 @@ class RelationMappingVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RelationMappingVO.
+        r"""Gets the create_time of this RelationMappingVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -293,7 +293,7 @@ class RelationMappingVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RelationMappingVO.
+        r"""Sets the create_time of this RelationMappingVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -304,7 +304,7 @@ class RelationMappingVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RelationMappingVO.
+        r"""Gets the update_time of this RelationMappingVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -315,7 +315,7 @@ class RelationMappingVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RelationMappingVO.
+        r"""Sets the update_time of this RelationMappingVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

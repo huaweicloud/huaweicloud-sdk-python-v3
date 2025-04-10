@@ -47,7 +47,7 @@ class ListMembersRequest:
     }
 
     def __init__(self, pool_id=None, limit=None, marker=None, page_reverse=None, id=None, name=None, address=None, protocol_port=None, subnet_id=None, admin_state_up=None, weight=None, enterprise_project_id=None):
-        """ListMembersRequest
+        r"""ListMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListMembersRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ListMembersRequest.
+        r"""Gets the pool_id of this ListMembersRequest.
 
         后端云服务器组id
 
@@ -130,7 +130,7 @@ class ListMembersRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ListMembersRequest.
+        r"""Sets the pool_id of this ListMembersRequest.
 
         后端云服务器组id
 
@@ -141,7 +141,7 @@ class ListMembersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMembersRequest.
+        r"""Gets the limit of this ListMembersRequest.
 
         分页查询中每页的后端服务器个数
 
@@ -152,7 +152,7 @@ class ListMembersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMembersRequest.
+        r"""Sets the limit of this ListMembersRequest.
 
         分页查询中每页的后端服务器个数
 
@@ -163,7 +163,7 @@ class ListMembersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListMembersRequest.
+        r"""Gets the marker of this ListMembersRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器的id。不指定时表示查询第一页。
 
@@ -174,7 +174,7 @@ class ListMembersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListMembersRequest.
+        r"""Sets the marker of this ListMembersRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器的id。不指定时表示查询第一页。
 
@@ -185,7 +185,7 @@ class ListMembersRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListMembersRequest.
+        r"""Gets the page_reverse of this ListMembersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -196,7 +196,7 @@ class ListMembersRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListMembersRequest.
+        r"""Sets the page_reverse of this ListMembersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -207,7 +207,7 @@ class ListMembersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListMembersRequest.
+        r"""Gets the id of this ListMembersRequest.
 
         后端云服务器的ID。
 
@@ -218,7 +218,7 @@ class ListMembersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListMembersRequest.
+        r"""Sets the id of this ListMembersRequest.
 
         后端云服务器的ID。
 
@@ -229,7 +229,7 @@ class ListMembersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListMembersRequest.
+        r"""Gets the name of this ListMembersRequest.
 
         后端云服务器的名称。
 
@@ -240,7 +240,7 @@ class ListMembersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListMembersRequest.
+        r"""Sets the name of this ListMembersRequest.
 
         后端云服务器的名称。
 
@@ -251,7 +251,7 @@ class ListMembersRequest:
 
     @property
     def address(self):
-        """Gets the address of this ListMembersRequest.
+        r"""Gets the address of this ListMembersRequest.
 
         后端云服务器对应的IP地址。
 
@@ -262,7 +262,7 @@ class ListMembersRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListMembersRequest.
+        r"""Sets the address of this ListMembersRequest.
 
         后端云服务器对应的IP地址。
 
@@ -273,7 +273,7 @@ class ListMembersRequest:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this ListMembersRequest.
+        r"""Gets the protocol_port of this ListMembersRequest.
 
         后端云服务器后端端口的协议号。
 
@@ -284,7 +284,7 @@ class ListMembersRequest:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this ListMembersRequest.
+        r"""Sets the protocol_port of this ListMembersRequest.
 
         后端云服务器后端端口的协议号。
 
@@ -295,7 +295,7 @@ class ListMembersRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListMembersRequest.
+        r"""Gets the subnet_id of this ListMembersRequest.
 
         后端云服务器所在的子网ID。
 
@@ -306,7 +306,7 @@ class ListMembersRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListMembersRequest.
+        r"""Sets the subnet_id of this ListMembersRequest.
 
         后端云服务器所在的子网ID。
 
@@ -317,7 +317,7 @@ class ListMembersRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListMembersRequest.
+        r"""Gets the admin_state_up of this ListMembersRequest.
 
         后端云服务器的管理状态。取值范围：true/false。
 
@@ -328,7 +328,7 @@ class ListMembersRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListMembersRequest.
+        r"""Sets the admin_state_up of this ListMembersRequest.
 
         后端云服务器的管理状态。取值范围：true/false。
 
@@ -339,7 +339,7 @@ class ListMembersRequest:
 
     @property
     def weight(self):
-        """Gets the weight of this ListMembersRequest.
+        r"""Gets the weight of this ListMembersRequest.
 
         后端云服务器的权重。
 
@@ -350,7 +350,7 @@ class ListMembersRequest:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ListMembersRequest.
+        r"""Sets the weight of this ListMembersRequest.
 
         后端云服务器的权重。
 
@@ -361,7 +361,7 @@ class ListMembersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListMembersRequest.
+        r"""Gets the enterprise_project_id of this ListMembersRequest.
 
         企业项目ID。 不传时查询default企业项目（即enterprise_project_id=0）下的资源，鉴权按照default企业项目鉴权。 如果传值enterprise_project_id=all_granted_eps，则表示查询所有有权限的企业项目下的资源。 其他情况则传已存在的企业项目ID。此时会校验ID，若不存在或格式错误则报错。
 
@@ -372,7 +372,7 @@ class ListMembersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListMembersRequest.
+        r"""Sets the enterprise_project_id of this ListMembersRequest.
 
         企业项目ID。 不传时查询default企业项目（即enterprise_project_id=0）下的资源，鉴权按照default企业项目鉴权。 如果传值enterprise_project_id=all_granted_eps，则表示查询所有有权限的企业项目下的资源。 其他情况则传已存在的企业项目ID。此时会校验ID，若不存在或格式错误则报错。
 

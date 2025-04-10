@@ -51,7 +51,7 @@ class ListDedicatedHostsRequest:
     }
 
     def __init__(self, dedicated_host_id=None, name=None, host_type=None, host_type_name=None, flavor=None, state=None, tenant=None, availability_zone=None, limit=None, marker=None, tags=None, instance_uuid=None, released_at=None, changes_since=None):
-        """ListDedicatedHostsRequest
+        r"""ListDedicatedHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this ListDedicatedHostsRequest.
+        r"""Gets the dedicated_host_id of this ListDedicatedHostsRequest.
 
         专属主机ID。
 
@@ -145,7 +145,7 @@ class ListDedicatedHostsRequest:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this ListDedicatedHostsRequest.
+        r"""Sets the dedicated_host_id of this ListDedicatedHostsRequest.
 
         专属主机ID。
 
@@ -156,7 +156,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDedicatedHostsRequest.
+        r"""Gets the name of this ListDedicatedHostsRequest.
 
         专属主机名称。
 
@@ -167,7 +167,7 @@ class ListDedicatedHostsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDedicatedHostsRequest.
+        r"""Sets the name of this ListDedicatedHostsRequest.
 
         专属主机名称。
 
@@ -178,7 +178,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def host_type(self):
-        """Gets the host_type of this ListDedicatedHostsRequest.
+        r"""Gets the host_type of this ListDedicatedHostsRequest.
 
         专属主机类型。
 
@@ -189,7 +189,7 @@ class ListDedicatedHostsRequest:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this ListDedicatedHostsRequest.
+        r"""Sets the host_type of this ListDedicatedHostsRequest.
 
         专属主机类型。
 
@@ -200,7 +200,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def host_type_name(self):
-        """Gets the host_type_name of this ListDedicatedHostsRequest.
+        r"""Gets the host_type_name of this ListDedicatedHostsRequest.
 
         专属主机类型的名称。
 
@@ -211,7 +211,7 @@ class ListDedicatedHostsRequest:
 
     @host_type_name.setter
     def host_type_name(self, host_type_name):
-        """Sets the host_type_name of this ListDedicatedHostsRequest.
+        r"""Sets the host_type_name of this ListDedicatedHostsRequest.
 
         专属主机类型的名称。
 
@@ -222,7 +222,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ListDedicatedHostsRequest.
+        r"""Gets the flavor of this ListDedicatedHostsRequest.
 
         规格ID。
 
@@ -233,7 +233,7 @@ class ListDedicatedHostsRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ListDedicatedHostsRequest.
+        r"""Sets the flavor of this ListDedicatedHostsRequest.
 
         规格ID。
 
@@ -244,7 +244,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListDedicatedHostsRequest.
+        r"""Gets the state of this ListDedicatedHostsRequest.
 
         专属主机状态。  取值范围：“available”、“fault”或“released”。
 
@@ -255,7 +255,7 @@ class ListDedicatedHostsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListDedicatedHostsRequest.
+        r"""Sets the state of this ListDedicatedHostsRequest.
 
         专属主机状态。  取值范围：“available”、“fault”或“released”。
 
@@ -266,7 +266,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def tenant(self):
-        """Gets the tenant of this ListDedicatedHostsRequest.
+        r"""Gets the tenant of this ListDedicatedHostsRequest.
 
         取值范围：租户ID或“all”。  只有管理员可以指定该参数。
 
@@ -277,7 +277,7 @@ class ListDedicatedHostsRequest:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this ListDedicatedHostsRequest.
+        r"""Sets the tenant of this ListDedicatedHostsRequest.
 
         取值范围：租户ID或“all”。  只有管理员可以指定该参数。
 
@@ -288,7 +288,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListDedicatedHostsRequest.
+        r"""Gets the availability_zone of this ListDedicatedHostsRequest.
 
         专属主机所属AZ。
 
@@ -299,7 +299,7 @@ class ListDedicatedHostsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListDedicatedHostsRequest.
+        r"""Sets the availability_zone of this ListDedicatedHostsRequest.
 
         专属主机所属AZ。
 
@@ -310,7 +310,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDedicatedHostsRequest.
+        r"""Gets the limit of this ListDedicatedHostsRequest.
 
         每个页面上显示的条目数。
 
@@ -321,7 +321,7 @@ class ListDedicatedHostsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDedicatedHostsRequest.
+        r"""Sets the limit of this ListDedicatedHostsRequest.
 
         每个页面上显示的条目数。
 
@@ -332,7 +332,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDedicatedHostsRequest.
+        r"""Gets the marker of this ListDedicatedHostsRequest.
 
         该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
 
@@ -343,7 +343,7 @@ class ListDedicatedHostsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDedicatedHostsRequest.
+        r"""Sets the marker of this ListDedicatedHostsRequest.
 
         该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
 
@@ -354,7 +354,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListDedicatedHostsRequest.
+        r"""Gets the tags of this ListDedicatedHostsRequest.
 
         专属主机标签。
 
@@ -365,7 +365,7 @@ class ListDedicatedHostsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListDedicatedHostsRequest.
+        r"""Sets the tags of this ListDedicatedHostsRequest.
 
         专属主机标签。
 
@@ -376,7 +376,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def instance_uuid(self):
-        """Gets the instance_uuid of this ListDedicatedHostsRequest.
+        r"""Gets the instance_uuid of this ListDedicatedHostsRequest.
 
         专属主机上的云服务器ID。
 
@@ -387,7 +387,7 @@ class ListDedicatedHostsRequest:
 
     @instance_uuid.setter
     def instance_uuid(self, instance_uuid):
-        """Sets the instance_uuid of this ListDedicatedHostsRequest.
+        r"""Sets the instance_uuid of this ListDedicatedHostsRequest.
 
         专属主机上的云服务器ID。
 
@@ -398,7 +398,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def released_at(self):
-        """Gets the released_at of this ListDedicatedHostsRequest.
+        r"""Gets the released_at of this ListDedicatedHostsRequest.
 
         专属主机的释放时间。
 
@@ -409,7 +409,7 @@ class ListDedicatedHostsRequest:
 
     @released_at.setter
     def released_at(self, released_at):
-        """Sets the released_at of this ListDedicatedHostsRequest.
+        r"""Sets the released_at of this ListDedicatedHostsRequest.
 
         专属主机的释放时间。
 
@@ -420,7 +420,7 @@ class ListDedicatedHostsRequest:
 
     @property
     def changes_since(self):
-        """Gets the changes_since of this ListDedicatedHostsRequest.
+        r"""Gets the changes_since of this ListDedicatedHostsRequest.
 
         当专属主机更新了状态时，按日期和时间戳过滤响应。为了便于记录更改，还可能返回最近删除的专属主机。  日期和时间戳的格式为ISO 8601：CCYY-MM-DDThh:mm:ss±hh:mm  如果包含“hh:mm”值，则将时区作为UTC的偏移量返回。例如，“2015-08-27T09:49:58-05:00”。如果您省略时区，则假定为UTC时区。
 
@@ -431,7 +431,7 @@ class ListDedicatedHostsRequest:
 
     @changes_since.setter
     def changes_since(self, changes_since):
-        """Sets the changes_since of this ListDedicatedHostsRequest.
+        r"""Sets the changes_since of this ListDedicatedHostsRequest.
 
         当专属主机更新了状态时，按日期和时间戳过滤响应。为了便于记录更改，还可能返回最近删除的专属主机。  日期和时间戳的格式为ISO 8601：CCYY-MM-DDThh:mm:ss±hh:mm  如果包含“hh:mm”值，则将时区作为UTC的偏移量返回。例如，“2015-08-27T09:49:58-05:00”。如果您省略时区，则假定为UTC时区。
 

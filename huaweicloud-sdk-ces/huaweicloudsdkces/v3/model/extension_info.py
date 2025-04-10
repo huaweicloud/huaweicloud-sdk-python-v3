@@ -29,7 +29,7 @@ class ExtensionInfo:
     }
 
     def __init__(self, name=None, status=None, version=None):
-        """ExtensionInfo
+        r"""ExtensionInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExtensionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ExtensionInfo.
+        r"""Gets the name of this ExtensionInfo.
 
         插件名称
 
@@ -68,7 +68,7 @@ class ExtensionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtensionInfo.
+        r"""Sets the name of this ExtensionInfo.
 
         插件名称
 
@@ -79,7 +79,7 @@ class ExtensionInfo:
 
     @property
     def status(self):
-        """Gets the status of this ExtensionInfo.
+        r"""Gets the status of this ExtensionInfo.
 
         插件状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
 
@@ -90,7 +90,7 @@ class ExtensionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExtensionInfo.
+        r"""Sets the status of this ExtensionInfo.
 
         插件状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
 
@@ -101,7 +101,7 @@ class ExtensionInfo:
 
     @property
     def version(self):
-        """Gets the version of this ExtensionInfo.
+        r"""Gets the version of this ExtensionInfo.
 
         插件版本
 
@@ -112,7 +112,7 @@ class ExtensionInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ExtensionInfo.
+        r"""Sets the version of this ExtensionInfo.
 
         插件版本
 

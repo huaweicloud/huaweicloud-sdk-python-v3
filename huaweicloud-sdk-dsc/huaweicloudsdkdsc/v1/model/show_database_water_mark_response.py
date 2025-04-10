@@ -26,7 +26,7 @@ class ShowDatabaseWaterMarkResponse(SdkResponse):
     }
 
     def __init__(self, watermarks=None):
-        """ShowDatabaseWaterMarkResponse
+        r"""ShowDatabaseWaterMarkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDatabaseWaterMarkResponse(SdkResponse):
 
     @property
     def watermarks(self):
-        """Gets the watermarks of this ShowDatabaseWaterMarkResponse.
+        r"""Gets the watermarks of this ShowDatabaseWaterMarkResponse.
 
         提取水印内容列表。上传数据中不同列可能包含不同水印，返回时将所有提取到的水印返回，列表中水印个数不超过100
 
@@ -55,7 +55,7 @@ class ShowDatabaseWaterMarkResponse(SdkResponse):
 
     @watermarks.setter
     def watermarks(self, watermarks):
-        """Sets the watermarks of this ShowDatabaseWaterMarkResponse.
+        r"""Sets the watermarks of this ShowDatabaseWaterMarkResponse.
 
         提取水印内容列表。上传数据中不同列可能包含不同水印，返回时将所有提取到的水印返回，列表中水印个数不超过100
 

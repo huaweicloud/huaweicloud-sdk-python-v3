@@ -31,7 +31,7 @@ class Geo:
     }
 
     def __init__(self, latitude=None, longitude=None, city_code=None, country_code=None):
-        """Geo
+        r"""Geo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Geo:
 
     @property
     def latitude(self):
-        """Gets the latitude of this Geo.
+        r"""Gets the latitude of this Geo.
 
         纬度。
 
@@ -75,7 +75,7 @@ class Geo:
 
     @latitude.setter
     def latitude(self, latitude):
-        """Sets the latitude of this Geo.
+        r"""Sets the latitude of this Geo.
 
         纬度。
 
@@ -86,7 +86,7 @@ class Geo:
 
     @property
     def longitude(self):
-        """Gets the longitude of this Geo.
+        r"""Gets the longitude of this Geo.
 
         经度。
 
@@ -97,7 +97,7 @@ class Geo:
 
     @longitude.setter
     def longitude(self, longitude):
-        """Sets the longitude of this Geo.
+        r"""Sets the longitude of this Geo.
 
         经度。
 
@@ -108,7 +108,7 @@ class Geo:
 
     @property
     def city_code(self):
-        """Gets the city_code of this Geo.
+        r"""Gets the city_code of this Geo.
 
         城市编码。
 
@@ -119,7 +119,7 @@ class Geo:
 
     @city_code.setter
     def city_code(self, city_code):
-        """Sets the city_code of this Geo.
+        r"""Sets the city_code of this Geo.
 
         城市编码。
 
@@ -130,7 +130,7 @@ class Geo:
 
     @property
     def country_code(self):
-        """Gets the country_code of this Geo.
+        r"""Gets the country_code of this Geo.
 
         国家简码ISO 3166-1 alpha-2，例如：CN、US、DE、IT、SG。
 
@@ -141,7 +141,7 @@ class Geo:
 
     @country_code.setter
     def country_code(self, country_code):
-        """Sets the country_code of this Geo.
+        r"""Sets the country_code of this Geo.
 
         国家简码ISO 3166-1 alpha-2，例如：CN、US、DE、IT、SG。
 

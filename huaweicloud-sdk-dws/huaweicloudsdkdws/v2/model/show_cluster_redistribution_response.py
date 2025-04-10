@@ -38,7 +38,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     }
 
     def __init__(self, redis_info=None, schedule_mode=None, pause_enable=None, recover_enable=None, retry_enable=None, update_enable=None, control_enable=None):
-        """ShowClusterRedistributionResponse
+        r"""ShowClusterRedistributionResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def redis_info(self):
-        """Gets the redis_info of this ShowClusterRedistributionResponse.
+        r"""Gets the redis_info of this ShowClusterRedistributionResponse.
 
         :return: The redis_info of this ShowClusterRedistributionResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.RdsRedisInfo`
@@ -95,7 +95,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @redis_info.setter
     def redis_info(self, redis_info):
-        """Sets the redis_info of this ShowClusterRedistributionResponse.
+        r"""Sets the redis_info of this ShowClusterRedistributionResponse.
 
         :param redis_info: The redis_info of this ShowClusterRedistributionResponse.
         :type redis_info: :class:`huaweicloudsdkdws.v2.RdsRedisInfo`
@@ -104,7 +104,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def schedule_mode(self):
-        """Gets the schedule_mode of this ShowClusterRedistributionResponse.
+        r"""Gets the schedule_mode of this ShowClusterRedistributionResponse.
 
         调度模式
 
@@ -115,7 +115,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @schedule_mode.setter
     def schedule_mode(self, schedule_mode):
-        """Sets the schedule_mode of this ShowClusterRedistributionResponse.
+        r"""Sets the schedule_mode of this ShowClusterRedistributionResponse.
 
         调度模式
 
@@ -126,7 +126,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def pause_enable(self):
-        """Gets the pause_enable of this ShowClusterRedistributionResponse.
+        r"""Gets the pause_enable of this ShowClusterRedistributionResponse.
 
         是否允许暂停
 
@@ -137,7 +137,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @pause_enable.setter
     def pause_enable(self, pause_enable):
-        """Sets the pause_enable of this ShowClusterRedistributionResponse.
+        r"""Sets the pause_enable of this ShowClusterRedistributionResponse.
 
         是否允许暂停
 
@@ -148,7 +148,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def recover_enable(self):
-        """Gets the recover_enable of this ShowClusterRedistributionResponse.
+        r"""Gets the recover_enable of this ShowClusterRedistributionResponse.
 
         是否允许恢复
 
@@ -159,7 +159,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @recover_enable.setter
     def recover_enable(self, recover_enable):
-        """Sets the recover_enable of this ShowClusterRedistributionResponse.
+        r"""Sets the recover_enable of this ShowClusterRedistributionResponse.
 
         是否允许恢复
 
@@ -170,7 +170,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def retry_enable(self):
-        """Gets the retry_enable of this ShowClusterRedistributionResponse.
+        r"""Gets the retry_enable of this ShowClusterRedistributionResponse.
 
         是否允许重试
 
@@ -181,7 +181,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @retry_enable.setter
     def retry_enable(self, retry_enable):
-        """Sets the retry_enable of this ShowClusterRedistributionResponse.
+        r"""Sets the retry_enable of this ShowClusterRedistributionResponse.
 
         是否允许重试
 
@@ -192,7 +192,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def update_enable(self):
-        """Gets the update_enable of this ShowClusterRedistributionResponse.
+        r"""Gets the update_enable of this ShowClusterRedistributionResponse.
 
         是否允许更新
 
@@ -203,7 +203,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @update_enable.setter
     def update_enable(self, update_enable):
-        """Sets the update_enable of this ShowClusterRedistributionResponse.
+        r"""Sets the update_enable of this ShowClusterRedistributionResponse.
 
         是否允许更新
 
@@ -214,7 +214,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @property
     def control_enable(self):
-        """Gets the control_enable of this ShowClusterRedistributionResponse.
+        r"""Gets the control_enable of this ShowClusterRedistributionResponse.
 
         是否允许控制
 
@@ -225,7 +225,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
     @control_enable.setter
     def control_enable(self, control_enable):
-        """Sets the control_enable of this ShowClusterRedistributionResponse.
+        r"""Sets the control_enable of this ShowClusterRedistributionResponse.
 
         是否允许控制
 

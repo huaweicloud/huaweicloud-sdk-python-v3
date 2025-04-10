@@ -33,7 +33,7 @@ class AudioInfo:
     }
 
     def __init__(self, codec=None, sample=None, channels=None, bitrate=None, bitrate_bps=None):
-        """AudioInfo
+        r"""AudioInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AudioInfo:
 
     @property
     def codec(self):
-        """Gets the codec of this AudioInfo.
+        r"""Gets the codec of this AudioInfo.
 
         音频编码格式
 
@@ -82,7 +82,7 @@ class AudioInfo:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this AudioInfo.
+        r"""Sets the codec of this AudioInfo.
 
         音频编码格式
 
@@ -93,7 +93,7 @@ class AudioInfo:
 
     @property
     def sample(self):
-        """Gets the sample of this AudioInfo.
+        r"""Gets the sample of this AudioInfo.
 
         音频采样率
 
@@ -104,7 +104,7 @@ class AudioInfo:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this AudioInfo.
+        r"""Sets the sample of this AudioInfo.
 
         音频采样率
 
@@ -115,7 +115,7 @@ class AudioInfo:
 
     @property
     def channels(self):
-        """Gets the channels of this AudioInfo.
+        r"""Gets the channels of this AudioInfo.
 
         音频信道
 
@@ -126,7 +126,7 @@ class AudioInfo:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this AudioInfo.
+        r"""Sets the channels of this AudioInfo.
 
         音频信道
 
@@ -137,7 +137,7 @@ class AudioInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this AudioInfo.
+        r"""Gets the bitrate of this AudioInfo.
 
         音频码率，单位: kbit/s 
 
@@ -148,7 +148,7 @@ class AudioInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this AudioInfo.
+        r"""Sets the bitrate of this AudioInfo.
 
         音频码率，单位: kbit/s 
 
@@ -159,7 +159,7 @@ class AudioInfo:
 
     @property
     def bitrate_bps(self):
-        """Gets the bitrate_bps of this AudioInfo.
+        r"""Gets the bitrate_bps of this AudioInfo.
 
         音频码率，单位: bit/s 
 
@@ -170,7 +170,7 @@ class AudioInfo:
 
     @bitrate_bps.setter
     def bitrate_bps(self, bitrate_bps):
-        """Sets the bitrate_bps of this AudioInfo.
+        r"""Sets the bitrate_bps of this AudioInfo.
 
         音频码率，单位: bit/s 
 

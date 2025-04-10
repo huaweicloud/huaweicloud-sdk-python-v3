@@ -39,7 +39,7 @@ class CreateEnhancedConnectionRequestBody:
     }
 
     def __init__(self, name=None, dest_vpc_id=None, dest_network_id=None, elastic_resource_pools=None, queues=None, hosts=None, routetable_id=None, tags=None):
-        """CreateEnhancedConnectionRequestBody
+        r"""CreateEnhancedConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the name of this CreateEnhancedConnectionRequestBody.
 
         连接名称。长度64，数字字母下划线组成。
 
@@ -100,7 +100,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the name of this CreateEnhancedConnectionRequestBody.
 
         连接名称。长度64，数字字母下划线组成。
 
@@ -111,7 +111,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def dest_vpc_id(self):
-        """Gets the dest_vpc_id of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the dest_vpc_id of this CreateEnhancedConnectionRequestBody.
 
         对应服务的vpc的ID。
 
@@ -122,7 +122,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @dest_vpc_id.setter
     def dest_vpc_id(self, dest_vpc_id):
-        """Sets the dest_vpc_id of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the dest_vpc_id of this CreateEnhancedConnectionRequestBody.
 
         对应服务的vpc的ID。
 
@@ -133,7 +133,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def dest_network_id(self):
-        """Gets the dest_network_id of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the dest_network_id of this CreateEnhancedConnectionRequestBody.
 
         对应服务的子网网络ID，即为需要建立连接的服务所在的子网。
 
@@ -144,7 +144,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @dest_network_id.setter
     def dest_network_id(self, dest_network_id):
-        """Sets the dest_network_id of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the dest_network_id of this CreateEnhancedConnectionRequestBody.
 
         对应服务的子网网络ID，即为需要建立连接的服务所在的子网。
 
@@ -155,7 +155,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def elastic_resource_pools(self):
-        """Gets the elastic_resource_pools of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the elastic_resource_pools of this CreateEnhancedConnectionRequestBody.
 
         弹性资源池列表。
 
@@ -166,7 +166,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @elastic_resource_pools.setter
     def elastic_resource_pools(self, elastic_resource_pools):
-        """Sets the elastic_resource_pools of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the elastic_resource_pools of this CreateEnhancedConnectionRequestBody.
 
         弹性资源池列表。
 
@@ -177,7 +177,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def queues(self):
-        """Gets the queues of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the queues of this CreateEnhancedConnectionRequestBody.
 
         需要使用跨源的队列列表。
 
@@ -188,7 +188,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the queues of this CreateEnhancedConnectionRequestBody.
 
         需要使用跨源的队列列表。
 
@@ -199,7 +199,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the hosts of this CreateEnhancedConnectionRequestBody.
 
         用户自定义主机信息，最大支持2万条记录。
 
@@ -210,7 +210,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the hosts of this CreateEnhancedConnectionRequestBody.
 
         用户自定义主机信息，最大支持2万条记录。
 
@@ -221,7 +221,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the routetable_id of this CreateEnhancedConnectionRequestBody.
 
         对应服务的子网关联的路由表。
 
@@ -232,7 +232,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the routetable_id of this CreateEnhancedConnectionRequestBody.
 
         对应服务的子网关联的路由表。
 
@@ -243,7 +243,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateEnhancedConnectionRequestBody.
+        r"""Gets the tags of this CreateEnhancedConnectionRequestBody.
 
         标签
 
@@ -254,7 +254,7 @@ class CreateEnhancedConnectionRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateEnhancedConnectionRequestBody.
+        r"""Sets the tags of this CreateEnhancedConnectionRequestBody.
 
         标签
 

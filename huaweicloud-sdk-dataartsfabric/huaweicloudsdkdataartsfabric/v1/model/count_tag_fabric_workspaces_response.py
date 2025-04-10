@@ -28,7 +28,7 @@ class CountTagFabricWorkspacesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, x_request_id=None):
-        """CountTagFabricWorkspacesResponse
+        r"""CountTagFabricWorkspacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CountTagFabricWorkspacesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this CountTagFabricWorkspacesResponse.
+        r"""Gets the total_count of this CountTagFabricWorkspacesResponse.
 
         实例总数。
 
@@ -62,7 +62,7 @@ class CountTagFabricWorkspacesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this CountTagFabricWorkspacesResponse.
+        r"""Sets the total_count of this CountTagFabricWorkspacesResponse.
 
         实例总数。
 
@@ -73,7 +73,7 @@ class CountTagFabricWorkspacesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CountTagFabricWorkspacesResponse.
+        r"""Gets the x_request_id of this CountTagFabricWorkspacesResponse.
 
         :return: The x_request_id of this CountTagFabricWorkspacesResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CountTagFabricWorkspacesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CountTagFabricWorkspacesResponse.
+        r"""Sets the x_request_id of this CountTagFabricWorkspacesResponse.
 
         :param x_request_id: The x_request_id of this CountTagFabricWorkspacesResponse.
         :type x_request_id: str

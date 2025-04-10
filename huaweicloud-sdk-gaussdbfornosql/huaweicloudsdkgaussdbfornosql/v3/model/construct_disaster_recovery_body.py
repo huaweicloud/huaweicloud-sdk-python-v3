@@ -33,7 +33,7 @@ class ConstructDisasterRecoveryBody:
     }
 
     def __init__(self, id=None, alias=None, password=None, instance_role=None, disaster_recovery_instance=None):
-        """ConstructDisasterRecoveryBody
+        r"""ConstructDisasterRecoveryBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ConstructDisasterRecoveryBody:
 
     @property
     def id(self):
-        """Gets the id of this ConstructDisasterRecoveryBody.
+        r"""Gets the id of this ConstructDisasterRecoveryBody.
 
         容灾ID。 对容灾角色为主的实例下发搭建容灾接口时不传该参数，接口成功响应后返回生成的容灾ID。 对容灾角色为备的实例下发建容灾接口时必传该参数，且必须与上述生成的容灾ID保持一致。
 
@@ -78,7 +78,7 @@ class ConstructDisasterRecoveryBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConstructDisasterRecoveryBody.
+        r"""Sets the id of this ConstructDisasterRecoveryBody.
 
         容灾ID。 对容灾角色为主的实例下发搭建容灾接口时不传该参数，接口成功响应后返回生成的容灾ID。 对容灾角色为备的实例下发建容灾接口时必传该参数，且必须与上述生成的容灾ID保持一致。
 
@@ -89,7 +89,7 @@ class ConstructDisasterRecoveryBody:
 
     @property
     def alias(self):
-        """Gets the alias of this ConstructDisasterRecoveryBody.
+        r"""Gets the alias of this ConstructDisasterRecoveryBody.
 
         搭建容灾关系的别名。
 
@@ -100,7 +100,7 @@ class ConstructDisasterRecoveryBody:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ConstructDisasterRecoveryBody.
+        r"""Sets the alias of this ConstructDisasterRecoveryBody.
 
         搭建容灾关系的别名。
 
@@ -111,7 +111,7 @@ class ConstructDisasterRecoveryBody:
 
     @property
     def password(self):
-        """Gets the password of this ConstructDisasterRecoveryBody.
+        r"""Gets the password of this ConstructDisasterRecoveryBody.
 
         建立容灾关系所需要的容灾密码，搭建同一容灾关系的两次调用容灾密码必须保持一致。 容灾密码为容灾集群内部数据通信所用，不能用于客户端连接使用。
 
@@ -122,7 +122,7 @@ class ConstructDisasterRecoveryBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ConstructDisasterRecoveryBody.
+        r"""Sets the password of this ConstructDisasterRecoveryBody.
 
         建立容灾关系所需要的容灾密码，搭建同一容灾关系的两次调用容灾密码必须保持一致。 容灾密码为容灾集群内部数据通信所用，不能用于客户端连接使用。
 
@@ -133,7 +133,7 @@ class ConstructDisasterRecoveryBody:
 
     @property
     def instance_role(self):
-        """Gets the instance_role of this ConstructDisasterRecoveryBody.
+        r"""Gets the instance_role of this ConstructDisasterRecoveryBody.
 
         指定当前实例的容灾角色。取值为master或slave，表示在容灾关系中角色为主或备。
 
@@ -144,7 +144,7 @@ class ConstructDisasterRecoveryBody:
 
     @instance_role.setter
     def instance_role(self, instance_role):
-        """Sets the instance_role of this ConstructDisasterRecoveryBody.
+        r"""Sets the instance_role of this ConstructDisasterRecoveryBody.
 
         指定当前实例的容灾角色。取值为master或slave，表示在容灾关系中角色为主或备。
 
@@ -155,7 +155,7 @@ class ConstructDisasterRecoveryBody:
 
     @property
     def disaster_recovery_instance(self):
-        """Gets the disaster_recovery_instance of this ConstructDisasterRecoveryBody.
+        r"""Gets the disaster_recovery_instance of this ConstructDisasterRecoveryBody.
 
         :return: The disaster_recovery_instance of this ConstructDisasterRecoveryBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ConstructDisasterRecoveryInstance`
@@ -164,7 +164,7 @@ class ConstructDisasterRecoveryBody:
 
     @disaster_recovery_instance.setter
     def disaster_recovery_instance(self, disaster_recovery_instance):
-        """Sets the disaster_recovery_instance of this ConstructDisasterRecoveryBody.
+        r"""Sets the disaster_recovery_instance of this ConstructDisasterRecoveryBody.
 
         :param disaster_recovery_instance: The disaster_recovery_instance of this ConstructDisasterRecoveryBody.
         :type disaster_recovery_instance: :class:`huaweicloudsdkgaussdbfornosql.v3.ConstructDisasterRecoveryInstance`

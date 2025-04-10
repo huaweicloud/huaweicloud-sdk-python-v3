@@ -43,7 +43,7 @@ class Dictionary:
     }
 
     def __init__(self, id=None, name=None, remark=None, code=None, extend_one=None, extend_two=None, parent_code=None, type=None, create_time=None, update_time=None):
-        """Dictionary
+        r"""Dictionary
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Dictionary:
 
     @property
     def id(self):
-        """Gets the id of this Dictionary.
+        r"""Gets the id of this Dictionary.
 
         字典ID
 
@@ -117,7 +117,7 @@ class Dictionary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Dictionary.
+        r"""Sets the id of this Dictionary.
 
         字典ID
 
@@ -128,7 +128,7 @@ class Dictionary:
 
     @property
     def name(self):
-        """Gets the name of this Dictionary.
+        r"""Gets the name of this Dictionary.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -139,7 +139,7 @@ class Dictionary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Dictionary.
+        r"""Sets the name of this Dictionary.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -150,7 +150,7 @@ class Dictionary:
 
     @property
     def remark(self):
-        """Gets the remark of this Dictionary.
+        r"""Gets the remark of this Dictionary.
 
         字典描述
 
@@ -161,7 +161,7 @@ class Dictionary:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this Dictionary.
+        r"""Sets the remark of this Dictionary.
 
         字典描述
 
@@ -172,7 +172,7 @@ class Dictionary:
 
     @property
     def code(self):
-        """Gets the code of this Dictionary.
+        r"""Gets the code of this Dictionary.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -183,7 +183,7 @@ class Dictionary:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Dictionary.
+        r"""Sets the code of this Dictionary.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -194,7 +194,7 @@ class Dictionary:
 
     @property
     def extend_one(self):
-        """Gets the extend_one of this Dictionary.
+        r"""Gets the extend_one of this Dictionary.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -205,7 +205,7 @@ class Dictionary:
 
     @extend_one.setter
     def extend_one(self, extend_one):
-        """Sets the extend_one of this Dictionary.
+        r"""Sets the extend_one of this Dictionary.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -216,7 +216,7 @@ class Dictionary:
 
     @property
     def extend_two(self):
-        """Gets the extend_two of this Dictionary.
+        r"""Gets the extend_two of this Dictionary.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -227,7 +227,7 @@ class Dictionary:
 
     @extend_two.setter
     def extend_two(self, extend_two):
-        """Sets the extend_two of this Dictionary.
+        r"""Sets the extend_two of this Dictionary.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -238,7 +238,7 @@ class Dictionary:
 
     @property
     def parent_code(self):
-        """Gets the parent_code of this Dictionary.
+        r"""Gets the parent_code of this Dictionary.
 
         父字典编码,为空时代表自身就是最顶级字典
 
@@ -249,7 +249,7 @@ class Dictionary:
 
     @parent_code.setter
     def parent_code(self, parent_code):
-        """Sets the parent_code of this Dictionary.
+        r"""Sets the parent_code of this Dictionary.
 
         父字典编码,为空时代表自身就是最顶级字典
 
@@ -260,7 +260,7 @@ class Dictionary:
 
     @property
     def type(self):
-        """Gets the type of this Dictionary.
+        r"""Gets the type of this Dictionary.
 
         :return: The type of this Dictionary.
         :rtype: :class:`huaweicloudsdkroma.v2.DictionaryType`
@@ -269,7 +269,7 @@ class Dictionary:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Dictionary.
+        r"""Sets the type of this Dictionary.
 
         :param type: The type of this Dictionary.
         :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`
@@ -278,7 +278,7 @@ class Dictionary:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Dictionary.
+        r"""Gets the create_time of this Dictionary.
 
         创建时间
 
@@ -289,7 +289,7 @@ class Dictionary:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Dictionary.
+        r"""Sets the create_time of this Dictionary.
 
         创建时间
 
@@ -300,7 +300,7 @@ class Dictionary:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Dictionary.
+        r"""Gets the update_time of this Dictionary.
 
         更新时间
 
@@ -311,7 +311,7 @@ class Dictionary:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Dictionary.
+        r"""Sets the update_time of this Dictionary.
 
         更新时间
 

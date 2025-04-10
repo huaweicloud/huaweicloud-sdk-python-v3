@@ -25,7 +25,7 @@ class ReinstallServerWithoutCloudInitRequestBody:
     }
 
     def __init__(self, os_reinstall=None):
-        """ReinstallServerWithoutCloudInitRequestBody
+        r"""ReinstallServerWithoutCloudInitRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReinstallServerWithoutCloudInitRequestBody:
 
     @property
     def os_reinstall(self):
-        """Gets the os_reinstall of this ReinstallServerWithoutCloudInitRequestBody.
+        r"""Gets the os_reinstall of this ReinstallServerWithoutCloudInitRequestBody.
 
         :return: The os_reinstall of this ReinstallServerWithoutCloudInitRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitOption`
@@ -51,7 +51,7 @@ class ReinstallServerWithoutCloudInitRequestBody:
 
     @os_reinstall.setter
     def os_reinstall(self, os_reinstall):
-        """Sets the os_reinstall of this ReinstallServerWithoutCloudInitRequestBody.
+        r"""Sets the os_reinstall of this ReinstallServerWithoutCloudInitRequestBody.
 
         :param os_reinstall: The os_reinstall of this ReinstallServerWithoutCloudInitRequestBody.
         :type os_reinstall: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitOption`

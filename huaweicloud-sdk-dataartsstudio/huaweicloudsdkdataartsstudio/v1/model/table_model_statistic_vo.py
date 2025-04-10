@@ -39,7 +39,7 @@ class TableModelStatisticVO:
     }
 
     def __init__(self, total=None, published=None, sync_total=None, physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None):
-        """TableModelStatisticVO
+        r"""TableModelStatisticVO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class TableModelStatisticVO:
 
     @property
     def total(self):
-        """Gets the total of this TableModelStatisticVO.
+        r"""Gets the total of this TableModelStatisticVO.
 
         :return: The total of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticStandardCoverageVO`
@@ -101,7 +101,7 @@ class TableModelStatisticVO:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TableModelStatisticVO.
+        r"""Sets the total of this TableModelStatisticVO.
 
         :param total: The total of this TableModelStatisticVO.
         :type total: :class:`huaweicloudsdkdataartsstudio.v1.StatisticStandardCoverageVO`
@@ -110,7 +110,7 @@ class TableModelStatisticVO:
 
     @property
     def published(self):
-        """Gets the published of this TableModelStatisticVO.
+        r"""Gets the published of this TableModelStatisticVO.
 
         :return: The published of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticStandardCoverageVO`
@@ -119,7 +119,7 @@ class TableModelStatisticVO:
 
     @published.setter
     def published(self, published):
-        """Sets the published of this TableModelStatisticVO.
+        r"""Sets the published of this TableModelStatisticVO.
 
         :param published: The published of this TableModelStatisticVO.
         :type published: :class:`huaweicloudsdkdataartsstudio.v1.StatisticStandardCoverageVO`
@@ -128,7 +128,7 @@ class TableModelStatisticVO:
 
     @property
     def sync_total(self):
-        """Gets the sync_total of this TableModelStatisticVO.
+        r"""Gets the sync_total of this TableModelStatisticVO.
 
         :return: The sync_total of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -137,7 +137,7 @@ class TableModelStatisticVO:
 
     @sync_total.setter
     def sync_total(self, sync_total):
-        """Sets the sync_total of this TableModelStatisticVO.
+        r"""Sets the sync_total of this TableModelStatisticVO.
 
         :param sync_total: The sync_total of this TableModelStatisticVO.
         :type sync_total: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -146,7 +146,7 @@ class TableModelStatisticVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this TableModelStatisticVO.
+        r"""Gets the physical_table of this TableModelStatisticVO.
 
         :return: The physical_table of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -155,7 +155,7 @@ class TableModelStatisticVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this TableModelStatisticVO.
+        r"""Sets the physical_table of this TableModelStatisticVO.
 
         :param physical_table: The physical_table of this TableModelStatisticVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -164,7 +164,7 @@ class TableModelStatisticVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this TableModelStatisticVO.
+        r"""Gets the technical_asset of this TableModelStatisticVO.
 
         :return: The technical_asset of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -173,7 +173,7 @@ class TableModelStatisticVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this TableModelStatisticVO.
+        r"""Sets the technical_asset of this TableModelStatisticVO.
 
         :param technical_asset: The technical_asset of this TableModelStatisticVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -182,7 +182,7 @@ class TableModelStatisticVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this TableModelStatisticVO.
+        r"""Gets the business_asset of this TableModelStatisticVO.
 
         :return: The business_asset of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -191,7 +191,7 @@ class TableModelStatisticVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this TableModelStatisticVO.
+        r"""Sets the business_asset of this TableModelStatisticVO.
 
         :param business_asset: The business_asset of this TableModelStatisticVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -200,7 +200,7 @@ class TableModelStatisticVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this TableModelStatisticVO.
+        r"""Gets the meta_data_link of this TableModelStatisticVO.
 
         :return: The meta_data_link of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -209,7 +209,7 @@ class TableModelStatisticVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this TableModelStatisticVO.
+        r"""Sets the meta_data_link of this TableModelStatisticVO.
 
         :param meta_data_link: The meta_data_link of this TableModelStatisticVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -218,7 +218,7 @@ class TableModelStatisticVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this TableModelStatisticVO.
+        r"""Gets the data_quality of this TableModelStatisticVO.
 
         :return: The data_quality of this TableModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`
@@ -227,7 +227,7 @@ class TableModelStatisticVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this TableModelStatisticVO.
+        r"""Sets the data_quality of this TableModelStatisticVO.
 
         :param data_quality: The data_quality of this TableModelStatisticVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusStatisticVO`

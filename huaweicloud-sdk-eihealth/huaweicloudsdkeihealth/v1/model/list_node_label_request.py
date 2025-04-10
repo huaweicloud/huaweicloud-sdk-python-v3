@@ -25,7 +25,7 @@ class ListNodeLabelRequest:
     }
 
     def __init__(self, server_id=None):
-        """ListNodeLabelRequest
+        r"""ListNodeLabelRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListNodeLabelRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListNodeLabelRequest.
+        r"""Gets the server_id of this ListNodeLabelRequest.
 
         节点id
 
@@ -53,7 +53,7 @@ class ListNodeLabelRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListNodeLabelRequest.
+        r"""Sets the server_id of this ListNodeLabelRequest.
 
         节点id
 

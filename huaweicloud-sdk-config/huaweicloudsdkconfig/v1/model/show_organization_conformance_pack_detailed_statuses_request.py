@@ -35,7 +35,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
     }
 
     def __init__(self, organization_id=None, conformance_pack_name=None, organization_conformance_pack_id=None, state=None, limit=None, marker=None):
-        """ShowOrganizationConformancePackDetailedStatusesRequest
+        r"""ShowOrganizationConformancePackDetailedStatusesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Gets the organization_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         组织ID。
 
@@ -88,7 +88,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Sets the organization_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         组织ID。
 
@@ -99,7 +99,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @property
     def conformance_pack_name(self):
-        """Gets the conformance_pack_name of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Gets the conformance_pack_name of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         合规规则包名称。
 
@@ -110,7 +110,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @conformance_pack_name.setter
     def conformance_pack_name(self, conformance_pack_name):
-        """Sets the conformance_pack_name of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Sets the conformance_pack_name of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         合规规则包名称。
 
@@ -121,7 +121,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @property
     def organization_conformance_pack_id(self):
-        """Gets the organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Gets the organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         组织合规规则包ID。
 
@@ -132,7 +132,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @organization_conformance_pack_id.setter
     def organization_conformance_pack_id(self, organization_conformance_pack_id):
-        """Sets the organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Sets the organization_conformance_pack_id of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         组织合规规则包ID。
 
@@ -143,7 +143,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @property
     def state(self):
-        """Gets the state of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Gets the state of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         部署状态，区分大小写
 
@@ -154,7 +154,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Sets the state of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         部署状态，区分大小写
 
@@ -165,7 +165,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Gets the limit of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         最大的返回数量
 
@@ -176,7 +176,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Sets the limit of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         最大的返回数量
 
@@ -187,7 +187,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Gets the marker of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -198,7 +198,7 @@ class ShowOrganizationConformancePackDetailedStatusesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowOrganizationConformancePackDetailedStatusesRequest.
+        r"""Sets the marker of this ShowOrganizationConformancePackDetailedStatusesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

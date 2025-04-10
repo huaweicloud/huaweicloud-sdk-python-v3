@@ -25,7 +25,7 @@ class ReasonDTO:
     }
 
     def __init__(self, reason=None):
-        """ReasonDTO
+        r"""ReasonDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReasonDTO:
 
     @property
     def reason(self):
-        """Gets the reason of this ReasonDTO.
+        r"""Gets the reason of this ReasonDTO.
 
         审批通过/驳回原因
 
@@ -53,7 +53,7 @@ class ReasonDTO:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ReasonDTO.
+        r"""Sets the reason of this ReasonDTO.
 
         审批通过/驳回原因
 

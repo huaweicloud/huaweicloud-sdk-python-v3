@@ -25,7 +25,7 @@ class RestAllowClientRecordReqBody:
     }
 
     def __init__(self, allow_client_record=None):
-        """RestAllowClientRecordReqBody
+        r"""RestAllowClientRecordReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestAllowClientRecordReqBody:
 
     @property
     def allow_client_record(self):
-        """Gets the allow_client_record of this RestAllowClientRecordReqBody.
+        r"""Gets the allow_client_record of this RestAllowClientRecordReqBody.
 
         * 0：取消与会者客户端录制权限 * 1：允许与会者客户端录制 
 
@@ -53,7 +53,7 @@ class RestAllowClientRecordReqBody:
 
     @allow_client_record.setter
     def allow_client_record(self, allow_client_record):
-        """Sets the allow_client_record of this RestAllowClientRecordReqBody.
+        r"""Sets the allow_client_record of this RestAllowClientRecordReqBody.
 
         * 0：取消与会者客户端录制权限 * 1：允许与会者客户端录制 
 

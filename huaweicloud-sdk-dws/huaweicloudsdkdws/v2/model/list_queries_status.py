@@ -33,7 +33,7 @@ class ListQueriesStatus:
     }
 
     def __init__(self, average_query_waiting_time=None, average_time_consumption_of_queries=None, average_time_consumption_of_sessions=None, queries_count=None, session_count=None):
-        """ListQueriesStatus
+        r"""ListQueriesStatus
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListQueriesStatus:
 
     @property
     def average_query_waiting_time(self):
-        """Gets the average_query_waiting_time of this ListQueriesStatus.
+        r"""Gets the average_query_waiting_time of this ListQueriesStatus.
 
         平均查询等待时间。
 
@@ -82,7 +82,7 @@ class ListQueriesStatus:
 
     @average_query_waiting_time.setter
     def average_query_waiting_time(self, average_query_waiting_time):
-        """Sets the average_query_waiting_time of this ListQueriesStatus.
+        r"""Sets the average_query_waiting_time of this ListQueriesStatus.
 
         平均查询等待时间。
 
@@ -93,7 +93,7 @@ class ListQueriesStatus:
 
     @property
     def average_time_consumption_of_queries(self):
-        """Gets the average_time_consumption_of_queries of this ListQueriesStatus.
+        r"""Gets the average_time_consumption_of_queries of this ListQueriesStatus.
 
         平均查询耗时。
 
@@ -104,7 +104,7 @@ class ListQueriesStatus:
 
     @average_time_consumption_of_queries.setter
     def average_time_consumption_of_queries(self, average_time_consumption_of_queries):
-        """Sets the average_time_consumption_of_queries of this ListQueriesStatus.
+        r"""Sets the average_time_consumption_of_queries of this ListQueriesStatus.
 
         平均查询耗时。
 
@@ -115,7 +115,7 @@ class ListQueriesStatus:
 
     @property
     def average_time_consumption_of_sessions(self):
-        """Gets the average_time_consumption_of_sessions of this ListQueriesStatus.
+        r"""Gets the average_time_consumption_of_sessions of this ListQueriesStatus.
 
         平均会话耗时。
 
@@ -126,7 +126,7 @@ class ListQueriesStatus:
 
     @average_time_consumption_of_sessions.setter
     def average_time_consumption_of_sessions(self, average_time_consumption_of_sessions):
-        """Sets the average_time_consumption_of_sessions of this ListQueriesStatus.
+        r"""Sets the average_time_consumption_of_sessions of this ListQueriesStatus.
 
         平均会话耗时。
 
@@ -137,7 +137,7 @@ class ListQueriesStatus:
 
     @property
     def queries_count(self):
-        """Gets the queries_count of this ListQueriesStatus.
+        r"""Gets the queries_count of this ListQueriesStatus.
 
         查询数量。
 
@@ -148,7 +148,7 @@ class ListQueriesStatus:
 
     @queries_count.setter
     def queries_count(self, queries_count):
-        """Sets the queries_count of this ListQueriesStatus.
+        r"""Sets the queries_count of this ListQueriesStatus.
 
         查询数量。
 
@@ -159,7 +159,7 @@ class ListQueriesStatus:
 
     @property
     def session_count(self):
-        """Gets the session_count of this ListQueriesStatus.
+        r"""Gets the session_count of this ListQueriesStatus.
 
         会话数量。
 
@@ -170,7 +170,7 @@ class ListQueriesStatus:
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this ListQueriesStatus.
+        r"""Sets the session_count of this ListQueriesStatus.
 
         会话数量。
 

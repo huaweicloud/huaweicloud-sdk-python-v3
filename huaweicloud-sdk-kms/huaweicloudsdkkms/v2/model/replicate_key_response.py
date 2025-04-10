@@ -30,7 +30,7 @@ class ReplicateKeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, domain_id=None, region=None):
-        """ReplicateKeyResponse
+        r"""ReplicateKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ReplicateKeyResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this ReplicateKeyResponse.
+        r"""Gets the key_id of this ReplicateKeyResponse.
 
         复制出的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -69,7 +69,7 @@ class ReplicateKeyResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ReplicateKeyResponse.
+        r"""Sets the key_id of this ReplicateKeyResponse.
 
         复制出的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -80,7 +80,7 @@ class ReplicateKeyResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ReplicateKeyResponse.
+        r"""Gets the domain_id of this ReplicateKeyResponse.
 
         用户域ID。
 
@@ -91,7 +91,7 @@ class ReplicateKeyResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ReplicateKeyResponse.
+        r"""Sets the domain_id of this ReplicateKeyResponse.
 
         用户域ID。
 
@@ -102,7 +102,7 @@ class ReplicateKeyResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ReplicateKeyResponse.
+        r"""Gets the region of this ReplicateKeyResponse.
 
         复制出的密钥所在区域编码。如cn-north-4。
 
@@ -113,7 +113,7 @@ class ReplicateKeyResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ReplicateKeyResponse.
+        r"""Sets the region of this ReplicateKeyResponse.
 
         复制出的密钥所在区域编码。如cn-north-4。
 

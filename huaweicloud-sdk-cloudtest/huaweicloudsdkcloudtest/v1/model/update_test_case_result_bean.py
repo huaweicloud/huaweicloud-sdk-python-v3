@@ -35,7 +35,7 @@ class UpdateTestCaseResultBean:
     }
 
     def __init__(self, testcase_id=None, execute_id=None, result_id=None, end_time=None, duration=None, description=None):
-        """UpdateTestCaseResultBean
+        r"""UpdateTestCaseResultBean
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class UpdateTestCaseResultBean:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this UpdateTestCaseResultBean.
+        r"""Gets the testcase_id of this UpdateTestCaseResultBean.
 
         测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
 
@@ -85,7 +85,7 @@ class UpdateTestCaseResultBean:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this UpdateTestCaseResultBean.
+        r"""Sets the testcase_id of this UpdateTestCaseResultBean.
 
         测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
 
@@ -96,7 +96,7 @@ class UpdateTestCaseResultBean:
 
     @property
     def execute_id(self):
-        """Gets the execute_id of this UpdateTestCaseResultBean.
+        r"""Gets the execute_id of this UpdateTestCaseResultBean.
 
         注册服务执行id，该值不允许重复，不超过32位字符
 
@@ -107,7 +107,7 @@ class UpdateTestCaseResultBean:
 
     @execute_id.setter
     def execute_id(self, execute_id):
-        """Sets the execute_id of this UpdateTestCaseResultBean.
+        r"""Sets the execute_id of this UpdateTestCaseResultBean.
 
         注册服务执行id，该值不允许重复，不超过32位字符
 
@@ -118,7 +118,7 @@ class UpdateTestCaseResultBean:
 
     @property
     def result_id(self):
-        """Gets the result_id of this UpdateTestCaseResultBean.
+        r"""Gets the result_id of this UpdateTestCaseResultBean.
 
         测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
 
@@ -129,7 +129,7 @@ class UpdateTestCaseResultBean:
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this UpdateTestCaseResultBean.
+        r"""Sets the result_id of this UpdateTestCaseResultBean.
 
         测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
 
@@ -140,7 +140,7 @@ class UpdateTestCaseResultBean:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateTestCaseResultBean.
+        r"""Gets the end_time of this UpdateTestCaseResultBean.
 
         用例结束执行的时间戳，在执行结束时该字段必传
 
@@ -151,7 +151,7 @@ class UpdateTestCaseResultBean:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateTestCaseResultBean.
+        r"""Sets the end_time of this UpdateTestCaseResultBean.
 
         用例结束执行的时间戳，在执行结束时该字段必传
 
@@ -162,7 +162,7 @@ class UpdateTestCaseResultBean:
 
     @property
     def duration(self):
-        """Gets the duration of this UpdateTestCaseResultBean.
+        r"""Gets the duration of this UpdateTestCaseResultBean.
 
         执行用例持续时长ms，更新状态时改字段必传
 
@@ -173,7 +173,7 @@ class UpdateTestCaseResultBean:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this UpdateTestCaseResultBean.
+        r"""Sets the duration of this UpdateTestCaseResultBean.
 
         执行用例持续时长ms，更新状态时改字段必传
 
@@ -184,7 +184,7 @@ class UpdateTestCaseResultBean:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTestCaseResultBean.
+        r"""Gets the description of this UpdateTestCaseResultBean.
 
         用于记录该次结果执行的备注信息
 
@@ -195,7 +195,7 @@ class UpdateTestCaseResultBean:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTestCaseResultBean.
+        r"""Sets the description of this UpdateTestCaseResultBean.
 
         用于记录该次结果执行的备注信息
 

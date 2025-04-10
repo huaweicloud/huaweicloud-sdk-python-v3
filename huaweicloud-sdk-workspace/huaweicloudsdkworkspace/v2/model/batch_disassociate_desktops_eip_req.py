@@ -25,7 +25,7 @@ class BatchDisassociateDesktopsEipReq:
     }
 
     def __init__(self, desktop_ids=None):
-        """BatchDisassociateDesktopsEipReq
+        r"""BatchDisassociateDesktopsEipReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDisassociateDesktopsEipReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this BatchDisassociateDesktopsEipReq.
+        r"""Gets the desktop_ids of this BatchDisassociateDesktopsEipReq.
 
         待解绑EIP的桌面id。
 
@@ -54,7 +54,7 @@ class BatchDisassociateDesktopsEipReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this BatchDisassociateDesktopsEipReq.
+        r"""Sets the desktop_ids of this BatchDisassociateDesktopsEipReq.
 
         待解绑EIP的桌面id。
 

@@ -29,7 +29,7 @@ class CreateConnectGateway:
     }
 
     def __init__(self, name=None, description=None, address_family=None):
-        """CreateConnectGateway
+        r"""CreateConnectGateway
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateConnectGateway:
 
     @property
     def name(self):
-        """Gets the name of this CreateConnectGateway.
+        r"""Gets the name of this CreateConnectGateway.
 
         网关名字
 
@@ -67,7 +67,7 @@ class CreateConnectGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConnectGateway.
+        r"""Sets the name of this CreateConnectGateway.
 
         网关名字
 
@@ -78,7 +78,7 @@ class CreateConnectGateway:
 
     @property
     def description(self):
-        """Gets the description of this CreateConnectGateway.
+        r"""Gets the description of this CreateConnectGateway.
 
         描述信息
 
@@ -89,7 +89,7 @@ class CreateConnectGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConnectGateway.
+        r"""Sets the description of this CreateConnectGateway.
 
         描述信息
 
@@ -100,7 +100,7 @@ class CreateConnectGateway:
 
     @property
     def address_family(self):
-        """Gets the address_family of this CreateConnectGateway.
+        r"""Gets the address_family of this CreateConnectGateway.
 
         地址族信息 不填默认ipv4
 
@@ -111,7 +111,7 @@ class CreateConnectGateway:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this CreateConnectGateway.
+        r"""Sets the address_family of this CreateConnectGateway.
 
         地址族信息 不填默认ipv4
 

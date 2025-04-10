@@ -24,7 +24,7 @@ class CreateImageWatermarkResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """CreateImageWatermarkResponse
+        r"""CreateImageWatermarkResponse
 
         The model defined in huaweicloud sdk
 

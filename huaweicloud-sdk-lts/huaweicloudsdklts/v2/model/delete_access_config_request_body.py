@@ -25,7 +25,7 @@ class DeleteAccessConfigRequestBody:
     }
 
     def __init__(self, access_config_id_list=None):
-        """DeleteAccessConfigRequestBody
+        r"""DeleteAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAccessConfigRequestBody:
 
     @property
     def access_config_id_list(self):
-        """Gets the access_config_id_list of this DeleteAccessConfigRequestBody.
+        r"""Gets the access_config_id_list of this DeleteAccessConfigRequestBody.
 
         日志接入ID列表
 
@@ -53,7 +53,7 @@ class DeleteAccessConfigRequestBody:
 
     @access_config_id_list.setter
     def access_config_id_list(self, access_config_id_list):
-        """Sets the access_config_id_list of this DeleteAccessConfigRequestBody.
+        r"""Sets the access_config_id_list of this DeleteAccessConfigRequestBody.
 
         日志接入ID列表
 

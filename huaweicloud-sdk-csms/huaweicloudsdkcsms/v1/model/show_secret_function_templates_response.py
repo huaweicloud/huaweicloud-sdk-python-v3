@@ -26,7 +26,7 @@ class ShowSecretFunctionTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, function_templates=None):
-        """ShowSecretFunctionTemplatesResponse
+        r"""ShowSecretFunctionTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecretFunctionTemplatesResponse(SdkResponse):
 
     @property
     def function_templates(self):
-        """Gets the function_templates of this ShowSecretFunctionTemplatesResponse.
+        r"""Gets the function_templates of this ShowSecretFunctionTemplatesResponse.
 
         凭据轮转函数模板。
 
@@ -55,7 +55,7 @@ class ShowSecretFunctionTemplatesResponse(SdkResponse):
 
     @function_templates.setter
     def function_templates(self, function_templates):
-        """Sets the function_templates of this ShowSecretFunctionTemplatesResponse.
+        r"""Sets the function_templates of this ShowSecretFunctionTemplatesResponse.
 
         凭据轮转函数模板。
 

@@ -27,7 +27,7 @@ class UpdateNewNodeAutoAddSwitchRequestBody:
     }
 
     def __init__(self, switch_status=None, weight=None):
-        """UpdateNewNodeAutoAddSwitchRequestBody
+        r"""UpdateNewNodeAutoAddSwitchRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNewNodeAutoAddSwitchRequestBody:
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this UpdateNewNodeAutoAddSwitchRequestBody.
+        r"""Gets the switch_status of this UpdateNewNodeAutoAddSwitchRequestBody.
 
         是否开启新增节点自动加入该Proxy。  取值范围： - ON：开启。 - OFF：关闭。
 
@@ -60,7 +60,7 @@ class UpdateNewNodeAutoAddSwitchRequestBody:
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this UpdateNewNodeAutoAddSwitchRequestBody.
+        r"""Sets the switch_status of this UpdateNewNodeAutoAddSwitchRequestBody.
 
         是否开启新增节点自动加入该Proxy。  取值范围： - ON：开启。 - OFF：关闭。
 
@@ -71,7 +71,7 @@ class UpdateNewNodeAutoAddSwitchRequestBody:
 
     @property
     def weight(self):
-        """Gets the weight of this UpdateNewNodeAutoAddSwitchRequestBody.
+        r"""Gets the weight of this UpdateNewNodeAutoAddSwitchRequestBody.
 
         新增节点的读权重：  - 新增节点自动加入为ON，取值为0~1000。 - 新增节点自动加入为OFF，则可不输入读权重。
 
@@ -82,7 +82,7 @@ class UpdateNewNodeAutoAddSwitchRequestBody:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this UpdateNewNodeAutoAddSwitchRequestBody.
+        r"""Sets the weight of this UpdateNewNodeAutoAddSwitchRequestBody.
 
         新增节点的读权重：  - 新增节点自动加入为ON，取值为0~1000。 - 新增节点自动加入为OFF，则可不输入读权重。
 

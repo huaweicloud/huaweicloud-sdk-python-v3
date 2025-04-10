@@ -27,7 +27,7 @@ class CreateTaskRequest:
     }
 
     def __init__(self, deployment_id=None, body=None):
-        """CreateTaskRequest
+        r"""CreateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTaskRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this CreateTaskRequest.
+        r"""Gets the deployment_id of this CreateTaskRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -60,7 +60,7 @@ class CreateTaskRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this CreateTaskRequest.
+        r"""Sets the deployment_id of this CreateTaskRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -71,7 +71,7 @@ class CreateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTaskRequest.
+        r"""Gets the body of this CreateTaskRequest.
 
         :return: The body of this CreateTaskRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskRequest`
@@ -80,7 +80,7 @@ class CreateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTaskRequest.
+        r"""Sets the body of this CreateTaskRequest.
 
         :param body: The body of this CreateTaskRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.TaskRequest`

@@ -41,7 +41,7 @@ class Links:
     }
 
     def __init__(self, link_config_values=None, creation_user=None, name=None, id=None, creation_date=None, connector_name=None, update_date=None, enabled=None, update_user=None):
-        """Links
+        r"""Links
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class Links:
 
     @property
     def link_config_values(self):
-        """Gets the link_config_values of this Links.
+        r"""Gets the link_config_values of this Links.
 
         :return: The link_config_values of this Links.
         :rtype: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvalues`
@@ -105,7 +105,7 @@ class Links:
 
     @link_config_values.setter
     def link_config_values(self, link_config_values):
-        """Sets the link_config_values of this Links.
+        r"""Sets the link_config_values of this Links.
 
         :param link_config_values: The link_config_values of this Links.
         :type link_config_values: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvalues`
@@ -114,7 +114,7 @@ class Links:
 
     @property
     def creation_user(self):
-        """Gets the creation_user of this Links.
+        r"""Gets the creation_user of this Links.
 
         创建连接的用户
 
@@ -125,7 +125,7 @@ class Links:
 
     @creation_user.setter
     def creation_user(self, creation_user):
-        """Sets the creation_user of this Links.
+        r"""Sets the creation_user of this Links.
 
         创建连接的用户
 
@@ -136,7 +136,7 @@ class Links:
 
     @property
     def name(self):
-        """Gets the name of this Links.
+        r"""Gets the name of this Links.
 
         连接名称
 
@@ -147,7 +147,7 @@ class Links:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Links.
+        r"""Sets the name of this Links.
 
         连接名称
 
@@ -158,7 +158,7 @@ class Links:
 
     @property
     def id(self):
-        """Gets the id of this Links.
+        r"""Gets the id of this Links.
 
         连接ID
 
@@ -169,7 +169,7 @@ class Links:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Links.
+        r"""Sets the id of this Links.
 
         连接ID
 
@@ -180,7 +180,7 @@ class Links:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this Links.
+        r"""Gets the creation_date of this Links.
 
         创建连接的时间
 
@@ -191,7 +191,7 @@ class Links:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this Links.
+        r"""Sets the creation_date of this Links.
 
         创建连接的时间
 
@@ -202,7 +202,7 @@ class Links:
 
     @property
     def connector_name(self):
-        """Gets the connector_name of this Links.
+        r"""Gets the connector_name of this Links.
 
         连接器名称，对应的连接参数如下：generic-jdbc-connector：关系数据库连接。obs-connector：OBS连接、阿里云OSS连接。hdfs-connector：HDFS连接。hbase-connector：HBase连接、CloudTable连接。hive-connector：Hive连接。ftp-connector/sftp-connector：FTP/SFTP连接。mongodb-connector：MongoDB连接。redis-connector：Redis/DCS连接。nas-connector：NAS/SFS连接。kafka-connector：Kafka连接。dis-connector：DIS连接。elasticsearch-connector：Elasticsearch/云搜索服务连接。dli-connector：DLI连接。opentsdb-connector：CloudTable OpenTSDB连接。http-connector：HTTP/HTTPS连接，该连接暂无连接参数。thirdparty-obs-connector：七牛云KODO/腾讯云COS连接、亚马逊对象存储连接。dms-kafka-connector：DMS Kafka连接
 
@@ -213,7 +213,7 @@ class Links:
 
     @connector_name.setter
     def connector_name(self, connector_name):
-        """Sets the connector_name of this Links.
+        r"""Sets the connector_name of this Links.
 
         连接器名称，对应的连接参数如下：generic-jdbc-connector：关系数据库连接。obs-connector：OBS连接、阿里云OSS连接。hdfs-connector：HDFS连接。hbase-connector：HBase连接、CloudTable连接。hive-connector：Hive连接。ftp-connector/sftp-connector：FTP/SFTP连接。mongodb-connector：MongoDB连接。redis-connector：Redis/DCS连接。nas-connector：NAS/SFS连接。kafka-connector：Kafka连接。dis-connector：DIS连接。elasticsearch-connector：Elasticsearch/云搜索服务连接。dli-connector：DLI连接。opentsdb-connector：CloudTable OpenTSDB连接。http-connector：HTTP/HTTPS连接，该连接暂无连接参数。thirdparty-obs-connector：七牛云KODO/腾讯云COS连接、亚马逊对象存储连接。dms-kafka-connector：DMS Kafka连接
 
@@ -224,7 +224,7 @@ class Links:
 
     @property
     def update_date(self):
-        """Gets the update_date of this Links.
+        r"""Gets the update_date of this Links.
 
         更新连接的时间
 
@@ -235,7 +235,7 @@ class Links:
 
     @update_date.setter
     def update_date(self, update_date):
-        """Sets the update_date of this Links.
+        r"""Sets the update_date of this Links.
 
         更新连接的时间
 
@@ -246,7 +246,7 @@ class Links:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Links.
+        r"""Gets the enabled of this Links.
 
         是否激活连接，默认为“true”
 
@@ -257,7 +257,7 @@ class Links:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Links.
+        r"""Sets the enabled of this Links.
 
         是否激活连接，默认为“true”
 
@@ -268,7 +268,7 @@ class Links:
 
     @property
     def update_user(self):
-        """Gets the update_user of this Links.
+        r"""Gets the update_user of this Links.
 
         更新连接的用户
 
@@ -279,7 +279,7 @@ class Links:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this Links.
+        r"""Sets the update_user of this Links.
 
         更新连接的用户
 

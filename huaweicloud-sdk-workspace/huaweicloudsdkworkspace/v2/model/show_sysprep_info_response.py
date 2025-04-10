@@ -28,7 +28,7 @@ class ShowSysprepInfoResponse(SdkResponse):
     }
 
     def __init__(self, sysprep_version=None, support_create_image=None):
-        """ShowSysprepInfoResponse
+        r"""ShowSysprepInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSysprepInfoResponse(SdkResponse):
 
     @property
     def sysprep_version(self):
-        """Gets the sysprep_version of this ShowSysprepInfoResponse.
+        r"""Gets the sysprep_version of this ShowSysprepInfoResponse.
 
         sysprep版本。
 
@@ -62,7 +62,7 @@ class ShowSysprepInfoResponse(SdkResponse):
 
     @sysprep_version.setter
     def sysprep_version(self, sysprep_version):
-        """Sets the sysprep_version of this ShowSysprepInfoResponse.
+        r"""Sets the sysprep_version of this ShowSysprepInfoResponse.
 
         sysprep版本。
 
@@ -73,7 +73,7 @@ class ShowSysprepInfoResponse(SdkResponse):
 
     @property
     def support_create_image(self):
-        """Gets the support_create_image of this ShowSysprepInfoResponse.
+        r"""Gets the support_create_image of this ShowSysprepInfoResponse.
 
         是否支持创建镜像。
 
@@ -84,7 +84,7 @@ class ShowSysprepInfoResponse(SdkResponse):
 
     @support_create_image.setter
     def support_create_image(self, support_create_image):
-        """Sets the support_create_image of this ShowSysprepInfoResponse.
+        r"""Sets the support_create_image of this ShowSysprepInfoResponse.
 
         是否支持创建镜像。
 

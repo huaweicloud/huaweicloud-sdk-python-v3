@@ -23,7 +23,7 @@ class ShowShareFeatureGatesRequest:
     }
 
     def __init__(self):
-        """ShowShareFeatureGatesRequest
+        r"""ShowShareFeatureGatesRequest
 
         The model defined in huaweicloud sdk
 

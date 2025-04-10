@@ -27,7 +27,7 @@ class DeleteLivePlatformRequest:
     }
 
     def __init__(self, platform_id=None, x_app_user_id=None):
-        """DeleteLivePlatformRequest
+        r"""DeleteLivePlatformRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteLivePlatformRequest:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this DeleteLivePlatformRequest.
+        r"""Gets the platform_id of this DeleteLivePlatformRequest.
 
         直播平台ID。
 
@@ -60,7 +60,7 @@ class DeleteLivePlatformRequest:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this DeleteLivePlatformRequest.
+        r"""Sets the platform_id of this DeleteLivePlatformRequest.
 
         直播平台ID。
 
@@ -71,7 +71,7 @@ class DeleteLivePlatformRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteLivePlatformRequest.
+        r"""Gets the x_app_user_id of this DeleteLivePlatformRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class DeleteLivePlatformRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteLivePlatformRequest.
+        r"""Sets the x_app_user_id of this DeleteLivePlatformRequest.
 
         第三方用户ID。不允许输入中文。
 

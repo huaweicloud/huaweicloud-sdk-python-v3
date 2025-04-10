@@ -31,7 +31,7 @@ class ValueData:
     }
 
     def __init__(self, metric_name=None, type=None, unit=None, value=None):
-        """ValueData
+        r"""ValueData
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ValueData:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ValueData.
+        r"""Gets the metric_name of this ValueData.
 
         指标名称。长度1~255。
 
@@ -73,7 +73,7 @@ class ValueData:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ValueData.
+        r"""Sets the metric_name of this ValueData.
 
         指标名称。长度1~255。
 
@@ -84,7 +84,7 @@ class ValueData:
 
     @property
     def type(self):
-        """Gets the type of this ValueData.
+        r"""Gets the type of this ValueData.
 
         数据的类型。取值范围只能是\"int\"或\"float\"。
 
@@ -95,7 +95,7 @@ class ValueData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ValueData.
+        r"""Sets the type of this ValueData.
 
         数据的类型。取值范围只能是\"int\"或\"float\"。
 
@@ -106,7 +106,7 @@ class ValueData:
 
     @property
     def unit(self):
-        """Gets the unit of this ValueData.
+        r"""Gets the unit of this ValueData.
 
         数据的单位。长度不超过32个字符。
 
@@ -117,7 +117,7 @@ class ValueData:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ValueData.
+        r"""Sets the unit of this ValueData.
 
         数据的单位。长度不超过32个字符。
 
@@ -128,7 +128,7 @@ class ValueData:
 
     @property
     def value(self):
-        """Gets the value of this ValueData.
+        r"""Gets the value of this ValueData.
 
         指标数据的值。取值范围有效的数值类型。
 
@@ -139,7 +139,7 @@ class ValueData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ValueData.
+        r"""Sets the value of this ValueData.
 
         指标数据的值。取值范围有效的数值类型。
 

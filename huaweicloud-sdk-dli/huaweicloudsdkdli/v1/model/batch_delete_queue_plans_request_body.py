@@ -25,7 +25,7 @@ class BatchDeleteQueuePlansRequestBody:
     }
 
     def __init__(self, plan_ids=None):
-        """BatchDeleteQueuePlansRequestBody
+        r"""BatchDeleteQueuePlansRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteQueuePlansRequestBody:
 
     @property
     def plan_ids(self):
-        """Gets the plan_ids of this BatchDeleteQueuePlansRequestBody.
+        r"""Gets the plan_ids of this BatchDeleteQueuePlansRequestBody.
 
         表示SQL语句的类型
 
@@ -53,7 +53,7 @@ class BatchDeleteQueuePlansRequestBody:
 
     @plan_ids.setter
     def plan_ids(self, plan_ids):
-        """Sets the plan_ids of this BatchDeleteQueuePlansRequestBody.
+        r"""Sets the plan_ids of this BatchDeleteQueuePlansRequestBody.
 
         表示SQL语句的类型
 

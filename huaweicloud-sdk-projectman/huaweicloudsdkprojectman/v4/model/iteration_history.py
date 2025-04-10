@@ -35,7 +35,7 @@ class IterationHistory:
     }
 
     def __init__(self, iteration_id=None, project_id=None, operator=None, operate=None, operate_time=None, details=None):
-        """IterationHistory
+        r"""IterationHistory
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IterationHistory:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this IterationHistory.
+        r"""Gets the iteration_id of this IterationHistory.
 
         迭代ID
 
@@ -89,7 +89,7 @@ class IterationHistory:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this IterationHistory.
+        r"""Sets the iteration_id of this IterationHistory.
 
         迭代ID
 
@@ -100,7 +100,7 @@ class IterationHistory:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IterationHistory.
+        r"""Gets the project_id of this IterationHistory.
 
         项目ID
 
@@ -111,7 +111,7 @@ class IterationHistory:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IterationHistory.
+        r"""Sets the project_id of this IterationHistory.
 
         项目ID
 
@@ -122,7 +122,7 @@ class IterationHistory:
 
     @property
     def operator(self):
-        """Gets the operator of this IterationHistory.
+        r"""Gets the operator of this IterationHistory.
 
         :return: The operator of this IterationHistory.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`
@@ -131,7 +131,7 @@ class IterationHistory:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this IterationHistory.
+        r"""Sets the operator of this IterationHistory.
 
         :param operator: The operator of this IterationHistory.
         :type operator: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`
@@ -140,7 +140,7 @@ class IterationHistory:
 
     @property
     def operate(self):
-        """Gets the operate of this IterationHistory.
+        r"""Gets the operate of this IterationHistory.
 
         操作类型
 
@@ -151,7 +151,7 @@ class IterationHistory:
 
     @operate.setter
     def operate(self, operate):
-        """Sets the operate of this IterationHistory.
+        r"""Sets the operate of this IterationHistory.
 
         操作类型
 
@@ -162,7 +162,7 @@ class IterationHistory:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this IterationHistory.
+        r"""Gets the operate_time of this IterationHistory.
 
         操作时间
 
@@ -173,7 +173,7 @@ class IterationHistory:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this IterationHistory.
+        r"""Sets the operate_time of this IterationHistory.
 
         操作时间
 
@@ -184,7 +184,7 @@ class IterationHistory:
 
     @property
     def details(self):
-        """Gets the details of this IterationHistory.
+        r"""Gets the details of this IterationHistory.
 
         操作详情
 
@@ -195,7 +195,7 @@ class IterationHistory:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this IterationHistory.
+        r"""Sets the details of this IterationHistory.
 
         操作详情
 

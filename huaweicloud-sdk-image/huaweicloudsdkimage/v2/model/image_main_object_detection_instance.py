@@ -29,7 +29,7 @@ class ImageMainObjectDetectionInstance:
     }
 
     def __init__(self, label=None, location=None, confidence=None):
-        """ImageMainObjectDetectionInstance
+        r"""ImageMainObjectDetectionInstance
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ImageMainObjectDetectionInstance:
 
     @property
     def label(self):
-        """Gets the label of this ImageMainObjectDetectionInstance.
+        r"""Gets the label of this ImageMainObjectDetectionInstance.
 
         主体的类别，现阶段分为：bounding_box和main_object_box
 
@@ -68,7 +68,7 @@ class ImageMainObjectDetectionInstance:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ImageMainObjectDetectionInstance.
+        r"""Sets the label of this ImageMainObjectDetectionInstance.
 
         主体的类别，现阶段分为：bounding_box和main_object_box
 
@@ -79,7 +79,7 @@ class ImageMainObjectDetectionInstance:
 
     @property
     def location(self):
-        """Gets the location of this ImageMainObjectDetectionInstance.
+        r"""Gets the location of this ImageMainObjectDetectionInstance.
 
          目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 properties: width: type: string description: 检测框区域高度 example: 139.58 height: type: string description: 检测框区域高度 example: 261.32 top_left_x: type: string description: 检测框左上角到垂直轴距离 example: 256.13 top_left_y: type: string description: 检测框左上角到水平轴距离 example: 85.2 
 
@@ -90,7 +90,7 @@ class ImageMainObjectDetectionInstance:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ImageMainObjectDetectionInstance.
+        r"""Sets the location of this ImageMainObjectDetectionInstance.
 
          目标检测框位置信息，包括4个值：  width：检测框区域宽度  height：检测框区域高度  top_left_x：检测框左上角到垂直轴距离  top_left_y：检测框左上角到水平轴距离 properties: width: type: string description: 检测框区域高度 example: 139.58 height: type: string description: 检测框区域高度 example: 261.32 top_left_x: type: string description: 检测框左上角到垂直轴距离 example: 256.13 top_left_y: type: string description: 检测框左上角到水平轴距离 example: 85.2 
 
@@ -101,7 +101,7 @@ class ImageMainObjectDetectionInstance:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageMainObjectDetectionInstance.
+        r"""Gets the confidence of this ImageMainObjectDetectionInstance.
 
         主体框的置信度,将Float型置信度转为String类型返回,Float取值范围（0~100）。
 
@@ -112,7 +112,7 @@ class ImageMainObjectDetectionInstance:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageMainObjectDetectionInstance.
+        r"""Sets the confidence of this ImageMainObjectDetectionInstance.
 
         主体框的置信度,将Float型置信度转为String类型返回,Float取值范围（0~100）。
 

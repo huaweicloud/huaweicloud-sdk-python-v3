@@ -31,7 +31,7 @@ class MetricExtraInfo:
     }
 
     def __init__(self, origin_metric_name=None, metric_prefix=None, custom_proc_name=None, metric_type=None):
-        """MetricExtraInfo
+        r"""MetricExtraInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MetricExtraInfo:
 
     @property
     def origin_metric_name(self):
-        """Gets the origin_metric_name of this MetricExtraInfo.
+        r"""Gets the origin_metric_name of this MetricExtraInfo.
 
         原始指标名称
 
@@ -75,7 +75,7 @@ class MetricExtraInfo:
 
     @origin_metric_name.setter
     def origin_metric_name(self, origin_metric_name):
-        """Sets the origin_metric_name of this MetricExtraInfo.
+        r"""Sets the origin_metric_name of this MetricExtraInfo.
 
         原始指标名称
 
@@ -86,7 +86,7 @@ class MetricExtraInfo:
 
     @property
     def metric_prefix(self):
-        """Gets the metric_prefix of this MetricExtraInfo.
+        r"""Gets the metric_prefix of this MetricExtraInfo.
 
         指标名称前缀
 
@@ -97,7 +97,7 @@ class MetricExtraInfo:
 
     @metric_prefix.setter
     def metric_prefix(self, metric_prefix):
-        """Sets the metric_prefix of this MetricExtraInfo.
+        r"""Sets the metric_prefix of this MetricExtraInfo.
 
         指标名称前缀
 
@@ -108,7 +108,7 @@ class MetricExtraInfo:
 
     @property
     def custom_proc_name(self):
-        """Gets the custom_proc_name of this MetricExtraInfo.
+        r"""Gets the custom_proc_name of this MetricExtraInfo.
 
         用户进程名称
 
@@ -119,7 +119,7 @@ class MetricExtraInfo:
 
     @custom_proc_name.setter
     def custom_proc_name(self, custom_proc_name):
-        """Sets the custom_proc_name of this MetricExtraInfo.
+        r"""Sets the custom_proc_name of this MetricExtraInfo.
 
         用户进程名称
 
@@ -130,7 +130,7 @@ class MetricExtraInfo:
 
     @property
     def metric_type(self):
-        """Gets the metric_type of this MetricExtraInfo.
+        r"""Gets the metric_type of this MetricExtraInfo.
 
         指标类型
 
@@ -141,7 +141,7 @@ class MetricExtraInfo:
 
     @metric_type.setter
     def metric_type(self, metric_type):
-        """Sets the metric_type of this MetricExtraInfo.
+        r"""Sets the metric_type of this MetricExtraInfo.
 
         指标类型
 

@@ -29,7 +29,7 @@ class CreateCodeTableRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, body=None):
-        """CreateCodeTableRequest
+        r"""CreateCodeTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCodeTableRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateCodeTableRequest.
+        r"""Gets the workspace of this CreateCodeTableRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class CreateCodeTableRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateCodeTableRequest.
+        r"""Sets the workspace of this CreateCodeTableRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class CreateCodeTableRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this CreateCodeTableRequest.
+        r"""Gets the x_project_id of this CreateCodeTableRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -89,7 +89,7 @@ class CreateCodeTableRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this CreateCodeTableRequest.
+        r"""Sets the x_project_id of this CreateCodeTableRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -100,7 +100,7 @@ class CreateCodeTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCodeTableRequest.
+        r"""Gets the body of this CreateCodeTableRequest.
 
         :return: The body of this CreateCodeTableRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`
@@ -109,7 +109,7 @@ class CreateCodeTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCodeTableRequest.
+        r"""Sets the body of this CreateCodeTableRequest.
 
         :param body: The body of this CreateCodeTableRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`

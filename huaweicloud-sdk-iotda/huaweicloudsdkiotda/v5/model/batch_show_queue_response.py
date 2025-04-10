@@ -28,7 +28,7 @@ class BatchShowQueueResponse(SdkResponse):
     }
 
     def __init__(self, queues=None, page=None):
-        """BatchShowQueueResponse
+        r"""BatchShowQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowQueueResponse(SdkResponse):
 
     @property
     def queues(self):
-        """Gets the queues of this BatchShowQueueResponse.
+        r"""Gets the queues of this BatchShowQueueResponse.
 
         队列信息列表。
 
@@ -62,7 +62,7 @@ class BatchShowQueueResponse(SdkResponse):
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this BatchShowQueueResponse.
+        r"""Sets the queues of this BatchShowQueueResponse.
 
         队列信息列表。
 
@@ -73,7 +73,7 @@ class BatchShowQueueResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this BatchShowQueueResponse.
+        r"""Gets the page of this BatchShowQueueResponse.
 
         :return: The page of this BatchShowQueueResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class BatchShowQueueResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this BatchShowQueueResponse.
+        r"""Sets the page of this BatchShowQueueResponse.
 
         :param page: The page of this BatchShowQueueResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

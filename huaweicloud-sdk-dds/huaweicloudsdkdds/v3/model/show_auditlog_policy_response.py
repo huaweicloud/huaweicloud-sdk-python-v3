@@ -30,7 +30,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, keep_days=None, audit_scope=None, audit_types=None):
-        """ShowAuditlogPolicyResponse
+        r"""ShowAuditlogPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this ShowAuditlogPolicyResponse.
+        r"""Gets the keep_days of this ShowAuditlogPolicyResponse.
 
         审计日志保存天数，审计日志策略关闭时为0。
 
@@ -69,7 +69,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this ShowAuditlogPolicyResponse.
+        r"""Sets the keep_days of this ShowAuditlogPolicyResponse.
 
         审计日志保存天数，审计日志策略关闭时为0。
 
@@ -80,7 +80,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @property
     def audit_scope(self):
-        """Gets the audit_scope of this ShowAuditlogPolicyResponse.
+        r"""Gets the audit_scope of this ShowAuditlogPolicyResponse.
 
         审计范围。
 
@@ -91,7 +91,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @audit_scope.setter
     def audit_scope(self, audit_scope):
-        """Sets the audit_scope of this ShowAuditlogPolicyResponse.
+        r"""Sets the audit_scope of this ShowAuditlogPolicyResponse.
 
         审计范围。
 
@@ -102,7 +102,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @property
     def audit_types(self):
-        """Gets the audit_types of this ShowAuditlogPolicyResponse.
+        r"""Gets the audit_types of this ShowAuditlogPolicyResponse.
 
         审计类型。
 
@@ -113,7 +113,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @audit_types.setter
     def audit_types(self, audit_types):
-        """Sets the audit_types of this ShowAuditlogPolicyResponse.
+        r"""Sets the audit_types of this ShowAuditlogPolicyResponse.
 
         审计类型。
 

@@ -25,7 +25,7 @@ class CreateAcceptanceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAcceptanceRequest
+        r"""CreateAcceptanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAcceptanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAcceptanceRequest.
+        r"""Gets the body of this CreateAcceptanceRequest.
 
         :return: The body of this CreateAcceptanceRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.AcceptanceSchema`
@@ -52,7 +52,7 @@ class CreateAcceptanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAcceptanceRequest.
+        r"""Sets the body of this CreateAcceptanceRequest.
 
         :param body: The body of this CreateAcceptanceRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.AcceptanceSchema`

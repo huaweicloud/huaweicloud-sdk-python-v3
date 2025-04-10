@@ -29,7 +29,7 @@ class NodeOrgs:
     }
 
     def __init__(self, name=None, node_count=None, pvc_name=None):
-        """NodeOrgs
+        r"""NodeOrgs
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class NodeOrgs:
 
     @property
     def name(self):
-        """Gets the name of this NodeOrgs.
+        r"""Gets the name of this NodeOrgs.
 
         组织名称，IEF节点绑定模式下组织名与IEF节点名称保持一致。支持英文，数字，中文字符和中划线(-), 不能以中划线(-)开头，长度4-24个字符
 
@@ -66,7 +66,7 @@ class NodeOrgs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeOrgs.
+        r"""Sets the name of this NodeOrgs.
 
         组织名称，IEF节点绑定模式下组织名与IEF节点名称保持一致。支持英文，数字，中文字符和中划线(-), 不能以中划线(-)开头，长度4-24个字符
 
@@ -77,7 +77,7 @@ class NodeOrgs:
 
     @property
     def node_count(self):
-        """Gets the node_count of this NodeOrgs.
+        r"""Gets the node_count of this NodeOrgs.
 
         组织目标节点数, 1-2的正整数
 
@@ -88,7 +88,7 @@ class NodeOrgs:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this NodeOrgs.
+        r"""Sets the node_count of this NodeOrgs.
 
         组织目标节点数, 1-2的正整数
 
@@ -99,7 +99,7 @@ class NodeOrgs:
 
     @property
     def pvc_name(self):
-        """Gets the pvc_name of this NodeOrgs.
+        r"""Gets the pvc_name of this NodeOrgs.
 
         pvc名称，添加组织时需要提供pvc_name。CCE模式必填
 
@@ -110,7 +110,7 @@ class NodeOrgs:
 
     @pvc_name.setter
     def pvc_name(self, pvc_name):
-        """Sets the pvc_name of this NodeOrgs.
+        r"""Sets the pvc_name of this NodeOrgs.
 
         pvc名称，添加组织时需要提供pvc_name。CCE模式必填
 

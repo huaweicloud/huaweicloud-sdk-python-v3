@@ -39,7 +39,7 @@ class Task:
     }
 
     def __init__(self, bench_concurrent=None, description=None, id=None, name=None, operate_mode=None, task_run_info=None, update_time=None, parallel=None):
-        """Task
+        r"""Task
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Task:
 
     @property
     def bench_concurrent(self):
-        """Gets the bench_concurrent of this Task.
+        r"""Gets the bench_concurrent of this Task.
 
         基准并发
 
@@ -103,7 +103,7 @@ class Task:
 
     @bench_concurrent.setter
     def bench_concurrent(self, bench_concurrent):
-        """Sets the bench_concurrent of this Task.
+        r"""Sets the bench_concurrent of this Task.
 
         基准并发
 
@@ -114,7 +114,7 @@ class Task:
 
     @property
     def description(self):
-        """Gets the description of this Task.
+        r"""Gets the description of this Task.
 
         描述信息
 
@@ -125,7 +125,7 @@ class Task:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Task.
+        r"""Sets the description of this Task.
 
         描述信息
 
@@ -136,7 +136,7 @@ class Task:
 
     @property
     def id(self):
-        """Gets the id of this Task.
+        r"""Gets the id of this Task.
 
         任务Id
 
@@ -147,7 +147,7 @@ class Task:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Task.
+        r"""Sets the id of this Task.
 
         任务Id
 
@@ -158,7 +158,7 @@ class Task:
 
     @property
     def name(self):
-        """Gets the name of this Task.
+        r"""Gets the name of this Task.
 
         任务名称
 
@@ -169,7 +169,7 @@ class Task:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Task.
+        r"""Sets the name of this Task.
 
         任务名称
 
@@ -180,7 +180,7 @@ class Task:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this Task.
+        r"""Gets the operate_mode of this Task.
 
         任务压测模式
 
@@ -191,7 +191,7 @@ class Task:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this Task.
+        r"""Sets the operate_mode of this Task.
 
         任务压测模式
 
@@ -202,7 +202,7 @@ class Task:
 
     @property
     def task_run_info(self):
-        """Gets the task_run_info of this Task.
+        r"""Gets the task_run_info of this Task.
 
         :return: The task_run_info of this Task.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
@@ -211,7 +211,7 @@ class Task:
 
     @task_run_info.setter
     def task_run_info(self, task_run_info):
-        """Sets the task_run_info of this Task.
+        r"""Sets the task_run_info of this Task.
 
         :param task_run_info: The task_run_info of this Task.
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
@@ -220,7 +220,7 @@ class Task:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Task.
+        r"""Gets the update_time of this Task.
 
         更新时间
 
@@ -231,7 +231,7 @@ class Task:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Task.
+        r"""Sets the update_time of this Task.
 
         更新时间
 
@@ -242,7 +242,7 @@ class Task:
 
     @property
     def parallel(self):
-        """Gets the parallel of this Task.
+        r"""Gets the parallel of this Task.
 
         任务间用例是否并行执行
 
@@ -253,7 +253,7 @@ class Task:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this Task.
+        r"""Sets the parallel of this Task.
 
         任务间用例是否并行执行
 

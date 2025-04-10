@@ -27,7 +27,7 @@ class UpdateGroupNodeBindingRequest:
     }
 
     def __init__(self, add_node_ids=None, remove_node_ids=None):
-        """UpdateGroupNodeBindingRequest
+        r"""UpdateGroupNodeBindingRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateGroupNodeBindingRequest:
 
     @property
     def add_node_ids(self):
-        """Gets the add_node_ids of this UpdateGroupNodeBindingRequest.
+        r"""Gets the add_node_ids of this UpdateGroupNodeBindingRequest.
 
         新增绑定的节点ID列表
 
@@ -61,7 +61,7 @@ class UpdateGroupNodeBindingRequest:
 
     @add_node_ids.setter
     def add_node_ids(self, add_node_ids):
-        """Sets the add_node_ids of this UpdateGroupNodeBindingRequest.
+        r"""Sets the add_node_ids of this UpdateGroupNodeBindingRequest.
 
         新增绑定的节点ID列表
 
@@ -72,7 +72,7 @@ class UpdateGroupNodeBindingRequest:
 
     @property
     def remove_node_ids(self):
-        """Gets the remove_node_ids of this UpdateGroupNodeBindingRequest.
+        r"""Gets the remove_node_ids of this UpdateGroupNodeBindingRequest.
 
         新增解绑的节点ID列表
 
@@ -83,7 +83,7 @@ class UpdateGroupNodeBindingRequest:
 
     @remove_node_ids.setter
     def remove_node_ids(self, remove_node_ids):
-        """Sets the remove_node_ids of this UpdateGroupNodeBindingRequest.
+        r"""Sets the remove_node_ids of this UpdateGroupNodeBindingRequest.
 
         新增解绑的节点ID列表
 

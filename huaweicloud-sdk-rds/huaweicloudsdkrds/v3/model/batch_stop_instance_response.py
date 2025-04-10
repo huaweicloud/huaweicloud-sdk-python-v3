@@ -28,7 +28,7 @@ class BatchStopInstanceResponse(SdkResponse):
     }
 
     def __init__(self, records=None, x_request_id=None):
-        """BatchStopInstanceResponse
+        r"""BatchStopInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchStopInstanceResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this BatchStopInstanceResponse.
+        r"""Gets the records of this BatchStopInstanceResponse.
 
         停止实例结果列表
 
@@ -62,7 +62,7 @@ class BatchStopInstanceResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this BatchStopInstanceResponse.
+        r"""Sets the records of this BatchStopInstanceResponse.
 
         停止实例结果列表
 
@@ -73,7 +73,7 @@ class BatchStopInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchStopInstanceResponse.
+        r"""Gets the x_request_id of this BatchStopInstanceResponse.
 
         :return: The x_request_id of this BatchStopInstanceResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchStopInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchStopInstanceResponse.
+        r"""Sets the x_request_id of this BatchStopInstanceResponse.
 
         :param x_request_id: The x_request_id of this BatchStopInstanceResponse.
         :type x_request_id: str

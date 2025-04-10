@@ -27,7 +27,7 @@ class ConfirmIaConfigRequestBody:
     }
 
     def __init__(self, id=None, version=None):
-        """ConfirmIaConfigRequestBody
+        r"""ConfirmIaConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfirmIaConfigRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this ConfirmIaConfigRequestBody.
+        r"""Gets the id of this ConfirmIaConfigRequestBody.
 
         配置项ID
 
@@ -59,7 +59,7 @@ class ConfirmIaConfigRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfirmIaConfigRequestBody.
+        r"""Sets the id of this ConfirmIaConfigRequestBody.
 
         配置项ID
 
@@ -70,7 +70,7 @@ class ConfirmIaConfigRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this ConfirmIaConfigRequestBody.
+        r"""Gets the version of this ConfirmIaConfigRequestBody.
 
         版本号
 
@@ -81,7 +81,7 @@ class ConfirmIaConfigRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ConfirmIaConfigRequestBody.
+        r"""Sets the version of this ConfirmIaConfigRequestBody.
 
         版本号
 

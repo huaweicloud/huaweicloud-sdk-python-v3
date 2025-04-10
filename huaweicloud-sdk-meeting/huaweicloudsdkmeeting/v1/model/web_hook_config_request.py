@@ -33,7 +33,7 @@ class WebHookConfigRequest:
     }
 
     def __init__(self, corp_id=None, sp_id=None, subscriber_id=None, subscriber_key=None, url=None):
-        """WebHookConfigRequest
+        r"""WebHookConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class WebHookConfigRequest:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this WebHookConfigRequest.
+        r"""Gets the corp_id of this WebHookConfigRequest.
 
         企业ID。按企业注册回调时需要填写。
 
@@ -79,7 +79,7 @@ class WebHookConfigRequest:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this WebHookConfigRequest.
+        r"""Sets the corp_id of this WebHookConfigRequest.
 
         企业ID。按企业注册回调时需要填写。
 
@@ -90,7 +90,7 @@ class WebHookConfigRequest:
 
     @property
     def sp_id(self):
-        """Gets the sp_id of this WebHookConfigRequest.
+        r"""Gets the sp_id of this WebHookConfigRequest.
 
         SP ID。多租户场景下，按SP注册回调时需要填写。
 
@@ -101,7 +101,7 @@ class WebHookConfigRequest:
 
     @sp_id.setter
     def sp_id(self, sp_id):
-        """Sets the sp_id of this WebHookConfigRequest.
+        r"""Sets the sp_id of this WebHookConfigRequest.
 
         SP ID。多租户场景下，按SP注册回调时需要填写。
 
@@ -112,7 +112,7 @@ class WebHookConfigRequest:
 
     @property
     def subscriber_id(self):
-        """Gets the subscriber_id of this WebHookConfigRequest.
+        r"""Gets the subscriber_id of this WebHookConfigRequest.
 
         订阅者ID。
 
@@ -123,7 +123,7 @@ class WebHookConfigRequest:
 
     @subscriber_id.setter
     def subscriber_id(self, subscriber_id):
-        """Sets the subscriber_id of this WebHookConfigRequest.
+        r"""Sets the subscriber_id of this WebHookConfigRequest.
 
         订阅者ID。
 
@@ -134,7 +134,7 @@ class WebHookConfigRequest:
 
     @property
     def subscriber_key(self):
-        """Gets the subscriber_key of this WebHookConfigRequest.
+        r"""Gets the subscriber_key of this WebHookConfigRequest.
 
         订阅者秘钥。
 
@@ -145,7 +145,7 @@ class WebHookConfigRequest:
 
     @subscriber_key.setter
     def subscriber_key(self, subscriber_key):
-        """Sets the subscriber_key of this WebHookConfigRequest.
+        r"""Sets the subscriber_key of this WebHookConfigRequest.
 
         订阅者秘钥。
 
@@ -156,7 +156,7 @@ class WebHookConfigRequest:
 
     @property
     def url(self):
-        """Gets the url of this WebHookConfigRequest.
+        r"""Gets the url of this WebHookConfigRequest.
 
         订阅url。 > 必须使用HTTPS。 
 
@@ -167,7 +167,7 @@ class WebHookConfigRequest:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this WebHookConfigRequest.
+        r"""Sets the url of this WebHookConfigRequest.
 
         订阅url。 > 必须使用HTTPS。 
 

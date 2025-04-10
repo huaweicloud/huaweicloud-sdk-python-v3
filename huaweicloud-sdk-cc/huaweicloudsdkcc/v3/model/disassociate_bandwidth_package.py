@@ -27,7 +27,7 @@ class DisassociateBandwidthPackage:
     }
 
     def __init__(self, resource_id=None, resource_type=None):
-        """DisassociateBandwidthPackage
+        r"""DisassociateBandwidthPackage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateBandwidthPackage:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DisassociateBandwidthPackage.
+        r"""Gets the resource_id of this DisassociateBandwidthPackage.
 
         带宽包实例绑定的资源ID。
 
@@ -59,7 +59,7 @@ class DisassociateBandwidthPackage:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DisassociateBandwidthPackage.
+        r"""Sets the resource_id of this DisassociateBandwidthPackage.
 
         带宽包实例绑定的资源ID。
 
@@ -70,7 +70,7 @@ class DisassociateBandwidthPackage:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DisassociateBandwidthPackage.
+        r"""Gets the resource_type of this DisassociateBandwidthPackage.
 
         带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 
@@ -81,7 +81,7 @@ class DisassociateBandwidthPackage:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DisassociateBandwidthPackage.
+        r"""Sets the resource_type of this DisassociateBandwidthPackage.
 
         带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 

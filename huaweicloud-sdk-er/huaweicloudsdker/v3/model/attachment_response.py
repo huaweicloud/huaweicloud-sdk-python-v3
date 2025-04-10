@@ -45,7 +45,7 @@ class AttachmentResponse:
     }
 
     def __init__(self, name=None, id=None, description=None, state=None, created_at=None, updated_at=None, tags=None, project_id=None, resource_id=None, resource_type=None, resource_project_id=None):
-        """AttachmentResponse
+        r"""AttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class AttachmentResponse:
 
     @property
     def name(self):
-        """Gets the name of this AttachmentResponse.
+        r"""Gets the name of this AttachmentResponse.
 
         连接名字
 
@@ -116,7 +116,7 @@ class AttachmentResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AttachmentResponse.
+        r"""Sets the name of this AttachmentResponse.
 
         连接名字
 
@@ -127,7 +127,7 @@ class AttachmentResponse:
 
     @property
     def id(self):
-        """Gets the id of this AttachmentResponse.
+        r"""Gets the id of this AttachmentResponse.
 
         连接ID
 
@@ -138,7 +138,7 @@ class AttachmentResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AttachmentResponse.
+        r"""Sets the id of this AttachmentResponse.
 
         连接ID
 
@@ -149,7 +149,7 @@ class AttachmentResponse:
 
     @property
     def description(self):
-        """Gets the description of this AttachmentResponse.
+        r"""Gets the description of this AttachmentResponse.
 
         描述信息
 
@@ -160,7 +160,7 @@ class AttachmentResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AttachmentResponse.
+        r"""Sets the description of this AttachmentResponse.
 
         描述信息
 
@@ -171,7 +171,7 @@ class AttachmentResponse:
 
     @property
     def state(self):
-        """Gets the state of this AttachmentResponse.
+        r"""Gets the state of this AttachmentResponse.
 
         连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
 
@@ -182,7 +182,7 @@ class AttachmentResponse:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AttachmentResponse.
+        r"""Sets the state of this AttachmentResponse.
 
         连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
 
@@ -193,7 +193,7 @@ class AttachmentResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AttachmentResponse.
+        r"""Gets the created_at of this AttachmentResponse.
 
         创建时间
 
@@ -204,7 +204,7 @@ class AttachmentResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AttachmentResponse.
+        r"""Sets the created_at of this AttachmentResponse.
 
         创建时间
 
@@ -215,7 +215,7 @@ class AttachmentResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AttachmentResponse.
+        r"""Gets the updated_at of this AttachmentResponse.
 
         更新时间
 
@@ -226,7 +226,7 @@ class AttachmentResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AttachmentResponse.
+        r"""Sets the updated_at of this AttachmentResponse.
 
         更新时间
 
@@ -237,7 +237,7 @@ class AttachmentResponse:
 
     @property
     def tags(self):
-        """Gets the tags of this AttachmentResponse.
+        r"""Gets the tags of this AttachmentResponse.
 
         企业路由器关联tag
 
@@ -248,7 +248,7 @@ class AttachmentResponse:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AttachmentResponse.
+        r"""Sets the tags of this AttachmentResponse.
 
         企业路由器关联tag
 
@@ -259,7 +259,7 @@ class AttachmentResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AttachmentResponse.
+        r"""Gets the project_id of this AttachmentResponse.
 
         项目ID
 
@@ -270,7 +270,7 @@ class AttachmentResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AttachmentResponse.
+        r"""Sets the project_id of this AttachmentResponse.
 
         项目ID
 
@@ -281,7 +281,7 @@ class AttachmentResponse:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AttachmentResponse.
+        r"""Gets the resource_id of this AttachmentResponse.
 
         内部连接关联的资源ID
 
@@ -292,7 +292,7 @@ class AttachmentResponse:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AttachmentResponse.
+        r"""Sets the resource_id of this AttachmentResponse.
 
         内部连接关联的资源ID
 
@@ -303,7 +303,7 @@ class AttachmentResponse:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AttachmentResponse.
+        r"""Gets the resource_type of this AttachmentResponse.
 
         内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
 
@@ -314,7 +314,7 @@ class AttachmentResponse:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AttachmentResponse.
+        r"""Sets the resource_type of this AttachmentResponse.
 
         内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
 
@@ -325,7 +325,7 @@ class AttachmentResponse:
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this AttachmentResponse.
+        r"""Gets the resource_project_id of this AttachmentResponse.
 
         资源所属项目ID
 
@@ -336,7 +336,7 @@ class AttachmentResponse:
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this AttachmentResponse.
+        r"""Sets the resource_project_id of this AttachmentResponse.
 
         资源所属项目ID
 

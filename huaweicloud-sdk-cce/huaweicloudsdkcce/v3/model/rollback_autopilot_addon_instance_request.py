@@ -27,7 +27,7 @@ class RollbackAutopilotAddonInstanceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """RollbackAutopilotAddonInstanceRequest
+        r"""RollbackAutopilotAddonInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RollbackAutopilotAddonInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this RollbackAutopilotAddonInstanceRequest.
+        r"""Gets the id of this RollbackAutopilotAddonInstanceRequest.
 
         插件实例ID
 
@@ -60,7 +60,7 @@ class RollbackAutopilotAddonInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RollbackAutopilotAddonInstanceRequest.
+        r"""Sets the id of this RollbackAutopilotAddonInstanceRequest.
 
         插件实例ID
 
@@ -71,7 +71,7 @@ class RollbackAutopilotAddonInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RollbackAutopilotAddonInstanceRequest.
+        r"""Gets the body of this RollbackAutopilotAddonInstanceRequest.
 
         :return: The body of this RollbackAutopilotAddonInstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceRollbackRequest`
@@ -80,7 +80,7 @@ class RollbackAutopilotAddonInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RollbackAutopilotAddonInstanceRequest.
+        r"""Sets the body of this RollbackAutopilotAddonInstanceRequest.
 
         :param body: The body of this RollbackAutopilotAddonInstanceRequest.
         :type body: :class:`huaweicloudsdkcce.v3.AddonInstanceRollbackRequest`

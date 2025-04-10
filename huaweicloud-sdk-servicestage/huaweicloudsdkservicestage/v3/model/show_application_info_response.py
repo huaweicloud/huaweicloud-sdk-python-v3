@@ -44,7 +44,7 @@ class ShowApplicationInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, component_count=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None, description=None, labels=None):
-        """ShowApplicationInfoResponse
+        r"""ShowApplicationInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApplicationInfoResponse.
+        r"""Gets the id of this ShowApplicationInfoResponse.
 
         应用ID。
 
@@ -118,7 +118,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApplicationInfoResponse.
+        r"""Sets the id of this ShowApplicationInfoResponse.
 
         应用ID。
 
@@ -129,7 +129,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowApplicationInfoResponse.
+        r"""Gets the name of this ShowApplicationInfoResponse.
 
         应用名称。
 
@@ -140,7 +140,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowApplicationInfoResponse.
+        r"""Sets the name of this ShowApplicationInfoResponse.
 
         应用名称。
 
@@ -151,7 +151,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def component_count(self):
-        """Gets the component_count of this ShowApplicationInfoResponse.
+        r"""Gets the component_count of this ShowApplicationInfoResponse.
 
         组件个数。
 
@@ -162,7 +162,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @component_count.setter
     def component_count(self, component_count):
-        """Sets the component_count of this ShowApplicationInfoResponse.
+        r"""Sets the component_count of this ShowApplicationInfoResponse.
 
         组件个数。
 
@@ -173,7 +173,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowApplicationInfoResponse.
+        r"""Gets the creator of this ShowApplicationInfoResponse.
 
         创建人。
 
@@ -184,7 +184,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowApplicationInfoResponse.
+        r"""Sets the creator of this ShowApplicationInfoResponse.
 
         创建人。
 
@@ -195,7 +195,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowApplicationInfoResponse.
+        r"""Gets the project_id of this ShowApplicationInfoResponse.
 
         项目ID。
 
@@ -206,7 +206,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowApplicationInfoResponse.
+        r"""Sets the project_id of this ShowApplicationInfoResponse.
 
         项目ID。
 
@@ -217,7 +217,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowApplicationInfoResponse.
+        r"""Gets the enterprise_project_id of this ShowApplicationInfoResponse.
 
         企业项目ID。
 
@@ -228,7 +228,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowApplicationInfoResponse.
+        r"""Sets the enterprise_project_id of this ShowApplicationInfoResponse.
 
         企业项目ID。
 
@@ -239,7 +239,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowApplicationInfoResponse.
+        r"""Gets the create_time of this ShowApplicationInfoResponse.
 
         创建时间。
 
@@ -250,7 +250,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowApplicationInfoResponse.
+        r"""Sets the create_time of this ShowApplicationInfoResponse.
 
         创建时间。
 
@@ -261,7 +261,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowApplicationInfoResponse.
+        r"""Gets the update_time of this ShowApplicationInfoResponse.
 
         修改时间。
 
@@ -272,7 +272,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowApplicationInfoResponse.
+        r"""Sets the update_time of this ShowApplicationInfoResponse.
 
         修改时间。
 
@@ -283,7 +283,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowApplicationInfoResponse.
+        r"""Gets the description of this ShowApplicationInfoResponse.
 
         应用描述。
 
@@ -294,7 +294,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowApplicationInfoResponse.
+        r"""Sets the description of this ShowApplicationInfoResponse.
 
         应用描述。
 
@@ -305,7 +305,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowApplicationInfoResponse.
+        r"""Gets the labels of this ShowApplicationInfoResponse.
 
         应用标签。
 
@@ -316,7 +316,7 @@ class ShowApplicationInfoResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowApplicationInfoResponse.
+        r"""Sets the labels of this ShowApplicationInfoResponse.
 
         应用标签。
 

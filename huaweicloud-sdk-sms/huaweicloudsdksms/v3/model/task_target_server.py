@@ -47,7 +47,7 @@ class TaskTargetServer:
     }
 
     def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None, system_dir=None, disks=None, volume_groups=None, btrfs_list=None, image_disk_id=None, cutovered_snapshot_ids=None):
-        """TaskTargetServer
+        r"""TaskTargetServer
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class TaskTargetServer:
 
     @property
     def id(self):
-        """Gets the id of this TaskTargetServer.
+        r"""Gets the id of this TaskTargetServer.
 
         目的端在SMS数据库中的ID
 
@@ -130,7 +130,7 @@ class TaskTargetServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskTargetServer.
+        r"""Sets the id of this TaskTargetServer.
 
         目的端在SMS数据库中的ID
 
@@ -141,7 +141,7 @@ class TaskTargetServer:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this TaskTargetServer.
+        r"""Gets the vm_id of this TaskTargetServer.
 
         目的端服务器ID，自动创建虚拟机不需要这个参数
 
@@ -152,7 +152,7 @@ class TaskTargetServer:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this TaskTargetServer.
+        r"""Sets the vm_id of this TaskTargetServer.
 
         目的端服务器ID，自动创建虚拟机不需要这个参数
 
@@ -163,7 +163,7 @@ class TaskTargetServer:
 
     @property
     def name(self):
-        """Gets the name of this TaskTargetServer.
+        r"""Gets the name of this TaskTargetServer.
 
         目的端服务器的名称
 
@@ -174,7 +174,7 @@ class TaskTargetServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskTargetServer.
+        r"""Sets the name of this TaskTargetServer.
 
         目的端服务器的名称
 
@@ -185,7 +185,7 @@ class TaskTargetServer:
 
     @property
     def ip(self):
-        """Gets the ip of this TaskTargetServer.
+        r"""Gets the ip of this TaskTargetServer.
 
         目的端服务器IP
 
@@ -196,7 +196,7 @@ class TaskTargetServer:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this TaskTargetServer.
+        r"""Sets the ip of this TaskTargetServer.
 
         目的端服务器IP
 
@@ -207,7 +207,7 @@ class TaskTargetServer:
 
     @property
     def os_type(self):
-        """Gets the os_type of this TaskTargetServer.
+        r"""Gets the os_type of this TaskTargetServer.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -218,7 +218,7 @@ class TaskTargetServer:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this TaskTargetServer.
+        r"""Sets the os_type of this TaskTargetServer.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -229,7 +229,7 @@ class TaskTargetServer:
 
     @property
     def os_version(self):
-        """Gets the os_version of this TaskTargetServer.
+        r"""Gets the os_version of this TaskTargetServer.
 
         操作系统版本，注册必选，更新非必选
 
@@ -240,7 +240,7 @@ class TaskTargetServer:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this TaskTargetServer.
+        r"""Sets the os_version of this TaskTargetServer.
 
         操作系统版本，注册必选，更新非必选
 
@@ -251,7 +251,7 @@ class TaskTargetServer:
 
     @property
     def system_dir(self):
-        """Gets the system_dir of this TaskTargetServer.
+        r"""Gets the system_dir of this TaskTargetServer.
 
         Windows必选，系统目录
 
@@ -262,7 +262,7 @@ class TaskTargetServer:
 
     @system_dir.setter
     def system_dir(self, system_dir):
-        """Sets the system_dir of this TaskTargetServer.
+        r"""Sets the system_dir of this TaskTargetServer.
 
         Windows必选，系统目录
 
@@ -273,7 +273,7 @@ class TaskTargetServer:
 
     @property
     def disks(self):
-        """Gets the disks of this TaskTargetServer.
+        r"""Gets the disks of this TaskTargetServer.
 
         目的端磁盘信息，一般和源端保持一致
 
@@ -284,7 +284,7 @@ class TaskTargetServer:
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this TaskTargetServer.
+        r"""Sets the disks of this TaskTargetServer.
 
         目的端磁盘信息，一般和源端保持一致
 
@@ -295,7 +295,7 @@ class TaskTargetServer:
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this TaskTargetServer.
+        r"""Gets the volume_groups of this TaskTargetServer.
 
         lvm信息，一般和源端保持一致
 
@@ -306,7 +306,7 @@ class TaskTargetServer:
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this TaskTargetServer.
+        r"""Sets the volume_groups of this TaskTargetServer.
 
         lvm信息，一般和源端保持一致
 
@@ -317,7 +317,7 @@ class TaskTargetServer:
 
     @property
     def btrfs_list(self):
-        """Gets the btrfs_list of this TaskTargetServer.
+        r"""Gets the btrfs_list of this TaskTargetServer.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -328,7 +328,7 @@ class TaskTargetServer:
 
     @btrfs_list.setter
     def btrfs_list(self, btrfs_list):
-        """Sets the btrfs_list of this TaskTargetServer.
+        r"""Sets the btrfs_list of this TaskTargetServer.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -339,7 +339,7 @@ class TaskTargetServer:
 
     @property
     def image_disk_id(self):
-        """Gets the image_disk_id of this TaskTargetServer.
+        r"""Gets the image_disk_id of this TaskTargetServer.
 
         目的端代理镜像磁盘ID
 
@@ -350,7 +350,7 @@ class TaskTargetServer:
 
     @image_disk_id.setter
     def image_disk_id(self, image_disk_id):
-        """Sets the image_disk_id of this TaskTargetServer.
+        r"""Sets the image_disk_id of this TaskTargetServer.
 
         目的端代理镜像磁盘ID
 
@@ -361,7 +361,7 @@ class TaskTargetServer:
 
     @property
     def cutovered_snapshot_ids(self):
-        """Gets the cutovered_snapshot_ids of this TaskTargetServer.
+        r"""Gets the cutovered_snapshot_ids of this TaskTargetServer.
 
         目的端回滚快照ID
 
@@ -372,7 +372,7 @@ class TaskTargetServer:
 
     @cutovered_snapshot_ids.setter
     def cutovered_snapshot_ids(self, cutovered_snapshot_ids):
-        """Sets the cutovered_snapshot_ids of this TaskTargetServer.
+        r"""Sets the cutovered_snapshot_ids of this TaskTargetServer.
 
         目的端回滚快照ID
 

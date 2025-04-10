@@ -35,7 +35,7 @@ class SlaEscalationRuleInfo:
     }
 
     def __init__(self, day=None, hour=None, minute=None, order=None, protocol=None, notification_obj_configuration=None):
-        """SlaEscalationRuleInfo
+        r"""SlaEscalationRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SlaEscalationRuleInfo:
 
     @property
     def day(self):
-        """Gets the day of this SlaEscalationRuleInfo.
+        r"""Gets the day of this SlaEscalationRuleInfo.
 
         天
 
@@ -89,7 +89,7 @@ class SlaEscalationRuleInfo:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this SlaEscalationRuleInfo.
+        r"""Sets the day of this SlaEscalationRuleInfo.
 
         天
 
@@ -100,7 +100,7 @@ class SlaEscalationRuleInfo:
 
     @property
     def hour(self):
-        """Gets the hour of this SlaEscalationRuleInfo.
+        r"""Gets the hour of this SlaEscalationRuleInfo.
 
         小时
 
@@ -111,7 +111,7 @@ class SlaEscalationRuleInfo:
 
     @hour.setter
     def hour(self, hour):
-        """Sets the hour of this SlaEscalationRuleInfo.
+        r"""Sets the hour of this SlaEscalationRuleInfo.
 
         小时
 
@@ -122,7 +122,7 @@ class SlaEscalationRuleInfo:
 
     @property
     def minute(self):
-        """Gets the minute of this SlaEscalationRuleInfo.
+        r"""Gets the minute of this SlaEscalationRuleInfo.
 
         分钟
 
@@ -133,7 +133,7 @@ class SlaEscalationRuleInfo:
 
     @minute.setter
     def minute(self, minute):
-        """Sets the minute of this SlaEscalationRuleInfo.
+        r"""Sets the minute of this SlaEscalationRuleInfo.
 
         分钟
 
@@ -144,7 +144,7 @@ class SlaEscalationRuleInfo:
 
     @property
     def order(self):
-        """Gets the order of this SlaEscalationRuleInfo.
+        r"""Gets the order of this SlaEscalationRuleInfo.
 
         顺序
 
@@ -155,7 +155,7 @@ class SlaEscalationRuleInfo:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this SlaEscalationRuleInfo.
+        r"""Sets the order of this SlaEscalationRuleInfo.
 
         顺序
 
@@ -166,7 +166,7 @@ class SlaEscalationRuleInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SlaEscalationRuleInfo.
+        r"""Gets the protocol of this SlaEscalationRuleInfo.
 
         通知类型
 
@@ -177,7 +177,7 @@ class SlaEscalationRuleInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SlaEscalationRuleInfo.
+        r"""Sets the protocol of this SlaEscalationRuleInfo.
 
         通知类型
 
@@ -188,7 +188,7 @@ class SlaEscalationRuleInfo:
 
     @property
     def notification_obj_configuration(self):
-        """Gets the notification_obj_configuration of this SlaEscalationRuleInfo.
+        r"""Gets the notification_obj_configuration of this SlaEscalationRuleInfo.
 
         通知配置
 
@@ -199,7 +199,7 @@ class SlaEscalationRuleInfo:
 
     @notification_obj_configuration.setter
     def notification_obj_configuration(self, notification_obj_configuration):
-        """Sets the notification_obj_configuration of this SlaEscalationRuleInfo.
+        r"""Sets the notification_obj_configuration of this SlaEscalationRuleInfo.
 
         通知配置
 

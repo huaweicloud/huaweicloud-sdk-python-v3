@@ -27,7 +27,7 @@ class CommitList:
     }
 
     def __init__(self, commits=None, total=None):
-        """CommitList
+        r"""CommitList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CommitList:
 
     @property
     def commits(self):
-        """Gets the commits of this CommitList.
+        r"""Gets the commits of this CommitList.
 
         提交列表
 
@@ -61,7 +61,7 @@ class CommitList:
 
     @commits.setter
     def commits(self, commits):
-        """Sets the commits of this CommitList.
+        r"""Sets the commits of this CommitList.
 
         提交列表
 
@@ -72,7 +72,7 @@ class CommitList:
 
     @property
     def total(self):
-        """Gets the total of this CommitList.
+        r"""Gets the total of this CommitList.
 
         提交总数
 
@@ -83,7 +83,7 @@ class CommitList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CommitList.
+        r"""Sets the total of this CommitList.
 
         提交总数
 

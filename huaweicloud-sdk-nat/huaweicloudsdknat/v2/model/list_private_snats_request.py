@@ -45,7 +45,7 @@ class ListPrivateSnatsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, description=None, gateway_id=None, cidr=None, virsubnet_id=None, transit_ip_id=None, transit_ip_address=None, enterprise_project_id=None):
-        """ListPrivateSnatsRequest
+        r"""ListPrivateSnatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPrivateSnatsRequest.
+        r"""Gets the limit of this ListPrivateSnatsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -124,7 +124,7 @@ class ListPrivateSnatsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPrivateSnatsRequest.
+        r"""Sets the limit of this ListPrivateSnatsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -135,7 +135,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPrivateSnatsRequest.
+        r"""Gets the marker of this ListPrivateSnatsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -146,7 +146,7 @@ class ListPrivateSnatsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPrivateSnatsRequest.
+        r"""Sets the marker of this ListPrivateSnatsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -157,7 +157,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListPrivateSnatsRequest.
+        r"""Gets the page_reverse of this ListPrivateSnatsRequest.
 
         是否查询前一页。
 
@@ -168,7 +168,7 @@ class ListPrivateSnatsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPrivateSnatsRequest.
+        r"""Sets the page_reverse of this ListPrivateSnatsRequest.
 
         是否查询前一页。
 
@@ -179,7 +179,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPrivateSnatsRequest.
+        r"""Gets the id of this ListPrivateSnatsRequest.
 
         SNAT规则的ID。
 
@@ -190,7 +190,7 @@ class ListPrivateSnatsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPrivateSnatsRequest.
+        r"""Sets the id of this ListPrivateSnatsRequest.
 
         SNAT规则的ID。
 
@@ -201,7 +201,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPrivateSnatsRequest.
+        r"""Gets the description of this ListPrivateSnatsRequest.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -212,7 +212,7 @@ class ListPrivateSnatsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPrivateSnatsRequest.
+        r"""Sets the description of this ListPrivateSnatsRequest.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -223,7 +223,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ListPrivateSnatsRequest.
+        r"""Gets the gateway_id of this ListPrivateSnatsRequest.
 
         私网NAT网关实例的ID。
 
@@ -234,7 +234,7 @@ class ListPrivateSnatsRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ListPrivateSnatsRequest.
+        r"""Sets the gateway_id of this ListPrivateSnatsRequest.
 
         私网NAT网关实例的ID。
 
@@ -245,7 +245,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ListPrivateSnatsRequest.
+        r"""Gets the cidr of this ListPrivateSnatsRequest.
 
         规则匹配的CIDR。
 
@@ -256,7 +256,7 @@ class ListPrivateSnatsRequest:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ListPrivateSnatsRequest.
+        r"""Sets the cidr of this ListPrivateSnatsRequest.
 
         规则匹配的CIDR。
 
@@ -267,7 +267,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this ListPrivateSnatsRequest.
+        r"""Gets the virsubnet_id of this ListPrivateSnatsRequest.
 
         规则匹配的子网的ID。
 
@@ -278,7 +278,7 @@ class ListPrivateSnatsRequest:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this ListPrivateSnatsRequest.
+        r"""Sets the virsubnet_id of this ListPrivateSnatsRequest.
 
         规则匹配的子网的ID。
 
@@ -289,7 +289,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this ListPrivateSnatsRequest.
+        r"""Gets the transit_ip_id of this ListPrivateSnatsRequest.
 
         中转IP的ID。
 
@@ -300,7 +300,7 @@ class ListPrivateSnatsRequest:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this ListPrivateSnatsRequest.
+        r"""Sets the transit_ip_id of this ListPrivateSnatsRequest.
 
         中转IP的ID。
 
@@ -311,7 +311,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def transit_ip_address(self):
-        """Gets the transit_ip_address of this ListPrivateSnatsRequest.
+        r"""Gets the transit_ip_address of this ListPrivateSnatsRequest.
 
         中转IP地址。
 
@@ -322,7 +322,7 @@ class ListPrivateSnatsRequest:
 
     @transit_ip_address.setter
     def transit_ip_address(self, transit_ip_address):
-        """Sets the transit_ip_address of this ListPrivateSnatsRequest.
+        r"""Sets the transit_ip_address of this ListPrivateSnatsRequest.
 
         中转IP地址。
 
@@ -333,7 +333,7 @@ class ListPrivateSnatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPrivateSnatsRequest.
+        r"""Gets the enterprise_project_id of this ListPrivateSnatsRequest.
 
         企业项目ID。创建SNAT规则时，关联的企业项目ID。
 
@@ -344,7 +344,7 @@ class ListPrivateSnatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPrivateSnatsRequest.
+        r"""Sets the enterprise_project_id of this ListPrivateSnatsRequest.
 
         企业项目ID。创建SNAT规则时，关联的企业项目ID。
 

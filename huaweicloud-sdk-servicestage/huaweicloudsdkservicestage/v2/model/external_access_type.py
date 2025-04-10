@@ -28,7 +28,7 @@ class ExternalAccessType:
     }
 
     def __init__(self):
-        """ExternalAccessType
+        r"""ExternalAccessType
 
         The model defined in huaweicloud sdk
 

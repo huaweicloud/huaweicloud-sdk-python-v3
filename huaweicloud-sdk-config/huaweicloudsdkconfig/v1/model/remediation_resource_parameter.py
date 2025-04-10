@@ -25,7 +25,7 @@ class RemediationResourceParameter:
     }
 
     def __init__(self, resource_id=None):
-        """RemediationResourceParameter
+        r"""RemediationResourceParameter
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemediationResourceParameter:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RemediationResourceParameter.
+        r"""Gets the resource_id of this RemediationResourceParameter.
 
         传入resourceID的参数名称。
 
@@ -53,7 +53,7 @@ class RemediationResourceParameter:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RemediationResourceParameter.
+        r"""Sets the resource_id of this RemediationResourceParameter.
 
         传入resourceID的参数名称。
 

@@ -107,7 +107,7 @@ class StarRocksInstanceInfoInstances:
     }
 
     def __init__(self, id=None, name=None, project_id=None, public_ip=None, data_vip=None, can_enable_public_access=None, current_backup_node_id=None, cluster_mode=None, status=None, is_frozen=None, frozen_time=None, db_user=None, bak_period=None, bak_keep_day=None, bak_expected_start_time=None, data_store_version_id=None, data_store_version=None, data_store_type=None, create_at=None, update_at=None, delete_at=None, db_port=None, param_group=None, actions=None, create_fail_error_code=None, groups=None, ops_window=None, tags_info=None, time_zone=None, backup_used_space=None, az_mode=None, enterprise_project_id=None, port_info=None, fe_node_volume_code=None, be_node_volume_code=None, fe_node_volume_size=None, be_node_volume_size=None, support_data_replication=None, new_version_available=None, ssl_option=None, dedicated_resource_id=None, pay_model=None):
-        """StarRocksInstanceInfoInstances
+        r"""StarRocksInstanceInfoInstances
 
         The model defined in huaweicloud sdk
 
@@ -330,7 +330,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def id(self):
-        """Gets the id of this StarRocksInstanceInfoInstances.
+        r"""Gets the id of this StarRocksInstanceInfoInstances.
 
         实例ID，严格匹配UUID规则。
 
@@ -341,7 +341,7 @@ class StarRocksInstanceInfoInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StarRocksInstanceInfoInstances.
+        r"""Sets the id of this StarRocksInstanceInfoInstances.
 
         实例ID，严格匹配UUID规则。
 
@@ -352,7 +352,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def name(self):
-        """Gets the name of this StarRocksInstanceInfoInstances.
+        r"""Gets the name of this StarRocksInstanceInfoInstances.
 
         创建的实例名称。
 
@@ -363,7 +363,7 @@ class StarRocksInstanceInfoInstances:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StarRocksInstanceInfoInstances.
+        r"""Sets the name of this StarRocksInstanceInfoInstances.
 
         创建的实例名称。
 
@@ -374,7 +374,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def project_id(self):
-        """Gets the project_id of this StarRocksInstanceInfoInstances.
+        r"""Gets the project_id of this StarRocksInstanceInfoInstances.
 
         租户在某一Region下的project ID。
 
@@ -385,7 +385,7 @@ class StarRocksInstanceInfoInstances:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this StarRocksInstanceInfoInstances.
+        r"""Sets the project_id of this StarRocksInstanceInfoInstances.
 
         租户在某一Region下的project ID。
 
@@ -396,7 +396,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this StarRocksInstanceInfoInstances.
+        r"""Gets the public_ip of this StarRocksInstanceInfoInstances.
 
         公网访问IP。
 
@@ -407,7 +407,7 @@ class StarRocksInstanceInfoInstances:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this StarRocksInstanceInfoInstances.
+        r"""Sets the public_ip of this StarRocksInstanceInfoInstances.
 
         公网访问IP。
 
@@ -418,7 +418,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def data_vip(self):
-        """Gets the data_vip of this StarRocksInstanceInfoInstances.
+        r"""Gets the data_vip of this StarRocksInstanceInfoInstances.
 
         StarRocks FE节点类型数据IP（多个IP使用逗号分隔）
 
@@ -429,7 +429,7 @@ class StarRocksInstanceInfoInstances:
 
     @data_vip.setter
     def data_vip(self, data_vip):
-        """Sets the data_vip of this StarRocksInstanceInfoInstances.
+        r"""Sets the data_vip of this StarRocksInstanceInfoInstances.
 
         StarRocks FE节点类型数据IP（多个IP使用逗号分隔）
 
@@ -440,7 +440,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def can_enable_public_access(self):
-        """Gets the can_enable_public_access of this StarRocksInstanceInfoInstances.
+        r"""Gets the can_enable_public_access of this StarRocksInstanceInfoInstances.
 
         是否可公网访问。
 
@@ -451,7 +451,7 @@ class StarRocksInstanceInfoInstances:
 
     @can_enable_public_access.setter
     def can_enable_public_access(self, can_enable_public_access):
-        """Sets the can_enable_public_access of this StarRocksInstanceInfoInstances.
+        r"""Sets the can_enable_public_access of this StarRocksInstanceInfoInstances.
 
         是否可公网访问。
 
@@ -462,7 +462,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def current_backup_node_id(self):
-        """Gets the current_backup_node_id of this StarRocksInstanceInfoInstances.
+        r"""Gets the current_backup_node_id of this StarRocksInstanceInfoInstances.
 
         备份节点ID。
 
@@ -473,7 +473,7 @@ class StarRocksInstanceInfoInstances:
 
     @current_backup_node_id.setter
     def current_backup_node_id(self, current_backup_node_id):
-        """Sets the current_backup_node_id of this StarRocksInstanceInfoInstances.
+        r"""Sets the current_backup_node_id of this StarRocksInstanceInfoInstances.
 
         备份节点ID。
 
@@ -484,7 +484,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this StarRocksInstanceInfoInstances.
+        r"""Gets the cluster_mode of this StarRocksInstanceInfoInstances.
 
         部署模式。
 
@@ -495,7 +495,7 @@ class StarRocksInstanceInfoInstances:
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this StarRocksInstanceInfoInstances.
+        r"""Sets the cluster_mode of this StarRocksInstanceInfoInstances.
 
         部署模式。
 
@@ -506,7 +506,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def status(self):
-        """Gets the status of this StarRocksInstanceInfoInstances.
+        r"""Gets the status of this StarRocksInstanceInfoInstances.
 
         实例状态。
 
@@ -517,7 +517,7 @@ class StarRocksInstanceInfoInstances:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StarRocksInstanceInfoInstances.
+        r"""Sets the status of this StarRocksInstanceInfoInstances.
 
         实例状态。
 
@@ -528,7 +528,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this StarRocksInstanceInfoInstances.
+        r"""Gets the is_frozen of this StarRocksInstanceInfoInstances.
 
         是否冻结。
 
@@ -539,7 +539,7 @@ class StarRocksInstanceInfoInstances:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this StarRocksInstanceInfoInstances.
+        r"""Sets the is_frozen of this StarRocksInstanceInfoInstances.
 
         是否冻结。
 
@@ -550,7 +550,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def frozen_time(self):
-        """Gets the frozen_time of this StarRocksInstanceInfoInstances.
+        r"""Gets the frozen_time of this StarRocksInstanceInfoInstances.
 
         冻结时间。
 
@@ -561,7 +561,7 @@ class StarRocksInstanceInfoInstances:
 
     @frozen_time.setter
     def frozen_time(self, frozen_time):
-        """Sets the frozen_time of this StarRocksInstanceInfoInstances.
+        r"""Sets the frozen_time of this StarRocksInstanceInfoInstances.
 
         冻结时间。
 
@@ -572,7 +572,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def db_user(self):
-        """Gets the db_user of this StarRocksInstanceInfoInstances.
+        r"""Gets the db_user of this StarRocksInstanceInfoInstances.
 
         默认用户名。
 
@@ -583,7 +583,7 @@ class StarRocksInstanceInfoInstances:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this StarRocksInstanceInfoInstances.
+        r"""Sets the db_user of this StarRocksInstanceInfoInstances.
 
         默认用户名。
 
@@ -594,7 +594,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def bak_period(self):
-        """Gets the bak_period of this StarRocksInstanceInfoInstances.
+        r"""Gets the bak_period of this StarRocksInstanceInfoInstances.
 
         备份周期。
 
@@ -605,7 +605,7 @@ class StarRocksInstanceInfoInstances:
 
     @bak_period.setter
     def bak_period(self, bak_period):
-        """Sets the bak_period of this StarRocksInstanceInfoInstances.
+        r"""Sets the bak_period of this StarRocksInstanceInfoInstances.
 
         备份周期。
 
@@ -616,7 +616,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def bak_keep_day(self):
-        """Gets the bak_keep_day of this StarRocksInstanceInfoInstances.
+        r"""Gets the bak_keep_day of this StarRocksInstanceInfoInstances.
 
         备份保存天数。
 
@@ -627,7 +627,7 @@ class StarRocksInstanceInfoInstances:
 
     @bak_keep_day.setter
     def bak_keep_day(self, bak_keep_day):
-        """Sets the bak_keep_day of this StarRocksInstanceInfoInstances.
+        r"""Sets the bak_keep_day of this StarRocksInstanceInfoInstances.
 
         备份保存天数。
 
@@ -638,7 +638,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def bak_expected_start_time(self):
-        """Gets the bak_expected_start_time of this StarRocksInstanceInfoInstances.
+        r"""Gets the bak_expected_start_time of this StarRocksInstanceInfoInstances.
 
         备份预计开始时间。
 
@@ -649,7 +649,7 @@ class StarRocksInstanceInfoInstances:
 
     @bak_expected_start_time.setter
     def bak_expected_start_time(self, bak_expected_start_time):
-        """Sets the bak_expected_start_time of this StarRocksInstanceInfoInstances.
+        r"""Sets the bak_expected_start_time of this StarRocksInstanceInfoInstances.
 
         备份预计开始时间。
 
@@ -660,7 +660,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def data_store_version_id(self):
-        """Gets the data_store_version_id of this StarRocksInstanceInfoInstances.
+        r"""Gets the data_store_version_id of this StarRocksInstanceInfoInstances.
 
         数据库版本ID。
 
@@ -671,7 +671,7 @@ class StarRocksInstanceInfoInstances:
 
     @data_store_version_id.setter
     def data_store_version_id(self, data_store_version_id):
-        """Sets the data_store_version_id of this StarRocksInstanceInfoInstances.
+        r"""Sets the data_store_version_id of this StarRocksInstanceInfoInstances.
 
         数据库版本ID。
 
@@ -682,7 +682,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def data_store_version(self):
-        """Gets the data_store_version of this StarRocksInstanceInfoInstances.
+        r"""Gets the data_store_version of this StarRocksInstanceInfoInstances.
 
         数据库版本。
 
@@ -693,7 +693,7 @@ class StarRocksInstanceInfoInstances:
 
     @data_store_version.setter
     def data_store_version(self, data_store_version):
-        """Sets the data_store_version of this StarRocksInstanceInfoInstances.
+        r"""Sets the data_store_version of this StarRocksInstanceInfoInstances.
 
         数据库版本。
 
@@ -704,7 +704,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def data_store_type(self):
-        """Gets the data_store_type of this StarRocksInstanceInfoInstances.
+        r"""Gets the data_store_type of this StarRocksInstanceInfoInstances.
 
         数据库引擎。
 
@@ -715,7 +715,7 @@ class StarRocksInstanceInfoInstances:
 
     @data_store_type.setter
     def data_store_type(self, data_store_type):
-        """Sets the data_store_type of this StarRocksInstanceInfoInstances.
+        r"""Sets the data_store_type of this StarRocksInstanceInfoInstances.
 
         数据库引擎。
 
@@ -726,7 +726,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def create_at(self):
-        """Gets the create_at of this StarRocksInstanceInfoInstances.
+        r"""Gets the create_at of this StarRocksInstanceInfoInstances.
 
         实例创建时间。
 
@@ -737,7 +737,7 @@ class StarRocksInstanceInfoInstances:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this StarRocksInstanceInfoInstances.
+        r"""Sets the create_at of this StarRocksInstanceInfoInstances.
 
         实例创建时间。
 
@@ -748,7 +748,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def update_at(self):
-        """Gets the update_at of this StarRocksInstanceInfoInstances.
+        r"""Gets the update_at of this StarRocksInstanceInfoInstances.
 
         实例更新时间。
 
@@ -759,7 +759,7 @@ class StarRocksInstanceInfoInstances:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this StarRocksInstanceInfoInstances.
+        r"""Sets the update_at of this StarRocksInstanceInfoInstances.
 
         实例更新时间。
 
@@ -770,7 +770,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def delete_at(self):
-        """Gets the delete_at of this StarRocksInstanceInfoInstances.
+        r"""Gets the delete_at of this StarRocksInstanceInfoInstances.
 
         实例删除时间。
 
@@ -781,7 +781,7 @@ class StarRocksInstanceInfoInstances:
 
     @delete_at.setter
     def delete_at(self, delete_at):
-        """Sets the delete_at of this StarRocksInstanceInfoInstances.
+        r"""Sets the delete_at of this StarRocksInstanceInfoInstances.
 
         实例删除时间。
 
@@ -792,7 +792,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def db_port(self):
-        """Gets the db_port of this StarRocksInstanceInfoInstances.
+        r"""Gets the db_port of this StarRocksInstanceInfoInstances.
 
         数据库端口号。
 
@@ -803,7 +803,7 @@ class StarRocksInstanceInfoInstances:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this StarRocksInstanceInfoInstances.
+        r"""Sets the db_port of this StarRocksInstanceInfoInstances.
 
         数据库端口号。
 
@@ -814,7 +814,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def param_group(self):
-        """Gets the param_group of this StarRocksInstanceInfoInstances.
+        r"""Gets the param_group of this StarRocksInstanceInfoInstances.
 
         参数组。
 
@@ -825,7 +825,7 @@ class StarRocksInstanceInfoInstances:
 
     @param_group.setter
     def param_group(self, param_group):
-        """Sets the param_group of this StarRocksInstanceInfoInstances.
+        r"""Sets the param_group of this StarRocksInstanceInfoInstances.
 
         参数组。
 
@@ -836,7 +836,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def actions(self):
-        """Gets the actions of this StarRocksInstanceInfoInstances.
+        r"""Gets the actions of this StarRocksInstanceInfoInstances.
 
         实例动作。
 
@@ -847,7 +847,7 @@ class StarRocksInstanceInfoInstances:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this StarRocksInstanceInfoInstances.
+        r"""Sets the actions of this StarRocksInstanceInfoInstances.
 
         实例动作。
 
@@ -858,7 +858,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def create_fail_error_code(self):
-        """Gets the create_fail_error_code of this StarRocksInstanceInfoInstances.
+        r"""Gets the create_fail_error_code of this StarRocksInstanceInfoInstances.
 
         实例创建失败错误码。
 
@@ -869,7 +869,7 @@ class StarRocksInstanceInfoInstances:
 
     @create_fail_error_code.setter
     def create_fail_error_code(self, create_fail_error_code):
-        """Sets the create_fail_error_code of this StarRocksInstanceInfoInstances.
+        r"""Sets the create_fail_error_code of this StarRocksInstanceInfoInstances.
 
         实例创建失败错误码。
 
@@ -880,7 +880,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def groups(self):
-        """Gets the groups of this StarRocksInstanceInfoInstances.
+        r"""Gets the groups of this StarRocksInstanceInfoInstances.
 
         实例分组。
 
@@ -891,7 +891,7 @@ class StarRocksInstanceInfoInstances:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this StarRocksInstanceInfoInstances.
+        r"""Sets the groups of this StarRocksInstanceInfoInstances.
 
         实例分组。
 
@@ -902,7 +902,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def ops_window(self):
-        """Gets the ops_window of this StarRocksInstanceInfoInstances.
+        r"""Gets the ops_window of this StarRocksInstanceInfoInstances.
 
         :return: The ops_window of this StarRocksInstanceInfoInstances.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoOpsWindow`
@@ -911,7 +911,7 @@ class StarRocksInstanceInfoInstances:
 
     @ops_window.setter
     def ops_window(self, ops_window):
-        """Sets the ops_window of this StarRocksInstanceInfoInstances.
+        r"""Sets the ops_window of this StarRocksInstanceInfoInstances.
 
         :param ops_window: The ops_window of this StarRocksInstanceInfoInstances.
         :type ops_window: :class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoOpsWindow`
@@ -920,7 +920,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def tags_info(self):
-        """Gets the tags_info of this StarRocksInstanceInfoInstances.
+        r"""Gets the tags_info of this StarRocksInstanceInfoInstances.
 
         :return: The tags_info of this StarRocksInstanceInfoInstances.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoTagsInfo`
@@ -929,7 +929,7 @@ class StarRocksInstanceInfoInstances:
 
     @tags_info.setter
     def tags_info(self, tags_info):
-        """Sets the tags_info of this StarRocksInstanceInfoInstances.
+        r"""Sets the tags_info of this StarRocksInstanceInfoInstances.
 
         :param tags_info: The tags_info of this StarRocksInstanceInfoInstances.
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoTagsInfo`
@@ -938,7 +938,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this StarRocksInstanceInfoInstances.
+        r"""Gets the time_zone of this StarRocksInstanceInfoInstances.
 
         时区。
 
@@ -949,7 +949,7 @@ class StarRocksInstanceInfoInstances:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this StarRocksInstanceInfoInstances.
+        r"""Sets the time_zone of this StarRocksInstanceInfoInstances.
 
         时区。
 
@@ -960,7 +960,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def backup_used_space(self):
-        """Gets the backup_used_space of this StarRocksInstanceInfoInstances.
+        r"""Gets the backup_used_space of this StarRocksInstanceInfoInstances.
 
         备份使用空间。
 
@@ -971,7 +971,7 @@ class StarRocksInstanceInfoInstances:
 
     @backup_used_space.setter
     def backup_used_space(self, backup_used_space):
-        """Sets the backup_used_space of this StarRocksInstanceInfoInstances.
+        r"""Sets the backup_used_space of this StarRocksInstanceInfoInstances.
 
         备份使用空间。
 
@@ -982,7 +982,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this StarRocksInstanceInfoInstances.
+        r"""Gets the az_mode of this StarRocksInstanceInfoInstances.
 
         可用区模式。  取值范围：  - single：单可用区 - multi：多可用区
 
@@ -993,7 +993,7 @@ class StarRocksInstanceInfoInstances:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this StarRocksInstanceInfoInstances.
+        r"""Sets the az_mode of this StarRocksInstanceInfoInstances.
 
         可用区模式。  取值范围：  - single：单可用区 - multi：多可用区
 
@@ -1004,7 +1004,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this StarRocksInstanceInfoInstances.
+        r"""Gets the enterprise_project_id of this StarRocksInstanceInfoInstances.
 
         企业项目ID。
 
@@ -1015,7 +1015,7 @@ class StarRocksInstanceInfoInstances:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this StarRocksInstanceInfoInstances.
+        r"""Sets the enterprise_project_id of this StarRocksInstanceInfoInstances.
 
         企业项目ID。
 
@@ -1026,7 +1026,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def port_info(self):
-        """Gets the port_info of this StarRocksInstanceInfoInstances.
+        r"""Gets the port_info of this StarRocksInstanceInfoInstances.
 
         :return: The port_info of this StarRocksInstanceInfoInstances.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoPortInfo`
@@ -1035,7 +1035,7 @@ class StarRocksInstanceInfoInstances:
 
     @port_info.setter
     def port_info(self, port_info):
-        """Sets the port_info of this StarRocksInstanceInfoInstances.
+        r"""Sets the port_info of this StarRocksInstanceInfoInstances.
 
         :param port_info: The port_info of this StarRocksInstanceInfoInstances.
         :type port_info: :class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoPortInfo`
@@ -1044,7 +1044,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def fe_node_volume_code(self):
-        """Gets the fe_node_volume_code of this StarRocksInstanceInfoInstances.
+        r"""Gets the fe_node_volume_code of this StarRocksInstanceInfoInstances.
 
         FE节点磁盘类型。
 
@@ -1055,7 +1055,7 @@ class StarRocksInstanceInfoInstances:
 
     @fe_node_volume_code.setter
     def fe_node_volume_code(self, fe_node_volume_code):
-        """Sets the fe_node_volume_code of this StarRocksInstanceInfoInstances.
+        r"""Sets the fe_node_volume_code of this StarRocksInstanceInfoInstances.
 
         FE节点磁盘类型。
 
@@ -1066,7 +1066,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def be_node_volume_code(self):
-        """Gets the be_node_volume_code of this StarRocksInstanceInfoInstances.
+        r"""Gets the be_node_volume_code of this StarRocksInstanceInfoInstances.
 
         BE节点磁盘类型。
 
@@ -1077,7 +1077,7 @@ class StarRocksInstanceInfoInstances:
 
     @be_node_volume_code.setter
     def be_node_volume_code(self, be_node_volume_code):
-        """Sets the be_node_volume_code of this StarRocksInstanceInfoInstances.
+        r"""Sets the be_node_volume_code of this StarRocksInstanceInfoInstances.
 
         BE节点磁盘类型。
 
@@ -1088,7 +1088,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def fe_node_volume_size(self):
-        """Gets the fe_node_volume_size of this StarRocksInstanceInfoInstances.
+        r"""Gets the fe_node_volume_size of this StarRocksInstanceInfoInstances.
 
         FE节点磁盘大小。
 
@@ -1099,7 +1099,7 @@ class StarRocksInstanceInfoInstances:
 
     @fe_node_volume_size.setter
     def fe_node_volume_size(self, fe_node_volume_size):
-        """Sets the fe_node_volume_size of this StarRocksInstanceInfoInstances.
+        r"""Sets the fe_node_volume_size of this StarRocksInstanceInfoInstances.
 
         FE节点磁盘大小。
 
@@ -1110,7 +1110,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def be_node_volume_size(self):
-        """Gets the be_node_volume_size of this StarRocksInstanceInfoInstances.
+        r"""Gets the be_node_volume_size of this StarRocksInstanceInfoInstances.
 
         BE节点磁盘大小。
 
@@ -1121,7 +1121,7 @@ class StarRocksInstanceInfoInstances:
 
     @be_node_volume_size.setter
     def be_node_volume_size(self, be_node_volume_size):
-        """Sets the be_node_volume_size of this StarRocksInstanceInfoInstances.
+        r"""Sets the be_node_volume_size of this StarRocksInstanceInfoInstances.
 
         BE节点磁盘大小。
 
@@ -1132,7 +1132,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def support_data_replication(self):
-        """Gets the support_data_replication of this StarRocksInstanceInfoInstances.
+        r"""Gets the support_data_replication of this StarRocksInstanceInfoInstances.
 
         是否支持副本。
 
@@ -1143,7 +1143,7 @@ class StarRocksInstanceInfoInstances:
 
     @support_data_replication.setter
     def support_data_replication(self, support_data_replication):
-        """Sets the support_data_replication of this StarRocksInstanceInfoInstances.
+        r"""Sets the support_data_replication of this StarRocksInstanceInfoInstances.
 
         是否支持副本。
 
@@ -1154,7 +1154,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def new_version_available(self):
-        """Gets the new_version_available of this StarRocksInstanceInfoInstances.
+        r"""Gets the new_version_available of this StarRocksInstanceInfoInstances.
 
         是否有数据库新版本。
 
@@ -1165,7 +1165,7 @@ class StarRocksInstanceInfoInstances:
 
     @new_version_available.setter
     def new_version_available(self, new_version_available):
-        """Sets the new_version_available of this StarRocksInstanceInfoInstances.
+        r"""Sets the new_version_available of this StarRocksInstanceInfoInstances.
 
         是否有数据库新版本。
 
@@ -1176,7 +1176,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this StarRocksInstanceInfoInstances.
+        r"""Gets the ssl_option of this StarRocksInstanceInfoInstances.
 
         SSL开关。
 
@@ -1187,7 +1187,7 @@ class StarRocksInstanceInfoInstances:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this StarRocksInstanceInfoInstances.
+        r"""Sets the ssl_option of this StarRocksInstanceInfoInstances.
 
         SSL开关。
 
@@ -1198,7 +1198,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this StarRocksInstanceInfoInstances.
+        r"""Gets the dedicated_resource_id of this StarRocksInstanceInfoInstances.
 
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -1209,7 +1209,7 @@ class StarRocksInstanceInfoInstances:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this StarRocksInstanceInfoInstances.
+        r"""Sets the dedicated_resource_id of this StarRocksInstanceInfoInstances.
 
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -1220,7 +1220,7 @@ class StarRocksInstanceInfoInstances:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this StarRocksInstanceInfoInstances.
+        r"""Gets the pay_model of this StarRocksInstanceInfoInstances.
 
         支付模式。
 
@@ -1231,7 +1231,7 @@ class StarRocksInstanceInfoInstances:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this StarRocksInstanceInfoInstances.
+        r"""Sets the pay_model of this StarRocksInstanceInfoInstances.
 
         支付模式。
 

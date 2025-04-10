@@ -32,7 +32,7 @@ class ShowConsumerStateResponse(SdkResponse):
     }
 
     def __init__(self, app_name=None, app_id=None, create_time=None, commit_checkpoint_stream_names=None):
-        """ShowConsumerStateResponse
+        r"""ShowConsumerStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowConsumerStateResponse.
+        r"""Gets the app_name of this ShowConsumerStateResponse.
 
         App的名称。
 
@@ -76,7 +76,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowConsumerStateResponse.
+        r"""Sets the app_name of this ShowConsumerStateResponse.
 
         App的名称。
 
@@ -87,7 +87,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowConsumerStateResponse.
+        r"""Gets the app_id of this ShowConsumerStateResponse.
 
         App的唯一标识符。
 
@@ -98,7 +98,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowConsumerStateResponse.
+        r"""Sets the app_id of this ShowConsumerStateResponse.
 
         App的唯一标识符。
 
@@ -109,7 +109,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowConsumerStateResponse.
+        r"""Gets the create_time of this ShowConsumerStateResponse.
 
         App创建的时间，单位毫秒。
 
@@ -120,7 +120,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowConsumerStateResponse.
+        r"""Sets the create_time of this ShowConsumerStateResponse.
 
         App创建的时间，单位毫秒。
 
@@ -131,7 +131,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @property
     def commit_checkpoint_stream_names(self):
-        """Gets the commit_checkpoint_stream_names of this ShowConsumerStateResponse.
+        r"""Gets the commit_checkpoint_stream_names of this ShowConsumerStateResponse.
 
         关联通道列表。
 
@@ -142,7 +142,7 @@ class ShowConsumerStateResponse(SdkResponse):
 
     @commit_checkpoint_stream_names.setter
     def commit_checkpoint_stream_names(self, commit_checkpoint_stream_names):
-        """Sets the commit_checkpoint_stream_names of this ShowConsumerStateResponse.
+        r"""Sets the commit_checkpoint_stream_names of this ShowConsumerStateResponse.
 
         关联通道列表。
 

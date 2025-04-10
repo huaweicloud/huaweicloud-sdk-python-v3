@@ -49,7 +49,7 @@ class ListQualityTaskListsRequest:
     }
 
     def __init__(self, start=None, page_size=None, offset=None, limit=None, category_id=None, rule_name=None, schedule_status=None, schedule_period=None, start_time=None, end_time=None, result_status=None, sort=None, order=None):
-        """ListQualityTaskListsRequest
+        r"""ListQualityTaskListsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListQualityTaskListsRequest.
+        r"""Gets the start of this ListQualityTaskListsRequest.
 
         start number
 
@@ -138,7 +138,7 @@ class ListQualityTaskListsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListQualityTaskListsRequest.
+        r"""Sets the start of this ListQualityTaskListsRequest.
 
         start number
 
@@ -149,7 +149,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListQualityTaskListsRequest.
+        r"""Gets the page_size of this ListQualityTaskListsRequest.
 
         page size
 
@@ -160,7 +160,7 @@ class ListQualityTaskListsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListQualityTaskListsRequest.
+        r"""Sets the page_size of this ListQualityTaskListsRequest.
 
         page size
 
@@ -171,7 +171,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListQualityTaskListsRequest.
+        r"""Gets the offset of this ListQualityTaskListsRequest.
 
         分页查询偏移量
 
@@ -182,7 +182,7 @@ class ListQualityTaskListsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListQualityTaskListsRequest.
+        r"""Sets the offset of this ListQualityTaskListsRequest.
 
         分页查询偏移量
 
@@ -193,7 +193,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListQualityTaskListsRequest.
+        r"""Gets the limit of this ListQualityTaskListsRequest.
 
         每页显示的条目数量
 
@@ -204,7 +204,7 @@ class ListQualityTaskListsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListQualityTaskListsRequest.
+        r"""Sets the limit of this ListQualityTaskListsRequest.
 
         每页显示的条目数量
 
@@ -215,7 +215,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def category_id(self):
-        """Gets the category_id of this ListQualityTaskListsRequest.
+        r"""Gets the category_id of this ListQualityTaskListsRequest.
 
         category id
 
@@ -226,7 +226,7 @@ class ListQualityTaskListsRequest:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ListQualityTaskListsRequest.
+        r"""Sets the category_id of this ListQualityTaskListsRequest.
 
         category id
 
@@ -237,7 +237,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ListQualityTaskListsRequest.
+        r"""Gets the rule_name of this ListQualityTaskListsRequest.
 
         rule name
 
@@ -248,7 +248,7 @@ class ListQualityTaskListsRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ListQualityTaskListsRequest.
+        r"""Sets the rule_name of this ListQualityTaskListsRequest.
 
         rule name
 
@@ -259,7 +259,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this ListQualityTaskListsRequest.
+        r"""Gets the schedule_status of this ListQualityTaskListsRequest.
 
         schedule status
 
@@ -270,7 +270,7 @@ class ListQualityTaskListsRequest:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this ListQualityTaskListsRequest.
+        r"""Sets the schedule_status of this ListQualityTaskListsRequest.
 
         schedule status
 
@@ -281,7 +281,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def schedule_period(self):
-        """Gets the schedule_period of this ListQualityTaskListsRequest.
+        r"""Gets the schedule_period of this ListQualityTaskListsRequest.
 
         schedule period
 
@@ -292,7 +292,7 @@ class ListQualityTaskListsRequest:
 
     @schedule_period.setter
     def schedule_period(self, schedule_period):
-        """Sets the schedule_period of this ListQualityTaskListsRequest.
+        r"""Sets the schedule_period of this ListQualityTaskListsRequest.
 
         schedule period
 
@@ -303,7 +303,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListQualityTaskListsRequest.
+        r"""Gets the start_time of this ListQualityTaskListsRequest.
 
         开始时间(搜索)
 
@@ -314,7 +314,7 @@ class ListQualityTaskListsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListQualityTaskListsRequest.
+        r"""Sets the start_time of this ListQualityTaskListsRequest.
 
         开始时间(搜索)
 
@@ -325,7 +325,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListQualityTaskListsRequest.
+        r"""Gets the end_time of this ListQualityTaskListsRequest.
 
         结束时间(搜索)
 
@@ -336,7 +336,7 @@ class ListQualityTaskListsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListQualityTaskListsRequest.
+        r"""Sets the end_time of this ListQualityTaskListsRequest.
 
         结束时间(搜索)
 
@@ -347,7 +347,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def result_status(self):
-        """Gets the result_status of this ListQualityTaskListsRequest.
+        r"""Gets the result_status of this ListQualityTaskListsRequest.
 
         最近运行结果 0：运行中 1：异常 2：告警 3：正常
 
@@ -358,7 +358,7 @@ class ListQualityTaskListsRequest:
 
     @result_status.setter
     def result_status(self, result_status):
-        """Sets the result_status of this ListQualityTaskListsRequest.
+        r"""Sets the result_status of this ListQualityTaskListsRequest.
 
         最近运行结果 0：运行中 1：异常 2：告警 3：正常
 
@@ -369,7 +369,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListQualityTaskListsRequest.
+        r"""Gets the sort of this ListQualityTaskListsRequest.
 
         排序字段
 
@@ -380,7 +380,7 @@ class ListQualityTaskListsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListQualityTaskListsRequest.
+        r"""Sets the sort of this ListQualityTaskListsRequest.
 
         排序字段
 
@@ -391,7 +391,7 @@ class ListQualityTaskListsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListQualityTaskListsRequest.
+        r"""Gets the order of this ListQualityTaskListsRequest.
 
         排序方式
 
@@ -402,7 +402,7 @@ class ListQualityTaskListsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListQualityTaskListsRequest.
+        r"""Sets the order of this ListQualityTaskListsRequest.
 
         排序方式
 

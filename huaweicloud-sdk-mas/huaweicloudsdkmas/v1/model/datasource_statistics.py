@@ -27,7 +27,7 @@ class DatasourceStatistics:
     }
 
     def __init__(self, count=None, mysql_count=None):
-        """DatasourceStatistics
+        r"""DatasourceStatistics
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DatasourceStatistics:
 
     @property
     def count(self):
-        """Gets the count of this DatasourceStatistics.
+        r"""Gets the count of this DatasourceStatistics.
 
         :return: The count of this DatasourceStatistics.
         :rtype: int
@@ -59,7 +59,7 @@ class DatasourceStatistics:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DatasourceStatistics.
+        r"""Sets the count of this DatasourceStatistics.
 
         :param count: The count of this DatasourceStatistics.
         :type count: int
@@ -68,7 +68,7 @@ class DatasourceStatistics:
 
     @property
     def mysql_count(self):
-        """Gets the mysql_count of this DatasourceStatistics.
+        r"""Gets the mysql_count of this DatasourceStatistics.
 
         :return: The mysql_count of this DatasourceStatistics.
         :rtype: int
@@ -77,7 +77,7 @@ class DatasourceStatistics:
 
     @mysql_count.setter
     def mysql_count(self, mysql_count):
-        """Sets the mysql_count of this DatasourceStatistics.
+        r"""Sets the mysql_count of this DatasourceStatistics.
 
         :param mysql_count: The mysql_count of this DatasourceStatistics.
         :type mysql_count: int

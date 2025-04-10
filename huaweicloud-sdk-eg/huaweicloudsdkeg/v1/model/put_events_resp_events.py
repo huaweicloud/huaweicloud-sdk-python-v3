@@ -29,7 +29,7 @@ class PutEventsRespEvents:
     }
 
     def __init__(self, error_code=None, error_msg=None, event_id=None):
-        """PutEventsRespEvents
+        r"""PutEventsRespEvents
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PutEventsRespEvents:
 
     @property
     def error_code(self):
-        """Gets the error_code of this PutEventsRespEvents.
+        r"""Gets the error_code of this PutEventsRespEvents.
 
         发布失败的错误码
 
@@ -68,7 +68,7 @@ class PutEventsRespEvents:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this PutEventsRespEvents.
+        r"""Sets the error_code of this PutEventsRespEvents.
 
         发布失败的错误码
 
@@ -79,7 +79,7 @@ class PutEventsRespEvents:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this PutEventsRespEvents.
+        r"""Gets the error_msg of this PutEventsRespEvents.
 
         发布失败的原因
 
@@ -90,7 +90,7 @@ class PutEventsRespEvents:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this PutEventsRespEvents.
+        r"""Sets the error_msg of this PutEventsRespEvents.
 
         发布失败的原因
 
@@ -101,7 +101,7 @@ class PutEventsRespEvents:
 
     @property
     def event_id(self):
-        """Gets the event_id of this PutEventsRespEvents.
+        r"""Gets the event_id of this PutEventsRespEvents.
 
         事件唯一标识串
 
@@ -112,7 +112,7 @@ class PutEventsRespEvents:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this PutEventsRespEvents.
+        r"""Sets the event_id of this PutEventsRespEvents.
 
         事件唯一标识串
 

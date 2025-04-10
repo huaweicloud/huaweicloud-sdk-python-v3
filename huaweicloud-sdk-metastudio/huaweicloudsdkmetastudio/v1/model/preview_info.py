@@ -31,7 +31,7 @@ class PreviewInfo:
     }
 
     def __init__(self, text_sha256=None, audio_file_download_url=None, action_file_download_url=None, audio_duration=None):
-        """PreviewInfo
+        r"""PreviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PreviewInfo:
 
     @property
     def text_sha256(self):
-        """Gets the text_sha256 of this PreviewInfo.
+        r"""Gets the text_sha256 of this PreviewInfo.
 
         文本内容hash值
 
@@ -75,7 +75,7 @@ class PreviewInfo:
 
     @text_sha256.setter
     def text_sha256(self, text_sha256):
-        """Sets the text_sha256 of this PreviewInfo.
+        r"""Sets the text_sha256 of this PreviewInfo.
 
         文本内容hash值
 
@@ -86,7 +86,7 @@ class PreviewInfo:
 
     @property
     def audio_file_download_url(self):
-        """Gets the audio_file_download_url of this PreviewInfo.
+        r"""Gets the audio_file_download_url of this PreviewInfo.
 
         文本对应音频文件下载链接
 
@@ -97,7 +97,7 @@ class PreviewInfo:
 
     @audio_file_download_url.setter
     def audio_file_download_url(self, audio_file_download_url):
-        """Sets the audio_file_download_url of this PreviewInfo.
+        r"""Sets the audio_file_download_url of this PreviewInfo.
 
         文本对应音频文件下载链接
 
@@ -108,7 +108,7 @@ class PreviewInfo:
 
     @property
     def action_file_download_url(self):
-        """Gets the action_file_download_url of this PreviewInfo.
+        r"""Gets the action_file_download_url of this PreviewInfo.
 
         动作编排列表文件下载链接
 
@@ -119,7 +119,7 @@ class PreviewInfo:
 
     @action_file_download_url.setter
     def action_file_download_url(self, action_file_download_url):
-        """Sets the action_file_download_url of this PreviewInfo.
+        r"""Sets the action_file_download_url of this PreviewInfo.
 
         动作编排列表文件下载链接
 
@@ -130,7 +130,7 @@ class PreviewInfo:
 
     @property
     def audio_duration(self):
-        """Gets the audio_duration of this PreviewInfo.
+        r"""Gets the audio_duration of this PreviewInfo.
 
         音频时长，单位秒。
 
@@ -141,7 +141,7 @@ class PreviewInfo:
 
     @audio_duration.setter
     def audio_duration(self, audio_duration):
-        """Sets the audio_duration of this PreviewInfo.
+        r"""Sets the audio_duration of this PreviewInfo.
 
         音频时长，单位秒。
 

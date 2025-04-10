@@ -28,7 +28,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, device_templates=None, count=None):
-        """ListDeviceTemplatesResponse
+        r"""ListDeviceTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
 
     @property
     def device_templates(self):
-        """Gets the device_templates of this ListDeviceTemplatesResponse.
+        r"""Gets the device_templates of this ListDeviceTemplatesResponse.
 
         终端设备属性
 
@@ -62,7 +62,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
 
     @device_templates.setter
     def device_templates(self, device_templates):
-        """Sets the device_templates of this ListDeviceTemplatesResponse.
+        r"""Sets the device_templates of this ListDeviceTemplatesResponse.
 
         终端设备属性
 
@@ -73,7 +73,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDeviceTemplatesResponse.
+        r"""Gets the count of this ListDeviceTemplatesResponse.
 
         模板数量
 
@@ -84,7 +84,7 @@ class ListDeviceTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDeviceTemplatesResponse.
+        r"""Sets the count of this ListDeviceTemplatesResponse.
 
         模板数量
 

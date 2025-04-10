@@ -30,7 +30,7 @@ class ListLogtanksResponse(SdkResponse):
     }
 
     def __init__(self, logtanks=None, page_info=None, request_id=None):
-        """ListLogtanksResponse
+        r"""ListLogtanksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLogtanksResponse(SdkResponse):
 
     @property
     def logtanks(self):
-        """Gets the logtanks of this ListLogtanksResponse.
+        r"""Gets the logtanks of this ListLogtanksResponse.
 
         :return: The logtanks of this ListLogtanksResponse.
         :rtype: list[:class:`huaweicloudsdkga.v1.LogtankDetail`]
@@ -67,7 +67,7 @@ class ListLogtanksResponse(SdkResponse):
 
     @logtanks.setter
     def logtanks(self, logtanks):
-        """Sets the logtanks of this ListLogtanksResponse.
+        r"""Sets the logtanks of this ListLogtanksResponse.
 
         :param logtanks: The logtanks of this ListLogtanksResponse.
         :type logtanks: list[:class:`huaweicloudsdkga.v1.LogtankDetail`]
@@ -76,7 +76,7 @@ class ListLogtanksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListLogtanksResponse.
+        r"""Gets the page_info of this ListLogtanksResponse.
 
         :return: The page_info of this ListLogtanksResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -85,7 +85,7 @@ class ListLogtanksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListLogtanksResponse.
+        r"""Sets the page_info of this ListLogtanksResponse.
 
         :param page_info: The page_info of this ListLogtanksResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -94,7 +94,7 @@ class ListLogtanksResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListLogtanksResponse.
+        r"""Gets the request_id of this ListLogtanksResponse.
 
         请求ID。
 
@@ -105,7 +105,7 @@ class ListLogtanksResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListLogtanksResponse.
+        r"""Sets the request_id of this ListLogtanksResponse.
 
         请求ID。
 

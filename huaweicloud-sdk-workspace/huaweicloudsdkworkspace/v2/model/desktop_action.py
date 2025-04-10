@@ -35,7 +35,7 @@ class DesktopAction:
     }
 
     def __init__(self, action=None, message=None, start_time=None, finish_time=None, result=None, traceback=None):
-        """DesktopAction
+        r"""DesktopAction
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DesktopAction:
 
     @property
     def action(self):
-        """Gets the action of this DesktopAction.
+        r"""Gets the action of this DesktopAction.
 
         行为动作
 
@@ -89,7 +89,7 @@ class DesktopAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this DesktopAction.
+        r"""Sets the action of this DesktopAction.
 
         行为动作
 
@@ -100,7 +100,7 @@ class DesktopAction:
 
     @property
     def message(self):
-        """Gets the message of this DesktopAction.
+        r"""Gets the message of this DesktopAction.
 
         行为完成状态信息
 
@@ -111,7 +111,7 @@ class DesktopAction:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DesktopAction.
+        r"""Sets the message of this DesktopAction.
 
         行为完成状态信息
 
@@ -122,7 +122,7 @@ class DesktopAction:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DesktopAction.
+        r"""Gets the start_time of this DesktopAction.
 
         开始时间
 
@@ -133,7 +133,7 @@ class DesktopAction:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DesktopAction.
+        r"""Sets the start_time of this DesktopAction.
 
         开始时间
 
@@ -144,7 +144,7 @@ class DesktopAction:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this DesktopAction.
+        r"""Gets the finish_time of this DesktopAction.
 
         结束时间
 
@@ -155,7 +155,7 @@ class DesktopAction:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this DesktopAction.
+        r"""Sets the finish_time of this DesktopAction.
 
         结束时间
 
@@ -166,7 +166,7 @@ class DesktopAction:
 
     @property
     def result(self):
-        """Gets the result of this DesktopAction.
+        r"""Gets the result of this DesktopAction.
 
         结果
 
@@ -177,7 +177,7 @@ class DesktopAction:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DesktopAction.
+        r"""Sets the result of this DesktopAction.
 
         结果
 
@@ -188,7 +188,7 @@ class DesktopAction:
 
     @property
     def traceback(self):
-        """Gets the traceback of this DesktopAction.
+        r"""Gets the traceback of this DesktopAction.
 
         异常信息
 
@@ -199,7 +199,7 @@ class DesktopAction:
 
     @traceback.setter
     def traceback(self, traceback):
-        """Sets the traceback of this DesktopAction.
+        r"""Sets the traceback of this DesktopAction.
 
         异常信息
 

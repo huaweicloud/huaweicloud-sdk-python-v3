@@ -31,7 +31,7 @@ class ListAuditAgentRequest:
     }
 
     def __init__(self, instance_id=None, db_id=None, offset=None, limit=None):
-        """ListAuditAgentRequest
+        r"""ListAuditAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAuditAgentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditAgentRequest.
+        r"""Gets the instance_id of this ListAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -73,7 +73,7 @@ class ListAuditAgentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditAgentRequest.
+        r"""Sets the instance_id of this ListAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -84,7 +84,7 @@ class ListAuditAgentRequest:
 
     @property
     def db_id(self):
-        """Gets the db_id of this ListAuditAgentRequest.
+        r"""Gets the db_id of this ListAuditAgentRequest.
 
         数据库ID,可在查询数据库列表接口ID字段获取。
 
@@ -95,7 +95,7 @@ class ListAuditAgentRequest:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this ListAuditAgentRequest.
+        r"""Sets the db_id of this ListAuditAgentRequest.
 
         数据库ID,可在查询数据库列表接口ID字段获取。
 
@@ -106,7 +106,7 @@ class ListAuditAgentRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuditAgentRequest.
+        r"""Gets the offset of this ListAuditAgentRequest.
 
         偏移量
 
@@ -117,7 +117,7 @@ class ListAuditAgentRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuditAgentRequest.
+        r"""Sets the offset of this ListAuditAgentRequest.
 
         偏移量
 
@@ -128,7 +128,7 @@ class ListAuditAgentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditAgentRequest.
+        r"""Gets the limit of this ListAuditAgentRequest.
 
         查询记录数
 
@@ -139,7 +139,7 @@ class ListAuditAgentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditAgentRequest.
+        r"""Sets the limit of this ListAuditAgentRequest.
 
         查询记录数
 

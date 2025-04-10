@@ -29,7 +29,7 @@ class ScaleGroupStatusExistingNodeCount:
     }
 
     def __init__(self, post_paid=None, pre_paid=None, total=None):
-        """ScaleGroupStatusExistingNodeCount
+        r"""ScaleGroupStatusExistingNodeCount
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ScaleGroupStatusExistingNodeCount:
 
     @property
     def post_paid(self):
-        """Gets the post_paid of this ScaleGroupStatusExistingNodeCount.
+        r"""Gets the post_paid of this ScaleGroupStatusExistingNodeCount.
 
         按需计费节点个数
 
@@ -68,7 +68,7 @@ class ScaleGroupStatusExistingNodeCount:
 
     @post_paid.setter
     def post_paid(self, post_paid):
-        """Sets the post_paid of this ScaleGroupStatusExistingNodeCount.
+        r"""Sets the post_paid of this ScaleGroupStatusExistingNodeCount.
 
         按需计费节点个数
 
@@ -79,7 +79,7 @@ class ScaleGroupStatusExistingNodeCount:
 
     @property
     def pre_paid(self):
-        """Gets the pre_paid of this ScaleGroupStatusExistingNodeCount.
+        r"""Gets the pre_paid of this ScaleGroupStatusExistingNodeCount.
 
         包年包月节点个数
 
@@ -90,7 +90,7 @@ class ScaleGroupStatusExistingNodeCount:
 
     @pre_paid.setter
     def pre_paid(self, pre_paid):
-        """Sets the pre_paid of this ScaleGroupStatusExistingNodeCount.
+        r"""Sets the pre_paid of this ScaleGroupStatusExistingNodeCount.
 
         包年包月节点个数
 
@@ -101,7 +101,7 @@ class ScaleGroupStatusExistingNodeCount:
 
     @property
     def total(self):
-        """Gets the total of this ScaleGroupStatusExistingNodeCount.
+        r"""Gets the total of this ScaleGroupStatusExistingNodeCount.
 
         按需计费和包年包月节点总数
 
@@ -112,7 +112,7 @@ class ScaleGroupStatusExistingNodeCount:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ScaleGroupStatusExistingNodeCount.
+        r"""Sets the total of this ScaleGroupStatusExistingNodeCount.
 
         按需计费和包年包月节点总数
 

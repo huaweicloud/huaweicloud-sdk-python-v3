@@ -27,7 +27,7 @@ class ImportNetworkDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """ImportNetworkDataRequest
+        r"""ImportNetworkDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportNetworkDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ImportNetworkDataRequest.
+        r"""Gets the eihealth_project_id of this ImportNetworkDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class ImportNetworkDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ImportNetworkDataRequest.
+        r"""Sets the eihealth_project_id of this ImportNetworkDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class ImportNetworkDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportNetworkDataRequest.
+        r"""Gets the body of this ImportNetworkDataRequest.
 
         :return: The body of this ImportNetworkDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataReq`
@@ -80,7 +80,7 @@ class ImportNetworkDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportNetworkDataRequest.
+        r"""Sets the body of this ImportNetworkDataRequest.
 
         :param body: The body of this ImportNetworkDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataReq`

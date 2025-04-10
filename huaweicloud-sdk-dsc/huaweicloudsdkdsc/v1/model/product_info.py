@@ -49,7 +49,7 @@ class ProductInfo:
     }
 
     def __init__(self, all_resource_names=None, cloud_service_type=None, display_id=None, product_id=None, product_spec_desc=None, resource_name=None, resource_size=None, resource_size_measure_id=None, resource_spec_code=None, resource_type=None, usage_factor=None, usage_measure_id=None, usage_value=None):
-        """ProductInfo
+        r"""ProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ProductInfo:
 
     @property
     def all_resource_names(self):
-        """Gets the all_resource_names of this ProductInfo.
+        r"""Gets the all_resource_names of this ProductInfo.
 
         资源名称列表
 
@@ -138,7 +138,7 @@ class ProductInfo:
 
     @all_resource_names.setter
     def all_resource_names(self, all_resource_names):
-        """Sets the all_resource_names of this ProductInfo.
+        r"""Sets the all_resource_names of this ProductInfo.
 
         资源名称列表
 
@@ -149,7 +149,7 @@ class ProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfo.
+        r"""Gets the cloud_service_type of this ProductInfo.
 
         云服务类型
 
@@ -160,7 +160,7 @@ class ProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfo.
+        r"""Sets the cloud_service_type of this ProductInfo.
 
         云服务类型
 
@@ -171,7 +171,7 @@ class ProductInfo:
 
     @property
     def display_id(self):
-        """Gets the display_id of this ProductInfo.
+        r"""Gets the display_id of this ProductInfo.
 
         展示ID
 
@@ -182,7 +182,7 @@ class ProductInfo:
 
     @display_id.setter
     def display_id(self, display_id):
-        """Sets the display_id of this ProductInfo.
+        r"""Sets the display_id of this ProductInfo.
 
         展示ID
 
@@ -193,7 +193,7 @@ class ProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductInfo.
+        r"""Gets the product_id of this ProductInfo.
 
         产品ID
 
@@ -204,7 +204,7 @@ class ProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductInfo.
+        r"""Sets the product_id of this ProductInfo.
 
         产品ID
 
@@ -215,7 +215,7 @@ class ProductInfo:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this ProductInfo.
+        r"""Gets the product_spec_desc of this ProductInfo.
 
         产品规格描述
 
@@ -226,7 +226,7 @@ class ProductInfo:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this ProductInfo.
+        r"""Sets the product_spec_desc of this ProductInfo.
 
         产品规格描述
 
@@ -237,7 +237,7 @@ class ProductInfo:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ProductInfo.
+        r"""Gets the resource_name of this ProductInfo.
 
         资源名称
 
@@ -248,7 +248,7 @@ class ProductInfo:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ProductInfo.
+        r"""Sets the resource_name of this ProductInfo.
 
         资源名称
 
@@ -259,7 +259,7 @@ class ProductInfo:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ProductInfo.
+        r"""Gets the resource_size of this ProductInfo.
 
         产品支持的数据库数量，或者支持obs的扫描量
 
@@ -270,7 +270,7 @@ class ProductInfo:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ProductInfo.
+        r"""Sets the resource_size of this ProductInfo.
 
         产品支持的数据库数量，或者支持obs的扫描量
 
@@ -281,7 +281,7 @@ class ProductInfo:
 
     @property
     def resource_size_measure_id(self):
-        """Gets the resource_size_measure_id of this ProductInfo.
+        r"""Gets the resource_size_measure_id of this ProductInfo.
 
         资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
 
@@ -292,7 +292,7 @@ class ProductInfo:
 
     @resource_size_measure_id.setter
     def resource_size_measure_id(self, resource_size_measure_id):
-        """Sets the resource_size_measure_id of this ProductInfo.
+        r"""Sets the resource_size_measure_id of this ProductInfo.
 
         资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
 
@@ -303,7 +303,7 @@ class ProductInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ProductInfo.
+        r"""Gets the resource_spec_code of this ProductInfo.
 
         产品编码
 
@@ -314,7 +314,7 @@ class ProductInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ProductInfo.
+        r"""Sets the resource_spec_code of this ProductInfo.
 
         产品编码
 
@@ -325,7 +325,7 @@ class ProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfo.
+        r"""Gets the resource_type of this ProductInfo.
 
         资源类型
 
@@ -336,7 +336,7 @@ class ProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfo.
+        r"""Sets the resource_type of this ProductInfo.
 
         资源类型
 
@@ -347,7 +347,7 @@ class ProductInfo:
 
     @property
     def usage_factor(self):
-        """Gets the usage_factor of this ProductInfo.
+        r"""Gets the usage_factor of this ProductInfo.
 
         已使用系数
 
@@ -358,7 +358,7 @@ class ProductInfo:
 
     @usage_factor.setter
     def usage_factor(self, usage_factor):
-        """Sets the usage_factor of this ProductInfo.
+        r"""Sets the usage_factor of this ProductInfo.
 
         已使用系数
 
@@ -369,7 +369,7 @@ class ProductInfo:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this ProductInfo.
+        r"""Gets the usage_measure_id of this ProductInfo.
 
         已使用容量度量标识
 
@@ -380,7 +380,7 @@ class ProductInfo:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this ProductInfo.
+        r"""Sets the usage_measure_id of this ProductInfo.
 
         已使用容量度量标识
 
@@ -391,7 +391,7 @@ class ProductInfo:
 
     @property
     def usage_value(self):
-        """Gets the usage_value of this ProductInfo.
+        r"""Gets the usage_value of this ProductInfo.
 
         已使用值
 
@@ -402,7 +402,7 @@ class ProductInfo:
 
     @usage_value.setter
     def usage_value(self, usage_value):
-        """Sets the usage_value of this ProductInfo.
+        r"""Sets the usage_value of this ProductInfo.
 
         已使用值
 

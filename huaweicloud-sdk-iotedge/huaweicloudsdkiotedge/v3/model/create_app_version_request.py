@@ -29,7 +29,7 @@ class CreateAppVersionRequest:
     }
 
     def __init__(self, app_id=None, version=None, body=None):
-        """CreateAppVersionRequest
+        r"""CreateAppVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAppVersionRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppVersionRequest.
+        r"""Gets the app_id of this CreateAppVersionRequest.
 
         应用ID
 
@@ -66,7 +66,7 @@ class CreateAppVersionRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppVersionRequest.
+        r"""Sets the app_id of this CreateAppVersionRequest.
 
         应用ID
 
@@ -77,7 +77,7 @@ class CreateAppVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this CreateAppVersionRequest.
+        r"""Gets the version of this CreateAppVersionRequest.
 
         应用版本
 
@@ -88,7 +88,7 @@ class CreateAppVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateAppVersionRequest.
+        r"""Sets the version of this CreateAppVersionRequest.
 
         应用版本
 
@@ -99,7 +99,7 @@ class CreateAppVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppVersionRequest.
+        r"""Gets the body of this CreateAppVersionRequest.
 
         :return: The body of this CreateAppVersionRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v3.CreateAppVersionRequestBody`
@@ -108,7 +108,7 @@ class CreateAppVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppVersionRequest.
+        r"""Sets the body of this CreateAppVersionRequest.
 
         :param body: The body of this CreateAppVersionRequest.
         :type body: :class:`huaweicloudsdkiotedge.v3.CreateAppVersionRequestBody`

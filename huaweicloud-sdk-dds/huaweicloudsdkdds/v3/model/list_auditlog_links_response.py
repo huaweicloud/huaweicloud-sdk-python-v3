@@ -26,7 +26,7 @@ class ListAuditlogLinksResponse(SdkResponse):
     }
 
     def __init__(self, links=None):
-        """ListAuditlogLinksResponse
+        r"""ListAuditlogLinksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAuditlogLinksResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListAuditlogLinksResponse.
+        r"""Gets the links of this ListAuditlogLinksResponse.
 
         审计日志下载链接列表，有效时间5分钟。
 
@@ -55,7 +55,7 @@ class ListAuditlogLinksResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListAuditlogLinksResponse.
+        r"""Sets the links of this ListAuditlogLinksResponse.
 
         审计日志下载链接列表，有效时间5分钟。
 

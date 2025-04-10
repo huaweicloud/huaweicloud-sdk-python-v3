@@ -25,7 +25,7 @@ class UpdateVolumeRequestBody:
     }
 
     def __init__(self, volume=None):
-        """UpdateVolumeRequestBody
+        r"""UpdateVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVolumeRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this UpdateVolumeRequestBody.
+        r"""Gets the volume of this UpdateVolumeRequestBody.
 
         :return: The volume of this UpdateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateVolumeOption`
@@ -51,7 +51,7 @@ class UpdateVolumeRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this UpdateVolumeRequestBody.
+        r"""Sets the volume of this UpdateVolumeRequestBody.
 
         :param volume: The volume of this UpdateVolumeRequestBody.
         :type volume: :class:`huaweicloudsdkevs.v2.UpdateVolumeOption`

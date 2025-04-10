@@ -29,7 +29,7 @@ class InstanceGroupListInfo:
     }
 
     def __init__(self, group_id=None, group_name=None, replication_list=None):
-        """InstanceGroupListInfo
+        r"""InstanceGroupListInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceGroupListInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this InstanceGroupListInfo.
+        r"""Gets the group_id of this InstanceGroupListInfo.
 
         分片id
 
@@ -68,7 +68,7 @@ class InstanceGroupListInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this InstanceGroupListInfo.
+        r"""Sets the group_id of this InstanceGroupListInfo.
 
         分片id
 
@@ -79,7 +79,7 @@ class InstanceGroupListInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this InstanceGroupListInfo.
+        r"""Gets the group_name of this InstanceGroupListInfo.
 
         分片名称
 
@@ -90,7 +90,7 @@ class InstanceGroupListInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this InstanceGroupListInfo.
+        r"""Sets the group_name of this InstanceGroupListInfo.
 
         分片名称
 
@@ -101,7 +101,7 @@ class InstanceGroupListInfo:
 
     @property
     def replication_list(self):
-        """Gets the replication_list of this InstanceGroupListInfo.
+        r"""Gets the replication_list of this InstanceGroupListInfo.
 
         每个分片包含的副本列表。
 
@@ -112,7 +112,7 @@ class InstanceGroupListInfo:
 
     @replication_list.setter
     def replication_list(self, replication_list):
-        """Sets the replication_list of this InstanceGroupListInfo.
+        r"""Sets the replication_list of this InstanceGroupListInfo.
 
         每个分片包含的副本列表。
 

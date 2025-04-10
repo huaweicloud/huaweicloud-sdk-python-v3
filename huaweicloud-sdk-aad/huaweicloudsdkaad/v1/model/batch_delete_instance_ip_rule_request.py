@@ -29,7 +29,7 @@ class BatchDeleteInstanceIpRuleRequest:
     }
 
     def __init__(self, instance_id=None, ip=None, body=None):
-        """BatchDeleteInstanceIpRuleRequest
+        r"""BatchDeleteInstanceIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchDeleteInstanceIpRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeleteInstanceIpRuleRequest.
+        r"""Gets the instance_id of this BatchDeleteInstanceIpRuleRequest.
 
         实例Id
 
@@ -66,7 +66,7 @@ class BatchDeleteInstanceIpRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeleteInstanceIpRuleRequest.
+        r"""Sets the instance_id of this BatchDeleteInstanceIpRuleRequest.
 
         实例Id
 
@@ -77,7 +77,7 @@ class BatchDeleteInstanceIpRuleRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this BatchDeleteInstanceIpRuleRequest.
+        r"""Gets the ip of this BatchDeleteInstanceIpRuleRequest.
 
         单个 IP
 
@@ -88,7 +88,7 @@ class BatchDeleteInstanceIpRuleRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BatchDeleteInstanceIpRuleRequest.
+        r"""Sets the ip of this BatchDeleteInstanceIpRuleRequest.
 
         单个 IP
 
@@ -99,7 +99,7 @@ class BatchDeleteInstanceIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteInstanceIpRuleRequest.
+        r"""Gets the body of this BatchDeleteInstanceIpRuleRequest.
 
         :return: The body of this BatchDeleteInstanceIpRuleRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.BatchIdBody`
@@ -108,7 +108,7 @@ class BatchDeleteInstanceIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteInstanceIpRuleRequest.
+        r"""Sets the body of this BatchDeleteInstanceIpRuleRequest.
 
         :param body: The body of this BatchDeleteInstanceIpRuleRequest.
         :type body: :class:`huaweicloudsdkaad.v1.BatchIdBody`

@@ -27,7 +27,7 @@ class SetBackupPolicyRequestBody:
     }
 
     def __init__(self, backup_policy=None, reserve_backups=None):
-        """SetBackupPolicyRequestBody
+        r"""SetBackupPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetBackupPolicyRequestBody:
 
     @property
     def backup_policy(self):
-        """Gets the backup_policy of this SetBackupPolicyRequestBody.
+        r"""Gets the backup_policy of this SetBackupPolicyRequestBody.
 
         :return: The backup_policy of this SetBackupPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupPolicy`
@@ -58,7 +58,7 @@ class SetBackupPolicyRequestBody:
 
     @backup_policy.setter
     def backup_policy(self, backup_policy):
-        """Sets the backup_policy of this SetBackupPolicyRequestBody.
+        r"""Sets the backup_policy of this SetBackupPolicyRequestBody.
 
         :param backup_policy: The backup_policy of this SetBackupPolicyRequestBody.
         :type backup_policy: :class:`huaweicloudsdkrds.v3.BackupPolicy`
@@ -67,7 +67,7 @@ class SetBackupPolicyRequestBody:
 
     @property
     def reserve_backups(self):
-        """Gets the reserve_backups of this SetBackupPolicyRequestBody.
+        r"""Gets the reserve_backups of this SetBackupPolicyRequestBody.
 
         仅关闭备份策略时有效。  - true（默认），表示保留自动备份和差异备份。 - false，表示关闭备份策略的同时，删除已有的自动备份和差异备份。
 
@@ -78,7 +78,7 @@ class SetBackupPolicyRequestBody:
 
     @reserve_backups.setter
     def reserve_backups(self, reserve_backups):
-        """Sets the reserve_backups of this SetBackupPolicyRequestBody.
+        r"""Sets the reserve_backups of this SetBackupPolicyRequestBody.
 
         仅关闭备份策略时有效。  - true（默认），表示保留自动备份和差异备份。 - false，表示关闭备份策略的同时，删除已有的自动备份和差异备份。
 

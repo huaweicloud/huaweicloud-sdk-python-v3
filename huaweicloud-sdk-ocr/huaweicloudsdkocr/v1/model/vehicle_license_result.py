@@ -81,7 +81,7 @@ class VehicleLicenseResult:
     }
 
     def __init__(self, type=None, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None, energy_type=None, color=None, mandatory_scrapping_date=None, status=None, front=None, back=None):
-        """VehicleLicenseResult
+        r"""VehicleLicenseResult
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class VehicleLicenseResult:
 
     @property
     def type(self):
-        """Gets the type of this VehicleLicenseResult.
+        r"""Gets the type of this VehicleLicenseResult.
 
         行驶证类型：  - normal: 纸质行驶证  - electronic: 电子行驶证 
 
@@ -250,7 +250,7 @@ class VehicleLicenseResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VehicleLicenseResult.
+        r"""Sets the type of this VehicleLicenseResult.
 
         行驶证类型：  - normal: 纸质行驶证  - electronic: 电子行驶证 
 
@@ -261,7 +261,7 @@ class VehicleLicenseResult:
 
     @property
     def number(self):
-        """Gets the number of this VehicleLicenseResult.
+        r"""Gets the number of this VehicleLicenseResult.
 
         号牌号码。 
 
@@ -272,7 +272,7 @@ class VehicleLicenseResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this VehicleLicenseResult.
+        r"""Sets the number of this VehicleLicenseResult.
 
         号牌号码。 
 
@@ -283,7 +283,7 @@ class VehicleLicenseResult:
 
     @property
     def vehicle_type(self):
-        """Gets the vehicle_type of this VehicleLicenseResult.
+        r"""Gets the vehicle_type of this VehicleLicenseResult.
 
         车辆类型。 
 
@@ -294,7 +294,7 @@ class VehicleLicenseResult:
 
     @vehicle_type.setter
     def vehicle_type(self, vehicle_type):
-        """Sets the vehicle_type of this VehicleLicenseResult.
+        r"""Sets the vehicle_type of this VehicleLicenseResult.
 
         车辆类型。 
 
@@ -305,7 +305,7 @@ class VehicleLicenseResult:
 
     @property
     def name(self):
-        """Gets the name of this VehicleLicenseResult.
+        r"""Gets the name of this VehicleLicenseResult.
 
         所有人。 
 
@@ -316,7 +316,7 @@ class VehicleLicenseResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VehicleLicenseResult.
+        r"""Sets the name of this VehicleLicenseResult.
 
         所有人。 
 
@@ -327,7 +327,7 @@ class VehicleLicenseResult:
 
     @property
     def address(self):
-        """Gets the address of this VehicleLicenseResult.
+        r"""Gets the address of this VehicleLicenseResult.
 
         住址。 
 
@@ -338,7 +338,7 @@ class VehicleLicenseResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this VehicleLicenseResult.
+        r"""Sets the address of this VehicleLicenseResult.
 
         住址。 
 
@@ -349,7 +349,7 @@ class VehicleLicenseResult:
 
     @property
     def use_character(self):
-        """Gets the use_character of this VehicleLicenseResult.
+        r"""Gets the use_character of this VehicleLicenseResult.
 
         使用性质。 
 
@@ -360,7 +360,7 @@ class VehicleLicenseResult:
 
     @use_character.setter
     def use_character(self, use_character):
-        """Sets the use_character of this VehicleLicenseResult.
+        r"""Sets the use_character of this VehicleLicenseResult.
 
         使用性质。 
 
@@ -371,7 +371,7 @@ class VehicleLicenseResult:
 
     @property
     def model(self):
-        """Gets the model of this VehicleLicenseResult.
+        r"""Gets the model of this VehicleLicenseResult.
 
         品牌型号。 
 
@@ -382,7 +382,7 @@ class VehicleLicenseResult:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this VehicleLicenseResult.
+        r"""Sets the model of this VehicleLicenseResult.
 
         品牌型号。 
 
@@ -393,7 +393,7 @@ class VehicleLicenseResult:
 
     @property
     def engine_no(self):
-        """Gets the engine_no of this VehicleLicenseResult.
+        r"""Gets the engine_no of this VehicleLicenseResult.
 
         发动机号码。 
 
@@ -404,7 +404,7 @@ class VehicleLicenseResult:
 
     @engine_no.setter
     def engine_no(self, engine_no):
-        """Sets the engine_no of this VehicleLicenseResult.
+        r"""Sets the engine_no of this VehicleLicenseResult.
 
         发动机号码。 
 
@@ -415,7 +415,7 @@ class VehicleLicenseResult:
 
     @property
     def vin(self):
-        """Gets the vin of this VehicleLicenseResult.
+        r"""Gets the vin of this VehicleLicenseResult.
 
         车辆识别代号。 
 
@@ -426,7 +426,7 @@ class VehicleLicenseResult:
 
     @vin.setter
     def vin(self, vin):
-        """Sets the vin of this VehicleLicenseResult.
+        r"""Sets the vin of this VehicleLicenseResult.
 
         车辆识别代号。 
 
@@ -437,7 +437,7 @@ class VehicleLicenseResult:
 
     @property
     def register_date(self):
-        """Gets the register_date of this VehicleLicenseResult.
+        r"""Gets the register_date of this VehicleLicenseResult.
 
         注册日期。 
 
@@ -448,7 +448,7 @@ class VehicleLicenseResult:
 
     @register_date.setter
     def register_date(self, register_date):
-        """Sets the register_date of this VehicleLicenseResult.
+        r"""Sets the register_date of this VehicleLicenseResult.
 
         注册日期。 
 
@@ -459,7 +459,7 @@ class VehicleLicenseResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this VehicleLicenseResult.
+        r"""Gets the issue_date of this VehicleLicenseResult.
 
         发证日期。 
 
@@ -470,7 +470,7 @@ class VehicleLicenseResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this VehicleLicenseResult.
+        r"""Sets the issue_date of this VehicleLicenseResult.
 
         发证日期。 
 
@@ -481,7 +481,7 @@ class VehicleLicenseResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this VehicleLicenseResult.
+        r"""Gets the issuing_authority of this VehicleLicenseResult.
 
         发证机关。 
 
@@ -492,7 +492,7 @@ class VehicleLicenseResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this VehicleLicenseResult.
+        r"""Sets the issuing_authority of this VehicleLicenseResult.
 
         发证机关。 
 
@@ -503,7 +503,7 @@ class VehicleLicenseResult:
 
     @property
     def file_no(self):
-        """Gets the file_no of this VehicleLicenseResult.
+        r"""Gets the file_no of this VehicleLicenseResult.
 
         档案编码。 
 
@@ -514,7 +514,7 @@ class VehicleLicenseResult:
 
     @file_no.setter
     def file_no(self, file_no):
-        """Sets the file_no of this VehicleLicenseResult.
+        r"""Sets the file_no of this VehicleLicenseResult.
 
         档案编码。 
 
@@ -525,7 +525,7 @@ class VehicleLicenseResult:
 
     @property
     def approved_passengers(self):
-        """Gets the approved_passengers of this VehicleLicenseResult.
+        r"""Gets the approved_passengers of this VehicleLicenseResult.
 
         核定载人数。 
 
@@ -536,7 +536,7 @@ class VehicleLicenseResult:
 
     @approved_passengers.setter
     def approved_passengers(self, approved_passengers):
-        """Sets the approved_passengers of this VehicleLicenseResult.
+        r"""Sets the approved_passengers of this VehicleLicenseResult.
 
         核定载人数。 
 
@@ -547,7 +547,7 @@ class VehicleLicenseResult:
 
     @property
     def gross_mass(self):
-        """Gets the gross_mass of this VehicleLicenseResult.
+        r"""Gets the gross_mass of this VehicleLicenseResult.
 
         总质量。 
 
@@ -558,7 +558,7 @@ class VehicleLicenseResult:
 
     @gross_mass.setter
     def gross_mass(self, gross_mass):
-        """Sets the gross_mass of this VehicleLicenseResult.
+        r"""Sets the gross_mass of this VehicleLicenseResult.
 
         总质量。 
 
@@ -569,7 +569,7 @@ class VehicleLicenseResult:
 
     @property
     def unladen_mass(self):
-        """Gets the unladen_mass of this VehicleLicenseResult.
+        r"""Gets the unladen_mass of this VehicleLicenseResult.
 
         整备质量。 
 
@@ -580,7 +580,7 @@ class VehicleLicenseResult:
 
     @unladen_mass.setter
     def unladen_mass(self, unladen_mass):
-        """Sets the unladen_mass of this VehicleLicenseResult.
+        r"""Sets the unladen_mass of this VehicleLicenseResult.
 
         整备质量。 
 
@@ -591,7 +591,7 @@ class VehicleLicenseResult:
 
     @property
     def approved_load(self):
-        """Gets the approved_load of this VehicleLicenseResult.
+        r"""Gets the approved_load of this VehicleLicenseResult.
 
         核定载质量。 
 
@@ -602,7 +602,7 @@ class VehicleLicenseResult:
 
     @approved_load.setter
     def approved_load(self, approved_load):
-        """Sets the approved_load of this VehicleLicenseResult.
+        r"""Sets the approved_load of this VehicleLicenseResult.
 
         核定载质量。 
 
@@ -613,7 +613,7 @@ class VehicleLicenseResult:
 
     @property
     def dimension(self):
-        """Gets the dimension of this VehicleLicenseResult.
+        r"""Gets the dimension of this VehicleLicenseResult.
 
         外廓尺寸。 
 
@@ -624,7 +624,7 @@ class VehicleLicenseResult:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this VehicleLicenseResult.
+        r"""Sets the dimension of this VehicleLicenseResult.
 
         外廓尺寸。 
 
@@ -635,7 +635,7 @@ class VehicleLicenseResult:
 
     @property
     def traction_mass(self):
-        """Gets the traction_mass of this VehicleLicenseResult.
+        r"""Gets the traction_mass of this VehicleLicenseResult.
 
         准牵引总质量。 
 
@@ -646,7 +646,7 @@ class VehicleLicenseResult:
 
     @traction_mass.setter
     def traction_mass(self, traction_mass):
-        """Sets the traction_mass of this VehicleLicenseResult.
+        r"""Sets the traction_mass of this VehicleLicenseResult.
 
         准牵引总质量。 
 
@@ -657,7 +657,7 @@ class VehicleLicenseResult:
 
     @property
     def remarks(self):
-        """Gets the remarks of this VehicleLicenseResult.
+        r"""Gets the remarks of this VehicleLicenseResult.
 
         备注。 
 
@@ -668,7 +668,7 @@ class VehicleLicenseResult:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this VehicleLicenseResult.
+        r"""Sets the remarks of this VehicleLicenseResult.
 
         备注。 
 
@@ -679,7 +679,7 @@ class VehicleLicenseResult:
 
     @property
     def inspection_record(self):
-        """Gets the inspection_record of this VehicleLicenseResult.
+        r"""Gets the inspection_record of this VehicleLicenseResult.
 
         检验记录。 
 
@@ -690,7 +690,7 @@ class VehicleLicenseResult:
 
     @inspection_record.setter
     def inspection_record(self, inspection_record):
-        """Sets the inspection_record of this VehicleLicenseResult.
+        r"""Sets the inspection_record of this VehicleLicenseResult.
 
         检验记录。 
 
@@ -701,7 +701,7 @@ class VehicleLicenseResult:
 
     @property
     def code_number(self):
-        """Gets the code_number of this VehicleLicenseResult.
+        r"""Gets the code_number of this VehicleLicenseResult.
 
         条码号。 
 
@@ -712,7 +712,7 @@ class VehicleLicenseResult:
 
     @code_number.setter
     def code_number(self, code_number):
-        """Sets the code_number of this VehicleLicenseResult.
+        r"""Sets the code_number of this VehicleLicenseResult.
 
         条码号。 
 
@@ -723,7 +723,7 @@ class VehicleLicenseResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this VehicleLicenseResult.
+        r"""Gets the text_location of this VehicleLicenseResult.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
 
@@ -734,7 +734,7 @@ class VehicleLicenseResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this VehicleLicenseResult.
+        r"""Sets the text_location of this VehicleLicenseResult.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
 
@@ -745,7 +745,7 @@ class VehicleLicenseResult:
 
     @property
     def energy_type(self):
-        """Gets the energy_type of this VehicleLicenseResult.
+        r"""Gets the energy_type of this VehicleLicenseResult.
 
         能源类型。 
 
@@ -756,7 +756,7 @@ class VehicleLicenseResult:
 
     @energy_type.setter
     def energy_type(self, energy_type):
-        """Sets the energy_type of this VehicleLicenseResult.
+        r"""Sets the energy_type of this VehicleLicenseResult.
 
         能源类型。 
 
@@ -767,7 +767,7 @@ class VehicleLicenseResult:
 
     @property
     def color(self):
-        """Gets the color of this VehicleLicenseResult.
+        r"""Gets the color of this VehicleLicenseResult.
 
         车身颜色。 
 
@@ -778,7 +778,7 @@ class VehicleLicenseResult:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this VehicleLicenseResult.
+        r"""Sets the color of this VehicleLicenseResult.
 
         车身颜色。 
 
@@ -789,7 +789,7 @@ class VehicleLicenseResult:
 
     @property
     def mandatory_scrapping_date(self):
-        """Gets the mandatory_scrapping_date of this VehicleLicenseResult.
+        r"""Gets the mandatory_scrapping_date of this VehicleLicenseResult.
 
         强制报废日期。 
 
@@ -800,7 +800,7 @@ class VehicleLicenseResult:
 
     @mandatory_scrapping_date.setter
     def mandatory_scrapping_date(self, mandatory_scrapping_date):
-        """Sets the mandatory_scrapping_date of this VehicleLicenseResult.
+        r"""Sets the mandatory_scrapping_date of this VehicleLicenseResult.
 
         强制报废日期。 
 
@@ -811,7 +811,7 @@ class VehicleLicenseResult:
 
     @property
     def status(self):
-        """Gets the status of this VehicleLicenseResult.
+        r"""Gets the status of this VehicleLicenseResult.
 
         状态。 
 
@@ -822,7 +822,7 @@ class VehicleLicenseResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VehicleLicenseResult.
+        r"""Sets the status of this VehicleLicenseResult.
 
         状态。 
 
@@ -833,7 +833,7 @@ class VehicleLicenseResult:
 
     @property
     def front(self):
-        """Gets the front of this VehicleLicenseResult.
+        r"""Gets the front of this VehicleLicenseResult.
 
         :return: The front of this VehicleLicenseResult.
         :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
@@ -842,7 +842,7 @@ class VehicleLicenseResult:
 
     @front.setter
     def front(self, front):
-        """Sets the front of this VehicleLicenseResult.
+        r"""Sets the front of this VehicleLicenseResult.
 
         :param front: The front of this VehicleLicenseResult.
         :type front: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
@@ -851,7 +851,7 @@ class VehicleLicenseResult:
 
     @property
     def back(self):
-        """Gets the back of this VehicleLicenseResult.
+        r"""Gets the back of this VehicleLicenseResult.
 
         :return: The back of this VehicleLicenseResult.
         :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
@@ -860,7 +860,7 @@ class VehicleLicenseResult:
 
     @back.setter
     def back(self, back):
-        """Sets the back of this VehicleLicenseResult.
+        r"""Sets the back of this VehicleLicenseResult.
 
         :param back: The back of this VehicleLicenseResult.
         :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`

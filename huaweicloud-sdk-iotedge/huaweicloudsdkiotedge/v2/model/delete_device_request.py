@@ -27,7 +27,7 @@ class DeleteDeviceRequest:
     }
 
     def __init__(self, edge_node_id=None, device_id=None):
-        """DeleteDeviceRequest
+        r"""DeleteDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDeviceRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this DeleteDeviceRequest.
+        r"""Gets the edge_node_id of this DeleteDeviceRequest.
 
         边缘节点ID
 
@@ -59,7 +59,7 @@ class DeleteDeviceRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this DeleteDeviceRequest.
+        r"""Sets the edge_node_id of this DeleteDeviceRequest.
 
         边缘节点ID
 
@@ -70,7 +70,7 @@ class DeleteDeviceRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DeleteDeviceRequest.
+        r"""Gets the device_id of this DeleteDeviceRequest.
 
         设备ID
 
@@ -81,7 +81,7 @@ class DeleteDeviceRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DeleteDeviceRequest.
+        r"""Sets the device_id of this DeleteDeviceRequest.
 
         设备ID
 

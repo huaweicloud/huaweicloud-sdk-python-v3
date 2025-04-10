@@ -29,7 +29,7 @@ class VpcObject:
     }
 
     def __init__(self, id=None, name=None, cidr=None):
-        """VpcObject
+        r"""VpcObject
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class VpcObject:
 
     @property
     def id(self):
-        """Gets the id of this VpcObject.
+        r"""Gets the id of this VpcObject.
 
         虚拟私有云ID，如果是自动创建，填“autoCreate”
 
@@ -66,7 +66,7 @@ class VpcObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpcObject.
+        r"""Sets the id of this VpcObject.
 
         虚拟私有云ID，如果是自动创建，填“autoCreate”
 
@@ -77,7 +77,7 @@ class VpcObject:
 
     @property
     def name(self):
-        """Gets the name of this VpcObject.
+        r"""Gets the name of this VpcObject.
 
         虚拟私有云名称
 
@@ -88,7 +88,7 @@ class VpcObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcObject.
+        r"""Sets the name of this VpcObject.
 
         虚拟私有云名称
 
@@ -99,7 +99,7 @@ class VpcObject:
 
     @property
     def cidr(self):
-        """Gets the cidr of this VpcObject.
+        r"""Gets the cidr of this VpcObject.
 
         VPC的网段，默认192.168.0.0/16
 
@@ -110,7 +110,7 @@ class VpcObject:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this VpcObject.
+        r"""Sets the cidr of this VpcObject.
 
         VPC的网段，默认192.168.0.0/16
 

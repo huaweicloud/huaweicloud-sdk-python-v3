@@ -31,7 +31,7 @@ class TargetDBInfo:
     }
 
     def __init__(self, user_name=None, password=None, service_name=None, instance_id=None):
-        """TargetDBInfo
+        r"""TargetDBInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TargetDBInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TargetDBInfo.
+        r"""Gets the user_name of this TargetDBInfo.
 
         用户名。
 
@@ -71,7 +71,7 @@ class TargetDBInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TargetDBInfo.
+        r"""Sets the user_name of this TargetDBInfo.
 
         用户名。
 
@@ -82,7 +82,7 @@ class TargetDBInfo:
 
     @property
     def password(self):
-        """Gets the password of this TargetDBInfo.
+        r"""Gets the password of this TargetDBInfo.
 
         用户密码。
 
@@ -93,7 +93,7 @@ class TargetDBInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this TargetDBInfo.
+        r"""Sets the password of this TargetDBInfo.
 
         用户密码。
 
@@ -104,7 +104,7 @@ class TargetDBInfo:
 
     @property
     def service_name(self):
-        """Gets the service_name of this TargetDBInfo.
+        r"""Gets the service_name of this TargetDBInfo.
 
         service名称。
 
@@ -115,7 +115,7 @@ class TargetDBInfo:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this TargetDBInfo.
+        r"""Sets the service_name of this TargetDBInfo.
 
         service名称。
 
@@ -126,7 +126,7 @@ class TargetDBInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TargetDBInfo.
+        r"""Gets the instance_id of this TargetDBInfo.
 
         RDS数据库的实例ID。
 
@@ -137,7 +137,7 @@ class TargetDBInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TargetDBInfo.
+        r"""Sets the instance_id of this TargetDBInfo.
 
         RDS数据库的实例ID。
 

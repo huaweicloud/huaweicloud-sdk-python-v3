@@ -25,7 +25,7 @@ class CreateSecurityPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSecurityPolicyRequest
+        r"""CreateSecurityPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSecurityPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityPolicyRequest.
+        r"""Gets the body of this CreateSecurityPolicyRequest.
 
         :return: The body of this CreateSecurityPolicyRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyRequestBody`
@@ -52,7 +52,7 @@ class CreateSecurityPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityPolicyRequest.
+        r"""Sets the body of this CreateSecurityPolicyRequest.
 
         :param body: The body of this CreateSecurityPolicyRequest.
         :type body: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyRequestBody`

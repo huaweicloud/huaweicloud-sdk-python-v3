@@ -27,7 +27,7 @@ class ShowMetadataRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None):
-        """ShowMetadataRequest
+        r"""ShowMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMetadataRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this ShowMetadataRequest.
+        r"""Gets the idp_id of this ShowMetadataRequest.
 
         身份提供商ID。
 
@@ -59,7 +59,7 @@ class ShowMetadataRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this ShowMetadataRequest.
+        r"""Sets the idp_id of this ShowMetadataRequest.
 
         身份提供商ID。
 
@@ -70,7 +70,7 @@ class ShowMetadataRequest:
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this ShowMetadataRequest.
+        r"""Gets the protocol_id of this ShowMetadataRequest.
 
         协议ID。
 
@@ -81,7 +81,7 @@ class ShowMetadataRequest:
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this ShowMetadataRequest.
+        r"""Sets the protocol_id of this ShowMetadataRequest.
 
         协议ID。
 

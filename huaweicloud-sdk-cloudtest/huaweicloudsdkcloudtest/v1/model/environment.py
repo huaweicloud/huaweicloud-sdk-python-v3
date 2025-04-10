@@ -31,7 +31,7 @@ class Environment:
     }
 
     def __init__(self, environment_id=None, environment_name=None, environment_description=None, is_default=None):
-        """Environment
+        r"""Environment
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Environment:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this Environment.
+        r"""Gets the environment_id of this Environment.
 
         环境分组id
 
@@ -75,7 +75,7 @@ class Environment:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this Environment.
+        r"""Sets the environment_id of this Environment.
 
         环境分组id
 
@@ -86,7 +86,7 @@ class Environment:
 
     @property
     def environment_name(self):
-        """Gets the environment_name of this Environment.
+        r"""Gets the environment_name of this Environment.
 
         环境分组名
 
@@ -97,7 +97,7 @@ class Environment:
 
     @environment_name.setter
     def environment_name(self, environment_name):
-        """Sets the environment_name of this Environment.
+        r"""Sets the environment_name of this Environment.
 
         环境分组名
 
@@ -108,7 +108,7 @@ class Environment:
 
     @property
     def environment_description(self):
-        """Gets the environment_description of this Environment.
+        r"""Gets the environment_description of this Environment.
 
         环境分组描述
 
@@ -119,7 +119,7 @@ class Environment:
 
     @environment_description.setter
     def environment_description(self, environment_description):
-        """Sets the environment_description of this Environment.
+        r"""Sets the environment_description of this Environment.
 
         环境分组描述
 
@@ -130,7 +130,7 @@ class Environment:
 
     @property
     def is_default(self):
-        """Gets the is_default of this Environment.
+        r"""Gets the is_default of this Environment.
 
         是否是默认环境
 
@@ -141,7 +141,7 @@ class Environment:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this Environment.
+        r"""Sets the is_default of this Environment.
 
         是否是默认环境
 

@@ -25,7 +25,7 @@ class AssociateIssuesRequest:
     }
 
     def __init__(self, body=None):
-        """AssociateIssuesRequest
+        r"""AssociateIssuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AssociateIssuesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateIssuesRequest.
+        r"""Gets the body of this AssociateIssuesRequest.
 
         :return: The body of this AssociateIssuesRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequestBody`
@@ -52,7 +52,7 @@ class AssociateIssuesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateIssuesRequest.
+        r"""Sets the body of this AssociateIssuesRequest.
 
         :param body: The body of this AssociateIssuesRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequestBody`

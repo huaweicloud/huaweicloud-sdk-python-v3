@@ -25,7 +25,7 @@ class SyncIamUsersRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """SyncIamUsersRequest
+        r"""SyncIamUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SyncIamUsersRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SyncIamUsersRequest.
+        r"""Gets the cluster_id of this SyncIamUsersRequest.
 
         cluster_id
 
@@ -53,7 +53,7 @@ class SyncIamUsersRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SyncIamUsersRequest.
+        r"""Sets the cluster_id of this SyncIamUsersRequest.
 
         cluster_id
 

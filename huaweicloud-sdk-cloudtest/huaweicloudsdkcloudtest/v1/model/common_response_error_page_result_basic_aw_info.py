@@ -29,7 +29,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
     }
 
     def __init__(self, code=None, detail=None, reason=None):
-        """CommonResponseErrorPageResultBasicAWInfo
+        r"""CommonResponseErrorPageResultBasicAWInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
 
     @property
     def code(self):
-        """Gets the code of this CommonResponseErrorPageResultBasicAWInfo.
+        r"""Gets the code of this CommonResponseErrorPageResultBasicAWInfo.
 
         错误码
 
@@ -68,7 +68,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CommonResponseErrorPageResultBasicAWInfo.
+        r"""Sets the code of this CommonResponseErrorPageResultBasicAWInfo.
 
         错误码
 
@@ -79,7 +79,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
 
     @property
     def detail(self):
-        """Gets the detail of this CommonResponseErrorPageResultBasicAWInfo.
+        r"""Gets the detail of this CommonResponseErrorPageResultBasicAWInfo.
 
         :return: The detail of this CommonResponseErrorPageResultBasicAWInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PageResultBasicAWInfo`
@@ -88,7 +88,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CommonResponseErrorPageResultBasicAWInfo.
+        r"""Sets the detail of this CommonResponseErrorPageResultBasicAWInfo.
 
         :param detail: The detail of this CommonResponseErrorPageResultBasicAWInfo.
         :type detail: :class:`huaweicloudsdkcloudtest.v1.PageResultBasicAWInfo`
@@ -97,7 +97,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
 
     @property
     def reason(self):
-        """Gets the reason of this CommonResponseErrorPageResultBasicAWInfo.
+        r"""Gets the reason of this CommonResponseErrorPageResultBasicAWInfo.
 
         错误原因
 
@@ -108,7 +108,7 @@ class CommonResponseErrorPageResultBasicAWInfo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CommonResponseErrorPageResultBasicAWInfo.
+        r"""Sets the reason of this CommonResponseErrorPageResultBasicAWInfo.
 
         错误原因
 

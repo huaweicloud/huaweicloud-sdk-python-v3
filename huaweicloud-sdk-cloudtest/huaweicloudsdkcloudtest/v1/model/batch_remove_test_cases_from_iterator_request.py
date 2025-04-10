@@ -27,7 +27,7 @@ class BatchRemoveTestCasesFromIteratorRequest:
     }
 
     def __init__(self, iterator_id=None, body=None):
-        """BatchRemoveTestCasesFromIteratorRequest
+        r"""BatchRemoveTestCasesFromIteratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchRemoveTestCasesFromIteratorRequest:
 
     @property
     def iterator_id(self):
-        """Gets the iterator_id of this BatchRemoveTestCasesFromIteratorRequest.
+        r"""Gets the iterator_id of this BatchRemoveTestCasesFromIteratorRequest.
 
         迭代uri
 
@@ -60,7 +60,7 @@ class BatchRemoveTestCasesFromIteratorRequest:
 
     @iterator_id.setter
     def iterator_id(self, iterator_id):
-        """Sets the iterator_id of this BatchRemoveTestCasesFromIteratorRequest.
+        r"""Sets the iterator_id of this BatchRemoveTestCasesFromIteratorRequest.
 
         迭代uri
 
@@ -71,7 +71,7 @@ class BatchRemoveTestCasesFromIteratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRemoveTestCasesFromIteratorRequest.
+        r"""Gets the body of this BatchRemoveTestCasesFromIteratorRequest.
 
         :return: The body of this BatchRemoveTestCasesFromIteratorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CaseRemoveInfo`
@@ -80,7 +80,7 @@ class BatchRemoveTestCasesFromIteratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRemoveTestCasesFromIteratorRequest.
+        r"""Sets the body of this BatchRemoveTestCasesFromIteratorRequest.
 
         :param body: The body of this BatchRemoveTestCasesFromIteratorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CaseRemoveInfo`

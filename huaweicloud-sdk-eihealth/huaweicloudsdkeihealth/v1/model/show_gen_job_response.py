@@ -44,7 +44,7 @@ class ShowGenJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, smiles_list=None, molecule_file=None, num_trials=None, initial_dataset_size=None, binding_sites=None, weak_constraints=None, strong_constraints=None, base_model=None, models=None):
-        """ShowGenJobResponse
+        r"""ShowGenJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowGenJobResponse.
+        r"""Gets the basic_info of this ShowGenJobResponse.
 
         :return: The basic_info of this ShowGenJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -116,7 +116,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowGenJobResponse.
+        r"""Sets the basic_info of this ShowGenJobResponse.
 
         :param basic_info: The basic_info of this ShowGenJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -125,7 +125,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def smiles_list(self):
-        """Gets the smiles_list of this ShowGenJobResponse.
+        r"""Gets the smiles_list of this ShowGenJobResponse.
 
         分子表达式列表
 
@@ -136,7 +136,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @smiles_list.setter
     def smiles_list(self, smiles_list):
-        """Sets the smiles_list of this ShowGenJobResponse.
+        r"""Sets the smiles_list of this ShowGenJobResponse.
 
         分子表达式列表
 
@@ -147,7 +147,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def molecule_file(self):
-        """Gets the molecule_file of this ShowGenJobResponse.
+        r"""Gets the molecule_file of this ShowGenJobResponse.
 
         :return: The molecule_file of this ShowGenJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -156,7 +156,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @molecule_file.setter
     def molecule_file(self, molecule_file):
-        """Sets the molecule_file of this ShowGenJobResponse.
+        r"""Sets the molecule_file of this ShowGenJobResponse.
 
         :param molecule_file: The molecule_file of this ShowGenJobResponse.
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -165,7 +165,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this ShowGenJobResponse.
+        r"""Gets the num_trials of this ShowGenJobResponse.
 
         生成分子数量
 
@@ -176,7 +176,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this ShowGenJobResponse.
+        r"""Sets the num_trials of this ShowGenJobResponse.
 
         生成分子数量
 
@@ -187,7 +187,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def initial_dataset_size(self):
-        """Gets the initial_dataset_size of this ShowGenJobResponse.
+        r"""Gets the initial_dataset_size of this ShowGenJobResponse.
 
         初始化数据集的分子数目。当为-1时，表示分子数目未知
 
@@ -198,7 +198,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @initial_dataset_size.setter
     def initial_dataset_size(self, initial_dataset_size):
-        """Sets the initial_dataset_size of this ShowGenJobResponse.
+        r"""Sets the initial_dataset_size of this ShowGenJobResponse.
 
         初始化数据集的分子数目。当为-1时，表示分子数目未知
 
@@ -209,7 +209,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def binding_sites(self):
-        """Gets the binding_sites of this ShowGenJobResponse.
+        r"""Gets the binding_sites of this ShowGenJobResponse.
 
         靶点列表
 
@@ -220,7 +220,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @binding_sites.setter
     def binding_sites(self, binding_sites):
-        """Sets the binding_sites of this ShowGenJobResponse.
+        r"""Sets the binding_sites of this ShowGenJobResponse.
 
         靶点列表
 
@@ -231,7 +231,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this ShowGenJobResponse.
+        r"""Gets the weak_constraints of this ShowGenJobResponse.
 
         弱约束集合
 
@@ -242,7 +242,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this ShowGenJobResponse.
+        r"""Sets the weak_constraints of this ShowGenJobResponse.
 
         弱约束集合
 
@@ -253,7 +253,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this ShowGenJobResponse.
+        r"""Gets the strong_constraints of this ShowGenJobResponse.
 
         强约束集合
 
@@ -264,7 +264,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this ShowGenJobResponse.
+        r"""Sets the strong_constraints of this ShowGenJobResponse.
 
         强约束集合
 
@@ -275,7 +275,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def base_model(self):
-        """Gets the base_model of this ShowGenJobResponse.
+        r"""Gets the base_model of this ShowGenJobResponse.
 
         :return: The base_model of this ShowGenJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BaseModel`
@@ -284,7 +284,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @base_model.setter
     def base_model(self, base_model):
-        """Sets the base_model of this ShowGenJobResponse.
+        r"""Sets the base_model of this ShowGenJobResponse.
 
         :param base_model: The base_model of this ShowGenJobResponse.
         :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
@@ -293,7 +293,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ShowGenJobResponse.
+        r"""Gets the models of this ShowGenJobResponse.
 
         模型列表
 
@@ -304,7 +304,7 @@ class ShowGenJobResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ShowGenJobResponse.
+        r"""Sets the models of this ShowGenJobResponse.
 
         模型列表
 

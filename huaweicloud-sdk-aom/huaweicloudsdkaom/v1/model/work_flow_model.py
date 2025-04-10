@@ -27,7 +27,7 @@ class WorkFlowModel:
     }
 
     def __init__(self, en_us=None, zh_cn=None):
-        """WorkFlowModel
+        r"""WorkFlowModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkFlowModel:
 
     @property
     def en_us(self):
-        """Gets the en_us of this WorkFlowModel.
+        r"""Gets the en_us of this WorkFlowModel.
 
         英文描述
 
@@ -61,7 +61,7 @@ class WorkFlowModel:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this WorkFlowModel.
+        r"""Sets the en_us of this WorkFlowModel.
 
         英文描述
 
@@ -72,7 +72,7 @@ class WorkFlowModel:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this WorkFlowModel.
+        r"""Gets the zh_cn of this WorkFlowModel.
 
         中文描述
 
@@ -83,7 +83,7 @@ class WorkFlowModel:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this WorkFlowModel.
+        r"""Sets the zh_cn of this WorkFlowModel.
 
         中文描述
 

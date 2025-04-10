@@ -27,7 +27,7 @@ class DeleteCentralNetworkPolicyRequest:
     }
 
     def __init__(self, policy_id=None, central_network_id=None):
-        """DeleteCentralNetworkPolicyRequest
+        r"""DeleteCentralNetworkPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteCentralNetworkPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteCentralNetworkPolicyRequest.
+        r"""Gets the policy_id of this DeleteCentralNetworkPolicyRequest.
 
         网络策略ID。
 
@@ -59,7 +59,7 @@ class DeleteCentralNetworkPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteCentralNetworkPolicyRequest.
+        r"""Sets the policy_id of this DeleteCentralNetworkPolicyRequest.
 
         网络策略ID。
 
@@ -70,7 +70,7 @@ class DeleteCentralNetworkPolicyRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this DeleteCentralNetworkPolicyRequest.
+        r"""Gets the central_network_id of this DeleteCentralNetworkPolicyRequest.
 
         中心网络的ID。
 
@@ -81,7 +81,7 @@ class DeleteCentralNetworkPolicyRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this DeleteCentralNetworkPolicyRequest.
+        r"""Sets the central_network_id of this DeleteCentralNetworkPolicyRequest.
 
         中心网络的ID。
 

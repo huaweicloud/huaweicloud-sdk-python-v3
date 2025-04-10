@@ -29,7 +29,7 @@ class DependJob:
     }
 
     def __init__(self, jobs=None, depend_period=None, depend_fail_policy=None):
-        """DependJob
+        r"""DependJob
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DependJob:
 
     @property
     def jobs(self):
-        """Gets the jobs of this DependJob.
+        r"""Gets the jobs of this DependJob.
 
         依赖的作业名称列表，必须依赖已存在的作业。
 
@@ -67,7 +67,7 @@ class DependJob:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this DependJob.
+        r"""Sets the jobs of this DependJob.
 
         依赖的作业名称列表，必须依赖已存在的作业。
 
@@ -78,7 +78,7 @@ class DependJob:
 
     @property
     def depend_period(self):
-        """Gets the depend_period of this DependJob.
+        r"""Gets the depend_period of this DependJob.
 
         依赖周期： - SAME_PERIOD：依赖被依赖作业的同周期任务的执行结果。 - PRE_PERIOD：依赖被依赖作业的前一周期任务的执行结果。
 
@@ -89,7 +89,7 @@ class DependJob:
 
     @depend_period.setter
     def depend_period(self, depend_period):
-        """Sets the depend_period of this DependJob.
+        r"""Sets the depend_period of this DependJob.
 
         依赖周期： - SAME_PERIOD：依赖被依赖作业的同周期任务的执行结果。 - PRE_PERIOD：依赖被依赖作业的前一周期任务的执行结果。
 
@@ -100,7 +100,7 @@ class DependJob:
 
     @property
     def depend_fail_policy(self):
-        """Gets the depend_fail_policy of this DependJob.
+        r"""Gets the depend_fail_policy of this DependJob.
 
         依赖作业任务执行失败处理策略: - FAIL：停止作业，设置作业为失败状态。 - IGNORE：继续执行作业。 - SUSPEND： 挂起作业。
 
@@ -111,7 +111,7 @@ class DependJob:
 
     @depend_fail_policy.setter
     def depend_fail_policy(self, depend_fail_policy):
-        """Sets the depend_fail_policy of this DependJob.
+        r"""Sets the depend_fail_policy of this DependJob.
 
         依赖作业任务执行失败处理策略: - FAIL：停止作业，设置作业为失败状态。 - IGNORE：继续执行作业。 - SUSPEND： 挂起作业。
 

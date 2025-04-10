@@ -45,7 +45,7 @@ class DatabasePermissionReq:
     }
 
     def __init__(self, type=None, is_grant=None, grant_list=None, revoke_list=None, role_list=None, object_list=None, all_object=None, cascade=None, database=None, schema=None, table=None):
-        """DatabasePermissionReq
+        r"""DatabasePermissionReq
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class DatabasePermissionReq:
 
     @property
     def type(self):
-        """Gets the type of this DatabasePermissionReq.
+        r"""Gets the type of this DatabasePermissionReq.
 
         对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN | FUNCTION| SEQUENCE | NODEGROUP | ROLE]
 
@@ -119,7 +119,7 @@ class DatabasePermissionReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatabasePermissionReq.
+        r"""Sets the type of this DatabasePermissionReq.
 
         对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN | FUNCTION| SEQUENCE | NODEGROUP | ROLE]
 
@@ -130,7 +130,7 @@ class DatabasePermissionReq:
 
     @property
     def is_grant(self):
-        """Gets the is_grant of this DatabasePermissionReq.
+        r"""Gets the is_grant of this DatabasePermissionReq.
 
         是否授权操作
 
@@ -141,7 +141,7 @@ class DatabasePermissionReq:
 
     @is_grant.setter
     def is_grant(self, is_grant):
-        """Sets the is_grant of this DatabasePermissionReq.
+        r"""Sets the is_grant of this DatabasePermissionReq.
 
         是否授权操作
 
@@ -152,7 +152,7 @@ class DatabasePermissionReq:
 
     @property
     def grant_list(self):
-        """Gets the grant_list of this DatabasePermissionReq.
+        r"""Gets the grant_list of this DatabasePermissionReq.
 
         授权列表 is_grant为true时必填
 
@@ -163,7 +163,7 @@ class DatabasePermissionReq:
 
     @grant_list.setter
     def grant_list(self, grant_list):
-        """Sets the grant_list of this DatabasePermissionReq.
+        r"""Sets the grant_list of this DatabasePermissionReq.
 
         授权列表 is_grant为true时必填
 
@@ -174,7 +174,7 @@ class DatabasePermissionReq:
 
     @property
     def revoke_list(self):
-        """Gets the revoke_list of this DatabasePermissionReq.
+        r"""Gets the revoke_list of this DatabasePermissionReq.
 
         撤销权限列表 is_grant为false时必填
 
@@ -185,7 +185,7 @@ class DatabasePermissionReq:
 
     @revoke_list.setter
     def revoke_list(self, revoke_list):
-        """Sets the revoke_list of this DatabasePermissionReq.
+        r"""Sets the revoke_list of this DatabasePermissionReq.
 
         撤销权限列表 is_grant为false时必填
 
@@ -196,7 +196,7 @@ class DatabasePermissionReq:
 
     @property
     def role_list(self):
-        """Gets the role_list of this DatabasePermissionReq.
+        r"""Gets the role_list of this DatabasePermissionReq.
 
         被授权角色列表
 
@@ -207,7 +207,7 @@ class DatabasePermissionReq:
 
     @role_list.setter
     def role_list(self, role_list):
-        """Sets the role_list of this DatabasePermissionReq.
+        r"""Sets the role_list of this DatabasePermissionReq.
 
         被授权角色列表
 
@@ -218,7 +218,7 @@ class DatabasePermissionReq:
 
     @property
     def object_list(self):
-        """Gets the object_list of this DatabasePermissionReq.
+        r"""Gets the object_list of this DatabasePermissionReq.
 
         权限所属对象列表
 
@@ -229,7 +229,7 @@ class DatabasePermissionReq:
 
     @object_list.setter
     def object_list(self, object_list):
-        """Sets the object_list of this DatabasePermissionReq.
+        r"""Sets the object_list of this DatabasePermissionReq.
 
         权限所属对象列表
 
@@ -240,7 +240,7 @@ class DatabasePermissionReq:
 
     @property
     def all_object(self):
-        """Gets the all_object of this DatabasePermissionReq.
+        r"""Gets the all_object of this DatabasePermissionReq.
 
         schema下所有数据库对象权限，默认false
 
@@ -251,7 +251,7 @@ class DatabasePermissionReq:
 
     @all_object.setter
     def all_object(self, all_object):
-        """Sets the all_object of this DatabasePermissionReq.
+        r"""Sets the all_object of this DatabasePermissionReq.
 
         schema下所有数据库对象权限，默认false
 
@@ -262,7 +262,7 @@ class DatabasePermissionReq:
 
     @property
     def cascade(self):
-        """Gets the cascade of this DatabasePermissionReq.
+        r"""Gets the cascade of this DatabasePermissionReq.
 
         撤销权限是否级联撤销 默认 true
 
@@ -273,7 +273,7 @@ class DatabasePermissionReq:
 
     @cascade.setter
     def cascade(self, cascade):
-        """Sets the cascade of this DatabasePermissionReq.
+        r"""Sets the cascade of this DatabasePermissionReq.
 
         撤销权限是否级联撤销 默认 true
 
@@ -284,7 +284,7 @@ class DatabasePermissionReq:
 
     @property
     def database(self):
-        """Gets the database of this DatabasePermissionReq.
+        r"""Gets the database of this DatabasePermissionReq.
 
         数据库名称
 
@@ -295,7 +295,7 @@ class DatabasePermissionReq:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DatabasePermissionReq.
+        r"""Sets the database of this DatabasePermissionReq.
 
         数据库名称
 
@@ -306,7 +306,7 @@ class DatabasePermissionReq:
 
     @property
     def schema(self):
-        """Gets the schema of this DatabasePermissionReq.
+        r"""Gets the schema of this DatabasePermissionReq.
 
         模式名称
 
@@ -317,7 +317,7 @@ class DatabasePermissionReq:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this DatabasePermissionReq.
+        r"""Sets the schema of this DatabasePermissionReq.
 
         模式名称
 
@@ -328,7 +328,7 @@ class DatabasePermissionReq:
 
     @property
     def table(self):
-        """Gets the table of this DatabasePermissionReq.
+        r"""Gets the table of this DatabasePermissionReq.
 
         表名
 
@@ -339,7 +339,7 @@ class DatabasePermissionReq:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this DatabasePermissionReq.
+        r"""Sets the table of this DatabasePermissionReq.
 
         表名
 

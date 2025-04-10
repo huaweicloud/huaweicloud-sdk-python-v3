@@ -25,7 +25,7 @@ class MetadataInstall:
     }
 
     def __init__(self, user_data=None):
-        """MetadataInstall
+        r"""MetadataInstall
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MetadataInstall:
 
     @property
     def user_data(self):
-        """Gets the user_data of this MetadataInstall.
+        r"""Gets the user_data of this MetadataInstall.
 
         重装裸金属服务器过程中注入Linux镜像root密码，用户自定义初始化密码。注：修改密码脚本需经Base64编码。建议密码复杂度如下：长度为8-26位。密码至少必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（!@$%^-_=+[{}]:,./?）中的三种
 
@@ -54,7 +54,7 @@ class MetadataInstall:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this MetadataInstall.
+        r"""Sets the user_data of this MetadataInstall.
 
         重装裸金属服务器过程中注入Linux镜像root密码，用户自定义初始化密码。注：修改密码脚本需经Base64编码。建议密码复杂度如下：长度为8-26位。密码至少必须包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（!@$%^-_=+[{}]:,./?）中的三种
 

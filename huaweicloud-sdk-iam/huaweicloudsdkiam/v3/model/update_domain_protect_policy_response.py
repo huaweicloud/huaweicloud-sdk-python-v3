@@ -26,7 +26,7 @@ class UpdateDomainProtectPolicyResponse(SdkResponse):
     }
 
     def __init__(self, protect_policy=None):
-        """UpdateDomainProtectPolicyResponse
+        r"""UpdateDomainProtectPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDomainProtectPolicyResponse(SdkResponse):
 
     @property
     def protect_policy(self):
-        """Gets the protect_policy of this UpdateDomainProtectPolicyResponse.
+        r"""Gets the protect_policy of this UpdateDomainProtectPolicyResponse.
 
         :return: The protect_policy of this UpdateDomainProtectPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyResponseBodyProtectPolicy`
@@ -53,7 +53,7 @@ class UpdateDomainProtectPolicyResponse(SdkResponse):
 
     @protect_policy.setter
     def protect_policy(self, protect_policy):
-        """Sets the protect_policy of this UpdateDomainProtectPolicyResponse.
+        r"""Sets the protect_policy of this UpdateDomainProtectPolicyResponse.
 
         :param protect_policy: The protect_policy of this UpdateDomainProtectPolicyResponse.
         :type protect_policy: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyResponseBodyProtectPolicy`

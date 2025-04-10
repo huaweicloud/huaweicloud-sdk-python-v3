@@ -52,7 +52,7 @@ class ShowWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, version=None, summary=None, description=None, labels=None, timeout=None, output_dir=None, tasks=None, app_snapshot_sign=None, create_time=None, update_time=None, source_project_name=None, source_resource_id=None):
-        """ShowWorkflowResponse
+        r"""ShowWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowWorkflowResponse.
+        r"""Gets the id of this ShowWorkflowResponse.
 
         流程id
 
@@ -146,7 +146,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowWorkflowResponse.
+        r"""Sets the id of this ShowWorkflowResponse.
 
         流程id
 
@@ -157,7 +157,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowWorkflowResponse.
+        r"""Gets the name of this ShowWorkflowResponse.
 
         流程名称
 
@@ -168,7 +168,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowWorkflowResponse.
+        r"""Sets the name of this ShowWorkflowResponse.
 
         流程名称
 
@@ -179,7 +179,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowWorkflowResponse.
+        r"""Gets the version of this ShowWorkflowResponse.
 
         流程版本
 
@@ -190,7 +190,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowWorkflowResponse.
+        r"""Sets the version of this ShowWorkflowResponse.
 
         流程版本
 
@@ -201,7 +201,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this ShowWorkflowResponse.
+        r"""Gets the summary of this ShowWorkflowResponse.
 
         流程简述
 
@@ -212,7 +212,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ShowWorkflowResponse.
+        r"""Sets the summary of this ShowWorkflowResponse.
 
         流程简述
 
@@ -223,7 +223,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowWorkflowResponse.
+        r"""Gets the description of this ShowWorkflowResponse.
 
         流程描述
 
@@ -234,7 +234,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowWorkflowResponse.
+        r"""Sets the description of this ShowWorkflowResponse.
 
         流程描述
 
@@ -245,7 +245,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowWorkflowResponse.
+        r"""Gets the labels of this ShowWorkflowResponse.
 
         流程标签
 
@@ -256,7 +256,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowWorkflowResponse.
+        r"""Sets the labels of this ShowWorkflowResponse.
 
         流程标签
 
@@ -267,7 +267,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this ShowWorkflowResponse.
+        r"""Gets the timeout of this ShowWorkflowResponse.
 
         超时时间
 
@@ -278,7 +278,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ShowWorkflowResponse.
+        r"""Sets the timeout of this ShowWorkflowResponse.
 
         超时时间
 
@@ -289,7 +289,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this ShowWorkflowResponse.
+        r"""Gets the output_dir of this ShowWorkflowResponse.
 
         流程的输出路径
 
@@ -300,7 +300,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this ShowWorkflowResponse.
+        r"""Sets the output_dir of this ShowWorkflowResponse.
 
         流程的输出路径
 
@@ -311,7 +311,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowWorkflowResponse.
+        r"""Gets the tasks of this ShowWorkflowResponse.
 
         流程的子任务
 
@@ -322,7 +322,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowWorkflowResponse.
+        r"""Sets the tasks of this ShowWorkflowResponse.
 
         流程的子任务
 
@@ -333,7 +333,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def app_snapshot_sign(self):
-        """Gets the app_snapshot_sign of this ShowWorkflowResponse.
+        r"""Gets the app_snapshot_sign of this ShowWorkflowResponse.
 
         流程创建时刻的应用快照，当query填workflow_snapshot_sign有值;K为appId,V为sign
 
@@ -344,7 +344,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @app_snapshot_sign.setter
     def app_snapshot_sign(self, app_snapshot_sign):
-        """Sets the app_snapshot_sign of this ShowWorkflowResponse.
+        r"""Sets the app_snapshot_sign of this ShowWorkflowResponse.
 
         流程创建时刻的应用快照，当query填workflow_snapshot_sign有值;K为appId,V为sign
 
@@ -355,7 +355,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowWorkflowResponse.
+        r"""Gets the create_time of this ShowWorkflowResponse.
 
         流程的创建时间
 
@@ -366,7 +366,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowWorkflowResponse.
+        r"""Sets the create_time of this ShowWorkflowResponse.
 
         流程的创建时间
 
@@ -377,7 +377,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowWorkflowResponse.
+        r"""Gets the update_time of this ShowWorkflowResponse.
 
         流程的更新时间
 
@@ -388,7 +388,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowWorkflowResponse.
+        r"""Sets the update_time of this ShowWorkflowResponse.
 
         流程的更新时间
 
@@ -399,7 +399,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ShowWorkflowResponse.
+        r"""Gets the source_project_name of this ShowWorkflowResponse.
 
         源项目名称
 
@@ -410,7 +410,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ShowWorkflowResponse.
+        r"""Sets the source_project_name of this ShowWorkflowResponse.
 
         源项目名称
 
@@ -421,7 +421,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @property
     def source_resource_id(self):
-        """Gets the source_resource_id of this ShowWorkflowResponse.
+        r"""Gets the source_resource_id of this ShowWorkflowResponse.
 
         源资源id
 
@@ -432,7 +432,7 @@ class ShowWorkflowResponse(SdkResponse):
 
     @source_resource_id.setter
     def source_resource_id(self, source_resource_id):
-        """Sets the source_resource_id of this ShowWorkflowResponse.
+        r"""Sets the source_resource_id of this ShowWorkflowResponse.
 
         源资源id
 

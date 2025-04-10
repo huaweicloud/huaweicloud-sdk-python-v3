@@ -33,7 +33,7 @@ class ListImageServersRequest:
     }
 
     def __init__(self, offset=None, limit=None, server_name=None, server_id=None, enterprise_project_id=None):
-        """ListImageServersRequest
+        r"""ListImageServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListImageServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImageServersRequest.
+        r"""Gets the offset of this ListImageServersRequest.
 
         查询的偏移量。
 
@@ -82,7 +82,7 @@ class ListImageServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImageServersRequest.
+        r"""Sets the offset of this ListImageServersRequest.
 
         查询的偏移量。
 
@@ -93,7 +93,7 @@ class ListImageServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImageServersRequest.
+        r"""Gets the limit of this ListImageServersRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -104,7 +104,7 @@ class ListImageServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImageServersRequest.
+        r"""Sets the limit of this ListImageServersRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -115,7 +115,7 @@ class ListImageServersRequest:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ListImageServersRequest.
+        r"""Gets the server_name of this ListImageServersRequest.
 
         镜像实例名称，支持部分匹配。
 
@@ -126,7 +126,7 @@ class ListImageServersRequest:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ListImageServersRequest.
+        r"""Sets the server_name of this ListImageServersRequest.
 
         镜像实例名称，支持部分匹配。
 
@@ -137,7 +137,7 @@ class ListImageServersRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListImageServersRequest.
+        r"""Gets the server_id of this ListImageServersRequest.
 
         镜像实例唯一标识。
 
@@ -148,7 +148,7 @@ class ListImageServersRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListImageServersRequest.
+        r"""Sets the server_id of this ListImageServersRequest.
 
         镜像实例唯一标识。
 
@@ -159,7 +159,7 @@ class ListImageServersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListImageServersRequest.
+        r"""Gets the enterprise_project_id of this ListImageServersRequest.
 
         企业项目ID(字段为空或者0表示使用默认default企业项目)。
 
@@ -170,7 +170,7 @@ class ListImageServersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListImageServersRequest.
+        r"""Sets the enterprise_project_id of this ListImageServersRequest.
 
         企业项目ID(字段为空或者0表示使用默认default企业项目)。
 

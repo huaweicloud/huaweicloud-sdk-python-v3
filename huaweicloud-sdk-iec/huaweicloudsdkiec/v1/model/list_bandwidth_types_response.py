@@ -28,7 +28,7 @@ class ListBandwidthTypesResponse(SdkResponse):
     }
 
     def __init__(self, share_bandwidth_types=None, count=None):
-        """ListBandwidthTypesResponse
+        r"""ListBandwidthTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBandwidthTypesResponse(SdkResponse):
 
     @property
     def share_bandwidth_types(self):
-        """Gets the share_bandwidth_types of this ListBandwidthTypesResponse.
+        r"""Gets the share_bandwidth_types of this ListBandwidthTypesResponse.
 
         共享带宽类型列表对象。
 
@@ -62,7 +62,7 @@ class ListBandwidthTypesResponse(SdkResponse):
 
     @share_bandwidth_types.setter
     def share_bandwidth_types(self, share_bandwidth_types):
-        """Sets the share_bandwidth_types of this ListBandwidthTypesResponse.
+        r"""Sets the share_bandwidth_types of this ListBandwidthTypesResponse.
 
         共享带宽类型列表对象。
 
@@ -73,7 +73,7 @@ class ListBandwidthTypesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBandwidthTypesResponse.
+        r"""Gets the count of this ListBandwidthTypesResponse.
 
         :return: The count of this ListBandwidthTypesResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class ListBandwidthTypesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBandwidthTypesResponse.
+        r"""Sets the count of this ListBandwidthTypesResponse.
 
         :param count: The count of this ListBandwidthTypesResponse.
         :type count: int

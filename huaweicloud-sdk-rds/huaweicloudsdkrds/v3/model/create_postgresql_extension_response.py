@@ -26,7 +26,7 @@ class CreatePostgresqlExtensionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreatePostgresqlExtensionResponse
+        r"""CreatePostgresqlExtensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePostgresqlExtensionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreatePostgresqlExtensionResponse.
+        r"""Gets the body of this CreatePostgresqlExtensionResponse.
 
         :return: The body of this CreatePostgresqlExtensionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreatePostgresqlExtensionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostgresqlExtensionResponse.
+        r"""Sets the body of this CreatePostgresqlExtensionResponse.
 
         :param body: The body of this CreatePostgresqlExtensionResponse.
         :type body: str

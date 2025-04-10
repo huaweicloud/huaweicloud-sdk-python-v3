@@ -27,7 +27,7 @@ class CheckSecurityDataClassificationCombineRuleRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CheckSecurityDataClassificationCombineRuleRequest
+        r"""CheckSecurityDataClassificationCombineRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CheckSecurityDataClassificationCombineRuleRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CheckSecurityDataClassificationCombineRuleRequest.
+        r"""Gets the workspace of this CheckSecurityDataClassificationCombineRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CheckSecurityDataClassificationCombineRuleRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CheckSecurityDataClassificationCombineRuleRequest.
+        r"""Sets the workspace of this CheckSecurityDataClassificationCombineRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CheckSecurityDataClassificationCombineRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckSecurityDataClassificationCombineRuleRequest.
+        r"""Gets the body of this CheckSecurityDataClassificationCombineRuleRequest.
 
         :return: The body of this CheckSecurityDataClassificationCombineRuleRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationCombineRuleCheckDTO`
@@ -80,7 +80,7 @@ class CheckSecurityDataClassificationCombineRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckSecurityDataClassificationCombineRuleRequest.
+        r"""Sets the body of this CheckSecurityDataClassificationCombineRuleRequest.
 
         :param body: The body of this CheckSecurityDataClassificationCombineRuleRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationCombineRuleCheckDTO`

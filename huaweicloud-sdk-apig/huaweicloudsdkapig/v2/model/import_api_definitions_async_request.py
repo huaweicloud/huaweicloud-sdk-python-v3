@@ -27,7 +27,7 @@ class ImportApiDefinitionsAsyncRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ImportApiDefinitionsAsyncRequest
+        r"""ImportApiDefinitionsAsyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportApiDefinitionsAsyncRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ImportApiDefinitionsAsyncRequest.
+        r"""Gets the instance_id of this ImportApiDefinitionsAsyncRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class ImportApiDefinitionsAsyncRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ImportApiDefinitionsAsyncRequest.
+        r"""Sets the instance_id of this ImportApiDefinitionsAsyncRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class ImportApiDefinitionsAsyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportApiDefinitionsAsyncRequest.
+        r"""Gets the body of this ImportApiDefinitionsAsyncRequest.
 
         :return: The body of this ImportApiDefinitionsAsyncRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsAsyncRequestBody`
@@ -80,7 +80,7 @@ class ImportApiDefinitionsAsyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportApiDefinitionsAsyncRequest.
+        r"""Sets the body of this ImportApiDefinitionsAsyncRequest.
 
         :param body: The body of this ImportApiDefinitionsAsyncRequest.
         :type body: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsAsyncRequestBody`

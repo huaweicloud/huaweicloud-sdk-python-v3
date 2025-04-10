@@ -26,7 +26,7 @@ class ShowPrivateipResponse(SdkResponse):
     }
 
     def __init__(self, privateip=None):
-        """ShowPrivateipResponse
+        r"""ShowPrivateipResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPrivateipResponse(SdkResponse):
 
     @property
     def privateip(self):
-        """Gets the privateip of this ShowPrivateipResponse.
+        r"""Gets the privateip of this ShowPrivateipResponse.
 
         :return: The privateip of this ShowPrivateipResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.Privateip`
@@ -53,7 +53,7 @@ class ShowPrivateipResponse(SdkResponse):
 
     @privateip.setter
     def privateip(self, privateip):
-        """Sets the privateip of this ShowPrivateipResponse.
+        r"""Sets the privateip of this ShowPrivateipResponse.
 
         :param privateip: The privateip of this ShowPrivateipResponse.
         :type privateip: :class:`huaweicloudsdkvpc.v2.Privateip`

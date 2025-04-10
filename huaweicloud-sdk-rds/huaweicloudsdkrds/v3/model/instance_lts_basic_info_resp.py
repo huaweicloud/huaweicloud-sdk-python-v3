@@ -39,7 +39,7 @@ class InstanceLtsBasicInfoResp:
     }
 
     def __init__(self, id=None, name=None, engine_name=None, engine_version=None, engine_category=None, status=None, enterprise_project_id=None, actions=None):
-        """InstanceLtsBasicInfoResp
+        r"""InstanceLtsBasicInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def id(self):
-        """Gets the id of this InstanceLtsBasicInfoResp.
+        r"""Gets the id of this InstanceLtsBasicInfoResp.
 
         实例id
 
@@ -103,7 +103,7 @@ class InstanceLtsBasicInfoResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceLtsBasicInfoResp.
+        r"""Sets the id of this InstanceLtsBasicInfoResp.
 
         实例id
 
@@ -114,7 +114,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def name(self):
-        """Gets the name of this InstanceLtsBasicInfoResp.
+        r"""Gets the name of this InstanceLtsBasicInfoResp.
 
         实例名称
 
@@ -125,7 +125,7 @@ class InstanceLtsBasicInfoResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceLtsBasicInfoResp.
+        r"""Sets the name of this InstanceLtsBasicInfoResp.
 
         实例名称
 
@@ -136,7 +136,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this InstanceLtsBasicInfoResp.
+        r"""Gets the engine_name of this InstanceLtsBasicInfoResp.
 
         引擎名
 
@@ -147,7 +147,7 @@ class InstanceLtsBasicInfoResp:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this InstanceLtsBasicInfoResp.
+        r"""Sets the engine_name of this InstanceLtsBasicInfoResp.
 
         引擎名
 
@@ -158,7 +158,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this InstanceLtsBasicInfoResp.
+        r"""Gets the engine_version of this InstanceLtsBasicInfoResp.
 
         引擎版本
 
@@ -169,7 +169,7 @@ class InstanceLtsBasicInfoResp:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this InstanceLtsBasicInfoResp.
+        r"""Sets the engine_version of this InstanceLtsBasicInfoResp.
 
         引擎版本
 
@@ -180,7 +180,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def engine_category(self):
-        """Gets the engine_category of this InstanceLtsBasicInfoResp.
+        r"""Gets the engine_category of this InstanceLtsBasicInfoResp.
 
         引擎分类
 
@@ -191,7 +191,7 @@ class InstanceLtsBasicInfoResp:
 
     @engine_category.setter
     def engine_category(self, engine_category):
-        """Sets the engine_category of this InstanceLtsBasicInfoResp.
+        r"""Sets the engine_category of this InstanceLtsBasicInfoResp.
 
         引擎分类
 
@@ -202,7 +202,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def status(self):
-        """Gets the status of this InstanceLtsBasicInfoResp.
+        r"""Gets the status of this InstanceLtsBasicInfoResp.
 
         实例状态
 
@@ -213,7 +213,7 @@ class InstanceLtsBasicInfoResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceLtsBasicInfoResp.
+        r"""Sets the status of this InstanceLtsBasicInfoResp.
 
         实例状态
 
@@ -224,7 +224,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceLtsBasicInfoResp.
+        r"""Gets the enterprise_project_id of this InstanceLtsBasicInfoResp.
 
         企业项目id
 
@@ -235,7 +235,7 @@ class InstanceLtsBasicInfoResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceLtsBasicInfoResp.
+        r"""Sets the enterprise_project_id of this InstanceLtsBasicInfoResp.
 
         企业项目id
 
@@ -246,7 +246,7 @@ class InstanceLtsBasicInfoResp:
 
     @property
     def actions(self):
-        """Gets the actions of this InstanceLtsBasicInfoResp.
+        r"""Gets the actions of this InstanceLtsBasicInfoResp.
 
         实例进行中的任务
 
@@ -257,7 +257,7 @@ class InstanceLtsBasicInfoResp:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this InstanceLtsBasicInfoResp.
+        r"""Sets the actions of this InstanceLtsBasicInfoResp.
 
         实例进行中的任务
 

@@ -27,7 +27,7 @@ class CopyJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CopyJobRequest
+        r"""CopyJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CopyJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CopyJobRequest.
+        r"""Gets the x_language of this CopyJobRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class CopyJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CopyJobRequest.
+        r"""Sets the x_language of this CopyJobRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class CopyJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyJobRequest.
+        r"""Gets the body of this CopyJobRequest.
 
         :return: The body of this CopyJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloneJobReq`
@@ -81,7 +81,7 @@ class CopyJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyJobRequest.
+        r"""Sets the body of this CopyJobRequest.
 
         :param body: The body of this CopyJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.CloneJobReq`

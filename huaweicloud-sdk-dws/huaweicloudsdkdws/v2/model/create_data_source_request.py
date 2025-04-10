@@ -27,7 +27,7 @@ class CreateDataSourceRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateDataSourceRequest
+        r"""CreateDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDataSourceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateDataSourceRequest.
+        r"""Gets the cluster_id of this CreateDataSourceRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class CreateDataSourceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateDataSourceRequest.
+        r"""Sets the cluster_id of this CreateDataSourceRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class CreateDataSourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDataSourceRequest.
+        r"""Gets the body of this CreateDataSourceRequest.
 
         :return: The body of this CreateDataSourceRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ExtDataSourceReq`
@@ -80,7 +80,7 @@ class CreateDataSourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDataSourceRequest.
+        r"""Sets the body of this CreateDataSourceRequest.
 
         :param body: The body of this CreateDataSourceRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ExtDataSourceReq`

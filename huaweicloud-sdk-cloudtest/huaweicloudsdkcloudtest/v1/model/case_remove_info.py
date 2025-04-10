@@ -31,7 +31,7 @@ class CaseRemoveInfo:
     }
 
     def __init__(self, project_uuid=None, iterator_uri=None, remove_associate_issue=None, case_list=None):
-        """CaseRemoveInfo
+        r"""CaseRemoveInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CaseRemoveInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this CaseRemoveInfo.
+        r"""Gets the project_uuid of this CaseRemoveInfo.
 
         项目id
 
@@ -75,7 +75,7 @@ class CaseRemoveInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this CaseRemoveInfo.
+        r"""Sets the project_uuid of this CaseRemoveInfo.
 
         项目id
 
@@ -86,7 +86,7 @@ class CaseRemoveInfo:
 
     @property
     def iterator_uri(self):
-        """Gets the iterator_uri of this CaseRemoveInfo.
+        r"""Gets the iterator_uri of this CaseRemoveInfo.
 
         迭代Uri
 
@@ -97,7 +97,7 @@ class CaseRemoveInfo:
 
     @iterator_uri.setter
     def iterator_uri(self, iterator_uri):
-        """Sets the iterator_uri of this CaseRemoveInfo.
+        r"""Sets the iterator_uri of this CaseRemoveInfo.
 
         迭代Uri
 
@@ -108,7 +108,7 @@ class CaseRemoveInfo:
 
     @property
     def remove_associate_issue(self):
-        """Gets the remove_associate_issue of this CaseRemoveInfo.
+        r"""Gets the remove_associate_issue of this CaseRemoveInfo.
 
         是否移除关联的issue
 
@@ -119,7 +119,7 @@ class CaseRemoveInfo:
 
     @remove_associate_issue.setter
     def remove_associate_issue(self, remove_associate_issue):
-        """Sets the remove_associate_issue of this CaseRemoveInfo.
+        r"""Sets the remove_associate_issue of this CaseRemoveInfo.
 
         是否移除关联的issue
 
@@ -130,7 +130,7 @@ class CaseRemoveInfo:
 
     @property
     def case_list(self):
-        """Gets the case_list of this CaseRemoveInfo.
+        r"""Gets the case_list of this CaseRemoveInfo.
 
         用例列表信息
 
@@ -141,7 +141,7 @@ class CaseRemoveInfo:
 
     @case_list.setter
     def case_list(self, case_list):
-        """Sets the case_list of this CaseRemoveInfo.
+        r"""Sets the case_list of this CaseRemoveInfo.
 
         用例列表信息
 

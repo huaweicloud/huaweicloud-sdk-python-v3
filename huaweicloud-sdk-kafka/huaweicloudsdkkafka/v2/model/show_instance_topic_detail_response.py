@@ -30,7 +30,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     }
 
     def __init__(self, topic=None, partitions=None, group_subscribed=None):
-        """ShowInstanceTopicDetailResponse
+        r"""ShowInstanceTopicDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this ShowInstanceTopicDetailResponse.
+        r"""Gets the topic of this ShowInstanceTopicDetailResponse.
 
         topic名称。
 
@@ -69,7 +69,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowInstanceTopicDetailResponse.
+        r"""Sets the topic of this ShowInstanceTopicDetailResponse.
 
         topic名称。
 
@@ -80,7 +80,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
     @property
     def partitions(self):
-        """Gets the partitions of this ShowInstanceTopicDetailResponse.
+        r"""Gets the partitions of this ShowInstanceTopicDetailResponse.
 
         分区列表。
 
@@ -91,7 +91,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ShowInstanceTopicDetailResponse.
+        r"""Sets the partitions of this ShowInstanceTopicDetailResponse.
 
         分区列表。
 
@@ -102,7 +102,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
     @property
     def group_subscribed(self):
-        """Gets the group_subscribed of this ShowInstanceTopicDetailResponse.
+        r"""Gets the group_subscribed of this ShowInstanceTopicDetailResponse.
 
         订阅该topic的消费组名称列表。
 
@@ -113,7 +113,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
     @group_subscribed.setter
     def group_subscribed(self, group_subscribed):
-        """Sets the group_subscribed of this ShowInstanceTopicDetailResponse.
+        r"""Sets the group_subscribed of this ShowInstanceTopicDetailResponse.
 
         订阅该topic的消费组名称列表。
 

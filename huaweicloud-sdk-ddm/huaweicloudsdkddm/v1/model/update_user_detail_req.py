@@ -29,7 +29,7 @@ class UpdateUserDetailReq:
     }
 
     def __init__(self, base_authority=None, description=None, databases=None):
-        """UpdateUserDetailReq
+        r"""UpdateUserDetailReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateUserDetailReq:
 
     @property
     def base_authority(self):
-        """Gets the base_authority of this UpdateUserDetailReq.
+        r"""Gets the base_authority of this UpdateUserDetailReq.
 
         DDM实例帐号的基础权限，默认值为原DDM帐号权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
@@ -68,7 +68,7 @@ class UpdateUserDetailReq:
 
     @base_authority.setter
     def base_authority(self, base_authority):
-        """Sets the base_authority of this UpdateUserDetailReq.
+        r"""Sets the base_authority of this UpdateUserDetailReq.
 
         DDM实例帐号的基础权限，默认值为原DDM帐号权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
@@ -79,7 +79,7 @@ class UpdateUserDetailReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateUserDetailReq.
+        r"""Gets the description of this UpdateUserDetailReq.
 
         DDM实例帐号的描述信息，长度不能超过256个字符。  默认值为空。
 
@@ -90,7 +90,7 @@ class UpdateUserDetailReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateUserDetailReq.
+        r"""Sets the description of this UpdateUserDetailReq.
 
         DDM实例帐号的描述信息，长度不能超过256个字符。  默认值为空。
 
@@ -101,7 +101,7 @@ class UpdateUserDetailReq:
 
     @property
     def databases(self):
-        """Gets the databases of this UpdateUserDetailReq.
+        r"""Gets the databases of this UpdateUserDetailReq.
 
         DDM实例帐号相关信息的集合。
 
@@ -112,7 +112,7 @@ class UpdateUserDetailReq:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this UpdateUserDetailReq.
+        r"""Sets the databases of this UpdateUserDetailReq.
 
         DDM实例帐号相关信息的集合。
 

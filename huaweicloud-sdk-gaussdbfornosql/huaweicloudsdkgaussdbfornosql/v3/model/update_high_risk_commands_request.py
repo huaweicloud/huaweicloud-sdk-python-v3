@@ -27,7 +27,7 @@ class UpdateHighRiskCommandsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateHighRiskCommandsRequest
+        r"""UpdateHighRiskCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHighRiskCommandsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateHighRiskCommandsRequest.
+        r"""Gets the instance_id of this UpdateHighRiskCommandsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateHighRiskCommandsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateHighRiskCommandsRequest.
+        r"""Sets the instance_id of this UpdateHighRiskCommandsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateHighRiskCommandsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHighRiskCommandsRequest.
+        r"""Gets the body of this UpdateHighRiskCommandsRequest.
 
         :return: The body of this UpdateHighRiskCommandsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RenameHighRiskCommandsRequest`
@@ -80,7 +80,7 @@ class UpdateHighRiskCommandsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHighRiskCommandsRequest.
+        r"""Sets the body of this UpdateHighRiskCommandsRequest.
 
         :param body: The body of this UpdateHighRiskCommandsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RenameHighRiskCommandsRequest`

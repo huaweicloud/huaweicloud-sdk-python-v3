@@ -24,7 +24,7 @@ class DeleteDomainMappingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDomainMappingResponse
+        r"""DeleteDomainMappingResponse
 
         The model defined in huaweicloud sdk
 

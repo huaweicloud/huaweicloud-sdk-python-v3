@@ -25,7 +25,7 @@ class ServerOsSchedulerHints:
     }
 
     def __init__(self, group=None):
-        """ServerOsSchedulerHints
+        r"""ServerOsSchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ServerOsSchedulerHints:
 
     @property
     def group(self):
-        """Gets the group of this ServerOsSchedulerHints.
+        r"""Gets the group of this ServerOsSchedulerHints.
 
         反亲和性组信息。  UUID格式。
 
@@ -54,7 +54,7 @@ class ServerOsSchedulerHints:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ServerOsSchedulerHints.
+        r"""Sets the group of this ServerOsSchedulerHints.
 
         反亲和性组信息。  UUID格式。
 

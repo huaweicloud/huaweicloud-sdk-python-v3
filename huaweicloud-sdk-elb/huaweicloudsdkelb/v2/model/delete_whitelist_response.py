@@ -24,7 +24,7 @@ class DeleteWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteWhitelistResponse
+        r"""DeleteWhitelistResponse
 
         The model defined in huaweicloud sdk
 

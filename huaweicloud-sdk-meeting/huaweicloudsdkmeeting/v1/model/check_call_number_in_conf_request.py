@@ -25,7 +25,7 @@ class CheckCallNumberInConfRequest:
     }
 
     def __init__(self, call_number=None):
-        """CheckCallNumberInConfRequest
+        r"""CheckCallNumberInConfRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckCallNumberInConfRequest:
 
     @property
     def call_number(self):
-        """Gets the call_number of this CheckCallNumberInConfRequest.
+        r"""Gets the call_number of this CheckCallNumberInConfRequest.
 
         呼叫号码
 
@@ -53,7 +53,7 @@ class CheckCallNumberInConfRequest:
 
     @call_number.setter
     def call_number(self, call_number):
-        """Sets the call_number of this CheckCallNumberInConfRequest.
+        r"""Sets the call_number of this CheckCallNumberInConfRequest.
 
         呼叫号码
 

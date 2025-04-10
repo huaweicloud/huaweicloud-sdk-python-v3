@@ -29,7 +29,7 @@ class ResetAuthenticationRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, body=None):
-        """ResetAuthenticationRequest
+        r"""ResetAuthenticationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetAuthenticationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetAuthenticationRequest.
+        r"""Gets the instance_id of this ResetAuthenticationRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ResetAuthenticationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetAuthenticationRequest.
+        r"""Sets the instance_id of this ResetAuthenticationRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ResetAuthenticationRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ResetAuthenticationRequest.
+        r"""Gets the device_id of this ResetAuthenticationRequest.
 
         设备ID
 
@@ -88,7 +88,7 @@ class ResetAuthenticationRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ResetAuthenticationRequest.
+        r"""Sets the device_id of this ResetAuthenticationRequest.
 
         设备ID
 
@@ -99,7 +99,7 @@ class ResetAuthenticationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetAuthenticationRequest.
+        r"""Gets the body of this ResetAuthenticationRequest.
 
         :return: The body of this ResetAuthenticationRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequestBody`
@@ -108,7 +108,7 @@ class ResetAuthenticationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetAuthenticationRequest.
+        r"""Sets the body of this ResetAuthenticationRequest.
 
         :param body: The body of this ResetAuthenticationRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequestBody`

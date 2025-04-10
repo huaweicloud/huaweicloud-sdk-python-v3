@@ -31,7 +31,7 @@ class BatchInviteMembersToChannelRequestBody:
     }
 
     def __init__(self, bcs_id=None, channel_name=None, invitor_username=None, invited_userinfo=None):
-        """BatchInviteMembersToChannelRequestBody
+        r"""BatchInviteMembersToChannelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @property
     def bcs_id(self):
-        """Gets the bcs_id of this BatchInviteMembersToChannelRequestBody.
+        r"""Gets the bcs_id of this BatchInviteMembersToChannelRequestBody.
 
         发出邀请的服务实例ID
 
@@ -72,7 +72,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @bcs_id.setter
     def bcs_id(self, bcs_id):
-        """Sets the bcs_id of this BatchInviteMembersToChannelRequestBody.
+        r"""Sets the bcs_id of this BatchInviteMembersToChannelRequestBody.
 
         发出邀请的服务实例ID
 
@@ -83,7 +83,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this BatchInviteMembersToChannelRequestBody.
+        r"""Gets the channel_name of this BatchInviteMembersToChannelRequestBody.
 
         邀请加入的通道名
 
@@ -94,7 +94,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this BatchInviteMembersToChannelRequestBody.
+        r"""Sets the channel_name of this BatchInviteMembersToChannelRequestBody.
 
         邀请加入的通道名
 
@@ -105,7 +105,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @property
     def invitor_username(self):
-        """Gets the invitor_username of this BatchInviteMembersToChannelRequestBody.
+        r"""Gets the invitor_username of this BatchInviteMembersToChannelRequestBody.
 
         发出邀请的租户名
 
@@ -116,7 +116,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @invitor_username.setter
     def invitor_username(self, invitor_username):
-        """Sets the invitor_username of this BatchInviteMembersToChannelRequestBody.
+        r"""Sets the invitor_username of this BatchInviteMembersToChannelRequestBody.
 
         发出邀请的租户名
 
@@ -127,7 +127,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @property
     def invited_userinfo(self):
-        """Gets the invited_userinfo of this BatchInviteMembersToChannelRequestBody.
+        r"""Gets the invited_userinfo of this BatchInviteMembersToChannelRequestBody.
 
         被邀请的用户列表
 
@@ -138,7 +138,7 @@ class BatchInviteMembersToChannelRequestBody:
 
     @invited_userinfo.setter
     def invited_userinfo(self, invited_userinfo):
-        """Sets the invited_userinfo of this BatchInviteMembersToChannelRequestBody.
+        r"""Sets the invited_userinfo of this BatchInviteMembersToChannelRequestBody.
 
         被邀请的用户列表
 

@@ -49,7 +49,7 @@ class ListReplicationJobsRequest:
     }
 
     def __init__(self, x_language=None, name=None, status=None, dbs_instance_ids=None, description=None, create_at=None, completed_at=None, enterprise_project_id=None, tags=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListReplicationJobsRequest
+        r"""ListReplicationJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListReplicationJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListReplicationJobsRequest.
+        r"""Gets the x_language of this ListReplicationJobsRequest.
 
         请求语言类型。 en-us：英文 zh-cn：中文
 
@@ -138,7 +138,7 @@ class ListReplicationJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListReplicationJobsRequest.
+        r"""Sets the x_language of this ListReplicationJobsRequest.
 
         请求语言类型。 en-us：英文 zh-cn：中文
 
@@ -149,7 +149,7 @@ class ListReplicationJobsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListReplicationJobsRequest.
+        r"""Gets the name of this ListReplicationJobsRequest.
 
         任务名称，支持模糊搜索。
 
@@ -160,7 +160,7 @@ class ListReplicationJobsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListReplicationJobsRequest.
+        r"""Sets the name of this ListReplicationJobsRequest.
 
         任务名称，支持模糊搜索。
 
@@ -171,7 +171,7 @@ class ListReplicationJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListReplicationJobsRequest.
+        r"""Gets the status of this ListReplicationJobsRequest.
 
         备份迁移任务状态。 TRANSFERRING：恢复中 SUCCESS：成功 FAILED：失败 PRECHECK FAILED：预检查失败
 
@@ -182,7 +182,7 @@ class ListReplicationJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListReplicationJobsRequest.
+        r"""Sets the status of this ListReplicationJobsRequest.
 
         备份迁移任务状态。 TRANSFERRING：恢复中 SUCCESS：成功 FAILED：失败 PRECHECK FAILED：预检查失败
 
@@ -193,7 +193,7 @@ class ListReplicationJobsRequest:
 
     @property
     def dbs_instance_ids(self):
-        """Gets the dbs_instance_ids of this ListReplicationJobsRequest.
+        r"""Gets the dbs_instance_ids of this ListReplicationJobsRequest.
 
         数据库实例ID，最大数量为10。
 
@@ -204,7 +204,7 @@ class ListReplicationJobsRequest:
 
     @dbs_instance_ids.setter
     def dbs_instance_ids(self, dbs_instance_ids):
-        """Sets the dbs_instance_ids of this ListReplicationJobsRequest.
+        r"""Sets the dbs_instance_ids of this ListReplicationJobsRequest.
 
         数据库实例ID，最大数量为10。
 
@@ -215,7 +215,7 @@ class ListReplicationJobsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListReplicationJobsRequest.
+        r"""Gets the description of this ListReplicationJobsRequest.
 
         描述。
 
@@ -226,7 +226,7 @@ class ListReplicationJobsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListReplicationJobsRequest.
+        r"""Sets the description of this ListReplicationJobsRequest.
 
         描述。
 
@@ -237,7 +237,7 @@ class ListReplicationJobsRequest:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ListReplicationJobsRequest.
+        r"""Gets the create_at of this ListReplicationJobsRequest.
 
         创建时间。
 
@@ -248,7 +248,7 @@ class ListReplicationJobsRequest:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ListReplicationJobsRequest.
+        r"""Sets the create_at of this ListReplicationJobsRequest.
 
         创建时间。
 
@@ -259,7 +259,7 @@ class ListReplicationJobsRequest:
 
     @property
     def completed_at(self):
-        """Gets the completed_at of this ListReplicationJobsRequest.
+        r"""Gets the completed_at of this ListReplicationJobsRequest.
 
         完成时间。
 
@@ -270,7 +270,7 @@ class ListReplicationJobsRequest:
 
     @completed_at.setter
     def completed_at(self, completed_at):
-        """Sets the completed_at of this ListReplicationJobsRequest.
+        r"""Sets the completed_at of this ListReplicationJobsRequest.
 
         完成时间。
 
@@ -281,7 +281,7 @@ class ListReplicationJobsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListReplicationJobsRequest.
+        r"""Gets the enterprise_project_id of this ListReplicationJobsRequest.
 
         企业项目ID。
 
@@ -292,7 +292,7 @@ class ListReplicationJobsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListReplicationJobsRequest.
+        r"""Sets the enterprise_project_id of this ListReplicationJobsRequest.
 
         企业项目ID。
 
@@ -303,7 +303,7 @@ class ListReplicationJobsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListReplicationJobsRequest.
+        r"""Gets the tags of this ListReplicationJobsRequest.
 
         标签。
 
@@ -314,7 +314,7 @@ class ListReplicationJobsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListReplicationJobsRequest.
+        r"""Sets the tags of this ListReplicationJobsRequest.
 
         标签。
 
@@ -325,7 +325,7 @@ class ListReplicationJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListReplicationJobsRequest.
+        r"""Gets the limit of this ListReplicationJobsRequest.
 
         查询返回记录的数量限制，默认值为10。
 
@@ -336,7 +336,7 @@ class ListReplicationJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListReplicationJobsRequest.
+        r"""Sets the limit of this ListReplicationJobsRequest.
 
         查询返回记录的数量限制，默认值为10。
 
@@ -347,7 +347,7 @@ class ListReplicationJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListReplicationJobsRequest.
+        r"""Gets the offset of this ListReplicationJobsRequest.
 
         偏移量，默认值为0，表示查询该偏移量后面的记录。
 
@@ -358,7 +358,7 @@ class ListReplicationJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListReplicationJobsRequest.
+        r"""Sets the offset of this ListReplicationJobsRequest.
 
         偏移量，默认值为0，表示查询该偏移量后面的记录。
 
@@ -369,7 +369,7 @@ class ListReplicationJobsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListReplicationJobsRequest.
+        r"""Gets the sort_key of this ListReplicationJobsRequest.
 
         排序字段。
 
@@ -380,7 +380,7 @@ class ListReplicationJobsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListReplicationJobsRequest.
+        r"""Sets the sort_key of this ListReplicationJobsRequest.
 
         排序字段。
 
@@ -391,7 +391,7 @@ class ListReplicationJobsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListReplicationJobsRequest.
+        r"""Gets the sort_dir of this ListReplicationJobsRequest.
 
         排序方法。
 
@@ -402,7 +402,7 @@ class ListReplicationJobsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListReplicationJobsRequest.
+        r"""Sets the sort_dir of this ListReplicationJobsRequest.
 
         排序方法。
 

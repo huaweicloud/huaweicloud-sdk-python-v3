@@ -25,7 +25,7 @@ class DisableLtsLogsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """DisableLtsLogsRequest
+        r"""DisableLtsLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisableLtsLogsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DisableLtsLogsRequest.
+        r"""Gets the cluster_id of this DisableLtsLogsRequest.
 
         集群的ID
 
@@ -53,7 +53,7 @@ class DisableLtsLogsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DisableLtsLogsRequest.
+        r"""Sets the cluster_id of this DisableLtsLogsRequest.
 
         集群的ID
 

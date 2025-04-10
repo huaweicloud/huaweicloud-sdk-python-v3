@@ -29,7 +29,7 @@ class DeletePluginRequest:
     }
 
     def __init__(self, gateway_id=None, plugin_id=None, accept=None):
-        """DeletePluginRequest
+        r"""DeletePluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeletePluginRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this DeletePluginRequest.
+        r"""Gets the gateway_id of this DeletePluginRequest.
 
         网关实例id
 
@@ -66,7 +66,7 @@ class DeletePluginRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this DeletePluginRequest.
+        r"""Sets the gateway_id of this DeletePluginRequest.
 
         网关实例id
 
@@ -77,7 +77,7 @@ class DeletePluginRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this DeletePluginRequest.
+        r"""Gets the plugin_id of this DeletePluginRequest.
 
         插件id
 
@@ -88,7 +88,7 @@ class DeletePluginRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this DeletePluginRequest.
+        r"""Sets the plugin_id of this DeletePluginRequest.
 
         插件id
 
@@ -99,7 +99,7 @@ class DeletePluginRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this DeletePluginRequest.
+        r"""Gets the accept of this DeletePluginRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -110,7 +110,7 @@ class DeletePluginRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this DeletePluginRequest.
+        r"""Sets the accept of this DeletePluginRequest.
 
         该字段内容填为 \"application/json\"
 

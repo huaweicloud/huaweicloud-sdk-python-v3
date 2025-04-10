@@ -27,7 +27,7 @@ class ShowRouteTableRequest:
     }
 
     def __init__(self, er_id=None, route_table_id=None):
-        """ShowRouteTableRequest
+        r"""ShowRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowRouteTableRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ShowRouteTableRequest.
+        r"""Gets the er_id of this ShowRouteTableRequest.
 
         企业路由器实例ID
 
@@ -59,7 +59,7 @@ class ShowRouteTableRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ShowRouteTableRequest.
+        r"""Sets the er_id of this ShowRouteTableRequest.
 
         企业路由器实例ID
 
@@ -70,7 +70,7 @@ class ShowRouteTableRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this ShowRouteTableRequest.
+        r"""Gets the route_table_id of this ShowRouteTableRequest.
 
         路由表ID
 
@@ -81,7 +81,7 @@ class ShowRouteTableRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this ShowRouteTableRequest.
+        r"""Sets the route_table_id of this ShowRouteTableRequest.
 
         路由表ID
 

@@ -45,7 +45,7 @@ class Explain:
     }
 
     def __init__(self, id=None, select_type=None, table=None, type=None, possible_keys=None, key=None, key_len=None, ref=None, rows=None, filtered=None, extra=None):
-        """Explain
+        r"""Explain
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Explain:
 
     @property
     def id(self):
-        """Gets the id of this Explain.
+        r"""Gets the id of this Explain.
 
         select子句的编号
 
@@ -124,7 +124,7 @@ class Explain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Explain.
+        r"""Sets the id of this Explain.
 
         select子句的编号
 
@@ -135,7 +135,7 @@ class Explain:
 
     @property
     def select_type(self):
-        """Gets the select_type of this Explain.
+        r"""Gets the select_type of this Explain.
 
         select子句的类型
 
@@ -146,7 +146,7 @@ class Explain:
 
     @select_type.setter
     def select_type(self, select_type):
-        """Sets the select_type of this Explain.
+        r"""Sets the select_type of this Explain.
 
         select子句的类型
 
@@ -157,7 +157,7 @@ class Explain:
 
     @property
     def table(self):
-        """Gets the table of this Explain.
+        r"""Gets the table of this Explain.
 
         SQL优化器选择的表join顺序。
 
@@ -168,7 +168,7 @@ class Explain:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this Explain.
+        r"""Sets the table of this Explain.
 
         SQL优化器选择的表join顺序。
 
@@ -179,7 +179,7 @@ class Explain:
 
     @property
     def type(self):
-        """Gets the type of this Explain.
+        r"""Gets the type of this Explain.
 
         查找表中行的访问类型(从好到坏依次为：null>system>const>eq_ref>ref>range>index>all)。
 
@@ -190,7 +190,7 @@ class Explain:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Explain.
+        r"""Sets the type of this Explain.
 
         查找表中行的访问类型(从好到坏依次为：null>system>const>eq_ref>ref>range>index>all)。
 
@@ -201,7 +201,7 @@ class Explain:
 
     @property
     def possible_keys(self):
-        """Gets the possible_keys of this Explain.
+        r"""Gets the possible_keys of this Explain.
 
         有助于高效查找行的索引。
 
@@ -212,7 +212,7 @@ class Explain:
 
     @possible_keys.setter
     def possible_keys(self, possible_keys):
-        """Sets the possible_keys of this Explain.
+        r"""Sets the possible_keys of this Explain.
 
         有助于高效查找行的索引。
 
@@ -223,7 +223,7 @@ class Explain:
 
     @property
     def key(self):
-        """Gets the key of this Explain.
+        r"""Gets the key of this Explain.
 
         出于最小化查询成本考虑，SQL优化器实际使用的索引
 
@@ -234,7 +234,7 @@ class Explain:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Explain.
+        r"""Sets the key of this Explain.
 
         出于最小化查询成本考虑，SQL优化器实际使用的索引
 
@@ -245,7 +245,7 @@ class Explain:
 
     @property
     def key_len(self):
-        """Gets the key_len of this Explain.
+        r"""Gets the key_len of this Explain.
 
         key列所示索引的长度（字节）
 
@@ -256,7 +256,7 @@ class Explain:
 
     @key_len.setter
     def key_len(self, key_len):
-        """Sets the key_len of this Explain.
+        r"""Sets the key_len of this Explain.
 
         key列所示索引的长度（字节）
 
@@ -267,7 +267,7 @@ class Explain:
 
     @property
     def ref(self):
-        """Gets the ref of this Explain.
+        r"""Gets the ref of this Explain.
 
         在使用key列所示索引查找数据时用到的列或常量
 
@@ -278,7 +278,7 @@ class Explain:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this Explain.
+        r"""Sets the ref of this Explain.
 
         在使用key列所示索引查找数据时用到的列或常量
 
@@ -289,7 +289,7 @@ class Explain:
 
     @property
     def rows(self):
-        """Gets the rows of this Explain.
+        r"""Gets the rows of this Explain.
 
         key列所示索引的长度（字节）
 
@@ -300,7 +300,7 @@ class Explain:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this Explain.
+        r"""Sets the rows of this Explain.
 
         key列所示索引的长度（字节）
 
@@ -311,7 +311,7 @@ class Explain:
 
     @property
     def filtered(self):
-        """Gets the filtered of this Explain.
+        r"""Gets the filtered of this Explain.
 
         sql解析的额外信息：当出现using index时，说明SQL使用覆盖索引，性能较好；而当出现 using filesort、using temporary、using where时，说明查询需要优化。
 
@@ -322,7 +322,7 @@ class Explain:
 
     @filtered.setter
     def filtered(self, filtered):
-        """Sets the filtered of this Explain.
+        r"""Sets the filtered of this Explain.
 
         sql解析的额外信息：当出现using index时，说明SQL使用覆盖索引，性能较好；而当出现 using filesort、using temporary、using where时，说明查询需要优化。
 
@@ -333,7 +333,7 @@ class Explain:
 
     @property
     def extra(self):
-        """Gets the extra of this Explain.
+        r"""Gets the extra of this Explain.
 
         sql解析的额外信息：当出现using index时，说明SQL使用覆盖索引，性能较好；而当出现 using filesort、using temporary、using where时，说明查询需要优化。
 
@@ -344,7 +344,7 @@ class Explain:
 
     @extra.setter
     def extra(self, extra):
-        """Sets the extra of this Explain.
+        r"""Sets the extra of this Explain.
 
         sql解析的额外信息：当出现using index时，说明SQL使用覆盖索引，性能较好；而当出现 using filesort、using temporary、using where时，说明查询需要优化。
 

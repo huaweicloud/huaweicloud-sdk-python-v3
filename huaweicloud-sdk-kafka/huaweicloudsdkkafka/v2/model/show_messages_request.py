@@ -37,7 +37,7 @@ class ShowMessagesRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, start_time=None, end_time=None, limit=None, offset=None, partition=None):
-        """ShowMessagesRequest
+        r"""ShowMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ShowMessagesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowMessagesRequest.
+        r"""Gets the instance_id of this ShowMessagesRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ShowMessagesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowMessagesRequest.
+        r"""Sets the instance_id of this ShowMessagesRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ShowMessagesRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowMessagesRequest.
+        r"""Gets the topic of this ShowMessagesRequest.
 
         Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -116,7 +116,7 @@ class ShowMessagesRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowMessagesRequest.
+        r"""Sets the topic of this ShowMessagesRequest.
 
         Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -127,7 +127,7 @@ class ShowMessagesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowMessagesRequest.
+        r"""Gets the start_time of this ShowMessagesRequest.
 
         查询起始时间，为unix时间戳格式，默认值为0。
 
@@ -138,7 +138,7 @@ class ShowMessagesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowMessagesRequest.
+        r"""Sets the start_time of this ShowMessagesRequest.
 
         查询起始时间，为unix时间戳格式，默认值为0。
 
@@ -149,7 +149,7 @@ class ShowMessagesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowMessagesRequest.
+        r"""Gets the end_time of this ShowMessagesRequest.
 
         查询结束时间，为unix时间戳格式，默认值为系统当前时间。
 
@@ -160,7 +160,7 @@ class ShowMessagesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowMessagesRequest.
+        r"""Sets the end_time of this ShowMessagesRequest.
 
         查询结束时间，为unix时间戳格式，默认值为系统当前时间。
 
@@ -171,7 +171,7 @@ class ShowMessagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowMessagesRequest.
+        r"""Gets the limit of this ShowMessagesRequest.
 
         单页返回消息数，默认值为10。
 
@@ -182,7 +182,7 @@ class ShowMessagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowMessagesRequest.
+        r"""Sets the limit of this ShowMessagesRequest.
 
         单页返回消息数，默认值为10。
 
@@ -193,7 +193,7 @@ class ShowMessagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMessagesRequest.
+        r"""Gets the offset of this ShowMessagesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -204,7 +204,7 @@ class ShowMessagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMessagesRequest.
+        r"""Sets the offset of this ShowMessagesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -215,7 +215,7 @@ class ShowMessagesRequest:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowMessagesRequest.
+        r"""Gets the partition of this ShowMessagesRequest.
 
         分区编号，默认值为-1，若传入值为-1，则查询所有分区。
 
@@ -226,7 +226,7 @@ class ShowMessagesRequest:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowMessagesRequest.
+        r"""Sets the partition of this ShowMessagesRequest.
 
         分区编号，默认值为-1，若传入值为-1，则查询所有分区。
 

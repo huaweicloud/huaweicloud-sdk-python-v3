@@ -46,7 +46,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None, creator=None, update_time=None, app_key=None, app_secret=None, register_time=None, status=None, app_type=None, roma_app_type=None):
-        """ShowDetailsOfAppV2Response
+        r"""ShowDetailsOfAppV2Response
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfAppV2Response.
+        r"""Gets the id of this ShowDetailsOfAppV2Response.
 
         编号
 
@@ -125,7 +125,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfAppV2Response.
+        r"""Sets the id of this ShowDetailsOfAppV2Response.
 
         编号
 
@@ -136,7 +136,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailsOfAppV2Response.
+        r"""Gets the name of this ShowDetailsOfAppV2Response.
 
         名称
 
@@ -147,7 +147,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailsOfAppV2Response.
+        r"""Sets the name of this ShowDetailsOfAppV2Response.
 
         名称
 
@@ -158,7 +158,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this ShowDetailsOfAppV2Response.
+        r"""Gets the remark of this ShowDetailsOfAppV2Response.
 
         描述
 
@@ -169,7 +169,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ShowDetailsOfAppV2Response.
+        r"""Sets the remark of this ShowDetailsOfAppV2Response.
 
         描述
 
@@ -180,7 +180,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowDetailsOfAppV2Response.
+        r"""Gets the creator of this ShowDetailsOfAppV2Response.
 
         APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
@@ -191,7 +191,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowDetailsOfAppV2Response.
+        r"""Sets the creator of this ShowDetailsOfAppV2Response.
 
         APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
@@ -202,7 +202,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDetailsOfAppV2Response.
+        r"""Gets the update_time of this ShowDetailsOfAppV2Response.
 
         更新时间
 
@@ -213,7 +213,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDetailsOfAppV2Response.
+        r"""Sets the update_time of this ShowDetailsOfAppV2Response.
 
         更新时间
 
@@ -224,7 +224,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this ShowDetailsOfAppV2Response.
+        r"""Gets the app_key of this ShowDetailsOfAppV2Response.
 
         APP的key
 
@@ -235,7 +235,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ShowDetailsOfAppV2Response.
+        r"""Sets the app_key of this ShowDetailsOfAppV2Response.
 
         APP的key
 
@@ -246,7 +246,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this ShowDetailsOfAppV2Response.
+        r"""Gets the app_secret of this ShowDetailsOfAppV2Response.
 
         密钥
 
@@ -257,7 +257,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this ShowDetailsOfAppV2Response.
+        r"""Sets the app_secret of this ShowDetailsOfAppV2Response.
 
         密钥
 
@@ -268,7 +268,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def register_time(self):
-        """Gets the register_time of this ShowDetailsOfAppV2Response.
+        r"""Gets the register_time of this ShowDetailsOfAppV2Response.
 
         注册时间
 
@@ -279,7 +279,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ShowDetailsOfAppV2Response.
+        r"""Sets the register_time of this ShowDetailsOfAppV2Response.
 
         注册时间
 
@@ -290,7 +290,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailsOfAppV2Response.
+        r"""Gets the status of this ShowDetailsOfAppV2Response.
 
         状态   - 1： 有效
 
@@ -301,7 +301,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailsOfAppV2Response.
+        r"""Sets the status of this ShowDetailsOfAppV2Response.
 
         状态   - 1： 有效
 
@@ -312,7 +312,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowDetailsOfAppV2Response.
+        r"""Gets the app_type of this ShowDetailsOfAppV2Response.
 
         APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用
 
@@ -323,7 +323,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowDetailsOfAppV2Response.
+        r"""Sets the app_type of this ShowDetailsOfAppV2Response.
 
         APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用
 
@@ -334,7 +334,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @property
     def roma_app_type(self):
-        """Gets the roma_app_type of this ShowDetailsOfAppV2Response.
+        r"""Gets the roma_app_type of this ShowDetailsOfAppV2Response.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
@@ -345,7 +345,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
 
     @roma_app_type.setter
     def roma_app_type(self, roma_app_type):
-        """Sets the roma_app_type of this ShowDetailsOfAppV2Response.
+        r"""Sets the roma_app_type of this ShowDetailsOfAppV2Response.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 

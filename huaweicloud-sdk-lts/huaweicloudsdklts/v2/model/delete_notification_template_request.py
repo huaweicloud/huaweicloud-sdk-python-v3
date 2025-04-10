@@ -27,7 +27,7 @@ class DeleteNotificationTemplateRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """DeleteNotificationTemplateRequest
+        r"""DeleteNotificationTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteNotificationTemplateRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeleteNotificationTemplateRequest.
+        r"""Gets the domain_id of this DeleteNotificationTemplateRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -60,7 +60,7 @@ class DeleteNotificationTemplateRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeleteNotificationTemplateRequest.
+        r"""Sets the domain_id of this DeleteNotificationTemplateRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -71,7 +71,7 @@ class DeleteNotificationTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteNotificationTemplateRequest.
+        r"""Gets the body of this DeleteNotificationTemplateRequest.
 
         :return: The body of this DeleteNotificationTemplateRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteNotificationTemplateBody`
@@ -80,7 +80,7 @@ class DeleteNotificationTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteNotificationTemplateRequest.
+        r"""Sets the body of this DeleteNotificationTemplateRequest.
 
         :param body: The body of this DeleteNotificationTemplateRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteNotificationTemplateBody`

@@ -39,7 +39,7 @@ class StarRocksReplicationInfo:
     }
 
     def __init__(self, source_database=None, target_database=None, task_name=None, status=None, stage=None, percentage=None, catchup_stage=None, catchup_percentage=None):
-        """StarRocksReplicationInfo
+        r"""StarRocksReplicationInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class StarRocksReplicationInfo:
 
     @property
     def source_database(self):
-        """Gets the source_database of this StarRocksReplicationInfo.
+        r"""Gets the source_database of this StarRocksReplicationInfo.
 
         TaurusDB数据库。
 
@@ -103,7 +103,7 @@ class StarRocksReplicationInfo:
 
     @source_database.setter
     def source_database(self, source_database):
-        """Sets the source_database of this StarRocksReplicationInfo.
+        r"""Sets the source_database of this StarRocksReplicationInfo.
 
         TaurusDB数据库。
 
@@ -114,7 +114,7 @@ class StarRocksReplicationInfo:
 
     @property
     def target_database(self):
-        """Gets the target_database of this StarRocksReplicationInfo.
+        r"""Gets the target_database of this StarRocksReplicationInfo.
 
         目标数据库。
 
@@ -125,7 +125,7 @@ class StarRocksReplicationInfo:
 
     @target_database.setter
     def target_database(self, target_database):
-        """Sets the target_database of this StarRocksReplicationInfo.
+        r"""Sets the target_database of this StarRocksReplicationInfo.
 
         目标数据库。
 
@@ -136,7 +136,7 @@ class StarRocksReplicationInfo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this StarRocksReplicationInfo.
+        r"""Gets the task_name of this StarRocksReplicationInfo.
 
         同步任务名。
 
@@ -147,7 +147,7 @@ class StarRocksReplicationInfo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this StarRocksReplicationInfo.
+        r"""Sets the task_name of this StarRocksReplicationInfo.
 
         同步任务名。
 
@@ -158,7 +158,7 @@ class StarRocksReplicationInfo:
 
     @property
     def status(self):
-        """Gets the status of this StarRocksReplicationInfo.
+        r"""Gets the status of this StarRocksReplicationInfo.
 
         当前状态。Yes:正常;No:异常。
 
@@ -169,7 +169,7 @@ class StarRocksReplicationInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StarRocksReplicationInfo.
+        r"""Sets the status of this StarRocksReplicationInfo.
 
         当前状态。Yes:正常;No:异常。
 
@@ -180,7 +180,7 @@ class StarRocksReplicationInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this StarRocksReplicationInfo.
+        r"""Gets the stage of this StarRocksReplicationInfo.
 
         同步阶段。wait:等待同步;incremental:增量同步;full:全量同步;cancelled:删除;paused:暂停同步。
 
@@ -191,7 +191,7 @@ class StarRocksReplicationInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this StarRocksReplicationInfo.
+        r"""Sets the stage of this StarRocksReplicationInfo.
 
         同步阶段。wait:等待同步;incremental:增量同步;full:全量同步;cancelled:删除;paused:暂停同步。
 
@@ -202,7 +202,7 @@ class StarRocksReplicationInfo:
 
     @property
     def percentage(self):
-        """Gets the percentage of this StarRocksReplicationInfo.
+        r"""Gets the percentage of this StarRocksReplicationInfo.
 
         进度百分比。
 
@@ -213,7 +213,7 @@ class StarRocksReplicationInfo:
 
     @percentage.setter
     def percentage(self, percentage):
-        """Sets the percentage of this StarRocksReplicationInfo.
+        r"""Sets the percentage of this StarRocksReplicationInfo.
 
         进度百分比。
 
@@ -224,7 +224,7 @@ class StarRocksReplicationInfo:
 
     @property
     def catchup_stage(self):
-        """Gets the catchup_stage of this StarRocksReplicationInfo.
+        r"""Gets the catchup_stage of this StarRocksReplicationInfo.
 
         追赶阶段。wait:等待同步;incremental:增量同步;full:全量同步;cancelled:删除;paused:暂停同步。
 
@@ -235,7 +235,7 @@ class StarRocksReplicationInfo:
 
     @catchup_stage.setter
     def catchup_stage(self, catchup_stage):
-        """Sets the catchup_stage of this StarRocksReplicationInfo.
+        r"""Sets the catchup_stage of this StarRocksReplicationInfo.
 
         追赶阶段。wait:等待同步;incremental:增量同步;full:全量同步;cancelled:删除;paused:暂停同步。
 
@@ -246,7 +246,7 @@ class StarRocksReplicationInfo:
 
     @property
     def catchup_percentage(self):
-        """Gets the catchup_percentage of this StarRocksReplicationInfo.
+        r"""Gets the catchup_percentage of this StarRocksReplicationInfo.
 
         追赶进度百分比。
 
@@ -257,7 +257,7 @@ class StarRocksReplicationInfo:
 
     @catchup_percentage.setter
     def catchup_percentage(self, catchup_percentage):
-        """Sets the catchup_percentage of this StarRocksReplicationInfo.
+        r"""Sets the catchup_percentage of this StarRocksReplicationInfo.
 
         追赶进度百分比。
 

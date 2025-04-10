@@ -43,7 +43,7 @@ class CommitRecordDetail:
     }
 
     def __init__(self, repository_id=None, branch_name=None, commit_id=None, commit_short_id=None, commit_msg=None, commit_url=None, user=None, type=None, create_date=None, update_date=None):
-        """CommitRecordDetail
+        r"""CommitRecordDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CommitRecordDetail:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this CommitRecordDetail.
+        r"""Gets the repository_id of this CommitRecordDetail.
 
         仓库ID
 
@@ -117,7 +117,7 @@ class CommitRecordDetail:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this CommitRecordDetail.
+        r"""Sets the repository_id of this CommitRecordDetail.
 
         仓库ID
 
@@ -128,7 +128,7 @@ class CommitRecordDetail:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this CommitRecordDetail.
+        r"""Gets the branch_name of this CommitRecordDetail.
 
         分支名称
 
@@ -139,7 +139,7 @@ class CommitRecordDetail:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this CommitRecordDetail.
+        r"""Sets the branch_name of this CommitRecordDetail.
 
         分支名称
 
@@ -150,7 +150,7 @@ class CommitRecordDetail:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this CommitRecordDetail.
+        r"""Gets the commit_id of this CommitRecordDetail.
 
         commit id
 
@@ -161,7 +161,7 @@ class CommitRecordDetail:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this CommitRecordDetail.
+        r"""Sets the commit_id of this CommitRecordDetail.
 
         commit id
 
@@ -172,7 +172,7 @@ class CommitRecordDetail:
 
     @property
     def commit_short_id(self):
-        """Gets the commit_short_id of this CommitRecordDetail.
+        r"""Gets the commit_short_id of this CommitRecordDetail.
 
         commit short id
 
@@ -183,7 +183,7 @@ class CommitRecordDetail:
 
     @commit_short_id.setter
     def commit_short_id(self, commit_short_id):
-        """Sets the commit_short_id of this CommitRecordDetail.
+        r"""Sets the commit_short_id of this CommitRecordDetail.
 
         commit short id
 
@@ -194,7 +194,7 @@ class CommitRecordDetail:
 
     @property
     def commit_msg(self):
-        """Gets the commit_msg of this CommitRecordDetail.
+        r"""Gets the commit_msg of this CommitRecordDetail.
 
         commit 信息
 
@@ -205,7 +205,7 @@ class CommitRecordDetail:
 
     @commit_msg.setter
     def commit_msg(self, commit_msg):
-        """Sets the commit_msg of this CommitRecordDetail.
+        r"""Sets the commit_msg of this CommitRecordDetail.
 
         commit 信息
 
@@ -216,7 +216,7 @@ class CommitRecordDetail:
 
     @property
     def commit_url(self):
-        """Gets the commit_url of this CommitRecordDetail.
+        r"""Gets the commit_url of this CommitRecordDetail.
 
         commit URL
 
@@ -227,7 +227,7 @@ class CommitRecordDetail:
 
     @commit_url.setter
     def commit_url(self, commit_url):
-        """Sets the commit_url of this CommitRecordDetail.
+        r"""Sets the commit_url of this CommitRecordDetail.
 
         commit URL
 
@@ -238,7 +238,7 @@ class CommitRecordDetail:
 
     @property
     def user(self):
-        """Gets the user of this CommitRecordDetail.
+        r"""Gets the user of this CommitRecordDetail.
 
         :return: The user of this CommitRecordDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -247,7 +247,7 @@ class CommitRecordDetail:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CommitRecordDetail.
+        r"""Sets the user of this CommitRecordDetail.
 
         :param user: The user of this CommitRecordDetail.
         :type user: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -256,7 +256,7 @@ class CommitRecordDetail:
 
     @property
     def type(self):
-        """Gets the type of this CommitRecordDetail.
+        r"""Gets the type of this CommitRecordDetail.
 
         查询的类型
 
@@ -267,7 +267,7 @@ class CommitRecordDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CommitRecordDetail.
+        r"""Sets the type of this CommitRecordDetail.
 
         查询的类型
 
@@ -278,7 +278,7 @@ class CommitRecordDetail:
 
     @property
     def create_date(self):
-        """Gets the create_date of this CommitRecordDetail.
+        r"""Gets the create_date of this CommitRecordDetail.
 
         创建时间
 
@@ -289,7 +289,7 @@ class CommitRecordDetail:
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this CommitRecordDetail.
+        r"""Sets the create_date of this CommitRecordDetail.
 
         创建时间
 
@@ -300,7 +300,7 @@ class CommitRecordDetail:
 
     @property
     def update_date(self):
-        """Gets the update_date of this CommitRecordDetail.
+        r"""Gets the update_date of this CommitRecordDetail.
 
         更新时间
 
@@ -311,7 +311,7 @@ class CommitRecordDetail:
 
     @update_date.setter
     def update_date(self, update_date):
-        """Sets the update_date of this CommitRecordDetail.
+        r"""Sets the update_date of this CommitRecordDetail.
 
         更新时间
 

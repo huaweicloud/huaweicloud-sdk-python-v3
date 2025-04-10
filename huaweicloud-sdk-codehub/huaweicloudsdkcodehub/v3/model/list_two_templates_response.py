@@ -30,7 +30,7 @@ class ListTwoTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListTwoTemplatesResponse
+        r"""ListTwoTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListTwoTemplatesResponse.
+        r"""Gets the error of this ListTwoTemplatesResponse.
 
         :return: The error of this ListTwoTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListTwoTemplatesResponse.
+        r"""Sets the error of this ListTwoTemplatesResponse.
 
         :param error: The error of this ListTwoTemplatesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListTwoTemplatesResponse.
+        r"""Gets the result of this ListTwoTemplatesResponse.
 
         :return: The result of this ListTwoTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
@@ -85,7 +85,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListTwoTemplatesResponse.
+        r"""Sets the result of this ListTwoTemplatesResponse.
 
         :param result: The result of this ListTwoTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
@@ -94,7 +94,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListTwoTemplatesResponse.
+        r"""Gets the status of this ListTwoTemplatesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListTwoTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTwoTemplatesResponse.
+        r"""Sets the status of this ListTwoTemplatesResponse.
 
         响应状态
 

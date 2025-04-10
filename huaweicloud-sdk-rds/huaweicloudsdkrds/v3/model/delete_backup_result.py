@@ -29,7 +29,7 @@ class DeleteBackupResult:
     }
 
     def __init__(self, backup_id=None, error_code=None, error_msg=None):
-        """DeleteBackupResult
+        r"""DeleteBackupResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeleteBackupResult:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteBackupResult.
+        r"""Gets the backup_id of this DeleteBackupResult.
 
         备份id
 
@@ -68,7 +68,7 @@ class DeleteBackupResult:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteBackupResult.
+        r"""Sets the backup_id of this DeleteBackupResult.
 
         备份id
 
@@ -79,7 +79,7 @@ class DeleteBackupResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteBackupResult.
+        r"""Gets the error_code of this DeleteBackupResult.
 
         提交任务异常时返回的错误编码。0表示成功。
 
@@ -90,7 +90,7 @@ class DeleteBackupResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteBackupResult.
+        r"""Sets the error_code of this DeleteBackupResult.
 
         提交任务异常时返回的错误编码。0表示成功。
 
@@ -101,7 +101,7 @@ class DeleteBackupResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteBackupResult.
+        r"""Gets the error_msg of this DeleteBackupResult.
 
         提交任务异常时返回的错误描述信息。
 
@@ -112,7 +112,7 @@ class DeleteBackupResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteBackupResult.
+        r"""Sets the error_msg of this DeleteBackupResult.
 
         提交任务异常时返回的错误描述信息。
 

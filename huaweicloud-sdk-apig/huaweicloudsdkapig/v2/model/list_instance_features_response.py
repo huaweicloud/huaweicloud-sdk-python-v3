@@ -30,7 +30,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, features=None):
-        """ListInstanceFeaturesResponse
+        r"""ListInstanceFeaturesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListInstanceFeaturesResponse.
+        r"""Gets the size of this ListInstanceFeaturesResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListInstanceFeaturesResponse.
+        r"""Sets the size of this ListInstanceFeaturesResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceFeaturesResponse.
+        r"""Gets the total of this ListInstanceFeaturesResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceFeaturesResponse.
+        r"""Sets the total of this ListInstanceFeaturesResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
 
     @property
     def features(self):
-        """Gets the features of this ListInstanceFeaturesResponse.
+        r"""Gets the features of this ListInstanceFeaturesResponse.
 
         实例支持的特性列表： - \"resize_huge_flavor\" - \"health_check_in_instance_etcd\" - \"shubao_support_add_node\" - \"upgrade_uninterrupted\" - \"sm_cipher_type\"  与实例版本有关，列表中不展示的特性为实例不支持的特性
 
@@ -111,7 +111,7 @@ class ListInstanceFeaturesResponse(SdkResponse):
 
     @features.setter
     def features(self, features):
-        """Sets the features of this ListInstanceFeaturesResponse.
+        r"""Sets the features of this ListInstanceFeaturesResponse.
 
         实例支持的特性列表： - \"resize_huge_flavor\" - \"health_check_in_instance_etcd\" - \"shubao_support_add_node\" - \"upgrade_uninterrupted\" - \"sm_cipher_type\"  与实例版本有关，列表中不展示的特性为实例不支持的特性
 

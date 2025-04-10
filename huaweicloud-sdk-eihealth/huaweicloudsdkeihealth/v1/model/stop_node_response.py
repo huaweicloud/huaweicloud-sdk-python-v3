@@ -24,7 +24,7 @@ class StopNodeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopNodeResponse
+        r"""StopNodeResponse
 
         The model defined in huaweicloud sdk
 

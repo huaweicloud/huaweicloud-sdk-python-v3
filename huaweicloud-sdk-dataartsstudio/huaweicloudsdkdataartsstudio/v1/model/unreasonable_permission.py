@@ -27,7 +27,7 @@ class UnreasonablePermission:
     }
 
     def __init__(self, result=None, count=None):
-        """UnreasonablePermission
+        r"""UnreasonablePermission
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UnreasonablePermission:
 
     @property
     def result(self):
-        """Gets the result of this UnreasonablePermission.
+        r"""Gets the result of this UnreasonablePermission.
 
         检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
 
@@ -61,7 +61,7 @@ class UnreasonablePermission:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UnreasonablePermission.
+        r"""Sets the result of this UnreasonablePermission.
 
         检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
 
@@ -72,7 +72,7 @@ class UnreasonablePermission:
 
     @property
     def count(self):
-        """Gets the count of this UnreasonablePermission.
+        r"""Gets the count of this UnreasonablePermission.
 
         存在风险的权限控制数量。
 
@@ -83,7 +83,7 @@ class UnreasonablePermission:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this UnreasonablePermission.
+        r"""Sets the count of this UnreasonablePermission.
 
         存在风险的权限控制数量。
 

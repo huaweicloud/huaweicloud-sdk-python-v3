@@ -31,7 +31,7 @@ class ListCommitsRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, ref=None):
-        """ListCommitsRequest
+        r"""ListCommitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListCommitsRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ListCommitsRequest.
+        r"""Gets the x_repo_auth of this ListCommitsRequest.
 
         授权名称。
 
@@ -72,7 +72,7 @@ class ListCommitsRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ListCommitsRequest.
+        r"""Sets the x_repo_auth of this ListCommitsRequest.
 
         授权名称。
 
@@ -83,7 +83,7 @@ class ListCommitsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListCommitsRequest.
+        r"""Gets the namespace of this ListCommitsRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -94,7 +94,7 @@ class ListCommitsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListCommitsRequest.
+        r"""Sets the namespace of this ListCommitsRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -105,7 +105,7 @@ class ListCommitsRequest:
 
     @property
     def project(self):
-        """Gets the project of this ListCommitsRequest.
+        r"""Gets the project of this ListCommitsRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -116,7 +116,7 @@ class ListCommitsRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ListCommitsRequest.
+        r"""Sets the project of this ListCommitsRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -127,7 +127,7 @@ class ListCommitsRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this ListCommitsRequest.
+        r"""Gets the ref of this ListCommitsRequest.
 
         分支名称或者tag名称，如果没有提供，使用默认分支。
 
@@ -138,7 +138,7 @@ class ListCommitsRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ListCommitsRequest.
+        r"""Sets the ref of this ListCommitsRequest.
 
         分支名称或者tag名称，如果没有提供，使用默认分支。
 

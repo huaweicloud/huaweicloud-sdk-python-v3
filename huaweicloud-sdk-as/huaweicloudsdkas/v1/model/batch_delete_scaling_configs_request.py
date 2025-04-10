@@ -25,7 +25,7 @@ class BatchDeleteScalingConfigsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteScalingConfigsRequest
+        r"""BatchDeleteScalingConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteScalingConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteScalingConfigsRequest.
+        r"""Gets the body of this BatchDeleteScalingConfigsRequest.
 
         :return: The body of this BatchDeleteScalingConfigsRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigOption`
@@ -52,7 +52,7 @@ class BatchDeleteScalingConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteScalingConfigsRequest.
+        r"""Sets the body of this BatchDeleteScalingConfigsRequest.
 
         :param body: The body of this BatchDeleteScalingConfigsRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigOption`

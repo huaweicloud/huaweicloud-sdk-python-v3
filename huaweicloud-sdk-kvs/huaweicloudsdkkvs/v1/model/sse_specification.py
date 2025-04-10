@@ -31,7 +31,7 @@ class SseSpecification:
     }
 
     def __init__(self, enable=None, sse_type=None, sse_algorithm=None, cmk_id=None):
-        """SseSpecification
+        r"""SseSpecification
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SseSpecification:
 
     @property
     def enable(self):
-        """Gets the enable of this SseSpecification.
+        r"""Gets the enable of this SseSpecification.
 
         启用静态加密。
 
@@ -74,7 +74,7 @@ class SseSpecification:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this SseSpecification.
+        r"""Sets the enable of this SseSpecification.
 
         启用静态加密。
 
@@ -85,7 +85,7 @@ class SseSpecification:
 
     @property
     def sse_type(self):
-        """Gets the sse_type of this SseSpecification.
+        r"""Gets the sse_type of this SseSpecification.
 
         加密类型，支持SSE-KMS-S和SSE-KMS-C。
 
@@ -96,7 +96,7 @@ class SseSpecification:
 
     @sse_type.setter
     def sse_type(self, sse_type):
-        """Sets the sse_type of this SseSpecification.
+        r"""Sets the sse_type of this SseSpecification.
 
         加密类型，支持SSE-KMS-S和SSE-KMS-C。
 
@@ -107,7 +107,7 @@ class SseSpecification:
 
     @property
     def sse_algorithm(self):
-        """Gets the sse_algorithm of this SseSpecification.
+        r"""Gets the sse_algorithm of this SseSpecification.
 
         加密算法，支持AES256_GCM。
 
@@ -118,7 +118,7 @@ class SseSpecification:
 
     @sse_algorithm.setter
     def sse_algorithm(self, sse_algorithm):
-        """Sets the sse_algorithm of this SseSpecification.
+        r"""Sets the sse_algorithm of this SseSpecification.
 
         加密算法，支持AES256_GCM。
 
@@ -129,7 +129,7 @@ class SseSpecification:
 
     @property
     def cmk_id(self):
-        """Gets the cmk_id of this SseSpecification.
+        r"""Gets the cmk_id of this SseSpecification.
 
         KMS中的用户主密钥ID。非必填项，仅当加密类型是SSE-KMS-C时需要填写该字段。
 
@@ -140,7 +140,7 @@ class SseSpecification:
 
     @cmk_id.setter
     def cmk_id(self, cmk_id):
-        """Sets the cmk_id of this SseSpecification.
+        r"""Sets the cmk_id of this SseSpecification.
 
         KMS中的用户主密钥ID。非必填项，仅当加密类型是SSE-KMS-C时需要填写该字段。
 

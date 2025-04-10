@@ -31,7 +31,7 @@ class ListResourcesRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, resource_name=None):
-        """ListResourcesRequest
+        r"""ListResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListResourcesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListResourcesRequest.
+        r"""Gets the workspace of this ListResourcesRequest.
 
         工作空间id
 
@@ -75,7 +75,7 @@ class ListResourcesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListResourcesRequest.
+        r"""Sets the workspace of this ListResourcesRequest.
 
         工作空间id
 
@@ -86,7 +86,7 @@ class ListResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourcesRequest.
+        r"""Gets the limit of this ListResourcesRequest.
 
         分页参数:每页限定数量
 
@@ -97,7 +97,7 @@ class ListResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourcesRequest.
+        r"""Sets the limit of this ListResourcesRequest.
 
         分页参数:每页限定数量
 
@@ -108,7 +108,7 @@ class ListResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourcesRequest.
+        r"""Gets the offset of this ListResourcesRequest.
 
         分页参数：页数
 
@@ -119,7 +119,7 @@ class ListResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourcesRequest.
+        r"""Sets the offset of this ListResourcesRequest.
 
         分页参数：页数
 
@@ -130,7 +130,7 @@ class ListResourcesRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListResourcesRequest.
+        r"""Gets the resource_name of this ListResourcesRequest.
 
         资源名称
 
@@ -141,7 +141,7 @@ class ListResourcesRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListResourcesRequest.
+        r"""Sets the resource_name of this ListResourcesRequest.
 
         资源名称
 

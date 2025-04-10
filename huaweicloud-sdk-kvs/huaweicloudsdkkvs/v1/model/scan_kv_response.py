@@ -34,7 +34,7 @@ class ScanKvResponse(SdkResponse):
     }
 
     def __init__(self, returned_count=None, filtered_count=None, cursor_key=None, returned_kv_items=None, returned_segment_items=None):
-        """ScanKvResponse
+        r"""ScanKvResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ScanKvResponse(SdkResponse):
 
     @property
     def returned_count(self):
-        """Gets the returned_count of this ScanKvResponse.
+        r"""Gets the returned_count of this ScanKvResponse.
 
         返回的文档数量，为0不表示结束。 > 如果filtered_count超过500仍无匹配，则返回0。
 
@@ -83,7 +83,7 @@ class ScanKvResponse(SdkResponse):
 
     @returned_count.setter
     def returned_count(self, returned_count):
-        """Sets the returned_count of this ScanKvResponse.
+        r"""Sets the returned_count of this ScanKvResponse.
 
         返回的文档数量，为0不表示结束。 > 如果filtered_count超过500仍无匹配，则返回0。
 
@@ -94,7 +94,7 @@ class ScanKvResponse(SdkResponse):
 
     @property
     def filtered_count(self):
-        """Gets the filtered_count of this ScanKvResponse.
+        r"""Gets the filtered_count of this ScanKvResponse.
 
         被过滤掉的文档数量。
 
@@ -105,7 +105,7 @@ class ScanKvResponse(SdkResponse):
 
     @filtered_count.setter
     def filtered_count(self, filtered_count):
-        """Sets the filtered_count of this ScanKvResponse.
+        r"""Sets the filtered_count of this ScanKvResponse.
 
         被过滤掉的文档数量。
 
@@ -116,7 +116,7 @@ class ScanKvResponse(SdkResponse):
 
     @property
     def cursor_key(self):
-        """Gets the cursor_key of this ScanKvResponse.
+        r"""Gets the cursor_key of this ScanKvResponse.
 
         下次请求时的start_key，该值为空时，表示指定范围或者指定filter条件所有kv已经返回。
 
@@ -127,7 +127,7 @@ class ScanKvResponse(SdkResponse):
 
     @cursor_key.setter
     def cursor_key(self, cursor_key):
-        """Sets the cursor_key of this ScanKvResponse.
+        r"""Sets the cursor_key of this ScanKvResponse.
 
         下次请求时的start_key，该值为空时，表示指定范围或者指定filter条件所有kv已经返回。
 
@@ -138,7 +138,7 @@ class ScanKvResponse(SdkResponse):
 
     @property
     def returned_kv_items(self):
-        """Gets the returned_kv_items of this ScanKvResponse.
+        r"""Gets the returned_kv_items of this ScanKvResponse.
 
         返回的kv数据。
 
@@ -149,7 +149,7 @@ class ScanKvResponse(SdkResponse):
 
     @returned_kv_items.setter
     def returned_kv_items(self, returned_kv_items):
-        """Sets the returned_kv_items of this ScanKvResponse.
+        r"""Sets the returned_kv_items of this ScanKvResponse.
 
         返回的kv数据。
 
@@ -160,7 +160,7 @@ class ScanKvResponse(SdkResponse):
 
     @property
     def returned_segment_items(self):
-        """Gets the returned_segment_items of this ScanKvResponse.
+        r"""Gets the returned_segment_items of this ScanKvResponse.
 
         采样段区间列表。
 
@@ -171,7 +171,7 @@ class ScanKvResponse(SdkResponse):
 
     @returned_segment_items.setter
     def returned_segment_items(self, returned_segment_items):
-        """Sets the returned_segment_items of this ScanKvResponse.
+        r"""Sets the returned_segment_items of this ScanKvResponse.
 
         采样段区间列表。
 

@@ -35,7 +35,7 @@ class ListApplyRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, offset=None, limit=None, api_name=None, query_type=None):
-        """ListApplyRequest
+        r"""ListApplyRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListApplyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListApplyRequest.
+        r"""Gets the workspace of this ListApplyRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -88,7 +88,7 @@ class ListApplyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListApplyRequest.
+        r"""Sets the workspace of this ListApplyRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -99,7 +99,7 @@ class ListApplyRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListApplyRequest.
+        r"""Gets the dlm_type of this ListApplyRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -110,7 +110,7 @@ class ListApplyRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListApplyRequest.
+        r"""Sets the dlm_type of this ListApplyRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -121,7 +121,7 @@ class ListApplyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApplyRequest.
+        r"""Gets the offset of this ListApplyRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -132,7 +132,7 @@ class ListApplyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApplyRequest.
+        r"""Sets the offset of this ListApplyRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -143,7 +143,7 @@ class ListApplyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplyRequest.
+        r"""Gets the limit of this ListApplyRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -154,7 +154,7 @@ class ListApplyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplyRequest.
+        r"""Sets the limit of this ListApplyRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -165,7 +165,7 @@ class ListApplyRequest:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListApplyRequest.
+        r"""Gets the api_name of this ListApplyRequest.
 
         api名称。
 
@@ -176,7 +176,7 @@ class ListApplyRequest:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListApplyRequest.
+        r"""Sets the api_name of this ListApplyRequest.
 
         api名称。
 
@@ -187,7 +187,7 @@ class ListApplyRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListApplyRequest.
+        r"""Gets the query_type of this ListApplyRequest.
 
         查询类型, 0:收到的申请(待审核), 1:收到的申请(已审核), 2:发出的申请(开发), 3:发出的申请(调用)。
 
@@ -198,7 +198,7 @@ class ListApplyRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListApplyRequest.
+        r"""Sets the query_type of this ListApplyRequest.
 
         查询类型, 0:收到的申请(待审核), 1:收到的申请(已审核), 2:发出的申请(开发), 3:发出的申请(调用)。
 

@@ -26,7 +26,7 @@ class ListDDoSConnectionNumberResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListDDoSConnectionNumberResponse
+        r"""ListDDoSConnectionNumberResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDDoSConnectionNumberResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDDoSConnectionNumberResponse.
+        r"""Gets the data of this ListDDoSConnectionNumberResponse.
 
         items
 
@@ -55,7 +55,7 @@ class ListDDoSConnectionNumberResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDDoSConnectionNumberResponse.
+        r"""Sets the data of this ListDDoSConnectionNumberResponse.
 
         items
 

@@ -27,7 +27,7 @@ class VertexLocationDto:
     }
 
     def __init__(self, x=None, y=None):
-        """VertexLocationDto
+        r"""VertexLocationDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VertexLocationDto:
 
     @property
     def x(self):
-        """Gets the x of this VertexLocationDto.
+        r"""Gets the x of this VertexLocationDto.
 
         子任务的画布横坐标
 
@@ -61,7 +61,7 @@ class VertexLocationDto:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this VertexLocationDto.
+        r"""Sets the x of this VertexLocationDto.
 
         子任务的画布横坐标
 
@@ -72,7 +72,7 @@ class VertexLocationDto:
 
     @property
     def y(self):
-        """Gets the y of this VertexLocationDto.
+        r"""Gets the y of this VertexLocationDto.
 
         子任务的画布纵坐标
 
@@ -83,7 +83,7 @@ class VertexLocationDto:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this VertexLocationDto.
+        r"""Sets the y of this VertexLocationDto.
 
         子任务的画布纵坐标
 

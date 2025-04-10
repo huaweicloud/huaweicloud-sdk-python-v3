@@ -27,7 +27,7 @@ class AgencyAuthorizeInfoRsp:
     }
 
     def __init__(self, csms=None, kms=None):
-        """AgencyAuthorizeInfoRsp
+        r"""AgencyAuthorizeInfoRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AgencyAuthorizeInfoRsp:
 
     @property
     def csms(self):
-        """Gets the csms of this AgencyAuthorizeInfoRsp.
+        r"""Gets the csms of this AgencyAuthorizeInfoRsp.
 
         凭据管理权限信息。
 
@@ -61,7 +61,7 @@ class AgencyAuthorizeInfoRsp:
 
     @csms.setter
     def csms(self, csms):
-        """Sets the csms of this AgencyAuthorizeInfoRsp.
+        r"""Sets the csms of this AgencyAuthorizeInfoRsp.
 
         凭据管理权限信息。
 
@@ -72,7 +72,7 @@ class AgencyAuthorizeInfoRsp:
 
     @property
     def kms(self):
-        """Gets the kms of this AgencyAuthorizeInfoRsp.
+        r"""Gets the kms of this AgencyAuthorizeInfoRsp.
 
         密钥管理权限信息。
 
@@ -83,7 +83,7 @@ class AgencyAuthorizeInfoRsp:
 
     @kms.setter
     def kms(self, kms):
-        """Sets the kms of this AgencyAuthorizeInfoRsp.
+        r"""Sets the kms of this AgencyAuthorizeInfoRsp.
 
         密钥管理权限信息。
 

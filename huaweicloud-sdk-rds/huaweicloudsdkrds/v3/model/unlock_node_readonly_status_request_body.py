@@ -25,7 +25,7 @@ class UnlockNodeReadonlyStatusRequestBody:
     }
 
     def __init__(self, status_preservation_time=None):
-        """UnlockNodeReadonlyStatusRequestBody
+        r"""UnlockNodeReadonlyStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnlockNodeReadonlyStatusRequestBody:
 
     @property
     def status_preservation_time(self):
-        """Gets the status_preservation_time of this UnlockNodeReadonlyStatusRequestBody.
+        r"""Gets the status_preservation_time of this UnlockNodeReadonlyStatusRequestBody.
 
         Ha保持不再设置节点只读状态的时间，单位为分钟。
 
@@ -53,7 +53,7 @@ class UnlockNodeReadonlyStatusRequestBody:
 
     @status_preservation_time.setter
     def status_preservation_time(self, status_preservation_time):
-        """Sets the status_preservation_time of this UnlockNodeReadonlyStatusRequestBody.
+        r"""Sets the status_preservation_time of this UnlockNodeReadonlyStatusRequestBody.
 
         Ha保持不再设置节点只读状态的时间，单位为分钟。
 

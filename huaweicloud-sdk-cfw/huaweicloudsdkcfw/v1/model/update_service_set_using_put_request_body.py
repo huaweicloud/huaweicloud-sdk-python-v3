@@ -27,7 +27,7 @@ class UpdateServiceSetUsingPUTRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateServiceSetUsingPUTRequestBody
+        r"""UpdateServiceSetUsingPUTRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateServiceSetUsingPUTRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateServiceSetUsingPUTRequestBody.
+        r"""Gets the name of this UpdateServiceSetUsingPUTRequestBody.
 
         服务组名称
 
@@ -61,7 +61,7 @@ class UpdateServiceSetUsingPUTRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateServiceSetUsingPUTRequestBody.
+        r"""Sets the name of this UpdateServiceSetUsingPUTRequestBody.
 
         服务组名称
 
@@ -72,7 +72,7 @@ class UpdateServiceSetUsingPUTRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateServiceSetUsingPUTRequestBody.
+        r"""Gets the description of this UpdateServiceSetUsingPUTRequestBody.
 
         服务组描述信息
 
@@ -83,7 +83,7 @@ class UpdateServiceSetUsingPUTRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServiceSetUsingPUTRequestBody.
+        r"""Sets the description of this UpdateServiceSetUsingPUTRequestBody.
 
         服务组描述信息
 

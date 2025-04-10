@@ -33,7 +33,7 @@ class JobDetailRespRepairProgressInfo:
     }
 
     def __init__(self, status=None, progress=None, error_msg=None, count=None, repair_progress_details=None):
-        """JobDetailRespRepairProgressInfo
+        r"""JobDetailRespRepairProgressInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class JobDetailRespRepairProgressInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobDetailRespRepairProgressInfo.
+        r"""Gets the status of this JobDetailRespRepairProgressInfo.
 
         修复状态。
 
@@ -82,7 +82,7 @@ class JobDetailRespRepairProgressInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobDetailRespRepairProgressInfo.
+        r"""Sets the status of this JobDetailRespRepairProgressInfo.
 
         修复状态。
 
@@ -93,7 +93,7 @@ class JobDetailRespRepairProgressInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this JobDetailRespRepairProgressInfo.
+        r"""Gets the progress of this JobDetailRespRepairProgressInfo.
 
         修复进度，百分比。
 
@@ -104,7 +104,7 @@ class JobDetailRespRepairProgressInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobDetailRespRepairProgressInfo.
+        r"""Sets the progress of this JobDetailRespRepairProgressInfo.
 
         修复进度，百分比。
 
@@ -115,7 +115,7 @@ class JobDetailRespRepairProgressInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this JobDetailRespRepairProgressInfo.
+        r"""Gets the error_msg of this JobDetailRespRepairProgressInfo.
 
         错误信息。
 
@@ -126,7 +126,7 @@ class JobDetailRespRepairProgressInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this JobDetailRespRepairProgressInfo.
+        r"""Sets the error_msg of this JobDetailRespRepairProgressInfo.
 
         错误信息。
 
@@ -137,7 +137,7 @@ class JobDetailRespRepairProgressInfo:
 
     @property
     def count(self):
-        """Gets the count of this JobDetailRespRepairProgressInfo.
+        r"""Gets the count of this JobDetailRespRepairProgressInfo.
 
         总数。
 
@@ -148,7 +148,7 @@ class JobDetailRespRepairProgressInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this JobDetailRespRepairProgressInfo.
+        r"""Sets the count of this JobDetailRespRepairProgressInfo.
 
         总数。
 
@@ -159,7 +159,7 @@ class JobDetailRespRepairProgressInfo:
 
     @property
     def repair_progress_details(self):
-        """Gets the repair_progress_details of this JobDetailRespRepairProgressInfo.
+        r"""Gets the repair_progress_details of this JobDetailRespRepairProgressInfo.
 
         :return: The repair_progress_details of this JobDetailRespRepairProgressInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfoRepairProgressDetails`
@@ -168,7 +168,7 @@ class JobDetailRespRepairProgressInfo:
 
     @repair_progress_details.setter
     def repair_progress_details(self, repair_progress_details):
-        """Sets the repair_progress_details of this JobDetailRespRepairProgressInfo.
+        r"""Sets the repair_progress_details of this JobDetailRespRepairProgressInfo.
 
         :param repair_progress_details: The repair_progress_details of this JobDetailRespRepairProgressInfo.
         :type repair_progress_details: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfoRepairProgressDetails`

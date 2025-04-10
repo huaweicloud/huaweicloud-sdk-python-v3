@@ -27,7 +27,7 @@ class CreateTemplateRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateTemplateRequest
+        r"""CreateTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTemplateRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateTemplateRequest.
+        r"""Gets the workspace of this CreateTemplateRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateTemplateRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateTemplateRequest.
+        r"""Sets the workspace of this CreateTemplateRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTemplateRequest.
+        r"""Gets the body of this CreateTemplateRequest.
 
         :return: The body of this CreateTemplateRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TemplateRO`
@@ -80,7 +80,7 @@ class CreateTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTemplateRequest.
+        r"""Sets the body of this CreateTemplateRequest.
 
         :param body: The body of this CreateTemplateRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TemplateRO`

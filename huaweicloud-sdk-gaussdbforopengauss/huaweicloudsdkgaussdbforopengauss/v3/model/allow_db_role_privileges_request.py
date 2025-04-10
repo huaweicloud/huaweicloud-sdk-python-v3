@@ -29,7 +29,7 @@ class AllowDbRolePrivilegesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """AllowDbRolePrivilegesRequest
+        r"""AllowDbRolePrivilegesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AllowDbRolePrivilegesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AllowDbRolePrivilegesRequest.
+        r"""Gets the x_language of this AllowDbRolePrivilegesRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class AllowDbRolePrivilegesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AllowDbRolePrivilegesRequest.
+        r"""Sets the x_language of this AllowDbRolePrivilegesRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class AllowDbRolePrivilegesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AllowDbRolePrivilegesRequest.
+        r"""Gets the instance_id of this AllowDbRolePrivilegesRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class AllowDbRolePrivilegesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AllowDbRolePrivilegesRequest.
+        r"""Sets the instance_id of this AllowDbRolePrivilegesRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class AllowDbRolePrivilegesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AllowDbRolePrivilegesRequest.
+        r"""Gets the body of this AllowDbRolePrivilegesRequest.
 
         :return: The body of this AllowDbRolePrivilegesRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbRolePrivilegesRequestBody`
@@ -109,7 +109,7 @@ class AllowDbRolePrivilegesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AllowDbRolePrivilegesRequest.
+        r"""Sets the body of this AllowDbRolePrivilegesRequest.
 
         :param body: The body of this AllowDbRolePrivilegesRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbRolePrivilegesRequestBody`

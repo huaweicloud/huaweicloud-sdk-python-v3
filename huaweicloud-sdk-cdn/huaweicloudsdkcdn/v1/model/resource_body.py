@@ -25,7 +25,7 @@ class ResourceBody:
     }
 
     def __init__(self, sources=None):
-        """ResourceBody
+        r"""ResourceBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResourceBody:
 
     @property
     def sources(self):
-        """Gets the sources of this ResourceBody.
+        r"""Gets the sources of this ResourceBody.
 
         源站配置。
 
@@ -53,7 +53,7 @@ class ResourceBody:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ResourceBody.
+        r"""Sets the sources of this ResourceBody.
 
         源站配置。
 

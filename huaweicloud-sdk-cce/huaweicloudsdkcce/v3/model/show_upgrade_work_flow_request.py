@@ -27,7 +27,7 @@ class ShowUpgradeWorkFlowRequest:
     }
 
     def __init__(self, cluster_id=None, upgrade_workflow_id=None):
-        """ShowUpgradeWorkFlowRequest
+        r"""ShowUpgradeWorkFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowUpgradeWorkFlowRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowUpgradeWorkFlowRequest.
+        r"""Gets the cluster_id of this ShowUpgradeWorkFlowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -59,7 +59,7 @@ class ShowUpgradeWorkFlowRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowUpgradeWorkFlowRequest.
+        r"""Sets the cluster_id of this ShowUpgradeWorkFlowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -70,7 +70,7 @@ class ShowUpgradeWorkFlowRequest:
 
     @property
     def upgrade_workflow_id(self):
-        """Gets the upgrade_workflow_id of this ShowUpgradeWorkFlowRequest.
+        r"""Gets the upgrade_workflow_id of this ShowUpgradeWorkFlowRequest.
 
         集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -81,7 +81,7 @@ class ShowUpgradeWorkFlowRequest:
 
     @upgrade_workflow_id.setter
     def upgrade_workflow_id(self, upgrade_workflow_id):
-        """Sets the upgrade_workflow_id of this ShowUpgradeWorkFlowRequest.
+        r"""Sets the upgrade_workflow_id of this ShowUpgradeWorkFlowRequest.
 
         集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

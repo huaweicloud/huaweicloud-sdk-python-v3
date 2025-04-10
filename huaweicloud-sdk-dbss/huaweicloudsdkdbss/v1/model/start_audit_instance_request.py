@@ -25,7 +25,7 @@ class StartAuditInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """StartAuditInstanceRequest
+        r"""StartAuditInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartAuditInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartAuditInstanceRequest.
+        r"""Gets the body of this StartAuditInstanceRequest.
 
         :return: The body of this StartAuditInstanceRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.ServerIdBean`
@@ -52,7 +52,7 @@ class StartAuditInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartAuditInstanceRequest.
+        r"""Sets the body of this StartAuditInstanceRequest.
 
         :param body: The body of this StartAuditInstanceRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.ServerIdBean`

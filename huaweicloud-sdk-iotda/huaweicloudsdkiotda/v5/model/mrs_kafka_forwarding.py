@@ -29,7 +29,7 @@ class MrsKafkaForwarding:
     }
 
     def __init__(self, addresses=None, topic=None, kerberos_authentication=None):
-        """MrsKafkaForwarding
+        r"""MrsKafkaForwarding
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MrsKafkaForwarding:
 
     @property
     def addresses(self):
-        """Gets the addresses of this MrsKafkaForwarding.
+        r"""Gets the addresses of this MrsKafkaForwarding.
 
         **参数说明**：转发kafka消息对应的地址列表
 
@@ -66,7 +66,7 @@ class MrsKafkaForwarding:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this MrsKafkaForwarding.
+        r"""Sets the addresses of this MrsKafkaForwarding.
 
         **参数说明**：转发kafka消息对应的地址列表
 
@@ -77,7 +77,7 @@ class MrsKafkaForwarding:
 
     @property
     def topic(self):
-        """Gets the topic of this MrsKafkaForwarding.
+        r"""Gets the topic of this MrsKafkaForwarding.
 
         **参数说明**：转发kafka消息关联的topic信息。
 
@@ -88,7 +88,7 @@ class MrsKafkaForwarding:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this MrsKafkaForwarding.
+        r"""Sets the topic of this MrsKafkaForwarding.
 
         **参数说明**：转发kafka消息关联的topic信息。
 
@@ -99,7 +99,7 @@ class MrsKafkaForwarding:
 
     @property
     def kerberos_authentication(self):
-        """Gets the kerberos_authentication of this MrsKafkaForwarding.
+        r"""Gets the kerberos_authentication of this MrsKafkaForwarding.
 
         是否Kerberos认证，默认为false。
 
@@ -110,7 +110,7 @@ class MrsKafkaForwarding:
 
     @kerberos_authentication.setter
     def kerberos_authentication(self, kerberos_authentication):
-        """Sets the kerberos_authentication of this MrsKafkaForwarding.
+        r"""Sets the kerberos_authentication of this MrsKafkaForwarding.
 
         是否Kerberos认证，默认为false。
 

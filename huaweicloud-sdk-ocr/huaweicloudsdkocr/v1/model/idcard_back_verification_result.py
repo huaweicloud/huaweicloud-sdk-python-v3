@@ -27,7 +27,7 @@ class IdcardBackVerificationResult:
     }
 
     def __init__(self, valid_date=None, valid_validity_period=None):
-        """IdcardBackVerificationResult
+        r"""IdcardBackVerificationResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IdcardBackVerificationResult:
 
     @property
     def valid_date(self):
-        """Gets the valid_date of this IdcardBackVerificationResult.
+        r"""Gets the valid_date of this IdcardBackVerificationResult.
 
         当前日期是否在有效期内。 - true：表示当前日期在有效期内。 - false：表示当前日期不在有效期内。 当识别结果为单页，身份证图片是人像面时，默认是false。输入参数side为double_side时，该字段仅在back字典中存在。 仅在输入参数return_verification为true时，返回该字段。 
 
@@ -61,7 +61,7 @@ class IdcardBackVerificationResult:
 
     @valid_date.setter
     def valid_date(self, valid_date):
-        """Sets the valid_date of this IdcardBackVerificationResult.
+        r"""Sets the valid_date of this IdcardBackVerificationResult.
 
         当前日期是否在有效期内。 - true：表示当前日期在有效期内。 - false：表示当前日期不在有效期内。 当识别结果为单页，身份证图片是人像面时，默认是false。输入参数side为double_side时，该字段仅在back字典中存在。 仅在输入参数return_verification为true时，返回该字段。 
 
@@ -72,7 +72,7 @@ class IdcardBackVerificationResult:
 
     @property
     def valid_validity_period(self):
-        """Gets the valid_validity_period of this IdcardBackVerificationResult.
+        r"""Gets the valid_validity_period of this IdcardBackVerificationResult.
 
         身份证有效日期是否合法。 - true：表示身份证的有效日期合法 - false：表示身份证有效日期非法 当识别结果为单页，身份证图片是人像面时，默认是false。输入参数side为double_side时，该字段仅在back字典中存在。 仅在输入参数return_verification为true时，返回该字段。 
 
@@ -83,7 +83,7 @@ class IdcardBackVerificationResult:
 
     @valid_validity_period.setter
     def valid_validity_period(self, valid_validity_period):
-        """Sets the valid_validity_period of this IdcardBackVerificationResult.
+        r"""Sets the valid_validity_period of this IdcardBackVerificationResult.
 
         身份证有效日期是否合法。 - true：表示身份证的有效日期合法 - false：表示身份证有效日期非法 当识别结果为单页，身份证图片是人像面时，默认是false。输入参数side为double_side时，该字段仅在back字典中存在。 仅在输入参数return_verification为true时，返回该字段。 
 

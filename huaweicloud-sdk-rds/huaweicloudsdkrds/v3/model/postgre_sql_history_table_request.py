@@ -33,7 +33,7 @@ class PostgreSQLHistoryTableRequest:
     }
 
     def __init__(self, instance_ids=None, restore_time=None, database_name_like=None, table_name_like=None, instance_name_like=None):
-        """PostgreSQLHistoryTableRequest
+        r"""PostgreSQLHistoryTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PostgreSQLHistoryTableRequest:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this PostgreSQLHistoryTableRequest.
+        r"""Gets the instance_ids of this PostgreSQLHistoryTableRequest.
 
         实例ID集合
 
@@ -80,7 +80,7 @@ class PostgreSQLHistoryTableRequest:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this PostgreSQLHistoryTableRequest.
+        r"""Sets the instance_ids of this PostgreSQLHistoryTableRequest.
 
         实例ID集合
 
@@ -91,7 +91,7 @@ class PostgreSQLHistoryTableRequest:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this PostgreSQLHistoryTableRequest.
+        r"""Gets the restore_time of this PostgreSQLHistoryTableRequest.
 
         恢复时间点
 
@@ -102,7 +102,7 @@ class PostgreSQLHistoryTableRequest:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this PostgreSQLHistoryTableRequest.
+        r"""Sets the restore_time of this PostgreSQLHistoryTableRequest.
 
         恢复时间点
 
@@ -113,7 +113,7 @@ class PostgreSQLHistoryTableRequest:
 
     @property
     def database_name_like(self):
-        """Gets the database_name_like of this PostgreSQLHistoryTableRequest.
+        r"""Gets the database_name_like of this PostgreSQLHistoryTableRequest.
 
         数据库名，模糊查询
 
@@ -124,7 +124,7 @@ class PostgreSQLHistoryTableRequest:
 
     @database_name_like.setter
     def database_name_like(self, database_name_like):
-        """Sets the database_name_like of this PostgreSQLHistoryTableRequest.
+        r"""Sets the database_name_like of this PostgreSQLHistoryTableRequest.
 
         数据库名，模糊查询
 
@@ -135,7 +135,7 @@ class PostgreSQLHistoryTableRequest:
 
     @property
     def table_name_like(self):
-        """Gets the table_name_like of this PostgreSQLHistoryTableRequest.
+        r"""Gets the table_name_like of this PostgreSQLHistoryTableRequest.
 
         数据库表名，模糊查询
 
@@ -146,7 +146,7 @@ class PostgreSQLHistoryTableRequest:
 
     @table_name_like.setter
     def table_name_like(self, table_name_like):
-        """Sets the table_name_like of this PostgreSQLHistoryTableRequest.
+        r"""Sets the table_name_like of this PostgreSQLHistoryTableRequest.
 
         数据库表名，模糊查询
 
@@ -157,7 +157,7 @@ class PostgreSQLHistoryTableRequest:
 
     @property
     def instance_name_like(self):
-        """Gets the instance_name_like of this PostgreSQLHistoryTableRequest.
+        r"""Gets the instance_name_like of this PostgreSQLHistoryTableRequest.
 
         实例名称，模糊查询
 
@@ -168,7 +168,7 @@ class PostgreSQLHistoryTableRequest:
 
     @instance_name_like.setter
     def instance_name_like(self, instance_name_like):
-        """Sets the instance_name_like of this PostgreSQLHistoryTableRequest.
+        r"""Sets the instance_name_like of this PostgreSQLHistoryTableRequest.
 
         实例名称，模糊查询
 

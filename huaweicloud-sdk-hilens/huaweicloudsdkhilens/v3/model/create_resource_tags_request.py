@@ -29,7 +29,7 @@ class CreateResourceTagsRequest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, body=None):
-        """CreateResourceTagsRequest
+        r"""CreateResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResourceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateResourceTagsRequest.
+        r"""Gets the resource_id of this CreateResourceTagsRequest.
 
         资源ID，不同资源（节点，部署，配置项，密钥）有不同的资源ID
 
@@ -66,7 +66,7 @@ class CreateResourceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateResourceTagsRequest.
+        r"""Sets the resource_id of this CreateResourceTagsRequest.
 
         资源ID，不同资源（节点，部署，配置项，密钥）有不同的资源ID
 
@@ -77,7 +77,7 @@ class CreateResourceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateResourceTagsRequest.
+        r"""Gets the resource_type of this CreateResourceTagsRequest.
 
         资源类型（节点，部署，配置项，密钥）
 
@@ -88,7 +88,7 @@ class CreateResourceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateResourceTagsRequest.
+        r"""Sets the resource_type of this CreateResourceTagsRequest.
 
         资源类型（节点，部署，配置项，密钥）
 
@@ -99,7 +99,7 @@ class CreateResourceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceTagsRequest.
+        r"""Gets the body of this CreateResourceTagsRequest.
 
         :return: The body of this CreateResourceTagsRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.TagRequestDetail`
@@ -108,7 +108,7 @@ class CreateResourceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceTagsRequest.
+        r"""Sets the body of this CreateResourceTagsRequest.
 
         :param body: The body of this CreateResourceTagsRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.TagRequestDetail`

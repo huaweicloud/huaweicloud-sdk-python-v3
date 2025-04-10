@@ -31,7 +31,7 @@ class BatchUpdateMembersRequestBody:
     }
 
     def __init__(self, images=None, project_id=None, status=None, vault_id=None):
-        """BatchUpdateMembersRequestBody
+        r"""BatchUpdateMembersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BatchUpdateMembersRequestBody:
 
     @property
     def images(self):
-        """Gets the images of this BatchUpdateMembersRequestBody.
+        r"""Gets the images of this BatchUpdateMembersRequestBody.
 
         镜像ID列表。
 
@@ -72,7 +72,7 @@ class BatchUpdateMembersRequestBody:
 
     @images.setter
     def images(self, images):
-        """Sets the images of this BatchUpdateMembersRequestBody.
+        r"""Sets the images of this BatchUpdateMembersRequestBody.
 
         镜像ID列表。
 
@@ -83,7 +83,7 @@ class BatchUpdateMembersRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchUpdateMembersRequestBody.
+        r"""Gets the project_id of this BatchUpdateMembersRequestBody.
 
         项目ID。
 
@@ -94,7 +94,7 @@ class BatchUpdateMembersRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchUpdateMembersRequestBody.
+        r"""Sets the project_id of this BatchUpdateMembersRequestBody.
 
         项目ID。
 
@@ -105,7 +105,7 @@ class BatchUpdateMembersRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this BatchUpdateMembersRequestBody.
+        r"""Gets the status of this BatchUpdateMembersRequestBody.
 
         镜像成员的状态。 取值如下： accepted：表示接受共享镜像。接受后，该镜像在用户镜像列表中可见，用户可以使用该镜像创建云服务器。 rejected：表示拒绝共享镜像。拒绝后，该镜像在用户镜像列表中不可见，但是，用户仍然可以使用该镜像创建云服务器。
 
@@ -116,7 +116,7 @@ class BatchUpdateMembersRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchUpdateMembersRequestBody.
+        r"""Sets the status of this BatchUpdateMembersRequestBody.
 
         镜像成员的状态。 取值如下： accepted：表示接受共享镜像。接受后，该镜像在用户镜像列表中可见，用户可以使用该镜像创建云服务器。 rejected：表示拒绝共享镜像。拒绝后，该镜像在用户镜像列表中不可见，但是，用户仍然可以使用该镜像创建云服务器。
 
@@ -127,7 +127,7 @@ class BatchUpdateMembersRequestBody:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this BatchUpdateMembersRequestBody.
+        r"""Gets the vault_id of this BatchUpdateMembersRequestBody.
 
         存储库ID。 如果是通过CBR创建的整机镜像，则在接受该共享镜像时，为必选参数，需传入该值。
 
@@ -138,7 +138,7 @@ class BatchUpdateMembersRequestBody:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this BatchUpdateMembersRequestBody.
+        r"""Sets the vault_id of this BatchUpdateMembersRequestBody.
 
         存储库ID。 如果是通过CBR创建的整机镜像，则在接受该共享镜像时，为必选参数，需传入该值。
 

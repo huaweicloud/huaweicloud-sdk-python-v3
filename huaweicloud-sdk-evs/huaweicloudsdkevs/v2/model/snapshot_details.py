@@ -45,7 +45,7 @@ class SnapshotDetails:
     }
 
     def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None):
-        """SnapshotDetails
+        r"""SnapshotDetails
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class SnapshotDetails:
 
     @property
     def id(self):
-        """Gets the id of this SnapshotDetails.
+        r"""Gets the id of this SnapshotDetails.
 
         云硬盘快照ID。
 
@@ -124,7 +124,7 @@ class SnapshotDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SnapshotDetails.
+        r"""Sets the id of this SnapshotDetails.
 
         云硬盘快照ID。
 
@@ -135,7 +135,7 @@ class SnapshotDetails:
 
     @property
     def status(self):
-        """Gets the status of this SnapshotDetails.
+        r"""Gets the status of this SnapshotDetails.
 
         云硬盘快照状态。
 
@@ -146,7 +146,7 @@ class SnapshotDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SnapshotDetails.
+        r"""Sets the status of this SnapshotDetails.
 
         云硬盘快照状态。
 
@@ -157,7 +157,7 @@ class SnapshotDetails:
 
     @property
     def name(self):
-        """Gets the name of this SnapshotDetails.
+        r"""Gets the name of this SnapshotDetails.
 
         云硬盘快照名称。
 
@@ -168,7 +168,7 @@ class SnapshotDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SnapshotDetails.
+        r"""Sets the name of this SnapshotDetails.
 
         云硬盘快照名称。
 
@@ -179,7 +179,7 @@ class SnapshotDetails:
 
     @property
     def description(self):
-        """Gets the description of this SnapshotDetails.
+        r"""Gets the description of this SnapshotDetails.
 
         云硬盘快照描述信息。
 
@@ -190,7 +190,7 @@ class SnapshotDetails:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SnapshotDetails.
+        r"""Sets the description of this SnapshotDetails.
 
         云硬盘快照描述信息。
 
@@ -201,7 +201,7 @@ class SnapshotDetails:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SnapshotDetails.
+        r"""Gets the created_at of this SnapshotDetails.
 
         云硬盘快照创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -212,7 +212,7 @@ class SnapshotDetails:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SnapshotDetails.
+        r"""Sets the created_at of this SnapshotDetails.
 
         云硬盘快照创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -223,7 +223,7 @@ class SnapshotDetails:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SnapshotDetails.
+        r"""Gets the updated_at of this SnapshotDetails.
 
         快照更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -234,7 +234,7 @@ class SnapshotDetails:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SnapshotDetails.
+        r"""Sets the updated_at of this SnapshotDetails.
 
         快照更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -245,7 +245,7 @@ class SnapshotDetails:
 
     @property
     def metadata(self):
-        """Gets the metadata of this SnapshotDetails.
+        r"""Gets the metadata of this SnapshotDetails.
 
         云硬盘快照的元数据信息。
 
@@ -256,7 +256,7 @@ class SnapshotDetails:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this SnapshotDetails.
+        r"""Sets the metadata of this SnapshotDetails.
 
         云硬盘快照的元数据信息。
 
@@ -267,7 +267,7 @@ class SnapshotDetails:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this SnapshotDetails.
+        r"""Gets the volume_id of this SnapshotDetails.
 
         快照所属的云硬盘ID。
 
@@ -278,7 +278,7 @@ class SnapshotDetails:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this SnapshotDetails.
+        r"""Sets the volume_id of this SnapshotDetails.
 
         快照所属的云硬盘ID。
 
@@ -289,7 +289,7 @@ class SnapshotDetails:
 
     @property
     def size(self):
-        """Gets the size of this SnapshotDetails.
+        r"""Gets the size of this SnapshotDetails.
 
         云硬盘快照大小，单位为GB。
 
@@ -300,7 +300,7 @@ class SnapshotDetails:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SnapshotDetails.
+        r"""Sets the size of this SnapshotDetails.
 
         云硬盘快照大小，单位为GB。
 
@@ -311,7 +311,7 @@ class SnapshotDetails:
 
     @property
     def os_extended_snapshot_attributesproject_id(self):
-        """Gets the os_extended_snapshot_attributesproject_id of this SnapshotDetails.
+        r"""Gets the os_extended_snapshot_attributesproject_id of this SnapshotDetails.
 
         预留属性。
 
@@ -322,7 +322,7 @@ class SnapshotDetails:
 
     @os_extended_snapshot_attributesproject_id.setter
     def os_extended_snapshot_attributesproject_id(self, os_extended_snapshot_attributesproject_id):
-        """Sets the os_extended_snapshot_attributesproject_id of this SnapshotDetails.
+        r"""Sets the os_extended_snapshot_attributesproject_id of this SnapshotDetails.
 
         预留属性。
 
@@ -333,7 +333,7 @@ class SnapshotDetails:
 
     @property
     def os_extended_snapshot_attributesprogress(self):
-        """Gets the os_extended_snapshot_attributesprogress of this SnapshotDetails.
+        r"""Gets the os_extended_snapshot_attributesprogress of this SnapshotDetails.
 
         预留属性。
 
@@ -344,7 +344,7 @@ class SnapshotDetails:
 
     @os_extended_snapshot_attributesprogress.setter
     def os_extended_snapshot_attributesprogress(self, os_extended_snapshot_attributesprogress):
-        """Sets the os_extended_snapshot_attributesprogress of this SnapshotDetails.
+        r"""Sets the os_extended_snapshot_attributesprogress of this SnapshotDetails.
 
         预留属性。
 

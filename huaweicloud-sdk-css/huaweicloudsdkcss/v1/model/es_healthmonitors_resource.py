@@ -31,7 +31,7 @@ class EsHealthmonitorsResource:
     }
 
     def __init__(self, id=None, name=None, protocol_port=None, ipgroup=None):
-        """EsHealthmonitorsResource
+        r"""EsHealthmonitorsResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EsHealthmonitorsResource:
 
     @property
     def id(self):
-        """Gets the id of this EsHealthmonitorsResource.
+        r"""Gets the id of this EsHealthmonitorsResource.
 
         后端服务器ID。
 
@@ -75,7 +75,7 @@ class EsHealthmonitorsResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EsHealthmonitorsResource.
+        r"""Sets the id of this EsHealthmonitorsResource.
 
         后端服务器ID。
 
@@ -86,7 +86,7 @@ class EsHealthmonitorsResource:
 
     @property
     def name(self):
-        """Gets the name of this EsHealthmonitorsResource.
+        r"""Gets the name of this EsHealthmonitorsResource.
 
         后端服务器的名称。
 
@@ -97,7 +97,7 @@ class EsHealthmonitorsResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EsHealthmonitorsResource.
+        r"""Sets the name of this EsHealthmonitorsResource.
 
         后端服务器的名称。
 
@@ -108,7 +108,7 @@ class EsHealthmonitorsResource:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this EsHealthmonitorsResource.
+        r"""Gets the protocol_port of this EsHealthmonitorsResource.
 
         后端服务的前端监听端口。
 
@@ -119,7 +119,7 @@ class EsHealthmonitorsResource:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this EsHealthmonitorsResource.
+        r"""Sets the protocol_port of this EsHealthmonitorsResource.
 
         后端服务的前端监听端口。
 
@@ -130,7 +130,7 @@ class EsHealthmonitorsResource:
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this EsHealthmonitorsResource.
+        r"""Gets the ipgroup of this EsHealthmonitorsResource.
 
         :return: The ipgroup of this EsHealthmonitorsResource.
         :rtype: :class:`huaweicloudsdkcss.v1.EsHealthIpgroupResource`
@@ -139,7 +139,7 @@ class EsHealthmonitorsResource:
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this EsHealthmonitorsResource.
+        r"""Sets the ipgroup of this EsHealthmonitorsResource.
 
         :param ipgroup: The ipgroup of this EsHealthmonitorsResource.
         :type ipgroup: :class:`huaweicloudsdkcss.v1.EsHealthIpgroupResource`

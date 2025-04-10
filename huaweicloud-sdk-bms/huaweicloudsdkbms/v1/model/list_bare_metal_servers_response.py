@@ -28,7 +28,7 @@ class ListBareMetalServersResponse(SdkResponse):
     }
 
     def __init__(self, servers=None, count=None):
-        """ListBareMetalServersResponse
+        r"""ListBareMetalServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBareMetalServersResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this ListBareMetalServersResponse.
+        r"""Gets the servers of this ListBareMetalServersResponse.
 
         裸金属服务器详情列表
 
@@ -62,7 +62,7 @@ class ListBareMetalServersResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ListBareMetalServersResponse.
+        r"""Sets the servers of this ListBareMetalServersResponse.
 
         裸金属服务器详情列表
 
@@ -73,7 +73,7 @@ class ListBareMetalServersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBareMetalServersResponse.
+        r"""Gets the count of this ListBareMetalServersResponse.
 
         裸金属服务器的列表总数
 
@@ -84,7 +84,7 @@ class ListBareMetalServersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBareMetalServersResponse.
+        r"""Sets the count of this ListBareMetalServersResponse.
 
         裸金属服务器的列表总数
 

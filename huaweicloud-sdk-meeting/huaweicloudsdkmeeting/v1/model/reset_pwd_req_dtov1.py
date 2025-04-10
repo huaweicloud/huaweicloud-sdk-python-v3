@@ -29,7 +29,7 @@ class ResetPwdReqDTOV1:
     }
 
     def __init__(self, user=None, new_pwd=None, pass_word_type=None):
-        """ResetPwdReqDTOV1
+        r"""ResetPwdReqDTOV1
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetPwdReqDTOV1:
 
     @property
     def user(self):
-        """Gets the user of this ResetPwdReqDTOV1.
+        r"""Gets the user of this ResetPwdReqDTOV1.
 
         用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
 
@@ -66,7 +66,7 @@ class ResetPwdReqDTOV1:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ResetPwdReqDTOV1.
+        r"""Sets the user of this ResetPwdReqDTOV1.
 
         用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
 
@@ -77,7 +77,7 @@ class ResetPwdReqDTOV1:
 
     @property
     def new_pwd(self):
-        """Gets the new_pwd of this ResetPwdReqDTOV1.
+        r"""Gets the new_pwd of this ResetPwdReqDTOV1.
 
         用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） 
 
@@ -88,7 +88,7 @@ class ResetPwdReqDTOV1:
 
     @new_pwd.setter
     def new_pwd(self, new_pwd):
-        """Sets the new_pwd of this ResetPwdReqDTOV1.
+        r"""Sets the new_pwd of this ResetPwdReqDTOV1.
 
         用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） 
 
@@ -99,7 +99,7 @@ class ResetPwdReqDTOV1:
 
     @property
     def pass_word_type(self):
-        """Gets the pass_word_type of this ResetPwdReqDTOV1.
+        r"""Gets the pass_word_type of this ResetPwdReqDTOV1.
 
         * 1：临时密码，重置完密码后登录Web Portal根据配置可能需要强制修改密码 * 非1：正式密码，重置完密码后登录Web Portal不需要强制修改密码 
 
@@ -110,7 +110,7 @@ class ResetPwdReqDTOV1:
 
     @pass_word_type.setter
     def pass_word_type(self, pass_word_type):
-        """Sets the pass_word_type of this ResetPwdReqDTOV1.
+        r"""Sets the pass_word_type of this ResetPwdReqDTOV1.
 
         * 1：临时密码，重置完密码后登录Web Portal根据配置可能需要强制修改密码 * 非1：正式密码，重置完密码后登录Web Portal不需要强制修改密码 
 

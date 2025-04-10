@@ -34,7 +34,7 @@ class DwsAsyncClient(Client):
         return client_builder
 
     def add_queue_user_list_async(self, request):
-        """添加工作负载队列的绑定用户
+        r"""添加工作负载队列的绑定用户
 
         添加工作负载队列的绑定用户。
         
@@ -103,7 +103,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def add_snapshot_cross_region_policy_async(self, request):
-        """设置跨区域备份配置
+        r"""设置跨区域备份配置
 
         该接口用于设置跨区域备份配置
         
@@ -168,7 +168,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def add_workload_plan_stage_async(self, request):
-        """添加工作负载计划阶段
+        r"""添加工作负载计划阶段
 
         添加工作负载计划阶段。
         
@@ -237,7 +237,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def add_workload_queue_async(self, request):
-        """添加工作负载队列
+        r"""添加工作负载队列
 
         添加工作负载队列
         
@@ -304,7 +304,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def associate_eip_async(self, request):
-        """集群绑定EIP
+        r"""集群绑定EIP
 
         集群绑定Eip
         
@@ -371,7 +371,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def associate_elb_async(self, request):
-        """集群绑定ELB
+        r"""集群绑定ELB
 
         集群绑定Elb接口
         
@@ -438,7 +438,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def batch_create_cluster_cn_async(self, request):
-        """批量增加CN节点
+        r"""批量增加CN节点
 
         当用户集群创建后，实际需要的CN数量会随着业务需求而发生变化，因此管理CN节点功能的实现使用户可以根据实际需求动态调整集群CN数量。
         - 增删CN节点过程中不允许执行其他运维操作。
@@ -508,7 +508,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def batch_create_resource_tag_async(self, request):
-        """批量添加标签
+        r"""批量添加标签
 
         为指定集群批量添加标签。
         
@@ -575,7 +575,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def batch_delete_cluster_cn_async(self, request):
-        """批量删除CN节点
+        r"""批量删除CN节点
 
         当用户集群创建后，实际需要的CN数量会随着业务需求而发生变化，因此管理CN节点功能的实现使用户可以根据实际需求动态调整集群CN数量。
         - 增删CN节点过程中不允许执行其他运维操作。
@@ -645,7 +645,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def batch_delete_resource_tag_async(self, request):
-        """批量删除标签
+        r"""批量删除标签
 
         为指定集群批量删除标签。
         
@@ -712,7 +712,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def cancel_readonly_cluster_async(self, request):
-        """解除只读
+        r"""解除只读
 
         当集群进入只读状态时，无法进行数据库相关操作，用户可以在管理控制台解除集群的只读状态。触发只读状态可能是由于磁盘使用率过高，因此需要对集群数据进行清理或扩容。
         - 解除只读支持1.7.2及以上版本。
@@ -778,7 +778,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def change_security_group_async(self, request):
-        """修改集群安全组
+        r"""修改集群安全组
 
         该接口用于修改集群安全组
         
@@ -845,7 +845,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def check_cluster_async(self, request):
-        """创建集群前检查
+        r"""创建集群前检查
 
         创建集群前预检查
         
@@ -910,7 +910,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def check_disaster_name_async(self, request):
-        """检查容灾名称
+        r"""检查容灾名称
 
         该接口用于查询容灾名称是否可用。
         
@@ -981,7 +981,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def check_table_restore_async(self, request):
-        """用户恢复表名检测
+        r"""用户恢复表名检测
 
         该接口用于用户恢复表名检测
         
@@ -1048,7 +1048,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def convert_to_logical_cluster_async(self, request):
-        """物理集群转换到逻辑集群
+        r"""物理集群转换到逻辑集群
 
         逻辑集群-物理集群转换到逻辑集群
         
@@ -1115,7 +1115,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def copy_snapshot_async(self, request):
-        """复制快照
+        r"""复制快照
 
         该接口用于复制一个自动快照。
         
@@ -1182,7 +1182,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_alarm_sub_async(self, request):
-        """创建告警订阅
+        r"""创建告警订阅
 
         创建告警订阅
         
@@ -1247,7 +1247,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建集群
+        r"""创建集群
 
         该接口用于创建集群。
         集群必须要运行在VPC之内，创建集群前，您需要先创建VPC，并获取VPC和子网的id。
@@ -1314,7 +1314,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_cluster_dns_async(self, request):
-        """申请域名
+        r"""申请域名
 
         为指定集群申请域名。
         
@@ -1381,7 +1381,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_cluster_v2_async(self, request):
-        """V2创建集群
+        r"""V2创建集群
 
         该接口用于创建集群。
         集群必须要运行在VPC之内，创建集群前，您需要先创建VPC，并获取VPC和子网的id。
@@ -1448,7 +1448,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_cluster_workload_async(self, request):
-        """设置资源管理
+        r"""设置资源管理
 
         设置资源管理。
         
@@ -1515,7 +1515,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_data_source_async(self, request):
-        """创建数据源
+        r"""创建数据源
 
         该接口用于创建一个数据源。
         
@@ -1582,7 +1582,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_disaster_recovery_async(self, request):
-        """创建容灾
+        r"""创建容灾
 
         该接口用于创建集群间容灾。
         集群处于可用状态或者非均衡状态才可进行创建容灾操作。
@@ -1649,7 +1649,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_event_sub_async(self, request):
-        """创建订阅事件
+        r"""创建订阅事件
 
         添加订阅的事件
         
@@ -1714,7 +1714,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_logical_cluster_async(self, request):
-        """创建逻辑集群
+        r"""创建逻辑集群
 
         逻辑集群-创建逻辑集群
         
@@ -1781,7 +1781,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_snapshot_async(self, request):
-        """创建快照
+        r"""创建快照
 
         该接口用于为指定集群创建快照。
         
@@ -1846,7 +1846,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_snapshot_policy_async(self, request):
-        """添加快照策略
+        r"""添加快照策略
 
         该接口用于设置快照策略。
         
@@ -1913,7 +1913,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def create_workload_plan_async(self, request):
-        """添加工作负载计划
+        r"""添加工作负载计划
 
         添加工作负载计划
         
@@ -1980,7 +1980,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_alarm_sub_async(self, request):
-        """删除告警订阅
+        r"""删除告警订阅
 
         删除订阅的告警
         
@@ -2045,7 +2045,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_cluster_async(self, request):
-        """删除集群
+        r"""删除集群
 
         此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
         
@@ -2112,7 +2112,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_cluster_dns_async(self, request):
-        """删除集群域名
+        r"""删除集群域名
 
         删除指定集群域名。
         
@@ -2179,7 +2179,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_cluster_nodes_async(self, request):
-        """删除节点
+        r"""删除节点
 
         此接口用于删除节点。
         
@@ -2246,7 +2246,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_data_source_async(self, request):
-        """删除数据源
+        r"""删除数据源
 
         该接口用于删除一个数据源。
         
@@ -2313,7 +2313,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_disaster_recovery_async(self, request):
-        """删除容灾
+        r"""删除容灾
 
         该接口用于删除容灾操作。
         容灾状态为“创建失败”、“未启动”、“启动失败”、“已停止”、“停止失败”和“异常”时可以执行删除容灾操作。
@@ -2381,7 +2381,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_dws_cluster_async(self, request):
-        """删除集群V2
+        r"""删除集群V2
 
         此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
         
@@ -2450,7 +2450,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_event_sub_async(self, request):
-        """删除订阅事件
+        r"""删除订阅事件
 
         删除订阅的事件
         
@@ -2515,7 +2515,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_logical_cluster_async(self, request):
-        """删除逻辑集群
+        r"""删除逻辑集群
 
         此接口用于删除逻辑集群。
         
@@ -2582,7 +2582,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_queue_user_list_async(self, request):
-        """删除工作负载队列的绑定用户
+        r"""删除工作负载队列的绑定用户
 
         删除工作负载队列的绑定用户。
         
@@ -2651,7 +2651,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_snapshot_async(self, request):
-        """删除快照
+        r"""删除快照
 
         该接口用于删除一个指定手动快照。
         
@@ -2716,7 +2716,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_snapshot_cross_region_policy_async(self, request):
-        """删除跨区域备份配置
+        r"""删除跨区域备份配置
 
         该接口用于删除跨区域备份配置
         
@@ -2781,7 +2781,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_snapshot_policy_async(self, request):
-        """删除快照策略
+        r"""删除快照策略
 
         该接口用于删除一个快照策略。
         
@@ -2848,7 +2848,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_workload_plan_async(self, request):
-        """删除工作负载计划
+        r"""删除工作负载计划
 
         删除工作负载计划
         
@@ -2915,7 +2915,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_workload_plan_stage_async(self, request):
-        """删除工作负载计划阶段
+        r"""删除工作负载计划阶段
 
         删除工作负载计划删除工作负载计划阶段。
         
@@ -2984,7 +2984,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def delete_workload_queue_async(self, request):
-        """删除资源池
+        r"""删除资源池
 
         该接口用于删除资源池。
         
@@ -3053,7 +3053,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def disable_lts_logs_async(self, request):
-        """关闭云服务日志
+        r"""关闭云服务日志
 
         该接口用于关闭集群LTS云日志服务
         
@@ -3118,7 +3118,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def disassociate_eip_async(self, request):
-        """集群解绑EIP
+        r"""集群解绑EIP
 
         集群解绑Eip
         
@@ -3185,7 +3185,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def disassociate_elb_async(self, request):
-        """集群解绑ELB
+        r"""集群解绑ELB
 
         集群解绑Elb接口
         
@@ -3252,7 +3252,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def enable_logical_cluster_async(self, request):
-        """切换逻辑集群开关
+        r"""切换逻辑集群开关
 
         此接口用于切换逻辑集群开关，仅用于控制逻辑集群相关功能模块是否在页面展示。在集群已经是逻辑集群的场景下，修改该接口无任何作用及影响。
         
@@ -3319,7 +3319,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def enable_lts_logs_async(self, request):
-        """开启云服务日志
+        r"""开启云服务日志
 
         该接口用于开启集群LTS云日志服务
         
@@ -3384,7 +3384,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def execute_cluster_upgrade_action_async(self, request):
-        """下发集群升级相关操作
+        r"""下发集群升级相关操作
 
         下发集群升级相关操作
         
@@ -3451,7 +3451,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def execute_database_om_user_action_async(self, request):
-        """执行运维用户操作
+        r"""执行运维用户操作
 
         进行数据库运维账户操作
         
@@ -3518,7 +3518,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def execute_redistribution_cluster_async(self, request):
-        """下发重分布
+        r"""下发重分布
 
         该接口用于集群扩容后将老节点数据均匀分布到新扩节点的数据重分布操作，数据“重分布”后将大大提升业务响应速率。
         重分布功能DWS 2.0 8.1.1.200及以上集群版本支持。
@@ -3590,7 +3590,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def expand_instance_storage_async(self, request):
-        """磁盘扩容
+        r"""磁盘扩容
 
         随着客户业务的发展，磁盘空间往往最先出现资源瓶颈，在其他资源尚且充足的情况下，通过磁盘扩容可快速缓解存储资源瓶颈现象，操作过程中无需暂停业务，并且不会造成CPU、内存等资源浪费。
         - 磁盘扩容功能仅8.1.1.203及以上版本支持，并且创建集群规格需要为云数仓SSD云盘或实时数仓类型。
@@ -3659,7 +3659,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_alarm_configs_async(self, request):
-        """查询告警配置
+        r"""查询告警配置
 
         查询告警配置
         
@@ -3726,7 +3726,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_alarm_detail_async(self, request):
-        """查询告警详情列表
+        r"""查询告警详情列表
 
         查询告警详情列表
         
@@ -3795,7 +3795,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_alarm_statistic_async(self, request):
-        """查询告警统计列表
+        r"""查询告警统计列表
 
         查询告警统计
         
@@ -3860,7 +3860,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_alarm_subs_async(self, request):
-        """查询告警订阅列表
+        r"""查询告警订阅列表
 
         查询订阅告警
         
@@ -3927,7 +3927,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_audit_log_async(self, request):
-        """查询日志记录
+        r"""查询日志记录
 
         查询审计日志记录。
         
@@ -3992,7 +3992,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_availability_zones_async(self, request):
-        """查询可用区列表
+        r"""查询可用区列表
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
@@ -4055,7 +4055,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_available_disaster_clusters_async(self, request):
-        """查询可用容灾集群列表
+        r"""查询可用容灾集群列表
 
         该接口用于查询可用的容灾集群列表。
         
@@ -4136,7 +4136,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_cn_async(self, request):
-        """查询集群CN节点
+        r"""查询集群CN节点
 
         查询集群的CN节点列表。
         
@@ -4201,7 +4201,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_configurations_async(self, request):
-        """查询集群参数组
+        r"""查询集群参数组
 
         查询集群所关联的参数组。
         
@@ -4266,7 +4266,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_configurations_parameter_async(self, request):
-        """查询集群参数配置
+        r"""查询集群参数配置
 
         查询集群所关联的参数组。
         
@@ -4333,7 +4333,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_details_async(self, request):
-        """查询集群详情
+        r"""查询集群详情
 
         该接口用于查询集群详情。
         
@@ -4398,7 +4398,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_nodes_async(self, request):
-        """查询节点列表
+        r"""查询节点列表
 
         查询节点列表
         
@@ -4480,7 +4480,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_scale_in_numbers_async(self, request):
-        """查询合适的缩容数
+        r"""查询合适的缩容数
 
         查询合适的缩容数
         
@@ -4545,7 +4545,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_snapshots_async(self, request):
-        """查询集群快照列表
+        r"""查询集群快照列表
 
         该接口用于查询集群快照列表。
         
@@ -4618,7 +4618,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_tags_async(self, request):
-        """查询集群标签
+        r"""查询集群标签
 
         查询指定集群的标签信息。
         
@@ -4683,7 +4683,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_cluster_workload_async(self, request):
-        """查询资源管理
+        r"""查询资源管理
 
         查询资管管理开关。
         
@@ -4748,7 +4748,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_clusters_async(self, request):
-        """查询集群列表
+        r"""查询集群列表
 
         该接口用于查询并显示集群列表
         
@@ -4813,7 +4813,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_configurations_audit_records_async(self, request):
-        """查询参数修改审计记录
+        r"""查询参数修改审计记录
 
         查询参数修改审计记录
         
@@ -4888,7 +4888,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_data_source_async(self, request):
-        """查询数据源
+        r"""查询数据源
 
         该接口用于查询数据源。
         
@@ -4953,7 +4953,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_database_users_async(self, request):
-        """查询所有数据库用户/角色
+        r"""查询所有数据库用户/角色
 
         查询所有数据库用户/角色
         
@@ -5018,7 +5018,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_disaster_recover_async(self, request):
-        """查询容灾列表
+        r"""查询容灾列表
 
         该接口用于查询容灾列表。
         仅支持DWS 2.0集群。
@@ -5082,7 +5082,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_dss_pools_async(self, request):
-        """查询专属分布式存储池列表
+        r"""查询专属分布式存储池列表
 
         获取专属分布式存储池列表，只包括用户开通的SSD专属资源池信息。
         
@@ -5145,7 +5145,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_elbs_async(self, request):
-        """获取集群可绑定的ELB列表
+        r"""获取集群可绑定的ELB列表
 
         查询集群可以关联的Elb列表
         
@@ -5210,7 +5210,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_event_specs_async(self, request):
-        """查询事件配置
+        r"""查询事件配置
 
         查询事件配置
         
@@ -5287,7 +5287,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_event_subs_async(self, request):
-        """查询订阅事件
+        r"""查询订阅事件
 
         查询订阅的事件
         
@@ -5354,7 +5354,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_events_async(self, request):
-        """查询事件列表
+        r"""查询事件列表
 
         查询事件列表
         
@@ -5421,7 +5421,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_host_disk_async(self, request):
-        """openApi查询磁盘信息
+        r"""openApi查询磁盘信息
 
         openApi查询磁盘信息
         
@@ -5494,7 +5494,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_host_net_async(self, request):
-        """openapi获取网卡状态
+        r"""openapi获取网卡状态
 
         openapi获取网卡状态
         
@@ -5565,7 +5565,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_host_overview_async(self, request):
-        """openApi查询主机概览
+        r"""openApi查询主机概览
 
         openApi查询主机概览
         
@@ -5636,7 +5636,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_job_details_async(self, request):
-        """查询job进度
+        r"""查询job进度
 
         查询job进度信息
         
@@ -5701,7 +5701,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_logical_cluster_rings_async(self, request):
-        """查询逻辑集群可用ring环节点信息
+        r"""查询逻辑集群可用ring环节点信息
 
         查询逻辑集群可用ring环节点信息
         
@@ -5770,7 +5770,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_logical_cluster_tasks_async(self, request):
-        """查询逻辑集群任务信息
+        r"""查询逻辑集群任务信息
 
         逻辑集群-查询逻辑集群任务信息
         
@@ -5847,7 +5847,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_logical_cluster_volumes_async(self, request):
-        """查询逻辑集群磁盘信息
+        r"""查询逻辑集群磁盘信息
 
         逻辑集群-查询逻辑集群磁盘信息
         
@@ -5916,7 +5916,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_logical_clusters_async(self, request):
-        """查询逻辑集群列表
+        r"""查询逻辑集群列表
 
         逻辑集群-查询逻辑集群列表
         
@@ -5985,7 +5985,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_lts_logs_async(self, request):
-        """获取LTS日志列表
+        r"""获取LTS日志列表
 
         获取LTS日志列表。
         
@@ -6054,7 +6054,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_metrics_async(self, request):
-        """查询集群使用指标列表
+        r"""查询集群使用指标列表
 
         查询集群使用指标列表
         
@@ -6127,7 +6127,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_metrics_data_async(self, request):
-        """获取指定指标相关采集数据
+        r"""获取指定指标相关采集数据
 
         获取指定指标相关采集数据
         
@@ -6206,7 +6206,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_monitor_indicator_data_async(self, request):
-        """openApi查询历史监控数据
+        r"""openApi查询历史监控数据
 
         openApi查询历史监控数据
         
@@ -6283,7 +6283,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_monitor_indicators_async(self, request):
-        """openApi查询性能监控指标
+        r"""openApi查询性能监控指标
 
         openApi查询性能监控指标
         
@@ -6346,7 +6346,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_node_types_async(self, request):
-        """查询节点类型
+        r"""查询节点类型
 
         该接口用于查询所有GaussDB(DWS)服务支持的节点类型。
         
@@ -6409,7 +6409,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_plan_exec_logs_async(self, request):
-        """查看计划执行日志
+        r"""查看计划执行日志
 
         查看计划执行日志。
         
@@ -6480,7 +6480,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_queries_async(self, request):
-        """查询SQL列表
+        r"""查询SQL列表
 
         该接口用于查询实时SQL列表。
         
@@ -6547,7 +6547,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_quotas_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询单租户在GaussDB(DWS)服务下的配额信息。
         
@@ -6610,7 +6610,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_schemas_async(self, request):
-        """查询集群模式空间信息
+        r"""查询集群模式空间信息
 
         查询集群模式空间信息。
         
@@ -6687,7 +6687,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_snapshot_cross_region_async(self, request):
-        """获取跨区域快照可用region
+        r"""获取跨区域快照可用region
 
         该接口用于获取跨区域快照可用region
         
@@ -6754,7 +6754,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_snapshot_cross_region_policy_async(self, request):
-        """查询所有跨区域快照配置
+        r"""查询所有跨区域快照配置
 
         该接口用于查询所有跨区域快照配置
         
@@ -6823,7 +6823,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_snapshot_details_async(self, request):
-        """查询快照详情
+        r"""查询快照详情
 
         该接口用于使用快照ID查询快照详情。
         
@@ -6888,7 +6888,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_snapshot_policy_async(self, request):
-        """查询快照策略
+        r"""查询快照策略
 
         查询快照策略。
         
@@ -6953,7 +6953,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_snapshot_statistics_async(self, request):
-        """快照统计信息
+        r"""快照统计信息
 
         快照统计信息。
         
@@ -7018,7 +7018,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_snapshots_async(self, request):
-        """查询快照列表
+        r"""查询快照列表
 
         该接口用于查询快照列表。
         
@@ -7081,7 +7081,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_statistics_async(self, request):
-        """查询资源统计信息列表
+        r"""查询资源统计信息列表
 
         查询当前可用资源数量，其中包括“可用集群和总集群（个）”、“可用节点和总节点（个）”、“总容量（GB）”。
         
@@ -7144,7 +7144,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_tables_statistic_async(self, request):
-        """查询表倾斜或脏页率信息
+        r"""查询表倾斜或脏页率信息
 
         该接口用于查询表倾斜或脏页率信息。
         
@@ -7223,7 +7223,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签列表。
         
@@ -7286,7 +7286,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_topo_rings_async(self, request):
-        """查询集群拓扑ring环节点信息
+        r"""查询集群拓扑ring环节点信息
 
         查询集群拓扑ring环节点信息
         
@@ -7355,7 +7355,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_updatable_version_async(self, request):
-        """获取集群可升级的目标版本
+        r"""获取集群可升级的目标版本
 
         获取集群可升级的目标版本
         
@@ -7426,7 +7426,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_update_record_async(self, request):
-        """获取集群升级记录
+        r"""获取集群升级记录
 
         通过此api获取当前集群升级记录
         
@@ -7495,7 +7495,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_workload_plans_async(self, request):
-        """查询资源管理计划列表
+        r"""查询资源管理计划列表
 
         查询集群中所有资源管理计划。
         
@@ -7566,7 +7566,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_workload_queue_async(self, request):
-        """查询工作负载队列
+        r"""查询工作负载队列
 
         查询工作负载队列
         
@@ -7633,7 +7633,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_workload_queue_users_async(self, request):
-        """获得工作负载队列的绑定用户列表
+        r"""获得工作负载队列的绑定用户列表
 
         获得工作负载队列的绑定用户列表。
         
@@ -7704,7 +7704,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def pause_disaster_recovery_async(self, request):
-        """停止容灾
+        r"""停止容灾
 
         该接口用于停止容灾操作。
         容灾状态为“运行中”和“停止失败”时可以执行停止容灾操作。
@@ -7772,7 +7772,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def reset_password_async(self, request):
-        """重置密码
+        r"""重置密码
 
         此接口用于重置集群管理员密码。
         
@@ -7839,7 +7839,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def resize_cluster_async(self, request):
-        """扩容集群调整集群大小
+        r"""扩容集群调整集群大小
 
         此接口用于扩容集群。
         
@@ -7906,7 +7906,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def resize_cluster_with_existed_nodes_async(self, request):
-        """从空闲节点扩容
+        r"""从空闲节点扩容
 
         此接口用于从空闲节点扩容。
         
@@ -7973,7 +7973,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def restart_cluster_async(self, request):
-        """重启集群
+        r"""重启集群
 
         此接口用于重启集群。
         
@@ -8040,7 +8040,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def restart_logical_cluster_async(self, request):
-        """重启逻辑集群
+        r"""重启逻辑集群
 
         此接口用于重启逻辑集群。
         
@@ -8107,7 +8107,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def restore_cluster_async(self, request):
-        """恢复集群
+        r"""恢复集群
 
         该接口用于使用快照恢复集群。
         
@@ -8174,7 +8174,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def restore_disaster_async(self, request):
-        """恢复容灾
+        r"""恢复容灾
 
         该接口用于主备集群进行异常切换，备集群恢复可用状态后进行的容灾恢复操作。
         容灾恢复仅8.1.2及以上集群版本支持。
@@ -8242,7 +8242,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def restore_redistribution_async(self, request):
-        """恢复重分布
+        r"""恢复重分布
 
         此接口用于恢复暂停状态下的重分布操作,仅支持DWS2.0集群。
         
@@ -8307,7 +8307,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def restore_table_async(self, request):
-        """恢复表
+        r"""恢复表
 
         该接口用于恢复表
         
@@ -8374,7 +8374,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def save_cluster_description_info_async(self, request):
-        """保存集群描述信息
+        r"""保存集群描述信息
 
         保存集群描述信息
         
@@ -8443,7 +8443,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_cluster_flavor_async(self, request):
-        """查询集群规格详情
+        r"""查询集群规格详情
 
         查询集群使用的规格详情
         
@@ -8510,7 +8510,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_cluster_redistribution_async(self, request):
-        """查询重分布详情
+        r"""查询重分布详情
 
         该接口用于查看当前集群的重分布模式、重分布进度、数据表重分布详情等监控信息。
         查看重分布详情功能DWS 2.0 8.1.1.200及以上集群版本支持，其中数据表重分布进度详情仅DWS 2.0 8.2.1及以上集群版本支持。
@@ -8586,7 +8586,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_clusters_async(self, request):
-        """查询集群列表V2
+        r"""查询集群列表V2
 
         该接口用于查询并显示集群列表
         
@@ -8649,7 +8649,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_database_authority_async(self, request):
-        """查询数据库对象权限
+        r"""查询数据库对象权限
 
         查询数据库对象权限
         
@@ -8725,7 +8725,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_database_om_user_status_async(self, request):
-        """获得集群运维账户状态
+        r"""获得集群运维账户状态
 
         获得数据库运维账户状态
         
@@ -8790,7 +8790,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_database_user_async(self, request):
-        """查询指定用户信息
+        r"""查询指定用户信息
 
         查询指定用户信息
         
@@ -8857,7 +8857,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_disaster_detail_async(self, request):
-        """查询容灾详情
+        r"""查询容灾详情
 
         该接口用于查询单个容灾详情。
         
@@ -8922,7 +8922,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_disaster_progress_async(self, request):
-        """容灾-查询容灾进度详情
+        r"""容灾-查询容灾进度详情
 
         该接口用于查询容灾进度详情信息操作。
         
@@ -8987,7 +8987,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_instance_async(self, request):
-        """查询单个实例
+        r"""查询单个实例
 
         查询单个实例
         
@@ -9052,7 +9052,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_query_detail_async(self, request):
-        """查询SQL执行信息
+        r"""查询SQL执行信息
 
         查询SQL执行信息
         
@@ -9121,7 +9121,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_resource_statistics_async(self, request):
-        """查询资源统计
+        r"""查询资源统计
 
         该接口用于查询资源统计
         
@@ -9186,7 +9186,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_workload_plan_async(self, request):
-        """查询某个工作负载计划详细信息
+        r"""查询某个工作负载计划详细信息
 
         查询某个工作负载计划详细信息。
         
@@ -9253,7 +9253,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_workload_plan_stage_async(self, request):
-        """查询工作负载计划阶段详细信息
+        r"""查询工作负载计划阶段详细信息
 
         查询工作负载计划阶段详细信息。
         
@@ -9322,7 +9322,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_workload_queue_async(self, request):
-        """获得工作负载队列详细信息
+        r"""获得工作负载队列详细信息
 
         获得工作负载队列详细信息。
         
@@ -9391,7 +9391,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def shrink_cluster_async(self, request):
-        """集群缩容
+        r"""集群缩容
 
         该接口用于缩容集群。
         
@@ -9458,7 +9458,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def start_cluster_async(self, request):
-        """启动集群
+        r"""启动集群
 
         集群管理-启动集群
         
@@ -9523,7 +9523,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def start_disaster_recovery_async(self, request):
-        """启动容灾
+        r"""启动容灾
 
         该接口用于启动容灾操作。
         容灾状态为“未启动”、“启动失败”和“已停止”时可以执行启动容灾操作。
@@ -9592,7 +9592,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def start_workload_plan_async(self, request):
-        """启动工作负载计划
+        r"""启动工作负载计划
 
         启动工作负载计划
         
@@ -9659,7 +9659,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def stop_cluster_async(self, request):
-        """停止集群
+        r"""停止集群
 
         集群管理-停止集群
         
@@ -9724,7 +9724,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def stop_redistribution_async(self, request):
-        """暂停重分布
+        r"""暂停重分布
 
         该接口用于暂停运行状态下的重分布操作，重分布暂停状态可设置重分布优先级，修改重分布并发数等操作。
         仅支持DWS 2.0集群。
@@ -9790,7 +9790,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def stop_workload_plan_async(self, request):
-        """停止工作负载计划
+        r"""停止工作负载计划
 
         停止工作负载计划
         
@@ -9857,7 +9857,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def switch_failover_disaster_async(self, request):
-        """容灾异常切换
+        r"""容灾异常切换
 
         该接口用于容灾异常场景下进行主备集群切换操作。
         “异常切换”按钮用于容灾异常或者生产集群故障情况下主备切换操作。
@@ -9926,7 +9926,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def switch_over_cluster_async(self, request):
-        """主备恢复
+        r"""主备恢复
 
         当集群状态为“非均衡”时会出现某些节点主实例增多，从而负载压力较大。这种情况下集群状态是正常的，但整体性能要低于均衡状态。可进行集群主备恢复操作将集群状态切换为“可用“状态。
         - 集群主备恢复仅8.1.1.202及以上版本支持。
@@ -9993,7 +9993,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def switch_plan_stage_async(self, request):
-        """切换工作负载计划阶段
+        r"""切换工作负载计划阶段
 
         切换工作负载计划阶段。
         
@@ -10062,7 +10062,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def switchover_disaster_recovery_async(self, request):
-        """灾备切换
+        r"""灾备切换
 
         该接口用于容灾进行灾备切换操作。
         “灾备切换”按钮用于在容灾正常情况下主备倒换操作。
@@ -10134,7 +10134,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def sync_iam_users_async(self, request):
-        """同步IAM用户到数据库
+        r"""同步IAM用户到数据库
 
         同步IAM用户到数据库
         
@@ -10199,7 +10199,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_alarm_sub_async(self, request):
-        """更新告警订阅
+        r"""更新告警订阅
 
         更新订阅的告警
         
@@ -10266,7 +10266,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_cluster_dns_async(self, request):
-        """修改集群域名
+        r"""修改集群域名
 
         为指定集群修改域名。
         
@@ -10333,7 +10333,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_configuration_async(self, request):
-        """修改集群参数配置
+        r"""修改集群参数配置
 
         修改集群使用的参数配置信息。
         
@@ -10402,7 +10402,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_data_source_async(self, request):
-        """更新数据源
+        r"""更新数据源
 
         该接口用于更新一个数据源。
         
@@ -10471,7 +10471,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_database_authority_async(self, request):
-        """修改数据库对象权限
+        r"""修改数据库对象权限
 
         修改数据库对象权限
         
@@ -10538,7 +10538,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_database_user_info_async(self, request):
-        """修改指定用户信息
+        r"""修改指定用户信息
 
         修改指定用户信息
         
@@ -10607,7 +10607,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_disaster_info_async(self, request):
-        """更新容灾配置
+        r"""更新容灾配置
 
         该接口用于更新容灾配置操作。
         容灾状态为“未启动”或“已停止”时，可以执行容灾配置修改操作。
@@ -10676,7 +10676,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_event_sub_async(self, request):
-        """更新订阅事件
+        r"""更新订阅事件
 
         更新订阅事件
         
@@ -10743,7 +10743,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_logical_cluster_async(self, request):
-        """编辑逻辑集群
+        r"""编辑逻辑集群
 
         此接口用于编辑修改逻辑集群。
         
@@ -10812,7 +10812,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_maintenance_window_async(self, request):
-        """修改运维时间窗
+        r"""修改运维时间窗
 
         您可以根据业务需求，设置可维护时间段。建议将可维护时间段设置在业务低峰期，避免业务在维护过程中异常中断。
         
@@ -10879,7 +10879,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_queue_resources_async(self, request):
-        """更新工作负载队列资源配置信息
+        r"""更新工作负载队列资源配置信息
 
         更新工作负载队列资源配置信息。
         
@@ -10948,7 +10948,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def update_schemas_async(self, request):
-        """更新模式空间限额
+        r"""更新模式空间限额
 
         更新模式空间限额。
         

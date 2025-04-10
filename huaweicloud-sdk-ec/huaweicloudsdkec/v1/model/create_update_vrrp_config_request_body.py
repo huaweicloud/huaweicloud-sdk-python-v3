@@ -33,7 +33,7 @@ class CreateUpdateVrrpConfigRequestBody:
     }
 
     def __init__(self, virtual_ip=None, active_equipment_id=None, active_interface_name=None, standby_equipment_id=None, standby_interface_name=None):
-        """CreateUpdateVrrpConfigRequestBody
+        r"""CreateUpdateVrrpConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this CreateUpdateVrrpConfigRequestBody.
+        r"""Gets the virtual_ip of this CreateUpdateVrrpConfigRequestBody.
 
         虚IP
 
@@ -77,7 +77,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this CreateUpdateVrrpConfigRequestBody.
+        r"""Sets the virtual_ip of this CreateUpdateVrrpConfigRequestBody.
 
         虚IP
 
@@ -88,7 +88,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @property
     def active_equipment_id(self):
-        """Gets the active_equipment_id of this CreateUpdateVrrpConfigRequestBody.
+        r"""Gets the active_equipment_id of this CreateUpdateVrrpConfigRequestBody.
 
         主设备ID
 
@@ -99,7 +99,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @active_equipment_id.setter
     def active_equipment_id(self, active_equipment_id):
-        """Sets the active_equipment_id of this CreateUpdateVrrpConfigRequestBody.
+        r"""Sets the active_equipment_id of this CreateUpdateVrrpConfigRequestBody.
 
         主设备ID
 
@@ -110,7 +110,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @property
     def active_interface_name(self):
-        """Gets the active_interface_name of this CreateUpdateVrrpConfigRequestBody.
+        r"""Gets the active_interface_name of this CreateUpdateVrrpConfigRequestBody.
 
         主设备接口名字
 
@@ -121,7 +121,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @active_interface_name.setter
     def active_interface_name(self, active_interface_name):
-        """Sets the active_interface_name of this CreateUpdateVrrpConfigRequestBody.
+        r"""Sets the active_interface_name of this CreateUpdateVrrpConfigRequestBody.
 
         主设备接口名字
 
@@ -132,7 +132,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @property
     def standby_equipment_id(self):
-        """Gets the standby_equipment_id of this CreateUpdateVrrpConfigRequestBody.
+        r"""Gets the standby_equipment_id of this CreateUpdateVrrpConfigRequestBody.
 
         备设备ID
 
@@ -143,7 +143,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @standby_equipment_id.setter
     def standby_equipment_id(self, standby_equipment_id):
-        """Sets the standby_equipment_id of this CreateUpdateVrrpConfigRequestBody.
+        r"""Sets the standby_equipment_id of this CreateUpdateVrrpConfigRequestBody.
 
         备设备ID
 
@@ -154,7 +154,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @property
     def standby_interface_name(self):
-        """Gets the standby_interface_name of this CreateUpdateVrrpConfigRequestBody.
+        r"""Gets the standby_interface_name of this CreateUpdateVrrpConfigRequestBody.
 
         备设备接口名字
 
@@ -165,7 +165,7 @@ class CreateUpdateVrrpConfigRequestBody:
 
     @standby_interface_name.setter
     def standby_interface_name(self, standby_interface_name):
-        """Sets the standby_interface_name of this CreateUpdateVrrpConfigRequestBody.
+        r"""Sets the standby_interface_name of this CreateUpdateVrrpConfigRequestBody.
 
         备设备接口名字
 

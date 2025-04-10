@@ -34,7 +34,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, apk_component_info=None, hap_component_info=None, vuln_list=None, privacy_compliance_list=None):
-        """ShowSecAppTaskResultResponse
+        r"""ShowSecAppTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowSecAppTaskResultResponse.
+        r"""Gets the basic_info of this ShowSecAppTaskResultResponse.
 
         :return: The basic_info of this ShowSecAppTaskResultResponse.
         :rtype: :class:`huaweicloudsdkcodeartsgovernance.v1.BasicInfo`
@@ -81,7 +81,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowSecAppTaskResultResponse.
+        r"""Sets the basic_info of this ShowSecAppTaskResultResponse.
 
         :param basic_info: The basic_info of this ShowSecAppTaskResultResponse.
         :type basic_info: :class:`huaweicloudsdkcodeartsgovernance.v1.BasicInfo`
@@ -90,7 +90,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @property
     def apk_component_info(self):
-        """Gets the apk_component_info of this ShowSecAppTaskResultResponse.
+        r"""Gets the apk_component_info of this ShowSecAppTaskResultResponse.
 
         :return: The apk_component_info of this ShowSecAppTaskResultResponse.
         :rtype: :class:`huaweicloudsdkcodeartsgovernance.v1.ApkComponentInfo`
@@ -99,7 +99,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @apk_component_info.setter
     def apk_component_info(self, apk_component_info):
-        """Sets the apk_component_info of this ShowSecAppTaskResultResponse.
+        r"""Sets the apk_component_info of this ShowSecAppTaskResultResponse.
 
         :param apk_component_info: The apk_component_info of this ShowSecAppTaskResultResponse.
         :type apk_component_info: :class:`huaweicloudsdkcodeartsgovernance.v1.ApkComponentInfo`
@@ -108,7 +108,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @property
     def hap_component_info(self):
-        """Gets the hap_component_info of this ShowSecAppTaskResultResponse.
+        r"""Gets the hap_component_info of this ShowSecAppTaskResultResponse.
 
         :return: The hap_component_info of this ShowSecAppTaskResultResponse.
         :rtype: :class:`huaweicloudsdkcodeartsgovernance.v1.HapComponentInfo`
@@ -117,7 +117,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @hap_component_info.setter
     def hap_component_info(self, hap_component_info):
-        """Sets the hap_component_info of this ShowSecAppTaskResultResponse.
+        r"""Sets the hap_component_info of this ShowSecAppTaskResultResponse.
 
         :param hap_component_info: The hap_component_info of this ShowSecAppTaskResultResponse.
         :type hap_component_info: :class:`huaweicloudsdkcodeartsgovernance.v1.HapComponentInfo`
@@ -126,7 +126,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @property
     def vuln_list(self):
-        """Gets the vuln_list of this ShowSecAppTaskResultResponse.
+        r"""Gets the vuln_list of this ShowSecAppTaskResultResponse.
 
         漏洞列表
 
@@ -137,7 +137,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @vuln_list.setter
     def vuln_list(self, vuln_list):
-        """Sets the vuln_list of this ShowSecAppTaskResultResponse.
+        r"""Sets the vuln_list of this ShowSecAppTaskResultResponse.
 
         漏洞列表
 
@@ -148,7 +148,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @property
     def privacy_compliance_list(self):
-        """Gets the privacy_compliance_list of this ShowSecAppTaskResultResponse.
+        r"""Gets the privacy_compliance_list of this ShowSecAppTaskResultResponse.
 
         隐私合规列表
 
@@ -159,7 +159,7 @@ class ShowSecAppTaskResultResponse(SdkResponse):
 
     @privacy_compliance_list.setter
     def privacy_compliance_list(self, privacy_compliance_list):
-        """Sets the privacy_compliance_list of this ShowSecAppTaskResultResponse.
+        r"""Sets the privacy_compliance_list of this ShowSecAppTaskResultResponse.
 
         隐私合规列表
 

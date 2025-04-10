@@ -27,7 +27,7 @@ class SearchTransactionRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """SearchTransactionRequest
+        r"""SearchTransactionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SearchTransactionRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this SearchTransactionRequest.
+        r"""Gets the x_business_id of this SearchTransactionRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class SearchTransactionRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this SearchTransactionRequest.
+        r"""Sets the x_business_id of this SearchTransactionRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class SearchTransactionRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchTransactionRequest.
+        r"""Gets the body of this SearchTransactionRequest.
 
         :return: The body of this SearchTransactionRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TxSearchRequest`
@@ -80,7 +80,7 @@ class SearchTransactionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchTransactionRequest.
+        r"""Sets the body of this SearchTransactionRequest.
 
         :param body: The body of this SearchTransactionRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TxSearchRequest`

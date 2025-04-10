@@ -27,7 +27,7 @@ class ShowAssetTreeRequest:
     }
 
     def __init__(self, project_id=None, asset_id=None):
-        """ShowAssetTreeRequest
+        r"""ShowAssetTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAssetTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAssetTreeRequest.
+        r"""Gets the project_id of this ShowAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ShowAssetTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAssetTreeRequest.
+        r"""Sets the project_id of this ShowAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ShowAssetTreeRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetTreeRequest.
+        r"""Gets the asset_id of this ShowAssetTreeRequest.
 
         资产库ID
 
@@ -81,7 +81,7 @@ class ShowAssetTreeRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetTreeRequest.
+        r"""Sets the asset_id of this ShowAssetTreeRequest.
 
         资产库ID
 

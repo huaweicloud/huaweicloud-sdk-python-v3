@@ -27,7 +27,7 @@ class CreateTableRequest:
     }
 
     def __init__(self, database_name=None, body=None):
-        """CreateTableRequest
+        r"""CreateTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateTableRequest.
+        r"""Gets the database_name of this CreateTableRequest.
 
         新增表所在的数据库名称。
 
@@ -60,7 +60,7 @@ class CreateTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateTableRequest.
+        r"""Sets the database_name of this CreateTableRequest.
 
         新增表所在的数据库名称。
 
@@ -71,7 +71,7 @@ class CreateTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTableRequest.
+        r"""Gets the body of this CreateTableRequest.
 
         :return: The body of this CreateTableRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateTableRequestBody`
@@ -80,7 +80,7 @@ class CreateTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTableRequest.
+        r"""Sets the body of this CreateTableRequest.
 
         :param body: The body of this CreateTableRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateTableRequestBody`

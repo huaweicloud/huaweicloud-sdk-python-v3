@@ -47,7 +47,7 @@ class SubscriptionInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, used=None, sources=None, targets=None, created_time=None, updated_time=None):
-        """SubscriptionInfo
+        r"""SubscriptionInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class SubscriptionInfo:
 
     @property
     def id(self):
-        """Gets the id of this SubscriptionInfo.
+        r"""Gets the id of this SubscriptionInfo.
 
         订阅ID
 
@@ -131,7 +131,7 @@ class SubscriptionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubscriptionInfo.
+        r"""Sets the id of this SubscriptionInfo.
 
         订阅ID
 
@@ -142,7 +142,7 @@ class SubscriptionInfo:
 
     @property
     def name(self):
-        """Gets the name of this SubscriptionInfo.
+        r"""Gets the name of this SubscriptionInfo.
 
         订阅名称
 
@@ -153,7 +153,7 @@ class SubscriptionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubscriptionInfo.
+        r"""Sets the name of this SubscriptionInfo.
 
         订阅名称
 
@@ -164,7 +164,7 @@ class SubscriptionInfo:
 
     @property
     def description(self):
-        """Gets the description of this SubscriptionInfo.
+        r"""Gets the description of this SubscriptionInfo.
 
         订阅描述
 
@@ -175,7 +175,7 @@ class SubscriptionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubscriptionInfo.
+        r"""Sets the description of this SubscriptionInfo.
 
         订阅描述
 
@@ -186,7 +186,7 @@ class SubscriptionInfo:
 
     @property
     def type(self):
-        """Gets the type of this SubscriptionInfo.
+        r"""Gets the type of this SubscriptionInfo.
 
         类型
 
@@ -197,7 +197,7 @@ class SubscriptionInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SubscriptionInfo.
+        r"""Sets the type of this SubscriptionInfo.
 
         类型
 
@@ -208,7 +208,7 @@ class SubscriptionInfo:
 
     @property
     def status(self):
-        """Gets the status of this SubscriptionInfo.
+        r"""Gets the status of this SubscriptionInfo.
 
         状态
 
@@ -219,7 +219,7 @@ class SubscriptionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubscriptionInfo.
+        r"""Sets the status of this SubscriptionInfo.
 
         状态
 
@@ -230,7 +230,7 @@ class SubscriptionInfo:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this SubscriptionInfo.
+        r"""Gets the channel_id of this SubscriptionInfo.
 
         通道ID
 
@@ -241,7 +241,7 @@ class SubscriptionInfo:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this SubscriptionInfo.
+        r"""Sets the channel_id of this SubscriptionInfo.
 
         通道ID
 
@@ -252,7 +252,7 @@ class SubscriptionInfo:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this SubscriptionInfo.
+        r"""Gets the channel_name of this SubscriptionInfo.
 
         通道名称
 
@@ -263,7 +263,7 @@ class SubscriptionInfo:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this SubscriptionInfo.
+        r"""Sets the channel_name of this SubscriptionInfo.
 
         通道名称
 
@@ -274,7 +274,7 @@ class SubscriptionInfo:
 
     @property
     def used(self):
-        """Gets the used of this SubscriptionInfo.
+        r"""Gets the used of this SubscriptionInfo.
 
         标签信息
 
@@ -285,7 +285,7 @@ class SubscriptionInfo:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this SubscriptionInfo.
+        r"""Sets the used of this SubscriptionInfo.
 
         标签信息
 
@@ -296,7 +296,7 @@ class SubscriptionInfo:
 
     @property
     def sources(self):
-        """Gets the sources of this SubscriptionInfo.
+        r"""Gets the sources of this SubscriptionInfo.
 
         订阅源列表
 
@@ -307,7 +307,7 @@ class SubscriptionInfo:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this SubscriptionInfo.
+        r"""Sets the sources of this SubscriptionInfo.
 
         订阅源列表
 
@@ -318,7 +318,7 @@ class SubscriptionInfo:
 
     @property
     def targets(self):
-        """Gets the targets of this SubscriptionInfo.
+        r"""Gets the targets of this SubscriptionInfo.
 
         订阅目标列表
 
@@ -329,7 +329,7 @@ class SubscriptionInfo:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this SubscriptionInfo.
+        r"""Sets the targets of this SubscriptionInfo.
 
         订阅目标列表
 
@@ -340,7 +340,7 @@ class SubscriptionInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this SubscriptionInfo.
+        r"""Gets the created_time of this SubscriptionInfo.
 
         创建时间
 
@@ -351,7 +351,7 @@ class SubscriptionInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this SubscriptionInfo.
+        r"""Sets the created_time of this SubscriptionInfo.
 
         创建时间
 
@@ -362,7 +362,7 @@ class SubscriptionInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this SubscriptionInfo.
+        r"""Gets the updated_time of this SubscriptionInfo.
 
         更新时间
 
@@ -373,7 +373,7 @@ class SubscriptionInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this SubscriptionInfo.
+        r"""Sets the updated_time of this SubscriptionInfo.
 
         更新时间
 

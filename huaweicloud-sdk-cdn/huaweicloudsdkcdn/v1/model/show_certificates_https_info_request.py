@@ -33,7 +33,7 @@ class ShowCertificatesHttpsInfoRequest:
     }
 
     def __init__(self, page_size=None, page_number=None, domain_name=None, user_domain_id=None, enterprise_project_id=None):
-        """ShowCertificatesHttpsInfoRequest
+        r"""ShowCertificatesHttpsInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowCertificatesHttpsInfoRequest.
+        r"""Gets the page_size of this ShowCertificatesHttpsInfoRequest.
 
         每页的数量，取值范围1-10000，不设值时默认值为30。
 
@@ -82,7 +82,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowCertificatesHttpsInfoRequest.
+        r"""Sets the page_size of this ShowCertificatesHttpsInfoRequest.
 
         每页的数量，取值范围1-10000，不设值时默认值为30。
 
@@ -93,7 +93,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ShowCertificatesHttpsInfoRequest.
+        r"""Gets the page_number of this ShowCertificatesHttpsInfoRequest.
 
         查询的页码。取值范围1-65535，不设值时默认值为1。
 
@@ -104,7 +104,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ShowCertificatesHttpsInfoRequest.
+        r"""Sets the page_number of this ShowCertificatesHttpsInfoRequest.
 
         查询的页码。取值范围1-65535，不设值时默认值为1。
 
@@ -115,7 +115,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowCertificatesHttpsInfoRequest.
+        r"""Gets the domain_name of this ShowCertificatesHttpsInfoRequest.
 
         加速域名。
 
@@ -126,7 +126,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowCertificatesHttpsInfoRequest.
+        r"""Sets the domain_name of this ShowCertificatesHttpsInfoRequest.
 
         加速域名。
 
@@ -137,7 +137,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @property
     def user_domain_id(self):
-        """Gets the user_domain_id of this ShowCertificatesHttpsInfoRequest.
+        r"""Gets the user_domain_id of this ShowCertificatesHttpsInfoRequest.
 
         域名所属用户的domain_id。
 
@@ -148,7 +148,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @user_domain_id.setter
     def user_domain_id(self, user_domain_id):
-        """Sets the user_domain_id of this ShowCertificatesHttpsInfoRequest.
+        r"""Sets the user_domain_id of this ShowCertificatesHttpsInfoRequest.
 
         域名所属用户的domain_id。
 
@@ -159,7 +159,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
+        r"""Gets the enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -170,7 +170,7 @@ class ShowCertificatesHttpsInfoRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
+        r"""Sets the enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 

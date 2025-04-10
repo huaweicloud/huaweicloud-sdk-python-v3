@@ -29,7 +29,7 @@ class DeployStrategy:
     }
 
     def __init__(self, type=None, rolling_release=None, gray_release=None):
-        """DeployStrategy
+        r"""DeployStrategy
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeployStrategy:
 
     @property
     def type(self):
-        """Gets the type of this DeployStrategy.
+        r"""Gets the type of this DeployStrategy.
 
         :return: The type of this DeployStrategy.
         :rtype: str
@@ -65,7 +65,7 @@ class DeployStrategy:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeployStrategy.
+        r"""Sets the type of this DeployStrategy.
 
         :param type: The type of this DeployStrategy.
         :type type: str
@@ -74,7 +74,7 @@ class DeployStrategy:
 
     @property
     def rolling_release(self):
-        """Gets the rolling_release of this DeployStrategy.
+        r"""Gets the rolling_release of this DeployStrategy.
 
         :return: The rolling_release of this DeployStrategy.
         :rtype: :class:`huaweicloudsdkservicestage.v3.DeployStrategyRollingRelease`
@@ -83,7 +83,7 @@ class DeployStrategy:
 
     @rolling_release.setter
     def rolling_release(self, rolling_release):
-        """Sets the rolling_release of this DeployStrategy.
+        r"""Sets the rolling_release of this DeployStrategy.
 
         :param rolling_release: The rolling_release of this DeployStrategy.
         :type rolling_release: :class:`huaweicloudsdkservicestage.v3.DeployStrategyRollingRelease`
@@ -92,7 +92,7 @@ class DeployStrategy:
 
     @property
     def gray_release(self):
-        """Gets the gray_release of this DeployStrategy.
+        r"""Gets the gray_release of this DeployStrategy.
 
         :return: The gray_release of this DeployStrategy.
         :rtype: :class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayRelease`
@@ -101,7 +101,7 @@ class DeployStrategy:
 
     @gray_release.setter
     def gray_release(self, gray_release):
-        """Sets the gray_release of this DeployStrategy.
+        r"""Sets the gray_release of this DeployStrategy.
 
         :param gray_release: The gray_release of this DeployStrategy.
         :type gray_release: :class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayRelease`

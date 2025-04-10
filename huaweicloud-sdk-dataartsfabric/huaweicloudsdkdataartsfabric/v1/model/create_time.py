@@ -23,7 +23,7 @@ class CreateTime:
     }
 
     def __init__(self):
-        """CreateTime
+        r"""CreateTime
 
         The model defined in huaweicloud sdk
 

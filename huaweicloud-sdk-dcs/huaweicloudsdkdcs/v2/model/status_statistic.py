@@ -49,7 +49,7 @@ class StatusStatistic:
     }
 
     def __init__(self, paying_count=None, freezing_count=None, migrating_count=None, flushing_count=None, upgrading_count=None, restoring_count=None, extending_count=None, creating_count=None, running_count=None, error_count=None, frozen_count=None, createfailed_count=None, restarting_count=None):
-        """StatusStatistic
+        r"""StatusStatistic
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class StatusStatistic:
 
     @property
     def paying_count(self):
-        """Gets the paying_count of this StatusStatistic.
+        r"""Gets the paying_count of this StatusStatistic.
 
         支付中的实例数。
 
@@ -138,7 +138,7 @@ class StatusStatistic:
 
     @paying_count.setter
     def paying_count(self, paying_count):
-        """Sets the paying_count of this StatusStatistic.
+        r"""Sets the paying_count of this StatusStatistic.
 
         支付中的实例数。
 
@@ -149,7 +149,7 @@ class StatusStatistic:
 
     @property
     def freezing_count(self):
-        """Gets the freezing_count of this StatusStatistic.
+        r"""Gets the freezing_count of this StatusStatistic.
 
         冻结中的实例数。
 
@@ -160,7 +160,7 @@ class StatusStatistic:
 
     @freezing_count.setter
     def freezing_count(self, freezing_count):
-        """Sets the freezing_count of this StatusStatistic.
+        r"""Sets the freezing_count of this StatusStatistic.
 
         冻结中的实例数。
 
@@ -171,7 +171,7 @@ class StatusStatistic:
 
     @property
     def migrating_count(self):
-        """Gets the migrating_count of this StatusStatistic.
+        r"""Gets the migrating_count of this StatusStatistic.
 
         迁移中的实例数。
 
@@ -182,7 +182,7 @@ class StatusStatistic:
 
     @migrating_count.setter
     def migrating_count(self, migrating_count):
-        """Sets the migrating_count of this StatusStatistic.
+        r"""Sets the migrating_count of this StatusStatistic.
 
         迁移中的实例数。
 
@@ -193,7 +193,7 @@ class StatusStatistic:
 
     @property
     def flushing_count(self):
-        """Gets the flushing_count of this StatusStatistic.
+        r"""Gets the flushing_count of this StatusStatistic.
 
         清空中的实例数。
 
@@ -204,7 +204,7 @@ class StatusStatistic:
 
     @flushing_count.setter
     def flushing_count(self, flushing_count):
-        """Sets the flushing_count of this StatusStatistic.
+        r"""Sets the flushing_count of this StatusStatistic.
 
         清空中的实例数。
 
@@ -215,7 +215,7 @@ class StatusStatistic:
 
     @property
     def upgrading_count(self):
-        """Gets the upgrading_count of this StatusStatistic.
+        r"""Gets the upgrading_count of this StatusStatistic.
 
         升级中的实例数。
 
@@ -226,7 +226,7 @@ class StatusStatistic:
 
     @upgrading_count.setter
     def upgrading_count(self, upgrading_count):
-        """Sets the upgrading_count of this StatusStatistic.
+        r"""Sets the upgrading_count of this StatusStatistic.
 
         升级中的实例数。
 
@@ -237,7 +237,7 @@ class StatusStatistic:
 
     @property
     def restoring_count(self):
-        """Gets the restoring_count of this StatusStatistic.
+        r"""Gets the restoring_count of this StatusStatistic.
 
         恢复中的实例数。
 
@@ -248,7 +248,7 @@ class StatusStatistic:
 
     @restoring_count.setter
     def restoring_count(self, restoring_count):
-        """Sets the restoring_count of this StatusStatistic.
+        r"""Sets the restoring_count of this StatusStatistic.
 
         恢复中的实例数。
 
@@ -259,7 +259,7 @@ class StatusStatistic:
 
     @property
     def extending_count(self):
-        """Gets the extending_count of this StatusStatistic.
+        r"""Gets the extending_count of this StatusStatistic.
 
         扩容中的实例数。
 
@@ -270,7 +270,7 @@ class StatusStatistic:
 
     @extending_count.setter
     def extending_count(self, extending_count):
-        """Sets the extending_count of this StatusStatistic.
+        r"""Sets the extending_count of this StatusStatistic.
 
         扩容中的实例数。
 
@@ -281,7 +281,7 @@ class StatusStatistic:
 
     @property
     def creating_count(self):
-        """Gets the creating_count of this StatusStatistic.
+        r"""Gets the creating_count of this StatusStatistic.
 
         正在创建的实例数。
 
@@ -292,7 +292,7 @@ class StatusStatistic:
 
     @creating_count.setter
     def creating_count(self, creating_count):
-        """Sets the creating_count of this StatusStatistic.
+        r"""Sets the creating_count of this StatusStatistic.
 
         正在创建的实例数。
 
@@ -303,7 +303,7 @@ class StatusStatistic:
 
     @property
     def running_count(self):
-        """Gets the running_count of this StatusStatistic.
+        r"""Gets the running_count of this StatusStatistic.
 
         正在运行的实例数。
 
@@ -314,7 +314,7 @@ class StatusStatistic:
 
     @running_count.setter
     def running_count(self, running_count):
-        """Sets the running_count of this StatusStatistic.
+        r"""Sets the running_count of this StatusStatistic.
 
         正在运行的实例数。
 
@@ -325,7 +325,7 @@ class StatusStatistic:
 
     @property
     def error_count(self):
-        """Gets the error_count of this StatusStatistic.
+        r"""Gets the error_count of this StatusStatistic.
 
         异常的实例数。
 
@@ -336,7 +336,7 @@ class StatusStatistic:
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this StatusStatistic.
+        r"""Sets the error_count of this StatusStatistic.
 
         异常的实例数。
 
@@ -347,7 +347,7 @@ class StatusStatistic:
 
     @property
     def frozen_count(self):
-        """Gets the frozen_count of this StatusStatistic.
+        r"""Gets the frozen_count of this StatusStatistic.
 
         已冻结的实例数。
 
@@ -358,7 +358,7 @@ class StatusStatistic:
 
     @frozen_count.setter
     def frozen_count(self, frozen_count):
-        """Sets the frozen_count of this StatusStatistic.
+        r"""Sets the frozen_count of this StatusStatistic.
 
         已冻结的实例数。
 
@@ -369,7 +369,7 @@ class StatusStatistic:
 
     @property
     def createfailed_count(self):
-        """Gets the createfailed_count of this StatusStatistic.
+        r"""Gets the createfailed_count of this StatusStatistic.
 
         创建失败的实例数。
 
@@ -380,7 +380,7 @@ class StatusStatistic:
 
     @createfailed_count.setter
     def createfailed_count(self, createfailed_count):
-        """Sets the createfailed_count of this StatusStatistic.
+        r"""Sets the createfailed_count of this StatusStatistic.
 
         创建失败的实例数。
 
@@ -391,7 +391,7 @@ class StatusStatistic:
 
     @property
     def restarting_count(self):
-        """Gets the restarting_count of this StatusStatistic.
+        r"""Gets the restarting_count of this StatusStatistic.
 
         正在重启的实例数。
 
@@ -402,7 +402,7 @@ class StatusStatistic:
 
     @restarting_count.setter
     def restarting_count(self, restarting_count):
-        """Sets the restarting_count of this StatusStatistic.
+        r"""Sets the restarting_count of this StatusStatistic.
 
         正在重启的实例数。
 

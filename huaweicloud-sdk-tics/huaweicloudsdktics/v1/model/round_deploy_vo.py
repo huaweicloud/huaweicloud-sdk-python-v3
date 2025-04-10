@@ -27,7 +27,7 @@ class RoundDeployVo:
     }
 
     def __init__(self, deploys=None, round_id=None):
-        """RoundDeployVo
+        r"""RoundDeployVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RoundDeployVo:
 
     @property
     def deploys(self):
-        """Gets the deploys of this RoundDeployVo.
+        r"""Gets the deploys of this RoundDeployVo.
 
         deploy
 
@@ -61,7 +61,7 @@ class RoundDeployVo:
 
     @deploys.setter
     def deploys(self, deploys):
-        """Sets the deploys of this RoundDeployVo.
+        r"""Sets the deploys of this RoundDeployVo.
 
         deploy
 
@@ -72,7 +72,7 @@ class RoundDeployVo:
 
     @property
     def round_id(self):
-        """Gets the round_id of this RoundDeployVo.
+        r"""Gets the round_id of this RoundDeployVo.
 
         轮数
 
@@ -83,7 +83,7 @@ class RoundDeployVo:
 
     @round_id.setter
     def round_id(self, round_id):
-        """Sets the round_id of this RoundDeployVo.
+        r"""Sets the round_id of this RoundDeployVo.
 
         轮数
 

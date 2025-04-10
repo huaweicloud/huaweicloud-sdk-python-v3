@@ -37,7 +37,7 @@ class UpdateNaRequestDTO:
     }
 
     def __init__(self, name=None, description=None, endpoint=None, auth_type=None, auth_aksk_info=None, access_type=None, access_roma_info=None):
-        """UpdateNaRequestDTO
+        r"""UpdateNaRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class UpdateNaRequestDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateNaRequestDTO.
+        r"""Gets the name of this UpdateNaRequestDTO.
 
         NA系统名称
 
@@ -93,7 +93,7 @@ class UpdateNaRequestDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNaRequestDTO.
+        r"""Sets the name of this UpdateNaRequestDTO.
 
         NA系统名称
 
@@ -104,7 +104,7 @@ class UpdateNaRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNaRequestDTO.
+        r"""Gets the description of this UpdateNaRequestDTO.
 
         北向NA系统描述
 
@@ -115,7 +115,7 @@ class UpdateNaRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNaRequestDTO.
+        r"""Sets the description of this UpdateNaRequestDTO.
 
         北向NA系统描述
 
@@ -126,7 +126,7 @@ class UpdateNaRequestDTO:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this UpdateNaRequestDTO.
+        r"""Gets the endpoint of this UpdateNaRequestDTO.
 
         访问URL地址
 
@@ -137,7 +137,7 @@ class UpdateNaRequestDTO:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this UpdateNaRequestDTO.
+        r"""Sets the endpoint of this UpdateNaRequestDTO.
 
         访问URL地址
 
@@ -148,7 +148,7 @@ class UpdateNaRequestDTO:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this UpdateNaRequestDTO.
+        r"""Gets the auth_type of this UpdateNaRequestDTO.
 
         鉴权方式
 
@@ -159,7 +159,7 @@ class UpdateNaRequestDTO:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this UpdateNaRequestDTO.
+        r"""Sets the auth_type of this UpdateNaRequestDTO.
 
         鉴权方式
 
@@ -170,7 +170,7 @@ class UpdateNaRequestDTO:
 
     @property
     def auth_aksk_info(self):
-        """Gets the auth_aksk_info of this UpdateNaRequestDTO.
+        r"""Gets the auth_aksk_info of this UpdateNaRequestDTO.
 
         :return: The auth_aksk_info of this UpdateNaRequestDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
@@ -179,7 +179,7 @@ class UpdateNaRequestDTO:
 
     @auth_aksk_info.setter
     def auth_aksk_info(self, auth_aksk_info):
-        """Sets the auth_aksk_info of this UpdateNaRequestDTO.
+        r"""Sets the auth_aksk_info of this UpdateNaRequestDTO.
 
         :param auth_aksk_info: The auth_aksk_info of this UpdateNaRequestDTO.
         :type auth_aksk_info: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
@@ -188,7 +188,7 @@ class UpdateNaRequestDTO:
 
     @property
     def access_type(self):
-        """Gets the access_type of this UpdateNaRequestDTO.
+        r"""Gets the access_type of this UpdateNaRequestDTO.
 
         接入类型
 
@@ -199,7 +199,7 @@ class UpdateNaRequestDTO:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this UpdateNaRequestDTO.
+        r"""Sets the access_type of this UpdateNaRequestDTO.
 
         接入类型
 
@@ -210,7 +210,7 @@ class UpdateNaRequestDTO:
 
     @property
     def access_roma_info(self):
-        """Gets the access_roma_info of this UpdateNaRequestDTO.
+        r"""Gets the access_roma_info of this UpdateNaRequestDTO.
 
         :return: The access_roma_info of this UpdateNaRequestDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`
@@ -219,7 +219,7 @@ class UpdateNaRequestDTO:
 
     @access_roma_info.setter
     def access_roma_info(self, access_roma_info):
-        """Sets the access_roma_info of this UpdateNaRequestDTO.
+        r"""Sets the access_roma_info of this UpdateNaRequestDTO.
 
         :param access_roma_info: The access_roma_info of this UpdateNaRequestDTO.
         :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`

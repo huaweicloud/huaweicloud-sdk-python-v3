@@ -25,7 +25,7 @@ class GatewayType:
     }
 
     def __init__(self, gateway_type=None):
-        """GatewayType
+        r"""GatewayType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GatewayType:
 
     @property
     def gateway_type(self):
-        """Gets the gateway_type of this GatewayType.
+        r"""Gets the gateway_type of this GatewayType.
 
         :return: The gateway_type of this GatewayType.
         :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -51,7 +51,7 @@ class GatewayType:
 
     @gateway_type.setter
     def gateway_type(self, gateway_type):
-        """Sets the gateway_type of this GatewayType.
+        r"""Sets the gateway_type of this GatewayType.
 
         :param gateway_type: The gateway_type of this GatewayType.
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`

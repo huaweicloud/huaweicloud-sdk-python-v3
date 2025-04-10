@@ -26,7 +26,7 @@ class ShowUserInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instance_num=None):
-        """ShowUserInstancesResponse
+        r"""ShowUserInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowUserInstancesResponse(SdkResponse):
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ShowUserInstancesResponse.
+        r"""Gets the instance_num of this ShowUserInstancesResponse.
 
         非默认用户主密钥个数。
 
@@ -55,7 +55,7 @@ class ShowUserInstancesResponse(SdkResponse):
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ShowUserInstancesResponse.
+        r"""Sets the instance_num of this ShowUserInstancesResponse.
 
         非默认用户主密钥个数。
 

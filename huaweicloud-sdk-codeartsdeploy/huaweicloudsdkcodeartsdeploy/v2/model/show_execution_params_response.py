@@ -26,7 +26,7 @@ class ShowExecutionParamsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowExecutionParamsResponse
+        r"""ShowExecutionParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowExecutionParamsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowExecutionParamsResponse.
+        r"""Gets the body of this ShowExecutionParamsResponse.
 
         查询部署记录执行参数返回体
 
@@ -55,7 +55,7 @@ class ShowExecutionParamsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowExecutionParamsResponse.
+        r"""Sets the body of this ShowExecutionParamsResponse.
 
         查询部署记录执行参数返回体
 

@@ -48,7 +48,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, vpc_channel_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, microservice_info=None):
-        """UpdateVpcChannelV2Response
+        r"""UpdateVpcChannelV2Response
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpcChannelV2Response.
+        r"""Gets the name of this UpdateVpcChannelV2Response.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -128,7 +128,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpcChannelV2Response.
+        r"""Sets the name of this UpdateVpcChannelV2Response.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -139,7 +139,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this UpdateVpcChannelV2Response.
+        r"""Gets the port of this UpdateVpcChannelV2Response.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -150,7 +150,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateVpcChannelV2Response.
+        r"""Sets the port of this UpdateVpcChannelV2Response.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -161,7 +161,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def balance_strategy(self):
-        """Gets the balance_strategy of this UpdateVpcChannelV2Response.
+        r"""Gets the balance_strategy of this UpdateVpcChannelV2Response.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -172,7 +172,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @balance_strategy.setter
     def balance_strategy(self, balance_strategy):
-        """Sets the balance_strategy of this UpdateVpcChannelV2Response.
+        r"""Sets the balance_strategy of this UpdateVpcChannelV2Response.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -183,7 +183,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def member_type(self):
-        """Gets the member_type of this UpdateVpcChannelV2Response.
+        r"""Gets the member_type of this UpdateVpcChannelV2Response.
 
         VPC通道的成员类型。 - ip - ecs
 
@@ -194,7 +194,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this UpdateVpcChannelV2Response.
+        r"""Sets the member_type of this UpdateVpcChannelV2Response.
 
         VPC通道的成员类型。 - ip - ecs
 
@@ -205,7 +205,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateVpcChannelV2Response.
+        r"""Gets the type of this UpdateVpcChannelV2Response.
 
         vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型  当vpc_channel_type字段为空时，负载通道类型由type字段控制： 当type不为3或microservice_info为空，VCP通道类型默认为服务器类型。 当type=3，microservice_info不为空，VPC通道类型为微服务类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。  此字段待废弃，请使用vpc_channel_type字段指定负载通道类型。
 
@@ -216,7 +216,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateVpcChannelV2Response.
+        r"""Sets the type of this UpdateVpcChannelV2Response.
 
         vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型  当vpc_channel_type字段为空时，负载通道类型由type字段控制： 当type不为3或microservice_info为空，VCP通道类型默认为服务器类型。 当type=3，microservice_info不为空，VPC通道类型为微服务类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。  此字段待废弃，请使用vpc_channel_type字段指定负载通道类型。
 
@@ -227,7 +227,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def vpc_channel_type(self):
-        """Gets the vpc_channel_type of this UpdateVpcChannelV2Response.
+        r"""Gets the vpc_channel_type of this UpdateVpcChannelV2Response.
 
         vpc通道类型。 - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型  当vpc_channel_type为空时，负载通道类型取决于type字段的取值。 当vpc_channel_type不为空，但type字段非空或不为0时，当vpc_channel_type的指定类型与type字段指定的类型冲突时会校验报错。 当vpc_channel_type不为空，且type字段为空或等于0时，直接使用vpc_channel_type字段的值指定负载通道类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。
 
@@ -238,7 +238,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @vpc_channel_type.setter
     def vpc_channel_type(self, vpc_channel_type):
-        """Sets the vpc_channel_type of this UpdateVpcChannelV2Response.
+        r"""Sets the vpc_channel_type of this UpdateVpcChannelV2Response.
 
         vpc通道类型。 - builtin：服务器类型 - microservice： 微服务类型 - reference：引用负载通道类型  当vpc_channel_type为空时，负载通道类型取决于type字段的取值。 当vpc_channel_type不为空，但type字段非空或不为0时，当vpc_channel_type的指定类型与type字段指定的类型冲突时会校验报错。 当vpc_channel_type不为空，且type字段为空或等于0时，直接使用vpc_channel_type字段的值指定负载通道类型。  修改负载通道时vpc通道类型不会修改，直接使用原有的vpc通道类型。
 
@@ -249,7 +249,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def dict_code(self):
-        """Gets the dict_code of this UpdateVpcChannelV2Response.
+        r"""Gets the dict_code of this UpdateVpcChannelV2Response.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -260,7 +260,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @dict_code.setter
     def dict_code(self, dict_code):
-        """Sets the dict_code of this UpdateVpcChannelV2Response.
+        r"""Sets the dict_code of this UpdateVpcChannelV2Response.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -271,7 +271,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateVpcChannelV2Response.
+        r"""Gets the create_time of this UpdateVpcChannelV2Response.
 
         VPC通道的创建时间
 
@@ -282,7 +282,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateVpcChannelV2Response.
+        r"""Sets the create_time of this UpdateVpcChannelV2Response.
 
         VPC通道的创建时间
 
@@ -293,7 +293,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateVpcChannelV2Response.
+        r"""Gets the id of this UpdateVpcChannelV2Response.
 
         VPC通道的编号
 
@@ -304,7 +304,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateVpcChannelV2Response.
+        r"""Sets the id of this UpdateVpcChannelV2Response.
 
         VPC通道的编号
 
@@ -315,7 +315,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateVpcChannelV2Response.
+        r"""Gets the status of this UpdateVpcChannelV2Response.
 
         VPC通道的状态。 - 1：正常 - 2：异常
 
@@ -326,7 +326,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateVpcChannelV2Response.
+        r"""Sets the status of this UpdateVpcChannelV2Response.
 
         VPC通道的状态。 - 1：正常 - 2：异常
 
@@ -337,7 +337,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def member_groups(self):
-        """Gets the member_groups of this UpdateVpcChannelV2Response.
+        r"""Gets the member_groups of this UpdateVpcChannelV2Response.
 
         后端云服务器组列表。
 
@@ -348,7 +348,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @member_groups.setter
     def member_groups(self, member_groups):
-        """Sets the member_groups of this UpdateVpcChannelV2Response.
+        r"""Sets the member_groups of this UpdateVpcChannelV2Response.
 
         后端云服务器组列表。
 
@@ -359,7 +359,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @property
     def microservice_info(self):
-        """Gets the microservice_info of this UpdateVpcChannelV2Response.
+        r"""Gets the microservice_info of this UpdateVpcChannelV2Response.
 
         :return: The microservice_info of this UpdateVpcChannelV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfo`
@@ -368,7 +368,7 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     @microservice_info.setter
     def microservice_info(self, microservice_info):
-        """Sets the microservice_info of this UpdateVpcChannelV2Response.
+        r"""Sets the microservice_info of this UpdateVpcChannelV2Response.
 
         :param microservice_info: The microservice_info of this UpdateVpcChannelV2Response.
         :type microservice_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfo`

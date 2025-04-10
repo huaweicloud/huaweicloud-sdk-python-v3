@@ -31,7 +31,7 @@ class SmartDocumentRecognizerTableBlock:
     }
 
     def __init__(self, location=None, words_block_count=None, words_block_list=None, excel=None):
-        """SmartDocumentRecognizerTableBlock
+        r"""SmartDocumentRecognizerTableBlock
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @property
     def location(self):
-        """Gets the location of this SmartDocumentRecognizerTableBlock.
+        r"""Gets the location of this SmartDocumentRecognizerTableBlock.
 
         当前表格的位置信息，列表形式，分别表示文字块4个顶点的x, y坐标；坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -75,7 +75,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this SmartDocumentRecognizerTableBlock.
+        r"""Sets the location of this SmartDocumentRecognizerTableBlock.
 
         当前表格的位置信息，列表形式，分别表示文字块4个顶点的x, y坐标；坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -86,7 +86,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this SmartDocumentRecognizerTableBlock.
+        r"""Gets the words_block_count of this SmartDocumentRecognizerTableBlock.
 
         表格中所包含的单元格数量。 
 
@@ -97,7 +97,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this SmartDocumentRecognizerTableBlock.
+        r"""Sets the words_block_count of this SmartDocumentRecognizerTableBlock.
 
         表格中所包含的单元格数量。 
 
@@ -108,7 +108,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this SmartDocumentRecognizerTableBlock.
+        r"""Gets the words_block_list of this SmartDocumentRecognizerTableBlock.
 
         单元格识别结果列表。 
 
@@ -119,7 +119,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this SmartDocumentRecognizerTableBlock.
+        r"""Sets the words_block_list of this SmartDocumentRecognizerTableBlock.
 
         单元格识别结果列表。 
 
@@ -130,7 +130,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @property
     def excel(self):
-        """Gets the excel of this SmartDocumentRecognizerTableBlock.
+        r"""Gets the excel of this SmartDocumentRecognizerTableBlock.
 
         表格识别结果的base64编码，仅当return_excel为True时返回该字段。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
 
@@ -141,7 +141,7 @@ class SmartDocumentRecognizerTableBlock:
 
     @excel.setter
     def excel(self, excel):
-        """Sets the excel of this SmartDocumentRecognizerTableBlock.
+        r"""Sets the excel of this SmartDocumentRecognizerTableBlock.
 
         表格识别结果的base64编码，仅当return_excel为True时返回该字段。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
 

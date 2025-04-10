@@ -41,7 +41,7 @@ class BandwidthPackageSite:
     }
 
     def __init__(self, id=None, site_code=None, region_id=None, site_type=None, name_cn=None, name_en=None, description=None, created_at=None, updated_at=None):
-        """BandwidthPackageSite
+        r"""BandwidthPackageSite
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class BandwidthPackageSite:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthPackageSite.
+        r"""Gets the id of this BandwidthPackageSite.
 
         实例ID。
 
@@ -110,7 +110,7 @@ class BandwidthPackageSite:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthPackageSite.
+        r"""Sets the id of this BandwidthPackageSite.
 
         实例ID。
 
@@ -121,7 +121,7 @@ class BandwidthPackageSite:
 
     @property
     def site_code(self):
-        """Gets the site_code of this BandwidthPackageSite.
+        r"""Gets the site_code of this BandwidthPackageSite.
 
         站点编码
 
@@ -132,7 +132,7 @@ class BandwidthPackageSite:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this BandwidthPackageSite.
+        r"""Sets the site_code of this BandwidthPackageSite.
 
         站点编码
 
@@ -143,7 +143,7 @@ class BandwidthPackageSite:
 
     @property
     def region_id(self):
-        """Gets the region_id of this BandwidthPackageSite.
+        r"""Gets the region_id of this BandwidthPackageSite.
 
         RegionID。
 
@@ -154,7 +154,7 @@ class BandwidthPackageSite:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this BandwidthPackageSite.
+        r"""Sets the region_id of this BandwidthPackageSite.
 
         RegionID。
 
@@ -165,7 +165,7 @@ class BandwidthPackageSite:
 
     @property
     def site_type(self):
-        """Gets the site_type of this BandwidthPackageSite.
+        r"""Gets the site_type of this BandwidthPackageSite.
 
         站点类型。默认Region级别
 
@@ -176,7 +176,7 @@ class BandwidthPackageSite:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this BandwidthPackageSite.
+        r"""Sets the site_type of this BandwidthPackageSite.
 
         站点类型。默认Region级别
 
@@ -187,7 +187,7 @@ class BandwidthPackageSite:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this BandwidthPackageSite.
+        r"""Gets the name_cn of this BandwidthPackageSite.
 
         实例名字。
 
@@ -198,7 +198,7 @@ class BandwidthPackageSite:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this BandwidthPackageSite.
+        r"""Sets the name_cn of this BandwidthPackageSite.
 
         实例名字。
 
@@ -209,7 +209,7 @@ class BandwidthPackageSite:
 
     @property
     def name_en(self):
-        """Gets the name_en of this BandwidthPackageSite.
+        r"""Gets the name_en of this BandwidthPackageSite.
 
         实例名字。
 
@@ -220,7 +220,7 @@ class BandwidthPackageSite:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this BandwidthPackageSite.
+        r"""Sets the name_en of this BandwidthPackageSite.
 
         实例名字。
 
@@ -231,7 +231,7 @@ class BandwidthPackageSite:
 
     @property
     def description(self):
-        """Gets the description of this BandwidthPackageSite.
+        r"""Gets the description of this BandwidthPackageSite.
 
         描述。不支持 <>。
 
@@ -242,7 +242,7 @@ class BandwidthPackageSite:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BandwidthPackageSite.
+        r"""Sets the description of this BandwidthPackageSite.
 
         描述。不支持 <>。
 
@@ -253,7 +253,7 @@ class BandwidthPackageSite:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BandwidthPackageSite.
+        r"""Gets the created_at of this BandwidthPackageSite.
 
         创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -264,7 +264,7 @@ class BandwidthPackageSite:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BandwidthPackageSite.
+        r"""Sets the created_at of this BandwidthPackageSite.
 
         创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -275,7 +275,7 @@ class BandwidthPackageSite:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BandwidthPackageSite.
+        r"""Gets the updated_at of this BandwidthPackageSite.
 
         更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -286,7 +286,7 @@ class BandwidthPackageSite:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BandwidthPackageSite.
+        r"""Sets the updated_at of this BandwidthPackageSite.
 
         更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 

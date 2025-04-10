@@ -26,7 +26,7 @@ class CreateEnvironmentResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateEnvironmentResponse
+        r"""CreateEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateEnvironmentResponse.
+        r"""Gets the job_id of this CreateEnvironmentResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateEnvironmentResponse.
+        r"""Sets the job_id of this CreateEnvironmentResponse.
 
         任务ID。
 

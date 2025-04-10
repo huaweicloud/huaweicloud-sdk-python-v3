@@ -26,7 +26,7 @@ class DeployFactoryPackagesResponse(SdkResponse):
     }
 
     def __init__(self, deploy_package_details=None):
-        """DeployFactoryPackagesResponse
+        r"""DeployFactoryPackagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeployFactoryPackagesResponse(SdkResponse):
 
     @property
     def deploy_package_details(self):
-        """Gets the deploy_package_details of this DeployFactoryPackagesResponse.
+        r"""Gets the deploy_package_details of this DeployFactoryPackagesResponse.
 
         发布包信息
 
@@ -55,7 +55,7 @@ class DeployFactoryPackagesResponse(SdkResponse):
 
     @deploy_package_details.setter
     def deploy_package_details(self, deploy_package_details):
-        """Sets the deploy_package_details of this DeployFactoryPackagesResponse.
+        r"""Sets the deploy_package_details of this DeployFactoryPackagesResponse.
 
         发布包信息
 

@@ -34,7 +34,7 @@ class GeipAsyncClient(Client):
         return client_builder
 
     def add_internet_bandwidth_tags_async(self, request):
-        """添加全域公网带宽标签
+        r"""添加全域公网带宽标签
 
         添加全域公网带宽标签
         
@@ -101,7 +101,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_create_internet_bandwidth_async(self, request):
-        """批量创建全域公网带宽
+        r"""批量创建全域公网带宽
 
         批量创建全域公网带宽
         
@@ -166,7 +166,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_create_internet_bandwidth_tags_async(self, request):
-        """批量添加全域公网带宽标签
+        r"""批量添加全域公网带宽标签
 
         批量添加全域公网带宽标签
         
@@ -233,7 +233,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_delete_internet_bandwidth_tags_async(self, request):
-        """批量删除全域公网带宽标签
+        r"""批量删除全域公网带宽标签
 
         批量删除全域公网带宽标签
         
@@ -300,7 +300,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def count_internet_bandwidth_async(self, request):
-        """查询全域公网带宽个数
+        r"""查询全域公网带宽个数
 
         查询全域公网带宽个数
         
@@ -386,7 +386,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def create_internet_bandwidth_async(self, request):
-        """创建全域公网带宽
+        r"""创建全域公网带宽
 
         创建全域公网带宽
         
@@ -451,7 +451,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def create_user_disclaimer_async(self, request):
-        """创建租户签署免责条款
+        r"""创建租户签署免责条款
 
         创建租户签署免责条款
         
@@ -514,7 +514,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_internet_bandwidth_async(self, request):
-        """删除全域公网带宽
+        r"""删除全域公网带宽
 
         删除全域公网带宽
         
@@ -579,7 +579,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_internet_bandwidth_tag_async(self, request):
-        """删除全域公网带宽标签
+        r"""删除全域公网带宽标签
 
         删除全域公网带宽标签
         
@@ -646,7 +646,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_user_disclaimer_async(self, request):
-        """删除租户撤销免责条款
+        r"""删除租户撤销免责条款
 
         删除租户撤销免责条款
         
@@ -709,7 +709,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_access_sites_async(self, request):
-        """查询接入点列表
+        r"""查询接入点列表
 
         查询接入点列表
         
@@ -801,7 +801,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_geip_resource_quotas_async(self, request):
-        """查询租户全域弹性公网IP配额
+        r"""查询租户全域弹性公网IP配额
 
         查询租户全域弹性公网IP配额
         
@@ -878,7 +878,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_internet_bandwidth_count_filter_tags_async(self, request):
-        """查询资源实例列表数目
+        r"""查询资源实例列表数目
 
         查询资源实例列表数目
         
@@ -943,7 +943,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_internet_bandwidth_domain_tags_async(self, request):
-        """查询全域公网带宽项目标签
+        r"""查询全域公网带宽项目标签
 
         查询全域公网带宽项目标签
         
@@ -1006,7 +1006,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_internet_bandwidth_filter_tags_async(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         查询资源实例列表
         
@@ -1077,7 +1077,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_internet_bandwidth_limits_async(self, request):
-        """全域公网带宽限制列表
+        r"""全域公网带宽限制列表
 
         查询全域公网带宽限制列表
         
@@ -1154,7 +1154,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_internet_bandwidths_async(self, request):
-        """查询全域公网带宽列表
+        r"""查询全域公网带宽列表
 
         查询全域公网带宽列表
         
@@ -1263,7 +1263,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_support_masks_async(self, request):
-        """查询全域弹性公网IP段支持的掩码列表
+        r"""查询全域弹性公网IP段支持的掩码列表
 
         查询全域弹性公网IP段支持的掩码列表
         
@@ -1352,7 +1352,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_internet_bandwidth_async(self, request):
-        """查询全域公网带宽详情
+        r"""查询全域公网带宽详情
 
         查询全域公网带宽详情
         
@@ -1420,7 +1420,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_internet_bandwidth_tags_async(self, request):
-        """查询全域公网带宽标签
+        r"""查询全域公网带宽标签
 
         查询全域公网带宽标签
         
@@ -1485,7 +1485,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_user_disclaimer_async(self, request):
-        """查询租户签署免责条款详情
+        r"""查询租户签署免责条款详情
 
         查询租户签署免责条款详情
         
@@ -1551,7 +1551,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def update_internet_bandwidth_async(self, request):
-        """更新全域公网带宽
+        r"""更新全域公网带宽
 
         更新全域公网带宽
         
@@ -1618,7 +1618,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def add_geip_segment_tags_async(self, request):
-        """添加全域弹性公网IP段标签
+        r"""添加全域弹性公网IP段标签
 
         添加全域弹性公网IP段的标签
         
@@ -1685,7 +1685,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def add_global_eip_tags_async(self, request):
-        """添加全域弹性公网IP标签
+        r"""添加全域弹性公网IP标签
 
         添加全域弹性公网IP的标签
         
@@ -1752,7 +1752,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def associate_geip_segment_instance_async(self, request):
-        """全域弹性公网IP段绑定后端实例
+        r"""全域弹性公网IP段绑定后端实例
 
         全域弹性公网IP段绑定后端实例
         
@@ -1819,7 +1819,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def associate_instance_async(self, request):
-        """绑定后端实例
+        r"""绑定后端实例
 
         绑定后端实例
         
@@ -1888,7 +1888,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def attach_internet_bandwidth_async(self, request):
-        """绑定全域公网带宽
+        r"""绑定全域公网带宽
 
         绑定全域公网带宽
         
@@ -1955,7 +1955,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_attach_geip_segment_internet_bandwidth_async(self, request):
-        """全域弹性公网IP段批量绑定全域公网带宽
+        r"""全域弹性公网IP段批量绑定全域公网带宽
 
         全域弹性公网IP段批量绑定全域公网带宽
         
@@ -2020,7 +2020,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_attach_internet_bandwidth_async(self, request):
-        """批量绑定全域公网带宽
+        r"""批量绑定全域公网带宽
 
         批量绑定全域公网带宽
         
@@ -2085,7 +2085,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_create_geip_segment_tags_async(self, request):
-        """批量添加全域弹性公网IP段标签
+        r"""批量添加全域弹性公网IP段标签
 
         批量添加全域弹性公网IP段的标签
         
@@ -2152,7 +2152,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_create_global_eip_async(self, request):
-        """批量创建全域弹性公网IP
+        r"""批量创建全域弹性公网IP
 
         批量创建全域弹性公网IP
         
@@ -2217,7 +2217,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_create_global_eip_tags_async(self, request):
-        """批量添加全域弹性公网IP标签
+        r"""批量添加全域弹性公网IP标签
 
         批量添加全域弹性公网IP的标签
         
@@ -2284,7 +2284,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_delete_geip_segment_tags_async(self, request):
-        """批量删除全域弹性公网IP段标签
+        r"""批量删除全域弹性公网IP段标签
 
         批量删除全域弹性公网IP段的标签
         
@@ -2351,7 +2351,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_delete_global_eip_tags_async(self, request):
-        """批量删除全域弹性公网IP标签
+        r"""批量删除全域弹性公网IP标签
 
         批量删除全域弹性公网IP的标签
         
@@ -2418,7 +2418,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_detach_geip_segment_internet_bandwidth_async(self, request):
-        """全域弹性公网IP段批量解绑全域公网带宽
+        r"""全域弹性公网IP段批量解绑全域公网带宽
 
         全域弹性公网IP段批量解绑全域公网带宽
         
@@ -2483,7 +2483,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def batch_detach_internet_bandwidth_async(self, request):
-        """批量解绑全域公网带宽
+        r"""批量解绑全域公网带宽
 
         批量解绑全域公网带宽
         
@@ -2548,7 +2548,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def count_global_eip_segment_async(self, request):
-        """查询全域弹性公网IP段个数
+        r"""查询全域弹性公网IP段个数
 
         查询全域弹性公网IP段个数
         
@@ -2684,7 +2684,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def count_global_eips_async(self, request):
-        """查询全域弹性公网IP个数
+        r"""查询全域弹性公网IP个数
 
         查询全域弹性公网IP个数
         
@@ -2815,7 +2815,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def create_global_eip_async(self, request):
-        """创建全域弹性公网IP
+        r"""创建全域弹性公网IP
 
         创建全域弹性公网IP
         
@@ -2880,7 +2880,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def create_global_eip_segment_async(self, request):
-        """创建全域弹性公网IP段
+        r"""创建全域弹性公网IP段
 
         创建全域弹性公网IP段
         
@@ -2945,7 +2945,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_geip_segment_tag_async(self, request):
-        """删除全域弹性公网IP段标签
+        r"""删除全域弹性公网IP段标签
 
         删除全域弹性公网IP段的标签
         
@@ -3012,7 +3012,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_global_eip_async(self, request):
-        """删除全域弹性公网IP
+        r"""删除全域弹性公网IP
 
         删除全域弹性公网IP
         
@@ -3077,7 +3077,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_global_eip_segment_async(self, request):
-        """删除全域弹性公网IP段
+        r"""删除全域弹性公网IP段
 
         删除全域弹性公网IP段
         
@@ -3142,7 +3142,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def delete_global_eip_tag_async(self, request):
-        """删除全域弹性公网IP标签
+        r"""删除全域弹性公网IP标签
 
         删除全域弹性公网IP的标签
         
@@ -3209,7 +3209,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def detach_internet_bandwidth_async(self, request):
-        """解绑全域公网带宽
+        r"""解绑全域公网带宽
 
         解绑全域公网带宽
         
@@ -3276,7 +3276,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def disassociate_geip_segment_instance_async(self, request):
-        """全域弹性公网IP段解绑后端实例
+        r"""全域弹性公网IP段解绑后端实例
 
         全域弹性公网IP段解绑后端实例
         
@@ -3341,7 +3341,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def disassociate_instance_async(self, request):
-        """解绑后端实例
+        r"""解绑后端实例
 
         解绑后端实例
         
@@ -3408,7 +3408,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_geip_pools_async(self, request):
-        """查询全域弹性公网IP池列表
+        r"""查询全域弹性公网IP池列表
 
         查询全域弹性公网IP池列表
         
@@ -3509,7 +3509,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_geip_segment_count_filter_tags_async(self, request):
-        """查询资源实例列表数目
+        r"""查询资源实例列表数目
 
         查询资源实例列表的数目
         
@@ -3574,7 +3574,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_geip_segment_domain_tags_async(self, request):
-        """查询全域弹性公网IP段项目标签
+        r"""查询全域弹性公网IP段项目标签
 
         查询全域弹性公网IP段的项目标签
         
@@ -3637,7 +3637,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_geip_segment_filter_tags_async(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         查询资源实例的列表
         
@@ -3708,7 +3708,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_global_eip_count_filter_tags_async(self, request):
-        """查询资源实例列表数目
+        r"""查询资源实例列表数目
 
         查询资源实例列表数目
         
@@ -3773,7 +3773,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_global_eip_domain_tags_async(self, request):
-        """查询全域弹性公网IP项目标签
+        r"""查询全域弹性公网IP项目标签
 
         查询全域弹性公网IP的项目标签
         
@@ -3836,7 +3836,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_global_eip_filter_tags_async(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         查询资源实例列表
         
@@ -3907,7 +3907,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_global_eip_segments_async(self, request):
-        """查询全域弹性公网IP段列表
+        r"""查询全域弹性公网IP段列表
 
         查询全域弹性公网IP段列表
         
@@ -4055,7 +4055,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_global_eips_async(self, request):
-        """查询全域弹性公网IP列表
+        r"""查询全域弹性公网IP列表
 
         查询全域弹性公网IP列表
         
@@ -4209,7 +4209,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_geip_segment_tags_async(self, request):
-        """查询全域弹性公网IP段标签
+        r"""查询全域弹性公网IP段标签
 
         查询全域弹性公网IP段的标签
         
@@ -4274,7 +4274,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_global_eip_async(self, request):
-        """查询全域弹性公网IP详情
+        r"""查询全域弹性公网IP详情
 
         查询全域弹性公网IP详情
         
@@ -4342,7 +4342,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_global_eip_segment_async(self, request):
-        """查询全域弹性公网IP段详情
+        r"""查询全域弹性公网IP段详情
 
         查询全域弹性公网IP段详情
         
@@ -4410,7 +4410,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_global_eip_tags_async(self, request):
-        """查询全域弹性公网IP标签
+        r"""查询全域弹性公网IP标签
 
         查询全域弹性公网IP的标签
         
@@ -4475,7 +4475,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def update_global_eip_async(self, request):
-        """更新全域弹性公网IP信息
+        r"""更新全域弹性公网IP信息
 
         更新全域弹性公网IP信息
         
@@ -4542,7 +4542,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def update_global_eip_segment_async(self, request):
-        """更新全域弹性公网IP段
+        r"""更新全域弹性公网IP段
 
         更新全域弹性公网IP段
         
@@ -4609,7 +4609,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_jobs_async(self, request):
-        """查询Job列表
+        r"""查询Job列表
 
         查询Job列表
         
@@ -4698,7 +4698,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def show_jobs_async(self, request):
-        """查询Job详情
+        r"""查询Job详情
 
         查询Job详情
         
@@ -4766,7 +4766,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_support_regions_async(self, request):
-        """全域弹性公网IP支持绑定的Region限制
+        r"""全域弹性公网IP支持绑定的Region限制
 
         全域弹性公网IP支持绑定的Region限制
         
@@ -4867,7 +4867,7 @@ class GeipAsyncClient(Client):
         return http_info
 
     def list_tenant_geip_support_instances_async(self, request):
-        """查询指定站点允许绑定的Region信息
+        r"""查询指定站点允许绑定的Region信息
 
         console通过此接口获取指定pop点的全域弹性公网IP允许绑定的region实例信息
         

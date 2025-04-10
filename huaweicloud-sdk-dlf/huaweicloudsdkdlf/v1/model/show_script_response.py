@@ -40,7 +40,7 @@ class ShowScriptResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None):
-        """ShowScriptResponse
+        r"""ShowScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowScriptResponse.
+        r"""Gets the name of this ShowScriptResponse.
 
         :return: The name of this ShowScriptResponse.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowScriptResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowScriptResponse.
+        r"""Sets the name of this ShowScriptResponse.
 
         :param name: The name of this ShowScriptResponse.
         :type name: str
@@ -111,7 +111,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowScriptResponse.
+        r"""Gets the type of this ShowScriptResponse.
 
         脚本类型
 
@@ -122,7 +122,7 @@ class ShowScriptResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowScriptResponse.
+        r"""Sets the type of this ShowScriptResponse.
 
         脚本类型
 
@@ -133,7 +133,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def directory(self):
-        """Gets the directory of this ShowScriptResponse.
+        r"""Gets the directory of this ShowScriptResponse.
 
         脚本关联的目录
 
@@ -144,7 +144,7 @@ class ShowScriptResponse(SdkResponse):
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ShowScriptResponse.
+        r"""Sets the directory of this ShowScriptResponse.
 
         脚本关联的目录
 
@@ -155,7 +155,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowScriptResponse.
+        r"""Gets the content of this ShowScriptResponse.
 
         脚本内容
 
@@ -166,7 +166,7 @@ class ShowScriptResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowScriptResponse.
+        r"""Sets the content of this ShowScriptResponse.
 
         脚本内容
 
@@ -177,7 +177,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ShowScriptResponse.
+        r"""Gets the connection_name of this ShowScriptResponse.
 
         脚本关联的连接名称
 
@@ -188,7 +188,7 @@ class ShowScriptResponse(SdkResponse):
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ShowScriptResponse.
+        r"""Sets the connection_name of this ShowScriptResponse.
 
         脚本关联的连接名称
 
@@ -199,7 +199,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def database(self):
-        """Gets the database of this ShowScriptResponse.
+        r"""Gets the database of this ShowScriptResponse.
 
         脚本执行所在的数据库
 
@@ -210,7 +210,7 @@ class ShowScriptResponse(SdkResponse):
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowScriptResponse.
+        r"""Sets the database of this ShowScriptResponse.
 
         脚本执行所在的数据库
 
@@ -221,7 +221,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ShowScriptResponse.
+        r"""Gets the queue_name of this ShowScriptResponse.
 
         脚本关联的DLI队列名称
 
@@ -232,7 +232,7 @@ class ShowScriptResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ShowScriptResponse.
+        r"""Sets the queue_name of this ShowScriptResponse.
 
         脚本关联的DLI队列名称
 
@@ -243,7 +243,7 @@ class ShowScriptResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this ShowScriptResponse.
+        r"""Gets the configuration of this ShowScriptResponse.
 
         脚本的配置项参数
 
@@ -254,7 +254,7 @@ class ShowScriptResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ShowScriptResponse.
+        r"""Sets the configuration of this ShowScriptResponse.
 
         脚本的配置项参数
 

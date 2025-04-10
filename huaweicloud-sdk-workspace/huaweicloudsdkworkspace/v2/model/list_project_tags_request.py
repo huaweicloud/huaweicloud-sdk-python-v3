@@ -29,7 +29,7 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, offset=None, limit=None, key=None):
-        """ListProjectTagsRequest
+        r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListProjectTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectTagsRequest.
+        r"""Gets the offset of this ListProjectTagsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -68,7 +68,7 @@ class ListProjectTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectTagsRequest.
+        r"""Sets the offset of this ListProjectTagsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -79,7 +79,7 @@ class ListProjectTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectTagsRequest.
+        r"""Gets the limit of this ListProjectTagsRequest.
 
         用于分页查询，取值范围0-1000，默认值1000。
 
@@ -90,7 +90,7 @@ class ListProjectTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectTagsRequest.
+        r"""Sets the limit of this ListProjectTagsRequest.
 
         用于分页查询，取值范围0-1000，默认值1000。
 
@@ -101,7 +101,7 @@ class ListProjectTagsRequest:
 
     @property
     def key(self):
-        """Gets the key of this ListProjectTagsRequest.
+        r"""Gets the key of this ListProjectTagsRequest.
 
         查询指定标签。
 
@@ -112,7 +112,7 @@ class ListProjectTagsRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListProjectTagsRequest.
+        r"""Sets the key of this ListProjectTagsRequest.
 
         查询指定标签。
 

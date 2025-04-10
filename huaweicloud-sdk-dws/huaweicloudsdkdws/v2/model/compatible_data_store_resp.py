@@ -27,7 +27,7 @@ class CompatibleDataStoreResp:
     }
 
     def __init__(self, type=None, version=None):
-        """CompatibleDataStoreResp
+        r"""CompatibleDataStoreResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CompatibleDataStoreResp:
 
     @property
     def type(self):
-        """Gets the type of this CompatibleDataStoreResp.
+        r"""Gets the type of this CompatibleDataStoreResp.
 
         类型
 
@@ -61,7 +61,7 @@ class CompatibleDataStoreResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CompatibleDataStoreResp.
+        r"""Sets the type of this CompatibleDataStoreResp.
 
         类型
 
@@ -72,7 +72,7 @@ class CompatibleDataStoreResp:
 
     @property
     def version(self):
-        """Gets the version of this CompatibleDataStoreResp.
+        r"""Gets the version of this CompatibleDataStoreResp.
 
         版本
 
@@ -83,7 +83,7 @@ class CompatibleDataStoreResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CompatibleDataStoreResp.
+        r"""Sets the version of this CompatibleDataStoreResp.
 
         版本
 

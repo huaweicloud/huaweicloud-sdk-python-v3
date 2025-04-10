@@ -25,7 +25,7 @@ class CreateServerGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateServerGroupRequest
+        r"""CreateServerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateServerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateServerGroupRequest.
+        r"""Gets the body of this CreateServerGroupRequest.
 
         :return: The body of this CreateServerGroupRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupRequestBody`
@@ -52,7 +52,7 @@ class CreateServerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateServerGroupRequest.
+        r"""Sets the body of this CreateServerGroupRequest.
 
         :param body: The body of this CreateServerGroupRequest.
         :type body: :class:`huaweicloudsdkecs.v2.CreateServerGroupRequestBody`

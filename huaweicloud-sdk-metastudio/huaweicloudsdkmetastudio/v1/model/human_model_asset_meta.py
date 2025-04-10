@@ -33,7 +33,7 @@ class HumanModelAssetMeta:
     }
 
     def __init__(self, style_id=None, modeling_type=None, modeling_job_id=None, model_properties=None, components=None):
-        """HumanModelAssetMeta
+        r"""HumanModelAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class HumanModelAssetMeta:
 
     @property
     def style_id(self):
-        """Gets the style_id of this HumanModelAssetMeta.
+        r"""Gets the style_id of this HumanModelAssetMeta.
 
         **参数解释**： 数字人模型风格ID。 **约束限制**： 当前仅支持系统提供的几种风格。 **取值范围**： * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02  **默认取值**： 不涉及
 
@@ -82,7 +82,7 @@ class HumanModelAssetMeta:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this HumanModelAssetMeta.
+        r"""Sets the style_id of this HumanModelAssetMeta.
 
         **参数解释**： 数字人模型风格ID。 **约束限制**： 当前仅支持系统提供的几种风格。 **取值范围**： * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02  **默认取值**： 不涉及
 
@@ -93,7 +93,7 @@ class HumanModelAssetMeta:
 
     @property
     def modeling_type(self):
-        """Gets the modeling_type of this HumanModelAssetMeta.
+        r"""Gets the modeling_type of this HumanModelAssetMeta.
 
         **参数解释**： 数字人模型建模类型。 **约束限制**： 不涉及 **取值范围**： * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
 
@@ -104,7 +104,7 @@ class HumanModelAssetMeta:
 
     @modeling_type.setter
     def modeling_type(self, modeling_type):
-        """Sets the modeling_type of this HumanModelAssetMeta.
+        r"""Sets the modeling_type of this HumanModelAssetMeta.
 
         **参数解释**： 数字人模型建模类型。 **约束限制**： 不涉及 **取值范围**： * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
 
@@ -115,7 +115,7 @@ class HumanModelAssetMeta:
 
     @property
     def modeling_job_id(self):
-        """Gets the modeling_job_id of this HumanModelAssetMeta.
+        r"""Gets the modeling_job_id of this HumanModelAssetMeta.
 
         **参数解释**： 建模任务ID。 **约束限制**： 仅由MetaStudio服务生成的模型系统自行填写 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -126,7 +126,7 @@ class HumanModelAssetMeta:
 
     @modeling_job_id.setter
     def modeling_job_id(self, modeling_job_id):
-        """Sets the modeling_job_id of this HumanModelAssetMeta.
+        r"""Sets the modeling_job_id of this HumanModelAssetMeta.
 
         **参数解释**： 建模任务ID。 **约束限制**： 仅由MetaStudio服务生成的模型系统自行填写 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -137,7 +137,7 @@ class HumanModelAssetMeta:
 
     @property
     def model_properties(self):
-        """Gets the model_properties of this HumanModelAssetMeta.
+        r"""Gets the model_properties of this HumanModelAssetMeta.
 
         :return: The model_properties of this HumanModelAssetMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HumanModelMetaProperties`
@@ -146,7 +146,7 @@ class HumanModelAssetMeta:
 
     @model_properties.setter
     def model_properties(self, model_properties):
-        """Sets the model_properties of this HumanModelAssetMeta.
+        r"""Sets the model_properties of this HumanModelAssetMeta.
 
         :param model_properties: The model_properties of this HumanModelAssetMeta.
         :type model_properties: :class:`huaweicloudsdkmetastudio.v1.HumanModelMetaProperties`
@@ -155,7 +155,7 @@ class HumanModelAssetMeta:
 
     @property
     def components(self):
-        """Gets the components of this HumanModelAssetMeta.
+        r"""Gets the components of this HumanModelAssetMeta.
 
         可替换组件列表。
 
@@ -166,7 +166,7 @@ class HumanModelAssetMeta:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this HumanModelAssetMeta.
+        r"""Sets the components of this HumanModelAssetMeta.
 
         可替换组件列表。
 

@@ -39,7 +39,7 @@ class ConfigurationParameter:
     }
 
     def __init__(self, name=None, values=None, unit=None, type=None, readonly=None, value_range=None, restart_required=None, description=None):
-        """ConfigurationParameter
+        r"""ConfigurationParameter
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ConfigurationParameter:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationParameter.
+        r"""Gets the name of this ConfigurationParameter.
 
         参数名称。
 
@@ -95,7 +95,7 @@ class ConfigurationParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationParameter.
+        r"""Sets the name of this ConfigurationParameter.
 
         参数名称。
 
@@ -106,7 +106,7 @@ class ConfigurationParameter:
 
     @property
     def values(self):
-        """Gets the values of this ConfigurationParameter.
+        r"""Gets the values of this ConfigurationParameter.
 
         参数值。
 
@@ -117,7 +117,7 @@ class ConfigurationParameter:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ConfigurationParameter.
+        r"""Sets the values of this ConfigurationParameter.
 
         参数值。
 
@@ -128,7 +128,7 @@ class ConfigurationParameter:
 
     @property
     def unit(self):
-        """Gets the unit of this ConfigurationParameter.
+        r"""Gets the unit of this ConfigurationParameter.
 
         参数单位。
 
@@ -139,7 +139,7 @@ class ConfigurationParameter:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ConfigurationParameter.
+        r"""Sets the unit of this ConfigurationParameter.
 
         参数单位。
 
@@ -150,7 +150,7 @@ class ConfigurationParameter:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationParameter.
+        r"""Gets the type of this ConfigurationParameter.
 
         参数类型，包括boolean、string、integer、float、list。
 
@@ -161,7 +161,7 @@ class ConfigurationParameter:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationParameter.
+        r"""Sets the type of this ConfigurationParameter.
 
         参数类型，包括boolean、string、integer、float、list。
 
@@ -172,7 +172,7 @@ class ConfigurationParameter:
 
     @property
     def readonly(self):
-        """Gets the readonly of this ConfigurationParameter.
+        r"""Gets the readonly of this ConfigurationParameter.
 
         是否只读。
 
@@ -183,7 +183,7 @@ class ConfigurationParameter:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this ConfigurationParameter.
+        r"""Sets the readonly of this ConfigurationParameter.
 
         是否只读。
 
@@ -194,7 +194,7 @@ class ConfigurationParameter:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ConfigurationParameter.
+        r"""Gets the value_range of this ConfigurationParameter.
 
         参数值范围。
 
@@ -205,7 +205,7 @@ class ConfigurationParameter:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ConfigurationParameter.
+        r"""Sets the value_range of this ConfigurationParameter.
 
         参数值范围。
 
@@ -216,7 +216,7 @@ class ConfigurationParameter:
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this ConfigurationParameter.
+        r"""Gets the restart_required of this ConfigurationParameter.
 
         是否需要重启。
 
@@ -227,7 +227,7 @@ class ConfigurationParameter:
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this ConfigurationParameter.
+        r"""Sets the restart_required of this ConfigurationParameter.
 
         是否需要重启。
 
@@ -238,7 +238,7 @@ class ConfigurationParameter:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationParameter.
+        r"""Gets the description of this ConfigurationParameter.
 
         参数描述。
 
@@ -249,7 +249,7 @@ class ConfigurationParameter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationParameter.
+        r"""Sets the description of this ConfigurationParameter.
 
         参数描述。
 

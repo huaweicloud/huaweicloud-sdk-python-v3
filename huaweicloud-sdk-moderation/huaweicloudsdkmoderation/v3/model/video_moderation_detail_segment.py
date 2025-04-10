@@ -25,7 +25,7 @@ class VideoModerationDetailSegment:
     }
 
     def __init__(self, segment=None):
-        """VideoModerationDetailSegment
+        r"""VideoModerationDetailSegment
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VideoModerationDetailSegment:
 
     @property
     def segment(self):
-        """Gets the segment of this VideoModerationDetailSegment.
+        r"""Gets the segment of this VideoModerationDetailSegment.
 
         命中的风险片段
 
@@ -54,7 +54,7 @@ class VideoModerationDetailSegment:
 
     @segment.setter
     def segment(self, segment):
-        """Sets the segment of this VideoModerationDetailSegment.
+        r"""Sets the segment of this VideoModerationDetailSegment.
 
         命中的风险片段
 

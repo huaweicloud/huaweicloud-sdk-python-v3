@@ -39,7 +39,7 @@ class ImportFileReq:
     }
 
     def __init__(self, path=None, params=None, same_name_policy=None, jobs_param=None, execute_user=None, target_status=None, approvers=None, resources=None):
-        """ImportFileReq
+        r"""ImportFileReq
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ImportFileReq:
 
     @property
     def path(self):
-        """Gets the path of this ImportFileReq.
+        r"""Gets the path of this ImportFileReq.
 
         :return: The path of this ImportFileReq.
         :rtype: str
@@ -101,7 +101,7 @@ class ImportFileReq:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ImportFileReq.
+        r"""Sets the path of this ImportFileReq.
 
         :param path: The path of this ImportFileReq.
         :type path: str
@@ -110,7 +110,7 @@ class ImportFileReq:
 
     @property
     def params(self):
-        """Gets the params of this ImportFileReq.
+        r"""Gets the params of this ImportFileReq.
 
         公共作业参数
 
@@ -121,7 +121,7 @@ class ImportFileReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ImportFileReq.
+        r"""Sets the params of this ImportFileReq.
 
         公共作业参数
 
@@ -132,7 +132,7 @@ class ImportFileReq:
 
     @property
     def same_name_policy(self):
-        """Gets the same_name_policy of this ImportFileReq.
+        r"""Gets the same_name_policy of this ImportFileReq.
 
         :return: The same_name_policy of this ImportFileReq.
         :rtype: str
@@ -141,7 +141,7 @@ class ImportFileReq:
 
     @same_name_policy.setter
     def same_name_policy(self, same_name_policy):
-        """Sets the same_name_policy of this ImportFileReq.
+        r"""Sets the same_name_policy of this ImportFileReq.
 
         :param same_name_policy: The same_name_policy of this ImportFileReq.
         :type same_name_policy: str
@@ -150,7 +150,7 @@ class ImportFileReq:
 
     @property
     def jobs_param(self):
-        """Gets the jobs_param of this ImportFileReq.
+        r"""Gets the jobs_param of this ImportFileReq.
 
         指定作业参数
 
@@ -161,7 +161,7 @@ class ImportFileReq:
 
     @jobs_param.setter
     def jobs_param(self, jobs_param):
-        """Sets the jobs_param of this ImportFileReq.
+        r"""Sets the jobs_param of this ImportFileReq.
 
         指定作业参数
 
@@ -172,7 +172,7 @@ class ImportFileReq:
 
     @property
     def execute_user(self):
-        """Gets the execute_user of this ImportFileReq.
+        r"""Gets the execute_user of this ImportFileReq.
 
         :return: The execute_user of this ImportFileReq.
         :rtype: str
@@ -181,7 +181,7 @@ class ImportFileReq:
 
     @execute_user.setter
     def execute_user(self, execute_user):
-        """Sets the execute_user of this ImportFileReq.
+        r"""Sets the execute_user of this ImportFileReq.
 
         :param execute_user: The execute_user of this ImportFileReq.
         :type execute_user: str
@@ -190,7 +190,7 @@ class ImportFileReq:
 
     @property
     def target_status(self):
-        """Gets the target_status of this ImportFileReq.
+        r"""Gets the target_status of this ImportFileReq.
 
         在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态
 
@@ -201,7 +201,7 @@ class ImportFileReq:
 
     @target_status.setter
     def target_status(self, target_status):
-        """Sets the target_status of this ImportFileReq.
+        r"""Sets the target_status of this ImportFileReq.
 
         在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态
 
@@ -212,7 +212,7 @@ class ImportFileReq:
 
     @property
     def approvers(self):
-        """Gets the approvers of this ImportFileReq.
+        r"""Gets the approvers of this ImportFileReq.
 
         在开启审批开关后，需要填写该字段，表示作业审批人
 
@@ -223,7 +223,7 @@ class ImportFileReq:
 
     @approvers.setter
     def approvers(self, approvers):
-        """Sets the approvers of this ImportFileReq.
+        r"""Sets the approvers of this ImportFileReq.
 
         在开启审批开关后，需要填写该字段，表示作业审批人
 
@@ -234,7 +234,7 @@ class ImportFileReq:
 
     @property
     def resources(self):
-        """Gets the resources of this ImportFileReq.
+        r"""Gets the resources of this ImportFileReq.
 
         如需替换资源，需要填写该字段，包含替换的资源名和资源类型和替换后的资源名
 
@@ -245,7 +245,7 @@ class ImportFileReq:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ImportFileReq.
+        r"""Sets the resources of this ImportFileReq.
 
         如需替换资源，需要填写该字段，包含替换的资源名和资源类型和替换后的资源名
 

@@ -25,7 +25,7 @@ class ShowSnapshotRequest:
     }
 
     def __init__(self, snapshot_id=None):
-        """ShowSnapshotRequest
+        r"""ShowSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSnapshotRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this ShowSnapshotRequest.
+        r"""Gets the snapshot_id of this ShowSnapshotRequest.
 
         快照ID。
 
@@ -53,7 +53,7 @@ class ShowSnapshotRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this ShowSnapshotRequest.
+        r"""Sets the snapshot_id of this ShowSnapshotRequest.
 
         快照ID。
 

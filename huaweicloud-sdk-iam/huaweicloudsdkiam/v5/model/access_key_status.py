@@ -27,7 +27,7 @@ class AccessKeyStatus:
     }
 
     def __init__(self):
-        """AccessKeyStatus
+        r"""AccessKeyStatus
 
         The model defined in huaweicloud sdk
 

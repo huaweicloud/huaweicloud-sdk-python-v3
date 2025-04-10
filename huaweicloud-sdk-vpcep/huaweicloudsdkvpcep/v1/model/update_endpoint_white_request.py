@@ -27,7 +27,7 @@ class UpdateEndpointWhiteRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None, body=None):
-        """UpdateEndpointWhiteRequest
+        r"""UpdateEndpointWhiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEndpointWhiteRequest:
 
     @property
     def vpc_endpoint_id(self):
-        """Gets the vpc_endpoint_id of this UpdateEndpointWhiteRequest.
+        r"""Gets the vpc_endpoint_id of this UpdateEndpointWhiteRequest.
 
         终端节点的ID。
 
@@ -60,7 +60,7 @@ class UpdateEndpointWhiteRequest:
 
     @vpc_endpoint_id.setter
     def vpc_endpoint_id(self, vpc_endpoint_id):
-        """Sets the vpc_endpoint_id of this UpdateEndpointWhiteRequest.
+        r"""Sets the vpc_endpoint_id of this UpdateEndpointWhiteRequest.
 
         终端节点的ID。
 
@@ -71,7 +71,7 @@ class UpdateEndpointWhiteRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointWhiteRequest.
+        r"""Gets the body of this UpdateEndpointWhiteRequest.
 
         :return: The body of this UpdateEndpointWhiteRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequestBody`
@@ -80,7 +80,7 @@ class UpdateEndpointWhiteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointWhiteRequest.
+        r"""Sets the body of this UpdateEndpointWhiteRequest.
 
         :param body: The body of this UpdateEndpointWhiteRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequestBody`

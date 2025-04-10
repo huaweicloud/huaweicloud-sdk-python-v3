@@ -25,7 +25,7 @@ class ShowEventStreamingRequest:
     }
 
     def __init__(self, eventstreaming_id=None):
-        """ShowEventStreamingRequest
+        r"""ShowEventStreamingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEventStreamingRequest:
 
     @property
     def eventstreaming_id(self):
-        """Gets the eventstreaming_id of this ShowEventStreamingRequest.
+        r"""Gets the eventstreaming_id of this ShowEventStreamingRequest.
 
         事件流ID
 
@@ -53,7 +53,7 @@ class ShowEventStreamingRequest:
 
     @eventstreaming_id.setter
     def eventstreaming_id(self, eventstreaming_id):
-        """Sets the eventstreaming_id of this ShowEventStreamingRequest.
+        r"""Sets the eventstreaming_id of this ShowEventStreamingRequest.
 
         事件流ID
 

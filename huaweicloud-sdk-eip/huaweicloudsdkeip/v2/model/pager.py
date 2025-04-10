@@ -27,7 +27,7 @@ class Pager:
     }
 
     def __init__(self, href=None, rel=None):
-        """Pager
+        r"""Pager
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Pager:
 
     @property
     def href(self):
-        """Gets the href of this Pager.
+        r"""Gets the href of this Pager.
 
         页码url
 
@@ -61,7 +61,7 @@ class Pager:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this Pager.
+        r"""Sets the href of this Pager.
 
         页码url
 
@@ -72,7 +72,7 @@ class Pager:
 
     @property
     def rel(self):
-        """Gets the rel of this Pager.
+        r"""Gets the rel of this Pager.
 
         next:下一页  previous:前一页
 
@@ -83,7 +83,7 @@ class Pager:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this Pager.
+        r"""Sets the rel of this Pager.
 
         next:下一页  previous:前一页
 

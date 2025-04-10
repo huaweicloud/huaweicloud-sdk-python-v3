@@ -27,7 +27,7 @@ class QueryTemplatesResult:
     }
 
     def __init__(self, total_size=None, items=None):
-        """QueryTemplatesResult
+        r"""QueryTemplatesResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryTemplatesResult:
 
     @property
     def total_size(self):
-        """Gets the total_size of this QueryTemplatesResult.
+        r"""Gets the total_size of this QueryTemplatesResult.
 
         返回模板数量
 
@@ -61,7 +61,7 @@ class QueryTemplatesResult:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this QueryTemplatesResult.
+        r"""Sets the total_size of this QueryTemplatesResult.
 
         返回模板数量
 
@@ -72,7 +72,7 @@ class QueryTemplatesResult:
 
     @property
     def items(self):
-        """Gets the items of this QueryTemplatesResult.
+        r"""Gets the items of this QueryTemplatesResult.
 
         模板信息列表
 
@@ -83,7 +83,7 @@ class QueryTemplatesResult:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this QueryTemplatesResult.
+        r"""Sets the items of this QueryTemplatesResult.
 
         模板信息列表
 

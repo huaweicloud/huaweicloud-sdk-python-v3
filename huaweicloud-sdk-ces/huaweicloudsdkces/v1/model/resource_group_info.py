@@ -41,7 +41,7 @@ class ResourceGroupInfo:
     }
 
     def __init__(self, group_name=None, type=None, relation_ids=None, group_id=None, create_time=None, instance_statistics=None, status=None, enterprise_project_id=None, resources=None):
-        """ResourceGroupInfo
+        r"""ResourceGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResourceGroupInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ResourceGroupInfo.
+        r"""Gets the group_name of this ResourceGroupInfo.
 
         资源分组的名称，如：ResourceGroup-Test01。
 
@@ -110,7 +110,7 @@ class ResourceGroupInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ResourceGroupInfo.
+        r"""Sets the group_name of this ResourceGroupInfo.
 
         资源分组的名称，如：ResourceGroup-Test01。
 
@@ -121,7 +121,7 @@ class ResourceGroupInfo:
 
     @property
     def type(self):
-        """Gets the type of this ResourceGroupInfo.
+        r"""Gets the type of this ResourceGroupInfo.
 
         资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
 
@@ -132,7 +132,7 @@ class ResourceGroupInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceGroupInfo.
+        r"""Sets the type of this ResourceGroupInfo.
 
         资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
 
@@ -143,7 +143,7 @@ class ResourceGroupInfo:
 
     @property
     def relation_ids(self):
-        """Gets the relation_ids of this ResourceGroupInfo.
+        r"""Gets the relation_ids of this ResourceGroupInfo.
 
         企业项目ID列表
 
@@ -154,7 +154,7 @@ class ResourceGroupInfo:
 
     @relation_ids.setter
     def relation_ids(self, relation_ids):
-        """Sets the relation_ids of this ResourceGroupInfo.
+        r"""Sets the relation_ids of this ResourceGroupInfo.
 
         企业项目ID列表
 
@@ -165,7 +165,7 @@ class ResourceGroupInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ResourceGroupInfo.
+        r"""Gets the group_id of this ResourceGroupInfo.
 
         资源分组的ID，如：rg1603786526428bWbVmk4rP。
 
@@ -176,7 +176,7 @@ class ResourceGroupInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ResourceGroupInfo.
+        r"""Sets the group_id of this ResourceGroupInfo.
 
         资源分组的ID，如：rg1603786526428bWbVmk4rP。
 
@@ -187,7 +187,7 @@ class ResourceGroupInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ResourceGroupInfo.
+        r"""Gets the create_time of this ResourceGroupInfo.
 
         资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
 
@@ -198,7 +198,7 @@ class ResourceGroupInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ResourceGroupInfo.
+        r"""Sets the create_time of this ResourceGroupInfo.
 
         资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
 
@@ -209,7 +209,7 @@ class ResourceGroupInfo:
 
     @property
     def instance_statistics(self):
-        """Gets the instance_statistics of this ResourceGroupInfo.
+        r"""Gets the instance_statistics of this ResourceGroupInfo.
 
         :return: The instance_statistics of this ResourceGroupInfo.
         :rtype: :class:`huaweicloudsdkces.v1.InstanceStatistics`
@@ -218,7 +218,7 @@ class ResourceGroupInfo:
 
     @instance_statistics.setter
     def instance_statistics(self, instance_statistics):
-        """Sets the instance_statistics of this ResourceGroupInfo.
+        r"""Sets the instance_statistics of this ResourceGroupInfo.
 
         :param instance_statistics: The instance_statistics of this ResourceGroupInfo.
         :type instance_statistics: :class:`huaweicloudsdkces.v1.InstanceStatistics`
@@ -227,7 +227,7 @@ class ResourceGroupInfo:
 
     @property
     def status(self):
-        """Gets the status of this ResourceGroupInfo.
+        r"""Gets the status of this ResourceGroupInfo.
 
         资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
@@ -238,7 +238,7 @@ class ResourceGroupInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResourceGroupInfo.
+        r"""Sets the status of this ResourceGroupInfo.
 
         资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
@@ -249,7 +249,7 @@ class ResourceGroupInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ResourceGroupInfo.
+        r"""Gets the enterprise_project_id of this ResourceGroupInfo.
 
         创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
 
@@ -260,7 +260,7 @@ class ResourceGroupInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ResourceGroupInfo.
+        r"""Sets the enterprise_project_id of this ResourceGroupInfo.
 
         创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
 
@@ -271,7 +271,7 @@ class ResourceGroupInfo:
 
     @property
     def resources(self):
-        """Gets the resources of this ResourceGroupInfo.
+        r"""Gets the resources of this ResourceGroupInfo.
 
         一组或者多个资源信息，默认为空。
 
@@ -282,7 +282,7 @@ class ResourceGroupInfo:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ResourceGroupInfo.
+        r"""Sets the resources of this ResourceGroupInfo.
 
         一组或者多个资源信息，默认为空。
 

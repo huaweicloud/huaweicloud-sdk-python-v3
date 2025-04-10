@@ -28,7 +28,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
     }
 
     def __init__(self, bind_list=None, total_num=None):
-        """ListTerminalsBindingDesktopsResponse
+        r"""ListTerminalsBindingDesktopsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
 
     @property
     def bind_list(self):
-        """Gets the bind_list of this ListTerminalsBindingDesktopsResponse.
+        r"""Gets the bind_list of this ListTerminalsBindingDesktopsResponse.
 
         MAC绑定VM信息列表
 
@@ -62,7 +62,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
 
     @bind_list.setter
     def bind_list(self, bind_list):
-        """Sets the bind_list of this ListTerminalsBindingDesktopsResponse.
+        r"""Sets the bind_list of this ListTerminalsBindingDesktopsResponse.
 
         MAC绑定VM信息列表
 
@@ -73,7 +73,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListTerminalsBindingDesktopsResponse.
+        r"""Gets the total_num of this ListTerminalsBindingDesktopsResponse.
 
         返回结果总条数
 
@@ -84,7 +84,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListTerminalsBindingDesktopsResponse.
+        r"""Sets the total_num of this ListTerminalsBindingDesktopsResponse.
 
         返回结果总条数
 

@@ -25,7 +25,7 @@ class HmVulnInfoData:
     }
 
     def __init__(self, report=None):
-        """HmVulnInfoData
+        r"""HmVulnInfoData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HmVulnInfoData:
 
     @property
     def report(self):
-        """Gets the report of this HmVulnInfoData.
+        r"""Gets the report of this HmVulnInfoData.
 
         报告
 
@@ -54,7 +54,7 @@ class HmVulnInfoData:
 
     @report.setter
     def report(self, report):
-        """Sets the report of this HmVulnInfoData.
+        r"""Sets the report of this HmVulnInfoData.
 
         报告
 

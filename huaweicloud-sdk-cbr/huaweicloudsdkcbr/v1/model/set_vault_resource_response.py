@@ -26,7 +26,7 @@ class SetVaultResourceResponse(SdkResponse):
     }
 
     def __init__(self, set_resource_ids=None):
-        """SetVaultResourceResponse
+        r"""SetVaultResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetVaultResourceResponse(SdkResponse):
 
     @property
     def set_resource_ids(self):
-        """Gets the set_resource_ids of this SetVaultResourceResponse.
+        r"""Gets the set_resource_ids of this SetVaultResourceResponse.
 
         本次设置的资源id列表。
 
@@ -55,7 +55,7 @@ class SetVaultResourceResponse(SdkResponse):
 
     @set_resource_ids.setter
     def set_resource_ids(self, set_resource_ids):
-        """Sets the set_resource_ids of this SetVaultResourceResponse.
+        r"""Sets the set_resource_ids of this SetVaultResourceResponse.
 
         本次设置的资源id列表。
 

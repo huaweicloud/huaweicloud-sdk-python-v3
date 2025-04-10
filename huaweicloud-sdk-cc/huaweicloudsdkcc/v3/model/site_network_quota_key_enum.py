@@ -29,7 +29,7 @@ class SiteNetworkQuotaKeyEnum:
     }
 
     def __init__(self):
-        """SiteNetworkQuotaKeyEnum
+        r"""SiteNetworkQuotaKeyEnum
 
         The model defined in huaweicloud sdk
 

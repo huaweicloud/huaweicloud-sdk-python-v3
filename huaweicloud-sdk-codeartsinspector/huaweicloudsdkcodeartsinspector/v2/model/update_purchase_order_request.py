@@ -27,7 +27,7 @@ class UpdatePurchaseOrderRequest:
     }
 
     def __init__(self, service=None, body=None):
-        """UpdatePurchaseOrderRequest
+        r"""UpdatePurchaseOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePurchaseOrderRequest:
 
     @property
     def service(self):
-        """Gets the service of this UpdatePurchaseOrderRequest.
+        r"""Gets the service of this UpdatePurchaseOrderRequest.
 
         servicename,购买vss服务时使用\"webscan\"
 
@@ -60,7 +60,7 @@ class UpdatePurchaseOrderRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this UpdatePurchaseOrderRequest.
+        r"""Sets the service of this UpdatePurchaseOrderRequest.
 
         servicename,购买vss服务时使用\"webscan\"
 
@@ -71,7 +71,7 @@ class UpdatePurchaseOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePurchaseOrderRequest.
+        r"""Gets the body of this UpdatePurchaseOrderRequest.
 
         :return: The body of this UpdatePurchaseOrderRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v2.UpdateCbcOrderRequestBody`
@@ -80,7 +80,7 @@ class UpdatePurchaseOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePurchaseOrderRequest.
+        r"""Sets the body of this UpdatePurchaseOrderRequest.
 
         :param body: The body of this UpdatePurchaseOrderRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v2.UpdateCbcOrderRequestBody`

@@ -45,7 +45,7 @@ class OffSiteBackupForList:
     }
 
     def __init__(self, id=None, instance_id=None, name=None, databases=None, begin_time=None, end_time=None, status=None, type=None, size=None, datastore=None, associated_with_ddm=None):
-        """OffSiteBackupForList
+        r"""OffSiteBackupForList
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class OffSiteBackupForList:
 
     @property
     def id(self):
-        """Gets the id of this OffSiteBackupForList.
+        r"""Gets the id of this OffSiteBackupForList.
 
         备份ID。
 
@@ -115,7 +115,7 @@ class OffSiteBackupForList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OffSiteBackupForList.
+        r"""Sets the id of this OffSiteBackupForList.
 
         备份ID。
 
@@ -126,7 +126,7 @@ class OffSiteBackupForList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this OffSiteBackupForList.
+        r"""Gets the instance_id of this OffSiteBackupForList.
 
         实例ID。
 
@@ -137,7 +137,7 @@ class OffSiteBackupForList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this OffSiteBackupForList.
+        r"""Sets the instance_id of this OffSiteBackupForList.
 
         实例ID。
 
@@ -148,7 +148,7 @@ class OffSiteBackupForList:
 
     @property
     def name(self):
-        """Gets the name of this OffSiteBackupForList.
+        r"""Gets the name of this OffSiteBackupForList.
 
         备份名称。
 
@@ -159,7 +159,7 @@ class OffSiteBackupForList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OffSiteBackupForList.
+        r"""Sets the name of this OffSiteBackupForList.
 
         备份名称。
 
@@ -170,7 +170,7 @@ class OffSiteBackupForList:
 
     @property
     def databases(self):
-        """Gets the databases of this OffSiteBackupForList.
+        r"""Gets the databases of this OffSiteBackupForList.
 
         备份的数据库。
 
@@ -181,7 +181,7 @@ class OffSiteBackupForList:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this OffSiteBackupForList.
+        r"""Sets the databases of this OffSiteBackupForList.
 
         备份的数据库。
 
@@ -192,7 +192,7 @@ class OffSiteBackupForList:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this OffSiteBackupForList.
+        r"""Gets the begin_time of this OffSiteBackupForList.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -203,7 +203,7 @@ class OffSiteBackupForList:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this OffSiteBackupForList.
+        r"""Sets the begin_time of this OffSiteBackupForList.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -214,7 +214,7 @@ class OffSiteBackupForList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OffSiteBackupForList.
+        r"""Gets the end_time of this OffSiteBackupForList.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -225,7 +225,7 @@ class OffSiteBackupForList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OffSiteBackupForList.
+        r"""Sets the end_time of this OffSiteBackupForList.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -236,7 +236,7 @@ class OffSiteBackupForList:
 
     @property
     def status(self):
-        """Gets the status of this OffSiteBackupForList.
+        r"""Gets the status of this OffSiteBackupForList.
 
         备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
 
@@ -247,7 +247,7 @@ class OffSiteBackupForList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OffSiteBackupForList.
+        r"""Sets the status of this OffSiteBackupForList.
 
         备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
 
@@ -258,7 +258,7 @@ class OffSiteBackupForList:
 
     @property
     def type(self):
-        """Gets the type of this OffSiteBackupForList.
+        r"""Gets the type of this OffSiteBackupForList.
 
         备份类型，取值：  - “auto”: 自动全量备份 - “incremental”: 自动增量备份
 
@@ -269,7 +269,7 @@ class OffSiteBackupForList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OffSiteBackupForList.
+        r"""Sets the type of this OffSiteBackupForList.
 
         备份类型，取值：  - “auto”: 自动全量备份 - “incremental”: 自动增量备份
 
@@ -280,7 +280,7 @@ class OffSiteBackupForList:
 
     @property
     def size(self):
-        """Gets the size of this OffSiteBackupForList.
+        r"""Gets the size of this OffSiteBackupForList.
 
         备份大小，单位为KB。
 
@@ -291,7 +291,7 @@ class OffSiteBackupForList:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this OffSiteBackupForList.
+        r"""Sets the size of this OffSiteBackupForList.
 
         备份大小，单位为KB。
 
@@ -302,7 +302,7 @@ class OffSiteBackupForList:
 
     @property
     def datastore(self):
-        """Gets the datastore of this OffSiteBackupForList.
+        r"""Gets the datastore of this OffSiteBackupForList.
 
         :return: The datastore of this OffSiteBackupForList.
         :rtype: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
@@ -311,7 +311,7 @@ class OffSiteBackupForList:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this OffSiteBackupForList.
+        r"""Sets the datastore of this OffSiteBackupForList.
 
         :param datastore: The datastore of this OffSiteBackupForList.
         :type datastore: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
@@ -320,7 +320,7 @@ class OffSiteBackupForList:
 
     @property
     def associated_with_ddm(self):
-        """Gets the associated_with_ddm of this OffSiteBackupForList.
+        r"""Gets the associated_with_ddm of this OffSiteBackupForList.
 
         是否已被DDM实例关联。
 
@@ -331,7 +331,7 @@ class OffSiteBackupForList:
 
     @associated_with_ddm.setter
     def associated_with_ddm(self, associated_with_ddm):
-        """Sets the associated_with_ddm of this OffSiteBackupForList.
+        r"""Sets the associated_with_ddm of this OffSiteBackupForList.
 
         是否已被DDM实例关联。
 

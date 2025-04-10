@@ -33,7 +33,7 @@ class CreateVpcOption:
     }
 
     def __init__(self, name=None, description=None, cidr=None, enterprise_project_id=None, tags=None):
-        """CreateVpcOption
+        r"""CreateVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateVpcOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpcOption.
+        r"""Gets the name of this CreateVpcOption.
 
         功能描述：VPC的名称信息 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -80,7 +80,7 @@ class CreateVpcOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpcOption.
+        r"""Sets the name of this CreateVpcOption.
 
         功能描述：VPC的名称信息 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -91,7 +91,7 @@ class CreateVpcOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateVpcOption.
+        r"""Gets the description of this CreateVpcOption.
 
         功能说明：VPC的描述信息 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -102,7 +102,7 @@ class CreateVpcOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVpcOption.
+        r"""Sets the description of this CreateVpcOption.
 
         功能说明：VPC的描述信息 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -113,7 +113,7 @@ class CreateVpcOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateVpcOption.
+        r"""Gets the cidr of this CreateVpcOption.
 
         功能说明：vpc下可用子网的范围 取值范围： −10.0.0.0/8~10.255.255.240/28 −172.16.0.0/12 ~ 172.31.255.240/28 −192.168.0.0/16 ~ 192.168.255.240/28 约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -124,7 +124,7 @@ class CreateVpcOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateVpcOption.
+        r"""Sets the cidr of this CreateVpcOption.
 
         功能说明：vpc下可用子网的范围 取值范围： −10.0.0.0/8~10.255.255.240/28 −172.16.0.0/12 ~ 172.31.255.240/28 −192.168.0.0/16 ~ 192.168.255.240/28 约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -135,7 +135,7 @@ class CreateVpcOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateVpcOption.
+        r"""Gets the enterprise_project_id of this CreateVpcOption.
 
         功能说明：企业项目ID。创建vpc时，给vpc绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 
 
@@ -146,7 +146,7 @@ class CreateVpcOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateVpcOption.
+        r"""Sets the enterprise_project_id of this CreateVpcOption.
 
         功能说明：企业项目ID。创建vpc时，给vpc绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 
 
@@ -157,7 +157,7 @@ class CreateVpcOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateVpcOption.
+        r"""Gets the tags of this CreateVpcOption.
 
         功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
 
@@ -168,7 +168,7 @@ class CreateVpcOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateVpcOption.
+        r"""Sets the tags of this CreateVpcOption.
 
         功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
 

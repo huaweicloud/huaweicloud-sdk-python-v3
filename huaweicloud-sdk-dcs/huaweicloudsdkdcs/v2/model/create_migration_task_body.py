@@ -39,7 +39,7 @@ class CreateMigrationTaskBody:
     }
 
     def __init__(self, task_name=None, description=None, migration_type=None, migration_method=None, backup_files=None, network_type=None, source_instance=None, target_instance=None):
-        """CreateMigrationTaskBody
+        r"""CreateMigrationTaskBody
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreateMigrationTaskBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateMigrationTaskBody.
+        r"""Gets the task_name of this CreateMigrationTaskBody.
 
         迁移任务名称。
 
@@ -99,7 +99,7 @@ class CreateMigrationTaskBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateMigrationTaskBody.
+        r"""Sets the task_name of this CreateMigrationTaskBody.
 
         迁移任务名称。
 
@@ -110,7 +110,7 @@ class CreateMigrationTaskBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateMigrationTaskBody.
+        r"""Gets the description of this CreateMigrationTaskBody.
 
         迁移任务描述。
 
@@ -121,7 +121,7 @@ class CreateMigrationTaskBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateMigrationTaskBody.
+        r"""Sets the description of this CreateMigrationTaskBody.
 
         迁移任务描述。
 
@@ -132,7 +132,7 @@ class CreateMigrationTaskBody:
 
     @property
     def migration_type(self):
-        """Gets the migration_type of this CreateMigrationTaskBody.
+        r"""Gets the migration_type of this CreateMigrationTaskBody.
 
         迁移任务类型,包括备份文件导入和在线迁移两种类型。 取值范围： - backupfile_import：表示备份文件导入 - online_migration：表示在线迁移。 
 
@@ -143,7 +143,7 @@ class CreateMigrationTaskBody:
 
     @migration_type.setter
     def migration_type(self, migration_type):
-        """Sets the migration_type of this CreateMigrationTaskBody.
+        r"""Sets the migration_type of this CreateMigrationTaskBody.
 
         迁移任务类型,包括备份文件导入和在线迁移两种类型。 取值范围： - backupfile_import：表示备份文件导入 - online_migration：表示在线迁移。 
 
@@ -154,7 +154,7 @@ class CreateMigrationTaskBody:
 
     @property
     def migration_method(self):
-        """Gets the migration_method of this CreateMigrationTaskBody.
+        r"""Gets the migration_method of this CreateMigrationTaskBody.
 
         迁移方式，包括全量迁移和增量迁移两种类型。 取值范围： - full_amount_migration：表示全量迁移。 - incremental_migration：表示增量迁移。 
 
@@ -165,7 +165,7 @@ class CreateMigrationTaskBody:
 
     @migration_method.setter
     def migration_method(self, migration_method):
-        """Sets the migration_method of this CreateMigrationTaskBody.
+        r"""Sets the migration_method of this CreateMigrationTaskBody.
 
         迁移方式，包括全量迁移和增量迁移两种类型。 取值范围： - full_amount_migration：表示全量迁移。 - incremental_migration：表示增量迁移。 
 
@@ -176,7 +176,7 @@ class CreateMigrationTaskBody:
 
     @property
     def backup_files(self):
-        """Gets the backup_files of this CreateMigrationTaskBody.
+        r"""Gets the backup_files of this CreateMigrationTaskBody.
 
         :return: The backup_files of this CreateMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
@@ -185,7 +185,7 @@ class CreateMigrationTaskBody:
 
     @backup_files.setter
     def backup_files(self, backup_files):
-        """Sets the backup_files of this CreateMigrationTaskBody.
+        r"""Sets the backup_files of this CreateMigrationTaskBody.
 
         :param backup_files: The backup_files of this CreateMigrationTaskBody.
         :type backup_files: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
@@ -194,7 +194,7 @@ class CreateMigrationTaskBody:
 
     @property
     def network_type(self):
-        """Gets the network_type of this CreateMigrationTaskBody.
+        r"""Gets the network_type of this CreateMigrationTaskBody.
 
         迁移任务类型为在线迁移时，表示源Redis和目标Redis联通的网络类型，包括vpc和vpn两种类型。 
 
@@ -205,7 +205,7 @@ class CreateMigrationTaskBody:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this CreateMigrationTaskBody.
+        r"""Sets the network_type of this CreateMigrationTaskBody.
 
         迁移任务类型为在线迁移时，表示源Redis和目标Redis联通的网络类型，包括vpc和vpn两种类型。 
 
@@ -216,7 +216,7 @@ class CreateMigrationTaskBody:
 
     @property
     def source_instance(self):
-        """Gets the source_instance of this CreateMigrationTaskBody.
+        r"""Gets the source_instance of this CreateMigrationTaskBody.
 
         :return: The source_instance of this CreateMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
@@ -225,7 +225,7 @@ class CreateMigrationTaskBody:
 
     @source_instance.setter
     def source_instance(self, source_instance):
-        """Sets the source_instance of this CreateMigrationTaskBody.
+        r"""Sets the source_instance of this CreateMigrationTaskBody.
 
         :param source_instance: The source_instance of this CreateMigrationTaskBody.
         :type source_instance: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
@@ -234,7 +234,7 @@ class CreateMigrationTaskBody:
 
     @property
     def target_instance(self):
-        """Gets the target_instance of this CreateMigrationTaskBody.
+        r"""Gets the target_instance of this CreateMigrationTaskBody.
 
         :return: The target_instance of this CreateMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
@@ -243,7 +243,7 @@ class CreateMigrationTaskBody:
 
     @target_instance.setter
     def target_instance(self, target_instance):
-        """Sets the target_instance of this CreateMigrationTaskBody.
+        r"""Sets the target_instance of this CreateMigrationTaskBody.
 
         :param target_instance: The target_instance of this CreateMigrationTaskBody.
         :type target_instance: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`

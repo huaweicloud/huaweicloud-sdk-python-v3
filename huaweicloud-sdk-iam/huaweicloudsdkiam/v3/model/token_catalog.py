@@ -31,7 +31,7 @@ class TokenCatalog:
     }
 
     def __init__(self, type=None, id=None, name=None, endpoints=None):
-        """TokenCatalog
+        r"""TokenCatalog
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TokenCatalog:
 
     @property
     def type(self):
-        """Gets the type of this TokenCatalog.
+        r"""Gets the type of this TokenCatalog.
 
         该接口所属服务。
 
@@ -71,7 +71,7 @@ class TokenCatalog:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TokenCatalog.
+        r"""Sets the type of this TokenCatalog.
 
         该接口所属服务。
 
@@ -82,7 +82,7 @@ class TokenCatalog:
 
     @property
     def id(self):
-        """Gets the id of this TokenCatalog.
+        r"""Gets the id of this TokenCatalog.
 
         服务ID。
 
@@ -93,7 +93,7 @@ class TokenCatalog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TokenCatalog.
+        r"""Sets the id of this TokenCatalog.
 
         服务ID。
 
@@ -104,7 +104,7 @@ class TokenCatalog:
 
     @property
     def name(self):
-        """Gets the name of this TokenCatalog.
+        r"""Gets the name of this TokenCatalog.
 
         服务名称。
 
@@ -115,7 +115,7 @@ class TokenCatalog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TokenCatalog.
+        r"""Sets the name of this TokenCatalog.
 
         服务名称。
 
@@ -126,7 +126,7 @@ class TokenCatalog:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this TokenCatalog.
+        r"""Gets the endpoints of this TokenCatalog.
 
         终端节点。
 
@@ -137,7 +137,7 @@ class TokenCatalog:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this TokenCatalog.
+        r"""Sets the endpoints of this TokenCatalog.
 
         终端节点。
 

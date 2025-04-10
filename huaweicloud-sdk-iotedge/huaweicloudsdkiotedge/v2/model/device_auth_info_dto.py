@@ -29,7 +29,7 @@ class DeviceAuthInfoDTO:
     }
 
     def __init__(self, auth_type=None, fingerprint=None, local_path=None):
-        """DeviceAuthInfoDTO
+        r"""DeviceAuthInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeviceAuthInfoDTO:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this DeviceAuthInfoDTO.
+        r"""Gets the auth_type of this DeviceAuthInfoDTO.
 
         边缘节点认证方式，不填默认为密钥认证接入方式(SECRET)。
 
@@ -67,7 +67,7 @@ class DeviceAuthInfoDTO:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this DeviceAuthInfoDTO.
+        r"""Sets the auth_type of this DeviceAuthInfoDTO.
 
         边缘节点认证方式，不填默认为密钥认证接入方式(SECRET)。
 
@@ -78,7 +78,7 @@ class DeviceAuthInfoDTO:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this DeviceAuthInfoDTO.
+        r"""Gets the fingerprint of this DeviceAuthInfoDTO.
 
         证书指纹，认证类型使用证书认证接入(CERTIFICATES)需填写该字段。
 
@@ -89,7 +89,7 @@ class DeviceAuthInfoDTO:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this DeviceAuthInfoDTO.
+        r"""Sets the fingerprint of this DeviceAuthInfoDTO.
 
         证书指纹，认证类型使用证书认证接入(CERTIFICATES)需填写该字段。
 
@@ -100,7 +100,7 @@ class DeviceAuthInfoDTO:
 
     @property
     def local_path(self):
-        """Gets the local_path of this DeviceAuthInfoDTO.
+        r"""Gets the local_path of this DeviceAuthInfoDTO.
 
         :return: The local_path of this DeviceAuthInfoDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CertificateLocalPathDTO`
@@ -109,7 +109,7 @@ class DeviceAuthInfoDTO:
 
     @local_path.setter
     def local_path(self, local_path):
-        """Sets the local_path of this DeviceAuthInfoDTO.
+        r"""Sets the local_path of this DeviceAuthInfoDTO.
 
         :param local_path: The local_path of this DeviceAuthInfoDTO.
         :type local_path: :class:`huaweicloudsdkiotedge.v2.CertificateLocalPathDTO`

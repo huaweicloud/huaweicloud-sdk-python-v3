@@ -30,7 +30,7 @@ class ListResourceInstancesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, marker=None):
-        """ListResourceInstancesResponse
+        r"""ListResourceInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListResourceInstancesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourceInstancesResponse.
+        r"""Gets the resources of this ListResourceInstancesResponse.
 
         标签资源实例。
 
@@ -69,7 +69,7 @@ class ListResourceInstancesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourceInstancesResponse.
+        r"""Sets the resources of this ListResourceInstancesResponse.
 
         标签资源实例。
 
@@ -80,7 +80,7 @@ class ListResourceInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourceInstancesResponse.
+        r"""Gets the total_count of this ListResourceInstancesResponse.
 
         总记录数。
 
@@ -91,7 +91,7 @@ class ListResourceInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourceInstancesResponse.
+        r"""Sets the total_count of this ListResourceInstancesResponse.
 
         总记录数。
 
@@ -102,7 +102,7 @@ class ListResourceInstancesResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListResourceInstancesResponse.
+        r"""Gets the marker of this ListResourceInstancesResponse.
 
         分页位置标识。
 
@@ -113,7 +113,7 @@ class ListResourceInstancesResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListResourceInstancesResponse.
+        r"""Sets the marker of this ListResourceInstancesResponse.
 
         分页位置标识。
 

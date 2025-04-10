@@ -27,7 +27,7 @@ class DeleteEnvironmentRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None):
-        """DeleteEnvironmentRequest
+        r"""DeleteEnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEnvironmentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this DeleteEnvironmentRequest.
+        r"""Gets the application_id of this DeleteEnvironmentRequest.
 
         应用id
 
@@ -59,7 +59,7 @@ class DeleteEnvironmentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this DeleteEnvironmentRequest.
+        r"""Sets the application_id of this DeleteEnvironmentRequest.
 
         应用id
 
@@ -70,7 +70,7 @@ class DeleteEnvironmentRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this DeleteEnvironmentRequest.
+        r"""Gets the environment_id of this DeleteEnvironmentRequest.
 
         环境id
 
@@ -81,7 +81,7 @@ class DeleteEnvironmentRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this DeleteEnvironmentRequest.
+        r"""Sets the environment_id of this DeleteEnvironmentRequest.
 
         环境id
 

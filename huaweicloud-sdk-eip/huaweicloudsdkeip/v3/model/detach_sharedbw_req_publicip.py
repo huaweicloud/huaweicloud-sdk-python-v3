@@ -25,7 +25,7 @@ class DetachSharedbwReqPublicip:
     }
 
     def __init__(self, bandwidth=None):
-        """DetachSharedbwReqPublicip
+        r"""DetachSharedbwReqPublicip
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DetachSharedbwReqPublicip:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this DetachSharedbwReqPublicip.
+        r"""Gets the bandwidth of this DetachSharedbwReqPublicip.
 
         :return: The bandwidth of this DetachSharedbwReqPublicip.
         :rtype: :class:`huaweicloudsdkeip.v3.DetachSharedbwDict`
@@ -52,7 +52,7 @@ class DetachSharedbwReqPublicip:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this DetachSharedbwReqPublicip.
+        r"""Sets the bandwidth of this DetachSharedbwReqPublicip.
 
         :param bandwidth: The bandwidth of this DetachSharedbwReqPublicip.
         :type bandwidth: :class:`huaweicloudsdkeip.v3.DetachSharedbwDict`

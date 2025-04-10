@@ -26,7 +26,7 @@ class KeystoneShowMappingResponse(SdkResponse):
     }
 
     def __init__(self, mapping=None):
-        """KeystoneShowMappingResponse
+        r"""KeystoneShowMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowMappingResponse(SdkResponse):
 
     @property
     def mapping(self):
-        """Gets the mapping of this KeystoneShowMappingResponse.
+        r"""Gets the mapping of this KeystoneShowMappingResponse.
 
         :return: The mapping of this KeystoneShowMappingResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.MappingResult`
@@ -53,7 +53,7 @@ class KeystoneShowMappingResponse(SdkResponse):
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this KeystoneShowMappingResponse.
+        r"""Sets the mapping of this KeystoneShowMappingResponse.
 
         :param mapping: The mapping of this KeystoneShowMappingResponse.
         :type mapping: :class:`huaweicloudsdkiam.v3.MappingResult`

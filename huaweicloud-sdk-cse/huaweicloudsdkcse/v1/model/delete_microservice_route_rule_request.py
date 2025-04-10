@@ -35,7 +35,7 @@ class DeleteMicroserviceRouteRuleRequest:
     }
 
     def __init__(self, content_type=None, x_engine_id=None, x_enterprise_project_id=None, service_name=None, environment=None, app_id=None):
-        """DeleteMicroserviceRouteRuleRequest
+        r"""DeleteMicroserviceRouteRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteMicroserviceRouteRuleRequest.
+        r"""Gets the content_type of this DeleteMicroserviceRouteRuleRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -85,7 +85,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteMicroserviceRouteRuleRequest.
+        r"""Sets the content_type of this DeleteMicroserviceRouteRuleRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -96,7 +96,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this DeleteMicroserviceRouteRuleRequest.
+        r"""Gets the x_engine_id of this DeleteMicroserviceRouteRuleRequest.
 
         微服务引擎的实例ID
 
@@ -107,7 +107,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this DeleteMicroserviceRouteRuleRequest.
+        r"""Sets the x_engine_id of this DeleteMicroserviceRouteRuleRequest.
 
         微服务引擎的实例ID
 
@@ -118,7 +118,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this DeleteMicroserviceRouteRuleRequest.
+        r"""Gets the x_enterprise_project_id of this DeleteMicroserviceRouteRuleRequest.
 
         企业项目ID
 
@@ -129,7 +129,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this DeleteMicroserviceRouteRuleRequest.
+        r"""Sets the x_enterprise_project_id of this DeleteMicroserviceRouteRuleRequest.
 
         企业项目ID
 
@@ -140,7 +140,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this DeleteMicroserviceRouteRuleRequest.
+        r"""Gets the service_name of this DeleteMicroserviceRouteRuleRequest.
 
         微服务名称
 
@@ -151,7 +151,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this DeleteMicroserviceRouteRuleRequest.
+        r"""Sets the service_name of this DeleteMicroserviceRouteRuleRequest.
 
         微服务名称
 
@@ -162,7 +162,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @property
     def environment(self):
-        """Gets the environment of this DeleteMicroserviceRouteRuleRequest.
+        r"""Gets the environment of this DeleteMicroserviceRouteRuleRequest.
 
         所属环境，不填表示<空>环境
 
@@ -173,7 +173,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this DeleteMicroserviceRouteRuleRequest.
+        r"""Sets the environment of this DeleteMicroserviceRouteRuleRequest.
 
         所属环境，不填表示<空>环境
 
@@ -184,7 +184,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteMicroserviceRouteRuleRequest.
+        r"""Gets the app_id of this DeleteMicroserviceRouteRuleRequest.
 
         所属应用，不填默认为default应用
 
@@ -195,7 +195,7 @@ class DeleteMicroserviceRouteRuleRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteMicroserviceRouteRuleRequest.
+        r"""Sets the app_id of this DeleteMicroserviceRouteRuleRequest.
 
         所属应用，不填默认为default应用
 

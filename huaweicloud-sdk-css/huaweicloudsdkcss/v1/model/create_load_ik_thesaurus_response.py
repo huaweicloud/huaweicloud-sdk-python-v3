@@ -24,7 +24,7 @@ class CreateLoadIkThesaurusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateLoadIkThesaurusResponse
+        r"""CreateLoadIkThesaurusResponse
 
         The model defined in huaweicloud sdk
 

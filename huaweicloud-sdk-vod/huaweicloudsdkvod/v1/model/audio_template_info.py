@@ -29,7 +29,7 @@ class AudioTemplateInfo:
     }
 
     def __init__(self, sample_rate=None, bitrate=None, channels=None):
-        """AudioTemplateInfo
+        r"""AudioTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AudioTemplateInfo:
 
     @property
     def sample_rate(self):
-        """Gets the sample_rate of this AudioTemplateInfo.
+        r"""Gets the sample_rate of this AudioTemplateInfo.
 
         音频采样率(有效值范围) - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050 - 3：AUDIO_SAMPLE_32000 - 4：AUDIO_SAMPLE_44100 - 5：AUDIO_SAMPLE_48000 - 6：AUDIO_SAMPLE_96000  默认值为1。
 
@@ -66,7 +66,7 @@ class AudioTemplateInfo:
 
     @sample_rate.setter
     def sample_rate(self, sample_rate):
-        """Sets the sample_rate of this AudioTemplateInfo.
+        r"""Sets the sample_rate of this AudioTemplateInfo.
 
         音频采样率(有效值范围) - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050 - 3：AUDIO_SAMPLE_32000 - 4：AUDIO_SAMPLE_44100 - 5：AUDIO_SAMPLE_48000 - 6：AUDIO_SAMPLE_96000  默认值为1。
 
@@ -77,7 +77,7 @@ class AudioTemplateInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this AudioTemplateInfo.
+        r"""Gets the bitrate of this AudioTemplateInfo.
 
         音频码率（单位：Kbps）。
 
@@ -88,7 +88,7 @@ class AudioTemplateInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this AudioTemplateInfo.
+        r"""Sets the bitrate of this AudioTemplateInfo.
 
         音频码率（单位：Kbps）。
 
@@ -99,7 +99,7 @@ class AudioTemplateInfo:
 
     @property
     def channels(self):
-        """Gets the channels of this AudioTemplateInfo.
+        r"""Gets the channels of this AudioTemplateInfo.
 
         声道数(有效值范围) - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2
 
@@ -110,7 +110,7 @@ class AudioTemplateInfo:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this AudioTemplateInfo.
+        r"""Sets the channels of this AudioTemplateInfo.
 
         声道数(有效值范围) - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2
 

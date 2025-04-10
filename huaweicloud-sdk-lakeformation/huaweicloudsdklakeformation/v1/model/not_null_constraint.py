@@ -39,7 +39,7 @@ class NotNullConstraint:
     }
 
     def __init__(self, catalog_name=None, database_name=None, table_name=None, column_name=None, constraint_name=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """NotNullConstraint
+        r"""NotNullConstraint
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class NotNullConstraint:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this NotNullConstraint.
+        r"""Gets the catalog_name of this NotNullConstraint.
 
         catalog名字
 
@@ -95,7 +95,7 @@ class NotNullConstraint:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this NotNullConstraint.
+        r"""Sets the catalog_name of this NotNullConstraint.
 
         catalog名字
 
@@ -106,7 +106,7 @@ class NotNullConstraint:
 
     @property
     def database_name(self):
-        """Gets the database_name of this NotNullConstraint.
+        r"""Gets the database_name of this NotNullConstraint.
 
         数据库名字
 
@@ -117,7 +117,7 @@ class NotNullConstraint:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this NotNullConstraint.
+        r"""Sets the database_name of this NotNullConstraint.
 
         数据库名字
 
@@ -128,7 +128,7 @@ class NotNullConstraint:
 
     @property
     def table_name(self):
-        """Gets the table_name of this NotNullConstraint.
+        r"""Gets the table_name of this NotNullConstraint.
 
         表名称
 
@@ -139,7 +139,7 @@ class NotNullConstraint:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this NotNullConstraint.
+        r"""Sets the table_name of this NotNullConstraint.
 
         表名称
 
@@ -150,7 +150,7 @@ class NotNullConstraint:
 
     @property
     def column_name(self):
-        """Gets the column_name of this NotNullConstraint.
+        r"""Gets the column_name of this NotNullConstraint.
 
         列名
 
@@ -161,7 +161,7 @@ class NotNullConstraint:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this NotNullConstraint.
+        r"""Sets the column_name of this NotNullConstraint.
 
         列名
 
@@ -172,7 +172,7 @@ class NotNullConstraint:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this NotNullConstraint.
+        r"""Gets the constraint_name of this NotNullConstraint.
 
         constraint Name
 
@@ -183,7 +183,7 @@ class NotNullConstraint:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this NotNullConstraint.
+        r"""Sets the constraint_name of this NotNullConstraint.
 
         constraint Name
 
@@ -194,7 +194,7 @@ class NotNullConstraint:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this NotNullConstraint.
+        r"""Gets the enable_constraint of this NotNullConstraint.
 
         enable constraint
 
@@ -205,7 +205,7 @@ class NotNullConstraint:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this NotNullConstraint.
+        r"""Sets the enable_constraint of this NotNullConstraint.
 
         enable constraint
 
@@ -216,7 +216,7 @@ class NotNullConstraint:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this NotNullConstraint.
+        r"""Gets the rely_constraint of this NotNullConstraint.
 
         constraint is rely when Query
 
@@ -227,7 +227,7 @@ class NotNullConstraint:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this NotNullConstraint.
+        r"""Sets the rely_constraint of this NotNullConstraint.
 
         constraint is rely when Query
 
@@ -238,7 +238,7 @@ class NotNullConstraint:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this NotNullConstraint.
+        r"""Gets the validate_constraint of this NotNullConstraint.
 
         constraint is validated
 
@@ -249,7 +249,7 @@ class NotNullConstraint:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this NotNullConstraint.
+        r"""Sets the validate_constraint of this NotNullConstraint.
 
         constraint is validated
 

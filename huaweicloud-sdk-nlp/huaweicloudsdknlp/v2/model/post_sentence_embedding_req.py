@@ -27,7 +27,7 @@ class PostSentenceEmbeddingReq:
     }
 
     def __init__(self, sentences=None, domain=None):
-        """PostSentenceEmbeddingReq
+        r"""PostSentenceEmbeddingReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PostSentenceEmbeddingReq:
 
     @property
     def sentences(self):
-        """Gets the sentences of this PostSentenceEmbeddingReq.
+        r"""Gets the sentences of this PostSentenceEmbeddingReq.
 
         文本列表，文本长度为1~512，列表大小为1~1000，文本编码为UTF-8。
 
@@ -60,7 +60,7 @@ class PostSentenceEmbeddingReq:
 
     @sentences.setter
     def sentences(self, sentences):
-        """Sets the sentences of this PostSentenceEmbeddingReq.
+        r"""Sets the sentences of this PostSentenceEmbeddingReq.
 
         文本列表，文本长度为1~512，列表大小为1~1000，文本编码为UTF-8。
 
@@ -71,7 +71,7 @@ class PostSentenceEmbeddingReq:
 
     @property
     def domain(self):
-        """Gets the domain of this PostSentenceEmbeddingReq.
+        r"""Gets the domain of this PostSentenceEmbeddingReq.
 
         支持的领域类型，目前只支持通用领域，默认为general。
 
@@ -82,7 +82,7 @@ class PostSentenceEmbeddingReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this PostSentenceEmbeddingReq.
+        r"""Sets the domain of this PostSentenceEmbeddingReq.
 
         支持的领域类型，目前只支持通用领域，默认为general。
 

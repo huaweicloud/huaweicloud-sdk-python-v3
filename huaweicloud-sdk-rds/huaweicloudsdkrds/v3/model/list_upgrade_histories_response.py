@@ -28,7 +28,7 @@ class ListUpgradeHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, upgrade_reports=None):
-        """ListUpgradeHistoriesResponse
+        r"""ListUpgradeHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUpgradeHistoriesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListUpgradeHistoriesResponse.
+        r"""Gets the total_count of this ListUpgradeHistoriesResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListUpgradeHistoriesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListUpgradeHistoriesResponse.
+        r"""Sets the total_count of this ListUpgradeHistoriesResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListUpgradeHistoriesResponse(SdkResponse):
 
     @property
     def upgrade_reports(self):
-        """Gets the upgrade_reports of this ListUpgradeHistoriesResponse.
+        r"""Gets the upgrade_reports of this ListUpgradeHistoriesResponse.
 
         升级报告信息。
 
@@ -84,7 +84,7 @@ class ListUpgradeHistoriesResponse(SdkResponse):
 
     @upgrade_reports.setter
     def upgrade_reports(self, upgrade_reports):
-        """Sets the upgrade_reports of this ListUpgradeHistoriesResponse.
+        r"""Sets the upgrade_reports of this ListUpgradeHistoriesResponse.
 
         升级报告信息。
 

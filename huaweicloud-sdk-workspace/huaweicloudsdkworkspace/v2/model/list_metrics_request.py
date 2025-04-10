@@ -33,7 +33,7 @@ class ListMetricsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, dim=None, metric_names=None, period=None):
-        """ListMetricsRequest
+        r"""ListMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListMetricsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListMetricsRequest.
+        r"""Gets the start_time of this ListMetricsRequest.
 
         开始时间, UTC时间
 
@@ -79,7 +79,7 @@ class ListMetricsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListMetricsRequest.
+        r"""Sets the start_time of this ListMetricsRequest.
 
         开始时间, UTC时间
 
@@ -90,7 +90,7 @@ class ListMetricsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListMetricsRequest.
+        r"""Gets the end_time of this ListMetricsRequest.
 
         结束时间,UTC时间
 
@@ -101,7 +101,7 @@ class ListMetricsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListMetricsRequest.
+        r"""Sets the end_time of this ListMetricsRequest.
 
         结束时间,UTC时间
 
@@ -112,7 +112,7 @@ class ListMetricsRequest:
 
     @property
     def dim(self):
-        """Gets the dim of this ListMetricsRequest.
+        r"""Gets the dim of this ListMetricsRequest.
 
         指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value
 
@@ -123,7 +123,7 @@ class ListMetricsRequest:
 
     @dim.setter
     def dim(self, dim):
-        """Sets the dim of this ListMetricsRequest.
+        r"""Sets the dim of this ListMetricsRequest.
 
         指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value
 
@@ -134,7 +134,7 @@ class ListMetricsRequest:
 
     @property
     def metric_names(self):
-        """Gets the metric_names of this ListMetricsRequest.
+        r"""Gets the metric_names of this ListMetricsRequest.
 
         指标名称列表
 
@@ -145,7 +145,7 @@ class ListMetricsRequest:
 
     @metric_names.setter
     def metric_names(self, metric_names):
-        """Sets the metric_names of this ListMetricsRequest.
+        r"""Sets the metric_names of this ListMetricsRequest.
 
         指标名称列表
 
@@ -156,7 +156,7 @@ class ListMetricsRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListMetricsRequest.
+        r"""Gets the period of this ListMetricsRequest.
 
         数据周期 | DAY - 天级数据 HOUR - 小时级数据
 
@@ -167,7 +167,7 @@ class ListMetricsRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListMetricsRequest.
+        r"""Sets the period of this ListMetricsRequest.
 
         数据周期 | DAY - 天级数据 HOUR - 小时级数据
 

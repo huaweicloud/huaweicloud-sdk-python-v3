@@ -27,7 +27,7 @@ class StatusReason:
     }
 
     def __init__(self, code=None, details=None):
-        """StatusReason
+        r"""StatusReason
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StatusReason:
 
     @property
     def code(self):
-        """Gets the code of this StatusReason.
+        r"""Gets the code of this StatusReason.
 
         分析器当前状态的原因。
 
@@ -60,7 +60,7 @@ class StatusReason:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this StatusReason.
+        r"""Sets the code of this StatusReason.
 
         分析器当前状态的原因。
 
@@ -71,7 +71,7 @@ class StatusReason:
 
     @property
     def details(self):
-        """Gets the details of this StatusReason.
+        r"""Gets the details of this StatusReason.
 
         分析器当前状态的详细原因。
 
@@ -82,7 +82,7 @@ class StatusReason:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this StatusReason.
+        r"""Sets the details of this StatusReason.
 
         分析器当前状态的详细原因。
 

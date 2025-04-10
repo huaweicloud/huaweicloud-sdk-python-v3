@@ -25,7 +25,7 @@ class ShowLogtankRequest:
     }
 
     def __init__(self, logtank_id=None):
-        """ShowLogtankRequest
+        r"""ShowLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLogtankRequest:
 
     @property
     def logtank_id(self):
-        """Gets the logtank_id of this ShowLogtankRequest.
+        r"""Gets the logtank_id of this ShowLogtankRequest.
 
         云日志ID。
 
@@ -53,7 +53,7 @@ class ShowLogtankRequest:
 
     @logtank_id.setter
     def logtank_id(self, logtank_id):
-        """Sets the logtank_id of this ShowLogtankRequest.
+        r"""Sets the logtank_id of this ShowLogtankRequest.
 
         云日志ID。
 

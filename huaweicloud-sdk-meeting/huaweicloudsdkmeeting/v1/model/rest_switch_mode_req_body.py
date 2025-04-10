@@ -27,7 +27,7 @@ class RestSwitchModeReqBody:
     }
 
     def __init__(self, switch_mode=None, image_type=None):
-        """RestSwitchModeReqBody
+        r"""RestSwitchModeReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestSwitchModeReqBody:
 
     @property
     def switch_mode(self):
-        """Gets the switch_mode of this RestSwitchModeReqBody.
+        r"""Gets the switch_mode of this RestSwitchModeReqBody.
 
         会议显示策略。 - Fixed: 固定广播与会者 - VAS: 声控切换
 
@@ -59,7 +59,7 @@ class RestSwitchModeReqBody:
 
     @switch_mode.setter
     def switch_mode(self, switch_mode):
-        """Sets the switch_mode of this RestSwitchModeReqBody.
+        r"""Sets the switch_mode of this RestSwitchModeReqBody.
 
         会议显示策略。 - Fixed: 固定广播与会者 - VAS: 声控切换
 
@@ -70,7 +70,7 @@ class RestSwitchModeReqBody:
 
     @property
     def image_type(self):
-        """Gets the image_type of this RestSwitchModeReqBody.
+        r"""Gets the image_type of this RestSwitchModeReqBody.
 
         画面类型。单画面设置只针对声控模式。 - 0: 单画面 - 1: 多画面
 
@@ -81,7 +81,7 @@ class RestSwitchModeReqBody:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this RestSwitchModeReqBody.
+        r"""Sets the image_type of this RestSwitchModeReqBody.
 
         画面类型。单画面设置只针对声控模式。 - 0: 单画面 - 1: 多画面
 

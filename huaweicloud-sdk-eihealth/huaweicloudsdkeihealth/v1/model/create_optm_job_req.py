@@ -45,7 +45,7 @@ class CreateOptmJobReq:
     }
 
     def __init__(self, basic_info=None, smiles=None, molecule_file=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, base_model_id=None, model_ids=None, num_trials=None):
-        """CreateOptmJobReq
+        r"""CreateOptmJobReq
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CreateOptmJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateOptmJobReq.
+        r"""Gets the basic_info of this CreateOptmJobReq.
 
         :return: The basic_info of this CreateOptmJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -121,7 +121,7 @@ class CreateOptmJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateOptmJobReq.
+        r"""Sets the basic_info of this CreateOptmJobReq.
 
         :param basic_info: The basic_info of this CreateOptmJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -130,7 +130,7 @@ class CreateOptmJobReq:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CreateOptmJobReq.
+        r"""Gets the smiles of this CreateOptmJobReq.
 
         分子SMILES表达式
 
@@ -141,7 +141,7 @@ class CreateOptmJobReq:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CreateOptmJobReq.
+        r"""Sets the smiles of this CreateOptmJobReq.
 
         分子SMILES表达式
 
@@ -152,7 +152,7 @@ class CreateOptmJobReq:
 
     @property
     def molecule_file(self):
-        """Gets the molecule_file of this CreateOptmJobReq.
+        r"""Gets the molecule_file of this CreateOptmJobReq.
 
         :return: The molecule_file of this CreateOptmJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -161,7 +161,7 @@ class CreateOptmJobReq:
 
     @molecule_file.setter
     def molecule_file(self, molecule_file):
-        """Sets the molecule_file of this CreateOptmJobReq.
+        r"""Sets the molecule_file of this CreateOptmJobReq.
 
         :param molecule_file: The molecule_file of this CreateOptmJobReq.
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -170,7 +170,7 @@ class CreateOptmJobReq:
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this CreateOptmJobReq.
+        r"""Gets the binding_site of this CreateOptmJobReq.
 
         :return: The binding_site of this CreateOptmJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
@@ -179,7 +179,7 @@ class CreateOptmJobReq:
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this CreateOptmJobReq.
+        r"""Sets the binding_site of this CreateOptmJobReq.
 
         :param binding_site: The binding_site of this CreateOptmJobReq.
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
@@ -188,7 +188,7 @@ class CreateOptmJobReq:
 
     @property
     def binding_sites(self):
-        """Gets the binding_sites of this CreateOptmJobReq.
+        r"""Gets the binding_sites of this CreateOptmJobReq.
 
         受体列表和受体是二选一的关系，受体列表优先级最高
 
@@ -199,7 +199,7 @@ class CreateOptmJobReq:
 
     @binding_sites.setter
     def binding_sites(self, binding_sites):
-        """Sets the binding_sites of this CreateOptmJobReq.
+        r"""Sets the binding_sites of this CreateOptmJobReq.
 
         受体列表和受体是二选一的关系，受体列表优先级最高
 
@@ -210,7 +210,7 @@ class CreateOptmJobReq:
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this CreateOptmJobReq.
+        r"""Gets the weak_constraints of this CreateOptmJobReq.
 
         弱约束集合
 
@@ -221,7 +221,7 @@ class CreateOptmJobReq:
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this CreateOptmJobReq.
+        r"""Sets the weak_constraints of this CreateOptmJobReq.
 
         弱约束集合
 
@@ -232,7 +232,7 @@ class CreateOptmJobReq:
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this CreateOptmJobReq.
+        r"""Gets the strong_constraints of this CreateOptmJobReq.
 
         强约束集合
 
@@ -243,7 +243,7 @@ class CreateOptmJobReq:
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this CreateOptmJobReq.
+        r"""Sets the strong_constraints of this CreateOptmJobReq.
 
         强约束集合
 
@@ -254,7 +254,7 @@ class CreateOptmJobReq:
 
     @property
     def sampler_mixin_weight(self):
-        """Gets the sampler_mixin_weight of this CreateOptmJobReq.
+        r"""Gets the sampler_mixin_weight of this CreateOptmJobReq.
 
         初始化采样权重，参数范围(0.5, 1)，不包含0.5和1，默认为0.6
 
@@ -265,7 +265,7 @@ class CreateOptmJobReq:
 
     @sampler_mixin_weight.setter
     def sampler_mixin_weight(self, sampler_mixin_weight):
-        """Sets the sampler_mixin_weight of this CreateOptmJobReq.
+        r"""Sets the sampler_mixin_weight of this CreateOptmJobReq.
 
         初始化采样权重，参数范围(0.5, 1)，不包含0.5和1，默认为0.6
 
@@ -276,7 +276,7 @@ class CreateOptmJobReq:
 
     @property
     def base_model_id(self):
-        """Gets the base_model_id of this CreateOptmJobReq.
+        r"""Gets the base_model_id of this CreateOptmJobReq.
 
         基模型id
 
@@ -287,7 +287,7 @@ class CreateOptmJobReq:
 
     @base_model_id.setter
     def base_model_id(self, base_model_id):
-        """Sets the base_model_id of this CreateOptmJobReq.
+        r"""Sets the base_model_id of this CreateOptmJobReq.
 
         基模型id
 
@@ -298,7 +298,7 @@ class CreateOptmJobReq:
 
     @property
     def model_ids(self):
-        """Gets the model_ids of this CreateOptmJobReq.
+        r"""Gets the model_ids of this CreateOptmJobReq.
 
         模型id列表
 
@@ -309,7 +309,7 @@ class CreateOptmJobReq:
 
     @model_ids.setter
     def model_ids(self, model_ids):
-        """Sets the model_ids of this CreateOptmJobReq.
+        r"""Sets the model_ids of this CreateOptmJobReq.
 
         模型id列表
 
@@ -320,7 +320,7 @@ class CreateOptmJobReq:
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this CreateOptmJobReq.
+        r"""Gets the num_trials of this CreateOptmJobReq.
 
         生成分子数量
 
@@ -331,7 +331,7 @@ class CreateOptmJobReq:
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this CreateOptmJobReq.
+        r"""Sets the num_trials of this CreateOptmJobReq.
 
         生成分子数量
 

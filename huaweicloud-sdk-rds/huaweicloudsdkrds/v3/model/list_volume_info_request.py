@@ -27,7 +27,7 @@ class ListVolumeInfoRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListVolumeInfoRequest
+        r"""ListVolumeInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListVolumeInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListVolumeInfoRequest.
+        r"""Gets the instance_id of this ListVolumeInfoRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ListVolumeInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListVolumeInfoRequest.
+        r"""Sets the instance_id of this ListVolumeInfoRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ListVolumeInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListVolumeInfoRequest.
+        r"""Gets the x_language of this ListVolumeInfoRequest.
 
         语言
 
@@ -82,7 +82,7 @@ class ListVolumeInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListVolumeInfoRequest.
+        r"""Sets the x_language of this ListVolumeInfoRequest.
 
         语言
 

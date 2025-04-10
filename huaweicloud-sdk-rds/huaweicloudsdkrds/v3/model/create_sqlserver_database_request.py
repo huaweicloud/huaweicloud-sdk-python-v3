@@ -29,7 +29,7 @@ class CreateSqlserverDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateSqlserverDatabaseRequest
+        r"""CreateSqlserverDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSqlserverDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateSqlserverDatabaseRequest.
+        r"""Gets the x_language of this CreateSqlserverDatabaseRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreateSqlserverDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateSqlserverDatabaseRequest.
+        r"""Sets the x_language of this CreateSqlserverDatabaseRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreateSqlserverDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSqlserverDatabaseRequest.
+        r"""Gets the instance_id of this CreateSqlserverDatabaseRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateSqlserverDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSqlserverDatabaseRequest.
+        r"""Sets the instance_id of this CreateSqlserverDatabaseRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateSqlserverDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSqlserverDatabaseRequest.
+        r"""Gets the body of this CreateSqlserverDatabaseRequest.
 
         :return: The body of this CreateSqlserverDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SqlserverDatabaseForCreation`
@@ -109,7 +109,7 @@ class CreateSqlserverDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSqlserverDatabaseRequest.
+        r"""Sets the body of this CreateSqlserverDatabaseRequest.
 
         :param body: The body of this CreateSqlserverDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SqlserverDatabaseForCreation`

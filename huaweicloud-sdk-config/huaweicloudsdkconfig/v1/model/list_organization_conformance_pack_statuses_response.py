@@ -28,7 +28,7 @@ class ListOrganizationConformancePackStatusesResponse(SdkResponse):
     }
 
     def __init__(self, statuses=None, page_info=None):
-        """ListOrganizationConformancePackStatusesResponse
+        r"""ListOrganizationConformancePackStatusesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOrganizationConformancePackStatusesResponse(SdkResponse):
 
     @property
     def statuses(self):
-        """Gets the statuses of this ListOrganizationConformancePackStatusesResponse.
+        r"""Gets the statuses of this ListOrganizationConformancePackStatusesResponse.
 
         组织合规规则包查询列表。
 
@@ -62,7 +62,7 @@ class ListOrganizationConformancePackStatusesResponse(SdkResponse):
 
     @statuses.setter
     def statuses(self, statuses):
-        """Sets the statuses of this ListOrganizationConformancePackStatusesResponse.
+        r"""Sets the statuses of this ListOrganizationConformancePackStatusesResponse.
 
         组织合规规则包查询列表。
 
@@ -73,7 +73,7 @@ class ListOrganizationConformancePackStatusesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListOrganizationConformancePackStatusesResponse.
+        r"""Gets the page_info of this ListOrganizationConformancePackStatusesResponse.
 
         :return: The page_info of this ListOrganizationConformancePackStatusesResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListOrganizationConformancePackStatusesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListOrganizationConformancePackStatusesResponse.
+        r"""Sets the page_info of this ListOrganizationConformancePackStatusesResponse.
 
         :param page_info: The page_info of this ListOrganizationConformancePackStatusesResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

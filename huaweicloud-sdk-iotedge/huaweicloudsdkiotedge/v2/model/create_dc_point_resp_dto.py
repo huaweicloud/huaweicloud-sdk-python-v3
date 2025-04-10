@@ -43,7 +43,7 @@ class CreateDcPointRespDTO:
     }
 
     def __init__(self, point_id=None, name=None, collection_config=None, device_id=None, _property=None, data_type=None, ds_id=None, processing_config=None, create_time=None, update_time=None):
-        """CreateDcPointRespDTO
+        r"""CreateDcPointRespDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CreateDcPointRespDTO:
 
     @property
     def point_id(self):
-        """Gets the point_id of this CreateDcPointRespDTO.
+        r"""Gets the point_id of this CreateDcPointRespDTO.
 
         点位表id，数据源下唯一
 
@@ -117,7 +117,7 @@ class CreateDcPointRespDTO:
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this CreateDcPointRespDTO.
+        r"""Sets the point_id of this CreateDcPointRespDTO.
 
         点位表id，数据源下唯一
 
@@ -128,7 +128,7 @@ class CreateDcPointRespDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateDcPointRespDTO.
+        r"""Gets the name of this CreateDcPointRespDTO.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -139,7 +139,7 @@ class CreateDcPointRespDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDcPointRespDTO.
+        r"""Sets the name of this CreateDcPointRespDTO.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -150,7 +150,7 @@ class CreateDcPointRespDTO:
 
     @property
     def collection_config(self):
-        """Gets the collection_config of this CreateDcPointRespDTO.
+        r"""Gets the collection_config of this CreateDcPointRespDTO.
 
         点位采集配置
 
@@ -161,7 +161,7 @@ class CreateDcPointRespDTO:
 
     @collection_config.setter
     def collection_config(self, collection_config):
-        """Sets the collection_config of this CreateDcPointRespDTO.
+        r"""Sets the collection_config of this CreateDcPointRespDTO.
 
         点位采集配置
 
@@ -172,7 +172,7 @@ class CreateDcPointRespDTO:
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateDcPointRespDTO.
+        r"""Gets the device_id of this CreateDcPointRespDTO.
 
         设备id
 
@@ -183,7 +183,7 @@ class CreateDcPointRespDTO:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateDcPointRespDTO.
+        r"""Sets the device_id of this CreateDcPointRespDTO.
 
         设备id
 
@@ -194,7 +194,7 @@ class CreateDcPointRespDTO:
 
     @property
     def _property(self):
-        """Gets the _property of this CreateDcPointRespDTO.
+        r"""Gets the _property of this CreateDcPointRespDTO.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -205,7 +205,7 @@ class CreateDcPointRespDTO:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this CreateDcPointRespDTO.
+        r"""Sets the _property of this CreateDcPointRespDTO.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -216,7 +216,7 @@ class CreateDcPointRespDTO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateDcPointRespDTO.
+        r"""Gets the data_type of this CreateDcPointRespDTO.
 
         点位数据类型
 
@@ -227,7 +227,7 @@ class CreateDcPointRespDTO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateDcPointRespDTO.
+        r"""Sets the data_type of this CreateDcPointRespDTO.
 
         点位数据类型
 
@@ -238,7 +238,7 @@ class CreateDcPointRespDTO:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this CreateDcPointRespDTO.
+        r"""Gets the ds_id of this CreateDcPointRespDTO.
 
         采集数据源id，节点下唯一
 
@@ -249,7 +249,7 @@ class CreateDcPointRespDTO:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this CreateDcPointRespDTO.
+        r"""Sets the ds_id of this CreateDcPointRespDTO.
 
         采集数据源id，节点下唯一
 
@@ -260,7 +260,7 @@ class CreateDcPointRespDTO:
 
     @property
     def processing_config(self):
-        """Gets the processing_config of this CreateDcPointRespDTO.
+        r"""Gets the processing_config of this CreateDcPointRespDTO.
 
         :return: The processing_config of this CreateDcPointRespDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
@@ -269,7 +269,7 @@ class CreateDcPointRespDTO:
 
     @processing_config.setter
     def processing_config(self, processing_config):
-        """Sets the processing_config of this CreateDcPointRespDTO.
+        r"""Sets the processing_config of this CreateDcPointRespDTO.
 
         :param processing_config: The processing_config of this CreateDcPointRespDTO.
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
@@ -278,7 +278,7 @@ class CreateDcPointRespDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDcPointRespDTO.
+        r"""Gets the create_time of this CreateDcPointRespDTO.
 
         创建时间
 
@@ -289,7 +289,7 @@ class CreateDcPointRespDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDcPointRespDTO.
+        r"""Sets the create_time of this CreateDcPointRespDTO.
 
         创建时间
 
@@ -300,7 +300,7 @@ class CreateDcPointRespDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateDcPointRespDTO.
+        r"""Gets the update_time of this CreateDcPointRespDTO.
 
         最后一次修改时间
 
@@ -311,7 +311,7 @@ class CreateDcPointRespDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateDcPointRespDTO.
+        r"""Sets the update_time of this CreateDcPointRespDTO.
 
         最后一次修改时间
 

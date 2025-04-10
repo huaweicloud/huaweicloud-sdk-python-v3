@@ -33,7 +33,7 @@ class Error:
     }
 
     def __init__(self, detail=None, ief_instance_id=None, project_id=None, rule_id=None, time=None):
-        """Error
+        r"""Error
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Error:
 
     @property
     def detail(self):
-        """Gets the detail of this Error.
+        r"""Gets the detail of this Error.
 
         错误详情
 
@@ -77,7 +77,7 @@ class Error:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this Error.
+        r"""Sets the detail of this Error.
 
         错误详情
 
@@ -88,7 +88,7 @@ class Error:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this Error.
+        r"""Gets the ief_instance_id of this Error.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -99,7 +99,7 @@ class Error:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this Error.
+        r"""Sets the ief_instance_id of this Error.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -110,7 +110,7 @@ class Error:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Error.
+        r"""Gets the project_id of this Error.
 
         项目ID
 
@@ -121,7 +121,7 @@ class Error:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Error.
+        r"""Sets the project_id of this Error.
 
         项目ID
 
@@ -132,7 +132,7 @@ class Error:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this Error.
+        r"""Gets the rule_id of this Error.
 
         规则ID
 
@@ -143,7 +143,7 @@ class Error:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this Error.
+        r"""Sets the rule_id of this Error.
 
         规则ID
 
@@ -154,7 +154,7 @@ class Error:
 
     @property
     def time(self):
-        """Gets the time of this Error.
+        r"""Gets the time of this Error.
 
         错误发生的时间
 
@@ -165,7 +165,7 @@ class Error:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Error.
+        r"""Sets the time of this Error.
 
         错误发生的时间
 

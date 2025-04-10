@@ -57,7 +57,7 @@ class ListAclRulesRequest:
     }
 
     def __init__(self, object_id=None, type=None, ip=None, name=None, direction=None, status=None, action_type=None, address_type=None, limit=None, offset=None, enterprise_project_id=None, fw_instance_id=None, tags_id=None, source=None, destination=None, service=None, application=None):
-        """ListAclRulesRequest
+        r"""ListAclRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class ListAclRulesRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListAclRulesRequest.
+        r"""Gets the object_id of this ListAclRulesRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -163,7 +163,7 @@ class ListAclRulesRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListAclRulesRequest.
+        r"""Sets the object_id of this ListAclRulesRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -174,7 +174,7 @@ class ListAclRulesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAclRulesRequest.
+        r"""Gets the type of this ListAclRulesRequest.
 
         规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
@@ -185,7 +185,7 @@ class ListAclRulesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAclRulesRequest.
+        r"""Sets the type of this ListAclRulesRequest.
 
         规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
@@ -196,7 +196,7 @@ class ListAclRulesRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListAclRulesRequest.
+        r"""Gets the ip of this ListAclRulesRequest.
 
         ip地址
 
@@ -207,7 +207,7 @@ class ListAclRulesRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListAclRulesRequest.
+        r"""Sets the ip of this ListAclRulesRequest.
 
         ip地址
 
@@ -218,7 +218,7 @@ class ListAclRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAclRulesRequest.
+        r"""Gets the name of this ListAclRulesRequest.
 
         规则名称
 
@@ -229,7 +229,7 @@ class ListAclRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAclRulesRequest.
+        r"""Sets the name of this ListAclRulesRequest.
 
         规则名称
 
@@ -240,7 +240,7 @@ class ListAclRulesRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ListAclRulesRequest.
+        r"""Gets the direction of this ListAclRulesRequest.
 
         方向0：外到内1：内到外
 
@@ -251,7 +251,7 @@ class ListAclRulesRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ListAclRulesRequest.
+        r"""Sets the direction of this ListAclRulesRequest.
 
         方向0：外到内1：内到外
 
@@ -262,7 +262,7 @@ class ListAclRulesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAclRulesRequest.
+        r"""Gets the status of this ListAclRulesRequest.
 
         规则下发状态 0：禁用，1：启用
 
@@ -273,7 +273,7 @@ class ListAclRulesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAclRulesRequest.
+        r"""Sets the status of this ListAclRulesRequest.
 
         规则下发状态 0：禁用，1：启用
 
@@ -284,7 +284,7 @@ class ListAclRulesRequest:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ListAclRulesRequest.
+        r"""Gets the action_type of this ListAclRulesRequest.
 
         动作0：permit，1：deny
 
@@ -295,7 +295,7 @@ class ListAclRulesRequest:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ListAclRulesRequest.
+        r"""Sets the action_type of this ListAclRulesRequest.
 
         动作0：permit，1：deny
 
@@ -306,7 +306,7 @@ class ListAclRulesRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this ListAclRulesRequest.
+        r"""Gets the address_type of this ListAclRulesRequest.
 
         地址类型，0表示ipv4，1表示ipv6
 
@@ -317,7 +317,7 @@ class ListAclRulesRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this ListAclRulesRequest.
+        r"""Sets the address_type of this ListAclRulesRequest.
 
         地址类型，0表示ipv4，1表示ipv6
 
@@ -328,7 +328,7 @@ class ListAclRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAclRulesRequest.
+        r"""Gets the limit of this ListAclRulesRequest.
 
         每页显示个数，范围为1-1024
 
@@ -339,7 +339,7 @@ class ListAclRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAclRulesRequest.
+        r"""Sets the limit of this ListAclRulesRequest.
 
         每页显示个数，范围为1-1024
 
@@ -350,7 +350,7 @@ class ListAclRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAclRulesRequest.
+        r"""Gets the offset of this ListAclRulesRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -361,7 +361,7 @@ class ListAclRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAclRulesRequest.
+        r"""Sets the offset of this ListAclRulesRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -372,7 +372,7 @@ class ListAclRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAclRulesRequest.
+        r"""Gets the enterprise_project_id of this ListAclRulesRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -383,7 +383,7 @@ class ListAclRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAclRulesRequest.
+        r"""Sets the enterprise_project_id of this ListAclRulesRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -394,7 +394,7 @@ class ListAclRulesRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListAclRulesRequest.
+        r"""Gets the fw_instance_id of this ListAclRulesRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -405,7 +405,7 @@ class ListAclRulesRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListAclRulesRequest.
+        r"""Sets the fw_instance_id of this ListAclRulesRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -416,7 +416,7 @@ class ListAclRulesRequest:
 
     @property
     def tags_id(self):
-        """Gets the tags_id of this ListAclRulesRequest.
+        r"""Gets the tags_id of this ListAclRulesRequest.
 
         规则标签id，创建规则时产生。
 
@@ -427,7 +427,7 @@ class ListAclRulesRequest:
 
     @tags_id.setter
     def tags_id(self, tags_id):
-        """Sets the tags_id of this ListAclRulesRequest.
+        r"""Sets the tags_id of this ListAclRulesRequest.
 
         规则标签id，创建规则时产生。
 
@@ -438,7 +438,7 @@ class ListAclRulesRequest:
 
     @property
     def source(self):
-        """Gets the source of this ListAclRulesRequest.
+        r"""Gets the source of this ListAclRulesRequest.
 
         源地址
 
@@ -449,7 +449,7 @@ class ListAclRulesRequest:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ListAclRulesRequest.
+        r"""Sets the source of this ListAclRulesRequest.
 
         源地址
 
@@ -460,7 +460,7 @@ class ListAclRulesRequest:
 
     @property
     def destination(self):
-        """Gets the destination of this ListAclRulesRequest.
+        r"""Gets the destination of this ListAclRulesRequest.
 
         目的地址
 
@@ -471,7 +471,7 @@ class ListAclRulesRequest:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ListAclRulesRequest.
+        r"""Sets the destination of this ListAclRulesRequest.
 
         目的地址
 
@@ -482,7 +482,7 @@ class ListAclRulesRequest:
 
     @property
     def service(self):
-        """Gets the service of this ListAclRulesRequest.
+        r"""Gets the service of this ListAclRulesRequest.
 
         服务端口
 
@@ -493,7 +493,7 @@ class ListAclRulesRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ListAclRulesRequest.
+        r"""Sets the service of this ListAclRulesRequest.
 
         服务端口
 
@@ -504,7 +504,7 @@ class ListAclRulesRequest:
 
     @property
     def application(self):
-        """Gets the application of this ListAclRulesRequest.
+        r"""Gets the application of this ListAclRulesRequest.
 
         规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -515,7 +515,7 @@ class ListAclRulesRequest:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this ListAclRulesRequest.
+        r"""Sets the application of this ListAclRulesRequest.
 
         规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 

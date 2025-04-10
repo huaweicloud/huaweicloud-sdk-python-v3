@@ -34,7 +34,7 @@ class ListProductsResponse(SdkResponse):
     }
 
     def __init__(self, os_type=None, architecture=None, availability_zone=None, products=None, total_count=None):
-        """ListProductsResponse
+        r"""ListProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListProductsResponse.
+        r"""Gets the os_type of this ListProductsResponse.
 
         套餐所支持操作系统类型。请求参数有os_type时，才有此参数。
 
@@ -83,7 +83,7 @@ class ListProductsResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListProductsResponse.
+        r"""Sets the os_type of this ListProductsResponse.
 
         套餐所支持操作系统类型。请求参数有os_type时，才有此参数。
 
@@ -94,7 +94,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListProductsResponse.
+        r"""Gets the architecture of this ListProductsResponse.
 
         产品架构。请求参数有package_type=agile时，才有此参数。
 
@@ -105,7 +105,7 @@ class ListProductsResponse(SdkResponse):
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListProductsResponse.
+        r"""Sets the architecture of this ListProductsResponse.
 
         产品架构。请求参数有package_type=agile时，才有此参数。
 
@@ -116,7 +116,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListProductsResponse.
+        r"""Gets the availability_zone of this ListProductsResponse.
 
         可用分区。请求参数有availability_zone时，才有此参数。
 
@@ -127,7 +127,7 @@ class ListProductsResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListProductsResponse.
+        r"""Sets the availability_zone of this ListProductsResponse.
 
         可用分区。请求参数有availability_zone时，才有此参数。
 
@@ -138,7 +138,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListProductsResponse.
+        r"""Gets the products of this ListProductsResponse.
 
         产品列表。
 
@@ -149,7 +149,7 @@ class ListProductsResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListProductsResponse.
+        r"""Sets the products of this ListProductsResponse.
 
         产品列表。
 
@@ -160,7 +160,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListProductsResponse.
+        r"""Gets the total_count of this ListProductsResponse.
 
         对象总数。
 
@@ -171,7 +171,7 @@ class ListProductsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListProductsResponse.
+        r"""Sets the total_count of this ListProductsResponse.
 
         对象总数。
 

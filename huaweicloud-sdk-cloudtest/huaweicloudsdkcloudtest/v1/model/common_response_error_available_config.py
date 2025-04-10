@@ -29,7 +29,7 @@ class CommonResponseErrorAvailableConfig:
     }
 
     def __init__(self, code=None, detail=None, reason=None):
-        """CommonResponseErrorAvailableConfig
+        r"""CommonResponseErrorAvailableConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CommonResponseErrorAvailableConfig:
 
     @property
     def code(self):
-        """Gets the code of this CommonResponseErrorAvailableConfig.
+        r"""Gets the code of this CommonResponseErrorAvailableConfig.
 
         错误码
 
@@ -68,7 +68,7 @@ class CommonResponseErrorAvailableConfig:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CommonResponseErrorAvailableConfig.
+        r"""Sets the code of this CommonResponseErrorAvailableConfig.
 
         错误码
 
@@ -79,7 +79,7 @@ class CommonResponseErrorAvailableConfig:
 
     @property
     def detail(self):
-        """Gets the detail of this CommonResponseErrorAvailableConfig.
+        r"""Gets the detail of this CommonResponseErrorAvailableConfig.
 
         :return: The detail of this CommonResponseErrorAvailableConfig.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AvailableConfig`
@@ -88,7 +88,7 @@ class CommonResponseErrorAvailableConfig:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CommonResponseErrorAvailableConfig.
+        r"""Sets the detail of this CommonResponseErrorAvailableConfig.
 
         :param detail: The detail of this CommonResponseErrorAvailableConfig.
         :type detail: :class:`huaweicloudsdkcloudtest.v1.AvailableConfig`
@@ -97,7 +97,7 @@ class CommonResponseErrorAvailableConfig:
 
     @property
     def reason(self):
-        """Gets the reason of this CommonResponseErrorAvailableConfig.
+        r"""Gets the reason of this CommonResponseErrorAvailableConfig.
 
         错误原因
 
@@ -108,7 +108,7 @@ class CommonResponseErrorAvailableConfig:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CommonResponseErrorAvailableConfig.
+        r"""Sets the reason of this CommonResponseErrorAvailableConfig.
 
         错误原因
 

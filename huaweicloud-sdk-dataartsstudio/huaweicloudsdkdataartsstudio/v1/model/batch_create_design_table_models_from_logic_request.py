@@ -31,7 +31,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, model_id=None, body=None):
-        """BatchCreateDesignTableModelsFromLogicRequest
+        r"""BatchCreateDesignTableModelsFromLogicRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Gets the workspace of this BatchCreateDesignTableModelsFromLogicRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Sets the workspace of this BatchCreateDesignTableModelsFromLogicRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Gets the x_project_id of this BatchCreateDesignTableModelsFromLogicRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Sets the x_project_id of this BatchCreateDesignTableModelsFromLogicRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Gets the model_id of this BatchCreateDesignTableModelsFromLogicRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -117,7 +117,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Sets the model_id of this BatchCreateDesignTableModelsFromLogicRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -128,7 +128,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Gets the body of this BatchCreateDesignTableModelsFromLogicRequest.
 
         :return: The body of this BatchCreateDesignTableModelsFromLogicRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceTransformVO`
@@ -137,7 +137,7 @@ class BatchCreateDesignTableModelsFromLogicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateDesignTableModelsFromLogicRequest.
+        r"""Sets the body of this BatchCreateDesignTableModelsFromLogicRequest.
 
         :param body: The body of this BatchCreateDesignTableModelsFromLogicRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceTransformVO`

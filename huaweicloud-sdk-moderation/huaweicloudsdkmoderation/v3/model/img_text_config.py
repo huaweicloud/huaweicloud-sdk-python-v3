@@ -27,7 +27,7 @@ class ImgTextConfig:
     }
 
     def __init__(self, black_glossary_names=None, white_glossary_names=None):
-        """ImgTextConfig
+        r"""ImgTextConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImgTextConfig:
 
     @property
     def black_glossary_names(self):
-        """Gets the black_glossary_names of this ImgTextConfig.
+        r"""Gets the black_glossary_names of this ImgTextConfig.
 
         检测时使用的自定义黑名单词库列表。
 
@@ -61,7 +61,7 @@ class ImgTextConfig:
 
     @black_glossary_names.setter
     def black_glossary_names(self, black_glossary_names):
-        """Sets the black_glossary_names of this ImgTextConfig.
+        r"""Sets the black_glossary_names of this ImgTextConfig.
 
         检测时使用的自定义黑名单词库列表。
 
@@ -72,7 +72,7 @@ class ImgTextConfig:
 
     @property
     def white_glossary_names(self):
-        """Gets the white_glossary_names of this ImgTextConfig.
+        r"""Gets the white_glossary_names of this ImgTextConfig.
 
         检测时使用的自定义白名单词库列表。
 
@@ -83,7 +83,7 @@ class ImgTextConfig:
 
     @white_glossary_names.setter
     def white_glossary_names(self, white_glossary_names):
-        """Sets the white_glossary_names of this ImgTextConfig.
+        r"""Sets the white_glossary_names of this ImgTextConfig.
 
         检测时使用的自定义白名单词库列表。
 

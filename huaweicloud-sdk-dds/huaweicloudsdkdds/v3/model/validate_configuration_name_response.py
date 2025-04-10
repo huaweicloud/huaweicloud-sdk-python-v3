@@ -26,7 +26,7 @@ class ValidateConfigurationNameResponse(SdkResponse):
     }
 
     def __init__(self, is_existed=None):
-        """ValidateConfigurationNameResponse
+        r"""ValidateConfigurationNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateConfigurationNameResponse(SdkResponse):
 
     @property
     def is_existed(self):
-        """Gets the is_existed of this ValidateConfigurationNameResponse.
+        r"""Gets the is_existed of this ValidateConfigurationNameResponse.
 
         参数组名称是否存在。 - true：参数组名称存在 - false：参数组名称不存在
 
@@ -55,7 +55,7 @@ class ValidateConfigurationNameResponse(SdkResponse):
 
     @is_existed.setter
     def is_existed(self, is_existed):
-        """Sets the is_existed of this ValidateConfigurationNameResponse.
+        r"""Sets the is_existed of this ValidateConfigurationNameResponse.
 
         参数组名称是否存在。 - true：参数组名称存在 - false：参数组名称不存在
 

@@ -27,7 +27,7 @@ class ValidateJobNameRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ValidateJobNameRequest
+        r"""ValidateJobNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValidateJobNameRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ValidateJobNameRequest.
+        r"""Gets the x_language of this ValidateJobNameRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class ValidateJobNameRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ValidateJobNameRequest.
+        r"""Sets the x_language of this ValidateJobNameRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class ValidateJobNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateJobNameRequest.
+        r"""Gets the body of this ValidateJobNameRequest.
 
         :return: The body of this ValidateJobNameRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.CheckJobNameReq`
@@ -81,7 +81,7 @@ class ValidateJobNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateJobNameRequest.
+        r"""Sets the body of this ValidateJobNameRequest.
 
         :param body: The body of this ValidateJobNameRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.CheckJobNameReq`

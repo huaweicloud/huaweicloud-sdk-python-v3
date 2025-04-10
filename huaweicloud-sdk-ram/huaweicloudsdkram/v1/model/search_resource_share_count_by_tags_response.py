@@ -26,7 +26,7 @@ class SearchResourceShareCountByTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None):
-        """SearchResourceShareCountByTagsResponse
+        r"""SearchResourceShareCountByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchResourceShareCountByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this SearchResourceShareCountByTagsResponse.
+        r"""Gets the total_count of this SearchResourceShareCountByTagsResponse.
 
         总记录数。
 
@@ -55,7 +55,7 @@ class SearchResourceShareCountByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this SearchResourceShareCountByTagsResponse.
+        r"""Sets the total_count of this SearchResourceShareCountByTagsResponse.
 
         总记录数。
 

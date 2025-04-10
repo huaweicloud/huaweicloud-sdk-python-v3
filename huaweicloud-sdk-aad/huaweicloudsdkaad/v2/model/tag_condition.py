@@ -27,7 +27,7 @@ class TagCondition:
     }
 
     def __init__(self, category=None, contents=None):
-        """TagCondition
+        r"""TagCondition
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagCondition:
 
     @property
     def category(self):
-        """Gets the category of this TagCondition.
+        r"""Gets the category of this TagCondition.
 
         防护动作
 
@@ -61,7 +61,7 @@ class TagCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this TagCondition.
+        r"""Sets the category of this TagCondition.
 
         防护动作
 
@@ -72,7 +72,7 @@ class TagCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this TagCondition.
+        r"""Gets the contents of this TagCondition.
 
         字段内容
 
@@ -83,7 +83,7 @@ class TagCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this TagCondition.
+        r"""Sets the contents of this TagCondition.
 
         字段内容
 

@@ -27,7 +27,7 @@ class IvsStandardByIdCardImageRequestBody:
     }
 
     def __init__(self, meta=None, data=None):
-        """IvsStandardByIdCardImageRequestBody
+        r"""IvsStandardByIdCardImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IvsStandardByIdCardImageRequestBody:
 
     @property
     def meta(self):
-        """Gets the meta of this IvsStandardByIdCardImageRequestBody.
+        r"""Gets the meta of this IvsStandardByIdCardImageRequestBody.
 
         :return: The meta of this IvsStandardByIdCardImageRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -57,7 +57,7 @@ class IvsStandardByIdCardImageRequestBody:
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this IvsStandardByIdCardImageRequestBody.
+        r"""Sets the meta of this IvsStandardByIdCardImageRequestBody.
 
         :param meta: The meta of this IvsStandardByIdCardImageRequestBody.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -66,7 +66,7 @@ class IvsStandardByIdCardImageRequestBody:
 
     @property
     def data(self):
-        """Gets the data of this IvsStandardByIdCardImageRequestBody.
+        r"""Gets the data of this IvsStandardByIdCardImageRequestBody.
 
         :return: The data of this IvsStandardByIdCardImageRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBodyData`
@@ -75,7 +75,7 @@ class IvsStandardByIdCardImageRequestBody:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this IvsStandardByIdCardImageRequestBody.
+        r"""Sets the data of this IvsStandardByIdCardImageRequestBody.
 
         :param data: The data of this IvsStandardByIdCardImageRequestBody.
         :type data: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBodyData`

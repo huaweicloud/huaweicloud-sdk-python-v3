@@ -31,7 +31,7 @@ class CheckRecordIssueCountsInfo:
     }
 
     def __init__(self, critical=None, serious=None, normal=None, prompt=None):
-        """CheckRecordIssueCountsInfo
+        r"""CheckRecordIssueCountsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CheckRecordIssueCountsInfo:
 
     @property
     def critical(self):
-        """Gets the critical of this CheckRecordIssueCountsInfo.
+        r"""Gets the critical of this CheckRecordIssueCountsInfo.
 
         致命问题
 
@@ -75,7 +75,7 @@ class CheckRecordIssueCountsInfo:
 
     @critical.setter
     def critical(self, critical):
-        """Sets the critical of this CheckRecordIssueCountsInfo.
+        r"""Sets the critical of this CheckRecordIssueCountsInfo.
 
         致命问题
 
@@ -86,7 +86,7 @@ class CheckRecordIssueCountsInfo:
 
     @property
     def serious(self):
-        """Gets the serious of this CheckRecordIssueCountsInfo.
+        r"""Gets the serious of this CheckRecordIssueCountsInfo.
 
         严重问题
 
@@ -97,7 +97,7 @@ class CheckRecordIssueCountsInfo:
 
     @serious.setter
     def serious(self, serious):
-        """Sets the serious of this CheckRecordIssueCountsInfo.
+        r"""Sets the serious of this CheckRecordIssueCountsInfo.
 
         严重问题
 
@@ -108,7 +108,7 @@ class CheckRecordIssueCountsInfo:
 
     @property
     def normal(self):
-        """Gets the normal of this CheckRecordIssueCountsInfo.
+        r"""Gets the normal of this CheckRecordIssueCountsInfo.
 
         常规问题
 
@@ -119,7 +119,7 @@ class CheckRecordIssueCountsInfo:
 
     @normal.setter
     def normal(self, normal):
-        """Sets the normal of this CheckRecordIssueCountsInfo.
+        r"""Sets the normal of this CheckRecordIssueCountsInfo.
 
         常规问题
 
@@ -130,7 +130,7 @@ class CheckRecordIssueCountsInfo:
 
     @property
     def prompt(self):
-        """Gets the prompt of this CheckRecordIssueCountsInfo.
+        r"""Gets the prompt of this CheckRecordIssueCountsInfo.
 
         提示问题
 
@@ -141,7 +141,7 @@ class CheckRecordIssueCountsInfo:
 
     @prompt.setter
     def prompt(self, prompt):
-        """Sets the prompt of this CheckRecordIssueCountsInfo.
+        r"""Sets the prompt of this CheckRecordIssueCountsInfo.
 
         提示问题
 

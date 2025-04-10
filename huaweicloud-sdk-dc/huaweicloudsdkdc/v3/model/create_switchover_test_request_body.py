@@ -25,7 +25,7 @@ class CreateSwitchoverTestRequestBody:
     }
 
     def __init__(self, switchover_test_record=None):
-        """CreateSwitchoverTestRequestBody
+        r"""CreateSwitchoverTestRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSwitchoverTestRequestBody:
 
     @property
     def switchover_test_record(self):
-        """Gets the switchover_test_record of this CreateSwitchoverTestRequestBody.
+        r"""Gets the switchover_test_record of this CreateSwitchoverTestRequestBody.
 
         :return: The switchover_test_record of this CreateSwitchoverTestRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateSwitchoverTest`
@@ -52,7 +52,7 @@ class CreateSwitchoverTestRequestBody:
 
     @switchover_test_record.setter
     def switchover_test_record(self, switchover_test_record):
-        """Sets the switchover_test_record of this CreateSwitchoverTestRequestBody.
+        r"""Sets the switchover_test_record of this CreateSwitchoverTestRequestBody.
 
         :param switchover_test_record: The switchover_test_record of this CreateSwitchoverTestRequestBody.
         :type switchover_test_record: :class:`huaweicloudsdkdc.v3.CreateSwitchoverTest`

@@ -27,7 +27,7 @@ class CheckResourceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CheckResourceRequest
+        r"""CheckResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CheckResourceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckResourceRequest.
+        r"""Gets the x_language of this CheckResourceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -61,7 +61,7 @@ class CheckResourceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckResourceRequest.
+        r"""Sets the x_language of this CheckResourceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -72,7 +72,7 @@ class CheckResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckResourceRequest.
+        r"""Gets the body of this CheckResourceRequest.
 
         :return: The body of this CheckResourceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckResourceRequestBody`
@@ -81,7 +81,7 @@ class CheckResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckResourceRequest.
+        r"""Sets the body of this CheckResourceRequest.
 
         :param body: The body of this CheckResourceRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CheckResourceRequestBody`

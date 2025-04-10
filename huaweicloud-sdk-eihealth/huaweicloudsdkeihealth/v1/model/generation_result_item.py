@@ -31,7 +31,7 @@ class GenerationResultItem:
     }
 
     def __init__(self, smiles=None, props=None, num_fulfilled_weak_constraints=None, score=None):
-        """GenerationResultItem
+        r"""GenerationResultItem
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class GenerationResultItem:
 
     @property
     def smiles(self):
-        """Gets the smiles of this GenerationResultItem.
+        r"""Gets the smiles of this GenerationResultItem.
 
         分子SMILES表达式
 
@@ -71,7 +71,7 @@ class GenerationResultItem:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this GenerationResultItem.
+        r"""Sets the smiles of this GenerationResultItem.
 
         分子SMILES表达式
 
@@ -82,7 +82,7 @@ class GenerationResultItem:
 
     @property
     def props(self):
-        """Gets the props of this GenerationResultItem.
+        r"""Gets the props of this GenerationResultItem.
 
         分子ADMET属性值列表
 
@@ -93,7 +93,7 @@ class GenerationResultItem:
 
     @props.setter
     def props(self, props):
-        """Sets the props of this GenerationResultItem.
+        r"""Sets the props of this GenerationResultItem.
 
         分子ADMET属性值列表
 
@@ -104,7 +104,7 @@ class GenerationResultItem:
 
     @property
     def num_fulfilled_weak_constraints(self):
-        """Gets the num_fulfilled_weak_constraints of this GenerationResultItem.
+        r"""Gets the num_fulfilled_weak_constraints of this GenerationResultItem.
 
         分子所满足的弱约束数量
 
@@ -115,7 +115,7 @@ class GenerationResultItem:
 
     @num_fulfilled_weak_constraints.setter
     def num_fulfilled_weak_constraints(self, num_fulfilled_weak_constraints):
-        """Sets the num_fulfilled_weak_constraints of this GenerationResultItem.
+        r"""Sets the num_fulfilled_weak_constraints of this GenerationResultItem.
 
         分子所满足的弱约束数量
 
@@ -126,7 +126,7 @@ class GenerationResultItem:
 
     @property
     def score(self):
-        """Gets the score of this GenerationResultItem.
+        r"""Gets the score of this GenerationResultItem.
 
         分子的打分
 
@@ -137,7 +137,7 @@ class GenerationResultItem:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this GenerationResultItem.
+        r"""Sets the score of this GenerationResultItem.
 
         分子的打分
 

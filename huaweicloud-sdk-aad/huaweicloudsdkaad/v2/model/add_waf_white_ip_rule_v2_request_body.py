@@ -31,7 +31,7 @@ class AddWafWhiteIpRuleV2RequestBody:
     }
 
     def __init__(self, domain_name=None, ips=None, overseas_type=None, type=None):
-        """AddWafWhiteIpRuleV2RequestBody
+        r"""AddWafWhiteIpRuleV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Gets the domain_name of this AddWafWhiteIpRuleV2RequestBody.
 
         域名+端口组合，标准端口80/443无须加端口。
 
@@ -71,7 +71,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Sets the domain_name of this AddWafWhiteIpRuleV2RequestBody.
 
         域名+端口组合，标准端口80/443无须加端口。
 
@@ -82,7 +82,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @property
     def ips(self):
-        """Gets the ips of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Gets the ips of this AddWafWhiteIpRuleV2RequestBody.
 
         待添加ip/ip段
 
@@ -93,7 +93,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Sets the ips of this AddWafWhiteIpRuleV2RequestBody.
 
         待添加ip/ip段
 
@@ -104,7 +104,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Gets the overseas_type of this AddWafWhiteIpRuleV2RequestBody.
 
         防护区域,0-大陆,1-海外
 
@@ -115,7 +115,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Sets the overseas_type of this AddWafWhiteIpRuleV2RequestBody.
 
         防护区域,0-大陆,1-海外
 
@@ -126,7 +126,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @property
     def type(self):
-        """Gets the type of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Gets the type of this AddWafWhiteIpRuleV2RequestBody.
 
         0-黑名单，1-白名单
 
@@ -137,7 +137,7 @@ class AddWafWhiteIpRuleV2RequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddWafWhiteIpRuleV2RequestBody.
+        r"""Sets the type of this AddWafWhiteIpRuleV2RequestBody.
 
         0-黑名单，1-白名单
 

@@ -27,7 +27,7 @@ class ShowTaskInfoRequest:
     }
 
     def __init__(self, workspace=None, task_id=None):
-        """ShowTaskInfoRequest
+        r"""ShowTaskInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTaskInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowTaskInfoRequest.
+        r"""Gets the workspace of this ShowTaskInfoRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowTaskInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowTaskInfoRequest.
+        r"""Sets the workspace of this ShowTaskInfoRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowTaskInfoRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskInfoRequest.
+        r"""Gets the task_id of this ShowTaskInfoRequest.
 
         任务id
 
@@ -81,7 +81,7 @@ class ShowTaskInfoRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskInfoRequest.
+        r"""Sets the task_id of this ShowTaskInfoRequest.
 
         任务id
 

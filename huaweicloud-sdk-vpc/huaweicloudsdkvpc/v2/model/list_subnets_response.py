@@ -26,7 +26,7 @@ class ListSubnetsResponse(SdkResponse):
     }
 
     def __init__(self, subnets=None):
-        """ListSubnetsResponse
+        r"""ListSubnetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSubnetsResponse(SdkResponse):
 
     @property
     def subnets(self):
-        """Gets the subnets of this ListSubnetsResponse.
+        r"""Gets the subnets of this ListSubnetsResponse.
 
         subnet对象列表
 
@@ -55,7 +55,7 @@ class ListSubnetsResponse(SdkResponse):
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this ListSubnetsResponse.
+        r"""Sets the subnets of this ListSubnetsResponse.
 
         subnet对象列表
 

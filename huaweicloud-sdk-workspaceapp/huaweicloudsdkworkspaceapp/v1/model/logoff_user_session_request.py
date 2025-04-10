@@ -25,7 +25,7 @@ class LogoffUserSessionRequest:
     }
 
     def __init__(self, body=None):
-        """LogoffUserSessionRequest
+        r"""LogoffUserSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LogoffUserSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this LogoffUserSessionRequest.
+        r"""Gets the body of this LogoffUserSessionRequest.
 
         :return: The body of this LogoffUserSessionRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.LogoffUserSessionReq`
@@ -52,7 +52,7 @@ class LogoffUserSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LogoffUserSessionRequest.
+        r"""Sets the body of this LogoffUserSessionRequest.
 
         :param body: The body of this LogoffUserSessionRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.LogoffUserSessionReq`

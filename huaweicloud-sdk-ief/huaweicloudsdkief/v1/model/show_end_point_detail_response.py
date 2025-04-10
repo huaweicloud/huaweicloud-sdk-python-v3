@@ -26,7 +26,7 @@ class ShowEndPointDetailResponse(SdkResponse):
     }
 
     def __init__(self, endpoint=None):
-        """ShowEndPointDetailResponse
+        r"""ShowEndPointDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEndPointDetailResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ShowEndPointDetailResponse.
+        r"""Gets the endpoint of this ShowEndPointDetailResponse.
 
         :return: The endpoint of this ShowEndPointDetailResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -53,7 +53,7 @@ class ShowEndPointDetailResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ShowEndPointDetailResponse.
+        r"""Sets the endpoint of this ShowEndPointDetailResponse.
 
         :param endpoint: The endpoint of this ShowEndPointDetailResponse.
         :type endpoint: :class:`huaweicloudsdkief.v1.EndpointObjResp`

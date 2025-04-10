@@ -65,7 +65,7 @@ class StructuredDocView:
     }
 
     def __init__(self, creator=None, create_time=None, last_update_time=None, rdm_version=None, rdm_delete_flag=None, rdm_extension_type=None, tenant=None, class_name=None, clazz=None, id=None, document_id=None, title=None, type=None, template_id=None, organization_id=None, wiki_id=None, parent_document_id=None, instance_id=None, model_name=None, create_user_id=None, modifier=None):
-        """StructuredDocView
+        r"""StructuredDocView
 
         The model defined in huaweicloud sdk
 
@@ -182,7 +182,7 @@ class StructuredDocView:
 
     @property
     def creator(self):
-        """Gets the creator of this StructuredDocView.
+        r"""Gets the creator of this StructuredDocView.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -193,7 +193,7 @@ class StructuredDocView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this StructuredDocView.
+        r"""Sets the creator of this StructuredDocView.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -204,7 +204,7 @@ class StructuredDocView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StructuredDocView.
+        r"""Gets the create_time of this StructuredDocView.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -215,7 +215,7 @@ class StructuredDocView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StructuredDocView.
+        r"""Sets the create_time of this StructuredDocView.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -226,7 +226,7 @@ class StructuredDocView:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this StructuredDocView.
+        r"""Gets the last_update_time of this StructuredDocView.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -237,7 +237,7 @@ class StructuredDocView:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this StructuredDocView.
+        r"""Sets the last_update_time of this StructuredDocView.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -248,7 +248,7 @@ class StructuredDocView:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this StructuredDocView.
+        r"""Gets the rdm_version of this StructuredDocView.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -259,7 +259,7 @@ class StructuredDocView:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this StructuredDocView.
+        r"""Sets the rdm_version of this StructuredDocView.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -270,7 +270,7 @@ class StructuredDocView:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this StructuredDocView.
+        r"""Gets the rdm_delete_flag of this StructuredDocView.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。
 
@@ -281,7 +281,7 @@ class StructuredDocView:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this StructuredDocView.
+        r"""Sets the rdm_delete_flag of this StructuredDocView.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。
 
@@ -292,7 +292,7 @@ class StructuredDocView:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this StructuredDocView.
+        r"""Gets the rdm_extension_type of this StructuredDocView.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -303,7 +303,7 @@ class StructuredDocView:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this StructuredDocView.
+        r"""Sets the rdm_extension_type of this StructuredDocView.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -314,7 +314,7 @@ class StructuredDocView:
 
     @property
     def tenant(self):
-        """Gets the tenant of this StructuredDocView.
+        r"""Gets the tenant of this StructuredDocView.
 
         :return: The tenant of this StructuredDocView.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -323,7 +323,7 @@ class StructuredDocView:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this StructuredDocView.
+        r"""Sets the tenant of this StructuredDocView.
 
         :param tenant: The tenant of this StructuredDocView.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -332,7 +332,7 @@ class StructuredDocView:
 
     @property
     def class_name(self):
-        """Gets the class_name of this StructuredDocView.
+        r"""Gets the class_name of this StructuredDocView.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -343,7 +343,7 @@ class StructuredDocView:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this StructuredDocView.
+        r"""Sets the class_name of this StructuredDocView.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -354,7 +354,7 @@ class StructuredDocView:
 
     @property
     def clazz(self):
-        """Gets the clazz of this StructuredDocView.
+        r"""Gets the clazz of this StructuredDocView.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -365,7 +365,7 @@ class StructuredDocView:
 
     @clazz.setter
     def clazz(self, clazz):
-        """Sets the clazz of this StructuredDocView.
+        r"""Sets the clazz of this StructuredDocView.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -376,7 +376,7 @@ class StructuredDocView:
 
     @property
     def id(self):
-        """Gets the id of this StructuredDocView.
+        r"""Gets the id of this StructuredDocView.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
@@ -387,7 +387,7 @@ class StructuredDocView:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StructuredDocView.
+        r"""Sets the id of this StructuredDocView.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
@@ -398,7 +398,7 @@ class StructuredDocView:
 
     @property
     def document_id(self):
-        """Gets the document_id of this StructuredDocView.
+        r"""Gets the document_id of this StructuredDocView.
 
         **参数解释：**  kooPage文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -409,7 +409,7 @@ class StructuredDocView:
 
     @document_id.setter
     def document_id(self, document_id):
-        """Sets the document_id of this StructuredDocView.
+        r"""Sets the document_id of this StructuredDocView.
 
         **参数解释：**  kooPage文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -420,7 +420,7 @@ class StructuredDocView:
 
     @property
     def title(self):
-        """Gets the title of this StructuredDocView.
+        r"""Gets the title of this StructuredDocView.
 
         **参数解释：**  文档标题。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -431,7 +431,7 @@ class StructuredDocView:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this StructuredDocView.
+        r"""Sets the title of this StructuredDocView.
 
         **参数解释：**  文档标题。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -442,7 +442,7 @@ class StructuredDocView:
 
     @property
     def type(self):
-        """Gets the type of this StructuredDocView.
+        r"""Gets the type of this StructuredDocView.
 
         **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值：**  不涉及。
 
@@ -453,7 +453,7 @@ class StructuredDocView:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StructuredDocView.
+        r"""Sets the type of this StructuredDocView.
 
         **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值：**  不涉及。
 
@@ -464,7 +464,7 @@ class StructuredDocView:
 
     @property
     def template_id(self):
-        """Gets the template_id of this StructuredDocView.
+        r"""Gets the template_id of this StructuredDocView.
 
         **参数解释：**  模板ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -475,7 +475,7 @@ class StructuredDocView:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this StructuredDocView.
+        r"""Sets the template_id of this StructuredDocView.
 
         **参数解释：**  模板ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -486,7 +486,7 @@ class StructuredDocView:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this StructuredDocView.
+        r"""Gets the organization_id of this StructuredDocView.
 
         **参数解释：**  团队ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -497,7 +497,7 @@ class StructuredDocView:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this StructuredDocView.
+        r"""Sets the organization_id of this StructuredDocView.
 
         **参数解释：**  团队ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -508,7 +508,7 @@ class StructuredDocView:
 
     @property
     def wiki_id(self):
-        """Gets the wiki_id of this StructuredDocView.
+        r"""Gets the wiki_id of this StructuredDocView.
 
         **参数解释：**  知识库ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -519,7 +519,7 @@ class StructuredDocView:
 
     @wiki_id.setter
     def wiki_id(self, wiki_id):
-        """Sets the wiki_id of this StructuredDocView.
+        r"""Sets the wiki_id of this StructuredDocView.
 
         **参数解释：**  知识库ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -530,7 +530,7 @@ class StructuredDocView:
 
     @property
     def parent_document_id(self):
-        """Gets the parent_document_id of this StructuredDocView.
+        r"""Gets the parent_document_id of this StructuredDocView.
 
         **参数解释：**  父文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -541,7 +541,7 @@ class StructuredDocView:
 
     @parent_document_id.setter
     def parent_document_id(self, parent_document_id):
-        """Sets the parent_document_id of this StructuredDocView.
+        r"""Sets the parent_document_id of this StructuredDocView.
 
         **参数解释：**  父文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -552,7 +552,7 @@ class StructuredDocView:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StructuredDocView.
+        r"""Gets the instance_id of this StructuredDocView.
 
         **参数解释：**  实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -563,7 +563,7 @@ class StructuredDocView:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StructuredDocView.
+        r"""Sets the instance_id of this StructuredDocView.
 
         **参数解释：**  实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -574,7 +574,7 @@ class StructuredDocView:
 
     @property
     def model_name(self):
-        """Gets the model_name of this StructuredDocView.
+        r"""Gets the model_name of this StructuredDocView.
 
         **参数解释：**  模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -585,7 +585,7 @@ class StructuredDocView:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this StructuredDocView.
+        r"""Sets the model_name of this StructuredDocView.
 
         **参数解释：**  模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -596,7 +596,7 @@ class StructuredDocView:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this StructuredDocView.
+        r"""Gets the create_user_id of this StructuredDocView.
 
         **参数解释：**  创建者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -607,7 +607,7 @@ class StructuredDocView:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this StructuredDocView.
+        r"""Sets the create_user_id of this StructuredDocView.
 
         **参数解释：**  创建者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -618,7 +618,7 @@ class StructuredDocView:
 
     @property
     def modifier(self):
-        """Gets the modifier of this StructuredDocView.
+        r"""Gets the modifier of this StructuredDocView.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -629,7 +629,7 @@ class StructuredDocView:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this StructuredDocView.
+        r"""Sets the modifier of this StructuredDocView.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 

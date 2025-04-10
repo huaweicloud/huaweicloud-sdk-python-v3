@@ -27,7 +27,7 @@ class DeleteFileRequest:
     }
 
     def __init__(self, x_app_user_id=None, file_id=None):
-        """DeleteFileRequest
+        r"""DeleteFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteFileRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteFileRequest.
+        r"""Gets the x_app_user_id of this DeleteFileRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class DeleteFileRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteFileRequest.
+        r"""Sets the x_app_user_id of this DeleteFileRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class DeleteFileRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this DeleteFileRequest.
+        r"""Gets the file_id of this DeleteFileRequest.
 
         文件ID。
 
@@ -82,7 +82,7 @@ class DeleteFileRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this DeleteFileRequest.
+        r"""Sets the file_id of this DeleteFileRequest.
 
         文件ID。
 

@@ -37,7 +37,7 @@ class Versions:
     }
 
     def __init__(self, version=None, input=None, stable=None, translate=None, support_versions=None, creation_timestamp=None, update_timestamp=None):
-        """Versions
+        r"""Versions
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class Versions:
 
     @property
     def version(self):
-        """Gets the version of this Versions.
+        r"""Gets the version of this Versions.
 
         插件版本号
 
@@ -90,7 +90,7 @@ class Versions:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Versions.
+        r"""Sets the version of this Versions.
 
         插件版本号
 
@@ -101,7 +101,7 @@ class Versions:
 
     @property
     def input(self):
-        """Gets the input of this Versions.
+        r"""Gets the input of this Versions.
 
         插件安装参数
 
@@ -112,7 +112,7 @@ class Versions:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this Versions.
+        r"""Sets the input of this Versions.
 
         插件安装参数
 
@@ -123,7 +123,7 @@ class Versions:
 
     @property
     def stable(self):
-        """Gets the stable of this Versions.
+        r"""Gets the stable of this Versions.
 
         是否为稳定版本
 
@@ -134,7 +134,7 @@ class Versions:
 
     @stable.setter
     def stable(self, stable):
-        """Sets the stable of this Versions.
+        r"""Sets the stable of this Versions.
 
         是否为稳定版本
 
@@ -145,7 +145,7 @@ class Versions:
 
     @property
     def translate(self):
-        """Gets the translate of this Versions.
+        r"""Gets the translate of this Versions.
 
         供界面使用的翻译信息
 
@@ -156,7 +156,7 @@ class Versions:
 
     @translate.setter
     def translate(self, translate):
-        """Sets the translate of this Versions.
+        r"""Sets the translate of this Versions.
 
         供界面使用的翻译信息
 
@@ -167,7 +167,7 @@ class Versions:
 
     @property
     def support_versions(self):
-        """Gets the support_versions of this Versions.
+        r"""Gets the support_versions of this Versions.
 
         支持集群版本号
 
@@ -178,7 +178,7 @@ class Versions:
 
     @support_versions.setter
     def support_versions(self, support_versions):
-        """Sets the support_versions of this Versions.
+        r"""Sets the support_versions of this Versions.
 
         支持集群版本号
 
@@ -189,7 +189,7 @@ class Versions:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this Versions.
+        r"""Gets the creation_timestamp of this Versions.
 
         创建时间
 
@@ -200,7 +200,7 @@ class Versions:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this Versions.
+        r"""Sets the creation_timestamp of this Versions.
 
         创建时间
 
@@ -211,7 +211,7 @@ class Versions:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this Versions.
+        r"""Gets the update_timestamp of this Versions.
 
         更新时间
 
@@ -222,7 +222,7 @@ class Versions:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this Versions.
+        r"""Sets the update_timestamp of this Versions.
 
         更新时间
 

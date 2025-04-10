@@ -43,7 +43,7 @@ class EsLoadBalancerResource:
     }
 
     def __init__(self, id=None, name=None, guaranteed=None, billing_info=None, description=None, vpc_id=None, provisioning_status=None, listeners=None, vip_address=None, publicips=None):
-        """EsLoadBalancerResource
+        r"""EsLoadBalancerResource
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class EsLoadBalancerResource:
 
     @property
     def id(self):
-        """Gets the id of this EsLoadBalancerResource.
+        r"""Gets the id of this EsLoadBalancerResource.
 
         负载均衡器ID。
 
@@ -117,7 +117,7 @@ class EsLoadBalancerResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EsLoadBalancerResource.
+        r"""Sets the id of this EsLoadBalancerResource.
 
         负载均衡器ID。
 
@@ -128,7 +128,7 @@ class EsLoadBalancerResource:
 
     @property
     def name(self):
-        """Gets the name of this EsLoadBalancerResource.
+        r"""Gets the name of this EsLoadBalancerResource.
 
         负载均衡器名称。
 
@@ -139,7 +139,7 @@ class EsLoadBalancerResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EsLoadBalancerResource.
+        r"""Sets the name of this EsLoadBalancerResource.
 
         负载均衡器名称。
 
@@ -150,7 +150,7 @@ class EsLoadBalancerResource:
 
     @property
     def guaranteed(self):
-        """Gets the guaranteed of this EsLoadBalancerResource.
+        r"""Gets the guaranteed of this EsLoadBalancerResource.
 
         是否独享型LB。 - false：共享型。 - true：独享型。
 
@@ -161,7 +161,7 @@ class EsLoadBalancerResource:
 
     @guaranteed.setter
     def guaranteed(self, guaranteed):
-        """Sets the guaranteed of this EsLoadBalancerResource.
+        r"""Sets the guaranteed of this EsLoadBalancerResource.
 
         是否独享型LB。 - false：共享型。 - true：独享型。
 
@@ -172,7 +172,7 @@ class EsLoadBalancerResource:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this EsLoadBalancerResource.
+        r"""Gets the billing_info of this EsLoadBalancerResource.
 
         资源账单信息 - 空：按需计费。 - 非空：包周期计费。
 
@@ -183,7 +183,7 @@ class EsLoadBalancerResource:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this EsLoadBalancerResource.
+        r"""Sets the billing_info of this EsLoadBalancerResource.
 
         资源账单信息 - 空：按需计费。 - 非空：包周期计费。
 
@@ -194,7 +194,7 @@ class EsLoadBalancerResource:
 
     @property
     def description(self):
-        """Gets the description of this EsLoadBalancerResource.
+        r"""Gets the description of this EsLoadBalancerResource.
 
         描述信息。
 
@@ -205,7 +205,7 @@ class EsLoadBalancerResource:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EsLoadBalancerResource.
+        r"""Sets the description of this EsLoadBalancerResource.
 
         描述信息。
 
@@ -216,7 +216,7 @@ class EsLoadBalancerResource:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EsLoadBalancerResource.
+        r"""Gets the vpc_id of this EsLoadBalancerResource.
 
         负载均衡器所属VPC ID。
 
@@ -227,7 +227,7 @@ class EsLoadBalancerResource:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EsLoadBalancerResource.
+        r"""Sets the vpc_id of this EsLoadBalancerResource.
 
         负载均衡器所属VPC ID。
 
@@ -238,7 +238,7 @@ class EsLoadBalancerResource:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this EsLoadBalancerResource.
+        r"""Gets the provisioning_status of this EsLoadBalancerResource.
 
         负载均衡器的配置状态。
 
@@ -249,7 +249,7 @@ class EsLoadBalancerResource:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this EsLoadBalancerResource.
+        r"""Sets the provisioning_status of this EsLoadBalancerResource.
 
         负载均衡器的配置状态。
 
@@ -260,7 +260,7 @@ class EsLoadBalancerResource:
 
     @property
     def listeners(self):
-        """Gets the listeners of this EsLoadBalancerResource.
+        r"""Gets the listeners of this EsLoadBalancerResource.
 
         :return: The listeners of this EsLoadBalancerResource.
         :rtype: :class:`huaweicloudsdkcss.v1.EsListenersResource`
@@ -269,7 +269,7 @@ class EsLoadBalancerResource:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this EsLoadBalancerResource.
+        r"""Sets the listeners of this EsLoadBalancerResource.
 
         :param listeners: The listeners of this EsLoadBalancerResource.
         :type listeners: :class:`huaweicloudsdkcss.v1.EsListenersResource`
@@ -278,7 +278,7 @@ class EsLoadBalancerResource:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this EsLoadBalancerResource.
+        r"""Gets the vip_address of this EsLoadBalancerResource.
 
         负载均衡器的IPv4虚拟IP地址。
 
@@ -289,7 +289,7 @@ class EsLoadBalancerResource:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this EsLoadBalancerResource.
+        r"""Sets the vip_address of this EsLoadBalancerResource.
 
         负载均衡器的IPv4虚拟IP地址。
 
@@ -300,7 +300,7 @@ class EsLoadBalancerResource:
 
     @property
     def publicips(self):
-        """Gets the publicips of this EsLoadBalancerResource.
+        r"""Gets the publicips of this EsLoadBalancerResource.
 
         :return: The publicips of this EsLoadBalancerResource.
         :rtype: :class:`huaweicloudsdkcss.v1.EsPublicipsResource`
@@ -309,7 +309,7 @@ class EsLoadBalancerResource:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this EsLoadBalancerResource.
+        r"""Sets the publicips of this EsLoadBalancerResource.
 
         :param publicips: The publicips of this EsLoadBalancerResource.
         :type publicips: :class:`huaweicloudsdkcss.v1.EsPublicipsResource`

@@ -29,7 +29,7 @@ class ListGraphsRespSchemaPath:
     }
 
     def __init__(self, job_id=None, path=None, status=None):
-        """ListGraphsRespSchemaPath
+        r"""ListGraphsRespSchemaPath
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListGraphsRespSchemaPath:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListGraphsRespSchemaPath.
+        r"""Gets the job_id of this ListGraphsRespSchemaPath.
 
         导入OBS文件对应的jobId。
 
@@ -68,7 +68,7 @@ class ListGraphsRespSchemaPath:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListGraphsRespSchemaPath.
+        r"""Sets the job_id of this ListGraphsRespSchemaPath.
 
         导入OBS文件对应的jobId。
 
@@ -79,7 +79,7 @@ class ListGraphsRespSchemaPath:
 
     @property
     def path(self):
-        """Gets the path of this ListGraphsRespSchemaPath.
+        r"""Gets the path of this ListGraphsRespSchemaPath.
 
         OBS存储路径，不包含OBS Endpoint。
 
@@ -90,7 +90,7 @@ class ListGraphsRespSchemaPath:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListGraphsRespSchemaPath.
+        r"""Sets the path of this ListGraphsRespSchemaPath.
 
         OBS存储路径，不包含OBS Endpoint。
 
@@ -101,7 +101,7 @@ class ListGraphsRespSchemaPath:
 
     @property
     def status(self):
-        """Gets the status of this ListGraphsRespSchemaPath.
+        r"""Gets the status of this ListGraphsRespSchemaPath.
 
         OBS文件导入状态。  - success：完全导入成功 - partiallyFailed：部分失败 - failed：完全导入失败
 
@@ -112,7 +112,7 @@ class ListGraphsRespSchemaPath:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGraphsRespSchemaPath.
+        r"""Sets the status of this ListGraphsRespSchemaPath.
 
         OBS文件导入状态。  - success：完全导入成功 - partiallyFailed：部分失败 - failed：完全导入失败
 

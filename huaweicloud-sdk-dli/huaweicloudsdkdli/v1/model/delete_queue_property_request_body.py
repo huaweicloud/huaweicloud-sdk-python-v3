@@ -25,7 +25,7 @@ class DeleteQueuePropertyRequestBody:
     }
 
     def __init__(self, keys=None):
-        """DeleteQueuePropertyRequestBody
+        r"""DeleteQueuePropertyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteQueuePropertyRequestBody:
 
     @property
     def keys(self):
-        """Gets the keys of this DeleteQueuePropertyRequestBody.
+        r"""Gets the keys of this DeleteQueuePropertyRequestBody.
 
         待删除队列属性key值。 范围如下： computeEngine.maxInstance computeEngine.maxPrefetchInstance job.maxConcurrent
 
@@ -53,7 +53,7 @@ class DeleteQueuePropertyRequestBody:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this DeleteQueuePropertyRequestBody.
+        r"""Sets the keys of this DeleteQueuePropertyRequestBody.
 
         待删除队列属性key值。 范围如下： computeEngine.maxInstance computeEngine.maxPrefetchInstance job.maxConcurrent
 

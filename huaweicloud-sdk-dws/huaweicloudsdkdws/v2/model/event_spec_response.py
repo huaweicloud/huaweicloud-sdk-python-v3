@@ -41,7 +41,7 @@ class EventSpecResponse:
     }
 
     def __init__(self, id=None, name=None, display_name=None, description=None, subject=None, category=None, severity=None, source_type=None, name_space=None):
-        """EventSpecResponse
+        r"""EventSpecResponse
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class EventSpecResponse:
 
     @property
     def id(self):
-        """Gets the id of this EventSpecResponse.
+        r"""Gets the id of this EventSpecResponse.
 
         事件配置ID
 
@@ -110,7 +110,7 @@ class EventSpecResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EventSpecResponse.
+        r"""Sets the id of this EventSpecResponse.
 
         事件配置ID
 
@@ -121,7 +121,7 @@ class EventSpecResponse:
 
     @property
     def name(self):
-        """Gets the name of this EventSpecResponse.
+        r"""Gets the name of this EventSpecResponse.
 
         事件配置定义名称
 
@@ -132,7 +132,7 @@ class EventSpecResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventSpecResponse.
+        r"""Sets the name of this EventSpecResponse.
 
         事件配置定义名称
 
@@ -143,7 +143,7 @@ class EventSpecResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this EventSpecResponse.
+        r"""Gets the display_name of this EventSpecResponse.
 
         事件配置显示名称
 
@@ -154,7 +154,7 @@ class EventSpecResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this EventSpecResponse.
+        r"""Sets the display_name of this EventSpecResponse.
 
         事件配置显示名称
 
@@ -165,7 +165,7 @@ class EventSpecResponse:
 
     @property
     def description(self):
-        """Gets the description of this EventSpecResponse.
+        r"""Gets the description of this EventSpecResponse.
 
         事件配置描述
 
@@ -176,7 +176,7 @@ class EventSpecResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EventSpecResponse.
+        r"""Sets the description of this EventSpecResponse.
 
         事件配置描述
 
@@ -187,7 +187,7 @@ class EventSpecResponse:
 
     @property
     def subject(self):
-        """Gets the subject of this EventSpecResponse.
+        r"""Gets the subject of this EventSpecResponse.
 
         事件主题
 
@@ -198,7 +198,7 @@ class EventSpecResponse:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this EventSpecResponse.
+        r"""Sets the subject of this EventSpecResponse.
 
         事件主题
 
@@ -209,7 +209,7 @@ class EventSpecResponse:
 
     @property
     def category(self):
-        """Gets the category of this EventSpecResponse.
+        r"""Gets the category of this EventSpecResponse.
 
         事件类别
 
@@ -220,7 +220,7 @@ class EventSpecResponse:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this EventSpecResponse.
+        r"""Sets the category of this EventSpecResponse.
 
         事件类别
 
@@ -231,7 +231,7 @@ class EventSpecResponse:
 
     @property
     def severity(self):
-        """Gets the severity of this EventSpecResponse.
+        r"""Gets the severity of this EventSpecResponse.
 
         事件级别
 
@@ -242,7 +242,7 @@ class EventSpecResponse:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this EventSpecResponse.
+        r"""Sets the severity of this EventSpecResponse.
 
         事件级别
 
@@ -253,7 +253,7 @@ class EventSpecResponse:
 
     @property
     def source_type(self):
-        """Gets the source_type of this EventSpecResponse.
+        r"""Gets the source_type of this EventSpecResponse.
 
         事件源类型
 
@@ -264,7 +264,7 @@ class EventSpecResponse:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this EventSpecResponse.
+        r"""Sets the source_type of this EventSpecResponse.
 
         事件源类型
 
@@ -275,7 +275,7 @@ class EventSpecResponse:
 
     @property
     def name_space(self):
-        """Gets the name_space of this EventSpecResponse.
+        r"""Gets the name_space of this EventSpecResponse.
 
         所属服务
 
@@ -286,7 +286,7 @@ class EventSpecResponse:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this EventSpecResponse.
+        r"""Sets the name_space of this EventSpecResponse.
 
         所属服务
 

@@ -29,7 +29,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
     }
 
     def __init__(self, average_video_quality=None, lowest_video_quality=None, highest_video_quality=None):
-        """PoliciesDisplayOptionsVideoQualityOptions
+        r"""PoliciesDisplayOptionsVideoQualityOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
 
     @property
     def average_video_quality(self):
-        """Gets the average_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
+        r"""Gets the average_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
 
         视频平均质量。取值范围为[5-59]。默认：15。
 
@@ -68,7 +68,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
 
     @average_video_quality.setter
     def average_video_quality(self, average_video_quality):
-        """Sets the average_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
+        r"""Sets the average_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
 
         视频平均质量。取值范围为[5-59]。默认：15。
 
@@ -79,7 +79,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
 
     @property
     def lowest_video_quality(self):
-        """Gets the lowest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
+        r"""Gets the lowest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
 
         视频最低质量。取值范围为[5-69]。默认：25。
 
@@ -90,7 +90,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
 
     @lowest_video_quality.setter
     def lowest_video_quality(self, lowest_video_quality):
-        """Sets the lowest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
+        r"""Sets the lowest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
 
         视频最低质量。取值范围为[5-69]。默认：25。
 
@@ -101,7 +101,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
 
     @property
     def highest_video_quality(self):
-        """Gets the highest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
+        r"""Gets the highest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
 
         视频最高质量。取值范围为[1-59]。默认：7。
 
@@ -112,7 +112,7 @@ class PoliciesDisplayOptionsVideoQualityOptions:
 
     @highest_video_quality.setter
     def highest_video_quality(self, highest_video_quality):
-        """Sets the highest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
+        r"""Sets the highest_video_quality of this PoliciesDisplayOptionsVideoQualityOptions.
 
         视频最高质量。取值范围为[1-59]。默认：7。
 

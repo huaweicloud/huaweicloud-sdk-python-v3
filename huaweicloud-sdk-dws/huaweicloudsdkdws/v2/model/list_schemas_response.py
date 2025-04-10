@@ -28,7 +28,7 @@ class ListSchemasResponse(SdkResponse):
     }
 
     def __init__(self, schemas=None, count=None):
-        """ListSchemasResponse
+        r"""ListSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this ListSchemasResponse.
+        r"""Gets the schemas of this ListSchemasResponse.
 
         集群模式空间信息列表。
 
@@ -62,7 +62,7 @@ class ListSchemasResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this ListSchemasResponse.
+        r"""Sets the schemas of this ListSchemasResponse.
 
         集群模式空间信息列表。
 
@@ -73,7 +73,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSchemasResponse.
+        r"""Gets the count of this ListSchemasResponse.
 
         总数量
 
@@ -84,7 +84,7 @@ class ListSchemasResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSchemasResponse.
+        r"""Sets the count of this ListSchemasResponse.
 
         总数量
 

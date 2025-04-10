@@ -31,7 +31,7 @@ class ListAssetsNewRequest:
     }
 
     def __init__(self, limit=None, offset=None, filter=None, type=None):
-        """ListAssetsNewRequest
+        r"""ListAssetsNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAssetsNewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssetsNewRequest.
+        r"""Gets the limit of this ListAssetsNewRequest.
 
         每页记录数
 
@@ -74,7 +74,7 @@ class ListAssetsNewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssetsNewRequest.
+        r"""Sets the limit of this ListAssetsNewRequest.
 
         每页记录数
 
@@ -85,7 +85,7 @@ class ListAssetsNewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssetsNewRequest.
+        r"""Gets the offset of this ListAssetsNewRequest.
 
         页码
 
@@ -96,7 +96,7 @@ class ListAssetsNewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssetsNewRequest.
+        r"""Sets the offset of this ListAssetsNewRequest.
 
         页码
 
@@ -107,7 +107,7 @@ class ListAssetsNewRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListAssetsNewRequest.
+        r"""Gets the filter of this ListAssetsNewRequest.
 
         查询过滤器 示例： {\"key\":\"xxx\"} {\"key1\":\"xxx\",\"key2\":\"xxx\"} {\"key\":{\"eq|like\":\"xxx\"}} {\"key\":{\"in\":[\"xxx\",\"xxx\"]}} {\"or\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} {\"and\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} 支持的key： asset_model_id，asset_id，parent，name，display_name，root，state，job_id 注意： job_id只在RELEASE态下生效，只支持contain过滤 {\"job_id\":{\"contain\":\"xxx\"}}
 
@@ -118,7 +118,7 @@ class ListAssetsNewRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListAssetsNewRequest.
+        r"""Sets the filter of this ListAssetsNewRequest.
 
         查询过滤器 示例： {\"key\":\"xxx\"} {\"key1\":\"xxx\",\"key2\":\"xxx\"} {\"key\":{\"eq|like\":\"xxx\"}} {\"key\":{\"in\":[\"xxx\",\"xxx\"]}} {\"or\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} {\"and\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} 支持的key： asset_model_id，asset_id，parent，name，display_name，root，state，job_id 注意： job_id只在RELEASE态下生效，只支持contain过滤 {\"job_id\":{\"contain\":\"xxx\"}}
 
@@ -129,7 +129,7 @@ class ListAssetsNewRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAssetsNewRequest.
+        r"""Gets the type of this ListAssetsNewRequest.
 
         SKETCH：草稿态；RELEASE：发布态
 
@@ -140,7 +140,7 @@ class ListAssetsNewRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAssetsNewRequest.
+        r"""Sets the type of this ListAssetsNewRequest.
 
         SKETCH：草稿态；RELEASE：发布态
 

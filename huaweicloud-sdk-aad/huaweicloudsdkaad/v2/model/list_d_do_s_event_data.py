@@ -45,7 +45,7 @@ class ListDDoSEventData:
     }
 
     def __init__(self, zone_ip=None, start_time=None, end_time=None, max_drop_kbps=None, max_drop_pps=None, max_in_kbps=None, max_in_pps=None, attack_types=None, attack_ips=None, attack_ips_desc=None, attack_status=None):
-        """ListDDoSEventData
+        r"""ListDDoSEventData
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListDDoSEventData:
 
     @property
     def zone_ip(self):
-        """Gets the zone_ip of this ListDDoSEventData.
+        r"""Gets the zone_ip of this ListDDoSEventData.
 
         防护IP
 
@@ -124,7 +124,7 @@ class ListDDoSEventData:
 
     @zone_ip.setter
     def zone_ip(self, zone_ip):
-        """Sets the zone_ip of this ListDDoSEventData.
+        r"""Sets the zone_ip of this ListDDoSEventData.
 
         防护IP
 
@@ -135,7 +135,7 @@ class ListDDoSEventData:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDDoSEventData.
+        r"""Gets the start_time of this ListDDoSEventData.
 
         开始时间（毫秒时间戳）
 
@@ -146,7 +146,7 @@ class ListDDoSEventData:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDDoSEventData.
+        r"""Sets the start_time of this ListDDoSEventData.
 
         开始时间（毫秒时间戳）
 
@@ -157,7 +157,7 @@ class ListDDoSEventData:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDDoSEventData.
+        r"""Gets the end_time of this ListDDoSEventData.
 
         结束时间（毫秒时间戳）
 
@@ -168,7 +168,7 @@ class ListDDoSEventData:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDDoSEventData.
+        r"""Sets the end_time of this ListDDoSEventData.
 
         结束时间（毫秒时间戳）
 
@@ -179,7 +179,7 @@ class ListDDoSEventData:
 
     @property
     def max_drop_kbps(self):
-        """Gets the max_drop_kbps of this ListDDoSEventData.
+        r"""Gets the max_drop_kbps of this ListDDoSEventData.
 
         攻击流量峰值，单位“kbps”
 
@@ -190,7 +190,7 @@ class ListDDoSEventData:
 
     @max_drop_kbps.setter
     def max_drop_kbps(self, max_drop_kbps):
-        """Sets the max_drop_kbps of this ListDDoSEventData.
+        r"""Sets the max_drop_kbps of this ListDDoSEventData.
 
         攻击流量峰值，单位“kbps”
 
@@ -201,7 +201,7 @@ class ListDDoSEventData:
 
     @property
     def max_drop_pps(self):
-        """Gets the max_drop_pps of this ListDDoSEventData.
+        r"""Gets the max_drop_pps of this ListDDoSEventData.
 
         攻击报文数峰值，单位“pps”
 
@@ -212,7 +212,7 @@ class ListDDoSEventData:
 
     @max_drop_pps.setter
     def max_drop_pps(self, max_drop_pps):
-        """Sets the max_drop_pps of this ListDDoSEventData.
+        r"""Sets the max_drop_pps of this ListDDoSEventData.
 
         攻击报文数峰值，单位“pps”
 
@@ -223,7 +223,7 @@ class ListDDoSEventData:
 
     @property
     def max_in_kbps(self):
-        """Gets the max_in_kbps of this ListDDoSEventData.
+        r"""Gets the max_in_kbps of this ListDDoSEventData.
 
         入流量峰值，单位“kbps”
 
@@ -234,7 +234,7 @@ class ListDDoSEventData:
 
     @max_in_kbps.setter
     def max_in_kbps(self, max_in_kbps):
-        """Sets the max_in_kbps of this ListDDoSEventData.
+        r"""Sets the max_in_kbps of this ListDDoSEventData.
 
         入流量峰值，单位“kbps”
 
@@ -245,7 +245,7 @@ class ListDDoSEventData:
 
     @property
     def max_in_pps(self):
-        """Gets the max_in_pps of this ListDDoSEventData.
+        r"""Gets the max_in_pps of this ListDDoSEventData.
 
         入报文数峰值，单位“pps”
 
@@ -256,7 +256,7 @@ class ListDDoSEventData:
 
     @max_in_pps.setter
     def max_in_pps(self, max_in_pps):
-        """Sets the max_in_pps of this ListDDoSEventData.
+        r"""Sets the max_in_pps of this ListDDoSEventData.
 
         入报文数峰值，单位“pps”
 
@@ -267,7 +267,7 @@ class ListDDoSEventData:
 
     @property
     def attack_types(self):
-        """Gets the attack_types of this ListDDoSEventData.
+        r"""Gets the attack_types of this ListDDoSEventData.
 
         攻击类型
 
@@ -278,7 +278,7 @@ class ListDDoSEventData:
 
     @attack_types.setter
     def attack_types(self, attack_types):
-        """Sets the attack_types of this ListDDoSEventData.
+        r"""Sets the attack_types of this ListDDoSEventData.
 
         攻击类型
 
@@ -289,7 +289,7 @@ class ListDDoSEventData:
 
     @property
     def attack_ips(self):
-        """Gets the attack_ips of this ListDDoSEventData.
+        r"""Gets the attack_ips of this ListDDoSEventData.
 
         攻击源IP
 
@@ -300,7 +300,7 @@ class ListDDoSEventData:
 
     @attack_ips.setter
     def attack_ips(self, attack_ips):
-        """Sets the attack_ips of this ListDDoSEventData.
+        r"""Sets the attack_ips of this ListDDoSEventData.
 
         攻击源IP
 
@@ -311,7 +311,7 @@ class ListDDoSEventData:
 
     @property
     def attack_ips_desc(self):
-        """Gets the attack_ips_desc of this ListDDoSEventData.
+        r"""Gets the attack_ips_desc of this ListDDoSEventData.
 
         攻击IP描述
 
@@ -322,7 +322,7 @@ class ListDDoSEventData:
 
     @attack_ips_desc.setter
     def attack_ips_desc(self, attack_ips_desc):
-        """Sets the attack_ips_desc of this ListDDoSEventData.
+        r"""Sets the attack_ips_desc of this ListDDoSEventData.
 
         攻击IP描述
 
@@ -333,7 +333,7 @@ class ListDDoSEventData:
 
     @property
     def attack_status(self):
-        """Gets the attack_status of this ListDDoSEventData.
+        r"""Gets the attack_status of this ListDDoSEventData.
 
         攻击状态
 
@@ -344,7 +344,7 @@ class ListDDoSEventData:
 
     @attack_status.setter
     def attack_status(self, attack_status):
-        """Sets the attack_status of this ListDDoSEventData.
+        r"""Sets the attack_status of this ListDDoSEventData.
 
         攻击状态
 

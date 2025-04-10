@@ -27,7 +27,7 @@ class Resource:
     }
 
     def __init__(self, namespace=None, dimensions=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Resource:
 
     @property
     def namespace(self):
-        """Gets the namespace of this Resource.
+        r"""Gets the namespace of this Resource.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -59,7 +59,7 @@ class Resource:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this Resource.
+        r"""Sets the namespace of this Resource.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -70,7 +70,7 @@ class Resource:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this Resource.
+        r"""Gets the dimensions of this Resource.
 
         资源的维度信息
 
@@ -81,7 +81,7 @@ class Resource:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this Resource.
+        r"""Sets the dimensions of this Resource.
 
         资源的维度信息
 

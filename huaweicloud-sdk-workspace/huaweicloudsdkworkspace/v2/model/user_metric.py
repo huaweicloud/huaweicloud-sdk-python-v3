@@ -27,7 +27,7 @@ class UserMetric:
     }
 
     def __init__(self, username=None, metric=None):
-        """UserMetric
+        r"""UserMetric
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserMetric:
 
     @property
     def username(self):
-        """Gets the username of this UserMetric.
+        r"""Gets the username of this UserMetric.
 
         用户名称
 
@@ -61,7 +61,7 @@ class UserMetric:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UserMetric.
+        r"""Sets the username of this UserMetric.
 
         用户名称
 
@@ -72,7 +72,7 @@ class UserMetric:
 
     @property
     def metric(self):
-        """Gets the metric of this UserMetric.
+        r"""Gets the metric of this UserMetric.
 
         桌面使用统计信息 * `user_usage` -  用户使用时长(单位:秒)，同一时间登录多台PC的话;相应的时间会累加 * `user_login_count` -  用户登录次数(单位:次) * `user_login_success_count` -  用户登录成功次数(单位:次) * `user_login_fail_count` -  用户登录失败次数(单位:次)
 
@@ -83,7 +83,7 @@ class UserMetric:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this UserMetric.
+        r"""Sets the metric of this UserMetric.
 
         桌面使用统计信息 * `user_usage` -  用户使用时长(单位:秒)，同一时间登录多台PC的话;相应的时间会累加 * `user_login_count` -  用户登录次数(单位:次) * `user_login_success_count` -  用户登录成功次数(单位:次) * `user_login_fail_count` -  用户登录失败次数(单位:次)
 

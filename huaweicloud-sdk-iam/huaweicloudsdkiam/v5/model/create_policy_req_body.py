@@ -31,7 +31,7 @@ class CreatePolicyReqBody:
     }
 
     def __init__(self, policy_name=None, path=None, policy_document=None, description=None):
-        """CreatePolicyReqBody
+        r"""CreatePolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreatePolicyReqBody:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this CreatePolicyReqBody.
+        r"""Gets the policy_name of this CreatePolicyReqBody.
 
         身份策略名称，长度为1到128个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -73,7 +73,7 @@ class CreatePolicyReqBody:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this CreatePolicyReqBody.
+        r"""Sets the policy_name of this CreatePolicyReqBody.
 
         身份策略名称，长度为1到128个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -84,7 +84,7 @@ class CreatePolicyReqBody:
 
     @property
     def path(self):
-        """Gets the path of this CreatePolicyReqBody.
+        r"""Gets the path of this CreatePolicyReqBody.
 
         资源路径，默认为空串。由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -95,7 +95,7 @@ class CreatePolicyReqBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this CreatePolicyReqBody.
+        r"""Sets the path of this CreatePolicyReqBody.
 
         资源路径，默认为空串。由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -106,7 +106,7 @@ class CreatePolicyReqBody:
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this CreatePolicyReqBody.
+        r"""Gets the policy_document of this CreatePolicyReqBody.
 
         自定义身份策略或系统预置身份策略的策略文档的json格式。下面的字符`= < > ( ) |`是语法中的特殊字符，不包含在身份策略中。  问号`?`表示元素是可选的。例如`sid_block?`。  竖线`|`表示可选项，括号定义了可选项的范围。例如`(\"Allow\" | \"Deny\")`。  当一个元素允许多个值时，使用重复值、`,`以及`...`表示。例如`[ <policy_statement>, <policy_statement>, ... ]`。  下面的递归文法描述了身份策略的语法： ``` policy = {   <version_block>,   <statement_block> }  <version_block> = \"Version\" : (\"5.0\")  <statement_block> = \"Statement\" : [ <policy_statement>, <policy_statement>, ... ]  <policy_statement> = {   <sid_block?>,   <effect_block>,   <action_block>,   <resource_block?>,   <condition_block?> }  <sid_block> = \"Sid\" : <sid_string>  <effect_block> = \"Effect\" : (\"Allow\" | \"Deny\")  <action_block> = (\"Action\" | \"NotAction\") : [ <action_string>, <action_string>, ... ]  <resource_block> = (\"Resource\" | \"NotResource\") : [ <resource_string>, <resource_string>, ... ]  <condition_block> = \"Condition\" : { <condition_map> }  <condition_map> = {   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   ... }  <condition_value_list> = ( <condition_value> | [ <condition_value>, <condition_value>, ... ] )  <condition_value> = \"string\" ``` 
 
@@ -117,7 +117,7 @@ class CreatePolicyReqBody:
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this CreatePolicyReqBody.
+        r"""Sets the policy_document of this CreatePolicyReqBody.
 
         自定义身份策略或系统预置身份策略的策略文档的json格式。下面的字符`= < > ( ) |`是语法中的特殊字符，不包含在身份策略中。  问号`?`表示元素是可选的。例如`sid_block?`。  竖线`|`表示可选项，括号定义了可选项的范围。例如`(\"Allow\" | \"Deny\")`。  当一个元素允许多个值时，使用重复值、`,`以及`...`表示。例如`[ <policy_statement>, <policy_statement>, ... ]`。  下面的递归文法描述了身份策略的语法： ``` policy = {   <version_block>,   <statement_block> }  <version_block> = \"Version\" : (\"5.0\")  <statement_block> = \"Statement\" : [ <policy_statement>, <policy_statement>, ... ]  <policy_statement> = {   <sid_block?>,   <effect_block>,   <action_block>,   <resource_block?>,   <condition_block?> }  <sid_block> = \"Sid\" : <sid_string>  <effect_block> = \"Effect\" : (\"Allow\" | \"Deny\")  <action_block> = (\"Action\" | \"NotAction\") : [ <action_string>, <action_string>, ... ]  <resource_block> = (\"Resource\" | \"NotResource\") : [ <resource_string>, <resource_string>, ... ]  <condition_block> = \"Condition\" : { <condition_map> }  <condition_map> = {   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   ... }  <condition_value_list> = ( <condition_value> | [ <condition_value>, <condition_value>, ... ] )  <condition_value> = \"string\" ``` 
 
@@ -128,7 +128,7 @@ class CreatePolicyReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePolicyReqBody.
+        r"""Gets the description of this CreatePolicyReqBody.
 
         身份策略描述。
 
@@ -139,7 +139,7 @@ class CreatePolicyReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePolicyReqBody.
+        r"""Sets the description of this CreatePolicyReqBody.
 
         身份策略描述。
 

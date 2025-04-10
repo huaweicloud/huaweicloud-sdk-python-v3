@@ -26,7 +26,7 @@ class ListHealthmonitorsResponse(SdkResponse):
     }
 
     def __init__(self, healthmonitors=None):
-        """ListHealthmonitorsResponse
+        r"""ListHealthmonitorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHealthmonitorsResponse(SdkResponse):
 
     @property
     def healthmonitors(self):
-        """Gets the healthmonitors of this ListHealthmonitorsResponse.
+        r"""Gets the healthmonitors of this ListHealthmonitorsResponse.
 
         健康检查对象的列表
 
@@ -55,7 +55,7 @@ class ListHealthmonitorsResponse(SdkResponse):
 
     @healthmonitors.setter
     def healthmonitors(self, healthmonitors):
-        """Sets the healthmonitors of this ListHealthmonitorsResponse.
+        r"""Sets the healthmonitors of this ListHealthmonitorsResponse.
 
         健康检查对象的列表
 

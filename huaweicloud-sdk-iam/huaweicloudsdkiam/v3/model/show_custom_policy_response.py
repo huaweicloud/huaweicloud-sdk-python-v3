@@ -26,7 +26,7 @@ class ShowCustomPolicyResponse(SdkResponse):
     }
 
     def __init__(self, role=None):
-        """ShowCustomPolicyResponse
+        r"""ShowCustomPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCustomPolicyResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowCustomPolicyResponse.
+        r"""Gets the role of this ShowCustomPolicyResponse.
 
         :return: The role of this ShowCustomPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ShowPolicyRoleResult`
@@ -53,7 +53,7 @@ class ShowCustomPolicyResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowCustomPolicyResponse.
+        r"""Sets the role of this ShowCustomPolicyResponse.
 
         :param role: The role of this ShowCustomPolicyResponse.
         :type role: :class:`huaweicloudsdkiam.v3.ShowPolicyRoleResult`

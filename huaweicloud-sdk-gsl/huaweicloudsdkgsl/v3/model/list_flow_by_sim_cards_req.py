@@ -27,7 +27,7 @@ class ListFlowBySimCardsReq:
     }
 
     def __init__(self, iccids=None, sim_card_ids=None):
-        """ListFlowBySimCardsReq
+        r"""ListFlowBySimCardsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFlowBySimCardsReq:
 
     @property
     def iccids(self):
-        """Gets the iccids of this ListFlowBySimCardsReq.
+        r"""Gets the iccids of this ListFlowBySimCardsReq.
 
         iccid列表（三网卡不支持），最大支持50，且iccid和sim_card_id列表二选一
 
@@ -61,7 +61,7 @@ class ListFlowBySimCardsReq:
 
     @iccids.setter
     def iccids(self, iccids):
-        """Sets the iccids of this ListFlowBySimCardsReq.
+        r"""Sets the iccids of this ListFlowBySimCardsReq.
 
         iccid列表（三网卡不支持），最大支持50，且iccid和sim_card_id列表二选一
 
@@ -72,7 +72,7 @@ class ListFlowBySimCardsReq:
 
     @property
     def sim_card_ids(self):
-        """Gets the sim_card_ids of this ListFlowBySimCardsReq.
+        r"""Gets the sim_card_ids of this ListFlowBySimCardsReq.
 
         sim_card_id列表，最大支持50，且iccid和sim_card_id列表二选一
 
@@ -83,7 +83,7 @@ class ListFlowBySimCardsReq:
 
     @sim_card_ids.setter
     def sim_card_ids(self, sim_card_ids):
-        """Sets the sim_card_ids of this ListFlowBySimCardsReq.
+        r"""Sets the sim_card_ids of this ListFlowBySimCardsReq.
 
         sim_card_id列表，最大支持50，且iccid和sim_card_id列表二选一
 

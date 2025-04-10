@@ -30,7 +30,7 @@ class ShowMindMapByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowMindMapByIdResponse
+        r"""ShowMindMapByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMindMapByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMindMapByIdResponse.
+        r"""Gets the code of this ShowMindMapByIdResponse.
 
         :return: The code of this ShowMindMapByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowMindMapByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMindMapByIdResponse.
+        r"""Sets the code of this ShowMindMapByIdResponse.
 
         :param code: The code of this ShowMindMapByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowMindMapByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowMindMapByIdResponse.
+        r"""Gets the data of this ShowMindMapByIdResponse.
 
         :return: The data of this ShowMindMapByIdResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.MindmapObject`
@@ -85,7 +85,7 @@ class ShowMindMapByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowMindMapByIdResponse.
+        r"""Sets the data of this ShowMindMapByIdResponse.
 
         :param data: The data of this ShowMindMapByIdResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.MindmapObject`
@@ -94,7 +94,7 @@ class ShowMindMapByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMindMapByIdResponse.
+        r"""Gets the message of this ShowMindMapByIdResponse.
 
         :return: The message of this ShowMindMapByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowMindMapByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMindMapByIdResponse.
+        r"""Sets the message of this ShowMindMapByIdResponse.
 
         :param message: The message of this ShowMindMapByIdResponse.
         :type message: str

@@ -29,7 +29,7 @@ class WorkTableIssuseListResponseBodyModule:
     }
 
     def __init__(self, id=None, name=None, path_name=None):
-        """WorkTableIssuseListResponseBodyModule
+        r"""WorkTableIssuseListResponseBodyModule
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WorkTableIssuseListResponseBodyModule:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyModule.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyModule.
 
         模块id
 
@@ -68,7 +68,7 @@ class WorkTableIssuseListResponseBodyModule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyModule.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyModule.
 
         模块id
 
@@ -79,7 +79,7 @@ class WorkTableIssuseListResponseBodyModule:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodyModule.
+        r"""Gets the name of this WorkTableIssuseListResponseBodyModule.
 
         模块名称
 
@@ -90,7 +90,7 @@ class WorkTableIssuseListResponseBodyModule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodyModule.
+        r"""Sets the name of this WorkTableIssuseListResponseBodyModule.
 
         模块名称
 
@@ -101,7 +101,7 @@ class WorkTableIssuseListResponseBodyModule:
 
     @property
     def path_name(self):
-        """Gets the path_name of this WorkTableIssuseListResponseBodyModule.
+        r"""Gets the path_name of this WorkTableIssuseListResponseBodyModule.
 
         模块路径名称
 
@@ -112,7 +112,7 @@ class WorkTableIssuseListResponseBodyModule:
 
     @path_name.setter
     def path_name(self, path_name):
-        """Sets the path_name of this WorkTableIssuseListResponseBodyModule.
+        r"""Sets the path_name of this WorkTableIssuseListResponseBodyModule.
 
         模块路径名称
 

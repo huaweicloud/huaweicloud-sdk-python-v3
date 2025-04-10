@@ -28,7 +28,7 @@ class KeystoneCreateUserTokenByPasswordResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """KeystoneCreateUserTokenByPasswordResponse
+        r"""KeystoneCreateUserTokenByPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneCreateUserTokenByPasswordResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this KeystoneCreateUserTokenByPasswordResponse.
+        r"""Gets the token of this KeystoneCreateUserTokenByPasswordResponse.
 
         :return: The token of this KeystoneCreateUserTokenByPasswordResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenResult`
@@ -60,7 +60,7 @@ class KeystoneCreateUserTokenByPasswordResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this KeystoneCreateUserTokenByPasswordResponse.
+        r"""Sets the token of this KeystoneCreateUserTokenByPasswordResponse.
 
         :param token: The token of this KeystoneCreateUserTokenByPasswordResponse.
         :type token: :class:`huaweicloudsdkiam.v3.TokenResult`
@@ -69,7 +69,7 @@ class KeystoneCreateUserTokenByPasswordResponse(SdkResponse):
 
     @property
     def x_subject_token(self):
-        """Gets the x_subject_token of this KeystoneCreateUserTokenByPasswordResponse.
+        r"""Gets the x_subject_token of this KeystoneCreateUserTokenByPasswordResponse.
 
         :return: The x_subject_token of this KeystoneCreateUserTokenByPasswordResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class KeystoneCreateUserTokenByPasswordResponse(SdkResponse):
 
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
-        """Sets the x_subject_token of this KeystoneCreateUserTokenByPasswordResponse.
+        r"""Sets the x_subject_token of this KeystoneCreateUserTokenByPasswordResponse.
 
         :param x_subject_token: The x_subject_token of this KeystoneCreateUserTokenByPasswordResponse.
         :type x_subject_token: str

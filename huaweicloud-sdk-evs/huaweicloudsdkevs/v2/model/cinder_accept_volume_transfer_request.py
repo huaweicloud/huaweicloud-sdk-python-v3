@@ -27,7 +27,7 @@ class CinderAcceptVolumeTransferRequest:
     }
 
     def __init__(self, transfer_id=None, body=None):
-        """CinderAcceptVolumeTransferRequest
+        r"""CinderAcceptVolumeTransferRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CinderAcceptVolumeTransferRequest:
 
     @property
     def transfer_id(self):
-        """Gets the transfer_id of this CinderAcceptVolumeTransferRequest.
+        r"""Gets the transfer_id of this CinderAcceptVolumeTransferRequest.
 
         云硬盘ID
 
@@ -60,7 +60,7 @@ class CinderAcceptVolumeTransferRequest:
 
     @transfer_id.setter
     def transfer_id(self, transfer_id):
-        """Sets the transfer_id of this CinderAcceptVolumeTransferRequest.
+        r"""Sets the transfer_id of this CinderAcceptVolumeTransferRequest.
 
         云硬盘ID
 
@@ -71,7 +71,7 @@ class CinderAcceptVolumeTransferRequest:
 
     @property
     def body(self):
-        """Gets the body of this CinderAcceptVolumeTransferRequest.
+        r"""Gets the body of this CinderAcceptVolumeTransferRequest.
 
         :return: The body of this CinderAcceptVolumeTransferRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferRequestBody`
@@ -80,7 +80,7 @@ class CinderAcceptVolumeTransferRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CinderAcceptVolumeTransferRequest.
+        r"""Sets the body of this CinderAcceptVolumeTransferRequest.
 
         :param body: The body of this CinderAcceptVolumeTransferRequest.
         :type body: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferRequestBody`

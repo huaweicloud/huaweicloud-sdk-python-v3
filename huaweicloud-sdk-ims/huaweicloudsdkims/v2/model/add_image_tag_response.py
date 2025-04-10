@@ -24,7 +24,7 @@ class AddImageTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddImageTagResponse
+        r"""AddImageTagResponse
 
         The model defined in huaweicloud sdk
 

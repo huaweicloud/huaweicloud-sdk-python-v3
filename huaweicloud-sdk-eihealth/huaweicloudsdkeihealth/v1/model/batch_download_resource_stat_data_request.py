@@ -25,7 +25,7 @@ class BatchDownloadResourceStatDataRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDownloadResourceStatDataRequest
+        r"""BatchDownloadResourceStatDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDownloadResourceStatDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDownloadResourceStatDataRequest.
+        r"""Gets the body of this BatchDownloadResourceStatDataRequest.
 
         :return: The body of this BatchDownloadResourceStatDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchQueryStatReq`
@@ -52,7 +52,7 @@ class BatchDownloadResourceStatDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDownloadResourceStatDataRequest.
+        r"""Sets the body of this BatchDownloadResourceStatDataRequest.
 
         :param body: The body of this BatchDownloadResourceStatDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchQueryStatReq`

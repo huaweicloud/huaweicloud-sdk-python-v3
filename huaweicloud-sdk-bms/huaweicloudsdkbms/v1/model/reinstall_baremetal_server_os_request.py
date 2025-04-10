@@ -27,7 +27,7 @@ class ReinstallBaremetalServerOsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ReinstallBaremetalServerOsRequest
+        r"""ReinstallBaremetalServerOsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReinstallBaremetalServerOsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ReinstallBaremetalServerOsRequest.
+        r"""Gets the server_id of this ReinstallBaremetalServerOsRequest.
 
         裸金属服务器ID
 
@@ -60,7 +60,7 @@ class ReinstallBaremetalServerOsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ReinstallBaremetalServerOsRequest.
+        r"""Sets the server_id of this ReinstallBaremetalServerOsRequest.
 
         裸金属服务器ID
 
@@ -71,7 +71,7 @@ class ReinstallBaremetalServerOsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ReinstallBaremetalServerOsRequest.
+        r"""Gets the body of this ReinstallBaremetalServerOsRequest.
 
         :return: The body of this ReinstallBaremetalServerOsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.OsReinstallBody`
@@ -80,7 +80,7 @@ class ReinstallBaremetalServerOsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ReinstallBaremetalServerOsRequest.
+        r"""Sets the body of this ReinstallBaremetalServerOsRequest.
 
         :param body: The body of this ReinstallBaremetalServerOsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.OsReinstallBody`

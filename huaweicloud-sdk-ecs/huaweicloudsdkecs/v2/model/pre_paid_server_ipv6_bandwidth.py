@@ -25,7 +25,7 @@ class PrePaidServerIpv6Bandwidth:
     }
 
     def __init__(self, id=None):
-        """PrePaidServerIpv6Bandwidth
+        r"""PrePaidServerIpv6Bandwidth
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrePaidServerIpv6Bandwidth:
 
     @property
     def id(self):
-        """Gets the id of this PrePaidServerIpv6Bandwidth.
+        r"""Gets the id of this PrePaidServerIpv6Bandwidth.
 
         绑定的共享带宽ID。
 
@@ -54,7 +54,7 @@ class PrePaidServerIpv6Bandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrePaidServerIpv6Bandwidth.
+        r"""Sets the id of this PrePaidServerIpv6Bandwidth.
 
         绑定的共享带宽ID。
 

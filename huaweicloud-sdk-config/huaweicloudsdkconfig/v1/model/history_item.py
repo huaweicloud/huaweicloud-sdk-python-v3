@@ -37,7 +37,7 @@ class HistoryItem:
     }
 
     def __init__(self, domain_id=None, resource_id=None, resource_type=None, capture_time=None, status=None, relations=None, resource=None):
-        """HistoryItem
+        r"""HistoryItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class HistoryItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this HistoryItem.
+        r"""Gets the domain_id of this HistoryItem.
 
         用户id
 
@@ -96,7 +96,7 @@ class HistoryItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this HistoryItem.
+        r"""Sets the domain_id of this HistoryItem.
 
         用户id
 
@@ -107,7 +107,7 @@ class HistoryItem:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this HistoryItem.
+        r"""Gets the resource_id of this HistoryItem.
 
         资源id
 
@@ -118,7 +118,7 @@ class HistoryItem:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this HistoryItem.
+        r"""Sets the resource_id of this HistoryItem.
 
         资源id
 
@@ -129,7 +129,7 @@ class HistoryItem:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this HistoryItem.
+        r"""Gets the resource_type of this HistoryItem.
 
         资源类型
 
@@ -140,7 +140,7 @@ class HistoryItem:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this HistoryItem.
+        r"""Sets the resource_type of this HistoryItem.
 
         资源类型
 
@@ -151,7 +151,7 @@ class HistoryItem:
 
     @property
     def capture_time(self):
-        """Gets the capture_time of this HistoryItem.
+        r"""Gets the capture_time of this HistoryItem.
 
         该资源在Config系统捕获时间
 
@@ -162,7 +162,7 @@ class HistoryItem:
 
     @capture_time.setter
     def capture_time(self, capture_time):
-        """Sets the capture_time of this HistoryItem.
+        r"""Sets the capture_time of this HistoryItem.
 
         该资源在Config系统捕获时间
 
@@ -173,7 +173,7 @@ class HistoryItem:
 
     @property
     def status(self):
-        """Gets the status of this HistoryItem.
+        r"""Gets the status of this HistoryItem.
 
         资源状态
 
@@ -184,7 +184,7 @@ class HistoryItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HistoryItem.
+        r"""Sets the status of this HistoryItem.
 
         资源状态
 
@@ -195,7 +195,7 @@ class HistoryItem:
 
     @property
     def relations(self):
-        """Gets the relations of this HistoryItem.
+        r"""Gets the relations of this HistoryItem.
 
         资源关系列表
 
@@ -206,7 +206,7 @@ class HistoryItem:
 
     @relations.setter
     def relations(self, relations):
-        """Sets the relations of this HistoryItem.
+        r"""Sets the relations of this HistoryItem.
 
         资源关系列表
 
@@ -217,7 +217,7 @@ class HistoryItem:
 
     @property
     def resource(self):
-        """Gets the resource of this HistoryItem.
+        r"""Gets the resource of this HistoryItem.
 
         :return: The resource of this HistoryItem.
         :rtype: :class:`huaweicloudsdkconfig.v1.BaseResourceEntity`
@@ -226,7 +226,7 @@ class HistoryItem:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this HistoryItem.
+        r"""Sets the resource of this HistoryItem.
 
         :param resource: The resource of this HistoryItem.
         :type resource: :class:`huaweicloudsdkconfig.v1.BaseResourceEntity`

@@ -29,7 +29,7 @@ class SubAppUpdateParam:
     }
 
     def __init__(self, name=None, display_name=None, description=None):
-        """SubAppUpdateParam
+        r"""SubAppUpdateParam
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SubAppUpdateParam:
 
     @property
     def name(self):
-        """Gets the name of this SubAppUpdateParam.
+        r"""Gets the name of this SubAppUpdateParam.
 
         子应用唯一标识
 
@@ -67,7 +67,7 @@ class SubAppUpdateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubAppUpdateParam.
+        r"""Sets the name of this SubAppUpdateParam.
 
         子应用唯一标识
 
@@ -78,7 +78,7 @@ class SubAppUpdateParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this SubAppUpdateParam.
+        r"""Gets the display_name of this SubAppUpdateParam.
 
         子应用节点显示名称
 
@@ -89,7 +89,7 @@ class SubAppUpdateParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this SubAppUpdateParam.
+        r"""Sets the display_name of this SubAppUpdateParam.
 
         子应用节点显示名称
 
@@ -100,7 +100,7 @@ class SubAppUpdateParam:
 
     @property
     def description(self):
-        """Gets the description of this SubAppUpdateParam.
+        r"""Gets the description of this SubAppUpdateParam.
 
         子应用描述
 
@@ -111,7 +111,7 @@ class SubAppUpdateParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubAppUpdateParam.
+        r"""Sets the description of this SubAppUpdateParam.
 
         子应用描述
 

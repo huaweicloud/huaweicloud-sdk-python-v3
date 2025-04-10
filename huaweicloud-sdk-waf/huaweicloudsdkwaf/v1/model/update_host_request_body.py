@@ -59,7 +59,7 @@ class UpdateHostRequestBody:
     }
 
     def __init__(self, proxy=None, certificateid=None, certificatename=None, server=None, tls=None, cipher=None, http2_enable=None, ipv6_enable=None, web_tag=None, exclusive_ip=None, paid_type=None, block_page=None, traffic_mark=None, flag=None, extend=None, circuit_breaker=None, timeout_config=None, forward_header_map=None):
-        """UpdateHostRequestBody
+        r"""UpdateHostRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class UpdateHostRequestBody:
 
     @property
     def proxy(self):
-        """Gets the proxy of this UpdateHostRequestBody.
+        r"""Gets the proxy of this UpdateHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -173,7 +173,7 @@ class UpdateHostRequestBody:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this UpdateHostRequestBody.
+        r"""Sets the proxy of this UpdateHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -184,7 +184,7 @@ class UpdateHostRequestBody:
 
     @property
     def certificateid(self):
-        """Gets the certificateid of this UpdateHostRequestBody.
+        r"""Gets the certificateid of this UpdateHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -195,7 +195,7 @@ class UpdateHostRequestBody:
 
     @certificateid.setter
     def certificateid(self, certificateid):
-        """Sets the certificateid of this UpdateHostRequestBody.
+        r"""Sets the certificateid of this UpdateHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -206,7 +206,7 @@ class UpdateHostRequestBody:
 
     @property
     def certificatename(self):
-        """Gets the certificatename of this UpdateHostRequestBody.
+        r"""Gets the certificatename of this UpdateHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -217,7 +217,7 @@ class UpdateHostRequestBody:
 
     @certificatename.setter
     def certificatename(self, certificatename):
-        """Sets the certificatename of this UpdateHostRequestBody.
+        r"""Sets the certificatename of this UpdateHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -228,7 +228,7 @@ class UpdateHostRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this UpdateHostRequestBody.
+        r"""Gets the server of this UpdateHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -239,7 +239,7 @@ class UpdateHostRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this UpdateHostRequestBody.
+        r"""Sets the server of this UpdateHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -250,7 +250,7 @@ class UpdateHostRequestBody:
 
     @property
     def tls(self):
-        """Gets the tls of this UpdateHostRequestBody.
+        r"""Gets the tls of this UpdateHostRequestBody.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -261,7 +261,7 @@ class UpdateHostRequestBody:
 
     @tls.setter
     def tls(self, tls):
-        """Sets the tls of this UpdateHostRequestBody.
+        r"""Sets the tls of this UpdateHostRequestBody.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -272,7 +272,7 @@ class UpdateHostRequestBody:
 
     @property
     def cipher(self):
-        """Gets the cipher of this UpdateHostRequestBody.
+        r"""Gets the cipher of this UpdateHostRequestBody.
 
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -283,7 +283,7 @@ class UpdateHostRequestBody:
 
     @cipher.setter
     def cipher(self, cipher):
-        """Sets the cipher of this UpdateHostRequestBody.
+        r"""Sets the cipher of this UpdateHostRequestBody.
 
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -294,7 +294,7 @@ class UpdateHostRequestBody:
 
     @property
     def http2_enable(self):
-        """Gets the http2_enable of this UpdateHostRequestBody.
+        r"""Gets the http2_enable of this UpdateHostRequestBody.
 
         是否支持http2   - true：表示支持http2   - false：表示不支持http2
 
@@ -305,7 +305,7 @@ class UpdateHostRequestBody:
 
     @http2_enable.setter
     def http2_enable(self, http2_enable):
-        """Sets the http2_enable of this UpdateHostRequestBody.
+        r"""Sets the http2_enable of this UpdateHostRequestBody.
 
         是否支持http2   - true：表示支持http2   - false：表示不支持http2
 
@@ -316,7 +316,7 @@ class UpdateHostRequestBody:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this UpdateHostRequestBody.
+        r"""Gets the ipv6_enable of this UpdateHostRequestBody.
 
         是否开启IPv6防护，仅专业版（原企业版）和铂金版（原旗舰版）支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
 
@@ -327,7 +327,7 @@ class UpdateHostRequestBody:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this UpdateHostRequestBody.
+        r"""Sets the ipv6_enable of this UpdateHostRequestBody.
 
         是否开启IPv6防护，仅专业版（原企业版）和铂金版（原旗舰版）支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
 
@@ -338,7 +338,7 @@ class UpdateHostRequestBody:
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this UpdateHostRequestBody.
+        r"""Gets the web_tag of this UpdateHostRequestBody.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -349,7 +349,7 @@ class UpdateHostRequestBody:
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this UpdateHostRequestBody.
+        r"""Sets the web_tag of this UpdateHostRequestBody.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -360,7 +360,7 @@ class UpdateHostRequestBody:
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this UpdateHostRequestBody.
+        r"""Gets the exclusive_ip of this UpdateHostRequestBody.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -371,7 +371,7 @@ class UpdateHostRequestBody:
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this UpdateHostRequestBody.
+        r"""Sets the exclusive_ip of this UpdateHostRequestBody.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -382,7 +382,7 @@ class UpdateHostRequestBody:
 
     @property
     def paid_type(self):
-        """Gets the paid_type of this UpdateHostRequestBody.
+        r"""Gets the paid_type of this UpdateHostRequestBody.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -393,7 +393,7 @@ class UpdateHostRequestBody:
 
     @paid_type.setter
     def paid_type(self, paid_type):
-        """Sets the paid_type of this UpdateHostRequestBody.
+        r"""Sets the paid_type of this UpdateHostRequestBody.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -404,7 +404,7 @@ class UpdateHostRequestBody:
 
     @property
     def block_page(self):
-        """Gets the block_page of this UpdateHostRequestBody.
+        r"""Gets the block_page of this UpdateHostRequestBody.
 
         :return: The block_page of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -413,7 +413,7 @@ class UpdateHostRequestBody:
 
     @block_page.setter
     def block_page(self, block_page):
-        """Sets the block_page of this UpdateHostRequestBody.
+        r"""Sets the block_page of this UpdateHostRequestBody.
 
         :param block_page: The block_page of this UpdateHostRequestBody.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -422,7 +422,7 @@ class UpdateHostRequestBody:
 
     @property
     def traffic_mark(self):
-        """Gets the traffic_mark of this UpdateHostRequestBody.
+        r"""Gets the traffic_mark of this UpdateHostRequestBody.
 
         :return: The traffic_mark of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -431,7 +431,7 @@ class UpdateHostRequestBody:
 
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
-        """Sets the traffic_mark of this UpdateHostRequestBody.
+        r"""Sets the traffic_mark of this UpdateHostRequestBody.
 
         :param traffic_mark: The traffic_mark of this UpdateHostRequestBody.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -440,7 +440,7 @@ class UpdateHostRequestBody:
 
     @property
     def flag(self):
-        """Gets the flag of this UpdateHostRequestBody.
+        r"""Gets the flag of this UpdateHostRequestBody.
 
         :return: The flag of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -449,7 +449,7 @@ class UpdateHostRequestBody:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this UpdateHostRequestBody.
+        r"""Sets the flag of this UpdateHostRequestBody.
 
         :param flag: The flag of this UpdateHostRequestBody.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -458,7 +458,7 @@ class UpdateHostRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this UpdateHostRequestBody.
+        r"""Gets the extend of this UpdateHostRequestBody.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -469,7 +469,7 @@ class UpdateHostRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this UpdateHostRequestBody.
+        r"""Sets the extend of this UpdateHostRequestBody.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -480,7 +480,7 @@ class UpdateHostRequestBody:
 
     @property
     def circuit_breaker(self):
-        """Gets the circuit_breaker of this UpdateHostRequestBody.
+        r"""Gets the circuit_breaker of this UpdateHostRequestBody.
 
         :return: The circuit_breaker of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -489,7 +489,7 @@ class UpdateHostRequestBody:
 
     @circuit_breaker.setter
     def circuit_breaker(self, circuit_breaker):
-        """Sets the circuit_breaker of this UpdateHostRequestBody.
+        r"""Sets the circuit_breaker of this UpdateHostRequestBody.
 
         :param circuit_breaker: The circuit_breaker of this UpdateHostRequestBody.
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -498,7 +498,7 @@ class UpdateHostRequestBody:
 
     @property
     def timeout_config(self):
-        """Gets the timeout_config of this UpdateHostRequestBody.
+        r"""Gets the timeout_config of this UpdateHostRequestBody.
 
         :return: The timeout_config of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -507,7 +507,7 @@ class UpdateHostRequestBody:
 
     @timeout_config.setter
     def timeout_config(self, timeout_config):
-        """Sets the timeout_config of this UpdateHostRequestBody.
+        r"""Sets the timeout_config of this UpdateHostRequestBody.
 
         :param timeout_config: The timeout_config of this UpdateHostRequestBody.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -516,7 +516,7 @@ class UpdateHostRequestBody:
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this UpdateHostRequestBody.
+        r"""Gets the forward_header_map of this UpdateHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -527,7 +527,7 @@ class UpdateHostRequestBody:
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this UpdateHostRequestBody.
+        r"""Sets the forward_header_map of this UpdateHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 

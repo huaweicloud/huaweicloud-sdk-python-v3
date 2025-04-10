@@ -35,7 +35,7 @@ class DownloadCompareResultFileRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_type=None, compare_job_id=None, region=None, body=None):
-        """DownloadCompareResultFileRequest
+        r"""DownloadCompareResultFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class DownloadCompareResultFileRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadCompareResultFileRequest.
+        r"""Gets the x_language of this DownloadCompareResultFileRequest.
 
         请求语言类型。
 
@@ -88,7 +88,7 @@ class DownloadCompareResultFileRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadCompareResultFileRequest.
+        r"""Sets the x_language of this DownloadCompareResultFileRequest.
 
         请求语言类型。
 
@@ -99,7 +99,7 @@ class DownloadCompareResultFileRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DownloadCompareResultFileRequest.
+        r"""Gets the job_id of this DownloadCompareResultFileRequest.
 
         任务ID。
 
@@ -110,7 +110,7 @@ class DownloadCompareResultFileRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DownloadCompareResultFileRequest.
+        r"""Sets the job_id of this DownloadCompareResultFileRequest.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class DownloadCompareResultFileRequest:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this DownloadCompareResultFileRequest.
+        r"""Gets the compare_type of this DownloadCompareResultFileRequest.
 
         对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
 
@@ -132,7 +132,7 @@ class DownloadCompareResultFileRequest:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this DownloadCompareResultFileRequest.
+        r"""Sets the compare_type of this DownloadCompareResultFileRequest.
 
         对比任务类型： - contents： 内容对比。 - lines：行数对比。 - random：抽样对比。 - objects_comparison：对象对比。 - repair_data：数据修复。
 
@@ -143,7 +143,7 @@ class DownloadCompareResultFileRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this DownloadCompareResultFileRequest.
+        r"""Gets the compare_job_id of this DownloadCompareResultFileRequest.
 
         对比任务的ID，内容对比、抽样对比、行数对比场景必填。
 
@@ -154,7 +154,7 @@ class DownloadCompareResultFileRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this DownloadCompareResultFileRequest.
+        r"""Sets the compare_job_id of this DownloadCompareResultFileRequest.
 
         对比任务的ID，内容对比、抽样对比、行数对比场景必填。
 
@@ -165,7 +165,7 @@ class DownloadCompareResultFileRequest:
 
     @property
     def region(self):
-        """Gets the region of this DownloadCompareResultFileRequest.
+        r"""Gets the region of this DownloadCompareResultFileRequest.
 
         区域ID，例如：cn-north-4。
 
@@ -176,7 +176,7 @@ class DownloadCompareResultFileRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DownloadCompareResultFileRequest.
+        r"""Sets the region of this DownloadCompareResultFileRequest.
 
         区域ID，例如：cn-north-4。
 
@@ -187,7 +187,7 @@ class DownloadCompareResultFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this DownloadCompareResultFileRequest.
+        r"""Gets the body of this DownloadCompareResultFileRequest.
 
         :return: The body of this DownloadCompareResultFileRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.ExportCompareResultReq`
@@ -196,7 +196,7 @@ class DownloadCompareResultFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DownloadCompareResultFileRequest.
+        r"""Sets the body of this DownloadCompareResultFileRequest.
 
         :param body: The body of this DownloadCompareResultFileRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.ExportCompareResultReq`

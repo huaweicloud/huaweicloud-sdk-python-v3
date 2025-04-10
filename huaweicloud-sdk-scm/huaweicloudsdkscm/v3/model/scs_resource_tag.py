@@ -27,7 +27,7 @@ class ScsResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ScsResourceTag
+        r"""ScsResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScsResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this ScsResourceTag.
+        r"""Gets the key of this ScsResourceTag.
 
         标签键。
 
@@ -61,7 +61,7 @@ class ScsResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ScsResourceTag.
+        r"""Sets the key of this ScsResourceTag.
 
         标签键。
 
@@ -72,7 +72,7 @@ class ScsResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this ScsResourceTag.
+        r"""Gets the value of this ScsResourceTag.
 
         标签值。
 
@@ -83,7 +83,7 @@ class ScsResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ScsResourceTag.
+        r"""Sets the value of this ScsResourceTag.
 
         标签值。
 

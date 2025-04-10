@@ -29,7 +29,7 @@ class CreateCustomLineRequestBody:
     }
 
     def __init__(self, name=None, ip_segments=None, description=None):
-        """CreateCustomLineRequestBody
+        r"""CreateCustomLineRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateCustomLineRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomLineRequestBody.
+        r"""Gets the name of this CreateCustomLineRequestBody.
 
         解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、'-'、'_'、'.'字符。  租户内，解析线路名称是唯一的。
 
@@ -66,7 +66,7 @@ class CreateCustomLineRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomLineRequestBody.
+        r"""Sets the name of this CreateCustomLineRequestBody.
 
         解析线路名称。  长度限制为1-80个字符，只允许包含中文、字母、数字、'-'、'_'、'.'字符。  租户内，解析线路名称是唯一的。
 
@@ -77,7 +77,7 @@ class CreateCustomLineRequestBody:
 
     @property
     def ip_segments(self):
-        """Gets the ip_segments of this CreateCustomLineRequestBody.
+        r"""Gets the ip_segments of this CreateCustomLineRequestBody.
 
         IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
 
@@ -88,7 +88,7 @@ class CreateCustomLineRequestBody:
 
     @ip_segments.setter
     def ip_segments(self, ip_segments):
-        """Sets the ip_segments of this CreateCustomLineRequestBody.
+        r"""Sets the ip_segments of this CreateCustomLineRequestBody.
 
         IP地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。  最多支持50个。
 
@@ -99,7 +99,7 @@ class CreateCustomLineRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateCustomLineRequestBody.
+        r"""Gets the description of this CreateCustomLineRequestBody.
 
         自定义线路的描述信息。长度不超过255个字符。  默认值为空。
 
@@ -110,7 +110,7 @@ class CreateCustomLineRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCustomLineRequestBody.
+        r"""Sets the description of this CreateCustomLineRequestBody.
 
         自定义线路的描述信息。长度不超过255个字符。  默认值为空。
 

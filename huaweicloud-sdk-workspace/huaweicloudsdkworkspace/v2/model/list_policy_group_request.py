@@ -41,7 +41,7 @@ class ListPolicyGroupRequest:
     }
 
     def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, scope_flag=None, is_group_name_accurate=None):
-        """ListPolicyGroupRequest
+        r"""ListPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListPolicyGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyGroupRequest.
+        r"""Gets the limit of this ListPolicyGroupRequest.
 
         用于分页查询，返回策略组数量的限制。如果不指定，则返回所有符合条件的策略组。范围0~100。
 
@@ -110,7 +110,7 @@ class ListPolicyGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyGroupRequest.
+        r"""Sets the limit of this ListPolicyGroupRequest.
 
         用于分页查询，返回策略组数量的限制。如果不指定，则返回所有符合条件的策略组。范围0~100。
 
@@ -121,7 +121,7 @@ class ListPolicyGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPolicyGroupRequest.
+        r"""Gets the offset of this ListPolicyGroupRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -132,7 +132,7 @@ class ListPolicyGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPolicyGroupRequest.
+        r"""Sets the offset of this ListPolicyGroupRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -143,7 +143,7 @@ class ListPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ListPolicyGroupRequest.
+        r"""Gets the policy_group_id of this ListPolicyGroupRequest.
 
         根据策略组ID过滤结果。
 
@@ -154,7 +154,7 @@ class ListPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ListPolicyGroupRequest.
+        r"""Sets the policy_group_id of this ListPolicyGroupRequest.
 
         根据策略组ID过滤结果。
 
@@ -165,7 +165,7 @@ class ListPolicyGroupRequest:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this ListPolicyGroupRequest.
+        r"""Gets the policy_group_name of this ListPolicyGroupRequest.
 
         根据策略组名字过滤结果。
 
@@ -176,7 +176,7 @@ class ListPolicyGroupRequest:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this ListPolicyGroupRequest.
+        r"""Sets the policy_group_name of this ListPolicyGroupRequest.
 
         根据策略组名字过滤结果。
 
@@ -187,7 +187,7 @@ class ListPolicyGroupRequest:
 
     @property
     def priority(self):
-        """Gets the priority of this ListPolicyGroupRequest.
+        r"""Gets the priority of this ListPolicyGroupRequest.
 
         根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值
 
@@ -198,7 +198,7 @@ class ListPolicyGroupRequest:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListPolicyGroupRequest.
+        r"""Sets the priority of this ListPolicyGroupRequest.
 
         根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值
 
@@ -209,7 +209,7 @@ class ListPolicyGroupRequest:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListPolicyGroupRequest.
+        r"""Gets the update_time of this ListPolicyGroupRequest.
 
         根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss
 
@@ -220,7 +220,7 @@ class ListPolicyGroupRequest:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListPolicyGroupRequest.
+        r"""Sets the update_time of this ListPolicyGroupRequest.
 
         根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss
 
@@ -231,7 +231,7 @@ class ListPolicyGroupRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPolicyGroupRequest.
+        r"""Gets the description of this ListPolicyGroupRequest.
 
         策略组描述
 
@@ -242,7 +242,7 @@ class ListPolicyGroupRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPolicyGroupRequest.
+        r"""Sets the description of this ListPolicyGroupRequest.
 
         策略组描述
 
@@ -253,7 +253,7 @@ class ListPolicyGroupRequest:
 
     @property
     def scope_flag(self):
-        """Gets the scope_flag of this ListPolicyGroupRequest.
+        r"""Gets the scope_flag of this ListPolicyGroupRequest.
 
         策略来源，取值范围0或者1
 
@@ -264,7 +264,7 @@ class ListPolicyGroupRequest:
 
     @scope_flag.setter
     def scope_flag(self, scope_flag):
-        """Sets the scope_flag of this ListPolicyGroupRequest.
+        r"""Sets the scope_flag of this ListPolicyGroupRequest.
 
         策略来源，取值范围0或者1
 
@@ -275,7 +275,7 @@ class ListPolicyGroupRequest:
 
     @property
     def is_group_name_accurate(self):
-        """Gets the is_group_name_accurate of this ListPolicyGroupRequest.
+        r"""Gets the is_group_name_accurate of this ListPolicyGroupRequest.
 
         策略组名字精确查询。
 
@@ -286,7 +286,7 @@ class ListPolicyGroupRequest:
 
     @is_group_name_accurate.setter
     def is_group_name_accurate(self, is_group_name_accurate):
-        """Sets the is_group_name_accurate of this ListPolicyGroupRequest.
+        r"""Sets the is_group_name_accurate of this ListPolicyGroupRequest.
 
         策略组名字精确查询。
 

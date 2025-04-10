@@ -33,7 +33,7 @@ class GetAccessConfigListRequestBody:
     }
 
     def __init__(self, access_config_name_list=None, host_group_name_list=None, log_group_name_list=None, log_stream_name_list=None, access_config_tag_list=None):
-        """GetAccessConfigListRequestBody
+        r"""GetAccessConfigListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class GetAccessConfigListRequestBody:
 
     @property
     def access_config_name_list(self):
-        """Gets the access_config_name_list of this GetAccessConfigListRequestBody.
+        r"""Gets the access_config_name_list of this GetAccessConfigListRequestBody.
 
         接入配置名称列表
 
@@ -82,7 +82,7 @@ class GetAccessConfigListRequestBody:
 
     @access_config_name_list.setter
     def access_config_name_list(self, access_config_name_list):
-        """Sets the access_config_name_list of this GetAccessConfigListRequestBody.
+        r"""Sets the access_config_name_list of this GetAccessConfigListRequestBody.
 
         接入配置名称列表
 
@@ -93,7 +93,7 @@ class GetAccessConfigListRequestBody:
 
     @property
     def host_group_name_list(self):
-        """Gets the host_group_name_list of this GetAccessConfigListRequestBody.
+        r"""Gets the host_group_name_list of this GetAccessConfigListRequestBody.
 
         主机组名称列表
 
@@ -104,7 +104,7 @@ class GetAccessConfigListRequestBody:
 
     @host_group_name_list.setter
     def host_group_name_list(self, host_group_name_list):
-        """Sets the host_group_name_list of this GetAccessConfigListRequestBody.
+        r"""Sets the host_group_name_list of this GetAccessConfigListRequestBody.
 
         主机组名称列表
 
@@ -115,7 +115,7 @@ class GetAccessConfigListRequestBody:
 
     @property
     def log_group_name_list(self):
-        """Gets the log_group_name_list of this GetAccessConfigListRequestBody.
+        r"""Gets the log_group_name_list of this GetAccessConfigListRequestBody.
 
         日志组名称列表
 
@@ -126,7 +126,7 @@ class GetAccessConfigListRequestBody:
 
     @log_group_name_list.setter
     def log_group_name_list(self, log_group_name_list):
-        """Sets the log_group_name_list of this GetAccessConfigListRequestBody.
+        r"""Sets the log_group_name_list of this GetAccessConfigListRequestBody.
 
         日志组名称列表
 
@@ -137,7 +137,7 @@ class GetAccessConfigListRequestBody:
 
     @property
     def log_stream_name_list(self):
-        """Gets the log_stream_name_list of this GetAccessConfigListRequestBody.
+        r"""Gets the log_stream_name_list of this GetAccessConfigListRequestBody.
 
         日志流名称列表
 
@@ -148,7 +148,7 @@ class GetAccessConfigListRequestBody:
 
     @log_stream_name_list.setter
     def log_stream_name_list(self, log_stream_name_list):
-        """Sets the log_stream_name_list of this GetAccessConfigListRequestBody.
+        r"""Sets the log_stream_name_list of this GetAccessConfigListRequestBody.
 
         日志流名称列表
 
@@ -159,7 +159,7 @@ class GetAccessConfigListRequestBody:
 
     @property
     def access_config_tag_list(self):
-        """Gets the access_config_tag_list of this GetAccessConfigListRequestBody.
+        r"""Gets the access_config_tag_list of this GetAccessConfigListRequestBody.
 
         接入配置标签，KEY不能重复,最多20个标签
 
@@ -170,7 +170,7 @@ class GetAccessConfigListRequestBody:
 
     @access_config_tag_list.setter
     def access_config_tag_list(self, access_config_tag_list):
-        """Sets the access_config_tag_list of this GetAccessConfigListRequestBody.
+        r"""Sets the access_config_tag_list of this GetAccessConfigListRequestBody.
 
         接入配置标签，KEY不能重复,最多20个标签
 

@@ -24,7 +24,7 @@ class CheckDisasterRecoveryOperationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckDisasterRecoveryOperationResponse
+        r"""CheckDisasterRecoveryOperationResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class ShowCustomerPrivilegePolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_switch=None):
-        """ShowCustomerPrivilegePolicyResponse
+        r"""ShowCustomerPrivilegePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCustomerPrivilegePolicyResponse(SdkResponse):
 
     @property
     def policy_switch(self):
-        """Gets the policy_switch of this ShowCustomerPrivilegePolicyResponse.
+        r"""Gets the policy_switch of this ShowCustomerPrivilegePolicyResponse.
 
         开关状态
 
@@ -55,7 +55,7 @@ class ShowCustomerPrivilegePolicyResponse(SdkResponse):
 
     @policy_switch.setter
     def policy_switch(self, policy_switch):
-        """Sets the policy_switch of this ShowCustomerPrivilegePolicyResponse.
+        r"""Sets the policy_switch of this ShowCustomerPrivilegePolicyResponse.
 
         开关状态
 

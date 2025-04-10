@@ -26,7 +26,7 @@ class DescribeBackupEncryptStatusResponse(SdkResponse):
     }
 
     def __init__(self, encryption_status=None):
-        """DescribeBackupEncryptStatusResponse
+        r"""DescribeBackupEncryptStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DescribeBackupEncryptStatusResponse(SdkResponse):
 
     @property
     def encryption_status(self):
-        """Gets the encryption_status of this DescribeBackupEncryptStatusResponse.
+        r"""Gets the encryption_status of this DescribeBackupEncryptStatusResponse.
 
         备份加密状态。
 
@@ -55,7 +55,7 @@ class DescribeBackupEncryptStatusResponse(SdkResponse):
 
     @encryption_status.setter
     def encryption_status(self, encryption_status):
-        """Sets the encryption_status of this DescribeBackupEncryptStatusResponse.
+        r"""Sets the encryption_status of this DescribeBackupEncryptStatusResponse.
 
         备份加密状态。
 

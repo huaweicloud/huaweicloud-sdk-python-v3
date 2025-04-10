@@ -34,7 +34,7 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, job_status=None, job_result=None, show_type=None):
-        """ShowJobDetailResponse
+        r"""ShowJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowJobDetailResponse.
+        r"""Gets the id of this ShowJobDetailResponse.
 
         任务的id。
 
@@ -83,7 +83,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowJobDetailResponse.
+        r"""Sets the id of this ShowJobDetailResponse.
 
         任务的id。
 
@@ -94,7 +94,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowJobDetailResponse.
+        r"""Gets the name of this ShowJobDetailResponse.
 
         任务的名称。
 
@@ -105,7 +105,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowJobDetailResponse.
+        r"""Sets the name of this ShowJobDetailResponse.
 
         任务的名称。
 
@@ -116,7 +116,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def job_status(self):
-        """Gets the job_status of this ShowJobDetailResponse.
+        r"""Gets the job_status of this ShowJobDetailResponse.
 
         任务的状态。
 
@@ -127,7 +127,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ShowJobDetailResponse.
+        r"""Sets the job_status of this ShowJobDetailResponse.
 
         任务的状态。
 
@@ -138,7 +138,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def job_result(self):
-        """Gets the job_result of this ShowJobDetailResponse.
+        r"""Gets the job_result of this ShowJobDetailResponse.
 
         任务结果信息。
 
@@ -149,7 +149,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this ShowJobDetailResponse.
+        r"""Sets the job_result of this ShowJobDetailResponse.
 
         任务结果信息。
 
@@ -160,7 +160,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def show_type(self):
-        """Gets the show_type of this ShowJobDetailResponse.
+        r"""Gets the show_type of this ShowJobDetailResponse.
 
         任务显示类型，页面显示使用字段
 
@@ -171,7 +171,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @show_type.setter
     def show_type(self, show_type):
-        """Sets the show_type of this ShowJobDetailResponse.
+        r"""Sets the show_type of this ShowJobDetailResponse.
 
         任务显示类型，页面显示使用字段
 

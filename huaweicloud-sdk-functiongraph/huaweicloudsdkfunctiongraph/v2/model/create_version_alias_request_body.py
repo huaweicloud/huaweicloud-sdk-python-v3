@@ -33,7 +33,7 @@ class CreateVersionAliasRequestBody:
     }
 
     def __init__(self, name=None, version=None, description=None, additional_version_weights=None, additional_version_strategy=None):
-        """CreateVersionAliasRequestBody
+        r"""CreateVersionAliasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateVersionAliasRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateVersionAliasRequestBody.
+        r"""Gets the name of this CreateVersionAliasRequestBody.
 
         别名名称。
 
@@ -80,7 +80,7 @@ class CreateVersionAliasRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVersionAliasRequestBody.
+        r"""Sets the name of this CreateVersionAliasRequestBody.
 
         别名名称。
 
@@ -91,7 +91,7 @@ class CreateVersionAliasRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this CreateVersionAliasRequestBody.
+        r"""Gets the version of this CreateVersionAliasRequestBody.
 
         别名对应的版本名称。
 
@@ -102,7 +102,7 @@ class CreateVersionAliasRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateVersionAliasRequestBody.
+        r"""Sets the version of this CreateVersionAliasRequestBody.
 
         别名对应的版本名称。
 
@@ -113,7 +113,7 @@ class CreateVersionAliasRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateVersionAliasRequestBody.
+        r"""Gets the description of this CreateVersionAliasRequestBody.
 
         别名描述信息。
 
@@ -124,7 +124,7 @@ class CreateVersionAliasRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVersionAliasRequestBody.
+        r"""Sets the description of this CreateVersionAliasRequestBody.
 
         别名描述信息。
 
@@ -135,7 +135,7 @@ class CreateVersionAliasRequestBody:
 
     @property
     def additional_version_weights(self):
-        """Gets the additional_version_weights of this CreateVersionAliasRequestBody.
+        r"""Gets the additional_version_weights of this CreateVersionAliasRequestBody.
 
         百分比灰度配置信息
 
@@ -146,7 +146,7 @@ class CreateVersionAliasRequestBody:
 
     @additional_version_weights.setter
     def additional_version_weights(self, additional_version_weights):
-        """Sets the additional_version_weights of this CreateVersionAliasRequestBody.
+        r"""Sets the additional_version_weights of this CreateVersionAliasRequestBody.
 
         百分比灰度配置信息
 
@@ -157,7 +157,7 @@ class CreateVersionAliasRequestBody:
 
     @property
     def additional_version_strategy(self):
-        """Gets the additional_version_strategy of this CreateVersionAliasRequestBody.
+        r"""Gets the additional_version_strategy of this CreateVersionAliasRequestBody.
 
         指定规则灰度策略信息
 
@@ -168,7 +168,7 @@ class CreateVersionAliasRequestBody:
 
     @additional_version_strategy.setter
     def additional_version_strategy(self, additional_version_strategy):
-        """Sets the additional_version_strategy of this CreateVersionAliasRequestBody.
+        r"""Sets the additional_version_strategy of this CreateVersionAliasRequestBody.
 
         指定规则灰度策略信息
 

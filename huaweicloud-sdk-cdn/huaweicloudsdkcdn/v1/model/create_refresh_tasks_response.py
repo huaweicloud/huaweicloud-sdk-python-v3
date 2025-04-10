@@ -28,7 +28,7 @@ class CreateRefreshTasksResponse(SdkResponse):
     }
 
     def __init__(self, refresh_task=None, x_request_id=None):
-        """CreateRefreshTasksResponse
+        r"""CreateRefreshTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateRefreshTasksResponse(SdkResponse):
 
     @property
     def refresh_task(self):
-        """Gets the refresh_task of this CreateRefreshTasksResponse.
+        r"""Gets the refresh_task of this CreateRefreshTasksResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class CreateRefreshTasksResponse(SdkResponse):
 
     @refresh_task.setter
     def refresh_task(self, refresh_task):
-        """Sets the refresh_task of this CreateRefreshTasksResponse.
+        r"""Sets the refresh_task of this CreateRefreshTasksResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class CreateRefreshTasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateRefreshTasksResponse.
+        r"""Gets the x_request_id of this CreateRefreshTasksResponse.
 
         :return: The x_request_id of this CreateRefreshTasksResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateRefreshTasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateRefreshTasksResponse.
+        r"""Sets the x_request_id of this CreateRefreshTasksResponse.
 
         :param x_request_id: The x_request_id of this CreateRefreshTasksResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class NeutronUpdateNetworkRequest:
     }
 
     def __init__(self, network_id=None, body=None):
-        """NeutronUpdateNetworkRequest
+        r"""NeutronUpdateNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NeutronUpdateNetworkRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronUpdateNetworkRequest.
+        r"""Gets the network_id of this NeutronUpdateNetworkRequest.
 
         网络ID
 
@@ -60,7 +60,7 @@ class NeutronUpdateNetworkRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronUpdateNetworkRequest.
+        r"""Sets the network_id of this NeutronUpdateNetworkRequest.
 
         网络ID
 
@@ -71,7 +71,7 @@ class NeutronUpdateNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronUpdateNetworkRequest.
+        r"""Gets the body of this NeutronUpdateNetworkRequest.
 
         :return: The body of this NeutronUpdateNetworkRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateNetworkRequestBody`
@@ -80,7 +80,7 @@ class NeutronUpdateNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronUpdateNetworkRequest.
+        r"""Sets the body of this NeutronUpdateNetworkRequest.
 
         :param body: The body of this NeutronUpdateNetworkRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateNetworkRequestBody`

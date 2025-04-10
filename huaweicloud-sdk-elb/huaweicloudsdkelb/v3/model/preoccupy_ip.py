@@ -25,7 +25,7 @@ class PreoccupyIp:
     }
 
     def __init__(self, total=None):
-        """PreoccupyIp
+        r"""PreoccupyIp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PreoccupyIp:
 
     @property
     def total(self):
-        """Gets the total of this PreoccupyIp.
+        r"""Gets the total of this PreoccupyIp.
 
         预占IP总数
 
@@ -53,7 +53,7 @@ class PreoccupyIp:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PreoccupyIp.
+        r"""Sets the total of this PreoccupyIp.
 
         预占IP总数
 

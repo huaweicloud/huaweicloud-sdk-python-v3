@@ -33,7 +33,7 @@ class ModifyTuningParamsReq:
     }
 
     def __init__(self, full_sync=None, incre_capture=None, incre_apply=None, incre_relay=None, recovery=None):
-        """ModifyTuningParamsReq
+        r"""ModifyTuningParamsReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ModifyTuningParamsReq:
 
     @property
     def full_sync(self):
-        """Gets the full_sync of this ModifyTuningParamsReq.
+        r"""Gets the full_sync of this ModifyTuningParamsReq.
 
         全量参数的参数名及对应的取值
 
@@ -82,7 +82,7 @@ class ModifyTuningParamsReq:
 
     @full_sync.setter
     def full_sync(self, full_sync):
-        """Sets the full_sync of this ModifyTuningParamsReq.
+        r"""Sets the full_sync of this ModifyTuningParamsReq.
 
         全量参数的参数名及对应的取值
 
@@ -93,7 +93,7 @@ class ModifyTuningParamsReq:
 
     @property
     def incre_capture(self):
-        """Gets the incre_capture of this ModifyTuningParamsReq.
+        r"""Gets the incre_capture of this ModifyTuningParamsReq.
 
         增量抓取参数的参数名及对应的取值
 
@@ -104,7 +104,7 @@ class ModifyTuningParamsReq:
 
     @incre_capture.setter
     def incre_capture(self, incre_capture):
-        """Sets the incre_capture of this ModifyTuningParamsReq.
+        r"""Sets the incre_capture of this ModifyTuningParamsReq.
 
         增量抓取参数的参数名及对应的取值
 
@@ -115,7 +115,7 @@ class ModifyTuningParamsReq:
 
     @property
     def incre_apply(self):
-        """Gets the incre_apply of this ModifyTuningParamsReq.
+        r"""Gets the incre_apply of this ModifyTuningParamsReq.
 
         增量回放参数的参数名及对应的取值
 
@@ -126,7 +126,7 @@ class ModifyTuningParamsReq:
 
     @incre_apply.setter
     def incre_apply(self, incre_apply):
-        """Sets the incre_apply of this ModifyTuningParamsReq.
+        r"""Sets the incre_apply of this ModifyTuningParamsReq.
 
         增量回放参数的参数名及对应的取值
 
@@ -137,7 +137,7 @@ class ModifyTuningParamsReq:
 
     @property
     def incre_relay(self):
-        """Gets the incre_relay of this ModifyTuningParamsReq.
+        r"""Gets the incre_relay of this ModifyTuningParamsReq.
 
         增量日志拉取参数的参数名及对应的取值 -slotAdvanceInterval： 源库逻辑复制槽推进间隔
 
@@ -148,7 +148,7 @@ class ModifyTuningParamsReq:
 
     @incre_relay.setter
     def incre_relay(self, incre_relay):
-        """Sets the incre_relay of this ModifyTuningParamsReq.
+        r"""Sets the incre_relay of this ModifyTuningParamsReq.
 
         增量日志拉取参数的参数名及对应的取值 -slotAdvanceInterval： 源库逻辑复制槽推进间隔
 
@@ -159,7 +159,7 @@ class ModifyTuningParamsReq:
 
     @property
     def recovery(self):
-        """Gets the recovery of this ModifyTuningParamsReq.
+        r"""Gets the recovery of this ModifyTuningParamsReq.
 
         初始化参数，首次调用时需要传true，其他时候不传。
 
@@ -170,7 +170,7 @@ class ModifyTuningParamsReq:
 
     @recovery.setter
     def recovery(self, recovery):
-        """Sets the recovery of this ModifyTuningParamsReq.
+        r"""Sets the recovery of this ModifyTuningParamsReq.
 
         初始化参数，首次调用时需要传true，其他时候不传。
 

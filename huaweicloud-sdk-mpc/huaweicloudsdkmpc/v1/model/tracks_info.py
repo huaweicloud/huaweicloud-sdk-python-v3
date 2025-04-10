@@ -27,7 +27,7 @@ class TracksInfo:
     }
 
     def __init__(self, channel_layout=None, language=None):
-        """TracksInfo
+        r"""TracksInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TracksInfo:
 
     @property
     def channel_layout(self):
-        """Gets the channel_layout of this TracksInfo.
+        r"""Gets the channel_layout of this TracksInfo.
 
         音频轨的声道layout 
 
@@ -61,7 +61,7 @@ class TracksInfo:
 
     @channel_layout.setter
     def channel_layout(self, channel_layout):
-        """Sets the channel_layout of this TracksInfo.
+        r"""Sets the channel_layout of this TracksInfo.
 
         音频轨的声道layout 
 
@@ -72,7 +72,7 @@ class TracksInfo:
 
     @property
     def language(self):
-        """Gets the language of this TracksInfo.
+        r"""Gets the language of this TracksInfo.
 
         音频轨对应语言描述 
 
@@ -83,7 +83,7 @@ class TracksInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this TracksInfo.
+        r"""Sets the language of this TracksInfo.
 
         音频轨对应语言描述 
 

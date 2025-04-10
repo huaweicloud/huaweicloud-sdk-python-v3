@@ -41,7 +41,7 @@ class ConfigurationResult:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, ha_mode=None, created=None, updated=None, user_defined=None):
-        """ConfigurationResult
+        r"""ConfigurationResult
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ConfigurationResult:
 
     @property
     def id(self):
-        """Gets the id of this ConfigurationResult.
+        r"""Gets the id of this ConfigurationResult.
 
         参数组ID。
 
@@ -102,7 +102,7 @@ class ConfigurationResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigurationResult.
+        r"""Sets the id of this ConfigurationResult.
 
         参数组ID。
 
@@ -113,7 +113,7 @@ class ConfigurationResult:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationResult.
+        r"""Gets the name of this ConfigurationResult.
 
         参数组名称。
 
@@ -124,7 +124,7 @@ class ConfigurationResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationResult.
+        r"""Sets the name of this ConfigurationResult.
 
         参数组名称。
 
@@ -135,7 +135,7 @@ class ConfigurationResult:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationResult.
+        r"""Gets the description of this ConfigurationResult.
 
         参数组描述。
 
@@ -146,7 +146,7 @@ class ConfigurationResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationResult.
+        r"""Sets the description of this ConfigurationResult.
 
         参数组描述。
 
@@ -157,7 +157,7 @@ class ConfigurationResult:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ConfigurationResult.
+        r"""Gets the datastore_version of this ConfigurationResult.
 
         引擎版本。
 
@@ -168,7 +168,7 @@ class ConfigurationResult:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ConfigurationResult.
+        r"""Sets the datastore_version of this ConfigurationResult.
 
         引擎版本。
 
@@ -179,7 +179,7 @@ class ConfigurationResult:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ConfigurationResult.
+        r"""Gets the datastore_name of this ConfigurationResult.
 
         引擎名称。
 
@@ -190,7 +190,7 @@ class ConfigurationResult:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ConfigurationResult.
+        r"""Sets the datastore_name of this ConfigurationResult.
 
         引擎名称。
 
@@ -201,7 +201,7 @@ class ConfigurationResult:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this ConfigurationResult.
+        r"""Gets the ha_mode of this ConfigurationResult.
 
         实例类型。
 
@@ -212,7 +212,7 @@ class ConfigurationResult:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this ConfigurationResult.
+        r"""Sets the ha_mode of this ConfigurationResult.
 
         实例类型。
 
@@ -223,7 +223,7 @@ class ConfigurationResult:
 
     @property
     def created(self):
-        """Gets the created of this ConfigurationResult.
+        r"""Gets the created of this ConfigurationResult.
 
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -234,7 +234,7 @@ class ConfigurationResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ConfigurationResult.
+        r"""Sets the created of this ConfigurationResult.
 
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -245,7 +245,7 @@ class ConfigurationResult:
 
     @property
     def updated(self):
-        """Gets the updated of this ConfigurationResult.
+        r"""Gets the updated of this ConfigurationResult.
 
         更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -256,7 +256,7 @@ class ConfigurationResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ConfigurationResult.
+        r"""Sets the updated of this ConfigurationResult.
 
         更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -267,7 +267,7 @@ class ConfigurationResult:
 
     @property
     def user_defined(self):
-        """Gets the user_defined of this ConfigurationResult.
+        r"""Gets the user_defined of this ConfigurationResult.
 
         是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 
@@ -278,7 +278,7 @@ class ConfigurationResult:
 
     @user_defined.setter
     def user_defined(self, user_defined):
-        """Sets the user_defined of this ConfigurationResult.
+        r"""Sets the user_defined of this ConfigurationResult.
 
         是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 

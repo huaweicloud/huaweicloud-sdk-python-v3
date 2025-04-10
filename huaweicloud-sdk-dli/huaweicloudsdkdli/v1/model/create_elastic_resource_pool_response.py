@@ -30,7 +30,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, elastic_resource_pool_name=None):
-        """CreateElasticResourcePoolResponse
+        r"""CreateElasticResourcePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateElasticResourcePoolResponse.
+        r"""Gets the is_success of this CreateElasticResourcePoolResponse.
 
         是否成功
 
@@ -69,7 +69,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateElasticResourcePoolResponse.
+        r"""Sets the is_success of this CreateElasticResourcePoolResponse.
 
         是否成功
 
@@ -80,7 +80,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateElasticResourcePoolResponse.
+        r"""Gets the message of this CreateElasticResourcePoolResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateElasticResourcePoolResponse.
+        r"""Sets the message of this CreateElasticResourcePoolResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this CreateElasticResourcePoolResponse.
+        r"""Gets the elastic_resource_pool_name of this CreateElasticResourcePoolResponse.
 
         创建成功的弹性资源池名称
 
@@ -113,7 +113,7 @@ class CreateElasticResourcePoolResponse(SdkResponse):
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this CreateElasticResourcePoolResponse.
+        r"""Sets the elastic_resource_pool_name of this CreateElasticResourcePoolResponse.
 
         创建成功的弹性资源池名称
 

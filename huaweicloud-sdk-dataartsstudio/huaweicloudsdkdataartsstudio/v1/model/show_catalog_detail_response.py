@@ -44,7 +44,7 @@ class ShowCatalogDetailResponse(SdkResponse):
     }
 
     def __init__(self, catalog_id=None, name=None, path=None, catalog_total=None, api_total=None, description=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """ShowCatalogDetailResponse
+        r"""ShowCatalogDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this ShowCatalogDetailResponse.
+        r"""Gets the catalog_id of this ShowCatalogDetailResponse.
 
         目录编号
 
@@ -118,7 +118,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this ShowCatalogDetailResponse.
+        r"""Sets the catalog_id of this ShowCatalogDetailResponse.
 
         目录编号
 
@@ -129,7 +129,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowCatalogDetailResponse.
+        r"""Gets the name of this ShowCatalogDetailResponse.
 
         名称
 
@@ -140,7 +140,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCatalogDetailResponse.
+        r"""Sets the name of this ShowCatalogDetailResponse.
 
         名称
 
@@ -151,7 +151,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowCatalogDetailResponse.
+        r"""Gets the path of this ShowCatalogDetailResponse.
 
         路径
 
@@ -162,7 +162,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowCatalogDetailResponse.
+        r"""Sets the path of this ShowCatalogDetailResponse.
 
         路径
 
@@ -173,7 +173,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def catalog_total(self):
-        """Gets the catalog_total of this ShowCatalogDetailResponse.
+        r"""Gets the catalog_total of this ShowCatalogDetailResponse.
 
         子目录数
 
@@ -184,7 +184,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @catalog_total.setter
     def catalog_total(self, catalog_total):
-        """Sets the catalog_total of this ShowCatalogDetailResponse.
+        r"""Sets the catalog_total of this ShowCatalogDetailResponse.
 
         子目录数
 
@@ -195,7 +195,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def api_total(self):
-        """Gets the api_total of this ShowCatalogDetailResponse.
+        r"""Gets the api_total of this ShowCatalogDetailResponse.
 
         子API数
 
@@ -206,7 +206,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @api_total.setter
     def api_total(self, api_total):
-        """Sets the api_total of this ShowCatalogDetailResponse.
+        r"""Sets the api_total of this ShowCatalogDetailResponse.
 
         子API数
 
@@ -217,7 +217,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowCatalogDetailResponse.
+        r"""Gets the description of this ShowCatalogDetailResponse.
 
         描述
 
@@ -228,7 +228,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCatalogDetailResponse.
+        r"""Sets the description of this ShowCatalogDetailResponse.
 
         描述
 
@@ -239,7 +239,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCatalogDetailResponse.
+        r"""Gets the create_time of this ShowCatalogDetailResponse.
 
         创建时间
 
@@ -250,7 +250,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCatalogDetailResponse.
+        r"""Sets the create_time of this ShowCatalogDetailResponse.
 
         创建时间
 
@@ -261,7 +261,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowCatalogDetailResponse.
+        r"""Gets the create_user of this ShowCatalogDetailResponse.
 
         创建者
 
@@ -272,7 +272,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowCatalogDetailResponse.
+        r"""Sets the create_user of this ShowCatalogDetailResponse.
 
         创建者
 
@@ -283,7 +283,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowCatalogDetailResponse.
+        r"""Gets the update_time of this ShowCatalogDetailResponse.
 
         更新时间
 
@@ -294,7 +294,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowCatalogDetailResponse.
+        r"""Sets the update_time of this ShowCatalogDetailResponse.
 
         更新时间
 
@@ -305,7 +305,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this ShowCatalogDetailResponse.
+        r"""Gets the update_user of this ShowCatalogDetailResponse.
 
         更新者
 
@@ -316,7 +316,7 @@ class ShowCatalogDetailResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ShowCatalogDetailResponse.
+        r"""Sets the update_user of this ShowCatalogDetailResponse.
 
         更新者
 

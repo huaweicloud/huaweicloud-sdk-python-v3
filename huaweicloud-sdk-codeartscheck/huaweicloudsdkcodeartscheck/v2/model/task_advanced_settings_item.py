@@ -27,7 +27,7 @@ class TaskAdvancedSettingsItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TaskAdvancedSettingsItem
+        r"""TaskAdvancedSettingsItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TaskAdvancedSettingsItem:
 
     @property
     def key(self):
-        """Gets the key of this TaskAdvancedSettingsItem.
+        r"""Gets the key of this TaskAdvancedSettingsItem.
 
         高级选项对应的名称
 
@@ -59,7 +59,7 @@ class TaskAdvancedSettingsItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TaskAdvancedSettingsItem.
+        r"""Sets the key of this TaskAdvancedSettingsItem.
 
         高级选项对应的名称
 
@@ -70,7 +70,7 @@ class TaskAdvancedSettingsItem:
 
     @property
     def value(self):
-        """Gets the value of this TaskAdvancedSettingsItem.
+        r"""Gets the value of this TaskAdvancedSettingsItem.
 
         高级选项对应的取值
 
@@ -81,7 +81,7 @@ class TaskAdvancedSettingsItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TaskAdvancedSettingsItem.
+        r"""Sets the value of this TaskAdvancedSettingsItem.
 
         高级选项对应的取值
 

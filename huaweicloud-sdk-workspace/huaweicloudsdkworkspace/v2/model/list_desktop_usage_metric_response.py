@@ -28,7 +28,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListDesktopUsageMetricResponse
+        r"""ListDesktopUsageMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDesktopUsageMetricResponse.
+        r"""Gets the count of this ListDesktopUsageMetricResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDesktopUsageMetricResponse.
+        r"""Sets the count of this ListDesktopUsageMetricResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListDesktopUsageMetricResponse.
+        r"""Gets the items of this ListDesktopUsageMetricResponse.
 
         桌面统计指标
 
@@ -84,7 +84,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListDesktopUsageMetricResponse.
+        r"""Sets the items of this ListDesktopUsageMetricResponse.
 
         桌面统计指标
 

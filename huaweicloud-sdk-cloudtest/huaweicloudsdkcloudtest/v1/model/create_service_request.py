@@ -25,7 +25,7 @@ class CreateServiceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateServiceRequest
+        r"""CreateServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateServiceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateServiceRequest.
+        r"""Gets the body of this CreateServiceRequest.
 
         :return: The body of this CreateServiceRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ServiceRequestBody`
@@ -52,7 +52,7 @@ class CreateServiceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateServiceRequest.
+        r"""Sets the body of this CreateServiceRequest.
 
         :param body: The body of this CreateServiceRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ServiceRequestBody`

@@ -27,7 +27,7 @@ class ListGlobalVariablesRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListGlobalVariablesRequest
+        r"""ListGlobalVariablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListGlobalVariablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalVariablesRequest.
+        r"""Gets the limit of this ListGlobalVariablesRequest.
 
         每页显示的返回信息的个数，默认值为“100”。
 
@@ -61,7 +61,7 @@ class ListGlobalVariablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalVariablesRequest.
+        r"""Sets the limit of this ListGlobalVariablesRequest.
 
         每页显示的返回信息的个数，默认值为“100”。
 
@@ -72,7 +72,7 @@ class ListGlobalVariablesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGlobalVariablesRequest.
+        r"""Gets the offset of this ListGlobalVariablesRequest.
 
         偏移量，默认值为“0”。
 
@@ -83,7 +83,7 @@ class ListGlobalVariablesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGlobalVariablesRequest.
+        r"""Sets the offset of this ListGlobalVariablesRequest.
 
         偏移量，默认值为“0”。
 

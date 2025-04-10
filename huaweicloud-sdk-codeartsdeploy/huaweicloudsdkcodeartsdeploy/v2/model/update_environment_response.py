@@ -28,7 +28,7 @@ class UpdateEnvironmentResponse(SdkResponse):
     }
 
     def __init__(self, status=None, id=None):
-        """UpdateEnvironmentResponse
+        r"""UpdateEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateEnvironmentResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateEnvironmentResponse.
+        r"""Gets the status of this UpdateEnvironmentResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class UpdateEnvironmentResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateEnvironmentResponse.
+        r"""Sets the status of this UpdateEnvironmentResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class UpdateEnvironmentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEnvironmentResponse.
+        r"""Gets the id of this UpdateEnvironmentResponse.
 
         环境id
 
@@ -84,7 +84,7 @@ class UpdateEnvironmentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEnvironmentResponse.
+        r"""Sets the id of this UpdateEnvironmentResponse.
 
         环境id
 

@@ -27,7 +27,7 @@ class GaussDBforOpenGaussDatabaseForListSchema:
     }
 
     def __init__(self, schema_name=None, owner=None):
-        """GaussDBforOpenGaussDatabaseForListSchema
+        r"""GaussDBforOpenGaussDatabaseForListSchema
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GaussDBforOpenGaussDatabaseForListSchema:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this GaussDBforOpenGaussDatabaseForListSchema.
+        r"""Gets the schema_name of this GaussDBforOpenGaussDatabaseForListSchema.
 
         schema名称。
 
@@ -59,7 +59,7 @@ class GaussDBforOpenGaussDatabaseForListSchema:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this GaussDBforOpenGaussDatabaseForListSchema.
+        r"""Sets the schema_name of this GaussDBforOpenGaussDatabaseForListSchema.
 
         schema名称。
 
@@ -70,7 +70,7 @@ class GaussDBforOpenGaussDatabaseForListSchema:
 
     @property
     def owner(self):
-        """Gets the owner of this GaussDBforOpenGaussDatabaseForListSchema.
+        r"""Gets the owner of this GaussDBforOpenGaussDatabaseForListSchema.
 
         schema所属用户。
 
@@ -81,7 +81,7 @@ class GaussDBforOpenGaussDatabaseForListSchema:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GaussDBforOpenGaussDatabaseForListSchema.
+        r"""Sets the owner of this GaussDBforOpenGaussDatabaseForListSchema.
 
         schema所属用户。
 

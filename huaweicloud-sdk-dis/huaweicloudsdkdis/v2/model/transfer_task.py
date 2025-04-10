@@ -33,7 +33,7 @@ class TransferTask:
     }
 
     def __init__(self, task_name=None, state=None, destination_type=None, create_time=None, last_transfer_timestamp=None):
-        """TransferTask
+        r"""TransferTask
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TransferTask:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TransferTask.
+        r"""Gets the task_name of this TransferTask.
 
         转储任务名称。
 
@@ -82,7 +82,7 @@ class TransferTask:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TransferTask.
+        r"""Sets the task_name of this TransferTask.
 
         转储任务名称。
 
@@ -93,7 +93,7 @@ class TransferTask:
 
     @property
     def state(self):
-        """Gets the state of this TransferTask.
+        r"""Gets the state of this TransferTask.
 
         转储任务状态。  - ERROR：错误。 - STARTING：启动中。 - PAUSED：已停止。 - RUNNING：运行中。 - DELETE：已删除。 - ABNORMAL：异常。
 
@@ -104,7 +104,7 @@ class TransferTask:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TransferTask.
+        r"""Sets the state of this TransferTask.
 
         转储任务状态。  - ERROR：错误。 - STARTING：启动中。 - PAUSED：已停止。 - RUNNING：运行中。 - DELETE：已删除。 - ABNORMAL：异常。
 
@@ -115,7 +115,7 @@ class TransferTask:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this TransferTask.
+        r"""Gets the destination_type of this TransferTask.
 
         转储任务类型。  - OBS：转储到OBS。 - MRS：转储到MRS。 - DLI：转储到DLI。 - CLOUDTABLE：转储到CloudTable。 - DWS：转储到DWS。
 
@@ -126,7 +126,7 @@ class TransferTask:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this TransferTask.
+        r"""Sets the destination_type of this TransferTask.
 
         转储任务类型。  - OBS：转储到OBS。 - MRS：转储到MRS。 - DLI：转储到DLI。 - CLOUDTABLE：转储到CloudTable。 - DWS：转储到DWS。
 
@@ -137,7 +137,7 @@ class TransferTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TransferTask.
+        r"""Gets the create_time of this TransferTask.
 
         转储任务创建时间。
 
@@ -148,7 +148,7 @@ class TransferTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TransferTask.
+        r"""Sets the create_time of this TransferTask.
 
         转储任务创建时间。
 
@@ -159,7 +159,7 @@ class TransferTask:
 
     @property
     def last_transfer_timestamp(self):
-        """Gets the last_transfer_timestamp of this TransferTask.
+        r"""Gets the last_transfer_timestamp of this TransferTask.
 
         转储任务最近一次转储时间。
 
@@ -170,7 +170,7 @@ class TransferTask:
 
     @last_transfer_timestamp.setter
     def last_transfer_timestamp(self, last_transfer_timestamp):
-        """Sets the last_transfer_timestamp of this TransferTask.
+        r"""Sets the last_transfer_timestamp of this TransferTask.
 
         转储任务最近一次转储时间。
 

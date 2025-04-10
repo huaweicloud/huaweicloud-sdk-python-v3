@@ -27,7 +27,7 @@ class UpdateAddressSetResponseData:
     }
 
     def __init__(self, id=None, name=None):
-        """UpdateAddressSetResponseData
+        r"""UpdateAddressSetResponseData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAddressSetResponseData:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAddressSetResponseData.
+        r"""Gets the id of this UpdateAddressSetResponseData.
 
         地址组id
 
@@ -61,7 +61,7 @@ class UpdateAddressSetResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAddressSetResponseData.
+        r"""Sets the id of this UpdateAddressSetResponseData.
 
         地址组id
 
@@ -72,7 +72,7 @@ class UpdateAddressSetResponseData:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAddressSetResponseData.
+        r"""Gets the name of this UpdateAddressSetResponseData.
 
         地址组名称
 
@@ -83,7 +83,7 @@ class UpdateAddressSetResponseData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAddressSetResponseData.
+        r"""Sets the name of this UpdateAddressSetResponseData.
 
         地址组名称
 

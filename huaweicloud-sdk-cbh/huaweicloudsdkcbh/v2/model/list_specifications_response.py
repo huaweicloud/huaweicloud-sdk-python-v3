@@ -26,7 +26,7 @@ class ListSpecificationsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListSpecificationsResponse
+        r"""ListSpecificationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSpecificationsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListSpecificationsResponse.
+        r"""Gets the body of this ListSpecificationsResponse.
 
         :return: The body of this ListSpecificationsResponse.
         :rtype: list[:class:`huaweicloudsdkcbh.v2.CbsGetSpecInfo`]
@@ -53,7 +53,7 @@ class ListSpecificationsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSpecificationsResponse.
+        r"""Sets the body of this ListSpecificationsResponse.
 
         :param body: The body of this ListSpecificationsResponse.
         :type body: list[:class:`huaweicloudsdkcbh.v2.CbsGetSpecInfo`]

@@ -25,7 +25,7 @@ class ShowDatabaseOmUserStatusRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowDatabaseOmUserStatusRequest
+        r"""ShowDatabaseOmUserStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDatabaseOmUserStatusRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowDatabaseOmUserStatusRequest.
+        r"""Gets the cluster_id of this ShowDatabaseOmUserStatusRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class ShowDatabaseOmUserStatusRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowDatabaseOmUserStatusRequest.
+        r"""Sets the cluster_id of this ShowDatabaseOmUserStatusRequest.
 
         集群ID
 

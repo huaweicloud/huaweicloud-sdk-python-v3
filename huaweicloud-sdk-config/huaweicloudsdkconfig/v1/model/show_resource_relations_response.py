@@ -28,7 +28,7 @@ class ShowResourceRelationsResponse(SdkResponse):
     }
 
     def __init__(self, relations=None, page_info=None):
-        """ShowResourceRelationsResponse
+        r"""ShowResourceRelationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowResourceRelationsResponse(SdkResponse):
 
     @property
     def relations(self):
-        """Gets the relations of this ShowResourceRelationsResponse.
+        r"""Gets the relations of this ShowResourceRelationsResponse.
 
         资源关系列表
 
@@ -62,7 +62,7 @@ class ShowResourceRelationsResponse(SdkResponse):
 
     @relations.setter
     def relations(self, relations):
-        """Sets the relations of this ShowResourceRelationsResponse.
+        r"""Sets the relations of this ShowResourceRelationsResponse.
 
         资源关系列表
 
@@ -73,7 +73,7 @@ class ShowResourceRelationsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowResourceRelationsResponse.
+        r"""Gets the page_info of this ShowResourceRelationsResponse.
 
         :return: The page_info of this ShowResourceRelationsResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ShowResourceRelationsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowResourceRelationsResponse.
+        r"""Sets the page_info of this ShowResourceRelationsResponse.
 
         :param page_info: The page_info of this ShowResourceRelationsResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

@@ -38,7 +38,7 @@ class CollectTranscriberJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, status=None, create_time=None, start_time=None, finish_time=None, segments=None, audio_duration=None):
-        """CollectTranscriberJobResponse
+        r"""CollectTranscriberJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectTranscriberJobResponse.
+        r"""Gets the job_id of this CollectTranscriberJobResponse.
 
         录音文件识别任务标识符。  使用“callback_url”回调url时，该字段会随结果发送至用户服务器。 使用get接口查询，不会出现该字段
 
@@ -97,7 +97,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectTranscriberJobResponse.
+        r"""Sets the job_id of this CollectTranscriberJobResponse.
 
         录音文件识别任务标识符。  使用“callback_url”回调url时，该字段会随结果发送至用户服务器。 使用get接口查询，不会出现该字段
 
@@ -108,7 +108,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CollectTranscriberJobResponse.
+        r"""Gets the status of this CollectTranscriberJobResponse.
 
         当前识别状态。具体状态如下所示：  WAITING 等待识别。 FINISHED 识别已经完成。 ERROR 识别过程中发生错误。
 
@@ -119,7 +119,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CollectTranscriberJobResponse.
+        r"""Sets the status of this CollectTranscriberJobResponse.
 
         当前识别状态。具体状态如下所示：  WAITING 等待识别。 FINISHED 识别已经完成。 ERROR 识别过程中发生错误。
 
@@ -130,7 +130,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CollectTranscriberJobResponse.
+        r"""Gets the create_time of this CollectTranscriberJobResponse.
 
         任务创建时间, 遵循 RFC 3339格式。 格式示例：2018-12-04T13:10:29.310Z。
 
@@ -141,7 +141,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CollectTranscriberJobResponse.
+        r"""Sets the create_time of this CollectTranscriberJobResponse.
 
         任务创建时间, 遵循 RFC 3339格式。 格式示例：2018-12-04T13:10:29.310Z。
 
@@ -152,7 +152,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this CollectTranscriberJobResponse.
+        r"""Gets the start_time of this CollectTranscriberJobResponse.
 
         开始识别时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。
 
@@ -163,7 +163,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CollectTranscriberJobResponse.
+        r"""Sets the start_time of this CollectTranscriberJobResponse.
 
         开始识别时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。
 
@@ -174,7 +174,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this CollectTranscriberJobResponse.
+        r"""Gets the finish_time of this CollectTranscriberJobResponse.
 
         识别完成时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。 
 
@@ -185,7 +185,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this CollectTranscriberJobResponse.
+        r"""Sets the finish_time of this CollectTranscriberJobResponse.
 
         识别完成时间, 遵循 RFC 3339格式。 当status为FINISHED或ERROR时存在。 格式示例：2018-12-04T13:10:29.310Z。 
 
@@ -196,7 +196,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def segments(self):
-        """Gets the segments of this CollectTranscriberJobResponse.
+        r"""Gets the segments of this CollectTranscriberJobResponse.
 
         转写结果, 多句结果的数组。 
 
@@ -207,7 +207,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @segments.setter
     def segments(self, segments):
-        """Sets the segments of this CollectTranscriberJobResponse.
+        r"""Sets the segments of this CollectTranscriberJobResponse.
 
         转写结果, 多句结果的数组。 
 
@@ -218,7 +218,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @property
     def audio_duration(self):
-        """Gets the audio_duration of this CollectTranscriberJobResponse.
+        r"""Gets the audio_duration of this CollectTranscriberJobResponse.
 
         音频时长，单位ms
 
@@ -229,7 +229,7 @@ class CollectTranscriberJobResponse(SdkResponse):
 
     @audio_duration.setter
     def audio_duration(self, audio_duration):
-        """Sets the audio_duration of this CollectTranscriberJobResponse.
+        r"""Sets the audio_duration of this CollectTranscriberJobResponse.
 
         音频时长，单位ms
 

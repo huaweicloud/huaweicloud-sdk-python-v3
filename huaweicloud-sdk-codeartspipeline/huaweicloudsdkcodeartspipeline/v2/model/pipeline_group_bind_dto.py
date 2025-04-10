@@ -27,7 +27,7 @@ class PipelineGroupBindDTO:
     }
 
     def __init__(self, group_id=None, pipelines=None):
-        """PipelineGroupBindDTO
+        r"""PipelineGroupBindDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PipelineGroupBindDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PipelineGroupBindDTO.
+        r"""Gets the group_id of this PipelineGroupBindDTO.
 
         分组ID
 
@@ -59,7 +59,7 @@ class PipelineGroupBindDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PipelineGroupBindDTO.
+        r"""Sets the group_id of this PipelineGroupBindDTO.
 
         分组ID
 
@@ -70,7 +70,7 @@ class PipelineGroupBindDTO:
 
     @property
     def pipelines(self):
-        """Gets the pipelines of this PipelineGroupBindDTO.
+        r"""Gets the pipelines of this PipelineGroupBindDTO.
 
         流水线集合
 
@@ -81,7 +81,7 @@ class PipelineGroupBindDTO:
 
     @pipelines.setter
     def pipelines(self, pipelines):
-        """Sets the pipelines of this PipelineGroupBindDTO.
+        r"""Sets the pipelines of this PipelineGroupBindDTO.
 
         流水线集合
 

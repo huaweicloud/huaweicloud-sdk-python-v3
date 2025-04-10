@@ -27,7 +27,7 @@ class MonthUsed:
     }
 
     def __init__(self, date=None, value=None):
-        """MonthUsed
+        r"""MonthUsed
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MonthUsed:
 
     @property
     def date(self):
-        """Gets the date of this MonthUsed.
+        r"""Gets the date of this MonthUsed.
 
         日期
 
@@ -61,7 +61,7 @@ class MonthUsed:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this MonthUsed.
+        r"""Sets the date of this MonthUsed.
 
         日期
 
@@ -72,7 +72,7 @@ class MonthUsed:
 
     @property
     def value(self):
-        """Gets the value of this MonthUsed.
+        r"""Gets the value of this MonthUsed.
 
         使用量
 
@@ -83,7 +83,7 @@ class MonthUsed:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MonthUsed.
+        r"""Sets the value of this MonthUsed.
 
         使用量
 

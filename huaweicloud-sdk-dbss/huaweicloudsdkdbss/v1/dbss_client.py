@@ -34,7 +34,7 @@ class DbssClient(Client):
         return client_builder
 
     def add_audit_database(self, request):
-        """添加自建数据库
+        r"""添加自建数据库
 
         添加自建数据库
         
@@ -101,7 +101,7 @@ class DbssClient(Client):
         return http_info
 
     def add_rds_database(self, request):
-        """添加RDS数据库
+        r"""添加RDS数据库
 
         添加RDS数据库
         
@@ -168,7 +168,7 @@ class DbssClient(Client):
         return http_info
 
     def add_rds_no_agent_database(self, request):
-        """添加RDS数据库(V1待下线)
+        r"""添加RDS数据库(V1待下线)
 
         添加RDS数据库。V1版本已不再维护，待下线。
         请使用V2版本接口（/v2/{project_id}/{instance_id}/audit/databases/rds）。
@@ -236,7 +236,7 @@ class DbssClient(Client):
         return http_info
 
     def create_instances_period_order(self, request):
-        """包年包月计费模式创建审计实例
+        r"""包年包月计费模式创建审计实例
 
         包年包月计费模式创建审计实例
         
@@ -301,7 +301,7 @@ class DbssClient(Client):
         return http_info
 
     def delete_audit_database(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除数据库
         
@@ -368,7 +368,7 @@ class DbssClient(Client):
         return http_info
 
     def delete_instances(self, request):
-        """删除审计实例
+        r"""删除审计实例
 
         只有按需计费模式实例没有任务时 或 包周期模式实例状态为故障时，才能执行此操作。
         
@@ -433,7 +433,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_alarm_log(self, request):
-        """查询审计告警信息
+        r"""查询审计告警信息
 
         查询审计告警信息
         
@@ -500,7 +500,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_databases(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询数据库列表
         
@@ -571,7 +571,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_instance_jobs(self, request):
-        """查询实例创建任务信息
+        r"""查询实例创建任务信息
 
         查询实例创建任务信息
         
@@ -636,7 +636,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_instances(self, request):
-        """查询审计实例列表
+        r"""查询审计实例列表
 
         查询审计实例列表
         
@@ -703,7 +703,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_operate_logs(self, request):
-        """查询用户操作日志信息
+        r"""查询用户操作日志信息
 
         查询用户操作日志信息
         
@@ -770,7 +770,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_rule_risks(self, request):
-        """查询风险规则策略
+        r"""查询风险规则策略
 
         查询风险规则策略
         
@@ -839,7 +839,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_rule_scopes(self, request):
-        """查询审计范围策略列表
+        r"""查询审计范围策略列表
 
         查询审计范围策略列表
         
@@ -908,7 +908,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_sensitive_masks(self, request):
-        """查询隐私数据脱敏规则
+        r"""查询隐私数据脱敏规则
 
         查询隐私数据脱敏规则
         
@@ -977,7 +977,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_sqls(self, request):
-        """查询审计SQL语句
+        r"""查询审计SQL语句
 
         查询审计SQL语句
         
@@ -1044,7 +1044,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_summary_infos(self, request):
-        """查询审计汇总信息
+        r"""查询审计汇总信息
 
         查询审计汇总信息
         
@@ -1111,7 +1111,7 @@ class DbssClient(Client):
         return http_info
 
     def list_availability_zone_infos(self, request):
-        """查询可用区信息
+        r"""查询可用区信息
 
         查询可用区信息
         
@@ -1174,7 +1174,7 @@ class DbssClient(Client):
         return http_info
 
     def list_ecs_specification(self, request):
-        """查询ECS服务器规格信息
+        r"""查询ECS服务器规格信息
 
         查询ECS服务器规格信息
         
@@ -1237,7 +1237,7 @@ class DbssClient(Client):
         return http_info
 
     def list_rds_databases(self, request):
-        """查询RDS数据库列表
+        r"""查询RDS数据库列表
 
         查询RDS数据库列表
         
@@ -1306,7 +1306,7 @@ class DbssClient(Client):
         return http_info
 
     def list_sql_injection_rules(self, request):
-        """查询SQL注入规则策略
+        r"""查询SQL注入规则策略
 
         查询SQL注入规则策略
         
@@ -1373,7 +1373,7 @@ class DbssClient(Client):
         return http_info
 
     def reboot_audit_instance(self, request):
-        """重启审计实例
+        r"""重启审计实例
 
         重启审计实例
         
@@ -1438,7 +1438,7 @@ class DbssClient(Client):
         return http_info
 
     def show_audit_quota(self, request):
-        """查询账户配额信息
+        r"""查询账户配额信息
 
         查询账户配额信息
         
@@ -1501,7 +1501,7 @@ class DbssClient(Client):
         return http_info
 
     def show_audit_rule_risk(self, request):
-        """查询指定风险规则策略
+        r"""查询指定风险规则策略
 
         查询指定风险规则策略
         
@@ -1568,7 +1568,7 @@ class DbssClient(Client):
         return http_info
 
     def start_audit_instance(self, request):
-        """开启审计实例
+        r"""开启审计实例
 
         开启审计实例
         
@@ -1633,7 +1633,7 @@ class DbssClient(Client):
         return http_info
 
     def stop_audit_instance(self, request):
-        """关闭审计实例
+        r"""关闭审计实例
 
         关闭审计实例
         
@@ -1698,7 +1698,7 @@ class DbssClient(Client):
         return http_info
 
     def switch_audit_database(self, request):
-        """开启关闭数据库
+        r"""开启关闭数据库
 
         开启关闭数据库
         
@@ -1765,7 +1765,7 @@ class DbssClient(Client):
         return http_info
 
     def switch_risk_rule(self, request):
-        """开启关闭风险规则
+        r"""开启关闭风险规则
 
         开启关闭风险规则
         
@@ -1832,7 +1832,7 @@ class DbssClient(Client):
         return http_info
 
     def update_audit_instance(self, request):
-        """更新审计实例信息
+        r"""更新审计实例信息
 
         更新审计实例信息
         
@@ -1899,7 +1899,7 @@ class DbssClient(Client):
         return http_info
 
     def update_audit_security_group(self, request):
-        """修改实例安全组
+        r"""修改实例安全组
 
         修改实例安全组
         
@@ -1964,7 +1964,7 @@ class DbssClient(Client):
         return http_info
 
     def add_audit_agent(self, request):
-        """添加审计数据库Agent
+        r"""添加审计数据库Agent
 
         添加审计数据库Agent
         
@@ -2031,7 +2031,7 @@ class DbssClient(Client):
         return http_info
 
     def delete_audit_agent(self, request):
-        """删除数据库Agent
+        r"""删除数据库Agent
 
         删除数据库Agent
         
@@ -2100,7 +2100,7 @@ class DbssClient(Client):
         return http_info
 
     def download_audit_agent(self, request):
-        """下载审计Agent
+        r"""下载审计Agent
 
         下载审计Agent
         
@@ -2167,7 +2167,7 @@ class DbssClient(Client):
         return http_info
 
     def list_audit_agent(self, request):
-        """查询数据库Agent列表
+        r"""查询数据库Agent列表
 
         查询数据库Agent列表
         
@@ -2238,7 +2238,7 @@ class DbssClient(Client):
         return http_info
 
     def switch_agent(self, request):
-        """开启关闭Agent
+        r"""开启关闭Agent
 
         用于开启和关闭Agent审计的功能，当开启后，开始抓取用户的访问信息。
         
@@ -2305,7 +2305,7 @@ class DbssClient(Client):
         return http_info
 
     def batch_add_resource_tag(self, request):
-        """批量添加资源标签
+        r"""批量添加资源标签
 
         批量添加资源标签
         
@@ -2374,7 +2374,7 @@ class DbssClient(Client):
         return http_info
 
     def batch_delete_resource_tag(self, request):
-        """批量删除资源标签
+        r"""批量删除资源标签
 
         批量删除资源标签
         
@@ -2443,7 +2443,7 @@ class DbssClient(Client):
         return http_info
 
     def count_resource_instance_by_tag(self, request):
-        """根据标签查询资源实例数量
+        r"""根据标签查询资源实例数量
 
         根据标签查询资源实例数量
         
@@ -2510,7 +2510,7 @@ class DbssClient(Client):
         return http_info
 
     def list_project_resource_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签
         
@@ -2575,7 +2575,7 @@ class DbssClient(Client):
         return http_info
 
     def list_resource_instance_by_tag(self, request):
-        """根据标签查询资源实例列表
+        r"""根据标签查询资源实例列表
 
         根据标签查询资源实例列表
         

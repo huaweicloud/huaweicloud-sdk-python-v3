@@ -29,7 +29,7 @@ class LineViewConfigModel:
     }
 
     def __init__(self, metric_set=None, filter_prefix=None, line_view_item_list=None):
-        """LineViewConfigModel
+        r"""LineViewConfigModel
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LineViewConfigModel:
 
     @property
     def metric_set(self):
-        """Gets the metric_set of this LineViewConfigModel.
+        r"""Gets the metric_set of this LineViewConfigModel.
 
         视图对应的指标集的名称。
 
@@ -68,7 +68,7 @@ class LineViewConfigModel:
 
     @metric_set.setter
     def metric_set(self, metric_set):
-        """Sets the metric_set of this LineViewConfigModel.
+        r"""Sets the metric_set of this LineViewConfigModel.
 
         视图对应的指标集的名称。
 
@@ -79,7 +79,7 @@ class LineViewConfigModel:
 
     @property
     def filter_prefix(self):
-        """Gets the filter_prefix of this LineViewConfigModel.
+        r"""Gets the filter_prefix of this LineViewConfigModel.
 
         过滤参数。
 
@@ -90,7 +90,7 @@ class LineViewConfigModel:
 
     @filter_prefix.setter
     def filter_prefix(self, filter_prefix):
-        """Sets the filter_prefix of this LineViewConfigModel.
+        r"""Sets the filter_prefix of this LineViewConfigModel.
 
         过滤参数。
 
@@ -101,7 +101,7 @@ class LineViewConfigModel:
 
     @property
     def line_view_item_list(self):
-        """Gets the line_view_item_list of this LineViewConfigModel.
+        r"""Gets the line_view_item_list of this LineViewConfigModel.
 
         视图函数集合。
 
@@ -112,7 +112,7 @@ class LineViewConfigModel:
 
     @line_view_item_list.setter
     def line_view_item_list(self, line_view_item_list):
-        """Sets the line_view_item_list of this LineViewConfigModel.
+        r"""Sets the line_view_item_list of this LineViewConfigModel.
 
         视图函数集合。
 

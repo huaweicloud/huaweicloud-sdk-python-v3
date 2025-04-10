@@ -57,7 +57,7 @@ class Job:
     }
 
     def __init__(self, id=None, job_name=None, job_creator=None, user_name=None, last_build_time=None, health_score=None, source_code=None, last_build_status=None, is_finished=None, disabled=None, favorite=None, is_modify=None, is_delete=None, is_execute=None, is_copy=None, is_forbidden=None, is_view=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class Job:
 
     @property
     def id(self):
-        """Gets the id of this Job.
+        r"""Gets the id of this Job.
 
         任务ID
 
@@ -166,7 +166,7 @@ class Job:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Job.
+        r"""Sets the id of this Job.
 
         任务ID
 
@@ -177,7 +177,7 @@ class Job:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Job.
+        r"""Gets the job_name of this Job.
 
         任务名称
 
@@ -188,7 +188,7 @@ class Job:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Job.
+        r"""Sets the job_name of this Job.
 
         任务名称
 
@@ -199,7 +199,7 @@ class Job:
 
     @property
     def job_creator(self):
-        """Gets the job_creator of this Job.
+        r"""Gets the job_creator of this Job.
 
         任务创建者
 
@@ -210,7 +210,7 @@ class Job:
 
     @job_creator.setter
     def job_creator(self, job_creator):
-        """Sets the job_creator of this Job.
+        r"""Sets the job_creator of this Job.
 
         任务创建者
 
@@ -221,7 +221,7 @@ class Job:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Job.
+        r"""Gets the user_name of this Job.
 
         用户名称
 
@@ -232,7 +232,7 @@ class Job:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Job.
+        r"""Sets the user_name of this Job.
 
         用户名称
 
@@ -243,7 +243,7 @@ class Job:
 
     @property
     def last_build_time(self):
-        """Gets the last_build_time of this Job.
+        r"""Gets the last_build_time of this Job.
 
         最新执行时间
 
@@ -254,7 +254,7 @@ class Job:
 
     @last_build_time.setter
     def last_build_time(self, last_build_time):
-        """Sets the last_build_time of this Job.
+        r"""Sets the last_build_time of this Job.
 
         最新执行时间
 
@@ -265,7 +265,7 @@ class Job:
 
     @property
     def health_score(self):
-        """Gets the health_score of this Job.
+        r"""Gets the health_score of this Job.
 
         健康分值
 
@@ -276,7 +276,7 @@ class Job:
 
     @health_score.setter
     def health_score(self, health_score):
-        """Sets the health_score of this Job.
+        r"""Sets the health_score of this Job.
 
         健康分值
 
@@ -287,7 +287,7 @@ class Job:
 
     @property
     def source_code(self):
-        """Gets the source_code of this Job.
+        r"""Gets the source_code of this Job.
 
         代码来源
 
@@ -298,7 +298,7 @@ class Job:
 
     @source_code.setter
     def source_code(self, source_code):
-        """Sets the source_code of this Job.
+        r"""Sets the source_code of this Job.
 
         代码来源
 
@@ -309,7 +309,7 @@ class Job:
 
     @property
     def last_build_status(self):
-        """Gets the last_build_status of this Job.
+        r"""Gets the last_build_status of this Job.
 
         最新构建状态
 
@@ -320,7 +320,7 @@ class Job:
 
     @last_build_status.setter
     def last_build_status(self, last_build_status):
-        """Sets the last_build_status of this Job.
+        r"""Sets the last_build_status of this Job.
 
         最新构建状态
 
@@ -331,7 +331,7 @@ class Job:
 
     @property
     def is_finished(self):
-        """Gets the is_finished of this Job.
+        r"""Gets the is_finished of this Job.
 
         是否已结束
 
@@ -342,7 +342,7 @@ class Job:
 
     @is_finished.setter
     def is_finished(self, is_finished):
-        """Sets the is_finished of this Job.
+        r"""Sets the is_finished of this Job.
 
         是否已结束
 
@@ -353,7 +353,7 @@ class Job:
 
     @property
     def disabled(self):
-        """Gets the disabled of this Job.
+        r"""Gets the disabled of this Job.
 
         是否已禁用
 
@@ -364,7 +364,7 @@ class Job:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this Job.
+        r"""Sets the disabled of this Job.
 
         是否已禁用
 
@@ -375,7 +375,7 @@ class Job:
 
     @property
     def favorite(self):
-        """Gets the favorite of this Job.
+        r"""Gets the favorite of this Job.
 
         是否已收藏
 
@@ -386,7 +386,7 @@ class Job:
 
     @favorite.setter
     def favorite(self, favorite):
-        """Sets the favorite of this Job.
+        r"""Sets the favorite of this Job.
 
         是否已收藏
 
@@ -397,7 +397,7 @@ class Job:
 
     @property
     def is_modify(self):
-        """Gets the is_modify of this Job.
+        r"""Gets the is_modify of this Job.
 
         是否有修改任务权限
 
@@ -408,7 +408,7 @@ class Job:
 
     @is_modify.setter
     def is_modify(self, is_modify):
-        """Sets the is_modify of this Job.
+        r"""Sets the is_modify of this Job.
 
         是否有修改任务权限
 
@@ -419,7 +419,7 @@ class Job:
 
     @property
     def is_delete(self):
-        """Gets the is_delete of this Job.
+        r"""Gets the is_delete of this Job.
 
         是否有删除任务权限
 
@@ -430,7 +430,7 @@ class Job:
 
     @is_delete.setter
     def is_delete(self, is_delete):
-        """Sets the is_delete of this Job.
+        r"""Sets the is_delete of this Job.
 
         是否有删除任务权限
 
@@ -441,7 +441,7 @@ class Job:
 
     @property
     def is_execute(self):
-        """Gets the is_execute of this Job.
+        r"""Gets the is_execute of this Job.
 
         是否有执行任务权限
 
@@ -452,7 +452,7 @@ class Job:
 
     @is_execute.setter
     def is_execute(self, is_execute):
-        """Sets the is_execute of this Job.
+        r"""Sets the is_execute of this Job.
 
         是否有执行任务权限
 
@@ -463,7 +463,7 @@ class Job:
 
     @property
     def is_copy(self):
-        """Gets the is_copy of this Job.
+        r"""Gets the is_copy of this Job.
 
         是否有复制任务权限
 
@@ -474,7 +474,7 @@ class Job:
 
     @is_copy.setter
     def is_copy(self, is_copy):
-        """Sets the is_copy of this Job.
+        r"""Sets the is_copy of this Job.
 
         是否有复制任务权限
 
@@ -485,7 +485,7 @@ class Job:
 
     @property
     def is_forbidden(self):
-        """Gets the is_forbidden of this Job.
+        r"""Gets the is_forbidden of this Job.
 
         是否有禁用任务权限
 
@@ -496,7 +496,7 @@ class Job:
 
     @is_forbidden.setter
     def is_forbidden(self, is_forbidden):
-        """Sets the is_forbidden of this Job.
+        r"""Sets the is_forbidden of this Job.
 
         是否有禁用任务权限
 
@@ -507,7 +507,7 @@ class Job:
 
     @property
     def is_view(self):
-        """Gets the is_view of this Job.
+        r"""Gets the is_view of this Job.
 
         是否有查看任务权限
 
@@ -518,7 +518,7 @@ class Job:
 
     @is_view.setter
     def is_view(self, is_view):
-        """Sets the is_view of this Job.
+        r"""Sets the is_view of this Job.
 
         是否有查看任务权限
 

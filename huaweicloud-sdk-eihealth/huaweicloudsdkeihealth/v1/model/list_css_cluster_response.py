@@ -28,7 +28,7 @@ class ListCssClusterResponse(SdkResponse):
     }
 
     def __init__(self, css_clusters=None, count=None):
-        """ListCssClusterResponse
+        r"""ListCssClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCssClusterResponse(SdkResponse):
 
     @property
     def css_clusters(self):
-        """Gets the css_clusters of this ListCssClusterResponse.
+        r"""Gets the css_clusters of this ListCssClusterResponse.
 
         CSS集群列表
 
@@ -62,7 +62,7 @@ class ListCssClusterResponse(SdkResponse):
 
     @css_clusters.setter
     def css_clusters(self, css_clusters):
-        """Sets the css_clusters of this ListCssClusterResponse.
+        r"""Sets the css_clusters of this ListCssClusterResponse.
 
         CSS集群列表
 
@@ -73,7 +73,7 @@ class ListCssClusterResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListCssClusterResponse.
+        r"""Gets the count of this ListCssClusterResponse.
 
         css集群总数
 
@@ -84,7 +84,7 @@ class ListCssClusterResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListCssClusterResponse.
+        r"""Sets the count of this ListCssClusterResponse.
 
         css集群总数
 

@@ -26,7 +26,7 @@ class ListTenantConfigsResponse(SdkResponse):
     }
 
     def __init__(self, function_configs=None):
-        """ListTenantConfigsResponse
+        r"""ListTenantConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTenantConfigsResponse(SdkResponse):
 
     @property
     def function_configs(self):
-        """Gets the function_configs of this ListTenantConfigsResponse.
+        r"""Gets the function_configs of this ListTenantConfigsResponse.
 
         租户个性配置列表
 
@@ -55,7 +55,7 @@ class ListTenantConfigsResponse(SdkResponse):
 
     @function_configs.setter
     def function_configs(self, function_configs):
-        """Sets the function_configs of this ListTenantConfigsResponse.
+        r"""Sets the function_configs of this ListTenantConfigsResponse.
 
         租户个性配置列表
 

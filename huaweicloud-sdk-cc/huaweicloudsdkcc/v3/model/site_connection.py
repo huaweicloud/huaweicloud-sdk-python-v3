@@ -47,7 +47,7 @@ class SiteConnection:
     }
 
     def __init__(self, id=None, site_network_id=None, state=None, created_at=None, updated_at=None, edge_pair=None, cross_region_type=None, global_connection_bandwidth_id=None, bandwidth_size=None, is_frozen=None, frozen_effect=None, is_bind_bandwidth=None):
-        """SiteConnection
+        r"""SiteConnection
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class SiteConnection:
 
     @property
     def id(self):
-        """Gets the id of this SiteConnection.
+        r"""Gets the id of this SiteConnection.
 
         实例ID。
 
@@ -123,7 +123,7 @@ class SiteConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SiteConnection.
+        r"""Sets the id of this SiteConnection.
 
         实例ID。
 
@@ -134,7 +134,7 @@ class SiteConnection:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this SiteConnection.
+        r"""Gets the site_network_id of this SiteConnection.
 
         实例ID。
 
@@ -145,7 +145,7 @@ class SiteConnection:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this SiteConnection.
+        r"""Sets the site_network_id of this SiteConnection.
 
         实例ID。
 
@@ -156,7 +156,7 @@ class SiteConnection:
 
     @property
     def state(self):
-        """Gets the state of this SiteConnection.
+        r"""Gets the state of this SiteConnection.
 
         :return: The state of this SiteConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
@@ -165,7 +165,7 @@ class SiteConnection:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SiteConnection.
+        r"""Sets the state of this SiteConnection.
 
         :param state: The state of this SiteConnection.
         :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
@@ -174,7 +174,7 @@ class SiteConnection:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SiteConnection.
+        r"""Gets the created_at of this SiteConnection.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -185,7 +185,7 @@ class SiteConnection:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SiteConnection.
+        r"""Sets the created_at of this SiteConnection.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -196,7 +196,7 @@ class SiteConnection:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SiteConnection.
+        r"""Gets the updated_at of this SiteConnection.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -207,7 +207,7 @@ class SiteConnection:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SiteConnection.
+        r"""Sets the updated_at of this SiteConnection.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -218,7 +218,7 @@ class SiteConnection:
 
     @property
     def edge_pair(self):
-        """Gets the edge_pair of this SiteConnection.
+        r"""Gets the edge_pair of this SiteConnection.
 
         分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
 
@@ -229,7 +229,7 @@ class SiteConnection:
 
     @edge_pair.setter
     def edge_pair(self, edge_pair):
-        """Sets the edge_pair of this SiteConnection.
+        r"""Sets the edge_pair of this SiteConnection.
 
         分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
 
@@ -240,7 +240,7 @@ class SiteConnection:
 
     @property
     def cross_region_type(self):
-        """Gets the cross_region_type of this SiteConnection.
+        r"""Gets the cross_region_type of this SiteConnection.
 
         :return: The cross_region_type of this SiteConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
@@ -249,7 +249,7 @@ class SiteConnection:
 
     @cross_region_type.setter
     def cross_region_type(self, cross_region_type):
-        """Sets the cross_region_type of this SiteConnection.
+        r"""Sets the cross_region_type of this SiteConnection.
 
         :param cross_region_type: The cross_region_type of this SiteConnection.
         :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
@@ -258,7 +258,7 @@ class SiteConnection:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this SiteConnection.
+        r"""Gets the global_connection_bandwidth_id of this SiteConnection.
 
         全域互联带宽ID。
 
@@ -269,7 +269,7 @@ class SiteConnection:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this SiteConnection.
+        r"""Sets the global_connection_bandwidth_id of this SiteConnection.
 
         全域互联带宽ID。
 
@@ -280,7 +280,7 @@ class SiteConnection:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this SiteConnection.
+        r"""Gets the bandwidth_size of this SiteConnection.
 
         带宽值，单位Mbps。
 
@@ -291,7 +291,7 @@ class SiteConnection:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this SiteConnection.
+        r"""Sets the bandwidth_size of this SiteConnection.
 
         带宽值，单位Mbps。
 
@@ -302,7 +302,7 @@ class SiteConnection:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this SiteConnection.
+        r"""Gets the is_frozen of this SiteConnection.
 
         是否冻结
 
@@ -313,7 +313,7 @@ class SiteConnection:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this SiteConnection.
+        r"""Sets the is_frozen of this SiteConnection.
 
         是否冻结
 
@@ -324,7 +324,7 @@ class SiteConnection:
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this SiteConnection.
+        r"""Gets the frozen_effect of this SiteConnection.
 
         :return: The frozen_effect of this SiteConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
@@ -333,7 +333,7 @@ class SiteConnection:
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this SiteConnection.
+        r"""Sets the frozen_effect of this SiteConnection.
 
         :param frozen_effect: The frozen_effect of this SiteConnection.
         :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
@@ -342,7 +342,7 @@ class SiteConnection:
 
     @property
     def is_bind_bandwidth(self):
-        """Gets the is_bind_bandwidth of this SiteConnection.
+        r"""Gets the is_bind_bandwidth of this SiteConnection.
 
         是否绑定带宽包。
 
@@ -353,7 +353,7 @@ class SiteConnection:
 
     @is_bind_bandwidth.setter
     def is_bind_bandwidth(self, is_bind_bandwidth):
-        """Sets the is_bind_bandwidth of this SiteConnection.
+        r"""Sets the is_bind_bandwidth of this SiteConnection.
 
         是否绑定带宽包。
 

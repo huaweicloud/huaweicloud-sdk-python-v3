@@ -27,7 +27,7 @@ class CreateOrDeleteInstanceTags:
     }
 
     def __init__(self, action=None, tags=None):
-        """CreateOrDeleteInstanceTags
+        r"""CreateOrDeleteInstanceTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateOrDeleteInstanceTags:
 
     @property
     def action(self):
-        """Gets the action of this CreateOrDeleteInstanceTags.
+        r"""Gets the action of this CreateOrDeleteInstanceTags.
 
         操作标识：仅限于create（创建）、delete（删除）。
 
@@ -59,7 +59,7 @@ class CreateOrDeleteInstanceTags:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateOrDeleteInstanceTags.
+        r"""Sets the action of this CreateOrDeleteInstanceTags.
 
         操作标识：仅限于create（创建）、delete（删除）。
 
@@ -70,7 +70,7 @@ class CreateOrDeleteInstanceTags:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateOrDeleteInstanceTags.
+        r"""Gets the tags of this CreateOrDeleteInstanceTags.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class CreateOrDeleteInstanceTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateOrDeleteInstanceTags.
+        r"""Sets the tags of this CreateOrDeleteInstanceTags.
 
         标签列表。
 

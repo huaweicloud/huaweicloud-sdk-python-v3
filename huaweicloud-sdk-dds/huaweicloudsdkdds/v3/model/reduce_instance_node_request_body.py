@@ -27,7 +27,7 @@ class ReduceInstanceNodeRequestBody:
     }
 
     def __init__(self, num=None, node_list=None):
-        """ReduceInstanceNodeRequestBody
+        r"""ReduceInstanceNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReduceInstanceNodeRequestBody:
 
     @property
     def num(self):
-        """Gets the num of this ReduceInstanceNodeRequestBody.
+        r"""Gets the num of this ReduceInstanceNodeRequestBody.
 
         删除的节点数量。
 
@@ -61,7 +61,7 @@ class ReduceInstanceNodeRequestBody:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ReduceInstanceNodeRequestBody.
+        r"""Sets the num of this ReduceInstanceNodeRequestBody.
 
         删除的节点数量。
 
@@ -72,7 +72,7 @@ class ReduceInstanceNodeRequestBody:
 
     @property
     def node_list(self):
-        """Gets the node_list of this ReduceInstanceNodeRequestBody.
+        r"""Gets the node_list of this ReduceInstanceNodeRequestBody.
 
         指定删除节点的ID列表。 - num与node_list必须有一个字段传值 - 如果num与node_list同时传值时，则以node_list的值为主 - 删除的节点角色不能是Primary - 如果是多AZ实例，请确保删除节点后，每个AZ至少保留一个节点
 
@@ -83,7 +83,7 @@ class ReduceInstanceNodeRequestBody:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ReduceInstanceNodeRequestBody.
+        r"""Sets the node_list of this ReduceInstanceNodeRequestBody.
 
         指定删除节点的ID列表。 - num与node_list必须有一个字段传值 - 如果num与node_list同时传值时，则以node_list的值为主 - 删除的节点角色不能是Primary - 如果是多AZ实例，请确保删除节点后，每个AZ至少保留一个节点
 

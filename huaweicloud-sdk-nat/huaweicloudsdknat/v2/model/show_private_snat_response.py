@@ -28,7 +28,7 @@ class ShowPrivateSnatResponse(SdkResponse):
     }
 
     def __init__(self, snat_rule=None, request_id=None):
-        """ShowPrivateSnatResponse
+        r"""ShowPrivateSnatResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPrivateSnatResponse(SdkResponse):
 
     @property
     def snat_rule(self):
-        """Gets the snat_rule of this ShowPrivateSnatResponse.
+        r"""Gets the snat_rule of this ShowPrivateSnatResponse.
 
         :return: The snat_rule of this ShowPrivateSnatResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PrivateSnat`
@@ -60,7 +60,7 @@ class ShowPrivateSnatResponse(SdkResponse):
 
     @snat_rule.setter
     def snat_rule(self, snat_rule):
-        """Sets the snat_rule of this ShowPrivateSnatResponse.
+        r"""Sets the snat_rule of this ShowPrivateSnatResponse.
 
         :param snat_rule: The snat_rule of this ShowPrivateSnatResponse.
         :type snat_rule: :class:`huaweicloudsdknat.v2.PrivateSnat`
@@ -69,7 +69,7 @@ class ShowPrivateSnatResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPrivateSnatResponse.
+        r"""Gets the request_id of this ShowPrivateSnatResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowPrivateSnatResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPrivateSnatResponse.
+        r"""Sets the request_id of this ShowPrivateSnatResponse.
 
         请求ID。
 

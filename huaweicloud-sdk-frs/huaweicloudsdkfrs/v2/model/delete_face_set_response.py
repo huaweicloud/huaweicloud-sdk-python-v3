@@ -28,7 +28,7 @@ class DeleteFaceSetResponse(SdkResponse):
     }
 
     def __init__(self, face_set_name=None, x_request_id=None):
-        """DeleteFaceSetResponse
+        r"""DeleteFaceSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteFaceSetResponse(SdkResponse):
 
     @property
     def face_set_name(self):
-        """Gets the face_set_name of this DeleteFaceSetResponse.
+        r"""Gets the face_set_name of this DeleteFaceSetResponse.
 
         人脸库名称。 调用失败时无此字段。
 
@@ -62,7 +62,7 @@ class DeleteFaceSetResponse(SdkResponse):
 
     @face_set_name.setter
     def face_set_name(self, face_set_name):
-        """Sets the face_set_name of this DeleteFaceSetResponse.
+        r"""Sets the face_set_name of this DeleteFaceSetResponse.
 
         人脸库名称。 调用失败时无此字段。
 
@@ -73,7 +73,7 @@ class DeleteFaceSetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteFaceSetResponse.
+        r"""Gets the x_request_id of this DeleteFaceSetResponse.
 
         :return: The x_request_id of this DeleteFaceSetResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class DeleteFaceSetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteFaceSetResponse.
+        r"""Sets the x_request_id of this DeleteFaceSetResponse.
 
         :param x_request_id: The x_request_id of this DeleteFaceSetResponse.
         :type x_request_id: str

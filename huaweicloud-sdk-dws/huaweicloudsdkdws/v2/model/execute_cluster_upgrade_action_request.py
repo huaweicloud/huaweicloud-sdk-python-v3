@@ -27,7 +27,7 @@ class ExecuteClusterUpgradeActionRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ExecuteClusterUpgradeActionRequest
+        r"""ExecuteClusterUpgradeActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteClusterUpgradeActionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExecuteClusterUpgradeActionRequest.
+        r"""Gets the cluster_id of this ExecuteClusterUpgradeActionRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ExecuteClusterUpgradeActionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExecuteClusterUpgradeActionRequest.
+        r"""Sets the cluster_id of this ExecuteClusterUpgradeActionRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ExecuteClusterUpgradeActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteClusterUpgradeActionRequest.
+        r"""Gets the body of this ExecuteClusterUpgradeActionRequest.
 
         :return: The body of this ExecuteClusterUpgradeActionRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ExecuteClusterUpgradeActionRequestBody`
@@ -80,7 +80,7 @@ class ExecuteClusterUpgradeActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteClusterUpgradeActionRequest.
+        r"""Sets the body of this ExecuteClusterUpgradeActionRequest.
 
         :param body: The body of this ExecuteClusterUpgradeActionRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ExecuteClusterUpgradeActionRequestBody`

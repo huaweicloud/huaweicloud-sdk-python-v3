@@ -33,7 +33,7 @@ class CompareTaskList:
     }
 
     def __init__(self, compare_task_id=None, compare_type=None, compare_task_status=None, create_time=None, end_time=None):
-        """CompareTaskList
+        r"""CompareTaskList
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CompareTaskList:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this CompareTaskList.
+        r"""Gets the compare_task_id of this CompareTaskList.
 
         对比任务的id。
 
@@ -78,7 +78,7 @@ class CompareTaskList:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this CompareTaskList.
+        r"""Sets the compare_task_id of this CompareTaskList.
 
         对比任务的id。
 
@@ -89,7 +89,7 @@ class CompareTaskList:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this CompareTaskList.
+        r"""Gets the compare_type of this CompareTaskList.
 
         对比任务的类型。
 
@@ -100,7 +100,7 @@ class CompareTaskList:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this CompareTaskList.
+        r"""Sets the compare_type of this CompareTaskList.
 
         对比任务的类型。
 
@@ -111,7 +111,7 @@ class CompareTaskList:
 
     @property
     def compare_task_status(self):
-        """Gets the compare_task_status of this CompareTaskList.
+        r"""Gets the compare_task_status of this CompareTaskList.
 
         对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 
@@ -122,7 +122,7 @@ class CompareTaskList:
 
     @compare_task_status.setter
     def compare_task_status(self, compare_task_status):
-        """Sets the compare_task_status of this CompareTaskList.
+        r"""Sets the compare_task_status of this CompareTaskList.
 
         对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 
@@ -133,7 +133,7 @@ class CompareTaskList:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CompareTaskList.
+        r"""Gets the create_time of this CompareTaskList.
 
         对比开始时间。
 
@@ -144,7 +144,7 @@ class CompareTaskList:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CompareTaskList.
+        r"""Sets the create_time of this CompareTaskList.
 
         对比开始时间。
 
@@ -155,7 +155,7 @@ class CompareTaskList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CompareTaskList.
+        r"""Gets the end_time of this CompareTaskList.
 
         对比结束时间。
 
@@ -166,7 +166,7 @@ class CompareTaskList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CompareTaskList.
+        r"""Sets the end_time of this CompareTaskList.
 
         对比结束时间。
 

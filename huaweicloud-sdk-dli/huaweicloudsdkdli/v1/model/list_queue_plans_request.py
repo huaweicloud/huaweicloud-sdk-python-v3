@@ -25,7 +25,7 @@ class ListQueuePlansRequest:
     }
 
     def __init__(self, queue_name=None):
-        """ListQueuePlansRequest
+        r"""ListQueuePlansRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListQueuePlansRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListQueuePlansRequest.
+        r"""Gets the queue_name of this ListQueuePlansRequest.
 
         待查询定时扩缩计划的队列名称
 
@@ -53,7 +53,7 @@ class ListQueuePlansRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListQueuePlansRequest.
+        r"""Sets the queue_name of this ListQueuePlansRequest.
 
         待查询定时扩缩计划的队列名称
 

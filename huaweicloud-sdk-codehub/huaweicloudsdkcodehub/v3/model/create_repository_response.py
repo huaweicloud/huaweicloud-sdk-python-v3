@@ -30,7 +30,7 @@ class CreateRepositoryResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateRepositoryResponse
+        r"""CreateRepositoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateRepositoryResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateRepositoryResponse.
+        r"""Gets the error of this CreateRepositoryResponse.
 
         :return: The error of this CreateRepositoryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class CreateRepositoryResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateRepositoryResponse.
+        r"""Sets the error of this CreateRepositoryResponse.
 
         :param error: The error of this CreateRepositoryResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class CreateRepositoryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateRepositoryResponse.
+        r"""Gets the result of this CreateRepositoryResponse.
 
         :return: The result of this CreateRepositoryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Repository`
@@ -85,7 +85,7 @@ class CreateRepositoryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateRepositoryResponse.
+        r"""Sets the result of this CreateRepositoryResponse.
 
         :param result: The result of this CreateRepositoryResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Repository`
@@ -94,7 +94,7 @@ class CreateRepositoryResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRepositoryResponse.
+        r"""Gets the status of this CreateRepositoryResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class CreateRepositoryResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRepositoryResponse.
+        r"""Sets the status of this CreateRepositoryResponse.
 
         响应状态
 

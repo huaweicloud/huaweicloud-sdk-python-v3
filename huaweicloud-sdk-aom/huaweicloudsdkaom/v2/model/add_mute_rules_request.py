@@ -25,7 +25,7 @@ class AddMuteRulesRequest:
     }
 
     def __init__(self, body=None):
-        """AddMuteRulesRequest
+        r"""AddMuteRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddMuteRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddMuteRulesRequest.
+        r"""Gets the body of this AddMuteRulesRequest.
 
         :return: The body of this AddMuteRulesRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.MuteRule`
@@ -52,7 +52,7 @@ class AddMuteRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddMuteRulesRequest.
+        r"""Sets the body of this AddMuteRulesRequest.
 
         :param body: The body of this AddMuteRulesRequest.
         :type body: :class:`huaweicloudsdkaom.v2.MuteRule`

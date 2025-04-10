@@ -63,7 +63,7 @@ class QueryTemplatesItems:
     }
 
     def __init__(self, favourite=None, nick_name=None, id=None, uuid=None, template=None, type=None, public=None, name=None, create_time=None, domain_id=None, weight=None, user_id=None, user_name=None, domain_name=None, scope=None, description=None, tool_type=None, intl_description=None, parameters=None, i18n=None):
-        """QueryTemplatesItems
+        r"""QueryTemplatesItems
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class QueryTemplatesItems:
 
     @property
     def favourite(self):
-        """Gets the favourite of this QueryTemplatesItems.
+        r"""Gets the favourite of this QueryTemplatesItems.
 
         是否收藏模板
 
@@ -187,7 +187,7 @@ class QueryTemplatesItems:
 
     @favourite.setter
     def favourite(self, favourite):
-        """Sets the favourite of this QueryTemplatesItems.
+        r"""Sets the favourite of this QueryTemplatesItems.
 
         是否收藏模板
 
@@ -198,7 +198,7 @@ class QueryTemplatesItems:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this QueryTemplatesItems.
+        r"""Gets the nick_name of this QueryTemplatesItems.
 
         昵称
 
@@ -209,7 +209,7 @@ class QueryTemplatesItems:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this QueryTemplatesItems.
+        r"""Sets the nick_name of this QueryTemplatesItems.
 
         昵称
 
@@ -220,7 +220,7 @@ class QueryTemplatesItems:
 
     @property
     def id(self):
-        """Gets the id of this QueryTemplatesItems.
+        r"""Gets the id of this QueryTemplatesItems.
 
         数据库中id
 
@@ -231,7 +231,7 @@ class QueryTemplatesItems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryTemplatesItems.
+        r"""Sets the id of this QueryTemplatesItems.
 
         数据库中id
 
@@ -242,7 +242,7 @@ class QueryTemplatesItems:
 
     @property
     def uuid(self):
-        """Gets the uuid of this QueryTemplatesItems.
+        r"""Gets the uuid of this QueryTemplatesItems.
 
         uuid
 
@@ -253,7 +253,7 @@ class QueryTemplatesItems:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this QueryTemplatesItems.
+        r"""Sets the uuid of this QueryTemplatesItems.
 
         uuid
 
@@ -264,7 +264,7 @@ class QueryTemplatesItems:
 
     @property
     def template(self):
-        """Gets the template of this QueryTemplatesItems.
+        r"""Gets the template of this QueryTemplatesItems.
 
         :return: The template of this QueryTemplatesItems.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
@@ -273,7 +273,7 @@ class QueryTemplatesItems:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this QueryTemplatesItems.
+        r"""Sets the template of this QueryTemplatesItems.
 
         :param template: The template of this QueryTemplatesItems.
         :type template: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
@@ -282,7 +282,7 @@ class QueryTemplatesItems:
 
     @property
     def type(self):
-        """Gets the type of this QueryTemplatesItems.
+        r"""Gets the type of this QueryTemplatesItems.
 
         模板类别
 
@@ -293,7 +293,7 @@ class QueryTemplatesItems:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryTemplatesItems.
+        r"""Sets the type of this QueryTemplatesItems.
 
         模板类别
 
@@ -304,7 +304,7 @@ class QueryTemplatesItems:
 
     @property
     def public(self):
-        """Gets the public of this QueryTemplatesItems.
+        r"""Gets the public of this QueryTemplatesItems.
 
         模板是否公开
 
@@ -315,7 +315,7 @@ class QueryTemplatesItems:
 
     @public.setter
     def public(self, public):
-        """Sets the public of this QueryTemplatesItems.
+        r"""Sets the public of this QueryTemplatesItems.
 
         模板是否公开
 
@@ -326,7 +326,7 @@ class QueryTemplatesItems:
 
     @property
     def name(self):
-        """Gets the name of this QueryTemplatesItems.
+        r"""Gets the name of this QueryTemplatesItems.
 
         模板命名
 
@@ -337,7 +337,7 @@ class QueryTemplatesItems:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryTemplatesItems.
+        r"""Sets the name of this QueryTemplatesItems.
 
         模板命名
 
@@ -348,7 +348,7 @@ class QueryTemplatesItems:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryTemplatesItems.
+        r"""Gets the create_time of this QueryTemplatesItems.
 
         创建时间
 
@@ -359,7 +359,7 @@ class QueryTemplatesItems:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryTemplatesItems.
+        r"""Sets the create_time of this QueryTemplatesItems.
 
         创建时间
 
@@ -370,7 +370,7 @@ class QueryTemplatesItems:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this QueryTemplatesItems.
+        r"""Gets the domain_id of this QueryTemplatesItems.
 
         domainId
 
@@ -381,7 +381,7 @@ class QueryTemplatesItems:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this QueryTemplatesItems.
+        r"""Sets the domain_id of this QueryTemplatesItems.
 
         domainId
 
@@ -392,7 +392,7 @@ class QueryTemplatesItems:
 
     @property
     def weight(self):
-        """Gets the weight of this QueryTemplatesItems.
+        r"""Gets the weight of this QueryTemplatesItems.
 
         权重
 
@@ -403,7 +403,7 @@ class QueryTemplatesItems:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this QueryTemplatesItems.
+        r"""Sets the weight of this QueryTemplatesItems.
 
         权重
 
@@ -414,7 +414,7 @@ class QueryTemplatesItems:
 
     @property
     def user_id(self):
-        """Gets the user_id of this QueryTemplatesItems.
+        r"""Gets the user_id of this QueryTemplatesItems.
 
         用户id
 
@@ -425,7 +425,7 @@ class QueryTemplatesItems:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this QueryTemplatesItems.
+        r"""Sets the user_id of this QueryTemplatesItems.
 
         用户id
 
@@ -436,7 +436,7 @@ class QueryTemplatesItems:
 
     @property
     def user_name(self):
-        """Gets the user_name of this QueryTemplatesItems.
+        r"""Gets the user_name of this QueryTemplatesItems.
 
         用户名
 
@@ -447,7 +447,7 @@ class QueryTemplatesItems:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this QueryTemplatesItems.
+        r"""Sets the user_name of this QueryTemplatesItems.
 
         用户名
 
@@ -458,7 +458,7 @@ class QueryTemplatesItems:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this QueryTemplatesItems.
+        r"""Gets the domain_name of this QueryTemplatesItems.
 
         domain名字
 
@@ -469,7 +469,7 @@ class QueryTemplatesItems:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this QueryTemplatesItems.
+        r"""Sets the domain_name of this QueryTemplatesItems.
 
         domain名字
 
@@ -480,7 +480,7 @@ class QueryTemplatesItems:
 
     @property
     def scope(self):
-        """Gets the scope of this QueryTemplatesItems.
+        r"""Gets the scope of this QueryTemplatesItems.
 
         模板范围，自定义模板默认为custom
 
@@ -491,7 +491,7 @@ class QueryTemplatesItems:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this QueryTemplatesItems.
+        r"""Sets the scope of this QueryTemplatesItems.
 
         模板范围，自定义模板默认为custom
 
@@ -502,7 +502,7 @@ class QueryTemplatesItems:
 
     @property
     def description(self):
-        """Gets the description of this QueryTemplatesItems.
+        r"""Gets the description of this QueryTemplatesItems.
 
         模板说明
 
@@ -513,7 +513,7 @@ class QueryTemplatesItems:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryTemplatesItems.
+        r"""Sets the description of this QueryTemplatesItems.
 
         模板说明
 
@@ -524,7 +524,7 @@ class QueryTemplatesItems:
 
     @property
     def tool_type(self):
-        """Gets the tool_type of this QueryTemplatesItems.
+        r"""Gets the tool_type of this QueryTemplatesItems.
 
         构建工具类型，yaml构建还是action构建
 
@@ -535,7 +535,7 @@ class QueryTemplatesItems:
 
     @tool_type.setter
     def tool_type(self, tool_type):
-        """Sets the tool_type of this QueryTemplatesItems.
+        r"""Sets the tool_type of this QueryTemplatesItems.
 
         构建工具类型，yaml构建还是action构建
 
@@ -546,7 +546,7 @@ class QueryTemplatesItems:
 
     @property
     def intl_description(self):
-        """Gets the intl_description of this QueryTemplatesItems.
+        r"""Gets the intl_description of this QueryTemplatesItems.
 
         intl说明
 
@@ -557,7 +557,7 @@ class QueryTemplatesItems:
 
     @intl_description.setter
     def intl_description(self, intl_description):
-        """Sets the intl_description of this QueryTemplatesItems.
+        r"""Sets the intl_description of this QueryTemplatesItems.
 
         intl说明
 
@@ -568,7 +568,7 @@ class QueryTemplatesItems:
 
     @property
     def parameters(self):
-        """Gets the parameters of this QueryTemplatesItems.
+        r"""Gets the parameters of this QueryTemplatesItems.
 
         构建执行参数列表
 
@@ -579,7 +579,7 @@ class QueryTemplatesItems:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this QueryTemplatesItems.
+        r"""Sets the parameters of this QueryTemplatesItems.
 
         构建执行参数列表
 
@@ -590,7 +590,7 @@ class QueryTemplatesItems:
 
     @property
     def i18n(self):
-        """Gets the i18n of this QueryTemplatesItems.
+        r"""Gets the i18n of this QueryTemplatesItems.
 
         i18n
 
@@ -601,7 +601,7 @@ class QueryTemplatesItems:
 
     @i18n.setter
     def i18n(self, i18n):
-        """Sets the i18n of this QueryTemplatesItems.
+        r"""Sets the i18n of this QueryTemplatesItems.
 
         i18n
 

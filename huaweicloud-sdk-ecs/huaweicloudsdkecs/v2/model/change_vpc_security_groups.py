@@ -25,7 +25,7 @@ class ChangeVpcSecurityGroups:
     }
 
     def __init__(self, id=None):
-        """ChangeVpcSecurityGroups
+        r"""ChangeVpcSecurityGroups
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeVpcSecurityGroups:
 
     @property
     def id(self):
-        """Gets the id of this ChangeVpcSecurityGroups.
+        r"""Gets the id of this ChangeVpcSecurityGroups.
 
         安全组id
 
@@ -53,7 +53,7 @@ class ChangeVpcSecurityGroups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChangeVpcSecurityGroups.
+        r"""Sets the id of this ChangeVpcSecurityGroups.
 
         安全组id
 

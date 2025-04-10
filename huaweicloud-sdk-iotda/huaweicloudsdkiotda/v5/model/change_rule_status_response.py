@@ -26,7 +26,7 @@ class ChangeRuleStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ChangeRuleStatusResponse
+        r"""ChangeRuleStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeRuleStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ChangeRuleStatusResponse.
+        r"""Gets the status of this ChangeRuleStatusResponse.
 
         **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
@@ -55,7 +55,7 @@ class ChangeRuleStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeRuleStatusResponse.
+        r"""Sets the status of this ChangeRuleStatusResponse.
 
         **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 

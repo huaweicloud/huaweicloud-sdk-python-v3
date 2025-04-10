@@ -34,7 +34,7 @@ class AomAsyncClient(Client):
         return client_builder
 
     def create_app_async(self, request):
-        """新增应用
+        r"""新增应用
 
         该接口用于新增应用。
         
@@ -99,7 +99,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def create_component_async(self, request):
-        """新增组件
+        r"""新增组件
 
         该接口用于新增组件。
         
@@ -164,7 +164,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def create_env_async(self, request):
-        """创建环境
+        r"""创建环境
 
         该接口用于创建环境。
         
@@ -229,7 +229,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def create_sub_app_async(self, request):
-        """新增子应用
+        r"""新增子应用
 
         该接口用于新增子应用。
         
@@ -294,7 +294,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def delete_app_async(self, request):
-        """删除应用
+        r"""删除应用
 
         该接口用于删除应用。
         
@@ -359,7 +359,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def delete_component_async(self, request):
-        """删除组件
+        r"""删除组件
 
         该接口用于删除组件。
         
@@ -424,7 +424,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def delete_env_async(self, request):
-        """删除环境
+        r"""删除环境
 
         该接口用于删除环境。
         
@@ -489,7 +489,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def delete_sub_app_async(self, request):
-        """删除子应用
+        r"""删除子应用
 
         该接口用于删除子应用。
         
@@ -554,7 +554,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def list_resource_under_node_async(self, request):
-        """查询绑定在节点上的资源列表
+        r"""查询绑定在节点上的资源列表
 
         该接口用于查询绑定在节点上的资源列表。
         
@@ -623,7 +623,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_app_async(self, request):
-        """查询应用详情
+        r"""查询应用详情
 
         该接口用于查询应用详情。
         
@@ -688,7 +688,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_app_by_name_async(self, request):
-        """根据应用名称查询应用详情
+        r"""根据应用名称查询应用详情
 
         该接口用于查询应用详情。
         
@@ -755,7 +755,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_component_async(self, request):
-        """查询组件详情
+        r"""查询组件详情
 
         该接口用于查询组件详情。
         
@@ -820,7 +820,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_component_by_name_async(self, request):
-        """根据组件名称查询组件详情
+        r"""根据组件名称查询组件详情
 
         该接口用于查询组件详情。
         
@@ -887,7 +887,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_env_async(self, request):
-        """查询环境详情
+        r"""查询环境详情
 
         该接口用于查询环境详情。
         
@@ -952,7 +952,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_env_by_name_async(self, request):
-        """根据环境名称查询环境详情
+        r"""根据环境名称查询环境详情
 
         该接口用于查询环境详情。
         
@@ -1021,7 +1021,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def update_app_async(self, request):
-        """修改应用
+        r"""修改应用
 
         该接口用于修改应用。
         
@@ -1088,7 +1088,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def update_component_async(self, request):
-        """修改组件
+        r"""修改组件
 
         该接口用于修改组件。
         
@@ -1155,7 +1155,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def update_env_async(self, request):
-        """修改环境
+        r"""修改环境
 
         该接口用于修改环境。
         
@@ -1222,7 +1222,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def update_sub_app_async(self, request):
-        """修改子应用
+        r"""修改子应用
 
         该接口用于修改子应用。
         

@@ -26,7 +26,7 @@ class StopBatchTaskResponse(SdkResponse):
     }
 
     def __init__(self, targets=None):
-        """StopBatchTaskResponse
+        r"""StopBatchTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopBatchTaskResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this StopBatchTaskResponse.
+        r"""Gets the targets of this StopBatchTaskResponse.
 
         批量操作目标结果集合
 
@@ -55,7 +55,7 @@ class StopBatchTaskResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this StopBatchTaskResponse.
+        r"""Sets the targets of this StopBatchTaskResponse.
 
         批量操作目标结果集合
 

@@ -38,7 +38,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, size=None, page=None, total=None, data=None, x_request_id=None):
-        """ListPlaybookVersionsResponse
+        r"""ListPlaybookVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListPlaybookVersionsResponse.
+        r"""Gets the code of this ListPlaybookVersionsResponse.
 
         错误码
 
@@ -97,7 +97,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListPlaybookVersionsResponse.
+        r"""Sets the code of this ListPlaybookVersionsResponse.
 
         错误码
 
@@ -108,7 +108,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListPlaybookVersionsResponse.
+        r"""Gets the message of this ListPlaybookVersionsResponse.
 
         错误信息
 
@@ -119,7 +119,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListPlaybookVersionsResponse.
+        r"""Sets the message of this ListPlaybookVersionsResponse.
 
         错误信息
 
@@ -130,7 +130,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListPlaybookVersionsResponse.
+        r"""Gets the size of this ListPlaybookVersionsResponse.
 
         分页查询数据大小
 
@@ -141,7 +141,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListPlaybookVersionsResponse.
+        r"""Sets the size of this ListPlaybookVersionsResponse.
 
         分页查询数据大小
 
@@ -152,7 +152,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListPlaybookVersionsResponse.
+        r"""Gets the page of this ListPlaybookVersionsResponse.
 
         当前页码
 
@@ -163,7 +163,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListPlaybookVersionsResponse.
+        r"""Sets the page of this ListPlaybookVersionsResponse.
 
         当前页码
 
@@ -174,7 +174,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPlaybookVersionsResponse.
+        r"""Gets the total of this ListPlaybookVersionsResponse.
 
         总数
 
@@ -185,7 +185,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPlaybookVersionsResponse.
+        r"""Sets the total of this ListPlaybookVersionsResponse.
 
         总数
 
@@ -196,7 +196,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPlaybookVersionsResponse.
+        r"""Gets the data of this ListPlaybookVersionsResponse.
 
         剧本版本列表信息
 
@@ -207,7 +207,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPlaybookVersionsResponse.
+        r"""Sets the data of this ListPlaybookVersionsResponse.
 
         剧本版本列表信息
 
@@ -218,7 +218,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlaybookVersionsResponse.
+        r"""Gets the x_request_id of this ListPlaybookVersionsResponse.
 
         :return: The x_request_id of this ListPlaybookVersionsResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlaybookVersionsResponse.
+        r"""Sets the x_request_id of this ListPlaybookVersionsResponse.
 
         :param x_request_id: The x_request_id of this ListPlaybookVersionsResponse.
         :type x_request_id: str

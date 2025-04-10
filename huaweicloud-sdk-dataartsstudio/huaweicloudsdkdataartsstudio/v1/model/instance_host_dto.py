@@ -33,7 +33,7 @@ class InstanceHostDTO:
     }
 
     def __init__(self, instance_id=None, instance_name=None, intranet_host=None, external_host=None, domains=None):
-        """InstanceHostDTO
+        r"""InstanceHostDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceHostDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceHostDTO.
+        r"""Gets the instance_id of this InstanceHostDTO.
 
         集群id
 
@@ -82,7 +82,7 @@ class InstanceHostDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceHostDTO.
+        r"""Sets the instance_id of this InstanceHostDTO.
 
         集群id
 
@@ -93,7 +93,7 @@ class InstanceHostDTO:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceHostDTO.
+        r"""Gets the instance_name of this InstanceHostDTO.
 
         集群名
 
@@ -104,7 +104,7 @@ class InstanceHostDTO:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceHostDTO.
+        r"""Sets the instance_name of this InstanceHostDTO.
 
         集群名
 
@@ -115,7 +115,7 @@ class InstanceHostDTO:
 
     @property
     def intranet_host(self):
-        """Gets the intranet_host of this InstanceHostDTO.
+        r"""Gets the intranet_host of this InstanceHostDTO.
 
         内网地址
 
@@ -126,7 +126,7 @@ class InstanceHostDTO:
 
     @intranet_host.setter
     def intranet_host(self, intranet_host):
-        """Sets the intranet_host of this InstanceHostDTO.
+        r"""Sets the intranet_host of this InstanceHostDTO.
 
         内网地址
 
@@ -137,7 +137,7 @@ class InstanceHostDTO:
 
     @property
     def external_host(self):
-        """Gets the external_host of this InstanceHostDTO.
+        r"""Gets the external_host of this InstanceHostDTO.
 
         外网地址
 
@@ -148,7 +148,7 @@ class InstanceHostDTO:
 
     @external_host.setter
     def external_host(self, external_host):
-        """Sets the external_host of this InstanceHostDTO.
+        r"""Sets the external_host of this InstanceHostDTO.
 
         外网地址
 
@@ -159,7 +159,7 @@ class InstanceHostDTO:
 
     @property
     def domains(self):
-        """Gets the domains of this InstanceHostDTO.
+        r"""Gets the domains of this InstanceHostDTO.
 
         网关域名
 
@@ -170,7 +170,7 @@ class InstanceHostDTO:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this InstanceHostDTO.
+        r"""Sets the domains of this InstanceHostDTO.
 
         网关域名
 

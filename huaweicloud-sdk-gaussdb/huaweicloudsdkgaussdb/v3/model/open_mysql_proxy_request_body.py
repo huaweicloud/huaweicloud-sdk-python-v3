@@ -41,7 +41,7 @@ class OpenMysqlProxyRequestBody:
     }
 
     def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None, subnet_id=None, new_node_auto_add_status=None, new_node_weight=None):
-        """OpenMysqlProxyRequestBody
+        r"""OpenMysqlProxyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this OpenMysqlProxyRequestBody.
+        r"""Gets the flavor_ref of this OpenMysqlProxyRequestBody.
 
         代理规格码。
 
@@ -108,7 +108,7 @@ class OpenMysqlProxyRequestBody:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this OpenMysqlProxyRequestBody.
+        r"""Sets the flavor_ref of this OpenMysqlProxyRequestBody.
 
         代理规格码。
 
@@ -119,7 +119,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def node_num(self):
-        """Gets the node_num of this OpenMysqlProxyRequestBody.
+        r"""Gets the node_num of this OpenMysqlProxyRequestBody.
 
         代理实例节点数，取值整数2-32。
 
@@ -130,7 +130,7 @@ class OpenMysqlProxyRequestBody:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this OpenMysqlProxyRequestBody.
+        r"""Sets the node_num of this OpenMysqlProxyRequestBody.
 
         代理实例节点数，取值整数2-32。
 
@@ -141,7 +141,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def proxy_name(self):
-        """Gets the proxy_name of this OpenMysqlProxyRequestBody.
+        r"""Gets the proxy_name of this OpenMysqlProxyRequestBody.
 
         代理实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -152,7 +152,7 @@ class OpenMysqlProxyRequestBody:
 
     @proxy_name.setter
     def proxy_name(self, proxy_name):
-        """Sets the proxy_name of this OpenMysqlProxyRequestBody.
+        r"""Sets the proxy_name of this OpenMysqlProxyRequestBody.
 
         代理实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -163,7 +163,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def proxy_mode(self):
-        """Gets the proxy_mode of this OpenMysqlProxyRequestBody.
+        r"""Gets the proxy_mode of this OpenMysqlProxyRequestBody.
 
         代理实例类型。默认类型为readwrite。
 
@@ -174,7 +174,7 @@ class OpenMysqlProxyRequestBody:
 
     @proxy_mode.setter
     def proxy_mode(self, proxy_mode):
-        """Sets the proxy_mode of this OpenMysqlProxyRequestBody.
+        r"""Sets the proxy_mode of this OpenMysqlProxyRequestBody.
 
         代理实例类型。默认类型为readwrite。
 
@@ -185,7 +185,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this OpenMysqlProxyRequestBody.
+        r"""Gets the route_mode of this OpenMysqlProxyRequestBody.
 
         数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
 
@@ -196,7 +196,7 @@ class OpenMysqlProxyRequestBody:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this OpenMysqlProxyRequestBody.
+        r"""Sets the route_mode of this OpenMysqlProxyRequestBody.
 
         数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
 
@@ -207,7 +207,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def nodes_read_weight(self):
-        """Gets the nodes_read_weight of this OpenMysqlProxyRequestBody.
+        r"""Gets the nodes_read_weight of this OpenMysqlProxyRequestBody.
 
         数据库节点的读权重设置。  在proxy_mode为readonly时，只能为只读节点选择权重。
 
@@ -218,7 +218,7 @@ class OpenMysqlProxyRequestBody:
 
     @nodes_read_weight.setter
     def nodes_read_weight(self, nodes_read_weight):
-        """Sets the nodes_read_weight of this OpenMysqlProxyRequestBody.
+        r"""Sets the nodes_read_weight of this OpenMysqlProxyRequestBody.
 
         数据库节点的读权重设置。  在proxy_mode为readonly时，只能为只读节点选择权重。
 
@@ -229,7 +229,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this OpenMysqlProxyRequestBody.
+        r"""Gets the subnet_id of this OpenMysqlProxyRequestBody.
 
         数据库VPC下的子网ID。
 
@@ -240,7 +240,7 @@ class OpenMysqlProxyRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this OpenMysqlProxyRequestBody.
+        r"""Sets the subnet_id of this OpenMysqlProxyRequestBody.
 
         数据库VPC下的子网ID。
 
@@ -251,7 +251,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def new_node_auto_add_status(self):
-        """Gets the new_node_auto_add_status of this OpenMysqlProxyRequestBody.
+        r"""Gets the new_node_auto_add_status of this OpenMysqlProxyRequestBody.
 
         是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
 
@@ -262,7 +262,7 @@ class OpenMysqlProxyRequestBody:
 
     @new_node_auto_add_status.setter
     def new_node_auto_add_status(self, new_node_auto_add_status):
-        """Sets the new_node_auto_add_status of this OpenMysqlProxyRequestBody.
+        r"""Sets the new_node_auto_add_status of this OpenMysqlProxyRequestBody.
 
         是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
 
@@ -273,7 +273,7 @@ class OpenMysqlProxyRequestBody:
 
     @property
     def new_node_weight(self):
-        """Gets the new_node_weight of this OpenMysqlProxyRequestBody.
+        r"""Gets the new_node_weight of this OpenMysqlProxyRequestBody.
 
         新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
 
@@ -284,7 +284,7 @@ class OpenMysqlProxyRequestBody:
 
     @new_node_weight.setter
     def new_node_weight(self, new_node_weight):
-        """Sets the new_node_weight of this OpenMysqlProxyRequestBody.
+        r"""Sets the new_node_weight of this OpenMysqlProxyRequestBody.
 
         新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
 

@@ -33,7 +33,7 @@ class UpdateCheckPointRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, consumer_group_name=None, consumer_name=None, body=None):
-        """UpdateCheckPointRequest
+        r"""UpdateCheckPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateCheckPointRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateCheckPointRequest.
+        r"""Gets the group_id of this UpdateCheckPointRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -78,7 +78,7 @@ class UpdateCheckPointRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateCheckPointRequest.
+        r"""Sets the group_id of this UpdateCheckPointRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -89,7 +89,7 @@ class UpdateCheckPointRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this UpdateCheckPointRequest.
+        r"""Gets the stream_id of this UpdateCheckPointRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -100,7 +100,7 @@ class UpdateCheckPointRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this UpdateCheckPointRequest.
+        r"""Sets the stream_id of this UpdateCheckPointRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -111,7 +111,7 @@ class UpdateCheckPointRequest:
 
     @property
     def consumer_group_name(self):
-        """Gets the consumer_group_name of this UpdateCheckPointRequest.
+        r"""Gets the consumer_group_name of this UpdateCheckPointRequest.
 
         消费组名
 
@@ -122,7 +122,7 @@ class UpdateCheckPointRequest:
 
     @consumer_group_name.setter
     def consumer_group_name(self, consumer_group_name):
-        """Sets the consumer_group_name of this UpdateCheckPointRequest.
+        r"""Sets the consumer_group_name of this UpdateCheckPointRequest.
 
         消费组名
 
@@ -133,7 +133,7 @@ class UpdateCheckPointRequest:
 
     @property
     def consumer_name(self):
-        """Gets the consumer_name of this UpdateCheckPointRequest.
+        r"""Gets the consumer_name of this UpdateCheckPointRequest.
 
         消费者名
 
@@ -144,7 +144,7 @@ class UpdateCheckPointRequest:
 
     @consumer_name.setter
     def consumer_name(self, consumer_name):
-        """Sets the consumer_name of this UpdateCheckPointRequest.
+        r"""Sets the consumer_name of this UpdateCheckPointRequest.
 
         消费者名
 
@@ -155,7 +155,7 @@ class UpdateCheckPointRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCheckPointRequest.
+        r"""Gets the body of this UpdateCheckPointRequest.
 
         :return: The body of this UpdateCheckPointRequest.
         :rtype: list[:class:`huaweicloudsdklts.v2.ConsumerShardCheckpointInfo`]
@@ -164,7 +164,7 @@ class UpdateCheckPointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCheckPointRequest.
+        r"""Sets the body of this UpdateCheckPointRequest.
 
         :param body: The body of this UpdateCheckPointRequest.
         :type body: list[:class:`huaweicloudsdklts.v2.ConsumerShardCheckpointInfo`]

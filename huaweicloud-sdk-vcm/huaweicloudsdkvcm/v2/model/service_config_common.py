@@ -35,7 +35,7 @@ class ServiceConfigCommon:
     }
 
     def __init__(self, frame_interval=None, categories=None, text_categories=None, use_sis=None, use_ocr=None, upload=None):
-        """ServiceConfigCommon
+        r"""ServiceConfigCommon
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ServiceConfigCommon:
 
     @property
     def frame_interval(self):
-        """Gets the frame_interval of this ServiceConfigCommon.
+        r"""Gets the frame_interval of this ServiceConfigCommon.
 
         截帧时间间隔，单位为秒/帧。 
 
@@ -89,7 +89,7 @@ class ServiceConfigCommon:
 
     @frame_interval.setter
     def frame_interval(self, frame_interval):
-        """Sets the frame_interval of this ServiceConfigCommon.
+        r"""Sets the frame_interval of this ServiceConfigCommon.
 
         截帧时间间隔，单位为秒/帧。 
 
@@ -100,7 +100,7 @@ class ServiceConfigCommon:
 
     @property
     def categories(self):
-        """Gets the categories of this ServiceConfigCommon.
+        r"""Gets the categories of this ServiceConfigCommon.
 
         视频检测场景。  politics：政治人物的检测。 terrorism：暴恐元素的检测。 porn：涉黄内容元素的检测。 可通过配置上述场景，来完成对应场景元素的检测。  说明： 如需配置多个检测场景，则将多个场景名称使用英文半角逗号拼接。例如，\"categories\": \"politics,terrorism,porn\" 
 
@@ -111,7 +111,7 @@ class ServiceConfigCommon:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this ServiceConfigCommon.
+        r"""Sets the categories of this ServiceConfigCommon.
 
         视频检测场景。  politics：政治人物的检测。 terrorism：暴恐元素的检测。 porn：涉黄内容元素的检测。 可通过配置上述场景，来完成对应场景元素的检测。  说明： 如需配置多个检测场景，则将多个场景名称使用英文半角逗号拼接。例如，\"categories\": \"politics,terrorism,porn\" 
 
@@ -122,7 +122,7 @@ class ServiceConfigCommon:
 
     @property
     def text_categories(self):
-        """Gets the text_categories of this ServiceConfigCommon.
+        r"""Gets the text_categories of this ServiceConfigCommon.
 
         语音或文字审核服务的检测场景，目前主要支持以下几种：  politics：政治人物的检测。 porn：涉黄内容元素的检测。 ad：广告的检测。 abuse：辱骂内容元素的检测。 contraband：违禁品的检测 flood：灌水内容元素的检测。 当使用语音或文字检测服务时，这里应当设置出对应的场景。  说明： 如需配置多个检测场景，则将多个场景名称使用英文半角逗号拼接。例如，\"text_categories\": \"politics,porn\"。 
 
@@ -133,7 +133,7 @@ class ServiceConfigCommon:
 
     @text_categories.setter
     def text_categories(self, text_categories):
-        """Sets the text_categories of this ServiceConfigCommon.
+        r"""Sets the text_categories of this ServiceConfigCommon.
 
         语音或文字审核服务的检测场景，目前主要支持以下几种：  politics：政治人物的检测。 porn：涉黄内容元素的检测。 ad：广告的检测。 abuse：辱骂内容元素的检测。 contraband：违禁品的检测 flood：灌水内容元素的检测。 当使用语音或文字检测服务时，这里应当设置出对应的场景。  说明： 如需配置多个检测场景，则将多个场景名称使用英文半角逗号拼接。例如，\"text_categories\": \"politics,porn\"。 
 
@@ -144,7 +144,7 @@ class ServiceConfigCommon:
 
     @property
     def use_sis(self):
-        """Gets the use_sis of this ServiceConfigCommon.
+        r"""Gets the use_sis of this ServiceConfigCommon.
 
         是否使用语音审核服务。  true：使用 false：不使用 当不设置该参数或参数为空时，默认为不使用。 
 
@@ -155,7 +155,7 @@ class ServiceConfigCommon:
 
     @use_sis.setter
     def use_sis(self, use_sis):
-        """Sets the use_sis of this ServiceConfigCommon.
+        r"""Sets the use_sis of this ServiceConfigCommon.
 
         是否使用语音审核服务。  true：使用 false：不使用 当不设置该参数或参数为空时，默认为不使用。 
 
@@ -166,7 +166,7 @@ class ServiceConfigCommon:
 
     @property
     def use_ocr(self):
-        """Gets the use_ocr of this ServiceConfigCommon.
+        r"""Gets the use_ocr of this ServiceConfigCommon.
 
         是否使用文字审核服务。  true：使用 false：不使用 当不设置该参数或参数为空时，默认为不使用。 
 
@@ -177,7 +177,7 @@ class ServiceConfigCommon:
 
     @use_ocr.setter
     def use_ocr(self, use_ocr):
-        """Sets the use_ocr of this ServiceConfigCommon.
+        r"""Sets the use_ocr of this ServiceConfigCommon.
 
         是否使用文字审核服务。  true：使用 false：不使用 当不设置该参数或参数为空时，默认为不使用。 
 
@@ -188,7 +188,7 @@ class ServiceConfigCommon:
 
     @property
     def upload(self):
-        """Gets the upload of this ServiceConfigCommon.
+        r"""Gets the upload of this ServiceConfigCommon.
 
         是否使用问题场景图片上传服务。  true：使用 false：不使用 当不设置该参数或参数为空时，默认为不使用。  当使用该服务时，必须设置obs输出目录，否则图片无法上传。问题图片会自动上传至输出路径/task_id目录下。 
 
@@ -199,7 +199,7 @@ class ServiceConfigCommon:
 
     @upload.setter
     def upload(self, upload):
-        """Sets the upload of this ServiceConfigCommon.
+        r"""Sets the upload of this ServiceConfigCommon.
 
         是否使用问题场景图片上传服务。  true：使用 false：不使用 当不设置该参数或参数为空时，默认为不使用。  当使用该服务时，必须设置obs输出目录，否则图片无法上传。问题图片会自动上传至输出路径/task_id目录下。 
 

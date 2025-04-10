@@ -40,7 +40,7 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, create_time=None, update_time=None, is_upgradeable=None):
-        """CreateClusterResponse
+        r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterResponse.
+        r"""Gets the cluster_id of this CreateClusterResponse.
 
         集群ID
 
@@ -104,7 +104,7 @@ class CreateClusterResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterResponse.
+        r"""Sets the cluster_id of this CreateClusterResponse.
 
         集群ID
 
@@ -115,7 +115,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateClusterResponse.
+        r"""Gets the cluster_name of this CreateClusterResponse.
 
         集群名称
 
@@ -126,7 +126,7 @@ class CreateClusterResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateClusterResponse.
+        r"""Sets the cluster_name of this CreateClusterResponse.
 
         集群名称
 
@@ -137,7 +137,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateClusterResponse.
+        r"""Gets the description of this CreateClusterResponse.
 
         集群描述
 
@@ -148,7 +148,7 @@ class CreateClusterResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateClusterResponse.
+        r"""Sets the description of this CreateClusterResponse.
 
         集群描述
 
@@ -159,7 +159,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateClusterResponse.
+        r"""Gets the version of this CreateClusterResponse.
 
         边缘集群版本
 
@@ -170,7 +170,7 @@ class CreateClusterResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateClusterResponse.
+        r"""Sets the version of this CreateClusterResponse.
 
         边缘集群版本
 
@@ -181,7 +181,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CreateClusterResponse.
+        r"""Gets the state of this CreateClusterResponse.
 
         边缘集群状态
 
@@ -192,7 +192,7 @@ class CreateClusterResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateClusterResponse.
+        r"""Sets the state of this CreateClusterResponse.
 
         边缘集群状态
 
@@ -203,7 +203,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateClusterResponse.
+        r"""Gets the create_time of this CreateClusterResponse.
 
         创建时间
 
@@ -214,7 +214,7 @@ class CreateClusterResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateClusterResponse.
+        r"""Sets the create_time of this CreateClusterResponse.
 
         创建时间
 
@@ -225,7 +225,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateClusterResponse.
+        r"""Gets the update_time of this CreateClusterResponse.
 
         最后一次修改时间
 
@@ -236,7 +236,7 @@ class CreateClusterResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateClusterResponse.
+        r"""Sets the update_time of this CreateClusterResponse.
 
         最后一次修改时间
 
@@ -247,7 +247,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def is_upgradeable(self):
-        """Gets the is_upgradeable of this CreateClusterResponse.
+        r"""Gets the is_upgradeable of this CreateClusterResponse.
 
         是否可升级
 
@@ -258,7 +258,7 @@ class CreateClusterResponse(SdkResponse):
 
     @is_upgradeable.setter
     def is_upgradeable(self, is_upgradeable):
-        """Sets the is_upgradeable of this CreateClusterResponse.
+        r"""Sets the is_upgradeable of this CreateClusterResponse.
 
         是否可升级
 

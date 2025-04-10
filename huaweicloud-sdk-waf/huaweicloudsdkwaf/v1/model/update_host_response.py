@@ -86,7 +86,7 @@ class UpdateHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostname=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protocol=None, server=None, proxy=None, protect_status=None, access_status=None, access_code=None, locked=None, timestamp=None, certificateid=None, certificatename=None, tls=None, cipher=None, block_page=None, extend=None, web_tag=None, traffic_mark=None, circuit_breaker=None, lb_algorithm=None, timeout_config=None, flag=None, description=None, http2_enable=None, exclusive_ip=None, access_progress=None, forward_header_map=None):
-        """UpdateHostResponse
+        r"""UpdateHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -254,7 +254,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateHostResponse.
+        r"""Gets the id of this UpdateHostResponse.
 
         域名id
 
@@ -265,7 +265,7 @@ class UpdateHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateHostResponse.
+        r"""Sets the id of this UpdateHostResponse.
 
         域名id
 
@@ -276,7 +276,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this UpdateHostResponse.
+        r"""Gets the hostname of this UpdateHostResponse.
 
         创建的云模式防护域名
 
@@ -287,7 +287,7 @@ class UpdateHostResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this UpdateHostResponse.
+        r"""Sets the hostname of this UpdateHostResponse.
 
         创建的云模式防护域名
 
@@ -298,7 +298,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateHostResponse.
+        r"""Gets the policyid of this UpdateHostResponse.
 
         防护域名的防护策略id
 
@@ -309,7 +309,7 @@ class UpdateHostResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateHostResponse.
+        r"""Sets the policyid of this UpdateHostResponse.
 
         防护域名的防护策略id
 
@@ -320,7 +320,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def domainid(self):
-        """Gets the domainid of this UpdateHostResponse.
+        r"""Gets the domainid of this UpdateHostResponse.
 
         账号ID,对应华为云控制台用户名->我的凭证->账号ID
 
@@ -331,7 +331,7 @@ class UpdateHostResponse(SdkResponse):
 
     @domainid.setter
     def domainid(self, domainid):
-        """Sets the domainid of this UpdateHostResponse.
+        r"""Sets the domainid of this UpdateHostResponse.
 
         账号ID,对应华为云控制台用户名->我的凭证->账号ID
 
@@ -342,7 +342,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def projectid(self):
-        """Gets the projectid of this UpdateHostResponse.
+        r"""Gets the projectid of this UpdateHostResponse.
 
         项目ID，对应华为云控制台用户名->我的凭证->项目列表->项目ID
 
@@ -353,7 +353,7 @@ class UpdateHostResponse(SdkResponse):
 
     @projectid.setter
     def projectid(self, projectid):
-        """Sets the projectid of this UpdateHostResponse.
+        r"""Sets the projectid of this UpdateHostResponse.
 
         项目ID，对应华为云控制台用户名->我的凭证->项目列表->项目ID
 
@@ -364,7 +364,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateHostResponse.
+        r"""Gets the enterprise_project_id of this UpdateHostResponse.
 
         企业项目ID，对应华为云控制台用户名->企业->项目管理->点击项目名称->ID
 
@@ -375,7 +375,7 @@ class UpdateHostResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateHostResponse.
+        r"""Sets the enterprise_project_id of this UpdateHostResponse.
 
         企业项目ID，对应华为云控制台用户名->企业->项目管理->点击项目名称->ID
 
@@ -386,7 +386,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateHostResponse.
+        r"""Gets the protocol of this UpdateHostResponse.
 
         后端包含的协议类型：HTTPS、HTTP、HTTP&HTTPS
 
@@ -397,7 +397,7 @@ class UpdateHostResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateHostResponse.
+        r"""Sets the protocol of this UpdateHostResponse.
 
         后端包含的协议类型：HTTPS、HTTP、HTTP&HTTPS
 
@@ -408,7 +408,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this UpdateHostResponse.
+        r"""Gets the server of this UpdateHostResponse.
 
         防护域名的源站服务器配置信息
 
@@ -419,7 +419,7 @@ class UpdateHostResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this UpdateHostResponse.
+        r"""Sets the server of this UpdateHostResponse.
 
         防护域名的源站服务器配置信息
 
@@ -430,7 +430,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def proxy(self):
-        """Gets the proxy of this UpdateHostResponse.
+        r"""Gets the proxy of this UpdateHostResponse.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -441,7 +441,7 @@ class UpdateHostResponse(SdkResponse):
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this UpdateHostResponse.
+        r"""Sets the proxy of this UpdateHostResponse.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -452,7 +452,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this UpdateHostResponse.
+        r"""Gets the protect_status of this UpdateHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -463,7 +463,7 @@ class UpdateHostResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this UpdateHostResponse.
+        r"""Sets the protect_status of this UpdateHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -474,7 +474,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this UpdateHostResponse.
+        r"""Gets the access_status of this UpdateHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -485,7 +485,7 @@ class UpdateHostResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this UpdateHostResponse.
+        r"""Sets the access_status of this UpdateHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -496,7 +496,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def access_code(self):
-        """Gets the access_code of this UpdateHostResponse.
+        r"""Gets the access_code of this UpdateHostResponse.
 
         cname前缀
 
@@ -507,7 +507,7 @@ class UpdateHostResponse(SdkResponse):
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this UpdateHostResponse.
+        r"""Sets the access_code of this UpdateHostResponse.
 
         cname前缀
 
@@ -518,7 +518,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def locked(self):
-        """Gets the locked of this UpdateHostResponse.
+        r"""Gets the locked of this UpdateHostResponse.
 
         预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
 
@@ -529,7 +529,7 @@ class UpdateHostResponse(SdkResponse):
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UpdateHostResponse.
+        r"""Sets the locked of this UpdateHostResponse.
 
         预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
 
@@ -540,7 +540,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateHostResponse.
+        r"""Gets the timestamp of this UpdateHostResponse.
 
         创建防护域名的时间戳（毫秒）
 
@@ -551,7 +551,7 @@ class UpdateHostResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateHostResponse.
+        r"""Sets the timestamp of this UpdateHostResponse.
 
         创建防护域名的时间戳（毫秒）
 
@@ -562,7 +562,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def certificateid(self):
-        """Gets the certificateid of this UpdateHostResponse.
+        r"""Gets the certificateid of this UpdateHostResponse.
 
         https证书id
 
@@ -573,7 +573,7 @@ class UpdateHostResponse(SdkResponse):
 
     @certificateid.setter
     def certificateid(self, certificateid):
-        """Sets the certificateid of this UpdateHostResponse.
+        r"""Sets the certificateid of this UpdateHostResponse.
 
         https证书id
 
@@ -584,7 +584,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def certificatename(self):
-        """Gets the certificatename of this UpdateHostResponse.
+        r"""Gets the certificatename of this UpdateHostResponse.
 
         证书名称
 
@@ -595,7 +595,7 @@ class UpdateHostResponse(SdkResponse):
 
     @certificatename.setter
     def certificatename(self, certificatename):
-        """Sets the certificatename of this UpdateHostResponse.
+        r"""Sets the certificatename of this UpdateHostResponse.
 
         证书名称
 
@@ -606,7 +606,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def tls(self):
-        """Gets the tls of this UpdateHostResponse.
+        r"""Gets the tls of this UpdateHostResponse.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -617,7 +617,7 @@ class UpdateHostResponse(SdkResponse):
 
     @tls.setter
     def tls(self, tls):
-        """Sets the tls of this UpdateHostResponse.
+        r"""Sets the tls of this UpdateHostResponse.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -628,7 +628,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def cipher(self):
-        """Gets the cipher of this UpdateHostResponse.
+        r"""Gets the cipher of this UpdateHostResponse.
 
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -639,7 +639,7 @@ class UpdateHostResponse(SdkResponse):
 
     @cipher.setter
     def cipher(self, cipher):
-        """Sets the cipher of this UpdateHostResponse.
+        r"""Sets the cipher of this UpdateHostResponse.
 
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -650,7 +650,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def block_page(self):
-        """Gets the block_page of this UpdateHostResponse.
+        r"""Gets the block_page of this UpdateHostResponse.
 
         :return: The block_page of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -659,7 +659,7 @@ class UpdateHostResponse(SdkResponse):
 
     @block_page.setter
     def block_page(self, block_page):
-        """Sets the block_page of this UpdateHostResponse.
+        r"""Sets the block_page of this UpdateHostResponse.
 
         :param block_page: The block_page of this UpdateHostResponse.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -668,7 +668,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this UpdateHostResponse.
+        r"""Gets the extend of this UpdateHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -679,7 +679,7 @@ class UpdateHostResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this UpdateHostResponse.
+        r"""Sets the extend of this UpdateHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -690,7 +690,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this UpdateHostResponse.
+        r"""Gets the web_tag of this UpdateHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -701,7 +701,7 @@ class UpdateHostResponse(SdkResponse):
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this UpdateHostResponse.
+        r"""Sets the web_tag of this UpdateHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -712,7 +712,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def traffic_mark(self):
-        """Gets the traffic_mark of this UpdateHostResponse.
+        r"""Gets the traffic_mark of this UpdateHostResponse.
 
         :return: The traffic_mark of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -721,7 +721,7 @@ class UpdateHostResponse(SdkResponse):
 
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
-        """Sets the traffic_mark of this UpdateHostResponse.
+        r"""Sets the traffic_mark of this UpdateHostResponse.
 
         :param traffic_mark: The traffic_mark of this UpdateHostResponse.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -730,7 +730,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def circuit_breaker(self):
-        """Gets the circuit_breaker of this UpdateHostResponse.
+        r"""Gets the circuit_breaker of this UpdateHostResponse.
 
         :return: The circuit_breaker of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -739,7 +739,7 @@ class UpdateHostResponse(SdkResponse):
 
     @circuit_breaker.setter
     def circuit_breaker(self, circuit_breaker):
-        """Sets the circuit_breaker of this UpdateHostResponse.
+        r"""Sets the circuit_breaker of this UpdateHostResponse.
 
         :param circuit_breaker: The circuit_breaker of this UpdateHostResponse.
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -748,7 +748,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this UpdateHostResponse.
+        r"""Gets the lb_algorithm of this UpdateHostResponse.
 
         LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
@@ -759,7 +759,7 @@ class UpdateHostResponse(SdkResponse):
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this UpdateHostResponse.
+        r"""Sets the lb_algorithm of this UpdateHostResponse.
 
         LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
@@ -770,7 +770,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def timeout_config(self):
-        """Gets the timeout_config of this UpdateHostResponse.
+        r"""Gets the timeout_config of this UpdateHostResponse.
 
         :return: The timeout_config of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -779,7 +779,7 @@ class UpdateHostResponse(SdkResponse):
 
     @timeout_config.setter
     def timeout_config(self, timeout_config):
-        """Sets the timeout_config of this UpdateHostResponse.
+        r"""Sets the timeout_config of this UpdateHostResponse.
 
         :param timeout_config: The timeout_config of this UpdateHostResponse.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -788,7 +788,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this UpdateHostResponse.
+        r"""Gets the flag of this UpdateHostResponse.
 
         :return: The flag of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -797,7 +797,7 @@ class UpdateHostResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this UpdateHostResponse.
+        r"""Sets the flag of this UpdateHostResponse.
 
         :param flag: The flag of this UpdateHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -806,7 +806,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateHostResponse.
+        r"""Gets the description of this UpdateHostResponse.
 
         网站备注
 
@@ -817,7 +817,7 @@ class UpdateHostResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHostResponse.
+        r"""Sets the description of this UpdateHostResponse.
 
         网站备注
 
@@ -828,7 +828,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def http2_enable(self):
-        """Gets the http2_enable of this UpdateHostResponse.
+        r"""Gets the http2_enable of this UpdateHostResponse.
 
         是否支持http2   - true：表示支持http2   - false：表示不支持http2
 
@@ -839,7 +839,7 @@ class UpdateHostResponse(SdkResponse):
 
     @http2_enable.setter
     def http2_enable(self, http2_enable):
-        """Sets the http2_enable of this UpdateHostResponse.
+        r"""Sets the http2_enable of this UpdateHostResponse.
 
         是否支持http2   - true：表示支持http2   - false：表示不支持http2
 
@@ -850,7 +850,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this UpdateHostResponse.
+        r"""Gets the exclusive_ip of this UpdateHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -861,7 +861,7 @@ class UpdateHostResponse(SdkResponse):
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this UpdateHostResponse.
+        r"""Sets the exclusive_ip of this UpdateHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -872,7 +872,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def access_progress(self):
-        """Gets the access_progress of this UpdateHostResponse.
+        r"""Gets the access_progress of this UpdateHostResponse.
 
         接入进度，仅用于新版console(前端)使用
 
@@ -883,7 +883,7 @@ class UpdateHostResponse(SdkResponse):
 
     @access_progress.setter
     def access_progress(self, access_progress):
-        """Sets the access_progress of this UpdateHostResponse.
+        r"""Sets the access_progress of this UpdateHostResponse.
 
         接入进度，仅用于新版console(前端)使用
 
@@ -894,7 +894,7 @@ class UpdateHostResponse(SdkResponse):
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this UpdateHostResponse.
+        r"""Gets the forward_header_map of this UpdateHostResponse.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -905,7 +905,7 @@ class UpdateHostResponse(SdkResponse):
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this UpdateHostResponse.
+        r"""Sets the forward_header_map of this UpdateHostResponse.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 

@@ -27,7 +27,7 @@ class ImportFlinkJobSavepointRequestBody:
     }
 
     def __init__(self, job_id=None, savepoint_path=None):
-        """ImportFlinkJobSavepointRequestBody
+        r"""ImportFlinkJobSavepointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ImportFlinkJobSavepointRequestBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportFlinkJobSavepointRequestBody.
+        r"""Gets the job_id of this ImportFlinkJobSavepointRequestBody.
 
         Flink作业的id
 
@@ -59,7 +59,7 @@ class ImportFlinkJobSavepointRequestBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportFlinkJobSavepointRequestBody.
+        r"""Sets the job_id of this ImportFlinkJobSavepointRequestBody.
 
         Flink作业的id
 
@@ -70,7 +70,7 @@ class ImportFlinkJobSavepointRequestBody:
 
     @property
     def savepoint_path(self):
-        """Gets the savepoint_path of this ImportFlinkJobSavepointRequestBody.
+        r"""Gets the savepoint_path of this ImportFlinkJobSavepointRequestBody.
 
         Savepoint路径。需指定到_metaData文件的上级目录 例：\"obs://bucket_name/file_name/\"
 
@@ -81,7 +81,7 @@ class ImportFlinkJobSavepointRequestBody:
 
     @savepoint_path.setter
     def savepoint_path(self, savepoint_path):
-        """Sets the savepoint_path of this ImportFlinkJobSavepointRequestBody.
+        r"""Sets the savepoint_path of this ImportFlinkJobSavepointRequestBody.
 
         Savepoint路径。需指定到_metaData文件的上级目录 例：\"obs://bucket_name/file_name/\"
 

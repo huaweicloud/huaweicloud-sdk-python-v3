@@ -28,7 +28,7 @@ class ListGeoipRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListGeoipRuleResponse
+        r"""ListGeoipRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGeoipRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListGeoipRuleResponse.
+        r"""Gets the total of this ListGeoipRuleResponse.
 
         该策略下地理位置控制规则数量
 
@@ -62,7 +62,7 @@ class ListGeoipRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListGeoipRuleResponse.
+        r"""Sets the total of this ListGeoipRuleResponse.
 
         该策略下地理位置控制规则数量
 
@@ -73,7 +73,7 @@ class ListGeoipRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListGeoipRuleResponse.
+        r"""Gets the items of this ListGeoipRuleResponse.
 
         地理位置控制规则数组
 
@@ -84,7 +84,7 @@ class ListGeoipRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListGeoipRuleResponse.
+        r"""Sets the items of this ListGeoipRuleResponse.
 
         地理位置控制规则数组
 

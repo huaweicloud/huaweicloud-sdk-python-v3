@@ -77,7 +77,7 @@ class AlarmDataVO:
     }
 
     def __init__(self, id=None, gmt_create=None, region_alarm_event_id=None, business_name=None, app_name=None, version_number=None, alarm_rule_type=None, gmt_modify=None, process_unit=None, region=None, instance_id=None, ip_address=None, instance_name=None, env_id=None, business_id=None, template_id=None, alarm_rule_id=None, monitor_item_id=None, collector_id=None, collector_name=None, alarm_rule_name=None, alarm_rule_expression=None, alarm_first_time=None, alarm_last_time=None, alarm_level=None, restrain_key=None, status=None):
-        """AlarmDataVO
+        r"""AlarmDataVO
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class AlarmDataVO:
 
     @property
     def id(self):
-        """Gets the id of this AlarmDataVO.
+        r"""Gets the id of this AlarmDataVO.
 
         告警通知id。
 
@@ -236,7 +236,7 @@ class AlarmDataVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlarmDataVO.
+        r"""Sets the id of this AlarmDataVO.
 
         告警通知id。
 
@@ -247,7 +247,7 @@ class AlarmDataVO:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this AlarmDataVO.
+        r"""Gets the gmt_create of this AlarmDataVO.
 
         创建时间。
 
@@ -258,7 +258,7 @@ class AlarmDataVO:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this AlarmDataVO.
+        r"""Sets the gmt_create of this AlarmDataVO.
 
         创建时间。
 
@@ -269,7 +269,7 @@ class AlarmDataVO:
 
     @property
     def region_alarm_event_id(self):
-        """Gets the region_alarm_event_id of this AlarmDataVO.
+        r"""Gets the region_alarm_event_id of this AlarmDataVO.
 
         region中事件的id。
 
@@ -280,7 +280,7 @@ class AlarmDataVO:
 
     @region_alarm_event_id.setter
     def region_alarm_event_id(self, region_alarm_event_id):
-        """Sets the region_alarm_event_id of this AlarmDataVO.
+        r"""Sets the region_alarm_event_id of this AlarmDataVO.
 
         region中事件的id。
 
@@ -291,7 +291,7 @@ class AlarmDataVO:
 
     @property
     def business_name(self):
-        """Gets the business_name of this AlarmDataVO.
+        r"""Gets the business_name of this AlarmDataVO.
 
         应用名称。
 
@@ -302,7 +302,7 @@ class AlarmDataVO:
 
     @business_name.setter
     def business_name(self, business_name):
-        """Sets the business_name of this AlarmDataVO.
+        r"""Sets the business_name of this AlarmDataVO.
 
         应用名称。
 
@@ -313,7 +313,7 @@ class AlarmDataVO:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AlarmDataVO.
+        r"""Gets the app_name of this AlarmDataVO.
 
         组件名称。
 
@@ -324,7 +324,7 @@ class AlarmDataVO:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AlarmDataVO.
+        r"""Sets the app_name of this AlarmDataVO.
 
         组件名称。
 
@@ -335,7 +335,7 @@ class AlarmDataVO:
 
     @property
     def version_number(self):
-        """Gets the version_number of this AlarmDataVO.
+        r"""Gets the version_number of this AlarmDataVO.
 
         版本。
 
@@ -346,7 +346,7 @@ class AlarmDataVO:
 
     @version_number.setter
     def version_number(self, version_number):
-        """Sets the version_number of this AlarmDataVO.
+        r"""Sets the version_number of this AlarmDataVO.
 
         版本。
 
@@ -357,7 +357,7 @@ class AlarmDataVO:
 
     @property
     def alarm_rule_type(self):
-        """Gets the alarm_rule_type of this AlarmDataVO.
+        r"""Gets the alarm_rule_type of this AlarmDataVO.
 
         告警规则类别。
 
@@ -368,7 +368,7 @@ class AlarmDataVO:
 
     @alarm_rule_type.setter
     def alarm_rule_type(self, alarm_rule_type):
-        """Sets the alarm_rule_type of this AlarmDataVO.
+        r"""Sets the alarm_rule_type of this AlarmDataVO.
 
         告警规则类别。
 
@@ -379,7 +379,7 @@ class AlarmDataVO:
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this AlarmDataVO.
+        r"""Gets the gmt_modify of this AlarmDataVO.
 
         修改时间。
 
@@ -390,7 +390,7 @@ class AlarmDataVO:
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this AlarmDataVO.
+        r"""Sets the gmt_modify of this AlarmDataVO.
 
         修改时间。
 
@@ -401,7 +401,7 @@ class AlarmDataVO:
 
     @property
     def process_unit(self):
-        """Gets the process_unit of this AlarmDataVO.
+        r"""Gets the process_unit of this AlarmDataVO.
 
         处理单元。
 
@@ -412,7 +412,7 @@ class AlarmDataVO:
 
     @process_unit.setter
     def process_unit(self, process_unit):
-        """Sets the process_unit of this AlarmDataVO.
+        r"""Sets the process_unit of this AlarmDataVO.
 
         处理单元。
 
@@ -423,7 +423,7 @@ class AlarmDataVO:
 
     @property
     def region(self):
-        """Gets the region of this AlarmDataVO.
+        r"""Gets the region of this AlarmDataVO.
 
         区域名称。
 
@@ -434,7 +434,7 @@ class AlarmDataVO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AlarmDataVO.
+        r"""Sets the region of this AlarmDataVO.
 
         区域名称。
 
@@ -445,7 +445,7 @@ class AlarmDataVO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AlarmDataVO.
+        r"""Gets the instance_id of this AlarmDataVO.
 
         实例id。
 
@@ -456,7 +456,7 @@ class AlarmDataVO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AlarmDataVO.
+        r"""Sets the instance_id of this AlarmDataVO.
 
         实例id。
 
@@ -467,7 +467,7 @@ class AlarmDataVO:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AlarmDataVO.
+        r"""Gets the ip_address of this AlarmDataVO.
 
         实例ip地址。
 
@@ -478,7 +478,7 @@ class AlarmDataVO:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AlarmDataVO.
+        r"""Sets the ip_address of this AlarmDataVO.
 
         实例ip地址。
 
@@ -489,7 +489,7 @@ class AlarmDataVO:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this AlarmDataVO.
+        r"""Gets the instance_name of this AlarmDataVO.
 
         实例名称。
 
@@ -500,7 +500,7 @@ class AlarmDataVO:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this AlarmDataVO.
+        r"""Sets the instance_name of this AlarmDataVO.
 
         实例名称。
 
@@ -511,7 +511,7 @@ class AlarmDataVO:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AlarmDataVO.
+        r"""Gets the env_id of this AlarmDataVO.
 
         环境id。
 
@@ -522,7 +522,7 @@ class AlarmDataVO:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AlarmDataVO.
+        r"""Sets the env_id of this AlarmDataVO.
 
         环境id。
 
@@ -533,7 +533,7 @@ class AlarmDataVO:
 
     @property
     def business_id(self):
-        """Gets the business_id of this AlarmDataVO.
+        r"""Gets the business_id of this AlarmDataVO.
 
         应用id。
 
@@ -544,7 +544,7 @@ class AlarmDataVO:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this AlarmDataVO.
+        r"""Sets the business_id of this AlarmDataVO.
 
         应用id。
 
@@ -555,7 +555,7 @@ class AlarmDataVO:
 
     @property
     def template_id(self):
-        """Gets the template_id of this AlarmDataVO.
+        r"""Gets the template_id of this AlarmDataVO.
 
         模板id。
 
@@ -566,7 +566,7 @@ class AlarmDataVO:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this AlarmDataVO.
+        r"""Sets the template_id of this AlarmDataVO.
 
         模板id。
 
@@ -577,7 +577,7 @@ class AlarmDataVO:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this AlarmDataVO.
+        r"""Gets the alarm_rule_id of this AlarmDataVO.
 
         告警规则id。
 
@@ -588,7 +588,7 @@ class AlarmDataVO:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this AlarmDataVO.
+        r"""Sets the alarm_rule_id of this AlarmDataVO.
 
         告警规则id。
 
@@ -599,7 +599,7 @@ class AlarmDataVO:
 
     @property
     def monitor_item_id(self):
-        """Gets the monitor_item_id of this AlarmDataVO.
+        r"""Gets the monitor_item_id of this AlarmDataVO.
 
         监控项id。
 
@@ -610,7 +610,7 @@ class AlarmDataVO:
 
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
-        """Sets the monitor_item_id of this AlarmDataVO.
+        r"""Sets the monitor_item_id of this AlarmDataVO.
 
         监控项id。
 
@@ -621,7 +621,7 @@ class AlarmDataVO:
 
     @property
     def collector_id(self):
-        """Gets the collector_id of this AlarmDataVO.
+        r"""Gets the collector_id of this AlarmDataVO.
 
         采集器id。
 
@@ -632,7 +632,7 @@ class AlarmDataVO:
 
     @collector_id.setter
     def collector_id(self, collector_id):
-        """Sets the collector_id of this AlarmDataVO.
+        r"""Sets the collector_id of this AlarmDataVO.
 
         采集器id。
 
@@ -643,7 +643,7 @@ class AlarmDataVO:
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this AlarmDataVO.
+        r"""Gets the collector_name of this AlarmDataVO.
 
         采集器名称。
 
@@ -654,7 +654,7 @@ class AlarmDataVO:
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this AlarmDataVO.
+        r"""Sets the collector_name of this AlarmDataVO.
 
         采集器名称。
 
@@ -665,7 +665,7 @@ class AlarmDataVO:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this AlarmDataVO.
+        r"""Gets the alarm_rule_name of this AlarmDataVO.
 
         告警规则名称。
 
@@ -676,7 +676,7 @@ class AlarmDataVO:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this AlarmDataVO.
+        r"""Sets the alarm_rule_name of this AlarmDataVO.
 
         告警规则名称。
 
@@ -687,7 +687,7 @@ class AlarmDataVO:
 
     @property
     def alarm_rule_expression(self):
-        """Gets the alarm_rule_expression of this AlarmDataVO.
+        r"""Gets the alarm_rule_expression of this AlarmDataVO.
 
         告警表达式。
 
@@ -698,7 +698,7 @@ class AlarmDataVO:
 
     @alarm_rule_expression.setter
     def alarm_rule_expression(self, alarm_rule_expression):
-        """Sets the alarm_rule_expression of this AlarmDataVO.
+        r"""Sets the alarm_rule_expression of this AlarmDataVO.
 
         告警表达式。
 
@@ -709,7 +709,7 @@ class AlarmDataVO:
 
     @property
     def alarm_first_time(self):
-        """Gets the alarm_first_time of this AlarmDataVO.
+        r"""Gets the alarm_first_time of this AlarmDataVO.
 
         开始报警时间。
 
@@ -720,7 +720,7 @@ class AlarmDataVO:
 
     @alarm_first_time.setter
     def alarm_first_time(self, alarm_first_time):
-        """Sets the alarm_first_time of this AlarmDataVO.
+        r"""Sets the alarm_first_time of this AlarmDataVO.
 
         开始报警时间。
 
@@ -731,7 +731,7 @@ class AlarmDataVO:
 
     @property
     def alarm_last_time(self):
-        """Gets the alarm_last_time of this AlarmDataVO.
+        r"""Gets the alarm_last_time of this AlarmDataVO.
 
         最后一次报警时间。
 
@@ -742,7 +742,7 @@ class AlarmDataVO:
 
     @alarm_last_time.setter
     def alarm_last_time(self, alarm_last_time):
-        """Sets the alarm_last_time of this AlarmDataVO.
+        r"""Sets the alarm_last_time of this AlarmDataVO.
 
         最后一次报警时间。
 
@@ -753,7 +753,7 @@ class AlarmDataVO:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmDataVO.
+        r"""Gets the alarm_level of this AlarmDataVO.
 
         告警级别。
 
@@ -764,7 +764,7 @@ class AlarmDataVO:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmDataVO.
+        r"""Sets the alarm_level of this AlarmDataVO.
 
         告警级别。
 
@@ -775,7 +775,7 @@ class AlarmDataVO:
 
     @property
     def restrain_key(self):
-        """Gets the restrain_key of this AlarmDataVO.
+        r"""Gets the restrain_key of this AlarmDataVO.
 
         唯一告警标识符。
 
@@ -786,7 +786,7 @@ class AlarmDataVO:
 
     @restrain_key.setter
     def restrain_key(self, restrain_key):
-        """Sets the restrain_key of this AlarmDataVO.
+        r"""Sets the restrain_key of this AlarmDataVO.
 
         唯一告警标识符。
 
@@ -797,7 +797,7 @@ class AlarmDataVO:
 
     @property
     def status(self):
-        """Gets the status of this AlarmDataVO.
+        r"""Gets the status of this AlarmDataVO.
 
         告警状态。
 
@@ -808,7 +808,7 @@ class AlarmDataVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmDataVO.
+        r"""Sets the status of this AlarmDataVO.
 
         告警状态。
 

@@ -27,7 +27,7 @@ class CreateStudyReq:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateStudyReq
+        r"""CreateStudyReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateStudyReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateStudyReq.
+        r"""Gets the name of this CreateStudyReq.
 
         study名称
 
@@ -60,7 +60,7 @@ class CreateStudyReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateStudyReq.
+        r"""Sets the name of this CreateStudyReq.
 
         study名称
 
@@ -71,7 +71,7 @@ class CreateStudyReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateStudyReq.
+        r"""Gets the description of this CreateStudyReq.
 
         study描述
 
@@ -82,7 +82,7 @@ class CreateStudyReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateStudyReq.
+        r"""Sets the description of this CreateStudyReq.
 
         study描述
 

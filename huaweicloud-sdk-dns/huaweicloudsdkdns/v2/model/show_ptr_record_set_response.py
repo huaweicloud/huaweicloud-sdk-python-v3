@@ -42,7 +42,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None, enterprise_project_id=None):
-        """ShowPtrRecordSetResponse
+        r"""ShowPtrRecordSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPtrRecordSetResponse.
+        r"""Gets the id of this ShowPtrRecordSetResponse.
 
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
@@ -111,7 +111,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPtrRecordSetResponse.
+        r"""Sets the id of this ShowPtrRecordSetResponse.
 
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
@@ -122,7 +122,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def ptrdname(self):
-        """Gets the ptrdname of this ShowPtrRecordSetResponse.
+        r"""Gets the ptrdname of this ShowPtrRecordSetResponse.
 
         PTR记录对应的域名。
 
@@ -133,7 +133,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @ptrdname.setter
     def ptrdname(self, ptrdname):
-        """Sets the ptrdname of this ShowPtrRecordSetResponse.
+        r"""Sets the ptrdname of this ShowPtrRecordSetResponse.
 
         PTR记录对应的域名。
 
@@ -144,7 +144,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPtrRecordSetResponse.
+        r"""Gets the description of this ShowPtrRecordSetResponse.
 
         对PTR记录的描述。
 
@@ -155,7 +155,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPtrRecordSetResponse.
+        r"""Sets the description of this ShowPtrRecordSetResponse.
 
         对PTR记录的描述。
 
@@ -166,7 +166,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this ShowPtrRecordSetResponse.
+        r"""Gets the ttl of this ShowPtrRecordSetResponse.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -177,7 +177,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ShowPtrRecordSetResponse.
+        r"""Sets the ttl of this ShowPtrRecordSetResponse.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -188,7 +188,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def address(self):
-        """Gets the address of this ShowPtrRecordSetResponse.
+        r"""Gets the address of this ShowPtrRecordSetResponse.
 
         弹性公网IP的IP地址。
 
@@ -199,7 +199,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ShowPtrRecordSetResponse.
+        r"""Sets the address of this ShowPtrRecordSetResponse.
 
         弹性公网IP的IP地址。
 
@@ -210,7 +210,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPtrRecordSetResponse.
+        r"""Gets the status of this ShowPtrRecordSetResponse.
 
         资源状态。
 
@@ -221,7 +221,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPtrRecordSetResponse.
+        r"""Sets the status of this ShowPtrRecordSetResponse.
 
         资源状态。
 
@@ -232,7 +232,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this ShowPtrRecordSetResponse.
+        r"""Gets the action of this ShowPtrRecordSetResponse.
 
         对该资源的当前操作。取值范围：CREATE，UPDATE，DELETE，NONE CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
 
@@ -243,7 +243,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowPtrRecordSetResponse.
+        r"""Sets the action of this ShowPtrRecordSetResponse.
 
         对该资源的当前操作。取值范围：CREATE，UPDATE，DELETE，NONE CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
 
@@ -254,7 +254,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowPtrRecordSetResponse.
+        r"""Gets the links of this ShowPtrRecordSetResponse.
 
         :return: The links of this ShowPtrRecordSetResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -263,7 +263,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowPtrRecordSetResponse.
+        r"""Sets the links of this ShowPtrRecordSetResponse.
 
         :param links: The links of this ShowPtrRecordSetResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -272,7 +272,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowPtrRecordSetResponse.
+        r"""Gets the enterprise_project_id of this ShowPtrRecordSetResponse.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 
@@ -283,7 +283,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowPtrRecordSetResponse.
+        r"""Sets the enterprise_project_id of this ShowPtrRecordSetResponse.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 

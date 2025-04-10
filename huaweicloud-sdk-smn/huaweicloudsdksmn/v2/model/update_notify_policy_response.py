@@ -26,7 +26,7 @@ class UpdateNotifyPolicyResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """UpdateNotifyPolicyResponse
+        r"""UpdateNotifyPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateNotifyPolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateNotifyPolicyResponse.
+        r"""Gets the request_id of this UpdateNotifyPolicyResponse.
 
         请求的唯一标识ID
 
@@ -55,7 +55,7 @@ class UpdateNotifyPolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateNotifyPolicyResponse.
+        r"""Sets the request_id of this UpdateNotifyPolicyResponse.
 
         请求的唯一标识ID
 

@@ -43,7 +43,7 @@ class ListFactoryJobInstancesByNameRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, min_plan_time=None, max_plan_time=None, status=None, job_name=None, force_success=None, ignore_success=None, instance_type=None):
-        """ListFactoryJobInstancesByNameRequest
+        r"""ListFactoryJobInstancesByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the workspace of this ListFactoryJobInstancesByNameRequest.
 
         工作空间ID
 
@@ -116,7 +116,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the workspace of this ListFactoryJobInstancesByNameRequest.
 
         工作空间ID
 
@@ -127,7 +127,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the limit of this ListFactoryJobInstancesByNameRequest.
 
         分页返回结果，指定每页最大记录数。 范围[1,1000] 默认值：10
 
@@ -138,7 +138,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the limit of this ListFactoryJobInstancesByNameRequest.
 
         分页返回结果，指定每页最大记录数。 范围[1,1000] 默认值：10
 
@@ -149,7 +149,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the offset of this ListFactoryJobInstancesByNameRequest.
 
         分页的起始页，默认值为0。取值范围大于等于0。
 
@@ -160,7 +160,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the offset of this ListFactoryJobInstancesByNameRequest.
 
         分页的起始页，默认值为0。取值范围大于等于0。
 
@@ -171,7 +171,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def min_plan_time(self):
-        """Gets the min_plan_time of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the min_plan_time of this ListFactoryJobInstancesByNameRequest.
 
         返回作业实例开始时间大于min_plain_time的作业实例，单位为毫秒ms，默认设置为查询当天0点，最大可支持查询一个月。
 
@@ -182,7 +182,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @min_plan_time.setter
     def min_plan_time(self, min_plan_time):
-        """Sets the min_plan_time of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the min_plan_time of this ListFactoryJobInstancesByNameRequest.
 
         返回作业实例开始时间大于min_plain_time的作业实例，单位为毫秒ms，默认设置为查询当天0点，最大可支持查询一个月。
 
@@ -193,7 +193,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def max_plan_time(self):
-        """Gets the max_plan_time of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the max_plan_time of this ListFactoryJobInstancesByNameRequest.
 
         返回作业实例开始时间小于max_plain_time的作业实例，单位为毫秒ms，默认设置为当前时间。
 
@@ -204,7 +204,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @max_plan_time.setter
     def max_plan_time(self, max_plan_time):
-        """Sets the max_plan_time of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the max_plan_time of this ListFactoryJobInstancesByNameRequest.
 
         返回作业实例开始时间小于max_plain_time的作业实例，单位为毫秒ms，默认设置为当前时间。
 
@@ -215,7 +215,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the status of this ListFactoryJobInstancesByNameRequest.
 
         实例运行状态: - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消 - skip-by-depend：跳过 - freeze：冻结 默认查全部
 
@@ -226,7 +226,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the status of this ListFactoryJobInstancesByNameRequest.
 
         实例运行状态: - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消 - skip-by-depend：跳过 - freeze：冻结 默认查全部
 
@@ -237,7 +237,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the job_name of this ListFactoryJobInstancesByNameRequest.
 
         作业名称
 
@@ -248,7 +248,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the job_name of this ListFactoryJobInstancesByNameRequest.
 
         作业名称
 
@@ -259,7 +259,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def force_success(self):
-        """Gets the force_success of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the force_success of this ListFactoryJobInstancesByNameRequest.
 
         status为success的时候使用，true则筛选出强制成功的作业实例默认值：false
 
@@ -270,7 +270,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @force_success.setter
     def force_success(self, force_success):
-        """Sets the force_success of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the force_success of this ListFactoryJobInstancesByNameRequest.
 
         status为success的时候使用，true则筛选出强制成功的作业实例默认值：false
 
@@ -281,7 +281,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def ignore_success(self):
-        """Gets the ignore_success of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the ignore_success of this ListFactoryJobInstancesByNameRequest.
 
         status为success的时候使用，true则筛选出忽略失败的作业实例默认值：false
 
@@ -292,7 +292,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @ignore_success.setter
     def ignore_success(self, ignore_success):
-        """Sets the ignore_success of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the ignore_success of this ListFactoryJobInstancesByNameRequest.
 
         status为success的时候使用，true则筛选出忽略失败的作业实例默认值：false
 
@@ -303,7 +303,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListFactoryJobInstancesByNameRequest.
+        r"""Gets the instance_type of this ListFactoryJobInstancesByNameRequest.
 
         作业调度方式: -0:正常调度 -2:手工调度 -5:补数据 -6:子作业调度 -7:单次调度
 
@@ -314,7 +314,7 @@ class ListFactoryJobInstancesByNameRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListFactoryJobInstancesByNameRequest.
+        r"""Sets the instance_type of this ListFactoryJobInstancesByNameRequest.
 
         作业调度方式: -0:正常调度 -2:手工调度 -5:补数据 -6:子作业调度 -7:单次调度
 

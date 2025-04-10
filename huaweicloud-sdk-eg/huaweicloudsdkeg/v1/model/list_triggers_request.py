@@ -31,7 +31,7 @@ class ListTriggersRequest:
     }
 
     def __init__(self, func_urn=None, offset=None, limit=None, sort=None):
-        """ListTriggersRequest
+        r"""ListTriggersRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListTriggersRequest:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ListTriggersRequest.
+        r"""Gets the func_urn of this ListTriggersRequest.
 
         目标函数的urn
 
@@ -74,7 +74,7 @@ class ListTriggersRequest:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ListTriggersRequest.
+        r"""Sets the func_urn of this ListTriggersRequest.
 
         目标函数的urn
 
@@ -85,7 +85,7 @@ class ListTriggersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTriggersRequest.
+        r"""Gets the offset of this ListTriggersRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -96,7 +96,7 @@ class ListTriggersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTriggersRequest.
+        r"""Sets the offset of this ListTriggersRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -107,7 +107,7 @@ class ListTriggersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTriggersRequest.
+        r"""Gets the limit of this ListTriggersRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -118,7 +118,7 @@ class ListTriggersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTriggersRequest.
+        r"""Sets the limit of this ListTriggersRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -129,7 +129,7 @@ class ListTriggersRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListTriggersRequest.
+        r"""Gets the sort of this ListTriggersRequest.
 
         指定查询排序
 
@@ -140,7 +140,7 @@ class ListTriggersRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListTriggersRequest.
+        r"""Sets the sort of this ListTriggersRequest.
 
         指定查询排序
 

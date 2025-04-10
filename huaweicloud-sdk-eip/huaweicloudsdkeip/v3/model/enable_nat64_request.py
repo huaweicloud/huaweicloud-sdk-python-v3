@@ -25,7 +25,7 @@ class EnableNat64Request:
     }
 
     def __init__(self, publicip_id=None):
-        """EnableNat64Request
+        r"""EnableNat64Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableNat64Request:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this EnableNat64Request.
+        r"""Gets the publicip_id of this EnableNat64Request.
 
         弹性公网ID
 
@@ -53,7 +53,7 @@ class EnableNat64Request:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this EnableNat64Request.
+        r"""Sets the publicip_id of this EnableNat64Request.
 
         弹性公网ID
 

@@ -31,7 +31,7 @@ class CreateVpcEndpointRequestBody:
     }
 
     def __init__(self, flavor=None, xrole=None, vpc_id=None, subnet_id=None):
-        """CreateVpcEndpointRequestBody
+        r"""CreateVpcEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateVpcEndpointRequestBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateVpcEndpointRequestBody.
+        r"""Gets the flavor of this CreateVpcEndpointRequestBody.
 
         选定EP的规格，默认为大规格
 
@@ -73,7 +73,7 @@ class CreateVpcEndpointRequestBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateVpcEndpointRequestBody.
+        r"""Sets the flavor of this CreateVpcEndpointRequestBody.
 
         选定EP的规格，默认为大规格
 
@@ -84,7 +84,7 @@ class CreateVpcEndpointRequestBody:
 
     @property
     def xrole(self):
-        """Gets the xrole of this CreateVpcEndpointRequestBody.
+        r"""Gets the xrole of this CreateVpcEndpointRequestBody.
 
         制作EP时使用的租户委托名称
 
@@ -95,7 +95,7 @@ class CreateVpcEndpointRequestBody:
 
     @xrole.setter
     def xrole(self, xrole):
-        """Sets the xrole of this CreateVpcEndpointRequestBody.
+        r"""Sets the xrole of this CreateVpcEndpointRequestBody.
 
         制作EP时使用的租户委托名称
 
@@ -106,7 +106,7 @@ class CreateVpcEndpointRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateVpcEndpointRequestBody.
+        r"""Gets the vpc_id of this CreateVpcEndpointRequestBody.
 
         对接EP使用的租户VPCID
 
@@ -117,7 +117,7 @@ class CreateVpcEndpointRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateVpcEndpointRequestBody.
+        r"""Sets the vpc_id of this CreateVpcEndpointRequestBody.
 
         对接EP使用的租户VPCID
 
@@ -128,7 +128,7 @@ class CreateVpcEndpointRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateVpcEndpointRequestBody.
+        r"""Gets the subnet_id of this CreateVpcEndpointRequestBody.
 
         对接EP使用的租户子网ID
 
@@ -139,7 +139,7 @@ class CreateVpcEndpointRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateVpcEndpointRequestBody.
+        r"""Sets the subnet_id of this CreateVpcEndpointRequestBody.
 
         对接EP使用的租户子网ID
 

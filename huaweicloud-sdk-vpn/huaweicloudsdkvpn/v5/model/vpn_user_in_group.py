@@ -29,7 +29,7 @@ class VpnUserInGroup:
     }
 
     def __init__(self, id=None, name=None, description=None):
-        """VpnUserInGroup
+        r"""VpnUserInGroup
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VpnUserInGroup:
 
     @property
     def id(self):
-        """Gets the id of this VpnUserInGroup.
+        r"""Gets the id of this VpnUserInGroup.
 
         用户ID
 
@@ -68,7 +68,7 @@ class VpnUserInGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpnUserInGroup.
+        r"""Sets the id of this VpnUserInGroup.
 
         用户ID
 
@@ -79,7 +79,7 @@ class VpnUserInGroup:
 
     @property
     def name(self):
-        """Gets the name of this VpnUserInGroup.
+        r"""Gets the name of this VpnUserInGroup.
 
         用户名称
 
@@ -90,7 +90,7 @@ class VpnUserInGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpnUserInGroup.
+        r"""Sets the name of this VpnUserInGroup.
 
         用户名称
 
@@ -101,7 +101,7 @@ class VpnUserInGroup:
 
     @property
     def description(self):
-        """Gets the description of this VpnUserInGroup.
+        r"""Gets the description of this VpnUserInGroup.
 
         用户描述
 
@@ -112,7 +112,7 @@ class VpnUserInGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpnUserInGroup.
+        r"""Sets the description of this VpnUserInGroup.
 
         用户描述
 

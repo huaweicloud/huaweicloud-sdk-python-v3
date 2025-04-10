@@ -25,7 +25,7 @@ class DashBoardNameItem:
     }
 
     def __init__(self, dashboard_name=None):
-        """DashBoardNameItem
+        r"""DashBoardNameItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DashBoardNameItem:
 
     @property
     def dashboard_name(self):
-        """Gets the dashboard_name of this DashBoardNameItem.
+        r"""Gets the dashboard_name of this DashBoardNameItem.
 
         自定义监控看板名称
 
@@ -54,7 +54,7 @@ class DashBoardNameItem:
 
     @dashboard_name.setter
     def dashboard_name(self, dashboard_name):
-        """Sets the dashboard_name of this DashBoardNameItem.
+        r"""Sets the dashboard_name of this DashBoardNameItem.
 
         自定义监控看板名称
 

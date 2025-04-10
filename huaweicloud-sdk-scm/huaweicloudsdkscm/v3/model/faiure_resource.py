@@ -27,7 +27,7 @@ class FaiureResource:
     }
 
     def __init__(self, resource=None, failure_info=None):
-        """FaiureResource
+        r"""FaiureResource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FaiureResource:
 
     @property
     def resource(self):
-        """Gets the resource of this FaiureResource.
+        r"""Gets the resource of this FaiureResource.
 
         部署失败的资源信息，部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
 
@@ -61,7 +61,7 @@ class FaiureResource:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this FaiureResource.
+        r"""Sets the resource of this FaiureResource.
 
         部署失败的资源信息，部署WAF与ELB时，此字段为资源ID，部署CDN时，本字段为加速域名。
 
@@ -72,7 +72,7 @@ class FaiureResource:
 
     @property
     def failure_info(self):
-        """Gets the failure_info of this FaiureResource.
+        r"""Gets the failure_info of this FaiureResource.
 
         失败原因，一般为目标服务返回的错误码信息。
 
@@ -83,7 +83,7 @@ class FaiureResource:
 
     @failure_info.setter
     def failure_info(self, failure_info):
-        """Sets the failure_info of this FaiureResource.
+        r"""Sets the failure_info of this FaiureResource.
 
         失败原因，一般为目标服务返回的错误码信息。
 

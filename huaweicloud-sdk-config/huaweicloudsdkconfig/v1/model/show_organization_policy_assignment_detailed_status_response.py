@@ -28,7 +28,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ShowOrganizationPolicyAssignmentDetailedStatusResponse
+        r"""ShowOrganizationPolicyAssignmentDetailedStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
+        r"""Gets the value of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
 
         组织合规规则部署详细状态结果列表。
 
@@ -62,7 +62,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
+        r"""Sets the value of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
 
         组织合规规则部署详细状态结果列表。
 
@@ -73,7 +73,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
+        r"""Gets the page_info of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
 
         :return: The page_info of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
+        r"""Sets the page_info of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
 
         :param page_info: The page_info of this ShowOrganizationPolicyAssignmentDetailedStatusResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

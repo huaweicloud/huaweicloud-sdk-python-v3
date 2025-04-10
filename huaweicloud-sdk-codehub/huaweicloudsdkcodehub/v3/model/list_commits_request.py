@@ -41,7 +41,7 @@ class ListCommitsRequest:
     }
 
     def __init__(self, repo_id=None, ref_name=None, since=None, until=None, path=None, all=None, with_stats=None, page=None, per_page=None):
-        """ListCommitsRequest
+        r"""ListCommitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListCommitsRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ListCommitsRequest.
+        r"""Gets the repo_id of this ListCommitsRequest.
 
         仓库短id
 
@@ -109,7 +109,7 @@ class ListCommitsRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ListCommitsRequest.
+        r"""Sets the repo_id of this ListCommitsRequest.
 
         仓库短id
 
@@ -120,7 +120,7 @@ class ListCommitsRequest:
 
     @property
     def ref_name(self):
-        """Gets the ref_name of this ListCommitsRequest.
+        r"""Gets the ref_name of this ListCommitsRequest.
 
         仓库的branch名或tag名，如果为空则查询默认分支
 
@@ -131,7 +131,7 @@ class ListCommitsRequest:
 
     @ref_name.setter
     def ref_name(self, ref_name):
-        """Sets the ref_name of this ListCommitsRequest.
+        r"""Sets the ref_name of this ListCommitsRequest.
 
         仓库的branch名或tag名，如果为空则查询默认分支
 
@@ -142,7 +142,7 @@ class ListCommitsRequest:
 
     @property
     def since(self):
-        """Gets the since of this ListCommitsRequest.
+        r"""Gets the since of this ListCommitsRequest.
 
         在此日期之后或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
 
@@ -153,7 +153,7 @@ class ListCommitsRequest:
 
     @since.setter
     def since(self, since):
-        """Sets the since of this ListCommitsRequest.
+        r"""Sets the since of this ListCommitsRequest.
 
         在此日期之后或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
 
@@ -164,7 +164,7 @@ class ListCommitsRequest:
 
     @property
     def until(self):
-        """Gets the until of this ListCommitsRequest.
+        r"""Gets the until of this ListCommitsRequest.
 
         在此日期之前或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
 
@@ -175,7 +175,7 @@ class ListCommitsRequest:
 
     @until.setter
     def until(self, until):
-        """Sets the until of this ListCommitsRequest.
+        r"""Sets the until of this ListCommitsRequest.
 
         在此日期之前或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
 
@@ -186,7 +186,7 @@ class ListCommitsRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListCommitsRequest.
+        r"""Gets the path of this ListCommitsRequest.
 
         文件路径
 
@@ -197,7 +197,7 @@ class ListCommitsRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListCommitsRequest.
+        r"""Sets the path of this ListCommitsRequest.
 
         文件路径
 
@@ -208,7 +208,7 @@ class ListCommitsRequest:
 
     @property
     def all(self):
-        """Gets the all of this ListCommitsRequest.
+        r"""Gets the all of this ListCommitsRequest.
 
         是否检索仓库中每个提交
 
@@ -219,7 +219,7 @@ class ListCommitsRequest:
 
     @all.setter
     def all(self, all):
-        """Sets the all of this ListCommitsRequest.
+        r"""Sets the all of this ListCommitsRequest.
 
         是否检索仓库中每个提交
 
@@ -230,7 +230,7 @@ class ListCommitsRequest:
 
     @property
     def with_stats(self):
-        """Gets the with_stats of this ListCommitsRequest.
+        r"""Gets the with_stats of this ListCommitsRequest.
 
         有关每个提交的统计信息是否添加到响应中
 
@@ -241,7 +241,7 @@ class ListCommitsRequest:
 
     @with_stats.setter
     def with_stats(self, with_stats):
-        """Sets the with_stats of this ListCommitsRequest.
+        r"""Sets the with_stats of this ListCommitsRequest.
 
         有关每个提交的统计信息是否添加到响应中
 
@@ -252,7 +252,7 @@ class ListCommitsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListCommitsRequest.
+        r"""Gets the page of this ListCommitsRequest.
 
         页码
 
@@ -263,7 +263,7 @@ class ListCommitsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListCommitsRequest.
+        r"""Sets the page of this ListCommitsRequest.
 
         页码
 
@@ -274,7 +274,7 @@ class ListCommitsRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ListCommitsRequest.
+        r"""Gets the per_page of this ListCommitsRequest.
 
         每页条目数
 
@@ -285,7 +285,7 @@ class ListCommitsRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ListCommitsRequest.
+        r"""Sets the per_page of this ListCommitsRequest.
 
         每页条目数
 

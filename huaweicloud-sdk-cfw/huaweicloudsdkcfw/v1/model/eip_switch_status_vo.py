@@ -31,7 +31,7 @@ class EIPSwitchStatusVO:
     }
 
     def __init__(self, object_id=None, fail_eip_id_list=None, fail_eip_list=None, id=None):
-        """EIPSwitchStatusVO
+        r"""EIPSwitchStatusVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EIPSwitchStatusVO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this EIPSwitchStatusVO.
+        r"""Gets the object_id of this EIPSwitchStatusVO.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -75,7 +75,7 @@ class EIPSwitchStatusVO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this EIPSwitchStatusVO.
+        r"""Sets the object_id of this EIPSwitchStatusVO.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -86,7 +86,7 @@ class EIPSwitchStatusVO:
 
     @property
     def fail_eip_id_list(self):
-        """Gets the fail_eip_id_list of this EIPSwitchStatusVO.
+        r"""Gets the fail_eip_id_list of this EIPSwitchStatusVO.
 
         修改eip防护状态失败状态列表，状态包括成功\"successful\"，失败“fail”
 
@@ -97,7 +97,7 @@ class EIPSwitchStatusVO:
 
     @fail_eip_id_list.setter
     def fail_eip_id_list(self, fail_eip_id_list):
-        """Sets the fail_eip_id_list of this EIPSwitchStatusVO.
+        r"""Sets the fail_eip_id_list of this EIPSwitchStatusVO.
 
         修改eip防护状态失败状态列表，状态包括成功\"successful\"，失败“fail”
 
@@ -108,7 +108,7 @@ class EIPSwitchStatusVO:
 
     @property
     def fail_eip_list(self):
-        """Gets the fail_eip_list of this EIPSwitchStatusVO.
+        r"""Gets the fail_eip_list of this EIPSwitchStatusVO.
 
         修改eip防护状态失败信息列表
 
@@ -119,7 +119,7 @@ class EIPSwitchStatusVO:
 
     @fail_eip_list.setter
     def fail_eip_list(self, fail_eip_list):
-        """Sets the fail_eip_list of this EIPSwitchStatusVO.
+        r"""Sets the fail_eip_list of this EIPSwitchStatusVO.
 
         修改eip防护状态失败信息列表
 
@@ -130,7 +130,7 @@ class EIPSwitchStatusVO:
 
     @property
     def id(self):
-        """Gets the id of this EIPSwitchStatusVO.
+        r"""Gets the id of this EIPSwitchStatusVO.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -141,7 +141,7 @@ class EIPSwitchStatusVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EIPSwitchStatusVO.
+        r"""Sets the id of this EIPSwitchStatusVO.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 

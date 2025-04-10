@@ -31,7 +31,7 @@ class Resource:
     }
 
     def __init__(self, extra_info=None, id=None, name=None, type=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Resource:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this Resource.
+        r"""Gets the extra_info of this Resource.
 
         :return: The extra_info of this Resource.
         :rtype: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
@@ -71,7 +71,7 @@ class Resource:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this Resource.
+        r"""Sets the extra_info of this Resource.
 
         :param extra_info: The extra_info of this Resource.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
@@ -80,7 +80,7 @@ class Resource:
 
     @property
     def id(self):
-        """Gets the id of this Resource.
+        r"""Gets the id of this Resource.
 
         待备份资源id
 
@@ -91,7 +91,7 @@ class Resource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Resource.
+        r"""Sets the id of this Resource.
 
         待备份资源id
 
@@ -102,7 +102,7 @@ class Resource:
 
     @property
     def name(self):
-        """Gets the name of this Resource.
+        r"""Gets the name of this Resource.
 
         待备份资源名称，长度限制：0-255
 
@@ -113,7 +113,7 @@ class Resource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Resource.
+        r"""Sets the name of this Resource.
 
         待备份资源名称，长度限制：0-255
 
@@ -124,7 +124,7 @@ class Resource:
 
     @property
     def type(self):
-        """Gets the type of this Resource.
+        r"""Gets the type of this Resource.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 
@@ -135,7 +135,7 @@ class Resource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resource.
+        r"""Sets the type of this Resource.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 

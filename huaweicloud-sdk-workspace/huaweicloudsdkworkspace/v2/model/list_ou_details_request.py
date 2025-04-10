@@ -29,7 +29,7 @@ class ListOuDetailsRequest:
     }
 
     def __init__(self, ou_name=None, limit=None, offset=None):
-        """ListOuDetailsRequest
+        r"""ListOuDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListOuDetailsRequest:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this ListOuDetailsRequest.
+        r"""Gets the ou_name of this ListOuDetailsRequest.
 
         OU名称。
 
@@ -68,7 +68,7 @@ class ListOuDetailsRequest:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this ListOuDetailsRequest.
+        r"""Sets the ou_name of this ListOuDetailsRequest.
 
         OU名称。
 
@@ -79,7 +79,7 @@ class ListOuDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOuDetailsRequest.
+        r"""Gets the limit of this ListOuDetailsRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
 
@@ -90,7 +90,7 @@ class ListOuDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOuDetailsRequest.
+        r"""Sets the limit of this ListOuDetailsRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
 
@@ -101,7 +101,7 @@ class ListOuDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOuDetailsRequest.
+        r"""Gets the offset of this ListOuDetailsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -112,7 +112,7 @@ class ListOuDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOuDetailsRequest.
+        r"""Sets the offset of this ListOuDetailsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 

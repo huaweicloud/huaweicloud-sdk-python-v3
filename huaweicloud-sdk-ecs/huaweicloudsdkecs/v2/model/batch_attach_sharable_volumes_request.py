@@ -27,7 +27,7 @@ class BatchAttachSharableVolumesRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """BatchAttachSharableVolumesRequest
+        r"""BatchAttachSharableVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAttachSharableVolumesRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this BatchAttachSharableVolumesRequest.
+        r"""Gets the volume_id of this BatchAttachSharableVolumesRequest.
 
         共享磁盘ID。
 
@@ -60,7 +60,7 @@ class BatchAttachSharableVolumesRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this BatchAttachSharableVolumesRequest.
+        r"""Sets the volume_id of this BatchAttachSharableVolumesRequest.
 
         共享磁盘ID。
 
@@ -71,7 +71,7 @@ class BatchAttachSharableVolumesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAttachSharableVolumesRequest.
+        r"""Gets the body of this BatchAttachSharableVolumesRequest.
 
         :return: The body of this BatchAttachSharableVolumesRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequestBody`
@@ -80,7 +80,7 @@ class BatchAttachSharableVolumesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAttachSharableVolumesRequest.
+        r"""Sets the body of this BatchAttachSharableVolumesRequest.
 
         :param body: The body of this BatchAttachSharableVolumesRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequestBody`

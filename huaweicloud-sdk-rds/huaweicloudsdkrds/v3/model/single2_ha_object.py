@@ -31,7 +31,7 @@ class Single2HaObject:
     }
 
     def __init__(self, az_code_new_node=None, dsspool_id=None, is_auto_pay=None, ad_domain_info=None):
-        """Single2HaObject
+        r"""Single2HaObject
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class Single2HaObject:
 
     @property
     def az_code_new_node(self):
-        """Gets the az_code_new_node of this Single2HaObject.
+        r"""Gets the az_code_new_node of this Single2HaObject.
 
         实例节点可用区码（AZ）。
 
@@ -74,7 +74,7 @@ class Single2HaObject:
 
     @az_code_new_node.setter
     def az_code_new_node(self, az_code_new_node):
-        """Sets the az_code_new_node of this Single2HaObject.
+        r"""Sets the az_code_new_node of this Single2HaObject.
 
         实例节点可用区码（AZ）。
 
@@ -85,7 +85,7 @@ class Single2HaObject:
 
     @property
     def dsspool_id(self):
-        """Gets the dsspool_id of this Single2HaObject.
+        r"""Gets the dsspool_id of this Single2HaObject.
 
         Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
 
@@ -96,7 +96,7 @@ class Single2HaObject:
 
     @dsspool_id.setter
     def dsspool_id(self, dsspool_id):
-        """Sets the dsspool_id of this Single2HaObject.
+        r"""Sets the dsspool_id of this Single2HaObject.
 
         Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
 
@@ -107,7 +107,7 @@ class Single2HaObject:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this Single2HaObject.
+        r"""Gets the is_auto_pay of this Single2HaObject.
 
         仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
@@ -118,7 +118,7 @@ class Single2HaObject:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this Single2HaObject.
+        r"""Sets the is_auto_pay of this Single2HaObject.
 
         仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
@@ -129,7 +129,7 @@ class Single2HaObject:
 
     @property
     def ad_domain_info(self):
-        """Gets the ad_domain_info of this Single2HaObject.
+        r"""Gets the ad_domain_info of this Single2HaObject.
 
         :return: The ad_domain_info of this Single2HaObject.
         :rtype: :class:`huaweicloudsdkrds.v3.ADDomainInfo`
@@ -138,7 +138,7 @@ class Single2HaObject:
 
     @ad_domain_info.setter
     def ad_domain_info(self, ad_domain_info):
-        """Sets the ad_domain_info of this Single2HaObject.
+        r"""Sets the ad_domain_info of this Single2HaObject.
 
         :param ad_domain_info: The ad_domain_info of this Single2HaObject.
         :type ad_domain_info: :class:`huaweicloudsdkrds.v3.ADDomainInfo`

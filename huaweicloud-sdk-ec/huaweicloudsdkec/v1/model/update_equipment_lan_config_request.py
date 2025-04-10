@@ -29,7 +29,7 @@ class UpdateEquipmentLanConfigRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """UpdateEquipmentLanConfigRequest
+        r"""UpdateEquipmentLanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEquipmentLanConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateEquipmentLanConfigRequest.
+        r"""Gets the ieg_id of this UpdateEquipmentLanConfigRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateEquipmentLanConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateEquipmentLanConfigRequest.
+        r"""Sets the ieg_id of this UpdateEquipmentLanConfigRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateEquipmentLanConfigRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this UpdateEquipmentLanConfigRequest.
+        r"""Gets the equipment_id of this UpdateEquipmentLanConfigRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class UpdateEquipmentLanConfigRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this UpdateEquipmentLanConfigRequest.
+        r"""Sets the equipment_id of this UpdateEquipmentLanConfigRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class UpdateEquipmentLanConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEquipmentLanConfigRequest.
+        r"""Gets the body of this UpdateEquipmentLanConfigRequest.
 
         :return: The body of this UpdateEquipmentLanConfigRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EquipmentLanItem`
@@ -108,7 +108,7 @@ class UpdateEquipmentLanConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEquipmentLanConfigRequest.
+        r"""Sets the body of this UpdateEquipmentLanConfigRequest.
 
         :param body: The body of this UpdateEquipmentLanConfigRequest.
         :type body: :class:`huaweicloudsdkec.v1.EquipmentLanItem`

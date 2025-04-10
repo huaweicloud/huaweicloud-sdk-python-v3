@@ -25,7 +25,7 @@ class ListConfigInfoReq:
     }
 
     def __init__(self, items=None):
-        """ListConfigInfoReq
+        r"""ListConfigInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListConfigInfoReq:
 
     @property
     def items(self):
-        """Gets the items of this ListConfigInfoReq.
+        r"""Gets the items of this ListConfigInfoReq.
 
         查询企业配置请求的key，一次请求数量区间 [0, 100]。
 
@@ -53,7 +53,7 @@ class ListConfigInfoReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListConfigInfoReq.
+        r"""Sets the items of this ListConfigInfoReq.
 
         查询企业配置请求的key，一次请求数量区间 [0, 100]。
 

@@ -39,7 +39,7 @@ class RocketMQExtendProductPropertiesEntity:
     }
 
     def __init__(self, max_broker=None, max_topic_per_broker=None, max_consumer_per_broker=None, max_storage_per_node=None, min_broker=None, engine_versions=None, min_storage_per_node=None, product_alias=None):
-        """RocketMQExtendProductPropertiesEntity
+        r"""RocketMQExtendProductPropertiesEntity
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def max_broker(self):
-        """Gets the max_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the max_broker of this RocketMQExtendProductPropertiesEntity.
 
         Broker的最大个数。
 
@@ -103,7 +103,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @max_broker.setter
     def max_broker(self, max_broker):
-        """Sets the max_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the max_broker of this RocketMQExtendProductPropertiesEntity.
 
         Broker的最大个数。
 
@@ -114,7 +114,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def max_topic_per_broker(self):
-        """Gets the max_topic_per_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the max_topic_per_broker of this RocketMQExtendProductPropertiesEntity.
 
         每个节点最多能创建的Topic个数。
 
@@ -125,7 +125,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @max_topic_per_broker.setter
     def max_topic_per_broker(self, max_topic_per_broker):
-        """Sets the max_topic_per_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the max_topic_per_broker of this RocketMQExtendProductPropertiesEntity.
 
         每个节点最多能创建的Topic个数。
 
@@ -136,7 +136,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def max_consumer_per_broker(self):
-        """Gets the max_consumer_per_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the max_consumer_per_broker of this RocketMQExtendProductPropertiesEntity.
 
         每个节点的最大消费者数。
 
@@ -147,7 +147,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @max_consumer_per_broker.setter
     def max_consumer_per_broker(self, max_consumer_per_broker):
-        """Sets the max_consumer_per_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the max_consumer_per_broker of this RocketMQExtendProductPropertiesEntity.
 
         每个节点的最大消费者数。
 
@@ -158,7 +158,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def max_storage_per_node(self):
-        """Gets the max_storage_per_node of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the max_storage_per_node of this RocketMQExtendProductPropertiesEntity.
 
         每个节点的最大存储。单位为GB
 
@@ -169,7 +169,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @max_storage_per_node.setter
     def max_storage_per_node(self, max_storage_per_node):
-        """Sets the max_storage_per_node of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the max_storage_per_node of this RocketMQExtendProductPropertiesEntity.
 
         每个节点的最大存储。单位为GB
 
@@ -180,7 +180,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def min_broker(self):
-        """Gets the min_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the min_broker of this RocketMQExtendProductPropertiesEntity.
 
         Broker的最小个数。
 
@@ -191,7 +191,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @min_broker.setter
     def min_broker(self, min_broker):
-        """Sets the min_broker of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the min_broker of this RocketMQExtendProductPropertiesEntity.
 
         Broker的最小个数。
 
@@ -202,7 +202,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def engine_versions(self):
-        """Gets the engine_versions of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the engine_versions of this RocketMQExtendProductPropertiesEntity.
 
         消息引擎版本。
 
@@ -213,7 +213,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @engine_versions.setter
     def engine_versions(self, engine_versions):
-        """Sets the engine_versions of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the engine_versions of this RocketMQExtendProductPropertiesEntity.
 
         消息引擎版本。
 
@@ -224,7 +224,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def min_storage_per_node(self):
-        """Gets the min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -235,7 +235,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @min_storage_per_node.setter
     def min_storage_per_node(self, min_storage_per_node):
-        """Sets the min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the min_storage_per_node of this RocketMQExtendProductPropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -246,7 +246,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @property
     def product_alias(self):
-        """Gets the product_alias of this RocketMQExtendProductPropertiesEntity.
+        r"""Gets the product_alias of this RocketMQExtendProductPropertiesEntity.
 
         product_id的别名。
 
@@ -257,7 +257,7 @@ class RocketMQExtendProductPropertiesEntity:
 
     @product_alias.setter
     def product_alias(self, product_alias):
-        """Sets the product_alias of this RocketMQExtendProductPropertiesEntity.
+        r"""Sets the product_alias of this RocketMQExtendProductPropertiesEntity.
 
         product_id的别名。
 

@@ -31,7 +31,7 @@ class HotfixUpgradeInfos:
     }
 
     def __init__(self, version=None, common_patch=None, backup_sensitive=None, descripition=None):
-        """HotfixUpgradeInfos
+        r"""HotfixUpgradeInfos
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HotfixUpgradeInfos:
 
     @property
     def version(self):
-        """Gets the version of this HotfixUpgradeInfos.
+        r"""Gets the version of this HotfixUpgradeInfos.
 
         热补丁版本。
 
@@ -75,7 +75,7 @@ class HotfixUpgradeInfos:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this HotfixUpgradeInfos.
+        r"""Sets the version of this HotfixUpgradeInfos.
 
         热补丁版本。
 
@@ -86,7 +86,7 @@ class HotfixUpgradeInfos:
 
     @property
     def common_patch(self):
-        """Gets the common_patch of this HotfixUpgradeInfos.
+        r"""Gets the common_patch of this HotfixUpgradeInfos.
 
         通用/非通用补丁信息。 枚举值：   \"common\": 通用补丁。   \"certain\": 定制补丁。
 
@@ -97,7 +97,7 @@ class HotfixUpgradeInfos:
 
     @common_patch.setter
     def common_patch(self, common_patch):
-        """Sets the common_patch of this HotfixUpgradeInfos.
+        r"""Sets the common_patch of this HotfixUpgradeInfos.
 
         通用/非通用补丁信息。 枚举值：   \"common\": 通用补丁。   \"certain\": 定制补丁。
 
@@ -108,7 +108,7 @@ class HotfixUpgradeInfos:
 
     @property
     def backup_sensitive(self):
-        """Gets the backup_sensitive of this HotfixUpgradeInfos.
+        r"""Gets the backup_sensitive of this HotfixUpgradeInfos.
 
         是否和备份相关。
 
@@ -119,7 +119,7 @@ class HotfixUpgradeInfos:
 
     @backup_sensitive.setter
     def backup_sensitive(self, backup_sensitive):
-        """Sets the backup_sensitive of this HotfixUpgradeInfos.
+        r"""Sets the backup_sensitive of this HotfixUpgradeInfos.
 
         是否和备份相关。
 
@@ -130,7 +130,7 @@ class HotfixUpgradeInfos:
 
     @property
     def descripition(self):
-        """Gets the descripition of this HotfixUpgradeInfos.
+        r"""Gets the descripition of this HotfixUpgradeInfos.
 
         补丁的描述信息。
 
@@ -141,7 +141,7 @@ class HotfixUpgradeInfos:
 
     @descripition.setter
     def descripition(self, descripition):
-        """Sets the descripition of this HotfixUpgradeInfos.
+        r"""Sets the descripition of this HotfixUpgradeInfos.
 
         补丁的描述信息。
 

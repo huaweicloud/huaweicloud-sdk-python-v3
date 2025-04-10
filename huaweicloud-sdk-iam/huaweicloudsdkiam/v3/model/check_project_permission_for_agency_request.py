@@ -29,7 +29,7 @@ class CheckProjectPermissionForAgencyRequest:
     }
 
     def __init__(self, project_id=None, agency_id=None, role_id=None):
-        """CheckProjectPermissionForAgencyRequest
+        r"""CheckProjectPermissionForAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CheckProjectPermissionForAgencyRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckProjectPermissionForAgencyRequest.
+        r"""Gets the project_id of this CheckProjectPermissionForAgencyRequest.
 
         委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -65,7 +65,7 @@ class CheckProjectPermissionForAgencyRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckProjectPermissionForAgencyRequest.
+        r"""Sets the project_id of this CheckProjectPermissionForAgencyRequest.
 
         委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -76,7 +76,7 @@ class CheckProjectPermissionForAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CheckProjectPermissionForAgencyRequest.
+        r"""Gets the agency_id of this CheckProjectPermissionForAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -87,7 +87,7 @@ class CheckProjectPermissionForAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CheckProjectPermissionForAgencyRequest.
+        r"""Sets the agency_id of this CheckProjectPermissionForAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -98,7 +98,7 @@ class CheckProjectPermissionForAgencyRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this CheckProjectPermissionForAgencyRequest.
+        r"""Gets the role_id of this CheckProjectPermissionForAgencyRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
@@ -109,7 +109,7 @@ class CheckProjectPermissionForAgencyRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this CheckProjectPermissionForAgencyRequest.
+        r"""Sets the role_id of this CheckProjectPermissionForAgencyRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 

@@ -29,7 +29,7 @@ class ImportBaseResult:
     }
 
     def __init__(self, success=None, failure=None, swagger=None):
-        """ImportBaseResult
+        r"""ImportBaseResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ImportBaseResult:
 
     @property
     def success(self):
-        """Gets the success of this ImportBaseResult.
+        r"""Gets the success of this ImportBaseResult.
 
         导入成功信息
 
@@ -68,7 +68,7 @@ class ImportBaseResult:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ImportBaseResult.
+        r"""Sets the success of this ImportBaseResult.
 
         导入成功信息
 
@@ -79,7 +79,7 @@ class ImportBaseResult:
 
     @property
     def failure(self):
-        """Gets the failure of this ImportBaseResult.
+        r"""Gets the failure of this ImportBaseResult.
 
         导入失败信息
 
@@ -90,7 +90,7 @@ class ImportBaseResult:
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this ImportBaseResult.
+        r"""Sets the failure of this ImportBaseResult.
 
         导入失败信息
 
@@ -101,7 +101,7 @@ class ImportBaseResult:
 
     @property
     def swagger(self):
-        """Gets the swagger of this ImportBaseResult.
+        r"""Gets the swagger of this ImportBaseResult.
 
         :return: The swagger of this ImportBaseResult.
         :rtype: :class:`huaweicloudsdkapig.v2.Swagger`
@@ -110,7 +110,7 @@ class ImportBaseResult:
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this ImportBaseResult.
+        r"""Sets the swagger of this ImportBaseResult.
 
         :param swagger: The swagger of this ImportBaseResult.
         :type swagger: :class:`huaweicloudsdkapig.v2.Swagger`

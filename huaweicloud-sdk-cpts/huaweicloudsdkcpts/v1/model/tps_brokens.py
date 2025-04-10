@@ -27,7 +27,7 @@ class TpsBrokens:
     }
 
     def __init__(self, average=None, tps=None):
-        """TpsBrokens
+        r"""TpsBrokens
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TpsBrokens:
 
     @property
     def average(self):
-        """Gets the average of this TpsBrokens.
+        r"""Gets the average of this TpsBrokens.
 
         平均响应时间
 
@@ -61,7 +61,7 @@ class TpsBrokens:
 
     @average.setter
     def average(self, average):
-        """Sets the average of this TpsBrokens.
+        r"""Sets the average of this TpsBrokens.
 
         平均响应时间
 
@@ -72,7 +72,7 @@ class TpsBrokens:
 
     @property
     def tps(self):
-        """Gets the tps of this TpsBrokens.
+        r"""Gets the tps of this TpsBrokens.
 
         tps
 
@@ -83,7 +83,7 @@ class TpsBrokens:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this TpsBrokens.
+        r"""Sets the tps of this TpsBrokens.
 
         tps
 

@@ -27,7 +27,7 @@ class DisassociateListenerRequest:
     }
 
     def __init__(self, ip_group_id=None, body=None):
-        """DisassociateListenerRequest
+        r"""DisassociateListenerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateListenerRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this DisassociateListenerRequest.
+        r"""Gets the ip_group_id of this DisassociateListenerRequest.
 
         IP地址组ID。
 
@@ -60,7 +60,7 @@ class DisassociateListenerRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this DisassociateListenerRequest.
+        r"""Sets the ip_group_id of this DisassociateListenerRequest.
 
         IP地址组ID。
 
@@ -71,7 +71,7 @@ class DisassociateListenerRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateListenerRequest.
+        r"""Gets the body of this DisassociateListenerRequest.
 
         :return: The body of this DisassociateListenerRequest.
         :rtype: :class:`huaweicloudsdkga.v1.DisassociateListenerRequestBody`
@@ -80,7 +80,7 @@ class DisassociateListenerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateListenerRequest.
+        r"""Sets the body of this DisassociateListenerRequest.
 
         :param body: The body of this DisassociateListenerRequest.
         :type body: :class:`huaweicloudsdkga.v1.DisassociateListenerRequestBody`

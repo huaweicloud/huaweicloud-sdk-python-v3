@@ -29,7 +29,7 @@ class AccessoryLimitVo:
     }
 
     def __init__(self, limit_count=None, limit_size=None, limit_file_type=None):
-        """AccessoryLimitVo
+        r"""AccessoryLimitVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccessoryLimitVo:
 
     @property
     def limit_count(self):
-        """Gets the limit_count of this AccessoryLimitVo.
+        r"""Gets the limit_count of this AccessoryLimitVo.
 
         限制文件数量
 
@@ -68,7 +68,7 @@ class AccessoryLimitVo:
 
     @limit_count.setter
     def limit_count(self, limit_count):
-        """Sets the limit_count of this AccessoryLimitVo.
+        r"""Sets the limit_count of this AccessoryLimitVo.
 
         限制文件数量
 
@@ -79,7 +79,7 @@ class AccessoryLimitVo:
 
     @property
     def limit_size(self):
-        """Gets the limit_size of this AccessoryLimitVo.
+        r"""Gets the limit_size of this AccessoryLimitVo.
 
         限制文件大小，单位是M
 
@@ -90,7 +90,7 @@ class AccessoryLimitVo:
 
     @limit_size.setter
     def limit_size(self, limit_size):
-        """Sets the limit_size of this AccessoryLimitVo.
+        r"""Sets the limit_size of this AccessoryLimitVo.
 
         限制文件大小，单位是M
 
@@ -101,7 +101,7 @@ class AccessoryLimitVo:
 
     @property
     def limit_file_type(self):
-        """Gets the limit_file_type of this AccessoryLimitVo.
+        r"""Gets the limit_file_type of this AccessoryLimitVo.
 
         限制文件类型
 
@@ -112,7 +112,7 @@ class AccessoryLimitVo:
 
     @limit_file_type.setter
     def limit_file_type(self, limit_file_type):
-        """Sets the limit_file_type of this AccessoryLimitVo.
+        r"""Sets the limit_file_type of this AccessoryLimitVo.
 
         限制文件类型
 

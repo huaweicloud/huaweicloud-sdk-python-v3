@@ -33,7 +33,7 @@ class TargetResource:
     }
 
     def __init__(self, type=None, id=None, app_name=None, region_id=None, params=None):
-        """TargetResource
+        r"""TargetResource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TargetResource:
 
     @property
     def type(self):
-        """Gets the type of this TargetResource.
+        r"""Gets the type of this TargetResource.
 
         资源类型(REGION, APPLICATION)
 
@@ -82,7 +82,7 @@ class TargetResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TargetResource.
+        r"""Sets the type of this TargetResource.
 
         资源类型(REGION, APPLICATION)
 
@@ -93,7 +93,7 @@ class TargetResource:
 
     @property
     def id(self):
-        """Gets the id of this TargetResource.
+        r"""Gets the id of this TargetResource.
 
         资源id
 
@@ -104,7 +104,7 @@ class TargetResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TargetResource.
+        r"""Sets the id of this TargetResource.
 
         资源id
 
@@ -115,7 +115,7 @@ class TargetResource:
 
     @property
     def app_name(self):
-        """Gets the app_name of this TargetResource.
+        r"""Gets the app_name of this TargetResource.
 
         应用名称（层级关系用.隔开）
 
@@ -126,7 +126,7 @@ class TargetResource:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this TargetResource.
+        r"""Sets the app_name of this TargetResource.
 
         应用名称（层级关系用.隔开）
 
@@ -137,7 +137,7 @@ class TargetResource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this TargetResource.
+        r"""Gets the region_id of this TargetResource.
 
         region（应用关联region）
 
@@ -148,7 +148,7 @@ class TargetResource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this TargetResource.
+        r"""Sets the region_id of this TargetResource.
 
         region（应用关联region）
 
@@ -159,7 +159,7 @@ class TargetResource:
 
     @property
     def params(self):
-        """Gets the params of this TargetResource.
+        r"""Gets the params of this TargetResource.
 
         动态查询条件
 
@@ -170,7 +170,7 @@ class TargetResource:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this TargetResource.
+        r"""Sets the params of this TargetResource.
 
         动态查询条件
 

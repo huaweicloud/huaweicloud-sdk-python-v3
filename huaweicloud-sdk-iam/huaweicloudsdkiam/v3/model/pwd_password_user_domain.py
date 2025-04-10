@@ -25,7 +25,7 @@ class PwdPasswordUserDomain:
     }
 
     def __init__(self, name=None):
-        """PwdPasswordUserDomain
+        r"""PwdPasswordUserDomain
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PwdPasswordUserDomain:
 
     @property
     def name(self):
-        """Gets the name of this PwdPasswordUserDomain.
+        r"""Gets the name of this PwdPasswordUserDomain.
 
         IAM用户所属账号名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class PwdPasswordUserDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PwdPasswordUserDomain.
+        r"""Sets the name of this PwdPasswordUserDomain.
 
         IAM用户所属账号名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

@@ -41,7 +41,7 @@ class RepositoryInfo:
     }
 
     def __init__(self, name=None, description=None, project_id=None, region_id=None, gitignore=None, member_permission=None, readme_permission=None, visibility_level=None, license_id=None):
-        """RepositoryInfo
+        r"""RepositoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class RepositoryInfo:
 
     @property
     def name(self):
-        """Gets the name of this RepositoryInfo.
+        r"""Gets the name of this RepositoryInfo.
 
         代码仓的名称。
 
@@ -110,7 +110,7 @@ class RepositoryInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RepositoryInfo.
+        r"""Sets the name of this RepositoryInfo.
 
         代码仓的名称。
 
@@ -121,7 +121,7 @@ class RepositoryInfo:
 
     @property
     def description(self):
-        """Gets the description of this RepositoryInfo.
+        r"""Gets the description of this RepositoryInfo.
 
         代码仓描述。
 
@@ -132,7 +132,7 @@ class RepositoryInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RepositoryInfo.
+        r"""Sets the description of this RepositoryInfo.
 
         代码仓描述。
 
@@ -143,7 +143,7 @@ class RepositoryInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RepositoryInfo.
+        r"""Gets the project_id of this RepositoryInfo.
 
         项目id。
 
@@ -154,7 +154,7 @@ class RepositoryInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RepositoryInfo.
+        r"""Sets the project_id of this RepositoryInfo.
 
         项目id。
 
@@ -165,7 +165,7 @@ class RepositoryInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this RepositoryInfo.
+        r"""Gets the region_id of this RepositoryInfo.
 
         区域id。
 
@@ -176,7 +176,7 @@ class RepositoryInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this RepositoryInfo.
+        r"""Sets the region_id of this RepositoryInfo.
 
         区域id。
 
@@ -187,7 +187,7 @@ class RepositoryInfo:
 
     @property
     def gitignore(self):
-        """Gets the gitignore of this RepositoryInfo.
+        r"""Gets the gitignore of this RepositoryInfo.
 
         根据编程语言生成gitignore文件。
 
@@ -198,7 +198,7 @@ class RepositoryInfo:
 
     @gitignore.setter
     def gitignore(self, gitignore):
-        """Sets the gitignore of this RepositoryInfo.
+        r"""Sets the gitignore of this RepositoryInfo.
 
         根据编程语言生成gitignore文件。
 
@@ -209,7 +209,7 @@ class RepositoryInfo:
 
     @property
     def member_permission(self):
-        """Gets the member_permission of this RepositoryInfo.
+        r"""Gets the member_permission of this RepositoryInfo.
 
         是否允许项目内成员访问仓库： - 0：不允许 - 1：允许 
 
@@ -220,7 +220,7 @@ class RepositoryInfo:
 
     @member_permission.setter
     def member_permission(self, member_permission):
-        """Sets the member_permission of this RepositoryInfo.
+        r"""Sets the member_permission of this RepositoryInfo.
 
         是否允许项目内成员访问仓库： - 0：不允许 - 1：允许 
 
@@ -231,7 +231,7 @@ class RepositoryInfo:
 
     @property
     def readme_permission(self):
-        """Gets the readme_permission of this RepositoryInfo.
+        r"""Gets the readme_permission of this RepositoryInfo.
 
         是否允许生成README文件： - 0：不允许 - 1：允许 
 
@@ -242,7 +242,7 @@ class RepositoryInfo:
 
     @readme_permission.setter
     def readme_permission(self, readme_permission):
-        """Sets the readme_permission of this RepositoryInfo.
+        r"""Sets the readme_permission of this RepositoryInfo.
 
         是否允许生成README文件： - 0：不允许 - 1：允许 
 
@@ -253,7 +253,7 @@ class RepositoryInfo:
 
     @property
     def visibility_level(self):
-        """Gets the visibility_level of this RepositoryInfo.
+        r"""Gets the visibility_level of this RepositoryInfo.
 
         是否公开： - 0：私有 - 20：公开只读 
 
@@ -264,7 +264,7 @@ class RepositoryInfo:
 
     @visibility_level.setter
     def visibility_level(self, visibility_level):
-        """Sets the visibility_level of this RepositoryInfo.
+        r"""Sets the visibility_level of this RepositoryInfo.
 
         是否公开： - 0：私有 - 20：公开只读 
 
@@ -275,7 +275,7 @@ class RepositoryInfo:
 
     @property
     def license_id(self):
-        """Gets the license_id of this RepositoryInfo.
+        r"""Gets the license_id of this RepositoryInfo.
 
          开源许可证id （0:默认）。
 
@@ -286,7 +286,7 @@ class RepositoryInfo:
 
     @license_id.setter
     def license_id(self, license_id):
-        """Sets the license_id of this RepositoryInfo.
+        r"""Sets the license_id of this RepositoryInfo.
 
          开源许可证id （0:默认）。
 

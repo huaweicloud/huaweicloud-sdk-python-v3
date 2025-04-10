@@ -27,7 +27,7 @@ class BatchDeleteInternetBandwidthTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchDeleteInternetBandwidthTagsRequest
+        r"""BatchDeleteInternetBandwidthTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteInternetBandwidthTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteInternetBandwidthTagsRequest.
+        r"""Gets the resource_id of this BatchDeleteInternetBandwidthTagsRequest.
 
         :return: The resource_id of this BatchDeleteInternetBandwidthTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class BatchDeleteInternetBandwidthTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteInternetBandwidthTagsRequest.
+        r"""Sets the resource_id of this BatchDeleteInternetBandwidthTagsRequest.
 
         :param resource_id: The resource_id of this BatchDeleteInternetBandwidthTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class BatchDeleteInternetBandwidthTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteInternetBandwidthTagsRequest.
+        r"""Gets the body of this BatchDeleteInternetBandwidthTagsRequest.
 
         :return: The body of this BatchDeleteInternetBandwidthTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBody`
@@ -76,7 +76,7 @@ class BatchDeleteInternetBandwidthTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteInternetBandwidthTagsRequest.
+        r"""Sets the body of this BatchDeleteInternetBandwidthTagsRequest.
 
         :param body: The body of this BatchDeleteInternetBandwidthTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBody`

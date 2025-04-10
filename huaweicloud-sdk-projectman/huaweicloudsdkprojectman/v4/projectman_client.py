@@ -34,7 +34,7 @@ class ProjectManClient(Client):
         return client_builder
 
     def add_apply_join_project_for_agc(self, request):
-        """AGC调用 当前用户申请加入项目
+        r"""AGC调用 当前用户申请加入项目
 
         AGC调用 当前用户申请加入项目, 申请的用户id写在header中
         
@@ -103,7 +103,7 @@ class ProjectManClient(Client):
         return http_info
 
     def add_member_v4(self, request):
-        """添加项目成员
+        r"""添加项目成员
 
         添加项目成员,可以添加跨租户成员
         
@@ -170,7 +170,7 @@ class ProjectManClient(Client):
         return http_info
 
     def batch_add_members_v4(self, request):
-        """批量添加项目成员
+        r"""批量添加项目成员
 
         批量添加项目成员，只能添加和项目创建者同一租户下的成员，不正确的用户id会略过，添加的用户超过权限的，默认角色设置为7
         
@@ -237,7 +237,7 @@ class ProjectManClient(Client):
         return http_info
 
     def batch_delete_members_v4(self, request):
-        """批量删除项目成员
+        r"""批量删除项目成员
 
         批量删除项目成员
         
@@ -304,7 +304,7 @@ class ProjectManClient(Client):
         return http_info
 
     def batch_update_child_nick_names(self, request):
-        """更新子用户昵称
+        r"""更新子用户昵称
 
         拥有te_admin角色的用户可以更新其他用户的昵称
         
@@ -369,7 +369,7 @@ class ProjectManClient(Client):
         return http_info
 
     def check_project_name_v4(self, request):
-        """检查项目名称是否存在
+        r"""检查项目名称是否存在
 
         检查项目名称是否存在
         
@@ -434,7 +434,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_project_v4(self, request):
-        """创建项目
+        r"""创建项目
 
         创建项目
         
@@ -499,7 +499,7 @@ class ProjectManClient(Client):
         return http_info
 
     def delete_project_v4(self, request):
-        """删除项目
+        r"""删除项目
 
         删除项目
         
@@ -564,7 +564,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_domain_not_added_projects_v4(self, request):
-        """获取租户没有加入的项目
+        r"""获取租户没有加入的项目
 
         获取租户没有加入的项目
         
@@ -631,7 +631,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_bug_statics_v4(self, request):
-        """获取bug统计信息
+        r"""获取bug统计信息
 
         获取bug统计信息，按模块统计
         
@@ -696,7 +696,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_demand_static_v4(self, request):
-        """获取需求统计信息
+        r"""获取需求统计信息
 
         获取需求统计信息
         
@@ -761,7 +761,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_members_v4(self, request):
-        """获取指定项目的成员用户列表
+        r"""获取指定项目的成员用户列表
 
         获取项目成员列表
         
@@ -830,7 +830,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_projects_v4(self, request):
-        """查询项目列表
+        r"""查询项目列表
 
         查询项目列表
         
@@ -907,7 +907,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_templates(self, request):
-        """查询项目模板
+        r"""查询项目模板
 
         查询项目模板
         
@@ -974,7 +974,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_workitem_status_records_v4(self, request):
-        """查询看板项目下工作项的状态历史记录
+        r"""查询看板项目下工作项的状态历史记录
 
         分页查询看板项目下工作项的状态历史记录
         
@@ -1043,7 +1043,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_workitems(self, request):
-        """查询看板项目下的工作项
+        r"""查询看板项目下的工作项
 
         查询看板项目下的工作项
         
@@ -1114,7 +1114,7 @@ class ProjectManClient(Client):
         return http_info
 
     def remove_project(self, request):
-        """主动退出项目
+        r"""主动退出项目
 
         项目成员主动退出项目，项目创建者不能退出
         
@@ -1179,7 +1179,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_bug_density_v2(self, request):
-        """查询缺陷密度
+        r"""查询缺陷密度
 
         查询缺陷密度
         
@@ -1246,7 +1246,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_bugs_per_developer(self, request):
-        """查询人均bug
+        r"""查询人均bug
 
         查询人均bug
         
@@ -1313,7 +1313,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_completion_rate(self, request):
-        """查询需求按时完成率
+        r"""查询需求按时完成率
 
         查询需求按时完成率
         
@@ -1380,7 +1380,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_cur_user_info(self, request):
-        """获取当前用户信息
+        r"""获取当前用户信息
 
         获取当前用户信息
         
@@ -1443,7 +1443,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_cur_user_role(self, request):
-        """获取当前用户角色
+        r"""获取当前用户角色
 
         获取用户在项目中的角色
         
@@ -1508,7 +1508,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_project_info_v4(self, request):
-        """获取项目详情
+        r"""获取项目详情
 
         获取项目详情
         
@@ -1573,7 +1573,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_project_summary_v4(self, request):
-        """获取项目概览
+        r"""获取项目概览
 
         获取项目概览
         
@@ -1638,7 +1638,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_work_item_wrokflow_config(self, request):
-        """查询看板项目的工作项流转配置
+        r"""查询看板项目的工作项流转配置
 
         查询看板项目的工作项流转配置
         
@@ -1705,7 +1705,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_membes_role_v4(self, request):
-        """更新成员在项目中的角色
+        r"""更新成员在项目中的角色
 
         更新成员在项目中的角色
         
@@ -1772,7 +1772,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_nick_name_v4(self, request):
-        """更新用户昵称
+        r"""更新用户昵称
 
         更新用户昵称
         
@@ -1837,7 +1837,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_project_v4(self, request):
-        """更新项目
+        r"""更新项目
 
         更新项目
         
@@ -1904,7 +1904,7 @@ class ProjectManClient(Client):
         return http_info
 
     def add_issue_work_hours(self, request):
-        """添加指定工作项工时
+        r"""添加指定工作项工时
 
         添加指定工作项工时
         
@@ -1973,7 +1973,7 @@ class ProjectManClient(Client):
         return http_info
 
     def batch_delete_issues_v4(self, request):
-        """批量删除工作项
+        r"""批量删除工作项
 
         批量删除工作项
         
@@ -2040,7 +2040,7 @@ class ProjectManClient(Client):
         return http_info
 
     def batch_delete_iterations_v4(self, request):
-        """批量删除项目的迭代
+        r"""批量删除项目的迭代
 
         批量删除项目的迭代
         
@@ -2107,7 +2107,7 @@ class ProjectManClient(Client):
         return http_info
 
     def batch_list_associated_issues(self, request):
-        """查询当前项目下已经关联的工作项
+        r"""查询当前项目下已经关联的工作项
 
         查询当前项目下已经关联的工作项
         
@@ -2176,7 +2176,7 @@ class ProjectManClient(Client):
         return http_info
 
     def cancel_project_domain(self, request):
-        """取消领域与项目的关联关系
+        r"""取消领域与项目的关联关系
 
         取消领域与项目的关联关系
         
@@ -2243,7 +2243,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_customfields(self, request):
-        """创建工作项类型自定义字段
+        r"""创建工作项类型自定义字段
 
         创建工作项类型自定义字段
         
@@ -2310,7 +2310,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_issue_v4(self, request):
-        """创建工作项
+        r"""创建工作项
 
         创建工作项
         
@@ -2377,7 +2377,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_iteration_v4(self, request):
-        """创建Scrum项目迭代
+        r"""创建Scrum项目迭代
 
         创建Scrum项目迭代
         
@@ -2444,7 +2444,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_project_domain(self, request):
-        """创建项目的领域
+        r"""创建项目的领域
 
         查询项目的领域列表
         
@@ -2511,7 +2511,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_project_module(self, request):
-        """创建项目的模块
+        r"""创建项目的模块
 
         查询项目的模块列表
         
@@ -2578,7 +2578,7 @@ class ProjectManClient(Client):
         return http_info
 
     def create_system_issue_v4(self, request):
-        """细粒度权限用户创建工作项
+        r"""细粒度权限用户创建工作项
 
         拥有IAM细粒度权限（projectmanConfig:systemSettingField:set）且在devcloud项目中有创建工作项的权限的用户可以设置工作项的创建者
         
@@ -2645,7 +2645,7 @@ class ProjectManClient(Client):
         return http_info
 
     def delete_attachment(self, request):
-        """删除附件
+        r"""删除附件
 
         取消工作项与附件关联，如附件为工作项页面上传则删除附件
         
@@ -2714,7 +2714,7 @@ class ProjectManClient(Client):
         return http_info
 
     def delete_issue_v4(self, request):
-        """删除工作项
+        r"""删除工作项
 
         删除工作项
         
@@ -2781,7 +2781,7 @@ class ProjectManClient(Client):
         return http_info
 
     def delete_iteration_v4(self, request):
-        """删除项目迭代
+        r"""删除项目迭代
 
         删除项目迭代
         
@@ -2848,7 +2848,7 @@ class ProjectManClient(Client):
         return http_info
 
     def delete_project_module(self, request):
-        """删除项目的模块
+        r"""删除项目的模块
 
         删除项目的模块
         
@@ -2915,7 +2915,7 @@ class ProjectManClient(Client):
         return http_info
 
     def download_attachment(self, request):
-        """下载工作项附件
+        r"""下载工作项附件
 
         下载工作项附件
         
@@ -2984,7 +2984,7 @@ class ProjectManClient(Client):
         return http_info
 
     def download_image_file(self, request):
-        """下载图片
+        r"""下载图片
 
         下载图片
         
@@ -3051,7 +3051,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_associated_issues(self, request):
-        """查询当前工作项已经关联的工作项
+        r"""查询当前工作项已经关联的工作项
 
         查询当前工作项已经关联的工作项
         
@@ -3122,7 +3122,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_associated_test_cases(self, request):
-        """查询关联用例
+        r"""查询关联用例
 
         查询关联用例
         
@@ -3193,7 +3193,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_associated_wikis(self, request):
-        """查询当前工作项已经关联的关联Wiki
+        r"""查询当前工作项已经关联的关联Wiki
 
         查询当前工作项已经关联的关联Wiki
         
@@ -3264,7 +3264,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_child_issues_v4(self, request):
-        """获取子工作项
+        r"""获取子工作项
 
         获取子工作项
         
@@ -3331,7 +3331,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_issue_associated_commits(self, request):
-        """查询当前工作项已经关联的代码提交记录 / 分支创建记录
+        r"""查询当前工作项已经关联的代码提交记录 / 分支创建记录
 
         查询当前工作项已经关联的代码提交记录 / 分支创建记录
         
@@ -3404,7 +3404,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_issue_comments_v4(self, request):
-        """获取指定工作项的评论列表
+        r"""获取指定工作项的评论列表
 
         获取工作项的评论
         
@@ -3475,7 +3475,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_issue_custom_fields(self, request):
-        """查询Scrum工作项自定义字段
+        r"""查询Scrum工作项自定义字段
 
         查询Scrum工作项自定义字段的可选列表,符合custom_fields或者names条件的都返回,2个值都不传，返回所有的自定义字段列表
         
@@ -3542,7 +3542,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_issue_records_v4(self, request):
-        """获取工作项历史记录
+        r"""获取工作项历史记录
 
         获取工作项历史记录
         
@@ -3613,7 +3613,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_issues_sf_v4(self, request):
-        """查询项目的工作项
+        r"""查询项目的工作项
 
         工作项类型id, 分页参数，创建时间查询项目的工作项
         
@@ -3688,7 +3688,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_issues_v4(self, request):
-        """高级查询工作项
+        r"""高级查询工作项
 
         根据筛选条件查询工作项
         
@@ -3755,7 +3755,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_iteration_histories(self, request):
-        """查看迭代历史记录
+        r"""查看迭代历史记录
 
         查看迭代历史记录
         
@@ -3824,7 +3824,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_domains(self, request):
-        """查询项目的领域列表
+        r"""查询项目的领域列表
 
         查询项目的领域列表
         
@@ -3893,7 +3893,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_issues_records_v4(self, request):
-        """查询项目下所有工作项的历史记录
+        r"""查询项目下所有工作项的历史记录
 
         查询项目下所有工作项的历史记录
         
@@ -3964,7 +3964,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_iterations_v4(self, request):
-        """获取指定项目的迭代列表
+        r"""获取指定项目的迭代列表
 
         获取项目迭代
         
@@ -4033,7 +4033,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_modules(self, request):
-        """查询项目的模块列表
+        r"""查询项目的模块列表
 
         查询项目的模块列表
         
@@ -4102,7 +4102,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_work_hours(self, request):
-        """按用户查询工时（多项目）
+        r"""按用户查询工时（多项目）
 
         按用户查询工时（多项目）
         
@@ -4167,7 +4167,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_project_work_hours_type(self, request):
-        """查询项目下的工时类型
+        r"""查询项目下的工时类型
 
         查询项目下的工时类型
         
@@ -4238,7 +4238,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_scrum_project_statuses(self, request):
-        """查询项目的状态列表
+        r"""查询项目的状态列表
 
         查询项目的状态列表
         
@@ -4309,7 +4309,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_spec_issue_stay_times(self, request):
-        """获取指定工作项停留时间
+        r"""获取指定工作项停留时间
 
         获取指定工作项停留时间
         
@@ -4374,7 +4374,7 @@ class ProjectManClient(Client):
         return http_info
 
     def list_status_statistic(self, request):
-        """查询迭代下工作项状态的统计数据（处理人维度）
+        r"""查询迭代下工作项状态的统计数据（处理人维度）
 
         查询迭代下工作项状态的统计数据（处理人维度）
         
@@ -4445,7 +4445,7 @@ class ProjectManClient(Client):
         return http_info
 
     def search_issues(self, request):
-        """高级查询我的待办工作项
+        r"""高级查询我的待办工作项
 
         高级查询我的待办工作项
         
@@ -4510,7 +4510,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_issue_completion_rate(self, request):
-        """获取工作项完成率
+        r"""获取工作项完成率
 
         获取工作项的完成率
         
@@ -4575,7 +4575,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_issue_v4(self, request):
-        """查询工作项详情
+        r"""查询工作项详情
 
         查询工作项详情
         
@@ -4642,7 +4642,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_issues_wrok_flow_config(self, request):
-        """查询Scrum项目的工作项流转配置
+        r"""查询Scrum项目的工作项流转配置
 
         查询Scrum项目的工作项流转配置
         
@@ -4709,7 +4709,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_iteration_v4(self, request):
-        """查看迭代详情
+        r"""查看迭代详情
 
         查看迭代详情
         
@@ -4774,7 +4774,7 @@ class ProjectManClient(Client):
         return http_info
 
     def show_project_work_hours(self, request):
-        """按用户查询工时（单项目）
+        r"""按用户查询工时（单项目）
 
         按用户查询工时（单项目）
         
@@ -4841,7 +4841,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_issue_v4(self, request):
-        """更新工作项
+        r"""更新工作项
 
         更新工作项
         
@@ -4910,7 +4910,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_iteration_v4(self, request):
-        """更新Scrum项目迭代
+        r"""更新Scrum项目迭代
 
         更新Scrum项目迭代
         
@@ -4979,7 +4979,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_project_domain(self, request):
-        """更新项目的领域
+        r"""更新项目的领域
 
         更新项目的领域
         
@@ -5048,7 +5048,7 @@ class ProjectManClient(Client):
         return http_info
 
     def update_project_module(self, request):
-        """更新项目的模块
+        r"""更新项目的模块
 
         更新项目的模块
         
@@ -5117,7 +5117,7 @@ class ProjectManClient(Client):
         return http_info
 
     def upload_attachments(self, request):
-        """上传工作项附件
+        r"""上传工作项附件
 
         上传工作项附件
         
@@ -5188,7 +5188,7 @@ class ProjectManClient(Client):
         return http_info
 
     def upload_issue_img(self, request):
-        """上传图片
+        r"""上传图片
 
         上传图片
         

@@ -33,7 +33,7 @@ class CreateIncidentProcess:
     }
 
     def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_cmdline=None):
-        """CreateIncidentProcess
+        r"""CreateIncidentProcess
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateIncidentProcess:
 
     @property
     def process_name(self):
-        """Gets the process_name of this CreateIncidentProcess.
+        r"""Gets the process_name of this CreateIncidentProcess.
 
         The name, display only
 
@@ -82,7 +82,7 @@ class CreateIncidentProcess:
 
     @process_name.setter
     def process_name(self, process_name):
-        """Sets the process_name of this CreateIncidentProcess.
+        r"""Sets the process_name of this CreateIncidentProcess.
 
         The name, display only
 
@@ -93,7 +93,7 @@ class CreateIncidentProcess:
 
     @property
     def process_path(self):
-        """Gets the process_path of this CreateIncidentProcess.
+        r"""Gets the process_path of this CreateIncidentProcess.
 
         The name, display only
 
@@ -104,7 +104,7 @@ class CreateIncidentProcess:
 
     @process_path.setter
     def process_path(self, process_path):
-        """Sets the process_path of this CreateIncidentProcess.
+        r"""Sets the process_path of this CreateIncidentProcess.
 
         The name, display only
 
@@ -115,7 +115,7 @@ class CreateIncidentProcess:
 
     @property
     def process_pid(self):
-        """Gets the process_pid of this CreateIncidentProcess.
+        r"""Gets the process_pid of this CreateIncidentProcess.
 
         Id value
 
@@ -126,7 +126,7 @@ class CreateIncidentProcess:
 
     @process_pid.setter
     def process_pid(self, process_pid):
-        """Sets the process_pid of this CreateIncidentProcess.
+        r"""Sets the process_pid of this CreateIncidentProcess.
 
         Id value
 
@@ -137,7 +137,7 @@ class CreateIncidentProcess:
 
     @property
     def process_uid(self):
-        """Gets the process_uid of this CreateIncidentProcess.
+        r"""Gets the process_uid of this CreateIncidentProcess.
 
         Id value
 
@@ -148,7 +148,7 @@ class CreateIncidentProcess:
 
     @process_uid.setter
     def process_uid(self, process_uid):
-        """Sets the process_uid of this CreateIncidentProcess.
+        r"""Sets the process_uid of this CreateIncidentProcess.
 
         Id value
 
@@ -159,7 +159,7 @@ class CreateIncidentProcess:
 
     @property
     def process_cmdline(self):
-        """Gets the process_cmdline of this CreateIncidentProcess.
+        r"""Gets the process_cmdline of this CreateIncidentProcess.
 
         The name, display only
 
@@ -170,7 +170,7 @@ class CreateIncidentProcess:
 
     @process_cmdline.setter
     def process_cmdline(self, process_cmdline):
-        """Sets the process_cmdline of this CreateIncidentProcess.
+        r"""Sets the process_cmdline of this CreateIncidentProcess.
 
         The name, display only
 

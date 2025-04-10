@@ -27,7 +27,7 @@ class BatchDeleteVpnUsersRequest:
     }
 
     def __init__(self, vpn_server_id=None, body=None):
-        """BatchDeleteVpnUsersRequest
+        r"""BatchDeleteVpnUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteVpnUsersRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this BatchDeleteVpnUsersRequest.
+        r"""Gets the vpn_server_id of this BatchDeleteVpnUsersRequest.
 
         VPN服务端 ID
 
@@ -60,7 +60,7 @@ class BatchDeleteVpnUsersRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this BatchDeleteVpnUsersRequest.
+        r"""Sets the vpn_server_id of this BatchDeleteVpnUsersRequest.
 
         VPN服务端 ID
 
@@ -71,7 +71,7 @@ class BatchDeleteVpnUsersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteVpnUsersRequest.
+        r"""Gets the body of this BatchDeleteVpnUsersRequest.
 
         :return: The body of this BatchDeleteVpnUsersRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.BatchDeleteVpnUsersRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteVpnUsersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteVpnUsersRequest.
+        r"""Sets the body of this BatchDeleteVpnUsersRequest.
 
         :param body: The body of this BatchDeleteVpnUsersRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.BatchDeleteVpnUsersRequestBody`

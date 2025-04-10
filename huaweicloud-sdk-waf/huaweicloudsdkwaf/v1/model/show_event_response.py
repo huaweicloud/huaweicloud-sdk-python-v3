@@ -28,7 +28,7 @@ class ShowEventResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowEventResponse
+        r"""ShowEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEventResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowEventResponse.
+        r"""Gets the total of this ShowEventResponse.
 
         攻击事件数量
 
@@ -62,7 +62,7 @@ class ShowEventResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowEventResponse.
+        r"""Sets the total of this ShowEventResponse.
 
         攻击事件数量
 
@@ -73,7 +73,7 @@ class ShowEventResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowEventResponse.
+        r"""Gets the items of this ShowEventResponse.
 
         攻击事件详情
 
@@ -84,7 +84,7 @@ class ShowEventResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowEventResponse.
+        r"""Sets the items of this ShowEventResponse.
 
         攻击事件详情
 

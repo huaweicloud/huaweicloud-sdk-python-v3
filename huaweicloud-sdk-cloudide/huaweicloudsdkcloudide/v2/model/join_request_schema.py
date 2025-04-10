@@ -35,7 +35,7 @@ class JoinRequestSchema:
     }
 
     def __init__(self, region=None, name=None, email=None, organization=None, phone_number=None, invitation_code=None):
-        """JoinRequestSchema
+        r"""JoinRequestSchema
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class JoinRequestSchema:
 
     @property
     def region(self):
-        """Gets the region of this JoinRequestSchema.
+        r"""Gets the region of this JoinRequestSchema.
 
         the region of user
 
@@ -89,7 +89,7 @@ class JoinRequestSchema:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this JoinRequestSchema.
+        r"""Sets the region of this JoinRequestSchema.
 
         the region of user
 
@@ -100,7 +100,7 @@ class JoinRequestSchema:
 
     @property
     def name(self):
-        """Gets the name of this JoinRequestSchema.
+        r"""Gets the name of this JoinRequestSchema.
 
         the name of user
 
@@ -111,7 +111,7 @@ class JoinRequestSchema:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JoinRequestSchema.
+        r"""Sets the name of this JoinRequestSchema.
 
         the name of user
 
@@ -122,7 +122,7 @@ class JoinRequestSchema:
 
     @property
     def email(self):
-        """Gets the email of this JoinRequestSchema.
+        r"""Gets the email of this JoinRequestSchema.
 
         the email of user
 
@@ -133,7 +133,7 @@ class JoinRequestSchema:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this JoinRequestSchema.
+        r"""Sets the email of this JoinRequestSchema.
 
         the email of user
 
@@ -144,7 +144,7 @@ class JoinRequestSchema:
 
     @property
     def organization(self):
-        """Gets the organization of this JoinRequestSchema.
+        r"""Gets the organization of this JoinRequestSchema.
 
         the organization of user
 
@@ -155,7 +155,7 @@ class JoinRequestSchema:
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this JoinRequestSchema.
+        r"""Sets the organization of this JoinRequestSchema.
 
         the organization of user
 
@@ -166,7 +166,7 @@ class JoinRequestSchema:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this JoinRequestSchema.
+        r"""Gets the phone_number of this JoinRequestSchema.
 
         the phone_number of user
 
@@ -177,7 +177,7 @@ class JoinRequestSchema:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this JoinRequestSchema.
+        r"""Sets the phone_number of this JoinRequestSchema.
 
         the phone_number of user
 
@@ -188,7 +188,7 @@ class JoinRequestSchema:
 
     @property
     def invitation_code(self):
-        """Gets the invitation_code of this JoinRequestSchema.
+        r"""Gets the invitation_code of this JoinRequestSchema.
 
         the invitation_code
 
@@ -199,7 +199,7 @@ class JoinRequestSchema:
 
     @invitation_code.setter
     def invitation_code(self, invitation_code):
-        """Sets the invitation_code of this JoinRequestSchema.
+        r"""Sets the invitation_code of this JoinRequestSchema.
 
         the invitation_code
 

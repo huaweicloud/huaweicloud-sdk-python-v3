@@ -27,7 +27,7 @@ class StopJobRequest:
     }
 
     def __init__(self, workspace=None, job_name=None):
-        """StopJobRequest
+        r"""StopJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this StopJobRequest.
+        r"""Gets the workspace of this StopJobRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class StopJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this StopJobRequest.
+        r"""Sets the workspace of this StopJobRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class StopJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this StopJobRequest.
+        r"""Gets the job_name of this StopJobRequest.
 
         作业名称.
 
@@ -82,7 +82,7 @@ class StopJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this StopJobRequest.
+        r"""Sets the job_name of this StopJobRequest.
 
         作业名称.
 

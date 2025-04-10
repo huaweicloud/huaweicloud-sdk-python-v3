@@ -30,7 +30,7 @@ class ShowCaseResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, test_case=None):
-        """ShowCaseResponse
+        r"""ShowCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCaseResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowCaseResponse.
+        r"""Gets the code of this ShowCaseResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowCaseResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowCaseResponse.
+        r"""Sets the code of this ShowCaseResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowCaseResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowCaseResponse.
+        r"""Gets the message of this ShowCaseResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ShowCaseResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowCaseResponse.
+        r"""Sets the message of this ShowCaseResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ShowCaseResponse(SdkResponse):
 
     @property
     def test_case(self):
-        """Gets the test_case of this ShowCaseResponse.
+        r"""Gets the test_case of this ShowCaseResponse.
 
         :return: The test_case of this ShowCaseResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
@@ -111,7 +111,7 @@ class ShowCaseResponse(SdkResponse):
 
     @test_case.setter
     def test_case(self, test_case):
-        """Sets the test_case of this ShowCaseResponse.
+        r"""Sets the test_case of this ShowCaseResponse.
 
         :param test_case: The test_case of this ShowCaseResponse.
         :type test_case: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`

@@ -103,7 +103,7 @@ class ListAlertRsp:
     }
 
     def __init__(self, version=None, environment=None, datasource=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, description=None, source_url=None, count=None, confidence=None, serverity=None, criticality=None, alert_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, chop_phase=None, ipdrr_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, cteator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_alert_table=None, id=None, workspace_id=None):
-        """ListAlertRsp
+        r"""ListAlertRsp
 
         The model defined in huaweicloud sdk
 
@@ -316,7 +316,7 @@ class ListAlertRsp:
 
     @property
     def version(self):
-        """Gets the version of this ListAlertRsp.
+        r"""Gets the version of this ListAlertRsp.
 
         版本
 
@@ -327,7 +327,7 @@ class ListAlertRsp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListAlertRsp.
+        r"""Sets the version of this ListAlertRsp.
 
         版本
 
@@ -338,7 +338,7 @@ class ListAlertRsp:
 
     @property
     def environment(self):
-        """Gets the environment of this ListAlertRsp.
+        r"""Gets the environment of this ListAlertRsp.
 
         :return: The environment of this ListAlertRsp.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -347,7 +347,7 @@ class ListAlertRsp:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ListAlertRsp.
+        r"""Sets the environment of this ListAlertRsp.
 
         :param environment: The environment of this ListAlertRsp.
         :type environment: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -356,7 +356,7 @@ class ListAlertRsp:
 
     @property
     def datasource(self):
-        """Gets the datasource of this ListAlertRsp.
+        r"""Gets the datasource of this ListAlertRsp.
 
         :return: The datasource of this ListAlertRsp.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspDatasource`
@@ -365,7 +365,7 @@ class ListAlertRsp:
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this ListAlertRsp.
+        r"""Sets the datasource of this ListAlertRsp.
 
         :param datasource: The datasource of this ListAlertRsp.
         :type datasource: :class:`huaweicloudsdksa.v2.ShowAlertRspDatasource`
@@ -374,7 +374,7 @@ class ListAlertRsp:
 
     @property
     def first_observed_time(self):
-        """Gets the first_observed_time of this ListAlertRsp.
+        r"""Gets the first_observed_time of this ListAlertRsp.
 
         Update time
 
@@ -385,7 +385,7 @@ class ListAlertRsp:
 
     @first_observed_time.setter
     def first_observed_time(self, first_observed_time):
-        """Sets the first_observed_time of this ListAlertRsp.
+        r"""Sets the first_observed_time of this ListAlertRsp.
 
         Update time
 
@@ -396,7 +396,7 @@ class ListAlertRsp:
 
     @property
     def last_observed_time(self):
-        """Gets the last_observed_time of this ListAlertRsp.
+        r"""Gets the last_observed_time of this ListAlertRsp.
 
         Update time
 
@@ -407,7 +407,7 @@ class ListAlertRsp:
 
     @last_observed_time.setter
     def last_observed_time(self, last_observed_time):
-        """Sets the last_observed_time of this ListAlertRsp.
+        r"""Sets the last_observed_time of this ListAlertRsp.
 
         Update time
 
@@ -418,7 +418,7 @@ class ListAlertRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListAlertRsp.
+        r"""Gets the create_time of this ListAlertRsp.
 
         Create time
 
@@ -429,7 +429,7 @@ class ListAlertRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListAlertRsp.
+        r"""Sets the create_time of this ListAlertRsp.
 
         Create time
 
@@ -440,7 +440,7 @@ class ListAlertRsp:
 
     @property
     def arrive_time(self):
-        """Gets the arrive_time of this ListAlertRsp.
+        r"""Gets the arrive_time of this ListAlertRsp.
 
         Update time
 
@@ -451,7 +451,7 @@ class ListAlertRsp:
 
     @arrive_time.setter
     def arrive_time(self, arrive_time):
-        """Sets the arrive_time of this ListAlertRsp.
+        r"""Sets the arrive_time of this ListAlertRsp.
 
         Update time
 
@@ -462,7 +462,7 @@ class ListAlertRsp:
 
     @property
     def title(self):
-        """Gets the title of this ListAlertRsp.
+        r"""Gets the title of this ListAlertRsp.
 
         The name, display only
 
@@ -473,7 +473,7 @@ class ListAlertRsp:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ListAlertRsp.
+        r"""Sets the title of this ListAlertRsp.
 
         The name, display only
 
@@ -484,7 +484,7 @@ class ListAlertRsp:
 
     @property
     def description(self):
-        """Gets the description of this ListAlertRsp.
+        r"""Gets the description of this ListAlertRsp.
 
         The description, display only
 
@@ -495,7 +495,7 @@ class ListAlertRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListAlertRsp.
+        r"""Sets the description of this ListAlertRsp.
 
         The description, display only
 
@@ -506,7 +506,7 @@ class ListAlertRsp:
 
     @property
     def source_url(self):
-        """Gets the source_url of this ListAlertRsp.
+        r"""Gets the source_url of this ListAlertRsp.
 
         事件URL链接
 
@@ -517,7 +517,7 @@ class ListAlertRsp:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this ListAlertRsp.
+        r"""Sets the source_url of this ListAlertRsp.
 
         事件URL链接
 
@@ -528,7 +528,7 @@ class ListAlertRsp:
 
     @property
     def count(self):
-        """Gets the count of this ListAlertRsp.
+        r"""Gets the count of this ListAlertRsp.
 
         事件发生次数
 
@@ -539,7 +539,7 @@ class ListAlertRsp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlertRsp.
+        r"""Sets the count of this ListAlertRsp.
 
         事件发生次数
 
@@ -550,7 +550,7 @@ class ListAlertRsp:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ListAlertRsp.
+        r"""Gets the confidence of this ListAlertRsp.
 
         置信度
 
@@ -561,7 +561,7 @@ class ListAlertRsp:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ListAlertRsp.
+        r"""Sets the confidence of this ListAlertRsp.
 
         置信度
 
@@ -572,7 +572,7 @@ class ListAlertRsp:
 
     @property
     def serverity(self):
-        """Gets the serverity of this ListAlertRsp.
+        r"""Gets the serverity of this ListAlertRsp.
 
         严重性等级
 
@@ -583,7 +583,7 @@ class ListAlertRsp:
 
     @serverity.setter
     def serverity(self, serverity):
-        """Sets the serverity of this ListAlertRsp.
+        r"""Sets the serverity of this ListAlertRsp.
 
         严重性等级
 
@@ -594,7 +594,7 @@ class ListAlertRsp:
 
     @property
     def criticality(self):
-        """Gets the criticality of this ListAlertRsp.
+        r"""Gets the criticality of this ListAlertRsp.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -605,7 +605,7 @@ class ListAlertRsp:
 
     @criticality.setter
     def criticality(self, criticality):
-        """Sets the criticality of this ListAlertRsp.
+        r"""Sets the criticality of this ListAlertRsp.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -616,7 +616,7 @@ class ListAlertRsp:
 
     @property
     def alert_type(self):
-        """Gets the alert_type of this ListAlertRsp.
+        r"""Gets the alert_type of this ListAlertRsp.
 
         事件分类
 
@@ -627,7 +627,7 @@ class ListAlertRsp:
 
     @alert_type.setter
     def alert_type(self, alert_type):
-        """Sets the alert_type of this ListAlertRsp.
+        r"""Sets the alert_type of this ListAlertRsp.
 
         事件分类
 
@@ -638,7 +638,7 @@ class ListAlertRsp:
 
     @property
     def network_list(self):
-        """Gets the network_list of this ListAlertRsp.
+        r"""Gets the network_list of this ListAlertRsp.
 
         network_list
 
@@ -649,7 +649,7 @@ class ListAlertRsp:
 
     @network_list.setter
     def network_list(self, network_list):
-        """Sets the network_list of this ListAlertRsp.
+        r"""Sets the network_list of this ListAlertRsp.
 
         network_list
 
@@ -660,7 +660,7 @@ class ListAlertRsp:
 
     @property
     def resource_list(self):
-        """Gets the resource_list of this ListAlertRsp.
+        r"""Gets the resource_list of this ListAlertRsp.
 
         network_list
 
@@ -671,7 +671,7 @@ class ListAlertRsp:
 
     @resource_list.setter
     def resource_list(self, resource_list):
-        """Sets the resource_list of this ListAlertRsp.
+        r"""Sets the resource_list of this ListAlertRsp.
 
         network_list
 
@@ -682,7 +682,7 @@ class ListAlertRsp:
 
     @property
     def remediation(self):
-        """Gets the remediation of this ListAlertRsp.
+        r"""Gets the remediation of this ListAlertRsp.
 
         :return: The remediation of this ListAlertRsp.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -691,7 +691,7 @@ class ListAlertRsp:
 
     @remediation.setter
     def remediation(self, remediation):
-        """Sets the remediation of this ListAlertRsp.
+        r"""Sets the remediation of this ListAlertRsp.
 
         :param remediation: The remediation of this ListAlertRsp.
         :type remediation: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -700,7 +700,7 @@ class ListAlertRsp:
 
     @property
     def verification_state(self):
-        """Gets the verification_state of this ListAlertRsp.
+        r"""Gets the verification_state of this ListAlertRsp.
 
         验证状态
 
@@ -711,7 +711,7 @@ class ListAlertRsp:
 
     @verification_state.setter
     def verification_state(self, verification_state):
-        """Sets the verification_state of this ListAlertRsp.
+        r"""Sets the verification_state of this ListAlertRsp.
 
         验证状态
 
@@ -722,7 +722,7 @@ class ListAlertRsp:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this ListAlertRsp.
+        r"""Gets the handle_status of this ListAlertRsp.
 
         事件处理状态
 
@@ -733,7 +733,7 @@ class ListAlertRsp:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this ListAlertRsp.
+        r"""Sets the handle_status of this ListAlertRsp.
 
         事件处理状态
 
@@ -744,7 +744,7 @@ class ListAlertRsp:
 
     @property
     def sla(self):
-        """Gets the sla of this ListAlertRsp.
+        r"""Gets the sla of this ListAlertRsp.
 
         sla
 
@@ -755,7 +755,7 @@ class ListAlertRsp:
 
     @sla.setter
     def sla(self, sla):
-        """Sets the sla of this ListAlertRsp.
+        r"""Sets the sla of this ListAlertRsp.
 
         sla
 
@@ -766,7 +766,7 @@ class ListAlertRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListAlertRsp.
+        r"""Gets the update_time of this ListAlertRsp.
 
         Create time
 
@@ -777,7 +777,7 @@ class ListAlertRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListAlertRsp.
+        r"""Sets the update_time of this ListAlertRsp.
 
         Create time
 
@@ -788,7 +788,7 @@ class ListAlertRsp:
 
     @property
     def close_time(self):
-        """Gets the close_time of this ListAlertRsp.
+        r"""Gets the close_time of this ListAlertRsp.
 
         Create time
 
@@ -799,7 +799,7 @@ class ListAlertRsp:
 
     @close_time.setter
     def close_time(self, close_time):
-        """Sets the close_time of this ListAlertRsp.
+        r"""Sets the close_time of this ListAlertRsp.
 
         Create time
 
@@ -810,7 +810,7 @@ class ListAlertRsp:
 
     @property
     def chop_phase(self):
-        """Gets the chop_phase of this ListAlertRsp.
+        r"""Gets the chop_phase of this ListAlertRsp.
 
         周期/处置阶段编号
 
@@ -821,7 +821,7 @@ class ListAlertRsp:
 
     @chop_phase.setter
     def chop_phase(self, chop_phase):
-        """Sets the chop_phase of this ListAlertRsp.
+        r"""Sets the chop_phase of this ListAlertRsp.
 
         周期/处置阶段编号
 
@@ -832,7 +832,7 @@ class ListAlertRsp:
 
     @property
     def ipdrr_phase(self):
-        """Gets the ipdrr_phase of this ListAlertRsp.
+        r"""Gets the ipdrr_phase of this ListAlertRsp.
 
         周期/处置阶段编号
 
@@ -843,7 +843,7 @@ class ListAlertRsp:
 
     @ipdrr_phase.setter
     def ipdrr_phase(self, ipdrr_phase):
-        """Sets the ipdrr_phase of this ListAlertRsp.
+        r"""Sets the ipdrr_phase of this ListAlertRsp.
 
         周期/处置阶段编号
 
@@ -854,7 +854,7 @@ class ListAlertRsp:
 
     @property
     def ppdr_phase(self):
-        """Gets the ppdr_phase of this ListAlertRsp.
+        r"""Gets the ppdr_phase of this ListAlertRsp.
 
         周期/处置阶段编号
 
@@ -865,7 +865,7 @@ class ListAlertRsp:
 
     @ppdr_phase.setter
     def ppdr_phase(self, ppdr_phase):
-        """Sets the ppdr_phase of this ListAlertRsp.
+        r"""Sets the ppdr_phase of this ListAlertRsp.
 
         周期/处置阶段编号
 
@@ -876,7 +876,7 @@ class ListAlertRsp:
 
     @property
     def simulation(self):
-        """Gets the simulation of this ListAlertRsp.
+        r"""Gets the simulation of this ListAlertRsp.
 
         是否为调试事件.
 
@@ -887,7 +887,7 @@ class ListAlertRsp:
 
     @simulation.setter
     def simulation(self, simulation):
-        """Sets the simulation of this ListAlertRsp.
+        r"""Sets the simulation of this ListAlertRsp.
 
         是否为调试事件.
 
@@ -898,7 +898,7 @@ class ListAlertRsp:
 
     @property
     def actor(self):
-        """Gets the actor of this ListAlertRsp.
+        r"""Gets the actor of this ListAlertRsp.
 
         委托人
 
@@ -909,7 +909,7 @@ class ListAlertRsp:
 
     @actor.setter
     def actor(self, actor):
-        """Sets the actor of this ListAlertRsp.
+        r"""Sets the actor of this ListAlertRsp.
 
         委托人
 
@@ -920,7 +920,7 @@ class ListAlertRsp:
 
     @property
     def owner(self):
-        """Gets the owner of this ListAlertRsp.
+        r"""Gets the owner of this ListAlertRsp.
 
         The name, display only
 
@@ -931,7 +931,7 @@ class ListAlertRsp:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListAlertRsp.
+        r"""Sets the owner of this ListAlertRsp.
 
         The name, display only
 
@@ -942,7 +942,7 @@ class ListAlertRsp:
 
     @property
     def cteator(self):
-        """Gets the cteator of this ListAlertRsp.
+        r"""Gets the cteator of this ListAlertRsp.
 
         The name, display only
 
@@ -953,7 +953,7 @@ class ListAlertRsp:
 
     @cteator.setter
     def cteator(self, cteator):
-        """Sets the cteator of this ListAlertRsp.
+        r"""Sets the cteator of this ListAlertRsp.
 
         The name, display only
 
@@ -964,7 +964,7 @@ class ListAlertRsp:
 
     @property
     def close_reason(self):
-        """Gets the close_reason of this ListAlertRsp.
+        r"""Gets the close_reason of this ListAlertRsp.
 
         关闭原因
 
@@ -975,7 +975,7 @@ class ListAlertRsp:
 
     @close_reason.setter
     def close_reason(self, close_reason):
-        """Sets the close_reason of this ListAlertRsp.
+        r"""Sets the close_reason of this ListAlertRsp.
 
         关闭原因
 
@@ -986,7 +986,7 @@ class ListAlertRsp:
 
     @property
     def close_comment(self):
-        """Gets the close_comment of this ListAlertRsp.
+        r"""Gets the close_comment of this ListAlertRsp.
 
         关闭原因
 
@@ -997,7 +997,7 @@ class ListAlertRsp:
 
     @close_comment.setter
     def close_comment(self, close_comment):
-        """Sets the close_comment of this ListAlertRsp.
+        r"""Sets the close_comment of this ListAlertRsp.
 
         关闭原因
 
@@ -1008,7 +1008,7 @@ class ListAlertRsp:
 
     @property
     def malware(self):
-        """Gets the malware of this ListAlertRsp.
+        r"""Gets the malware of this ListAlertRsp.
 
         :return: The malware of this ListAlertRsp.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspMalware`
@@ -1017,7 +1017,7 @@ class ListAlertRsp:
 
     @malware.setter
     def malware(self, malware):
-        """Sets the malware of this ListAlertRsp.
+        r"""Sets the malware of this ListAlertRsp.
 
         :param malware: The malware of this ListAlertRsp.
         :type malware: :class:`huaweicloudsdksa.v2.ShowAlertRspMalware`
@@ -1026,7 +1026,7 @@ class ListAlertRsp:
 
     @property
     def system_info(self):
-        """Gets the system_info of this ListAlertRsp.
+        r"""Gets the system_info of this ListAlertRsp.
 
         系统信息
 
@@ -1037,7 +1037,7 @@ class ListAlertRsp:
 
     @system_info.setter
     def system_info(self, system_info):
-        """Sets the system_info of this ListAlertRsp.
+        r"""Sets the system_info of this ListAlertRsp.
 
         系统信息
 
@@ -1048,7 +1048,7 @@ class ListAlertRsp:
 
     @property
     def process(self):
-        """Gets the process of this ListAlertRsp.
+        r"""Gets the process of this ListAlertRsp.
 
         进程信息
 
@@ -1059,7 +1059,7 @@ class ListAlertRsp:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this ListAlertRsp.
+        r"""Sets the process of this ListAlertRsp.
 
         进程信息
 
@@ -1070,7 +1070,7 @@ class ListAlertRsp:
 
     @property
     def user_info(self):
-        """Gets the user_info of this ListAlertRsp.
+        r"""Gets the user_info of this ListAlertRsp.
 
         用户信息
 
@@ -1081,7 +1081,7 @@ class ListAlertRsp:
 
     @user_info.setter
     def user_info(self, user_info):
-        """Sets the user_info of this ListAlertRsp.
+        r"""Sets the user_info of this ListAlertRsp.
 
         用户信息
 
@@ -1092,7 +1092,7 @@ class ListAlertRsp:
 
     @property
     def file_info(self):
-        """Gets the file_info of this ListAlertRsp.
+        r"""Gets the file_info of this ListAlertRsp.
 
         文件信息
 
@@ -1103,7 +1103,7 @@ class ListAlertRsp:
 
     @file_info.setter
     def file_info(self, file_info):
-        """Sets the file_info of this ListAlertRsp.
+        r"""Sets the file_info of this ListAlertRsp.
 
         文件信息
 
@@ -1114,7 +1114,7 @@ class ListAlertRsp:
 
     @property
     def system_alert_table(self):
-        """Gets the system_alert_table of this ListAlertRsp.
+        r"""Gets the system_alert_table of this ListAlertRsp.
 
         系统信息
 
@@ -1125,7 +1125,7 @@ class ListAlertRsp:
 
     @system_alert_table.setter
     def system_alert_table(self, system_alert_table):
-        """Sets the system_alert_table of this ListAlertRsp.
+        r"""Sets the system_alert_table of this ListAlertRsp.
 
         系统信息
 
@@ -1136,7 +1136,7 @@ class ListAlertRsp:
 
     @property
     def id(self):
-        """Gets the id of this ListAlertRsp.
+        r"""Gets the id of this ListAlertRsp.
 
         Id value
 
@@ -1147,7 +1147,7 @@ class ListAlertRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAlertRsp.
+        r"""Sets the id of this ListAlertRsp.
 
         Id value
 
@@ -1158,7 +1158,7 @@ class ListAlertRsp:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListAlertRsp.
+        r"""Gets the workspace_id of this ListAlertRsp.
 
         workspace id
 
@@ -1169,7 +1169,7 @@ class ListAlertRsp:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListAlertRsp.
+        r"""Sets the workspace_id of this ListAlertRsp.
 
         workspace id
 

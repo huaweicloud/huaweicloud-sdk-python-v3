@@ -27,7 +27,7 @@ class AssociateQueueToElasticResourcePoolRequest:
     }
 
     def __init__(self, elastic_resource_pool_name=None, body=None):
-        """AssociateQueueToElasticResourcePoolRequest
+        r"""AssociateQueueToElasticResourcePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateQueueToElasticResourcePoolRequest:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this AssociateQueueToElasticResourcePoolRequest.
+        r"""Gets the elastic_resource_pool_name of this AssociateQueueToElasticResourcePoolRequest.
 
         弹性资源池名称
 
@@ -60,7 +60,7 @@ class AssociateQueueToElasticResourcePoolRequest:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this AssociateQueueToElasticResourcePoolRequest.
+        r"""Sets the elastic_resource_pool_name of this AssociateQueueToElasticResourcePoolRequest.
 
         弹性资源池名称
 
@@ -71,7 +71,7 @@ class AssociateQueueToElasticResourcePoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateQueueToElasticResourcePoolRequest.
+        r"""Gets the body of this AssociateQueueToElasticResourcePoolRequest.
 
         :return: The body of this AssociateQueueToElasticResourcePoolRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequestBody`
@@ -80,7 +80,7 @@ class AssociateQueueToElasticResourcePoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateQueueToElasticResourcePoolRequest.
+        r"""Sets the body of this AssociateQueueToElasticResourcePoolRequest.
 
         :param body: The body of this AssociateQueueToElasticResourcePoolRequest.
         :type body: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequestBody`

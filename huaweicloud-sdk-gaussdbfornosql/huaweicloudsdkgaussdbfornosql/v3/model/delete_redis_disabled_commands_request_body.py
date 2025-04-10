@@ -29,7 +29,7 @@ class DeleteRedisDisabledCommandsRequestBody:
     }
 
     def __init__(self, disabled_type=None, commands=None, keys=None):
-        """DeleteRedisDisabledCommandsRequestBody
+        r"""DeleteRedisDisabledCommandsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteRedisDisabledCommandsRequestBody:
 
     @property
     def disabled_type(self):
-        """Gets the disabled_type of this DeleteRedisDisabledCommandsRequestBody.
+        r"""Gets the disabled_type of this DeleteRedisDisabledCommandsRequestBody.
 
         禁用类型。
 
@@ -67,7 +67,7 @@ class DeleteRedisDisabledCommandsRequestBody:
 
     @disabled_type.setter
     def disabled_type(self, disabled_type):
-        """Sets the disabled_type of this DeleteRedisDisabledCommandsRequestBody.
+        r"""Sets the disabled_type of this DeleteRedisDisabledCommandsRequestBody.
 
         禁用类型。
 
@@ -78,7 +78,7 @@ class DeleteRedisDisabledCommandsRequestBody:
 
     @property
     def commands(self):
-        """Gets the commands of this DeleteRedisDisabledCommandsRequestBody.
+        r"""Gets the commands of this DeleteRedisDisabledCommandsRequestBody.
 
         disabled_type为command时传入该参数。
 
@@ -89,7 +89,7 @@ class DeleteRedisDisabledCommandsRequestBody:
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this DeleteRedisDisabledCommandsRequestBody.
+        r"""Sets the commands of this DeleteRedisDisabledCommandsRequestBody.
 
         disabled_type为command时传入该参数。
 
@@ -100,7 +100,7 @@ class DeleteRedisDisabledCommandsRequestBody:
 
     @property
     def keys(self):
-        """Gets the keys of this DeleteRedisDisabledCommandsRequestBody.
+        r"""Gets the keys of this DeleteRedisDisabledCommandsRequestBody.
 
         disabled_type为key时传入该参数，最多20个。
 
@@ -111,7 +111,7 @@ class DeleteRedisDisabledCommandsRequestBody:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this DeleteRedisDisabledCommandsRequestBody.
+        r"""Sets the keys of this DeleteRedisDisabledCommandsRequestBody.
 
         disabled_type为key时传入该参数，最多20个。
 

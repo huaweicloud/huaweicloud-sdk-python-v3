@@ -29,7 +29,7 @@ class CreateDatasourceReqDTO:
     }
 
     def __init__(self, name=None, type=None, content=None):
-        """CreateDatasourceReqDTO
+        r"""CreateDatasourceReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateDatasourceReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatasourceReqDTO.
+        r"""Gets the name of this CreateDatasourceReqDTO.
 
         数据源名称
 
@@ -65,7 +65,7 @@ class CreateDatasourceReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatasourceReqDTO.
+        r"""Sets the name of this CreateDatasourceReqDTO.
 
         数据源名称
 
@@ -76,7 +76,7 @@ class CreateDatasourceReqDTO:
 
     @property
     def type(self):
-        """Gets the type of this CreateDatasourceReqDTO.
+        r"""Gets the type of this CreateDatasourceReqDTO.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE
 
@@ -87,7 +87,7 @@ class CreateDatasourceReqDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateDatasourceReqDTO.
+        r"""Sets the type of this CreateDatasourceReqDTO.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE
 
@@ -98,7 +98,7 @@ class CreateDatasourceReqDTO:
 
     @property
     def content(self):
-        """Gets the content of this CreateDatasourceReqDTO.
+        r"""Gets the content of this CreateDatasourceReqDTO.
 
         :return: The content of this CreateDatasourceReqDTO.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`
@@ -107,7 +107,7 @@ class CreateDatasourceReqDTO:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateDatasourceReqDTO.
+        r"""Sets the content of this CreateDatasourceReqDTO.
 
         :param content: The content of this CreateDatasourceReqDTO.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`

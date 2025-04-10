@@ -23,7 +23,7 @@ class ListSqlSampleTemplatesRequest:
     }
 
     def __init__(self):
-        """ListSqlSampleTemplatesRequest
+        r"""ListSqlSampleTemplatesRequest
 
         The model defined in huaweicloud sdk
 

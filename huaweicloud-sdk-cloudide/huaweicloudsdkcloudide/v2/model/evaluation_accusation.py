@@ -29,7 +29,7 @@ class EvaluationAccusation:
     }
 
     def __init__(self, content=None, evaluation_id=None, reply_id=None):
-        """EvaluationAccusation
+        r"""EvaluationAccusation
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EvaluationAccusation:
 
     @property
     def content(self):
-        """Gets the content of this EvaluationAccusation.
+        r"""Gets the content of this EvaluationAccusation.
 
         举报内容
 
@@ -67,7 +67,7 @@ class EvaluationAccusation:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this EvaluationAccusation.
+        r"""Sets the content of this EvaluationAccusation.
 
         举报内容
 
@@ -78,7 +78,7 @@ class EvaluationAccusation:
 
     @property
     def evaluation_id(self):
-        """Gets the evaluation_id of this EvaluationAccusation.
+        r"""Gets the evaluation_id of this EvaluationAccusation.
 
         评论id
 
@@ -89,7 +89,7 @@ class EvaluationAccusation:
 
     @evaluation_id.setter
     def evaluation_id(self, evaluation_id):
-        """Sets the evaluation_id of this EvaluationAccusation.
+        r"""Sets the evaluation_id of this EvaluationAccusation.
 
         评论id
 
@@ -100,7 +100,7 @@ class EvaluationAccusation:
 
     @property
     def reply_id(self):
-        """Gets the reply_id of this EvaluationAccusation.
+        r"""Gets the reply_id of this EvaluationAccusation.
 
         回复id
 
@@ -111,7 +111,7 @@ class EvaluationAccusation:
 
     @reply_id.setter
     def reply_id(self, reply_id):
-        """Sets the reply_id of this EvaluationAccusation.
+        r"""Sets the reply_id of this EvaluationAccusation.
 
         回复id
 

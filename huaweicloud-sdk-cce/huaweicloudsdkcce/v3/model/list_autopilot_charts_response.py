@@ -26,7 +26,7 @@ class ListAutopilotChartsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAutopilotChartsResponse
+        r"""ListAutopilotChartsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAutopilotChartsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAutopilotChartsResponse.
+        r"""Gets the body of this ListAutopilotChartsResponse.
 
         模板列表
 
@@ -55,7 +55,7 @@ class ListAutopilotChartsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAutopilotChartsResponse.
+        r"""Sets the body of this ListAutopilotChartsResponse.
 
         模板列表
 

@@ -41,7 +41,7 @@ class ListServersRequest:
     }
 
     def __init__(self, offset=None, limit=None, server_group_id=None, server_name=None, machine_name=None, ip_addr=None, server_id=None, maintain_status=None, scaling_auto_create=None):
-        """ListServersRequest
+        r"""ListServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServersRequest.
+        r"""Gets the offset of this ListServersRequest.
 
         查询的偏移量。
 
@@ -110,7 +110,7 @@ class ListServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServersRequest.
+        r"""Sets the offset of this ListServersRequest.
 
         查询的偏移量。
 
@@ -121,7 +121,7 @@ class ListServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServersRequest.
+        r"""Gets the limit of this ListServersRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -132,7 +132,7 @@ class ListServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServersRequest.
+        r"""Sets the limit of this ListServersRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -143,7 +143,7 @@ class ListServersRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListServersRequest.
+        r"""Gets the server_group_id of this ListServersRequest.
 
         服务器组唯一标识。
 
@@ -154,7 +154,7 @@ class ListServersRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListServersRequest.
+        r"""Sets the server_group_id of this ListServersRequest.
 
         服务器组唯一标识。
 
@@ -165,7 +165,7 @@ class ListServersRequest:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ListServersRequest.
+        r"""Gets the server_name of this ListServersRequest.
 
         服务器名称，支持部分匹配。
 
@@ -176,7 +176,7 @@ class ListServersRequest:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ListServersRequest.
+        r"""Sets the server_name of this ListServersRequest.
 
         服务器名称，支持部分匹配。
 
@@ -187,7 +187,7 @@ class ListServersRequest:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ListServersRequest.
+        r"""Gets the machine_name of this ListServersRequest.
 
         机器名称，支持部分匹配。
 
@@ -198,7 +198,7 @@ class ListServersRequest:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ListServersRequest.
+        r"""Sets the machine_name of this ListServersRequest.
 
         机器名称，支持部分匹配。
 
@@ -209,7 +209,7 @@ class ListServersRequest:
 
     @property
     def ip_addr(self):
-        """Gets the ip_addr of this ListServersRequest.
+        r"""Gets the ip_addr of this ListServersRequest.
 
         ip地址，支持部分匹配。
 
@@ -220,7 +220,7 @@ class ListServersRequest:
 
     @ip_addr.setter
     def ip_addr(self, ip_addr):
-        """Sets the ip_addr of this ListServersRequest.
+        r"""Sets the ip_addr of this ListServersRequest.
 
         ip地址，支持部分匹配。
 
@@ -231,7 +231,7 @@ class ListServersRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListServersRequest.
+        r"""Gets the server_id of this ListServersRequest.
 
         服务器唯一标识。
 
@@ -242,7 +242,7 @@ class ListServersRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListServersRequest.
+        r"""Sets the server_id of this ListServersRequest.
 
         服务器唯一标识。
 
@@ -253,7 +253,7 @@ class ListServersRequest:
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this ListServersRequest.
+        r"""Gets the maintain_status of this ListServersRequest.
 
         服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
 
@@ -264,7 +264,7 @@ class ListServersRequest:
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this ListServersRequest.
+        r"""Sets the maintain_status of this ListServersRequest.
 
         服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
 
@@ -275,7 +275,7 @@ class ListServersRequest:
 
     @property
     def scaling_auto_create(self):
-        """Gets the scaling_auto_create of this ListServersRequest.
+        r"""Gets the scaling_auto_create of this ListServersRequest.
 
         是否是弹性创建： true : 通过弹性伸缩创建。 false: 不是通过弹性伸缩创建。
 
@@ -286,7 +286,7 @@ class ListServersRequest:
 
     @scaling_auto_create.setter
     def scaling_auto_create(self, scaling_auto_create):
-        """Sets the scaling_auto_create of this ListServersRequest.
+        r"""Sets the scaling_auto_create of this ListServersRequest.
 
         是否是弹性创建： true : 通过弹性伸缩创建。 false: 不是通过弹性伸缩创建。
 

@@ -28,7 +28,7 @@ class ListReplicationsResponse(SdkResponse):
     }
 
     def __init__(self, replications=None, count=None):
-        """ListReplicationsResponse
+        r"""ListReplicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListReplicationsResponse(SdkResponse):
 
     @property
     def replications(self):
-        """Gets the replications of this ListReplicationsResponse.
+        r"""Gets the replications of this ListReplicationsResponse.
 
         复制对列表。
 
@@ -62,7 +62,7 @@ class ListReplicationsResponse(SdkResponse):
 
     @replications.setter
     def replications(self, replications):
-        """Sets the replications of this ListReplicationsResponse.
+        r"""Sets the replications of this ListReplicationsResponse.
 
         复制对列表。
 
@@ -73,7 +73,7 @@ class ListReplicationsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListReplicationsResponse.
+        r"""Gets the count of this ListReplicationsResponse.
 
         列表中包含的复制对个数。
 
@@ -84,7 +84,7 @@ class ListReplicationsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListReplicationsResponse.
+        r"""Sets the count of this ListReplicationsResponse.
 
         列表中包含的复制对个数。
 

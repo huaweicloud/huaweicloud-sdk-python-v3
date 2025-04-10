@@ -28,7 +28,7 @@ class ListSecuritySensitiveDataOverviewsResponse(SdkResponse):
     }
 
     def __init__(self, secrecy_level_statistics=None, category_statistics=None):
-        """ListSecuritySensitiveDataOverviewsResponse
+        r"""ListSecuritySensitiveDataOverviewsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecuritySensitiveDataOverviewsResponse(SdkResponse):
 
     @property
     def secrecy_level_statistics(self):
-        """Gets the secrecy_level_statistics of this ListSecuritySensitiveDataOverviewsResponse.
+        r"""Gets the secrecy_level_statistics of this ListSecuritySensitiveDataOverviewsResponse.
 
         基于密级的概览统计
 
@@ -62,7 +62,7 @@ class ListSecuritySensitiveDataOverviewsResponse(SdkResponse):
 
     @secrecy_level_statistics.setter
     def secrecy_level_statistics(self, secrecy_level_statistics):
-        """Sets the secrecy_level_statistics of this ListSecuritySensitiveDataOverviewsResponse.
+        r"""Sets the secrecy_level_statistics of this ListSecuritySensitiveDataOverviewsResponse.
 
         基于密级的概览统计
 
@@ -73,7 +73,7 @@ class ListSecuritySensitiveDataOverviewsResponse(SdkResponse):
 
     @property
     def category_statistics(self):
-        """Gets the category_statistics of this ListSecuritySensitiveDataOverviewsResponse.
+        r"""Gets the category_statistics of this ListSecuritySensitiveDataOverviewsResponse.
 
         基于分类的概览统计
 
@@ -84,7 +84,7 @@ class ListSecuritySensitiveDataOverviewsResponse(SdkResponse):
 
     @category_statistics.setter
     def category_statistics(self, category_statistics):
-        """Sets the category_statistics of this ListSecuritySensitiveDataOverviewsResponse.
+        r"""Sets the category_statistics of this ListSecuritySensitiveDataOverviewsResponse.
 
         基于分类的概览统计
 

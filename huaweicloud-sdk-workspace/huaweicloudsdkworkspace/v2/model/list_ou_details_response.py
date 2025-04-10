@@ -28,7 +28,7 @@ class ListOuDetailsResponse(SdkResponse):
     }
 
     def __init__(self, ous=None, total_count=None):
-        """ListOuDetailsResponse
+        r"""ListOuDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOuDetailsResponse(SdkResponse):
 
     @property
     def ous(self):
-        """Gets the ous of this ListOuDetailsResponse.
+        r"""Gets the ous of this ListOuDetailsResponse.
 
         OU对象
 
@@ -62,7 +62,7 @@ class ListOuDetailsResponse(SdkResponse):
 
     @ous.setter
     def ous(self, ous):
-        """Sets the ous of this ListOuDetailsResponse.
+        r"""Sets the ous of this ListOuDetailsResponse.
 
         OU对象
 
@@ -73,7 +73,7 @@ class ListOuDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListOuDetailsResponse.
+        r"""Gets the total_count of this ListOuDetailsResponse.
 
         OU总记录数
 
@@ -84,7 +84,7 @@ class ListOuDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListOuDetailsResponse.
+        r"""Sets the total_count of this ListOuDetailsResponse.
 
         OU总记录数
 

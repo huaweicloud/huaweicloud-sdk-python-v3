@@ -52,7 +52,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, time=None, start=None, terminal=None, priority=None, conditions=None, action=None, producer=None):
-        """ShowHttpAccessControlRuleResponse
+        r"""ShowHttpAccessControlRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the id of this ShowHttpAccessControlRuleResponse.
 
         规则id
 
@@ -146,7 +146,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the id of this ShowHttpAccessControlRuleResponse.
 
         规则id
 
@@ -157,7 +157,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the name of this ShowHttpAccessControlRuleResponse.
 
         规则名称
 
@@ -168,7 +168,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the name of this ShowHttpAccessControlRuleResponse.
 
         规则名称
 
@@ -179,7 +179,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the policy_id of this ShowHttpAccessControlRuleResponse.
 
         规则所在策略id
 
@@ -190,7 +190,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the policy_id of this ShowHttpAccessControlRuleResponse.
 
         规则所在策略id
 
@@ -201,7 +201,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the policy_name of this ShowHttpAccessControlRuleResponse.
 
         规则所在策略名称
 
@@ -212,7 +212,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the policy_name of this ShowHttpAccessControlRuleResponse.
 
         规则所在策略名称
 
@@ -223,7 +223,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the timestamp of this ShowHttpAccessControlRuleResponse.
 
         创建规则时间戳
 
@@ -234,7 +234,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the timestamp of this ShowHttpAccessControlRuleResponse.
 
         创建规则时间戳
 
@@ -245,7 +245,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the description of this ShowHttpAccessControlRuleResponse.
 
         规则描述
 
@@ -256,7 +256,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the description of this ShowHttpAccessControlRuleResponse.
 
         规则描述
 
@@ -267,7 +267,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the status of this ShowHttpAccessControlRuleResponse.
 
         规则开关状态
 
@@ -278,7 +278,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the status of this ShowHttpAccessControlRuleResponse.
 
         规则开关状态
 
@@ -289,7 +289,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def time(self):
-        """Gets the time of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the time of this ShowHttpAccessControlRuleResponse.
 
         是否设定生效时间
 
@@ -300,7 +300,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the time of this ShowHttpAccessControlRuleResponse.
 
         是否设定生效时间
 
@@ -311,7 +311,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def start(self):
-        """Gets the start of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the start of this ShowHttpAccessControlRuleResponse.
 
         生效时间
 
@@ -322,7 +322,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the start of this ShowHttpAccessControlRuleResponse.
 
         生效时间
 
@@ -333,7 +333,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def terminal(self):
-        """Gets the terminal of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the terminal of this ShowHttpAccessControlRuleResponse.
 
         失效时间
 
@@ -344,7 +344,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the terminal of this ShowHttpAccessControlRuleResponse.
 
         失效时间
 
@@ -355,7 +355,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the priority of this ShowHttpAccessControlRuleResponse.
 
         优先级
 
@@ -366,7 +366,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the priority of this ShowHttpAccessControlRuleResponse.
 
         优先级
 
@@ -377,7 +377,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the conditions of this ShowHttpAccessControlRuleResponse.
 
         命中条件
 
@@ -388,7 +388,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the conditions of this ShowHttpAccessControlRuleResponse.
 
         命中条件
 
@@ -399,7 +399,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the action of this ShowHttpAccessControlRuleResponse.
 
         :return: The action of this ShowHttpAccessControlRuleResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -408,7 +408,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the action of this ShowHttpAccessControlRuleResponse.
 
         :param action: The action of this ShowHttpAccessControlRuleResponse.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -417,7 +417,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this ShowHttpAccessControlRuleResponse.
+        r"""Gets the producer of this ShowHttpAccessControlRuleResponse.
 
         创建来源
 
@@ -428,7 +428,7 @@ class ShowHttpAccessControlRuleResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this ShowHttpAccessControlRuleResponse.
+        r"""Sets the producer of this ShowHttpAccessControlRuleResponse.
 
         创建来源
 

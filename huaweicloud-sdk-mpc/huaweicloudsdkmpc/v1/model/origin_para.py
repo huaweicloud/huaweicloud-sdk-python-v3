@@ -33,7 +33,7 @@ class OriginPara:
     }
 
     def __init__(self, duration=None, duration_ms=None, file_format=None, video=None, audio=None):
-        """OriginPara
+        r"""OriginPara
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OriginPara:
 
     @property
     def duration(self):
-        """Gets the duration of this OriginPara.
+        r"""Gets the duration of this OriginPara.
 
         片源时长，单位：秒
 
@@ -82,7 +82,7 @@ class OriginPara:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OriginPara.
+        r"""Sets the duration of this OriginPara.
 
         片源时长，单位：秒
 
@@ -93,7 +93,7 @@ class OriginPara:
 
     @property
     def duration_ms(self):
-        """Gets the duration_ms of this OriginPara.
+        r"""Gets the duration_ms of this OriginPara.
 
         片源时长，单位：毫秒
 
@@ -104,7 +104,7 @@ class OriginPara:
 
     @duration_ms.setter
     def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this OriginPara.
+        r"""Sets the duration_ms of this OriginPara.
 
         片源时长，单位：毫秒
 
@@ -115,7 +115,7 @@ class OriginPara:
 
     @property
     def file_format(self):
-        """Gets the file_format of this OriginPara.
+        r"""Gets the file_format of this OriginPara.
 
         文件格式 
 
@@ -126,7 +126,7 @@ class OriginPara:
 
     @file_format.setter
     def file_format(self, file_format):
-        """Sets the file_format of this OriginPara.
+        r"""Sets the file_format of this OriginPara.
 
         文件格式 
 
@@ -137,7 +137,7 @@ class OriginPara:
 
     @property
     def video(self):
-        """Gets the video of this OriginPara.
+        r"""Gets the video of this OriginPara.
 
         :return: The video of this OriginPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -146,7 +146,7 @@ class OriginPara:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this OriginPara.
+        r"""Sets the video of this OriginPara.
 
         :param video: The video of this OriginPara.
         :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -155,7 +155,7 @@ class OriginPara:
 
     @property
     def audio(self):
-        """Gets the audio of this OriginPara.
+        r"""Gets the audio of this OriginPara.
 
         :return: The audio of this OriginPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioInfo`
@@ -164,7 +164,7 @@ class OriginPara:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this OriginPara.
+        r"""Sets the audio of this OriginPara.
 
         :param audio: The audio of this OriginPara.
         :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`

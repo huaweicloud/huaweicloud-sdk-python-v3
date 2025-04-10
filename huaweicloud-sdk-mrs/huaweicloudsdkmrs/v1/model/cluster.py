@@ -159,7 +159,7 @@ class Cluster:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, availability_zone_id=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None, eip_id=None, eip_address=None, eipv6_address=None):
-        """Cluster
+        r"""Cluster
 
         The model defined in huaweicloud sdk
 
@@ -512,7 +512,7 @@ class Cluster:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Cluster.
+        r"""Gets the cluster_id of this Cluster.
 
         集群ID。
 
@@ -523,7 +523,7 @@ class Cluster:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Cluster.
+        r"""Sets the cluster_id of this Cluster.
 
         集群ID。
 
@@ -534,7 +534,7 @@ class Cluster:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this Cluster.
+        r"""Gets the cluster_name of this Cluster.
 
         集群名称。
 
@@ -545,7 +545,7 @@ class Cluster:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this Cluster.
+        r"""Sets the cluster_name of this Cluster.
 
         集群名称。
 
@@ -556,7 +556,7 @@ class Cluster:
 
     @property
     def total_node_num(self):
-        """Gets the total_node_num of this Cluster.
+        r"""Gets the total_node_num of this Cluster.
 
         集群部署的节点总数。
 
@@ -567,7 +567,7 @@ class Cluster:
 
     @total_node_num.setter
     def total_node_num(self, total_node_num):
-        """Sets the total_node_num of this Cluster.
+        r"""Sets the total_node_num of this Cluster.
 
         集群部署的节点总数。
 
@@ -578,7 +578,7 @@ class Cluster:
 
     @property
     def cluster_state(self):
-        """Gets the cluster_state of this Cluster.
+        r"""Gets the cluster_state of this Cluster.
 
         集群状态，包括： - starting：启动中的集群。 - running：运行中的集群。 - terminated：已删除的集群。 - failed：失败的集群。 - abnormal：异常的集群。 - terminating：删除中的集群。 - frozen：已冻结的集群。 - scaling-out：扩容中的集群。 - scaling-in：缩容中的集群。
 
@@ -589,7 +589,7 @@ class Cluster:
 
     @cluster_state.setter
     def cluster_state(self, cluster_state):
-        """Sets the cluster_state of this Cluster.
+        r"""Sets the cluster_state of this Cluster.
 
         集群状态，包括： - starting：启动中的集群。 - running：运行中的集群。 - terminated：已删除的集群。 - failed：失败的集群。 - abnormal：异常的集群。 - terminating：删除中的集群。 - frozen：已冻结的集群。 - scaling-out：扩容中的集群。 - scaling-in：缩容中的集群。
 
@@ -600,7 +600,7 @@ class Cluster:
 
     @property
     def stage_desc(self):
-        """Gets the stage_desc of this Cluster.
+        r"""Gets the stage_desc of this Cluster.
 
         集群进度描述。  安装集群进度包括： - Verifying cluster parameters：校验集群参数中 - Applying for cluster resources：申请集群资源中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Installing MRS Manager：安装MRS Manager中 - Deploying cluster：部署集群中 - Cluster installation failed：集群安装失败  扩容集群进度包括： - Preparing for cluster expansion：准备扩容中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Adding node to the cluster：节点加入集群中 - Cluster expansion failed：集群扩容失败  缩容集群进度包括： - Preparing for cluster shrink：正在准备缩容 - Decommissioning instance：实例退服中 - Deleting VM：删除虚拟机中 - Deleting node from the cluster：从集群删除节点中 - Cluster shrink failed：集群缩容失败 集群安装、扩容、缩容失败，stageDesc会显示失败的原因。
 
@@ -611,7 +611,7 @@ class Cluster:
 
     @stage_desc.setter
     def stage_desc(self, stage_desc):
-        """Sets the stage_desc of this Cluster.
+        r"""Sets the stage_desc of this Cluster.
 
         集群进度描述。  安装集群进度包括： - Verifying cluster parameters：校验集群参数中 - Applying for cluster resources：申请集群资源中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Installing MRS Manager：安装MRS Manager中 - Deploying cluster：部署集群中 - Cluster installation failed：集群安装失败  扩容集群进度包括： - Preparing for cluster expansion：准备扩容中 - Creating VM：创建虚拟机中 - Initializing VM：初始化虚拟机中 - Adding node to the cluster：节点加入集群中 - Cluster expansion failed：集群扩容失败  缩容集群进度包括： - Preparing for cluster shrink：正在准备缩容 - Decommissioning instance：实例退服中 - Deleting VM：删除虚拟机中 - Deleting node from the cluster：从集群删除节点中 - Cluster shrink failed：集群缩容失败 集群安装、扩容、缩容失败，stageDesc会显示失败的原因。
 
@@ -622,7 +622,7 @@ class Cluster:
 
     @property
     def create_at(self):
-        """Gets the create_at of this Cluster.
+        r"""Gets the create_at of this Cluster.
 
         集群创建时间，十位时间戳。
 
@@ -633,7 +633,7 @@ class Cluster:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this Cluster.
+        r"""Sets the create_at of this Cluster.
 
         集群创建时间，十位时间戳。
 
@@ -644,7 +644,7 @@ class Cluster:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Cluster.
+        r"""Gets the update_at of this Cluster.
 
         集群更新时间，十位时间戳。
 
@@ -655,7 +655,7 @@ class Cluster:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Cluster.
+        r"""Sets the update_at of this Cluster.
 
         集群更新时间，十位时间戳。
 
@@ -666,7 +666,7 @@ class Cluster:
 
     @property
     def charging_start_time(self):
-        """Gets the charging_start_time of this Cluster.
+        r"""Gets the charging_start_time of this Cluster.
 
         开始计费时间。
 
@@ -677,7 +677,7 @@ class Cluster:
 
     @charging_start_time.setter
     def charging_start_time(self, charging_start_time):
-        """Sets the charging_start_time of this Cluster.
+        r"""Sets the charging_start_time of this Cluster.
 
         开始计费时间。
 
@@ -688,7 +688,7 @@ class Cluster:
 
     @property
     def billing_type(self):
-        """Gets the billing_type of this Cluster.
+        r"""Gets the billing_type of this Cluster.
 
         集群计费模式。
 
@@ -699,7 +699,7 @@ class Cluster:
 
     @billing_type.setter
     def billing_type(self, billing_type):
-        """Sets the billing_type of this Cluster.
+        r"""Sets the billing_type of this Cluster.
 
         集群计费模式。
 
@@ -710,7 +710,7 @@ class Cluster:
 
     @property
     def data_center(self):
-        """Gets the data_center of this Cluster.
+        r"""Gets the data_center of this Cluster.
 
         集群工作区域。
 
@@ -721,7 +721,7 @@ class Cluster:
 
     @data_center.setter
     def data_center(self, data_center):
-        """Sets the data_center of this Cluster.
+        r"""Sets the data_center of this Cluster.
 
         集群工作区域。
 
@@ -732,7 +732,7 @@ class Cluster:
 
     @property
     def vpc(self):
-        """Gets the vpc of this Cluster.
+        r"""Gets the vpc of this Cluster.
 
         VPC名称。
 
@@ -743,7 +743,7 @@ class Cluster:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this Cluster.
+        r"""Sets the vpc of this Cluster.
 
         VPC名称。
 
@@ -754,7 +754,7 @@ class Cluster:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Cluster.
+        r"""Gets the vpc_id of this Cluster.
 
         VPC ID。
 
@@ -765,7 +765,7 @@ class Cluster:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Cluster.
+        r"""Sets the vpc_id of this Cluster.
 
         VPC ID。
 
@@ -776,7 +776,7 @@ class Cluster:
 
     @property
     def duration(self):
-        """Gets the duration of this Cluster.
+        r"""Gets the duration of this Cluster.
 
         集群购买时长。
 
@@ -787,7 +787,7 @@ class Cluster:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this Cluster.
+        r"""Sets the duration of this Cluster.
 
         集群购买时长。
 
@@ -798,7 +798,7 @@ class Cluster:
 
     @property
     def fee(self):
-        """Gets the fee of this Cluster.
+        r"""Gets the fee of this Cluster.
 
         创建集群所需费用，系统自动计算。
 
@@ -809,7 +809,7 @@ class Cluster:
 
     @fee.setter
     def fee(self, fee):
-        """Sets the fee of this Cluster.
+        r"""Sets the fee of this Cluster.
 
         创建集群所需费用，系统自动计算。
 
@@ -820,7 +820,7 @@ class Cluster:
 
     @property
     def hadoop_version(self):
-        """Gets the hadoop_version of this Cluster.
+        r"""Gets the hadoop_version of this Cluster.
 
         Hadoop组件版本信息。
 
@@ -831,7 +831,7 @@ class Cluster:
 
     @hadoop_version.setter
     def hadoop_version(self, hadoop_version):
-        """Sets the hadoop_version of this Cluster.
+        r"""Sets the hadoop_version of this Cluster.
 
         Hadoop组件版本信息。
 
@@ -842,7 +842,7 @@ class Cluster:
 
     @property
     def component_list(self):
-        """Gets the component_list of this Cluster.
+        r"""Gets the component_list of this Cluster.
 
         组件列表信息。
 
@@ -853,7 +853,7 @@ class Cluster:
 
     @component_list.setter
     def component_list(self, component_list):
-        """Sets the component_list of this Cluster.
+        r"""Sets the component_list of this Cluster.
 
         组件列表信息。
 
@@ -864,7 +864,7 @@ class Cluster:
 
     @property
     def external_ip(self):
-        """Gets the external_ip of this Cluster.
+        r"""Gets the external_ip of this Cluster.
 
         公网IP地址。
 
@@ -875,7 +875,7 @@ class Cluster:
 
     @external_ip.setter
     def external_ip(self, external_ip):
-        """Sets the external_ip of this Cluster.
+        r"""Sets the external_ip of this Cluster.
 
         公网IP地址。
 
@@ -886,7 +886,7 @@ class Cluster:
 
     @property
     def external_alternate_ip(self):
-        """Gets the external_alternate_ip of this Cluster.
+        r"""Gets the external_alternate_ip of this Cluster.
 
         公网备用IP地址。
 
@@ -897,7 +897,7 @@ class Cluster:
 
     @external_alternate_ip.setter
     def external_alternate_ip(self, external_alternate_ip):
-        """Sets the external_alternate_ip of this Cluster.
+        r"""Sets the external_alternate_ip of this Cluster.
 
         公网备用IP地址。
 
@@ -908,7 +908,7 @@ class Cluster:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this Cluster.
+        r"""Gets the internal_ip of this Cluster.
 
         内网IP地址。
 
@@ -919,7 +919,7 @@ class Cluster:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this Cluster.
+        r"""Sets the internal_ip of this Cluster.
 
         内网IP地址。
 
@@ -930,7 +930,7 @@ class Cluster:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this Cluster.
+        r"""Gets the deployment_id of this Cluster.
 
         集群部署ID。
 
@@ -941,7 +941,7 @@ class Cluster:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this Cluster.
+        r"""Sets the deployment_id of this Cluster.
 
         集群部署ID。
 
@@ -952,7 +952,7 @@ class Cluster:
 
     @property
     def remark(self):
-        """Gets the remark of this Cluster.
+        r"""Gets the remark of this Cluster.
 
         集群备注信息。
 
@@ -963,7 +963,7 @@ class Cluster:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this Cluster.
+        r"""Sets the remark of this Cluster.
 
         集群备注信息。
 
@@ -974,7 +974,7 @@ class Cluster:
 
     @property
     def order_id(self):
-        """Gets the order_id of this Cluster.
+        r"""Gets the order_id of this Cluster.
 
         创建集群的订单号。
 
@@ -985,7 +985,7 @@ class Cluster:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this Cluster.
+        r"""Sets the order_id of this Cluster.
 
         创建集群的订单号。
 
@@ -996,7 +996,7 @@ class Cluster:
 
     @property
     def az_id(self):
-        """Gets the az_id of this Cluster.
+        r"""Gets the az_id of this Cluster.
 
         可用区域ID。
 
@@ -1007,7 +1007,7 @@ class Cluster:
 
     @az_id.setter
     def az_id(self, az_id):
-        """Sets the az_id of this Cluster.
+        r"""Sets the az_id of this Cluster.
 
         可用区域ID。
 
@@ -1018,7 +1018,7 @@ class Cluster:
 
     @property
     def az_name(self):
-        """Gets the az_name of this Cluster.
+        r"""Gets the az_name of this Cluster.
 
         可用区域名称。
 
@@ -1029,7 +1029,7 @@ class Cluster:
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this Cluster.
+        r"""Sets the az_name of this Cluster.
 
         可用区域名称。
 
@@ -1040,7 +1040,7 @@ class Cluster:
 
     @property
     def az_code(self):
-        """Gets the az_code of this Cluster.
+        r"""Gets the az_code of this Cluster.
 
         可用区域英文名称
 
@@ -1051,7 +1051,7 @@ class Cluster:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this Cluster.
+        r"""Sets the az_code of this Cluster.
 
         可用区域英文名称
 
@@ -1062,7 +1062,7 @@ class Cluster:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this Cluster.
+        r"""Gets the availability_zone_id of this Cluster.
 
         可用区域
 
@@ -1073,7 +1073,7 @@ class Cluster:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this Cluster.
+        r"""Sets the availability_zone_id of this Cluster.
 
         可用区域
 
@@ -1084,7 +1084,7 @@ class Cluster:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Cluster.
+        r"""Gets the instance_id of this Cluster.
 
         实例ID。
 
@@ -1095,7 +1095,7 @@ class Cluster:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Cluster.
+        r"""Sets the instance_id of this Cluster.
 
         实例ID。
 
@@ -1106,7 +1106,7 @@ class Cluster:
 
     @property
     def vnc(self):
-        """Gets the vnc of this Cluster.
+        r"""Gets the vnc of this Cluster.
 
         远程登录弹性云服务器的URI地址。
 
@@ -1117,7 +1117,7 @@ class Cluster:
 
     @vnc.setter
     def vnc(self, vnc):
-        """Sets the vnc of this Cluster.
+        r"""Sets the vnc of this Cluster.
 
         远程登录弹性云服务器的URI地址。
 
@@ -1128,7 +1128,7 @@ class Cluster:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Cluster.
+        r"""Gets the tenant_id of this Cluster.
 
         项目编号。
 
@@ -1139,7 +1139,7 @@ class Cluster:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Cluster.
+        r"""Sets the tenant_id of this Cluster.
 
         项目编号。
 
@@ -1150,7 +1150,7 @@ class Cluster:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this Cluster.
+        r"""Gets the volume_size of this Cluster.
 
         磁盘存储空间。
 
@@ -1161,7 +1161,7 @@ class Cluster:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this Cluster.
+        r"""Sets the volume_size of this Cluster.
 
         磁盘存储空间。
 
@@ -1172,7 +1172,7 @@ class Cluster:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this Cluster.
+        r"""Gets the volume_type of this Cluster.
 
         磁盘类型。
 
@@ -1183,7 +1183,7 @@ class Cluster:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this Cluster.
+        r"""Sets the volume_type of this Cluster.
 
         磁盘类型。
 
@@ -1194,7 +1194,7 @@ class Cluster:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Cluster.
+        r"""Gets the subnet_id of this Cluster.
 
         子网ID。
 
@@ -1205,7 +1205,7 @@ class Cluster:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Cluster.
+        r"""Sets the subnet_id of this Cluster.
 
         子网ID。
 
@@ -1216,7 +1216,7 @@ class Cluster:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this Cluster.
+        r"""Gets the subnet_name of this Cluster.
 
         子网名称。
 
@@ -1227,7 +1227,7 @@ class Cluster:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this Cluster.
+        r"""Sets the subnet_name of this Cluster.
 
         子网名称。
 
@@ -1238,7 +1238,7 @@ class Cluster:
 
     @property
     def security_groups_id(self):
-        """Gets the security_groups_id of this Cluster.
+        r"""Gets the security_groups_id of this Cluster.
 
         安全组ID。
 
@@ -1249,7 +1249,7 @@ class Cluster:
 
     @security_groups_id.setter
     def security_groups_id(self, security_groups_id):
-        """Sets the security_groups_id of this Cluster.
+        r"""Sets the security_groups_id of this Cluster.
 
         安全组ID。
 
@@ -1260,7 +1260,7 @@ class Cluster:
 
     @property
     def slave_security_groups_id(self):
-        """Gets the slave_security_groups_id of this Cluster.
+        r"""Gets the slave_security_groups_id of this Cluster.
 
         非Master节点的安全组id，当前一个MRS集群只会使用一个安全组，所以该字段已经废弃，从兼容性考虑，该字段会返回和securityGroupsId同样的值。
 
@@ -1271,7 +1271,7 @@ class Cluster:
 
     @slave_security_groups_id.setter
     def slave_security_groups_id(self, slave_security_groups_id):
-        """Sets the slave_security_groups_id of this Cluster.
+        r"""Sets the slave_security_groups_id of this Cluster.
 
         非Master节点的安全组id，当前一个MRS集群只会使用一个安全组，所以该字段已经废弃，从兼容性考虑，该字段会返回和securityGroupsId同样的值。
 
@@ -1282,7 +1282,7 @@ class Cluster:
 
     @property
     def bootstrap_scripts(self):
-        """Gets the bootstrap_scripts of this Cluster.
+        r"""Gets the bootstrap_scripts of this Cluster.
 
         配置引导操作脚本信息。
 
@@ -1293,7 +1293,7 @@ class Cluster:
 
     @bootstrap_scripts.setter
     def bootstrap_scripts(self, bootstrap_scripts):
-        """Sets the bootstrap_scripts of this Cluster.
+        r"""Sets the bootstrap_scripts of this Cluster.
 
         配置引导操作脚本信息。
 
@@ -1304,7 +1304,7 @@ class Cluster:
 
     @property
     def safe_mode(self):
-        """Gets the safe_mode of this Cluster.
+        r"""Gets the safe_mode of this Cluster.
 
         MRS集群运行模式。 - 0：普通集群 - 1：安全集群
 
@@ -1315,7 +1315,7 @@ class Cluster:
 
     @safe_mode.setter
     def safe_mode(self, safe_mode):
-        """Sets the safe_mode of this Cluster.
+        r"""Sets the safe_mode of this Cluster.
 
         MRS集群运行模式。 - 0：普通集群 - 1：安全集群
 
@@ -1326,7 +1326,7 @@ class Cluster:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this Cluster.
+        r"""Gets the cluster_version of this Cluster.
 
         集群版本。
 
@@ -1337,7 +1337,7 @@ class Cluster:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this Cluster.
+        r"""Sets the cluster_version of this Cluster.
 
         集群版本。
 
@@ -1348,7 +1348,7 @@ class Cluster:
 
     @property
     def node_public_cert_name(self):
-        """Gets the node_public_cert_name of this Cluster.
+        r"""Gets the node_public_cert_name of this Cluster.
 
         密钥文件名称。
 
@@ -1359,7 +1359,7 @@ class Cluster:
 
     @node_public_cert_name.setter
     def node_public_cert_name(self, node_public_cert_name):
-        """Sets the node_public_cert_name of this Cluster.
+        r"""Sets the node_public_cert_name of this Cluster.
 
         密钥文件名称。
 
@@ -1370,7 +1370,7 @@ class Cluster:
 
     @property
     def master_node_ip(self):
-        """Gets the master_node_ip of this Cluster.
+        r"""Gets the master_node_ip of this Cluster.
 
         Master节点IP。
 
@@ -1381,7 +1381,7 @@ class Cluster:
 
     @master_node_ip.setter
     def master_node_ip(self, master_node_ip):
-        """Sets the master_node_ip of this Cluster.
+        r"""Sets the master_node_ip of this Cluster.
 
         Master节点IP。
 
@@ -1392,7 +1392,7 @@ class Cluster:
 
     @property
     def private_ip_first(self):
-        """Gets the private_ip_first of this Cluster.
+        r"""Gets the private_ip_first of this Cluster.
 
         首选私有IP。
 
@@ -1403,7 +1403,7 @@ class Cluster:
 
     @private_ip_first.setter
     def private_ip_first(self, private_ip_first):
-        """Sets the private_ip_first of this Cluster.
+        r"""Sets the private_ip_first of this Cluster.
 
         首选私有IP。
 
@@ -1414,7 +1414,7 @@ class Cluster:
 
     @property
     def error_info(self):
-        """Gets the error_info of this Cluster.
+        r"""Gets the error_info of this Cluster.
 
         错误信息。
 
@@ -1425,7 +1425,7 @@ class Cluster:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this Cluster.
+        r"""Sets the error_info of this Cluster.
 
         错误信息。
 
@@ -1436,7 +1436,7 @@ class Cluster:
 
     @property
     def tags(self):
-        """Gets the tags of this Cluster.
+        r"""Gets the tags of this Cluster.
 
         标签信息
 
@@ -1447,7 +1447,7 @@ class Cluster:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Cluster.
+        r"""Sets the tags of this Cluster.
 
         标签信息
 
@@ -1458,7 +1458,7 @@ class Cluster:
 
     @property
     def master_node_num(self):
-        """Gets the master_node_num of this Cluster.
+        r"""Gets the master_node_num of this Cluster.
 
         集群部署的Master节点数量。
 
@@ -1469,7 +1469,7 @@ class Cluster:
 
     @master_node_num.setter
     def master_node_num(self, master_node_num):
-        """Sets the master_node_num of this Cluster.
+        r"""Sets the master_node_num of this Cluster.
 
         集群部署的Master节点数量。
 
@@ -1480,7 +1480,7 @@ class Cluster:
 
     @property
     def core_node_num(self):
-        """Gets the core_node_num of this Cluster.
+        r"""Gets the core_node_num of this Cluster.
 
         集群部署的Core节点数量。
 
@@ -1491,7 +1491,7 @@ class Cluster:
 
     @core_node_num.setter
     def core_node_num(self, core_node_num):
-        """Sets the core_node_num of this Cluster.
+        r"""Sets the core_node_num of this Cluster.
 
         集群部署的Core节点数量。
 
@@ -1502,7 +1502,7 @@ class Cluster:
 
     @property
     def master_node_size(self):
-        """Gets the master_node_size of this Cluster.
+        r"""Gets the master_node_size of this Cluster.
 
         Master节点的实例规格。
 
@@ -1513,7 +1513,7 @@ class Cluster:
 
     @master_node_size.setter
     def master_node_size(self, master_node_size):
-        """Sets the master_node_size of this Cluster.
+        r"""Sets the master_node_size of this Cluster.
 
         Master节点的实例规格。
 
@@ -1524,7 +1524,7 @@ class Cluster:
 
     @property
     def core_node_size(self):
-        """Gets the core_node_size of this Cluster.
+        r"""Gets the core_node_size of this Cluster.
 
         Core节点的实例规格。
 
@@ -1535,7 +1535,7 @@ class Cluster:
 
     @core_node_size.setter
     def core_node_size(self, core_node_size):
-        """Sets the core_node_size of this Cluster.
+        r"""Sets the core_node_size of this Cluster.
 
         Core节点的实例规格。
 
@@ -1546,7 +1546,7 @@ class Cluster:
 
     @property
     def master_node_product_id(self):
-        """Gets the master_node_product_id of this Cluster.
+        r"""Gets the master_node_product_id of this Cluster.
 
         Master节点产品ID。
 
@@ -1557,7 +1557,7 @@ class Cluster:
 
     @master_node_product_id.setter
     def master_node_product_id(self, master_node_product_id):
-        """Sets the master_node_product_id of this Cluster.
+        r"""Sets the master_node_product_id of this Cluster.
 
         Master节点产品ID。
 
@@ -1568,7 +1568,7 @@ class Cluster:
 
     @property
     def master_node_spec_id(self):
-        """Gets the master_node_spec_id of this Cluster.
+        r"""Gets the master_node_spec_id of this Cluster.
 
         Master节点规格ID。
 
@@ -1579,7 +1579,7 @@ class Cluster:
 
     @master_node_spec_id.setter
     def master_node_spec_id(self, master_node_spec_id):
-        """Sets the master_node_spec_id of this Cluster.
+        r"""Sets the master_node_spec_id of this Cluster.
 
         Master节点规格ID。
 
@@ -1590,7 +1590,7 @@ class Cluster:
 
     @property
     def core_node_product_id(self):
-        """Gets the core_node_product_id of this Cluster.
+        r"""Gets the core_node_product_id of this Cluster.
 
         Core节点产品ID。
 
@@ -1601,7 +1601,7 @@ class Cluster:
 
     @core_node_product_id.setter
     def core_node_product_id(self, core_node_product_id):
-        """Sets the core_node_product_id of this Cluster.
+        r"""Sets the core_node_product_id of this Cluster.
 
         Core节点产品ID。
 
@@ -1612,7 +1612,7 @@ class Cluster:
 
     @property
     def core_node_spec_id(self):
-        """Gets the core_node_spec_id of this Cluster.
+        r"""Gets the core_node_spec_id of this Cluster.
 
         Core节点规格ID。
 
@@ -1623,7 +1623,7 @@ class Cluster:
 
     @core_node_spec_id.setter
     def core_node_spec_id(self, core_node_spec_id):
-        """Sets the core_node_spec_id of this Cluster.
+        r"""Sets the core_node_spec_id of this Cluster.
 
         Core节点规格ID。
 
@@ -1634,7 +1634,7 @@ class Cluster:
 
     @property
     def master_data_volume_type(self):
-        """Gets the master_data_volume_type of this Cluster.
+        r"""Gets the master_data_volume_type of this Cluster.
 
         Master节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
 
@@ -1645,7 +1645,7 @@ class Cluster:
 
     @master_data_volume_type.setter
     def master_data_volume_type(self, master_data_volume_type):
-        """Sets the master_data_volume_type of this Cluster.
+        r"""Sets the master_data_volume_type of this Cluster.
 
         Master节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
 
@@ -1656,7 +1656,7 @@ class Cluster:
 
     @property
     def master_data_volume_size(self):
-        """Gets the master_data_volume_size of this Cluster.
+        r"""Gets the master_data_volume_size of this Cluster.
 
         Master节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -1667,7 +1667,7 @@ class Cluster:
 
     @master_data_volume_size.setter
     def master_data_volume_size(self, master_data_volume_size):
-        """Sets the master_data_volume_size of this Cluster.
+        r"""Sets the master_data_volume_size of this Cluster.
 
         Master节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -1678,7 +1678,7 @@ class Cluster:
 
     @property
     def master_data_volume_count(self):
-        """Gets the master_data_volume_count of this Cluster.
+        r"""Gets the master_data_volume_count of this Cluster.
 
         Master节点数据磁盘个数。 取值只能是1
 
@@ -1689,7 +1689,7 @@ class Cluster:
 
     @master_data_volume_count.setter
     def master_data_volume_count(self, master_data_volume_count):
-        """Sets the master_data_volume_count of this Cluster.
+        r"""Sets the master_data_volume_count of this Cluster.
 
         Master节点数据磁盘个数。 取值只能是1
 
@@ -1700,7 +1700,7 @@ class Cluster:
 
     @property
     def core_data_volume_type(self):
-        """Gets the core_data_volume_type of this Cluster.
+        r"""Gets the core_data_volume_type of this Cluster.
 
         Core节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
 
@@ -1711,7 +1711,7 @@ class Cluster:
 
     @core_data_volume_type.setter
     def core_data_volume_type(self, core_data_volume_type):
-        """Sets the core_data_volume_type of this Cluster.
+        r"""Sets the core_data_volume_type of this Cluster.
 
         Core节点数据磁盘存储类别，目前支持SATA、SAS和SSD。
 
@@ -1722,7 +1722,7 @@ class Cluster:
 
     @property
     def core_data_volume_size(self):
-        """Gets the core_data_volume_size of this Cluster.
+        r"""Gets the core_data_volume_size of this Cluster.
 
         Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -1733,7 +1733,7 @@ class Cluster:
 
     @core_data_volume_size.setter
     def core_data_volume_size(self, core_data_volume_size):
-        """Sets the core_data_volume_size of this Cluster.
+        r"""Sets the core_data_volume_size of this Cluster.
 
         Core节点数据磁盘存储空间。为增大数据存储容量，创建集群时可同时添加磁盘。 取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -1744,7 +1744,7 @@ class Cluster:
 
     @property
     def core_data_volume_count(self):
-        """Gets the core_data_volume_count of this Cluster.
+        r"""Gets the core_data_volume_count of this Cluster.
 
         Core节点数据磁盘个数。 取值范围：1～10
 
@@ -1755,7 +1755,7 @@ class Cluster:
 
     @core_data_volume_count.setter
     def core_data_volume_count(self, core_data_volume_count):
-        """Sets the core_data_volume_count of this Cluster.
+        r"""Sets the core_data_volume_count of this Cluster.
 
         Core节点数据磁盘个数。 取值范围：1～10
 
@@ -1766,7 +1766,7 @@ class Cluster:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Cluster.
+        r"""Gets the enterprise_project_id of this Cluster.
 
         企业项目ID。
 
@@ -1777,7 +1777,7 @@ class Cluster:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Cluster.
+        r"""Sets the enterprise_project_id of this Cluster.
 
         企业项目ID。
 
@@ -1788,7 +1788,7 @@ class Cluster:
 
     @property
     def is_mrs_manager_finish(self):
-        """Gets the is_mrs_manager_finish of this Cluster.
+        r"""Gets the is_mrs_manager_finish of this Cluster.
 
         表示集群创建过程中，MRS Manager是否安装完成。 - true：安装完成 - false：安装未完成
 
@@ -1799,7 +1799,7 @@ class Cluster:
 
     @is_mrs_manager_finish.setter
     def is_mrs_manager_finish(self, is_mrs_manager_finish):
-        """Sets the is_mrs_manager_finish of this Cluster.
+        r"""Sets the is_mrs_manager_finish of this Cluster.
 
         表示集群创建过程中，MRS Manager是否安装完成。 - true：安装完成 - false：安装未完成
 
@@ -1810,7 +1810,7 @@ class Cluster:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this Cluster.
+        r"""Gets the cluster_type of this Cluster.
 
         集群类型。
 
@@ -1821,7 +1821,7 @@ class Cluster:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this Cluster.
+        r"""Sets the cluster_type of this Cluster.
 
         集群类型。
 
@@ -1832,7 +1832,7 @@ class Cluster:
 
     @property
     def log_collection(self):
-        """Gets the log_collection of this Cluster.
+        r"""Gets the log_collection of this Cluster.
 
         集群安装失败时，是否搜集日志。 - 0：不收集 - 1：收集
 
@@ -1843,7 +1843,7 @@ class Cluster:
 
     @log_collection.setter
     def log_collection(self, log_collection):
-        """Sets the log_collection of this Cluster.
+        r"""Sets the log_collection of this Cluster.
 
         集群安装失败时，是否搜集日志。 - 0：不收集 - 1：收集
 
@@ -1854,7 +1854,7 @@ class Cluster:
 
     @property
     def period_type(self):
-        """Gets the period_type of this Cluster.
+        r"""Gets the period_type of this Cluster.
 
         区分包周期，集群是包年还是包月。 - 0：包月 - 1：包年
 
@@ -1865,7 +1865,7 @@ class Cluster:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this Cluster.
+        r"""Sets the period_type of this Cluster.
 
         区分包周期，集群是包年还是包月。 - 0：包月 - 1：包年
 
@@ -1876,7 +1876,7 @@ class Cluster:
 
     @property
     def scale(self):
-        """Gets the scale of this Cluster.
+        r"""Gets the scale of this Cluster.
 
         集群节点的变更状态（扩容/缩容/变更规格）。当该参数取值为空时，表示集群节点没有进行变更操作。 取值范围： - scaling-out：扩容中 - scaling-in：缩容中 - scaling-error：处于running状态，且上一次扩容/缩容/升级规格失败的集群 - scaling-up：Master节点规格升级中 - scaling_up_first：备Master节点规格升级中 - scaled_up_first：备Master节点规格升级成功 - scaled-up-success：Master节点规格升级成功
 
@@ -1887,7 +1887,7 @@ class Cluster:
 
     @scale.setter
     def scale(self, scale):
-        """Sets the scale of this Cluster.
+        r"""Sets the scale of this Cluster.
 
         集群节点的变更状态（扩容/缩容/变更规格）。当该参数取值为空时，表示集群节点没有进行变更操作。 取值范围： - scaling-out：扩容中 - scaling-in：缩容中 - scaling-error：处于running状态，且上一次扩容/缩容/升级规格失败的集群 - scaling-up：Master节点规格升级中 - scaling_up_first：备Master节点规格升级中 - scaled_up_first：备Master节点规格升级成功 - scaled-up-success：Master节点规格升级成功
 
@@ -1898,7 +1898,7 @@ class Cluster:
 
     @property
     def node_groups(self):
-        """Gets the node_groups of this Cluster.
+        r"""Gets the node_groups of this Cluster.
 
         Master节点、Core节点和Task节点列表信息。
 
@@ -1909,7 +1909,7 @@ class Cluster:
 
     @node_groups.setter
     def node_groups(self, node_groups):
-        """Sets the node_groups of this Cluster.
+        r"""Sets the node_groups of this Cluster.
 
         Master节点、Core节点和Task节点列表信息。
 
@@ -1920,7 +1920,7 @@ class Cluster:
 
     @property
     def task_node_groups(self):
-        """Gets the task_node_groups of this Cluster.
+        r"""Gets the task_node_groups of this Cluster.
 
         Task节点列表信息。
 
@@ -1931,7 +1931,7 @@ class Cluster:
 
     @task_node_groups.setter
     def task_node_groups(self, task_node_groups):
-        """Sets the task_node_groups of this Cluster.
+        r"""Sets the task_node_groups of this Cluster.
 
         Task节点列表信息。
 
@@ -1942,7 +1942,7 @@ class Cluster:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this Cluster.
+        r"""Gets the eip_id of this Cluster.
 
         集群弹性公网ip的唯一标识
 
@@ -1953,7 +1953,7 @@ class Cluster:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this Cluster.
+        r"""Sets the eip_id of this Cluster.
 
         集群弹性公网ip的唯一标识
 
@@ -1964,7 +1964,7 @@ class Cluster:
 
     @property
     def eip_address(self):
-        """Gets the eip_address of this Cluster.
+        r"""Gets the eip_address of this Cluster.
 
         集群弹性公网ip的IPV4地址
 
@@ -1975,7 +1975,7 @@ class Cluster:
 
     @eip_address.setter
     def eip_address(self, eip_address):
-        """Sets the eip_address of this Cluster.
+        r"""Sets the eip_address of this Cluster.
 
         集群弹性公网ip的IPV4地址
 
@@ -1986,7 +1986,7 @@ class Cluster:
 
     @property
     def eipv6_address(self):
-        """Gets the eipv6_address of this Cluster.
+        r"""Gets the eipv6_address of this Cluster.
 
         集群弹性公网ip的IPV6地址，IPv4时无此字段。
 
@@ -1997,7 +1997,7 @@ class Cluster:
 
     @eipv6_address.setter
     def eipv6_address(self, eipv6_address):
-        """Sets the eipv6_address of this Cluster.
+        r"""Sets the eipv6_address of this Cluster.
 
         集群弹性公网ip的IPV6地址，IPv4时无此字段。
 

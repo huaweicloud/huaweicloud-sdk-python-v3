@@ -24,7 +24,7 @@ class DeleteVpcPeeringResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVpcPeeringResponse
+        r"""DeleteVpcPeeringResponse
 
         The model defined in huaweicloud sdk
 

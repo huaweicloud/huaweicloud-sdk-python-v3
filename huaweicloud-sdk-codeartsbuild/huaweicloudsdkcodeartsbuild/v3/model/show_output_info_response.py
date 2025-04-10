@@ -30,7 +30,7 @@ class ShowOutputInfoResponse(SdkResponse):
     }
 
     def __init__(self, status=None, error=None, result=None):
-        """ShowOutputInfoResponse
+        r"""ShowOutputInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowOutputInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowOutputInfoResponse.
+        r"""Gets the status of this ShowOutputInfoResponse.
 
         状态
 
@@ -69,7 +69,7 @@ class ShowOutputInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowOutputInfoResponse.
+        r"""Sets the status of this ShowOutputInfoResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class ShowOutputInfoResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowOutputInfoResponse.
+        r"""Gets the error of this ShowOutputInfoResponse.
 
         错误
 
@@ -91,7 +91,7 @@ class ShowOutputInfoResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowOutputInfoResponse.
+        r"""Sets the error of this ShowOutputInfoResponse.
 
         错误
 
@@ -102,7 +102,7 @@ class ShowOutputInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowOutputInfoResponse.
+        r"""Gets the result of this ShowOutputInfoResponse.
 
         :return: The result of this ShowOutputInfoResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.OutPutInfoResult`
@@ -111,7 +111,7 @@ class ShowOutputInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowOutputInfoResponse.
+        r"""Sets the result of this ShowOutputInfoResponse.
 
         :param result: The result of this ShowOutputInfoResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.OutPutInfoResult`

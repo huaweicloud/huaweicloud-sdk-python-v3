@@ -31,7 +31,7 @@ class SubscribeWorkflowReq:
     }
 
     def __init__(self, asset_id=None, asset_version=None, destination_workflow_name=None, destination_workflow_version=None):
-        """SubscribeWorkflowReq
+        r"""SubscribeWorkflowReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SubscribeWorkflowReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this SubscribeWorkflowReq.
+        r"""Gets the asset_id of this SubscribeWorkflowReq.
 
         资产id。长度1-64，只能包含字母、数字、下划线和中划线
 
@@ -71,7 +71,7 @@ class SubscribeWorkflowReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this SubscribeWorkflowReq.
+        r"""Sets the asset_id of this SubscribeWorkflowReq.
 
         资产id。长度1-64，只能包含字母、数字、下划线和中划线
 
@@ -82,7 +82,7 @@ class SubscribeWorkflowReq:
 
     @property
     def asset_version(self):
-        """Gets the asset_version of this SubscribeWorkflowReq.
+        r"""Gets the asset_version of this SubscribeWorkflowReq.
 
         资产版本。长度1-128，字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线
 
@@ -93,7 +93,7 @@ class SubscribeWorkflowReq:
 
     @asset_version.setter
     def asset_version(self, asset_version):
-        """Sets the asset_version of this SubscribeWorkflowReq.
+        r"""Sets the asset_version of this SubscribeWorkflowReq.
 
         资产版本。长度1-128，字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线
 
@@ -104,7 +104,7 @@ class SubscribeWorkflowReq:
 
     @property
     def destination_workflow_name(self):
-        """Gets the destination_workflow_name of this SubscribeWorkflowReq.
+        r"""Gets the destination_workflow_name of this SubscribeWorkflowReq.
 
         目标流程名称。取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。
 
@@ -115,7 +115,7 @@ class SubscribeWorkflowReq:
 
     @destination_workflow_name.setter
     def destination_workflow_name(self, destination_workflow_name):
-        """Sets the destination_workflow_name of this SubscribeWorkflowReq.
+        r"""Sets the destination_workflow_name of this SubscribeWorkflowReq.
 
         目标流程名称。取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。
 
@@ -126,7 +126,7 @@ class SubscribeWorkflowReq:
 
     @property
     def destination_workflow_version(self):
-        """Gets the destination_workflow_version of this SubscribeWorkflowReq.
+        r"""Gets the destination_workflow_version of this SubscribeWorkflowReq.
 
         目标流程版本。取值范围：长度[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 
@@ -137,7 +137,7 @@ class SubscribeWorkflowReq:
 
     @destination_workflow_version.setter
     def destination_workflow_version(self, destination_workflow_version):
-        """Sets the destination_workflow_version of this SubscribeWorkflowReq.
+        r"""Sets the destination_workflow_version of this SubscribeWorkflowReq.
 
         目标流程版本。取值范围：长度[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 

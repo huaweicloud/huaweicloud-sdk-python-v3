@@ -27,7 +27,7 @@ class Location:
     }
 
     def __init__(self, x=None, y=None):
-        """Location
+        r"""Location
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Location:
 
     @property
     def x(self):
-        """Gets the x of this Location.
+        r"""Gets the x of this Location.
 
         节点在作业画布上的横轴位置
 
@@ -59,7 +59,7 @@ class Location:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this Location.
+        r"""Sets the x of this Location.
 
         节点在作业画布上的横轴位置
 
@@ -70,7 +70,7 @@ class Location:
 
     @property
     def y(self):
-        """Gets the y of this Location.
+        r"""Gets the y of this Location.
 
         节点在作业画布上的纵轴位置
 
@@ -81,7 +81,7 @@ class Location:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this Location.
+        r"""Sets the y of this Location.
 
         节点在作业画布上的纵轴位置
 

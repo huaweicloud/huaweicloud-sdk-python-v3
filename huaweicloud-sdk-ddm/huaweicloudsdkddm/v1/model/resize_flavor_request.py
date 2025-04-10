@@ -27,7 +27,7 @@ class ResizeFlavorRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ResizeFlavorRequest
+        r"""ResizeFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeFlavorRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResizeFlavorRequest.
+        r"""Gets the instance_id of this ResizeFlavorRequest.
 
         DDM实例ID。
 
@@ -60,7 +60,7 @@ class ResizeFlavorRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResizeFlavorRequest.
+        r"""Sets the instance_id of this ResizeFlavorRequest.
 
         DDM实例ID。
 
@@ -71,7 +71,7 @@ class ResizeFlavorRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeFlavorRequest.
+        r"""Gets the body of this ResizeFlavorRequest.
 
         :return: The body of this ResizeFlavorRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.ResizeFlavorReq`
@@ -80,7 +80,7 @@ class ResizeFlavorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeFlavorRequest.
+        r"""Sets the body of this ResizeFlavorRequest.
 
         :param body: The body of this ResizeFlavorRequest.
         :type body: :class:`huaweicloudsdkddm.v1.ResizeFlavorReq`

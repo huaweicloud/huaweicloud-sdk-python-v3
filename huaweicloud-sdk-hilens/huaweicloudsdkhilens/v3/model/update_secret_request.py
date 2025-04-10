@@ -27,7 +27,7 @@ class UpdateSecretRequest:
     }
 
     def __init__(self, secret_id=None, body=None):
-        """UpdateSecretRequest
+        r"""UpdateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSecretRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this UpdateSecretRequest.
+        r"""Gets the secret_id of this UpdateSecretRequest.
 
         密钥ID，从专业版HiLens控制台密钥管理[获取密钥列表](getSecretsListUsingGET.xml)获取
 
@@ -60,7 +60,7 @@ class UpdateSecretRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this UpdateSecretRequest.
+        r"""Sets the secret_id of this UpdateSecretRequest.
 
         密钥ID，从专业版HiLens控制台密钥管理[获取密钥列表](getSecretsListUsingGET.xml)获取
 
@@ -71,7 +71,7 @@ class UpdateSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecretRequest.
+        r"""Gets the body of this UpdateSecretRequest.
 
         :return: The body of this UpdateSecretRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.SecretRequestBody`
@@ -80,7 +80,7 @@ class UpdateSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecretRequest.
+        r"""Sets the body of this UpdateSecretRequest.
 
         :param body: The body of this UpdateSecretRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.SecretRequestBody`

@@ -26,7 +26,7 @@ class SendSmsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SendSmsResponse
+        r"""SendSmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SendSmsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SendSmsResponse.
+        r"""Gets the body of this SendSmsResponse.
 
         :return: The body of this SendSmsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SendSmsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendSmsResponse.
+        r"""Sets the body of this SendSmsResponse.
 
         :param body: The body of this SendSmsResponse.
         :type body: str

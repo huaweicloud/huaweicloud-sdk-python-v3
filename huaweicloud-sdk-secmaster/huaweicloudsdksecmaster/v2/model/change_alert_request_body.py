@@ -27,7 +27,7 @@ class ChangeAlertRequestBody:
     }
 
     def __init__(self, batch_ids=None, data_object=None):
-        """ChangeAlertRequestBody
+        r"""ChangeAlertRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChangeAlertRequestBody:
 
     @property
     def batch_ids(self):
-        """Gets the batch_ids of this ChangeAlertRequestBody.
+        r"""Gets the batch_ids of this ChangeAlertRequestBody.
 
         更新告警的ID列表
 
@@ -61,7 +61,7 @@ class ChangeAlertRequestBody:
 
     @batch_ids.setter
     def batch_ids(self, batch_ids):
-        """Sets the batch_ids of this ChangeAlertRequestBody.
+        r"""Sets the batch_ids of this ChangeAlertRequestBody.
 
         更新告警的ID列表
 
@@ -72,7 +72,7 @@ class ChangeAlertRequestBody:
 
     @property
     def data_object(self):
-        """Gets the data_object of this ChangeAlertRequestBody.
+        r"""Gets the data_object of this ChangeAlertRequestBody.
 
         :return: The data_object of this ChangeAlertRequestBody.
         :rtype: :class:`huaweicloudsdksecmaster.v2.Alert`
@@ -81,7 +81,7 @@ class ChangeAlertRequestBody:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this ChangeAlertRequestBody.
+        r"""Sets the data_object of this ChangeAlertRequestBody.
 
         :param data_object: The data_object of this ChangeAlertRequestBody.
         :type data_object: :class:`huaweicloudsdksecmaster.v2.Alert`

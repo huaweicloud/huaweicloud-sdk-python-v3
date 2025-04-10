@@ -25,7 +25,7 @@ class DeleteJobExecutionRequest:
     }
 
     def __init__(self, job_execution_id=None):
-        """DeleteJobExecutionRequest
+        r"""DeleteJobExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteJobExecutionRequest:
 
     @property
     def job_execution_id(self):
-        """Gets the job_execution_id of this DeleteJobExecutionRequest.
+        r"""Gets the job_execution_id of this DeleteJobExecutionRequest.
 
         作业ID。
 
@@ -53,7 +53,7 @@ class DeleteJobExecutionRequest:
 
     @job_execution_id.setter
     def job_execution_id(self, job_execution_id):
-        """Sets the job_execution_id of this DeleteJobExecutionRequest.
+        r"""Sets the job_execution_id of this DeleteJobExecutionRequest.
 
         作业ID。
 

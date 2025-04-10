@@ -36,7 +36,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     }
 
     def __init__(self, topics=None, total=None, lag=None, max_offset=None, consumer_offset=None, brokers=None):
-        """ShowConsumerListOrDetailsResponse
+        r"""ShowConsumerListOrDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ShowConsumerListOrDetailsResponse.
+        r"""Gets the topics of this ShowConsumerListOrDetailsResponse.
 
         Topic列表（当查询Topic消费“列表”时才显示此参数）。
 
@@ -90,7 +90,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ShowConsumerListOrDetailsResponse.
+        r"""Sets the topics of this ShowConsumerListOrDetailsResponse.
 
         Topic列表（当查询Topic消费“列表”时才显示此参数）。
 
@@ -101,7 +101,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowConsumerListOrDetailsResponse.
+        r"""Gets the total of this ShowConsumerListOrDetailsResponse.
 
         Topic总数（当查询Topic消费“列表”时才显示此参数）。
 
@@ -112,7 +112,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowConsumerListOrDetailsResponse.
+        r"""Sets the total of this ShowConsumerListOrDetailsResponse.
 
         Topic总数（当查询Topic消费“列表”时才显示此参数）。
 
@@ -123,7 +123,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @property
     def lag(self):
-        """Gets the lag of this ShowConsumerListOrDetailsResponse.
+        r"""Gets the lag of this ShowConsumerListOrDetailsResponse.
 
         消费堆积总数。
 
@@ -134,7 +134,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @lag.setter
     def lag(self, lag):
-        """Sets the lag of this ShowConsumerListOrDetailsResponse.
+        r"""Sets the lag of this ShowConsumerListOrDetailsResponse.
 
         消费堆积总数。
 
@@ -145,7 +145,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @property
     def max_offset(self):
-        """Gets the max_offset of this ShowConsumerListOrDetailsResponse.
+        r"""Gets the max_offset of this ShowConsumerListOrDetailsResponse.
 
         消息总数。
 
@@ -156,7 +156,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @max_offset.setter
     def max_offset(self, max_offset):
-        """Sets the max_offset of this ShowConsumerListOrDetailsResponse.
+        r"""Sets the max_offset of this ShowConsumerListOrDetailsResponse.
 
         消息总数。
 
@@ -167,7 +167,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @property
     def consumer_offset(self):
-        """Gets the consumer_offset of this ShowConsumerListOrDetailsResponse.
+        r"""Gets the consumer_offset of this ShowConsumerListOrDetailsResponse.
 
         已消费消息数。
 
@@ -178,7 +178,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @consumer_offset.setter
     def consumer_offset(self, consumer_offset):
-        """Sets the consumer_offset of this ShowConsumerListOrDetailsResponse.
+        r"""Sets the consumer_offset of this ShowConsumerListOrDetailsResponse.
 
         已消费消息数。
 
@@ -189,7 +189,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @property
     def brokers(self):
-        """Gets the brokers of this ShowConsumerListOrDetailsResponse.
+        r"""Gets the brokers of this ShowConsumerListOrDetailsResponse.
 
         Topic关联代理（当查询Topic消费“详情”才显示此参数）。
 
@@ -200,7 +200,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ShowConsumerListOrDetailsResponse.
+        r"""Sets the brokers of this ShowConsumerListOrDetailsResponse.
 
         Topic关联代理（当查询Topic消费“详情”才显示此参数）。
 

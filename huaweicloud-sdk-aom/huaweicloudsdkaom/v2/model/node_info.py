@@ -27,7 +27,7 @@ class NodeInfo:
     }
 
     def __init__(self, node_type=None, node_id=None):
-        """NodeInfo
+        r"""NodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeInfo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this NodeInfo.
+        r"""Gets the node_type of this NodeInfo.
 
         节点类型。
 
@@ -61,7 +61,7 @@ class NodeInfo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this NodeInfo.
+        r"""Sets the node_type of this NodeInfo.
 
         节点类型。
 
@@ -72,7 +72,7 @@ class NodeInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeInfo.
+        r"""Gets the node_id of this NodeInfo.
 
         节点id。
 
@@ -83,7 +83,7 @@ class NodeInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeInfo.
+        r"""Sets the node_id of this NodeInfo.
 
         节点id。
 

@@ -25,7 +25,7 @@ class ExtensionSearchUserInputParamCustomizeForDetail:
     }
 
     def __init__(self, ids=None):
-        """ExtensionSearchUserInputParamCustomizeForDetail
+        r"""ExtensionSearchUserInputParamCustomizeForDetail
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExtensionSearchUserInputParamCustomizeForDetail:
 
     @property
     def ids(self):
-        """Gets the ids of this ExtensionSearchUserInputParamCustomizeForDetail.
+        r"""Gets the ids of this ExtensionSearchUserInputParamCustomizeForDetail.
 
         插件ID列表
 
@@ -53,7 +53,7 @@ class ExtensionSearchUserInputParamCustomizeForDetail:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ExtensionSearchUserInputParamCustomizeForDetail.
+        r"""Sets the ids of this ExtensionSearchUserInputParamCustomizeForDetail.
 
         插件ID列表
 

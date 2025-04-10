@@ -33,7 +33,7 @@ class ListSubCustomersRequest:
     }
 
     def __init__(self, sub_customer_name=None, sub_customer_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListSubCustomersRequest
+        r"""ListSubCustomersRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSubCustomersRequest:
 
     @property
     def sub_customer_name(self):
-        """Gets the sub_customer_name of this ListSubCustomersRequest.
+        r"""Gets the sub_customer_name of this ListSubCustomersRequest.
 
         子用户名称
 
@@ -82,7 +82,7 @@ class ListSubCustomersRequest:
 
     @sub_customer_name.setter
     def sub_customer_name(self, sub_customer_name):
-        """Sets the sub_customer_name of this ListSubCustomersRequest.
+        r"""Sets the sub_customer_name of this ListSubCustomersRequest.
 
         子用户名称
 
@@ -93,7 +93,7 @@ class ListSubCustomersRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this ListSubCustomersRequest.
+        r"""Gets the sub_customer_id of this ListSubCustomersRequest.
 
         子用户id
 
@@ -104,7 +104,7 @@ class ListSubCustomersRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this ListSubCustomersRequest.
+        r"""Sets the sub_customer_id of this ListSubCustomersRequest.
 
         子用户id
 
@@ -115,7 +115,7 @@ class ListSubCustomersRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListSubCustomersRequest.
+        r"""Gets the x_site of this ListSubCustomersRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -126,7 +126,7 @@ class ListSubCustomersRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListSubCustomersRequest.
+        r"""Sets the x_site of this ListSubCustomersRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -137,7 +137,7 @@ class ListSubCustomersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSubCustomersRequest.
+        r"""Gets the x_language of this ListSubCustomersRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -148,7 +148,7 @@ class ListSubCustomersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSubCustomersRequest.
+        r"""Sets the x_language of this ListSubCustomersRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -159,7 +159,7 @@ class ListSubCustomersRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListSubCustomersRequest.
+        r"""Gets the x_time_zone of this ListSubCustomersRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -170,7 +170,7 @@ class ListSubCustomersRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListSubCustomersRequest.
+        r"""Sets the x_time_zone of this ListSubCustomersRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

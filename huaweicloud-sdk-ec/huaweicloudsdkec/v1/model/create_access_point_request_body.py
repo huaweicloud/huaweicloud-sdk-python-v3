@@ -27,7 +27,7 @@ class CreateAccessPointRequestBody:
     }
 
     def __init__(self, region_id=None, bandwidth_size=None):
-        """CreateAccessPointRequestBody
+        r"""CreateAccessPointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAccessPointRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateAccessPointRequestBody.
+        r"""Gets the region_id of this CreateAccessPointRequestBody.
 
         区域ID
 
@@ -59,7 +59,7 @@ class CreateAccessPointRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateAccessPointRequestBody.
+        r"""Sets the region_id of this CreateAccessPointRequestBody.
 
         区域ID
 
@@ -70,7 +70,7 @@ class CreateAccessPointRequestBody:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CreateAccessPointRequestBody.
+        r"""Gets the bandwidth_size of this CreateAccessPointRequestBody.
 
         带宽
 
@@ -81,7 +81,7 @@ class CreateAccessPointRequestBody:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CreateAccessPointRequestBody.
+        r"""Sets the bandwidth_size of this CreateAccessPointRequestBody.
 
         带宽
 

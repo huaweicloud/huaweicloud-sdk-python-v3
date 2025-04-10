@@ -31,7 +31,7 @@ class ListShareFilesRequest:
     }
 
     def __init__(self, offset=None, limit=None, server_ids=None, path=None):
-        """ListShareFilesRequest
+        r"""ListShareFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListShareFilesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListShareFilesRequest.
+        r"""Gets the offset of this ListShareFilesRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -73,7 +73,7 @@ class ListShareFilesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListShareFilesRequest.
+        r"""Sets the offset of this ListShareFilesRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -84,7 +84,7 @@ class ListShareFilesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListShareFilesRequest.
+        r"""Gets the limit of this ListShareFilesRequest.
 
         每页返回的资源个数。取值范围：1~50（默认值为50）。
 
@@ -95,7 +95,7 @@ class ListShareFilesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListShareFilesRequest.
+        r"""Sets the limit of this ListShareFilesRequest.
 
         每页返回的资源个数。取值范围：1~50（默认值为50）。
 
@@ -106,7 +106,7 @@ class ListShareFilesRequest:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this ListShareFilesRequest.
+        r"""Gets the server_ids of this ListShareFilesRequest.
 
         云手机服务器ID列表，多个服务器ID用逗号（,）分隔。
 
@@ -117,7 +117,7 @@ class ListShareFilesRequest:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this ListShareFilesRequest.
+        r"""Sets the server_ids of this ListShareFilesRequest.
 
         云手机服务器ID列表，多个服务器ID用逗号（,）分隔。
 
@@ -128,7 +128,7 @@ class ListShareFilesRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListShareFilesRequest.
+        r"""Gets the path of this ListShareFilesRequest.
 
         待查询的目录名称， 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\"=\"；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
 
@@ -139,7 +139,7 @@ class ListShareFilesRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListShareFilesRequest.
+        r"""Sets the path of this ListShareFilesRequest.
 
         待查询的目录名称， 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\"=\"；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
 

@@ -31,7 +31,7 @@ class AccessConnectionInfo:
     }
 
     def __init__(self, vpcep_id=None, ip=None, owner=None, domain=None):
-        """AccessConnectionInfo
+        r"""AccessConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AccessConnectionInfo:
 
     @property
     def vpcep_id(self):
-        """Gets the vpcep_id of this AccessConnectionInfo.
+        r"""Gets the vpcep_id of this AccessConnectionInfo.
 
         虚拟私有云终端节点ID。在 接入管理-创建客户端-前往VPC创建-VPC终端节点 创建和查看。
 
@@ -75,7 +75,7 @@ class AccessConnectionInfo:
 
     @vpcep_id.setter
     def vpcep_id(self, vpcep_id):
-        """Sets the vpcep_id of this AccessConnectionInfo.
+        r"""Sets the vpcep_id of this AccessConnectionInfo.
 
         虚拟私有云终端节点ID。在 接入管理-创建客户端-前往VPC创建-VPC终端节点 创建和查看。
 
@@ -86,7 +86,7 @@ class AccessConnectionInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this AccessConnectionInfo.
+        r"""Gets the ip of this AccessConnectionInfo.
 
         接入IP
 
@@ -97,7 +97,7 @@ class AccessConnectionInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this AccessConnectionInfo.
+        r"""Sets the ip of this AccessConnectionInfo.
 
         接入IP
 
@@ -108,7 +108,7 @@ class AccessConnectionInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this AccessConnectionInfo.
+        r"""Gets the owner of this AccessConnectionInfo.
 
         拥有者
 
@@ -119,7 +119,7 @@ class AccessConnectionInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AccessConnectionInfo.
+        r"""Sets the owner of this AccessConnectionInfo.
 
         拥有者
 
@@ -130,7 +130,7 @@ class AccessConnectionInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this AccessConnectionInfo.
+        r"""Gets the domain of this AccessConnectionInfo.
 
         接入域名，通过IP接入访问Lakeformation API时，需在请求头中添加HOST参数并传入该域名。
 
@@ -141,7 +141,7 @@ class AccessConnectionInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AccessConnectionInfo.
+        r"""Sets the domain of this AccessConnectionInfo.
 
         接入域名，通过IP接入访问Lakeformation API时，需在请求头中添加HOST参数并传入该域名。
 

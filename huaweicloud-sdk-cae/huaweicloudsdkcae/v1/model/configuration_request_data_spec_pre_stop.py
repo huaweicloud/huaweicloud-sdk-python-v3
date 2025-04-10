@@ -25,7 +25,7 @@ class ConfigurationRequestDataSpecPreStop:
     }
 
     def __init__(self, _exec=None):
-        """ConfigurationRequestDataSpecPreStop
+        r"""ConfigurationRequestDataSpecPreStop
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfigurationRequestDataSpecPreStop:
 
     @property
     def _exec(self):
-        """Gets the _exec of this ConfigurationRequestDataSpecPreStop.
+        r"""Gets the _exec of this ConfigurationRequestDataSpecPreStop.
 
         :return: The _exec of this ConfigurationRequestDataSpecPreStop.
         :rtype: :class:`huaweicloudsdkcae.v1.LifeCycleConfigurationExec`
@@ -52,7 +52,7 @@ class ConfigurationRequestDataSpecPreStop:
 
     @_exec.setter
     def _exec(self, _exec):
-        """Sets the _exec of this ConfigurationRequestDataSpecPreStop.
+        r"""Sets the _exec of this ConfigurationRequestDataSpecPreStop.
 
         :param _exec: The _exec of this ConfigurationRequestDataSpecPreStop.
         :type _exec: :class:`huaweicloudsdkcae.v1.LifeCycleConfigurationExec`

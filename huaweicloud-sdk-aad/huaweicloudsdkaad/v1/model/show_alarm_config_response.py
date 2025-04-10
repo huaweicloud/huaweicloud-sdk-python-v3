@@ -26,7 +26,7 @@ class ShowAlarmConfigResponse(SdkResponse):
     }
 
     def __init__(self, topic_urn=None):
-        """ShowAlarmConfigResponse
+        r"""ShowAlarmConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAlarmConfigResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ShowAlarmConfigResponse.
+        r"""Gets the topic_urn of this ShowAlarmConfigResponse.
 
         SMN的topic urn
 
@@ -55,7 +55,7 @@ class ShowAlarmConfigResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ShowAlarmConfigResponse.
+        r"""Sets the topic_urn of this ShowAlarmConfigResponse.
 
         SMN的topic urn
 

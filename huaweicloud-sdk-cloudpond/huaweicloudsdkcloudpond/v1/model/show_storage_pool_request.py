@@ -25,7 +25,7 @@ class ShowStoragePoolRequest:
     }
 
     def __init__(self, id=None):
-        """ShowStoragePoolRequest
+        r"""ShowStoragePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowStoragePoolRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowStoragePoolRequest.
+        r"""Gets the id of this ShowStoragePoolRequest.
 
         存储池ID
 
@@ -53,7 +53,7 @@ class ShowStoragePoolRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowStoragePoolRequest.
+        r"""Sets the id of this ShowStoragePoolRequest.
 
         存储池ID
 

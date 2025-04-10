@@ -47,7 +47,7 @@ class ImportGraphReq:
     }
 
     def __init__(self, edgeset_path=None, edgeset_format=None, vertexset_path=None, vertexset_format=None, schema_path=None, log_dir=None, parallel_edge=None, action=None, ignore_label=None, delimiter=None, trim_quote=None, offline=None):
-        """ImportGraphReq
+        r"""ImportGraphReq
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ImportGraphReq:
 
     @property
     def edgeset_path(self):
-        """Gets the edgeset_path of this ImportGraphReq.
+        r"""Gets the edgeset_path of this ImportGraphReq.
 
         边文件目录或边文件名。
 
@@ -131,7 +131,7 @@ class ImportGraphReq:
 
     @edgeset_path.setter
     def edgeset_path(self, edgeset_path):
-        """Sets the edgeset_path of this ImportGraphReq.
+        r"""Sets the edgeset_path of this ImportGraphReq.
 
         边文件目录或边文件名。
 
@@ -142,7 +142,7 @@ class ImportGraphReq:
 
     @property
     def edgeset_format(self):
-        """Gets the edgeset_format of this ImportGraphReq.
+        r"""Gets the edgeset_format of this ImportGraphReq.
 
         边数据集格式。当前仅支持csv。  默认为csv。
 
@@ -153,7 +153,7 @@ class ImportGraphReq:
 
     @edgeset_format.setter
     def edgeset_format(self, edgeset_format):
-        """Sets the edgeset_format of this ImportGraphReq.
+        r"""Sets the edgeset_format of this ImportGraphReq.
 
         边数据集格式。当前仅支持csv。  默认为csv。
 
@@ -164,7 +164,7 @@ class ImportGraphReq:
 
     @property
     def vertexset_path(self):
-        """Gets the vertexset_path of this ImportGraphReq.
+        r"""Gets the vertexset_path of this ImportGraphReq.
 
         点文件目录或点文件名。
 
@@ -175,7 +175,7 @@ class ImportGraphReq:
 
     @vertexset_path.setter
     def vertexset_path(self, vertexset_path):
-        """Sets the vertexset_path of this ImportGraphReq.
+        r"""Sets the vertexset_path of this ImportGraphReq.
 
         点文件目录或点文件名。
 
@@ -186,7 +186,7 @@ class ImportGraphReq:
 
     @property
     def vertexset_format(self):
-        """Gets the vertexset_format of this ImportGraphReq.
+        r"""Gets the vertexset_format of this ImportGraphReq.
 
         点数据集格式。当前仅支持csv。  默认为csv。
 
@@ -197,7 +197,7 @@ class ImportGraphReq:
 
     @vertexset_format.setter
     def vertexset_format(self, vertexset_format):
-        """Sets the vertexset_format of this ImportGraphReq.
+        r"""Sets the vertexset_format of this ImportGraphReq.
 
         点数据集格式。当前仅支持csv。  默认为csv。
 
@@ -208,7 +208,7 @@ class ImportGraphReq:
 
     @property
     def schema_path(self):
-        """Gets the schema_path of this ImportGraphReq.
+        r"""Gets the schema_path of this ImportGraphReq.
 
         新增数据的元数据文件路径。
 
@@ -219,7 +219,7 @@ class ImportGraphReq:
 
     @schema_path.setter
     def schema_path(self, schema_path):
-        """Sets the schema_path of this ImportGraphReq.
+        r"""Sets the schema_path of this ImportGraphReq.
 
         新增数据的元数据文件路径。
 
@@ -230,7 +230,7 @@ class ImportGraphReq:
 
     @property
     def log_dir(self):
-        """Gets the log_dir of this ImportGraphReq.
+        r"""Gets the log_dir of this ImportGraphReq.
 
         导入图日志存放目录，用于存储导入失败的数据和详细错入原因。
 
@@ -241,7 +241,7 @@ class ImportGraphReq:
 
     @log_dir.setter
     def log_dir(self, log_dir):
-        """Sets the log_dir of this ImportGraphReq.
+        r"""Sets the log_dir of this ImportGraphReq.
 
         导入图日志存放目录，用于存储导入失败的数据和详细错入原因。
 
@@ -252,7 +252,7 @@ class ImportGraphReq:
 
     @property
     def parallel_edge(self):
-        """Gets the parallel_edge of this ImportGraphReq.
+        r"""Gets the parallel_edge of this ImportGraphReq.
 
         重复边处理
 
@@ -263,7 +263,7 @@ class ImportGraphReq:
 
     @parallel_edge.setter
     def parallel_edge(self, parallel_edge):
-        """Sets the parallel_edge of this ImportGraphReq.
+        r"""Sets the parallel_edge of this ImportGraphReq.
 
         重复边处理
 
@@ -274,7 +274,7 @@ class ImportGraphReq:
 
     @property
     def action(self):
-        """Gets the action of this ImportGraphReq.
+        r"""Gets the action of this ImportGraphReq.
 
         处理方式，取值为allow，ignore和override，默认为allow。 - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。
 
@@ -285,7 +285,7 @@ class ImportGraphReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ImportGraphReq.
+        r"""Sets the action of this ImportGraphReq.
 
         处理方式，取值为allow，ignore和override，默认为allow。 - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。
 
@@ -296,7 +296,7 @@ class ImportGraphReq:
 
     @property
     def ignore_label(self):
-        """Gets the ignore_label of this ImportGraphReq.
+        r"""Gets the ignore_label of this ImportGraphReq.
 
         重复边的定义，是否忽略Label。取值为true或者false，默认取true。 - true 表示重复边定义不包含Label，即用<源点，终点>标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用<源点，终点，Label>标记一条边。
 
@@ -307,7 +307,7 @@ class ImportGraphReq:
 
     @ignore_label.setter
     def ignore_label(self, ignore_label):
-        """Sets the ignore_label of this ImportGraphReq.
+        r"""Sets the ignore_label of this ImportGraphReq.
 
         重复边的定义，是否忽略Label。取值为true或者false，默认取true。 - true 表示重复边定义不包含Label，即用<源点，终点>标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用<源点，终点，Label>标记一条边。
 
@@ -318,7 +318,7 @@ class ImportGraphReq:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ImportGraphReq.
+        r"""Gets the delimiter of this ImportGraphReq.
 
         csv格式文件字段分隔符，默认值为逗号（,）。list/set类型的字段内元素分隔符默认为分号（;）。
 
@@ -329,7 +329,7 @@ class ImportGraphReq:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ImportGraphReq.
+        r"""Sets the delimiter of this ImportGraphReq.
 
         csv格式文件字段分隔符，默认值为逗号（,）。list/set类型的字段内元素分隔符默认为分号（;）。
 
@@ -340,7 +340,7 @@ class ImportGraphReq:
 
     @property
     def trim_quote(self):
-        """Gets the trim_quote of this ImportGraphReq.
+        r"""Gets the trim_quote of this ImportGraphReq.
 
         csv格式文件字段包围符，默认值为双引号（\"）。用来包围一个字段，如字段中含有分隔符或者换行等。
 
@@ -351,7 +351,7 @@ class ImportGraphReq:
 
     @trim_quote.setter
     def trim_quote(self, trim_quote):
-        """Sets the trim_quote of this ImportGraphReq.
+        r"""Sets the trim_quote of this ImportGraphReq.
 
         csv格式文件字段包围符，默认值为双引号（\"）。用来包围一个字段，如字段中含有分隔符或者换行等。
 
@@ -362,7 +362,7 @@ class ImportGraphReq:
 
     @property
     def offline(self):
-        """Gets the offline of this ImportGraphReq.
+        r"""Gets the offline of this ImportGraphReq.
 
         是否离线导入，取值为true或者false，默认取false。 - true 表示离线导入，导入速度较快，但导入过程中图处于锁定状态，不可读不可写。 - false 表示在线导入，相对离线导入，在线导入速度略慢，但导入过程中图并未锁定，可读不可写。
 
@@ -373,7 +373,7 @@ class ImportGraphReq:
 
     @offline.setter
     def offline(self, offline):
-        """Sets the offline of this ImportGraphReq.
+        r"""Sets the offline of this ImportGraphReq.
 
         是否离线导入，取值为true或者false，默认取false。 - true 表示离线导入，导入速度较快，但导入过程中图处于锁定状态，不可读不可写。 - false 表示在线导入，相对离线导入，在线导入速度略慢，但导入过程中图并未锁定，可读不可写。
 

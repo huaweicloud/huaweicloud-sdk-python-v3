@@ -24,7 +24,7 @@ class BatchUpdateChildNickNamesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUpdateChildNickNamesResponse
+        r"""BatchUpdateChildNickNamesResponse
 
         The model defined in huaweicloud sdk
 

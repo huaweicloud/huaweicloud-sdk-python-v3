@@ -33,7 +33,7 @@ class DiagnosisItem:
     }
 
     def __init__(self, name=None, cause_ids=None, impact_ids=None, advice_ids=None, result=None):
-        """DiagnosisItem
+        r"""DiagnosisItem
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DiagnosisItem:
 
     @property
     def name(self):
-        """Gets the name of this DiagnosisItem.
+        r"""Gets the name of this DiagnosisItem.
 
         诊断项名称
 
@@ -80,7 +80,7 @@ class DiagnosisItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DiagnosisItem.
+        r"""Sets the name of this DiagnosisItem.
 
         诊断项名称
 
@@ -91,7 +91,7 @@ class DiagnosisItem:
 
     @property
     def cause_ids(self):
-        """Gets the cause_ids of this DiagnosisItem.
+        r"""Gets the cause_ids of this DiagnosisItem.
 
         原因ID列表
 
@@ -102,7 +102,7 @@ class DiagnosisItem:
 
     @cause_ids.setter
     def cause_ids(self, cause_ids):
-        """Sets the cause_ids of this DiagnosisItem.
+        r"""Sets the cause_ids of this DiagnosisItem.
 
         原因ID列表
 
@@ -113,7 +113,7 @@ class DiagnosisItem:
 
     @property
     def impact_ids(self):
-        """Gets the impact_ids of this DiagnosisItem.
+        r"""Gets the impact_ids of this DiagnosisItem.
 
         影响ID列表
 
@@ -124,7 +124,7 @@ class DiagnosisItem:
 
     @impact_ids.setter
     def impact_ids(self, impact_ids):
-        """Sets the impact_ids of this DiagnosisItem.
+        r"""Sets the impact_ids of this DiagnosisItem.
 
         影响ID列表
 
@@ -135,7 +135,7 @@ class DiagnosisItem:
 
     @property
     def advice_ids(self):
-        """Gets the advice_ids of this DiagnosisItem.
+        r"""Gets the advice_ids of this DiagnosisItem.
 
         建议ID列表
 
@@ -146,7 +146,7 @@ class DiagnosisItem:
 
     @advice_ids.setter
     def advice_ids(self, advice_ids):
-        """Sets the advice_ids of this DiagnosisItem.
+        r"""Sets the advice_ids of this DiagnosisItem.
 
         建议ID列表
 
@@ -157,7 +157,7 @@ class DiagnosisItem:
 
     @property
     def result(self):
-        """Gets the result of this DiagnosisItem.
+        r"""Gets the result of this DiagnosisItem.
 
         诊断结果
 
@@ -168,7 +168,7 @@ class DiagnosisItem:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DiagnosisItem.
+        r"""Sets the result of this DiagnosisItem.
 
         诊断结果
 

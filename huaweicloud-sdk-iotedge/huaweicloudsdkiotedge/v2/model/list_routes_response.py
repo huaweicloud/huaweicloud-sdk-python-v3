@@ -28,7 +28,7 @@ class ListRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None, update_time=None):
-        """ListRoutesResponse
+        r"""ListRoutesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRoutesResponse(SdkResponse):
 
     @property
     def routes(self):
-        """Gets the routes of this ListRoutesResponse.
+        r"""Gets the routes of this ListRoutesResponse.
 
         路由列表
 
@@ -62,7 +62,7 @@ class ListRoutesResponse(SdkResponse):
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this ListRoutesResponse.
+        r"""Sets the routes of this ListRoutesResponse.
 
         路由列表
 
@@ -73,7 +73,7 @@ class ListRoutesResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListRoutesResponse.
+        r"""Gets the update_time of this ListRoutesResponse.
 
         最后一次修改时间
 
@@ -84,7 +84,7 @@ class ListRoutesResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListRoutesResponse.
+        r"""Sets the update_time of this ListRoutesResponse.
 
         最后一次修改时间
 

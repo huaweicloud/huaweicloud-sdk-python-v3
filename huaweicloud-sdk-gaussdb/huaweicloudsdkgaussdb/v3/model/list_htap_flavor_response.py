@@ -26,7 +26,7 @@ class ListHtapFlavorResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None):
-        """ListHtapFlavorResponse
+        r"""ListHtapFlavorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHtapFlavorResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListHtapFlavorResponse.
+        r"""Gets the flavors of this ListHtapFlavorResponse.
 
         规格信息。
 
@@ -55,7 +55,7 @@ class ListHtapFlavorResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListHtapFlavorResponse.
+        r"""Sets the flavors of this ListHtapFlavorResponse.
 
         规格信息。
 

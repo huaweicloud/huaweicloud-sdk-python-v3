@@ -28,7 +28,7 @@ class ListDbFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None, total=None):
-        """ListDbFlavorsResponse
+        r"""ListDbFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDbFlavorsResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListDbFlavorsResponse.
+        r"""Gets the flavors of this ListDbFlavorsResponse.
 
         实例规格信息。
 
@@ -62,7 +62,7 @@ class ListDbFlavorsResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListDbFlavorsResponse.
+        r"""Sets the flavors of this ListDbFlavorsResponse.
 
         实例规格信息。
 
@@ -73,7 +73,7 @@ class ListDbFlavorsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDbFlavorsResponse.
+        r"""Gets the total of this ListDbFlavorsResponse.
 
         查询总数
 
@@ -84,7 +84,7 @@ class ListDbFlavorsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDbFlavorsResponse.
+        r"""Sets the total of this ListDbFlavorsResponse.
 
         查询总数
 

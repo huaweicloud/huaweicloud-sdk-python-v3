@@ -27,7 +27,7 @@ class CreatePolicyRequestBody:
     }
 
     def __init__(self, name=None, log_action_replaced=None):
-        """CreatePolicyRequestBody
+        r"""CreatePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePolicyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreatePolicyRequestBody.
+        r"""Gets the name of this CreatePolicyRequestBody.
 
         策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
 
@@ -60,7 +60,7 @@ class CreatePolicyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePolicyRequestBody.
+        r"""Sets the name of this CreatePolicyRequestBody.
 
         策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
 
@@ -71,7 +71,7 @@ class CreatePolicyRequestBody:
 
     @property
     def log_action_replaced(self):
-        """Gets the log_action_replaced of this CreatePolicyRequestBody.
+        r"""Gets the log_action_replaced of this CreatePolicyRequestBody.
 
         cc规则和精准防护规则“防护动作”选择“仅记录”时，Web基础防护是否命中策略规则并阻断，默认为true
 
@@ -82,7 +82,7 @@ class CreatePolicyRequestBody:
 
     @log_action_replaced.setter
     def log_action_replaced(self, log_action_replaced):
-        """Sets the log_action_replaced of this CreatePolicyRequestBody.
+        r"""Sets the log_action_replaced of this CreatePolicyRequestBody.
 
         cc规则和精准防护规则“防护动作”选择“仅记录”时，Web基础防护是否命中策略规则并阻断，默认为true
 

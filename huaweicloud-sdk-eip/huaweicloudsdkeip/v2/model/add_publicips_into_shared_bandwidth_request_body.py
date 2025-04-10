@@ -25,7 +25,7 @@ class AddPublicipsIntoSharedBandwidthRequestBody:
     }
 
     def __init__(self, bandwidth=None):
-        """AddPublicipsIntoSharedBandwidthRequestBody
+        r"""AddPublicipsIntoSharedBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddPublicipsIntoSharedBandwidthRequestBody:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
+        r"""Gets the bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
 
         :return: The bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthOption`
@@ -51,7 +51,7 @@ class AddPublicipsIntoSharedBandwidthRequestBody:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
+        r"""Sets the bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
 
         :param bandwidth: The bandwidth of this AddPublicipsIntoSharedBandwidthRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthOption`

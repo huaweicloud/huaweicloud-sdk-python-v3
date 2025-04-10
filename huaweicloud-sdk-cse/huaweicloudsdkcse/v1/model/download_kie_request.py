@@ -33,7 +33,7 @@ class DownloadKieRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, x_engine_id=None, label=None, match=None, body=None):
-        """DownloadKieRequest
+        r"""DownloadKieRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class DownloadKieRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this DownloadKieRequest.
+        r"""Gets the x_enterprise_project_id of this DownloadKieRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -81,7 +81,7 @@ class DownloadKieRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this DownloadKieRequest.
+        r"""Sets the x_enterprise_project_id of this DownloadKieRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -92,7 +92,7 @@ class DownloadKieRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this DownloadKieRequest.
+        r"""Gets the x_engine_id of this DownloadKieRequest.
 
         微服务引擎ID。
 
@@ -103,7 +103,7 @@ class DownloadKieRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this DownloadKieRequest.
+        r"""Sets the x_engine_id of this DownloadKieRequest.
 
         微服务引擎ID。
 
@@ -114,7 +114,7 @@ class DownloadKieRequest:
 
     @property
     def label(self):
-        """Gets the label of this DownloadKieRequest.
+        r"""Gets the label of this DownloadKieRequest.
 
         按label过滤项导出，格式为：{标签key}:{标签value}
 
@@ -125,7 +125,7 @@ class DownloadKieRequest:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this DownloadKieRequest.
+        r"""Sets the label of this DownloadKieRequest.
 
         按label过滤项导出，格式为：{标签key}:{标签value}
 
@@ -136,7 +136,7 @@ class DownloadKieRequest:
 
     @property
     def match(self):
-        """Gets the match of this DownloadKieRequest.
+        r"""Gets the match of this DownloadKieRequest.
 
         对label过滤项的匹配选项，如果值为exact：表示严格匹配，包括label个数和内容相等；不填表示包含匹配
 
@@ -147,7 +147,7 @@ class DownloadKieRequest:
 
     @match.setter
     def match(self, match):
-        """Sets the match of this DownloadKieRequest.
+        r"""Sets the match of this DownloadKieRequest.
 
         对label过滤项的匹配选项，如果值为exact：表示严格匹配，包括label个数和内容相等；不填表示包含匹配
 
@@ -158,7 +158,7 @@ class DownloadKieRequest:
 
     @property
     def body(self):
-        """Gets the body of this DownloadKieRequest.
+        r"""Gets the body of this DownloadKieRequest.
 
         :return: The body of this DownloadKieRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.DownloadKieReqBody`
@@ -167,7 +167,7 @@ class DownloadKieRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DownloadKieRequest.
+        r"""Sets the body of this DownloadKieRequest.
 
         :param body: The body of this DownloadKieRequest.
         :type body: :class:`huaweicloudsdkcse.v1.DownloadKieReqBody`

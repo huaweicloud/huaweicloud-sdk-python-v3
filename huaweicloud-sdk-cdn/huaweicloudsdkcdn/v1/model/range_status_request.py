@@ -25,7 +25,7 @@ class RangeStatusRequest:
     }
 
     def __init__(self, range_status=None):
-        """RangeStatusRequest
+        r"""RangeStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RangeStatusRequest:
 
     @property
     def range_status(self):
-        """Gets the range_status of this RangeStatusRequest.
+        r"""Gets the range_status of this RangeStatusRequest.
 
         range状态（\"off\"/\"on\"）
 
@@ -53,7 +53,7 @@ class RangeStatusRequest:
 
     @range_status.setter
     def range_status(self, range_status):
-        """Sets the range_status of this RangeStatusRequest.
+        r"""Sets the range_status of this RangeStatusRequest.
 
         range状态（\"off\"/\"on\"）
 

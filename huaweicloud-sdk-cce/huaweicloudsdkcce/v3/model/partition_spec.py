@@ -31,7 +31,7 @@ class PartitionSpec:
     }
 
     def __init__(self, host_network=None, container_network=None, public_border_group=None, category=None):
-        """PartitionSpec
+        r"""PartitionSpec
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PartitionSpec:
 
     @property
     def host_network(self):
-        """Gets the host_network of this PartitionSpec.
+        r"""Gets the host_network of this PartitionSpec.
 
         :return: The host_network of this PartitionSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionSpecHostNetwork`
@@ -73,7 +73,7 @@ class PartitionSpec:
 
     @host_network.setter
     def host_network(self, host_network):
-        """Sets the host_network of this PartitionSpec.
+        r"""Sets the host_network of this PartitionSpec.
 
         :param host_network: The host_network of this PartitionSpec.
         :type host_network: :class:`huaweicloudsdkcce.v3.PartitionSpecHostNetwork`
@@ -82,7 +82,7 @@ class PartitionSpec:
 
     @property
     def container_network(self):
-        """Gets the container_network of this PartitionSpec.
+        r"""Gets the container_network of this PartitionSpec.
 
         分区容器子网
 
@@ -93,7 +93,7 @@ class PartitionSpec:
 
     @container_network.setter
     def container_network(self, container_network):
-        """Sets the container_network of this PartitionSpec.
+        r"""Sets the container_network of this PartitionSpec.
 
         分区容器子网
 
@@ -104,7 +104,7 @@ class PartitionSpec:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this PartitionSpec.
+        r"""Gets the public_border_group of this PartitionSpec.
 
         群组
 
@@ -115,7 +115,7 @@ class PartitionSpec:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this PartitionSpec.
+        r"""Sets the public_border_group of this PartitionSpec.
 
         群组
 
@@ -126,7 +126,7 @@ class PartitionSpec:
 
     @property
     def category(self):
-        """Gets the category of this PartitionSpec.
+        r"""Gets the category of this PartitionSpec.
 
         类别
 
@@ -137,7 +137,7 @@ class PartitionSpec:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this PartitionSpec.
+        r"""Sets the category of this PartitionSpec.
 
         类别
 

@@ -27,7 +27,7 @@ class OriginHostBody:
     }
 
     def __init__(self, origin_host_type=None, customize_domain=None):
-        """OriginHostBody
+        r"""OriginHostBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class OriginHostBody:
 
     @property
     def origin_host_type(self):
-        """Gets the origin_host_type of this OriginHostBody.
+        r"""Gets the origin_host_type of this OriginHostBody.
 
         accelerate：选择加速域名作为回源host域名； customize：使用自定义的域名作为回源host域名；
 
@@ -60,7 +60,7 @@ class OriginHostBody:
 
     @origin_host_type.setter
     def origin_host_type(self, origin_host_type):
-        """Sets the origin_host_type of this OriginHostBody.
+        r"""Sets the origin_host_type of this OriginHostBody.
 
         accelerate：选择加速域名作为回源host域名； customize：使用自定义的域名作为回源host域名；
 
@@ -71,7 +71,7 @@ class OriginHostBody:
 
     @property
     def customize_domain(self):
-        """Gets the customize_domain of this OriginHostBody.
+        r"""Gets the customize_domain of this OriginHostBody.
 
         自定义回源域名，origin_host_type为 customize时传入该参数。
 
@@ -82,7 +82,7 @@ class OriginHostBody:
 
     @customize_domain.setter
     def customize_domain(self, customize_domain):
-        """Sets the customize_domain of this OriginHostBody.
+        r"""Sets the customize_domain of this OriginHostBody.
 
         自定义回源域名，origin_host_type为 customize时传入该参数。
 

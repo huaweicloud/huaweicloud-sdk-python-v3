@@ -33,7 +33,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
     }
 
     def __init__(self, app_id=None, app_name=None, access_policy=None, owner=None, tag=None):
-        """UpdateTopicAccessPolicyPoliciesObject
+        r"""UpdateTopicAccessPolicyPoliciesObject
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Gets the app_id of this UpdateTopicAccessPolicyPoliciesObject.
 
         集成应用key。
 
@@ -79,7 +79,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Sets the app_id of this UpdateTopicAccessPolicyPoliciesObject.
 
         集成应用key。
 
@@ -90,7 +90,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Gets the app_name of this UpdateTopicAccessPolicyPoliciesObject.
 
         应用名称。
 
@@ -101,7 +101,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Sets the app_name of this UpdateTopicAccessPolicyPoliciesObject.
 
         应用名称。
 
@@ -112,7 +112,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Gets the access_policy of this UpdateTopicAccessPolicyPoliciesObject.
 
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
@@ -123,7 +123,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Sets the access_policy of this UpdateTopicAccessPolicyPoliciesObject.
 
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
@@ -134,7 +134,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @property
     def owner(self):
-        """Gets the owner of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Gets the owner of this UpdateTopicAccessPolicyPoliciesObject.
 
         是否为创建topic时所选择的应用。  默认为false。
 
@@ -145,7 +145,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Sets the owner of this UpdateTopicAccessPolicyPoliciesObject.
 
         是否为创建topic时所选择的应用。  默认为false。
 
@@ -156,7 +156,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @property
     def tag(self):
-        """Gets the tag of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Gets the tag of this UpdateTopicAccessPolicyPoliciesObject.
 
         权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&”隔开。  当有多个标签时，标签用符号“||”隔开。
 
@@ -167,7 +167,7 @@ class UpdateTopicAccessPolicyPoliciesObject:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this UpdateTopicAccessPolicyPoliciesObject.
+        r"""Sets the tag of this UpdateTopicAccessPolicyPoliciesObject.
 
         权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&”隔开。  当有多个标签时，标签用符号“||”隔开。
 

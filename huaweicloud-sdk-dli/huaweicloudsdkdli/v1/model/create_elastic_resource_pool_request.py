@@ -25,7 +25,7 @@ class CreateElasticResourcePoolRequest:
     }
 
     def __init__(self, body=None):
-        """CreateElasticResourcePoolRequest
+        r"""CreateElasticResourcePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateElasticResourcePoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateElasticResourcePoolRequest.
+        r"""Gets the body of this CreateElasticResourcePoolRequest.
 
         :return: The body of this CreateElasticResourcePoolRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequestBody`
@@ -52,7 +52,7 @@ class CreateElasticResourcePoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateElasticResourcePoolRequest.
+        r"""Sets the body of this CreateElasticResourcePoolRequest.
 
         :param body: The body of this CreateElasticResourcePoolRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequestBody`

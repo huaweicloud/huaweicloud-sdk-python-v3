@@ -22,6 +22,7 @@ class CreateConfigurationResult:
         'description': 'str',
         'datastore_version_name': 'str',
         'datastore_name': 'str',
+        'mode': 'str',
         'created': 'str',
         'updated': 'str'
     }
@@ -32,12 +33,13 @@ class CreateConfigurationResult:
         'description': 'description',
         'datastore_version_name': 'datastore_version_name',
         'datastore_name': 'datastore_name',
+        'mode': 'mode',
         'created': 'created',
         'updated': 'updated'
     }
 
-    def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None):
-        """CreateConfigurationResult
+    def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, mode=None, created=None, updated=None):
+        r"""CreateConfigurationResult
 
         The model defined in huaweicloud sdk
 
@@ -51,6 +53,8 @@ class CreateConfigurationResult:
         :type datastore_version_name: str
         :param datastore_name: 数据库名称。
         :type datastore_name: str
+        :param mode: 【参数解释】 数据库实例类型。 【取值范围】 - GeminiDB Mongo 副本集实例取值为\&quot;ReplicaSet\&quot;。 - GeminiDB Influx 单节点实例取值为\&quot;InfluxdbSingle\&quot;。 - GeminiDB Cassandra云原生部署模式实例取值为\&quot;CloudNativeCluster\&quot;。
+        :type mode: str
         :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
@@ -64,6 +68,7 @@ class CreateConfigurationResult:
         self._description = None
         self._datastore_version_name = None
         self._datastore_name = None
+        self._mode = None
         self._created = None
         self._updated = None
         self.discriminator = None
@@ -74,12 +79,14 @@ class CreateConfigurationResult:
             self.description = description
         self.datastore_version_name = datastore_version_name
         self.datastore_name = datastore_name
+        if mode is not None:
+            self.mode = mode
         self.created = created
         self.updated = updated
 
     @property
     def id(self):
-        """Gets the id of this CreateConfigurationResult.
+        r"""Gets the id of this CreateConfigurationResult.
 
         参数模板ID。
 
@@ -90,7 +97,7 @@ class CreateConfigurationResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateConfigurationResult.
+        r"""Sets the id of this CreateConfigurationResult.
 
         参数模板ID。
 
@@ -101,7 +108,7 @@ class CreateConfigurationResult:
 
     @property
     def name(self):
-        """Gets the name of this CreateConfigurationResult.
+        r"""Gets the name of this CreateConfigurationResult.
 
         参数模板名称。
 
@@ -112,7 +119,7 @@ class CreateConfigurationResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConfigurationResult.
+        r"""Sets the name of this CreateConfigurationResult.
 
         参数模板名称。
 
@@ -123,7 +130,7 @@ class CreateConfigurationResult:
 
     @property
     def description(self):
-        """Gets the description of this CreateConfigurationResult.
+        r"""Gets the description of this CreateConfigurationResult.
 
         参数模板描述。
 
@@ -134,7 +141,7 @@ class CreateConfigurationResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConfigurationResult.
+        r"""Sets the description of this CreateConfigurationResult.
 
         参数模板描述。
 
@@ -145,7 +152,7 @@ class CreateConfigurationResult:
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this CreateConfigurationResult.
+        r"""Gets the datastore_version_name of this CreateConfigurationResult.
 
         数据库版本名称。
 
@@ -156,7 +163,7 @@ class CreateConfigurationResult:
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this CreateConfigurationResult.
+        r"""Sets the datastore_version_name of this CreateConfigurationResult.
 
         数据库版本名称。
 
@@ -167,7 +174,7 @@ class CreateConfigurationResult:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this CreateConfigurationResult.
+        r"""Gets the datastore_name of this CreateConfigurationResult.
 
         数据库名称。
 
@@ -178,7 +185,7 @@ class CreateConfigurationResult:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this CreateConfigurationResult.
+        r"""Sets the datastore_name of this CreateConfigurationResult.
 
         数据库名称。
 
@@ -188,8 +195,30 @@ class CreateConfigurationResult:
         self._datastore_name = datastore_name
 
     @property
+    def mode(self):
+        r"""Gets the mode of this CreateConfigurationResult.
+
+        【参数解释】 数据库实例类型。 【取值范围】 - GeminiDB Mongo 副本集实例取值为\"ReplicaSet\"。 - GeminiDB Influx 单节点实例取值为\"InfluxdbSingle\"。 - GeminiDB Cassandra云原生部署模式实例取值为\"CloudNativeCluster\"。
+
+        :return: The mode of this CreateConfigurationResult.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this CreateConfigurationResult.
+
+        【参数解释】 数据库实例类型。 【取值范围】 - GeminiDB Mongo 副本集实例取值为\"ReplicaSet\"。 - GeminiDB Influx 单节点实例取值为\"InfluxdbSingle\"。 - GeminiDB Cassandra云原生部署模式实例取值为\"CloudNativeCluster\"。
+
+        :param mode: The mode of this CreateConfigurationResult.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
     def created(self):
-        """Gets the created of this CreateConfigurationResult.
+        r"""Gets the created of this CreateConfigurationResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -200,7 +229,7 @@ class CreateConfigurationResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CreateConfigurationResult.
+        r"""Sets the created of this CreateConfigurationResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -211,7 +240,7 @@ class CreateConfigurationResult:
 
     @property
     def updated(self):
-        """Gets the updated of this CreateConfigurationResult.
+        r"""Gets the updated of this CreateConfigurationResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -222,7 +251,7 @@ class CreateConfigurationResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this CreateConfigurationResult.
+        r"""Sets the updated of this CreateConfigurationResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

@@ -31,7 +31,7 @@ class AvailableZone:
     }
 
     def __init__(self, code=None, description=None, status=None, support_ipv6=None):
-        """AvailableZone
+        r"""AvailableZone
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AvailableZone:
 
     @property
     def code(self):
-        """Gets the code of this AvailableZone.
+        r"""Gets the code of this AvailableZone.
 
         可用区CODE
 
@@ -71,7 +71,7 @@ class AvailableZone:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailableZone.
+        r"""Sets the code of this AvailableZone.
 
         可用区CODE
 
@@ -82,7 +82,7 @@ class AvailableZone:
 
     @property
     def description(self):
-        """Gets the description of this AvailableZone.
+        r"""Gets the description of this AvailableZone.
 
         可用区描述
 
@@ -93,7 +93,7 @@ class AvailableZone:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AvailableZone.
+        r"""Sets the description of this AvailableZone.
 
         可用区描述
 
@@ -104,7 +104,7 @@ class AvailableZone:
 
     @property
     def status(self):
-        """Gets the status of this AvailableZone.
+        r"""Gets the status of this AvailableZone.
 
         可用区状态
 
@@ -115,7 +115,7 @@ class AvailableZone:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AvailableZone.
+        r"""Sets the status of this AvailableZone.
 
         可用区状态
 
@@ -126,7 +126,7 @@ class AvailableZone:
 
     @property
     def support_ipv6(self):
-        """Gets the support_ipv6 of this AvailableZone.
+        r"""Gets the support_ipv6 of this AvailableZone.
 
         是否支持IPV6
 
@@ -137,7 +137,7 @@ class AvailableZone:
 
     @support_ipv6.setter
     def support_ipv6(self, support_ipv6):
-        """Sets the support_ipv6 of this AvailableZone.
+        r"""Sets the support_ipv6 of this AvailableZone.
 
         是否支持IPV6
 

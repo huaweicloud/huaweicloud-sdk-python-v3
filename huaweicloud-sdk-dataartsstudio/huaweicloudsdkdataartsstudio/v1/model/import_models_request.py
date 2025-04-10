@@ -39,7 +39,7 @@ class ImportModelsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, x_language=None, action_id=None, model_id=None, directory_id=None, skip_exist=None, body=None):
-        """ImportModelsRequest
+        r"""ImportModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ImportModelsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportModelsRequest.
+        r"""Gets the workspace of this ImportModelsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -101,7 +101,7 @@ class ImportModelsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportModelsRequest.
+        r"""Sets the workspace of this ImportModelsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -112,7 +112,7 @@ class ImportModelsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ImportModelsRequest.
+        r"""Gets the x_project_id of this ImportModelsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -123,7 +123,7 @@ class ImportModelsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ImportModelsRequest.
+        r"""Sets the x_project_id of this ImportModelsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -134,7 +134,7 @@ class ImportModelsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ImportModelsRequest.
+        r"""Gets the x_language of this ImportModelsRequest.
 
         默认值：en-us 可选，导入导出接口必填，可选值有：zh-cn、en-us，分别表示中文、英文。
 
@@ -145,7 +145,7 @@ class ImportModelsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ImportModelsRequest.
+        r"""Sets the x_language of this ImportModelsRequest.
 
         默认值：en-us 可选，导入导出接口必填，可选值有：zh-cn、en-us，分别表示中文、英文。
 
@@ -156,7 +156,7 @@ class ImportModelsRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ImportModelsRequest.
+        r"""Gets the action_id of this ImportModelsRequest.
 
         需要执行的动作，根据导入的对象不同而选择不同的导入动作。 枚举值：   - import_relation: 导入关系模型：逻辑实体/物理表   - import_dimension: 导入维度表、事实表   - import_codetable: 导入码表   - import_datastandard: 导入数据标准   - import_bizmetric: 导入业务指标   - import_bizcatalog: 导入流程架构   - import_atomic: 导入原子指标   - import_derivative: 导入衍生指标   - import_compound: 导入复合指标   - import_aggregation: 导入汇总表 
 
@@ -167,7 +167,7 @@ class ImportModelsRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ImportModelsRequest.
+        r"""Sets the action_id of this ImportModelsRequest.
 
         需要执行的动作，根据导入的对象不同而选择不同的导入动作。 枚举值：   - import_relation: 导入关系模型：逻辑实体/物理表   - import_dimension: 导入维度表、事实表   - import_codetable: 导入码表   - import_datastandard: 导入数据标准   - import_bizmetric: 导入业务指标   - import_bizcatalog: 导入流程架构   - import_atomic: 导入原子指标   - import_derivative: 导入衍生指标   - import_compound: 导入复合指标   - import_aggregation: 导入汇总表 
 
@@ -178,7 +178,7 @@ class ImportModelsRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ImportModelsRequest.
+        r"""Gets the model_id of this ImportModelsRequest.
 
         关系建模的模型ID，在导入模型（import_relation）时必填。
 
@@ -189,7 +189,7 @@ class ImportModelsRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ImportModelsRequest.
+        r"""Sets the model_id of this ImportModelsRequest.
 
         关系建模的模型ID，在导入模型（import_relation）时必填。
 
@@ -200,7 +200,7 @@ class ImportModelsRequest:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this ImportModelsRequest.
+        r"""Gets the directory_id of this ImportModelsRequest.
 
         导入的目录id，在导入码表（import_codetable）和数据标准（import_datastandard）时生效，选填。
 
@@ -211,7 +211,7 @@ class ImportModelsRequest:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this ImportModelsRequest.
+        r"""Sets the directory_id of this ImportModelsRequest.
 
         导入的目录id，在导入码表（import_codetable）和数据标准（import_datastandard）时生效，选填。
 
@@ -222,7 +222,7 @@ class ImportModelsRequest:
 
     @property
     def skip_exist(self):
-        """Gets the skip_exist of this ImportModelsRequest.
+        r"""Gets the skip_exist of this ImportModelsRequest.
 
         是否需要覆盖更新已有的实体。
 
@@ -233,7 +233,7 @@ class ImportModelsRequest:
 
     @skip_exist.setter
     def skip_exist(self, skip_exist):
-        """Sets the skip_exist of this ImportModelsRequest.
+        r"""Sets the skip_exist of this ImportModelsRequest.
 
         是否需要覆盖更新已有的实体。
 
@@ -244,7 +244,7 @@ class ImportModelsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportModelsRequest.
+        r"""Gets the body of this ImportModelsRequest.
 
         :return: The body of this ImportModelsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportModelsRequestBody`
@@ -253,7 +253,7 @@ class ImportModelsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportModelsRequest.
+        r"""Sets the body of this ImportModelsRequest.
 
         :param body: The body of this ImportModelsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ImportModelsRequestBody`

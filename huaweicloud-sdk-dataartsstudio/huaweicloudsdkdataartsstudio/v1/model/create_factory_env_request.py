@@ -27,7 +27,7 @@ class CreateFactoryEnvRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateFactoryEnvRequest
+        r"""CreateFactoryEnvRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateFactoryEnvRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateFactoryEnvRequest.
+        r"""Gets the workspace of this CreateFactoryEnvRequest.
 
         工作空间ID
 
@@ -61,7 +61,7 @@ class CreateFactoryEnvRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateFactoryEnvRequest.
+        r"""Sets the workspace of this CreateFactoryEnvRequest.
 
         工作空间ID
 
@@ -72,7 +72,7 @@ class CreateFactoryEnvRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFactoryEnvRequest.
+        r"""Gets the body of this CreateFactoryEnvRequest.
 
         :return: The body of this CreateFactoryEnvRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvRequestBody`
@@ -81,7 +81,7 @@ class CreateFactoryEnvRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFactoryEnvRequest.
+        r"""Sets the body of this CreateFactoryEnvRequest.
 
         :param body: The body of this CreateFactoryEnvRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.EnvRequestBody`

@@ -25,7 +25,7 @@ class ShowStandardTemplateResultData:
     }
 
     def __init__(self, value=None):
-        """ShowStandardTemplateResultData
+        r"""ShowStandardTemplateResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowStandardTemplateResultData:
 
     @property
     def value(self):
-        """Gets the value of this ShowStandardTemplateResultData.
+        r"""Gets the value of this ShowStandardTemplateResultData.
 
         :return: The value of this ShowStandardTemplateResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardTemplateResultDataValue`
@@ -52,7 +52,7 @@ class ShowStandardTemplateResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowStandardTemplateResultData.
+        r"""Sets the value of this ShowStandardTemplateResultData.
 
         :param value: The value of this ShowStandardTemplateResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardTemplateResultDataValue`

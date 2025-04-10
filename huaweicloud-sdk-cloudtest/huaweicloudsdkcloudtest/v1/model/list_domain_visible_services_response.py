@@ -34,7 +34,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ListDomainVisibleServicesResponse
+        r"""ListDomainVisibleServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListDomainVisibleServicesResponse.
+        r"""Gets the status of this ListDomainVisibleServicesResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -83,7 +83,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDomainVisibleServicesResponse.
+        r"""Sets the status of this ListDomainVisibleServicesResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -94,7 +94,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListDomainVisibleServicesResponse.
+        r"""Gets the result of this ListDomainVisibleServicesResponse.
 
         :return: The result of this ListDomainVisibleServicesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListDomainVisibleServiceVo`
@@ -103,7 +103,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListDomainVisibleServicesResponse.
+        r"""Sets the result of this ListDomainVisibleServicesResponse.
 
         :param result: The result of this ListDomainVisibleServicesResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListDomainVisibleServiceVo`
@@ -112,7 +112,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListDomainVisibleServicesResponse.
+        r"""Gets the error of this ListDomainVisibleServicesResponse.
 
         :return: The error of this ListDomainVisibleServicesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListDomainVisibleServicesResponse.
+        r"""Sets the error of this ListDomainVisibleServicesResponse.
 
         :param error: The error of this ListDomainVisibleServicesResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListDomainVisibleServicesResponse.
+        r"""Gets the request_id of this ListDomainVisibleServicesResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListDomainVisibleServicesResponse.
+        r"""Sets the request_id of this ListDomainVisibleServicesResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this ListDomainVisibleServicesResponse.
+        r"""Gets the server_address of this ListDomainVisibleServicesResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class ListDomainVisibleServicesResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ListDomainVisibleServicesResponse.
+        r"""Sets the server_address of this ListDomainVisibleServicesResponse.
 
         对内接口才有此属性
 

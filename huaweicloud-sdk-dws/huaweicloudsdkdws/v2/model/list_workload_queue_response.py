@@ -30,7 +30,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     }
 
     def __init__(self, workload_queue_name_list=None, workload_res_code=None, workload_res_str=None):
-        """ListWorkloadQueueResponse
+        r"""ListWorkloadQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
     @property
     def workload_queue_name_list(self):
-        """Gets the workload_queue_name_list of this ListWorkloadQueueResponse.
+        r"""Gets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
         工作负载队列名称。
 
@@ -69,7 +69,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
     @workload_queue_name_list.setter
     def workload_queue_name_list(self, workload_queue_name_list):
-        """Sets the workload_queue_name_list of this ListWorkloadQueueResponse.
+        r"""Sets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
         工作负载队列名称。
 
@@ -80,7 +80,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ListWorkloadQueueResponse.
+        r"""Gets the workload_res_code of this ListWorkloadQueueResponse.
 
         结果状态码。
 
@@ -91,7 +91,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ListWorkloadQueueResponse.
+        r"""Sets the workload_res_code of this ListWorkloadQueueResponse.
 
         结果状态码。
 
@@ -102,7 +102,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ListWorkloadQueueResponse.
+        r"""Gets the workload_res_str of this ListWorkloadQueueResponse.
 
         结果描述。
 
@@ -113,7 +113,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ListWorkloadQueueResponse.
+        r"""Sets the workload_res_str of this ListWorkloadQueueResponse.
 
         结果描述。
 

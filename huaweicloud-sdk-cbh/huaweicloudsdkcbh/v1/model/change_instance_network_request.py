@@ -27,7 +27,7 @@ class ChangeInstanceNetworkRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ChangeInstanceNetworkRequest
+        r"""ChangeInstanceNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeInstanceNetworkRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeInstanceNetworkRequest.
+        r"""Gets the server_id of this ChangeInstanceNetworkRequest.
 
         云堡垒机实例ID，使用UUID格式。
 
@@ -60,7 +60,7 @@ class ChangeInstanceNetworkRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeInstanceNetworkRequest.
+        r"""Sets the server_id of this ChangeInstanceNetworkRequest.
 
         云堡垒机实例ID，使用UUID格式。
 
@@ -71,7 +71,7 @@ class ChangeInstanceNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeInstanceNetworkRequest.
+        r"""Gets the body of this ChangeInstanceNetworkRequest.
 
         :return: The body of this ChangeInstanceNetworkRequest.
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetwork`
@@ -80,7 +80,7 @@ class ChangeInstanceNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeInstanceNetworkRequest.
+        r"""Sets the body of this ChangeInstanceNetworkRequest.
 
         :param body: The body of this ChangeInstanceNetworkRequest.
         :type body: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetwork`

@@ -44,7 +44,7 @@ class DeleteObjectsResponse(SdkResponse):
     }
 
     def __init__(self, encoding_type=None, deleted=None, error=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """DeleteObjectsResponse
+        r"""DeleteObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def encoding_type(self):
-        """Gets the encoding_type of this DeleteObjectsResponse.
+        r"""Gets the encoding_type of this DeleteObjectsResponse.
 
         Encodes the **key** in the response based on the specified type. If **encoding-type** is specified in the request, the **Key** in the response is encoded.
 
@@ -113,7 +113,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @encoding_type.setter
     def encoding_type(self, encoding_type):
-        """Sets the encoding_type of this DeleteObjectsResponse.
+        r"""Sets the encoding_type of this DeleteObjectsResponse.
 
         Encodes the **key** in the response based on the specified type. If **encoding-type** is specified in the request, the **Key** in the response is encoded.
 
@@ -124,7 +124,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def deleted(self):
-        """Gets the deleted of this DeleteObjectsResponse.
+        r"""Gets the deleted of this DeleteObjectsResponse.
 
         :return: The deleted of this DeleteObjectsResponse.
         :rtype: list[:class:`huaweicloudsdkobs.v1.DeleteResultDeleted`]
@@ -133,7 +133,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this DeleteObjectsResponse.
+        r"""Sets the deleted of this DeleteObjectsResponse.
 
         :param deleted: The deleted of this DeleteObjectsResponse.
         :type deleted: list[:class:`huaweicloudsdkobs.v1.DeleteResultDeleted`]
@@ -142,7 +142,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteObjectsResponse.
+        r"""Gets the error of this DeleteObjectsResponse.
 
         :return: The error of this DeleteObjectsResponse.
         :rtype: list[:class:`huaweicloudsdkobs.v1.DeleteResultError`]
@@ -151,7 +151,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteObjectsResponse.
+        r"""Sets the error of this DeleteObjectsResponse.
 
         :param error: The error of this DeleteObjectsResponse.
         :type error: list[:class:`huaweicloudsdkobs.v1.DeleteResultError`]
@@ -160,7 +160,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this DeleteObjectsResponse.
+        r"""Gets the x_obs_id_2 of this DeleteObjectsResponse.
 
         :return: The x_obs_id_2 of this DeleteObjectsResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this DeleteObjectsResponse.
+        r"""Sets the x_obs_id_2 of this DeleteObjectsResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this DeleteObjectsResponse.
         :type x_obs_id_2: str
@@ -178,7 +178,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this DeleteObjectsResponse.
+        r"""Gets the x_obs_request_id of this DeleteObjectsResponse.
 
         :return: The x_obs_request_id of this DeleteObjectsResponse.
         :rtype: str
@@ -187,7 +187,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this DeleteObjectsResponse.
+        r"""Sets the x_obs_request_id of this DeleteObjectsResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this DeleteObjectsResponse.
         :type x_obs_request_id: str
@@ -196,7 +196,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this DeleteObjectsResponse.
+        r"""Gets the e_tag of this DeleteObjectsResponse.
 
         :return: The e_tag of this DeleteObjectsResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this DeleteObjectsResponse.
+        r"""Sets the e_tag of this DeleteObjectsResponse.
 
         :param e_tag: The e_tag of this DeleteObjectsResponse.
         :type e_tag: str
@@ -214,7 +214,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this DeleteObjectsResponse.
+        r"""Gets the connection of this DeleteObjectsResponse.
 
         :return: The connection of this DeleteObjectsResponse.
         :rtype: str
@@ -223,7 +223,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this DeleteObjectsResponse.
+        r"""Sets the connection of this DeleteObjectsResponse.
 
         :param connection: The connection of this DeleteObjectsResponse.
         :type connection: str
@@ -232,7 +232,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this DeleteObjectsResponse.
+        r"""Gets the content_length of this DeleteObjectsResponse.
 
         :return: The content_length of this DeleteObjectsResponse.
         :rtype: str
@@ -241,7 +241,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this DeleteObjectsResponse.
+        r"""Sets the content_length of this DeleteObjectsResponse.
 
         :param content_length: The content_length of this DeleteObjectsResponse.
         :type content_length: str
@@ -250,7 +250,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this DeleteObjectsResponse.
+        r"""Gets the date of this DeleteObjectsResponse.
 
         :return: The date of this DeleteObjectsResponse.
         :rtype: str
@@ -259,7 +259,7 @@ class DeleteObjectsResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteObjectsResponse.
+        r"""Sets the date of this DeleteObjectsResponse.
 
         :param date: The date of this DeleteObjectsResponse.
         :type date: str

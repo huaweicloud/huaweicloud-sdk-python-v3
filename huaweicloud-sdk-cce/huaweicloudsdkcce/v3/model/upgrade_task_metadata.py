@@ -29,7 +29,7 @@ class UpgradeTaskMetadata:
     }
 
     def __init__(self, uid=None, creation_timestamp=None, update_timestamp=None):
-        """UpgradeTaskMetadata
+        r"""UpgradeTaskMetadata
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpgradeTaskMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this UpgradeTaskMetadata.
+        r"""Gets the uid of this UpgradeTaskMetadata.
 
         升级任务ID
 
@@ -68,7 +68,7 @@ class UpgradeTaskMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this UpgradeTaskMetadata.
+        r"""Sets the uid of this UpgradeTaskMetadata.
 
         升级任务ID
 
@@ -79,7 +79,7 @@ class UpgradeTaskMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this UpgradeTaskMetadata.
+        r"""Gets the creation_timestamp of this UpgradeTaskMetadata.
 
         任务创建时间
 
@@ -90,7 +90,7 @@ class UpgradeTaskMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this UpgradeTaskMetadata.
+        r"""Sets the creation_timestamp of this UpgradeTaskMetadata.
 
         任务创建时间
 
@@ -101,7 +101,7 @@ class UpgradeTaskMetadata:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this UpgradeTaskMetadata.
+        r"""Gets the update_timestamp of this UpgradeTaskMetadata.
 
         任务更新时间
 
@@ -112,7 +112,7 @@ class UpgradeTaskMetadata:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this UpgradeTaskMetadata.
+        r"""Sets the update_timestamp of this UpgradeTaskMetadata.
 
         任务更新时间
 

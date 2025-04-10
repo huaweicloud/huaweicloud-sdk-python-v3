@@ -39,7 +39,7 @@ class ModifyTransTemplate:
     }
 
     def __init__(self, group_id=None, name=None, is_default=None, is_auto_encrypt=None, quality_info_list=None, watermark_template_ids=None, description=None, common=None):
-        """ModifyTransTemplate
+        r"""ModifyTransTemplate
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ModifyTransTemplate:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ModifyTransTemplate.
+        r"""Gets the group_id of this ModifyTransTemplate.
 
         模板组名称<br/> 
 
@@ -102,7 +102,7 @@ class ModifyTransTemplate:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ModifyTransTemplate.
+        r"""Sets the group_id of this ModifyTransTemplate.
 
         模板组名称<br/> 
 
@@ -113,7 +113,7 @@ class ModifyTransTemplate:
 
     @property
     def name(self):
-        """Gets the name of this ModifyTransTemplate.
+        r"""Gets the name of this ModifyTransTemplate.
 
         模板组名称<br/> 
 
@@ -124,7 +124,7 @@ class ModifyTransTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyTransTemplate.
+        r"""Sets the name of this ModifyTransTemplate.
 
         模板组名称<br/> 
 
@@ -135,7 +135,7 @@ class ModifyTransTemplate:
 
     @property
     def is_default(self):
-        """Gets the is_default of this ModifyTransTemplate.
+        r"""Gets the is_default of this ModifyTransTemplate.
 
         是否是默认转码模板<br/> 
 
@@ -146,7 +146,7 @@ class ModifyTransTemplate:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this ModifyTransTemplate.
+        r"""Sets the is_default of this ModifyTransTemplate.
 
         是否是默认转码模板<br/> 
 
@@ -157,7 +157,7 @@ class ModifyTransTemplate:
 
     @property
     def is_auto_encrypt(self):
-        """Gets the is_auto_encrypt of this ModifyTransTemplate.
+        r"""Gets the is_auto_encrypt of this ModifyTransTemplate.
 
         是否开启加密
 
@@ -168,7 +168,7 @@ class ModifyTransTemplate:
 
     @is_auto_encrypt.setter
     def is_auto_encrypt(self, is_auto_encrypt):
-        """Sets the is_auto_encrypt of this ModifyTransTemplate.
+        r"""Sets the is_auto_encrypt of this ModifyTransTemplate.
 
         是否开启加密
 
@@ -179,7 +179,7 @@ class ModifyTransTemplate:
 
     @property
     def quality_info_list(self):
-        """Gets the quality_info_list of this ModifyTransTemplate.
+        r"""Gets the quality_info_list of this ModifyTransTemplate.
 
         画质配置信息列表<br/> 
 
@@ -190,7 +190,7 @@ class ModifyTransTemplate:
 
     @quality_info_list.setter
     def quality_info_list(self, quality_info_list):
-        """Sets the quality_info_list of this ModifyTransTemplate.
+        r"""Sets the quality_info_list of this ModifyTransTemplate.
 
         画质配置信息列表<br/> 
 
@@ -201,7 +201,7 @@ class ModifyTransTemplate:
 
     @property
     def watermark_template_ids(self):
-        """Gets the watermark_template_ids of this ModifyTransTemplate.
+        r"""Gets the watermark_template_ids of this ModifyTransTemplate.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -212,7 +212,7 @@ class ModifyTransTemplate:
 
     @watermark_template_ids.setter
     def watermark_template_ids(self, watermark_template_ids):
-        """Sets the watermark_template_ids of this ModifyTransTemplate.
+        r"""Sets the watermark_template_ids of this ModifyTransTemplate.
 
         绑定的水印模板组ID数组<br/> 
 
@@ -223,7 +223,7 @@ class ModifyTransTemplate:
 
     @property
     def description(self):
-        """Gets the description of this ModifyTransTemplate.
+        r"""Gets the description of this ModifyTransTemplate.
 
         模板介绍<br/> 
 
@@ -234,7 +234,7 @@ class ModifyTransTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyTransTemplate.
+        r"""Sets the description of this ModifyTransTemplate.
 
         模板介绍<br/> 
 
@@ -245,7 +245,7 @@ class ModifyTransTemplate:
 
     @property
     def common(self):
-        """Gets the common of this ModifyTransTemplate.
+        r"""Gets the common of this ModifyTransTemplate.
 
         :return: The common of this ModifyTransTemplate.
         :rtype: :class:`huaweicloudsdkvod.v1.CommonInfo`
@@ -254,7 +254,7 @@ class ModifyTransTemplate:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this ModifyTransTemplate.
+        r"""Sets the common of this ModifyTransTemplate.
 
         :param common: The common of this ModifyTransTemplate.
         :type common: :class:`huaweicloudsdkvod.v1.CommonInfo`

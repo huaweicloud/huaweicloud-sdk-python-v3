@@ -28,7 +28,7 @@ class ListAgenciesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, agency_list=None):
-        """ListAgenciesResponse
+        r"""ListAgenciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAgenciesResponse.
+        r"""Gets the total_count of this ListAgenciesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAgenciesResponse.
+        r"""Sets the total_count of this ListAgenciesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def agency_list(self):
-        """Gets the agency_list of this ListAgenciesResponse.
+        r"""Gets the agency_list of this ListAgenciesResponse.
 
         委托列表
 
@@ -84,7 +84,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @agency_list.setter
     def agency_list(self, agency_list):
-        """Sets the agency_list of this ListAgenciesResponse.
+        r"""Sets the agency_list of this ListAgenciesResponse.
 
         委托列表
 

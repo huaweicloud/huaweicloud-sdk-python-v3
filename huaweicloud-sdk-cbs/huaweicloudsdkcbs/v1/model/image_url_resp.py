@@ -31,7 +31,7 @@ class ImageUrlResp:
     }
 
     def __init__(self, id=None, name=None, url=None, resolution=None):
-        """ImageUrlResp
+        r"""ImageUrlResp
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ImageUrlResp:
 
     @property
     def id(self):
-        """Gets the id of this ImageUrlResp.
+        r"""Gets the id of this ImageUrlResp.
 
         图片id
 
@@ -72,7 +72,7 @@ class ImageUrlResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageUrlResp.
+        r"""Sets the id of this ImageUrlResp.
 
         图片id
 
@@ -83,7 +83,7 @@ class ImageUrlResp:
 
     @property
     def name(self):
-        """Gets the name of this ImageUrlResp.
+        r"""Gets the name of this ImageUrlResp.
 
         
 
@@ -94,7 +94,7 @@ class ImageUrlResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageUrlResp.
+        r"""Sets the name of this ImageUrlResp.
 
         
 
@@ -105,7 +105,7 @@ class ImageUrlResp:
 
     @property
     def url(self):
-        """Gets the url of this ImageUrlResp.
+        r"""Gets the url of this ImageUrlResp.
 
         访问地址
 
@@ -116,7 +116,7 @@ class ImageUrlResp:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ImageUrlResp.
+        r"""Sets the url of this ImageUrlResp.
 
         访问地址
 
@@ -127,7 +127,7 @@ class ImageUrlResp:
 
     @property
     def resolution(self):
-        """Gets the resolution of this ImageUrlResp.
+        r"""Gets the resolution of this ImageUrlResp.
 
         :return: The resolution of this ImageUrlResp.
         :rtype: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -136,7 +136,7 @@ class ImageUrlResp:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this ImageUrlResp.
+        r"""Sets the resolution of this ImageUrlResp.
 
         :param resolution: The resolution of this ImageUrlResp.
         :type resolution: :class:`huaweicloudsdkcbs.v1.Resolution`

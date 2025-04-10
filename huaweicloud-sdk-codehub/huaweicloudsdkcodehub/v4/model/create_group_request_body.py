@@ -31,7 +31,7 @@ class CreateGroupRequestBody:
     }
 
     def __init__(self, name=None, parent_id=None, visibility=None, description=None):
-        """CreateGroupRequestBody
+        r"""CreateGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateGroupRequestBody.
+        r"""Gets the name of this CreateGroupRequestBody.
 
         代码组名称
 
@@ -75,7 +75,7 @@ class CreateGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGroupRequestBody.
+        r"""Sets the name of this CreateGroupRequestBody.
 
         代码组名称
 
@@ -86,7 +86,7 @@ class CreateGroupRequestBody:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateGroupRequestBody.
+        r"""Gets the parent_id of this CreateGroupRequestBody.
 
         父级代码组id, 不传默认在项目下创建代码组
 
@@ -97,7 +97,7 @@ class CreateGroupRequestBody:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateGroupRequestBody.
+        r"""Sets the parent_id of this CreateGroupRequestBody.
 
         父级代码组id, 不传默认在项目下创建代码组
 
@@ -108,7 +108,7 @@ class CreateGroupRequestBody:
 
     @property
     def visibility(self):
-        """Gets the visibility of this CreateGroupRequestBody.
+        r"""Gets the visibility of this CreateGroupRequestBody.
 
         可见性, private public
 
@@ -119,7 +119,7 @@ class CreateGroupRequestBody:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this CreateGroupRequestBody.
+        r"""Sets the visibility of this CreateGroupRequestBody.
 
         可见性, private public
 
@@ -130,7 +130,7 @@ class CreateGroupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateGroupRequestBody.
+        r"""Gets the description of this CreateGroupRequestBody.
 
         描述
 
@@ -141,7 +141,7 @@ class CreateGroupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGroupRequestBody.
+        r"""Sets the description of this CreateGroupRequestBody.
 
         描述
 

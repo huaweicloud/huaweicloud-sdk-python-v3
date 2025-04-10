@@ -23,7 +23,7 @@ class AgentVersion:
     }
 
     def __init__(self):
-        """AgentVersion
+        r"""AgentVersion
 
         The model defined in huaweicloud sdk
 

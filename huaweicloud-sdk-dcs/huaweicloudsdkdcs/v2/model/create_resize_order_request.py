@@ -27,7 +27,7 @@ class CreateResizeOrderRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateResizeOrderRequest
+        r"""CreateResizeOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateResizeOrderRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateResizeOrderRequest.
+        r"""Gets the instance_id of this CreateResizeOrderRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateResizeOrderRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateResizeOrderRequest.
+        r"""Sets the instance_id of this CreateResizeOrderRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateResizeOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResizeOrderRequest.
+        r"""Gets the body of this CreateResizeOrderRequest.
 
         :return: The body of this CreateResizeOrderRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateResizeOrderRequestBody`
@@ -80,7 +80,7 @@ class CreateResizeOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResizeOrderRequest.
+        r"""Sets the body of this CreateResizeOrderRequest.
 
         :param body: The body of this CreateResizeOrderRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.CreateResizeOrderRequestBody`

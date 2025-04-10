@@ -53,7 +53,7 @@ class TreeableModelViewDTO:
     }
 
     def __init__(self, id=None, creator=None, modifier=None, create_time=None, last_update_time=None, rdm_version=None, rdm_delete_flag=None, rdm_extension_type=None, tenant=None, class_name=None, root_node=None, parent_node=None, leaf_flag=None, full_path=None, raw_full_path=None):
-        """TreeableModelViewDTO
+        r"""TreeableModelViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class TreeableModelViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this TreeableModelViewDTO.
+        r"""Gets the id of this TreeableModelViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -152,7 +152,7 @@ class TreeableModelViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TreeableModelViewDTO.
+        r"""Sets the id of this TreeableModelViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -163,7 +163,7 @@ class TreeableModelViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this TreeableModelViewDTO.
+        r"""Gets the creator of this TreeableModelViewDTO.
 
         **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -174,7 +174,7 @@ class TreeableModelViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TreeableModelViewDTO.
+        r"""Sets the creator of this TreeableModelViewDTO.
 
         **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -185,7 +185,7 @@ class TreeableModelViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this TreeableModelViewDTO.
+        r"""Gets the modifier of this TreeableModelViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -196,7 +196,7 @@ class TreeableModelViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this TreeableModelViewDTO.
+        r"""Sets the modifier of this TreeableModelViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -207,7 +207,7 @@ class TreeableModelViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TreeableModelViewDTO.
+        r"""Gets the create_time of this TreeableModelViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -218,7 +218,7 @@ class TreeableModelViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TreeableModelViewDTO.
+        r"""Sets the create_time of this TreeableModelViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -229,7 +229,7 @@ class TreeableModelViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this TreeableModelViewDTO.
+        r"""Gets the last_update_time of this TreeableModelViewDTO.
 
         **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -240,7 +240,7 @@ class TreeableModelViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this TreeableModelViewDTO.
+        r"""Sets the last_update_time of this TreeableModelViewDTO.
 
         **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -251,7 +251,7 @@ class TreeableModelViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this TreeableModelViewDTO.
+        r"""Gets the rdm_version of this TreeableModelViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -262,7 +262,7 @@ class TreeableModelViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this TreeableModelViewDTO.
+        r"""Sets the rdm_version of this TreeableModelViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -273,7 +273,7 @@ class TreeableModelViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this TreeableModelViewDTO.
+        r"""Gets the rdm_delete_flag of this TreeableModelViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -284,7 +284,7 @@ class TreeableModelViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this TreeableModelViewDTO.
+        r"""Sets the rdm_delete_flag of this TreeableModelViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -295,7 +295,7 @@ class TreeableModelViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this TreeableModelViewDTO.
+        r"""Gets the rdm_extension_type of this TreeableModelViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -306,7 +306,7 @@ class TreeableModelViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this TreeableModelViewDTO.
+        r"""Sets the rdm_extension_type of this TreeableModelViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -317,7 +317,7 @@ class TreeableModelViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this TreeableModelViewDTO.
+        r"""Gets the tenant of this TreeableModelViewDTO.
 
         :return: The tenant of this TreeableModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -326,7 +326,7 @@ class TreeableModelViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this TreeableModelViewDTO.
+        r"""Sets the tenant of this TreeableModelViewDTO.
 
         :param tenant: The tenant of this TreeableModelViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -335,7 +335,7 @@ class TreeableModelViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this TreeableModelViewDTO.
+        r"""Gets the class_name of this TreeableModelViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -346,7 +346,7 @@ class TreeableModelViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this TreeableModelViewDTO.
+        r"""Sets the class_name of this TreeableModelViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -357,7 +357,7 @@ class TreeableModelViewDTO:
 
     @property
     def root_node(self):
-        """Gets the root_node of this TreeableModelViewDTO.
+        r"""Gets the root_node of this TreeableModelViewDTO.
 
         :return: The root_node of this TreeableModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -366,7 +366,7 @@ class TreeableModelViewDTO:
 
     @root_node.setter
     def root_node(self, root_node):
-        """Sets the root_node of this TreeableModelViewDTO.
+        r"""Sets the root_node of this TreeableModelViewDTO.
 
         :param root_node: The root_node of this TreeableModelViewDTO.
         :type root_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -375,7 +375,7 @@ class TreeableModelViewDTO:
 
     @property
     def parent_node(self):
-        """Gets the parent_node of this TreeableModelViewDTO.
+        r"""Gets the parent_node of this TreeableModelViewDTO.
 
         :return: The parent_node of this TreeableModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -384,7 +384,7 @@ class TreeableModelViewDTO:
 
     @parent_node.setter
     def parent_node(self, parent_node):
-        """Sets the parent_node of this TreeableModelViewDTO.
+        r"""Sets the parent_node of this TreeableModelViewDTO.
 
         :param parent_node: The parent_node of this TreeableModelViewDTO.
         :type parent_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -393,7 +393,7 @@ class TreeableModelViewDTO:
 
     @property
     def leaf_flag(self):
-        """Gets the leaf_flag of this TreeableModelViewDTO.
+        r"""Gets the leaf_flag of this TreeableModelViewDTO.
 
         **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  不涉及。 
 
@@ -404,7 +404,7 @@ class TreeableModelViewDTO:
 
     @leaf_flag.setter
     def leaf_flag(self, leaf_flag):
-        """Sets the leaf_flag of this TreeableModelViewDTO.
+        r"""Sets the leaf_flag of this TreeableModelViewDTO.
 
         **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  不涉及。 
 
@@ -415,7 +415,7 @@ class TreeableModelViewDTO:
 
     @property
     def full_path(self):
-        """Gets the full_path of this TreeableModelViewDTO.
+        r"""Gets the full_path of this TreeableModelViewDTO.
 
         **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -426,7 +426,7 @@ class TreeableModelViewDTO:
 
     @full_path.setter
     def full_path(self, full_path):
-        """Sets the full_path of this TreeableModelViewDTO.
+        r"""Sets the full_path of this TreeableModelViewDTO.
 
         **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -437,7 +437,7 @@ class TreeableModelViewDTO:
 
     @property
     def raw_full_path(self):
-        """Gets the raw_full_path of this TreeableModelViewDTO.
+        r"""Gets the raw_full_path of this TreeableModelViewDTO.
 
         **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -448,7 +448,7 @@ class TreeableModelViewDTO:
 
     @raw_full_path.setter
     def raw_full_path(self, raw_full_path):
-        """Sets the raw_full_path of this TreeableModelViewDTO.
+        r"""Sets the raw_full_path of this TreeableModelViewDTO.
 
         **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

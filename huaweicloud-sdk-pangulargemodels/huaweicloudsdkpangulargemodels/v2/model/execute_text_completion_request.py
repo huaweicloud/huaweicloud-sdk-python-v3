@@ -29,7 +29,7 @@ class ExecuteTextCompletionRequest:
     }
 
     def __init__(self, pool_id=None, deployment_id=None, body=None):
-        """ExecuteTextCompletionRequest
+        r"""ExecuteTextCompletionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExecuteTextCompletionRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ExecuteTextCompletionRequest.
+        r"""Gets the pool_id of this ExecuteTextCompletionRequest.
 
         资源池ID
 
@@ -66,7 +66,7 @@ class ExecuteTextCompletionRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ExecuteTextCompletionRequest.
+        r"""Sets the pool_id of this ExecuteTextCompletionRequest.
 
         资源池ID
 
@@ -77,7 +77,7 @@ class ExecuteTextCompletionRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ExecuteTextCompletionRequest.
+        r"""Gets the deployment_id of this ExecuteTextCompletionRequest.
 
         模型的部署ID
 
@@ -88,7 +88,7 @@ class ExecuteTextCompletionRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ExecuteTextCompletionRequest.
+        r"""Sets the deployment_id of this ExecuteTextCompletionRequest.
 
         模型的部署ID
 
@@ -99,7 +99,7 @@ class ExecuteTextCompletionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteTextCompletionRequest.
+        r"""Gets the body of this ExecuteTextCompletionRequest.
 
         :return: The body of this ExecuteTextCompletionRequest.
         :rtype: :class:`huaweicloudsdkpangulargemodels.v2.TextCompletionReq`
@@ -108,7 +108,7 @@ class ExecuteTextCompletionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteTextCompletionRequest.
+        r"""Sets the body of this ExecuteTextCompletionRequest.
 
         :param body: The body of this ExecuteTextCompletionRequest.
         :type body: :class:`huaweicloudsdkpangulargemodels.v2.TextCompletionReq`

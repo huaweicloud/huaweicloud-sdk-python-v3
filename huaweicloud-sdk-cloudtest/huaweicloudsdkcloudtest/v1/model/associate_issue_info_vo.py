@@ -33,7 +33,7 @@ class AssociateIssueInfoVo:
     }
 
     def __init__(self, associate=None, issue_id=None, tracker_id=None, board_id=None, tracker_name=None):
-        """AssociateIssueInfoVo
+        r"""AssociateIssueInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AssociateIssueInfoVo:
 
     @property
     def associate(self):
-        """Gets the associate of this AssociateIssueInfoVo.
+        r"""Gets the associate of this AssociateIssueInfoVo.
 
         是否已关联
 
@@ -82,7 +82,7 @@ class AssociateIssueInfoVo:
 
     @associate.setter
     def associate(self, associate):
-        """Sets the associate of this AssociateIssueInfoVo.
+        r"""Sets the associate of this AssociateIssueInfoVo.
 
         是否已关联
 
@@ -93,7 +93,7 @@ class AssociateIssueInfoVo:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this AssociateIssueInfoVo.
+        r"""Gets the issue_id of this AssociateIssueInfoVo.
 
         需求ID
 
@@ -104,7 +104,7 @@ class AssociateIssueInfoVo:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this AssociateIssueInfoVo.
+        r"""Sets the issue_id of this AssociateIssueInfoVo.
 
         需求ID
 
@@ -115,7 +115,7 @@ class AssociateIssueInfoVo:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this AssociateIssueInfoVo.
+        r"""Gets the tracker_id of this AssociateIssueInfoVo.
 
         需求类型
 
@@ -126,7 +126,7 @@ class AssociateIssueInfoVo:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this AssociateIssueInfoVo.
+        r"""Sets the tracker_id of this AssociateIssueInfoVo.
 
         需求类型
 
@@ -137,7 +137,7 @@ class AssociateIssueInfoVo:
 
     @property
     def board_id(self):
-        """Gets the board_id of this AssociateIssueInfoVo.
+        r"""Gets the board_id of this AssociateIssueInfoVo.
 
         工作项层级ID
 
@@ -148,7 +148,7 @@ class AssociateIssueInfoVo:
 
     @board_id.setter
     def board_id(self, board_id):
-        """Sets the board_id of this AssociateIssueInfoVo.
+        r"""Sets the board_id of this AssociateIssueInfoVo.
 
         工作项层级ID
 
@@ -159,7 +159,7 @@ class AssociateIssueInfoVo:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this AssociateIssueInfoVo.
+        r"""Gets the tracker_name of this AssociateIssueInfoVo.
 
         需求类型名称
 
@@ -170,7 +170,7 @@ class AssociateIssueInfoVo:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this AssociateIssueInfoVo.
+        r"""Sets the tracker_name of this AssociateIssueInfoVo.
 
         需求类型名称
 

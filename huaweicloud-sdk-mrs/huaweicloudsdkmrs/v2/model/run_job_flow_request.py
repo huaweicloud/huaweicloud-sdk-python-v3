@@ -25,7 +25,7 @@ class RunJobFlowRequest:
     }
 
     def __init__(self, body=None):
-        """RunJobFlowRequest
+        r"""RunJobFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunJobFlowRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunJobFlowRequest.
+        r"""Gets the body of this RunJobFlowRequest.
 
         :return: The body of this RunJobFlowRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.RunJobFlowCommand`
@@ -52,7 +52,7 @@ class RunJobFlowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunJobFlowRequest.
+        r"""Sets the body of this RunJobFlowRequest.
 
         :param body: The body of this RunJobFlowRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.RunJobFlowCommand`

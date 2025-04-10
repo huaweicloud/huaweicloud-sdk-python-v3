@@ -29,7 +29,7 @@ class DatabaseInfo:
     }
 
     def __init__(self, name=None, tables=None, functions=None):
-        """DatabaseInfo
+        r"""DatabaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DatabaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseInfo.
+        r"""Gets the name of this DatabaseInfo.
 
         数据库名
 
@@ -67,7 +67,7 @@ class DatabaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseInfo.
+        r"""Sets the name of this DatabaseInfo.
 
         数据库名
 
@@ -78,7 +78,7 @@ class DatabaseInfo:
 
     @property
     def tables(self):
-        """Gets the tables of this DatabaseInfo.
+        r"""Gets the tables of this DatabaseInfo.
 
         子表信息
 
@@ -89,7 +89,7 @@ class DatabaseInfo:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this DatabaseInfo.
+        r"""Sets the tables of this DatabaseInfo.
 
         子表信息
 
@@ -100,7 +100,7 @@ class DatabaseInfo:
 
     @property
     def functions(self):
-        """Gets the functions of this DatabaseInfo.
+        r"""Gets the functions of this DatabaseInfo.
 
         子方法信息
 
@@ -111,7 +111,7 @@ class DatabaseInfo:
 
     @functions.setter
     def functions(self, functions):
-        """Sets the functions of this DatabaseInfo.
+        r"""Sets the functions of this DatabaseInfo.
 
         子方法信息
 

@@ -30,7 +30,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
     }
 
     def __init__(self, interval=None, collector_id=None, config_item_list=None):
-        """ShowMonitorItemDetailResponse
+        r"""ShowMonitorItemDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowMonitorItemDetailResponse.
+        r"""Gets the interval of this ShowMonitorItemDetailResponse.
 
         采集间隔
 
@@ -69,7 +69,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowMonitorItemDetailResponse.
+        r"""Sets the interval of this ShowMonitorItemDetailResponse.
 
         采集间隔
 
@@ -80,7 +80,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
 
     @property
     def collector_id(self):
-        """Gets the collector_id of this ShowMonitorItemDetailResponse.
+        r"""Gets the collector_id of this ShowMonitorItemDetailResponse.
 
         采集器ID
 
@@ -91,7 +91,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
 
     @collector_id.setter
     def collector_id(self, collector_id):
-        """Sets the collector_id of this ShowMonitorItemDetailResponse.
+        r"""Sets the collector_id of this ShowMonitorItemDetailResponse.
 
         采集器ID
 
@@ -102,7 +102,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
 
     @property
     def config_item_list(self):
-        """Gets the config_item_list of this ShowMonitorItemDetailResponse.
+        r"""Gets the config_item_list of this ShowMonitorItemDetailResponse.
 
         采集参数配置列表
 
@@ -113,7 +113,7 @@ class ShowMonitorItemDetailResponse(SdkResponse):
 
     @config_item_list.setter
     def config_item_list(self, config_item_list):
-        """Sets the config_item_list of this ShowMonitorItemDetailResponse.
+        r"""Sets the config_item_list of this ShowMonitorItemDetailResponse.
 
         采集参数配置列表
 

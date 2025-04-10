@@ -69,7 +69,7 @@ class PackageResponse:
     }
 
     def __init__(self, package_id=None, package_name=None, region_id=None, protection_type=None, instance_type=None, resource_id=None, count_down_code=None, count_down_infos=None, count_down_tips=None, order_id=None, subscription_id=None, ip_num=None, ip_num_now=None, protection_num_now=None, protection_num=None, basic_bandwidth=None, elastic_bandwidth=None, service_bandwidth=None, clean_bandwidth=None, policy_num=None, is_old=None, new_flag=None, create_time=None):
-        """PackageResponse
+        r"""PackageResponse
 
         The model defined in huaweicloud sdk
 
@@ -189,7 +189,7 @@ class PackageResponse:
 
     @property
     def package_id(self):
-        """Gets the package_id of this PackageResponse.
+        r"""Gets the package_id of this PackageResponse.
 
         防护包id
 
@@ -200,7 +200,7 @@ class PackageResponse:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this PackageResponse.
+        r"""Sets the package_id of this PackageResponse.
 
         防护包id
 
@@ -211,7 +211,7 @@ class PackageResponse:
 
     @property
     def package_name(self):
-        """Gets the package_name of this PackageResponse.
+        r"""Gets the package_name of this PackageResponse.
 
         防护包名
 
@@ -222,7 +222,7 @@ class PackageResponse:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this PackageResponse.
+        r"""Sets the package_name of this PackageResponse.
 
         防护包名
 
@@ -233,7 +233,7 @@ class PackageResponse:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PackageResponse.
+        r"""Gets the region_id of this PackageResponse.
 
         资源所属region
 
@@ -244,7 +244,7 @@ class PackageResponse:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PackageResponse.
+        r"""Sets the region_id of this PackageResponse.
 
         资源所属region
 
@@ -255,7 +255,7 @@ class PackageResponse:
 
     @property
     def protection_type(self):
-        """Gets the protection_type of this PackageResponse.
+        r"""Gets the protection_type of this PackageResponse.
 
         防护类型
 
@@ -266,7 +266,7 @@ class PackageResponse:
 
     @protection_type.setter
     def protection_type(self, protection_type):
-        """Sets the protection_type of this PackageResponse.
+        r"""Sets the protection_type of this PackageResponse.
 
         防护类型
 
@@ -277,7 +277,7 @@ class PackageResponse:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this PackageResponse.
+        r"""Gets the instance_type of this PackageResponse.
 
         防护包类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
 
@@ -288,7 +288,7 @@ class PackageResponse:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this PackageResponse.
+        r"""Sets the instance_type of this PackageResponse.
 
         防护包类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
 
@@ -299,7 +299,7 @@ class PackageResponse:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PackageResponse.
+        r"""Gets the resource_id of this PackageResponse.
 
         资源id
 
@@ -310,7 +310,7 @@ class PackageResponse:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PackageResponse.
+        r"""Sets the resource_id of this PackageResponse.
 
         资源id
 
@@ -321,7 +321,7 @@ class PackageResponse:
 
     @property
     def count_down_code(self):
-        """Gets the count_down_code of this PackageResponse.
+        r"""Gets the count_down_code of this PackageResponse.
 
         倒计时相关信息
 
@@ -332,7 +332,7 @@ class PackageResponse:
 
     @count_down_code.setter
     def count_down_code(self, count_down_code):
-        """Sets the count_down_code of this PackageResponse.
+        r"""Sets the count_down_code of this PackageResponse.
 
         倒计时相关信息
 
@@ -343,7 +343,7 @@ class PackageResponse:
 
     @property
     def count_down_infos(self):
-        """Gets the count_down_infos of this PackageResponse.
+        r"""Gets the count_down_infos of this PackageResponse.
 
         倒计时相关信息
 
@@ -354,7 +354,7 @@ class PackageResponse:
 
     @count_down_infos.setter
     def count_down_infos(self, count_down_infos):
-        """Sets the count_down_infos of this PackageResponse.
+        r"""Sets the count_down_infos of this PackageResponse.
 
         倒计时相关信息
 
@@ -365,7 +365,7 @@ class PackageResponse:
 
     @property
     def count_down_tips(self):
-        """Gets the count_down_tips of this PackageResponse.
+        r"""Gets the count_down_tips of this PackageResponse.
 
         倒计时相关信息
 
@@ -376,7 +376,7 @@ class PackageResponse:
 
     @count_down_tips.setter
     def count_down_tips(self, count_down_tips):
-        """Sets the count_down_tips of this PackageResponse.
+        r"""Sets the count_down_tips of this PackageResponse.
 
         倒计时相关信息
 
@@ -387,7 +387,7 @@ class PackageResponse:
 
     @property
     def order_id(self):
-        """Gets the order_id of this PackageResponse.
+        r"""Gets the order_id of this PackageResponse.
 
         订单id
 
@@ -398,7 +398,7 @@ class PackageResponse:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PackageResponse.
+        r"""Sets the order_id of this PackageResponse.
 
         订单id
 
@@ -409,7 +409,7 @@ class PackageResponse:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this PackageResponse.
+        r"""Gets the subscription_id of this PackageResponse.
 
         续费用的id
 
@@ -420,7 +420,7 @@ class PackageResponse:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this PackageResponse.
+        r"""Sets the subscription_id of this PackageResponse.
 
         续费用的id
 
@@ -431,7 +431,7 @@ class PackageResponse:
 
     @property
     def ip_num(self):
-        """Gets the ip_num of this PackageResponse.
+        r"""Gets the ip_num of this PackageResponse.
 
         ip数
 
@@ -442,7 +442,7 @@ class PackageResponse:
 
     @ip_num.setter
     def ip_num(self, ip_num):
-        """Sets the ip_num of this PackageResponse.
+        r"""Sets the ip_num of this PackageResponse.
 
         ip数
 
@@ -453,7 +453,7 @@ class PackageResponse:
 
     @property
     def ip_num_now(self):
-        """Gets the ip_num_now of this PackageResponse.
+        r"""Gets the ip_num_now of this PackageResponse.
 
         当前IP数
 
@@ -464,7 +464,7 @@ class PackageResponse:
 
     @ip_num_now.setter
     def ip_num_now(self, ip_num_now):
-        """Sets the ip_num_now of this PackageResponse.
+        r"""Sets the ip_num_now of this PackageResponse.
 
         当前IP数
 
@@ -475,7 +475,7 @@ class PackageResponse:
 
     @property
     def protection_num_now(self):
-        """Gets the protection_num_now of this PackageResponse.
+        r"""Gets the protection_num_now of this PackageResponse.
 
         当前防护次数
 
@@ -486,7 +486,7 @@ class PackageResponse:
 
     @protection_num_now.setter
     def protection_num_now(self, protection_num_now):
-        """Sets the protection_num_now of this PackageResponse.
+        r"""Sets the protection_num_now of this PackageResponse.
 
         当前防护次数
 
@@ -497,7 +497,7 @@ class PackageResponse:
 
     @property
     def protection_num(self):
-        """Gets the protection_num of this PackageResponse.
+        r"""Gets the protection_num of this PackageResponse.
 
         防护次数，9999为无限次
 
@@ -508,7 +508,7 @@ class PackageResponse:
 
     @protection_num.setter
     def protection_num(self, protection_num):
-        """Sets the protection_num of this PackageResponse.
+        r"""Sets the protection_num of this PackageResponse.
 
         防护次数，9999为无限次
 
@@ -519,7 +519,7 @@ class PackageResponse:
 
     @property
     def basic_bandwidth(self):
-        """Gets the basic_bandwidth of this PackageResponse.
+        r"""Gets the basic_bandwidth of this PackageResponse.
 
         保底带宽
 
@@ -530,7 +530,7 @@ class PackageResponse:
 
     @basic_bandwidth.setter
     def basic_bandwidth(self, basic_bandwidth):
-        """Sets the basic_bandwidth of this PackageResponse.
+        r"""Sets the basic_bandwidth of this PackageResponse.
 
         保底带宽
 
@@ -541,7 +541,7 @@ class PackageResponse:
 
     @property
     def elastic_bandwidth(self):
-        """Gets the elastic_bandwidth of this PackageResponse.
+        r"""Gets the elastic_bandwidth of this PackageResponse.
 
         弹性带宽
 
@@ -552,7 +552,7 @@ class PackageResponse:
 
     @elastic_bandwidth.setter
     def elastic_bandwidth(self, elastic_bandwidth):
-        """Sets the elastic_bandwidth of this PackageResponse.
+        r"""Sets the elastic_bandwidth of this PackageResponse.
 
         弹性带宽
 
@@ -563,7 +563,7 @@ class PackageResponse:
 
     @property
     def service_bandwidth(self):
-        """Gets the service_bandwidth of this PackageResponse.
+        r"""Gets the service_bandwidth of this PackageResponse.
 
         业务带宽
 
@@ -574,7 +574,7 @@ class PackageResponse:
 
     @service_bandwidth.setter
     def service_bandwidth(self, service_bandwidth):
-        """Sets the service_bandwidth of this PackageResponse.
+        r"""Sets the service_bandwidth of this PackageResponse.
 
         业务带宽
 
@@ -585,7 +585,7 @@ class PackageResponse:
 
     @property
     def clean_bandwidth(self):
-        """Gets the clean_bandwidth of this PackageResponse.
+        r"""Gets the clean_bandwidth of this PackageResponse.
 
         回源带宽
 
@@ -596,7 +596,7 @@ class PackageResponse:
 
     @clean_bandwidth.setter
     def clean_bandwidth(self, clean_bandwidth):
-        """Sets the clean_bandwidth of this PackageResponse.
+        r"""Sets the clean_bandwidth of this PackageResponse.
 
         回源带宽
 
@@ -607,7 +607,7 @@ class PackageResponse:
 
     @property
     def policy_num(self):
-        """Gets the policy_num of this PackageResponse.
+        r"""Gets the policy_num of this PackageResponse.
 
         策略模板数
 
@@ -618,7 +618,7 @@ class PackageResponse:
 
     @policy_num.setter
     def policy_num(self, policy_num):
-        """Sets the policy_num of this PackageResponse.
+        r"""Sets the policy_num of this PackageResponse.
 
         策略模板数
 
@@ -629,7 +629,7 @@ class PackageResponse:
 
     @property
     def is_old(self):
-        """Gets the is_old of this PackageResponse.
+        r"""Gets the is_old of this PackageResponse.
 
         是否旧防护包（旧防护包不支持升级规格）,默认不传为否
 
@@ -640,7 +640,7 @@ class PackageResponse:
 
     @is_old.setter
     def is_old(self, is_old):
-        """Sets the is_old of this PackageResponse.
+        r"""Sets the is_old of this PackageResponse.
 
         是否旧防护包（旧防护包不支持升级规格）,默认不传为否
 
@@ -651,7 +651,7 @@ class PackageResponse:
 
     @property
     def new_flag(self):
-        """Gets the new_flag of this PackageResponse.
+        r"""Gets the new_flag of this PackageResponse.
 
         专业版铂金版合并之后购买的专业版和铂金版均标识为true
 
@@ -662,7 +662,7 @@ class PackageResponse:
 
     @new_flag.setter
     def new_flag(self, new_flag):
-        """Sets the new_flag of this PackageResponse.
+        r"""Sets the new_flag of this PackageResponse.
 
         专业版铂金版合并之后购买的专业版和铂金版均标识为true
 
@@ -673,7 +673,7 @@ class PackageResponse:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PackageResponse.
+        r"""Gets the create_time of this PackageResponse.
 
         创建时间
 
@@ -684,7 +684,7 @@ class PackageResponse:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PackageResponse.
+        r"""Sets the create_time of this PackageResponse.
 
         创建时间
 

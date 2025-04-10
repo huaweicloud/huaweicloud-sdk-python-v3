@@ -29,7 +29,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
     }
 
     def __init__(self, workspace=None, x_language=None, body=None):
-        """ImportSecurityBuiltinCategoryGroupsRequest
+        r"""ImportSecurityBuiltinCategoryGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportSecurityBuiltinCategoryGroupsRequest.
+        r"""Gets the workspace of this ImportSecurityBuiltinCategoryGroupsRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportSecurityBuiltinCategoryGroupsRequest.
+        r"""Sets the workspace of this ImportSecurityBuiltinCategoryGroupsRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ImportSecurityBuiltinCategoryGroupsRequest.
+        r"""Gets the x_language of this ImportSecurityBuiltinCategoryGroupsRequest.
 
         请求语言 * zh-cn 中文 * en-us 英文
 
@@ -88,7 +88,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ImportSecurityBuiltinCategoryGroupsRequest.
+        r"""Sets the x_language of this ImportSecurityBuiltinCategoryGroupsRequest.
 
         请求语言 * zh-cn 中文 * en-us 英文
 
@@ -99,7 +99,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportSecurityBuiltinCategoryGroupsRequest.
+        r"""Gets the body of this ImportSecurityBuiltinCategoryGroupsRequest.
 
         :return: The body of this ImportSecurityBuiltinCategoryGroupsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportBuiltinCategoryParam`
@@ -108,7 +108,7 @@ class ImportSecurityBuiltinCategoryGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportSecurityBuiltinCategoryGroupsRequest.
+        r"""Sets the body of this ImportSecurityBuiltinCategoryGroupsRequest.
 
         :param body: The body of this ImportSecurityBuiltinCategoryGroupsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ImportBuiltinCategoryParam`

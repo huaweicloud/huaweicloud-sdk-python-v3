@@ -27,7 +27,7 @@ class UpdateDomainConsoleAclPolicyRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdateDomainConsoleAclPolicyRequest
+        r"""UpdateDomainConsoleAclPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDomainConsoleAclPolicyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateDomainConsoleAclPolicyRequest.
+        r"""Gets the domain_id of this UpdateDomainConsoleAclPolicyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class UpdateDomainConsoleAclPolicyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateDomainConsoleAclPolicyRequest.
+        r"""Sets the domain_id of this UpdateDomainConsoleAclPolicyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class UpdateDomainConsoleAclPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainConsoleAclPolicyRequest.
+        r"""Gets the body of this UpdateDomainConsoleAclPolicyRequest.
 
         :return: The body of this UpdateDomainConsoleAclPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateDomainConsoleAclPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainConsoleAclPolicyRequest.
+        r"""Sets the body of this UpdateDomainConsoleAclPolicyRequest.
 
         :param body: The body of this UpdateDomainConsoleAclPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyRequestBody`

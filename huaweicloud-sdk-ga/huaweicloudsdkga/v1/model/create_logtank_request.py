@@ -25,7 +25,7 @@ class CreateLogtankRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLogtankRequest
+        r"""CreateLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLogtankRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogtankRequest.
+        r"""Gets the body of this CreateLogtankRequest.
 
         :return: The body of this CreateLogtankRequest.
         :rtype: :class:`huaweicloudsdkga.v1.CreateLogtankRequestBody`
@@ -52,7 +52,7 @@ class CreateLogtankRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogtankRequest.
+        r"""Sets the body of this CreateLogtankRequest.
 
         :param body: The body of this CreateLogtankRequest.
         :type body: :class:`huaweicloudsdkga.v1.CreateLogtankRequestBody`

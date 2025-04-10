@@ -25,7 +25,7 @@ class QueryDbParamsResp:
     }
 
     def __init__(self, params=None):
-        """QueryDbParamsResp
+        r"""QueryDbParamsResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QueryDbParamsResp:
 
     @property
     def params(self):
-        """Gets the params of this QueryDbParamsResp.
+        r"""Gets the params of this QueryDbParamsResp.
 
         :return: The params of this QueryDbParamsResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.Params`]
@@ -52,7 +52,7 @@ class QueryDbParamsResp:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this QueryDbParamsResp.
+        r"""Sets the params of this QueryDbParamsResp.
 
         :param params: The params of this QueryDbParamsResp.
         :type params: list[:class:`huaweicloudsdkdrs.v3.Params`]

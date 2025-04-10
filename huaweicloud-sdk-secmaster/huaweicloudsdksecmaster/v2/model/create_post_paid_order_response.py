@@ -24,7 +24,7 @@ class CreatePostPaidOrderResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreatePostPaidOrderResponse
+        r"""CreatePostPaidOrderResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class ShowJobListByProjectIdRequest:
     }
 
     def __init__(self, project_id=None, page_index=None, page_size=None):
-        """ShowJobListByProjectIdRequest
+        r"""ShowJobListByProjectIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowJobListByProjectIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowJobListByProjectIdRequest.
+        r"""Gets the project_id of this ShowJobListByProjectIdRequest.
 
         CodeArts项目ID，32位数字、小写字母组合。
 
@@ -65,7 +65,7 @@ class ShowJobListByProjectIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowJobListByProjectIdRequest.
+        r"""Sets the project_id of this ShowJobListByProjectIdRequest.
 
         CodeArts项目ID，32位数字、小写字母组合。
 
@@ -76,7 +76,7 @@ class ShowJobListByProjectIdRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ShowJobListByProjectIdRequest.
+        r"""Gets the page_index of this ShowJobListByProjectIdRequest.
 
         分页页码， 表示从此页开始查询， page_index大于等于0
 
@@ -87,7 +87,7 @@ class ShowJobListByProjectIdRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ShowJobListByProjectIdRequest.
+        r"""Sets the page_index of this ShowJobListByProjectIdRequest.
 
         分页页码， 表示从此页开始查询， page_index大于等于0
 
@@ -98,7 +98,7 @@ class ShowJobListByProjectIdRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowJobListByProjectIdRequest.
+        r"""Gets the page_size of this ShowJobListByProjectIdRequest.
 
         每页显示的条目数量，page_size小于等于100
 
@@ -109,7 +109,7 @@ class ShowJobListByProjectIdRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowJobListByProjectIdRequest.
+        r"""Sets the page_size of this ShowJobListByProjectIdRequest.
 
         每页显示的条目数量，page_size小于等于100
 

@@ -25,7 +25,7 @@ class MysqlVolume:
     }
 
     def __init__(self, size=None):
-        """MysqlVolume
+        r"""MysqlVolume
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MysqlVolume:
 
     @property
     def size(self):
-        """Gets the size of this MysqlVolume.
+        r"""Gets the size of this MysqlVolume.
 
         磁盘大小。默认值为10，单位GB。 取值范围：10~128000，必须为10的整数倍。
 
@@ -53,7 +53,7 @@ class MysqlVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this MysqlVolume.
+        r"""Sets the size of this MysqlVolume.
 
         磁盘大小。默认值为10，单位GB。 取值范围：10~128000，必须为10的整数倍。
 

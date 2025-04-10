@@ -27,7 +27,7 @@ class StopBuildJobRequest:
     }
 
     def __init__(self, job_id=None, build_no=None):
-        """StopBuildJobRequest
+        r"""StopBuildJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StopBuildJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopBuildJobRequest.
+        r"""Gets the job_id of this StopBuildJobRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -59,7 +59,7 @@ class StopBuildJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopBuildJobRequest.
+        r"""Sets the job_id of this StopBuildJobRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -70,7 +70,7 @@ class StopBuildJobRequest:
 
     @property
     def build_no(self):
-        """Gets the build_no of this StopBuildJobRequest.
+        r"""Gets the build_no of this StopBuildJobRequest.
 
         构建任务的构建编号，从1开始，每次构建递增1
 
@@ -81,7 +81,7 @@ class StopBuildJobRequest:
 
     @build_no.setter
     def build_no(self, build_no):
-        """Sets the build_no of this StopBuildJobRequest.
+        r"""Sets the build_no of this StopBuildJobRequest.
 
         构建任务的构建编号，从1开始，每次构建递增1
 

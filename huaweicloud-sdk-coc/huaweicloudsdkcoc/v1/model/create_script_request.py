@@ -31,7 +31,7 @@ class CreateScriptRequest:
     }
 
     def __init__(self, x_project_id=None, x_user_profile=None, x_language=None, body=None):
-        """CreateScriptRequest
+        r"""CreateScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateScriptRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this CreateScriptRequest.
+        r"""Gets the x_project_id of this CreateScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -75,7 +75,7 @@ class CreateScriptRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this CreateScriptRequest.
+        r"""Sets the x_project_id of this CreateScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -86,7 +86,7 @@ class CreateScriptRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this CreateScriptRequest.
+        r"""Gets the x_user_profile of this CreateScriptRequest.
 
         IAM5.0用户信息
 
@@ -97,7 +97,7 @@ class CreateScriptRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this CreateScriptRequest.
+        r"""Sets the x_user_profile of this CreateScriptRequest.
 
         IAM5.0用户信息
 
@@ -108,7 +108,7 @@ class CreateScriptRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateScriptRequest.
+        r"""Gets the x_language of this CreateScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -119,7 +119,7 @@ class CreateScriptRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateScriptRequest.
+        r"""Sets the x_language of this CreateScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -130,7 +130,7 @@ class CreateScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScriptRequest.
+        r"""Gets the body of this CreateScriptRequest.
 
         :return: The body of this CreateScriptRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.AddScriptModel`
@@ -139,7 +139,7 @@ class CreateScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScriptRequest.
+        r"""Sets the body of this CreateScriptRequest.
 
         :param body: The body of this CreateScriptRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.AddScriptModel`

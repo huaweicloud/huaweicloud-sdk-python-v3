@@ -24,7 +24,7 @@ class DeleteInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteInstanceAccessControlAttributeConfigurationResponse
+        r"""DeleteInstanceAccessControlAttributeConfigurationResponse
 
         The model defined in huaweicloud sdk
 

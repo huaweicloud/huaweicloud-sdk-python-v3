@@ -29,7 +29,7 @@ class GovSelector:
     }
 
     def __init__(self, environment=None, app=None, service=None):
-        """GovSelector
+        r"""GovSelector
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GovSelector:
 
     @property
     def environment(self):
-        """Gets the environment of this GovSelector.
+        r"""Gets the environment of this GovSelector.
 
         所属环境
 
@@ -68,7 +68,7 @@ class GovSelector:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this GovSelector.
+        r"""Sets the environment of this GovSelector.
 
         所属环境
 
@@ -79,7 +79,7 @@ class GovSelector:
 
     @property
     def app(self):
-        """Gets the app of this GovSelector.
+        r"""Gets the app of this GovSelector.
 
         所属应用
 
@@ -90,7 +90,7 @@ class GovSelector:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this GovSelector.
+        r"""Sets the app of this GovSelector.
 
         所属应用
 
@@ -101,7 +101,7 @@ class GovSelector:
 
     @property
     def service(self):
-        """Gets the service of this GovSelector.
+        r"""Gets the service of this GovSelector.
 
         可选，治理下发到微服务级别
 
@@ -112,7 +112,7 @@ class GovSelector:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this GovSelector.
+        r"""Sets the service of this GovSelector.
 
         可选，治理下发到微服务级别
 

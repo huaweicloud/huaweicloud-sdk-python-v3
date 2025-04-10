@@ -26,7 +26,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
     }
 
     def __init__(self, executions=None):
-        """ListWorkflowExecutionsResponse
+        r"""ListWorkflowExecutionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
 
     @property
     def executions(self):
-        """Gets the executions of this ListWorkflowExecutionsResponse.
+        r"""Gets the executions of this ListWorkflowExecutionsResponse.
 
         流程执行信息列表
 
@@ -55,7 +55,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
 
     @executions.setter
     def executions(self, executions):
-        """Sets the executions of this ListWorkflowExecutionsResponse.
+        r"""Sets the executions of this ListWorkflowExecutionsResponse.
 
         流程执行信息列表
 

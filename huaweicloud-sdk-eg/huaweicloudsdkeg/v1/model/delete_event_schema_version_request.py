@@ -27,7 +27,7 @@ class DeleteEventSchemaVersionRequest:
     }
 
     def __init__(self, schema_id=None, version=None):
-        """DeleteEventSchemaVersionRequest
+        r"""DeleteEventSchemaVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEventSchemaVersionRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this DeleteEventSchemaVersionRequest.
+        r"""Gets the schema_id of this DeleteEventSchemaVersionRequest.
 
         指定查询的事件模型ID
 
@@ -59,7 +59,7 @@ class DeleteEventSchemaVersionRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this DeleteEventSchemaVersionRequest.
+        r"""Sets the schema_id of this DeleteEventSchemaVersionRequest.
 
         指定查询的事件模型ID
 
@@ -70,7 +70,7 @@ class DeleteEventSchemaVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeleteEventSchemaVersionRequest.
+        r"""Gets the version of this DeleteEventSchemaVersionRequest.
 
         指定查询的事件模型版本号
 
@@ -81,7 +81,7 @@ class DeleteEventSchemaVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeleteEventSchemaVersionRequest.
+        r"""Sets the version of this DeleteEventSchemaVersionRequest.
 
         指定查询的事件模型版本号
 

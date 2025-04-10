@@ -27,7 +27,7 @@ class UnpublishSecurityApplicationRequest:
     }
 
     def __init__(self, id=None, workspace=None):
-        """UnpublishSecurityApplicationRequest
+        r"""UnpublishSecurityApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UnpublishSecurityApplicationRequest:
 
     @property
     def id(self):
-        """Gets the id of this UnpublishSecurityApplicationRequest.
+        r"""Gets the id of this UnpublishSecurityApplicationRequest.
 
         申请工单id
 
@@ -59,7 +59,7 @@ class UnpublishSecurityApplicationRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnpublishSecurityApplicationRequest.
+        r"""Sets the id of this UnpublishSecurityApplicationRequest.
 
         申请工单id
 
@@ -70,7 +70,7 @@ class UnpublishSecurityApplicationRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UnpublishSecurityApplicationRequest.
+        r"""Gets the workspace of this UnpublishSecurityApplicationRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class UnpublishSecurityApplicationRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UnpublishSecurityApplicationRequest.
+        r"""Sets the workspace of this UnpublishSecurityApplicationRequest.
 
         DataArts Studio工作空间ID
 

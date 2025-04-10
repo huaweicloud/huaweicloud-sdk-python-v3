@@ -27,7 +27,7 @@ class DeleteProtectedInstanceRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """DeleteProtectedInstanceRequest
+        r"""DeleteProtectedInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteProtectedInstanceRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this DeleteProtectedInstanceRequest.
+        r"""Gets the protected_instance_id of this DeleteProtectedInstanceRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class DeleteProtectedInstanceRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this DeleteProtectedInstanceRequest.
+        r"""Sets the protected_instance_id of this DeleteProtectedInstanceRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class DeleteProtectedInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteProtectedInstanceRequest.
+        r"""Gets the body of this DeleteProtectedInstanceRequest.
 
         :return: The body of this DeleteProtectedInstanceRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`
@@ -80,7 +80,7 @@ class DeleteProtectedInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteProtectedInstanceRequest.
+        r"""Sets the body of this DeleteProtectedInstanceRequest.
 
         :param body: The body of this DeleteProtectedInstanceRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`

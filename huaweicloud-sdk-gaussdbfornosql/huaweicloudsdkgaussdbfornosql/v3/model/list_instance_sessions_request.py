@@ -27,7 +27,7 @@ class ListInstanceSessionsRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None):
-        """ListInstanceSessionsRequest
+        r"""ListInstanceSessionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListInstanceSessionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceSessionsRequest.
+        r"""Gets the instance_id of this ListInstanceSessionsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ListInstanceSessionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceSessionsRequest.
+        r"""Sets the instance_id of this ListInstanceSessionsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ListInstanceSessionsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListInstanceSessionsRequest.
+        r"""Gets the node_id of this ListInstanceSessionsRequest.
 
         节点ID。
 
@@ -82,7 +82,7 @@ class ListInstanceSessionsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListInstanceSessionsRequest.
+        r"""Sets the node_id of this ListInstanceSessionsRequest.
 
         节点ID。
 

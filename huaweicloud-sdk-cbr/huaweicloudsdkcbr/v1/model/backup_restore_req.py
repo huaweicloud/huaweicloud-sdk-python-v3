@@ -25,7 +25,7 @@ class BackupRestoreReq:
     }
 
     def __init__(self, restore=None):
-        """BackupRestoreReq
+        r"""BackupRestoreReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BackupRestoreReq:
 
     @property
     def restore(self):
-        """Gets the restore of this BackupRestoreReq.
+        r"""Gets the restore of this BackupRestoreReq.
 
         :return: The restore of this BackupRestoreReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupRestore`
@@ -51,7 +51,7 @@ class BackupRestoreReq:
 
     @restore.setter
     def restore(self, restore):
-        """Sets the restore of this BackupRestoreReq.
+        r"""Sets the restore of this BackupRestoreReq.
 
         :param restore: The restore of this BackupRestoreReq.
         :type restore: :class:`huaweicloudsdkcbr.v1.BackupRestore`

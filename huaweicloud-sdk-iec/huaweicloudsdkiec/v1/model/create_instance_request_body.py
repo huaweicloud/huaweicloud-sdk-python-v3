@@ -25,7 +25,7 @@ class CreateInstanceRequestBody:
     }
 
     def __init__(self, server=None):
-        """CreateInstanceRequestBody
+        r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateInstanceRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this CreateInstanceRequestBody.
+        r"""Gets the server of this CreateInstanceRequestBody.
 
         :return: The server of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateInstanceOption`
@@ -51,7 +51,7 @@ class CreateInstanceRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreateInstanceRequestBody.
+        r"""Sets the server of this CreateInstanceRequestBody.
 
         :param server: The server of this CreateInstanceRequestBody.
         :type server: :class:`huaweicloudsdkiec.v1.CreateInstanceOption`

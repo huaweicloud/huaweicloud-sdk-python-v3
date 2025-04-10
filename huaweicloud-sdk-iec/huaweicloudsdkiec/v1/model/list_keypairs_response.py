@@ -26,7 +26,7 @@ class ListKeypairsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListKeypairsResponse
+        r"""ListKeypairsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListKeypairsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListKeypairsResponse.
+        r"""Gets the body of this ListKeypairsResponse.
 
         :return: The body of this ListKeypairsResponse.
         :rtype: list[:class:`huaweicloudsdkiec.v1.SimpleKeypair`]
@@ -53,7 +53,7 @@ class ListKeypairsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListKeypairsResponse.
+        r"""Sets the body of this ListKeypairsResponse.
 
         :param body: The body of this ListKeypairsResponse.
         :type body: list[:class:`huaweicloudsdkiec.v1.SimpleKeypair`]

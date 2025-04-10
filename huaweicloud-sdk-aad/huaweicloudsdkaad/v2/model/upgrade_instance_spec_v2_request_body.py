@@ -27,7 +27,7 @@ class UpgradeInstanceSpecV2RequestBody:
     }
 
     def __init__(self, instance_id=None, upgrade_data=None):
-        """UpgradeInstanceSpecV2RequestBody
+        r"""UpgradeInstanceSpecV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpgradeInstanceSpecV2RequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeInstanceSpecV2RequestBody.
+        r"""Gets the instance_id of this UpgradeInstanceSpecV2RequestBody.
 
         实例id
 
@@ -59,7 +59,7 @@ class UpgradeInstanceSpecV2RequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeInstanceSpecV2RequestBody.
+        r"""Sets the instance_id of this UpgradeInstanceSpecV2RequestBody.
 
         实例id
 
@@ -70,7 +70,7 @@ class UpgradeInstanceSpecV2RequestBody:
 
     @property
     def upgrade_data(self):
-        """Gets the upgrade_data of this UpgradeInstanceSpecV2RequestBody.
+        r"""Gets the upgrade_data of this UpgradeInstanceSpecV2RequestBody.
 
         :return: The upgrade_data of this UpgradeInstanceSpecV2RequestBody.
         :rtype: :class:`huaweicloudsdkaad.v2.UpgradeInstanceData`
@@ -79,7 +79,7 @@ class UpgradeInstanceSpecV2RequestBody:
 
     @upgrade_data.setter
     def upgrade_data(self, upgrade_data):
-        """Sets the upgrade_data of this UpgradeInstanceSpecV2RequestBody.
+        r"""Sets the upgrade_data of this UpgradeInstanceSpecV2RequestBody.
 
         :param upgrade_data: The upgrade_data of this UpgradeInstanceSpecV2RequestBody.
         :type upgrade_data: :class:`huaweicloudsdkaad.v2.UpgradeInstanceData`

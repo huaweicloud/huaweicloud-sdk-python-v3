@@ -35,7 +35,7 @@ class JobInfo:
     }
 
     def __init__(self, id=None, job_type=None, begin_time=None, end_time=None, status=None, sub_jobs_total=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class JobInfo:
 
     @property
     def id(self):
-        """Gets the id of this JobInfo.
+        r"""Gets the id of this JobInfo.
 
         任务ID。
 
@@ -89,7 +89,7 @@ class JobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobInfo.
+        r"""Sets the id of this JobInfo.
 
         任务ID。
 
@@ -100,7 +100,7 @@ class JobInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobInfo.
+        r"""Gets the job_type of this JobInfo.
 
         :return: The job_type of this JobInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -109,7 +109,7 @@ class JobInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobInfo.
+        r"""Sets the job_type of this JobInfo.
 
         :param job_type: The job_type of this JobInfo.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -118,7 +118,7 @@ class JobInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this JobInfo.
+        r"""Gets the begin_time of this JobInfo.
 
         任务创建时间。
 
@@ -129,7 +129,7 @@ class JobInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this JobInfo.
+        r"""Sets the begin_time of this JobInfo.
 
         任务创建时间。
 
@@ -140,7 +140,7 @@ class JobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobInfo.
+        r"""Gets the end_time of this JobInfo.
 
         任务结束时间。
 
@@ -151,7 +151,7 @@ class JobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobInfo.
+        r"""Sets the end_time of this JobInfo.
 
         任务结束时间。
 
@@ -162,7 +162,7 @@ class JobInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobInfo.
+        r"""Gets the status of this JobInfo.
 
         :return: The status of this JobInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -171,7 +171,7 @@ class JobInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobInfo.
+        r"""Sets the status of this JobInfo.
 
         :param status: The status of this JobInfo.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -180,7 +180,7 @@ class JobInfo:
 
     @property
     def sub_jobs_total(self):
-        """Gets the sub_jobs_total of this JobInfo.
+        r"""Gets the sub_jobs_total of this JobInfo.
 
         子任务总数。
 
@@ -191,7 +191,7 @@ class JobInfo:
 
     @sub_jobs_total.setter
     def sub_jobs_total(self, sub_jobs_total):
-        """Sets the sub_jobs_total of this JobInfo.
+        r"""Sets the sub_jobs_total of this JobInfo.
 
         子任务总数。
 

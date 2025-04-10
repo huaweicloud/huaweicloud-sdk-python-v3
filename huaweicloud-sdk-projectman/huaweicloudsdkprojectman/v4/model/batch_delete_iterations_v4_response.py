@@ -24,7 +24,7 @@ class BatchDeleteIterationsV4Response(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteIterationsV4Response
+        r"""BatchDeleteIterationsV4Response
 
         The model defined in huaweicloud sdk
 

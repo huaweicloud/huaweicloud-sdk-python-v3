@@ -32,7 +32,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
     }
 
     def __init__(self, switch_option=None, limit_size=None, trigger_threshold=None, step_percent=None):
-        """ShowAutoEnlargePolicyResponse
+        r"""ShowAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the switch_option of this ShowAutoEnlargePolicyResponse.
 
         是否已开启自动扩容，true为开启
 
@@ -76,7 +76,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the switch_option of this ShowAutoEnlargePolicyResponse.
 
         是否已开启自动扩容，true为开启
 
@@ -87,7 +87,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def limit_size(self):
-        """Gets the limit_size of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the limit_size of this ShowAutoEnlargePolicyResponse.
 
         扩容上限，单位GB
 
@@ -98,7 +98,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @limit_size.setter
     def limit_size(self, limit_size):
-        """Sets the limit_size of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the limit_size of this ShowAutoEnlargePolicyResponse.
 
         扩容上限，单位GB
 
@@ -109,7 +109,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def trigger_threshold(self):
-        """Gets the trigger_threshold of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the trigger_threshold of this ShowAutoEnlargePolicyResponse.
 
         可用空间百分比，小于等于此值或者10GB时触发扩容
 
@@ -120,7 +120,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @trigger_threshold.setter
     def trigger_threshold(self, trigger_threshold):
-        """Sets the trigger_threshold of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the trigger_threshold of this ShowAutoEnlargePolicyResponse.
 
         可用空间百分比，小于等于此值或者10GB时触发扩容
 
@@ -131,7 +131,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def step_percent(self):
-        """Gets the step_percent of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the step_percent of this ShowAutoEnlargePolicyResponse.
 
         每次自动扩容的百分比步长，开启自定义步长功能时返回。
 
@@ -142,7 +142,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @step_percent.setter
     def step_percent(self, step_percent):
-        """Sets the step_percent of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the step_percent of this ShowAutoEnlargePolicyResponse.
 
         每次自动扩容的百分比步长，开启自定义步长功能时返回。
 

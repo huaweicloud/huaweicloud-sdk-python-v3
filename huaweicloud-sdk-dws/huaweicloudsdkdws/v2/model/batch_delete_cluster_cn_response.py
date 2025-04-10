@@ -26,7 +26,7 @@ class BatchDeleteClusterCnResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteClusterCnResponse
+        r"""BatchDeleteClusterCnResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteClusterCnResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteClusterCnResponse.
+        r"""Gets the job_id of this BatchDeleteClusterCnResponse.
 
         批量删除CN节点任务ID
 
@@ -55,7 +55,7 @@ class BatchDeleteClusterCnResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteClusterCnResponse.
+        r"""Sets the job_id of this BatchDeleteClusterCnResponse.
 
         批量删除CN节点任务ID
 

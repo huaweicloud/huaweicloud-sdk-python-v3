@@ -29,7 +29,7 @@ class ListScheduledTasksRecordsRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None):
-        """ListScheduledTasksRecordsRequest
+        r"""ListScheduledTasksRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListScheduledTasksRecordsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListScheduledTasksRecordsRequest.
+        r"""Gets the task_id of this ListScheduledTasksRecordsRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class ListScheduledTasksRecordsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListScheduledTasksRecordsRequest.
+        r"""Sets the task_id of this ListScheduledTasksRecordsRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class ListScheduledTasksRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduledTasksRecordsRequest.
+        r"""Gets the offset of this ListScheduledTasksRecordsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -89,7 +89,7 @@ class ListScheduledTasksRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduledTasksRecordsRequest.
+        r"""Sets the offset of this ListScheduledTasksRecordsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -100,7 +100,7 @@ class ListScheduledTasksRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduledTasksRecordsRequest.
+        r"""Gets the limit of this ListScheduledTasksRecordsRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
@@ -111,7 +111,7 @@ class ListScheduledTasksRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduledTasksRecordsRequest.
+        r"""Sets the limit of this ListScheduledTasksRecordsRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 

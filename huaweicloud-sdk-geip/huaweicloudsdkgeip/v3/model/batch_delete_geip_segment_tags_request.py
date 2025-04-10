@@ -27,7 +27,7 @@ class BatchDeleteGeipSegmentTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchDeleteGeipSegmentTagsRequest
+        r"""BatchDeleteGeipSegmentTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteGeipSegmentTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteGeipSegmentTagsRequest.
+        r"""Gets the resource_id of this BatchDeleteGeipSegmentTagsRequest.
 
         :return: The resource_id of this BatchDeleteGeipSegmentTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class BatchDeleteGeipSegmentTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteGeipSegmentTagsRequest.
+        r"""Sets the resource_id of this BatchDeleteGeipSegmentTagsRequest.
 
         :param resource_id: The resource_id of this BatchDeleteGeipSegmentTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class BatchDeleteGeipSegmentTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteGeipSegmentTagsRequest.
+        r"""Gets the body of this BatchDeleteGeipSegmentTagsRequest.
 
         :return: The body of this BatchDeleteGeipSegmentTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBody`
@@ -76,7 +76,7 @@ class BatchDeleteGeipSegmentTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteGeipSegmentTagsRequest.
+        r"""Sets the body of this BatchDeleteGeipSegmentTagsRequest.
 
         :param body: The body of this BatchDeleteGeipSegmentTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchDeleteV2RequestBody`

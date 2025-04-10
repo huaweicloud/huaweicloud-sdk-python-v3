@@ -31,7 +31,7 @@ class Dubbo:
     }
 
     def __init__(self, service=None, version=None, group=None, methods=None):
-        """Dubbo
+        r"""Dubbo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Dubbo:
 
     @property
     def service(self):
-        """Gets the service of this Dubbo.
+        r"""Gets the service of this Dubbo.
 
         服务名。
 
@@ -75,7 +75,7 @@ class Dubbo:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this Dubbo.
+        r"""Sets the service of this Dubbo.
 
         服务名。
 
@@ -86,7 +86,7 @@ class Dubbo:
 
     @property
     def version(self):
-        """Gets the version of this Dubbo.
+        r"""Gets the version of this Dubbo.
 
         版本号。
 
@@ -97,7 +97,7 @@ class Dubbo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Dubbo.
+        r"""Sets the version of this Dubbo.
 
         版本号。
 
@@ -108,7 +108,7 @@ class Dubbo:
 
     @property
     def group(self):
-        """Gets the group of this Dubbo.
+        r"""Gets the group of this Dubbo.
 
         分组。
 
@@ -119,7 +119,7 @@ class Dubbo:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this Dubbo.
+        r"""Sets the group of this Dubbo.
 
         分组。
 
@@ -130,7 +130,7 @@ class Dubbo:
 
     @property
     def methods(self):
-        """Gets the methods of this Dubbo.
+        r"""Gets the methods of this Dubbo.
 
         dubbo方法列表。
 
@@ -141,7 +141,7 @@ class Dubbo:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this Dubbo.
+        r"""Sets the methods of this Dubbo.
 
         dubbo方法列表。
 

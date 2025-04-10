@@ -35,7 +35,7 @@ class QueryCompareResultReq:
     }
 
     def __init__(self, job_id=None, object_level_compare_id=None, line_compare_id=None, content_compare_id=None, current_page=None, per_page=None):
-        """QueryCompareResultReq
+        r"""QueryCompareResultReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class QueryCompareResultReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryCompareResultReq.
+        r"""Gets the job_id of this QueryCompareResultReq.
 
         任务id。
 
@@ -86,7 +86,7 @@ class QueryCompareResultReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryCompareResultReq.
+        r"""Sets the job_id of this QueryCompareResultReq.
 
         任务id。
 
@@ -97,7 +97,7 @@ class QueryCompareResultReq:
 
     @property
     def object_level_compare_id(self):
-        """Gets the object_level_compare_id of this QueryCompareResultReq.
+        r"""Gets the object_level_compare_id of this QueryCompareResultReq.
 
         请求查询结果的对象级对比任务id。
 
@@ -108,7 +108,7 @@ class QueryCompareResultReq:
 
     @object_level_compare_id.setter
     def object_level_compare_id(self, object_level_compare_id):
-        """Sets the object_level_compare_id of this QueryCompareResultReq.
+        r"""Sets the object_level_compare_id of this QueryCompareResultReq.
 
         请求查询结果的对象级对比任务id。
 
@@ -119,7 +119,7 @@ class QueryCompareResultReq:
 
     @property
     def line_compare_id(self):
-        """Gets the line_compare_id of this QueryCompareResultReq.
+        r"""Gets the line_compare_id of this QueryCompareResultReq.
 
         请求查询结果的行对比任务id。
 
@@ -130,7 +130,7 @@ class QueryCompareResultReq:
 
     @line_compare_id.setter
     def line_compare_id(self, line_compare_id):
-        """Sets the line_compare_id of this QueryCompareResultReq.
+        r"""Sets the line_compare_id of this QueryCompareResultReq.
 
         请求查询结果的行对比任务id。
 
@@ -141,7 +141,7 @@ class QueryCompareResultReq:
 
     @property
     def content_compare_id(self):
-        """Gets the content_compare_id of this QueryCompareResultReq.
+        r"""Gets the content_compare_id of this QueryCompareResultReq.
 
         请求查询结果的内容对比任务id。
 
@@ -152,7 +152,7 @@ class QueryCompareResultReq:
 
     @content_compare_id.setter
     def content_compare_id(self, content_compare_id):
-        """Sets the content_compare_id of this QueryCompareResultReq.
+        r"""Sets the content_compare_id of this QueryCompareResultReq.
 
         请求查询结果的内容对比任务id。
 
@@ -163,7 +163,7 @@ class QueryCompareResultReq:
 
     @property
     def current_page(self):
-        """Gets the current_page of this QueryCompareResultReq.
+        r"""Gets the current_page of this QueryCompareResultReq.
 
         分页查询的当前页码，对查询对比任务的结果生效。
 
@@ -174,7 +174,7 @@ class QueryCompareResultReq:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this QueryCompareResultReq.
+        r"""Sets the current_page of this QueryCompareResultReq.
 
         分页查询的当前页码，对查询对比任务的结果生效。
 
@@ -185,7 +185,7 @@ class QueryCompareResultReq:
 
     @property
     def per_page(self):
-        """Gets the per_page of this QueryCompareResultReq.
+        r"""Gets the per_page of this QueryCompareResultReq.
 
         分页查询的每页个数，对查询对比任务的结果生效。
 
@@ -196,7 +196,7 @@ class QueryCompareResultReq:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this QueryCompareResultReq.
+        r"""Sets the per_page of this QueryCompareResultReq.
 
         分页查询的每页个数，对查询对比任务的结果生效。
 

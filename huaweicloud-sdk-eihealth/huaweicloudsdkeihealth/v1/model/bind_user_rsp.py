@@ -27,7 +27,7 @@ class BindUserRsp:
     }
 
     def __init__(self, id=None, name=None):
-        """BindUserRsp
+        r"""BindUserRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BindUserRsp:
 
     @property
     def id(self):
-        """Gets the id of this BindUserRsp.
+        r"""Gets the id of this BindUserRsp.
 
         项目成员用户id
 
@@ -61,7 +61,7 @@ class BindUserRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BindUserRsp.
+        r"""Sets the id of this BindUserRsp.
 
         项目成员用户id
 
@@ -72,7 +72,7 @@ class BindUserRsp:
 
     @property
     def name(self):
-        """Gets the name of this BindUserRsp.
+        r"""Gets the name of this BindUserRsp.
 
         项目成员用户名
 
@@ -83,7 +83,7 @@ class BindUserRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BindUserRsp.
+        r"""Sets the name of this BindUserRsp.
 
         项目成员用户名
 

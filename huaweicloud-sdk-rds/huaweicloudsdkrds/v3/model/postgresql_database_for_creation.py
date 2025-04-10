@@ -39,7 +39,7 @@ class PostgresqlDatabaseForCreation:
     }
 
     def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None, is_revoke_public_privilege=None, comment=None):
-        """PostgresqlDatabaseForCreation
+        r"""PostgresqlDatabaseForCreation
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def name(self):
-        """Gets the name of this PostgresqlDatabaseForCreation.
+        r"""Gets the name of this PostgresqlDatabaseForCreation.
 
         数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
@@ -102,7 +102,7 @@ class PostgresqlDatabaseForCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgresqlDatabaseForCreation.
+        r"""Sets the name of this PostgresqlDatabaseForCreation.
 
         数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
@@ -113,7 +113,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def character_set(self):
-        """Gets the character_set of this PostgresqlDatabaseForCreation.
+        r"""Gets the character_set of this PostgresqlDatabaseForCreation.
 
         数据库字符集。默认UTF8。
 
@@ -124,7 +124,7 @@ class PostgresqlDatabaseForCreation:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this PostgresqlDatabaseForCreation.
+        r"""Sets the character_set of this PostgresqlDatabaseForCreation.
 
         数据库字符集。默认UTF8。
 
@@ -135,7 +135,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def owner(self):
-        """Gets the owner of this PostgresqlDatabaseForCreation.
+        r"""Gets the owner of this PostgresqlDatabaseForCreation.
 
         数据库所属用户，缺省时默认是root，不能和系统用户重名，且必须是已存在的用户。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
@@ -146,7 +146,7 @@ class PostgresqlDatabaseForCreation:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PostgresqlDatabaseForCreation.
+        r"""Sets the owner of this PostgresqlDatabaseForCreation.
 
         数据库所属用户，缺省时默认是root，不能和系统用户重名，且必须是已存在的用户。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
@@ -157,7 +157,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def template(self):
-        """Gets the template of this PostgresqlDatabaseForCreation.
+        r"""Gets the template of this PostgresqlDatabaseForCreation.
 
         数据库模板名称，可选值template0，template1。默认template1。
 
@@ -168,7 +168,7 @@ class PostgresqlDatabaseForCreation:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this PostgresqlDatabaseForCreation.
+        r"""Sets the template of this PostgresqlDatabaseForCreation.
 
         数据库模板名称，可选值template0，template1。默认template1。
 
@@ -179,7 +179,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def lc_collate(self):
-        """Gets the lc_collate of this PostgresqlDatabaseForCreation.
+        r"""Gets the lc_collate of this PostgresqlDatabaseForCreation.
 
         数据库排序集。默认en_US.UTF-8。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到PostgreSQL，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
@@ -190,7 +190,7 @@ class PostgresqlDatabaseForCreation:
 
     @lc_collate.setter
     def lc_collate(self, lc_collate):
-        """Sets the lc_collate of this PostgresqlDatabaseForCreation.
+        r"""Sets the lc_collate of this PostgresqlDatabaseForCreation.
 
         数据库排序集。默认en_US.UTF-8。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到PostgreSQL，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
@@ -201,7 +201,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def lc_ctype(self):
-        """Gets the lc_ctype of this PostgresqlDatabaseForCreation.
+        r"""Gets the lc_ctype of this PostgresqlDatabaseForCreation.
 
         数据库分类集。默认en_US.UTF-8。
 
@@ -212,7 +212,7 @@ class PostgresqlDatabaseForCreation:
 
     @lc_ctype.setter
     def lc_ctype(self, lc_ctype):
-        """Sets the lc_ctype of this PostgresqlDatabaseForCreation.
+        r"""Sets the lc_ctype of this PostgresqlDatabaseForCreation.
 
         数据库分类集。默认en_US.UTF-8。
 
@@ -223,7 +223,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def is_revoke_public_privilege(self):
-        """Gets the is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
+        r"""Gets the is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
 
         是否回收public schema的PUBLIC CREATE权限。 true，表示回收该权限。 false，表示不回收该权限。 缺省时默认是false。
 
@@ -234,7 +234,7 @@ class PostgresqlDatabaseForCreation:
 
     @is_revoke_public_privilege.setter
     def is_revoke_public_privilege(self, is_revoke_public_privilege):
-        """Sets the is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
+        r"""Sets the is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
 
         是否回收public schema的PUBLIC CREATE权限。 true，表示回收该权限。 false，表示不回收该权限。 缺省时默认是false。
 
@@ -245,7 +245,7 @@ class PostgresqlDatabaseForCreation:
 
     @property
     def comment(self):
-        """Gets the comment of this PostgresqlDatabaseForCreation.
+        r"""Gets the comment of this PostgresqlDatabaseForCreation.
 
         数据库备注。 取值范围：长度1~512个字符。
 
@@ -256,7 +256,7 @@ class PostgresqlDatabaseForCreation:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this PostgresqlDatabaseForCreation.
+        r"""Sets the comment of this PostgresqlDatabaseForCreation.
 
         数据库备注。 取值范围：长度1~512个字符。
 

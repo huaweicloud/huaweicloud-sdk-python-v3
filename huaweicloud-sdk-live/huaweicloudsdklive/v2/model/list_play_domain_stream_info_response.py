@@ -30,7 +30,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
     }
 
     def __init__(self, time=None, data_list=None, x_request_id=None):
-        """ListPlayDomainStreamInfoResponse
+        r"""ListPlayDomainStreamInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
 
     @property
     def time(self):
-        """Gets the time of this ListPlayDomainStreamInfoResponse.
+        r"""Gets the time of this ListPlayDomainStreamInfoResponse.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -69,7 +69,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListPlayDomainStreamInfoResponse.
+        r"""Sets the time of this ListPlayDomainStreamInfoResponse.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -80,7 +80,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListPlayDomainStreamInfoResponse.
+        r"""Gets the data_list of this ListPlayDomainStreamInfoResponse.
 
         采样数据列表
 
@@ -91,7 +91,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListPlayDomainStreamInfoResponse.
+        r"""Sets the data_list of this ListPlayDomainStreamInfoResponse.
 
         采样数据列表
 
@@ -102,7 +102,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlayDomainStreamInfoResponse.
+        r"""Gets the x_request_id of this ListPlayDomainStreamInfoResponse.
 
         :return: The x_request_id of this ListPlayDomainStreamInfoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListPlayDomainStreamInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlayDomainStreamInfoResponse.
+        r"""Sets the x_request_id of this ListPlayDomainStreamInfoResponse.
 
         :param x_request_id: The x_request_id of this ListPlayDomainStreamInfoResponse.
         :type x_request_id: str

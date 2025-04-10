@@ -27,7 +27,7 @@ class AomMappingfilesInfo:
     }
 
     def __init__(self, file_name=None, log_stream_info=None):
-        """AomMappingfilesInfo
+        r"""AomMappingfilesInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AomMappingfilesInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this AomMappingfilesInfo.
+        r"""Gets the file_name of this AomMappingfilesInfo.
 
         路径名
 
@@ -59,7 +59,7 @@ class AomMappingfilesInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this AomMappingfilesInfo.
+        r"""Sets the file_name of this AomMappingfilesInfo.
 
         路径名
 
@@ -70,7 +70,7 @@ class AomMappingfilesInfo:
 
     @property
     def log_stream_info(self):
-        """Gets the log_stream_info of this AomMappingfilesInfo.
+        r"""Gets the log_stream_info of this AomMappingfilesInfo.
 
         :return: The log_stream_info of this AomMappingfilesInfo.
         :rtype: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`
@@ -79,7 +79,7 @@ class AomMappingfilesInfo:
 
     @log_stream_info.setter
     def log_stream_info(self, log_stream_info):
-        """Sets the log_stream_info of this AomMappingfilesInfo.
+        r"""Sets the log_stream_info of this AomMappingfilesInfo.
 
         :param log_stream_info: The log_stream_info of this AomMappingfilesInfo.
         :type log_stream_info: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`

@@ -79,7 +79,7 @@ class SnapshotDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, type=None, cluster_id=None, datastore=None, cluster_name=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None):
-        """SnapshotDetail
+        r"""SnapshotDetail
 
         The model defined in huaweicloud sdk
 
@@ -223,7 +223,7 @@ class SnapshotDetail:
 
     @property
     def id(self):
-        """Gets the id of this SnapshotDetail.
+        r"""Gets the id of this SnapshotDetail.
 
         快照ID。
 
@@ -234,7 +234,7 @@ class SnapshotDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SnapshotDetail.
+        r"""Sets the id of this SnapshotDetail.
 
         快照ID。
 
@@ -245,7 +245,7 @@ class SnapshotDetail:
 
     @property
     def name(self):
-        """Gets the name of this SnapshotDetail.
+        r"""Gets the name of this SnapshotDetail.
 
         快照名称。
 
@@ -256,7 +256,7 @@ class SnapshotDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SnapshotDetail.
+        r"""Sets the name of this SnapshotDetail.
 
         快照名称。
 
@@ -267,7 +267,7 @@ class SnapshotDetail:
 
     @property
     def description(self):
-        """Gets the description of this SnapshotDetail.
+        r"""Gets the description of this SnapshotDetail.
 
         快照描述。
 
@@ -278,7 +278,7 @@ class SnapshotDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SnapshotDetail.
+        r"""Sets the description of this SnapshotDetail.
 
         快照描述。
 
@@ -289,7 +289,7 @@ class SnapshotDetail:
 
     @property
     def started(self):
-        """Gets the started of this SnapshotDetail.
+        r"""Gets the started of this SnapshotDetail.
 
         快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -300,7 +300,7 @@ class SnapshotDetail:
 
     @started.setter
     def started(self, started):
-        """Sets the started of this SnapshotDetail.
+        r"""Sets the started of this SnapshotDetail.
 
         快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -311,7 +311,7 @@ class SnapshotDetail:
 
     @property
     def finished(self):
-        """Gets the finished of this SnapshotDetail.
+        r"""Gets the finished of this SnapshotDetail.
 
         快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -322,7 +322,7 @@ class SnapshotDetail:
 
     @finished.setter
     def finished(self, finished):
-        """Sets the finished of this SnapshotDetail.
+        r"""Sets the finished of this SnapshotDetail.
 
         快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -333,7 +333,7 @@ class SnapshotDetail:
 
     @property
     def size(self):
-        """Gets the size of this SnapshotDetail.
+        r"""Gets the size of this SnapshotDetail.
 
         快照大小，单位GB。
 
@@ -344,7 +344,7 @@ class SnapshotDetail:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SnapshotDetail.
+        r"""Sets the size of this SnapshotDetail.
 
         快照大小，单位GB。
 
@@ -355,7 +355,7 @@ class SnapshotDetail:
 
     @property
     def status(self):
-        """Gets the status of this SnapshotDetail.
+        r"""Gets the status of this SnapshotDetail.
 
         快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
@@ -366,7 +366,7 @@ class SnapshotDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SnapshotDetail.
+        r"""Sets the status of this SnapshotDetail.
 
         快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
@@ -377,7 +377,7 @@ class SnapshotDetail:
 
     @property
     def type(self):
-        """Gets the type of this SnapshotDetail.
+        r"""Gets the type of this SnapshotDetail.
 
         快照创建类型。
 
@@ -388,7 +388,7 @@ class SnapshotDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SnapshotDetail.
+        r"""Sets the type of this SnapshotDetail.
 
         快照创建类型。
 
@@ -399,7 +399,7 @@ class SnapshotDetail:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SnapshotDetail.
+        r"""Gets the cluster_id of this SnapshotDetail.
 
         快照对应的集群ID
 
@@ -410,7 +410,7 @@ class SnapshotDetail:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SnapshotDetail.
+        r"""Sets the cluster_id of this SnapshotDetail.
 
         快照对应的集群ID
 
@@ -421,7 +421,7 @@ class SnapshotDetail:
 
     @property
     def datastore(self):
-        """Gets the datastore of this SnapshotDetail.
+        r"""Gets the datastore of this SnapshotDetail.
 
         :return: The datastore of this SnapshotDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.Datastore`
@@ -430,7 +430,7 @@ class SnapshotDetail:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this SnapshotDetail.
+        r"""Sets the datastore of this SnapshotDetail.
 
         :param datastore: The datastore of this SnapshotDetail.
         :type datastore: :class:`huaweicloudsdkdws.v2.Datastore`
@@ -439,7 +439,7 @@ class SnapshotDetail:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this SnapshotDetail.
+        r"""Gets the cluster_name of this SnapshotDetail.
 
         快照对应的集群名称。
 
@@ -450,7 +450,7 @@ class SnapshotDetail:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this SnapshotDetail.
+        r"""Sets the cluster_name of this SnapshotDetail.
 
         快照对应的集群名称。
 
@@ -461,7 +461,7 @@ class SnapshotDetail:
 
     @property
     def bak_expected_start_time(self):
-        """Gets the bak_expected_start_time of this SnapshotDetail.
+        r"""Gets the bak_expected_start_time of this SnapshotDetail.
 
         快照预计开始时间。
 
@@ -472,7 +472,7 @@ class SnapshotDetail:
 
     @bak_expected_start_time.setter
     def bak_expected_start_time(self, bak_expected_start_time):
-        """Sets the bak_expected_start_time of this SnapshotDetail.
+        r"""Sets the bak_expected_start_time of this SnapshotDetail.
 
         快照预计开始时间。
 
@@ -483,7 +483,7 @@ class SnapshotDetail:
 
     @property
     def bak_keep_day(self):
-        """Gets the bak_keep_day of this SnapshotDetail.
+        r"""Gets the bak_keep_day of this SnapshotDetail.
 
         快照保留天数。
 
@@ -494,7 +494,7 @@ class SnapshotDetail:
 
     @bak_keep_day.setter
     def bak_keep_day(self, bak_keep_day):
-        """Sets the bak_keep_day of this SnapshotDetail.
+        r"""Sets the bak_keep_day of this SnapshotDetail.
 
         快照保留天数。
 
@@ -505,7 +505,7 @@ class SnapshotDetail:
 
     @property
     def bak_period(self):
-        """Gets the bak_period of this SnapshotDetail.
+        r"""Gets the bak_period of this SnapshotDetail.
 
         快照策略。
 
@@ -516,7 +516,7 @@ class SnapshotDetail:
 
     @bak_period.setter
     def bak_period(self, bak_period):
-        """Sets the bak_period of this SnapshotDetail.
+        r"""Sets the bak_period of this SnapshotDetail.
 
         快照策略。
 
@@ -527,7 +527,7 @@ class SnapshotDetail:
 
     @property
     def db_user(self):
-        """Gets the db_user of this SnapshotDetail.
+        r"""Gets the db_user of this SnapshotDetail.
 
         数据库用户。
 
@@ -538,7 +538,7 @@ class SnapshotDetail:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this SnapshotDetail.
+        r"""Sets the db_user of this SnapshotDetail.
 
         数据库用户。
 
@@ -549,7 +549,7 @@ class SnapshotDetail:
 
     @property
     def progress(self):
-        """Gets the progress of this SnapshotDetail.
+        r"""Gets the progress of this SnapshotDetail.
 
         快照进度。
 
@@ -560,7 +560,7 @@ class SnapshotDetail:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this SnapshotDetail.
+        r"""Sets the progress of this SnapshotDetail.
 
         快照进度。
 
@@ -571,7 +571,7 @@ class SnapshotDetail:
 
     @property
     def backup_key(self):
-        """Gets the backup_key of this SnapshotDetail.
+        r"""Gets the backup_key of this SnapshotDetail.
 
         快照BakcupKey。
 
@@ -582,7 +582,7 @@ class SnapshotDetail:
 
     @backup_key.setter
     def backup_key(self, backup_key):
-        """Sets the backup_key of this SnapshotDetail.
+        r"""Sets the backup_key of this SnapshotDetail.
 
         快照BakcupKey。
 
@@ -593,7 +593,7 @@ class SnapshotDetail:
 
     @property
     def prior_backup_key(self):
-        """Gets the prior_backup_key of this SnapshotDetail.
+        r"""Gets the prior_backup_key of this SnapshotDetail.
 
         增量快照，使用的前一个快照BakcupKey。
 
@@ -604,7 +604,7 @@ class SnapshotDetail:
 
     @prior_backup_key.setter
     def prior_backup_key(self, prior_backup_key):
-        """Sets the prior_backup_key of this SnapshotDetail.
+        r"""Sets the prior_backup_key of this SnapshotDetail.
 
         增量快照，使用的前一个快照BakcupKey。
 
@@ -615,7 +615,7 @@ class SnapshotDetail:
 
     @property
     def base_backup_key(self):
-        """Gets the base_backup_key of this SnapshotDetail.
+        r"""Gets the base_backup_key of this SnapshotDetail.
 
         对应全量快照BakcupKey。
 
@@ -626,7 +626,7 @@ class SnapshotDetail:
 
     @base_backup_key.setter
     def base_backup_key(self, base_backup_key):
-        """Sets the base_backup_key of this SnapshotDetail.
+        r"""Sets the base_backup_key of this SnapshotDetail.
 
         对应全量快照BakcupKey。
 
@@ -637,7 +637,7 @@ class SnapshotDetail:
 
     @property
     def backup_device(self):
-        """Gets the backup_device of this SnapshotDetail.
+        r"""Gets the backup_device of this SnapshotDetail.
 
         备份介质。
 
@@ -648,7 +648,7 @@ class SnapshotDetail:
 
     @backup_device.setter
     def backup_device(self, backup_device):
-        """Sets the backup_device of this SnapshotDetail.
+        r"""Sets the backup_device of this SnapshotDetail.
 
         备份介质。
 
@@ -659,7 +659,7 @@ class SnapshotDetail:
 
     @property
     def total_backup_size(self):
-        """Gets the total_backup_size of this SnapshotDetail.
+        r"""Gets the total_backup_size of this SnapshotDetail.
 
         累计快照大小。
 
@@ -670,7 +670,7 @@ class SnapshotDetail:
 
     @total_backup_size.setter
     def total_backup_size(self, total_backup_size):
-        """Sets the total_backup_size of this SnapshotDetail.
+        r"""Sets the total_backup_size of this SnapshotDetail.
 
         累计快照大小。
 
@@ -681,7 +681,7 @@ class SnapshotDetail:
 
     @property
     def base_backup_name(self):
-        """Gets the base_backup_name of this SnapshotDetail.
+        r"""Gets the base_backup_name of this SnapshotDetail.
 
         对应全量快照名称。
 
@@ -692,7 +692,7 @@ class SnapshotDetail:
 
     @base_backup_name.setter
     def base_backup_name(self, base_backup_name):
-        """Sets the base_backup_name of this SnapshotDetail.
+        r"""Sets the base_backup_name of this SnapshotDetail.
 
         对应全量快照名称。
 
@@ -703,7 +703,7 @@ class SnapshotDetail:
 
     @property
     def support_inplace_restore(self):
-        """Gets the support_inplace_restore of this SnapshotDetail.
+        r"""Gets the support_inplace_restore of this SnapshotDetail.
 
         是否支持就地恢复。
 
@@ -714,7 +714,7 @@ class SnapshotDetail:
 
     @support_inplace_restore.setter
     def support_inplace_restore(self, support_inplace_restore):
-        """Sets the support_inplace_restore of this SnapshotDetail.
+        r"""Sets the support_inplace_restore of this SnapshotDetail.
 
         是否支持就地恢复。
 
@@ -725,7 +725,7 @@ class SnapshotDetail:
 
     @property
     def fine_grained_backup(self):
-        """Gets the fine_grained_backup of this SnapshotDetail.
+        r"""Gets the fine_grained_backup of this SnapshotDetail.
 
         是否是细粒度备份。
 
@@ -736,7 +736,7 @@ class SnapshotDetail:
 
     @fine_grained_backup.setter
     def fine_grained_backup(self, fine_grained_backup):
-        """Sets the fine_grained_backup of this SnapshotDetail.
+        r"""Sets the fine_grained_backup of this SnapshotDetail.
 
         是否是细粒度备份。
 
@@ -747,7 +747,7 @@ class SnapshotDetail:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this SnapshotDetail.
+        r"""Gets the backup_level of this SnapshotDetail.
 
         备份级别。
 
@@ -758,7 +758,7 @@ class SnapshotDetail:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this SnapshotDetail.
+        r"""Sets the backup_level of this SnapshotDetail.
 
         备份级别。
 
@@ -769,7 +769,7 @@ class SnapshotDetail:
 
     @property
     def fine_grained_backup_detail(self):
-        """Gets the fine_grained_backup_detail of this SnapshotDetail.
+        r"""Gets the fine_grained_backup_detail of this SnapshotDetail.
 
         :return: The fine_grained_backup_detail of this SnapshotDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
@@ -778,7 +778,7 @@ class SnapshotDetail:
 
     @fine_grained_backup_detail.setter
     def fine_grained_backup_detail(self, fine_grained_backup_detail):
-        """Sets the fine_grained_backup_detail of this SnapshotDetail.
+        r"""Sets the fine_grained_backup_detail of this SnapshotDetail.
 
         :param fine_grained_backup_detail: The fine_grained_backup_detail of this SnapshotDetail.
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
@@ -787,7 +787,7 @@ class SnapshotDetail:
 
     @property
     def guest_agent_version(self):
-        """Gets the guest_agent_version of this SnapshotDetail.
+        r"""Gets the guest_agent_version of this SnapshotDetail.
 
         guestAgent版本。
 
@@ -798,7 +798,7 @@ class SnapshotDetail:
 
     @guest_agent_version.setter
     def guest_agent_version(self, guest_agent_version):
-        """Sets the guest_agent_version of this SnapshotDetail.
+        r"""Sets the guest_agent_version of this SnapshotDetail.
 
         guestAgent版本。
 
@@ -809,7 +809,7 @@ class SnapshotDetail:
 
     @property
     def cluster_status(self):
-        """Gets the cluster_status of this SnapshotDetail.
+        r"""Gets the cluster_status of this SnapshotDetail.
 
         集群状态。
 
@@ -820,7 +820,7 @@ class SnapshotDetail:
 
     @cluster_status.setter
     def cluster_status(self, cluster_status):
-        """Sets the cluster_status of this SnapshotDetail.
+        r"""Sets the cluster_status of this SnapshotDetail.
 
         集群状态。
 

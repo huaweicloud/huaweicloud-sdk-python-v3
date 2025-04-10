@@ -27,7 +27,7 @@ class ExchangeInstanceIpRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """ExchangeInstanceIpRequest
+        r"""ExchangeInstanceIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExchangeInstanceIpRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExchangeInstanceIpRequest.
+        r"""Gets the task_id of this ExchangeInstanceIpRequest.
 
         任务ID
 
@@ -60,7 +60,7 @@ class ExchangeInstanceIpRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExchangeInstanceIpRequest.
+        r"""Sets the task_id of this ExchangeInstanceIpRequest.
 
         任务ID
 
@@ -71,7 +71,7 @@ class ExchangeInstanceIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExchangeInstanceIpRequest.
+        r"""Gets the body of this ExchangeInstanceIpRequest.
 
         :return: The body of this ExchangeInstanceIpRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.IpExchangeRequest`
@@ -80,7 +80,7 @@ class ExchangeInstanceIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExchangeInstanceIpRequest.
+        r"""Sets the body of this ExchangeInstanceIpRequest.
 
         :param body: The body of this ExchangeInstanceIpRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.IpExchangeRequest`

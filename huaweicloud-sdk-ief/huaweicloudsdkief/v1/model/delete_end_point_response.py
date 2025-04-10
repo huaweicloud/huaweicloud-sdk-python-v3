@@ -24,7 +24,7 @@ class DeleteEndPointResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEndPointResponse
+        r"""DeleteEndPointResponse
 
         The model defined in huaweicloud sdk
 

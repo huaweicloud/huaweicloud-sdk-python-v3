@@ -24,7 +24,7 @@ class BatchDeleteScalingConfigsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteScalingConfigsResponse
+        r"""BatchDeleteScalingConfigsResponse
 
         The model defined in huaweicloud sdk
 

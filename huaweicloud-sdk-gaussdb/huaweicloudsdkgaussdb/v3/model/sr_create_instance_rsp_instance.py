@@ -55,7 +55,7 @@ class SrCreateInstanceRspInstance:
     }
 
     def __init__(self, id=None, az_code=None, az_mode=None, name=None, engine=None, vpc_id=None, security_group_id=None, sub_net_id=None, db_user=None, port=None, ha_mode=None, pay_info=None, enable_ssl=None, status=None, region=None, tags_info=None):
-        """SrCreateInstanceRspInstance
+        r"""SrCreateInstanceRspInstance
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def id(self):
-        """Gets the id of this SrCreateInstanceRspInstance.
+        r"""Gets the id of this SrCreateInstanceRspInstance.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -159,7 +159,7 @@ class SrCreateInstanceRspInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SrCreateInstanceRspInstance.
+        r"""Sets the id of this SrCreateInstanceRspInstance.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -170,7 +170,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def az_code(self):
-        """Gets the az_code of this SrCreateInstanceRspInstance.
+        r"""Gets the az_code of this SrCreateInstanceRspInstance.
 
         可用区码。
 
@@ -181,7 +181,7 @@ class SrCreateInstanceRspInstance:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this SrCreateInstanceRspInstance.
+        r"""Sets the az_code of this SrCreateInstanceRspInstance.
 
         可用区码。
 
@@ -192,7 +192,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this SrCreateInstanceRspInstance.
+        r"""Gets the az_mode of this SrCreateInstanceRspInstance.
 
         可用区模式。  取值范围：  single：单可用区。  multi：多可用区。
 
@@ -203,7 +203,7 @@ class SrCreateInstanceRspInstance:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this SrCreateInstanceRspInstance.
+        r"""Sets the az_mode of this SrCreateInstanceRspInstance.
 
         可用区模式。  取值范围：  single：单可用区。  multi：多可用区。
 
@@ -214,7 +214,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def name(self):
-        """Gets the name of this SrCreateInstanceRspInstance.
+        r"""Gets the name of this SrCreateInstanceRspInstance.
 
         实例名称。
 
@@ -225,7 +225,7 @@ class SrCreateInstanceRspInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SrCreateInstanceRspInstance.
+        r"""Sets the name of this SrCreateInstanceRspInstance.
 
         实例名称。
 
@@ -236,7 +236,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def engine(self):
-        """Gets the engine of this SrCreateInstanceRspInstance.
+        r"""Gets the engine of this SrCreateInstanceRspInstance.
 
         :return: The engine of this SrCreateInstanceRspInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceEngine`
@@ -245,7 +245,7 @@ class SrCreateInstanceRspInstance:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this SrCreateInstanceRspInstance.
+        r"""Sets the engine of this SrCreateInstanceRspInstance.
 
         :param engine: The engine of this SrCreateInstanceRspInstance.
         :type engine: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceEngine`
@@ -254,7 +254,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SrCreateInstanceRspInstance.
+        r"""Gets the vpc_id of this SrCreateInstanceRspInstance.
 
         虚拟私有云ID。
 
@@ -265,7 +265,7 @@ class SrCreateInstanceRspInstance:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SrCreateInstanceRspInstance.
+        r"""Sets the vpc_id of this SrCreateInstanceRspInstance.
 
         虚拟私有云ID。
 
@@ -276,7 +276,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this SrCreateInstanceRspInstance.
+        r"""Gets the security_group_id of this SrCreateInstanceRspInstance.
 
         安全组ID。
 
@@ -287,7 +287,7 @@ class SrCreateInstanceRspInstance:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this SrCreateInstanceRspInstance.
+        r"""Sets the security_group_id of this SrCreateInstanceRspInstance.
 
         安全组ID。
 
@@ -298,7 +298,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def sub_net_id(self):
-        """Gets the sub_net_id of this SrCreateInstanceRspInstance.
+        r"""Gets the sub_net_id of this SrCreateInstanceRspInstance.
 
         子网ID。
 
@@ -309,7 +309,7 @@ class SrCreateInstanceRspInstance:
 
     @sub_net_id.setter
     def sub_net_id(self, sub_net_id):
-        """Sets the sub_net_id of this SrCreateInstanceRspInstance.
+        r"""Sets the sub_net_id of this SrCreateInstanceRspInstance.
 
         子网ID。
 
@@ -320,7 +320,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def db_user(self):
-        """Gets the db_user of this SrCreateInstanceRspInstance.
+        r"""Gets the db_user of this SrCreateInstanceRspInstance.
 
         数据库用户。默认root。
 
@@ -331,7 +331,7 @@ class SrCreateInstanceRspInstance:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this SrCreateInstanceRspInstance.
+        r"""Sets the db_user of this SrCreateInstanceRspInstance.
 
         数据库用户。默认root。
 
@@ -342,7 +342,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def port(self):
-        """Gets the port of this SrCreateInstanceRspInstance.
+        r"""Gets the port of this SrCreateInstanceRspInstance.
 
         数据库端口号。默认3306。
 
@@ -353,7 +353,7 @@ class SrCreateInstanceRspInstance:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this SrCreateInstanceRspInstance.
+        r"""Sets the port of this SrCreateInstanceRspInstance.
 
         数据库端口号。默认3306。
 
@@ -364,7 +364,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this SrCreateInstanceRspInstance.
+        r"""Gets the ha_mode of this SrCreateInstanceRspInstance.
 
         部署模式。
 
@@ -375,7 +375,7 @@ class SrCreateInstanceRspInstance:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this SrCreateInstanceRspInstance.
+        r"""Sets the ha_mode of this SrCreateInstanceRspInstance.
 
         部署模式。
 
@@ -386,7 +386,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def pay_info(self):
-        """Gets the pay_info of this SrCreateInstanceRspInstance.
+        r"""Gets the pay_info of this SrCreateInstanceRspInstance.
 
         :return: The pay_info of this SrCreateInstanceRspInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstancePayInfo`
@@ -395,7 +395,7 @@ class SrCreateInstanceRspInstance:
 
     @pay_info.setter
     def pay_info(self, pay_info):
-        """Sets the pay_info of this SrCreateInstanceRspInstance.
+        r"""Sets the pay_info of this SrCreateInstanceRspInstance.
 
         :param pay_info: The pay_info of this SrCreateInstanceRspInstance.
         :type pay_info: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstancePayInfo`
@@ -404,7 +404,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this SrCreateInstanceRspInstance.
+        r"""Gets the enable_ssl of this SrCreateInstanceRspInstance.
 
         SSL开关。
 
@@ -415,7 +415,7 @@ class SrCreateInstanceRspInstance:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this SrCreateInstanceRspInstance.
+        r"""Sets the enable_ssl of this SrCreateInstanceRspInstance.
 
         SSL开关。
 
@@ -426,7 +426,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def status(self):
-        """Gets the status of this SrCreateInstanceRspInstance.
+        r"""Gets the status of this SrCreateInstanceRspInstance.
 
         实例状态。
 
@@ -437,7 +437,7 @@ class SrCreateInstanceRspInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SrCreateInstanceRspInstance.
+        r"""Sets the status of this SrCreateInstanceRspInstance.
 
         实例状态。
 
@@ -448,7 +448,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def region(self):
-        """Gets the region of this SrCreateInstanceRspInstance.
+        r"""Gets the region of this SrCreateInstanceRspInstance.
 
         实例所在区域。
 
@@ -459,7 +459,7 @@ class SrCreateInstanceRspInstance:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SrCreateInstanceRspInstance.
+        r"""Sets the region of this SrCreateInstanceRspInstance.
 
         实例所在区域。
 
@@ -470,7 +470,7 @@ class SrCreateInstanceRspInstance:
 
     @property
     def tags_info(self):
-        """Gets the tags_info of this SrCreateInstanceRspInstance.
+        r"""Gets the tags_info of this SrCreateInstanceRspInstance.
 
         :return: The tags_info of this SrCreateInstanceRspInstance.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceTagsInfo`
@@ -479,7 +479,7 @@ class SrCreateInstanceRspInstance:
 
     @tags_info.setter
     def tags_info(self, tags_info):
-        """Sets the tags_info of this SrCreateInstanceRspInstance.
+        r"""Sets the tags_info of this SrCreateInstanceRspInstance.
 
         :param tags_info: The tags_info of this SrCreateInstanceRspInstance.
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstanceTagsInfo`

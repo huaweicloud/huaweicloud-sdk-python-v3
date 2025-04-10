@@ -31,7 +31,7 @@ class UnsubscribeVolume:
     }
 
     def __init__(self, volume_id=None, order_id=None, result=None, fail_reason=None):
-        """UnsubscribeVolume
+        r"""UnsubscribeVolume
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UnsubscribeVolume:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this UnsubscribeVolume.
+        r"""Gets the volume_id of this UnsubscribeVolume.
 
         卷id对应的结果
 
@@ -73,7 +73,7 @@ class UnsubscribeVolume:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this UnsubscribeVolume.
+        r"""Sets the volume_id of this UnsubscribeVolume.
 
         卷id对应的结果
 
@@ -84,7 +84,7 @@ class UnsubscribeVolume:
 
     @property
     def order_id(self):
-        """Gets the order_id of this UnsubscribeVolume.
+        r"""Gets the order_id of this UnsubscribeVolume.
 
         卷id对应的退订订单id，如果是已到期的云硬盘退订，则不显示此字段。
 
@@ -95,7 +95,7 @@ class UnsubscribeVolume:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UnsubscribeVolume.
+        r"""Sets the order_id of this UnsubscribeVolume.
 
         卷id对应的退订订单id，如果是已到期的云硬盘退订，则不显示此字段。
 
@@ -106,7 +106,7 @@ class UnsubscribeVolume:
 
     @property
     def result(self):
-        """Gets the result of this UnsubscribeVolume.
+        r"""Gets the result of this UnsubscribeVolume.
 
         volume_id对应的退订结果，只有SUCCESS 和 FAIL两种结果。
 
@@ -117,7 +117,7 @@ class UnsubscribeVolume:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UnsubscribeVolume.
+        r"""Sets the result of this UnsubscribeVolume.
 
         volume_id对应的退订结果，只有SUCCESS 和 FAIL两种结果。
 
@@ -128,7 +128,7 @@ class UnsubscribeVolume:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this UnsubscribeVolume.
+        r"""Gets the fail_reason of this UnsubscribeVolume.
 
         当result为FAIL时，此字段显示具体的失败原因。 result为SUCCESS时，不显示此字段。
 
@@ -139,7 +139,7 @@ class UnsubscribeVolume:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this UnsubscribeVolume.
+        r"""Sets the fail_reason of this UnsubscribeVolume.
 
         当result为FAIL时，此字段显示具体的失败原因。 result为SUCCESS时，不显示此字段。
 

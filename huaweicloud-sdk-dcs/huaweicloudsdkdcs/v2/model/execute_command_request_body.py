@@ -29,7 +29,7 @@ class ExecuteCommandRequestBody:
     }
 
     def __init__(self, client_id=None, command=None, database=None):
-        """ExecuteCommandRequestBody
+        r"""ExecuteCommandRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExecuteCommandRequestBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ExecuteCommandRequestBody.
+        r"""Gets the client_id of this ExecuteCommandRequestBody.
 
         客户端ID
 
@@ -68,7 +68,7 @@ class ExecuteCommandRequestBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ExecuteCommandRequestBody.
+        r"""Sets the client_id of this ExecuteCommandRequestBody.
 
         客户端ID
 
@@ -79,7 +79,7 @@ class ExecuteCommandRequestBody:
 
     @property
     def command(self):
-        """Gets the command of this ExecuteCommandRequestBody.
+        r"""Gets the command of this ExecuteCommandRequestBody.
 
         命令
 
@@ -90,7 +90,7 @@ class ExecuteCommandRequestBody:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ExecuteCommandRequestBody.
+        r"""Sets the command of this ExecuteCommandRequestBody.
 
         命令
 
@@ -101,7 +101,7 @@ class ExecuteCommandRequestBody:
 
     @property
     def database(self):
-        """Gets the database of this ExecuteCommandRequestBody.
+        r"""Gets the database of this ExecuteCommandRequestBody.
 
         数据库编号
 
@@ -112,7 +112,7 @@ class ExecuteCommandRequestBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ExecuteCommandRequestBody.
+        r"""Sets the database of this ExecuteCommandRequestBody.
 
         数据库编号
 

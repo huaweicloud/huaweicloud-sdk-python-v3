@@ -27,7 +27,7 @@ class BucketAuthorizedReq:
     }
 
     def __init__(self, bucket=None, operation=None):
-        """BucketAuthorizedReq
+        r"""BucketAuthorizedReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BucketAuthorizedReq:
 
     @property
     def bucket(self):
-        """Gets the bucket of this BucketAuthorizedReq.
+        r"""Gets the bucket of this BucketAuthorizedReq.
 
         桶名 
 
@@ -59,7 +59,7 @@ class BucketAuthorizedReq:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this BucketAuthorizedReq.
+        r"""Sets the bucket of this BucketAuthorizedReq.
 
         桶名 
 
@@ -70,7 +70,7 @@ class BucketAuthorizedReq:
 
     @property
     def operation(self):
-        """Gets the operation of this BucketAuthorizedReq.
+        r"""Gets the operation of this BucketAuthorizedReq.
 
         操作标记，取值[0,1]，0表示取消授权，1表示授权 
 
@@ -81,7 +81,7 @@ class BucketAuthorizedReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this BucketAuthorizedReq.
+        r"""Sets the operation of this BucketAuthorizedReq.
 
         操作标记，取值[0,1]，0表示取消授权，1表示授权 
 

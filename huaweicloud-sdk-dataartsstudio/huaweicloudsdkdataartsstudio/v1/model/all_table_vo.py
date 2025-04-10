@@ -123,7 +123,7 @@ class AllTableVO:
     }
 
     def __init__(self, id=None, name=None, tb_logic_guid=None, quality_id=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, tb_guid=None, code=None, create_by=None, tenant_id=None, description=None, status=None, biz_type=None, create_time=None, update_time=None, db_name=None, dw_type=None, queue_name=None, schema=None, l1=None, l2=None, l3=None, l1_id=None, l2_id=None, l3_id=None, new_biz=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, materialization=None, publish_to_dlm=None, summary_status=None, standard_count=None, alias=None, api_id=None, workspace_id=None, workspace_name=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None):
-        """AllTableVO
+        r"""AllTableVO
 
         The model defined in huaweicloud sdk
 
@@ -386,7 +386,7 @@ class AllTableVO:
 
     @property
     def id(self):
-        """Gets the id of this AllTableVO.
+        r"""Gets the id of this AllTableVO.
 
         l1的ID，ID字符串。
 
@@ -397,7 +397,7 @@ class AllTableVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AllTableVO.
+        r"""Sets the id of this AllTableVO.
 
         l1的ID，ID字符串。
 
@@ -408,7 +408,7 @@ class AllTableVO:
 
     @property
     def name(self):
-        """Gets the name of this AllTableVO.
+        r"""Gets the name of this AllTableVO.
 
         l1名称。
 
@@ -419,7 +419,7 @@ class AllTableVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AllTableVO.
+        r"""Sets the name of this AllTableVO.
 
         l1名称。
 
@@ -430,7 +430,7 @@ class AllTableVO:
 
     @property
     def tb_logic_guid(self):
-        """Gets the tb_logic_guid of this AllTableVO.
+        r"""Gets the tb_logic_guid of this AllTableVO.
 
         表发布后对应的逻辑实体guid。
 
@@ -441,7 +441,7 @@ class AllTableVO:
 
     @tb_logic_guid.setter
     def tb_logic_guid(self, tb_logic_guid):
-        """Sets the tb_logic_guid of this AllTableVO.
+        r"""Sets the tb_logic_guid of this AllTableVO.
 
         表发布后对应的逻辑实体guid。
 
@@ -452,7 +452,7 @@ class AllTableVO:
 
     @property
     def quality_id(self):
-        """Gets the quality_id of this AllTableVO.
+        r"""Gets the quality_id of this AllTableVO.
 
         质量ID。
 
@@ -463,7 +463,7 @@ class AllTableVO:
 
     @quality_id.setter
     def quality_id(self, quality_id):
-        """Sets the quality_id of this AllTableVO.
+        r"""Sets the quality_id of this AllTableVO.
 
         质量ID。
 
@@ -474,7 +474,7 @@ class AllTableVO:
 
     @property
     def reversed(self):
-        """Gets the reversed of this AllTableVO.
+        r"""Gets the reversed of this AllTableVO.
 
         是否是逆向的。
 
@@ -485,7 +485,7 @@ class AllTableVO:
 
     @reversed.setter
     def reversed(self, reversed):
-        """Sets the reversed of this AllTableVO.
+        r"""Sets the reversed of this AllTableVO.
 
         是否是逆向的。
 
@@ -496,7 +496,7 @@ class AllTableVO:
 
     @property
     def partition_conf(self):
-        """Gets the partition_conf of this AllTableVO.
+        r"""Gets the partition_conf of this AllTableVO.
 
         分区表达式。
 
@@ -507,7 +507,7 @@ class AllTableVO:
 
     @partition_conf.setter
     def partition_conf(self, partition_conf):
-        """Sets the partition_conf of this AllTableVO.
+        r"""Sets the partition_conf of this AllTableVO.
 
         分区表达式。
 
@@ -518,7 +518,7 @@ class AllTableVO:
 
     @property
     def dirty_out_switch(self):
-        """Gets the dirty_out_switch of this AllTableVO.
+        r"""Gets the dirty_out_switch of this AllTableVO.
 
         异常数据输出开关。
 
@@ -529,7 +529,7 @@ class AllTableVO:
 
     @dirty_out_switch.setter
     def dirty_out_switch(self, dirty_out_switch):
-        """Sets the dirty_out_switch of this AllTableVO.
+        r"""Sets the dirty_out_switch of this AllTableVO.
 
         异常数据输出开关。
 
@@ -540,7 +540,7 @@ class AllTableVO:
 
     @property
     def dirty_out_database(self):
-        """Gets the dirty_out_database of this AllTableVO.
+        r"""Gets the dirty_out_database of this AllTableVO.
 
         异常数据输出库。
 
@@ -551,7 +551,7 @@ class AllTableVO:
 
     @dirty_out_database.setter
     def dirty_out_database(self, dirty_out_database):
-        """Sets the dirty_out_database of this AllTableVO.
+        r"""Sets the dirty_out_database of this AllTableVO.
 
         异常数据输出库。
 
@@ -562,7 +562,7 @@ class AllTableVO:
 
     @property
     def dirty_out_prefix(self):
-        """Gets the dirty_out_prefix of this AllTableVO.
+        r"""Gets the dirty_out_prefix of this AllTableVO.
 
         异常表前缀。
 
@@ -573,7 +573,7 @@ class AllTableVO:
 
     @dirty_out_prefix.setter
     def dirty_out_prefix(self, dirty_out_prefix):
-        """Sets the dirty_out_prefix of this AllTableVO.
+        r"""Sets the dirty_out_prefix of this AllTableVO.
 
         异常表前缀。
 
@@ -584,7 +584,7 @@ class AllTableVO:
 
     @property
     def dirty_out_suffix(self):
-        """Gets the dirty_out_suffix of this AllTableVO.
+        r"""Gets the dirty_out_suffix of this AllTableVO.
 
         异常表后缀。
 
@@ -595,7 +595,7 @@ class AllTableVO:
 
     @dirty_out_suffix.setter
     def dirty_out_suffix(self, dirty_out_suffix):
-        """Sets the dirty_out_suffix of this AllTableVO.
+        r"""Sets the dirty_out_suffix of this AllTableVO.
 
         异常表后缀。
 
@@ -606,7 +606,7 @@ class AllTableVO:
 
     @property
     def tb_guid(self):
-        """Gets the tb_guid of this AllTableVO.
+        r"""Gets the tb_guid of this AllTableVO.
 
         表发布后对应的物理表guid。
 
@@ -617,7 +617,7 @@ class AllTableVO:
 
     @tb_guid.setter
     def tb_guid(self, tb_guid):
-        """Sets the tb_guid of this AllTableVO.
+        r"""Sets the tb_guid of this AllTableVO.
 
         表发布后对应的物理表guid。
 
@@ -628,7 +628,7 @@ class AllTableVO:
 
     @property
     def code(self):
-        """Gets the code of this AllTableVO.
+        r"""Gets the code of this AllTableVO.
 
         编码。
 
@@ -639,7 +639,7 @@ class AllTableVO:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AllTableVO.
+        r"""Sets the code of this AllTableVO.
 
         编码。
 
@@ -650,7 +650,7 @@ class AllTableVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this AllTableVO.
+        r"""Gets the create_by of this AllTableVO.
 
         创建人。
 
@@ -661,7 +661,7 @@ class AllTableVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this AllTableVO.
+        r"""Sets the create_by of this AllTableVO.
 
         创建人。
 
@@ -672,7 +672,7 @@ class AllTableVO:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this AllTableVO.
+        r"""Gets the tenant_id of this AllTableVO.
 
         租户ID。
 
@@ -683,7 +683,7 @@ class AllTableVO:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this AllTableVO.
+        r"""Sets the tenant_id of this AllTableVO.
 
         租户ID。
 
@@ -694,7 +694,7 @@ class AllTableVO:
 
     @property
     def description(self):
-        """Gets the description of this AllTableVO.
+        r"""Gets the description of this AllTableVO.
 
         描述。
 
@@ -705,7 +705,7 @@ class AllTableVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AllTableVO.
+        r"""Sets the description of this AllTableVO.
 
         描述。
 
@@ -716,7 +716,7 @@ class AllTableVO:
 
     @property
     def status(self):
-        """Gets the status of this AllTableVO.
+        r"""Gets the status of this AllTableVO.
 
         :return: The status of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -725,7 +725,7 @@ class AllTableVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AllTableVO.
+        r"""Sets the status of this AllTableVO.
 
         :param status: The status of this AllTableVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -734,7 +734,7 @@ class AllTableVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this AllTableVO.
+        r"""Gets the biz_type of this AllTableVO.
 
         :return: The biz_type of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -743,7 +743,7 @@ class AllTableVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this AllTableVO.
+        r"""Sets the biz_type of this AllTableVO.
 
         :param biz_type: The biz_type of this AllTableVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -752,7 +752,7 @@ class AllTableVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AllTableVO.
+        r"""Gets the create_time of this AllTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -763,7 +763,7 @@ class AllTableVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AllTableVO.
+        r"""Sets the create_time of this AllTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -774,7 +774,7 @@ class AllTableVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AllTableVO.
+        r"""Gets the update_time of this AllTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -785,7 +785,7 @@ class AllTableVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AllTableVO.
+        r"""Sets the update_time of this AllTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -796,7 +796,7 @@ class AllTableVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this AllTableVO.
+        r"""Gets the db_name of this AllTableVO.
 
         数据库名。
 
@@ -807,7 +807,7 @@ class AllTableVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this AllTableVO.
+        r"""Sets the db_name of this AllTableVO.
 
         数据库名。
 
@@ -818,7 +818,7 @@ class AllTableVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this AllTableVO.
+        r"""Gets the dw_type of this AllTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -829,7 +829,7 @@ class AllTableVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this AllTableVO.
+        r"""Sets the dw_type of this AllTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -840,7 +840,7 @@ class AllTableVO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this AllTableVO.
+        r"""Gets the queue_name of this AllTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -851,7 +851,7 @@ class AllTableVO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this AllTableVO.
+        r"""Sets the queue_name of this AllTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -862,7 +862,7 @@ class AllTableVO:
 
     @property
     def schema(self):
-        """Gets the schema of this AllTableVO.
+        r"""Gets the schema of this AllTableVO.
 
         DWS类型需要。
 
@@ -873,7 +873,7 @@ class AllTableVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this AllTableVO.
+        r"""Sets the schema of this AllTableVO.
 
         DWS类型需要。
 
@@ -884,7 +884,7 @@ class AllTableVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this AllTableVO.
+        r"""Gets the l1 of this AllTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -895,7 +895,7 @@ class AllTableVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this AllTableVO.
+        r"""Sets the l1 of this AllTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -906,7 +906,7 @@ class AllTableVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this AllTableVO.
+        r"""Gets the l2 of this AllTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -917,7 +917,7 @@ class AllTableVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this AllTableVO.
+        r"""Sets the l2 of this AllTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -928,7 +928,7 @@ class AllTableVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this AllTableVO.
+        r"""Gets the l3 of this AllTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -939,7 +939,7 @@ class AllTableVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this AllTableVO.
+        r"""Sets the l3 of this AllTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -950,7 +950,7 @@ class AllTableVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this AllTableVO.
+        r"""Gets the l1_id of this AllTableVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -961,7 +961,7 @@ class AllTableVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this AllTableVO.
+        r"""Sets the l1_id of this AllTableVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -972,7 +972,7 @@ class AllTableVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this AllTableVO.
+        r"""Gets the l2_id of this AllTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -983,7 +983,7 @@ class AllTableVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this AllTableVO.
+        r"""Sets the l2_id of this AllTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -994,7 +994,7 @@ class AllTableVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this AllTableVO.
+        r"""Gets the l3_id of this AllTableVO.
 
         业务对象ID，只读，ID字符串。
 
@@ -1005,7 +1005,7 @@ class AllTableVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this AllTableVO.
+        r"""Sets the l3_id of this AllTableVO.
 
         业务对象ID，只读，ID字符串。
 
@@ -1016,7 +1016,7 @@ class AllTableVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this AllTableVO.
+        r"""Gets the new_biz of this AllTableVO.
 
         :return: The new_biz of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1025,7 +1025,7 @@ class AllTableVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this AllTableVO.
+        r"""Sets the new_biz of this AllTableVO.
 
         :param new_biz: The new_biz of this AllTableVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1034,7 +1034,7 @@ class AllTableVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this AllTableVO.
+        r"""Gets the physical_table of this AllTableVO.
 
         :return: The physical_table of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1043,7 +1043,7 @@ class AllTableVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this AllTableVO.
+        r"""Sets the physical_table of this AllTableVO.
 
         :param physical_table: The physical_table of this AllTableVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1052,7 +1052,7 @@ class AllTableVO:
 
     @property
     def dev_physical_table(self):
-        """Gets the dev_physical_table of this AllTableVO.
+        r"""Gets the dev_physical_table of this AllTableVO.
 
         :return: The dev_physical_table of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1061,7 +1061,7 @@ class AllTableVO:
 
     @dev_physical_table.setter
     def dev_physical_table(self, dev_physical_table):
-        """Sets the dev_physical_table of this AllTableVO.
+        r"""Sets the dev_physical_table of this AllTableVO.
 
         :param dev_physical_table: The dev_physical_table of this AllTableVO.
         :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1070,7 +1070,7 @@ class AllTableVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this AllTableVO.
+        r"""Gets the technical_asset of this AllTableVO.
 
         :return: The technical_asset of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1079,7 +1079,7 @@ class AllTableVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this AllTableVO.
+        r"""Sets the technical_asset of this AllTableVO.
 
         :param technical_asset: The technical_asset of this AllTableVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1088,7 +1088,7 @@ class AllTableVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this AllTableVO.
+        r"""Gets the business_asset of this AllTableVO.
 
         :return: The business_asset of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1097,7 +1097,7 @@ class AllTableVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this AllTableVO.
+        r"""Sets the business_asset of this AllTableVO.
 
         :param business_asset: The business_asset of this AllTableVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1106,7 +1106,7 @@ class AllTableVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this AllTableVO.
+        r"""Gets the meta_data_link of this AllTableVO.
 
         :return: The meta_data_link of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1115,7 +1115,7 @@ class AllTableVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this AllTableVO.
+        r"""Sets the meta_data_link of this AllTableVO.
 
         :param meta_data_link: The meta_data_link of this AllTableVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1124,7 +1124,7 @@ class AllTableVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this AllTableVO.
+        r"""Gets the data_quality of this AllTableVO.
 
         :return: The data_quality of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1133,7 +1133,7 @@ class AllTableVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this AllTableVO.
+        r"""Sets the data_quality of this AllTableVO.
 
         :param data_quality: The data_quality of this AllTableVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1142,7 +1142,7 @@ class AllTableVO:
 
     @property
     def dlf_task(self):
-        """Gets the dlf_task of this AllTableVO.
+        r"""Gets the dlf_task of this AllTableVO.
 
         :return: The dlf_task of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1151,7 +1151,7 @@ class AllTableVO:
 
     @dlf_task.setter
     def dlf_task(self, dlf_task):
-        """Sets the dlf_task of this AllTableVO.
+        r"""Sets the dlf_task of this AllTableVO.
 
         :param dlf_task: The dlf_task of this AllTableVO.
         :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1160,7 +1160,7 @@ class AllTableVO:
 
     @property
     def materialization(self):
-        """Gets the materialization of this AllTableVO.
+        r"""Gets the materialization of this AllTableVO.
 
         :return: The materialization of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1169,7 +1169,7 @@ class AllTableVO:
 
     @materialization.setter
     def materialization(self, materialization):
-        """Sets the materialization of this AllTableVO.
+        r"""Sets the materialization of this AllTableVO.
 
         :param materialization: The materialization of this AllTableVO.
         :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1178,7 +1178,7 @@ class AllTableVO:
 
     @property
     def publish_to_dlm(self):
-        """Gets the publish_to_dlm of this AllTableVO.
+        r"""Gets the publish_to_dlm of this AllTableVO.
 
         :return: The publish_to_dlm of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1187,7 +1187,7 @@ class AllTableVO:
 
     @publish_to_dlm.setter
     def publish_to_dlm(self, publish_to_dlm):
-        """Sets the publish_to_dlm of this AllTableVO.
+        r"""Sets the publish_to_dlm of this AllTableVO.
 
         :param publish_to_dlm: The publish_to_dlm of this AllTableVO.
         :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1196,7 +1196,7 @@ class AllTableVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this AllTableVO.
+        r"""Gets the summary_status of this AllTableVO.
 
         :return: The summary_status of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1205,7 +1205,7 @@ class AllTableVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this AllTableVO.
+        r"""Sets the summary_status of this AllTableVO.
 
         :param summary_status: The summary_status of this AllTableVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1214,7 +1214,7 @@ class AllTableVO:
 
     @property
     def standard_count(self):
-        """Gets the standard_count of this AllTableVO.
+        r"""Gets the standard_count of this AllTableVO.
 
         标准数量，只读，ID字符串。
 
@@ -1225,7 +1225,7 @@ class AllTableVO:
 
     @standard_count.setter
     def standard_count(self, standard_count):
-        """Sets the standard_count of this AllTableVO.
+        r"""Sets the standard_count of this AllTableVO.
 
         标准数量，只读，ID字符串。
 
@@ -1236,7 +1236,7 @@ class AllTableVO:
 
     @property
     def alias(self):
-        """Gets the alias of this AllTableVO.
+        r"""Gets the alias of this AllTableVO.
 
         别名。
 
@@ -1247,7 +1247,7 @@ class AllTableVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AllTableVO.
+        r"""Sets the alias of this AllTableVO.
 
         别名。
 
@@ -1258,7 +1258,7 @@ class AllTableVO:
 
     @property
     def api_id(self):
-        """Gets the api_id of this AllTableVO.
+        r"""Gets the api_id of this AllTableVO.
 
         汇总表API ID。
 
@@ -1269,7 +1269,7 @@ class AllTableVO:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this AllTableVO.
+        r"""Sets the api_id of this AllTableVO.
 
         汇总表API ID。
 
@@ -1280,7 +1280,7 @@ class AllTableVO:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AllTableVO.
+        r"""Gets the workspace_id of this AllTableVO.
 
         工作空间ID。
 
@@ -1291,7 +1291,7 @@ class AllTableVO:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AllTableVO.
+        r"""Sets the workspace_id of this AllTableVO.
 
         工作空间ID。
 
@@ -1302,7 +1302,7 @@ class AllTableVO:
 
     @property
     def workspace_name(self):
-        """Gets the workspace_name of this AllTableVO.
+        r"""Gets the workspace_name of this AllTableVO.
 
         工作空间名称。
 
@@ -1313,7 +1313,7 @@ class AllTableVO:
 
     @workspace_name.setter
     def workspace_name(self, workspace_name):
-        """Sets the workspace_name of this AllTableVO.
+        r"""Sets the workspace_name of this AllTableVO.
 
         工作空间名称。
 
@@ -1324,7 +1324,7 @@ class AllTableVO:
 
     @property
     def dev_version(self):
-        """Gets the dev_version of this AllTableVO.
+        r"""Gets the dev_version of this AllTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1335,7 +1335,7 @@ class AllTableVO:
 
     @dev_version.setter
     def dev_version(self, dev_version):
-        """Sets the dev_version of this AllTableVO.
+        r"""Sets the dev_version of this AllTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1346,7 +1346,7 @@ class AllTableVO:
 
     @property
     def prod_version(self):
-        """Gets the prod_version of this AllTableVO.
+        r"""Gets the prod_version of this AllTableVO.
 
         生产环境版本，ID字符串。
 
@@ -1357,7 +1357,7 @@ class AllTableVO:
 
     @prod_version.setter
     def prod_version(self, prod_version):
-        """Sets the prod_version of this AllTableVO.
+        r"""Sets the prod_version of this AllTableVO.
 
         生产环境版本，ID字符串。
 
@@ -1368,7 +1368,7 @@ class AllTableVO:
 
     @property
     def dev_version_name(self):
-        """Gets the dev_version_name of this AllTableVO.
+        r"""Gets the dev_version_name of this AllTableVO.
 
         开发环境版本名称
 
@@ -1379,7 +1379,7 @@ class AllTableVO:
 
     @dev_version_name.setter
     def dev_version_name(self, dev_version_name):
-        """Sets the dev_version_name of this AllTableVO.
+        r"""Sets the dev_version_name of this AllTableVO.
 
         开发环境版本名称
 
@@ -1390,7 +1390,7 @@ class AllTableVO:
 
     @property
     def prod_version_name(self):
-        """Gets the prod_version_name of this AllTableVO.
+        r"""Gets the prod_version_name of this AllTableVO.
 
         生产环境版本名称
 
@@ -1401,7 +1401,7 @@ class AllTableVO:
 
     @prod_version_name.setter
     def prod_version_name(self, prod_version_name):
-        """Sets the prod_version_name of this AllTableVO.
+        r"""Sets the prod_version_name of this AllTableVO.
 
         生产环境版本名称
 
@@ -1412,7 +1412,7 @@ class AllTableVO:
 
     @property
     def env_type(self):
-        """Gets the env_type of this AllTableVO.
+        r"""Gets the env_type of this AllTableVO.
 
         :return: The env_type of this AllTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1421,7 +1421,7 @@ class AllTableVO:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this AllTableVO.
+        r"""Sets the env_type of this AllTableVO.
 
         :param env_type: The env_type of this AllTableVO.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`

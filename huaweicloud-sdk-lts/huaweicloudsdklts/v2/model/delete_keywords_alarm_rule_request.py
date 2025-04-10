@@ -25,7 +25,7 @@ class DeleteKeywordsAlarmRuleRequest:
     }
 
     def __init__(self, keywords_alarm_rule_id=None):
-        """DeleteKeywordsAlarmRuleRequest
+        r"""DeleteKeywordsAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteKeywordsAlarmRuleRequest:
 
     @property
     def keywords_alarm_rule_id(self):
-        """Gets the keywords_alarm_rule_id of this DeleteKeywordsAlarmRuleRequest.
+        r"""Gets the keywords_alarm_rule_id of this DeleteKeywordsAlarmRuleRequest.
 
         关键词告警规则id
 
@@ -53,7 +53,7 @@ class DeleteKeywordsAlarmRuleRequest:
 
     @keywords_alarm_rule_id.setter
     def keywords_alarm_rule_id(self, keywords_alarm_rule_id):
-        """Sets the keywords_alarm_rule_id of this DeleteKeywordsAlarmRuleRequest.
+        r"""Sets the keywords_alarm_rule_id of this DeleteKeywordsAlarmRuleRequest.
 
         关键词告警规则id
 

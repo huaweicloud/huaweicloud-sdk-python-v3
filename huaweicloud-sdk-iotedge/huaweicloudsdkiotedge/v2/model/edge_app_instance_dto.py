@@ -27,7 +27,7 @@ class EdgeAppInstanceDTO:
     }
 
     def __init__(self, edge_app_id=None, app_version=None):
-        """EdgeAppInstanceDTO
+        r"""EdgeAppInstanceDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EdgeAppInstanceDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this EdgeAppInstanceDTO.
+        r"""Gets the edge_app_id of this EdgeAppInstanceDTO.
 
         边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
@@ -60,7 +60,7 @@ class EdgeAppInstanceDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this EdgeAppInstanceDTO.
+        r"""Sets the edge_app_id of this EdgeAppInstanceDTO.
 
         边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
@@ -71,7 +71,7 @@ class EdgeAppInstanceDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this EdgeAppInstanceDTO.
+        r"""Gets the app_version of this EdgeAppInstanceDTO.
 
         边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
@@ -82,7 +82,7 @@ class EdgeAppInstanceDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this EdgeAppInstanceDTO.
+        r"""Sets the app_version of this EdgeAppInstanceDTO.
 
         边缘应用版本，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 

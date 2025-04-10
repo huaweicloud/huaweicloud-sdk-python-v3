@@ -27,7 +27,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteKafkaTagRequest
+        r"""BatchCreateOrDeleteKafkaTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCreateOrDeleteKafkaTagRequest.
+        r"""Gets the instance_id of this BatchCreateOrDeleteKafkaTagRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateOrDeleteKafkaTagRequest.
+        r"""Sets the instance_id of this BatchCreateOrDeleteKafkaTagRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateOrDeleteKafkaTagRequest.
+        r"""Gets the body of this BatchCreateOrDeleteKafkaTagRequest.
 
         :return: The body of this BatchCreateOrDeleteKafkaTagRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`
@@ -80,7 +80,7 @@ class BatchCreateOrDeleteKafkaTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateOrDeleteKafkaTagRequest.
+        r"""Sets the body of this BatchCreateOrDeleteKafkaTagRequest.
 
         :param body: The body of this BatchCreateOrDeleteKafkaTagRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`

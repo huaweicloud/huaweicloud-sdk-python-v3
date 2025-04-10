@@ -29,7 +29,7 @@ class ApiSetMetricCodeThresholdReq:
     }
 
     def __init__(self, metric_code=None, datastore_type=None, new_threshold=None):
-        """ApiSetMetricCodeThresholdReq
+        r"""ApiSetMetricCodeThresholdReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ApiSetMetricCodeThresholdReq:
 
     @property
     def metric_code(self):
-        """Gets the metric_code of this ApiSetMetricCodeThresholdReq.
+        r"""Gets the metric_code of this ApiSetMetricCodeThresholdReq.
 
         指标码
 
@@ -65,7 +65,7 @@ class ApiSetMetricCodeThresholdReq:
 
     @metric_code.setter
     def metric_code(self, metric_code):
-        """Sets the metric_code of this ApiSetMetricCodeThresholdReq.
+        r"""Sets the metric_code of this ApiSetMetricCodeThresholdReq.
 
         指标码
 
@@ -76,7 +76,7 @@ class ApiSetMetricCodeThresholdReq:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ApiSetMetricCodeThresholdReq.
+        r"""Gets the datastore_type of this ApiSetMetricCodeThresholdReq.
 
         数据库类型
 
@@ -87,7 +87,7 @@ class ApiSetMetricCodeThresholdReq:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ApiSetMetricCodeThresholdReq.
+        r"""Sets the datastore_type of this ApiSetMetricCodeThresholdReq.
 
         数据库类型
 
@@ -98,7 +98,7 @@ class ApiSetMetricCodeThresholdReq:
 
     @property
     def new_threshold(self):
-        """Gets the new_threshold of this ApiSetMetricCodeThresholdReq.
+        r"""Gets the new_threshold of this ApiSetMetricCodeThresholdReq.
 
         新阈值
 
@@ -109,7 +109,7 @@ class ApiSetMetricCodeThresholdReq:
 
     @new_threshold.setter
     def new_threshold(self, new_threshold):
-        """Sets the new_threshold of this ApiSetMetricCodeThresholdReq.
+        r"""Sets the new_threshold of this ApiSetMetricCodeThresholdReq.
 
         新阈值
 

@@ -30,7 +30,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
     }
 
     def __init__(self, fee_records=None, total_count=None, currency=None):
-        """ListCustomerselfResourceRecordsResponse
+        r"""ListCustomerselfResourceRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
     @property
     def fee_records(self):
-        """Gets the fee_records of this ListCustomerselfResourceRecordsResponse.
+        r"""Gets the fee_records of this ListCustomerselfResourceRecordsResponse.
 
         资源费用记录数据。 具体请参见表3。
 
@@ -69,7 +69,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
     @fee_records.setter
     def fee_records(self, fee_records):
-        """Sets the fee_records of this ListCustomerselfResourceRecordsResponse.
+        r"""Sets the fee_records of this ListCustomerselfResourceRecordsResponse.
 
         资源费用记录数据。 具体请参见表3。
 
@@ -80,7 +80,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCustomerselfResourceRecordsResponse.
+        r"""Gets the total_count of this ListCustomerselfResourceRecordsResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -91,7 +91,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCustomerselfResourceRecordsResponse.
+        r"""Sets the total_count of this ListCustomerselfResourceRecordsResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -102,7 +102,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListCustomerselfResourceRecordsResponse.
+        r"""Gets the currency of this ListCustomerselfResourceRecordsResponse.
 
         货币单位代码： USD：美元
 
@@ -113,7 +113,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListCustomerselfResourceRecordsResponse.
+        r"""Sets the currency of this ListCustomerselfResourceRecordsResponse.
 
         货币单位代码： USD：美元
 

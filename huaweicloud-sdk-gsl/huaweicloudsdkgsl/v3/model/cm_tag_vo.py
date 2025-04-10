@@ -29,7 +29,7 @@ class CmTagVO:
     }
 
     def __init__(self, id=None, tag_name=None, status=None):
-        """CmTagVO
+        r"""CmTagVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CmTagVO:
 
     @property
     def id(self):
-        """Gets the id of this CmTagVO.
+        r"""Gets the id of this CmTagVO.
 
         标签标识
 
@@ -68,7 +68,7 @@ class CmTagVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CmTagVO.
+        r"""Sets the id of this CmTagVO.
 
         标签标识
 
@@ -79,7 +79,7 @@ class CmTagVO:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this CmTagVO.
+        r"""Gets the tag_name of this CmTagVO.
 
         标签名称
 
@@ -90,7 +90,7 @@ class CmTagVO:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this CmTagVO.
+        r"""Sets the tag_name of this CmTagVO.
 
         标签名称
 
@@ -101,7 +101,7 @@ class CmTagVO:
 
     @property
     def status(self):
-        """Gets the status of this CmTagVO.
+        r"""Gets the status of this CmTagVO.
 
         标签状态，0未使用，1使用中。
 
@@ -112,7 +112,7 @@ class CmTagVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CmTagVO.
+        r"""Sets the status of this CmTagVO.
 
         标签状态，0未使用，1使用中。
 

@@ -63,7 +63,7 @@ class Submission:
     }
 
     def __init__(self, is_incrementing=None, job_name=None, counters=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None, creation_user=None, creation_date=None, external_id=None, progress=None, submission_id=None, delete_rows=None, update_rows=None, write_rows=None, execute_date=None, status=None, error_details=None, error_summary=None):
-        """Submission
+        r"""Submission
 
         The model defined in huaweicloud sdk
 
@@ -164,7 +164,7 @@ class Submission:
 
     @property
     def is_incrementing(self):
-        """Gets the is_incrementing of this Submission.
+        r"""Gets the is_incrementing of this Submission.
 
         作业是否为增量迁移
 
@@ -175,7 +175,7 @@ class Submission:
 
     @is_incrementing.setter
     def is_incrementing(self, is_incrementing):
-        """Sets the is_incrementing of this Submission.
+        r"""Sets the is_incrementing of this Submission.
 
         作业是否为增量迁移
 
@@ -186,7 +186,7 @@ class Submission:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Submission.
+        r"""Gets the job_name of this Submission.
 
         作业名称
 
@@ -197,7 +197,7 @@ class Submission:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Submission.
+        r"""Sets the job_name of this Submission.
 
         作业名称
 
@@ -208,7 +208,7 @@ class Submission:
 
     @property
     def counters(self):
-        """Gets the counters of this Submission.
+        r"""Gets the counters of this Submission.
 
         :return: The counters of this Submission.
         :rtype: :class:`huaweicloudsdkcdm.v1.Counters`
@@ -217,7 +217,7 @@ class Submission:
 
     @counters.setter
     def counters(self, counters):
-        """Sets the counters of this Submission.
+        r"""Sets the counters of this Submission.
 
         :param counters: The counters of this Submission.
         :type counters: :class:`huaweicloudsdkcdm.v1.Counters`
@@ -226,7 +226,7 @@ class Submission:
 
     @property
     def is_stoping_increment(self):
-        """Gets the is_stoping_increment of this Submission.
+        r"""Gets the is_stoping_increment of this Submission.
 
         是否停止增量迁移
 
@@ -237,7 +237,7 @@ class Submission:
 
     @is_stoping_increment.setter
     def is_stoping_increment(self, is_stoping_increment):
-        """Sets the is_stoping_increment of this Submission.
+        r"""Sets the is_stoping_increment of this Submission.
 
         是否停止增量迁移
 
@@ -248,7 +248,7 @@ class Submission:
 
     @property
     def is_execute_auto(self):
-        """Gets the is_execute_auto of this Submission.
+        r"""Gets the is_execute_auto of this Submission.
 
         是否定时执行作业
 
@@ -259,7 +259,7 @@ class Submission:
 
     @is_execute_auto.setter
     def is_execute_auto(self, is_execute_auto):
-        """Sets the is_execute_auto of this Submission.
+        r"""Sets the is_execute_auto of this Submission.
 
         是否定时执行作业
 
@@ -270,7 +270,7 @@ class Submission:
 
     @property
     def last_update_date(self):
-        """Gets the last_update_date of this Submission.
+        r"""Gets the last_update_date of this Submission.
 
         作业最后更新时间
 
@@ -281,7 +281,7 @@ class Submission:
 
     @last_update_date.setter
     def last_update_date(self, last_update_date):
-        """Sets the last_update_date of this Submission.
+        r"""Sets the last_update_date of this Submission.
 
         作业最后更新时间
 
@@ -292,7 +292,7 @@ class Submission:
 
     @property
     def last_udpate_user(self):
-        """Gets the last_udpate_user of this Submission.
+        r"""Gets the last_udpate_user of this Submission.
 
         最后更新作业状态的用户
 
@@ -303,7 +303,7 @@ class Submission:
 
     @last_udpate_user.setter
     def last_udpate_user(self, last_udpate_user):
-        """Sets the last_udpate_user of this Submission.
+        r"""Sets the last_udpate_user of this Submission.
 
         最后更新作业状态的用户
 
@@ -314,7 +314,7 @@ class Submission:
 
     @property
     def is_delete_job(self):
-        """Gets the is_delete_job of this Submission.
+        r"""Gets the is_delete_job of this Submission.
 
         作业执行完成后是否删除
 
@@ -325,7 +325,7 @@ class Submission:
 
     @is_delete_job.setter
     def is_delete_job(self, is_delete_job):
-        """Sets the is_delete_job of this Submission.
+        r"""Sets the is_delete_job of this Submission.
 
         作业执行完成后是否删除
 
@@ -336,7 +336,7 @@ class Submission:
 
     @property
     def creation_user(self):
-        """Gets the creation_user of this Submission.
+        r"""Gets the creation_user of this Submission.
 
         创建用户
 
@@ -347,7 +347,7 @@ class Submission:
 
     @creation_user.setter
     def creation_user(self, creation_user):
-        """Sets the creation_user of this Submission.
+        r"""Sets the creation_user of this Submission.
 
         创建用户
 
@@ -358,7 +358,7 @@ class Submission:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this Submission.
+        r"""Gets the creation_date of this Submission.
 
         创建时间
 
@@ -369,7 +369,7 @@ class Submission:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this Submission.
+        r"""Sets the creation_date of this Submission.
 
         创建时间
 
@@ -380,7 +380,7 @@ class Submission:
 
     @property
     def external_id(self):
-        """Gets the external_id of this Submission.
+        r"""Gets the external_id of this Submission.
 
         作业ID
 
@@ -391,7 +391,7 @@ class Submission:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this Submission.
+        r"""Sets the external_id of this Submission.
 
         作业ID
 
@@ -402,7 +402,7 @@ class Submission:
 
     @property
     def progress(self):
-        """Gets the progress of this Submission.
+        r"""Gets the progress of this Submission.
 
         作业进度，失败时为“-1”，其它情况为0～100
 
@@ -413,7 +413,7 @@ class Submission:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this Submission.
+        r"""Sets the progress of this Submission.
 
         作业进度，失败时为“-1”，其它情况为0～100
 
@@ -424,7 +424,7 @@ class Submission:
 
     @property
     def submission_id(self):
-        """Gets the submission_id of this Submission.
+        r"""Gets the submission_id of this Submission.
 
         作业提交id
 
@@ -435,7 +435,7 @@ class Submission:
 
     @submission_id.setter
     def submission_id(self, submission_id):
-        """Sets the submission_id of this Submission.
+        r"""Sets the submission_id of this Submission.
 
         作业提交id
 
@@ -446,7 +446,7 @@ class Submission:
 
     @property
     def delete_rows(self):
-        """Gets the delete_rows of this Submission.
+        r"""Gets the delete_rows of this Submission.
 
         删除数据行数
 
@@ -457,7 +457,7 @@ class Submission:
 
     @delete_rows.setter
     def delete_rows(self, delete_rows):
-        """Sets the delete_rows of this Submission.
+        r"""Sets the delete_rows of this Submission.
 
         删除数据行数
 
@@ -468,7 +468,7 @@ class Submission:
 
     @property
     def update_rows(self):
-        """Gets the update_rows of this Submission.
+        r"""Gets the update_rows of this Submission.
 
         更新数据行数
 
@@ -479,7 +479,7 @@ class Submission:
 
     @update_rows.setter
     def update_rows(self, update_rows):
-        """Sets the update_rows of this Submission.
+        r"""Sets the update_rows of this Submission.
 
         更新数据行数
 
@@ -490,7 +490,7 @@ class Submission:
 
     @property
     def write_rows(self):
-        """Gets the write_rows of this Submission.
+        r"""Gets the write_rows of this Submission.
 
         写入数据行数
 
@@ -501,7 +501,7 @@ class Submission:
 
     @write_rows.setter
     def write_rows(self, write_rows):
-        """Sets the write_rows of this Submission.
+        r"""Sets the write_rows of this Submission.
 
         写入数据行数
 
@@ -512,7 +512,7 @@ class Submission:
 
     @property
     def execute_date(self):
-        """Gets the execute_date of this Submission.
+        r"""Gets the execute_date of this Submission.
 
         执行时间
 
@@ -523,7 +523,7 @@ class Submission:
 
     @execute_date.setter
     def execute_date(self, execute_date):
-        """Sets the execute_date of this Submission.
+        r"""Sets the execute_date of this Submission.
 
         执行时间
 
@@ -534,7 +534,7 @@ class Submission:
 
     @property
     def status(self):
-        """Gets the status of this Submission.
+        r"""Gets the status of this Submission.
 
         作业状态： - BOOTING：启动中。 - FAILURE_ON_SUBMIT：提交失败。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - UNKNOWN：未知。 - NEVER_EXECUTED：未被执行
 
@@ -545,7 +545,7 @@ class Submission:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Submission.
+        r"""Sets the status of this Submission.
 
         作业状态： - BOOTING：启动中。 - FAILURE_ON_SUBMIT：提交失败。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - UNKNOWN：未知。 - NEVER_EXECUTED：未被执行
 
@@ -556,7 +556,7 @@ class Submission:
 
     @property
     def error_details(self):
-        """Gets the error_details of this Submission.
+        r"""Gets the error_details of this Submission.
 
         错误详情，当“status”为“FAILED”时才有此字段。
 
@@ -567,7 +567,7 @@ class Submission:
 
     @error_details.setter
     def error_details(self, error_details):
-        """Sets the error_details of this Submission.
+        r"""Sets the error_details of this Submission.
 
         错误详情，当“status”为“FAILED”时才有此字段。
 
@@ -578,7 +578,7 @@ class Submission:
 
     @property
     def error_summary(self):
-        """Gets the error_summary of this Submission.
+        r"""Gets the error_summary of this Submission.
 
         错误总结，当“status”为“FAILED”时才有此字段。
 
@@ -589,7 +589,7 @@ class Submission:
 
     @error_summary.setter
     def error_summary(self, error_summary):
-        """Sets the error_summary of this Submission.
+        r"""Sets the error_summary of this Submission.
 
         错误总结，当“status”为“FAILED”时才有此字段。
 

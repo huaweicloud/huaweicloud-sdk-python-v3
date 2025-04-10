@@ -31,7 +31,7 @@ class ListContainerNodesRequest:
     }
 
     def __init__(self, host_name=None, agent_status=None, limit=None, offset=None):
-        """ListContainerNodesRequest
+        r"""ListContainerNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListContainerNodesRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListContainerNodesRequest.
+        r"""Gets the host_name of this ListContainerNodesRequest.
 
         节点（服务器）名称
 
@@ -75,7 +75,7 @@ class ListContainerNodesRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListContainerNodesRequest.
+        r"""Sets the host_name of this ListContainerNodesRequest.
 
         节点（服务器）名称
 
@@ -86,7 +86,7 @@ class ListContainerNodesRequest:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ListContainerNodesRequest.
+        r"""Gets the agent_status of this ListContainerNodesRequest.
 
         Agent状态，包含如下3种。   - not_installed ：未安装   - online ：在线   - offline ：离线
 
@@ -97,7 +97,7 @@ class ListContainerNodesRequest:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ListContainerNodesRequest.
+        r"""Sets the agent_status of this ListContainerNodesRequest.
 
         Agent状态，包含如下3种。   - not_installed ：未安装   - online ：在线   - offline ：离线
 
@@ -108,7 +108,7 @@ class ListContainerNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListContainerNodesRequest.
+        r"""Gets the limit of this ListContainerNodesRequest.
 
         查询返回查询容器节点列表当前页面的数，量默认10
 
@@ -119,7 +119,7 @@ class ListContainerNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListContainerNodesRequest.
+        r"""Sets the limit of this ListContainerNodesRequest.
 
         查询返回查询容器节点列表当前页面的数，量默认10
 
@@ -130,7 +130,7 @@ class ListContainerNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListContainerNodesRequest.
+        r"""Gets the offset of this ListContainerNodesRequest.
 
         查询游标，初始传入0
 
@@ -141,7 +141,7 @@ class ListContainerNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListContainerNodesRequest.
+        r"""Sets the offset of this ListContainerNodesRequest.
 
         查询游标，初始传入0
 

@@ -34,7 +34,7 @@ class RamClient(Client):
         return client_builder
 
     def associate_resource_share_permission(self, request):
-        """绑定或替换共享资源权限
+        r"""绑定或替换共享资源权限
 
         为资源共享实例中包含的资源类型绑定或替换共享资源权限。 对于资源共享实例中的每一种资源类型，您可以设置唯一权限。仅当资源共享实例中当前没有该资源类型的资源时，您才能绑定新的共享资源权限。
         
@@ -103,7 +103,7 @@ class RamClient(Client):
         return http_info
 
     def disassociate_resource_share_permission(self, request):
-        """移除共享资源权限
+        r"""移除共享资源权限
 
         移除资源共享实例绑定的共享资源权限。权限更改立即生效。只有当目前资源共享实例中没有绑定相关资源类型时，您才能从资源共享实例中移除共享资源权限。
         
@@ -172,7 +172,7 @@ class RamClient(Client):
         return http_info
 
     def list_resource_share_permissions(self, request):
-        """检索绑定的共享资源权限
+        r"""检索绑定的共享资源权限
 
         检索资源共享实例关联的共享资源权限。
         
@@ -245,7 +245,7 @@ class RamClient(Client):
         return http_info
 
     def list_quota(self, request):
-        """查询资源共享的配额
+        r"""查询资源共享的配额
 
         查询当前账号的资源共享配额信息。
         
@@ -310,7 +310,7 @@ class RamClient(Client):
         return http_info
 
     def list_resource_types(self, request):
-        """检索云服务资源类型
+        r"""检索云服务资源类型
 
         查询已对接云服务的资源类型和区域等信息。
         
@@ -379,7 +379,7 @@ class RamClient(Client):
         return http_info
 
     def disable_organization_share(self, request):
-        """关闭与组织共享
+        r"""关闭与组织共享
 
         关闭与组织共享资源。
         
@@ -444,7 +444,7 @@ class RamClient(Client):
         return http_info
 
     def enable_organization_share(self, request):
-        """启用与组织共享
+        r"""启用与组织共享
 
         启用与组织共享资源。
         
@@ -509,7 +509,7 @@ class RamClient(Client):
         return http_info
 
     def show_organization_share(self, request):
-        """检索是否启用与组织共享
+        r"""检索是否启用与组织共享
 
         检索是否启用与组织共享资源。
         
@@ -574,7 +574,7 @@ class RamClient(Client):
         return http_info
 
     def list_permission_versions(self, request):
-        """获取权限的所有版本
+        r"""获取权限的所有版本
 
         获取权限的所有版本。
         
@@ -645,7 +645,7 @@ class RamClient(Client):
         return http_info
 
     def list_permissions(self, request):
-        """检索共享资源权限列表
+        r"""检索共享资源权限列表
 
         检索指定资源类型的共享资源权限列表。
         
@@ -718,7 +718,7 @@ class RamClient(Client):
         return http_info
 
     def show_permission(self, request):
-        """检索资源共享权限内容
+        r"""检索资源共享权限内容
 
         检索指定资源类型的共享资源指定版本的权限内容，如果不指定权限版本，则返回默认版本的权限内容。
         
@@ -787,7 +787,7 @@ class RamClient(Client):
         return http_info
 
     def search_shared_principals(self, request):
-        """检索资源使用者
+        r"""检索资源使用者
 
         检索共享资源的使用者。
         
@@ -854,7 +854,7 @@ class RamClient(Client):
         return http_info
 
     def search_shared_resources(self, request):
-        """检索共享的资源
+        r"""检索共享的资源
 
         检索您共享的或共享给您的资源。
         
@@ -921,7 +921,7 @@ class RamClient(Client):
         return http_info
 
     def create_resource_share(self, request):
-        """创建资源共享实例
+        r"""创建资源共享实例
 
         创建一个资源共享实例。您可以指定需要共享的资源列表，资源使用者列表，以及授予资源使用者的权限列表。
         
@@ -988,7 +988,7 @@ class RamClient(Client):
         return http_info
 
     def delete_resource_share(self, request):
-        """删除资源共享实例
+        r"""删除资源共享实例
 
         删除指定的资源共享实例。此操作不会删除实体资源，仅停止向其他账号共享资源。
         
@@ -1055,7 +1055,7 @@ class RamClient(Client):
         return http_info
 
     def search_resource_shares(self, request):
-        """检索资源共享实例
+        r"""检索资源共享实例
 
         检索您创建的或者共享给您的资源共享实例详情。
         
@@ -1122,7 +1122,7 @@ class RamClient(Client):
         return http_info
 
     def update_resource_share(self, request):
-        """更新资源共享实例
+        r"""更新资源共享实例
 
         修改资源共享实例的特定属性。
         
@@ -1191,7 +1191,7 @@ class RamClient(Client):
         return http_info
 
     def associate_resource_share(self, request):
-        """绑定资源使用者和共享资源
+        r"""绑定资源使用者和共享资源
 
         向资源共享实例绑定指定的资源使用者列表或共享资源列表。对于新增的共享资源，有权访问此资源共享实例的资源使用者获得该共享资源的访问权限。对于新增的资源使用者，获得对此资源共享实例中共享资源的访问权限。
         
@@ -1260,7 +1260,7 @@ class RamClient(Client):
         return http_info
 
     def disassociate_resource_share(self, request):
-        """移除资源使用者或共享资源
+        r"""移除资源使用者或共享资源
 
         将指定的资源使用者或共享资源从指定的资源共享实例中移除。资源使用者也可以从指定的资源共享实例中主动退出。
         
@@ -1329,7 +1329,7 @@ class RamClient(Client):
         return http_info
 
     def search_resource_share_associations(self, request):
-        """检索绑定的资源使用者和共享资源
+        r"""检索绑定的资源使用者和共享资源
 
         检索您拥有的资源共享实例中绑定的共享资源和资源使用者。
         
@@ -1396,7 +1396,7 @@ class RamClient(Client):
         return http_info
 
     def accept_resource_share_invitation(self, request):
-        """接受共享邀请
+        r"""接受共享邀请
 
         接受来自其他账号的资源共享邀请。
         
@@ -1463,7 +1463,7 @@ class RamClient(Client):
         return http_info
 
     def reject_resource_share_invitation(self, request):
-        """拒绝共享邀请
+        r"""拒绝共享邀请
 
         拒绝来自其他账号的资源共享邀请。
         
@@ -1530,7 +1530,7 @@ class RamClient(Client):
         return http_info
 
     def search_resource_share_invitation(self, request):
-        """检索共享邀请
+        r"""检索共享邀请
 
         通过条件检索资源共享邀请。
         
@@ -1597,7 +1597,7 @@ class RamClient(Client):
         return http_info
 
     def batch_create_resource_share_tags(self, request):
-        """资源共享实例增加标签
+        r"""资源共享实例增加标签
 
         资源共享实例增加标签。
         
@@ -1666,7 +1666,7 @@ class RamClient(Client):
         return http_info
 
     def batch_delete_resource_share_tags(self, request):
-        """删除资源共享实例的标签
+        r"""删除资源共享实例的标签
 
         删除资源共享实例指定的标签。
         
@@ -1735,7 +1735,7 @@ class RamClient(Client):
         return http_info
 
     def list_resource_share_tags(self, request):
-        """查询已使用的标签列表
+        r"""查询已使用的标签列表
 
         查询资源共享实例已使用标签的列表。
         
@@ -1804,7 +1804,7 @@ class RamClient(Client):
         return http_info
 
     def list_resource_shares_by_tags(self, request):
-        """根据标签信息查询实例列表
+        r"""根据标签信息查询实例列表
 
         根据标签信息查询资源共享实例列表。
         
@@ -1875,7 +1875,7 @@ class RamClient(Client):
         return http_info
 
     def search_resource_share_count_by_tags(self, request):
-        """根据标签信息查询实例数量
+        r"""根据标签信息查询实例数量
 
         根据标签信息查询资源共享实例数量。
         

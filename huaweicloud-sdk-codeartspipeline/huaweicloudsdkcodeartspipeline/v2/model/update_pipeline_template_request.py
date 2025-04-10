@@ -29,7 +29,7 @@ class UpdatePipelineTemplateRequest:
     }
 
     def __init__(self, tenant_id=None, template_id=None, body=None):
-        """UpdatePipelineTemplateRequest
+        r"""UpdatePipelineTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePipelineTemplateRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this UpdatePipelineTemplateRequest.
+        r"""Gets the tenant_id of this UpdatePipelineTemplateRequest.
 
         租户ID
 
@@ -66,7 +66,7 @@ class UpdatePipelineTemplateRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this UpdatePipelineTemplateRequest.
+        r"""Sets the tenant_id of this UpdatePipelineTemplateRequest.
 
         租户ID
 
@@ -77,7 +77,7 @@ class UpdatePipelineTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdatePipelineTemplateRequest.
+        r"""Gets the template_id of this UpdatePipelineTemplateRequest.
 
         模板ID
 
@@ -88,7 +88,7 @@ class UpdatePipelineTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdatePipelineTemplateRequest.
+        r"""Sets the template_id of this UpdatePipelineTemplateRequest.
 
         模板ID
 
@@ -99,7 +99,7 @@ class UpdatePipelineTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePipelineTemplateRequest.
+        r"""Gets the body of this UpdatePipelineTemplateRequest.
 
         :return: The body of this UpdatePipelineTemplateRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineTemplateDTO`
@@ -108,7 +108,7 @@ class UpdatePipelineTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePipelineTemplateRequest.
+        r"""Sets the body of this UpdatePipelineTemplateRequest.
 
         :param body: The body of this UpdatePipelineTemplateRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineTemplateDTO`

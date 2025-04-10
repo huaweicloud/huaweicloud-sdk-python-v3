@@ -34,7 +34,7 @@ class CesClient(Client):
         return client_builder
 
     def list_agent_status(self, request):
-        """插件状态查询
+        r"""插件状态查询
 
         插件状态查询，包括uniagent状态以及插件状态
         
@@ -99,7 +99,7 @@ class CesClient(Client):
         return http_info
 
     def batch_create_agent_invocations(self, request):
-        """批量创建Agent任务
+        r"""批量创建Agent任务
 
         批量创建Agent任务
         
@@ -164,7 +164,7 @@ class CesClient(Client):
         return http_info
 
     def list_agent_invocations(self, request):
-        """查询Agent任务列表
+        r"""查询Agent任务列表
 
         查询Agent任务列表
         

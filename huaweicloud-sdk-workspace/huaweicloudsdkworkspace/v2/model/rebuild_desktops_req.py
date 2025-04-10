@@ -39,7 +39,7 @@ class RebuildDesktopsReq:
     }
 
     def __init__(self, desktop_ids=None, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, order_id=None, enterprise_project_id=None):
-        """RebuildDesktopsReq
+        r"""RebuildDesktopsReq
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class RebuildDesktopsReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this RebuildDesktopsReq.
+        r"""Gets the desktop_ids of this RebuildDesktopsReq.
 
         计算机id列表。
 
@@ -100,7 +100,7 @@ class RebuildDesktopsReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this RebuildDesktopsReq.
+        r"""Sets the desktop_ids of this RebuildDesktopsReq.
 
         计算机id列表。
 
@@ -111,7 +111,7 @@ class RebuildDesktopsReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this RebuildDesktopsReq.
+        r"""Gets the image_type of this RebuildDesktopsReq.
 
         镜像类型。
 
@@ -122,7 +122,7 @@ class RebuildDesktopsReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this RebuildDesktopsReq.
+        r"""Sets the image_type of this RebuildDesktopsReq.
 
         镜像类型。
 
@@ -133,7 +133,7 @@ class RebuildDesktopsReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this RebuildDesktopsReq.
+        r"""Gets the image_id of this RebuildDesktopsReq.
 
         模板ID。
 
@@ -144,7 +144,7 @@ class RebuildDesktopsReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this RebuildDesktopsReq.
+        r"""Sets the image_id of this RebuildDesktopsReq.
 
         模板ID。
 
@@ -155,7 +155,7 @@ class RebuildDesktopsReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this RebuildDesktopsReq.
+        r"""Gets the os_type of this RebuildDesktopsReq.
 
         os类型。
 
@@ -166,7 +166,7 @@ class RebuildDesktopsReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this RebuildDesktopsReq.
+        r"""Sets the os_type of this RebuildDesktopsReq.
 
         os类型。
 
@@ -177,7 +177,7 @@ class RebuildDesktopsReq:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this RebuildDesktopsReq.
+        r"""Gets the delay_time of this RebuildDesktopsReq.
 
         立即重建时给用户预留的保存数据的时间（单位：分钟）。
 
@@ -188,7 +188,7 @@ class RebuildDesktopsReq:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this RebuildDesktopsReq.
+        r"""Sets the delay_time of this RebuildDesktopsReq.
 
         立即重建时给用户预留的保存数据的时间（单位：分钟）。
 
@@ -199,7 +199,7 @@ class RebuildDesktopsReq:
 
     @property
     def message(self):
-        """Gets the message of this RebuildDesktopsReq.
+        r"""Gets the message of this RebuildDesktopsReq.
 
         下发重建系统盘任务时，给用户发送的提示信息。
 
@@ -210,7 +210,7 @@ class RebuildDesktopsReq:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RebuildDesktopsReq.
+        r"""Sets the message of this RebuildDesktopsReq.
 
         下发重建系统盘任务时，给用户发送的提示信息。
 
@@ -221,7 +221,7 @@ class RebuildDesktopsReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this RebuildDesktopsReq.
+        r"""Gets the order_id of this RebuildDesktopsReq.
 
         订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
 
@@ -232,7 +232,7 @@ class RebuildDesktopsReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this RebuildDesktopsReq.
+        r"""Sets the order_id of this RebuildDesktopsReq.
 
         订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
 
@@ -243,7 +243,7 @@ class RebuildDesktopsReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RebuildDesktopsReq.
+        r"""Gets the enterprise_project_id of this RebuildDesktopsReq.
 
         企业项目ID，默认\"0\"
 
@@ -254,7 +254,7 @@ class RebuildDesktopsReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RebuildDesktopsReq.
+        r"""Sets the enterprise_project_id of this RebuildDesktopsReq.
 
         企业项目ID，默认\"0\"
 

@@ -32,7 +32,7 @@ class ListVaultResponse(SdkResponse):
     }
 
     def __init__(self, vaults=None, count=None, limit=None, offset=None):
-        """ListVaultResponse
+        r"""ListVaultResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListVaultResponse(SdkResponse):
 
     @property
     def vaults(self):
-        """Gets the vaults of this ListVaultResponse.
+        r"""Gets the vaults of this ListVaultResponse.
 
         存储库实例列表
 
@@ -76,7 +76,7 @@ class ListVaultResponse(SdkResponse):
 
     @vaults.setter
     def vaults(self, vaults):
-        """Sets the vaults of this ListVaultResponse.
+        r"""Sets the vaults of this ListVaultResponse.
 
         存储库实例列表
 
@@ -87,7 +87,7 @@ class ListVaultResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVaultResponse.
+        r"""Gets the count of this ListVaultResponse.
 
         存储库个数
 
@@ -98,7 +98,7 @@ class ListVaultResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVaultResponse.
+        r"""Sets the count of this ListVaultResponse.
 
         存储库个数
 
@@ -109,7 +109,7 @@ class ListVaultResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListVaultResponse.
+        r"""Gets the limit of this ListVaultResponse.
 
         每页显示的条目数量
 
@@ -120,7 +120,7 @@ class ListVaultResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVaultResponse.
+        r"""Sets the limit of this ListVaultResponse.
 
         每页显示的条目数量
 
@@ -131,7 +131,7 @@ class ListVaultResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListVaultResponse.
+        r"""Gets the offset of this ListVaultResponse.
 
         偏移量，表示从此偏移量开始查询
 
@@ -142,7 +142,7 @@ class ListVaultResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVaultResponse.
+        r"""Sets the offset of this ListVaultResponse.
 
         偏移量，表示从此偏移量开始查询
 

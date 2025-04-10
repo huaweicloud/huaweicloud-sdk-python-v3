@@ -27,7 +27,7 @@ class ImportFlinkJobSavepointRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """ImportFlinkJobSavepointRequest
+        r"""ImportFlinkJobSavepointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportFlinkJobSavepointRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportFlinkJobSavepointRequest.
+        r"""Gets the job_id of this ImportFlinkJobSavepointRequest.
 
         非运行阶段的Flink作业的作业ID
 
@@ -60,7 +60,7 @@ class ImportFlinkJobSavepointRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportFlinkJobSavepointRequest.
+        r"""Sets the job_id of this ImportFlinkJobSavepointRequest.
 
         非运行阶段的Flink作业的作业ID
 
@@ -71,7 +71,7 @@ class ImportFlinkJobSavepointRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportFlinkJobSavepointRequest.
+        r"""Gets the body of this ImportFlinkJobSavepointRequest.
 
         :return: The body of this ImportFlinkJobSavepointRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ImportFlinkJobSavepointRequestBody`
@@ -80,7 +80,7 @@ class ImportFlinkJobSavepointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportFlinkJobSavepointRequest.
+        r"""Sets the body of this ImportFlinkJobSavepointRequest.
 
         :param body: The body of this ImportFlinkJobSavepointRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ImportFlinkJobSavepointRequestBody`

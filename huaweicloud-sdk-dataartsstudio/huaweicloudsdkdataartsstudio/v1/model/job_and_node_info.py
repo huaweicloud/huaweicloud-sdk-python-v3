@@ -29,7 +29,7 @@ class JobAndNodeInfo:
     }
 
     def __init__(self, task_id=None, job_name=None, workspace_id=None):
-        """JobAndNodeInfo
+        r"""JobAndNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobAndNodeInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this JobAndNodeInfo.
+        r"""Gets the task_id of this JobAndNodeInfo.
 
         作业算子id
 
@@ -68,7 +68,7 @@ class JobAndNodeInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this JobAndNodeInfo.
+        r"""Sets the task_id of this JobAndNodeInfo.
 
         作业算子id
 
@@ -79,7 +79,7 @@ class JobAndNodeInfo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobAndNodeInfo.
+        r"""Gets the job_name of this JobAndNodeInfo.
 
         作业算子名称
 
@@ -90,7 +90,7 @@ class JobAndNodeInfo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobAndNodeInfo.
+        r"""Sets the job_name of this JobAndNodeInfo.
 
         作业算子名称
 
@@ -101,7 +101,7 @@ class JobAndNodeInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this JobAndNodeInfo.
+        r"""Gets the workspace_id of this JobAndNodeInfo.
 
         作业算子所在空间id
 
@@ -112,7 +112,7 @@ class JobAndNodeInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this JobAndNodeInfo.
+        r"""Sets the workspace_id of this JobAndNodeInfo.
 
         作业算子所在空间id
 

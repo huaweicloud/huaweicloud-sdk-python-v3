@@ -29,7 +29,7 @@ class ShowTaskListByProjectIdRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ShowTaskListByProjectIdRequest
+        r"""ShowTaskListByProjectIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowTaskListByProjectIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTaskListByProjectIdRequest.
+        r"""Gets the project_id of this ShowTaskListByProjectIdRequest.
 
         项目ID
 
@@ -67,7 +67,7 @@ class ShowTaskListByProjectIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTaskListByProjectIdRequest.
+        r"""Sets the project_id of this ShowTaskListByProjectIdRequest.
 
         项目ID
 
@@ -78,7 +78,7 @@ class ShowTaskListByProjectIdRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTaskListByProjectIdRequest.
+        r"""Gets the offset of this ShowTaskListByProjectIdRequest.
 
         分页索引，偏移量
 
@@ -89,7 +89,7 @@ class ShowTaskListByProjectIdRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTaskListByProjectIdRequest.
+        r"""Sets the offset of this ShowTaskListByProjectIdRequest.
 
         分页索引，偏移量
 
@@ -100,7 +100,7 @@ class ShowTaskListByProjectIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTaskListByProjectIdRequest.
+        r"""Gets the limit of this ShowTaskListByProjectIdRequest.
 
         每页显示的数量,每页最多显示100条
 
@@ -111,7 +111,7 @@ class ShowTaskListByProjectIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTaskListByProjectIdRequest.
+        r"""Sets the limit of this ShowTaskListByProjectIdRequest.
 
         每页显示的数量,每页最多显示100条
 

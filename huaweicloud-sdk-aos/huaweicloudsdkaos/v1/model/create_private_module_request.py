@@ -27,7 +27,7 @@ class CreatePrivateModuleRequest:
     }
 
     def __init__(self, client_request_id=None, body=None):
-        """CreatePrivateModuleRequest
+        r"""CreatePrivateModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePrivateModuleRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this CreatePrivateModuleRequest.
+        r"""Gets the client_request_id of this CreatePrivateModuleRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -60,7 +60,7 @@ class CreatePrivateModuleRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this CreatePrivateModuleRequest.
+        r"""Sets the client_request_id of this CreatePrivateModuleRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -71,7 +71,7 @@ class CreatePrivateModuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateModuleRequest.
+        r"""Gets the body of this CreatePrivateModuleRequest.
 
         :return: The body of this CreatePrivateModuleRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleRequestBody`
@@ -80,7 +80,7 @@ class CreatePrivateModuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateModuleRequest.
+        r"""Sets the body of this CreatePrivateModuleRequest.
 
         :param body: The body of this CreatePrivateModuleRequest.
         :type body: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleRequestBody`

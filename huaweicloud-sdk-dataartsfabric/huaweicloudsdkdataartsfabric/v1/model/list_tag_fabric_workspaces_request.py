@@ -29,7 +29,7 @@ class ListTagFabricWorkspacesRequest:
     }
 
     def __init__(self, offset=None, limit=None, body=None):
-        """ListTagFabricWorkspacesRequest
+        r"""ListTagFabricWorkspacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTagFabricWorkspacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagFabricWorkspacesRequest.
+        r"""Gets the offset of this ListTagFabricWorkspacesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -68,7 +68,7 @@ class ListTagFabricWorkspacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagFabricWorkspacesRequest.
+        r"""Sets the offset of this ListTagFabricWorkspacesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -79,7 +79,7 @@ class ListTagFabricWorkspacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagFabricWorkspacesRequest.
+        r"""Gets the limit of this ListTagFabricWorkspacesRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -90,7 +90,7 @@ class ListTagFabricWorkspacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagFabricWorkspacesRequest.
+        r"""Sets the limit of this ListTagFabricWorkspacesRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -101,7 +101,7 @@ class ListTagFabricWorkspacesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTagFabricWorkspacesRequest.
+        r"""Gets the body of this ListTagFabricWorkspacesRequest.
 
         :return: The body of this ListTagFabricWorkspacesRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ListTagWorkspacesRequestBody`
@@ -110,7 +110,7 @@ class ListTagFabricWorkspacesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTagFabricWorkspacesRequest.
+        r"""Sets the body of this ListTagFabricWorkspacesRequest.
 
         :param body: The body of this ListTagFabricWorkspacesRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.ListTagWorkspacesRequestBody`

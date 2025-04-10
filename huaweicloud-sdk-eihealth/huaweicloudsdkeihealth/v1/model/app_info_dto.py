@@ -49,7 +49,7 @@ class AppInfoDto:
     }
 
     def __init__(self, app_id=None, app_name=None, app_version=None, app_src_project_name=None, app_labels=None, app_summary=None, app_description=None, app_image=None, app_commands=None, app_input_parameters=None, app_output_parameters=None, app_node_labels=None, app_icon=None):
-        """AppInfoDto
+        r"""AppInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class AppInfoDto:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppInfoDto.
+        r"""Gets the app_id of this AppInfoDto.
 
         应用id
 
@@ -138,7 +138,7 @@ class AppInfoDto:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppInfoDto.
+        r"""Sets the app_id of this AppInfoDto.
 
         应用id
 
@@ -149,7 +149,7 @@ class AppInfoDto:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppInfoDto.
+        r"""Gets the app_name of this AppInfoDto.
 
         应用名称
 
@@ -160,7 +160,7 @@ class AppInfoDto:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppInfoDto.
+        r"""Sets the app_name of this AppInfoDto.
 
         应用名称
 
@@ -171,7 +171,7 @@ class AppInfoDto:
 
     @property
     def app_version(self):
-        """Gets the app_version of this AppInfoDto.
+        r"""Gets the app_version of this AppInfoDto.
 
         应用版本
 
@@ -182,7 +182,7 @@ class AppInfoDto:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this AppInfoDto.
+        r"""Sets the app_version of this AppInfoDto.
 
         应用版本
 
@@ -193,7 +193,7 @@ class AppInfoDto:
 
     @property
     def app_src_project_name(self):
-        """Gets the app_src_project_name of this AppInfoDto.
+        r"""Gets the app_src_project_name of this AppInfoDto.
 
         应用来源项目名称
 
@@ -204,7 +204,7 @@ class AppInfoDto:
 
     @app_src_project_name.setter
     def app_src_project_name(self, app_src_project_name):
-        """Sets the app_src_project_name of this AppInfoDto.
+        r"""Sets the app_src_project_name of this AppInfoDto.
 
         应用来源项目名称
 
@@ -215,7 +215,7 @@ class AppInfoDto:
 
     @property
     def app_labels(self):
-        """Gets the app_labels of this AppInfoDto.
+        r"""Gets the app_labels of this AppInfoDto.
 
         应用标签
 
@@ -226,7 +226,7 @@ class AppInfoDto:
 
     @app_labels.setter
     def app_labels(self, app_labels):
-        """Sets the app_labels of this AppInfoDto.
+        r"""Sets the app_labels of this AppInfoDto.
 
         应用标签
 
@@ -237,7 +237,7 @@ class AppInfoDto:
 
     @property
     def app_summary(self):
-        """Gets the app_summary of this AppInfoDto.
+        r"""Gets the app_summary of this AppInfoDto.
 
         应用简述
 
@@ -248,7 +248,7 @@ class AppInfoDto:
 
     @app_summary.setter
     def app_summary(self, app_summary):
-        """Sets the app_summary of this AppInfoDto.
+        r"""Sets the app_summary of this AppInfoDto.
 
         应用简述
 
@@ -259,7 +259,7 @@ class AppInfoDto:
 
     @property
     def app_description(self):
-        """Gets the app_description of this AppInfoDto.
+        r"""Gets the app_description of this AppInfoDto.
 
         应用描述
 
@@ -270,7 +270,7 @@ class AppInfoDto:
 
     @app_description.setter
     def app_description(self, app_description):
-        """Sets the app_description of this AppInfoDto.
+        r"""Sets the app_description of this AppInfoDto.
 
         应用描述
 
@@ -281,7 +281,7 @@ class AppInfoDto:
 
     @property
     def app_image(self):
-        """Gets the app_image of this AppInfoDto.
+        r"""Gets the app_image of this AppInfoDto.
 
         应用镜像
 
@@ -292,7 +292,7 @@ class AppInfoDto:
 
     @app_image.setter
     def app_image(self, app_image):
-        """Sets the app_image of this AppInfoDto.
+        r"""Sets the app_image of this AppInfoDto.
 
         应用镜像
 
@@ -303,7 +303,7 @@ class AppInfoDto:
 
     @property
     def app_commands(self):
-        """Gets the app_commands of this AppInfoDto.
+        r"""Gets the app_commands of this AppInfoDto.
 
         任务使用到的应用自带的命令信息
 
@@ -314,7 +314,7 @@ class AppInfoDto:
 
     @app_commands.setter
     def app_commands(self, app_commands):
-        """Sets the app_commands of this AppInfoDto.
+        r"""Sets the app_commands of this AppInfoDto.
 
         任务使用到的应用自带的命令信息
 
@@ -325,7 +325,7 @@ class AppInfoDto:
 
     @property
     def app_input_parameters(self):
-        """Gets the app_input_parameters of this AppInfoDto.
+        r"""Gets the app_input_parameters of this AppInfoDto.
 
         任务使用到的应用自带的输入参数信息
 
@@ -336,7 +336,7 @@ class AppInfoDto:
 
     @app_input_parameters.setter
     def app_input_parameters(self, app_input_parameters):
-        """Sets the app_input_parameters of this AppInfoDto.
+        r"""Sets the app_input_parameters of this AppInfoDto.
 
         任务使用到的应用自带的输入参数信息
 
@@ -347,7 +347,7 @@ class AppInfoDto:
 
     @property
     def app_output_parameters(self):
-        """Gets the app_output_parameters of this AppInfoDto.
+        r"""Gets the app_output_parameters of this AppInfoDto.
 
         任务使用到的应用自带的输出参数信息
 
@@ -358,7 +358,7 @@ class AppInfoDto:
 
     @app_output_parameters.setter
     def app_output_parameters(self, app_output_parameters):
-        """Sets the app_output_parameters of this AppInfoDto.
+        r"""Sets the app_output_parameters of this AppInfoDto.
 
         任务使用到的应用自带的输出参数信息
 
@@ -369,7 +369,7 @@ class AppInfoDto:
 
     @property
     def app_node_labels(self):
-        """Gets the app_node_labels of this AppInfoDto.
+        r"""Gets the app_node_labels of this AppInfoDto.
 
         计算节点标签
 
@@ -380,7 +380,7 @@ class AppInfoDto:
 
     @app_node_labels.setter
     def app_node_labels(self, app_node_labels):
-        """Sets the app_node_labels of this AppInfoDto.
+        r"""Sets the app_node_labels of this AppInfoDto.
 
         计算节点标签
 
@@ -391,7 +391,7 @@ class AppInfoDto:
 
     @property
     def app_icon(self):
-        """Gets the app_icon of this AppInfoDto.
+        r"""Gets the app_icon of this AppInfoDto.
 
         图标base64编码
 
@@ -402,7 +402,7 @@ class AppInfoDto:
 
     @app_icon.setter
     def app_icon(self, app_icon):
-        """Sets the app_icon of this AppInfoDto.
+        r"""Sets the app_icon of this AppInfoDto.
 
         图标base64编码
 

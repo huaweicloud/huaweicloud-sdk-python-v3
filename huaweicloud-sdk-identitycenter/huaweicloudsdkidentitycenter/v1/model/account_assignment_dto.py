@@ -31,7 +31,7 @@ class AccountAssignmentDto:
     }
 
     def __init__(self, account_id=None, permission_set_id=None, principal_id=None, principal_type=None):
-        """AccountAssignmentDto
+        r"""AccountAssignmentDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AccountAssignmentDto:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AccountAssignmentDto.
+        r"""Gets the account_id of this AccountAssignmentDto.
 
         账号的唯一标识
 
@@ -75,7 +75,7 @@ class AccountAssignmentDto:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AccountAssignmentDto.
+        r"""Sets the account_id of this AccountAssignmentDto.
 
         账号的唯一标识
 
@@ -86,7 +86,7 @@ class AccountAssignmentDto:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this AccountAssignmentDto.
+        r"""Gets the permission_set_id of this AccountAssignmentDto.
 
         权限集唯一标识.
 
@@ -97,7 +97,7 @@ class AccountAssignmentDto:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this AccountAssignmentDto.
+        r"""Sets the permission_set_id of this AccountAssignmentDto.
 
         权限集唯一标识.
 
@@ -108,7 +108,7 @@ class AccountAssignmentDto:
 
     @property
     def principal_id(self):
-        """Gets the principal_id of this AccountAssignmentDto.
+        r"""Gets the principal_id of this AccountAssignmentDto.
 
         IAM身份中心中的一个实体身份唯一标识，例如用户或用户组
 
@@ -119,7 +119,7 @@ class AccountAssignmentDto:
 
     @principal_id.setter
     def principal_id(self, principal_id):
-        """Sets the principal_id of this AccountAssignmentDto.
+        r"""Sets the principal_id of this AccountAssignmentDto.
 
         IAM身份中心中的一个实体身份唯一标识，例如用户或用户组
 
@@ -130,7 +130,7 @@ class AccountAssignmentDto:
 
     @property
     def principal_type(self):
-        """Gets the principal_type of this AccountAssignmentDto.
+        r"""Gets the principal_type of this AccountAssignmentDto.
 
         绑定的实体类型
 
@@ -141,7 +141,7 @@ class AccountAssignmentDto:
 
     @principal_type.setter
     def principal_type(self, principal_type):
-        """Sets the principal_type of this AccountAssignmentDto.
+        r"""Sets the principal_type of this AccountAssignmentDto.
 
         绑定的实体类型
 

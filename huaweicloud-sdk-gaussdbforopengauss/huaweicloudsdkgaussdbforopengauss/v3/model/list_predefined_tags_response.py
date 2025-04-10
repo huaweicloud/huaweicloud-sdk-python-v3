@@ -26,7 +26,7 @@ class ListPredefinedTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListPredefinedTagsResponse
+        r"""ListPredefinedTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPredefinedTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListPredefinedTagsResponse.
+        r"""Gets the tags of this ListPredefinedTagsResponse.
 
         :return: The tags of this ListPredefinedTagsResponse.
         :rtype: list[list[object]]
@@ -53,7 +53,7 @@ class ListPredefinedTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPredefinedTagsResponse.
+        r"""Sets the tags of this ListPredefinedTagsResponse.
 
         :param tags: The tags of this ListPredefinedTagsResponse.
         :type tags: list[list[object]]

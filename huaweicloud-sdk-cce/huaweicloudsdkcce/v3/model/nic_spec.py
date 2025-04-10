@@ -31,7 +31,7 @@ class NicSpec:
     }
 
     def __init__(self, subnet_id=None, fixed_ips=None, ip_block=None, subnet_list=None):
-        """NicSpec
+        r"""NicSpec
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NicSpec:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NicSpec.
+        r"""Gets the subnet_id of this NicSpec.
 
         网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
 
@@ -75,7 +75,7 @@ class NicSpec:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NicSpec.
+        r"""Sets the subnet_id of this NicSpec.
 
         网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
 
@@ -86,7 +86,7 @@ class NicSpec:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this NicSpec.
+        r"""Gets the fixed_ips of this NicSpec.
 
         主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fiexdIps。
 
@@ -97,7 +97,7 @@ class NicSpec:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this NicSpec.
+        r"""Sets the fixed_ips of this NicSpec.
 
         主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fiexdIps。
 
@@ -108,7 +108,7 @@ class NicSpec:
 
     @property
     def ip_block(self):
-        """Gets the ip_block of this NicSpec.
+        r"""Gets the ip_block of this NicSpec.
 
         主网卡的IP段的CIDR格式，创建的节点IP将属于该IP段内。fixedIps或ipBlock同时只能指定一个。
 
@@ -119,7 +119,7 @@ class NicSpec:
 
     @ip_block.setter
     def ip_block(self, ip_block):
-        """Sets the ip_block of this NicSpec.
+        r"""Sets the ip_block of this NicSpec.
 
         主网卡的IP段的CIDR格式，创建的节点IP将属于该IP段内。fixedIps或ipBlock同时只能指定一个。
 
@@ -130,7 +130,7 @@ class NicSpec:
 
     @property
     def subnet_list(self):
-        """Gets the subnet_list of this NicSpec.
+        r"""Gets the subnet_list of this NicSpec.
 
         网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
 
@@ -141,7 +141,7 @@ class NicSpec:
 
     @subnet_list.setter
     def subnet_list(self, subnet_list):
-        """Sets the subnet_list of this NicSpec.
+        r"""Sets the subnet_list of this NicSpec.
 
         网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
 

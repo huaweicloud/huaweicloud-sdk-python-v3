@@ -28,7 +28,7 @@ class HandleUnionMemberQuitListResponse(SdkResponse):
     }
 
     def __init__(self, result=None, operation_id=None):
-        """HandleUnionMemberQuitListResponse
+        r"""HandleUnionMemberQuitListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class HandleUnionMemberQuitListResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this HandleUnionMemberQuitListResponse.
+        r"""Gets the result of this HandleUnionMemberQuitListResponse.
 
         请求结果
 
@@ -62,7 +62,7 @@ class HandleUnionMemberQuitListResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this HandleUnionMemberQuitListResponse.
+        r"""Sets the result of this HandleUnionMemberQuitListResponse.
 
         请求结果
 
@@ -73,7 +73,7 @@ class HandleUnionMemberQuitListResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this HandleUnionMemberQuitListResponse.
+        r"""Gets the operation_id of this HandleUnionMemberQuitListResponse.
 
         操作记录ID
 
@@ -84,7 +84,7 @@ class HandleUnionMemberQuitListResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this HandleUnionMemberQuitListResponse.
+        r"""Sets the operation_id of this HandleUnionMemberQuitListResponse.
 
         操作记录ID
 

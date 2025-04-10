@@ -31,7 +31,7 @@ class CreateDdmDatabaseRequestBody:
     }
 
     def __init__(self, name=None, shard_mode=None, shard_number=None, dn_instances=None):
-        """CreateDdmDatabaseRequestBody
+        r"""CreateDdmDatabaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateDdmDatabaseRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDdmDatabaseRequestBody.
+        r"""Gets the name of this CreateDdmDatabaseRequestBody.
 
         逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
@@ -71,7 +71,7 @@ class CreateDdmDatabaseRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDdmDatabaseRequestBody.
+        r"""Sets the name of this CreateDdmDatabaseRequestBody.
 
         逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
@@ -82,7 +82,7 @@ class CreateDdmDatabaseRequestBody:
 
     @property
     def shard_mode(self):
-        """Gets the shard_mode of this CreateDdmDatabaseRequestBody.
+        r"""Gets the shard_mode of this CreateDdmDatabaseRequestBody.
 
         逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -93,7 +93,7 @@ class CreateDdmDatabaseRequestBody:
 
     @shard_mode.setter
     def shard_mode(self, shard_mode):
-        """Sets the shard_mode of this CreateDdmDatabaseRequestBody.
+        r"""Sets the shard_mode of this CreateDdmDatabaseRequestBody.
 
         逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -104,7 +104,7 @@ class CreateDdmDatabaseRequestBody:
 
     @property
     def shard_number(self):
-        """Gets the shard_number of this CreateDdmDatabaseRequestBody.
+        r"""Gets the shard_number of this CreateDdmDatabaseRequestBody.
 
         同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联DN数量的乘积 - shard_unit为空，大于关联的DN数量，小于等于关联DN数量*64。
 
@@ -115,7 +115,7 @@ class CreateDdmDatabaseRequestBody:
 
     @shard_number.setter
     def shard_number(self, shard_number):
-        """Sets the shard_number of this CreateDdmDatabaseRequestBody.
+        r"""Sets the shard_number of this CreateDdmDatabaseRequestBody.
 
         同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联DN数量的乘积 - shard_unit为空，大于关联的DN数量，小于等于关联DN数量*64。
 
@@ -126,7 +126,7 @@ class CreateDdmDatabaseRequestBody:
 
     @property
     def dn_instances(self):
-        """Gets the dn_instances of this CreateDdmDatabaseRequestBody.
+        r"""Gets the dn_instances of this CreateDdmDatabaseRequestBody.
 
         逻辑库关联的DN信息,最大个数为256。
 
@@ -137,7 +137,7 @@ class CreateDdmDatabaseRequestBody:
 
     @dn_instances.setter
     def dn_instances(self, dn_instances):
-        """Sets the dn_instances of this CreateDdmDatabaseRequestBody.
+        r"""Sets the dn_instances of this CreateDdmDatabaseRequestBody.
 
         逻辑库关联的DN信息,最大个数为256。
 

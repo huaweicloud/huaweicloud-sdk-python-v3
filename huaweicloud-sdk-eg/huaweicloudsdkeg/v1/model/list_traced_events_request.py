@@ -41,7 +41,7 @@ class ListTracedEventsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, event_id=None, source_name=None, event_type=None, subscription_name=None, limit=None, offset=None, channel_id=None):
-        """ListTracedEventsRequest
+        r"""ListTracedEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListTracedEventsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListTracedEventsRequest.
+        r"""Gets the start_time of this ListTracedEventsRequest.
 
         查询数据起始时间
 
@@ -107,7 +107,7 @@ class ListTracedEventsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListTracedEventsRequest.
+        r"""Sets the start_time of this ListTracedEventsRequest.
 
         查询数据起始时间
 
@@ -118,7 +118,7 @@ class ListTracedEventsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListTracedEventsRequest.
+        r"""Gets the end_time of this ListTracedEventsRequest.
 
         查询数据结束时间
 
@@ -129,7 +129,7 @@ class ListTracedEventsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListTracedEventsRequest.
+        r"""Sets the end_time of this ListTracedEventsRequest.
 
         查询数据结束时间
 
@@ -140,7 +140,7 @@ class ListTracedEventsRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ListTracedEventsRequest.
+        r"""Gets the event_id of this ListTracedEventsRequest.
 
         指定查询事件的Id
 
@@ -151,7 +151,7 @@ class ListTracedEventsRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ListTracedEventsRequest.
+        r"""Sets the event_id of this ListTracedEventsRequest.
 
         指定查询事件的Id
 
@@ -162,7 +162,7 @@ class ListTracedEventsRequest:
 
     @property
     def source_name(self):
-        """Gets the source_name of this ListTracedEventsRequest.
+        r"""Gets the source_name of this ListTracedEventsRequest.
 
         事件源名称
 
@@ -173,7 +173,7 @@ class ListTracedEventsRequest:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this ListTracedEventsRequest.
+        r"""Sets the source_name of this ListTracedEventsRequest.
 
         事件源名称
 
@@ -184,7 +184,7 @@ class ListTracedEventsRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListTracedEventsRequest.
+        r"""Gets the event_type of this ListTracedEventsRequest.
 
         指定查询的事件类型，精准匹配
 
@@ -195,7 +195,7 @@ class ListTracedEventsRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListTracedEventsRequest.
+        r"""Sets the event_type of this ListTracedEventsRequest.
 
         指定查询的事件类型，精准匹配
 
@@ -206,7 +206,7 @@ class ListTracedEventsRequest:
 
     @property
     def subscription_name(self):
-        """Gets the subscription_name of this ListTracedEventsRequest.
+        r"""Gets the subscription_name of this ListTracedEventsRequest.
 
         事件订阅名称
 
@@ -217,7 +217,7 @@ class ListTracedEventsRequest:
 
     @subscription_name.setter
     def subscription_name(self, subscription_name):
-        """Sets the subscription_name of this ListTracedEventsRequest.
+        r"""Sets the subscription_name of this ListTracedEventsRequest.
 
         事件订阅名称
 
@@ -228,7 +228,7 @@ class ListTracedEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTracedEventsRequest.
+        r"""Gets the limit of this ListTracedEventsRequest.
 
         每页显示的条目数量，不能小于0
 
@@ -239,7 +239,7 @@ class ListTracedEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTracedEventsRequest.
+        r"""Sets the limit of this ListTracedEventsRequest.
 
         每页显示的条目数量，不能小于0
 
@@ -250,7 +250,7 @@ class ListTracedEventsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTracedEventsRequest.
+        r"""Gets the offset of this ListTracedEventsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -261,7 +261,7 @@ class ListTracedEventsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTracedEventsRequest.
+        r"""Sets the offset of this ListTracedEventsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -272,7 +272,7 @@ class ListTracedEventsRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ListTracedEventsRequest.
+        r"""Gets the channel_id of this ListTracedEventsRequest.
 
         通道ID
 
@@ -283,7 +283,7 @@ class ListTracedEventsRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ListTracedEventsRequest.
+        r"""Sets the channel_id of this ListTracedEventsRequest.
 
         通道ID
 

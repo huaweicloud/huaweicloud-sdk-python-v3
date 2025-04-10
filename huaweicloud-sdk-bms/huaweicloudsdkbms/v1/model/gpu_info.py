@@ -29,7 +29,7 @@ class GpuInfo:
     }
 
     def __init__(self, name=None, count=None, memory_mb=None):
-        """GpuInfo
+        r"""GpuInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GpuInfo:
 
     @property
     def name(self):
-        """Gets the name of this GpuInfo.
+        r"""Gets the name of this GpuInfo.
 
         GPU设备名称。
 
@@ -68,7 +68,7 @@ class GpuInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GpuInfo.
+        r"""Sets the name of this GpuInfo.
 
         GPU设备名称。
 
@@ -79,7 +79,7 @@ class GpuInfo:
 
     @property
     def count(self):
-        """Gets the count of this GpuInfo.
+        r"""Gets the count of this GpuInfo.
 
         GPU设备数量。
 
@@ -90,7 +90,7 @@ class GpuInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this GpuInfo.
+        r"""Sets the count of this GpuInfo.
 
         GPU设备数量。
 
@@ -101,7 +101,7 @@ class GpuInfo:
 
     @property
     def memory_mb(self):
-        """Gets the memory_mb of this GpuInfo.
+        r"""Gets the memory_mb of this GpuInfo.
 
         GPU设备的内存，单位为MB。
 
@@ -112,7 +112,7 @@ class GpuInfo:
 
     @memory_mb.setter
     def memory_mb(self, memory_mb):
-        """Sets the memory_mb of this GpuInfo.
+        r"""Sets the memory_mb of this GpuInfo.
 
         GPU设备的内存，单位为MB。
 

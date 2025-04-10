@@ -24,7 +24,7 @@ class DetachManagedRoleFromPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DetachManagedRoleFromPermissionSetResponse
+        r"""DetachManagedRoleFromPermissionSetResponse
 
         The model defined in huaweicloud sdk
 

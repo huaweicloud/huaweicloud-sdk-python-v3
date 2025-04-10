@@ -23,7 +23,7 @@ class StartDate:
     }
 
     def __init__(self):
-        """StartDate
+        r"""StartDate
 
         The model defined in huaweicloud sdk
 

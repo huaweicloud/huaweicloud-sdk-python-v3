@@ -27,7 +27,7 @@ class BackupInstanceBody:
     }
 
     def __init__(self, remark=None, backup_format=None):
-        """BackupInstanceBody
+        r"""BackupInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BackupInstanceBody:
 
     @property
     def remark(self):
-        """Gets the remark of this BackupInstanceBody.
+        r"""Gets the remark of this BackupInstanceBody.
 
         备份缓存实例的备注信息。
 
@@ -61,7 +61,7 @@ class BackupInstanceBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this BackupInstanceBody.
+        r"""Sets the remark of this BackupInstanceBody.
 
         备份缓存实例的备注信息。
 
@@ -72,7 +72,7 @@ class BackupInstanceBody:
 
     @property
     def backup_format(self):
-        """Gets the backup_format of this BackupInstanceBody.
+        r"""Gets the backup_format of this BackupInstanceBody.
 
         备份缓存实例的格式。
 
@@ -83,7 +83,7 @@ class BackupInstanceBody:
 
     @backup_format.setter
     def backup_format(self, backup_format):
-        """Sets the backup_format of this BackupInstanceBody.
+        r"""Sets the backup_format of this BackupInstanceBody.
 
         备份缓存实例的格式。
 

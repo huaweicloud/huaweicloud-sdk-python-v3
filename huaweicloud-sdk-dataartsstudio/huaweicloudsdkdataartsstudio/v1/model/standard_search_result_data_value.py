@@ -27,7 +27,7 @@ class StandardSearchResultDataValue:
     }
 
     def __init__(self, records=None, total=None):
-        """StandardSearchResultDataValue
+        r"""StandardSearchResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StandardSearchResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this StandardSearchResultDataValue.
+        r"""Gets the records of this StandardSearchResultDataValue.
 
         StandElementValueVO数组。
 
@@ -61,7 +61,7 @@ class StandardSearchResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this StandardSearchResultDataValue.
+        r"""Sets the records of this StandardSearchResultDataValue.
 
         StandElementValueVO数组。
 
@@ -72,7 +72,7 @@ class StandardSearchResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this StandardSearchResultDataValue.
+        r"""Gets the total of this StandardSearchResultDataValue.
 
         数据标准的总数。
 
@@ -83,7 +83,7 @@ class StandardSearchResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this StandardSearchResultDataValue.
+        r"""Sets the total of this StandardSearchResultDataValue.
 
         数据标准的总数。
 

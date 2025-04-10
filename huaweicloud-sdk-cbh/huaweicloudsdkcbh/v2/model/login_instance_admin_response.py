@@ -26,7 +26,7 @@ class LoginInstanceAdminResponse(SdkResponse):
     }
 
     def __init__(self, admin_url=None):
-        """LoginInstanceAdminResponse
+        r"""LoginInstanceAdminResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class LoginInstanceAdminResponse(SdkResponse):
 
     @property
     def admin_url(self):
-        """Gets the admin_url of this LoginInstanceAdminResponse.
+        r"""Gets the admin_url of this LoginInstanceAdminResponse.
 
         云堡垒机登录admin链接。
 
@@ -55,7 +55,7 @@ class LoginInstanceAdminResponse(SdkResponse):
 
     @admin_url.setter
     def admin_url(self, admin_url):
-        """Sets the admin_url of this LoginInstanceAdminResponse.
+        r"""Sets the admin_url of this LoginInstanceAdminResponse.
 
         云堡垒机登录admin链接。
 

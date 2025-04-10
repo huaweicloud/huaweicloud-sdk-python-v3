@@ -35,7 +35,7 @@ class ListSecurityUnreasonablePermissionsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, diagnose_id=None, user_name=None, datasource_type=None):
-        """ListSecurityUnreasonablePermissionsRequest
+        r"""ListSecurityUnreasonablePermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Gets the workspace of this ListSecurityUnreasonablePermissionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -87,7 +87,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Sets the workspace of this ListSecurityUnreasonablePermissionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -98,7 +98,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Gets the limit of this ListSecurityUnreasonablePermissionsRequest.
 
         limit
 
@@ -109,7 +109,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Sets the limit of this ListSecurityUnreasonablePermissionsRequest.
 
         limit
 
@@ -120,7 +120,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Gets the offset of this ListSecurityUnreasonablePermissionsRequest.
 
         offset
 
@@ -131,7 +131,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Sets the offset of this ListSecurityUnreasonablePermissionsRequest.
 
         offset
 
@@ -142,7 +142,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @property
     def diagnose_id(self):
-        """Gets the diagnose_id of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Gets the diagnose_id of this ListSecurityUnreasonablePermissionsRequest.
 
         诊断任务id，通过调用查询数据权限控制模块诊断结果接口获取。
 
@@ -153,7 +153,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @diagnose_id.setter
     def diagnose_id(self, diagnose_id):
-        """Sets the diagnose_id of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Sets the diagnose_id of this ListSecurityUnreasonablePermissionsRequest.
 
         诊断任务id，通过调用查询数据权限控制模块诊断结果接口获取。
 
@@ -164,7 +164,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Gets the user_name of this ListSecurityUnreasonablePermissionsRequest.
 
         用户名。
 
@@ -175,7 +175,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Sets the user_name of this ListSecurityUnreasonablePermissionsRequest.
 
         用户名。
 
@@ -186,7 +186,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Gets the datasource_type of this ListSecurityUnreasonablePermissionsRequest.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -197,7 +197,7 @@ class ListSecurityUnreasonablePermissionsRequest:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this ListSecurityUnreasonablePermissionsRequest.
+        r"""Sets the datasource_type of this ListSecurityUnreasonablePermissionsRequest.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 

@@ -31,7 +31,7 @@ class ShowResJobRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, category=None):
-        """ShowResJobRequest
+        r"""ShowResJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowResJobRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowResJobRequest.
+        r"""Gets the content_type of this ShowResJobRequest.
 
         内容类型，取值为application/json
 
@@ -72,7 +72,7 @@ class ShowResJobRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowResJobRequest.
+        r"""Sets the content_type of this ShowResJobRequest.
 
         内容类型，取值为application/json
 
@@ -83,7 +83,7 @@ class ShowResJobRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowResJobRequest.
+        r"""Gets the workspace_id of this ShowResJobRequest.
 
         工作空间id
 
@@ -94,7 +94,7 @@ class ShowResJobRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowResJobRequest.
+        r"""Sets the workspace_id of this ShowResJobRequest.
 
         工作空间id
 
@@ -105,7 +105,7 @@ class ShowResJobRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResJobRequest.
+        r"""Gets the resource_id of this ShowResJobRequest.
 
         资源id（数据源id 或 场景id）
 
@@ -116,7 +116,7 @@ class ShowResJobRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResJobRequest.
+        r"""Sets the resource_id of this ShowResJobRequest.
 
         资源id（数据源id 或 场景id）
 
@@ -127,7 +127,7 @@ class ShowResJobRequest:
 
     @property
     def category(self):
-        """Gets the category of this ShowResJobRequest.
+        r"""Gets the category of this ShowResJobRequest.
 
         类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
 
@@ -138,7 +138,7 @@ class ShowResJobRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowResJobRequest.
+        r"""Sets the category of this ShowResJobRequest.
 
         类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
 

@@ -25,7 +25,7 @@ class RegionsPrimitiveTypeHolder:
     }
 
     def __init__(self, regions=None):
-        """RegionsPrimitiveTypeHolder
+        r"""RegionsPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegionsPrimitiveTypeHolder:
 
     @property
     def regions(self):
-        """Gets the regions of this RegionsPrimitiveTypeHolder.
+        r"""Gets the regions of this RegionsPrimitiveTypeHolder.
 
         用户指定资源栈集操作所涉及的区域。  *在DeployStackSet API中，根据用户输入regions和domain_ids列表，以笛卡尔积的形式选择资源栈集中存在的资源栈实例进行部署。如果指定了没有被资源栈集所管理的region，则会报错。*
 
@@ -53,7 +53,7 @@ class RegionsPrimitiveTypeHolder:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this RegionsPrimitiveTypeHolder.
+        r"""Sets the regions of this RegionsPrimitiveTypeHolder.
 
         用户指定资源栈集操作所涉及的区域。  *在DeployStackSet API中，根据用户输入regions和domain_ids列表，以笛卡尔积的形式选择资源栈集中存在的资源栈实例进行部署。如果指定了没有被资源栈集所管理的region，则会报错。*
 

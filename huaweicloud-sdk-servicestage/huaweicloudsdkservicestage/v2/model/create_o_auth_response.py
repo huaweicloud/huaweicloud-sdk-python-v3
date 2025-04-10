@@ -26,7 +26,7 @@ class CreateOAuthResponse(SdkResponse):
     }
 
     def __init__(self, authorization=None):
-        """CreateOAuthResponse
+        r"""CreateOAuthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateOAuthResponse(SdkResponse):
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreateOAuthResponse.
+        r"""Gets the authorization of this CreateOAuthResponse.
 
         :return: The authorization of this CreateOAuthResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`
@@ -53,7 +53,7 @@ class CreateOAuthResponse(SdkResponse):
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreateOAuthResponse.
+        r"""Sets the authorization of this CreateOAuthResponse.
 
         :param authorization: The authorization of this CreateOAuthResponse.
         :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`

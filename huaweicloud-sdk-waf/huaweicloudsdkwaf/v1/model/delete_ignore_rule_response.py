@@ -48,7 +48,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, advanced=None, domains=None):
-        """DeleteIgnoreRuleResponse
+        r"""DeleteIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteIgnoreRuleResponse.
+        r"""Gets the id of this DeleteIgnoreRuleResponse.
 
         规则id
 
@@ -132,7 +132,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteIgnoreRuleResponse.
+        r"""Sets the id of this DeleteIgnoreRuleResponse.
 
         规则id
 
@@ -143,7 +143,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this DeleteIgnoreRuleResponse.
+        r"""Gets the policyid of this DeleteIgnoreRuleResponse.
 
         策略id
 
@@ -154,7 +154,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this DeleteIgnoreRuleResponse.
+        r"""Sets the policyid of this DeleteIgnoreRuleResponse.
 
         策略id
 
@@ -165,7 +165,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DeleteIgnoreRuleResponse.
+        r"""Gets the timestamp of this DeleteIgnoreRuleResponse.
 
         创建规则的时间戳
 
@@ -176,7 +176,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DeleteIgnoreRuleResponse.
+        r"""Sets the timestamp of this DeleteIgnoreRuleResponse.
 
         创建规则的时间戳
 
@@ -187,7 +187,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeleteIgnoreRuleResponse.
+        r"""Gets the description of this DeleteIgnoreRuleResponse.
 
         规则描述
 
@@ -198,7 +198,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeleteIgnoreRuleResponse.
+        r"""Sets the description of this DeleteIgnoreRuleResponse.
 
         规则描述
 
@@ -209,7 +209,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteIgnoreRuleResponse.
+        r"""Gets the status of this DeleteIgnoreRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -220,7 +220,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteIgnoreRuleResponse.
+        r"""Sets the status of this DeleteIgnoreRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -231,7 +231,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this DeleteIgnoreRuleResponse.
+        r"""Gets the url of this DeleteIgnoreRuleResponse.
 
         误报规则屏蔽路径，仅在mode为0的状态下有该字段
 
@@ -242,7 +242,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DeleteIgnoreRuleResponse.
+        r"""Sets the url of this DeleteIgnoreRuleResponse.
 
         误报规则屏蔽路径，仅在mode为0的状态下有该字段
 
@@ -253,7 +253,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this DeleteIgnoreRuleResponse.
+        r"""Gets the rule of this DeleteIgnoreRuleResponse.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -264,7 +264,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this DeleteIgnoreRuleResponse.
+        r"""Sets the rule of this DeleteIgnoreRuleResponse.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -275,7 +275,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this DeleteIgnoreRuleResponse.
+        r"""Gets the mode of this DeleteIgnoreRuleResponse.
 
         版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions字段
 
@@ -286,7 +286,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this DeleteIgnoreRuleResponse.
+        r"""Sets the mode of this DeleteIgnoreRuleResponse.
 
         版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions字段
 
@@ -297,7 +297,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def url_logic(self):
-        """Gets the url_logic of this DeleteIgnoreRuleResponse.
+        r"""Gets the url_logic of this DeleteIgnoreRuleResponse.
 
         url匹配逻辑
 
@@ -308,7 +308,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @url_logic.setter
     def url_logic(self, url_logic):
-        """Sets the url_logic of this DeleteIgnoreRuleResponse.
+        r"""Sets the url_logic of this DeleteIgnoreRuleResponse.
 
         url匹配逻辑
 
@@ -319,7 +319,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this DeleteIgnoreRuleResponse.
+        r"""Gets the conditions of this DeleteIgnoreRuleResponse.
 
         条件
 
@@ -330,7 +330,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this DeleteIgnoreRuleResponse.
+        r"""Sets the conditions of this DeleteIgnoreRuleResponse.
 
         条件
 
@@ -341,7 +341,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def advanced(self):
-        """Gets the advanced of this DeleteIgnoreRuleResponse.
+        r"""Gets the advanced of this DeleteIgnoreRuleResponse.
 
         :return: The advanced of this DeleteIgnoreRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -350,7 +350,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this DeleteIgnoreRuleResponse.
+        r"""Sets the advanced of this DeleteIgnoreRuleResponse.
 
         :param advanced: The advanced of this DeleteIgnoreRuleResponse.
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -359,7 +359,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this DeleteIgnoreRuleResponse.
+        r"""Gets the domains of this DeleteIgnoreRuleResponse.
 
         防护域名或防护网站
 
@@ -370,7 +370,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this DeleteIgnoreRuleResponse.
+        r"""Sets the domains of this DeleteIgnoreRuleResponse.
 
         防护域名或防护网站
 

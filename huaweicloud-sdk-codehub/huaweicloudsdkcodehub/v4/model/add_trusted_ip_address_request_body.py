@@ -37,7 +37,7 @@ class AddTrustedIpAddressRequestBody:
     }
 
     def __init__(self, ip_type=None, ip_start=None, ip_end=None, view_flag=None, download_flag=None, upload_flag=None, remark=None):
-        """AddTrustedIpAddressRequestBody
+        r"""AddTrustedIpAddressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this AddTrustedIpAddressRequestBody.
+        r"""Gets the ip_type of this AddTrustedIpAddressRequestBody.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -96,7 +96,7 @@ class AddTrustedIpAddressRequestBody:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this AddTrustedIpAddressRequestBody.
+        r"""Sets the ip_type of this AddTrustedIpAddressRequestBody.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -107,7 +107,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def ip_start(self):
-        """Gets the ip_start of this AddTrustedIpAddressRequestBody.
+        r"""Gets the ip_start of this AddTrustedIpAddressRequestBody.
 
         起始ip
 
@@ -118,7 +118,7 @@ class AddTrustedIpAddressRequestBody:
 
     @ip_start.setter
     def ip_start(self, ip_start):
-        """Sets the ip_start of this AddTrustedIpAddressRequestBody.
+        r"""Sets the ip_start of this AddTrustedIpAddressRequestBody.
 
         起始ip
 
@@ -129,7 +129,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def ip_end(self):
-        """Gets the ip_end of this AddTrustedIpAddressRequestBody.
+        r"""Gets the ip_end of this AddTrustedIpAddressRequestBody.
 
         结束ip
 
@@ -140,7 +140,7 @@ class AddTrustedIpAddressRequestBody:
 
     @ip_end.setter
     def ip_end(self, ip_end):
-        """Sets the ip_end of this AddTrustedIpAddressRequestBody.
+        r"""Sets the ip_end of this AddTrustedIpAddressRequestBody.
 
         结束ip
 
@@ -151,7 +151,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def view_flag(self):
-        """Gets the view_flag of this AddTrustedIpAddressRequestBody.
+        r"""Gets the view_flag of this AddTrustedIpAddressRequestBody.
 
         是否允许访问代码仓库
 
@@ -162,7 +162,7 @@ class AddTrustedIpAddressRequestBody:
 
     @view_flag.setter
     def view_flag(self, view_flag):
-        """Sets the view_flag of this AddTrustedIpAddressRequestBody.
+        r"""Sets the view_flag of this AddTrustedIpAddressRequestBody.
 
         是否允许访问代码仓库
 
@@ -173,7 +173,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def download_flag(self):
-        """Gets the download_flag of this AddTrustedIpAddressRequestBody.
+        r"""Gets the download_flag of this AddTrustedIpAddressRequestBody.
 
         是否允许下载代码
 
@@ -184,7 +184,7 @@ class AddTrustedIpAddressRequestBody:
 
     @download_flag.setter
     def download_flag(self, download_flag):
-        """Sets the download_flag of this AddTrustedIpAddressRequestBody.
+        r"""Sets the download_flag of this AddTrustedIpAddressRequestBody.
 
         是否允许下载代码
 
@@ -195,7 +195,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def upload_flag(self):
-        """Gets the upload_flag of this AddTrustedIpAddressRequestBody.
+        r"""Gets the upload_flag of this AddTrustedIpAddressRequestBody.
 
         是否允许提交代码
 
@@ -206,7 +206,7 @@ class AddTrustedIpAddressRequestBody:
 
     @upload_flag.setter
     def upload_flag(self, upload_flag):
-        """Sets the upload_flag of this AddTrustedIpAddressRequestBody.
+        r"""Sets the upload_flag of this AddTrustedIpAddressRequestBody.
 
         是否允许提交代码
 
@@ -217,7 +217,7 @@ class AddTrustedIpAddressRequestBody:
 
     @property
     def remark(self):
-        """Gets the remark of this AddTrustedIpAddressRequestBody.
+        r"""Gets the remark of this AddTrustedIpAddressRequestBody.
 
         备注
 
@@ -228,7 +228,7 @@ class AddTrustedIpAddressRequestBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AddTrustedIpAddressRequestBody.
+        r"""Sets the remark of this AddTrustedIpAddressRequestBody.
 
         备注
 

@@ -32,7 +32,7 @@ class UpdateLogGroupResponse(SdkResponse):
     }
 
     def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None):
-        """UpdateLogGroupResponse
+        r"""UpdateLogGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this UpdateLogGroupResponse.
+        r"""Gets the creation_time of this UpdateLogGroupResponse.
 
         创建该日志组的时间， 毫秒级。
 
@@ -76,7 +76,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this UpdateLogGroupResponse.
+        r"""Sets the creation_time of this UpdateLogGroupResponse.
 
         创建该日志组的时间， 毫秒级。
 
@@ -87,7 +87,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this UpdateLogGroupResponse.
+        r"""Gets the log_group_name of this UpdateLogGroupResponse.
 
         日志组的名称。
 
@@ -98,7 +98,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this UpdateLogGroupResponse.
+        r"""Sets the log_group_name of this UpdateLogGroupResponse.
 
         日志组的名称。
 
@@ -109,7 +109,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateLogGroupResponse.
+        r"""Gets the log_group_id of this UpdateLogGroupResponse.
 
         日志组ID。
 
@@ -120,7 +120,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateLogGroupResponse.
+        r"""Sets the log_group_id of this UpdateLogGroupResponse.
 
         日志组ID。
 
@@ -131,7 +131,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this UpdateLogGroupResponse.
+        r"""Gets the ttl_in_days of this UpdateLogGroupResponse.
 
         日志存储时间（天）。
 
@@ -142,7 +142,7 @@ class UpdateLogGroupResponse(SdkResponse):
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this UpdateLogGroupResponse.
+        r"""Sets the ttl_in_days of this UpdateLogGroupResponse.
 
         日志存储时间（天）。
 

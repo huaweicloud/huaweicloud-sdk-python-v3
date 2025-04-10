@@ -27,7 +27,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
     }
 
     def __init__(self, subnet_id=None, subnet_list=None):
-        """NodeSpecUpdateNodeNicSpecUpdatePrimaryNic
+        r"""NodeSpecUpdateNodeNicSpecUpdatePrimaryNic
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
+        r"""Gets the subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
         网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
 
@@ -61,7 +61,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
+        r"""Sets the subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
         网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
 
@@ -72,7 +72,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
 
     @property
     def subnet_list(self):
-        """Gets the subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
+        r"""Gets the subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
         网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
 
@@ -83,7 +83,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
 
     @subnet_list.setter
     def subnet_list(self, subnet_list):
-        """Sets the subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
+        r"""Sets the subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
         网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
 

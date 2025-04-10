@@ -25,7 +25,7 @@ class CinderDeleteVolumeTransferRequest:
     }
 
     def __init__(self, transfer_id=None):
-        """CinderDeleteVolumeTransferRequest
+        r"""CinderDeleteVolumeTransferRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CinderDeleteVolumeTransferRequest:
 
     @property
     def transfer_id(self):
-        """Gets the transfer_id of this CinderDeleteVolumeTransferRequest.
+        r"""Gets the transfer_id of this CinderDeleteVolumeTransferRequest.
 
         云硬盘过户记录ID
 
@@ -53,7 +53,7 @@ class CinderDeleteVolumeTransferRequest:
 
     @transfer_id.setter
     def transfer_id(self, transfer_id):
-        """Sets the transfer_id of this CinderDeleteVolumeTransferRequest.
+        r"""Sets the transfer_id of this CinderDeleteVolumeTransferRequest.
 
         云硬盘过户记录ID
 

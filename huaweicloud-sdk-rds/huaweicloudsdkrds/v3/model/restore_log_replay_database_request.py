@@ -29,7 +29,7 @@ class RestoreLogReplayDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """RestoreLogReplayDatabaseRequest
+        r"""RestoreLogReplayDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestoreLogReplayDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestoreLogReplayDatabaseRequest.
+        r"""Gets the instance_id of this RestoreLogReplayDatabaseRequest.
 
         实例id
 
@@ -66,7 +66,7 @@ class RestoreLogReplayDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestoreLogReplayDatabaseRequest.
+        r"""Sets the instance_id of this RestoreLogReplayDatabaseRequest.
 
         实例id
 
@@ -77,7 +77,7 @@ class RestoreLogReplayDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestoreLogReplayDatabaseRequest.
+        r"""Gets the x_language of this RestoreLogReplayDatabaseRequest.
 
         语言
 
@@ -88,7 +88,7 @@ class RestoreLogReplayDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestoreLogReplayDatabaseRequest.
+        r"""Sets the x_language of this RestoreLogReplayDatabaseRequest.
 
         语言
 
@@ -99,7 +99,7 @@ class RestoreLogReplayDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreLogReplayDatabaseRequest.
+        r"""Gets the body of this RestoreLogReplayDatabaseRequest.
 
         :return: The body of this RestoreLogReplayDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.LogReplayDatabaseReq`
@@ -108,7 +108,7 @@ class RestoreLogReplayDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreLogReplayDatabaseRequest.
+        r"""Sets the body of this RestoreLogReplayDatabaseRequest.
 
         :param body: The body of this RestoreLogReplayDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.LogReplayDatabaseReq`

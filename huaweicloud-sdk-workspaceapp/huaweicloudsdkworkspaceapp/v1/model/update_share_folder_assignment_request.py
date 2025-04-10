@@ -27,7 +27,7 @@ class UpdateShareFolderAssignmentRequest:
     }
 
     def __init__(self, storage_id=None, body=None):
-        """UpdateShareFolderAssignmentRequest
+        r"""UpdateShareFolderAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateShareFolderAssignmentRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this UpdateShareFolderAssignmentRequest.
+        r"""Gets the storage_id of this UpdateShareFolderAssignmentRequest.
 
         WKS存储ID。
 
@@ -60,7 +60,7 @@ class UpdateShareFolderAssignmentRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this UpdateShareFolderAssignmentRequest.
+        r"""Sets the storage_id of this UpdateShareFolderAssignmentRequest.
 
         WKS存储ID。
 
@@ -71,7 +71,7 @@ class UpdateShareFolderAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateShareFolderAssignmentRequest.
+        r"""Gets the body of this UpdateShareFolderAssignmentRequest.
 
         :return: The body of this UpdateShareFolderAssignmentRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AssignShareFolderReq`
@@ -80,7 +80,7 @@ class UpdateShareFolderAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateShareFolderAssignmentRequest.
+        r"""Sets the body of this UpdateShareFolderAssignmentRequest.
 
         :param body: The body of this UpdateShareFolderAssignmentRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AssignShareFolderReq`

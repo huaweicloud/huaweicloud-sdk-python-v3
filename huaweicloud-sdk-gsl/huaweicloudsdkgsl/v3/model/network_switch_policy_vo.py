@@ -55,7 +55,7 @@ class NetworkSwitchPolicyVO:
     }
 
     def __init__(self, id=None, policy_name=None, preferred_carrier=None, least_preferred_carrier=None, optimal_signal=None, auto_switch=None, weak_signal_switch=None, connect_ip=None, create_time=None, modify_time=None, status=None, type=None, used=None, version=None, switch_order=None, blacklist=None):
-        """NetworkSwitchPolicyVO
+        r"""NetworkSwitchPolicyVO
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def id(self):
-        """Gets the id of this NetworkSwitchPolicyVO.
+        r"""Gets the id of this NetworkSwitchPolicyVO.
 
         策略主键id
 
@@ -159,7 +159,7 @@ class NetworkSwitchPolicyVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NetworkSwitchPolicyVO.
+        r"""Sets the id of this NetworkSwitchPolicyVO.
 
         策略主键id
 
@@ -170,7 +170,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this NetworkSwitchPolicyVO.
+        r"""Gets the policy_name of this NetworkSwitchPolicyVO.
 
         策略名称
 
@@ -181,7 +181,7 @@ class NetworkSwitchPolicyVO:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this NetworkSwitchPolicyVO.
+        r"""Sets the policy_name of this NetworkSwitchPolicyVO.
 
         策略名称
 
@@ -192,7 +192,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def preferred_carrier(self):
-        """Gets the preferred_carrier of this NetworkSwitchPolicyVO.
+        r"""Gets the preferred_carrier of this NetworkSwitchPolicyVO.
 
         最优选运营商,1:移动、2:电信、3:联通、4:上次使用的运营商
 
@@ -203,7 +203,7 @@ class NetworkSwitchPolicyVO:
 
     @preferred_carrier.setter
     def preferred_carrier(self, preferred_carrier):
-        """Sets the preferred_carrier of this NetworkSwitchPolicyVO.
+        r"""Sets the preferred_carrier of this NetworkSwitchPolicyVO.
 
         最优选运营商,1:移动、2:电信、3:联通、4:上次使用的运营商
 
@@ -214,7 +214,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def least_preferred_carrier(self):
-        """Gets the least_preferred_carrier of this NetworkSwitchPolicyVO.
+        r"""Gets the least_preferred_carrier of this NetworkSwitchPolicyVO.
 
         最不优选运营商,1:移动、2:电信、3:联通
 
@@ -225,7 +225,7 @@ class NetworkSwitchPolicyVO:
 
     @least_preferred_carrier.setter
     def least_preferred_carrier(self, least_preferred_carrier):
-        """Sets the least_preferred_carrier of this NetworkSwitchPolicyVO.
+        r"""Sets the least_preferred_carrier of this NetworkSwitchPolicyVO.
 
         最不优选运营商,1:移动、2:电信、3:联通
 
@@ -236,7 +236,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def optimal_signal(self):
-        """Gets the optimal_signal of this NetworkSwitchPolicyVO.
+        r"""Gets the optimal_signal of this NetworkSwitchPolicyVO.
 
         最优信号选取策略是否开启,true:开启,false:不开启
 
@@ -247,7 +247,7 @@ class NetworkSwitchPolicyVO:
 
     @optimal_signal.setter
     def optimal_signal(self, optimal_signal):
-        """Sets the optimal_signal of this NetworkSwitchPolicyVO.
+        r"""Sets the optimal_signal of this NetworkSwitchPolicyVO.
 
         最优信号选取策略是否开启,true:开启,false:不开启
 
@@ -258,7 +258,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def auto_switch(self):
-        """Gets the auto_switch of this NetworkSwitchPolicyVO.
+        r"""Gets the auto_switch of this NetworkSwitchPolicyVO.
 
         自动切卡是否开启,true:开启,false:不开启
 
@@ -269,7 +269,7 @@ class NetworkSwitchPolicyVO:
 
     @auto_switch.setter
     def auto_switch(self, auto_switch):
-        """Sets the auto_switch of this NetworkSwitchPolicyVO.
+        r"""Sets the auto_switch of this NetworkSwitchPolicyVO.
 
         自动切卡是否开启,true:开启,false:不开启
 
@@ -280,7 +280,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def weak_signal_switch(self):
-        """Gets the weak_signal_switch of this NetworkSwitchPolicyVO.
+        r"""Gets the weak_signal_switch of this NetworkSwitchPolicyVO.
 
         弱信号切换策略是否开启,true:开启,false:不开启
 
@@ -291,7 +291,7 @@ class NetworkSwitchPolicyVO:
 
     @weak_signal_switch.setter
     def weak_signal_switch(self, weak_signal_switch):
-        """Sets the weak_signal_switch of this NetworkSwitchPolicyVO.
+        r"""Sets the weak_signal_switch of this NetworkSwitchPolicyVO.
 
         弱信号切换策略是否开启,true:开启,false:不开启
 
@@ -302,7 +302,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def connect_ip(self):
-        """Gets the connect_ip of this NetworkSwitchPolicyVO.
+        r"""Gets the connect_ip of this NetworkSwitchPolicyVO.
 
         连接延时切换策略，连接延时时需要ping的ip地址
 
@@ -313,7 +313,7 @@ class NetworkSwitchPolicyVO:
 
     @connect_ip.setter
     def connect_ip(self, connect_ip):
-        """Sets the connect_ip of this NetworkSwitchPolicyVO.
+        r"""Sets the connect_ip of this NetworkSwitchPolicyVO.
 
         连接延时切换策略，连接延时时需要ping的ip地址
 
@@ -324,7 +324,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this NetworkSwitchPolicyVO.
+        r"""Gets the create_time of this NetworkSwitchPolicyVO.
 
         创建时间
 
@@ -335,7 +335,7 @@ class NetworkSwitchPolicyVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this NetworkSwitchPolicyVO.
+        r"""Sets the create_time of this NetworkSwitchPolicyVO.
 
         创建时间
 
@@ -346,7 +346,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this NetworkSwitchPolicyVO.
+        r"""Gets the modify_time of this NetworkSwitchPolicyVO.
 
         修改时间
 
@@ -357,7 +357,7 @@ class NetworkSwitchPolicyVO:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this NetworkSwitchPolicyVO.
+        r"""Sets the modify_time of this NetworkSwitchPolicyVO.
 
         修改时间
 
@@ -368,7 +368,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def status(self):
-        """Gets the status of this NetworkSwitchPolicyVO.
+        r"""Gets the status of this NetworkSwitchPolicyVO.
 
         状态,1:启用、0:禁用
 
@@ -379,7 +379,7 @@ class NetworkSwitchPolicyVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NetworkSwitchPolicyVO.
+        r"""Sets the status of this NetworkSwitchPolicyVO.
 
         状态,1:启用、0:禁用
 
@@ -390,7 +390,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def type(self):
-        """Gets the type of this NetworkSwitchPolicyVO.
+        r"""Gets the type of this NetworkSwitchPolicyVO.
 
         策略类型,0:系统策略,1:私有策略
 
@@ -401,7 +401,7 @@ class NetworkSwitchPolicyVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NetworkSwitchPolicyVO.
+        r"""Sets the type of this NetworkSwitchPolicyVO.
 
         策略类型,0:系统策略,1:私有策略
 
@@ -412,7 +412,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def used(self):
-        """Gets the used of this NetworkSwitchPolicyVO.
+        r"""Gets the used of this NetworkSwitchPolicyVO.
 
         策略是否已被使用过，即是否已被执行过策略切换，false：未被使用过，true：已被使用过
 
@@ -423,7 +423,7 @@ class NetworkSwitchPolicyVO:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this NetworkSwitchPolicyVO.
+        r"""Sets the used of this NetworkSwitchPolicyVO.
 
         策略是否已被使用过，即是否已被执行过策略切换，false：未被使用过，true：已被使用过
 
@@ -434,7 +434,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def version(self):
-        """Gets the version of this NetworkSwitchPolicyVO.
+        r"""Gets the version of this NetworkSwitchPolicyVO.
 
         版本枚举1-SDK版 2-无SDK版
 
@@ -445,7 +445,7 @@ class NetworkSwitchPolicyVO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NetworkSwitchPolicyVO.
+        r"""Sets the version of this NetworkSwitchPolicyVO.
 
         版本枚举1-SDK版 2-无SDK版
 
@@ -456,7 +456,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def switch_order(self):
-        """Gets the switch_order of this NetworkSwitchPolicyVO.
+        r"""Gets the switch_order of this NetworkSwitchPolicyVO.
 
         切卡顺序，运营商以英文逗号分隔
 
@@ -467,7 +467,7 @@ class NetworkSwitchPolicyVO:
 
     @switch_order.setter
     def switch_order(self, switch_order):
-        """Sets the switch_order of this NetworkSwitchPolicyVO.
+        r"""Sets the switch_order of this NetworkSwitchPolicyVO.
 
         切卡顺序，运营商以英文逗号分隔
 
@@ -478,7 +478,7 @@ class NetworkSwitchPolicyVO:
 
     @property
     def blacklist(self):
-        """Gets the blacklist of this NetworkSwitchPolicyVO.
+        r"""Gets the blacklist of this NetworkSwitchPolicyVO.
 
         黑名单，只支持单个运营商
 
@@ -489,7 +489,7 @@ class NetworkSwitchPolicyVO:
 
     @blacklist.setter
     def blacklist(self, blacklist):
-        """Sets the blacklist of this NetworkSwitchPolicyVO.
+        r"""Sets the blacklist of this NetworkSwitchPolicyVO.
 
         黑名单，只支持单个运营商
 

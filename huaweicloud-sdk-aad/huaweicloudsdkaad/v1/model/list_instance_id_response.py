@@ -26,7 +26,7 @@ class ListInstanceIdResponse(SdkResponse):
     }
 
     def __init__(self, instance_ids=None):
-        """ListInstanceIdResponse
+        r"""ListInstanceIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstanceIdResponse(SdkResponse):
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ListInstanceIdResponse.
+        r"""Gets the instance_ids of this ListInstanceIdResponse.
 
         实例ID列表
 
@@ -55,7 +55,7 @@ class ListInstanceIdResponse(SdkResponse):
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ListInstanceIdResponse.
+        r"""Sets the instance_ids of this ListInstanceIdResponse.
 
         实例ID列表
 

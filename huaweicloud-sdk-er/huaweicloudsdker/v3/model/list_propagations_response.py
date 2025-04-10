@@ -30,7 +30,7 @@ class ListPropagationsResponse(SdkResponse):
     }
 
     def __init__(self, propagations=None, request_id=None, page_info=None):
-        """ListPropagationsResponse
+        r"""ListPropagationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPropagationsResponse(SdkResponse):
 
     @property
     def propagations(self):
-        """Gets the propagations of this ListPropagationsResponse.
+        r"""Gets the propagations of this ListPropagationsResponse.
 
         路由传播列表
 
@@ -69,7 +69,7 @@ class ListPropagationsResponse(SdkResponse):
 
     @propagations.setter
     def propagations(self, propagations):
-        """Sets the propagations of this ListPropagationsResponse.
+        r"""Sets the propagations of this ListPropagationsResponse.
 
         路由传播列表
 
@@ -80,7 +80,7 @@ class ListPropagationsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPropagationsResponse.
+        r"""Gets the request_id of this ListPropagationsResponse.
 
         请求ID
 
@@ -91,7 +91,7 @@ class ListPropagationsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPropagationsResponse.
+        r"""Sets the request_id of this ListPropagationsResponse.
 
         请求ID
 
@@ -102,7 +102,7 @@ class ListPropagationsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPropagationsResponse.
+        r"""Gets the page_info of this ListPropagationsResponse.
 
         :return: The page_info of this ListPropagationsResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListPropagationsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPropagationsResponse.
+        r"""Sets the page_info of this ListPropagationsResponse.
 
         :param page_info: The page_info of this ListPropagationsResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`

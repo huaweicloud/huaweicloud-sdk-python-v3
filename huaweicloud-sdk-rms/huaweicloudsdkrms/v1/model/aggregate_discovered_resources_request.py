@@ -31,7 +31,7 @@ class AggregateDiscoveredResourcesRequest:
     }
 
     def __init__(self, aggregator_id=None, filter=None, provider=None, resource_type=None):
-        """AggregateDiscoveredResourcesRequest
+        r"""AggregateDiscoveredResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregateDiscoveredResourcesRequest.
+        r"""Gets the aggregator_id of this AggregateDiscoveredResourcesRequest.
 
         资源聚合器ID。
 
@@ -74,7 +74,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregateDiscoveredResourcesRequest.
+        r"""Sets the aggregator_id of this AggregateDiscoveredResourcesRequest.
 
         资源聚合器ID。
 
@@ -85,7 +85,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this AggregateDiscoveredResourcesRequest.
+        r"""Gets the filter of this AggregateDiscoveredResourcesRequest.
 
         :return: The filter of this AggregateDiscoveredResourcesRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.ResourcesFilters`
@@ -94,7 +94,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this AggregateDiscoveredResourcesRequest.
+        r"""Sets the filter of this AggregateDiscoveredResourcesRequest.
 
         :param filter: The filter of this AggregateDiscoveredResourcesRequest.
         :type filter: :class:`huaweicloudsdkrms.v1.ResourcesFilters`
@@ -103,7 +103,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this AggregateDiscoveredResourcesRequest.
+        r"""Gets the provider of this AggregateDiscoveredResourcesRequest.
 
         云服务类型。
 
@@ -114,7 +114,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this AggregateDiscoveredResourcesRequest.
+        r"""Sets the provider of this AggregateDiscoveredResourcesRequest.
 
         云服务类型。
 
@@ -125,7 +125,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AggregateDiscoveredResourcesRequest.
+        r"""Gets the resource_type of this AggregateDiscoveredResourcesRequest.
 
         资源类型。
 
@@ -136,7 +136,7 @@ class AggregateDiscoveredResourcesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AggregateDiscoveredResourcesRequest.
+        r"""Sets the resource_type of this AggregateDiscoveredResourcesRequest.
 
         资源类型。
 

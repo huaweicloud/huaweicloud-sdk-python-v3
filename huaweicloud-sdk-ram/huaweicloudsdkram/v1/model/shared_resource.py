@@ -35,7 +35,7 @@ class SharedResource:
     }
 
     def __init__(self, resource_urn=None, created_at=None, updated_at=None, resource_type=None, resource_share_id=None, status=None):
-        """SharedResource
+        r"""SharedResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SharedResource:
 
     @property
     def resource_urn(self):
-        """Gets the resource_urn of this SharedResource.
+        r"""Gets the resource_urn of this SharedResource.
 
         资源的统一资源名称。
 
@@ -89,7 +89,7 @@ class SharedResource:
 
     @resource_urn.setter
     def resource_urn(self, resource_urn):
-        """Sets the resource_urn of this SharedResource.
+        r"""Sets the resource_urn of this SharedResource.
 
         资源的统一资源名称。
 
@@ -100,7 +100,7 @@ class SharedResource:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SharedResource.
+        r"""Gets the created_at of this SharedResource.
 
         资源与资源共享实例关联的时间。
 
@@ -111,7 +111,7 @@ class SharedResource:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SharedResource.
+        r"""Sets the created_at of this SharedResource.
 
         资源与资源共享实例关联的时间。
 
@@ -122,7 +122,7 @@ class SharedResource:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SharedResource.
+        r"""Gets the updated_at of this SharedResource.
 
         最后一次更新资源共享实例的时间。
 
@@ -133,7 +133,7 @@ class SharedResource:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SharedResource.
+        r"""Sets the updated_at of this SharedResource.
 
         最后一次更新资源共享实例的时间。
 
@@ -144,7 +144,7 @@ class SharedResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this SharedResource.
+        r"""Gets the resource_type of this SharedResource.
 
         资源的类型。
 
@@ -155,7 +155,7 @@ class SharedResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this SharedResource.
+        r"""Sets the resource_type of this SharedResource.
 
         资源的类型。
 
@@ -166,7 +166,7 @@ class SharedResource:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this SharedResource.
+        r"""Gets the resource_share_id of this SharedResource.
 
         资源绑定的资源共享实例的ID。
 
@@ -177,7 +177,7 @@ class SharedResource:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this SharedResource.
+        r"""Sets the resource_share_id of this SharedResource.
 
         资源绑定的资源共享实例的ID。
 
@@ -188,7 +188,7 @@ class SharedResource:
 
     @property
     def status(self):
-        """Gets the status of this SharedResource.
+        r"""Gets the status of this SharedResource.
 
         资源绑定的当前状态。
 
@@ -199,7 +199,7 @@ class SharedResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SharedResource.
+        r"""Sets the status of this SharedResource.
 
         资源绑定的当前状态。
 

@@ -53,7 +53,7 @@ class CreateClusterBody:
     }
 
     def __init__(self, name=None, backup_strategy=None, roles=None, nics=None, enterprise_project_id=None, tags=None, availability_zone=None, datastore=None, authority_enable=None, https_enable=None, admin_pwd=None, public_ip_req=None, load_balance=None, public_kibana_req=None, pay_info=None):
-        """CreateClusterBody
+        r"""CreateClusterBody
 
         The model defined in huaweicloud sdk
 
@@ -137,7 +137,7 @@ class CreateClusterBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateClusterBody.
+        r"""Gets the name of this CreateClusterBody.
 
         集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
@@ -148,7 +148,7 @@ class CreateClusterBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateClusterBody.
+        r"""Sets the name of this CreateClusterBody.
 
         集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
@@ -159,7 +159,7 @@ class CreateClusterBody:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this CreateClusterBody.
+        r"""Gets the backup_strategy of this CreateClusterBody.
 
         :return: The backup_strategy of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
@@ -168,7 +168,7 @@ class CreateClusterBody:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this CreateClusterBody.
+        r"""Sets the backup_strategy of this CreateClusterBody.
 
         :param backup_strategy: The backup_strategy of this CreateClusterBody.
         :type backup_strategy: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
@@ -177,7 +177,7 @@ class CreateClusterBody:
 
     @property
     def roles(self):
-        """Gets the roles of this CreateClusterBody.
+        r"""Gets the roles of this CreateClusterBody.
 
         :return: The roles of this CreateClusterBody.
         :rtype: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
@@ -186,7 +186,7 @@ class CreateClusterBody:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this CreateClusterBody.
+        r"""Sets the roles of this CreateClusterBody.
 
         :param roles: The roles of this CreateClusterBody.
         :type roles: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
@@ -195,7 +195,7 @@ class CreateClusterBody:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateClusterBody.
+        r"""Gets the nics of this CreateClusterBody.
 
         :return: The nics of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
@@ -204,7 +204,7 @@ class CreateClusterBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateClusterBody.
+        r"""Sets the nics of this CreateClusterBody.
 
         :param nics: The nics of this CreateClusterBody.
         :type nics: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
@@ -213,7 +213,7 @@ class CreateClusterBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateClusterBody.
+        r"""Gets the enterprise_project_id of this CreateClusterBody.
 
         企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。
 
@@ -224,7 +224,7 @@ class CreateClusterBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateClusterBody.
+        r"""Sets the enterprise_project_id of this CreateClusterBody.
 
         企业项目ID。创建集群时，给集群绑定企业项目ID。最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。
 
@@ -235,7 +235,7 @@ class CreateClusterBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateClusterBody.
+        r"""Gets the tags of this CreateClusterBody.
 
         集群标签。
 
@@ -246,7 +246,7 @@ class CreateClusterBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateClusterBody.
+        r"""Sets the tags of this CreateClusterBody.
 
         集群标签。
 
@@ -257,7 +257,7 @@ class CreateClusterBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateClusterBody.
+        r"""Gets the availability_zone of this CreateClusterBody.
 
         可用区。
 
@@ -268,7 +268,7 @@ class CreateClusterBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateClusterBody.
+        r"""Sets the availability_zone of this CreateClusterBody.
 
         可用区。
 
@@ -279,7 +279,7 @@ class CreateClusterBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateClusterBody.
+        r"""Gets the datastore of this CreateClusterBody.
 
         :return: The datastore of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
@@ -288,7 +288,7 @@ class CreateClusterBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateClusterBody.
+        r"""Sets the datastore of this CreateClusterBody.
 
         :param datastore: The datastore of this CreateClusterBody.
         :type datastore: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
@@ -297,7 +297,7 @@ class CreateClusterBody:
 
     @property
     def authority_enable(self):
-        """Gets the authority_enable of this CreateClusterBody.
+        r"""Gets the authority_enable of this CreateClusterBody.
 
         是否开启认证，取值范围为true或false。默认关闭认证功能。  - true：表示集群开启认证。 - false：表示集群不开启认证。  >此参数只有6.5.4及之后版本支持。
 
@@ -308,7 +308,7 @@ class CreateClusterBody:
 
     @authority_enable.setter
     def authority_enable(self, authority_enable):
-        """Sets the authority_enable of this CreateClusterBody.
+        r"""Sets the authority_enable of this CreateClusterBody.
 
         是否开启认证，取值范围为true或false。默认关闭认证功能。  - true：表示集群开启认证。 - false：表示集群不开启认证。  >此参数只有6.5.4及之后版本支持。
 
@@ -319,7 +319,7 @@ class CreateClusterBody:
 
     @property
     def https_enable(self):
-        """Gets the https_enable of this CreateClusterBody.
+        r"""Gets the https_enable of this CreateClusterBody.
 
         设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。 - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  >此参数只有6.5.4及之后版本支持。
 
@@ -330,7 +330,7 @@ class CreateClusterBody:
 
     @https_enable.setter
     def https_enable(self, https_enable):
-        """Sets the https_enable of this CreateClusterBody.
+        r"""Sets the https_enable of this CreateClusterBody.
 
         设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。 - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  >此参数只有6.5.4及之后版本支持。
 
@@ -341,7 +341,7 @@ class CreateClusterBody:
 
     @property
     def admin_pwd(self):
-        """Gets the admin_pwd of this CreateClusterBody.
+        r"""Gets the admin_pwd of this CreateClusterBody.
 
         安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
@@ -352,7 +352,7 @@ class CreateClusterBody:
 
     @admin_pwd.setter
     def admin_pwd(self, admin_pwd):
-        """Sets the admin_pwd of this CreateClusterBody.
+        r"""Sets the admin_pwd of this CreateClusterBody.
 
         安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。  - 参数范围：8~32个字符。  - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
@@ -363,7 +363,7 @@ class CreateClusterBody:
 
     @property
     def public_ip_req(self):
-        """Gets the public_ip_req of this CreateClusterBody.
+        r"""Gets the public_ip_req of this CreateClusterBody.
 
         :return: The public_ip_req of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
@@ -372,7 +372,7 @@ class CreateClusterBody:
 
     @public_ip_req.setter
     def public_ip_req(self, public_ip_req):
-        """Sets the public_ip_req of this CreateClusterBody.
+        r"""Sets the public_ip_req of this CreateClusterBody.
 
         :param public_ip_req: The public_ip_req of this CreateClusterBody.
         :type public_ip_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
@@ -381,7 +381,7 @@ class CreateClusterBody:
 
     @property
     def load_balance(self):
-        """Gets the load_balance of this CreateClusterBody.
+        r"""Gets the load_balance of this CreateClusterBody.
 
         :return: The load_balance of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
@@ -390,7 +390,7 @@ class CreateClusterBody:
 
     @load_balance.setter
     def load_balance(self, load_balance):
-        """Sets the load_balance of this CreateClusterBody.
+        r"""Sets the load_balance of this CreateClusterBody.
 
         :param load_balance: The load_balance of this CreateClusterBody.
         :type load_balance: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
@@ -399,7 +399,7 @@ class CreateClusterBody:
 
     @property
     def public_kibana_req(self):
-        """Gets the public_kibana_req of this CreateClusterBody.
+        r"""Gets the public_kibana_req of this CreateClusterBody.
 
         :return: The public_kibana_req of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
@@ -408,7 +408,7 @@ class CreateClusterBody:
 
     @public_kibana_req.setter
     def public_kibana_req(self, public_kibana_req):
-        """Sets the public_kibana_req of this CreateClusterBody.
+        r"""Sets the public_kibana_req of this CreateClusterBody.
 
         :param public_kibana_req: The public_kibana_req of this CreateClusterBody.
         :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
@@ -417,7 +417,7 @@ class CreateClusterBody:
 
     @property
     def pay_info(self):
-        """Gets the pay_info of this CreateClusterBody.
+        r"""Gets the pay_info of this CreateClusterBody.
 
         :return: The pay_info of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.PayInfoBody`
@@ -426,7 +426,7 @@ class CreateClusterBody:
 
     @pay_info.setter
     def pay_info(self, pay_info):
-        """Sets the pay_info of this CreateClusterBody.
+        r"""Sets the pay_info of this CreateClusterBody.
 
         :param pay_info: The pay_info of this CreateClusterBody.
         :type pay_info: :class:`huaweicloudsdkcss.v2.PayInfoBody`

@@ -27,7 +27,7 @@ class CreateDdmDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDdmDatabaseRequest
+        r"""CreateDdmDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDdmDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDdmDatabaseRequest.
+        r"""Gets the instance_id of this CreateDdmDatabaseRequest.
 
         DDM实例ID
 
@@ -60,7 +60,7 @@ class CreateDdmDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDdmDatabaseRequest.
+        r"""Sets the instance_id of this CreateDdmDatabaseRequest.
 
         DDM实例ID
 
@@ -71,7 +71,7 @@ class CreateDdmDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDdmDatabaseRequest.
+        r"""Gets the body of this CreateDdmDatabaseRequest.
 
         :return: The body of this CreateDdmDatabaseRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateDdmDatabaseRequestBody`
@@ -80,7 +80,7 @@ class CreateDdmDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDdmDatabaseRequest.
+        r"""Sets the body of this CreateDdmDatabaseRequest.
 
         :param body: The body of this CreateDdmDatabaseRequest.
         :type body: :class:`huaweicloudsdkddm.v1.CreateDdmDatabaseRequestBody`

@@ -27,7 +27,7 @@ class VolumeResp:
     }
 
     def __init__(self, type=None, size=None):
-        """VolumeResp
+        r"""VolumeResp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VolumeResp:
 
     @property
     def type(self):
-        """Gets the type of this VolumeResp.
+        r"""Gets the type of this VolumeResp.
 
         磁盘类型，仅支持SSD。
 
@@ -59,7 +59,7 @@ class VolumeResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VolumeResp.
+        r"""Sets the type of this VolumeResp.
 
         磁盘类型，仅支持SSD。
 
@@ -70,7 +70,7 @@ class VolumeResp:
 
     @property
     def size(self):
-        """Gets the size of this VolumeResp.
+        r"""Gets the size of this VolumeResp.
 
         磁盘可用容量。
 
@@ -81,7 +81,7 @@ class VolumeResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeResp.
+        r"""Sets the size of this VolumeResp.
 
         磁盘可用容量。
 

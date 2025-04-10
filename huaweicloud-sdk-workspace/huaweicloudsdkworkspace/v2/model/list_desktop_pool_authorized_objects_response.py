@@ -28,7 +28,7 @@ class ListDesktopPoolAuthorizedObjectsResponse(SdkResponse):
     }
 
     def __init__(self, objects=None, total_count=None):
-        """ListDesktopPoolAuthorizedObjectsResponse
+        r"""ListDesktopPoolAuthorizedObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopPoolAuthorizedObjectsResponse(SdkResponse):
 
     @property
     def objects(self):
-        """Gets the objects of this ListDesktopPoolAuthorizedObjectsResponse.
+        r"""Gets the objects of this ListDesktopPoolAuthorizedObjectsResponse.
 
         授权对象
 
@@ -62,7 +62,7 @@ class ListDesktopPoolAuthorizedObjectsResponse(SdkResponse):
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this ListDesktopPoolAuthorizedObjectsResponse.
+        r"""Sets the objects of this ListDesktopPoolAuthorizedObjectsResponse.
 
         授权对象
 
@@ -73,7 +73,7 @@ class ListDesktopPoolAuthorizedObjectsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopPoolAuthorizedObjectsResponse.
+        r"""Gets the total_count of this ListDesktopPoolAuthorizedObjectsResponse.
 
         满足条件的用户、用户组总数
 
@@ -84,7 +84,7 @@ class ListDesktopPoolAuthorizedObjectsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopPoolAuthorizedObjectsResponse.
+        r"""Sets the total_count of this ListDesktopPoolAuthorizedObjectsResponse.
 
         满足条件的用户、用户组总数
 

@@ -31,7 +31,7 @@ class ResetConsumeOffsetRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, group_id=None, body=None):
-        """ResetConsumeOffsetRequest
+        r"""ResetConsumeOffsetRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ResetConsumeOffsetRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ResetConsumeOffsetRequest.
+        r"""Gets the engine of this ResetConsumeOffsetRequest.
 
         引擎类型：reliability。
 
@@ -72,7 +72,7 @@ class ResetConsumeOffsetRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ResetConsumeOffsetRequest.
+        r"""Sets the engine of this ResetConsumeOffsetRequest.
 
         引擎类型：reliability。
 
@@ -83,7 +83,7 @@ class ResetConsumeOffsetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetConsumeOffsetRequest.
+        r"""Gets the instance_id of this ResetConsumeOffsetRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ResetConsumeOffsetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetConsumeOffsetRequest.
+        r"""Sets the instance_id of this ResetConsumeOffsetRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ResetConsumeOffsetRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ResetConsumeOffsetRequest.
+        r"""Gets the group_id of this ResetConsumeOffsetRequest.
 
         消费组名称。
 
@@ -116,7 +116,7 @@ class ResetConsumeOffsetRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ResetConsumeOffsetRequest.
+        r"""Sets the group_id of this ResetConsumeOffsetRequest.
 
         消费组名称。
 
@@ -127,7 +127,7 @@ class ResetConsumeOffsetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetConsumeOffsetRequest.
+        r"""Gets the body of this ResetConsumeOffsetRequest.
 
         :return: The body of this ResetConsumeOffsetRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetReq`
@@ -136,7 +136,7 @@ class ResetConsumeOffsetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetConsumeOffsetRequest.
+        r"""Sets the body of this ResetConsumeOffsetRequest.
 
         :param body: The body of this ResetConsumeOffsetRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetReq`

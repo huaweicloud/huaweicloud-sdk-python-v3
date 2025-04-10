@@ -27,7 +27,7 @@ class CreateLoadIkThesaurusRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateLoadIkThesaurusRequest
+        r"""CreateLoadIkThesaurusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLoadIkThesaurusRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateLoadIkThesaurusRequest.
+        r"""Gets the cluster_id of this CreateLoadIkThesaurusRequest.
 
         指定配置自定义词库的集群ID。
 
@@ -60,7 +60,7 @@ class CreateLoadIkThesaurusRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateLoadIkThesaurusRequest.
+        r"""Sets the cluster_id of this CreateLoadIkThesaurusRequest.
 
         指定配置自定义词库的集群ID。
 
@@ -71,7 +71,7 @@ class CreateLoadIkThesaurusRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLoadIkThesaurusRequest.
+        r"""Gets the body of this CreateLoadIkThesaurusRequest.
 
         :return: The body of this CreateLoadIkThesaurusRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`
@@ -80,7 +80,7 @@ class CreateLoadIkThesaurusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLoadIkThesaurusRequest.
+        r"""Sets the body of this CreateLoadIkThesaurusRequest.
 
         :param body: The body of this CreateLoadIkThesaurusRequest.
         :type body: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`

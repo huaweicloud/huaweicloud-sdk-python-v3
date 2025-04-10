@@ -25,7 +25,7 @@ class ObsLogDump:
     }
 
     def __init__(self, log_dump=None):
-        """ObsLogDump
+        r"""ObsLogDump
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ObsLogDump:
 
     @property
     def log_dump(self):
-        """Gets the log_dump of this ObsLogDump.
+        r"""Gets the log_dump of this ObsLogDump.
 
         是否开启Obs日志转储功能，true表示开启，false表示关闭。
 
@@ -54,7 +54,7 @@ class ObsLogDump:
 
     @log_dump.setter
     def log_dump(self, log_dump):
-        """Sets the log_dump of this ObsLogDump.
+        r"""Sets the log_dump of this ObsLogDump.
 
         是否开启Obs日志转储功能，true表示开启，false表示关闭。
 

@@ -31,7 +31,7 @@ class CreateVpcRouteOption:
     }
 
     def __init__(self, destination=None, nexthop=None, type=None, vpc_id=None):
-        """CreateVpcRouteOption
+        r"""CreateVpcRouteOption
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateVpcRouteOption:
 
     @property
     def destination(self):
-        """Gets the destination of this CreateVpcRouteOption.
+        r"""Gets the destination of this CreateVpcRouteOption.
 
         路由目的地址CIDR，如192.168.200.0/24。
 
@@ -71,7 +71,7 @@ class CreateVpcRouteOption:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CreateVpcRouteOption.
+        r"""Sets the destination of this CreateVpcRouteOption.
 
         路由目的地址CIDR，如192.168.200.0/24。
 
@@ -82,7 +82,7 @@ class CreateVpcRouteOption:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this CreateVpcRouteOption.
+        r"""Gets the nexthop of this CreateVpcRouteOption.
 
         功能说明：路由下一跳  取值范围：如果type为peering类型，则nexthop为peering的ID
 
@@ -93,7 +93,7 @@ class CreateVpcRouteOption:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this CreateVpcRouteOption.
+        r"""Sets the nexthop of this CreateVpcRouteOption.
 
         功能说明：路由下一跳  取值范围：如果type为peering类型，则nexthop为peering的ID
 
@@ -104,7 +104,7 @@ class CreateVpcRouteOption:
 
     @property
     def type(self):
-        """Gets the type of this CreateVpcRouteOption.
+        r"""Gets the type of this CreateVpcRouteOption.
 
         功能说明：路由类型  取值范围：peering
 
@@ -115,7 +115,7 @@ class CreateVpcRouteOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateVpcRouteOption.
+        r"""Sets the type of this CreateVpcRouteOption.
 
         功能说明：路由类型  取值范围：peering
 
@@ -126,7 +126,7 @@ class CreateVpcRouteOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateVpcRouteOption.
+        r"""Gets the vpc_id of this CreateVpcRouteOption.
 
         请求添加路由的VPC ID
 
@@ -137,7 +137,7 @@ class CreateVpcRouteOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateVpcRouteOption.
+        r"""Sets the vpc_id of this CreateVpcRouteOption.
 
         请求添加路由的VPC ID
 

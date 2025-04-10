@@ -34,7 +34,7 @@ class VasAsyncClient(Client):
         return client_builder
 
     def create_tasks_async(self, request):
-        """创建服务作业
+        r"""创建服务作业
 
         该接口用于创建服务作业
         
@@ -101,7 +101,7 @@ class VasAsyncClient(Client):
         return http_info
 
     def delete_task_async(self, request):
-        """删除服务作业
+        r"""删除服务作业
 
         该接口用于删除服务作业
         
@@ -168,7 +168,7 @@ class VasAsyncClient(Client):
         return http_info
 
     def list_tasks_details_async(self, request):
-        """获取服务作业列表
+        r"""获取服务作业列表
 
         该接口用于获取服务作业列表
         
@@ -251,7 +251,7 @@ class VasAsyncClient(Client):
         return http_info
 
     def show_task_async(self, request):
-        """查询服务作业
+        r"""查询服务作业
 
         该接口用于查询服务作业
         
@@ -318,7 +318,7 @@ class VasAsyncClient(Client):
         return http_info
 
     def start_task_async(self, request):
-        """启动服务作业
+        r"""启动服务作业
 
         该接口用于启动服务作业
         
@@ -385,7 +385,7 @@ class VasAsyncClient(Client):
         return http_info
 
     def stop_task_async(self, request):
-        """停止服务作业
+        r"""停止服务作业
 
         该接口用于停止服务作业
         
@@ -452,7 +452,7 @@ class VasAsyncClient(Client):
         return http_info
 
     def update_task_async(self, request):
-        """更新服务作业
+        r"""更新服务作业
 
         该接口用于更新服务作业
         

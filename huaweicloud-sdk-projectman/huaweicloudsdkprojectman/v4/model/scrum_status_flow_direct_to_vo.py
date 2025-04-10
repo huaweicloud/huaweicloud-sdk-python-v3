@@ -31,7 +31,7 @@ class ScrumStatusFlowDirectToVo:
     }
 
     def __init__(self, id=None, status_id=None, name=None, enabled=None):
-        """ScrumStatusFlowDirectToVo
+        r"""ScrumStatusFlowDirectToVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ScrumStatusFlowDirectToVo:
 
     @property
     def id(self):
-        """Gets the id of this ScrumStatusFlowDirectToVo.
+        r"""Gets the id of this ScrumStatusFlowDirectToVo.
 
         流转数据的uuid
 
@@ -75,7 +75,7 @@ class ScrumStatusFlowDirectToVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScrumStatusFlowDirectToVo.
+        r"""Sets the id of this ScrumStatusFlowDirectToVo.
 
         流转数据的uuid
 
@@ -86,7 +86,7 @@ class ScrumStatusFlowDirectToVo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this ScrumStatusFlowDirectToVo.
+        r"""Gets the status_id of this ScrumStatusFlowDirectToVo.
 
         状态id
 
@@ -97,7 +97,7 @@ class ScrumStatusFlowDirectToVo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this ScrumStatusFlowDirectToVo.
+        r"""Sets the status_id of this ScrumStatusFlowDirectToVo.
 
         状态id
 
@@ -108,7 +108,7 @@ class ScrumStatusFlowDirectToVo:
 
     @property
     def name(self):
-        """Gets the name of this ScrumStatusFlowDirectToVo.
+        r"""Gets the name of this ScrumStatusFlowDirectToVo.
 
         状态名
 
@@ -119,7 +119,7 @@ class ScrumStatusFlowDirectToVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScrumStatusFlowDirectToVo.
+        r"""Sets the name of this ScrumStatusFlowDirectToVo.
 
         状态名
 
@@ -130,7 +130,7 @@ class ScrumStatusFlowDirectToVo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ScrumStatusFlowDirectToVo.
+        r"""Gets the enabled of this ScrumStatusFlowDirectToVo.
 
         是否开启流转
 
@@ -141,7 +141,7 @@ class ScrumStatusFlowDirectToVo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ScrumStatusFlowDirectToVo.
+        r"""Sets the enabled of this ScrumStatusFlowDirectToVo.
 
         是否开启流转
 

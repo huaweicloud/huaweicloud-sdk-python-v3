@@ -57,7 +57,7 @@ class VehicleDTO:
     }
 
     def __init__(self, vehicle_id=None, plate_no=None, vin=None, obu_id=None, imei=None, brand=None, model=None, style=None, fuel_type=None, color=None, plate_color=None, access_type=None, description=None, last_modified_time=None, created_time=None, last_online_time=None, status=None):
-        """VehicleDTO
+        r"""VehicleDTO
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class VehicleDTO:
 
     @property
     def vehicle_id(self):
-        """Gets the vehicle_id of this VehicleDTO.
+        r"""Gets the vehicle_id of this VehicleDTO.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -166,7 +166,7 @@ class VehicleDTO:
 
     @vehicle_id.setter
     def vehicle_id(self, vehicle_id):
-        """Sets the vehicle_id of this VehicleDTO.
+        r"""Sets the vehicle_id of this VehicleDTO.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -177,7 +177,7 @@ class VehicleDTO:
 
     @property
     def plate_no(self):
-        """Gets the plate_no of this VehicleDTO.
+        r"""Gets the plate_no of this VehicleDTO.
 
         **参数说明**：车牌号。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -188,7 +188,7 @@ class VehicleDTO:
 
     @plate_no.setter
     def plate_no(self, plate_no):
-        """Sets the plate_no of this VehicleDTO.
+        r"""Sets the plate_no of this VehicleDTO.
 
         **参数说明**：车牌号。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -199,7 +199,7 @@ class VehicleDTO:
 
     @property
     def vin(self):
-        """Gets the vin of this VehicleDTO.
+        r"""Gets the vin of this VehicleDTO.
 
         **参数说明**：VIN码，车辆的17位VIN码。  **取值范围**：长度不超过17，只允许字母、数字字符的组合。 
 
@@ -210,7 +210,7 @@ class VehicleDTO:
 
     @vin.setter
     def vin(self, vin):
-        """Sets the vin of this VehicleDTO.
+        r"""Sets the vin of this VehicleDTO.
 
         **参数说明**：VIN码，车辆的17位VIN码。  **取值范围**：长度不超过17，只允许字母、数字字符的组合。 
 
@@ -221,7 +221,7 @@ class VehicleDTO:
 
     @property
     def obu_id(self):
-        """Gets the obu_id of this VehicleDTO.
+        r"""Gets the obu_id of this VehicleDTO.
 
         \"**参数说明**：车载OBU的唯一标识。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -232,7 +232,7 @@ class VehicleDTO:
 
     @obu_id.setter
     def obu_id(self, obu_id):
-        """Sets the obu_id of this VehicleDTO.
+        r"""Sets the obu_id of this VehicleDTO.
 
         \"**参数说明**：车载OBU的唯一标识。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -243,7 +243,7 @@ class VehicleDTO:
 
     @property
     def imei(self):
-        """Gets the imei of this VehicleDTO.
+        r"""Gets the imei of this VehicleDTO.
 
         **参数说明**：IMEI，OBU上电子序列号。  **取值范围**：长度最小1最大255，支持纯数字的组合。 
 
@@ -254,7 +254,7 @@ class VehicleDTO:
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this VehicleDTO.
+        r"""Sets the imei of this VehicleDTO.
 
         **参数说明**：IMEI，OBU上电子序列号。  **取值范围**：长度最小1最大255，支持纯数字的组合。 
 
@@ -265,7 +265,7 @@ class VehicleDTO:
 
     @property
     def brand(self):
-        """Gets the brand of this VehicleDTO.
+        r"""Gets the brand of this VehicleDTO.
 
         **参数说明**：车俩品牌。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -276,7 +276,7 @@ class VehicleDTO:
 
     @brand.setter
     def brand(self, brand):
-        """Sets the brand of this VehicleDTO.
+        r"""Sets the brand of this VehicleDTO.
 
         **参数说明**：车俩品牌。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -287,7 +287,7 @@ class VehicleDTO:
 
     @property
     def model(self):
-        """Gets the model of this VehicleDTO.
+        r"""Gets the model of this VehicleDTO.
 
         **参数说明**：车牌型号。  **取值范围**：长度最小1最大64，支持字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -298,7 +298,7 @@ class VehicleDTO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this VehicleDTO.
+        r"""Sets the model of this VehicleDTO.
 
         **参数说明**：车牌型号。  **取值范围**：长度最小1最大64，支持字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -309,7 +309,7 @@ class VehicleDTO:
 
     @property
     def style(self):
-        """Gets the style of this VehicleDTO.
+        r"""Gets the style of this VehicleDTO.
 
         **参数说明**：车辆年款。  **取值范围**：长度最小1最大64，支持纯数字的组合。 
 
@@ -320,7 +320,7 @@ class VehicleDTO:
 
     @style.setter
     def style(self, style):
-        """Sets the style of this VehicleDTO.
+        r"""Sets the style of this VehicleDTO.
 
         **参数说明**：车辆年款。  **取值范围**：长度最小1最大64，支持纯数字的组合。 
 
@@ -331,7 +331,7 @@ class VehicleDTO:
 
     @property
     def fuel_type(self):
-        """Gets the fuel_type of this VehicleDTO.
+        r"""Gets the fuel_type of this VehicleDTO.
 
         **参数说明**：定义车辆的燃料动力类。  **取值范围**： - unknownFuel：未知 - gasoline：汽油 - ethanol：乙醇 - diesel：柴油 - electric：电动 - hybrid：混合燃料类型 - hydrogen：氢气 - natGasLiquid：液化天然气 - natGasComp：压缩天然气 - propane：丙烷\" 
 
@@ -342,7 +342,7 @@ class VehicleDTO:
 
     @fuel_type.setter
     def fuel_type(self, fuel_type):
-        """Sets the fuel_type of this VehicleDTO.
+        r"""Sets the fuel_type of this VehicleDTO.
 
         **参数说明**：定义车辆的燃料动力类。  **取值范围**： - unknownFuel：未知 - gasoline：汽油 - ethanol：乙醇 - diesel：柴油 - electric：电动 - hybrid：混合燃料类型 - hydrogen：氢气 - natGasLiquid：液化天然气 - natGasComp：压缩天然气 - propane：丙烷\" 
 
@@ -353,7 +353,7 @@ class VehicleDTO:
 
     @property
     def color(self):
-        """Gets the color of this VehicleDTO.
+        r"""Gets the color of this VehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - gray：灰色 - red：红色 - blue：蓝色 - yellow：黄色 - orange：橙色 - brown：棕色 - green：绿色 - purple：紫色 - cyan：青色 - pink：粉红色 - transparent：透明色 - other：其他\" 
 
@@ -364,7 +364,7 @@ class VehicleDTO:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this VehicleDTO.
+        r"""Sets the color of this VehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - gray：灰色 - red：红色 - blue：蓝色 - yellow：黄色 - orange：橙色 - brown：棕色 - green：绿色 - purple：紫色 - cyan：青色 - pink：粉红色 - transparent：透明色 - other：其他\" 
 
@@ -375,7 +375,7 @@ class VehicleDTO:
 
     @property
     def plate_color(self):
-        """Gets the plate_color of this VehicleDTO.
+        r"""Gets the plate_color of this VehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - blue：蓝色 - yellow：黄色 - green：绿色 
 
@@ -386,7 +386,7 @@ class VehicleDTO:
 
     @plate_color.setter
     def plate_color(self, plate_color):
-        """Sets the plate_color of this VehicleDTO.
+        r"""Sets the plate_color of this VehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - blue：蓝色 - yellow：黄色 - green：绿色 
 
@@ -397,7 +397,7 @@ class VehicleDTO:
 
     @property
     def access_type(self):
-        """Gets the access_type of this VehicleDTO.
+        r"""Gets the access_type of this VehicleDTO.
 
         **参数说明**：车辆接入网络的方式。  **取值范围**： - 5g - 4g  - 3g  - 2g - pc5Only  - pc5And5g  - pc5And4g  - pc5And3g  - pc5And2g 
 
@@ -408,7 +408,7 @@ class VehicleDTO:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this VehicleDTO.
+        r"""Sets the access_type of this VehicleDTO.
 
         **参数说明**：车辆接入网络的方式。  **取值范围**： - 5g - 4g  - 3g  - 2g - pc5Only  - pc5And5g  - pc5And4g  - pc5And3g  - pc5And2g 
 
@@ -419,7 +419,7 @@ class VehicleDTO:
 
     @property
     def description(self):
-        """Gets the description of this VehicleDTO.
+        r"""Gets the description of this VehicleDTO.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。 
 
@@ -430,7 +430,7 @@ class VehicleDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VehicleDTO.
+        r"""Sets the description of this VehicleDTO.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。 
 
@@ -441,7 +441,7 @@ class VehicleDTO:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this VehicleDTO.
+        r"""Gets the last_modified_time of this VehicleDTO.
 
         **参数说明**：最后修改的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -452,7 +452,7 @@ class VehicleDTO:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this VehicleDTO.
+        r"""Sets the last_modified_time of this VehicleDTO.
 
         **参数说明**：最后修改的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -463,7 +463,7 @@ class VehicleDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this VehicleDTO.
+        r"""Gets the created_time of this VehicleDTO.
 
         **参数说明**：创建的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -474,7 +474,7 @@ class VehicleDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this VehicleDTO.
+        r"""Sets the created_time of this VehicleDTO.
 
         **参数说明**：创建的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -485,7 +485,7 @@ class VehicleDTO:
 
     @property
     def last_online_time(self):
-        """Gets the last_online_time of this VehicleDTO.
+        r"""Gets the last_online_time of this VehicleDTO.
 
         **参数说明**：最后的在线时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -496,7 +496,7 @@ class VehicleDTO:
 
     @last_online_time.setter
     def last_online_time(self, last_online_time):
-        """Sets the last_online_time of this VehicleDTO.
+        r"""Sets the last_online_time of this VehicleDTO.
 
         **参数说明**：最后的在线时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -507,7 +507,7 @@ class VehicleDTO:
 
     @property
     def status(self):
-        """Gets the status of this VehicleDTO.
+        r"""Gets the status of this VehicleDTO.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - UNKNOWN：未知状态 
 
@@ -518,7 +518,7 @@ class VehicleDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VehicleDTO.
+        r"""Sets the status of this VehicleDTO.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - UNKNOWN：未知状态 
 

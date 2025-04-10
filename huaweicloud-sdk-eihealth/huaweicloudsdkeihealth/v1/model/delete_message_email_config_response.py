@@ -24,7 +24,7 @@ class DeleteMessageEmailConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMessageEmailConfigResponse
+        r"""DeleteMessageEmailConfigResponse
 
         The model defined in huaweicloud sdk
 

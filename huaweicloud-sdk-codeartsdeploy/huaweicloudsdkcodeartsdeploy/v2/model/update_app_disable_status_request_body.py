@@ -25,7 +25,7 @@ class UpdateAppDisableStatusRequestBody:
     }
 
     def __init__(self, is_disable=None):
-        """UpdateAppDisableStatusRequestBody
+        r"""UpdateAppDisableStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAppDisableStatusRequestBody:
 
     @property
     def is_disable(self):
-        """Gets the is_disable of this UpdateAppDisableStatusRequestBody.
+        r"""Gets the is_disable of this UpdateAppDisableStatusRequestBody.
 
         是否禁用， true禁用， false取消禁用
 
@@ -53,7 +53,7 @@ class UpdateAppDisableStatusRequestBody:
 
     @is_disable.setter
     def is_disable(self, is_disable):
-        """Sets the is_disable of this UpdateAppDisableStatusRequestBody.
+        r"""Sets the is_disable of this UpdateAppDisableStatusRequestBody.
 
         是否禁用， true禁用， false取消禁用
 

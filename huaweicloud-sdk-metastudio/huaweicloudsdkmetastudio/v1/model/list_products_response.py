@@ -30,7 +30,7 @@ class ListProductsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, products=None, x_request_id=None):
-        """ListProductsResponse
+        r"""ListProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProductsResponse.
+        r"""Gets the count of this ListProductsResponse.
 
         **参数解释**： 商品信息总数
 
@@ -69,7 +69,7 @@ class ListProductsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProductsResponse.
+        r"""Sets the count of this ListProductsResponse.
 
         **参数解释**： 商品信息总数
 
@@ -80,7 +80,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListProductsResponse.
+        r"""Gets the products of this ListProductsResponse.
 
         商品信息列表
 
@@ -91,7 +91,7 @@ class ListProductsResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListProductsResponse.
+        r"""Sets the products of this ListProductsResponse.
 
         商品信息列表
 
@@ -102,7 +102,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListProductsResponse.
+        r"""Gets the x_request_id of this ListProductsResponse.
 
         :return: The x_request_id of this ListProductsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListProductsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListProductsResponse.
+        r"""Sets the x_request_id of this ListProductsResponse.
 
         :param x_request_id: The x_request_id of this ListProductsResponse.
         :type x_request_id: str

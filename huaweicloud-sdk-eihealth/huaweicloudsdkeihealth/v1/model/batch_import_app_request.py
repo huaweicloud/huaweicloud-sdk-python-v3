@@ -27,7 +27,7 @@ class BatchImportAppRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """BatchImportAppRequest
+        r"""BatchImportAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchImportAppRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this BatchImportAppRequest.
+        r"""Gets the eihealth_project_id of this BatchImportAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class BatchImportAppRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this BatchImportAppRequest.
+        r"""Sets the eihealth_project_id of this BatchImportAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class BatchImportAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchImportAppRequest.
+        r"""Gets the body of this BatchImportAppRequest.
 
         :return: The body of this BatchImportAppRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchImportAppReq`
@@ -80,7 +80,7 @@ class BatchImportAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchImportAppRequest.
+        r"""Sets the body of this BatchImportAppRequest.
 
         :param body: The body of this BatchImportAppRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchImportAppReq`

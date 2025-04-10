@@ -27,7 +27,7 @@ class MediaTypes:
     }
 
     def __init__(self, base=None, type=None):
-        """MediaTypes
+        r"""MediaTypes
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MediaTypes:
 
     @property
     def base(self):
-        """Gets the base of this MediaTypes.
+        r"""Gets the base of this MediaTypes.
 
         文本类型
 
@@ -59,7 +59,7 @@ class MediaTypes:
 
     @base.setter
     def base(self, base):
-        """Sets the base of this MediaTypes.
+        r"""Sets the base of this MediaTypes.
 
         文本类型
 
@@ -70,7 +70,7 @@ class MediaTypes:
 
     @property
     def type(self):
-        """Gets the type of this MediaTypes.
+        r"""Gets the type of this MediaTypes.
 
         返回类型
 
@@ -81,7 +81,7 @@ class MediaTypes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MediaTypes.
+        r"""Sets the type of this MediaTypes.
 
         返回类型
 

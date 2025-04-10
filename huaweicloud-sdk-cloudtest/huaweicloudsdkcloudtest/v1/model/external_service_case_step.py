@@ -27,7 +27,7 @@ class ExternalServiceCaseStep:
     }
 
     def __init__(self, expect_result=None, test_step=None):
-        """ExternalServiceCaseStep
+        r"""ExternalServiceCaseStep
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExternalServiceCaseStep:
 
     @property
     def expect_result(self):
-        """Gets the expect_result of this ExternalServiceCaseStep.
+        r"""Gets the expect_result of this ExternalServiceCaseStep.
 
         测试用例预期结果信息，长度为[0-500]位字符
 
@@ -61,7 +61,7 @@ class ExternalServiceCaseStep:
 
     @expect_result.setter
     def expect_result(self, expect_result):
-        """Sets the expect_result of this ExternalServiceCaseStep.
+        r"""Sets the expect_result of this ExternalServiceCaseStep.
 
         测试用例预期结果信息，长度为[0-500]位字符
 
@@ -72,7 +72,7 @@ class ExternalServiceCaseStep:
 
     @property
     def test_step(self):
-        """Gets the test_step of this ExternalServiceCaseStep.
+        r"""Gets the test_step of this ExternalServiceCaseStep.
 
         测试步骤描述信息，长度为[0-500]位字符
 
@@ -83,7 +83,7 @@ class ExternalServiceCaseStep:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this ExternalServiceCaseStep.
+        r"""Sets the test_step of this ExternalServiceCaseStep.
 
         测试步骤描述信息，长度为[0-500]位字符
 

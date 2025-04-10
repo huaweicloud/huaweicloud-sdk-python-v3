@@ -27,7 +27,7 @@ class BatchTagActionDelRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchTagActionDelRequestBody
+        r"""BatchTagActionDelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchTagActionDelRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchTagActionDelRequestBody.
+        r"""Gets the action of this BatchTagActionDelRequestBody.
 
         操作标识（区分大小写）：删除时为“delete”。
 
@@ -59,7 +59,7 @@ class BatchTagActionDelRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchTagActionDelRequestBody.
+        r"""Sets the action of this BatchTagActionDelRequestBody.
 
         操作标识（区分大小写）：删除时为“delete”。
 
@@ -70,7 +70,7 @@ class BatchTagActionDelRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchTagActionDelRequestBody.
+        r"""Gets the tags of this BatchTagActionDelRequestBody.
 
         标签列表。单个实例总标签数上限20个。
 
@@ -81,7 +81,7 @@ class BatchTagActionDelRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchTagActionDelRequestBody.
+        r"""Sets the tags of this BatchTagActionDelRequestBody.
 
         标签列表。单个实例总标签数上限20个。
 

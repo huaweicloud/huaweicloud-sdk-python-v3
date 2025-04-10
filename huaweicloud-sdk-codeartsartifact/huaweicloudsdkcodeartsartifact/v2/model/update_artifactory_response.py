@@ -30,7 +30,7 @@ class UpdateArtifactoryResponse(SdkResponse):
     }
 
     def __init__(self, status=None, trace_id=None, result=None):
-        """UpdateArtifactoryResponse
+        r"""UpdateArtifactoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateArtifactoryResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateArtifactoryResponse.
+        r"""Gets the status of this UpdateArtifactoryResponse.
 
         结果状态
 
@@ -69,7 +69,7 @@ class UpdateArtifactoryResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateArtifactoryResponse.
+        r"""Sets the status of this UpdateArtifactoryResponse.
 
         结果状态
 
@@ -80,7 +80,7 @@ class UpdateArtifactoryResponse(SdkResponse):
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this UpdateArtifactoryResponse.
+        r"""Gets the trace_id of this UpdateArtifactoryResponse.
 
         请求id
 
@@ -91,7 +91,7 @@ class UpdateArtifactoryResponse(SdkResponse):
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this UpdateArtifactoryResponse.
+        r"""Sets the trace_id of this UpdateArtifactoryResponse.
 
         请求id
 
@@ -102,7 +102,7 @@ class UpdateArtifactoryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateArtifactoryResponse.
+        r"""Gets the result of this UpdateArtifactoryResponse.
 
         请求返回结果，接口不同，返回不同
 
@@ -113,7 +113,7 @@ class UpdateArtifactoryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateArtifactoryResponse.
+        r"""Sets the result of this UpdateArtifactoryResponse.
 
         请求返回结果，接口不同，返回不同
 

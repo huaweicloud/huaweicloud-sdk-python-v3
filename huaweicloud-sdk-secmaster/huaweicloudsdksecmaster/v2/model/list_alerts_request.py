@@ -29,7 +29,7 @@ class ListAlertsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """ListAlertsRequest
+        r"""ListAlertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListAlertsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAlertsRequest.
+        r"""Gets the project_id of this ListAlertsRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class ListAlertsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAlertsRequest.
+        r"""Sets the project_id of this ListAlertsRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class ListAlertsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListAlertsRequest.
+        r"""Gets the workspace_id of this ListAlertsRequest.
 
         工作空间id
 
@@ -88,7 +88,7 @@ class ListAlertsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListAlertsRequest.
+        r"""Sets the workspace_id of this ListAlertsRequest.
 
         工作空间id
 
@@ -99,7 +99,7 @@ class ListAlertsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAlertsRequest.
+        r"""Gets the body of this ListAlertsRequest.
 
         :return: The body of this ListAlertsRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectSearch`
@@ -108,7 +108,7 @@ class ListAlertsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAlertsRequest.
+        r"""Sets the body of this ListAlertsRequest.
 
         :param body: The body of this ListAlertsRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.DataobjectSearch`

@@ -26,7 +26,7 @@ class ListSourceIpsResponse(SdkResponse):
     }
 
     def __init__(self, ips=None):
-        """ListSourceIpsResponse
+        r"""ListSourceIpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSourceIpsResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this ListSourceIpsResponse.
+        r"""Gets the ips of this ListSourceIpsResponse.
 
         查询高防回源IP段列表
 
@@ -55,7 +55,7 @@ class ListSourceIpsResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this ListSourceIpsResponse.
+        r"""Sets the ips of this ListSourceIpsResponse.
 
         查询高防回源IP段列表
 

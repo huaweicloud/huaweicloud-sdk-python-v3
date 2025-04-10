@@ -26,7 +26,7 @@ class UpdateTaurusNodeDataIpResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateTaurusNodeDataIpResponse
+        r"""UpdateTaurusNodeDataIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateTaurusNodeDataIpResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateTaurusNodeDataIpResponse.
+        r"""Gets the job_id of this UpdateTaurusNodeDataIpResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class UpdateTaurusNodeDataIpResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateTaurusNodeDataIpResponse.
+        r"""Sets the job_id of this UpdateTaurusNodeDataIpResponse.
 
         任务ID。
 

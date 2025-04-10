@@ -27,7 +27,7 @@ class TranscodeData:
     }
 
     def __init__(self, spec_list=None, time=None):
-        """TranscodeData
+        r"""TranscodeData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TranscodeData:
 
     @property
     def spec_list(self):
-        """Gets the spec_list of this TranscodeData.
+        r"""Gets the spec_list of this TranscodeData.
 
         每个采样时间中的转码时长信息。
 
@@ -61,7 +61,7 @@ class TranscodeData:
 
     @spec_list.setter
     def spec_list(self, spec_list):
-        """Sets the spec_list of this TranscodeData.
+        r"""Sets the spec_list of this TranscodeData.
 
         每个采样时间中的转码时长信息。
 
@@ -72,7 +72,7 @@ class TranscodeData:
 
     @property
     def time(self):
-        """Gets the time of this TranscodeData.
+        r"""Gets the time of this TranscodeData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
@@ -83,7 +83,7 @@ class TranscodeData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TranscodeData.
+        r"""Sets the time of this TranscodeData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 

@@ -28,7 +28,7 @@ class ExpandClusterResponse(SdkResponse):
     }
 
     def __init__(self, result=None, order_id=None):
-        """ExpandClusterResponse
+        r"""ExpandClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExpandClusterResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ExpandClusterResponse.
+        r"""Gets the result of this ExpandClusterResponse.
 
         请求操作结果，succeeded为操作成功，failed为操作失败。非包周期节点组扩容请求下发成功时，会包含该字段且内容为success。
 
@@ -62,7 +62,7 @@ class ExpandClusterResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ExpandClusterResponse.
+        r"""Sets the result of this ExpandClusterResponse.
 
         请求操作结果，succeeded为操作成功，failed为操作失败。非包周期节点组扩容请求下发成功时，会包含该字段且内容为success。
 
@@ -73,7 +73,7 @@ class ExpandClusterResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandClusterResponse.
+        r"""Gets the order_id of this ExpandClusterResponse.
 
         订单ID。对包周期节点组进行扩容时，会返回本次扩容产生的订单ID，需要客户到订单支付页面进行自主支付才能真正触发扩容。
 
@@ -84,7 +84,7 @@ class ExpandClusterResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandClusterResponse.
+        r"""Sets the order_id of this ExpandClusterResponse.
 
         订单ID。对包周期节点组进行扩容时，会返回本次扩容产生的订单ID，需要客户到订单支付页面进行自主支付才能真正触发扩容。
 

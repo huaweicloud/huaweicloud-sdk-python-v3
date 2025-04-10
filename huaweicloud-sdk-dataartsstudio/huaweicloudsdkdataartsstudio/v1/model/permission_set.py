@@ -65,7 +65,7 @@ class PermissionSet:
     }
 
     def __init__(self, id=None, parent_id=None, name=None, description=None, type=None, managed_cluster_id=None, managed_cluster_name=None, project_id=None, domain_id=None, instance_id=None, manager_id=None, manager_name=None, manager_type=None, datasource_type=None, sync_status=None, sync_msg=None, sync_time=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """PermissionSet
+        r"""PermissionSet
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class PermissionSet:
 
     @property
     def id(self):
-        """Gets the id of this PermissionSet.
+        r"""Gets the id of this PermissionSet.
 
         编号
 
@@ -194,7 +194,7 @@ class PermissionSet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionSet.
+        r"""Sets the id of this PermissionSet.
 
         编号
 
@@ -205,7 +205,7 @@ class PermissionSet:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this PermissionSet.
+        r"""Gets the parent_id of this PermissionSet.
 
         父权限集id
 
@@ -216,7 +216,7 @@ class PermissionSet:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this PermissionSet.
+        r"""Sets the parent_id of this PermissionSet.
 
         父权限集id
 
@@ -227,7 +227,7 @@ class PermissionSet:
 
     @property
     def name(self):
-        """Gets the name of this PermissionSet.
+        r"""Gets the name of this PermissionSet.
 
         名称
 
@@ -238,7 +238,7 @@ class PermissionSet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PermissionSet.
+        r"""Sets the name of this PermissionSet.
 
         名称
 
@@ -249,7 +249,7 @@ class PermissionSet:
 
     @property
     def description(self):
-        """Gets the description of this PermissionSet.
+        r"""Gets the description of this PermissionSet.
 
         描述
 
@@ -260,7 +260,7 @@ class PermissionSet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PermissionSet.
+        r"""Sets the description of this PermissionSet.
 
         描述
 
@@ -271,7 +271,7 @@ class PermissionSet:
 
     @property
     def type(self):
-        """Gets the type of this PermissionSet.
+        r"""Gets the type of this PermissionSet.
 
         权限集类型, COMMON, MRS_MANAGED
 
@@ -282,7 +282,7 @@ class PermissionSet:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PermissionSet.
+        r"""Sets the type of this PermissionSet.
 
         权限集类型, COMMON, MRS_MANAGED
 
@@ -293,7 +293,7 @@ class PermissionSet:
 
     @property
     def managed_cluster_id(self):
-        """Gets the managed_cluster_id of this PermissionSet.
+        r"""Gets the managed_cluster_id of this PermissionSet.
 
         纳管角色所在集群id（仅纳管类权限集需要）
 
@@ -304,7 +304,7 @@ class PermissionSet:
 
     @managed_cluster_id.setter
     def managed_cluster_id(self, managed_cluster_id):
-        """Sets the managed_cluster_id of this PermissionSet.
+        r"""Sets the managed_cluster_id of this PermissionSet.
 
         纳管角色所在集群id（仅纳管类权限集需要）
 
@@ -315,7 +315,7 @@ class PermissionSet:
 
     @property
     def managed_cluster_name(self):
-        """Gets the managed_cluster_name of this PermissionSet.
+        r"""Gets the managed_cluster_name of this PermissionSet.
 
         纳管角色所在集群名称（仅纳管类权限集需要）
 
@@ -326,7 +326,7 @@ class PermissionSet:
 
     @managed_cluster_name.setter
     def managed_cluster_name(self, managed_cluster_name):
-        """Sets the managed_cluster_name of this PermissionSet.
+        r"""Sets the managed_cluster_name of this PermissionSet.
 
         纳管角色所在集群名称（仅纳管类权限集需要）
 
@@ -337,7 +337,7 @@ class PermissionSet:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PermissionSet.
+        r"""Gets the project_id of this PermissionSet.
 
         项目id
 
@@ -348,7 +348,7 @@ class PermissionSet:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PermissionSet.
+        r"""Sets the project_id of this PermissionSet.
 
         项目id
 
@@ -359,7 +359,7 @@ class PermissionSet:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PermissionSet.
+        r"""Gets the domain_id of this PermissionSet.
 
         租户id
 
@@ -370,7 +370,7 @@ class PermissionSet:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PermissionSet.
+        r"""Sets the domain_id of this PermissionSet.
 
         租户id
 
@@ -381,7 +381,7 @@ class PermissionSet:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PermissionSet.
+        r"""Gets the instance_id of this PermissionSet.
 
         实例id
 
@@ -392,7 +392,7 @@ class PermissionSet:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PermissionSet.
+        r"""Sets the instance_id of this PermissionSet.
 
         实例id
 
@@ -403,7 +403,7 @@ class PermissionSet:
 
     @property
     def manager_id(self):
-        """Gets the manager_id of this PermissionSet.
+        r"""Gets the manager_id of this PermissionSet.
 
         管理员id
 
@@ -414,7 +414,7 @@ class PermissionSet:
 
     @manager_id.setter
     def manager_id(self, manager_id):
-        """Sets the manager_id of this PermissionSet.
+        r"""Sets the manager_id of this PermissionSet.
 
         管理员id
 
@@ -425,7 +425,7 @@ class PermissionSet:
 
     @property
     def manager_name(self):
-        """Gets the manager_name of this PermissionSet.
+        r"""Gets the manager_name of this PermissionSet.
 
         管理员名称
 
@@ -436,7 +436,7 @@ class PermissionSet:
 
     @manager_name.setter
     def manager_name(self, manager_name):
-        """Sets the manager_name of this PermissionSet.
+        r"""Sets the manager_name of this PermissionSet.
 
         管理员名称
 
@@ -447,7 +447,7 @@ class PermissionSet:
 
     @property
     def manager_type(self):
-        """Gets the manager_type of this PermissionSet.
+        r"""Gets the manager_type of this PermissionSet.
 
         管理员类型
 
@@ -458,7 +458,7 @@ class PermissionSet:
 
     @manager_type.setter
     def manager_type(self, manager_type):
-        """Sets the manager_type of this PermissionSet.
+        r"""Sets the manager_type of this PermissionSet.
 
         管理员类型
 
@@ -469,7 +469,7 @@ class PermissionSet:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this PermissionSet.
+        r"""Gets the datasource_type of this PermissionSet.
 
         数据源类型
 
@@ -480,7 +480,7 @@ class PermissionSet:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this PermissionSet.
+        r"""Sets the datasource_type of this PermissionSet.
 
         数据源类型
 
@@ -491,7 +491,7 @@ class PermissionSet:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this PermissionSet.
+        r"""Gets the sync_status of this PermissionSet.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -502,7 +502,7 @@ class PermissionSet:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this PermissionSet.
+        r"""Sets the sync_status of this PermissionSet.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -513,7 +513,7 @@ class PermissionSet:
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this PermissionSet.
+        r"""Gets the sync_msg of this PermissionSet.
 
         同步信息
 
@@ -524,7 +524,7 @@ class PermissionSet:
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this PermissionSet.
+        r"""Sets the sync_msg of this PermissionSet.
 
         同步信息
 
@@ -535,7 +535,7 @@ class PermissionSet:
 
     @property
     def sync_time(self):
-        """Gets the sync_time of this PermissionSet.
+        r"""Gets the sync_time of this PermissionSet.
 
         同步时间
 
@@ -546,7 +546,7 @@ class PermissionSet:
 
     @sync_time.setter
     def sync_time(self, sync_time):
-        """Sets the sync_time of this PermissionSet.
+        r"""Sets the sync_time of this PermissionSet.
 
         同步时间
 
@@ -557,7 +557,7 @@ class PermissionSet:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PermissionSet.
+        r"""Gets the create_time of this PermissionSet.
 
         创建时间
 
@@ -568,7 +568,7 @@ class PermissionSet:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PermissionSet.
+        r"""Sets the create_time of this PermissionSet.
 
         创建时间
 
@@ -579,7 +579,7 @@ class PermissionSet:
 
     @property
     def create_user(self):
-        """Gets the create_user of this PermissionSet.
+        r"""Gets the create_user of this PermissionSet.
 
         创建者
 
@@ -590,7 +590,7 @@ class PermissionSet:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this PermissionSet.
+        r"""Sets the create_user of this PermissionSet.
 
         创建者
 
@@ -601,7 +601,7 @@ class PermissionSet:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PermissionSet.
+        r"""Gets the update_time of this PermissionSet.
 
         更新时间
 
@@ -612,7 +612,7 @@ class PermissionSet:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PermissionSet.
+        r"""Sets the update_time of this PermissionSet.
 
         更新时间
 
@@ -623,7 +623,7 @@ class PermissionSet:
 
     @property
     def update_user(self):
-        """Gets the update_user of this PermissionSet.
+        r"""Gets the update_user of this PermissionSet.
 
         更新者
 
@@ -634,7 +634,7 @@ class PermissionSet:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this PermissionSet.
+        r"""Sets the update_user of this PermissionSet.
 
         更新者
 

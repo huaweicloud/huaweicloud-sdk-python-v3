@@ -63,7 +63,7 @@ class ListMessageTraceRespTrace:
     }
 
     def __init__(self, success=None, trace_type=None, timestamp=None, group_name=None, cost_time=None, request_id=None, consume_status=None, topic=None, msg_id=None, offset_msg_id=None, tags=None, keys=None, store_host=None, client_host=None, retry_times=None, body_length=None, msg_type=None, transaction_state=None, transaction_id=None, from_transaction_check=None):
-        """ListMessageTraceRespTrace
+        r"""ListMessageTraceRespTrace
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def success(self):
-        """Gets the success of this ListMessageTraceRespTrace.
+        r"""Gets the success of this ListMessageTraceRespTrace.
 
         是否成功。
 
@@ -187,7 +187,7 @@ class ListMessageTraceRespTrace:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ListMessageTraceRespTrace.
+        r"""Sets the success of this ListMessageTraceRespTrace.
 
         是否成功。
 
@@ -198,7 +198,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def trace_type(self):
-        """Gets the trace_type of this ListMessageTraceRespTrace.
+        r"""Gets the trace_type of this ListMessageTraceRespTrace.
 
         轨迹类型
 
@@ -209,7 +209,7 @@ class ListMessageTraceRespTrace:
 
     @trace_type.setter
     def trace_type(self, trace_type):
-        """Sets the trace_type of this ListMessageTraceRespTrace.
+        r"""Sets the trace_type of this ListMessageTraceRespTrace.
 
         轨迹类型
 
@@ -220,7 +220,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ListMessageTraceRespTrace.
+        r"""Gets the timestamp of this ListMessageTraceRespTrace.
 
         时间。
 
@@ -231,7 +231,7 @@ class ListMessageTraceRespTrace:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ListMessageTraceRespTrace.
+        r"""Sets the timestamp of this ListMessageTraceRespTrace.
 
         时间。
 
@@ -242,7 +242,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListMessageTraceRespTrace.
+        r"""Gets the group_name of this ListMessageTraceRespTrace.
 
         生产组或消费组。
 
@@ -253,7 +253,7 @@ class ListMessageTraceRespTrace:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListMessageTraceRespTrace.
+        r"""Sets the group_name of this ListMessageTraceRespTrace.
 
         生产组或消费组。
 
@@ -264,7 +264,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this ListMessageTraceRespTrace.
+        r"""Gets the cost_time of this ListMessageTraceRespTrace.
 
         耗时。
 
@@ -275,7 +275,7 @@ class ListMessageTraceRespTrace:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this ListMessageTraceRespTrace.
+        r"""Sets the cost_time of this ListMessageTraceRespTrace.
 
         耗时。
 
@@ -286,7 +286,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListMessageTraceRespTrace.
+        r"""Gets the request_id of this ListMessageTraceRespTrace.
 
         请求ID。
 
@@ -297,7 +297,7 @@ class ListMessageTraceRespTrace:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListMessageTraceRespTrace.
+        r"""Sets the request_id of this ListMessageTraceRespTrace.
 
         请求ID。
 
@@ -308,7 +308,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def consume_status(self):
-        """Gets the consume_status of this ListMessageTraceRespTrace.
+        r"""Gets the consume_status of this ListMessageTraceRespTrace.
 
         消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
 
@@ -319,7 +319,7 @@ class ListMessageTraceRespTrace:
 
     @consume_status.setter
     def consume_status(self, consume_status):
-        """Sets the consume_status of this ListMessageTraceRespTrace.
+        r"""Sets the consume_status of this ListMessageTraceRespTrace.
 
         消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
 
@@ -330,7 +330,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def topic(self):
-        """Gets the topic of this ListMessageTraceRespTrace.
+        r"""Gets the topic of this ListMessageTraceRespTrace.
 
         主题名称。
 
@@ -341,7 +341,7 @@ class ListMessageTraceRespTrace:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ListMessageTraceRespTrace.
+        r"""Sets the topic of this ListMessageTraceRespTrace.
 
         主题名称。
 
@@ -352,7 +352,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this ListMessageTraceRespTrace.
+        r"""Gets the msg_id of this ListMessageTraceRespTrace.
 
         消息ID。
 
@@ -363,7 +363,7 @@ class ListMessageTraceRespTrace:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this ListMessageTraceRespTrace.
+        r"""Sets the msg_id of this ListMessageTraceRespTrace.
 
         消息ID。
 
@@ -374,7 +374,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def offset_msg_id(self):
-        """Gets the offset_msg_id of this ListMessageTraceRespTrace.
+        r"""Gets the offset_msg_id of this ListMessageTraceRespTrace.
 
         offset消息ID。
 
@@ -385,7 +385,7 @@ class ListMessageTraceRespTrace:
 
     @offset_msg_id.setter
     def offset_msg_id(self, offset_msg_id):
-        """Sets the offset_msg_id of this ListMessageTraceRespTrace.
+        r"""Sets the offset_msg_id of this ListMessageTraceRespTrace.
 
         offset消息ID。
 
@@ -396,7 +396,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def tags(self):
-        """Gets the tags of this ListMessageTraceRespTrace.
+        r"""Gets the tags of this ListMessageTraceRespTrace.
 
         消息的标签。
 
@@ -407,7 +407,7 @@ class ListMessageTraceRespTrace:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListMessageTraceRespTrace.
+        r"""Sets the tags of this ListMessageTraceRespTrace.
 
         消息的标签。
 
@@ -418,7 +418,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def keys(self):
-        """Gets the keys of this ListMessageTraceRespTrace.
+        r"""Gets the keys of this ListMessageTraceRespTrace.
 
         消息的keys。
 
@@ -429,7 +429,7 @@ class ListMessageTraceRespTrace:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ListMessageTraceRespTrace.
+        r"""Sets the keys of this ListMessageTraceRespTrace.
 
         消息的keys。
 
@@ -440,7 +440,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def store_host(self):
-        """Gets the store_host of this ListMessageTraceRespTrace.
+        r"""Gets the store_host of this ListMessageTraceRespTrace.
 
         存储消息的主机IP。
 
@@ -451,7 +451,7 @@ class ListMessageTraceRespTrace:
 
     @store_host.setter
     def store_host(self, store_host):
-        """Sets the store_host of this ListMessageTraceRespTrace.
+        r"""Sets the store_host of this ListMessageTraceRespTrace.
 
         存储消息的主机IP。
 
@@ -462,7 +462,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def client_host(self):
-        """Gets the client_host of this ListMessageTraceRespTrace.
+        r"""Gets the client_host of this ListMessageTraceRespTrace.
 
         产生消息的主机IP。
 
@@ -473,7 +473,7 @@ class ListMessageTraceRespTrace:
 
     @client_host.setter
     def client_host(self, client_host):
-        """Sets the client_host of this ListMessageTraceRespTrace.
+        r"""Sets the client_host of this ListMessageTraceRespTrace.
 
         产生消息的主机IP。
 
@@ -484,7 +484,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this ListMessageTraceRespTrace.
+        r"""Gets the retry_times of this ListMessageTraceRespTrace.
 
         重试次数。
 
@@ -495,7 +495,7 @@ class ListMessageTraceRespTrace:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this ListMessageTraceRespTrace.
+        r"""Sets the retry_times of this ListMessageTraceRespTrace.
 
         重试次数。
 
@@ -506,7 +506,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def body_length(self):
-        """Gets the body_length of this ListMessageTraceRespTrace.
+        r"""Gets the body_length of this ListMessageTraceRespTrace.
 
         消息体长度。
 
@@ -517,7 +517,7 @@ class ListMessageTraceRespTrace:
 
     @body_length.setter
     def body_length(self, body_length):
-        """Sets the body_length of this ListMessageTraceRespTrace.
+        r"""Sets the body_length of this ListMessageTraceRespTrace.
 
         消息体长度。
 
@@ -528,7 +528,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def msg_type(self):
-        """Gets the msg_type of this ListMessageTraceRespTrace.
+        r"""Gets the msg_type of this ListMessageTraceRespTrace.
 
         消息类型。
 
@@ -539,7 +539,7 @@ class ListMessageTraceRespTrace:
 
     @msg_type.setter
     def msg_type(self, msg_type):
-        """Sets the msg_type of this ListMessageTraceRespTrace.
+        r"""Sets the msg_type of this ListMessageTraceRespTrace.
 
         消息类型。
 
@@ -550,7 +550,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def transaction_state(self):
-        """Gets the transaction_state of this ListMessageTraceRespTrace.
+        r"""Gets the transaction_state of this ListMessageTraceRespTrace.
 
         事务状态。
 
@@ -561,7 +561,7 @@ class ListMessageTraceRespTrace:
 
     @transaction_state.setter
     def transaction_state(self, transaction_state):
-        """Sets the transaction_state of this ListMessageTraceRespTrace.
+        r"""Sets the transaction_state of this ListMessageTraceRespTrace.
 
         事务状态。
 
@@ -572,7 +572,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this ListMessageTraceRespTrace.
+        r"""Gets the transaction_id of this ListMessageTraceRespTrace.
 
         事务ID。
 
@@ -583,7 +583,7 @@ class ListMessageTraceRespTrace:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this ListMessageTraceRespTrace.
+        r"""Sets the transaction_id of this ListMessageTraceRespTrace.
 
         事务ID。
 
@@ -594,7 +594,7 @@ class ListMessageTraceRespTrace:
 
     @property
     def from_transaction_check(self):
-        """Gets the from_transaction_check of this ListMessageTraceRespTrace.
+        r"""Gets the from_transaction_check of this ListMessageTraceRespTrace.
 
         是否为事务回查的响应。
 
@@ -605,7 +605,7 @@ class ListMessageTraceRespTrace:
 
     @from_transaction_check.setter
     def from_transaction_check(self, from_transaction_check):
-        """Sets the from_transaction_check of this ListMessageTraceRespTrace.
+        r"""Sets the from_transaction_check of this ListMessageTraceRespTrace.
 
         是否为事务回查的响应。
 

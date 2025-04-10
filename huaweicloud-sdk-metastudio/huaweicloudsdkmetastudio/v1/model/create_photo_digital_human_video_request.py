@@ -27,7 +27,7 @@ class CreatePhotoDigitalHumanVideoRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreatePhotoDigitalHumanVideoRequest
+        r"""CreatePhotoDigitalHumanVideoRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePhotoDigitalHumanVideoRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreatePhotoDigitalHumanVideoRequest.
+        r"""Gets the x_app_user_id of this CreatePhotoDigitalHumanVideoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreatePhotoDigitalHumanVideoRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreatePhotoDigitalHumanVideoRequest.
+        r"""Sets the x_app_user_id of this CreatePhotoDigitalHumanVideoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreatePhotoDigitalHumanVideoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePhotoDigitalHumanVideoRequest.
+        r"""Gets the body of this CreatePhotoDigitalHumanVideoRequest.
 
         :return: The body of this CreatePhotoDigitalHumanVideoRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDigitalHumanVideoReq`
@@ -81,7 +81,7 @@ class CreatePhotoDigitalHumanVideoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePhotoDigitalHumanVideoRequest.
+        r"""Sets the body of this CreatePhotoDigitalHumanVideoRequest.
 
         :param body: The body of this CreatePhotoDigitalHumanVideoRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDigitalHumanVideoReq`

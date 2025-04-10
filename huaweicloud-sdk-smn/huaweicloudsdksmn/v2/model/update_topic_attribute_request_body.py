@@ -25,7 +25,7 @@ class UpdateTopicAttributeRequestBody:
     }
 
     def __init__(self, value=None):
-        """UpdateTopicAttributeRequestBody
+        r"""UpdateTopicAttributeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTopicAttributeRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this UpdateTopicAttributeRequestBody.
+        r"""Gets the value of this UpdateTopicAttributeRequestBody.
 
         1. 当请求参数name为access_policy时，value为Topic属性值，最大支持30KB。  2. 当请求参数name为introduction时，value为topic简介，最大长度120B。
 
@@ -53,7 +53,7 @@ class UpdateTopicAttributeRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateTopicAttributeRequestBody.
+        r"""Sets the value of this UpdateTopicAttributeRequestBody.
 
         1. 当请求参数name为access_policy时，value为Topic属性值，最大支持30KB。  2. 当请求参数name为introduction时，value为topic简介，最大长度120B。
 

@@ -29,7 +29,7 @@ class QueryAssociatedQuestionReq:
     }
 
     def __init__(self, question=None, top=None, domains=None):
-        """QueryAssociatedQuestionReq
+        r"""QueryAssociatedQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class QueryAssociatedQuestionReq:
 
     @property
     def question(self):
-        """Gets the question of this QueryAssociatedQuestionReq.
+        r"""Gets the question of this QueryAssociatedQuestionReq.
 
         用户输入问题
 
@@ -67,7 +67,7 @@ class QueryAssociatedQuestionReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this QueryAssociatedQuestionReq.
+        r"""Sets the question of this QueryAssociatedQuestionReq.
 
         用户输入问题
 
@@ -78,7 +78,7 @@ class QueryAssociatedQuestionReq:
 
     @property
     def top(self):
-        """Gets the top of this QueryAssociatedQuestionReq.
+        r"""Gets the top of this QueryAssociatedQuestionReq.
 
         返回匹配度最高的数据条数
 
@@ -89,7 +89,7 @@ class QueryAssociatedQuestionReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this QueryAssociatedQuestionReq.
+        r"""Sets the top of this QueryAssociatedQuestionReq.
 
         返回匹配度最高的数据条数
 
@@ -100,7 +100,7 @@ class QueryAssociatedQuestionReq:
 
     @property
     def domains(self):
-        """Gets the domains of this QueryAssociatedQuestionReq.
+        r"""Gets the domains of this QueryAssociatedQuestionReq.
 
         问答领域
 
@@ -111,7 +111,7 @@ class QueryAssociatedQuestionReq:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this QueryAssociatedQuestionReq.
+        r"""Sets the domains of this QueryAssociatedQuestionReq.
 
         问答领域
 

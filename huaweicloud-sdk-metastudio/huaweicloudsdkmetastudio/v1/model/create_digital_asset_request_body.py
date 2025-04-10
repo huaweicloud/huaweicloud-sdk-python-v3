@@ -45,7 +45,7 @@ class CreateDigitalAssetRequestBody:
     }
 
     def __init__(self, asset_name=None, asset_description=None, asset_type=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, is_need_generate_cover=None, asset_order=None, supported_service=None):
-        """CreateDigitalAssetRequestBody
+        r"""CreateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this CreateDigitalAssetRequestBody.
+        r"""Gets the asset_name of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -122,7 +122,7 @@ class CreateDigitalAssetRequestBody:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this CreateDigitalAssetRequestBody.
+        r"""Sets the asset_name of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -133,7 +133,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def asset_description(self):
-        """Gets the asset_description of this CreateDigitalAssetRequestBody.
+        r"""Gets the asset_description of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
 
@@ -144,7 +144,7 @@ class CreateDigitalAssetRequestBody:
 
     @asset_description.setter
     def asset_description(self, asset_description):
-        """Sets the asset_description of this CreateDigitalAssetRequestBody.
+        r"""Sets the asset_description of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
 
@@ -155,7 +155,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this CreateDigitalAssetRequestBody.
+        r"""Gets the asset_type of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
 
@@ -166,7 +166,7 @@ class CreateDigitalAssetRequestBody:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this CreateDigitalAssetRequestBody.
+        r"""Sets the asset_type of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
 
@@ -177,7 +177,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def review_config(self):
-        """Gets the review_config of this CreateDigitalAssetRequestBody.
+        r"""Gets the review_config of this CreateDigitalAssetRequestBody.
 
         :return: The review_config of this CreateDigitalAssetRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -186,7 +186,7 @@ class CreateDigitalAssetRequestBody:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this CreateDigitalAssetRequestBody.
+        r"""Sets the review_config of this CreateDigitalAssetRequestBody.
 
         :param review_config: The review_config of this CreateDigitalAssetRequestBody.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -195,7 +195,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDigitalAssetRequestBody.
+        r"""Gets the tags of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E_COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,MEDICAL,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL_BODY,HALF_BODY,STANDING,SITTING,FRONT_PHOTO,SIDE_PHOTO > - 区域：ASIAN,WESTERN,MIDDLE_EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
 
@@ -206,7 +206,7 @@ class CreateDigitalAssetRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDigitalAssetRequestBody.
+        r"""Sets the tags of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E_COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,MEDICAL,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL_BODY,HALF_BODY,STANDING,SITTING,FRONT_PHOTO,SIDE_PHOTO > - 区域：ASIAN,WESTERN,MIDDLE_EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
 
@@ -217,7 +217,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def asset_extra_meta(self):
-        """Gets the asset_extra_meta of this CreateDigitalAssetRequestBody.
+        r"""Gets the asset_extra_meta of this CreateDigitalAssetRequestBody.
 
         :return: The asset_extra_meta of this CreateDigitalAssetRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -226,7 +226,7 @@ class CreateDigitalAssetRequestBody:
 
     @asset_extra_meta.setter
     def asset_extra_meta(self, asset_extra_meta):
-        """Sets the asset_extra_meta of this CreateDigitalAssetRequestBody.
+        r"""Sets the asset_extra_meta of this CreateDigitalAssetRequestBody.
 
         :param asset_extra_meta: The asset_extra_meta of this CreateDigitalAssetRequestBody.
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -235,7 +235,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def system_properties(self):
-        """Gets the system_properties of this CreateDigitalAssetRequestBody.
+        r"""Gets the system_properties of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 设置系统属性。内部参数，普通用户无需设置。 **约束限制**： 不涉及 **取值范围**： 个数最大为50个。 **默认取值**： 不涉及
 
@@ -246,7 +246,7 @@ class CreateDigitalAssetRequestBody:
 
     @system_properties.setter
     def system_properties(self, system_properties):
-        """Sets the system_properties of this CreateDigitalAssetRequestBody.
+        r"""Sets the system_properties of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 设置系统属性。内部参数，普通用户无需设置。 **约束限制**： 不涉及 **取值范围**： 个数最大为50个。 **默认取值**： 不涉及
 
@@ -257,7 +257,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def shared_config(self):
-        """Gets the shared_config of this CreateDigitalAssetRequestBody.
+        r"""Gets the shared_config of this CreateDigitalAssetRequestBody.
 
         :return: The shared_config of this CreateDigitalAssetRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
@@ -266,7 +266,7 @@ class CreateDigitalAssetRequestBody:
 
     @shared_config.setter
     def shared_config(self, shared_config):
-        """Sets the shared_config of this CreateDigitalAssetRequestBody.
+        r"""Sets the shared_config of this CreateDigitalAssetRequestBody.
 
         :param shared_config: The shared_config of this CreateDigitalAssetRequestBody.
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
@@ -275,7 +275,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def is_need_generate_cover(self):
-        """Gets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
+        r"""Gets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 是否需要生成封面。 **约束限制**： 仅用于视频类资产。 **取值范围**： * true：自动生成封面。 * false：不自动生成封面。
 
@@ -286,7 +286,7 @@ class CreateDigitalAssetRequestBody:
 
     @is_need_generate_cover.setter
     def is_need_generate_cover(self, is_need_generate_cover):
-        """Sets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
+        r"""Sets the is_need_generate_cover of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 是否需要生成封面。 **约束限制**： 仅用于视频类资产。 **取值范围**： * true：自动生成封面。 * false：不自动生成封面。
 
@@ -297,7 +297,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def asset_order(self):
-        """Gets the asset_order of this CreateDigitalAssetRequestBody.
+        r"""Gets the asset_order of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
@@ -308,7 +308,7 @@ class CreateDigitalAssetRequestBody:
 
     @asset_order.setter
     def asset_order(self, asset_order):
-        """Sets the asset_order of this CreateDigitalAssetRequestBody.
+        r"""Sets the asset_order of this CreateDigitalAssetRequestBody.
 
         **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
@@ -319,7 +319,7 @@ class CreateDigitalAssetRequestBody:
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this CreateDigitalAssetRequestBody.
+        r"""Gets the supported_service of this CreateDigitalAssetRequestBody.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -330,7 +330,7 @@ class CreateDigitalAssetRequestBody:
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this CreateDigitalAssetRequestBody.
+        r"""Sets the supported_service of this CreateDigitalAssetRequestBody.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 

@@ -25,7 +25,7 @@ class ListEnterpriseProjectsForGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """ListEnterpriseProjectsForGroupRequest
+        r"""ListEnterpriseProjectsForGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEnterpriseProjectsForGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListEnterpriseProjectsForGroupRequest.
+        r"""Gets the group_id of this ListEnterpriseProjectsForGroupRequest.
 
         待查询用户组ID。
 
@@ -53,7 +53,7 @@ class ListEnterpriseProjectsForGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListEnterpriseProjectsForGroupRequest.
+        r"""Sets the group_id of this ListEnterpriseProjectsForGroupRequest.
 
         待查询用户组ID。
 

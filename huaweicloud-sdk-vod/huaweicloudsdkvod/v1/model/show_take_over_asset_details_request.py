@@ -27,7 +27,7 @@ class ShowTakeOverAssetDetailsRequest:
     }
 
     def __init__(self, source_bucket=None, source_object=None):
-        """ShowTakeOverAssetDetailsRequest
+        r"""ShowTakeOverAssetDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTakeOverAssetDetailsRequest:
 
     @property
     def source_bucket(self):
-        """Gets the source_bucket of this ShowTakeOverAssetDetailsRequest.
+        r"""Gets the source_bucket of this ShowTakeOverAssetDetailsRequest.
 
         媒资原始输入存放的桶。
 
@@ -59,7 +59,7 @@ class ShowTakeOverAssetDetailsRequest:
 
     @source_bucket.setter
     def source_bucket(self, source_bucket):
-        """Sets the source_bucket of this ShowTakeOverAssetDetailsRequest.
+        r"""Sets the source_bucket of this ShowTakeOverAssetDetailsRequest.
 
         媒资原始输入存放的桶。
 
@@ -70,7 +70,7 @@ class ShowTakeOverAssetDetailsRequest:
 
     @property
     def source_object(self):
-        """Gets the source_object of this ShowTakeOverAssetDetailsRequest.
+        r"""Gets the source_object of this ShowTakeOverAssetDetailsRequest.
 
         媒资原始输入的objectKey。
 
@@ -81,7 +81,7 @@ class ShowTakeOverAssetDetailsRequest:
 
     @source_object.setter
     def source_object(self, source_object):
-        """Sets the source_object of this ShowTakeOverAssetDetailsRequest.
+        r"""Sets the source_object of this ShowTakeOverAssetDetailsRequest.
 
         媒资原始输入的objectKey。
 

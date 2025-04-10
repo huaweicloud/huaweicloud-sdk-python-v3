@@ -25,7 +25,7 @@ class BatchCheckImageSyncRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCheckImageSyncRequest
+        r"""BatchCheckImageSyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCheckImageSyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckImageSyncRequest.
+        r"""Gets the body of this BatchCheckImageSyncRequest.
 
         :return: The body of this BatchCheckImageSyncRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.ImageBatchSyncReq`
@@ -52,7 +52,7 @@ class BatchCheckImageSyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckImageSyncRequest.
+        r"""Sets the body of this BatchCheckImageSyncRequest.
 
         :param body: The body of this BatchCheckImageSyncRequest.
         :type body: :class:`huaweicloudsdkmoderation.v3.ImageBatchSyncReq`

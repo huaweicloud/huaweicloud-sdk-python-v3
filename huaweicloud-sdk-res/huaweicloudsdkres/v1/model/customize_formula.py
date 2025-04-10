@@ -27,7 +27,7 @@ class CustomizeFormula:
     }
 
     def __init__(self, alias=None, formula=None):
-        """CustomizeFormula
+        r"""CustomizeFormula
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CustomizeFormula:
 
     @property
     def alias(self):
-        """Gets the alias of this CustomizeFormula.
+        r"""Gets the alias of this CustomizeFormula.
 
         别名。
 
@@ -61,7 +61,7 @@ class CustomizeFormula:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CustomizeFormula.
+        r"""Sets the alias of this CustomizeFormula.
 
         别名。
 
@@ -72,7 +72,7 @@ class CustomizeFormula:
 
     @property
     def formula(self):
-        """Gets the formula of this CustomizeFormula.
+        r"""Gets the formula of this CustomizeFormula.
 
         公式。
 
@@ -83,7 +83,7 @@ class CustomizeFormula:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this CustomizeFormula.
+        r"""Sets the formula of this CustomizeFormula.
 
         公式。
 

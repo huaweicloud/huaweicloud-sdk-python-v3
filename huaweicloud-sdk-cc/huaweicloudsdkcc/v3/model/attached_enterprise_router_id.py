@@ -25,7 +25,7 @@ class AttachedEnterpriseRouterId:
     }
 
     def __init__(self, attached_er_id=None):
-        """AttachedEnterpriseRouterId
+        r"""AttachedEnterpriseRouterId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachedEnterpriseRouterId:
 
     @property
     def attached_er_id(self):
-        """Gets the attached_er_id of this AttachedEnterpriseRouterId.
+        r"""Gets the attached_er_id of this AttachedEnterpriseRouterId.
 
         被挂载的企业路由器ID。
 
@@ -53,7 +53,7 @@ class AttachedEnterpriseRouterId:
 
     @attached_er_id.setter
     def attached_er_id(self, attached_er_id):
-        """Sets the attached_er_id of this AttachedEnterpriseRouterId.
+        r"""Sets the attached_er_id of this AttachedEnterpriseRouterId.
 
         被挂载的企业路由器ID。
 

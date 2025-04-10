@@ -43,7 +43,7 @@ class SmsSignatureReq:
     }
 
     def __init__(self, app_id=None, apply_desc=None, file_id=None, is_involved_third=None, power_attorney_fileid=None, signature_name=None, signature_source=None, signature_type=None, source_title_content=None, qualification_id=None):
-        """SmsSignatureReq
+        r"""SmsSignatureReq
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class SmsSignatureReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SmsSignatureReq.
+        r"""Gets the app_id of this SmsSignatureReq.
 
         应用主键ID
 
@@ -112,7 +112,7 @@ class SmsSignatureReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SmsSignatureReq.
+        r"""Sets the app_id of this SmsSignatureReq.
 
         应用主键ID
 
@@ -123,7 +123,7 @@ class SmsSignatureReq:
 
     @property
     def apply_desc(self):
-        """Gets the apply_desc of this SmsSignatureReq.
+        r"""Gets the apply_desc of this SmsSignatureReq.
 
         申请说明
 
@@ -134,7 +134,7 @@ class SmsSignatureReq:
 
     @apply_desc.setter
     def apply_desc(self, apply_desc):
-        """Sets the apply_desc of this SmsSignatureReq.
+        r"""Sets the apply_desc of this SmsSignatureReq.
 
         申请说明
 
@@ -145,7 +145,7 @@ class SmsSignatureReq:
 
     @property
     def file_id(self):
-        """Gets the file_id of this SmsSignatureReq.
+        r"""Gets the file_id of this SmsSignatureReq.
 
         营业执照文件ID
 
@@ -156,7 +156,7 @@ class SmsSignatureReq:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this SmsSignatureReq.
+        r"""Sets the file_id of this SmsSignatureReq.
 
         营业执照文件ID
 
@@ -167,7 +167,7 @@ class SmsSignatureReq:
 
     @property
     def is_involved_third(self):
-        """Gets the is_involved_third of this SmsSignatureReq.
+        r"""Gets the is_involved_third of this SmsSignatureReq.
 
         是否涉及第三方权益 1. Yes: 是 2. No: 
 
@@ -178,7 +178,7 @@ class SmsSignatureReq:
 
     @is_involved_third.setter
     def is_involved_third(self, is_involved_third):
-        """Sets the is_involved_third of this SmsSignatureReq.
+        r"""Sets the is_involved_third of this SmsSignatureReq.
 
         是否涉及第三方权益 1. Yes: 是 2. No: 
 
@@ -189,7 +189,7 @@ class SmsSignatureReq:
 
     @property
     def power_attorney_fileid(self):
-        """Gets the power_attorney_fileid of this SmsSignatureReq.
+        r"""Gets the power_attorney_fileid of this SmsSignatureReq.
 
         授权委托书文件ID
 
@@ -200,7 +200,7 @@ class SmsSignatureReq:
 
     @power_attorney_fileid.setter
     def power_attorney_fileid(self, power_attorney_fileid):
-        """Sets the power_attorney_fileid of this SmsSignatureReq.
+        r"""Sets the power_attorney_fileid of this SmsSignatureReq.
 
         授权委托书文件ID
 
@@ -211,7 +211,7 @@ class SmsSignatureReq:
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this SmsSignatureReq.
+        r"""Gets the signature_name of this SmsSignatureReq.
 
         签名名称
 
@@ -222,7 +222,7 @@ class SmsSignatureReq:
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this SmsSignatureReq.
+        r"""Sets the signature_name of this SmsSignatureReq.
 
         签名名称
 
@@ -233,7 +233,7 @@ class SmsSignatureReq:
 
     @property
     def signature_source(self):
-        """Gets the signature_source of this SmsSignatureReq.
+        r"""Gets the signature_source of this SmsSignatureReq.
 
         签名来源。支持枚举值： 1. 0：企事业单位的全称或简称 2. 1：工信部备案网站的全称或简称 3. 2： APP应用的全称或简称 4. 3：公众号或小程序的全称或简称 5. 4：电商平台店铺名的全称或简称 6. 5：商标名的全称或简称
 
@@ -244,7 +244,7 @@ class SmsSignatureReq:
 
     @signature_source.setter
     def signature_source(self, signature_source):
-        """Sets the signature_source of this SmsSignatureReq.
+        r"""Sets the signature_source of this SmsSignatureReq.
 
         签名来源。支持枚举值： 1. 0：企事业单位的全称或简称 2. 1：工信部备案网站的全称或简称 3. 2： APP应用的全称或简称 4. 3：公众号或小程序的全称或简称 5. 4：电商平台店铺名的全称或简称 6. 5：商标名的全称或简称
 
@@ -255,7 +255,7 @@ class SmsSignatureReq:
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this SmsSignatureReq.
+        r"""Gets the signature_type of this SmsSignatureReq.
 
         签名类型。支持枚举值： 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -266,7 +266,7 @@ class SmsSignatureReq:
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this SmsSignatureReq.
+        r"""Sets the signature_type of this SmsSignatureReq.
 
         签名类型。支持枚举值： 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -277,7 +277,7 @@ class SmsSignatureReq:
 
     @property
     def source_title_content(self):
-        """Gets the source_title_content of this SmsSignatureReq.
+        r"""Gets the source_title_content of this SmsSignatureReq.
 
         签名来源标题内容
 
@@ -288,7 +288,7 @@ class SmsSignatureReq:
 
     @source_title_content.setter
     def source_title_content(self, source_title_content):
-        """Sets the source_title_content of this SmsSignatureReq.
+        r"""Sets the source_title_content of this SmsSignatureReq.
 
         签名来源标题内容
 
@@ -299,7 +299,7 @@ class SmsSignatureReq:
 
     @property
     def qualification_id(self):
-        """Gets the qualification_id of this SmsSignatureReq.
+        r"""Gets the qualification_id of this SmsSignatureReq.
 
         资质ID ，当前考虑存量应用的接口兼容性，代码未做强制校验，但创建签名时请务必携带资质ID，否则会导致资质审核失败
 
@@ -310,7 +310,7 @@ class SmsSignatureReq:
 
     @qualification_id.setter
     def qualification_id(self, qualification_id):
-        """Sets the qualification_id of this SmsSignatureReq.
+        r"""Sets the qualification_id of this SmsSignatureReq.
 
         资质ID ，当前考虑存量应用的接口兼容性，代码未做强制校验，但创建签名时请务必携带资质ID，否则会导致资质审核失败
 

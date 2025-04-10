@@ -26,7 +26,7 @@ class ImportCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate_id=None):
-        """ImportCertificateResponse
+        r"""ImportCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportCertificateResponse(SdkResponse):
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ImportCertificateResponse.
+        r"""Gets the certificate_id of this ImportCertificateResponse.
 
         证书id。
 
@@ -55,7 +55,7 @@ class ImportCertificateResponse(SdkResponse):
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ImportCertificateResponse.
+        r"""Sets the certificate_id of this ImportCertificateResponse.
 
         证书id。
 

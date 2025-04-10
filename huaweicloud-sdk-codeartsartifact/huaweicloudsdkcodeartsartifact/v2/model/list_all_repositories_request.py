@@ -49,7 +49,7 @@ class ListAllRepositoriesRequest:
     }
 
     def __init__(self, tenant_id=None, project_id=None, group_id=None, page_no=None, page_size=None, sort=None, qname=None, type=None, format=None, format_list=None, is_recycle_bin=None, is_need_paging=None, in_project=None):
-        """ListAllRepositoriesRequest
+        r"""ListAllRepositoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListAllRepositoriesRequest.
+        r"""Gets the tenant_id of this ListAllRepositoriesRequest.
 
         租户id
 
@@ -136,7 +136,7 @@ class ListAllRepositoriesRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListAllRepositoriesRequest.
+        r"""Sets the tenant_id of this ListAllRepositoriesRequest.
 
         租户id
 
@@ -147,7 +147,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAllRepositoriesRequest.
+        r"""Gets the project_id of this ListAllRepositoriesRequest.
 
         项目id
 
@@ -158,7 +158,7 @@ class ListAllRepositoriesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAllRepositoriesRequest.
+        r"""Sets the project_id of this ListAllRepositoriesRequest.
 
         项目id
 
@@ -169,7 +169,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListAllRepositoriesRequest.
+        r"""Gets the group_id of this ListAllRepositoriesRequest.
 
         组id
 
@@ -180,7 +180,7 @@ class ListAllRepositoriesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListAllRepositoriesRequest.
+        r"""Sets the group_id of this ListAllRepositoriesRequest.
 
         组id
 
@@ -191,7 +191,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListAllRepositoriesRequest.
+        r"""Gets the page_no of this ListAllRepositoriesRequest.
 
         页码
 
@@ -202,7 +202,7 @@ class ListAllRepositoriesRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListAllRepositoriesRequest.
+        r"""Sets the page_no of this ListAllRepositoriesRequest.
 
         页码
 
@@ -213,7 +213,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAllRepositoriesRequest.
+        r"""Gets the page_size of this ListAllRepositoriesRequest.
 
         每页大小
 
@@ -224,7 +224,7 @@ class ListAllRepositoriesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAllRepositoriesRequest.
+        r"""Sets the page_size of this ListAllRepositoriesRequest.
 
         每页大小
 
@@ -235,7 +235,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListAllRepositoriesRequest.
+        r"""Gets the sort of this ListAllRepositoriesRequest.
 
         排序类型
 
@@ -246,7 +246,7 @@ class ListAllRepositoriesRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListAllRepositoriesRequest.
+        r"""Sets the sort of this ListAllRepositoriesRequest.
 
         排序类型
 
@@ -257,7 +257,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def qname(self):
-        """Gets the qname of this ListAllRepositoriesRequest.
+        r"""Gets the qname of this ListAllRepositoriesRequest.
 
         查询内容
 
@@ -268,7 +268,7 @@ class ListAllRepositoriesRequest:
 
     @qname.setter
     def qname(self, qname):
-        """Sets the qname of this ListAllRepositoriesRequest.
+        r"""Sets the qname of this ListAllRepositoriesRequest.
 
         查询内容
 
@@ -279,7 +279,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAllRepositoriesRequest.
+        r"""Gets the type of this ListAllRepositoriesRequest.
 
         仓库类型
 
@@ -290,7 +290,7 @@ class ListAllRepositoriesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAllRepositoriesRequest.
+        r"""Sets the type of this ListAllRepositoriesRequest.
 
         仓库类型
 
@@ -301,7 +301,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def format(self):
-        """Gets the format of this ListAllRepositoriesRequest.
+        r"""Gets the format of this ListAllRepositoriesRequest.
 
         仓库格式
 
@@ -312,7 +312,7 @@ class ListAllRepositoriesRequest:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ListAllRepositoriesRequest.
+        r"""Sets the format of this ListAllRepositoriesRequest.
 
         仓库格式
 
@@ -323,7 +323,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def format_list(self):
-        """Gets the format_list of this ListAllRepositoriesRequest.
+        r"""Gets the format_list of this ListAllRepositoriesRequest.
 
         仓库格式列表
 
@@ -334,7 +334,7 @@ class ListAllRepositoriesRequest:
 
     @format_list.setter
     def format_list(self, format_list):
-        """Sets the format_list of this ListAllRepositoriesRequest.
+        r"""Sets the format_list of this ListAllRepositoriesRequest.
 
         仓库格式列表
 
@@ -345,7 +345,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def is_recycle_bin(self):
-        """Gets the is_recycle_bin of this ListAllRepositoriesRequest.
+        r"""Gets the is_recycle_bin of this ListAllRepositoriesRequest.
 
         是否是回收站文件
 
@@ -356,7 +356,7 @@ class ListAllRepositoriesRequest:
 
     @is_recycle_bin.setter
     def is_recycle_bin(self, is_recycle_bin):
-        """Sets the is_recycle_bin of this ListAllRepositoriesRequest.
+        r"""Sets the is_recycle_bin of this ListAllRepositoriesRequest.
 
         是否是回收站文件
 
@@ -367,7 +367,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def is_need_paging(self):
-        """Gets the is_need_paging of this ListAllRepositoriesRequest.
+        r"""Gets the is_need_paging of this ListAllRepositoriesRequest.
 
         是否需要分页
 
@@ -378,7 +378,7 @@ class ListAllRepositoriesRequest:
 
     @is_need_paging.setter
     def is_need_paging(self, is_need_paging):
-        """Sets the is_need_paging of this ListAllRepositoriesRequest.
+        r"""Sets the is_need_paging of this ListAllRepositoriesRequest.
 
         是否需要分页
 
@@ -389,7 +389,7 @@ class ListAllRepositoriesRequest:
 
     @property
     def in_project(self):
-        """Gets the in_project of this ListAllRepositoriesRequest.
+        r"""Gets the in_project of this ListAllRepositoriesRequest.
 
         是否在项目中
 
@@ -400,7 +400,7 @@ class ListAllRepositoriesRequest:
 
     @in_project.setter
     def in_project(self, in_project):
-        """Sets the in_project of this ListAllRepositoriesRequest.
+        r"""Sets the in_project of this ListAllRepositoriesRequest.
 
         是否在项目中
 

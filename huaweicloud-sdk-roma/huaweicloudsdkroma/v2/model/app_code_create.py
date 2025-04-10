@@ -25,7 +25,7 @@ class AppCodeCreate:
     }
 
     def __init__(self, app_code=None):
-        """AppCodeCreate
+        r"""AppCodeCreate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AppCodeCreate:
 
     @property
     def app_code(self):
-        """Gets the app_code of this AppCodeCreate.
+        r"""Gets the app_code of this AppCodeCreate.
 
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 
@@ -53,7 +53,7 @@ class AppCodeCreate:
 
     @app_code.setter
     def app_code(self, app_code):
-        """Sets the app_code of this AppCodeCreate.
+        r"""Sets the app_code of this AppCodeCreate.
 
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 

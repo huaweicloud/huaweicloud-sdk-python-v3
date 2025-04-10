@@ -25,7 +25,7 @@ class ListAppInstancesRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListAppInstancesRequest
+        r"""ListAppInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAppInstancesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAppInstancesRequest.
+        r"""Gets the cluster_id of this ListAppInstancesRequest.
 
         边缘集群ID
 
@@ -53,7 +53,7 @@ class ListAppInstancesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAppInstancesRequest.
+        r"""Sets the cluster_id of this ListAppInstancesRequest.
 
         边缘集群ID
 

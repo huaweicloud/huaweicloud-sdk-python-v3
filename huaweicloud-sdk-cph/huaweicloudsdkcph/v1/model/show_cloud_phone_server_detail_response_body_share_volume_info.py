@@ -29,7 +29,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
     }
 
     def __init__(self, volume_type=None, size=None, version=None):
-        """ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo
+        r"""ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
+        r"""Gets the volume_type of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
 
         共享存储磁盘类型。
 
@@ -68,7 +68,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
+        r"""Sets the volume_type of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
 
         共享存储磁盘类型。
 
@@ -79,7 +79,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
 
     @property
     def size(self):
-        """Gets the size of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
+        r"""Gets the size of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
 
         共享存储大小，单位G。
 
@@ -90,7 +90,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
+        r"""Sets the size of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
 
         共享存储大小，单位G。
 
@@ -101,7 +101,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
 
     @property
     def version(self):
-        """Gets the version of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
+        r"""Gets the version of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
 
         共享存储版本： - 0：共享存储1.0 - 1：共享存储2.0
 
@@ -112,7 +112,7 @@ class ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
+        r"""Sets the version of this ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo.
 
         共享存储版本： - 0：共享存储1.0 - 1：共享存储2.0
 

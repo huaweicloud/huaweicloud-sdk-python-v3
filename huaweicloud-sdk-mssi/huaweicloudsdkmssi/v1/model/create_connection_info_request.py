@@ -25,7 +25,7 @@ class CreateConnectionInfoRequest:
     }
 
     def __init__(self, body=None):
-        """CreateConnectionInfoRequest
+        r"""CreateConnectionInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateConnectionInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectionInfoRequest.
+        r"""Gets the body of this CreateConnectionInfoRequest.
 
         :return: The body of this CreateConnectionInfoRequest.
         :rtype: :class:`huaweicloudsdkmssi.v1.BaseConnectionInfo`
@@ -52,7 +52,7 @@ class CreateConnectionInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectionInfoRequest.
+        r"""Sets the body of this CreateConnectionInfoRequest.
 
         :param body: The body of this CreateConnectionInfoRequest.
         :type body: :class:`huaweicloudsdkmssi.v1.BaseConnectionInfo`

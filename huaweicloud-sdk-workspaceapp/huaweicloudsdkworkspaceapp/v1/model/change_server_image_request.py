@@ -27,7 +27,7 @@ class ChangeServerImageRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ChangeServerImageRequest
+        r"""ChangeServerImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeServerImageRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeServerImageRequest.
+        r"""Gets the server_id of this ChangeServerImageRequest.
 
         服务器唯一标识。
 
@@ -60,7 +60,7 @@ class ChangeServerImageRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeServerImageRequest.
+        r"""Sets the server_id of this ChangeServerImageRequest.
 
         服务器唯一标识。
 
@@ -71,7 +71,7 @@ class ChangeServerImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeServerImageRequest.
+        r"""Gets the body of this ChangeServerImageRequest.
 
         :return: The body of this ChangeServerImageRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ChangeServerImageReq`
@@ -80,7 +80,7 @@ class ChangeServerImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeServerImageRequest.
+        r"""Sets the body of this ChangeServerImageRequest.
 
         :param body: The body of this ChangeServerImageRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ChangeServerImageReq`

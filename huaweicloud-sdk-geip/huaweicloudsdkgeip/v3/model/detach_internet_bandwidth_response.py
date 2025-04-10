@@ -30,7 +30,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, global_eip=None, x_request_id=None):
-        """DetachInternetBandwidthResponse
+        r"""DetachInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DetachInternetBandwidthResponse.
+        r"""Gets the request_id of this DetachInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DetachInternetBandwidthResponse.
+        r"""Sets the request_id of this DetachInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this DetachInternetBandwidthResponse.
+        r"""Gets the global_eip of this DetachInternetBandwidthResponse.
 
         :return: The global_eip of this DetachInternetBandwidthResponse.
         :rtype: DetachInternetBandwidthGlobalEips
@@ -89,7 +89,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this DetachInternetBandwidthResponse.
+        r"""Sets the global_eip of this DetachInternetBandwidthResponse.
 
         :param global_eip: The global_eip of this DetachInternetBandwidthResponse.
         :type global_eip: DetachInternetBandwidthGlobalEips
@@ -98,7 +98,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetachInternetBandwidthResponse.
+        r"""Gets the x_request_id of this DetachInternetBandwidthResponse.
 
         :return: The x_request_id of this DetachInternetBandwidthResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DetachInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetachInternetBandwidthResponse.
+        r"""Sets the x_request_id of this DetachInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this DetachInternetBandwidthResponse.
         :type x_request_id: str

@@ -34,7 +34,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """CreateAutopilotPostCheckResponse
+        r"""CreateAutopilotPostCheckResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateAutopilotPostCheckResponse.
+        r"""Gets the api_version of this CreateAutopilotPostCheckResponse.
 
         API版本
 
@@ -83,7 +83,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateAutopilotPostCheckResponse.
+        r"""Sets the api_version of this CreateAutopilotPostCheckResponse.
 
         API版本
 
@@ -94,7 +94,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateAutopilotPostCheckResponse.
+        r"""Gets the kind of this CreateAutopilotPostCheckResponse.
 
         资源类型
 
@@ -105,7 +105,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateAutopilotPostCheckResponse.
+        r"""Sets the kind of this CreateAutopilotPostCheckResponse.
 
         资源类型
 
@@ -116,7 +116,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateAutopilotPostCheckResponse.
+        r"""Gets the metadata of this CreateAutopilotPostCheckResponse.
 
         :return: The metadata of this CreateAutopilotPostCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PostcheckCluserResponseMetadata`
@@ -125,7 +125,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateAutopilotPostCheckResponse.
+        r"""Sets the metadata of this CreateAutopilotPostCheckResponse.
 
         :param metadata: The metadata of this CreateAutopilotPostCheckResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.PostcheckCluserResponseMetadata`
@@ -134,7 +134,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateAutopilotPostCheckResponse.
+        r"""Gets the spec of this CreateAutopilotPostCheckResponse.
 
         :return: The spec of this CreateAutopilotPostCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PostcheckSpec`
@@ -143,7 +143,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateAutopilotPostCheckResponse.
+        r"""Sets the spec of this CreateAutopilotPostCheckResponse.
 
         :param spec: The spec of this CreateAutopilotPostCheckResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.PostcheckSpec`
@@ -152,7 +152,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAutopilotPostCheckResponse.
+        r"""Gets the status of this CreateAutopilotPostCheckResponse.
 
         :return: The status of this CreateAutopilotPostCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PostcheckClusterResponseBodyStatus`
@@ -161,7 +161,7 @@ class CreateAutopilotPostCheckResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAutopilotPostCheckResponse.
+        r"""Sets the status of this CreateAutopilotPostCheckResponse.
 
         :param status: The status of this CreateAutopilotPostCheckResponse.
         :type status: :class:`huaweicloudsdkcce.v3.PostcheckClusterResponseBodyStatus`

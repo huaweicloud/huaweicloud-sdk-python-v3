@@ -33,7 +33,7 @@ class ListAutoLaunchStatisticsRequest:
     }
 
     def __init__(self, name=None, type=None, enterprise_project_id=None, limit=None, offset=None):
-        """ListAutoLaunchStatisticsRequest
+        r"""ListAutoLaunchStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -41,7 +41,7 @@ class ListAutoLaunchStatisticsRequest:
         :type name: str
         :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
         :type type: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示数量
         :type limit: int
@@ -71,7 +71,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAutoLaunchStatisticsRequest.
+        r"""Gets the name of this ListAutoLaunchStatisticsRequest.
 
         自启动项名称
 
@@ -82,7 +82,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAutoLaunchStatisticsRequest.
+        r"""Sets the name of this ListAutoLaunchStatisticsRequest.
 
         自启动项名称
 
@@ -93,7 +93,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAutoLaunchStatisticsRequest.
+        r"""Gets the type of this ListAutoLaunchStatisticsRequest.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -104,7 +104,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAutoLaunchStatisticsRequest.
+        r"""Sets the type of this ListAutoLaunchStatisticsRequest.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -115,9 +115,9 @@ class ListAutoLaunchStatisticsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAutoLaunchStatisticsRequest.
+        r"""Gets the enterprise_project_id of this ListAutoLaunchStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAutoLaunchStatisticsRequest.
         :rtype: str
@@ -126,9 +126,9 @@ class ListAutoLaunchStatisticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAutoLaunchStatisticsRequest.
+        r"""Sets the enterprise_project_id of this ListAutoLaunchStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAutoLaunchStatisticsRequest.
         :type enterprise_project_id: str
@@ -137,7 +137,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAutoLaunchStatisticsRequest.
+        r"""Gets the limit of this ListAutoLaunchStatisticsRequest.
 
         每页显示数量
 
@@ -148,7 +148,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAutoLaunchStatisticsRequest.
+        r"""Sets the limit of this ListAutoLaunchStatisticsRequest.
 
         每页显示数量
 
@@ -159,7 +159,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAutoLaunchStatisticsRequest.
+        r"""Gets the offset of this ListAutoLaunchStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -170,7 +170,7 @@ class ListAutoLaunchStatisticsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAutoLaunchStatisticsRequest.
+        r"""Sets the offset of this ListAutoLaunchStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 

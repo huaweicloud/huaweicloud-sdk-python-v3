@@ -34,7 +34,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None, x_request_id=None):
-        """ListKnowledgeQuestionResponse
+        r"""ListKnowledgeQuestionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListKnowledgeQuestionResponse.
+        r"""Gets the offset of this ListKnowledgeQuestionResponse.
 
         与第一条数据的偏移量
 
@@ -83,7 +83,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListKnowledgeQuestionResponse.
+        r"""Sets the offset of this ListKnowledgeQuestionResponse.
 
         与第一条数据的偏移量
 
@@ -94,7 +94,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListKnowledgeQuestionResponse.
+        r"""Gets the limit of this ListKnowledgeQuestionResponse.
 
         页面大小
 
@@ -105,7 +105,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListKnowledgeQuestionResponse.
+        r"""Sets the limit of this ListKnowledgeQuestionResponse.
 
         页面大小
 
@@ -116,7 +116,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListKnowledgeQuestionResponse.
+        r"""Gets the count of this ListKnowledgeQuestionResponse.
 
         总数量
 
@@ -127,7 +127,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListKnowledgeQuestionResponse.
+        r"""Sets the count of this ListKnowledgeQuestionResponse.
 
         总数量
 
@@ -138,7 +138,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListKnowledgeQuestionResponse.
+        r"""Gets the data of this ListKnowledgeQuestionResponse.
 
         问法信息
 
@@ -149,7 +149,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListKnowledgeQuestionResponse.
+        r"""Sets the data of this ListKnowledgeQuestionResponse.
 
         问法信息
 
@@ -160,7 +160,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListKnowledgeQuestionResponse.
+        r"""Gets the x_request_id of this ListKnowledgeQuestionResponse.
 
         :return: The x_request_id of this ListKnowledgeQuestionResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListKnowledgeQuestionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListKnowledgeQuestionResponse.
+        r"""Sets the x_request_id of this ListKnowledgeQuestionResponse.
 
         :param x_request_id: The x_request_id of this ListKnowledgeQuestionResponse.
         :type x_request_id: str

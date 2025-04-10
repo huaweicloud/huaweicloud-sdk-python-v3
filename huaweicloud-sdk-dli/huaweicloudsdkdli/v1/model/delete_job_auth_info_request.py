@@ -25,7 +25,7 @@ class DeleteJobAuthInfoRequest:
     }
 
     def __init__(self, auth_info_name=None):
-        """DeleteJobAuthInfoRequest
+        r"""DeleteJobAuthInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteJobAuthInfoRequest:
 
     @property
     def auth_info_name(self):
-        """Gets the auth_info_name of this DeleteJobAuthInfoRequest.
+        r"""Gets the auth_info_name of this DeleteJobAuthInfoRequest.
 
         即将删除的认证信息名
 
@@ -53,7 +53,7 @@ class DeleteJobAuthInfoRequest:
 
     @auth_info_name.setter
     def auth_info_name(self, auth_info_name):
-        """Sets the auth_info_name of this DeleteJobAuthInfoRequest.
+        r"""Sets the auth_info_name of this DeleteJobAuthInfoRequest.
 
         即将删除的认证信息名
 

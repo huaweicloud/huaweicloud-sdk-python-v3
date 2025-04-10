@@ -24,7 +24,7 @@ class DeletePolicyBlackAndWhiteIpListResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePolicyBlackAndWhiteIpListResponse
+        r"""DeletePolicyBlackAndWhiteIpListResponse
 
         The model defined in huaweicloud sdk
 

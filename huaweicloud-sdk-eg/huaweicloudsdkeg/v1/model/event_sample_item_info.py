@@ -43,7 +43,7 @@ class EventSampleItemInfo:
     }
 
     def __init__(self, id=None, name=None, content=None, event_type_id=None, event_type_name=None, event_source_id=None, event_source_name=None, created_time=None, updated_time=None, deleted_time=None):
-        """EventSampleItemInfo
+        r"""EventSampleItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class EventSampleItemInfo:
 
     @property
     def id(self):
-        """Gets the id of this EventSampleItemInfo.
+        r"""Gets the id of this EventSampleItemInfo.
 
         事件示例ID
 
@@ -117,7 +117,7 @@ class EventSampleItemInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EventSampleItemInfo.
+        r"""Sets the id of this EventSampleItemInfo.
 
         事件示例ID
 
@@ -128,7 +128,7 @@ class EventSampleItemInfo:
 
     @property
     def name(self):
-        """Gets the name of this EventSampleItemInfo.
+        r"""Gets the name of this EventSampleItemInfo.
 
         事件示例名称
 
@@ -139,7 +139,7 @@ class EventSampleItemInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventSampleItemInfo.
+        r"""Sets the name of this EventSampleItemInfo.
 
         事件示例名称
 
@@ -150,7 +150,7 @@ class EventSampleItemInfo:
 
     @property
     def content(self):
-        """Gets the content of this EventSampleItemInfo.
+        r"""Gets the content of this EventSampleItemInfo.
 
         事件示例内容
 
@@ -161,7 +161,7 @@ class EventSampleItemInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this EventSampleItemInfo.
+        r"""Sets the content of this EventSampleItemInfo.
 
         事件示例内容
 
@@ -172,7 +172,7 @@ class EventSampleItemInfo:
 
     @property
     def event_type_id(self):
-        """Gets the event_type_id of this EventSampleItemInfo.
+        r"""Gets the event_type_id of this EventSampleItemInfo.
 
         事件示例对应的事件类型ID
 
@@ -183,7 +183,7 @@ class EventSampleItemInfo:
 
     @event_type_id.setter
     def event_type_id(self, event_type_id):
-        """Sets the event_type_id of this EventSampleItemInfo.
+        r"""Sets the event_type_id of this EventSampleItemInfo.
 
         事件示例对应的事件类型ID
 
@@ -194,7 +194,7 @@ class EventSampleItemInfo:
 
     @property
     def event_type_name(self):
-        """Gets the event_type_name of this EventSampleItemInfo.
+        r"""Gets the event_type_name of this EventSampleItemInfo.
 
         事件示例对应的事件类型名称
 
@@ -205,7 +205,7 @@ class EventSampleItemInfo:
 
     @event_type_name.setter
     def event_type_name(self, event_type_name):
-        """Sets the event_type_name of this EventSampleItemInfo.
+        r"""Sets the event_type_name of this EventSampleItemInfo.
 
         事件示例对应的事件类型名称
 
@@ -216,7 +216,7 @@ class EventSampleItemInfo:
 
     @property
     def event_source_id(self):
-        """Gets the event_source_id of this EventSampleItemInfo.
+        r"""Gets the event_source_id of this EventSampleItemInfo.
 
         事件示例对应的事件源ID
 
@@ -227,7 +227,7 @@ class EventSampleItemInfo:
 
     @event_source_id.setter
     def event_source_id(self, event_source_id):
-        """Sets the event_source_id of this EventSampleItemInfo.
+        r"""Sets the event_source_id of this EventSampleItemInfo.
 
         事件示例对应的事件源ID
 
@@ -238,7 +238,7 @@ class EventSampleItemInfo:
 
     @property
     def event_source_name(self):
-        """Gets the event_source_name of this EventSampleItemInfo.
+        r"""Gets the event_source_name of this EventSampleItemInfo.
 
         事件示例对应的事件源名称
 
@@ -249,7 +249,7 @@ class EventSampleItemInfo:
 
     @event_source_name.setter
     def event_source_name(self, event_source_name):
-        """Sets the event_source_name of this EventSampleItemInfo.
+        r"""Sets the event_source_name of this EventSampleItemInfo.
 
         事件示例对应的事件源名称
 
@@ -260,7 +260,7 @@ class EventSampleItemInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EventSampleItemInfo.
+        r"""Gets the created_time of this EventSampleItemInfo.
 
         创建时间
 
@@ -271,7 +271,7 @@ class EventSampleItemInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EventSampleItemInfo.
+        r"""Sets the created_time of this EventSampleItemInfo.
 
         创建时间
 
@@ -282,7 +282,7 @@ class EventSampleItemInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this EventSampleItemInfo.
+        r"""Gets the updated_time of this EventSampleItemInfo.
 
         更新时间
 
@@ -293,7 +293,7 @@ class EventSampleItemInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this EventSampleItemInfo.
+        r"""Sets the updated_time of this EventSampleItemInfo.
 
         更新时间
 
@@ -304,7 +304,7 @@ class EventSampleItemInfo:
 
     @property
     def deleted_time(self):
-        """Gets the deleted_time of this EventSampleItemInfo.
+        r"""Gets the deleted_time of this EventSampleItemInfo.
 
         删除时间
 
@@ -315,7 +315,7 @@ class EventSampleItemInfo:
 
     @deleted_time.setter
     def deleted_time(self, deleted_time):
-        """Sets the deleted_time of this EventSampleItemInfo.
+        r"""Sets the deleted_time of this EventSampleItemInfo.
 
         删除时间
 

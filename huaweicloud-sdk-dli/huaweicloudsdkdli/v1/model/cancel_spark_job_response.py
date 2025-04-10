@@ -26,7 +26,7 @@ class CancelSparkJobResponse(SdkResponse):
     }
 
     def __init__(self, msg=None):
-        """CancelSparkJobResponse
+        r"""CancelSparkJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelSparkJobResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this CancelSparkJobResponse.
+        r"""Gets the msg of this CancelSparkJobResponse.
 
         取消成功，返回“deleted”。
 
@@ -55,7 +55,7 @@ class CancelSparkJobResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this CancelSparkJobResponse.
+        r"""Sets the msg of this CancelSparkJobResponse.
 
         取消成功，返回“deleted”。
 

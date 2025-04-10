@@ -25,7 +25,7 @@ class ExecuteUploadImageRequestBody:
     }
 
     def __init__(self, file=None):
-        """ExecuteUploadImageRequestBody
+        r"""ExecuteUploadImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteUploadImageRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ExecuteUploadImageRequestBody.
+        r"""Gets the file of this ExecuteUploadImageRequestBody.
 
         图片
 
@@ -53,7 +53,7 @@ class ExecuteUploadImageRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ExecuteUploadImageRequestBody.
+        r"""Sets the file of this ExecuteUploadImageRequestBody.
 
         图片
 

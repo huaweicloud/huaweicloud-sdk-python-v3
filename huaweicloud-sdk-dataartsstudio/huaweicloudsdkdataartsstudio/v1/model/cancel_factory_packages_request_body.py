@@ -25,7 +25,7 @@ class CancelFactoryPackagesRequestBody:
     }
 
     def __init__(self, package_ids=None):
-        """CancelFactoryPackagesRequestBody
+        r"""CancelFactoryPackagesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CancelFactoryPackagesRequestBody:
 
     @property
     def package_ids(self):
-        """Gets the package_ids of this CancelFactoryPackagesRequestBody.
+        r"""Gets the package_ids of this CancelFactoryPackagesRequestBody.
 
         发布包id列表信息
 
@@ -54,7 +54,7 @@ class CancelFactoryPackagesRequestBody:
 
     @package_ids.setter
     def package_ids(self, package_ids):
-        """Sets the package_ids of this CancelFactoryPackagesRequestBody.
+        r"""Sets the package_ids of this CancelFactoryPackagesRequestBody.
 
         发布包id列表信息
 

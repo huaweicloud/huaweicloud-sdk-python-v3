@@ -27,7 +27,7 @@ class WdhParam:
     }
 
     def __init__(self, dedicated_host_id=None, tenancy=None):
-        """WdhParam
+        r"""WdhParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WdhParam:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this WdhParam.
+        r"""Gets the dedicated_host_id of this WdhParam.
 
          云办公主机id
 
@@ -61,7 +61,7 @@ class WdhParam:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this WdhParam.
+        r"""Sets the dedicated_host_id of this WdhParam.
 
          云办公主机id
 
@@ -72,7 +72,7 @@ class WdhParam:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this WdhParam.
+        r"""Gets the tenancy of this WdhParam.
 
          类型
 
@@ -83,7 +83,7 @@ class WdhParam:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this WdhParam.
+        r"""Sets the tenancy of this WdhParam.
 
          类型
 

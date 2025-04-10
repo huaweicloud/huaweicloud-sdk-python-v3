@@ -28,7 +28,7 @@ class ListDataLevelTableCompareJobsResponse(SdkResponse):
     }
 
     def __init__(self, compare_jobs=None, count=None):
-        """ListDataLevelTableCompareJobsResponse
+        r"""ListDataLevelTableCompareJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDataLevelTableCompareJobsResponse(SdkResponse):
 
     @property
     def compare_jobs(self):
-        """Gets the compare_jobs of this ListDataLevelTableCompareJobsResponse.
+        r"""Gets the compare_jobs of this ListDataLevelTableCompareJobsResponse.
 
         表对比任务信息
 
@@ -62,7 +62,7 @@ class ListDataLevelTableCompareJobsResponse(SdkResponse):
 
     @compare_jobs.setter
     def compare_jobs(self, compare_jobs):
-        """Sets the compare_jobs of this ListDataLevelTableCompareJobsResponse.
+        r"""Sets the compare_jobs of this ListDataLevelTableCompareJobsResponse.
 
         表对比任务信息
 
@@ -73,7 +73,7 @@ class ListDataLevelTableCompareJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDataLevelTableCompareJobsResponse.
+        r"""Gets the count of this ListDataLevelTableCompareJobsResponse.
 
         任务数量
 
@@ -84,7 +84,7 @@ class ListDataLevelTableCompareJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDataLevelTableCompareJobsResponse.
+        r"""Sets the count of this ListDataLevelTableCompareJobsResponse.
 
         任务数量
 

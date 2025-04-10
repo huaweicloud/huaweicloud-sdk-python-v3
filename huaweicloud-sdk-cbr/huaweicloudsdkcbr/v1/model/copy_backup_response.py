@@ -26,7 +26,7 @@ class CopyBackupResponse(SdkResponse):
     }
 
     def __init__(self, replication=None):
-        """CopyBackupResponse
+        r"""CopyBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyBackupResponse(SdkResponse):
 
     @property
     def replication(self):
-        """Gets the replication of this CopyBackupResponse.
+        r"""Gets the replication of this CopyBackupResponse.
 
         :return: The replication of this CopyBackupResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`
@@ -53,7 +53,7 @@ class CopyBackupResponse(SdkResponse):
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this CopyBackupResponse.
+        r"""Sets the replication of this CopyBackupResponse.
 
         :param replication: The replication of this CopyBackupResponse.
         :type replication: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`

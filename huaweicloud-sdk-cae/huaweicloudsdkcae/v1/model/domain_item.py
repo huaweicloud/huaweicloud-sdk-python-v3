@@ -25,7 +25,7 @@ class DomainItem:
     }
 
     def __init__(self, metadata=None):
-        """DomainItem
+        r"""DomainItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DomainItem:
 
     @property
     def metadata(self):
-        """Gets the metadata of this DomainItem.
+        r"""Gets the metadata of this DomainItem.
 
         :return: The metadata of this DomainItem.
         :rtype: :class:`huaweicloudsdkcae.v1.MetaDomain`
@@ -52,7 +52,7 @@ class DomainItem:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DomainItem.
+        r"""Sets the metadata of this DomainItem.
 
         :param metadata: The metadata of this DomainItem.
         :type metadata: :class:`huaweicloudsdkcae.v1.MetaDomain`

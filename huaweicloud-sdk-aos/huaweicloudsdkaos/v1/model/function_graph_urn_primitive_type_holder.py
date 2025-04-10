@@ -25,7 +25,7 @@ class FunctionGraphUrnPrimitiveTypeHolder:
     }
 
     def __init__(self, function_graph_urn=None):
-        """FunctionGraphUrnPrimitiveTypeHolder
+        r"""FunctionGraphUrnPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FunctionGraphUrnPrimitiveTypeHolder:
 
     @property
     def function_graph_urn(self):
-        """Gets the function_graph_urn of this FunctionGraphUrnPrimitiveTypeHolder.
+        r"""Gets the function_graph_urn of this FunctionGraphUrnPrimitiveTypeHolder.
 
         FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
 
@@ -54,7 +54,7 @@ class FunctionGraphUrnPrimitiveTypeHolder:
 
     @function_graph_urn.setter
     def function_graph_urn(self, function_graph_urn):
-        """Sets the function_graph_urn of this FunctionGraphUrnPrimitiveTypeHolder.
+        r"""Sets the function_graph_urn of this FunctionGraphUrnPrimitiveTypeHolder.
 
         FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
 

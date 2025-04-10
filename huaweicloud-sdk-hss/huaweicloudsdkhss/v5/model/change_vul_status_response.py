@@ -24,7 +24,7 @@ class ChangeVulStatusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeVulStatusResponse
+        r"""ChangeVulStatusResponse
 
         The model defined in huaweicloud sdk
 

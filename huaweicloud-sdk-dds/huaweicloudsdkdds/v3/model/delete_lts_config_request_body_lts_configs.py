@@ -27,7 +27,7 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
     }
 
     def __init__(self, instance_id=None, log_type=None):
-        """DeleteLtsConfigRequestBodyLtsConfigs
+        r"""DeleteLtsConfigRequestBodyLtsConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteLtsConfigRequestBodyLtsConfigs.
+        r"""Gets the instance_id of this DeleteLtsConfigRequestBodyLtsConfigs.
 
         实例ID。
 
@@ -61,7 +61,7 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteLtsConfigRequestBodyLtsConfigs.
+        r"""Sets the instance_id of this DeleteLtsConfigRequestBodyLtsConfigs.
 
         实例ID。
 
@@ -72,7 +72,7 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
 
     @property
     def log_type(self):
-        """Gets the log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
+        r"""Gets the log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
 
         :return: The log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
         :rtype: :class:`huaweicloudsdkdds.v3.LtsLogType`
@@ -81,7 +81,7 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
+        r"""Sets the log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
 
         :param log_type: The log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
         :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`

@@ -35,7 +35,7 @@ class MicroServiceInfoCCEBase:
     }
 
     def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, label_key=None, label_value=None):
-        """MicroServiceInfoCCEBase
+        r"""MicroServiceInfoCCEBase
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class MicroServiceInfoCCEBase:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MicroServiceInfoCCEBase.
+        r"""Gets the cluster_id of this MicroServiceInfoCCEBase.
 
         云容器引擎集群编号
 
@@ -86,7 +86,7 @@ class MicroServiceInfoCCEBase:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MicroServiceInfoCCEBase.
+        r"""Sets the cluster_id of this MicroServiceInfoCCEBase.
 
         云容器引擎集群编号
 
@@ -97,7 +97,7 @@ class MicroServiceInfoCCEBase:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MicroServiceInfoCCEBase.
+        r"""Gets the namespace of this MicroServiceInfoCCEBase.
 
         命名空间
 
@@ -108,7 +108,7 @@ class MicroServiceInfoCCEBase:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MicroServiceInfoCCEBase.
+        r"""Sets the namespace of this MicroServiceInfoCCEBase.
 
         命名空间
 
@@ -119,7 +119,7 @@ class MicroServiceInfoCCEBase:
 
     @property
     def workload_type(self):
-        """Gets the workload_type of this MicroServiceInfoCCEBase.
+        r"""Gets the workload_type of this MicroServiceInfoCCEBase.
 
         工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
 
@@ -130,7 +130,7 @@ class MicroServiceInfoCCEBase:
 
     @workload_type.setter
     def workload_type(self, workload_type):
-        """Sets the workload_type of this MicroServiceInfoCCEBase.
+        r"""Sets the workload_type of this MicroServiceInfoCCEBase.
 
         工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
 
@@ -141,7 +141,7 @@ class MicroServiceInfoCCEBase:
 
     @property
     def app_name(self):
-        """Gets the app_name of this MicroServiceInfoCCEBase.
+        r"""Gets the app_name of this MicroServiceInfoCCEBase.
 
         APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -152,7 +152,7 @@ class MicroServiceInfoCCEBase:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this MicroServiceInfoCCEBase.
+        r"""Sets the app_name of this MicroServiceInfoCCEBase.
 
         APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -163,7 +163,7 @@ class MicroServiceInfoCCEBase:
 
     @property
     def label_key(self):
-        """Gets the label_key of this MicroServiceInfoCCEBase.
+        r"""Gets the label_key of this MicroServiceInfoCCEBase.
 
         服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -174,7 +174,7 @@ class MicroServiceInfoCCEBase:
 
     @label_key.setter
     def label_key(self, label_key):
-        """Sets the label_key of this MicroServiceInfoCCEBase.
+        r"""Sets the label_key of this MicroServiceInfoCCEBase.
 
         服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -185,7 +185,7 @@ class MicroServiceInfoCCEBase:
 
     @property
     def label_value(self):
-        """Gets the label_value of this MicroServiceInfoCCEBase.
+        r"""Gets the label_value of this MicroServiceInfoCCEBase.
 
         服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -196,7 +196,7 @@ class MicroServiceInfoCCEBase:
 
     @label_value.setter
     def label_value(self, label_value):
-        """Sets the label_value of this MicroServiceInfoCCEBase.
+        r"""Sets the label_value of this MicroServiceInfoCCEBase.
 
         服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 

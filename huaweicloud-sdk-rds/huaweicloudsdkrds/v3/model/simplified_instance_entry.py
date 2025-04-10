@@ -53,7 +53,7 @@ class SimplifiedInstanceEntry:
     }
 
     def __init__(self, id=None, name=None, engine_name=None, engine_version=None, instance_status=None, frozen=None, type=None, pay_model=None, spec_code=None, availability_zone_ids=None, read_only_instances=None, current_actions=None, volume_type=None, volume_size=None, enterprise_project_id=None):
-        """SimplifiedInstanceEntry
+        r"""SimplifiedInstanceEntry
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def id(self):
-        """Gets the id of this SimplifiedInstanceEntry.
+        r"""Gets the id of this SimplifiedInstanceEntry.
 
         实例id
 
@@ -137,7 +137,7 @@ class SimplifiedInstanceEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimplifiedInstanceEntry.
+        r"""Sets the id of this SimplifiedInstanceEntry.
 
         实例id
 
@@ -148,7 +148,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def name(self):
-        """Gets the name of this SimplifiedInstanceEntry.
+        r"""Gets the name of this SimplifiedInstanceEntry.
 
         创建的实例名称
 
@@ -159,7 +159,7 @@ class SimplifiedInstanceEntry:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SimplifiedInstanceEntry.
+        r"""Sets the name of this SimplifiedInstanceEntry.
 
         创建的实例名称
 
@@ -170,7 +170,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this SimplifiedInstanceEntry.
+        r"""Gets the engine_name of this SimplifiedInstanceEntry.
 
         引擎名字
 
@@ -181,7 +181,7 @@ class SimplifiedInstanceEntry:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this SimplifiedInstanceEntry.
+        r"""Sets the engine_name of this SimplifiedInstanceEntry.
 
         引擎名字
 
@@ -192,7 +192,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this SimplifiedInstanceEntry.
+        r"""Gets the engine_version of this SimplifiedInstanceEntry.
 
         引擎版本
 
@@ -203,7 +203,7 @@ class SimplifiedInstanceEntry:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this SimplifiedInstanceEntry.
+        r"""Sets the engine_version of this SimplifiedInstanceEntry.
 
         引擎版本
 
@@ -214,7 +214,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this SimplifiedInstanceEntry.
+        r"""Gets the instance_status of this SimplifiedInstanceEntry.
 
         实例状态。 normal,表示正常 abnormal,表示异常 creating,表示创建中 createfail,表示创建失败 data_disk_full,表示磁盘满 deleted,表示删除 shutdown,表示关机
 
@@ -225,7 +225,7 @@ class SimplifiedInstanceEntry:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this SimplifiedInstanceEntry.
+        r"""Sets the instance_status of this SimplifiedInstanceEntry.
 
         实例状态。 normal,表示正常 abnormal,表示异常 creating,表示创建中 createfail,表示创建失败 data_disk_full,表示磁盘满 deleted,表示删除 shutdown,表示关机
 
@@ -236,7 +236,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def frozen(self):
-        """Gets the frozen of this SimplifiedInstanceEntry.
+        r"""Gets the frozen of this SimplifiedInstanceEntry.
 
         是否冻结
 
@@ -247,7 +247,7 @@ class SimplifiedInstanceEntry:
 
     @frozen.setter
     def frozen(self, frozen):
-        """Sets the frozen of this SimplifiedInstanceEntry.
+        r"""Sets the frozen of this SimplifiedInstanceEntry.
 
         是否冻结
 
@@ -258,7 +258,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def type(self):
-        """Gets the type of this SimplifiedInstanceEntry.
+        r"""Gets the type of this SimplifiedInstanceEntry.
 
         按照实例类型查询。取值Single、Ha、Replica、Enterprise，分别对应于单实例、主备实例和只读实例、分布式实例（企业版）。
 
@@ -269,7 +269,7 @@ class SimplifiedInstanceEntry:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SimplifiedInstanceEntry.
+        r"""Sets the type of this SimplifiedInstanceEntry.
 
         按照实例类型查询。取值Single、Ha、Replica、Enterprise，分别对应于单实例、主备实例和只读实例、分布式实例（企业版）。
 
@@ -280,7 +280,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this SimplifiedInstanceEntry.
+        r"""Gets the pay_model of this SimplifiedInstanceEntry.
 
         按需还是包周期
 
@@ -291,7 +291,7 @@ class SimplifiedInstanceEntry:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this SimplifiedInstanceEntry.
+        r"""Sets the pay_model of this SimplifiedInstanceEntry.
 
         按需还是包周期
 
@@ -302,7 +302,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this SimplifiedInstanceEntry.
+        r"""Gets the spec_code of this SimplifiedInstanceEntry.
 
         规格码
 
@@ -313,7 +313,7 @@ class SimplifiedInstanceEntry:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this SimplifiedInstanceEntry.
+        r"""Sets the spec_code of this SimplifiedInstanceEntry.
 
         规格码
 
@@ -324,7 +324,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this SimplifiedInstanceEntry.
+        r"""Gets the availability_zone_ids of this SimplifiedInstanceEntry.
 
         可用区集合
 
@@ -335,7 +335,7 @@ class SimplifiedInstanceEntry:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this SimplifiedInstanceEntry.
+        r"""Sets the availability_zone_ids of this SimplifiedInstanceEntry.
 
         可用区集合
 
@@ -346,7 +346,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def read_only_instances(self):
-        """Gets the read_only_instances of this SimplifiedInstanceEntry.
+        r"""Gets the read_only_instances of this SimplifiedInstanceEntry.
 
         只读实例id集合
 
@@ -357,7 +357,7 @@ class SimplifiedInstanceEntry:
 
     @read_only_instances.setter
     def read_only_instances(self, read_only_instances):
-        """Sets the read_only_instances of this SimplifiedInstanceEntry.
+        r"""Sets the read_only_instances of this SimplifiedInstanceEntry.
 
         只读实例id集合
 
@@ -368,7 +368,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def current_actions(self):
-        """Gets the current_actions of this SimplifiedInstanceEntry.
+        r"""Gets the current_actions of this SimplifiedInstanceEntry.
 
         当前实例操作动作集合
 
@@ -379,7 +379,7 @@ class SimplifiedInstanceEntry:
 
     @current_actions.setter
     def current_actions(self, current_actions):
-        """Sets the current_actions of this SimplifiedInstanceEntry.
+        r"""Sets the current_actions of this SimplifiedInstanceEntry.
 
         当前实例操作动作集合
 
@@ -390,7 +390,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this SimplifiedInstanceEntry.
+        r"""Gets the volume_type of this SimplifiedInstanceEntry.
 
         磁盘类型。
 
@@ -401,7 +401,7 @@ class SimplifiedInstanceEntry:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this SimplifiedInstanceEntry.
+        r"""Sets the volume_type of this SimplifiedInstanceEntry.
 
         磁盘类型。
 
@@ -412,7 +412,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this SimplifiedInstanceEntry.
+        r"""Gets the volume_size of this SimplifiedInstanceEntry.
 
         磁盘大小(单位:G)。
 
@@ -423,7 +423,7 @@ class SimplifiedInstanceEntry:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this SimplifiedInstanceEntry.
+        r"""Sets the volume_size of this SimplifiedInstanceEntry.
 
         磁盘大小(单位:G)。
 
@@ -434,7 +434,7 @@ class SimplifiedInstanceEntry:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SimplifiedInstanceEntry.
+        r"""Gets the enterprise_project_id of this SimplifiedInstanceEntry.
 
         企业项目标签ID。
 
@@ -445,7 +445,7 @@ class SimplifiedInstanceEntry:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SimplifiedInstanceEntry.
+        r"""Sets the enterprise_project_id of this SimplifiedInstanceEntry.
 
         企业项目标签ID。
 

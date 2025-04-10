@@ -45,7 +45,7 @@ class BaseConnectionInfo:
     }
 
     def __init__(self, auth_config=None, auth_config_id=None, auth_dynamic=None, auth_info=None, auth_prop=None, auth_type=None, cdm_params_config=None, connection_name=None, connector_id=None, description=None, host_config=None):
-        """BaseConnectionInfo
+        r"""BaseConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class BaseConnectionInfo:
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this BaseConnectionInfo.
+        r"""Gets the auth_config of this BaseConnectionInfo.
 
         :return: The auth_config of this BaseConnectionInfo.
         :rtype: object
@@ -122,7 +122,7 @@ class BaseConnectionInfo:
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this BaseConnectionInfo.
+        r"""Sets the auth_config of this BaseConnectionInfo.
 
         :param auth_config: The auth_config of this BaseConnectionInfo.
         :type auth_config: object
@@ -131,7 +131,7 @@ class BaseConnectionInfo:
 
     @property
     def auth_config_id(self):
-        """Gets the auth_config_id of this BaseConnectionInfo.
+        r"""Gets the auth_config_id of this BaseConnectionInfo.
 
         :return: The auth_config_id of this BaseConnectionInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class BaseConnectionInfo:
 
     @auth_config_id.setter
     def auth_config_id(self, auth_config_id):
-        """Sets the auth_config_id of this BaseConnectionInfo.
+        r"""Sets the auth_config_id of this BaseConnectionInfo.
 
         :param auth_config_id: The auth_config_id of this BaseConnectionInfo.
         :type auth_config_id: str
@@ -149,7 +149,7 @@ class BaseConnectionInfo:
 
     @property
     def auth_dynamic(self):
-        """Gets the auth_dynamic of this BaseConnectionInfo.
+        r"""Gets the auth_dynamic of this BaseConnectionInfo.
 
         :return: The auth_dynamic of this BaseConnectionInfo.
         :rtype: object
@@ -158,7 +158,7 @@ class BaseConnectionInfo:
 
     @auth_dynamic.setter
     def auth_dynamic(self, auth_dynamic):
-        """Sets the auth_dynamic of this BaseConnectionInfo.
+        r"""Sets the auth_dynamic of this BaseConnectionInfo.
 
         :param auth_dynamic: The auth_dynamic of this BaseConnectionInfo.
         :type auth_dynamic: object
@@ -167,7 +167,7 @@ class BaseConnectionInfo:
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this BaseConnectionInfo.
+        r"""Gets the auth_info of this BaseConnectionInfo.
 
         :return: The auth_info of this BaseConnectionInfo.
         :rtype: object
@@ -176,7 +176,7 @@ class BaseConnectionInfo:
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this BaseConnectionInfo.
+        r"""Sets the auth_info of this BaseConnectionInfo.
 
         :param auth_info: The auth_info of this BaseConnectionInfo.
         :type auth_info: object
@@ -185,7 +185,7 @@ class BaseConnectionInfo:
 
     @property
     def auth_prop(self):
-        """Gets the auth_prop of this BaseConnectionInfo.
+        r"""Gets the auth_prop of this BaseConnectionInfo.
 
         :return: The auth_prop of this BaseConnectionInfo.
         :rtype: object
@@ -194,7 +194,7 @@ class BaseConnectionInfo:
 
     @auth_prop.setter
     def auth_prop(self, auth_prop):
-        """Sets the auth_prop of this BaseConnectionInfo.
+        r"""Sets the auth_prop of this BaseConnectionInfo.
 
         :param auth_prop: The auth_prop of this BaseConnectionInfo.
         :type auth_prop: object
@@ -203,7 +203,7 @@ class BaseConnectionInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this BaseConnectionInfo.
+        r"""Gets the auth_type of this BaseConnectionInfo.
 
         :return: The auth_type of this BaseConnectionInfo.
         :rtype: str
@@ -212,7 +212,7 @@ class BaseConnectionInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this BaseConnectionInfo.
+        r"""Sets the auth_type of this BaseConnectionInfo.
 
         :param auth_type: The auth_type of this BaseConnectionInfo.
         :type auth_type: str
@@ -221,7 +221,7 @@ class BaseConnectionInfo:
 
     @property
     def cdm_params_config(self):
-        """Gets the cdm_params_config of this BaseConnectionInfo.
+        r"""Gets the cdm_params_config of this BaseConnectionInfo.
 
         :return: The cdm_params_config of this BaseConnectionInfo.
         :rtype: object
@@ -230,7 +230,7 @@ class BaseConnectionInfo:
 
     @cdm_params_config.setter
     def cdm_params_config(self, cdm_params_config):
-        """Sets the cdm_params_config of this BaseConnectionInfo.
+        r"""Sets the cdm_params_config of this BaseConnectionInfo.
 
         :param cdm_params_config: The cdm_params_config of this BaseConnectionInfo.
         :type cdm_params_config: object
@@ -239,7 +239,7 @@ class BaseConnectionInfo:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this BaseConnectionInfo.
+        r"""Gets the connection_name of this BaseConnectionInfo.
 
         :return: The connection_name of this BaseConnectionInfo.
         :rtype: str
@@ -248,7 +248,7 @@ class BaseConnectionInfo:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this BaseConnectionInfo.
+        r"""Sets the connection_name of this BaseConnectionInfo.
 
         :param connection_name: The connection_name of this BaseConnectionInfo.
         :type connection_name: str
@@ -257,7 +257,7 @@ class BaseConnectionInfo:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this BaseConnectionInfo.
+        r"""Gets the connector_id of this BaseConnectionInfo.
 
         :return: The connector_id of this BaseConnectionInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class BaseConnectionInfo:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this BaseConnectionInfo.
+        r"""Sets the connector_id of this BaseConnectionInfo.
 
         :param connector_id: The connector_id of this BaseConnectionInfo.
         :type connector_id: str
@@ -275,7 +275,7 @@ class BaseConnectionInfo:
 
     @property
     def description(self):
-        """Gets the description of this BaseConnectionInfo.
+        r"""Gets the description of this BaseConnectionInfo.
 
         :return: The description of this BaseConnectionInfo.
         :rtype: str
@@ -284,7 +284,7 @@ class BaseConnectionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseConnectionInfo.
+        r"""Sets the description of this BaseConnectionInfo.
 
         :param description: The description of this BaseConnectionInfo.
         :type description: str
@@ -293,7 +293,7 @@ class BaseConnectionInfo:
 
     @property
     def host_config(self):
-        """Gets the host_config of this BaseConnectionInfo.
+        r"""Gets the host_config of this BaseConnectionInfo.
 
         :return: The host_config of this BaseConnectionInfo.
         :rtype: object
@@ -302,7 +302,7 @@ class BaseConnectionInfo:
 
     @host_config.setter
     def host_config(self, host_config):
-        """Sets the host_config of this BaseConnectionInfo.
+        r"""Sets the host_config of this BaseConnectionInfo.
 
         :param host_config: The host_config of this BaseConnectionInfo.
         :type host_config: object

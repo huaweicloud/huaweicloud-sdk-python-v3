@@ -26,7 +26,7 @@ class ApplyCertificateResponse(SdkResponse):
     }
 
     def __init__(self, request_info=None):
-        """ApplyCertificateResponse
+        r"""ApplyCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ApplyCertificateResponse(SdkResponse):
 
     @property
     def request_info(self):
-        """Gets the request_info of this ApplyCertificateResponse.
+        r"""Gets the request_info of this ApplyCertificateResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class ApplyCertificateResponse(SdkResponse):
 
     @request_info.setter
     def request_info(self, request_info):
-        """Sets the request_info of this ApplyCertificateResponse.
+        r"""Sets the request_info of this ApplyCertificateResponse.
 
         请求结果。
 

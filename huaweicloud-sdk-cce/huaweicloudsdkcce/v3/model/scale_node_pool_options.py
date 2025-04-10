@@ -27,7 +27,7 @@ class ScaleNodePoolOptions:
     }
 
     def __init__(self, scalable_checking=None, billing_config_override=None):
-        """ScaleNodePoolOptions
+        r"""ScaleNodePoolOptions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScaleNodePoolOptions:
 
     @property
     def scalable_checking(self):
-        """Gets the scalable_checking of this ScaleNodePoolOptions.
+        r"""Gets the scalable_checking of this ScaleNodePoolOptions.
 
         扩容状态检查策略: instant(同步检查), async(异步检查)。默认同步检查instant 
 
@@ -61,7 +61,7 @@ class ScaleNodePoolOptions:
 
     @scalable_checking.setter
     def scalable_checking(self, scalable_checking):
-        """Sets the scalable_checking of this ScaleNodePoolOptions.
+        r"""Sets the scalable_checking of this ScaleNodePoolOptions.
 
         扩容状态检查策略: instant(同步检查), async(异步检查)。默认同步检查instant 
 
@@ -72,7 +72,7 @@ class ScaleNodePoolOptions:
 
     @property
     def billing_config_override(self):
-        """Gets the billing_config_override of this ScaleNodePoolOptions.
+        r"""Gets the billing_config_override of this ScaleNodePoolOptions.
 
         :return: The billing_config_override of this ScaleNodePoolOptions.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleUpBillingConfigOverride`
@@ -81,7 +81,7 @@ class ScaleNodePoolOptions:
 
     @billing_config_override.setter
     def billing_config_override(self, billing_config_override):
-        """Sets the billing_config_override of this ScaleNodePoolOptions.
+        r"""Sets the billing_config_override of this ScaleNodePoolOptions.
 
         :param billing_config_override: The billing_config_override of this ScaleNodePoolOptions.
         :type billing_config_override: :class:`huaweicloudsdkcce.v3.ScaleUpBillingConfigOverride`

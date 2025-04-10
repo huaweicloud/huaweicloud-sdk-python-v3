@@ -29,7 +29,7 @@ class ModifyDataSyncRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ModifyDataSyncRequest
+        r"""ModifyDataSyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ModifyDataSyncRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyDataSyncRequest.
+        r"""Gets the x_language of this ModifyDataSyncRequest.
 
         **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us - zh-cn  **默认值**：  en-us。
 
@@ -66,7 +66,7 @@ class ModifyDataSyncRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyDataSyncRequest.
+        r"""Sets the x_language of this ModifyDataSyncRequest.
 
         **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us - zh-cn  **默认值**：  en-us。
 
@@ -77,7 +77,7 @@ class ModifyDataSyncRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyDataSyncRequest.
+        r"""Gets the instance_id of this ModifyDataSyncRequest.
 
         **参数解释**：  StarRocks实例ID，严格匹配UUID规则。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in17，且长度为36个字符。  **默认值**：  不涉及。
 
@@ -88,7 +88,7 @@ class ModifyDataSyncRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyDataSyncRequest.
+        r"""Sets the instance_id of this ModifyDataSyncRequest.
 
         **参数解释**：  StarRocks实例ID，严格匹配UUID规则。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in17，且长度为36个字符。  **默认值**：  不涉及。
 
@@ -99,7 +99,7 @@ class ModifyDataSyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyDataSyncRequest.
+        r"""Gets the body of this ModifyDataSyncRequest.
 
         :return: The body of this ModifyDataSyncRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyDataSyncConfigRequestV3`
@@ -108,7 +108,7 @@ class ModifyDataSyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyDataSyncRequest.
+        r"""Sets the body of this ModifyDataSyncRequest.
 
         :param body: The body of this ModifyDataSyncRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyDataSyncConfigRequestV3`

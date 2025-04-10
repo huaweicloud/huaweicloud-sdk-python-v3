@@ -24,7 +24,7 @@ class DeleteRocketMqMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRocketMqMigrationTaskResponse
+        r"""DeleteRocketMqMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class UpdateQueueCidrRequestBody:
     }
 
     def __init__(self, cidr_in_vpc=None):
-        """UpdateQueueCidrRequestBody
+        r"""UpdateQueueCidrRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateQueueCidrRequestBody:
 
     @property
     def cidr_in_vpc(self):
-        """Gets the cidr_in_vpc of this UpdateQueueCidrRequestBody.
+        r"""Gets the cidr_in_vpc of this UpdateQueueCidrRequestBody.
 
         队列虚拟私有云网段。  不同CU规格队列支持的网段范围：  - 4cu:  10.0.0.0/8 ~ 10.255.255.192/26  172.16.0.0/12 ~ 172.31.255.192/26  192.168.0.0/16 ~ 192.168.255.192/26  - 16cu:  10.0.0.0/8 ~ 10.255.255.0/24  172.16.0.0/12 ~ 172.31.255.0/24  192.168.0.0/16 ~ 192.168.255.0/24  - 64cu:  10.0.0.0/8 ~ 10.255.252.0/22  172.16.0.0/12 ~ 172.31.252.0/22  192.168.0.0/16 ~ 192.168.252.0/22  - 128cu:  10.0.0.0/8 ~ 10.255.252.0/21  172.16.0.0/12 ~ 172.31.252.0/21  192.168.0.0/16 ~ 192.168.252.0/21
 
@@ -54,7 +54,7 @@ class UpdateQueueCidrRequestBody:
 
     @cidr_in_vpc.setter
     def cidr_in_vpc(self, cidr_in_vpc):
-        """Sets the cidr_in_vpc of this UpdateQueueCidrRequestBody.
+        r"""Sets the cidr_in_vpc of this UpdateQueueCidrRequestBody.
 
         队列虚拟私有云网段。  不同CU规格队列支持的网段范围：  - 4cu:  10.0.0.0/8 ~ 10.255.255.192/26  172.16.0.0/12 ~ 172.31.255.192/26  192.168.0.0/16 ~ 192.168.255.192/26  - 16cu:  10.0.0.0/8 ~ 10.255.255.0/24  172.16.0.0/12 ~ 172.31.255.0/24  192.168.0.0/16 ~ 192.168.255.0/24  - 64cu:  10.0.0.0/8 ~ 10.255.252.0/22  172.16.0.0/12 ~ 172.31.252.0/22  192.168.0.0/16 ~ 192.168.252.0/22  - 128cu:  10.0.0.0/8 ~ 10.255.252.0/21  172.16.0.0/12 ~ 172.31.252.0/21  192.168.0.0/16 ~ 192.168.252.0/21
 

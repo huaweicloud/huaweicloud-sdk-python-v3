@@ -27,7 +27,7 @@ class CreateFlinkSqlJobGraphRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """CreateFlinkSqlJobGraphRequest
+        r"""CreateFlinkSqlJobGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFlinkSqlJobGraphRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateFlinkSqlJobGraphRequest.
+        r"""Gets the job_id of this CreateFlinkSqlJobGraphRequest.
 
         :return: The job_id of this CreateFlinkSqlJobGraphRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class CreateFlinkSqlJobGraphRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateFlinkSqlJobGraphRequest.
+        r"""Sets the job_id of this CreateFlinkSqlJobGraphRequest.
 
         :param job_id: The job_id of this CreateFlinkSqlJobGraphRequest.
         :type job_id: str
@@ -67,7 +67,7 @@ class CreateFlinkSqlJobGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFlinkSqlJobGraphRequest.
+        r"""Gets the body of this CreateFlinkSqlJobGraphRequest.
 
         :return: The body of this CreateFlinkSqlJobGraphRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobGraphRequestBody`
@@ -76,7 +76,7 @@ class CreateFlinkSqlJobGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFlinkSqlJobGraphRequest.
+        r"""Sets the body of this CreateFlinkSqlJobGraphRequest.
 
         :param body: The body of this CreateFlinkSqlJobGraphRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobGraphRequestBody`

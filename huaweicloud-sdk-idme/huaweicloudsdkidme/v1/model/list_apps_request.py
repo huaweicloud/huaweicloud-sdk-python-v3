@@ -27,7 +27,7 @@ class ListAppsRequest:
     }
 
     def __init__(self, page_num=None, page_size=None):
-        """ListAppsRequest
+        r"""ListAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAppsRequest:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListAppsRequest.
+        r"""Gets the page_num of this ListAppsRequest.
 
         页码
 
@@ -61,7 +61,7 @@ class ListAppsRequest:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListAppsRequest.
+        r"""Sets the page_num of this ListAppsRequest.
 
         页码
 
@@ -72,7 +72,7 @@ class ListAppsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAppsRequest.
+        r"""Gets the page_size of this ListAppsRequest.
 
         当前页大小
 
@@ -83,7 +83,7 @@ class ListAppsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAppsRequest.
+        r"""Sets the page_size of this ListAppsRequest.
 
         当前页大小
 

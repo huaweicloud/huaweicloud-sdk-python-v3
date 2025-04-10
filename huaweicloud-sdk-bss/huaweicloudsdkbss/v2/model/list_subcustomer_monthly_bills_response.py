@@ -30,7 +30,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
     }
 
     def __init__(self, bill_sums=None, count=None, currency=None):
-        """ListSubcustomerMonthlyBillsResponse
+        r"""ListSubcustomerMonthlyBillsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
     @property
     def bill_sums(self):
-        """Gets the bill_sums of this ListSubcustomerMonthlyBillsResponse.
+        r"""Gets the bill_sums of this ListSubcustomerMonthlyBillsResponse.
 
         账单记录，具体参考表2。
 
@@ -69,7 +69,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
     @bill_sums.setter
     def bill_sums(self, bill_sums):
-        """Sets the bill_sums of this ListSubcustomerMonthlyBillsResponse.
+        r"""Sets the bill_sums of this ListSubcustomerMonthlyBillsResponse.
 
         账单记录，具体参考表2。
 
@@ -80,7 +80,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSubcustomerMonthlyBillsResponse.
+        r"""Gets the count of this ListSubcustomerMonthlyBillsResponse.
 
         总记录数。
 
@@ -91,7 +91,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSubcustomerMonthlyBillsResponse.
+        r"""Sets the count of this ListSubcustomerMonthlyBillsResponse.
 
         总记录数。
 
@@ -102,7 +102,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListSubcustomerMonthlyBillsResponse.
+        r"""Gets the currency of this ListSubcustomerMonthlyBillsResponse.
 
         货币编码。 CNY：人民币。
 
@@ -113,7 +113,7 @@ class ListSubcustomerMonthlyBillsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListSubcustomerMonthlyBillsResponse.
+        r"""Sets the currency of this ListSubcustomerMonthlyBillsResponse.
 
         货币编码。 CNY：人民币。
 

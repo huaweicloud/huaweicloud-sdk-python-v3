@@ -28,7 +28,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
     }
 
     def __init__(self, testsuite_id=None, testcase_ids=None):
-        """CreateApiTestSuiteByRepoFileResponse
+        r"""CreateApiTestSuiteByRepoFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
 
     @property
     def testsuite_id(self):
-        """Gets the testsuite_id of this CreateApiTestSuiteByRepoFileResponse.
+        r"""Gets the testsuite_id of this CreateApiTestSuiteByRepoFileResponse.
 
         生成的测试套的id
 
@@ -62,7 +62,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
 
     @testsuite_id.setter
     def testsuite_id(self, testsuite_id):
-        """Sets the testsuite_id of this CreateApiTestSuiteByRepoFileResponse.
+        r"""Sets the testsuite_id of this CreateApiTestSuiteByRepoFileResponse.
 
         生成的测试套的id
 
@@ -73,7 +73,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
 
     @property
     def testcase_ids(self):
-        """Gets the testcase_ids of this CreateApiTestSuiteByRepoFileResponse.
+        r"""Gets the testcase_ids of this CreateApiTestSuiteByRepoFileResponse.
 
         生成的测试用例id列表
 
@@ -84,7 +84,7 @@ class CreateApiTestSuiteByRepoFileResponse(SdkResponse):
 
     @testcase_ids.setter
     def testcase_ids(self, testcase_ids):
-        """Sets the testcase_ids of this CreateApiTestSuiteByRepoFileResponse.
+        r"""Sets the testcase_ids of this CreateApiTestSuiteByRepoFileResponse.
 
         生成的测试用例id列表
 

@@ -25,7 +25,7 @@ class AddSubsetsToGatewayRequestBody:
     }
 
     def __init__(self, resources=None):
-        """AddSubsetsToGatewayRequestBody
+        r"""AddSubsetsToGatewayRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddSubsetsToGatewayRequestBody:
 
     @property
     def resources(self):
-        """Gets the resources of this AddSubsetsToGatewayRequestBody.
+        r"""Gets the resources of this AddSubsetsToGatewayRequestBody.
 
         待添加子设备ID列表，且设备需是普通设备，自动向下取整
 
@@ -53,7 +53,7 @@ class AddSubsetsToGatewayRequestBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this AddSubsetsToGatewayRequestBody.
+        r"""Sets the resources of this AddSubsetsToGatewayRequestBody.
 
         待添加子设备ID列表，且设备需是普通设备，自动向下取整
 

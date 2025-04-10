@@ -47,7 +47,7 @@ class JobDto:
     }
 
     def __init__(self, name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, tool_id=None, tool_type=None, tasks=None, io_acc_id=None, io_acc_expected_usage=None, node_labels=None):
-        """JobDto
+        r"""JobDto
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class JobDto:
 
     @property
     def name(self):
-        """Gets the name of this JobDto.
+        r"""Gets the name of this JobDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -128,7 +128,7 @@ class JobDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobDto.
+        r"""Sets the name of this JobDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -139,7 +139,7 @@ class JobDto:
 
     @property
     def description(self):
-        """Gets the description of this JobDto.
+        r"""Gets the description of this JobDto.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -150,7 +150,7 @@ class JobDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JobDto.
+        r"""Sets the description of this JobDto.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -161,7 +161,7 @@ class JobDto:
 
     @property
     def labels(self):
-        """Gets the labels of this JobDto.
+        r"""Gets the labels of this JobDto.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -172,7 +172,7 @@ class JobDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this JobDto.
+        r"""Sets the labels of this JobDto.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -183,7 +183,7 @@ class JobDto:
 
     @property
     def priority(self):
-        """Gets the priority of this JobDto.
+        r"""Gets the priority of this JobDto.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -194,7 +194,7 @@ class JobDto:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this JobDto.
+        r"""Sets the priority of this JobDto.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -205,7 +205,7 @@ class JobDto:
 
     @property
     def timeout(self):
-        """Gets the timeout of this JobDto.
+        r"""Gets the timeout of this JobDto.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -216,7 +216,7 @@ class JobDto:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this JobDto.
+        r"""Sets the timeout of this JobDto.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -227,7 +227,7 @@ class JobDto:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this JobDto.
+        r"""Gets the output_dir of this JobDto.
 
         作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -238,7 +238,7 @@ class JobDto:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this JobDto.
+        r"""Sets the output_dir of this JobDto.
 
         作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -249,7 +249,7 @@ class JobDto:
 
     @property
     def tool_id(self):
-        """Gets the tool_id of this JobDto.
+        r"""Gets the tool_id of this JobDto.
 
         作业依赖的组件id，组件当前仅支持流程，取值范围[1,135]，支持大小写字母和数字。目前支持两种格式，特殊id：{流程名称}::{流程版本}::{源项目名称}；正常id：流程id
 
@@ -260,7 +260,7 @@ class JobDto:
 
     @tool_id.setter
     def tool_id(self, tool_id):
-        """Sets the tool_id of this JobDto.
+        r"""Sets the tool_id of this JobDto.
 
         作业依赖的组件id，组件当前仅支持流程，取值范围[1,135]，支持大小写字母和数字。目前支持两种格式，特殊id：{流程名称}::{流程版本}::{源项目名称}；正常id：流程id
 
@@ -271,7 +271,7 @@ class JobDto:
 
     @property
     def tool_type(self):
-        """Gets the tool_type of this JobDto.
+        r"""Gets the tool_type of this JobDto.
 
         作业依赖的组件类型，仅支持填写workflow
 
@@ -282,7 +282,7 @@ class JobDto:
 
     @tool_type.setter
     def tool_type(self, tool_type):
-        """Sets the tool_type of this JobDto.
+        r"""Sets the tool_type of this JobDto.
 
         作业依赖的组件类型，仅支持填写workflow
 
@@ -293,7 +293,7 @@ class JobDto:
 
     @property
     def tasks(self):
-        """Gets the tasks of this JobDto.
+        r"""Gets the tasks of this JobDto.
 
         基于替换规则压扁后，job实际的运行信息
 
@@ -304,7 +304,7 @@ class JobDto:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this JobDto.
+        r"""Sets the tasks of this JobDto.
 
         基于替换规则压扁后，job实际的运行信息
 
@@ -315,7 +315,7 @@ class JobDto:
 
     @property
     def io_acc_id(self):
-        """Gets the io_acc_id of this JobDto.
+        r"""Gets the io_acc_id of this JobDto.
 
         作业使用的IO加速实例id，不填表示不使用
 
@@ -326,7 +326,7 @@ class JobDto:
 
     @io_acc_id.setter
     def io_acc_id(self, io_acc_id):
-        """Sets the io_acc_id of this JobDto.
+        r"""Sets the io_acc_id of this JobDto.
 
         作业使用的IO加速实例id，不填表示不使用
 
@@ -337,7 +337,7 @@ class JobDto:
 
     @property
     def io_acc_expected_usage(self):
-        """Gets the io_acc_expected_usage of this JobDto.
+        r"""Gets the io_acc_expected_usage of this JobDto.
 
         作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
 
@@ -348,7 +348,7 @@ class JobDto:
 
     @io_acc_expected_usage.setter
     def io_acc_expected_usage(self, io_acc_expected_usage):
-        """Sets the io_acc_expected_usage of this JobDto.
+        r"""Sets the io_acc_expected_usage of this JobDto.
 
         作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
 
@@ -359,7 +359,7 @@ class JobDto:
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this JobDto.
+        r"""Gets the node_labels of this JobDto.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -370,7 +370,7 @@ class JobDto:
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this JobDto.
+        r"""Sets the node_labels of this JobDto.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 

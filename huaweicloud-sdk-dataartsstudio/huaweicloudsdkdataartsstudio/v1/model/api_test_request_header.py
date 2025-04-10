@@ -31,7 +31,7 @@ class ApiTestRequestHeader:
     }
 
     def __init__(self, path=None, user_agent=None, x_apig_mode=None, x_app_identity=None):
-        """ApiTestRequestHeader
+        r"""ApiTestRequestHeader
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApiTestRequestHeader:
 
     @property
     def path(self):
-        """Gets the path of this ApiTestRequestHeader.
+        r"""Gets the path of this ApiTestRequestHeader.
 
         请求路径
 
@@ -75,7 +75,7 @@ class ApiTestRequestHeader:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ApiTestRequestHeader.
+        r"""Sets the path of this ApiTestRequestHeader.
 
         请求路径
 
@@ -86,7 +86,7 @@ class ApiTestRequestHeader:
 
     @property
     def user_agent(self):
-        """Gets the user_agent of this ApiTestRequestHeader.
+        r"""Gets the user_agent of this ApiTestRequestHeader.
 
         代理（固定值）
 
@@ -97,7 +97,7 @@ class ApiTestRequestHeader:
 
     @user_agent.setter
     def user_agent(self, user_agent):
-        """Sets the user_agent of this ApiTestRequestHeader.
+        r"""Sets the user_agent of this ApiTestRequestHeader.
 
         代理（固定值）
 
@@ -108,7 +108,7 @@ class ApiTestRequestHeader:
 
     @property
     def x_apig_mode(self):
-        """Gets the x_apig_mode of this ApiTestRequestHeader.
+        r"""Gets the x_apig_mode of this ApiTestRequestHeader.
 
         请求方式（固定值）
 
@@ -119,7 +119,7 @@ class ApiTestRequestHeader:
 
     @x_apig_mode.setter
     def x_apig_mode(self, x_apig_mode):
-        """Sets the x_apig_mode of this ApiTestRequestHeader.
+        r"""Sets the x_apig_mode of this ApiTestRequestHeader.
 
         请求方式（固定值）
 
@@ -130,7 +130,7 @@ class ApiTestRequestHeader:
 
     @property
     def x_app_identity(self):
-        """Gets the x_app_identity of this ApiTestRequestHeader.
+        r"""Gets the x_app_identity of this ApiTestRequestHeader.
 
         识别编号（固定值）
 
@@ -141,7 +141,7 @@ class ApiTestRequestHeader:
 
     @x_app_identity.setter
     def x_app_identity(self, x_app_identity):
-        """Sets the x_app_identity of this ApiTestRequestHeader.
+        r"""Sets the x_app_identity of this ApiTestRequestHeader.
 
         识别编号（固定值）
 

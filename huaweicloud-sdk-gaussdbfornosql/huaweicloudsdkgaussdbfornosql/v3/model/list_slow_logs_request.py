@@ -37,7 +37,7 @@ class ListSlowLogsRequest:
     }
 
     def __init__(self, instance_id=None, start_date=None, end_date=None, node_id=None, type=None, offset=None, limit=None):
-        """ListSlowLogsRequest
+        r"""ListSlowLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListSlowLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSlowLogsRequest.
+        r"""Gets the instance_id of this ListSlowLogsRequest.
 
         实例ID。
 
@@ -93,7 +93,7 @@ class ListSlowLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSlowLogsRequest.
+        r"""Sets the instance_id of this ListSlowLogsRequest.
 
         实例ID。
 
@@ -104,7 +104,7 @@ class ListSlowLogsRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListSlowLogsRequest.
+        r"""Gets the start_date of this ListSlowLogsRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -115,7 +115,7 @@ class ListSlowLogsRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListSlowLogsRequest.
+        r"""Sets the start_date of this ListSlowLogsRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -126,7 +126,7 @@ class ListSlowLogsRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListSlowLogsRequest.
+        r"""Gets the end_date of this ListSlowLogsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。注：结束时间不能晚于当前时间。
 
@@ -137,7 +137,7 @@ class ListSlowLogsRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListSlowLogsRequest.
+        r"""Sets the end_date of this ListSlowLogsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。注：结束时间不能晚于当前时间。
 
@@ -148,7 +148,7 @@ class ListSlowLogsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListSlowLogsRequest.
+        r"""Gets the node_id of this ListSlowLogsRequest.
 
         节点ID，取空值，表示查询实例下所有允许查询的节点。 具体取值请参考查询实例列表和详情接口\"ListInstances\"中nodes字段数据结构说明的“id”。
 
@@ -159,7 +159,7 @@ class ListSlowLogsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListSlowLogsRequest.
+        r"""Sets the node_id of this ListSlowLogsRequest.
 
         节点ID，取空值，表示查询实例下所有允许查询的节点。 具体取值请参考查询实例列表和详情接口\"ListInstances\"中nodes字段数据结构说明的“id”。
 
@@ -170,7 +170,7 @@ class ListSlowLogsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListSlowLogsRequest.
+        r"""Gets the type of this ListSlowLogsRequest.
 
         语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型： - SELECT
 
@@ -181,7 +181,7 @@ class ListSlowLogsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListSlowLogsRequest.
+        r"""Sets the type of this ListSlowLogsRequest.
 
         语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型： - SELECT
 
@@ -192,7 +192,7 @@ class ListSlowLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSlowLogsRequest.
+        r"""Gets the offset of this ListSlowLogsRequest.
 
         索引位置，偏移量。取值范围为 [0, 1999]。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -203,7 +203,7 @@ class ListSlowLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSlowLogsRequest.
+        r"""Sets the offset of this ListSlowLogsRequest.
 
         索引位置，偏移量。取值范围为 [0, 1999]。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -214,7 +214,7 @@ class ListSlowLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSlowLogsRequest.
+        r"""Gets the limit of this ListSlowLogsRequest.
 
         查询记录数。取值范围[1, 100]，默认10 （表示默认返回10条数据）。 注意： limit 与 offset 的和需要满足 <= 2000的条件。
 
@@ -225,7 +225,7 @@ class ListSlowLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSlowLogsRequest.
+        r"""Sets the limit of this ListSlowLogsRequest.
 
         查询记录数。取值范围[1, 100]，默认10 （表示默认返回10条数据）。 注意： limit 与 offset 的和需要满足 <= 2000的条件。
 

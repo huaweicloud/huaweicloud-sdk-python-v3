@@ -33,7 +33,7 @@ class KnowledgeQuestionInfo:
     }
 
     def __init__(self, question_id=None, question=None, intent_id=None, create_time=None, update_time=None):
-        """KnowledgeQuestionInfo
+        r"""KnowledgeQuestionInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class KnowledgeQuestionInfo:
 
     @property
     def question_id(self):
-        """Gets the question_id of this KnowledgeQuestionInfo.
+        r"""Gets the question_id of this KnowledgeQuestionInfo.
 
         问法ID。
 
@@ -80,7 +80,7 @@ class KnowledgeQuestionInfo:
 
     @question_id.setter
     def question_id(self, question_id):
-        """Sets the question_id of this KnowledgeQuestionInfo.
+        r"""Sets the question_id of this KnowledgeQuestionInfo.
 
         问法ID。
 
@@ -91,7 +91,7 @@ class KnowledgeQuestionInfo:
 
     @property
     def question(self):
-        """Gets the question of this KnowledgeQuestionInfo.
+        r"""Gets the question of this KnowledgeQuestionInfo.
 
         问法。
 
@@ -102,7 +102,7 @@ class KnowledgeQuestionInfo:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this KnowledgeQuestionInfo.
+        r"""Sets the question of this KnowledgeQuestionInfo.
 
         问法。
 
@@ -113,7 +113,7 @@ class KnowledgeQuestionInfo:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this KnowledgeQuestionInfo.
+        r"""Gets the intent_id of this KnowledgeQuestionInfo.
 
         意图ID。
 
@@ -124,7 +124,7 @@ class KnowledgeQuestionInfo:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this KnowledgeQuestionInfo.
+        r"""Sets the intent_id of this KnowledgeQuestionInfo.
 
         意图ID。
 
@@ -135,7 +135,7 @@ class KnowledgeQuestionInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KnowledgeQuestionInfo.
+        r"""Gets the create_time of this KnowledgeQuestionInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -146,7 +146,7 @@ class KnowledgeQuestionInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KnowledgeQuestionInfo.
+        r"""Sets the create_time of this KnowledgeQuestionInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -157,7 +157,7 @@ class KnowledgeQuestionInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this KnowledgeQuestionInfo.
+        r"""Gets the update_time of this KnowledgeQuestionInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -168,7 +168,7 @@ class KnowledgeQuestionInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this KnowledgeQuestionInfo.
+        r"""Sets the update_time of this KnowledgeQuestionInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

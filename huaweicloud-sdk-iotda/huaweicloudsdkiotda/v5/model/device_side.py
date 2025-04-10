@@ -25,7 +25,7 @@ class DeviceSide:
     }
 
     def __init__(self, device_ids=None):
-        """DeviceSide
+        r"""DeviceSide
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeviceSide:
 
     @property
     def device_ids(self):
-        """Gets the device_ids of this DeviceSide.
+        r"""Gets the device_ids of this DeviceSide.
 
         **参数说明**：端侧执行下发的目标设备ID列表。设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -54,7 +54,7 @@ class DeviceSide:
 
     @device_ids.setter
     def device_ids(self, device_ids):
-        """Sets the device_ids of this DeviceSide.
+        r"""Sets the device_ids of this DeviceSide.
 
         **参数说明**：端侧执行下发的目标设备ID列表。设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 

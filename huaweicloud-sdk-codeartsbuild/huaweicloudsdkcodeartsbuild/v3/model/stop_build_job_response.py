@@ -28,7 +28,7 @@ class StopBuildJobResponse(SdkResponse):
     }
 
     def __init__(self, success=None, result=None):
-        """StopBuildJobResponse
+        r"""StopBuildJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StopBuildJobResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this StopBuildJobResponse.
+        r"""Gets the success of this StopBuildJobResponse.
 
         是否停止成功
 
@@ -62,7 +62,7 @@ class StopBuildJobResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this StopBuildJobResponse.
+        r"""Sets the success of this StopBuildJobResponse.
 
         是否停止成功
 
@@ -73,7 +73,7 @@ class StopBuildJobResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StopBuildJobResponse.
+        r"""Gets the result of this StopBuildJobResponse.
 
         返回结果
 
@@ -84,7 +84,7 @@ class StopBuildJobResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StopBuildJobResponse.
+        r"""Sets the result of this StopBuildJobResponse.
 
         返回结果
 

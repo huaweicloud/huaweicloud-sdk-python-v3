@@ -59,7 +59,7 @@ class FileRedirectionOptions:
     }
 
     def __init__(self, fluid_control_switch_enable=None, fluid_control_options=None, compression_switch_enable=None, compression_switch_options=None, linux_file_size_supported_enable=None, linux_file_size_supported_options=None, linux_root_mount_switch_enable=None, linux_root_dir_list=None, linux_file_mount_path=None, linux_fixed_drive_file_system_format=None, linux_removable_drive_file_system_format=None, linux_cdrom_drive_file_system_format=None, linux_network_drive_file_system_format=None, path_separator=None, fixed_drive_enable=None, removable_drive_enable=None, cd_rom_drive_enable=None, network_drive_enable=None):
-        """FileRedirectionOptions
+        r"""FileRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class FileRedirectionOptions:
 
     @property
     def fluid_control_switch_enable(self):
-        """Gets the fluid_control_switch_enable of this FileRedirectionOptions.
+        r"""Gets the fluid_control_switch_enable of this FileRedirectionOptions.
 
         是否开启流控开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -173,7 +173,7 @@ class FileRedirectionOptions:
 
     @fluid_control_switch_enable.setter
     def fluid_control_switch_enable(self, fluid_control_switch_enable):
-        """Sets the fluid_control_switch_enable of this FileRedirectionOptions.
+        r"""Sets the fluid_control_switch_enable of this FileRedirectionOptions.
 
         是否开启流控开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -184,7 +184,7 @@ class FileRedirectionOptions:
 
     @property
     def fluid_control_options(self):
-        """Gets the fluid_control_options of this FileRedirectionOptions.
+        r"""Gets the fluid_control_options of this FileRedirectionOptions.
 
         :return: The fluid_control_options of this FileRedirectionOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptionsFluidControlOptions`
@@ -193,7 +193,7 @@ class FileRedirectionOptions:
 
     @fluid_control_options.setter
     def fluid_control_options(self, fluid_control_options):
-        """Sets the fluid_control_options of this FileRedirectionOptions.
+        r"""Sets the fluid_control_options of this FileRedirectionOptions.
 
         :param fluid_control_options: The fluid_control_options of this FileRedirectionOptions.
         :type fluid_control_options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptionsFluidControlOptions`
@@ -202,7 +202,7 @@ class FileRedirectionOptions:
 
     @property
     def compression_switch_enable(self):
-        """Gets the compression_switch_enable of this FileRedirectionOptions.
+        r"""Gets the compression_switch_enable of this FileRedirectionOptions.
 
         是否开启压缩开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -213,7 +213,7 @@ class FileRedirectionOptions:
 
     @compression_switch_enable.setter
     def compression_switch_enable(self, compression_switch_enable):
-        """Sets the compression_switch_enable of this FileRedirectionOptions.
+        r"""Sets the compression_switch_enable of this FileRedirectionOptions.
 
         是否开启压缩开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -224,7 +224,7 @@ class FileRedirectionOptions:
 
     @property
     def compression_switch_options(self):
-        """Gets the compression_switch_options of this FileRedirectionOptions.
+        r"""Gets the compression_switch_options of this FileRedirectionOptions.
 
         :return: The compression_switch_options of this FileRedirectionOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptionsCompressionSwitchOptions`
@@ -233,7 +233,7 @@ class FileRedirectionOptions:
 
     @compression_switch_options.setter
     def compression_switch_options(self, compression_switch_options):
-        """Sets the compression_switch_options of this FileRedirectionOptions.
+        r"""Sets the compression_switch_options of this FileRedirectionOptions.
 
         :param compression_switch_options: The compression_switch_options of this FileRedirectionOptions.
         :type compression_switch_options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptionsCompressionSwitchOptions`
@@ -242,7 +242,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_file_size_supported_enable(self):
-        """Gets the linux_file_size_supported_enable of this FileRedirectionOptions.
+        r"""Gets the linux_file_size_supported_enable of this FileRedirectionOptions.
 
         是否开启Linux支持设置文件大小。取值为： false：表示关闭。 true：表示开启。
 
@@ -253,7 +253,7 @@ class FileRedirectionOptions:
 
     @linux_file_size_supported_enable.setter
     def linux_file_size_supported_enable(self, linux_file_size_supported_enable):
-        """Sets the linux_file_size_supported_enable of this FileRedirectionOptions.
+        r"""Sets the linux_file_size_supported_enable of this FileRedirectionOptions.
 
         是否开启Linux支持设置文件大小。取值为： false：表示关闭。 true：表示开启。
 
@@ -264,7 +264,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_file_size_supported_options(self):
-        """Gets the linux_file_size_supported_options of this FileRedirectionOptions.
+        r"""Gets the linux_file_size_supported_options of this FileRedirectionOptions.
 
         :return: The linux_file_size_supported_options of this FileRedirectionOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptionsLinuxFileSizeSupportedOptions`
@@ -273,7 +273,7 @@ class FileRedirectionOptions:
 
     @linux_file_size_supported_options.setter
     def linux_file_size_supported_options(self, linux_file_size_supported_options):
-        """Sets the linux_file_size_supported_options of this FileRedirectionOptions.
+        r"""Sets the linux_file_size_supported_options of this FileRedirectionOptions.
 
         :param linux_file_size_supported_options: The linux_file_size_supported_options of this FileRedirectionOptions.
         :type linux_file_size_supported_options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptionsLinuxFileSizeSupportedOptions`
@@ -282,7 +282,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_root_mount_switch_enable(self):
-        """Gets the linux_root_mount_switch_enable of this FileRedirectionOptions.
+        r"""Gets the linux_root_mount_switch_enable of this FileRedirectionOptions.
 
         是否开启Linux根目录挂载开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -293,7 +293,7 @@ class FileRedirectionOptions:
 
     @linux_root_mount_switch_enable.setter
     def linux_root_mount_switch_enable(self, linux_root_mount_switch_enable):
-        """Sets the linux_root_mount_switch_enable of this FileRedirectionOptions.
+        r"""Sets the linux_root_mount_switch_enable of this FileRedirectionOptions.
 
         是否开启Linux根目录挂载开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -304,7 +304,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_root_dir_list(self):
-        """Gets the linux_root_dir_list of this FileRedirectionOptions.
+        r"""Gets the linux_root_dir_list of this FileRedirectionOptions.
 
         Linux根目录挂载路径。默认：\"\\home\"。
 
@@ -315,7 +315,7 @@ class FileRedirectionOptions:
 
     @linux_root_dir_list.setter
     def linux_root_dir_list(self, linux_root_dir_list):
-        """Sets the linux_root_dir_list of this FileRedirectionOptions.
+        r"""Sets the linux_root_dir_list of this FileRedirectionOptions.
 
         Linux根目录挂载路径。默认：\"\\home\"。
 
@@ -326,7 +326,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_file_mount_path(self):
-        """Gets the linux_file_mount_path of this FileRedirectionOptions.
+        r"""Gets the linux_file_mount_path of this FileRedirectionOptions.
 
         Linux文件系统挂载路径。默认：\"\\media|\\Volumes|\\swdb\\mnt|\\home|\\storage|\\tmp|\\run\\media\"。
 
@@ -337,7 +337,7 @@ class FileRedirectionOptions:
 
     @linux_file_mount_path.setter
     def linux_file_mount_path(self, linux_file_mount_path):
-        """Sets the linux_file_mount_path of this FileRedirectionOptions.
+        r"""Sets the linux_file_mount_path of this FileRedirectionOptions.
 
         Linux文件系统挂载路径。默认：\"\\media|\\Volumes|\\swdb\\mnt|\\home|\\storage|\\tmp|\\run\\media\"。
 
@@ -348,7 +348,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_fixed_drive_file_system_format(self):
-        """Gets the linux_fixed_drive_file_system_format of this FileRedirectionOptions.
+        r"""Gets the linux_fixed_drive_file_system_format of this FileRedirectionOptions.
 
         Linux固定驱动器文件系统格式。
 
@@ -359,7 +359,7 @@ class FileRedirectionOptions:
 
     @linux_fixed_drive_file_system_format.setter
     def linux_fixed_drive_file_system_format(self, linux_fixed_drive_file_system_format):
-        """Sets the linux_fixed_drive_file_system_format of this FileRedirectionOptions.
+        r"""Sets the linux_fixed_drive_file_system_format of this FileRedirectionOptions.
 
         Linux固定驱动器文件系统格式。
 
@@ -370,7 +370,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_removable_drive_file_system_format(self):
-        """Gets the linux_removable_drive_file_system_format of this FileRedirectionOptions.
+        r"""Gets the linux_removable_drive_file_system_format of this FileRedirectionOptions.
 
         Linux可移动驱动器文件系统格式。默认：\"vfat|ntfs|msdos|fuseblk|sdcardfs|exfat|fuse.fdredir\"。
 
@@ -381,7 +381,7 @@ class FileRedirectionOptions:
 
     @linux_removable_drive_file_system_format.setter
     def linux_removable_drive_file_system_format(self, linux_removable_drive_file_system_format):
-        """Sets the linux_removable_drive_file_system_format of this FileRedirectionOptions.
+        r"""Sets the linux_removable_drive_file_system_format of this FileRedirectionOptions.
 
         Linux可移动驱动器文件系统格式。默认：\"vfat|ntfs|msdos|fuseblk|sdcardfs|exfat|fuse.fdredir\"。
 
@@ -392,7 +392,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_cdrom_drive_file_system_format(self):
-        """Gets the linux_cdrom_drive_file_system_format of this FileRedirectionOptions.
+        r"""Gets the linux_cdrom_drive_file_system_format of this FileRedirectionOptions.
 
         Linux光盘驱动器文件系统格式。默认：\"cd9660|iso9660|udf\"。
 
@@ -403,7 +403,7 @@ class FileRedirectionOptions:
 
     @linux_cdrom_drive_file_system_format.setter
     def linux_cdrom_drive_file_system_format(self, linux_cdrom_drive_file_system_format):
-        """Sets the linux_cdrom_drive_file_system_format of this FileRedirectionOptions.
+        r"""Sets the linux_cdrom_drive_file_system_format of this FileRedirectionOptions.
 
         Linux光盘驱动器文件系统格式。默认：\"cd9660|iso9660|udf\"。
 
@@ -414,7 +414,7 @@ class FileRedirectionOptions:
 
     @property
     def linux_network_drive_file_system_format(self):
-        """Gets the linux_network_drive_file_system_format of this FileRedirectionOptions.
+        r"""Gets the linux_network_drive_file_system_format of this FileRedirectionOptions.
 
         Linux网络驱动器文件系统格式。默认：\"smbfs|afpfs|cifs\"。
 
@@ -425,7 +425,7 @@ class FileRedirectionOptions:
 
     @linux_network_drive_file_system_format.setter
     def linux_network_drive_file_system_format(self, linux_network_drive_file_system_format):
-        """Sets the linux_network_drive_file_system_format of this FileRedirectionOptions.
+        r"""Sets the linux_network_drive_file_system_format of this FileRedirectionOptions.
 
         Linux网络驱动器文件系统格式。默认：\"smbfs|afpfs|cifs\"。
 
@@ -436,7 +436,7 @@ class FileRedirectionOptions:
 
     @property
     def path_separator(self):
-        """Gets the path_separator of this FileRedirectionOptions.
+        r"""Gets the path_separator of this FileRedirectionOptions.
 
         路径分隔符。默认：\"|\"。
 
@@ -447,7 +447,7 @@ class FileRedirectionOptions:
 
     @path_separator.setter
     def path_separator(self, path_separator):
-        """Sets the path_separator of this FileRedirectionOptions.
+        r"""Sets the path_separator of this FileRedirectionOptions.
 
         路径分隔符。默认：\"|\"。
 
@@ -458,7 +458,7 @@ class FileRedirectionOptions:
 
     @property
     def fixed_drive_enable(self):
-        """Gets the fixed_drive_enable of this FileRedirectionOptions.
+        r"""Gets the fixed_drive_enable of this FileRedirectionOptions.
 
         是否开启固定驱动器（如: 本地磁盘）。取值为： false：表示关闭。 true：表示开启。
 
@@ -469,7 +469,7 @@ class FileRedirectionOptions:
 
     @fixed_drive_enable.setter
     def fixed_drive_enable(self, fixed_drive_enable):
-        """Sets the fixed_drive_enable of this FileRedirectionOptions.
+        r"""Sets the fixed_drive_enable of this FileRedirectionOptions.
 
         是否开启固定驱动器（如: 本地磁盘）。取值为： false：表示关闭。 true：表示开启。
 
@@ -480,7 +480,7 @@ class FileRedirectionOptions:
 
     @property
     def removable_drive_enable(self):
-        """Gets the removable_drive_enable of this FileRedirectionOptions.
+        r"""Gets the removable_drive_enable of this FileRedirectionOptions.
 
         是否开启可移除驱动器（如: U盘）。取值为： false：表示关闭。 true：表示开启。
 
@@ -491,7 +491,7 @@ class FileRedirectionOptions:
 
     @removable_drive_enable.setter
     def removable_drive_enable(self, removable_drive_enable):
-        """Sets the removable_drive_enable of this FileRedirectionOptions.
+        r"""Sets the removable_drive_enable of this FileRedirectionOptions.
 
         是否开启可移除驱动器（如: U盘）。取值为： false：表示关闭。 true：表示开启。
 
@@ -502,7 +502,7 @@ class FileRedirectionOptions:
 
     @property
     def cd_rom_drive_enable(self):
-        """Gets the cd_rom_drive_enable of this FileRedirectionOptions.
+        r"""Gets the cd_rom_drive_enable of this FileRedirectionOptions.
 
         是否开启光盘驱动器。取值为： false：表示关闭。 true：表示开启。
 
@@ -513,7 +513,7 @@ class FileRedirectionOptions:
 
     @cd_rom_drive_enable.setter
     def cd_rom_drive_enable(self, cd_rom_drive_enable):
-        """Sets the cd_rom_drive_enable of this FileRedirectionOptions.
+        r"""Sets the cd_rom_drive_enable of this FileRedirectionOptions.
 
         是否开启光盘驱动器。取值为： false：表示关闭。 true：表示开启。
 
@@ -524,7 +524,7 @@ class FileRedirectionOptions:
 
     @property
     def network_drive_enable(self):
-        """Gets the network_drive_enable of this FileRedirectionOptions.
+        r"""Gets the network_drive_enable of this FileRedirectionOptions.
 
         是否开启网络驱动器。取值为： false：表示关闭。 true：表示开启。
 
@@ -535,7 +535,7 @@ class FileRedirectionOptions:
 
     @network_drive_enable.setter
     def network_drive_enable(self, network_drive_enable):
-        """Sets the network_drive_enable of this FileRedirectionOptions.
+        r"""Sets the network_drive_enable of this FileRedirectionOptions.
 
         是否开启网络驱动器。取值为： false：表示关闭。 true：表示开启。
 

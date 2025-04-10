@@ -51,7 +51,7 @@ class ListSqlJobsRequest:
     }
 
     def __init__(self, current_page=None, db_name=None, end=None, engine_type=None, job_status=None, job_type=None, order=None, owner=None, page_size=None, queue_name=None, sql_pattern=None, start=None, table_name=None, tags=None):
-        """ListSqlJobsRequest
+        r"""ListSqlJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListSqlJobsRequest:
 
     @property
     def current_page(self):
-        """Gets the current_page of this ListSqlJobsRequest.
+        r"""Gets the current_page of this ListSqlJobsRequest.
 
         当前页码，默认为第一页。
 
@@ -145,7 +145,7 @@ class ListSqlJobsRequest:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this ListSqlJobsRequest.
+        r"""Sets the current_page of this ListSqlJobsRequest.
 
         当前页码，默认为第一页。
 
@@ -156,7 +156,7 @@ class ListSqlJobsRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListSqlJobsRequest.
+        r"""Gets the db_name of this ListSqlJobsRequest.
 
         :return: The db_name of this ListSqlJobsRequest.
         :rtype: str
@@ -165,7 +165,7 @@ class ListSqlJobsRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListSqlJobsRequest.
+        r"""Sets the db_name of this ListSqlJobsRequest.
 
         :param db_name: The db_name of this ListSqlJobsRequest.
         :type db_name: str
@@ -174,7 +174,7 @@ class ListSqlJobsRequest:
 
     @property
     def end(self):
-        """Gets the end of this ListSqlJobsRequest.
+        r"""Gets the end of this ListSqlJobsRequest.
 
         用于查询开始时间在该时间点之前的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -185,7 +185,7 @@ class ListSqlJobsRequest:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this ListSqlJobsRequest.
+        r"""Sets the end of this ListSqlJobsRequest.
 
         用于查询开始时间在该时间点之前的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -196,7 +196,7 @@ class ListSqlJobsRequest:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this ListSqlJobsRequest.
+        r"""Gets the engine_type of this ListSqlJobsRequest.
 
         :return: The engine_type of this ListSqlJobsRequest.
         :rtype: str
@@ -205,7 +205,7 @@ class ListSqlJobsRequest:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this ListSqlJobsRequest.
+        r"""Sets the engine_type of this ListSqlJobsRequest.
 
         :param engine_type: The engine_type of this ListSqlJobsRequest.
         :type engine_type: str
@@ -214,7 +214,7 @@ class ListSqlJobsRequest:
 
     @property
     def job_status(self):
-        """Gets the job_status of this ListSqlJobsRequest.
+        r"""Gets the job_status of this ListSqlJobsRequest.
 
         :return: The job_status of this ListSqlJobsRequest.
         :rtype: str
@@ -223,7 +223,7 @@ class ListSqlJobsRequest:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ListSqlJobsRequest.
+        r"""Sets the job_status of this ListSqlJobsRequest.
 
         :param job_status: The job_status of this ListSqlJobsRequest.
         :type job_status: str
@@ -232,7 +232,7 @@ class ListSqlJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListSqlJobsRequest.
+        r"""Gets the job_type of this ListSqlJobsRequest.
 
         指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT，若要查询所有类型的作业，则传入ALL。
 
@@ -243,7 +243,7 @@ class ListSqlJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListSqlJobsRequest.
+        r"""Sets the job_type of this ListSqlJobsRequest.
 
         指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT，若要查询所有类型的作业，则传入ALL。
 
@@ -254,7 +254,7 @@ class ListSqlJobsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListSqlJobsRequest.
+        r"""Gets the order of this ListSqlJobsRequest.
 
         指定作业排序方式，默认为start_time_desc（作业提交时间降序），支持duration_desc（作业运行时长降序）、duration_asc（作业运行时长升序）、start_time_desc（作业提交时间降序）、start_time_asc（作业提交时间升序）四种排序方式。
 
@@ -265,7 +265,7 @@ class ListSqlJobsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListSqlJobsRequest.
+        r"""Sets the order of this ListSqlJobsRequest.
 
         指定作业排序方式，默认为start_time_desc（作业提交时间降序），支持duration_desc（作业运行时长降序）、duration_asc（作业运行时长升序）、start_time_desc（作业提交时间降序）、start_time_asc（作业提交时间升序）四种排序方式。
 
@@ -276,7 +276,7 @@ class ListSqlJobsRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this ListSqlJobsRequest.
+        r"""Gets the owner of this ListSqlJobsRequest.
 
         提交作业的用户名称
 
@@ -287,7 +287,7 @@ class ListSqlJobsRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListSqlJobsRequest.
+        r"""Sets the owner of this ListSqlJobsRequest.
 
         提交作业的用户名称
 
@@ -298,7 +298,7 @@ class ListSqlJobsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListSqlJobsRequest.
+        r"""Gets the page_size of this ListSqlJobsRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：50。
 
@@ -309,7 +309,7 @@ class ListSqlJobsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListSqlJobsRequest.
+        r"""Sets the page_size of this ListSqlJobsRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：50。
 
@@ -320,7 +320,7 @@ class ListSqlJobsRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListSqlJobsRequest.
+        r"""Gets the queue_name of this ListSqlJobsRequest.
 
         指定queue_name作为作业过滤条件，查询在指定queue上运行的作业。
 
@@ -331,7 +331,7 @@ class ListSqlJobsRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListSqlJobsRequest.
+        r"""Sets the queue_name of this ListSqlJobsRequest.
 
         指定queue_name作为作业过滤条件，查询在指定queue上运行的作业。
 
@@ -342,7 +342,7 @@ class ListSqlJobsRequest:
 
     @property
     def sql_pattern(self):
-        """Gets the sql_pattern of this ListSqlJobsRequest.
+        r"""Gets the sql_pattern of this ListSqlJobsRequest.
 
         指定sql片段作为作业过滤条件，不区分大小写。
 
@@ -353,7 +353,7 @@ class ListSqlJobsRequest:
 
     @sql_pattern.setter
     def sql_pattern(self, sql_pattern):
-        """Sets the sql_pattern of this ListSqlJobsRequest.
+        r"""Sets the sql_pattern of this ListSqlJobsRequest.
 
         指定sql片段作为作业过滤条件，不区分大小写。
 
@@ -364,7 +364,7 @@ class ListSqlJobsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListSqlJobsRequest.
+        r"""Gets the start of this ListSqlJobsRequest.
 
         用于查询开始时间在该时间点之后的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -375,7 +375,7 @@ class ListSqlJobsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListSqlJobsRequest.
+        r"""Sets the start of this ListSqlJobsRequest.
 
         用于查询开始时间在该时间点之后的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -386,7 +386,7 @@ class ListSqlJobsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListSqlJobsRequest.
+        r"""Gets the table_name of this ListSqlJobsRequest.
 
         :return: The table_name of this ListSqlJobsRequest.
         :rtype: str
@@ -395,7 +395,7 @@ class ListSqlJobsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListSqlJobsRequest.
+        r"""Sets the table_name of this ListSqlJobsRequest.
 
         :param table_name: The table_name of this ListSqlJobsRequest.
         :type table_name: str
@@ -404,7 +404,7 @@ class ListSqlJobsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListSqlJobsRequest.
+        r"""Gets the tags of this ListSqlJobsRequest.
 
         指定作业标签作为过滤条件，支持多标签过滤。格式为“key=value”，如：GET /v1.0/{project_id}/jobs?tags=k1%3Dv1，“=”需要转义为“%3D”，“k1”为标签键，“v1”为标签值。
 
@@ -415,7 +415,7 @@ class ListSqlJobsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListSqlJobsRequest.
+        r"""Sets the tags of this ListSqlJobsRequest.
 
         指定作业标签作为过滤条件，支持多标签过滤。格式为“key=value”，如：GET /v1.0/{project_id}/jobs?tags=k1%3Dv1，“=”需要转义为“%3D”，“k1”为标签键，“v1”为标签值。
 

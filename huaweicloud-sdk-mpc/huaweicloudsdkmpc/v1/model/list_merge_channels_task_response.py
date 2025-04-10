@@ -30,7 +30,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListMergeChannelsTaskResponse
+        r"""ListMergeChannelsTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
 
     @property
     def task_array(self):
-        """Gets the task_array of this ListMergeChannelsTaskResponse.
+        r"""Gets the task_array of this ListMergeChannelsTaskResponse.
 
         任务列表
 
@@ -69,7 +69,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
 
     @task_array.setter
     def task_array(self, task_array):
-        """Sets the task_array of this ListMergeChannelsTaskResponse.
+        r"""Sets the task_array of this ListMergeChannelsTaskResponse.
 
         任务列表
 
@@ -80,7 +80,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListMergeChannelsTaskResponse.
+        r"""Gets the is_truncated of this ListMergeChannelsTaskResponse.
 
         查询结果是否被截取。 - 1：表示被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0：表示未被截取，即所有结果已被返回。 
 
@@ -91,7 +91,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListMergeChannelsTaskResponse.
+        r"""Sets the is_truncated of this ListMergeChannelsTaskResponse.
 
         查询结果是否被截取。 - 1：表示被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0：表示未被截取，即所有结果已被返回。 
 
@@ -102,7 +102,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMergeChannelsTaskResponse.
+        r"""Gets the total of this ListMergeChannelsTaskResponse.
 
         查询结果的数量。 
 
@@ -113,7 +113,7 @@ class ListMergeChannelsTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMergeChannelsTaskResponse.
+        r"""Sets the total of this ListMergeChannelsTaskResponse.
 
         查询结果的数量。 
 

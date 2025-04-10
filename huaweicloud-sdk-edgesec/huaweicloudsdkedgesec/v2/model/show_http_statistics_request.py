@@ -31,7 +31,7 @@ class ShowHttpStatisticsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, domain_name=None):
-        """ShowHttpStatisticsRequest
+        r"""ShowHttpStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowHttpStatisticsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpStatisticsRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpStatisticsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -73,7 +73,7 @@ class ShowHttpStatisticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpStatisticsRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpStatisticsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -84,7 +84,7 @@ class ShowHttpStatisticsRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ShowHttpStatisticsRequest.
+        r"""Gets the _from of this ShowHttpStatisticsRequest.
 
         起始时间
 
@@ -95,7 +95,7 @@ class ShowHttpStatisticsRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ShowHttpStatisticsRequest.
+        r"""Sets the _from of this ShowHttpStatisticsRequest.
 
         起始时间
 
@@ -106,7 +106,7 @@ class ShowHttpStatisticsRequest:
 
     @property
     def to(self):
-        """Gets the to of this ShowHttpStatisticsRequest.
+        r"""Gets the to of this ShowHttpStatisticsRequest.
 
         结束时间
 
@@ -117,7 +117,7 @@ class ShowHttpStatisticsRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ShowHttpStatisticsRequest.
+        r"""Sets the to of this ShowHttpStatisticsRequest.
 
         结束时间
 
@@ -128,7 +128,7 @@ class ShowHttpStatisticsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowHttpStatisticsRequest.
+        r"""Gets the domain_name of this ShowHttpStatisticsRequest.
 
         域名
 
@@ -139,7 +139,7 @@ class ShowHttpStatisticsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowHttpStatisticsRequest.
+        r"""Sets the domain_name of this ShowHttpStatisticsRequest.
 
         域名
 

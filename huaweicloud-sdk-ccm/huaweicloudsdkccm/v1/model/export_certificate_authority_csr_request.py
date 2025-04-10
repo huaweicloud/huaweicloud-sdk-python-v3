@@ -25,7 +25,7 @@ class ExportCertificateAuthorityCsrRequest:
     }
 
     def __init__(self, ca_id=None):
-        """ExportCertificateAuthorityCsrRequest
+        r"""ExportCertificateAuthorityCsrRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExportCertificateAuthorityCsrRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this ExportCertificateAuthorityCsrRequest.
+        r"""Gets the ca_id of this ExportCertificateAuthorityCsrRequest.
 
         未激活的从属CA证书ID。
 
@@ -53,7 +53,7 @@ class ExportCertificateAuthorityCsrRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this ExportCertificateAuthorityCsrRequest.
+        r"""Sets the ca_id of this ExportCertificateAuthorityCsrRequest.
 
         未激活的从属CA证书ID。
 

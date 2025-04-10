@@ -33,7 +33,7 @@ class PluginPartQueryDTO:
     }
 
     def __init__(self, plugin_name=None, display_name=None, version=None, plugin_attribution=None, version_attribution=None):
-        """PluginPartQueryDTO
+        r"""PluginPartQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class PluginPartQueryDTO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginPartQueryDTO.
+        r"""Gets the plugin_name of this PluginPartQueryDTO.
 
         插件名
 
@@ -78,7 +78,7 @@ class PluginPartQueryDTO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginPartQueryDTO.
+        r"""Sets the plugin_name of this PluginPartQueryDTO.
 
         插件名
 
@@ -89,7 +89,7 @@ class PluginPartQueryDTO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PluginPartQueryDTO.
+        r"""Gets the display_name of this PluginPartQueryDTO.
 
         展示名
 
@@ -100,7 +100,7 @@ class PluginPartQueryDTO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PluginPartQueryDTO.
+        r"""Sets the display_name of this PluginPartQueryDTO.
 
         展示名
 
@@ -111,7 +111,7 @@ class PluginPartQueryDTO:
 
     @property
     def version(self):
-        """Gets the version of this PluginPartQueryDTO.
+        r"""Gets the version of this PluginPartQueryDTO.
 
         版本号
 
@@ -122,7 +122,7 @@ class PluginPartQueryDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PluginPartQueryDTO.
+        r"""Sets the version of this PluginPartQueryDTO.
 
         版本号
 
@@ -133,7 +133,7 @@ class PluginPartQueryDTO:
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this PluginPartQueryDTO.
+        r"""Gets the plugin_attribution of this PluginPartQueryDTO.
 
         插件属性,custom/official
 
@@ -144,7 +144,7 @@ class PluginPartQueryDTO:
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this PluginPartQueryDTO.
+        r"""Sets the plugin_attribution of this PluginPartQueryDTO.
 
         插件属性,custom/official
 
@@ -155,7 +155,7 @@ class PluginPartQueryDTO:
 
     @property
     def version_attribution(self):
-        """Gets the version_attribution of this PluginPartQueryDTO.
+        r"""Gets the version_attribution of this PluginPartQueryDTO.
 
         版本属性,draft/formal
 
@@ -166,7 +166,7 @@ class PluginPartQueryDTO:
 
     @version_attribution.setter
     def version_attribution(self, version_attribution):
-        """Sets the version_attribution of this PluginPartQueryDTO.
+        r"""Sets the version_attribution of this PluginPartQueryDTO.
 
         版本属性,draft/formal
 

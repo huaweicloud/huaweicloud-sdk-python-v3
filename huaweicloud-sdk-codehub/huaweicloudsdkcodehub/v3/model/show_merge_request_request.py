@@ -27,7 +27,7 @@ class ShowMergeRequestRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_id=None):
-        """ShowMergeRequestRequest
+        r"""ShowMergeRequestRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMergeRequestRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowMergeRequestRequest.
+        r"""Gets the repository_id of this ShowMergeRequestRequest.
 
         仓库短id
 
@@ -59,7 +59,7 @@ class ShowMergeRequestRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowMergeRequestRequest.
+        r"""Sets the repository_id of this ShowMergeRequestRequest.
 
         仓库短id
 
@@ -70,7 +70,7 @@ class ShowMergeRequestRequest:
 
     @property
     def merge_request_id(self):
-        """Gets the merge_request_id of this ShowMergeRequestRequest.
+        r"""Gets the merge_request_id of this ShowMergeRequestRequest.
 
         合并请求id
 
@@ -81,7 +81,7 @@ class ShowMergeRequestRequest:
 
     @merge_request_id.setter
     def merge_request_id(self, merge_request_id):
-        """Sets the merge_request_id of this ShowMergeRequestRequest.
+        r"""Sets the merge_request_id of this ShowMergeRequestRequest.
 
         合并请求id
 

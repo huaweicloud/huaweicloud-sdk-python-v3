@@ -27,7 +27,7 @@ class ShowScriptDetailRequest:
     }
 
     def __init__(self, script_id=None, script_task_id=None):
-        """ShowScriptDetailRequest
+        r"""ShowScriptDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowScriptDetailRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ShowScriptDetailRequest.
+        r"""Gets the script_id of this ShowScriptDetailRequest.
 
         脚本ID。
 
@@ -60,7 +60,7 @@ class ShowScriptDetailRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ShowScriptDetailRequest.
+        r"""Sets the script_id of this ShowScriptDetailRequest.
 
         脚本ID。
 
@@ -71,7 +71,7 @@ class ShowScriptDetailRequest:
 
     @property
     def script_task_id(self):
-        """Gets the script_task_id of this ShowScriptDetailRequest.
+        r"""Gets the script_task_id of this ShowScriptDetailRequest.
 
         执行脚本的任务ID
 
@@ -82,7 +82,7 @@ class ShowScriptDetailRequest:
 
     @script_task_id.setter
     def script_task_id(self, script_task_id):
-        """Sets the script_task_id of this ShowScriptDetailRequest.
+        r"""Sets the script_task_id of this ShowScriptDetailRequest.
 
         执行脚本的任务ID
 

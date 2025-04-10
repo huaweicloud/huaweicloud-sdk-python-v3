@@ -26,7 +26,7 @@ class CreateServerGroupResponse(SdkResponse):
     }
 
     def __init__(self, server_group=None):
-        """CreateServerGroupResponse
+        r"""CreateServerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateServerGroupResponse(SdkResponse):
 
     @property
     def server_group(self):
-        """Gets the server_group of this CreateServerGroupResponse.
+        r"""Gets the server_group of this CreateServerGroupResponse.
 
         :return: The server_group of this CreateServerGroupResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupResult`
@@ -53,7 +53,7 @@ class CreateServerGroupResponse(SdkResponse):
 
     @server_group.setter
     def server_group(self, server_group):
-        """Sets the server_group of this CreateServerGroupResponse.
+        r"""Sets the server_group of this CreateServerGroupResponse.
 
         :param server_group: The server_group of this CreateServerGroupResponse.
         :type server_group: :class:`huaweicloudsdkecs.v2.CreateServerGroupResult`

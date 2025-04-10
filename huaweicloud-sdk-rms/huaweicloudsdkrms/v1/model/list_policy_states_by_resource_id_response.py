@@ -28,7 +28,7 @@ class ListPolicyStatesByResourceIdResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListPolicyStatesByResourceIdResponse
+        r"""ListPolicyStatesByResourceIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPolicyStatesByResourceIdResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListPolicyStatesByResourceIdResponse.
+        r"""Gets the value of this ListPolicyStatesByResourceIdResponse.
 
         合规结果查询返回值
 
@@ -62,7 +62,7 @@ class ListPolicyStatesByResourceIdResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListPolicyStatesByResourceIdResponse.
+        r"""Sets the value of this ListPolicyStatesByResourceIdResponse.
 
         合规结果查询返回值
 
@@ -73,7 +73,7 @@ class ListPolicyStatesByResourceIdResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPolicyStatesByResourceIdResponse.
+        r"""Gets the page_info of this ListPolicyStatesByResourceIdResponse.
 
         :return: The page_info of this ListPolicyStatesByResourceIdResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListPolicyStatesByResourceIdResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPolicyStatesByResourceIdResponse.
+        r"""Sets the page_info of this ListPolicyStatesByResourceIdResponse.
 
         :param page_info: The page_info of this ListPolicyStatesByResourceIdResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

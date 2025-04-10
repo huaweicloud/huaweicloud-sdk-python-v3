@@ -28,7 +28,7 @@ class GetGroupMembershipIdResponse(SdkResponse):
     }
 
     def __init__(self, identity_store_id=None, membership_id=None):
-        """GetGroupMembershipIdResponse
+        r"""GetGroupMembershipIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class GetGroupMembershipIdResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this GetGroupMembershipIdResponse.
+        r"""Gets the identity_store_id of this GetGroupMembershipIdResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -62,7 +62,7 @@ class GetGroupMembershipIdResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this GetGroupMembershipIdResponse.
+        r"""Sets the identity_store_id of this GetGroupMembershipIdResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -73,7 +73,7 @@ class GetGroupMembershipIdResponse(SdkResponse):
 
     @property
     def membership_id(self):
-        """Gets the membership_id of this GetGroupMembershipIdResponse.
+        r"""Gets the membership_id of this GetGroupMembershipIdResponse.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 
@@ -84,7 +84,7 @@ class GetGroupMembershipIdResponse(SdkResponse):
 
     @membership_id.setter
     def membership_id(self, membership_id):
-        """Sets the membership_id of this GetGroupMembershipIdResponse.
+        r"""Sets the membership_id of this GetGroupMembershipIdResponse.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 

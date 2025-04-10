@@ -27,7 +27,7 @@ class ListQuotaStatusRequest:
     }
 
     def __init__(self, availability_zone=None, resource_spec_code=None):
-        """ListQuotaStatusRequest
+        r"""ListQuotaStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListQuotaStatusRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListQuotaStatusRequest.
+        r"""Gets the availability_zone of this ListQuotaStatusRequest.
 
         创建云堡垒机所在的可用区，需要指定可用分区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -59,7 +59,7 @@ class ListQuotaStatusRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListQuotaStatusRequest.
+        r"""Sets the availability_zone of this ListQuotaStatusRequest.
 
         创建云堡垒机所在的可用区，需要指定可用分区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -70,7 +70,7 @@ class ListQuotaStatusRequest:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ListQuotaStatusRequest.
+        r"""Gets the resource_spec_code of this ListQuotaStatusRequest.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版 已上线的规格详情请参见《云堡垒机常见问题》的购买，[云堡垒机实例有哪些规格](https://support.huaweicloud.com/cbh_faq/cbh_03_0025.html)章节。
 
@@ -81,7 +81,7 @@ class ListQuotaStatusRequest:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ListQuotaStatusRequest.
+        r"""Sets the resource_spec_code of this ListQuotaStatusRequest.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.10  10资产标准版 - cbh.enhance.10  10资产专业版 已上线的规格详情请参见《云堡垒机常见问题》的购买，[云堡垒机实例有哪些规格](https://support.huaweicloud.com/cbh_faq/cbh_03_0025.html)章节。
 

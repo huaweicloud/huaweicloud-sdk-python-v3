@@ -35,7 +35,7 @@ class PeerInfo:
     }
 
     def __init__(self, name=None, node_cnt=None, status=None, status_detail=None, pvc_name=None, address=None):
-        """PeerInfo
+        r"""PeerInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PeerInfo:
 
     @property
     def name(self):
-        """Gets the name of this PeerInfo.
+        r"""Gets the name of this PeerInfo.
 
         组织名称
 
@@ -89,7 +89,7 @@ class PeerInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PeerInfo.
+        r"""Sets the name of this PeerInfo.
 
         组织名称
 
@@ -100,7 +100,7 @@ class PeerInfo:
 
     @property
     def node_cnt(self):
-        """Gets the node_cnt of this PeerInfo.
+        r"""Gets the node_cnt of this PeerInfo.
 
         节点数量
 
@@ -111,7 +111,7 @@ class PeerInfo:
 
     @node_cnt.setter
     def node_cnt(self, node_cnt):
-        """Sets the node_cnt of this PeerInfo.
+        r"""Sets the node_cnt of this PeerInfo.
 
         节点数量
 
@@ -122,7 +122,7 @@ class PeerInfo:
 
     @property
     def status(self):
-        """Gets the status of this PeerInfo.
+        r"""Gets the status of this PeerInfo.
 
         节点状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（Adding/IsScaling），删除中（Isdeleting），正常（Normal），异常（AbNormal），未知（其余值）
 
@@ -133,7 +133,7 @@ class PeerInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PeerInfo.
+        r"""Sets the status of this PeerInfo.
 
         节点状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（Adding/IsScaling），删除中（Isdeleting），正常（Normal），异常（AbNormal），未知（其余值）
 
@@ -144,7 +144,7 @@ class PeerInfo:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this PeerInfo.
+        r"""Gets the status_detail of this PeerInfo.
 
         节点状态，形式如：1/1，分母是该组织下节点总数，分子是正常节点个数
 
@@ -155,7 +155,7 @@ class PeerInfo:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this PeerInfo.
+        r"""Sets the status_detail of this PeerInfo.
 
         节点状态，形式如：1/1，分母是该组织下节点总数，分子是正常节点个数
 
@@ -166,7 +166,7 @@ class PeerInfo:
 
     @property
     def pvc_name(self):
-        """Gets the pvc_name of this PeerInfo.
+        r"""Gets the pvc_name of this PeerInfo.
 
         节点对应pvc名称
 
@@ -177,7 +177,7 @@ class PeerInfo:
 
     @pvc_name.setter
     def pvc_name(self, pvc_name):
-        """Sets the pvc_name of this PeerInfo.
+        r"""Sets the pvc_name of this PeerInfo.
 
         节点对应pvc名称
 
@@ -188,7 +188,7 @@ class PeerInfo:
 
     @property
     def address(self):
-        """Gets the address of this PeerInfo.
+        r"""Gets the address of this PeerInfo.
 
         Peer节点域名/IP地址
 
@@ -199,7 +199,7 @@ class PeerInfo:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PeerInfo.
+        r"""Sets the address of this PeerInfo.
 
         Peer节点域名/IP地址
 

@@ -23,7 +23,7 @@ class SpecUnit:
     }
 
     def __init__(self):
-        """SpecUnit
+        r"""SpecUnit
 
         The model defined in huaweicloud sdk
 

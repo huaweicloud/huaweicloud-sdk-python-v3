@@ -28,7 +28,7 @@ class ResetBridgeSecretResponse(SdkResponse):
     }
 
     def __init__(self, bridge_id=None, secret=None):
-        """ResetBridgeSecretResponse
+        r"""ResetBridgeSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResetBridgeSecretResponse(SdkResponse):
 
     @property
     def bridge_id(self):
-        """Gets the bridge_id of this ResetBridgeSecretResponse.
+        r"""Gets the bridge_id of this ResetBridgeSecretResponse.
 
         网桥ID
 
@@ -62,7 +62,7 @@ class ResetBridgeSecretResponse(SdkResponse):
 
     @bridge_id.setter
     def bridge_id(self, bridge_id):
-        """Sets the bridge_id of this ResetBridgeSecretResponse.
+        r"""Sets the bridge_id of this ResetBridgeSecretResponse.
 
         网桥ID
 
@@ -73,7 +73,7 @@ class ResetBridgeSecretResponse(SdkResponse):
 
     @property
     def secret(self):
-        """Gets the secret of this ResetBridgeSecretResponse.
+        r"""Gets the secret of this ResetBridgeSecretResponse.
 
         网桥密钥。
 
@@ -84,7 +84,7 @@ class ResetBridgeSecretResponse(SdkResponse):
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ResetBridgeSecretResponse.
+        r"""Sets the secret of this ResetBridgeSecretResponse.
 
         网桥密钥。
 

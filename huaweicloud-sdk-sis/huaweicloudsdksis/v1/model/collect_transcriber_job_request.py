@@ -25,7 +25,7 @@ class CollectTranscriberJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """CollectTranscriberJobRequest
+        r"""CollectTranscriberJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CollectTranscriberJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectTranscriberJobRequest.
+        r"""Gets the job_id of this CollectTranscriberJobRequest.
 
         录音文件识别任务标识符。
 
@@ -53,7 +53,7 @@ class CollectTranscriberJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectTranscriberJobRequest.
+        r"""Sets the job_id of this CollectTranscriberJobRequest.
 
         录音文件识别任务标识符。
 

@@ -25,7 +25,7 @@ class CreateRemoteAssistanceRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """CreateRemoteAssistanceRequest
+        r"""CreateRemoteAssistanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateRemoteAssistanceRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this CreateRemoteAssistanceRequest.
+        r"""Gets the desktop_id of this CreateRemoteAssistanceRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class CreateRemoteAssistanceRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this CreateRemoteAssistanceRequest.
+        r"""Sets the desktop_id of this CreateRemoteAssistanceRequest.
 
         桌面ID。
 

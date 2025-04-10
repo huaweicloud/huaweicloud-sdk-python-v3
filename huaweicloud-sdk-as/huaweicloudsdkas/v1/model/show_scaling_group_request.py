@@ -25,7 +25,7 @@ class ShowScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None):
-        """ShowScalingGroupRequest
+        r"""ShowScalingGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScalingGroupRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ShowScalingGroupRequest.
+        r"""Gets the scaling_group_id of this ShowScalingGroupRequest.
 
         伸缩组ID。
 
@@ -53,7 +53,7 @@ class ShowScalingGroupRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ShowScalingGroupRequest.
+        r"""Sets the scaling_group_id of this ShowScalingGroupRequest.
 
         伸缩组ID。
 

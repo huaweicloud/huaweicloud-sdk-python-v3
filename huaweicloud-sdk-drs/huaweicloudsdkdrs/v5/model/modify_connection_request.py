@@ -29,7 +29,7 @@ class ModifyConnectionRequest:
     }
 
     def __init__(self, x_language=None, connection_id=None, body=None):
-        """ModifyConnectionRequest
+        r"""ModifyConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ModifyConnectionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyConnectionRequest.
+        r"""Gets the x_language of this ModifyConnectionRequest.
 
         请求语言类型。
 
@@ -67,7 +67,7 @@ class ModifyConnectionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyConnectionRequest.
+        r"""Sets the x_language of this ModifyConnectionRequest.
 
         请求语言类型。
 
@@ -78,7 +78,7 @@ class ModifyConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ModifyConnectionRequest.
+        r"""Gets the connection_id of this ModifyConnectionRequest.
 
         连接ID
 
@@ -89,7 +89,7 @@ class ModifyConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ModifyConnectionRequest.
+        r"""Sets the connection_id of this ModifyConnectionRequest.
 
         连接ID
 
@@ -100,7 +100,7 @@ class ModifyConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyConnectionRequest.
+        r"""Gets the body of this ModifyConnectionRequest.
 
         :return: The body of this ModifyConnectionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateConnectionReq`
@@ -109,7 +109,7 @@ class ModifyConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyConnectionRequest.
+        r"""Sets the body of this ModifyConnectionRequest.
 
         :param body: The body of this ModifyConnectionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.UpdateConnectionReq`

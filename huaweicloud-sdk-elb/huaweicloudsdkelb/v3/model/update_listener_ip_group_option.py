@@ -29,7 +29,7 @@ class UpdateListenerIpGroupOption:
     }
 
     def __init__(self, ipgroup_id=None, enable_ipgroup=None, type=None):
-        """UpdateListenerIpGroupOption
+        r"""UpdateListenerIpGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateListenerIpGroupOption:
 
     @property
     def ipgroup_id(self):
-        """Gets the ipgroup_id of this UpdateListenerIpGroupOption.
+        r"""Gets the ipgroup_id of this UpdateListenerIpGroupOption.
 
         参数解释：监听器关联的访问控制组的id。 创建时必选，更新时非必选。  约束限制：指定的ipgroup必须已存在，不能指定为null，否则与enable_ipgroup冲突。
 
@@ -68,7 +68,7 @@ class UpdateListenerIpGroupOption:
 
     @ipgroup_id.setter
     def ipgroup_id(self, ipgroup_id):
-        """Sets the ipgroup_id of this UpdateListenerIpGroupOption.
+        r"""Sets the ipgroup_id of this UpdateListenerIpGroupOption.
 
         参数解释：监听器关联的访问控制组的id。 创建时必选，更新时非必选。  约束限制：指定的ipgroup必须已存在，不能指定为null，否则与enable_ipgroup冲突。
 
@@ -79,7 +79,7 @@ class UpdateListenerIpGroupOption:
 
     @property
     def enable_ipgroup(self):
-        """Gets the enable_ipgroup of this UpdateListenerIpGroupOption.
+        r"""Gets the enable_ipgroup of this UpdateListenerIpGroupOption.
 
         参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - false：关闭访问控制。
 
@@ -90,7 +90,7 @@ class UpdateListenerIpGroupOption:
 
     @enable_ipgroup.setter
     def enable_ipgroup(self, enable_ipgroup):
-        """Sets the enable_ipgroup of this UpdateListenerIpGroupOption.
+        r"""Sets the enable_ipgroup of this UpdateListenerIpGroupOption.
 
         参数解释：访问控制组的状态。 开启访问控制的监听器，允许直接删除。  取值范围： - true:开启访问控制。 - false：关闭访问控制。
 
@@ -101,7 +101,7 @@ class UpdateListenerIpGroupOption:
 
     @property
     def type(self):
-        """Gets the type of this UpdateListenerIpGroupOption.
+        r"""Gets the type of this UpdateListenerIpGroupOption.
 
         参数解释：访问控制组的类型。  取值范围： - white:白名单，只允许指定ip访问。 - black:黑名单，不允许指定ip访问。
 
@@ -112,7 +112,7 @@ class UpdateListenerIpGroupOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateListenerIpGroupOption.
+        r"""Sets the type of this UpdateListenerIpGroupOption.
 
         参数解释：访问控制组的类型。  取值范围： - white:白名单，只允许指定ip访问。 - black:黑名单，不允许指定ip访问。
 

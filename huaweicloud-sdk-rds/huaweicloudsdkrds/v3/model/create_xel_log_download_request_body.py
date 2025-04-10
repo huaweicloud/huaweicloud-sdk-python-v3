@@ -25,7 +25,7 @@ class CreateXelLogDownloadRequestBody:
     }
 
     def __init__(self, file_name=None):
-        """CreateXelLogDownloadRequestBody
+        r"""CreateXelLogDownloadRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateXelLogDownloadRequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this CreateXelLogDownloadRequestBody.
+        r"""Gets the file_name of this CreateXelLogDownloadRequestBody.
 
         文件名。取值范围：不为null和空字符串，只为大小写字母，数字和下划线，以“.xel”结尾
 
@@ -53,7 +53,7 @@ class CreateXelLogDownloadRequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CreateXelLogDownloadRequestBody.
+        r"""Sets the file_name of this CreateXelLogDownloadRequestBody.
 
         文件名。取值范围：不为null和空字符串，只为大小写字母，数字和下划线，以“.xel”结尾
 

@@ -31,7 +31,7 @@ class CreateTargetOptJobReq:
     }
 
     def __init__(self, basic_info=None, receptor=None, ligand=None, md_params=None):
-        """CreateTargetOptJobReq
+        r"""CreateTargetOptJobReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateTargetOptJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateTargetOptJobReq.
+        r"""Gets the basic_info of this CreateTargetOptJobReq.
 
         :return: The basic_info of this CreateTargetOptJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -71,7 +71,7 @@ class CreateTargetOptJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateTargetOptJobReq.
+        r"""Sets the basic_info of this CreateTargetOptJobReq.
 
         :param basic_info: The basic_info of this CreateTargetOptJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -80,7 +80,7 @@ class CreateTargetOptJobReq:
 
     @property
     def receptor(self):
-        """Gets the receptor of this CreateTargetOptJobReq.
+        r"""Gets the receptor of this CreateTargetOptJobReq.
 
         :return: The receptor of this CreateTargetOptJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TargetOptReceptor`
@@ -89,7 +89,7 @@ class CreateTargetOptJobReq:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this CreateTargetOptJobReq.
+        r"""Sets the receptor of this CreateTargetOptJobReq.
 
         :param receptor: The receptor of this CreateTargetOptJobReq.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.TargetOptReceptor`
@@ -98,7 +98,7 @@ class CreateTargetOptJobReq:
 
     @property
     def ligand(self):
-        """Gets the ligand of this CreateTargetOptJobReq.
+        r"""Gets the ligand of this CreateTargetOptJobReq.
 
         :return: The ligand of this CreateTargetOptJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TargetOptLigand`
@@ -107,7 +107,7 @@ class CreateTargetOptJobReq:
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this CreateTargetOptJobReq.
+        r"""Sets the ligand of this CreateTargetOptJobReq.
 
         :param ligand: The ligand of this CreateTargetOptJobReq.
         :type ligand: :class:`huaweicloudsdkeihealth.v1.TargetOptLigand`
@@ -116,7 +116,7 @@ class CreateTargetOptJobReq:
 
     @property
     def md_params(self):
-        """Gets the md_params of this CreateTargetOptJobReq.
+        r"""Gets the md_params of this CreateTargetOptJobReq.
 
         :return: The md_params of this CreateTargetOptJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MdParam`
@@ -125,7 +125,7 @@ class CreateTargetOptJobReq:
 
     @md_params.setter
     def md_params(self, md_params):
-        """Sets the md_params of this CreateTargetOptJobReq.
+        r"""Sets the md_params of this CreateTargetOptJobReq.
 
         :param md_params: The md_params of this CreateTargetOptJobReq.
         :type md_params: :class:`huaweicloudsdkeihealth.v1.MdParam`

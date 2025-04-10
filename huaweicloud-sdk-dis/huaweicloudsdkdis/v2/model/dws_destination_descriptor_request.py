@@ -61,7 +61,7 @@ class DWSDestinationDescriptorRequest:
     }
 
     def __init__(self, task_name=None, agency_name=None, deliver_time_interval=None, consumer_strategy=None, dws_cluster_name=None, dws_cluster_id=None, dws_database_name=None, dws_schema=None, dws_table_name=None, dws_delimiter=None, user_name=None, user_password=None, kms_user_key_name=None, kms_user_key_id=None, obs_bucket_path=None, file_prefix=None, retry_duration=None, dws_table_columns=None, options=None):
-        """DWSDestinationDescriptorRequest
+        r"""DWSDestinationDescriptorRequest
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the task_name of this DWSDestinationDescriptorRequest.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -166,7 +166,7 @@ class DWSDestinationDescriptorRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the task_name of this DWSDestinationDescriptorRequest.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -177,7 +177,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the agency_name of this DWSDestinationDescriptorRequest.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -188,7 +188,7 @@ class DWSDestinationDescriptorRequest:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the agency_name of this DWSDestinationDescriptorRequest.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -199,7 +199,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def deliver_time_interval(self):
-        """Gets the deliver_time_interval of this DWSDestinationDescriptorRequest.
+        r"""Gets the deliver_time_interval of this DWSDestinationDescriptorRequest.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -210,7 +210,7 @@ class DWSDestinationDescriptorRequest:
 
     @deliver_time_interval.setter
     def deliver_time_interval(self, deliver_time_interval):
-        """Sets the deliver_time_interval of this DWSDestinationDescriptorRequest.
+        r"""Sets the deliver_time_interval of this DWSDestinationDescriptorRequest.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -221,7 +221,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this DWSDestinationDescriptorRequest.
+        r"""Gets the consumer_strategy of this DWSDestinationDescriptorRequest.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -232,7 +232,7 @@ class DWSDestinationDescriptorRequest:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this DWSDestinationDescriptorRequest.
+        r"""Sets the consumer_strategy of this DWSDestinationDescriptorRequest.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -243,7 +243,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_cluster_name(self):
-        """Gets the dws_cluster_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_cluster_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS集群名称。
 
@@ -254,7 +254,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_cluster_name.setter
     def dws_cluster_name(self, dws_cluster_name):
-        """Sets the dws_cluster_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_cluster_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS集群名称。
 
@@ -265,7 +265,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_cluster_id(self):
-        """Gets the dws_cluster_id of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_cluster_id of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS集群ID。
 
@@ -276,7 +276,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_cluster_id.setter
     def dws_cluster_id(self, dws_cluster_id):
-        """Sets the dws_cluster_id of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_cluster_id of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS集群ID。
 
@@ -287,7 +287,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_database_name(self):
-        """Gets the dws_database_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_database_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库名称。
 
@@ -298,7 +298,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_database_name.setter
     def dws_database_name(self, dws_database_name):
-        """Sets the dws_database_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_database_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库名称。
 
@@ -309,7 +309,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_schema(self):
-        """Gets the dws_schema of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_schema of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库模式。
 
@@ -320,7 +320,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_schema.setter
     def dws_schema(self, dws_schema):
-        """Sets the dws_schema of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_schema of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库模式。
 
@@ -331,7 +331,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_table_name(self):
-        """Gets the dws_table_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_table_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库模式下的数据表。
 
@@ -342,7 +342,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_table_name.setter
     def dws_table_name(self, dws_table_name):
-        """Sets the dws_table_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_table_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库模式下的数据表。
 
@@ -353,7 +353,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_delimiter(self):
-        """Gets the dws_delimiter of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_delimiter of this DWSDestinationDescriptorRequest.
 
         用户数据的字段分隔符，根据此分隔符分隔用户数据插入DWS数据表的相应列。  取值范围：“，”、“；”和“|”三种字符中的一个。
 
@@ -364,7 +364,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_delimiter.setter
     def dws_delimiter(self, dws_delimiter):
-        """Sets the dws_delimiter of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_delimiter of this DWSDestinationDescriptorRequest.
 
         用户数据的字段分隔符，根据此分隔符分隔用户数据插入DWS数据表的相应列。  取值范围：“，”、“；”和“|”三种字符中的一个。
 
@@ -375,7 +375,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the user_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库的用户名。
 
@@ -386,7 +386,7 @@ class DWSDestinationDescriptorRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the user_name of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库的用户名。
 
@@ -397,7 +397,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def user_password(self):
-        """Gets the user_password of this DWSDestinationDescriptorRequest.
+        r"""Gets the user_password of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库的密码。
 
@@ -408,7 +408,7 @@ class DWSDestinationDescriptorRequest:
 
     @user_password.setter
     def user_password(self, user_password):
-        """Sets the user_password of this DWSDestinationDescriptorRequest.
+        r"""Sets the user_password of this DWSDestinationDescriptorRequest.
 
         存储该通道数据的DWS数据库的密码。
 
@@ -419,7 +419,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def kms_user_key_name(self):
-        """Gets the kms_user_key_name of this DWSDestinationDescriptorRequest.
+        r"""Gets the kms_user_key_name of this DWSDestinationDescriptorRequest.
 
         用户在密钥管理服务（简称KMS）创建的用户主密钥名称，用于加密存储DWS数据库的密码。
 
@@ -430,7 +430,7 @@ class DWSDestinationDescriptorRequest:
 
     @kms_user_key_name.setter
     def kms_user_key_name(self, kms_user_key_name):
-        """Sets the kms_user_key_name of this DWSDestinationDescriptorRequest.
+        r"""Sets the kms_user_key_name of this DWSDestinationDescriptorRequest.
 
         用户在密钥管理服务（简称KMS）创建的用户主密钥名称，用于加密存储DWS数据库的密码。
 
@@ -441,7 +441,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def kms_user_key_id(self):
-        """Gets the kms_user_key_id of this DWSDestinationDescriptorRequest.
+        r"""Gets the kms_user_key_id of this DWSDestinationDescriptorRequest.
 
         用户在密钥管理服务（简称KMS）创建的用户主密钥ID，用于加密存储DWS数据库的密码。
 
@@ -452,7 +452,7 @@ class DWSDestinationDescriptorRequest:
 
     @kms_user_key_id.setter
     def kms_user_key_id(self, kms_user_key_id):
-        """Sets the kms_user_key_id of this DWSDestinationDescriptorRequest.
+        r"""Sets the kms_user_key_id of this DWSDestinationDescriptorRequest.
 
         用户在密钥管理服务（简称KMS）创建的用户主密钥ID，用于加密存储DWS数据库的密码。
 
@@ -463,7 +463,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def obs_bucket_path(self):
-        """Gets the obs_bucket_path of this DWSDestinationDescriptorRequest.
+        r"""Gets the obs_bucket_path of this DWSDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶名称。
 
@@ -474,7 +474,7 @@ class DWSDestinationDescriptorRequest:
 
     @obs_bucket_path.setter
     def obs_bucket_path(self, obs_bucket_path):
-        """Sets the obs_bucket_path of this DWSDestinationDescriptorRequest.
+        r"""Sets the obs_bucket_path of this DWSDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶名称。
 
@@ -485,7 +485,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def file_prefix(self):
-        """Gets the file_prefix of this DWSDestinationDescriptorRequest.
+        r"""Gets the file_prefix of this DWSDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶下的自定义目录，多级目录可用“/”进行分隔，不可以“/”开头。  取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。  默认配置为空。
 
@@ -496,7 +496,7 @@ class DWSDestinationDescriptorRequest:
 
     @file_prefix.setter
     def file_prefix(self, file_prefix):
-        """Sets the file_prefix of this DWSDestinationDescriptorRequest.
+        r"""Sets the file_prefix of this DWSDestinationDescriptorRequest.
 
         临时存储该通道数据的OBS桶下的自定义目录，多级目录可用“/”进行分隔，不可以“/”开头。  取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。  默认配置为空。
 
@@ -507,7 +507,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def retry_duration(self):
-        """Gets the retry_duration of this DWSDestinationDescriptorRequest.
+        r"""Gets the retry_duration of this DWSDestinationDescriptorRequest.
 
         用户数据导入DWS集群失败的重试失效时间。超出此配置项配置的时间，转储DWS失败的数据将备份至“OBS桶/ file_prefix/dws_error”目录下。  取值范围： 0～7200。  单位：秒。  默认配置为1800。
 
@@ -518,7 +518,7 @@ class DWSDestinationDescriptorRequest:
 
     @retry_duration.setter
     def retry_duration(self, retry_duration):
-        """Sets the retry_duration of this DWSDestinationDescriptorRequest.
+        r"""Sets the retry_duration of this DWSDestinationDescriptorRequest.
 
         用户数据导入DWS集群失败的重试失效时间。超出此配置项配置的时间，转储DWS失败的数据将备份至“OBS桶/ file_prefix/dws_error”目录下。  取值范围： 0～7200。  单位：秒。  默认配置为1800。
 
@@ -529,7 +529,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def dws_table_columns(self):
-        """Gets the dws_table_columns of this DWSDestinationDescriptorRequest.
+        r"""Gets the dws_table_columns of this DWSDestinationDescriptorRequest.
 
         指定要转储到DWS表中的列，为null或者为空则默认全列。比如“c1,c2”表示将Schema中c1和c2这两列转储到DWS。  默认为空。
 
@@ -540,7 +540,7 @@ class DWSDestinationDescriptorRequest:
 
     @dws_table_columns.setter
     def dws_table_columns(self, dws_table_columns):
-        """Sets the dws_table_columns of this DWSDestinationDescriptorRequest.
+        r"""Sets the dws_table_columns of this DWSDestinationDescriptorRequest.
 
         指定要转储到DWS表中的列，为null或者为空则默认全列。比如“c1,c2”表示将Schema中c1和c2这两列转储到DWS。  默认为空。
 
@@ -551,7 +551,7 @@ class DWSDestinationDescriptorRequest:
 
     @property
     def options(self):
-        """Gets the options of this DWSDestinationDescriptorRequest.
+        r"""Gets the options of this DWSDestinationDescriptorRequest.
 
         :return: The options of this DWSDestinationDescriptorRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.Options`
@@ -560,7 +560,7 @@ class DWSDestinationDescriptorRequest:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this DWSDestinationDescriptorRequest.
+        r"""Sets the options of this DWSDestinationDescriptorRequest.
 
         :param options: The options of this DWSDestinationDescriptorRequest.
         :type options: :class:`huaweicloudsdkdis.v2.Options`

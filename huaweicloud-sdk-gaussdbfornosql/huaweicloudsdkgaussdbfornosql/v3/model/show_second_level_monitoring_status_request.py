@@ -25,7 +25,7 @@ class ShowSecondLevelMonitoringStatusRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowSecondLevelMonitoringStatusRequest
+        r"""ShowSecondLevelMonitoringStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecondLevelMonitoringStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSecondLevelMonitoringStatusRequest.
+        r"""Gets the instance_id of this ShowSecondLevelMonitoringStatusRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowSecondLevelMonitoringStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSecondLevelMonitoringStatusRequest.
+        r"""Sets the instance_id of this ShowSecondLevelMonitoringStatusRequest.
 
         实例ID。
 

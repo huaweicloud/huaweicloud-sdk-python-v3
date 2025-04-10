@@ -31,7 +31,7 @@ class ListVpcsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, enterprise_project_id=None):
-        """ListVpcsRequest
+        r"""ListVpcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListVpcsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpcsRequest.
+        r"""Gets the limit of this ListVpcsRequest.
 
         每页返回的个数
 
@@ -75,7 +75,7 @@ class ListVpcsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpcsRequest.
+        r"""Sets the limit of this ListVpcsRequest.
 
         每页返回的个数
 
@@ -86,7 +86,7 @@ class ListVpcsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpcsRequest.
+        r"""Gets the marker of this ListVpcsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -97,7 +97,7 @@ class ListVpcsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpcsRequest.
+        r"""Sets the marker of this ListVpcsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -108,7 +108,7 @@ class ListVpcsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVpcsRequest.
+        r"""Gets the id of this ListVpcsRequest.
 
         功能说明：虚拟私有云ID。可以使用该字段过滤某个ID的虚拟私有云。
 
@@ -119,7 +119,7 @@ class ListVpcsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVpcsRequest.
+        r"""Sets the id of this ListVpcsRequest.
 
         功能说明：虚拟私有云ID。可以使用该字段过滤某个ID的虚拟私有云。
 
@@ -130,7 +130,7 @@ class ListVpcsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVpcsRequest.
+        r"""Gets the enterprise_project_id of this ListVpcsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。若未传值则默认返回所有企业项目绑定的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
@@ -141,7 +141,7 @@ class ListVpcsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVpcsRequest.
+        r"""Sets the enterprise_project_id of this ListVpcsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。若未传值则默认返回所有企业项目绑定的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 

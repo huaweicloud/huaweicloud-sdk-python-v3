@@ -26,7 +26,7 @@ class ShowRedirectUrlResponse(SdkResponse):
     }
 
     def __init__(self, url=None):
-        """ShowRedirectUrlResponse
+        r"""ShowRedirectUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRedirectUrlResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowRedirectUrlResponse.
+        r"""Gets the url of this ShowRedirectUrlResponse.
 
         授权重定向URL。
 
@@ -55,7 +55,7 @@ class ShowRedirectUrlResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowRedirectUrlResponse.
+        r"""Sets the url of this ShowRedirectUrlResponse.
 
         授权重定向URL。
 

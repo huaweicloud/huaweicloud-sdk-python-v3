@@ -29,7 +29,7 @@ class IndependentBodyReq:
     }
 
     def __init__(self, flavor_ref=None, node_size=None, volume_type=None):
-        """IndependentBodyReq
+        r"""IndependentBodyReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class IndependentBodyReq:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this IndependentBodyReq.
+        r"""Gets the flavor_ref of this IndependentBodyReq.
 
         规格id，该参数通过[获取实例规格列表](ListFlavors.xml)接口获取，根据集群版本选择所需要的规格id
 
@@ -65,7 +65,7 @@ class IndependentBodyReq:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this IndependentBodyReq.
+        r"""Sets the flavor_ref of this IndependentBodyReq.
 
         规格id，该参数通过[获取实例规格列表](ListFlavors.xml)接口获取，根据集群版本选择所需要的规格id
 
@@ -76,7 +76,7 @@ class IndependentBodyReq:
 
     @property
     def node_size(self):
-        """Gets the node_size of this IndependentBodyReq.
+        r"""Gets the node_size of this IndependentBodyReq.
 
         要独立节点个数。 - 如果路径参数type取值为“ess-master”即新增独立master节点，节点个数必须为大于等于三且小于等于10的奇数。 - 如果路径参数type取值为“ess-client”即新增独立client节点，节点个数要求大于等于1小于等于32。
 
@@ -87,7 +87,7 @@ class IndependentBodyReq:
 
     @node_size.setter
     def node_size(self, node_size):
-        """Sets the node_size of this IndependentBodyReq.
+        r"""Sets the node_size of this IndependentBodyReq.
 
         要独立节点个数。 - 如果路径参数type取值为“ess-master”即新增独立master节点，节点个数必须为大于等于三且小于等于10的奇数。 - 如果路径参数type取值为“ess-client”即新增独立client节点，节点个数要求大于等于1小于等于32。
 
@@ -98,7 +98,7 @@ class IndependentBodyReq:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this IndependentBodyReq.
+        r"""Gets the volume_type of this IndependentBodyReq.
 
         节点存储类型：取值为ULTRAHIGH，COMMON，HIGH。
 
@@ -109,7 +109,7 @@ class IndependentBodyReq:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this IndependentBodyReq.
+        r"""Sets the volume_type of this IndependentBodyReq.
 
         节点存储类型：取值为ULTRAHIGH，COMMON，HIGH。
 

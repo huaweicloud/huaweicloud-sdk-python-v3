@@ -27,7 +27,7 @@ class ParseUserBehaviorRequest:
     }
 
     def __init__(self, instance=None, body=None):
-        """ParseUserBehaviorRequest
+        r"""ParseUserBehaviorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ParseUserBehaviorRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ParseUserBehaviorRequest.
+        r"""Gets the instance of this ParseUserBehaviorRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ParseUserBehaviorRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ParseUserBehaviorRequest.
+        r"""Sets the instance of this ParseUserBehaviorRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ParseUserBehaviorRequest:
 
     @property
     def body(self):
-        """Gets the body of this ParseUserBehaviorRequest.
+        r"""Gets the body of this ParseUserBehaviorRequest.
 
         :return: The body of this ParseUserBehaviorRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BehaviorRestBody`
@@ -80,7 +80,7 @@ class ParseUserBehaviorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ParseUserBehaviorRequest.
+        r"""Sets the body of this ParseUserBehaviorRequest.
 
         :param body: The body of this ParseUserBehaviorRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BehaviorRestBody`

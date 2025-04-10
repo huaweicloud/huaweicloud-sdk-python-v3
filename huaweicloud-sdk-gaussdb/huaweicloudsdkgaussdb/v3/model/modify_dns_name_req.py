@@ -25,7 +25,7 @@ class ModifyDnsNameReq:
     }
 
     def __init__(self, dns_name=None):
-        """ModifyDnsNameReq
+        r"""ModifyDnsNameReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyDnsNameReq:
 
     @property
     def dns_name(self):
-        """Gets the dns_name of this ModifyDnsNameReq.
+        r"""Gets the dns_name of this ModifyDnsNameReq.
 
         新域名的前缀，取值范围如下：8~63个字符之间，可以包含小写字母、数字，不能包含其他特殊字符。
 
@@ -53,7 +53,7 @@ class ModifyDnsNameReq:
 
     @dns_name.setter
     def dns_name(self, dns_name):
-        """Sets the dns_name of this ModifyDnsNameReq.
+        r"""Sets the dns_name of this ModifyDnsNameReq.
 
         新域名的前缀，取值范围如下：8~63个字符之间，可以包含小写字母、数字，不能包含其他特殊字符。
 

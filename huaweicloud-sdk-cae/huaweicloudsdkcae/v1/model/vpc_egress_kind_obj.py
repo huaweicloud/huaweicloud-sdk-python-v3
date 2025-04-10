@@ -26,7 +26,7 @@ class VpcEgressKindObj:
     }
 
     def __init__(self):
-        """VpcEgressKindObj
+        r"""VpcEgressKindObj
 
         The model defined in huaweicloud sdk
 

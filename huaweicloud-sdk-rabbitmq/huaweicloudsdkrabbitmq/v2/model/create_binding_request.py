@@ -31,7 +31,7 @@ class CreateBindingRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, exchange=None, body=None):
-        """CreateBindingRequest
+        r"""CreateBindingRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateBindingRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateBindingRequest.
+        r"""Gets the instance_id of this CreateBindingRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class CreateBindingRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateBindingRequest.
+        r"""Sets the instance_id of this CreateBindingRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class CreateBindingRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this CreateBindingRequest.
+        r"""Gets the vhost of this CreateBindingRequest.
 
         Vhost名称
 
@@ -94,7 +94,7 @@ class CreateBindingRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this CreateBindingRequest.
+        r"""Sets the vhost of this CreateBindingRequest.
 
         Vhost名称
 
@@ -105,7 +105,7 @@ class CreateBindingRequest:
 
     @property
     def exchange(self):
-        """Gets the exchange of this CreateBindingRequest.
+        r"""Gets the exchange of this CreateBindingRequest.
 
         Exchange名称
 
@@ -116,7 +116,7 @@ class CreateBindingRequest:
 
     @exchange.setter
     def exchange(self, exchange):
-        """Sets the exchange of this CreateBindingRequest.
+        r"""Sets the exchange of this CreateBindingRequest.
 
         Exchange名称
 
@@ -127,7 +127,7 @@ class CreateBindingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBindingRequest.
+        r"""Gets the body of this CreateBindingRequest.
 
         :return: The body of this CreateBindingRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateBindingBody`
@@ -136,7 +136,7 @@ class CreateBindingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBindingRequest.
+        r"""Sets the body of this CreateBindingRequest.
 
         :param body: The body of this CreateBindingRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateBindingBody`

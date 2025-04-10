@@ -35,7 +35,7 @@ class ListUsersOfGroupRequest:
     }
 
     def __init__(self, user_name=None, group_id=None, description=None, active_type=None, limit=None, offset=None):
-        """ListUsersOfGroupRequest
+        r"""ListUsersOfGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListUsersOfGroupRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUsersOfGroupRequest.
+        r"""Gets the user_name of this ListUsersOfGroupRequest.
 
         用户名支持模糊查询。
 
@@ -88,7 +88,7 @@ class ListUsersOfGroupRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUsersOfGroupRequest.
+        r"""Sets the user_name of this ListUsersOfGroupRequest.
 
         用户名支持模糊查询。
 
@@ -99,7 +99,7 @@ class ListUsersOfGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListUsersOfGroupRequest.
+        r"""Gets the group_id of this ListUsersOfGroupRequest.
 
         用户组ID。
 
@@ -110,7 +110,7 @@ class ListUsersOfGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListUsersOfGroupRequest.
+        r"""Sets the group_id of this ListUsersOfGroupRequest.
 
         用户组ID。
 
@@ -121,7 +121,7 @@ class ListUsersOfGroupRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListUsersOfGroupRequest.
+        r"""Gets the description of this ListUsersOfGroupRequest.
 
         用户描述支持模糊查询。
 
@@ -132,7 +132,7 @@ class ListUsersOfGroupRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListUsersOfGroupRequest.
+        r"""Sets the description of this ListUsersOfGroupRequest.
 
         用户描述支持模糊查询。
 
@@ -143,7 +143,7 @@ class ListUsersOfGroupRequest:
 
     @property
     def active_type(self):
-        """Gets the active_type of this ListUsersOfGroupRequest.
+        r"""Gets the active_type of this ListUsersOfGroupRequest.
 
         激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
 
@@ -154,7 +154,7 @@ class ListUsersOfGroupRequest:
 
     @active_type.setter
     def active_type(self, active_type):
-        """Sets the active_type of this ListUsersOfGroupRequest.
+        r"""Sets the active_type of this ListUsersOfGroupRequest.
 
         激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
 
@@ -165,7 +165,7 @@ class ListUsersOfGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersOfGroupRequest.
+        r"""Gets the limit of this ListUsersOfGroupRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
 
@@ -176,7 +176,7 @@ class ListUsersOfGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersOfGroupRequest.
+        r"""Sets the limit of this ListUsersOfGroupRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
 
@@ -187,7 +187,7 @@ class ListUsersOfGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsersOfGroupRequest.
+        r"""Gets the offset of this ListUsersOfGroupRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -198,7 +198,7 @@ class ListUsersOfGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsersOfGroupRequest.
+        r"""Sets the offset of this ListUsersOfGroupRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 

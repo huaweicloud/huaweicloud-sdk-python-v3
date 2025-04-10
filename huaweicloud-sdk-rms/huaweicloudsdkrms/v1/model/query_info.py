@@ -25,7 +25,7 @@ class QueryInfo:
     }
 
     def __init__(self, select_fields=None):
-        """QueryInfo
+        r"""QueryInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QueryInfo:
 
     @property
     def select_fields(self):
-        """Gets the select_fields of this QueryInfo.
+        r"""Gets the select_fields of this QueryInfo.
 
         ResourceQL 查询字段
 
@@ -54,7 +54,7 @@ class QueryInfo:
 
     @select_fields.setter
     def select_fields(self, select_fields):
-        """Sets the select_fields of this QueryInfo.
+        r"""Sets the select_fields of this QueryInfo.
 
         ResourceQL 查询字段
 

@@ -29,7 +29,7 @@ class FlinkJobStatus:
     }
 
     def __init__(self, job_id=None, status_name=None, status_desc=None):
-        """FlinkJobStatus
+        r"""FlinkJobStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlinkJobStatus:
 
     @property
     def job_id(self):
-        """Gets the job_id of this FlinkJobStatus.
+        r"""Gets the job_id of this FlinkJobStatus.
 
         作业Id。
 
@@ -68,7 +68,7 @@ class FlinkJobStatus:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this FlinkJobStatus.
+        r"""Sets the job_id of this FlinkJobStatus.
 
         作业Id。
 
@@ -79,7 +79,7 @@ class FlinkJobStatus:
 
     @property
     def status_name(self):
-        """Gets the status_name of this FlinkJobStatus.
+        r"""Gets the status_name of this FlinkJobStatus.
 
         作业状态名称。
 
@@ -90,7 +90,7 @@ class FlinkJobStatus:
 
     @status_name.setter
     def status_name(self, status_name):
-        """Sets the status_name of this FlinkJobStatus.
+        r"""Sets the status_name of this FlinkJobStatus.
 
         作业状态名称。
 
@@ -101,7 +101,7 @@ class FlinkJobStatus:
 
     @property
     def status_desc(self):
-        """Gets the status_desc of this FlinkJobStatus.
+        r"""Gets the status_desc of this FlinkJobStatus.
 
         当前状态描述，包含异常状态原因及建议。
 
@@ -112,7 +112,7 @@ class FlinkJobStatus:
 
     @status_desc.setter
     def status_desc(self, status_desc):
-        """Sets the status_desc of this FlinkJobStatus.
+        r"""Sets the status_desc of this FlinkJobStatus.
 
         当前状态描述，包含异常状态原因及建议。
 

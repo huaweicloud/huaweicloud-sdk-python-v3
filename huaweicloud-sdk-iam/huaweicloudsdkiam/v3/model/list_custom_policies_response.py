@@ -30,7 +30,7 @@ class ListCustomPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, links=None, roles=None, total_number=None):
-        """ListCustomPoliciesResponse
+        r"""ListCustomPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListCustomPoliciesResponse.
+        r"""Gets the links of this ListCustomPoliciesResponse.
 
         :return: The links of this ListCustomPoliciesResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -67,7 +67,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListCustomPoliciesResponse.
+        r"""Sets the links of this ListCustomPoliciesResponse.
 
         :param links: The links of this ListCustomPoliciesResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -76,7 +76,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListCustomPoliciesResponse.
+        r"""Gets the roles of this ListCustomPoliciesResponse.
 
         自定义策略信息列表。
 
@@ -87,7 +87,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListCustomPoliciesResponse.
+        r"""Sets the roles of this ListCustomPoliciesResponse.
 
         自定义策略信息列表。
 
@@ -98,7 +98,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListCustomPoliciesResponse.
+        r"""Gets the total_number of this ListCustomPoliciesResponse.
 
         返回自定义策略的总条数
 
@@ -109,7 +109,7 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListCustomPoliciesResponse.
+        r"""Sets the total_number of this ListCustomPoliciesResponse.
 
         返回自定义策略的总条数
 

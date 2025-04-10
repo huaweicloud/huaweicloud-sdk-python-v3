@@ -47,7 +47,7 @@ class GlobalConnectionBandwidthSites:
     }
 
     def __init__(self, id=None, description=None, created_at=None, updated_at=None, name_en=None, name_cn=None, site_code=None, site_type=None, service_list=None, group_list=None, region_id=None, public_border_group=None):
-        """GlobalConnectionBandwidthSites
+        r"""GlobalConnectionBandwidthSites
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def id(self):
-        """Gets the id of this GlobalConnectionBandwidthSites.
+        r"""Gets the id of this GlobalConnectionBandwidthSites.
 
         实例ID。
 
@@ -128,7 +128,7 @@ class GlobalConnectionBandwidthSites:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalConnectionBandwidthSites.
+        r"""Sets the id of this GlobalConnectionBandwidthSites.
 
         实例ID。
 
@@ -139,7 +139,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def description(self):
-        """Gets the description of this GlobalConnectionBandwidthSites.
+        r"""Gets the description of this GlobalConnectionBandwidthSites.
 
         实例描述。不支持 <>。
 
@@ -150,7 +150,7 @@ class GlobalConnectionBandwidthSites:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlobalConnectionBandwidthSites.
+        r"""Sets the description of this GlobalConnectionBandwidthSites.
 
         实例描述。不支持 <>。
 
@@ -161,7 +161,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlobalConnectionBandwidthSites.
+        r"""Gets the created_at of this GlobalConnectionBandwidthSites.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -172,7 +172,7 @@ class GlobalConnectionBandwidthSites:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlobalConnectionBandwidthSites.
+        r"""Sets the created_at of this GlobalConnectionBandwidthSites.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -183,7 +183,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlobalConnectionBandwidthSites.
+        r"""Gets the updated_at of this GlobalConnectionBandwidthSites.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -194,7 +194,7 @@ class GlobalConnectionBandwidthSites:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlobalConnectionBandwidthSites.
+        r"""Sets the updated_at of this GlobalConnectionBandwidthSites.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -205,7 +205,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def name_en(self):
-        """Gets the name_en of this GlobalConnectionBandwidthSites.
+        r"""Gets the name_en of this GlobalConnectionBandwidthSites.
 
         功能说明：站点信息自定义的英文名字。 取值范围：1-255个字符
 
@@ -216,7 +216,7 @@ class GlobalConnectionBandwidthSites:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this GlobalConnectionBandwidthSites.
+        r"""Sets the name_en of this GlobalConnectionBandwidthSites.
 
         功能说明：站点信息自定义的英文名字。 取值范围：1-255个字符
 
@@ -227,7 +227,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this GlobalConnectionBandwidthSites.
+        r"""Gets the name_cn of this GlobalConnectionBandwidthSites.
 
         功能说明：站点信息自定义的中文名字。 取值范围：1-64个字符。
 
@@ -238,7 +238,7 @@ class GlobalConnectionBandwidthSites:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this GlobalConnectionBandwidthSites.
+        r"""Sets the name_cn of this GlobalConnectionBandwidthSites.
 
         功能说明：站点信息自定义的中文名字。 取值范围：1-64个字符。
 
@@ -249,7 +249,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def site_code(self):
-        """Gets the site_code of this GlobalConnectionBandwidthSites.
+        r"""Gets the site_code of this GlobalConnectionBandwidthSites.
 
         功能说明：站点编码，格式为<area_code>[-<subarea_code>[-<region_code>]]。 取值范围：1-64个字符。
 
@@ -260,7 +260,7 @@ class GlobalConnectionBandwidthSites:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this GlobalConnectionBandwidthSites.
+        r"""Sets the site_code of this GlobalConnectionBandwidthSites.
 
         功能说明：站点编码，格式为<area_code>[-<subarea_code>[-<region_code>]]。 取值范围：1-64个字符。
 
@@ -271,7 +271,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def site_type(self):
-        """Gets the site_type of this GlobalConnectionBandwidthSites.
+        r"""Gets the site_type of this GlobalConnectionBandwidthSites.
 
         功能说明：站点类型，必须跟站点编码对应，一段编码为大区，两段编码为区域，三段编码为城域。 取值范围： - Area: 大区站点 - SubArea: 区域站点 - Region: 城域站点
 
@@ -282,7 +282,7 @@ class GlobalConnectionBandwidthSites:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this GlobalConnectionBandwidthSites.
+        r"""Sets the site_type of this GlobalConnectionBandwidthSites.
 
         功能说明：站点类型，必须跟站点编码对应，一段编码为大区，两段编码为区域，三段编码为城域。 取值范围： - Area: 大区站点 - SubArea: 区域站点 - Region: 城域站点
 
@@ -293,7 +293,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def service_list(self):
-        """Gets the service_list of this GlobalConnectionBandwidthSites.
+        r"""Gets the service_list of this GlobalConnectionBandwidthSites.
 
         功能说明：站点支持的服务列表，多个服务用\",\"分隔。 取值范围：0-255个字符
 
@@ -304,7 +304,7 @@ class GlobalConnectionBandwidthSites:
 
     @service_list.setter
     def service_list(self, service_list):
-        """Sets the service_list of this GlobalConnectionBandwidthSites.
+        r"""Sets the service_list of this GlobalConnectionBandwidthSites.
 
         功能说明：站点支持的服务列表，多个服务用\",\"分隔。 取值范围：0-255个字符
 
@@ -315,7 +315,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def group_list(self):
-        """Gets the group_list of this GlobalConnectionBandwidthSites.
+        r"""Gets the group_list of this GlobalConnectionBandwidthSites.
 
         :return: The group_list of this GlobalConnectionBandwidthSites.
         :rtype: list[:class:`huaweicloudsdkcc.v3.SiteGroupReferenceInfo`]
@@ -324,7 +324,7 @@ class GlobalConnectionBandwidthSites:
 
     @group_list.setter
     def group_list(self, group_list):
-        """Sets the group_list of this GlobalConnectionBandwidthSites.
+        r"""Sets the group_list of this GlobalConnectionBandwidthSites.
 
         :param group_list: The group_list of this GlobalConnectionBandwidthSites.
         :type group_list: list[:class:`huaweicloudsdkcc.v3.SiteGroupReferenceInfo`]
@@ -333,7 +333,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def region_id(self):
-        """Gets the region_id of this GlobalConnectionBandwidthSites.
+        r"""Gets the region_id of this GlobalConnectionBandwidthSites.
 
         功能说明：对应华为云标准region的id，该站点继承自华为云region时才需要填写该字段。 取值范围：0-64个字符。
 
@@ -344,7 +344,7 @@ class GlobalConnectionBandwidthSites:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this GlobalConnectionBandwidthSites.
+        r"""Sets the region_id of this GlobalConnectionBandwidthSites.
 
         功能说明：对应华为云标准region的id，该站点继承自华为云region时才需要填写该字段。 取值范围：0-64个字符。
 
@@ -355,7 +355,7 @@ class GlobalConnectionBandwidthSites:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this GlobalConnectionBandwidthSites.
+        r"""Gets the public_border_group of this GlobalConnectionBandwidthSites.
 
         功能说明：用于标记是中心还是边缘站点。中心：center 取值范围：0-255个字符。
 
@@ -366,7 +366,7 @@ class GlobalConnectionBandwidthSites:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this GlobalConnectionBandwidthSites.
+        r"""Sets the public_border_group of this GlobalConnectionBandwidthSites.
 
         功能说明：用于标记是中心还是边缘站点。中心：center 取值范围：0-255个字符。
 

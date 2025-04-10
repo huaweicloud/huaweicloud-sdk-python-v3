@@ -26,7 +26,7 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchShowPipelinesStatusResponse
+        r"""BatchShowPipelinesStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchShowPipelinesStatusResponse.
+        r"""Gets the body of this BatchShowPipelinesStatusResponse.
 
         :return: The body of this BatchShowPipelinesStatusResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineExecuteStates`]
@@ -53,7 +53,7 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowPipelinesStatusResponse.
+        r"""Sets the body of this BatchShowPipelinesStatusResponse.
 
         :param body: The body of this BatchShowPipelinesStatusResponse.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineExecuteStates`]

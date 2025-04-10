@@ -26,7 +26,7 @@ class UpdateIpAuthListResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateIpAuthListResponse
+        r"""UpdateIpAuthListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateIpAuthListResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateIpAuthListResponse.
+        r"""Gets the x_request_id of this UpdateIpAuthListResponse.
 
         :return: The x_request_id of this UpdateIpAuthListResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateIpAuthListResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateIpAuthListResponse.
+        r"""Sets the x_request_id of this UpdateIpAuthListResponse.
 
         :param x_request_id: The x_request_id of this UpdateIpAuthListResponse.
         :type x_request_id: str

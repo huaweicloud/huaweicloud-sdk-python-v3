@@ -55,7 +55,7 @@ class ListApisV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_name=None, return_data_mode=None, tags=None):
-        """ListApisV2Request
+        r"""ListApisV2Request
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class ListApisV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApisV2Request.
+        r"""Gets the instance_id of this ListApisV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -158,7 +158,7 @@ class ListApisV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApisV2Request.
+        r"""Sets the instance_id of this ListApisV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -169,7 +169,7 @@ class ListApisV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApisV2Request.
+        r"""Gets the offset of this ListApisV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -180,7 +180,7 @@ class ListApisV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApisV2Request.
+        r"""Sets the offset of this ListApisV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -191,7 +191,7 @@ class ListApisV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApisV2Request.
+        r"""Gets the limit of this ListApisV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -202,7 +202,7 @@ class ListApisV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApisV2Request.
+        r"""Sets the limit of this ListApisV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -213,7 +213,7 @@ class ListApisV2Request:
 
     @property
     def id(self):
-        """Gets the id of this ListApisV2Request.
+        r"""Gets the id of this ListApisV2Request.
 
         API编号
 
@@ -224,7 +224,7 @@ class ListApisV2Request:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListApisV2Request.
+        r"""Sets the id of this ListApisV2Request.
 
         API编号
 
@@ -235,7 +235,7 @@ class ListApisV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListApisV2Request.
+        r"""Gets the name of this ListApisV2Request.
 
         API名称
 
@@ -246,7 +246,7 @@ class ListApisV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListApisV2Request.
+        r"""Sets the name of this ListApisV2Request.
 
         API名称
 
@@ -257,7 +257,7 @@ class ListApisV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListApisV2Request.
+        r"""Gets the group_id of this ListApisV2Request.
 
         API分组编号
 
@@ -268,7 +268,7 @@ class ListApisV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListApisV2Request.
+        r"""Sets the group_id of this ListApisV2Request.
 
         API分组编号
 
@@ -279,7 +279,7 @@ class ListApisV2Request:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ListApisV2Request.
+        r"""Gets the req_protocol of this ListApisV2Request.
 
         请求协议
 
@@ -290,7 +290,7 @@ class ListApisV2Request:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ListApisV2Request.
+        r"""Sets the req_protocol of this ListApisV2Request.
 
         请求协议
 
@@ -301,7 +301,7 @@ class ListApisV2Request:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ListApisV2Request.
+        r"""Gets the req_method of this ListApisV2Request.
 
         请求方法
 
@@ -312,7 +312,7 @@ class ListApisV2Request:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ListApisV2Request.
+        r"""Sets the req_method of this ListApisV2Request.
 
         请求方法
 
@@ -323,7 +323,7 @@ class ListApisV2Request:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ListApisV2Request.
+        r"""Gets the req_uri of this ListApisV2Request.
 
         请求路径
 
@@ -334,7 +334,7 @@ class ListApisV2Request:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ListApisV2Request.
+        r"""Sets the req_uri of this ListApisV2Request.
 
         请求路径
 
@@ -345,7 +345,7 @@ class ListApisV2Request:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ListApisV2Request.
+        r"""Gets the auth_type of this ListApisV2Request.
 
         授权类型
 
@@ -356,7 +356,7 @@ class ListApisV2Request:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ListApisV2Request.
+        r"""Sets the auth_type of this ListApisV2Request.
 
         授权类型
 
@@ -367,7 +367,7 @@ class ListApisV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListApisV2Request.
+        r"""Gets the env_id of this ListApisV2Request.
 
         发布的环境编号
 
@@ -378,7 +378,7 @@ class ListApisV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListApisV2Request.
+        r"""Sets the env_id of this ListApisV2Request.
 
         发布的环境编号
 
@@ -389,7 +389,7 @@ class ListApisV2Request:
 
     @property
     def type(self):
-        """Gets the type of this ListApisV2Request.
+        r"""Gets the type of this ListApisV2Request.
 
         API类型
 
@@ -400,7 +400,7 @@ class ListApisV2Request:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListApisV2Request.
+        r"""Sets the type of this ListApisV2Request.
 
         API类型
 
@@ -411,7 +411,7 @@ class ListApisV2Request:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListApisV2Request.
+        r"""Gets the precise_search of this ListApisV2Request.
 
         指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
 
@@ -422,7 +422,7 @@ class ListApisV2Request:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListApisV2Request.
+        r"""Sets the precise_search of this ListApisV2Request.
 
         指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
 
@@ -433,7 +433,7 @@ class ListApisV2Request:
 
     @property
     def vpc_channel_name(self):
-        """Gets the vpc_channel_name of this ListApisV2Request.
+        r"""Gets the vpc_channel_name of this ListApisV2Request.
 
         负载通道名称
 
@@ -444,7 +444,7 @@ class ListApisV2Request:
 
     @vpc_channel_name.setter
     def vpc_channel_name(self, vpc_channel_name):
-        """Sets the vpc_channel_name of this ListApisV2Request.
+        r"""Sets the vpc_channel_name of this ListApisV2Request.
 
         负载通道名称
 
@@ -455,7 +455,7 @@ class ListApisV2Request:
 
     @property
     def return_data_mode(self):
-        """Gets the return_data_mode of this ListApisV2Request.
+        r"""Gets the return_data_mode of this ListApisV2Request.
 
         指定API详情中需要包含的额外返回结果，多个参数之间使用“,”隔开，当brief和其他include参数共同使用时，brief不生效。 目前仅支持brief，include_group，include_group_backend。 brief：默认值，不包含额外信息。 include_group：返回结果中包含api_group_info。 include_group_backend：返回结果中包含backend_api。
 
@@ -466,7 +466,7 @@ class ListApisV2Request:
 
     @return_data_mode.setter
     def return_data_mode(self, return_data_mode):
-        """Sets the return_data_mode of this ListApisV2Request.
+        r"""Sets the return_data_mode of this ListApisV2Request.
 
         指定API详情中需要包含的额外返回结果，多个参数之间使用“,”隔开，当brief和其他include参数共同使用时，brief不生效。 目前仅支持brief，include_group，include_group_backend。 brief：默认值，不包含额外信息。 include_group：返回结果中包含api_group_info。 include_group_backend：返回结果中包含backend_api。
 
@@ -477,7 +477,7 @@ class ListApisV2Request:
 
     @property
     def tags(self):
-        """Gets the tags of this ListApisV2Request.
+        r"""Gets the tags of this ListApisV2Request.
 
         API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
 
@@ -488,7 +488,7 @@ class ListApisV2Request:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListApisV2Request.
+        r"""Sets the tags of this ListApisV2Request.
 
         API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
 

@@ -38,7 +38,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, group_name=None, online=None, subscription_consistency=None, total=None, next_offset=None, previous_offset=None, clients=None):
-        """ShowConsumerConnectionsResponse
+        r"""ShowConsumerConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowConsumerConnectionsResponse.
+        r"""Gets the group_name of this ShowConsumerConnectionsResponse.
 
         消费组名称。
 
@@ -97,7 +97,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowConsumerConnectionsResponse.
+        r"""Sets the group_name of this ShowConsumerConnectionsResponse.
 
         消费组名称。
 
@@ -108,7 +108,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def online(self):
-        """Gets the online of this ShowConsumerConnectionsResponse.
+        r"""Gets the online of this ShowConsumerConnectionsResponse.
 
         消费组是否在线。
 
@@ -119,7 +119,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @online.setter
     def online(self, online):
-        """Sets the online of this ShowConsumerConnectionsResponse.
+        r"""Sets the online of this ShowConsumerConnectionsResponse.
 
         消费组是否在线。
 
@@ -130,7 +130,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def subscription_consistency(self):
-        """Gets the subscription_consistency of this ShowConsumerConnectionsResponse.
+        r"""Gets the subscription_consistency of this ShowConsumerConnectionsResponse.
 
         订阅关系是否一致。
 
@@ -141,7 +141,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @subscription_consistency.setter
     def subscription_consistency(self, subscription_consistency):
-        """Sets the subscription_consistency of this ShowConsumerConnectionsResponse.
+        r"""Sets the subscription_consistency of this ShowConsumerConnectionsResponse.
 
         订阅关系是否一致。
 
@@ -152,7 +152,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowConsumerConnectionsResponse.
+        r"""Gets the total of this ShowConsumerConnectionsResponse.
 
         消费者总数。
 
@@ -163,7 +163,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowConsumerConnectionsResponse.
+        r"""Sets the total of this ShowConsumerConnectionsResponse.
 
         消费者总数。
 
@@ -174,7 +174,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def next_offset(self):
-        """Gets the next_offset of this ShowConsumerConnectionsResponse.
+        r"""Gets the next_offset of this ShowConsumerConnectionsResponse.
 
         下个分页的offset。
 
@@ -185,7 +185,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @next_offset.setter
     def next_offset(self, next_offset):
-        """Sets the next_offset of this ShowConsumerConnectionsResponse.
+        r"""Sets the next_offset of this ShowConsumerConnectionsResponse.
 
         下个分页的offset。
 
@@ -196,7 +196,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def previous_offset(self):
-        """Gets the previous_offset of this ShowConsumerConnectionsResponse.
+        r"""Gets the previous_offset of this ShowConsumerConnectionsResponse.
 
         上个分页的offset。
 
@@ -207,7 +207,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @previous_offset.setter
     def previous_offset(self, previous_offset):
-        """Sets the previous_offset of this ShowConsumerConnectionsResponse.
+        r"""Sets the previous_offset of this ShowConsumerConnectionsResponse.
 
         上个分页的offset。
 
@@ -218,7 +218,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @property
     def clients(self):
-        """Gets the clients of this ShowConsumerConnectionsResponse.
+        r"""Gets the clients of this ShowConsumerConnectionsResponse.
 
         消费者订阅详情列表。
 
@@ -229,7 +229,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
     @clients.setter
     def clients(self, clients):
-        """Sets the clients of this ShowConsumerConnectionsResponse.
+        r"""Sets the clients of this ShowConsumerConnectionsResponse.
 
         消费者订阅详情列表。
 

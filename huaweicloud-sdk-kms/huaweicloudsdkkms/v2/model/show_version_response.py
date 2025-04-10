@@ -26,7 +26,7 @@ class ShowVersionResponse(SdkResponse):
     }
 
     def __init__(self, version=None):
-        """ShowVersionResponse
+        r"""ShowVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowVersionResponse.
+        r"""Gets the version of this ShowVersionResponse.
 
         描述version 对象的列表，详情请参见 ApiVersionDetail字段数据结构说明。
 
@@ -55,7 +55,7 @@ class ShowVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowVersionResponse.
+        r"""Sets the version of this ShowVersionResponse.
 
         描述version 对象的列表，详情请参见 ApiVersionDetail字段数据结构说明。
 

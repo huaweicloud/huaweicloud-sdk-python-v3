@@ -25,7 +25,7 @@ class BatchCreateServerGroupTagsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateServerGroupTagsRequest
+        r"""BatchCreateServerGroupTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateServerGroupTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateServerGroupTagsRequest.
+        r"""Gets the body of this BatchCreateServerGroupTagsRequest.
 
         :return: The body of this BatchCreateServerGroupTagsRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchCreateServerGroupTagsReq`
@@ -52,7 +52,7 @@ class BatchCreateServerGroupTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateServerGroupTagsRequest.
+        r"""Sets the body of this BatchCreateServerGroupTagsRequest.
 
         :param body: The body of this BatchCreateServerGroupTagsRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchCreateServerGroupTagsReq`

@@ -25,7 +25,7 @@ class ListLiveDataQuotaV2Request:
     }
 
     def __init__(self, instance_id=None):
-        """ListLiveDataQuotaV2Request
+        r"""ListLiveDataQuotaV2Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLiveDataQuotaV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLiveDataQuotaV2Request.
+        r"""Gets the instance_id of this ListLiveDataQuotaV2Request.
 
         实例ID
 
@@ -53,7 +53,7 @@ class ListLiveDataQuotaV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLiveDataQuotaV2Request.
+        r"""Sets the instance_id of this ListLiveDataQuotaV2Request.
 
         实例ID
 

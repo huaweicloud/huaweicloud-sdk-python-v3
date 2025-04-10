@@ -32,7 +32,7 @@ class ShowDataPolicyResponse(SdkResponse):
     }
 
     def __init__(self, data_delete=None, data_download=None, data_encrypted=None, data_share=None):
-        """ShowDataPolicyResponse
+        r"""ShowDataPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @property
     def data_delete(self):
-        """Gets the data_delete of this ShowDataPolicyResponse.
+        r"""Gets the data_delete of this ShowDataPolicyResponse.
 
         项目级删除策略（true：允许项目数据删除操作，false：不允许删除操作，默认为true）
 
@@ -76,7 +76,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @data_delete.setter
     def data_delete(self, data_delete):
-        """Sets the data_delete of this ShowDataPolicyResponse.
+        r"""Sets the data_delete of this ShowDataPolicyResponse.
 
         项目级删除策略（true：允许项目数据删除操作，false：不允许删除操作，默认为true）
 
@@ -87,7 +87,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @property
     def data_download(self):
-        """Gets the data_download of this ShowDataPolicyResponse.
+        r"""Gets the data_download of this ShowDataPolicyResponse.
 
         项目级下载策略（true：允许项目数据下载操作，false：不允许下载操作，默认为true）
 
@@ -98,7 +98,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @data_download.setter
     def data_download(self, data_download):
-        """Sets the data_download of this ShowDataPolicyResponse.
+        r"""Sets the data_download of this ShowDataPolicyResponse.
 
         项目级下载策略（true：允许项目数据下载操作，false：不允许下载操作，默认为true）
 
@@ -109,7 +109,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @property
     def data_encrypted(self):
-        """Gets the data_encrypted of this ShowDataPolicyResponse.
+        r"""Gets the data_encrypted of this ShowDataPolicyResponse.
 
         项目级加密策略（true：允许项目数据加密操作，false：不允许加密操作，默认为false）
 
@@ -120,7 +120,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @data_encrypted.setter
     def data_encrypted(self, data_encrypted):
-        """Sets the data_encrypted of this ShowDataPolicyResponse.
+        r"""Sets the data_encrypted of this ShowDataPolicyResponse.
 
         项目级加密策略（true：允许项目数据加密操作，false：不允许加密操作，默认为false）
 
@@ -131,7 +131,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @property
     def data_share(self):
-        """Gets the data_share of this ShowDataPolicyResponse.
+        r"""Gets the data_share of this ShowDataPolicyResponse.
 
         项目级分享策略（true：允许项目数据拷贝/引用操作，false：不允许拷贝/引用操作，默认为true）
 
@@ -142,7 +142,7 @@ class ShowDataPolicyResponse(SdkResponse):
 
     @data_share.setter
     def data_share(self, data_share):
-        """Sets the data_share of this ShowDataPolicyResponse.
+        r"""Sets the data_share of this ShowDataPolicyResponse.
 
         项目级分享策略（true：允许项目数据拷贝/引用操作，false：不允许拷贝/引用操作，默认为true）
 

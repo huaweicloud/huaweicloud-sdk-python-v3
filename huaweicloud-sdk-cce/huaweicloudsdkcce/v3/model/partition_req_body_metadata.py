@@ -25,7 +25,7 @@ class PartitionReqBodyMetadata:
     }
 
     def __init__(self, name=None):
-        """PartitionReqBodyMetadata
+        r"""PartitionReqBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PartitionReqBodyMetadata:
 
     @property
     def name(self):
-        """Gets the name of this PartitionReqBodyMetadata.
+        r"""Gets the name of this PartitionReqBodyMetadata.
 
         分区名称
 
@@ -54,7 +54,7 @@ class PartitionReqBodyMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PartitionReqBodyMetadata.
+        r"""Sets the name of this PartitionReqBodyMetadata.
 
         分区名称
 

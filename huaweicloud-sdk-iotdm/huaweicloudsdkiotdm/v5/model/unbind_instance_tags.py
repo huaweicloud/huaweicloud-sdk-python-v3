@@ -25,7 +25,7 @@ class UnbindInstanceTags:
     }
 
     def __init__(self, tags=None):
-        """UnbindInstanceTags
+        r"""UnbindInstanceTags
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnbindInstanceTags:
 
     @property
     def tags(self):
-        """Gets the tags of this UnbindInstanceTags.
+        r"""Gets the tags of this UnbindInstanceTags.
 
         实例标签
 
@@ -53,7 +53,7 @@ class UnbindInstanceTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UnbindInstanceTags.
+        r"""Sets the tags of this UnbindInstanceTags.
 
         实例标签
 

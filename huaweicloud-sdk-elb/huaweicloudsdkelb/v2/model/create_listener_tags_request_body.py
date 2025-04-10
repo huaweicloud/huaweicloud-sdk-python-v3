@@ -25,7 +25,7 @@ class CreateListenerTagsRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateListenerTagsRequestBody
+        r"""CreateListenerTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateListenerTagsRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateListenerTagsRequestBody.
+        r"""Gets the tag of this CreateListenerTagsRequestBody.
 
         :return: The tag of this CreateListenerTagsRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.ResourceTag`
@@ -51,7 +51,7 @@ class CreateListenerTagsRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateListenerTagsRequestBody.
+        r"""Sets the tag of this CreateListenerTagsRequestBody.
 
         :param tag: The tag of this CreateListenerTagsRequestBody.
         :type tag: :class:`huaweicloudsdkelb.v2.ResourceTag`

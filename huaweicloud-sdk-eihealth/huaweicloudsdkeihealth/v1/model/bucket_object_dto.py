@@ -33,7 +33,7 @@ class BucketObjectDto:
     }
 
     def __init__(self, path=None, name=None, type=None, size=None, create_time=None):
-        """BucketObjectDto
+        r"""BucketObjectDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BucketObjectDto:
 
     @property
     def path(self):
-        """Gets the path of this BucketObjectDto.
+        r"""Gets the path of this BucketObjectDto.
 
         对象全路径（项目名称:/路径）
 
@@ -82,7 +82,7 @@ class BucketObjectDto:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this BucketObjectDto.
+        r"""Sets the path of this BucketObjectDto.
 
         对象全路径（项目名称:/路径）
 
@@ -93,7 +93,7 @@ class BucketObjectDto:
 
     @property
     def name(self):
-        """Gets the name of this BucketObjectDto.
+        r"""Gets the name of this BucketObjectDto.
 
         名称
 
@@ -104,7 +104,7 @@ class BucketObjectDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BucketObjectDto.
+        r"""Sets the name of this BucketObjectDto.
 
         名称
 
@@ -115,7 +115,7 @@ class BucketObjectDto:
 
     @property
     def type(self):
-        """Gets the type of this BucketObjectDto.
+        r"""Gets the type of this BucketObjectDto.
 
         :return: The type of this BucketObjectDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -124,7 +124,7 @@ class BucketObjectDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BucketObjectDto.
+        r"""Sets the type of this BucketObjectDto.
 
         :param type: The type of this BucketObjectDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -133,7 +133,7 @@ class BucketObjectDto:
 
     @property
     def size(self):
-        """Gets the size of this BucketObjectDto.
+        r"""Gets the size of this BucketObjectDto.
 
         大小
 
@@ -144,7 +144,7 @@ class BucketObjectDto:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BucketObjectDto.
+        r"""Sets the size of this BucketObjectDto.
 
         大小
 
@@ -155,7 +155,7 @@ class BucketObjectDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BucketObjectDto.
+        r"""Gets the create_time of this BucketObjectDto.
 
         创建时间
 
@@ -166,7 +166,7 @@ class BucketObjectDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BucketObjectDto.
+        r"""Sets the create_time of this BucketObjectDto.
 
         创建时间
 

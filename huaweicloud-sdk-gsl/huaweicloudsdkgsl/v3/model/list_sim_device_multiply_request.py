@@ -37,7 +37,7 @@ class ListSimDeviceMultiplyRequest:
     }
 
     def __init__(self, cid=None, online_carrier=None, sim_card_id=None, order_id=None, version=None, limit=None, offset=None):
-        """ListSimDeviceMultiplyRequest
+        r"""ListSimDeviceMultiplyRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def cid(self):
-        """Gets the cid of this ListSimDeviceMultiplyRequest.
+        r"""Gets the cid of this ListSimDeviceMultiplyRequest.
 
         cid
 
@@ -96,7 +96,7 @@ class ListSimDeviceMultiplyRequest:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this ListSimDeviceMultiplyRequest.
+        r"""Sets the cid of this ListSimDeviceMultiplyRequest.
 
         cid
 
@@ -107,7 +107,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def online_carrier(self):
-        """Gets the online_carrier of this ListSimDeviceMultiplyRequest.
+        r"""Gets the online_carrier of this ListSimDeviceMultiplyRequest.
 
         在线运营商标识
 
@@ -118,7 +118,7 @@ class ListSimDeviceMultiplyRequest:
 
     @online_carrier.setter
     def online_carrier(self, online_carrier):
-        """Sets the online_carrier of this ListSimDeviceMultiplyRequest.
+        r"""Sets the online_carrier of this ListSimDeviceMultiplyRequest.
 
         在线运营商标识
 
@@ -129,7 +129,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this ListSimDeviceMultiplyRequest.
+        r"""Gets the sim_card_id of this ListSimDeviceMultiplyRequest.
 
         sim卡id
 
@@ -140,7 +140,7 @@ class ListSimDeviceMultiplyRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this ListSimDeviceMultiplyRequest.
+        r"""Sets the sim_card_id of this ListSimDeviceMultiplyRequest.
 
         sim卡id
 
@@ -151,7 +151,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListSimDeviceMultiplyRequest.
+        r"""Gets the order_id of this ListSimDeviceMultiplyRequest.
 
         批次号
 
@@ -162,7 +162,7 @@ class ListSimDeviceMultiplyRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListSimDeviceMultiplyRequest.
+        r"""Sets the order_id of this ListSimDeviceMultiplyRequest.
 
         批次号
 
@@ -173,7 +173,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListSimDeviceMultiplyRequest.
+        r"""Gets the version of this ListSimDeviceMultiplyRequest.
 
         三网卡版本信息
 
@@ -184,7 +184,7 @@ class ListSimDeviceMultiplyRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListSimDeviceMultiplyRequest.
+        r"""Sets the version of this ListSimDeviceMultiplyRequest.
 
         三网卡版本信息
 
@@ -195,7 +195,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimDeviceMultiplyRequest.
+        r"""Gets the limit of this ListSimDeviceMultiplyRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -206,7 +206,7 @@ class ListSimDeviceMultiplyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimDeviceMultiplyRequest.
+        r"""Sets the limit of this ListSimDeviceMultiplyRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -217,7 +217,7 @@ class ListSimDeviceMultiplyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimDeviceMultiplyRequest.
+        r"""Gets the offset of this ListSimDeviceMultiplyRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -228,7 +228,7 @@ class ListSimDeviceMultiplyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimDeviceMultiplyRequest.
+        r"""Sets the offset of this ListSimDeviceMultiplyRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 

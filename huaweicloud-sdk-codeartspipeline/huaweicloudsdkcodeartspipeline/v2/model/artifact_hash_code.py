@@ -27,7 +27,7 @@ class ArtifactHashCode:
     }
 
     def __init__(self, hash_type=None, hash_value=None):
-        """ArtifactHashCode
+        r"""ArtifactHashCode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ArtifactHashCode:
 
     @property
     def hash_type(self):
-        """Gets the hash_type of this ArtifactHashCode.
+        r"""Gets the hash_type of this ArtifactHashCode.
 
         哈希算法
 
@@ -61,7 +61,7 @@ class ArtifactHashCode:
 
     @hash_type.setter
     def hash_type(self, hash_type):
-        """Sets the hash_type of this ArtifactHashCode.
+        r"""Sets the hash_type of this ArtifactHashCode.
 
         哈希算法
 
@@ -72,7 +72,7 @@ class ArtifactHashCode:
 
     @property
     def hash_value(self):
-        """Gets the hash_value of this ArtifactHashCode.
+        r"""Gets the hash_value of this ArtifactHashCode.
 
         哈希值
 
@@ -83,7 +83,7 @@ class ArtifactHashCode:
 
     @hash_value.setter
     def hash_value(self, hash_value):
-        """Sets the hash_value of this ArtifactHashCode.
+        r"""Sets the hash_value of this ArtifactHashCode.
 
         哈希值
 

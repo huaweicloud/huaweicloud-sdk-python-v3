@@ -30,7 +30,7 @@ class UploadProductResponse(SdkResponse):
     }
 
     def __init__(self, succ_num=None, fail_num=None, fail_objects_ids=None):
-        """UploadProductResponse
+        r"""UploadProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UploadProductResponse(SdkResponse):
 
     @property
     def succ_num(self):
-        """Gets the succ_num of this UploadProductResponse.
+        r"""Gets the succ_num of this UploadProductResponse.
 
         导入成功的产品数
 
@@ -69,7 +69,7 @@ class UploadProductResponse(SdkResponse):
 
     @succ_num.setter
     def succ_num(self, succ_num):
-        """Sets the succ_num of this UploadProductResponse.
+        r"""Sets the succ_num of this UploadProductResponse.
 
         导入成功的产品数
 
@@ -80,7 +80,7 @@ class UploadProductResponse(SdkResponse):
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this UploadProductResponse.
+        r"""Gets the fail_num of this UploadProductResponse.
 
         导入失败的产品数
 
@@ -91,7 +91,7 @@ class UploadProductResponse(SdkResponse):
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this UploadProductResponse.
+        r"""Sets the fail_num of this UploadProductResponse.
 
         导入失败的产品数
 
@@ -102,7 +102,7 @@ class UploadProductResponse(SdkResponse):
 
     @property
     def fail_objects_ids(self):
-        """Gets the fail_objects_ids of this UploadProductResponse.
+        r"""Gets the fail_objects_ids of this UploadProductResponse.
 
         导入失败的产品名称列表
 
@@ -113,7 +113,7 @@ class UploadProductResponse(SdkResponse):
 
     @fail_objects_ids.setter
     def fail_objects_ids(self, fail_objects_ids):
-        """Sets the fail_objects_ids of this UploadProductResponse.
+        r"""Sets the fail_objects_ids of this UploadProductResponse.
 
         导入失败的产品名称列表
 

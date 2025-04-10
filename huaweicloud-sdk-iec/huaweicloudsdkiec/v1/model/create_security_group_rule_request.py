@@ -25,7 +25,7 @@ class CreateSecurityGroupRuleRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSecurityGroupRuleRequest
+        r"""CreateSecurityGroupRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSecurityGroupRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityGroupRuleRequest.
+        r"""Gets the body of this CreateSecurityGroupRuleRequest.
 
         :return: The body of this CreateSecurityGroupRuleRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleRequestBody`
@@ -52,7 +52,7 @@ class CreateSecurityGroupRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityGroupRuleRequest.
+        r"""Sets the body of this CreateSecurityGroupRuleRequest.
 
         :param body: The body of this CreateSecurityGroupRuleRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleRequestBody`

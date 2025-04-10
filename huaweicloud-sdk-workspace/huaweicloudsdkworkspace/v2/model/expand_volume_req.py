@@ -27,7 +27,7 @@ class ExpandVolumeReq:
     }
 
     def __init__(self, order_id=None, new_size=None):
-        """ExpandVolumeReq
+        r"""ExpandVolumeReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandVolumeReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandVolumeReq.
+        r"""Gets the order_id of this ExpandVolumeReq.
 
         订单ID，包周期桌面扩容时使用。
 
@@ -60,7 +60,7 @@ class ExpandVolumeReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandVolumeReq.
+        r"""Sets the order_id of this ExpandVolumeReq.
 
         订单ID，包周期桌面扩容时使用。
 
@@ -71,7 +71,7 @@ class ExpandVolumeReq:
 
     @property
     def new_size(self):
-        """Gets the new_size of this ExpandVolumeReq.
+        r"""Gets the new_size of this ExpandVolumeReq.
 
         扩容后的磁盘大小，单位为GB。
 
@@ -82,7 +82,7 @@ class ExpandVolumeReq:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this ExpandVolumeReq.
+        r"""Sets the new_size of this ExpandVolumeReq.
 
         扩容后的磁盘大小，单位为GB。
 

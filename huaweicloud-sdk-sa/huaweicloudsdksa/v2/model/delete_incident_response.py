@@ -32,7 +32,7 @@ class DeleteIncidentResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """DeleteIncidentResponse
+        r"""DeleteIncidentResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteIncidentResponse.
+        r"""Gets the code of this DeleteIncidentResponse.
 
         Id value
 
@@ -76,7 +76,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteIncidentResponse.
+        r"""Sets the code of this DeleteIncidentResponse.
 
         Id value
 
@@ -87,7 +87,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteIncidentResponse.
+        r"""Gets the message of this DeleteIncidentResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteIncidentResponse.
+        r"""Sets the message of this DeleteIncidentResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteIncidentResponse.
+        r"""Gets the data of this DeleteIncidentResponse.
 
         :return: The data of this DeleteIncidentResponse.
         :rtype: :class:`huaweicloudsdksa.v2.BatchOrderAlertResult`
@@ -118,7 +118,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteIncidentResponse.
+        r"""Sets the data of this DeleteIncidentResponse.
 
         :param data: The data of this DeleteIncidentResponse.
         :type data: :class:`huaweicloudsdksa.v2.BatchOrderAlertResult`
@@ -127,7 +127,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteIncidentResponse.
+        r"""Gets the x_request_id of this DeleteIncidentResponse.
 
         :return: The x_request_id of this DeleteIncidentResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class DeleteIncidentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteIncidentResponse.
+        r"""Sets the x_request_id of this DeleteIncidentResponse.
 
         :param x_request_id: The x_request_id of this DeleteIncidentResponse.
         :type x_request_id: str

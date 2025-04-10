@@ -32,7 +32,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, items=None):
-        """ListAutopilotUpgradeClusterTasksResponse
+        r"""ListAutopilotUpgradeClusterTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Gets the api_version of this ListAutopilotUpgradeClusterTasksResponse.
 
         api版本，默认为v3
 
@@ -76,7 +76,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Sets the api_version of this ListAutopilotUpgradeClusterTasksResponse.
 
         api版本，默认为v3
 
@@ -87,7 +87,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Gets the kind of this ListAutopilotUpgradeClusterTasksResponse.
 
         资源类型
 
@@ -98,7 +98,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Sets the kind of this ListAutopilotUpgradeClusterTasksResponse.
 
         资源类型
 
@@ -109,7 +109,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Gets the metadata of this ListAutopilotUpgradeClusterTasksResponse.
 
         :return: The metadata of this ListAutopilotUpgradeClusterTasksResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskMetadata`
@@ -118,7 +118,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Sets the metadata of this ListAutopilotUpgradeClusterTasksResponse.
 
         :param metadata: The metadata of this ListAutopilotUpgradeClusterTasksResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeTaskMetadata`
@@ -127,7 +127,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Gets the items of this ListAutopilotUpgradeClusterTasksResponse.
 
         集群升级任务列表
 
@@ -138,7 +138,7 @@ class ListAutopilotUpgradeClusterTasksResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAutopilotUpgradeClusterTasksResponse.
+        r"""Sets the items of this ListAutopilotUpgradeClusterTasksResponse.
 
         集群升级任务列表
 

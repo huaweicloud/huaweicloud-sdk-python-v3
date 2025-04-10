@@ -27,7 +27,7 @@ class ZoneDetail:
     }
 
     def __init__(self, code=None, name=None):
-        """ZoneDetail
+        r"""ZoneDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ZoneDetail:
 
     @property
     def code(self):
-        """Gets the code of this ZoneDetail.
+        r"""Gets the code of this ZoneDetail.
 
         地区编码，如CN。不区分大小写，统一转为大写处理
 
@@ -61,7 +61,7 @@ class ZoneDetail:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ZoneDetail.
+        r"""Sets the code of this ZoneDetail.
 
         地区编码，如CN。不区分大小写，统一转为大写处理
 
@@ -72,7 +72,7 @@ class ZoneDetail:
 
     @property
     def name(self):
-        """Gets the name of this ZoneDetail.
+        r"""Gets the name of this ZoneDetail.
 
         地区名称
 
@@ -83,7 +83,7 @@ class ZoneDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ZoneDetail.
+        r"""Sets the name of this ZoneDetail.
 
         地区名称
 

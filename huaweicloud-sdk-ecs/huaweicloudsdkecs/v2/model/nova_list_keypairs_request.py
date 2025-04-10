@@ -29,7 +29,7 @@ class NovaListKeypairsRequest:
     }
 
     def __init__(self, limit=None, marker=None, open_stack_api_version=None):
-        """NovaListKeypairsRequest
+        r"""NovaListKeypairsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NovaListKeypairsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NovaListKeypairsRequest.
+        r"""Gets the limit of this NovaListKeypairsRequest.
 
         查询返回秘钥数量限制。  在微版本2.35后支持
 
@@ -68,7 +68,7 @@ class NovaListKeypairsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NovaListKeypairsRequest.
+        r"""Sets the limit of this NovaListKeypairsRequest.
 
         查询返回秘钥数量限制。  在微版本2.35后支持
 
@@ -79,7 +79,7 @@ class NovaListKeypairsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NovaListKeypairsRequest.
+        r"""Gets the marker of this NovaListKeypairsRequest.
 
         从marker指定的keypair的名称的下一条数据开始查询。  在微版本2.35后支持。
 
@@ -90,7 +90,7 @@ class NovaListKeypairsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NovaListKeypairsRequest.
+        r"""Sets the marker of this NovaListKeypairsRequest.
 
         从marker指定的keypair的名称的下一条数据开始查询。  在微版本2.35后支持。
 
@@ -101,7 +101,7 @@ class NovaListKeypairsRequest:
 
     @property
     def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaListKeypairsRequest.
+        r"""Gets the open_stack_api_version of this NovaListKeypairsRequest.
 
         微版本头
 
@@ -112,7 +112,7 @@ class NovaListKeypairsRequest:
 
     @open_stack_api_version.setter
     def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaListKeypairsRequest.
+        r"""Sets the open_stack_api_version of this NovaListKeypairsRequest.
 
         微版本头
 

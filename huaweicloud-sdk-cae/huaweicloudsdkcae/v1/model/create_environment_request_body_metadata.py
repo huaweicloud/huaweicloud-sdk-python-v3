@@ -27,7 +27,7 @@ class CreateEnvironmentRequestBodyMetadata:
     }
 
     def __init__(self, annotations=None, name=None):
-        """CreateEnvironmentRequestBodyMetadata
+        r"""CreateEnvironmentRequestBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEnvironmentRequestBodyMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this CreateEnvironmentRequestBodyMetadata.
+        r"""Gets the annotations of this CreateEnvironmentRequestBodyMetadata.
 
         创建环境请求体附加参数。 - vpc_id：创建环境绑定的VPC的ID。 - group_name：创建环境绑定的SWR组织的组织名称。 - type：环境类型，当前仅支持exclusive类型。 - subnet_id: 创建环境绑定的VPC子网的ID。 - security_group_id：创建环境绑定的安全组的ID，可不填，不填由CAE后台自动创建。
 
@@ -60,7 +60,7 @@ class CreateEnvironmentRequestBodyMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this CreateEnvironmentRequestBodyMetadata.
+        r"""Sets the annotations of this CreateEnvironmentRequestBodyMetadata.
 
         创建环境请求体附加参数。 - vpc_id：创建环境绑定的VPC的ID。 - group_name：创建环境绑定的SWR组织的组织名称。 - type：环境类型，当前仅支持exclusive类型。 - subnet_id: 创建环境绑定的VPC子网的ID。 - security_group_id：创建环境绑定的安全组的ID，可不填，不填由CAE后台自动创建。
 
@@ -71,7 +71,7 @@ class CreateEnvironmentRequestBodyMetadata:
 
     @property
     def name(self):
-        """Gets the name of this CreateEnvironmentRequestBodyMetadata.
+        r"""Gets the name of this CreateEnvironmentRequestBodyMetadata.
 
         环境名称。
 
@@ -82,7 +82,7 @@ class CreateEnvironmentRequestBodyMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEnvironmentRequestBodyMetadata.
+        r"""Sets the name of this CreateEnvironmentRequestBodyMetadata.
 
         环境名称。
 

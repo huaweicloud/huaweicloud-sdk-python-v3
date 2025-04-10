@@ -24,7 +24,7 @@ class DeleteHttpGeoIpRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttpGeoIpRuleResponse
+        r"""DeleteHttpGeoIpRuleResponse
 
         The model defined in huaweicloud sdk
 

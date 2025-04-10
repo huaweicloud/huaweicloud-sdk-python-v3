@@ -25,7 +25,7 @@ class CreateAccessPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAccessPolicyRequest
+        r"""CreateAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAccessPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAccessPolicyRequest.
+        r"""Gets the body of this CreateAccessPolicyRequest.
 
         :return: The body of this CreateAccessPolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateAccessPolicyReq`
@@ -52,7 +52,7 @@ class CreateAccessPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAccessPolicyRequest.
+        r"""Sets the body of this CreateAccessPolicyRequest.
 
         :param body: The body of this CreateAccessPolicyRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateAccessPolicyReq`

@@ -51,7 +51,7 @@ class JobInstance:
     }
 
     def __init__(self, job_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, submit_time=None, instance_id=None, job_id=None, job_instance_name=None, instance_type=None, version=None, ignore_success=None, force_success=None):
-        """JobInstance
+        r"""JobInstance
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class JobInstance:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobInstance.
+        r"""Gets the job_name of this JobInstance.
 
         作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名。如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
 
@@ -145,7 +145,7 @@ class JobInstance:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobInstance.
+        r"""Sets the job_name of this JobInstance.
 
         作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名。如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
 
@@ -156,7 +156,7 @@ class JobInstance:
 
     @property
     def status(self):
-        """Gets the status of this JobInstance.
+        r"""Gets the status of this JobInstance.
 
         实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
@@ -167,7 +167,7 @@ class JobInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobInstance.
+        r"""Sets the status of this JobInstance.
 
         实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
@@ -178,7 +178,7 @@ class JobInstance:
 
     @property
     def plan_time(self):
-        """Gets the plan_time of this JobInstance.
+        r"""Gets the plan_time of this JobInstance.
 
         作业实例计划执行时间
 
@@ -189,7 +189,7 @@ class JobInstance:
 
     @plan_time.setter
     def plan_time(self, plan_time):
-        """Sets the plan_time of this JobInstance.
+        r"""Sets the plan_time of this JobInstance.
 
         作业实例计划执行时间
 
@@ -200,7 +200,7 @@ class JobInstance:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobInstance.
+        r"""Gets the start_time of this JobInstance.
 
         作业实例实际执行开始时间
 
@@ -211,7 +211,7 @@ class JobInstance:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobInstance.
+        r"""Sets the start_time of this JobInstance.
 
         作业实例实际执行开始时间
 
@@ -222,7 +222,7 @@ class JobInstance:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobInstance.
+        r"""Gets the end_time of this JobInstance.
 
         作业实例实际执行结束时间
 
@@ -233,7 +233,7 @@ class JobInstance:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobInstance.
+        r"""Sets the end_time of this JobInstance.
 
         作业实例实际执行结束时间
 
@@ -244,7 +244,7 @@ class JobInstance:
 
     @property
     def execute_time(self):
-        """Gets the execute_time of this JobInstance.
+        r"""Gets the execute_time of this JobInstance.
 
         执行耗时，单位：毫秒
 
@@ -255,7 +255,7 @@ class JobInstance:
 
     @execute_time.setter
     def execute_time(self, execute_time):
-        """Sets the execute_time of this JobInstance.
+        r"""Sets the execute_time of this JobInstance.
 
         执行耗时，单位：毫秒
 
@@ -266,7 +266,7 @@ class JobInstance:
 
     @property
     def submit_time(self):
-        """Gets the submit_time of this JobInstance.
+        r"""Gets the submit_time of this JobInstance.
 
         作业提交运行时间
 
@@ -277,7 +277,7 @@ class JobInstance:
 
     @submit_time.setter
     def submit_time(self, submit_time):
-        """Sets the submit_time of this JobInstance.
+        r"""Sets the submit_time of this JobInstance.
 
         作业提交运行时间
 
@@ -288,7 +288,7 @@ class JobInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this JobInstance.
+        r"""Gets the instance_id of this JobInstance.
 
         作业实例ID
 
@@ -299,7 +299,7 @@ class JobInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this JobInstance.
+        r"""Sets the instance_id of this JobInstance.
 
         作业实例ID
 
@@ -310,7 +310,7 @@ class JobInstance:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobInstance.
+        r"""Gets the job_id of this JobInstance.
 
         作业ID
 
@@ -321,7 +321,7 @@ class JobInstance:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobInstance.
+        r"""Sets the job_id of this JobInstance.
 
         作业ID
 
@@ -332,7 +332,7 @@ class JobInstance:
 
     @property
     def job_instance_name(self):
-        """Gets the job_instance_name of this JobInstance.
+        r"""Gets the job_instance_name of this JobInstance.
 
         作业实例运行时日志记录的实例名称, 非作业定义的名称
 
@@ -343,7 +343,7 @@ class JobInstance:
 
     @job_instance_name.setter
     def job_instance_name(self, job_instance_name):
-        """Sets the job_instance_name of this JobInstance.
+        r"""Sets the job_instance_name of this JobInstance.
 
         作业实例运行时日志记录的实例名称, 非作业定义的名称
 
@@ -354,7 +354,7 @@ class JobInstance:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this JobInstance.
+        r"""Gets the instance_type of this JobInstance.
 
         作业实例类型
 
@@ -365,7 +365,7 @@ class JobInstance:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this JobInstance.
+        r"""Sets the instance_type of this JobInstance.
 
         作业实例类型
 
@@ -376,7 +376,7 @@ class JobInstance:
 
     @property
     def version(self):
-        """Gets the version of this JobInstance.
+        r"""Gets the version of this JobInstance.
 
         作业版本号
 
@@ -387,7 +387,7 @@ class JobInstance:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this JobInstance.
+        r"""Sets the version of this JobInstance.
 
         作业版本号
 
@@ -398,7 +398,7 @@ class JobInstance:
 
     @property
     def ignore_success(self):
-        """Gets the ignore_success of this JobInstance.
+        r"""Gets the ignore_success of this JobInstance.
 
         作业成功状态，是否忽略成功
 
@@ -409,7 +409,7 @@ class JobInstance:
 
     @ignore_success.setter
     def ignore_success(self, ignore_success):
-        """Sets the ignore_success of this JobInstance.
+        r"""Sets the ignore_success of this JobInstance.
 
         作业成功状态，是否忽略成功
 
@@ -420,7 +420,7 @@ class JobInstance:
 
     @property
     def force_success(self):
-        """Gets the force_success of this JobInstance.
+        r"""Gets the force_success of this JobInstance.
 
         作业成功状态，是否强制成功
 
@@ -431,7 +431,7 @@ class JobInstance:
 
     @force_success.setter
     def force_success(self, force_success):
-        """Sets the force_success of this JobInstance.
+        r"""Sets the force_success of this JobInstance.
 
         作业成功状态，是否强制成功
 

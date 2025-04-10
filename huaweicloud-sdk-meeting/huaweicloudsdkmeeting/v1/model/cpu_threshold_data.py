@@ -27,7 +27,7 @@ class CPUThresholdData:
     }
 
     def __init__(self, cpu=None, cpu_default=None):
-        """CPUThresholdData
+        r"""CPUThresholdData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CPUThresholdData:
 
     @property
     def cpu(self):
-        """Gets the cpu of this CPUThresholdData.
+        r"""Gets the cpu of this CPUThresholdData.
 
         自定义的cpu阈值，单位为百分比(%)
 
@@ -61,7 +61,7 @@ class CPUThresholdData:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this CPUThresholdData.
+        r"""Sets the cpu of this CPUThresholdData.
 
         自定义的cpu阈值，单位为百分比(%)
 
@@ -72,7 +72,7 @@ class CPUThresholdData:
 
     @property
     def cpu_default(self):
-        """Gets the cpu_default of this CPUThresholdData.
+        r"""Gets the cpu_default of this CPUThresholdData.
 
         cpu阈值默认值，单位为百分比(%)
 
@@ -83,7 +83,7 @@ class CPUThresholdData:
 
     @cpu_default.setter
     def cpu_default(self, cpu_default):
-        """Sets the cpu_default of this CPUThresholdData.
+        r"""Sets the cpu_default of this CPUThresholdData.
 
         cpu阈值默认值，单位为百分比(%)
 

@@ -28,7 +28,7 @@ class ShowModuleShadowResponse(SdkResponse):
     }
 
     def __init__(self, properties=None, properties_update_time=None):
-        """ShowModuleShadowResponse
+        r"""ShowModuleShadowResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowModuleShadowResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowModuleShadowResponse.
+        r"""Gets the properties of this ShowModuleShadowResponse.
 
         应用配置内容
 
@@ -62,7 +62,7 @@ class ShowModuleShadowResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowModuleShadowResponse.
+        r"""Sets the properties of this ShowModuleShadowResponse.
 
         应用配置内容
 
@@ -73,7 +73,7 @@ class ShowModuleShadowResponse(SdkResponse):
 
     @property
     def properties_update_time(self):
-        """Gets the properties_update_time of this ShowModuleShadowResponse.
+        r"""Gets the properties_update_time of this ShowModuleShadowResponse.
 
         应用配置更新时间
 
@@ -84,7 +84,7 @@ class ShowModuleShadowResponse(SdkResponse):
 
     @properties_update_time.setter
     def properties_update_time(self, properties_update_time):
-        """Sets the properties_update_time of this ShowModuleShadowResponse.
+        r"""Sets the properties_update_time of this ShowModuleShadowResponse.
 
         应用配置更新时间
 

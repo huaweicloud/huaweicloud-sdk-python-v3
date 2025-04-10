@@ -28,7 +28,7 @@ class ShowLtsConfigsResponse(SdkResponse):
     }
 
     def __init__(self, instance_lts_configs=None, total_count=None):
-        """ShowLtsConfigsResponse
+        r"""ShowLtsConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowLtsConfigsResponse(SdkResponse):
 
     @property
     def instance_lts_configs(self):
-        """Gets the instance_lts_configs of this ShowLtsConfigsResponse.
+        r"""Gets the instance_lts_configs of this ShowLtsConfigsResponse.
 
         实例LTS日志配置列表
 
@@ -62,7 +62,7 @@ class ShowLtsConfigsResponse(SdkResponse):
 
     @instance_lts_configs.setter
     def instance_lts_configs(self, instance_lts_configs):
-        """Sets the instance_lts_configs of this ShowLtsConfigsResponse.
+        r"""Sets the instance_lts_configs of this ShowLtsConfigsResponse.
 
         实例LTS日志配置列表
 
@@ -73,7 +73,7 @@ class ShowLtsConfigsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowLtsConfigsResponse.
+        r"""Gets the total_count of this ShowLtsConfigsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ShowLtsConfigsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowLtsConfigsResponse.
+        r"""Sets the total_count of this ShowLtsConfigsResponse.
 
         总数。
 

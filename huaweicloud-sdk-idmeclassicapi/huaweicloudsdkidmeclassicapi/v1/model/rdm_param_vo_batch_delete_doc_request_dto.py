@@ -27,7 +27,7 @@ class RDMParamVOBatchDeleteDocRequestDto:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOBatchDeleteDocRequestDto
+        r"""RDMParamVOBatchDeleteDocRequestDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOBatchDeleteDocRequestDto:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOBatchDeleteDocRequestDto.
+        r"""Gets the application_id of this RDMParamVOBatchDeleteDocRequestDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -61,7 +61,7 @@ class RDMParamVOBatchDeleteDocRequestDto:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOBatchDeleteDocRequestDto.
+        r"""Sets the application_id of this RDMParamVOBatchDeleteDocRequestDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -72,7 +72,7 @@ class RDMParamVOBatchDeleteDocRequestDto:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOBatchDeleteDocRequestDto.
+        r"""Gets the params of this RDMParamVOBatchDeleteDocRequestDto.
 
         :return: The params of this RDMParamVOBatchDeleteDocRequestDto.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteDocRequestDto`
@@ -81,7 +81,7 @@ class RDMParamVOBatchDeleteDocRequestDto:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOBatchDeleteDocRequestDto.
+        r"""Sets the params of this RDMParamVOBatchDeleteDocRequestDto.
 
         :param params: The params of this RDMParamVOBatchDeleteDocRequestDto.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.BatchDeleteDocRequestDto`

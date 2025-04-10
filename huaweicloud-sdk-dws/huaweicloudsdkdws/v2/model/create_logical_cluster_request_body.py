@@ -25,7 +25,7 @@ class CreateLogicalClusterRequestBody:
     }
 
     def __init__(self, logical_cluster=None):
-        """CreateLogicalClusterRequestBody
+        r"""CreateLogicalClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateLogicalClusterRequestBody:
 
     @property
     def logical_cluster(self):
-        """Gets the logical_cluster of this CreateLogicalClusterRequestBody.
+        r"""Gets the logical_cluster of this CreateLogicalClusterRequestBody.
 
         :return: The logical_cluster of this CreateLogicalClusterRequestBody.
         :rtype: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterInfo`
@@ -51,7 +51,7 @@ class CreateLogicalClusterRequestBody:
 
     @logical_cluster.setter
     def logical_cluster(self, logical_cluster):
-        """Sets the logical_cluster of this CreateLogicalClusterRequestBody.
+        r"""Sets the logical_cluster of this CreateLogicalClusterRequestBody.
 
         :param logical_cluster: The logical_cluster of this CreateLogicalClusterRequestBody.
         :type logical_cluster: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterInfo`

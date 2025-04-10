@@ -25,7 +25,7 @@ class CreateMetadata2Request:
     }
 
     def __init__(self, body=None):
-        """CreateMetadata2Request
+        r"""CreateMetadata2Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMetadata2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateMetadata2Request.
+        r"""Gets the body of this CreateMetadata2Request.
 
         :return: The body of this CreateMetadata2Request.
         :rtype: :class:`huaweicloudsdkges.v2.CreateMetadataReq`
@@ -52,7 +52,7 @@ class CreateMetadata2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMetadata2Request.
+        r"""Sets the body of this CreateMetadata2Request.
 
         :param body: The body of this CreateMetadata2Request.
         :type body: :class:`huaweicloudsdkges.v2.CreateMetadataReq`

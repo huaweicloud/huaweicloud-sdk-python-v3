@@ -33,7 +33,7 @@ class SearchFace:
     }
 
     def __init__(self, bounding_box=None, similarity=None, external_fields=None, external_image_id=None, face_id=None):
-        """SearchFace
+        r"""SearchFace
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SearchFace:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this SearchFace.
+        r"""Gets the bounding_box of this SearchFace.
 
         :return: The bounding_box of this SearchFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -80,7 +80,7 @@ class SearchFace:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this SearchFace.
+        r"""Sets the bounding_box of this SearchFace.
 
         :param bounding_box: The bounding_box of this SearchFace.
         :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -89,7 +89,7 @@ class SearchFace:
 
     @property
     def similarity(self):
-        """Gets the similarity of this SearchFace.
+        r"""Gets the similarity of this SearchFace.
 
         人脸搜索时用于被检索的相似度。
 
@@ -100,7 +100,7 @@ class SearchFace:
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this SearchFace.
+        r"""Sets the similarity of this SearchFace.
 
         人脸搜索时用于被检索的相似度。
 
@@ -111,7 +111,7 @@ class SearchFace:
 
     @property
     def external_fields(self):
-        """Gets the external_fields of this SearchFace.
+        r"""Gets the external_fields of this SearchFace.
 
         用户添加的额外自定义字段。
 
@@ -122,7 +122,7 @@ class SearchFace:
 
     @external_fields.setter
     def external_fields(self, external_fields):
-        """Sets the external_fields of this SearchFace.
+        r"""Sets the external_fields of this SearchFace.
 
         用户添加的额外自定义字段。
 
@@ -133,7 +133,7 @@ class SearchFace:
 
     @property
     def external_image_id(self):
-        """Gets the external_image_id of this SearchFace.
+        r"""Gets the external_image_id of this SearchFace.
 
         人脸所在的外部图片ID。
 
@@ -144,7 +144,7 @@ class SearchFace:
 
     @external_image_id.setter
     def external_image_id(self, external_image_id):
-        """Sets the external_image_id of this SearchFace.
+        r"""Sets the external_image_id of this SearchFace.
 
         人脸所在的外部图片ID。
 
@@ -155,7 +155,7 @@ class SearchFace:
 
     @property
     def face_id(self):
-        """Gets the face_id of this SearchFace.
+        r"""Gets the face_id of this SearchFace.
 
         人脸ID，由系统内部生成的唯一ID。
 
@@ -166,7 +166,7 @@ class SearchFace:
 
     @face_id.setter
     def face_id(self, face_id):
-        """Sets the face_id of this SearchFace.
+        r"""Sets the face_id of this SearchFace.
 
         人脸ID，由系统内部生成的唯一ID。
 

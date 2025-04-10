@@ -26,7 +26,7 @@ class RollbackSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, rollback=None):
-        """RollbackSnapshotResponse
+        r"""RollbackSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RollbackSnapshotResponse(SdkResponse):
 
     @property
     def rollback(self):
-        """Gets the rollback of this RollbackSnapshotResponse.
+        r"""Gets the rollback of this RollbackSnapshotResponse.
 
         :return: The rollback of this RollbackSnapshotResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackInfo`
@@ -53,7 +53,7 @@ class RollbackSnapshotResponse(SdkResponse):
 
     @rollback.setter
     def rollback(self, rollback):
-        """Sets the rollback of this RollbackSnapshotResponse.
+        r"""Sets the rollback of this RollbackSnapshotResponse.
 
         :param rollback: The rollback of this RollbackSnapshotResponse.
         :type rollback: :class:`huaweicloudsdkevs.v2.RollbackInfo`

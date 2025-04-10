@@ -27,7 +27,7 @@ class ShowBugDensityV2Request:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowBugDensityV2Request
+        r"""ShowBugDensityV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBugDensityV2Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowBugDensityV2Request.
+        r"""Gets the project_id of this ShowBugDensityV2Request.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class ShowBugDensityV2Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowBugDensityV2Request.
+        r"""Sets the project_id of this ShowBugDensityV2Request.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class ShowBugDensityV2Request:
 
     @property
     def body(self):
-        """Gets the body of this ShowBugDensityV2Request.
+        r"""Gets the body of this ShowBugDensityV2Request.
 
         :return: The body of this ShowBugDensityV2Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2`
@@ -80,7 +80,7 @@ class ShowBugDensityV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBugDensityV2Request.
+        r"""Sets the body of this ShowBugDensityV2Request.
 
         :param body: The body of this ShowBugDensityV2Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2`

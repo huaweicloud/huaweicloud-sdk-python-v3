@@ -37,7 +37,7 @@ class UpdateGlobalConnectionBandwidth:
     }
 
     def __init__(self, name=None, description=None, size=None, charge_mode=None, sla_level=None, binding_service=None, spec_code_id=None):
-        """UpdateGlobalConnectionBandwidth
+        r"""UpdateGlobalConnectionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the name of this UpdateGlobalConnectionBandwidth.
 
         实例名字。
 
@@ -96,7 +96,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the name of this UpdateGlobalConnectionBandwidth.
 
         实例名字。
 
@@ -107,7 +107,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the description of this UpdateGlobalConnectionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -118,7 +118,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the description of this UpdateGlobalConnectionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -129,7 +129,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the size of this UpdateGlobalConnectionBandwidth.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -140,7 +140,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the size of this UpdateGlobalConnectionBandwidth.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -151,7 +151,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the charge_mode of this UpdateGlobalConnectionBandwidth.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -162,7 +162,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the charge_mode of this UpdateGlobalConnectionBandwidth.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -173,7 +173,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the sla_level of this UpdateGlobalConnectionBandwidth.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -184,7 +184,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the sla_level of this UpdateGlobalConnectionBandwidth.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -195,7 +195,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def binding_service(self):
-        """Gets the binding_service of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the binding_service of this UpdateGlobalConnectionBandwidth.
 
         功能说明：绑定的服务类型。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络 - ALL: 所有实例类型
 
@@ -206,7 +206,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @binding_service.setter
     def binding_service(self, binding_service):
-        """Sets the binding_service of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the binding_service of this UpdateGlobalConnectionBandwidth.
 
         功能说明：绑定的服务类型。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络 - ALL: 所有实例类型
 
@@ -217,7 +217,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @property
     def spec_code_id(self):
-        """Gets the spec_code_id of this UpdateGlobalConnectionBandwidth.
+        r"""Gets the spec_code_id of this UpdateGlobalConnectionBandwidth.
 
         功能说明：线路规格编码UUID。
 
@@ -228,7 +228,7 @@ class UpdateGlobalConnectionBandwidth:
 
     @spec_code_id.setter
     def spec_code_id(self, spec_code_id):
-        """Sets the spec_code_id of this UpdateGlobalConnectionBandwidth.
+        r"""Sets the spec_code_id of this UpdateGlobalConnectionBandwidth.
 
         功能说明：线路规格编码UUID。
 

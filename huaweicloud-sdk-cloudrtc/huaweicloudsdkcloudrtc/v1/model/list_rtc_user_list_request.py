@@ -55,7 +55,7 @@ class ListRtcUserListRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, room_id=None, uid=None, nickname=None, region=None, isp=None, state=None, start_time=None, end_time=None, limit=None, offset=None, type=None):
-        """ListRtcUserListRequest
+        r"""ListRtcUserListRequest
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class ListRtcUserListRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcUserListRequest.
+        r"""Gets the authorization of this ListRtcUserListRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -157,7 +157,7 @@ class ListRtcUserListRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcUserListRequest.
+        r"""Sets the authorization of this ListRtcUserListRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -168,7 +168,7 @@ class ListRtcUserListRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcUserListRequest.
+        r"""Gets the x_sdk_date of this ListRtcUserListRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -179,7 +179,7 @@ class ListRtcUserListRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcUserListRequest.
+        r"""Sets the x_sdk_date of this ListRtcUserListRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -190,7 +190,7 @@ class ListRtcUserListRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcUserListRequest.
+        r"""Gets the x_project_id of this ListRtcUserListRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -201,7 +201,7 @@ class ListRtcUserListRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcUserListRequest.
+        r"""Sets the x_project_id of this ListRtcUserListRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -212,7 +212,7 @@ class ListRtcUserListRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcUserListRequest.
+        r"""Gets the project_id of this ListRtcUserListRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -223,7 +223,7 @@ class ListRtcUserListRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcUserListRequest.
+        r"""Sets the project_id of this ListRtcUserListRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -234,7 +234,7 @@ class ListRtcUserListRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcUserListRequest.
+        r"""Gets the app of this ListRtcUserListRequest.
 
         应用id 
 
@@ -245,7 +245,7 @@ class ListRtcUserListRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcUserListRequest.
+        r"""Sets the app of this ListRtcUserListRequest.
 
         应用id 
 
@@ -256,7 +256,7 @@ class ListRtcUserListRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcUserListRequest.
+        r"""Gets the room_id of this ListRtcUserListRequest.
 
         房间id 
 
@@ -267,7 +267,7 @@ class ListRtcUserListRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcUserListRequest.
+        r"""Sets the room_id of this ListRtcUserListRequest.
 
         房间id 
 
@@ -278,7 +278,7 @@ class ListRtcUserListRequest:
 
     @property
     def uid(self):
-        """Gets the uid of this ListRtcUserListRequest.
+        r"""Gets the uid of this ListRtcUserListRequest.
 
         用户id 
 
@@ -289,7 +289,7 @@ class ListRtcUserListRequest:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this ListRtcUserListRequest.
+        r"""Sets the uid of this ListRtcUserListRequest.
 
         用户id 
 
@@ -300,7 +300,7 @@ class ListRtcUserListRequest:
 
     @property
     def nickname(self):
-        """Gets the nickname of this ListRtcUserListRequest.
+        r"""Gets the nickname of this ListRtcUserListRequest.
 
         用户昵称 
 
@@ -311,7 +311,7 @@ class ListRtcUserListRequest:
 
     @nickname.setter
     def nickname(self, nickname):
-        """Sets the nickname of this ListRtcUserListRequest.
+        r"""Sets the nickname of this ListRtcUserListRequest.
 
         用户昵称 
 
@@ -322,7 +322,7 @@ class ListRtcUserListRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListRtcUserListRequest.
+        r"""Gets the region of this ListRtcUserListRequest.
 
         用户省份，支持省份名或缩写，如广东或者GD 
 
@@ -333,7 +333,7 @@ class ListRtcUserListRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListRtcUserListRequest.
+        r"""Sets the region of this ListRtcUserListRequest.
 
         用户省份，支持省份名或缩写，如广东或者GD 
 
@@ -344,7 +344,7 @@ class ListRtcUserListRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListRtcUserListRequest.
+        r"""Gets the isp of this ListRtcUserListRequest.
 
         用户接入运营商 
 
@@ -355,7 +355,7 @@ class ListRtcUserListRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListRtcUserListRequest.
+        r"""Sets the isp of this ListRtcUserListRequest.
 
         用户接入运营商 
 
@@ -366,7 +366,7 @@ class ListRtcUserListRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListRtcUserListRequest.
+        r"""Gets the state of this ListRtcUserListRequest.
 
         用户状态，取值如下： - FAIL：加入失败 - ONLINE：在线 - OFFLINE：离开 
 
@@ -377,7 +377,7 @@ class ListRtcUserListRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListRtcUserListRequest.
+        r"""Sets the state of this ListRtcUserListRequest.
 
         用户状态，取值如下： - FAIL：加入失败 - ONLINE：在线 - OFFLINE：离开 
 
@@ -388,7 +388,7 @@ class ListRtcUserListRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcUserListRequest.
+        r"""Gets the start_time of this ListRtcUserListRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
 
@@ -399,7 +399,7 @@ class ListRtcUserListRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcUserListRequest.
+        r"""Sets the start_time of this ListRtcUserListRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
 
@@ -410,7 +410,7 @@ class ListRtcUserListRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcUserListRequest.
+        r"""Gets the end_time of this ListRtcUserListRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认为当前时间。 
 
@@ -421,7 +421,7 @@ class ListRtcUserListRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcUserListRequest.
+        r"""Sets the end_time of this ListRtcUserListRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认为当前时间。 
 
@@ -432,7 +432,7 @@ class ListRtcUserListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRtcUserListRequest.
+        r"""Gets the limit of this ListRtcUserListRequest.
 
         查询结果限制 
 
@@ -443,7 +443,7 @@ class ListRtcUserListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRtcUserListRequest.
+        r"""Sets the limit of this ListRtcUserListRequest.
 
         查询结果限制 
 
@@ -454,7 +454,7 @@ class ListRtcUserListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRtcUserListRequest.
+        r"""Gets the offset of this ListRtcUserListRequest.
 
         查询偏移量 
 
@@ -465,7 +465,7 @@ class ListRtcUserListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRtcUserListRequest.
+        r"""Sets the offset of this ListRtcUserListRequest.
 
         查询偏移量 
 
@@ -476,7 +476,7 @@ class ListRtcUserListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListRtcUserListRequest.
+        r"""Gets the type of this ListRtcUserListRequest.
 
         查询模式，取值如下： - detail：会话级 - summary：用户级（默认） 
 
@@ -487,7 +487,7 @@ class ListRtcUserListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRtcUserListRequest.
+        r"""Sets the type of this ListRtcUserListRequest.
 
         查询模式，取值如下： - detail：会话级 - summary：用户级（默认） 
 

@@ -26,7 +26,7 @@ class ExecuteVideoMotionCaptureCommandResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """ExecuteVideoMotionCaptureCommandResponse
+        r"""ExecuteVideoMotionCaptureCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteVideoMotionCaptureCommandResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ExecuteVideoMotionCaptureCommandResponse.
+        r"""Gets the x_request_id of this ExecuteVideoMotionCaptureCommandResponse.
 
         :return: The x_request_id of this ExecuteVideoMotionCaptureCommandResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ExecuteVideoMotionCaptureCommandResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ExecuteVideoMotionCaptureCommandResponse.
+        r"""Sets the x_request_id of this ExecuteVideoMotionCaptureCommandResponse.
 
         :param x_request_id: The x_request_id of this ExecuteVideoMotionCaptureCommandResponse.
         :type x_request_id: str

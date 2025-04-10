@@ -33,7 +33,7 @@ class NovaServerInterfaceDetail:
     }
 
     def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None):
-        """NovaServerInterfaceDetail
+        r"""NovaServerInterfaceDetail
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class NovaServerInterfaceDetail:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this NovaServerInterfaceDetail.
+        r"""Gets the fixed_ips of this NovaServerInterfaceDetail.
 
         网卡私网IP信息列表。
 
@@ -77,7 +77,7 @@ class NovaServerInterfaceDetail:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this NovaServerInterfaceDetail.
+        r"""Sets the fixed_ips of this NovaServerInterfaceDetail.
 
         网卡私网IP信息列表。
 
@@ -88,7 +88,7 @@ class NovaServerInterfaceDetail:
 
     @property
     def mac_addr(self):
-        """Gets the mac_addr of this NovaServerInterfaceDetail.
+        r"""Gets the mac_addr of this NovaServerInterfaceDetail.
 
         网卡Mac地址信息。
 
@@ -99,7 +99,7 @@ class NovaServerInterfaceDetail:
 
     @mac_addr.setter
     def mac_addr(self, mac_addr):
-        """Sets the mac_addr of this NovaServerInterfaceDetail.
+        r"""Sets the mac_addr of this NovaServerInterfaceDetail.
 
         网卡Mac地址信息。
 
@@ -110,7 +110,7 @@ class NovaServerInterfaceDetail:
 
     @property
     def net_id(self):
-        """Gets the net_id of this NovaServerInterfaceDetail.
+        r"""Gets the net_id of this NovaServerInterfaceDetail.
 
         网卡端口所属网络ID。
 
@@ -121,7 +121,7 @@ class NovaServerInterfaceDetail:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this NovaServerInterfaceDetail.
+        r"""Sets the net_id of this NovaServerInterfaceDetail.
 
         网卡端口所属网络ID。
 
@@ -132,7 +132,7 @@ class NovaServerInterfaceDetail:
 
     @property
     def port_id(self):
-        """Gets the port_id of this NovaServerInterfaceDetail.
+        r"""Gets the port_id of this NovaServerInterfaceDetail.
 
         网卡端口ID。
 
@@ -143,7 +143,7 @@ class NovaServerInterfaceDetail:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NovaServerInterfaceDetail.
+        r"""Sets the port_id of this NovaServerInterfaceDetail.
 
         网卡端口ID。
 
@@ -154,7 +154,7 @@ class NovaServerInterfaceDetail:
 
     @property
     def port_state(self):
-        """Gets the port_state of this NovaServerInterfaceDetail.
+        r"""Gets the port_state of this NovaServerInterfaceDetail.
 
         网卡端口状态。
 
@@ -165,7 +165,7 @@ class NovaServerInterfaceDetail:
 
     @port_state.setter
     def port_state(self, port_state):
-        """Sets the port_state of this NovaServerInterfaceDetail.
+        r"""Sets the port_state of this NovaServerInterfaceDetail.
 
         网卡端口状态。
 

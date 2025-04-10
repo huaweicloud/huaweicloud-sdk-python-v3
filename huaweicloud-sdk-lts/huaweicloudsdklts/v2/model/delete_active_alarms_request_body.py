@@ -25,7 +25,7 @@ class DeleteActiveAlarmsRequestBody:
     }
 
     def __init__(self, events=None):
-        """DeleteActiveAlarmsRequestBody
+        r"""DeleteActiveAlarmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteActiveAlarmsRequestBody:
 
     @property
     def events(self):
-        """Gets the events of this DeleteActiveAlarmsRequestBody.
+        r"""Gets the events of this DeleteActiveAlarmsRequestBody.
 
         主题信息
 
@@ -53,7 +53,7 @@ class DeleteActiveAlarmsRequestBody:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this DeleteActiveAlarmsRequestBody.
+        r"""Sets the events of this DeleteActiveAlarmsRequestBody.
 
         主题信息
 

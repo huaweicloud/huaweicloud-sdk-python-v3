@@ -25,7 +25,7 @@ class AddAppConfigsTemplatesRequest:
     }
 
     def __init__(self, body=None):
-        """AddAppConfigsTemplatesRequest
+        r"""AddAppConfigsTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddAppConfigsTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAppConfigsTemplatesRequest.
+        r"""Gets the body of this AddAppConfigsTemplatesRequest.
 
         :return: The body of this AddAppConfigsTemplatesRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateAppConfigsTemplatesReqDTO`
@@ -52,7 +52,7 @@ class AddAppConfigsTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAppConfigsTemplatesRequest.
+        r"""Sets the body of this AddAppConfigsTemplatesRequest.
 
         :param body: The body of this AddAppConfigsTemplatesRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateAppConfigsTemplatesReqDTO`

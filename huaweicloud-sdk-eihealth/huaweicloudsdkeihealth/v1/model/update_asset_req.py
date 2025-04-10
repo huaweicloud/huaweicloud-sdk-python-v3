@@ -31,7 +31,7 @@ class UpdateAssetReq:
     }
 
     def __init__(self, summary=None, description=None, picture=None, labels=None):
-        """UpdateAssetReq
+        r"""UpdateAssetReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateAssetReq:
 
     @property
     def summary(self):
-        """Gets the summary of this UpdateAssetReq.
+        r"""Gets the summary of this UpdateAssetReq.
 
         短描述
 
@@ -75,7 +75,7 @@ class UpdateAssetReq:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this UpdateAssetReq.
+        r"""Sets the summary of this UpdateAssetReq.
 
         短描述
 
@@ -86,7 +86,7 @@ class UpdateAssetReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAssetReq.
+        r"""Gets the description of this UpdateAssetReq.
 
         长描述
 
@@ -97,7 +97,7 @@ class UpdateAssetReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAssetReq.
+        r"""Sets the description of this UpdateAssetReq.
 
         长描述
 
@@ -108,7 +108,7 @@ class UpdateAssetReq:
 
     @property
     def picture(self):
-        """Gets the picture of this UpdateAssetReq.
+        r"""Gets the picture of this UpdateAssetReq.
 
         封面图片base64编码
 
@@ -119,7 +119,7 @@ class UpdateAssetReq:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this UpdateAssetReq.
+        r"""Sets the picture of this UpdateAssetReq.
 
         封面图片base64编码
 
@@ -130,7 +130,7 @@ class UpdateAssetReq:
 
     @property
     def labels(self):
-        """Gets the labels of this UpdateAssetReq.
+        r"""Gets the labels of this UpdateAssetReq.
 
         标签列表
 
@@ -141,7 +141,7 @@ class UpdateAssetReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this UpdateAssetReq.
+        r"""Sets the labels of this UpdateAssetReq.
 
         标签列表
 

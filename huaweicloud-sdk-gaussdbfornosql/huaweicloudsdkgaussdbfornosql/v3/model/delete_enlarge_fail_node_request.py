@@ -27,7 +27,7 @@ class DeleteEnlargeFailNodeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteEnlargeFailNodeRequest
+        r"""DeleteEnlargeFailNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteEnlargeFailNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteEnlargeFailNodeRequest.
+        r"""Gets the instance_id of this DeleteEnlargeFailNodeRequest.
 
         实例ID，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -60,7 +60,7 @@ class DeleteEnlargeFailNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteEnlargeFailNodeRequest.
+        r"""Sets the instance_id of this DeleteEnlargeFailNodeRequest.
 
         实例ID，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -71,7 +71,7 @@ class DeleteEnlargeFailNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteEnlargeFailNodeRequest.
+        r"""Gets the body of this DeleteEnlargeFailNodeRequest.
 
         :return: The body of this DeleteEnlargeFailNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteEnlargeFailNodeRequestBody`
@@ -80,7 +80,7 @@ class DeleteEnlargeFailNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteEnlargeFailNodeRequest.
+        r"""Sets the body of this DeleteEnlargeFailNodeRequest.
 
         :param body: The body of this DeleteEnlargeFailNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteEnlargeFailNodeRequestBody`

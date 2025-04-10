@@ -29,7 +29,7 @@ class MfaDeviceMetadata:
     }
 
     def __init__(self, serial_number=None, user_id=None, enabled=None):
-        """MfaDeviceMetadata
+        r"""MfaDeviceMetadata
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MfaDeviceMetadata:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this MfaDeviceMetadata.
+        r"""Gets the serial_number of this MfaDeviceMetadata.
 
         MFA设备序列号。
 
@@ -65,7 +65,7 @@ class MfaDeviceMetadata:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this MfaDeviceMetadata.
+        r"""Sets the serial_number of this MfaDeviceMetadata.
 
         MFA设备序列号。
 
@@ -76,7 +76,7 @@ class MfaDeviceMetadata:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MfaDeviceMetadata.
+        r"""Gets the user_id of this MfaDeviceMetadata.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -87,7 +87,7 @@ class MfaDeviceMetadata:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MfaDeviceMetadata.
+        r"""Sets the user_id of this MfaDeviceMetadata.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -98,7 +98,7 @@ class MfaDeviceMetadata:
 
     @property
     def enabled(self):
-        """Gets the enabled of this MfaDeviceMetadata.
+        r"""Gets the enabled of this MfaDeviceMetadata.
 
         虚拟MFA设备是否开启。
 
@@ -109,7 +109,7 @@ class MfaDeviceMetadata:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this MfaDeviceMetadata.
+        r"""Sets the enabled of this MfaDeviceMetadata.
 
         虚拟MFA设备是否开启。
 

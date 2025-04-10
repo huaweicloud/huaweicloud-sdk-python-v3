@@ -27,7 +27,7 @@ class UpdateResWorkspaceRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateResWorkspaceRequestBody
+        r"""UpdateResWorkspaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateResWorkspaceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateResWorkspaceRequestBody.
+        r"""Gets the name of this UpdateResWorkspaceRequestBody.
 
         工作空间名称，1-64位数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
 
@@ -61,7 +61,7 @@ class UpdateResWorkspaceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateResWorkspaceRequestBody.
+        r"""Sets the name of this UpdateResWorkspaceRequestBody.
 
         工作空间名称，1-64位数字、字母、下划线、中划线组成，支持中文，不能以 - 结尾。
 
@@ -72,7 +72,7 @@ class UpdateResWorkspaceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateResWorkspaceRequestBody.
+        r"""Gets the description of this UpdateResWorkspaceRequestBody.
 
         描述。
 
@@ -83,7 +83,7 @@ class UpdateResWorkspaceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateResWorkspaceRequestBody.
+        r"""Sets the description of this UpdateResWorkspaceRequestBody.
 
         描述。
 

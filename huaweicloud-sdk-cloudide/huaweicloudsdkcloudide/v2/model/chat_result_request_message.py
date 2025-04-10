@@ -25,7 +25,7 @@ class ChatResultRequestMessage:
     }
 
     def __init__(self, result_id=None):
-        """ChatResultRequestMessage
+        r"""ChatResultRequestMessage
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChatResultRequestMessage:
 
     @property
     def result_id(self):
-        """Gets the result_id of this ChatResultRequestMessage.
+        r"""Gets the result_id of this ChatResultRequestMessage.
 
         request id
 
@@ -53,7 +53,7 @@ class ChatResultRequestMessage:
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this ChatResultRequestMessage.
+        r"""Sets the result_id of this ChatResultRequestMessage.
 
         request id
 

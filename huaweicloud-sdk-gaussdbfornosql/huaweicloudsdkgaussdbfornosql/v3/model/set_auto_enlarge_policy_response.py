@@ -24,7 +24,7 @@ class SetAutoEnlargePolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetAutoEnlargePolicyResponse
+        r"""SetAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 

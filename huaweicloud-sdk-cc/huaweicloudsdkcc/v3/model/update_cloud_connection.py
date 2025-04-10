@@ -27,7 +27,7 @@ class UpdateCloudConnection:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateCloudConnection
+        r"""UpdateCloudConnection
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateCloudConnection:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCloudConnection.
+        r"""Gets the name of this UpdateCloudConnection.
 
         实例名字。
 
@@ -61,7 +61,7 @@ class UpdateCloudConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCloudConnection.
+        r"""Sets the name of this UpdateCloudConnection.
 
         实例名字。
 
@@ -72,7 +72,7 @@ class UpdateCloudConnection:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCloudConnection.
+        r"""Gets the description of this UpdateCloudConnection.
 
         实例描述。不支持 <>。
 
@@ -83,7 +83,7 @@ class UpdateCloudConnection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCloudConnection.
+        r"""Sets the description of this UpdateCloudConnection.
 
         实例描述。不支持 <>。
 

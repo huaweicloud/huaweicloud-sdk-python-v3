@@ -27,7 +27,7 @@ class UpdateBandwidthPackageRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateBandwidthPackageRequest
+        r"""UpdateBandwidthPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBandwidthPackageRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateBandwidthPackageRequest.
+        r"""Gets the id of this UpdateBandwidthPackageRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateBandwidthPackageRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateBandwidthPackageRequest.
+        r"""Sets the id of this UpdateBandwidthPackageRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateBandwidthPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBandwidthPackageRequest.
+        r"""Gets the body of this UpdateBandwidthPackageRequest.
 
         :return: The body of this UpdateBandwidthPackageRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequestBody`
@@ -80,7 +80,7 @@ class UpdateBandwidthPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBandwidthPackageRequest.
+        r"""Sets the body of this UpdateBandwidthPackageRequest.
 
         :param body: The body of this UpdateBandwidthPackageRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequestBody`

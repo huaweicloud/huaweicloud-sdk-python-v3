@@ -28,7 +28,7 @@ class ShowLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, logs=None):
-        """ShowLogsResponse
+        r"""ShowLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowLogsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowLogsResponse.
+        r"""Gets the total of this ShowLogsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ShowLogsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowLogsResponse.
+        r"""Sets the total of this ShowLogsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ShowLogsResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ShowLogsResponse.
+        r"""Gets the logs of this ShowLogsResponse.
 
         日志列表数据
 
@@ -84,7 +84,7 @@ class ShowLogsResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ShowLogsResponse.
+        r"""Sets the logs of this ShowLogsResponse.
 
         日志列表数据
 

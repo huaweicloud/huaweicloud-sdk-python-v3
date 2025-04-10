@@ -27,7 +27,7 @@ class DelegatedServiceDto:
     }
 
     def __init__(self, service_principal=None, delegation_enabled_at=None):
-        """DelegatedServiceDto
+        r"""DelegatedServiceDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DelegatedServiceDto:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this DelegatedServiceDto.
+        r"""Gets the service_principal of this DelegatedServiceDto.
 
         服务主体的名称。
 
@@ -59,7 +59,7 @@ class DelegatedServiceDto:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this DelegatedServiceDto.
+        r"""Sets the service_principal of this DelegatedServiceDto.
 
         服务主体的名称。
 
@@ -70,7 +70,7 @@ class DelegatedServiceDto:
 
     @property
     def delegation_enabled_at(self):
-        """Gets the delegation_enabled_at of this DelegatedServiceDto.
+        r"""Gets the delegation_enabled_at of this DelegatedServiceDto.
 
         账号成为此服务的委托管理员的日期。
 
@@ -81,7 +81,7 @@ class DelegatedServiceDto:
 
     @delegation_enabled_at.setter
     def delegation_enabled_at(self, delegation_enabled_at):
-        """Sets the delegation_enabled_at of this DelegatedServiceDto.
+        r"""Sets the delegation_enabled_at of this DelegatedServiceDto.
 
         账号成为此服务的委托管理员的日期。
 

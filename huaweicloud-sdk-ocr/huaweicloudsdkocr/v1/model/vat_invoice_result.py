@@ -133,7 +133,7 @@ class VatInvoiceResult:
     }
 
     def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, province=None, city=None, confidence=None, text_location=None, belong_buyer_name=None, belong_seller_name=None, belong_vat_code=None, belong_number=None, belong_pages=None, belong_current_page=None, belong_remarks=None, belong_issue_date=None, sales_mark=None, belong_sum_amount=None, belong_sum_tax=None, belong_subtotal_amount=None, belong_subtotal_tax=None, belong_discount_amount=None, belong_discount_tax=None, belong_item_list=None, passenger_travel_item_list=None):
-        """VatInvoiceResult
+        r"""VatInvoiceResult
 
         The model defined in huaweicloud sdk
 
@@ -421,7 +421,7 @@ class VatInvoiceResult:
 
     @property
     def title(self):
-        """Gets the title of this VatInvoiceResult.
+        r"""Gets the title of this VatInvoiceResult.
 
         增值税发票标题 
 
@@ -432,7 +432,7 @@ class VatInvoiceResult:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this VatInvoiceResult.
+        r"""Sets the title of this VatInvoiceResult.
 
         增值税发票标题 
 
@@ -443,7 +443,7 @@ class VatInvoiceResult:
 
     @property
     def type(self):
-        """Gets the type of this VatInvoiceResult.
+        r"""Gets the type of this VatInvoiceResult.
 
         增值税发票类型，取值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
 
@@ -454,7 +454,7 @@ class VatInvoiceResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VatInvoiceResult.
+        r"""Sets the type of this VatInvoiceResult.
 
         增值税发票类型，取值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
 
@@ -465,7 +465,7 @@ class VatInvoiceResult:
 
     @property
     def invoice_tag(self):
-        """Gets the invoice_tag of this VatInvoiceResult.
+        r"""Gets the invoice_tag of this VatInvoiceResult.
 
         增值税发票左上角标志。取值包含：通行费、代开、成品油、收购、机动车、旅客运输服务。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -476,7 +476,7 @@ class VatInvoiceResult:
 
     @invoice_tag.setter
     def invoice_tag(self, invoice_tag):
-        """Sets the invoice_tag of this VatInvoiceResult.
+        r"""Sets the invoice_tag of this VatInvoiceResult.
 
         增值税发票左上角标志。取值包含：通行费、代开、成品油、收购、机动车、旅客运输服务。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -487,7 +487,7 @@ class VatInvoiceResult:
 
     @property
     def sum_amount(self):
-        """Gets the sum_amount of this VatInvoiceResult.
+        r"""Gets the sum_amount of this VatInvoiceResult.
 
         小计金额，当传入多页PDF时返回此字段。 
 
@@ -498,7 +498,7 @@ class VatInvoiceResult:
 
     @sum_amount.setter
     def sum_amount(self, sum_amount):
-        """Sets the sum_amount of this VatInvoiceResult.
+        r"""Sets the sum_amount of this VatInvoiceResult.
 
         小计金额，当传入多页PDF时返回此字段。 
 
@@ -509,7 +509,7 @@ class VatInvoiceResult:
 
     @property
     def sum_tax(self):
-        """Gets the sum_tax of this VatInvoiceResult.
+        r"""Gets the sum_tax of this VatInvoiceResult.
 
         小计税额，当传入多页PDF时返回此字段。 
 
@@ -520,7 +520,7 @@ class VatInvoiceResult:
 
     @sum_tax.setter
     def sum_tax(self, sum_tax):
-        """Sets the sum_tax of this VatInvoiceResult.
+        r"""Sets the sum_tax of this VatInvoiceResult.
 
         小计税额，当传入多页PDF时返回此字段。 
 
@@ -531,7 +531,7 @@ class VatInvoiceResult:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this VatInvoiceResult.
+        r"""Gets the serial_number of this VatInvoiceResult.
 
         发票联次。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -542,7 +542,7 @@ class VatInvoiceResult:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this VatInvoiceResult.
+        r"""Sets the serial_number of this VatInvoiceResult.
 
         发票联次。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -553,7 +553,7 @@ class VatInvoiceResult:
 
     @property
     def attribution(self):
-        """Gets the attribution of this VatInvoiceResult.
+        r"""Gets the attribution of this VatInvoiceResult.
 
         发票归属地。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -564,7 +564,7 @@ class VatInvoiceResult:
 
     @attribution.setter
     def attribution(self, attribution):
-        """Sets the attribution of this VatInvoiceResult.
+        r"""Sets the attribution of this VatInvoiceResult.
 
         发票归属地。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -575,7 +575,7 @@ class VatInvoiceResult:
 
     @property
     def supervision_seal(self):
-        """Gets the supervision_seal of this VatInvoiceResult.
+        r"""Gets the supervision_seal of this VatInvoiceResult.
 
         发票监制章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -586,7 +586,7 @@ class VatInvoiceResult:
 
     @supervision_seal.setter
     def supervision_seal(self, supervision_seal):
-        """Sets the supervision_seal of this VatInvoiceResult.
+        r"""Sets the supervision_seal of this VatInvoiceResult.
 
         发票监制章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -597,7 +597,7 @@ class VatInvoiceResult:
 
     @property
     def code(self):
-        """Gets the code of this VatInvoiceResult.
+        r"""Gets the code of this VatInvoiceResult.
 
         发票代码。 
 
@@ -608,7 +608,7 @@ class VatInvoiceResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this VatInvoiceResult.
+        r"""Sets the code of this VatInvoiceResult.
 
         发票代码。 
 
@@ -619,7 +619,7 @@ class VatInvoiceResult:
 
     @property
     def print_code(self):
-        """Gets the print_code of this VatInvoiceResult.
+        r"""Gets the print_code of this VatInvoiceResult.
 
         机打代码。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -630,7 +630,7 @@ class VatInvoiceResult:
 
     @print_code.setter
     def print_code(self, print_code):
-        """Sets the print_code of this VatInvoiceResult.
+        r"""Sets the print_code of this VatInvoiceResult.
 
         机打代码。 当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -641,7 +641,7 @@ class VatInvoiceResult:
 
     @property
     def machine_number(self):
-        """Gets the machine_number of this VatInvoiceResult.
+        r"""Gets the machine_number of this VatInvoiceResult.
 
         机器编号。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -652,7 +652,7 @@ class VatInvoiceResult:
 
     @machine_number.setter
     def machine_number(self, machine_number):
-        """Sets the machine_number of this VatInvoiceResult.
+        r"""Sets the machine_number of this VatInvoiceResult.
 
         机器编号。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -663,7 +663,7 @@ class VatInvoiceResult:
 
     @property
     def print_number(self):
-        """Gets the print_number of this VatInvoiceResult.
+        r"""Gets the print_number of this VatInvoiceResult.
 
         机打号码。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -674,7 +674,7 @@ class VatInvoiceResult:
 
     @print_number.setter
     def print_number(self, print_number):
-        """Sets the print_number of this VatInvoiceResult.
+        r"""Sets the print_number of this VatInvoiceResult.
 
         机打号码。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -685,7 +685,7 @@ class VatInvoiceResult:
 
     @property
     def check_code(self):
-        """Gets the check_code of this VatInvoiceResult.
+        r"""Gets the check_code of this VatInvoiceResult.
 
         发票校验码，特定类型增值税发票内不存在该信息时返回空字符串。 
 
@@ -696,7 +696,7 @@ class VatInvoiceResult:
 
     @check_code.setter
     def check_code(self, check_code):
-        """Sets the check_code of this VatInvoiceResult.
+        r"""Sets the check_code of this VatInvoiceResult.
 
         发票校验码，特定类型增值税发票内不存在该信息时返回空字符串。 
 
@@ -707,7 +707,7 @@ class VatInvoiceResult:
 
     @property
     def number(self):
-        """Gets the number of this VatInvoiceResult.
+        r"""Gets the number of this VatInvoiceResult.
 
         发票号码。 
 
@@ -718,7 +718,7 @@ class VatInvoiceResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this VatInvoiceResult.
+        r"""Sets the number of this VatInvoiceResult.
 
         发票号码。 
 
@@ -729,7 +729,7 @@ class VatInvoiceResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this VatInvoiceResult.
+        r"""Gets the issue_date of this VatInvoiceResult.
 
         开票日期。 
 
@@ -740,7 +740,7 @@ class VatInvoiceResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this VatInvoiceResult.
+        r"""Sets the issue_date of this VatInvoiceResult.
 
         开票日期。 
 
@@ -751,7 +751,7 @@ class VatInvoiceResult:
 
     @property
     def encryption_block(self):
-        """Gets the encryption_block of this VatInvoiceResult.
+        r"""Gets the encryption_block of this VatInvoiceResult.
 
         密码区。 
 
@@ -762,7 +762,7 @@ class VatInvoiceResult:
 
     @encryption_block.setter
     def encryption_block(self, encryption_block):
-        """Sets the encryption_block of this VatInvoiceResult.
+        r"""Sets the encryption_block of this VatInvoiceResult.
 
         密码区。 
 
@@ -773,7 +773,7 @@ class VatInvoiceResult:
 
     @property
     def buyer_name(self):
-        """Gets the buyer_name of this VatInvoiceResult.
+        r"""Gets the buyer_name of this VatInvoiceResult.
 
         购买方名称。 
 
@@ -784,7 +784,7 @@ class VatInvoiceResult:
 
     @buyer_name.setter
     def buyer_name(self, buyer_name):
-        """Sets the buyer_name of this VatInvoiceResult.
+        r"""Sets the buyer_name of this VatInvoiceResult.
 
         购买方名称。 
 
@@ -795,7 +795,7 @@ class VatInvoiceResult:
 
     @property
     def buyer_id(self):
-        """Gets the buyer_id of this VatInvoiceResult.
+        r"""Gets the buyer_id of this VatInvoiceResult.
 
         购买方纳税人识别号。 
 
@@ -806,7 +806,7 @@ class VatInvoiceResult:
 
     @buyer_id.setter
     def buyer_id(self, buyer_id):
-        """Sets the buyer_id of this VatInvoiceResult.
+        r"""Sets the buyer_id of this VatInvoiceResult.
 
         购买方纳税人识别号。 
 
@@ -817,7 +817,7 @@ class VatInvoiceResult:
 
     @property
     def buyer_address(self):
-        """Gets the buyer_address of this VatInvoiceResult.
+        r"""Gets the buyer_address of this VatInvoiceResult.
 
         购买方地址、电话。 
 
@@ -828,7 +828,7 @@ class VatInvoiceResult:
 
     @buyer_address.setter
     def buyer_address(self, buyer_address):
-        """Sets the buyer_address of this VatInvoiceResult.
+        r"""Sets the buyer_address of this VatInvoiceResult.
 
         购买方地址、电话。 
 
@@ -839,7 +839,7 @@ class VatInvoiceResult:
 
     @property
     def buyer_bank(self):
-        """Gets the buyer_bank of this VatInvoiceResult.
+        r"""Gets the buyer_bank of this VatInvoiceResult.
 
         购买方开户行及帐号。 
 
@@ -850,7 +850,7 @@ class VatInvoiceResult:
 
     @buyer_bank.setter
     def buyer_bank(self, buyer_bank):
-        """Sets the buyer_bank of this VatInvoiceResult.
+        r"""Sets the buyer_bank of this VatInvoiceResult.
 
         购买方开户行及帐号。 
 
@@ -861,7 +861,7 @@ class VatInvoiceResult:
 
     @property
     def seller_name(self):
-        """Gets the seller_name of this VatInvoiceResult.
+        r"""Gets the seller_name of this VatInvoiceResult.
 
         销售方名称。 
 
@@ -872,7 +872,7 @@ class VatInvoiceResult:
 
     @seller_name.setter
     def seller_name(self, seller_name):
-        """Sets the seller_name of this VatInvoiceResult.
+        r"""Sets the seller_name of this VatInvoiceResult.
 
         销售方名称。 
 
@@ -883,7 +883,7 @@ class VatInvoiceResult:
 
     @property
     def seller_id(self):
-        """Gets the seller_id of this VatInvoiceResult.
+        r"""Gets the seller_id of this VatInvoiceResult.
 
         销售方纳税人识别号。 
 
@@ -894,7 +894,7 @@ class VatInvoiceResult:
 
     @seller_id.setter
     def seller_id(self, seller_id):
-        """Sets the seller_id of this VatInvoiceResult.
+        r"""Sets the seller_id of this VatInvoiceResult.
 
         销售方纳税人识别号。 
 
@@ -905,7 +905,7 @@ class VatInvoiceResult:
 
     @property
     def seller_address(self):
-        """Gets the seller_address of this VatInvoiceResult.
+        r"""Gets the seller_address of this VatInvoiceResult.
 
         销售方地址、电话。 
 
@@ -916,7 +916,7 @@ class VatInvoiceResult:
 
     @seller_address.setter
     def seller_address(self, seller_address):
-        """Sets the seller_address of this VatInvoiceResult.
+        r"""Sets the seller_address of this VatInvoiceResult.
 
         销售方地址、电话。 
 
@@ -927,7 +927,7 @@ class VatInvoiceResult:
 
     @property
     def seller_bank(self):
-        """Gets the seller_bank of this VatInvoiceResult.
+        r"""Gets the seller_bank of this VatInvoiceResult.
 
         销售方开户行及帐号。 
 
@@ -938,7 +938,7 @@ class VatInvoiceResult:
 
     @seller_bank.setter
     def seller_bank(self, seller_bank):
-        """Sets the seller_bank of this VatInvoiceResult.
+        r"""Sets the seller_bank of this VatInvoiceResult.
 
         销售方开户行及帐号。 
 
@@ -949,7 +949,7 @@ class VatInvoiceResult:
 
     @property
     def subtotal_amount(self):
-        """Gets the subtotal_amount of this VatInvoiceResult.
+        r"""Gets the subtotal_amount of this VatInvoiceResult.
 
         合计金额。 
 
@@ -960,7 +960,7 @@ class VatInvoiceResult:
 
     @subtotal_amount.setter
     def subtotal_amount(self, subtotal_amount):
-        """Sets the subtotal_amount of this VatInvoiceResult.
+        r"""Sets the subtotal_amount of this VatInvoiceResult.
 
         合计金额。 
 
@@ -971,7 +971,7 @@ class VatInvoiceResult:
 
     @property
     def subtotal_tax(self):
-        """Gets the subtotal_tax of this VatInvoiceResult.
+        r"""Gets the subtotal_tax of this VatInvoiceResult.
 
         合计税额。 
 
@@ -982,7 +982,7 @@ class VatInvoiceResult:
 
     @subtotal_tax.setter
     def subtotal_tax(self, subtotal_tax):
-        """Sets the subtotal_tax of this VatInvoiceResult.
+        r"""Sets the subtotal_tax of this VatInvoiceResult.
 
         合计税额。 
 
@@ -993,7 +993,7 @@ class VatInvoiceResult:
 
     @property
     def total(self):
-        """Gets the total of this VatInvoiceResult.
+        r"""Gets the total of this VatInvoiceResult.
 
         价税合计。 
 
@@ -1004,7 +1004,7 @@ class VatInvoiceResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this VatInvoiceResult.
+        r"""Sets the total of this VatInvoiceResult.
 
         价税合计。 
 
@@ -1015,7 +1015,7 @@ class VatInvoiceResult:
 
     @property
     def total_in_words(self):
-        """Gets the total_in_words of this VatInvoiceResult.
+        r"""Gets the total_in_words of this VatInvoiceResult.
 
         价税合计（大写）。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1026,7 +1026,7 @@ class VatInvoiceResult:
 
     @total_in_words.setter
     def total_in_words(self, total_in_words):
-        """Sets the total_in_words of this VatInvoiceResult.
+        r"""Sets the total_in_words of this VatInvoiceResult.
 
         价税合计（大写）。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1037,7 +1037,7 @@ class VatInvoiceResult:
 
     @property
     def remarks(self):
-        """Gets the remarks of this VatInvoiceResult.
+        r"""Gets the remarks of this VatInvoiceResult.
 
         备注。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1048,7 +1048,7 @@ class VatInvoiceResult:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this VatInvoiceResult.
+        r"""Sets the remarks of this VatInvoiceResult.
 
         备注。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1059,7 +1059,7 @@ class VatInvoiceResult:
 
     @property
     def receiver(self):
-        """Gets the receiver of this VatInvoiceResult.
+        r"""Gets the receiver of this VatInvoiceResult.
 
         收款人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1070,7 +1070,7 @@ class VatInvoiceResult:
 
     @receiver.setter
     def receiver(self, receiver):
-        """Sets the receiver of this VatInvoiceResult.
+        r"""Sets the receiver of this VatInvoiceResult.
 
         收款人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1081,7 +1081,7 @@ class VatInvoiceResult:
 
     @property
     def reviewer(self):
-        """Gets the reviewer of this VatInvoiceResult.
+        r"""Gets the reviewer of this VatInvoiceResult.
 
         复核。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1092,7 +1092,7 @@ class VatInvoiceResult:
 
     @reviewer.setter
     def reviewer(self, reviewer):
-        """Sets the reviewer of this VatInvoiceResult.
+        r"""Sets the reviewer of this VatInvoiceResult.
 
         复核。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1103,7 +1103,7 @@ class VatInvoiceResult:
 
     @property
     def issuer(self):
-        """Gets the issuer of this VatInvoiceResult.
+        r"""Gets the issuer of this VatInvoiceResult.
 
         开票人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1114,7 +1114,7 @@ class VatInvoiceResult:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this VatInvoiceResult.
+        r"""Sets the issuer of this VatInvoiceResult.
 
         开票人。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1125,7 +1125,7 @@ class VatInvoiceResult:
 
     @property
     def seller_seal(self):
-        """Gets the seller_seal of this VatInvoiceResult.
+        r"""Gets the seller_seal of this VatInvoiceResult.
 
         销售方发票专用章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1136,7 +1136,7 @@ class VatInvoiceResult:
 
     @seller_seal.setter
     def seller_seal(self, seller_seal):
-        """Sets the seller_seal of this VatInvoiceResult.
+        r"""Sets the seller_seal of this VatInvoiceResult.
 
         销售方发票专用章。  当\"advanced_mode\"设置为\"true\"时才返回。 
 
@@ -1147,7 +1147,7 @@ class VatInvoiceResult:
 
     @property
     def item_list(self):
-        """Gets the item_list of this VatInvoiceResult.
+        r"""Gets the item_list of this VatInvoiceResult.
 
         货物或应税劳务列表。 
 
@@ -1158,7 +1158,7 @@ class VatInvoiceResult:
 
     @item_list.setter
     def item_list(self, item_list):
-        """Sets the item_list of this VatInvoiceResult.
+        r"""Sets the item_list of this VatInvoiceResult.
 
         货物或应税劳务列表。 
 
@@ -1169,7 +1169,7 @@ class VatInvoiceResult:
 
     @property
     def province(self):
-        """Gets the province of this VatInvoiceResult.
+        r"""Gets the province of this VatInvoiceResult.
 
         省。 
 
@@ -1180,7 +1180,7 @@ class VatInvoiceResult:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this VatInvoiceResult.
+        r"""Sets the province of this VatInvoiceResult.
 
         省。 
 
@@ -1191,7 +1191,7 @@ class VatInvoiceResult:
 
     @property
     def city(self):
-        """Gets the city of this VatInvoiceResult.
+        r"""Gets the city of this VatInvoiceResult.
 
         市。 
 
@@ -1202,7 +1202,7 @@ class VatInvoiceResult:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this VatInvoiceResult.
+        r"""Sets the city of this VatInvoiceResult.
 
         市。 
 
@@ -1213,7 +1213,7 @@ class VatInvoiceResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this VatInvoiceResult.
+        r"""Gets the confidence of this VatInvoiceResult.
 
         各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
 
@@ -1224,7 +1224,7 @@ class VatInvoiceResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this VatInvoiceResult.
+        r"""Sets the confidence of this VatInvoiceResult.
 
         各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
 
@@ -1235,7 +1235,7 @@ class VatInvoiceResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this VatInvoiceResult.
+        r"""Gets the text_location of this VatInvoiceResult.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当\"return_text_location\"设置为“true”时才返回。 
 
@@ -1246,7 +1246,7 @@ class VatInvoiceResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this VatInvoiceResult.
+        r"""Sets the text_location of this VatInvoiceResult.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当\"return_text_location\"设置为“true”时才返回。 
 
@@ -1257,7 +1257,7 @@ class VatInvoiceResult:
 
     @property
     def belong_buyer_name(self):
-        """Gets the belong_buyer_name of this VatInvoiceResult.
+        r"""Gets the belong_buyer_name of this VatInvoiceResult.
 
         销货清单的购买方名称。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1268,7 +1268,7 @@ class VatInvoiceResult:
 
     @belong_buyer_name.setter
     def belong_buyer_name(self, belong_buyer_name):
-        """Sets the belong_buyer_name of this VatInvoiceResult.
+        r"""Sets the belong_buyer_name of this VatInvoiceResult.
 
         销货清单的购买方名称。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1279,7 +1279,7 @@ class VatInvoiceResult:
 
     @property
     def belong_seller_name(self):
-        """Gets the belong_seller_name of this VatInvoiceResult.
+        r"""Gets the belong_seller_name of this VatInvoiceResult.
 
         销货清单的销售方名称。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1290,7 +1290,7 @@ class VatInvoiceResult:
 
     @belong_seller_name.setter
     def belong_seller_name(self, belong_seller_name):
-        """Sets the belong_seller_name of this VatInvoiceResult.
+        r"""Sets the belong_seller_name of this VatInvoiceResult.
 
         销货清单的销售方名称。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1301,7 +1301,7 @@ class VatInvoiceResult:
 
     @property
     def belong_vat_code(self):
-        """Gets the belong_vat_code of this VatInvoiceResult.
+        r"""Gets the belong_vat_code of this VatInvoiceResult.
 
         所属的增值税发票代码。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1312,7 +1312,7 @@ class VatInvoiceResult:
 
     @belong_vat_code.setter
     def belong_vat_code(self, belong_vat_code):
-        """Sets the belong_vat_code of this VatInvoiceResult.
+        r"""Sets the belong_vat_code of this VatInvoiceResult.
 
         所属的增值税发票代码。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1323,7 +1323,7 @@ class VatInvoiceResult:
 
     @property
     def belong_number(self):
-        """Gets the belong_number of this VatInvoiceResult.
+        r"""Gets the belong_number of this VatInvoiceResult.
 
         销货清单的开票号码。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1334,7 +1334,7 @@ class VatInvoiceResult:
 
     @belong_number.setter
     def belong_number(self, belong_number):
-        """Sets the belong_number of this VatInvoiceResult.
+        r"""Sets the belong_number of this VatInvoiceResult.
 
         销货清单的开票号码。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1345,7 +1345,7 @@ class VatInvoiceResult:
 
     @property
     def belong_pages(self):
-        """Gets the belong_pages of this VatInvoiceResult.
+        r"""Gets the belong_pages of this VatInvoiceResult.
 
         销货清单的总页码数。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1356,7 +1356,7 @@ class VatInvoiceResult:
 
     @belong_pages.setter
     def belong_pages(self, belong_pages):
-        """Sets the belong_pages of this VatInvoiceResult.
+        r"""Sets the belong_pages of this VatInvoiceResult.
 
         销货清单的总页码数。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1367,7 +1367,7 @@ class VatInvoiceResult:
 
     @property
     def belong_current_page(self):
-        """Gets the belong_current_page of this VatInvoiceResult.
+        r"""Gets the belong_current_page of this VatInvoiceResult.
 
         销货清单的当前页码。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1378,7 +1378,7 @@ class VatInvoiceResult:
 
     @belong_current_page.setter
     def belong_current_page(self, belong_current_page):
-        """Sets the belong_current_page of this VatInvoiceResult.
+        r"""Sets the belong_current_page of this VatInvoiceResult.
 
         销货清单的当前页码。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1389,7 +1389,7 @@ class VatInvoiceResult:
 
     @property
     def belong_remarks(self):
-        """Gets the belong_remarks of this VatInvoiceResult.
+        r"""Gets the belong_remarks of this VatInvoiceResult.
 
         销货清单的备注。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1400,7 +1400,7 @@ class VatInvoiceResult:
 
     @belong_remarks.setter
     def belong_remarks(self, belong_remarks):
-        """Sets the belong_remarks of this VatInvoiceResult.
+        r"""Sets the belong_remarks of this VatInvoiceResult.
 
         销货清单的备注。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1411,7 +1411,7 @@ class VatInvoiceResult:
 
     @property
     def belong_issue_date(self):
-        """Gets the belong_issue_date of this VatInvoiceResult.
+        r"""Gets the belong_issue_date of this VatInvoiceResult.
 
         销货清单的填开日期。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1422,7 +1422,7 @@ class VatInvoiceResult:
 
     @belong_issue_date.setter
     def belong_issue_date(self, belong_issue_date):
-        """Sets the belong_issue_date of this VatInvoiceResult.
+        r"""Sets the belong_issue_date of this VatInvoiceResult.
 
         销货清单的填开日期。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1433,7 +1433,7 @@ class VatInvoiceResult:
 
     @property
     def sales_mark(self):
-        """Gets the sales_mark of this VatInvoiceResult.
+        r"""Gets the sales_mark of this VatInvoiceResult.
 
         是否是销货清单，可选值为： - true：输入图片是销货清单。 - false：输入图片不是销货清单。 
 
@@ -1444,7 +1444,7 @@ class VatInvoiceResult:
 
     @sales_mark.setter
     def sales_mark(self, sales_mark):
-        """Sets the sales_mark of this VatInvoiceResult.
+        r"""Sets the sales_mark of this VatInvoiceResult.
 
         是否是销货清单，可选值为： - true：输入图片是销货清单。 - false：输入图片不是销货清单。 
 
@@ -1455,7 +1455,7 @@ class VatInvoiceResult:
 
     @property
     def belong_sum_amount(self):
-        """Gets the belong_sum_amount of this VatInvoiceResult.
+        r"""Gets the belong_sum_amount of this VatInvoiceResult.
 
         销货清单的小计金额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1466,7 +1466,7 @@ class VatInvoiceResult:
 
     @belong_sum_amount.setter
     def belong_sum_amount(self, belong_sum_amount):
-        """Sets the belong_sum_amount of this VatInvoiceResult.
+        r"""Sets the belong_sum_amount of this VatInvoiceResult.
 
         销货清单的小计金额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1477,7 +1477,7 @@ class VatInvoiceResult:
 
     @property
     def belong_sum_tax(self):
-        """Gets the belong_sum_tax of this VatInvoiceResult.
+        r"""Gets the belong_sum_tax of this VatInvoiceResult.
 
         销货清单的小计税额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1488,7 +1488,7 @@ class VatInvoiceResult:
 
     @belong_sum_tax.setter
     def belong_sum_tax(self, belong_sum_tax):
-        """Sets the belong_sum_tax of this VatInvoiceResult.
+        r"""Sets the belong_sum_tax of this VatInvoiceResult.
 
         销货清单的小计税额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1499,7 +1499,7 @@ class VatInvoiceResult:
 
     @property
     def belong_subtotal_amount(self):
-        """Gets the belong_subtotal_amount of this VatInvoiceResult.
+        r"""Gets the belong_subtotal_amount of this VatInvoiceResult.
 
         销货清单的总计或者合计金额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1510,7 +1510,7 @@ class VatInvoiceResult:
 
     @belong_subtotal_amount.setter
     def belong_subtotal_amount(self, belong_subtotal_amount):
-        """Sets the belong_subtotal_amount of this VatInvoiceResult.
+        r"""Sets the belong_subtotal_amount of this VatInvoiceResult.
 
         销货清单的总计或者合计金额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1521,7 +1521,7 @@ class VatInvoiceResult:
 
     @property
     def belong_subtotal_tax(self):
-        """Gets the belong_subtotal_tax of this VatInvoiceResult.
+        r"""Gets the belong_subtotal_tax of this VatInvoiceResult.
 
         销货清单的总计税额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1532,7 +1532,7 @@ class VatInvoiceResult:
 
     @belong_subtotal_tax.setter
     def belong_subtotal_tax(self, belong_subtotal_tax):
-        """Sets the belong_subtotal_tax of this VatInvoiceResult.
+        r"""Sets the belong_subtotal_tax of this VatInvoiceResult.
 
         销货清单的总计税额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1543,7 +1543,7 @@ class VatInvoiceResult:
 
     @property
     def belong_discount_amount(self):
-        """Gets the belong_discount_amount of this VatInvoiceResult.
+        r"""Gets the belong_discount_amount of this VatInvoiceResult.
 
         销货清单的折扣金额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1554,7 +1554,7 @@ class VatInvoiceResult:
 
     @belong_discount_amount.setter
     def belong_discount_amount(self, belong_discount_amount):
-        """Sets the belong_discount_amount of this VatInvoiceResult.
+        r"""Sets the belong_discount_amount of this VatInvoiceResult.
 
         销货清单的折扣金额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1565,7 +1565,7 @@ class VatInvoiceResult:
 
     @property
     def belong_discount_tax(self):
-        """Gets the belong_discount_tax of this VatInvoiceResult.
+        r"""Gets the belong_discount_tax of this VatInvoiceResult.
 
         销货清单的折扣税额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1576,7 +1576,7 @@ class VatInvoiceResult:
 
     @belong_discount_tax.setter
     def belong_discount_tax(self, belong_discount_tax):
-        """Sets the belong_discount_tax of this VatInvoiceResult.
+        r"""Sets the belong_discount_tax of this VatInvoiceResult.
 
         销货清单的折扣税额。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1587,7 +1587,7 @@ class VatInvoiceResult:
 
     @property
     def belong_item_list(self):
-        """Gets the belong_item_list of this VatInvoiceResult.
+        r"""Gets the belong_item_list of this VatInvoiceResult.
 
         销货清单的货物（劳务）名称列表。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1598,7 +1598,7 @@ class VatInvoiceResult:
 
     @belong_item_list.setter
     def belong_item_list(self, belong_item_list):
-        """Sets the belong_item_list of this VatInvoiceResult.
+        r"""Sets the belong_item_list of this VatInvoiceResult.
 
         销货清单的货物（劳务）名称列表。 当传入图片为发票销货清单时返回此字段。 
 
@@ -1609,7 +1609,7 @@ class VatInvoiceResult:
 
     @property
     def passenger_travel_item_list(self):
-        """Gets the passenger_travel_item_list of this VatInvoiceResult.
+        r"""Gets the passenger_travel_item_list of this VatInvoiceResult.
 
         旅客运输服务的出行信息列表。 当传入图片为旅客运输服务发票时返回此字段。 
 
@@ -1620,7 +1620,7 @@ class VatInvoiceResult:
 
     @passenger_travel_item_list.setter
     def passenger_travel_item_list(self, passenger_travel_item_list):
-        """Sets the passenger_travel_item_list of this VatInvoiceResult.
+        r"""Sets the passenger_travel_item_list of this VatInvoiceResult.
 
         旅客运输服务的出行信息列表。 当传入图片为旅客运输服务发票时返回此字段。 
 

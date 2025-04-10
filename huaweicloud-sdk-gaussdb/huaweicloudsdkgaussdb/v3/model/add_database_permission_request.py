@@ -29,7 +29,7 @@ class AddDatabasePermissionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """AddDatabasePermissionRequest
+        r"""AddDatabasePermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddDatabasePermissionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AddDatabasePermissionRequest.
+        r"""Gets the x_language of this AddDatabasePermissionRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class AddDatabasePermissionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AddDatabasePermissionRequest.
+        r"""Sets the x_language of this AddDatabasePermissionRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class AddDatabasePermissionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddDatabasePermissionRequest.
+        r"""Gets the instance_id of this AddDatabasePermissionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class AddDatabasePermissionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddDatabasePermissionRequest.
+        r"""Sets the instance_id of this AddDatabasePermissionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class AddDatabasePermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDatabasePermissionRequest.
+        r"""Gets the body of this AddDatabasePermissionRequest.
 
         :return: The body of this AddDatabasePermissionRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.GrantDatabasePermissionRequestBody`
@@ -109,7 +109,7 @@ class AddDatabasePermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDatabasePermissionRequest.
+        r"""Sets the body of this AddDatabasePermissionRequest.
 
         :param body: The body of this AddDatabasePermissionRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.GrantDatabasePermissionRequestBody`

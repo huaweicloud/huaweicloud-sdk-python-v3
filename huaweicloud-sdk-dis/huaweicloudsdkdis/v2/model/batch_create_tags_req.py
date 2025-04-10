@@ -27,7 +27,7 @@ class BatchCreateTagsReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateTagsReq
+        r"""BatchCreateTagsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateTagsReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateTagsReq.
+        r"""Gets the action of this BatchCreateTagsReq.
 
         操作标识：仅限于create  - create：批量创建
 
@@ -59,7 +59,7 @@ class BatchCreateTagsReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateTagsReq.
+        r"""Sets the action of this BatchCreateTagsReq.
 
         操作标识：仅限于create  - create：批量创建
 
@@ -70,7 +70,7 @@ class BatchCreateTagsReq:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateTagsReq.
+        r"""Gets the tags of this BatchCreateTagsReq.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class BatchCreateTagsReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateTagsReq.
+        r"""Sets the tags of this BatchCreateTagsReq.
 
         标签列表。
 

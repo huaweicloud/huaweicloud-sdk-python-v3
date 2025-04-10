@@ -29,7 +29,7 @@ class RevokeRolesRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """RevokeRolesRequest
+        r"""RevokeRolesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RevokeRolesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RevokeRolesRequest.
+        r"""Gets the instance_id of this RevokeRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -66,7 +66,7 @@ class RevokeRolesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RevokeRolesRequest.
+        r"""Sets the instance_id of this RevokeRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -77,7 +77,7 @@ class RevokeRolesRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RevokeRolesRequest.
+        r"""Gets the user_name of this RevokeRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -88,7 +88,7 @@ class RevokeRolesRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RevokeRolesRequest.
+        r"""Sets the user_name of this RevokeRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -99,7 +99,7 @@ class RevokeRolesRequest:
 
     @property
     def body(self):
-        """Gets the body of this RevokeRolesRequest.
+        r"""Gets the body of this RevokeRolesRequest.
 
         :return: The body of this RevokeRolesRequest.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.RoleInfoInput`]
@@ -108,7 +108,7 @@ class RevokeRolesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokeRolesRequest.
+        r"""Sets the body of this RevokeRolesRequest.
 
         :param body: The body of this RevokeRolesRequest.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.RoleInfoInput`]

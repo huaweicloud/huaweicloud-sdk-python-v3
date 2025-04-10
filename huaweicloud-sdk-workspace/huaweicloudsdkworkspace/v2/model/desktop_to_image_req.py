@@ -39,7 +39,7 @@ class DesktopToImageReq:
     }
 
     def __init__(self, image_name=None, image_description=None, desktop_id=None, execute_sysprep=None, image_tags=None, enterprise_project_id=None, max_ram=None, min_ram=None):
-        """DesktopToImageReq
+        r"""DesktopToImageReq
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class DesktopToImageReq:
 
     @property
     def image_name(self):
-        """Gets the image_name of this DesktopToImageReq.
+        r"""Gets the image_name of this DesktopToImageReq.
 
         镜像名称。
 
@@ -101,7 +101,7 @@ class DesktopToImageReq:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this DesktopToImageReq.
+        r"""Sets the image_name of this DesktopToImageReq.
 
         镜像名称。
 
@@ -112,7 +112,7 @@ class DesktopToImageReq:
 
     @property
     def image_description(self):
-        """Gets the image_description of this DesktopToImageReq.
+        r"""Gets the image_description of this DesktopToImageReq.
 
         镜像描述信息。
 
@@ -123,7 +123,7 @@ class DesktopToImageReq:
 
     @image_description.setter
     def image_description(self, image_description):
-        """Sets the image_description of this DesktopToImageReq.
+        r"""Sets the image_description of this DesktopToImageReq.
 
         镜像描述信息。
 
@@ -134,7 +134,7 @@ class DesktopToImageReq:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopToImageReq.
+        r"""Gets the desktop_id of this DesktopToImageReq.
 
         用于制作镜像的云桌面的InstanceID。
 
@@ -145,7 +145,7 @@ class DesktopToImageReq:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopToImageReq.
+        r"""Sets the desktop_id of this DesktopToImageReq.
 
         用于制作镜像的云桌面的InstanceID。
 
@@ -156,7 +156,7 @@ class DesktopToImageReq:
 
     @property
     def execute_sysprep(self):
-        """Gets the execute_sysprep of this DesktopToImageReq.
+        r"""Gets the execute_sysprep of this DesktopToImageReq.
 
         是否执行系统封装步骤。
 
@@ -167,7 +167,7 @@ class DesktopToImageReq:
 
     @execute_sysprep.setter
     def execute_sysprep(self, execute_sysprep):
-        """Sets the execute_sysprep of this DesktopToImageReq.
+        r"""Sets the execute_sysprep of this DesktopToImageReq.
 
         是否执行系统封装步骤。
 
@@ -178,7 +178,7 @@ class DesktopToImageReq:
 
     @property
     def image_tags(self):
-        """Gets the image_tags of this DesktopToImageReq.
+        r"""Gets the image_tags of this DesktopToImageReq.
 
         镜像标签列表。
 
@@ -189,7 +189,7 @@ class DesktopToImageReq:
 
     @image_tags.setter
     def image_tags(self, image_tags):
-        """Sets the image_tags of this DesktopToImageReq.
+        r"""Sets the image_tags of this DesktopToImageReq.
 
         镜像标签列表。
 
@@ -200,7 +200,7 @@ class DesktopToImageReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DesktopToImageReq.
+        r"""Gets the enterprise_project_id of this DesktopToImageReq.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -211,7 +211,7 @@ class DesktopToImageReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DesktopToImageReq.
+        r"""Sets the enterprise_project_id of this DesktopToImageReq.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -222,7 +222,7 @@ class DesktopToImageReq:
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this DesktopToImageReq.
+        r"""Gets the max_ram of this DesktopToImageReq.
 
         表示镜像支持的最大内存，单位为MB。
 
@@ -233,7 +233,7 @@ class DesktopToImageReq:
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this DesktopToImageReq.
+        r"""Sets the max_ram of this DesktopToImageReq.
 
         表示镜像支持的最大内存，单位为MB。
 
@@ -244,7 +244,7 @@ class DesktopToImageReq:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this DesktopToImageReq.
+        r"""Gets the min_ram of this DesktopToImageReq.
 
         表示镜像支持的最小内存，单位为MB，默认为0，表示不受限制。
 
@@ -255,7 +255,7 @@ class DesktopToImageReq:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this DesktopToImageReq.
+        r"""Sets the min_ram of this DesktopToImageReq.
 
         表示镜像支持的最小内存，单位为MB，默认为0，表示不受限制。
 

@@ -35,7 +35,7 @@ class ListDesktopPoolsRequest:
     }
 
     def __init__(self, name=None, type=None, enterprise_project_id=None, offset=None, limit=None, in_maintenance_mode=None):
-        """ListDesktopPoolsRequest
+        r"""ListDesktopPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListDesktopPoolsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDesktopPoolsRequest.
+        r"""Gets the name of this ListDesktopPoolsRequest.
 
         桌面池名称。
 
@@ -89,7 +89,7 @@ class ListDesktopPoolsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDesktopPoolsRequest.
+        r"""Sets the name of this ListDesktopPoolsRequest.
 
         桌面池名称。
 
@@ -100,7 +100,7 @@ class ListDesktopPoolsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDesktopPoolsRequest.
+        r"""Gets the type of this ListDesktopPoolsRequest.
 
         桌面池类型，DYNAMIC：动态池，STATIC：静态池。
 
@@ -111,7 +111,7 @@ class ListDesktopPoolsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDesktopPoolsRequest.
+        r"""Sets the type of this ListDesktopPoolsRequest.
 
         桌面池类型，DYNAMIC：动态池，STATIC：静态池。
 
@@ -122,7 +122,7 @@ class ListDesktopPoolsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDesktopPoolsRequest.
+        r"""Gets the enterprise_project_id of this ListDesktopPoolsRequest.
 
         企业项目ID
 
@@ -133,7 +133,7 @@ class ListDesktopPoolsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDesktopPoolsRequest.
+        r"""Sets the enterprise_project_id of this ListDesktopPoolsRequest.
 
         企业项目ID
 
@@ -144,7 +144,7 @@ class ListDesktopPoolsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopPoolsRequest.
+        r"""Gets the offset of this ListDesktopPoolsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -155,7 +155,7 @@ class ListDesktopPoolsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopPoolsRequest.
+        r"""Sets the offset of this ListDesktopPoolsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -166,7 +166,7 @@ class ListDesktopPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopPoolsRequest.
+        r"""Gets the limit of this ListDesktopPoolsRequest.
 
         用于分页查询，取值范围0-1000，默认值1000。
 
@@ -177,7 +177,7 @@ class ListDesktopPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopPoolsRequest.
+        r"""Sets the limit of this ListDesktopPoolsRequest.
 
         用于分页查询，取值范围0-1000，默认值1000。
 
@@ -188,7 +188,7 @@ class ListDesktopPoolsRequest:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this ListDesktopPoolsRequest.
+        r"""Gets the in_maintenance_mode of this ListDesktopPoolsRequest.
 
         按照维护状态过滤
 
@@ -199,7 +199,7 @@ class ListDesktopPoolsRequest:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this ListDesktopPoolsRequest.
+        r"""Sets the in_maintenance_mode of this ListDesktopPoolsRequest.
 
         按照维护状态过滤
 

@@ -27,7 +27,7 @@ class BatchAddMsdtcsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchAddMsdtcsRequest
+        r"""BatchAddMsdtcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddMsdtcsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchAddMsdtcsRequest.
+        r"""Gets the instance_id of this BatchAddMsdtcsRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class BatchAddMsdtcsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchAddMsdtcsRequest.
+        r"""Sets the instance_id of this BatchAddMsdtcsRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class BatchAddMsdtcsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddMsdtcsRequest.
+        r"""Gets the body of this BatchAddMsdtcsRequest.
 
         :return: The body of this BatchAddMsdtcsRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.AddMsdtcRequestBody`
@@ -80,7 +80,7 @@ class BatchAddMsdtcsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddMsdtcsRequest.
+        r"""Sets the body of this BatchAddMsdtcsRequest.
 
         :param body: The body of this BatchAddMsdtcsRequest.
         :type body: :class:`huaweicloudsdkrds.v3.AddMsdtcRequestBody`

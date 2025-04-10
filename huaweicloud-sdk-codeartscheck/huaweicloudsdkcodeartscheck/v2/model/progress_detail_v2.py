@@ -27,7 +27,7 @@ class ProgressDetailV2:
     }
 
     def __init__(self, ratio=None, info=None):
-        """ProgressDetailV2
+        r"""ProgressDetailV2
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProgressDetailV2:
 
     @property
     def ratio(self):
-        """Gets the ratio of this ProgressDetailV2.
+        r"""Gets the ratio of this ProgressDetailV2.
 
         进度百分比
 
@@ -61,7 +61,7 @@ class ProgressDetailV2:
 
     @ratio.setter
     def ratio(self, ratio):
-        """Sets the ratio of this ProgressDetailV2.
+        r"""Sets the ratio of this ProgressDetailV2.
 
         进度百分比
 
@@ -72,7 +72,7 @@ class ProgressDetailV2:
 
     @property
     def info(self):
-        """Gets the info of this ProgressDetailV2.
+        r"""Gets the info of this ProgressDetailV2.
 
         中文信息
 
@@ -83,7 +83,7 @@ class ProgressDetailV2:
 
     @info.setter
     def info(self, info):
-        """Sets the info of this ProgressDetailV2.
+        r"""Sets the info of this ProgressDetailV2.
 
         中文信息
 

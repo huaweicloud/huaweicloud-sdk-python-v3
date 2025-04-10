@@ -27,7 +27,7 @@ class MigrateSubNetworkInterfaceOption:
     }
 
     def __init__(self, parent_id=None, sub_network_interfaces=None):
-        """MigrateSubNetworkInterfaceOption
+        r"""MigrateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MigrateSubNetworkInterfaceOption:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this MigrateSubNetworkInterfaceOption.
+        r"""Gets the parent_id of this MigrateSubNetworkInterfaceOption.
 
         目的宿主网卡ID
 
@@ -59,7 +59,7 @@ class MigrateSubNetworkInterfaceOption:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this MigrateSubNetworkInterfaceOption.
+        r"""Sets the parent_id of this MigrateSubNetworkInterfaceOption.
 
         目的宿主网卡ID
 
@@ -70,7 +70,7 @@ class MigrateSubNetworkInterfaceOption:
 
     @property
     def sub_network_interfaces(self):
-        """Gets the sub_network_interfaces of this MigrateSubNetworkInterfaceOption.
+        r"""Gets the sub_network_interfaces of this MigrateSubNetworkInterfaceOption.
 
         待迁移辅助弹性网卡列表
 
@@ -81,7 +81,7 @@ class MigrateSubNetworkInterfaceOption:
 
     @sub_network_interfaces.setter
     def sub_network_interfaces(self, sub_network_interfaces):
-        """Sets the sub_network_interfaces of this MigrateSubNetworkInterfaceOption.
+        r"""Sets the sub_network_interfaces of this MigrateSubNetworkInterfaceOption.
 
         待迁移辅助弹性网卡列表
 

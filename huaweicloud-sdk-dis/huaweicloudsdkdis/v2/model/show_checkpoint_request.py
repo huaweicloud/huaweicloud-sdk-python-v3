@@ -31,7 +31,7 @@ class ShowCheckpointRequest:
     }
 
     def __init__(self, stream_name=None, partition_id=None, app_name=None, checkpoint_type=None):
-        """ShowCheckpointRequest
+        r"""ShowCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowCheckpointRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowCheckpointRequest.
+        r"""Gets the stream_name of this ShowCheckpointRequest.
 
         该Checkpoint所属的通道名称。
 
@@ -71,7 +71,7 @@ class ShowCheckpointRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowCheckpointRequest.
+        r"""Sets the stream_name of this ShowCheckpointRequest.
 
         该Checkpoint所属的通道名称。
 
@@ -82,7 +82,7 @@ class ShowCheckpointRequest:
 
     @property
     def partition_id(self):
-        """Gets the partition_id of this ShowCheckpointRequest.
+        r"""Gets the partition_id of this ShowCheckpointRequest.
 
         该Checkpoint所属的通道分区标识符。  可定义为如下两种样式：  - shardId-0000000000 - 0  比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -93,7 +93,7 @@ class ShowCheckpointRequest:
 
     @partition_id.setter
     def partition_id(self, partition_id):
-        """Sets the partition_id of this ShowCheckpointRequest.
+        r"""Sets the partition_id of this ShowCheckpointRequest.
 
         该Checkpoint所属的通道分区标识符。  可定义为如下两种样式：  - shardId-0000000000 - 0  比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -104,7 +104,7 @@ class ShowCheckpointRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowCheckpointRequest.
+        r"""Gets the app_name of this ShowCheckpointRequest.
 
         该Checkpoint关联App名称。
 
@@ -115,7 +115,7 @@ class ShowCheckpointRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowCheckpointRequest.
+        r"""Sets the app_name of this ShowCheckpointRequest.
 
         该Checkpoint关联App名称。
 
@@ -126,7 +126,7 @@ class ShowCheckpointRequest:
 
     @property
     def checkpoint_type(self):
-        """Gets the checkpoint_type of this ShowCheckpointRequest.
+        r"""Gets the checkpoint_type of this ShowCheckpointRequest.
 
         Checkpoint类型。  - LAST_READ：在数据库中只记录序列号。
 
@@ -137,7 +137,7 @@ class ShowCheckpointRequest:
 
     @checkpoint_type.setter
     def checkpoint_type(self, checkpoint_type):
-        """Sets the checkpoint_type of this ShowCheckpointRequest.
+        r"""Sets the checkpoint_type of this ShowCheckpointRequest.
 
         Checkpoint类型。  - LAST_READ：在数据库中只记录序列号。
 

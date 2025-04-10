@@ -30,7 +30,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     }
 
     def __init__(self, name=None, status=None, server_id=None):
-        """ShowInstanceStatusResponse
+        r"""ShowInstanceStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceStatusResponse.
+        r"""Gets the name of this ShowInstanceStatusResponse.
 
         云堡垒机实例名称。
 
@@ -69,7 +69,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceStatusResponse.
+        r"""Sets the name of this ShowInstanceStatusResponse.
 
         云堡垒机实例名称。
 
@@ -80,7 +80,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceStatusResponse.
+        r"""Gets the status of this ShowInstanceStatusResponse.
 
         堡垒机实例状态。 - POWERING_ON：正在开启 - POWERING_OFF：正在关闭 - DELETE_WAITE：等待删除 - REBOOTING：重启中 - RESIZE：变更中 - UPGRADING：升级中 - FROZEN：冻结 - ACTIVE：运行
 
@@ -91,7 +91,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceStatusResponse.
+        r"""Sets the status of this ShowInstanceStatusResponse.
 
         堡垒机实例状态。 - POWERING_ON：正在开启 - POWERING_OFF：正在关闭 - DELETE_WAITE：等待删除 - REBOOTING：重启中 - RESIZE：变更中 - UPGRADING：升级中 - FROZEN：冻结 - ACTIVE：运行
 
@@ -102,7 +102,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowInstanceStatusResponse.
+        r"""Gets the server_id of this ShowInstanceStatusResponse.
 
         云堡垒机实例ID，使用UUID格式表示。
 
@@ -113,7 +113,7 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowInstanceStatusResponse.
+        r"""Sets the server_id of this ShowInstanceStatusResponse.
 
         云堡垒机实例ID，使用UUID格式表示。
 

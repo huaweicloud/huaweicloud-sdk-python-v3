@@ -26,7 +26,7 @@ class CreateSqlLimitResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """CreateSqlLimitResponse
+        r"""CreateSqlLimitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSqlLimitResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this CreateSqlLimitResponse.
+        r"""Gets the resp of this CreateSqlLimitResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class CreateSqlLimitResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this CreateSqlLimitResponse.
+        r"""Sets the resp of this CreateSqlLimitResponse.
 
         调用正常时，返回“successful”。
 

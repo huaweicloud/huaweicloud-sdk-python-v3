@@ -28,7 +28,7 @@ class ListProvincesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, provinces=None):
-        """ListProvincesResponse
+        r"""ListProvincesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProvincesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProvincesResponse.
+        r"""Gets the count of this ListProvincesResponse.
 
         查询个数，成功的时候返回。
 
@@ -62,7 +62,7 @@ class ListProvincesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProvincesResponse.
+        r"""Sets the count of this ListProvincesResponse.
 
         查询个数，成功的时候返回。
 
@@ -73,7 +73,7 @@ class ListProvincesResponse(SdkResponse):
 
     @property
     def provinces(self):
-        """Gets the provinces of this ListProvincesResponse.
+        r"""Gets the provinces of this ListProvincesResponse.
 
         省份信息列表，成功的时候返回，具体参见表3。
 
@@ -84,7 +84,7 @@ class ListProvincesResponse(SdkResponse):
 
     @provinces.setter
     def provinces(self, provinces):
-        """Sets the provinces of this ListProvincesResponse.
+        r"""Sets the provinces of this ListProvincesResponse.
 
         省份信息列表，成功的时候返回，具体参见表3。
 

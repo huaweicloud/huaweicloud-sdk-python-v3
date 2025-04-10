@@ -27,7 +27,7 @@ class PostTranscriberJobs:
     }
 
     def __init__(self, config=None, data_url=None):
-        """PostTranscriberJobs
+        r"""PostTranscriberJobs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PostTranscriberJobs:
 
     @property
     def config(self):
-        """Gets the config of this PostTranscriberJobs.
+        r"""Gets the config of this PostTranscriberJobs.
 
         :return: The config of this PostTranscriberJobs.
         :rtype: :class:`huaweicloudsdksis.v1.TranscriberConfig`
@@ -57,7 +57,7 @@ class PostTranscriberJobs:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this PostTranscriberJobs.
+        r"""Sets the config of this PostTranscriberJobs.
 
         :param config: The config of this PostTranscriberJobs.
         :type config: :class:`huaweicloudsdksis.v1.TranscriberConfig`
@@ -66,7 +66,7 @@ class PostTranscriberJobs:
 
     @property
     def data_url(self):
-        """Gets the data_url of this PostTranscriberJobs.
+        r"""Gets the data_url of this PostTranscriberJobs.
 
         存放在OBS的音频文件路径。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
 
@@ -77,7 +77,7 @@ class PostTranscriberJobs:
 
     @data_url.setter
     def data_url(self, data_url):
-        """Sets the data_url of this PostTranscriberJobs.
+        r"""Sets the data_url of this PostTranscriberJobs.
 
         存放在OBS的音频文件路径。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
 

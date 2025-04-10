@@ -30,7 +30,7 @@ class ListResourceResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, errors=None, total_count=None):
-        """ListResourceResponse
+        r"""ListResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListResourceResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourceResponse.
+        r"""Gets the resources of this ListResourceResponse.
 
         资源列表
 
@@ -69,7 +69,7 @@ class ListResourceResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourceResponse.
+        r"""Sets the resources of this ListResourceResponse.
 
         资源列表
 
@@ -80,7 +80,7 @@ class ListResourceResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this ListResourceResponse.
+        r"""Gets the errors of this ListResourceResponse.
 
         查询标签下的资源
 
@@ -91,7 +91,7 @@ class ListResourceResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this ListResourceResponse.
+        r"""Sets the errors of this ListResourceResponse.
 
         查询标签下的资源
 
@@ -102,7 +102,7 @@ class ListResourceResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourceResponse.
+        r"""Gets the total_count of this ListResourceResponse.
 
         标签下的资源总数
 
@@ -113,7 +113,7 @@ class ListResourceResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourceResponse.
+        r"""Sets the total_count of this ListResourceResponse.
 
         标签下的资源总数
 

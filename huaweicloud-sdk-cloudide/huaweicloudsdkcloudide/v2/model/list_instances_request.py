@@ -37,7 +37,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, limit=None, offset=None, is_temporary=None, label=None, search=None, sort_dir=None, sort_key=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         每页显示的条目数量 10/15/30
 
@@ -96,7 +96,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         每页显示的条目数量 10/15/30
 
@@ -107,7 +107,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         偏移量，表示从此偏移量开始查询
 
@@ -118,7 +118,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         偏移量，表示从此偏移量开始查询
 
@@ -129,7 +129,7 @@ class ListInstancesRequest:
 
     @property
     def is_temporary(self):
-        """Gets the is_temporary of this ListInstancesRequest.
+        r"""Gets the is_temporary of this ListInstancesRequest.
 
         是否页面显示（以标签配置为准）
 
@@ -140,7 +140,7 @@ class ListInstancesRequest:
 
     @is_temporary.setter
     def is_temporary(self, is_temporary):
-        """Sets the is_temporary of this ListInstancesRequest.
+        r"""Sets the is_temporary of this ListInstancesRequest.
 
         是否页面显示（以标签配置为准）
 
@@ -151,7 +151,7 @@ class ListInstancesRequest:
 
     @property
     def label(self):
-        """Gets the label of this ListInstancesRequest.
+        r"""Gets the label of this ListInstancesRequest.
 
         标签
 
@@ -162,7 +162,7 @@ class ListInstancesRequest:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ListInstancesRequest.
+        r"""Sets the label of this ListInstancesRequest.
 
         标签
 
@@ -173,7 +173,7 @@ class ListInstancesRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListInstancesRequest.
+        r"""Gets the search of this ListInstancesRequest.
 
         关键字查询(根据实例名，描述模糊查询)
 
@@ -184,7 +184,7 @@ class ListInstancesRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListInstancesRequest.
+        r"""Sets the search of this ListInstancesRequest.
 
         关键字查询(根据实例名，描述模糊查询)
 
@@ -195,7 +195,7 @@ class ListInstancesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListInstancesRequest.
+        r"""Gets the sort_dir of this ListInstancesRequest.
 
         排序方式 asc/desc
 
@@ -206,7 +206,7 @@ class ListInstancesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListInstancesRequest.
+        r"""Sets the sort_dir of this ListInstancesRequest.
 
         排序方式 asc/desc
 
@@ -217,7 +217,7 @@ class ListInstancesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListInstancesRequest.
+        r"""Gets the sort_key of this ListInstancesRequest.
 
         排序字段。 display_name 实例名、status状态、pvc_quantity 存储容量、created_time 创建时间、stack_id 技术栈
 
@@ -228,7 +228,7 @@ class ListInstancesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListInstancesRequest.
+        r"""Sets the sort_key of this ListInstancesRequest.
 
         排序字段。 display_name 实例名、status状态、pvc_quantity 存储容量、created_time 创建时间、stack_id 技术栈
 

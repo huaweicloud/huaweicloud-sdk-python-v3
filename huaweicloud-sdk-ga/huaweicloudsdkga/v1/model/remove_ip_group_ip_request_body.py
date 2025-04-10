@@ -25,7 +25,7 @@ class RemoveIpGroupIpRequestBody:
     }
 
     def __init__(self, ip_list=None):
-        """RemoveIpGroupIpRequestBody
+        r"""RemoveIpGroupIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveIpGroupIpRequestBody:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this RemoveIpGroupIpRequestBody.
+        r"""Gets the ip_list of this RemoveIpGroupIpRequestBody.
 
         IP地址组中的IP网段列表，一次最多支持删除20个条目。
 
@@ -53,7 +53,7 @@ class RemoveIpGroupIpRequestBody:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this RemoveIpGroupIpRequestBody.
+        r"""Sets the ip_list of this RemoveIpGroupIpRequestBody.
 
         IP地址组中的IP网段列表，一次最多支持删除20个条目。
 

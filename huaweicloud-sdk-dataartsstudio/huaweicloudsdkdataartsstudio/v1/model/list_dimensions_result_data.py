@@ -25,7 +25,7 @@ class ListDimensionsResultData:
     }
 
     def __init__(self, value=None):
-        """ListDimensionsResultData
+        r"""ListDimensionsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDimensionsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListDimensionsResultData.
+        r"""Gets the value of this ListDimensionsResultData.
 
         :return: The value of this ListDimensionsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsResultDataValue`
@@ -52,7 +52,7 @@ class ListDimensionsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListDimensionsResultData.
+        r"""Sets the value of this ListDimensionsResultData.
 
         :param value: The value of this ListDimensionsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsResultDataValue`

@@ -28,7 +28,7 @@ class RecognizeHandwritingResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeHandwritingResponse
+        r"""RecognizeHandwritingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeHandwritingResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeHandwritingResponse.
+        r"""Gets the result of this RecognizeHandwritingResponse.
 
         :return: The result of this RecognizeHandwritingResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.HandwritingResult`
@@ -60,7 +60,7 @@ class RecognizeHandwritingResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeHandwritingResponse.
+        r"""Sets the result of this RecognizeHandwritingResponse.
 
         :param result: The result of this RecognizeHandwritingResponse.
         :type result: :class:`huaweicloudsdkocr.v1.HandwritingResult`
@@ -69,7 +69,7 @@ class RecognizeHandwritingResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeHandwritingResponse.
+        r"""Gets the x_request_id of this RecognizeHandwritingResponse.
 
         :return: The x_request_id of this RecognizeHandwritingResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeHandwritingResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeHandwritingResponse.
+        r"""Sets the x_request_id of this RecognizeHandwritingResponse.
 
         :param x_request_id: The x_request_id of this RecognizeHandwritingResponse.
         :type x_request_id: str

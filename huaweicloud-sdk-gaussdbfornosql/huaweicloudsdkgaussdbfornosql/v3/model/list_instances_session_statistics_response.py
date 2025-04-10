@@ -32,7 +32,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, total_connection_count=None, active_connection_count=None, top_source_ips=None, top_dbs=None):
-        """ListInstancesSessionStatisticsResponse
+        r"""ListInstancesSessionStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @property
     def total_connection_count(self):
-        """Gets the total_connection_count of this ListInstancesSessionStatisticsResponse.
+        r"""Gets the total_connection_count of this ListInstancesSessionStatisticsResponse.
 
         总客户端连接数。
 
@@ -76,7 +76,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @total_connection_count.setter
     def total_connection_count(self, total_connection_count):
-        """Sets the total_connection_count of this ListInstancesSessionStatisticsResponse.
+        r"""Sets the total_connection_count of this ListInstancesSessionStatisticsResponse.
 
         总客户端连接数。
 
@@ -87,7 +87,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @property
     def active_connection_count(self):
-        """Gets the active_connection_count of this ListInstancesSessionStatisticsResponse.
+        r"""Gets the active_connection_count of this ListInstancesSessionStatisticsResponse.
 
         active_connection_count
 
@@ -98,7 +98,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @active_connection_count.setter
     def active_connection_count(self, active_connection_count):
-        """Sets the active_connection_count of this ListInstancesSessionStatisticsResponse.
+        r"""Sets the active_connection_count of this ListInstancesSessionStatisticsResponse.
 
         active_connection_count
 
@@ -109,7 +109,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @property
     def top_source_ips(self):
-        """Gets the top_source_ips of this ListInstancesSessionStatisticsResponse.
+        r"""Gets the top_source_ips of this ListInstancesSessionStatisticsResponse.
 
         节点连接的各个客户端连接数汇总，从大到小取前十个，最多十个，展示客户端的ip地址和连接总数。
 
@@ -120,7 +120,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @top_source_ips.setter
     def top_source_ips(self, top_source_ips):
-        """Sets the top_source_ips of this ListInstancesSessionStatisticsResponse.
+        r"""Sets the top_source_ips of this ListInstancesSessionStatisticsResponse.
 
         节点连接的各个客户端连接数汇总，从大到小取前十个，最多十个，展示客户端的ip地址和连接总数。
 
@@ -131,7 +131,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @property
     def top_dbs(self):
-        """Gets the top_dbs of this ListInstancesSessionStatisticsResponse.
+        r"""Gets the top_dbs of this ListInstancesSessionStatisticsResponse.
 
         节点各数据库连接的客户端的ip和该ip连接节点的连接数，按连接数从高到低取前十个，最多十个。
 
@@ -142,7 +142,7 @@ class ListInstancesSessionStatisticsResponse(SdkResponse):
 
     @top_dbs.setter
     def top_dbs(self, top_dbs):
-        """Sets the top_dbs of this ListInstancesSessionStatisticsResponse.
+        r"""Sets the top_dbs of this ListInstancesSessionStatisticsResponse.
 
         节点各数据库连接的客户端的ip和该ip连接节点的连接数，按连接数从高到低取前十个，最多十个。
 

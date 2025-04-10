@@ -26,7 +26,7 @@ class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None):
-        """ListBaremetalFlavorDetailExtendsResponse
+        r"""ListBaremetalFlavorDetailExtendsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListBaremetalFlavorDetailExtendsResponse.
+        r"""Gets the flavors of this ListBaremetalFlavorDetailExtendsResponse.
 
         裸金属服务器规格列表，详情请参见表2 flavors数据结构说明。
 
@@ -55,7 +55,7 @@ class ListBaremetalFlavorDetailExtendsResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListBaremetalFlavorDetailExtendsResponse.
+        r"""Sets the flavors of this ListBaremetalFlavorDetailExtendsResponse.
 
         裸金属服务器规格列表，详情请参见表2 flavors数据结构说明。
 

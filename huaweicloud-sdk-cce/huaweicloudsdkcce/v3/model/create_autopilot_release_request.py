@@ -27,7 +27,7 @@ class CreateAutopilotReleaseRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateAutopilotReleaseRequest
+        r"""CreateAutopilotReleaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAutopilotReleaseRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAutopilotReleaseRequest.
+        r"""Gets the cluster_id of this CreateAutopilotReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class CreateAutopilotReleaseRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAutopilotReleaseRequest.
+        r"""Sets the cluster_id of this CreateAutopilotReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class CreateAutopilotReleaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAutopilotReleaseRequest.
+        r"""Gets the body of this CreateAutopilotReleaseRequest.
 
         :return: The body of this CreateAutopilotReleaseRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.CreateReleaseReqBody`
@@ -80,7 +80,7 @@ class CreateAutopilotReleaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAutopilotReleaseRequest.
+        r"""Sets the body of this CreateAutopilotReleaseRequest.
 
         :param body: The body of this CreateAutopilotReleaseRequest.
         :type body: :class:`huaweicloudsdkcce.v3.CreateReleaseReqBody`

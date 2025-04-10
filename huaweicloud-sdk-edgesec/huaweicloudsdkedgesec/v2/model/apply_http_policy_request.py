@@ -27,7 +27,7 @@ class ApplyHttpPolicyRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """ApplyHttpPolicyRequest
+        r"""ApplyHttpPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApplyHttpPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ApplyHttpPolicyRequest.
+        r"""Gets the policy_id of this ApplyHttpPolicyRequest.
 
         防护策略id
 
@@ -60,7 +60,7 @@ class ApplyHttpPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ApplyHttpPolicyRequest.
+        r"""Sets the policy_id of this ApplyHttpPolicyRequest.
 
         防护策略id
 
@@ -71,7 +71,7 @@ class ApplyHttpPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyHttpPolicyRequest.
+        r"""Gets the body of this ApplyHttpPolicyRequest.
 
         :return: The body of this ApplyHttpPolicyRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.ApplyHttpPolicyRequestBody`
@@ -80,7 +80,7 @@ class ApplyHttpPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyHttpPolicyRequest.
+        r"""Sets the body of this ApplyHttpPolicyRequest.
 
         :param body: The body of this ApplyHttpPolicyRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.ApplyHttpPolicyRequestBody`

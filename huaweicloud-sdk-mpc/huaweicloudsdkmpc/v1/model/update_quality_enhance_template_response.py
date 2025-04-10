@@ -24,7 +24,7 @@ class UpdateQualityEnhanceTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateQualityEnhanceTemplateResponse
+        r"""UpdateQualityEnhanceTemplateResponse
 
         The model defined in huaweicloud sdk
 

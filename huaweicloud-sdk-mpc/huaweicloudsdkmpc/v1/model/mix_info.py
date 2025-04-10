@@ -27,7 +27,7 @@ class MixInfo:
     }
 
     def __init__(self, inputs=None, layout=None):
-        """MixInfo
+        r"""MixInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MixInfo:
 
     @property
     def inputs(self):
-        """Gets the inputs of this MixInfo.
+        r"""Gets the inputs of this MixInfo.
 
         合成任务原始视频配置
 
@@ -61,7 +61,7 @@ class MixInfo:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this MixInfo.
+        r"""Sets the inputs of this MixInfo.
 
         合成任务原始视频配置
 
@@ -72,7 +72,7 @@ class MixInfo:
 
     @property
     def layout(self):
-        """Gets the layout of this MixInfo.
+        r"""Gets the layout of this MixInfo.
 
         :return: The layout of this MixInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`
@@ -81,7 +81,7 @@ class MixInfo:
 
     @layout.setter
     def layout(self, layout):
-        """Sets the layout of this MixInfo.
+        r"""Sets the layout of this MixInfo.
 
         :param layout: The layout of this MixInfo.
         :type layout: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`

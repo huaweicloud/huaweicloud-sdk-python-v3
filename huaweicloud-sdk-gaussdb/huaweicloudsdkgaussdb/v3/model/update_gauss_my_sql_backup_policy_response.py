@@ -30,7 +30,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self, status=None, instance_id=None, instance_name=None):
-        """UpdateGaussMySqlBackupPolicyResponse
+        r"""UpdateGaussMySqlBackupPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateGaussMySqlBackupPolicyResponse.
+        r"""Gets the status of this UpdateGaussMySqlBackupPolicyResponse.
 
         状态信息
 
@@ -69,7 +69,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateGaussMySqlBackupPolicyResponse.
+        r"""Sets the status of this UpdateGaussMySqlBackupPolicyResponse.
 
         状态信息
 
@@ -80,7 +80,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlBackupPolicyResponse.
+        r"""Gets the instance_id of this UpdateGaussMySqlBackupPolicyResponse.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlBackupPolicyResponse.
+        r"""Sets the instance_id of this UpdateGaussMySqlBackupPolicyResponse.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this UpdateGaussMySqlBackupPolicyResponse.
+        r"""Gets the instance_name of this UpdateGaussMySqlBackupPolicyResponse.
 
         实例名称
 
@@ -113,7 +113,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this UpdateGaussMySqlBackupPolicyResponse.
+        r"""Sets the instance_name of this UpdateGaussMySqlBackupPolicyResponse.
 
         实例名称
 

@@ -27,7 +27,7 @@ class RevokePostgresqlDbPrivilegeUser:
     }
 
     def __init__(self, name=None, schema_name=None):
-        """RevokePostgresqlDbPrivilegeUser
+        r"""RevokePostgresqlDbPrivilegeUser
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RevokePostgresqlDbPrivilegeUser:
 
     @property
     def name(self):
-        """Gets the name of this RevokePostgresqlDbPrivilegeUser.
+        r"""Gets the name of this RevokePostgresqlDbPrivilegeUser.
 
         数据库账号名称
 
@@ -59,7 +59,7 @@ class RevokePostgresqlDbPrivilegeUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RevokePostgresqlDbPrivilegeUser.
+        r"""Sets the name of this RevokePostgresqlDbPrivilegeUser.
 
         数据库账号名称
 
@@ -70,7 +70,7 @@ class RevokePostgresqlDbPrivilegeUser:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this RevokePostgresqlDbPrivilegeUser.
+        r"""Gets the schema_name of this RevokePostgresqlDbPrivilegeUser.
 
         数据库下模式名称
 
@@ -81,7 +81,7 @@ class RevokePostgresqlDbPrivilegeUser:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this RevokePostgresqlDbPrivilegeUser.
+        r"""Sets the schema_name of this RevokePostgresqlDbPrivilegeUser.
 
         数据库下模式名称
 

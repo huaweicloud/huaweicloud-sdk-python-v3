@@ -27,7 +27,7 @@ class BatchCreateVpcTagsRequest:
     }
 
     def __init__(self, vpc_id=None, body=None):
-        """BatchCreateVpcTagsRequest
+        r"""BatchCreateVpcTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateVpcTagsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this BatchCreateVpcTagsRequest.
+        r"""Gets the vpc_id of this BatchCreateVpcTagsRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -60,7 +60,7 @@ class BatchCreateVpcTagsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this BatchCreateVpcTagsRequest.
+        r"""Sets the vpc_id of this BatchCreateVpcTagsRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -71,7 +71,7 @@ class BatchCreateVpcTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateVpcTagsRequest.
+        r"""Gets the body of this BatchCreateVpcTagsRequest.
 
         :return: The body of this BatchCreateVpcTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateVpcTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateVpcTagsRequest.
+        r"""Sets the body of this BatchCreateVpcTagsRequest.
 
         :param body: The body of this BatchCreateVpcTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequestBody`

@@ -28,7 +28,7 @@ class PublishExtensionResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """PublishExtensionResponse
+        r"""PublishExtensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class PublishExtensionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this PublishExtensionResponse.
+        r"""Gets the result of this PublishExtensionResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class PublishExtensionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this PublishExtensionResponse.
+        r"""Sets the result of this PublishExtensionResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class PublishExtensionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this PublishExtensionResponse.
+        r"""Gets the status of this PublishExtensionResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class PublishExtensionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublishExtensionResponse.
+        r"""Sets the status of this PublishExtensionResponse.
 
         状态
 

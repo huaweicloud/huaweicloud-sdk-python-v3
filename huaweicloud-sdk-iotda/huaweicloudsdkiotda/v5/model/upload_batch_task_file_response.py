@@ -30,7 +30,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None, file_name=None, upload_time=None):
-        """UploadBatchTaskFileResponse
+        r"""UploadBatchTaskFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this UploadBatchTaskFileResponse.
+        r"""Gets the file_id of this UploadBatchTaskFileResponse.
 
         上传的批量任务文件ID，由平台自动生成。
 
@@ -69,7 +69,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this UploadBatchTaskFileResponse.
+        r"""Sets the file_id of this UploadBatchTaskFileResponse.
 
         上传的批量任务文件ID，由平台自动生成。
 
@@ -80,7 +80,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this UploadBatchTaskFileResponse.
+        r"""Gets the file_name of this UploadBatchTaskFileResponse.
 
         上传的批量任务文件名称。
 
@@ -91,7 +91,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this UploadBatchTaskFileResponse.
+        r"""Sets the file_name of this UploadBatchTaskFileResponse.
 
         上传的批量任务文件名称。
 
@@ -102,7 +102,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
 
     @property
     def upload_time(self):
-        """Gets the upload_time of this UploadBatchTaskFileResponse.
+        r"""Gets the upload_time of this UploadBatchTaskFileResponse.
 
         在物联网平台上传文件的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -113,7 +113,7 @@ class UploadBatchTaskFileResponse(SdkResponse):
 
     @upload_time.setter
     def upload_time(self, upload_time):
-        """Sets the upload_time of this UploadBatchTaskFileResponse.
+        r"""Sets the upload_time of this UploadBatchTaskFileResponse.
 
         在物联网平台上传文件的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

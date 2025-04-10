@@ -24,7 +24,7 @@ class InstallInstanceEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """InstallInstanceEipResponse
+        r"""InstallInstanceEipResponse
 
         The model defined in huaweicloud sdk
 

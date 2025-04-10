@@ -26,7 +26,7 @@ class ListMetricsTrendResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListMetricsTrendResponse
+        r"""ListMetricsTrendResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMetricsTrendResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListMetricsTrendResponse.
+        r"""Gets the body of this ListMetricsTrendResponse.
 
         查询指标趋势响应
 
@@ -55,7 +55,7 @@ class ListMetricsTrendResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMetricsTrendResponse.
+        r"""Sets the body of this ListMetricsTrendResponse.
 
         查询指标趋势响应
 

@@ -25,7 +25,7 @@ class PolicyCreateReq:
     }
 
     def __init__(self, policy=None):
-        """PolicyCreateReq
+        r"""PolicyCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PolicyCreateReq:
 
     @property
     def policy(self):
-        """Gets the policy of this PolicyCreateReq.
+        r"""Gets the policy of this PolicyCreateReq.
 
         :return: The policy of this PolicyCreateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyCreate`
@@ -51,7 +51,7 @@ class PolicyCreateReq:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this PolicyCreateReq.
+        r"""Sets the policy of this PolicyCreateReq.
 
         :param policy: The policy of this PolicyCreateReq.
         :type policy: :class:`huaweicloudsdkcbr.v1.PolicyCreate`

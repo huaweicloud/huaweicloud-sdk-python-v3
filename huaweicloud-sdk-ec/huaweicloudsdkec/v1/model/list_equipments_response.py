@@ -26,7 +26,7 @@ class ListEquipmentsResponse(SdkResponse):
     }
 
     def __init__(self, equipments=None):
-        """ListEquipmentsResponse
+        r"""ListEquipmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEquipmentsResponse(SdkResponse):
 
     @property
     def equipments(self):
-        """Gets the equipments of this ListEquipmentsResponse.
+        r"""Gets the equipments of this ListEquipmentsResponse.
 
         设备基本信息列表
 
@@ -55,7 +55,7 @@ class ListEquipmentsResponse(SdkResponse):
 
     @equipments.setter
     def equipments(self, equipments):
-        """Sets the equipments of this ListEquipmentsResponse.
+        r"""Sets the equipments of this ListEquipmentsResponse.
 
         设备基本信息列表
 

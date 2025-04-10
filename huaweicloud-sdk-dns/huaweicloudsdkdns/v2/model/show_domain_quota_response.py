@@ -26,7 +26,7 @@ class ShowDomainQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowDomainQuotaResponse
+        r"""ShowDomainQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainQuotaResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowDomainQuotaResponse.
+        r"""Gets the quotas of this ShowDomainQuotaResponse.
 
         配额项数据。
 
@@ -55,7 +55,7 @@ class ShowDomainQuotaResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowDomainQuotaResponse.
+        r"""Sets the quotas of this ShowDomainQuotaResponse.
 
         配额项数据。
 

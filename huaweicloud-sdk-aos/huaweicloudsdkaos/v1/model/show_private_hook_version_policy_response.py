@@ -26,7 +26,7 @@ class ShowPrivateHookVersionPolicyResponse(SdkResponse):
     }
 
     def __init__(self, location=None):
-        """ShowPrivateHookVersionPolicyResponse
+        r"""ShowPrivateHookVersionPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPrivateHookVersionPolicyResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowPrivateHookVersionPolicyResponse.
+        r"""Gets the location of this ShowPrivateHookVersionPolicyResponse.
 
         :return: The location of this ShowPrivateHookVersionPolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowPrivateHookVersionPolicyResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowPrivateHookVersionPolicyResponse.
+        r"""Sets the location of this ShowPrivateHookVersionPolicyResponse.
 
         :param location: The location of this ShowPrivateHookVersionPolicyResponse.
         :type location: str

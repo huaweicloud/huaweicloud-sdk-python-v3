@@ -60,7 +60,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None, routers=None, proxy_pattern=None, enterprise_project_id=None):
-        """ShowPrivateZoneResponse
+        r"""ShowPrivateZoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPrivateZoneResponse.
+        r"""Gets the id of this ShowPrivateZoneResponse.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -174,7 +174,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPrivateZoneResponse.
+        r"""Sets the id of this ShowPrivateZoneResponse.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -185,7 +185,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPrivateZoneResponse.
+        r"""Gets the name of this ShowPrivateZoneResponse.
 
         zone名称。
 
@@ -196,7 +196,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPrivateZoneResponse.
+        r"""Sets the name of this ShowPrivateZoneResponse.
 
         zone名称。
 
@@ -207,7 +207,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPrivateZoneResponse.
+        r"""Gets the description of this ShowPrivateZoneResponse.
 
         对zone的描述信息。
 
@@ -218,7 +218,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPrivateZoneResponse.
+        r"""Sets the description of this ShowPrivateZoneResponse.
 
         对zone的描述信息。
 
@@ -229,7 +229,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowPrivateZoneResponse.
+        r"""Gets the email of this ShowPrivateZoneResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -240,7 +240,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowPrivateZoneResponse.
+        r"""Sets the email of this ShowPrivateZoneResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -251,7 +251,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this ShowPrivateZoneResponse.
+        r"""Gets the zone_type of this ShowPrivateZoneResponse.
 
         zone类型，内网（private）。
 
@@ -262,7 +262,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this ShowPrivateZoneResponse.
+        r"""Sets the zone_type of this ShowPrivateZoneResponse.
 
         zone类型，内网（private）。
 
@@ -273,7 +273,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this ShowPrivateZoneResponse.
+        r"""Gets the ttl of this ShowPrivateZoneResponse.
 
         该zone下SOA记录中的ttl值。
 
@@ -284,7 +284,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ShowPrivateZoneResponse.
+        r"""Sets the ttl of this ShowPrivateZoneResponse.
 
         该zone下SOA记录中的ttl值。
 
@@ -295,7 +295,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def serial(self):
-        """Gets the serial of this ShowPrivateZoneResponse.
+        r"""Gets the serial of this ShowPrivateZoneResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -306,7 +306,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @serial.setter
     def serial(self, serial):
-        """Sets the serial of this ShowPrivateZoneResponse.
+        r"""Sets the serial of this ShowPrivateZoneResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -317,7 +317,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPrivateZoneResponse.
+        r"""Gets the status of this ShowPrivateZoneResponse.
 
         资源状态。
 
@@ -328,7 +328,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPrivateZoneResponse.
+        r"""Sets the status of this ShowPrivateZoneResponse.
 
         资源状态。
 
@@ -339,7 +339,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def record_num(self):
-        """Gets the record_num of this ShowPrivateZoneResponse.
+        r"""Gets the record_num of this ShowPrivateZoneResponse.
 
         该zone下的recordset个数。
 
@@ -350,7 +350,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @record_num.setter
     def record_num(self, record_num):
-        """Sets the record_num of this ShowPrivateZoneResponse.
+        r"""Sets the record_num of this ShowPrivateZoneResponse.
 
         该zone下的recordset个数。
 
@@ -361,7 +361,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ShowPrivateZoneResponse.
+        r"""Gets the pool_id of this ShowPrivateZoneResponse.
 
         托管该zone的pool，由系统分配。
 
@@ -372,7 +372,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ShowPrivateZoneResponse.
+        r"""Sets the pool_id of this ShowPrivateZoneResponse.
 
         托管该zone的pool，由系统分配。
 
@@ -383,7 +383,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPrivateZoneResponse.
+        r"""Gets the project_id of this ShowPrivateZoneResponse.
 
         zone所属的项目ID。
 
@@ -394,7 +394,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPrivateZoneResponse.
+        r"""Sets the project_id of this ShowPrivateZoneResponse.
 
         zone所属的项目ID。
 
@@ -405,7 +405,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowPrivateZoneResponse.
+        r"""Gets the created_at of this ShowPrivateZoneResponse.
 
         创建时间。
 
@@ -416,7 +416,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowPrivateZoneResponse.
+        r"""Sets the created_at of this ShowPrivateZoneResponse.
 
         创建时间。
 
@@ -427,7 +427,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowPrivateZoneResponse.
+        r"""Gets the updated_at of this ShowPrivateZoneResponse.
 
         更新时间。
 
@@ -438,7 +438,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowPrivateZoneResponse.
+        r"""Sets the updated_at of this ShowPrivateZoneResponse.
 
         更新时间。
 
@@ -449,7 +449,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowPrivateZoneResponse.
+        r"""Gets the links of this ShowPrivateZoneResponse.
 
         :return: The links of this ShowPrivateZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -458,7 +458,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowPrivateZoneResponse.
+        r"""Sets the links of this ShowPrivateZoneResponse.
 
         :param links: The links of this ShowPrivateZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -467,7 +467,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def masters(self):
-        """Gets the masters of this ShowPrivateZoneResponse.
+        r"""Gets the masters of this ShowPrivateZoneResponse.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -478,7 +478,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @masters.setter
     def masters(self, masters):
-        """Sets the masters of this ShowPrivateZoneResponse.
+        r"""Sets the masters of this ShowPrivateZoneResponse.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -489,7 +489,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def routers(self):
-        """Gets the routers of this ShowPrivateZoneResponse.
+        r"""Gets the routers of this ShowPrivateZoneResponse.
 
         与该zone关联的Router(VPC)列表。
 
@@ -500,7 +500,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @routers.setter
     def routers(self, routers):
-        """Sets the routers of this ShowPrivateZoneResponse.
+        r"""Sets the routers of this ShowPrivateZoneResponse.
 
         与该zone关联的Router(VPC)列表。
 
@@ -511,7 +511,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def proxy_pattern(self):
-        """Gets the proxy_pattern of this ShowPrivateZoneResponse.
+        r"""Gets the proxy_pattern of this ShowPrivateZoneResponse.
 
         内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
@@ -522,7 +522,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @proxy_pattern.setter
     def proxy_pattern(self, proxy_pattern):
-        """Sets the proxy_pattern of this ShowPrivateZoneResponse.
+        r"""Sets the proxy_pattern of this ShowPrivateZoneResponse.
 
         内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
@@ -533,7 +533,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowPrivateZoneResponse.
+        r"""Gets the enterprise_project_id of this ShowPrivateZoneResponse.
 
         域名关联的企业项目ID，长度不超过36个字符。
 
@@ -544,7 +544,7 @@ class ShowPrivateZoneResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowPrivateZoneResponse.
+        r"""Sets the enterprise_project_id of this ShowPrivateZoneResponse.
 
         域名关联的企业项目ID，长度不超过36个字符。
 

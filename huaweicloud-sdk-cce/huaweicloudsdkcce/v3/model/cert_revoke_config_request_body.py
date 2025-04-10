@@ -27,7 +27,7 @@ class CertRevokeConfigRequestBody:
     }
 
     def __init__(self, user_id=None, agency_id=None):
-        """CertRevokeConfigRequestBody
+        r"""CertRevokeConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CertRevokeConfigRequestBody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CertRevokeConfigRequestBody.
+        r"""Gets the user_id of this CertRevokeConfigRequestBody.
 
         用户ID
 
@@ -61,7 +61,7 @@ class CertRevokeConfigRequestBody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CertRevokeConfigRequestBody.
+        r"""Sets the user_id of this CertRevokeConfigRequestBody.
 
         用户ID
 
@@ -72,7 +72,7 @@ class CertRevokeConfigRequestBody:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CertRevokeConfigRequestBody.
+        r"""Gets the agency_id of this CertRevokeConfigRequestBody.
 
         委托用户ID
 
@@ -83,7 +83,7 @@ class CertRevokeConfigRequestBody:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CertRevokeConfigRequestBody.
+        r"""Sets the agency_id of this CertRevokeConfigRequestBody.
 
         委托用户ID
 

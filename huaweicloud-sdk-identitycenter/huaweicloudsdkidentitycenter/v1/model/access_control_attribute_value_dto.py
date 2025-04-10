@@ -25,7 +25,7 @@ class AccessControlAttributeValueDto:
     }
 
     def __init__(self, source=None):
-        """AccessControlAttributeValueDto
+        r"""AccessControlAttributeValueDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AccessControlAttributeValueDto:
 
     @property
     def source(self):
-        """Gets the source of this AccessControlAttributeValueDto.
+        r"""Gets the source of this AccessControlAttributeValueDto.
 
         用于将指定属性映射到身份源的值
 
@@ -53,7 +53,7 @@ class AccessControlAttributeValueDto:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this AccessControlAttributeValueDto.
+        r"""Sets the source of this AccessControlAttributeValueDto.
 
         用于将指定属性映射到身份源的值
 

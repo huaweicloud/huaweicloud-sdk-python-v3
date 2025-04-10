@@ -26,7 +26,7 @@ class ListEcnAccessPointByEcnIdResponse(SdkResponse):
     }
 
     def __init__(self, access_points=None):
-        """ListEcnAccessPointByEcnIdResponse
+        r"""ListEcnAccessPointByEcnIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEcnAccessPointByEcnIdResponse(SdkResponse):
 
     @property
     def access_points(self):
-        """Gets the access_points of this ListEcnAccessPointByEcnIdResponse.
+        r"""Gets the access_points of this ListEcnAccessPointByEcnIdResponse.
 
         :return: The access_points of this ListEcnAccessPointByEcnIdResponse.
         :rtype: list[:class:`huaweicloudsdkec.v1.AccessPoint`]
@@ -53,7 +53,7 @@ class ListEcnAccessPointByEcnIdResponse(SdkResponse):
 
     @access_points.setter
     def access_points(self, access_points):
-        """Sets the access_points of this ListEcnAccessPointByEcnIdResponse.
+        r"""Sets the access_points of this ListEcnAccessPointByEcnIdResponse.
 
         :param access_points: The access_points of this ListEcnAccessPointByEcnIdResponse.
         :type access_points: list[:class:`huaweicloudsdkec.v1.AccessPoint`]

@@ -26,7 +26,7 @@ class CreateDataLevelTableCompareJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateDataLevelTableCompareJobResponse
+        r"""CreateDataLevelTableCompareJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDataLevelTableCompareJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDataLevelTableCompareJobResponse.
+        r"""Gets the id of this CreateDataLevelTableCompareJobResponse.
 
         对比任务ID
 
@@ -55,7 +55,7 @@ class CreateDataLevelTableCompareJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDataLevelTableCompareJobResponse.
+        r"""Sets the id of this CreateDataLevelTableCompareJobResponse.
 
         对比任务ID
 

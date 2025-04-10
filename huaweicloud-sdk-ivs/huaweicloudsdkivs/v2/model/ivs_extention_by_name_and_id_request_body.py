@@ -27,7 +27,7 @@ class IvsExtentionByNameAndIdRequestBody:
     }
 
     def __init__(self, meta=None, data=None):
-        """IvsExtentionByNameAndIdRequestBody
+        r"""IvsExtentionByNameAndIdRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
     @property
     def meta(self):
-        """Gets the meta of this IvsExtentionByNameAndIdRequestBody.
+        r"""Gets the meta of this IvsExtentionByNameAndIdRequestBody.
 
         :return: The meta of this IvsExtentionByNameAndIdRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -57,7 +57,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this IvsExtentionByNameAndIdRequestBody.
+        r"""Sets the meta of this IvsExtentionByNameAndIdRequestBody.
 
         :param meta: The meta of this IvsExtentionByNameAndIdRequestBody.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -66,7 +66,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
     @property
     def data(self):
-        """Gets the data of this IvsExtentionByNameAndIdRequestBody.
+        r"""Gets the data of this IvsExtentionByNameAndIdRequestBody.
 
         :return: The data of this IvsExtentionByNameAndIdRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBodyData`
@@ -75,7 +75,7 @@ class IvsExtentionByNameAndIdRequestBody:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this IvsExtentionByNameAndIdRequestBody.
+        r"""Sets the data of this IvsExtentionByNameAndIdRequestBody.
 
         :param data: The data of this IvsExtentionByNameAndIdRequestBody.
         :type data: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBodyData`

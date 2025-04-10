@@ -29,7 +29,7 @@ class ListReleasesRequest:
     }
 
     def __init__(self, cluster_id=None, chart_id=None, namespace=None):
-        """ListReleasesRequest
+        r"""ListReleasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListReleasesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListReleasesRequest.
+        r"""Gets the cluster_id of this ListReleasesRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -67,7 +67,7 @@ class ListReleasesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListReleasesRequest.
+        r"""Sets the cluster_id of this ListReleasesRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -78,7 +78,7 @@ class ListReleasesRequest:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this ListReleasesRequest.
+        r"""Gets the chart_id of this ListReleasesRequest.
 
         模板ID
 
@@ -89,7 +89,7 @@ class ListReleasesRequest:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this ListReleasesRequest.
+        r"""Sets the chart_id of this ListReleasesRequest.
 
         模板ID
 
@@ -100,7 +100,7 @@ class ListReleasesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListReleasesRequest.
+        r"""Gets the namespace of this ListReleasesRequest.
 
         模板对应的命名空间
 
@@ -111,7 +111,7 @@ class ListReleasesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListReleasesRequest.
+        r"""Sets the namespace of this ListReleasesRequest.
 
         模板对应的命名空间
 

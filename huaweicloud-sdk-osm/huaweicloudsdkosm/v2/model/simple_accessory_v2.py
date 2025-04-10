@@ -27,7 +27,7 @@ class SimpleAccessoryV2:
     }
 
     def __init__(self, accessory_id=None, file_actual_name=None):
-        """SimpleAccessoryV2
+        r"""SimpleAccessoryV2
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SimpleAccessoryV2:
 
     @property
     def accessory_id(self):
-        """Gets the accessory_id of this SimpleAccessoryV2.
+        r"""Gets the accessory_id of this SimpleAccessoryV2.
 
         附件id
 
@@ -61,7 +61,7 @@ class SimpleAccessoryV2:
 
     @accessory_id.setter
     def accessory_id(self, accessory_id):
-        """Sets the accessory_id of this SimpleAccessoryV2.
+        r"""Sets the accessory_id of this SimpleAccessoryV2.
 
         附件id
 
@@ -72,7 +72,7 @@ class SimpleAccessoryV2:
 
     @property
     def file_actual_name(self):
-        """Gets the file_actual_name of this SimpleAccessoryV2.
+        r"""Gets the file_actual_name of this SimpleAccessoryV2.
 
         附件实际名称
 
@@ -83,7 +83,7 @@ class SimpleAccessoryV2:
 
     @file_actual_name.setter
     def file_actual_name(self, file_actual_name):
-        """Sets the file_actual_name of this SimpleAccessoryV2.
+        r"""Sets the file_actual_name of this SimpleAccessoryV2.
 
         附件实际名称
 

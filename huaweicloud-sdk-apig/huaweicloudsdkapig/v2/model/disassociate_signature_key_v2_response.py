@@ -24,7 +24,7 @@ class DisassociateSignatureKeyV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateSignatureKeyV2Response
+        r"""DisassociateSignatureKeyV2Response
 
         The model defined in huaweicloud sdk
 

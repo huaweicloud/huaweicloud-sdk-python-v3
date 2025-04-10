@@ -35,7 +35,7 @@ class ListAppsRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, limit=None, offset=None, name=None, app_type=None):
-        """ListAppsRequest
+        r"""ListAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListAppsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListAppsRequest.
+        r"""Gets the workspace of this ListAppsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -88,7 +88,7 @@ class ListAppsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListAppsRequest.
+        r"""Sets the workspace of this ListAppsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -99,7 +99,7 @@ class ListAppsRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListAppsRequest.
+        r"""Gets the dlm_type of this ListAppsRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -110,7 +110,7 @@ class ListAppsRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListAppsRequest.
+        r"""Sets the dlm_type of this ListAppsRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -121,7 +121,7 @@ class ListAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppsRequest.
+        r"""Gets the limit of this ListAppsRequest.
 
         limit。
 
@@ -132,7 +132,7 @@ class ListAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppsRequest.
+        r"""Sets the limit of this ListAppsRequest.
 
         limit。
 
@@ -143,7 +143,7 @@ class ListAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppsRequest.
+        r"""Gets the offset of this ListAppsRequest.
 
         offset。
 
@@ -154,7 +154,7 @@ class ListAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppsRequest.
+        r"""Sets the offset of this ListAppsRequest.
 
         offset。
 
@@ -165,7 +165,7 @@ class ListAppsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAppsRequest.
+        r"""Gets the name of this ListAppsRequest.
 
         应用名称。
 
@@ -176,7 +176,7 @@ class ListAppsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppsRequest.
+        r"""Sets the name of this ListAppsRequest.
 
         应用名称。
 
@@ -187,7 +187,7 @@ class ListAppsRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ListAppsRequest.
+        r"""Gets the app_type of this ListAppsRequest.
 
         应用类型。
 
@@ -198,7 +198,7 @@ class ListAppsRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ListAppsRequest.
+        r"""Sets the app_type of this ListAppsRequest.
 
         应用类型。
 

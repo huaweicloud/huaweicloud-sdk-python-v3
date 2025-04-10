@@ -25,7 +25,7 @@ class SetMessageClearRuleReq:
     }
 
     def __init__(self, message_retain_number=None):
-        """SetMessageClearRuleReq
+        r"""SetMessageClearRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetMessageClearRuleReq:
 
     @property
     def message_retain_number(self):
-        """Gets the message_retain_number of this SetMessageClearRuleReq.
+        r"""Gets the message_retain_number of this SetMessageClearRuleReq.
 
         最多保留记录数
 
@@ -54,7 +54,7 @@ class SetMessageClearRuleReq:
 
     @message_retain_number.setter
     def message_retain_number(self, message_retain_number):
-        """Sets the message_retain_number of this SetMessageClearRuleReq.
+        r"""Sets the message_retain_number of this SetMessageClearRuleReq.
 
         最多保留记录数
 

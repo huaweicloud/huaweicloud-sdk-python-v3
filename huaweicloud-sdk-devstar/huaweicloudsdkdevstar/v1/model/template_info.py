@@ -99,7 +99,7 @@ class TemplateInfo:
     }
 
     def __init__(self, id=None, title=None, description=None, productshorts=None, products=None, topic=None, creator_id=None, creator=None, nickname=None, score=None, label=None, store=None, store_info=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, tags=None, type=None, is_static=None, maintainers=None, pipeline_template=None, platform_source=None, references=None, properties=None, dependencies=None, dependency_type=None, forum_id=None, file_size=None, deployment=None, update_id=None, is_support_cloudide=None, has_notices=None, dependents=None, dependent_services=None):
-        """TemplateInfo
+        r"""TemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -302,7 +302,7 @@ class TemplateInfo:
 
     @property
     def id(self):
-        """Gets the id of this TemplateInfo.
+        r"""Gets the id of this TemplateInfo.
 
         模板id。
 
@@ -313,7 +313,7 @@ class TemplateInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateInfo.
+        r"""Sets the id of this TemplateInfo.
 
         模板id。
 
@@ -324,7 +324,7 @@ class TemplateInfo:
 
     @property
     def title(self):
-        """Gets the title of this TemplateInfo.
+        r"""Gets the title of this TemplateInfo.
 
         模板名。
 
@@ -335,7 +335,7 @@ class TemplateInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this TemplateInfo.
+        r"""Sets the title of this TemplateInfo.
 
         模板名。
 
@@ -346,7 +346,7 @@ class TemplateInfo:
 
     @property
     def description(self):
-        """Gets the description of this TemplateInfo.
+        r"""Gets the description of this TemplateInfo.
 
         模板描述。
 
@@ -357,7 +357,7 @@ class TemplateInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateInfo.
+        r"""Sets the description of this TemplateInfo.
 
         模板描述。
 
@@ -368,7 +368,7 @@ class TemplateInfo:
 
     @property
     def productshorts(self):
-        """Gets the productshorts of this TemplateInfo.
+        r"""Gets the productshorts of this TemplateInfo.
 
         模板关联的所有云服务（产品短名）。
 
@@ -379,7 +379,7 @@ class TemplateInfo:
 
     @productshorts.setter
     def productshorts(self, productshorts):
-        """Sets the productshorts of this TemplateInfo.
+        r"""Sets the productshorts of this TemplateInfo.
 
         模板关联的所有云服务（产品短名）。
 
@@ -390,7 +390,7 @@ class TemplateInfo:
 
     @property
     def products(self):
-        """Gets the products of this TemplateInfo.
+        r"""Gets the products of this TemplateInfo.
 
         模板关联的云产品。
 
@@ -401,7 +401,7 @@ class TemplateInfo:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this TemplateInfo.
+        r"""Sets the products of this TemplateInfo.
 
         模板关联的云产品。
 
@@ -412,7 +412,7 @@ class TemplateInfo:
 
     @property
     def topic(self):
-        """Gets the topic of this TemplateInfo.
+        r"""Gets the topic of this TemplateInfo.
 
         模板标签。
 
@@ -423,7 +423,7 @@ class TemplateInfo:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this TemplateInfo.
+        r"""Sets the topic of this TemplateInfo.
 
         模板标签。
 
@@ -434,7 +434,7 @@ class TemplateInfo:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this TemplateInfo.
+        r"""Gets the creator_id of this TemplateInfo.
 
         模板创建者id。
 
@@ -445,7 +445,7 @@ class TemplateInfo:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this TemplateInfo.
+        r"""Sets the creator_id of this TemplateInfo.
 
         模板创建者id。
 
@@ -456,7 +456,7 @@ class TemplateInfo:
 
     @property
     def creator(self):
-        """Gets the creator of this TemplateInfo.
+        r"""Gets the creator of this TemplateInfo.
 
         模板创建者,有别名返回别名。
 
@@ -467,7 +467,7 @@ class TemplateInfo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TemplateInfo.
+        r"""Sets the creator of this TemplateInfo.
 
         模板创建者,有别名返回别名。
 
@@ -478,7 +478,7 @@ class TemplateInfo:
 
     @property
     def nickname(self):
-        """Gets the nickname of this TemplateInfo.
+        r"""Gets the nickname of this TemplateInfo.
 
         模板创建者,有别名返回别名。
 
@@ -489,7 +489,7 @@ class TemplateInfo:
 
     @nickname.setter
     def nickname(self, nickname):
-        """Sets the nickname of this TemplateInfo.
+        r"""Sets the nickname of this TemplateInfo.
 
         模板创建者,有别名返回别名。
 
@@ -500,7 +500,7 @@ class TemplateInfo:
 
     @property
     def score(self):
-        """Gets the score of this TemplateInfo.
+        r"""Gets the score of this TemplateInfo.
 
         模板评分（点赞数）。
 
@@ -511,7 +511,7 @@ class TemplateInfo:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this TemplateInfo.
+        r"""Sets the score of this TemplateInfo.
 
         模板评分（点赞数）。
 
@@ -522,7 +522,7 @@ class TemplateInfo:
 
     @property
     def label(self):
-        """Gets the label of this TemplateInfo.
+        r"""Gets the label of this TemplateInfo.
 
         模板标签（new、hot等）。
 
@@ -533,7 +533,7 @@ class TemplateInfo:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this TemplateInfo.
+        r"""Sets the label of this TemplateInfo.
 
         模板标签（new、hot等）。
 
@@ -544,7 +544,7 @@ class TemplateInfo:
 
     @property
     def store(self):
-        """Gets the store of this TemplateInfo.
+        r"""Gets the store of this TemplateInfo.
 
         代码存储位置。
 
@@ -555,7 +555,7 @@ class TemplateInfo:
 
     @store.setter
     def store(self, store):
-        """Sets the store of this TemplateInfo.
+        r"""Sets the store of this TemplateInfo.
 
         代码存储位置。
 
@@ -566,7 +566,7 @@ class TemplateInfo:
 
     @property
     def store_info(self):
-        """Gets the store_info of this TemplateInfo.
+        r"""Gets the store_info of this TemplateInfo.
 
         获取代码模版所需的信息。
 
@@ -577,7 +577,7 @@ class TemplateInfo:
 
     @store_info.setter
     def store_info(self, store_info):
-        """Sets the store_info of this TemplateInfo.
+        r"""Sets the store_info of this TemplateInfo.
 
         获取代码模版所需的信息。
 
@@ -588,7 +588,7 @@ class TemplateInfo:
 
     @property
     def status(self):
-        """Gets the status of this TemplateInfo.
+        r"""Gets the status of this TemplateInfo.
 
         模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
@@ -599,7 +599,7 @@ class TemplateInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TemplateInfo.
+        r"""Sets the status of this TemplateInfo.
 
         模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
@@ -610,7 +610,7 @@ class TemplateInfo:
 
     @property
     def view_count(self):
-        """Gets the view_count of this TemplateInfo.
+        r"""Gets the view_count of this TemplateInfo.
 
         访问量。
 
@@ -621,7 +621,7 @@ class TemplateInfo:
 
     @view_count.setter
     def view_count(self, view_count):
-        """Sets the view_count of this TemplateInfo.
+        r"""Sets the view_count of this TemplateInfo.
 
         访问量。
 
@@ -632,7 +632,7 @@ class TemplateInfo:
 
     @property
     def usage_count(self):
-        """Gets the usage_count of this TemplateInfo.
+        r"""Gets the usage_count of this TemplateInfo.
 
         引用量。
 
@@ -643,7 +643,7 @@ class TemplateInfo:
 
     @usage_count.setter
     def usage_count(self, usage_count):
-        """Sets the usage_count of this TemplateInfo.
+        r"""Sets the usage_count of this TemplateInfo.
 
         引用量。
 
@@ -654,7 +654,7 @@ class TemplateInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TemplateInfo.
+        r"""Gets the created_at of this TemplateInfo.
 
         创建时间。
 
@@ -665,7 +665,7 @@ class TemplateInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TemplateInfo.
+        r"""Sets the created_at of this TemplateInfo.
 
         创建时间。
 
@@ -676,7 +676,7 @@ class TemplateInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TemplateInfo.
+        r"""Gets the updated_at of this TemplateInfo.
 
         更新时间。
 
@@ -687,7 +687,7 @@ class TemplateInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TemplateInfo.
+        r"""Sets the updated_at of this TemplateInfo.
 
         更新时间。
 
@@ -698,7 +698,7 @@ class TemplateInfo:
 
     @property
     def published_at(self):
-        """Gets the published_at of this TemplateInfo.
+        r"""Gets the published_at of this TemplateInfo.
 
         模板上架时间。
 
@@ -709,7 +709,7 @@ class TemplateInfo:
 
     @published_at.setter
     def published_at(self, published_at):
-        """Sets the published_at of this TemplateInfo.
+        r"""Sets the published_at of this TemplateInfo.
 
         模板上架时间。
 
@@ -720,7 +720,7 @@ class TemplateInfo:
 
     @property
     def favorite_state(self):
-        """Gets the favorite_state of this TemplateInfo.
+        r"""Gets the favorite_state of this TemplateInfo.
 
         点赞状态： - 1：点赞 - 0：未点赞 
 
@@ -731,7 +731,7 @@ class TemplateInfo:
 
     @favorite_state.setter
     def favorite_state(self, favorite_state):
-        """Sets the favorite_state of this TemplateInfo.
+        r"""Sets the favorite_state of this TemplateInfo.
 
         点赞状态： - 1：点赞 - 0：未点赞 
 
@@ -742,7 +742,7 @@ class TemplateInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this TemplateInfo.
+        r"""Gets the tags of this TemplateInfo.
 
         模板标签。
 
@@ -753,7 +753,7 @@ class TemplateInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TemplateInfo.
+        r"""Sets the tags of this TemplateInfo.
 
         模板标签。
 
@@ -764,7 +764,7 @@ class TemplateInfo:
 
     @property
     def type(self):
-        """Gets the type of this TemplateInfo.
+        r"""Gets the type of this TemplateInfo.
 
         模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 四种 
 
@@ -775,7 +775,7 @@ class TemplateInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TemplateInfo.
+        r"""Sets the type of this TemplateInfo.
 
         模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 四种 
 
@@ -786,7 +786,7 @@ class TemplateInfo:
 
     @property
     def is_static(self):
-        """Gets the is_static of this TemplateInfo.
+        r"""Gets the is_static of this TemplateInfo.
 
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
@@ -797,7 +797,7 @@ class TemplateInfo:
 
     @is_static.setter
     def is_static(self, is_static):
-        """Sets the is_static of this TemplateInfo.
+        r"""Sets the is_static of this TemplateInfo.
 
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
@@ -808,7 +808,7 @@ class TemplateInfo:
 
     @property
     def maintainers(self):
-        """Gets the maintainers of this TemplateInfo.
+        r"""Gets the maintainers of this TemplateInfo.
 
         模板相关联的所有维护人账号名称。
 
@@ -819,7 +819,7 @@ class TemplateInfo:
 
     @maintainers.setter
     def maintainers(self, maintainers):
-        """Sets the maintainers of this TemplateInfo.
+        r"""Sets the maintainers of this TemplateInfo.
 
         模板相关联的所有维护人账号名称。
 
@@ -830,7 +830,7 @@ class TemplateInfo:
 
     @property
     def pipeline_template(self):
-        """Gets the pipeline_template of this TemplateInfo.
+        r"""Gets the pipeline_template of this TemplateInfo.
 
         :return: The pipeline_template of this TemplateInfo.
         :rtype: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`
@@ -839,7 +839,7 @@ class TemplateInfo:
 
     @pipeline_template.setter
     def pipeline_template(self, pipeline_template):
-        """Sets the pipeline_template of this TemplateInfo.
+        r"""Sets the pipeline_template of this TemplateInfo.
 
         :param pipeline_template: The pipeline_template of this TemplateInfo.
         :type pipeline_template: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`
@@ -848,7 +848,7 @@ class TemplateInfo:
 
     @property
     def platform_source(self):
-        """Gets the platform_source of this TemplateInfo.
+        r"""Gets the platform_source of this TemplateInfo.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -859,7 +859,7 @@ class TemplateInfo:
 
     @platform_source.setter
     def platform_source(self, platform_source):
-        """Sets the platform_source of this TemplateInfo.
+        r"""Sets the platform_source of this TemplateInfo.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -870,7 +870,7 @@ class TemplateInfo:
 
     @property
     def references(self):
-        """Gets the references of this TemplateInfo.
+        r"""Gets the references of this TemplateInfo.
 
         相关文档，示例，帖子。
 
@@ -881,7 +881,7 @@ class TemplateInfo:
 
     @references.setter
     def references(self, references):
-        """Sets the references of this TemplateInfo.
+        r"""Sets the references of this TemplateInfo.
 
         相关文档，示例，帖子。
 
@@ -892,7 +892,7 @@ class TemplateInfo:
 
     @property
     def properties(self):
-        """Gets the properties of this TemplateInfo.
+        r"""Gets the properties of this TemplateInfo.
 
         模板自定义参数列表。
 
@@ -903,7 +903,7 @@ class TemplateInfo:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this TemplateInfo.
+        r"""Sets the properties of this TemplateInfo.
 
         模板自定义参数列表。
 
@@ -914,7 +914,7 @@ class TemplateInfo:
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this TemplateInfo.
+        r"""Gets the dependencies of this TemplateInfo.
 
         dependency信息。
 
@@ -925,7 +925,7 @@ class TemplateInfo:
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this TemplateInfo.
+        r"""Sets the dependencies of this TemplateInfo.
 
         dependency信息。
 
@@ -936,7 +936,7 @@ class TemplateInfo:
 
     @property
     def dependency_type(self):
-        """Gets the dependency_type of this TemplateInfo.
+        r"""Gets the dependency_type of this TemplateInfo.
 
         dependency类型。
 
@@ -947,7 +947,7 @@ class TemplateInfo:
 
     @dependency_type.setter
     def dependency_type(self, dependency_type):
-        """Sets the dependency_type of this TemplateInfo.
+        r"""Sets the dependency_type of this TemplateInfo.
 
         dependency类型。
 
@@ -958,7 +958,7 @@ class TemplateInfo:
 
     @property
     def forum_id(self):
-        """Gets the forum_id of this TemplateInfo.
+        r"""Gets the forum_id of this TemplateInfo.
 
         关联论坛板块id。
 
@@ -969,7 +969,7 @@ class TemplateInfo:
 
     @forum_id.setter
     def forum_id(self, forum_id):
-        """Sets the forum_id of this TemplateInfo.
+        r"""Sets the forum_id of this TemplateInfo.
 
         关联论坛板块id。
 
@@ -980,7 +980,7 @@ class TemplateInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this TemplateInfo.
+        r"""Gets the file_size of this TemplateInfo.
 
         模板文件解压缩之后的大小(单位:KB)。
 
@@ -991,7 +991,7 @@ class TemplateInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this TemplateInfo.
+        r"""Sets the file_size of this TemplateInfo.
 
         模板文件解压缩之后的大小(单位:KB)。
 
@@ -1002,7 +1002,7 @@ class TemplateInfo:
 
     @property
     def deployment(self):
-        """Gets the deployment of this TemplateInfo.
+        r"""Gets the deployment of this TemplateInfo.
 
         部署信息。
 
@@ -1013,7 +1013,7 @@ class TemplateInfo:
 
     @deployment.setter
     def deployment(self, deployment):
-        """Sets the deployment of this TemplateInfo.
+        r"""Sets the deployment of this TemplateInfo.
 
         部署信息。
 
@@ -1024,7 +1024,7 @@ class TemplateInfo:
 
     @property
     def update_id(self):
-        """Gets the update_id of this TemplateInfo.
+        r"""Gets the update_id of this TemplateInfo.
 
         模板关联更新态Id。
 
@@ -1035,7 +1035,7 @@ class TemplateInfo:
 
     @update_id.setter
     def update_id(self, update_id):
-        """Sets the update_id of this TemplateInfo.
+        r"""Sets the update_id of this TemplateInfo.
 
         模板关联更新态Id。
 
@@ -1046,7 +1046,7 @@ class TemplateInfo:
 
     @property
     def is_support_cloudide(self):
-        """Gets the is_support_cloudide of this TemplateInfo.
+        r"""Gets the is_support_cloudide of this TemplateInfo.
 
         是否支持使用CloudIDE运行源码。
 
@@ -1057,7 +1057,7 @@ class TemplateInfo:
 
     @is_support_cloudide.setter
     def is_support_cloudide(self, is_support_cloudide):
-        """Sets the is_support_cloudide of this TemplateInfo.
+        r"""Sets the is_support_cloudide of this TemplateInfo.
 
         是否支持使用CloudIDE运行源码。
 
@@ -1068,7 +1068,7 @@ class TemplateInfo:
 
     @property
     def has_notices(self):
-        """Gets the has_notices of this TemplateInfo.
+        r"""Gets the has_notices of this TemplateInfo.
 
         是否有消息
 
@@ -1079,7 +1079,7 @@ class TemplateInfo:
 
     @has_notices.setter
     def has_notices(self, has_notices):
-        """Sets the has_notices of this TemplateInfo.
+        r"""Sets the has_notices of this TemplateInfo.
 
         是否有消息
 
@@ -1090,7 +1090,7 @@ class TemplateInfo:
 
     @property
     def dependents(self):
-        """Gets the dependents of this TemplateInfo.
+        r"""Gets the dependents of this TemplateInfo.
 
         模板部署方式依赖信息
 
@@ -1101,7 +1101,7 @@ class TemplateInfo:
 
     @dependents.setter
     def dependents(self, dependents):
-        """Sets the dependents of this TemplateInfo.
+        r"""Sets the dependents of this TemplateInfo.
 
         模板部署方式依赖信息
 
@@ -1112,7 +1112,7 @@ class TemplateInfo:
 
     @property
     def dependent_services(self):
-        """Gets the dependent_services of this TemplateInfo.
+        r"""Gets the dependent_services of this TemplateInfo.
 
         模板关联云服务。
 
@@ -1123,7 +1123,7 @@ class TemplateInfo:
 
     @dependent_services.setter
     def dependent_services(self, dependent_services):
-        """Sets the dependent_services of this TemplateInfo.
+        r"""Sets the dependent_services of this TemplateInfo.
 
         模板关联云服务。
 

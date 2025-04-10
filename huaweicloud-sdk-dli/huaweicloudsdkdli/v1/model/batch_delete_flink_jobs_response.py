@@ -26,7 +26,7 @@ class BatchDeleteFlinkJobsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchDeleteFlinkJobsResponse
+        r"""BatchDeleteFlinkJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteFlinkJobsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteFlinkJobsResponse.
+        r"""Gets the body of this BatchDeleteFlinkJobsResponse.
 
         :return: The body of this BatchDeleteFlinkJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
@@ -53,7 +53,7 @@ class BatchDeleteFlinkJobsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteFlinkJobsResponse.
+        r"""Sets the body of this BatchDeleteFlinkJobsResponse.
 
         :param body: The body of this BatchDeleteFlinkJobsResponse.
         :type body: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]

@@ -28,7 +28,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
     }
 
     def __init__(self, preheating_task=None, x_request_id=None):
-        """CreatePreheatingTasksResponse
+        r"""CreatePreheatingTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
 
     @property
     def preheating_task(self):
-        """Gets the preheating_task of this CreatePreheatingTasksResponse.
+        r"""Gets the preheating_task of this CreatePreheatingTasksResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
 
     @preheating_task.setter
     def preheating_task(self, preheating_task):
-        """Sets the preheating_task of this CreatePreheatingTasksResponse.
+        r"""Sets the preheating_task of this CreatePreheatingTasksResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreatePreheatingTasksResponse.
+        r"""Gets the x_request_id of this CreatePreheatingTasksResponse.
 
         :return: The x_request_id of this CreatePreheatingTasksResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreatePreheatingTasksResponse.
+        r"""Sets the x_request_id of this CreatePreheatingTasksResponse.
 
         :param x_request_id: The x_request_id of this CreatePreheatingTasksResponse.
         :type x_request_id: str

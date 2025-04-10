@@ -27,7 +27,7 @@ class EffectiveTimeRange:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """EffectiveTimeRange
+        r"""EffectiveTimeRange
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EffectiveTimeRange:
 
     @property
     def start_time(self):
-        """Gets the start_time of this EffectiveTimeRange.
+        r"""Gets the start_time of this EffectiveTimeRange.
 
         设备代理开始生效的时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'
 
@@ -61,7 +61,7 @@ class EffectiveTimeRange:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this EffectiveTimeRange.
+        r"""Sets the start_time of this EffectiveTimeRange.
 
         设备代理开始生效的时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'
 
@@ -72,7 +72,7 @@ class EffectiveTimeRange:
 
     @property
     def end_time(self):
-        """Gets the end_time of this EffectiveTimeRange.
+        r"""Gets the end_time of this EffectiveTimeRange.
 
         设备代理失效的时间，必须大于start_time，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'
 
@@ -83,7 +83,7 @@ class EffectiveTimeRange:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this EffectiveTimeRange.
+        r"""Sets the end_time of this EffectiveTimeRange.
 
         设备代理失效的时间，必须大于start_time，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'
 

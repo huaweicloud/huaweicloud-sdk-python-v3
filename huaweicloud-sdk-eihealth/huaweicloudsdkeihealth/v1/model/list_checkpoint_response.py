@@ -28,7 +28,7 @@ class ListCheckpointResponse(SdkResponse):
     }
 
     def __init__(self, count=None, logs=None):
-        """ListCheckpointResponse
+        r"""ListCheckpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCheckpointResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListCheckpointResponse.
+        r"""Gets the count of this ListCheckpointResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListCheckpointResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListCheckpointResponse.
+        r"""Sets the count of this ListCheckpointResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListCheckpointResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ListCheckpointResponse.
+        r"""Gets the logs of this ListCheckpointResponse.
 
         数据作业执行日志
 
@@ -84,7 +84,7 @@ class ListCheckpointResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ListCheckpointResponse.
+        r"""Sets the logs of this ListCheckpointResponse.
 
         数据作业执行日志
 

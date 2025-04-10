@@ -36,7 +36,7 @@ class ShowEcnWithIegResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ieg_id=None, region_id=None, status=None, health_status=None, created_at=None):
-        """ShowEcnWithIegResponse
+        r"""ShowEcnWithIegResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEcnWithIegResponse.
+        r"""Gets the id of this ShowEcnWithIegResponse.
 
         企业连接网络绑定智能企业网关ID
 
@@ -90,7 +90,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEcnWithIegResponse.
+        r"""Sets the id of this ShowEcnWithIegResponse.
 
         企业连接网络绑定智能企业网关ID
 
@@ -101,7 +101,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ShowEcnWithIegResponse.
+        r"""Gets the ieg_id of this ShowEcnWithIegResponse.
 
         智能企业网关ID
 
@@ -112,7 +112,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ShowEcnWithIegResponse.
+        r"""Sets the ieg_id of this ShowEcnWithIegResponse.
 
         智能企业网关ID
 
@@ -123,7 +123,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowEcnWithIegResponse.
+        r"""Gets the region_id of this ShowEcnWithIegResponse.
 
         区域ID
 
@@ -134,7 +134,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowEcnWithIegResponse.
+        r"""Sets the region_id of this ShowEcnWithIegResponse.
 
         区域ID
 
@@ -145,7 +145,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEcnWithIegResponse.
+        r"""Gets the status of this ShowEcnWithIegResponse.
 
         状态
 
@@ -156,7 +156,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEcnWithIegResponse.
+        r"""Sets the status of this ShowEcnWithIegResponse.
 
         状态
 
@@ -167,7 +167,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @property
     def health_status(self):
-        """Gets the health_status of this ShowEcnWithIegResponse.
+        r"""Gets the health_status of this ShowEcnWithIegResponse.
 
         健康状态
 
@@ -178,7 +178,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this ShowEcnWithIegResponse.
+        r"""Sets the health_status of this ShowEcnWithIegResponse.
 
         健康状态
 
@@ -189,7 +189,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowEcnWithIegResponse.
+        r"""Gets the created_at of this ShowEcnWithIegResponse.
 
         创建时间
 
@@ -200,7 +200,7 @@ class ShowEcnWithIegResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowEcnWithIegResponse.
+        r"""Sets the created_at of this ShowEcnWithIegResponse.
 
         创建时间
 

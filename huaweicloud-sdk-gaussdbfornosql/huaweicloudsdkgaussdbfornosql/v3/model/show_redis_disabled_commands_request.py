@@ -31,7 +31,7 @@ class ShowRedisDisabledCommandsRequest:
     }
 
     def __init__(self, instance_id=None, type=None, offset=None, limit=None):
-        """ShowRedisDisabledCommandsRequest
+        r"""ShowRedisDisabledCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRedisDisabledCommandsRequest.
+        r"""Gets the instance_id of this ShowRedisDisabledCommandsRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRedisDisabledCommandsRequest.
+        r"""Sets the instance_id of this ShowRedisDisabledCommandsRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowRedisDisabledCommandsRequest.
+        r"""Gets the type of this ShowRedisDisabledCommandsRequest.
 
         指令类型
 
@@ -95,7 +95,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowRedisDisabledCommandsRequest.
+        r"""Sets the type of this ShowRedisDisabledCommandsRequest.
 
         指令类型
 
@@ -106,7 +106,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRedisDisabledCommandsRequest.
+        r"""Gets the offset of this ShowRedisDisabledCommandsRequest.
 
         索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -117,7 +117,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRedisDisabledCommandsRequest.
+        r"""Sets the offset of this ShowRedisDisabledCommandsRequest.
 
         索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -128,7 +128,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRedisDisabledCommandsRequest.
+        r"""Gets the limit of this ShowRedisDisabledCommandsRequest.
 
         查询专属资源个数上限值。   - 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
 
@@ -139,7 +139,7 @@ class ShowRedisDisabledCommandsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRedisDisabledCommandsRequest.
+        r"""Sets the limit of this ShowRedisDisabledCommandsRequest.
 
         查询专属资源个数上限值。   - 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
 

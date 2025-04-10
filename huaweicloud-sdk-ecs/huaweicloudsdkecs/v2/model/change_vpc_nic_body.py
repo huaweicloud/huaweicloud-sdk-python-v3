@@ -31,7 +31,7 @@ class ChangeVpcNicBody:
     }
 
     def __init__(self, port_id=None, subnet_id=None, security_groups=None, ip_address=None):
-        """ChangeVpcNicBody
+        r"""ChangeVpcNicBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ChangeVpcNicBody:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ChangeVpcNicBody.
+        r"""Gets the port_id of this ChangeVpcNicBody.
 
         网卡ID，UUID格式。 当该字段不为空时，表示挂载指定的网卡。port_id和subnet_id不能同时为空。 网卡ID可以从虚拟私有云的“查询端口列表”章节查询到。 约束： 网卡必须带有安全组。 网卡状态必须为DOWN。 网卡的vpcid必须和传入的vpcid一致。 当port_id和subnet_id同时存在的时候，优先使用port_id。当选择port_id不为空时，代表此时使用的是弹性网卡，此时security_groups和ip_address等参数不生效。
 
@@ -75,7 +75,7 @@ class ChangeVpcNicBody:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ChangeVpcNicBody.
+        r"""Sets the port_id of this ChangeVpcNicBody.
 
         网卡ID，UUID格式。 当该字段不为空时，表示挂载指定的网卡。port_id和subnet_id不能同时为空。 网卡ID可以从虚拟私有云的“查询端口列表”章节查询到。 约束： 网卡必须带有安全组。 网卡状态必须为DOWN。 网卡的vpcid必须和传入的vpcid一致。 当port_id和subnet_id同时存在的时候，优先使用port_id。当选择port_id不为空时，代表此时使用的是弹性网卡，此时security_groups和ip_address等参数不生效。
 
@@ -86,7 +86,7 @@ class ChangeVpcNicBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ChangeVpcNicBody.
+        r"""Gets the subnet_id of this ChangeVpcNicBody.
 
         云服务器云主机添加网卡的信息。 需要指定云服务器云主机所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
 
@@ -97,7 +97,7 @@ class ChangeVpcNicBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ChangeVpcNicBody.
+        r"""Sets the subnet_id of this ChangeVpcNicBody.
 
         云服务器云主机添加网卡的信息。 需要指定云服务器云主机所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
 
@@ -108,7 +108,7 @@ class ChangeVpcNicBody:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ChangeVpcNicBody.
+        r"""Gets the security_groups of this ChangeVpcNicBody.
 
         添加网卡的安全组信息
 
@@ -119,7 +119,7 @@ class ChangeVpcNicBody:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ChangeVpcNicBody.
+        r"""Sets the security_groups of this ChangeVpcNicBody.
 
         添加网卡的安全组信息
 
@@ -130,7 +130,7 @@ class ChangeVpcNicBody:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ChangeVpcNicBody.
+        r"""Gets the ip_address of this ChangeVpcNicBody.
 
         P地址，无该参数表示自动分配IP地址
 
@@ -141,7 +141,7 @@ class ChangeVpcNicBody:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ChangeVpcNicBody.
+        r"""Sets the ip_address of this ChangeVpcNicBody.
 
         P地址，无该参数表示自动分配IP地址
 

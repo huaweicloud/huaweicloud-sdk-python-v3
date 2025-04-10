@@ -27,7 +27,7 @@ class ListInstanceMultiNodesSingleMetricNodeInfos:
     }
 
     def __init__(self, instance_id=None, node_ids=None):
-        """ListInstanceMultiNodesSingleMetricNodeInfos
+        r"""ListInstanceMultiNodesSingleMetricNodeInfos
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstanceMultiNodesSingleMetricNodeInfos:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceMultiNodesSingleMetricNodeInfos.
+        r"""Gets the instance_id of this ListInstanceMultiNodesSingleMetricNodeInfos.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ListInstanceMultiNodesSingleMetricNodeInfos:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceMultiNodesSingleMetricNodeInfos.
+        r"""Sets the instance_id of this ListInstanceMultiNodesSingleMetricNodeInfos.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ListInstanceMultiNodesSingleMetricNodeInfos:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ListInstanceMultiNodesSingleMetricNodeInfos.
+        r"""Gets the node_ids of this ListInstanceMultiNodesSingleMetricNodeInfos.
 
         节点ID列表
 
@@ -81,7 +81,7 @@ class ListInstanceMultiNodesSingleMetricNodeInfos:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ListInstanceMultiNodesSingleMetricNodeInfos.
+        r"""Sets the node_ids of this ListInstanceMultiNodesSingleMetricNodeInfos.
 
         节点ID列表
 

@@ -29,7 +29,7 @@ class BatchAssetActionReq:
     }
 
     def __init__(self, action=None, asset_ids=None, params=None):
-        """BatchAssetActionReq
+        r"""BatchAssetActionReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAssetActionReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchAssetActionReq.
+        r"""Gets the action of this BatchAssetActionReq.
 
         批量操作命令. * DELETE：删除 * DELETE_FORCE：强制删除，该模式会立即删除资产 * RESTORE：恢复 * UNACTIVE：取消激活 * ACTIVE：激活 * SHARE：共享 * UNSHARE：取消共享
 
@@ -66,7 +66,7 @@ class BatchAssetActionReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchAssetActionReq.
+        r"""Sets the action of this BatchAssetActionReq.
 
         批量操作命令. * DELETE：删除 * DELETE_FORCE：强制删除，该模式会立即删除资产 * RESTORE：恢复 * UNACTIVE：取消激活 * ACTIVE：激活 * SHARE：共享 * UNSHARE：取消共享
 
@@ -77,7 +77,7 @@ class BatchAssetActionReq:
 
     @property
     def asset_ids(self):
-        """Gets the asset_ids of this BatchAssetActionReq.
+        r"""Gets the asset_ids of this BatchAssetActionReq.
 
         资产ID列表
 
@@ -88,7 +88,7 @@ class BatchAssetActionReq:
 
     @asset_ids.setter
     def asset_ids(self, asset_ids):
-        """Sets the asset_ids of this BatchAssetActionReq.
+        r"""Sets the asset_ids of this BatchAssetActionReq.
 
         资产ID列表
 
@@ -99,7 +99,7 @@ class BatchAssetActionReq:
 
     @property
     def params(self):
-        """Gets the params of this BatchAssetActionReq.
+        r"""Gets the params of this BatchAssetActionReq.
 
         操作参数
 
@@ -110,7 +110,7 @@ class BatchAssetActionReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this BatchAssetActionReq.
+        r"""Sets the params of this BatchAssetActionReq.
 
         操作参数
 

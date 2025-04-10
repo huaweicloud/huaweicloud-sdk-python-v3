@@ -82,7 +82,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
     }
 
     def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None, room_id=None, relation_live_platform_info=None, create_time=None, update_time=None, cover_url=None, thumbnail=None, room_state=None, confirm_state=None, script_version=None, error_info=None, x_request_id=None):
-        """ShowSmartLiveRoomResponse
+        r"""ShowSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def room_name(self):
-        """Gets the room_name of this ShowSmartLiveRoomResponse.
+        r"""Gets the room_name of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -250,7 +250,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this ShowSmartLiveRoomResponse.
+        r"""Sets the room_name of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -261,7 +261,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def room_description(self):
-        """Gets the room_description of this ShowSmartLiveRoomResponse.
+        r"""Gets the room_description of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -272,7 +272,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this ShowSmartLiveRoomResponse.
+        r"""Sets the room_description of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -283,7 +283,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def room_type(self):
-        """Gets the room_type of this ShowSmartLiveRoomResponse.
+        r"""Gets the room_type of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -294,7 +294,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @room_type.setter
     def room_type(self, room_type):
-        """Sets the room_type of this ShowSmartLiveRoomResponse.
+        r"""Sets the room_type of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -305,7 +305,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def scene_scripts(self):
-        """Gets the scene_scripts of this ShowSmartLiveRoomResponse.
+        r"""Gets the scene_scripts of this ShowSmartLiveRoomResponse.
 
         默认直播剧本列表。
 
@@ -316,7 +316,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @scene_scripts.setter
     def scene_scripts(self, scene_scripts):
-        """Sets the scene_scripts of this ShowSmartLiveRoomResponse.
+        r"""Sets the scene_scripts of this ShowSmartLiveRoomResponse.
 
         默认直播剧本列表。
 
@@ -327,7 +327,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def interaction_config(self):
-        """Gets the interaction_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the interaction_config of this ShowSmartLiveRoomResponse.
 
         :return: The interaction_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
@@ -336,7 +336,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @interaction_config.setter
     def interaction_config(self, interaction_config):
-        """Sets the interaction_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the interaction_config of this ShowSmartLiveRoomResponse.
 
         :param interaction_config: The interaction_config of this ShowSmartLiveRoomResponse.
         :type interaction_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
@@ -345,7 +345,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this ShowSmartLiveRoomResponse.
+        r"""Gets the interaction_rules of this ShowSmartLiveRoomResponse.
 
         互动规则列表
 
@@ -356,7 +356,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this ShowSmartLiveRoomResponse.
+        r"""Sets the interaction_rules of this ShowSmartLiveRoomResponse.
 
         互动规则列表
 
@@ -367,7 +367,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def play_policy(self):
-        """Gets the play_policy of this ShowSmartLiveRoomResponse.
+        r"""Gets the play_policy of this ShowSmartLiveRoomResponse.
 
         :return: The play_policy of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -376,7 +376,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @play_policy.setter
     def play_policy(self, play_policy):
-        """Sets the play_policy of this ShowSmartLiveRoomResponse.
+        r"""Sets the play_policy of this ShowSmartLiveRoomResponse.
 
         :param play_policy: The play_policy of this ShowSmartLiveRoomResponse.
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -385,7 +385,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the video_config of this ShowSmartLiveRoomResponse.
 
         :return: The video_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -394,7 +394,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the video_config of this ShowSmartLiveRoomResponse.
 
         :param video_config: The video_config of this ShowSmartLiveRoomResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -403,7 +403,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def output_urls(self):
-        """Gets the output_urls of this ShowSmartLiveRoomResponse.
+        r"""Gets the output_urls of this ShowSmartLiveRoomResponse.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -414,7 +414,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @output_urls.setter
     def output_urls(self, output_urls):
-        """Sets the output_urls of this ShowSmartLiveRoomResponse.
+        r"""Sets the output_urls of this ShowSmartLiveRoomResponse.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -425,7 +425,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def stream_keys(self):
-        """Gets the stream_keys of this ShowSmartLiveRoomResponse.
+        r"""Gets the stream_keys of this ShowSmartLiveRoomResponse.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -436,7 +436,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @stream_keys.setter
     def stream_keys(self, stream_keys):
-        """Sets the stream_keys of this ShowSmartLiveRoomResponse.
+        r"""Sets the stream_keys of this ShowSmartLiveRoomResponse.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -447,7 +447,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def backup_model_asset_ids(self):
-        """Gets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
+        r"""Gets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
@@ -458,7 +458,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @backup_model_asset_ids.setter
     def backup_model_asset_ids(self, backup_model_asset_ids):
-        """Sets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
+        r"""Sets the backup_model_asset_ids of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
@@ -469,7 +469,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def live_event_callback_config(self):
-        """Gets the live_event_callback_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the live_event_callback_config of this ShowSmartLiveRoomResponse.
 
         :return: The live_event_callback_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
@@ -478,7 +478,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @live_event_callback_config.setter
     def live_event_callback_config(self, live_event_callback_config):
-        """Sets the live_event_callback_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the live_event_callback_config of this ShowSmartLiveRoomResponse.
 
         :param live_event_callback_config: The live_event_callback_config of this ShowSmartLiveRoomResponse.
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
@@ -487,7 +487,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def rtc_callback_config(self):
-        """Gets the rtc_callback_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the rtc_callback_config of this ShowSmartLiveRoomResponse.
 
         :return: The rtc_callback_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -496,7 +496,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @rtc_callback_config.setter
     def rtc_callback_config(self, rtc_callback_config):
-        """Sets the rtc_callback_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the rtc_callback_config of this ShowSmartLiveRoomResponse.
 
         :param rtc_callback_config: The rtc_callback_config of this ShowSmartLiveRoomResponse.
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -505,7 +505,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def review_config(self):
-        """Gets the review_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the review_config of this ShowSmartLiveRoomResponse.
 
         :return: The review_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -514,7 +514,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the review_config of this ShowSmartLiveRoomResponse.
 
         :param review_config: The review_config of this ShowSmartLiveRoomResponse.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -523,7 +523,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def shared_config(self):
-        """Gets the shared_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the shared_config of this ShowSmartLiveRoomResponse.
 
         :return: The shared_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -532,7 +532,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @shared_config.setter
     def shared_config(self, shared_config):
-        """Sets the shared_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the shared_config of this ShowSmartLiveRoomResponse.
 
         :param shared_config: The shared_config of this ShowSmartLiveRoomResponse.
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -541,7 +541,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this ShowSmartLiveRoomResponse.
+        r"""Gets the view_mode of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -552,7 +552,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this ShowSmartLiveRoomResponse.
+        r"""Sets the view_mode of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -563,7 +563,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def co_streamer_config(self):
-        """Gets the co_streamer_config of this ShowSmartLiveRoomResponse.
+        r"""Gets the co_streamer_config of this ShowSmartLiveRoomResponse.
 
         :return: The co_streamer_config of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -572,7 +572,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @co_streamer_config.setter
     def co_streamer_config(self, co_streamer_config):
-        """Sets the co_streamer_config of this ShowSmartLiveRoomResponse.
+        r"""Sets the co_streamer_config of this ShowSmartLiveRoomResponse.
 
         :param co_streamer_config: The co_streamer_config of this ShowSmartLiveRoomResponse.
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -581,7 +581,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def priv_data(self):
-        """Gets the priv_data of this ShowSmartLiveRoomResponse.
+        r"""Gets the priv_data of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
@@ -592,7 +592,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @priv_data.setter
     def priv_data(self, priv_data):
-        """Sets the priv_data of this ShowSmartLiveRoomResponse.
+        r"""Sets the priv_data of this ShowSmartLiveRoomResponse.
 
         **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
@@ -603,7 +603,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this ShowSmartLiveRoomResponse.
+        r"""Gets the room_id of this ShowSmartLiveRoomResponse.
 
         直播间ID
 
@@ -614,7 +614,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ShowSmartLiveRoomResponse.
+        r"""Sets the room_id of this ShowSmartLiveRoomResponse.
 
         直播间ID
 
@@ -625,7 +625,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def relation_live_platform_info(self):
-        """Gets the relation_live_platform_info of this ShowSmartLiveRoomResponse.
+        r"""Gets the relation_live_platform_info of this ShowSmartLiveRoomResponse.
 
         :return: The relation_live_platform_info of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
@@ -634,7 +634,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @relation_live_platform_info.setter
     def relation_live_platform_info(self, relation_live_platform_info):
-        """Sets the relation_live_platform_info of this ShowSmartLiveRoomResponse.
+        r"""Sets the relation_live_platform_info of this ShowSmartLiveRoomResponse.
 
         :param relation_live_platform_info: The relation_live_platform_info of this ShowSmartLiveRoomResponse.
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
@@ -643,7 +643,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSmartLiveRoomResponse.
+        r"""Gets the create_time of this ShowSmartLiveRoomResponse.
 
         直播间创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -654,7 +654,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSmartLiveRoomResponse.
+        r"""Sets the create_time of this ShowSmartLiveRoomResponse.
 
         直播间创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -665,7 +665,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowSmartLiveRoomResponse.
+        r"""Gets the update_time of this ShowSmartLiveRoomResponse.
 
         直播间更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -676,7 +676,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowSmartLiveRoomResponse.
+        r"""Sets the update_time of this ShowSmartLiveRoomResponse.
 
         直播间更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -687,7 +687,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this ShowSmartLiveRoomResponse.
+        r"""Gets the cover_url of this ShowSmartLiveRoomResponse.
 
         直播间封面图URL
 
@@ -698,7 +698,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this ShowSmartLiveRoomResponse.
+        r"""Sets the cover_url of this ShowSmartLiveRoomResponse.
 
         直播间封面图URL
 
@@ -709,7 +709,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this ShowSmartLiveRoomResponse.
+        r"""Gets the thumbnail of this ShowSmartLiveRoomResponse.
 
         直播间封面图新URL
 
@@ -720,7 +720,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this ShowSmartLiveRoomResponse.
+        r"""Sets the thumbnail of this ShowSmartLiveRoomResponse.
 
         直播间封面图新URL
 
@@ -731,7 +731,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def room_state(self):
-        """Gets the room_state of this ShowSmartLiveRoomResponse.
+        r"""Gets the room_state of this ShowSmartLiveRoomResponse.
 
         直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
 
@@ -742,7 +742,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @room_state.setter
     def room_state(self, room_state):
-        """Sets the room_state of this ShowSmartLiveRoomResponse.
+        r"""Sets the room_state of this ShowSmartLiveRoomResponse.
 
         直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
 
@@ -753,7 +753,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def confirm_state(self):
-        """Gets the confirm_state of this ShowSmartLiveRoomResponse.
+        r"""Gets the confirm_state of this ShowSmartLiveRoomResponse.
 
         直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
 
@@ -764,7 +764,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @confirm_state.setter
     def confirm_state(self, confirm_state):
-        """Sets the confirm_state of this ShowSmartLiveRoomResponse.
+        r"""Sets the confirm_state of this ShowSmartLiveRoomResponse.
 
         直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
 
@@ -775,7 +775,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def script_version(self):
-        """Gets the script_version of this ShowSmartLiveRoomResponse.
+        r"""Gets the script_version of this ShowSmartLiveRoomResponse.
 
         直播间剧本版本。调用update接口即更新版本。使用时间戳。
 
@@ -786,7 +786,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @script_version.setter
     def script_version(self, script_version):
-        """Sets the script_version of this ShowSmartLiveRoomResponse.
+        r"""Sets the script_version of this ShowSmartLiveRoomResponse.
 
         直播间剧本版本。调用update接口即更新版本。使用时间戳。
 
@@ -797,7 +797,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowSmartLiveRoomResponse.
+        r"""Gets the error_info of this ShowSmartLiveRoomResponse.
 
         :return: The error_info of this ShowSmartLiveRoomResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -806,7 +806,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowSmartLiveRoomResponse.
+        r"""Sets the error_info of this ShowSmartLiveRoomResponse.
 
         :param error_info: The error_info of this ShowSmartLiveRoomResponse.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -815,7 +815,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowSmartLiveRoomResponse.
+        r"""Gets the x_request_id of this ShowSmartLiveRoomResponse.
 
         :return: The x_request_id of this ShowSmartLiveRoomResponse.
         :rtype: str
@@ -824,7 +824,7 @@ class ShowSmartLiveRoomResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowSmartLiveRoomResponse.
+        r"""Sets the x_request_id of this ShowSmartLiveRoomResponse.
 
         :param x_request_id: The x_request_id of this ShowSmartLiveRoomResponse.
         :type x_request_id: str

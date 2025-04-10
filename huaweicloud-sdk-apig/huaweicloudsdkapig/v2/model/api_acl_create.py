@@ -31,7 +31,7 @@ class ApiAclCreate:
     }
 
     def __init__(self, acl_name=None, acl_type=None, acl_value=None, entity_type=None):
-        """ApiAclCreate
+        r"""ApiAclCreate
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ApiAclCreate:
 
     @property
     def acl_name(self):
-        """Gets the acl_name of this ApiAclCreate.
+        r"""Gets the acl_name of this ApiAclCreate.
 
         ACL策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -71,7 +71,7 @@ class ApiAclCreate:
 
     @acl_name.setter
     def acl_name(self, acl_name):
-        """Sets the acl_name of this ApiAclCreate.
+        r"""Sets the acl_name of this ApiAclCreate.
 
         ACL策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -82,7 +82,7 @@ class ApiAclCreate:
 
     @property
     def acl_type(self):
-        """Gets the acl_type of this ApiAclCreate.
+        r"""Gets the acl_type of this ApiAclCreate.
 
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
@@ -93,7 +93,7 @@ class ApiAclCreate:
 
     @acl_type.setter
     def acl_type(self, acl_type):
-        """Sets the acl_type of this ApiAclCreate.
+        r"""Sets the acl_type of this ApiAclCreate.
 
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
@@ -104,7 +104,7 @@ class ApiAclCreate:
 
     @property
     def acl_value(self):
-        """Gets the acl_value of this ApiAclCreate.
+        r"""Gets the acl_value of this ApiAclCreate.
 
         ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，账号名长度限制在1-64个字符，不支持纯数字。多账号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 > 获取账号ID”章节。
 
@@ -115,7 +115,7 @@ class ApiAclCreate:
 
     @acl_value.setter
     def acl_value(self, acl_value):
-        """Sets the acl_value of this ApiAclCreate.
+        r"""Sets the acl_value of this ApiAclCreate.
 
         ACL策略值，支持一个或多个值，使用英文半角逗号分隔。 - entity_type为IP时，策略值需填写IP地址，最多可支持100个IP地址。 - entity_type为DOMAIN时，策略值需填写账号名，账号支持除英文半角逗号以外的任意ASCII字符，账号名长度限制在1-64个字符，不支持纯数字。多账号名字符的总长度不超过1024。 - entity_type为DOMAIN_ID时，策略值需填写账号ID，获取方式请参见API参考的“附录 > 获取账号ID”章节。
 
@@ -126,7 +126,7 @@ class ApiAclCreate:
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this ApiAclCreate.
+        r"""Gets the entity_type of this ApiAclCreate.
 
         对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
 
@@ -137,7 +137,7 @@ class ApiAclCreate:
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this ApiAclCreate.
+        r"""Sets the entity_type of this ApiAclCreate.
 
         对象类型： - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID
 

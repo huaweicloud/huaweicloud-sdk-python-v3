@@ -24,7 +24,7 @@ class SetAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetAuditlogPolicyResponse
+        r"""SetAuditlogPolicyResponse
 
         The model defined in huaweicloud sdk
 

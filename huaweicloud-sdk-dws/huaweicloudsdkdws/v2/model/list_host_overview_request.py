@@ -31,7 +31,7 @@ class ListHostOverviewRequest:
     }
 
     def __init__(self, cluster_id=None, instance_name=None, limit=None, offset=None):
-        """ListHostOverviewRequest
+        r"""ListHostOverviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListHostOverviewRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListHostOverviewRequest.
+        r"""Gets the cluster_id of this ListHostOverviewRequest.
 
         集群ID。获取方法，请参见9.6-获取集群ID。
 
@@ -73,7 +73,7 @@ class ListHostOverviewRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListHostOverviewRequest.
+        r"""Sets the cluster_id of this ListHostOverviewRequest.
 
         集群ID。获取方法，请参见9.6-获取集群ID。
 
@@ -84,7 +84,7 @@ class ListHostOverviewRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListHostOverviewRequest.
+        r"""Gets the instance_name of this ListHostOverviewRequest.
 
         实例名称。
 
@@ -95,7 +95,7 @@ class ListHostOverviewRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListHostOverviewRequest.
+        r"""Sets the instance_name of this ListHostOverviewRequest.
 
         实例名称。
 
@@ -106,7 +106,7 @@ class ListHostOverviewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostOverviewRequest.
+        r"""Gets the limit of this ListHostOverviewRequest.
 
         数据条目数。
 
@@ -117,7 +117,7 @@ class ListHostOverviewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostOverviewRequest.
+        r"""Sets the limit of this ListHostOverviewRequest.
 
         数据条目数。
 
@@ -128,7 +128,7 @@ class ListHostOverviewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostOverviewRequest.
+        r"""Gets the offset of this ListHostOverviewRequest.
 
         数据偏移量。
 
@@ -139,7 +139,7 @@ class ListHostOverviewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostOverviewRequest.
+        r"""Sets the offset of this ListHostOverviewRequest.
 
         数据偏移量。
 

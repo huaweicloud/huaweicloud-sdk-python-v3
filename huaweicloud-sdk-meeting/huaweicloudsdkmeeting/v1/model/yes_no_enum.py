@@ -27,7 +27,7 @@ class YesNoEnum:
     }
 
     def __init__(self):
-        """YesNoEnum
+        r"""YesNoEnum
 
         The model defined in huaweicloud sdk
 

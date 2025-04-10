@@ -30,7 +30,7 @@ class AddProtectBranchV2Response(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """AddProtectBranchV2Response
+        r"""AddProtectBranchV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddProtectBranchV2Response(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this AddProtectBranchV2Response.
+        r"""Gets the error of this AddProtectBranchV2Response.
 
         :return: The error of this AddProtectBranchV2Response.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class AddProtectBranchV2Response(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this AddProtectBranchV2Response.
+        r"""Sets the error of this AddProtectBranchV2Response.
 
         :param error: The error of this AddProtectBranchV2Response.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class AddProtectBranchV2Response(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this AddProtectBranchV2Response.
+        r"""Gets the result of this AddProtectBranchV2Response.
 
         :return: The result of this AddProtectBranchV2Response.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectResponse`
@@ -85,7 +85,7 @@ class AddProtectBranchV2Response(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddProtectBranchV2Response.
+        r"""Sets the result of this AddProtectBranchV2Response.
 
         :param result: The result of this AddProtectBranchV2Response.
         :type result: :class:`huaweicloudsdkcodehub.v3.AddProtectResponse`
@@ -94,7 +94,7 @@ class AddProtectBranchV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddProtectBranchV2Response.
+        r"""Gets the status of this AddProtectBranchV2Response.
 
         响应状态
 
@@ -105,7 +105,7 @@ class AddProtectBranchV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddProtectBranchV2Response.
+        r"""Sets the status of this AddProtectBranchV2Response.
 
         响应状态
 

@@ -87,7 +87,7 @@ class RunJobFlowCommand:
     }
 
     def __init__(self, is_dec_project=None, cluster_version=None, cluster_name=None, cluster_type=None, charge_info=None, region=None, vpc_name=None, subnet_id=None, subnet_name=None, components=None, external_datasources=None, availability_zone=None, security_groups_id=None, auto_create_default_security_group=None, safe_mode=None, manager_admin_password=None, login_mode=None, node_root_password=None, node_keypair_name=None, enterprise_project_id=None, eip_address=None, eip_id=None, mrs_ecs_default_agency=None, template_id=None, tags=None, log_collection=None, node_groups=None, bootstrap_scripts=None, log_uri=None, component_configs=None, delete_when_no_steps=None, steps=None):
-        """RunJobFlowCommand
+        r"""RunJobFlowCommand
 
         The model defined in huaweicloud sdk
 
@@ -247,7 +247,7 @@ class RunJobFlowCommand:
 
     @property
     def is_dec_project(self):
-        """Gets the is_dec_project of this RunJobFlowCommand.
+        r"""Gets the is_dec_project of this RunJobFlowCommand.
 
         说明是否为专属云的资源，默认为false。
 
@@ -258,7 +258,7 @@ class RunJobFlowCommand:
 
     @is_dec_project.setter
     def is_dec_project(self, is_dec_project):
-        """Sets the is_dec_project of this RunJobFlowCommand.
+        r"""Sets the is_dec_project of this RunJobFlowCommand.
 
         说明是否为专属云的资源，默认为false。
 
@@ -269,7 +269,7 @@ class RunJobFlowCommand:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this RunJobFlowCommand.
+        r"""Gets the cluster_version of this RunJobFlowCommand.
 
         集群版本。例如：MRS 3.1.0。
 
@@ -280,7 +280,7 @@ class RunJobFlowCommand:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this RunJobFlowCommand.
+        r"""Sets the cluster_version of this RunJobFlowCommand.
 
         集群版本。例如：MRS 3.1.0。
 
@@ -291,7 +291,7 @@ class RunJobFlowCommand:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this RunJobFlowCommand.
+        r"""Gets the cluster_name of this RunJobFlowCommand.
 
         集群名称，不允许相同。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
 
@@ -302,7 +302,7 @@ class RunJobFlowCommand:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this RunJobFlowCommand.
+        r"""Sets the cluster_name of this RunJobFlowCommand.
 
         集群名称，不允许相同。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
 
@@ -313,7 +313,7 @@ class RunJobFlowCommand:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this RunJobFlowCommand.
+        r"""Gets the cluster_type of this RunJobFlowCommand.
 
         集群类型，取值范围： - ANALYSIS：分析集群 - STREAMING：流式集群 - MIXED：混合集群 - CUSTOM：自定义集群，仅MRS 3.x版本支持。
 
@@ -324,7 +324,7 @@ class RunJobFlowCommand:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this RunJobFlowCommand.
+        r"""Sets the cluster_type of this RunJobFlowCommand.
 
         集群类型，取值范围： - ANALYSIS：分析集群 - STREAMING：流式集群 - MIXED：混合集群 - CUSTOM：自定义集群，仅MRS 3.x版本支持。
 
@@ -335,7 +335,7 @@ class RunJobFlowCommand:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this RunJobFlowCommand.
+        r"""Gets the charge_info of this RunJobFlowCommand.
 
         :return: The charge_info of this RunJobFlowCommand.
         :rtype: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
@@ -344,7 +344,7 @@ class RunJobFlowCommand:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this RunJobFlowCommand.
+        r"""Sets the charge_info of this RunJobFlowCommand.
 
         :param charge_info: The charge_info of this RunJobFlowCommand.
         :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
@@ -353,7 +353,7 @@ class RunJobFlowCommand:
 
     @property
     def region(self):
-        """Gets the region of this RunJobFlowCommand.
+        r"""Gets the region of this RunJobFlowCommand.
 
         集群所在区域信息，请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
@@ -364,7 +364,7 @@ class RunJobFlowCommand:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RunJobFlowCommand.
+        r"""Sets the region of this RunJobFlowCommand.
 
         集群所在区域信息，请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
@@ -375,7 +375,7 @@ class RunJobFlowCommand:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this RunJobFlowCommand.
+        r"""Gets the vpc_name of this RunJobFlowCommand.
 
         子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 在“虚拟私有云”页面的列表中即可获取VPC名称。
 
@@ -386,7 +386,7 @@ class RunJobFlowCommand:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this RunJobFlowCommand.
+        r"""Sets the vpc_name of this RunJobFlowCommand.
 
         子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 在“虚拟私有云”页面的列表中即可获取VPC名称。
 
@@ -397,7 +397,7 @@ class RunJobFlowCommand:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this RunJobFlowCommand.
+        r"""Gets the subnet_id of this RunJobFlowCommand.
 
         子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
 
@@ -408,7 +408,7 @@ class RunJobFlowCommand:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this RunJobFlowCommand.
+        r"""Sets the subnet_id of this RunJobFlowCommand.
 
         子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
 
@@ -419,7 +419,7 @@ class RunJobFlowCommand:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this RunJobFlowCommand.
+        r"""Gets the subnet_name of this RunJobFlowCommand.
 
         子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
 
@@ -430,7 +430,7 @@ class RunJobFlowCommand:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this RunJobFlowCommand.
+        r"""Sets the subnet_name of this RunJobFlowCommand.
 
         子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
 
@@ -441,7 +441,7 @@ class RunJobFlowCommand:
 
     @property
     def components(self):
-        """Gets the components of this RunJobFlowCommand.
+        r"""Gets the components of this RunJobFlowCommand.
 
         组件名称列表，用逗号分隔。支持的组件请参见[获取MRS集群信息](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)页面的“MRS服务支持的组件”内容。
 
@@ -452,7 +452,7 @@ class RunJobFlowCommand:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this RunJobFlowCommand.
+        r"""Sets the components of this RunJobFlowCommand.
 
         组件名称列表，用逗号分隔。支持的组件请参见[获取MRS集群信息](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)页面的“MRS服务支持的组件”内容。
 
@@ -463,7 +463,7 @@ class RunJobFlowCommand:
 
     @property
     def external_datasources(self):
-        """Gets the external_datasources of this RunJobFlowCommand.
+        r"""Gets the external_datasources of this RunJobFlowCommand.
 
         部署Hive和Ranger等组件时，可以关联数据连接，将元数据存储于关联的数据库
 
@@ -474,7 +474,7 @@ class RunJobFlowCommand:
 
     @external_datasources.setter
     def external_datasources(self, external_datasources):
-        """Sets the external_datasources of this RunJobFlowCommand.
+        r"""Sets the external_datasources of this RunJobFlowCommand.
 
         部署Hive和Ranger等组件时，可以关联数据连接，将元数据存储于关联的数据库
 
@@ -485,7 +485,7 @@ class RunJobFlowCommand:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this RunJobFlowCommand.
+        r"""Gets the availability_zone of this RunJobFlowCommand.
 
         可用分区名称，不支持多AZ集群。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
@@ -496,7 +496,7 @@ class RunJobFlowCommand:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this RunJobFlowCommand.
+        r"""Sets the availability_zone of this RunJobFlowCommand.
 
         可用分区名称，不支持多AZ集群。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
@@ -507,7 +507,7 @@ class RunJobFlowCommand:
 
     @property
     def security_groups_id(self):
-        """Gets the security_groups_id of this RunJobFlowCommand.
+        r"""Gets the security_groups_id of this RunJobFlowCommand.
 
         集群安全组的ID。 - 当该ID为空时MRS后台会自动创建安全组，自动创建的安全组名称以mrs_{cluster_name}开头。 - 当该ID不为空时，表示使用固定安全组来创建集群，传入的ID必须是当前租户中包含的安全组ID，且该安全组中需要包含一条支持全部协议、全部端口、源地址为指定的管理面节点IP的入方向规则。 - 支持多个安全组ID，以逗号分隔。
 
@@ -518,7 +518,7 @@ class RunJobFlowCommand:
 
     @security_groups_id.setter
     def security_groups_id(self, security_groups_id):
-        """Sets the security_groups_id of this RunJobFlowCommand.
+        r"""Sets the security_groups_id of this RunJobFlowCommand.
 
         集群安全组的ID。 - 当该ID为空时MRS后台会自动创建安全组，自动创建的安全组名称以mrs_{cluster_name}开头。 - 当该ID不为空时，表示使用固定安全组来创建集群，传入的ID必须是当前租户中包含的安全组ID，且该安全组中需要包含一条支持全部协议、全部端口、源地址为指定的管理面节点IP的入方向规则。 - 支持多个安全组ID，以逗号分隔。
 
@@ -529,7 +529,7 @@ class RunJobFlowCommand:
 
     @property
     def auto_create_default_security_group(self):
-        """Gets the auto_create_default_security_group of this RunJobFlowCommand.
+        r"""Gets the auto_create_default_security_group of this RunJobFlowCommand.
 
         是否要创建MRS集群默认安全组，默认为false。 当指定该参数为true，则无论“security_groups_id”参数是否指定，都会为集群创建默认安全组。
 
@@ -540,7 +540,7 @@ class RunJobFlowCommand:
 
     @auto_create_default_security_group.setter
     def auto_create_default_security_group(self, auto_create_default_security_group):
-        """Sets the auto_create_default_security_group of this RunJobFlowCommand.
+        r"""Sets the auto_create_default_security_group of this RunJobFlowCommand.
 
         是否要创建MRS集群默认安全组，默认为false。 当指定该参数为true，则无论“security_groups_id”参数是否指定，都会为集群创建默认安全组。
 
@@ -551,7 +551,7 @@ class RunJobFlowCommand:
 
     @property
     def safe_mode(self):
-        """Gets the safe_mode of this RunJobFlowCommand.
+        r"""Gets the safe_mode of this RunJobFlowCommand.
 
         MRS集群运行模式。 - SIMPLE：普通集群，表示Kerberos认证关闭，用户可使用集群提供的所有功能。 - KERBEROS：安全集群，表示Kerberos认证开启，普通用户无权限使用MRS集群的“文件管理”和“作业管理”功能，并且无法查看Hadoop、Spark的作业记录以及集群资源使用情况。如果需要使用集群更多功能，需要找Manager的管理员分配权限。
 
@@ -562,7 +562,7 @@ class RunJobFlowCommand:
 
     @safe_mode.setter
     def safe_mode(self, safe_mode):
-        """Sets the safe_mode of this RunJobFlowCommand.
+        r"""Sets the safe_mode of this RunJobFlowCommand.
 
         MRS集群运行模式。 - SIMPLE：普通集群，表示Kerberos认证关闭，用户可使用集群提供的所有功能。 - KERBEROS：安全集群，表示Kerberos认证开启，普通用户无权限使用MRS集群的“文件管理”和“作业管理”功能，并且无法查看Hadoop、Spark的作业记录以及集群资源使用情况。如果需要使用集群更多功能，需要找Manager的管理员分配权限。
 
@@ -573,7 +573,7 @@ class RunJobFlowCommand:
 
     @property
     def manager_admin_password(self):
-        """Gets the manager_admin_password of this RunJobFlowCommand.
+        r"""Gets the manager_admin_password of this RunJobFlowCommand.
 
         配置Manager管理员用户的密码。 - 密码长度应在8～26个字符之间。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
@@ -584,7 +584,7 @@ class RunJobFlowCommand:
 
     @manager_admin_password.setter
     def manager_admin_password(self, manager_admin_password):
-        """Sets the manager_admin_password of this RunJobFlowCommand.
+        r"""Sets the manager_admin_password of this RunJobFlowCommand.
 
         配置Manager管理员用户的密码。 - 密码长度应在8～26个字符之间。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
@@ -595,7 +595,7 @@ class RunJobFlowCommand:
 
     @property
     def login_mode(self):
-        """Gets the login_mode of this RunJobFlowCommand.
+        r"""Gets the login_mode of this RunJobFlowCommand.
 
         节点登录方式。 - PASSWORD：密码登录，选择此项时，node_root_password不能为空。 - KEYPAIR：密钥对登录，选择此项时，node_keypair_name不能为空。
 
@@ -606,7 +606,7 @@ class RunJobFlowCommand:
 
     @login_mode.setter
     def login_mode(self, login_mode):
-        """Sets the login_mode of this RunJobFlowCommand.
+        r"""Sets the login_mode of this RunJobFlowCommand.
 
         节点登录方式。 - PASSWORD：密码登录，选择此项时，node_root_password不能为空。 - KEYPAIR：密钥对登录，选择此项时，node_keypair_name不能为空。
 
@@ -617,7 +617,7 @@ class RunJobFlowCommand:
 
     @property
     def node_root_password(self):
-        """Gets the node_root_password of this RunJobFlowCommand.
+        r"""Gets the node_root_password of this RunJobFlowCommand.
 
         配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
@@ -628,7 +628,7 @@ class RunJobFlowCommand:
 
     @node_root_password.setter
     def node_root_password(self, node_root_password):
-        """Sets the node_root_password of this RunJobFlowCommand.
+        r"""Sets the node_root_password of this RunJobFlowCommand.
 
         配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
@@ -639,7 +639,7 @@ class RunJobFlowCommand:
 
     @property
     def node_keypair_name(self):
-        """Gets the node_keypair_name of this RunJobFlowCommand.
+        r"""Gets the node_keypair_name of this RunJobFlowCommand.
 
         密钥对名称。用户可以使用密钥对方式登录集群节点。
 
@@ -650,7 +650,7 @@ class RunJobFlowCommand:
 
     @node_keypair_name.setter
     def node_keypair_name(self, node_keypair_name):
-        """Sets the node_keypair_name of this RunJobFlowCommand.
+        r"""Sets the node_keypair_name of this RunJobFlowCommand.
 
         密钥对名称。用户可以使用密钥对方式登录集群节点。
 
@@ -661,7 +661,7 @@ class RunJobFlowCommand:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RunJobFlowCommand.
+        r"""Gets the enterprise_project_id of this RunJobFlowCommand.
 
         企业项目ID。 创建集群时，给集群绑定企业项目ID。 默认设置为0，表示为default企业项目。 获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
@@ -672,7 +672,7 @@ class RunJobFlowCommand:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RunJobFlowCommand.
+        r"""Sets the enterprise_project_id of this RunJobFlowCommand.
 
         企业项目ID。 创建集群时，给集群绑定企业项目ID。 默认设置为0，表示为default企业项目。 获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
@@ -683,7 +683,7 @@ class RunJobFlowCommand:
 
     @property
     def eip_address(self):
-        """Gets the eip_address of this RunJobFlowCommand.
+        r"""Gets the eip_address of this RunJobFlowCommand.
 
         与MRS集群绑定的弹性公网IP，可实现使用弹性公网IP访问Manager的目的。该弹性公网IP必须已经创建且与集群在同一区域。
 
@@ -694,7 +694,7 @@ class RunJobFlowCommand:
 
     @eip_address.setter
     def eip_address(self, eip_address):
-        """Sets the eip_address of this RunJobFlowCommand.
+        r"""Sets the eip_address of this RunJobFlowCommand.
 
         与MRS集群绑定的弹性公网IP，可实现使用弹性公网IP访问Manager的目的。该弹性公网IP必须已经创建且与集群在同一区域。
 
@@ -705,7 +705,7 @@ class RunJobFlowCommand:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this RunJobFlowCommand.
+        r"""Gets the eip_id of this RunJobFlowCommand.
 
         当“eip_address”配置时，该参数必须配置，用于表示绑定的弹性公网IP的ID。可通过在VPC服务的“网络控制台 > 弹性公网IP和带宽 > 弹性公网IP”页面单击待绑定的弹性公网IP，在基本信息中获取“ID”。
 
@@ -716,7 +716,7 @@ class RunJobFlowCommand:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this RunJobFlowCommand.
+        r"""Sets the eip_id of this RunJobFlowCommand.
 
         当“eip_address”配置时，该参数必须配置，用于表示绑定的弹性公网IP的ID。可通过在VPC服务的“网络控制台 > 弹性公网IP和带宽 > 弹性公网IP”页面单击待绑定的弹性公网IP，在基本信息中获取“ID”。
 
@@ -727,7 +727,7 @@ class RunJobFlowCommand:
 
     @property
     def mrs_ecs_default_agency(self):
-        """Gets the mrs_ecs_default_agency of this RunJobFlowCommand.
+        r"""Gets the mrs_ecs_default_agency of this RunJobFlowCommand.
 
         集群节点默认绑定的委托名称，固定为MRS_ECS_DEFAULT_AGENCY。 通过绑定委托，您可以将部分资源共享给ECS或BMS云服务来管理，例如通过配置ECS委托可自动获取AK/SK访问OBS。 MRS_ECS_DEFAULT_AGENCY委托拥有对象存储服务的OBS OperateAccess权限和在集群所在区域拥有CES FullAccess（对开启细粒度策略的用户）、CES Administrator和KMS Administrator权限。
 
@@ -738,7 +738,7 @@ class RunJobFlowCommand:
 
     @mrs_ecs_default_agency.setter
     def mrs_ecs_default_agency(self, mrs_ecs_default_agency):
-        """Sets the mrs_ecs_default_agency of this RunJobFlowCommand.
+        r"""Sets the mrs_ecs_default_agency of this RunJobFlowCommand.
 
         集群节点默认绑定的委托名称，固定为MRS_ECS_DEFAULT_AGENCY。 通过绑定委托，您可以将部分资源共享给ECS或BMS云服务来管理，例如通过配置ECS委托可自动获取AK/SK访问OBS。 MRS_ECS_DEFAULT_AGENCY委托拥有对象存储服务的OBS OperateAccess权限和在集群所在区域拥有CES FullAccess（对开启细粒度策略的用户）、CES Administrator和KMS Administrator权限。
 
@@ -749,7 +749,7 @@ class RunJobFlowCommand:
 
     @property
     def template_id(self):
-        """Gets the template_id of this RunJobFlowCommand.
+        r"""Gets the template_id of this RunJobFlowCommand.
 
         当集群类型为CUSTOM时，用于指定节点部署所使用的模板。 - mgmt_control_combined_v2：管控合设模板，管理角色和控制角色共同部署在Master节点中，数据实例合设在同一节点组。该部署方式适用于100个以下的节点，可以减少成本。 - mgmt_control_separated_v2：管控分设模板，管理角色和控制角色分别部署在不同的Master节点中，数据实例合设在同一节点组。该部署方式适用于100-500个节点，在高并发负载情况下表现更好。 - mgmt_control_data_separated_v2：数据分设模板，管理角色和控制角色分别部署在不同的Master节点中，数据实例分设在不同节点组。该部署方式适用于500个以上的节点，可以将各组件进一步分开部署，适用于更大的集群规模。
 
@@ -760,7 +760,7 @@ class RunJobFlowCommand:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this RunJobFlowCommand.
+        r"""Sets the template_id of this RunJobFlowCommand.
 
         当集群类型为CUSTOM时，用于指定节点部署所使用的模板。 - mgmt_control_combined_v2：管控合设模板，管理角色和控制角色共同部署在Master节点中，数据实例合设在同一节点组。该部署方式适用于100个以下的节点，可以减少成本。 - mgmt_control_separated_v2：管控分设模板，管理角色和控制角色分别部署在不同的Master节点中，数据实例合设在同一节点组。该部署方式适用于100-500个节点，在高并发负载情况下表现更好。 - mgmt_control_data_separated_v2：数据分设模板，管理角色和控制角色分别部署在不同的Master节点中，数据实例分设在不同节点组。该部署方式适用于500个以上的节点，可以将各组件进一步分开部署，适用于更大的集群规模。
 
@@ -771,7 +771,7 @@ class RunJobFlowCommand:
 
     @property
     def tags(self):
-        """Gets the tags of this RunJobFlowCommand.
+        r"""Gets the tags of this RunJobFlowCommand.
 
         集群的标签信息。 同一个集群最多能使用10个tag，tag的名称（key）不能重复。
 
@@ -782,7 +782,7 @@ class RunJobFlowCommand:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this RunJobFlowCommand.
+        r"""Sets the tags of this RunJobFlowCommand.
 
         集群的标签信息。 同一个集群最多能使用10个tag，tag的名称（key）不能重复。
 
@@ -793,7 +793,7 @@ class RunJobFlowCommand:
 
     @property
     def log_collection(self):
-        """Gets the log_collection of this RunJobFlowCommand.
+        r"""Gets the log_collection of this RunJobFlowCommand.
 
         集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。 枚举值： - 0：不收集 - 1：收集
 
@@ -804,7 +804,7 @@ class RunJobFlowCommand:
 
     @log_collection.setter
     def log_collection(self, log_collection):
-        """Sets the log_collection of this RunJobFlowCommand.
+        r"""Sets the log_collection of this RunJobFlowCommand.
 
         集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。 枚举值： - 0：不收集 - 1：收集
 
@@ -815,7 +815,7 @@ class RunJobFlowCommand:
 
     @property
     def node_groups(self):
-        """Gets the node_groups of this RunJobFlowCommand.
+        r"""Gets the node_groups of this RunJobFlowCommand.
 
         组成集群的节点组信息。
 
@@ -826,7 +826,7 @@ class RunJobFlowCommand:
 
     @node_groups.setter
     def node_groups(self, node_groups):
-        """Sets the node_groups of this RunJobFlowCommand.
+        r"""Sets the node_groups of this RunJobFlowCommand.
 
         组成集群的节点组信息。
 
@@ -837,7 +837,7 @@ class RunJobFlowCommand:
 
     @property
     def bootstrap_scripts(self):
-        """Gets the bootstrap_scripts of this RunJobFlowCommand.
+        r"""Gets the bootstrap_scripts of this RunJobFlowCommand.
 
         配置引导操作脚本信息。
 
@@ -848,7 +848,7 @@ class RunJobFlowCommand:
 
     @bootstrap_scripts.setter
     def bootstrap_scripts(self, bootstrap_scripts):
-        """Sets the bootstrap_scripts of this RunJobFlowCommand.
+        r"""Sets the bootstrap_scripts of this RunJobFlowCommand.
 
         配置引导操作脚本信息。
 
@@ -859,7 +859,7 @@ class RunJobFlowCommand:
 
     @property
     def log_uri(self):
-        """Gets the log_uri of this RunJobFlowCommand.
+        r"""Gets the log_uri of this RunJobFlowCommand.
 
         集群日志转储至OBS的具体路径。 开启日志转储功能后，日志上传需要对应OBS路径的读写权限， 请配置MRS_ECS_DEFULT_AGENCY默认委托或具有对应OBS路径读写权限的自定义委托。 具体请参见[配置存算分离集群（委托方式）](https://support.huaweicloud.com/usermanual-mrs/mrs_01_0768.html)。 该参数只适用于支持“集群日志转储OBS”特性的集群版本。
 
@@ -870,7 +870,7 @@ class RunJobFlowCommand:
 
     @log_uri.setter
     def log_uri(self, log_uri):
-        """Sets the log_uri of this RunJobFlowCommand.
+        r"""Sets the log_uri of this RunJobFlowCommand.
 
         集群日志转储至OBS的具体路径。 开启日志转储功能后，日志上传需要对应OBS路径的读写权限， 请配置MRS_ECS_DEFULT_AGENCY默认委托或具有对应OBS路径读写权限的自定义委托。 具体请参见[配置存算分离集群（委托方式）](https://support.huaweicloud.com/usermanual-mrs/mrs_01_0768.html)。 该参数只适用于支持“集群日志转储OBS”特性的集群版本。
 
@@ -881,7 +881,7 @@ class RunJobFlowCommand:
 
     @property
     def component_configs(self):
-        """Gets the component_configs of this RunJobFlowCommand.
+        r"""Gets the component_configs of this RunJobFlowCommand.
 
         集群组件自定义配置。 该参数只适用于支持“自定义组件配置创建集群”特性的集群版本。
 
@@ -892,7 +892,7 @@ class RunJobFlowCommand:
 
     @component_configs.setter
     def component_configs(self, component_configs):
-        """Sets the component_configs of this RunJobFlowCommand.
+        r"""Sets the component_configs of this RunJobFlowCommand.
 
         集群组件自定义配置。 该参数只适用于支持“自定义组件配置创建集群”特性的集群版本。
 
@@ -903,7 +903,7 @@ class RunJobFlowCommand:
 
     @property
     def delete_when_no_steps(self):
-        """Gets the delete_when_no_steps of this RunJobFlowCommand.
+        r"""Gets the delete_when_no_steps of this RunJobFlowCommand.
 
         作业完成后是否自动删除集群，默认为false。
 
@@ -914,7 +914,7 @@ class RunJobFlowCommand:
 
     @delete_when_no_steps.setter
     def delete_when_no_steps(self, delete_when_no_steps):
-        """Sets the delete_when_no_steps of this RunJobFlowCommand.
+        r"""Sets the delete_when_no_steps of this RunJobFlowCommand.
 
         作业完成后是否自动删除集群，默认为false。
 
@@ -925,7 +925,7 @@ class RunJobFlowCommand:
 
     @property
     def steps(self):
-        """Gets the steps of this RunJobFlowCommand.
+        r"""Gets the steps of this RunJobFlowCommand.
 
         作业列表。
 
@@ -936,7 +936,7 @@ class RunJobFlowCommand:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this RunJobFlowCommand.
+        r"""Sets the steps of this RunJobFlowCommand.
 
         作业列表。
 

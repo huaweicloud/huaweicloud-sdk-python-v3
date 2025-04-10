@@ -27,7 +27,7 @@ class ListProjectsRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None):
-        """ListProjectsRequest
+        r"""ListProjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListProjectsRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ListProjectsRequest.
+        r"""Gets the x_repo_auth of this ListProjectsRequest.
 
         授权名称。
 
@@ -59,7 +59,7 @@ class ListProjectsRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ListProjectsRequest.
+        r"""Sets the x_repo_auth of this ListProjectsRequest.
 
         授权名称。
 
@@ -70,7 +70,7 @@ class ListProjectsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListProjectsRequest.
+        r"""Gets the namespace of this ListProjectsRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -81,7 +81,7 @@ class ListProjectsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListProjectsRequest.
+        r"""Sets the namespace of this ListProjectsRequest.
 
         命名空间ID或者URL编码名称。
 

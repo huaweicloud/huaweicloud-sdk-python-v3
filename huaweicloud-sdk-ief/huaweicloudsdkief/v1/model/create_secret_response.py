@@ -26,7 +26,7 @@ class CreateSecretResponse(SdkResponse):
     }
 
     def __init__(self, secret=None):
-        """CreateSecretResponse
+        r"""CreateSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSecretResponse(SdkResponse):
 
     @property
     def secret(self):
-        """Gets the secret of this CreateSecretResponse.
+        r"""Gets the secret of this CreateSecretResponse.
 
         :return: The secret of this CreateSecretResponse.
         :rtype: :class:`huaweicloudsdkief.v1.SecretDetailResp`
@@ -53,7 +53,7 @@ class CreateSecretResponse(SdkResponse):
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this CreateSecretResponse.
+        r"""Sets the secret of this CreateSecretResponse.
 
         :param secret: The secret of this CreateSecretResponse.
         :type secret: :class:`huaweicloudsdkief.v1.SecretDetailResp`

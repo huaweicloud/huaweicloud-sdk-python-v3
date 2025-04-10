@@ -25,7 +25,7 @@ class ListVpcsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListVpcsByTagsRequest
+        r"""ListVpcsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListVpcsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListVpcsByTagsRequest.
+        r"""Gets the body of this ListVpcsByTagsRequest.
 
         :return: The body of this ListVpcsByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcsByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListVpcsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListVpcsByTagsRequest.
+        r"""Sets the body of this ListVpcsByTagsRequest.
 
         :param body: The body of this ListVpcsByTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.ListVpcsByTagsRequestBody`

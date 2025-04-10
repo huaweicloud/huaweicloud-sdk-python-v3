@@ -31,7 +31,7 @@ class ListCountiesRequest:
     }
 
     def __init__(self, x_language=None, city_code=None, offset=None, limit=None):
-        """ListCountiesRequest
+        r"""ListCountiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListCountiesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCountiesRequest.
+        r"""Gets the x_language of this ListCountiesRequest.
 
         语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
@@ -74,7 +74,7 @@ class ListCountiesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCountiesRequest.
+        r"""Sets the x_language of this ListCountiesRequest.
 
         语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
@@ -85,7 +85,7 @@ class ListCountiesRequest:
 
     @property
     def city_code(self):
-        """Gets the city_code of this ListCountiesRequest.
+        r"""Gets the city_code of this ListCountiesRequest.
 
         城市的编码。
 
@@ -96,7 +96,7 @@ class ListCountiesRequest:
 
     @city_code.setter
     def city_code(self, city_code):
-        """Sets the city_code of this ListCountiesRequest.
+        r"""Sets the city_code of this ListCountiesRequest.
 
         城市的编码。
 
@@ -107,7 +107,7 @@ class ListCountiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCountiesRequest.
+        r"""Gets the offset of this ListCountiesRequest.
 
         偏移量，从0开始。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -118,7 +118,7 @@ class ListCountiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCountiesRequest.
+        r"""Sets the offset of this ListCountiesRequest.
 
         偏移量，从0开始。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -129,7 +129,7 @@ class ListCountiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCountiesRequest.
+        r"""Gets the limit of this ListCountiesRequest.
 
         每次查询的数量，最大1000。该参数不携带时，取默认值10。该参数不支持携带值为空、不支持携带值为空串、不支持携带值为null。
 
@@ -140,7 +140,7 @@ class ListCountiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCountiesRequest.
+        r"""Sets the limit of this ListCountiesRequest.
 
         每次查询的数量，最大1000。该参数不携带时，取默认值10。该参数不支持携带值为空、不支持携带值为空串、不支持携带值为null。
 

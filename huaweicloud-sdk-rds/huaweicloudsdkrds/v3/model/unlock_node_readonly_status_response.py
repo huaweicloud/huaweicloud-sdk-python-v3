@@ -26,7 +26,7 @@ class UnlockNodeReadonlyStatusResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UnlockNodeReadonlyStatusResponse
+        r"""UnlockNodeReadonlyStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnlockNodeReadonlyStatusResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this UnlockNodeReadonlyStatusResponse.
+        r"""Gets the resp of this UnlockNodeReadonlyStatusResponse.
 
         解除结果
 
@@ -55,7 +55,7 @@ class UnlockNodeReadonlyStatusResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this UnlockNodeReadonlyStatusResponse.
+        r"""Sets the resp of this UnlockNodeReadonlyStatusResponse.
 
         解除结果
 

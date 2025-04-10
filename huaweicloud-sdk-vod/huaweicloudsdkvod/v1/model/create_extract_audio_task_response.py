@@ -28,7 +28,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, audio_asset_id=None):
-        """CreateExtractAudioTaskResponse
+        r"""CreateExtractAudioTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreateExtractAudioTaskResponse.
+        r"""Gets the asset_id of this CreateExtractAudioTaskResponse.
 
         视频源媒资ID。
 
@@ -62,7 +62,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreateExtractAudioTaskResponse.
+        r"""Sets the asset_id of this CreateExtractAudioTaskResponse.
 
         视频源媒资ID。
 
@@ -73,7 +73,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
 
     @property
     def audio_asset_id(self):
-        """Gets the audio_asset_id of this CreateExtractAudioTaskResponse.
+        r"""Gets the audio_asset_id of this CreateExtractAudioTaskResponse.
 
         提取的音频媒资ID。
 
@@ -84,7 +84,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
 
     @audio_asset_id.setter
     def audio_asset_id(self, audio_asset_id):
-        """Sets the audio_asset_id of this CreateExtractAudioTaskResponse.
+        r"""Sets the audio_asset_id of this CreateExtractAudioTaskResponse.
 
         提取的音频媒资ID。
 

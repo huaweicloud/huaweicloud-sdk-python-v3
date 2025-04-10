@@ -34,7 +34,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
     }
 
     def __init__(self, stat_type=None, group_by=None, group_by_value=None, interval=None, values=None):
-        """ShowHttpAttackTimelineStatsResponse
+        r"""ShowHttpAttackTimelineStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowHttpAttackTimelineStatsResponse.
+        r"""Gets the stat_type of this ShowHttpAttackTimelineStatsResponse.
 
         指标类型
 
@@ -83,7 +83,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowHttpAttackTimelineStatsResponse.
+        r"""Sets the stat_type of this ShowHttpAttackTimelineStatsResponse.
 
         指标类型
 
@@ -94,7 +94,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowHttpAttackTimelineStatsResponse.
+        r"""Gets the group_by of this ShowHttpAttackTimelineStatsResponse.
 
         分组类型
 
@@ -105,7 +105,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowHttpAttackTimelineStatsResponse.
+        r"""Sets the group_by of this ShowHttpAttackTimelineStatsResponse.
 
         分组类型
 
@@ -116,7 +116,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def group_by_value(self):
-        """Gets the group_by_value of this ShowHttpAttackTimelineStatsResponse.
+        r"""Gets the group_by_value of this ShowHttpAttackTimelineStatsResponse.
 
         分组类型对应的具体的值
 
@@ -127,7 +127,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @group_by_value.setter
     def group_by_value(self, group_by_value):
-        """Sets the group_by_value of this ShowHttpAttackTimelineStatsResponse.
+        r"""Sets the group_by_value of this ShowHttpAttackTimelineStatsResponse.
 
         分组类型对应的具体的值
 
@@ -138,7 +138,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowHttpAttackTimelineStatsResponse.
+        r"""Gets the interval of this ShowHttpAttackTimelineStatsResponse.
 
         时间粒度(单位：秒)
 
@@ -149,7 +149,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowHttpAttackTimelineStatsResponse.
+        r"""Sets the interval of this ShowHttpAttackTimelineStatsResponse.
 
         时间粒度(单位：秒)
 
@@ -160,7 +160,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowHttpAttackTimelineStatsResponse.
+        r"""Gets the values of this ShowHttpAttackTimelineStatsResponse.
 
         值数组
 
@@ -171,7 +171,7 @@ class ShowHttpAttackTimelineStatsResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowHttpAttackTimelineStatsResponse.
+        r"""Sets the values of this ShowHttpAttackTimelineStatsResponse.
 
         值数组
 

@@ -29,7 +29,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchAddOrRemoveResourceInstanceRequest
+        r"""BatchAddOrRemoveResourceInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
+        r"""Gets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
 
         资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
@@ -66,7 +66,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
+        r"""Sets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
 
         资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
@@ -77,7 +77,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
+        r"""Gets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
 
         资源ID，Endpoint Service ID或Endpoint ID。
 
@@ -88,7 +88,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
+        r"""Sets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
 
         资源ID，Endpoint Service ID或Endpoint ID。
 
@@ -99,7 +99,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddOrRemoveResourceInstanceRequest.
+        r"""Gets the body of this BatchAddOrRemoveResourceInstanceRequest.
 
         :return: The body of this BatchAddOrRemoveResourceInstanceRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequestBody`
@@ -108,7 +108,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddOrRemoveResourceInstanceRequest.
+        r"""Sets the body of this BatchAddOrRemoveResourceInstanceRequest.
 
         :param body: The body of this BatchAddOrRemoveResourceInstanceRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequestBody`

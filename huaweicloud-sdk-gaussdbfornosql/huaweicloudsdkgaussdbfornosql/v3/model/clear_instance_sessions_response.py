@@ -24,7 +24,7 @@ class ClearInstanceSessionsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ClearInstanceSessionsResponse
+        r"""ClearInstanceSessionsResponse
 
         The model defined in huaweicloud sdk
 

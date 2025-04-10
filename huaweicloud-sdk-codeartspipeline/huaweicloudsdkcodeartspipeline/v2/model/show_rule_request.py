@@ -29,7 +29,7 @@ class ShowRuleRequest:
     }
 
     def __init__(self, domain_id=None, rule_id=None, cloud_project_id=None):
-        """ShowRuleRequest
+        r"""ShowRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowRuleRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowRuleRequest.
+        r"""Gets the domain_id of this ShowRuleRequest.
 
         租户ID
 
@@ -66,7 +66,7 @@ class ShowRuleRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowRuleRequest.
+        r"""Sets the domain_id of this ShowRuleRequest.
 
         租户ID
 
@@ -77,7 +77,7 @@ class ShowRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowRuleRequest.
+        r"""Gets the rule_id of this ShowRuleRequest.
 
         规则ID
 
@@ -88,7 +88,7 @@ class ShowRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowRuleRequest.
+        r"""Sets the rule_id of this ShowRuleRequest.
 
         规则ID
 
@@ -99,7 +99,7 @@ class ShowRuleRequest:
 
     @property
     def cloud_project_id(self):
-        """Gets the cloud_project_id of this ShowRuleRequest.
+        r"""Gets the cloud_project_id of this ShowRuleRequest.
 
         项目ID
 
@@ -110,7 +110,7 @@ class ShowRuleRequest:
 
     @cloud_project_id.setter
     def cloud_project_id(self, cloud_project_id):
-        """Sets the cloud_project_id of this ShowRuleRequest.
+        r"""Sets the cloud_project_id of this ShowRuleRequest.
 
         项目ID
 

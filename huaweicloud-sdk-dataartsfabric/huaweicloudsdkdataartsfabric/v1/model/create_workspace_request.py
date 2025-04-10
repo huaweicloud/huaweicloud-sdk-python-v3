@@ -25,7 +25,7 @@ class CreateWorkspaceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWorkspaceRequest
+        r"""CreateWorkspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateWorkspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateWorkspaceRequest.
+        r"""Gets the body of this CreateWorkspaceRequest.
 
         :return: The body of this CreateWorkspaceRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CreateWorkspaceRequestInput`
@@ -52,7 +52,7 @@ class CreateWorkspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateWorkspaceRequest.
+        r"""Sets the body of this CreateWorkspaceRequest.
 
         :param body: The body of this CreateWorkspaceRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.CreateWorkspaceRequestInput`

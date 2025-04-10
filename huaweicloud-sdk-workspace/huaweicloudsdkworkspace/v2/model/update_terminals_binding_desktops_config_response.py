@@ -24,7 +24,7 @@ class UpdateTerminalsBindingDesktopsConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTerminalsBindingDesktopsConfigResponse
+        r"""UpdateTerminalsBindingDesktopsConfigResponse
 
         The model defined in huaweicloud sdk
 

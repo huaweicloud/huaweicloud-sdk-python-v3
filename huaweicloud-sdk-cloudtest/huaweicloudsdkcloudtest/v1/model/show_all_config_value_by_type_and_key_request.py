@@ -29,7 +29,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
     }
 
     def __init__(self, service_id=None, key=None, type=None):
-        """ShowAllConfigValueByTypeAndKeyRequest
+        r"""ShowAllConfigValueByTypeAndKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowAllConfigValueByTypeAndKeyRequest.
+        r"""Gets the service_id of this ShowAllConfigValueByTypeAndKeyRequest.
 
         服务id
 
@@ -65,7 +65,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowAllConfigValueByTypeAndKeyRequest.
+        r"""Sets the service_id of this ShowAllConfigValueByTypeAndKeyRequest.
 
         服务id
 
@@ -76,7 +76,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
 
     @property
     def key(self):
-        """Gets the key of this ShowAllConfigValueByTypeAndKeyRequest.
+        r"""Gets the key of this ShowAllConfigValueByTypeAndKeyRequest.
 
         配置项key
 
@@ -87,7 +87,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowAllConfigValueByTypeAndKeyRequest.
+        r"""Sets the key of this ShowAllConfigValueByTypeAndKeyRequest.
 
         配置项key
 
@@ -98,7 +98,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowAllConfigValueByTypeAndKeyRequest.
+        r"""Gets the type of this ShowAllConfigValueByTypeAndKeyRequest.
 
         配置项类型
 
@@ -109,7 +109,7 @@ class ShowAllConfigValueByTypeAndKeyRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAllConfigValueByTypeAndKeyRequest.
+        r"""Sets the type of this ShowAllConfigValueByTypeAndKeyRequest.
 
         配置项类型
 

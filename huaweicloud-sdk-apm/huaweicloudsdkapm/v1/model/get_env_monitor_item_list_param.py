@@ -29,7 +29,7 @@ class GetEnvMonitorItemListParam:
     }
 
     def __init__(self, env_id=None, page=None, page_size=None):
-        """GetEnvMonitorItemListParam
+        r"""GetEnvMonitorItemListParam
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GetEnvMonitorItemListParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this GetEnvMonitorItemListParam.
+        r"""Gets the env_id of this GetEnvMonitorItemListParam.
 
         环境id。
 
@@ -66,7 +66,7 @@ class GetEnvMonitorItemListParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this GetEnvMonitorItemListParam.
+        r"""Sets the env_id of this GetEnvMonitorItemListParam.
 
         环境id。
 
@@ -77,7 +77,7 @@ class GetEnvMonitorItemListParam:
 
     @property
     def page(self):
-        """Gets the page of this GetEnvMonitorItemListParam.
+        r"""Gets the page of this GetEnvMonitorItemListParam.
 
         页码。
 
@@ -88,7 +88,7 @@ class GetEnvMonitorItemListParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this GetEnvMonitorItemListParam.
+        r"""Sets the page of this GetEnvMonitorItemListParam.
 
         页码。
 
@@ -99,7 +99,7 @@ class GetEnvMonitorItemListParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this GetEnvMonitorItemListParam.
+        r"""Gets the page_size of this GetEnvMonitorItemListParam.
 
         每页数量。
 
@@ -110,7 +110,7 @@ class GetEnvMonitorItemListParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this GetEnvMonitorItemListParam.
+        r"""Sets the page_size of this GetEnvMonitorItemListParam.
 
         每页数量。
 

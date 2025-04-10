@@ -30,7 +30,7 @@ class ListOrganizationTreeResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None, x_request_id=None):
-        """ListOrganizationTreeResponse
+        r"""ListOrganizationTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListOrganizationTreeResponse.
+        r"""Gets the total_num of this ListOrganizationTreeResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListOrganizationTreeResponse.
+        r"""Sets the total_num of this ListOrganizationTreeResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListOrganizationTreeResponse.
+        r"""Gets the data_list of this ListOrganizationTreeResponse.
 
         事件列表详情
 
@@ -91,7 +91,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListOrganizationTreeResponse.
+        r"""Sets the data_list of this ListOrganizationTreeResponse.
 
         事件列表详情
 
@@ -102,7 +102,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListOrganizationTreeResponse.
+        r"""Gets the x_request_id of this ListOrganizationTreeResponse.
 
         :return: The x_request_id of this ListOrganizationTreeResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListOrganizationTreeResponse.
+        r"""Sets the x_request_id of this ListOrganizationTreeResponse.
 
         :param x_request_id: The x_request_id of this ListOrganizationTreeResponse.
         :type x_request_id: str

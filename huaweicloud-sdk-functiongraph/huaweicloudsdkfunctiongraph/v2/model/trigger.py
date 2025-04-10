@@ -31,7 +31,7 @@ class Trigger:
     }
 
     def __init__(self, trigger_name=None, trigger_type=None, enabled=None, trigger_config=None):
-        """Trigger
+        r"""Trigger
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Trigger:
 
     @property
     def trigger_name(self):
-        """Gets the trigger_name of this Trigger.
+        r"""Gets the trigger_name of this Trigger.
 
         触发器名称
 
@@ -73,7 +73,7 @@ class Trigger:
 
     @trigger_name.setter
     def trigger_name(self, trigger_name):
-        """Sets the trigger_name of this Trigger.
+        r"""Sets the trigger_name of this Trigger.
 
         触发器名称
 
@@ -84,7 +84,7 @@ class Trigger:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this Trigger.
+        r"""Gets the trigger_type of this Trigger.
 
         触发器类型 FLOWTIMER：定时触发器 SMN：SMN触发器 APIG：APIG触发器(共享版) APIG_DE：APIG触发器(专享版) OBS：OBS触发器
 
@@ -95,7 +95,7 @@ class Trigger:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this Trigger.
+        r"""Sets the trigger_type of this Trigger.
 
         触发器类型 FLOWTIMER：定时触发器 SMN：SMN触发器 APIG：APIG触发器(共享版) APIG_DE：APIG触发器(专享版) OBS：OBS触发器
 
@@ -106,7 +106,7 @@ class Trigger:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Trigger.
+        r"""Gets the enabled of this Trigger.
 
         是否启用触发器
 
@@ -117,7 +117,7 @@ class Trigger:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Trigger.
+        r"""Sets the enabled of this Trigger.
 
         是否启用触发器
 
@@ -128,7 +128,7 @@ class Trigger:
 
     @property
     def trigger_config(self):
-        """Gets the trigger_config of this Trigger.
+        r"""Gets the trigger_config of this Trigger.
 
         :return: The trigger_config of this Trigger.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`
@@ -137,7 +137,7 @@ class Trigger:
 
     @trigger_config.setter
     def trigger_config(self, trigger_config):
-        """Sets the trigger_config of this Trigger.
+        r"""Sets the trigger_config of this Trigger.
 
         :param trigger_config: The trigger_config of this Trigger.
         :type trigger_config: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`

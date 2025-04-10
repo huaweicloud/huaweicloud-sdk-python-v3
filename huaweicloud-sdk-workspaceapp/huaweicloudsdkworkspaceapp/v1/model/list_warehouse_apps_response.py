@@ -28,7 +28,7 @@ class ListWarehouseAppsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListWarehouseAppsResponse
+        r"""ListWarehouseAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWarehouseAppsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWarehouseAppsResponse.
+        r"""Gets the count of this ListWarehouseAppsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListWarehouseAppsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWarehouseAppsResponse.
+        r"""Sets the count of this ListWarehouseAppsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListWarehouseAppsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListWarehouseAppsResponse.
+        r"""Gets the items of this ListWarehouseAppsResponse.
 
         应用仓库中的应用列表。
 
@@ -84,7 +84,7 @@ class ListWarehouseAppsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListWarehouseAppsResponse.
+        r"""Sets the items of this ListWarehouseAppsResponse.
 
         应用仓库中的应用列表。
 

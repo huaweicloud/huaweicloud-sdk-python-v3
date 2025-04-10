@@ -49,7 +49,7 @@ class ListScheduledTaskHistoryRequest:
     }
 
     def __init__(self, task_id=None, id=None, region=None, status=None, started_start_time=None, started_end_time=None, finished_start_time=None, finished_end_time=None, marker=None, offset=None, limit=None, sort_key=None, sort_dir=None):
-        """ListScheduledTaskHistoryRequest
+        r"""ListScheduledTaskHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListScheduledTaskHistoryRequest.
+        r"""Gets the task_id of this ListScheduledTaskHistoryRequest.
 
         ID of ScheduledTask
 
@@ -136,7 +136,7 @@ class ListScheduledTaskHistoryRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListScheduledTaskHistoryRequest.
+        r"""Sets the task_id of this ListScheduledTaskHistoryRequest.
 
         ID of ScheduledTask
 
@@ -147,7 +147,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListScheduledTaskHistoryRequest.
+        r"""Gets the id of this ListScheduledTaskHistoryRequest.
 
         工单ID
 
@@ -158,7 +158,7 @@ class ListScheduledTaskHistoryRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListScheduledTaskHistoryRequest.
+        r"""Sets the id of this ListScheduledTaskHistoryRequest.
 
         工单ID
 
@@ -169,7 +169,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListScheduledTaskHistoryRequest.
+        r"""Gets the region of this ListScheduledTaskHistoryRequest.
 
         区域
 
@@ -180,7 +180,7 @@ class ListScheduledTaskHistoryRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListScheduledTaskHistoryRequest.
+        r"""Sets the region of this ListScheduledTaskHistoryRequest.
 
         区域
 
@@ -191,7 +191,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScheduledTaskHistoryRequest.
+        r"""Gets the status of this ListScheduledTaskHistoryRequest.
 
         状态
 
@@ -202,7 +202,7 @@ class ListScheduledTaskHistoryRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScheduledTaskHistoryRequest.
+        r"""Sets the status of this ListScheduledTaskHistoryRequest.
 
         状态
 
@@ -213,7 +213,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def started_start_time(self):
-        """Gets the started_start_time of this ListScheduledTaskHistoryRequest.
+        r"""Gets the started_start_time of this ListScheduledTaskHistoryRequest.
 
         开始时间参数的查询开始区间时间戳
 
@@ -224,7 +224,7 @@ class ListScheduledTaskHistoryRequest:
 
     @started_start_time.setter
     def started_start_time(self, started_start_time):
-        """Sets the started_start_time of this ListScheduledTaskHistoryRequest.
+        r"""Sets the started_start_time of this ListScheduledTaskHistoryRequest.
 
         开始时间参数的查询开始区间时间戳
 
@@ -235,7 +235,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def started_end_time(self):
-        """Gets the started_end_time of this ListScheduledTaskHistoryRequest.
+        r"""Gets the started_end_time of this ListScheduledTaskHistoryRequest.
 
         开始时间参数的查询结束区间时间戳
 
@@ -246,7 +246,7 @@ class ListScheduledTaskHistoryRequest:
 
     @started_end_time.setter
     def started_end_time(self, started_end_time):
-        """Sets the started_end_time of this ListScheduledTaskHistoryRequest.
+        r"""Sets the started_end_time of this ListScheduledTaskHistoryRequest.
 
         开始时间参数的查询结束区间时间戳
 
@@ -257,7 +257,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def finished_start_time(self):
-        """Gets the finished_start_time of this ListScheduledTaskHistoryRequest.
+        r"""Gets the finished_start_time of this ListScheduledTaskHistoryRequest.
 
         结束时间参数的查询开始区间时间戳
 
@@ -268,7 +268,7 @@ class ListScheduledTaskHistoryRequest:
 
     @finished_start_time.setter
     def finished_start_time(self, finished_start_time):
-        """Sets the finished_start_time of this ListScheduledTaskHistoryRequest.
+        r"""Sets the finished_start_time of this ListScheduledTaskHistoryRequest.
 
         结束时间参数的查询开始区间时间戳
 
@@ -279,7 +279,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def finished_end_time(self):
-        """Gets the finished_end_time of this ListScheduledTaskHistoryRequest.
+        r"""Gets the finished_end_time of this ListScheduledTaskHistoryRequest.
 
         结束时间参数的查询结束区间时间戳
 
@@ -290,7 +290,7 @@ class ListScheduledTaskHistoryRequest:
 
     @finished_end_time.setter
     def finished_end_time(self, finished_end_time):
-        """Sets the finished_end_time of this ListScheduledTaskHistoryRequest.
+        r"""Sets the finished_end_time of this ListScheduledTaskHistoryRequest.
 
         结束时间参数的查询结束区间时间戳
 
@@ -301,7 +301,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListScheduledTaskHistoryRequest.
+        r"""Gets the marker of this ListScheduledTaskHistoryRequest.
 
         上一页数据的最后一条记录的id
 
@@ -312,7 +312,7 @@ class ListScheduledTaskHistoryRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListScheduledTaskHistoryRequest.
+        r"""Sets the marker of this ListScheduledTaskHistoryRequest.
 
         上一页数据的最后一条记录的id
 
@@ -323,7 +323,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduledTaskHistoryRequest.
+        r"""Gets the offset of this ListScheduledTaskHistoryRequest.
 
         分页指针
 
@@ -334,7 +334,7 @@ class ListScheduledTaskHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduledTaskHistoryRequest.
+        r"""Sets the offset of this ListScheduledTaskHistoryRequest.
 
         分页指针
 
@@ -345,7 +345,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduledTaskHistoryRequest.
+        r"""Gets the limit of this ListScheduledTaskHistoryRequest.
 
         每页数量
 
@@ -356,7 +356,7 @@ class ListScheduledTaskHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduledTaskHistoryRequest.
+        r"""Sets the limit of this ListScheduledTaskHistoryRequest.
 
         每页数量
 
@@ -367,7 +367,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListScheduledTaskHistoryRequest.
+        r"""Gets the sort_key of this ListScheduledTaskHistoryRequest.
 
         排序字段名：支持 started_time,finished_time
 
@@ -378,7 +378,7 @@ class ListScheduledTaskHistoryRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListScheduledTaskHistoryRequest.
+        r"""Sets the sort_key of this ListScheduledTaskHistoryRequest.
 
         排序字段名：支持 started_time,finished_time
 
@@ -389,7 +389,7 @@ class ListScheduledTaskHistoryRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListScheduledTaskHistoryRequest.
+        r"""Gets the sort_dir of this ListScheduledTaskHistoryRequest.
 
         排序方式，asc升序，desc降序
 
@@ -400,7 +400,7 @@ class ListScheduledTaskHistoryRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListScheduledTaskHistoryRequest.
+        r"""Sets the sort_dir of this ListScheduledTaskHistoryRequest.
 
         排序方式，asc升序，desc降序
 

@@ -43,7 +43,7 @@ class AppResp:
     }
 
     def __init__(self, id=None, name=None, alias=None, description=None, icon_url=None, created_at=None, updated_at=None, project_id=None, visibility=None, app_versions=None):
-        """AppResp
+        r"""AppResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class AppResp:
 
     @property
     def id(self):
-        """Gets the id of this AppResp.
+        r"""Gets the id of this AppResp.
 
         应用模板ID
 
@@ -107,7 +107,7 @@ class AppResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppResp.
+        r"""Sets the id of this AppResp.
 
         应用模板ID
 
@@ -118,7 +118,7 @@ class AppResp:
 
     @property
     def name(self):
-        """Gets the name of this AppResp.
+        r"""Gets the name of this AppResp.
 
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
@@ -129,7 +129,7 @@ class AppResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppResp.
+        r"""Sets the name of this AppResp.
 
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
@@ -140,7 +140,7 @@ class AppResp:
 
     @property
     def alias(self):
-        """Gets the alias of this AppResp.
+        r"""Gets the alias of this AppResp.
 
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
@@ -151,7 +151,7 @@ class AppResp:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AppResp.
+        r"""Sets the alias of this AppResp.
 
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
@@ -162,7 +162,7 @@ class AppResp:
 
     @property
     def description(self):
-        """Gets the description of this AppResp.
+        r"""Gets the description of this AppResp.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -173,7 +173,7 @@ class AppResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppResp.
+        r"""Sets the description of this AppResp.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -184,7 +184,7 @@ class AppResp:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this AppResp.
+        r"""Gets the icon_url of this AppResp.
 
         应用图标存储url地址，最大长度2083
 
@@ -195,7 +195,7 @@ class AppResp:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this AppResp.
+        r"""Sets the icon_url of this AppResp.
 
         应用图标存储url地址，最大长度2083
 
@@ -206,7 +206,7 @@ class AppResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AppResp.
+        r"""Gets the created_at of this AppResp.
 
         创建时间
 
@@ -217,7 +217,7 @@ class AppResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AppResp.
+        r"""Sets the created_at of this AppResp.
 
         创建时间
 
@@ -228,7 +228,7 @@ class AppResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AppResp.
+        r"""Gets the updated_at of this AppResp.
 
         更新时间
 
@@ -239,7 +239,7 @@ class AppResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AppResp.
+        r"""Sets the updated_at of this AppResp.
 
         更新时间
 
@@ -250,7 +250,7 @@ class AppResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppResp.
+        r"""Gets the project_id of this AppResp.
 
         项目ID
 
@@ -261,7 +261,7 @@ class AppResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppResp.
+        r"""Sets the project_id of this AppResp.
 
         项目ID
 
@@ -272,7 +272,7 @@ class AppResp:
 
     @property
     def visibility(self):
-        """Gets the visibility of this AppResp.
+        r"""Gets the visibility of this AppResp.
 
         模板类型
 
@@ -283,7 +283,7 @@ class AppResp:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this AppResp.
+        r"""Sets the visibility of this AppResp.
 
         模板类型
 
@@ -294,7 +294,7 @@ class AppResp:
 
     @property
     def app_versions(self):
-        """Gets the app_versions of this AppResp.
+        r"""Gets the app_versions of this AppResp.
 
         app详情
 
@@ -305,7 +305,7 @@ class AppResp:
 
     @app_versions.setter
     def app_versions(self, app_versions):
-        """Sets the app_versions of this AppResp.
+        r"""Sets the app_versions of this AppResp.
 
         app详情
 

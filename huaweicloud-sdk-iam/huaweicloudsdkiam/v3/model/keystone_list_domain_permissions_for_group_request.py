@@ -27,7 +27,7 @@ class KeystoneListDomainPermissionsForGroupRequest:
     }
 
     def __init__(self, domain_id=None, group_id=None):
-        """KeystoneListDomainPermissionsForGroupRequest
+        r"""KeystoneListDomainPermissionsForGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeystoneListDomainPermissionsForGroupRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneListDomainPermissionsForGroupRequest.
+        r"""Gets the domain_id of this KeystoneListDomainPermissionsForGroupRequest.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -59,7 +59,7 @@ class KeystoneListDomainPermissionsForGroupRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneListDomainPermissionsForGroupRequest.
+        r"""Sets the domain_id of this KeystoneListDomainPermissionsForGroupRequest.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -70,7 +70,7 @@ class KeystoneListDomainPermissionsForGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneListDomainPermissionsForGroupRequest.
+        r"""Gets the group_id of this KeystoneListDomainPermissionsForGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -81,7 +81,7 @@ class KeystoneListDomainPermissionsForGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneListDomainPermissionsForGroupRequest.
+        r"""Sets the group_id of this KeystoneListDomainPermissionsForGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

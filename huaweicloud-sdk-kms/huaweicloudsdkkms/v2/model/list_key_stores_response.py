@@ -28,7 +28,7 @@ class ListKeyStoresResponse(SdkResponse):
     }
 
     def __init__(self, total=None, keystores=None):
-        """ListKeyStoresResponse
+        r"""ListKeyStoresResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListKeyStoresResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListKeyStoresResponse.
+        r"""Gets the total of this ListKeyStoresResponse.
 
         密钥库总数
 
@@ -62,7 +62,7 @@ class ListKeyStoresResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListKeyStoresResponse.
+        r"""Sets the total of this ListKeyStoresResponse.
 
         密钥库总数
 
@@ -73,7 +73,7 @@ class ListKeyStoresResponse(SdkResponse):
 
     @property
     def keystores(self):
-        """Gets the keystores of this ListKeyStoresResponse.
+        r"""Gets the keystores of this ListKeyStoresResponse.
 
         密钥详情列表。详情参见KeystoreDetails
 
@@ -84,7 +84,7 @@ class ListKeyStoresResponse(SdkResponse):
 
     @keystores.setter
     def keystores(self, keystores):
-        """Sets the keystores of this ListKeyStoresResponse.
+        r"""Sets the keystores of this ListKeyStoresResponse.
 
         密钥详情列表。详情参见KeystoreDetails
 

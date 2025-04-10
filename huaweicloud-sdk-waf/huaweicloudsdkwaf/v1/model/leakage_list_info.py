@@ -39,7 +39,7 @@ class LeakageListInfo:
     }
 
     def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None):
-        """LeakageListInfo
+        r"""LeakageListInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class LeakageListInfo:
 
     @property
     def id(self):
-        """Gets the id of this LeakageListInfo.
+        r"""Gets the id of this LeakageListInfo.
 
         规则id
 
@@ -103,7 +103,7 @@ class LeakageListInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LeakageListInfo.
+        r"""Sets the id of this LeakageListInfo.
 
         规则id
 
@@ -114,7 +114,7 @@ class LeakageListInfo:
 
     @property
     def policyid(self):
-        """Gets the policyid of this LeakageListInfo.
+        r"""Gets the policyid of this LeakageListInfo.
 
         策略id
 
@@ -125,7 +125,7 @@ class LeakageListInfo:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this LeakageListInfo.
+        r"""Sets the policyid of this LeakageListInfo.
 
         策略id
 
@@ -136,7 +136,7 @@ class LeakageListInfo:
 
     @property
     def url(self):
-        """Gets the url of this LeakageListInfo.
+        r"""Gets the url of this LeakageListInfo.
 
         规则应用的url
 
@@ -147,7 +147,7 @@ class LeakageListInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this LeakageListInfo.
+        r"""Sets the url of this LeakageListInfo.
 
         规则应用的url
 
@@ -158,7 +158,7 @@ class LeakageListInfo:
 
     @property
     def category(self):
-        """Gets the category of this LeakageListInfo.
+        r"""Gets the category of this LeakageListInfo.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -169,7 +169,7 @@ class LeakageListInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this LeakageListInfo.
+        r"""Sets the category of this LeakageListInfo.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -180,7 +180,7 @@ class LeakageListInfo:
 
     @property
     def contents(self):
-        """Gets the contents of this LeakageListInfo.
+        r"""Gets the contents of this LeakageListInfo.
 
         规则内容
 
@@ -191,7 +191,7 @@ class LeakageListInfo:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this LeakageListInfo.
+        r"""Sets the contents of this LeakageListInfo.
 
         规则内容
 
@@ -202,7 +202,7 @@ class LeakageListInfo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this LeakageListInfo.
+        r"""Gets the timestamp of this LeakageListInfo.
 
         创建规则时间戳
 
@@ -213,7 +213,7 @@ class LeakageListInfo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this LeakageListInfo.
+        r"""Sets the timestamp of this LeakageListInfo.
 
         创建规则时间戳
 
@@ -224,7 +224,7 @@ class LeakageListInfo:
 
     @property
     def status(self):
-        """Gets the status of this LeakageListInfo.
+        r"""Gets the status of this LeakageListInfo.
 
         规则状态，0：关闭，1：开启
 
@@ -235,7 +235,7 @@ class LeakageListInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LeakageListInfo.
+        r"""Sets the status of this LeakageListInfo.
 
         规则状态，0：关闭，1：开启
 
@@ -246,7 +246,7 @@ class LeakageListInfo:
 
     @property
     def description(self):
-        """Gets the description of this LeakageListInfo.
+        r"""Gets the description of this LeakageListInfo.
 
         规则描述
 
@@ -257,7 +257,7 @@ class LeakageListInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LeakageListInfo.
+        r"""Sets the description of this LeakageListInfo.
 
         规则描述
 

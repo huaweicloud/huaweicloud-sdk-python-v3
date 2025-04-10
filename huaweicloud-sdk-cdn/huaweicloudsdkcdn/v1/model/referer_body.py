@@ -25,7 +25,7 @@ class RefererBody:
     }
 
     def __init__(self, referer=None):
-        """RefererBody
+        r"""RefererBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RefererBody:
 
     @property
     def referer(self):
-        """Gets the referer of this RefererBody.
+        r"""Gets the referer of this RefererBody.
 
         :return: The referer of this RefererBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Referer`
@@ -51,7 +51,7 @@ class RefererBody:
 
     @referer.setter
     def referer(self, referer):
-        """Sets the referer of this RefererBody.
+        r"""Sets the referer of this RefererBody.
 
         :param referer: The referer of this RefererBody.
         :type referer: :class:`huaweicloudsdkcdn.v1.Referer`

@@ -31,7 +31,7 @@ class ResourceChangeExternalVo:
     }
 
     def __init__(self, field_name=None, custom_field_type=None, old_change_info=None, new_change_info=None):
-        """ResourceChangeExternalVo
+        r"""ResourceChangeExternalVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceChangeExternalVo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this ResourceChangeExternalVo.
+        r"""Gets the field_name of this ResourceChangeExternalVo.
 
         变更字段
 
@@ -75,7 +75,7 @@ class ResourceChangeExternalVo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this ResourceChangeExternalVo.
+        r"""Sets the field_name of this ResourceChangeExternalVo.
 
         变更字段
 
@@ -86,7 +86,7 @@ class ResourceChangeExternalVo:
 
     @property
     def custom_field_type(self):
-        """Gets the custom_field_type of this ResourceChangeExternalVo.
+        r"""Gets the custom_field_type of this ResourceChangeExternalVo.
 
         测试用例自定义字段类型
 
@@ -97,7 +97,7 @@ class ResourceChangeExternalVo:
 
     @custom_field_type.setter
     def custom_field_type(self, custom_field_type):
-        """Sets the custom_field_type of this ResourceChangeExternalVo.
+        r"""Sets the custom_field_type of this ResourceChangeExternalVo.
 
         测试用例自定义字段类型
 
@@ -108,7 +108,7 @@ class ResourceChangeExternalVo:
 
     @property
     def old_change_info(self):
-        """Gets the old_change_info of this ResourceChangeExternalVo.
+        r"""Gets the old_change_info of this ResourceChangeExternalVo.
 
         :return: The old_change_info of this ResourceChangeExternalVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ElementResourceChangeExternalVo`
@@ -117,7 +117,7 @@ class ResourceChangeExternalVo:
 
     @old_change_info.setter
     def old_change_info(self, old_change_info):
-        """Sets the old_change_info of this ResourceChangeExternalVo.
+        r"""Sets the old_change_info of this ResourceChangeExternalVo.
 
         :param old_change_info: The old_change_info of this ResourceChangeExternalVo.
         :type old_change_info: :class:`huaweicloudsdkcloudtest.v1.ElementResourceChangeExternalVo`
@@ -126,7 +126,7 @@ class ResourceChangeExternalVo:
 
     @property
     def new_change_info(self):
-        """Gets the new_change_info of this ResourceChangeExternalVo.
+        r"""Gets the new_change_info of this ResourceChangeExternalVo.
 
         :return: The new_change_info of this ResourceChangeExternalVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ElementResourceChangeExternalVo`
@@ -135,7 +135,7 @@ class ResourceChangeExternalVo:
 
     @new_change_info.setter
     def new_change_info(self, new_change_info):
-        """Sets the new_change_info of this ResourceChangeExternalVo.
+        r"""Sets the new_change_info of this ResourceChangeExternalVo.
 
         :param new_change_info: The new_change_info of this ResourceChangeExternalVo.
         :type new_change_info: :class:`huaweicloudsdkcloudtest.v1.ElementResourceChangeExternalVo`

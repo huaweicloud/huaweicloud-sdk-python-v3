@@ -27,7 +27,7 @@ class AddressFamily:
     }
 
     def __init__(self):
-        """AddressFamily
+        r"""AddressFamily
 
         The model defined in huaweicloud sdk
 

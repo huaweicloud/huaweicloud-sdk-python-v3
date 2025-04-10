@@ -35,7 +35,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, job_type=None, job_name=None, tags=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListJobsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListJobsRequest.
+        r"""Gets the workspace of this ListJobsRequest.
 
         工作空间id
 
@@ -89,7 +89,7 @@ class ListJobsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListJobsRequest.
+        r"""Sets the workspace of this ListJobsRequest.
 
         工作空间id
 
@@ -100,7 +100,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         分页参数：每页限定数量
 
@@ -111,7 +111,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         分页参数：每页限定数量
 
@@ -122,7 +122,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         分页参数：页数
 
@@ -133,7 +133,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         分页参数：页数
 
@@ -144,7 +144,7 @@ class ListJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListJobsRequest.
+        r"""Gets the job_type of this ListJobsRequest.
 
         作业类型:  - REAL_TIME: 实时处理   - BATCH: 批处理
 
@@ -155,7 +155,7 @@ class ListJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListJobsRequest.
+        r"""Sets the job_type of this ListJobsRequest.
 
         作业类型:  - REAL_TIME: 实时处理   - BATCH: 批处理
 
@@ -166,7 +166,7 @@ class ListJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListJobsRequest.
+        r"""Gets the job_name of this ListJobsRequest.
 
         作业名称
 
@@ -177,7 +177,7 @@ class ListJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListJobsRequest.
+        r"""Sets the job_name of this ListJobsRequest.
 
         作业名称
 
@@ -188,7 +188,7 @@ class ListJobsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListJobsRequest.
+        r"""Gets the tags of this ListJobsRequest.
 
         作业标签
 
@@ -199,7 +199,7 @@ class ListJobsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListJobsRequest.
+        r"""Sets the tags of this ListJobsRequest.
 
         作业标签
 

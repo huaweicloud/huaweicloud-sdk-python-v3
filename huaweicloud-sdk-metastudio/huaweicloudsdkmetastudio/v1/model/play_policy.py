@@ -35,7 +35,7 @@ class PlayPolicy:
     }
 
     def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None, need_independent_capture_client=None, live_exit_config=None):
-        """PlayPolicy
+        r"""PlayPolicy
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PlayPolicy:
 
     @property
     def repeat_count(self):
-        """Gets the repeat_count of this PlayPolicy.
+        r"""Gets the repeat_count of this PlayPolicy.
 
         **参数解释**： 剧本重复播放次数。 * -1：表示持续重复，直至人工停止。 * 0：表示不重复，仅执行一次。 * 其他值n：实际运行次数为n+1次。  **约束限制**： 不涉及。
 
@@ -89,7 +89,7 @@ class PlayPolicy:
 
     @repeat_count.setter
     def repeat_count(self, repeat_count):
-        """Sets the repeat_count of this PlayPolicy.
+        r"""Sets the repeat_count of this PlayPolicy.
 
         **参数解释**： 剧本重复播放次数。 * -1：表示持续重复，直至人工停止。 * 0：表示不重复，仅执行一次。 * 其他值n：实际运行次数为n+1次。  **约束限制**： 不涉及。
 
@@ -100,7 +100,7 @@ class PlayPolicy:
 
     @property
     def auto_play_script(self):
-        """Gets the auto_play_script of this PlayPolicy.
+        r"""Gets the auto_play_script of this PlayPolicy.
 
         **参数解释**： 是否自动播放剧本。 **约束限制**： 不涉及。 **取值范围**： * true：服务完成任务初始化后，自动播放剧本。 * false：服务完成任务初始化后，等待信号后再开始播放剧本。
 
@@ -111,7 +111,7 @@ class PlayPolicy:
 
     @auto_play_script.setter
     def auto_play_script(self, auto_play_script):
-        """Sets the auto_play_script of this PlayPolicy.
+        r"""Sets the auto_play_script of this PlayPolicy.
 
         **参数解释**： 是否自动播放剧本。 **约束限制**： 不涉及。 **取值范围**： * true：服务完成任务初始化后，自动播放剧本。 * false：服务完成任务初始化后，等待信号后再开始播放剧本。
 
@@ -122,7 +122,7 @@ class PlayPolicy:
 
     @property
     def play_mode(self):
-        """Gets the play_mode of this PlayPolicy.
+        r"""Gets the play_mode of this PlayPolicy.
 
         **参数解释**： 驱动方式。 **约束限制**： 不涉及。 **取值范围**： * TEXT：文本驱动，即通过TTS合成语音。 * AUDIO：语音驱动。 * NO_PRESET：无预置剧本，人工控制模式。
 
@@ -133,7 +133,7 @@ class PlayPolicy:
 
     @play_mode.setter
     def play_mode(self, play_mode):
-        """Sets the play_mode of this PlayPolicy.
+        r"""Sets the play_mode of this PlayPolicy.
 
         **参数解释**： 驱动方式。 **约束限制**： 不涉及。 **取值范围**： * TEXT：文本驱动，即通过TTS合成语音。 * AUDIO：语音驱动。 * NO_PRESET：无预置剧本，人工控制模式。
 
@@ -144,7 +144,7 @@ class PlayPolicy:
 
     @property
     def random_play_mode(self):
-        """Gets the random_play_mode of this PlayPolicy.
+        r"""Gets the random_play_mode of this PlayPolicy.
 
         **参数解释**： 随机播报模式。 **约束限制**： 从第二轮播报开始随机。 **取值范围**： * NONE：不启动随机播报。 * SCENE：按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM：场景和段落都随机播报。
 
@@ -155,7 +155,7 @@ class PlayPolicy:
 
     @random_play_mode.setter
     def random_play_mode(self, random_play_mode):
-        """Sets the random_play_mode of this PlayPolicy.
+        r"""Sets the random_play_mode of this PlayPolicy.
 
         **参数解释**： 随机播报模式。 **约束限制**： 从第二轮播报开始随机。 **取值范围**： * NONE：不启动随机播报。 * SCENE：按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM：场景和段落都随机播报。
 
@@ -166,7 +166,7 @@ class PlayPolicy:
 
     @property
     def need_independent_capture_client(self):
-        """Gets the need_independent_capture_client of this PlayPolicy.
+        r"""Gets the need_independent_capture_client of this PlayPolicy.
 
         **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * fasle：仅分配PLAYER一个RTC用户。
 
@@ -177,7 +177,7 @@ class PlayPolicy:
 
     @need_independent_capture_client.setter
     def need_independent_capture_client(self, need_independent_capture_client):
-        """Sets the need_independent_capture_client of this PlayPolicy.
+        r"""Sets the need_independent_capture_client of this PlayPolicy.
 
         **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * fasle：仅分配PLAYER一个RTC用户。
 
@@ -188,7 +188,7 @@ class PlayPolicy:
 
     @property
     def live_exit_config(self):
-        """Gets the live_exit_config of this PlayPolicy.
+        r"""Gets the live_exit_config of this PlayPolicy.
 
         :return: The live_exit_config of this PlayPolicy.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
@@ -197,7 +197,7 @@ class PlayPolicy:
 
     @live_exit_config.setter
     def live_exit_config(self, live_exit_config):
-        """Sets the live_exit_config of this PlayPolicy.
+        r"""Sets the live_exit_config of this PlayPolicy.
 
         :param live_exit_config: The live_exit_config of this PlayPolicy.
         :type live_exit_config: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`

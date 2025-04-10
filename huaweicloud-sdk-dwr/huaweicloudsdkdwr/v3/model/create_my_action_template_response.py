@@ -48,7 +48,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_name=None, created_at=None, func_pkg_path=None, func_logo_path=None, func_help_path=None, func_test_report_path=None, func_opensource_notice_path=None, func_sla_path=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """CreateMyActionTemplateResponse
+        r"""CreateMyActionTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this CreateMyActionTemplateResponse.
+        r"""Gets the template_name of this CreateMyActionTemplateResponse.
 
         三方算子ID
 
@@ -132,7 +132,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this CreateMyActionTemplateResponse.
+        r"""Sets the template_name of this CreateMyActionTemplateResponse.
 
         三方算子ID
 
@@ -143,7 +143,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateMyActionTemplateResponse.
+        r"""Gets the created_at of this CreateMyActionTemplateResponse.
 
         三方算子创建的时间
 
@@ -154,7 +154,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateMyActionTemplateResponse.
+        r"""Sets the created_at of this CreateMyActionTemplateResponse.
 
         三方算子创建的时间
 
@@ -165,7 +165,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def func_pkg_path(self):
-        """Gets the func_pkg_path of this CreateMyActionTemplateResponse.
+        r"""Gets the func_pkg_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子包
 
@@ -176,7 +176,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @func_pkg_path.setter
     def func_pkg_path(self, func_pkg_path):
-        """Sets the func_pkg_path of this CreateMyActionTemplateResponse.
+        r"""Sets the func_pkg_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子包
 
@@ -187,7 +187,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def func_logo_path(self):
-        """Gets the func_logo_path of this CreateMyActionTemplateResponse.
+        r"""Gets the func_logo_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子logo
 
@@ -198,7 +198,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @func_logo_path.setter
     def func_logo_path(self, func_logo_path):
-        """Sets the func_logo_path of this CreateMyActionTemplateResponse.
+        r"""Sets the func_logo_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子logo
 
@@ -209,7 +209,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def func_help_path(self):
-        """Gets the func_help_path of this CreateMyActionTemplateResponse.
+        r"""Gets the func_help_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子帮助文档
 
@@ -220,7 +220,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @func_help_path.setter
     def func_help_path(self, func_help_path):
-        """Sets the func_help_path of this CreateMyActionTemplateResponse.
+        r"""Sets the func_help_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子帮助文档
 
@@ -231,7 +231,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def func_test_report_path(self):
-        """Gets the func_test_report_path of this CreateMyActionTemplateResponse.
+        r"""Gets the func_test_report_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子测试报告
 
@@ -242,7 +242,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @func_test_report_path.setter
     def func_test_report_path(self, func_test_report_path):
-        """Sets the func_test_report_path of this CreateMyActionTemplateResponse.
+        r"""Sets the func_test_report_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文算子测试报告
 
@@ -253,7 +253,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def func_opensource_notice_path(self):
-        """Gets the func_opensource_notice_path of this CreateMyActionTemplateResponse.
+        r"""Gets the func_opensource_notice_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文开源须知
 
@@ -264,7 +264,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @func_opensource_notice_path.setter
     def func_opensource_notice_path(self, func_opensource_notice_path):
-        """Sets the func_opensource_notice_path of this CreateMyActionTemplateResponse.
+        r"""Sets the func_opensource_notice_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文开源须知
 
@@ -275,7 +275,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def func_sla_path(self):
-        """Gets the func_sla_path of this CreateMyActionTemplateResponse.
+        r"""Gets the func_sla_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文服务协议材料
 
@@ -286,7 +286,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @func_sla_path.setter
     def func_sla_path(self, func_sla_path):
-        """Sets the func_sla_path of this CreateMyActionTemplateResponse.
+        r"""Sets the func_sla_path of this CreateMyActionTemplateResponse.
 
         签名OBS地址，用于上传中英文服务协议材料
 
@@ -297,7 +297,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateMyActionTemplateResponse.
+        r"""Gets the x_request_id of this CreateMyActionTemplateResponse.
 
         :return: The x_request_id of this CreateMyActionTemplateResponse.
         :rtype: str
@@ -306,7 +306,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateMyActionTemplateResponse.
+        r"""Sets the x_request_id of this CreateMyActionTemplateResponse.
 
         :param x_request_id: The x_request_id of this CreateMyActionTemplateResponse.
         :type x_request_id: str
@@ -315,7 +315,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this CreateMyActionTemplateResponse.
+        r"""Gets the connection of this CreateMyActionTemplateResponse.
 
         :return: The connection of this CreateMyActionTemplateResponse.
         :rtype: str
@@ -324,7 +324,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this CreateMyActionTemplateResponse.
+        r"""Sets the connection of this CreateMyActionTemplateResponse.
 
         :param connection: The connection of this CreateMyActionTemplateResponse.
         :type connection: str
@@ -333,7 +333,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this CreateMyActionTemplateResponse.
+        r"""Gets the content_length of this CreateMyActionTemplateResponse.
 
         :return: The content_length of this CreateMyActionTemplateResponse.
         :rtype: str
@@ -342,7 +342,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this CreateMyActionTemplateResponse.
+        r"""Sets the content_length of this CreateMyActionTemplateResponse.
 
         :param content_length: The content_length of this CreateMyActionTemplateResponse.
         :type content_length: str
@@ -351,7 +351,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this CreateMyActionTemplateResponse.
+        r"""Gets the date of this CreateMyActionTemplateResponse.
 
         :return: The date of this CreateMyActionTemplateResponse.
         :rtype: str
@@ -360,7 +360,7 @@ class CreateMyActionTemplateResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CreateMyActionTemplateResponse.
+        r"""Sets the date of this CreateMyActionTemplateResponse.
 
         :param date: The date of this CreateMyActionTemplateResponse.
         :type date: str

@@ -33,7 +33,7 @@ class ManagedPolicyAssignmentMetadata:
     }
 
     def __init__(self, description=None, period=None, parameters=None, policy_filter=None, policy_definition_id=None):
-        """ManagedPolicyAssignmentMetadata
+        r"""ManagedPolicyAssignmentMetadata
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @property
     def description(self):
-        """Gets the description of this ManagedPolicyAssignmentMetadata.
+        r"""Gets the description of this ManagedPolicyAssignmentMetadata.
 
         规则描述。
 
@@ -81,7 +81,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ManagedPolicyAssignmentMetadata.
+        r"""Sets the description of this ManagedPolicyAssignmentMetadata.
 
         规则描述。
 
@@ -92,7 +92,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @property
     def period(self):
-        """Gets the period of this ManagedPolicyAssignmentMetadata.
+        r"""Gets the period of this ManagedPolicyAssignmentMetadata.
 
         触发周期。
 
@@ -103,7 +103,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ManagedPolicyAssignmentMetadata.
+        r"""Sets the period of this ManagedPolicyAssignmentMetadata.
 
         触发周期。
 
@@ -114,7 +114,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ManagedPolicyAssignmentMetadata.
+        r"""Gets the parameters of this ManagedPolicyAssignmentMetadata.
 
         输入参数。
 
@@ -125,7 +125,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ManagedPolicyAssignmentMetadata.
+        r"""Sets the parameters of this ManagedPolicyAssignmentMetadata.
 
         输入参数。
 
@@ -136,7 +136,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @property
     def policy_filter(self):
-        """Gets the policy_filter of this ManagedPolicyAssignmentMetadata.
+        r"""Gets the policy_filter of this ManagedPolicyAssignmentMetadata.
 
         :return: The policy_filter of this ManagedPolicyAssignmentMetadata.
         :rtype: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -145,7 +145,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @policy_filter.setter
     def policy_filter(self, policy_filter):
-        """Sets the policy_filter of this ManagedPolicyAssignmentMetadata.
+        r"""Sets the policy_filter of this ManagedPolicyAssignmentMetadata.
 
         :param policy_filter: The policy_filter of this ManagedPolicyAssignmentMetadata.
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -154,7 +154,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this ManagedPolicyAssignmentMetadata.
+        r"""Gets the policy_definition_id of this ManagedPolicyAssignmentMetadata.
 
         预定义策略标识符。
 
@@ -165,7 +165,7 @@ class ManagedPolicyAssignmentMetadata:
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this ManagedPolicyAssignmentMetadata.
+        r"""Sets the policy_definition_id of this ManagedPolicyAssignmentMetadata.
 
         预定义策略标识符。
 

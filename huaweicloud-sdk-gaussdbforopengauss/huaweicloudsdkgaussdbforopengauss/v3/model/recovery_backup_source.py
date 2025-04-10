@@ -31,7 +31,7 @@ class RecoveryBackupSource:
     }
 
     def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None):
-        """RecoveryBackupSource
+        r"""RecoveryBackupSource
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RecoveryBackupSource:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RecoveryBackupSource.
+        r"""Gets the instance_id of this RecoveryBackupSource.
 
         实例ID
 
@@ -73,7 +73,7 @@ class RecoveryBackupSource:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RecoveryBackupSource.
+        r"""Sets the instance_id of this RecoveryBackupSource.
 
         实例ID
 
@@ -84,7 +84,7 @@ class RecoveryBackupSource:
 
     @property
     def type(self):
-        """Gets the type of this RecoveryBackupSource.
+        r"""Gets the type of this RecoveryBackupSource.
 
         恢复备份类型：backup，timestamp，different
 
@@ -95,7 +95,7 @@ class RecoveryBackupSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RecoveryBackupSource.
+        r"""Sets the type of this RecoveryBackupSource.
 
         恢复备份类型：backup，timestamp，different
 
@@ -106,7 +106,7 @@ class RecoveryBackupSource:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RecoveryBackupSource.
+        r"""Gets the backup_id of this RecoveryBackupSource.
 
         用于恢复的备份ID。
 
@@ -117,7 +117,7 @@ class RecoveryBackupSource:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RecoveryBackupSource.
+        r"""Sets the backup_id of this RecoveryBackupSource.
 
         用于恢复的备份ID。
 
@@ -128,7 +128,7 @@ class RecoveryBackupSource:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RecoveryBackupSource.
+        r"""Gets the restore_time of this RecoveryBackupSource.
 
         UTC时间，时间戳
 
@@ -139,7 +139,7 @@ class RecoveryBackupSource:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RecoveryBackupSource.
+        r"""Sets the restore_time of this RecoveryBackupSource.
 
         UTC时间，时间戳
 

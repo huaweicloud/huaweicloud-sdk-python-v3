@@ -29,7 +29,7 @@ class PicLayoutInfo:
     }
 
     def __init__(self, x=None, y=None, sub_pic_layout_info_list=None):
-        """PicLayoutInfo
+        r"""PicLayoutInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PicLayoutInfo:
 
     @property
     def x(self):
-        """Gets the x of this PicLayoutInfo.
+        r"""Gets the x of this PicLayoutInfo.
 
         横向小格子数。
 
@@ -68,7 +68,7 @@ class PicLayoutInfo:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this PicLayoutInfo.
+        r"""Sets the x of this PicLayoutInfo.
 
         横向小格子数。
 
@@ -79,7 +79,7 @@ class PicLayoutInfo:
 
     @property
     def y(self):
-        """Gets the y of this PicLayoutInfo.
+        r"""Gets the y of this PicLayoutInfo.
 
         纵向小格子数。
 
@@ -90,7 +90,7 @@ class PicLayoutInfo:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this PicLayoutInfo.
+        r"""Sets the y of this PicLayoutInfo.
 
         纵向小格子数。
 
@@ -101,7 +101,7 @@ class PicLayoutInfo:
 
     @property
     def sub_pic_layout_info_list(self):
-        """Gets the sub_pic_layout_info_list of this PicLayoutInfo.
+        r"""Gets the sub_pic_layout_info_list of this PicLayoutInfo.
 
         多画面信息。
 
@@ -112,7 +112,7 @@ class PicLayoutInfo:
 
     @sub_pic_layout_info_list.setter
     def sub_pic_layout_info_list(self, sub_pic_layout_info_list):
-        """Sets the sub_pic_layout_info_list of this PicLayoutInfo.
+        r"""Sets the sub_pic_layout_info_list of this PicLayoutInfo.
 
         多画面信息。
 

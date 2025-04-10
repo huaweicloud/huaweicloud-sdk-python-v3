@@ -27,7 +27,7 @@ class InsertSecurityGroupOption:
     }
 
     def __init__(self, security_groups=None, index=None):
-        """InsertSecurityGroupOption
+        r"""InsertSecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InsertSecurityGroupOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this InsertSecurityGroupOption.
+        r"""Gets the security_groups of this InsertSecurityGroupOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"]
 
@@ -60,7 +60,7 @@ class InsertSecurityGroupOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this InsertSecurityGroupOption.
+        r"""Sets the security_groups of this InsertSecurityGroupOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"]
 
@@ -71,7 +71,7 @@ class InsertSecurityGroupOption:
 
     @property
     def index(self):
-        """Gets the index of this InsertSecurityGroupOption.
+        r"""Gets the index of this InsertSecurityGroupOption.
 
         安全组插入的位置，从0开始计数。 举例： 1. 要插入到已关联安全组列表的首位，index=0； 2. 要插入到已关联安全组列表的第n个安全组后面，index=n。 默认插入到端口已关联的安全组列表末尾。
 
@@ -82,7 +82,7 @@ class InsertSecurityGroupOption:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this InsertSecurityGroupOption.
+        r"""Sets the index of this InsertSecurityGroupOption.
 
         安全组插入的位置，从0开始计数。 举例： 1. 要插入到已关联安全组列表的首位，index=0； 2. 要插入到已关联安全组列表的第n个安全组后面，index=n。 默认插入到端口已关联的安全组列表末尾。
 

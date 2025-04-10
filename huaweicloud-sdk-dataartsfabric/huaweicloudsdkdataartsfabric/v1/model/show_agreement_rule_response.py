@@ -26,7 +26,7 @@ class ShowAgreementRuleResponse(SdkResponse):
     }
 
     def __init__(self, agreement_rules=None):
-        """ShowAgreementRuleResponse
+        r"""ShowAgreementRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAgreementRuleResponse(SdkResponse):
 
     @property
     def agreement_rules(self):
-        """Gets the agreement_rules of this ShowAgreementRuleResponse.
+        r"""Gets the agreement_rules of this ShowAgreementRuleResponse.
 
         系统协议列表
 
@@ -55,7 +55,7 @@ class ShowAgreementRuleResponse(SdkResponse):
 
     @agreement_rules.setter
     def agreement_rules(self, agreement_rules):
-        """Sets the agreement_rules of this ShowAgreementRuleResponse.
+        r"""Sets the agreement_rules of this ShowAgreementRuleResponse.
 
         系统协议列表
 

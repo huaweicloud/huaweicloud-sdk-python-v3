@@ -29,7 +29,7 @@ class DeleteHarvestTaskRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, job_id=None):
-        """DeleteHarvestTaskRequest
+        r"""DeleteHarvestTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteHarvestTaskRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this DeleteHarvestTaskRequest.
+        r"""Gets the access_control_allow_internal of this DeleteHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -67,7 +67,7 @@ class DeleteHarvestTaskRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this DeleteHarvestTaskRequest.
+        r"""Sets the access_control_allow_internal of this DeleteHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -78,7 +78,7 @@ class DeleteHarvestTaskRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this DeleteHarvestTaskRequest.
+        r"""Gets the access_control_allow_external of this DeleteHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -89,7 +89,7 @@ class DeleteHarvestTaskRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this DeleteHarvestTaskRequest.
+        r"""Sets the access_control_allow_external of this DeleteHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -100,7 +100,7 @@ class DeleteHarvestTaskRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteHarvestTaskRequest.
+        r"""Gets the job_id of this DeleteHarvestTaskRequest.
 
         任务ID
 
@@ -111,7 +111,7 @@ class DeleteHarvestTaskRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteHarvestTaskRequest.
+        r"""Sets the job_id of this DeleteHarvestTaskRequest.
 
         任务ID
 

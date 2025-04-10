@@ -35,7 +35,7 @@ class PostgresqlListDatabase:
     }
 
     def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None, comment=None):
-        """PostgresqlListDatabase
+        r"""PostgresqlListDatabase
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PostgresqlListDatabase:
 
     @property
     def name(self):
-        """Gets the name of this PostgresqlListDatabase.
+        r"""Gets the name of this PostgresqlListDatabase.
 
         数据库名称。
 
@@ -89,7 +89,7 @@ class PostgresqlListDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgresqlListDatabase.
+        r"""Sets the name of this PostgresqlListDatabase.
 
         数据库名称。
 
@@ -100,7 +100,7 @@ class PostgresqlListDatabase:
 
     @property
     def owner(self):
-        """Gets the owner of this PostgresqlListDatabase.
+        r"""Gets the owner of this PostgresqlListDatabase.
 
         数据库所属用户。
 
@@ -111,7 +111,7 @@ class PostgresqlListDatabase:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PostgresqlListDatabase.
+        r"""Sets the owner of this PostgresqlListDatabase.
 
         数据库所属用户。
 
@@ -122,7 +122,7 @@ class PostgresqlListDatabase:
 
     @property
     def character_set(self):
-        """Gets the character_set of this PostgresqlListDatabase.
+        r"""Gets the character_set of this PostgresqlListDatabase.
 
         数据库使用的字符集，例如UTF8。
 
@@ -133,7 +133,7 @@ class PostgresqlListDatabase:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this PostgresqlListDatabase.
+        r"""Sets the character_set of this PostgresqlListDatabase.
 
         数据库使用的字符集，例如UTF8。
 
@@ -144,7 +144,7 @@ class PostgresqlListDatabase:
 
     @property
     def collate_set(self):
-        """Gets the collate_set of this PostgresqlListDatabase.
+        r"""Gets the collate_set of this PostgresqlListDatabase.
 
         数据库排序集，例如en_US.UTF-8等。
 
@@ -155,7 +155,7 @@ class PostgresqlListDatabase:
 
     @collate_set.setter
     def collate_set(self, collate_set):
-        """Sets the collate_set of this PostgresqlListDatabase.
+        r"""Sets the collate_set of this PostgresqlListDatabase.
 
         数据库排序集，例如en_US.UTF-8等。
 
@@ -166,7 +166,7 @@ class PostgresqlListDatabase:
 
     @property
     def size(self):
-        """Gets the size of this PostgresqlListDatabase.
+        r"""Gets the size of this PostgresqlListDatabase.
 
         数据库大小（单位：字节）。
 
@@ -177,7 +177,7 @@ class PostgresqlListDatabase:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PostgresqlListDatabase.
+        r"""Sets the size of this PostgresqlListDatabase.
 
         数据库大小（单位：字节）。
 
@@ -188,7 +188,7 @@ class PostgresqlListDatabase:
 
     @property
     def comment(self):
-        """Gets the comment of this PostgresqlListDatabase.
+        r"""Gets the comment of this PostgresqlListDatabase.
 
         数据库备注
 
@@ -199,7 +199,7 @@ class PostgresqlListDatabase:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this PostgresqlListDatabase.
+        r"""Sets the comment of this PostgresqlListDatabase.
 
         数据库备注
 

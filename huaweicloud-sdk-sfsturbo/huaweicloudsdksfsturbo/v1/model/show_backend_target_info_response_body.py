@@ -35,7 +35,7 @@ class ShowBackendTargetInfoResponseBody:
     }
 
     def __init__(self, target_id=None, creation_time=None, file_system_path=None, failure_details=None, lifecycle=None, obs=None):
-        """ShowBackendTargetInfoResponseBody
+        r"""ShowBackendTargetInfoResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ShowBackendTargetInfoResponseBody.
+        r"""Gets the target_id of this ShowBackendTargetInfoResponseBody.
 
         绑定关系id
 
@@ -89,7 +89,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ShowBackendTargetInfoResponseBody.
+        r"""Sets the target_id of this ShowBackendTargetInfoResponseBody.
 
         绑定关系id
 
@@ -100,7 +100,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this ShowBackendTargetInfoResponseBody.
+        r"""Gets the creation_time of this ShowBackendTargetInfoResponseBody.
 
         绑定关系创建时间
 
@@ -111,7 +111,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this ShowBackendTargetInfoResponseBody.
+        r"""Sets the creation_time of this ShowBackendTargetInfoResponseBody.
 
         绑定关系创建时间
 
@@ -122,7 +122,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @property
     def file_system_path(self):
-        """Gets the file_system_path of this ShowBackendTargetInfoResponseBody.
+        r"""Gets the file_system_path of this ShowBackendTargetInfoResponseBody.
 
         联动目录名称
 
@@ -133,7 +133,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @file_system_path.setter
     def file_system_path(self, file_system_path):
-        """Sets the file_system_path of this ShowBackendTargetInfoResponseBody.
+        r"""Sets the file_system_path of this ShowBackendTargetInfoResponseBody.
 
         联动目录名称
 
@@ -144,7 +144,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @property
     def failure_details(self):
-        """Gets the failure_details of this ShowBackendTargetInfoResponseBody.
+        r"""Gets the failure_details of this ShowBackendTargetInfoResponseBody.
 
         :return: The failure_details of this ShowBackendTargetInfoResponseBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
@@ -153,7 +153,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @failure_details.setter
     def failure_details(self, failure_details):
-        """Sets the failure_details of this ShowBackendTargetInfoResponseBody.
+        r"""Sets the failure_details of this ShowBackendTargetInfoResponseBody.
 
         :param failure_details: The failure_details of this ShowBackendTargetInfoResponseBody.
         :type failure_details: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
@@ -162,7 +162,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this ShowBackendTargetInfoResponseBody.
+        r"""Gets the lifecycle of this ShowBackendTargetInfoResponseBody.
 
         绑定状态
 
@@ -173,7 +173,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this ShowBackendTargetInfoResponseBody.
+        r"""Sets the lifecycle of this ShowBackendTargetInfoResponseBody.
 
         绑定状态
 
@@ -184,7 +184,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @property
     def obs(self):
-        """Gets the obs of this ShowBackendTargetInfoResponseBody.
+        r"""Gets the obs of this ShowBackendTargetInfoResponseBody.
 
         :return: The obs of this ShowBackendTargetInfoResponseBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -193,7 +193,7 @@ class ShowBackendTargetInfoResponseBody:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this ShowBackendTargetInfoResponseBody.
+        r"""Sets the obs of this ShowBackendTargetInfoResponseBody.
 
         :param obs: The obs of this ShowBackendTargetInfoResponseBody.
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`

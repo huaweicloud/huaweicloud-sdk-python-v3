@@ -64,7 +64,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, status=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, tool_info=None, tasks=None, task_runtime_info=None, dag=None, io_acc_expected_usage=None, io_acc_info=None, node_labels=None, still_running_tasks=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowJobResponse.
+        r"""Gets the id of this ShowJobResponse.
 
         作业id
 
@@ -188,7 +188,7 @@ class ShowJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowJobResponse.
+        r"""Sets the id of this ShowJobResponse.
 
         作业id
 
@@ -199,7 +199,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowJobResponse.
+        r"""Gets the name of this ShowJobResponse.
 
         作业的名称
 
@@ -210,7 +210,7 @@ class ShowJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowJobResponse.
+        r"""Sets the name of this ShowJobResponse.
 
         作业的名称
 
@@ -221,7 +221,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowJobResponse.
+        r"""Gets the description of this ShowJobResponse.
 
         作业的描述
 
@@ -232,7 +232,7 @@ class ShowJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowJobResponse.
+        r"""Sets the description of this ShowJobResponse.
 
         作业的描述
 
@@ -243,7 +243,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowJobResponse.
+        r"""Gets the labels of this ShowJobResponse.
 
         作业标签
 
@@ -254,7 +254,7 @@ class ShowJobResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowJobResponse.
+        r"""Sets the labels of this ShowJobResponse.
 
         作业标签
 
@@ -265,7 +265,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ShowJobResponse.
+        r"""Gets the priority of this ShowJobResponse.
 
         作业的优先级
 
@@ -276,7 +276,7 @@ class ShowJobResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowJobResponse.
+        r"""Sets the priority of this ShowJobResponse.
 
         作业的优先级
 
@@ -287,7 +287,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this ShowJobResponse.
+        r"""Gets the timeout of this ShowJobResponse.
 
         作业执行超时时长
 
@@ -298,7 +298,7 @@ class ShowJobResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ShowJobResponse.
+        r"""Sets the timeout of this ShowJobResponse.
 
         作业执行超时时长
 
@@ -309,7 +309,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this ShowJobResponse.
+        r"""Gets the output_dir of this ShowJobResponse.
 
         压扁后的效果，即job运行的实际配置
 
@@ -320,7 +320,7 @@ class ShowJobResponse(SdkResponse):
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this ShowJobResponse.
+        r"""Sets the output_dir of this ShowJobResponse.
 
         压扁后的效果，即job运行的实际配置
 
@@ -331,7 +331,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobResponse.
+        r"""Gets the status of this ShowJobResponse.
 
         作业运行状态
 
@@ -342,7 +342,7 @@ class ShowJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobResponse.
+        r"""Sets the status of this ShowJobResponse.
 
         作业运行状态
 
@@ -353,7 +353,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowJobResponse.
+        r"""Gets the create_time of this ShowJobResponse.
 
         作业创建时间
 
@@ -364,7 +364,7 @@ class ShowJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowJobResponse.
+        r"""Sets the create_time of this ShowJobResponse.
 
         作业创建时间
 
@@ -375,7 +375,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this ShowJobResponse.
+        r"""Gets the finish_time of this ShowJobResponse.
 
         作业完成时间
 
@@ -386,7 +386,7 @@ class ShowJobResponse(SdkResponse):
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this ShowJobResponse.
+        r"""Sets the finish_time of this ShowJobResponse.
 
         作业完成时间
 
@@ -397,7 +397,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this ShowJobResponse.
+        r"""Gets the failed_message of this ShowJobResponse.
 
         作业运行失败描述信息，当作业执行失败时会返回
 
@@ -408,7 +408,7 @@ class ShowJobResponse(SdkResponse):
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this ShowJobResponse.
+        r"""Sets the failed_message of this ShowJobResponse.
 
         作业运行失败描述信息，当作业执行失败时会返回
 
@@ -419,7 +419,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ShowJobResponse.
+        r"""Gets the failed_reason of this ShowJobResponse.
 
         作业运行失败原因，当作业执行失败时会返回
 
@@ -430,7 +430,7 @@ class ShowJobResponse(SdkResponse):
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ShowJobResponse.
+        r"""Sets the failed_reason of this ShowJobResponse.
 
         作业运行失败原因，当作业执行失败时会返回
 
@@ -441,7 +441,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def tool_info(self):
-        """Gets the tool_info of this ShowJobResponse.
+        r"""Gets the tool_info of this ShowJobResponse.
 
         :return: The tool_info of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -450,7 +450,7 @@ class ShowJobResponse(SdkResponse):
 
     @tool_info.setter
     def tool_info(self, tool_info):
-        """Sets the tool_info of this ShowJobResponse.
+        r"""Sets the tool_info of this ShowJobResponse.
 
         :param tool_info: The tool_info of this ShowJobResponse.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -459,7 +459,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowJobResponse.
+        r"""Gets the tasks of this ShowJobResponse.
 
         基于替换规则压扁后的效果，即job运行的实际配置
 
@@ -470,7 +470,7 @@ class ShowJobResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowJobResponse.
+        r"""Sets the tasks of this ShowJobResponse.
 
         基于替换规则压扁后的效果，即job运行的实际配置
 
@@ -481,7 +481,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def task_runtime_info(self):
-        """Gets the task_runtime_info of this ShowJobResponse.
+        r"""Gets the task_runtime_info of this ShowJobResponse.
 
         作业子步骤的运行信息
 
@@ -492,7 +492,7 @@ class ShowJobResponse(SdkResponse):
 
     @task_runtime_info.setter
     def task_runtime_info(self, task_runtime_info):
-        """Sets the task_runtime_info of this ShowJobResponse.
+        r"""Sets the task_runtime_info of this ShowJobResponse.
 
         作业子步骤的运行信息
 
@@ -503,7 +503,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def dag(self):
-        """Gets the dag of this ShowJobResponse.
+        r"""Gets the dag of this ShowJobResponse.
 
         作业子步骤的依赖关系
 
@@ -514,7 +514,7 @@ class ShowJobResponse(SdkResponse):
 
     @dag.setter
     def dag(self, dag):
-        """Sets the dag of this ShowJobResponse.
+        r"""Sets the dag of this ShowJobResponse.
 
         作业子步骤的依赖关系
 
@@ -525,7 +525,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def io_acc_expected_usage(self):
-        """Gets the io_acc_expected_usage of this ShowJobResponse.
+        r"""Gets the io_acc_expected_usage of this ShowJobResponse.
 
         作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
 
@@ -536,7 +536,7 @@ class ShowJobResponse(SdkResponse):
 
     @io_acc_expected_usage.setter
     def io_acc_expected_usage(self, io_acc_expected_usage):
-        """Sets the io_acc_expected_usage of this ShowJobResponse.
+        r"""Sets the io_acc_expected_usage of this ShowJobResponse.
 
         作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
 
@@ -547,7 +547,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def io_acc_info(self):
-        """Gets the io_acc_info of this ShowJobResponse.
+        r"""Gets the io_acc_info of this ShowJobResponse.
 
         :return: The io_acc_info of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.IoAccInfoDto`
@@ -556,7 +556,7 @@ class ShowJobResponse(SdkResponse):
 
     @io_acc_info.setter
     def io_acc_info(self, io_acc_info):
-        """Sets the io_acc_info of this ShowJobResponse.
+        r"""Sets the io_acc_info of this ShowJobResponse.
 
         :param io_acc_info: The io_acc_info of this ShowJobResponse.
         :type io_acc_info: :class:`huaweicloudsdkeihealth.v1.IoAccInfoDto`
@@ -565,7 +565,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this ShowJobResponse.
+        r"""Gets the node_labels of this ShowJobResponse.
 
         计算节点标签
 
@@ -576,7 +576,7 @@ class ShowJobResponse(SdkResponse):
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this ShowJobResponse.
+        r"""Sets the node_labels of this ShowJobResponse.
 
         计算节点标签
 
@@ -587,7 +587,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def still_running_tasks(self):
-        """Gets the still_running_tasks of this ShowJobResponse.
+        r"""Gets the still_running_tasks of this ShowJobResponse.
 
         仍在运行中的子任务
 
@@ -598,7 +598,7 @@ class ShowJobResponse(SdkResponse):
 
     @still_running_tasks.setter
     def still_running_tasks(self, still_running_tasks):
-        """Sets the still_running_tasks of this ShowJobResponse.
+        r"""Sets the still_running_tasks of this ShowJobResponse.
 
         仍在运行中的子任务
 

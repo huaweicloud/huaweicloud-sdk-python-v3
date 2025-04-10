@@ -27,7 +27,7 @@ class CreateTokenWithIdTokenRequest:
     }
 
     def __init__(self, x_idp_id=None, body=None):
-        """CreateTokenWithIdTokenRequest
+        r"""CreateTokenWithIdTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTokenWithIdTokenRequest:
 
     @property
     def x_idp_id(self):
-        """Gets the x_idp_id of this CreateTokenWithIdTokenRequest.
+        r"""Gets the x_idp_id of this CreateTokenWithIdTokenRequest.
 
         身份提供商ID。
 
@@ -60,7 +60,7 @@ class CreateTokenWithIdTokenRequest:
 
     @x_idp_id.setter
     def x_idp_id(self, x_idp_id):
-        """Sets the x_idp_id of this CreateTokenWithIdTokenRequest.
+        r"""Sets the x_idp_id of this CreateTokenWithIdTokenRequest.
 
         身份提供商ID。
 
@@ -71,7 +71,7 @@ class CreateTokenWithIdTokenRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTokenWithIdTokenRequest.
+        r"""Gets the body of this CreateTokenWithIdTokenRequest.
 
         :return: The body of this CreateTokenWithIdTokenRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`
@@ -80,7 +80,7 @@ class CreateTokenWithIdTokenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTokenWithIdTokenRequest.
+        r"""Sets the body of this CreateTokenWithIdTokenRequest.
 
         :param body: The body of this CreateTokenWithIdTokenRequest.
         :type body: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`

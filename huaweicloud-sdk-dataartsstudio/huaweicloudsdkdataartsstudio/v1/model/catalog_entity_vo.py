@@ -27,7 +27,7 @@ class CatalogEntityVO:
     }
 
     def __init__(self, type_name=None, attributes=None):
-        """CatalogEntityVO
+        r"""CatalogEntityVO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CatalogEntityVO:
 
     @property
     def type_name(self):
-        """Gets the type_name of this CatalogEntityVO.
+        r"""Gets the type_name of this CatalogEntityVO.
 
         类型名称，填写“BusinessCatalog”即可（业务分层）。
 
@@ -60,7 +60,7 @@ class CatalogEntityVO:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this CatalogEntityVO.
+        r"""Sets the type_name of this CatalogEntityVO.
 
         类型名称，填写“BusinessCatalog”即可（业务分层）。
 
@@ -71,7 +71,7 @@ class CatalogEntityVO:
 
     @property
     def attributes(self):
-        """Gets the attributes of this CatalogEntityVO.
+        r"""Gets the attributes of this CatalogEntityVO.
 
         :return: The attributes of this CatalogEntityVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
@@ -80,7 +80,7 @@ class CatalogEntityVO:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this CatalogEntityVO.
+        r"""Sets the attributes of this CatalogEntityVO.
 
         :param attributes: The attributes of this CatalogEntityVO.
         :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`

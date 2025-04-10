@@ -32,7 +32,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     }
 
     def __init__(self, title=None, collector_name=None, view_row_list=None, style=None):
-        """ShowMonitorItemViewConfigResponse
+        r"""ShowMonitorItemViewConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ShowMonitorItemViewConfigResponse.
+        r"""Gets the title of this ShowMonitorItemViewConfigResponse.
 
         标题。
 
@@ -76,7 +76,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowMonitorItemViewConfigResponse.
+        r"""Sets the title of this ShowMonitorItemViewConfigResponse.
 
         标题。
 
@@ -87,7 +87,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this ShowMonitorItemViewConfigResponse.
+        r"""Gets the collector_name of this ShowMonitorItemViewConfigResponse.
 
         采集器名称。
 
@@ -98,7 +98,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this ShowMonitorItemViewConfigResponse.
+        r"""Sets the collector_name of this ShowMonitorItemViewConfigResponse.
 
         采集器名称。
 
@@ -109,7 +109,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @property
     def view_row_list(self):
-        """Gets the view_row_list of this ShowMonitorItemViewConfigResponse.
+        r"""Gets the view_row_list of this ShowMonitorItemViewConfigResponse.
 
         视图的列表，内部每个List代表的是一行图表。
 
@@ -120,7 +120,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @view_row_list.setter
     def view_row_list(self, view_row_list):
-        """Sets the view_row_list of this ShowMonitorItemViewConfigResponse.
+        r"""Sets the view_row_list of this ShowMonitorItemViewConfigResponse.
 
         视图的列表，内部每个List代表的是一行图表。
 
@@ -131,7 +131,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @property
     def style(self):
-        """Gets the style of this ShowMonitorItemViewConfigResponse.
+        r"""Gets the style of this ShowMonitorItemViewConfigResponse.
 
         类型。
 
@@ -142,7 +142,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
     @style.setter
     def style(self, style):
-        """Sets the style of this ShowMonitorItemViewConfigResponse.
+        r"""Sets the style of this ShowMonitorItemViewConfigResponse.
 
         类型。
 

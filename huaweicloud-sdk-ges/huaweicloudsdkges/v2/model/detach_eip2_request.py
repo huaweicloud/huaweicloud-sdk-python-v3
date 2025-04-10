@@ -27,7 +27,7 @@ class DetachEip2Request:
     }
 
     def __init__(self, graph_id=None, body=None):
-        """DetachEip2Request
+        r"""DetachEip2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DetachEip2Request:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this DetachEip2Request.
+        r"""Gets the graph_id of this DetachEip2Request.
 
         图ID。
 
@@ -60,7 +60,7 @@ class DetachEip2Request:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this DetachEip2Request.
+        r"""Sets the graph_id of this DetachEip2Request.
 
         图ID。
 
@@ -71,7 +71,7 @@ class DetachEip2Request:
 
     @property
     def body(self):
-        """Gets the body of this DetachEip2Request.
+        r"""Gets the body of this DetachEip2Request.
 
         :return: The body of this DetachEip2Request.
         :rtype: :class:`huaweicloudsdkges.v2.DetachEipReq`
@@ -80,7 +80,7 @@ class DetachEip2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachEip2Request.
+        r"""Sets the body of this DetachEip2Request.
 
         :param body: The body of this DetachEip2Request.
         :type body: :class:`huaweicloudsdkges.v2.DetachEipReq`

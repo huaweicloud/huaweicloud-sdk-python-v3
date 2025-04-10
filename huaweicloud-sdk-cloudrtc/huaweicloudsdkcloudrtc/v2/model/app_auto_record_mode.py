@@ -29,7 +29,7 @@ class AppAutoRecordMode:
     }
 
     def __init__(self, mode=None, record_rule_id=None, update_time=None):
-        """AppAutoRecordMode
+        r"""AppAutoRecordMode
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AppAutoRecordMode:
 
     @property
     def mode(self):
-        """Gets the mode of this AppAutoRecordMode.
+        r"""Gets the mode of this AppAutoRecordMode.
 
         录制模式。 - AUTO_RECORD_OFF：关闭自动录制。 - AUTO_INDIVIDUAL_RECORD：开启单流自动录制，此时record_rule_id必须非空。 
 
@@ -67,7 +67,7 @@ class AppAutoRecordMode:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AppAutoRecordMode.
+        r"""Sets the mode of this AppAutoRecordMode.
 
         录制模式。 - AUTO_RECORD_OFF：关闭自动录制。 - AUTO_INDIVIDUAL_RECORD：开启单流自动录制，此时record_rule_id必须非空。 
 
@@ -78,7 +78,7 @@ class AppAutoRecordMode:
 
     @property
     def record_rule_id(self):
-        """Gets the record_rule_id of this AppAutoRecordMode.
+        r"""Gets the record_rule_id of this AppAutoRecordMode.
 
         录制规则id。
 
@@ -89,7 +89,7 @@ class AppAutoRecordMode:
 
     @record_rule_id.setter
     def record_rule_id(self, record_rule_id):
-        """Sets the record_rule_id of this AppAutoRecordMode.
+        r"""Sets the record_rule_id of this AppAutoRecordMode.
 
         录制规则id。
 
@@ -100,7 +100,7 @@ class AppAutoRecordMode:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppAutoRecordMode.
+        r"""Gets the update_time of this AppAutoRecordMode.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
 
@@ -111,7 +111,7 @@ class AppAutoRecordMode:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppAutoRecordMode.
+        r"""Sets the update_time of this AppAutoRecordMode.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
 

@@ -43,7 +43,7 @@ class InteractionRuleDetailInfo:
     }
 
     def __init__(self, rule_index=None, rule_name=None, enabled=None, event_type=None, hit_condition=None, trigger=None, review_config=None, rule_id=None, create_time=None, update_time=None):
-        """InteractionRuleDetailInfo
+        r"""InteractionRuleDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def rule_index(self):
-        """Gets the rule_index of this InteractionRuleDetailInfo.
+        r"""Gets the rule_index of this InteractionRuleDetailInfo.
 
         **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
 
@@ -117,7 +117,7 @@ class InteractionRuleDetailInfo:
 
     @rule_index.setter
     def rule_index(self, rule_index):
-        """Sets the rule_index of this InteractionRuleDetailInfo.
+        r"""Sets the rule_index of this InteractionRuleDetailInfo.
 
         **参数解释**： 规则索引。用于触发规则时索引具体规则。 **约束限制**： 无需用户填写。 **取值范围**： 字符0-64位 **默认取值**： 不涉及。
 
@@ -128,7 +128,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this InteractionRuleDetailInfo.
+        r"""Gets the rule_name of this InteractionRuleDetailInfo.
 
         **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
 
@@ -139,7 +139,7 @@ class InteractionRuleDetailInfo:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this InteractionRuleDetailInfo.
+        r"""Sets the rule_name of this InteractionRuleDetailInfo.
 
         **参数解释**： 规则名称。 **约束限制**： 不涉及。 **取值范围**： 字符0-256位 **默认取值**： 不涉及。
 
@@ -150,7 +150,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this InteractionRuleDetailInfo.
+        r"""Gets the enabled of this InteractionRuleDetailInfo.
 
         **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
 
@@ -161,7 +161,7 @@ class InteractionRuleDetailInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this InteractionRuleDetailInfo.
+        r"""Sets the enabled of this InteractionRuleDetailInfo.
 
         **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： * true：启用 * fasle：不启用  **默认取值**： true
 
@@ -172,7 +172,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def event_type(self):
-        """Gets the event_type of this InteractionRuleDetailInfo.
+        r"""Gets the event_type of this InteractionRuleDetailInfo.
 
         **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 > * 1,2,3,4：与LiveEventReport中的event.type对应。 > * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
 
@@ -183,7 +183,7 @@ class InteractionRuleDetailInfo:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this InteractionRuleDetailInfo.
+        r"""Sets the event_type of this InteractionRuleDetailInfo.
 
         **参数解释**： 规则匹配直播事件类型。接口的取值范围[0,100]，实际业务取值如下所示： * 1：弹幕事件  * 2：用户入场事件  * 3：用户点赞事件 * 4：用户送礼事件  * 10: 预置话术事件  请以实际业务取值为准。 > * 1,2,3,4：与LiveEventReport中的event.type对应。 > * 10：匹配预置剧本  **约束限制**： 不涉及。 **默认取值**： 不涉及
 
@@ -194,7 +194,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def hit_condition(self):
-        """Gets the hit_condition of this InteractionRuleDetailInfo.
+        r"""Gets the hit_condition of this InteractionRuleDetailInfo.
 
         :return: The hit_condition of this InteractionRuleDetailInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HitCondition`
@@ -203,7 +203,7 @@ class InteractionRuleDetailInfo:
 
     @hit_condition.setter
     def hit_condition(self, hit_condition):
-        """Sets the hit_condition of this InteractionRuleDetailInfo.
+        r"""Sets the hit_condition of this InteractionRuleDetailInfo.
 
         :param hit_condition: The hit_condition of this InteractionRuleDetailInfo.
         :type hit_condition: :class:`huaweicloudsdkmetastudio.v1.HitCondition`
@@ -212,7 +212,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def trigger(self):
-        """Gets the trigger of this InteractionRuleDetailInfo.
+        r"""Gets the trigger of this InteractionRuleDetailInfo.
 
         :return: The trigger of this InteractionRuleDetailInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TriggerProcess`
@@ -221,7 +221,7 @@ class InteractionRuleDetailInfo:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this InteractionRuleDetailInfo.
+        r"""Sets the trigger of this InteractionRuleDetailInfo.
 
         :param trigger: The trigger of this InteractionRuleDetailInfo.
         :type trigger: :class:`huaweicloudsdkmetastudio.v1.TriggerProcess`
@@ -230,7 +230,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def review_config(self):
-        """Gets the review_config of this InteractionRuleDetailInfo.
+        r"""Gets the review_config of this InteractionRuleDetailInfo.
 
         :return: The review_config of this InteractionRuleDetailInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -239,7 +239,7 @@ class InteractionRuleDetailInfo:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this InteractionRuleDetailInfo.
+        r"""Sets the review_config of this InteractionRuleDetailInfo.
 
         :param review_config: The review_config of this InteractionRuleDetailInfo.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -248,7 +248,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this InteractionRuleDetailInfo.
+        r"""Gets the rule_id of this InteractionRuleDetailInfo.
 
         互动规则ID
 
@@ -259,7 +259,7 @@ class InteractionRuleDetailInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this InteractionRuleDetailInfo.
+        r"""Sets the rule_id of this InteractionRuleDetailInfo.
 
         互动规则ID
 
@@ -270,7 +270,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InteractionRuleDetailInfo.
+        r"""Gets the create_time of this InteractionRuleDetailInfo.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -281,7 +281,7 @@ class InteractionRuleDetailInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InteractionRuleDetailInfo.
+        r"""Sets the create_time of this InteractionRuleDetailInfo.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -292,7 +292,7 @@ class InteractionRuleDetailInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this InteractionRuleDetailInfo.
+        r"""Gets the update_time of this InteractionRuleDetailInfo.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -303,7 +303,7 @@ class InteractionRuleDetailInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this InteractionRuleDetailInfo.
+        r"""Sets the update_time of this InteractionRuleDetailInfo.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 

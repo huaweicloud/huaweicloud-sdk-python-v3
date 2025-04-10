@@ -45,7 +45,7 @@ class VideoJobResponse:
     }
 
     def __init__(self, id=None, name=None, description=None, state=None, created_at=None, updated_at=None, input=None, service_config=None, output=None, hosting_result=None, service_version=None):
-        """VideoJobResponse
+        r"""VideoJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class VideoJobResponse:
 
     @property
     def id(self):
-        """Gets the id of this VideoJobResponse.
+        r"""Gets the id of this VideoJobResponse.
 
         作业ID。
 
@@ -124,7 +124,7 @@ class VideoJobResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VideoJobResponse.
+        r"""Sets the id of this VideoJobResponse.
 
         作业ID。
 
@@ -135,7 +135,7 @@ class VideoJobResponse:
 
     @property
     def name(self):
-        """Gets the name of this VideoJobResponse.
+        r"""Gets the name of this VideoJobResponse.
 
         作业名称。
 
@@ -146,7 +146,7 @@ class VideoJobResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VideoJobResponse.
+        r"""Sets the name of this VideoJobResponse.
 
         作业名称。
 
@@ -157,7 +157,7 @@ class VideoJobResponse:
 
     @property
     def description(self):
-        """Gets the description of this VideoJobResponse.
+        r"""Gets the description of this VideoJobResponse.
 
         作业描述信息，默认值为空。
 
@@ -168,7 +168,7 @@ class VideoJobResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VideoJobResponse.
+        r"""Sets the description of this VideoJobResponse.
 
         作业描述信息，默认值为空。
 
@@ -179,7 +179,7 @@ class VideoJobResponse:
 
     @property
     def state(self):
-        """Gets the state of this VideoJobResponse.
+        r"""Gets the state of this VideoJobResponse.
 
         作业状态： - PENDING：等待中 - RECOVERING ：恢复中 - STARTING：启动中 - UPGRADING ：更新中 - CREATE_FAILED：创建失败 - START_FAILED：启动失败 - RUNNING：运行中 - STOPPING：停止中 - STOPPED：已停止 - ABNORMAL：运行异常 - SUCCEEDED：运行成功 - FAILED：运行失败 - DELETING：删除中 - FREEZING ：冻结中 - FROZEN ：已冻结
 
@@ -190,7 +190,7 @@ class VideoJobResponse:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this VideoJobResponse.
+        r"""Sets the state of this VideoJobResponse.
 
         作业状态： - PENDING：等待中 - RECOVERING ：恢复中 - STARTING：启动中 - UPGRADING ：更新中 - CREATE_FAILED：创建失败 - START_FAILED：启动失败 - RUNNING：运行中 - STOPPING：停止中 - STOPPED：已停止 - ABNORMAL：运行异常 - SUCCEEDED：运行成功 - FAILED：运行失败 - DELETING：删除中 - FREEZING ：冻结中 - FROZEN ：已冻结
 
@@ -201,7 +201,7 @@ class VideoJobResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VideoJobResponse.
+        r"""Gets the created_at of this VideoJobResponse.
 
         作业创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -212,7 +212,7 @@ class VideoJobResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VideoJobResponse.
+        r"""Sets the created_at of this VideoJobResponse.
 
         作业创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -223,7 +223,7 @@ class VideoJobResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VideoJobResponse.
+        r"""Gets the updated_at of this VideoJobResponse.
 
         作业更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -234,7 +234,7 @@ class VideoJobResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VideoJobResponse.
+        r"""Sets the updated_at of this VideoJobResponse.
 
         作业更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -245,7 +245,7 @@ class VideoJobResponse:
 
     @property
     def input(self):
-        """Gets the input of this VideoJobResponse.
+        r"""Gets the input of this VideoJobResponse.
 
         数据输入列表，默认值为[]。
 
@@ -256,7 +256,7 @@ class VideoJobResponse:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this VideoJobResponse.
+        r"""Sets the input of this VideoJobResponse.
 
         数据输入列表，默认值为[]。
 
@@ -267,7 +267,7 @@ class VideoJobResponse:
 
     @property
     def service_config(self):
-        """Gets the service_config of this VideoJobResponse.
+        r"""Gets the service_config of this VideoJobResponse.
 
         服务算法配置，字段结构跟服务相关。
 
@@ -278,7 +278,7 @@ class VideoJobResponse:
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this VideoJobResponse.
+        r"""Sets the service_config of this VideoJobResponse.
 
         服务算法配置，字段结构跟服务相关。
 
@@ -289,7 +289,7 @@ class VideoJobResponse:
 
     @property
     def output(self):
-        """Gets the output of this VideoJobResponse.
+        r"""Gets the output of this VideoJobResponse.
 
         数据输出列表，默认值为[]
 
@@ -300,7 +300,7 @@ class VideoJobResponse:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this VideoJobResponse.
+        r"""Sets the output of this VideoJobResponse.
 
         数据输出列表，默认值为[]
 
@@ -311,7 +311,7 @@ class VideoJobResponse:
 
     @property
     def hosting_result(self):
-        """Gets the hosting_result of this VideoJobResponse.
+        r"""Gets the hosting_result of this VideoJobResponse.
 
         :return: The hosting_result of this VideoJobResponse.
         :rtype: :class:`huaweicloudsdkvcm.v2.VideoJobResponseHostingResult`
@@ -320,7 +320,7 @@ class VideoJobResponse:
 
     @hosting_result.setter
     def hosting_result(self, hosting_result):
-        """Sets the hosting_result of this VideoJobResponse.
+        r"""Sets the hosting_result of this VideoJobResponse.
 
         :param hosting_result: The hosting_result of this VideoJobResponse.
         :type hosting_result: :class:`huaweicloudsdkvcm.v2.VideoJobResponseHostingResult`
@@ -329,7 +329,7 @@ class VideoJobResponse:
 
     @property
     def service_version(self):
-        """Gets the service_version of this VideoJobResponse.
+        r"""Gets the service_version of this VideoJobResponse.
 
         作业对应的服务版本。
 
@@ -340,7 +340,7 @@ class VideoJobResponse:
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this VideoJobResponse.
+        r"""Sets the service_version of this VideoJobResponse.
 
         作业对应的服务版本。
 

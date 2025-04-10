@@ -25,7 +25,7 @@ class ShowCentralNetworkRequest:
     }
 
     def __init__(self, central_network_id=None):
-        """ShowCentralNetworkRequest
+        r"""ShowCentralNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCentralNetworkRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ShowCentralNetworkRequest.
+        r"""Gets the central_network_id of this ShowCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -53,7 +53,7 @@ class ShowCentralNetworkRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ShowCentralNetworkRequest.
+        r"""Sets the central_network_id of this ShowCentralNetworkRequest.
 
         中心网络的ID。
 

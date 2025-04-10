@@ -57,7 +57,7 @@ class ListHealthMonitorsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, monitor_port=None, domain_name=None, name=None, delay=None, max_retries=None, admin_state_up=None, max_retries_down=None, timeout=None, type=None, expected_codes=None, url_path=None, http_method=None, enterprise_project_id=None):
-        """ListHealthMonitorsRequest
+        r"""ListHealthMonitorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListHealthMonitorsRequest.
+        r"""Gets the marker of this ListHealthMonitorsRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -166,7 +166,7 @@ class ListHealthMonitorsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListHealthMonitorsRequest.
+        r"""Sets the marker of this ListHealthMonitorsRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -177,7 +177,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHealthMonitorsRequest.
+        r"""Gets the limit of this ListHealthMonitorsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -188,7 +188,7 @@ class ListHealthMonitorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHealthMonitorsRequest.
+        r"""Sets the limit of this ListHealthMonitorsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -199,7 +199,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListHealthMonitorsRequest.
+        r"""Gets the page_reverse of this ListHealthMonitorsRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -210,7 +210,7 @@ class ListHealthMonitorsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListHealthMonitorsRequest.
+        r"""Sets the page_reverse of this ListHealthMonitorsRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -221,7 +221,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListHealthMonitorsRequest.
+        r"""Gets the id of this ListHealthMonitorsRequest.
 
         健康检查ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx****。
 
@@ -232,7 +232,7 @@ class ListHealthMonitorsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListHealthMonitorsRequest.
+        r"""Sets the id of this ListHealthMonitorsRequest.
 
         健康检查ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx****。
 
@@ -243,7 +243,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def monitor_port(self):
-        """Gets the monitor_port of this ListHealthMonitorsRequest.
+        r"""Gets the monitor_port of this ListHealthMonitorsRequest.
 
         健康检查端口号。  支持多值查询，查询条件格式：***monitor_port=xxx&monitor_port=xxx***。
 
@@ -254,7 +254,7 @@ class ListHealthMonitorsRequest:
 
     @monitor_port.setter
     def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this ListHealthMonitorsRequest.
+        r"""Sets the monitor_port of this ListHealthMonitorsRequest.
 
         健康检查端口号。  支持多值查询，查询条件格式：***monitor_port=xxx&monitor_port=xxx***。
 
@@ -265,7 +265,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListHealthMonitorsRequest.
+        r"""Gets the domain_name of this ListHealthMonitorsRequest.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
 
@@ -276,7 +276,7 @@ class ListHealthMonitorsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListHealthMonitorsRequest.
+        r"""Sets the domain_name of this ListHealthMonitorsRequest.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
 
@@ -287,7 +287,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHealthMonitorsRequest.
+        r"""Gets the name of this ListHealthMonitorsRequest.
 
         健康检查名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -298,7 +298,7 @@ class ListHealthMonitorsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHealthMonitorsRequest.
+        r"""Sets the name of this ListHealthMonitorsRequest.
 
         健康检查名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -309,7 +309,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def delay(self):
-        """Gets the delay of this ListHealthMonitorsRequest.
+        r"""Gets the delay of this ListHealthMonitorsRequest.
 
         健康检查间隔。  取值：1-50s。  支持多值查询，查询条件格式：*delay=xxx&delay=xxx*。
 
@@ -320,7 +320,7 @@ class ListHealthMonitorsRequest:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ListHealthMonitorsRequest.
+        r"""Sets the delay of this ListHealthMonitorsRequest.
 
         健康检查间隔。  取值：1-50s。  支持多值查询，查询条件格式：*delay=xxx&delay=xxx*。
 
@@ -331,7 +331,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this ListHealthMonitorsRequest.
+        r"""Gets the max_retries of this ListHealthMonitorsRequest.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。  支持多值查询，查询条件格式：*******max_retries=xxx&max_retries=xxx*******。
 
@@ -342,7 +342,7 @@ class ListHealthMonitorsRequest:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this ListHealthMonitorsRequest.
+        r"""Sets the max_retries of this ListHealthMonitorsRequest.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。  支持多值查询，查询条件格式：*******max_retries=xxx&max_retries=xxx*******。
 
@@ -353,7 +353,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListHealthMonitorsRequest.
+        r"""Gets the admin_state_up of this ListHealthMonitorsRequest.
 
         参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。
 
@@ -364,7 +364,7 @@ class ListHealthMonitorsRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListHealthMonitorsRequest.
+        r"""Sets the admin_state_up of this ListHealthMonitorsRequest.
 
         参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。
 
@@ -375,7 +375,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def max_retries_down(self):
-        """Gets the max_retries_down of this ListHealthMonitorsRequest.
+        r"""Gets the max_retries_down of this ListHealthMonitorsRequest.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。  支持多值查询，查询条件格式：******max_retries_down=xxx&max_retries_down=xxx******。
 
@@ -386,7 +386,7 @@ class ListHealthMonitorsRequest:
 
     @max_retries_down.setter
     def max_retries_down(self, max_retries_down):
-        """Sets the max_retries_down of this ListHealthMonitorsRequest.
+        r"""Sets the max_retries_down of this ListHealthMonitorsRequest.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。  支持多值查询，查询条件格式：******max_retries_down=xxx&max_retries_down=xxx******。
 
@@ -397,7 +397,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ListHealthMonitorsRequest.
+        r"""Gets the timeout of this ListHealthMonitorsRequest.
 
         一次健康检查请求的超时时间。
 
@@ -408,7 +408,7 @@ class ListHealthMonitorsRequest:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ListHealthMonitorsRequest.
+        r"""Sets the timeout of this ListHealthMonitorsRequest.
 
         一次健康检查请求的超时时间。
 
@@ -419,7 +419,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListHealthMonitorsRequest.
+        r"""Gets the type of this ListHealthMonitorsRequest.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
 
@@ -430,7 +430,7 @@ class ListHealthMonitorsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListHealthMonitorsRequest.
+        r"""Sets the type of this ListHealthMonitorsRequest.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
 
@@ -441,7 +441,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def expected_codes(self):
-        """Gets the expected_codes of this ListHealthMonitorsRequest.
+        r"""Gets the expected_codes of this ListHealthMonitorsRequest.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
 
@@ -452,7 +452,7 @@ class ListHealthMonitorsRequest:
 
     @expected_codes.setter
     def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this ListHealthMonitorsRequest.
+        r"""Sets the expected_codes of this ListHealthMonitorsRequest.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。  支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
 
@@ -463,7 +463,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def url_path(self):
-        """Gets the url_path of this ListHealthMonitorsRequest.
+        r"""Gets the url_path of this ListHealthMonitorsRequest.
 
         健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明：以“/”开头。当type为HTTP/HTTPS时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
 
@@ -474,7 +474,7 @@ class ListHealthMonitorsRequest:
 
     @url_path.setter
     def url_path(self, url_path):
-        """Sets the url_path of this ListHealthMonitorsRequest.
+        r"""Sets the url_path of this ListHealthMonitorsRequest.
 
         健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明：以“/”开头。当type为HTTP/HTTPS时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
 
@@ -485,7 +485,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def http_method(self):
-        """Gets the http_method of this ListHealthMonitorsRequest.
+        r"""Gets the http_method of this ListHealthMonitorsRequest.
 
         HTTP请求方法。  取值：GET、HEAD、POST。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。
 
@@ -496,7 +496,7 @@ class ListHealthMonitorsRequest:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this ListHealthMonitorsRequest.
+        r"""Sets the http_method of this ListHealthMonitorsRequest.
 
         HTTP请求方法。  取值：GET、HEAD、POST。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。
 
@@ -507,7 +507,7 @@ class ListHealthMonitorsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHealthMonitorsRequest.
+        r"""Gets the enterprise_project_id of this ListHealthMonitorsRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:healthmonitors:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -518,7 +518,7 @@ class ListHealthMonitorsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHealthMonitorsRequest.
+        r"""Sets the enterprise_project_id of this ListHealthMonitorsRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:healthmonitors:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 

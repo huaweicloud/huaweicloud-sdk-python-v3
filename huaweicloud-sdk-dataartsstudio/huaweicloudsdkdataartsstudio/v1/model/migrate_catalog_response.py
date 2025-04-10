@@ -24,7 +24,7 @@ class MigrateCatalogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """MigrateCatalogResponse
+        r"""MigrateCatalogResponse
 
         The model defined in huaweicloud sdk
 

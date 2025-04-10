@@ -39,7 +39,7 @@ class ListRomaAppRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, favorite=None, auth_role=None, name=None, owner=None, user_name=None):
-        """ListRomaAppRequest
+        r"""ListRomaAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListRomaAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRomaAppRequest.
+        r"""Gets the instance_id of this ListRomaAppRequest.
 
         实例ID
 
@@ -102,7 +102,7 @@ class ListRomaAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRomaAppRequest.
+        r"""Sets the instance_id of this ListRomaAppRequest.
 
         实例ID
 
@@ -113,7 +113,7 @@ class ListRomaAppRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRomaAppRequest.
+        r"""Gets the offset of this ListRomaAppRequest.
 
         偏移量，大于等于0
 
@@ -124,7 +124,7 @@ class ListRomaAppRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRomaAppRequest.
+        r"""Sets the offset of this ListRomaAppRequest.
 
         偏移量，大于等于0
 
@@ -135,7 +135,7 @@ class ListRomaAppRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRomaAppRequest.
+        r"""Gets the limit of this ListRomaAppRequest.
 
         每页显示的条目数量
 
@@ -146,7 +146,7 @@ class ListRomaAppRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRomaAppRequest.
+        r"""Sets the limit of this ListRomaAppRequest.
 
         每页显示的条目数量
 
@@ -157,7 +157,7 @@ class ListRomaAppRequest:
 
     @property
     def favorite(self):
-        """Gets the favorite of this ListRomaAppRequest.
+        r"""Gets the favorite of this ListRomaAppRequest.
 
         查询收藏的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，获取收藏的应用 - 为false时，获取未被收藏的应用
 
@@ -168,7 +168,7 @@ class ListRomaAppRequest:
 
     @favorite.setter
     def favorite(self, favorite):
-        """Sets the favorite of this ListRomaAppRequest.
+        r"""Sets the favorite of this ListRomaAppRequest.
 
         查询收藏的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，获取收藏的应用 - 为false时，获取未被收藏的应用
 
@@ -179,7 +179,7 @@ class ListRomaAppRequest:
 
     @property
     def auth_role(self):
-        """Gets the auth_role of this ListRomaAppRequest.
+        r"""Gets the auth_role of this ListRomaAppRequest.
 
         获取拥有指定权限应用
 
@@ -190,7 +190,7 @@ class ListRomaAppRequest:
 
     @auth_role.setter
     def auth_role(self, auth_role):
-        """Sets the auth_role of this ListRomaAppRequest.
+        r"""Sets the auth_role of this ListRomaAppRequest.
 
         获取拥有指定权限应用
 
@@ -201,7 +201,7 @@ class ListRomaAppRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRomaAppRequest.
+        r"""Gets the name of this ListRomaAppRequest.
 
         应用名称，模糊匹配
 
@@ -212,7 +212,7 @@ class ListRomaAppRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRomaAppRequest.
+        r"""Sets the name of this ListRomaAppRequest.
 
         应用名称，模糊匹配
 
@@ -223,7 +223,7 @@ class ListRomaAppRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this ListRomaAppRequest.
+        r"""Gets the owner of this ListRomaAppRequest.
 
         查询有权限访问的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，查询当前用户创建的应用 - 为false时，查询非当前用户创建的有权限的应用，比如其它人共享的应用
 
@@ -234,7 +234,7 @@ class ListRomaAppRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListRomaAppRequest.
+        r"""Sets the owner of this ListRomaAppRequest.
 
         查询有权限访问的应用 - 未提供时，查询当前用户有权限的所有应用 - 为true时，查询当前用户创建的应用 - 为false时，查询非当前用户创建的有权限的应用，比如其它人共享的应用
 
@@ -245,7 +245,7 @@ class ListRomaAppRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListRomaAppRequest.
+        r"""Gets the user_name of this ListRomaAppRequest.
 
         从当前调用者有权限的所有应用中过滤出指定用户名有权限的应用
 
@@ -256,7 +256,7 @@ class ListRomaAppRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListRomaAppRequest.
+        r"""Sets the user_name of this ListRomaAppRequest.
 
         从当前调用者有权限的所有应用中过滤出指定用户名有权限的应用
 

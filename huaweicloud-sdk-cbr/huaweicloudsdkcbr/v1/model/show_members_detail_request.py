@@ -41,7 +41,7 @@ class ShowMembersDetailRequest:
     }
 
     def __init__(self, backup_id=None, dest_project_id=None, image_id=None, status=None, vault_id=None, limit=None, marker=None, offset=None, sort=None):
-        """ShowMembersDetailRequest
+        r"""ShowMembersDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ShowMembersDetailRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowMembersDetailRequest.
+        r"""Gets the backup_id of this ShowMembersDetailRequest.
 
         备份id
 
@@ -109,7 +109,7 @@ class ShowMembersDetailRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowMembersDetailRequest.
+        r"""Sets the backup_id of this ShowMembersDetailRequest.
 
         备份id
 
@@ -120,7 +120,7 @@ class ShowMembersDetailRequest:
 
     @property
     def dest_project_id(self):
-        """Gets the dest_project_id of this ShowMembersDetailRequest.
+        r"""Gets the dest_project_id of this ShowMembersDetailRequest.
 
         接受备份共享的项目id
 
@@ -131,7 +131,7 @@ class ShowMembersDetailRequest:
 
     @dest_project_id.setter
     def dest_project_id(self, dest_project_id):
-        """Sets the dest_project_id of this ShowMembersDetailRequest.
+        r"""Sets the dest_project_id of this ShowMembersDetailRequest.
 
         接受备份共享的项目id
 
@@ -142,7 +142,7 @@ class ShowMembersDetailRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowMembersDetailRequest.
+        r"""Gets the image_id of this ShowMembersDetailRequest.
 
         接受的共享备份副本注册的镜像id
 
@@ -153,7 +153,7 @@ class ShowMembersDetailRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowMembersDetailRequest.
+        r"""Sets the image_id of this ShowMembersDetailRequest.
 
         接受的共享备份副本注册的镜像id
 
@@ -164,7 +164,7 @@ class ShowMembersDetailRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowMembersDetailRequest.
+        r"""Gets the status of this ShowMembersDetailRequest.
 
         备份共享状态
 
@@ -175,7 +175,7 @@ class ShowMembersDetailRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMembersDetailRequest.
+        r"""Sets the status of this ShowMembersDetailRequest.
 
         备份共享状态
 
@@ -186,7 +186,7 @@ class ShowMembersDetailRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ShowMembersDetailRequest.
+        r"""Gets the vault_id of this ShowMembersDetailRequest.
 
         目标端接受共享备份的存储库id，仅支持uuid
 
@@ -197,7 +197,7 @@ class ShowMembersDetailRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ShowMembersDetailRequest.
+        r"""Sets the vault_id of this ShowMembersDetailRequest.
 
         目标端接受共享备份的存储库id，仅支持uuid
 
@@ -208,7 +208,7 @@ class ShowMembersDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowMembersDetailRequest.
+        r"""Gets the limit of this ShowMembersDetailRequest.
 
         每页显示的条目数量，正整数
 
@@ -219,7 +219,7 @@ class ShowMembersDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowMembersDetailRequest.
+        r"""Sets the limit of this ShowMembersDetailRequest.
 
         每页显示的条目数量，正整数
 
@@ -230,7 +230,7 @@ class ShowMembersDetailRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowMembersDetailRequest.
+        r"""Gets the marker of this ShowMembersDetailRequest.
 
         上一次查询最后一条的id，仅支持uuid
 
@@ -241,7 +241,7 @@ class ShowMembersDetailRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowMembersDetailRequest.
+        r"""Sets the marker of this ShowMembersDetailRequest.
 
         上一次查询最后一条的id，仅支持uuid
 
@@ -252,7 +252,7 @@ class ShowMembersDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMembersDetailRequest.
+        r"""Gets the offset of this ShowMembersDetailRequest.
 
         偏移值，正整数
 
@@ -263,7 +263,7 @@ class ShowMembersDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMembersDetailRequest.
+        r"""Sets the offset of this ShowMembersDetailRequest.
 
         偏移值，正整数
 
@@ -274,7 +274,7 @@ class ShowMembersDetailRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ShowMembersDetailRequest.
+        r"""Gets the sort of this ShowMembersDetailRequest.
 
         sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。
 
@@ -285,7 +285,7 @@ class ShowMembersDetailRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ShowMembersDetailRequest.
+        r"""Sets the sort of this ShowMembersDetailRequest.
 
         sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。
 

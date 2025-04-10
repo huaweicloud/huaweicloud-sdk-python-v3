@@ -35,7 +35,7 @@ class ReadonlyInstances:
     }
 
     def __init__(self, id=None, status=None, name=None, weight=None, available_zones=None, cpu_num=None):
-        """ReadonlyInstances
+        r"""ReadonlyInstances
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ReadonlyInstances:
 
     @property
     def id(self):
-        """Gets the id of this ReadonlyInstances.
+        r"""Gets the id of this ReadonlyInstances.
 
         只读实例ID。
 
@@ -83,7 +83,7 @@ class ReadonlyInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReadonlyInstances.
+        r"""Sets the id of this ReadonlyInstances.
 
         只读实例ID。
 
@@ -94,7 +94,7 @@ class ReadonlyInstances:
 
     @property
     def status(self):
-        """Gets the status of this ReadonlyInstances.
+        r"""Gets the status of this ReadonlyInstances.
 
         只读实例状态。
 
@@ -105,7 +105,7 @@ class ReadonlyInstances:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ReadonlyInstances.
+        r"""Sets the status of this ReadonlyInstances.
 
         只读实例状态。
 
@@ -116,7 +116,7 @@ class ReadonlyInstances:
 
     @property
     def name(self):
-        """Gets the name of this ReadonlyInstances.
+        r"""Gets the name of this ReadonlyInstances.
 
         只读实例名称。
 
@@ -127,7 +127,7 @@ class ReadonlyInstances:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReadonlyInstances.
+        r"""Sets the name of this ReadonlyInstances.
 
         只读实例名称。
 
@@ -138,7 +138,7 @@ class ReadonlyInstances:
 
     @property
     def weight(self):
-        """Gets the weight of this ReadonlyInstances.
+        r"""Gets the weight of this ReadonlyInstances.
 
         只读实例读写分离权重。
 
@@ -149,7 +149,7 @@ class ReadonlyInstances:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ReadonlyInstances.
+        r"""Sets the weight of this ReadonlyInstances.
 
         只读实例读写分离权重。
 
@@ -160,7 +160,7 @@ class ReadonlyInstances:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ReadonlyInstances.
+        r"""Gets the available_zones of this ReadonlyInstances.
 
         可用区信息。
 
@@ -171,7 +171,7 @@ class ReadonlyInstances:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ReadonlyInstances.
+        r"""Sets the available_zones of this ReadonlyInstances.
 
         可用区信息。
 
@@ -182,7 +182,7 @@ class ReadonlyInstances:
 
     @property
     def cpu_num(self):
-        """Gets the cpu_num of this ReadonlyInstances.
+        r"""Gets the cpu_num of this ReadonlyInstances.
 
         只读实例CPU个数。
 
@@ -193,7 +193,7 @@ class ReadonlyInstances:
 
     @cpu_num.setter
     def cpu_num(self, cpu_num):
-        """Sets the cpu_num of this ReadonlyInstances.
+        r"""Sets the cpu_num of this ReadonlyInstances.
 
         只读实例CPU个数。
 

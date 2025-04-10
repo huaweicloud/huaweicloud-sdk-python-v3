@@ -28,7 +28,7 @@ class ShowHmReportResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None):
-        """ShowHmReportResponse
+        r"""ShowHmReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHmReportResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowHmReportResponse.
+        r"""Gets the code of this ShowHmReportResponse.
 
         响应码
 
@@ -62,7 +62,7 @@ class ShowHmReportResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowHmReportResponse.
+        r"""Sets the code of this ShowHmReportResponse.
 
         响应码
 
@@ -73,7 +73,7 @@ class ShowHmReportResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowHmReportResponse.
+        r"""Gets the data of this ShowHmReportResponse.
 
         :return: The data of this ShowHmReportResponse.
         :rtype: :class:`huaweicloudsdkcodeartsgovernance.v1.HmVulnInfoData`
@@ -82,7 +82,7 @@ class ShowHmReportResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowHmReportResponse.
+        r"""Sets the data of this ShowHmReportResponse.
 
         :param data: The data of this ShowHmReportResponse.
         :type data: :class:`huaweicloudsdkcodeartsgovernance.v1.HmVulnInfoData`

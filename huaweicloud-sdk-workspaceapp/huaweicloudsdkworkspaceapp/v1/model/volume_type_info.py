@@ -37,7 +37,7 @@ class VolumeTypeInfo:
     }
 
     def __init__(self, resource_spec_code=None, volume_type=None, volume_product_type=None, resource_type=None, cloud_service_type=None, name=None, volume_type_extra_specs=None):
-        """VolumeTypeInfo
+        r"""VolumeTypeInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VolumeTypeInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this VolumeTypeInfo.
+        r"""Gets the resource_spec_code of this VolumeTypeInfo.
 
         资源规格编码。
 
@@ -96,7 +96,7 @@ class VolumeTypeInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this VolumeTypeInfo.
+        r"""Sets the resource_spec_code of this VolumeTypeInfo.
 
         资源规格编码。
 
@@ -107,7 +107,7 @@ class VolumeTypeInfo:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this VolumeTypeInfo.
+        r"""Gets the volume_type of this VolumeTypeInfo.
 
         磁盘类型。
 
@@ -118,7 +118,7 @@ class VolumeTypeInfo:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this VolumeTypeInfo.
+        r"""Sets the volume_type of this VolumeTypeInfo.
 
         磁盘类型。
 
@@ -129,7 +129,7 @@ class VolumeTypeInfo:
 
     @property
     def volume_product_type(self):
-        """Gets the volume_product_type of this VolumeTypeInfo.
+        r"""Gets the volume_product_type of this VolumeTypeInfo.
 
         磁盘产品类型。
 
@@ -140,7 +140,7 @@ class VolumeTypeInfo:
 
     @volume_product_type.setter
     def volume_product_type(self, volume_product_type):
-        """Sets the volume_product_type of this VolumeTypeInfo.
+        r"""Sets the volume_product_type of this VolumeTypeInfo.
 
         磁盘产品类型。
 
@@ -151,7 +151,7 @@ class VolumeTypeInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this VolumeTypeInfo.
+        r"""Gets the resource_type of this VolumeTypeInfo.
 
         资源类型字段。
 
@@ -162,7 +162,7 @@ class VolumeTypeInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this VolumeTypeInfo.
+        r"""Sets the resource_type of this VolumeTypeInfo.
 
         资源类型字段。
 
@@ -173,7 +173,7 @@ class VolumeTypeInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this VolumeTypeInfo.
+        r"""Gets the cloud_service_type of this VolumeTypeInfo.
 
         资源所属云服务类型编码。
 
@@ -184,7 +184,7 @@ class VolumeTypeInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this VolumeTypeInfo.
+        r"""Sets the cloud_service_type of this VolumeTypeInfo.
 
         资源所属云服务类型编码。
 
@@ -195,7 +195,7 @@ class VolumeTypeInfo:
 
     @property
     def name(self):
-        """Gets the name of this VolumeTypeInfo.
+        r"""Gets the name of this VolumeTypeInfo.
 
         磁盘中英文名称。
 
@@ -206,7 +206,7 @@ class VolumeTypeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeTypeInfo.
+        r"""Sets the name of this VolumeTypeInfo.
 
         磁盘中英文名称。
 
@@ -217,7 +217,7 @@ class VolumeTypeInfo:
 
     @property
     def volume_type_extra_specs(self):
-        """Gets the volume_type_extra_specs of this VolumeTypeInfo.
+        r"""Gets the volume_type_extra_specs of this VolumeTypeInfo.
 
         :return: The volume_type_extra_specs of this VolumeTypeInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeTypeExtraSpecs`
@@ -226,7 +226,7 @@ class VolumeTypeInfo:
 
     @volume_type_extra_specs.setter
     def volume_type_extra_specs(self, volume_type_extra_specs):
-        """Sets the volume_type_extra_specs of this VolumeTypeInfo.
+        r"""Sets the volume_type_extra_specs of this VolumeTypeInfo.
 
         :param volume_type_extra_specs: The volume_type_extra_specs of this VolumeTypeInfo.
         :type volume_type_extra_specs: :class:`huaweicloudsdkworkspaceapp.v1.VolumeTypeExtraSpecs`

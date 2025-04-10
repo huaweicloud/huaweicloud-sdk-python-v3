@@ -40,7 +40,7 @@ class ShowJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """ShowJobStatusResponse
+        r"""ShowJobStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobStatusResponse.
+        r"""Gets the status of this ShowJobStatusResponse.
 
         Job的状态。 SUCCESS：成功。 RUNNING：运行中。 FAIL：失败。 INIT：正在初始化。
 
@@ -104,7 +104,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobStatusResponse.
+        r"""Sets the status of this ShowJobStatusResponse.
 
         Job的状态。 SUCCESS：成功。 RUNNING：运行中。 FAIL：失败。 INIT：正在初始化。
 
@@ -115,7 +115,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowJobStatusResponse.
+        r"""Gets the entities of this ShowJobStatusResponse.
 
         :return: The entities of this ShowJobStatusResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.JobEntities`
@@ -124,7 +124,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowJobStatusResponse.
+        r"""Sets the entities of this ShowJobStatusResponse.
 
         :param entities: The entities of this ShowJobStatusResponse.
         :type entities: :class:`huaweicloudsdksdrs.v1.JobEntities`
@@ -133,7 +133,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobStatusResponse.
+        r"""Gets the job_id of this ShowJobStatusResponse.
 
         Job ID。
 
@@ -144,7 +144,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobStatusResponse.
+        r"""Sets the job_id of this ShowJobStatusResponse.
 
         Job ID。
 
@@ -155,7 +155,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobStatusResponse.
+        r"""Gets the job_type of this ShowJobStatusResponse.
 
         Job的类型。createProtectionGroupNoCG：创建保护组。deleteProtectionGroupNoCG：删除保护组。startProtectionGroupNoCG ：保护组开始保护。reprotectProtectionGroupNoCG ：保护组重保护。stopProtectionGroupNoCG ：保护组停止保护。failoverProtectionGroupNoCG  ：保护组故障切换。reverseProtectionGroupNoCG：保护组切换。createProtectedInstanceNoCG：创建保护实例。deleteProtectedInstanceNoCG：删除保护实例。attachReplicationPairNew：保护实例挂载复制对。detachReplicationPairNew：保护实例卸载复制对。addNicNew：保护实例添加网卡。deleteNicNew：保护实例删除网卡。resizeProtectedInstanceNew：保护实例变更规格。createReplicationPairNoCG：创建复制对。deleteReplicationPairNoCG：删除复制对。expandReplicationPairNew：复制对扩容。createDisasterRecoveryDrill：创建容灾演练。deleteDisasterRecoveryDrill：删除容灾演练。
 
@@ -166,7 +166,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobStatusResponse.
+        r"""Sets the job_type of this ShowJobStatusResponse.
 
         Job的类型。createProtectionGroupNoCG：创建保护组。deleteProtectionGroupNoCG：删除保护组。startProtectionGroupNoCG ：保护组开始保护。reprotectProtectionGroupNoCG ：保护组重保护。stopProtectionGroupNoCG ：保护组停止保护。failoverProtectionGroupNoCG  ：保护组故障切换。reverseProtectionGroupNoCG：保护组切换。createProtectedInstanceNoCG：创建保护实例。deleteProtectedInstanceNoCG：删除保护实例。attachReplicationPairNew：保护实例挂载复制对。detachReplicationPairNew：保护实例卸载复制对。addNicNew：保护实例添加网卡。deleteNicNew：保护实例删除网卡。resizeProtectedInstanceNew：保护实例变更规格。createReplicationPairNoCG：创建复制对。deleteReplicationPairNoCG：删除复制对。expandReplicationPairNew：复制对扩容。createDisasterRecoveryDrill：创建容灾演练。deleteDisasterRecoveryDrill：删除容灾演练。
 
@@ -177,7 +177,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobStatusResponse.
+        r"""Gets the begin_time of this ShowJobStatusResponse.
 
         开始时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -188,7 +188,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobStatusResponse.
+        r"""Sets the begin_time of this ShowJobStatusResponse.
 
         开始时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -199,7 +199,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobStatusResponse.
+        r"""Gets the end_time of this ShowJobStatusResponse.
 
         结束时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -210,7 +210,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobStatusResponse.
+        r"""Sets the end_time of this ShowJobStatusResponse.
 
         结束时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -221,7 +221,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowJobStatusResponse.
+        r"""Gets the error_code of this ShowJobStatusResponse.
 
         Job执行失败时的错误码。
 
@@ -232,7 +232,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowJobStatusResponse.
+        r"""Sets the error_code of this ShowJobStatusResponse.
 
         Job执行失败时的错误码。
 
@@ -243,7 +243,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobStatusResponse.
+        r"""Gets the fail_reason of this ShowJobStatusResponse.
 
         Job执行失败时的错误原因。
 
@@ -254,7 +254,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobStatusResponse.
+        r"""Sets the fail_reason of this ShowJobStatusResponse.
 
         Job执行失败时的错误原因。
 

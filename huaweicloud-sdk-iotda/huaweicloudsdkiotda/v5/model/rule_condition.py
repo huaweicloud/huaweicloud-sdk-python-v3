@@ -33,7 +33,7 @@ class RuleCondition:
     }
 
     def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None, device_linkage_status_condition=None):
-        """RuleCondition
+        r"""RuleCondition
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class RuleCondition:
 
     @property
     def type(self):
-        """Gets the type of this RuleCondition.
+        r"""Gets the type of this RuleCondition.
 
         **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_LINKAGE_STATUS：设备状态类型条件。
 
@@ -81,7 +81,7 @@ class RuleCondition:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleCondition.
+        r"""Sets the type of this RuleCondition.
 
         **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_LINKAGE_STATUS：设备状态类型条件。
 
@@ -92,7 +92,7 @@ class RuleCondition:
 
     @property
     def device_property_condition(self):
-        """Gets the device_property_condition of this RuleCondition.
+        r"""Gets the device_property_condition of this RuleCondition.
 
         :return: The device_property_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceDataCondition`
@@ -101,7 +101,7 @@ class RuleCondition:
 
     @device_property_condition.setter
     def device_property_condition(self, device_property_condition):
-        """Sets the device_property_condition of this RuleCondition.
+        r"""Sets the device_property_condition of this RuleCondition.
 
         :param device_property_condition: The device_property_condition of this RuleCondition.
         :type device_property_condition: :class:`huaweicloudsdkiotda.v5.DeviceDataCondition`
@@ -110,7 +110,7 @@ class RuleCondition:
 
     @property
     def simple_timer_condition(self):
-        """Gets the simple_timer_condition of this RuleCondition.
+        r"""Gets the simple_timer_condition of this RuleCondition.
 
         :return: The simple_timer_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.SimpleTimerType`
@@ -119,7 +119,7 @@ class RuleCondition:
 
     @simple_timer_condition.setter
     def simple_timer_condition(self, simple_timer_condition):
-        """Sets the simple_timer_condition of this RuleCondition.
+        r"""Sets the simple_timer_condition of this RuleCondition.
 
         :param simple_timer_condition: The simple_timer_condition of this RuleCondition.
         :type simple_timer_condition: :class:`huaweicloudsdkiotda.v5.SimpleTimerType`
@@ -128,7 +128,7 @@ class RuleCondition:
 
     @property
     def daily_timer_condition(self):
-        """Gets the daily_timer_condition of this RuleCondition.
+        r"""Gets the daily_timer_condition of this RuleCondition.
 
         :return: The daily_timer_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.DailyTimerType`
@@ -137,7 +137,7 @@ class RuleCondition:
 
     @daily_timer_condition.setter
     def daily_timer_condition(self, daily_timer_condition):
-        """Sets the daily_timer_condition of this RuleCondition.
+        r"""Sets the daily_timer_condition of this RuleCondition.
 
         :param daily_timer_condition: The daily_timer_condition of this RuleCondition.
         :type daily_timer_condition: :class:`huaweicloudsdkiotda.v5.DailyTimerType`
@@ -146,7 +146,7 @@ class RuleCondition:
 
     @property
     def device_linkage_status_condition(self):
-        """Gets the device_linkage_status_condition of this RuleCondition.
+        r"""Gets the device_linkage_status_condition of this RuleCondition.
 
         :return: The device_linkage_status_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceLinkageStatusCondition`
@@ -155,7 +155,7 @@ class RuleCondition:
 
     @device_linkage_status_condition.setter
     def device_linkage_status_condition(self, device_linkage_status_condition):
-        """Sets the device_linkage_status_condition of this RuleCondition.
+        r"""Sets the device_linkage_status_condition of this RuleCondition.
 
         :param device_linkage_status_condition: The device_linkage_status_condition of this RuleCondition.
         :type device_linkage_status_condition: :class:`huaweicloudsdkiotda.v5.DeviceLinkageStatusCondition`

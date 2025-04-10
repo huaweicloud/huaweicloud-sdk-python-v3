@@ -30,7 +30,7 @@ class ListPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, permissions=None):
-        """ListPermissionsResponse
+        r"""ListPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPermissionsResponse.
+        r"""Gets the request_id of this ListPermissionsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPermissionsResponse.
+        r"""Sets the request_id of this ListPermissionsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPermissionsResponse.
+        r"""Gets the page_info of this ListPermissionsResponse.
 
         :return: The page_info of this ListPermissionsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPermissionsResponse.
+        r"""Sets the page_info of this ListPermissionsResponse.
 
         :param page_info: The page_info of this ListPermissionsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ListPermissionsResponse.
+        r"""Gets the permissions of this ListPermissionsResponse.
 
         权限实例列表。
 
@@ -107,7 +107,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ListPermissionsResponse.
+        r"""Sets the permissions of this ListPermissionsResponse.
 
         权限实例列表。
 

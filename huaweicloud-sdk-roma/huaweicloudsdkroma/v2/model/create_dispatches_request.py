@@ -29,7 +29,7 @@ class CreateDispatchesRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """CreateDispatchesRequest
+        r"""CreateDispatchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDispatchesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDispatchesRequest.
+        r"""Gets the instance_id of this CreateDispatchesRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateDispatchesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDispatchesRequest.
+        r"""Sets the instance_id of this CreateDispatchesRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateDispatchesRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateDispatchesRequest.
+        r"""Gets the task_id of this CreateDispatchesRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class CreateDispatchesRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateDispatchesRequest.
+        r"""Sets the task_id of this CreateDispatchesRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class CreateDispatchesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDispatchesRequest.
+        r"""Gets the body of this CreateDispatchesRequest.
 
         :return: The body of this CreateDispatchesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskDispatch`
@@ -108,7 +108,7 @@ class CreateDispatchesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDispatchesRequest.
+        r"""Sets the body of this CreateDispatchesRequest.
 
         :param body: The body of this CreateDispatchesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`

@@ -52,7 +52,7 @@ class UpdateMixJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, stream_name=None, app_id=None, room_id=None, mix_param=None, record_param=None, create_time=None, update_time=None, state=None, stop_reason=None, description=None, start_time=None, stop_time=None, x_request_id=None):
-        """UpdateMixJobResponse
+        r"""UpdateMixJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateMixJobResponse.
+        r"""Gets the job_id of this UpdateMixJobResponse.
 
         任务编号，可以用于修改、查看和停止合流任务
 
@@ -146,7 +146,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateMixJobResponse.
+        r"""Sets the job_id of this UpdateMixJobResponse.
 
         任务编号，可以用于修改、查看和停止合流任务
 
@@ -157,7 +157,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this UpdateMixJobResponse.
+        r"""Gets the stream_name of this UpdateMixJobResponse.
 
         流名
 
@@ -168,7 +168,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this UpdateMixJobResponse.
+        r"""Sets the stream_name of this UpdateMixJobResponse.
 
         流名
 
@@ -179,7 +179,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateMixJobResponse.
+        r"""Gets the app_id of this UpdateMixJobResponse.
 
         应用id
 
@@ -190,7 +190,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateMixJobResponse.
+        r"""Sets the app_id of this UpdateMixJobResponse.
 
         应用id
 
@@ -201,7 +201,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this UpdateMixJobResponse.
+        r"""Gets the room_id of this UpdateMixJobResponse.
 
         房间id
 
@@ -212,7 +212,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this UpdateMixJobResponse.
+        r"""Sets the room_id of this UpdateMixJobResponse.
 
         房间id
 
@@ -223,7 +223,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def mix_param(self):
-        """Gets the mix_param of this UpdateMixJobResponse.
+        r"""Gets the mix_param of this UpdateMixJobResponse.
 
         :return: The mix_param of this UpdateMixJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -232,7 +232,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @mix_param.setter
     def mix_param(self, mix_param):
-        """Sets the mix_param of this UpdateMixJobResponse.
+        r"""Sets the mix_param of this UpdateMixJobResponse.
 
         :param mix_param: The mix_param of this UpdateMixJobResponse.
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -241,7 +241,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def record_param(self):
-        """Gets the record_param of this UpdateMixJobResponse.
+        r"""Gets the record_param of this UpdateMixJobResponse.
 
         :return: The record_param of this UpdateMixJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -250,7 +250,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @record_param.setter
     def record_param(self, record_param):
-        """Sets the record_param of this UpdateMixJobResponse.
+        r"""Sets the record_param of this UpdateMixJobResponse.
 
         :param record_param: The record_param of this UpdateMixJobResponse.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -259,7 +259,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateMixJobResponse.
+        r"""Gets the create_time of this UpdateMixJobResponse.
 
         任务创建的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -270,7 +270,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateMixJobResponse.
+        r"""Sets the create_time of this UpdateMixJobResponse.
 
         任务创建的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -281,7 +281,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateMixJobResponse.
+        r"""Gets the update_time of this UpdateMixJobResponse.
 
         任务中的布局更新的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -292,7 +292,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateMixJobResponse.
+        r"""Sets the update_time of this UpdateMixJobResponse.
 
         任务中的布局更新的时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -303,7 +303,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateMixJobResponse.
+        r"""Gets the state of this UpdateMixJobResponse.
 
         任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
 
@@ -314,7 +314,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateMixJobResponse.
+        r"""Sets the state of this UpdateMixJobResponse.
 
         任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
 
@@ -325,7 +325,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def stop_reason(self):
-        """Gets the stop_reason of this UpdateMixJobResponse.
+        r"""Gets the stop_reason of this UpdateMixJobResponse.
 
         任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
 
@@ -336,7 +336,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @stop_reason.setter
     def stop_reason(self, stop_reason):
-        """Sets the stop_reason of this UpdateMixJobResponse.
+        r"""Sets the stop_reason of this UpdateMixJobResponse.
 
         任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
 
@@ -347,7 +347,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateMixJobResponse.
+        r"""Gets the description of this UpdateMixJobResponse.
 
         状态描述，对state字段的一些补充说明，可用于人工查阅。
 
@@ -358,7 +358,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateMixJobResponse.
+        r"""Sets the description of this UpdateMixJobResponse.
 
         状态描述，对state字段的一些补充说明，可用于人工查阅。
 
@@ -369,7 +369,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateMixJobResponse.
+        r"""Gets the start_time of this UpdateMixJobResponse.
 
         任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -380,7 +380,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateMixJobResponse.
+        r"""Sets the start_time of this UpdateMixJobResponse.
 
         任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -391,7 +391,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def stop_time(self):
-        """Gets the stop_time of this UpdateMixJobResponse.
+        r"""Gets the stop_time of this UpdateMixJobResponse.
 
         任务结束时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -402,7 +402,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @stop_time.setter
     def stop_time(self, stop_time):
-        """Sets the stop_time of this UpdateMixJobResponse.
+        r"""Sets the stop_time of this UpdateMixJobResponse.
 
         任务结束时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -413,7 +413,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateMixJobResponse.
+        r"""Gets the x_request_id of this UpdateMixJobResponse.
 
         :return: The x_request_id of this UpdateMixJobResponse.
         :rtype: str
@@ -422,7 +422,7 @@ class UpdateMixJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateMixJobResponse.
+        r"""Sets the x_request_id of this UpdateMixJobResponse.
 
         :param x_request_id: The x_request_id of this UpdateMixJobResponse.
         :type x_request_id: str

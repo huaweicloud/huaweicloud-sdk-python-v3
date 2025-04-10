@@ -26,7 +26,7 @@ class UpdateAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, alarm_rule_id=None):
-        """UpdateAlarmRuleResponse
+        r"""UpdateAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this UpdateAlarmRuleResponse.
+        r"""Gets the alarm_rule_id of this UpdateAlarmRuleResponse.
 
         阈值规则id。
 
@@ -55,7 +55,7 @@ class UpdateAlarmRuleResponse(SdkResponse):
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this UpdateAlarmRuleResponse.
+        r"""Sets the alarm_rule_id of this UpdateAlarmRuleResponse.
 
         阈值规则id。
 

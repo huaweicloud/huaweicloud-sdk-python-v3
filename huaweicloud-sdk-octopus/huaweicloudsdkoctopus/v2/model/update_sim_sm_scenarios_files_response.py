@@ -48,7 +48,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
     }
 
     def __init__(self, url=None, sha256=None, created_at=None, updated_at=None, post=None, put_url=None, get_url=None, expire=None, path=None, bucket=None, filename=None, ready=None):
-        """UpdateSimSmScenariosFilesResponse
+        r"""UpdateSimSmScenariosFilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the url of this UpdateSimSmScenariosFilesResponse.
 
         地址
 
@@ -132,7 +132,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the url of this UpdateSimSmScenariosFilesResponse.
 
         地址
 
@@ -143,7 +143,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def sha256(self):
-        """Gets the sha256 of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the sha256 of this UpdateSimSmScenariosFilesResponse.
 
         文件sha256值
 
@@ -154,7 +154,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the sha256 of this UpdateSimSmScenariosFilesResponse.
 
         文件sha256值
 
@@ -165,7 +165,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the created_at of this UpdateSimSmScenariosFilesResponse.
 
         创建时间
 
@@ -176,7 +176,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the created_at of this UpdateSimSmScenariosFilesResponse.
 
         创建时间
 
@@ -187,7 +187,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the updated_at of this UpdateSimSmScenariosFilesResponse.
 
         更新时间
 
@@ -198,7 +198,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the updated_at of this UpdateSimSmScenariosFilesResponse.
 
         更新时间
 
@@ -209,7 +209,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def post(self):
-        """Gets the post of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the post of this UpdateSimSmScenariosFilesResponse.
 
         POST地址
 
@@ -220,7 +220,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @post.setter
     def post(self, post):
-        """Sets the post of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the post of this UpdateSimSmScenariosFilesResponse.
 
         POST地址
 
@@ -231,7 +231,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def put_url(self):
-        """Gets the put_url of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the put_url of this UpdateSimSmScenariosFilesResponse.
 
         PUT地址
 
@@ -242,7 +242,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @put_url.setter
     def put_url(self, put_url):
-        """Sets the put_url of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the put_url of this UpdateSimSmScenariosFilesResponse.
 
         PUT地址
 
@@ -253,7 +253,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def get_url(self):
-        """Gets the get_url of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the get_url of this UpdateSimSmScenariosFilesResponse.
 
         GET地址
 
@@ -264,7 +264,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @get_url.setter
     def get_url(self, get_url):
-        """Sets the get_url of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the get_url of this UpdateSimSmScenariosFilesResponse.
 
         GET地址
 
@@ -275,7 +275,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def expire(self):
-        """Gets the expire of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the expire of this UpdateSimSmScenariosFilesResponse.
 
         默认失效时间为600秒.
 
@@ -286,7 +286,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @expire.setter
     def expire(self, expire):
-        """Sets the expire of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the expire of this UpdateSimSmScenariosFilesResponse.
 
         默认失效时间为600秒.
 
@@ -297,7 +297,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the path of this UpdateSimSmScenariosFilesResponse.
 
         路径
 
@@ -308,7 +308,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the path of this UpdateSimSmScenariosFilesResponse.
 
         路径
 
@@ -319,7 +319,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def bucket(self):
-        """Gets the bucket of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the bucket of this UpdateSimSmScenariosFilesResponse.
 
         桶
 
@@ -330,7 +330,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the bucket of this UpdateSimSmScenariosFilesResponse.
 
         桶
 
@@ -341,7 +341,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def filename(self):
-        """Gets the filename of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the filename of this UpdateSimSmScenariosFilesResponse.
 
         文件名
 
@@ -352,7 +352,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the filename of this UpdateSimSmScenariosFilesResponse.
 
         文件名
 
@@ -363,7 +363,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def ready(self):
-        """Gets the ready of this UpdateSimSmScenariosFilesResponse.
+        r"""Gets the ready of this UpdateSimSmScenariosFilesResponse.
 
         状态
 
@@ -374,7 +374,7 @@ class UpdateSimSmScenariosFilesResponse(SdkResponse):
 
     @ready.setter
     def ready(self, ready):
-        """Sets the ready of this UpdateSimSmScenariosFilesResponse.
+        r"""Sets the ready of this UpdateSimSmScenariosFilesResponse.
 
         状态
 

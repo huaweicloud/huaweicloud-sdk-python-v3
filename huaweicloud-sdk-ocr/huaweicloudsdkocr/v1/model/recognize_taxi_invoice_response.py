@@ -28,7 +28,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeTaxiInvoiceResponse
+        r"""RecognizeTaxiInvoiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeTaxiInvoiceResponse.
+        r"""Gets the result of this RecognizeTaxiInvoiceResponse.
 
         :return: The result of this RecognizeTaxiInvoiceResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TaxiInvoiceResult`
@@ -60,7 +60,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeTaxiInvoiceResponse.
+        r"""Sets the result of this RecognizeTaxiInvoiceResponse.
 
         :param result: The result of this RecognizeTaxiInvoiceResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TaxiInvoiceResult`
@@ -69,7 +69,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeTaxiInvoiceResponse.
+        r"""Gets the x_request_id of this RecognizeTaxiInvoiceResponse.
 
         :return: The x_request_id of this RecognizeTaxiInvoiceResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeTaxiInvoiceResponse.
+        r"""Sets the x_request_id of this RecognizeTaxiInvoiceResponse.
 
         :param x_request_id: The x_request_id of this RecognizeTaxiInvoiceResponse.
         :type x_request_id: str

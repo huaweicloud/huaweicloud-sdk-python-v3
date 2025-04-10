@@ -34,7 +34,7 @@ class ListManagedPoliciesInPermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None, limit=None, marker=None):
-        """ListManagedPoliciesInPermissionSetRequest
+        r"""ListManagedPoliciesInPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Gets the x_security_token of this ListManagedPoliciesInPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -81,7 +81,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Sets the x_security_token of this ListManagedPoliciesInPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -92,7 +92,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Gets the instance_id of this ListManagedPoliciesInPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -103,7 +103,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Sets the instance_id of this ListManagedPoliciesInPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -114,7 +114,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Gets the permission_set_id of this ListManagedPoliciesInPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -125,7 +125,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Sets the permission_set_id of this ListManagedPoliciesInPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -136,7 +136,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Gets the limit of this ListManagedPoliciesInPermissionSetRequest.
 
         每个请求返回的最大结果数
 
@@ -147,7 +147,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Sets the limit of this ListManagedPoliciesInPermissionSetRequest.
 
         每个请求返回的最大结果数
 
@@ -158,7 +158,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Gets the marker of this ListManagedPoliciesInPermissionSetRequest.
 
         分页标记
 
@@ -169,7 +169,7 @@ class ListManagedPoliciesInPermissionSetRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListManagedPoliciesInPermissionSetRequest.
+        r"""Sets the marker of this ListManagedPoliciesInPermissionSetRequest.
 
         分页标记
 

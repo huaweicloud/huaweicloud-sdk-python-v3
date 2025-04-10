@@ -27,7 +27,7 @@ class PostgresqlDatabaseSchemaReq:
     }
 
     def __init__(self, db_name=None, schemas=None):
-        """PostgresqlDatabaseSchemaReq
+        r"""PostgresqlDatabaseSchemaReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PostgresqlDatabaseSchemaReq:
 
     @property
     def db_name(self):
-        """Gets the db_name of this PostgresqlDatabaseSchemaReq.
+        r"""Gets the db_name of this PostgresqlDatabaseSchemaReq.
 
         数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
@@ -59,7 +59,7 @@ class PostgresqlDatabaseSchemaReq:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this PostgresqlDatabaseSchemaReq.
+        r"""Sets the db_name of this PostgresqlDatabaseSchemaReq.
 
         数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和RDS for PostgreSQL模板库重名。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
@@ -70,7 +70,7 @@ class PostgresqlDatabaseSchemaReq:
 
     @property
     def schemas(self):
-        """Gets the schemas of this PostgresqlDatabaseSchemaReq.
+        r"""Gets the schemas of this PostgresqlDatabaseSchemaReq.
 
         每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
 
@@ -81,7 +81,7 @@ class PostgresqlDatabaseSchemaReq:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this PostgresqlDatabaseSchemaReq.
+        r"""Sets the schemas of this PostgresqlDatabaseSchemaReq.
 
         每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
 

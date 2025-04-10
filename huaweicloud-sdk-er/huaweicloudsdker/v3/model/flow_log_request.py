@@ -37,7 +37,7 @@ class FlowLogRequest:
     }
 
     def __init__(self, name=None, description=None, resource_type=None, resource_id=None, log_group_id=None, log_stream_id=None, log_store_type=None):
-        """FlowLogRequest
+        r"""FlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class FlowLogRequest:
 
     @property
     def name(self):
-        """Gets the name of this FlowLogRequest.
+        r"""Gets the name of this FlowLogRequest.
 
         流日志名称
 
@@ -90,7 +90,7 @@ class FlowLogRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlowLogRequest.
+        r"""Sets the name of this FlowLogRequest.
 
         流日志名称
 
@@ -101,7 +101,7 @@ class FlowLogRequest:
 
     @property
     def description(self):
-        """Gets the description of this FlowLogRequest.
+        r"""Gets the description of this FlowLogRequest.
 
         流日志描述
 
@@ -112,7 +112,7 @@ class FlowLogRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlowLogRequest.
+        r"""Sets the description of this FlowLogRequest.
 
         流日志描述
 
@@ -123,7 +123,7 @@ class FlowLogRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FlowLogRequest.
+        r"""Gets the resource_type of this FlowLogRequest.
 
         流日志采集的资源类型:   - VPC连接   - 虚拟网关连接   - 对等连接
 
@@ -134,7 +134,7 @@ class FlowLogRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FlowLogRequest.
+        r"""Sets the resource_type of this FlowLogRequest.
 
         流日志采集的资源类型:   - VPC连接   - 虚拟网关连接   - 对等连接
 
@@ -145,7 +145,7 @@ class FlowLogRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FlowLogRequest.
+        r"""Gets the resource_id of this FlowLogRequest.
 
         要采集的资源ID
 
@@ -156,7 +156,7 @@ class FlowLogRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FlowLogRequest.
+        r"""Sets the resource_id of this FlowLogRequest.
 
         要采集的资源ID
 
@@ -167,7 +167,7 @@ class FlowLogRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this FlowLogRequest.
+        r"""Gets the log_group_id of this FlowLogRequest.
 
         日志组ID。请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -178,7 +178,7 @@ class FlowLogRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this FlowLogRequest.
+        r"""Sets the log_group_id of this FlowLogRequest.
 
         日志组ID。请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -189,7 +189,7 @@ class FlowLogRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this FlowLogRequest.
+        r"""Gets the log_stream_id of this FlowLogRequest.
 
         日志主题ID。请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -200,7 +200,7 @@ class FlowLogRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this FlowLogRequest.
+        r"""Sets the log_stream_id of this FlowLogRequest.
 
         日志主题ID。请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -211,7 +211,7 @@ class FlowLogRequest:
 
     @property
     def log_store_type(self):
-        """Gets the log_store_type of this FlowLogRequest.
+        r"""Gets the log_store_type of this FlowLogRequest.
 
         流日志的存储类型: - LTS: 云日志服务器存储
 
@@ -222,7 +222,7 @@ class FlowLogRequest:
 
     @log_store_type.setter
     def log_store_type(self, log_store_type):
-        """Sets the log_store_type of this FlowLogRequest.
+        r"""Sets the log_store_type of this FlowLogRequest.
 
         流日志的存储类型: - LTS: 云日志服务器存储
 

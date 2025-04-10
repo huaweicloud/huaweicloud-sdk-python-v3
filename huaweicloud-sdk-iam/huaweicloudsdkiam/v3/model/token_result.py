@@ -39,7 +39,7 @@ class TokenResult:
     }
 
     def __init__(self, catalog=None, domain=None, expires_at=None, issued_at=None, methods=None, project=None, roles=None, user=None):
-        """TokenResult
+        r"""TokenResult
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class TokenResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this TokenResult.
+        r"""Gets the catalog of this TokenResult.
 
         服务目录信息。
 
@@ -97,7 +97,7 @@ class TokenResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this TokenResult.
+        r"""Sets the catalog of this TokenResult.
 
         服务目录信息。
 
@@ -108,7 +108,7 @@ class TokenResult:
 
     @property
     def domain(self):
-        """Gets the domain of this TokenResult.
+        r"""Gets the domain of this TokenResult.
 
         :return: The domain of this TokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -117,7 +117,7 @@ class TokenResult:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this TokenResult.
+        r"""Sets the domain of this TokenResult.
 
         :param domain: The domain of this TokenResult.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -126,7 +126,7 @@ class TokenResult:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this TokenResult.
+        r"""Gets the expires_at of this TokenResult.
 
         token过期时间。
 
@@ -137,7 +137,7 @@ class TokenResult:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this TokenResult.
+        r"""Sets the expires_at of this TokenResult.
 
         token过期时间。
 
@@ -148,7 +148,7 @@ class TokenResult:
 
     @property
     def issued_at(self):
-        """Gets the issued_at of this TokenResult.
+        r"""Gets the issued_at of this TokenResult.
 
         token下发时间。
 
@@ -159,7 +159,7 @@ class TokenResult:
 
     @issued_at.setter
     def issued_at(self, issued_at):
-        """Sets the issued_at of this TokenResult.
+        r"""Sets the issued_at of this TokenResult.
 
         token下发时间。
 
@@ -170,7 +170,7 @@ class TokenResult:
 
     @property
     def methods(self):
-        """Gets the methods of this TokenResult.
+        r"""Gets the methods of this TokenResult.
 
         获取token的方式。
 
@@ -181,7 +181,7 @@ class TokenResult:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this TokenResult.
+        r"""Sets the methods of this TokenResult.
 
         获取token的方式。
 
@@ -192,7 +192,7 @@ class TokenResult:
 
     @property
     def project(self):
-        """Gets the project of this TokenResult.
+        r"""Gets the project of this TokenResult.
 
         :return: The project of this TokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
@@ -201,7 +201,7 @@ class TokenResult:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this TokenResult.
+        r"""Sets the project of this TokenResult.
 
         :param project: The project of this TokenResult.
         :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
@@ -210,7 +210,7 @@ class TokenResult:
 
     @property
     def roles(self):
-        """Gets the roles of this TokenResult.
+        r"""Gets the roles of this TokenResult.
 
         token的权限信息。
 
@@ -221,7 +221,7 @@ class TokenResult:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this TokenResult.
+        r"""Sets the roles of this TokenResult.
 
         token的权限信息。
 
@@ -232,7 +232,7 @@ class TokenResult:
 
     @property
     def user(self):
-        """Gets the user of this TokenResult.
+        r"""Gets the user of this TokenResult.
 
         :return: The user of this TokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserResult`
@@ -241,7 +241,7 @@ class TokenResult:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this TokenResult.
+        r"""Sets the user of this TokenResult.
 
         :param user: The user of this TokenResult.
         :type user: :class:`huaweicloudsdkiam.v3.TokenUserResult`

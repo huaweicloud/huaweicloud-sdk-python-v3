@@ -31,7 +31,7 @@ class CbcProductInfoOrderChange:
     }
 
     def __init__(self, product_id=None, resource_size=None, resource_size_measure_id=None, resource_spec_code=None):
-        """CbcProductInfoOrderChange
+        r"""CbcProductInfoOrderChange
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CbcProductInfoOrderChange:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CbcProductInfoOrderChange.
+        r"""Gets the product_id of this CbcProductInfoOrderChange.
 
         产品标识，通过订购询价接口获得，长度限制：1-64，只能由字母、数字、“_”、“-”组成。
 
@@ -72,7 +72,7 @@ class CbcProductInfoOrderChange:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CbcProductInfoOrderChange.
+        r"""Sets the product_id of this CbcProductInfoOrderChange.
 
         产品标识，通过订购询价接口获得，长度限制：1-64，只能由字母、数字、“_”、“-”组成。
 
@@ -83,7 +83,7 @@ class CbcProductInfoOrderChange:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this CbcProductInfoOrderChange.
+        r"""Gets the resource_size of this CbcProductInfoOrderChange.
 
         资源容量大小，取值范围：10-10485760
 
@@ -94,7 +94,7 @@ class CbcProductInfoOrderChange:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this CbcProductInfoOrderChange.
+        r"""Sets the resource_size of this CbcProductInfoOrderChange.
 
         资源容量大小，取值范围：10-10485760
 
@@ -105,7 +105,7 @@ class CbcProductInfoOrderChange:
 
     @property
     def resource_size_measure_id(self):
-        """Gets the resource_size_measure_id of this CbcProductInfoOrderChange.
+        r"""Gets the resource_size_measure_id of this CbcProductInfoOrderChange.
 
         资源容量度量标识，枚举值17：GB
 
@@ -116,7 +116,7 @@ class CbcProductInfoOrderChange:
 
     @resource_size_measure_id.setter
     def resource_size_measure_id(self, resource_size_measure_id):
-        """Sets the resource_size_measure_id of this CbcProductInfoOrderChange.
+        r"""Sets the resource_size_measure_id of this CbcProductInfoOrderChange.
 
         资源容量度量标识，枚举值17：GB
 
@@ -127,7 +127,7 @@ class CbcProductInfoOrderChange:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this CbcProductInfoOrderChange.
+        r"""Gets the resource_spec_code of this CbcProductInfoOrderChange.
 
         用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
 
@@ -138,7 +138,7 @@ class CbcProductInfoOrderChange:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this CbcProductInfoOrderChange.
+        r"""Sets the resource_spec_code of this CbcProductInfoOrderChange.
 
         用户购买云服务产品的资源规格 Enum: [vault.backup.server.normal，vault.backup.turbo.normal, vault.backup.database.normal，vault.backup.volume.normal，vault.backup.rds.normal，vault.replication.server.normal，vault.hybrid.server.normal]
 

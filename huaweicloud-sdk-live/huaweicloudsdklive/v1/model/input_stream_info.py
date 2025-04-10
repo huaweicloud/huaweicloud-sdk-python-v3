@@ -43,7 +43,7 @@ class InputStreamInfo:
     }
 
     def __init__(self, input_protocol=None, sources=None, secondary_sources=None, failover_conditions=None, max_bandwidth_limit=None, ip_port_mode=None, ip_whitelist=None, scte35_source=None, ad_triggers=None, audio_selectors=None):
-        """InputStreamInfo
+        r"""InputStreamInfo
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class InputStreamInfo:
 
     @property
     def input_protocol(self):
-        """Gets the input_protocol of this InputStreamInfo.
+        r"""Gets the input_protocol of this InputStreamInfo.
 
         频道入流协议 - FLV_PULL - RTMP_PUSH - HLS_PULL - SRT_PULL - SRT_PUSH
 
@@ -116,7 +116,7 @@ class InputStreamInfo:
 
     @input_protocol.setter
     def input_protocol(self, input_protocol):
-        """Sets the input_protocol of this InputStreamInfo.
+        r"""Sets the input_protocol of this InputStreamInfo.
 
         频道入流协议 - FLV_PULL - RTMP_PUSH - HLS_PULL - SRT_PULL - SRT_PUSH
 
@@ -127,7 +127,7 @@ class InputStreamInfo:
 
     @property
     def sources(self):
-        """Gets the sources of this InputStreamInfo.
+        r"""Gets the sources of this InputStreamInfo.
 
         频道主源流信息。入流协议为RTMP_PUSH和SRT_PUSH时，非必填项。其他情况下，均为必填项。
 
@@ -138,7 +138,7 @@ class InputStreamInfo:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this InputStreamInfo.
+        r"""Sets the sources of this InputStreamInfo.
 
         频道主源流信息。入流协议为RTMP_PUSH和SRT_PUSH时，非必填项。其他情况下，均为必填项。
 
@@ -149,7 +149,7 @@ class InputStreamInfo:
 
     @property
     def secondary_sources(self):
-        """Gets the secondary_sources of this InputStreamInfo.
+        r"""Gets the secondary_sources of this InputStreamInfo.
 
         备入流数组，非必填项。如果有备入流，则主备入流必须保证路数、codec和分辨率均一致。入流协议为RTMP_PUSH时，无需填写。
 
@@ -160,7 +160,7 @@ class InputStreamInfo:
 
     @secondary_sources.setter
     def secondary_sources(self, secondary_sources):
-        """Sets the secondary_sources of this InputStreamInfo.
+        r"""Sets the secondary_sources of this InputStreamInfo.
 
         备入流数组，非必填项。如果有备入流，则主备入流必须保证路数、codec和分辨率均一致。入流协议为RTMP_PUSH时，无需填写。
 
@@ -171,7 +171,7 @@ class InputStreamInfo:
 
     @property
     def failover_conditions(self):
-        """Gets the failover_conditions of this InputStreamInfo.
+        r"""Gets the failover_conditions of this InputStreamInfo.
 
         :return: The failover_conditions of this InputStreamInfo.
         :rtype: :class:`huaweicloudsdklive.v1.FailoverConditions`
@@ -180,7 +180,7 @@ class InputStreamInfo:
 
     @failover_conditions.setter
     def failover_conditions(self, failover_conditions):
-        """Sets the failover_conditions of this InputStreamInfo.
+        r"""Sets the failover_conditions of this InputStreamInfo.
 
         :param failover_conditions: The failover_conditions of this InputStreamInfo.
         :type failover_conditions: :class:`huaweicloudsdklive.v1.FailoverConditions`
@@ -189,7 +189,7 @@ class InputStreamInfo:
 
     @property
     def max_bandwidth_limit(self):
-        """Gets the max_bandwidth_limit of this InputStreamInfo.
+        r"""Gets the max_bandwidth_limit of this InputStreamInfo.
 
         当入流协议为HLS_PULL时，需要配置的最大带宽。  用户提供的拉流URL中，针对不同码率的音视频，均会携带带宽参数“BANDWIDTH”。 - 如果这里配置最大带宽，媒体直播服务从URL拉流时，会选择小于最大带宽且码率最大的音视频流，推流到源站。 - 如果这里未配置最大带宽，媒体直播服务从URL拉流时，会默认选择“BANDWIDTH”最高的音视频流，推流到源站。
 
@@ -200,7 +200,7 @@ class InputStreamInfo:
 
     @max_bandwidth_limit.setter
     def max_bandwidth_limit(self, max_bandwidth_limit):
-        """Sets the max_bandwidth_limit of this InputStreamInfo.
+        r"""Sets the max_bandwidth_limit of this InputStreamInfo.
 
         当入流协议为HLS_PULL时，需要配置的最大带宽。  用户提供的拉流URL中，针对不同码率的音视频，均会携带带宽参数“BANDWIDTH”。 - 如果这里配置最大带宽，媒体直播服务从URL拉流时，会选择小于最大带宽且码率最大的音视频流，推流到源站。 - 如果这里未配置最大带宽，媒体直播服务从URL拉流时，会默认选择“BANDWIDTH”最高的音视频流，推流到源站。
 
@@ -211,7 +211,7 @@ class InputStreamInfo:
 
     @property
     def ip_port_mode(self):
-        """Gets the ip_port_mode of this InputStreamInfo.
+        r"""Gets the ip_port_mode of this InputStreamInfo.
 
         当推流协议为SRT_PUSH时，如果配置了直推源站，编码器不支持输入streamid，需要打开设置为true
 
@@ -222,7 +222,7 @@ class InputStreamInfo:
 
     @ip_port_mode.setter
     def ip_port_mode(self, ip_port_mode):
-        """Sets the ip_port_mode of this InputStreamInfo.
+        r"""Sets the ip_port_mode of this InputStreamInfo.
 
         当推流协议为SRT_PUSH时，如果配置了直推源站，编码器不支持输入streamid，需要打开设置为true
 
@@ -233,7 +233,7 @@ class InputStreamInfo:
 
     @property
     def ip_whitelist(self):
-        """Gets the ip_whitelist of this InputStreamInfo.
+        r"""Gets the ip_whitelist of this InputStreamInfo.
 
         SRT_PUSH类型时，客户push ip白名单
 
@@ -244,7 +244,7 @@ class InputStreamInfo:
 
     @ip_whitelist.setter
     def ip_whitelist(self, ip_whitelist):
-        """Sets the ip_whitelist of this InputStreamInfo.
+        r"""Sets the ip_whitelist of this InputStreamInfo.
 
         SRT_PUSH类型时，客户push ip白名单
 
@@ -255,7 +255,7 @@ class InputStreamInfo:
 
     @property
     def scte35_source(self):
-        """Gets the scte35_source of this InputStreamInfo.
+        r"""Gets the scte35_source of this InputStreamInfo.
 
         广告的scte35信号源。  仅HLS_PULL类型的频道支持此配置，且目前仅支持SEGMENTS。
 
@@ -266,7 +266,7 @@ class InputStreamInfo:
 
     @scte35_source.setter
     def scte35_source(self, scte35_source):
-        """Sets the scte35_source of this InputStreamInfo.
+        r"""Sets the scte35_source of this InputStreamInfo.
 
         广告的scte35信号源。  仅HLS_PULL类型的频道支持此配置，且目前仅支持SEGMENTS。
 
@@ -277,7 +277,7 @@ class InputStreamInfo:
 
     @property
     def ad_triggers(self):
-        """Gets the ad_triggers of this InputStreamInfo.
+        r"""Gets the ad_triggers of this InputStreamInfo.
 
         广告触发器配置。  包含如下取值： - Splice insert：拼接插入 - Provider advertisement：提供商广告 - Distributor advertisement：分销商广告 - Provider placement opportunity：提供商置放机会 - Distributor placement opportunity：分销商置放机会
 
@@ -288,7 +288,7 @@ class InputStreamInfo:
 
     @ad_triggers.setter
     def ad_triggers(self, ad_triggers):
-        """Sets the ad_triggers of this InputStreamInfo.
+        r"""Sets the ad_triggers of this InputStreamInfo.
 
         广告触发器配置。  包含如下取值： - Splice insert：拼接插入 - Provider advertisement：提供商广告 - Distributor advertisement：分销商广告 - Provider placement opportunity：提供商置放机会 - Distributor placement opportunity：分销商置放机会
 
@@ -299,7 +299,7 @@ class InputStreamInfo:
 
     @property
     def audio_selectors(self):
-        """Gets the audio_selectors of this InputStreamInfo.
+        r"""Gets the audio_selectors of this InputStreamInfo.
 
         设置音频选择器，最多设置8个音频选择器
 
@@ -310,7 +310,7 @@ class InputStreamInfo:
 
     @audio_selectors.setter
     def audio_selectors(self, audio_selectors):
-        """Sets the audio_selectors of this InputStreamInfo.
+        r"""Sets the audio_selectors of this InputStreamInfo.
 
         设置音频选择器，最多设置8个音频选择器
 

@@ -33,7 +33,7 @@ class ListSchemasRequest:
     }
 
     def __init__(self, workspace=None, connection_id=None, database_name=None, limit=None, offset=None):
-        """ListSchemasRequest
+        r"""ListSchemasRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListSchemasRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSchemasRequest.
+        r"""Gets the workspace of this ListSchemasRequest.
 
         数据所在空间的id值
 
@@ -79,7 +79,7 @@ class ListSchemasRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSchemasRequest.
+        r"""Sets the workspace of this ListSchemasRequest.
 
         数据所在空间的id值
 
@@ -90,7 +90,7 @@ class ListSchemasRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListSchemasRequest.
+        r"""Gets the connection_id of this ListSchemasRequest.
 
         数据连接id
 
@@ -101,7 +101,7 @@ class ListSchemasRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListSchemasRequest.
+        r"""Sets the connection_id of this ListSchemasRequest.
 
         数据连接id
 
@@ -112,7 +112,7 @@ class ListSchemasRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListSchemasRequest.
+        r"""Gets the database_name of this ListSchemasRequest.
 
         数据库名称
 
@@ -123,7 +123,7 @@ class ListSchemasRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListSchemasRequest.
+        r"""Sets the database_name of this ListSchemasRequest.
 
         数据库名称
 
@@ -134,7 +134,7 @@ class ListSchemasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSchemasRequest.
+        r"""Gets the limit of this ListSchemasRequest.
 
         数据条数限制
 
@@ -145,7 +145,7 @@ class ListSchemasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSchemasRequest.
+        r"""Sets the limit of this ListSchemasRequest.
 
         数据条数限制
 
@@ -156,7 +156,7 @@ class ListSchemasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSchemasRequest.
+        r"""Gets the offset of this ListSchemasRequest.
 
         偏移量
 
@@ -167,7 +167,7 @@ class ListSchemasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSchemasRequest.
+        r"""Sets the offset of this ListSchemasRequest.
 
         偏移量
 

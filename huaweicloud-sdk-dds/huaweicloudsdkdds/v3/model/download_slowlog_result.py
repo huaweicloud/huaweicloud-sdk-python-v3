@@ -35,7 +35,7 @@ class DownloadSlowlogResult:
     }
 
     def __init__(self, node_name=None, file_name=None, status=None, file_size=None, file_link=None, update_at=None):
-        """DownloadSlowlogResult
+        r"""DownloadSlowlogResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DownloadSlowlogResult:
 
     @property
     def node_name(self):
-        """Gets the node_name of this DownloadSlowlogResult.
+        r"""Gets the node_name of this DownloadSlowlogResult.
 
         节点名称。
 
@@ -83,7 +83,7 @@ class DownloadSlowlogResult:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this DownloadSlowlogResult.
+        r"""Sets the node_name of this DownloadSlowlogResult.
 
         节点名称。
 
@@ -94,7 +94,7 @@ class DownloadSlowlogResult:
 
     @property
     def file_name(self):
-        """Gets the file_name of this DownloadSlowlogResult.
+        r"""Gets the file_name of this DownloadSlowlogResult.
 
         生成的下载文件名。
 
@@ -105,7 +105,7 @@ class DownloadSlowlogResult:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this DownloadSlowlogResult.
+        r"""Sets the file_name of this DownloadSlowlogResult.
 
         生成的下载文件名。
 
@@ -116,7 +116,7 @@ class DownloadSlowlogResult:
 
     @property
     def status(self):
-        """Gets the status of this DownloadSlowlogResult.
+        r"""Gets the status of this DownloadSlowlogResult.
 
         当前链接的生成状态。 - SUCCESS，表示下载链接已经生成完成。 - EXPORTING，表示正在生成文件，准备下载链接。 - FAILED，表示存在日志文件准备失败。
 
@@ -127,7 +127,7 @@ class DownloadSlowlogResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DownloadSlowlogResult.
+        r"""Sets the status of this DownloadSlowlogResult.
 
         当前链接的生成状态。 - SUCCESS，表示下载链接已经生成完成。 - EXPORTING，表示正在生成文件，准备下载链接。 - FAILED，表示存在日志文件准备失败。
 
@@ -138,7 +138,7 @@ class DownloadSlowlogResult:
 
     @property
     def file_size(self):
-        """Gets the file_size of this DownloadSlowlogResult.
+        r"""Gets the file_size of this DownloadSlowlogResult.
 
         文件大小，单位为 KB。
 
@@ -149,7 +149,7 @@ class DownloadSlowlogResult:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this DownloadSlowlogResult.
+        r"""Sets the file_size of this DownloadSlowlogResult.
 
         文件大小，单位为 KB。
 
@@ -160,7 +160,7 @@ class DownloadSlowlogResult:
 
     @property
     def file_link(self):
-        """Gets the file_link of this DownloadSlowlogResult.
+        r"""Gets the file_link of this DownloadSlowlogResult.
 
         下载链接。注意：下载链接在更新时间的 15分钟内有效，超出时间会重新获取。
 
@@ -171,7 +171,7 @@ class DownloadSlowlogResult:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this DownloadSlowlogResult.
+        r"""Sets the file_link of this DownloadSlowlogResult.
 
         下载链接。注意：下载链接在更新时间的 15分钟内有效，超出时间会重新获取。
 
@@ -182,7 +182,7 @@ class DownloadSlowlogResult:
 
     @property
     def update_at(self):
-        """Gets the update_at of this DownloadSlowlogResult.
+        r"""Gets the update_at of this DownloadSlowlogResult.
 
         更新时间。
 
@@ -193,7 +193,7 @@ class DownloadSlowlogResult:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this DownloadSlowlogResult.
+        r"""Sets the update_at of this DownloadSlowlogResult.
 
         更新时间。
 

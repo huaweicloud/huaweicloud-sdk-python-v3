@@ -27,7 +27,7 @@ class ListAlertGroupsByConditionRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """ListAlertGroupsByConditionRequest
+        r"""ListAlertGroupsByConditionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAlertGroupsByConditionRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListAlertGroupsByConditionRequest.
+        r"""Gets the service_id of this ListAlertGroupsByConditionRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ListAlertGroupsByConditionRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListAlertGroupsByConditionRequest.
+        r"""Sets the service_id of this ListAlertGroupsByConditionRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ListAlertGroupsByConditionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAlertGroupsByConditionRequest.
+        r"""Gets the body of this ListAlertGroupsByConditionRequest.
 
         :return: The body of this ListAlertGroupsByConditionRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAlertGroupsByConditionRequestBody`
@@ -80,7 +80,7 @@ class ListAlertGroupsByConditionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAlertGroupsByConditionRequest.
+        r"""Sets the body of this ListAlertGroupsByConditionRequest.
 
         :param body: The body of this ListAlertGroupsByConditionRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ListAlertGroupsByConditionRequestBody`

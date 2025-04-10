@@ -25,7 +25,7 @@ class CreateBuildJobResponseBodyResult:
     }
 
     def __init__(self, job_id=None):
-        """CreateBuildJobResponseBodyResult
+        r"""CreateBuildJobResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBuildJobResponseBodyResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateBuildJobResponseBodyResult.
+        r"""Gets the job_id of this CreateBuildJobResponseBodyResult.
 
         构建任务ID
 
@@ -54,7 +54,7 @@ class CreateBuildJobResponseBodyResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateBuildJobResponseBodyResult.
+        r"""Sets the job_id of this CreateBuildJobResponseBodyResult.
 
         构建任务ID
 

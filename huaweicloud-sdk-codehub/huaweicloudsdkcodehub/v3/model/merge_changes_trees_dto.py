@@ -25,7 +25,7 @@ class MergeChangesTreesDto:
     }
 
     def __init__(self, tree=None):
-        """MergeChangesTreesDto
+        r"""MergeChangesTreesDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MergeChangesTreesDto:
 
     @property
     def tree(self):
-        """Gets the tree of this MergeChangesTreesDto.
+        r"""Gets the tree of this MergeChangesTreesDto.
 
         :return: The tree of this MergeChangesTreesDto.
         :rtype: list[:class:`huaweicloudsdkcodehub.v3.MergeChangesTrees`]
@@ -52,7 +52,7 @@ class MergeChangesTreesDto:
 
     @tree.setter
     def tree(self, tree):
-        """Sets the tree of this MergeChangesTreesDto.
+        r"""Sets the tree of this MergeChangesTreesDto.
 
         :param tree: The tree of this MergeChangesTreesDto.
         :type tree: list[:class:`huaweicloudsdkcodehub.v3.MergeChangesTrees`]

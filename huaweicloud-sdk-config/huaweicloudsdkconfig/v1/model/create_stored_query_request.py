@@ -25,7 +25,7 @@ class CreateStoredQueryRequest:
     }
 
     def __init__(self, body=None):
-        """CreateStoredQueryRequest
+        r"""CreateStoredQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateStoredQueryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStoredQueryRequest.
+        r"""Gets the body of this CreateStoredQueryRequest.
 
         :return: The body of this CreateStoredQueryRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.StoredQueryRequestBody`
@@ -52,7 +52,7 @@ class CreateStoredQueryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStoredQueryRequest.
+        r"""Sets the body of this CreateStoredQueryRequest.
 
         :param body: The body of this CreateStoredQueryRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.StoredQueryRequestBody`

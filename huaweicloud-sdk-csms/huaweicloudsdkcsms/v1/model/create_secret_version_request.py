@@ -27,7 +27,7 @@ class CreateSecretVersionRequest:
     }
 
     def __init__(self, secret_name=None, body=None):
-        """CreateSecretVersionRequest
+        r"""CreateSecretVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecretVersionRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this CreateSecretVersionRequest.
+        r"""Gets the secret_name of this CreateSecretVersionRequest.
 
         凭据名称。
 
@@ -60,7 +60,7 @@ class CreateSecretVersionRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this CreateSecretVersionRequest.
+        r"""Sets the secret_name of this CreateSecretVersionRequest.
 
         凭据名称。
 
@@ -71,7 +71,7 @@ class CreateSecretVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecretVersionRequest.
+        r"""Gets the body of this CreateSecretVersionRequest.
 
         :return: The body of this CreateSecretVersionRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequestBody`
@@ -80,7 +80,7 @@ class CreateSecretVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecretVersionRequest.
+        r"""Sets the body of this CreateSecretVersionRequest.
 
         :param body: The body of this CreateSecretVersionRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequestBody`

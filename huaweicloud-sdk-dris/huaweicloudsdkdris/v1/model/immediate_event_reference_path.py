@@ -27,7 +27,7 @@ class ImmediateEventReferencePath:
     }
 
     def __init__(self, active_path=None, path_radius=None):
-        """ImmediateEventReferencePath
+        r"""ImmediateEventReferencePath
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImmediateEventReferencePath:
 
     @property
     def active_path(self):
-        """Gets the active_path of this ImmediateEventReferencePath.
+        r"""Gets the active_path of this ImmediateEventReferencePath.
 
         **参数说明**：通过点集合定义一个有向的作用范围。
 
@@ -60,7 +60,7 @@ class ImmediateEventReferencePath:
 
     @active_path.setter
     def active_path(self, active_path):
-        """Sets the active_path of this ImmediateEventReferencePath.
+        r"""Sets the active_path of this ImmediateEventReferencePath.
 
         **参数说明**：通过点集合定义一个有向的作用范围。
 
@@ -71,7 +71,7 @@ class ImmediateEventReferencePath:
 
     @property
     def path_radius(self):
-        """Gets the path_radius of this ImmediateEventReferencePath.
+        r"""Gets the path_radius of this ImmediateEventReferencePath.
 
         **参数说明**：事件的影响区域半径，可选，单位为分米。用半径表示影响区域边界离中心线的垂直距离，反映该区域的宽度以覆盖实际路段。
 
@@ -82,7 +82,7 @@ class ImmediateEventReferencePath:
 
     @path_radius.setter
     def path_radius(self, path_radius):
-        """Sets the path_radius of this ImmediateEventReferencePath.
+        r"""Sets the path_radius of this ImmediateEventReferencePath.
 
         **参数说明**：事件的影响区域半径，可选，单位为分米。用半径表示影响区域边界离中心线的垂直距离，反映该区域的宽度以覆盖实际路段。
 

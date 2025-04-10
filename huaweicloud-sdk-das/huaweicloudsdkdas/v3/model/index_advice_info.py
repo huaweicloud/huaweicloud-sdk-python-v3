@@ -39,7 +39,7 @@ class IndexAdviceInfo:
     }
 
     def __init__(self, schema_name=None, table_name=None, index_name=None, columns=None, unique=None, track_id=None, quality=None, ddl_add_index=None):
-        """IndexAdviceInfo
+        r"""IndexAdviceInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class IndexAdviceInfo:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this IndexAdviceInfo.
+        r"""Gets the schema_name of this IndexAdviceInfo.
 
         schema名
 
@@ -103,7 +103,7 @@ class IndexAdviceInfo:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this IndexAdviceInfo.
+        r"""Sets the schema_name of this IndexAdviceInfo.
 
         schema名
 
@@ -114,7 +114,7 @@ class IndexAdviceInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this IndexAdviceInfo.
+        r"""Gets the table_name of this IndexAdviceInfo.
 
         表名
 
@@ -125,7 +125,7 @@ class IndexAdviceInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this IndexAdviceInfo.
+        r"""Sets the table_name of this IndexAdviceInfo.
 
         表名
 
@@ -136,7 +136,7 @@ class IndexAdviceInfo:
 
     @property
     def index_name(self):
-        """Gets the index_name of this IndexAdviceInfo.
+        r"""Gets the index_name of this IndexAdviceInfo.
 
         索引名
 
@@ -147,7 +147,7 @@ class IndexAdviceInfo:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this IndexAdviceInfo.
+        r"""Sets the index_name of this IndexAdviceInfo.
 
         索引名
 
@@ -158,7 +158,7 @@ class IndexAdviceInfo:
 
     @property
     def columns(self):
-        """Gets the columns of this IndexAdviceInfo.
+        r"""Gets the columns of this IndexAdviceInfo.
 
         列
 
@@ -169,7 +169,7 @@ class IndexAdviceInfo:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this IndexAdviceInfo.
+        r"""Sets the columns of this IndexAdviceInfo.
 
         列
 
@@ -180,7 +180,7 @@ class IndexAdviceInfo:
 
     @property
     def unique(self):
-        """Gets the unique of this IndexAdviceInfo.
+        r"""Gets the unique of this IndexAdviceInfo.
 
         是否唯一
 
@@ -191,7 +191,7 @@ class IndexAdviceInfo:
 
     @unique.setter
     def unique(self, unique):
-        """Sets the unique of this IndexAdviceInfo.
+        r"""Sets the unique of this IndexAdviceInfo.
 
         是否唯一
 
@@ -202,7 +202,7 @@ class IndexAdviceInfo:
 
     @property
     def track_id(self):
-        """Gets the track_id of this IndexAdviceInfo.
+        r"""Gets the track_id of this IndexAdviceInfo.
 
         追踪id
 
@@ -213,7 +213,7 @@ class IndexAdviceInfo:
 
     @track_id.setter
     def track_id(self, track_id):
-        """Sets the track_id of this IndexAdviceInfo.
+        r"""Sets the track_id of this IndexAdviceInfo.
 
         追踪id
 
@@ -224,7 +224,7 @@ class IndexAdviceInfo:
 
     @property
     def quality(self):
-        """Gets the quality of this IndexAdviceInfo.
+        r"""Gets the quality of this IndexAdviceInfo.
 
         质量
 
@@ -235,7 +235,7 @@ class IndexAdviceInfo:
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this IndexAdviceInfo.
+        r"""Sets the quality of this IndexAdviceInfo.
 
         质量
 
@@ -246,7 +246,7 @@ class IndexAdviceInfo:
 
     @property
     def ddl_add_index(self):
-        """Gets the ddl_add_index of this IndexAdviceInfo.
+        r"""Gets the ddl_add_index of this IndexAdviceInfo.
 
         ddl需要添加的索引
 
@@ -257,7 +257,7 @@ class IndexAdviceInfo:
 
     @ddl_add_index.setter
     def ddl_add_index(self, ddl_add_index):
-        """Sets the ddl_add_index of this IndexAdviceInfo.
+        r"""Sets the ddl_add_index of this IndexAdviceInfo.
 
         ddl需要添加的索引
 

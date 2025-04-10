@@ -25,7 +25,7 @@ class RulesLocalGroup:
     }
 
     def __init__(self, name=None):
-        """RulesLocalGroup
+        r"""RulesLocalGroup
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RulesLocalGroup:
 
     @property
     def name(self):
-        """Gets the name of this RulesLocalGroup.
+        r"""Gets the name of this RulesLocalGroup.
 
         联邦用户在本系统中所属用户组
 
@@ -53,7 +53,7 @@ class RulesLocalGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RulesLocalGroup.
+        r"""Sets the name of this RulesLocalGroup.
 
         联邦用户在本系统中所属用户组
 

@@ -41,7 +41,7 @@ class WasmPlugin:
     }
 
     def __init__(self, image_pull_policy=None, image_pull_secret=None, phase=None, plugin_config=None, plugin_name=None, priority=None, sha256=None, url=None, verification_key=None):
-        """WasmPlugin
+        r"""WasmPlugin
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class WasmPlugin:
 
     @property
     def image_pull_policy(self):
-        """Gets the image_pull_policy of this WasmPlugin.
+        r"""Gets the image_pull_policy of this WasmPlugin.
 
         拉取OCI镜像的行为
 
@@ -110,7 +110,7 @@ class WasmPlugin:
 
     @image_pull_policy.setter
     def image_pull_policy(self, image_pull_policy):
-        """Sets the image_pull_policy of this WasmPlugin.
+        r"""Sets the image_pull_policy of this WasmPlugin.
 
         拉取OCI镜像的行为
 
@@ -121,7 +121,7 @@ class WasmPlugin:
 
     @property
     def image_pull_secret(self):
-        """Gets the image_pull_secret of this WasmPlugin.
+        r"""Gets the image_pull_secret of this WasmPlugin.
 
         拉取OCI 镜像的凭据
 
@@ -132,7 +132,7 @@ class WasmPlugin:
 
     @image_pull_secret.setter
     def image_pull_secret(self, image_pull_secret):
-        """Sets the image_pull_secret of this WasmPlugin.
+        r"""Sets the image_pull_secret of this WasmPlugin.
 
         拉取OCI 镜像的凭据
 
@@ -143,7 +143,7 @@ class WasmPlugin:
 
     @property
     def phase(self):
-        """Gets the phase of this WasmPlugin.
+        r"""Gets the phase of this WasmPlugin.
 
         确定插件将在过滤器链中的何处注入。
 
@@ -154,7 +154,7 @@ class WasmPlugin:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this WasmPlugin.
+        r"""Sets the phase of this WasmPlugin.
 
         确定插件将在过滤器链中的何处注入。
 
@@ -165,7 +165,7 @@ class WasmPlugin:
 
     @property
     def plugin_config(self):
-        """Gets the plugin_config of this WasmPlugin.
+        r"""Gets the plugin_config of this WasmPlugin.
 
         传递给插件的配置。
 
@@ -176,7 +176,7 @@ class WasmPlugin:
 
     @plugin_config.setter
     def plugin_config(self, plugin_config):
-        """Sets the plugin_config of this WasmPlugin.
+        r"""Sets the plugin_config of this WasmPlugin.
 
         传递给插件的配置。
 
@@ -187,7 +187,7 @@ class WasmPlugin:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this WasmPlugin.
+        r"""Gets the plugin_name of this WasmPlugin.
 
         插件名。
 
@@ -198,7 +198,7 @@ class WasmPlugin:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this WasmPlugin.
+        r"""Sets the plugin_name of this WasmPlugin.
 
         插件名。
 
@@ -209,7 +209,7 @@ class WasmPlugin:
 
     @property
     def priority(self):
-        """Gets the priority of this WasmPlugin.
+        r"""Gets the priority of this WasmPlugin.
 
         插件的调用优先级。
 
@@ -220,7 +220,7 @@ class WasmPlugin:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this WasmPlugin.
+        r"""Sets the priority of this WasmPlugin.
 
         插件的调用优先级。
 
@@ -231,7 +231,7 @@ class WasmPlugin:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this WasmPlugin.
+        r"""Gets the sha256 of this WasmPlugin.
 
         用于校验插件和容器的校验和。
 
@@ -242,7 +242,7 @@ class WasmPlugin:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this WasmPlugin.
+        r"""Sets the sha256 of this WasmPlugin.
 
         用于校验插件和容器的校验和。
 
@@ -253,7 +253,7 @@ class WasmPlugin:
 
     @property
     def url(self):
-        """Gets the url of this WasmPlugin.
+        r"""Gets the url of this WasmPlugin.
 
         插件或容器的下载地址。
 
@@ -264,7 +264,7 @@ class WasmPlugin:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this WasmPlugin.
+        r"""Sets the url of this WasmPlugin.
 
         插件或容器的下载地址。
 
@@ -275,7 +275,7 @@ class WasmPlugin:
 
     @property
     def verification_key(self):
-        """Gets the verification_key of this WasmPlugin.
+        r"""Gets the verification_key of this WasmPlugin.
 
         校验值。
 
@@ -286,7 +286,7 @@ class WasmPlugin:
 
     @verification_key.setter
     def verification_key(self, verification_key):
-        """Sets the verification_key of this WasmPlugin.
+        r"""Sets the verification_key of this WasmPlugin.
 
         校验值。
 

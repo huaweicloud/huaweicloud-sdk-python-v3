@@ -29,7 +29,7 @@ class DeleteResourceTagRequest:
     }
 
     def __init__(self, key=None, resource_id=None, resource_type=None):
-        """DeleteResourceTagRequest
+        r"""DeleteResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteResourceTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResourceTagRequest.
+        r"""Gets the key of this DeleteResourceTagRequest.
 
         标签key。
 
@@ -65,7 +65,7 @@ class DeleteResourceTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResourceTagRequest.
+        r"""Sets the key of this DeleteResourceTagRequest.
 
         标签key。
 
@@ -76,7 +76,7 @@ class DeleteResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResourceTagRequest.
+        r"""Gets the resource_id of this DeleteResourceTagRequest.
 
         资源实例ID
 
@@ -87,7 +87,7 @@ class DeleteResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResourceTagRequest.
+        r"""Sets the resource_id of this DeleteResourceTagRequest.
 
         资源实例ID
 
@@ -98,7 +98,7 @@ class DeleteResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteResourceTagRequest.
+        r"""Gets the resource_type of this DeleteResourceTagRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -109,7 +109,7 @@ class DeleteResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteResourceTagRequest.
+        r"""Sets the resource_type of this DeleteResourceTagRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 

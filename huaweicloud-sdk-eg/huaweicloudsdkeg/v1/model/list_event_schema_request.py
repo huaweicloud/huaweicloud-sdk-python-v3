@@ -35,7 +35,7 @@ class ListEventSchemaRequest:
     }
 
     def __init__(self, offset=None, limit=None, sort=None, provider_type=None, name=None, fuzzy_name=None):
-        """ListEventSchemaRequest
+        r"""ListEventSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListEventSchemaRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventSchemaRequest.
+        r"""Gets the offset of this ListEventSchemaRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -89,7 +89,7 @@ class ListEventSchemaRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventSchemaRequest.
+        r"""Sets the offset of this ListEventSchemaRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -100,7 +100,7 @@ class ListEventSchemaRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventSchemaRequest.
+        r"""Gets the limit of this ListEventSchemaRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -111,7 +111,7 @@ class ListEventSchemaRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventSchemaRequest.
+        r"""Sets the limit of this ListEventSchemaRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -122,7 +122,7 @@ class ListEventSchemaRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListEventSchemaRequest.
+        r"""Gets the sort of this ListEventSchemaRequest.
 
         指定查询排序
 
@@ -133,7 +133,7 @@ class ListEventSchemaRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListEventSchemaRequest.
+        r"""Sets the sort of this ListEventSchemaRequest.
 
         指定查询排序
 
@@ -144,7 +144,7 @@ class ListEventSchemaRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListEventSchemaRequest.
+        r"""Gets the provider_type of this ListEventSchemaRequest.
 
         指定查询提供方的类型
 
@@ -155,7 +155,7 @@ class ListEventSchemaRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListEventSchemaRequest.
+        r"""Sets the provider_type of this ListEventSchemaRequest.
 
         指定查询提供方的类型
 
@@ -166,7 +166,7 @@ class ListEventSchemaRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEventSchemaRequest.
+        r"""Gets the name of this ListEventSchemaRequest.
 
         指定查询的事件模型名称，精准匹配
 
@@ -177,7 +177,7 @@ class ListEventSchemaRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEventSchemaRequest.
+        r"""Sets the name of this ListEventSchemaRequest.
 
         指定查询的事件模型名称，精准匹配
 
@@ -188,7 +188,7 @@ class ListEventSchemaRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListEventSchemaRequest.
+        r"""Gets the fuzzy_name of this ListEventSchemaRequest.
 
         指定查询的事件模型名称，模糊匹配
 
@@ -199,7 +199,7 @@ class ListEventSchemaRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListEventSchemaRequest.
+        r"""Sets the fuzzy_name of this ListEventSchemaRequest.
 
         指定查询的事件模型名称，模糊匹配
 

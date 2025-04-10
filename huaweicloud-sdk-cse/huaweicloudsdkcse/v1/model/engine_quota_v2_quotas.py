@@ -25,7 +25,7 @@ class EngineQuotaV2Quotas:
     }
 
     def __init__(self, resources=None):
-        """EngineQuotaV2Quotas
+        r"""EngineQuotaV2Quotas
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EngineQuotaV2Quotas:
 
     @property
     def resources(self):
-        """Gets the resources of this EngineQuotaV2Quotas.
+        r"""Gets the resources of this EngineQuotaV2Quotas.
 
         :return: The resources of this EngineQuotaV2Quotas.
         :rtype: list[:class:`huaweicloudsdkcse.v1.TenantQuotaUsed`]
@@ -52,7 +52,7 @@ class EngineQuotaV2Quotas:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this EngineQuotaV2Quotas.
+        r"""Sets the resources of this EngineQuotaV2Quotas.
 
         :param resources: The resources of this EngineQuotaV2Quotas.
         :type resources: list[:class:`huaweicloudsdkcse.v1.TenantQuotaUsed`]

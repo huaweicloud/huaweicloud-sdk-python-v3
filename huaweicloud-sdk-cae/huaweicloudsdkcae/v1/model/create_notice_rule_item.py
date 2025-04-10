@@ -35,7 +35,7 @@ class CreateNoticeRuleItem:
     }
 
     def __init__(self, name=None, event_name=None, scope=None, trigger_policy=None, notification=None, enable=None):
-        """CreateNoticeRuleItem
+        r"""CreateNoticeRuleItem
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateNoticeRuleItem:
 
     @property
     def name(self):
-        """Gets the name of this CreateNoticeRuleItem.
+        r"""Gets the name of this CreateNoticeRuleItem.
 
         通知名称。
 
@@ -85,7 +85,7 @@ class CreateNoticeRuleItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNoticeRuleItem.
+        r"""Sets the name of this CreateNoticeRuleItem.
 
         通知名称。
 
@@ -96,7 +96,7 @@ class CreateNoticeRuleItem:
 
     @property
     def event_name(self):
-        """Gets the event_name of this CreateNoticeRuleItem.
+        r"""Gets the event_name of this CreateNoticeRuleItem.
 
         触发事件名称，支持实例调度成功、实例调度失败、健康检查成功、健康检查失败、镜像拉取成功、镜像拉取失败、容器启动成功、容器启动失败、卷挂载成功、卷挂载失败。
 
@@ -107,7 +107,7 @@ class CreateNoticeRuleItem:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this CreateNoticeRuleItem.
+        r"""Sets the event_name of this CreateNoticeRuleItem.
 
         触发事件名称，支持实例调度成功、实例调度失败、健康检查成功、健康检查失败、镜像拉取成功、镜像拉取失败、容器启动成功、容器启动失败、卷挂载成功、卷挂载失败。
 
@@ -118,7 +118,7 @@ class CreateNoticeRuleItem:
 
     @property
     def scope(self):
-        """Gets the scope of this CreateNoticeRuleItem.
+        r"""Gets the scope of this CreateNoticeRuleItem.
 
         :return: The scope of this CreateNoticeRuleItem.
         :rtype: :class:`huaweicloudsdkcae.v1.NoticeRuleScope`
@@ -127,7 +127,7 @@ class CreateNoticeRuleItem:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this CreateNoticeRuleItem.
+        r"""Sets the scope of this CreateNoticeRuleItem.
 
         :param scope: The scope of this CreateNoticeRuleItem.
         :type scope: :class:`huaweicloudsdkcae.v1.NoticeRuleScope`
@@ -136,7 +136,7 @@ class CreateNoticeRuleItem:
 
     @property
     def trigger_policy(self):
-        """Gets the trigger_policy of this CreateNoticeRuleItem.
+        r"""Gets the trigger_policy of this CreateNoticeRuleItem.
 
         :return: The trigger_policy of this CreateNoticeRuleItem.
         :rtype: :class:`huaweicloudsdkcae.v1.TriggerPolicy`
@@ -145,7 +145,7 @@ class CreateNoticeRuleItem:
 
     @trigger_policy.setter
     def trigger_policy(self, trigger_policy):
-        """Sets the trigger_policy of this CreateNoticeRuleItem.
+        r"""Sets the trigger_policy of this CreateNoticeRuleItem.
 
         :param trigger_policy: The trigger_policy of this CreateNoticeRuleItem.
         :type trigger_policy: :class:`huaweicloudsdkcae.v1.TriggerPolicy`
@@ -154,7 +154,7 @@ class CreateNoticeRuleItem:
 
     @property
     def notification(self):
-        """Gets the notification of this CreateNoticeRuleItem.
+        r"""Gets the notification of this CreateNoticeRuleItem.
 
         :return: The notification of this CreateNoticeRuleItem.
         :rtype: :class:`huaweicloudsdkcae.v1.NoticeRuleNotification`
@@ -163,7 +163,7 @@ class CreateNoticeRuleItem:
 
     @notification.setter
     def notification(self, notification):
-        """Sets the notification of this CreateNoticeRuleItem.
+        r"""Sets the notification of this CreateNoticeRuleItem.
 
         :param notification: The notification of this CreateNoticeRuleItem.
         :type notification: :class:`huaweicloudsdkcae.v1.NoticeRuleNotification`
@@ -172,7 +172,7 @@ class CreateNoticeRuleItem:
 
     @property
     def enable(self):
-        """Gets the enable of this CreateNoticeRuleItem.
+        r"""Gets the enable of this CreateNoticeRuleItem.
 
         是否启用。
 
@@ -183,7 +183,7 @@ class CreateNoticeRuleItem:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateNoticeRuleItem.
+        r"""Sets the enable of this CreateNoticeRuleItem.
 
         是否启用。
 

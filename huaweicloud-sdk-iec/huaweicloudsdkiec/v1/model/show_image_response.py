@@ -86,7 +86,7 @@ class ShowImageResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, disk_format=None, min_disk=None, min_ram=None, owner=None, protected=None, visibility=None, created_at=None, updated_at=None, _self=None, deleted=None, virtual_env_type=None, deleted_at=None, relation_job_id=None, imagetype=None, platform=None, os_type=None, os_version=None, isregistered=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, hw_firmware_type=None, data_source=None, support_gpu_t4=None, origin_region_info=None, edge_region_info=None):
-        """ShowImageResponse
+        r"""ShowImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -254,7 +254,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowImageResponse.
+        r"""Gets the id of this ShowImageResponse.
 
         镜像ID。
 
@@ -265,7 +265,7 @@ class ShowImageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowImageResponse.
+        r"""Sets the id of this ShowImageResponse.
 
         镜像ID。
 
@@ -276,7 +276,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowImageResponse.
+        r"""Gets the name of this ShowImageResponse.
 
         镜像名称。
 
@@ -287,7 +287,7 @@ class ShowImageResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowImageResponse.
+        r"""Sets the name of this ShowImageResponse.
 
         镜像名称。
 
@@ -298,7 +298,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowImageResponse.
+        r"""Gets the status of this ShowImageResponse.
 
         镜像状态。
 
@@ -309,7 +309,7 @@ class ShowImageResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowImageResponse.
+        r"""Sets the status of this ShowImageResponse.
 
         镜像状态。
 
@@ -320,7 +320,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this ShowImageResponse.
+        r"""Gets the disk_format of this ShowImageResponse.
 
         镜像格式。
 
@@ -331,7 +331,7 @@ class ShowImageResponse(SdkResponse):
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this ShowImageResponse.
+        r"""Sets the disk_format of this ShowImageResponse.
 
         镜像格式。
 
@@ -342,7 +342,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this ShowImageResponse.
+        r"""Gets the min_disk of this ShowImageResponse.
 
         最小系统盘（单位：GB），取值为40～1024GB。
 
@@ -353,7 +353,7 @@ class ShowImageResponse(SdkResponse):
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this ShowImageResponse.
+        r"""Sets the min_disk of this ShowImageResponse.
 
         最小系统盘（单位：GB），取值为40～1024GB。
 
@@ -364,7 +364,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this ShowImageResponse.
+        r"""Gets the min_ram of this ShowImageResponse.
 
         最小内存（单位：MB），默认值为0。
 
@@ -375,7 +375,7 @@ class ShowImageResponse(SdkResponse):
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this ShowImageResponse.
+        r"""Sets the min_ram of this ShowImageResponse.
 
         最小内存（单位：MB），默认值为0。
 
@@ -386,7 +386,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowImageResponse.
+        r"""Gets the owner of this ShowImageResponse.
 
         镜像所属租户ID。
 
@@ -397,7 +397,7 @@ class ShowImageResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowImageResponse.
+        r"""Sets the owner of this ShowImageResponse.
 
         镜像所属租户ID。
 
@@ -408,7 +408,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def protected(self):
-        """Gets the protected of this ShowImageResponse.
+        r"""Gets the protected of this ShowImageResponse.
 
         是否受保护。
 
@@ -419,7 +419,7 @@ class ShowImageResponse(SdkResponse):
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this ShowImageResponse.
+        r"""Sets the protected of this ShowImageResponse.
 
         是否受保护。
 
@@ -430,7 +430,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this ShowImageResponse.
+        r"""Gets the visibility of this ShowImageResponse.
 
         可见性。
 
@@ -441,7 +441,7 @@ class ShowImageResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ShowImageResponse.
+        r"""Sets the visibility of this ShowImageResponse.
 
         可见性。
 
@@ -452,7 +452,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowImageResponse.
+        r"""Gets the created_at of this ShowImageResponse.
 
         创建时间。
 
@@ -463,7 +463,7 @@ class ShowImageResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowImageResponse.
+        r"""Sets the created_at of this ShowImageResponse.
 
         创建时间。
 
@@ -474,7 +474,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowImageResponse.
+        r"""Gets the updated_at of this ShowImageResponse.
 
         更新时间。
 
@@ -485,7 +485,7 @@ class ShowImageResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowImageResponse.
+        r"""Sets the updated_at of this ShowImageResponse.
 
         更新时间。
 
@@ -496,7 +496,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def _self(self):
-        """Gets the _self of this ShowImageResponse.
+        r"""Gets the _self of this ShowImageResponse.
 
         镜像链接信息。
 
@@ -507,7 +507,7 @@ class ShowImageResponse(SdkResponse):
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this ShowImageResponse.
+        r"""Sets the _self of this ShowImageResponse.
 
         镜像链接信息。
 
@@ -518,7 +518,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def deleted(self):
-        """Gets the deleted of this ShowImageResponse.
+        r"""Gets the deleted of this ShowImageResponse.
 
         是否是删除的镜像，取值为true或者false。
 
@@ -529,7 +529,7 @@ class ShowImageResponse(SdkResponse):
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ShowImageResponse.
+        r"""Sets the deleted of this ShowImageResponse.
 
         是否是删除的镜像，取值为true或者false。
 
@@ -540,7 +540,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this ShowImageResponse.
+        r"""Gets the virtual_env_type of this ShowImageResponse.
 
         镜像使用环境类型。
 
@@ -551,7 +551,7 @@ class ShowImageResponse(SdkResponse):
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this ShowImageResponse.
+        r"""Sets the virtual_env_type of this ShowImageResponse.
 
         镜像使用环境类型。
 
@@ -562,7 +562,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this ShowImageResponse.
+        r"""Gets the deleted_at of this ShowImageResponse.
 
         删除时间，格式为UTC时间。
 
@@ -573,7 +573,7 @@ class ShowImageResponse(SdkResponse):
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this ShowImageResponse.
+        r"""Sets the deleted_at of this ShowImageResponse.
 
         删除时间，格式为UTC时间。
 
@@ -584,7 +584,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def relation_job_id(self):
-        """Gets the relation_job_id of this ShowImageResponse.
+        r"""Gets the relation_job_id of this ShowImageResponse.
 
         镜像关联的任务ID。
 
@@ -595,7 +595,7 @@ class ShowImageResponse(SdkResponse):
 
     @relation_job_id.setter
     def relation_job_id(self, relation_job_id):
-        """Sets the relation_job_id of this ShowImageResponse.
+        r"""Sets the relation_job_id of this ShowImageResponse.
 
         镜像关联的任务ID。
 
@@ -606,7 +606,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this ShowImageResponse.
+        r"""Gets the imagetype of this ShowImageResponse.
 
         镜像类型。  取值范围： - gold：公有镜像； - private：私有镜像。
 
@@ -617,7 +617,7 @@ class ShowImageResponse(SdkResponse):
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this ShowImageResponse.
+        r"""Sets the imagetype of this ShowImageResponse.
 
         镜像类型。  取值范围： - gold：公有镜像； - private：私有镜像。
 
@@ -628,7 +628,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def platform(self):
-        """Gets the platform of this ShowImageResponse.
+        r"""Gets the platform of this ShowImageResponse.
 
         镜像平台分类。
 
@@ -639,7 +639,7 @@ class ShowImageResponse(SdkResponse):
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ShowImageResponse.
+        r"""Sets the platform of this ShowImageResponse.
 
         镜像平台分类。
 
@@ -650,7 +650,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowImageResponse.
+        r"""Gets the os_type of this ShowImageResponse.
 
         镜像系统类型。
 
@@ -661,7 +661,7 @@ class ShowImageResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowImageResponse.
+        r"""Sets the os_type of this ShowImageResponse.
 
         镜像系统类型。
 
@@ -672,7 +672,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this ShowImageResponse.
+        r"""Gets the os_version of this ShowImageResponse.
 
         镜像的操作系统具体版本。
 
@@ -683,7 +683,7 @@ class ShowImageResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ShowImageResponse.
+        r"""Sets the os_version of this ShowImageResponse.
 
         镜像的操作系统具体版本。
 
@@ -694,7 +694,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this ShowImageResponse.
+        r"""Gets the isregistered of this ShowImageResponse.
 
         是否是注册过的镜像。
 
@@ -705,7 +705,7 @@ class ShowImageResponse(SdkResponse):
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this ShowImageResponse.
+        r"""Sets the isregistered of this ShowImageResponse.
 
         是否是注册过的镜像。
 
@@ -716,7 +716,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this ShowImageResponse.
+        r"""Gets the support_kvm of this ShowImageResponse.
 
         如果镜像支持KVM，取值为true，否则无该属性。
 
@@ -727,7 +727,7 @@ class ShowImageResponse(SdkResponse):
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this ShowImageResponse.
+        r"""Sets the support_kvm of this ShowImageResponse.
 
         如果镜像支持KVM，取值为true，否则无该属性。
 
@@ -738,7 +738,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this ShowImageResponse.
+        r"""Gets the support_kvm_gpu_type of this ShowImageResponse.
 
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
@@ -749,7 +749,7 @@ class ShowImageResponse(SdkResponse):
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this ShowImageResponse.
+        r"""Sets the support_kvm_gpu_type of this ShowImageResponse.
 
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
@@ -760,7 +760,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def support_kvm_ascend_310(self):
-        """Gets the support_kvm_ascend_310 of this ShowImageResponse.
+        r"""Gets the support_kvm_ascend_310 of this ShowImageResponse.
 
         如果镜像支持AI加速，取值为true，否则无该属性。
 
@@ -771,7 +771,7 @@ class ShowImageResponse(SdkResponse):
 
     @support_kvm_ascend_310.setter
     def support_kvm_ascend_310(self, support_kvm_ascend_310):
-        """Sets the support_kvm_ascend_310 of this ShowImageResponse.
+        r"""Sets the support_kvm_ascend_310 of this ShowImageResponse.
 
         如果镜像支持AI加速，取值为true，否则无该属性。
 
@@ -782,7 +782,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def support_kvm_hi1822_hiovs(self):
-        """Gets the support_kvm_hi1822_hiovs of this ShowImageResponse.
+        r"""Gets the support_kvm_hi1822_hiovs of this ShowImageResponse.
 
         如果镜像支持计算增强，取值为true，否则无该属性。
 
@@ -793,7 +793,7 @@ class ShowImageResponse(SdkResponse):
 
     @support_kvm_hi1822_hiovs.setter
     def support_kvm_hi1822_hiovs(self, support_kvm_hi1822_hiovs):
-        """Sets the support_kvm_hi1822_hiovs of this ShowImageResponse.
+        r"""Sets the support_kvm_hi1822_hiovs of this ShowImageResponse.
 
         如果镜像支持计算增强，取值为true，否则无该属性。
 
@@ -804,7 +804,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def support_arm(self):
-        """Gets the support_arm of this ShowImageResponse.
+        r"""Gets the support_arm of this ShowImageResponse.
 
         如果镜像为ARM架构类型，取值为true，否则无该属性。
 
@@ -815,7 +815,7 @@ class ShowImageResponse(SdkResponse):
 
     @support_arm.setter
     def support_arm(self, support_arm):
-        """Sets the support_arm of this ShowImageResponse.
+        r"""Sets the support_arm of this ShowImageResponse.
 
         如果镜像为ARM架构类型，取值为true，否则无该属性。
 
@@ -826,7 +826,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this ShowImageResponse.
+        r"""Gets the hw_firmware_type of this ShowImageResponse.
 
         镜像启动模式，取值为uefi或bios，不指定时无该属性。
 
@@ -837,7 +837,7 @@ class ShowImageResponse(SdkResponse):
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this ShowImageResponse.
+        r"""Sets the hw_firmware_type of this ShowImageResponse.
 
         镜像启动模式，取值为uefi或bios，不指定时无该属性。
 
@@ -848,7 +848,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def data_source(self):
-        """Gets the data_source of this ShowImageResponse.
+        r"""Gets the data_source of this ShowImageResponse.
 
         镜像来源。  - 来源边缘实例：instance:<实例id> - 来源IMS：ims:<镜像id>:<region id>
 
@@ -859,7 +859,7 @@ class ShowImageResponse(SdkResponse):
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this ShowImageResponse.
+        r"""Sets the data_source of this ShowImageResponse.
 
         镜像来源。  - 来源边缘实例：instance:<实例id> - 来源IMS：ims:<镜像id>:<region id>
 
@@ -870,7 +870,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def support_gpu_t4(self):
-        """Gets the support_gpu_t4 of this ShowImageResponse.
+        r"""Gets the support_gpu_t4 of this ShowImageResponse.
 
         如果镜像支持GPU T4类型，取值为true，否则无该属性。
 
@@ -881,7 +881,7 @@ class ShowImageResponse(SdkResponse):
 
     @support_gpu_t4.setter
     def support_gpu_t4(self, support_gpu_t4):
-        """Sets the support_gpu_t4 of this ShowImageResponse.
+        r"""Sets the support_gpu_t4 of this ShowImageResponse.
 
         如果镜像支持GPU T4类型，取值为true，否则无该属性。
 
@@ -892,7 +892,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def origin_region_info(self):
-        """Gets the origin_region_info of this ShowImageResponse.
+        r"""Gets the origin_region_info of this ShowImageResponse.
 
         :return: The origin_region_info of this ShowImageResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.CloudImageRegionInfo`
@@ -901,7 +901,7 @@ class ShowImageResponse(SdkResponse):
 
     @origin_region_info.setter
     def origin_region_info(self, origin_region_info):
-        """Sets the origin_region_info of this ShowImageResponse.
+        r"""Sets the origin_region_info of this ShowImageResponse.
 
         :param origin_region_info: The origin_region_info of this ShowImageResponse.
         :type origin_region_info: :class:`huaweicloudsdkiec.v1.CloudImageRegionInfo`
@@ -910,7 +910,7 @@ class ShowImageResponse(SdkResponse):
 
     @property
     def edge_region_info(self):
-        """Gets the edge_region_info of this ShowImageResponse.
+        r"""Gets the edge_region_info of this ShowImageResponse.
 
         边缘区域详情。
 
@@ -921,7 +921,7 @@ class ShowImageResponse(SdkResponse):
 
     @edge_region_info.setter
     def edge_region_info(self, edge_region_info):
-        """Sets the edge_region_info of this ShowImageResponse.
+        r"""Sets the edge_region_info of this ShowImageResponse.
 
         边缘区域详情。
 

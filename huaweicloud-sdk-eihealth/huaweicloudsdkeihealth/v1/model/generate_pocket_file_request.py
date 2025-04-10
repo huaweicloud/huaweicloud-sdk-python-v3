@@ -27,7 +27,7 @@ class GeneratePocketFileRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """GeneratePocketFileRequest
+        r"""GeneratePocketFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GeneratePocketFileRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this GeneratePocketFileRequest.
+        r"""Gets the eihealth_project_id of this GeneratePocketFileRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class GeneratePocketFileRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this GeneratePocketFileRequest.
+        r"""Sets the eihealth_project_id of this GeneratePocketFileRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class GeneratePocketFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this GeneratePocketFileRequest.
+        r"""Gets the body of this GeneratePocketFileRequest.
 
         :return: The body of this GeneratePocketFileRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunPocketReq`
@@ -80,7 +80,7 @@ class GeneratePocketFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GeneratePocketFileRequest.
+        r"""Sets the body of this GeneratePocketFileRequest.
 
         :param body: The body of this GeneratePocketFileRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.RunPocketReq`

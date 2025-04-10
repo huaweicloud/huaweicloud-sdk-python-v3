@@ -25,7 +25,7 @@ class DeployInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """DeployInstanceRequest
+        r"""DeployInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeployInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeployInstanceRequest.
+        r"""Gets the body of this DeployInstanceRequest.
 
         :return: The body of this DeployInstanceRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceDeployment`
@@ -52,7 +52,7 @@ class DeployInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeployInstanceRequest.
+        r"""Sets the body of this DeployInstanceRequest.
 
         :param body: The body of this DeployInstanceRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.InstanceDeployment`

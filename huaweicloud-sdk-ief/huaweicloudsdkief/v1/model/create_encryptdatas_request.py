@@ -27,7 +27,7 @@ class CreateEncryptdatasRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateEncryptdatasRequest
+        r"""CreateEncryptdatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateEncryptdatasRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateEncryptdatasRequest.
+        r"""Gets the ief_instance_id of this CreateEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateEncryptdatasRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateEncryptdatasRequest.
+        r"""Sets the ief_instance_id of this CreateEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateEncryptdatasRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEncryptdatasRequest.
+        r"""Gets the body of this CreateEncryptdatasRequest.
 
         :return: The body of this CreateEncryptdatasRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptDataReq`
@@ -81,7 +81,7 @@ class CreateEncryptdatasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEncryptdatasRequest.
+        r"""Sets the body of this CreateEncryptdatasRequest.
 
         :param body: The body of this CreateEncryptdatasRequest.
         :type body: :class:`huaweicloudsdkief.v1.EncryptDataReq`

@@ -27,7 +27,7 @@ class StopWorkFlowRequest:
     }
 
     def __init__(self, workflow_id=None, execution_id=None):
-        """StopWorkFlowRequest
+        r"""StopWorkFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StopWorkFlowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this StopWorkFlowRequest.
+        r"""Gets the workflow_id of this StopWorkFlowRequest.
 
         函数工作流ID
 
@@ -59,7 +59,7 @@ class StopWorkFlowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StopWorkFlowRequest.
+        r"""Sets the workflow_id of this StopWorkFlowRequest.
 
         函数工作流ID
 
@@ -70,7 +70,7 @@ class StopWorkFlowRequest:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this StopWorkFlowRequest.
+        r"""Gets the execution_id of this StopWorkFlowRequest.
 
         函数流执行实例ID
 
@@ -81,7 +81,7 @@ class StopWorkFlowRequest:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this StopWorkFlowRequest.
+        r"""Sets the execution_id of this StopWorkFlowRequest.
 
         函数流执行实例ID
 

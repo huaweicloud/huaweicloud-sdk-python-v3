@@ -43,7 +43,7 @@ class OBSDestinationDescriptorRequest:
     }
 
     def __init__(self, task_name=None, agency_name=None, deliver_time_interval=None, consumer_strategy=None, file_prefix=None, partition_format=None, obs_bucket_path=None, destination_file_type=None, processing_schema=None, record_delimiter=None):
-        """OBSDestinationDescriptorRequest
+        r"""OBSDestinationDescriptorRequest
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this OBSDestinationDescriptorRequest.
+        r"""Gets the task_name of this OBSDestinationDescriptorRequest.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -113,7 +113,7 @@ class OBSDestinationDescriptorRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this OBSDestinationDescriptorRequest.
+        r"""Sets the task_name of this OBSDestinationDescriptorRequest.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -124,7 +124,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this OBSDestinationDescriptorRequest.
+        r"""Gets the agency_name of this OBSDestinationDescriptorRequest.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -135,7 +135,7 @@ class OBSDestinationDescriptorRequest:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this OBSDestinationDescriptorRequest.
+        r"""Sets the agency_name of this OBSDestinationDescriptorRequest.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -146,7 +146,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def deliver_time_interval(self):
-        """Gets the deliver_time_interval of this OBSDestinationDescriptorRequest.
+        r"""Gets the deliver_time_interval of this OBSDestinationDescriptorRequest.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -157,7 +157,7 @@ class OBSDestinationDescriptorRequest:
 
     @deliver_time_interval.setter
     def deliver_time_interval(self, deliver_time_interval):
-        """Sets the deliver_time_interval of this OBSDestinationDescriptorRequest.
+        r"""Sets the deliver_time_interval of this OBSDestinationDescriptorRequest.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -168,7 +168,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this OBSDestinationDescriptorRequest.
+        r"""Gets the consumer_strategy of this OBSDestinationDescriptorRequest.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -179,7 +179,7 @@ class OBSDestinationDescriptorRequest:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this OBSDestinationDescriptorRequest.
+        r"""Sets the consumer_strategy of this OBSDestinationDescriptorRequest.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -190,7 +190,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def file_prefix(self):
-        """Gets the file_prefix of this OBSDestinationDescriptorRequest.
+        r"""Gets the file_prefix of this OBSDestinationDescriptorRequest.
 
         在OBS中存储通道文件的自定义目录，多级目录可用“/”进行分隔，不可以“/”开头。  取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。  默认配置为空。
 
@@ -201,7 +201,7 @@ class OBSDestinationDescriptorRequest:
 
     @file_prefix.setter
     def file_prefix(self, file_prefix):
-        """Sets the file_prefix of this OBSDestinationDescriptorRequest.
+        r"""Sets the file_prefix of this OBSDestinationDescriptorRequest.
 
         在OBS中存储通道文件的自定义目录，多级目录可用“/”进行分隔，不可以“/”开头。  取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。  默认配置为空。
 
@@ -212,7 +212,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def partition_format(self):
-        """Gets the partition_format of this OBSDestinationDescriptorRequest.
+        r"""Gets the partition_format of this OBSDestinationDescriptorRequest.
 
         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。  - N/A：置空，不使用日期时间目录。 - yyyy：年 - yyyy/MM：年/ - yyyy/MM/dd：年/月/日 - yyyy/MM/dd/HH：年/月/日/时 - yyyy/MM/dd/HH/mm：年/月/日/时/分  例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空  说明：  数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。
 
@@ -223,7 +223,7 @@ class OBSDestinationDescriptorRequest:
 
     @partition_format.setter
     def partition_format(self, partition_format):
-        """Sets the partition_format of this OBSDestinationDescriptorRequest.
+        r"""Sets the partition_format of this OBSDestinationDescriptorRequest.
 
         将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。  - N/A：置空，不使用日期时间目录。 - yyyy：年 - yyyy/MM：年/ - yyyy/MM/dd：年/月/日 - yyyy/MM/dd/HH：年/月/日/时 - yyyy/MM/dd/HH/mm：年/月/日/时/分  例如：2017/11/10/14/49，目录结构就是“2017 > 11 > 10 > 14 > 49”，“2017”表示最外层文件夹。  默认值：空  说明：  数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。
 
@@ -234,7 +234,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def obs_bucket_path(self):
-        """Gets the obs_bucket_path of this OBSDestinationDescriptorRequest.
+        r"""Gets the obs_bucket_path of this OBSDestinationDescriptorRequest.
 
         存储该通道数据的OBS桶名称。
 
@@ -245,7 +245,7 @@ class OBSDestinationDescriptorRequest:
 
     @obs_bucket_path.setter
     def obs_bucket_path(self, obs_bucket_path):
-        """Sets the obs_bucket_path of this OBSDestinationDescriptorRequest.
+        r"""Sets the obs_bucket_path of this OBSDestinationDescriptorRequest.
 
         存储该通道数据的OBS桶名称。
 
@@ -256,7 +256,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def destination_file_type(self):
-        """Gets the destination_file_type of this OBSDestinationDescriptorRequest.
+        r"""Gets the destination_file_type of this OBSDestinationDescriptorRequest.
 
         转储文件格式。  - text：转储目标格式为TEXT，缺省值 - parquet：转储目标格式为Parquet - carbon：转储目标格式为Carbon  说明：  “源数据类型”为“JSON”，“转储服务类型”为“OBS”时才可选择“parquet”或“carbon”格式。
 
@@ -267,7 +267,7 @@ class OBSDestinationDescriptorRequest:
 
     @destination_file_type.setter
     def destination_file_type(self, destination_file_type):
-        """Sets the destination_file_type of this OBSDestinationDescriptorRequest.
+        r"""Sets the destination_file_type of this OBSDestinationDescriptorRequest.
 
         转储文件格式。  - text：转储目标格式为TEXT，缺省值 - parquet：转储目标格式为Parquet - carbon：转储目标格式为Carbon  说明：  “源数据类型”为“JSON”，“转储服务类型”为“OBS”时才可选择“parquet”或“carbon”格式。
 
@@ -278,7 +278,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def processing_schema(self):
-        """Gets the processing_schema of this OBSDestinationDescriptorRequest.
+        r"""Gets the processing_schema of this OBSDestinationDescriptorRequest.
 
         :return: The processing_schema of this OBSDestinationDescriptorRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.ProcessingSchema`
@@ -287,7 +287,7 @@ class OBSDestinationDescriptorRequest:
 
     @processing_schema.setter
     def processing_schema(self, processing_schema):
-        """Sets the processing_schema of this OBSDestinationDescriptorRequest.
+        r"""Sets the processing_schema of this OBSDestinationDescriptorRequest.
 
         :param processing_schema: The processing_schema of this OBSDestinationDescriptorRequest.
         :type processing_schema: :class:`huaweicloudsdkdis.v2.ProcessingSchema`
@@ -296,7 +296,7 @@ class OBSDestinationDescriptorRequest:
 
     @property
     def record_delimiter(self):
-        """Gets the record_delimiter of this OBSDestinationDescriptorRequest.
+        r"""Gets the record_delimiter of this OBSDestinationDescriptorRequest.
 
         转储文件的记录分隔符，用于分隔写入转储文件的用户数据。  取值范围：  - 逗号 \",\"，默认值 - 分号 \";\" - 竖线 \"|\" - 换行符 \"\\n\"
 
@@ -307,7 +307,7 @@ class OBSDestinationDescriptorRequest:
 
     @record_delimiter.setter
     def record_delimiter(self, record_delimiter):
-        """Sets the record_delimiter of this OBSDestinationDescriptorRequest.
+        r"""Sets the record_delimiter of this OBSDestinationDescriptorRequest.
 
         转储文件的记录分隔符，用于分隔写入转储文件的用户数据。  取值范围：  - 逗号 \",\"，默认值 - 分号 \";\" - 竖线 \"|\" - 换行符 \"\\n\"
 

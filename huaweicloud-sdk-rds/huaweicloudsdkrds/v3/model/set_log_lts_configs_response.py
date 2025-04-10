@@ -24,7 +24,7 @@ class SetLogLtsConfigsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetLogLtsConfigsResponse
+        r"""SetLogLtsConfigsResponse
 
         The model defined in huaweicloud sdk
 

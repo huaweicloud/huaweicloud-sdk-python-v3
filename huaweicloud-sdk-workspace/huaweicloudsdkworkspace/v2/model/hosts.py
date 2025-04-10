@@ -35,7 +35,7 @@ class Hosts:
     }
 
     def __init__(self, availability_zone=None, name=None, auto_placement=None, host_type=None, quantity=None, product_id=None):
-        """Hosts
+        r"""Hosts
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class Hosts:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Hosts.
+        r"""Gets the availability_zone of this Hosts.
 
         主机所属AZ。
 
@@ -84,7 +84,7 @@ class Hosts:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Hosts.
+        r"""Sets the availability_zone of this Hosts.
 
         主机所属AZ。
 
@@ -95,7 +95,7 @@ class Hosts:
 
     @property
     def name(self):
-        """Gets the name of this Hosts.
+        r"""Gets the name of this Hosts.
 
         主机名称。
 
@@ -106,7 +106,7 @@ class Hosts:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Hosts.
+        r"""Sets the name of this Hosts.
 
         主机名称。
 
@@ -117,7 +117,7 @@ class Hosts:
 
     @property
     def auto_placement(self):
-        """Gets the auto_placement of this Hosts.
+        r"""Gets the auto_placement of this Hosts.
 
         在创建云服务器时（未指定主机ID），是否允许云服务器自动分配在一台可用的主机上。取值范围：“on”或“off”默认为 “on”。
 
@@ -128,7 +128,7 @@ class Hosts:
 
     @auto_placement.setter
     def auto_placement(self, auto_placement):
-        """Sets the auto_placement of this Hosts.
+        r"""Sets the auto_placement of this Hosts.
 
         在创建云服务器时（未指定主机ID），是否允许云服务器自动分配在一台可用的主机上。取值范围：“on”或“off”默认为 “on”。
 
@@ -139,7 +139,7 @@ class Hosts:
 
     @property
     def host_type(self):
-        """Gets the host_type of this Hosts.
+        r"""Gets the host_type of this Hosts.
 
         主机类型。
 
@@ -150,7 +150,7 @@ class Hosts:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this Hosts.
+        r"""Sets the host_type of this Hosts.
 
         主机类型。
 
@@ -161,7 +161,7 @@ class Hosts:
 
     @property
     def quantity(self):
-        """Gets the quantity of this Hosts.
+        r"""Gets the quantity of this Hosts.
 
         待分配的主机数量
 
@@ -172,7 +172,7 @@ class Hosts:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this Hosts.
+        r"""Sets the quantity of this Hosts.
 
         待分配的主机数量
 
@@ -183,7 +183,7 @@ class Hosts:
 
     @property
     def product_id(self):
-        """Gets the product_id of this Hosts.
+        r"""Gets the product_id of this Hosts.
 
         主机产品Id
 
@@ -194,7 +194,7 @@ class Hosts:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this Hosts.
+        r"""Sets the product_id of this Hosts.
 
         主机产品Id
 

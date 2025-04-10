@@ -28,7 +28,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListDeviceAlarmsResponse
+        r"""ListDeviceAlarmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDeviceAlarmsResponse.
+        r"""Gets the total of this ListDeviceAlarmsResponse.
 
         满足条件的设备告警总数
 
@@ -62,7 +62,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDeviceAlarmsResponse.
+        r"""Sets the total of this ListDeviceAlarmsResponse.
 
         满足条件的设备告警总数
 
@@ -73,7 +73,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDeviceAlarmsResponse.
+        r"""Gets the data of this ListDeviceAlarmsResponse.
 
         :return: The data of this ListDeviceAlarmsResponse.
         :rtype: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]
@@ -82,7 +82,7 @@ class ListDeviceAlarmsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDeviceAlarmsResponse.
+        r"""Sets the data of this ListDeviceAlarmsResponse.
 
         :param data: The data of this ListDeviceAlarmsResponse.
         :type data: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]

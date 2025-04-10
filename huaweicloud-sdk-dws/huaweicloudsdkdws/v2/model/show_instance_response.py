@@ -84,7 +84,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, configuration_status=None, params_group_id=None, type=None, subnet_id=None, role=None, internal_subnet_id=None, group=None, secure_group=None, vpc=None, azcode=None, region=None, cluster_id=None, created=None, updated=None, status=None, name=None, links=None, id=None, flavor=None, volume=None, datastore=None, fault=None, configuration=None, locality=None, replicas=None, db_user=None, storage_engine=None, pay_model=None, public_ip=None, traffic_ip=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -247,7 +247,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def configuration_status(self):
-        """Gets the configuration_status of this ShowInstanceResponse.
+        r"""Gets the configuration_status of this ShowInstanceResponse.
 
         配置状态
 
@@ -258,7 +258,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @configuration_status.setter
     def configuration_status(self, configuration_status):
-        """Sets the configuration_status of this ShowInstanceResponse.
+        r"""Sets the configuration_status of this ShowInstanceResponse.
 
         配置状态
 
@@ -269,7 +269,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def params_group_id(self):
-        """Gets the params_group_id of this ShowInstanceResponse.
+        r"""Gets the params_group_id of this ShowInstanceResponse.
 
         参数组ID
 
@@ -280,7 +280,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @params_group_id.setter
     def params_group_id(self, params_group_id):
-        """Sets the params_group_id of this ShowInstanceResponse.
+        r"""Sets the params_group_id of this ShowInstanceResponse.
 
         参数组ID
 
@@ -291,7 +291,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowInstanceResponse.
+        r"""Gets the type of this ShowInstanceResponse.
 
         类型
 
@@ -302,7 +302,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowInstanceResponse.
+        r"""Sets the type of this ShowInstanceResponse.
 
         类型
 
@@ -313,7 +313,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowInstanceResponse.
+        r"""Gets the subnet_id of this ShowInstanceResponse.
 
         子网ID
 
@@ -324,7 +324,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowInstanceResponse.
+        r"""Sets the subnet_id of this ShowInstanceResponse.
 
         子网ID
 
@@ -335,7 +335,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowInstanceResponse.
+        r"""Gets the role of this ShowInstanceResponse.
 
         角色
 
@@ -346,7 +346,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowInstanceResponse.
+        r"""Sets the role of this ShowInstanceResponse.
 
         角色
 
@@ -357,7 +357,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def internal_subnet_id(self):
-        """Gets the internal_subnet_id of this ShowInstanceResponse.
+        r"""Gets the internal_subnet_id of this ShowInstanceResponse.
 
         内部子网ID
 
@@ -368,7 +368,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @internal_subnet_id.setter
     def internal_subnet_id(self, internal_subnet_id):
-        """Sets the internal_subnet_id of this ShowInstanceResponse.
+        r"""Sets the internal_subnet_id of this ShowInstanceResponse.
 
         内部子网ID
 
@@ -379,7 +379,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this ShowInstanceResponse.
+        r"""Gets the group of this ShowInstanceResponse.
 
         组
 
@@ -390,7 +390,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowInstanceResponse.
+        r"""Sets the group of this ShowInstanceResponse.
 
         组
 
@@ -401,7 +401,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def secure_group(self):
-        """Gets the secure_group of this ShowInstanceResponse.
+        r"""Gets the secure_group of this ShowInstanceResponse.
 
         安全组
 
@@ -412,7 +412,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @secure_group.setter
     def secure_group(self, secure_group):
-        """Sets the secure_group of this ShowInstanceResponse.
+        r"""Sets the secure_group of this ShowInstanceResponse.
 
         安全组
 
@@ -423,7 +423,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def vpc(self):
-        """Gets the vpc of this ShowInstanceResponse.
+        r"""Gets the vpc of this ShowInstanceResponse.
 
         VPC
 
@@ -434,7 +434,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this ShowInstanceResponse.
+        r"""Sets the vpc of this ShowInstanceResponse.
 
         VPC
 
@@ -445,7 +445,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def azcode(self):
-        """Gets the azcode of this ShowInstanceResponse.
+        r"""Gets the azcode of this ShowInstanceResponse.
 
         编码
 
@@ -456,7 +456,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @azcode.setter
     def azcode(self, azcode):
-        """Sets the azcode of this ShowInstanceResponse.
+        r"""Sets the azcode of this ShowInstanceResponse.
 
         编码
 
@@ -467,7 +467,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowInstanceResponse.
+        r"""Gets the region of this ShowInstanceResponse.
 
         区域
 
@@ -478,7 +478,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowInstanceResponse.
+        r"""Sets the region of this ShowInstanceResponse.
 
         区域
 
@@ -489,7 +489,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowInstanceResponse.
+        r"""Gets the cluster_id of this ShowInstanceResponse.
 
         集群ID
 
@@ -500,7 +500,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowInstanceResponse.
+        r"""Sets the cluster_id of this ShowInstanceResponse.
 
         集群ID
 
@@ -511,7 +511,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowInstanceResponse.
+        r"""Gets the created of this ShowInstanceResponse.
 
         被创建的
 
@@ -522,7 +522,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowInstanceResponse.
+        r"""Sets the created of this ShowInstanceResponse.
 
         被创建的
 
@@ -533,7 +533,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowInstanceResponse.
+        r"""Gets the updated of this ShowInstanceResponse.
 
         被更新的
 
@@ -544,7 +544,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowInstanceResponse.
+        r"""Sets the updated of this ShowInstanceResponse.
 
         被更新的
 
@@ -555,7 +555,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceResponse.
+        r"""Gets the status of this ShowInstanceResponse.
 
         状态
 
@@ -566,7 +566,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceResponse.
+        r"""Sets the status of this ShowInstanceResponse.
 
         状态
 
@@ -577,7 +577,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceResponse.
+        r"""Gets the name of this ShowInstanceResponse.
 
         名称
 
@@ -588,7 +588,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceResponse.
+        r"""Sets the name of this ShowInstanceResponse.
 
         名称
 
@@ -599,7 +599,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowInstanceResponse.
+        r"""Gets the links of this ShowInstanceResponse.
 
         连接
 
@@ -610,7 +610,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowInstanceResponse.
+        r"""Sets the links of this ShowInstanceResponse.
 
         连接
 
@@ -621,7 +621,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceResponse.
+        r"""Gets the id of this ShowInstanceResponse.
 
         ID
 
@@ -632,7 +632,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceResponse.
+        r"""Sets the id of this ShowInstanceResponse.
 
         ID
 
@@ -643,7 +643,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowInstanceResponse.
+        r"""Gets the flavor of this ShowInstanceResponse.
 
         :return: The flavor of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterFlavorResp`
@@ -652,7 +652,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowInstanceResponse.
+        r"""Sets the flavor of this ShowInstanceResponse.
 
         :param flavor: The flavor of this ShowInstanceResponse.
         :type flavor: :class:`huaweicloudsdkdws.v2.ClusterFlavorResp`
@@ -661,7 +661,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def volume(self):
-        """Gets the volume of this ShowInstanceResponse.
+        r"""Gets the volume of this ShowInstanceResponse.
 
         :return: The volume of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.CompatibleInstanceVolumeResp`
@@ -670,7 +670,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ShowInstanceResponse.
+        r"""Sets the volume of this ShowInstanceResponse.
 
         :param volume: The volume of this ShowInstanceResponse.
         :type volume: :class:`huaweicloudsdkdws.v2.CompatibleInstanceVolumeResp`
@@ -679,7 +679,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this ShowInstanceResponse.
+        r"""Gets the datastore of this ShowInstanceResponse.
 
         :return: The datastore of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.CompatibleDataStoreResp`
@@ -688,7 +688,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ShowInstanceResponse.
+        r"""Sets the datastore of this ShowInstanceResponse.
 
         :param datastore: The datastore of this ShowInstanceResponse.
         :type datastore: :class:`huaweicloudsdkdws.v2.CompatibleDataStoreResp`
@@ -697,7 +697,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def fault(self):
-        """Gets the fault of this ShowInstanceResponse.
+        r"""Gets the fault of this ShowInstanceResponse.
 
         :return: The fault of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.CompatibleFaultResp`
@@ -706,7 +706,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this ShowInstanceResponse.
+        r"""Sets the fault of this ShowInstanceResponse.
 
         :param fault: The fault of this ShowInstanceResponse.
         :type fault: :class:`huaweicloudsdkdws.v2.CompatibleFaultResp`
@@ -715,7 +715,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this ShowInstanceResponse.
+        r"""Gets the configuration of this ShowInstanceResponse.
 
         :return: The configuration of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.CompatibleConfigurationResp`
@@ -724,7 +724,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ShowInstanceResponse.
+        r"""Sets the configuration of this ShowInstanceResponse.
 
         :param configuration: The configuration of this ShowInstanceResponse.
         :type configuration: :class:`huaweicloudsdkdws.v2.CompatibleConfigurationResp`
@@ -733,7 +733,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def locality(self):
-        """Gets the locality of this ShowInstanceResponse.
+        r"""Gets the locality of this ShowInstanceResponse.
 
         地点
 
@@ -744,7 +744,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @locality.setter
     def locality(self, locality):
-        """Sets the locality of this ShowInstanceResponse.
+        r"""Sets the locality of this ShowInstanceResponse.
 
         地点
 
@@ -755,7 +755,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def replicas(self):
-        """Gets the replicas of this ShowInstanceResponse.
+        r"""Gets the replicas of this ShowInstanceResponse.
 
         备份
 
@@ -766,7 +766,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this ShowInstanceResponse.
+        r"""Sets the replicas of this ShowInstanceResponse.
 
         备份
 
@@ -777,7 +777,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def db_user(self):
-        """Gets the db_user of this ShowInstanceResponse.
+        r"""Gets the db_user of this ShowInstanceResponse.
 
         数据库用户
 
@@ -788,7 +788,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this ShowInstanceResponse.
+        r"""Sets the db_user of this ShowInstanceResponse.
 
         数据库用户
 
@@ -799,7 +799,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def storage_engine(self):
-        """Gets the storage_engine of this ShowInstanceResponse.
+        r"""Gets the storage_engine of this ShowInstanceResponse.
 
         存储引擎
 
@@ -810,7 +810,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @storage_engine.setter
     def storage_engine(self, storage_engine):
-        """Sets the storage_engine of this ShowInstanceResponse.
+        r"""Sets the storage_engine of this ShowInstanceResponse.
 
         存储引擎
 
@@ -821,7 +821,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this ShowInstanceResponse.
+        r"""Gets the pay_model of this ShowInstanceResponse.
 
         付款方式
 
@@ -832,7 +832,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this ShowInstanceResponse.
+        r"""Sets the pay_model of this ShowInstanceResponse.
 
         付款方式
 
@@ -843,7 +843,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ShowInstanceResponse.
+        r"""Gets the public_ip of this ShowInstanceResponse.
 
         公网IP
 
@@ -854,7 +854,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ShowInstanceResponse.
+        r"""Sets the public_ip of this ShowInstanceResponse.
 
         公网IP
 
@@ -865,7 +865,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def traffic_ip(self):
-        """Gets the traffic_ip of this ShowInstanceResponse.
+        r"""Gets the traffic_ip of this ShowInstanceResponse.
 
         流量IP
 
@@ -876,7 +876,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @traffic_ip.setter
     def traffic_ip(self, traffic_ip):
-        """Sets the traffic_ip of this ShowInstanceResponse.
+        r"""Sets the traffic_ip of this ShowInstanceResponse.
 
         流量IP
 

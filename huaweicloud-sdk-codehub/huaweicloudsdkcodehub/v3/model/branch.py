@@ -27,7 +27,7 @@ class Branch:
     }
 
     def __init__(self, is_protected=None, name=None):
-        """Branch
+        r"""Branch
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Branch:
 
     @property
     def is_protected(self):
-        """Gets the is_protected of this Branch.
+        r"""Gets the is_protected of this Branch.
 
         是否开启保护分支功能
 
@@ -61,7 +61,7 @@ class Branch:
 
     @is_protected.setter
     def is_protected(self, is_protected):
-        """Sets the is_protected of this Branch.
+        r"""Sets the is_protected of this Branch.
 
         是否开启保护分支功能
 
@@ -72,7 +72,7 @@ class Branch:
 
     @property
     def name(self):
-        """Gets the name of this Branch.
+        r"""Gets the name of this Branch.
 
         分支名
 
@@ -83,7 +83,7 @@ class Branch:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Branch.
+        r"""Sets the name of this Branch.
 
         分支名
 

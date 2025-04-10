@@ -25,7 +25,7 @@ class RemoveProjectRequest:
     }
 
     def __init__(self, project_id=None):
-        """RemoveProjectRequest
+        r"""RemoveProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveProjectRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RemoveProjectRequest.
+        r"""Gets the project_id of this RemoveProjectRequest.
 
         devcloud项目的32位id
 
@@ -53,7 +53,7 @@ class RemoveProjectRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RemoveProjectRequest.
+        r"""Sets the project_id of this RemoveProjectRequest.
 
         devcloud项目的32位id
 

@@ -29,11 +29,11 @@ class ShowAssetStatisticRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, category=None):
-        """ShowAssetStatisticRequest
+        r"""ShowAssetStatisticRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_id: Host ID
         :type host_id: str
@@ -57,9 +57,9 @@ class ShowAssetStatisticRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowAssetStatisticRequest.
+        r"""Gets the enterprise_project_id of this ShowAssetStatisticRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowAssetStatisticRequest.
         :rtype: str
@@ -68,9 +68,9 @@ class ShowAssetStatisticRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowAssetStatisticRequest.
+        r"""Sets the enterprise_project_id of this ShowAssetStatisticRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowAssetStatisticRequest.
         :type enterprise_project_id: str
@@ -79,7 +79,7 @@ class ShowAssetStatisticRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowAssetStatisticRequest.
+        r"""Gets the host_id of this ShowAssetStatisticRequest.
 
         Host ID
 
@@ -90,7 +90,7 @@ class ShowAssetStatisticRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowAssetStatisticRequest.
+        r"""Sets the host_id of this ShowAssetStatisticRequest.
 
         Host ID
 
@@ -101,7 +101,7 @@ class ShowAssetStatisticRequest:
 
     @property
     def category(self):
-        """Gets the category of this ShowAssetStatisticRequest.
+        r"""Gets the category of this ShowAssetStatisticRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -112,7 +112,7 @@ class ShowAssetStatisticRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowAssetStatisticRequest.
+        r"""Sets the category of this ShowAssetStatisticRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 

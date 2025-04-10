@@ -27,7 +27,7 @@ class AddPartitionInput:
     }
 
     def __init__(self, if_not_exist=None, partitions=None):
-        """AddPartitionInput
+        r"""AddPartitionInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddPartitionInput:
 
     @property
     def if_not_exist(self):
-        """Gets the if_not_exist of this AddPartitionInput.
+        r"""Gets the if_not_exist of this AddPartitionInput.
 
         是否跳过已存在的分区
 
@@ -59,7 +59,7 @@ class AddPartitionInput:
 
     @if_not_exist.setter
     def if_not_exist(self, if_not_exist):
-        """Sets the if_not_exist of this AddPartitionInput.
+        r"""Sets the if_not_exist of this AddPartitionInput.
 
         是否跳过已存在的分区
 
@@ -70,7 +70,7 @@ class AddPartitionInput:
 
     @property
     def partitions(self):
-        """Gets the partitions of this AddPartitionInput.
+        r"""Gets the partitions of this AddPartitionInput.
 
         添加的分区信息
 
@@ -81,7 +81,7 @@ class AddPartitionInput:
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this AddPartitionInput.
+        r"""Sets the partitions of this AddPartitionInput.
 
         添加的分区信息
 

@@ -38,7 +38,7 @@ class ShowCertKeyResponse(SdkResponse):
     }
 
     def __init__(self, cert=None, private_key=None, ca=None, target_mgmt_cert=None, target_mgmt_private_key=None, target_data_cert=None, target_data_private_key=None):
-        """ShowCertKeyResponse
+        r"""ShowCertKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def cert(self):
-        """Gets the cert of this ShowCertKeyResponse.
+        r"""Gets the cert of this ShowCertKeyResponse.
 
         源端证书
 
@@ -97,7 +97,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @cert.setter
     def cert(self, cert):
-        """Sets the cert of this ShowCertKeyResponse.
+        r"""Sets the cert of this ShowCertKeyResponse.
 
         源端证书
 
@@ -108,7 +108,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this ShowCertKeyResponse.
+        r"""Gets the private_key of this ShowCertKeyResponse.
 
         源端私钥
 
@@ -119,7 +119,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ShowCertKeyResponse.
+        r"""Sets the private_key of this ShowCertKeyResponse.
 
         源端私钥
 
@@ -130,7 +130,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def ca(self):
-        """Gets the ca of this ShowCertKeyResponse.
+        r"""Gets the ca of this ShowCertKeyResponse.
 
         ca证书
 
@@ -141,7 +141,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @ca.setter
     def ca(self, ca):
-        """Sets the ca of this ShowCertKeyResponse.
+        r"""Sets the ca of this ShowCertKeyResponse.
 
         ca证书
 
@@ -152,7 +152,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def target_mgmt_cert(self):
-        """Gets the target_mgmt_cert of this ShowCertKeyResponse.
+        r"""Gets the target_mgmt_cert of this ShowCertKeyResponse.
 
         目的端管理层证书
 
@@ -163,7 +163,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @target_mgmt_cert.setter
     def target_mgmt_cert(self, target_mgmt_cert):
-        """Sets the target_mgmt_cert of this ShowCertKeyResponse.
+        r"""Sets the target_mgmt_cert of this ShowCertKeyResponse.
 
         目的端管理层证书
 
@@ -174,7 +174,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def target_mgmt_private_key(self):
-        """Gets the target_mgmt_private_key of this ShowCertKeyResponse.
+        r"""Gets the target_mgmt_private_key of this ShowCertKeyResponse.
 
         目的端管理层私钥
 
@@ -185,7 +185,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @target_mgmt_private_key.setter
     def target_mgmt_private_key(self, target_mgmt_private_key):
-        """Sets the target_mgmt_private_key of this ShowCertKeyResponse.
+        r"""Sets the target_mgmt_private_key of this ShowCertKeyResponse.
 
         目的端管理层私钥
 
@@ -196,7 +196,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def target_data_cert(self):
-        """Gets the target_data_cert of this ShowCertKeyResponse.
+        r"""Gets the target_data_cert of this ShowCertKeyResponse.
 
         目的端数据层证书
 
@@ -207,7 +207,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @target_data_cert.setter
     def target_data_cert(self, target_data_cert):
-        """Sets the target_data_cert of this ShowCertKeyResponse.
+        r"""Sets the target_data_cert of this ShowCertKeyResponse.
 
         目的端数据层证书
 
@@ -218,7 +218,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @property
     def target_data_private_key(self):
-        """Gets the target_data_private_key of this ShowCertKeyResponse.
+        r"""Gets the target_data_private_key of this ShowCertKeyResponse.
 
         目的端数据层私钥
 
@@ -229,7 +229,7 @@ class ShowCertKeyResponse(SdkResponse):
 
     @target_data_private_key.setter
     def target_data_private_key(self, target_data_private_key):
-        """Sets the target_data_private_key of this ShowCertKeyResponse.
+        r"""Sets the target_data_private_key of this ShowCertKeyResponse.
 
         目的端数据层私钥
 

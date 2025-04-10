@@ -39,7 +39,7 @@ class ConnectionEndpoints:
     }
 
     def __init__(self, id=None, marker_id=None, created_at=None, updated_at=None, domain_id=None, error=None, status=None, description=None):
-        """ConnectionEndpoints
+        r"""ConnectionEndpoints
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ConnectionEndpoints:
 
     @property
     def id(self):
-        """Gets the id of this ConnectionEndpoints.
+        r"""Gets the id of this ConnectionEndpoints.
 
         终端节点的ID，唯一标识。
 
@@ -103,7 +103,7 @@ class ConnectionEndpoints:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectionEndpoints.
+        r"""Sets the id of this ConnectionEndpoints.
 
         终端节点的ID，唯一标识。
 
@@ -114,7 +114,7 @@ class ConnectionEndpoints:
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this ConnectionEndpoints.
+        r"""Gets the marker_id of this ConnectionEndpoints.
 
         终端节点的报文标识。
 
@@ -125,7 +125,7 @@ class ConnectionEndpoints:
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this ConnectionEndpoints.
+        r"""Sets the marker_id of this ConnectionEndpoints.
 
         终端节点的报文标识。
 
@@ -136,7 +136,7 @@ class ConnectionEndpoints:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ConnectionEndpoints.
+        r"""Gets the created_at of this ConnectionEndpoints.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -147,7 +147,7 @@ class ConnectionEndpoints:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ConnectionEndpoints.
+        r"""Sets the created_at of this ConnectionEndpoints.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -158,7 +158,7 @@ class ConnectionEndpoints:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ConnectionEndpoints.
+        r"""Gets the updated_at of this ConnectionEndpoints.
 
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -169,7 +169,7 @@ class ConnectionEndpoints:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ConnectionEndpoints.
+        r"""Sets the updated_at of this ConnectionEndpoints.
 
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -180,7 +180,7 @@ class ConnectionEndpoints:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ConnectionEndpoints.
+        r"""Gets the domain_id of this ConnectionEndpoints.
 
         用户的Domain ID。
 
@@ -191,7 +191,7 @@ class ConnectionEndpoints:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ConnectionEndpoints.
+        r"""Sets the domain_id of this ConnectionEndpoints.
 
         用户的Domain ID。
 
@@ -202,7 +202,7 @@ class ConnectionEndpoints:
 
     @property
     def error(self):
-        """Gets the error of this ConnectionEndpoints.
+        r"""Gets the error of this ConnectionEndpoints.
 
         错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
 
@@ -213,7 +213,7 @@ class ConnectionEndpoints:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ConnectionEndpoints.
+        r"""Sets the error of this ConnectionEndpoints.
 
         错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
 
@@ -224,7 +224,7 @@ class ConnectionEndpoints:
 
     @property
     def status(self):
-        """Gets the status of this ConnectionEndpoints.
+        r"""Gets the status of this ConnectionEndpoints.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
@@ -235,7 +235,7 @@ class ConnectionEndpoints:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectionEndpoints.
+        r"""Sets the status of this ConnectionEndpoints.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
@@ -246,7 +246,7 @@ class ConnectionEndpoints:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionEndpoints.
+        r"""Gets the description of this ConnectionEndpoints.
 
         终端节点连接描述。
 
@@ -257,7 +257,7 @@ class ConnectionEndpoints:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionEndpoints.
+        r"""Sets the description of this ConnectionEndpoints.
 
         终端节点连接描述。
 

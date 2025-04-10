@@ -33,7 +33,7 @@ class PartitionInput:
     }
 
     def __init__(self, partition_values=None, create_time=None, last_access_time=None, parameters=None, storage_descriptor=None):
-        """PartitionInput
+        r"""PartitionInput
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class PartitionInput:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this PartitionInput.
+        r"""Gets the partition_values of this PartitionInput.
 
         分区值列表
 
@@ -77,7 +77,7 @@ class PartitionInput:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this PartitionInput.
+        r"""Sets the partition_values of this PartitionInput.
 
         分区值列表
 
@@ -88,7 +88,7 @@ class PartitionInput:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PartitionInput.
+        r"""Gets the create_time of this PartitionInput.
 
         创建时间
 
@@ -99,7 +99,7 @@ class PartitionInput:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PartitionInput.
+        r"""Sets the create_time of this PartitionInput.
 
         创建时间
 
@@ -110,7 +110,7 @@ class PartitionInput:
 
     @property
     def last_access_time(self):
-        """Gets the last_access_time of this PartitionInput.
+        r"""Gets the last_access_time of this PartitionInput.
 
         最后访问时间
 
@@ -121,7 +121,7 @@ class PartitionInput:
 
     @last_access_time.setter
     def last_access_time(self, last_access_time):
-        """Sets the last_access_time of this PartitionInput.
+        r"""Sets the last_access_time of this PartitionInput.
 
         最后访问时间
 
@@ -132,7 +132,7 @@ class PartitionInput:
 
     @property
     def parameters(self):
-        """Gets the parameters of this PartitionInput.
+        r"""Gets the parameters of this PartitionInput.
 
         参数信息
 
@@ -143,7 +143,7 @@ class PartitionInput:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this PartitionInput.
+        r"""Sets the parameters of this PartitionInput.
 
         参数信息
 
@@ -154,7 +154,7 @@ class PartitionInput:
 
     @property
     def storage_descriptor(self):
-        """Gets the storage_descriptor of this PartitionInput.
+        r"""Gets the storage_descriptor of this PartitionInput.
 
         :return: The storage_descriptor of this PartitionInput.
         :rtype: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
@@ -163,7 +163,7 @@ class PartitionInput:
 
     @storage_descriptor.setter
     def storage_descriptor(self, storage_descriptor):
-        """Sets the storage_descriptor of this PartitionInput.
+        r"""Sets the storage_descriptor of this PartitionInput.
 
         :param storage_descriptor: The storage_descriptor of this PartitionInput.
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`

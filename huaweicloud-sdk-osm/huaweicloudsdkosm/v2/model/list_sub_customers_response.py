@@ -26,7 +26,7 @@ class ListSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, sub_customer_infos=None):
-        """ListSubCustomersResponse
+        r"""ListSubCustomersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSubCustomersResponse(SdkResponse):
 
     @property
     def sub_customer_infos(self):
-        """Gets the sub_customer_infos of this ListSubCustomersResponse.
+        r"""Gets the sub_customer_infos of this ListSubCustomersResponse.
 
         子用户列表
 
@@ -55,7 +55,7 @@ class ListSubCustomersResponse(SdkResponse):
 
     @sub_customer_infos.setter
     def sub_customer_infos(self, sub_customer_infos):
-        """Sets the sub_customer_infos of this ListSubCustomersResponse.
+        r"""Sets the sub_customer_infos of this ListSubCustomersResponse.
 
         子用户列表
 

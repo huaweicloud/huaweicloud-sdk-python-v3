@@ -37,7 +37,7 @@ class RealTimeParticipant:
     }
 
     def __init__(self, pid=None, name=None, phone=None, state=None, video=None, mute=None, hand=None):
-        """RealTimeParticipant
+        r"""RealTimeParticipant
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RealTimeParticipant:
 
     @property
     def pid(self):
-        """Gets the pid of this RealTimeParticipant.
+        r"""Gets the pid of this RealTimeParticipant.
 
         与会者标识。
 
@@ -96,7 +96,7 @@ class RealTimeParticipant:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this RealTimeParticipant.
+        r"""Sets the pid of this RealTimeParticipant.
 
         与会者标识。
 
@@ -107,7 +107,7 @@ class RealTimeParticipant:
 
     @property
     def name(self):
-        """Gets the name of this RealTimeParticipant.
+        r"""Gets the name of this RealTimeParticipant.
 
         与会者名称。
 
@@ -118,7 +118,7 @@ class RealTimeParticipant:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RealTimeParticipant.
+        r"""Sets the name of this RealTimeParticipant.
 
         与会者名称。
 
@@ -129,7 +129,7 @@ class RealTimeParticipant:
 
     @property
     def phone(self):
-        """Gets the phone of this RealTimeParticipant.
+        r"""Gets the phone of this RealTimeParticipant.
 
         与会者号码。
 
@@ -140,7 +140,7 @@ class RealTimeParticipant:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this RealTimeParticipant.
+        r"""Sets the phone of this RealTimeParticipant.
 
         与会者号码。
 
@@ -151,7 +151,7 @@ class RealTimeParticipant:
 
     @property
     def state(self):
-        """Gets the state of this RealTimeParticipant.
+        r"""Gets the state of this RealTimeParticipant.
 
         用户状态。 - 0: 会议中 - 1: 正在呼叫 - 2: 正在加入会议 > 若会场未入会或已离会，则不会显示于在线会场列表。
 
@@ -162,7 +162,7 @@ class RealTimeParticipant:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RealTimeParticipant.
+        r"""Sets the state of this RealTimeParticipant.
 
         用户状态。 - 0: 会议中 - 1: 正在呼叫 - 2: 正在加入会议 > 若会场未入会或已离会，则不会显示于在线会场列表。
 
@@ -173,7 +173,7 @@ class RealTimeParticipant:
 
     @property
     def video(self):
-        """Gets the video of this RealTimeParticipant.
+        r"""Gets the video of this RealTimeParticipant.
 
         音视频能力。 - 0: 音频 - 1: 视频
 
@@ -184,7 +184,7 @@ class RealTimeParticipant:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this RealTimeParticipant.
+        r"""Sets the video of this RealTimeParticipant.
 
         音视频能力。 - 0: 音频 - 1: 视频
 
@@ -195,7 +195,7 @@ class RealTimeParticipant:
 
     @property
     def mute(self):
-        """Gets the mute of this RealTimeParticipant.
+        r"""Gets the mute of this RealTimeParticipant.
 
         麦克风状态。 - 0: 麦克风打开 - 1: 麦克风关闭
 
@@ -206,7 +206,7 @@ class RealTimeParticipant:
 
     @mute.setter
     def mute(self, mute):
-        """Sets the mute of this RealTimeParticipant.
+        r"""Sets the mute of this RealTimeParticipant.
 
         麦克风状态。 - 0: 麦克风打开 - 1: 麦克风关闭
 
@@ -217,7 +217,7 @@ class RealTimeParticipant:
 
     @property
     def hand(self):
-        """Gets the hand of this RealTimeParticipant.
+        r"""Gets the hand of this RealTimeParticipant.
 
         与会者举手状态。 - 0: 未举手 - 1: 举手
 
@@ -228,7 +228,7 @@ class RealTimeParticipant:
 
     @hand.setter
     def hand(self, hand):
-        """Sets the hand of this RealTimeParticipant.
+        r"""Sets the hand of this RealTimeParticipant.
 
         与会者举手状态。 - 0: 未举手 - 1: 举手
 

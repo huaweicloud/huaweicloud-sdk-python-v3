@@ -26,7 +26,7 @@ class ListVersionAliasesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListVersionAliasesResponse
+        r"""ListVersionAliasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListVersionAliasesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListVersionAliasesResponse.
+        r"""Gets the body of this ListVersionAliasesResponse.
 
         函数版本别名列表
 
@@ -55,7 +55,7 @@ class ListVersionAliasesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListVersionAliasesResponse.
+        r"""Sets the body of this ListVersionAliasesResponse.
 
         函数版本别名列表
 

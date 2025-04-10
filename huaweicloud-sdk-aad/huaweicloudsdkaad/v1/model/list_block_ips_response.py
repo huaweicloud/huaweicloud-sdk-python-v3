@@ -28,7 +28,7 @@ class ListBlockIpsResponse(SdkResponse):
     }
 
     def __init__(self, blocking_list=None, total=None):
-        """ListBlockIpsResponse
+        r"""ListBlockIpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBlockIpsResponse(SdkResponse):
 
     @property
     def blocking_list(self):
-        """Gets the blocking_list of this ListBlockIpsResponse.
+        r"""Gets the blocking_list of this ListBlockIpsResponse.
 
         封堵列表响应体
 
@@ -62,7 +62,7 @@ class ListBlockIpsResponse(SdkResponse):
 
     @blocking_list.setter
     def blocking_list(self, blocking_list):
-        """Sets the blocking_list of this ListBlockIpsResponse.
+        r"""Sets the blocking_list of this ListBlockIpsResponse.
 
         封堵列表响应体
 
@@ -73,7 +73,7 @@ class ListBlockIpsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListBlockIpsResponse.
+        r"""Gets the total of this ListBlockIpsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListBlockIpsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBlockIpsResponse.
+        r"""Sets the total of this ListBlockIpsResponse.
 
         总数
 

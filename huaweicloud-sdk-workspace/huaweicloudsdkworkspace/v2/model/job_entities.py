@@ -33,7 +33,7 @@ class JobEntities:
     }
 
     def __init__(self, desktop_id=None, product_id=None, user_name=None, desktop_name=None, ip_address=None):
-        """JobEntities
+        r"""JobEntities
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class JobEntities:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this JobEntities.
+        r"""Gets the desktop_id of this JobEntities.
 
         桌面ID。
 
@@ -82,7 +82,7 @@ class JobEntities:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this JobEntities.
+        r"""Sets the desktop_id of this JobEntities.
 
         桌面ID。
 
@@ -93,7 +93,7 @@ class JobEntities:
 
     @property
     def product_id(self):
-        """Gets the product_id of this JobEntities.
+        r"""Gets the product_id of this JobEntities.
 
         套餐ID。
 
@@ -104,7 +104,7 @@ class JobEntities:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this JobEntities.
+        r"""Sets the product_id of this JobEntities.
 
         套餐ID。
 
@@ -115,7 +115,7 @@ class JobEntities:
 
     @property
     def user_name(self):
-        """Gets the user_name of this JobEntities.
+        r"""Gets the user_name of this JobEntities.
 
         用户名。
 
@@ -126,7 +126,7 @@ class JobEntities:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this JobEntities.
+        r"""Sets the user_name of this JobEntities.
 
         用户名。
 
@@ -137,7 +137,7 @@ class JobEntities:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this JobEntities.
+        r"""Gets the desktop_name of this JobEntities.
 
         桌面名称。
 
@@ -148,7 +148,7 @@ class JobEntities:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this JobEntities.
+        r"""Sets the desktop_name of this JobEntities.
 
         桌面名称。
 
@@ -159,7 +159,7 @@ class JobEntities:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this JobEntities.
+        r"""Gets the ip_address of this JobEntities.
 
         ip地址。
 
@@ -170,7 +170,7 @@ class JobEntities:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this JobEntities.
+        r"""Sets the ip_address of this JobEntities.
 
         ip地址。
 

@@ -24,7 +24,7 @@ class AttachManagedRoleToPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AttachManagedRoleToPermissionSetResponse
+        r"""AttachManagedRoleToPermissionSetResponse
 
         The model defined in huaweicloud sdk
 

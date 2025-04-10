@@ -26,7 +26,7 @@ class ListPortInfosResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListPortInfosResponse
+        r"""ListPortInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPortInfosResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPortInfosResponse.
+        r"""Gets the data of this ListPortInfosResponse.
 
         :return: The data of this ListPortInfosResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListPortInfosResponseModel`
@@ -53,7 +53,7 @@ class ListPortInfosResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPortInfosResponse.
+        r"""Sets the data of this ListPortInfosResponse.
 
         :param data: The data of this ListPortInfosResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.ListPortInfosResponseModel`

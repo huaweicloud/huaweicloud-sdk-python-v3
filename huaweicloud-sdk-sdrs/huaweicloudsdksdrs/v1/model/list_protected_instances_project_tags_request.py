@@ -23,7 +23,7 @@ class ListProtectedInstancesProjectTagsRequest:
     }
 
     def __init__(self):
-        """ListProtectedInstancesProjectTagsRequest
+        r"""ListProtectedInstancesProjectTagsRequest
 
         The model defined in huaweicloud sdk
 

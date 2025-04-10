@@ -25,7 +25,7 @@ class DeleteAgencyRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteAgencyRequest
+        r"""DeleteAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteAgencyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAgencyRequest.
+        r"""Gets the body of this DeleteAgencyRequest.
 
         :return: The body of this DeleteAgencyRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.AgencyRequestBody`
@@ -52,7 +52,7 @@ class DeleteAgencyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAgencyRequest.
+        r"""Sets the body of this DeleteAgencyRequest.
 
         :param body: The body of this DeleteAgencyRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.AgencyRequestBody`

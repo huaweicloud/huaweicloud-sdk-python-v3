@@ -26,7 +26,7 @@ class StartVpecpResponse(SdkResponse):
     }
 
     def __init__(self, action=None):
-        """StartVpecpResponse
+        r"""StartVpecpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartVpecpResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this StartVpecpResponse.
+        r"""Gets the action of this StartVpecpResponse.
 
         操作行为。固定为：createVpcepservice，表示已开启终端节点。
 
@@ -55,7 +55,7 @@ class StartVpecpResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartVpecpResponse.
+        r"""Sets the action of this StartVpecpResponse.
 
         操作行为。固定为：createVpcepservice，表示已开启终端节点。
 

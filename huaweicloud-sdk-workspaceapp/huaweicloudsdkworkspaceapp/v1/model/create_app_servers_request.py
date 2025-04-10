@@ -25,7 +25,7 @@ class CreateAppServersRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAppServersRequest
+        r"""CreateAppServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAppServersRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppServersRequest.
+        r"""Gets the body of this CreateAppServersRequest.
 
         :return: The body of this CreateAppServersRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppServerReq`
@@ -52,7 +52,7 @@ class CreateAppServersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppServersRequest.
+        r"""Sets the body of this CreateAppServersRequest.
 
         :param body: The body of this CreateAppServersRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppServerReq`

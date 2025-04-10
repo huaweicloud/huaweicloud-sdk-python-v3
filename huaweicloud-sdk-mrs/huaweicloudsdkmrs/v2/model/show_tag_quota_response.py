@@ -28,7 +28,7 @@ class ShowTagQuotaResponse(SdkResponse):
     }
 
     def __init__(self, total_quota=None, available_quota=None):
-        """ShowTagQuotaResponse
+        r"""ShowTagQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTagQuotaResponse(SdkResponse):
 
     @property
     def total_quota(self):
-        """Gets the total_quota of this ShowTagQuotaResponse.
+        r"""Gets the total_quota of this ShowTagQuotaResponse.
 
         总配额大小
 
@@ -62,7 +62,7 @@ class ShowTagQuotaResponse(SdkResponse):
 
     @total_quota.setter
     def total_quota(self, total_quota):
-        """Sets the total_quota of this ShowTagQuotaResponse.
+        r"""Sets the total_quota of this ShowTagQuotaResponse.
 
         总配额大小
 
@@ -73,7 +73,7 @@ class ShowTagQuotaResponse(SdkResponse):
 
     @property
     def available_quota(self):
-        """Gets the available_quota of this ShowTagQuotaResponse.
+        r"""Gets the available_quota of this ShowTagQuotaResponse.
 
         可使用配额大小
 
@@ -84,7 +84,7 @@ class ShowTagQuotaResponse(SdkResponse):
 
     @available_quota.setter
     def available_quota(self, available_quota):
-        """Sets the available_quota of this ShowTagQuotaResponse.
+        r"""Sets the available_quota of this ShowTagQuotaResponse.
 
         可使用配额大小
 

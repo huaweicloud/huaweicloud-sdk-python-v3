@@ -25,7 +25,7 @@ class UpdateNotebookReq:
     }
 
     def __init__(self, description=None):
-        """UpdateNotebookReq
+        r"""UpdateNotebookReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNotebookReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNotebookReq.
+        r"""Gets the description of this UpdateNotebookReq.
 
         notebook描述信息，取值范围[0,1024]
 
@@ -53,7 +53,7 @@ class UpdateNotebookReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNotebookReq.
+        r"""Sets the description of this UpdateNotebookReq.
 
         notebook描述信息，取值范围[0,1024]
 

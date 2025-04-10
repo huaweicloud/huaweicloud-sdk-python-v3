@@ -29,7 +29,7 @@ class ListClustersDetailsRequest:
     }
 
     def __init__(self, start=None, limit=None, datastore_type=None):
-        """ListClustersDetailsRequest
+        r"""ListClustersDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListClustersDetailsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListClustersDetailsRequest.
+        r"""Gets the start of this ListClustersDetailsRequest.
 
         指定查询起始值，默认值为1，即从第1个集群开始查询。
 
@@ -68,7 +68,7 @@ class ListClustersDetailsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListClustersDetailsRequest.
+        r"""Sets the start of this ListClustersDetailsRequest.
 
         指定查询起始值，默认值为1，即从第1个集群开始查询。
 
@@ -79,7 +79,7 @@ class ListClustersDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClustersDetailsRequest.
+        r"""Gets the limit of this ListClustersDetailsRequest.
 
         指定查询个数，默认值为10，即一次查询10个集群信息。
 
@@ -90,7 +90,7 @@ class ListClustersDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClustersDetailsRequest.
+        r"""Sets the limit of this ListClustersDetailsRequest.
 
         指定查询个数，默认值为10，即一次查询10个集群信息。
 
@@ -101,7 +101,7 @@ class ListClustersDetailsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListClustersDetailsRequest.
+        r"""Gets the datastore_type of this ListClustersDetailsRequest.
 
         指定查询的集群引擎类型。
 
@@ -112,7 +112,7 @@ class ListClustersDetailsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListClustersDetailsRequest.
+        r"""Sets the datastore_type of this ListClustersDetailsRequest.
 
         指定查询的集群引擎类型。
 

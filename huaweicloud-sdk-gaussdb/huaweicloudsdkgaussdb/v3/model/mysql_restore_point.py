@@ -31,7 +31,7 @@ class MysqlRestorePoint:
     }
 
     def __init__(self, restore_time=None, source_instance_id=None, backup_id=None, type=None):
-        """MysqlRestorePoint
+        r"""MysqlRestorePoint
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class MysqlRestorePoint:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this MysqlRestorePoint.
+        r"""Gets the restore_time of this MysqlRestorePoint.
 
         PITR。要恢复的时间点。
 
@@ -74,7 +74,7 @@ class MysqlRestorePoint:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this MysqlRestorePoint.
+        r"""Sets the restore_time of this MysqlRestorePoint.
 
         PITR。要恢复的时间点。
 
@@ -85,7 +85,7 @@ class MysqlRestorePoint:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this MysqlRestorePoint.
+        r"""Gets the source_instance_id of this MysqlRestorePoint.
 
         源实例ID。
 
@@ -96,7 +96,7 @@ class MysqlRestorePoint:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this MysqlRestorePoint.
+        r"""Sets the source_instance_id of this MysqlRestorePoint.
 
         源实例ID。
 
@@ -107,7 +107,7 @@ class MysqlRestorePoint:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this MysqlRestorePoint.
+        r"""Gets the backup_id of this MysqlRestorePoint.
 
         备份文件ID。
 
@@ -118,7 +118,7 @@ class MysqlRestorePoint:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this MysqlRestorePoint.
+        r"""Sets the backup_id of this MysqlRestorePoint.
 
         备份文件ID。
 
@@ -129,7 +129,7 @@ class MysqlRestorePoint:
 
     @property
     def type(self):
-        """Gets the type of this MysqlRestorePoint.
+        r"""Gets the type of this MysqlRestorePoint.
 
         备份类型。当参数为空时，backup_id不能为空，即默认按备份文件恢复。 当参数不为空时，取值范围： - backup：表示按备份文件恢复； - timestamp：表示按时间点恢复；
 
@@ -140,7 +140,7 @@ class MysqlRestorePoint:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlRestorePoint.
+        r"""Sets the type of this MysqlRestorePoint.
 
         备份类型。当参数为空时，backup_id不能为空，即默认按备份文件恢复。 当参数不为空时，取值范围： - backup：表示按备份文件恢复； - timestamp：表示按时间点恢复；
 

@@ -27,7 +27,7 @@ class CreateClusterTagsBody:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateClusterTagsBody
+        r"""CreateClusterTagsBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusterTagsBody:
 
     @property
     def key(self):
-        """Gets the key of this CreateClusterTagsBody.
+        r"""Gets the key of this CreateClusterTagsBody.
 
         集群标签的key值。可输入的字符串长度为1~36个字符。只能包含数字、字母、中划线\"-\"和下划线\"_\"。
 
@@ -59,7 +59,7 @@ class CreateClusterTagsBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateClusterTagsBody.
+        r"""Sets the key of this CreateClusterTagsBody.
 
         集群标签的key值。可输入的字符串长度为1~36个字符。只能包含数字、字母、中划线\"-\"和下划线\"_\"。
 
@@ -70,7 +70,7 @@ class CreateClusterTagsBody:
 
     @property
     def value(self):
-        """Gets the value of this CreateClusterTagsBody.
+        r"""Gets the value of this CreateClusterTagsBody.
 
         集群标签的value值。可输入的字符串长度为0~43个字符。只能包含数字、字母、中划线\"-\"和下划线\"_\"。
 
@@ -81,7 +81,7 @@ class CreateClusterTagsBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateClusterTagsBody.
+        r"""Sets the value of this CreateClusterTagsBody.
 
         集群标签的value值。可输入的字符串长度为0~43个字符。只能包含数字、字母、中划线\"-\"和下划线\"_\"。
 

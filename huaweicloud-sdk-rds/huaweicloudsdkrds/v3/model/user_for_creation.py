@@ -35,7 +35,7 @@ class UserForCreation:
     }
 
     def __init__(self, name=None, password=None, comment=None, is_privilege=None, hosts=None, databases=None):
-        """UserForCreation
+        r"""UserForCreation
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class UserForCreation:
 
     @property
     def name(self):
-        """Gets the name of this UserForCreation.
+        r"""Gets the name of this UserForCreation.
 
         数据库用户名称。 数据库帐号名称在1到32个字符之间，由字母、数字、中划线或下划线组成，不能包含其他特殊字符。 - 若数据库版本为MySQL5.6，帐号长度为1～16个字符。 - 若数据库版本为MySQL5.7和8.0，帐号长度为1～32个字符。
 
@@ -87,7 +87,7 @@ class UserForCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserForCreation.
+        r"""Sets the name of this UserForCreation.
 
         数据库用户名称。 数据库帐号名称在1到32个字符之间，由字母、数字、中划线或下划线组成，不能包含其他特殊字符。 - 若数据库版本为MySQL5.6，帐号长度为1～16个字符。 - 若数据库版本为MySQL5.7和8.0，帐号长度为1～32个字符。
 
@@ -98,7 +98,7 @@ class UserForCreation:
 
     @property
     def password(self):
-        """Gets the password of this UserForCreation.
+        r"""Gets the password of this UserForCreation.
 
         数据库帐号密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -109,7 +109,7 @@ class UserForCreation:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UserForCreation.
+        r"""Sets the password of this UserForCreation.
 
         数据库帐号密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -120,7 +120,7 @@ class UserForCreation:
 
     @property
     def comment(self):
-        """Gets the comment of this UserForCreation.
+        r"""Gets the comment of this UserForCreation.
 
         数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
 
@@ -131,7 +131,7 @@ class UserForCreation:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UserForCreation.
+        r"""Sets the comment of this UserForCreation.
 
         数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
 
@@ -142,7 +142,7 @@ class UserForCreation:
 
     @property
     def is_privilege(self):
-        """Gets the is_privilege of this UserForCreation.
+        r"""Gets the is_privilege of this UserForCreation.
 
         是否创建高权限用户。 • 默认为false，暂不支持设置为true
 
@@ -153,7 +153,7 @@ class UserForCreation:
 
     @is_privilege.setter
     def is_privilege(self, is_privilege):
-        """Sets the is_privilege of this UserForCreation.
+        r"""Sets the is_privilege of this UserForCreation.
 
         是否创建高权限用户。 • 默认为false，暂不支持设置为true
 
@@ -164,7 +164,7 @@ class UserForCreation:
 
     @property
     def hosts(self):
-        """Gets the hosts of this UserForCreation.
+        r"""Gets the hosts of this UserForCreation.
 
         授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
 
@@ -175,7 +175,7 @@ class UserForCreation:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this UserForCreation.
+        r"""Sets the hosts of this UserForCreation.
 
         授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
 
@@ -186,7 +186,7 @@ class UserForCreation:
 
     @property
     def databases(self):
-        """Gets the databases of this UserForCreation.
+        r"""Gets the databases of this UserForCreation.
 
         授权用户数据库权限
 
@@ -197,7 +197,7 @@ class UserForCreation:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this UserForCreation.
+        r"""Sets the databases of this UserForCreation.
 
         授权用户数据库权限
 

@@ -35,7 +35,7 @@ class VersionDetail:
     }
 
     def __init__(self, id=None, links=None, version=None, status=None, updated=None, min_version=None):
-        """VersionDetail
+        r"""VersionDetail
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class VersionDetail:
 
     @property
     def id(self):
-        """Gets the id of this VersionDetail.
+        r"""Gets the id of this VersionDetail.
 
         版本ID（版本号），如v1.0。
 
@@ -83,7 +83,7 @@ class VersionDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionDetail.
+        r"""Sets the id of this VersionDetail.
 
         版本ID（版本号），如v1.0。
 
@@ -94,7 +94,7 @@ class VersionDetail:
 
     @property
     def links(self):
-        """Gets the links of this VersionDetail.
+        r"""Gets the links of this VersionDetail.
 
         API的URL地址。
 
@@ -105,7 +105,7 @@ class VersionDetail:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VersionDetail.
+        r"""Sets the links of this VersionDetail.
 
         API的URL地址。
 
@@ -116,7 +116,7 @@ class VersionDetail:
 
     @property
     def version(self):
-        """Gets the version of this VersionDetail.
+        r"""Gets the version of this VersionDetail.
 
         若该版本API支持微版本，则返回支持的最大微版本号，如果不支持微版本，则返回空。
 
@@ -127,7 +127,7 @@ class VersionDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionDetail.
+        r"""Sets the version of this VersionDetail.
 
         若该版本API支持微版本，则返回支持的最大微版本号，如果不支持微版本，则返回空。
 
@@ -138,7 +138,7 @@ class VersionDetail:
 
     @property
     def status(self):
-        """Gets the status of this VersionDetail.
+        r"""Gets the status of this VersionDetail.
 
         版本状态，为如下3种： CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -149,7 +149,7 @@ class VersionDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionDetail.
+        r"""Sets the status of this VersionDetail.
 
         版本状态，为如下3种： CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -160,7 +160,7 @@ class VersionDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this VersionDetail.
+        r"""Gets the updated of this VersionDetail.
 
         版本发布时间，采用UTC时间表示。如v1.0发布的时间2016-12-09T00:00:00Z。
 
@@ -171,7 +171,7 @@ class VersionDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this VersionDetail.
+        r"""Sets the updated of this VersionDetail.
 
         版本发布时间，采用UTC时间表示。如v1.0发布的时间2016-12-09T00:00:00Z。
 
@@ -182,7 +182,7 @@ class VersionDetail:
 
     @property
     def min_version(self):
-        """Gets the min_version of this VersionDetail.
+        r"""Gets the min_version of this VersionDetail.
 
         若该版本API 支持微版本，则返回支持的最小微版本号， 如果不支持微版本，则返回空。
 
@@ -193,7 +193,7 @@ class VersionDetail:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this VersionDetail.
+        r"""Sets the min_version of this VersionDetail.
 
         若该版本API 支持微版本，则返回支持的最小微版本号， 如果不支持微版本，则返回空。
 

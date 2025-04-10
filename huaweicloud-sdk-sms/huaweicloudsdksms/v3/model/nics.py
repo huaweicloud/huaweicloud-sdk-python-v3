@@ -31,7 +31,7 @@ class Nics:
     }
 
     def __init__(self, id=None, name=None, cidr=None, ip=None):
-        """Nics
+        r"""Nics
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class Nics:
 
     @property
     def id(self):
-        """Gets the id of this Nics.
+        r"""Gets the id of this Nics.
 
         子网ID，如果是自动创建，使用\"autoCreate\"
 
@@ -72,7 +72,7 @@ class Nics:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Nics.
+        r"""Sets the id of this Nics.
 
         子网ID，如果是自动创建，使用\"autoCreate\"
 
@@ -83,7 +83,7 @@ class Nics:
 
     @property
     def name(self):
-        """Gets the name of this Nics.
+        r"""Gets the name of this Nics.
 
         子网名称
 
@@ -94,7 +94,7 @@ class Nics:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Nics.
+        r"""Sets the name of this Nics.
 
         子网名称
 
@@ -105,7 +105,7 @@ class Nics:
 
     @property
     def cidr(self):
-        """Gets the cidr of this Nics.
+        r"""Gets the cidr of this Nics.
 
         子网网关/掩码
 
@@ -116,7 +116,7 @@ class Nics:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this Nics.
+        r"""Sets the cidr of this Nics.
 
         子网网关/掩码
 
@@ -127,7 +127,7 @@ class Nics:
 
     @property
     def ip(self):
-        """Gets the ip of this Nics.
+        r"""Gets the ip of this Nics.
 
         虚拟机IP地址，如果没有这个字段，自动分配IP
 
@@ -138,7 +138,7 @@ class Nics:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Nics.
+        r"""Sets the ip of this Nics.
 
         虚拟机IP地址，如果没有这个字段，自动分配IP
 

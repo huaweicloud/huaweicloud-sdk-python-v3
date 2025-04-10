@@ -27,7 +27,7 @@ class UpdateCredentialOption:
     }
 
     def __init__(self, status=None, description=None):
-        """UpdateCredentialOption
+        r"""UpdateCredentialOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateCredentialOption:
 
     @property
     def status(self):
-        """Gets the status of this UpdateCredentialOption.
+        r"""Gets the status of this UpdateCredentialOption.
 
         访问密钥状态。取值为：“active”（启用）或者 “inactive”（停用）。status与description至少填写一个。
 
@@ -61,7 +61,7 @@ class UpdateCredentialOption:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateCredentialOption.
+        r"""Sets the status of this UpdateCredentialOption.
 
         访问密钥状态。取值为：“active”（启用）或者 “inactive”（停用）。status与description至少填写一个。
 
@@ -72,7 +72,7 @@ class UpdateCredentialOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCredentialOption.
+        r"""Gets the description of this UpdateCredentialOption.
 
         访问密钥描述信息。status与description至少填写一个。
 
@@ -83,7 +83,7 @@ class UpdateCredentialOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCredentialOption.
+        r"""Sets the description of this UpdateCredentialOption.
 
         访问密钥描述信息。status与description至少填写一个。
 

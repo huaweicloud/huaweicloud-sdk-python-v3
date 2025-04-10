@@ -28,7 +28,7 @@ class ShowEcsQuotaResponse(SdkResponse):
     }
 
     def __init__(self, status_v6=None, status=None):
-        """ShowEcsQuotaResponse
+        r"""ShowEcsQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEcsQuotaResponse(SdkResponse):
 
     @property
     def status_v6(self):
-        """Gets the status_v6 of this ShowEcsQuotaResponse.
+        r"""Gets the status_v6 of this ShowEcsQuotaResponse.
 
         支持IPv6云堡垒机实例规格资源状态。 - sellout：售罄 - normal：正常商用
 
@@ -62,7 +62,7 @@ class ShowEcsQuotaResponse(SdkResponse):
 
     @status_v6.setter
     def status_v6(self, status_v6):
-        """Sets the status_v6 of this ShowEcsQuotaResponse.
+        r"""Sets the status_v6 of this ShowEcsQuotaResponse.
 
         支持IPv6云堡垒机实例规格资源状态。 - sellout：售罄 - normal：正常商用
 
@@ -73,7 +73,7 @@ class ShowEcsQuotaResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEcsQuotaResponse.
+        r"""Gets the status of this ShowEcsQuotaResponse.
 
         云堡垒机实例规格资源状态。 - sellout：售罄 - normal：正常商用
 
@@ -84,7 +84,7 @@ class ShowEcsQuotaResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEcsQuotaResponse.
+        r"""Sets the status of this ShowEcsQuotaResponse.
 
         云堡垒机实例规格资源状态。 - sellout：售罄 - normal：正常商用
 

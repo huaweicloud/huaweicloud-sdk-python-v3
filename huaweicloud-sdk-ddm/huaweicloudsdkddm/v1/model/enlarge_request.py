@@ -33,7 +33,7 @@ class EnlargeRequest:
     }
 
     def __init__(self, flavor_id=None, node_number=None, group_id=None, is_auto_pay=None, available_zones=None):
-        """EnlargeRequest
+        r"""EnlargeRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class EnlargeRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this EnlargeRequest.
+        r"""Gets the flavor_id of this EnlargeRequest.
 
         当前进行节点扩容的DDM实例底层虚机规格id
 
@@ -80,7 +80,7 @@ class EnlargeRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this EnlargeRequest.
+        r"""Sets the flavor_id of this EnlargeRequest.
 
         当前进行节点扩容的DDM实例底层虚机规格id
 
@@ -91,7 +91,7 @@ class EnlargeRequest:
 
     @property
     def node_number(self):
-        """Gets the node_number of this EnlargeRequest.
+        r"""Gets the node_number of this EnlargeRequest.
 
         需要扩容的节点个数
 
@@ -102,7 +102,7 @@ class EnlargeRequest:
 
     @node_number.setter
     def node_number(self, node_number):
-        """Sets the node_number of this EnlargeRequest.
+        r"""Sets the node_number of this EnlargeRequest.
 
         需要扩容的节点个数
 
@@ -113,7 +113,7 @@ class EnlargeRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this EnlargeRequest.
+        r"""Gets the group_id of this EnlargeRequest.
 
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
@@ -124,7 +124,7 @@ class EnlargeRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this EnlargeRequest.
+        r"""Sets the group_id of this EnlargeRequest.
 
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
@@ -135,7 +135,7 @@ class EnlargeRequest:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this EnlargeRequest.
+        r"""Gets the is_auto_pay of this EnlargeRequest.
 
         变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
@@ -146,7 +146,7 @@ class EnlargeRequest:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this EnlargeRequest.
+        r"""Sets the is_auto_pay of this EnlargeRequest.
 
         变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
@@ -157,7 +157,7 @@ class EnlargeRequest:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this EnlargeRequest.
+        r"""Gets the available_zones of this EnlargeRequest.
 
         可用区Code，仅包年包月实例传递该参数，个数需与node_number一致。请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
 
@@ -168,7 +168,7 @@ class EnlargeRequest:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this EnlargeRequest.
+        r"""Sets the available_zones of this EnlargeRequest.
 
         可用区Code，仅包年包月实例传递该参数，个数需与node_number一致。请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
 

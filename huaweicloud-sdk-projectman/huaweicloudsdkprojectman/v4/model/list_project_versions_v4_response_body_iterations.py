@@ -39,7 +39,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
     }
 
     def __init__(self, description=None, end_time=None, id=None, name=None, begin_time=None, status=None, updated_time=None, deleted=None):
-        """ListProjectVersionsV4ResponseBodyIterations
+        r"""ListProjectVersionsV4ResponseBodyIterations
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def description(self):
-        """Gets the description of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the description of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代描述
 
@@ -103,7 +103,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the description of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代描述
 
@@ -114,7 +114,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the end_time of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代结束时间
 
@@ -125,7 +125,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the end_time of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代结束时间
 
@@ -136,7 +136,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def id(self):
-        """Gets the id of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the id of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代id
 
@@ -147,7 +147,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the id of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代id
 
@@ -158,7 +158,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def name(self):
-        """Gets the name of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the name of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代标题
 
@@ -169,7 +169,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the name of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代标题
 
@@ -180,7 +180,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the begin_time of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代开始时间
 
@@ -191,7 +191,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the begin_time of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代开始时间
 
@@ -202,7 +202,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def status(self):
-        """Gets the status of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the status of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代状态
 
@@ -213,7 +213,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the status of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代状态
 
@@ -224,7 +224,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the updated_time of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代更新时间，长整型时间戳
 
@@ -235,7 +235,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the updated_time of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代更新时间，长整型时间戳
 
@@ -246,7 +246,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @property
     def deleted(self):
-        """Gets the deleted of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Gets the deleted of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代是否已经删除，false, 未删除， true已经删除
 
@@ -257,7 +257,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ListProjectVersionsV4ResponseBodyIterations.
+        r"""Sets the deleted of this ListProjectVersionsV4ResponseBodyIterations.
 
         迭代是否已经删除，false, 未删除， true已经删除
 

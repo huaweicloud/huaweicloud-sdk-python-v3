@@ -30,7 +30,7 @@ class ListNetworkQualityResponse(SdkResponse):
     }
 
     def __init__(self, return_code=None, return_desc=None, qos_list=None):
-        """ListNetworkQualityResponse
+        r"""ListNetworkQualityResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNetworkQualityResponse(SdkResponse):
 
     @property
     def return_code(self):
-        """Gets the return_code of this ListNetworkQualityResponse.
+        r"""Gets the return_code of this ListNetworkQualityResponse.
 
         结果码
 
@@ -69,7 +69,7 @@ class ListNetworkQualityResponse(SdkResponse):
 
     @return_code.setter
     def return_code(self, return_code):
-        """Sets the return_code of this ListNetworkQualityResponse.
+        r"""Sets the return_code of this ListNetworkQualityResponse.
 
         结果码
 
@@ -80,7 +80,7 @@ class ListNetworkQualityResponse(SdkResponse):
 
     @property
     def return_desc(self):
-        """Gets the return_desc of this ListNetworkQualityResponse.
+        r"""Gets the return_desc of this ListNetworkQualityResponse.
 
         结果描述
 
@@ -91,7 +91,7 @@ class ListNetworkQualityResponse(SdkResponse):
 
     @return_desc.setter
     def return_desc(self, return_desc):
-        """Sets the return_desc of this ListNetworkQualityResponse.
+        r"""Sets the return_desc of this ListNetworkQualityResponse.
 
         结果描述
 
@@ -102,7 +102,7 @@ class ListNetworkQualityResponse(SdkResponse):
 
     @property
     def qos_list(self):
-        """Gets the qos_list of this ListNetworkQualityResponse.
+        r"""Gets the qos_list of this ListNetworkQualityResponse.
 
         会场Qos列表
 
@@ -113,7 +113,7 @@ class ListNetworkQualityResponse(SdkResponse):
 
     @qos_list.setter
     def qos_list(self, qos_list):
-        """Sets the qos_list of this ListNetworkQualityResponse.
+        r"""Sets the qos_list of this ListNetworkQualityResponse.
 
         会场Qos列表
 

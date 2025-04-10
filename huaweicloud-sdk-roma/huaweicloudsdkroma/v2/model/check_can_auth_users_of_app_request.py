@@ -29,7 +29,7 @@ class CheckCanAuthUsersOfAppRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, filter=None):
-        """CheckCanAuthUsersOfAppRequest
+        r"""CheckCanAuthUsersOfAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CheckCanAuthUsersOfAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CheckCanAuthUsersOfAppRequest.
+        r"""Gets the app_id of this CheckCanAuthUsersOfAppRequest.
 
         应用ID
 
@@ -66,7 +66,7 @@ class CheckCanAuthUsersOfAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CheckCanAuthUsersOfAppRequest.
+        r"""Sets the app_id of this CheckCanAuthUsersOfAppRequest.
 
         应用ID
 
@@ -77,7 +77,7 @@ class CheckCanAuthUsersOfAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckCanAuthUsersOfAppRequest.
+        r"""Gets the instance_id of this CheckCanAuthUsersOfAppRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class CheckCanAuthUsersOfAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckCanAuthUsersOfAppRequest.
+        r"""Sets the instance_id of this CheckCanAuthUsersOfAppRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class CheckCanAuthUsersOfAppRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this CheckCanAuthUsersOfAppRequest.
+        r"""Gets the filter of this CheckCanAuthUsersOfAppRequest.
 
         过滤条件 - 过滤条件，未提供时返回包括应用成员在内的所有候选用户列表 - 取值members时，过滤掉当前应用成员，适合增量添加应用成员时使用
 
@@ -110,7 +110,7 @@ class CheckCanAuthUsersOfAppRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this CheckCanAuthUsersOfAppRequest.
+        r"""Sets the filter of this CheckCanAuthUsersOfAppRequest.
 
         过滤条件 - 过滤条件，未提供时返回包括应用成员在内的所有候选用户列表 - 取值members时，过滤掉当前应用成员，适合增量添加应用成员时使用
 

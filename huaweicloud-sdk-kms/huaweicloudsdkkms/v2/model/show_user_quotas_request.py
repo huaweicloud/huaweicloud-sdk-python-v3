@@ -23,7 +23,7 @@ class ShowUserQuotasRequest:
     }
 
     def __init__(self):
-        """ShowUserQuotasRequest
+        r"""ShowUserQuotasRequest
 
         The model defined in huaweicloud sdk
 

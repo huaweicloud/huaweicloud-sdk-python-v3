@@ -25,7 +25,7 @@ class BatchDeleteDesktopNamePolicyReq:
     }
 
     def __init__(self, policy_ids=None):
-        """BatchDeleteDesktopNamePolicyReq
+        r"""BatchDeleteDesktopNamePolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteDesktopNamePolicyReq:
 
     @property
     def policy_ids(self):
-        """Gets the policy_ids of this BatchDeleteDesktopNamePolicyReq.
+        r"""Gets the policy_ids of this BatchDeleteDesktopNamePolicyReq.
 
         策略id数组，最多支持50。
 
@@ -54,7 +54,7 @@ class BatchDeleteDesktopNamePolicyReq:
 
     @policy_ids.setter
     def policy_ids(self, policy_ids):
-        """Sets the policy_ids of this BatchDeleteDesktopNamePolicyReq.
+        r"""Sets the policy_ids of this BatchDeleteDesktopNamePolicyReq.
 
         策略id数组，最多支持50。
 

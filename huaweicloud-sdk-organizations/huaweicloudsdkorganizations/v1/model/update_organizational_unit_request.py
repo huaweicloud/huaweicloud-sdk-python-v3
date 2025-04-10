@@ -30,7 +30,7 @@ class UpdateOrganizationalUnitRequest:
     }
 
     def __init__(self, x_security_token=None, organizational_unit_id=None, body=None):
-        """UpdateOrganizationalUnitRequest
+        r"""UpdateOrganizationalUnitRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateOrganizationalUnitRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this UpdateOrganizationalUnitRequest.
+        r"""Gets the x_security_token of this UpdateOrganizationalUnitRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class UpdateOrganizationalUnitRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this UpdateOrganizationalUnitRequest.
+        r"""Sets the x_security_token of this UpdateOrganizationalUnitRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class UpdateOrganizationalUnitRequest:
 
     @property
     def organizational_unit_id(self):
-        """Gets the organizational_unit_id of this UpdateOrganizationalUnitRequest.
+        r"""Gets the organizational_unit_id of this UpdateOrganizationalUnitRequest.
 
         与组织单元关联的唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class UpdateOrganizationalUnitRequest:
 
     @organizational_unit_id.setter
     def organizational_unit_id(self, organizational_unit_id):
-        """Sets the organizational_unit_id of this UpdateOrganizationalUnitRequest.
+        r"""Sets the organizational_unit_id of this UpdateOrganizationalUnitRequest.
 
         与组织单元关联的唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class UpdateOrganizationalUnitRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOrganizationalUnitRequest.
+        r"""Gets the body of this UpdateOrganizationalUnitRequest.
 
         :return: The body of this UpdateOrganizationalUnitRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateOrganizationalUnitReqBody`
@@ -110,7 +110,7 @@ class UpdateOrganizationalUnitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOrganizationalUnitRequest.
+        r"""Sets the body of this UpdateOrganizationalUnitRequest.
 
         :param body: The body of this UpdateOrganizationalUnitRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.UpdateOrganizationalUnitReqBody`

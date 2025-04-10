@@ -39,7 +39,7 @@ class ListLtsErrorLogsRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None, limit=None, line_num=None, severity=None, search_type=None, node_id=None, keywords=None):
-        """ListLtsErrorLogsRequestBody
+        r"""ListLtsErrorLogsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListLtsErrorLogsRequestBody.
+        r"""Gets the start_time of this ListLtsErrorLogsRequestBody.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：开始时间不得早于当前时间30天。
 
@@ -100,7 +100,7 @@ class ListLtsErrorLogsRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListLtsErrorLogsRequestBody.
+        r"""Sets the start_time of this ListLtsErrorLogsRequestBody.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：开始时间不得早于当前时间30天。
 
@@ -111,7 +111,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListLtsErrorLogsRequestBody.
+        r"""Gets the end_time of this ListLtsErrorLogsRequestBody.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：结束时间不能晚于当前时间。
 
@@ -122,7 +122,7 @@ class ListLtsErrorLogsRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListLtsErrorLogsRequestBody.
+        r"""Sets the end_time of this ListLtsErrorLogsRequestBody.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：结束时间不能晚于当前时间。
 
@@ -133,7 +133,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLtsErrorLogsRequestBody.
+        r"""Gets the limit of this ListLtsErrorLogsRequestBody.
 
         表示每次查询的日志条数，最大限制100条。
 
@@ -144,7 +144,7 @@ class ListLtsErrorLogsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLtsErrorLogsRequestBody.
+        r"""Sets the limit of this ListLtsErrorLogsRequestBody.
 
         表示每次查询的日志条数，最大限制100条。
 
@@ -155,7 +155,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ListLtsErrorLogsRequestBody.
+        r"""Gets the line_num of this ListLtsErrorLogsRequestBody.
 
         日志单行序列号，第一次查询时不需要此参数，下一页查询时需要使用，可从上一次查询的返回信息中获取。 说明：当次查询从line_num的下一条日志开始查询，不包含当前line_num日志。
 
@@ -166,7 +166,7 @@ class ListLtsErrorLogsRequestBody:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ListLtsErrorLogsRequestBody.
+        r"""Sets the line_num of this ListLtsErrorLogsRequestBody.
 
         日志单行序列号，第一次查询时不需要此参数，下一页查询时需要使用，可从上一次查询的返回信息中获取。 说明：当次查询从line_num的下一条日志开始查询，不包含当前line_num日志。
 
@@ -177,7 +177,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def severity(self):
-        """Gets the severity of this ListLtsErrorLogsRequestBody.
+        r"""Gets the severity of this ListLtsErrorLogsRequestBody.
 
         日志级别，取空值表示查询所有日志级别。
 
@@ -188,7 +188,7 @@ class ListLtsErrorLogsRequestBody:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListLtsErrorLogsRequestBody.
+        r"""Sets the severity of this ListLtsErrorLogsRequestBody.
 
         日志级别，取空值表示查询所有日志级别。
 
@@ -199,7 +199,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def search_type(self):
-        """Gets the search_type of this ListLtsErrorLogsRequestBody.
+        r"""Gets the search_type of this ListLtsErrorLogsRequestBody.
 
         日志查询方式，需结合line_num使用, 以line_num的日志为起始点: - 取值\"backwards\"时，表示查询上一页limit大小的日志 - 取值\"forwards\"时，表示查询下一页limit大小的日志 - 不传默认\"forwards\"
 
@@ -210,7 +210,7 @@ class ListLtsErrorLogsRequestBody:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this ListLtsErrorLogsRequestBody.
+        r"""Sets the search_type of this ListLtsErrorLogsRequestBody.
 
         日志查询方式，需结合line_num使用, 以line_num的日志为起始点: - 取值\"backwards\"时，表示查询上一页limit大小的日志 - 取值\"forwards\"时，表示查询下一页limit大小的日志 - 不传默认\"forwards\"
 
@@ -221,7 +221,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListLtsErrorLogsRequestBody.
+        r"""Gets the node_id of this ListLtsErrorLogsRequestBody.
 
         节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
 
@@ -232,7 +232,7 @@ class ListLtsErrorLogsRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListLtsErrorLogsRequestBody.
+        r"""Sets the node_id of this ListLtsErrorLogsRequestBody.
 
         节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
 
@@ -243,7 +243,7 @@ class ListLtsErrorLogsRequestBody:
 
     @property
     def keywords(self):
-        """Gets the keywords of this ListLtsErrorLogsRequestBody.
+        r"""Gets the keywords of this ListLtsErrorLogsRequestBody.
 
         根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
 
@@ -254,7 +254,7 @@ class ListLtsErrorLogsRequestBody:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this ListLtsErrorLogsRequestBody.
+        r"""Sets the keywords of this ListLtsErrorLogsRequestBody.
 
         根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
 

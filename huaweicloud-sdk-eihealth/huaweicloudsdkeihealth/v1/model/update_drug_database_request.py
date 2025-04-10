@@ -27,7 +27,7 @@ class UpdateDrugDatabaseRequest:
     }
 
     def __init__(self, database_id=None, body=None):
-        """UpdateDrugDatabaseRequest
+        r"""UpdateDrugDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDrugDatabaseRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this UpdateDrugDatabaseRequest.
+        r"""Gets the database_id of this UpdateDrugDatabaseRequest.
 
         数据库id
 
@@ -60,7 +60,7 @@ class UpdateDrugDatabaseRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this UpdateDrugDatabaseRequest.
+        r"""Sets the database_id of this UpdateDrugDatabaseRequest.
 
         数据库id
 
@@ -71,7 +71,7 @@ class UpdateDrugDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDrugDatabaseRequest.
+        r"""Gets the body of this UpdateDrugDatabaseRequest.
 
         :return: The body of this UpdateDrugDatabaseRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDrugDatabaseReq`
@@ -80,7 +80,7 @@ class UpdateDrugDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDrugDatabaseRequest.
+        r"""Sets the body of this UpdateDrugDatabaseRequest.
 
         :param body: The body of this UpdateDrugDatabaseRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateDrugDatabaseReq`

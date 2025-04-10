@@ -25,7 +25,7 @@ class CreateAlarmRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAlarmRequest
+        r"""CreateAlarmRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAlarmRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAlarmRequest.
+        r"""Gets the body of this CreateAlarmRequest.
 
         :return: The body of this CreateAlarmRequest.
         :rtype: :class:`huaweicloudsdkces.v1.CreateAlarmRequestBody`
@@ -52,7 +52,7 @@ class CreateAlarmRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAlarmRequest.
+        r"""Sets the body of this CreateAlarmRequest.
 
         :param body: The body of this CreateAlarmRequest.
         :type body: :class:`huaweicloudsdkces.v1.CreateAlarmRequestBody`

@@ -27,7 +27,7 @@ class DeletePermRuleRequest:
     }
 
     def __init__(self, share_id=None, rule_id=None):
-        """DeletePermRuleRequest
+        r"""DeletePermRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePermRuleRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this DeletePermRuleRequest.
+        r"""Gets the share_id of this DeletePermRuleRequest.
 
         文件系统id
 
@@ -59,7 +59,7 @@ class DeletePermRuleRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this DeletePermRuleRequest.
+        r"""Sets the share_id of this DeletePermRuleRequest.
 
         文件系统id
 
@@ -70,7 +70,7 @@ class DeletePermRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeletePermRuleRequest.
+        r"""Gets the rule_id of this DeletePermRuleRequest.
 
         权限规则id
 
@@ -81,7 +81,7 @@ class DeletePermRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeletePermRuleRequest.
+        r"""Sets the rule_id of this DeletePermRuleRequest.
 
         权限规则id
 

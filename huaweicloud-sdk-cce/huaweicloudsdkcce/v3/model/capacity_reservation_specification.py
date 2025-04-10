@@ -27,7 +27,7 @@ class CapacityReservationSpecification:
     }
 
     def __init__(self, id=None, preference=None):
-        """CapacityReservationSpecification
+        r"""CapacityReservationSpecification
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CapacityReservationSpecification:
 
     @property
     def id(self):
-        """Gets the id of this CapacityReservationSpecification.
+        r"""Gets the id of this CapacityReservationSpecification.
 
         私有池id，preference为none时忽略该值
 
@@ -61,7 +61,7 @@ class CapacityReservationSpecification:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CapacityReservationSpecification.
+        r"""Sets the id of this CapacityReservationSpecification.
 
         私有池id，preference为none时忽略该值
 
@@ -72,7 +72,7 @@ class CapacityReservationSpecification:
 
     @property
     def preference(self):
-        """Gets the preference of this CapacityReservationSpecification.
+        r"""Gets the preference of this CapacityReservationSpecification.
 
         私有池容量选项，为 none 时表示不指定容量预留，为 targeted 时表示指定容量预留，此时 id 不能为空
 
@@ -83,7 +83,7 @@ class CapacityReservationSpecification:
 
     @preference.setter
     def preference(self, preference):
-        """Sets the preference of this CapacityReservationSpecification.
+        r"""Sets the preference of this CapacityReservationSpecification.
 
         私有池容量选项，为 none 时表示不指定容量预留，为 targeted 时表示指定容量预留，此时 id 不能为空
 

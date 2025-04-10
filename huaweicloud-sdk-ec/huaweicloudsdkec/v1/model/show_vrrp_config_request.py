@@ -25,7 +25,7 @@ class ShowVrrpConfigRequest:
     }
 
     def __init__(self, ieg_id=None):
-        """ShowVrrpConfigRequest
+        r"""ShowVrrpConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVrrpConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ShowVrrpConfigRequest.
+        r"""Gets the ieg_id of this ShowVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -53,7 +53,7 @@ class ShowVrrpConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ShowVrrpConfigRequest.
+        r"""Sets the ieg_id of this ShowVrrpConfigRequest.
 
         智能企业网关ID
 

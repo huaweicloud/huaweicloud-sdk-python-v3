@@ -28,7 +28,7 @@ class CreateScheduleRecordTasksResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, x_request_id=None):
-        """CreateScheduleRecordTasksResponse
+        r"""CreateScheduleRecordTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateScheduleRecordTasksResponse.
+        r"""Gets the task_id of this CreateScheduleRecordTasksResponse.
 
         创建成功的任务ID
 
@@ -62,7 +62,7 @@ class CreateScheduleRecordTasksResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateScheduleRecordTasksResponse.
+        r"""Sets the task_id of this CreateScheduleRecordTasksResponse.
 
         创建成功的任务ID
 
@@ -73,7 +73,7 @@ class CreateScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateScheduleRecordTasksResponse.
+        r"""Gets the x_request_id of this CreateScheduleRecordTasksResponse.
 
         :return: The x_request_id of this CreateScheduleRecordTasksResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateScheduleRecordTasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateScheduleRecordTasksResponse.
+        r"""Sets the x_request_id of this CreateScheduleRecordTasksResponse.
 
         :param x_request_id: The x_request_id of this CreateScheduleRecordTasksResponse.
         :type x_request_id: str

@@ -28,7 +28,7 @@ class RunTtsResponse(SdkResponse):
     }
 
     def __init__(self, trace_id=None, result=None):
-        """RunTtsResponse
+        r"""RunTtsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunTtsResponse(SdkResponse):
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this RunTtsResponse.
+        r"""Gets the trace_id of this RunTtsResponse.
 
         服务内部的令牌，可用于在日志中追溯具体流程。  在某些错误情况下可能没有此令牌字符串。
 
@@ -62,7 +62,7 @@ class RunTtsResponse(SdkResponse):
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this RunTtsResponse.
+        r"""Sets the trace_id of this RunTtsResponse.
 
         服务内部的令牌，可用于在日志中追溯具体流程。  在某些错误情况下可能没有此令牌字符串。
 
@@ -73,7 +73,7 @@ class RunTtsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunTtsResponse.
+        r"""Gets the result of this RunTtsResponse.
 
         :return: The result of this RunTtsResponse.
         :rtype: :class:`huaweicloudsdksis.v1.CustomResult`
@@ -82,7 +82,7 @@ class RunTtsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunTtsResponse.
+        r"""Sets the result of this RunTtsResponse.
 
         :param result: The result of this RunTtsResponse.
         :type result: :class:`huaweicloudsdksis.v1.CustomResult`

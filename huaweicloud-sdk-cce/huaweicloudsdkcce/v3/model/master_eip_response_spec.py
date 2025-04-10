@@ -29,7 +29,7 @@ class MasterEIPResponseSpec:
     }
 
     def __init__(self, action=None, spec=None, elastic_ip=None):
-        """MasterEIPResponseSpec
+        r"""MasterEIPResponseSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MasterEIPResponseSpec:
 
     @property
     def action(self):
-        """Gets the action of this MasterEIPResponseSpec.
+        r"""Gets the action of this MasterEIPResponseSpec.
 
         绑定动作
 
@@ -68,7 +68,7 @@ class MasterEIPResponseSpec:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this MasterEIPResponseSpec.
+        r"""Sets the action of this MasterEIPResponseSpec.
 
         绑定动作
 
@@ -79,7 +79,7 @@ class MasterEIPResponseSpec:
 
     @property
     def spec(self):
-        """Gets the spec of this MasterEIPResponseSpec.
+        r"""Gets the spec of this MasterEIPResponseSpec.
 
         :return: The spec of this MasterEIPResponseSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpecSpec`
@@ -88,7 +88,7 @@ class MasterEIPResponseSpec:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this MasterEIPResponseSpec.
+        r"""Sets the spec of this MasterEIPResponseSpec.
 
         :param spec: The spec of this MasterEIPResponseSpec.
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpecSpec`
@@ -97,7 +97,7 @@ class MasterEIPResponseSpec:
 
     @property
     def elastic_ip(self):
-        """Gets the elastic_ip of this MasterEIPResponseSpec.
+        r"""Gets the elastic_ip of this MasterEIPResponseSpec.
 
         弹性公网IP
 
@@ -108,7 +108,7 @@ class MasterEIPResponseSpec:
 
     @elastic_ip.setter
     def elastic_ip(self, elastic_ip):
-        """Sets the elastic_ip of this MasterEIPResponseSpec.
+        r"""Sets the elastic_ip of this MasterEIPResponseSpec.
 
         弹性公网IP
 

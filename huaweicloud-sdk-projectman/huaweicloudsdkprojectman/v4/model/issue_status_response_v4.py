@@ -35,7 +35,7 @@ class IssueStatusResponseV4:
     }
 
     def __init__(self, closed_num=None, new_num=None, process_num=None, rejected_num=None, solved_num=None, test_num=None):
-        """IssueStatusResponseV4
+        r"""IssueStatusResponseV4
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IssueStatusResponseV4:
 
     @property
     def closed_num(self):
-        """Gets the closed_num of this IssueStatusResponseV4.
+        r"""Gets the closed_num of this IssueStatusResponseV4.
 
         已关闭数量
 
@@ -89,7 +89,7 @@ class IssueStatusResponseV4:
 
     @closed_num.setter
     def closed_num(self, closed_num):
-        """Sets the closed_num of this IssueStatusResponseV4.
+        r"""Sets the closed_num of this IssueStatusResponseV4.
 
         已关闭数量
 
@@ -100,7 +100,7 @@ class IssueStatusResponseV4:
 
     @property
     def new_num(self):
-        """Gets the new_num of this IssueStatusResponseV4.
+        r"""Gets the new_num of this IssueStatusResponseV4.
 
         新建的数量
 
@@ -111,7 +111,7 @@ class IssueStatusResponseV4:
 
     @new_num.setter
     def new_num(self, new_num):
-        """Sets the new_num of this IssueStatusResponseV4.
+        r"""Sets the new_num of this IssueStatusResponseV4.
 
         新建的数量
 
@@ -122,7 +122,7 @@ class IssueStatusResponseV4:
 
     @property
     def process_num(self):
-        """Gets the process_num of this IssueStatusResponseV4.
+        r"""Gets the process_num of this IssueStatusResponseV4.
 
         开发中的数量
 
@@ -133,7 +133,7 @@ class IssueStatusResponseV4:
 
     @process_num.setter
     def process_num(self, process_num):
-        """Sets the process_num of this IssueStatusResponseV4.
+        r"""Sets the process_num of this IssueStatusResponseV4.
 
         开发中的数量
 
@@ -144,7 +144,7 @@ class IssueStatusResponseV4:
 
     @property
     def rejected_num(self):
-        """Gets the rejected_num of this IssueStatusResponseV4.
+        r"""Gets the rejected_num of this IssueStatusResponseV4.
 
         已拒绝数量
 
@@ -155,7 +155,7 @@ class IssueStatusResponseV4:
 
     @rejected_num.setter
     def rejected_num(self, rejected_num):
-        """Sets the rejected_num of this IssueStatusResponseV4.
+        r"""Sets the rejected_num of this IssueStatusResponseV4.
 
         已拒绝数量
 
@@ -166,7 +166,7 @@ class IssueStatusResponseV4:
 
     @property
     def solved_num(self):
-        """Gets the solved_num of this IssueStatusResponseV4.
+        r"""Gets the solved_num of this IssueStatusResponseV4.
 
         已解决数量
 
@@ -177,7 +177,7 @@ class IssueStatusResponseV4:
 
     @solved_num.setter
     def solved_num(self, solved_num):
-        """Sets the solved_num of this IssueStatusResponseV4.
+        r"""Sets the solved_num of this IssueStatusResponseV4.
 
         已解决数量
 
@@ -188,7 +188,7 @@ class IssueStatusResponseV4:
 
     @property
     def test_num(self):
-        """Gets the test_num of this IssueStatusResponseV4.
+        r"""Gets the test_num of this IssueStatusResponseV4.
 
         测试中的数量
 
@@ -199,7 +199,7 @@ class IssueStatusResponseV4:
 
     @test_num.setter
     def test_num(self, test_num):
-        """Sets the test_num of this IssueStatusResponseV4.
+        r"""Sets the test_num of this IssueStatusResponseV4.
 
         测试中的数量
 

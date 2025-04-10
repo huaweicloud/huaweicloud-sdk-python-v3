@@ -29,7 +29,7 @@ class UpdateNatMappingConfigsReq:
     }
 
     def __init__(self, site_id=None, nat_on=None, nat_vag_maps=None):
-        """UpdateNatMappingConfigsReq
+        r"""UpdateNatMappingConfigsReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateNatMappingConfigsReq:
 
     @property
     def site_id(self):
-        """Gets the site_id of this UpdateNatMappingConfigsReq.
+        r"""Gets the site_id of this UpdateNatMappingConfigsReq.
 
         站点ID。
 
@@ -68,7 +68,7 @@ class UpdateNatMappingConfigsReq:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this UpdateNatMappingConfigsReq.
+        r"""Sets the site_id of this UpdateNatMappingConfigsReq.
 
         站点ID。
 
@@ -79,7 +79,7 @@ class UpdateNatMappingConfigsReq:
 
     @property
     def nat_on(self):
-        """Gets the nat_on of this UpdateNatMappingConfigsReq.
+        r"""Gets the nat_on of this UpdateNatMappingConfigsReq.
 
         是否开启nat映射。
 
@@ -90,7 +90,7 @@ class UpdateNatMappingConfigsReq:
 
     @nat_on.setter
     def nat_on(self, nat_on):
-        """Sets the nat_on of this UpdateNatMappingConfigsReq.
+        r"""Sets the nat_on of this UpdateNatMappingConfigsReq.
 
         是否开启nat映射。
 
@@ -101,7 +101,7 @@ class UpdateNatMappingConfigsReq:
 
     @property
     def nat_vag_maps(self):
-        """Gets the nat_vag_maps of this UpdateNatMappingConfigsReq.
+        r"""Gets the nat_vag_maps of this UpdateNatMappingConfigsReq.
 
         NAT映射配置表。
 
@@ -112,7 +112,7 @@ class UpdateNatMappingConfigsReq:
 
     @nat_vag_maps.setter
     def nat_vag_maps(self, nat_vag_maps):
-        """Sets the nat_vag_maps of this UpdateNatMappingConfigsReq.
+        r"""Sets the nat_vag_maps of this UpdateNatMappingConfigsReq.
 
         NAT映射配置表。
 

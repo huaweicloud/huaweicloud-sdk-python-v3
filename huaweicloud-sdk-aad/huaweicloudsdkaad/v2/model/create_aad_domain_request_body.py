@@ -43,7 +43,7 @@ class CreateAadDomainRequestBody:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, ips=None, real_server_type=None, port_http=None, port_https=None, real_server=None, overseas_type=None, cert_name=None, waf_switch=None):
-        """CreateAadDomainRequestBody
+        r"""CreateAadDomainRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateAadDomainRequestBody.
+        r"""Gets the domain_name of this CreateAadDomainRequestBody.
 
         域名
 
@@ -110,7 +110,7 @@ class CreateAadDomainRequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateAadDomainRequestBody.
+        r"""Sets the domain_name of this CreateAadDomainRequestBody.
 
         域名
 
@@ -121,7 +121,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateAadDomainRequestBody.
+        r"""Gets the enterprise_project_id of this CreateAadDomainRequestBody.
 
         企业项目id，与接入的高防实例所属企业项目保持一致。可在华为云EPS服务中查看企业项目id，default企业项目id为\"0\"。
 
@@ -132,7 +132,7 @@ class CreateAadDomainRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateAadDomainRequestBody.
+        r"""Sets the enterprise_project_id of this CreateAadDomainRequestBody.
 
         企业项目id，与接入的高防实例所属企业项目保持一致。可在华为云EPS服务中查看企业项目id，default企业项目id为\"0\"。
 
@@ -143,7 +143,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def ips(self):
-        """Gets the ips of this CreateAadDomainRequestBody.
+        r"""Gets the ips of this CreateAadDomainRequestBody.
 
         高防实例ip列表。多个高防实例ip必须属于同一企业项目。
 
@@ -154,7 +154,7 @@ class CreateAadDomainRequestBody:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this CreateAadDomainRequestBody.
+        r"""Sets the ips of this CreateAadDomainRequestBody.
 
         高防实例ip列表。多个高防实例ip必须属于同一企业项目。
 
@@ -165,7 +165,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def real_server_type(self):
-        """Gets the real_server_type of this CreateAadDomainRequestBody.
+        r"""Gets the real_server_type of this CreateAadDomainRequestBody.
 
         源站类型。 0 - 源站IP， 1 - 源站域名。
 
@@ -176,7 +176,7 @@ class CreateAadDomainRequestBody:
 
     @real_server_type.setter
     def real_server_type(self, real_server_type):
-        """Sets the real_server_type of this CreateAadDomainRequestBody.
+        r"""Sets the real_server_type of this CreateAadDomainRequestBody.
 
         源站类型。 0 - 源站IP， 1 - 源站域名。
 
@@ -187,7 +187,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def port_http(self):
-        """Gets the port_http of this CreateAadDomainRequestBody.
+        r"""Gets the port_http of this CreateAadDomainRequestBody.
 
         HTTP端口，与port_https不能同时为空。DDoS高防支持的HTTP端口可在控制台查看。
 
@@ -198,7 +198,7 @@ class CreateAadDomainRequestBody:
 
     @port_http.setter
     def port_http(self, port_http):
-        """Sets the port_http of this CreateAadDomainRequestBody.
+        r"""Sets the port_http of this CreateAadDomainRequestBody.
 
         HTTP端口，与port_https不能同时为空。DDoS高防支持的HTTP端口可在控制台查看。
 
@@ -209,7 +209,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def port_https(self):
-        """Gets the port_https of this CreateAadDomainRequestBody.
+        r"""Gets the port_https of this CreateAadDomainRequestBody.
 
         HTTPS端口，与port_http不能同时为空。DDoS高防支持的HTTPS端口可在控制台查看。
 
@@ -220,7 +220,7 @@ class CreateAadDomainRequestBody:
 
     @port_https.setter
     def port_https(self, port_https):
-        """Sets the port_https of this CreateAadDomainRequestBody.
+        r"""Sets the port_https of this CreateAadDomainRequestBody.
 
         HTTPS端口，与port_http不能同时为空。DDoS高防支持的HTTPS端口可在控制台查看。
 
@@ -231,7 +231,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def real_server(self):
-        """Gets the real_server of this CreateAadDomainRequestBody.
+        r"""Gets the real_server of this CreateAadDomainRequestBody.
 
         源站（源站ip/源站域名）
 
@@ -242,7 +242,7 @@ class CreateAadDomainRequestBody:
 
     @real_server.setter
     def real_server(self, real_server):
-        """Sets the real_server of this CreateAadDomainRequestBody.
+        r"""Sets the real_server of this CreateAadDomainRequestBody.
 
         源站（源站ip/源站域名）
 
@@ -253,7 +253,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this CreateAadDomainRequestBody.
+        r"""Gets the overseas_type of this CreateAadDomainRequestBody.
 
         防护区域，0-大陆，1-海外
 
@@ -264,7 +264,7 @@ class CreateAadDomainRequestBody:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this CreateAadDomainRequestBody.
+        r"""Sets the overseas_type of this CreateAadDomainRequestBody.
 
         防护区域，0-大陆，1-海外
 
@@ -275,7 +275,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this CreateAadDomainRequestBody.
+        r"""Gets the cert_name of this CreateAadDomainRequestBody.
 
         证书名称（必须是已经存在的证书）
 
@@ -286,7 +286,7 @@ class CreateAadDomainRequestBody:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this CreateAadDomainRequestBody.
+        r"""Sets the cert_name of this CreateAadDomainRequestBody.
 
         证书名称（必须是已经存在的证书）
 
@@ -297,7 +297,7 @@ class CreateAadDomainRequestBody:
 
     @property
     def waf_switch(self):
-        """Gets the waf_switch of this CreateAadDomainRequestBody.
+        r"""Gets the waf_switch of this CreateAadDomainRequestBody.
 
         开启0，关闭1
 
@@ -308,7 +308,7 @@ class CreateAadDomainRequestBody:
 
     @waf_switch.setter
     def waf_switch(self, waf_switch):
-        """Sets the waf_switch of this CreateAadDomainRequestBody.
+        r"""Sets the waf_switch of this CreateAadDomainRequestBody.
 
         开启0，关闭1
 

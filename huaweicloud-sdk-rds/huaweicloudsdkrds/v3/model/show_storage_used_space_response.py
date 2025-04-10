@@ -28,7 +28,7 @@ class ShowStorageUsedSpaceResponse(SdkResponse):
     }
 
     def __init__(self, node_id=None, used=None):
-        """ShowStorageUsedSpaceResponse
+        r"""ShowStorageUsedSpaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStorageUsedSpaceResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowStorageUsedSpaceResponse.
+        r"""Gets the node_id of this ShowStorageUsedSpaceResponse.
 
         节点id。
 
@@ -62,7 +62,7 @@ class ShowStorageUsedSpaceResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowStorageUsedSpaceResponse.
+        r"""Sets the node_id of this ShowStorageUsedSpaceResponse.
 
         节点id。
 
@@ -73,7 +73,7 @@ class ShowStorageUsedSpaceResponse(SdkResponse):
 
     @property
     def used(self):
-        """Gets the used of this ShowStorageUsedSpaceResponse.
+        r"""Gets the used of this ShowStorageUsedSpaceResponse.
 
         磁盘空间使用量。
 
@@ -84,7 +84,7 @@ class ShowStorageUsedSpaceResponse(SdkResponse):
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowStorageUsedSpaceResponse.
+        r"""Sets the used of this ShowStorageUsedSpaceResponse.
 
         磁盘空间使用量。
 

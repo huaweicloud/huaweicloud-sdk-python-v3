@@ -26,7 +26,7 @@ class ShowClusterEnterpriseProjectsResponse(SdkResponse):
     }
 
     def __init__(self, sys_tags=None):
-        """ShowClusterEnterpriseProjectsResponse
+        r"""ShowClusterEnterpriseProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClusterEnterpriseProjectsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowClusterEnterpriseProjectsResponse.
+        r"""Gets the sys_tags of this ShowClusterEnterpriseProjectsResponse.
 
         企业项目列表
 
@@ -55,7 +55,7 @@ class ShowClusterEnterpriseProjectsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowClusterEnterpriseProjectsResponse.
+        r"""Sets the sys_tags of this ShowClusterEnterpriseProjectsResponse.
 
         企业项目列表
 

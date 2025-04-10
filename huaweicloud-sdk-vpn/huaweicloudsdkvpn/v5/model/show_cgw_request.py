@@ -25,7 +25,7 @@ class ShowCgwRequest:
     }
 
     def __init__(self, customer_gateway_id=None):
-        """ShowCgwRequest
+        r"""ShowCgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCgwRequest:
 
     @property
     def customer_gateway_id(self):
-        """Gets the customer_gateway_id of this ShowCgwRequest.
+        r"""Gets the customer_gateway_id of this ShowCgwRequest.
 
         对端网关ID
 
@@ -53,7 +53,7 @@ class ShowCgwRequest:
 
     @customer_gateway_id.setter
     def customer_gateway_id(self, customer_gateway_id):
-        """Sets the customer_gateway_id of this ShowCgwRequest.
+        r"""Sets the customer_gateway_id of this ShowCgwRequest.
 
         对端网关ID
 

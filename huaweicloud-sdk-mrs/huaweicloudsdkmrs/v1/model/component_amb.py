@@ -31,7 +31,7 @@ class ComponentAmb:
     }
 
     def __init__(self, component_id=None, component_name=None, component_version=None, component_desc=None):
-        """ComponentAmb
+        r"""ComponentAmb
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ComponentAmb:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ComponentAmb.
+        r"""Gets the component_id of this ComponentAmb.
 
         组件ID。
 
@@ -75,7 +75,7 @@ class ComponentAmb:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ComponentAmb.
+        r"""Sets the component_id of this ComponentAmb.
 
         组件ID。
 
@@ -86,7 +86,7 @@ class ComponentAmb:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ComponentAmb.
+        r"""Gets the component_name of this ComponentAmb.
 
         组件名称。
 
@@ -97,7 +97,7 @@ class ComponentAmb:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ComponentAmb.
+        r"""Sets the component_name of this ComponentAmb.
 
         组件名称。
 
@@ -108,7 +108,7 @@ class ComponentAmb:
 
     @property
     def component_version(self):
-        """Gets the component_version of this ComponentAmb.
+        r"""Gets the component_version of this ComponentAmb.
 
         组件版本。
 
@@ -119,7 +119,7 @@ class ComponentAmb:
 
     @component_version.setter
     def component_version(self, component_version):
-        """Sets the component_version of this ComponentAmb.
+        r"""Sets the component_version of this ComponentAmb.
 
         组件版本。
 
@@ -130,7 +130,7 @@ class ComponentAmb:
 
     @property
     def component_desc(self):
-        """Gets the component_desc of this ComponentAmb.
+        r"""Gets the component_desc of this ComponentAmb.
 
         组件描述信息。
 
@@ -141,7 +141,7 @@ class ComponentAmb:
 
     @component_desc.setter
     def component_desc(self, component_desc):
-        """Sets the component_desc of this ComponentAmb.
+        r"""Sets the component_desc of this ComponentAmb.
 
         组件描述信息。
 

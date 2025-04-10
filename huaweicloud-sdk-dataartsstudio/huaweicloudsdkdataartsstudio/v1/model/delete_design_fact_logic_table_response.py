@@ -26,7 +26,7 @@ class DeleteDesignFactLogicTableResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignFactLogicTableResponse
+        r"""DeleteDesignFactLogicTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignFactLogicTableResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignFactLogicTableResponse.
+        r"""Gets the data of this DeleteDesignFactLogicTableResponse.
 
         :return: The data of this DeleteDesignFactLogicTableResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignFactLogicTableResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignFactLogicTableResponse.
+        r"""Sets the data of this DeleteDesignFactLogicTableResponse.
 
         :param data: The data of this DeleteDesignFactLogicTableResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

@@ -28,7 +28,7 @@ class CreateCentralNetworkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network=None):
-        """CreateCentralNetworkResponse
+        r"""CreateCentralNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCentralNetworkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateCentralNetworkResponse.
+        r"""Gets the request_id of this CreateCentralNetworkResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class CreateCentralNetworkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateCentralNetworkResponse.
+        r"""Sets the request_id of this CreateCentralNetworkResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class CreateCentralNetworkResponse(SdkResponse):
 
     @property
     def central_network(self):
-        """Gets the central_network of this CreateCentralNetworkResponse.
+        r"""Gets the central_network of this CreateCentralNetworkResponse.
 
         :return: The central_network of this CreateCentralNetworkResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetwork`
@@ -80,7 +80,7 @@ class CreateCentralNetworkResponse(SdkResponse):
 
     @central_network.setter
     def central_network(self, central_network):
-        """Sets the central_network of this CreateCentralNetworkResponse.
+        r"""Sets the central_network of this CreateCentralNetworkResponse.
 
         :param central_network: The central_network of this CreateCentralNetworkResponse.
         :type central_network: :class:`huaweicloudsdkcc.v3.CentralNetwork`

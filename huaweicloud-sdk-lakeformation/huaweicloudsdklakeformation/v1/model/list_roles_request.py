@@ -33,7 +33,7 @@ class ListRolesRequest:
     }
 
     def __init__(self, instance_id=None, role_pattern=None, limit=None, marker=None, reverse_page=None):
-        """ListRolesRequest
+        r"""ListRolesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRolesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRolesRequest.
+        r"""Gets the instance_id of this ListRolesRequest.
 
         实例ID
 
@@ -81,7 +81,7 @@ class ListRolesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRolesRequest.
+        r"""Sets the instance_id of this ListRolesRequest.
 
         实例ID
 
@@ -92,7 +92,7 @@ class ListRolesRequest:
 
     @property
     def role_pattern(self):
-        """Gets the role_pattern of this ListRolesRequest.
+        r"""Gets the role_pattern of this ListRolesRequest.
 
         模糊匹配角色名称
 
@@ -103,7 +103,7 @@ class ListRolesRequest:
 
     @role_pattern.setter
     def role_pattern(self, role_pattern):
-        """Sets the role_pattern of this ListRolesRequest.
+        r"""Sets the role_pattern of this ListRolesRequest.
 
         模糊匹配角色名称
 
@@ -114,7 +114,7 @@ class ListRolesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRolesRequest.
+        r"""Gets the limit of this ListRolesRequest.
 
         返回的条目数量
 
@@ -125,7 +125,7 @@ class ListRolesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRolesRequest.
+        r"""Sets the limit of this ListRolesRequest.
 
         返回的条目数量
 
@@ -136,7 +136,7 @@ class ListRolesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRolesRequest.
+        r"""Gets the marker of this ListRolesRequest.
 
         查询的起始记录ID
 
@@ -147,7 +147,7 @@ class ListRolesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRolesRequest.
+        r"""Sets the marker of this ListRolesRequest.
 
         查询的起始记录ID
 
@@ -158,7 +158,7 @@ class ListRolesRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListRolesRequest.
+        r"""Gets the reverse_page of this ListRolesRequest.
 
         是否查询上一页
 
@@ -169,7 +169,7 @@ class ListRolesRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListRolesRequest.
+        r"""Sets the reverse_page of this ListRolesRequest.
 
         是否查询上一页
 

@@ -30,7 +30,7 @@ class ListTemplatesV2Response(SdkResponse):
     }
 
     def __init__(self, count=None, invalid_count=None, templates=None):
-        """ListTemplatesV2Response
+        r"""ListTemplatesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTemplatesV2Response(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTemplatesV2Response.
+        r"""Gets the count of this ListTemplatesV2Response.
 
         返回模板的数量。
 
@@ -69,7 +69,7 @@ class ListTemplatesV2Response(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTemplatesV2Response.
+        r"""Sets the count of this ListTemplatesV2Response.
 
         返回模板的数量。
 
@@ -80,7 +80,7 @@ class ListTemplatesV2Response(SdkResponse):
 
     @property
     def invalid_count(self):
-        """Gets the invalid_count of this ListTemplatesV2Response.
+        r"""Gets the invalid_count of this ListTemplatesV2Response.
 
         返回关联了失效资源的模板数量。
 
@@ -91,7 +91,7 @@ class ListTemplatesV2Response(SdkResponse):
 
     @invalid_count.setter
     def invalid_count(self, invalid_count):
-        """Sets the invalid_count of this ListTemplatesV2Response.
+        r"""Sets the invalid_count of this ListTemplatesV2Response.
 
         返回关联了失效资源的模板数量。
 
@@ -102,7 +102,7 @@ class ListTemplatesV2Response(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListTemplatesV2Response.
+        r"""Gets the templates of this ListTemplatesV2Response.
 
         返回模板的列表。
 
@@ -113,7 +113,7 @@ class ListTemplatesV2Response(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListTemplatesV2Response.
+        r"""Sets the templates of this ListTemplatesV2Response.
 
         返回模板的列表。
 

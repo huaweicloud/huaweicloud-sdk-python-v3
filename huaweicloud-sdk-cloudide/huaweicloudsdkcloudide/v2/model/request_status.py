@@ -30,7 +30,7 @@ class RequestStatus:
     }
 
     def __init__(self):
-        """RequestStatus
+        r"""RequestStatus
 
         The model defined in huaweicloud sdk
 

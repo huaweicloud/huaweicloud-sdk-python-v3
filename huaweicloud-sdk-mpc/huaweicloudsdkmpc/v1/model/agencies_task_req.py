@@ -27,7 +27,7 @@ class AgenciesTaskReq:
     }
 
     def __init__(self, project_id=None, operate_type=None):
-        """AgenciesTaskReq
+        r"""AgenciesTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AgenciesTaskReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AgenciesTaskReq.
+        r"""Gets the project_id of this AgenciesTaskReq.
 
         委托任务租户Id
 
@@ -60,7 +60,7 @@ class AgenciesTaskReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AgenciesTaskReq.
+        r"""Sets the project_id of this AgenciesTaskReq.
 
         委托任务租户Id
 
@@ -71,7 +71,7 @@ class AgenciesTaskReq:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this AgenciesTaskReq.
+        r"""Gets the operate_type of this AgenciesTaskReq.
 
         操作标记，取值[CREATED,CANCELED]，CREATED表示授权, CANCELED表示取消授权 
 
@@ -82,7 +82,7 @@ class AgenciesTaskReq:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this AgenciesTaskReq.
+        r"""Sets the operate_type of this AgenciesTaskReq.
 
         操作标记，取值[CREATED,CANCELED]，CREATED表示授权, CANCELED表示取消授权 
 

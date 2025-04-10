@@ -27,7 +27,7 @@ class BatchCreateInstanceTagRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateInstanceTagRequest
+        r"""BatchCreateInstanceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateInstanceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateInstanceTagRequest.
+        r"""Gets the resource_id of this BatchCreateInstanceTagRequest.
 
         资源ID。(list接口获取)
 
@@ -60,7 +60,7 @@ class BatchCreateInstanceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateInstanceTagRequest.
+        r"""Sets the resource_id of this BatchCreateInstanceTagRequest.
 
         资源ID。(list接口获取)
 
@@ -71,7 +71,7 @@ class BatchCreateInstanceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateInstanceTagRequest.
+        r"""Gets the body of this BatchCreateInstanceTagRequest.
 
         :return: The body of this BatchCreateInstanceTagRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.CbsGetResourceIdTags`
@@ -80,7 +80,7 @@ class BatchCreateInstanceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateInstanceTagRequest.
+        r"""Sets the body of this BatchCreateInstanceTagRequest.
 
         :param body: The body of this BatchCreateInstanceTagRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.CbsGetResourceIdTags`

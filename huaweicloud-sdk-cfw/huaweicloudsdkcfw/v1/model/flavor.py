@@ -41,7 +41,7 @@ class Flavor:
     }
 
     def __init__(self, version=None, eip_count=None, vpc_count=None, bandwidth=None, log_storage=None, default_bandwidth=None, default_eip_count=None, default_log_storage=None, default_vpc_count=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Flavor:
 
     @property
     def version(self):
-        """Gets the version of this Flavor.
+        r"""Gets the version of this Flavor.
 
         防火墙版本，0：标准版，1：专业版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
 
@@ -110,7 +110,7 @@ class Flavor:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Flavor.
+        r"""Sets the version of this Flavor.
 
         防火墙版本，0：标准版，1：专业版，3：基础版，购买时，当防火墙“charge_mode”为“postPaid”时，仅支持专业版。“charge_mode”为“prePaid”时，支持标准版、专业版。
 
@@ -121,7 +121,7 @@ class Flavor:
 
     @property
     def eip_count(self):
-        """Gets the eip_count of this Flavor.
+        r"""Gets the eip_count of this Flavor.
 
         eip数量
 
@@ -132,7 +132,7 @@ class Flavor:
 
     @eip_count.setter
     def eip_count(self, eip_count):
-        """Sets the eip_count of this Flavor.
+        r"""Sets the eip_count of this Flavor.
 
         eip数量
 
@@ -143,7 +143,7 @@ class Flavor:
 
     @property
     def vpc_count(self):
-        """Gets the vpc_count of this Flavor.
+        r"""Gets the vpc_count of this Flavor.
 
         vpc数量
 
@@ -154,7 +154,7 @@ class Flavor:
 
     @vpc_count.setter
     def vpc_count(self, vpc_count):
-        """Sets the vpc_count of this Flavor.
+        r"""Sets the vpc_count of this Flavor.
 
         vpc数量
 
@@ -165,7 +165,7 @@ class Flavor:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this Flavor.
+        r"""Gets the bandwidth of this Flavor.
 
         带宽，单位为mbps
 
@@ -176,7 +176,7 @@ class Flavor:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this Flavor.
+        r"""Sets the bandwidth of this Flavor.
 
         带宽，单位为mbps
 
@@ -187,7 +187,7 @@ class Flavor:
 
     @property
     def log_storage(self):
-        """Gets the log_storage of this Flavor.
+        r"""Gets the log_storage of this Flavor.
 
         日志存储，单位为byte
 
@@ -198,7 +198,7 @@ class Flavor:
 
     @log_storage.setter
     def log_storage(self, log_storage):
-        """Sets the log_storage of this Flavor.
+        r"""Sets the log_storage of this Flavor.
 
         日志存储，单位为byte
 
@@ -209,7 +209,7 @@ class Flavor:
 
     @property
     def default_bandwidth(self):
-        """Gets the default_bandwidth of this Flavor.
+        r"""Gets the default_bandwidth of this Flavor.
 
         默认防火墙带宽，单位为mbps，标准版为10，专业版为50，按需专业版为200
 
@@ -220,7 +220,7 @@ class Flavor:
 
     @default_bandwidth.setter
     def default_bandwidth(self, default_bandwidth):
-        """Sets the default_bandwidth of this Flavor.
+        r"""Sets the default_bandwidth of this Flavor.
 
         默认防火墙带宽，单位为mbps，标准版为10，专业版为50，按需专业版为200
 
@@ -231,7 +231,7 @@ class Flavor:
 
     @property
     def default_eip_count(self):
-        """Gets the default_eip_count of this Flavor.
+        r"""Gets the default_eip_count of this Flavor.
 
         默认eip数，标准版为20，专业版为50，按需专业版为1000
 
@@ -242,7 +242,7 @@ class Flavor:
 
     @default_eip_count.setter
     def default_eip_count(self, default_eip_count):
-        """Sets the default_eip_count of this Flavor.
+        r"""Sets the default_eip_count of this Flavor.
 
         默认eip数，标准版为20，专业版为50，按需专业版为1000
 
@@ -253,7 +253,7 @@ class Flavor:
 
     @property
     def default_log_storage(self):
-        """Gets the default_log_storage of this Flavor.
+        r"""Gets the default_log_storage of this Flavor.
 
         默认日志存储，单位为byte，默认为0
 
@@ -264,7 +264,7 @@ class Flavor:
 
     @default_log_storage.setter
     def default_log_storage(self, default_log_storage):
-        """Sets the default_log_storage of this Flavor.
+        r"""Sets the default_log_storage of this Flavor.
 
         默认日志存储，单位为byte，默认为0
 
@@ -275,7 +275,7 @@ class Flavor:
 
     @property
     def default_vpc_count(self):
-        """Gets the default_vpc_count of this Flavor.
+        r"""Gets the default_vpc_count of this Flavor.
 
         默认vpc数，标准版为0，专业版为2，按需专业版为5
 
@@ -286,7 +286,7 @@ class Flavor:
 
     @default_vpc_count.setter
     def default_vpc_count(self, default_vpc_count):
-        """Sets the default_vpc_count of this Flavor.
+        r"""Sets the default_vpc_count of this Flavor.
 
         默认vpc数，标准版为0，专业版为2，按需专业版为5
 

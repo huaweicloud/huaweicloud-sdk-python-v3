@@ -49,7 +49,7 @@ class QuickImportImageByFileRequestBody:
     }
 
     def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, license_type=None, tags=None, type=None, enterprise_project_id=None, architecture=None, hw_firmware_type=None, os_type=None, image_tags=None):
-        """QuickImportImageByFileRequestBody
+        r"""QuickImportImageByFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this QuickImportImageByFileRequestBody.
+        r"""Gets the name of this QuickImportImageByFileRequestBody.
 
         镜像名称
 
@@ -134,7 +134,7 @@ class QuickImportImageByFileRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QuickImportImageByFileRequestBody.
+        r"""Sets the name of this QuickImportImageByFileRequestBody.
 
         镜像名称
 
@@ -145,7 +145,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this QuickImportImageByFileRequestBody.
+        r"""Gets the description of this QuickImportImageByFileRequestBody.
 
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -156,7 +156,7 @@ class QuickImportImageByFileRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QuickImportImageByFileRequestBody.
+        r"""Sets the description of this QuickImportImageByFileRequestBody.
 
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -167,7 +167,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def os_version(self):
-        """Gets the os_version of this QuickImportImageByFileRequestBody.
+        r"""Gets the os_version of this QuickImportImageByFileRequestBody.
 
         操作系统版本。使用上传至OBS桶中的外部镜像文件制作镜像时生效
 
@@ -178,7 +178,7 @@ class QuickImportImageByFileRequestBody:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this QuickImportImageByFileRequestBody.
+        r"""Sets the os_version of this QuickImportImageByFileRequestBody.
 
         操作系统版本。使用上传至OBS桶中的外部镜像文件制作镜像时生效
 
@@ -189,7 +189,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def image_url(self):
-        """Gets the image_url of this QuickImportImageByFileRequestBody.
+        r"""Gets the image_url of this QuickImportImageByFileRequestBody.
 
         OBS桶中外部镜像文件地址。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。格式为<OBS桶名>:<OBS镜像文件名称>。注意：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
@@ -200,7 +200,7 @@ class QuickImportImageByFileRequestBody:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this QuickImportImageByFileRequestBody.
+        r"""Sets the image_url of this QuickImportImageByFileRequestBody.
 
         OBS桶中外部镜像文件地址。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。格式为<OBS桶名>:<OBS镜像文件名称>。注意：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
@@ -211,7 +211,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this QuickImportImageByFileRequestBody.
+        r"""Gets the min_disk of this QuickImportImageByFileRequestBody.
 
         最小系统盘大小。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为1至1024GB。
 
@@ -222,7 +222,7 @@ class QuickImportImageByFileRequestBody:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this QuickImportImageByFileRequestBody.
+        r"""Sets the min_disk of this QuickImportImageByFileRequestBody.
 
         最小系统盘大小。在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为1至1024GB。
 
@@ -233,7 +233,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def license_type(self):
-        """Gets the license_type of this QuickImportImageByFileRequestBody.
+        r"""Gets the license_type of this QuickImportImageByFileRequestBody.
 
         操作系统使用的许可证类型。取值范围： platform：华为云官方许可证 byol：自带许可证（Bring Your Own License） 目前仅Windows操作系统支持设置该参数。
 
@@ -244,7 +244,7 @@ class QuickImportImageByFileRequestBody:
 
     @license_type.setter
     def license_type(self, license_type):
-        """Sets the license_type of this QuickImportImageByFileRequestBody.
+        r"""Sets the license_type of this QuickImportImageByFileRequestBody.
 
         操作系统使用的许可证类型。取值范围： platform：华为云官方许可证 byol：自带许可证（Bring Your Own License） 目前仅Windows操作系统支持设置该参数。
 
@@ -255,7 +255,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this QuickImportImageByFileRequestBody.
+        r"""Gets the tags of this QuickImportImageByFileRequestBody.
 
         镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
@@ -266,7 +266,7 @@ class QuickImportImageByFileRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QuickImportImageByFileRequestBody.
+        r"""Sets the tags of this QuickImportImageByFileRequestBody.
 
         镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
@@ -277,7 +277,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this QuickImportImageByFileRequestBody.
+        r"""Gets the type of this QuickImportImageByFileRequestBody.
 
         制作的镜像类型。系统盘镜像为ECS/BMS，数据盘镜像为DataImage. 制作数据盘镜像时该参数必选.
 
@@ -288,7 +288,7 @@ class QuickImportImageByFileRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuickImportImageByFileRequestBody.
+        r"""Sets the type of this QuickImportImageByFileRequestBody.
 
         制作的镜像类型。系统盘镜像为ECS/BMS，数据盘镜像为DataImage. 制作数据盘镜像时该参数必选.
 
@@ -299,7 +299,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QuickImportImageByFileRequestBody.
+        r"""Gets the enterprise_project_id of this QuickImportImageByFileRequestBody.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -310,7 +310,7 @@ class QuickImportImageByFileRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QuickImportImageByFileRequestBody.
+        r"""Sets the enterprise_project_id of this QuickImportImageByFileRequestBody.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -321,7 +321,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def architecture(self):
-        """Gets the architecture of this QuickImportImageByFileRequestBody.
+        r"""Gets the architecture of this QuickImportImageByFileRequestBody.
 
         镜像的架构类型。取值包括： x86 arm 默认使用“x86”。
 
@@ -332,7 +332,7 @@ class QuickImportImageByFileRequestBody:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this QuickImportImageByFileRequestBody.
+        r"""Sets the architecture of this QuickImportImageByFileRequestBody.
 
         镜像的架构类型。取值包括： x86 arm 默认使用“x86”。
 
@@ -343,7 +343,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this QuickImportImageByFileRequestBody.
+        r"""Gets the hw_firmware_type of this QuickImportImageByFileRequestBody.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -354,7 +354,7 @@ class QuickImportImageByFileRequestBody:
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this QuickImportImageByFileRequestBody.
+        r"""Sets the hw_firmware_type of this QuickImportImageByFileRequestBody.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -365,7 +365,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def os_type(self):
-        """Gets the os_type of this QuickImportImageByFileRequestBody.
+        r"""Gets the os_type of this QuickImportImageByFileRequestBody.
 
         操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
 
@@ -376,7 +376,7 @@ class QuickImportImageByFileRequestBody:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this QuickImportImageByFileRequestBody.
+        r"""Sets the os_type of this QuickImportImageByFileRequestBody.
 
         操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
 
@@ -387,7 +387,7 @@ class QuickImportImageByFileRequestBody:
 
     @property
     def image_tags(self):
-        """Gets the image_tags of this QuickImportImageByFileRequestBody.
+        r"""Gets the image_tags of this QuickImportImageByFileRequestBody.
 
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 
@@ -398,7 +398,7 @@ class QuickImportImageByFileRequestBody:
 
     @image_tags.setter
     def image_tags(self, image_tags):
-        """Sets the image_tags of this QuickImportImageByFileRequestBody.
+        r"""Sets the image_tags of this QuickImportImageByFileRequestBody.
 
         新规范的镜像标签列表。默认为空。 tags和image_tags只能使用一个。
 

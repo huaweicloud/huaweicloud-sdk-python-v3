@@ -25,7 +25,7 @@ class CommRequestTestCasePageParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestTestCasePageParam
+        r"""CommRequestTestCasePageParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestTestCasePageParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestTestCasePageParam.
+        r"""Gets the params of this CommRequestTestCasePageParam.
 
         :return: The params of this CommRequestTestCasePageParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCasePageParam`
@@ -51,7 +51,7 @@ class CommRequestTestCasePageParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestTestCasePageParam.
+        r"""Sets the params of this CommRequestTestCasePageParam.
 
         :param params: The params of this CommRequestTestCasePageParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.TestCasePageParam`

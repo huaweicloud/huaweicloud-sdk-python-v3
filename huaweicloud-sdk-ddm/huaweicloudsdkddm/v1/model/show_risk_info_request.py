@@ -25,7 +25,7 @@ class ShowRiskInfoRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowRiskInfoRequest
+        r"""ShowRiskInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRiskInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRiskInfoRequest.
+        r"""Gets the instance_id of this ShowRiskInfoRequest.
 
         DDM实例ID。
 
@@ -53,7 +53,7 @@ class ShowRiskInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRiskInfoRequest.
+        r"""Sets the instance_id of this ShowRiskInfoRequest.
 
         DDM实例ID。
 

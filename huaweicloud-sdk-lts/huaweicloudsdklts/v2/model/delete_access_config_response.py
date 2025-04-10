@@ -28,7 +28,7 @@ class DeleteAccessConfigResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total=None):
-        """DeleteAccessConfigResponse
+        r"""DeleteAccessConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteAccessConfigResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteAccessConfigResponse.
+        r"""Gets the result of this DeleteAccessConfigResponse.
 
         日志接入列表
 
@@ -62,7 +62,7 @@ class DeleteAccessConfigResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteAccessConfigResponse.
+        r"""Sets the result of this DeleteAccessConfigResponse.
 
         日志接入列表
 
@@ -73,7 +73,7 @@ class DeleteAccessConfigResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this DeleteAccessConfigResponse.
+        r"""Gets the total of this DeleteAccessConfigResponse.
 
         日志接入总数
 
@@ -84,7 +84,7 @@ class DeleteAccessConfigResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DeleteAccessConfigResponse.
+        r"""Sets the total of this DeleteAccessConfigResponse.
 
         日志接入总数
 

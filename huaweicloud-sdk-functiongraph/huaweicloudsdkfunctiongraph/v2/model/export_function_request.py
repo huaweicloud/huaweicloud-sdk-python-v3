@@ -31,7 +31,7 @@ class ExportFunctionRequest:
     }
 
     def __init__(self, function_urn=None, config=None, code=None, type=None):
-        """ExportFunctionRequest
+        r"""ExportFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ExportFunctionRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ExportFunctionRequest.
+        r"""Gets the function_urn of this ExportFunctionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -74,7 +74,7 @@ class ExportFunctionRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ExportFunctionRequest.
+        r"""Sets the function_urn of this ExportFunctionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -85,7 +85,7 @@ class ExportFunctionRequest:
 
     @property
     def config(self):
-        """Gets the config of this ExportFunctionRequest.
+        r"""Gets the config of this ExportFunctionRequest.
 
         是否导出函数配置，默认为false。若无type参数，则必填code=true或config=true至少一项。
 
@@ -96,7 +96,7 @@ class ExportFunctionRequest:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ExportFunctionRequest.
+        r"""Sets the config of this ExportFunctionRequest.
 
         是否导出函数配置，默认为false。若无type参数，则必填code=true或config=true至少一项。
 
@@ -107,7 +107,7 @@ class ExportFunctionRequest:
 
     @property
     def code(self):
-        """Gets the code of this ExportFunctionRequest.
+        r"""Gets the code of this ExportFunctionRequest.
 
         是否导出函数代码，默认为false。若无type参数，则必填code=true或config=true至少一项。
 
@@ -118,7 +118,7 @@ class ExportFunctionRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ExportFunctionRequest.
+        r"""Sets the code of this ExportFunctionRequest.
 
         是否导出函数代码，默认为false。若无type参数，则必填code=true或config=true至少一项。
 
@@ -129,7 +129,7 @@ class ExportFunctionRequest:
 
     @property
     def type(self):
-        """Gets the type of this ExportFunctionRequest.
+        r"""Gets the type of this ExportFunctionRequest.
 
         不兼容与code、config参数混用；type=code代表导出代码，type=config代码导出配置
 
@@ -140,7 +140,7 @@ class ExportFunctionRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExportFunctionRequest.
+        r"""Sets the type of this ExportFunctionRequest.
 
         不兼容与code、config参数混用；type=code代表导出代码，type=config代码导出配置
 

@@ -39,7 +39,7 @@ class GetDataStore:
     }
 
     def __init__(self, data_store_id=None, name=None, group_id=None, tags=None, metrics=None, properties=None, created_time=None, modified_time=None):
-        """GetDataStore
+        r"""GetDataStore
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class GetDataStore:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this GetDataStore.
+        r"""Gets the data_store_id of this GetDataStore.
 
         存储 ID
 
@@ -103,7 +103,7 @@ class GetDataStore:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this GetDataStore.
+        r"""Sets the data_store_id of this GetDataStore.
 
         存储 ID
 
@@ -114,7 +114,7 @@ class GetDataStore:
 
     @property
     def name(self):
-        """Gets the name of this GetDataStore.
+        r"""Gets the name of this GetDataStore.
 
         存储名称
 
@@ -125,7 +125,7 @@ class GetDataStore:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDataStore.
+        r"""Sets the name of this GetDataStore.
 
         存储名称
 
@@ -136,7 +136,7 @@ class GetDataStore:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GetDataStore.
+        r"""Gets the group_id of this GetDataStore.
 
         存储 ID
 
@@ -147,7 +147,7 @@ class GetDataStore:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GetDataStore.
+        r"""Sets the group_id of this GetDataStore.
 
         存储 ID
 
@@ -158,7 +158,7 @@ class GetDataStore:
 
     @property
     def tags(self):
-        """Gets the tags of this GetDataStore.
+        r"""Gets the tags of this GetDataStore.
 
         标签
 
@@ -169,7 +169,7 @@ class GetDataStore:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GetDataStore.
+        r"""Sets the tags of this GetDataStore.
 
         标签
 
@@ -180,7 +180,7 @@ class GetDataStore:
 
     @property
     def metrics(self):
-        """Gets the metrics of this GetDataStore.
+        r"""Gets the metrics of this GetDataStore.
 
         指标
 
@@ -191,7 +191,7 @@ class GetDataStore:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this GetDataStore.
+        r"""Sets the metrics of this GetDataStore.
 
         指标
 
@@ -202,7 +202,7 @@ class GetDataStore:
 
     @property
     def properties(self):
-        """Gets the properties of this GetDataStore.
+        r"""Gets the properties of this GetDataStore.
 
         属性
 
@@ -213,7 +213,7 @@ class GetDataStore:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this GetDataStore.
+        r"""Sets the properties of this GetDataStore.
 
         属性
 
@@ -224,7 +224,7 @@ class GetDataStore:
 
     @property
     def created_time(self):
-        """Gets the created_time of this GetDataStore.
+        r"""Gets the created_time of this GetDataStore.
 
         创建时间
 
@@ -235,7 +235,7 @@ class GetDataStore:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this GetDataStore.
+        r"""Sets the created_time of this GetDataStore.
 
         创建时间
 
@@ -246,7 +246,7 @@ class GetDataStore:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this GetDataStore.
+        r"""Gets the modified_time of this GetDataStore.
 
         更新时间
 
@@ -257,7 +257,7 @@ class GetDataStore:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this GetDataStore.
+        r"""Sets the modified_time of this GetDataStore.
 
         更新时间
 

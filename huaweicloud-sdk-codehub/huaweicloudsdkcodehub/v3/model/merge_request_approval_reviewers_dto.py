@@ -25,7 +25,7 @@ class MergeRequestApprovalReviewersDto:
     }
 
     def __init__(self, approval_merge_request_reviewers=None):
-        """MergeRequestApprovalReviewersDto
+        r"""MergeRequestApprovalReviewersDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MergeRequestApprovalReviewersDto:
 
     @property
     def approval_merge_request_reviewers(self):
-        """Gets the approval_merge_request_reviewers of this MergeRequestApprovalReviewersDto.
+        r"""Gets the approval_merge_request_reviewers of this MergeRequestApprovalReviewersDto.
 
         :return: The approval_merge_request_reviewers of this MergeRequestApprovalReviewersDto.
         :rtype: list[:class:`huaweicloudsdkcodehub.v3.ApprovalUserDto`]
@@ -52,7 +52,7 @@ class MergeRequestApprovalReviewersDto:
 
     @approval_merge_request_reviewers.setter
     def approval_merge_request_reviewers(self, approval_merge_request_reviewers):
-        """Sets the approval_merge_request_reviewers of this MergeRequestApprovalReviewersDto.
+        r"""Sets the approval_merge_request_reviewers of this MergeRequestApprovalReviewersDto.
 
         :param approval_merge_request_reviewers: The approval_merge_request_reviewers of this MergeRequestApprovalReviewersDto.
         :type approval_merge_request_reviewers: list[:class:`huaweicloudsdkcodehub.v3.ApprovalUserDto`]

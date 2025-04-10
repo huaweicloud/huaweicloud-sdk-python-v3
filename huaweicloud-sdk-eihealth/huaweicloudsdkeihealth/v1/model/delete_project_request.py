@@ -27,7 +27,7 @@ class DeleteProjectRequest:
     }
 
     def __init__(self, eihealth_project_id=None, x_delete_now=None):
-        """DeleteProjectRequest
+        r"""DeleteProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteProjectRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteProjectRequest.
+        r"""Gets the eihealth_project_id of this DeleteProjectRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class DeleteProjectRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteProjectRequest.
+        r"""Sets the eihealth_project_id of this DeleteProjectRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class DeleteProjectRequest:
 
     @property
     def x_delete_now(self):
-        """Gets the x_delete_now of this DeleteProjectRequest.
+        r"""Gets the x_delete_now of this DeleteProjectRequest.
 
         非核心项目删除立即删除标记
 
@@ -82,7 +82,7 @@ class DeleteProjectRequest:
 
     @x_delete_now.setter
     def x_delete_now(self, x_delete_now):
-        """Sets the x_delete_now of this DeleteProjectRequest.
+        r"""Sets the x_delete_now of this DeleteProjectRequest.
 
         非核心项目删除立即删除标记
 

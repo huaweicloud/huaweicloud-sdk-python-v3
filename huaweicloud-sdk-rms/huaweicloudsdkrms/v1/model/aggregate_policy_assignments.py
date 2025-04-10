@@ -31,7 +31,7 @@ class AggregatePolicyAssignments:
     }
 
     def __init__(self, policy_assignment_id=None, policy_assignment_name=None, compliance=None, account_id=None):
-        """AggregatePolicyAssignments
+        r"""AggregatePolicyAssignments
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AggregatePolicyAssignments:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this AggregatePolicyAssignments.
+        r"""Gets the policy_assignment_id of this AggregatePolicyAssignments.
 
         合规规则ID
 
@@ -75,7 +75,7 @@ class AggregatePolicyAssignments:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this AggregatePolicyAssignments.
+        r"""Sets the policy_assignment_id of this AggregatePolicyAssignments.
 
         合规规则ID
 
@@ -86,7 +86,7 @@ class AggregatePolicyAssignments:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this AggregatePolicyAssignments.
+        r"""Gets the policy_assignment_name of this AggregatePolicyAssignments.
 
         合规规则名称
 
@@ -97,7 +97,7 @@ class AggregatePolicyAssignments:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this AggregatePolicyAssignments.
+        r"""Sets the policy_assignment_name of this AggregatePolicyAssignments.
 
         合规规则名称
 
@@ -108,7 +108,7 @@ class AggregatePolicyAssignments:
 
     @property
     def compliance(self):
-        """Gets the compliance of this AggregatePolicyAssignments.
+        r"""Gets the compliance of this AggregatePolicyAssignments.
 
         :return: The compliance of this AggregatePolicyAssignments.
         :rtype: :class:`huaweicloudsdkrms.v1.Compliance`
@@ -117,7 +117,7 @@ class AggregatePolicyAssignments:
 
     @compliance.setter
     def compliance(self, compliance):
-        """Sets the compliance of this AggregatePolicyAssignments.
+        r"""Sets the compliance of this AggregatePolicyAssignments.
 
         :param compliance: The compliance of this AggregatePolicyAssignments.
         :type compliance: :class:`huaweicloudsdkrms.v1.Compliance`
@@ -126,7 +126,7 @@ class AggregatePolicyAssignments:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AggregatePolicyAssignments.
+        r"""Gets the account_id of this AggregatePolicyAssignments.
 
         源帐号ID。
 
@@ -137,7 +137,7 @@ class AggregatePolicyAssignments:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AggregatePolicyAssignments.
+        r"""Sets the account_id of this AggregatePolicyAssignments.
 
         源帐号ID。
 

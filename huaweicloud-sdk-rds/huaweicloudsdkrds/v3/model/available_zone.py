@@ -27,7 +27,7 @@ class AvailableZone:
     }
 
     def __init__(self, code=None, description=None):
-        """AvailableZone
+        r"""AvailableZone
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AvailableZone:
 
     @property
     def code(self):
-        """Gets the code of this AvailableZone.
+        r"""Gets the code of this AvailableZone.
 
         可用区编码。
 
@@ -59,7 +59,7 @@ class AvailableZone:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailableZone.
+        r"""Sets the code of this AvailableZone.
 
         可用区编码。
 
@@ -70,7 +70,7 @@ class AvailableZone:
 
     @property
     def description(self):
-        """Gets the description of this AvailableZone.
+        r"""Gets the description of this AvailableZone.
 
         可用区描述。
 
@@ -81,7 +81,7 @@ class AvailableZone:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AvailableZone.
+        r"""Sets the description of this AvailableZone.
 
         可用区描述。
 

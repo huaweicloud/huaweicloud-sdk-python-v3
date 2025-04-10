@@ -32,7 +32,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_policy_execute_log=None):
-        """ListScalingPolicyExecuteLogsResponse
+        r"""ListScalingPolicyExecuteLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListScalingPolicyExecuteLogsResponse.
+        r"""Gets the total_number of this ListScalingPolicyExecuteLogsResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListScalingPolicyExecuteLogsResponse.
+        r"""Sets the total_number of this ListScalingPolicyExecuteLogsResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingPolicyExecuteLogsResponse.
+        r"""Gets the start_number of this ListScalingPolicyExecuteLogsResponse.
 
         查询的起始行号。
 
@@ -98,7 +98,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingPolicyExecuteLogsResponse.
+        r"""Sets the start_number of this ListScalingPolicyExecuteLogsResponse.
 
         查询的起始行号。
 
@@ -109,7 +109,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingPolicyExecuteLogsResponse.
+        r"""Gets the limit of this ListScalingPolicyExecuteLogsResponse.
 
         查询记录数。
 
@@ -120,7 +120,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingPolicyExecuteLogsResponse.
+        r"""Sets the limit of this ListScalingPolicyExecuteLogsResponse.
 
         查询记录数。
 
@@ -131,7 +131,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @property
     def scaling_policy_execute_log(self):
-        """Gets the scaling_policy_execute_log of this ListScalingPolicyExecuteLogsResponse.
+        r"""Gets the scaling_policy_execute_log of this ListScalingPolicyExecuteLogsResponse.
 
         伸缩策略执行日志列表。
 
@@ -142,7 +142,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
 
     @scaling_policy_execute_log.setter
     def scaling_policy_execute_log(self, scaling_policy_execute_log):
-        """Sets the scaling_policy_execute_log of this ListScalingPolicyExecuteLogsResponse.
+        r"""Sets the scaling_policy_execute_log of this ListScalingPolicyExecuteLogsResponse.
 
         伸缩策略执行日志列表。
 

@@ -27,7 +27,7 @@ class DeleteMemberRequest:
     }
 
     def __init__(self, pool_id=None, member_id=None):
-        """DeleteMemberRequest
+        r"""DeleteMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteMemberRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this DeleteMemberRequest.
+        r"""Gets the pool_id of this DeleteMemberRequest.
 
         参数解释：后端服务器组ID。
 
@@ -59,7 +59,7 @@ class DeleteMemberRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this DeleteMemberRequest.
+        r"""Sets the pool_id of this DeleteMemberRequest.
 
         参数解释：后端服务器组ID。
 
@@ -70,7 +70,7 @@ class DeleteMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this DeleteMemberRequest.
+        r"""Gets the member_id of this DeleteMemberRequest.
 
         后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
 
@@ -81,7 +81,7 @@ class DeleteMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this DeleteMemberRequest.
+        r"""Sets the member_id of this DeleteMemberRequest.
 
         后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
 

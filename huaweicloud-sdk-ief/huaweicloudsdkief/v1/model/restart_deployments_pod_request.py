@@ -29,7 +29,7 @@ class RestartDeploymentsPodRequest:
     }
 
     def __init__(self, deployment_id=None, pod_name=None, ief_instance_id=None):
-        """RestartDeploymentsPodRequest
+        r"""RestartDeploymentsPodRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestartDeploymentsPodRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this RestartDeploymentsPodRequest.
+        r"""Gets the deployment_id of this RestartDeploymentsPodRequest.
 
         应用部署ID
 
@@ -66,7 +66,7 @@ class RestartDeploymentsPodRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this RestartDeploymentsPodRequest.
+        r"""Sets the deployment_id of this RestartDeploymentsPodRequest.
 
         应用部署ID
 
@@ -77,7 +77,7 @@ class RestartDeploymentsPodRequest:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this RestartDeploymentsPodRequest.
+        r"""Gets the pod_name of this RestartDeploymentsPodRequest.
 
         应用实例名称
 
@@ -88,7 +88,7 @@ class RestartDeploymentsPodRequest:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this RestartDeploymentsPodRequest.
+        r"""Sets the pod_name of this RestartDeploymentsPodRequest.
 
         应用实例名称
 
@@ -99,7 +99,7 @@ class RestartDeploymentsPodRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this RestartDeploymentsPodRequest.
+        r"""Gets the ief_instance_id of this RestartDeploymentsPodRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -110,7 +110,7 @@ class RestartDeploymentsPodRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this RestartDeploymentsPodRequest.
+        r"""Sets the ief_instance_id of this RestartDeploymentsPodRequest.
 
         铂金版实例ID，专业版实例为空值
 

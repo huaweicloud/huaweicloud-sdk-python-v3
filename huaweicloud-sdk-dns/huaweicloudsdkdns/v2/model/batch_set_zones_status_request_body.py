@@ -27,7 +27,7 @@ class BatchSetZonesStatusRequestBody:
     }
 
     def __init__(self, status=None, zone_ids=None):
-        """BatchSetZonesStatusRequestBody
+        r"""BatchSetZonesStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchSetZonesStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this BatchSetZonesStatusRequestBody.
+        r"""Gets the status of this BatchSetZonesStatusRequestBody.
 
         待设置Zone状态，当前仅支持DISABLE或ENABLE。
 
@@ -59,7 +59,7 @@ class BatchSetZonesStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchSetZonesStatusRequestBody.
+        r"""Sets the status of this BatchSetZonesStatusRequestBody.
 
         待设置Zone状态，当前仅支持DISABLE或ENABLE。
 
@@ -70,7 +70,7 @@ class BatchSetZonesStatusRequestBody:
 
     @property
     def zone_ids(self):
-        """Gets the zone_ids of this BatchSetZonesStatusRequestBody.
+        r"""Gets the zone_ids of this BatchSetZonesStatusRequestBody.
 
         待设置Zone ID列表。 最多支持50个。
 
@@ -81,7 +81,7 @@ class BatchSetZonesStatusRequestBody:
 
     @zone_ids.setter
     def zone_ids(self, zone_ids):
-        """Sets the zone_ids of this BatchSetZonesStatusRequestBody.
+        r"""Sets the zone_ids of this BatchSetZonesStatusRequestBody.
 
         待设置Zone ID列表。 最多支持50个。
 

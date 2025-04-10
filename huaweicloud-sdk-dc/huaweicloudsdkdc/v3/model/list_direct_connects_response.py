@@ -30,7 +30,7 @@ class ListDirectConnectsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, direct_connects=None, page_info=None):
-        """ListDirectConnectsResponse
+        r"""ListDirectConnectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDirectConnectsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListDirectConnectsResponse.
+        r"""Gets the request_id of this ListDirectConnectsResponse.
 
         操作请求ID
 
@@ -69,7 +69,7 @@ class ListDirectConnectsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListDirectConnectsResponse.
+        r"""Sets the request_id of this ListDirectConnectsResponse.
 
         操作请求ID
 
@@ -80,7 +80,7 @@ class ListDirectConnectsResponse(SdkResponse):
 
     @property
     def direct_connects(self):
-        """Gets the direct_connects of this ListDirectConnectsResponse.
+        r"""Gets the direct_connects of this ListDirectConnectsResponse.
 
         物理专线对象列表
 
@@ -91,7 +91,7 @@ class ListDirectConnectsResponse(SdkResponse):
 
     @direct_connects.setter
     def direct_connects(self, direct_connects):
-        """Sets the direct_connects of this ListDirectConnectsResponse.
+        r"""Sets the direct_connects of this ListDirectConnectsResponse.
 
         物理专线对象列表
 
@@ -102,7 +102,7 @@ class ListDirectConnectsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListDirectConnectsResponse.
+        r"""Gets the page_info of this ListDirectConnectsResponse.
 
         :return: The page_info of this ListDirectConnectsResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListDirectConnectsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListDirectConnectsResponse.
+        r"""Sets the page_info of this ListDirectConnectsResponse.
 
         :param page_info: The page_info of this ListDirectConnectsResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

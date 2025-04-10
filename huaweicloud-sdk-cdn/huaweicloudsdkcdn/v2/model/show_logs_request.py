@@ -35,7 +35,7 @@ class ShowLogsRequest:
     }
 
     def __init__(self, domain_name=None, start_time=None, end_time=None, page_size=None, page_number=None, enterprise_project_id=None):
-        """ShowLogsRequest
+        r"""ShowLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowLogsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowLogsRequest.
+        r"""Gets the domain_name of this ShowLogsRequest.
 
         只支持单个域名，如：www.test1.com。
 
@@ -88,7 +88,7 @@ class ShowLogsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowLogsRequest.
+        r"""Sets the domain_name of this ShowLogsRequest.
 
         只支持单个域名，如：www.test1.com。
 
@@ -99,7 +99,7 @@ class ShowLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowLogsRequest.
+        r"""Gets the start_time of this ShowLogsRequest.
 
         查询开始时间，时间格式为整点毫秒时间戳，此参数传空值时默认为当天0点。
 
@@ -110,7 +110,7 @@ class ShowLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowLogsRequest.
+        r"""Sets the start_time of this ShowLogsRequest.
 
         查询开始时间，时间格式为整点毫秒时间戳，此参数传空值时默认为当天0点。
 
@@ -121,7 +121,7 @@ class ShowLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowLogsRequest.
+        r"""Gets the end_time of this ShowLogsRequest.
 
         查询结束时间（不包含结束时间），时间格式为整点毫秒时间戳，与开始时间的最大跨度为30天，此参数传空值时默认为开始时间加1天。
 
@@ -132,7 +132,7 @@ class ShowLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowLogsRequest.
+        r"""Sets the end_time of this ShowLogsRequest.
 
         查询结束时间（不包含结束时间），时间格式为整点毫秒时间戳，与开始时间的最大跨度为30天，此参数传空值时默认为开始时间加1天。
 
@@ -143,7 +143,7 @@ class ShowLogsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowLogsRequest.
+        r"""Gets the page_size of this ShowLogsRequest.
 
         单页最大数量，取值范围为1-10000，默认值：10。
 
@@ -154,7 +154,7 @@ class ShowLogsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowLogsRequest.
+        r"""Sets the page_size of this ShowLogsRequest.
 
         单页最大数量，取值范围为1-10000，默认值：10。
 
@@ -165,7 +165,7 @@ class ShowLogsRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ShowLogsRequest.
+        r"""Gets the page_number of this ShowLogsRequest.
 
         当前查询第几页，取值范围为1-65535，默认值：1。
 
@@ -176,7 +176,7 @@ class ShowLogsRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ShowLogsRequest.
+        r"""Sets the page_number of this ShowLogsRequest.
 
         当前查询第几页，取值范围为1-65535，默认值：1。
 
@@ -187,7 +187,7 @@ class ShowLogsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowLogsRequest.
+        r"""Gets the enterprise_project_id of this ShowLogsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -198,7 +198,7 @@ class ShowLogsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowLogsRequest.
+        r"""Sets the enterprise_project_id of this ShowLogsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 

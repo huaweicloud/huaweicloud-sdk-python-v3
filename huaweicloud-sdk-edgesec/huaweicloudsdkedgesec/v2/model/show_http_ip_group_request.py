@@ -25,7 +25,7 @@ class ShowHttpIpGroupRequest:
     }
 
     def __init__(self, ip_group_id=None):
-        """ShowHttpIpGroupRequest
+        r"""ShowHttpIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowHttpIpGroupRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this ShowHttpIpGroupRequest.
+        r"""Gets the ip_group_id of this ShowHttpIpGroupRequest.
 
         IP地址组id
 
@@ -53,7 +53,7 @@ class ShowHttpIpGroupRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this ShowHttpIpGroupRequest.
+        r"""Sets the ip_group_id of this ShowHttpIpGroupRequest.
 
         IP地址组id
 

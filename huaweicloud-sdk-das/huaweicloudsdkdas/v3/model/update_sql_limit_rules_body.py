@@ -31,7 +31,7 @@ class UpdateSqlLimitRulesBody:
     }
 
     def __init__(self, datastore_type=None, sql_limit_rule_ids=None, database_name=None, sql_limit_rule=None):
-        """UpdateSqlLimitRulesBody
+        r"""UpdateSqlLimitRulesBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateSqlLimitRulesBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this UpdateSqlLimitRulesBody.
+        r"""Gets the datastore_type of this UpdateSqlLimitRulesBody.
 
         数据库类型
 
@@ -72,7 +72,7 @@ class UpdateSqlLimitRulesBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this UpdateSqlLimitRulesBody.
+        r"""Sets the datastore_type of this UpdateSqlLimitRulesBody.
 
         数据库类型
 
@@ -83,7 +83,7 @@ class UpdateSqlLimitRulesBody:
 
     @property
     def sql_limit_rule_ids(self):
-        """Gets the sql_limit_rule_ids of this UpdateSqlLimitRulesBody.
+        r"""Gets the sql_limit_rule_ids of this UpdateSqlLimitRulesBody.
 
         SQL限流规则ID
 
@@ -94,7 +94,7 @@ class UpdateSqlLimitRulesBody:
 
     @sql_limit_rule_ids.setter
     def sql_limit_rule_ids(self, sql_limit_rule_ids):
-        """Sets the sql_limit_rule_ids of this UpdateSqlLimitRulesBody.
+        r"""Sets the sql_limit_rule_ids of this UpdateSqlLimitRulesBody.
 
         SQL限流规则ID
 
@@ -105,7 +105,7 @@ class UpdateSqlLimitRulesBody:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateSqlLimitRulesBody.
+        r"""Gets the database_name of this UpdateSqlLimitRulesBody.
 
         数据库名（PostgreSQL必填）
 
@@ -116,7 +116,7 @@ class UpdateSqlLimitRulesBody:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateSqlLimitRulesBody.
+        r"""Sets the database_name of this UpdateSqlLimitRulesBody.
 
         数据库名（PostgreSQL必填）
 
@@ -127,7 +127,7 @@ class UpdateSqlLimitRulesBody:
 
     @property
     def sql_limit_rule(self):
-        """Gets the sql_limit_rule of this UpdateSqlLimitRulesBody.
+        r"""Gets the sql_limit_rule of this UpdateSqlLimitRulesBody.
 
         :return: The sql_limit_rule of this UpdateSqlLimitRulesBody.
         :rtype: :class:`huaweicloudsdkdas.v3.UpdateSqlLimitRuleOption`
@@ -136,7 +136,7 @@ class UpdateSqlLimitRulesBody:
 
     @sql_limit_rule.setter
     def sql_limit_rule(self, sql_limit_rule):
-        """Sets the sql_limit_rule of this UpdateSqlLimitRulesBody.
+        r"""Sets the sql_limit_rule of this UpdateSqlLimitRulesBody.
 
         :param sql_limit_rule: The sql_limit_rule of this UpdateSqlLimitRulesBody.
         :type sql_limit_rule: :class:`huaweicloudsdkdas.v3.UpdateSqlLimitRuleOption`

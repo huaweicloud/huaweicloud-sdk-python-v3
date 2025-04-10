@@ -41,7 +41,7 @@ class UpdateLoginPolicyReqBody:
     }
 
     def __init__(self, user_validity_period=None, custom_info_for_login=None, lockout_duration=None, login_failed_times=None, period_with_login_failures=None, session_timeout=None, show_recent_login_info=None, allow_address_netmasks=None, allow_ip_ranges=None):
-        """UpdateLoginPolicyReqBody
+        r"""UpdateLoginPolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def user_validity_period(self):
-        """Gets the user_validity_period of this UpdateLoginPolicyReqBody.
+        r"""Gets the user_validity_period of this UpdateLoginPolicyReqBody.
 
         如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
 
@@ -110,7 +110,7 @@ class UpdateLoginPolicyReqBody:
 
     @user_validity_period.setter
     def user_validity_period(self, user_validity_period):
-        """Sets the user_validity_period of this UpdateLoginPolicyReqBody.
+        r"""Sets the user_validity_period of this UpdateLoginPolicyReqBody.
 
         如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
 
@@ -121,7 +121,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def custom_info_for_login(self):
-        """Gets the custom_info_for_login of this UpdateLoginPolicyReqBody.
+        r"""Gets the custom_info_for_login of this UpdateLoginPolicyReqBody.
 
         登录提示信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -132,7 +132,7 @@ class UpdateLoginPolicyReqBody:
 
     @custom_info_for_login.setter
     def custom_info_for_login(self, custom_info_for_login):
-        """Sets the custom_info_for_login of this UpdateLoginPolicyReqBody.
+        r"""Sets the custom_info_for_login of this UpdateLoginPolicyReqBody.
 
         登录提示信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -143,7 +143,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def lockout_duration(self):
-        """Gets the lockout_duration of this UpdateLoginPolicyReqBody.
+        r"""Gets the lockout_duration of this UpdateLoginPolicyReqBody.
 
         IAM用户登录锁定时长（分钟）。
 
@@ -154,7 +154,7 @@ class UpdateLoginPolicyReqBody:
 
     @lockout_duration.setter
     def lockout_duration(self, lockout_duration):
-        """Sets the lockout_duration of this UpdateLoginPolicyReqBody.
+        r"""Sets the lockout_duration of this UpdateLoginPolicyReqBody.
 
         IAM用户登录锁定时长（分钟）。
 
@@ -165,7 +165,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def login_failed_times(self):
-        """Gets the login_failed_times of this UpdateLoginPolicyReqBody.
+        r"""Gets the login_failed_times of this UpdateLoginPolicyReqBody.
 
         限定时间内登录失败次数。
 
@@ -176,7 +176,7 @@ class UpdateLoginPolicyReqBody:
 
     @login_failed_times.setter
     def login_failed_times(self, login_failed_times):
-        """Sets the login_failed_times of this UpdateLoginPolicyReqBody.
+        r"""Sets the login_failed_times of this UpdateLoginPolicyReqBody.
 
         限定时间内登录失败次数。
 
@@ -187,7 +187,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def period_with_login_failures(self):
-        """Gets the period_with_login_failures of this UpdateLoginPolicyReqBody.
+        r"""Gets the period_with_login_failures of this UpdateLoginPolicyReqBody.
 
         限定时间长度（分钟）。
 
@@ -198,7 +198,7 @@ class UpdateLoginPolicyReqBody:
 
     @period_with_login_failures.setter
     def period_with_login_failures(self, period_with_login_failures):
-        """Sets the period_with_login_failures of this UpdateLoginPolicyReqBody.
+        r"""Sets the period_with_login_failures of this UpdateLoginPolicyReqBody.
 
         限定时间长度（分钟）。
 
@@ -209,7 +209,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def session_timeout(self):
-        """Gets the session_timeout of this UpdateLoginPolicyReqBody.
+        r"""Gets the session_timeout of this UpdateLoginPolicyReqBody.
 
         登录会话失效时间。
 
@@ -220,7 +220,7 @@ class UpdateLoginPolicyReqBody:
 
     @session_timeout.setter
     def session_timeout(self, session_timeout):
-        """Sets the session_timeout of this UpdateLoginPolicyReqBody.
+        r"""Sets the session_timeout of this UpdateLoginPolicyReqBody.
 
         登录会话失效时间。
 
@@ -231,7 +231,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def show_recent_login_info(self):
-        """Gets the show_recent_login_info of this UpdateLoginPolicyReqBody.
+        r"""Gets the show_recent_login_info of this UpdateLoginPolicyReqBody.
 
         是否显示最近一次的登录信息。
 
@@ -242,7 +242,7 @@ class UpdateLoginPolicyReqBody:
 
     @show_recent_login_info.setter
     def show_recent_login_info(self, show_recent_login_info):
-        """Sets the show_recent_login_info of this UpdateLoginPolicyReqBody.
+        r"""Sets the show_recent_login_info of this UpdateLoginPolicyReqBody.
 
         是否显示最近一次的登录信息。
 
@@ -253,7 +253,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def allow_address_netmasks(self):
-        """Gets the allow_address_netmasks of this UpdateLoginPolicyReqBody.
+        r"""Gets the allow_address_netmasks of this UpdateLoginPolicyReqBody.
 
         允许访问的IP地址或网段。
 
@@ -264,7 +264,7 @@ class UpdateLoginPolicyReqBody:
 
     @allow_address_netmasks.setter
     def allow_address_netmasks(self, allow_address_netmasks):
-        """Sets the allow_address_netmasks of this UpdateLoginPolicyReqBody.
+        r"""Sets the allow_address_netmasks of this UpdateLoginPolicyReqBody.
 
         允许访问的IP地址或网段。
 
@@ -275,7 +275,7 @@ class UpdateLoginPolicyReqBody:
 
     @property
     def allow_ip_ranges(self):
-        """Gets the allow_ip_ranges of this UpdateLoginPolicyReqBody.
+        r"""Gets the allow_ip_ranges of this UpdateLoginPolicyReqBody.
 
         允许访问的IP地址区间。
 
@@ -286,7 +286,7 @@ class UpdateLoginPolicyReqBody:
 
     @allow_ip_ranges.setter
     def allow_ip_ranges(self, allow_ip_ranges):
-        """Sets the allow_ip_ranges of this UpdateLoginPolicyReqBody.
+        r"""Sets the allow_ip_ranges of this UpdateLoginPolicyReqBody.
 
         允许访问的IP地址区间。
 

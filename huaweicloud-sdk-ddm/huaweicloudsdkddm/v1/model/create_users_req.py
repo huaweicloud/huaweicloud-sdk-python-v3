@@ -25,7 +25,7 @@ class CreateUsersReq:
     }
 
     def __init__(self, users=None):
-        """CreateUsersReq
+        r"""CreateUsersReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateUsersReq:
 
     @property
     def users(self):
-        """Gets the users of this CreateUsersReq.
+        r"""Gets the users of this CreateUsersReq.
 
         DDM实例帐号相关信息的集合。
 
@@ -53,7 +53,7 @@ class CreateUsersReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateUsersReq.
+        r"""Sets the users of this CreateUsersReq.
 
         DDM实例帐号相关信息的集合。
 

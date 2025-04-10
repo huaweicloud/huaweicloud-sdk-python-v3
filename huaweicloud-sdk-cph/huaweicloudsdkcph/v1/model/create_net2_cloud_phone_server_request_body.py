@@ -57,7 +57,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     }
 
     def __init__(self, server_name=None, server_model_name=None, phone_model_name=None, image_id=None, count=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, availability_zone=None, _property=None):
-        """CreateNet2CloudPhoneServerRequestBody
+        r"""CreateNet2CloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def server_name(self):
-        """Gets the server_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the server_name of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
@@ -156,7 +156,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the server_name of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
@@ -167,7 +167,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def server_model_name(self):
-        """Gets the server_model_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the server_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机服务器规格，不超过64个字节。
 
@@ -178,7 +178,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @server_model_name.setter
     def server_model_name(self, server_model_name):
-        """Sets the server_model_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the server_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机服务器规格，不超过64个字节。
 
@@ -189,7 +189,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机规格，不超过64个字节。
 
@@ -200,7 +200,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机规格，不超过64个字节。
 
@@ -211,7 +211,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the image_id of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机镜像ID，不超过32个字节。
 
@@ -222,7 +222,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the image_id of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机镜像ID，不超过32个字节。
 
@@ -233,7 +233,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def count(self):
-        """Gets the count of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the count of this CreateNet2CloudPhoneServerRequestBody.
 
         [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)10台。
 
@@ -244,7 +244,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the count of this CreateNet2CloudPhoneServerRequestBody.
 
         [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)10台。
 
@@ -255,7 +255,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the keypair_name of this CreateNet2CloudPhoneServerRequestBody.
 
         密钥对名称，不超过64个字节，用于云手机ADB登录。
 
@@ -266,7 +266,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the keypair_name of this CreateNet2CloudPhoneServerRequestBody.
 
         密钥对名称，不超过64个字节，用于云手机ADB登录。
 
@@ -277,7 +277,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def ports(self):
-        """Gets the ports of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the ports of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机启用的应用端口，云手机服务会做端口转发。
 
@@ -288,7 +288,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the ports of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机启用的应用端口，云手机服务会做端口转发。
 
@@ -299,7 +299,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the extend_param of this CreateNet2CloudPhoneServerRequestBody.
 
         :return: The extend_param of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyExtendParam`
@@ -308,7 +308,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the extend_param of this CreateNet2CloudPhoneServerRequestBody.
 
         :param extend_param: The extend_param of this CreateNet2CloudPhoneServerRequestBody.
         :type extend_param: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyExtendParam`
@@ -317,7 +317,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def tenant_vpc_id(self):
-        """Gets the tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
 
         租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
 
@@ -328,7 +328,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @tenant_vpc_id.setter
     def tenant_vpc_id(self, tenant_vpc_id):
-        """Sets the tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
 
         租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
 
@@ -339,7 +339,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the nics of this CreateNet2CloudPhoneServerRequestBody.
 
         租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
 
@@ -350,7 +350,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the nics of this CreateNet2CloudPhoneServerRequestBody.
 
         租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
 
@@ -361,7 +361,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the public_ip of this CreateNet2CloudPhoneServerRequestBody.
 
         :return: The public_ip of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIp`
@@ -370,7 +370,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the public_ip of this CreateNet2CloudPhoneServerRequestBody.
 
         :param public_ip: The public_ip of this CreateNet2CloudPhoneServerRequestBody.
         :type public_ip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIp`
@@ -379,7 +379,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def phone_count_per_ip(self):
-        """Gets the phone_count_per_ip of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the phone_count_per_ip of this CreateNet2CloudPhoneServerRequestBody.
 
         多少个手机共用一个vip。默认为手机开数，表示所有手机共享1个vip。取值范围：1到手机规格开数。
 
@@ -390,7 +390,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @phone_count_per_ip.setter
     def phone_count_per_ip(self, phone_count_per_ip):
-        """Sets the phone_count_per_ip of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the phone_count_per_ip of this CreateNet2CloudPhoneServerRequestBody.
 
         多少个手机共用一个vip。默认为手机开数，表示所有手机共享1个vip。取值范围：1到手机规格开数。
 
@@ -401,7 +401,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def phone_data_volume(self):
-        """Gets the phone_data_volume of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the phone_data_volume of this CreateNet2CloudPhoneServerRequestBody.
 
         :return: The phone_data_volume of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume`
@@ -410,7 +410,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @phone_data_volume.setter
     def phone_data_volume(self, phone_data_volume):
-        """Sets the phone_data_volume of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the phone_data_volume of this CreateNet2CloudPhoneServerRequestBody.
 
         :param phone_data_volume: The phone_data_volume of this CreateNet2CloudPhoneServerRequestBody.
         :type phone_data_volume: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume`
@@ -419,7 +419,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def server_share_data_volume(self):
-        """Gets the server_share_data_volume of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the server_share_data_volume of this CreateNet2CloudPhoneServerRequestBody.
 
         :return: The server_share_data_volume of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyServerShareDataVolume`
@@ -428,7 +428,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @server_share_data_volume.setter
     def server_share_data_volume(self, server_share_data_volume):
-        """Sets the server_share_data_volume of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the server_share_data_volume of this CreateNet2CloudPhoneServerRequestBody.
 
         :param server_share_data_volume: The server_share_data_volume of this CreateNet2CloudPhoneServerRequestBody.
         :type server_share_data_volume: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyServerShareDataVolume`
@@ -437,7 +437,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def band_width(self):
-        """Gets the band_width of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the band_width of this CreateNet2CloudPhoneServerRequestBody.
 
         :return: The band_width of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`
@@ -446,7 +446,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the band_width of this CreateNet2CloudPhoneServerRequestBody.
 
         :param band_width: The band_width of this CreateNet2CloudPhoneServerRequestBody.
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`
@@ -455,7 +455,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
         待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -466,7 +466,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
         待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -477,7 +477,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @property
     def _property(self):
-        """Gets the _property of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Gets the _property of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
 
@@ -488,7 +488,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this CreateNet2CloudPhoneServerRequestBody.
+        r"""Sets the _property of this CreateNet2CloudPhoneServerRequestBody.
 
         云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
 

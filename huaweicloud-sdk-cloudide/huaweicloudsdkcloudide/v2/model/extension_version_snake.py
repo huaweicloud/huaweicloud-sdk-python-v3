@@ -81,7 +81,7 @@ class ExtensionVersionSnake:
     }
 
     def __init__(self, id=None, version=None, version_ranking=None, status=None, version_status=None, asset_uri=None, last_updated=None, files=None, validate_message=None, version_validate_status=None, display_name=None, description=None, min_ide_version=None, max_ide_version=None, version_date=None, preview=None, extension_pack=None, extension_dependencies=None, created_at=None, support_ide=None, repo_url=None, help_page=None, website=None, issue_link=None, asset_size=None, depends=None, property_list=None, uploader=None, extension_id=None):
-        """ExtensionVersionSnake
+        r"""ExtensionVersionSnake
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class ExtensionVersionSnake:
 
     @property
     def id(self):
-        """Gets the id of this ExtensionVersionSnake.
+        r"""Gets the id of this ExtensionVersionSnake.
 
         插件版本id
 
@@ -250,7 +250,7 @@ class ExtensionVersionSnake:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExtensionVersionSnake.
+        r"""Sets the id of this ExtensionVersionSnake.
 
         插件版本id
 
@@ -261,7 +261,7 @@ class ExtensionVersionSnake:
 
     @property
     def version(self):
-        """Gets the version of this ExtensionVersionSnake.
+        r"""Gets the version of this ExtensionVersionSnake.
 
         插件版本号
 
@@ -272,7 +272,7 @@ class ExtensionVersionSnake:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ExtensionVersionSnake.
+        r"""Sets the version of this ExtensionVersionSnake.
 
         插件版本号
 
@@ -283,7 +283,7 @@ class ExtensionVersionSnake:
 
     @property
     def version_ranking(self):
-        """Gets the version_ranking of this ExtensionVersionSnake.
+        r"""Gets the version_ranking of this ExtensionVersionSnake.
 
         版本排序
 
@@ -294,7 +294,7 @@ class ExtensionVersionSnake:
 
     @version_ranking.setter
     def version_ranking(self, version_ranking):
-        """Sets the version_ranking of this ExtensionVersionSnake.
+        r"""Sets the version_ranking of this ExtensionVersionSnake.
 
         版本排序
 
@@ -305,7 +305,7 @@ class ExtensionVersionSnake:
 
     @property
     def status(self):
-        """Gets the status of this ExtensionVersionSnake.
+        r"""Gets the status of this ExtensionVersionSnake.
 
         插件版本状态 - INIT 待发布 - VALIDATING 审核中 - REJECTED 审核拒绝 - PUBLISHED 插件上架 - OFFLINE 插件下线 - ABANDONED 废弃 - GRAY_INIT 灰度审核 - GRAYED 灰度发布 - GRAY_REJECTED 灰度拒绝
 
@@ -316,7 +316,7 @@ class ExtensionVersionSnake:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExtensionVersionSnake.
+        r"""Sets the status of this ExtensionVersionSnake.
 
         插件版本状态 - INIT 待发布 - VALIDATING 审核中 - REJECTED 审核拒绝 - PUBLISHED 插件上架 - OFFLINE 插件下线 - ABANDONED 废弃 - GRAY_INIT 灰度审核 - GRAYED 灰度发布 - GRAY_REJECTED 灰度拒绝
 
@@ -327,7 +327,7 @@ class ExtensionVersionSnake:
 
     @property
     def version_status(self):
-        """Gets the version_status of this ExtensionVersionSnake.
+        r"""Gets the version_status of this ExtensionVersionSnake.
 
         插件状态 - INIT 待发布 - VALIDATING 审核中 - REJECTED 审核拒绝 - PUBLISHED 插件上架 - OFFLINE 插件下线 - ABANDONED 废弃 - GRAY_INIT 灰度审核 - GRAYED 灰度发布 - GRAY_REJECTED 灰度拒绝
 
@@ -338,7 +338,7 @@ class ExtensionVersionSnake:
 
     @version_status.setter
     def version_status(self, version_status):
-        """Sets the version_status of this ExtensionVersionSnake.
+        r"""Sets the version_status of this ExtensionVersionSnake.
 
         插件状态 - INIT 待发布 - VALIDATING 审核中 - REJECTED 审核拒绝 - PUBLISHED 插件上架 - OFFLINE 插件下线 - ABANDONED 废弃 - GRAY_INIT 灰度审核 - GRAYED 灰度发布 - GRAY_REJECTED 灰度拒绝
 
@@ -349,7 +349,7 @@ class ExtensionVersionSnake:
 
     @property
     def asset_uri(self):
-        """Gets the asset_uri of this ExtensionVersionSnake.
+        r"""Gets the asset_uri of this ExtensionVersionSnake.
 
         资源文件url
 
@@ -360,7 +360,7 @@ class ExtensionVersionSnake:
 
     @asset_uri.setter
     def asset_uri(self, asset_uri):
-        """Sets the asset_uri of this ExtensionVersionSnake.
+        r"""Sets the asset_uri of this ExtensionVersionSnake.
 
         资源文件url
 
@@ -371,7 +371,7 @@ class ExtensionVersionSnake:
 
     @property
     def last_updated(self):
-        """Gets the last_updated of this ExtensionVersionSnake.
+        r"""Gets the last_updated of this ExtensionVersionSnake.
 
         更新时间
 
@@ -382,7 +382,7 @@ class ExtensionVersionSnake:
 
     @last_updated.setter
     def last_updated(self, last_updated):
-        """Sets the last_updated of this ExtensionVersionSnake.
+        r"""Sets the last_updated of this ExtensionVersionSnake.
 
         更新时间
 
@@ -393,7 +393,7 @@ class ExtensionVersionSnake:
 
     @property
     def files(self):
-        """Gets the files of this ExtensionVersionSnake.
+        r"""Gets the files of this ExtensionVersionSnake.
 
         插件文件集合
 
@@ -404,7 +404,7 @@ class ExtensionVersionSnake:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ExtensionVersionSnake.
+        r"""Sets the files of this ExtensionVersionSnake.
 
         插件文件集合
 
@@ -415,7 +415,7 @@ class ExtensionVersionSnake:
 
     @property
     def validate_message(self):
-        """Gets the validate_message of this ExtensionVersionSnake.
+        r"""Gets the validate_message of this ExtensionVersionSnake.
 
         插件审核信息
 
@@ -426,7 +426,7 @@ class ExtensionVersionSnake:
 
     @validate_message.setter
     def validate_message(self, validate_message):
-        """Sets the validate_message of this ExtensionVersionSnake.
+        r"""Sets the validate_message of this ExtensionVersionSnake.
 
         插件审核信息
 
@@ -437,7 +437,7 @@ class ExtensionVersionSnake:
 
     @property
     def version_validate_status(self):
-        """Gets the version_validate_status of this ExtensionVersionSnake.
+        r"""Gets the version_validate_status of this ExtensionVersionSnake.
 
         插件审核状态 - NONE 无 - UPLOADING 上传中 - VALIDATING 系统审核 - OFFLINING 用户申请下线 - ONLINING 用户申请上线 - UMS_VALIDATING 发布商审核中
 
@@ -448,7 +448,7 @@ class ExtensionVersionSnake:
 
     @version_validate_status.setter
     def version_validate_status(self, version_validate_status):
-        """Sets the version_validate_status of this ExtensionVersionSnake.
+        r"""Sets the version_validate_status of this ExtensionVersionSnake.
 
         插件审核状态 - NONE 无 - UPLOADING 上传中 - VALIDATING 系统审核 - OFFLINING 用户申请下线 - ONLINING 用户申请上线 - UMS_VALIDATING 发布商审核中
 
@@ -459,7 +459,7 @@ class ExtensionVersionSnake:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ExtensionVersionSnake.
+        r"""Gets the display_name of this ExtensionVersionSnake.
 
         插件展示名称
 
@@ -470,7 +470,7 @@ class ExtensionVersionSnake:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ExtensionVersionSnake.
+        r"""Sets the display_name of this ExtensionVersionSnake.
 
         插件展示名称
 
@@ -481,7 +481,7 @@ class ExtensionVersionSnake:
 
     @property
     def description(self):
-        """Gets the description of this ExtensionVersionSnake.
+        r"""Gets the description of this ExtensionVersionSnake.
 
         插件描述
 
@@ -492,7 +492,7 @@ class ExtensionVersionSnake:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExtensionVersionSnake.
+        r"""Sets the description of this ExtensionVersionSnake.
 
         插件描述
 
@@ -503,7 +503,7 @@ class ExtensionVersionSnake:
 
     @property
     def min_ide_version(self):
-        """Gets the min_ide_version of this ExtensionVersionSnake.
+        r"""Gets the min_ide_version of this ExtensionVersionSnake.
 
         插件支持ide版本
 
@@ -514,7 +514,7 @@ class ExtensionVersionSnake:
 
     @min_ide_version.setter
     def min_ide_version(self, min_ide_version):
-        """Sets the min_ide_version of this ExtensionVersionSnake.
+        r"""Sets the min_ide_version of this ExtensionVersionSnake.
 
         插件支持ide版本
 
@@ -525,7 +525,7 @@ class ExtensionVersionSnake:
 
     @property
     def max_ide_version(self):
-        """Gets the max_ide_version of this ExtensionVersionSnake.
+        r"""Gets the max_ide_version of this ExtensionVersionSnake.
 
         支持的最大版本
 
@@ -536,7 +536,7 @@ class ExtensionVersionSnake:
 
     @max_ide_version.setter
     def max_ide_version(self, max_ide_version):
-        """Sets the max_ide_version of this ExtensionVersionSnake.
+        r"""Sets the max_ide_version of this ExtensionVersionSnake.
 
         支持的最大版本
 
@@ -547,7 +547,7 @@ class ExtensionVersionSnake:
 
     @property
     def version_date(self):
-        """Gets the version_date of this ExtensionVersionSnake.
+        r"""Gets the version_date of this ExtensionVersionSnake.
 
         发布时间
 
@@ -558,7 +558,7 @@ class ExtensionVersionSnake:
 
     @version_date.setter
     def version_date(self, version_date):
-        """Sets the version_date of this ExtensionVersionSnake.
+        r"""Sets the version_date of this ExtensionVersionSnake.
 
         发布时间
 
@@ -569,7 +569,7 @@ class ExtensionVersionSnake:
 
     @property
     def preview(self):
-        """Gets the preview of this ExtensionVersionSnake.
+        r"""Gets the preview of this ExtensionVersionSnake.
 
         是否预览
 
@@ -580,7 +580,7 @@ class ExtensionVersionSnake:
 
     @preview.setter
     def preview(self, preview):
-        """Sets the preview of this ExtensionVersionSnake.
+        r"""Sets the preview of this ExtensionVersionSnake.
 
         是否预览
 
@@ -591,7 +591,7 @@ class ExtensionVersionSnake:
 
     @property
     def extension_pack(self):
-        """Gets the extension_pack of this ExtensionVersionSnake.
+        r"""Gets the extension_pack of this ExtensionVersionSnake.
 
         包含插件列表
 
@@ -602,7 +602,7 @@ class ExtensionVersionSnake:
 
     @extension_pack.setter
     def extension_pack(self, extension_pack):
-        """Sets the extension_pack of this ExtensionVersionSnake.
+        r"""Sets the extension_pack of this ExtensionVersionSnake.
 
         包含插件列表
 
@@ -613,7 +613,7 @@ class ExtensionVersionSnake:
 
     @property
     def extension_dependencies(self):
-        """Gets the extension_dependencies of this ExtensionVersionSnake.
+        r"""Gets the extension_dependencies of this ExtensionVersionSnake.
 
         依赖插件列表
 
@@ -624,7 +624,7 @@ class ExtensionVersionSnake:
 
     @extension_dependencies.setter
     def extension_dependencies(self, extension_dependencies):
-        """Sets the extension_dependencies of this ExtensionVersionSnake.
+        r"""Sets the extension_dependencies of this ExtensionVersionSnake.
 
         依赖插件列表
 
@@ -635,7 +635,7 @@ class ExtensionVersionSnake:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ExtensionVersionSnake.
+        r"""Gets the created_at of this ExtensionVersionSnake.
 
         创建时间
 
@@ -646,7 +646,7 @@ class ExtensionVersionSnake:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ExtensionVersionSnake.
+        r"""Sets the created_at of this ExtensionVersionSnake.
 
         创建时间
 
@@ -657,7 +657,7 @@ class ExtensionVersionSnake:
 
     @property
     def support_ide(self):
-        """Gets the support_ide of this ExtensionVersionSnake.
+        r"""Gets the support_ide of this ExtensionVersionSnake.
 
         支持的ide编码
 
@@ -668,7 +668,7 @@ class ExtensionVersionSnake:
 
     @support_ide.setter
     def support_ide(self, support_ide):
-        """Sets the support_ide of this ExtensionVersionSnake.
+        r"""Sets the support_ide of this ExtensionVersionSnake.
 
         支持的ide编码
 
@@ -679,7 +679,7 @@ class ExtensionVersionSnake:
 
     @property
     def repo_url(self):
-        """Gets the repo_url of this ExtensionVersionSnake.
+        r"""Gets the repo_url of this ExtensionVersionSnake.
 
         插件包源码仓
 
@@ -690,7 +690,7 @@ class ExtensionVersionSnake:
 
     @repo_url.setter
     def repo_url(self, repo_url):
-        """Sets the repo_url of this ExtensionVersionSnake.
+        r"""Sets the repo_url of this ExtensionVersionSnake.
 
         插件包源码仓
 
@@ -701,7 +701,7 @@ class ExtensionVersionSnake:
 
     @property
     def help_page(self):
-        """Gets the help_page of this ExtensionVersionSnake.
+        r"""Gets the help_page of this ExtensionVersionSnake.
 
         帮助页面
 
@@ -712,7 +712,7 @@ class ExtensionVersionSnake:
 
     @help_page.setter
     def help_page(self, help_page):
-        """Sets the help_page of this ExtensionVersionSnake.
+        r"""Sets the help_page of this ExtensionVersionSnake.
 
         帮助页面
 
@@ -723,7 +723,7 @@ class ExtensionVersionSnake:
 
     @property
     def website(self):
-        """Gets the website of this ExtensionVersionSnake.
+        r"""Gets the website of this ExtensionVersionSnake.
 
         产品首页
 
@@ -734,7 +734,7 @@ class ExtensionVersionSnake:
 
     @website.setter
     def website(self, website):
-        """Sets the website of this ExtensionVersionSnake.
+        r"""Sets the website of this ExtensionVersionSnake.
 
         产品首页
 
@@ -745,7 +745,7 @@ class ExtensionVersionSnake:
 
     @property
     def issue_link(self):
-        """Gets the issue_link of this ExtensionVersionSnake.
+        r"""Gets the issue_link of this ExtensionVersionSnake.
 
         问题链接
 
@@ -756,7 +756,7 @@ class ExtensionVersionSnake:
 
     @issue_link.setter
     def issue_link(self, issue_link):
-        """Sets the issue_link of this ExtensionVersionSnake.
+        r"""Sets the issue_link of this ExtensionVersionSnake.
 
         问题链接
 
@@ -767,7 +767,7 @@ class ExtensionVersionSnake:
 
     @property
     def asset_size(self):
-        """Gets the asset_size of this ExtensionVersionSnake.
+        r"""Gets the asset_size of this ExtensionVersionSnake.
 
         插件大小
 
@@ -778,7 +778,7 @@ class ExtensionVersionSnake:
 
     @asset_size.setter
     def asset_size(self, asset_size):
-        """Sets the asset_size of this ExtensionVersionSnake.
+        r"""Sets the asset_size of this ExtensionVersionSnake.
 
         插件大小
 
@@ -789,7 +789,7 @@ class ExtensionVersionSnake:
 
     @property
     def depends(self):
-        """Gets the depends of this ExtensionVersionSnake.
+        r"""Gets the depends of this ExtensionVersionSnake.
 
         依赖插件
 
@@ -800,7 +800,7 @@ class ExtensionVersionSnake:
 
     @depends.setter
     def depends(self, depends):
-        """Sets the depends of this ExtensionVersionSnake.
+        r"""Sets the depends of this ExtensionVersionSnake.
 
         依赖插件
 
@@ -811,7 +811,7 @@ class ExtensionVersionSnake:
 
     @property
     def property_list(self):
-        """Gets the property_list of this ExtensionVersionSnake.
+        r"""Gets the property_list of this ExtensionVersionSnake.
 
         CodeArtsIDEOnline插件版本参数
 
@@ -822,7 +822,7 @@ class ExtensionVersionSnake:
 
     @property_list.setter
     def property_list(self, property_list):
-        """Sets the property_list of this ExtensionVersionSnake.
+        r"""Sets the property_list of this ExtensionVersionSnake.
 
         CodeArtsIDEOnline插件版本参数
 
@@ -833,7 +833,7 @@ class ExtensionVersionSnake:
 
     @property
     def uploader(self):
-        """Gets the uploader of this ExtensionVersionSnake.
+        r"""Gets the uploader of this ExtensionVersionSnake.
 
         版本发布者
 
@@ -844,7 +844,7 @@ class ExtensionVersionSnake:
 
     @uploader.setter
     def uploader(self, uploader):
-        """Sets the uploader of this ExtensionVersionSnake.
+        r"""Sets the uploader of this ExtensionVersionSnake.
 
         版本发布者
 
@@ -855,7 +855,7 @@ class ExtensionVersionSnake:
 
     @property
     def extension_id(self):
-        """Gets the extension_id of this ExtensionVersionSnake.
+        r"""Gets the extension_id of this ExtensionVersionSnake.
 
         插件id
 
@@ -866,7 +866,7 @@ class ExtensionVersionSnake:
 
     @extension_id.setter
     def extension_id(self, extension_id):
-        """Sets the extension_id of this ExtensionVersionSnake.
+        r"""Sets the extension_id of this ExtensionVersionSnake.
 
         插件id
 

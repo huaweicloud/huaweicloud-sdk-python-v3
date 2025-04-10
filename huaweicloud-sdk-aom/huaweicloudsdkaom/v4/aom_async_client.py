@@ -34,7 +34,7 @@ class AomAsyncClient(Client):
         return client_builder
 
     def batch_import_agent_async(self, request):
-        """下发批量安装UniAgent任务
+        r"""下发批量安装UniAgent任务
 
         该接口用于下发批量安装UniAgent任务。
         
@@ -101,7 +101,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def batch_update_agent_async(self, request):
-        """下发批量升级UniAgent任务
+        r"""下发批量升级UniAgent任务
 
         该接口用于下发批量升级UniAgent任务。
         
@@ -166,7 +166,7 @@ class AomAsyncClient(Client):
         return http_info
 
     def show_agent_infos_async(self, request):
-        """查询UniAgent主机列表信息
+        r"""查询UniAgent主机列表信息
 
         该接口用于查询执行过安装UniAgent任务的主机列表信息。
         

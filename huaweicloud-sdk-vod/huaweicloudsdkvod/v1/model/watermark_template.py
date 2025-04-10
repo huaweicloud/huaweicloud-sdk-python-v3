@@ -53,7 +53,7 @@ class WatermarkTemplate:
     }
 
     def __init__(self, name=None, id=None, status=None, dx=None, dy=None, position=None, width=None, height=None, create_time=None, image_url=None, type=None, watermark_type=None, image_process=None, timeline_start=None, timeline_duration=None):
-        """WatermarkTemplate
+        r"""WatermarkTemplate
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class WatermarkTemplate:
 
     @property
     def name(self):
-        """Gets the name of this WatermarkTemplate.
+        r"""Gets the name of this WatermarkTemplate.
 
         水印模板名称。
 
@@ -152,7 +152,7 @@ class WatermarkTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WatermarkTemplate.
+        r"""Sets the name of this WatermarkTemplate.
 
         水印模板名称。
 
@@ -163,7 +163,7 @@ class WatermarkTemplate:
 
     @property
     def id(self):
-        """Gets the id of this WatermarkTemplate.
+        r"""Gets the id of this WatermarkTemplate.
 
         水印模板配置id。
 
@@ -174,7 +174,7 @@ class WatermarkTemplate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WatermarkTemplate.
+        r"""Sets the id of this WatermarkTemplate.
 
         水印模板配置id。
 
@@ -185,7 +185,7 @@ class WatermarkTemplate:
 
     @property
     def status(self):
-        """Gets the status of this WatermarkTemplate.
+        r"""Gets the status of this WatermarkTemplate.
 
         启用状态。  取值为： - 0：停用 - 1：启用
 
@@ -196,7 +196,7 @@ class WatermarkTemplate:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WatermarkTemplate.
+        r"""Sets the status of this WatermarkTemplate.
 
         启用状态。  取值为： - 0：停用 - 1：启用
 
@@ -207,7 +207,7 @@ class WatermarkTemplate:
 
     @property
     def dx(self):
-        """Gets the dx of this WatermarkTemplate.
+        r"""Gets the dx of this WatermarkTemplate.
 
         水印图片相对输出视频的水平偏移量。  默认值是0。
 
@@ -218,7 +218,7 @@ class WatermarkTemplate:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this WatermarkTemplate.
+        r"""Sets the dx of this WatermarkTemplate.
 
         水印图片相对输出视频的水平偏移量。  默认值是0。
 
@@ -229,7 +229,7 @@ class WatermarkTemplate:
 
     @property
     def dy(self):
-        """Gets the dy of this WatermarkTemplate.
+        r"""Gets the dy of this WatermarkTemplate.
 
         水印图片相对输出视频的垂直偏移量。  默认值是0。
 
@@ -240,7 +240,7 @@ class WatermarkTemplate:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this WatermarkTemplate.
+        r"""Sets the dy of this WatermarkTemplate.
 
         水印图片相对输出视频的垂直偏移量。  默认值是0。
 
@@ -251,7 +251,7 @@ class WatermarkTemplate:
 
     @property
     def position(self):
-        """Gets the position of this WatermarkTemplate.
+        r"""Gets the position of this WatermarkTemplate.
 
         水印的位置。
 
@@ -262,7 +262,7 @@ class WatermarkTemplate:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this WatermarkTemplate.
+        r"""Sets the position of this WatermarkTemplate.
 
         水印的位置。
 
@@ -273,7 +273,7 @@ class WatermarkTemplate:
 
     @property
     def width(self):
-        """Gets the width of this WatermarkTemplate.
+        r"""Gets the width of this WatermarkTemplate.
 
         水印图片宽。
 
@@ -284,7 +284,7 @@ class WatermarkTemplate:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this WatermarkTemplate.
+        r"""Sets the width of this WatermarkTemplate.
 
         水印图片宽。
 
@@ -295,7 +295,7 @@ class WatermarkTemplate:
 
     @property
     def height(self):
-        """Gets the height of this WatermarkTemplate.
+        r"""Gets the height of this WatermarkTemplate.
 
         水印图片高。
 
@@ -306,7 +306,7 @@ class WatermarkTemplate:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this WatermarkTemplate.
+        r"""Sets the height of this WatermarkTemplate.
 
         水印图片高。
 
@@ -317,7 +317,7 @@ class WatermarkTemplate:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WatermarkTemplate.
+        r"""Gets the create_time of this WatermarkTemplate.
 
         创建时间。
 
@@ -328,7 +328,7 @@ class WatermarkTemplate:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WatermarkTemplate.
+        r"""Sets the create_time of this WatermarkTemplate.
 
         创建时间。
 
@@ -339,7 +339,7 @@ class WatermarkTemplate:
 
     @property
     def image_url(self):
-        """Gets the image_url of this WatermarkTemplate.
+        r"""Gets the image_url of this WatermarkTemplate.
 
         水印图片下载url。
 
@@ -350,7 +350,7 @@ class WatermarkTemplate:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this WatermarkTemplate.
+        r"""Sets the image_url of this WatermarkTemplate.
 
         水印图片下载url。
 
@@ -361,7 +361,7 @@ class WatermarkTemplate:
 
     @property
     def type(self):
-        """Gets the type of this WatermarkTemplate.
+        r"""Gets the type of this WatermarkTemplate.
 
         水印图片格式类型。
 
@@ -372,7 +372,7 @@ class WatermarkTemplate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WatermarkTemplate.
+        r"""Sets the type of this WatermarkTemplate.
 
         水印图片格式类型。
 
@@ -383,7 +383,7 @@ class WatermarkTemplate:
 
     @property
     def watermark_type(self):
-        """Gets the watermark_type of this WatermarkTemplate.
+        r"""Gets the watermark_type of this WatermarkTemplate.
 
         水印类型，当前只支持Image（图片水印）。
 
@@ -394,7 +394,7 @@ class WatermarkTemplate:
 
     @watermark_type.setter
     def watermark_type(self, watermark_type):
-        """Sets the watermark_type of this WatermarkTemplate.
+        r"""Sets the watermark_type of this WatermarkTemplate.
 
         水印类型，当前只支持Image（图片水印）。
 
@@ -405,7 +405,7 @@ class WatermarkTemplate:
 
     @property
     def image_process(self):
-        """Gets the image_process of this WatermarkTemplate.
+        r"""Gets the image_process of this WatermarkTemplate.
 
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
@@ -416,7 +416,7 @@ class WatermarkTemplate:
 
     @image_process.setter
     def image_process(self, image_process):
-        """Sets the image_process of this WatermarkTemplate.
+        r"""Sets the image_process of this WatermarkTemplate.
 
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
@@ -427,7 +427,7 @@ class WatermarkTemplate:
 
     @property
     def timeline_start(self):
-        """Gets the timeline_start of this WatermarkTemplate.
+        r"""Gets the timeline_start of this WatermarkTemplate.
 
         水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
@@ -438,7 +438,7 @@ class WatermarkTemplate:
 
     @timeline_start.setter
     def timeline_start(self, timeline_start):
-        """Sets the timeline_start of this WatermarkTemplate.
+        r"""Sets the timeline_start of this WatermarkTemplate.
 
         水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
@@ -449,7 +449,7 @@ class WatermarkTemplate:
 
     @property
     def timeline_duration(self):
-        """Gets the timeline_duration of this WatermarkTemplate.
+        r"""Gets the timeline_duration of this WatermarkTemplate.
 
         水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 
@@ -460,7 +460,7 @@ class WatermarkTemplate:
 
     @timeline_duration.setter
     def timeline_duration(self, timeline_duration):
-        """Sets the timeline_duration of this WatermarkTemplate.
+        r"""Sets the timeline_duration of this WatermarkTemplate.
 
         水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 

@@ -25,7 +25,7 @@ class CommRequestReviewPageParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestReviewPageParam
+        r"""CommRequestReviewPageParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestReviewPageParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestReviewPageParam.
+        r"""Gets the params of this CommRequestReviewPageParam.
 
         :return: The params of this CommRequestReviewPageParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ReviewPageParam`
@@ -51,7 +51,7 @@ class CommRequestReviewPageParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestReviewPageParam.
+        r"""Sets the params of this CommRequestReviewPageParam.
 
         :param params: The params of this CommRequestReviewPageParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.ReviewPageParam`

@@ -26,7 +26,7 @@ class ListDownloadAddressResponse(SdkResponse):
     }
 
     def __init__(self, address=None):
-        """ListDownloadAddressResponse
+        r"""ListDownloadAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDownloadAddressResponse(SdkResponse):
 
     @property
     def address(self):
-        """Gets the address of this ListDownloadAddressResponse.
+        r"""Gets the address of this ListDownloadAddressResponse.
 
         下载地址列表。
 
@@ -55,7 +55,7 @@ class ListDownloadAddressResponse(SdkResponse):
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListDownloadAddressResponse.
+        r"""Sets the address of this ListDownloadAddressResponse.
 
         下载地址列表。
 

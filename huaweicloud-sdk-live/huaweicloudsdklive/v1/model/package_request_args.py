@@ -29,7 +29,7 @@ class PackageRequestArgs:
     }
 
     def __init__(self, record=None, timeshift=None, live=None):
-        """PackageRequestArgs
+        r"""PackageRequestArgs
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PackageRequestArgs:
 
     @property
     def record(self):
-        """Gets the record of this PackageRequestArgs.
+        r"""Gets the record of this PackageRequestArgs.
 
         录制播放相关配置
 
@@ -68,7 +68,7 @@ class PackageRequestArgs:
 
     @record.setter
     def record(self, record):
-        """Sets the record of this PackageRequestArgs.
+        r"""Sets the record of this PackageRequestArgs.
 
         录制播放相关配置
 
@@ -79,7 +79,7 @@ class PackageRequestArgs:
 
     @property
     def timeshift(self):
-        """Gets the timeshift of this PackageRequestArgs.
+        r"""Gets the timeshift of this PackageRequestArgs.
 
         时移播放相关配置
 
@@ -90,7 +90,7 @@ class PackageRequestArgs:
 
     @timeshift.setter
     def timeshift(self, timeshift):
-        """Sets the timeshift of this PackageRequestArgs.
+        r"""Sets the timeshift of this PackageRequestArgs.
 
         时移播放相关配置
 
@@ -101,7 +101,7 @@ class PackageRequestArgs:
 
     @property
     def live(self):
-        """Gets the live of this PackageRequestArgs.
+        r"""Gets the live of this PackageRequestArgs.
 
         直播播放相关配置
 
@@ -112,7 +112,7 @@ class PackageRequestArgs:
 
     @live.setter
     def live(self, live):
-        """Sets the live of this PackageRequestArgs.
+        r"""Sets the live of this PackageRequestArgs.
 
         直播播放相关配置
 

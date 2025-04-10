@@ -31,7 +31,7 @@ class Common:
     }
 
     def __init__(self, pvc=None, hls_interval=None, dash_interval=None, pack_type=None):
-        """Common
+        r"""Common
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class Common:
 
     @property
     def pvc(self):
-        """Gets the pvc of this Common.
+        r"""Gets the pvc of this Common.
 
         是否开启高清低码功能。  取值如下： - false：关闭。 - true：开启。 
 
@@ -74,7 +74,7 @@ class Common:
 
     @pvc.setter
     def pvc(self, pvc):
-        """Sets the pvc of this Common.
+        r"""Sets the pvc of this Common.
 
         是否开启高清低码功能。  取值如下： - false：关闭。 - true：开启。 
 
@@ -85,7 +85,7 @@ class Common:
 
     @property
     def hls_interval(self):
-        """Gets the hls_interval of this Common.
+        r"""Gets the hls_interval of this Common.
 
         HLS分片间隔，仅封装类型“pack_type”取值为1或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
 
@@ -96,7 +96,7 @@ class Common:
 
     @hls_interval.setter
     def hls_interval(self, hls_interval):
-        """Sets the hls_interval of this Common.
+        r"""Sets the hls_interval of this Common.
 
         HLS分片间隔，仅封装类型“pack_type”取值为1或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
 
@@ -107,7 +107,7 @@ class Common:
 
     @property
     def dash_interval(self):
-        """Gets the dash_interval of this Common.
+        r"""Gets the dash_interval of this Common.
 
         DASH间隔，仅封装类型“pack_type”取值为2或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
 
@@ -118,7 +118,7 @@ class Common:
 
     @dash_interval.setter
     def dash_interval(self, dash_interval):
-        """Sets the dash_interval of this Common.
+        r"""Sets the dash_interval of this Common.
 
         DASH间隔，仅封装类型“pack_type”取值为2或3时，该参数生效。  取值范围：[2，10]。  单位：秒。 
 
@@ -129,7 +129,7 @@ class Common:
 
     @property
     def pack_type(self):
-        """Gets the pack_type of this Common.
+        r"""Gets the pack_type of this Common.
 
         封装类型。  取值如下： - 1：HLS - 2：DASH - 3：HLS+DASH - 4：MP4 - 5：MP3 - 6：ADTS  > pack_type设置为5和6时，不能设置视频参数。 
 
@@ -140,7 +140,7 @@ class Common:
 
     @pack_type.setter
     def pack_type(self, pack_type):
-        """Sets the pack_type of this Common.
+        r"""Sets the pack_type of this Common.
 
         封装类型。  取值如下： - 1：HLS - 2：DASH - 3：HLS+DASH - 4：MP4 - 5：MP3 - 6：ADTS  > pack_type设置为5和6时，不能设置视频参数。 
 

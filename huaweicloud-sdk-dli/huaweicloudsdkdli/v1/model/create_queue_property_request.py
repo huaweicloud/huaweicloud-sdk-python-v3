@@ -27,7 +27,7 @@ class CreateQueuePropertyRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """CreateQueuePropertyRequest
+        r"""CreateQueuePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateQueuePropertyRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this CreateQueuePropertyRequest.
+        r"""Gets the queue_name of this CreateQueuePropertyRequest.
 
         队列名称
 
@@ -60,7 +60,7 @@ class CreateQueuePropertyRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this CreateQueuePropertyRequest.
+        r"""Sets the queue_name of this CreateQueuePropertyRequest.
 
         队列名称
 
@@ -71,7 +71,7 @@ class CreateQueuePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQueuePropertyRequest.
+        r"""Gets the body of this CreateQueuePropertyRequest.
 
         :return: The body of this CreateQueuePropertyRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBody`
@@ -80,7 +80,7 @@ class CreateQueuePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQueuePropertyRequest.
+        r"""Sets the body of this CreateQueuePropertyRequest.
 
         :param body: The body of this CreateQueuePropertyRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequestBody`

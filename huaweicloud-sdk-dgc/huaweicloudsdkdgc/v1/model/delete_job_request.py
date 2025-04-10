@@ -29,7 +29,7 @@ class DeleteJobRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, body=None):
-        """DeleteJobRequest
+        r"""DeleteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteJobRequest.
+        r"""Gets the workspace of this DeleteJobRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class DeleteJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteJobRequest.
+        r"""Sets the workspace of this DeleteJobRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class DeleteJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this DeleteJobRequest.
+        r"""Gets the job_name of this DeleteJobRequest.
 
         作业名称.
 
@@ -89,7 +89,7 @@ class DeleteJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this DeleteJobRequest.
+        r"""Sets the job_name of this DeleteJobRequest.
 
         作业名称.
 
@@ -100,7 +100,7 @@ class DeleteJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteJobRequest.
+        r"""Gets the body of this DeleteJobRequest.
 
         :return: The body of this DeleteJobRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteReq`
@@ -109,7 +109,7 @@ class DeleteJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteJobRequest.
+        r"""Sets the body of this DeleteJobRequest.
 
         :param body: The body of this DeleteJobRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.DeleteReq`

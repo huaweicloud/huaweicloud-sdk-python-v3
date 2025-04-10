@@ -29,7 +29,7 @@ class SupplementDataInfoSupplementDataRunTime:
     }
 
     def __init__(self, time_of_day=None, day_of_week=None, day_of_month=None):
-        """SupplementDataInfoSupplementDataRunTime
+        r"""SupplementDataInfoSupplementDataRunTime
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SupplementDataInfoSupplementDataRunTime:
 
     @property
     def time_of_day(self):
-        """Gets the time_of_day of this SupplementDataInfoSupplementDataRunTime.
+        r"""Gets the time_of_day of this SupplementDataInfoSupplementDataRunTime.
 
         每天的可补数据时间段，如：每天的10点15分到23点30分，表示：10:15-23:30
 
@@ -68,7 +68,7 @@ class SupplementDataInfoSupplementDataRunTime:
 
     @time_of_day.setter
     def time_of_day(self, time_of_day):
-        """Sets the time_of_day of this SupplementDataInfoSupplementDataRunTime.
+        r"""Sets the time_of_day of this SupplementDataInfoSupplementDataRunTime.
 
         每天的可补数据时间段，如：每天的10点15分到23点30分，表示：10:15-23:30
 
@@ -79,7 +79,7 @@ class SupplementDataInfoSupplementDataRunTime:
 
     @property
     def day_of_week(self):
-        """Gets the day_of_week of this SupplementDataInfoSupplementDataRunTime.
+        r"""Gets the day_of_week of this SupplementDataInfoSupplementDataRunTime.
 
         每周的星期几可以补数据，如：每周一，周三的每天10点15分到23点30分。
 
@@ -90,7 +90,7 @@ class SupplementDataInfoSupplementDataRunTime:
 
     @day_of_week.setter
     def day_of_week(self, day_of_week):
-        """Sets the day_of_week of this SupplementDataInfoSupplementDataRunTime.
+        r"""Sets the day_of_week of this SupplementDataInfoSupplementDataRunTime.
 
         每周的星期几可以补数据，如：每周一，周三的每天10点15分到23点30分。
 
@@ -101,7 +101,7 @@ class SupplementDataInfoSupplementDataRunTime:
 
     @property
     def day_of_month(self):
-        """Gets the day_of_month of this SupplementDataInfoSupplementDataRunTime.
+        r"""Gets the day_of_month of this SupplementDataInfoSupplementDataRunTime.
 
         每个月的哪几天可以补数据，如每月1号，3号，表示：1,3
 
@@ -112,7 +112,7 @@ class SupplementDataInfoSupplementDataRunTime:
 
     @day_of_month.setter
     def day_of_month(self, day_of_month):
-        """Sets the day_of_month of this SupplementDataInfoSupplementDataRunTime.
+        r"""Sets the day_of_month of this SupplementDataInfoSupplementDataRunTime.
 
         每个月的哪几天可以补数据，如每月1号，3号，表示：1,3
 

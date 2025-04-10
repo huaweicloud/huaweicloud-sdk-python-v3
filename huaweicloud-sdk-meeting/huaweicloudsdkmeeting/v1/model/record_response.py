@@ -24,7 +24,7 @@ class RecordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RecordResponse
+        r"""RecordResponse
 
         The model defined in huaweicloud sdk
 

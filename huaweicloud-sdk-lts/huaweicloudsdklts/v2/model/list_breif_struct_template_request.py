@@ -23,7 +23,7 @@ class ListBreifStructTemplateRequest:
     }
 
     def __init__(self):
-        """ListBreifStructTemplateRequest
+        r"""ListBreifStructTemplateRequest
 
         The model defined in huaweicloud sdk
 

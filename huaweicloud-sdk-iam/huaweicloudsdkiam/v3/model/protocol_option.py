@@ -25,7 +25,7 @@ class ProtocolOption:
     }
 
     def __init__(self, mapping_id=None):
-        """ProtocolOption
+        r"""ProtocolOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProtocolOption:
 
     @property
     def mapping_id(self):
-        """Gets the mapping_id of this ProtocolOption.
+        r"""Gets the mapping_id of this ProtocolOption.
 
         映射ID。身份提供商类型为iam_user_sso时，不需要绑定映射ID，无需传入此字段；否则此字段必填。
 
@@ -54,7 +54,7 @@ class ProtocolOption:
 
     @mapping_id.setter
     def mapping_id(self, mapping_id):
-        """Sets the mapping_id of this ProtocolOption.
+        r"""Sets the mapping_id of this ProtocolOption.
 
         映射ID。身份提供商类型为iam_user_sso时，不需要绑定映射ID，无需传入此字段；否则此字段必填。
 

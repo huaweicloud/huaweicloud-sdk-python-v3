@@ -28,7 +28,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_templates=None, meta_data=None):
-        """ListAlarmTemplatesResponse
+        r"""ListAlarmTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @property
     def alarm_templates(self):
-        """Gets the alarm_templates of this ListAlarmTemplatesResponse.
+        r"""Gets the alarm_templates of this ListAlarmTemplatesResponse.
 
         自定义告警模板详细信息。
 
@@ -62,7 +62,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @alarm_templates.setter
     def alarm_templates(self, alarm_templates):
-        """Sets the alarm_templates of this ListAlarmTemplatesResponse.
+        r"""Sets the alarm_templates of this ListAlarmTemplatesResponse.
 
         自定义告警模板详细信息。
 
@@ -73,7 +73,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListAlarmTemplatesResponse.
+        r"""Gets the meta_data of this ListAlarmTemplatesResponse.
 
         :return: The meta_data of this ListAlarmTemplatesResponse.
         :rtype: :class:`huaweicloudsdkces.v1.MetaData`
@@ -82,7 +82,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListAlarmTemplatesResponse.
+        r"""Sets the meta_data of this ListAlarmTemplatesResponse.
 
         :param meta_data: The meta_data of this ListAlarmTemplatesResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`

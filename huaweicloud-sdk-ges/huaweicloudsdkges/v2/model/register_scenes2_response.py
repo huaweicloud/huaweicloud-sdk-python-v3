@@ -26,7 +26,7 @@ class RegisterScenes2Response(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RegisterScenes2Response
+        r"""RegisterScenes2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterScenes2Response(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RegisterScenes2Response.
+        r"""Gets the result of this RegisterScenes2Response.
 
         订阅scenes结果。
 
@@ -55,7 +55,7 @@ class RegisterScenes2Response(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RegisterScenes2Response.
+        r"""Sets the result of this RegisterScenes2Response.
 
         订阅scenes结果。
 

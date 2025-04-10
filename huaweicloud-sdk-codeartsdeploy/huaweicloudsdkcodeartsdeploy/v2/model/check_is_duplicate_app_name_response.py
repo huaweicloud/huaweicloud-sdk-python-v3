@@ -28,7 +28,7 @@ class CheckIsDuplicateAppNameResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CheckIsDuplicateAppNameResponse
+        r"""CheckIsDuplicateAppNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckIsDuplicateAppNameResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckIsDuplicateAppNameResponse.
+        r"""Gets the result of this CheckIsDuplicateAppNameResponse.
 
         项目下是否存在同名应用
 
@@ -62,7 +62,7 @@ class CheckIsDuplicateAppNameResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckIsDuplicateAppNameResponse.
+        r"""Sets the result of this CheckIsDuplicateAppNameResponse.
 
         项目下是否存在同名应用
 
@@ -73,7 +73,7 @@ class CheckIsDuplicateAppNameResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CheckIsDuplicateAppNameResponse.
+        r"""Gets the status of this CheckIsDuplicateAppNameResponse.
 
         请求成功失败状态
 
@@ -84,7 +84,7 @@ class CheckIsDuplicateAppNameResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckIsDuplicateAppNameResponse.
+        r"""Sets the status of this CheckIsDuplicateAppNameResponse.
 
         请求成功失败状态
 

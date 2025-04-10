@@ -40,7 +40,7 @@ class ListSystemTasksResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None, message=None, subtasks=None):
-        """ListSystemTasksResponse
+        r"""ListSystemTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListSystemTasksResponse.
+        r"""Gets the id of this ListSystemTasksResponse.
 
         作业ID
 
@@ -104,7 +104,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSystemTasksResponse.
+        r"""Sets the id of this ListSystemTasksResponse.
 
         作业ID
 
@@ -115,7 +115,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ListSystemTasksResponse.
+        r"""Gets the name of this ListSystemTasksResponse.
 
         作业名称
 
@@ -126,7 +126,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSystemTasksResponse.
+        r"""Sets the name of this ListSystemTasksResponse.
 
         作业名称
 
@@ -137,7 +137,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSystemTasksResponse.
+        r"""Gets the start_time of this ListSystemTasksResponse.
 
         作业开始日期 13位时间戳
 
@@ -148,7 +148,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSystemTasksResponse.
+        r"""Sets the start_time of this ListSystemTasksResponse.
 
         作业开始日期 13位时间戳
 
@@ -159,7 +159,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSystemTasksResponse.
+        r"""Gets the end_time of this ListSystemTasksResponse.
 
         作业结束日期 13位时间戳
 
@@ -170,7 +170,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSystemTasksResponse.
+        r"""Sets the end_time of this ListSystemTasksResponse.
 
         作业结束日期 13位时间戳
 
@@ -181,7 +181,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def last_update(self):
-        """Gets the last_update of this ListSystemTasksResponse.
+        r"""Gets the last_update of this ListSystemTasksResponse.
 
         作业最后更新日期 13位时间戳
 
@@ -192,7 +192,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @last_update.setter
     def last_update(self, last_update):
-        """Sets the last_update of this ListSystemTasksResponse.
+        r"""Sets the last_update of this ListSystemTasksResponse.
 
         作业最后更新日期 13位时间戳
 
@@ -203,7 +203,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListSystemTasksResponse.
+        r"""Gets the status of this ListSystemTasksResponse.
 
         作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
 
@@ -214,7 +214,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSystemTasksResponse.
+        r"""Sets the status of this ListSystemTasksResponse.
 
         作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
 
@@ -225,7 +225,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListSystemTasksResponse.
+        r"""Gets the message of this ListSystemTasksResponse.
 
         作业消息
 
@@ -236,7 +236,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListSystemTasksResponse.
+        r"""Sets the message of this ListSystemTasksResponse.
 
         作业消息
 
@@ -247,7 +247,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @property
     def subtasks(self):
-        """Gets the subtasks of this ListSystemTasksResponse.
+        r"""Gets the subtasks of this ListSystemTasksResponse.
 
         当前作业包含的子作业
 
@@ -258,7 +258,7 @@ class ListSystemTasksResponse(SdkResponse):
 
     @subtasks.setter
     def subtasks(self, subtasks):
-        """Sets the subtasks of this ListSystemTasksResponse.
+        r"""Sets the subtasks of this ListSystemTasksResponse.
 
         当前作业包含的子作业
 

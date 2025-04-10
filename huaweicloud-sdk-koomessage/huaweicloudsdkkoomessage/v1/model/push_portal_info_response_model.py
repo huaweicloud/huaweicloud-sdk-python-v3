@@ -25,7 +25,7 @@ class PushPortalInfoResponseModel:
     }
 
     def __init__(self, data=None):
-        """PushPortalInfoResponseModel
+        r"""PushPortalInfoResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PushPortalInfoResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this PushPortalInfoResponseModel.
+        r"""Gets the data of this PushPortalInfoResponseModel.
 
         :return: The data of this PushPortalInfoResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PushPortalInfoResponseModelData`
@@ -52,7 +52,7 @@ class PushPortalInfoResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PushPortalInfoResponseModel.
+        r"""Sets the data of this PushPortalInfoResponseModel.
 
         :param data: The data of this PushPortalInfoResponseModel.
         :type data: :class:`huaweicloudsdkkoomessage.v1.PushPortalInfoResponseModelData`

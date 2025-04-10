@@ -27,7 +27,7 @@ class CodeSource:
     }
 
     def __init__(self, type=None, params=None):
-        """CodeSource
+        r"""CodeSource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CodeSource:
 
     @property
     def type(self):
-        """Gets the type of this CodeSource.
+        r"""Gets the type of this CodeSource.
 
         流水线源类型
 
@@ -61,7 +61,7 @@ class CodeSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CodeSource.
+        r"""Sets the type of this CodeSource.
 
         流水线源类型
 
@@ -72,7 +72,7 @@ class CodeSource:
 
     @property
     def params(self):
-        """Gets the params of this CodeSource.
+        r"""Gets the params of this CodeSource.
 
         :return: The params of this CodeSource.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CodeSourceParams`
@@ -81,7 +81,7 @@ class CodeSource:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CodeSource.
+        r"""Sets the params of this CodeSource.
 
         :param params: The params of this CodeSource.
         :type params: :class:`huaweicloudsdkcodeartspipeline.v2.CodeSourceParams`

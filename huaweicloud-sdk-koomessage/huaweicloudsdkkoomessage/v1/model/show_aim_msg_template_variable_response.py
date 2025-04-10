@@ -28,7 +28,7 @@ class ShowAimMsgTemplateVariableResponse(SdkResponse):
     }
 
     def __init__(self, results=None, total=None):
-        """ShowAimMsgTemplateVariableResponse
+        r"""ShowAimMsgTemplateVariableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAimMsgTemplateVariableResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ShowAimMsgTemplateVariableResponse.
+        r"""Gets the results of this ShowAimMsgTemplateVariableResponse.
 
         返回结果列表。
 
@@ -62,7 +62,7 @@ class ShowAimMsgTemplateVariableResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ShowAimMsgTemplateVariableResponse.
+        r"""Sets the results of this ShowAimMsgTemplateVariableResponse.
 
         返回结果列表。
 
@@ -73,7 +73,7 @@ class ShowAimMsgTemplateVariableResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowAimMsgTemplateVariableResponse.
+        r"""Gets the total of this ShowAimMsgTemplateVariableResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ShowAimMsgTemplateVariableResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowAimMsgTemplateVariableResponse.
+        r"""Sets the total of this ShowAimMsgTemplateVariableResponse.
 
         总数。
 

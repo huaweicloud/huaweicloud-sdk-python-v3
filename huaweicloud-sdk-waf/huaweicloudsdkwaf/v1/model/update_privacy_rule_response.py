@@ -40,7 +40,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, status=None, url=None, category=None, index=None, description=None):
-        """UpdatePrivacyRuleResponse
+        r"""UpdatePrivacyRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePrivacyRuleResponse.
+        r"""Gets the id of this UpdatePrivacyRuleResponse.
 
         规则id
 
@@ -104,7 +104,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePrivacyRuleResponse.
+        r"""Sets the id of this UpdatePrivacyRuleResponse.
 
         规则id
 
@@ -115,7 +115,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdatePrivacyRuleResponse.
+        r"""Gets the policyid of this UpdatePrivacyRuleResponse.
 
         策略id
 
@@ -126,7 +126,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdatePrivacyRuleResponse.
+        r"""Sets the policyid of this UpdatePrivacyRuleResponse.
 
         策略id
 
@@ -137,7 +137,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdatePrivacyRuleResponse.
+        r"""Gets the timestamp of this UpdatePrivacyRuleResponse.
 
         创建规则的时间，格式为13位毫秒时间戳
 
@@ -148,7 +148,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdatePrivacyRuleResponse.
+        r"""Sets the timestamp of this UpdatePrivacyRuleResponse.
 
         创建规则的时间，格式为13位毫秒时间戳
 
@@ -159,7 +159,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePrivacyRuleResponse.
+        r"""Gets the status of this UpdatePrivacyRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -170,7 +170,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePrivacyRuleResponse.
+        r"""Sets the status of this UpdatePrivacyRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -181,7 +181,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this UpdatePrivacyRuleResponse.
+        r"""Gets the url of this UpdatePrivacyRuleResponse.
 
         隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
@@ -192,7 +192,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdatePrivacyRuleResponse.
+        r"""Sets the url of this UpdatePrivacyRuleResponse.
 
         隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
@@ -203,7 +203,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this UpdatePrivacyRuleResponse.
+        r"""Gets the category of this UpdatePrivacyRuleResponse.
 
         屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
@@ -214,7 +214,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdatePrivacyRuleResponse.
+        r"""Sets the category of this UpdatePrivacyRuleResponse.
 
         屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
@@ -225,7 +225,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def index(self):
-        """Gets the index of this UpdatePrivacyRuleResponse.
+        r"""Gets the index of this UpdatePrivacyRuleResponse.
 
         屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
 
@@ -236,7 +236,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @index.setter
     def index(self, index):
-        """Sets the index of this UpdatePrivacyRuleResponse.
+        r"""Sets the index of this UpdatePrivacyRuleResponse.
 
         屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
 
@@ -247,7 +247,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdatePrivacyRuleResponse.
+        r"""Gets the description of this UpdatePrivacyRuleResponse.
 
         规则描述，可选参数，设置该规则的备注信息。
 
@@ -258,7 +258,7 @@ class UpdatePrivacyRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePrivacyRuleResponse.
+        r"""Sets the description of this UpdatePrivacyRuleResponse.
 
         规则描述，可选参数，设置该规则的备注信息。
 

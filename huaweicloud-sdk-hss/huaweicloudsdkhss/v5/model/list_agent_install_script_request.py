@@ -39,13 +39,13 @@ class ListAgentInstallScriptRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, os_type=None, os_arch=None, outside_host=None, outside_group_id=None, batch_install=None, type=None):
-        """ListAgentInstallScriptRequest
+        r"""ListAgentInstallScriptRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param os_type: os类型：Windows和Linux
         :type os_type: str
@@ -90,7 +90,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListAgentInstallScriptRequest.
+        r"""Gets the region of this ListAgentInstallScriptRequest.
 
         Region ID
 
@@ -101,7 +101,7 @@ class ListAgentInstallScriptRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListAgentInstallScriptRequest.
+        r"""Sets the region of this ListAgentInstallScriptRequest.
 
         Region ID
 
@@ -112,9 +112,9 @@ class ListAgentInstallScriptRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAgentInstallScriptRequest.
+        r"""Gets the enterprise_project_id of this ListAgentInstallScriptRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAgentInstallScriptRequest.
         :rtype: str
@@ -123,9 +123,9 @@ class ListAgentInstallScriptRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAgentInstallScriptRequest.
+        r"""Sets the enterprise_project_id of this ListAgentInstallScriptRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAgentInstallScriptRequest.
         :type enterprise_project_id: str
@@ -134,7 +134,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListAgentInstallScriptRequest.
+        r"""Gets the os_type of this ListAgentInstallScriptRequest.
 
         os类型：Windows和Linux
 
@@ -145,7 +145,7 @@ class ListAgentInstallScriptRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListAgentInstallScriptRequest.
+        r"""Sets the os_type of this ListAgentInstallScriptRequest.
 
         os类型：Windows和Linux
 
@@ -156,7 +156,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def os_arch(self):
-        """Gets the os_arch of this ListAgentInstallScriptRequest.
+        r"""Gets the os_arch of this ListAgentInstallScriptRequest.
 
         系统架构：x86_64和aarch64；当os_type为Windows时，只能选择x86_64
 
@@ -167,7 +167,7 @@ class ListAgentInstallScriptRequest:
 
     @os_arch.setter
     def os_arch(self, os_arch):
-        """Sets the os_arch of this ListAgentInstallScriptRequest.
+        r"""Sets the os_arch of this ListAgentInstallScriptRequest.
 
         系统架构：x86_64和aarch64；当os_type为Windows时，只能选择x86_64
 
@@ -178,7 +178,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def outside_host(self):
-        """Gets the outside_host of this ListAgentInstallScriptRequest.
+        r"""Gets the outside_host of this ListAgentInstallScriptRequest.
 
         是否非华为云
 
@@ -189,7 +189,7 @@ class ListAgentInstallScriptRequest:
 
     @outside_host.setter
     def outside_host(self, outside_host):
-        """Sets the outside_host of this ListAgentInstallScriptRequest.
+        r"""Sets the outside_host of this ListAgentInstallScriptRequest.
 
         是否非华为云
 
@@ -200,7 +200,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def outside_group_id(self):
-        """Gets the outside_group_id of this ListAgentInstallScriptRequest.
+        r"""Gets the outside_group_id of this ListAgentInstallScriptRequest.
 
         服务器组ID
 
@@ -211,7 +211,7 @@ class ListAgentInstallScriptRequest:
 
     @outside_group_id.setter
     def outside_group_id(self, outside_group_id):
-        """Sets the outside_group_id of this ListAgentInstallScriptRequest.
+        r"""Sets the outside_group_id of this ListAgentInstallScriptRequest.
 
         服务器组ID
 
@@ -222,7 +222,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def batch_install(self):
-        """Gets the batch_install of this ListAgentInstallScriptRequest.
+        r"""Gets the batch_install of this ListAgentInstallScriptRequest.
 
         是否批量安装
 
@@ -233,7 +233,7 @@ class ListAgentInstallScriptRequest:
 
     @batch_install.setter
     def batch_install(self, batch_install):
-        """Sets the batch_install of this ListAgentInstallScriptRequest.
+        r"""Sets the batch_install of this ListAgentInstallScriptRequest.
 
         是否批量安装
 
@@ -244,7 +244,7 @@ class ListAgentInstallScriptRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAgentInstallScriptRequest.
+        r"""Gets the type of this ListAgentInstallScriptRequest.
 
         类型：password和ssh_key
 
@@ -255,7 +255,7 @@ class ListAgentInstallScriptRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAgentInstallScriptRequest.
+        r"""Sets the type of this ListAgentInstallScriptRequest.
 
         类型：password和ssh_key
 

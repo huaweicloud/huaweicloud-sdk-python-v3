@@ -29,7 +29,7 @@ class MaintenanceWindow:
     }
 
     def __init__(self, day=None, start_time=None, end_time=None):
-        """MaintenanceWindow
+        r"""MaintenanceWindow
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MaintenanceWindow:
 
     @property
     def day(self):
-        """Gets the day of this MaintenanceWindow.
+        r"""Gets the day of this MaintenanceWindow.
 
         日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。
 
@@ -65,7 +65,7 @@ class MaintenanceWindow:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this MaintenanceWindow.
+        r"""Sets the day of this MaintenanceWindow.
 
         日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。
 
@@ -76,7 +76,7 @@ class MaintenanceWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MaintenanceWindow.
+        r"""Gets the start_time of this MaintenanceWindow.
 
         开始时间，UTC时间，格式为HH:mm，例如：22:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
 
@@ -87,7 +87,7 @@ class MaintenanceWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MaintenanceWindow.
+        r"""Sets the start_time of this MaintenanceWindow.
 
         开始时间，UTC时间，格式为HH:mm，例如：22:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
 
@@ -98,7 +98,7 @@ class MaintenanceWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MaintenanceWindow.
+        r"""Gets the end_time of this MaintenanceWindow.
 
         结束时间，UTC时间，格式为HH:mm，例如：02:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
 
@@ -109,7 +109,7 @@ class MaintenanceWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MaintenanceWindow.
+        r"""Sets the end_time of this MaintenanceWindow.
 
         结束时间，UTC时间，格式为HH:mm，例如：02:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
 

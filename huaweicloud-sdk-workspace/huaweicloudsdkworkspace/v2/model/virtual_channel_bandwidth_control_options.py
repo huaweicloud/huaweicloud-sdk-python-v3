@@ -25,7 +25,7 @@ class VirtualChannelBandwidthControlOptions:
     }
 
     def __init__(self, virtual_channel_bandwidth_control_value=None):
-        """VirtualChannelBandwidthControlOptions
+        r"""VirtualChannelBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VirtualChannelBandwidthControlOptions:
 
     @property
     def virtual_channel_bandwidth_control_value(self):
-        """Gets the virtual_channel_bandwidth_control_value of this VirtualChannelBandwidthControlOptions.
+        r"""Gets the virtual_channel_bandwidth_control_value of this VirtualChannelBandwidthControlOptions.
 
         虚拟通道带宽控制量（Kbps）。取值范围为[500-20000]。默认：20000。
 
@@ -54,7 +54,7 @@ class VirtualChannelBandwidthControlOptions:
 
     @virtual_channel_bandwidth_control_value.setter
     def virtual_channel_bandwidth_control_value(self, virtual_channel_bandwidth_control_value):
-        """Sets the virtual_channel_bandwidth_control_value of this VirtualChannelBandwidthControlOptions.
+        r"""Sets the virtual_channel_bandwidth_control_value of this VirtualChannelBandwidthControlOptions.
 
         虚拟通道带宽控制量（Kbps）。取值范围为[500-20000]。默认：20000。
 

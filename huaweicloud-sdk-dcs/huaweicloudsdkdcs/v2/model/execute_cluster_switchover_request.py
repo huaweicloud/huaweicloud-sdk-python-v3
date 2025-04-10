@@ -29,7 +29,7 @@ class ExecuteClusterSwitchoverRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, node_id=None):
-        """ExecuteClusterSwitchoverRequest
+        r"""ExecuteClusterSwitchoverRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExecuteClusterSwitchoverRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExecuteClusterSwitchoverRequest.
+        r"""Gets the instance_id of this ExecuteClusterSwitchoverRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ExecuteClusterSwitchoverRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExecuteClusterSwitchoverRequest.
+        r"""Sets the instance_id of this ExecuteClusterSwitchoverRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ExecuteClusterSwitchoverRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ExecuteClusterSwitchoverRequest.
+        r"""Gets the group_id of this ExecuteClusterSwitchoverRequest.
 
         分片ID
 
@@ -87,7 +87,7 @@ class ExecuteClusterSwitchoverRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ExecuteClusterSwitchoverRequest.
+        r"""Sets the group_id of this ExecuteClusterSwitchoverRequest.
 
         分片ID
 
@@ -98,7 +98,7 @@ class ExecuteClusterSwitchoverRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ExecuteClusterSwitchoverRequest.
+        r"""Gets the node_id of this ExecuteClusterSwitchoverRequest.
 
         升级为主节点的节点ID
 
@@ -109,7 +109,7 @@ class ExecuteClusterSwitchoverRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ExecuteClusterSwitchoverRequest.
+        r"""Sets the node_id of this ExecuteClusterSwitchoverRequest.
 
         升级为主节点的节点ID
 

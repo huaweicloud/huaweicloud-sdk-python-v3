@@ -25,7 +25,7 @@ class AssumeroleSessionuser:
     }
 
     def __init__(self, name=None):
-        """AssumeroleSessionuser
+        r"""AssumeroleSessionuser
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AssumeroleSessionuser:
 
     @property
     def name(self):
-        """Gets the name of this AssumeroleSessionuser.
+        r"""Gets the name of this AssumeroleSessionuser.
 
         委托方对应的企业用户名。用户名需满足如下规则：长度5~64，只能包含大写字母、小写字母、数字（0-9）、特殊字符（\"-\"与\"_\"）且只能以字母开头。
 
@@ -54,7 +54,7 @@ class AssumeroleSessionuser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssumeroleSessionuser.
+        r"""Sets the name of this AssumeroleSessionuser.
 
         委托方对应的企业用户名。用户名需满足如下规则：长度5~64，只能包含大写字母、小写字母、数字（0-9）、特殊字符（\"-\"与\"_\"）且只能以字母开头。
 

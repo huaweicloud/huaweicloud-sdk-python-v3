@@ -25,7 +25,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequestBody:
     }
 
     def __init__(self, central_network_er_route_table_attachment=None):
-        """UpdateCentralNetworkErRouteTableAttachmentRequestBody
+        r"""UpdateCentralNetworkErRouteTableAttachmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequestBody:
 
     @property
     def central_network_er_route_table_attachment(self):
-        """Gets the central_network_er_route_table_attachment of this UpdateCentralNetworkErRouteTableAttachmentRequestBody.
+        r"""Gets the central_network_er_route_table_attachment of this UpdateCentralNetworkErRouteTableAttachmentRequestBody.
 
         :return: The central_network_er_route_table_attachment of this UpdateCentralNetworkErRouteTableAttachmentRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkErRouteTableAttachment`
@@ -51,7 +51,7 @@ class UpdateCentralNetworkErRouteTableAttachmentRequestBody:
 
     @central_network_er_route_table_attachment.setter
     def central_network_er_route_table_attachment(self, central_network_er_route_table_attachment):
-        """Sets the central_network_er_route_table_attachment of this UpdateCentralNetworkErRouteTableAttachmentRequestBody.
+        r"""Sets the central_network_er_route_table_attachment of this UpdateCentralNetworkErRouteTableAttachmentRequestBody.
 
         :param central_network_er_route_table_attachment: The central_network_er_route_table_attachment of this UpdateCentralNetworkErRouteTableAttachmentRequestBody.
         :type central_network_er_route_table_attachment: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkErRouteTableAttachment`

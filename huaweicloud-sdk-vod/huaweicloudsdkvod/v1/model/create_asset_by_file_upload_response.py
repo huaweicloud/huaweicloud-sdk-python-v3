@@ -34,7 +34,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, video_upload_url=None, cover_upload_url=None, subtitle_upload_urls=None, target=None):
-        """CreateAssetByFileUploadResponse
+        r"""CreateAssetByFileUploadResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreateAssetByFileUploadResponse.
+        r"""Gets the asset_id of this CreateAssetByFileUploadResponse.
 
         媒体ID 
 
@@ -83,7 +83,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreateAssetByFileUploadResponse.
+        r"""Sets the asset_id of this CreateAssetByFileUploadResponse.
 
         媒体ID 
 
@@ -94,7 +94,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @property
     def video_upload_url(self):
-        """Gets the video_upload_url of this CreateAssetByFileUploadResponse.
+        r"""Gets the video_upload_url of this CreateAssetByFileUploadResponse.
 
         视频上传URL 
 
@@ -105,7 +105,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @video_upload_url.setter
     def video_upload_url(self, video_upload_url):
-        """Sets the video_upload_url of this CreateAssetByFileUploadResponse.
+        r"""Sets the video_upload_url of this CreateAssetByFileUploadResponse.
 
         视频上传URL 
 
@@ -116,7 +116,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @property
     def cover_upload_url(self):
-        """Gets the cover_upload_url of this CreateAssetByFileUploadResponse.
+        r"""Gets the cover_upload_url of this CreateAssetByFileUploadResponse.
 
         封面上传地址 
 
@@ -127,7 +127,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @cover_upload_url.setter
     def cover_upload_url(self, cover_upload_url):
-        """Sets the cover_upload_url of this CreateAssetByFileUploadResponse.
+        r"""Sets the cover_upload_url of this CreateAssetByFileUploadResponse.
 
         封面上传地址 
 
@@ -138,7 +138,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @property
     def subtitle_upload_urls(self):
-        """Gets the subtitle_upload_urls of this CreateAssetByFileUploadResponse.
+        r"""Gets the subtitle_upload_urls of this CreateAssetByFileUploadResponse.
 
         字幕文件上传url数组 
 
@@ -149,7 +149,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @subtitle_upload_urls.setter
     def subtitle_upload_urls(self, subtitle_upload_urls):
-        """Sets the subtitle_upload_urls of this CreateAssetByFileUploadResponse.
+        r"""Sets the subtitle_upload_urls of this CreateAssetByFileUploadResponse.
 
         字幕文件上传url数组 
 
@@ -160,7 +160,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @property
     def target(self):
-        """Gets the target of this CreateAssetByFileUploadResponse.
+        r"""Gets the target of this CreateAssetByFileUploadResponse.
 
         :return: The target of this CreateAssetByFileUploadResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
@@ -169,7 +169,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
 
     @target.setter
     def target(self, target):
-        """Sets the target of this CreateAssetByFileUploadResponse.
+        r"""Sets the target of this CreateAssetByFileUploadResponse.
 
         :param target: The target of this CreateAssetByFileUploadResponse.
         :type target: :class:`huaweicloudsdkvod.v1.FileAddr`

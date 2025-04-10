@@ -25,7 +25,7 @@ class AppResetCreate:
     }
 
     def __init__(self, app_secret=None):
-        """AppResetCreate
+        r"""AppResetCreate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AppResetCreate:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this AppResetCreate.
+        r"""Gets the app_secret of this AppResetCreate.
 
         密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。用户自定义APP的密钥需要开启配额开关。
 
@@ -54,7 +54,7 @@ class AppResetCreate:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this AppResetCreate.
+        r"""Sets the app_secret of this AppResetCreate.
 
         密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。用户自定义APP的密钥需要开启配额开关。
 

@@ -31,7 +31,7 @@ class UpdateTestCaseCommentRequest:
     }
 
     def __init__(self, project_id=None, testcase_id=None, comment_id=None, body=None):
-        """UpdateTestCaseCommentRequest
+        r"""UpdateTestCaseCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateTestCaseCommentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTestCaseCommentRequest.
+        r"""Gets the project_id of this UpdateTestCaseCommentRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -72,7 +72,7 @@ class UpdateTestCaseCommentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTestCaseCommentRequest.
+        r"""Sets the project_id of this UpdateTestCaseCommentRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -83,7 +83,7 @@ class UpdateTestCaseCommentRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this UpdateTestCaseCommentRequest.
+        r"""Gets the testcase_id of this UpdateTestCaseCommentRequest.
 
         用例uri
 
@@ -94,7 +94,7 @@ class UpdateTestCaseCommentRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this UpdateTestCaseCommentRequest.
+        r"""Sets the testcase_id of this UpdateTestCaseCommentRequest.
 
         用例uri
 
@@ -105,7 +105,7 @@ class UpdateTestCaseCommentRequest:
 
     @property
     def comment_id(self):
-        """Gets the comment_id of this UpdateTestCaseCommentRequest.
+        r"""Gets the comment_id of this UpdateTestCaseCommentRequest.
 
         评论uri
 
@@ -116,7 +116,7 @@ class UpdateTestCaseCommentRequest:
 
     @comment_id.setter
     def comment_id(self, comment_id):
-        """Sets the comment_id of this UpdateTestCaseCommentRequest.
+        r"""Sets the comment_id of this UpdateTestCaseCommentRequest.
 
         评论uri
 
@@ -127,7 +127,7 @@ class UpdateTestCaseCommentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTestCaseCommentRequest.
+        r"""Gets the body of this UpdateTestCaseCommentRequest.
 
         :return: The body of this UpdateTestCaseCommentRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCaseCommentInfo`
@@ -136,7 +136,7 @@ class UpdateTestCaseCommentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTestCaseCommentRequest.
+        r"""Sets the body of this UpdateTestCaseCommentRequest.
 
         :param body: The body of this UpdateTestCaseCommentRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.TestCaseCommentInfo`

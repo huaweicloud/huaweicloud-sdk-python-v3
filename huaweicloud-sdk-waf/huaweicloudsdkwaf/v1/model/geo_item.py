@@ -27,7 +27,7 @@ class GeoItem:
     }
 
     def __init__(self, key=None, num=None):
-        """GeoItem
+        r"""GeoItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GeoItem:
 
     @property
     def key(self):
-        """Gets the key of this GeoItem.
+        r"""Gets the key of this GeoItem.
 
         攻击来源区域
 
@@ -61,7 +61,7 @@ class GeoItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this GeoItem.
+        r"""Sets the key of this GeoItem.
 
         攻击来源区域
 
@@ -72,7 +72,7 @@ class GeoItem:
 
     @property
     def num(self):
-        """Gets the num of this GeoItem.
+        r"""Gets the num of this GeoItem.
 
         数量
 
@@ -83,7 +83,7 @@ class GeoItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this GeoItem.
+        r"""Sets the num of this GeoItem.
 
         数量
 

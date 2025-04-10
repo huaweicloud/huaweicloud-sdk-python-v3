@@ -26,7 +26,7 @@ class StopVpecpResponse(SdkResponse):
     }
 
     def __init__(self, action=None):
-        """StopVpecpResponse
+        r"""StopVpecpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopVpecpResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this StopVpecpResponse.
+        r"""Gets the action of this StopVpecpResponse.
 
         操作行为。固定为：deleteVpcepservice，表示已关闭终端节点。
 
@@ -55,7 +55,7 @@ class StopVpecpResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StopVpecpResponse.
+        r"""Sets the action of this StopVpecpResponse.
 
         操作行为。固定为：deleteVpcepservice，表示已关闭终端节点。
 

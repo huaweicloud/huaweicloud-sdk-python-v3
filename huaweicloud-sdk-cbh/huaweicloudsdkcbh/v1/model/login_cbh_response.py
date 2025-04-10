@@ -26,7 +26,7 @@ class LoginCbhResponse(SdkResponse):
     }
 
     def __init__(self, login_url=None):
-        """LoginCbhResponse
+        r"""LoginCbhResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class LoginCbhResponse(SdkResponse):
 
     @property
     def login_url(self):
-        """Gets the login_url of this LoginCbhResponse.
+        r"""Gets the login_url of this LoginCbhResponse.
 
         IAM登录链接
 
@@ -55,7 +55,7 @@ class LoginCbhResponse(SdkResponse):
 
     @login_url.setter
     def login_url(self, login_url):
-        """Sets the login_url of this LoginCbhResponse.
+        r"""Sets the login_url of this LoginCbhResponse.
 
         IAM登录链接
 

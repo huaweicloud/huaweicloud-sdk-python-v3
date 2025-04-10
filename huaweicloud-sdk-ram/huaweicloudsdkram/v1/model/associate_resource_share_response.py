@@ -26,7 +26,7 @@ class AssociateResourceShareResponse(SdkResponse):
     }
 
     def __init__(self, resource_share_associations=None):
-        """AssociateResourceShareResponse
+        r"""AssociateResourceShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateResourceShareResponse(SdkResponse):
 
     @property
     def resource_share_associations(self):
-        """Gets the resource_share_associations of this AssociateResourceShareResponse.
+        r"""Gets the resource_share_associations of this AssociateResourceShareResponse.
 
         :return: The resource_share_associations of this AssociateResourceShareResponse.
         :rtype: list[:class:`huaweicloudsdkram.v1.ResourceShareAssociation`]
@@ -53,7 +53,7 @@ class AssociateResourceShareResponse(SdkResponse):
 
     @resource_share_associations.setter
     def resource_share_associations(self, resource_share_associations):
-        """Sets the resource_share_associations of this AssociateResourceShareResponse.
+        r"""Sets the resource_share_associations of this AssociateResourceShareResponse.
 
         :param resource_share_associations: The resource_share_associations of this AssociateResourceShareResponse.
         :type resource_share_associations: list[:class:`huaweicloudsdkram.v1.ResourceShareAssociation`]

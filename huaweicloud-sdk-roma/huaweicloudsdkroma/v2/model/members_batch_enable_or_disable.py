@@ -25,7 +25,7 @@ class MembersBatchEnableOrDisable:
     }
 
     def __init__(self, member_ids=None):
-        """MembersBatchEnableOrDisable
+        r"""MembersBatchEnableOrDisable
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MembersBatchEnableOrDisable:
 
     @property
     def member_ids(self):
-        """Gets the member_ids of this MembersBatchEnableOrDisable.
+        r"""Gets the member_ids of this MembersBatchEnableOrDisable.
 
         后端服务器编号列表。
 
@@ -54,7 +54,7 @@ class MembersBatchEnableOrDisable:
 
     @member_ids.setter
     def member_ids(self, member_ids):
-        """Sets the member_ids of this MembersBatchEnableOrDisable.
+        r"""Sets the member_ids of this MembersBatchEnableOrDisable.
 
         后端服务器编号列表。
 

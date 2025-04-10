@@ -31,7 +31,7 @@ class LogMappingConfig:
     }
 
     def __init__(self, source_log_group_id=None, target_log_group_id=None, target_log_group_name=None, log_stream_config=None):
-        """LogMappingConfig
+        r"""LogMappingConfig
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class LogMappingConfig:
 
     @property
     def source_log_group_id(self):
-        """Gets the source_log_group_id of this LogMappingConfig.
+        r"""Gets the source_log_group_id of this LogMappingConfig.
 
         源日志组ID
 
@@ -73,7 +73,7 @@ class LogMappingConfig:
 
     @source_log_group_id.setter
     def source_log_group_id(self, source_log_group_id):
-        """Sets the source_log_group_id of this LogMappingConfig.
+        r"""Sets the source_log_group_id of this LogMappingConfig.
 
         源日志组ID
 
@@ -84,7 +84,7 @@ class LogMappingConfig:
 
     @property
     def target_log_group_id(self):
-        """Gets the target_log_group_id of this LogMappingConfig.
+        r"""Gets the target_log_group_id of this LogMappingConfig.
 
         目标日志组ID
 
@@ -95,7 +95,7 @@ class LogMappingConfig:
 
     @target_log_group_id.setter
     def target_log_group_id(self, target_log_group_id):
-        """Sets the target_log_group_id of this LogMappingConfig.
+        r"""Sets the target_log_group_id of this LogMappingConfig.
 
         目标日志组ID
 
@@ -106,7 +106,7 @@ class LogMappingConfig:
 
     @property
     def target_log_group_name(self):
-        """Gets the target_log_group_name of this LogMappingConfig.
+        r"""Gets the target_log_group_name of this LogMappingConfig.
 
         目标日志组名称
 
@@ -117,7 +117,7 @@ class LogMappingConfig:
 
     @target_log_group_name.setter
     def target_log_group_name(self, target_log_group_name):
-        """Sets the target_log_group_name of this LogMappingConfig.
+        r"""Sets the target_log_group_name of this LogMappingConfig.
 
         目标日志组名称
 
@@ -128,7 +128,7 @@ class LogMappingConfig:
 
     @property
     def log_stream_config(self):
-        """Gets the log_stream_config of this LogMappingConfig.
+        r"""Gets the log_stream_config of this LogMappingConfig.
 
         日志流配置
 
@@ -139,7 +139,7 @@ class LogMappingConfig:
 
     @log_stream_config.setter
     def log_stream_config(self, log_stream_config):
-        """Sets the log_stream_config of this LogMappingConfig.
+        r"""Sets the log_stream_config of this LogMappingConfig.
 
         日志流配置
 

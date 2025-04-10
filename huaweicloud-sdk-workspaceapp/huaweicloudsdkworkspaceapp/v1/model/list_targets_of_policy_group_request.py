@@ -27,7 +27,7 @@ class ListTargetsOfPolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None, target_type=None):
-        """ListTargetsOfPolicyGroupRequest
+        r"""ListTargetsOfPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTargetsOfPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ListTargetsOfPolicyGroupRequest.
+        r"""Gets the policy_group_id of this ListTargetsOfPolicyGroupRequest.
 
         策略组id。
 
@@ -60,7 +60,7 @@ class ListTargetsOfPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ListTargetsOfPolicyGroupRequest.
+        r"""Sets the policy_group_id of this ListTargetsOfPolicyGroupRequest.
 
         策略组id。
 
@@ -71,7 +71,7 @@ class ListTargetsOfPolicyGroupRequest:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ListTargetsOfPolicyGroupRequest.
+        r"""Gets the target_type of this ListTargetsOfPolicyGroupRequest.
 
         应用对象的类型： - USER：表示用户。 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
 
@@ -82,7 +82,7 @@ class ListTargetsOfPolicyGroupRequest:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ListTargetsOfPolicyGroupRequest.
+        r"""Sets the target_type of this ListTargetsOfPolicyGroupRequest.
 
         应用对象的类型： - USER：表示用户。 - USERGROUP：表示用户组。 - APPGROUP：应用组。 - OU：组织单元。 - ALl：所有类型
 

@@ -39,7 +39,7 @@ class TtsConfig:
     }
 
     def __init__(self, _property=None, speed=None, volume=None, delay=None, pitch=None, audio_format=None, sample_rate=None, tts_source=None):
-        """TtsConfig
+        r"""TtsConfig
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class TtsConfig:
 
     @property
     def _property(self):
-        """Gets the _property of this TtsConfig.
+        r"""Gets the _property of this TtsConfig.
 
         用于设置音色
 
@@ -99,7 +99,7 @@ class TtsConfig:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this TtsConfig.
+        r"""Sets the _property of this TtsConfig.
 
         用于设置音色
 
@@ -110,7 +110,7 @@ class TtsConfig:
 
     @property
     def speed(self):
-        """Gets the speed of this TtsConfig.
+        r"""Gets the speed of this TtsConfig.
 
         用户设置音速
 
@@ -121,7 +121,7 @@ class TtsConfig:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this TtsConfig.
+        r"""Sets the speed of this TtsConfig.
 
         用户设置音速
 
@@ -132,7 +132,7 @@ class TtsConfig:
 
     @property
     def volume(self):
-        """Gets the volume of this TtsConfig.
+        r"""Gets the volume of this TtsConfig.
 
         用于设置音量
 
@@ -143,7 +143,7 @@ class TtsConfig:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this TtsConfig.
+        r"""Sets the volume of this TtsConfig.
 
         用于设置音量
 
@@ -154,7 +154,7 @@ class TtsConfig:
 
     @property
     def delay(self):
-        """Gets the delay of this TtsConfig.
+        r"""Gets the delay of this TtsConfig.
 
         段首停顿时间。 范围：0~60； 单位：秒 默认：0
 
@@ -165,7 +165,7 @@ class TtsConfig:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this TtsConfig.
+        r"""Sets the delay of this TtsConfig.
 
         段首停顿时间。 范围：0~60； 单位：秒 默认：0
 
@@ -176,7 +176,7 @@ class TtsConfig:
 
     @property
     def pitch(self):
-        """Gets the pitch of this TtsConfig.
+        r"""Gets the pitch of this TtsConfig.
 
         音高。 取值范围： -500~500 默认值：0
 
@@ -187,7 +187,7 @@ class TtsConfig:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this TtsConfig.
+        r"""Sets the pitch of this TtsConfig.
 
         音高。 取值范围： -500~500 默认值：0
 
@@ -198,7 +198,7 @@ class TtsConfig:
 
     @property
     def audio_format(self):
-        """Gets the audio_format of this TtsConfig.
+        r"""Gets the audio_format of this TtsConfig.
 
         语音格式头：wav、mp3、pcm 默认：wav
 
@@ -209,7 +209,7 @@ class TtsConfig:
 
     @audio_format.setter
     def audio_format(self, audio_format):
-        """Sets the audio_format of this TtsConfig.
+        r"""Sets the audio_format of this TtsConfig.
 
         语音格式头：wav、mp3、pcm 默认：wav
 
@@ -220,7 +220,7 @@ class TtsConfig:
 
     @property
     def sample_rate(self):
-        """Gets the sample_rate of this TtsConfig.
+        r"""Gets the sample_rate of this TtsConfig.
 
         采样率：16000、8000 默认：8000
 
@@ -231,7 +231,7 @@ class TtsConfig:
 
     @sample_rate.setter
     def sample_rate(self, sample_rate):
-        """Sets the sample_rate of this TtsConfig.
+        r"""Sets the sample_rate of this TtsConfig.
 
         采样率：16000、8000 默认：8000
 
@@ -242,7 +242,7 @@ class TtsConfig:
 
     @property
     def tts_source(self):
-        """Gets the tts_source of this TtsConfig.
+        r"""Gets the tts_source of this TtsConfig.
 
         tts来源： 0：huawei 1：ali 2：用户克隆声音 默认：0
 
@@ -253,7 +253,7 @@ class TtsConfig:
 
     @tts_source.setter
     def tts_source(self, tts_source):
-        """Sets the tts_source of this TtsConfig.
+        r"""Sets the tts_source of this TtsConfig.
 
         tts来源： 0：huawei 1：ali 2：用户克隆声音 默认：0
 

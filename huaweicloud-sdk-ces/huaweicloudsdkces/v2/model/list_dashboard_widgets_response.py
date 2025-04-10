@@ -26,7 +26,7 @@ class ListDashboardWidgetsResponse(SdkResponse):
     }
 
     def __init__(self, widgets=None):
-        """ListDashboardWidgetsResponse
+        r"""ListDashboardWidgetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDashboardWidgetsResponse(SdkResponse):
 
     @property
     def widgets(self):
-        """Gets the widgets of this ListDashboardWidgetsResponse.
+        r"""Gets the widgets of this ListDashboardWidgetsResponse.
 
         监控视图列表
 
@@ -55,7 +55,7 @@ class ListDashboardWidgetsResponse(SdkResponse):
 
     @widgets.setter
     def widgets(self, widgets):
-        """Sets the widgets of this ListDashboardWidgetsResponse.
+        r"""Sets the widgets of this ListDashboardWidgetsResponse.
 
         监控视图列表
 

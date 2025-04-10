@@ -25,7 +25,7 @@ class CreateResolveTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateResolveTaskRequest
+        r"""CreateResolveTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateResolveTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResolveTaskRequest.
+        r"""Gets the body of this CreateResolveTaskRequest.
 
         :return: The body of this CreateResolveTaskRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskRequestBody`
@@ -52,7 +52,7 @@ class CreateResolveTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResolveTaskRequest.
+        r"""Sets the body of this CreateResolveTaskRequest.
 
         :param body: The body of this CreateResolveTaskRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskRequestBody`

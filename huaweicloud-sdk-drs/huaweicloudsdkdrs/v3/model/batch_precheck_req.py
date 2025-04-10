@@ -25,7 +25,7 @@ class BatchPrecheckReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchPrecheckReq
+        r"""BatchPrecheckReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchPrecheckReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchPrecheckReq.
+        r"""Gets the jobs of this BatchPrecheckReq.
 
         批量预检查请求列表
 
@@ -53,7 +53,7 @@ class BatchPrecheckReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchPrecheckReq.
+        r"""Sets the jobs of this BatchPrecheckReq.
 
         批量预检查请求列表
 

@@ -27,7 +27,7 @@ class CreateBackendTargetRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """CreateBackendTargetRequest
+        r"""CreateBackendTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateBackendTargetRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreateBackendTargetRequest.
+        r"""Gets the share_id of this CreateBackendTargetRequest.
 
         文件系统id
 
@@ -60,7 +60,7 @@ class CreateBackendTargetRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreateBackendTargetRequest.
+        r"""Sets the share_id of this CreateBackendTargetRequest.
 
         文件系统id
 
@@ -71,7 +71,7 @@ class CreateBackendTargetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBackendTargetRequest.
+        r"""Gets the body of this CreateBackendTargetRequest.
 
         :return: The body of this CreateBackendTargetRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateBackendTargetRequestBody`
@@ -80,7 +80,7 @@ class CreateBackendTargetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBackendTargetRequest.
+        r"""Sets the body of this CreateBackendTargetRequest.
 
         :param body: The body of this CreateBackendTargetRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreateBackendTargetRequestBody`

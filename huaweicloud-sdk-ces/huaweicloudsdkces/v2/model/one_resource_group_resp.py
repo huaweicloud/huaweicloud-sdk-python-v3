@@ -33,7 +33,7 @@ class OneResourceGroupResp:
     }
 
     def __init__(self, group_name=None, group_id=None, create_time=None, enterprise_project_id=None, type=None):
-        """OneResourceGroupResp
+        r"""OneResourceGroupResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class OneResourceGroupResp:
 
     @property
     def group_name(self):
-        """Gets the group_name of this OneResourceGroupResp.
+        r"""Gets the group_name of this OneResourceGroupResp.
 
         资源分组的名称
 
@@ -77,7 +77,7 @@ class OneResourceGroupResp:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this OneResourceGroupResp.
+        r"""Sets the group_name of this OneResourceGroupResp.
 
         资源分组的名称
 
@@ -88,7 +88,7 @@ class OneResourceGroupResp:
 
     @property
     def group_id(self):
-        """Gets the group_id of this OneResourceGroupResp.
+        r"""Gets the group_id of this OneResourceGroupResp.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -99,7 +99,7 @@ class OneResourceGroupResp:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this OneResourceGroupResp.
+        r"""Sets the group_id of this OneResourceGroupResp.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -110,7 +110,7 @@ class OneResourceGroupResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OneResourceGroupResp.
+        r"""Gets the create_time of this OneResourceGroupResp.
 
         资源分组的创建时间
 
@@ -121,7 +121,7 @@ class OneResourceGroupResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OneResourceGroupResp.
+        r"""Sets the create_time of this OneResourceGroupResp.
 
         资源分组的创建时间
 
@@ -132,7 +132,7 @@ class OneResourceGroupResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this OneResourceGroupResp.
+        r"""Gets the enterprise_project_id of this OneResourceGroupResp.
 
         资源分组归属企业项目ID
 
@@ -143,7 +143,7 @@ class OneResourceGroupResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this OneResourceGroupResp.
+        r"""Sets the enterprise_project_id of this OneResourceGroupResp.
 
         资源分组归属企业项目ID
 
@@ -154,7 +154,7 @@ class OneResourceGroupResp:
 
     @property
     def type(self):
-        """Gets the type of this OneResourceGroupResp.
+        r"""Gets the type of this OneResourceGroupResp.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
@@ -165,7 +165,7 @@ class OneResourceGroupResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OneResourceGroupResp.
+        r"""Sets the type of this OneResourceGroupResp.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 

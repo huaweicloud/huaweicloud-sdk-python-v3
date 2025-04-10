@@ -30,7 +30,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, global_eip=None, x_request_id=None):
-        """AttachInternetBandwidthResponse
+        r"""AttachInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AttachInternetBandwidthResponse.
+        r"""Gets the request_id of this AttachInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AttachInternetBandwidthResponse.
+        r"""Sets the request_id of this AttachInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this AttachInternetBandwidthResponse.
+        r"""Gets the global_eip of this AttachInternetBandwidthResponse.
 
         :return: The global_eip of this AttachInternetBandwidthResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.AttachInternetBandwidthGlobalEip`
@@ -89,7 +89,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this AttachInternetBandwidthResponse.
+        r"""Sets the global_eip of this AttachInternetBandwidthResponse.
 
         :param global_eip: The global_eip of this AttachInternetBandwidthResponse.
         :type global_eip: :class:`huaweicloudsdkgeip.v3.AttachInternetBandwidthGlobalEip`
@@ -98,7 +98,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AttachInternetBandwidthResponse.
+        r"""Gets the x_request_id of this AttachInternetBandwidthResponse.
 
         :return: The x_request_id of this AttachInternetBandwidthResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class AttachInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AttachInternetBandwidthResponse.
+        r"""Sets the x_request_id of this AttachInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this AttachInternetBandwidthResponse.
         :type x_request_id: str

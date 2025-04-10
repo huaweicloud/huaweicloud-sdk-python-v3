@@ -53,7 +53,7 @@ class ScriptRecordSimpleInfo:
     }
 
     def __init__(self, id=None, script_id=None, script_name=None, script_task_id=None, resource_id=None, resource_name=None, resource_type=None, start_time=None, end_time=None, status=None, execute_order=None, command_content=None, command_type=None, result_code=None, reason=None):
-        """ScriptRecordSimpleInfo
+        r"""ScriptRecordSimpleInfo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def id(self):
-        """Gets the id of this ScriptRecordSimpleInfo.
+        r"""Gets the id of this ScriptRecordSimpleInfo.
 
         脚本执行记录ID。
 
@@ -152,7 +152,7 @@ class ScriptRecordSimpleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptRecordSimpleInfo.
+        r"""Sets the id of this ScriptRecordSimpleInfo.
 
         脚本执行记录ID。
 
@@ -163,7 +163,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ScriptRecordSimpleInfo.
+        r"""Gets the script_id of this ScriptRecordSimpleInfo.
 
         脚本ID。
 
@@ -174,7 +174,7 @@ class ScriptRecordSimpleInfo:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ScriptRecordSimpleInfo.
+        r"""Sets the script_id of this ScriptRecordSimpleInfo.
 
         脚本ID。
 
@@ -185,7 +185,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ScriptRecordSimpleInfo.
+        r"""Gets the script_name of this ScriptRecordSimpleInfo.
 
         脚本名称。
 
@@ -196,7 +196,7 @@ class ScriptRecordSimpleInfo:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ScriptRecordSimpleInfo.
+        r"""Sets the script_name of this ScriptRecordSimpleInfo.
 
         脚本名称。
 
@@ -207,7 +207,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def script_task_id(self):
-        """Gets the script_task_id of this ScriptRecordSimpleInfo.
+        r"""Gets the script_task_id of this ScriptRecordSimpleInfo.
 
         脚本执行的任务ID。
 
@@ -218,7 +218,7 @@ class ScriptRecordSimpleInfo:
 
     @script_task_id.setter
     def script_task_id(self, script_task_id):
-        """Sets the script_task_id of this ScriptRecordSimpleInfo.
+        r"""Sets the script_task_id of this ScriptRecordSimpleInfo.
 
         脚本执行的任务ID。
 
@@ -229,7 +229,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ScriptRecordSimpleInfo.
+        r"""Gets the resource_id of this ScriptRecordSimpleInfo.
 
         执行脚本的资源ID，如桌面ID。
 
@@ -240,7 +240,7 @@ class ScriptRecordSimpleInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ScriptRecordSimpleInfo.
+        r"""Sets the resource_id of this ScriptRecordSimpleInfo.
 
         执行脚本的资源ID，如桌面ID。
 
@@ -251,7 +251,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ScriptRecordSimpleInfo.
+        r"""Gets the resource_name of this ScriptRecordSimpleInfo.
 
         执行脚本的资源名称，如桌面名称。
 
@@ -262,7 +262,7 @@ class ScriptRecordSimpleInfo:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ScriptRecordSimpleInfo.
+        r"""Sets the resource_name of this ScriptRecordSimpleInfo.
 
         执行脚本的资源名称，如桌面名称。
 
@@ -273,7 +273,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ScriptRecordSimpleInfo.
+        r"""Gets the resource_type of this ScriptRecordSimpleInfo.
 
         资源类型，如桌面(DESKTOP)。
 
@@ -284,7 +284,7 @@ class ScriptRecordSimpleInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ScriptRecordSimpleInfo.
+        r"""Sets the resource_type of this ScriptRecordSimpleInfo.
 
         资源类型，如桌面(DESKTOP)。
 
@@ -295,7 +295,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScriptRecordSimpleInfo.
+        r"""Gets the start_time of this ScriptRecordSimpleInfo.
 
         脚本执行开始时间。
 
@@ -306,7 +306,7 @@ class ScriptRecordSimpleInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScriptRecordSimpleInfo.
+        r"""Sets the start_time of this ScriptRecordSimpleInfo.
 
         脚本执行开始时间。
 
@@ -317,7 +317,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScriptRecordSimpleInfo.
+        r"""Gets the end_time of this ScriptRecordSimpleInfo.
 
         脚本执行结束时间。
 
@@ -328,7 +328,7 @@ class ScriptRecordSimpleInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScriptRecordSimpleInfo.
+        r"""Sets the end_time of this ScriptRecordSimpleInfo.
 
         脚本执行结束时间。
 
@@ -339,7 +339,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def status(self):
-        """Gets the status of this ScriptRecordSimpleInfo.
+        r"""Gets the status of this ScriptRecordSimpleInfo.
 
         脚本执行状态。
 
@@ -350,7 +350,7 @@ class ScriptRecordSimpleInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScriptRecordSimpleInfo.
+        r"""Sets the status of this ScriptRecordSimpleInfo.
 
         脚本执行状态。
 
@@ -361,7 +361,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def execute_order(self):
-        """Gets the execute_order of this ScriptRecordSimpleInfo.
+        r"""Gets the execute_order of this ScriptRecordSimpleInfo.
 
         执行批次（默认：0，灰度：1，非灰度：2）。
 
@@ -372,7 +372,7 @@ class ScriptRecordSimpleInfo:
 
     @execute_order.setter
     def execute_order(self, execute_order):
-        """Sets the execute_order of this ScriptRecordSimpleInfo.
+        r"""Sets the execute_order of this ScriptRecordSimpleInfo.
 
         执行批次（默认：0，灰度：1，非灰度：2）。
 
@@ -383,7 +383,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def command_content(self):
-        """Gets the command_content of this ScriptRecordSimpleInfo.
+        r"""Gets the command_content of this ScriptRecordSimpleInfo.
 
         命令行内容。
 
@@ -394,7 +394,7 @@ class ScriptRecordSimpleInfo:
 
     @command_content.setter
     def command_content(self, command_content):
-        """Sets the command_content of this ScriptRecordSimpleInfo.
+        r"""Sets the command_content of this ScriptRecordSimpleInfo.
 
         命令行内容。
 
@@ -405,7 +405,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def command_type(self):
-        """Gets the command_type of this ScriptRecordSimpleInfo.
+        r"""Gets the command_type of this ScriptRecordSimpleInfo.
 
         命令行类型(POWERSHELL/BAT/SHELL)。
 
@@ -416,7 +416,7 @@ class ScriptRecordSimpleInfo:
 
     @command_type.setter
     def command_type(self, command_type):
-        """Sets the command_type of this ScriptRecordSimpleInfo.
+        r"""Sets the command_type of this ScriptRecordSimpleInfo.
 
         命令行类型(POWERSHELL/BAT/SHELL)。
 
@@ -427,7 +427,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this ScriptRecordSimpleInfo.
+        r"""Gets the result_code of this ScriptRecordSimpleInfo.
 
         错误码。
 
@@ -438,7 +438,7 @@ class ScriptRecordSimpleInfo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ScriptRecordSimpleInfo.
+        r"""Sets the result_code of this ScriptRecordSimpleInfo.
 
         错误码。
 
@@ -449,7 +449,7 @@ class ScriptRecordSimpleInfo:
 
     @property
     def reason(self):
-        """Gets the reason of this ScriptRecordSimpleInfo.
+        r"""Gets the reason of this ScriptRecordSimpleInfo.
 
         原因。
 
@@ -460,7 +460,7 @@ class ScriptRecordSimpleInfo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ScriptRecordSimpleInfo.
+        r"""Sets the reason of this ScriptRecordSimpleInfo.
 
         原因。
 

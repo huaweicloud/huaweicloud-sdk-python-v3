@@ -26,7 +26,7 @@ class TagResourceV5Response(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """TagResourceV5Response
+        r"""TagResourceV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class TagResourceV5Response(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this TagResourceV5Response.
+        r"""Gets the tags of this TagResourceV5Response.
 
         自定义标签列表。
 
@@ -55,7 +55,7 @@ class TagResourceV5Response(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagResourceV5Response.
+        r"""Sets the tags of this TagResourceV5Response.
 
         自定义标签列表。
 

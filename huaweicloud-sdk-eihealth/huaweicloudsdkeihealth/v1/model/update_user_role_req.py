@@ -25,7 +25,7 @@ class UpdateUserRoleReq:
     }
 
     def __init__(self, role=None):
-        """UpdateUserRoleReq
+        r"""UpdateUserRoleReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateUserRoleReq:
 
     @property
     def role(self):
-        """Gets the role of this UpdateUserRoleReq.
+        r"""Gets the role of this UpdateUserRoleReq.
 
         :return: The role of this UpdateUserRoleReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserRole`
@@ -51,7 +51,7 @@ class UpdateUserRoleReq:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this UpdateUserRoleReq.
+        r"""Sets the role of this UpdateUserRoleReq.
 
         :param role: The role of this UpdateUserRoleReq.
         :type role: :class:`huaweicloudsdkeihealth.v1.UserRole`

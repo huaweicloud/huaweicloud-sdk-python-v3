@@ -33,7 +33,7 @@ class ModMemberDTO:
     }
 
     def __init__(self, name=None, english_name=None, signature=None, title=None, desc=None):
-        """ModMemberDTO
+        r"""ModMemberDTO
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ModMemberDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModMemberDTO.
+        r"""Gets the name of this ModMemberDTO.
 
         名称。
 
@@ -81,7 +81,7 @@ class ModMemberDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModMemberDTO.
+        r"""Sets the name of this ModMemberDTO.
 
         名称。
 
@@ -92,7 +92,7 @@ class ModMemberDTO:
 
     @property
     def english_name(self):
-        """Gets the english_name of this ModMemberDTO.
+        r"""Gets the english_name of this ModMemberDTO.
 
         英文名称。
 
@@ -103,7 +103,7 @@ class ModMemberDTO:
 
     @english_name.setter
     def english_name(self, english_name):
-        """Sets the english_name of this ModMemberDTO.
+        r"""Sets the english_name of this ModMemberDTO.
 
         英文名称。
 
@@ -114,7 +114,7 @@ class ModMemberDTO:
 
     @property
     def signature(self):
-        """Gets the signature of this ModMemberDTO.
+        r"""Gets the signature of this ModMemberDTO.
 
         签名。
 
@@ -125,7 +125,7 @@ class ModMemberDTO:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this ModMemberDTO.
+        r"""Sets the signature of this ModMemberDTO.
 
         签名。
 
@@ -136,7 +136,7 @@ class ModMemberDTO:
 
     @property
     def title(self):
-        """Gets the title of this ModMemberDTO.
+        r"""Gets the title of this ModMemberDTO.
 
         职位。
 
@@ -147,7 +147,7 @@ class ModMemberDTO:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ModMemberDTO.
+        r"""Sets the title of this ModMemberDTO.
 
         职位。
 
@@ -158,7 +158,7 @@ class ModMemberDTO:
 
     @property
     def desc(self):
-        """Gets the desc of this ModMemberDTO.
+        r"""Gets the desc of this ModMemberDTO.
 
         备注。
 
@@ -169,7 +169,7 @@ class ModMemberDTO:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ModMemberDTO.
+        r"""Sets the desc of this ModMemberDTO.
 
         备注。
 

@@ -35,7 +35,7 @@ class CreateSubscriptionUserRequestBody:
     }
 
     def __init__(self, name=None, group=None, http=None, https=None, sms=None, email=None):
-        """CreateSubscriptionUserRequestBody
+        r"""CreateSubscriptionUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CreateSubscriptionUserRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateSubscriptionUserRequestBody.
+        r"""Gets the name of this CreateSubscriptionUserRequestBody.
 
         订阅用户名称。
 
@@ -88,7 +88,7 @@ class CreateSubscriptionUserRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSubscriptionUserRequestBody.
+        r"""Sets the name of this CreateSubscriptionUserRequestBody.
 
         订阅用户名称。
 
@@ -99,7 +99,7 @@ class CreateSubscriptionUserRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this CreateSubscriptionUserRequestBody.
+        r"""Gets the group of this CreateSubscriptionUserRequestBody.
 
         订阅用户分组。每个订阅分组只能包含中英文、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符。
 
@@ -110,7 +110,7 @@ class CreateSubscriptionUserRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this CreateSubscriptionUserRequestBody.
+        r"""Sets the group of this CreateSubscriptionUserRequestBody.
 
         订阅用户分组。每个订阅分组只能包含中英文、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符。
 
@@ -121,7 +121,7 @@ class CreateSubscriptionUserRequestBody:
 
     @property
     def http(self):
-        """Gets the http of this CreateSubscriptionUserRequestBody.
+        r"""Gets the http of this CreateSubscriptionUserRequestBody.
 
         :return: The http of this CreateSubscriptionUserRequestBody.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestHttpEndpointInfo`
@@ -130,7 +130,7 @@ class CreateSubscriptionUserRequestBody:
 
     @http.setter
     def http(self, http):
-        """Sets the http of this CreateSubscriptionUserRequestBody.
+        r"""Sets the http of this CreateSubscriptionUserRequestBody.
 
         :param http: The http of this CreateSubscriptionUserRequestBody.
         :type http: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestHttpEndpointInfo`
@@ -139,7 +139,7 @@ class CreateSubscriptionUserRequestBody:
 
     @property
     def https(self):
-        """Gets the https of this CreateSubscriptionUserRequestBody.
+        r"""Gets the https of this CreateSubscriptionUserRequestBody.
 
         :return: The https of this CreateSubscriptionUserRequestBody.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestHttpsEndpointInfo`
@@ -148,7 +148,7 @@ class CreateSubscriptionUserRequestBody:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this CreateSubscriptionUserRequestBody.
+        r"""Sets the https of this CreateSubscriptionUserRequestBody.
 
         :param https: The https of this CreateSubscriptionUserRequestBody.
         :type https: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestHttpsEndpointInfo`
@@ -157,7 +157,7 @@ class CreateSubscriptionUserRequestBody:
 
     @property
     def sms(self):
-        """Gets the sms of this CreateSubscriptionUserRequestBody.
+        r"""Gets the sms of this CreateSubscriptionUserRequestBody.
 
         :return: The sms of this CreateSubscriptionUserRequestBody.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestSmsEndpointInfo`
@@ -166,7 +166,7 @@ class CreateSubscriptionUserRequestBody:
 
     @sms.setter
     def sms(self, sms):
-        """Sets the sms of this CreateSubscriptionUserRequestBody.
+        r"""Sets the sms of this CreateSubscriptionUserRequestBody.
 
         :param sms: The sms of this CreateSubscriptionUserRequestBody.
         :type sms: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestSmsEndpointInfo`
@@ -175,7 +175,7 @@ class CreateSubscriptionUserRequestBody:
 
     @property
     def email(self):
-        """Gets the email of this CreateSubscriptionUserRequestBody.
+        r"""Gets the email of this CreateSubscriptionUserRequestBody.
 
         :return: The email of this CreateSubscriptionUserRequestBody.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestEmailEndpointInfo`
@@ -184,7 +184,7 @@ class CreateSubscriptionUserRequestBody:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreateSubscriptionUserRequestBody.
+        r"""Sets the email of this CreateSubscriptionUserRequestBody.
 
         :param email: The email of this CreateSubscriptionUserRequestBody.
         :type email: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestEmailEndpointInfo`

@@ -45,7 +45,7 @@ class ApiOutline:
     }
 
     def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, tags=None):
-        """ApiOutline
+        r"""ApiOutline
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ApiOutline:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ApiOutline.
+        r"""Gets the auth_type of this ApiOutline.
 
         API的认证方式
 
@@ -124,7 +124,7 @@ class ApiOutline:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ApiOutline.
+        r"""Sets the auth_type of this ApiOutline.
 
         API的认证方式
 
@@ -135,7 +135,7 @@ class ApiOutline:
 
     @property
     def run_env_name(self):
-        """Gets the run_env_name of this ApiOutline.
+        r"""Gets the run_env_name of this ApiOutline.
 
         发布的环境名
 
@@ -146,7 +146,7 @@ class ApiOutline:
 
     @run_env_name.setter
     def run_env_name(self, run_env_name):
-        """Sets the run_env_name of this ApiOutline.
+        r"""Sets the run_env_name of this ApiOutline.
 
         发布的环境名
 
@@ -157,7 +157,7 @@ class ApiOutline:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApiOutline.
+        r"""Gets the group_name of this ApiOutline.
 
         API所属分组的名称
 
@@ -168,7 +168,7 @@ class ApiOutline:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApiOutline.
+        r"""Sets the group_name of this ApiOutline.
 
         API所属分组的名称
 
@@ -179,7 +179,7 @@ class ApiOutline:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ApiOutline.
+        r"""Gets the publish_id of this ApiOutline.
 
         发布记录的编号
 
@@ -190,7 +190,7 @@ class ApiOutline:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ApiOutline.
+        r"""Sets the publish_id of this ApiOutline.
 
         发布记录的编号
 
@@ -201,7 +201,7 @@ class ApiOutline:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiOutline.
+        r"""Gets the group_id of this ApiOutline.
 
         API所属分组的编号
 
@@ -212,7 +212,7 @@ class ApiOutline:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiOutline.
+        r"""Sets the group_id of this ApiOutline.
 
         API所属分组的编号
 
@@ -223,7 +223,7 @@ class ApiOutline:
 
     @property
     def name(self):
-        """Gets the name of this ApiOutline.
+        r"""Gets the name of this ApiOutline.
 
         API名称
 
@@ -234,7 +234,7 @@ class ApiOutline:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiOutline.
+        r"""Sets the name of this ApiOutline.
 
         API名称
 
@@ -245,7 +245,7 @@ class ApiOutline:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiOutline.
+        r"""Gets the remark of this ApiOutline.
 
         API描述
 
@@ -256,7 +256,7 @@ class ApiOutline:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiOutline.
+        r"""Sets the remark of this ApiOutline.
 
         API描述
 
@@ -267,7 +267,7 @@ class ApiOutline:
 
     @property
     def run_env_id(self):
-        """Gets the run_env_id of this ApiOutline.
+        r"""Gets the run_env_id of this ApiOutline.
 
         发布的环境id
 
@@ -278,7 +278,7 @@ class ApiOutline:
 
     @run_env_id.setter
     def run_env_id(self, run_env_id):
-        """Sets the run_env_id of this ApiOutline.
+        r"""Sets the run_env_id of this ApiOutline.
 
         发布的环境id
 
@@ -289,7 +289,7 @@ class ApiOutline:
 
     @property
     def id(self):
-        """Gets the id of this ApiOutline.
+        r"""Gets the id of this ApiOutline.
 
         API编号
 
@@ -300,7 +300,7 @@ class ApiOutline:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiOutline.
+        r"""Sets the id of this ApiOutline.
 
         API编号
 
@@ -311,7 +311,7 @@ class ApiOutline:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiOutline.
+        r"""Gets the req_uri of this ApiOutline.
 
         API的请求地址
 
@@ -322,7 +322,7 @@ class ApiOutline:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiOutline.
+        r"""Sets the req_uri of this ApiOutline.
 
         API的请求地址
 
@@ -333,7 +333,7 @@ class ApiOutline:
 
     @property
     def tags(self):
-        """Gets the tags of this ApiOutline.
+        r"""Gets the tags of this ApiOutline.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 
@@ -344,7 +344,7 @@ class ApiOutline:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ApiOutline.
+        r"""Sets the tags of this ApiOutline.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 

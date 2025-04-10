@@ -25,7 +25,7 @@ class ResumeScalingPolicyOption:
     }
 
     def __init__(self, action=None):
-        """ResumeScalingPolicyOption
+        r"""ResumeScalingPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResumeScalingPolicyOption:
 
     @property
     def action(self):
-        """Gets the action of this ResumeScalingPolicyOption.
+        r"""Gets the action of this ResumeScalingPolicyOption.
 
         执行或启用或停止伸缩策略操作的标识。执行：execute。启用：resume。停止：pause。
 
@@ -53,7 +53,7 @@ class ResumeScalingPolicyOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ResumeScalingPolicyOption.
+        r"""Sets the action of this ResumeScalingPolicyOption.
 
         执行或启用或停止伸缩策略操作的标识。执行：execute。启用：resume。停止：pause。
 

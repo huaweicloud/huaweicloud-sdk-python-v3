@@ -35,7 +35,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
     }
 
     def __init__(self, region=None, instance_type=None, instance_id=None, project_id=None, service_id=None, service_type=None):
-        """AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo
+        r"""AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @property
     def region(self):
-        """Gets the region of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Gets the region of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         region
 
@@ -89,7 +89,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Sets the region of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         region
 
@@ -100,7 +100,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Gets the instance_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         支持绑定的实例类型
 
@@ -111,7 +111,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Sets the instance_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         支持绑定的实例类型
 
@@ -122,7 +122,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Gets the instance_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         实例ID
 
@@ -133,7 +133,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Sets the instance_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         实例ID
 
@@ -144,7 +144,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Gets the project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
@@ -155,7 +155,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Sets the project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
@@ -166,7 +166,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @property
     def service_id(self):
-        """Gets the service_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Gets the service_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         服务id
 
@@ -177,7 +177,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Sets the service_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         服务id
 
@@ -188,7 +188,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Gets the service_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         服务类型
 
@@ -199,7 +199,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
+        r"""Sets the service_type of this AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo.
 
         服务类型
 

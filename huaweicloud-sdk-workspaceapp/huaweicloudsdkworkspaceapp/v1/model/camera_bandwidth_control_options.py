@@ -25,7 +25,7 @@ class CameraBandwidthControlOptions:
     }
 
     def __init__(self, camera_bandwidth_control_value=None):
-        """CameraBandwidthControlOptions
+        r"""CameraBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CameraBandwidthControlOptions:
 
     @property
     def camera_bandwidth_control_value(self):
-        """Gets the camera_bandwidth_control_value of this CameraBandwidthControlOptions.
+        r"""Gets the camera_bandwidth_control_value of this CameraBandwidthControlOptions.
 
         摄像头带宽控制量（Kbps）。取值范围为[0-10000]。默认：10000。
 
@@ -54,7 +54,7 @@ class CameraBandwidthControlOptions:
 
     @camera_bandwidth_control_value.setter
     def camera_bandwidth_control_value(self, camera_bandwidth_control_value):
-        """Sets the camera_bandwidth_control_value of this CameraBandwidthControlOptions.
+        r"""Sets the camera_bandwidth_control_value of this CameraBandwidthControlOptions.
 
         摄像头带宽控制量（Kbps）。取值范围为[0-10000]。默认：10000。
 

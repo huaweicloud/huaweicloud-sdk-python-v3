@@ -25,7 +25,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
     }
 
     def __init__(self, cycle_sub_conf_i_ds=None):
-        """RestCancelSingleRecordCycleConfListReqBody
+        r"""RestCancelSingleRecordCycleConfListReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
 
     @property
     def cycle_sub_conf_i_ds(self):
-        """Gets the cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
+        r"""Gets the cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
 
         待删除的子会议UUID列表。
 
@@ -53,7 +53,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
 
     @cycle_sub_conf_i_ds.setter
     def cycle_sub_conf_i_ds(self, cycle_sub_conf_i_ds):
-        """Sets the cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
+        r"""Sets the cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
 
         待删除的子会议UUID列表。
 

@@ -33,7 +33,7 @@ class ServicePolicyRoleOption:
     }
 
     def __init__(self, display_name=None, type=None, description=None, description_cn=None, policy=None):
-        """ServicePolicyRoleOption
+        r"""ServicePolicyRoleOption
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ServicePolicyRoleOption:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ServicePolicyRoleOption.
+        r"""Gets the display_name of this ServicePolicyRoleOption.
 
         自定义策略展示名。
 
@@ -78,7 +78,7 @@ class ServicePolicyRoleOption:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ServicePolicyRoleOption.
+        r"""Sets the display_name of this ServicePolicyRoleOption.
 
         自定义策略展示名。
 
@@ -89,7 +89,7 @@ class ServicePolicyRoleOption:
 
     @property
     def type(self):
-        """Gets the type of this ServicePolicyRoleOption.
+        r"""Gets the type of this ServicePolicyRoleOption.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -100,7 +100,7 @@ class ServicePolicyRoleOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ServicePolicyRoleOption.
+        r"""Sets the type of this ServicePolicyRoleOption.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -111,7 +111,7 @@ class ServicePolicyRoleOption:
 
     @property
     def description(self):
-        """Gets the description of this ServicePolicyRoleOption.
+        r"""Gets the description of this ServicePolicyRoleOption.
 
         自定义策略的描述信息。
 
@@ -122,7 +122,7 @@ class ServicePolicyRoleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServicePolicyRoleOption.
+        r"""Sets the description of this ServicePolicyRoleOption.
 
         自定义策略的描述信息。
 
@@ -133,7 +133,7 @@ class ServicePolicyRoleOption:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this ServicePolicyRoleOption.
+        r"""Gets the description_cn of this ServicePolicyRoleOption.
 
         自定义策略的中文描述信息。
 
@@ -144,7 +144,7 @@ class ServicePolicyRoleOption:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this ServicePolicyRoleOption.
+        r"""Sets the description_cn of this ServicePolicyRoleOption.
 
         自定义策略的中文描述信息。
 
@@ -155,7 +155,7 @@ class ServicePolicyRoleOption:
 
     @property
     def policy(self):
-        """Gets the policy of this ServicePolicyRoleOption.
+        r"""Gets the policy of this ServicePolicyRoleOption.
 
         :return: The policy of this ServicePolicyRoleOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
@@ -164,7 +164,7 @@ class ServicePolicyRoleOption:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ServicePolicyRoleOption.
+        r"""Sets the policy of this ServicePolicyRoleOption.
 
         :param policy: The policy of this ServicePolicyRoleOption.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`

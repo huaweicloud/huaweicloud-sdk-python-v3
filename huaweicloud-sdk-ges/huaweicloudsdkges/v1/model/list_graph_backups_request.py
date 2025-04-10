@@ -29,7 +29,7 @@ class ListGraphBackupsRequest:
     }
 
     def __init__(self, graph_id=None, limit=None, offset=None):
-        """ListGraphBackupsRequest
+        r"""ListGraphBackupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGraphBackupsRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ListGraphBackupsRequest.
+        r"""Gets the graph_id of this ListGraphBackupsRequest.
 
         图ID。
 
@@ -67,7 +67,7 @@ class ListGraphBackupsRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ListGraphBackupsRequest.
+        r"""Sets the graph_id of this ListGraphBackupsRequest.
 
         图ID。
 
@@ -78,7 +78,7 @@ class ListGraphBackupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGraphBackupsRequest.
+        r"""Gets the limit of this ListGraphBackupsRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -89,7 +89,7 @@ class ListGraphBackupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGraphBackupsRequest.
+        r"""Sets the limit of this ListGraphBackupsRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -100,7 +100,7 @@ class ListGraphBackupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGraphBackupsRequest.
+        r"""Gets the offset of this ListGraphBackupsRequest.
 
         本次请求的起始位置，默认为0。
 
@@ -111,7 +111,7 @@ class ListGraphBackupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGraphBackupsRequest.
+        r"""Sets the offset of this ListGraphBackupsRequest.
 
         本次请求的起始位置，默认为0。
 

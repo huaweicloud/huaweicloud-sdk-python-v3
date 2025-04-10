@@ -33,7 +33,7 @@ class SubCategoryDetailVO:
     }
 
     def __init__(self, id=None, name=None, type=None, pid=None, sub_categories=None):
-        """SubCategoryDetailVO
+        r"""SubCategoryDetailVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SubCategoryDetailVO:
 
     @property
     def id(self):
-        """Gets the id of this SubCategoryDetailVO.
+        r"""Gets the id of this SubCategoryDetailVO.
 
         目录ID，根目录的ID为0
 
@@ -82,7 +82,7 @@ class SubCategoryDetailVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubCategoryDetailVO.
+        r"""Sets the id of this SubCategoryDetailVO.
 
         目录ID，根目录的ID为0
 
@@ -93,7 +93,7 @@ class SubCategoryDetailVO:
 
     @property
     def name(self):
-        """Gets the name of this SubCategoryDetailVO.
+        r"""Gets the name of this SubCategoryDetailVO.
 
         名称
 
@@ -104,7 +104,7 @@ class SubCategoryDetailVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubCategoryDetailVO.
+        r"""Sets the name of this SubCategoryDetailVO.
 
         名称
 
@@ -115,7 +115,7 @@ class SubCategoryDetailVO:
 
     @property
     def type(self):
-        """Gets the type of this SubCategoryDetailVO.
+        r"""Gets the type of this SubCategoryDetailVO.
 
         类型 built_in:系统内置 user-defined: 用户自定义
 
@@ -126,7 +126,7 @@ class SubCategoryDetailVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SubCategoryDetailVO.
+        r"""Sets the type of this SubCategoryDetailVO.
 
         类型 built_in:系统内置 user-defined: 用户自定义
 
@@ -137,7 +137,7 @@ class SubCategoryDetailVO:
 
     @property
     def pid(self):
-        """Gets the pid of this SubCategoryDetailVO.
+        r"""Gets the pid of this SubCategoryDetailVO.
 
         父目录ID
 
@@ -148,7 +148,7 @@ class SubCategoryDetailVO:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this SubCategoryDetailVO.
+        r"""Sets the pid of this SubCategoryDetailVO.
 
         父目录ID
 
@@ -159,7 +159,7 @@ class SubCategoryDetailVO:
 
     @property
     def sub_categories(self):
-        """Gets the sub_categories of this SubCategoryDetailVO.
+        r"""Gets the sub_categories of this SubCategoryDetailVO.
 
         子目录
 
@@ -170,7 +170,7 @@ class SubCategoryDetailVO:
 
     @sub_categories.setter
     def sub_categories(self, sub_categories):
-        """Sets the sub_categories of this SubCategoryDetailVO.
+        r"""Sets the sub_categories of this SubCategoryDetailVO.
 
         子目录
 

@@ -35,7 +35,7 @@ class ListServicePublicDetailsRequest:
     }
 
     def __init__(self, limit=None, offset=None, endpoint_service_name=None, id=None, sort_key=None, sort_dir=None):
-        """ListServicePublicDetailsRequest
+        r"""ListServicePublicDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListServicePublicDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServicePublicDetailsRequest.
+        r"""Gets the limit of this ListServicePublicDetailsRequest.
 
         查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -89,7 +89,7 @@ class ListServicePublicDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServicePublicDetailsRequest.
+        r"""Sets the limit of this ListServicePublicDetailsRequest.
 
         查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
@@ -100,7 +100,7 @@ class ListServicePublicDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServicePublicDetailsRequest.
+        r"""Gets the offset of this ListServicePublicDetailsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -111,7 +111,7 @@ class ListServicePublicDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServicePublicDetailsRequest.
+        r"""Sets the offset of this ListServicePublicDetailsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -122,7 +122,7 @@ class ListServicePublicDetailsRequest:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this ListServicePublicDetailsRequest.
+        r"""Gets the endpoint_service_name of this ListServicePublicDetailsRequest.
 
         公共终端节点服务的名称，支持大小写以及模糊匹配。
 
@@ -133,7 +133,7 @@ class ListServicePublicDetailsRequest:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this ListServicePublicDetailsRequest.
+        r"""Sets the endpoint_service_name of this ListServicePublicDetailsRequest.
 
         公共终端节点服务的名称，支持大小写以及模糊匹配。
 
@@ -144,7 +144,7 @@ class ListServicePublicDetailsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListServicePublicDetailsRequest.
+        r"""Gets the id of this ListServicePublicDetailsRequest.
 
         公共终端节点服务的ID，唯一标识。
 
@@ -155,7 +155,7 @@ class ListServicePublicDetailsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServicePublicDetailsRequest.
+        r"""Sets the id of this ListServicePublicDetailsRequest.
 
         公共终端节点服务的ID，唯一标识。
 
@@ -166,7 +166,7 @@ class ListServicePublicDetailsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListServicePublicDetailsRequest.
+        r"""Gets the sort_key of this ListServicePublicDetailsRequest.
 
         查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
@@ -177,7 +177,7 @@ class ListServicePublicDetailsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListServicePublicDetailsRequest.
+        r"""Sets the sort_key of this ListServicePublicDetailsRequest.
 
         查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
@@ -188,7 +188,7 @@ class ListServicePublicDetailsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListServicePublicDetailsRequest.
+        r"""Gets the sort_dir of this ListServicePublicDetailsRequest.
 
         查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -199,7 +199,7 @@ class ListServicePublicDetailsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListServicePublicDetailsRequest.
+        r"""Sets the sort_dir of this ListServicePublicDetailsRequest.
 
         查询结果中终端节点服务列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 

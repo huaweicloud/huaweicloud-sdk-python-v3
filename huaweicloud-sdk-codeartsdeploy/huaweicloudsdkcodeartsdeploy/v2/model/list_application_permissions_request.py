@@ -27,7 +27,7 @@ class ListApplicationPermissionsRequest:
     }
 
     def __init__(self, app_id=None, project_id=None):
-        """ListApplicationPermissionsRequest
+        r"""ListApplicationPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListApplicationPermissionsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListApplicationPermissionsRequest.
+        r"""Gets the app_id of this ListApplicationPermissionsRequest.
 
         应用id
 
@@ -61,7 +61,7 @@ class ListApplicationPermissionsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListApplicationPermissionsRequest.
+        r"""Sets the app_id of this ListApplicationPermissionsRequest.
 
         应用id
 
@@ -72,7 +72,7 @@ class ListApplicationPermissionsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListApplicationPermissionsRequest.
+        r"""Gets the project_id of this ListApplicationPermissionsRequest.
 
         项目id
 
@@ -83,7 +83,7 @@ class ListApplicationPermissionsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListApplicationPermissionsRequest.
+        r"""Sets the project_id of this ListApplicationPermissionsRequest.
 
         项目id
 

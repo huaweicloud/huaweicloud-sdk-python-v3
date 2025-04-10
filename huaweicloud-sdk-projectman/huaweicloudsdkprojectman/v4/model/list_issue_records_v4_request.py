@@ -31,7 +31,7 @@ class ListIssueRecordsV4Request:
     }
 
     def __init__(self, project_id=None, issue_id=None, offset=None, limit=None):
-        """ListIssueRecordsV4Request
+        r"""ListIssueRecordsV4Request
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListIssueRecordsV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIssueRecordsV4Request.
+        r"""Gets the project_id of this ListIssueRecordsV4Request.
 
         devcloud项目的32位id
 
@@ -73,7 +73,7 @@ class ListIssueRecordsV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIssueRecordsV4Request.
+        r"""Sets the project_id of this ListIssueRecordsV4Request.
 
         devcloud项目的32位id
 
@@ -84,7 +84,7 @@ class ListIssueRecordsV4Request:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ListIssueRecordsV4Request.
+        r"""Gets the issue_id of this ListIssueRecordsV4Request.
 
         工作项id
 
@@ -95,7 +95,7 @@ class ListIssueRecordsV4Request:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ListIssueRecordsV4Request.
+        r"""Sets the issue_id of this ListIssueRecordsV4Request.
 
         工作项id
 
@@ -106,7 +106,7 @@ class ListIssueRecordsV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIssueRecordsV4Request.
+        r"""Gets the offset of this ListIssueRecordsV4Request.
 
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -117,7 +117,7 @@ class ListIssueRecordsV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIssueRecordsV4Request.
+        r"""Sets the offset of this ListIssueRecordsV4Request.
 
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -128,7 +128,7 @@ class ListIssueRecordsV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIssueRecordsV4Request.
+        r"""Gets the limit of this ListIssueRecordsV4Request.
 
         每页显示的数量,每页最多显示100条
 
@@ -139,7 +139,7 @@ class ListIssueRecordsV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIssueRecordsV4Request.
+        r"""Sets the limit of this ListIssueRecordsV4Request.
 
         每页显示的数量,每页最多显示100条
 

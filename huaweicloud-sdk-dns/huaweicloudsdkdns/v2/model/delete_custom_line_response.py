@@ -38,7 +38,7 @@ class DeleteCustomLineResponse(SdkResponse):
     }
 
     def __init__(self, line_id=None, name=None, ip_segments=None, created_at=None, updated_at=None, status=None, description=None):
-        """DeleteCustomLineResponse
+        r"""DeleteCustomLineResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def line_id(self):
-        """Gets the line_id of this DeleteCustomLineResponse.
+        r"""Gets the line_id of this DeleteCustomLineResponse.
 
         解析线路ID。
 
@@ -97,7 +97,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this DeleteCustomLineResponse.
+        r"""Sets the line_id of this DeleteCustomLineResponse.
 
         解析线路ID。
 
@@ -108,7 +108,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteCustomLineResponse.
+        r"""Gets the name of this DeleteCustomLineResponse.
 
         解析线路名称。
 
@@ -119,7 +119,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteCustomLineResponse.
+        r"""Sets the name of this DeleteCustomLineResponse.
 
         解析线路名称。
 
@@ -130,7 +130,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def ip_segments(self):
-        """Gets the ip_segments of this DeleteCustomLineResponse.
+        r"""Gets the ip_segments of this DeleteCustomLineResponse.
 
         IP地址段。
 
@@ -141,7 +141,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @ip_segments.setter
     def ip_segments(self, ip_segments):
-        """Sets the ip_segments of this DeleteCustomLineResponse.
+        r"""Sets the ip_segments of this DeleteCustomLineResponse.
 
         IP地址段。
 
@@ -152,7 +152,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DeleteCustomLineResponse.
+        r"""Gets the created_at of this DeleteCustomLineResponse.
 
         创建时间。
 
@@ -163,7 +163,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DeleteCustomLineResponse.
+        r"""Sets the created_at of this DeleteCustomLineResponse.
 
         创建时间。
 
@@ -174,7 +174,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DeleteCustomLineResponse.
+        r"""Gets the updated_at of this DeleteCustomLineResponse.
 
         更新时间。
 
@@ -185,7 +185,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DeleteCustomLineResponse.
+        r"""Sets the updated_at of this DeleteCustomLineResponse.
 
         更新时间。
 
@@ -196,7 +196,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteCustomLineResponse.
+        r"""Gets the status of this DeleteCustomLineResponse.
 
         资源状态。
 
@@ -207,7 +207,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteCustomLineResponse.
+        r"""Sets the status of this DeleteCustomLineResponse.
 
         资源状态。
 
@@ -218,7 +218,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeleteCustomLineResponse.
+        r"""Gets the description of this DeleteCustomLineResponse.
 
         自定义线路的描述信息。
 
@@ -229,7 +229,7 @@ class DeleteCustomLineResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeleteCustomLineResponse.
+        r"""Sets the description of this DeleteCustomLineResponse.
 
         自定义线路的描述信息。
 

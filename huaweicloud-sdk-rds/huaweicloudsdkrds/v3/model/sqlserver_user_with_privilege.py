@@ -27,7 +27,7 @@ class SqlserverUserWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None):
-        """SqlserverUserWithPrivilege
+        r"""SqlserverUserWithPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SqlserverUserWithPrivilege:
 
     @property
     def name(self):
-        """Gets the name of this SqlserverUserWithPrivilege.
+        r"""Gets the name of this SqlserverUserWithPrivilege.
 
         数据库帐号名称。
 
@@ -60,7 +60,7 @@ class SqlserverUserWithPrivilege:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SqlserverUserWithPrivilege.
+        r"""Sets the name of this SqlserverUserWithPrivilege.
 
         数据库帐号名称。
 
@@ -71,7 +71,7 @@ class SqlserverUserWithPrivilege:
 
     @property
     def readonly(self):
-        """Gets the readonly of this SqlserverUserWithPrivilege.
+        r"""Gets the readonly of this SqlserverUserWithPrivilege.
 
         是否为只读权限。
 
@@ -82,7 +82,7 @@ class SqlserverUserWithPrivilege:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this SqlserverUserWithPrivilege.
+        r"""Sets the readonly of this SqlserverUserWithPrivilege.
 
         是否为只读权限。
 

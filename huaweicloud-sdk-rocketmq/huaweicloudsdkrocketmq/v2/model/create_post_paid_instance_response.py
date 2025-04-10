@@ -26,7 +26,7 @@ class CreatePostPaidInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """CreatePostPaidInstanceResponse
+        r"""CreatePostPaidInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePostPaidInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostPaidInstanceResponse.
+        r"""Gets the instance_id of this CreatePostPaidInstanceResponse.
 
         实例ID。
 
@@ -55,7 +55,7 @@ class CreatePostPaidInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostPaidInstanceResponse.
+        r"""Sets the instance_id of this CreatePostPaidInstanceResponse.
 
         实例ID。
 

@@ -29,7 +29,7 @@ class ListDesktopActionsRequest:
     }
 
     def __init__(self, desktop_id=None, offset=None, limit=None):
-        """ListDesktopActionsRequest
+        r"""ListDesktopActionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListDesktopActionsRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListDesktopActionsRequest.
+        r"""Gets the desktop_id of this ListDesktopActionsRequest.
 
         桌面ID。
 
@@ -67,7 +67,7 @@ class ListDesktopActionsRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListDesktopActionsRequest.
+        r"""Sets the desktop_id of this ListDesktopActionsRequest.
 
         桌面ID。
 
@@ -78,7 +78,7 @@ class ListDesktopActionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopActionsRequest.
+        r"""Gets the offset of this ListDesktopActionsRequest.
 
         每页限制数
 
@@ -89,7 +89,7 @@ class ListDesktopActionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopActionsRequest.
+        r"""Sets the offset of this ListDesktopActionsRequest.
 
         每页限制数
 
@@ -100,7 +100,7 @@ class ListDesktopActionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopActionsRequest.
+        r"""Gets the limit of this ListDesktopActionsRequest.
 
         起始位置
 
@@ -111,7 +111,7 @@ class ListDesktopActionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopActionsRequest.
+        r"""Sets the limit of this ListDesktopActionsRequest.
 
         起始位置
 

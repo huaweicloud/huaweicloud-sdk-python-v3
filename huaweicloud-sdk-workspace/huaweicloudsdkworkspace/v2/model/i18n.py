@@ -27,7 +27,7 @@ class I18n:
     }
 
     def __init__(self, zh_cn=None, en_us=None):
-        """I18n
+        r"""I18n
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class I18n:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this I18n.
+        r"""Gets the zh_cn of this I18n.
 
         可用分区中文名称。
 
@@ -61,7 +61,7 @@ class I18n:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this I18n.
+        r"""Sets the zh_cn of this I18n.
 
         可用分区中文名称。
 
@@ -72,7 +72,7 @@ class I18n:
 
     @property
     def en_us(self):
-        """Gets the en_us of this I18n.
+        r"""Gets the en_us of this I18n.
 
         可用分区英语名称。
 
@@ -83,7 +83,7 @@ class I18n:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this I18n.
+        r"""Sets the en_us of this I18n.
 
         可用分区英语名称。
 

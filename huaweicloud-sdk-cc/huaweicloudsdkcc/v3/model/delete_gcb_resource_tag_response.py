@@ -24,7 +24,7 @@ class DeleteGcbResourceTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteGcbResourceTagResponse
+        r"""DeleteGcbResourceTagResponse
 
         The model defined in huaweicloud sdk
 

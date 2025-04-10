@@ -64,7 +64,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, index_id=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None, id=None, notification_frequency=None, alarm_action_rule_name=None):
-        """UpdateSqlAlarmRuleResponse
+        r"""UpdateSqlAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def sql_alarm_rule_name(self):
-        """Gets the sql_alarm_rule_name of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the sql_alarm_rule_name of this UpdateSqlAlarmRuleResponse.
 
         SQL告警名称
 
@@ -188,7 +188,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @sql_alarm_rule_name.setter
     def sql_alarm_rule_name(self, sql_alarm_rule_name):
-        """Sets the sql_alarm_rule_name of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the sql_alarm_rule_name of this UpdateSqlAlarmRuleResponse.
 
         SQL告警名称
 
@@ -199,7 +199,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_rule_alias(self):
-        """Gets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
 
         规则名称
 
@@ -210,7 +210,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @alarm_rule_alias.setter
     def alarm_rule_alias(self, alarm_rule_alias):
-        """Sets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the alarm_rule_alias of this UpdateSqlAlarmRuleResponse.
 
         规则名称
 
@@ -221,7 +221,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def is_css_sql(self):
-        """Gets the is_css_sql of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the is_css_sql of this UpdateSqlAlarmRuleResponse.
 
         是否管道符sql查询
 
@@ -232,7 +232,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @is_css_sql.setter
     def is_css_sql(self, is_css_sql):
-        """Sets the is_css_sql of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the is_css_sql of this UpdateSqlAlarmRuleResponse.
 
         是否管道符sql查询
 
@@ -243,7 +243,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def index_id(self):
-        """Gets the index_id of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the index_id of this UpdateSqlAlarmRuleResponse.
 
         索引id
 
@@ -254,7 +254,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @index_id.setter
     def index_id(self, index_id):
-        """Sets the index_id of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the index_id of this UpdateSqlAlarmRuleResponse.
 
         索引id
 
@@ -265,7 +265,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the project_id of this UpdateSqlAlarmRuleResponse.
 
         项目id
 
@@ -276,7 +276,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the project_id of this UpdateSqlAlarmRuleResponse.
 
         项目id
 
@@ -287,7 +287,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def sql_alarm_rule_id(self):
-        """Gets the sql_alarm_rule_id of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the sql_alarm_rule_id of this UpdateSqlAlarmRuleResponse.
 
         SQL告警规则id
 
@@ -298,7 +298,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @sql_alarm_rule_id.setter
     def sql_alarm_rule_id(self, sql_alarm_rule_id):
-        """Sets the sql_alarm_rule_id of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the sql_alarm_rule_id of this UpdateSqlAlarmRuleResponse.
 
         SQL告警规则id
 
@@ -309,7 +309,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def sql_alarm_rule_description(self):
-        """Gets the sql_alarm_rule_description of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the sql_alarm_rule_description of this UpdateSqlAlarmRuleResponse.
 
         SQL告警信息描述
 
@@ -320,7 +320,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @sql_alarm_rule_description.setter
     def sql_alarm_rule_description(self, sql_alarm_rule_description):
-        """Sets the sql_alarm_rule_description of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the sql_alarm_rule_description of this UpdateSqlAlarmRuleResponse.
 
         SQL告警信息描述
 
@@ -331,7 +331,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def sql_requests(self):
-        """Gets the sql_requests of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the sql_requests of this UpdateSqlAlarmRuleResponse.
 
         SQL详细信息
 
@@ -342,7 +342,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @sql_requests.setter
     def sql_requests(self, sql_requests):
-        """Sets the sql_requests of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the sql_requests of this UpdateSqlAlarmRuleResponse.
 
         SQL详细信息
 
@@ -353,7 +353,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def frequency(self):
-        """Gets the frequency of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the frequency of this UpdateSqlAlarmRuleResponse.
 
         :return: The frequency of this UpdateSqlAlarmRuleResponse.
         :rtype: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
@@ -362,7 +362,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the frequency of this UpdateSqlAlarmRuleResponse.
 
         :param frequency: The frequency of this UpdateSqlAlarmRuleResponse.
         :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
@@ -371,7 +371,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the condition_expression of this UpdateSqlAlarmRuleResponse.
 
         条件表达式
 
@@ -382,7 +382,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the condition_expression of this UpdateSqlAlarmRuleResponse.
 
         条件表达式
 
@@ -393,7 +393,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def sql_alarm_level(self):
-        """Gets the sql_alarm_level of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the sql_alarm_level of this UpdateSqlAlarmRuleResponse.
 
         告警级别
 
@@ -404,7 +404,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @sql_alarm_level.setter
     def sql_alarm_level(self, sql_alarm_level):
-        """Sets the sql_alarm_level of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the sql_alarm_level of this UpdateSqlAlarmRuleResponse.
 
         告警级别
 
@@ -415,7 +415,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def sql_alarm_send(self):
-        """Gets the sql_alarm_send of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the sql_alarm_send of this UpdateSqlAlarmRuleResponse.
 
         是否发送
 
@@ -426,7 +426,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @sql_alarm_send.setter
     def sql_alarm_send(self, sql_alarm_send):
-        """Sets the sql_alarm_send of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the sql_alarm_send of this UpdateSqlAlarmRuleResponse.
 
         是否发送
 
@@ -437,7 +437,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the domain_id of this UpdateSqlAlarmRuleResponse.
 
         domainId
 
@@ -448,7 +448,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the domain_id of this UpdateSqlAlarmRuleResponse.
 
         domainId
 
@@ -459,7 +459,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the create_time of this UpdateSqlAlarmRuleResponse.
 
         创建时间（毫秒时间戳）
 
@@ -470,7 +470,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the create_time of this UpdateSqlAlarmRuleResponse.
 
         创建时间（毫秒时间戳）
 
@@ -481,7 +481,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the update_time of this UpdateSqlAlarmRuleResponse.
 
         更新时间（毫秒时间戳）
 
@@ -492,7 +492,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the update_time of this UpdateSqlAlarmRuleResponse.
 
         更新时间（毫秒时间戳）
 
@@ -503,7 +503,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the topics of this UpdateSqlAlarmRuleResponse.
 
         主题
 
@@ -514,7 +514,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the topics of this UpdateSqlAlarmRuleResponse.
 
         主题
 
@@ -525,7 +525,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the language of this UpdateSqlAlarmRuleResponse.
 
         邮件附加信息语言
 
@@ -536,7 +536,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the language of this UpdateSqlAlarmRuleResponse.
 
         邮件附加信息语言
 
@@ -547,7 +547,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the id of this UpdateSqlAlarmRuleResponse.
 
         规则ID。
 
@@ -558,7 +558,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the id of this UpdateSqlAlarmRuleResponse.
 
         规则ID。
 
@@ -569,7 +569,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def notification_frequency(self):
-        """Gets the notification_frequency of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the notification_frequency of this UpdateSqlAlarmRuleResponse.
 
         通知频率,单位(分钟)
 
@@ -580,7 +580,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @notification_frequency.setter
     def notification_frequency(self, notification_frequency):
-        """Sets the notification_frequency of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the notification_frequency of this UpdateSqlAlarmRuleResponse.
 
         通知频率,单位(分钟)
 
@@ -591,7 +591,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_action_rule_name(self):
-        """Gets the alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
+        r"""Gets the alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 
@@ -602,7 +602,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
 
     @alarm_action_rule_name.setter
     def alarm_action_rule_name(self, alarm_action_rule_name):
-        """Sets the alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
+        r"""Sets the alarm_action_rule_name of this UpdateSqlAlarmRuleResponse.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 

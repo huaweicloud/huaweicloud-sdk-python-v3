@@ -29,7 +29,7 @@ class AdOuUserInfo:
     }
 
     def __init__(self, user_name=None, expired_time=None, has_existed=None):
-        """AdOuUserInfo
+        r"""AdOuUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AdOuUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AdOuUserInfo.
+        r"""Gets the user_name of this AdOuUserInfo.
 
         名称
 
@@ -68,7 +68,7 @@ class AdOuUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AdOuUserInfo.
+        r"""Sets the user_name of this AdOuUserInfo.
 
         名称
 
@@ -79,7 +79,7 @@ class AdOuUserInfo:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this AdOuUserInfo.
+        r"""Gets the expired_time of this AdOuUserInfo.
 
         过期时间 -1代表永不过期
 
@@ -90,7 +90,7 @@ class AdOuUserInfo:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this AdOuUserInfo.
+        r"""Sets the expired_time of this AdOuUserInfo.
 
         过期时间 -1代表永不过期
 
@@ -101,7 +101,7 @@ class AdOuUserInfo:
 
     @property
     def has_existed(self):
-        """Gets the has_existed of this AdOuUserInfo.
+        r"""Gets the has_existed of this AdOuUserInfo.
 
         是否存在于用户列表
 
@@ -112,7 +112,7 @@ class AdOuUserInfo:
 
     @has_existed.setter
     def has_existed(self, has_existed):
-        """Sets the has_existed of this AdOuUserInfo.
+        r"""Sets the has_existed of this AdOuUserInfo.
 
         是否存在于用户列表
 

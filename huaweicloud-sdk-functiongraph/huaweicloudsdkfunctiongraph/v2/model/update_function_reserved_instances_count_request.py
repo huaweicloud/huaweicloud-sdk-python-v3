@@ -27,7 +27,7 @@ class UpdateFunctionReservedInstancesCountRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateFunctionReservedInstancesCountRequest
+        r"""UpdateFunctionReservedInstancesCountRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFunctionReservedInstancesCountRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateFunctionReservedInstancesCountRequest.
+        r"""Gets the function_urn of this UpdateFunctionReservedInstancesCountRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class UpdateFunctionReservedInstancesCountRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateFunctionReservedInstancesCountRequest.
+        r"""Sets the function_urn of this UpdateFunctionReservedInstancesCountRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class UpdateFunctionReservedInstancesCountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFunctionReservedInstancesCountRequest.
+        r"""Gets the body of this UpdateFunctionReservedInstancesCountRequest.
 
         :return: The body of this UpdateFunctionReservedInstancesCountRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountRequestBody`
@@ -80,7 +80,7 @@ class UpdateFunctionReservedInstancesCountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFunctionReservedInstancesCountRequest.
+        r"""Sets the body of this UpdateFunctionReservedInstancesCountRequest.
 
         :param body: The body of this UpdateFunctionReservedInstancesCountRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountRequestBody`

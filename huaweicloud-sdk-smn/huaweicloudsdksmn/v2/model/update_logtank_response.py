@@ -28,7 +28,7 @@ class UpdateLogtankResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, logtank=None):
-        """UpdateLogtankResponse
+        r"""UpdateLogtankResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateLogtankResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateLogtankResponse.
+        r"""Gets the request_id of this UpdateLogtankResponse.
 
         请求的唯一标识。
 
@@ -62,7 +62,7 @@ class UpdateLogtankResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateLogtankResponse.
+        r"""Sets the request_id of this UpdateLogtankResponse.
 
         请求的唯一标识。
 
@@ -73,7 +73,7 @@ class UpdateLogtankResponse(SdkResponse):
 
     @property
     def logtank(self):
-        """Gets the logtank of this UpdateLogtankResponse.
+        r"""Gets the logtank of this UpdateLogtankResponse.
 
         :return: The logtank of this UpdateLogtankResponse.
         :rtype: :class:`huaweicloudsdksmn.v2.LogtankItem`
@@ -82,7 +82,7 @@ class UpdateLogtankResponse(SdkResponse):
 
     @logtank.setter
     def logtank(self, logtank):
-        """Sets the logtank of this UpdateLogtankResponse.
+        r"""Sets the logtank of this UpdateLogtankResponse.
 
         :param logtank: The logtank of this UpdateLogtankResponse.
         :type logtank: :class:`huaweicloudsdksmn.v2.LogtankItem`

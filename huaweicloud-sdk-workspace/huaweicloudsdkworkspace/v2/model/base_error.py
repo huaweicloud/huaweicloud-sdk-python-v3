@@ -27,7 +27,7 @@ class BaseError:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """BaseError
+        r"""BaseError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BaseError:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BaseError.
+        r"""Gets the error_code of this BaseError.
 
         错误码，失败时返回。
 
@@ -61,7 +61,7 @@ class BaseError:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BaseError.
+        r"""Sets the error_code of this BaseError.
 
         错误码，失败时返回。
 
@@ -72,7 +72,7 @@ class BaseError:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BaseError.
+        r"""Gets the error_msg of this BaseError.
 
         错误描述。
 
@@ -83,7 +83,7 @@ class BaseError:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BaseError.
+        r"""Sets the error_msg of this BaseError.
 
         错误描述。
 

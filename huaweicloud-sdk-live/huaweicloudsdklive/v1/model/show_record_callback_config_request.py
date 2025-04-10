@@ -25,7 +25,7 @@ class ShowRecordCallbackConfigRequest:
     }
 
     def __init__(self, id=None):
-        """ShowRecordCallbackConfigRequest
+        r"""ShowRecordCallbackConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRecordCallbackConfigRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowRecordCallbackConfigRequest.
+        r"""Gets the id of this ShowRecordCallbackConfigRequest.
 
         配置ID
 
@@ -53,7 +53,7 @@ class ShowRecordCallbackConfigRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRecordCallbackConfigRequest.
+        r"""Sets the id of this ShowRecordCallbackConfigRequest.
 
         配置ID
 

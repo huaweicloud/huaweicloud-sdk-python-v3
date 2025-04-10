@@ -101,7 +101,7 @@ class SkillInfo:
     }
 
     def __init__(self, sub_scenes=None, app_template_id=None, icon=None, version_num=None, description=None, product_info=None, type=None, platform=None, self_dev_flag=None, measure_type=None, approval_result=None, update_time=None, channel_limit=None, publish_time=None, resource_step_size=None, approval_time=None, cloud_service_type=None, summary=None, test_status=None, chip=None, is_verify_model=None, format=None, resource_type=None, version=None, measure_unit=None, tags=None, size=None, test_result=None, install_times=None, privacy_policy=None, name=None, scenes=None, charge_model=None, resource_spec_code=None, skill_id=None, developer=None, main_scenes=None, device_types=None, status=None):
-        """SkillInfo
+        r"""SkillInfo
 
         The model defined in huaweicloud sdk
 
@@ -270,7 +270,7 @@ class SkillInfo:
 
     @property
     def sub_scenes(self):
-        """Gets the sub_scenes of this SkillInfo.
+        r"""Gets the sub_scenes of this SkillInfo.
 
         技能应用场景
 
@@ -281,7 +281,7 @@ class SkillInfo:
 
     @sub_scenes.setter
     def sub_scenes(self, sub_scenes):
-        """Sets the sub_scenes of this SkillInfo.
+        r"""Sets the sub_scenes of this SkillInfo.
 
         技能应用场景
 
@@ -292,7 +292,7 @@ class SkillInfo:
 
     @property
     def app_template_id(self):
-        """Gets the app_template_id of this SkillInfo.
+        r"""Gets the app_template_id of this SkillInfo.
 
         应用模板ID
 
@@ -303,7 +303,7 @@ class SkillInfo:
 
     @app_template_id.setter
     def app_template_id(self, app_template_id):
-        """Sets the app_template_id of this SkillInfo.
+        r"""Sets the app_template_id of this SkillInfo.
 
         应用模板ID
 
@@ -314,7 +314,7 @@ class SkillInfo:
 
     @property
     def icon(self):
-        """Gets the icon of this SkillInfo.
+        r"""Gets the icon of this SkillInfo.
 
         技能图标
 
@@ -325,7 +325,7 @@ class SkillInfo:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this SkillInfo.
+        r"""Sets the icon of this SkillInfo.
 
         技能图标
 
@@ -336,7 +336,7 @@ class SkillInfo:
 
     @property
     def version_num(self):
-        """Gets the version_num of this SkillInfo.
+        r"""Gets the version_num of this SkillInfo.
 
         技能版本数量
 
@@ -347,7 +347,7 @@ class SkillInfo:
 
     @version_num.setter
     def version_num(self, version_num):
-        """Sets the version_num of this SkillInfo.
+        r"""Sets the version_num of this SkillInfo.
 
         技能版本数量
 
@@ -358,7 +358,7 @@ class SkillInfo:
 
     @property
     def description(self):
-        """Gets the description of this SkillInfo.
+        r"""Gets the description of this SkillInfo.
 
         技能描述
 
@@ -369,7 +369,7 @@ class SkillInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SkillInfo.
+        r"""Sets the description of this SkillInfo.
 
         技能描述
 
@@ -380,7 +380,7 @@ class SkillInfo:
 
     @property
     def product_info(self):
-        """Gets the product_info of this SkillInfo.
+        r"""Gets the product_info of this SkillInfo.
 
         计费编码信息
 
@@ -391,7 +391,7 @@ class SkillInfo:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this SkillInfo.
+        r"""Sets the product_info of this SkillInfo.
 
         计费编码信息
 
@@ -402,7 +402,7 @@ class SkillInfo:
 
     @property
     def type(self):
-        """Gets the type of this SkillInfo.
+        r"""Gets the type of this SkillInfo.
 
         技能类别，分为standard和lite
 
@@ -413,7 +413,7 @@ class SkillInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SkillInfo.
+        r"""Sets the type of this SkillInfo.
 
         技能类别，分为standard和lite
 
@@ -424,7 +424,7 @@ class SkillInfo:
 
     @property
     def platform(self):
-        """Gets the platform of this SkillInfo.
+        r"""Gets the platform of this SkillInfo.
 
         技能操作系统平台，其值为：Linux，Android， iOS， LiteOS，Windows
 
@@ -435,7 +435,7 @@ class SkillInfo:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this SkillInfo.
+        r"""Sets the platform of this SkillInfo.
 
         技能操作系统平台，其值为：Linux，Android， iOS， LiteOS，Windows
 
@@ -446,7 +446,7 @@ class SkillInfo:
 
     @property
     def self_dev_flag(self):
-        """Gets the self_dev_flag of this SkillInfo.
+        r"""Gets the self_dev_flag of this SkillInfo.
 
         自研标识，1表示是HiLens自研算法。
 
@@ -457,7 +457,7 @@ class SkillInfo:
 
     @self_dev_flag.setter
     def self_dev_flag(self, self_dev_flag):
-        """Sets the self_dev_flag of this SkillInfo.
+        r"""Sets the self_dev_flag of this SkillInfo.
 
         自研标识，1表示是HiLens自研算法。
 
@@ -468,7 +468,7 @@ class SkillInfo:
 
     @property
     def measure_type(self):
-        """Gets the measure_type of this SkillInfo.
+        r"""Gets the measure_type of this SkillInfo.
 
         计费类型，physical_src表示物理量标，如按周期收费。 src表示一次性
 
@@ -479,7 +479,7 @@ class SkillInfo:
 
     @measure_type.setter
     def measure_type(self, measure_type):
-        """Sets the measure_type of this SkillInfo.
+        r"""Sets the measure_type of this SkillInfo.
 
         计费类型，physical_src表示物理量标，如按周期收费。 src表示一次性
 
@@ -490,7 +490,7 @@ class SkillInfo:
 
     @property
     def approval_result(self):
-        """Gets the approval_result of this SkillInfo.
+        r"""Gets the approval_result of this SkillInfo.
 
         技能审核结果
 
@@ -501,7 +501,7 @@ class SkillInfo:
 
     @approval_result.setter
     def approval_result(self, approval_result):
-        """Sets the approval_result of this SkillInfo.
+        r"""Sets the approval_result of this SkillInfo.
 
         技能审核结果
 
@@ -512,7 +512,7 @@ class SkillInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SkillInfo.
+        r"""Gets the update_time of this SkillInfo.
 
         更新时间，形如2022-06-30 17:22:48 GMT+08:00
 
@@ -523,7 +523,7 @@ class SkillInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SkillInfo.
+        r"""Sets the update_time of this SkillInfo.
 
         更新时间，形如2022-06-30 17:22:48 GMT+08:00
 
@@ -534,7 +534,7 @@ class SkillInfo:
 
     @property
     def channel_limit(self):
-        """Gets the channel_limit of this SkillInfo.
+        r"""Gets the channel_limit of this SkillInfo.
 
         通道数
 
@@ -545,7 +545,7 @@ class SkillInfo:
 
     @channel_limit.setter
     def channel_limit(self, channel_limit):
-        """Sets the channel_limit of this SkillInfo.
+        r"""Sets the channel_limit of this SkillInfo.
 
         通道数
 
@@ -556,7 +556,7 @@ class SkillInfo:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this SkillInfo.
+        r"""Gets the publish_time of this SkillInfo.
 
         发布时间
 
@@ -567,7 +567,7 @@ class SkillInfo:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this SkillInfo.
+        r"""Sets the publish_time of this SkillInfo.
 
         发布时间
 
@@ -578,7 +578,7 @@ class SkillInfo:
 
     @property
     def resource_step_size(self):
-        """Gets the resource_step_size of this SkillInfo.
+        r"""Gets the resource_step_size of this SkillInfo.
 
         步长
 
@@ -589,7 +589,7 @@ class SkillInfo:
 
     @resource_step_size.setter
     def resource_step_size(self, resource_step_size):
-        """Sets the resource_step_size of this SkillInfo.
+        r"""Sets the resource_step_size of this SkillInfo.
 
         步长
 
@@ -600,7 +600,7 @@ class SkillInfo:
 
     @property
     def approval_time(self):
-        """Gets the approval_time of this SkillInfo.
+        r"""Gets the approval_time of this SkillInfo.
 
         审批时间
 
@@ -611,7 +611,7 @@ class SkillInfo:
 
     @approval_time.setter
     def approval_time(self, approval_time):
-        """Sets the approval_time of this SkillInfo.
+        r"""Sets the approval_time of this SkillInfo.
 
         审批时间
 
@@ -622,7 +622,7 @@ class SkillInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this SkillInfo.
+        r"""Gets the cloud_service_type of this SkillInfo.
 
         云服务编码
 
@@ -633,7 +633,7 @@ class SkillInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this SkillInfo.
+        r"""Sets the cloud_service_type of this SkillInfo.
 
         云服务编码
 
@@ -644,7 +644,7 @@ class SkillInfo:
 
     @property
     def summary(self):
-        """Gets the summary of this SkillInfo.
+        r"""Gets the summary of this SkillInfo.
 
         摘要
 
@@ -655,7 +655,7 @@ class SkillInfo:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this SkillInfo.
+        r"""Sets the summary of this SkillInfo.
 
         摘要
 
@@ -666,7 +666,7 @@ class SkillInfo:
 
     @property
     def test_status(self):
-        """Gets the test_status of this SkillInfo.
+        r"""Gets the test_status of this SkillInfo.
 
         测试状态
 
@@ -677,7 +677,7 @@ class SkillInfo:
 
     @test_status.setter
     def test_status(self, test_status):
-        """Sets the test_status of this SkillInfo.
+        r"""Sets the test_status of this SkillInfo.
 
         测试状态
 
@@ -688,7 +688,7 @@ class SkillInfo:
 
     @property
     def chip(self):
-        """Gets the chip of this SkillInfo.
+        r"""Gets the chip of this SkillInfo.
 
         芯片
 
@@ -699,7 +699,7 @@ class SkillInfo:
 
     @chip.setter
     def chip(self, chip):
-        """Sets the chip of this SkillInfo.
+        r"""Sets the chip of this SkillInfo.
 
         芯片
 
@@ -710,7 +710,7 @@ class SkillInfo:
 
     @property
     def is_verify_model(self):
-        """Gets the is_verify_model of this SkillInfo.
+        r"""Gets the is_verify_model of this SkillInfo.
 
         是否校验模型
 
@@ -721,7 +721,7 @@ class SkillInfo:
 
     @is_verify_model.setter
     def is_verify_model(self, is_verify_model):
-        """Sets the is_verify_model of this SkillInfo.
+        r"""Sets the is_verify_model of this SkillInfo.
 
         是否校验模型
 
@@ -732,7 +732,7 @@ class SkillInfo:
 
     @property
     def format(self):
-        """Gets the format of this SkillInfo.
+        r"""Gets the format of this SkillInfo.
 
         技能类型，文件类型file，镜像类型iamge
 
@@ -743,7 +743,7 @@ class SkillInfo:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this SkillInfo.
+        r"""Sets the format of this SkillInfo.
 
         技能类型，文件类型file，镜像类型iamge
 
@@ -754,7 +754,7 @@ class SkillInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this SkillInfo.
+        r"""Gets the resource_type of this SkillInfo.
 
         资源类别
 
@@ -765,7 +765,7 @@ class SkillInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this SkillInfo.
+        r"""Sets the resource_type of this SkillInfo.
 
         资源类别
 
@@ -776,7 +776,7 @@ class SkillInfo:
 
     @property
     def version(self):
-        """Gets the version of this SkillInfo.
+        r"""Gets the version of this SkillInfo.
 
         技能版本
 
@@ -787,7 +787,7 @@ class SkillInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SkillInfo.
+        r"""Sets the version of this SkillInfo.
 
         技能版本
 
@@ -798,7 +798,7 @@ class SkillInfo:
 
     @property
     def measure_unit(self):
-        """Gets the measure_unit of this SkillInfo.
+        r"""Gets the measure_unit of this SkillInfo.
 
         计费单位 qps 表示按qps收费，road表示技能路数instance 表示按实例收费
 
@@ -809,7 +809,7 @@ class SkillInfo:
 
     @measure_unit.setter
     def measure_unit(self, measure_unit):
-        """Sets the measure_unit of this SkillInfo.
+        r"""Sets the measure_unit of this SkillInfo.
 
         计费单位 qps 表示按qps收费，road表示技能路数instance 表示按实例收费
 
@@ -820,7 +820,7 @@ class SkillInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this SkillInfo.
+        r"""Gets the tags of this SkillInfo.
 
         标签
 
@@ -831,7 +831,7 @@ class SkillInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SkillInfo.
+        r"""Sets the tags of this SkillInfo.
 
         标签
 
@@ -842,7 +842,7 @@ class SkillInfo:
 
     @property
     def size(self):
-        """Gets the size of this SkillInfo.
+        r"""Gets the size of this SkillInfo.
 
         技能大小
 
@@ -853,7 +853,7 @@ class SkillInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SkillInfo.
+        r"""Sets the size of this SkillInfo.
 
         技能大小
 
@@ -864,7 +864,7 @@ class SkillInfo:
 
     @property
     def test_result(self):
-        """Gets the test_result of this SkillInfo.
+        r"""Gets the test_result of this SkillInfo.
 
         测试结果
 
@@ -875,7 +875,7 @@ class SkillInfo:
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this SkillInfo.
+        r"""Sets the test_result of this SkillInfo.
 
         测试结果
 
@@ -886,7 +886,7 @@ class SkillInfo:
 
     @property
     def install_times(self):
-        """Gets the install_times of this SkillInfo.
+        r"""Gets the install_times of this SkillInfo.
 
         安装次数
 
@@ -897,7 +897,7 @@ class SkillInfo:
 
     @install_times.setter
     def install_times(self, install_times):
-        """Sets the install_times of this SkillInfo.
+        r"""Sets the install_times of this SkillInfo.
 
         安装次数
 
@@ -908,7 +908,7 @@ class SkillInfo:
 
     @property
     def privacy_policy(self):
-        """Gets the privacy_policy of this SkillInfo.
+        r"""Gets the privacy_policy of this SkillInfo.
 
         隐私条款
 
@@ -919,7 +919,7 @@ class SkillInfo:
 
     @privacy_policy.setter
     def privacy_policy(self, privacy_policy):
-        """Sets the privacy_policy of this SkillInfo.
+        r"""Sets the privacy_policy of this SkillInfo.
 
         隐私条款
 
@@ -930,7 +930,7 @@ class SkillInfo:
 
     @property
     def name(self):
-        """Gets the name of this SkillInfo.
+        r"""Gets the name of this SkillInfo.
 
         技能名字
 
@@ -941,7 +941,7 @@ class SkillInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SkillInfo.
+        r"""Sets the name of this SkillInfo.
 
         技能名字
 
@@ -952,7 +952,7 @@ class SkillInfo:
 
     @property
     def scenes(self):
-        """Gets the scenes of this SkillInfo.
+        r"""Gets the scenes of this SkillInfo.
 
         技能场景
 
@@ -963,7 +963,7 @@ class SkillInfo:
 
     @scenes.setter
     def scenes(self, scenes):
-        """Sets the scenes of this SkillInfo.
+        r"""Sets the scenes of this SkillInfo.
 
         技能场景
 
@@ -974,7 +974,7 @@ class SkillInfo:
 
     @property
     def charge_model(self):
-        """Gets the charge_model of this SkillInfo.
+        r"""Gets the charge_model of this SkillInfo.
 
         计费模式
 
@@ -985,7 +985,7 @@ class SkillInfo:
 
     @charge_model.setter
     def charge_model(self, charge_model):
-        """Sets the charge_model of this SkillInfo.
+        r"""Sets the charge_model of this SkillInfo.
 
         计费模式
 
@@ -996,7 +996,7 @@ class SkillInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this SkillInfo.
+        r"""Gets the resource_spec_code of this SkillInfo.
 
         云服务资源编码
 
@@ -1007,7 +1007,7 @@ class SkillInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this SkillInfo.
+        r"""Sets the resource_spec_code of this SkillInfo.
 
         云服务资源编码
 
@@ -1018,7 +1018,7 @@ class SkillInfo:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this SkillInfo.
+        r"""Gets the skill_id of this SkillInfo.
 
         技能ID
 
@@ -1029,7 +1029,7 @@ class SkillInfo:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this SkillInfo.
+        r"""Sets the skill_id of this SkillInfo.
 
         技能ID
 
@@ -1040,7 +1040,7 @@ class SkillInfo:
 
     @property
     def developer(self):
-        """Gets the developer of this SkillInfo.
+        r"""Gets the developer of this SkillInfo.
 
         开发者名字
 
@@ -1051,7 +1051,7 @@ class SkillInfo:
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this SkillInfo.
+        r"""Sets the developer of this SkillInfo.
 
         开发者名字
 
@@ -1062,7 +1062,7 @@ class SkillInfo:
 
     @property
     def main_scenes(self):
-        """Gets the main_scenes of this SkillInfo.
+        r"""Gets the main_scenes of this SkillInfo.
 
         主场景
 
@@ -1073,7 +1073,7 @@ class SkillInfo:
 
     @main_scenes.setter
     def main_scenes(self, main_scenes):
-        """Sets the main_scenes of this SkillInfo.
+        r"""Sets the main_scenes of this SkillInfo.
 
         主场景
 
@@ -1084,7 +1084,7 @@ class SkillInfo:
 
     @property
     def device_types(self):
-        """Gets the device_types of this SkillInfo.
+        r"""Gets the device_types of this SkillInfo.
 
         所支持的设备类别
 
@@ -1095,7 +1095,7 @@ class SkillInfo:
 
     @device_types.setter
     def device_types(self, device_types):
-        """Sets the device_types of this SkillInfo.
+        r"""Sets the device_types of this SkillInfo.
 
         所支持的设备类别
 
@@ -1106,7 +1106,7 @@ class SkillInfo:
 
     @property
     def status(self):
-        """Gets the status of this SkillInfo.
+        r"""Gets the status of this SkillInfo.
 
         技能状态
 
@@ -1117,7 +1117,7 @@ class SkillInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SkillInfo.
+        r"""Sets the status of this SkillInfo.
 
         技能状态
 

@@ -25,7 +25,7 @@ class ReplicationClusterParams:
     }
 
     def __init__(self, availability_zone=None):
-        """ReplicationClusterParams
+        r"""ReplicationClusterParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReplicationClusterParams:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ReplicationClusterParams.
+        r"""Gets the availability_zone of this ReplicationClusterParams.
 
         可用区名称。
 
@@ -53,7 +53,7 @@ class ReplicationClusterParams:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ReplicationClusterParams.
+        r"""Sets the availability_zone of this ReplicationClusterParams.
 
         可用区名称。
 

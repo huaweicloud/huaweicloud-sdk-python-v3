@@ -27,7 +27,7 @@ class PageInfoDTO:
     }
 
     def __init__(self, offset=None, limit=None):
-        """PageInfoDTO
+        r"""PageInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PageInfoDTO:
 
     @property
     def offset(self):
-        """Gets the offset of this PageInfoDTO.
+        r"""Gets the offset of this PageInfoDTO.
 
         页码
 
@@ -61,7 +61,7 @@ class PageInfoDTO:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this PageInfoDTO.
+        r"""Sets the offset of this PageInfoDTO.
 
         页码
 
@@ -72,7 +72,7 @@ class PageInfoDTO:
 
     @property
     def limit(self):
-        """Gets the limit of this PageInfoDTO.
+        r"""Gets the limit of this PageInfoDTO.
 
         每页记录数
 
@@ -83,7 +83,7 @@ class PageInfoDTO:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this PageInfoDTO.
+        r"""Sets the limit of this PageInfoDTO.
 
         每页记录数
 

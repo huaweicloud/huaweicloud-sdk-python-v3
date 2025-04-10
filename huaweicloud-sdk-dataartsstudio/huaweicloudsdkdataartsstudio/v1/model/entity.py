@@ -67,7 +67,7 @@ class Entity:
     }
 
     def __init__(self, version=None, relationship_attributes=None, super_type_names=None, business_attributes=None, multi_attributes=None, privilege_info=None, extended_attributes=None, guid=None, type_name=None, type_display_name=None, display_text=None, attributes=None, updated_attributes=None, project_id=None, domain_id=None, instance_id=None, workspace_id=None, status=None, created_by=None, updated_by=None, create_time=None, update_time=None):
-        """Entity
+        r"""Entity
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class Entity:
 
     @property
     def version(self):
-        """Gets the version of this Entity.
+        r"""Gets the version of this Entity.
 
         数据版本
 
@@ -201,7 +201,7 @@ class Entity:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Entity.
+        r"""Sets the version of this Entity.
 
         数据版本
 
@@ -212,7 +212,7 @@ class Entity:
 
     @property
     def relationship_attributes(self):
-        """Gets the relationship_attributes of this Entity.
+        r"""Gets the relationship_attributes of this Entity.
 
         关联关系属性，数据类型Map<String, Object>
 
@@ -223,7 +223,7 @@ class Entity:
 
     @relationship_attributes.setter
     def relationship_attributes(self, relationship_attributes):
-        """Sets the relationship_attributes of this Entity.
+        r"""Sets the relationship_attributes of this Entity.
 
         关联关系属性，数据类型Map<String, Object>
 
@@ -234,7 +234,7 @@ class Entity:
 
     @property
     def super_type_names(self):
-        """Gets the super_type_names of this Entity.
+        r"""Gets the super_type_names of this Entity.
 
         父类资产类型
 
@@ -245,7 +245,7 @@ class Entity:
 
     @super_type_names.setter
     def super_type_names(self, super_type_names):
-        """Sets the super_type_names of this Entity.
+        r"""Sets the super_type_names of this Entity.
 
         父类资产类型
 
@@ -256,7 +256,7 @@ class Entity:
 
     @property
     def business_attributes(self):
-        """Gets the business_attributes of this Entity.
+        r"""Gets the business_attributes of this Entity.
 
         业务属性，数据类型Map<String, Map<String, Object>>
 
@@ -267,7 +267,7 @@ class Entity:
 
     @business_attributes.setter
     def business_attributes(self, business_attributes):
-        """Sets the business_attributes of this Entity.
+        r"""Sets the business_attributes of this Entity.
 
         业务属性，数据类型Map<String, Map<String, Object>>
 
@@ -278,7 +278,7 @@ class Entity:
 
     @property
     def multi_attributes(self):
-        """Gets the multi_attributes of this Entity.
+        r"""Gets the multi_attributes of this Entity.
 
         承担密级和标签的多值对象数据结构，数据结构Map<String, List<Map<String, Object>>>
 
@@ -289,7 +289,7 @@ class Entity:
 
     @multi_attributes.setter
     def multi_attributes(self, multi_attributes):
-        """Sets the multi_attributes of this Entity.
+        r"""Sets the multi_attributes of this Entity.
 
         承担密级和标签的多值对象数据结构，数据结构Map<String, List<Map<String, Object>>>
 
@@ -300,7 +300,7 @@ class Entity:
 
     @property
     def privilege_info(self):
-        """Gets the privilege_info of this Entity.
+        r"""Gets the privilege_info of this Entity.
 
         :return: The privilege_info of this Entity.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EntityPrivilegeInfo`
@@ -309,7 +309,7 @@ class Entity:
 
     @privilege_info.setter
     def privilege_info(self, privilege_info):
-        """Sets the privilege_info of this Entity.
+        r"""Sets the privilege_info of this Entity.
 
         :param privilege_info: The privilege_info of this Entity.
         :type privilege_info: :class:`huaweicloudsdkdataartsstudio.v1.EntityPrivilegeInfo`
@@ -318,7 +318,7 @@ class Entity:
 
     @property
     def extended_attributes(self):
-        """Gets the extended_attributes of this Entity.
+        r"""Gets the extended_attributes of this Entity.
 
         拓展属性，数据结构Map<String, Object>
 
@@ -329,7 +329,7 @@ class Entity:
 
     @extended_attributes.setter
     def extended_attributes(self, extended_attributes):
-        """Sets the extended_attributes of this Entity.
+        r"""Sets the extended_attributes of this Entity.
 
         拓展属性，数据结构Map<String, Object>
 
@@ -340,7 +340,7 @@ class Entity:
 
     @property
     def guid(self):
-        """Gets the guid of this Entity.
+        r"""Gets the guid of this Entity.
 
         资产guid
 
@@ -351,7 +351,7 @@ class Entity:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this Entity.
+        r"""Sets the guid of this Entity.
 
         资产guid
 
@@ -362,7 +362,7 @@ class Entity:
 
     @property
     def type_name(self):
-        """Gets the type_name of this Entity.
+        r"""Gets the type_name of this Entity.
 
         资产类型名称
 
@@ -373,7 +373,7 @@ class Entity:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this Entity.
+        r"""Sets the type_name of this Entity.
 
         资产类型名称
 
@@ -384,7 +384,7 @@ class Entity:
 
     @property
     def type_display_name(self):
-        """Gets the type_display_name of this Entity.
+        r"""Gets the type_display_name of this Entity.
 
         类型展示名称
 
@@ -395,7 +395,7 @@ class Entity:
 
     @type_display_name.setter
     def type_display_name(self, type_display_name):
-        """Sets the type_display_name of this Entity.
+        r"""Sets the type_display_name of this Entity.
 
         类型展示名称
 
@@ -406,7 +406,7 @@ class Entity:
 
     @property
     def display_text(self):
-        """Gets the display_text of this Entity.
+        r"""Gets the display_text of this Entity.
 
         展示名称
 
@@ -417,7 +417,7 @@ class Entity:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this Entity.
+        r"""Sets the display_text of this Entity.
 
         展示名称
 
@@ -428,7 +428,7 @@ class Entity:
 
     @property
     def attributes(self):
-        """Gets the attributes of this Entity.
+        r"""Gets the attributes of this Entity.
 
         资产属性，Map<String, Object>
 
@@ -439,7 +439,7 @@ class Entity:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this Entity.
+        r"""Sets the attributes of this Entity.
 
         资产属性，Map<String, Object>
 
@@ -450,7 +450,7 @@ class Entity:
 
     @property
     def updated_attributes(self):
-        """Gets the updated_attributes of this Entity.
+        r"""Gets the updated_attributes of this Entity.
 
         修改属性列表
 
@@ -461,7 +461,7 @@ class Entity:
 
     @updated_attributes.setter
     def updated_attributes(self, updated_attributes):
-        """Sets the updated_attributes of this Entity.
+        r"""Sets the updated_attributes of this Entity.
 
         修改属性列表
 
@@ -472,7 +472,7 @@ class Entity:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Entity.
+        r"""Gets the project_id of this Entity.
 
         项目id
 
@@ -483,7 +483,7 @@ class Entity:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Entity.
+        r"""Sets the project_id of this Entity.
 
         项目id
 
@@ -494,7 +494,7 @@ class Entity:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Entity.
+        r"""Gets the domain_id of this Entity.
 
         主账号id
 
@@ -505,7 +505,7 @@ class Entity:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Entity.
+        r"""Sets the domain_id of this Entity.
 
         主账号id
 
@@ -516,7 +516,7 @@ class Entity:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Entity.
+        r"""Gets the instance_id of this Entity.
 
         实例化id
 
@@ -527,7 +527,7 @@ class Entity:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Entity.
+        r"""Sets the instance_id of this Entity.
 
         实例化id
 
@@ -538,7 +538,7 @@ class Entity:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this Entity.
+        r"""Gets the workspace_id of this Entity.
 
         空间id列表
 
@@ -549,7 +549,7 @@ class Entity:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this Entity.
+        r"""Sets the workspace_id of this Entity.
 
         空间id列表
 
@@ -560,7 +560,7 @@ class Entity:
 
     @property
     def status(self):
-        """Gets the status of this Entity.
+        r"""Gets the status of this Entity.
 
         状态
 
@@ -571,7 +571,7 @@ class Entity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Entity.
+        r"""Sets the status of this Entity.
 
         状态
 
@@ -582,7 +582,7 @@ class Entity:
 
     @property
     def created_by(self):
-        """Gets the created_by of this Entity.
+        r"""Gets the created_by of this Entity.
 
         创建人
 
@@ -593,7 +593,7 @@ class Entity:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this Entity.
+        r"""Sets the created_by of this Entity.
 
         创建人
 
@@ -604,7 +604,7 @@ class Entity:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this Entity.
+        r"""Gets the updated_by of this Entity.
 
         修改人
 
@@ -615,7 +615,7 @@ class Entity:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this Entity.
+        r"""Sets the updated_by of this Entity.
 
         修改人
 
@@ -626,7 +626,7 @@ class Entity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Entity.
+        r"""Gets the create_time of this Entity.
 
         创建时间
 
@@ -637,7 +637,7 @@ class Entity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Entity.
+        r"""Sets the create_time of this Entity.
 
         创建时间
 
@@ -648,7 +648,7 @@ class Entity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Entity.
+        r"""Gets the update_time of this Entity.
 
         修改时间
 
@@ -659,7 +659,7 @@ class Entity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Entity.
+        r"""Sets the update_time of this Entity.
 
         修改时间
 

@@ -29,7 +29,7 @@ class ListEnvironmentsRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ListEnvironmentsRequest
+        r"""ListEnvironmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListEnvironmentsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListEnvironmentsRequest.
+        r"""Gets the project_id of this ListEnvironmentsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -65,7 +65,7 @@ class ListEnvironmentsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListEnvironmentsRequest.
+        r"""Sets the project_id of this ListEnvironmentsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -76,7 +76,7 @@ class ListEnvironmentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnvironmentsRequest.
+        r"""Gets the offset of this ListEnvironmentsRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -87,7 +87,7 @@ class ListEnvironmentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnvironmentsRequest.
+        r"""Sets the offset of this ListEnvironmentsRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -98,7 +98,7 @@ class ListEnvironmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnvironmentsRequest.
+        r"""Gets the limit of this ListEnvironmentsRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -109,7 +109,7 @@ class ListEnvironmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnvironmentsRequest.
+        r"""Sets the limit of this ListEnvironmentsRequest.
 
         每页显示的条目数量,最大支持200条
 

@@ -47,7 +47,7 @@ class InvitorInfo:
     }
 
     def __init__(self, invitor_id=None, invitor_name=None, invitor_bcs_id=None, invitor_bcs_name=None, invitor_consensus=None, invitor_project_id=None, invitor_cluster_type=None, invitor_database_type=None, invitor_signature_algorithm=None, invitor_fabric_version=None, order_fade_enabled=None, order_fade_cache=None):
-        """InvitorInfo
+        r"""InvitorInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class InvitorInfo:
 
     @property
     def invitor_id(self):
-        """Gets the invitor_id of this InvitorInfo.
+        r"""Gets the invitor_id of this InvitorInfo.
 
         邀请方用户id
 
@@ -131,7 +131,7 @@ class InvitorInfo:
 
     @invitor_id.setter
     def invitor_id(self, invitor_id):
-        """Sets the invitor_id of this InvitorInfo.
+        r"""Sets the invitor_id of this InvitorInfo.
 
         邀请方用户id
 
@@ -142,7 +142,7 @@ class InvitorInfo:
 
     @property
     def invitor_name(self):
-        """Gets the invitor_name of this InvitorInfo.
+        r"""Gets the invitor_name of this InvitorInfo.
 
         邀请方用户名
 
@@ -153,7 +153,7 @@ class InvitorInfo:
 
     @invitor_name.setter
     def invitor_name(self, invitor_name):
-        """Sets the invitor_name of this InvitorInfo.
+        r"""Sets the invitor_name of this InvitorInfo.
 
         邀请方用户名
 
@@ -164,7 +164,7 @@ class InvitorInfo:
 
     @property
     def invitor_bcs_id(self):
-        """Gets the invitor_bcs_id of this InvitorInfo.
+        r"""Gets the invitor_bcs_id of this InvitorInfo.
 
         邀请方的服务实例id
 
@@ -175,7 +175,7 @@ class InvitorInfo:
 
     @invitor_bcs_id.setter
     def invitor_bcs_id(self, invitor_bcs_id):
-        """Sets the invitor_bcs_id of this InvitorInfo.
+        r"""Sets the invitor_bcs_id of this InvitorInfo.
 
         邀请方的服务实例id
 
@@ -186,7 +186,7 @@ class InvitorInfo:
 
     @property
     def invitor_bcs_name(self):
-        """Gets the invitor_bcs_name of this InvitorInfo.
+        r"""Gets the invitor_bcs_name of this InvitorInfo.
 
         邀请方的服务实例名
 
@@ -197,7 +197,7 @@ class InvitorInfo:
 
     @invitor_bcs_name.setter
     def invitor_bcs_name(self, invitor_bcs_name):
-        """Sets the invitor_bcs_name of this InvitorInfo.
+        r"""Sets the invitor_bcs_name of this InvitorInfo.
 
         邀请方的服务实例名
 
@@ -208,7 +208,7 @@ class InvitorInfo:
 
     @property
     def invitor_consensus(self):
-        """Gets the invitor_consensus of this InvitorInfo.
+        r"""Gets the invitor_consensus of this InvitorInfo.
 
         邀请方的共识
 
@@ -219,7 +219,7 @@ class InvitorInfo:
 
     @invitor_consensus.setter
     def invitor_consensus(self, invitor_consensus):
-        """Sets the invitor_consensus of this InvitorInfo.
+        r"""Sets the invitor_consensus of this InvitorInfo.
 
         邀请方的共识
 
@@ -230,7 +230,7 @@ class InvitorInfo:
 
     @property
     def invitor_project_id(self):
-        """Gets the invitor_project_id of this InvitorInfo.
+        r"""Gets the invitor_project_id of this InvitorInfo.
 
         邀请方的projectID
 
@@ -241,7 +241,7 @@ class InvitorInfo:
 
     @invitor_project_id.setter
     def invitor_project_id(self, invitor_project_id):
-        """Sets the invitor_project_id of this InvitorInfo.
+        r"""Sets the invitor_project_id of this InvitorInfo.
 
         邀请方的projectID
 
@@ -252,7 +252,7 @@ class InvitorInfo:
 
     @property
     def invitor_cluster_type(self):
-        """Gets the invitor_cluster_type of this InvitorInfo.
+        r"""Gets the invitor_cluster_type of this InvitorInfo.
 
         邀请方的集群类型
 
@@ -263,7 +263,7 @@ class InvitorInfo:
 
     @invitor_cluster_type.setter
     def invitor_cluster_type(self, invitor_cluster_type):
-        """Sets the invitor_cluster_type of this InvitorInfo.
+        r"""Sets the invitor_cluster_type of this InvitorInfo.
 
         邀请方的集群类型
 
@@ -274,7 +274,7 @@ class InvitorInfo:
 
     @property
     def invitor_database_type(self):
-        """Gets the invitor_database_type of this InvitorInfo.
+        r"""Gets the invitor_database_type of this InvitorInfo.
 
         邀请方数据库类型
 
@@ -285,7 +285,7 @@ class InvitorInfo:
 
     @invitor_database_type.setter
     def invitor_database_type(self, invitor_database_type):
-        """Sets the invitor_database_type of this InvitorInfo.
+        r"""Sets the invitor_database_type of this InvitorInfo.
 
         邀请方数据库类型
 
@@ -296,7 +296,7 @@ class InvitorInfo:
 
     @property
     def invitor_signature_algorithm(self):
-        """Gets the invitor_signature_algorithm of this InvitorInfo.
+        r"""Gets the invitor_signature_algorithm of this InvitorInfo.
 
         邀请方的签名算法
 
@@ -307,7 +307,7 @@ class InvitorInfo:
 
     @invitor_signature_algorithm.setter
     def invitor_signature_algorithm(self, invitor_signature_algorithm):
-        """Sets the invitor_signature_algorithm of this InvitorInfo.
+        r"""Sets the invitor_signature_algorithm of this InvitorInfo.
 
         邀请方的签名算法
 
@@ -318,7 +318,7 @@ class InvitorInfo:
 
     @property
     def invitor_fabric_version(self):
-        """Gets the invitor_fabric_version of this InvitorInfo.
+        r"""Gets the invitor_fabric_version of this InvitorInfo.
 
         邀请方的fabric版本
 
@@ -329,7 +329,7 @@ class InvitorInfo:
 
     @invitor_fabric_version.setter
     def invitor_fabric_version(self, invitor_fabric_version):
-        """Sets the invitor_fabric_version of this InvitorInfo.
+        r"""Sets the invitor_fabric_version of this InvitorInfo.
 
         邀请方的fabric版本
 
@@ -340,7 +340,7 @@ class InvitorInfo:
 
     @property
     def order_fade_enabled(self):
-        """Gets the order_fade_enabled of this InvitorInfo.
+        r"""Gets the order_fade_enabled of this InvitorInfo.
 
         是否允许共识节点老化
 
@@ -351,7 +351,7 @@ class InvitorInfo:
 
     @order_fade_enabled.setter
     def order_fade_enabled(self, order_fade_enabled):
-        """Sets the order_fade_enabled of this InvitorInfo.
+        r"""Sets the order_fade_enabled of this InvitorInfo.
 
         是否允许共识节点老化
 
@@ -362,7 +362,7 @@ class InvitorInfo:
 
     @property
     def order_fade_cache(self):
-        """Gets the order_fade_cache of this InvitorInfo.
+        r"""Gets the order_fade_cache of this InvitorInfo.
 
         共识节点的老化阈值
 
@@ -373,7 +373,7 @@ class InvitorInfo:
 
     @order_fade_cache.setter
     def order_fade_cache(self, order_fade_cache):
-        """Sets the order_fade_cache of this InvitorInfo.
+        r"""Sets the order_fade_cache of this InvitorInfo.
 
         共识节点的老化阈值
 

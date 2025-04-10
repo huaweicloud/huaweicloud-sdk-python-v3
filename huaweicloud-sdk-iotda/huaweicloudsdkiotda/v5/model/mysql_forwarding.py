@@ -38,7 +38,7 @@ class MysqlForwarding:
     }
 
     def __init__(self, address=None, db_name=None, username=None, password=None, enable_ssl=None, table_name=None, column_mappings=None):
-        """MysqlForwarding
+        r"""MysqlForwarding
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class MysqlForwarding:
 
     @property
     def address(self):
-        """Gets the address of this MysqlForwarding.
+        r"""Gets the address of this MysqlForwarding.
 
         :return: The address of this MysqlForwarding.
         :rtype: :class:`huaweicloudsdkiotda.v5.NetAddress`
@@ -89,7 +89,7 @@ class MysqlForwarding:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MysqlForwarding.
+        r"""Sets the address of this MysqlForwarding.
 
         :param address: The address of this MysqlForwarding.
         :type address: :class:`huaweicloudsdkiotda.v5.NetAddress`
@@ -98,7 +98,7 @@ class MysqlForwarding:
 
     @property
     def db_name(self):
-        """Gets the db_name of this MysqlForwarding.
+        r"""Gets the db_name of this MysqlForwarding.
 
         **参数说明**：连接MYSQL数据库的库名。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -109,7 +109,7 @@ class MysqlForwarding:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this MysqlForwarding.
+        r"""Sets the db_name of this MysqlForwarding.
 
         **参数说明**：连接MYSQL数据库的库名。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -120,7 +120,7 @@ class MysqlForwarding:
 
     @property
     def username(self):
-        """Gets the username of this MysqlForwarding.
+        r"""Gets the username of this MysqlForwarding.
 
         **参数说明**：连接MYSQL数据库的用户名
 
@@ -131,7 +131,7 @@ class MysqlForwarding:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this MysqlForwarding.
+        r"""Sets the username of this MysqlForwarding.
 
         **参数说明**：连接MYSQL数据库的用户名
 
@@ -142,7 +142,7 @@ class MysqlForwarding:
 
     @property
     def password(self):
-        """Gets the password of this MysqlForwarding.
+        r"""Gets the password of this MysqlForwarding.
 
         **参数说明**：连接MYSQL数据库的密码
 
@@ -153,7 +153,7 @@ class MysqlForwarding:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this MysqlForwarding.
+        r"""Sets the password of this MysqlForwarding.
 
         **参数说明**：连接MYSQL数据库的密码
 
@@ -164,7 +164,7 @@ class MysqlForwarding:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this MysqlForwarding.
+        r"""Gets the enable_ssl of this MysqlForwarding.
 
         **参数说明**：客户端是否使用SSL连接服务端，默认为true
 
@@ -175,7 +175,7 @@ class MysqlForwarding:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this MysqlForwarding.
+        r"""Sets the enable_ssl of this MysqlForwarding.
 
         **参数说明**：客户端是否使用SSL连接服务端，默认为true
 
@@ -186,7 +186,7 @@ class MysqlForwarding:
 
     @property
     def table_name(self):
-        """Gets the table_name of this MysqlForwarding.
+        r"""Gets the table_name of this MysqlForwarding.
 
         **参数说明**：MYSQL数据库的表名
 
@@ -197,7 +197,7 @@ class MysqlForwarding:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this MysqlForwarding.
+        r"""Sets the table_name of this MysqlForwarding.
 
         **参数说明**：MYSQL数据库的表名
 
@@ -208,7 +208,7 @@ class MysqlForwarding:
 
     @property
     def column_mappings(self):
-        """Gets the column_mappings of this MysqlForwarding.
+        r"""Gets the column_mappings of this MysqlForwarding.
 
         **参数说明**：MYSQL数据库的列和流转数据的对应关系列表。
 
@@ -219,7 +219,7 @@ class MysqlForwarding:
 
     @column_mappings.setter
     def column_mappings(self, column_mappings):
-        """Sets the column_mappings of this MysqlForwarding.
+        r"""Sets the column_mappings of this MysqlForwarding.
 
         **参数说明**：MYSQL数据库的列和流转数据的对应关系列表。
 

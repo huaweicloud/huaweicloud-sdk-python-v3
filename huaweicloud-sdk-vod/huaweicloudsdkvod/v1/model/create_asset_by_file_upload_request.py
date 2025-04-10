@@ -25,7 +25,7 @@ class CreateAssetByFileUploadRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAssetByFileUploadRequest
+        r"""CreateAssetByFileUploadRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAssetByFileUploadRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAssetByFileUploadRequest.
+        r"""Gets the body of this CreateAssetByFileUploadRequest.
 
         :return: The body of this CreateAssetByFileUploadRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadReq`
@@ -52,7 +52,7 @@ class CreateAssetByFileUploadRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAssetByFileUploadRequest.
+        r"""Sets the body of this CreateAssetByFileUploadRequest.
 
         :param body: The body of this CreateAssetByFileUploadRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadReq`

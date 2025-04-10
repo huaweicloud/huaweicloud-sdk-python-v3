@@ -25,7 +25,7 @@ class DeleteTranscodeProductRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteTranscodeProductRequest
+        r"""DeleteTranscodeProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTranscodeProductRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTranscodeProductRequest.
+        r"""Gets the body of this DeleteTranscodeProductRequest.
 
         :return: The body of this DeleteTranscodeProductRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTranscodeProductReq`
@@ -52,7 +52,7 @@ class DeleteTranscodeProductRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTranscodeProductRequest.
+        r"""Sets the body of this DeleteTranscodeProductRequest.
 
         :param body: The body of this DeleteTranscodeProductRequest.
         :type body: :class:`huaweicloudsdkvod.v1.DeleteTranscodeProductReq`

@@ -27,7 +27,7 @@ class DailyTimerType:
     }
 
     def __init__(self, time=None, days_of_week=None):
-        """DailyTimerType
+        r"""DailyTimerType
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DailyTimerType:
 
     @property
     def time(self):
-        """Gets the time of this DailyTimerType.
+        r"""Gets the time of this DailyTimerType.
 
         **参数说明**：规则触发的时间，格式：HH:MM。
 
@@ -60,7 +60,7 @@ class DailyTimerType:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this DailyTimerType.
+        r"""Sets the time of this DailyTimerType.
 
         **参数说明**：规则触发的时间，格式：HH:MM。
 
@@ -71,7 +71,7 @@ class DailyTimerType:
 
     @property
     def days_of_week(self):
-        """Gets the days_of_week of this DailyTimerType.
+        r"""Gets the days_of_week of this DailyTimerType.
 
         **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
 
@@ -82,7 +82,7 @@ class DailyTimerType:
 
     @days_of_week.setter
     def days_of_week(self, days_of_week):
-        """Sets the days_of_week of this DailyTimerType.
+        r"""Sets the days_of_week of this DailyTimerType.
 
         **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
 

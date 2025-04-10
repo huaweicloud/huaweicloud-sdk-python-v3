@@ -28,7 +28,7 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, status=None):
-        """ListInstancesResponse
+        r"""ListInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListInstancesResponse.
+        r"""Gets the instances of this ListInstancesResponse.
 
         :return: The instances of this ListInstancesResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
@@ -60,7 +60,7 @@ class ListInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListInstancesResponse.
+        r"""Sets the instances of this ListInstancesResponse.
 
         :param instances: The instances of this ListInstancesResponse.
         :type instances: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
@@ -69,7 +69,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesResponse.
+        r"""Gets the status of this ListInstancesResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class ListInstancesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesResponse.
+        r"""Sets the status of this ListInstancesResponse.
 
         状态
 

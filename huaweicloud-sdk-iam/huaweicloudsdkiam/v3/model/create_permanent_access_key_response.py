@@ -26,7 +26,7 @@ class CreatePermanentAccessKeyResponse(SdkResponse):
     }
 
     def __init__(self, credential=None):
-        """CreatePermanentAccessKeyResponse
+        r"""CreatePermanentAccessKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePermanentAccessKeyResponse(SdkResponse):
 
     @property
     def credential(self):
-        """Gets the credential of this CreatePermanentAccessKeyResponse.
+        r"""Gets the credential of this CreatePermanentAccessKeyResponse.
 
         :return: The credential of this CreatePermanentAccessKeyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateCredentialResult`
@@ -53,7 +53,7 @@ class CreatePermanentAccessKeyResponse(SdkResponse):
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this CreatePermanentAccessKeyResponse.
+        r"""Sets the credential of this CreatePermanentAccessKeyResponse.
 
         :param credential: The credential of this CreatePermanentAccessKeyResponse.
         :type credential: :class:`huaweicloudsdkiam.v3.CreateCredentialResult`

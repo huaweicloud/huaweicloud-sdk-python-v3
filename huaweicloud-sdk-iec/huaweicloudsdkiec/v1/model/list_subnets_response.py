@@ -28,7 +28,7 @@ class ListSubnetsResponse(SdkResponse):
     }
 
     def __init__(self, subnets=None, count=None):
-        """ListSubnetsResponse
+        r"""ListSubnetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSubnetsResponse(SdkResponse):
 
     @property
     def subnets(self):
-        """Gets the subnets of this ListSubnetsResponse.
+        r"""Gets the subnets of this ListSubnetsResponse.
 
         子网数组。
 
@@ -62,7 +62,7 @@ class ListSubnetsResponse(SdkResponse):
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this ListSubnetsResponse.
+        r"""Sets the subnets of this ListSubnetsResponse.
 
         子网数组。
 
@@ -73,7 +73,7 @@ class ListSubnetsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSubnetsResponse.
+        r"""Gets the count of this ListSubnetsResponse.
 
         子网数目。
 
@@ -84,7 +84,7 @@ class ListSubnetsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSubnetsResponse.
+        r"""Sets the count of this ListSubnetsResponse.
 
         子网数目。
 

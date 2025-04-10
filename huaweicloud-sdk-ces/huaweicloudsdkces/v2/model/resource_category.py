@@ -27,7 +27,7 @@ class ResourceCategory:
     }
 
     def __init__(self, namespace=None, dimension_names=None):
-        """ResourceCategory
+        r"""ResourceCategory
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceCategory:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ResourceCategory.
+        r"""Gets the namespace of this ResourceCategory.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -59,7 +59,7 @@ class ResourceCategory:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ResourceCategory.
+        r"""Sets the namespace of this ResourceCategory.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -70,7 +70,7 @@ class ResourceCategory:
 
     @property
     def dimension_names(self):
-        """Gets the dimension_names of this ResourceCategory.
+        r"""Gets the dimension_names of this ResourceCategory.
 
         资源的维度信息，多个维度通过字母序排序后逗号拼接
 
@@ -81,7 +81,7 @@ class ResourceCategory:
 
     @dimension_names.setter
     def dimension_names(self, dimension_names):
-        """Sets the dimension_names of this ResourceCategory.
+        r"""Sets the dimension_names of this ResourceCategory.
 
         资源的维度信息，多个维度通过字母序排序后逗号拼接
 

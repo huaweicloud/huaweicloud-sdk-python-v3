@@ -26,7 +26,7 @@ class ImportPointsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ImportPointsResponse
+        r"""ImportPointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportPointsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ImportPointsResponse.
+        r"""Gets the body of this ImportPointsResponse.
 
         :return: The body of this ImportPointsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ImportPointsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportPointsResponse.
+        r"""Sets the body of this ImportPointsResponse.
 
         :param body: The body of this ImportPointsResponse.
         :type body: str

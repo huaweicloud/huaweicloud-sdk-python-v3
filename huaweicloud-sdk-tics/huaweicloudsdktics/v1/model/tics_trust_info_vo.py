@@ -41,7 +41,7 @@ class TicsTrustInfoVo:
     }
 
     def __init__(self, create_time=None, ha_mode=None, ne_deploy_type=None, ne_node_type=None, ne_status=None, node_id=None, node_name=None, partner_alias=None, update_time=None):
-        """TicsTrustInfoVo
+        r"""TicsTrustInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TicsTrustInfoVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TicsTrustInfoVo.
+        r"""Gets the create_time of this TicsTrustInfoVo.
 
         创建时间
 
@@ -110,7 +110,7 @@ class TicsTrustInfoVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TicsTrustInfoVo.
+        r"""Sets the create_time of this TicsTrustInfoVo.
 
         创建时间
 
@@ -121,7 +121,7 @@ class TicsTrustInfoVo:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this TicsTrustInfoVo.
+        r"""Gets the ha_mode of this TicsTrustInfoVo.
 
         主备模式，ACTIVE.主，STANDBY.备
 
@@ -132,7 +132,7 @@ class TicsTrustInfoVo:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this TicsTrustInfoVo.
+        r"""Sets the ha_mode of this TicsTrustInfoVo.
 
         主备模式，ACTIVE.主，STANDBY.备
 
@@ -143,7 +143,7 @@ class TicsTrustInfoVo:
 
     @property
     def ne_deploy_type(self):
-        """Gets the ne_deploy_type of this TicsTrustInfoVo.
+        r"""Gets the ne_deploy_type of this TicsTrustInfoVo.
 
         网元部署类型，CCE.容器集群部署，IEF.边缘部署
 
@@ -154,7 +154,7 @@ class TicsTrustInfoVo:
 
     @ne_deploy_type.setter
     def ne_deploy_type(self, ne_deploy_type):
-        """Sets the ne_deploy_type of this TicsTrustInfoVo.
+        r"""Sets the ne_deploy_type of this TicsTrustInfoVo.
 
         网元部署类型，CCE.容器集群部署，IEF.边缘部署
 
@@ -165,7 +165,7 @@ class TicsTrustInfoVo:
 
     @property
     def ne_node_type(self):
-        """Gets the ne_node_type of this TicsTrustInfoVo.
+        r"""Gets the ne_node_type of this TicsTrustInfoVo.
 
         节点类型,AGENT.计算节点，AGG.聚合节点，AGG_MANAGER.聚合器管理节点,SERVER.控制节点
 
@@ -176,7 +176,7 @@ class TicsTrustInfoVo:
 
     @ne_node_type.setter
     def ne_node_type(self, ne_node_type):
-        """Sets the ne_node_type of this TicsTrustInfoVo.
+        r"""Sets the ne_node_type of this TicsTrustInfoVo.
 
         节点类型,AGENT.计算节点，AGG.聚合节点，AGG_MANAGER.聚合器管理节点,SERVER.控制节点
 
@@ -187,7 +187,7 @@ class TicsTrustInfoVo:
 
     @property
     def ne_status(self):
-        """Gets the ne_status of this TicsTrustInfoVo.
+        r"""Gets the ne_status of this TicsTrustInfoVo.
 
         网元状态，INIT.初始化,UNKNOWN.未知,OFFLINE.离线,ONLINE.在线,FAULT.故障,TRUSTING.互信中,TRUST.已互信
 
@@ -198,7 +198,7 @@ class TicsTrustInfoVo:
 
     @ne_status.setter
     def ne_status(self, ne_status):
-        """Sets the ne_status of this TicsTrustInfoVo.
+        r"""Sets the ne_status of this TicsTrustInfoVo.
 
         网元状态，INIT.初始化,UNKNOWN.未知,OFFLINE.离线,ONLINE.在线,FAULT.故障,TRUSTING.互信中,TRUST.已互信
 
@@ -209,7 +209,7 @@ class TicsTrustInfoVo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TicsTrustInfoVo.
+        r"""Gets the node_id of this TicsTrustInfoVo.
 
         节点id
 
@@ -220,7 +220,7 @@ class TicsTrustInfoVo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TicsTrustInfoVo.
+        r"""Sets the node_id of this TicsTrustInfoVo.
 
         节点id
 
@@ -231,7 +231,7 @@ class TicsTrustInfoVo:
 
     @property
     def node_name(self):
-        """Gets the node_name of this TicsTrustInfoVo.
+        r"""Gets the node_name of this TicsTrustInfoVo.
 
         节点名称
 
@@ -242,7 +242,7 @@ class TicsTrustInfoVo:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this TicsTrustInfoVo.
+        r"""Sets the node_name of this TicsTrustInfoVo.
 
         节点名称
 
@@ -253,7 +253,7 @@ class TicsTrustInfoVo:
 
     @property
     def partner_alias(self):
-        """Gets the partner_alias of this TicsTrustInfoVo.
+        r"""Gets the partner_alias of this TicsTrustInfoVo.
 
         合作方别名
 
@@ -264,7 +264,7 @@ class TicsTrustInfoVo:
 
     @partner_alias.setter
     def partner_alias(self, partner_alias):
-        """Sets the partner_alias of this TicsTrustInfoVo.
+        r"""Sets the partner_alias of this TicsTrustInfoVo.
 
         合作方别名
 
@@ -275,7 +275,7 @@ class TicsTrustInfoVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TicsTrustInfoVo.
+        r"""Gets the update_time of this TicsTrustInfoVo.
 
         更新时间
 
@@ -286,7 +286,7 @@ class TicsTrustInfoVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TicsTrustInfoVo.
+        r"""Sets the update_time of this TicsTrustInfoVo.
 
         更新时间
 

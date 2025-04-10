@@ -39,7 +39,7 @@ class Contents:
     }
 
     def __init__(self, content_id=None, content=None, index=None, selected_temp_name=None, data=None, data_type=None, conditions=None, is_disabled=None):
-        """Contents
+        r"""Contents
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Contents:
 
     @property
     def content_id(self):
-        """Gets the content_id of this Contents.
+        r"""Gets the content_id of this Contents.
 
         事务id，若不为0表示此卡片为事务；为0表示非事务
 
@@ -103,7 +103,7 @@ class Contents:
 
     @content_id.setter
     def content_id(self, content_id):
-        """Sets the content_id of this Contents.
+        r"""Sets the content_id of this Contents.
 
         事务id，若不为0表示此卡片为事务；为0表示非事务
 
@@ -114,7 +114,7 @@ class Contents:
 
     @property
     def content(self):
-        """Gets the content of this Contents.
+        r"""Gets the content of this Contents.
 
         内容
 
@@ -125,7 +125,7 @@ class Contents:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Contents.
+        r"""Sets the content of this Contents.
 
         内容
 
@@ -136,7 +136,7 @@ class Contents:
 
     @property
     def index(self):
-        """Gets the index of this Contents.
+        r"""Gets the index of this Contents.
 
         排序索引标识
 
@@ -147,7 +147,7 @@ class Contents:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this Contents.
+        r"""Sets the index of this Contents.
 
         排序索引标识
 
@@ -158,7 +158,7 @@ class Contents:
 
     @property
     def selected_temp_name(self):
-        """Gets the selected_temp_name of this Contents.
+        r"""Gets the selected_temp_name of this Contents.
 
         选择的事务或者用例名称
 
@@ -169,7 +169,7 @@ class Contents:
 
     @selected_temp_name.setter
     def selected_temp_name(self, selected_temp_name):
-        """Sets the selected_temp_name of this Contents.
+        r"""Sets the selected_temp_name of this Contents.
 
         选择的事务或者用例名称
 
@@ -180,7 +180,7 @@ class Contents:
 
     @property
     def data(self):
-        """Gets the data of this Contents.
+        r"""Gets the data of this Contents.
 
         数据（循环、条件控制器作用的数据）
 
@@ -191,7 +191,7 @@ class Contents:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this Contents.
+        r"""Sets the data of this Contents.
 
         数据（循环、条件控制器作用的数据）
 
@@ -202,7 +202,7 @@ class Contents:
 
     @property
     def data_type(self):
-        """Gets the data_type of this Contents.
+        r"""Gets the data_type of this Contents.
 
         数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
@@ -213,7 +213,7 @@ class Contents:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this Contents.
+        r"""Sets the data_type of this Contents.
 
         数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
@@ -224,7 +224,7 @@ class Contents:
 
     @property
     def conditions(self):
-        """Gets the conditions of this Contents.
+        r"""Gets the conditions of this Contents.
 
         若类型为202:条件指令，该字段为条件配置
 
@@ -235,7 +235,7 @@ class Contents:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this Contents.
+        r"""Sets the conditions of this Contents.
 
         若类型为202:条件指令，该字段为条件配置
 
@@ -246,7 +246,7 @@ class Contents:
 
     @property
     def is_disabled(self):
-        """Gets the is_disabled of this Contents.
+        r"""Gets the is_disabled of this Contents.
 
         是否禁用
 
@@ -257,7 +257,7 @@ class Contents:
 
     @is_disabled.setter
     def is_disabled(self, is_disabled):
-        """Sets the is_disabled of this Contents.
+        r"""Sets the is_disabled of this Contents.
 
         是否禁用
 

@@ -54,7 +54,7 @@ class ShowDataJobResponse(SdkResponse):
     }
 
     def __init__(self, complete_data=None, running_data=None, creator=None, source_project_id=None, source_project_name=None, id=None, name=None, sources=None, create_time=None, end_time=None, status=None, destinations=None, type=None, failed_reason=None, additions=None):
-        """ShowDataJobResponse
+        r"""ShowDataJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def complete_data(self):
-        """Gets the complete_data of this ShowDataJobResponse.
+        r"""Gets the complete_data of this ShowDataJobResponse.
 
         已完成的数据列表
 
@@ -153,7 +153,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @complete_data.setter
     def complete_data(self, complete_data):
-        """Sets the complete_data of this ShowDataJobResponse.
+        r"""Sets the complete_data of this ShowDataJobResponse.
 
         已完成的数据列表
 
@@ -164,7 +164,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def running_data(self):
-        """Gets the running_data of this ShowDataJobResponse.
+        r"""Gets the running_data of this ShowDataJobResponse.
 
         正在执行的数据列表
 
@@ -175,7 +175,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @running_data.setter
     def running_data(self, running_data):
-        """Sets the running_data of this ShowDataJobResponse.
+        r"""Sets the running_data of this ShowDataJobResponse.
 
         正在执行的数据列表
 
@@ -186,7 +186,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowDataJobResponse.
+        r"""Gets the creator of this ShowDataJobResponse.
 
         数据作业创建者
 
@@ -197,7 +197,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowDataJobResponse.
+        r"""Sets the creator of this ShowDataJobResponse.
 
         数据作业创建者
 
@@ -208,7 +208,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ShowDataJobResponse.
+        r"""Gets the source_project_id of this ShowDataJobResponse.
 
         非本项目操作场景下源项目名称
 
@@ -219,7 +219,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ShowDataJobResponse.
+        r"""Sets the source_project_id of this ShowDataJobResponse.
 
         非本项目操作场景下源项目名称
 
@@ -230,7 +230,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ShowDataJobResponse.
+        r"""Gets the source_project_name of this ShowDataJobResponse.
 
         非本项目操作场景下源项目名称
 
@@ -241,7 +241,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ShowDataJobResponse.
+        r"""Sets the source_project_name of this ShowDataJobResponse.
 
         非本项目操作场景下源项目名称
 
@@ -252,7 +252,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDataJobResponse.
+        r"""Gets the id of this ShowDataJobResponse.
 
         数据作业ID
 
@@ -263,7 +263,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDataJobResponse.
+        r"""Sets the id of this ShowDataJobResponse.
 
         数据作业ID
 
@@ -274,7 +274,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDataJobResponse.
+        r"""Gets the name of this ShowDataJobResponse.
 
         数据作业名称
 
@@ -285,7 +285,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDataJobResponse.
+        r"""Sets the name of this ShowDataJobResponse.
 
         数据作业名称
 
@@ -296,7 +296,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this ShowDataJobResponse.
+        r"""Gets the sources of this ShowDataJobResponse.
 
         数据列表
 
@@ -307,7 +307,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ShowDataJobResponse.
+        r"""Sets the sources of this ShowDataJobResponse.
 
         数据列表
 
@@ -318,7 +318,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDataJobResponse.
+        r"""Gets the create_time of this ShowDataJobResponse.
 
         数据作业创建时间
 
@@ -329,7 +329,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDataJobResponse.
+        r"""Sets the create_time of this ShowDataJobResponse.
 
         数据作业创建时间
 
@@ -340,7 +340,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowDataJobResponse.
+        r"""Gets the end_time of this ShowDataJobResponse.
 
         数据作业结束时间
 
@@ -351,7 +351,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowDataJobResponse.
+        r"""Sets the end_time of this ShowDataJobResponse.
 
         数据作业结束时间
 
@@ -362,7 +362,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDataJobResponse.
+        r"""Gets the status of this ShowDataJobResponse.
 
         数据作业状态
 
@@ -373,7 +373,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDataJobResponse.
+        r"""Sets the status of this ShowDataJobResponse.
 
         数据作业状态
 
@@ -384,7 +384,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def destinations(self):
-        """Gets the destinations of this ShowDataJobResponse.
+        r"""Gets the destinations of this ShowDataJobResponse.
 
         数据列表
 
@@ -395,7 +395,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @destinations.setter
     def destinations(self, destinations):
-        """Sets the destinations of this ShowDataJobResponse.
+        r"""Sets the destinations of this ShowDataJobResponse.
 
         数据列表
 
@@ -406,7 +406,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDataJobResponse.
+        r"""Gets the type of this ShowDataJobResponse.
 
         数据作业类型
 
@@ -417,7 +417,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDataJobResponse.
+        r"""Sets the type of this ShowDataJobResponse.
 
         数据作业类型
 
@@ -428,7 +428,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ShowDataJobResponse.
+        r"""Gets the failed_reason of this ShowDataJobResponse.
 
         数据作业失败原因
 
@@ -439,7 +439,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ShowDataJobResponse.
+        r"""Sets the failed_reason of this ShowDataJobResponse.
 
         数据作业失败原因
 
@@ -450,7 +450,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @property
     def additions(self):
-        """Gets the additions of this ShowDataJobResponse.
+        r"""Gets the additions of this ShowDataJobResponse.
 
         附加信息
 
@@ -461,7 +461,7 @@ class ShowDataJobResponse(SdkResponse):
 
     @additions.setter
     def additions(self, additions):
-        """Sets the additions of this ShowDataJobResponse.
+        r"""Sets the additions of this ShowDataJobResponse.
 
         附加信息
 

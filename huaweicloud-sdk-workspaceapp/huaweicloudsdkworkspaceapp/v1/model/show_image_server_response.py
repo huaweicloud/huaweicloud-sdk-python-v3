@@ -52,7 +52,7 @@ class ShowImageServerResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, image_ref=None, server_group_id=None, app_group_id=None, server_id=None, instance_id=None, image_id=None, status=None, authorize_accounts=None, create_time=None, update_time=None, enterprise_project_id=None):
-        """ShowImageServerResponse
+        r"""ShowImageServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowImageServerResponse.
+        r"""Gets the id of this ShowImageServerResponse.
 
         实例的唯一标识。
 
@@ -146,7 +146,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowImageServerResponse.
+        r"""Sets the id of this ShowImageServerResponse.
 
         实例的唯一标识。
 
@@ -157,7 +157,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowImageServerResponse.
+        r"""Gets the name of this ShowImageServerResponse.
 
         镜像实例名称。
 
@@ -168,7 +168,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowImageServerResponse.
+        r"""Sets the name of this ShowImageServerResponse.
 
         镜像实例名称。
 
@@ -179,7 +179,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowImageServerResponse.
+        r"""Gets the description of this ShowImageServerResponse.
 
         描述。
 
@@ -190,7 +190,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowImageServerResponse.
+        r"""Sets the description of this ShowImageServerResponse.
 
         描述。
 
@@ -201,7 +201,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this ShowImageServerResponse.
+        r"""Gets the image_ref of this ShowImageServerResponse.
 
         :return: The image_ref of this ShowImageServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
@@ -210,7 +210,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this ShowImageServerResponse.
+        r"""Sets the image_ref of this ShowImageServerResponse.
 
         :param image_ref: The image_ref of this ShowImageServerResponse.
         :type image_ref: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
@@ -219,7 +219,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowImageServerResponse.
+        r"""Gets the server_group_id of this ShowImageServerResponse.
 
         APS服务器组ID。
 
@@ -230,7 +230,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowImageServerResponse.
+        r"""Sets the server_group_id of this ShowImageServerResponse.
 
         APS服务器组ID。
 
@@ -241,7 +241,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ShowImageServerResponse.
+        r"""Gets the app_group_id of this ShowImageServerResponse.
 
         应用组ID。
 
@@ -252,7 +252,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ShowImageServerResponse.
+        r"""Sets the app_group_id of this ShowImageServerResponse.
 
         应用组ID。
 
@@ -263,7 +263,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowImageServerResponse.
+        r"""Gets the server_id of this ShowImageServerResponse.
 
         APS实例ID。
 
@@ -274,7 +274,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowImageServerResponse.
+        r"""Sets the server_id of this ShowImageServerResponse.
 
         APS实例ID。
 
@@ -285,7 +285,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowImageServerResponse.
+        r"""Gets the instance_id of this ShowImageServerResponse.
 
         ECS服务器ID。
 
@@ -296,7 +296,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowImageServerResponse.
+        r"""Sets the instance_id of this ShowImageServerResponse.
 
         ECS服务器ID。
 
@@ -307,7 +307,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowImageServerResponse.
+        r"""Gets the image_id of this ShowImageServerResponse.
 
         镜像产物唯一标识。
 
@@ -318,7 +318,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowImageServerResponse.
+        r"""Sets the image_id of this ShowImageServerResponse.
 
         镜像产物唯一标识。
 
@@ -329,7 +329,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowImageServerResponse.
+        r"""Gets the status of this ShowImageServerResponse.
 
         :return: The status of this ShowImageServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
@@ -338,7 +338,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowImageServerResponse.
+        r"""Sets the status of this ShowImageServerResponse.
 
         :param status: The status of this ShowImageServerResponse.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
@@ -347,7 +347,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def authorize_accounts(self):
-        """Gets the authorize_accounts of this ShowImageServerResponse.
+        r"""Gets the authorize_accounts of this ShowImageServerResponse.
 
         应用组授权用户， * 限制用户类型：'USER' - 用户
 
@@ -358,7 +358,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @authorize_accounts.setter
     def authorize_accounts(self, authorize_accounts):
-        """Sets the authorize_accounts of this ShowImageServerResponse.
+        r"""Sets the authorize_accounts of this ShowImageServerResponse.
 
         应用组授权用户， * 限制用户类型：'USER' - 用户
 
@@ -369,7 +369,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowImageServerResponse.
+        r"""Gets the create_time of this ShowImageServerResponse.
 
         镜像实例创建时间
 
@@ -380,7 +380,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowImageServerResponse.
+        r"""Sets the create_time of this ShowImageServerResponse.
 
         镜像实例创建时间
 
@@ -391,7 +391,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowImageServerResponse.
+        r"""Gets the update_time of this ShowImageServerResponse.
 
         更新时间
 
@@ -402,7 +402,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowImageServerResponse.
+        r"""Sets the update_time of this ShowImageServerResponse.
 
         更新时间
 
@@ -413,7 +413,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowImageServerResponse.
+        r"""Gets the enterprise_project_id of this ShowImageServerResponse.
 
         企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
 
@@ -424,7 +424,7 @@ class ShowImageServerResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowImageServerResponse.
+        r"""Sets the enterprise_project_id of this ShowImageServerResponse.
 
         企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
 

@@ -30,7 +30,7 @@ class ShowAccountRequest:
     }
 
     def __init__(self, x_security_token=None, with_register_contact_info=None, account_id=None):
-        """ShowAccountRequest
+        r"""ShowAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowAccountRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ShowAccountRequest.
+        r"""Gets the x_security_token of this ShowAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class ShowAccountRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowAccountRequest.
+        r"""Sets the x_security_token of this ShowAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class ShowAccountRequest:
 
     @property
     def with_register_contact_info(self):
-        """Gets the with_register_contact_info of this ShowAccountRequest.
+        r"""Gets the with_register_contact_info of this ShowAccountRequest.
 
         是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
 
@@ -90,7 +90,7 @@ class ShowAccountRequest:
 
     @with_register_contact_info.setter
     def with_register_contact_info(self, with_register_contact_info):
-        """Sets the with_register_contact_info of this ShowAccountRequest.
+        r"""Sets the with_register_contact_info of this ShowAccountRequest.
 
         是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
 
@@ -101,7 +101,7 @@ class ShowAccountRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ShowAccountRequest.
+        r"""Gets the account_id of this ShowAccountRequest.
 
         账号的唯一标识符（ID）。
 
@@ -112,7 +112,7 @@ class ShowAccountRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ShowAccountRequest.
+        r"""Sets the account_id of this ShowAccountRequest.
 
         账号的唯一标识符（ID）。
 

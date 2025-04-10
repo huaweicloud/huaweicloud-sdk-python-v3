@@ -28,7 +28,7 @@ class ListPipelineJobsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, pipelines=None):
-        """ListPipelineJobsResponse
+        r"""ListPipelineJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPipelineJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPipelineJobsResponse.
+        r"""Gets the count of this ListPipelineJobsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListPipelineJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPipelineJobsResponse.
+        r"""Sets the count of this ListPipelineJobsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListPipelineJobsResponse(SdkResponse):
 
     @property
     def pipelines(self):
-        """Gets the pipelines of this ListPipelineJobsResponse.
+        r"""Gets the pipelines of this ListPipelineJobsResponse.
 
         管道列表
 
@@ -84,7 +84,7 @@ class ListPipelineJobsResponse(SdkResponse):
 
     @pipelines.setter
     def pipelines(self, pipelines):
-        """Sets the pipelines of this ListPipelineJobsResponse.
+        r"""Sets the pipelines of this ListPipelineJobsResponse.
 
         管道列表
 

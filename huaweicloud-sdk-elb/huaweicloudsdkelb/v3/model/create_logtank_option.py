@@ -29,7 +29,7 @@ class CreateLogtankOption:
     }
 
     def __init__(self, loadbalancer_id=None, log_group_id=None, log_topic_id=None):
-        """CreateLogtankOption
+        r"""CreateLogtankOption
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateLogtankOption:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreateLogtankOption.
+        r"""Gets the loadbalancer_id of this CreateLogtankOption.
 
         负载均衡器id
 
@@ -65,7 +65,7 @@ class CreateLogtankOption:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreateLogtankOption.
+        r"""Sets the loadbalancer_id of this CreateLogtankOption.
 
         负载均衡器id
 
@@ -76,7 +76,7 @@ class CreateLogtankOption:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateLogtankOption.
+        r"""Gets the log_group_id of this CreateLogtankOption.
 
         日志组别id，其他（非ELB）服务提供
 
@@ -87,7 +87,7 @@ class CreateLogtankOption:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateLogtankOption.
+        r"""Sets the log_group_id of this CreateLogtankOption.
 
         日志组别id，其他（非ELB）服务提供
 
@@ -98,7 +98,7 @@ class CreateLogtankOption:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this CreateLogtankOption.
+        r"""Gets the log_topic_id of this CreateLogtankOption.
 
         日志订阅主题id，其他（非ELB）服务提供
 
@@ -109,7 +109,7 @@ class CreateLogtankOption:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this CreateLogtankOption.
+        r"""Sets the log_topic_id of this CreateLogtankOption.
 
         日志订阅主题id，其他（非ELB）服务提供
 

@@ -27,7 +27,7 @@ class AddComponentRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """AddComponentRequest
+        r"""AddComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddComponentRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddComponentRequest.
+        r"""Gets the cluster_id of this AddComponentRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class AddComponentRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddComponentRequest.
+        r"""Sets the cluster_id of this AddComponentRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class AddComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddComponentRequest.
+        r"""Gets the body of this AddComponentRequest.
 
         :return: The body of this AddComponentRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.AddComponentsReq`
@@ -80,7 +80,7 @@ class AddComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddComponentRequest.
+        r"""Sets the body of this AddComponentRequest.
 
         :param body: The body of this AddComponentRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.AddComponentsReq`

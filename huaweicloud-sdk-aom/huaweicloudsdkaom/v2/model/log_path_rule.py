@@ -29,7 +29,7 @@ class LogPathRule:
     }
 
     def __init__(self, args=None, name_type=None, value=None):
-        """LogPathRule
+        r"""LogPathRule
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LogPathRule:
 
     @property
     def args(self):
-        """Gets the args of this LogPathRule.
+        r"""Gets the args of this LogPathRule.
 
         命令行。
 
@@ -65,7 +65,7 @@ class LogPathRule:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this LogPathRule.
+        r"""Sets the args of this LogPathRule.
 
         命令行。
 
@@ -76,7 +76,7 @@ class LogPathRule:
 
     @property
     def name_type(self):
-        """Gets the name_type of this LogPathRule.
+        r"""Gets the name_type of this LogPathRule.
 
         取值类型。 cmdLineHash
 
@@ -87,7 +87,7 @@ class LogPathRule:
 
     @name_type.setter
     def name_type(self, name_type):
-        """Sets the name_type of this LogPathRule.
+        r"""Sets the name_type of this LogPathRule.
 
         取值类型。 cmdLineHash
 
@@ -98,7 +98,7 @@ class LogPathRule:
 
     @property
     def value(self):
-        """Gets the value of this LogPathRule.
+        r"""Gets the value of this LogPathRule.
 
         日志路径。
 
@@ -109,7 +109,7 @@ class LogPathRule:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this LogPathRule.
+        r"""Sets the value of this LogPathRule.
 
         日志路径。
 

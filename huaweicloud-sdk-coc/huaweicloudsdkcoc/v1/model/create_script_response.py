@@ -26,7 +26,7 @@ class CreateScriptResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateScriptResponse
+        r"""CreateScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateScriptResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateScriptResponse.
+        r"""Gets the data of this CreateScriptResponse.
 
         script_uuid
 
@@ -55,7 +55,7 @@ class CreateScriptResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateScriptResponse.
+        r"""Sets the data of this CreateScriptResponse.
 
         script_uuid
 

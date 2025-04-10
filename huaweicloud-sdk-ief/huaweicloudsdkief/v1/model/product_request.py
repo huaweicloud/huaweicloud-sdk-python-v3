@@ -31,7 +31,7 @@ class ProductRequest:
     }
 
     def __init__(self, name=None, description=None, attributes=None, tags=None):
-        """ProductRequest
+        r"""ProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ProductRequest:
 
     @property
     def name(self):
-        """Gets the name of this ProductRequest.
+        r"""Gets the name of this ProductRequest.
 
         产品名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
@@ -74,7 +74,7 @@ class ProductRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProductRequest.
+        r"""Sets the name of this ProductRequest.
 
         产品名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
@@ -85,7 +85,7 @@ class ProductRequest:
 
     @property
     def description(self):
-        """Gets the description of this ProductRequest.
+        r"""Gets the description of this ProductRequest.
 
         产品描述
 
@@ -96,7 +96,7 @@ class ProductRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProductRequest.
+        r"""Sets the description of this ProductRequest.
 
         产品描述
 
@@ -107,7 +107,7 @@ class ProductRequest:
 
     @property
     def attributes(self):
-        """Gets the attributes of this ProductRequest.
+        r"""Gets the attributes of this ProductRequest.
 
         产品属性值
 
@@ -118,7 +118,7 @@ class ProductRequest:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ProductRequest.
+        r"""Sets the attributes of this ProductRequest.
 
         产品属性值
 
@@ -129,7 +129,7 @@ class ProductRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ProductRequest.
+        r"""Gets the tags of this ProductRequest.
 
         产品标签
 
@@ -140,7 +140,7 @@ class ProductRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProductRequest.
+        r"""Sets the tags of this ProductRequest.
 
         产品标签
 

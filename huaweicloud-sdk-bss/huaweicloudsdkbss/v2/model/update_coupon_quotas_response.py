@@ -28,7 +28,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None, simple_quota_infos=None):
-        """UpdateCouponQuotasResponse
+        r"""UpdateCouponQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
 
     @property
     def error_details(self):
-        """Gets the error_details of this UpdateCouponQuotasResponse.
+        r"""Gets the error_details of this UpdateCouponQuotasResponse.
 
         发放失败的云经销商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
@@ -62,7 +62,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
 
     @error_details.setter
     def error_details(self, error_details):
-        """Sets the error_details of this UpdateCouponQuotasResponse.
+        r"""Sets the error_details of this UpdateCouponQuotasResponse.
 
         发放失败的云经销商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
@@ -73,7 +73,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
 
     @property
     def simple_quota_infos(self):
-        """Gets the simple_quota_infos of this UpdateCouponQuotasResponse.
+        r"""Gets the simple_quota_infos of this UpdateCouponQuotasResponse.
 
         发放成功的云经销商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
@@ -84,7 +84,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
 
     @simple_quota_infos.setter
     def simple_quota_infos(self, simple_quota_infos):
-        """Sets the simple_quota_infos of this UpdateCouponQuotasResponse.
+        r"""Sets the simple_quota_infos of this UpdateCouponQuotasResponse.
 
         发放成功的云经销商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 

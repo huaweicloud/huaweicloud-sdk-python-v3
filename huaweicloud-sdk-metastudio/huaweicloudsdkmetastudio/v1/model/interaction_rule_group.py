@@ -27,7 +27,7 @@ class InteractionRuleGroup:
     }
 
     def __init__(self, group_name=None, interaction_rules=None):
-        """InteractionRuleGroup
+        r"""InteractionRuleGroup
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InteractionRuleGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this InteractionRuleGroup.
+        r"""Gets the group_name of this InteractionRuleGroup.
 
         互动规则库名称
 
@@ -60,7 +60,7 @@ class InteractionRuleGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this InteractionRuleGroup.
+        r"""Sets the group_name of this InteractionRuleGroup.
 
         互动规则库名称
 
@@ -71,7 +71,7 @@ class InteractionRuleGroup:
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this InteractionRuleGroup.
+        r"""Gets the interaction_rules of this InteractionRuleGroup.
 
         互动规则列表
 
@@ -82,7 +82,7 @@ class InteractionRuleGroup:
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this InteractionRuleGroup.
+        r"""Sets the interaction_rules of this InteractionRuleGroup.
 
         互动规则列表
 

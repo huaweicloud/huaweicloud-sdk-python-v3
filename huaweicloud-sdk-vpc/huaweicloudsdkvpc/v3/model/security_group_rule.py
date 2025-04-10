@@ -55,7 +55,7 @@ class SecurityGroupRule:
     }
 
     def __init__(self, id=None, description=None, security_group_id=None, direction=None, protocol=None, ethertype=None, multiport=None, action=None, priority=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, created_at=None, updated_at=None, project_id=None, enabled=None):
-        """SecurityGroupRule
+        r"""SecurityGroupRule
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class SecurityGroupRule:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupRule.
+        r"""Gets the id of this SecurityGroupRule.
 
         功能描述：安全组规则对应的唯一标识 取值范围：带“-”的标准UUID格式
 
@@ -143,7 +143,7 @@ class SecurityGroupRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupRule.
+        r"""Sets the id of this SecurityGroupRule.
 
         功能描述：安全组规则对应的唯一标识 取值范围：带“-”的标准UUID格式
 
@@ -154,7 +154,7 @@ class SecurityGroupRule:
 
     @property
     def description(self):
-        """Gets the description of this SecurityGroupRule.
+        r"""Gets the description of this SecurityGroupRule.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -165,7 +165,7 @@ class SecurityGroupRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecurityGroupRule.
+        r"""Sets the description of this SecurityGroupRule.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -176,7 +176,7 @@ class SecurityGroupRule:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this SecurityGroupRule.
+        r"""Gets the security_group_id of this SecurityGroupRule.
 
         功能说明：安全组规则所属的安全组ID
 
@@ -187,7 +187,7 @@ class SecurityGroupRule:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this SecurityGroupRule.
+        r"""Sets the security_group_id of this SecurityGroupRule.
 
         功能说明：安全组规则所属的安全组ID
 
@@ -198,7 +198,7 @@ class SecurityGroupRule:
 
     @property
     def direction(self):
-        """Gets the direction of this SecurityGroupRule.
+        r"""Gets the direction of this SecurityGroupRule.
 
         功能说明：安全组规则的出入控制方向 取值范围：ingress 表示入方向；egress 表示出方向
 
@@ -209,7 +209,7 @@ class SecurityGroupRule:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this SecurityGroupRule.
+        r"""Sets the direction of this SecurityGroupRule.
 
         功能说明：安全组规则的出入控制方向 取值范围：ingress 表示入方向；egress 表示出方向
 
@@ -220,7 +220,7 @@ class SecurityGroupRule:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SecurityGroupRule.
+        r"""Gets the protocol of this SecurityGroupRule.
 
         功能说明：协议类型 取值范围：icmp、tcp、udp、icmpv6或IP协议号 约束：为空表示支持所有协议。协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -231,7 +231,7 @@ class SecurityGroupRule:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SecurityGroupRule.
+        r"""Sets the protocol of this SecurityGroupRule.
 
         功能说明：协议类型 取值范围：icmp、tcp、udp、icmpv6或IP协议号 约束：为空表示支持所有协议。协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -242,7 +242,7 @@ class SecurityGroupRule:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this SecurityGroupRule.
+        r"""Gets the ethertype of this SecurityGroupRule.
 
         功能说明：IP地址协议类型 取值范围：IPv4，IPv6 约束：不填默认值为IPv4
 
@@ -253,7 +253,7 @@ class SecurityGroupRule:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this SecurityGroupRule.
+        r"""Sets the ethertype of this SecurityGroupRule.
 
         功能说明：IP地址协议类型 取值范围：IPv4，IPv6 约束：不填默认值为IPv4
 
@@ -264,7 +264,7 @@ class SecurityGroupRule:
 
     @property
     def multiport(self):
-        """Gets the multiport of this SecurityGroupRule.
+        r"""Gets the multiport of this SecurityGroupRule.
 
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80)
 
@@ -275,7 +275,7 @@ class SecurityGroupRule:
 
     @multiport.setter
     def multiport(self, multiport):
-        """Sets the multiport of this SecurityGroupRule.
+        r"""Sets the multiport of this SecurityGroupRule.
 
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80)
 
@@ -286,7 +286,7 @@ class SecurityGroupRule:
 
     @property
     def action(self):
-        """Gets the action of this SecurityGroupRule.
+        r"""Gets the action of this SecurityGroupRule.
 
         功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为deny
 
@@ -297,7 +297,7 @@ class SecurityGroupRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this SecurityGroupRule.
+        r"""Sets the action of this SecurityGroupRule.
 
         功能说明：安全组规则生效策略 取值范围：allow 允许，deny 拒绝 约束：默认值为deny
 
@@ -308,7 +308,7 @@ class SecurityGroupRule:
 
     @property
     def priority(self):
-        """Gets the priority of this SecurityGroupRule.
+        r"""Gets the priority of this SecurityGroupRule.
 
         功能说明：优先级 取值范围：1~100，1代表最高优先级
 
@@ -319,7 +319,7 @@ class SecurityGroupRule:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this SecurityGroupRule.
+        r"""Sets the priority of this SecurityGroupRule.
 
         功能说明：优先级 取值范围：1~100，1代表最高优先级
 
@@ -330,7 +330,7 @@ class SecurityGroupRule:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this SecurityGroupRule.
+        r"""Gets the remote_group_id of this SecurityGroupRule.
 
         功能说明：远端安全组ID，表示该安全组内的流量允许或拒绝 取值范围：租户下存在的安全组ID 约束：与remote_ip_prefix，remote_address_group_id功能互斥
 
@@ -341,7 +341,7 @@ class SecurityGroupRule:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this SecurityGroupRule.
+        r"""Sets the remote_group_id of this SecurityGroupRule.
 
         功能说明：远端安全组ID，表示该安全组内的流量允许或拒绝 取值范围：租户下存在的安全组ID 约束：与remote_ip_prefix，remote_address_group_id功能互斥
 
@@ -352,7 +352,7 @@ class SecurityGroupRule:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this SecurityGroupRule.
+        r"""Gets the remote_ip_prefix of this SecurityGroupRule.
 
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：与remote_group_id、remote_address_group_id互斥
 
@@ -363,7 +363,7 @@ class SecurityGroupRule:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this SecurityGroupRule.
+        r"""Sets the remote_ip_prefix of this SecurityGroupRule.
 
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：与remote_group_id、remote_address_group_id互斥
 
@@ -374,7 +374,7 @@ class SecurityGroupRule:
 
     @property
     def remote_address_group_id(self):
-        """Gets the remote_address_group_id of this SecurityGroupRule.
+        r"""Gets the remote_address_group_id of this SecurityGroupRule.
 
         功能说明：远端地址组ID 取值范围：租户下存在的地址组ID 约束：与remote_ip_prefix，remote_group_id功能互斥
 
@@ -385,7 +385,7 @@ class SecurityGroupRule:
 
     @remote_address_group_id.setter
     def remote_address_group_id(self, remote_address_group_id):
-        """Sets the remote_address_group_id of this SecurityGroupRule.
+        r"""Sets the remote_address_group_id of this SecurityGroupRule.
 
         功能说明：远端地址组ID 取值范围：租户下存在的地址组ID 约束：与remote_ip_prefix，remote_group_id功能互斥
 
@@ -396,7 +396,7 @@ class SecurityGroupRule:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecurityGroupRule.
+        r"""Gets the created_at of this SecurityGroupRule.
 
         功能说明：安全组规则创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -407,7 +407,7 @@ class SecurityGroupRule:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecurityGroupRule.
+        r"""Sets the created_at of this SecurityGroupRule.
 
         功能说明：安全组规则创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -418,7 +418,7 @@ class SecurityGroupRule:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecurityGroupRule.
+        r"""Gets the updated_at of this SecurityGroupRule.
 
         功能说明：安全组规则更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -429,7 +429,7 @@ class SecurityGroupRule:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecurityGroupRule.
+        r"""Sets the updated_at of this SecurityGroupRule.
 
         功能说明：安全组规则更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -440,7 +440,7 @@ class SecurityGroupRule:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SecurityGroupRule.
+        r"""Gets the project_id of this SecurityGroupRule.
 
         功能说明：安全组规则所属项目ID
 
@@ -451,7 +451,7 @@ class SecurityGroupRule:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SecurityGroupRule.
+        r"""Sets the project_id of this SecurityGroupRule.
 
         功能说明：安全组规则所属项目ID
 
@@ -462,7 +462,7 @@ class SecurityGroupRule:
 
     @property
     def enabled(self):
-        """Gets the enabled of this SecurityGroupRule.
+        r"""Gets the enabled of this SecurityGroupRule.
 
         功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
 
@@ -473,7 +473,7 @@ class SecurityGroupRule:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this SecurityGroupRule.
+        r"""Sets the enabled of this SecurityGroupRule.
 
         功能说明：是否启用安全组规则。 取值范围：true, false。 约束：默认值为true。
 

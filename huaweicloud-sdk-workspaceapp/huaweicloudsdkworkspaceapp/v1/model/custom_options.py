@@ -25,7 +25,7 @@ class CustomOptions:
     }
 
     def __init__(self, custom_configuration1_rule=None):
-        """CustomOptions
+        r"""CustomOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CustomOptions:
 
     @property
     def custom_configuration1_rule(self):
-        """Gets the custom_configuration1_rule of this CustomOptions.
+        r"""Gets the custom_configuration1_rule of this CustomOptions.
 
         配置项1内容。
 
@@ -54,7 +54,7 @@ class CustomOptions:
 
     @custom_configuration1_rule.setter
     def custom_configuration1_rule(self, custom_configuration1_rule):
-        """Sets the custom_configuration1_rule of this CustomOptions.
+        r"""Sets the custom_configuration1_rule of this CustomOptions.
 
         配置项1内容。
 

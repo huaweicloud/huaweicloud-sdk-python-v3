@@ -27,7 +27,7 @@ class UpdateBatchJobRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """UpdateBatchJobRequest
+        r"""UpdateBatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBatchJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateBatchJobRequest.
+        r"""Gets the job_id of this UpdateBatchJobRequest.
 
         数据开发任务ID。
 
@@ -60,7 +60,7 @@ class UpdateBatchJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateBatchJobRequest.
+        r"""Sets the job_id of this UpdateBatchJobRequest.
 
         数据开发任务ID。
 
@@ -71,7 +71,7 @@ class UpdateBatchJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBatchJobRequest.
+        r"""Gets the body of this UpdateBatchJobRequest.
 
         :return: The body of this UpdateBatchJobRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Job`
@@ -80,7 +80,7 @@ class UpdateBatchJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBatchJobRequest.
+        r"""Sets the body of this UpdateBatchJobRequest.
 
         :param body: The body of this UpdateBatchJobRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.Job`

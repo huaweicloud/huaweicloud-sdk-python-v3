@@ -28,7 +28,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, cloud_connection_route=None):
-        """ShowCloudConnectionRoutesResponse
+        r"""ShowCloudConnectionRoutesResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowCloudConnectionRoutesResponse.
+        r"""Gets the request_id of this ShowCloudConnectionRoutesResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowCloudConnectionRoutesResponse.
+        r"""Sets the request_id of this ShowCloudConnectionRoutesResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
 
     @property
     def cloud_connection_route(self):
-        """Gets the cloud_connection_route of this ShowCloudConnectionRoutesResponse.
+        r"""Gets the cloud_connection_route of this ShowCloudConnectionRoutesResponse.
 
         :return: The cloud_connection_route of this ShowCloudConnectionRoutesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`
@@ -80,7 +80,7 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
 
     @cloud_connection_route.setter
     def cloud_connection_route(self, cloud_connection_route):
-        """Sets the cloud_connection_route of this ShowCloudConnectionRoutesResponse.
+        r"""Sets the cloud_connection_route of this ShowCloudConnectionRoutesResponse.
 
         :param cloud_connection_route: The cloud_connection_route of this ShowCloudConnectionRoutesResponse.
         :type cloud_connection_route: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`

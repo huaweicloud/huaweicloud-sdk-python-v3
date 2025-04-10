@@ -29,7 +29,7 @@ class NodePublicIP:
     }
 
     def __init__(self, ids=None, count=None, eip=None):
-        """NodePublicIP
+        r"""NodePublicIP
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NodePublicIP:
 
     @property
     def ids(self):
-        """Gets the ids of this NodePublicIP.
+        r"""Gets the ids of this NodePublicIP.
 
         已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
 
@@ -68,7 +68,7 @@ class NodePublicIP:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this NodePublicIP.
+        r"""Sets the ids of this NodePublicIP.
 
         已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
 
@@ -79,7 +79,7 @@ class NodePublicIP:
 
     @property
     def count(self):
-        """Gets the count of this NodePublicIP.
+        r"""Gets the count of this NodePublicIP.
 
         要动态创建的弹性IP个数。 > count参数与eip参数必须同时配置。
 
@@ -90,7 +90,7 @@ class NodePublicIP:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this NodePublicIP.
+        r"""Sets the count of this NodePublicIP.
 
         要动态创建的弹性IP个数。 > count参数与eip参数必须同时配置。
 
@@ -101,7 +101,7 @@ class NodePublicIP:
 
     @property
     def eip(self):
-        """Gets the eip of this NodePublicIP.
+        r"""Gets the eip of this NodePublicIP.
 
         :return: The eip of this NodePublicIP.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
@@ -110,7 +110,7 @@ class NodePublicIP:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this NodePublicIP.
+        r"""Sets the eip of this NodePublicIP.
 
         :param eip: The eip of this NodePublicIP.
         :type eip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`

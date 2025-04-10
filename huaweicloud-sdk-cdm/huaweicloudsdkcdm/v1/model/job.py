@@ -93,7 +93,7 @@ class Job:
     }
 
     def __init__(self, job_type=None, from_connector_name=None, to_config_values=None, to_link_name=None, driver_config_values=None, from_config_values=None, to_connector_name=None, name=None, from_link_name=None, creation_user=None, creation_date=None, update_date=None, is_incre_job=None, flag=None, files_read=None, update_user=None, external_id=None, type=None, execute_start_date=None, delete_rows=None, enabled=None, bytes_written=None, id=None, is_use_sql=None, update_rows=None, group_name=None, bytes_read=None, execute_update_date=None, write_rows=None, rows_written=None, rows_read=None, files_written=None, is_incrementing=None, execute_create_date=None, status=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -272,7 +272,7 @@ class Job:
 
     @property
     def job_type(self):
-        """Gets the job_type of this Job.
+        r"""Gets the job_type of this Job.
 
         作业类型： - NORMAL_JOB：表/文件迁移。 - BATCH_JOB：整库迁移。 - SCENARIO_JOB：场景迁移。
 
@@ -283,7 +283,7 @@ class Job:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this Job.
+        r"""Sets the job_type of this Job.
 
         作业类型： - NORMAL_JOB：表/文件迁移。 - BATCH_JOB：整库迁移。 - SCENARIO_JOB：场景迁移。
 
@@ -294,7 +294,7 @@ class Job:
 
     @property
     def from_connector_name(self):
-        """Gets the from_connector_name of this Job.
+        r"""Gets the from_connector_name of this Job.
 
         源端连接类型
 
@@ -305,7 +305,7 @@ class Job:
 
     @from_connector_name.setter
     def from_connector_name(self, from_connector_name):
-        """Sets the from_connector_name of this Job.
+        r"""Sets the from_connector_name of this Job.
 
         源端连接类型
 
@@ -316,7 +316,7 @@ class Job:
 
     @property
     def to_config_values(self):
-        """Gets the to_config_values of this Job.
+        r"""Gets the to_config_values of this Job.
 
         :return: The to_config_values of this Job.
         :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -325,7 +325,7 @@ class Job:
 
     @to_config_values.setter
     def to_config_values(self, to_config_values):
-        """Sets the to_config_values of this Job.
+        r"""Sets the to_config_values of this Job.
 
         :param to_config_values: The to_config_values of this Job.
         :type to_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -334,7 +334,7 @@ class Job:
 
     @property
     def to_link_name(self):
-        """Gets the to_link_name of this Job.
+        r"""Gets the to_link_name of this Job.
 
         目的端连接名称
 
@@ -345,7 +345,7 @@ class Job:
 
     @to_link_name.setter
     def to_link_name(self, to_link_name):
-        """Sets the to_link_name of this Job.
+        r"""Sets the to_link_name of this Job.
 
         目的端连接名称
 
@@ -356,7 +356,7 @@ class Job:
 
     @property
     def driver_config_values(self):
-        """Gets the driver_config_values of this Job.
+        r"""Gets the driver_config_values of this Job.
 
         :return: The driver_config_values of this Job.
         :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -365,7 +365,7 @@ class Job:
 
     @driver_config_values.setter
     def driver_config_values(self, driver_config_values):
-        """Sets the driver_config_values of this Job.
+        r"""Sets the driver_config_values of this Job.
 
         :param driver_config_values: The driver_config_values of this Job.
         :type driver_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -374,7 +374,7 @@ class Job:
 
     @property
     def from_config_values(self):
-        """Gets the from_config_values of this Job.
+        r"""Gets the from_config_values of this Job.
 
         :return: The from_config_values of this Job.
         :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -383,7 +383,7 @@ class Job:
 
     @from_config_values.setter
     def from_config_values(self, from_config_values):
-        """Sets the from_config_values of this Job.
+        r"""Sets the from_config_values of this Job.
 
         :param from_config_values: The from_config_values of this Job.
         :type from_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -392,7 +392,7 @@ class Job:
 
     @property
     def to_connector_name(self):
-        """Gets the to_connector_name of this Job.
+        r"""Gets the to_connector_name of this Job.
 
         目的端连接类型
 
@@ -403,7 +403,7 @@ class Job:
 
     @to_connector_name.setter
     def to_connector_name(self, to_connector_name):
-        """Sets the to_connector_name of this Job.
+        r"""Sets the to_connector_name of this Job.
 
         目的端连接类型
 
@@ -414,7 +414,7 @@ class Job:
 
     @property
     def name(self):
-        """Gets the name of this Job.
+        r"""Gets the name of this Job.
 
         作业名称，长度在1到240个字符之间
 
@@ -425,7 +425,7 @@ class Job:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Job.
+        r"""Sets the name of this Job.
 
         作业名称，长度在1到240个字符之间
 
@@ -436,7 +436,7 @@ class Job:
 
     @property
     def from_link_name(self):
-        """Gets the from_link_name of this Job.
+        r"""Gets the from_link_name of this Job.
 
         源连接名称
 
@@ -447,7 +447,7 @@ class Job:
 
     @from_link_name.setter
     def from_link_name(self, from_link_name):
-        """Sets the from_link_name of this Job.
+        r"""Sets the from_link_name of this Job.
 
         源连接名称
 
@@ -458,7 +458,7 @@ class Job:
 
     @property
     def creation_user(self):
-        """Gets the creation_user of this Job.
+        r"""Gets the creation_user of this Job.
 
         创建的用户。
 
@@ -469,7 +469,7 @@ class Job:
 
     @creation_user.setter
     def creation_user(self, creation_user):
-        """Sets the creation_user of this Job.
+        r"""Sets the creation_user of this Job.
 
         创建的用户。
 
@@ -480,7 +480,7 @@ class Job:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this Job.
+        r"""Gets the creation_date of this Job.
 
         作业创建的时间，单位：毫秒。
 
@@ -491,7 +491,7 @@ class Job:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this Job.
+        r"""Sets the creation_date of this Job.
 
         作业创建的时间，单位：毫秒。
 
@@ -502,7 +502,7 @@ class Job:
 
     @property
     def update_date(self):
-        """Gets the update_date of this Job.
+        r"""Gets the update_date of this Job.
 
         作业最后更新的时间，单位：毫秒。
 
@@ -513,7 +513,7 @@ class Job:
 
     @update_date.setter
     def update_date(self, update_date):
-        """Sets the update_date of this Job.
+        r"""Sets the update_date of this Job.
 
         作业最后更新的时间，单位：毫秒。
 
@@ -524,7 +524,7 @@ class Job:
 
     @property
     def is_incre_job(self):
-        """Gets the is_incre_job of this Job.
+        r"""Gets the is_incre_job of this Job.
 
         是否增量
 
@@ -535,7 +535,7 @@ class Job:
 
     @is_incre_job.setter
     def is_incre_job(self, is_incre_job):
-        """Sets the is_incre_job of this Job.
+        r"""Sets the is_incre_job of this Job.
 
         是否增量
 
@@ -546,7 +546,7 @@ class Job:
 
     @property
     def flag(self):
-        """Gets the flag of this Job.
+        r"""Gets the flag of this Job.
 
         标记
 
@@ -557,7 +557,7 @@ class Job:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this Job.
+        r"""Sets the flag of this Job.
 
         标记
 
@@ -568,7 +568,7 @@ class Job:
 
     @property
     def files_read(self):
-        """Gets the files_read of this Job.
+        r"""Gets the files_read of this Job.
 
         已读文件数
 
@@ -579,7 +579,7 @@ class Job:
 
     @files_read.setter
     def files_read(self, files_read):
-        """Sets the files_read of this Job.
+        r"""Sets the files_read of this Job.
 
         已读文件数
 
@@ -590,7 +590,7 @@ class Job:
 
     @property
     def update_user(self):
-        """Gets the update_user of this Job.
+        r"""Gets the update_user of this Job.
 
         作业最后更新的用户。
 
@@ -601,7 +601,7 @@ class Job:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this Job.
+        r"""Sets the update_user of this Job.
 
         作业最后更新的用户。
 
@@ -612,7 +612,7 @@ class Job:
 
     @property
     def external_id(self):
-        """Gets the external_id of this Job.
+        r"""Gets the external_id of this Job.
 
         外部ID。
 
@@ -623,7 +623,7 @@ class Job:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this Job.
+        r"""Sets the external_id of this Job.
 
         外部ID。
 
@@ -634,7 +634,7 @@ class Job:
 
     @property
     def type(self):
-        """Gets the type of this Job.
+        r"""Gets the type of this Job.
 
         作业类型
 
@@ -645,7 +645,7 @@ class Job:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Job.
+        r"""Sets the type of this Job.
 
         作业类型
 
@@ -656,7 +656,7 @@ class Job:
 
     @property
     def execute_start_date(self):
-        """Gets the execute_start_date of this Job.
+        r"""Gets the execute_start_date of this Job.
 
         执行_开始_日期。
 
@@ -667,7 +667,7 @@ class Job:
 
     @execute_start_date.setter
     def execute_start_date(self, execute_start_date):
-        """Sets the execute_start_date of this Job.
+        r"""Sets the execute_start_date of this Job.
 
         执行_开始_日期。
 
@@ -678,7 +678,7 @@ class Job:
 
     @property
     def delete_rows(self):
-        """Gets the delete_rows of this Job.
+        r"""Gets the delete_rows of this Job.
 
         删除行数
 
@@ -689,7 +689,7 @@ class Job:
 
     @delete_rows.setter
     def delete_rows(self, delete_rows):
-        """Sets the delete_rows of this Job.
+        r"""Sets the delete_rows of this Job.
 
         删除行数
 
@@ -700,7 +700,7 @@ class Job:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Job.
+        r"""Gets the enabled of this Job.
 
         是否激活连接
 
@@ -711,7 +711,7 @@ class Job:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Job.
+        r"""Sets the enabled of this Job.
 
         是否激活连接
 
@@ -722,7 +722,7 @@ class Job:
 
     @property
     def bytes_written(self):
-        """Gets the bytes_written of this Job.
+        r"""Gets the bytes_written of this Job.
 
         写入字节
 
@@ -733,7 +733,7 @@ class Job:
 
     @bytes_written.setter
     def bytes_written(self, bytes_written):
-        """Sets the bytes_written of this Job.
+        r"""Sets the bytes_written of this Job.
 
         写入字节
 
@@ -744,7 +744,7 @@ class Job:
 
     @property
     def id(self):
-        """Gets the id of this Job.
+        r"""Gets the id of this Job.
 
         作业ID
 
@@ -755,7 +755,7 @@ class Job:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Job.
+        r"""Sets the id of this Job.
 
         作业ID
 
@@ -766,7 +766,7 @@ class Job:
 
     @property
     def is_use_sql(self):
-        """Gets the is_use_sql of this Job.
+        r"""Gets the is_use_sql of this Job.
 
         用户是否使用sql
 
@@ -777,7 +777,7 @@ class Job:
 
     @is_use_sql.setter
     def is_use_sql(self, is_use_sql):
-        """Sets the is_use_sql of this Job.
+        r"""Sets the is_use_sql of this Job.
 
         用户是否使用sql
 
@@ -788,7 +788,7 @@ class Job:
 
     @property
     def update_rows(self):
-        """Gets the update_rows of this Job.
+        r"""Gets the update_rows of this Job.
 
         更新行数
 
@@ -799,7 +799,7 @@ class Job:
 
     @update_rows.setter
     def update_rows(self, update_rows):
-        """Sets the update_rows of this Job.
+        r"""Sets the update_rows of this Job.
 
         更新行数
 
@@ -810,7 +810,7 @@ class Job:
 
     @property
     def group_name(self):
-        """Gets the group_name of this Job.
+        r"""Gets the group_name of this Job.
 
         组_名称
 
@@ -821,7 +821,7 @@ class Job:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this Job.
+        r"""Sets the group_name of this Job.
 
         组_名称
 
@@ -832,7 +832,7 @@ class Job:
 
     @property
     def bytes_read(self):
-        """Gets the bytes_read of this Job.
+        r"""Gets the bytes_read of this Job.
 
         读取字节
 
@@ -843,7 +843,7 @@ class Job:
 
     @bytes_read.setter
     def bytes_read(self, bytes_read):
-        """Sets the bytes_read of this Job.
+        r"""Sets the bytes_read of this Job.
 
         读取字节
 
@@ -854,7 +854,7 @@ class Job:
 
     @property
     def execute_update_date(self):
-        """Gets the execute_update_date of this Job.
+        r"""Gets the execute_update_date of this Job.
 
         执行_更新_日期。
 
@@ -865,7 +865,7 @@ class Job:
 
     @execute_update_date.setter
     def execute_update_date(self, execute_update_date):
-        """Sets the execute_update_date of this Job.
+        r"""Sets the execute_update_date of this Job.
 
         执行_更新_日期。
 
@@ -876,7 +876,7 @@ class Job:
 
     @property
     def write_rows(self):
-        """Gets the write_rows of this Job.
+        r"""Gets the write_rows of this Job.
 
         写入数据行数
 
@@ -887,7 +887,7 @@ class Job:
 
     @write_rows.setter
     def write_rows(self, write_rows):
-        """Sets the write_rows of this Job.
+        r"""Sets the write_rows of this Job.
 
         写入数据行数
 
@@ -898,7 +898,7 @@ class Job:
 
     @property
     def rows_written(self):
-        """Gets the rows_written of this Job.
+        r"""Gets the rows_written of this Job.
 
         写入行数
 
@@ -909,7 +909,7 @@ class Job:
 
     @rows_written.setter
     def rows_written(self, rows_written):
-        """Sets the rows_written of this Job.
+        r"""Sets the rows_written of this Job.
 
         写入行数
 
@@ -920,7 +920,7 @@ class Job:
 
     @property
     def rows_read(self):
-        """Gets the rows_read of this Job.
+        r"""Gets the rows_read of this Job.
 
         读取的行数
 
@@ -931,7 +931,7 @@ class Job:
 
     @rows_read.setter
     def rows_read(self, rows_read):
-        """Sets the rows_read of this Job.
+        r"""Sets the rows_read of this Job.
 
         读取的行数
 
@@ -942,7 +942,7 @@ class Job:
 
     @property
     def files_written(self):
-        """Gets the files_written of this Job.
+        r"""Gets the files_written of this Job.
 
         写入文件数
 
@@ -953,7 +953,7 @@ class Job:
 
     @files_written.setter
     def files_written(self, files_written):
-        """Sets the files_written of this Job.
+        r"""Sets the files_written of this Job.
 
         写入文件数
 
@@ -964,7 +964,7 @@ class Job:
 
     @property
     def is_incrementing(self):
-        """Gets the is_incrementing of this Job.
+        r"""Gets the is_incrementing of this Job.
 
         是否增量
 
@@ -975,7 +975,7 @@ class Job:
 
     @is_incrementing.setter
     def is_incrementing(self, is_incrementing):
-        """Sets the is_incrementing of this Job.
+        r"""Sets the is_incrementing of this Job.
 
         是否增量
 
@@ -986,7 +986,7 @@ class Job:
 
     @property
     def execute_create_date(self):
-        """Gets the execute_create_date of this Job.
+        r"""Gets the execute_create_date of this Job.
 
         执行_创建_日期
 
@@ -997,7 +997,7 @@ class Job:
 
     @execute_create_date.setter
     def execute_create_date(self, execute_create_date):
-        """Sets the execute_create_date of this Job.
+        r"""Sets the execute_create_date of this Job.
 
         执行_创建_日期
 
@@ -1008,7 +1008,7 @@ class Job:
 
     @property
     def status(self):
-        """Gets the status of this Job.
+        r"""Gets the status of this Job.
 
         作业最后的执行状态： - BOOTING：启动中。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - NEW：未被执行。
 
@@ -1019,7 +1019,7 @@ class Job:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Job.
+        r"""Sets the status of this Job.
 
         作业最后的执行状态： - BOOTING：启动中。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - NEW：未被执行。
 

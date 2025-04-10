@@ -26,7 +26,7 @@ class ListDatasourceColumnsResponse(SdkResponse):
     }
 
     def __init__(self, columns=None):
-        """ListDatasourceColumnsResponse
+        r"""ListDatasourceColumnsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDatasourceColumnsResponse(SdkResponse):
 
     @property
     def columns(self):
-        """Gets the columns of this ListDatasourceColumnsResponse.
+        r"""Gets the columns of this ListDatasourceColumnsResponse.
 
         返回的实体对象
 
@@ -55,7 +55,7 @@ class ListDatasourceColumnsResponse(SdkResponse):
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ListDatasourceColumnsResponse.
+        r"""Sets the columns of this ListDatasourceColumnsResponse.
 
         返回的实体对象
 

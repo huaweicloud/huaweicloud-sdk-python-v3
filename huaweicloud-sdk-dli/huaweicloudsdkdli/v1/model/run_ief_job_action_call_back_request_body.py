@@ -27,7 +27,7 @@ class RunIefJobActionCallBackRequestBody:
     }
 
     def __init__(self, message_id=None, state=None):
-        """RunIefJobActionCallBackRequestBody
+        r"""RunIefJobActionCallBackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunIefJobActionCallBackRequestBody:
 
     @property
     def message_id(self):
-        """Gets the message_id of this RunIefJobActionCallBackRequestBody.
+        r"""Gets the message_id of this RunIefJobActionCallBackRequestBody.
 
         消息id
 
@@ -60,7 +60,7 @@ class RunIefJobActionCallBackRequestBody:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this RunIefJobActionCallBackRequestBody.
+        r"""Sets the message_id of this RunIefJobActionCallBackRequestBody.
 
         消息id
 
@@ -71,7 +71,7 @@ class RunIefJobActionCallBackRequestBody:
 
     @property
     def state(self):
-        """Gets the state of this RunIefJobActionCallBackRequestBody.
+        r"""Gets the state of this RunIefJobActionCallBackRequestBody.
 
         :return: The state of this RunIefJobActionCallBackRequestBody.
         :rtype: :class:`huaweicloudsdkdli.v1.State`
@@ -80,7 +80,7 @@ class RunIefJobActionCallBackRequestBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RunIefJobActionCallBackRequestBody.
+        r"""Sets the state of this RunIefJobActionCallBackRequestBody.
 
         :param state: The state of this RunIefJobActionCallBackRequestBody.
         :type state: :class:`huaweicloudsdkdli.v1.State`

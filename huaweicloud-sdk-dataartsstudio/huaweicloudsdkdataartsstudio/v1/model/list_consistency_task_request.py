@@ -41,7 +41,7 @@ class ListConsistencyTaskRequest:
     }
 
     def __init__(self, category_id=None, name=None, schedule_status=None, start_time=None, end_time=None, creator=None, limit=None, offset=None, workspace=None):
-        """ListConsistencyTaskRequest
+        r"""ListConsistencyTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def category_id(self):
-        """Gets the category_id of this ListConsistencyTaskRequest.
+        r"""Gets the category_id of this ListConsistencyTaskRequest.
 
         目录ID
 
@@ -109,7 +109,7 @@ class ListConsistencyTaskRequest:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ListConsistencyTaskRequest.
+        r"""Sets the category_id of this ListConsistencyTaskRequest.
 
         目录ID
 
@@ -120,7 +120,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListConsistencyTaskRequest.
+        r"""Gets the name of this ListConsistencyTaskRequest.
 
         name
 
@@ -131,7 +131,7 @@ class ListConsistencyTaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConsistencyTaskRequest.
+        r"""Sets the name of this ListConsistencyTaskRequest.
 
         name
 
@@ -142,7 +142,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this ListConsistencyTaskRequest.
+        r"""Gets the schedule_status of this ListConsistencyTaskRequest.
 
         调度状态 UNKNOWN:未知,NOT_START:未启动,SCHEDULING:调度中,FINISH_SUCCESS:正常结束,KILL:手动停止,RUNNING_EXCEPTION:运行失败
 
@@ -153,7 +153,7 @@ class ListConsistencyTaskRequest:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this ListConsistencyTaskRequest.
+        r"""Sets the schedule_status of this ListConsistencyTaskRequest.
 
         调度状态 UNKNOWN:未知,NOT_START:未启动,SCHEDULING:调度中,FINISH_SUCCESS:正常结束,KILL:手动停止,RUNNING_EXCEPTION:运行失败
 
@@ -164,7 +164,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListConsistencyTaskRequest.
+        r"""Gets the start_time of this ListConsistencyTaskRequest.
 
         最近运行时间查询区间的开始时间,13位时间戳(精确到毫秒)
 
@@ -175,7 +175,7 @@ class ListConsistencyTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListConsistencyTaskRequest.
+        r"""Sets the start_time of this ListConsistencyTaskRequest.
 
         最近运行时间查询区间的开始时间,13位时间戳(精确到毫秒)
 
@@ -186,7 +186,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListConsistencyTaskRequest.
+        r"""Gets the end_time of this ListConsistencyTaskRequest.
 
         最近运行时间查询区间的结束时间,13位时间戳(精确到毫秒)
 
@@ -197,7 +197,7 @@ class ListConsistencyTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListConsistencyTaskRequest.
+        r"""Sets the end_time of this ListConsistencyTaskRequest.
 
         最近运行时间查询区间的结束时间,13位时间戳(精确到毫秒)
 
@@ -208,7 +208,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListConsistencyTaskRequest.
+        r"""Gets the creator of this ListConsistencyTaskRequest.
 
         创建人
 
@@ -219,7 +219,7 @@ class ListConsistencyTaskRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListConsistencyTaskRequest.
+        r"""Sets the creator of this ListConsistencyTaskRequest.
 
         创建人
 
@@ -230,7 +230,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConsistencyTaskRequest.
+        r"""Gets the limit of this ListConsistencyTaskRequest.
 
         分页条数,最大值为100
 
@@ -241,7 +241,7 @@ class ListConsistencyTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConsistencyTaskRequest.
+        r"""Sets the limit of this ListConsistencyTaskRequest.
 
         分页条数,最大值为100
 
@@ -252,7 +252,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConsistencyTaskRequest.
+        r"""Gets the offset of this ListConsistencyTaskRequest.
 
         分页偏移量,最小值0
 
@@ -263,7 +263,7 @@ class ListConsistencyTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConsistencyTaskRequest.
+        r"""Sets the offset of this ListConsistencyTaskRequest.
 
         分页偏移量,最小值0
 
@@ -274,7 +274,7 @@ class ListConsistencyTaskRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListConsistencyTaskRequest.
+        r"""Gets the workspace of this ListConsistencyTaskRequest.
 
         DataArts Studio工作空间ID
 
@@ -285,7 +285,7 @@ class ListConsistencyTaskRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListConsistencyTaskRequest.
+        r"""Sets the workspace of this ListConsistencyTaskRequest.
 
         DataArts Studio工作空间ID
 

@@ -25,7 +25,7 @@ class CreateVpcAttachmentBody:
     }
 
     def __init__(self, vpc_attachment=None):
-        """CreateVpcAttachmentBody
+        r"""CreateVpcAttachmentBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVpcAttachmentBody:
 
     @property
     def vpc_attachment(self):
-        """Gets the vpc_attachment of this CreateVpcAttachmentBody.
+        r"""Gets the vpc_attachment of this CreateVpcAttachmentBody.
 
         :return: The vpc_attachment of this CreateVpcAttachmentBody.
         :rtype: :class:`huaweicloudsdker.v3.VpcAttachmentCreateRequest`
@@ -51,7 +51,7 @@ class CreateVpcAttachmentBody:
 
     @vpc_attachment.setter
     def vpc_attachment(self, vpc_attachment):
-        """Sets the vpc_attachment of this CreateVpcAttachmentBody.
+        r"""Sets the vpc_attachment of this CreateVpcAttachmentBody.
 
         :param vpc_attachment: The vpc_attachment of this CreateVpcAttachmentBody.
         :type vpc_attachment: :class:`huaweicloudsdker.v3.VpcAttachmentCreateRequest`

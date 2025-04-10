@@ -33,7 +33,7 @@ class ListCloudConnectionQuotasRequest:
     }
 
     def __init__(self, limit=None, marker=None, quota_type=None, cloud_connection_id=None, region_id=None):
-        """ListCloudConnectionQuotasRequest
+        r"""ListCloudConnectionQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListCloudConnectionQuotasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudConnectionQuotasRequest.
+        r"""Gets the limit of this ListCloudConnectionQuotasRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -81,7 +81,7 @@ class ListCloudConnectionQuotasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudConnectionQuotasRequest.
+        r"""Sets the limit of this ListCloudConnectionQuotasRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -92,7 +92,7 @@ class ListCloudConnectionQuotasRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCloudConnectionQuotasRequest.
+        r"""Gets the marker of this ListCloudConnectionQuotasRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -103,7 +103,7 @@ class ListCloudConnectionQuotasRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCloudConnectionQuotasRequest.
+        r"""Sets the marker of this ListCloudConnectionQuotasRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -114,7 +114,7 @@ class ListCloudConnectionQuotasRequest:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this ListCloudConnectionQuotasRequest.
+        r"""Gets the quota_type of this ListCloudConnectionQuotasRequest.
 
         配额类型： - cloud_connection: 可加载的云连接实例数 - cloud_connection_region: 某云连接实例下可加载的Region数 - cloud_connection_route: 某云连接实例下可加载的路由数 - region_network_instance: 某云连接实例下某个Region下可加载的网络实例数
 
@@ -125,7 +125,7 @@ class ListCloudConnectionQuotasRequest:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this ListCloudConnectionQuotasRequest.
+        r"""Sets the quota_type of this ListCloudConnectionQuotasRequest.
 
         配额类型： - cloud_connection: 可加载的云连接实例数 - cloud_connection_region: 某云连接实例下可加载的Region数 - cloud_connection_route: 某云连接实例下可加载的路由数 - region_network_instance: 某云连接实例下某个Region下可加载的网络实例数
 
@@ -136,7 +136,7 @@ class ListCloudConnectionQuotasRequest:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListCloudConnectionQuotasRequest.
+        r"""Gets the cloud_connection_id of this ListCloudConnectionQuotasRequest.
 
         云连接ID。当查询cloud_connection_region、cloud_connection_route、region_network_instance三种类型的配额时需要填写此参数。
 
@@ -147,7 +147,7 @@ class ListCloudConnectionQuotasRequest:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListCloudConnectionQuotasRequest.
+        r"""Sets the cloud_connection_id of this ListCloudConnectionQuotasRequest.
 
         云连接ID。当查询cloud_connection_region、cloud_connection_route、region_network_instance三种类型的配额时需要填写此参数。
 
@@ -158,7 +158,7 @@ class ListCloudConnectionQuotasRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListCloudConnectionQuotasRequest.
+        r"""Gets the region_id of this ListCloudConnectionQuotasRequest.
 
         区域ID。当查询region_network_instance类型的配额时需要填写此参数。
 
@@ -169,7 +169,7 @@ class ListCloudConnectionQuotasRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListCloudConnectionQuotasRequest.
+        r"""Sets the region_id of this ListCloudConnectionQuotasRequest.
 
         区域ID。当查询region_network_instance类型的配额时需要填写此参数。
 

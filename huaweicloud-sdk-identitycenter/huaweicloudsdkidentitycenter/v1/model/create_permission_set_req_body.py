@@ -33,7 +33,7 @@ class CreatePermissionSetReqBody:
     }
 
     def __init__(self, description=None, name=None, relay_state=None, session_duration=None, tags=None):
-        """CreatePermissionSetReqBody
+        r"""CreatePermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreatePermissionSetReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePermissionSetReqBody.
+        r"""Gets the description of this CreatePermissionSetReqBody.
 
         权限集描述.
 
@@ -81,7 +81,7 @@ class CreatePermissionSetReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePermissionSetReqBody.
+        r"""Sets the description of this CreatePermissionSetReqBody.
 
         权限集描述.
 
@@ -92,7 +92,7 @@ class CreatePermissionSetReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreatePermissionSetReqBody.
+        r"""Gets the name of this CreatePermissionSetReqBody.
 
         权限集名称.
 
@@ -103,7 +103,7 @@ class CreatePermissionSetReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePermissionSetReqBody.
+        r"""Sets the name of this CreatePermissionSetReqBody.
 
         权限集名称.
 
@@ -114,7 +114,7 @@ class CreatePermissionSetReqBody:
 
     @property
     def relay_state(self):
-        """Gets the relay_state of this CreatePermissionSetReqBody.
+        r"""Gets the relay_state of this CreatePermissionSetReqBody.
 
         用于在联合身份验证过程中重定向应用程序中的用户
 
@@ -125,7 +125,7 @@ class CreatePermissionSetReqBody:
 
     @relay_state.setter
     def relay_state(self, relay_state):
-        """Sets the relay_state of this CreatePermissionSetReqBody.
+        r"""Sets the relay_state of this CreatePermissionSetReqBody.
 
         用于在联合身份验证过程中重定向应用程序中的用户
 
@@ -136,7 +136,7 @@ class CreatePermissionSetReqBody:
 
     @property
     def session_duration(self):
-        """Gets the session_duration of this CreatePermissionSetReqBody.
+        r"""Gets the session_duration of this CreatePermissionSetReqBody.
 
         应用程序用户会话在ISO-8601标准中有效的时间长度
 
@@ -147,7 +147,7 @@ class CreatePermissionSetReqBody:
 
     @session_duration.setter
     def session_duration(self, session_duration):
-        """Sets the session_duration of this CreatePermissionSetReqBody.
+        r"""Sets the session_duration of this CreatePermissionSetReqBody.
 
         应用程序用户会话在ISO-8601标准中有效的时间长度
 
@@ -158,7 +158,7 @@ class CreatePermissionSetReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatePermissionSetReqBody.
+        r"""Gets the tags of this CreatePermissionSetReqBody.
 
         要附加到新权限集的标签
 
@@ -169,7 +169,7 @@ class CreatePermissionSetReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatePermissionSetReqBody.
+        r"""Sets the tags of this CreatePermissionSetReqBody.
 
         要附加到新权限集的标签
 

@@ -29,7 +29,7 @@ class AgencyTokenUser:
     }
 
     def __init__(self, name=None, id=None, domain=None):
-        """AgencyTokenUser
+        r"""AgencyTokenUser
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AgencyTokenUser:
 
     @property
     def name(self):
-        """Gets the name of this AgencyTokenUser.
+        r"""Gets the name of this AgencyTokenUser.
 
         委托方A账号名/委托名。
 
@@ -65,7 +65,7 @@ class AgencyTokenUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyTokenUser.
+        r"""Sets the name of this AgencyTokenUser.
 
         委托方A账号名/委托名。
 
@@ -76,7 +76,7 @@ class AgencyTokenUser:
 
     @property
     def id(self):
-        """Gets the id of this AgencyTokenUser.
+        r"""Gets the id of this AgencyTokenUser.
 
         委托ID。
 
@@ -87,7 +87,7 @@ class AgencyTokenUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyTokenUser.
+        r"""Sets the id of this AgencyTokenUser.
 
         委托ID。
 
@@ -98,7 +98,7 @@ class AgencyTokenUser:
 
     @property
     def domain(self):
-        """Gets the domain of this AgencyTokenUser.
+        r"""Gets the domain of this AgencyTokenUser.
 
         :return: The domain of this AgencyTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenUserDomain`
@@ -107,7 +107,7 @@ class AgencyTokenUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AgencyTokenUser.
+        r"""Sets the domain of this AgencyTokenUser.
 
         :param domain: The domain of this AgencyTokenUser.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenUserDomain`

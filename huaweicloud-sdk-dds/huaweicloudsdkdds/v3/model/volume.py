@@ -27,7 +27,7 @@ class Volume:
     }
 
     def __init__(self, size=None, used=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Volume:
 
     @property
     def size(self):
-        """Gets the size of this Volume.
+        r"""Gets the size of this Volume.
 
         磁盘大小。单位：GB。
 
@@ -59,7 +59,7 @@ class Volume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Volume.
+        r"""Sets the size of this Volume.
 
         磁盘大小。单位：GB。
 
@@ -70,7 +70,7 @@ class Volume:
 
     @property
     def used(self):
-        """Gets the used of this Volume.
+        r"""Gets the used of this Volume.
 
         磁盘使用量。单位：GB。
 
@@ -81,7 +81,7 @@ class Volume:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Volume.
+        r"""Sets the used of this Volume.
 
         磁盘使用量。单位：GB。
 

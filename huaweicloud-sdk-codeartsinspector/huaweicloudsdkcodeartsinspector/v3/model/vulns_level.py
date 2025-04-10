@@ -31,7 +31,7 @@ class VulnsLevel:
     }
 
     def __init__(self, high=None, middle=None, low=None, hint=None):
-        """VulnsLevel
+        r"""VulnsLevel
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VulnsLevel:
 
     @property
     def high(self):
-        """Gets the high of this VulnsLevel.
+        r"""Gets the high of this VulnsLevel.
 
         高危漏洞数
 
@@ -75,7 +75,7 @@ class VulnsLevel:
 
     @high.setter
     def high(self, high):
-        """Sets the high of this VulnsLevel.
+        r"""Sets the high of this VulnsLevel.
 
         高危漏洞数
 
@@ -86,7 +86,7 @@ class VulnsLevel:
 
     @property
     def middle(self):
-        """Gets the middle of this VulnsLevel.
+        r"""Gets the middle of this VulnsLevel.
 
         中危漏洞数
 
@@ -97,7 +97,7 @@ class VulnsLevel:
 
     @middle.setter
     def middle(self, middle):
-        """Sets the middle of this VulnsLevel.
+        r"""Sets the middle of this VulnsLevel.
 
         中危漏洞数
 
@@ -108,7 +108,7 @@ class VulnsLevel:
 
     @property
     def low(self):
-        """Gets the low of this VulnsLevel.
+        r"""Gets the low of this VulnsLevel.
 
         低危漏洞数
 
@@ -119,7 +119,7 @@ class VulnsLevel:
 
     @low.setter
     def low(self, low):
-        """Sets the low of this VulnsLevel.
+        r"""Sets the low of this VulnsLevel.
 
         低危漏洞数
 
@@ -130,7 +130,7 @@ class VulnsLevel:
 
     @property
     def hint(self):
-        """Gets the hint of this VulnsLevel.
+        r"""Gets the hint of this VulnsLevel.
 
         提示危漏洞数
 
@@ -141,7 +141,7 @@ class VulnsLevel:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this VulnsLevel.
+        r"""Sets the hint of this VulnsLevel.
 
         提示危漏洞数
 

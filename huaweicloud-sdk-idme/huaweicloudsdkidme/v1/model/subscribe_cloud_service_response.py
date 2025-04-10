@@ -36,7 +36,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, order_ids=None, job_ids=None, job_id=None, product_name=None):
-        """SubscribeCloudServiceResponse
+        r"""SubscribeCloudServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this SubscribeCloudServiceResponse.
+        r"""Gets the code of this SubscribeCloudServiceResponse.
 
         响应状态码
 
@@ -90,7 +90,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SubscribeCloudServiceResponse.
+        r"""Sets the code of this SubscribeCloudServiceResponse.
 
         响应状态码
 
@@ -101,7 +101,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this SubscribeCloudServiceResponse.
+        r"""Gets the message of this SubscribeCloudServiceResponse.
 
         响应信息
 
@@ -112,7 +112,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SubscribeCloudServiceResponse.
+        r"""Sets the message of this SubscribeCloudServiceResponse.
 
         响应信息
 
@@ -123,7 +123,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @property
     def order_ids(self):
-        """Gets the order_ids of this SubscribeCloudServiceResponse.
+        r"""Gets the order_ids of this SubscribeCloudServiceResponse.
 
         包年/包月订单ID,按需场景为空。
 
@@ -134,7 +134,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @order_ids.setter
     def order_ids(self, order_ids):
-        """Sets the order_ids of this SubscribeCloudServiceResponse.
+        r"""Sets the order_ids of this SubscribeCloudServiceResponse.
 
         包年/包月订单ID,按需场景为空。
 
@@ -145,7 +145,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this SubscribeCloudServiceResponse.
+        r"""Gets the job_ids of this SubscribeCloudServiceResponse.
 
         jobIds,包年/包月场景为空。
 
@@ -156,7 +156,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this SubscribeCloudServiceResponse.
+        r"""Sets the job_ids of this SubscribeCloudServiceResponse.
 
         jobIds,包年/包月场景为空。
 
@@ -167,7 +167,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SubscribeCloudServiceResponse.
+        r"""Gets the job_id of this SubscribeCloudServiceResponse.
 
         jobId,包年/包月场景为空。
 
@@ -178,7 +178,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SubscribeCloudServiceResponse.
+        r"""Sets the job_id of this SubscribeCloudServiceResponse.
 
         jobId,包年/包月场景为空。
 
@@ -189,7 +189,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @property
     def product_name(self):
-        """Gets the product_name of this SubscribeCloudServiceResponse.
+        r"""Gets the product_name of this SubscribeCloudServiceResponse.
 
         产品名称
 
@@ -200,7 +200,7 @@ class SubscribeCloudServiceResponse(SdkResponse):
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this SubscribeCloudServiceResponse.
+        r"""Sets the product_name of this SubscribeCloudServiceResponse.
 
         产品名称
 

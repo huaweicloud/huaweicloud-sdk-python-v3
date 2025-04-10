@@ -25,7 +25,7 @@ class ValidateSqlRequestBody:
     }
 
     def __init__(self, sql=None):
-        """ValidateSqlRequestBody
+        r"""ValidateSqlRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ValidateSqlRequestBody:
 
     @property
     def sql(self):
-        """Gets the sql of this ValidateSqlRequestBody.
+        r"""Gets the sql of this ValidateSqlRequestBody.
 
         待执行的SQL语句。
 
@@ -54,7 +54,7 @@ class ValidateSqlRequestBody:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this ValidateSqlRequestBody.
+        r"""Sets the sql of this ValidateSqlRequestBody.
 
         待执行的SQL语句。
 

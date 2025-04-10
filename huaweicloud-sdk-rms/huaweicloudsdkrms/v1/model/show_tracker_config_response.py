@@ -30,7 +30,7 @@ class ShowTrackerConfigResponse(SdkResponse):
     }
 
     def __init__(self, channel=None, selector=None, agency_name=None):
-        """ShowTrackerConfigResponse
+        r"""ShowTrackerConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def channel(self):
-        """Gets the channel of this ShowTrackerConfigResponse.
+        r"""Gets the channel of this ShowTrackerConfigResponse.
 
         :return: The channel of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
@@ -67,7 +67,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this ShowTrackerConfigResponse.
+        r"""Sets the channel of this ShowTrackerConfigResponse.
 
         :param channel: The channel of this ShowTrackerConfigResponse.
         :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
@@ -76,7 +76,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def selector(self):
-        """Gets the selector of this ShowTrackerConfigResponse.
+        r"""Gets the selector of this ShowTrackerConfigResponse.
 
         :return: The selector of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
@@ -85,7 +85,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this ShowTrackerConfigResponse.
+        r"""Sets the selector of this ShowTrackerConfigResponse.
 
         :param selector: The selector of this ShowTrackerConfigResponse.
         :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
@@ -94,7 +94,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ShowTrackerConfigResponse.
+        r"""Gets the agency_name of this ShowTrackerConfigResponse.
 
         IAM委托名称
 
@@ -105,7 +105,7 @@ class ShowTrackerConfigResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ShowTrackerConfigResponse.
+        r"""Sets the agency_name of this ShowTrackerConfigResponse.
 
         IAM委托名称
 

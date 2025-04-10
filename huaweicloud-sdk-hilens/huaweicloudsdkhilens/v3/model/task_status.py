@@ -31,7 +31,7 @@ class TaskStatus:
     }
 
     def __init__(self, cause=None, pod_id=None, pod_name=None, task_status=None):
-        """TaskStatus
+        r"""TaskStatus
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskStatus:
 
     @property
     def cause(self):
-        """Gets the cause of this TaskStatus.
+        r"""Gets the cause of this TaskStatus.
 
         作业运行失败原因
 
@@ -75,7 +75,7 @@ class TaskStatus:
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this TaskStatus.
+        r"""Sets the cause of this TaskStatus.
 
         作业运行失败原因
 
@@ -86,7 +86,7 @@ class TaskStatus:
 
     @property
     def pod_id(self):
-        """Gets the pod_id of this TaskStatus.
+        r"""Gets the pod_id of this TaskStatus.
 
         实例id
 
@@ -97,7 +97,7 @@ class TaskStatus:
 
     @pod_id.setter
     def pod_id(self, pod_id):
-        """Sets the pod_id of this TaskStatus.
+        r"""Sets the pod_id of this TaskStatus.
 
         实例id
 
@@ -108,7 +108,7 @@ class TaskStatus:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this TaskStatus.
+        r"""Gets the pod_name of this TaskStatus.
 
         实例名称
 
@@ -119,7 +119,7 @@ class TaskStatus:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this TaskStatus.
+        r"""Sets the pod_name of this TaskStatus.
 
         实例名称
 
@@ -130,7 +130,7 @@ class TaskStatus:
 
     @property
     def task_status(self):
-        """Gets the task_status of this TaskStatus.
+        r"""Gets the task_status of this TaskStatus.
 
         作业在实例上的状态
 
@@ -141,7 +141,7 @@ class TaskStatus:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this TaskStatus.
+        r"""Sets the task_status of this TaskStatus.
 
         作业在实例上的状态
 

@@ -27,7 +27,7 @@ class AddBucketsRequest:
     }
 
     def __init__(self, type=None, body=None):
-        """AddBucketsRequest
+        r"""AddBucketsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddBucketsRequest:
 
     @property
     def type(self):
-        """Gets the type of this AddBucketsRequest.
+        r"""Gets the type of this AddBucketsRequest.
 
         资产类型
 
@@ -61,7 +61,7 @@ class AddBucketsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddBucketsRequest.
+        r"""Sets the type of this AddBucketsRequest.
 
         资产类型
 
@@ -72,7 +72,7 @@ class AddBucketsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddBucketsRequest.
+        r"""Gets the body of this AddBucketsRequest.
 
         :return: The body of this AddBucketsRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.BucketsRequest`
@@ -81,7 +81,7 @@ class AddBucketsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddBucketsRequest.
+        r"""Sets the body of this AddBucketsRequest.
 
         :param body: The body of this AddBucketsRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.BucketsRequest`

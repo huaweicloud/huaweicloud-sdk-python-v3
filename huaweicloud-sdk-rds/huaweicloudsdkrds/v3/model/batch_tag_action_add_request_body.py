@@ -27,7 +27,7 @@ class BatchTagActionAddRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchTagActionAddRequestBody
+        r"""BatchTagActionAddRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchTagActionAddRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchTagActionAddRequestBody.
+        r"""Gets the action of this BatchTagActionAddRequestBody.
 
         操作标识（区分大小写）：创建时为“create”。
 
@@ -59,7 +59,7 @@ class BatchTagActionAddRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchTagActionAddRequestBody.
+        r"""Sets the action of this BatchTagActionAddRequestBody.
 
         操作标识（区分大小写）：创建时为“create”。
 
@@ -70,7 +70,7 @@ class BatchTagActionAddRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchTagActionAddRequestBody.
+        r"""Gets the tags of this BatchTagActionAddRequestBody.
 
         标签列表。单个实例总标签数上限20个。
 
@@ -81,7 +81,7 @@ class BatchTagActionAddRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchTagActionAddRequestBody.
+        r"""Sets the tags of this BatchTagActionAddRequestBody.
 
         标签列表。单个实例总标签数上限20个。
 

@@ -27,7 +27,7 @@ class CreateShareConnectionsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateShareConnectionsRequest
+        r"""CreateShareConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateShareConnectionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateShareConnectionsRequest.
+        r"""Gets the x_language of this CreateShareConnectionsRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class CreateShareConnectionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateShareConnectionsRequest.
+        r"""Sets the x_language of this CreateShareConnectionsRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class CreateShareConnectionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateShareConnectionsRequest.
+        r"""Gets the body of this CreateShareConnectionsRequest.
 
         :return: The body of this CreateShareConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsRequestBody`
@@ -81,7 +81,7 @@ class CreateShareConnectionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateShareConnectionsRequest.
+        r"""Sets the body of this CreateShareConnectionsRequest.
 
         :param body: The body of this CreateShareConnectionsRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsRequestBody`

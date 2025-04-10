@@ -28,7 +28,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListJarPackageStatisticsResponse
+        r"""ListJarPackageStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListJarPackageStatisticsResponse.
+        r"""Gets the total_num of this ListJarPackageStatisticsResponse.
 
         Jar包统计信息总数
 
@@ -62,7 +62,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListJarPackageStatisticsResponse.
+        r"""Sets the total_num of this ListJarPackageStatisticsResponse.
 
         Jar包统计信息总数
 
@@ -73,7 +73,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListJarPackageStatisticsResponse.
+        r"""Gets the data_list of this ListJarPackageStatisticsResponse.
 
         Jar包统计信息列表
 
@@ -84,7 +84,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListJarPackageStatisticsResponse.
+        r"""Sets the data_list of this ListJarPackageStatisticsResponse.
 
         Jar包统计信息列表
 

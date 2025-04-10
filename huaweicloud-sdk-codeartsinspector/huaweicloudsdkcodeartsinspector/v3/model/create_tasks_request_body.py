@@ -37,7 +37,7 @@ class CreateTasksRequestBody:
     }
 
     def __init__(self, task_name=None, url=None, task_type=None, timer=None, trigger_time=None, task_period=None, task_config=None):
-        """CreateTasksRequestBody
+        r"""CreateTasksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateTasksRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateTasksRequestBody.
+        r"""Gets the task_name of this CreateTasksRequestBody.
 
         任务名称
 
@@ -94,7 +94,7 @@ class CreateTasksRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateTasksRequestBody.
+        r"""Sets the task_name of this CreateTasksRequestBody.
 
         任务名称
 
@@ -105,7 +105,7 @@ class CreateTasksRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this CreateTasksRequestBody.
+        r"""Gets the url of this CreateTasksRequestBody.
 
         待扫描的目标网址
 
@@ -116,7 +116,7 @@ class CreateTasksRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateTasksRequestBody.
+        r"""Sets the url of this CreateTasksRequestBody.
 
         待扫描的目标网址
 
@@ -127,7 +127,7 @@ class CreateTasksRequestBody:
 
     @property
     def task_type(self):
-        """Gets the task_type of this CreateTasksRequestBody.
+        r"""Gets the task_type of this CreateTasksRequestBody.
 
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
@@ -138,7 +138,7 @@ class CreateTasksRequestBody:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this CreateTasksRequestBody.
+        r"""Sets the task_type of this CreateTasksRequestBody.
 
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
@@ -149,7 +149,7 @@ class CreateTasksRequestBody:
 
     @property
     def timer(self):
-        """Gets the timer of this CreateTasksRequestBody.
+        r"""Gets the timer of this CreateTasksRequestBody.
 
         普通任务的定时启动时间
 
@@ -160,7 +160,7 @@ class CreateTasksRequestBody:
 
     @timer.setter
     def timer(self, timer):
-        """Sets the timer of this CreateTasksRequestBody.
+        r"""Sets the timer of this CreateTasksRequestBody.
 
         普通任务的定时启动时间
 
@@ -171,7 +171,7 @@ class CreateTasksRequestBody:
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this CreateTasksRequestBody.
+        r"""Gets the trigger_time of this CreateTasksRequestBody.
 
         监测任务的定时触发时间
 
@@ -182,7 +182,7 @@ class CreateTasksRequestBody:
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this CreateTasksRequestBody.
+        r"""Sets the trigger_time of this CreateTasksRequestBody.
 
         监测任务的定时触发时间
 
@@ -193,7 +193,7 @@ class CreateTasksRequestBody:
 
     @property
     def task_period(self):
-        """Gets the task_period of this CreateTasksRequestBody.
+        r"""Gets the task_period of this CreateTasksRequestBody.
 
         监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
 
@@ -204,7 +204,7 @@ class CreateTasksRequestBody:
 
     @task_period.setter
     def task_period(self, task_period):
-        """Sets the task_period of this CreateTasksRequestBody.
+        r"""Sets the task_period of this CreateTasksRequestBody.
 
         监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
 
@@ -215,7 +215,7 @@ class CreateTasksRequestBody:
 
     @property
     def task_config(self):
-        """Gets the task_config of this CreateTasksRequestBody.
+        r"""Gets the task_config of this CreateTasksRequestBody.
 
         :return: The task_config of this CreateTasksRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.TaskSettingsTaskConfig`
@@ -224,7 +224,7 @@ class CreateTasksRequestBody:
 
     @task_config.setter
     def task_config(self, task_config):
-        """Sets the task_config of this CreateTasksRequestBody.
+        r"""Sets the task_config of this CreateTasksRequestBody.
 
         :param task_config: The task_config of this CreateTasksRequestBody.
         :type task_config: :class:`huaweicloudsdkcodeartsinspector.v3.TaskSettingsTaskConfig`

@@ -31,7 +31,7 @@ class PackageExerciseJudgeRequestBody:
     }
 
     def __init__(self, notify_url=None, timeout=None, output_type=None, code_answer=None):
-        """PackageExerciseJudgeRequestBody
+        r"""PackageExerciseJudgeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PackageExerciseJudgeRequestBody:
 
     @property
     def notify_url(self):
-        """Gets the notify_url of this PackageExerciseJudgeRequestBody.
+        r"""Gets the notify_url of this PackageExerciseJudgeRequestBody.
 
         判题结束后的回调url
 
@@ -72,7 +72,7 @@ class PackageExerciseJudgeRequestBody:
 
     @notify_url.setter
     def notify_url(self, notify_url):
-        """Sets the notify_url of this PackageExerciseJudgeRequestBody.
+        r"""Sets the notify_url of this PackageExerciseJudgeRequestBody.
 
         判题结束后的回调url
 
@@ -83,7 +83,7 @@ class PackageExerciseJudgeRequestBody:
 
     @property
     def timeout(self):
-        """Gets the timeout of this PackageExerciseJudgeRequestBody.
+        r"""Gets the timeout of this PackageExerciseJudgeRequestBody.
 
         代码超时时间
 
@@ -94,7 +94,7 @@ class PackageExerciseJudgeRequestBody:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this PackageExerciseJudgeRequestBody.
+        r"""Sets the timeout of this PackageExerciseJudgeRequestBody.
 
         代码超时时间
 
@@ -105,7 +105,7 @@ class PackageExerciseJudgeRequestBody:
 
     @property
     def output_type(self):
-        """Gets the output_type of this PackageExerciseJudgeRequestBody.
+        r"""Gets the output_type of this PackageExerciseJudgeRequestBody.
 
         结果返回类型
 
@@ -116,7 +116,7 @@ class PackageExerciseJudgeRequestBody:
 
     @output_type.setter
     def output_type(self, output_type):
-        """Sets the output_type of this PackageExerciseJudgeRequestBody.
+        r"""Sets the output_type of this PackageExerciseJudgeRequestBody.
 
         结果返回类型
 
@@ -127,7 +127,7 @@ class PackageExerciseJudgeRequestBody:
 
     @property
     def code_answer(self):
-        """Gets the code_answer of this PackageExerciseJudgeRequestBody.
+        r"""Gets the code_answer of this PackageExerciseJudgeRequestBody.
 
         习题作答（需Base64编码）
 
@@ -138,7 +138,7 @@ class PackageExerciseJudgeRequestBody:
 
     @code_answer.setter
     def code_answer(self, code_answer):
-        """Sets the code_answer of this PackageExerciseJudgeRequestBody.
+        r"""Sets the code_answer of this PackageExerciseJudgeRequestBody.
 
         习题作答（需Base64编码）
 

@@ -33,7 +33,7 @@ class VideoTemplateInfo:
     }
 
     def __init__(self, quality=None, width=None, height=None, bitrate=None, frame_rate=None):
-        """VideoTemplateInfo
+        r"""VideoTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class VideoTemplateInfo:
 
     @property
     def quality(self):
-        """Gets the quality of this VideoTemplateInfo.
+        r"""Gets the quality of this VideoTemplateInfo.
 
         画质。
 
@@ -81,7 +81,7 @@ class VideoTemplateInfo:
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this VideoTemplateInfo.
+        r"""Sets the quality of this VideoTemplateInfo.
 
         画质。
 
@@ -92,7 +92,7 @@ class VideoTemplateInfo:
 
     @property
     def width(self):
-        """Gets the width of this VideoTemplateInfo.
+        r"""Gets the width of this VideoTemplateInfo.
 
         视频宽度。
 
@@ -103,7 +103,7 @@ class VideoTemplateInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoTemplateInfo.
+        r"""Sets the width of this VideoTemplateInfo.
 
         视频宽度。
 
@@ -114,7 +114,7 @@ class VideoTemplateInfo:
 
     @property
     def height(self):
-        """Gets the height of this VideoTemplateInfo.
+        r"""Gets the height of this VideoTemplateInfo.
 
         视频高度。
 
@@ -125,7 +125,7 @@ class VideoTemplateInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoTemplateInfo.
+        r"""Sets the height of this VideoTemplateInfo.
 
         视频高度。
 
@@ -136,7 +136,7 @@ class VideoTemplateInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoTemplateInfo.
+        r"""Gets the bitrate of this VideoTemplateInfo.
 
         码率。
 
@@ -147,7 +147,7 @@ class VideoTemplateInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoTemplateInfo.
+        r"""Sets the bitrate of this VideoTemplateInfo.
 
         码率。
 
@@ -158,7 +158,7 @@ class VideoTemplateInfo:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoTemplateInfo.
+        r"""Gets the frame_rate of this VideoTemplateInfo.
 
         帧率（默认为1，1代表自适应，单位是帧每秒）。
 
@@ -169,7 +169,7 @@ class VideoTemplateInfo:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoTemplateInfo.
+        r"""Sets the frame_rate of this VideoTemplateInfo.
 
         帧率（默认为1，1代表自适应，单位是帧每秒）。
 

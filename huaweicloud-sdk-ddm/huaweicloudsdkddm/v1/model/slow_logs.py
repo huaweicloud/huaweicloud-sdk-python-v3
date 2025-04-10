@@ -41,7 +41,7 @@ class SlowLogs:
     }
 
     def __init__(self, users=None, database=None, query_sample=None, log_time=None, time=None, shards=None, node_id=None, rows_examined=None, host=None):
-        """SlowLogs
+        r"""SlowLogs
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SlowLogs:
 
     @property
     def users(self):
-        """Gets the users of this SlowLogs.
+        r"""Gets the users of this SlowLogs.
 
         执行慢sql的DDM账号名称。
 
@@ -110,7 +110,7 @@ class SlowLogs:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this SlowLogs.
+        r"""Sets the users of this SlowLogs.
 
         执行慢sql的DDM账号名称。
 
@@ -121,7 +121,7 @@ class SlowLogs:
 
     @property
     def database(self):
-        """Gets the database of this SlowLogs.
+        r"""Gets the database of this SlowLogs.
 
         慢sql所属逻辑库的名称。
 
@@ -132,7 +132,7 @@ class SlowLogs:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowLogs.
+        r"""Sets the database of this SlowLogs.
 
         慢sql所属逻辑库的名称。
 
@@ -143,7 +143,7 @@ class SlowLogs:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this SlowLogs.
+        r"""Gets the query_sample of this SlowLogs.
 
         慢sql执行语法。
 
@@ -154,7 +154,7 @@ class SlowLogs:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this SlowLogs.
+        r"""Sets the query_sample of this SlowLogs.
 
         慢sql执行语法。
 
@@ -165,7 +165,7 @@ class SlowLogs:
 
     @property
     def log_time(self):
-        """Gets the log_time of this SlowLogs.
+        r"""Gets the log_time of this SlowLogs.
 
         DDM慢sql开始执行时间。
 
@@ -176,7 +176,7 @@ class SlowLogs:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this SlowLogs.
+        r"""Sets the log_time of this SlowLogs.
 
         DDM慢sql开始执行时间。
 
@@ -187,7 +187,7 @@ class SlowLogs:
 
     @property
     def time(self):
-        """Gets the time of this SlowLogs.
+        r"""Gets the time of this SlowLogs.
 
         慢sql的执行时长，精确到毫秒。
 
@@ -198,7 +198,7 @@ class SlowLogs:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this SlowLogs.
+        r"""Sets the time of this SlowLogs.
 
         慢sql的执行时长，精确到毫秒。
 
@@ -209,7 +209,7 @@ class SlowLogs:
 
     @property
     def shards(self):
-        """Gets the shards of this SlowLogs.
+        r"""Gets the shards of this SlowLogs.
 
         逻辑库物理分片名称。
 
@@ -220,7 +220,7 @@ class SlowLogs:
 
     @shards.setter
     def shards(self, shards):
-        """Sets the shards of this SlowLogs.
+        r"""Sets the shards of this SlowLogs.
 
         逻辑库物理分片名称。
 
@@ -231,7 +231,7 @@ class SlowLogs:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SlowLogs.
+        r"""Gets the node_id of this SlowLogs.
 
         节点ID。
 
@@ -242,7 +242,7 @@ class SlowLogs:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SlowLogs.
+        r"""Sets the node_id of this SlowLogs.
 
         节点ID。
 
@@ -253,7 +253,7 @@ class SlowLogs:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this SlowLogs.
+        r"""Gets the rows_examined of this SlowLogs.
 
         慢sql影响行数。
 
@@ -264,7 +264,7 @@ class SlowLogs:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this SlowLogs.
+        r"""Sets the rows_examined of this SlowLogs.
 
         慢sql影响行数。
 
@@ -275,7 +275,7 @@ class SlowLogs:
 
     @property
     def host(self):
-        """Gets the host of this SlowLogs.
+        r"""Gets the host of this SlowLogs.
 
         客户端ip，该IP地址可能涉及个人数据，建议用户依据实际IP地址的敏感性做查询后脱敏处理。
 
@@ -286,7 +286,7 @@ class SlowLogs:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this SlowLogs.
+        r"""Sets the host of this SlowLogs.
 
         客户端ip，该IP地址可能涉及个人数据，建议用户依据实际IP地址的敏感性做查询后脱敏处理。
 

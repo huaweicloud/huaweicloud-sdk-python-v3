@@ -29,7 +29,7 @@ class SaveRedisDisabledCommandsRequestBody:
     }
 
     def __init__(self, disabled_type=None, commands=None, keys=None):
-        """SaveRedisDisabledCommandsRequestBody
+        r"""SaveRedisDisabledCommandsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SaveRedisDisabledCommandsRequestBody:
 
     @property
     def disabled_type(self):
-        """Gets the disabled_type of this SaveRedisDisabledCommandsRequestBody.
+        r"""Gets the disabled_type of this SaveRedisDisabledCommandsRequestBody.
 
         禁用类型。
 
@@ -67,7 +67,7 @@ class SaveRedisDisabledCommandsRequestBody:
 
     @disabled_type.setter
     def disabled_type(self, disabled_type):
-        """Sets the disabled_type of this SaveRedisDisabledCommandsRequestBody.
+        r"""Sets the disabled_type of this SaveRedisDisabledCommandsRequestBody.
 
         禁用类型。
 
@@ -78,7 +78,7 @@ class SaveRedisDisabledCommandsRequestBody:
 
     @property
     def commands(self):
-        """Gets the commands of this SaveRedisDisabledCommandsRequestBody.
+        r"""Gets the commands of this SaveRedisDisabledCommandsRequestBody.
 
         disabled_type为command时传入该参数。
 
@@ -89,7 +89,7 @@ class SaveRedisDisabledCommandsRequestBody:
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this SaveRedisDisabledCommandsRequestBody.
+        r"""Sets the commands of this SaveRedisDisabledCommandsRequestBody.
 
         disabled_type为command时传入该参数。
 
@@ -100,7 +100,7 @@ class SaveRedisDisabledCommandsRequestBody:
 
     @property
     def keys(self):
-        """Gets the keys of this SaveRedisDisabledCommandsRequestBody.
+        r"""Gets the keys of this SaveRedisDisabledCommandsRequestBody.
 
         disabled_type为key时传入该参数，最多20个。
 
@@ -111,7 +111,7 @@ class SaveRedisDisabledCommandsRequestBody:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this SaveRedisDisabledCommandsRequestBody.
+        r"""Sets the keys of this SaveRedisDisabledCommandsRequestBody.
 
         disabled_type为key时传入该参数，最多20个。
 

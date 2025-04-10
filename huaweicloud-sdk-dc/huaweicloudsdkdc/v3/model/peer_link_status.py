@@ -29,7 +29,7 @@ class PeerLinkStatus:
     }
 
     def __init__(self):
-        """PeerLinkStatus
+        r"""PeerLinkStatus
 
         The model defined in huaweicloud sdk
 

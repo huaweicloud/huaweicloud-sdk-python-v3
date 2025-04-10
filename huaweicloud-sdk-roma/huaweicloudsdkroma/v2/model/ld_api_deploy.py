@@ -49,7 +49,7 @@ class LdApiDeploy:
     }
 
     def __init__(self, ld_api_id=None, deploy_front_api=None, auth_type=None, authorizer_id=None, group_id=None, env_id=None, protocol=None, backend_timeout=None, path=None, method=None, cors=None, roma_app_id=None, retry_count=None):
-        """LdApiDeploy
+        r"""LdApiDeploy
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class LdApiDeploy:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this LdApiDeploy.
+        r"""Gets the ld_api_id of this LdApiDeploy.
 
         后端API的编号
 
@@ -138,7 +138,7 @@ class LdApiDeploy:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this LdApiDeploy.
+        r"""Sets the ld_api_id of this LdApiDeploy.
 
         后端API的编号
 
@@ -149,7 +149,7 @@ class LdApiDeploy:
 
     @property
     def deploy_front_api(self):
-        """Gets the deploy_front_api of this LdApiDeploy.
+        r"""Gets the deploy_front_api of this LdApiDeploy.
 
         是否自动发布API - true：部署完成后自动创建并发布前端API。此时auth_type，group_id，env_id，protocol必填。 - false：部署完成后不创建前端API 
 
@@ -160,7 +160,7 @@ class LdApiDeploy:
 
     @deploy_front_api.setter
     def deploy_front_api(self, deploy_front_api):
-        """Sets the deploy_front_api of this LdApiDeploy.
+        r"""Sets the deploy_front_api of this LdApiDeploy.
 
         是否自动发布API - true：部署完成后自动创建并发布前端API。此时auth_type，group_id，env_id，protocol必填。 - false：部署完成后不创建前端API 
 
@@ -171,7 +171,7 @@ class LdApiDeploy:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this LdApiDeploy.
+        r"""Gets the auth_type of this LdApiDeploy.
 
         认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
@@ -182,7 +182,7 @@ class LdApiDeploy:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this LdApiDeploy.
+        r"""Sets the auth_type of this LdApiDeploy.
 
         认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
@@ -193,7 +193,7 @@ class LdApiDeploy:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this LdApiDeploy.
+        r"""Gets the authorizer_id of this LdApiDeploy.
 
         自定义认证编号。  认证方式auth_type = AUTHORIZER时必填
 
@@ -204,7 +204,7 @@ class LdApiDeploy:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this LdApiDeploy.
+        r"""Sets the authorizer_id of this LdApiDeploy.
 
         自定义认证编号。  认证方式auth_type = AUTHORIZER时必填
 
@@ -215,7 +215,7 @@ class LdApiDeploy:
 
     @property
     def group_id(self):
-        """Gets the group_id of this LdApiDeploy.
+        r"""Gets the group_id of this LdApiDeploy.
 
         部署的前端API分组编号
 
@@ -226,7 +226,7 @@ class LdApiDeploy:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this LdApiDeploy.
+        r"""Sets the group_id of this LdApiDeploy.
 
         部署的前端API分组编号
 
@@ -237,7 +237,7 @@ class LdApiDeploy:
 
     @property
     def env_id(self):
-        """Gets the env_id of this LdApiDeploy.
+        r"""Gets the env_id of this LdApiDeploy.
 
         部署的环境编号
 
@@ -248,7 +248,7 @@ class LdApiDeploy:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this LdApiDeploy.
+        r"""Sets the env_id of this LdApiDeploy.
 
         部署的环境编号
 
@@ -259,7 +259,7 @@ class LdApiDeploy:
 
     @property
     def protocol(self):
-        """Gets the protocol of this LdApiDeploy.
+        r"""Gets the protocol of this LdApiDeploy.
 
         请求协议
 
@@ -270,7 +270,7 @@ class LdApiDeploy:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this LdApiDeploy.
+        r"""Sets the protocol of this LdApiDeploy.
 
         请求协议
 
@@ -281,7 +281,7 @@ class LdApiDeploy:
 
     @property
     def backend_timeout(self):
-        """Gets the backend_timeout of this LdApiDeploy.
+        r"""Gets the backend_timeout of this LdApiDeploy.
 
         超时时间
 
@@ -292,7 +292,7 @@ class LdApiDeploy:
 
     @backend_timeout.setter
     def backend_timeout(self, backend_timeout):
-        """Sets the backend_timeout of this LdApiDeploy.
+        r"""Sets the backend_timeout of this LdApiDeploy.
 
         超时时间
 
@@ -303,7 +303,7 @@ class LdApiDeploy:
 
     @property
     def path(self):
-        """Gets the path of this LdApiDeploy.
+        r"""Gets the path of this LdApiDeploy.
 
         请求路径
 
@@ -314,7 +314,7 @@ class LdApiDeploy:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this LdApiDeploy.
+        r"""Sets the path of this LdApiDeploy.
 
         请求路径
 
@@ -325,7 +325,7 @@ class LdApiDeploy:
 
     @property
     def method(self):
-        """Gets the method of this LdApiDeploy.
+        r"""Gets the method of this LdApiDeploy.
 
         请求方式
 
@@ -336,7 +336,7 @@ class LdApiDeploy:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this LdApiDeploy.
+        r"""Sets the method of this LdApiDeploy.
 
         请求方式
 
@@ -347,7 +347,7 @@ class LdApiDeploy:
 
     @property
     def cors(self):
-        """Gets the cors of this LdApiDeploy.
+        r"""Gets the cors of this LdApiDeploy.
 
         是否支持跨域 - true：支持 - false：不支持 
 
@@ -358,7 +358,7 @@ class LdApiDeploy:
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this LdApiDeploy.
+        r"""Sets the cors of this LdApiDeploy.
 
         是否支持跨域 - true：支持 - false：不支持 
 
@@ -369,7 +369,7 @@ class LdApiDeploy:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this LdApiDeploy.
+        r"""Gets the roma_app_id of this LdApiDeploy.
 
         部署到前端的api归属的应用编号，与后端归属的应用编号保持一致
 
@@ -380,7 +380,7 @@ class LdApiDeploy:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this LdApiDeploy.
+        r"""Sets the roma_app_id of this LdApiDeploy.
 
         部署到前端的api归属的应用编号，与后端归属的应用编号保持一致
 
@@ -391,7 +391,7 @@ class LdApiDeploy:
 
     @property
     def retry_count(self):
-        """Gets the retry_count of this LdApiDeploy.
+        r"""Gets the retry_count of this LdApiDeploy.
 
         服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
@@ -402,7 +402,7 @@ class LdApiDeploy:
 
     @retry_count.setter
     def retry_count(self, retry_count):
-        """Sets the retry_count of this LdApiDeploy.
+        r"""Sets the retry_count of this LdApiDeploy.
 
         服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 

@@ -26,7 +26,7 @@ class StartPausingWorkflowExecutionsResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """StartPausingWorkflowExecutionsResponse
+        r"""StartPausingWorkflowExecutionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartPausingWorkflowExecutionsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StartPausingWorkflowExecutionsResponse.
+        r"""Gets the result of this StartPausingWorkflowExecutionsResponse.
 
         结果返回体
 
@@ -55,7 +55,7 @@ class StartPausingWorkflowExecutionsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StartPausingWorkflowExecutionsResponse.
+        r"""Sets the result of this StartPausingWorkflowExecutionsResponse.
 
         结果返回体
 

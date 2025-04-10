@@ -28,7 +28,7 @@ class ListImageVulnerabilitiesResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListImageVulnerabilitiesResponse
+        r"""ListImageVulnerabilitiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImageVulnerabilitiesResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListImageVulnerabilitiesResponse.
+        r"""Gets the total_num of this ListImageVulnerabilitiesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListImageVulnerabilitiesResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListImageVulnerabilitiesResponse.
+        r"""Sets the total_num of this ListImageVulnerabilitiesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListImageVulnerabilitiesResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListImageVulnerabilitiesResponse.
+        r"""Gets the data_list of this ListImageVulnerabilitiesResponse.
 
         镜像的漏洞列表
 
@@ -84,7 +84,7 @@ class ListImageVulnerabilitiesResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListImageVulnerabilitiesResponse.
+        r"""Sets the data_list of this ListImageVulnerabilitiesResponse.
 
         镜像的漏洞列表
 

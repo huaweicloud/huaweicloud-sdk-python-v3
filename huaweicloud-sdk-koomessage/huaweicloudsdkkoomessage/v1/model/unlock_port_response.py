@@ -26,7 +26,7 @@ class UnlockPortResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UnlockPortResponse
+        r"""UnlockPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnlockPortResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UnlockPortResponse.
+        r"""Gets the data of this UnlockPortResponse.
 
         :return: The data of this UnlockPortResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UnlockPortResponseModel`
@@ -53,7 +53,7 @@ class UnlockPortResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UnlockPortResponse.
+        r"""Sets the data of this UnlockPortResponse.
 
         :param data: The data of this UnlockPortResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.UnlockPortResponseModel`

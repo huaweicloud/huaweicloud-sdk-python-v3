@@ -28,7 +28,7 @@ class BatchShowRadarsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, radars=None):
-        """BatchShowRadarsResponse
+        r"""BatchShowRadarsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowRadarsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowRadarsResponse.
+        r"""Gets the count of this BatchShowRadarsResponse.
 
         **参数说明**：总数 
 
@@ -62,7 +62,7 @@ class BatchShowRadarsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowRadarsResponse.
+        r"""Sets the count of this BatchShowRadarsResponse.
 
         **参数说明**：总数 
 
@@ -73,7 +73,7 @@ class BatchShowRadarsResponse(SdkResponse):
 
     @property
     def radars(self):
-        """Gets the radars of this BatchShowRadarsResponse.
+        r"""Gets the radars of this BatchShowRadarsResponse.
 
         **参数说明**：数据列表 
 
@@ -84,7 +84,7 @@ class BatchShowRadarsResponse(SdkResponse):
 
     @radars.setter
     def radars(self, radars):
-        """Sets the radars of this BatchShowRadarsResponse.
+        r"""Sets the radars of this BatchShowRadarsResponse.
 
         **参数说明**：数据列表 
 

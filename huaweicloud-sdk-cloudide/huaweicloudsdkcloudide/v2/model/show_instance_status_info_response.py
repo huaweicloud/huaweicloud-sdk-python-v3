@@ -28,7 +28,7 @@ class ShowInstanceStatusInfoResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ShowInstanceStatusInfoResponse
+        r"""ShowInstanceStatusInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowInstanceStatusInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowInstanceStatusInfoResponse.
+        r"""Gets the result of this ShowInstanceStatusInfoResponse.
 
         :return: The result of this ShowInstanceStatusInfoResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.InstanceStatusResponse`
@@ -60,7 +60,7 @@ class ShowInstanceStatusInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowInstanceStatusInfoResponse.
+        r"""Sets the result of this ShowInstanceStatusInfoResponse.
 
         :param result: The result of this ShowInstanceStatusInfoResponse.
         :type result: :class:`huaweicloudsdkcloudide.v2.InstanceStatusResponse`
@@ -69,7 +69,7 @@ class ShowInstanceStatusInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceStatusInfoResponse.
+        r"""Gets the status of this ShowInstanceStatusInfoResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class ShowInstanceStatusInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceStatusInfoResponse.
+        r"""Sets the status of this ShowInstanceStatusInfoResponse.
 
         状态
 

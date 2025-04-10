@@ -29,7 +29,7 @@ class AudioInfo:
     }
 
     def __init__(self, sample_rate=None, bitrate=None, channels=None):
-        """AudioInfo
+        r"""AudioInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AudioInfo:
 
     @property
     def sample_rate(self):
-        """Gets the sample_rate of this AudioInfo.
+        r"""Gets the sample_rate of this AudioInfo.
 
         音频采样率(有效值范围)<br/> AUDIO_SAMPLE_AUTO (default), AUDIO_SAMPLE_22050：22050Hz<br/> AUDIO_SAMPLE_32000：32000Hz<br/> AUDIO_SAMPLE_44100：44100Hz<br/> AUDIO_SAMPLE_48000：48000Hz<br/> AUDIO_SAMPLE_96000：96000Hz<br/> 
 
@@ -66,7 +66,7 @@ class AudioInfo:
 
     @sample_rate.setter
     def sample_rate(self, sample_rate):
-        """Sets the sample_rate of this AudioInfo.
+        r"""Sets the sample_rate of this AudioInfo.
 
         音频采样率(有效值范围)<br/> AUDIO_SAMPLE_AUTO (default), AUDIO_SAMPLE_22050：22050Hz<br/> AUDIO_SAMPLE_32000：32000Hz<br/> AUDIO_SAMPLE_44100：44100Hz<br/> AUDIO_SAMPLE_48000：48000Hz<br/> AUDIO_SAMPLE_96000：96000Hz<br/> 
 
@@ -77,7 +77,7 @@ class AudioInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this AudioInfo.
+        r"""Gets the bitrate of this AudioInfo.
 
         音频码率（单位：Kbps）<br/> 
 
@@ -88,7 +88,7 @@ class AudioInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this AudioInfo.
+        r"""Sets the bitrate of this AudioInfo.
 
         音频码率（单位：Kbps）<br/> 
 
@@ -99,7 +99,7 @@ class AudioInfo:
 
     @property
     def channels(self):
-        """Gets the channels of this AudioInfo.
+        r"""Gets the channels of this AudioInfo.
 
         声道数(有效值范围)<br/> AUDIO_CHANNELS_1:单声道<br/> AUDIO_CHANNELS_2：双声道<br/> AUDIO_CHANNELS_5_1：5.1声道<br/> 
 
@@ -110,7 +110,7 @@ class AudioInfo:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this AudioInfo.
+        r"""Sets the channels of this AudioInfo.
 
         声道数(有效值范围)<br/> AUDIO_CHANNELS_1:单声道<br/> AUDIO_CHANNELS_2：双声道<br/> AUDIO_CHANNELS_5_1：5.1声道<br/> 
 

@@ -45,7 +45,7 @@ class ResponseEip:
     }
 
     def __init__(self, id=None, ip_version=None, ip_billing_info=None, type=None, ip_address=None, charge_mode=None, bandwidth_id=None, bandwidth_size=None, bandwidth_name=None, bandwidth_billing_info=None, share_type=None):
-        """ResponseEip
+        r"""ResponseEip
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ResponseEip:
 
     @property
     def id(self):
-        """Gets the id of this ResponseEip.
+        r"""Gets the id of this ResponseEip.
 
         功能说明：公网IP的唯一标识
 
@@ -124,7 +124,7 @@ class ResponseEip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseEip.
+        r"""Sets the id of this ResponseEip.
 
         功能说明：公网IP的唯一标识
 
@@ -135,7 +135,7 @@ class ResponseEip:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ResponseEip.
+        r"""Gets the ip_version of this ResponseEip.
 
         功能说明: 公网IP版本号  取值范围：4
 
@@ -146,7 +146,7 @@ class ResponseEip:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ResponseEip.
+        r"""Sets the ip_version of this ResponseEip.
 
         功能说明: 公网IP版本号  取值范围：4
 
@@ -157,7 +157,7 @@ class ResponseEip:
 
     @property
     def ip_billing_info(self):
-        """Gets the ip_billing_info of this ResponseEip.
+        r"""Gets the ip_billing_info of this ResponseEip.
 
         功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
 
@@ -168,7 +168,7 @@ class ResponseEip:
 
     @ip_billing_info.setter
     def ip_billing_info(self, ip_billing_info):
-        """Sets the ip_billing_info of this ResponseEip.
+        r"""Sets the ip_billing_info of this ResponseEip.
 
         功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
 
@@ -179,7 +179,7 @@ class ResponseEip:
 
     @property
     def type(self):
-        """Gets the type of this ResponseEip.
+        r"""Gets the type of this ResponseEip.
 
         功能说明：EIP的类型  取值范围：5_bgp（全动态BGP），5_sbgp（静态BGP）  华南-广州：5_bgp、5_sbgp  华东-上海一：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp  中国-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  拉美-圣地亚哥：5_bgp  拉美-圣保罗一：5_bgp  拉美-墨西哥城一：5_bgp  拉美-布宜诺斯艾利一：5_bgp  拉美-利马一：5_bgp  拉美-圣地亚哥二： 5_bgp 约束：必须是系统具体支持的类型。
 
@@ -190,7 +190,7 @@ class ResponseEip:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResponseEip.
+        r"""Sets the type of this ResponseEip.
 
         功能说明：EIP的类型  取值范围：5_bgp（全动态BGP），5_sbgp（静态BGP）  华南-广州：5_bgp、5_sbgp  华东-上海一：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp  中国-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  拉美-圣地亚哥：5_bgp  拉美-圣保罗一：5_bgp  拉美-墨西哥城一：5_bgp  拉美-布宜诺斯艾利一：5_bgp  拉美-利马一：5_bgp  拉美-圣地亚哥二： 5_bgp 约束：必须是系统具体支持的类型。
 
@@ -201,7 +201,7 @@ class ResponseEip:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ResponseEip.
+        r"""Gets the ip_address of this ResponseEip.
 
         功能说明: 公网IPv4地址
 
@@ -212,7 +212,7 @@ class ResponseEip:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ResponseEip.
+        r"""Sets the ip_address of this ResponseEip.
 
         功能说明: 公网IPv4地址
 
@@ -223,7 +223,7 @@ class ResponseEip:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ResponseEip.
+        r"""Gets the charge_mode of this ResponseEip.
 
         功能说明：按流量计费还是按带宽计费  取值范围：  bandwidth：按带宽计费  traffic：按流量计费  95peak_plus：按增强型95计费
 
@@ -234,7 +234,7 @@ class ResponseEip:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ResponseEip.
+        r"""Sets the charge_mode of this ResponseEip.
 
         功能说明：按流量计费还是按带宽计费  取值范围：  bandwidth：按带宽计费  traffic：按流量计费  95peak_plus：按增强型95计费
 
@@ -245,7 +245,7 @@ class ResponseEip:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this ResponseEip.
+        r"""Gets the bandwidth_id of this ResponseEip.
 
         功能说明：带宽ID
 
@@ -256,7 +256,7 @@ class ResponseEip:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this ResponseEip.
+        r"""Sets the bandwidth_id of this ResponseEip.
 
         功能说明：带宽ID
 
@@ -267,7 +267,7 @@ class ResponseEip:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ResponseEip.
+        r"""Gets the bandwidth_size of this ResponseEip.
 
         带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1000
 
@@ -278,7 +278,7 @@ class ResponseEip:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ResponseEip.
+        r"""Sets the bandwidth_size of this ResponseEip.
 
         带宽大小Mbit/s，flavor为V300时，取值不能大于300，flavor为V1G时，取值不能大于1000
 
@@ -289,7 +289,7 @@ class ResponseEip:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this ResponseEip.
+        r"""Gets the bandwidth_name of this ResponseEip.
 
         带宽名称
 
@@ -300,7 +300,7 @@ class ResponseEip:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this ResponseEip.
+        r"""Sets the bandwidth_name of this ResponseEip.
 
         带宽名称
 
@@ -311,7 +311,7 @@ class ResponseEip:
 
     @property
     def bandwidth_billing_info(self):
-        """Gets the bandwidth_billing_info of this ResponseEip.
+        r"""Gets the bandwidth_billing_info of this ResponseEip.
 
         带宽订单信息
 
@@ -322,7 +322,7 @@ class ResponseEip:
 
     @bandwidth_billing_info.setter
     def bandwidth_billing_info(self, bandwidth_billing_info):
-        """Sets the bandwidth_billing_info of this ResponseEip.
+        r"""Sets the bandwidth_billing_info of this ResponseEip.
 
         带宽订单信息
 
@@ -333,7 +333,7 @@ class ResponseEip:
 
     @property
     def share_type(self):
-        """Gets the share_type of this ResponseEip.
+        r"""Gets the share_type of this ResponseEip.
 
         功能说明：类型  \"WHOLE\"为共享带宽，\"PER\"为独占带宽
 
@@ -344,7 +344,7 @@ class ResponseEip:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this ResponseEip.
+        r"""Sets the share_type of this ResponseEip.
 
         功能说明：类型  \"WHOLE\"为共享带宽，\"PER\"为独占带宽
 

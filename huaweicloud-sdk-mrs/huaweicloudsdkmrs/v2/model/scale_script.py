@@ -37,7 +37,7 @@ class ScaleScript:
     }
 
     def __init__(self, name=None, uri=None, parameters=None, nodes=None, active_master=None, fail_action=None, action_stage=None):
-        """ScaleScript
+        r"""ScaleScript
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class ScaleScript:
 
     @property
     def name(self):
-        """Gets the name of this ScaleScript.
+        r"""Gets the name of this ScaleScript.
 
         弹性伸缩自定义自动化脚本的名称，同一个集群的自定义自动化脚本名称不允许相同。 只能由数字、英文字符、空格、中划线和下划线组成，且不能以空格开头。 可输入的字符串长度为1～64个字符。
 
@@ -91,7 +91,7 @@ class ScaleScript:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScaleScript.
+        r"""Sets the name of this ScaleScript.
 
         弹性伸缩自定义自动化脚本的名称，同一个集群的自定义自动化脚本名称不允许相同。 只能由数字、英文字符、空格、中划线和下划线组成，且不能以空格开头。 可输入的字符串长度为1～64个字符。
 
@@ -102,7 +102,7 @@ class ScaleScript:
 
     @property
     def uri(self):
-        """Gets the uri of this ScaleScript.
+        r"""Gets the uri of this ScaleScript.
 
         自定义自动化脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。示例：obs://XXX/scale.sh - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
 
@@ -113,7 +113,7 @@ class ScaleScript:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ScaleScript.
+        r"""Sets the uri of this ScaleScript.
 
         自定义自动化脚本的路径。设置为OBS桶的路径或虚拟机本地的路径。 - OBS桶的路径：直接手动输入脚本路径。示例：obs://XXX/scale.sh - 虚拟机本地的路径：用户需要输入正确的脚本路径。脚本所在的路径必须以‘/’开头，以.sh结尾。
 
@@ -124,7 +124,7 @@ class ScaleScript:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ScaleScript.
+        r"""Gets the parameters of this ScaleScript.
 
         自定义自动化脚本参数。 多个参数间用空格隔开。 可以传入以下系统预定义参数： - ${mrs_scale_node_num}：扩缩容节点数 - ${mrs_scale_type}：扩缩容类型，扩容为scale_out，缩容为scale_in - ${mrs_scale_node_hostnames}：扩缩容的节点主机名称 - ${mrs_scale_node_ips}：扩缩容的节点IP - ${mrs_scale_rule_name}：触发扩缩容的规则名 其他用户自定义参数使用方式与普通shell脚本相同，多个参数中间用空格隔开。
 
@@ -135,7 +135,7 @@ class ScaleScript:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ScaleScript.
+        r"""Sets the parameters of this ScaleScript.
 
         自定义自动化脚本参数。 多个参数间用空格隔开。 可以传入以下系统预定义参数： - ${mrs_scale_node_num}：扩缩容节点数 - ${mrs_scale_type}：扩缩容类型，扩容为scale_out，缩容为scale_in - ${mrs_scale_node_hostnames}：扩缩容的节点主机名称 - ${mrs_scale_node_ips}：扩缩容的节点IP - ${mrs_scale_rule_name}：触发扩缩容的规则名 其他用户自定义参数使用方式与普通shell脚本相同，多个参数中间用空格隔开。
 
@@ -146,7 +146,7 @@ class ScaleScript:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ScaleScript.
+        r"""Gets the nodes of this ScaleScript.
 
         自定义自动化脚本所执行的节点组名称。
 
@@ -157,7 +157,7 @@ class ScaleScript:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ScaleScript.
+        r"""Sets the nodes of this ScaleScript.
 
         自定义自动化脚本所执行的节点组名称。
 
@@ -168,7 +168,7 @@ class ScaleScript:
 
     @property
     def active_master(self):
-        """Gets the active_master of this ScaleScript.
+        r"""Gets the active_master of this ScaleScript.
 
         自定义自动化脚本是否只运行在主Master节点上。 缺省值为false，表示自定义自动化脚本可运行在所有Master节点上。
 
@@ -179,7 +179,7 @@ class ScaleScript:
 
     @active_master.setter
     def active_master(self, active_master):
-        """Sets the active_master of this ScaleScript.
+        r"""Sets the active_master of this ScaleScript.
 
         自定义自动化脚本是否只运行在主Master节点上。 缺省值为false，表示自定义自动化脚本可运行在所有Master节点上。
 
@@ -190,7 +190,7 @@ class ScaleScript:
 
     @property
     def fail_action(self):
-        """Gets the fail_action of this ScaleScript.
+        r"""Gets the fail_action of this ScaleScript.
 
         自自定义自动化脚本执行失败后，是否继续执行后续脚本和创建集群。 说明： - 建议您在调试阶段设置为“continue”，无论此自定义自动化脚本是否执行成功，则集群都能继续安装和启动。 - 由于缩容成功无法回滚，因此缩容后执行的脚本“fail_action”必须设置为“continue”。 枚举值： - continue：继续执行后续脚本。 - errorout：终止操作。
 
@@ -201,7 +201,7 @@ class ScaleScript:
 
     @fail_action.setter
     def fail_action(self, fail_action):
-        """Sets the fail_action of this ScaleScript.
+        r"""Sets the fail_action of this ScaleScript.
 
         自自定义自动化脚本执行失败后，是否继续执行后续脚本和创建集群。 说明： - 建议您在调试阶段设置为“continue”，无论此自定义自动化脚本是否执行成功，则集群都能继续安装和启动。 - 由于缩容成功无法回滚，因此缩容后执行的脚本“fail_action”必须设置为“continue”。 枚举值： - continue：继续执行后续脚本。 - errorout：终止操作。
 
@@ -212,7 +212,7 @@ class ScaleScript:
 
     @property
     def action_stage(self):
-        """Gets the action_stage of this ScaleScript.
+        r"""Gets the action_stage of this ScaleScript.
 
         脚本执行时机。 枚举值： - before_scale_out：扩容前 - before_scale_in：缩容前 - after_scale_out：扩容后 - after_scale_in：缩容后
 
@@ -223,7 +223,7 @@ class ScaleScript:
 
     @action_stage.setter
     def action_stage(self, action_stage):
-        """Sets the action_stage of this ScaleScript.
+        r"""Sets the action_stage of this ScaleScript.
 
         脚本执行时机。 枚举值： - before_scale_out：扩容前 - before_scale_in：缩容前 - after_scale_out：扩容后 - after_scale_in：缩容后
 

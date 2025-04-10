@@ -29,7 +29,7 @@ class EniNetwork:
     }
 
     def __init__(self, eni_subnet_id=None, eni_subnet_cidr=None, subnets=None):
-        """EniNetwork
+        r"""EniNetwork
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EniNetwork:
 
     @property
     def eni_subnet_id(self):
-        """Gets the eni_subnet_id of this EniNetwork.
+        r"""Gets the eni_subnet_id of this EniNetwork.
 
         ENI所在子网的IPv4子网ID(暂不支持IPv6,废弃中)。获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
 
@@ -66,7 +66,7 @@ class EniNetwork:
 
     @eni_subnet_id.setter
     def eni_subnet_id(self, eni_subnet_id):
-        """Sets the eni_subnet_id of this EniNetwork.
+        r"""Sets the eni_subnet_id of this EniNetwork.
 
         ENI所在子网的IPv4子网ID(暂不支持IPv6,废弃中)。获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
 
@@ -77,7 +77,7 @@ class EniNetwork:
 
     @property
     def eni_subnet_cidr(self):
-        """Gets the eni_subnet_cidr of this EniNetwork.
+        r"""Gets the eni_subnet_cidr of this EniNetwork.
 
         ENI子网CIDR(废弃中)
 
@@ -88,7 +88,7 @@ class EniNetwork:
 
     @eni_subnet_cidr.setter
     def eni_subnet_cidr(self, eni_subnet_cidr):
-        """Sets the eni_subnet_cidr of this EniNetwork.
+        r"""Sets the eni_subnet_cidr of this EniNetwork.
 
         ENI子网CIDR(废弃中)
 
@@ -99,7 +99,7 @@ class EniNetwork:
 
     @property
     def subnets(self):
-        """Gets the subnets of this EniNetwork.
+        r"""Gets the subnets of this EniNetwork.
 
         IPv4子网ID列表
 
@@ -110,7 +110,7 @@ class EniNetwork:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this EniNetwork.
+        r"""Sets the subnets of this EniNetwork.
 
         IPv4子网ID列表
 

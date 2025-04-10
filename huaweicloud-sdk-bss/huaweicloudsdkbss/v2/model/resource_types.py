@@ -31,7 +31,7 @@ class ResourceTypes:
     }
 
     def __init__(self, resource_type_code=None, resource_type_name=None, resource_type_desc=None, service_type_code=None):
-        """ResourceTypes
+        r"""ResourceTypes
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceTypes:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this ResourceTypes.
+        r"""Gets the resource_type_code of this ResourceTypes.
 
         资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
@@ -75,7 +75,7 @@ class ResourceTypes:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this ResourceTypes.
+        r"""Sets the resource_type_code of this ResourceTypes.
 
         资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
@@ -86,7 +86,7 @@ class ResourceTypes:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this ResourceTypes.
+        r"""Gets the resource_type_name of this ResourceTypes.
 
         资源类型的名称。
 
@@ -97,7 +97,7 @@ class ResourceTypes:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this ResourceTypes.
+        r"""Sets the resource_type_name of this ResourceTypes.
 
         资源类型的名称。
 
@@ -108,7 +108,7 @@ class ResourceTypes:
 
     @property
     def resource_type_desc(self):
-        """Gets the resource_type_desc of this ResourceTypes.
+        r"""Gets the resource_type_desc of this ResourceTypes.
 
         资源类型的描述。
 
@@ -119,7 +119,7 @@ class ResourceTypes:
 
     @resource_type_desc.setter
     def resource_type_desc(self, resource_type_desc):
-        """Sets the resource_type_desc of this ResourceTypes.
+        r"""Sets the resource_type_desc of this ResourceTypes.
 
         资源类型的描述。
 
@@ -130,7 +130,7 @@ class ResourceTypes:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ResourceTypes.
+        r"""Gets the service_type_code of this ResourceTypes.
 
         资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
@@ -141,7 +141,7 @@ class ResourceTypes:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ResourceTypes.
+        r"""Sets the service_type_code of this ResourceTypes.
 
         资源类型归属的服务类型编码。例如：hws.service.type.offline。
 

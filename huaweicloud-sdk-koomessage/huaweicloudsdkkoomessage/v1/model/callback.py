@@ -29,7 +29,7 @@ class Callback:
     }
 
     def __init__(self, callback_url=None, id=None, url_type=None):
-        """Callback
+        r"""Callback
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Callback:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this Callback.
+        r"""Gets the callback_url of this Callback.
 
         回调地址。
 
@@ -68,7 +68,7 @@ class Callback:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this Callback.
+        r"""Sets the callback_url of this Callback.
 
         回调地址。
 
@@ -79,7 +79,7 @@ class Callback:
 
     @property
     def id(self):
-        """Gets the id of this Callback.
+        r"""Gets the id of this Callback.
 
         注册回调的唯一标识ID。
 
@@ -90,7 +90,7 @@ class Callback:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Callback.
+        r"""Sets the id of this Callback.
 
         注册回调的唯一标识ID。
 
@@ -101,7 +101,7 @@ class Callback:
 
     @property
     def url_type(self):
-        """Gets the url_type of this Callback.
+        r"""Gets the url_type of this Callback.
 
         回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
 
@@ -112,7 +112,7 @@ class Callback:
 
     @url_type.setter
     def url_type(self, url_type):
-        """Sets the url_type of this Callback.
+        r"""Sets the url_type of this Callback.
 
         回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
 

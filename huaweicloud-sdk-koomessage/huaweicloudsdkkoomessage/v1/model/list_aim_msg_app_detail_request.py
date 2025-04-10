@@ -25,7 +25,7 @@ class ListAimMsgAppDetailRequest:
     }
 
     def __init__(self, app_id=None):
-        """ListAimMsgAppDetailRequest
+        r"""ListAimMsgAppDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAimMsgAppDetailRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAimMsgAppDetailRequest.
+        r"""Gets the app_id of this ListAimMsgAppDetailRequest.
 
         应用ID。
 
@@ -53,7 +53,7 @@ class ListAimMsgAppDetailRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAimMsgAppDetailRequest.
+        r"""Sets the app_id of this ListAimMsgAppDetailRequest.
 
         应用ID。
 

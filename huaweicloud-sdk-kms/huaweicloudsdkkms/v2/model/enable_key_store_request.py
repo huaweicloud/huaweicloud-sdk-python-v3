@@ -25,7 +25,7 @@ class EnableKeyStoreRequest:
     }
 
     def __init__(self, keystore_id=None):
-        """EnableKeyStoreRequest
+        r"""EnableKeyStoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableKeyStoreRequest:
 
     @property
     def keystore_id(self):
-        """Gets the keystore_id of this EnableKeyStoreRequest.
+        r"""Gets the keystore_id of this EnableKeyStoreRequest.
 
         密钥库ID
 
@@ -53,7 +53,7 @@ class EnableKeyStoreRequest:
 
     @keystore_id.setter
     def keystore_id(self, keystore_id):
-        """Sets the keystore_id of this EnableKeyStoreRequest.
+        r"""Sets the keystore_id of this EnableKeyStoreRequest.
 
         密钥库ID
 

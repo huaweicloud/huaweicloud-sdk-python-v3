@@ -28,7 +28,7 @@ class ConfirmImageUploadResponse(SdkResponse):
     }
 
     def __init__(self, id=None, image_url=None):
-        """ConfirmImageUploadResponse
+        r"""ConfirmImageUploadResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ConfirmImageUploadResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ConfirmImageUploadResponse.
+        r"""Gets the id of this ConfirmImageUploadResponse.
 
         水印配置模板id<br/> 
 
@@ -62,7 +62,7 @@ class ConfirmImageUploadResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfirmImageUploadResponse.
+        r"""Sets the id of this ConfirmImageUploadResponse.
 
         水印配置模板id<br/> 
 
@@ -73,7 +73,7 @@ class ConfirmImageUploadResponse(SdkResponse):
 
     @property
     def image_url(self):
-        """Gets the image_url of this ConfirmImageUploadResponse.
+        r"""Gets the image_url of this ConfirmImageUploadResponse.
 
         水印图片的下载url<br/> 
 
@@ -84,7 +84,7 @@ class ConfirmImageUploadResponse(SdkResponse):
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ConfirmImageUploadResponse.
+        r"""Sets the image_url of this ConfirmImageUploadResponse.
 
         水印图片的下载url<br/> 
 

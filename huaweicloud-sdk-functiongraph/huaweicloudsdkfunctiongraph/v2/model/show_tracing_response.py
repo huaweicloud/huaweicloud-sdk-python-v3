@@ -28,7 +28,7 @@ class ShowTracingResponse(SdkResponse):
     }
 
     def __init__(self, tracing_ak=None, tracing_sk=None):
-        """ShowTracingResponse
+        r"""ShowTracingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTracingResponse(SdkResponse):
 
     @property
     def tracing_ak(self):
-        """Gets the tracing_ak of this ShowTracingResponse.
+        r"""Gets the tracing_ak of this ShowTracingResponse.
 
         apm的ak
 
@@ -62,7 +62,7 @@ class ShowTracingResponse(SdkResponse):
 
     @tracing_ak.setter
     def tracing_ak(self, tracing_ak):
-        """Sets the tracing_ak of this ShowTracingResponse.
+        r"""Sets the tracing_ak of this ShowTracingResponse.
 
         apm的ak
 
@@ -73,7 +73,7 @@ class ShowTracingResponse(SdkResponse):
 
     @property
     def tracing_sk(self):
-        """Gets the tracing_sk of this ShowTracingResponse.
+        r"""Gets the tracing_sk of this ShowTracingResponse.
 
         apm的sk
 
@@ -84,7 +84,7 @@ class ShowTracingResponse(SdkResponse):
 
     @tracing_sk.setter
     def tracing_sk(self, tracing_sk):
-        """Sets the tracing_sk of this ShowTracingResponse.
+        r"""Sets the tracing_sk of this ShowTracingResponse.
 
         apm的sk
 

@@ -27,7 +27,7 @@ class CreatePipelineGroupRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreatePipelineGroupRequest
+        r"""CreatePipelineGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePipelineGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePipelineGroupRequest.
+        r"""Gets the project_id of this CreatePipelineGroupRequest.
 
         项目ID
 
@@ -60,7 +60,7 @@ class CreatePipelineGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePipelineGroupRequest.
+        r"""Sets the project_id of this CreatePipelineGroupRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class CreatePipelineGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePipelineGroupRequest.
+        r"""Gets the body of this CreatePipelineGroupRequest.
 
         :return: The body of this CreatePipelineGroupRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupCreateDTO`
@@ -80,7 +80,7 @@ class CreatePipelineGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePipelineGroupRequest.
+        r"""Sets the body of this CreatePipelineGroupRequest.
 
         :param body: The body of this CreatePipelineGroupRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupCreateDTO`

@@ -39,7 +39,7 @@ class Eips:
     }
 
     def __init__(self, id=None, address=None, bandwidth_size=None, eip_charge_mode=None, create_time=None, attached_desktop_id=None, attached_desktop_name=None, enterprise_project_id=None):
-        """Eips
+        r"""Eips
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Eips:
 
     @property
     def id(self):
-        """Gets the id of this Eips.
+        r"""Gets the id of this Eips.
 
         EIP的id。
 
@@ -103,7 +103,7 @@ class Eips:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Eips.
+        r"""Sets the id of this Eips.
 
         EIP的id。
 
@@ -114,7 +114,7 @@ class Eips:
 
     @property
     def address(self):
-        """Gets the address of this Eips.
+        r"""Gets the address of this Eips.
 
         Eip地址。
 
@@ -125,7 +125,7 @@ class Eips:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this Eips.
+        r"""Sets the address of this Eips.
 
         Eip地址。
 
@@ -136,7 +136,7 @@ class Eips:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this Eips.
+        r"""Gets the bandwidth_size of this Eips.
 
         带宽大小。
 
@@ -147,7 +147,7 @@ class Eips:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this Eips.
+        r"""Sets the bandwidth_size of this Eips.
 
         带宽大小。
 
@@ -158,7 +158,7 @@ class Eips:
 
     @property
     def eip_charge_mode(self):
-        """Gets the eip_charge_mode of this Eips.
+        r"""Gets the eip_charge_mode of this Eips.
 
         traffic（按流量计费），bandwidth（按带宽计费）。
 
@@ -169,7 +169,7 @@ class Eips:
 
     @eip_charge_mode.setter
     def eip_charge_mode(self, eip_charge_mode):
-        """Sets the eip_charge_mode of this Eips.
+        r"""Sets the eip_charge_mode of this Eips.
 
         traffic（按流量计费），bandwidth（按带宽计费）。
 
@@ -180,7 +180,7 @@ class Eips:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Eips.
+        r"""Gets the create_time of this Eips.
 
         创建时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -191,7 +191,7 @@ class Eips:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Eips.
+        r"""Sets the create_time of this Eips.
 
         创建时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -202,7 +202,7 @@ class Eips:
 
     @property
     def attached_desktop_id(self):
-        """Gets the attached_desktop_id of this Eips.
+        r"""Gets the attached_desktop_id of this Eips.
 
         绑定的桌面id。
 
@@ -213,7 +213,7 @@ class Eips:
 
     @attached_desktop_id.setter
     def attached_desktop_id(self, attached_desktop_id):
-        """Sets the attached_desktop_id of this Eips.
+        r"""Sets the attached_desktop_id of this Eips.
 
         绑定的桌面id。
 
@@ -224,7 +224,7 @@ class Eips:
 
     @property
     def attached_desktop_name(self):
-        """Gets the attached_desktop_name of this Eips.
+        r"""Gets the attached_desktop_name of this Eips.
 
         绑定的桌面名称。
 
@@ -235,7 +235,7 @@ class Eips:
 
     @attached_desktop_name.setter
     def attached_desktop_name(self, attached_desktop_name):
-        """Sets the attached_desktop_name of this Eips.
+        r"""Sets the attached_desktop_name of this Eips.
 
         绑定的桌面名称。
 
@@ -246,7 +246,7 @@ class Eips:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Eips.
+        r"""Gets the enterprise_project_id of this Eips.
 
         企业项目ID
 
@@ -257,7 +257,7 @@ class Eips:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Eips.
+        r"""Sets the enterprise_project_id of this Eips.
 
         企业项目ID
 

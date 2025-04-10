@@ -45,7 +45,7 @@ class ListSessionsRequest:
     }
 
     def __init__(self, limit=None, offset=None, user_name=None, query_begin_time=None, query_end_time=None, app_server_group_id=None, vm_ip=None, public_ip=None, machine_name=None, session_state=None, is_success=None):
-        """ListSessionsRequest
+        r"""ListSessionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ListSessionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSessionsRequest.
+        r"""Gets the limit of this ListSessionsRequest.
 
         单次查询的大小[1-100]。
 
@@ -122,7 +122,7 @@ class ListSessionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSessionsRequest.
+        r"""Sets the limit of this ListSessionsRequest.
 
         单次查询的大小[1-100]。
 
@@ -133,7 +133,7 @@ class ListSessionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSessionsRequest.
+        r"""Gets the offset of this ListSessionsRequest.
 
         查询的偏移量。
 
@@ -144,7 +144,7 @@ class ListSessionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSessionsRequest.
+        r"""Sets the offset of this ListSessionsRequest.
 
         查询的偏移量。
 
@@ -155,7 +155,7 @@ class ListSessionsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListSessionsRequest.
+        r"""Gets the user_name of this ListSessionsRequest.
 
         用户名。
 
@@ -166,7 +166,7 @@ class ListSessionsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListSessionsRequest.
+        r"""Sets the user_name of this ListSessionsRequest.
 
         用户名。
 
@@ -177,7 +177,7 @@ class ListSessionsRequest:
 
     @property
     def query_begin_time(self):
-        """Gets the query_begin_time of this ListSessionsRequest.
+        r"""Gets the query_begin_time of this ListSessionsRequest.
 
         搜索开始时间，以会话开始时间为条件查询，格式2024-02-27T03:47:51.182Z。
 
@@ -188,7 +188,7 @@ class ListSessionsRequest:
 
     @query_begin_time.setter
     def query_begin_time(self, query_begin_time):
-        """Sets the query_begin_time of this ListSessionsRequest.
+        r"""Sets the query_begin_time of this ListSessionsRequest.
 
         搜索开始时间，以会话开始时间为条件查询，格式2024-02-27T03:47:51.182Z。
 
@@ -199,7 +199,7 @@ class ListSessionsRequest:
 
     @property
     def query_end_time(self):
-        """Gets the query_end_time of this ListSessionsRequest.
+        r"""Gets the query_end_time of this ListSessionsRequest.
 
         搜索结束时间，以会话开始时间为条件查询，格式2024-02-27T03:47:51.182Z。
 
@@ -210,7 +210,7 @@ class ListSessionsRequest:
 
     @query_end_time.setter
     def query_end_time(self, query_end_time):
-        """Sets the query_end_time of this ListSessionsRequest.
+        r"""Sets the query_end_time of this ListSessionsRequest.
 
         搜索结束时间，以会话开始时间为条件查询，格式2024-02-27T03:47:51.182Z。
 
@@ -221,7 +221,7 @@ class ListSessionsRequest:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this ListSessionsRequest.
+        r"""Gets the app_server_group_id of this ListSessionsRequest.
 
         AppServer组ID。
 
@@ -232,7 +232,7 @@ class ListSessionsRequest:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this ListSessionsRequest.
+        r"""Sets the app_server_group_id of this ListSessionsRequest.
 
         AppServer组ID。
 
@@ -243,7 +243,7 @@ class ListSessionsRequest:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this ListSessionsRequest.
+        r"""Gets the vm_ip of this ListSessionsRequest.
 
         服务器IP。
 
@@ -254,7 +254,7 @@ class ListSessionsRequest:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this ListSessionsRequest.
+        r"""Sets the vm_ip of this ListSessionsRequest.
 
         服务器IP。
 
@@ -265,7 +265,7 @@ class ListSessionsRequest:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListSessionsRequest.
+        r"""Gets the public_ip of this ListSessionsRequest.
 
         客户端出口IP。
 
@@ -276,7 +276,7 @@ class ListSessionsRequest:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListSessionsRequest.
+        r"""Sets the public_ip of this ListSessionsRequest.
 
         客户端出口IP。
 
@@ -287,7 +287,7 @@ class ListSessionsRequest:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ListSessionsRequest.
+        r"""Gets the machine_name of this ListSessionsRequest.
 
         应用服务器名称。
 
@@ -298,7 +298,7 @@ class ListSessionsRequest:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ListSessionsRequest.
+        r"""Sets the machine_name of this ListSessionsRequest.
 
         应用服务器名称。
 
@@ -309,7 +309,7 @@ class ListSessionsRequest:
 
     @property
     def session_state(self):
-        """Gets the session_state of this ListSessionsRequest.
+        r"""Gets the session_state of this ListSessionsRequest.
 
         应用状态，支持查询多个，中间用英文逗号分隔： * `Active` - 会话当前处于活动状态，有用户登录并且正在使用。 * `Disconnected` - 用户已经登录但会话处于断开连接状态。 * `AppcInit` - 会话正在初始化。 * `SignedOut` - 会话已注销。 * `InitFail` - 会话初始化失败。
 
@@ -320,7 +320,7 @@ class ListSessionsRequest:
 
     @session_state.setter
     def session_state(self, session_state):
-        """Sets the session_state of this ListSessionsRequest.
+        r"""Sets the session_state of this ListSessionsRequest.
 
         应用状态，支持查询多个，中间用英文逗号分隔： * `Active` - 会话当前处于活动状态，有用户登录并且正在使用。 * `Disconnected` - 用户已经登录但会话处于断开连接状态。 * `AppcInit` - 会话正在初始化。 * `SignedOut` - 会话已注销。 * `InitFail` - 会话初始化失败。
 
@@ -331,7 +331,7 @@ class ListSessionsRequest:
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListSessionsRequest.
+        r"""Gets the is_success of this ListSessionsRequest.
 
         会话是否创建成功,默认不填则查询全部 * 'true' - 会话创建成功 * 'false' - 会话创建失败
 
@@ -342,7 +342,7 @@ class ListSessionsRequest:
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListSessionsRequest.
+        r"""Sets the is_success of this ListSessionsRequest.
 
         会话是否创建成功,默认不填则查询全部 * 'true' - 会话创建成功 * 'false' - 会话创建失败
 

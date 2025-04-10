@@ -27,7 +27,7 @@ class KafkaTargetDetail:
     }
 
     def __init__(self, topic=None, key_transform=None):
-        """KafkaTargetDetail
+        r"""KafkaTargetDetail
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KafkaTargetDetail:
 
     @property
     def topic(self):
-        """Gets the topic of this KafkaTargetDetail.
+        r"""Gets the topic of this KafkaTargetDetail.
 
         主题
 
@@ -60,7 +60,7 @@ class KafkaTargetDetail:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this KafkaTargetDetail.
+        r"""Sets the topic of this KafkaTargetDetail.
 
         主题
 
@@ -71,7 +71,7 @@ class KafkaTargetDetail:
 
     @property
     def key_transform(self):
-        """Gets the key_transform of this KafkaTargetDetail.
+        r"""Gets the key_transform of this KafkaTargetDetail.
 
         :return: The key_transform of this KafkaTargetDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaTargetDetailKeyTransform`
@@ -80,7 +80,7 @@ class KafkaTargetDetail:
 
     @key_transform.setter
     def key_transform(self, key_transform):
-        """Sets the key_transform of this KafkaTargetDetail.
+        r"""Sets the key_transform of this KafkaTargetDetail.
 
         :param key_transform: The key_transform of this KafkaTargetDetail.
         :type key_transform: :class:`huaweicloudsdkeg.v1.KafkaTargetDetailKeyTransform`

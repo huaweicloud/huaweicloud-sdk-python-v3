@@ -29,7 +29,7 @@ class UpdateVpcChannelV2Request:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, body=None):
-        """UpdateVpcChannelV2Request
+        r"""UpdateVpcChannelV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVpcChannelV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateVpcChannelV2Request.
+        r"""Gets the instance_id of this UpdateVpcChannelV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateVpcChannelV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateVpcChannelV2Request.
+        r"""Sets the instance_id of this UpdateVpcChannelV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateVpcChannelV2Request:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this UpdateVpcChannelV2Request.
+        r"""Gets the vpc_channel_id of this UpdateVpcChannelV2Request.
 
         VPC通道的编号
 
@@ -88,7 +88,7 @@ class UpdateVpcChannelV2Request:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this UpdateVpcChannelV2Request.
+        r"""Sets the vpc_channel_id of this UpdateVpcChannelV2Request.
 
         VPC通道的编号
 
@@ -99,7 +99,7 @@ class UpdateVpcChannelV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpcChannelV2Request.
+        r"""Gets the body of this UpdateVpcChannelV2Request.
 
         :return: The body of this UpdateVpcChannelV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcCreate`
@@ -108,7 +108,7 @@ class UpdateVpcChannelV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpcChannelV2Request.
+        r"""Sets the body of this UpdateVpcChannelV2Request.
 
         :param body: The body of this UpdateVpcChannelV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.VpcCreate`

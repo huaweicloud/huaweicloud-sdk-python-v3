@@ -63,7 +63,7 @@ class TablesList:
     }
 
     def __init__(self, table_name=None, table_id=None, table_name_cn=None, columns=None, dw_id=None, dw_name=None, dw_type=None, database_name=None, schema_name=None, life_cycle=None, description=None, user_id=None, user_name=None, project_id=None, create_time=None, table_size=None, total_count=None, is_valid=None, extra_setting=None, partitioned=None):
-        """TablesList
+        r"""TablesList
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class TablesList:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TablesList.
+        r"""Gets the table_name of this TablesList.
 
         表名称
 
@@ -187,7 +187,7 @@ class TablesList:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TablesList.
+        r"""Sets the table_name of this TablesList.
 
         表名称
 
@@ -198,7 +198,7 @@ class TablesList:
 
     @property
     def table_id(self):
-        """Gets the table_id of this TablesList.
+        r"""Gets the table_id of this TablesList.
 
         表id
 
@@ -209,7 +209,7 @@ class TablesList:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this TablesList.
+        r"""Sets the table_id of this TablesList.
 
         表id
 
@@ -220,7 +220,7 @@ class TablesList:
 
     @property
     def table_name_cn(self):
-        """Gets the table_name_cn of this TablesList.
+        r"""Gets the table_name_cn of this TablesList.
 
         表的中文名称
 
@@ -231,7 +231,7 @@ class TablesList:
 
     @table_name_cn.setter
     def table_name_cn(self, table_name_cn):
-        """Sets the table_name_cn of this TablesList.
+        r"""Sets the table_name_cn of this TablesList.
 
         表的中文名称
 
@@ -242,7 +242,7 @@ class TablesList:
 
     @property
     def columns(self):
-        """Gets the columns of this TablesList.
+        r"""Gets the columns of this TablesList.
 
         表中字段
 
@@ -253,7 +253,7 @@ class TablesList:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this TablesList.
+        r"""Sets the columns of this TablesList.
 
         表中字段
 
@@ -264,7 +264,7 @@ class TablesList:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this TablesList.
+        r"""Gets the dw_id of this TablesList.
 
         数据连接id
 
@@ -275,7 +275,7 @@ class TablesList:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this TablesList.
+        r"""Sets the dw_id of this TablesList.
 
         数据连接id
 
@@ -286,7 +286,7 @@ class TablesList:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this TablesList.
+        r"""Gets the dw_name of this TablesList.
 
         数据连接名称
 
@@ -297,7 +297,7 @@ class TablesList:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this TablesList.
+        r"""Sets the dw_name of this TablesList.
 
         数据连接名称
 
@@ -308,7 +308,7 @@ class TablesList:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this TablesList.
+        r"""Gets the dw_type of this TablesList.
 
         数据连接类型
 
@@ -319,7 +319,7 @@ class TablesList:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this TablesList.
+        r"""Sets the dw_type of this TablesList.
 
         数据连接类型
 
@@ -330,7 +330,7 @@ class TablesList:
 
     @property
     def database_name(self):
-        """Gets the database_name of this TablesList.
+        r"""Gets the database_name of this TablesList.
 
         数据库名称
 
@@ -341,7 +341,7 @@ class TablesList:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this TablesList.
+        r"""Sets the database_name of this TablesList.
 
         数据库名称
 
@@ -352,7 +352,7 @@ class TablesList:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this TablesList.
+        r"""Gets the schema_name of this TablesList.
 
         schema名称
 
@@ -363,7 +363,7 @@ class TablesList:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this TablesList.
+        r"""Sets the schema_name of this TablesList.
 
         schema名称
 
@@ -374,7 +374,7 @@ class TablesList:
 
     @property
     def life_cycle(self):
-        """Gets the life_cycle of this TablesList.
+        r"""Gets the life_cycle of this TablesList.
 
         表的生命周期
 
@@ -385,7 +385,7 @@ class TablesList:
 
     @life_cycle.setter
     def life_cycle(self, life_cycle):
-        """Sets the life_cycle of this TablesList.
+        r"""Sets the life_cycle of this TablesList.
 
         表的生命周期
 
@@ -396,7 +396,7 @@ class TablesList:
 
     @property
     def description(self):
-        """Gets the description of this TablesList.
+        r"""Gets the description of this TablesList.
 
         表的描述
 
@@ -407,7 +407,7 @@ class TablesList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TablesList.
+        r"""Sets the description of this TablesList.
 
         表的描述
 
@@ -418,7 +418,7 @@ class TablesList:
 
     @property
     def user_id(self):
-        """Gets the user_id of this TablesList.
+        r"""Gets the user_id of this TablesList.
 
         用户id
 
@@ -429,7 +429,7 @@ class TablesList:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this TablesList.
+        r"""Sets the user_id of this TablesList.
 
         用户id
 
@@ -440,7 +440,7 @@ class TablesList:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TablesList.
+        r"""Gets the user_name of this TablesList.
 
         用户名称
 
@@ -451,7 +451,7 @@ class TablesList:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TablesList.
+        r"""Sets the user_name of this TablesList.
 
         用户名称
 
@@ -462,7 +462,7 @@ class TablesList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TablesList.
+        r"""Gets the project_id of this TablesList.
 
         数据连接id
 
@@ -473,7 +473,7 @@ class TablesList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TablesList.
+        r"""Sets the project_id of this TablesList.
 
         数据连接id
 
@@ -484,7 +484,7 @@ class TablesList:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TablesList.
+        r"""Gets the create_time of this TablesList.
 
         表的创建时间
 
@@ -495,7 +495,7 @@ class TablesList:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TablesList.
+        r"""Sets the create_time of this TablesList.
 
         表的创建时间
 
@@ -506,7 +506,7 @@ class TablesList:
 
     @property
     def table_size(self):
-        """Gets the table_size of this TablesList.
+        r"""Gets the table_size of this TablesList.
 
         表的大小
 
@@ -517,7 +517,7 @@ class TablesList:
 
     @table_size.setter
     def table_size(self, table_size):
-        """Sets the table_size of this TablesList.
+        r"""Sets the table_size of this TablesList.
 
         表的大小
 
@@ -528,7 +528,7 @@ class TablesList:
 
     @property
     def total_count(self):
-        """Gets the total_count of this TablesList.
+        r"""Gets the total_count of this TablesList.
 
         当前查询条件下表的总记录数
 
@@ -539,7 +539,7 @@ class TablesList:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this TablesList.
+        r"""Sets the total_count of this TablesList.
 
         当前查询条件下表的总记录数
 
@@ -550,7 +550,7 @@ class TablesList:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this TablesList.
+        r"""Gets the is_valid of this TablesList.
 
         表是否合规
 
@@ -561,7 +561,7 @@ class TablesList:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this TablesList.
+        r"""Sets the is_valid of this TablesList.
 
         表是否合规
 
@@ -572,7 +572,7 @@ class TablesList:
 
     @property
     def extra_setting(self):
-        """Gets the extra_setting of this TablesList.
+        r"""Gets the extra_setting of this TablesList.
 
         表的额外设置
 
@@ -583,7 +583,7 @@ class TablesList:
 
     @extra_setting.setter
     def extra_setting(self, extra_setting):
-        """Sets the extra_setting of this TablesList.
+        r"""Sets the extra_setting of this TablesList.
 
         表的额外设置
 
@@ -594,7 +594,7 @@ class TablesList:
 
     @property
     def partitioned(self):
-        """Gets the partitioned of this TablesList.
+        r"""Gets the partitioned of this TablesList.
 
         是否进行数据分区
 
@@ -605,7 +605,7 @@ class TablesList:
 
     @partitioned.setter
     def partitioned(self, partitioned):
-        """Sets the partitioned of this TablesList.
+        r"""Sets the partitioned of this TablesList.
 
         是否进行数据分区
 

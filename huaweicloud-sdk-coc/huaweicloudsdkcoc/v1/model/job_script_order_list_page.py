@@ -27,7 +27,7 @@ class JobScriptOrderListPage:
     }
 
     def __init__(self, total=None, data=None):
-        """JobScriptOrderListPage
+        r"""JobScriptOrderListPage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class JobScriptOrderListPage:
 
     @property
     def total(self):
-        """Gets the total of this JobScriptOrderListPage.
+        r"""Gets the total of this JobScriptOrderListPage.
 
         总条数
 
@@ -59,7 +59,7 @@ class JobScriptOrderListPage:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this JobScriptOrderListPage.
+        r"""Sets the total of this JobScriptOrderListPage.
 
         总条数
 
@@ -70,7 +70,7 @@ class JobScriptOrderListPage:
 
     @property
     def data(self):
-        """Gets the data of this JobScriptOrderListPage.
+        r"""Gets the data of this JobScriptOrderListPage.
 
         单页数据列表
 
@@ -81,7 +81,7 @@ class JobScriptOrderListPage:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this JobScriptOrderListPage.
+        r"""Sets the data of this JobScriptOrderListPage.
 
         单页数据列表
 

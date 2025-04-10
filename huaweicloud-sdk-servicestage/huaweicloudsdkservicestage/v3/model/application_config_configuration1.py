@@ -29,7 +29,7 @@ class ApplicationConfigConfiguration1:
     }
 
     def __init__(self, application_id=None, environment_id=None, configuration=None):
-        """ApplicationConfigConfiguration1
+        r"""ApplicationConfigConfiguration1
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApplicationConfigConfiguration1:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ApplicationConfigConfiguration1.
+        r"""Gets the application_id of this ApplicationConfigConfiguration1.
 
         :return: The application_id of this ApplicationConfigConfiguration1.
         :rtype: str
@@ -66,7 +66,7 @@ class ApplicationConfigConfiguration1:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ApplicationConfigConfiguration1.
+        r"""Sets the application_id of this ApplicationConfigConfiguration1.
 
         :param application_id: The application_id of this ApplicationConfigConfiguration1.
         :type application_id: str
@@ -75,7 +75,7 @@ class ApplicationConfigConfiguration1:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ApplicationConfigConfiguration1.
+        r"""Gets the environment_id of this ApplicationConfigConfiguration1.
 
         :return: The environment_id of this ApplicationConfigConfiguration1.
         :rtype: str
@@ -84,7 +84,7 @@ class ApplicationConfigConfiguration1:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ApplicationConfigConfiguration1.
+        r"""Sets the environment_id of this ApplicationConfigConfiguration1.
 
         :param environment_id: The environment_id of this ApplicationConfigConfiguration1.
         :type environment_id: str
@@ -93,7 +93,7 @@ class ApplicationConfigConfiguration1:
 
     @property
     def configuration(self):
-        """Gets the configuration of this ApplicationConfigConfiguration1.
+        r"""Gets the configuration of this ApplicationConfigConfiguration1.
 
         :return: The configuration of this ApplicationConfigConfiguration1.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`
@@ -102,7 +102,7 @@ class ApplicationConfigConfiguration1:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ApplicationConfigConfiguration1.
+        r"""Sets the configuration of this ApplicationConfigConfiguration1.
 
         :param configuration: The configuration of this ApplicationConfigConfiguration1.
         :type configuration: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`

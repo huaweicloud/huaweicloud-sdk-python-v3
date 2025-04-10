@@ -28,7 +28,7 @@ class DetachInstancesResponse(SdkResponse):
     }
 
     def __init__(self, failed_operation_list=None, job_id=None):
-        """DetachInstancesResponse
+        r"""DetachInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DetachInstancesResponse(SdkResponse):
 
     @property
     def failed_operation_list(self):
-        """Gets the failed_operation_list of this DetachInstancesResponse.
+        r"""Gets the failed_operation_list of this DetachInstancesResponse.
 
         操作失败桌面列表
 
@@ -62,7 +62,7 @@ class DetachInstancesResponse(SdkResponse):
 
     @failed_operation_list.setter
     def failed_operation_list(self, failed_operation_list):
-        """Sets the failed_operation_list of this DetachInstancesResponse.
+        r"""Sets the failed_operation_list of this DetachInstancesResponse.
 
         操作失败桌面列表
 
@@ -73,7 +73,7 @@ class DetachInstancesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DetachInstancesResponse.
+        r"""Gets the job_id of this DetachInstancesResponse.
 
         任务ID
 
@@ -84,7 +84,7 @@ class DetachInstancesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DetachInstancesResponse.
+        r"""Sets the job_id of this DetachInstancesResponse.
 
         任务ID
 

@@ -43,7 +43,7 @@ class WorkspaceTransformVO:
     }
 
     def __init__(self, target_model_id=None, target_model_name=None, description=None, update_exist_tables=None, ids=None, dw_type=None, connection_id=None, database=None, queue=None, schema=None):
-        """WorkspaceTransformVO
+        r"""WorkspaceTransformVO
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class WorkspaceTransformVO:
 
     @property
     def target_model_id(self):
-        """Gets the target_model_id of this WorkspaceTransformVO.
+        r"""Gets the target_model_id of this WorkspaceTransformVO.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -115,7 +115,7 @@ class WorkspaceTransformVO:
 
     @target_model_id.setter
     def target_model_id(self, target_model_id):
-        """Sets the target_model_id of this WorkspaceTransformVO.
+        r"""Sets the target_model_id of this WorkspaceTransformVO.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -126,7 +126,7 @@ class WorkspaceTransformVO:
 
     @property
     def target_model_name(self):
-        """Gets the target_model_name of this WorkspaceTransformVO.
+        r"""Gets the target_model_name of this WorkspaceTransformVO.
 
         工作区名字。
 
@@ -137,7 +137,7 @@ class WorkspaceTransformVO:
 
     @target_model_name.setter
     def target_model_name(self, target_model_name):
-        """Sets the target_model_name of this WorkspaceTransformVO.
+        r"""Sets the target_model_name of this WorkspaceTransformVO.
 
         工作区名字。
 
@@ -148,7 +148,7 @@ class WorkspaceTransformVO:
 
     @property
     def description(self):
-        """Gets the description of this WorkspaceTransformVO.
+        r"""Gets the description of this WorkspaceTransformVO.
 
         描述。
 
@@ -159,7 +159,7 @@ class WorkspaceTransformVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkspaceTransformVO.
+        r"""Sets the description of this WorkspaceTransformVO.
 
         描述。
 
@@ -170,7 +170,7 @@ class WorkspaceTransformVO:
 
     @property
     def update_exist_tables(self):
-        """Gets the update_exist_tables of this WorkspaceTransformVO.
+        r"""Gets the update_exist_tables of this WorkspaceTransformVO.
 
         是否更新已有表。
 
@@ -181,7 +181,7 @@ class WorkspaceTransformVO:
 
     @update_exist_tables.setter
     def update_exist_tables(self, update_exist_tables):
-        """Sets the update_exist_tables of this WorkspaceTransformVO.
+        r"""Sets the update_exist_tables of this WorkspaceTransformVO.
 
         是否更新已有表。
 
@@ -192,7 +192,7 @@ class WorkspaceTransformVO:
 
     @property
     def ids(self):
-        """Gets the ids of this WorkspaceTransformVO.
+        r"""Gets the ids of this WorkspaceTransformVO.
 
         需要物化的逻辑实体的ID列表，ID字符串。
 
@@ -203,7 +203,7 @@ class WorkspaceTransformVO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this WorkspaceTransformVO.
+        r"""Sets the ids of this WorkspaceTransformVO.
 
         需要物化的逻辑实体的ID列表，ID字符串。
 
@@ -214,7 +214,7 @@ class WorkspaceTransformVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this WorkspaceTransformVO.
+        r"""Gets the dw_type of this WorkspaceTransformVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -225,7 +225,7 @@ class WorkspaceTransformVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this WorkspaceTransformVO.
+        r"""Sets the dw_type of this WorkspaceTransformVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -236,7 +236,7 @@ class WorkspaceTransformVO:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this WorkspaceTransformVO.
+        r"""Gets the connection_id of this WorkspaceTransformVO.
 
         转化后物理表所属的数据连接ID。
 
@@ -247,7 +247,7 @@ class WorkspaceTransformVO:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this WorkspaceTransformVO.
+        r"""Sets the connection_id of this WorkspaceTransformVO.
 
         转化后物理表所属的数据连接ID。
 
@@ -258,7 +258,7 @@ class WorkspaceTransformVO:
 
     @property
     def database(self):
-        """Gets the database of this WorkspaceTransformVO.
+        r"""Gets the database of this WorkspaceTransformVO.
 
         转化后物理表所属的数据库。
 
@@ -269,7 +269,7 @@ class WorkspaceTransformVO:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this WorkspaceTransformVO.
+        r"""Sets the database of this WorkspaceTransformVO.
 
         转化后物理表所属的数据库。
 
@@ -280,7 +280,7 @@ class WorkspaceTransformVO:
 
     @property
     def queue(self):
-        """Gets the queue of this WorkspaceTransformVO.
+        r"""Gets the queue of this WorkspaceTransformVO.
 
         转化后物理表所属的队列（仅DLI）。
 
@@ -291,7 +291,7 @@ class WorkspaceTransformVO:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this WorkspaceTransformVO.
+        r"""Sets the queue of this WorkspaceTransformVO.
 
         转化后物理表所属的队列（仅DLI）。
 
@@ -302,7 +302,7 @@ class WorkspaceTransformVO:
 
     @property
     def schema(self):
-        """Gets the schema of this WorkspaceTransformVO.
+        r"""Gets the schema of this WorkspaceTransformVO.
 
         转化后物理表所属的schema（仅DWS和PostgreSQL）。
 
@@ -313,7 +313,7 @@ class WorkspaceTransformVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this WorkspaceTransformVO.
+        r"""Sets the schema of this WorkspaceTransformVO.
 
         转化后物理表所属的schema（仅DWS和PostgreSQL）。
 

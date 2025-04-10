@@ -25,7 +25,7 @@ class ShowClouddcnSubnetRequest:
     }
 
     def __init__(self, clouddcn_subnet_id=None):
-        """ShowClouddcnSubnetRequest
+        r"""ShowClouddcnSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowClouddcnSubnetRequest:
 
     @property
     def clouddcn_subnet_id(self):
-        """Gets the clouddcn_subnet_id of this ShowClouddcnSubnetRequest.
+        r"""Gets the clouddcn_subnet_id of this ShowClouddcnSubnetRequest.
 
         clouddcn子网ID
 
@@ -53,7 +53,7 @@ class ShowClouddcnSubnetRequest:
 
     @clouddcn_subnet_id.setter
     def clouddcn_subnet_id(self, clouddcn_subnet_id):
-        """Sets the clouddcn_subnet_id of this ShowClouddcnSubnetRequest.
+        r"""Sets the clouddcn_subnet_id of this ShowClouddcnSubnetRequest.
 
         clouddcn子网ID
 

@@ -43,7 +43,7 @@ class SubtitleConfig:
     }
 
     def __init__(self, dx=None, dy=None, h=None, w=None, font_name=None, font_size=None, font_color=None, stroke_color=None, stroke_thickness=None, opacity=None):
-        """SubtitleConfig
+        r"""SubtitleConfig
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SubtitleConfig:
 
     @property
     def dx(self):
-        """Gets the dx of this SubtitleConfig.
+        r"""Gets the dx of this SubtitleConfig.
 
         **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
@@ -117,7 +117,7 @@ class SubtitleConfig:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this SubtitleConfig.
+        r"""Sets the dx of this SubtitleConfig.
 
         **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
@@ -128,7 +128,7 @@ class SubtitleConfig:
 
     @property
     def dy(self):
-        """Gets the dy of this SubtitleConfig.
+        r"""Gets the dy of this SubtitleConfig.
 
         **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
@@ -139,7 +139,7 @@ class SubtitleConfig:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this SubtitleConfig.
+        r"""Sets the dy of this SubtitleConfig.
 
         **参数解释**： 字幕框左下角像素点坐标。 **约束限制**： 不涉及。 **默认取值**： 不涉及。
 
@@ -150,7 +150,7 @@ class SubtitleConfig:
 
     @property
     def h(self):
-        """Gets the h of this SubtitleConfig.
+        r"""Gets the h of this SubtitleConfig.
 
         **参数解释**： 字幕框高度。 **约束限制**： 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数。
 
@@ -161,7 +161,7 @@ class SubtitleConfig:
 
     @h.setter
     def h(self, h):
-        """Sets the h of this SubtitleConfig.
+        r"""Sets the h of this SubtitleConfig.
 
         **参数解释**： 字幕框高度。 **约束限制**： 参数h用于方便前端计算字幕框左上角坐标，后台不使用该参数。
 
@@ -172,7 +172,7 @@ class SubtitleConfig:
 
     @property
     def w(self):
-        """Gets the w of this SubtitleConfig.
+        r"""Gets the w of this SubtitleConfig.
 
         **参数解释**： 字幕框宽度。 **约束限制**： * 字幕框宽度固定为屏幕宽度的80% * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
@@ -183,7 +183,7 @@ class SubtitleConfig:
 
     @w.setter
     def w(self, w):
-        """Sets the w of this SubtitleConfig.
+        r"""Sets the w of this SubtitleConfig.
 
         **参数解释**： 字幕框宽度。 **约束限制**： * 字幕框宽度固定为屏幕宽度的80% * 参数w用于方便前端计算字幕框左上角坐标，后台不使用该参数
 
@@ -194,7 +194,7 @@ class SubtitleConfig:
 
     @property
     def font_name(self):
-        """Gets the font_name of this SubtitleConfig.
+        r"""Gets the font_name of this SubtitleConfig.
 
         **参数解释**： 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
@@ -205,7 +205,7 @@ class SubtitleConfig:
 
     @font_name.setter
     def font_name(self, font_name):
-        """Sets the font_name of this SubtitleConfig.
+        r"""Sets the font_name of this SubtitleConfig.
 
         **参数解释**： 字体。当前支持的字体请参考[服务支持的字体](metastudio_02_0041.xml) **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位
 
@@ -216,7 +216,7 @@ class SubtitleConfig:
 
     @property
     def font_size(self):
-        """Gets the font_size of this SubtitleConfig.
+        r"""Gets the font_size of this SubtitleConfig.
 
         **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为24-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
 
@@ -227,7 +227,7 @@ class SubtitleConfig:
 
     @font_size.setter
     def font_size(self, font_size):
-        """Sets the font_size of this SubtitleConfig.
+        r"""Sets the font_size of this SubtitleConfig.
 
         **参数解释**： 字体大小。接口的取值范围为0-120，实际业务使用的取值范围要求为24-120，请以业务实际使用要求为准。 **约束限制**： 不涉及。
 
@@ -238,7 +238,7 @@ class SubtitleConfig:
 
     @property
     def font_color(self):
-        """Gets the font_color of this SubtitleConfig.
+        r"""Gets the font_color of this SubtitleConfig.
 
         **参数解释**： 字幕字体颜色的RGB颜色值。 **约束限制**： 无 **取值范围**： 字符长度0-7位，固定长度
 
@@ -249,7 +249,7 @@ class SubtitleConfig:
 
     @font_color.setter
     def font_color(self, font_color):
-        """Sets the font_color of this SubtitleConfig.
+        r"""Sets the font_color of this SubtitleConfig.
 
         **参数解释**： 字幕字体颜色的RGB颜色值。 **约束限制**： 无 **取值范围**： 字符长度0-7位，固定长度
 
@@ -260,7 +260,7 @@ class SubtitleConfig:
 
     @property
     def stroke_color(self):
-        """Gets the stroke_color of this SubtitleConfig.
+        r"""Gets the stroke_color of this SubtitleConfig.
 
         **参数解释**： 字幕字体描边颜色的RGB颜色值。 **约束限制**： 无 **取值范围**： 字符长度0-7位，固定长度
 
@@ -271,7 +271,7 @@ class SubtitleConfig:
 
     @stroke_color.setter
     def stroke_color(self, stroke_color):
-        """Sets the stroke_color of this SubtitleConfig.
+        r"""Sets the stroke_color of this SubtitleConfig.
 
         **参数解释**： 字幕字体描边颜色的RGB颜色值。 **约束限制**： 无 **取值范围**： 字符长度0-7位，固定长度
 
@@ -282,7 +282,7 @@ class SubtitleConfig:
 
     @property
     def stroke_thickness(self):
-        """Gets the stroke_thickness of this SubtitleConfig.
+        r"""Gets the stroke_thickness of this SubtitleConfig.
 
         **参数解释**： 字幕字体描边粗细像素值。 **约束限制**： 无 **取值范围**： 0-50
 
@@ -293,7 +293,7 @@ class SubtitleConfig:
 
     @stroke_thickness.setter
     def stroke_thickness(self, stroke_thickness):
-        """Sets the stroke_thickness of this SubtitleConfig.
+        r"""Sets the stroke_thickness of this SubtitleConfig.
 
         **参数解释**： 字幕字体描边粗细像素值。 **约束限制**： 无 **取值范围**： 0-50
 
@@ -304,7 +304,7 @@ class SubtitleConfig:
 
     @property
     def opacity(self):
-        """Gets the opacity of this SubtitleConfig.
+        r"""Gets the opacity of this SubtitleConfig.
 
         **参数解释**： 字幕字体不透明度，0表示完全透明，1表示完全不透明。默认1。 **约束限制**： 无 **取值范围**： 0-1
 
@@ -315,7 +315,7 @@ class SubtitleConfig:
 
     @opacity.setter
     def opacity(self, opacity):
-        """Sets the opacity of this SubtitleConfig.
+        r"""Sets the opacity of this SubtitleConfig.
 
         **参数解释**： 字幕字体不透明度，0表示完全透明，1表示完全不透明。默认1。 **约束限制**： 无 **取值范围**： 0-1
 

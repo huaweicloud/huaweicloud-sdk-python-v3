@@ -28,7 +28,7 @@ class BatchResetPasswordResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchResetPasswordResponse
+        r"""BatchResetPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchResetPasswordResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchResetPasswordResponse.
+        r"""Gets the results of this BatchResetPasswordResponse.
 
         :return: The results of this BatchResetPasswordResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]
@@ -60,7 +60,7 @@ class BatchResetPasswordResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchResetPasswordResponse.
+        r"""Sets the results of this BatchResetPasswordResponse.
 
         :param results: The results of this BatchResetPasswordResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]
@@ -69,7 +69,7 @@ class BatchResetPasswordResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchResetPasswordResponse.
+        r"""Gets the count of this BatchResetPasswordResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class BatchResetPasswordResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchResetPasswordResponse.
+        r"""Sets the count of this BatchResetPasswordResponse.
 
         总数
 

@@ -35,7 +35,7 @@ class ListMonitorLogRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ListMonitorLogRequest
+        r"""ListMonitorLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListMonitorLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMonitorLogRequest.
+        r"""Gets the instance_id of this ListMonitorLogRequest.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ListMonitorLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMonitorLogRequest.
+        r"""Sets the instance_id of this ListMonitorLogRequest.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ListMonitorLogRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListMonitorLogRequest.
+        r"""Gets the task_id of this ListMonitorLogRequest.
 
         任务ID
 
@@ -109,7 +109,7 @@ class ListMonitorLogRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListMonitorLogRequest.
+        r"""Sets the task_id of this ListMonitorLogRequest.
 
         任务ID
 
@@ -120,7 +120,7 @@ class ListMonitorLogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMonitorLogRequest.
+        r"""Gets the offset of this ListMonitorLogRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -131,7 +131,7 @@ class ListMonitorLogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMonitorLogRequest.
+        r"""Sets the offset of this ListMonitorLogRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -142,7 +142,7 @@ class ListMonitorLogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMonitorLogRequest.
+        r"""Gets the limit of this ListMonitorLogRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -153,7 +153,7 @@ class ListMonitorLogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMonitorLogRequest.
+        r"""Sets the limit of this ListMonitorLogRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -164,7 +164,7 @@ class ListMonitorLogRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListMonitorLogRequest.
+        r"""Gets the begin_time of this ListMonitorLogRequest.
 
         日志查询的起始时间，格式timestamp(ms)，使用UTC时区
 
@@ -175,7 +175,7 @@ class ListMonitorLogRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListMonitorLogRequest.
+        r"""Sets the begin_time of this ListMonitorLogRequest.
 
         日志查询的起始时间，格式timestamp(ms)，使用UTC时区
 
@@ -186,7 +186,7 @@ class ListMonitorLogRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListMonitorLogRequest.
+        r"""Gets the end_time of this ListMonitorLogRequest.
 
         日志查询的结束时间，格式timestamp(ms)，使用UTC时区
 
@@ -197,7 +197,7 @@ class ListMonitorLogRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListMonitorLogRequest.
+        r"""Sets the end_time of this ListMonitorLogRequest.
 
         日志查询的结束时间，格式timestamp(ms)，使用UTC时区
 

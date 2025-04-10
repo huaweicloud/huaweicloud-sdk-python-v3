@@ -28,7 +28,7 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, devices=None, count=None):
-        """ListDevicesResponse
+        r"""ListDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this ListDevicesResponse.
+        r"""Gets the devices of this ListDevicesResponse.
 
         终端设备属性
 
@@ -62,7 +62,7 @@ class ListDevicesResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this ListDevicesResponse.
+        r"""Sets the devices of this ListDevicesResponse.
 
         终端设备属性
 
@@ -73,7 +73,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDevicesResponse.
+        r"""Gets the count of this ListDevicesResponse.
 
         满足条件的终端设备个数
 
@@ -84,7 +84,7 @@ class ListDevicesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDevicesResponse.
+        r"""Sets the count of this ListDevicesResponse.
 
         满足条件的终端设备个数
 

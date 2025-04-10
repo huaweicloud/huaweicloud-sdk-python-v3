@@ -24,7 +24,7 @@ class BatchChangeServerMaintainModeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchChangeServerMaintainModeResponse
+        r"""BatchChangeServerMaintainModeResponse
 
         The model defined in huaweicloud sdk
 

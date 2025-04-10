@@ -37,7 +37,7 @@ class CreateWorkflowRequestBody:
     }
 
     def __init__(self, states=None, inputs=None, description=None, mode=None, express_config=None, func_vpc=None, agency=None):
-        """CreateWorkflowRequestBody
+        r"""CreateWorkflowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def states(self):
-        """Gets the states of this CreateWorkflowRequestBody.
+        r"""Gets the states of this CreateWorkflowRequestBody.
 
         工作流的编排定义,必须有TYPE，TYPE值必须是3种State（DELAY，OPERATION，END）中一种。每个state的名字是1-80长度的只含数字，字母，-和_的String。
 
@@ -96,7 +96,7 @@ class CreateWorkflowRequestBody:
 
     @states.setter
     def states(self, states):
-        """Sets the states of this CreateWorkflowRequestBody.
+        r"""Sets the states of this CreateWorkflowRequestBody.
 
         工作流的编排定义,必须有TYPE，TYPE值必须是3种State（DELAY，OPERATION，END）中一种。每个state的名字是1-80长度的只含数字，字母，-和_的String。
 
@@ -107,7 +107,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def inputs(self):
-        """Gets the inputs of this CreateWorkflowRequestBody.
+        r"""Gets the inputs of this CreateWorkflowRequestBody.
 
         工作流中用户可修改的参数项
 
@@ -118,7 +118,7 @@ class CreateWorkflowRequestBody:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this CreateWorkflowRequestBody.
+        r"""Sets the inputs of this CreateWorkflowRequestBody.
 
         工作流中用户可修改的参数项
 
@@ -129,7 +129,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateWorkflowRequestBody.
+        r"""Gets the description of this CreateWorkflowRequestBody.
 
         工作流的描述
 
@@ -140,7 +140,7 @@ class CreateWorkflowRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWorkflowRequestBody.
+        r"""Sets the description of this CreateWorkflowRequestBody.
 
         工作流的描述
 
@@ -151,7 +151,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateWorkflowRequestBody.
+        r"""Gets the mode of this CreateWorkflowRequestBody.
 
         工作流执行类型：同步（EXPRESS）、异步（NORMAL）
 
@@ -162,7 +162,7 @@ class CreateWorkflowRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateWorkflowRequestBody.
+        r"""Sets the mode of this CreateWorkflowRequestBody.
 
         工作流执行类型：同步（EXPRESS）、异步（NORMAL）
 
@@ -173,7 +173,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def express_config(self):
-        """Gets the express_config of this CreateWorkflowRequestBody.
+        r"""Gets the express_config of this CreateWorkflowRequestBody.
 
         :return: The express_config of this CreateWorkflowRequestBody.
         :rtype: :class:`huaweicloudsdkdwr.v3.ExpressConfig`
@@ -182,7 +182,7 @@ class CreateWorkflowRequestBody:
 
     @express_config.setter
     def express_config(self, express_config):
-        """Sets the express_config of this CreateWorkflowRequestBody.
+        r"""Sets the express_config of this CreateWorkflowRequestBody.
 
         :param express_config: The express_config of this CreateWorkflowRequestBody.
         :type express_config: :class:`huaweicloudsdkdwr.v3.ExpressConfig`
@@ -191,7 +191,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def func_vpc(self):
-        """Gets the func_vpc of this CreateWorkflowRequestBody.
+        r"""Gets the func_vpc of this CreateWorkflowRequestBody.
 
         :return: The func_vpc of this CreateWorkflowRequestBody.
         :rtype: :class:`huaweicloudsdkdwr.v3.FuncVpc`
@@ -200,7 +200,7 @@ class CreateWorkflowRequestBody:
 
     @func_vpc.setter
     def func_vpc(self, func_vpc):
-        """Sets the func_vpc of this CreateWorkflowRequestBody.
+        r"""Sets the func_vpc of this CreateWorkflowRequestBody.
 
         :param func_vpc: The func_vpc of this CreateWorkflowRequestBody.
         :type func_vpc: :class:`huaweicloudsdkdwr.v3.FuncVpc`
@@ -209,7 +209,7 @@ class CreateWorkflowRequestBody:
 
     @property
     def agency(self):
-        """Gets the agency of this CreateWorkflowRequestBody.
+        r"""Gets the agency of this CreateWorkflowRequestBody.
 
         用戶传入用于创建工作流时使用的委托的委托名
 
@@ -220,7 +220,7 @@ class CreateWorkflowRequestBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this CreateWorkflowRequestBody.
+        r"""Sets the agency of this CreateWorkflowRequestBody.
 
         用戶传入用于创建工作流时使用的委托的委托名
 

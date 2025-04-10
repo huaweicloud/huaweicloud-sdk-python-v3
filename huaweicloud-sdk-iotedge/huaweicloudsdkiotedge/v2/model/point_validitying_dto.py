@@ -27,7 +27,7 @@ class PointValidityingDTO:
     }
 
     def __init__(self, min=None, max=None):
-        """PointValidityingDTO
+        r"""PointValidityingDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PointValidityingDTO:
 
     @property
     def min(self):
-        """Gets the min of this PointValidityingDTO.
+        r"""Gets the min of this PointValidityingDTO.
 
         点位上报值的最小值，小于该值则上报告警
 
@@ -59,7 +59,7 @@ class PointValidityingDTO:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this PointValidityingDTO.
+        r"""Sets the min of this PointValidityingDTO.
 
         点位上报值的最小值，小于该值则上报告警
 
@@ -70,7 +70,7 @@ class PointValidityingDTO:
 
     @property
     def max(self):
-        """Gets the max of this PointValidityingDTO.
+        r"""Gets the max of this PointValidityingDTO.
 
         点位上报值的最大值，大于该值则上报告警
 
@@ -81,7 +81,7 @@ class PointValidityingDTO:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this PointValidityingDTO.
+        r"""Sets the max of this PointValidityingDTO.
 
         点位上报值的最大值，大于该值则上报告警
 

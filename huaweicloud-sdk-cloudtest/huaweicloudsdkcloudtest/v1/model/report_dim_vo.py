@@ -29,7 +29,7 @@ class ReportDimVo:
     }
 
     def __init__(self, id=None, name=None, value=None):
-        """ReportDimVo
+        r"""ReportDimVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReportDimVo:
 
     @property
     def id(self):
-        """Gets the id of this ReportDimVo.
+        r"""Gets the id of this ReportDimVo.
 
         id
 
@@ -68,7 +68,7 @@ class ReportDimVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReportDimVo.
+        r"""Sets the id of this ReportDimVo.
 
         id
 
@@ -79,7 +79,7 @@ class ReportDimVo:
 
     @property
     def name(self):
-        """Gets the name of this ReportDimVo.
+        r"""Gets the name of this ReportDimVo.
 
         名称
 
@@ -90,7 +90,7 @@ class ReportDimVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReportDimVo.
+        r"""Sets the name of this ReportDimVo.
 
         名称
 
@@ -101,7 +101,7 @@ class ReportDimVo:
 
     @property
     def value(self):
-        """Gets the value of this ReportDimVo.
+        r"""Gets the value of this ReportDimVo.
 
         值
 
@@ -112,7 +112,7 @@ class ReportDimVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ReportDimVo.
+        r"""Sets the value of this ReportDimVo.
 
         值
 

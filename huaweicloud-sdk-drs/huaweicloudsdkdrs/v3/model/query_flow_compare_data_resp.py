@@ -29,7 +29,7 @@ class QueryFlowCompareDataResp:
     }
 
     def __init__(self, total_record=None, create_time=None, list=None):
-        """QueryFlowCompareDataResp
+        r"""QueryFlowCompareDataResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryFlowCompareDataResp:
 
     @property
     def total_record(self):
-        """Gets the total_record of this QueryFlowCompareDataResp.
+        r"""Gets the total_record of this QueryFlowCompareDataResp.
 
         任务总数
 
@@ -68,7 +68,7 @@ class QueryFlowCompareDataResp:
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this QueryFlowCompareDataResp.
+        r"""Sets the total_record of this QueryFlowCompareDataResp.
 
         任务总数
 
@@ -79,7 +79,7 @@ class QueryFlowCompareDataResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryFlowCompareDataResp.
+        r"""Gets the create_time of this QueryFlowCompareDataResp.
 
         数据生成时间
 
@@ -90,7 +90,7 @@ class QueryFlowCompareDataResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryFlowCompareDataResp.
+        r"""Sets the create_time of this QueryFlowCompareDataResp.
 
         数据生成时间
 
@@ -101,7 +101,7 @@ class QueryFlowCompareDataResp:
 
     @property
     def list(self):
-        """Gets the list of this QueryFlowCompareDataResp.
+        r"""Gets the list of this QueryFlowCompareDataResp.
 
         对比结果
 
@@ -112,7 +112,7 @@ class QueryFlowCompareDataResp:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this QueryFlowCompareDataResp.
+        r"""Sets the list of this QueryFlowCompareDataResp.
 
         对比结果
 

@@ -26,7 +26,7 @@ class ScanClientsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ScanClientsResponse
+        r"""ScanClientsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ScanClientsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ScanClientsResponse.
+        r"""Gets the body of this ScanClientsResponse.
 
         :return: The body of this ScanClientsResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class ScanClientsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ScanClientsResponse.
+        r"""Sets the body of this ScanClientsResponse.
 
         :param body: The body of this ScanClientsResponse.
         :type body: object

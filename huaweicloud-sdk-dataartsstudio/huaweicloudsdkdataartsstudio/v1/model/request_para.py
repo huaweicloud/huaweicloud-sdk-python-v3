@@ -39,7 +39,7 @@ class RequestPara:
     }
 
     def __init__(self, name=None, position=None, type=None, description=None, necessary=None, example_value=None, default_value=None, support_null=None):
-        """RequestPara
+        r"""RequestPara
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RequestPara:
 
     @property
     def name(self):
-        """Gets the name of this RequestPara.
+        r"""Gets the name of this RequestPara.
 
         参数名
 
@@ -103,7 +103,7 @@ class RequestPara:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RequestPara.
+        r"""Sets the name of this RequestPara.
 
         参数名
 
@@ -114,7 +114,7 @@ class RequestPara:
 
     @property
     def position(self):
-        """Gets the position of this RequestPara.
+        r"""Gets the position of this RequestPara.
 
         参数的位置
 
@@ -125,7 +125,7 @@ class RequestPara:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this RequestPara.
+        r"""Sets the position of this RequestPara.
 
         参数的位置
 
@@ -136,7 +136,7 @@ class RequestPara:
 
     @property
     def type(self):
-        """Gets the type of this RequestPara.
+        r"""Gets the type of this RequestPara.
 
         参数的类型
 
@@ -147,7 +147,7 @@ class RequestPara:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RequestPara.
+        r"""Sets the type of this RequestPara.
 
         参数的类型
 
@@ -158,7 +158,7 @@ class RequestPara:
 
     @property
     def description(self):
-        """Gets the description of this RequestPara.
+        r"""Gets the description of this RequestPara.
 
         参数的描述
 
@@ -169,7 +169,7 @@ class RequestPara:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RequestPara.
+        r"""Sets the description of this RequestPara.
 
         参数的描述
 
@@ -180,7 +180,7 @@ class RequestPara:
 
     @property
     def necessary(self):
-        """Gets the necessary of this RequestPara.
+        r"""Gets the necessary of this RequestPara.
 
         参数是否必填
 
@@ -191,7 +191,7 @@ class RequestPara:
 
     @necessary.setter
     def necessary(self, necessary):
-        """Sets the necessary of this RequestPara.
+        r"""Sets the necessary of this RequestPara.
 
         参数是否必填
 
@@ -202,7 +202,7 @@ class RequestPara:
 
     @property
     def example_value(self):
-        """Gets the example_value of this RequestPara.
+        r"""Gets the example_value of this RequestPara.
 
         实例值
 
@@ -213,7 +213,7 @@ class RequestPara:
 
     @example_value.setter
     def example_value(self, example_value):
-        """Sets the example_value of this RequestPara.
+        r"""Sets the example_value of this RequestPara.
 
         实例值
 
@@ -224,7 +224,7 @@ class RequestPara:
 
     @property
     def default_value(self):
-        """Gets the default_value of this RequestPara.
+        r"""Gets the default_value of this RequestPara.
 
         默认值
 
@@ -235,7 +235,7 @@ class RequestPara:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this RequestPara.
+        r"""Sets the default_value of this RequestPara.
 
         默认值
 
@@ -246,7 +246,7 @@ class RequestPara:
 
     @property
     def support_null(self):
-        """Gets the support_null of this RequestPara.
+        r"""Gets the support_null of this RequestPara.
 
         支持NULL值。
 
@@ -257,7 +257,7 @@ class RequestPara:
 
     @support_null.setter
     def support_null(self, support_null):
-        """Sets the support_null of this RequestPara.
+        r"""Sets the support_null of this RequestPara.
 
         支持NULL值。
 

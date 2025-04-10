@@ -24,7 +24,7 @@ class AddCceIntegrationProtectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddCceIntegrationProtectionResponse
+        r"""AddCceIntegrationProtectionResponse
 
         The model defined in huaweicloud sdk
 

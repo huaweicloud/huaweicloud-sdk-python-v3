@@ -25,7 +25,7 @@ class StartLogAutoBackupPolicyReq:
     }
 
     def __init__(self, period=None):
-        """StartLogAutoBackupPolicyReq
+        r"""StartLogAutoBackupPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartLogAutoBackupPolicyReq:
 
     @property
     def period(self):
-        """Gets the period of this StartLogAutoBackupPolicyReq.
+        r"""Gets the period of this StartLogAutoBackupPolicyReq.
 
         备份开始时间。格式：格林威治标准时间。
 
@@ -53,7 +53,7 @@ class StartLogAutoBackupPolicyReq:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this StartLogAutoBackupPolicyReq.
+        r"""Sets the period of this StartLogAutoBackupPolicyReq.
 
         备份开始时间。格式：格林威治标准时间。
 

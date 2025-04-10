@@ -25,7 +25,7 @@ class AclAccountRoleModifyBody:
     }
 
     def __init__(self, account_role=None):
-        """AclAccountRoleModifyBody
+        r"""AclAccountRoleModifyBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AclAccountRoleModifyBody:
 
     @property
     def account_role(self):
-        """Gets the account_role of this AclAccountRoleModifyBody.
+        r"""Gets the account_role of this AclAccountRoleModifyBody.
 
         账号权限
 
@@ -54,7 +54,7 @@ class AclAccountRoleModifyBody:
 
     @account_role.setter
     def account_role(self, account_role):
-        """Sets the account_role of this AclAccountRoleModifyBody.
+        r"""Sets the account_role of this AclAccountRoleModifyBody.
 
         账号权限
 

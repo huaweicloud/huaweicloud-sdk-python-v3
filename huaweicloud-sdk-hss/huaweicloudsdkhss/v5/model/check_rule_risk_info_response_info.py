@@ -47,7 +47,7 @@ class CheckRuleRiskInfoResponseInfo:
     }
 
     def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None, enable_fix=None, enable_click=None, rule_params=None):
-        """CheckRuleRiskInfoResponseInfo
+        r"""CheckRuleRiskInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def severity(self):
-        """Gets the severity of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the severity of this CheckRuleRiskInfoResponseInfo.
 
         风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -131,7 +131,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the severity of this CheckRuleRiskInfoResponseInfo.
 
         风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -142,7 +142,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def check_name(self):
-        """Gets the check_name of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the check_name of this CheckRuleRiskInfoResponseInfo.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -153,7 +153,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the check_name of this CheckRuleRiskInfoResponseInfo.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -164,7 +164,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def check_type(self):
-        """Gets the check_type of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the check_type of this CheckRuleRiskInfoResponseInfo.
 
         配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
 
@@ -175,7 +175,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the check_type of this CheckRuleRiskInfoResponseInfo.
 
         配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
 
@@ -186,7 +186,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def standard(self):
-        """Gets the standard of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the standard of this CheckRuleRiskInfoResponseInfo.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -197,7 +197,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the standard of this CheckRuleRiskInfoResponseInfo.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -208,7 +208,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def check_rule_name(self):
-        """Gets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
 
         检查项（检查规则）名称
 
@@ -219,7 +219,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @check_rule_name.setter
     def check_rule_name(self, check_rule_name):
-        """Sets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
 
         检查项（检查规则）名称
 
@@ -230,7 +230,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def check_rule_id(self):
-        """Gets the check_rule_id of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the check_rule_id of this CheckRuleRiskInfoResponseInfo.
 
         检查项ID
 
@@ -241,7 +241,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @check_rule_id.setter
     def check_rule_id(self, check_rule_id):
-        """Sets the check_rule_id of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the check_rule_id of this CheckRuleRiskInfoResponseInfo.
 
         检查项ID
 
@@ -252,7 +252,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the host_num of this CheckRuleRiskInfoResponseInfo.
 
         受影响的服务器的数量，进行了当前基线检测的服务器数量
 
@@ -263,7 +263,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the host_num of this CheckRuleRiskInfoResponseInfo.
 
         受影响的服务器的数量，进行了当前基线检测的服务器数量
 
@@ -274,7 +274,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def scan_result(self):
-        """Gets the scan_result of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the scan_result of this CheckRuleRiskInfoResponseInfo.
 
         检测结果，包含如下：   - pass   - failed
 
@@ -285,7 +285,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @scan_result.setter
     def scan_result(self, scan_result):
-        """Sets the scan_result of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the scan_result of this CheckRuleRiskInfoResponseInfo.
 
         检测结果，包含如下：   - pass   - failed
 
@@ -296,7 +296,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def status(self):
-        """Gets the status of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the status of this CheckRuleRiskInfoResponseInfo.
 
         状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
 
@@ -307,7 +307,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the status of this CheckRuleRiskInfoResponseInfo.
 
         状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
 
@@ -318,7 +318,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def enable_fix(self):
-        """Gets the enable_fix of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the enable_fix of this CheckRuleRiskInfoResponseInfo.
 
         是否支持一键修复,1:支持一键修复,0:不支持
 
@@ -329,7 +329,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @enable_fix.setter
     def enable_fix(self, enable_fix):
-        """Sets the enable_fix of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the enable_fix of this CheckRuleRiskInfoResponseInfo.
 
         是否支持一键修复,1:支持一键修复,0:不支持
 
@@ -340,7 +340,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def enable_click(self):
-        """Gets the enable_click of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
         该检查项的修复&忽略&验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
 
@@ -351,7 +351,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @enable_click.setter
     def enable_click(self, enable_click):
-        """Sets the enable_click of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
         该检查项的修复&忽略&验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
 
@@ -362,7 +362,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @property
     def rule_params(self):
-        """Gets the rule_params of this CheckRuleRiskInfoResponseInfo.
+        r"""Gets the rule_params of this CheckRuleRiskInfoResponseInfo.
 
         支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
 
@@ -373,7 +373,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     @rule_params.setter
     def rule_params(self, rule_params):
-        """Sets the rule_params of this CheckRuleRiskInfoResponseInfo.
+        r"""Sets the rule_params of this CheckRuleRiskInfoResponseInfo.
 
         支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
 

@@ -25,7 +25,7 @@ class ChangeSecurityGroupRequestBody:
     }
 
     def __init__(self, security_groups=None):
-        """ChangeSecurityGroupRequestBody
+        r"""ChangeSecurityGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeSecurityGroupRequestBody:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ChangeSecurityGroupRequestBody.
+        r"""Gets the security_groups of this ChangeSecurityGroupRequestBody.
 
         安全组ID数组
 
@@ -53,7 +53,7 @@ class ChangeSecurityGroupRequestBody:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ChangeSecurityGroupRequestBody.
+        r"""Sets the security_groups of this ChangeSecurityGroupRequestBody.
 
         安全组ID数组
 

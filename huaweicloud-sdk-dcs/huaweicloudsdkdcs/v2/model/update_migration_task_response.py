@@ -26,7 +26,7 @@ class UpdateMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateMigrationTaskResponse
+        r"""UpdateMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMigrationTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateMigrationTaskResponse.
+        r"""Gets the body of this UpdateMigrationTaskResponse.
 
         :return: The body of this UpdateMigrationTaskResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateMigrationTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMigrationTaskResponse.
+        r"""Sets the body of this UpdateMigrationTaskResponse.
 
         :param body: The body of this UpdateMigrationTaskResponse.
         :type body: str

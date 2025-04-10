@@ -69,7 +69,7 @@ class TaskByServerSources:
     }
 
     def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None, log_bucket=None, log_upload_time=None, log_share_url=None):
-        """TaskByServerSources
+        r"""TaskByServerSources
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class TaskByServerSources:
 
     @property
     def id(self):
-        """Gets the id of this TaskByServerSources.
+        r"""Gets the id of this TaskByServerSources.
 
         任务ID
 
@@ -208,7 +208,7 @@ class TaskByServerSources:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskByServerSources.
+        r"""Sets the id of this TaskByServerSources.
 
         任务ID
 
@@ -219,7 +219,7 @@ class TaskByServerSources:
 
     @property
     def name(self):
-        """Gets the name of this TaskByServerSources.
+        r"""Gets the name of this TaskByServerSources.
 
         任务名称
 
@@ -230,7 +230,7 @@ class TaskByServerSources:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskByServerSources.
+        r"""Sets the name of this TaskByServerSources.
 
         任务名称
 
@@ -241,7 +241,7 @@ class TaskByServerSources:
 
     @property
     def type(self):
-        """Gets the type of this TaskByServerSources.
+        r"""Gets the type of this TaskByServerSources.
 
         任务类型
 
@@ -252,7 +252,7 @@ class TaskByServerSources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskByServerSources.
+        r"""Sets the type of this TaskByServerSources.
 
         任务类型
 
@@ -263,7 +263,7 @@ class TaskByServerSources:
 
     @property
     def state(self):
-        """Gets the state of this TaskByServerSources.
+        r"""Gets the state of this TaskByServerSources.
 
         任务状态
 
@@ -274,7 +274,7 @@ class TaskByServerSources:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TaskByServerSources.
+        r"""Sets the state of this TaskByServerSources.
 
         任务状态
 
@@ -285,7 +285,7 @@ class TaskByServerSources:
 
     @property
     def estimate_complete_time(self):
-        """Gets the estimate_complete_time of this TaskByServerSources.
+        r"""Gets the estimate_complete_time of this TaskByServerSources.
 
         预估结束时间
 
@@ -296,7 +296,7 @@ class TaskByServerSources:
 
     @estimate_complete_time.setter
     def estimate_complete_time(self, estimate_complete_time):
-        """Sets the estimate_complete_time of this TaskByServerSources.
+        r"""Sets the estimate_complete_time of this TaskByServerSources.
 
         预估结束时间
 
@@ -307,7 +307,7 @@ class TaskByServerSources:
 
     @property
     def start_date(self):
-        """Gets the start_date of this TaskByServerSources.
+        r"""Gets the start_date of this TaskByServerSources.
 
         开始时间
 
@@ -318,7 +318,7 @@ class TaskByServerSources:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this TaskByServerSources.
+        r"""Sets the start_date of this TaskByServerSources.
 
         开始时间
 
@@ -329,7 +329,7 @@ class TaskByServerSources:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this TaskByServerSources.
+        r"""Gets the speed_limit of this TaskByServerSources.
 
         限速
 
@@ -340,7 +340,7 @@ class TaskByServerSources:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this TaskByServerSources.
+        r"""Sets the speed_limit of this TaskByServerSources.
 
         限速
 
@@ -351,7 +351,7 @@ class TaskByServerSources:
 
     @property
     def migrate_speed(self):
-        """Gets the migrate_speed of this TaskByServerSources.
+        r"""Gets the migrate_speed of this TaskByServerSources.
 
         迁移速率
 
@@ -362,7 +362,7 @@ class TaskByServerSources:
 
     @migrate_speed.setter
     def migrate_speed(self, migrate_speed):
-        """Sets the migrate_speed of this TaskByServerSources.
+        r"""Sets the migrate_speed of this TaskByServerSources.
 
         迁移速率
 
@@ -373,7 +373,7 @@ class TaskByServerSources:
 
     @property
     def compress_rate(self):
-        """Gets the compress_rate of this TaskByServerSources.
+        r"""Gets the compress_rate of this TaskByServerSources.
 
         压缩率
 
@@ -384,7 +384,7 @@ class TaskByServerSources:
 
     @compress_rate.setter
     def compress_rate(self, compress_rate):
-        """Sets the compress_rate of this TaskByServerSources.
+        r"""Sets the compress_rate of this TaskByServerSources.
 
         压缩率
 
@@ -395,7 +395,7 @@ class TaskByServerSources:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this TaskByServerSources.
+        r"""Gets the start_target_server of this TaskByServerSources.
 
         是否启动虚拟机
 
@@ -406,7 +406,7 @@ class TaskByServerSources:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this TaskByServerSources.
+        r"""Sets the start_target_server of this TaskByServerSources.
 
         是否启动虚拟机
 
@@ -417,7 +417,7 @@ class TaskByServerSources:
 
     @property
     def vm_template_id(self):
-        """Gets the vm_template_id of this TaskByServerSources.
+        r"""Gets the vm_template_id of this TaskByServerSources.
 
         虚拟机模板ID
 
@@ -428,7 +428,7 @@ class TaskByServerSources:
 
     @vm_template_id.setter
     def vm_template_id(self, vm_template_id):
-        """Sets the vm_template_id of this TaskByServerSources.
+        r"""Sets the vm_template_id of this TaskByServerSources.
 
         虚拟机模板ID
 
@@ -439,7 +439,7 @@ class TaskByServerSources:
 
     @property
     def region_id(self):
-        """Gets the region_id of this TaskByServerSources.
+        r"""Gets the region_id of this TaskByServerSources.
 
         region_id
 
@@ -450,7 +450,7 @@ class TaskByServerSources:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this TaskByServerSources.
+        r"""Sets the region_id of this TaskByServerSources.
 
         region_id
 
@@ -461,7 +461,7 @@ class TaskByServerSources:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TaskByServerSources.
+        r"""Gets the project_name of this TaskByServerSources.
 
         项目名称
 
@@ -472,7 +472,7 @@ class TaskByServerSources:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TaskByServerSources.
+        r"""Sets the project_name of this TaskByServerSources.
 
         项目名称
 
@@ -483,7 +483,7 @@ class TaskByServerSources:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TaskByServerSources.
+        r"""Gets the project_id of this TaskByServerSources.
 
         项目ID
 
@@ -494,7 +494,7 @@ class TaskByServerSources:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TaskByServerSources.
+        r"""Sets the project_id of this TaskByServerSources.
 
         项目ID
 
@@ -505,7 +505,7 @@ class TaskByServerSources:
 
     @property
     def target_server(self):
-        """Gets the target_server of this TaskByServerSources.
+        r"""Gets the target_server of this TaskByServerSources.
 
         :return: The target_server of this TaskByServerSources.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServerById`
@@ -514,7 +514,7 @@ class TaskByServerSources:
 
     @target_server.setter
     def target_server(self, target_server):
-        """Sets the target_server of this TaskByServerSources.
+        r"""Sets the target_server of this TaskByServerSources.
 
         :param target_server: The target_server of this TaskByServerSources.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
@@ -523,7 +523,7 @@ class TaskByServerSources:
 
     @property
     def log_collect_status(self):
-        """Gets the log_collect_status of this TaskByServerSources.
+        r"""Gets the log_collect_status of this TaskByServerSources.
 
         日志收集状态
 
@@ -534,7 +534,7 @@ class TaskByServerSources:
 
     @log_collect_status.setter
     def log_collect_status(self, log_collect_status):
-        """Sets the log_collect_status of this TaskByServerSources.
+        r"""Sets the log_collect_status of this TaskByServerSources.
 
         日志收集状态
 
@@ -545,7 +545,7 @@ class TaskByServerSources:
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this TaskByServerSources.
+        r"""Gets the exist_server of this TaskByServerSources.
 
         是否使用已有虚拟机
 
@@ -556,7 +556,7 @@ class TaskByServerSources:
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this TaskByServerSources.
+        r"""Sets the exist_server of this TaskByServerSources.
 
         是否使用已有虚拟机
 
@@ -567,7 +567,7 @@ class TaskByServerSources:
 
     @property
     def use_public_ip(self):
-        """Gets the use_public_ip of this TaskByServerSources.
+        r"""Gets the use_public_ip of this TaskByServerSources.
 
         是否使用公网IP
 
@@ -578,7 +578,7 @@ class TaskByServerSources:
 
     @use_public_ip.setter
     def use_public_ip(self, use_public_ip):
-        """Sets the use_public_ip of this TaskByServerSources.
+        r"""Sets the use_public_ip of this TaskByServerSources.
 
         是否使用公网IP
 
@@ -589,7 +589,7 @@ class TaskByServerSources:
 
     @property
     def clone_server(self):
-        """Gets the clone_server of this TaskByServerSources.
+        r"""Gets the clone_server of this TaskByServerSources.
 
         :return: The clone_server of this TaskByServerSources.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -598,7 +598,7 @@ class TaskByServerSources:
 
     @clone_server.setter
     def clone_server(self, clone_server):
-        """Sets the clone_server of this TaskByServerSources.
+        r"""Sets the clone_server of this TaskByServerSources.
 
         :param clone_server: The clone_server of this TaskByServerSources.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -607,7 +607,7 @@ class TaskByServerSources:
 
     @property
     def remain_seconds(self):
-        """Gets the remain_seconds of this TaskByServerSources.
+        r"""Gets the remain_seconds of this TaskByServerSources.
 
         已迁移时长
 
@@ -618,7 +618,7 @@ class TaskByServerSources:
 
     @remain_seconds.setter
     def remain_seconds(self, remain_seconds):
-        """Sets the remain_seconds of this TaskByServerSources.
+        r"""Sets the remain_seconds of this TaskByServerSources.
 
         已迁移时长
 
@@ -629,7 +629,7 @@ class TaskByServerSources:
 
     @property
     def log_bucket(self):
-        """Gets the log_bucket of this TaskByServerSources.
+        r"""Gets the log_bucket of this TaskByServerSources.
 
         上传日志指定桶名称
 
@@ -640,7 +640,7 @@ class TaskByServerSources:
 
     @log_bucket.setter
     def log_bucket(self, log_bucket):
-        """Sets the log_bucket of this TaskByServerSources.
+        r"""Sets the log_bucket of this TaskByServerSources.
 
         上传日志指定桶名称
 
@@ -651,7 +651,7 @@ class TaskByServerSources:
 
     @property
     def log_upload_time(self):
-        """Gets the log_upload_time of this TaskByServerSources.
+        r"""Gets the log_upload_time of this TaskByServerSources.
 
         日志上传时间
 
@@ -662,7 +662,7 @@ class TaskByServerSources:
 
     @log_upload_time.setter
     def log_upload_time(self, log_upload_time):
-        """Sets the log_upload_time of this TaskByServerSources.
+        r"""Sets the log_upload_time of this TaskByServerSources.
 
         日志上传时间
 
@@ -673,7 +673,7 @@ class TaskByServerSources:
 
     @property
     def log_share_url(self):
-        """Gets the log_share_url of this TaskByServerSources.
+        r"""Gets the log_share_url of this TaskByServerSources.
 
         分享链接url
 
@@ -684,7 +684,7 @@ class TaskByServerSources:
 
     @log_share_url.setter
     def log_share_url(self, log_share_url):
-        """Sets the log_share_url of this TaskByServerSources.
+        r"""Sets the log_share_url of this TaskByServerSources.
 
         分享链接url
 

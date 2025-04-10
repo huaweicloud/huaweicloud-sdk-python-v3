@@ -31,7 +31,7 @@ class CreateRedislogRequest:
     }
 
     def __init__(self, instance_id=None, query_time=None, log_type=None, replication_id=None):
-        """CreateRedislogRequest
+        r"""CreateRedislogRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateRedislogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRedislogRequest.
+        r"""Gets the instance_id of this CreateRedislogRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class CreateRedislogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRedislogRequest.
+        r"""Sets the instance_id of this CreateRedislogRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class CreateRedislogRequest:
 
     @property
     def query_time(self):
-        """Gets the query_time of this CreateRedislogRequest.
+        r"""Gets the query_time of this CreateRedislogRequest.
 
         日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。当前支持0，1，3，7。
 
@@ -95,7 +95,7 @@ class CreateRedislogRequest:
 
     @query_time.setter
     def query_time(self, query_time):
-        """Sets the query_time of this CreateRedislogRequest.
+        r"""Sets the query_time of this CreateRedislogRequest.
 
         日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。当前支持0，1，3，7。
 
@@ -106,7 +106,7 @@ class CreateRedislogRequest:
 
     @property
     def log_type(self):
-        """Gets the log_type of this CreateRedislogRequest.
+        r"""Gets the log_type of this CreateRedislogRequest.
 
         返回日志的类型，当前仅支持Redis运行日志，类型为run
 
@@ -117,7 +117,7 @@ class CreateRedislogRequest:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this CreateRedislogRequest.
+        r"""Sets the log_type of this CreateRedislogRequest.
 
         返回日志的类型，当前仅支持Redis运行日志，类型为run
 
@@ -128,7 +128,7 @@ class CreateRedislogRequest:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this CreateRedislogRequest.
+        r"""Gets the replication_id of this CreateRedislogRequest.
 
         副本ID，可以从分片与副本中查询对应节点的副本ID
 
@@ -139,7 +139,7 @@ class CreateRedislogRequest:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this CreateRedislogRequest.
+        r"""Sets the replication_id of this CreateRedislogRequest.
 
         副本ID，可以从分片与副本中查询对应节点的副本ID
 

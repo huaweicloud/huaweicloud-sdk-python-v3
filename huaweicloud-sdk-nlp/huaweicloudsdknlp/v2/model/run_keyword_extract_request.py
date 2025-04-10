@@ -25,7 +25,7 @@ class RunKeywordExtractRequest:
     }
 
     def __init__(self, body=None):
-        """RunKeywordExtractRequest
+        r"""RunKeywordExtractRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunKeywordExtractRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunKeywordExtractRequest.
+        r"""Gets the body of this RunKeywordExtractRequest.
 
         :return: The body of this RunKeywordExtractRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`
@@ -52,7 +52,7 @@ class RunKeywordExtractRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunKeywordExtractRequest.
+        r"""Sets the body of this RunKeywordExtractRequest.
 
         :param body: The body of this RunKeywordExtractRequest.
         :type body: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`

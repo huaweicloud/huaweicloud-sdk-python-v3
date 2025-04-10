@@ -91,7 +91,7 @@ class NoteDto:
     }
 
     def __init__(self, id=None, type=None, body=None, attachment=None, author=None, created_at=None, updated_at=None, system=None, noteable_id=None, noteable_type=None, commit_id=None, resolvable=None, is_reply=None, resolved_by=None, noteable_iid=None, discussion_id=None, project=None, diff_file=None, diff=None, archived=None, review_categories=None, review_categories_cn=None, review_categories_en=None, review_modules=None, severity=None, severity_cn=None, severity_en=None, file_path=None, line=None, assignee=None, proposer=None, position=None, resolved=None, is_outdated=None):
-        """NoteDto
+        r"""NoteDto
 
         The model defined in huaweicloud sdk
 
@@ -274,7 +274,7 @@ class NoteDto:
 
     @property
     def id(self):
-        """Gets the id of this NoteDto.
+        r"""Gets the id of this NoteDto.
 
         note id
 
@@ -285,7 +285,7 @@ class NoteDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NoteDto.
+        r"""Sets the id of this NoteDto.
 
         note id
 
@@ -296,7 +296,7 @@ class NoteDto:
 
     @property
     def type(self):
-        """Gets the type of this NoteDto.
+        r"""Gets the type of this NoteDto.
 
         note类型
 
@@ -307,7 +307,7 @@ class NoteDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NoteDto.
+        r"""Sets the type of this NoteDto.
 
         note类型
 
@@ -318,7 +318,7 @@ class NoteDto:
 
     @property
     def body(self):
-        """Gets the body of this NoteDto.
+        r"""Gets the body of this NoteDto.
 
         检视意见内容
 
@@ -329,7 +329,7 @@ class NoteDto:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NoteDto.
+        r"""Sets the body of this NoteDto.
 
         检视意见内容
 
@@ -340,7 +340,7 @@ class NoteDto:
 
     @property
     def attachment(self):
-        """Gets the attachment of this NoteDto.
+        r"""Gets the attachment of this NoteDto.
 
         附件
 
@@ -351,7 +351,7 @@ class NoteDto:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this NoteDto.
+        r"""Sets the attachment of this NoteDto.
 
         附件
 
@@ -362,7 +362,7 @@ class NoteDto:
 
     @property
     def author(self):
-        """Gets the author of this NoteDto.
+        r"""Gets the author of this NoteDto.
 
         :return: The author of this NoteDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -371,7 +371,7 @@ class NoteDto:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this NoteDto.
+        r"""Sets the author of this NoteDto.
 
         :param author: The author of this NoteDto.
         :type author: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -380,7 +380,7 @@ class NoteDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NoteDto.
+        r"""Gets the created_at of this NoteDto.
 
         创建时间
 
@@ -391,7 +391,7 @@ class NoteDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NoteDto.
+        r"""Sets the created_at of this NoteDto.
 
         创建时间
 
@@ -402,7 +402,7 @@ class NoteDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NoteDto.
+        r"""Gets the updated_at of this NoteDto.
 
         更新时间
 
@@ -413,7 +413,7 @@ class NoteDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NoteDto.
+        r"""Sets the updated_at of this NoteDto.
 
         更新时间
 
@@ -424,7 +424,7 @@ class NoteDto:
 
     @property
     def system(self):
-        """Gets the system of this NoteDto.
+        r"""Gets the system of this NoteDto.
 
         是否是系统生成的日志
 
@@ -435,7 +435,7 @@ class NoteDto:
 
     @system.setter
     def system(self, system):
-        """Sets the system of this NoteDto.
+        r"""Sets the system of this NoteDto.
 
         是否是系统生成的日志
 
@@ -446,7 +446,7 @@ class NoteDto:
 
     @property
     def noteable_id(self):
-        """Gets the noteable_id of this NoteDto.
+        r"""Gets the noteable_id of this NoteDto.
 
         目标id
 
@@ -457,7 +457,7 @@ class NoteDto:
 
     @noteable_id.setter
     def noteable_id(self, noteable_id):
-        """Sets the noteable_id of this NoteDto.
+        r"""Sets the noteable_id of this NoteDto.
 
         目标id
 
@@ -468,7 +468,7 @@ class NoteDto:
 
     @property
     def noteable_type(self):
-        """Gets the noteable_type of this NoteDto.
+        r"""Gets the noteable_type of this NoteDto.
 
         目标类型
 
@@ -479,7 +479,7 @@ class NoteDto:
 
     @noteable_type.setter
     def noteable_type(self, noteable_type):
-        """Sets the noteable_type of this NoteDto.
+        r"""Sets the noteable_type of this NoteDto.
 
         目标类型
 
@@ -490,7 +490,7 @@ class NoteDto:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this NoteDto.
+        r"""Gets the commit_id of this NoteDto.
 
         关联的提交id
 
@@ -501,7 +501,7 @@ class NoteDto:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this NoteDto.
+        r"""Sets the commit_id of this NoteDto.
 
         关联的提交id
 
@@ -512,7 +512,7 @@ class NoteDto:
 
     @property
     def resolvable(self):
-        """Gets the resolvable of this NoteDto.
+        r"""Gets the resolvable of this NoteDto.
 
         是否可解决
 
@@ -523,7 +523,7 @@ class NoteDto:
 
     @resolvable.setter
     def resolvable(self, resolvable):
-        """Sets the resolvable of this NoteDto.
+        r"""Sets the resolvable of this NoteDto.
 
         是否可解决
 
@@ -534,7 +534,7 @@ class NoteDto:
 
     @property
     def is_reply(self):
-        """Gets the is_reply of this NoteDto.
+        r"""Gets the is_reply of this NoteDto.
 
         是否是回复
 
@@ -545,7 +545,7 @@ class NoteDto:
 
     @is_reply.setter
     def is_reply(self, is_reply):
-        """Sets the is_reply of this NoteDto.
+        r"""Sets the is_reply of this NoteDto.
 
         是否是回复
 
@@ -556,7 +556,7 @@ class NoteDto:
 
     @property
     def resolved_by(self):
-        """Gets the resolved_by of this NoteDto.
+        r"""Gets the resolved_by of this NoteDto.
 
         :return: The resolved_by of this NoteDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -565,7 +565,7 @@ class NoteDto:
 
     @resolved_by.setter
     def resolved_by(self, resolved_by):
-        """Sets the resolved_by of this NoteDto.
+        r"""Sets the resolved_by of this NoteDto.
 
         :param resolved_by: The resolved_by of this NoteDto.
         :type resolved_by: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -574,7 +574,7 @@ class NoteDto:
 
     @property
     def noteable_iid(self):
-        """Gets the noteable_iid of this NoteDto.
+        r"""Gets the noteable_iid of this NoteDto.
 
         目标iid
 
@@ -585,7 +585,7 @@ class NoteDto:
 
     @noteable_iid.setter
     def noteable_iid(self, noteable_iid):
-        """Sets the noteable_iid of this NoteDto.
+        r"""Sets the noteable_iid of this NoteDto.
 
         目标iid
 
@@ -596,7 +596,7 @@ class NoteDto:
 
     @property
     def discussion_id(self):
-        """Gets the discussion_id of this NoteDto.
+        r"""Gets the discussion_id of this NoteDto.
 
         讨论id
 
@@ -607,7 +607,7 @@ class NoteDto:
 
     @discussion_id.setter
     def discussion_id(self, discussion_id):
-        """Sets the discussion_id of this NoteDto.
+        r"""Sets the discussion_id of this NoteDto.
 
         讨论id
 
@@ -618,7 +618,7 @@ class NoteDto:
 
     @property
     def project(self):
-        """Gets the project of this NoteDto.
+        r"""Gets the project of this NoteDto.
 
         所属项目
 
@@ -629,7 +629,7 @@ class NoteDto:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this NoteDto.
+        r"""Sets the project of this NoteDto.
 
         所属项目
 
@@ -640,7 +640,7 @@ class NoteDto:
 
     @property
     def diff_file(self):
-        """Gets the diff_file of this NoteDto.
+        r"""Gets the diff_file of this NoteDto.
 
         变更文件
 
@@ -651,7 +651,7 @@ class NoteDto:
 
     @diff_file.setter
     def diff_file(self, diff_file):
-        """Sets the diff_file of this NoteDto.
+        r"""Sets the diff_file of this NoteDto.
 
         变更文件
 
@@ -662,7 +662,7 @@ class NoteDto:
 
     @property
     def diff(self):
-        """Gets the diff of this NoteDto.
+        r"""Gets the diff of this NoteDto.
 
         变更内容
 
@@ -673,7 +673,7 @@ class NoteDto:
 
     @diff.setter
     def diff(self, diff):
-        """Sets the diff of this NoteDto.
+        r"""Sets the diff of this NoteDto.
 
         变更内容
 
@@ -684,7 +684,7 @@ class NoteDto:
 
     @property
     def archived(self):
-        """Gets the archived of this NoteDto.
+        r"""Gets the archived of this NoteDto.
 
         是否存档
 
@@ -695,7 +695,7 @@ class NoteDto:
 
     @archived.setter
     def archived(self, archived):
-        """Sets the archived of this NoteDto.
+        r"""Sets the archived of this NoteDto.
 
         是否存档
 
@@ -706,7 +706,7 @@ class NoteDto:
 
     @property
     def review_categories(self):
-        """Gets the review_categories of this NoteDto.
+        r"""Gets the review_categories of this NoteDto.
 
         检视意见分类
 
@@ -717,7 +717,7 @@ class NoteDto:
 
     @review_categories.setter
     def review_categories(self, review_categories):
-        """Sets the review_categories of this NoteDto.
+        r"""Sets the review_categories of this NoteDto.
 
         检视意见分类
 
@@ -728,7 +728,7 @@ class NoteDto:
 
     @property
     def review_categories_cn(self):
-        """Gets the review_categories_cn of this NoteDto.
+        r"""Gets the review_categories_cn of this NoteDto.
 
         检视意见分类中文名
 
@@ -739,7 +739,7 @@ class NoteDto:
 
     @review_categories_cn.setter
     def review_categories_cn(self, review_categories_cn):
-        """Sets the review_categories_cn of this NoteDto.
+        r"""Sets the review_categories_cn of this NoteDto.
 
         检视意见分类中文名
 
@@ -750,7 +750,7 @@ class NoteDto:
 
     @property
     def review_categories_en(self):
-        """Gets the review_categories_en of this NoteDto.
+        r"""Gets the review_categories_en of this NoteDto.
 
         检视意见分类英文名
 
@@ -761,7 +761,7 @@ class NoteDto:
 
     @review_categories_en.setter
     def review_categories_en(self, review_categories_en):
-        """Sets the review_categories_en of this NoteDto.
+        r"""Sets the review_categories_en of this NoteDto.
 
         检视意见分类英文名
 
@@ -772,7 +772,7 @@ class NoteDto:
 
     @property
     def review_modules(self):
-        """Gets the review_modules of this NoteDto.
+        r"""Gets the review_modules of this NoteDto.
 
         检视意见模块
 
@@ -783,7 +783,7 @@ class NoteDto:
 
     @review_modules.setter
     def review_modules(self, review_modules):
-        """Sets the review_modules of this NoteDto.
+        r"""Sets the review_modules of this NoteDto.
 
         检视意见模块
 
@@ -794,7 +794,7 @@ class NoteDto:
 
     @property
     def severity(self):
-        """Gets the severity of this NoteDto.
+        r"""Gets the severity of this NoteDto.
 
         严重程度
 
@@ -805,7 +805,7 @@ class NoteDto:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this NoteDto.
+        r"""Sets the severity of this NoteDto.
 
         严重程度
 
@@ -816,7 +816,7 @@ class NoteDto:
 
     @property
     def severity_cn(self):
-        """Gets the severity_cn of this NoteDto.
+        r"""Gets the severity_cn of this NoteDto.
 
         严重程度中文名
 
@@ -827,7 +827,7 @@ class NoteDto:
 
     @severity_cn.setter
     def severity_cn(self, severity_cn):
-        """Sets the severity_cn of this NoteDto.
+        r"""Sets the severity_cn of this NoteDto.
 
         严重程度中文名
 
@@ -838,7 +838,7 @@ class NoteDto:
 
     @property
     def severity_en(self):
-        """Gets the severity_en of this NoteDto.
+        r"""Gets the severity_en of this NoteDto.
 
         严重程度英文名
 
@@ -849,7 +849,7 @@ class NoteDto:
 
     @severity_en.setter
     def severity_en(self, severity_en):
-        """Sets the severity_en of this NoteDto.
+        r"""Sets the severity_en of this NoteDto.
 
         严重程度英文名
 
@@ -860,7 +860,7 @@ class NoteDto:
 
     @property
     def file_path(self):
-        """Gets the file_path of this NoteDto.
+        r"""Gets the file_path of this NoteDto.
 
         文件路径
 
@@ -871,7 +871,7 @@ class NoteDto:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this NoteDto.
+        r"""Sets the file_path of this NoteDto.
 
         文件路径
 
@@ -882,7 +882,7 @@ class NoteDto:
 
     @property
     def line(self):
-        """Gets the line of this NoteDto.
+        r"""Gets the line of this NoteDto.
 
         行号
 
@@ -893,7 +893,7 @@ class NoteDto:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this NoteDto.
+        r"""Sets the line of this NoteDto.
 
         行号
 
@@ -904,7 +904,7 @@ class NoteDto:
 
     @property
     def assignee(self):
-        """Gets the assignee of this NoteDto.
+        r"""Gets the assignee of this NoteDto.
 
         :return: The assignee of this NoteDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -913,7 +913,7 @@ class NoteDto:
 
     @assignee.setter
     def assignee(self, assignee):
-        """Sets the assignee of this NoteDto.
+        r"""Sets the assignee of this NoteDto.
 
         :param assignee: The assignee of this NoteDto.
         :type assignee: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -922,7 +922,7 @@ class NoteDto:
 
     @property
     def proposer(self):
-        """Gets the proposer of this NoteDto.
+        r"""Gets the proposer of this NoteDto.
 
         :return: The proposer of this NoteDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -931,7 +931,7 @@ class NoteDto:
 
     @proposer.setter
     def proposer(self, proposer):
-        """Sets the proposer of this NoteDto.
+        r"""Sets the proposer of this NoteDto.
 
         :param proposer: The proposer of this NoteDto.
         :type proposer: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -940,7 +940,7 @@ class NoteDto:
 
     @property
     def position(self):
-        """Gets the position of this NoteDto.
+        r"""Gets the position of this NoteDto.
 
         :return: The position of this NoteDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PositionDto`
@@ -949,7 +949,7 @@ class NoteDto:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this NoteDto.
+        r"""Sets the position of this NoteDto.
 
         :param position: The position of this NoteDto.
         :type position: :class:`huaweicloudsdkcodehub.v3.PositionDto`
@@ -958,7 +958,7 @@ class NoteDto:
 
     @property
     def resolved(self):
-        """Gets the resolved of this NoteDto.
+        r"""Gets the resolved of this NoteDto.
 
         是否解决
 
@@ -969,7 +969,7 @@ class NoteDto:
 
     @resolved.setter
     def resolved(self, resolved):
-        """Sets the resolved of this NoteDto.
+        r"""Sets the resolved of this NoteDto.
 
         是否解决
 
@@ -980,7 +980,7 @@ class NoteDto:
 
     @property
     def is_outdated(self):
-        """Gets the is_outdated of this NoteDto.
+        r"""Gets the is_outdated of this NoteDto.
 
         是否过时
 
@@ -991,7 +991,7 @@ class NoteDto:
 
     @is_outdated.setter
     def is_outdated(self, is_outdated):
-        """Sets the is_outdated of this NoteDto.
+        r"""Sets the is_outdated of this NoteDto.
 
         是否过时
 

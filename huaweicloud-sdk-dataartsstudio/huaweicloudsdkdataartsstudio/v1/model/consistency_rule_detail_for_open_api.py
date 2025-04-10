@@ -63,7 +63,7 @@ class ConsistencyRuleDetailForOpenApi:
     }
 
     def __init__(self, id=None, sub_rule_name=None, type=None, template_id=None, connection=None, connection_type=None, databases=None, sql=None, tables=None, reference_tables=None, columns=None, reference_columns=None, dimension=None, queue=None, regular_expression=None, template_arguments=None, weight=None, calculation_range=None, calculation_range_sql=None, alarm_condition=None):
-        """ConsistencyRuleDetailForOpenApi
+        r"""ConsistencyRuleDetailForOpenApi
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def id(self):
-        """Gets the id of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the id of this ConsistencyRuleDetailForOpenApi.
 
         子规则ID
 
@@ -187,7 +187,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the id of this ConsistencyRuleDetailForOpenApi.
 
         子规则ID
 
@@ -198,7 +198,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def sub_rule_name(self):
-        """Gets the sub_rule_name of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the sub_rule_name of this ConsistencyRuleDetailForOpenApi.
 
         子规则名称
 
@@ -209,7 +209,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @sub_rule_name.setter
     def sub_rule_name(self, sub_rule_name):
-        """Sets the sub_rule_name of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the sub_rule_name of this ConsistencyRuleDetailForOpenApi.
 
         子规则名称
 
@@ -220,7 +220,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def type(self):
-        """Gets the type of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the type of this ConsistencyRuleDetailForOpenApi.
 
         SingleDatabase:库级规则，SingleTable:表级规则,SingleColumn:字段级规则,CrossColumn:跨字段规则,Customize:自定义规则
 
@@ -231,7 +231,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the type of this ConsistencyRuleDetailForOpenApi.
 
         SingleDatabase:库级规则，SingleTable:表级规则,SingleColumn:字段级规则,CrossColumn:跨字段规则,Customize:自定义规则
 
@@ -242,7 +242,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the template_id of this ConsistencyRuleDetailForOpenApi.
 
         规则模板ID
 
@@ -253,7 +253,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the template_id of this ConsistencyRuleDetailForOpenApi.
 
         规则模板ID
 
@@ -264,7 +264,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def connection(self):
-        """Gets the connection of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the connection of this ConsistencyRuleDetailForOpenApi.
 
         数据连接ID
 
@@ -275,7 +275,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the connection of this ConsistencyRuleDetailForOpenApi.
 
         数据连接ID
 
@@ -286,7 +286,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the connection_type of this ConsistencyRuleDetailForOpenApi.
 
         数据连接类型
 
@@ -297,7 +297,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the connection_type of this ConsistencyRuleDetailForOpenApi.
 
         数据连接类型
 
@@ -308,7 +308,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def databases(self):
-        """Gets the databases of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the databases of this ConsistencyRuleDetailForOpenApi.
 
         数据库名，当存在多个值时以逗号分隔
 
@@ -319,7 +319,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the databases of this ConsistencyRuleDetailForOpenApi.
 
         数据库名，当存在多个值时以逗号分隔
 
@@ -330,7 +330,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def sql(self):
-        """Gets the sql of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the sql of this ConsistencyRuleDetailForOpenApi.
 
         自定义规则中的SQL脚本
 
@@ -341,7 +341,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the sql of this ConsistencyRuleDetailForOpenApi.
 
         自定义规则中的SQL脚本
 
@@ -352,7 +352,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def tables(self):
-        """Gets the tables of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the tables of this ConsistencyRuleDetailForOpenApi.
 
         表名，当存在多个值时以逗号分隔
 
@@ -363,7 +363,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the tables of this ConsistencyRuleDetailForOpenApi.
 
         表名，当存在多个值时以逗号分隔
 
@@ -374,7 +374,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def reference_tables(self):
-        """Gets the reference_tables of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the reference_tables of this ConsistencyRuleDetailForOpenApi.
 
         对照表名，当存在多个值时以逗号分隔
 
@@ -385,7 +385,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @reference_tables.setter
     def reference_tables(self, reference_tables):
-        """Sets the reference_tables of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the reference_tables of this ConsistencyRuleDetailForOpenApi.
 
         对照表名，当存在多个值时以逗号分隔
 
@@ -396,7 +396,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def columns(self):
-        """Gets the columns of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the columns of this ConsistencyRuleDetailForOpenApi.
 
         字段名，当存在多个值时以逗号分隔
 
@@ -407,7 +407,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the columns of this ConsistencyRuleDetailForOpenApi.
 
         字段名，当存在多个值时以逗号分隔
 
@@ -418,7 +418,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def reference_columns(self):
-        """Gets the reference_columns of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the reference_columns of this ConsistencyRuleDetailForOpenApi.
 
         对照列名，当存在多个值时以逗号分隔
 
@@ -429,7 +429,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @reference_columns.setter
     def reference_columns(self, reference_columns):
-        """Sets the reference_columns of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the reference_columns of this ConsistencyRuleDetailForOpenApi.
 
         对照列名，当存在多个值时以逗号分隔
 
@@ -440,7 +440,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def dimension(self):
-        """Gets the dimension of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the dimension of this ConsistencyRuleDetailForOpenApi.
 
         维度
 
@@ -451,7 +451,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the dimension of this ConsistencyRuleDetailForOpenApi.
 
         维度
 
@@ -462,7 +462,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def queue(self):
-        """Gets the queue of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the queue of this ConsistencyRuleDetailForOpenApi.
 
         DLI队列
 
@@ -473,7 +473,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the queue of this ConsistencyRuleDetailForOpenApi.
 
         DLI队列
 
@@ -484,7 +484,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def regular_expression(self):
-        """Gets the regular_expression of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the regular_expression of this ConsistencyRuleDetailForOpenApi.
 
         当规则模板为正则表达式校验时的正则表达式
 
@@ -495,7 +495,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @regular_expression.setter
     def regular_expression(self, regular_expression):
-        """Sets the regular_expression of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the regular_expression of this ConsistencyRuleDetailForOpenApi.
 
         当规则模板为正则表达式校验时的正则表达式
 
@@ -506,7 +506,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def template_arguments(self):
-        """Gets the template_arguments of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the template_arguments of this ConsistencyRuleDetailForOpenApi.
 
         模板参数
 
@@ -517,7 +517,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @template_arguments.setter
     def template_arguments(self, template_arguments):
-        """Sets the template_arguments of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the template_arguments of this ConsistencyRuleDetailForOpenApi.
 
         模板参数
 
@@ -528,7 +528,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def weight(self):
-        """Gets the weight of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the weight of this ConsistencyRuleDetailForOpenApi.
 
         规则权重
 
@@ -539,7 +539,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the weight of this ConsistencyRuleDetailForOpenApi.
 
         规则权重
 
@@ -550,7 +550,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def calculation_range(self):
-        """Gets the calculation_range of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the calculation_range of this ConsistencyRuleDetailForOpenApi.
 
         计算范围
 
@@ -561,7 +561,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @calculation_range.setter
     def calculation_range(self, calculation_range):
-        """Sets the calculation_range of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the calculation_range of this ConsistencyRuleDetailForOpenApi.
 
         计算范围
 
@@ -572,7 +572,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def calculation_range_sql(self):
-        """Gets the calculation_range_sql of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the calculation_range_sql of this ConsistencyRuleDetailForOpenApi.
 
         计算范围SQL
 
@@ -583,7 +583,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @calculation_range_sql.setter
     def calculation_range_sql(self, calculation_range_sql):
-        """Sets the calculation_range_sql of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the calculation_range_sql of this ConsistencyRuleDetailForOpenApi.
 
         计算范围SQL
 
@@ -594,7 +594,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @property
     def alarm_condition(self):
-        """Gets the alarm_condition of this ConsistencyRuleDetailForOpenApi.
+        r"""Gets the alarm_condition of this ConsistencyRuleDetailForOpenApi.
 
         告警表达式
 
@@ -605,7 +605,7 @@ class ConsistencyRuleDetailForOpenApi:
 
     @alarm_condition.setter
     def alarm_condition(self, alarm_condition):
-        """Sets the alarm_condition of this ConsistencyRuleDetailForOpenApi.
+        r"""Sets the alarm_condition of this ConsistencyRuleDetailForOpenApi.
 
         告警表达式
 

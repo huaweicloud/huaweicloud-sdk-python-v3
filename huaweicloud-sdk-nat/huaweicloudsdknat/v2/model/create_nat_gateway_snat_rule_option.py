@@ -37,7 +37,7 @@ class CreateNatGatewaySnatRuleOption:
     }
 
     def __init__(self, nat_gateway_id=None, cidr=None, network_id=None, description=None, source_type=None, floating_ip_id=None, global_eip_id=None):
-        """CreateNatGatewaySnatRuleOption
+        r"""CreateNatGatewaySnatRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the nat_gateway_id of this CreateNatGatewaySnatRuleOption.
 
         公网NAT网关实例的ID。
 
@@ -94,7 +94,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the nat_gateway_id of this CreateNatGatewaySnatRuleOption.
 
         公网NAT网关实例的ID。
 
@@ -105,7 +105,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the cidr of this CreateNatGatewaySnatRuleOption.
 
         cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。 
 
@@ -116,7 +116,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the cidr of this CreateNatGatewaySnatRuleOption.
 
         cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。 
 
@@ -127,7 +127,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def network_id(self):
-        """Gets the network_id of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the network_id of this CreateNatGatewaySnatRuleOption.
 
         规则使用的网络id。与cidr参数二选一。
 
@@ -138,7 +138,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the network_id of this CreateNatGatewaySnatRuleOption.
 
         规则使用的网络id。与cidr参数二选一。
 
@@ -149,7 +149,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the description of this CreateNatGatewaySnatRuleOption.
 
         SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -160,7 +160,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the description of this CreateNatGatewaySnatRuleOption.
 
         SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -171,7 +171,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def source_type(self):
-        """Gets the source_type of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the source_type of this CreateNatGatewaySnatRuleOption.
 
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
 
@@ -182,7 +182,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the source_type of this CreateNatGatewaySnatRuleOption.
 
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
 
@@ -193,7 +193,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the floating_ip_id of this CreateNatGatewaySnatRuleOption.
 
         功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。 约束：弹性公网IP的id个数不能超过20个。 
 
@@ -204,7 +204,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the floating_ip_id of this CreateNatGatewaySnatRuleOption.
 
         功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。 约束：弹性公网IP的id个数不能超过20个。 
 
@@ -215,7 +215,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this CreateNatGatewaySnatRuleOption.
+        r"""Gets the global_eip_id of this CreateNatGatewaySnatRuleOption.
 
         全域弹性公网IP的id。
 
@@ -226,7 +226,7 @@ class CreateNatGatewaySnatRuleOption:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this CreateNatGatewaySnatRuleOption.
+        r"""Sets the global_eip_id of this CreateNatGatewaySnatRuleOption.
 
         全域弹性公网IP的id。
 

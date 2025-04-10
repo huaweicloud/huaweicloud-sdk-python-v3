@@ -71,7 +71,7 @@ class ApiBaseInfo:
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, is_send_fg_body_base64=None):
-        """ApiBaseInfo
+        r"""ApiBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -196,7 +196,7 @@ class ApiBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this ApiBaseInfo.
+        r"""Gets the name of this ApiBaseInfo.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -207,7 +207,7 @@ class ApiBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiBaseInfo.
+        r"""Sets the name of this ApiBaseInfo.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -218,7 +218,7 @@ class ApiBaseInfo:
 
     @property
     def type(self):
-        """Gets the type of this ApiBaseInfo.
+        r"""Gets the type of this ApiBaseInfo.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -229,7 +229,7 @@ class ApiBaseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiBaseInfo.
+        r"""Sets the type of this ApiBaseInfo.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -240,7 +240,7 @@ class ApiBaseInfo:
 
     @property
     def version(self):
-        """Gets the version of this ApiBaseInfo.
+        r"""Gets the version of this ApiBaseInfo.
 
         API的版本
 
@@ -251,7 +251,7 @@ class ApiBaseInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiBaseInfo.
+        r"""Sets the version of this ApiBaseInfo.
 
         API的版本
 
@@ -262,7 +262,7 @@ class ApiBaseInfo:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiBaseInfo.
+        r"""Gets the req_protocol of this ApiBaseInfo.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
@@ -273,7 +273,7 @@ class ApiBaseInfo:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiBaseInfo.
+        r"""Sets the req_protocol of this ApiBaseInfo.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
@@ -284,7 +284,7 @@ class ApiBaseInfo:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiBaseInfo.
+        r"""Gets the req_method of this ApiBaseInfo.
 
         API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
@@ -295,7 +295,7 @@ class ApiBaseInfo:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiBaseInfo.
+        r"""Sets the req_method of this ApiBaseInfo.
 
         API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
@@ -306,7 +306,7 @@ class ApiBaseInfo:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiBaseInfo.
+        r"""Gets the req_uri of this ApiBaseInfo.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
@@ -317,7 +317,7 @@ class ApiBaseInfo:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiBaseInfo.
+        r"""Sets the req_uri of this ApiBaseInfo.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
@@ -328,7 +328,7 @@ class ApiBaseInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ApiBaseInfo.
+        r"""Gets the auth_type of this ApiBaseInfo.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入
 
@@ -339,7 +339,7 @@ class ApiBaseInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ApiBaseInfo.
+        r"""Sets the auth_type of this ApiBaseInfo.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入
 
@@ -350,7 +350,7 @@ class ApiBaseInfo:
 
     @property
     def auth_opt(self):
-        """Gets the auth_opt of this ApiBaseInfo.
+        r"""Gets the auth_opt of this ApiBaseInfo.
 
         :return: The auth_opt of this ApiBaseInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -359,7 +359,7 @@ class ApiBaseInfo:
 
     @auth_opt.setter
     def auth_opt(self, auth_opt):
-        """Sets the auth_opt of this ApiBaseInfo.
+        r"""Sets the auth_opt of this ApiBaseInfo.
 
         :param auth_opt: The auth_opt of this ApiBaseInfo.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -368,7 +368,7 @@ class ApiBaseInfo:
 
     @property
     def cors(self):
-        """Gets the cors of this ApiBaseInfo.
+        r"""Gets the cors of this ApiBaseInfo.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -379,7 +379,7 @@ class ApiBaseInfo:
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this ApiBaseInfo.
+        r"""Sets the cors of this ApiBaseInfo.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -390,7 +390,7 @@ class ApiBaseInfo:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ApiBaseInfo.
+        r"""Gets the match_mode of this ApiBaseInfo.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -401,7 +401,7 @@ class ApiBaseInfo:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ApiBaseInfo.
+        r"""Sets the match_mode of this ApiBaseInfo.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -412,7 +412,7 @@ class ApiBaseInfo:
 
     @property
     def backend_type(self):
-        """Gets the backend_type of this ApiBaseInfo.
+        r"""Gets the backend_type of this ApiBaseInfo.
 
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
@@ -423,7 +423,7 @@ class ApiBaseInfo:
 
     @backend_type.setter
     def backend_type(self, backend_type):
-        """Sets the backend_type of this ApiBaseInfo.
+        r"""Sets the backend_type of this ApiBaseInfo.
 
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
@@ -434,7 +434,7 @@ class ApiBaseInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiBaseInfo.
+        r"""Gets the remark of this ApiBaseInfo.
 
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -445,7 +445,7 @@ class ApiBaseInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiBaseInfo.
+        r"""Sets the remark of this ApiBaseInfo.
 
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -456,7 +456,7 @@ class ApiBaseInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiBaseInfo.
+        r"""Gets the group_id of this ApiBaseInfo.
 
         API所属的分组编号
 
@@ -467,7 +467,7 @@ class ApiBaseInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiBaseInfo.
+        r"""Sets the group_id of this ApiBaseInfo.
 
         API所属的分组编号
 
@@ -478,7 +478,7 @@ class ApiBaseInfo:
 
     @property
     def body_remark(self):
-        """Gets the body_remark of this ApiBaseInfo.
+        r"""Gets the body_remark of this ApiBaseInfo.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -489,7 +489,7 @@ class ApiBaseInfo:
 
     @body_remark.setter
     def body_remark(self, body_remark):
-        """Sets the body_remark of this ApiBaseInfo.
+        r"""Sets the body_remark of this ApiBaseInfo.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -500,7 +500,7 @@ class ApiBaseInfo:
 
     @property
     def result_normal_sample(self):
-        """Gets the result_normal_sample of this ApiBaseInfo.
+        r"""Gets the result_normal_sample of this ApiBaseInfo.
 
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -511,7 +511,7 @@ class ApiBaseInfo:
 
     @result_normal_sample.setter
     def result_normal_sample(self, result_normal_sample):
-        """Sets the result_normal_sample of this ApiBaseInfo.
+        r"""Sets the result_normal_sample of this ApiBaseInfo.
 
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -522,7 +522,7 @@ class ApiBaseInfo:
 
     @property
     def result_failure_sample(self):
-        """Gets the result_failure_sample of this ApiBaseInfo.
+        r"""Gets the result_failure_sample of this ApiBaseInfo.
 
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -533,7 +533,7 @@ class ApiBaseInfo:
 
     @result_failure_sample.setter
     def result_failure_sample(self, result_failure_sample):
-        """Sets the result_failure_sample of this ApiBaseInfo.
+        r"""Sets the result_failure_sample of this ApiBaseInfo.
 
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -544,7 +544,7 @@ class ApiBaseInfo:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiBaseInfo.
+        r"""Gets the authorizer_id of this ApiBaseInfo.
 
         前端自定义认证对象的ID
 
@@ -555,7 +555,7 @@ class ApiBaseInfo:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiBaseInfo.
+        r"""Sets the authorizer_id of this ApiBaseInfo.
 
         前端自定义认证对象的ID
 
@@ -566,7 +566,7 @@ class ApiBaseInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this ApiBaseInfo.
+        r"""Gets the tags of this ApiBaseInfo.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -577,7 +577,7 @@ class ApiBaseInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ApiBaseInfo.
+        r"""Sets the tags of this ApiBaseInfo.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -588,7 +588,7 @@ class ApiBaseInfo:
 
     @property
     def response_id(self):
-        """Gets the response_id of this ApiBaseInfo.
+        r"""Gets the response_id of this ApiBaseInfo.
 
         分组自定义响应ID
 
@@ -599,7 +599,7 @@ class ApiBaseInfo:
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this ApiBaseInfo.
+        r"""Sets the response_id of this ApiBaseInfo.
 
         分组自定义响应ID
 
@@ -610,7 +610,7 @@ class ApiBaseInfo:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiBaseInfo.
+        r"""Gets the roma_app_id of this ApiBaseInfo.
 
         集成应用ID  暂不支持
 
@@ -621,7 +621,7 @@ class ApiBaseInfo:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiBaseInfo.
+        r"""Sets the roma_app_id of this ApiBaseInfo.
 
         集成应用ID  暂不支持
 
@@ -632,7 +632,7 @@ class ApiBaseInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ApiBaseInfo.
+        r"""Gets the domain_name of this ApiBaseInfo.
 
         API绑定的自定义域名  暂不支持
 
@@ -643,7 +643,7 @@ class ApiBaseInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ApiBaseInfo.
+        r"""Sets the domain_name of this ApiBaseInfo.
 
         API绑定的自定义域名  暂不支持
 
@@ -654,7 +654,7 @@ class ApiBaseInfo:
 
     @property
     def tag(self):
-        """Gets the tag of this ApiBaseInfo.
+        r"""Gets the tag of this ApiBaseInfo.
 
         标签  待废弃，优先使用tags字段
 
@@ -665,7 +665,7 @@ class ApiBaseInfo:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ApiBaseInfo.
+        r"""Sets the tag of this ApiBaseInfo.
 
         标签  待废弃，优先使用tags字段
 
@@ -676,7 +676,7 @@ class ApiBaseInfo:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ApiBaseInfo.
+        r"""Gets the content_type of this ApiBaseInfo.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -687,7 +687,7 @@ class ApiBaseInfo:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ApiBaseInfo.
+        r"""Sets the content_type of this ApiBaseInfo.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -698,7 +698,7 @@ class ApiBaseInfo:
 
     @property
     def is_send_fg_body_base64(self):
-        """Gets the is_send_fg_body_base64 of this ApiBaseInfo.
+        r"""Gets the is_send_fg_body_base64 of this ApiBaseInfo.
 
         是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
 
@@ -709,7 +709,7 @@ class ApiBaseInfo:
 
     @is_send_fg_body_base64.setter
     def is_send_fg_body_base64(self, is_send_fg_body_base64):
-        """Sets the is_send_fg_body_base64 of this ApiBaseInfo.
+        r"""Sets the is_send_fg_body_base64 of this ApiBaseInfo.
 
         是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
 

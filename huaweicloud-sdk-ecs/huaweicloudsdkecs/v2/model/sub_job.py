@@ -39,7 +39,7 @@ class SubJob:
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """SubJob
+        r"""SubJob
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SubJob:
 
     @property
     def status(self):
-        """Gets the status of this SubJob.
+        r"""Gets the status of this SubJob.
 
         Job的状态。  - SUCCESS：成功。  - RUNNING：运行中。  - FAIL：失败。  - INIT：正在初始化。
 
@@ -103,7 +103,7 @@ class SubJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubJob.
+        r"""Sets the status of this SubJob.
 
         Job的状态。  - SUCCESS：成功。  - RUNNING：运行中。  - FAIL：失败。  - INIT：正在初始化。
 
@@ -114,7 +114,7 @@ class SubJob:
 
     @property
     def entities(self):
-        """Gets the entities of this SubJob.
+        r"""Gets the entities of this SubJob.
 
         :return: The entities of this SubJob.
         :rtype: :class:`huaweicloudsdkecs.v2.SubJobEntities`
@@ -123,7 +123,7 @@ class SubJob:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this SubJob.
+        r"""Sets the entities of this SubJob.
 
         :param entities: The entities of this SubJob.
         :type entities: :class:`huaweicloudsdkecs.v2.SubJobEntities`
@@ -132,7 +132,7 @@ class SubJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SubJob.
+        r"""Gets the job_id of this SubJob.
 
         子任务的ID。
 
@@ -143,7 +143,7 @@ class SubJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SubJob.
+        r"""Sets the job_id of this SubJob.
 
         子任务的ID。
 
@@ -154,7 +154,7 @@ class SubJob:
 
     @property
     def job_type(self):
-        """Gets the job_type of this SubJob.
+        r"""Gets the job_type of this SubJob.
 
         子任务的类型。
 
@@ -165,7 +165,7 @@ class SubJob:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this SubJob.
+        r"""Sets the job_type of this SubJob.
 
         子任务的类型。
 
@@ -176,7 +176,7 @@ class SubJob:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SubJob.
+        r"""Gets the begin_time of this SubJob.
 
         开始时间。
 
@@ -187,7 +187,7 @@ class SubJob:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SubJob.
+        r"""Sets the begin_time of this SubJob.
 
         开始时间。
 
@@ -198,7 +198,7 @@ class SubJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SubJob.
+        r"""Gets the end_time of this SubJob.
 
         结束时间。
 
@@ -209,7 +209,7 @@ class SubJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SubJob.
+        r"""Sets the end_time of this SubJob.
 
         结束时间。
 
@@ -220,7 +220,7 @@ class SubJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this SubJob.
+        r"""Gets the error_code of this SubJob.
 
         Job执行失败时的错误码。  Job执行成功后，该值为null。
 
@@ -231,7 +231,7 @@ class SubJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this SubJob.
+        r"""Sets the error_code of this SubJob.
 
         Job执行失败时的错误码。  Job执行成功后，该值为null。
 
@@ -242,7 +242,7 @@ class SubJob:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this SubJob.
+        r"""Gets the fail_reason of this SubJob.
 
         Job执行失败时的错误原因。  Job执行成功后，该值为null。
 
@@ -253,7 +253,7 @@ class SubJob:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this SubJob.
+        r"""Sets the fail_reason of this SubJob.
 
         Job执行失败时的错误原因。  Job执行成功后，该值为null。
 

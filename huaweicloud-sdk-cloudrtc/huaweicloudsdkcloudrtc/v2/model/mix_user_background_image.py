@@ -27,7 +27,7 @@ class MixUserBackgroundImage:
     }
 
     def __init__(self, user_id=None, image_uri=None):
-        """MixUserBackgroundImage
+        r"""MixUserBackgroundImage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MixUserBackgroundImage:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MixUserBackgroundImage.
+        r"""Gets the user_id of this MixUserBackgroundImage.
 
         需要设置背景图的用户ID
 
@@ -59,7 +59,7 @@ class MixUserBackgroundImage:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MixUserBackgroundImage.
+        r"""Sets the user_id of this MixUserBackgroundImage.
 
         需要设置背景图的用户ID
 
@@ -70,7 +70,7 @@ class MixUserBackgroundImage:
 
     @property
     def image_uri(self):
-        """Gets the image_uri of this MixUserBackgroundImage.
+        r"""Gets the image_uri of this MixUserBackgroundImage.
 
         需要设置背景图的地址，图片先上传obs，格式s3://bucket/object
 
@@ -81,7 +81,7 @@ class MixUserBackgroundImage:
 
     @image_uri.setter
     def image_uri(self, image_uri):
-        """Sets the image_uri of this MixUserBackgroundImage.
+        r"""Sets the image_uri of this MixUserBackgroundImage.
 
         需要设置背景图的地址，图片先上传obs，格式s3://bucket/object
 

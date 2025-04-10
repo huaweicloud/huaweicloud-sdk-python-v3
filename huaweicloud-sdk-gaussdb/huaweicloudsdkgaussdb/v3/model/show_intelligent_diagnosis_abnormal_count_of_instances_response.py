@@ -26,7 +26,7 @@ class ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse(SdkResponse):
     }
 
     def __init__(self, diagnosis_info=None):
-        """ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse
+        r"""ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse(SdkResponse):
 
     @property
     def diagnosis_info(self):
-        """Gets the diagnosis_info of this ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse.
+        r"""Gets the diagnosis_info of this ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse.
 
         诊断信息列表。
 
@@ -55,7 +55,7 @@ class ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse(SdkResponse):
 
     @diagnosis_info.setter
     def diagnosis_info(self, diagnosis_info):
-        """Sets the diagnosis_info of this ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse.
+        r"""Sets the diagnosis_info of this ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse.
 
         诊断信息列表。
 

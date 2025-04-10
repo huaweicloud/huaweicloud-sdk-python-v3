@@ -45,7 +45,7 @@ class CreateRepoRequest:
     }
 
     def __init__(self, import_members=None, name=None, project_uuid=None, template_id=None, visibility_level=None, import_url=None, description=None, gitignore_id=None, license_id=None, enable_readme=None, caller=None):
-        """CreateRepoRequest
+        r"""CreateRepoRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class CreateRepoRequest:
 
     @property
     def import_members(self):
-        """Gets the import_members of this CreateRepoRequest.
+        r"""Gets the import_members of this CreateRepoRequest.
 
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
@@ -122,7 +122,7 @@ class CreateRepoRequest:
 
     @import_members.setter
     def import_members(self, import_members):
-        """Sets the import_members of this CreateRepoRequest.
+        r"""Sets the import_members of this CreateRepoRequest.
 
         是否导入项目成员，取值范围：0->不导入项目成员，1->导入项目成员
 
@@ -133,7 +133,7 @@ class CreateRepoRequest:
 
     @property
     def name(self):
-        """Gets the name of this CreateRepoRequest.
+        r"""Gets the name of this CreateRepoRequest.
 
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
@@ -144,7 +144,7 @@ class CreateRepoRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRepoRequest.
+        r"""Sets the name of this CreateRepoRequest.
 
         仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
 
@@ -155,7 +155,7 @@ class CreateRepoRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this CreateRepoRequest.
+        r"""Gets the project_uuid of this CreateRepoRequest.
 
         指定项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -166,7 +166,7 @@ class CreateRepoRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this CreateRepoRequest.
+        r"""Sets the project_uuid of this CreateRepoRequest.
 
         指定项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -177,7 +177,7 @@ class CreateRepoRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateRepoRequest.
+        r"""Gets the template_id of this CreateRepoRequest.
 
         复制模板的ID
 
@@ -188,7 +188,7 @@ class CreateRepoRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateRepoRequest.
+        r"""Sets the template_id of this CreateRepoRequest.
 
         复制模板的ID
 
@@ -199,7 +199,7 @@ class CreateRepoRequest:
 
     @property
     def visibility_level(self):
-        """Gets the visibility_level of this CreateRepoRequest.
+        r"""Gets the visibility_level of this CreateRepoRequest.
 
         仓库状态，取值范围：0->私有，20->公开只读
 
@@ -210,7 +210,7 @@ class CreateRepoRequest:
 
     @visibility_level.setter
     def visibility_level(self, visibility_level):
-        """Sets the visibility_level of this CreateRepoRequest.
+        r"""Sets the visibility_level of this CreateRepoRequest.
 
         仓库状态，取值范围：0->私有，20->公开只读
 
@@ -221,7 +221,7 @@ class CreateRepoRequest:
 
     @property
     def import_url(self):
-        """Gets the import_url of this CreateRepoRequest.
+        r"""Gets the import_url of this CreateRepoRequest.
 
         模板仓库的https地址的base64加密
 
@@ -232,7 +232,7 @@ class CreateRepoRequest:
 
     @import_url.setter
     def import_url(self, import_url):
-        """Sets the import_url of this CreateRepoRequest.
+        r"""Sets the import_url of this CreateRepoRequest.
 
         模板仓库的https地址的base64加密
 
@@ -243,7 +243,7 @@ class CreateRepoRequest:
 
     @property
     def description(self):
-        """Gets the description of this CreateRepoRequest.
+        r"""Gets the description of this CreateRepoRequest.
 
         仓库描述信息
 
@@ -254,7 +254,7 @@ class CreateRepoRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRepoRequest.
+        r"""Sets the description of this CreateRepoRequest.
 
         仓库描述信息
 
@@ -265,7 +265,7 @@ class CreateRepoRequest:
 
     @property
     def gitignore_id(self):
-        """Gets the gitignore_id of this CreateRepoRequest.
+        r"""Gets the gitignore_id of this CreateRepoRequest.
 
         根据编程语言生成.gitignore文件
 
@@ -276,7 +276,7 @@ class CreateRepoRequest:
 
     @gitignore_id.setter
     def gitignore_id(self, gitignore_id):
-        """Sets the gitignore_id of this CreateRepoRequest.
+        r"""Sets the gitignore_id of this CreateRepoRequest.
 
         根据编程语言生成.gitignore文件
 
@@ -287,7 +287,7 @@ class CreateRepoRequest:
 
     @property
     def license_id(self):
-        """Gets the license_id of this CreateRepoRequest.
+        r"""Gets the license_id of this CreateRepoRequest.
 
         许可证id
 
@@ -298,7 +298,7 @@ class CreateRepoRequest:
 
     @license_id.setter
     def license_id(self, license_id):
-        """Sets the license_id of this CreateRepoRequest.
+        r"""Sets the license_id of this CreateRepoRequest.
 
         许可证id
 
@@ -309,7 +309,7 @@ class CreateRepoRequest:
 
     @property
     def enable_readme(self):
-        """Gets the enable_readme of this CreateRepoRequest.
+        r"""Gets the enable_readme of this CreateRepoRequest.
 
         是否允许生成README文件
 
@@ -320,7 +320,7 @@ class CreateRepoRequest:
 
     @enable_readme.setter
     def enable_readme(self, enable_readme):
-        """Sets the enable_readme of this CreateRepoRequest.
+        r"""Sets the enable_readme of this CreateRepoRequest.
 
         是否允许生成README文件
 
@@ -331,7 +331,7 @@ class CreateRepoRequest:
 
     @property
     def caller(self):
-        """Gets the caller of this CreateRepoRequest.
+        r"""Gets the caller of this CreateRepoRequest.
 
         调用者
 
@@ -342,7 +342,7 @@ class CreateRepoRequest:
 
     @caller.setter
     def caller(self, caller):
-        """Sets the caller of this CreateRepoRequest.
+        r"""Sets the caller of this CreateRepoRequest.
 
         调用者
 

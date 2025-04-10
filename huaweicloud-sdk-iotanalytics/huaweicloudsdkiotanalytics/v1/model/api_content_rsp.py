@@ -27,7 +27,7 @@ class ApiContentRsp:
     }
 
     def __init__(self, name=None, url=None):
-        """ApiContentRsp
+        r"""ApiContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiContentRsp:
 
     @property
     def name(self):
-        """Gets the name of this ApiContentRsp.
+        r"""Gets the name of this ApiContentRsp.
 
         数据源名称
 
@@ -61,7 +61,7 @@ class ApiContentRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiContentRsp.
+        r"""Sets the name of this ApiContentRsp.
 
         数据源名称
 
@@ -72,7 +72,7 @@ class ApiContentRsp:
 
     @property
     def url(self):
-        """Gets the url of this ApiContentRsp.
+        r"""Gets the url of this ApiContentRsp.
 
         数据上报url
 
@@ -83,7 +83,7 @@ class ApiContentRsp:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ApiContentRsp.
+        r"""Sets the url of this ApiContentRsp.
 
         数据上报url
 

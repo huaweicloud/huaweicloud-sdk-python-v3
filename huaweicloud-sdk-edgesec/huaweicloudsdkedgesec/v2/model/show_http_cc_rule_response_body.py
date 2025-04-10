@@ -75,7 +75,7 @@ class ShowHttpCcRuleResponseBody:
     }
 
     def __init__(self, id=None, name=None, priority=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, mode=None, total_num=None, limit_num=None, limit_period=None, lock_time=None, tag_type=None, tag_index=None, tag_condition=None, unlock_num=None, domain_aggregation=None, conditions=None, action=None, producer=None, time_mode=None, start=None, terminal=None, period_type=None, time_range=None):
-        """ShowHttpCcRuleResponseBody
+        r"""ShowHttpCcRuleResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpCcRuleResponseBody.
+        r"""Gets the id of this ShowHttpCcRuleResponseBody.
 
         规则id
 
@@ -229,7 +229,7 @@ class ShowHttpCcRuleResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpCcRuleResponseBody.
+        r"""Sets the id of this ShowHttpCcRuleResponseBody.
 
         规则id
 
@@ -240,7 +240,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpCcRuleResponseBody.
+        r"""Gets the name of this ShowHttpCcRuleResponseBody.
 
         规则名称
 
@@ -251,7 +251,7 @@ class ShowHttpCcRuleResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpCcRuleResponseBody.
+        r"""Sets the name of this ShowHttpCcRuleResponseBody.
 
         规则名称
 
@@ -262,7 +262,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def priority(self):
-        """Gets the priority of this ShowHttpCcRuleResponseBody.
+        r"""Gets the priority of this ShowHttpCcRuleResponseBody.
 
         cc规则优先级，越大优先级越高，默认1
 
@@ -273,7 +273,7 @@ class ShowHttpCcRuleResponseBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowHttpCcRuleResponseBody.
+        r"""Sets the priority of this ShowHttpCcRuleResponseBody.
 
         cc规则优先级，越大优先级越高，默认1
 
@@ -284,7 +284,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpCcRuleResponseBody.
+        r"""Gets the policy_id of this ShowHttpCcRuleResponseBody.
 
         规则所在策略id
 
@@ -295,7 +295,7 @@ class ShowHttpCcRuleResponseBody:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpCcRuleResponseBody.
+        r"""Sets the policy_id of this ShowHttpCcRuleResponseBody.
 
         规则所在策略id
 
@@ -306,7 +306,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ShowHttpCcRuleResponseBody.
+        r"""Gets the policy_name of this ShowHttpCcRuleResponseBody.
 
         规则所在策略名称
 
@@ -317,7 +317,7 @@ class ShowHttpCcRuleResponseBody:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ShowHttpCcRuleResponseBody.
+        r"""Sets the policy_name of this ShowHttpCcRuleResponseBody.
 
         规则所在策略名称
 
@@ -328,7 +328,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowHttpCcRuleResponseBody.
+        r"""Gets the timestamp of this ShowHttpCcRuleResponseBody.
 
         创建规则时间戳
 
@@ -339,7 +339,7 @@ class ShowHttpCcRuleResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowHttpCcRuleResponseBody.
+        r"""Sets the timestamp of this ShowHttpCcRuleResponseBody.
 
         创建规则时间戳
 
@@ -350,7 +350,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this ShowHttpCcRuleResponseBody.
+        r"""Gets the description of this ShowHttpCcRuleResponseBody.
 
         规则描述
 
@@ -361,7 +361,7 @@ class ShowHttpCcRuleResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowHttpCcRuleResponseBody.
+        r"""Sets the description of this ShowHttpCcRuleResponseBody.
 
         规则描述
 
@@ -372,7 +372,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this ShowHttpCcRuleResponseBody.
+        r"""Gets the status of this ShowHttpCcRuleResponseBody.
 
         规则开关状态
 
@@ -383,7 +383,7 @@ class ShowHttpCcRuleResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHttpCcRuleResponseBody.
+        r"""Sets the status of this ShowHttpCcRuleResponseBody.
 
         规则开关状态
 
@@ -394,7 +394,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def mode(self):
-        """Gets the mode of this ShowHttpCcRuleResponseBody.
+        r"""Gets the mode of this ShowHttpCcRuleResponseBody.
 
         规则类型（0：标准/1：高级）
 
@@ -405,7 +405,7 @@ class ShowHttpCcRuleResponseBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowHttpCcRuleResponseBody.
+        r"""Sets the mode of this ShowHttpCcRuleResponseBody.
 
         规则类型（0：标准/1：高级）
 
@@ -416,7 +416,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def total_num(self):
-        """Gets the total_num of this ShowHttpCcRuleResponseBody.
+        r"""Gets the total_num of this ShowHttpCcRuleResponseBody.
 
         所有用户的周期内请求次数
 
@@ -427,7 +427,7 @@ class ShowHttpCcRuleResponseBody:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ShowHttpCcRuleResponseBody.
+        r"""Sets the total_num of this ShowHttpCcRuleResponseBody.
 
         所有用户的周期内请求次数
 
@@ -438,7 +438,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this ShowHttpCcRuleResponseBody.
+        r"""Gets the limit_num of this ShowHttpCcRuleResponseBody.
 
         单个用户的周期内请求次数
 
@@ -449,7 +449,7 @@ class ShowHttpCcRuleResponseBody:
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this ShowHttpCcRuleResponseBody.
+        r"""Sets the limit_num of this ShowHttpCcRuleResponseBody.
 
         单个用户的周期内请求次数
 
@@ -460,7 +460,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def limit_period(self):
-        """Gets the limit_period of this ShowHttpCcRuleResponseBody.
+        r"""Gets the limit_period of this ShowHttpCcRuleResponseBody.
 
         限速周期
 
@@ -471,7 +471,7 @@ class ShowHttpCcRuleResponseBody:
 
     @limit_period.setter
     def limit_period(self, limit_period):
-        """Sets the limit_period of this ShowHttpCcRuleResponseBody.
+        r"""Sets the limit_period of this ShowHttpCcRuleResponseBody.
 
         限速周期
 
@@ -482,7 +482,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this ShowHttpCcRuleResponseBody.
+        r"""Gets the lock_time of this ShowHttpCcRuleResponseBody.
 
         锁定时长
 
@@ -493,7 +493,7 @@ class ShowHttpCcRuleResponseBody:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this ShowHttpCcRuleResponseBody.
+        r"""Sets the lock_time of this ShowHttpCcRuleResponseBody.
 
         锁定时长
 
@@ -504,7 +504,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this ShowHttpCcRuleResponseBody.
+        r"""Gets the tag_type of this ShowHttpCcRuleResponseBody.
 
         防护模式
 
@@ -515,7 +515,7 @@ class ShowHttpCcRuleResponseBody:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this ShowHttpCcRuleResponseBody.
+        r"""Sets the tag_type of this ShowHttpCcRuleResponseBody.
 
         防护模式
 
@@ -526,7 +526,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def tag_index(self):
-        """Gets the tag_index of this ShowHttpCcRuleResponseBody.
+        r"""Gets the tag_index of this ShowHttpCcRuleResponseBody.
 
         防护模式标签
 
@@ -537,7 +537,7 @@ class ShowHttpCcRuleResponseBody:
 
     @tag_index.setter
     def tag_index(self, tag_index):
-        """Sets the tag_index of this ShowHttpCcRuleResponseBody.
+        r"""Sets the tag_index of this ShowHttpCcRuleResponseBody.
 
         防护模式标签
 
@@ -548,7 +548,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def tag_condition(self):
-        """Gets the tag_condition of this ShowHttpCcRuleResponseBody.
+        r"""Gets the tag_condition of this ShowHttpCcRuleResponseBody.
 
         :return: The tag_condition of this ShowHttpCcRuleResponseBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpCcRuleCondition`
@@ -557,7 +557,7 @@ class ShowHttpCcRuleResponseBody:
 
     @tag_condition.setter
     def tag_condition(self, tag_condition):
-        """Sets the tag_condition of this ShowHttpCcRuleResponseBody.
+        r"""Sets the tag_condition of this ShowHttpCcRuleResponseBody.
 
         :param tag_condition: The tag_condition of this ShowHttpCcRuleResponseBody.
         :type tag_condition: :class:`huaweicloudsdkedgesec.v2.HttpCcRuleCondition`
@@ -566,7 +566,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def unlock_num(self):
-        """Gets the unlock_num of this ShowHttpCcRuleResponseBody.
+        r"""Gets the unlock_num of this ShowHttpCcRuleResponseBody.
 
         放行次数
 
@@ -577,7 +577,7 @@ class ShowHttpCcRuleResponseBody:
 
     @unlock_num.setter
     def unlock_num(self, unlock_num):
-        """Sets the unlock_num of this ShowHttpCcRuleResponseBody.
+        r"""Sets the unlock_num of this ShowHttpCcRuleResponseBody.
 
         放行次数
 
@@ -588,7 +588,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def domain_aggregation(self):
-        """Gets the domain_aggregation of this ShowHttpCcRuleResponseBody.
+        r"""Gets the domain_aggregation of this ShowHttpCcRuleResponseBody.
 
         是否聚合域名
 
@@ -599,7 +599,7 @@ class ShowHttpCcRuleResponseBody:
 
     @domain_aggregation.setter
     def domain_aggregation(self, domain_aggregation):
-        """Sets the domain_aggregation of this ShowHttpCcRuleResponseBody.
+        r"""Sets the domain_aggregation of this ShowHttpCcRuleResponseBody.
 
         是否聚合域名
 
@@ -610,7 +610,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ShowHttpCcRuleResponseBody.
+        r"""Gets the conditions of this ShowHttpCcRuleResponseBody.
 
         条件列表参数较为复杂，存在级联关系，建议同时使用控制台上的添加误报屏蔽规则，单击F12键查看路径后缀为/cc-rule，方法为POST的请求参数，便于理解参数的填写
 
@@ -621,7 +621,7 @@ class ShowHttpCcRuleResponseBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ShowHttpCcRuleResponseBody.
+        r"""Sets the conditions of this ShowHttpCcRuleResponseBody.
 
         条件列表参数较为复杂，存在级联关系，建议同时使用控制台上的添加误报屏蔽规则，单击F12键查看路径后缀为/cc-rule，方法为POST的请求参数，便于理解参数的填写
 
@@ -632,7 +632,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def action(self):
-        """Gets the action of this ShowHttpCcRuleResponseBody.
+        r"""Gets the action of this ShowHttpCcRuleResponseBody.
 
         :return: The action of this ShowHttpCcRuleResponseBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -641,7 +641,7 @@ class ShowHttpCcRuleResponseBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowHttpCcRuleResponseBody.
+        r"""Sets the action of this ShowHttpCcRuleResponseBody.
 
         :param action: The action of this ShowHttpCcRuleResponseBody.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -650,7 +650,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def producer(self):
-        """Gets the producer of this ShowHttpCcRuleResponseBody.
+        r"""Gets the producer of this ShowHttpCcRuleResponseBody.
 
         创建来源
 
@@ -661,7 +661,7 @@ class ShowHttpCcRuleResponseBody:
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this ShowHttpCcRuleResponseBody.
+        r"""Sets the producer of this ShowHttpCcRuleResponseBody.
 
         创建来源
 
@@ -672,7 +672,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this ShowHttpCcRuleResponseBody.
+        r"""Gets the time_mode of this ShowHttpCcRuleResponseBody.
 
         生效模式
 
@@ -683,7 +683,7 @@ class ShowHttpCcRuleResponseBody:
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this ShowHttpCcRuleResponseBody.
+        r"""Sets the time_mode of this ShowHttpCcRuleResponseBody.
 
         生效模式
 
@@ -694,7 +694,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def start(self):
-        """Gets the start of this ShowHttpCcRuleResponseBody.
+        r"""Gets the start of this ShowHttpCcRuleResponseBody.
 
         customize生效时间区间开始
 
@@ -705,7 +705,7 @@ class ShowHttpCcRuleResponseBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ShowHttpCcRuleResponseBody.
+        r"""Sets the start of this ShowHttpCcRuleResponseBody.
 
         customize生效时间区间开始
 
@@ -716,7 +716,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this ShowHttpCcRuleResponseBody.
+        r"""Gets the terminal of this ShowHttpCcRuleResponseBody.
 
         customize生效时间区间结束
 
@@ -727,7 +727,7 @@ class ShowHttpCcRuleResponseBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this ShowHttpCcRuleResponseBody.
+        r"""Sets the terminal of this ShowHttpCcRuleResponseBody.
 
         customize生效时间区间结束
 
@@ -738,7 +738,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ShowHttpCcRuleResponseBody.
+        r"""Gets the period_type of this ShowHttpCcRuleResponseBody.
 
         period每日生效时间类型，目前只有day
 
@@ -749,7 +749,7 @@ class ShowHttpCcRuleResponseBody:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ShowHttpCcRuleResponseBody.
+        r"""Sets the period_type of this ShowHttpCcRuleResponseBody.
 
         period每日生效时间类型，目前只有day
 
@@ -760,7 +760,7 @@ class ShowHttpCcRuleResponseBody:
 
     @property
     def time_range(self):
-        """Gets the time_range of this ShowHttpCcRuleResponseBody.
+        r"""Gets the time_range of this ShowHttpCcRuleResponseBody.
 
         period每日生效时间区间
 
@@ -771,7 +771,7 @@ class ShowHttpCcRuleResponseBody:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this ShowHttpCcRuleResponseBody.
+        r"""Sets the time_range of this ShowHttpCcRuleResponseBody.
 
         period每日生效时间区间
 

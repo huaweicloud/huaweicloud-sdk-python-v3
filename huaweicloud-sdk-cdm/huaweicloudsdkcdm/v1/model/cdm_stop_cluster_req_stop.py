@@ -27,7 +27,7 @@ class CdmStopClusterReqStop:
     }
 
     def __init__(self, stop_mode=None, delay_time=None):
-        """CdmStopClusterReqStop
+        r"""CdmStopClusterReqStop
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CdmStopClusterReqStop:
 
     @property
     def stop_mode(self):
-        """Gets the stop_mode of this CdmStopClusterReqStop.
+        r"""Gets the stop_mode of this CdmStopClusterReqStop.
 
         关机类型： - IMMEDIATELY：立即关机。 - GRACEFULLY：优雅关机。
 
@@ -60,7 +60,7 @@ class CdmStopClusterReqStop:
 
     @stop_mode.setter
     def stop_mode(self, stop_mode):
-        """Sets the stop_mode of this CdmStopClusterReqStop.
+        r"""Sets the stop_mode of this CdmStopClusterReqStop.
 
         关机类型： - IMMEDIATELY：立即关机。 - GRACEFULLY：优雅关机。
 
@@ -71,7 +71,7 @@ class CdmStopClusterReqStop:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this CdmStopClusterReqStop.
+        r"""Gets the delay_time of this CdmStopClusterReqStop.
 
         关机时延，仅在stopMode为“GRACEFULLY”生效，单位：秒。该值为-1时，表示等待所有作业完成，并停止接受新作业。该值为大于0的任意值表示等待该时长后关机，并停止接受新作业。
 
@@ -82,7 +82,7 @@ class CdmStopClusterReqStop:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this CdmStopClusterReqStop.
+        r"""Sets the delay_time of this CdmStopClusterReqStop.
 
         关机时延，仅在stopMode为“GRACEFULLY”生效，单位：秒。该值为-1时，表示等待所有作业完成，并停止接受新作业。该值为大于0的任意值表示等待该时长后关机，并停止接受新作业。
 

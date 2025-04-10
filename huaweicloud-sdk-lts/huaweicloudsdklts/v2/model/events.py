@@ -39,7 +39,7 @@ class Events:
     }
 
     def __init__(self, annotations=None, metadata=None, arrives_at=None, ends_at=None, id=None, starts_at=None, timeout=None, type=None):
-        """Events
+        r"""Events
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class Events:
 
     @property
     def annotations(self):
-        """Gets the annotations of this Events.
+        r"""Gets the annotations of this Events.
 
         :return: The annotations of this Events.
         :rtype: :class:`huaweicloudsdklts.v2.Annotations`
@@ -93,7 +93,7 @@ class Events:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this Events.
+        r"""Sets the annotations of this Events.
 
         :param annotations: The annotations of this Events.
         :type annotations: :class:`huaweicloudsdklts.v2.Annotations`
@@ -102,7 +102,7 @@ class Events:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Events.
+        r"""Gets the metadata of this Events.
 
         :return: The metadata of this Events.
         :rtype: :class:`huaweicloudsdklts.v2.Metadata`
@@ -111,7 +111,7 @@ class Events:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Events.
+        r"""Sets the metadata of this Events.
 
         :param metadata: The metadata of this Events.
         :type metadata: :class:`huaweicloudsdklts.v2.Metadata`
@@ -120,7 +120,7 @@ class Events:
 
     @property
     def arrives_at(self):
-        """Gets the arrives_at of this Events.
+        r"""Gets the arrives_at of this Events.
 
         到达时间(时间戳)
 
@@ -131,7 +131,7 @@ class Events:
 
     @arrives_at.setter
     def arrives_at(self, arrives_at):
-        """Sets the arrives_at of this Events.
+        r"""Sets the arrives_at of this Events.
 
         到达时间(时间戳)
 
@@ -142,7 +142,7 @@ class Events:
 
     @property
     def ends_at(self):
-        """Gets the ends_at of this Events.
+        r"""Gets the ends_at of this Events.
 
         告警清除时间(时间戳)
 
@@ -153,7 +153,7 @@ class Events:
 
     @ends_at.setter
     def ends_at(self, ends_at):
-        """Sets the ends_at of this Events.
+        r"""Sets the ends_at of this Events.
 
         告警清除时间(时间戳)
 
@@ -164,7 +164,7 @@ class Events:
 
     @property
     def id(self):
-        """Gets the id of this Events.
+        r"""Gets the id of this Events.
 
         告警id
 
@@ -175,7 +175,7 @@ class Events:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Events.
+        r"""Sets the id of this Events.
 
         告警id
 
@@ -186,7 +186,7 @@ class Events:
 
     @property
     def starts_at(self):
-        """Gets the starts_at of this Events.
+        r"""Gets the starts_at of this Events.
 
         告警产生时间(时间戳)
 
@@ -197,7 +197,7 @@ class Events:
 
     @starts_at.setter
     def starts_at(self, starts_at):
-        """Sets the starts_at of this Events.
+        r"""Sets the starts_at of this Events.
 
         告警产生时间(时间戳)
 
@@ -208,7 +208,7 @@ class Events:
 
     @property
     def timeout(self):
-        """Gets the timeout of this Events.
+        r"""Gets the timeout of this Events.
 
         告警自动清除时间(时间戳)
 
@@ -219,7 +219,7 @@ class Events:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this Events.
+        r"""Sets the timeout of this Events.
 
         告警自动清除时间(时间戳)
 
@@ -230,7 +230,7 @@ class Events:
 
     @property
     def type(self):
-        """Gets the type of this Events.
+        r"""Gets the type of this Events.
 
         告警规则类型(SQL/关键词)
 
@@ -241,7 +241,7 @@ class Events:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Events.
+        r"""Sets the type of this Events.
 
         告警规则类型(SQL/关键词)
 

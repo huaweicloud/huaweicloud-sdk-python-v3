@@ -25,7 +25,7 @@ class PauseScalingGroupOption:
     }
 
     def __init__(self, action=None):
-        """PauseScalingGroupOption
+        r"""PauseScalingGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PauseScalingGroupOption:
 
     @property
     def action(self):
-        """Gets the action of this PauseScalingGroupOption.
+        r"""Gets the action of this PauseScalingGroupOption.
 
         启用或停止伸缩组操作的标识。启用：resume 停止：pause
 
@@ -53,7 +53,7 @@ class PauseScalingGroupOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PauseScalingGroupOption.
+        r"""Sets the action of this PauseScalingGroupOption.
 
         启用或停止伸缩组操作的标识。启用：resume 停止：pause
 

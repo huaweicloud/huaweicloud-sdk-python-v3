@@ -25,7 +25,7 @@ class PushFileRequest:
     }
 
     def __init__(self, body=None):
-        """PushFileRequest
+        r"""PushFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PushFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this PushFileRequest.
+        r"""Gets the body of this PushFileRequest.
 
         :return: The body of this PushFileRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.PushFileRequestBody`
@@ -52,7 +52,7 @@ class PushFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PushFileRequest.
+        r"""Sets the body of this PushFileRequest.
 
         :param body: The body of this PushFileRequest.
         :type body: :class:`huaweicloudsdkcph.v1.PushFileRequestBody`

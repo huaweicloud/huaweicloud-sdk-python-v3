@@ -47,7 +47,7 @@ class SqlJobRunDetail:
     }
 
     def __init__(self, sql_type=None, start_time=None, duration=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, table_name=None, with_column_header=None, detail=None, statement=None, message=None):
-        """SqlJobRunDetail
+        r"""SqlJobRunDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class SqlJobRunDetail:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SqlJobRunDetail.
+        r"""Gets the sql_type of this SqlJobRunDetail.
 
         作业类型。
 
@@ -131,7 +131,7 @@ class SqlJobRunDetail:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SqlJobRunDetail.
+        r"""Sets the sql_type of this SqlJobRunDetail.
 
         作业类型。
 
@@ -142,7 +142,7 @@ class SqlJobRunDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SqlJobRunDetail.
+        r"""Gets the start_time of this SqlJobRunDetail.
 
         作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -153,7 +153,7 @@ class SqlJobRunDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SqlJobRunDetail.
+        r"""Sets the start_time of this SqlJobRunDetail.
 
         作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -164,7 +164,7 @@ class SqlJobRunDetail:
 
     @property
     def duration(self):
-        """Gets the duration of this SqlJobRunDetail.
+        r"""Gets the duration of this SqlJobRunDetail.
 
         作业运行时长，单位毫秒。
 
@@ -175,7 +175,7 @@ class SqlJobRunDetail:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SqlJobRunDetail.
+        r"""Sets the duration of this SqlJobRunDetail.
 
         作业运行时长，单位毫秒。
 
@@ -186,7 +186,7 @@ class SqlJobRunDetail:
 
     @property
     def input_row_count(self):
-        """Gets the input_row_count of this SqlJobRunDetail.
+        r"""Gets the input_row_count of this SqlJobRunDetail.
 
         Insert作业执行过程中扫描的记录条数。
 
@@ -197,7 +197,7 @@ class SqlJobRunDetail:
 
     @input_row_count.setter
     def input_row_count(self, input_row_count):
-        """Sets the input_row_count of this SqlJobRunDetail.
+        r"""Sets the input_row_count of this SqlJobRunDetail.
 
         Insert作业执行过程中扫描的记录条数。
 
@@ -208,7 +208,7 @@ class SqlJobRunDetail:
 
     @property
     def bad_row_count(self):
-        """Gets the bad_row_count of this SqlJobRunDetail.
+        r"""Gets the bad_row_count of this SqlJobRunDetail.
 
         Insert作业执行过程中扫描到的错误记录数。
 
@@ -219,7 +219,7 @@ class SqlJobRunDetail:
 
     @bad_row_count.setter
     def bad_row_count(self, bad_row_count):
-        """Sets the bad_row_count of this SqlJobRunDetail.
+        r"""Sets the bad_row_count of this SqlJobRunDetail.
 
         Insert作业执行过程中扫描到的错误记录数。
 
@@ -230,7 +230,7 @@ class SqlJobRunDetail:
 
     @property
     def input_size(self):
-        """Gets the input_size of this SqlJobRunDetail.
+        r"""Gets the input_size of this SqlJobRunDetail.
 
         作业执行过程中扫描文件的大小。
 
@@ -241,7 +241,7 @@ class SqlJobRunDetail:
 
     @input_size.setter
     def input_size(self, input_size):
-        """Sets the input_size of this SqlJobRunDetail.
+        r"""Sets the input_size of this SqlJobRunDetail.
 
         作业执行过程中扫描文件的大小。
 
@@ -252,7 +252,7 @@ class SqlJobRunDetail:
 
     @property
     def result_count(self):
-        """Gets the result_count of this SqlJobRunDetail.
+        r"""Gets the result_count of this SqlJobRunDetail.
 
         当前作业返回的结果总条数或insert作业插入的总条数。
 
@@ -263,7 +263,7 @@ class SqlJobRunDetail:
 
     @result_count.setter
     def result_count(self, result_count):
-        """Sets the result_count of this SqlJobRunDetail.
+        r"""Sets the result_count of this SqlJobRunDetail.
 
         当前作业返回的结果总条数或insert作业插入的总条数。
 
@@ -274,7 +274,7 @@ class SqlJobRunDetail:
 
     @property
     def table_name(self):
-        """Gets the table_name of this SqlJobRunDetail.
+        r"""Gets the table_name of this SqlJobRunDetail.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -285,7 +285,7 @@ class SqlJobRunDetail:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this SqlJobRunDetail.
+        r"""Sets the table_name of this SqlJobRunDetail.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -296,7 +296,7 @@ class SqlJobRunDetail:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this SqlJobRunDetail.
+        r"""Gets the with_column_header of this SqlJobRunDetail.
 
         Import类型的作业，记录其导入的数据是否包括列名。
 
@@ -307,7 +307,7 @@ class SqlJobRunDetail:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this SqlJobRunDetail.
+        r"""Sets the with_column_header of this SqlJobRunDetail.
 
         Import类型的作业，记录其导入的数据是否包括列名。
 
@@ -318,7 +318,7 @@ class SqlJobRunDetail:
 
     @property
     def detail(self):
-        """Gets the detail of this SqlJobRunDetail.
+        r"""Gets the detail of this SqlJobRunDetail.
 
         SQL查询的相关列信息的Json字符串。
 
@@ -329,7 +329,7 @@ class SqlJobRunDetail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SqlJobRunDetail.
+        r"""Sets the detail of this SqlJobRunDetail.
 
         SQL查询的相关列信息的Json字符串。
 
@@ -340,7 +340,7 @@ class SqlJobRunDetail:
 
     @property
     def statement(self):
-        """Gets the statement of this SqlJobRunDetail.
+        r"""Gets the statement of this SqlJobRunDetail.
 
         作业执行的SQL语句。
 
@@ -351,7 +351,7 @@ class SqlJobRunDetail:
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this SqlJobRunDetail.
+        r"""Sets the statement of this SqlJobRunDetail.
 
         作业执行的SQL语句。
 
@@ -362,7 +362,7 @@ class SqlJobRunDetail:
 
     @property
     def message(self):
-        """Gets the message of this SqlJobRunDetail.
+        r"""Gets the message of this SqlJobRunDetail.
 
         系统提示信息。运行失败时，失败原因。
 
@@ -373,7 +373,7 @@ class SqlJobRunDetail:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SqlJobRunDetail.
+        r"""Sets the message of this SqlJobRunDetail.
 
         系统提示信息。运行失败时，失败原因。
 

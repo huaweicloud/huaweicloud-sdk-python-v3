@@ -27,7 +27,7 @@ class CreateChInstanceInfoTagsInfoTags:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateChInstanceInfoTagsInfoTags
+        r"""CreateChInstanceInfoTagsInfoTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateChInstanceInfoTagsInfoTags:
 
     @property
     def key(self):
-        """Gets the key of this CreateChInstanceInfoTagsInfoTags.
+        r"""Gets the key of this CreateChInstanceInfoTagsInfoTags.
 
         标签键。
 
@@ -61,7 +61,7 @@ class CreateChInstanceInfoTagsInfoTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateChInstanceInfoTagsInfoTags.
+        r"""Sets the key of this CreateChInstanceInfoTagsInfoTags.
 
         标签键。
 
@@ -72,7 +72,7 @@ class CreateChInstanceInfoTagsInfoTags:
 
     @property
     def value(self):
-        """Gets the value of this CreateChInstanceInfoTagsInfoTags.
+        r"""Gets the value of this CreateChInstanceInfoTagsInfoTags.
 
         标签值。
 
@@ -83,7 +83,7 @@ class CreateChInstanceInfoTagsInfoTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateChInstanceInfoTagsInfoTags.
+        r"""Sets the value of this CreateChInstanceInfoTagsInfoTags.
 
         标签值。
 

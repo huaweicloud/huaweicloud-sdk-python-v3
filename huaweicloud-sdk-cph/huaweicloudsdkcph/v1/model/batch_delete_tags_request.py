@@ -29,7 +29,7 @@ class BatchDeleteTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchDeleteTagsRequest
+        r"""BatchDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchDeleteTagsRequest.
+        r"""Gets the resource_type of this BatchDeleteTagsRequest.
 
         资源类型。  - cph-server，云手机服务器
 
@@ -66,7 +66,7 @@ class BatchDeleteTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchDeleteTagsRequest.
+        r"""Sets the resource_type of this BatchDeleteTagsRequest.
 
         资源类型。  - cph-server，云手机服务器
 
@@ -77,7 +77,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteTagsRequest.
+        r"""Gets the resource_id of this BatchDeleteTagsRequest.
 
         资源ID。
 
@@ -88,7 +88,7 @@ class BatchDeleteTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteTagsRequest.
+        r"""Sets the resource_id of this BatchDeleteTagsRequest.
 
         资源ID。
 
@@ -99,7 +99,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTagsRequest.
+        r"""Gets the body of this BatchDeleteTagsRequest.
 
         :return: The body of this BatchDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.BatchDeleteTagsRequestBody`
@@ -108,7 +108,7 @@ class BatchDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTagsRequest.
+        r"""Sets the body of this BatchDeleteTagsRequest.
 
         :param body: The body of this BatchDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkcph.v1.BatchDeleteTagsRequestBody`

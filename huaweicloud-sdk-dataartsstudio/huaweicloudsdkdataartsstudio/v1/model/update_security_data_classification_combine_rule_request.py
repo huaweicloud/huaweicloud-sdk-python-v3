@@ -29,7 +29,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """UpdateSecurityDataClassificationCombineRuleRequest
+        r"""UpdateSecurityDataClassificationCombineRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityDataClassificationCombineRuleRequest.
+        r"""Gets the workspace of this UpdateSecurityDataClassificationCombineRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityDataClassificationCombineRuleRequest.
+        r"""Sets the workspace of this UpdateSecurityDataClassificationCombineRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityDataClassificationCombineRuleRequest.
+        r"""Gets the id of this UpdateSecurityDataClassificationCombineRuleRequest.
 
         识别规则id
 
@@ -88,7 +88,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityDataClassificationCombineRuleRequest.
+        r"""Sets the id of this UpdateSecurityDataClassificationCombineRuleRequest.
 
         识别规则id
 
@@ -99,7 +99,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityDataClassificationCombineRuleRequest.
+        r"""Gets the body of this UpdateSecurityDataClassificationCombineRuleRequest.
 
         :return: The body of this UpdateSecurityDataClassificationCombineRuleRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationCombineRuleDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityDataClassificationCombineRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityDataClassificationCombineRuleRequest.
+        r"""Sets the body of this UpdateSecurityDataClassificationCombineRuleRequest.
 
         :param body: The body of this UpdateSecurityDataClassificationCombineRuleRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationCombineRuleDTO`

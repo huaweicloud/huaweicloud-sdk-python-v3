@@ -27,7 +27,7 @@ class GetTokenDto:
     }
 
     def __init__(self, auth_type=None, doc_id=None):
-        """GetTokenDto
+        r"""GetTokenDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetTokenDto:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this GetTokenDto.
+        r"""Gets the auth_type of this GetTokenDto.
 
         **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
@@ -59,7 +59,7 @@ class GetTokenDto:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this GetTokenDto.
+        r"""Sets the auth_type of this GetTokenDto.
 
         **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
@@ -70,7 +70,7 @@ class GetTokenDto:
 
     @property
     def doc_id(self):
-        """Gets the doc_id of this GetTokenDto.
+        r"""Gets the doc_id of this GetTokenDto.
 
         **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -81,7 +81,7 @@ class GetTokenDto:
 
     @doc_id.setter
     def doc_id(self, doc_id):
-        """Sets the doc_id of this GetTokenDto.
+        r"""Sets the doc_id of this GetTokenDto.
 
         **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 

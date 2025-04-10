@@ -28,7 +28,7 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster=None, order_id=None):
-        """CreateClusterResponse
+        r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def cluster(self):
-        """Gets the cluster of this CreateClusterResponse.
+        r"""Gets the cluster of this CreateClusterResponse.
 
         :return: The cluster of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterClusterResponse`
@@ -60,7 +60,7 @@ class CreateClusterResponse(SdkResponse):
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this CreateClusterResponse.
+        r"""Sets the cluster of this CreateClusterResponse.
 
         :param cluster: The cluster of this CreateClusterResponse.
         :type cluster: :class:`huaweicloudsdkcss.v1.CreateClusterClusterResponse`
@@ -69,7 +69,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateClusterResponse.
+        r"""Gets the order_id of this CreateClusterResponse.
 
         订单号。若创建的是包周期集群，则只返回ordeld参数。
 
@@ -80,7 +80,7 @@ class CreateClusterResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateClusterResponse.
+        r"""Sets the order_id of this CreateClusterResponse.
 
         订单号。若创建的是包周期集群，则只返回ordeld参数。
 

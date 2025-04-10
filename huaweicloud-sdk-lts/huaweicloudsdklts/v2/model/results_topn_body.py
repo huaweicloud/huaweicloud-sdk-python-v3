@@ -45,7 +45,7 @@ class ResultsTopnBody:
     }
 
     def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, basic_transfer=None, senior_transfer=None, is_agency_transfer=None, cold_storage=None):
-        """ResultsTopnBody
+        r"""ResultsTopnBody
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class ResultsTopnBody:
 
     @property
     def index_traffic(self):
-        """Gets the index_traffic of this ResultsTopnBody.
+        r"""Gets the index_traffic of this ResultsTopnBody.
 
         索引流量，byte, 查询数据类型中包含index时返回
 
@@ -119,7 +119,7 @@ class ResultsTopnBody:
 
     @index_traffic.setter
     def index_traffic(self, index_traffic):
-        """Sets the index_traffic of this ResultsTopnBody.
+        r"""Sets the index_traffic of this ResultsTopnBody.
 
         索引流量，byte, 查询数据类型中包含index时返回
 
@@ -130,7 +130,7 @@ class ResultsTopnBody:
 
     @property
     def storage(self):
-        """Gets the storage of this ResultsTopnBody.
+        r"""Gets the storage of this ResultsTopnBody.
 
         存储量，byte, 查询数据类型中包含storage时返回
 
@@ -141,7 +141,7 @@ class ResultsTopnBody:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ResultsTopnBody.
+        r"""Sets the storage of this ResultsTopnBody.
 
         存储量，byte, 查询数据类型中包含storage时返回
 
@@ -152,7 +152,7 @@ class ResultsTopnBody:
 
     @property
     def write_traffic(self):
-        """Gets the write_traffic of this ResultsTopnBody.
+        r"""Gets the write_traffic of this ResultsTopnBody.
 
         写入流量，byte, 查询数据类型中包含write时返回
 
@@ -163,7 +163,7 @@ class ResultsTopnBody:
 
     @write_traffic.setter
     def write_traffic(self, write_traffic):
-        """Sets the write_traffic of this ResultsTopnBody.
+        r"""Sets the write_traffic of this ResultsTopnBody.
 
         写入流量，byte, 查询数据类型中包含write时返回
 
@@ -174,7 +174,7 @@ class ResultsTopnBody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ResultsTopnBody.
+        r"""Gets the log_group_id of this ResultsTopnBody.
 
         日志组id，资源类型为日志组时返回
 
@@ -185,7 +185,7 @@ class ResultsTopnBody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ResultsTopnBody.
+        r"""Sets the log_group_id of this ResultsTopnBody.
 
         日志组id，资源类型为日志组时返回
 
@@ -196,7 +196,7 @@ class ResultsTopnBody:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this ResultsTopnBody.
+        r"""Gets the log_group_name of this ResultsTopnBody.
 
         日志组名称，资源类型为日志组时返回
 
@@ -207,7 +207,7 @@ class ResultsTopnBody:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this ResultsTopnBody.
+        r"""Sets the log_group_name of this ResultsTopnBody.
 
         日志组名称，资源类型为日志组时返回
 
@@ -218,7 +218,7 @@ class ResultsTopnBody:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ResultsTopnBody.
+        r"""Gets the log_stream_id of this ResultsTopnBody.
 
         日志流id，资源类型为日志流时返回
 
@@ -229,7 +229,7 @@ class ResultsTopnBody:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ResultsTopnBody.
+        r"""Sets the log_stream_id of this ResultsTopnBody.
 
         日志流id，资源类型为日志流时返回
 
@@ -240,7 +240,7 @@ class ResultsTopnBody:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this ResultsTopnBody.
+        r"""Gets the log_stream_name of this ResultsTopnBody.
 
         日志流名称，资源类型为日志流时返回
 
@@ -251,7 +251,7 @@ class ResultsTopnBody:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this ResultsTopnBody.
+        r"""Sets the log_stream_name of this ResultsTopnBody.
 
         日志流名称，资源类型为日志流时返回
 
@@ -262,7 +262,7 @@ class ResultsTopnBody:
 
     @property
     def basic_transfer(self):
-        """Gets the basic_transfer of this ResultsTopnBody.
+        r"""Gets the basic_transfer of this ResultsTopnBody.
 
         基础转储流量，byte, 查询数据类型中包含basicTransfer时返回
 
@@ -273,7 +273,7 @@ class ResultsTopnBody:
 
     @basic_transfer.setter
     def basic_transfer(self, basic_transfer):
-        """Sets the basic_transfer of this ResultsTopnBody.
+        r"""Sets the basic_transfer of this ResultsTopnBody.
 
         基础转储流量，byte, 查询数据类型中包含basicTransfer时返回
 
@@ -284,7 +284,7 @@ class ResultsTopnBody:
 
     @property
     def senior_transfer(self):
-        """Gets the senior_transfer of this ResultsTopnBody.
+        r"""Gets the senior_transfer of this ResultsTopnBody.
 
         基础转储流量，byte, 查询数据类型中包含seniorTransfer时返回
 
@@ -295,7 +295,7 @@ class ResultsTopnBody:
 
     @senior_transfer.setter
     def senior_transfer(self, senior_transfer):
-        """Sets the senior_transfer of this ResultsTopnBody.
+        r"""Sets the senior_transfer of this ResultsTopnBody.
 
         基础转储流量，byte, 查询数据类型中包含seniorTransfer时返回
 
@@ -306,7 +306,7 @@ class ResultsTopnBody:
 
     @property
     def is_agency_transfer(self):
-        """Gets the is_agency_transfer of this ResultsTopnBody.
+        r"""Gets the is_agency_transfer of this ResultsTopnBody.
 
         不是委托转储，true，是委托转储，则前端资源统计展示的流不能跳
 
@@ -317,7 +317,7 @@ class ResultsTopnBody:
 
     @is_agency_transfer.setter
     def is_agency_transfer(self, is_agency_transfer):
-        """Sets the is_agency_transfer of this ResultsTopnBody.
+        r"""Sets the is_agency_transfer of this ResultsTopnBody.
 
         不是委托转储，true，是委托转储，则前端资源统计展示的流不能跳
 
@@ -328,7 +328,7 @@ class ResultsTopnBody:
 
     @property
     def cold_storage(self):
-        """Gets the cold_storage of this ResultsTopnBody.
+        r"""Gets the cold_storage of this ResultsTopnBody.
 
         冷存储量
 
@@ -339,7 +339,7 @@ class ResultsTopnBody:
 
     @cold_storage.setter
     def cold_storage(self, cold_storage):
-        """Sets the cold_storage of this ResultsTopnBody.
+        r"""Sets the cold_storage of this ResultsTopnBody.
 
         冷存储量
 

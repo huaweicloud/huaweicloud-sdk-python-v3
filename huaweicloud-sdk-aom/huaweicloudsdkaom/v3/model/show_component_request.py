@@ -25,7 +25,7 @@ class ShowComponentRequest:
     }
 
     def __init__(self, component_id=None):
-        """ShowComponentRequest
+        r"""ShowComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowComponentRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowComponentRequest.
+        r"""Gets the component_id of this ShowComponentRequest.
 
         组件id
 
@@ -53,7 +53,7 @@ class ShowComponentRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowComponentRequest.
+        r"""Sets the component_id of this ShowComponentRequest.
 
         组件id
 

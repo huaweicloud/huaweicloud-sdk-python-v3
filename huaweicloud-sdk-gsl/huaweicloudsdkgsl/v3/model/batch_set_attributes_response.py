@@ -26,7 +26,7 @@ class BatchSetAttributesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchSetAttributesResponse
+        r"""BatchSetAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchSetAttributesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchSetAttributesResponse.
+        r"""Gets the body of this BatchSetAttributesResponse.
 
         :return: The body of this BatchSetAttributesResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchSetAttributesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetAttributesResponse.
+        r"""Sets the body of this BatchSetAttributesResponse.
 
         :param body: The body of this BatchSetAttributesResponse.
         :type body: str

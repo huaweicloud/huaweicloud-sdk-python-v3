@@ -25,7 +25,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
     }
 
     def __init__(self, include_failure=None):
-        """ListNumberOfInstancesInDifferentStatusRequest
+        r"""ListNumberOfInstancesInDifferentStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
 
     @property
     def include_failure(self):
-        """Gets the include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
+        r"""Gets the include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
 
         是否返回创建失败的实例数。   - 当参数值为“true”时，返回的统计包括创建失败的实例数。   - 参数值为“false”或者其他值，返回的统计不包括创建失败的实例数。 
 
@@ -54,7 +54,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
 
     @include_failure.setter
     def include_failure(self, include_failure):
-        """Sets the include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
+        r"""Sets the include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
 
         是否返回创建失败的实例数。   - 当参数值为“true”时，返回的统计包括创建失败的实例数。   - 参数值为“false”或者其他值，返回的统计不包括创建失败的实例数。 
 

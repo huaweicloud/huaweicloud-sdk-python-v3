@@ -27,7 +27,7 @@ class CreateFunctionTriggerRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CreateFunctionTriggerRequest
+        r"""CreateFunctionTriggerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFunctionTriggerRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this CreateFunctionTriggerRequest.
+        r"""Gets the function_urn of this CreateFunctionTriggerRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class CreateFunctionTriggerRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this CreateFunctionTriggerRequest.
+        r"""Sets the function_urn of this CreateFunctionTriggerRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class CreateFunctionTriggerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFunctionTriggerRequest.
+        r"""Gets the body of this CreateFunctionTriggerRequest.
 
         :return: The body of this CreateFunctionTriggerRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`
@@ -80,7 +80,7 @@ class CreateFunctionTriggerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFunctionTriggerRequest.
+        r"""Sets the body of this CreateFunctionTriggerRequest.
 
         :param body: The body of this CreateFunctionTriggerRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`

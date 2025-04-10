@@ -26,7 +26,7 @@ class ListScenes2Response(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListScenes2Response
+        r"""ListScenes2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListScenes2Response(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListScenes2Response.
+        r"""Gets the results of this ListScenes2Response.
 
         scene场景分析插件信息。
 
@@ -55,7 +55,7 @@ class ListScenes2Response(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListScenes2Response.
+        r"""Sets the results of this ListScenes2Response.
 
         scene场景分析插件信息。
 

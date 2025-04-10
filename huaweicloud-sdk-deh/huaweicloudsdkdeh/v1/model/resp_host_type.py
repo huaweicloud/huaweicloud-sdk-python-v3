@@ -27,7 +27,7 @@ class RespHostType:
     }
 
     def __init__(self, host_type=None, host_type_name=None):
-        """RespHostType
+        r"""RespHostType
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RespHostType:
 
     @property
     def host_type(self):
-        """Gets the host_type of this RespHostType.
+        r"""Gets the host_type of this RespHostType.
 
         专属主机类型。
 
@@ -59,7 +59,7 @@ class RespHostType:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this RespHostType.
+        r"""Sets the host_type of this RespHostType.
 
         专属主机类型。
 
@@ -70,7 +70,7 @@ class RespHostType:
 
     @property
     def host_type_name(self):
-        """Gets the host_type_name of this RespHostType.
+        r"""Gets the host_type_name of this RespHostType.
 
         专属主机类型名字。
 
@@ -81,7 +81,7 @@ class RespHostType:
 
     @host_type_name.setter
     def host_type_name(self, host_type_name):
-        """Sets the host_type_name of this RespHostType.
+        r"""Sets the host_type_name of this RespHostType.
 
         专属主机类型名字。
 

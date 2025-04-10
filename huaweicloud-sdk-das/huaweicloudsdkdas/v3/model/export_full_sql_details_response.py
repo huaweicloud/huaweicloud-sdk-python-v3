@@ -28,7 +28,7 @@ class ExportFullSqlDetailsResponse(SdkResponse):
     }
 
     def __init__(self, full_sql_details=None, total=None):
-        """ExportFullSqlDetailsResponse
+        r"""ExportFullSqlDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportFullSqlDetailsResponse(SdkResponse):
 
     @property
     def full_sql_details(self):
-        """Gets the full_sql_details of this ExportFullSqlDetailsResponse.
+        r"""Gets the full_sql_details of this ExportFullSqlDetailsResponse.
 
         全量SQL明细列表。
 
@@ -62,7 +62,7 @@ class ExportFullSqlDetailsResponse(SdkResponse):
 
     @full_sql_details.setter
     def full_sql_details(self, full_sql_details):
-        """Sets the full_sql_details of this ExportFullSqlDetailsResponse.
+        r"""Sets the full_sql_details of this ExportFullSqlDetailsResponse.
 
         全量SQL明细列表。
 
@@ -73,7 +73,7 @@ class ExportFullSqlDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ExportFullSqlDetailsResponse.
+        r"""Gets the total of this ExportFullSqlDetailsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ExportFullSqlDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ExportFullSqlDetailsResponse.
+        r"""Sets the total of this ExportFullSqlDetailsResponse.
 
         总数。
 

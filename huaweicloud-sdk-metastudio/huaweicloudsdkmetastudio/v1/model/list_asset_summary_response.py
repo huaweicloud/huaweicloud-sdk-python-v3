@@ -28,7 +28,7 @@ class ListAssetSummaryResponse(SdkResponse):
     }
 
     def __init__(self, asset_list=None, x_request_id=None):
-        """ListAssetSummaryResponse
+        r"""ListAssetSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssetSummaryResponse(SdkResponse):
 
     @property
     def asset_list(self):
-        """Gets the asset_list of this ListAssetSummaryResponse.
+        r"""Gets the asset_list of this ListAssetSummaryResponse.
 
         资产列表。
 
@@ -62,7 +62,7 @@ class ListAssetSummaryResponse(SdkResponse):
 
     @asset_list.setter
     def asset_list(self, asset_list):
-        """Sets the asset_list of this ListAssetSummaryResponse.
+        r"""Sets the asset_list of this ListAssetSummaryResponse.
 
         资产列表。
 
@@ -73,7 +73,7 @@ class ListAssetSummaryResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAssetSummaryResponse.
+        r"""Gets the x_request_id of this ListAssetSummaryResponse.
 
         :return: The x_request_id of this ListAssetSummaryResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListAssetSummaryResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAssetSummaryResponse.
+        r"""Sets the x_request_id of this ListAssetSummaryResponse.
 
         :param x_request_id: The x_request_id of this ListAssetSummaryResponse.
         :type x_request_id: str

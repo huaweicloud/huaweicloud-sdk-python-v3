@@ -31,7 +31,7 @@ class PageInfoViewDTO:
     }
 
     def __init__(self, cur_page=None, page_size=None, total_rows=None, total_pages=None):
-        """PageInfoViewDTO
+        r"""PageInfoViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PageInfoViewDTO:
 
     @property
     def cur_page(self):
-        """Gets the cur_page of this PageInfoViewDTO.
+        r"""Gets the cur_page of this PageInfoViewDTO.
 
         **参数解释：**  当前页。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -75,7 +75,7 @@ class PageInfoViewDTO:
 
     @cur_page.setter
     def cur_page(self, cur_page):
-        """Sets the cur_page of this PageInfoViewDTO.
+        r"""Sets the cur_page of this PageInfoViewDTO.
 
         **参数解释：**  当前页。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -86,7 +86,7 @@ class PageInfoViewDTO:
 
     @property
     def page_size(self):
-        """Gets the page_size of this PageInfoViewDTO.
+        r"""Gets the page_size of this PageInfoViewDTO.
 
         **参数解释：**  每页大小。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -97,7 +97,7 @@ class PageInfoViewDTO:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this PageInfoViewDTO.
+        r"""Sets the page_size of this PageInfoViewDTO.
 
         **参数解释：**  每页大小。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -108,7 +108,7 @@ class PageInfoViewDTO:
 
     @property
     def total_rows(self):
-        """Gets the total_rows of this PageInfoViewDTO.
+        r"""Gets the total_rows of this PageInfoViewDTO.
 
         **参数解释：**  总行数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -119,7 +119,7 @@ class PageInfoViewDTO:
 
     @total_rows.setter
     def total_rows(self, total_rows):
-        """Sets the total_rows of this PageInfoViewDTO.
+        r"""Sets the total_rows of this PageInfoViewDTO.
 
         **参数解释：**  总行数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -130,7 +130,7 @@ class PageInfoViewDTO:
 
     @property
     def total_pages(self):
-        """Gets the total_pages of this PageInfoViewDTO.
+        r"""Gets the total_pages of this PageInfoViewDTO.
 
         **参数解释：**  总页数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -141,7 +141,7 @@ class PageInfoViewDTO:
 
     @total_pages.setter
     def total_pages(self, total_pages):
-        """Sets the total_pages of this PageInfoViewDTO.
+        r"""Sets the total_pages of this PageInfoViewDTO.
 
         **参数解释：**  总页数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

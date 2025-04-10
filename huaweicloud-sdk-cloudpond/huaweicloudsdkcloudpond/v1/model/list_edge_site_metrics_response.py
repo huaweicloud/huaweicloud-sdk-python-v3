@@ -26,7 +26,7 @@ class ListEdgeSiteMetricsResponse(SdkResponse):
     }
 
     def __init__(self, metric_data=None):
-        """ListEdgeSiteMetricsResponse
+        r"""ListEdgeSiteMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEdgeSiteMetricsResponse(SdkResponse):
 
     @property
     def metric_data(self):
-        """Gets the metric_data of this ListEdgeSiteMetricsResponse.
+        r"""Gets the metric_data of this ListEdgeSiteMetricsResponse.
 
         监控数据
 
@@ -55,7 +55,7 @@ class ListEdgeSiteMetricsResponse(SdkResponse):
 
     @metric_data.setter
     def metric_data(self, metric_data):
-        """Sets the metric_data of this ListEdgeSiteMetricsResponse.
+        r"""Sets the metric_data of this ListEdgeSiteMetricsResponse.
 
         监控数据
 

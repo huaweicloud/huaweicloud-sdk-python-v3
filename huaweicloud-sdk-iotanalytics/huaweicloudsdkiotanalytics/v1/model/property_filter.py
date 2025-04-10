@@ -29,7 +29,7 @@ class PropertyFilter:
     }
 
     def __init__(self, property_name=None, operator=None, value=None):
-        """PropertyFilter
+        r"""PropertyFilter
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PropertyFilter:
 
     @property
     def property_name(self):
-        """Gets the property_name of this PropertyFilter.
+        r"""Gets the property_name of this PropertyFilter.
 
         过滤属性名称，正则：\"^[a-zA-Z0-9_]{1,64}$\"
 
@@ -65,7 +65,7 @@ class PropertyFilter:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this PropertyFilter.
+        r"""Sets the property_name of this PropertyFilter.
 
         过滤属性名称，正则：\"^[a-zA-Z0-9_]{1,64}$\"
 
@@ -76,7 +76,7 @@ class PropertyFilter:
 
     @property
     def operator(self):
-        """Gets the operator of this PropertyFilter.
+        r"""Gets the operator of this PropertyFilter.
 
         过滤操作方式,当前仅支持“=”
 
@@ -87,7 +87,7 @@ class PropertyFilter:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this PropertyFilter.
+        r"""Sets the operator of this PropertyFilter.
 
         过滤操作方式,当前仅支持“=”
 
@@ -98,7 +98,7 @@ class PropertyFilter:
 
     @property
     def value(self):
-        """Gets the value of this PropertyFilter.
+        r"""Gets the value of this PropertyFilter.
 
         过滤属性值
 
@@ -109,7 +109,7 @@ class PropertyFilter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PropertyFilter.
+        r"""Sets the value of this PropertyFilter.
 
         过滤属性值
 

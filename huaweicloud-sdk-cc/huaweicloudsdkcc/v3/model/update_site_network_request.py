@@ -27,7 +27,7 @@ class UpdateSiteNetworkRequest:
     }
 
     def __init__(self, site_network_id=None, body=None):
-        """UpdateSiteNetworkRequest
+        r"""UpdateSiteNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSiteNetworkRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this UpdateSiteNetworkRequest.
+        r"""Gets the site_network_id of this UpdateSiteNetworkRequest.
 
         分支网络的ID。
 
@@ -60,7 +60,7 @@ class UpdateSiteNetworkRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this UpdateSiteNetworkRequest.
+        r"""Sets the site_network_id of this UpdateSiteNetworkRequest.
 
         分支网络的ID。
 
@@ -71,7 +71,7 @@ class UpdateSiteNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSiteNetworkRequest.
+        r"""Gets the body of this UpdateSiteNetworkRequest.
 
         :return: The body of this UpdateSiteNetworkRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkRequestBody`
@@ -80,7 +80,7 @@ class UpdateSiteNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSiteNetworkRequest.
+        r"""Sets the body of this UpdateSiteNetworkRequest.
 
         :param body: The body of this UpdateSiteNetworkRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateSiteNetworkRequestBody`

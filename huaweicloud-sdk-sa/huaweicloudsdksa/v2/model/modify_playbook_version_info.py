@@ -49,7 +49,7 @@ class ModifyPlaybookVersionInfo:
     }
 
     def __init__(self, description=None, workspace_id=None, playbook_id=None, dataclass_id=None, rule_enable=None, enabled=None, status=None, rule_id=None, trigger_type=None, dataobject_create=None, dataobject_update=None, dataobject_delete=None, action_strategy=None):
-        """ModifyPlaybookVersionInfo
+        r"""ModifyPlaybookVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ModifyPlaybookVersionInfo.
+        r"""Gets the description of this ModifyPlaybookVersionInfo.
 
         The description, display only
 
@@ -138,7 +138,7 @@ class ModifyPlaybookVersionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyPlaybookVersionInfo.
+        r"""Sets the description of this ModifyPlaybookVersionInfo.
 
         The description, display only
 
@@ -149,7 +149,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ModifyPlaybookVersionInfo.
+        r"""Gets the workspace_id of this ModifyPlaybookVersionInfo.
 
         工作空间id
 
@@ -160,7 +160,7 @@ class ModifyPlaybookVersionInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ModifyPlaybookVersionInfo.
+        r"""Sets the workspace_id of this ModifyPlaybookVersionInfo.
 
         工作空间id
 
@@ -171,7 +171,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this ModifyPlaybookVersionInfo.
+        r"""Gets the playbook_id of this ModifyPlaybookVersionInfo.
 
         Playbook id.
 
@@ -182,7 +182,7 @@ class ModifyPlaybookVersionInfo:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this ModifyPlaybookVersionInfo.
+        r"""Sets the playbook_id of this ModifyPlaybookVersionInfo.
 
         Playbook id.
 
@@ -193,7 +193,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this ModifyPlaybookVersionInfo.
+        r"""Gets the dataclass_id of this ModifyPlaybookVersionInfo.
 
         dataclass id.
 
@@ -204,7 +204,7 @@ class ModifyPlaybookVersionInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this ModifyPlaybookVersionInfo.
+        r"""Sets the dataclass_id of this ModifyPlaybookVersionInfo.
 
         dataclass id.
 
@@ -215,7 +215,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def rule_enable(self):
-        """Gets the rule_enable of this ModifyPlaybookVersionInfo.
+        r"""Gets the rule_enable of this ModifyPlaybookVersionInfo.
 
         If the condition filter is enabled.
 
@@ -226,7 +226,7 @@ class ModifyPlaybookVersionInfo:
 
     @rule_enable.setter
     def rule_enable(self, rule_enable):
-        """Sets the rule_enable of this ModifyPlaybookVersionInfo.
+        r"""Sets the rule_enable of this ModifyPlaybookVersionInfo.
 
         If the condition filter is enabled.
 
@@ -237,7 +237,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ModifyPlaybookVersionInfo.
+        r"""Gets the enabled of this ModifyPlaybookVersionInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -248,7 +248,7 @@ class ModifyPlaybookVersionInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ModifyPlaybookVersionInfo.
+        r"""Sets the enabled of this ModifyPlaybookVersionInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -259,7 +259,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def status(self):
-        """Gets the status of this ModifyPlaybookVersionInfo.
+        r"""Gets the status of this ModifyPlaybookVersionInfo.
 
         状态
 
@@ -270,7 +270,7 @@ class ModifyPlaybookVersionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModifyPlaybookVersionInfo.
+        r"""Sets the status of this ModifyPlaybookVersionInfo.
 
         状态
 
@@ -281,7 +281,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ModifyPlaybookVersionInfo.
+        r"""Gets the rule_id of this ModifyPlaybookVersionInfo.
 
         规则ID
 
@@ -292,7 +292,7 @@ class ModifyPlaybookVersionInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ModifyPlaybookVersionInfo.
+        r"""Sets the rule_id of this ModifyPlaybookVersionInfo.
 
         规则ID
 
@@ -303,7 +303,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ModifyPlaybookVersionInfo.
+        r"""Gets the trigger_type of this ModifyPlaybookVersionInfo.
 
         Strategy of action. event, timer
 
@@ -314,7 +314,7 @@ class ModifyPlaybookVersionInfo:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ModifyPlaybookVersionInfo.
+        r"""Sets the trigger_type of this ModifyPlaybookVersionInfo.
 
         Strategy of action. event, timer
 
@@ -325,7 +325,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def dataobject_create(self):
-        """Gets the dataobject_create of this ModifyPlaybookVersionInfo.
+        r"""Gets the dataobject_create of this ModifyPlaybookVersionInfo.
 
         if trigger when dataobject is created
 
@@ -336,7 +336,7 @@ class ModifyPlaybookVersionInfo:
 
     @dataobject_create.setter
     def dataobject_create(self, dataobject_create):
-        """Sets the dataobject_create of this ModifyPlaybookVersionInfo.
+        r"""Sets the dataobject_create of this ModifyPlaybookVersionInfo.
 
         if trigger when dataobject is created
 
@@ -347,7 +347,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def dataobject_update(self):
-        """Gets the dataobject_update of this ModifyPlaybookVersionInfo.
+        r"""Gets the dataobject_update of this ModifyPlaybookVersionInfo.
 
         if trigger when dataobject is updated
 
@@ -358,7 +358,7 @@ class ModifyPlaybookVersionInfo:
 
     @dataobject_update.setter
     def dataobject_update(self, dataobject_update):
-        """Sets the dataobject_update of this ModifyPlaybookVersionInfo.
+        r"""Sets the dataobject_update of this ModifyPlaybookVersionInfo.
 
         if trigger when dataobject is updated
 
@@ -369,7 +369,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def dataobject_delete(self):
-        """Gets the dataobject_delete of this ModifyPlaybookVersionInfo.
+        r"""Gets the dataobject_delete of this ModifyPlaybookVersionInfo.
 
         if trigger when dataobject is deleted
 
@@ -380,7 +380,7 @@ class ModifyPlaybookVersionInfo:
 
     @dataobject_delete.setter
     def dataobject_delete(self, dataobject_delete):
-        """Sets the dataobject_delete of this ModifyPlaybookVersionInfo.
+        r"""Sets the dataobject_delete of this ModifyPlaybookVersionInfo.
 
         if trigger when dataobject is deleted
 
@@ -391,7 +391,7 @@ class ModifyPlaybookVersionInfo:
 
     @property
     def action_strategy(self):
-        """Gets the action_strategy of this ModifyPlaybookVersionInfo.
+        r"""Gets the action_strategy of this ModifyPlaybookVersionInfo.
 
         Strategy of action. sync or async
 
@@ -402,7 +402,7 @@ class ModifyPlaybookVersionInfo:
 
     @action_strategy.setter
     def action_strategy(self, action_strategy):
-        """Sets the action_strategy of this ModifyPlaybookVersionInfo.
+        r"""Sets the action_strategy of this ModifyPlaybookVersionInfo.
 
         Strategy of action. sync or async
 

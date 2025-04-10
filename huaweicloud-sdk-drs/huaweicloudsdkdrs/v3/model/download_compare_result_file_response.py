@@ -24,7 +24,7 @@ class DownloadCompareResultFileResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadCompareResultFileResponse
+        r"""DownloadCompareResultFileResponse
 
         The model defined in huaweicloud sdk
 

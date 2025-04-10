@@ -25,7 +25,7 @@ class BatchDeleteResourceTags:
     }
 
     def __init__(self, tags=None):
-        """BatchDeleteResourceTags
+        r"""BatchDeleteResourceTags
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteResourceTags:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteResourceTags.
+        r"""Gets the tags of this BatchDeleteResourceTags.
 
         标签列表
 
@@ -53,7 +53,7 @@ class BatchDeleteResourceTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteResourceTags.
+        r"""Sets the tags of this BatchDeleteResourceTags.
 
         标签列表
 

@@ -28,7 +28,7 @@ class ListAimTemplateReportsResponse(SdkResponse):
     }
 
     def __init__(self, template_reports=None, page_info=None):
-        """ListAimTemplateReportsResponse
+        r"""ListAimTemplateReportsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAimTemplateReportsResponse(SdkResponse):
 
     @property
     def template_reports(self):
-        """Gets the template_reports of this ListAimTemplateReportsResponse.
+        r"""Gets the template_reports of this ListAimTemplateReportsResponse.
 
         查询模板报表结果集。
 
@@ -62,7 +62,7 @@ class ListAimTemplateReportsResponse(SdkResponse):
 
     @template_reports.setter
     def template_reports(self, template_reports):
-        """Sets the template_reports of this ListAimTemplateReportsResponse.
+        r"""Sets the template_reports of this ListAimTemplateReportsResponse.
 
         查询模板报表结果集。
 
@@ -73,7 +73,7 @@ class ListAimTemplateReportsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimTemplateReportsResponse.
+        r"""Gets the page_info of this ListAimTemplateReportsResponse.
 
         :return: The page_info of this ListAimTemplateReportsResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -82,7 +82,7 @@ class ListAimTemplateReportsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimTemplateReportsResponse.
+        r"""Sets the page_info of this ListAimTemplateReportsResponse.
 
         :param page_info: The page_info of this ListAimTemplateReportsResponse.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

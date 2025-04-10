@@ -33,7 +33,7 @@ class CceInfo:
     }
 
     def __init__(self, id=None, cce_id=None, cce_name=None, compliant_count=None, non_compliant_count=None):
-        """CceInfo
+        r"""CceInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CceInfo:
 
     @property
     def id(self):
-        """Gets the id of this CceInfo.
+        r"""Gets the id of this CceInfo.
 
         主键id
 
@@ -82,7 +82,7 @@ class CceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CceInfo.
+        r"""Sets the id of this CceInfo.
 
         主键id
 
@@ -93,7 +93,7 @@ class CceInfo:
 
     @property
     def cce_id(self):
-        """Gets the cce_id of this CceInfo.
+        r"""Gets the cce_id of this CceInfo.
 
         cce集群id
 
@@ -104,7 +104,7 @@ class CceInfo:
 
     @cce_id.setter
     def cce_id(self, cce_id):
-        """Sets the cce_id of this CceInfo.
+        r"""Sets the cce_id of this CceInfo.
 
         cce集群id
 
@@ -115,7 +115,7 @@ class CceInfo:
 
     @property
     def cce_name(self):
-        """Gets the cce_name of this CceInfo.
+        r"""Gets the cce_name of this CceInfo.
 
         cce集群名称
 
@@ -126,7 +126,7 @@ class CceInfo:
 
     @cce_name.setter
     def cce_name(self, cce_name):
-        """Sets the cce_name of this CceInfo.
+        r"""Sets the cce_name of this CceInfo.
 
         cce集群名称
 
@@ -137,7 +137,7 @@ class CceInfo:
 
     @property
     def compliant_count(self):
-        """Gets the compliant_count of this CceInfo.
+        r"""Gets the compliant_count of this CceInfo.
 
         合规数量
 
@@ -148,7 +148,7 @@ class CceInfo:
 
     @compliant_count.setter
     def compliant_count(self, compliant_count):
-        """Sets the compliant_count of this CceInfo.
+        r"""Sets the compliant_count of this CceInfo.
 
         合规数量
 
@@ -159,7 +159,7 @@ class CceInfo:
 
     @property
     def non_compliant_count(self):
-        """Gets the non_compliant_count of this CceInfo.
+        r"""Gets the non_compliant_count of this CceInfo.
 
         不合规数量
 
@@ -170,7 +170,7 @@ class CceInfo:
 
     @non_compliant_count.setter
     def non_compliant_count(self, non_compliant_count):
-        """Sets the non_compliant_count of this CceInfo.
+        r"""Sets the non_compliant_count of this CceInfo.
 
         不合规数量
 

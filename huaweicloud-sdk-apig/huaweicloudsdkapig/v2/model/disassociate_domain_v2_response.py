@@ -24,7 +24,7 @@ class DisassociateDomainV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateDomainV2Response
+        r"""DisassociateDomainV2Response
 
         The model defined in huaweicloud sdk
 

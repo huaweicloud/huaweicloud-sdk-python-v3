@@ -28,7 +28,7 @@ class ListCloudDbaInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instance_list=None, total_count=None):
-        """ListCloudDbaInstancesResponse
+        r"""ListCloudDbaInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCloudDbaInstancesResponse(SdkResponse):
 
     @property
     def instance_list(self):
-        """Gets the instance_list of this ListCloudDbaInstancesResponse.
+        r"""Gets the instance_list of this ListCloudDbaInstancesResponse.
 
         实例列表。
 
@@ -62,7 +62,7 @@ class ListCloudDbaInstancesResponse(SdkResponse):
 
     @instance_list.setter
     def instance_list(self, instance_list):
-        """Sets the instance_list of this ListCloudDbaInstancesResponse.
+        r"""Sets the instance_list of this ListCloudDbaInstancesResponse.
 
         实例列表。
 
@@ -73,7 +73,7 @@ class ListCloudDbaInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCloudDbaInstancesResponse.
+        r"""Gets the total_count of this ListCloudDbaInstancesResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListCloudDbaInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCloudDbaInstancesResponse.
+        r"""Sets the total_count of this ListCloudDbaInstancesResponse.
 
         总数。
 

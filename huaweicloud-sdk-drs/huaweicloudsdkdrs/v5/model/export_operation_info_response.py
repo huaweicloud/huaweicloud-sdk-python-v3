@@ -26,7 +26,7 @@ class ExportOperationInfoResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ExportOperationInfoResponse
+        r"""ExportOperationInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExportOperationInfoResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ExportOperationInfoResponse.
+        r"""Gets the body of this ExportOperationInfoResponse.
 
         :return: The body of this ExportOperationInfoResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ExportOperationInfoResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportOperationInfoResponse.
+        r"""Sets the body of this ExportOperationInfoResponse.
 
         :param body: The body of this ExportOperationInfoResponse.
         :type body: str

@@ -26,7 +26,7 @@ class ListProtectableResponse(SdkResponse):
     }
 
     def __init__(self, instances=None):
-        """ListProtectableResponse
+        r"""ListProtectableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProtectableResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListProtectableResponse.
+        r"""Gets the instances of this ListProtectableResponse.
 
         可保护性查询实例
 
@@ -55,7 +55,7 @@ class ListProtectableResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListProtectableResponse.
+        r"""Sets the instances of this ListProtectableResponse.
 
         可保护性查询实例
 

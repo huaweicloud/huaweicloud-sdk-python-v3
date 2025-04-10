@@ -47,7 +47,7 @@ class CreateExclusiveHostsReq:
     }
 
     def __init__(self, availability_zone=None, name=None, apply_desktop_quantity=None, quantity=None, order_id=None, product_id=None, image_volumes=None, enterprise_project_id=None, memory_volumes=None, vpc_id=None, subnet_id=None, resize_exclusive_lites=None):
-        """CreateExclusiveHostsReq
+        r"""CreateExclusiveHostsReq
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateExclusiveHostsReq.
+        r"""Gets the availability_zone of this CreateExclusiveHostsReq.
 
         可用分区。
 
@@ -124,7 +124,7 @@ class CreateExclusiveHostsReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateExclusiveHostsReq.
+        r"""Sets the availability_zone of this CreateExclusiveHostsReq.
 
         可用分区。
 
@@ -135,7 +135,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateExclusiveHostsReq.
+        r"""Gets the name of this CreateExclusiveHostsReq.
 
         名称。
 
@@ -146,7 +146,7 @@ class CreateExclusiveHostsReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateExclusiveHostsReq.
+        r"""Sets the name of this CreateExclusiveHostsReq.
 
         名称。
 
@@ -157,7 +157,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def apply_desktop_quantity(self):
-        """Gets the apply_desktop_quantity of this CreateExclusiveHostsReq.
+        r"""Gets the apply_desktop_quantity of this CreateExclusiveHostsReq.
 
         追加桌面数量。
 
@@ -168,7 +168,7 @@ class CreateExclusiveHostsReq:
 
     @apply_desktop_quantity.setter
     def apply_desktop_quantity(self, apply_desktop_quantity):
-        """Sets the apply_desktop_quantity of this CreateExclusiveHostsReq.
+        r"""Sets the apply_desktop_quantity of this CreateExclusiveHostsReq.
 
         追加桌面数量。
 
@@ -179,7 +179,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def quantity(self):
-        """Gets the quantity of this CreateExclusiveHostsReq.
+        r"""Gets the quantity of this CreateExclusiveHostsReq.
 
         购买数量。
 
@@ -190,7 +190,7 @@ class CreateExclusiveHostsReq:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this CreateExclusiveHostsReq.
+        r"""Sets the quantity of this CreateExclusiveHostsReq.
 
         购买数量。
 
@@ -201,7 +201,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateExclusiveHostsReq.
+        r"""Gets the order_id of this CreateExclusiveHostsReq.
 
         订单ID。
 
@@ -212,7 +212,7 @@ class CreateExclusiveHostsReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateExclusiveHostsReq.
+        r"""Sets the order_id of this CreateExclusiveHostsReq.
 
         订单ID。
 
@@ -223,7 +223,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateExclusiveHostsReq.
+        r"""Gets the product_id of this CreateExclusiveHostsReq.
 
         产品套餐ID。
 
@@ -234,7 +234,7 @@ class CreateExclusiveHostsReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateExclusiveHostsReq.
+        r"""Sets the product_id of this CreateExclusiveHostsReq.
 
         产品套餐ID。
 
@@ -245,7 +245,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def image_volumes(self):
-        """Gets the image_volumes of this CreateExclusiveHostsReq.
+        r"""Gets the image_volumes of this CreateExclusiveHostsReq.
 
         镜像盘列表。
 
@@ -256,7 +256,7 @@ class CreateExclusiveHostsReq:
 
     @image_volumes.setter
     def image_volumes(self, image_volumes):
-        """Sets the image_volumes of this CreateExclusiveHostsReq.
+        r"""Sets the image_volumes of this CreateExclusiveHostsReq.
 
         镜像盘列表。
 
@@ -267,7 +267,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateExclusiveHostsReq.
+        r"""Gets the enterprise_project_id of this CreateExclusiveHostsReq.
 
         企业项目ID，默认\"0\"
 
@@ -278,7 +278,7 @@ class CreateExclusiveHostsReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateExclusiveHostsReq.
+        r"""Sets the enterprise_project_id of this CreateExclusiveHostsReq.
 
         企业项目ID，默认\"0\"
 
@@ -289,7 +289,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def memory_volumes(self):
-        """Gets the memory_volumes of this CreateExclusiveHostsReq.
+        r"""Gets the memory_volumes of this CreateExclusiveHostsReq.
 
         存储盘列表。
 
@@ -300,7 +300,7 @@ class CreateExclusiveHostsReq:
 
     @memory_volumes.setter
     def memory_volumes(self, memory_volumes):
-        """Sets the memory_volumes of this CreateExclusiveHostsReq.
+        r"""Sets the memory_volumes of this CreateExclusiveHostsReq.
 
         存储盘列表。
 
@@ -311,7 +311,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateExclusiveHostsReq.
+        r"""Gets the vpc_id of this CreateExclusiveHostsReq.
 
         vpc id。
 
@@ -322,7 +322,7 @@ class CreateExclusiveHostsReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateExclusiveHostsReq.
+        r"""Sets the vpc_id of this CreateExclusiveHostsReq.
 
         vpc id。
 
@@ -333,7 +333,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateExclusiveHostsReq.
+        r"""Gets the subnet_id of this CreateExclusiveHostsReq.
 
         子网id。
 
@@ -344,7 +344,7 @@ class CreateExclusiveHostsReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateExclusiveHostsReq.
+        r"""Sets the subnet_id of this CreateExclusiveHostsReq.
 
         子网id。
 
@@ -355,7 +355,7 @@ class CreateExclusiveHostsReq:
 
     @property
     def resize_exclusive_lites(self):
-        """Gets the resize_exclusive_lites of this CreateExclusiveHostsReq.
+        r"""Gets the resize_exclusive_lites of this CreateExclusiveHostsReq.
 
         :return: The resize_exclusive_lites of this CreateExclusiveHostsReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeExclusiveLitesReq`
@@ -364,7 +364,7 @@ class CreateExclusiveHostsReq:
 
     @resize_exclusive_lites.setter
     def resize_exclusive_lites(self, resize_exclusive_lites):
-        """Sets the resize_exclusive_lites of this CreateExclusiveHostsReq.
+        r"""Sets the resize_exclusive_lites of this CreateExclusiveHostsReq.
 
         :param resize_exclusive_lites: The resize_exclusive_lites of this CreateExclusiveHostsReq.
         :type resize_exclusive_lites: :class:`huaweicloudsdkworkspace.v2.ResizeExclusiveLitesReq`

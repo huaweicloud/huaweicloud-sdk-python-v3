@@ -28,7 +28,7 @@ class ListEntitiesForPolicyResponse(SdkResponse):
     }
 
     def __init__(self, attached_entities=None, page_info=None):
-        """ListEntitiesForPolicyResponse
+        r"""ListEntitiesForPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEntitiesForPolicyResponse(SdkResponse):
 
     @property
     def attached_entities(self):
-        """Gets the attached_entities of this ListEntitiesForPolicyResponse.
+        r"""Gets the attached_entities of this ListEntitiesForPolicyResponse.
 
         结构列表，每个结构都包含有关指定策略附加到的实体的详细信息。
 
@@ -62,7 +62,7 @@ class ListEntitiesForPolicyResponse(SdkResponse):
 
     @attached_entities.setter
     def attached_entities(self, attached_entities):
-        """Sets the attached_entities of this ListEntitiesForPolicyResponse.
+        r"""Sets the attached_entities of this ListEntitiesForPolicyResponse.
 
         结构列表，每个结构都包含有关指定策略附加到的实体的详细信息。
 
@@ -73,7 +73,7 @@ class ListEntitiesForPolicyResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEntitiesForPolicyResponse.
+        r"""Gets the page_info of this ListEntitiesForPolicyResponse.
 
         :return: The page_info of this ListEntitiesForPolicyResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListEntitiesForPolicyResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEntitiesForPolicyResponse.
+        r"""Sets the page_info of this ListEntitiesForPolicyResponse.
 
         :param page_info: The page_info of this ListEntitiesForPolicyResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

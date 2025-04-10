@@ -26,7 +26,7 @@ class ListServersDedicatedHostResponse(SdkResponse):
     }
 
     def __init__(self, servers=None):
-        """ListServersDedicatedHostResponse
+        r"""ListServersDedicatedHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListServersDedicatedHostResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this ListServersDedicatedHostResponse.
+        r"""Gets the servers of this ListServersDedicatedHostResponse.
 
         server字段数据结构说明
 
@@ -55,7 +55,7 @@ class ListServersDedicatedHostResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ListServersDedicatedHostResponse.
+        r"""Sets the servers of this ListServersDedicatedHostResponse.
 
         server字段数据结构说明
 

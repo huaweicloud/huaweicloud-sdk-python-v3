@@ -31,7 +31,7 @@ class NetworksResult:
     }
 
     def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
-        """NetworksResult
+        r"""NetworksResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NetworksResult:
 
     @property
     def id(self):
-        """Gets the id of this NetworksResult.
+        r"""Gets the id of this NetworksResult.
 
         网络ID
 
@@ -75,7 +75,7 @@ class NetworksResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NetworksResult.
+        r"""Sets the id of this NetworksResult.
 
         网络ID
 
@@ -86,7 +86,7 @@ class NetworksResult:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this NetworksResult.
+        r"""Gets the ipv6_enable of this NetworksResult.
 
         是否启用IPv6。取值为true时，标识此网卡已启用IPv6。
 
@@ -97,7 +97,7 @@ class NetworksResult:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this NetworksResult.
+        r"""Sets the ipv6_enable of this NetworksResult.
 
         是否启用IPv6。取值为true时，标识此网卡已启用IPv6。
 
@@ -108,7 +108,7 @@ class NetworksResult:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this NetworksResult.
+        r"""Gets the ipv6_bandwidth of this NetworksResult.
 
         :return: The ipv6_bandwidth of this NetworksResult.
         :rtype: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
@@ -117,7 +117,7 @@ class NetworksResult:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this NetworksResult.
+        r"""Sets the ipv6_bandwidth of this NetworksResult.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this NetworksResult.
         :type ipv6_bandwidth: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
@@ -126,7 +126,7 @@ class NetworksResult:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this NetworksResult.
+        r"""Gets the allowed_address_pairs of this NetworksResult.
 
         是否开启源/目的检查开关。
 
@@ -137,7 +137,7 @@ class NetworksResult:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this NetworksResult.
+        r"""Sets the allowed_address_pairs of this NetworksResult.
 
         是否开启源/目的检查开关。
 

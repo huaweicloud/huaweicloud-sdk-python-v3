@@ -29,7 +29,7 @@ class ShowApplyHistoryRequest:
     }
 
     def __init__(self, config_id=None, offset=None, limit=None):
-        """ShowApplyHistoryRequest
+        r"""ShowApplyHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowApplyHistoryRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ShowApplyHistoryRequest.
+        r"""Gets the config_id of this ShowApplyHistoryRequest.
 
         参数组id
 
@@ -67,7 +67,7 @@ class ShowApplyHistoryRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ShowApplyHistoryRequest.
+        r"""Sets the config_id of this ShowApplyHistoryRequest.
 
         参数组id
 
@@ -78,7 +78,7 @@ class ShowApplyHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowApplyHistoryRequest.
+        r"""Gets the offset of this ShowApplyHistoryRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
 
@@ -89,7 +89,7 @@ class ShowApplyHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowApplyHistoryRequest.
+        r"""Sets the offset of this ShowApplyHistoryRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
 
@@ -100,7 +100,7 @@ class ShowApplyHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowApplyHistoryRequest.
+        r"""Gets the limit of this ShowApplyHistoryRequest.
 
         查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
 
@@ -111,7 +111,7 @@ class ShowApplyHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowApplyHistoryRequest.
+        r"""Sets the limit of this ShowApplyHistoryRequest.
 
         查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
 

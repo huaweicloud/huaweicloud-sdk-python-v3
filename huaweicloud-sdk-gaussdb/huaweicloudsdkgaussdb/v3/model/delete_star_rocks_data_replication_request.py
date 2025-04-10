@@ -29,7 +29,7 @@ class DeleteStarRocksDataReplicationRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """DeleteStarRocksDataReplicationRequest
+        r"""DeleteStarRocksDataReplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteStarRocksDataReplicationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteStarRocksDataReplicationRequest.
+        r"""Gets the instance_id of this DeleteStarRocksDataReplicationRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class DeleteStarRocksDataReplicationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteStarRocksDataReplicationRequest.
+        r"""Sets the instance_id of this DeleteStarRocksDataReplicationRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class DeleteStarRocksDataReplicationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteStarRocksDataReplicationRequest.
+        r"""Gets the x_language of this DeleteStarRocksDataReplicationRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -88,7 +88,7 @@ class DeleteStarRocksDataReplicationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteStarRocksDataReplicationRequest.
+        r"""Sets the x_language of this DeleteStarRocksDataReplicationRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -99,7 +99,7 @@ class DeleteStarRocksDataReplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteStarRocksDataReplicationRequest.
+        r"""Gets the body of this DeleteStarRocksDataReplicationRequest.
 
         :return: The body of this DeleteStarRocksDataReplicationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteStarRocksDataReplication`
@@ -108,7 +108,7 @@ class DeleteStarRocksDataReplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteStarRocksDataReplicationRequest.
+        r"""Sets the body of this DeleteStarRocksDataReplicationRequest.
 
         :param body: The body of this DeleteStarRocksDataReplicationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteStarRocksDataReplication`

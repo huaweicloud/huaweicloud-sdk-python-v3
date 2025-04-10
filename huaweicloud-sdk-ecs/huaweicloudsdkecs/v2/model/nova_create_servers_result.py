@@ -35,7 +35,7 @@ class NovaCreateServersResult:
     }
 
     def __init__(self, id=None, links=None, security_groups=None, os_dc_fdisk_config=None, reservation_id=None, admin_pass=None):
-        """NovaCreateServersResult
+        r"""NovaCreateServersResult
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class NovaCreateServersResult:
 
     @property
     def id(self):
-        """Gets the id of this NovaCreateServersResult.
+        r"""Gets the id of this NovaCreateServersResult.
 
         弹性云服务器uuid。
 
@@ -84,7 +84,7 @@ class NovaCreateServersResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaCreateServersResult.
+        r"""Sets the id of this NovaCreateServersResult.
 
         弹性云服务器uuid。
 
@@ -95,7 +95,7 @@ class NovaCreateServersResult:
 
     @property
     def links(self):
-        """Gets the links of this NovaCreateServersResult.
+        r"""Gets the links of this NovaCreateServersResult.
 
         弹性云服务器URI自描述信息。
 
@@ -106,7 +106,7 @@ class NovaCreateServersResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this NovaCreateServersResult.
+        r"""Sets the links of this NovaCreateServersResult.
 
         弹性云服务器URI自描述信息。
 
@@ -117,7 +117,7 @@ class NovaCreateServersResult:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NovaCreateServersResult.
+        r"""Gets the security_groups of this NovaCreateServersResult.
 
         弹性云服务器所在安全组。
 
@@ -128,7 +128,7 @@ class NovaCreateServersResult:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NovaCreateServersResult.
+        r"""Sets the security_groups of this NovaCreateServersResult.
 
         弹性云服务器所在安全组。
 
@@ -139,7 +139,7 @@ class NovaCreateServersResult:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this NovaCreateServersResult.
+        r"""Gets the os_dc_fdisk_config of this NovaCreateServersResult.
 
         diskConfig方式。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -150,7 +150,7 @@ class NovaCreateServersResult:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this NovaCreateServersResult.
+        r"""Sets the os_dc_fdisk_config of this NovaCreateServersResult.
 
         diskConfig方式。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -161,7 +161,7 @@ class NovaCreateServersResult:
 
     @property
     def reservation_id(self):
-        """Gets the reservation_id of this NovaCreateServersResult.
+        r"""Gets the reservation_id of this NovaCreateServersResult.
 
         通过返回的reservation_id，可以过滤查询到本次创建的弹性云服务器。  > 说明： >  > 批量创建弹性云服务器时，支持使用该字段。
 
@@ -172,7 +172,7 @@ class NovaCreateServersResult:
 
     @reservation_id.setter
     def reservation_id(self, reservation_id):
-        """Sets the reservation_id of this NovaCreateServersResult.
+        r"""Sets the reservation_id of this NovaCreateServersResult.
 
         通过返回的reservation_id，可以过滤查询到本次创建的弹性云服务器。  > 说明： >  > 批量创建弹性云服务器时，支持使用该字段。
 
@@ -183,7 +183,7 @@ class NovaCreateServersResult:
 
     @property
     def admin_pass(self):
-        """Gets the admin_pass of this NovaCreateServersResult.
+        r"""Gets the admin_pass of this NovaCreateServersResult.
 
         Windows弹性云服务器Administrator用户的密码。
 
@@ -194,7 +194,7 @@ class NovaCreateServersResult:
 
     @admin_pass.setter
     def admin_pass(self, admin_pass):
-        """Sets the admin_pass of this NovaCreateServersResult.
+        r"""Sets the admin_pass of this NovaCreateServersResult.
 
         Windows弹性云服务器Administrator用户的密码。
 

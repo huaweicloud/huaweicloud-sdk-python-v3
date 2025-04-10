@@ -38,7 +38,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
     }
 
     def __init__(self, tenant=None, name=None, mobile=None, user_name=None, user_id=None, email=None, role=None):
-        """ShowOauth2UserInfoResponse
+        r"""ShowOauth2UserInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def tenant(self):
-        """Gets the tenant of this ShowOauth2UserInfoResponse.
+        r"""Gets the tenant of this ShowOauth2UserInfoResponse.
 
         租户code，这里即企业code
 
@@ -97,7 +97,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this ShowOauth2UserInfoResponse.
+        r"""Sets the tenant of this ShowOauth2UserInfoResponse.
 
         租户code，这里即企业code
 
@@ -108,7 +108,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowOauth2UserInfoResponse.
+        r"""Gets the name of this ShowOauth2UserInfoResponse.
 
         用户显示名
 
@@ -119,7 +119,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowOauth2UserInfoResponse.
+        r"""Sets the name of this ShowOauth2UserInfoResponse.
 
         用户显示名
 
@@ -130,7 +130,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def mobile(self):
-        """Gets the mobile of this ShowOauth2UserInfoResponse.
+        r"""Gets the mobile of this ShowOauth2UserInfoResponse.
 
         手机号
 
@@ -141,7 +141,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this ShowOauth2UserInfoResponse.
+        r"""Sets the mobile of this ShowOauth2UserInfoResponse.
 
         手机号
 
@@ -152,7 +152,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowOauth2UserInfoResponse.
+        r"""Gets the user_name of this ShowOauth2UserInfoResponse.
 
         用户登录账号
 
@@ -163,7 +163,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowOauth2UserInfoResponse.
+        r"""Sets the user_name of this ShowOauth2UserInfoResponse.
 
         用户登录账号
 
@@ -174,7 +174,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowOauth2UserInfoResponse.
+        r"""Gets the user_id of this ShowOauth2UserInfoResponse.
 
         用户外部id
 
@@ -185,7 +185,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowOauth2UserInfoResponse.
+        r"""Sets the user_id of this ShowOauth2UserInfoResponse.
 
         用户外部id
 
@@ -196,7 +196,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowOauth2UserInfoResponse.
+        r"""Gets the email of this ShowOauth2UserInfoResponse.
 
         邮箱
 
@@ -207,7 +207,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowOauth2UserInfoResponse.
+        r"""Sets the email of this ShowOauth2UserInfoResponse.
 
         邮箱
 
@@ -218,7 +218,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowOauth2UserInfoResponse.
+        r"""Gets the role of this ShowOauth2UserInfoResponse.
 
         角色，枚举：user或者admin
 
@@ -229,7 +229,7 @@ class ShowOauth2UserInfoResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowOauth2UserInfoResponse.
+        r"""Sets the role of this ShowOauth2UserInfoResponse.
 
         角色，枚举：user或者admin
 

@@ -44,7 +44,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
     }
 
     def __init__(self, comments=None, config_key=None, config_type=None, config_value=None, create_time=None, create_user=None, id=None, test_service_id=None, update_time=None, update_user=None):
-        """ShowAllConfigValueByTypeAndKeyResponse
+        r"""ShowAllConfigValueByTypeAndKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def comments(self):
-        """Gets the comments of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the comments of this ShowAllConfigValueByTypeAndKeyResponse.
 
         备注
 
@@ -118,7 +118,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @comments.setter
     def comments(self, comments):
-        """Sets the comments of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the comments of this ShowAllConfigValueByTypeAndKeyResponse.
 
         备注
 
@@ -129,7 +129,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def config_key(self):
-        """Gets the config_key of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the config_key of this ShowAllConfigValueByTypeAndKeyResponse.
 
         配置键
 
@@ -140,7 +140,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @config_key.setter
     def config_key(self, config_key):
-        """Sets the config_key of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the config_key of this ShowAllConfigValueByTypeAndKeyResponse.
 
         配置键
 
@@ -151,7 +151,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def config_type(self):
-        """Gets the config_type of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the config_type of this ShowAllConfigValueByTypeAndKeyResponse.
 
         配置类型
 
@@ -162,7 +162,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the config_type of this ShowAllConfigValueByTypeAndKeyResponse.
 
         配置类型
 
@@ -173,7 +173,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def config_value(self):
-        """Gets the config_value of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the config_value of this ShowAllConfigValueByTypeAndKeyResponse.
 
         配置值
 
@@ -184,7 +184,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the config_value of this ShowAllConfigValueByTypeAndKeyResponse.
 
         配置值
 
@@ -195,7 +195,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the create_time of this ShowAllConfigValueByTypeAndKeyResponse.
 
         创建时间
 
@@ -206,7 +206,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the create_time of this ShowAllConfigValueByTypeAndKeyResponse.
 
         创建时间
 
@@ -217,7 +217,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the create_user of this ShowAllConfigValueByTypeAndKeyResponse.
 
         创建者
 
@@ -228,7 +228,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the create_user of this ShowAllConfigValueByTypeAndKeyResponse.
 
         创建者
 
@@ -239,7 +239,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the id of this ShowAllConfigValueByTypeAndKeyResponse.
 
         UUID
 
@@ -250,7 +250,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the id of this ShowAllConfigValueByTypeAndKeyResponse.
 
         UUID
 
@@ -261,7 +261,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def test_service_id(self):
-        """Gets the test_service_id of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the test_service_id of this ShowAllConfigValueByTypeAndKeyResponse.
 
         服务id
 
@@ -272,7 +272,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @test_service_id.setter
     def test_service_id(self, test_service_id):
-        """Sets the test_service_id of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the test_service_id of this ShowAllConfigValueByTypeAndKeyResponse.
 
         服务id
 
@@ -283,7 +283,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the update_time of this ShowAllConfigValueByTypeAndKeyResponse.
 
         修改时间
 
@@ -294,7 +294,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the update_time of this ShowAllConfigValueByTypeAndKeyResponse.
 
         修改时间
 
@@ -305,7 +305,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Gets the update_user of this ShowAllConfigValueByTypeAndKeyResponse.
 
         修改者
 
@@ -316,7 +316,7 @@ class ShowAllConfigValueByTypeAndKeyResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ShowAllConfigValueByTypeAndKeyResponse.
+        r"""Sets the update_user of this ShowAllConfigValueByTypeAndKeyResponse.
 
         修改者
 

@@ -25,7 +25,7 @@ class ShowConfigMapRequest:
     }
 
     def __init__(self, config_map_id=None):
-        """ShowConfigMapRequest
+        r"""ShowConfigMapRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConfigMapRequest:
 
     @property
     def config_map_id(self):
-        """Gets the config_map_id of this ShowConfigMapRequest.
+        r"""Gets the config_map_id of this ShowConfigMapRequest.
 
         配置项ID，从专业版HiLens控制台配置项管理[获取配置项列表](listConfigMapUsingGET.xml)获取
 
@@ -53,7 +53,7 @@ class ShowConfigMapRequest:
 
     @config_map_id.setter
     def config_map_id(self, config_map_id):
-        """Sets the config_map_id of this ShowConfigMapRequest.
+        r"""Sets the config_map_id of this ShowConfigMapRequest.
 
         配置项ID，从专业版HiLens控制台配置项管理[获取配置项列表](listConfigMapUsingGET.xml)获取
 

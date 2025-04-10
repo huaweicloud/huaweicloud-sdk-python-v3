@@ -23,7 +23,7 @@ class FileAttr:
     }
 
     def __init__(self):
-        """FileAttr
+        r"""FileAttr
 
         The model defined in huaweicloud sdk
 

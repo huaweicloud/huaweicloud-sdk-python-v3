@@ -25,7 +25,7 @@ class SendVerificationMessageCodeRequest:
     }
 
     def __init__(self, body=None):
-        """SendVerificationMessageCodeRequest
+        r"""SendVerificationMessageCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SendVerificationMessageCodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendVerificationMessageCodeRequest.
+        r"""Gets the body of this SendVerificationMessageCodeRequest.
 
         :return: The body of this SendVerificationMessageCodeRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.SendVerificationCodeV2Req`
@@ -52,7 +52,7 @@ class SendVerificationMessageCodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendVerificationMessageCodeRequest.
+        r"""Sets the body of this SendVerificationMessageCodeRequest.
 
         :param body: The body of this SendVerificationMessageCodeRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.SendVerificationCodeV2Req`

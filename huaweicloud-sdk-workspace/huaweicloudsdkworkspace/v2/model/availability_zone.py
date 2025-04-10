@@ -37,7 +37,7 @@ class AvailabilityZone:
     }
 
     def __init__(self, availability_zone=None, display_name=None, i18n=None, sold_out=None, product_ids=None, visible=None, default_availability_zone=None):
-        """AvailabilityZone
+        r"""AvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AvailabilityZone:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this AvailabilityZone.
+        r"""Gets the availability_zone of this AvailabilityZone.
 
         可用分区编码。
 
@@ -96,7 +96,7 @@ class AvailabilityZone:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this AvailabilityZone.
+        r"""Sets the availability_zone of this AvailabilityZone.
 
         可用分区编码。
 
@@ -107,7 +107,7 @@ class AvailabilityZone:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AvailabilityZone.
+        r"""Gets the display_name of this AvailabilityZone.
 
         可用分区名称。
 
@@ -118,7 +118,7 @@ class AvailabilityZone:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AvailabilityZone.
+        r"""Sets the display_name of this AvailabilityZone.
 
         可用分区名称。
 
@@ -129,7 +129,7 @@ class AvailabilityZone:
 
     @property
     def i18n(self):
-        """Gets the i18n of this AvailabilityZone.
+        r"""Gets the i18n of this AvailabilityZone.
 
         可用分区国际化信息。
 
@@ -140,7 +140,7 @@ class AvailabilityZone:
 
     @i18n.setter
     def i18n(self, i18n):
-        """Sets the i18n of this AvailabilityZone.
+        r"""Sets the i18n of this AvailabilityZone.
 
         可用分区国际化信息。
 
@@ -151,7 +151,7 @@ class AvailabilityZone:
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this AvailabilityZone.
+        r"""Gets the sold_out of this AvailabilityZone.
 
         :return: The sold_out of this AvailabilityZone.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
@@ -160,7 +160,7 @@ class AvailabilityZone:
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this AvailabilityZone.
+        r"""Sets the sold_out of this AvailabilityZone.
 
         :param sold_out: The sold_out of this AvailabilityZone.
         :type sold_out: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
@@ -169,7 +169,7 @@ class AvailabilityZone:
 
     @property
     def product_ids(self):
-        """Gets the product_ids of this AvailabilityZone.
+        r"""Gets the product_ids of this AvailabilityZone.
 
         指定当前分区下自定义支持的产品ID列表，如果为空则支持所有套餐。
 
@@ -180,7 +180,7 @@ class AvailabilityZone:
 
     @product_ids.setter
     def product_ids(self, product_ids):
-        """Sets the product_ids of this AvailabilityZone.
+        r"""Sets the product_ids of this AvailabilityZone.
 
         指定当前分区下自定义支持的产品ID列表，如果为空则支持所有套餐。
 
@@ -191,7 +191,7 @@ class AvailabilityZone:
 
     @property
     def visible(self):
-        """Gets the visible of this AvailabilityZone.
+        r"""Gets the visible of this AvailabilityZone.
 
         是否可见。
 
@@ -202,7 +202,7 @@ class AvailabilityZone:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this AvailabilityZone.
+        r"""Sets the visible of this AvailabilityZone.
 
         是否可见。
 
@@ -213,7 +213,7 @@ class AvailabilityZone:
 
     @property
     def default_availability_zone(self):
-        """Gets the default_availability_zone of this AvailabilityZone.
+        r"""Gets the default_availability_zone of this AvailabilityZone.
 
         是否默认可用分区。
 
@@ -224,7 +224,7 @@ class AvailabilityZone:
 
     @default_availability_zone.setter
     def default_availability_zone(self, default_availability_zone):
-        """Sets the default_availability_zone of this AvailabilityZone.
+        r"""Sets the default_availability_zone of this AvailabilityZone.
 
         是否默认可用分区。
 

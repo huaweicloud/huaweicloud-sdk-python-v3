@@ -27,7 +27,7 @@ class BalanceTypePay:
     }
 
     def __init__(self, balance_type_id=None, deduct_amount=None):
-        """BalanceTypePay
+        r"""BalanceTypePay
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BalanceTypePay:
 
     @property
     def balance_type_id(self):
-        """Gets the balance_type_id of this BalanceTypePay.
+        r"""Gets the balance_type_id of this BalanceTypePay.
 
         账户类型。 BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户BALANCE_TYPE_BONUS：奖励账户（该账户已下线）BALANCE_TYPE_COUPON：代金券账户BALANCE_TYPE_DEBIT_RATE：折扣账户
 
@@ -61,7 +61,7 @@ class BalanceTypePay:
 
     @balance_type_id.setter
     def balance_type_id(self, balance_type_id):
-        """Sets the balance_type_id of this BalanceTypePay.
+        r"""Sets the balance_type_id of this BalanceTypePay.
 
         账户类型。 BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户BALANCE_TYPE_BONUS：奖励账户（该账户已下线）BALANCE_TYPE_COUPON：代金券账户BALANCE_TYPE_DEBIT_RATE：折扣账户
 
@@ -72,7 +72,7 @@ class BalanceTypePay:
 
     @property
     def deduct_amount(self):
-        """Gets the deduct_amount of this BalanceTypePay.
+        r"""Gets the deduct_amount of this BalanceTypePay.
 
         支出金额。 单位：分
 
@@ -83,7 +83,7 @@ class BalanceTypePay:
 
     @deduct_amount.setter
     def deduct_amount(self, deduct_amount):
-        """Sets the deduct_amount of this BalanceTypePay.
+        r"""Sets the deduct_amount of this BalanceTypePay.
 
         支出金额。 单位：分
 

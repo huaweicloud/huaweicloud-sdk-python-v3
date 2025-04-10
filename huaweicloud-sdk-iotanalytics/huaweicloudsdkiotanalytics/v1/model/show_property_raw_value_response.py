@@ -28,7 +28,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, properties=None):
-        """ShowPropertyRawValueResponse
+        r"""ShowPropertyRawValueResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this ShowPropertyRawValueResponse.
+        r"""Gets the timestamps of this ShowPropertyRawValueResponse.
 
         时间序列,使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -62,7 +62,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this ShowPropertyRawValueResponse.
+        r"""Sets the timestamps of this ShowPropertyRawValueResponse.
 
         时间序列,使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -73,7 +73,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowPropertyRawValueResponse.
+        r"""Gets the properties of this ShowPropertyRawValueResponse.
 
         响应属性列表
 
@@ -84,7 +84,7 @@ class ShowPropertyRawValueResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowPropertyRawValueResponse.
+        r"""Sets the properties of this ShowPropertyRawValueResponse.
 
         响应属性列表
 

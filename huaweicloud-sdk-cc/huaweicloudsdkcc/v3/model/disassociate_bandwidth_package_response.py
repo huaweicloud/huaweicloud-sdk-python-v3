@@ -28,7 +28,7 @@ class DisassociateBandwidthPackageResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, bandwidth_package=None):
-        """DisassociateBandwidthPackageResponse
+        r"""DisassociateBandwidthPackageResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateBandwidthPackageResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DisassociateBandwidthPackageResponse.
+        r"""Gets the request_id of this DisassociateBandwidthPackageResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class DisassociateBandwidthPackageResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DisassociateBandwidthPackageResponse.
+        r"""Sets the request_id of this DisassociateBandwidthPackageResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class DisassociateBandwidthPackageResponse(SdkResponse):
 
     @property
     def bandwidth_package(self):
-        """Gets the bandwidth_package of this DisassociateBandwidthPackageResponse.
+        r"""Gets the bandwidth_package of this DisassociateBandwidthPackageResponse.
 
         :return: The bandwidth_package of this DisassociateBandwidthPackageResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthPackage`
@@ -80,7 +80,7 @@ class DisassociateBandwidthPackageResponse(SdkResponse):
 
     @bandwidth_package.setter
     def bandwidth_package(self, bandwidth_package):
-        """Sets the bandwidth_package of this DisassociateBandwidthPackageResponse.
+        r"""Sets the bandwidth_package of this DisassociateBandwidthPackageResponse.
 
         :param bandwidth_package: The bandwidth_package of this DisassociateBandwidthPackageResponse.
         :type bandwidth_package: :class:`huaweicloudsdkcc.v3.BandwidthPackage`

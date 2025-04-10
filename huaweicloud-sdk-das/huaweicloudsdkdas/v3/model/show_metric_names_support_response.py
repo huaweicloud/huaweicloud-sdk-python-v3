@@ -26,7 +26,7 @@ class ShowMetricNamesSupportResponse(SdkResponse):
     }
 
     def __init__(self, support_metric_names=None):
-        """ShowMetricNamesSupportResponse
+        r"""ShowMetricNamesSupportResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMetricNamesSupportResponse(SdkResponse):
 
     @property
     def support_metric_names(self):
-        """Gets the support_metric_names of this ShowMetricNamesSupportResponse.
+        r"""Gets the support_metric_names of this ShowMetricNamesSupportResponse.
 
         支持指标名称列表
 
@@ -55,7 +55,7 @@ class ShowMetricNamesSupportResponse(SdkResponse):
 
     @support_metric_names.setter
     def support_metric_names(self, support_metric_names):
-        """Sets the support_metric_names of this ShowMetricNamesSupportResponse.
+        r"""Sets the support_metric_names of this ShowMetricNamesSupportResponse.
 
         支持指标名称列表
 

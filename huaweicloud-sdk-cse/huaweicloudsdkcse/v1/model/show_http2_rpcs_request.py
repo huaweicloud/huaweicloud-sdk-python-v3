@@ -27,7 +27,7 @@ class ShowHttp2RpcsRequest:
     }
 
     def __init__(self, gateway_id=None, accept=None):
-        """ShowHttp2RpcsRequest
+        r"""ShowHttp2RpcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowHttp2RpcsRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ShowHttp2RpcsRequest.
+        r"""Gets the gateway_id of this ShowHttp2RpcsRequest.
 
         网关实例id
 
@@ -60,7 +60,7 @@ class ShowHttp2RpcsRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ShowHttp2RpcsRequest.
+        r"""Sets the gateway_id of this ShowHttp2RpcsRequest.
 
         网关实例id
 
@@ -71,7 +71,7 @@ class ShowHttp2RpcsRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this ShowHttp2RpcsRequest.
+        r"""Gets the accept of this ShowHttp2RpcsRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -82,7 +82,7 @@ class ShowHttp2RpcsRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this ShowHttp2RpcsRequest.
+        r"""Sets the accept of this ShowHttp2RpcsRequest.
 
         该字段内容填为 \"application/json\"
 

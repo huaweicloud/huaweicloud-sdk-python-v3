@@ -25,7 +25,7 @@ class CreateMessageNotificationPolicyRequestBody:
     }
 
     def __init__(self, message_notification_policy_list=None):
-        """CreateMessageNotificationPolicyRequestBody
+        r"""CreateMessageNotificationPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMessageNotificationPolicyRequestBody:
 
     @property
     def message_notification_policy_list(self):
-        """Gets the message_notification_policy_list of this CreateMessageNotificationPolicyRequestBody.
+        r"""Gets the message_notification_policy_list of this CreateMessageNotificationPolicyRequestBody.
 
         消息通知策略
 
@@ -53,7 +53,7 @@ class CreateMessageNotificationPolicyRequestBody:
 
     @message_notification_policy_list.setter
     def message_notification_policy_list(self, message_notification_policy_list):
-        """Sets the message_notification_policy_list of this CreateMessageNotificationPolicyRequestBody.
+        r"""Sets the message_notification_policy_list of this CreateMessageNotificationPolicyRequestBody.
 
         消息通知策略
 

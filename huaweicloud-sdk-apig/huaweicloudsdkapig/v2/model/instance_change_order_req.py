@@ -29,7 +29,7 @@ class InstanceChangeOrderReq:
     }
 
     def __init__(self, instance_id=None, product_id=None, resize_info=None):
-        """InstanceChangeOrderReq
+        r"""InstanceChangeOrderReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceChangeOrderReq:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceChangeOrderReq.
+        r"""Gets the instance_id of this InstanceChangeOrderReq.
 
         实例ID
 
@@ -68,7 +68,7 @@ class InstanceChangeOrderReq:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceChangeOrderReq.
+        r"""Sets the instance_id of this InstanceChangeOrderReq.
 
         实例ID
 
@@ -79,7 +79,7 @@ class InstanceChangeOrderReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this InstanceChangeOrderReq.
+        r"""Gets the product_id of this InstanceChangeOrderReq.
 
         产品编号
 
@@ -90,7 +90,7 @@ class InstanceChangeOrderReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this InstanceChangeOrderReq.
+        r"""Sets the product_id of this InstanceChangeOrderReq.
 
         产品编号
 
@@ -101,7 +101,7 @@ class InstanceChangeOrderReq:
 
     @property
     def resize_info(self):
-        """Gets the resize_info of this InstanceChangeOrderReq.
+        r"""Gets the resize_info of this InstanceChangeOrderReq.
 
         :return: The resize_info of this InstanceChangeOrderReq.
         :rtype: :class:`huaweicloudsdkapig.v2.ResizeInstanceReq`
@@ -110,7 +110,7 @@ class InstanceChangeOrderReq:
 
     @resize_info.setter
     def resize_info(self, resize_info):
-        """Sets the resize_info of this InstanceChangeOrderReq.
+        r"""Sets the resize_info of this InstanceChangeOrderReq.
 
         :param resize_info: The resize_info of this InstanceChangeOrderReq.
         :type resize_info: :class:`huaweicloudsdkapig.v2.ResizeInstanceReq`

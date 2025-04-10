@@ -39,7 +39,7 @@ class DeptDTO:
     }
 
     def __init__(self, dept_code=None, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, sort_level=None):
-        """DeptDTO
+        r"""DeptDTO
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class DeptDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this DeptDTO.
+        r"""Gets the dept_code of this DeptDTO.
 
         部门编码，企业内唯一，若携带则以携带为准，不支持修改。 
 
@@ -102,7 +102,7 @@ class DeptDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this DeptDTO.
+        r"""Sets the dept_code of this DeptDTO.
 
         部门编码，企业内唯一，若携带则以携带为准，不支持修改。 
 
@@ -113,7 +113,7 @@ class DeptDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this DeptDTO.
+        r"""Gets the dept_name of this DeptDTO.
 
         部门名称。 
 
@@ -124,7 +124,7 @@ class DeptDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this DeptDTO.
+        r"""Sets the dept_name of this DeptDTO.
 
         部门名称。 
 
@@ -135,7 +135,7 @@ class DeptDTO:
 
     @property
     def parent_dept_code(self):
-        """Gets the parent_dept_code of this DeptDTO.
+        r"""Gets the parent_dept_code of this DeptDTO.
 
         父部门编码，默认为根部门。 默认值：1。 
 
@@ -146,7 +146,7 @@ class DeptDTO:
 
     @parent_dept_code.setter
     def parent_dept_code(self, parent_dept_code):
-        """Sets the parent_dept_code of this DeptDTO.
+        r"""Sets the parent_dept_code of this DeptDTO.
 
         父部门编码，默认为根部门。 默认值：1。 
 
@@ -157,7 +157,7 @@ class DeptDTO:
 
     @property
     def note(self):
-        """Gets the note of this DeptDTO.
+        r"""Gets the note of this DeptDTO.
 
         备注。 
 
@@ -168,7 +168,7 @@ class DeptDTO:
 
     @note.setter
     def note(self, note):
-        """Sets the note of this DeptDTO.
+        r"""Sets the note of this DeptDTO.
 
         备注。 
 
@@ -179,7 +179,7 @@ class DeptDTO:
 
     @property
     def in_permission(self):
-        """Gets the in_permission of this DeptDTO.
+        r"""Gets the in_permission of this DeptDTO.
 
         其他用户对该部门下用户的访问权限。 * UNLIMITED：默认，不做限制 * OPEN：公开，其他部门都可访问（无论对方权限如何配置）
 
@@ -190,7 +190,7 @@ class DeptDTO:
 
     @in_permission.setter
     def in_permission(self, in_permission):
-        """Sets the in_permission of this DeptDTO.
+        r"""Sets the in_permission of this DeptDTO.
 
         其他用户对该部门下用户的访问权限。 * UNLIMITED：默认，不做限制 * OPEN：公开，其他部门都可访问（无论对方权限如何配置）
 
@@ -201,7 +201,7 @@ class DeptDTO:
 
     @property
     def out_permission(self):
-        """Gets the out_permission of this DeptDTO.
+        r"""Gets the out_permission of this DeptDTO.
 
         该部门下用户访问权限控制。 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
 
@@ -212,7 +212,7 @@ class DeptDTO:
 
     @out_permission.setter
     def out_permission(self, out_permission):
-        """Sets the out_permission of this DeptDTO.
+        r"""Sets the out_permission of this DeptDTO.
 
         该部门下用户访问权限控制。 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
 
@@ -223,7 +223,7 @@ class DeptDTO:
 
     @property
     def designated_out_dept_codes(self):
-        """Gets the designated_out_dept_codes of this DeptDTO.
+        r"""Gets the designated_out_dept_codes of this DeptDTO.
 
         允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150个部门。
 
@@ -234,7 +234,7 @@ class DeptDTO:
 
     @designated_out_dept_codes.setter
     def designated_out_dept_codes(self, designated_out_dept_codes):
-        """Sets the designated_out_dept_codes of this DeptDTO.
+        r"""Sets the designated_out_dept_codes of this DeptDTO.
 
         允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150个部门。
 
@@ -245,7 +245,7 @@ class DeptDTO:
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this DeptDTO.
+        r"""Gets the sort_level of this DeptDTO.
 
         部门排序号，序号越小,部门排序越靠前。
 
@@ -256,7 +256,7 @@ class DeptDTO:
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this DeptDTO.
+        r"""Sets the sort_level of this DeptDTO.
 
         部门排序号，序号越小,部门排序越靠前。
 

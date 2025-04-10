@@ -37,7 +37,7 @@ class PremiumWafServer:
     }
 
     def __init__(self, front_protocol=None, back_protocol=None, weight=None, address=None, port=None, type=None, vpc_id=None):
-        """PremiumWafServer
+        r"""PremiumWafServer
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class PremiumWafServer:
 
     @property
     def front_protocol(self):
-        """Gets the front_protocol of this PremiumWafServer.
+        r"""Gets the front_protocol of this PremiumWafServer.
 
         客户端请求访问防护域名源站服务器的协议
 
@@ -90,7 +90,7 @@ class PremiumWafServer:
 
     @front_protocol.setter
     def front_protocol(self, front_protocol):
-        """Sets the front_protocol of this PremiumWafServer.
+        r"""Sets the front_protocol of this PremiumWafServer.
 
         客户端请求访问防护域名源站服务器的协议
 
@@ -101,7 +101,7 @@ class PremiumWafServer:
 
     @property
     def back_protocol(self):
-        """Gets the back_protocol of this PremiumWafServer.
+        r"""Gets the back_protocol of this PremiumWafServer.
 
         WAF转发客户端请求到防护域名源站服务器的协议
 
@@ -112,7 +112,7 @@ class PremiumWafServer:
 
     @back_protocol.setter
     def back_protocol(self, back_protocol):
-        """Sets the back_protocol of this PremiumWafServer.
+        r"""Sets the back_protocol of this PremiumWafServer.
 
         WAF转发客户端请求到防护域名源站服务器的协议
 
@@ -123,7 +123,7 @@ class PremiumWafServer:
 
     @property
     def weight(self):
-        """Gets the weight of this PremiumWafServer.
+        r"""Gets the weight of this PremiumWafServer.
 
         源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
 
@@ -134,7 +134,7 @@ class PremiumWafServer:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this PremiumWafServer.
+        r"""Sets the weight of this PremiumWafServer.
 
         源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
 
@@ -145,7 +145,7 @@ class PremiumWafServer:
 
     @property
     def address(self):
-        """Gets the address of this PremiumWafServer.
+        r"""Gets the address of this PremiumWafServer.
 
         客户端访问的源站服务器的IP地址
 
@@ -156,7 +156,7 @@ class PremiumWafServer:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PremiumWafServer.
+        r"""Sets the address of this PremiumWafServer.
 
         客户端访问的源站服务器的IP地址
 
@@ -167,7 +167,7 @@ class PremiumWafServer:
 
     @property
     def port(self):
-        """Gets the port of this PremiumWafServer.
+        r"""Gets the port of this PremiumWafServer.
 
         WAF转发客户端请求到源站服务的业务端口
 
@@ -178,7 +178,7 @@ class PremiumWafServer:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this PremiumWafServer.
+        r"""Sets the port of this PremiumWafServer.
 
         WAF转发客户端请求到源站服务的业务端口
 
@@ -189,7 +189,7 @@ class PremiumWafServer:
 
     @property
     def type(self):
-        """Gets the type of this PremiumWafServer.
+        r"""Gets the type of this PremiumWafServer.
 
         源站地址为ipv4或ipv6
 
@@ -200,7 +200,7 @@ class PremiumWafServer:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PremiumWafServer.
+        r"""Sets the type of this PremiumWafServer.
 
         源站地址为ipv4或ipv6
 
@@ -211,7 +211,7 @@ class PremiumWafServer:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this PremiumWafServer.
+        r"""Gets the vpc_id of this PremiumWafServer.
 
         VPC id,通过以下步骤获取VPC id：   - 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网   - 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 
@@ -222,7 +222,7 @@ class PremiumWafServer:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this PremiumWafServer.
+        r"""Sets the vpc_id of this PremiumWafServer.
 
         VPC id,通过以下步骤获取VPC id：   - 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网   - 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 

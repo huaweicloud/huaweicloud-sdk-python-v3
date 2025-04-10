@@ -26,7 +26,7 @@ class ImportSecurityBuiltinCategoryGroupsResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ImportSecurityBuiltinCategoryGroupsResponse
+        r"""ImportSecurityBuiltinCategoryGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportSecurityBuiltinCategoryGroupsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ImportSecurityBuiltinCategoryGroupsResponse.
+        r"""Gets the result of this ImportSecurityBuiltinCategoryGroupsResponse.
 
         导入结果。
 
@@ -55,7 +55,7 @@ class ImportSecurityBuiltinCategoryGroupsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ImportSecurityBuiltinCategoryGroupsResponse.
+        r"""Sets the result of this ImportSecurityBuiltinCategoryGroupsResponse.
 
         导入结果。
 

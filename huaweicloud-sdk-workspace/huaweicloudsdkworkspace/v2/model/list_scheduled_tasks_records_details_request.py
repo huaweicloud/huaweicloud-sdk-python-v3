@@ -31,7 +31,7 @@ class ListScheduledTasksRecordsDetailsRequest:
     }
 
     def __init__(self, task_id=None, record_id=None, offset=None, limit=None):
-        """ListScheduledTasksRecordsDetailsRequest
+        r"""ListScheduledTasksRecordsDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Gets the task_id of this ListScheduledTasksRecordsDetailsRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Sets the task_id of this ListScheduledTasksRecordsDetailsRequest.
 
         任务ID。
 
@@ -82,7 +82,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Gets the record_id of this ListScheduledTasksRecordsDetailsRequest.
 
         任务执行记录ID。
 
@@ -93,7 +93,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Sets the record_id of this ListScheduledTasksRecordsDetailsRequest.
 
         任务执行记录ID。
 
@@ -104,7 +104,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Gets the offset of this ListScheduledTasksRecordsDetailsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -115,7 +115,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Sets the offset of this ListScheduledTasksRecordsDetailsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -126,7 +126,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Gets the limit of this ListScheduledTasksRecordsDetailsRequest.
 
         用于分页查询，每页返回的个数，取值范围0~100。
 
@@ -137,7 +137,7 @@ class ListScheduledTasksRecordsDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduledTasksRecordsDetailsRequest.
+        r"""Sets the limit of this ListScheduledTasksRecordsDetailsRequest.
 
         用于分页查询，每页返回的个数，取值范围0~100。
 

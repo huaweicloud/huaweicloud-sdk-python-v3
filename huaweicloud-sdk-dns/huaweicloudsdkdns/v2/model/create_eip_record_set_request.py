@@ -29,7 +29,7 @@ class CreateEipRecordSetRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None, body=None):
-        """CreateEipRecordSetRequest
+        r"""CreateEipRecordSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateEipRecordSetRequest:
 
     @property
     def region(self):
-        """Gets the region of this CreateEipRecordSetRequest.
+        r"""Gets the region of this CreateEipRecordSetRequest.
 
         租户的区域信息。
 
@@ -66,7 +66,7 @@ class CreateEipRecordSetRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateEipRecordSetRequest.
+        r"""Sets the region of this CreateEipRecordSetRequest.
 
         租户的区域信息。
 
@@ -77,7 +77,7 @@ class CreateEipRecordSetRequest:
 
     @property
     def floatingip_id(self):
-        """Gets the floatingip_id of this CreateEipRecordSetRequest.
+        r"""Gets the floatingip_id of this CreateEipRecordSetRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -88,7 +88,7 @@ class CreateEipRecordSetRequest:
 
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
-        """Sets the floatingip_id of this CreateEipRecordSetRequest.
+        r"""Sets the floatingip_id of this CreateEipRecordSetRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -99,7 +99,7 @@ class CreateEipRecordSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEipRecordSetRequest.
+        r"""Gets the body of this CreateEipRecordSetRequest.
 
         :return: The body of this CreateEipRecordSetRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePtrReq`
@@ -108,7 +108,7 @@ class CreateEipRecordSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEipRecordSetRequest.
+        r"""Sets the body of this CreateEipRecordSetRequest.
 
         :param body: The body of this CreateEipRecordSetRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreatePtrReq`

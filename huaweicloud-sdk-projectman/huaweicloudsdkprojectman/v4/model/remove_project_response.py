@@ -24,7 +24,7 @@ class RemoveProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RemoveProjectResponse
+        r"""RemoveProjectResponse
 
         The model defined in huaweicloud sdk
 

@@ -53,7 +53,7 @@ class Rule:
     }
 
     def __init__(self, permissions=None, rule_id=None, name=None, app_id=None, app_name=None, description=None, status=None, data_parsing_status=None, sql_field=None, sql_where=None, rule_express=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class Rule:
 
     @property
     def permissions(self):
-        """Gets the permissions of this Rule.
+        r"""Gets the permissions of this Rule.
 
         权限
 
@@ -152,7 +152,7 @@ class Rule:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this Rule.
+        r"""Sets the permissions of this Rule.
 
         权限
 
@@ -163,7 +163,7 @@ class Rule:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this Rule.
+        r"""Gets the rule_id of this Rule.
 
         规则ID
 
@@ -174,7 +174,7 @@ class Rule:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this Rule.
+        r"""Sets the rule_id of this Rule.
 
         规则ID
 
@@ -185,7 +185,7 @@ class Rule:
 
     @property
     def name(self):
-        """Gets the name of this Rule.
+        r"""Gets the name of this Rule.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -196,7 +196,7 @@ class Rule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Rule.
+        r"""Sets the name of this Rule.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -207,7 +207,7 @@ class Rule:
 
     @property
     def app_id(self):
-        """Gets the app_id of this Rule.
+        r"""Gets the app_id of this Rule.
 
         应用ID
 
@@ -218,7 +218,7 @@ class Rule:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this Rule.
+        r"""Sets the app_id of this Rule.
 
         应用ID
 
@@ -229,7 +229,7 @@ class Rule:
 
     @property
     def app_name(self):
-        """Gets the app_name of this Rule.
+        r"""Gets the app_name of this Rule.
 
         应用名称
 
@@ -240,7 +240,7 @@ class Rule:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this Rule.
+        r"""Sets the app_name of this Rule.
 
         应用名称
 
@@ -251,7 +251,7 @@ class Rule:
 
     @property
     def description(self):
-        """Gets the description of this Rule.
+        r"""Gets the description of this Rule.
 
         描述
 
@@ -262,7 +262,7 @@ class Rule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Rule.
+        r"""Sets the description of this Rule.
 
         描述
 
@@ -273,7 +273,7 @@ class Rule:
 
     @property
     def status(self):
-        """Gets the status of this Rule.
+        r"""Gets the status of this Rule.
 
         规则状态 0-启用 1-停用
 
@@ -284,7 +284,7 @@ class Rule:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Rule.
+        r"""Sets the status of this Rule.
 
         规则状态 0-启用 1-停用
 
@@ -295,7 +295,7 @@ class Rule:
 
     @property
     def data_parsing_status(self):
-        """Gets the data_parsing_status of this Rule.
+        r"""Gets the data_parsing_status of this Rule.
 
         数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
 
@@ -306,7 +306,7 @@ class Rule:
 
     @data_parsing_status.setter
     def data_parsing_status(self, data_parsing_status):
-        """Sets the data_parsing_status of this Rule.
+        r"""Sets the data_parsing_status of this Rule.
 
         数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
 
@@ -317,7 +317,7 @@ class Rule:
 
     @property
     def sql_field(self):
-        """Gets the sql_field of this Rule.
+        r"""Gets the sql_field of this Rule.
 
         SQL查询字段
 
@@ -328,7 +328,7 @@ class Rule:
 
     @sql_field.setter
     def sql_field(self, sql_field):
-        """Sets the sql_field of this Rule.
+        r"""Sets the sql_field of this Rule.
 
         SQL查询字段
 
@@ -339,7 +339,7 @@ class Rule:
 
     @property
     def sql_where(self):
-        """Gets the sql_where of this Rule.
+        r"""Gets the sql_where of this Rule.
 
         SQL查询条件
 
@@ -350,7 +350,7 @@ class Rule:
 
     @sql_where.setter
     def sql_where(self, sql_where):
-        """Sets the sql_where of this Rule.
+        r"""Sets the sql_where of this Rule.
 
         SQL查询条件
 
@@ -361,7 +361,7 @@ class Rule:
 
     @property
     def rule_express(self):
-        """Gets the rule_express of this Rule.
+        r"""Gets the rule_express of this Rule.
 
         完整的规则表达式
 
@@ -372,7 +372,7 @@ class Rule:
 
     @rule_express.setter
     def rule_express(self, rule_express):
-        """Sets the rule_express of this Rule.
+        r"""Sets the rule_express of this Rule.
 
         完整的规则表达式
 
@@ -383,7 +383,7 @@ class Rule:
 
     @property
     def created_user(self):
-        """Gets the created_user of this Rule.
+        r"""Gets the created_user of this Rule.
 
         :return: The created_user of this Rule.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -392,7 +392,7 @@ class Rule:
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this Rule.
+        r"""Sets the created_user of this Rule.
 
         :param created_user: The created_user of this Rule.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -401,7 +401,7 @@ class Rule:
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this Rule.
+        r"""Gets the last_updated_user of this Rule.
 
         :return: The last_updated_user of this Rule.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -410,7 +410,7 @@ class Rule:
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this Rule.
+        r"""Sets the last_updated_user of this Rule.
 
         :param last_updated_user: The last_updated_user of this Rule.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -419,7 +419,7 @@ class Rule:
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this Rule.
+        r"""Gets the created_datetime of this Rule.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -430,7 +430,7 @@ class Rule:
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this Rule.
+        r"""Sets the created_datetime of this Rule.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -441,7 +441,7 @@ class Rule:
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this Rule.
+        r"""Gets the last_updated_datetime of this Rule.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -452,7 +452,7 @@ class Rule:
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this Rule.
+        r"""Sets the last_updated_datetime of this Rule.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 

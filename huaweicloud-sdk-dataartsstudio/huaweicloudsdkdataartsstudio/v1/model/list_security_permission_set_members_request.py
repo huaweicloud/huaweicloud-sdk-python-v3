@@ -39,7 +39,7 @@ class ListSecurityPermissionSetMembersRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None, limit=None, offset=None, member_name=None, member_type=None, order_by_asc=None, order_by=None):
-        """ListSecurityPermissionSetMembersRequest
+        r"""ListSecurityPermissionSetMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the permission_set_id of this ListSecurityPermissionSetMembersRequest.
 
         权限集id
 
@@ -101,7 +101,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the permission_set_id of this ListSecurityPermissionSetMembersRequest.
 
         权限集id
 
@@ -112,7 +112,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the workspace of this ListSecurityPermissionSetMembersRequest.
 
         DataArts Studio工作空间ID
 
@@ -123,7 +123,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the workspace of this ListSecurityPermissionSetMembersRequest.
 
         DataArts Studio工作空间ID
 
@@ -134,7 +134,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the limit of this ListSecurityPermissionSetMembersRequest.
 
         limit
 
@@ -145,7 +145,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the limit of this ListSecurityPermissionSetMembersRequest.
 
         limit
 
@@ -156,7 +156,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the offset of this ListSecurityPermissionSetMembersRequest.
 
         offset
 
@@ -167,7 +167,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the offset of this ListSecurityPermissionSetMembersRequest.
 
         offset
 
@@ -178,7 +178,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def member_name(self):
-        """Gets the member_name of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the member_name of this ListSecurityPermissionSetMembersRequest.
 
         成员名称
 
@@ -189,7 +189,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the member_name of this ListSecurityPermissionSetMembersRequest.
 
         成员名称
 
@@ -200,7 +200,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def member_type(self):
-        """Gets the member_type of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the member_type of this ListSecurityPermissionSetMembersRequest.
 
         成员类型,USER,USER_GROUP,WORKSPACE_ROLE
 
@@ -211,7 +211,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the member_type of this ListSecurityPermissionSetMembersRequest.
 
         成员类型,USER,USER_GROUP,WORKSPACE_ROLE
 
@@ -222,7 +222,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def order_by_asc(self):
-        """Gets the order_by_asc of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the order_by_asc of this ListSecurityPermissionSetMembersRequest.
 
         是否升序（仅指定排序参数时有效）
 
@@ -233,7 +233,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @order_by_asc.setter
     def order_by_asc(self, order_by_asc):
-        """Sets the order_by_asc of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the order_by_asc of this ListSecurityPermissionSetMembersRequest.
 
         是否升序（仅指定排序参数时有效）
 
@@ -244,7 +244,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityPermissionSetMembersRequest.
+        r"""Gets the order_by of this ListSecurityPermissionSetMembersRequest.
 
         排序参数, CREATE_TIME, MEMBER_NAME
 
@@ -255,7 +255,7 @@ class ListSecurityPermissionSetMembersRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityPermissionSetMembersRequest.
+        r"""Sets the order_by of this ListSecurityPermissionSetMembersRequest.
 
         排序参数, CREATE_TIME, MEMBER_NAME
 

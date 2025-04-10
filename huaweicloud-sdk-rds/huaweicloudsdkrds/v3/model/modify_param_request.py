@@ -25,7 +25,7 @@ class ModifyParamRequest:
     }
 
     def __init__(self, value=None):
-        """ModifyParamRequest
+        r"""ModifyParamRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyParamRequest:
 
     @property
     def value(self):
-        """Gets the value of this ModifyParamRequest.
+        r"""Gets the value of this ModifyParamRequest.
 
         参数值。
 
@@ -53,7 +53,7 @@ class ModifyParamRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ModifyParamRequest.
+        r"""Sets the value of this ModifyParamRequest.
 
         参数值。
 

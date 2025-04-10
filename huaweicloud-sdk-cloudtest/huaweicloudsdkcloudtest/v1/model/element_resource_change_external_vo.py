@@ -37,7 +37,7 @@ class ElementResourceChangeExternalVo:
     }
 
     def __init__(self, tracker_name=None, value=None, key=None, object_value=None, object_key=None, tracker_names=None, board_info=None):
-        """ElementResourceChangeExternalVo
+        r"""ElementResourceChangeExternalVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this ElementResourceChangeExternalVo.
+        r"""Gets the tracker_name of this ElementResourceChangeExternalVo.
 
         工作项类型
 
@@ -96,7 +96,7 @@ class ElementResourceChangeExternalVo:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this ElementResourceChangeExternalVo.
+        r"""Sets the tracker_name of this ElementResourceChangeExternalVo.
 
         工作项类型
 
@@ -107,7 +107,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def value(self):
-        """Gets the value of this ElementResourceChangeExternalVo.
+        r"""Gets the value of this ElementResourceChangeExternalVo.
 
         值
 
@@ -118,7 +118,7 @@ class ElementResourceChangeExternalVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ElementResourceChangeExternalVo.
+        r"""Sets the value of this ElementResourceChangeExternalVo.
 
         值
 
@@ -129,7 +129,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def key(self):
-        """Gets the key of this ElementResourceChangeExternalVo.
+        r"""Gets the key of this ElementResourceChangeExternalVo.
 
         key
 
@@ -140,7 +140,7 @@ class ElementResourceChangeExternalVo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ElementResourceChangeExternalVo.
+        r"""Sets the key of this ElementResourceChangeExternalVo.
 
         key
 
@@ -151,7 +151,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def object_value(self):
-        """Gets the object_value of this ElementResourceChangeExternalVo.
+        r"""Gets the object_value of this ElementResourceChangeExternalVo.
 
         对象值
 
@@ -162,7 +162,7 @@ class ElementResourceChangeExternalVo:
 
     @object_value.setter
     def object_value(self, object_value):
-        """Sets the object_value of this ElementResourceChangeExternalVo.
+        r"""Sets the object_value of this ElementResourceChangeExternalVo.
 
         对象值
 
@@ -173,7 +173,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def object_key(self):
-        """Gets the object_key of this ElementResourceChangeExternalVo.
+        r"""Gets the object_key of this ElementResourceChangeExternalVo.
 
         对象key
 
@@ -184,7 +184,7 @@ class ElementResourceChangeExternalVo:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this ElementResourceChangeExternalVo.
+        r"""Sets the object_key of this ElementResourceChangeExternalVo.
 
         对象key
 
@@ -195,7 +195,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def tracker_names(self):
-        """Gets the tracker_names of this ElementResourceChangeExternalVo.
+        r"""Gets the tracker_names of this ElementResourceChangeExternalVo.
 
         缺陷类型
 
@@ -206,7 +206,7 @@ class ElementResourceChangeExternalVo:
 
     @tracker_names.setter
     def tracker_names(self, tracker_names):
-        """Sets the tracker_names of this ElementResourceChangeExternalVo.
+        r"""Sets the tracker_names of this ElementResourceChangeExternalVo.
 
         缺陷类型
 
@@ -217,7 +217,7 @@ class ElementResourceChangeExternalVo:
 
     @property
     def board_info(self):
-        """Gets the board_info of this ElementResourceChangeExternalVo.
+        r"""Gets the board_info of this ElementResourceChangeExternalVo.
 
         归属看板信息，用例关联工作项信息使用
 
@@ -228,7 +228,7 @@ class ElementResourceChangeExternalVo:
 
     @board_info.setter
     def board_info(self, board_info):
-        """Sets the board_info of this ElementResourceChangeExternalVo.
+        r"""Sets the board_info of this ElementResourceChangeExternalVo.
 
         归属看板信息，用例关联工作项信息使用
 

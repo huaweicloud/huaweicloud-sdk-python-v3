@@ -27,7 +27,7 @@ class AclAccountResetPasswordBody:
     }
 
     def __init__(self, old_password=None, new_password=None):
-        """AclAccountResetPasswordBody
+        r"""AclAccountResetPasswordBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AclAccountResetPasswordBody:
 
     @property
     def old_password(self):
-        """Gets the old_password of this AclAccountResetPasswordBody.
+        r"""Gets the old_password of this AclAccountResetPasswordBody.
 
         旧密码
 
@@ -61,7 +61,7 @@ class AclAccountResetPasswordBody:
 
     @old_password.setter
     def old_password(self, old_password):
-        """Sets the old_password of this AclAccountResetPasswordBody.
+        r"""Sets the old_password of this AclAccountResetPasswordBody.
 
         旧密码
 
@@ -72,7 +72,7 @@ class AclAccountResetPasswordBody:
 
     @property
     def new_password(self):
-        """Gets the new_password of this AclAccountResetPasswordBody.
+        r"""Gets the new_password of this AclAccountResetPasswordBody.
 
         新密码 - 输入长度为8到64位的字符串。 - 不能包含正序逆序用户名。 - 必须包含如下四种字符中的三种组合（不允许包含冒号）：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|{},<.>/?） 
 
@@ -83,7 +83,7 @@ class AclAccountResetPasswordBody:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this AclAccountResetPasswordBody.
+        r"""Sets the new_password of this AclAccountResetPasswordBody.
 
         新密码 - 输入长度为8到64位的字符串。 - 不能包含正序逆序用户名。 - 必须包含如下四种字符中的三种组合（不允许包含冒号）：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|{},<.>/?） 
 

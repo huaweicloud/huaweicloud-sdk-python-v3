@@ -30,7 +30,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, subscription_count=None, subscriptions=None):
-        """ListSubscriptionsByTopicResponse
+        r"""ListSubscriptionsByTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSubscriptionsByTopicResponse.
+        r"""Gets the request_id of this ListSubscriptionsByTopicResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSubscriptionsByTopicResponse.
+        r"""Sets the request_id of this ListSubscriptionsByTopicResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
 
     @property
     def subscription_count(self):
-        """Gets the subscription_count of this ListSubscriptionsByTopicResponse.
+        r"""Gets the subscription_count of this ListSubscriptionsByTopicResponse.
 
         订阅者个数。
 
@@ -91,7 +91,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
 
     @subscription_count.setter
     def subscription_count(self, subscription_count):
-        """Sets the subscription_count of this ListSubscriptionsByTopicResponse.
+        r"""Sets the subscription_count of this ListSubscriptionsByTopicResponse.
 
         订阅者个数。
 
@@ -102,7 +102,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
 
     @property
     def subscriptions(self):
-        """Gets the subscriptions of this ListSubscriptionsByTopicResponse.
+        r"""Gets the subscriptions of this ListSubscriptionsByTopicResponse.
 
         Subscription结构体。
 
@@ -113,7 +113,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
 
     @subscriptions.setter
     def subscriptions(self, subscriptions):
-        """Sets the subscriptions of this ListSubscriptionsByTopicResponse.
+        r"""Sets the subscriptions of this ListSubscriptionsByTopicResponse.
 
         Subscription结构体。
 

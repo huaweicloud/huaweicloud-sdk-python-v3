@@ -33,7 +33,7 @@ class TryEmailConnectionReq:
     }
 
     def __init__(self, server=None, user_name=None, password=None, email=None, language=None):
-        """TryEmailConnectionReq
+        r"""TryEmailConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class TryEmailConnectionReq:
 
     @property
     def server(self):
-        """Gets the server of this TryEmailConnectionReq.
+        r"""Gets the server of this TryEmailConnectionReq.
 
         服务器地址
 
@@ -77,7 +77,7 @@ class TryEmailConnectionReq:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this TryEmailConnectionReq.
+        r"""Sets the server of this TryEmailConnectionReq.
 
         服务器地址
 
@@ -88,7 +88,7 @@ class TryEmailConnectionReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TryEmailConnectionReq.
+        r"""Gets the user_name of this TryEmailConnectionReq.
 
         用户名
 
@@ -99,7 +99,7 @@ class TryEmailConnectionReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TryEmailConnectionReq.
+        r"""Sets the user_name of this TryEmailConnectionReq.
 
         用户名
 
@@ -110,7 +110,7 @@ class TryEmailConnectionReq:
 
     @property
     def password(self):
-        """Gets the password of this TryEmailConnectionReq.
+        r"""Gets the password of this TryEmailConnectionReq.
 
         密码
 
@@ -121,7 +121,7 @@ class TryEmailConnectionReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this TryEmailConnectionReq.
+        r"""Sets the password of this TryEmailConnectionReq.
 
         密码
 
@@ -132,7 +132,7 @@ class TryEmailConnectionReq:
 
     @property
     def email(self):
-        """Gets the email of this TryEmailConnectionReq.
+        r"""Gets the email of this TryEmailConnectionReq.
 
         邮箱
 
@@ -143,7 +143,7 @@ class TryEmailConnectionReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this TryEmailConnectionReq.
+        r"""Sets the email of this TryEmailConnectionReq.
 
         邮箱
 
@@ -154,7 +154,7 @@ class TryEmailConnectionReq:
 
     @property
     def language(self):
-        """Gets the language of this TryEmailConnectionReq.
+        r"""Gets the language of this TryEmailConnectionReq.
 
         :return: The language of this TryEmailConnectionReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
@@ -163,7 +163,7 @@ class TryEmailConnectionReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this TryEmailConnectionReq.
+        r"""Sets the language of this TryEmailConnectionReq.
 
         :param language: The language of this TryEmailConnectionReq.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

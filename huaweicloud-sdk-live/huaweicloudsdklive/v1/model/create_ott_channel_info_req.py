@@ -43,7 +43,7 @@ class CreateOttChannelInfoReq:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, name=None, state=None, input=None, encoder_settings=None, record_settings=None, endpoints=None, encoder_settings_expand=None):
-        """CreateOttChannelInfoReq
+        r"""CreateOttChannelInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateOttChannelInfoReq.
+        r"""Gets the domain of this CreateOttChannelInfoReq.
 
         频道推流域名
 
@@ -110,7 +110,7 @@ class CreateOttChannelInfoReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateOttChannelInfoReq.
+        r"""Sets the domain of this CreateOttChannelInfoReq.
 
         频道推流域名
 
@@ -121,7 +121,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this CreateOttChannelInfoReq.
+        r"""Gets the app_name of this CreateOttChannelInfoReq.
 
         组名或应用名
 
@@ -132,7 +132,7 @@ class CreateOttChannelInfoReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CreateOttChannelInfoReq.
+        r"""Sets the app_name of this CreateOttChannelInfoReq.
 
         组名或应用名
 
@@ -143,7 +143,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def id(self):
-        """Gets the id of this CreateOttChannelInfoReq.
+        r"""Gets the id of this CreateOttChannelInfoReq.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -154,7 +154,7 @@ class CreateOttChannelInfoReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateOttChannelInfoReq.
+        r"""Sets the id of this CreateOttChannelInfoReq.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -165,7 +165,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateOttChannelInfoReq.
+        r"""Gets the name of this CreateOttChannelInfoReq.
 
         频道名。可选配置
 
@@ -176,7 +176,7 @@ class CreateOttChannelInfoReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateOttChannelInfoReq.
+        r"""Sets the name of this CreateOttChannelInfoReq.
 
         频道名。可选配置
 
@@ -187,7 +187,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def state(self):
-        """Gets the state of this CreateOttChannelInfoReq.
+        r"""Gets the state of this CreateOttChannelInfoReq.
 
         频道状态 - ON：频道下发成功后，自动启动拉流、转码、录制等功能 - OFF：仅保存频道信息，不启动频道
 
@@ -198,7 +198,7 @@ class CreateOttChannelInfoReq:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateOttChannelInfoReq.
+        r"""Sets the state of this CreateOttChannelInfoReq.
 
         频道状态 - ON：频道下发成功后，自动启动拉流、转码、录制等功能 - OFF：仅保存频道信息，不启动频道
 
@@ -209,7 +209,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateOttChannelInfoReq.
+        r"""Gets the input of this CreateOttChannelInfoReq.
 
         :return: The input of this CreateOttChannelInfoReq.
         :rtype: :class:`huaweicloudsdklive.v1.InputStreamInfo`
@@ -218,7 +218,7 @@ class CreateOttChannelInfoReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateOttChannelInfoReq.
+        r"""Sets the input of this CreateOttChannelInfoReq.
 
         :param input: The input of this CreateOttChannelInfoReq.
         :type input: :class:`huaweicloudsdklive.v1.InputStreamInfo`
@@ -227,7 +227,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def encoder_settings(self):
-        """Gets the encoder_settings of this CreateOttChannelInfoReq.
+        r"""Gets the encoder_settings of this CreateOttChannelInfoReq.
 
         转码模板配置
 
@@ -238,7 +238,7 @@ class CreateOttChannelInfoReq:
 
     @encoder_settings.setter
     def encoder_settings(self, encoder_settings):
-        """Sets the encoder_settings of this CreateOttChannelInfoReq.
+        r"""Sets the encoder_settings of this CreateOttChannelInfoReq.
 
         转码模板配置
 
@@ -249,7 +249,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def record_settings(self):
-        """Gets the record_settings of this CreateOttChannelInfoReq.
+        r"""Gets the record_settings of this CreateOttChannelInfoReq.
 
         :return: The record_settings of this CreateOttChannelInfoReq.
         :rtype: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoReqRecordSettings`
@@ -258,7 +258,7 @@ class CreateOttChannelInfoReq:
 
     @record_settings.setter
     def record_settings(self, record_settings):
-        """Sets the record_settings of this CreateOttChannelInfoReq.
+        r"""Sets the record_settings of this CreateOttChannelInfoReq.
 
         :param record_settings: The record_settings of this CreateOttChannelInfoReq.
         :type record_settings: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoReqRecordSettings`
@@ -267,7 +267,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this CreateOttChannelInfoReq.
+        r"""Gets the endpoints of this CreateOttChannelInfoReq.
 
         频道出流信息
 
@@ -278,7 +278,7 @@ class CreateOttChannelInfoReq:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this CreateOttChannelInfoReq.
+        r"""Sets the endpoints of this CreateOttChannelInfoReq.
 
         频道出流信息
 
@@ -289,7 +289,7 @@ class CreateOttChannelInfoReq:
 
     @property
     def encoder_settings_expand(self):
-        """Gets the encoder_settings_expand of this CreateOttChannelInfoReq.
+        r"""Gets the encoder_settings_expand of this CreateOttChannelInfoReq.
 
         :return: The encoder_settings_expand of this CreateOttChannelInfoReq.
         :rtype: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
@@ -298,7 +298,7 @@ class CreateOttChannelInfoReq:
 
     @encoder_settings_expand.setter
     def encoder_settings_expand(self, encoder_settings_expand):
-        """Sets the encoder_settings_expand of this CreateOttChannelInfoReq.
+        r"""Sets the encoder_settings_expand of this CreateOttChannelInfoReq.
 
         :param encoder_settings_expand: The encoder_settings_expand of this CreateOttChannelInfoReq.
         :type encoder_settings_expand: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`

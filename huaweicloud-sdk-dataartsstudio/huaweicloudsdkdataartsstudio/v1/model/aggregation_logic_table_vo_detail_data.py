@@ -25,7 +25,7 @@ class AggregationLogicTableVODetailData:
     }
 
     def __init__(self, value=None):
-        """AggregationLogicTableVODetailData
+        r"""AggregationLogicTableVODetailData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AggregationLogicTableVODetailData:
 
     @property
     def value(self):
-        """Gets the value of this AggregationLogicTableVODetailData.
+        r"""Gets the value of this AggregationLogicTableVODetailData.
 
         :return: The value of this AggregationLogicTableVODetailData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVO`
@@ -52,7 +52,7 @@ class AggregationLogicTableVODetailData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AggregationLogicTableVODetailData.
+        r"""Sets the value of this AggregationLogicTableVODetailData.
 
         :param value: The value of this AggregationLogicTableVODetailData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVO`

@@ -31,7 +31,7 @@ class ListAssociatedIssuesRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, limit=None, offset=None):
-        """ListAssociatedIssuesRequest
+        r"""ListAssociatedIssuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAssociatedIssuesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAssociatedIssuesRequest.
+        r"""Gets the project_id of this ListAssociatedIssuesRequest.
 
         devcloud项目的32位id
 
@@ -73,7 +73,7 @@ class ListAssociatedIssuesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAssociatedIssuesRequest.
+        r"""Sets the project_id of this ListAssociatedIssuesRequest.
 
         devcloud项目的32位id
 
@@ -84,7 +84,7 @@ class ListAssociatedIssuesRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ListAssociatedIssuesRequest.
+        r"""Gets the issue_id of this ListAssociatedIssuesRequest.
 
         工作项ID
 
@@ -95,7 +95,7 @@ class ListAssociatedIssuesRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ListAssociatedIssuesRequest.
+        r"""Sets the issue_id of this ListAssociatedIssuesRequest.
 
         工作项ID
 
@@ -106,7 +106,7 @@ class ListAssociatedIssuesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssociatedIssuesRequest.
+        r"""Gets the limit of this ListAssociatedIssuesRequest.
 
         每页数量
 
@@ -117,7 +117,7 @@ class ListAssociatedIssuesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssociatedIssuesRequest.
+        r"""Sets the limit of this ListAssociatedIssuesRequest.
 
         每页数量
 
@@ -128,7 +128,7 @@ class ListAssociatedIssuesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssociatedIssuesRequest.
+        r"""Gets the offset of this ListAssociatedIssuesRequest.
 
         偏移量
 
@@ -139,7 +139,7 @@ class ListAssociatedIssuesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssociatedIssuesRequest.
+        r"""Sets the offset of this ListAssociatedIssuesRequest.
 
         偏移量
 

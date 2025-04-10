@@ -27,7 +27,7 @@ class ShowAutopilotAddonInstanceRequest:
     }
 
     def __init__(self, id=None, cluster_id=None):
-        """ShowAutopilotAddonInstanceRequest
+        r"""ShowAutopilotAddonInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowAutopilotAddonInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowAutopilotAddonInstanceRequest.
+        r"""Gets the id of this ShowAutopilotAddonInstanceRequest.
 
         插件实例id
 
@@ -60,7 +60,7 @@ class ShowAutopilotAddonInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAutopilotAddonInstanceRequest.
+        r"""Sets the id of this ShowAutopilotAddonInstanceRequest.
 
         插件实例id
 
@@ -71,7 +71,7 @@ class ShowAutopilotAddonInstanceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowAutopilotAddonInstanceRequest.
+        r"""Gets the cluster_id of this ShowAutopilotAddonInstanceRequest.
 
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
 
@@ -82,7 +82,7 @@ class ShowAutopilotAddonInstanceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowAutopilotAddonInstanceRequest.
+        r"""Sets the cluster_id of this ShowAutopilotAddonInstanceRequest.
 
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
 

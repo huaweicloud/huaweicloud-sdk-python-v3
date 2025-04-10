@@ -45,7 +45,7 @@ class LogicalVolumes:
     }
 
     def __init__(self, block_count=None, block_size=None, file_system=None, inode_size=None, inode_nums=None, device_use=None, mount_point=None, name=None, size=None, used_size=None, free_size=None):
-        """LogicalVolumes
+        r"""LogicalVolumes
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class LogicalVolumes:
 
     @property
     def block_count(self):
-        """Gets the block_count of this LogicalVolumes.
+        r"""Gets the block_count of this LogicalVolumes.
 
         块数量
 
@@ -117,7 +117,7 @@ class LogicalVolumes:
 
     @block_count.setter
     def block_count(self, block_count):
-        """Sets the block_count of this LogicalVolumes.
+        r"""Sets the block_count of this LogicalVolumes.
 
         块数量
 
@@ -128,7 +128,7 @@ class LogicalVolumes:
 
     @property
     def block_size(self):
-        """Gets the block_size of this LogicalVolumes.
+        r"""Gets the block_size of this LogicalVolumes.
 
         块大小
 
@@ -139,7 +139,7 @@ class LogicalVolumes:
 
     @block_size.setter
     def block_size(self, block_size):
-        """Sets the block_size of this LogicalVolumes.
+        r"""Sets the block_size of this LogicalVolumes.
 
         块大小
 
@@ -150,7 +150,7 @@ class LogicalVolumes:
 
     @property
     def file_system(self):
-        """Gets the file_system of this LogicalVolumes.
+        r"""Gets the file_system of this LogicalVolumes.
 
         文件系统
 
@@ -161,7 +161,7 @@ class LogicalVolumes:
 
     @file_system.setter
     def file_system(self, file_system):
-        """Sets the file_system of this LogicalVolumes.
+        r"""Sets the file_system of this LogicalVolumes.
 
         文件系统
 
@@ -172,7 +172,7 @@ class LogicalVolumes:
 
     @property
     def inode_size(self):
-        """Gets the inode_size of this LogicalVolumes.
+        r"""Gets the inode_size of this LogicalVolumes.
 
         inode数量
 
@@ -183,7 +183,7 @@ class LogicalVolumes:
 
     @inode_size.setter
     def inode_size(self, inode_size):
-        """Sets the inode_size of this LogicalVolumes.
+        r"""Sets the inode_size of this LogicalVolumes.
 
         inode数量
 
@@ -194,7 +194,7 @@ class LogicalVolumes:
 
     @property
     def inode_nums(self):
-        """Gets the inode_nums of this LogicalVolumes.
+        r"""Gets the inode_nums of this LogicalVolumes.
 
         inode节点数量
 
@@ -205,7 +205,7 @@ class LogicalVolumes:
 
     @inode_nums.setter
     def inode_nums(self, inode_nums):
-        """Sets the inode_nums of this LogicalVolumes.
+        r"""Sets the inode_nums of this LogicalVolumes.
 
         inode节点数量
 
@@ -216,7 +216,7 @@ class LogicalVolumes:
 
     @property
     def device_use(self):
-        """Gets the device_use of this LogicalVolumes.
+        r"""Gets the device_use of this LogicalVolumes.
 
         分区类型，普通分区，启动分区，系统分区
 
@@ -227,7 +227,7 @@ class LogicalVolumes:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this LogicalVolumes.
+        r"""Sets the device_use of this LogicalVolumes.
 
         分区类型，普通分区，启动分区，系统分区
 
@@ -238,7 +238,7 @@ class LogicalVolumes:
 
     @property
     def mount_point(self):
-        """Gets the mount_point of this LogicalVolumes.
+        r"""Gets the mount_point of this LogicalVolumes.
 
         挂载点
 
@@ -249,7 +249,7 @@ class LogicalVolumes:
 
     @mount_point.setter
     def mount_point(self, mount_point):
-        """Sets the mount_point of this LogicalVolumes.
+        r"""Sets the mount_point of this LogicalVolumes.
 
         挂载点
 
@@ -260,7 +260,7 @@ class LogicalVolumes:
 
     @property
     def name(self):
-        """Gets the name of this LogicalVolumes.
+        r"""Gets the name of this LogicalVolumes.
 
         名称
 
@@ -271,7 +271,7 @@ class LogicalVolumes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LogicalVolumes.
+        r"""Sets the name of this LogicalVolumes.
 
         名称
 
@@ -282,7 +282,7 @@ class LogicalVolumes:
 
     @property
     def size(self):
-        """Gets the size of this LogicalVolumes.
+        r"""Gets the size of this LogicalVolumes.
 
         大小
 
@@ -293,7 +293,7 @@ class LogicalVolumes:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LogicalVolumes.
+        r"""Sets the size of this LogicalVolumes.
 
         大小
 
@@ -304,7 +304,7 @@ class LogicalVolumes:
 
     @property
     def used_size(self):
-        """Gets the used_size of this LogicalVolumes.
+        r"""Gets the used_size of this LogicalVolumes.
 
         使用大小
 
@@ -315,7 +315,7 @@ class LogicalVolumes:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this LogicalVolumes.
+        r"""Sets the used_size of this LogicalVolumes.
 
         使用大小
 
@@ -326,7 +326,7 @@ class LogicalVolumes:
 
     @property
     def free_size(self):
-        """Gets the free_size of this LogicalVolumes.
+        r"""Gets the free_size of this LogicalVolumes.
 
         剩余空间
 
@@ -337,7 +337,7 @@ class LogicalVolumes:
 
     @free_size.setter
     def free_size(self, free_size):
-        """Sets the free_size of this LogicalVolumes.
+        r"""Sets the free_size of this LogicalVolumes.
 
         剩余空间
 

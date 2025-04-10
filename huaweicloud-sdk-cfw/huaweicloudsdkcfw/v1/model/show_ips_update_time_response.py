@@ -26,7 +26,7 @@ class ShowIpsUpdateTimeResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowIpsUpdateTimeResponse
+        r"""ShowIpsUpdateTimeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowIpsUpdateTimeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowIpsUpdateTimeResponse.
+        r"""Gets the data of this ShowIpsUpdateTimeResponse.
 
         :return: The data of this ShowIpsUpdateTimeResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.IpsRuleUpdateTimeVO`]
@@ -53,7 +53,7 @@ class ShowIpsUpdateTimeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowIpsUpdateTimeResponse.
+        r"""Sets the data of this ShowIpsUpdateTimeResponse.
 
         :param data: The data of this ShowIpsUpdateTimeResponse.
         :type data: list[:class:`huaweicloudsdkcfw.v1.IpsRuleUpdateTimeVO`]

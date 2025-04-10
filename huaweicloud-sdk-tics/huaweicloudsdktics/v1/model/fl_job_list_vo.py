@@ -49,7 +49,7 @@ class FlJobListVo:
     }
 
     def __init__(self, algorithm_type=None, approval_status=None, create_time=None, creator_name=None, description=None, ext=None, hfl_platform_type=None, hfl_type=None, is_single_predict=None, job_id=None, job_name=None, job_type=None, learning_task_type=None):
-        """FlJobListVo
+        r"""FlJobListVo
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class FlJobListVo:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this FlJobListVo.
+        r"""Gets the algorithm_type of this FlJobListVo.
 
         纵向联邦算法类型枚举，XG_BOOST.XGBoost,LIGHT_BGM.LightGBM,LOGISTIC_REGRESSION.逻辑回归,NEURAL_NETWORK.神经网络，FIBINET.FIBINET
 
@@ -132,7 +132,7 @@ class FlJobListVo:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this FlJobListVo.
+        r"""Sets the algorithm_type of this FlJobListVo.
 
         纵向联邦算法类型枚举，XG_BOOST.XGBoost,LIGHT_BGM.LightGBM,LOGISTIC_REGRESSION.逻辑回归,NEURAL_NETWORK.神经网络，FIBINET.FIBINET
 
@@ -143,7 +143,7 @@ class FlJobListVo:
 
     @property
     def approval_status(self):
-        """Gets the approval_status of this FlJobListVo.
+        r"""Gets the approval_status of this FlJobListVo.
 
         fl作业审批状态，APPROVED.审批通过，APPROVING.审批中，NEW.新建，REJECTED.驳回，REVOKED.撤销
 
@@ -154,7 +154,7 @@ class FlJobListVo:
 
     @approval_status.setter
     def approval_status(self, approval_status):
-        """Sets the approval_status of this FlJobListVo.
+        r"""Sets the approval_status of this FlJobListVo.
 
         fl作业审批状态，APPROVED.审批通过，APPROVING.审批中，NEW.新建，REJECTED.驳回，REVOKED.撤销
 
@@ -165,7 +165,7 @@ class FlJobListVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FlJobListVo.
+        r"""Gets the create_time of this FlJobListVo.
 
         创建时间
 
@@ -176,7 +176,7 @@ class FlJobListVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FlJobListVo.
+        r"""Sets the create_time of this FlJobListVo.
 
         创建时间
 
@@ -187,7 +187,7 @@ class FlJobListVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this FlJobListVo.
+        r"""Gets the creator_name of this FlJobListVo.
 
         创建人名称
 
@@ -198,7 +198,7 @@ class FlJobListVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this FlJobListVo.
+        r"""Sets the creator_name of this FlJobListVo.
 
         创建人名称
 
@@ -209,7 +209,7 @@ class FlJobListVo:
 
     @property
     def description(self):
-        """Gets the description of this FlJobListVo.
+        r"""Gets the description of this FlJobListVo.
 
         作业描述
 
@@ -220,7 +220,7 @@ class FlJobListVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlJobListVo.
+        r"""Sets the description of this FlJobListVo.
 
         作业描述
 
@@ -231,7 +231,7 @@ class FlJobListVo:
 
     @property
     def ext(self):
-        """Gets the ext of this FlJobListVo.
+        r"""Gets the ext of this FlJobListVo.
 
         参数等额外信息
 
@@ -242,7 +242,7 @@ class FlJobListVo:
 
     @ext.setter
     def ext(self, ext):
-        """Sets the ext of this FlJobListVo.
+        r"""Sets the ext of this FlJobListVo.
 
         参数等额外信息
 
@@ -253,7 +253,7 @@ class FlJobListVo:
 
     @property
     def hfl_platform_type(self):
-        """Gets the hfl_platform_type of this FlJobListVo.
+        r"""Gets the hfl_platform_type of this FlJobListVo.
 
         联邦学习运行平台枚举值，LOCAL.本地
 
@@ -264,7 +264,7 @@ class FlJobListVo:
 
     @hfl_platform_type.setter
     def hfl_platform_type(self, hfl_platform_type):
-        """Sets the hfl_platform_type of this FlJobListVo.
+        r"""Sets the hfl_platform_type of this FlJobListVo.
 
         联邦学习运行平台枚举值，LOCAL.本地
 
@@ -275,7 +275,7 @@ class FlJobListVo:
 
     @property
     def hfl_type(self):
-        """Gets the hfl_type of this FlJobListVo.
+        r"""Gets the hfl_type of this FlJobListVo.
 
         fl作业类型枚举,TRAIN.训练,EVALUATE.评估
 
@@ -286,7 +286,7 @@ class FlJobListVo:
 
     @hfl_type.setter
     def hfl_type(self, hfl_type):
-        """Sets the hfl_type of this FlJobListVo.
+        r"""Sets the hfl_type of this FlJobListVo.
 
         fl作业类型枚举,TRAIN.训练,EVALUATE.评估
 
@@ -297,7 +297,7 @@ class FlJobListVo:
 
     @property
     def is_single_predict(self):
-        """Gets the is_single_predict of this FlJobListVo.
+        r"""Gets the is_single_predict of this FlJobListVo.
 
         单方还是双方预测
 
@@ -308,7 +308,7 @@ class FlJobListVo:
 
     @is_single_predict.setter
     def is_single_predict(self, is_single_predict):
-        """Sets the is_single_predict of this FlJobListVo.
+        r"""Sets the is_single_predict of this FlJobListVo.
 
         单方还是双方预测
 
@@ -319,7 +319,7 @@ class FlJobListVo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this FlJobListVo.
+        r"""Gets the job_id of this FlJobListVo.
 
         作业id
 
@@ -330,7 +330,7 @@ class FlJobListVo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this FlJobListVo.
+        r"""Sets the job_id of this FlJobListVo.
 
         作业id
 
@@ -341,7 +341,7 @@ class FlJobListVo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this FlJobListVo.
+        r"""Gets the job_name of this FlJobListVo.
 
         作业名称
 
@@ -352,7 +352,7 @@ class FlJobListVo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this FlJobListVo.
+        r"""Sets the job_name of this FlJobListVo.
 
         作业名称
 
@@ -363,7 +363,7 @@ class FlJobListVo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this FlJobListVo.
+        r"""Gets the job_type of this FlJobListVo.
 
         作业类型,SQL.联合SQL分析,HFL.横向联邦学习,VFL.纵向联邦学习,PREDICT.预测，DATA_EXCHANGE.数据交换
 
@@ -374,7 +374,7 @@ class FlJobListVo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this FlJobListVo.
+        r"""Sets the job_type of this FlJobListVo.
 
         作业类型,SQL.联合SQL分析,HFL.横向联邦学习,VFL.纵向联邦学习,PREDICT.预测，DATA_EXCHANGE.数据交换
 
@@ -385,7 +385,7 @@ class FlJobListVo:
 
     @property
     def learning_task_type(self):
-        """Gets the learning_task_type of this FlJobListVo.
+        r"""Gets the learning_task_type of this FlJobListVo.
 
         纵向联邦任务类型,CLASSIFICATION.分类，REGRESSION.拟合
 
@@ -396,7 +396,7 @@ class FlJobListVo:
 
     @learning_task_type.setter
     def learning_task_type(self, learning_task_type):
-        """Sets the learning_task_type of this FlJobListVo.
+        r"""Sets the learning_task_type of this FlJobListVo.
 
         纵向联邦任务类型,CLASSIFICATION.分类，REGRESSION.拟合
 

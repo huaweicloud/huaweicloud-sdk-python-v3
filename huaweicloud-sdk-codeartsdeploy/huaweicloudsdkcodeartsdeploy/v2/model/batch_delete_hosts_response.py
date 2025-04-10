@@ -28,7 +28,7 @@ class BatchDeleteHostsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """BatchDeleteHostsResponse
+        r"""BatchDeleteHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteHostsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this BatchDeleteHostsResponse.
+        r"""Gets the status of this BatchDeleteHostsResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class BatchDeleteHostsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchDeleteHostsResponse.
+        r"""Sets the status of this BatchDeleteHostsResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class BatchDeleteHostsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchDeleteHostsResponse.
+        r"""Gets the result of this BatchDeleteHostsResponse.
 
         返回结果
 
@@ -84,7 +84,7 @@ class BatchDeleteHostsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchDeleteHostsResponse.
+        r"""Sets the result of this BatchDeleteHostsResponse.
 
         返回结果
 

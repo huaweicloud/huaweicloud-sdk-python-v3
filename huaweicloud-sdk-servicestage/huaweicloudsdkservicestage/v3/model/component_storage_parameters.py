@@ -31,7 +31,7 @@ class ComponentStorageParameters:
     }
 
     def __init__(self, path=None, name=None, default_mode=None, medium=None):
-        """ComponentStorageParameters
+        r"""ComponentStorageParameters
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ComponentStorageParameters:
 
     @property
     def path(self):
-        """Gets the path of this ComponentStorageParameters.
+        r"""Gets the path of this ComponentStorageParameters.
 
         主机路径， 适用于HostPath的存储类型
 
@@ -75,7 +75,7 @@ class ComponentStorageParameters:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ComponentStorageParameters.
+        r"""Sets the path of this ComponentStorageParameters.
 
         主机路径， 适用于HostPath的存储类型
 
@@ -86,7 +86,7 @@ class ComponentStorageParameters:
 
     @property
     def name(self):
-        """Gets the name of this ComponentStorageParameters.
+        r"""Gets the name of this ComponentStorageParameters.
 
         配置项、密钥或者PVC的名字， 适用于ConfigMap、Secret和PersistentVolumeClaim的存储类型
 
@@ -97,7 +97,7 @@ class ComponentStorageParameters:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentStorageParameters.
+        r"""Sets the name of this ComponentStorageParameters.
 
         配置项、密钥或者PVC的名字， 适用于ConfigMap、Secret和PersistentVolumeClaim的存储类型
 
@@ -108,7 +108,7 @@ class ComponentStorageParameters:
 
     @property
     def default_mode(self):
-        """Gets the default_mode of this ComponentStorageParameters.
+        r"""Gets the default_mode of this ComponentStorageParameters.
 
         挂载的权限，十进制格式，如384
 
@@ -119,7 +119,7 @@ class ComponentStorageParameters:
 
     @default_mode.setter
     def default_mode(self, default_mode):
-        """Sets the default_mode of this ComponentStorageParameters.
+        r"""Sets the default_mode of this ComponentStorageParameters.
 
         挂载的权限，十进制格式，如384
 
@@ -130,7 +130,7 @@ class ComponentStorageParameters:
 
     @property
     def medium(self):
-        """Gets the medium of this ComponentStorageParameters.
+        r"""Gets the medium of this ComponentStorageParameters.
 
         适用于EmptyDir类型的存储。不传参数为默认的磁盘介质，传参为memory则开启内存存储。
 
@@ -141,7 +141,7 @@ class ComponentStorageParameters:
 
     @medium.setter
     def medium(self, medium):
-        """Sets the medium of this ComponentStorageParameters.
+        r"""Sets the medium of this ComponentStorageParameters.
 
         适用于EmptyDir类型的存储。不传参数为默认的磁盘介质，传参为memory则开启内存存储。
 

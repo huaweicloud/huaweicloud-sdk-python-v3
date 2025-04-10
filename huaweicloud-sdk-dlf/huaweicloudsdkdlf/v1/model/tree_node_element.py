@@ -37,7 +37,7 @@ class TreeNodeElement:
     }
 
     def __init__(self, type=None, parent_directory_id=None, name=None, element_id=None, owner=None, process_type=None, is_single_node_job=None):
-        """TreeNodeElement
+        r"""TreeNodeElement
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TreeNodeElement:
 
     @property
     def type(self):
-        """Gets the type of this TreeNodeElement.
+        r"""Gets the type of this TreeNodeElement.
 
         :return: The type of this TreeNodeElement.
         :rtype: str
@@ -94,7 +94,7 @@ class TreeNodeElement:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TreeNodeElement.
+        r"""Sets the type of this TreeNodeElement.
 
         :param type: The type of this TreeNodeElement.
         :type type: str
@@ -103,7 +103,7 @@ class TreeNodeElement:
 
     @property
     def parent_directory_id(self):
-        """Gets the parent_directory_id of this TreeNodeElement.
+        r"""Gets the parent_directory_id of this TreeNodeElement.
 
         :return: The parent_directory_id of this TreeNodeElement.
         :rtype: str
@@ -112,7 +112,7 @@ class TreeNodeElement:
 
     @parent_directory_id.setter
     def parent_directory_id(self, parent_directory_id):
-        """Sets the parent_directory_id of this TreeNodeElement.
+        r"""Sets the parent_directory_id of this TreeNodeElement.
 
         :param parent_directory_id: The parent_directory_id of this TreeNodeElement.
         :type parent_directory_id: str
@@ -121,7 +121,7 @@ class TreeNodeElement:
 
     @property
     def name(self):
-        """Gets the name of this TreeNodeElement.
+        r"""Gets the name of this TreeNodeElement.
 
         :return: The name of this TreeNodeElement.
         :rtype: str
@@ -130,7 +130,7 @@ class TreeNodeElement:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TreeNodeElement.
+        r"""Sets the name of this TreeNodeElement.
 
         :param name: The name of this TreeNodeElement.
         :type name: str
@@ -139,7 +139,7 @@ class TreeNodeElement:
 
     @property
     def element_id(self):
-        """Gets the element_id of this TreeNodeElement.
+        r"""Gets the element_id of this TreeNodeElement.
 
         :return: The element_id of this TreeNodeElement.
         :rtype: str
@@ -148,7 +148,7 @@ class TreeNodeElement:
 
     @element_id.setter
     def element_id(self, element_id):
-        """Sets the element_id of this TreeNodeElement.
+        r"""Sets the element_id of this TreeNodeElement.
 
         :param element_id: The element_id of this TreeNodeElement.
         :type element_id: str
@@ -157,7 +157,7 @@ class TreeNodeElement:
 
     @property
     def owner(self):
-        """Gets the owner of this TreeNodeElement.
+        r"""Gets the owner of this TreeNodeElement.
 
         :return: The owner of this TreeNodeElement.
         :rtype: str
@@ -166,7 +166,7 @@ class TreeNodeElement:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TreeNodeElement.
+        r"""Sets the owner of this TreeNodeElement.
 
         :param owner: The owner of this TreeNodeElement.
         :type owner: str
@@ -175,7 +175,7 @@ class TreeNodeElement:
 
     @property
     def process_type(self):
-        """Gets the process_type of this TreeNodeElement.
+        r"""Gets the process_type of this TreeNodeElement.
 
         :return: The process_type of this TreeNodeElement.
         :rtype: str
@@ -184,7 +184,7 @@ class TreeNodeElement:
 
     @process_type.setter
     def process_type(self, process_type):
-        """Sets the process_type of this TreeNodeElement.
+        r"""Sets the process_type of this TreeNodeElement.
 
         :param process_type: The process_type of this TreeNodeElement.
         :type process_type: str
@@ -193,7 +193,7 @@ class TreeNodeElement:
 
     @property
     def is_single_node_job(self):
-        """Gets the is_single_node_job of this TreeNodeElement.
+        r"""Gets the is_single_node_job of this TreeNodeElement.
 
         :return: The is_single_node_job of this TreeNodeElement.
         :rtype: bool
@@ -202,7 +202,7 @@ class TreeNodeElement:
 
     @is_single_node_job.setter
     def is_single_node_job(self, is_single_node_job):
-        """Sets the is_single_node_job of this TreeNodeElement.
+        r"""Sets the is_single_node_job of this TreeNodeElement.
 
         :param is_single_node_job: The is_single_node_job of this TreeNodeElement.
         :type is_single_node_job: bool

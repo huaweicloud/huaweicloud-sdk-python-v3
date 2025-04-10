@@ -29,7 +29,7 @@ class CheckInfo:
     }
 
     def __init__(self, total_num=None, return_num=None, last_item=None):
-        """CheckInfo
+        r"""CheckInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this CheckInfo.
+        r"""Gets the total_num of this CheckInfo.
 
         符合条件的结果总数。
 
@@ -68,7 +68,7 @@ class CheckInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this CheckInfo.
+        r"""Sets the total_num of this CheckInfo.
 
         符合条件的结果总数。
 
@@ -79,7 +79,7 @@ class CheckInfo:
 
     @property
     def return_num(self):
-        """Gets the return_num of this CheckInfo.
+        r"""Gets the return_num of this CheckInfo.
 
         返回的结果总数。
 
@@ -90,7 +90,7 @@ class CheckInfo:
 
     @return_num.setter
     def return_num(self, return_num):
-        """Sets the return_num of this CheckInfo.
+        r"""Sets the return_num of this CheckInfo.
 
         返回的结果总数。
 
@@ -101,7 +101,7 @@ class CheckInfo:
 
     @property
     def last_item(self):
-        """Gets the last_item of this CheckInfo.
+        r"""Gets the last_item of this CheckInfo.
 
         :return: The last_item of this CheckInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
@@ -110,7 +110,7 @@ class CheckInfo:
 
     @last_item.setter
     def last_item(self, last_item):
-        """Sets the last_item of this CheckInfo.
+        r"""Sets the last_item of this CheckInfo.
 
         :param last_item: The last_item of this CheckInfo.
         :type last_item: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`

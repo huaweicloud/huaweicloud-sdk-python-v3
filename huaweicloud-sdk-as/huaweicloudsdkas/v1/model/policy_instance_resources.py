@@ -33,7 +33,7 @@ class PolicyInstanceResources:
     }
 
     def __init__(self, type=None, used=None, quota=None, max=None, min=None):
-        """PolicyInstanceResources
+        r"""PolicyInstanceResources
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PolicyInstanceResources:
 
     @property
     def type(self):
-        """Gets the type of this PolicyInstanceResources.
+        r"""Gets the type of this PolicyInstanceResources.
 
         查询配额的类型。
 
@@ -82,7 +82,7 @@ class PolicyInstanceResources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyInstanceResources.
+        r"""Sets the type of this PolicyInstanceResources.
 
         查询配额的类型。
 
@@ -93,7 +93,7 @@ class PolicyInstanceResources:
 
     @property
     def used(self):
-        """Gets the used of this PolicyInstanceResources.
+        r"""Gets the used of this PolicyInstanceResources.
 
         已使用的配额数量。
 
@@ -104,7 +104,7 @@ class PolicyInstanceResources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this PolicyInstanceResources.
+        r"""Sets the used of this PolicyInstanceResources.
 
         已使用的配额数量。
 
@@ -115,7 +115,7 @@ class PolicyInstanceResources:
 
     @property
     def quota(self):
-        """Gets the quota of this PolicyInstanceResources.
+        r"""Gets the quota of this PolicyInstanceResources.
 
         配额总数量。
 
@@ -126,7 +126,7 @@ class PolicyInstanceResources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this PolicyInstanceResources.
+        r"""Sets the quota of this PolicyInstanceResources.
 
         配额总数量。
 
@@ -137,7 +137,7 @@ class PolicyInstanceResources:
 
     @property
     def max(self):
-        """Gets the max of this PolicyInstanceResources.
+        r"""Gets the max of this PolicyInstanceResources.
 
         配额上限。
 
@@ -148,7 +148,7 @@ class PolicyInstanceResources:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this PolicyInstanceResources.
+        r"""Sets the max of this PolicyInstanceResources.
 
         配额上限。
 
@@ -159,7 +159,7 @@ class PolicyInstanceResources:
 
     @property
     def min(self):
-        """Gets the min of this PolicyInstanceResources.
+        r"""Gets the min of this PolicyInstanceResources.
 
         配额下限。
 
@@ -170,7 +170,7 @@ class PolicyInstanceResources:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this PolicyInstanceResources.
+        r"""Sets the min of this PolicyInstanceResources.
 
         配额下限。
 

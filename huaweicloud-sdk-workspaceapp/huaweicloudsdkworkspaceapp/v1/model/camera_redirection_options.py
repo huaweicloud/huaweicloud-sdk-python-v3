@@ -31,7 +31,7 @@ class CameraRedirectionOptions:
     }
 
     def __init__(self, camera_frame_rate=None, camera_max_width=None, camera_max_heigth=None, camera_compression_method=None):
-        """CameraRedirectionOptions
+        r"""CameraRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CameraRedirectionOptions:
 
     @property
     def camera_frame_rate(self):
-        """Gets the camera_frame_rate of this CameraRedirectionOptions.
+        r"""Gets the camera_frame_rate of this CameraRedirectionOptions.
 
         摄像头帧率（fps）。取值范围为[1-30]。默认：15。
 
@@ -75,7 +75,7 @@ class CameraRedirectionOptions:
 
     @camera_frame_rate.setter
     def camera_frame_rate(self, camera_frame_rate):
-        """Sets the camera_frame_rate of this CameraRedirectionOptions.
+        r"""Sets the camera_frame_rate of this CameraRedirectionOptions.
 
         摄像头帧率（fps）。取值范围为[1-30]。默认：15。
 
@@ -86,7 +86,7 @@ class CameraRedirectionOptions:
 
     @property
     def camera_max_width(self):
-        """Gets the camera_max_width of this CameraRedirectionOptions.
+        r"""Gets the camera_max_width of this CameraRedirectionOptions.
 
         摄像头最大宽度（pixel）。取值范围为[1-9999]。默认：3000。
 
@@ -97,7 +97,7 @@ class CameraRedirectionOptions:
 
     @camera_max_width.setter
     def camera_max_width(self, camera_max_width):
-        """Sets the camera_max_width of this CameraRedirectionOptions.
+        r"""Sets the camera_max_width of this CameraRedirectionOptions.
 
         摄像头最大宽度（pixel）。取值范围为[1-9999]。默认：3000。
 
@@ -108,7 +108,7 @@ class CameraRedirectionOptions:
 
     @property
     def camera_max_heigth(self):
-        """Gets the camera_max_heigth of this CameraRedirectionOptions.
+        r"""Gets the camera_max_heigth of this CameraRedirectionOptions.
 
         摄像头最大高度（pixel）。取值范围为[1-9999]。默认：3000。
 
@@ -119,7 +119,7 @@ class CameraRedirectionOptions:
 
     @camera_max_heigth.setter
     def camera_max_heigth(self, camera_max_heigth):
-        """Sets the camera_max_heigth of this CameraRedirectionOptions.
+        r"""Sets the camera_max_heigth of this CameraRedirectionOptions.
 
         摄像头最大高度（pixel）。取值范围为[1-9999]。默认：3000。
 
@@ -130,7 +130,7 @@ class CameraRedirectionOptions:
 
     @property
     def camera_compression_method(self):
-        """Gets the camera_compression_method of this CameraRedirectionOptions.
+        r"""Gets the camera_compression_method of this CameraRedirectionOptions.
 
         摄像头数据压缩方式。取值为：H.264。
 
@@ -141,7 +141,7 @@ class CameraRedirectionOptions:
 
     @camera_compression_method.setter
     def camera_compression_method(self, camera_compression_method):
-        """Sets the camera_compression_method of this CameraRedirectionOptions.
+        r"""Sets the camera_compression_method of this CameraRedirectionOptions.
 
         摄像头数据压缩方式。取值为：H.264。
 

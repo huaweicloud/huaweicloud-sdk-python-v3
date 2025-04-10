@@ -41,7 +41,7 @@ class CreateNetworkInstance:
     }
 
     def __init__(self, name=None, description=None, instance_id=None, instance_domain_id=None, project_id=None, region_id=None, cloud_connection_id=None, type=None, cidrs=None):
-        """CreateNetworkInstance
+        r"""CreateNetworkInstance
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateNetworkInstance:
 
     @property
     def name(self):
-        """Gets the name of this CreateNetworkInstance.
+        r"""Gets the name of this CreateNetworkInstance.
 
         实例名字。
 
@@ -104,7 +104,7 @@ class CreateNetworkInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNetworkInstance.
+        r"""Sets the name of this CreateNetworkInstance.
 
         实例名字。
 
@@ -115,7 +115,7 @@ class CreateNetworkInstance:
 
     @property
     def description(self):
-        """Gets the description of this CreateNetworkInstance.
+        r"""Gets the description of this CreateNetworkInstance.
 
         实例描述。不支持 <>。
 
@@ -126,7 +126,7 @@ class CreateNetworkInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNetworkInstance.
+        r"""Sets the description of this CreateNetworkInstance.
 
         实例描述。不支持 <>。
 
@@ -137,7 +137,7 @@ class CreateNetworkInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateNetworkInstance.
+        r"""Gets the instance_id of this CreateNetworkInstance.
 
         网络实例（VPC，VGW）的ID。
 
@@ -148,7 +148,7 @@ class CreateNetworkInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateNetworkInstance.
+        r"""Sets the instance_id of this CreateNetworkInstance.
 
         网络实例（VPC，VGW）的ID。
 
@@ -159,7 +159,7 @@ class CreateNetworkInstance:
 
     @property
     def instance_domain_id(self):
-        """Gets the instance_domain_id of this CreateNetworkInstance.
+        r"""Gets the instance_domain_id of this CreateNetworkInstance.
 
         网络实例（VPC，VGW）所属账号ID。
 
@@ -170,7 +170,7 @@ class CreateNetworkInstance:
 
     @instance_domain_id.setter
     def instance_domain_id(self, instance_domain_id):
-        """Sets the instance_domain_id of this CreateNetworkInstance.
+        r"""Sets the instance_domain_id of this CreateNetworkInstance.
 
         网络实例（VPC，VGW）所属账号ID。
 
@@ -181,7 +181,7 @@ class CreateNetworkInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateNetworkInstance.
+        r"""Gets the project_id of this CreateNetworkInstance.
 
         实例所属项目ID。
 
@@ -192,7 +192,7 @@ class CreateNetworkInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateNetworkInstance.
+        r"""Sets the project_id of this CreateNetworkInstance.
 
         实例所属项目ID。
 
@@ -203,7 +203,7 @@ class CreateNetworkInstance:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateNetworkInstance.
+        r"""Gets the region_id of this CreateNetworkInstance.
 
         RegionID。
 
@@ -214,7 +214,7 @@ class CreateNetworkInstance:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateNetworkInstance.
+        r"""Sets the region_id of this CreateNetworkInstance.
 
         RegionID。
 
@@ -225,7 +225,7 @@ class CreateNetworkInstance:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CreateNetworkInstance.
+        r"""Gets the cloud_connection_id of this CreateNetworkInstance.
 
         云连接实例ID。
 
@@ -236,7 +236,7 @@ class CreateNetworkInstance:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CreateNetworkInstance.
+        r"""Sets the cloud_connection_id of this CreateNetworkInstance.
 
         云连接实例ID。
 
@@ -247,7 +247,7 @@ class CreateNetworkInstance:
 
     @property
     def type(self):
-        """Gets the type of this CreateNetworkInstance.
+        r"""Gets the type of this CreateNetworkInstance.
 
         添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
 
@@ -258,7 +258,7 @@ class CreateNetworkInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNetworkInstance.
+        r"""Sets the type of this CreateNetworkInstance.
 
         添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
 
@@ -269,7 +269,7 @@ class CreateNetworkInstance:
 
     @property
     def cidrs(self):
-        """Gets the cidrs of this CreateNetworkInstance.
+        r"""Gets the cidrs of this CreateNetworkInstance.
 
         网络实例发布的网段路由列表。
 
@@ -280,7 +280,7 @@ class CreateNetworkInstance:
 
     @cidrs.setter
     def cidrs(self, cidrs):
-        """Sets the cidrs of this CreateNetworkInstance.
+        r"""Sets the cidrs of this CreateNetworkInstance.
 
         网络实例发布的网段路由列表。
 

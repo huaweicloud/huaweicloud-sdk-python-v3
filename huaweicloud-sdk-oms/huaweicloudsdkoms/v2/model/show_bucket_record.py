@@ -27,7 +27,7 @@ class ShowBucketRecord:
     }
 
     def __init__(self, name=None, size=None):
-        """ShowBucketRecord
+        r"""ShowBucketRecord
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowBucketRecord:
 
     @property
     def name(self):
-        """Gets the name of this ShowBucketRecord.
+        r"""Gets the name of this ShowBucketRecord.
 
         对象名
 
@@ -61,7 +61,7 @@ class ShowBucketRecord:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowBucketRecord.
+        r"""Sets the name of this ShowBucketRecord.
 
         对象名
 
@@ -72,7 +72,7 @@ class ShowBucketRecord:
 
     @property
     def size(self):
-        """Gets the size of this ShowBucketRecord.
+        r"""Gets the size of this ShowBucketRecord.
 
         对象大小，若对象无size属性，则返回--
 
@@ -83,7 +83,7 @@ class ShowBucketRecord:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowBucketRecord.
+        r"""Sets the size of this ShowBucketRecord.
 
         对象大小，若对象无size属性，则返回--
 

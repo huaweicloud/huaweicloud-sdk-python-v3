@@ -25,7 +25,7 @@ class MigrateAzRequestBody:
     }
 
     def __init__(self, target_azs=None):
-        """MigrateAzRequestBody
+        r"""MigrateAzRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MigrateAzRequestBody:
 
     @property
     def target_azs(self):
-        """Gets the target_azs of this MigrateAzRequestBody.
+        r"""Gets the target_azs of this MigrateAzRequestBody.
 
         迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -53,7 +53,7 @@ class MigrateAzRequestBody:
 
     @target_azs.setter
     def target_azs(self, target_azs):
-        """Sets the target_azs of this MigrateAzRequestBody.
+        r"""Sets the target_azs of this MigrateAzRequestBody.
 
         迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 

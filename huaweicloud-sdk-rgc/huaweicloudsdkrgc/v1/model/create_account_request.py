@@ -25,7 +25,7 @@ class CreateAccountRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAccountRequest
+        r"""CreateAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAccountRequest.
+        r"""Gets the body of this CreateAccountRequest.
 
         :return: The body of this CreateAccountRequest.
         :rtype: :class:`huaweicloudsdkrgc.v1.CreateManagedAccountRequest`
@@ -52,7 +52,7 @@ class CreateAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAccountRequest.
+        r"""Sets the body of this CreateAccountRequest.
 
         :param body: The body of this CreateAccountRequest.
         :type body: :class:`huaweicloudsdkrgc.v1.CreateManagedAccountRequest`

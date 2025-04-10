@@ -27,7 +27,7 @@ class CbcOperationLock:
     }
 
     def __init__(self, lock_scene=None, lock_source_id=None):
-        """CbcOperationLock
+        r"""CbcOperationLock
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CbcOperationLock:
 
     @property
     def lock_scene(self):
-        """Gets the lock_scene of this CbcOperationLock.
+        r"""Gets the lock_scene of this CbcOperationLock.
 
         限制操作场景： - TO_PERIOD_LOCK：按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等 - SPEC_CHG_LOCK：包周期规格变更场景锁，不允许进行删除、规格变更等
 
@@ -61,7 +61,7 @@ class CbcOperationLock:
 
     @lock_scene.setter
     def lock_scene(self, lock_scene):
-        """Sets the lock_scene of this CbcOperationLock.
+        r"""Sets the lock_scene of this CbcOperationLock.
 
         限制操作场景： - TO_PERIOD_LOCK：按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等 - SPEC_CHG_LOCK：包周期规格变更场景锁，不允许进行删除、规格变更等
 
@@ -72,7 +72,7 @@ class CbcOperationLock:
 
     @property
     def lock_source_id(self):
-        """Gets the lock_source_id of this CbcOperationLock.
+        r"""Gets the lock_source_id of this CbcOperationLock.
 
         发起限制操作对象的标志
 
@@ -83,7 +83,7 @@ class CbcOperationLock:
 
     @lock_source_id.setter
     def lock_source_id(self, lock_source_id):
-        """Sets the lock_source_id of this CbcOperationLock.
+        r"""Sets the lock_source_id of this CbcOperationLock.
 
         发起限制操作对象的标志
 

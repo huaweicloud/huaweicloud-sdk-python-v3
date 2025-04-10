@@ -27,7 +27,7 @@ class CreateTaskRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateTaskRequest
+        r"""CreateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTaskRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTaskRequest.
+        r"""Gets the project_id of this CreateTaskRequest.
 
         项目ID
 
@@ -60,7 +60,7 @@ class CreateTaskRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTaskRequest.
+        r"""Sets the project_id of this CreateTaskRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class CreateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTaskRequest.
+        r"""Gets the body of this CreateTaskRequest.
 
         :return: The body of this CreateTaskRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CreateTaskRequestV2`
@@ -80,7 +80,7 @@ class CreateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTaskRequest.
+        r"""Sets the body of this CreateTaskRequest.
 
         :param body: The body of this CreateTaskRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.CreateTaskRequestV2`

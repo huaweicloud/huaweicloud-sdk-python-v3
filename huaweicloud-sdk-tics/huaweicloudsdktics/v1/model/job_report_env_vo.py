@@ -33,7 +33,7 @@ class JobReportEnvVo:
     }
 
     def __init__(self, agg_name=None, league_id=None, league_name=None, project_id=None, region_id=None):
-        """JobReportEnvVo
+        r"""JobReportEnvVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class JobReportEnvVo:
 
     @property
     def agg_name(self):
-        """Gets the agg_name of this JobReportEnvVo.
+        r"""Gets the agg_name of this JobReportEnvVo.
 
         聚合器名称
 
@@ -82,7 +82,7 @@ class JobReportEnvVo:
 
     @agg_name.setter
     def agg_name(self, agg_name):
-        """Sets the agg_name of this JobReportEnvVo.
+        r"""Sets the agg_name of this JobReportEnvVo.
 
         聚合器名称
 
@@ -93,7 +93,7 @@ class JobReportEnvVo:
 
     @property
     def league_id(self):
-        """Gets the league_id of this JobReportEnvVo.
+        r"""Gets the league_id of this JobReportEnvVo.
 
         联盟id
 
@@ -104,7 +104,7 @@ class JobReportEnvVo:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this JobReportEnvVo.
+        r"""Sets the league_id of this JobReportEnvVo.
 
         联盟id
 
@@ -115,7 +115,7 @@ class JobReportEnvVo:
 
     @property
     def league_name(self):
-        """Gets the league_name of this JobReportEnvVo.
+        r"""Gets the league_name of this JobReportEnvVo.
 
         联盟名称
 
@@ -126,7 +126,7 @@ class JobReportEnvVo:
 
     @league_name.setter
     def league_name(self, league_name):
-        """Sets the league_name of this JobReportEnvVo.
+        r"""Sets the league_name of this JobReportEnvVo.
 
         联盟名称
 
@@ -137,7 +137,7 @@ class JobReportEnvVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this JobReportEnvVo.
+        r"""Gets the project_id of this JobReportEnvVo.
 
         项目id
 
@@ -148,7 +148,7 @@ class JobReportEnvVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this JobReportEnvVo.
+        r"""Sets the project_id of this JobReportEnvVo.
 
         项目id
 
@@ -159,7 +159,7 @@ class JobReportEnvVo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this JobReportEnvVo.
+        r"""Gets the region_id of this JobReportEnvVo.
 
         区域
 
@@ -170,7 +170,7 @@ class JobReportEnvVo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this JobReportEnvVo.
+        r"""Sets the region_id of this JobReportEnvVo.
 
         区域
 

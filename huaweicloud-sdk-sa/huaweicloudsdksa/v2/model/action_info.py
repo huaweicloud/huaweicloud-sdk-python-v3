@@ -41,7 +41,7 @@ class ActionInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, action_type=None, action_id=None, sort_order=None, playbook_id=None, playbook_version_id=None, project_id=None):
-        """ActionInfo
+        r"""ActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ActionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ActionInfo.
+        r"""Gets the id of this ActionInfo.
 
         Id value
 
@@ -110,7 +110,7 @@ class ActionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ActionInfo.
+        r"""Sets the id of this ActionInfo.
 
         Id value
 
@@ -121,7 +121,7 @@ class ActionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ActionInfo.
+        r"""Gets the name of this ActionInfo.
 
         The name, display only
 
@@ -132,7 +132,7 @@ class ActionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ActionInfo.
+        r"""Sets the name of this ActionInfo.
 
         The name, display only
 
@@ -143,7 +143,7 @@ class ActionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ActionInfo.
+        r"""Gets the description of this ActionInfo.
 
         The description, display only
 
@@ -154,7 +154,7 @@ class ActionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ActionInfo.
+        r"""Sets the description of this ActionInfo.
 
         The description, display only
 
@@ -165,7 +165,7 @@ class ActionInfo:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ActionInfo.
+        r"""Gets the action_type of this ActionInfo.
 
         Type of action, aopworkflow, Script, Task and so on.
 
@@ -176,7 +176,7 @@ class ActionInfo:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ActionInfo.
+        r"""Sets the action_type of this ActionInfo.
 
         Type of action, aopworkflow, Script, Task and so on.
 
@@ -187,7 +187,7 @@ class ActionInfo:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ActionInfo.
+        r"""Gets the action_id of this ActionInfo.
 
         action id
 
@@ -198,7 +198,7 @@ class ActionInfo:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ActionInfo.
+        r"""Sets the action_id of this ActionInfo.
 
         action id
 
@@ -209,7 +209,7 @@ class ActionInfo:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this ActionInfo.
+        r"""Gets the sort_order of this ActionInfo.
 
         sort_order
 
@@ -220,7 +220,7 @@ class ActionInfo:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this ActionInfo.
+        r"""Sets the sort_order of this ActionInfo.
 
         sort_order
 
@@ -231,7 +231,7 @@ class ActionInfo:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this ActionInfo.
+        r"""Gets the playbook_id of this ActionInfo.
 
         剧本ID
 
@@ -242,7 +242,7 @@ class ActionInfo:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this ActionInfo.
+        r"""Sets the playbook_id of this ActionInfo.
 
         剧本ID
 
@@ -253,7 +253,7 @@ class ActionInfo:
 
     @property
     def playbook_version_id(self):
-        """Gets the playbook_version_id of this ActionInfo.
+        r"""Gets the playbook_version_id of this ActionInfo.
 
         剧本版本ID
 
@@ -264,7 +264,7 @@ class ActionInfo:
 
     @playbook_version_id.setter
     def playbook_version_id(self, playbook_version_id):
-        """Sets the playbook_version_id of this ActionInfo.
+        r"""Sets the playbook_version_id of this ActionInfo.
 
         剧本版本ID
 
@@ -275,7 +275,7 @@ class ActionInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ActionInfo.
+        r"""Gets the project_id of this ActionInfo.
 
         project_id
 
@@ -286,7 +286,7 @@ class ActionInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ActionInfo.
+        r"""Sets the project_id of this ActionInfo.
 
         project_id
 

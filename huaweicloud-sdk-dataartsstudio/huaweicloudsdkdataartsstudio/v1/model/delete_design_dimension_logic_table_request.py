@@ -29,7 +29,7 @@ class DeleteDesignDimensionLogicTableRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, body=None):
-        """DeleteDesignDimensionLogicTableRequest
+        r"""DeleteDesignDimensionLogicTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDesignDimensionLogicTableRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteDesignDimensionLogicTableRequest.
+        r"""Gets the workspace of this DeleteDesignDimensionLogicTableRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class DeleteDesignDimensionLogicTableRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteDesignDimensionLogicTableRequest.
+        r"""Sets the workspace of this DeleteDesignDimensionLogicTableRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class DeleteDesignDimensionLogicTableRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this DeleteDesignDimensionLogicTableRequest.
+        r"""Gets the x_project_id of this DeleteDesignDimensionLogicTableRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -89,7 +89,7 @@ class DeleteDesignDimensionLogicTableRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this DeleteDesignDimensionLogicTableRequest.
+        r"""Sets the x_project_id of this DeleteDesignDimensionLogicTableRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -100,7 +100,7 @@ class DeleteDesignDimensionLogicTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDesignDimensionLogicTableRequest.
+        r"""Gets the body of this DeleteDesignDimensionLogicTableRequest.
 
         :return: The body of this DeleteDesignDimensionLogicTableRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.IdsParam`
@@ -109,7 +109,7 @@ class DeleteDesignDimensionLogicTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDesignDimensionLogicTableRequest.
+        r"""Sets the body of this DeleteDesignDimensionLogicTableRequest.
 
         :param body: The body of this DeleteDesignDimensionLogicTableRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.IdsParam`

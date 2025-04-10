@@ -27,7 +27,7 @@ class DeleteTaskRequest:
     }
 
     def __init__(self, service_type=None, task_id=None):
-        """DeleteTaskRequest
+        r"""DeleteTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this DeleteTaskRequest.
+        r"""Gets the service_type of this DeleteTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -59,7 +59,7 @@ class DeleteTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this DeleteTaskRequest.
+        r"""Sets the service_type of this DeleteTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -70,7 +70,7 @@ class DeleteTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteTaskRequest.
+        r"""Gets the task_id of this DeleteTaskRequest.
 
         任务id
 
@@ -81,7 +81,7 @@ class DeleteTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteTaskRequest.
+        r"""Sets the task_id of this DeleteTaskRequest.
 
         任务id
 

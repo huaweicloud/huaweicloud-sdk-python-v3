@@ -34,7 +34,7 @@ class ListAvailableConfigResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """ListAvailableConfigResponse
+        r"""ListAvailableConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListAvailableConfigResponse.
+        r"""Gets the code of this ListAvailableConfigResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListAvailableConfigResponse.
+        r"""Sets the code of this ListAvailableConfigResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListAvailableConfigResponse.
+        r"""Gets the error of this ListAvailableConfigResponse.
 
         :return: The error of this ListAvailableConfigResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorAvailableConfig`
@@ -103,7 +103,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListAvailableConfigResponse.
+        r"""Sets the error of this ListAvailableConfigResponse.
 
         :param error: The error of this ListAvailableConfigResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorAvailableConfig`
@@ -112,7 +112,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ListAvailableConfigResponse.
+        r"""Gets the reason of this ListAvailableConfigResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ListAvailableConfigResponse.
+        r"""Sets the reason of this ListAvailableConfigResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListAvailableConfigResponse.
+        r"""Gets the result of this ListAvailableConfigResponse.
 
         :return: The result of this ListAvailableConfigResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AvailableConfig`
@@ -143,7 +143,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListAvailableConfigResponse.
+        r"""Sets the result of this ListAvailableConfigResponse.
 
         :param result: The result of this ListAvailableConfigResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.AvailableConfig`
@@ -152,7 +152,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAvailableConfigResponse.
+        r"""Gets the status of this ListAvailableConfigResponse.
 
         状态
 
@@ -163,7 +163,7 @@ class ListAvailableConfigResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAvailableConfigResponse.
+        r"""Sets the status of this ListAvailableConfigResponse.
 
         状态
 

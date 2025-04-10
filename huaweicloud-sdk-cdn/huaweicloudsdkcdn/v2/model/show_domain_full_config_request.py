@@ -29,7 +29,7 @@ class ShowDomainFullConfigRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, show_special_configs=None):
-        """ShowDomainFullConfigRequest
+        r"""ShowDomainFullConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowDomainFullConfigRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainFullConfigRequest.
+        r"""Gets the domain_name of this ShowDomainFullConfigRequest.
 
         加速域名。
 
@@ -67,7 +67,7 @@ class ShowDomainFullConfigRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainFullConfigRequest.
+        r"""Sets the domain_name of this ShowDomainFullConfigRequest.
 
         加速域名。
 
@@ -78,7 +78,7 @@ class ShowDomainFullConfigRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainFullConfigRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
         企业项目ID， all：所有项目。
 
@@ -89,7 +89,7 @@ class ShowDomainFullConfigRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainFullConfigRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
         企业项目ID， all：所有项目。
 
@@ -100,7 +100,7 @@ class ShowDomainFullConfigRequest:
 
     @property
     def show_special_configs(self):
-        """Gets the show_special_configs of this ShowDomainFullConfigRequest.
+        r"""Gets the show_special_configs of this ShowDomainFullConfigRequest.
 
         取值为auth_key，用来查询鉴权KEY和鉴权备KEY的值。
 
@@ -111,7 +111,7 @@ class ShowDomainFullConfigRequest:
 
     @show_special_configs.setter
     def show_special_configs(self, show_special_configs):
-        """Sets the show_special_configs of this ShowDomainFullConfigRequest.
+        r"""Sets the show_special_configs of this ShowDomainFullConfigRequest.
 
         取值为auth_key，用来查询鉴权KEY和鉴权备KEY的值。
 

@@ -26,7 +26,7 @@ class ShowNameSpaceListResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowNameSpaceListResponse
+        r"""ShowNameSpaceListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNameSpaceListResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowNameSpaceListResponse.
+        r"""Gets the body of this ShowNameSpaceListResponse.
 
         :return: The body of this ShowNameSpaceListResponse.
         :rtype: list[:class:`huaweicloudsdkmas.v1.NamespaceVo`]
@@ -53,7 +53,7 @@ class ShowNameSpaceListResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowNameSpaceListResponse.
+        r"""Sets the body of this ShowNameSpaceListResponse.
 
         :param body: The body of this ShowNameSpaceListResponse.
         :type body: list[:class:`huaweicloudsdkmas.v1.NamespaceVo`]

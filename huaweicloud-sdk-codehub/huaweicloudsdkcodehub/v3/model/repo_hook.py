@@ -49,7 +49,7 @@ class RepoHook:
     }
 
     def __init__(self, build_events=None, created_at=None, enable_ssl_verification=None, id=None, issues_events=None, merge_requests_events=None, note_events=None, pipeline_events=None, project_id=None, push_events=None, repository_update_events=None, tag_push_events=None, wiki_page_events=None):
-        """RepoHook
+        r"""RepoHook
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class RepoHook:
 
     @property
     def build_events(self):
-        """Gets the build_events of this RepoHook.
+        r"""Gets the build_events of this RepoHook.
 
         是否触发build_events事件
 
@@ -138,7 +138,7 @@ class RepoHook:
 
     @build_events.setter
     def build_events(self, build_events):
-        """Sets the build_events of this RepoHook.
+        r"""Sets the build_events of this RepoHook.
 
         是否触发build_events事件
 
@@ -149,7 +149,7 @@ class RepoHook:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RepoHook.
+        r"""Gets the created_at of this RepoHook.
 
         仓库统计创建的时间
 
@@ -160,7 +160,7 @@ class RepoHook:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RepoHook.
+        r"""Sets the created_at of this RepoHook.
 
         仓库统计创建的时间
 
@@ -171,7 +171,7 @@ class RepoHook:
 
     @property
     def enable_ssl_verification(self):
-        """Gets the enable_ssl_verification of this RepoHook.
+        r"""Gets the enable_ssl_verification of this RepoHook.
 
         是否使用ssl验证
 
@@ -182,7 +182,7 @@ class RepoHook:
 
     @enable_ssl_verification.setter
     def enable_ssl_verification(self, enable_ssl_verification):
-        """Sets the enable_ssl_verification of this RepoHook.
+        r"""Sets the enable_ssl_verification of this RepoHook.
 
         是否使用ssl验证
 
@@ -193,7 +193,7 @@ class RepoHook:
 
     @property
     def id(self):
-        """Gets the id of this RepoHook.
+        r"""Gets the id of this RepoHook.
 
         hook id
 
@@ -204,7 +204,7 @@ class RepoHook:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RepoHook.
+        r"""Sets the id of this RepoHook.
 
         hook id
 
@@ -215,7 +215,7 @@ class RepoHook:
 
     @property
     def issues_events(self):
-        """Gets the issues_events of this RepoHook.
+        r"""Gets the issues_events of this RepoHook.
 
         是否触发issues_events事件
 
@@ -226,7 +226,7 @@ class RepoHook:
 
     @issues_events.setter
     def issues_events(self, issues_events):
-        """Sets the issues_events of this RepoHook.
+        r"""Sets the issues_events of this RepoHook.
 
         是否触发issues_events事件
 
@@ -237,7 +237,7 @@ class RepoHook:
 
     @property
     def merge_requests_events(self):
-        """Gets the merge_requests_events of this RepoHook.
+        r"""Gets the merge_requests_events of this RepoHook.
 
         是否触发merge_requests_events事件
 
@@ -248,7 +248,7 @@ class RepoHook:
 
     @merge_requests_events.setter
     def merge_requests_events(self, merge_requests_events):
-        """Sets the merge_requests_events of this RepoHook.
+        r"""Sets the merge_requests_events of this RepoHook.
 
         是否触发merge_requests_events事件
 
@@ -259,7 +259,7 @@ class RepoHook:
 
     @property
     def note_events(self):
-        """Gets the note_events of this RepoHook.
+        r"""Gets the note_events of this RepoHook.
 
         是否触发note_events事件
 
@@ -270,7 +270,7 @@ class RepoHook:
 
     @note_events.setter
     def note_events(self, note_events):
-        """Sets the note_events of this RepoHook.
+        r"""Sets the note_events of this RepoHook.
 
         是否触发note_events事件
 
@@ -281,7 +281,7 @@ class RepoHook:
 
     @property
     def pipeline_events(self):
-        """Gets the pipeline_events of this RepoHook.
+        r"""Gets the pipeline_events of this RepoHook.
 
         是否触发pipeline_events事件
 
@@ -292,7 +292,7 @@ class RepoHook:
 
     @pipeline_events.setter
     def pipeline_events(self, pipeline_events):
-        """Sets the pipeline_events of this RepoHook.
+        r"""Sets the pipeline_events of this RepoHook.
 
         是否触发pipeline_events事件
 
@@ -303,7 +303,7 @@ class RepoHook:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RepoHook.
+        r"""Gets the project_id of this RepoHook.
 
         仓库id
 
@@ -314,7 +314,7 @@ class RepoHook:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RepoHook.
+        r"""Sets the project_id of this RepoHook.
 
         仓库id
 
@@ -325,7 +325,7 @@ class RepoHook:
 
     @property
     def push_events(self):
-        """Gets the push_events of this RepoHook.
+        r"""Gets the push_events of this RepoHook.
 
         是否触发push_events事件
 
@@ -336,7 +336,7 @@ class RepoHook:
 
     @push_events.setter
     def push_events(self, push_events):
-        """Sets the push_events of this RepoHook.
+        r"""Sets the push_events of this RepoHook.
 
         是否触发push_events事件
 
@@ -347,7 +347,7 @@ class RepoHook:
 
     @property
     def repository_update_events(self):
-        """Gets the repository_update_events of this RepoHook.
+        r"""Gets the repository_update_events of this RepoHook.
 
         是否触发repository_update_events事件
 
@@ -358,7 +358,7 @@ class RepoHook:
 
     @repository_update_events.setter
     def repository_update_events(self, repository_update_events):
-        """Sets the repository_update_events of this RepoHook.
+        r"""Sets the repository_update_events of this RepoHook.
 
         是否触发repository_update_events事件
 
@@ -369,7 +369,7 @@ class RepoHook:
 
     @property
     def tag_push_events(self):
-        """Gets the tag_push_events of this RepoHook.
+        r"""Gets the tag_push_events of this RepoHook.
 
         是否触发tag_push_events事件
 
@@ -380,7 +380,7 @@ class RepoHook:
 
     @tag_push_events.setter
     def tag_push_events(self, tag_push_events):
-        """Sets the tag_push_events of this RepoHook.
+        r"""Sets the tag_push_events of this RepoHook.
 
         是否触发tag_push_events事件
 
@@ -391,7 +391,7 @@ class RepoHook:
 
     @property
     def wiki_page_events(self):
-        """Gets the wiki_page_events of this RepoHook.
+        r"""Gets the wiki_page_events of this RepoHook.
 
         是否触发wiki_page_events事件
 
@@ -402,7 +402,7 @@ class RepoHook:
 
     @wiki_page_events.setter
     def wiki_page_events(self, wiki_page_events):
-        """Sets the wiki_page_events of this RepoHook.
+        r"""Sets the wiki_page_events of this RepoHook.
 
         是否触发wiki_page_events事件
 

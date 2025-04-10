@@ -27,7 +27,7 @@ class AffinityNodeAffinity:
     }
 
     def __init__(self, preferred_during_scheduling_ignored_during_execution=None, required_during_scheduling_ignored_during_execution=None):
-        """AffinityNodeAffinity
+        r"""AffinityNodeAffinity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AffinityNodeAffinity:
 
     @property
     def preferred_during_scheduling_ignored_during_execution(self):
-        """Gets the preferred_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
+        r"""Gets the preferred_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
 
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
@@ -61,7 +61,7 @@ class AffinityNodeAffinity:
 
     @preferred_during_scheduling_ignored_during_execution.setter
     def preferred_during_scheduling_ignored_during_execution(self, preferred_during_scheduling_ignored_during_execution):
-        """Sets the preferred_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
+        r"""Sets the preferred_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
 
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
@@ -72,7 +72,7 @@ class AffinityNodeAffinity:
 
     @property
     def required_during_scheduling_ignored_during_execution(self):
-        """Gets the required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
+        r"""Gets the required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
 
         :return: The required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
         :rtype: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`
@@ -81,7 +81,7 @@ class AffinityNodeAffinity:
 
     @required_during_scheduling_ignored_during_execution.setter
     def required_during_scheduling_ignored_during_execution(self, required_during_scheduling_ignored_during_execution):
-        """Sets the required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
+        r"""Sets the required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
 
         :param required_during_scheduling_ignored_during_execution: The required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
         :type required_during_scheduling_ignored_during_execution: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`

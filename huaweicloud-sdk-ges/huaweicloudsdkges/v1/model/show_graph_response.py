@@ -30,7 +30,7 @@ class ShowGraphResponse(SdkResponse):
     }
 
     def __init__(self, graph=None, error_message=None, error_code=None):
-        """ShowGraphResponse
+        r"""ShowGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowGraphResponse(SdkResponse):
 
     @property
     def graph(self):
-        """Gets the graph of this ShowGraphResponse.
+        r"""Gets the graph of this ShowGraphResponse.
 
         :return: The graph of this ShowGraphResponse.
         :rtype: :class:`huaweicloudsdkges.v1.Graph1`
@@ -67,7 +67,7 @@ class ShowGraphResponse(SdkResponse):
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this ShowGraphResponse.
+        r"""Sets the graph of this ShowGraphResponse.
 
         :param graph: The graph of this ShowGraphResponse.
         :type graph: :class:`huaweicloudsdkges.v1.Graph1`
@@ -76,7 +76,7 @@ class ShowGraphResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ShowGraphResponse.
+        r"""Gets the error_message of this ShowGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -87,7 +87,7 @@ class ShowGraphResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ShowGraphResponse.
+        r"""Sets the error_message of this ShowGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -98,7 +98,7 @@ class ShowGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowGraphResponse.
+        r"""Gets the error_code of this ShowGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -109,7 +109,7 @@ class ShowGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowGraphResponse.
+        r"""Sets the error_code of this ShowGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 

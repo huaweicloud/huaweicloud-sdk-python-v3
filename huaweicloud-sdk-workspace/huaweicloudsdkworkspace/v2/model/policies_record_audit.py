@@ -27,7 +27,7 @@ class PoliciesRecordAudit:
     }
 
     def __init__(self, enable=None, rules=None):
-        """PoliciesRecordAudit
+        r"""PoliciesRecordAudit
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesRecordAudit:
 
     @property
     def enable(self):
-        """Gets the enable of this PoliciesRecordAudit.
+        r"""Gets the enable of this PoliciesRecordAudit.
 
         是否开启录屏审计。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesRecordAudit:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this PoliciesRecordAudit.
+        r"""Sets the enable of this PoliciesRecordAudit.
 
         是否开启录屏审计。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesRecordAudit:
 
     @property
     def rules(self):
-        """Gets the rules of this PoliciesRecordAudit.
+        r"""Gets the rules of this PoliciesRecordAudit.
 
         :return: The rules of this PoliciesRecordAudit.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesRecordAuditRules`
@@ -81,7 +81,7 @@ class PoliciesRecordAudit:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this PoliciesRecordAudit.
+        r"""Sets the rules of this PoliciesRecordAudit.
 
         :param rules: The rules of this PoliciesRecordAudit.
         :type rules: :class:`huaweicloudsdkworkspace.v2.PoliciesRecordAuditRules`

@@ -31,7 +31,7 @@ class ContainerConfigsDTO:
     }
 
     def __init__(self, privileged=None, host_network=None, restart_policy=None, container_port_list=None):
-        """ContainerConfigsDTO
+        r"""ContainerConfigsDTO
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ContainerConfigsDTO:
 
     @property
     def privileged(self):
-        """Gets the privileged of this ContainerConfigsDTO.
+        r"""Gets the privileged of this ContainerConfigsDTO.
 
         开启容器特权模式
 
@@ -74,7 +74,7 @@ class ContainerConfigsDTO:
 
     @privileged.setter
     def privileged(self, privileged):
-        """Sets the privileged of this ContainerConfigsDTO.
+        r"""Sets the privileged of this ContainerConfigsDTO.
 
         开启容器特权模式
 
@@ -85,7 +85,7 @@ class ContainerConfigsDTO:
 
     @property
     def host_network(self):
-        """Gets the host_network of this ContainerConfigsDTO.
+        r"""Gets the host_network of this ContainerConfigsDTO.
 
         是否使用主机网络模式
 
@@ -96,7 +96,7 @@ class ContainerConfigsDTO:
 
     @host_network.setter
     def host_network(self, host_network):
-        """Sets the host_network of this ContainerConfigsDTO.
+        r"""Sets the host_network of this ContainerConfigsDTO.
 
         是否使用主机网络模式
 
@@ -107,7 +107,7 @@ class ContainerConfigsDTO:
 
     @property
     def restart_policy(self):
-        """Gets the restart_policy of this ContainerConfigsDTO.
+        r"""Gets the restart_policy of this ContainerConfigsDTO.
 
         重启策略，容器执行健康检查后失败后的策略
 
@@ -118,7 +118,7 @@ class ContainerConfigsDTO:
 
     @restart_policy.setter
     def restart_policy(self, restart_policy):
-        """Sets the restart_policy of this ContainerConfigsDTO.
+        r"""Sets the restart_policy of this ContainerConfigsDTO.
 
         重启策略，容器执行健康检查后失败后的策略
 
@@ -129,7 +129,7 @@ class ContainerConfigsDTO:
 
     @property
     def container_port_list(self):
-        """Gets the container_port_list of this ContainerConfigsDTO.
+        r"""Gets the container_port_list of this ContainerConfigsDTO.
 
         容器端口映射值
 
@@ -140,7 +140,7 @@ class ContainerConfigsDTO:
 
     @container_port_list.setter
     def container_port_list(self, container_port_list):
-        """Sets the container_port_list of this ContainerConfigsDTO.
+        r"""Sets the container_port_list of this ContainerConfigsDTO.
 
         容器端口映射值
 

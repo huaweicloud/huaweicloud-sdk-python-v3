@@ -55,7 +55,7 @@ class WorkspaceVO:
     }
 
     def __init__(self, id=None, name=None, description=None, is_physical=None, frequent=None, top=None, level=None, dw_type=None, create_time=None, update_time=None, create_by=None, update_by=None, type=None, biz_catalog_ids=None, databases=None, table_model_prefix=None):
-        """WorkspaceVO
+        r"""WorkspaceVO
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class WorkspaceVO:
 
     @property
     def id(self):
-        """Gets the id of this WorkspaceVO.
+        r"""Gets the id of this WorkspaceVO.
 
         编号，ID字符串。
 
@@ -157,7 +157,7 @@ class WorkspaceVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkspaceVO.
+        r"""Sets the id of this WorkspaceVO.
 
         编号，ID字符串。
 
@@ -168,7 +168,7 @@ class WorkspaceVO:
 
     @property
     def name(self):
-        """Gets the name of this WorkspaceVO.
+        r"""Gets the name of this WorkspaceVO.
 
         工作区名字。
 
@@ -179,7 +179,7 @@ class WorkspaceVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkspaceVO.
+        r"""Sets the name of this WorkspaceVO.
 
         工作区名字。
 
@@ -190,7 +190,7 @@ class WorkspaceVO:
 
     @property
     def description(self):
-        """Gets the description of this WorkspaceVO.
+        r"""Gets the description of this WorkspaceVO.
 
         描述。
 
@@ -201,7 +201,7 @@ class WorkspaceVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkspaceVO.
+        r"""Sets the description of this WorkspaceVO.
 
         描述。
 
@@ -212,7 +212,7 @@ class WorkspaceVO:
 
     @property
     def is_physical(self):
-        """Gets the is_physical of this WorkspaceVO.
+        r"""Gets the is_physical of this WorkspaceVO.
 
         是否为物理表。
 
@@ -223,7 +223,7 @@ class WorkspaceVO:
 
     @is_physical.setter
     def is_physical(self, is_physical):
-        """Sets the is_physical of this WorkspaceVO.
+        r"""Sets the is_physical of this WorkspaceVO.
 
         是否为物理表。
 
@@ -234,7 +234,7 @@ class WorkspaceVO:
 
     @property
     def frequent(self):
-        """Gets the frequent of this WorkspaceVO.
+        r"""Gets the frequent of this WorkspaceVO.
 
         是否为常用。
 
@@ -245,7 +245,7 @@ class WorkspaceVO:
 
     @frequent.setter
     def frequent(self, frequent):
-        """Sets the frequent of this WorkspaceVO.
+        r"""Sets the frequent of this WorkspaceVO.
 
         是否为常用。
 
@@ -256,7 +256,7 @@ class WorkspaceVO:
 
     @property
     def top(self):
-        """Gets the top of this WorkspaceVO.
+        r"""Gets the top of this WorkspaceVO.
 
         分层治理。
 
@@ -267,7 +267,7 @@ class WorkspaceVO:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this WorkspaceVO.
+        r"""Sets the top of this WorkspaceVO.
 
         分层治理。
 
@@ -278,7 +278,7 @@ class WorkspaceVO:
 
     @property
     def level(self):
-        """Gets the level of this WorkspaceVO.
+        r"""Gets the level of this WorkspaceVO.
 
         :return: The level of this WorkspaceVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
@@ -287,7 +287,7 @@ class WorkspaceVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this WorkspaceVO.
+        r"""Sets the level of this WorkspaceVO.
 
         :param level: The level of this WorkspaceVO.
         :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
@@ -296,7 +296,7 @@ class WorkspaceVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this WorkspaceVO.
+        r"""Gets the dw_type of this WorkspaceVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -307,7 +307,7 @@ class WorkspaceVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this WorkspaceVO.
+        r"""Sets the dw_type of this WorkspaceVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -318,7 +318,7 @@ class WorkspaceVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WorkspaceVO.
+        r"""Gets the create_time of this WorkspaceVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -329,7 +329,7 @@ class WorkspaceVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WorkspaceVO.
+        r"""Sets the create_time of this WorkspaceVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -340,7 +340,7 @@ class WorkspaceVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this WorkspaceVO.
+        r"""Gets the update_time of this WorkspaceVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -351,7 +351,7 @@ class WorkspaceVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this WorkspaceVO.
+        r"""Sets the update_time of this WorkspaceVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -362,7 +362,7 @@ class WorkspaceVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this WorkspaceVO.
+        r"""Gets the create_by of this WorkspaceVO.
 
         创建人。
 
@@ -373,7 +373,7 @@ class WorkspaceVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this WorkspaceVO.
+        r"""Sets the create_by of this WorkspaceVO.
 
         创建人。
 
@@ -384,7 +384,7 @@ class WorkspaceVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this WorkspaceVO.
+        r"""Gets the update_by of this WorkspaceVO.
 
         更新人。
 
@@ -395,7 +395,7 @@ class WorkspaceVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this WorkspaceVO.
+        r"""Sets the update_by of this WorkspaceVO.
 
         更新人。
 
@@ -406,7 +406,7 @@ class WorkspaceVO:
 
     @property
     def type(self):
-        """Gets the type of this WorkspaceVO.
+        r"""Gets the type of this WorkspaceVO.
 
         工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
@@ -417,7 +417,7 @@ class WorkspaceVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WorkspaceVO.
+        r"""Sets the type of this WorkspaceVO.
 
         工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
@@ -428,7 +428,7 @@ class WorkspaceVO:
 
     @property
     def biz_catalog_ids(self):
-        """Gets the biz_catalog_ids of this WorkspaceVO.
+        r"""Gets the biz_catalog_ids of this WorkspaceVO.
 
         关联的业务分层的ID列表 {\"l1Ids\":[],\"l2Ids\":[],\"l3Ids\":[]}。
 
@@ -439,7 +439,7 @@ class WorkspaceVO:
 
     @biz_catalog_ids.setter
     def biz_catalog_ids(self, biz_catalog_ids):
-        """Sets the biz_catalog_ids of this WorkspaceVO.
+        r"""Sets the biz_catalog_ids of this WorkspaceVO.
 
         关联的业务分层的ID列表 {\"l1Ids\":[],\"l2Ids\":[],\"l3Ids\":[]}。
 
@@ -450,7 +450,7 @@ class WorkspaceVO:
 
     @property
     def databases(self):
-        """Gets the databases of this WorkspaceVO.
+        r"""Gets the databases of this WorkspaceVO.
 
         数据库名称数组。
 
@@ -461,7 +461,7 @@ class WorkspaceVO:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this WorkspaceVO.
+        r"""Sets the databases of this WorkspaceVO.
 
         数据库名称数组。
 
@@ -472,7 +472,7 @@ class WorkspaceVO:
 
     @property
     def table_model_prefix(self):
-        """Gets the table_model_prefix of this WorkspaceVO.
+        r"""Gets the table_model_prefix of this WorkspaceVO.
 
         模型校验前缀，长度不超过100，数字字母下划线组成，字母开头
 
@@ -483,7 +483,7 @@ class WorkspaceVO:
 
     @table_model_prefix.setter
     def table_model_prefix(self, table_model_prefix):
-        """Sets the table_model_prefix of this WorkspaceVO.
+        r"""Sets the table_model_prefix of this WorkspaceVO.
 
         模型校验前缀，长度不超过100，数字字母下划线组成，字母开头
 

@@ -29,7 +29,7 @@ class ListArchiveRulesRequest:
     }
 
     def __init__(self, analyzer_id=None, limit=None, marker=None):
-        """ListArchiveRulesRequest
+        r"""ListArchiveRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListArchiveRulesRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ListArchiveRulesRequest.
+        r"""Gets the analyzer_id of this ListArchiveRulesRequest.
 
         分析器的唯一标识符。
 
@@ -67,7 +67,7 @@ class ListArchiveRulesRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ListArchiveRulesRequest.
+        r"""Sets the analyzer_id of this ListArchiveRulesRequest.
 
         分析器的唯一标识符。
 
@@ -78,7 +78,7 @@ class ListArchiveRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListArchiveRulesRequest.
+        r"""Gets the limit of this ListArchiveRulesRequest.
 
         单页最大结果数。
 
@@ -89,7 +89,7 @@ class ListArchiveRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListArchiveRulesRequest.
+        r"""Sets the limit of this ListArchiveRulesRequest.
 
         单页最大结果数。
 
@@ -100,7 +100,7 @@ class ListArchiveRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListArchiveRulesRequest.
+        r"""Gets the marker of this ListArchiveRulesRequest.
 
         页面标记。
 
@@ -111,7 +111,7 @@ class ListArchiveRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListArchiveRulesRequest.
+        r"""Sets the marker of this ListArchiveRulesRequest.
 
         页面标记。
 

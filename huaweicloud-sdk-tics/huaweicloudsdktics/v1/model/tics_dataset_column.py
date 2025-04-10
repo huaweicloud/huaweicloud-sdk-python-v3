@@ -45,7 +45,7 @@ class TicsDatasetColumn:
     }
 
     def __init__(self, column_name=None, comments=None, data_id=None, data_type=None, fl_label_type=None, is_discrete=None, length=None, privacy_policy=None, privacy_policy_ext=None, sacle=None, sql_col_privacy_type=None):
-        """TicsDatasetColumn
+        r"""TicsDatasetColumn
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TicsDatasetColumn:
 
     @property
     def column_name(self):
-        """Gets the column_name of this TicsDatasetColumn.
+        r"""Gets the column_name of this TicsDatasetColumn.
 
         字段名称
 
@@ -124,7 +124,7 @@ class TicsDatasetColumn:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this TicsDatasetColumn.
+        r"""Sets the column_name of this TicsDatasetColumn.
 
         字段名称
 
@@ -135,7 +135,7 @@ class TicsDatasetColumn:
 
     @property
     def comments(self):
-        """Gets the comments of this TicsDatasetColumn.
+        r"""Gets the comments of this TicsDatasetColumn.
 
         备注信息
 
@@ -146,7 +146,7 @@ class TicsDatasetColumn:
 
     @comments.setter
     def comments(self, comments):
-        """Sets the comments of this TicsDatasetColumn.
+        r"""Sets the comments of this TicsDatasetColumn.
 
         备注信息
 
@@ -157,7 +157,7 @@ class TicsDatasetColumn:
 
     @property
     def data_id(self):
-        """Gets the data_id of this TicsDatasetColumn.
+        r"""Gets the data_id of this TicsDatasetColumn.
 
         数据集id
 
@@ -168,7 +168,7 @@ class TicsDatasetColumn:
 
     @data_id.setter
     def data_id(self, data_id):
-        """Sets the data_id of this TicsDatasetColumn.
+        r"""Sets the data_id of this TicsDatasetColumn.
 
         数据集id
 
@@ -179,7 +179,7 @@ class TicsDatasetColumn:
 
     @property
     def data_type(self):
-        """Gets the data_type of this TicsDatasetColumn.
+        r"""Gets the data_type of this TicsDatasetColumn.
 
         字段类型
 
@@ -190,7 +190,7 @@ class TicsDatasetColumn:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this TicsDatasetColumn.
+        r"""Sets the data_type of this TicsDatasetColumn.
 
         字段类型
 
@@ -201,7 +201,7 @@ class TicsDatasetColumn:
 
     @property
     def fl_label_type(self):
-        """Gets the fl_label_type of this TicsDatasetColumn.
+        r"""Gets the fl_label_type of this TicsDatasetColumn.
 
         学习数据集标签类型，UNIQUE_ID.唯一标识,FEATURE.特征,LABEL.标签,FILTER.过滤字段
 
@@ -212,7 +212,7 @@ class TicsDatasetColumn:
 
     @fl_label_type.setter
     def fl_label_type(self, fl_label_type):
-        """Sets the fl_label_type of this TicsDatasetColumn.
+        r"""Sets the fl_label_type of this TicsDatasetColumn.
 
         学习数据集标签类型，UNIQUE_ID.唯一标识,FEATURE.特征,LABEL.标签,FILTER.过滤字段
 
@@ -223,7 +223,7 @@ class TicsDatasetColumn:
 
     @property
     def is_discrete(self):
-        """Gets the is_discrete of this TicsDatasetColumn.
+        r"""Gets the is_discrete of this TicsDatasetColumn.
 
         是否离散
 
@@ -234,7 +234,7 @@ class TicsDatasetColumn:
 
     @is_discrete.setter
     def is_discrete(self, is_discrete):
-        """Sets the is_discrete of this TicsDatasetColumn.
+        r"""Sets the is_discrete of this TicsDatasetColumn.
 
         是否离散
 
@@ -245,7 +245,7 @@ class TicsDatasetColumn:
 
     @property
     def length(self):
-        """Gets the length of this TicsDatasetColumn.
+        r"""Gets the length of this TicsDatasetColumn.
 
         长度
 
@@ -256,7 +256,7 @@ class TicsDatasetColumn:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this TicsDatasetColumn.
+        r"""Sets the length of this TicsDatasetColumn.
 
         长度
 
@@ -267,7 +267,7 @@ class TicsDatasetColumn:
 
     @property
     def privacy_policy(self):
-        """Gets the privacy_policy of this TicsDatasetColumn.
+        r"""Gets the privacy_policy of this TicsDatasetColumn.
 
         隐私策略，HASH.哈希处理，MASK.掩码，NONE.不处理
 
@@ -278,7 +278,7 @@ class TicsDatasetColumn:
 
     @privacy_policy.setter
     def privacy_policy(self, privacy_policy):
-        """Sets the privacy_policy of this TicsDatasetColumn.
+        r"""Sets the privacy_policy of this TicsDatasetColumn.
 
         隐私策略，HASH.哈希处理，MASK.掩码，NONE.不处理
 
@@ -289,7 +289,7 @@ class TicsDatasetColumn:
 
     @property
     def privacy_policy_ext(self):
-        """Gets the privacy_policy_ext of this TicsDatasetColumn.
+        r"""Gets the privacy_policy_ext of this TicsDatasetColumn.
 
         隐私策略描述
 
@@ -300,7 +300,7 @@ class TicsDatasetColumn:
 
     @privacy_policy_ext.setter
     def privacy_policy_ext(self, privacy_policy_ext):
-        """Sets the privacy_policy_ext of this TicsDatasetColumn.
+        r"""Sets the privacy_policy_ext of this TicsDatasetColumn.
 
         隐私策略描述
 
@@ -311,7 +311,7 @@ class TicsDatasetColumn:
 
     @property
     def sacle(self):
-        """Gets the sacle of this TicsDatasetColumn.
+        r"""Gets the sacle of this TicsDatasetColumn.
 
         精度
 
@@ -322,7 +322,7 @@ class TicsDatasetColumn:
 
     @sacle.setter
     def sacle(self, sacle):
-        """Sets the sacle of this TicsDatasetColumn.
+        r"""Sets the sacle of this TicsDatasetColumn.
 
         精度
 
@@ -333,7 +333,7 @@ class TicsDatasetColumn:
 
     @property
     def sql_col_privacy_type(self):
-        """Gets the sql_col_privacy_type of this TicsDatasetColumn.
+        r"""Gets the sql_col_privacy_type of this TicsDatasetColumn.
 
         分析数据集字段隐私类别，NON_SENSITIVE.非敏感，SENSITIVE.敏感，UNIQUE_ID.唯一主键
 
@@ -344,7 +344,7 @@ class TicsDatasetColumn:
 
     @sql_col_privacy_type.setter
     def sql_col_privacy_type(self, sql_col_privacy_type):
-        """Sets the sql_col_privacy_type of this TicsDatasetColumn.
+        r"""Sets the sql_col_privacy_type of this TicsDatasetColumn.
 
         分析数据集字段隐私类别，NON_SENSITIVE.非敏感，SENSITIVE.敏感，UNIQUE_ID.唯一主键
 

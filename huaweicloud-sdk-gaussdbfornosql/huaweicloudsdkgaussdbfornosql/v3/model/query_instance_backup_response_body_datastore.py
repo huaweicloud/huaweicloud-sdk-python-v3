@@ -27,7 +27,7 @@ class QueryInstanceBackupResponseBodyDatastore:
     }
 
     def __init__(self, type=None, version=None):
-        """QueryInstanceBackupResponseBodyDatastore
+        r"""QueryInstanceBackupResponseBodyDatastore
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryInstanceBackupResponseBodyDatastore:
 
     @property
     def type(self):
-        """Gets the type of this QueryInstanceBackupResponseBodyDatastore.
+        r"""Gets the type of this QueryInstanceBackupResponseBodyDatastore.
 
         数据库类型。
 
@@ -59,7 +59,7 @@ class QueryInstanceBackupResponseBodyDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryInstanceBackupResponseBodyDatastore.
+        r"""Sets the type of this QueryInstanceBackupResponseBodyDatastore.
 
         数据库类型。
 
@@ -70,7 +70,7 @@ class QueryInstanceBackupResponseBodyDatastore:
 
     @property
     def version(self):
-        """Gets the version of this QueryInstanceBackupResponseBodyDatastore.
+        r"""Gets the version of this QueryInstanceBackupResponseBodyDatastore.
 
         数据库版本。
 
@@ -81,7 +81,7 @@ class QueryInstanceBackupResponseBodyDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QueryInstanceBackupResponseBodyDatastore.
+        r"""Sets the version of this QueryInstanceBackupResponseBodyDatastore.
 
         数据库版本。
 

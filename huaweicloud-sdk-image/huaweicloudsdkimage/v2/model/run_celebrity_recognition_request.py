@@ -25,7 +25,7 @@ class RunCelebrityRecognitionRequest:
     }
 
     def __init__(self, body=None):
-        """RunCelebrityRecognitionRequest
+        r"""RunCelebrityRecognitionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunCelebrityRecognitionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunCelebrityRecognitionRequest.
+        r"""Gets the body of this RunCelebrityRecognitionRequest.
 
         :return: The body of this RunCelebrityRecognitionRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`
@@ -52,7 +52,7 @@ class RunCelebrityRecognitionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCelebrityRecognitionRequest.
+        r"""Sets the body of this RunCelebrityRecognitionRequest.
 
         :param body: The body of this RunCelebrityRecognitionRequest.
         :type body: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`

@@ -25,7 +25,7 @@ class SqlJobRun:
     }
 
     def __init__(self, sql_type=None):
-        """SqlJobRun
+        r"""SqlJobRun
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SqlJobRun:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SqlJobRun.
+        r"""Gets the sql_type of this SqlJobRun.
 
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
@@ -53,7 +53,7 @@ class SqlJobRun:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SqlJobRun.
+        r"""Sets the sql_type of this SqlJobRun.
 
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 

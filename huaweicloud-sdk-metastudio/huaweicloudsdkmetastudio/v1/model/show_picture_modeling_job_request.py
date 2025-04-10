@@ -27,7 +27,7 @@ class ShowPictureModelingJobRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None):
-        """ShowPictureModelingJobRequest
+        r"""ShowPictureModelingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPictureModelingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPictureModelingJobRequest.
+        r"""Gets the job_id of this ShowPictureModelingJobRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class ShowPictureModelingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPictureModelingJobRequest.
+        r"""Sets the job_id of this ShowPictureModelingJobRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class ShowPictureModelingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowPictureModelingJobRequest.
+        r"""Gets the x_app_user_id of this ShowPictureModelingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class ShowPictureModelingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowPictureModelingJobRequest.
+        r"""Sets the x_app_user_id of this ShowPictureModelingJobRequest.
 
         第三方用户ID。不允许输入中文。
 

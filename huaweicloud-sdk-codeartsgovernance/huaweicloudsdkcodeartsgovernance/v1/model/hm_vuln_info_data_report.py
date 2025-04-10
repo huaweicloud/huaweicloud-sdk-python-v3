@@ -27,7 +27,7 @@ class HmVulnInfoDataReport:
     }
 
     def __init__(self, detail=None, file_name=None):
-        """HmVulnInfoDataReport
+        r"""HmVulnInfoDataReport
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HmVulnInfoDataReport:
 
     @property
     def detail(self):
-        """Gets the detail of this HmVulnInfoDataReport.
+        r"""Gets the detail of this HmVulnInfoDataReport.
 
         :return: The detail of this HmVulnInfoDataReport.
         :rtype: :class:`huaweicloudsdkcodeartsgovernance.v1.HmVulnInfoDataDetail`
@@ -59,7 +59,7 @@ class HmVulnInfoDataReport:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this HmVulnInfoDataReport.
+        r"""Sets the detail of this HmVulnInfoDataReport.
 
         :param detail: The detail of this HmVulnInfoDataReport.
         :type detail: :class:`huaweicloudsdkcodeartsgovernance.v1.HmVulnInfoDataDetail`
@@ -68,7 +68,7 @@ class HmVulnInfoDataReport:
 
     @property
     def file_name(self):
-        """Gets the file_name of this HmVulnInfoDataReport.
+        r"""Gets the file_name of this HmVulnInfoDataReport.
 
         文件名
 
@@ -79,7 +79,7 @@ class HmVulnInfoDataReport:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this HmVulnInfoDataReport.
+        r"""Sets the file_name of this HmVulnInfoDataReport.
 
         文件名
 

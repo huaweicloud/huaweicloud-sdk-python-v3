@@ -35,7 +35,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
     }
 
     def __init__(self, workspace=None, datasource=None, cluster_name=None, database_name=None, schema_name=None, table_name=None):
-        """ListSecuritySensitiveDataOverviewsRequest
+        r"""ListSecuritySensitiveDataOverviewsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Gets the workspace of this ListSecuritySensitiveDataOverviewsRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Sets the workspace of this ListSecuritySensitiveDataOverviewsRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @property
     def datasource(self):
-        """Gets the datasource of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Gets the datasource of this ListSecuritySensitiveDataOverviewsRequest.
 
         数据源类型,HIVE数据源,DWS数据源,DLI数据源
 
@@ -110,7 +110,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Sets the datasource of this ListSecuritySensitiveDataOverviewsRequest.
 
         数据源类型,HIVE数据源,DWS数据源,DLI数据源
 
@@ -121,7 +121,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Gets the cluster_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         集群名称
 
@@ -132,7 +132,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Sets the cluster_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         集群名称
 
@@ -143,7 +143,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Gets the database_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         数据库名称
 
@@ -154,7 +154,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Sets the database_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         数据库名称
 
@@ -165,7 +165,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Gets the schema_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         schema名称
 
@@ -176,7 +176,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Sets the schema_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         schema名称
 
@@ -187,7 +187,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Gets the table_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         表名称
 
@@ -198,7 +198,7 @@ class ListSecuritySensitiveDataOverviewsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListSecuritySensitiveDataOverviewsRequest.
+        r"""Sets the table_name of this ListSecuritySensitiveDataOverviewsRequest.
 
         表名称
 

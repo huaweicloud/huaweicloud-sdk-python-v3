@@ -31,7 +31,7 @@ class ChangeAlertRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, alert_id=None, body=None):
-        """ChangeAlertRequest
+        r"""ChangeAlertRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangeAlertRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ChangeAlertRequest.
+        r"""Gets the project_id of this ChangeAlertRequest.
 
         项目id
 
@@ -72,7 +72,7 @@ class ChangeAlertRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ChangeAlertRequest.
+        r"""Sets the project_id of this ChangeAlertRequest.
 
         项目id
 
@@ -83,7 +83,7 @@ class ChangeAlertRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ChangeAlertRequest.
+        r"""Gets the workspace_id of this ChangeAlertRequest.
 
         工作空间id
 
@@ -94,7 +94,7 @@ class ChangeAlertRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ChangeAlertRequest.
+        r"""Sets the workspace_id of this ChangeAlertRequest.
 
         工作空间id
 
@@ -105,7 +105,7 @@ class ChangeAlertRequest:
 
     @property
     def alert_id(self):
-        """Gets the alert_id of this ChangeAlertRequest.
+        r"""Gets the alert_id of this ChangeAlertRequest.
 
         告警ID
 
@@ -116,7 +116,7 @@ class ChangeAlertRequest:
 
     @alert_id.setter
     def alert_id(self, alert_id):
-        """Sets the alert_id of this ChangeAlertRequest.
+        r"""Sets the alert_id of this ChangeAlertRequest.
 
         告警ID
 
@@ -127,7 +127,7 @@ class ChangeAlertRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeAlertRequest.
+        r"""Gets the body of this ChangeAlertRequest.
 
         :return: The body of this ChangeAlertRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ChangeAlertRequestBody`
@@ -136,7 +136,7 @@ class ChangeAlertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeAlertRequest.
+        r"""Sets the body of this ChangeAlertRequest.
 
         :param body: The body of this ChangeAlertRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.ChangeAlertRequestBody`

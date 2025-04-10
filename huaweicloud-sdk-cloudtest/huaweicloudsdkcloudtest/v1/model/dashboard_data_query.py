@@ -33,7 +33,7 @@ class DashboardDataQuery:
     }
 
     def __init__(self, end_time=None, page_num=None, page_size=None, start_time=None, task_ids=None):
-        """DashboardDataQuery
+        r"""DashboardDataQuery
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DashboardDataQuery:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DashboardDataQuery.
+        r"""Gets the end_time of this DashboardDataQuery.
 
         查询结束时间
 
@@ -82,7 +82,7 @@ class DashboardDataQuery:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DashboardDataQuery.
+        r"""Sets the end_time of this DashboardDataQuery.
 
         查询结束时间
 
@@ -93,7 +93,7 @@ class DashboardDataQuery:
 
     @property
     def page_num(self):
-        """Gets the page_num of this DashboardDataQuery.
+        r"""Gets the page_num of this DashboardDataQuery.
 
         分页参数，页码
 
@@ -104,7 +104,7 @@ class DashboardDataQuery:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this DashboardDataQuery.
+        r"""Sets the page_num of this DashboardDataQuery.
 
         分页参数，页码
 
@@ -115,7 +115,7 @@ class DashboardDataQuery:
 
     @property
     def page_size(self):
-        """Gets the page_size of this DashboardDataQuery.
+        r"""Gets the page_size of this DashboardDataQuery.
 
         分页参数，每页大小
 
@@ -126,7 +126,7 @@ class DashboardDataQuery:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this DashboardDataQuery.
+        r"""Sets the page_size of this DashboardDataQuery.
 
         分页参数，每页大小
 
@@ -137,7 +137,7 @@ class DashboardDataQuery:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DashboardDataQuery.
+        r"""Gets the start_time of this DashboardDataQuery.
 
         查询开始时间
 
@@ -148,7 +148,7 @@ class DashboardDataQuery:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DashboardDataQuery.
+        r"""Sets the start_time of this DashboardDataQuery.
 
         查询开始时间
 
@@ -159,7 +159,7 @@ class DashboardDataQuery:
 
     @property
     def task_ids(self):
-        """Gets the task_ids of this DashboardDataQuery.
+        r"""Gets the task_ids of this DashboardDataQuery.
 
         任务Id列表
 
@@ -170,7 +170,7 @@ class DashboardDataQuery:
 
     @task_ids.setter
     def task_ids(self, task_ids):
-        """Sets the task_ids of this DashboardDataQuery.
+        r"""Sets the task_ids of this DashboardDataQuery.
 
         任务Id列表
 

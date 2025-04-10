@@ -27,7 +27,7 @@ class AlterPartitionEntry:
     }
 
     def __init__(self, partition=None, partition_values=None):
-        """AlterPartitionEntry
+        r"""AlterPartitionEntry
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AlterPartitionEntry:
 
     @property
     def partition(self):
-        """Gets the partition of this AlterPartitionEntry.
+        r"""Gets the partition of this AlterPartitionEntry.
 
         :return: The partition of this AlterPartitionEntry.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PartitionInput`
@@ -57,7 +57,7 @@ class AlterPartitionEntry:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this AlterPartitionEntry.
+        r"""Sets the partition of this AlterPartitionEntry.
 
         :param partition: The partition of this AlterPartitionEntry.
         :type partition: :class:`huaweicloudsdklakeformation.v1.PartitionInput`
@@ -66,7 +66,7 @@ class AlterPartitionEntry:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this AlterPartitionEntry.
+        r"""Gets the partition_values of this AlterPartitionEntry.
 
         原分区值数组
 
@@ -77,7 +77,7 @@ class AlterPartitionEntry:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this AlterPartitionEntry.
+        r"""Sets the partition_values of this AlterPartitionEntry.
 
         原分区值数组
 

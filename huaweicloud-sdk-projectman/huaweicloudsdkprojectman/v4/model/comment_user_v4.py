@@ -29,7 +29,7 @@ class CommentUserV4:
     }
 
     def __init__(self, user_num_id=None, user_name=None, nick_name=None):
-        """CommentUserV4
+        r"""CommentUserV4
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CommentUserV4:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this CommentUserV4.
+        r"""Gets the user_num_id of this CommentUserV4.
 
         发表评论用户id
 
@@ -68,7 +68,7 @@ class CommentUserV4:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this CommentUserV4.
+        r"""Sets the user_num_id of this CommentUserV4.
 
         发表评论用户id
 
@@ -79,7 +79,7 @@ class CommentUserV4:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CommentUserV4.
+        r"""Gets the user_name of this CommentUserV4.
 
         发表评论用户名称
 
@@ -90,7 +90,7 @@ class CommentUserV4:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CommentUserV4.
+        r"""Sets the user_name of this CommentUserV4.
 
         发表评论用户名称
 
@@ -101,7 +101,7 @@ class CommentUserV4:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this CommentUserV4.
+        r"""Gets the nick_name of this CommentUserV4.
 
         发表评论用户昵称
 
@@ -112,7 +112,7 @@ class CommentUserV4:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this CommentUserV4.
+        r"""Sets the nick_name of this CommentUserV4.
 
         发表评论用户昵称
 

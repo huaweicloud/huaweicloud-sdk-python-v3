@@ -26,7 +26,7 @@ class ChangeIegPasswordResponse(SdkResponse):
     }
 
     def __init__(self, success_msg=None):
-        """ChangeIegPasswordResponse
+        r"""ChangeIegPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeIegPasswordResponse(SdkResponse):
 
     @property
     def success_msg(self):
-        """Gets the success_msg of this ChangeIegPasswordResponse.
+        r"""Gets the success_msg of this ChangeIegPasswordResponse.
 
         成功信息
 
@@ -55,7 +55,7 @@ class ChangeIegPasswordResponse(SdkResponse):
 
     @success_msg.setter
     def success_msg(self, success_msg):
-        """Sets the success_msg of this ChangeIegPasswordResponse.
+        r"""Sets the success_msg of this ChangeIegPasswordResponse.
 
         成功信息
 

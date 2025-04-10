@@ -29,7 +29,7 @@ class UpdateStaticRouteRequest:
     }
 
     def __init__(self, route_table_id=None, route_id=None, body=None):
-        """UpdateStaticRouteRequest
+        r"""UpdateStaticRouteRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateStaticRouteRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this UpdateStaticRouteRequest.
+        r"""Gets the route_table_id of this UpdateStaticRouteRequest.
 
         路由表ID
 
@@ -66,7 +66,7 @@ class UpdateStaticRouteRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this UpdateStaticRouteRequest.
+        r"""Sets the route_table_id of this UpdateStaticRouteRequest.
 
         路由表ID
 
@@ -77,7 +77,7 @@ class UpdateStaticRouteRequest:
 
     @property
     def route_id(self):
-        """Gets the route_id of this UpdateStaticRouteRequest.
+        r"""Gets the route_id of this UpdateStaticRouteRequest.
 
         路由ID
 
@@ -88,7 +88,7 @@ class UpdateStaticRouteRequest:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this UpdateStaticRouteRequest.
+        r"""Sets the route_id of this UpdateStaticRouteRequest.
 
         路由ID
 
@@ -99,7 +99,7 @@ class UpdateStaticRouteRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStaticRouteRequest.
+        r"""Gets the body of this UpdateStaticRouteRequest.
 
         :return: The body of this UpdateStaticRouteRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteRequestBody`
@@ -108,7 +108,7 @@ class UpdateStaticRouteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStaticRouteRequest.
+        r"""Sets the body of this UpdateStaticRouteRequest.
 
         :param body: The body of this UpdateStaticRouteRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateRouteRequestBody`

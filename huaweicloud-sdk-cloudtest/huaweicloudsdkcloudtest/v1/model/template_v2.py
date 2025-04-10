@@ -45,7 +45,7 @@ class TemplateV2:
     }
 
     def __init__(self, create_time=None, creator_name=None, creator_num=None, description=None, id=None, is_default=None, mindmap=None, name=None, update_time=None, edit_permission=None, delete_permission=None):
-        """TemplateV2
+        r"""TemplateV2
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TemplateV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TemplateV2.
+        r"""Gets the create_time of this TemplateV2.
 
         创建时间
 
@@ -124,7 +124,7 @@ class TemplateV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TemplateV2.
+        r"""Sets the create_time of this TemplateV2.
 
         创建时间
 
@@ -135,7 +135,7 @@ class TemplateV2:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TemplateV2.
+        r"""Gets the creator_name of this TemplateV2.
 
         创建人名称
 
@@ -146,7 +146,7 @@ class TemplateV2:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TemplateV2.
+        r"""Sets the creator_name of this TemplateV2.
 
         创建人名称
 
@@ -157,7 +157,7 @@ class TemplateV2:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this TemplateV2.
+        r"""Gets the creator_num of this TemplateV2.
 
         创建人工号
 
@@ -168,7 +168,7 @@ class TemplateV2:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this TemplateV2.
+        r"""Sets the creator_num of this TemplateV2.
 
         创建人工号
 
@@ -179,7 +179,7 @@ class TemplateV2:
 
     @property
     def description(self):
-        """Gets the description of this TemplateV2.
+        r"""Gets the description of this TemplateV2.
 
         描述
 
@@ -190,7 +190,7 @@ class TemplateV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateV2.
+        r"""Sets the description of this TemplateV2.
 
         描述
 
@@ -201,7 +201,7 @@ class TemplateV2:
 
     @property
     def id(self):
-        """Gets the id of this TemplateV2.
+        r"""Gets the id of this TemplateV2.
 
         id 主键
 
@@ -212,7 +212,7 @@ class TemplateV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateV2.
+        r"""Sets the id of this TemplateV2.
 
         id 主键
 
@@ -223,7 +223,7 @@ class TemplateV2:
 
     @property
     def is_default(self):
-        """Gets the is_default of this TemplateV2.
+        r"""Gets the is_default of this TemplateV2.
 
         是否默认
 
@@ -234,7 +234,7 @@ class TemplateV2:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this TemplateV2.
+        r"""Sets the is_default of this TemplateV2.
 
         是否默认
 
@@ -245,7 +245,7 @@ class TemplateV2:
 
     @property
     def mindmap(self):
-        """Gets the mindmap of this TemplateV2.
+        r"""Gets the mindmap of this TemplateV2.
 
         脑图json
 
@@ -256,7 +256,7 @@ class TemplateV2:
 
     @mindmap.setter
     def mindmap(self, mindmap):
-        """Sets the mindmap of this TemplateV2.
+        r"""Sets the mindmap of this TemplateV2.
 
         脑图json
 
@@ -267,7 +267,7 @@ class TemplateV2:
 
     @property
     def name(self):
-        """Gets the name of this TemplateV2.
+        r"""Gets the name of this TemplateV2.
 
         名称
 
@@ -278,7 +278,7 @@ class TemplateV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateV2.
+        r"""Sets the name of this TemplateV2.
 
         名称
 
@@ -289,7 +289,7 @@ class TemplateV2:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TemplateV2.
+        r"""Gets the update_time of this TemplateV2.
 
         更新时间
 
@@ -300,7 +300,7 @@ class TemplateV2:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TemplateV2.
+        r"""Sets the update_time of this TemplateV2.
 
         更新时间
 
@@ -311,7 +311,7 @@ class TemplateV2:
 
     @property
     def edit_permission(self):
-        """Gets the edit_permission of this TemplateV2.
+        r"""Gets the edit_permission of this TemplateV2.
 
         编辑权限
 
@@ -322,7 +322,7 @@ class TemplateV2:
 
     @edit_permission.setter
     def edit_permission(self, edit_permission):
-        """Sets the edit_permission of this TemplateV2.
+        r"""Sets the edit_permission of this TemplateV2.
 
         编辑权限
 
@@ -333,7 +333,7 @@ class TemplateV2:
 
     @property
     def delete_permission(self):
-        """Gets the delete_permission of this TemplateV2.
+        r"""Gets the delete_permission of this TemplateV2.
 
         删除权限
 
@@ -344,7 +344,7 @@ class TemplateV2:
 
     @delete_permission.setter
     def delete_permission(self, delete_permission):
-        """Sets the delete_permission of this TemplateV2.
+        r"""Sets the delete_permission of this TemplateV2.
 
         删除权限
 

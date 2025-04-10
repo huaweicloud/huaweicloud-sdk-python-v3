@@ -25,7 +25,7 @@ class RegisterImageRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterImageRequest
+        r"""RegisterImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterImageRequest.
+        r"""Gets the body of this RegisterImageRequest.
 
         :return: The body of this RegisterImageRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.RegisterImageRequestBody`
@@ -52,7 +52,7 @@ class RegisterImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterImageRequest.
+        r"""Sets the body of this RegisterImageRequest.
 
         :param body: The body of this RegisterImageRequest.
         :type body: :class:`huaweicloudsdkiec.v1.RegisterImageRequestBody`

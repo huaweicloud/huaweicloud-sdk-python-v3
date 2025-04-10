@@ -31,7 +31,7 @@ class CasServiceResponseAuthenticationSuccess:
     }
 
     def __init__(self, user=None, proxy_granting_ticket=None, proxies=None, attributes=None):
-        """CasServiceResponseAuthenticationSuccess
+        r"""CasServiceResponseAuthenticationSuccess
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @property
     def user(self):
-        """Gets the user of this CasServiceResponseAuthenticationSuccess.
+        r"""Gets the user of this CasServiceResponseAuthenticationSuccess.
 
         用户标识
 
@@ -75,7 +75,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CasServiceResponseAuthenticationSuccess.
+        r"""Sets the user of this CasServiceResponseAuthenticationSuccess.
 
         用户标识
 
@@ -86,7 +86,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @property
     def proxy_granting_ticket(self):
-        """Gets the proxy_granting_ticket of this CasServiceResponseAuthenticationSuccess.
+        r"""Gets the proxy_granting_ticket of this CasServiceResponseAuthenticationSuccess.
 
         代理授权凭据
 
@@ -97,7 +97,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @proxy_granting_ticket.setter
     def proxy_granting_ticket(self, proxy_granting_ticket):
-        """Sets the proxy_granting_ticket of this CasServiceResponseAuthenticationSuccess.
+        r"""Sets the proxy_granting_ticket of this CasServiceResponseAuthenticationSuccess.
 
         代理授权凭据
 
@@ -108,7 +108,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @property
     def proxies(self):
-        """Gets the proxies of this CasServiceResponseAuthenticationSuccess.
+        r"""Gets the proxies of this CasServiceResponseAuthenticationSuccess.
 
         代理
 
@@ -119,7 +119,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @proxies.setter
     def proxies(self, proxies):
-        """Sets the proxies of this CasServiceResponseAuthenticationSuccess.
+        r"""Sets the proxies of this CasServiceResponseAuthenticationSuccess.
 
         代理
 
@@ -130,7 +130,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @property
     def attributes(self):
-        """Gets the attributes of this CasServiceResponseAuthenticationSuccess.
+        r"""Gets the attributes of this CasServiceResponseAuthenticationSuccess.
 
         :return: The attributes of this CasServiceResponseAuthenticationSuccess.
         :rtype: :class:`huaweicloudsdkorgid.v1.CasAuthenticationSuccessAttributes`
@@ -139,7 +139,7 @@ class CasServiceResponseAuthenticationSuccess:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this CasServiceResponseAuthenticationSuccess.
+        r"""Sets the attributes of this CasServiceResponseAuthenticationSuccess.
 
         :param attributes: The attributes of this CasServiceResponseAuthenticationSuccess.
         :type attributes: :class:`huaweicloudsdkorgid.v1.CasAuthenticationSuccessAttributes`

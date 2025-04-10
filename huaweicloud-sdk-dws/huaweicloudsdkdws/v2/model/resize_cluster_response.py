@@ -24,7 +24,7 @@ class ResizeClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResizeClusterResponse
+        r"""ResizeClusterResponse
 
         The model defined in huaweicloud sdk
 

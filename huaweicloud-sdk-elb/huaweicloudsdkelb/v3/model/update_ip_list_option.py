@@ -29,7 +29,7 @@ class UpdateIpListOption:
     }
 
     def __init__(self, name=None, ip_list=None, description=None):
-        """UpdateIpListOption
+        r"""UpdateIpListOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateIpListOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIpListOption.
+        r"""Gets the name of this UpdateIpListOption.
 
         参数解释：IP地址组的名称
 
@@ -68,7 +68,7 @@ class UpdateIpListOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIpListOption.
+        r"""Sets the name of this UpdateIpListOption.
 
         参数解释：IP地址组的名称
 
@@ -79,7 +79,7 @@ class UpdateIpListOption:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this UpdateIpListOption.
+        r"""Gets the ip_list of this UpdateIpListOption.
 
         参数解释：IP地址组中包含的IP列表。
 
@@ -90,7 +90,7 @@ class UpdateIpListOption:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this UpdateIpListOption.
+        r"""Sets the ip_list of this UpdateIpListOption.
 
         参数解释：IP地址组中包含的IP列表。
 
@@ -101,7 +101,7 @@ class UpdateIpListOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIpListOption.
+        r"""Gets the description of this UpdateIpListOption.
 
         参数解释：IP地址组的描述信息
 
@@ -112,7 +112,7 @@ class UpdateIpListOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIpListOption.
+        r"""Sets the description of this UpdateIpListOption.
 
         参数解释：IP地址组的描述信息
 

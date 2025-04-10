@@ -25,7 +25,7 @@ class BatchDeleteAlarmTemplatesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteAlarmTemplatesRequest
+        r"""BatchDeleteAlarmTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteAlarmTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteAlarmTemplatesRequest.
+        r"""Gets the body of this BatchDeleteAlarmTemplatesRequest.
 
         :return: The body of this BatchDeleteAlarmTemplatesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmTemplatesRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteAlarmTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteAlarmTemplatesRequest.
+        r"""Sets the body of this BatchDeleteAlarmTemplatesRequest.
 
         :param body: The body of this BatchDeleteAlarmTemplatesRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmTemplatesRequestBody`

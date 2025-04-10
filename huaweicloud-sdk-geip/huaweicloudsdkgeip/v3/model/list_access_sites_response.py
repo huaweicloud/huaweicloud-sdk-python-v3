@@ -32,7 +32,7 @@ class ListAccessSitesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, access_sites=None, page_info=None, x_request_id=None):
-        """ListAccessSitesResponse
+        r"""ListAccessSitesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAccessSitesResponse.
+        r"""Gets the request_id of this ListAccessSitesResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAccessSitesResponse.
+        r"""Sets the request_id of this ListAccessSitesResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @property
     def access_sites(self):
-        """Gets the access_sites of this ListAccessSitesResponse.
+        r"""Gets the access_sites of this ListAccessSitesResponse.
 
         接入点列表
 
@@ -98,7 +98,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @access_sites.setter
     def access_sites(self, access_sites):
-        """Sets the access_sites of this ListAccessSitesResponse.
+        r"""Sets the access_sites of this ListAccessSitesResponse.
 
         接入点列表
 
@@ -109,7 +109,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAccessSitesResponse.
+        r"""Gets the page_info of this ListAccessSitesResponse.
 
         :return: The page_info of this ListAccessSitesResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -118,7 +118,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAccessSitesResponse.
+        r"""Sets the page_info of this ListAccessSitesResponse.
 
         :param page_info: The page_info of this ListAccessSitesResponse.
         :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -127,7 +127,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAccessSitesResponse.
+        r"""Gets the x_request_id of this ListAccessSitesResponse.
 
         :return: The x_request_id of this ListAccessSitesResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ListAccessSitesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAccessSitesResponse.
+        r"""Sets the x_request_id of this ListAccessSitesResponse.
 
         :param x_request_id: The x_request_id of this ListAccessSitesResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class UpdateFeaturesRequestBody:
     }
 
     def __init__(self, params=None):
-        """UpdateFeaturesRequestBody
+        r"""UpdateFeaturesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateFeaturesRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this UpdateFeaturesRequestBody.
+        r"""Gets the params of this UpdateFeaturesRequestBody.
 
         需要修改的特性列表,参数值对象Map<String,String>。
 
@@ -53,7 +53,7 @@ class UpdateFeaturesRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this UpdateFeaturesRequestBody.
+        r"""Sets the params of this UpdateFeaturesRequestBody.
 
         需要修改的特性列表,参数值对象Map<String,String>。
 

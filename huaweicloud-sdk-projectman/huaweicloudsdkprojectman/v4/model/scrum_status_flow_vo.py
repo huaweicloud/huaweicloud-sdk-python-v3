@@ -31,7 +31,7 @@ class ScrumStatusFlowVo:
     }
 
     def __init__(self, id=None, name=None, status_id=None, direct_to=None):
-        """ScrumStatusFlowVo
+        r"""ScrumStatusFlowVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ScrumStatusFlowVo:
 
     @property
     def id(self):
-        """Gets the id of this ScrumStatusFlowVo.
+        r"""Gets the id of this ScrumStatusFlowVo.
 
         流转数据的uuid
 
@@ -75,7 +75,7 @@ class ScrumStatusFlowVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScrumStatusFlowVo.
+        r"""Sets the id of this ScrumStatusFlowVo.
 
         流转数据的uuid
 
@@ -86,7 +86,7 @@ class ScrumStatusFlowVo:
 
     @property
     def name(self):
-        """Gets the name of this ScrumStatusFlowVo.
+        r"""Gets the name of this ScrumStatusFlowVo.
 
         状态名称
 
@@ -97,7 +97,7 @@ class ScrumStatusFlowVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScrumStatusFlowVo.
+        r"""Sets the name of this ScrumStatusFlowVo.
 
         状态名称
 
@@ -108,7 +108,7 @@ class ScrumStatusFlowVo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this ScrumStatusFlowVo.
+        r"""Gets the status_id of this ScrumStatusFlowVo.
 
         状态id
 
@@ -119,7 +119,7 @@ class ScrumStatusFlowVo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this ScrumStatusFlowVo.
+        r"""Sets the status_id of this ScrumStatusFlowVo.
 
         状态id
 
@@ -130,7 +130,7 @@ class ScrumStatusFlowVo:
 
     @property
     def direct_to(self):
-        """Gets the direct_to of this ScrumStatusFlowVo.
+        r"""Gets the direct_to of this ScrumStatusFlowVo.
 
         流转到的数据
 
@@ -141,7 +141,7 @@ class ScrumStatusFlowVo:
 
     @direct_to.setter
     def direct_to(self, direct_to):
-        """Sets the direct_to of this ScrumStatusFlowVo.
+        r"""Sets the direct_to of this ScrumStatusFlowVo.
 
         流转到的数据
 

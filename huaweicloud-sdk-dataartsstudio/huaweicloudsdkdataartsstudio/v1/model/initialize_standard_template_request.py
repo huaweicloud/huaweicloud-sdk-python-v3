@@ -31,7 +31,7 @@ class InitializeStandardTemplateRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, action_id=None, body=None):
-        """InitializeStandardTemplateRequest
+        r"""InitializeStandardTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class InitializeStandardTemplateRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this InitializeStandardTemplateRequest.
+        r"""Gets the workspace of this InitializeStandardTemplateRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class InitializeStandardTemplateRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this InitializeStandardTemplateRequest.
+        r"""Sets the workspace of this InitializeStandardTemplateRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class InitializeStandardTemplateRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this InitializeStandardTemplateRequest.
+        r"""Gets the x_project_id of this InitializeStandardTemplateRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class InitializeStandardTemplateRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this InitializeStandardTemplateRequest.
+        r"""Sets the x_project_id of this InitializeStandardTemplateRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class InitializeStandardTemplateRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this InitializeStandardTemplateRequest.
+        r"""Gets the action_id of this InitializeStandardTemplateRequest.
 
         action-id=init，初始化数据标准模板时固定参数。
 
@@ -117,7 +117,7 @@ class InitializeStandardTemplateRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this InitializeStandardTemplateRequest.
+        r"""Sets the action_id of this InitializeStandardTemplateRequest.
 
         action-id=init，初始化数据标准模板时固定参数。
 
@@ -128,7 +128,7 @@ class InitializeStandardTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this InitializeStandardTemplateRequest.
+        r"""Gets the body of this InitializeStandardTemplateRequest.
 
         :return: The body of this InitializeStandardTemplateRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StandElementFieldVOList`
@@ -137,7 +137,7 @@ class InitializeStandardTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InitializeStandardTemplateRequest.
+        r"""Sets the body of this InitializeStandardTemplateRequest.
 
         :param body: The body of this InitializeStandardTemplateRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.StandElementFieldVOList`

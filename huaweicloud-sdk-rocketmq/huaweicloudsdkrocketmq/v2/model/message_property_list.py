@@ -27,7 +27,7 @@ class MessagePropertyList:
     }
 
     def __init__(self, name=None, value=None):
-        """MessagePropertyList
+        r"""MessagePropertyList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MessagePropertyList:
 
     @property
     def name(self):
-        """Gets the name of this MessagePropertyList.
+        r"""Gets the name of this MessagePropertyList.
 
         属性名称。
 
@@ -61,7 +61,7 @@ class MessagePropertyList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MessagePropertyList.
+        r"""Sets the name of this MessagePropertyList.
 
         属性名称。
 
@@ -72,7 +72,7 @@ class MessagePropertyList:
 
     @property
     def value(self):
-        """Gets the value of this MessagePropertyList.
+        r"""Gets the value of this MessagePropertyList.
 
         属性值。
 
@@ -83,7 +83,7 @@ class MessagePropertyList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MessagePropertyList.
+        r"""Sets the value of this MessagePropertyList.
 
         属性值。
 

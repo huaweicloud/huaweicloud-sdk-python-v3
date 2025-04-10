@@ -25,7 +25,7 @@ class DeleteSecretRequest:
     }
 
     def __init__(self, secret_name=None):
-        """DeleteSecretRequest
+        r"""DeleteSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSecretRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this DeleteSecretRequest.
+        r"""Gets the secret_name of this DeleteSecretRequest.
 
         凭据名称。
 
@@ -53,7 +53,7 @@ class DeleteSecretRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this DeleteSecretRequest.
+        r"""Sets the secret_name of this DeleteSecretRequest.
 
         凭据名称。
 

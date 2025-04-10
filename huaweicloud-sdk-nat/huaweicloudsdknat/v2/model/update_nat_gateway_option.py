@@ -31,7 +31,7 @@ class UpdateNatGatewayOption:
     }
 
     def __init__(self, name=None, description=None, spec=None, session_conf=None):
-        """UpdateNatGatewayOption
+        r"""UpdateNatGatewayOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateNatGatewayOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateNatGatewayOption.
+        r"""Gets the name of this UpdateNatGatewayOption.
 
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
@@ -75,7 +75,7 @@ class UpdateNatGatewayOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNatGatewayOption.
+        r"""Sets the name of this UpdateNatGatewayOption.
 
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
@@ -86,7 +86,7 @@ class UpdateNatGatewayOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNatGatewayOption.
+        r"""Gets the description of this UpdateNatGatewayOption.
 
         公网NAT网关的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -97,7 +97,7 @@ class UpdateNatGatewayOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNatGatewayOption.
+        r"""Sets the description of this UpdateNatGatewayOption.
 
         公网NAT网关的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -108,7 +108,7 @@ class UpdateNatGatewayOption:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateNatGatewayOption.
+        r"""Gets the spec of this UpdateNatGatewayOption.
 
         公网NAT网关的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
@@ -119,7 +119,7 @@ class UpdateNatGatewayOption:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateNatGatewayOption.
+        r"""Sets the spec of this UpdateNatGatewayOption.
 
         公网NAT网关的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
@@ -130,7 +130,7 @@ class UpdateNatGatewayOption:
 
     @property
     def session_conf(self):
-        """Gets the session_conf of this UpdateNatGatewayOption.
+        r"""Gets the session_conf of this UpdateNatGatewayOption.
 
         :return: The session_conf of this UpdateNatGatewayOption.
         :rtype: :class:`huaweicloudsdknat.v2.SessionConfiguration`
@@ -139,7 +139,7 @@ class UpdateNatGatewayOption:
 
     @session_conf.setter
     def session_conf(self, session_conf):
-        """Sets the session_conf of this UpdateNatGatewayOption.
+        r"""Sets the session_conf of this UpdateNatGatewayOption.
 
         :param session_conf: The session_conf of this UpdateNatGatewayOption.
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`

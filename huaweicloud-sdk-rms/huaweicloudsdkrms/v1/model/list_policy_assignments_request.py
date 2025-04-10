@@ -23,7 +23,7 @@ class ListPolicyAssignmentsRequest:
     }
 
     def __init__(self):
-        """ListPolicyAssignmentsRequest
+        r"""ListPolicyAssignmentsRequest
 
         The model defined in huaweicloud sdk
 

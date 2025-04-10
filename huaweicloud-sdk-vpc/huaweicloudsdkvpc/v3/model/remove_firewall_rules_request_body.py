@@ -25,7 +25,7 @@ class RemoveFirewallRulesRequestBody:
     }
 
     def __init__(self, firewall=None):
-        """RemoveFirewallRulesRequestBody
+        r"""RemoveFirewallRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveFirewallRulesRequestBody:
 
     @property
     def firewall(self):
-        """Gets the firewall of this RemoveFirewallRulesRequestBody.
+        r"""Gets the firewall of this RemoveFirewallRulesRequestBody.
 
         :return: The firewall of this RemoveFirewallRulesRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.FirewallRemoveRuleOption`
@@ -51,7 +51,7 @@ class RemoveFirewallRulesRequestBody:
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this RemoveFirewallRulesRequestBody.
+        r"""Sets the firewall of this RemoveFirewallRulesRequestBody.
 
         :param firewall: The firewall of this RemoveFirewallRulesRequestBody.
         :type firewall: :class:`huaweicloudsdkvpc.v3.FirewallRemoveRuleOption`

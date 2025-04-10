@@ -37,7 +37,7 @@ class AppInfo:
     }
 
     def __init__(self, env_name=None, env_id=None, app_name=None, app_id=None, online_count=None, disable_count=None, offline_count=None):
-        """AppInfo
+        r"""AppInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AppInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this AppInfo.
+        r"""Gets the env_name of this AppInfo.
 
         环境名称。
 
@@ -96,7 +96,7 @@ class AppInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this AppInfo.
+        r"""Sets the env_name of this AppInfo.
 
         环境名称。
 
@@ -107,7 +107,7 @@ class AppInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AppInfo.
+        r"""Gets the env_id of this AppInfo.
 
         环境id。
 
@@ -118,7 +118,7 @@ class AppInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AppInfo.
+        r"""Sets the env_id of this AppInfo.
 
         环境id。
 
@@ -129,7 +129,7 @@ class AppInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppInfo.
+        r"""Gets the app_name of this AppInfo.
 
         组件名称。
 
@@ -140,7 +140,7 @@ class AppInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppInfo.
+        r"""Sets the app_name of this AppInfo.
 
         组件名称。
 
@@ -151,7 +151,7 @@ class AppInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppInfo.
+        r"""Gets the app_id of this AppInfo.
 
         组件id。
 
@@ -162,7 +162,7 @@ class AppInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppInfo.
+        r"""Sets the app_id of this AppInfo.
 
         组件id。
 
@@ -173,7 +173,7 @@ class AppInfo:
 
     @property
     def online_count(self):
-        """Gets the online_count of this AppInfo.
+        r"""Gets the online_count of this AppInfo.
 
         在线探针数。
 
@@ -184,7 +184,7 @@ class AppInfo:
 
     @online_count.setter
     def online_count(self, online_count):
-        """Sets the online_count of this AppInfo.
+        r"""Sets the online_count of this AppInfo.
 
         在线探针数。
 
@@ -195,7 +195,7 @@ class AppInfo:
 
     @property
     def disable_count(self):
-        """Gets the disable_count of this AppInfo.
+        r"""Gets the disable_count of this AppInfo.
 
         手动停止探针数。
 
@@ -206,7 +206,7 @@ class AppInfo:
 
     @disable_count.setter
     def disable_count(self, disable_count):
-        """Sets the disable_count of this AppInfo.
+        r"""Sets the disable_count of this AppInfo.
 
         手动停止探针数。
 
@@ -217,7 +217,7 @@ class AppInfo:
 
     @property
     def offline_count(self):
-        """Gets the offline_count of this AppInfo.
+        r"""Gets the offline_count of this AppInfo.
 
         离线探针数。
 
@@ -228,7 +228,7 @@ class AppInfo:
 
     @offline_count.setter
     def offline_count(self, offline_count):
-        """Sets the offline_count of this AppInfo.
+        r"""Sets the offline_count of this AppInfo.
 
         离线探针数。
 

@@ -35,7 +35,7 @@ class CentralNetworkErInstance:
     }
 
     def __init__(self, id=None, enterprise_router_id=None, project_id=None, region_id=None, asn=None, site_code=None):
-        """CentralNetworkErInstance
+        r"""CentralNetworkErInstance
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CentralNetworkErInstance:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkErInstance.
+        r"""Gets the id of this CentralNetworkErInstance.
 
         实例ID。
 
@@ -83,7 +83,7 @@ class CentralNetworkErInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkErInstance.
+        r"""Sets the id of this CentralNetworkErInstance.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class CentralNetworkErInstance:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this CentralNetworkErInstance.
+        r"""Gets the enterprise_router_id of this CentralNetworkErInstance.
 
         企业路由器的ID。
 
@@ -105,7 +105,7 @@ class CentralNetworkErInstance:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this CentralNetworkErInstance.
+        r"""Sets the enterprise_router_id of this CentralNetworkErInstance.
 
         企业路由器的ID。
 
@@ -116,7 +116,7 @@ class CentralNetworkErInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CentralNetworkErInstance.
+        r"""Gets the project_id of this CentralNetworkErInstance.
 
         实例所属项目ID。
 
@@ -127,7 +127,7 @@ class CentralNetworkErInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CentralNetworkErInstance.
+        r"""Sets the project_id of this CentralNetworkErInstance.
 
         实例所属项目ID。
 
@@ -138,7 +138,7 @@ class CentralNetworkErInstance:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CentralNetworkErInstance.
+        r"""Gets the region_id of this CentralNetworkErInstance.
 
         RegionID。
 
@@ -149,7 +149,7 @@ class CentralNetworkErInstance:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CentralNetworkErInstance.
+        r"""Sets the region_id of this CentralNetworkErInstance.
 
         RegionID。
 
@@ -160,7 +160,7 @@ class CentralNetworkErInstance:
 
     @property
     def asn(self):
-        """Gets the asn of this CentralNetworkErInstance.
+        r"""Gets the asn of this CentralNetworkErInstance.
 
         网络实例BGP协议的AS号。
 
@@ -171,7 +171,7 @@ class CentralNetworkErInstance:
 
     @asn.setter
     def asn(self, asn):
-        """Sets the asn of this CentralNetworkErInstance.
+        r"""Sets the asn of this CentralNetworkErInstance.
 
         网络实例BGP协议的AS号。
 
@@ -182,7 +182,7 @@ class CentralNetworkErInstance:
 
     @property
     def site_code(self):
-        """Gets the site_code of this CentralNetworkErInstance.
+        r"""Gets the site_code of this CentralNetworkErInstance.
 
         站点编码定义
 
@@ -193,7 +193,7 @@ class CentralNetworkErInstance:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this CentralNetworkErInstance.
+        r"""Sets the site_code of this CentralNetworkErInstance.
 
         站点编码定义
 

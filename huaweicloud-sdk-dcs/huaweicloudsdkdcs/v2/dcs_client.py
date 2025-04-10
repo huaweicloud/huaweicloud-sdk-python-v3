@@ -34,7 +34,7 @@ class DcsClient(Client):
         return client_builder
 
     def batch_create_or_delete_tags(self, request):
-        """批量添加或删除标签
+        r"""批量添加或删除标签
 
         为指定实例批量添加标签，或批量删除标签。
         
@@ -101,7 +101,7 @@ class DcsClient(Client):
         return http_info
 
     def batch_delete_instances(self, request):
-        """批量删除实例
+        r"""批量删除实例
 
         批量删除多个缓存实例。
         
@@ -168,7 +168,7 @@ class DcsClient(Client):
         return http_info
 
     def batch_restart_online_migration_tasks(self, request):
-        """批量重启在线迁移任务
+        r"""批量重启在线迁移任务
 
         批量重启在线迁移任务，接口响应成功，返回重启在线迁移任务下发结果。
         
@@ -233,7 +233,7 @@ class DcsClient(Client):
         return http_info
 
     def batch_show_nodes_information(self, request):
-        """批量查询实例节点信息
+        r"""批量查询实例节点信息
 
         批量查询指定项目所有实例的节点信息、有效实例个数及节点个数。
         创建中实例不返回节点信息。
@@ -302,7 +302,7 @@ class DcsClient(Client):
         return http_info
 
     def batch_stop_migration_tasks(self, request):
-        """批量停止数据迁移任务
+        r"""批量停止数据迁移任务
 
         批量停止数据迁移任务，接口响应成功，仅表示下发任务成功。查询到迁移任务状态为TERMINATED时，即停止成功。
         
@@ -367,7 +367,7 @@ class DcsClient(Client):
         return http_info
 
     def change_master_standby(self, request):
-        """主备切换
+        r"""主备切换
 
         切换实例主备节点，只有主备实例支持该操作。
         
@@ -432,7 +432,7 @@ class DcsClient(Client):
         return http_info
 
     def change_master_standby_async(self, request):
-        """异步交换实例主备节点
+        r"""异步交换实例主备节点
 
         异步交换实例主备节点
         
@@ -497,7 +497,7 @@ class DcsClient(Client):
         return http_info
 
     def change_nodes_start_stop_status(self, request):
-        """指定实例节点启停开关
+        r"""指定实例节点启停开关
 
         实例节点启停。执行节点关机操作前的24小时内，需要对实例（单机实例除外）进行数据备份。
         
@@ -564,7 +564,7 @@ class DcsClient(Client):
         return http_info
 
     def copy_instance(self, request):
-        """备份指定实例
+        r"""备份指定实例
 
         备份指定的缓存实例。
         &gt; 只有主备和集群类型的缓存实例支持备份恢复操作，单机实例不支持备份恢复操作。
@@ -632,7 +632,7 @@ class DcsClient(Client):
         return http_info
 
     def create_acl_account(self, request):
-        """创建ACL账号
+        r"""创建ACL账号
 
         \&quot;为redis4.0/5.0实例（Cluster集群实例除外）创建权限访问账号，包含读写和只读权限。
         如果实例默认账号已开启免密访问，您创建的普通账号不能使用，如需使用普通账号请先关闭默认账号的免密访问。
@@ -701,7 +701,7 @@ class DcsClient(Client):
         return http_info
 
     def create_auto_expire_scan_task(self, request):
-        """创建过期key扫描任务
+        r"""创建过期key扫描任务
 
         创建过期key扫描任务（Redis 3.0 不支持过期key扫描）。
         过期key扫描会对键空间进行Redis的scan扫描，释放内存中已过期但是由于惰性删除机制而没有释放的内存空间。
@@ -768,7 +768,7 @@ class DcsClient(Client):
         return http_info
 
     def create_bigkey_scan_task(self, request):
-        """创建大key分析任务
+        r"""创建大key分析任务
 
         为Redis实例创建大key分析任务。
         
@@ -833,7 +833,7 @@ class DcsClient(Client):
         return http_info
 
     def create_custom_template(self, request):
-        """创建自定义模板
+        r"""创建自定义模板
 
         创建自定义模板
         
@@ -898,7 +898,7 @@ class DcsClient(Client):
         return http_info
 
     def create_diagnosis_task(self, request):
-        """创建实例诊断任务
+        r"""创建实例诊断任务
 
         诊断指定的缓存实例。
         
@@ -965,7 +965,7 @@ class DcsClient(Client):
         return http_info
 
     def create_hotkey_scan_task(self, request):
-        """创建热key分析任务
+        r"""创建热key分析任务
 
         创建热key分析任务，Redis 3.0 不支持热key分析。
         
@@ -1032,7 +1032,7 @@ class DcsClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建缓存实例
+        r"""创建缓存实例
 
         创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
         
@@ -1097,7 +1097,7 @@ class DcsClient(Client):
         return http_info
 
     def create_migration_task(self, request):
-        """创建数据迁移任务
+        r"""创建数据迁移任务
 
         创建数据迁移任务。
         
@@ -1162,7 +1162,7 @@ class DcsClient(Client):
         return http_info
 
     def create_online_migration_task(self, request):
-        """创建在线数据迁移任务
+        r"""创建在线数据迁移任务
 
         创建在线数据迁移任务。
         
@@ -1227,7 +1227,7 @@ class DcsClient(Client):
         return http_info
 
     def create_redislog(self, request):
-        """采集Redis运行日志
+        r"""采集Redis运行日志
 
         采集Redis运行日志。
         
@@ -1298,7 +1298,7 @@ class DcsClient(Client):
         return http_info
 
     def create_redislog_download_link(self, request):
-        """获取日志下载链接
+        r"""获取日志下载链接
 
         获取日志下载链接。
         
@@ -1365,7 +1365,7 @@ class DcsClient(Client):
         return http_info
 
     def create_resize_order(self, request):
-        """包周期实例变更规格
+        r"""包周期实例变更规格
 
         包周期实例变更规格
         
@@ -1432,7 +1432,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_acl_account(self, request):
-        """删除ACL账号
+        r"""删除ACL账号
 
         删除所创建的ACL普通账号
         
@@ -1499,7 +1499,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_background_task(self, request):
-        """删除后台任务
+        r"""删除后台任务
 
         删除后台任务
         
@@ -1566,7 +1566,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_backup_file(self, request):
-        """删除备份文件
+        r"""删除备份文件
 
         删除缓存实例已备份的文件。
         
@@ -1633,7 +1633,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_bigkey_scan_task(self, request):
-        """删除大key分析记录
+        r"""删除大key分析记录
 
         删除大key分析记录。
         
@@ -1700,7 +1700,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_center_task(self, request):
-        """删除任务中心任务
+        r"""删除任务中心任务
 
         删除任务中心任务
         
@@ -1767,7 +1767,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_config_template(self, request):
-        """删除自定义模板
+        r"""删除自定义模板
 
         删除自定义模板
         
@@ -1832,7 +1832,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_diagnosis_task(self, request):
-        """删除诊断记录
+        r"""删除诊断记录
 
         删除诊断记录。
         
@@ -1899,7 +1899,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_hotkey_scan_task(self, request):
-        """删除热key分析任务
+        r"""删除热key分析任务
 
         删除热key分析任务。
         
@@ -1966,7 +1966,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_instance_bandwidth_auto_scaling_policy(self, request):
-        """删除实例带宽弹性伸缩策略
+        r"""删除实例带宽弹性伸缩策略
 
         删除实例带宽弹性伸缩策略。
         
@@ -2031,7 +2031,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_ip_from_domain_name(self, request):
-        """域名摘除IP
+        r"""域名摘除IP
 
         将只读副本的IP从域名中摘除，摘除成功后，只读域名不会再解析到该副本IP。
         
@@ -2100,7 +2100,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_migration_task(self, request):
-        """删除数据迁移任务
+        r"""删除数据迁移任务
 
         删除数据迁移任务。
         
@@ -2165,7 +2165,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_public_ip(self, request):
-        """关闭实例公网访问
+        r"""关闭实例公网访问
 
         关闭实例公网访问。
         
@@ -2230,7 +2230,7 @@ class DcsClient(Client):
         return http_info
 
     def delete_single_instance(self, request):
-        """删除实例
+        r"""删除实例
 
         删除指定的缓存实例，释放该实例的所有资源。
         
@@ -2297,7 +2297,7 @@ class DcsClient(Client):
         return http_info
 
     def download_ssl_cert(self, request):
-        """下载实例SSL证书
+        r"""下载实例SSL证书
 
         下载实例SSL证书。该接口目前仅针对Redis 6.0[基础版](tag:hws,hws_hk)版本实例。
         
@@ -2362,7 +2362,7 @@ class DcsClient(Client):
         return http_info
 
     def exchange_instance_ip(self, request):
-        """进行IP交换
+        r"""进行IP交换
 
         进行IP交换
         
@@ -2429,7 +2429,7 @@ class DcsClient(Client):
         return http_info
 
     def execute_cluster_switchover(self, request):
-        """集群分片倒换
+        r"""集群分片倒换
 
         集群分片倒换，适用于proxy和cluster实例
         
@@ -2498,7 +2498,7 @@ class DcsClient(Client):
         return http_info
 
     def execute_command_mobilization(self, request):
-        """执行web-cli命令V2接口
+        r"""执行web-cli命令V2接口
 
         登入web-cli，执行redis命令
         
@@ -2565,7 +2565,7 @@ class DcsClient(Client):
         return http_info
 
     def export_excel_job(self, request):
-        """查询实例列表导出任务详情
+        r"""查询实例列表导出任务详情
 
         查询实例列表导出任务详情
         
@@ -2630,7 +2630,7 @@ class DcsClient(Client):
         return http_info
 
     def export_instances_task(self, request):
-        """异步导出实例资源
+        r"""异步导出实例资源
 
         异步导出实例资源
         
@@ -2695,7 +2695,7 @@ class DcsClient(Client):
         return http_info
 
     def hang_up_clients(self, request):
-        """kill指定的会话
+        r"""kill指定的会话
 
         kill指定的会话
         
@@ -2762,7 +2762,7 @@ class DcsClient(Client):
         return http_info
 
     def hang_up_kill_all_clients(self, request):
-        """下发kill指定节点或实例的全部会话任务
+        r"""下发kill指定节点或实例的全部会话任务
 
         下发kill指定节点或实例的全部会话任务
         
@@ -2829,7 +2829,7 @@ class DcsClient(Client):
         return http_info
 
     def list_acl_accounts(self, request):
-        """查询ACL账户列表
+        r"""查询ACL账户列表
 
         查询ACL账户列表。
         
@@ -2894,7 +2894,7 @@ class DcsClient(Client):
         return http_info
 
     def list_available_zones(self, request):
-        """查询可用区信息
+        r"""查询可用区信息
 
         查询所在局点的可用区信息
         
@@ -2957,7 +2957,7 @@ class DcsClient(Client):
         return http_info
 
     def list_background_task(self, request):
-        """查询后台任务列表
+        r"""查询后台任务列表
 
         查询后台任务列表
         
@@ -3030,7 +3030,7 @@ class DcsClient(Client):
         return http_info
 
     def list_backup_file_links(self, request):
-        """获取备份文件下载链接
+        r"""获取备份文件下载链接
 
         获取指定实例的备份文件下载链接，下载备份文件。
         
@@ -3099,7 +3099,7 @@ class DcsClient(Client):
         return http_info
 
     def list_backup_records(self, request):
-        """查询实例备份信息
+        r"""查询实例备份信息
 
         查询指定缓存实例的备份信息列表。
         
@@ -3172,7 +3172,7 @@ class DcsClient(Client):
         return http_info
 
     def list_bigkey_scan_tasks(self, request):
-        """查询大key分析任务列表
+        r"""查询大key分析任务列表
 
         查询大key分析任务列表。
         
@@ -3243,7 +3243,7 @@ class DcsClient(Client):
         return http_info
 
     def list_center_task(self, request):
-        """查询任务中心任务列表
+        r"""查询任务中心任务列表
 
         查询任务中心任务列表
         
@@ -3314,7 +3314,7 @@ class DcsClient(Client):
         return http_info
 
     def list_clients(self, request):
-        """获取会话列表
+        r"""获取会话列表
 
         获取会话列表
         
@@ -3391,7 +3391,7 @@ class DcsClient(Client):
         return http_info
 
     def list_config_histories(self, request):
-        """查询实例参数修改记录列表
+        r"""查询实例参数修改记录列表
 
         查询实例的参数修改记录列表，支持按照关键字查询
         
@@ -3460,7 +3460,7 @@ class DcsClient(Client):
         return http_info
 
     def list_config_templates(self, request):
-        """查询参数模板列表
+        r"""查询参数模板列表
 
         查询租户的参数模板列表，支持按照条件查询
         
@@ -3541,7 +3541,7 @@ class DcsClient(Client):
         return http_info
 
     def list_configurations(self, request):
-        """查询实例配置参数
+        r"""查询实例配置参数
 
         查询指定实例的配置参数信息。
         
@@ -3606,7 +3606,7 @@ class DcsClient(Client):
         return http_info
 
     def list_diagnosis_tasks(self, request):
-        """查询实例诊断任务列表
+        r"""查询实例诊断任务列表
 
         查询指定缓存实例诊断任务列表。
         
@@ -3675,7 +3675,7 @@ class DcsClient(Client):
         return http_info
 
     def list_flavors(self, request):
-        """查询产品规格
+        r"""查询产品规格
 
         在创建缓存实例时，需要配置订购的产品规格编码（spec_code），可通过该接口查询产品规格，查询条件不选时默认查询全部。
         
@@ -3752,7 +3752,7 @@ class DcsClient(Client):
         return http_info
 
     def list_group_replication_info(self, request):
-        """查询分片信息
+        r"""查询分片信息
 
         查询读写分离实例和集群实例的分片和副本信息，其中，读写分离实例仅Redis4.0和Redis5.0的主备实例支持。
         
@@ -3817,7 +3817,7 @@ class DcsClient(Client):
         return http_info
 
     def list_hot_key_scan_tasks(self, request):
-        """查询热key分析任务列表
+        r"""查询热key分析任务列表
 
         查询热key分析历史记录。
         
@@ -3888,7 +3888,7 @@ class DcsClient(Client):
         return http_info
 
     def list_instance_operations(self, request):
-        """查询实例是否可以扩容
+        r"""查询实例是否可以扩容
 
         查询实例是否可以扩容
         
@@ -3955,7 +3955,7 @@ class DcsClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """查询所有实例列表
+        r"""查询所有实例列表
 
         查询租户的缓存实例列表，支持按照条件查询。
         
@@ -4038,7 +4038,7 @@ class DcsClient(Client):
         return http_info
 
     def list_maintenance_windows(self, request):
-        """查询维护时间窗时间段
+        r"""查询维护时间窗时间段
 
         查询维护时间窗开始时间和结束时间。
         
@@ -4101,7 +4101,7 @@ class DcsClient(Client):
         return http_info
 
     def list_migration_task(self, request):
-        """查询迁移任务列表
+        r"""查询迁移任务列表
 
         查询迁移任务列表。
         
@@ -4170,7 +4170,7 @@ class DcsClient(Client):
         return http_info
 
     def list_migration_task_logs(self, request):
-        """查询迁移日志列表
+        r"""查询迁移日志列表
 
         查询迁移日志列表
         
@@ -4241,7 +4241,7 @@ class DcsClient(Client):
         return http_info
 
     def list_monitored_objects(self, request):
-        """查询主维度信息列表
+        r"""查询主维度信息列表
 
         查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。
         &gt; 该接口当前仅在中国华南区开放。
@@ -4311,7 +4311,7 @@ class DcsClient(Client):
         return http_info
 
     def list_monitored_objects_of_instance(self, request):
-        """查询单个主维度下子维度监控对象列表
+        r"""查询单个主维度下子维度监控对象列表
 
         查询主维度下子维度监控对象列表，当前支持子维度的主维度ID的有 dcs_instance_id
         &gt; 该接口当前仅在中国华南区开放。
@@ -4379,7 +4379,7 @@ class DcsClient(Client):
         return http_info
 
     def list_number_of_instances_in_different_status(self, request):
-        """查询实例状态
+        r"""查询实例状态
 
         查询该租户在当前区域下不同状态的实例数。
         
@@ -4444,7 +4444,7 @@ class DcsClient(Client):
         return http_info
 
     def list_redislog(self, request):
-        """查询Redis运行日志列表
+        r"""查询Redis运行日志列表
 
         查询Redis运行日志列表。
         
@@ -4515,7 +4515,7 @@ class DcsClient(Client):
         return http_info
 
     def list_restore_records(self, request):
-        """查询实例恢复记录
+        r"""查询实例恢复记录
 
         查询指定缓存实例的恢复记录列表。
         
@@ -4588,7 +4588,7 @@ class DcsClient(Client):
         return http_info
 
     def list_slowlog(self, request):
-        """查询慢日志
+        r"""查询慢日志
 
         查询慢日志。
         
@@ -4665,7 +4665,7 @@ class DcsClient(Client):
         return http_info
 
     def list_statistics_of_running_instances(self, request):
-        """查询运行中实例的统计信息
+        r"""查询运行中实例的统计信息
 
         查询当前租户下处于“运行中”状态的缓存实例的统计信息。
         
@@ -4728,7 +4728,7 @@ class DcsClient(Client):
         return http_info
 
     def list_tags_of_tenant(self, request):
-        """查询租户所有标签
+        r"""查询租户所有标签
 
         查询租户在指定Project中实例类型的所有资源标签集合。
         
@@ -4791,7 +4791,7 @@ class DcsClient(Client):
         return http_info
 
     def login_web_cli(self, request):
-        """登录webCli
+        r"""登录webCli
 
         登录webCli
         
@@ -4858,7 +4858,7 @@ class DcsClient(Client):
         return http_info
 
     def logoff_web_cli(self, request):
-        """登出webCli
+        r"""登出webCli
 
         登出webCli
         
@@ -4925,7 +4925,7 @@ class DcsClient(Client):
         return http_info
 
     def reset_acl_account_pass_word(self, request):
-        """重置ACL账号密码
+        r"""重置ACL账号密码
 
         重置ACL账号密码。
         
@@ -4994,7 +4994,7 @@ class DcsClient(Client):
         return http_info
 
     def reset_password(self, request):
-        """重置密码
+        r"""重置密码
 
         重置缓存实例的密码。
         
@@ -5061,7 +5061,7 @@ class DcsClient(Client):
         return http_info
 
     def resize_instance(self, request):
-        """变更实例规格
+        r"""变更实例规格
 
         用户可以为状态为“运行中”的DCS缓存实例进行规格变更，当前仅能支持按需实例的同副本或分片数量的实例规格变更。
         
@@ -5128,7 +5128,7 @@ class DcsClient(Client):
         return http_info
 
     def restart_or_flush_instances(self, request):
-        """重启实例或清空数据
+        r"""重启实例或清空数据
 
         重启运行中的DCS缓存实例。
         
@@ -5195,7 +5195,7 @@ class DcsClient(Client):
         return http_info
 
     def restore_instance(self, request):
-        """恢复指定实例
+        r"""恢复指定实例
 
         恢复指定的缓存实例。
         &gt; 只有主备和集群类型的缓存实例支持备份恢复操作，单机实例不支持备份恢复操作。
@@ -5263,7 +5263,7 @@ class DcsClient(Client):
         return http_info
 
     def scan_clients(self, request):
-        """下发查询会话列表任务
+        r"""下发查询会话列表任务
 
         下发查询会话列表任务
         
@@ -5330,7 +5330,7 @@ class DcsClient(Client):
         return http_info
 
     def scan_expire_key(self, request):
-        """立刻扫描过期Key
+        r"""立刻扫描过期Key
 
         立刻扫描过期Key
         
@@ -5395,7 +5395,7 @@ class DcsClient(Client):
         return http_info
 
     def set_online_migration_task(self, request):
-        """配置在线数据迁移任务
+        r"""配置在线数据迁移任务
 
         配置在线数据迁移任务。
         
@@ -5462,7 +5462,7 @@ class DcsClient(Client):
         return http_info
 
     def show_background_task_progress(self, request):
-        """查询后台任务详细信息
+        r"""查询后台任务详细信息
 
         查询后台任务详细信息
         
@@ -5529,7 +5529,7 @@ class DcsClient(Client):
         return http_info
 
     def show_bandwidths(self, request):
-        """获取实例分片带宽
+        r"""获取实例分片带宽
 
         获取实例各个分片带宽。
         
@@ -5594,7 +5594,7 @@ class DcsClient(Client):
         return http_info
 
     def show_bigkey_autoscan_config(self, request):
-        """查询大key自动分析配置
+        r"""查询大key自动分析配置
 
         查询大key自动分析配置。
         
@@ -5659,7 +5659,7 @@ class DcsClient(Client):
         return http_info
 
     def show_bigkey_scan_task_details(self, request):
-        """查询大key分析详情
+        r"""查询大key分析详情
 
         查询大key分析详情。
         
@@ -5726,7 +5726,7 @@ class DcsClient(Client):
         return http_info
 
     def show_config_history_detail(self, request):
-        """查询实例参数修改记录详情
+        r"""查询实例参数修改记录详情
 
         查询实例参数修改记录详情
         
@@ -5793,7 +5793,7 @@ class DcsClient(Client):
         return http_info
 
     def show_config_template(self, request):
-        """查询参数模板详情
+        r"""查询参数模板详情
 
         查询参数模板详情
         
@@ -5860,7 +5860,7 @@ class DcsClient(Client):
         return http_info
 
     def show_diagnosis_task_details(self, request):
-        """查询指定诊断报告
+        r"""查询指定诊断报告
 
         通过报告ID查询诊断报告的详细信息。
         
@@ -5925,7 +5925,7 @@ class DcsClient(Client):
         return http_info
 
     def show_expire_auto_scan_config(self, request):
-        """查询自动扫描配置
+        r"""查询自动扫描配置
 
         查询自动扫描配置
         
@@ -5990,7 +5990,7 @@ class DcsClient(Client):
         return http_info
 
     def show_expire_key_scan_info(self, request):
-        """查询过期Key扫描记录
+        r"""查询过期Key扫描记录
 
         查询过期Key扫描记录
         
@@ -6061,7 +6061,7 @@ class DcsClient(Client):
         return http_info
 
     def show_hotkey_autoscan_config(self, request):
-        """查询热key自动分析配置
+        r"""查询热key自动分析配置
 
         查询热key自动分析配置。
         
@@ -6126,7 +6126,7 @@ class DcsClient(Client):
         return http_info
 
     def show_hotkey_task_details(self, request):
-        """查询热key分析详情
+        r"""查询热key分析详情
 
         查询热key分析详情。
         
@@ -6193,7 +6193,7 @@ class DcsClient(Client):
         return http_info
 
     def show_instance(self, request):
-        """查询指定实例
+        r"""查询指定实例
 
         通过实例ID查询实例的详细信息。
         
@@ -6258,7 +6258,7 @@ class DcsClient(Client):
         return http_info
 
     def show_instance_bandwidth_auto_scaling_policy(self, request):
-        """查询实例带宽弹性伸缩策略
+        r"""查询实例带宽弹性伸缩策略
 
         查询实例带宽弹性伸缩策略。
         
@@ -6323,7 +6323,7 @@ class DcsClient(Client):
         return http_info
 
     def show_instance_ssl_detail(self, request):
-        """查询实例SSL信息
+        r"""查询实例SSL信息
 
         查询实例SSL信息。该接口目前仅针对Redis 6.0[基础版](tag:hws,hws_hk)版本实例。
         
@@ -6388,7 +6388,7 @@ class DcsClient(Client):
         return http_info
 
     def show_instance_version(self, request):
-        """根据实例ID获取实例内核版本信息
+        r"""根据实例ID获取实例内核版本信息
 
         获取对应实例内核版本号。
         
@@ -6453,7 +6453,7 @@ class DcsClient(Client):
         return http_info
 
     def show_job_info(self, request):
-        """查询租户Job执行结果
+        r"""查询租户Job执行结果
 
         查询租户Job执行结果
         
@@ -6518,7 +6518,7 @@ class DcsClient(Client):
         return http_info
 
     def show_migration_task(self, request):
-        """查询迁移任务详情
+        r"""查询迁移任务详情
 
         查询迁移任务详情。
         
@@ -6583,7 +6583,7 @@ class DcsClient(Client):
         return http_info
 
     def show_migration_task_stats(self, request):
-        """查询在线迁移进度明细
+        r"""查询在线迁移进度明细
 
         查询在线迁移进度明细。
         
@@ -6648,7 +6648,7 @@ class DcsClient(Client):
         return http_info
 
     def show_nodes_information(self, request):
-        """查询实例节点信息
+        r"""查询实例节点信息
 
         查询指定实例的节点信息。
         仅支持Redis4.0和Redis5.0实例查询。
@@ -6715,7 +6715,7 @@ class DcsClient(Client):
         return http_info
 
     def show_quota_of_tenant(self, request):
-        """查询租户配额
+        r"""查询租户配额
 
         查询租户默认可以创建的实例数和总内存的配额限制，以及可以申请配额的最大值和最小值。不同的租户在不同的区域配额可能不同。
         
@@ -6778,7 +6778,7 @@ class DcsClient(Client):
         return http_info
 
     def show_replication_states(self, request):
-        """获取副本状态
+        r"""获取副本状态
 
         获取副本状态
         
@@ -6845,7 +6845,7 @@ class DcsClient(Client):
         return http_info
 
     def show_tags(self, request):
-        """查询单个实例标签
+        r"""查询单个实例标签
 
         通过实例ID查询标签。
         
@@ -6910,7 +6910,7 @@ class DcsClient(Client):
         return http_info
 
     def start_instance_resize_check_job(self, request):
-        """提交前置检查任务
+        r"""提交前置检查任务
 
         提交前置检查任务
         
@@ -6977,7 +6977,7 @@ class DcsClient(Client):
         return http_info
 
     def stop_migration_task(self, request):
-        """停止数据迁移任务
+        r"""停止数据迁移任务
 
         停止数据迁移任务。
         
@@ -7042,7 +7042,7 @@ class DcsClient(Client):
         return http_info
 
     def stop_migration_task_sync(self, request):
-        """同步停止数据迁移任务
+        r"""同步停止数据迁移任务
 
         同步停止数据迁移任务。
         
@@ -7107,7 +7107,7 @@ class DcsClient(Client):
         return http_info
 
     def update_acl_account(self, request):
-        """修改ACL角色
+        r"""修改ACL角色
 
         修改用户的类型。
         
@@ -7176,7 +7176,7 @@ class DcsClient(Client):
         return http_info
 
     def update_acl_account_pass_word(self, request):
-        """修改ACL账号密码
+        r"""修改ACL账号密码
 
         修改ACL账号密码。
         
@@ -7245,7 +7245,7 @@ class DcsClient(Client):
         return http_info
 
     def update_acl_account_remark(self, request):
-        """ACL账号修改备注
+        r"""ACL账号修改备注
 
         ACL账号修改备注
         
@@ -7314,7 +7314,7 @@ class DcsClient(Client):
         return http_info
 
     def update_bandwidth(self, request):
-        """修改实例分片带宽
+        r"""修改实例分片带宽
 
         修改实例分片带宽。
         
@@ -7381,7 +7381,7 @@ class DcsClient(Client):
         return http_info
 
     def update_bigkey_autoscan_config(self, request):
-        """设置大key自动分析配置
+        r"""设置大key自动分析配置
 
         设置大key自动分析配置。
         
@@ -7448,7 +7448,7 @@ class DcsClient(Client):
         return http_info
 
     def update_client_ip_transparent_transmission(self, request):
-        """开启或关闭客户端ip透传
+        r"""开启或关闭客户端ip透传
 
         开启或关闭客户端ip透传
         
@@ -7515,7 +7515,7 @@ class DcsClient(Client):
         return http_info
 
     def update_config_template(self, request):
-        """修改自定义模板
+        r"""修改自定义模板
 
         修改自定义模板
         
@@ -7582,7 +7582,7 @@ class DcsClient(Client):
         return http_info
 
     def update_configurations(self, request):
-        """修改实例配置参数
+        r"""修改实例配置参数
 
         为了确保分布式缓存服务发挥出最优性能，您可以根据自己的业务情况对DCS缓存实例的运行参数进行调整。
         
@@ -7649,7 +7649,7 @@ class DcsClient(Client):
         return http_info
 
     def update_expire_auto_scan_config(self, request):
-        """修改自动扫描配置
+        r"""修改自动扫描配置
 
         修改自动扫描配置
         
@@ -7716,7 +7716,7 @@ class DcsClient(Client):
         return http_info
 
     def update_hotkey_auto_scan_config(self, request):
-        """设置热key自动分析配置
+        r"""设置热key自动分析配置
 
         设置热key自动分析配置。
         
@@ -7783,7 +7783,7 @@ class DcsClient(Client):
         return http_info
 
     def update_instance(self, request):
-        """修改实例信息
+        r"""修改实例信息
 
         修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
         
@@ -7850,7 +7850,7 @@ class DcsClient(Client):
         return http_info
 
     def update_instance_bandwidth(self, request):
-        """变更指定实例的带宽
+        r"""变更指定实例的带宽
 
         变更指定实例的带宽
         
@@ -7915,7 +7915,7 @@ class DcsClient(Client):
         return http_info
 
     def update_instance_bandwidth_auto_scaling_policy(self, request):
-        """更新实例带宽弹性伸缩策略
+        r"""更新实例带宽弹性伸缩策略
 
         更新实例带宽弹性伸缩策略。暂不支持实例带宽自动回缩。
         
@@ -7982,7 +7982,7 @@ class DcsClient(Client):
         return http_info
 
     def update_instance_config(self, request):
-        """异步修改实例配置参数
+        r"""异步修改实例配置参数
 
         为了确保分布式缓存服务发挥出最优性能，您可以根据自己的业务情况对DCS缓存实例的运行参数进行调整。
         
@@ -8049,7 +8049,7 @@ class DcsClient(Client):
         return http_info
 
     def update_migration_task(self, request):
-        """设置迁移任务自动重连
+        r"""设置迁移任务自动重连
 
         设置迁移任务自动重连
         
@@ -8116,7 +8116,7 @@ class DcsClient(Client):
         return http_info
 
     def update_password(self, request):
-        """修改密码
+        r"""修改密码
 
         修改缓存实例的密码。
         
@@ -8183,7 +8183,7 @@ class DcsClient(Client):
         return http_info
 
     def update_public_ip(self, request):
-        """开启/修改实例公网访问
+        r"""开启/修改实例公网访问
 
         开启/修改实例公网访问。
         
@@ -8250,7 +8250,7 @@ class DcsClient(Client):
         return http_info
 
     def update_slave_priority(self, request):
-        """设置备节点优先级
+        r"""设置备节点优先级
 
         设置副本优先级，主节点故障时，权重越小的备节点切换为主节点的优先级越高。
         
@@ -8321,7 +8321,7 @@ class DcsClient(Client):
         return http_info
 
     def update_ssl_switch(self, request):
-        """开启/关闭SSL
+        r"""开启/关闭SSL
 
         开启/关闭SSL。该接口目前仅针对Redis 6.0[基础版](tag:hws,hws_hk)版本实例。
         
@@ -8388,7 +8388,7 @@ class DcsClient(Client):
         return http_info
 
     def upgrade_instance_minor_version(self, request):
-        """升级实例小版本
+        r"""升级实例小版本
 
         升级实例小版本。
         
@@ -8455,7 +8455,7 @@ class DcsClient(Client):
         return http_info
 
     def validate_deletable_replica(self, request):
-        """校验集群副本是否支持删除
+        r"""校验集群副本是否支持删除
 
         校验集群副本是否支持删除
         
@@ -8520,7 +8520,7 @@ class DcsClient(Client):
         return http_info
 
     def show_ip_whitelist(self, request):
-        """查询指定实例的IP白名单
+        r"""查询指定实例的IP白名单
 
         查询指定实例的IP白名单。
         
@@ -8585,7 +8585,7 @@ class DcsClient(Client):
         return http_info
 
     def update_ip_whitelist(self, request):
-        """设置IP白名单分组
+        r"""设置IP白名单分组
 
         为指定实例设置IP白名单分组，包含创建、停用、编辑、删除白名单四个功能
         

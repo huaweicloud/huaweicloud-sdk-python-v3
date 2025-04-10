@@ -56,7 +56,7 @@ class ShowProjectResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, obs_bucket_name=None, swr_namespace=None, creator=None, role=None, roles=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None, storage_quota=None):
-        """ShowProjectResponse
+        r"""ShowProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowProjectResponse.
+        r"""Gets the id of this ShowProjectResponse.
 
         项目id
 
@@ -160,7 +160,7 @@ class ShowProjectResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProjectResponse.
+        r"""Sets the id of this ShowProjectResponse.
 
         项目id
 
@@ -171,7 +171,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowProjectResponse.
+        r"""Gets the name of this ShowProjectResponse.
 
         项目名称
 
@@ -182,7 +182,7 @@ class ShowProjectResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProjectResponse.
+        r"""Sets the name of this ShowProjectResponse.
 
         项目名称
 
@@ -193,7 +193,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this ShowProjectResponse.
+        r"""Gets the obs_bucket_name of this ShowProjectResponse.
 
         项目桶名
 
@@ -204,7 +204,7 @@ class ShowProjectResponse(SdkResponse):
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this ShowProjectResponse.
+        r"""Sets the obs_bucket_name of this ShowProjectResponse.
 
         项目桶名
 
@@ -215,7 +215,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def swr_namespace(self):
-        """Gets the swr_namespace of this ShowProjectResponse.
+        r"""Gets the swr_namespace of this ShowProjectResponse.
 
         项目组织名
 
@@ -226,7 +226,7 @@ class ShowProjectResponse(SdkResponse):
 
     @swr_namespace.setter
     def swr_namespace(self, swr_namespace):
-        """Sets the swr_namespace of this ShowProjectResponse.
+        r"""Sets the swr_namespace of this ShowProjectResponse.
 
         项目组织名
 
@@ -237,7 +237,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowProjectResponse.
+        r"""Gets the creator of this ShowProjectResponse.
 
         项目所有者
 
@@ -248,7 +248,7 @@ class ShowProjectResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowProjectResponse.
+        r"""Sets the creator of this ShowProjectResponse.
 
         项目所有者
 
@@ -259,7 +259,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowProjectResponse.
+        r"""Gets the role of this ShowProjectResponse.
 
         当前用户在该项目上的角色
 
@@ -270,7 +270,7 @@ class ShowProjectResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowProjectResponse.
+        r"""Sets the role of this ShowProjectResponse.
 
         当前用户在该项目上的角色
 
@@ -281,7 +281,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ShowProjectResponse.
+        r"""Gets the roles of this ShowProjectResponse.
 
         项目角色列表
 
@@ -292,7 +292,7 @@ class ShowProjectResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ShowProjectResponse.
+        r"""Sets the roles of this ShowProjectResponse.
 
         项目角色列表
 
@@ -303,7 +303,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowProjectResponse.
+        r"""Gets the size of this ShowProjectResponse.
 
         项目桶存储量
 
@@ -314,7 +314,7 @@ class ShowProjectResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowProjectResponse.
+        r"""Sets the size of this ShowProjectResponse.
 
         项目桶存储量
 
@@ -325,7 +325,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowProjectResponse.
+        r"""Gets the status of this ShowProjectResponse.
 
         项目状态
 
@@ -336,7 +336,7 @@ class ShowProjectResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowProjectResponse.
+        r"""Sets the status of this ShowProjectResponse.
 
         项目状态
 
@@ -347,7 +347,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowProjectResponse.
+        r"""Gets the tags of this ShowProjectResponse.
 
         标签列表
 
@@ -358,7 +358,7 @@ class ShowProjectResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowProjectResponse.
+        r"""Sets the tags of this ShowProjectResponse.
 
         标签列表
 
@@ -369,7 +369,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowProjectResponse.
+        r"""Gets the description of this ShowProjectResponse.
 
         项目描述
 
@@ -380,7 +380,7 @@ class ShowProjectResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProjectResponse.
+        r"""Sets the description of this ShowProjectResponse.
 
         项目描述
 
@@ -391,7 +391,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowProjectResponse.
+        r"""Gets the create_time of this ShowProjectResponse.
 
         项目创建时间
 
@@ -402,7 +402,7 @@ class ShowProjectResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowProjectResponse.
+        r"""Sets the create_time of this ShowProjectResponse.
 
         项目创建时间
 
@@ -413,7 +413,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowProjectResponse.
+        r"""Gets the update_time of this ShowProjectResponse.
 
         项目更新时间
 
@@ -424,7 +424,7 @@ class ShowProjectResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowProjectResponse.
+        r"""Sets the update_time of this ShowProjectResponse.
 
         项目更新时间
 
@@ -435,7 +435,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this ShowProjectResponse.
+        r"""Gets the delete_time of this ShowProjectResponse.
 
         请求删除时间
 
@@ -446,7 +446,7 @@ class ShowProjectResponse(SdkResponse):
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this ShowProjectResponse.
+        r"""Sets the delete_time of this ShowProjectResponse.
 
         请求删除时间
 
@@ -457,7 +457,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def is_core(self):
-        """Gets the is_core of this ShowProjectResponse.
+        r"""Gets the is_core of this ShowProjectResponse.
 
         是否为核心项目
 
@@ -468,7 +468,7 @@ class ShowProjectResponse(SdkResponse):
 
     @is_core.setter
     def is_core(self, is_core):
-        """Sets the is_core of this ShowProjectResponse.
+        r"""Sets the is_core of this ShowProjectResponse.
 
         是否为核心项目
 
@@ -479,7 +479,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def storage_quota(self):
-        """Gets the storage_quota of this ShowProjectResponse.
+        r"""Gets the storage_quota of this ShowProjectResponse.
 
         项目数据容量配额，-1表示无容量限制
 
@@ -490,7 +490,7 @@ class ShowProjectResponse(SdkResponse):
 
     @storage_quota.setter
     def storage_quota(self, storage_quota):
-        """Sets the storage_quota of this ShowProjectResponse.
+        r"""Sets the storage_quota of this ShowProjectResponse.
 
         项目数据容量配额，-1表示无容量限制
 

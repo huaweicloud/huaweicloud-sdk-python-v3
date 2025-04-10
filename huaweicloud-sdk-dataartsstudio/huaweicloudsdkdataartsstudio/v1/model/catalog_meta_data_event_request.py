@@ -33,7 +33,7 @@ class CatalogMetaDataEventRequest:
     }
 
     def __init__(self, engine=None, engine_version=None, instance_id=None, project_id=None, events=None):
-        """CatalogMetaDataEventRequest
+        r"""CatalogMetaDataEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CatalogMetaDataEventRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this CatalogMetaDataEventRequest.
+        r"""Gets the engine of this CatalogMetaDataEventRequest.
 
         引擎服务名称,DLI DWS MRS
 
@@ -82,7 +82,7 @@ class CatalogMetaDataEventRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CatalogMetaDataEventRequest.
+        r"""Sets the engine of this CatalogMetaDataEventRequest.
 
         引擎服务名称,DLI DWS MRS
 
@@ -93,7 +93,7 @@ class CatalogMetaDataEventRequest:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this CatalogMetaDataEventRequest.
+        r"""Gets the engine_version of this CatalogMetaDataEventRequest.
 
         引擎版本信息
 
@@ -104,7 +104,7 @@ class CatalogMetaDataEventRequest:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this CatalogMetaDataEventRequest.
+        r"""Sets the engine_version of this CatalogMetaDataEventRequest.
 
         引擎版本信息
 
@@ -115,7 +115,7 @@ class CatalogMetaDataEventRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CatalogMetaDataEventRequest.
+        r"""Gets the instance_id of this CatalogMetaDataEventRequest.
 
         引擎的实例ID, MRS DWS必填
 
@@ -126,7 +126,7 @@ class CatalogMetaDataEventRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CatalogMetaDataEventRequest.
+        r"""Sets the instance_id of this CatalogMetaDataEventRequest.
 
         引擎的实例ID, MRS DWS必填
 
@@ -137,7 +137,7 @@ class CatalogMetaDataEventRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CatalogMetaDataEventRequest.
+        r"""Gets the project_id of this CatalogMetaDataEventRequest.
 
         项目ID，DLI必填
 
@@ -148,7 +148,7 @@ class CatalogMetaDataEventRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CatalogMetaDataEventRequest.
+        r"""Sets the project_id of this CatalogMetaDataEventRequest.
 
         项目ID，DLI必填
 
@@ -159,7 +159,7 @@ class CatalogMetaDataEventRequest:
 
     @property
     def events(self):
-        """Gets the events of this CatalogMetaDataEventRequest.
+        r"""Gets the events of this CatalogMetaDataEventRequest.
 
         资产信息
 
@@ -170,7 +170,7 @@ class CatalogMetaDataEventRequest:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this CatalogMetaDataEventRequest.
+        r"""Sets the events of this CatalogMetaDataEventRequest.
 
         资产信息
 

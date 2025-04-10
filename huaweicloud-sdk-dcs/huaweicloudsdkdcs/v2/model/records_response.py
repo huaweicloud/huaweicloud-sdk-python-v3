@@ -35,7 +35,7 @@ class RecordsResponse:
     }
 
     def __init__(self, id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None):
-        """RecordsResponse
+        r"""RecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RecordsResponse:
 
     @property
     def id(self):
-        """Gets the id of this RecordsResponse.
+        r"""Gets the id of this RecordsResponse.
 
         大key分析记录ID
 
@@ -89,7 +89,7 @@ class RecordsResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecordsResponse.
+        r"""Sets the id of this RecordsResponse.
 
         大key分析记录ID
 
@@ -100,7 +100,7 @@ class RecordsResponse:
 
     @property
     def status(self):
-        """Gets the status of this RecordsResponse.
+        r"""Gets the status of this RecordsResponse.
 
         分析任务状态
 
@@ -111,7 +111,7 @@ class RecordsResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RecordsResponse.
+        r"""Sets the status of this RecordsResponse.
 
         分析任务状态
 
@@ -122,7 +122,7 @@ class RecordsResponse:
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this RecordsResponse.
+        r"""Gets the scan_type of this RecordsResponse.
 
         分析方式
 
@@ -133,7 +133,7 @@ class RecordsResponse:
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this RecordsResponse.
+        r"""Sets the scan_type of this RecordsResponse.
 
         分析方式
 
@@ -144,7 +144,7 @@ class RecordsResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RecordsResponse.
+        r"""Gets the created_at of this RecordsResponse.
 
         分析任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -155,7 +155,7 @@ class RecordsResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RecordsResponse.
+        r"""Sets the created_at of this RecordsResponse.
 
         分析任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -166,7 +166,7 @@ class RecordsResponse:
 
     @property
     def started_at(self):
-        """Gets the started_at of this RecordsResponse.
+        r"""Gets the started_at of this RecordsResponse.
 
         分析任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -177,7 +177,7 @@ class RecordsResponse:
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this RecordsResponse.
+        r"""Sets the started_at of this RecordsResponse.
 
         分析任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -188,7 +188,7 @@ class RecordsResponse:
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this RecordsResponse.
+        r"""Gets the finished_at of this RecordsResponse.
 
         分析任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -199,7 +199,7 @@ class RecordsResponse:
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this RecordsResponse.
+        r"""Sets the finished_at of this RecordsResponse.
 
         分析任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"
 

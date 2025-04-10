@@ -27,7 +27,7 @@ class CreateReplicationJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateReplicationJobRequest
+        r"""CreateReplicationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateReplicationJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateReplicationJobRequest.
+        r"""Gets the x_language of this CreateReplicationJobRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class CreateReplicationJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateReplicationJobRequest.
+        r"""Sets the x_language of this CreateReplicationJobRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class CreateReplicationJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateReplicationJobRequest.
+        r"""Gets the body of this CreateReplicationJobRequest.
 
         :return: The body of this CreateReplicationJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.CreateOfflineTaskReq`
@@ -81,7 +81,7 @@ class CreateReplicationJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateReplicationJobRequest.
+        r"""Sets the body of this CreateReplicationJobRequest.
 
         :param body: The body of this CreateReplicationJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.CreateOfflineTaskReq`

@@ -27,7 +27,7 @@ class ShowOutputInfoRequest:
     }
 
     def __init__(self, job_id=None, build_no=None):
-        """ShowOutputInfoRequest
+        r"""ShowOutputInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowOutputInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowOutputInfoRequest.
+        r"""Gets the job_id of this ShowOutputInfoRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -59,7 +59,7 @@ class ShowOutputInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowOutputInfoRequest.
+        r"""Sets the job_id of this ShowOutputInfoRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -70,7 +70,7 @@ class ShowOutputInfoRequest:
 
     @property
     def build_no(self):
-        """Gets the build_no of this ShowOutputInfoRequest.
+        r"""Gets the build_no of this ShowOutputInfoRequest.
 
         构建任务的构建编号，从1开始，每次构建递增1
 
@@ -81,7 +81,7 @@ class ShowOutputInfoRequest:
 
     @build_no.setter
     def build_no(self, build_no):
-        """Sets the build_no of this ShowOutputInfoRequest.
+        r"""Sets the build_no of this ShowOutputInfoRequest.
 
         构建任务的构建编号，从1开始，每次构建递增1
 

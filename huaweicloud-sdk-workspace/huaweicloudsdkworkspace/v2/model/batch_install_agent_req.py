@@ -25,7 +25,7 @@ class BatchInstallAgentReq:
     }
 
     def __init__(self, desktop_ids=None):
-        """BatchInstallAgentReq
+        r"""BatchInstallAgentReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchInstallAgentReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this BatchInstallAgentReq.
+        r"""Gets the desktop_ids of this BatchInstallAgentReq.
 
         操作的桌面ID列表。
 
@@ -53,7 +53,7 @@ class BatchInstallAgentReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this BatchInstallAgentReq.
+        r"""Sets the desktop_ids of this BatchInstallAgentReq.
 
         操作的桌面ID列表。
 

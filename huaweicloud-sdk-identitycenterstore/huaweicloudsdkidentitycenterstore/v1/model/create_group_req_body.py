@@ -27,7 +27,7 @@ class CreateGroupReqBody:
     }
 
     def __init__(self, description=None, display_name=None):
-        """CreateGroupReqBody
+        r"""CreateGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGroupReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateGroupReqBody.
+        r"""Gets the description of this CreateGroupReqBody.
 
         用户组描述
 
@@ -60,7 +60,7 @@ class CreateGroupReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGroupReqBody.
+        r"""Sets the description of this CreateGroupReqBody.
 
         用户组描述
 
@@ -71,7 +71,7 @@ class CreateGroupReqBody:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateGroupReqBody.
+        r"""Gets the display_name of this CreateGroupReqBody.
 
         用户组显示名称
 
@@ -82,7 +82,7 @@ class CreateGroupReqBody:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateGroupReqBody.
+        r"""Sets the display_name of this CreateGroupReqBody.
 
         用户组显示名称
 

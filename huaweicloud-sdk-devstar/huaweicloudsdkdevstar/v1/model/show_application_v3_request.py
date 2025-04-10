@@ -27,7 +27,7 @@ class ShowApplicationV3Request:
     }
 
     def __init__(self, x_language=None, application_id=None):
-        """ShowApplicationV3Request
+        r"""ShowApplicationV3Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowApplicationV3Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowApplicationV3Request.
+        r"""Gets the x_language of this ShowApplicationV3Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -60,7 +60,7 @@ class ShowApplicationV3Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowApplicationV3Request.
+        r"""Sets the x_language of this ShowApplicationV3Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -71,7 +71,7 @@ class ShowApplicationV3Request:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowApplicationV3Request.
+        r"""Gets the application_id of this ShowApplicationV3Request.
 
         应用id
 
@@ -82,7 +82,7 @@ class ShowApplicationV3Request:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowApplicationV3Request.
+        r"""Sets the application_id of this ShowApplicationV3Request.
 
         应用id
 

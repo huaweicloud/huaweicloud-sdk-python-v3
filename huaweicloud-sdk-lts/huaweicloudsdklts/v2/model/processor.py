@@ -27,7 +27,7 @@ class Processor:
     }
 
     def __init__(self, type=None, detail=None):
-        """Processor
+        r"""Processor
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Processor:
 
     @property
     def type(self):
-        """Gets the type of this Processor.
+        r"""Gets the type of this Processor.
 
         解析器类型 processor_regex 正则解析 processor_split_string 分词符 processor_json json解析器类型 processor_gotime自定义时间类型 processor_filter_regex日志过滤 processor_drop删除字段类型 processor_rename修改字段类型
 
@@ -61,7 +61,7 @@ class Processor:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Processor.
+        r"""Sets the type of this Processor.
 
         解析器类型 processor_regex 正则解析 processor_split_string 分词符 processor_json json解析器类型 processor_gotime自定义时间类型 processor_filter_regex日志过滤 processor_drop删除字段类型 processor_rename修改字段类型
 
@@ -72,7 +72,7 @@ class Processor:
 
     @property
     def detail(self):
-        """Gets the detail of this Processor.
+        r"""Gets the detail of this Processor.
 
         :return: The detail of this Processor.
         :rtype: :class:`huaweicloudsdklts.v2.Detail`
@@ -81,7 +81,7 @@ class Processor:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this Processor.
+        r"""Sets the detail of this Processor.
 
         :param detail: The detail of this Processor.
         :type detail: :class:`huaweicloudsdklts.v2.Detail`

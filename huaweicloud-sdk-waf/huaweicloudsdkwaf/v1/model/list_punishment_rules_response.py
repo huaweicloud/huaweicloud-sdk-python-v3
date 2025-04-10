@@ -28,7 +28,7 @@ class ListPunishmentRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListPunishmentRulesResponse
+        r"""ListPunishmentRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPunishmentRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPunishmentRulesResponse.
+        r"""Gets the total of this ListPunishmentRulesResponse.
 
         攻击惩罚规则数量
 
@@ -62,7 +62,7 @@ class ListPunishmentRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPunishmentRulesResponse.
+        r"""Sets the total of this ListPunishmentRulesResponse.
 
         攻击惩罚规则数量
 
@@ -73,7 +73,7 @@ class ListPunishmentRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPunishmentRulesResponse.
+        r"""Gets the items of this ListPunishmentRulesResponse.
 
         攻击惩罚规则列表
 
@@ -84,7 +84,7 @@ class ListPunishmentRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPunishmentRulesResponse.
+        r"""Sets the items of this ListPunishmentRulesResponse.
 
         攻击惩罚规则列表
 

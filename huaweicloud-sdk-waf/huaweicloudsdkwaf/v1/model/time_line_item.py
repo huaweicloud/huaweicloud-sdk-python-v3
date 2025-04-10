@@ -27,7 +27,7 @@ class TimeLineItem:
     }
 
     def __init__(self, time=None, num=None):
-        """TimeLineItem
+        r"""TimeLineItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TimeLineItem:
 
     @property
     def time(self):
-        """Gets the time of this TimeLineItem.
+        r"""Gets the time of this TimeLineItem.
 
         时间点
 
@@ -61,7 +61,7 @@ class TimeLineItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TimeLineItem.
+        r"""Sets the time of this TimeLineItem.
 
         时间点
 
@@ -72,7 +72,7 @@ class TimeLineItem:
 
     @property
     def num(self):
-        """Gets the num of this TimeLineItem.
+        r"""Gets the num of this TimeLineItem.
 
         数量
 
@@ -83,7 +83,7 @@ class TimeLineItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this TimeLineItem.
+        r"""Sets the num of this TimeLineItem.
 
         数量
 

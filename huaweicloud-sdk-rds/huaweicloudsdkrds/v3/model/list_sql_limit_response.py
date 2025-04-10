@@ -28,7 +28,7 @@ class ListSqlLimitResponse(SdkResponse):
     }
 
     def __init__(self, count=None, sql_limit_objects=None):
-        """ListSqlLimitResponse
+        r"""ListSqlLimitResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSqlLimitResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSqlLimitResponse.
+        r"""Gets the count of this ListSqlLimitResponse.
 
         SQL限流总数
 
@@ -62,7 +62,7 @@ class ListSqlLimitResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSqlLimitResponse.
+        r"""Sets the count of this ListSqlLimitResponse.
 
         SQL限流总数
 
@@ -73,7 +73,7 @@ class ListSqlLimitResponse(SdkResponse):
 
     @property
     def sql_limit_objects(self):
-        """Gets the sql_limit_objects of this ListSqlLimitResponse.
+        r"""Gets the sql_limit_objects of this ListSqlLimitResponse.
 
         SQL限流详情
 
@@ -84,7 +84,7 @@ class ListSqlLimitResponse(SdkResponse):
 
     @sql_limit_objects.setter
     def sql_limit_objects(self, sql_limit_objects):
-        """Sets the sql_limit_objects of this ListSqlLimitResponse.
+        r"""Sets the sql_limit_objects of this ListSqlLimitResponse.
 
         SQL限流详情
 

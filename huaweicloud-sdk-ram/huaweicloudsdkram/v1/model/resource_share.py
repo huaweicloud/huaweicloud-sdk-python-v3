@@ -41,7 +41,7 @@ class ResourceShare:
     }
 
     def __init__(self, id=None, name=None, description=None, allow_external_principals=None, owning_account_id=None, status=None, tags=None, created_at=None, updated_at=None):
-        """ResourceShare
+        r"""ResourceShare
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ResourceShare:
 
     @property
     def id(self):
-        """Gets the id of this ResourceShare.
+        r"""Gets the id of this ResourceShare.
 
         资源共享实例的ID。
 
@@ -103,7 +103,7 @@ class ResourceShare:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceShare.
+        r"""Sets the id of this ResourceShare.
 
         资源共享实例的ID。
 
@@ -114,7 +114,7 @@ class ResourceShare:
 
     @property
     def name(self):
-        """Gets the name of this ResourceShare.
+        r"""Gets the name of this ResourceShare.
 
         资源共享实例的名称。
 
@@ -125,7 +125,7 @@ class ResourceShare:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceShare.
+        r"""Sets the name of this ResourceShare.
 
         资源共享实例的名称。
 
@@ -136,7 +136,7 @@ class ResourceShare:
 
     @property
     def description(self):
-        """Gets the description of this ResourceShare.
+        r"""Gets the description of this ResourceShare.
 
         资源共享实例的描述。
 
@@ -147,7 +147,7 @@ class ResourceShare:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ResourceShare.
+        r"""Sets the description of this ResourceShare.
 
         资源共享实例的描述。
 
@@ -158,7 +158,7 @@ class ResourceShare:
 
     @property
     def allow_external_principals(self):
-        """Gets the allow_external_principals of this ResourceShare.
+        r"""Gets the allow_external_principals of this ResourceShare.
 
         资源共享实例是否支持共享给组织外账号。
 
@@ -169,7 +169,7 @@ class ResourceShare:
 
     @allow_external_principals.setter
     def allow_external_principals(self, allow_external_principals):
-        """Sets the allow_external_principals of this ResourceShare.
+        r"""Sets the allow_external_principals of this ResourceShare.
 
         资源共享实例是否支持共享给组织外账号。
 
@@ -180,7 +180,7 @@ class ResourceShare:
 
     @property
     def owning_account_id(self):
-        """Gets the owning_account_id of this ResourceShare.
+        r"""Gets the owning_account_id of this ResourceShare.
 
         资源共享实例的所有者ID。
 
@@ -191,7 +191,7 @@ class ResourceShare:
 
     @owning_account_id.setter
     def owning_account_id(self, owning_account_id):
-        """Sets the owning_account_id of this ResourceShare.
+        r"""Sets the owning_account_id of this ResourceShare.
 
         资源共享实例的所有者ID。
 
@@ -202,7 +202,7 @@ class ResourceShare:
 
     @property
     def status(self):
-        """Gets the status of this ResourceShare.
+        r"""Gets the status of this ResourceShare.
 
         资源共享实例的状态。
 
@@ -213,7 +213,7 @@ class ResourceShare:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResourceShare.
+        r"""Sets the status of this ResourceShare.
 
         资源共享实例的状态。
 
@@ -224,7 +224,7 @@ class ResourceShare:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceShare.
+        r"""Gets the tags of this ResourceShare.
 
         资源共享实例的标签列表。
 
@@ -235,7 +235,7 @@ class ResourceShare:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceShare.
+        r"""Sets the tags of this ResourceShare.
 
         资源共享实例的标签列表。
 
@@ -246,7 +246,7 @@ class ResourceShare:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ResourceShare.
+        r"""Gets the created_at of this ResourceShare.
 
         创建资源共享实例的时间。
 
@@ -257,7 +257,7 @@ class ResourceShare:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ResourceShare.
+        r"""Sets the created_at of this ResourceShare.
 
         创建资源共享实例的时间。
 
@@ -268,7 +268,7 @@ class ResourceShare:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ResourceShare.
+        r"""Gets the updated_at of this ResourceShare.
 
         最后一次更新资源共享实例的时间。
 
@@ -279,7 +279,7 @@ class ResourceShare:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ResourceShare.
+        r"""Sets the updated_at of this ResourceShare.
 
         最后一次更新资源共享实例的时间。
 

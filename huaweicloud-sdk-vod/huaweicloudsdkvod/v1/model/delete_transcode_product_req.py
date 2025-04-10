@@ -29,7 +29,7 @@ class DeleteTranscodeProductReq:
     }
 
     def __init__(self, asset_id=None, delete_type=None, delete_infos=None):
-        """DeleteTranscodeProductReq
+        r"""DeleteTranscodeProductReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeleteTranscodeProductReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteTranscodeProductReq.
+        r"""Gets the asset_id of this DeleteTranscodeProductReq.
 
         媒资Id
 
@@ -68,7 +68,7 @@ class DeleteTranscodeProductReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteTranscodeProductReq.
+        r"""Sets the asset_id of this DeleteTranscodeProductReq.
 
         媒资Id
 
@@ -79,7 +79,7 @@ class DeleteTranscodeProductReq:
 
     @property
     def delete_type(self):
-        """Gets the delete_type of this DeleteTranscodeProductReq.
+        r"""Gets the delete_type of this DeleteTranscodeProductReq.
 
         GROUP：模板组级删除。 PRODUCT：产物级删除
 
@@ -90,7 +90,7 @@ class DeleteTranscodeProductReq:
 
     @delete_type.setter
     def delete_type(self, delete_type):
-        """Sets the delete_type of this DeleteTranscodeProductReq.
+        r"""Sets the delete_type of this DeleteTranscodeProductReq.
 
         GROUP：模板组级删除。 PRODUCT：产物级删除
 
@@ -101,7 +101,7 @@ class DeleteTranscodeProductReq:
 
     @property
     def delete_infos(self):
-        """Gets the delete_infos of this DeleteTranscodeProductReq.
+        r"""Gets the delete_infos of this DeleteTranscodeProductReq.
 
         删除的产物信息
 
@@ -112,7 +112,7 @@ class DeleteTranscodeProductReq:
 
     @delete_infos.setter
     def delete_infos(self, delete_infos):
-        """Sets the delete_infos of this DeleteTranscodeProductReq.
+        r"""Sets the delete_infos of this DeleteTranscodeProductReq.
 
         删除的产物信息
 

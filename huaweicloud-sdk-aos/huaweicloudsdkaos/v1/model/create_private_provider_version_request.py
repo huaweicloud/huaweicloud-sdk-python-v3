@@ -29,7 +29,7 @@ class CreatePrivateProviderVersionRequest:
     }
 
     def __init__(self, client_request_id=None, provider_name=None, body=None):
-        """CreatePrivateProviderVersionRequest
+        r"""CreatePrivateProviderVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePrivateProviderVersionRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this CreatePrivateProviderVersionRequest.
+        r"""Gets the client_request_id of this CreatePrivateProviderVersionRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class CreatePrivateProviderVersionRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this CreatePrivateProviderVersionRequest.
+        r"""Sets the client_request_id of this CreatePrivateProviderVersionRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class CreatePrivateProviderVersionRequest:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this CreatePrivateProviderVersionRequest.
+        r"""Gets the provider_name of this CreatePrivateProviderVersionRequest.
 
         私有provider（private-provider）的名称。此名字在domain_id+region下应唯一，可以使用小写英文、数字、中划线。仅支持以小写英文、数字开头结尾。
 
@@ -88,7 +88,7 @@ class CreatePrivateProviderVersionRequest:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this CreatePrivateProviderVersionRequest.
+        r"""Sets the provider_name of this CreatePrivateProviderVersionRequest.
 
         私有provider（private-provider）的名称。此名字在domain_id+region下应唯一，可以使用小写英文、数字、中划线。仅支持以小写英文、数字开头结尾。
 
@@ -99,7 +99,7 @@ class CreatePrivateProviderVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateProviderVersionRequest.
+        r"""Gets the body of this CreatePrivateProviderVersionRequest.
 
         :return: The body of this CreatePrivateProviderVersionRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateProviderVersionRequestBody`
@@ -108,7 +108,7 @@ class CreatePrivateProviderVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateProviderVersionRequest.
+        r"""Sets the body of this CreatePrivateProviderVersionRequest.
 
         :param body: The body of this CreatePrivateProviderVersionRequest.
         :type body: :class:`huaweicloudsdkaos.v1.CreatePrivateProviderVersionRequestBody`

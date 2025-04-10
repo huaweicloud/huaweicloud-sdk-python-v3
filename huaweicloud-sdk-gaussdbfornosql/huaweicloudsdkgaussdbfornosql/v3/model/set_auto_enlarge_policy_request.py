@@ -25,7 +25,7 @@ class SetAutoEnlargePolicyRequest:
     }
 
     def __init__(self, body=None):
-        """SetAutoEnlargePolicyRequest
+        r"""SetAutoEnlargePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetAutoEnlargePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetAutoEnlargePolicyRequest.
+        r"""Gets the body of this SetAutoEnlargePolicyRequest.
 
         :return: The body of this SetAutoEnlargePolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoPolicyRequestBody`
@@ -52,7 +52,7 @@ class SetAutoEnlargePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetAutoEnlargePolicyRequest.
+        r"""Sets the body of this SetAutoEnlargePolicyRequest.
 
         :param body: The body of this SetAutoEnlargePolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoPolicyRequestBody`

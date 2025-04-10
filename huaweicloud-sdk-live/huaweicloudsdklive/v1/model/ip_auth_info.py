@@ -29,7 +29,7 @@ class IPAuthInfo:
     }
 
     def __init__(self, domain=None, auth_type=None, ip_auth_list=None):
-        """IPAuthInfo
+        r"""IPAuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class IPAuthInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this IPAuthInfo.
+        r"""Gets the domain of this IPAuthInfo.
 
         推流域名或播放域名
 
@@ -65,7 +65,7 @@ class IPAuthInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this IPAuthInfo.
+        r"""Sets the domain of this IPAuthInfo.
 
         推流域名或播放域名
 
@@ -76,7 +76,7 @@ class IPAuthInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this IPAuthInfo.
+        r"""Gets the auth_type of this IPAuthInfo.
 
         鉴权类型。 包含如下取值： - WHITE：IP白名单鉴权。 - BLACK：IP黑名单鉴权。 - NONE：不鉴权。 
 
@@ -87,7 +87,7 @@ class IPAuthInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this IPAuthInfo.
+        r"""Sets the auth_type of this IPAuthInfo.
 
         鉴权类型。 包含如下取值： - WHITE：IP白名单鉴权。 - BLACK：IP黑名单鉴权。 - NONE：不鉴权。 
 
@@ -98,7 +98,7 @@ class IPAuthInfo:
 
     @property
     def ip_auth_list(self):
-        """Gets the ip_auth_list of this IPAuthInfo.
+        r"""Gets the ip_auth_list of this IPAuthInfo.
 
         IP黑名单列表，IP之间用;分隔，如192.168.0.0;192.168.0.8，最多支持配置100个IP。支持IP网段添加，例如127.0.0.1/24表示采用子网掩码中的前24位为有效位，即用32-24=8bit来表示主机号，该子网可以容纳2^8 - 2 = 254 台主机。故127.0.0.1/24 表示IP网段范围是：127.0.0.1~127.0.0.255
 
@@ -109,7 +109,7 @@ class IPAuthInfo:
 
     @ip_auth_list.setter
     def ip_auth_list(self, ip_auth_list):
-        """Sets the ip_auth_list of this IPAuthInfo.
+        r"""Sets the ip_auth_list of this IPAuthInfo.
 
         IP黑名单列表，IP之间用;分隔，如192.168.0.0;192.168.0.8，最多支持配置100个IP。支持IP网段添加，例如127.0.0.1/24表示采用子网掩码中的前24位为有效位，即用32-24=8bit来表示主机号，该子网可以容纳2^8 - 2 = 254 台主机。故127.0.0.1/24 表示IP网段范围是：127.0.0.1~127.0.0.255
 

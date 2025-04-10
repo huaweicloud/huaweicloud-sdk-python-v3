@@ -25,7 +25,7 @@ class BatchDeleteIpListRequestBody:
     }
 
     def __init__(self, ipgroup=None):
-        """BatchDeleteIpListRequestBody
+        r"""BatchDeleteIpListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteIpListRequestBody:
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this BatchDeleteIpListRequestBody.
+        r"""Gets the ipgroup of this BatchDeleteIpListRequestBody.
 
         :return: The ipgroup of this BatchDeleteIpListRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`
@@ -52,7 +52,7 @@ class BatchDeleteIpListRequestBody:
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this BatchDeleteIpListRequestBody.
+        r"""Sets the ipgroup of this BatchDeleteIpListRequestBody.
 
         :param ipgroup: The ipgroup of this BatchDeleteIpListRequestBody.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`

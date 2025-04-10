@@ -27,7 +27,7 @@ class CostUnitPair:
     }
 
     def __init__(self, cost_unit_name=None, cost_unit_rule_value=None):
-        """CostUnitPair
+        r"""CostUnitPair
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CostUnitPair:
 
     @property
     def cost_unit_name(self):
-        """Gets the cost_unit_name of this CostUnitPair.
+        r"""Gets the cost_unit_name of this CostUnitPair.
 
         成本单元名称。
 
@@ -61,7 +61,7 @@ class CostUnitPair:
 
     @cost_unit_name.setter
     def cost_unit_name(self, cost_unit_name):
-        """Sets the cost_unit_name of this CostUnitPair.
+        r"""Sets the cost_unit_name of this CostUnitPair.
 
         成本单元名称。
 
@@ -72,7 +72,7 @@ class CostUnitPair:
 
     @property
     def cost_unit_rule_value(self):
-        """Gets the cost_unit_rule_value of this CostUnitPair.
+        r"""Gets the cost_unit_rule_value of this CostUnitPair.
 
         成本单元规则值。
 
@@ -83,7 +83,7 @@ class CostUnitPair:
 
     @cost_unit_rule_value.setter
     def cost_unit_rule_value(self, cost_unit_rule_value):
-        """Sets the cost_unit_rule_value of this CostUnitPair.
+        r"""Sets the cost_unit_rule_value of this CostUnitPair.
 
         成本单元规则值。
 

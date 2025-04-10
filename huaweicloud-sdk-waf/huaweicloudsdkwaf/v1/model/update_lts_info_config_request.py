@@ -29,7 +29,7 @@ class UpdateLtsInfoConfigRequest:
     }
 
     def __init__(self, enterprise_project_id=None, ltsconfig_id=None, body=None):
-        """UpdateLtsInfoConfigRequest
+        r"""UpdateLtsInfoConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateLtsInfoConfigRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateLtsInfoConfigRequest.
+        r"""Gets the enterprise_project_id of this UpdateLtsInfoConfigRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class UpdateLtsInfoConfigRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateLtsInfoConfigRequest.
+        r"""Sets the enterprise_project_id of this UpdateLtsInfoConfigRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class UpdateLtsInfoConfigRequest:
 
     @property
     def ltsconfig_id(self):
-        """Gets the ltsconfig_id of this UpdateLtsInfoConfigRequest.
+        r"""Gets the ltsconfig_id of this UpdateLtsInfoConfigRequest.
 
         lts配置信息id，通过ShowLtsInfoConfig获取
 
@@ -89,7 +89,7 @@ class UpdateLtsInfoConfigRequest:
 
     @ltsconfig_id.setter
     def ltsconfig_id(self, ltsconfig_id):
-        """Sets the ltsconfig_id of this UpdateLtsInfoConfigRequest.
+        r"""Sets the ltsconfig_id of this UpdateLtsInfoConfigRequest.
 
         lts配置信息id，通过ShowLtsInfoConfig获取
 
@@ -100,7 +100,7 @@ class UpdateLtsInfoConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLtsInfoConfigRequest.
+        r"""Gets the body of this UpdateLtsInfoConfigRequest.
 
         :return: The body of this UpdateLtsInfoConfigRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigRequestBody`
@@ -109,7 +109,7 @@ class UpdateLtsInfoConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLtsInfoConfigRequest.
+        r"""Sets the body of this UpdateLtsInfoConfigRequest.
 
         :param body: The body of this UpdateLtsInfoConfigRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigRequestBody`

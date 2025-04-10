@@ -25,7 +25,7 @@ class UpdateNicInfoRequestBody:
     }
 
     def __init__(self, interface_attachment=None):
-        """UpdateNicInfoRequestBody
+        r"""UpdateNicInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNicInfoRequestBody:
 
     @property
     def interface_attachment(self):
-        """Gets the interface_attachment of this UpdateNicInfoRequestBody.
+        r"""Gets the interface_attachment of this UpdateNicInfoRequestBody.
 
         :return: The interface_attachment of this UpdateNicInfoRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.InterfaceAttachment`
@@ -51,7 +51,7 @@ class UpdateNicInfoRequestBody:
 
     @interface_attachment.setter
     def interface_attachment(self, interface_attachment):
-        """Sets the interface_attachment of this UpdateNicInfoRequestBody.
+        r"""Sets the interface_attachment of this UpdateNicInfoRequestBody.
 
         :param interface_attachment: The interface_attachment of this UpdateNicInfoRequestBody.
         :type interface_attachment: :class:`huaweicloudsdkecs.v2.InterfaceAttachment`

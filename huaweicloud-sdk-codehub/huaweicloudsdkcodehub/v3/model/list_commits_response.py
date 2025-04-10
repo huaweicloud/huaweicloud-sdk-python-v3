@@ -30,7 +30,7 @@ class ListCommitsResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListCommitsResponse
+        r"""ListCommitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCommitsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListCommitsResponse.
+        r"""Gets the error of this ListCommitsResponse.
 
         :return: The error of this ListCommitsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListCommitsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListCommitsResponse.
+        r"""Sets the error of this ListCommitsResponse.
 
         :param error: The error of this ListCommitsResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListCommitsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListCommitsResponse.
+        r"""Gets the result of this ListCommitsResponse.
 
         提交列表
 
@@ -87,7 +87,7 @@ class ListCommitsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListCommitsResponse.
+        r"""Sets the result of this ListCommitsResponse.
 
         提交列表
 
@@ -98,7 +98,7 @@ class ListCommitsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListCommitsResponse.
+        r"""Gets the status of this ListCommitsResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class ListCommitsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCommitsResponse.
+        r"""Sets the status of this ListCommitsResponse.
 
         响应状态
 

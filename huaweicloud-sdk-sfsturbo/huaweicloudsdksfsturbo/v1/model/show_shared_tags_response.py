@@ -28,7 +28,7 @@ class ShowSharedTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ShowSharedTagsResponse
+        r"""ShowSharedTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSharedTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowSharedTagsResponse.
+        r"""Gets the tags of this ShowSharedTagsResponse.
 
         tag标签的列表。
 
@@ -62,7 +62,7 @@ class ShowSharedTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowSharedTagsResponse.
+        r"""Sets the tags of this ShowSharedTagsResponse.
 
         tag标签的列表。
 
@@ -73,7 +73,7 @@ class ShowSharedTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowSharedTagsResponse.
+        r"""Gets the sys_tags of this ShowSharedTagsResponse.
 
         仅op_service权限才可以获取此字段。  1.  目前只包含一个resource_tag结构体 key：_sys_enterprise_project_id  2.  目前key下面只包含一个value，0表示默认企业项目。  非op_service场景不能返回此字段。
 
@@ -84,7 +84,7 @@ class ShowSharedTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowSharedTagsResponse.
+        r"""Sets the sys_tags of this ShowSharedTagsResponse.
 
         仅op_service权限才可以获取此字段。  1.  目前只包含一个resource_tag结构体 key：_sys_enterprise_project_id  2.  目前key下面只包含一个value，0表示默认企业项目。  非op_service场景不能返回此字段。
 

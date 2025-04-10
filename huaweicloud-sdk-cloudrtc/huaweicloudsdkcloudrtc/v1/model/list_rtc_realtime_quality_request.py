@@ -43,7 +43,7 @@ class ListRtcRealtimeQualityRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, room_id=None, metric=None, sdk_type=None, start_time=None, end_time=None):
-        """ListRtcRealtimeQualityRequest
+        r"""ListRtcRealtimeQualityRequest
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcRealtimeQualityRequest.
+        r"""Gets the authorization of this ListRtcRealtimeQualityRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -113,7 +113,7 @@ class ListRtcRealtimeQualityRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcRealtimeQualityRequest.
+        r"""Sets the authorization of this ListRtcRealtimeQualityRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -124,7 +124,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcRealtimeQualityRequest.
+        r"""Gets the x_sdk_date of this ListRtcRealtimeQualityRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -135,7 +135,7 @@ class ListRtcRealtimeQualityRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcRealtimeQualityRequest.
+        r"""Sets the x_sdk_date of this ListRtcRealtimeQualityRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -146,7 +146,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcRealtimeQualityRequest.
+        r"""Gets the x_project_id of this ListRtcRealtimeQualityRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -157,7 +157,7 @@ class ListRtcRealtimeQualityRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcRealtimeQualityRequest.
+        r"""Sets the x_project_id of this ListRtcRealtimeQualityRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -168,7 +168,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcRealtimeQualityRequest.
+        r"""Gets the project_id of this ListRtcRealtimeQualityRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -179,7 +179,7 @@ class ListRtcRealtimeQualityRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcRealtimeQualityRequest.
+        r"""Sets the project_id of this ListRtcRealtimeQualityRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -190,7 +190,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcRealtimeQualityRequest.
+        r"""Gets the app of this ListRtcRealtimeQualityRequest.
 
         应用标识 
 
@@ -201,7 +201,7 @@ class ListRtcRealtimeQualityRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcRealtimeQualityRequest.
+        r"""Sets the app of this ListRtcRealtimeQualityRequest.
 
         应用标识 
 
@@ -212,7 +212,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcRealtimeQualityRequest.
+        r"""Gets the room_id of this ListRtcRealtimeQualityRequest.
 
         房间ID 
 
@@ -223,7 +223,7 @@ class ListRtcRealtimeQualityRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcRealtimeQualityRequest.
+        r"""Sets the room_id of this ListRtcRealtimeQualityRequest.
 
         房间ID 
 
@@ -234,7 +234,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def metric(self):
-        """Gets the metric of this ListRtcRealtimeQualityRequest.
+        r"""Gets the metric of this ListRtcRealtimeQualityRequest.
 
         查询的数据类型 - JoinSuccessRate: 加入房间成功率 - JoinSuccess5SecsRate: 5秒加入成功率 - VideoFreezeRate: 视频卡顿率 - AudioFreezeRate: 音频卡顿率 
 
@@ -245,7 +245,7 @@ class ListRtcRealtimeQualityRequest:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListRtcRealtimeQualityRequest.
+        r"""Sets the metric of this ListRtcRealtimeQualityRequest.
 
         查询的数据类型 - JoinSuccessRate: 加入房间成功率 - JoinSuccess5SecsRate: 5秒加入成功率 - VideoFreezeRate: 视频卡顿率 - AudioFreezeRate: 音频卡顿率 
 
@@ -256,7 +256,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def sdk_type(self):
-        """Gets the sdk_type of this ListRtcRealtimeQualityRequest.
+        r"""Gets the sdk_type of this ListRtcRealtimeQualityRequest.
 
         sdk类型 - native: 非web版sdk - webrtc: web版sdk 
 
@@ -267,7 +267,7 @@ class ListRtcRealtimeQualityRequest:
 
     @sdk_type.setter
     def sdk_type(self, sdk_type):
-        """Sets the sdk_type of this ListRtcRealtimeQualityRequest.
+        r"""Sets the sdk_type of this ListRtcRealtimeQualityRequest.
 
         sdk类型 - native: 非web版sdk - webrtc: web版sdk 
 
@@ -278,7 +278,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcRealtimeQualityRequest.
+        r"""Gets the start_time of this ListRtcRealtimeQualityRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据。 
 
@@ -289,7 +289,7 @@ class ListRtcRealtimeQualityRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcRealtimeQualityRequest.
+        r"""Sets the start_time of this ListRtcRealtimeQualityRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据。 
 
@@ -300,7 +300,7 @@ class ListRtcRealtimeQualityRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcRealtimeQualityRequest.
+        r"""Gets the end_time of this ListRtcRealtimeQualityRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认为当前时间。 
 
@@ -311,7 +311,7 @@ class ListRtcRealtimeQualityRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcRealtimeQualityRequest.
+        r"""Sets the end_time of this ListRtcRealtimeQualityRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认为当前时间。 
 

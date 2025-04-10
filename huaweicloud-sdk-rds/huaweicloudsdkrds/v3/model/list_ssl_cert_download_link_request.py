@@ -27,7 +27,7 @@ class ListSslCertDownloadLinkRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListSslCertDownloadLinkRequest
+        r"""ListSslCertDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSslCertDownloadLinkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSslCertDownloadLinkRequest.
+        r"""Gets the instance_id of this ListSslCertDownloadLinkRequest.
 
         :return: The instance_id of this ListSslCertDownloadLinkRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ListSslCertDownloadLinkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSslCertDownloadLinkRequest.
+        r"""Sets the instance_id of this ListSslCertDownloadLinkRequest.
 
         :param instance_id: The instance_id of this ListSslCertDownloadLinkRequest.
         :type instance_id: str
@@ -67,7 +67,7 @@ class ListSslCertDownloadLinkRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSslCertDownloadLinkRequest.
+        r"""Gets the x_language of this ListSslCertDownloadLinkRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ListSslCertDownloadLinkRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSslCertDownloadLinkRequest.
+        r"""Sets the x_language of this ListSslCertDownloadLinkRequest.
 
         语言
 

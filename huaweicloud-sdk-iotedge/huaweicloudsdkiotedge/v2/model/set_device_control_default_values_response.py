@@ -26,7 +26,7 @@ class SetDeviceControlDefaultValuesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SetDeviceControlDefaultValuesResponse
+        r"""SetDeviceControlDefaultValuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetDeviceControlDefaultValuesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SetDeviceControlDefaultValuesResponse.
+        r"""Gets the body of this SetDeviceControlDefaultValuesResponse.
 
         :return: The body of this SetDeviceControlDefaultValuesResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SetDeviceControlDefaultValuesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetDeviceControlDefaultValuesResponse.
+        r"""Sets the body of this SetDeviceControlDefaultValuesResponse.
 
         :param body: The body of this SetDeviceControlDefaultValuesResponse.
         :type body: str

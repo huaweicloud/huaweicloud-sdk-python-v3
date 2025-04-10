@@ -48,7 +48,7 @@ class ShowPublicationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, last_updated_by=None, create_time=None, update_time=None, publish_name=None, publish_scope=None, start_time=None, end_time=None, publish_status=None, program_list=None, dept_list=None, device_list=None):
-        """ShowPublicationResponse
+        r"""ShowPublicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPublicationResponse.
+        r"""Gets the id of this ShowPublicationResponse.
 
         发布ID。
 
@@ -132,7 +132,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPublicationResponse.
+        r"""Sets the id of this ShowPublicationResponse.
 
         发布ID。
 
@@ -143,7 +143,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def last_updated_by(self):
-        """Gets the last_updated_by of this ShowPublicationResponse.
+        r"""Gets the last_updated_by of this ShowPublicationResponse.
 
         更新者。
 
@@ -154,7 +154,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @last_updated_by.setter
     def last_updated_by(self, last_updated_by):
-        """Sets the last_updated_by of this ShowPublicationResponse.
+        r"""Sets the last_updated_by of this ShowPublicationResponse.
 
         更新者。
 
@@ -165,7 +165,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowPublicationResponse.
+        r"""Gets the create_time of this ShowPublicationResponse.
 
         创建时间。
 
@@ -176,7 +176,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowPublicationResponse.
+        r"""Sets the create_time of this ShowPublicationResponse.
 
         创建时间。
 
@@ -187,7 +187,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowPublicationResponse.
+        r"""Gets the update_time of this ShowPublicationResponse.
 
         更新时间。
 
@@ -198,7 +198,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowPublicationResponse.
+        r"""Sets the update_time of this ShowPublicationResponse.
 
         更新时间。
 
@@ -209,7 +209,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def publish_name(self):
-        """Gets the publish_name of this ShowPublicationResponse.
+        r"""Gets the publish_name of this ShowPublicationResponse.
 
         发布名称。
 
@@ -220,7 +220,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @publish_name.setter
     def publish_name(self, publish_name):
-        """Sets the publish_name of this ShowPublicationResponse.
+        r"""Sets the publish_name of this ShowPublicationResponse.
 
         发布名称。
 
@@ -231,7 +231,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def publish_scope(self):
-        """Gets the publish_scope of this ShowPublicationResponse.
+        r"""Gets the publish_scope of this ShowPublicationResponse.
 
         发布范围。
 
@@ -242,7 +242,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @publish_scope.setter
     def publish_scope(self, publish_scope):
-        """Sets the publish_scope of this ShowPublicationResponse.
+        r"""Sets the publish_scope of this ShowPublicationResponse.
 
         发布范围。
 
@@ -253,7 +253,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPublicationResponse.
+        r"""Gets the start_time of this ShowPublicationResponse.
 
         开始时间。
 
@@ -264,7 +264,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPublicationResponse.
+        r"""Sets the start_time of this ShowPublicationResponse.
 
         开始时间。
 
@@ -275,7 +275,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPublicationResponse.
+        r"""Gets the end_time of this ShowPublicationResponse.
 
         结束时间。
 
@@ -286,7 +286,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPublicationResponse.
+        r"""Sets the end_time of this ShowPublicationResponse.
 
         结束时间。
 
@@ -297,7 +297,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def publish_status(self):
-        """Gets the publish_status of this ShowPublicationResponse.
+        r"""Gets the publish_status of this ShowPublicationResponse.
 
         根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
@@ -308,7 +308,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @publish_status.setter
     def publish_status(self, publish_status):
-        """Sets the publish_status of this ShowPublicationResponse.
+        r"""Sets the publish_status of this ShowPublicationResponse.
 
         根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
@@ -319,7 +319,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def program_list(self):
-        """Gets the program_list of this ShowPublicationResponse.
+        r"""Gets the program_list of this ShowPublicationResponse.
 
         发布节目ID列表。
 
@@ -330,7 +330,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @program_list.setter
     def program_list(self, program_list):
-        """Sets the program_list of this ShowPublicationResponse.
+        r"""Sets the program_list of this ShowPublicationResponse.
 
         发布节目ID列表。
 
@@ -341,7 +341,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def dept_list(self):
-        """Gets the dept_list of this ShowPublicationResponse.
+        r"""Gets the dept_list of this ShowPublicationResponse.
 
         发布部门列表。
 
@@ -352,7 +352,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @dept_list.setter
     def dept_list(self, dept_list):
-        """Sets the dept_list of this ShowPublicationResponse.
+        r"""Sets the dept_list of this ShowPublicationResponse.
 
         发布部门列表。
 
@@ -363,7 +363,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @property
     def device_list(self):
-        """Gets the device_list of this ShowPublicationResponse.
+        r"""Gets the device_list of this ShowPublicationResponse.
 
         发布设备列表。
 
@@ -374,7 +374,7 @@ class ShowPublicationResponse(SdkResponse):
 
     @device_list.setter
     def device_list(self, device_list):
-        """Sets the device_list of this ShowPublicationResponse.
+        r"""Sets the device_list of this ShowPublicationResponse.
 
         发布设备列表。
 

@@ -33,7 +33,7 @@ class CustomRuleConditions:
     }
 
     def __init__(self, category=None, index=None, logic_operation=None, contents=None, value_list_id=None):
-        """CustomRuleConditions
+        r"""CustomRuleConditions
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CustomRuleConditions:
 
     @property
     def category(self):
-        """Gets the category of this CustomRuleConditions.
+        r"""Gets the category of this CustomRuleConditions.
 
         字段类型。可选值为：url、user-agent、ip、params、cookie、referer、header、request_line、method、reqeust
 
@@ -82,7 +82,7 @@ class CustomRuleConditions:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CustomRuleConditions.
+        r"""Sets the category of this CustomRuleConditions.
 
         字段类型。可选值为：url、user-agent、ip、params、cookie、referer、header、request_line、method、reqeust
 
@@ -93,7 +93,7 @@ class CustomRuleConditions:
 
     @property
     def index(self):
-        """Gets the index of this CustomRuleConditions.
+        r"""Gets the index of this CustomRuleConditions.
 
         子字段：  - 字段类型为url、user-agent、ip、refer、request_line、method、reqeust时，不需要传index参数    - 字段类型为params、header、cookie并且子字段为自定义时，index的值为自定义子字段
 
@@ -104,7 +104,7 @@ class CustomRuleConditions:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this CustomRuleConditions.
+        r"""Sets the index of this CustomRuleConditions.
 
         子字段：  - 字段类型为url、user-agent、ip、refer、request_line、method、reqeust时，不需要传index参数    - 字段类型为params、header、cookie并且子字段为自定义时，index的值为自定义子字段
 
@@ -115,7 +115,7 @@ class CustomRuleConditions:
 
     @property
     def logic_operation(self):
-        """Gets the logic_operation of this CustomRuleConditions.
+        r"""Gets the logic_operation of this CustomRuleConditions.
 
         条件匹配逻辑。
 
@@ -126,7 +126,7 @@ class CustomRuleConditions:
 
     @logic_operation.setter
     def logic_operation(self, logic_operation):
-        """Sets the logic_operation of this CustomRuleConditions.
+        r"""Sets the logic_operation of this CustomRuleConditions.
 
         条件匹配逻辑。
 
@@ -137,7 +137,7 @@ class CustomRuleConditions:
 
     @property
     def contents(self):
-        """Gets the contents of this CustomRuleConditions.
+        r"""Gets the contents of this CustomRuleConditions.
 
         条件匹配的内容
 
@@ -148,7 +148,7 @@ class CustomRuleConditions:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CustomRuleConditions.
+        r"""Sets the contents of this CustomRuleConditions.
 
         条件匹配的内容
 
@@ -159,7 +159,7 @@ class CustomRuleConditions:
 
     @property
     def value_list_id(self):
-        """Gets the value_list_id of this CustomRuleConditions.
+        r"""Gets the value_list_id of this CustomRuleConditions.
 
         引用表id。
 
@@ -170,7 +170,7 @@ class CustomRuleConditions:
 
     @value_list_id.setter
     def value_list_id(self, value_list_id):
-        """Sets the value_list_id of this CustomRuleConditions.
+        r"""Sets the value_list_id of this CustomRuleConditions.
 
         引用表id。
 

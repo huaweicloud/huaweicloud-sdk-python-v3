@@ -33,7 +33,7 @@ class AlarmStatisticResponse:
     }
 
     def __init__(self, date=None, urgent=None, important=None, minor=None, prompt=None):
-        """AlarmStatisticResponse
+        r"""AlarmStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AlarmStatisticResponse:
 
     @property
     def date(self):
-        """Gets the date of this AlarmStatisticResponse.
+        r"""Gets the date of this AlarmStatisticResponse.
 
         日期
 
@@ -82,7 +82,7 @@ class AlarmStatisticResponse:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this AlarmStatisticResponse.
+        r"""Sets the date of this AlarmStatisticResponse.
 
         日期
 
@@ -93,7 +93,7 @@ class AlarmStatisticResponse:
 
     @property
     def urgent(self):
-        """Gets the urgent of this AlarmStatisticResponse.
+        r"""Gets the urgent of this AlarmStatisticResponse.
 
         紧急
 
@@ -104,7 +104,7 @@ class AlarmStatisticResponse:
 
     @urgent.setter
     def urgent(self, urgent):
-        """Sets the urgent of this AlarmStatisticResponse.
+        r"""Sets the urgent of this AlarmStatisticResponse.
 
         紧急
 
@@ -115,7 +115,7 @@ class AlarmStatisticResponse:
 
     @property
     def important(self):
-        """Gets the important of this AlarmStatisticResponse.
+        r"""Gets the important of this AlarmStatisticResponse.
 
         重要
 
@@ -126,7 +126,7 @@ class AlarmStatisticResponse:
 
     @important.setter
     def important(self, important):
-        """Sets the important of this AlarmStatisticResponse.
+        r"""Sets the important of this AlarmStatisticResponse.
 
         重要
 
@@ -137,7 +137,7 @@ class AlarmStatisticResponse:
 
     @property
     def minor(self):
-        """Gets the minor of this AlarmStatisticResponse.
+        r"""Gets the minor of this AlarmStatisticResponse.
 
         次要
 
@@ -148,7 +148,7 @@ class AlarmStatisticResponse:
 
     @minor.setter
     def minor(self, minor):
-        """Sets the minor of this AlarmStatisticResponse.
+        r"""Sets the minor of this AlarmStatisticResponse.
 
         次要
 
@@ -159,7 +159,7 @@ class AlarmStatisticResponse:
 
     @property
     def prompt(self):
-        """Gets the prompt of this AlarmStatisticResponse.
+        r"""Gets the prompt of this AlarmStatisticResponse.
 
         提示
 
@@ -170,7 +170,7 @@ class AlarmStatisticResponse:
 
     @prompt.setter
     def prompt(self, prompt):
-        """Sets the prompt of this AlarmStatisticResponse.
+        r"""Sets the prompt of this AlarmStatisticResponse.
 
         提示
 

@@ -57,7 +57,7 @@ class OpenGaussInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, ha=None, replica_num=None, backup_strategy=None, port=None, enterprise_project_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None):
-        """OpenGaussInstanceResponse
+        r"""OpenGaussInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def id(self):
-        """Gets the id of this OpenGaussInstanceResponse.
+        r"""Gets the id of this OpenGaussInstanceResponse.
 
         实例ID。
 
@@ -151,7 +151,7 @@ class OpenGaussInstanceResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OpenGaussInstanceResponse.
+        r"""Sets the id of this OpenGaussInstanceResponse.
 
         实例ID。
 
@@ -162,7 +162,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def name(self):
-        """Gets the name of this OpenGaussInstanceResponse.
+        r"""Gets the name of this OpenGaussInstanceResponse.
 
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。  取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -173,7 +173,7 @@ class OpenGaussInstanceResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OpenGaussInstanceResponse.
+        r"""Sets the name of this OpenGaussInstanceResponse.
 
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。  取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -184,7 +184,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def status(self):
-        """Gets the status of this OpenGaussInstanceResponse.
+        r"""Gets the status of this OpenGaussInstanceResponse.
 
         实例状态。如BUILD，表示创建中。  仅创建按需实例时会返回该参数。
 
@@ -195,7 +195,7 @@ class OpenGaussInstanceResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OpenGaussInstanceResponse.
+        r"""Sets the status of this OpenGaussInstanceResponse.
 
         实例状态。如BUILD，表示创建中。  仅创建按需实例时会返回该参数。
 
@@ -206,7 +206,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def datastore(self):
-        """Gets the datastore of this OpenGaussInstanceResponse.
+        r"""Gets the datastore of this OpenGaussInstanceResponse.
 
         :return: The datastore of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
@@ -215,7 +215,7 @@ class OpenGaussInstanceResponse:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this OpenGaussInstanceResponse.
+        r"""Sets the datastore of this OpenGaussInstanceResponse.
 
         :param datastore: The datastore of this OpenGaussInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
@@ -224,7 +224,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def ha(self):
-        """Gets the ha of this OpenGaussInstanceResponse.
+        r"""Gets the ha of this OpenGaussInstanceResponse.
 
         :return: The ha of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
@@ -233,7 +233,7 @@ class OpenGaussInstanceResponse:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this OpenGaussInstanceResponse.
+        r"""Sets the ha of this OpenGaussInstanceResponse.
 
         :param ha: The ha of this OpenGaussInstanceResponse.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
@@ -242,7 +242,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def replica_num(self):
-        """Gets the replica_num of this OpenGaussInstanceResponse.
+        r"""Gets the replica_num of this OpenGaussInstanceResponse.
 
         实例副本数。
 
@@ -253,7 +253,7 @@ class OpenGaussInstanceResponse:
 
     @replica_num.setter
     def replica_num(self, replica_num):
-        """Sets the replica_num of this OpenGaussInstanceResponse.
+        r"""Sets the replica_num of this OpenGaussInstanceResponse.
 
         实例副本数。
 
@@ -264,7 +264,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this OpenGaussInstanceResponse.
+        r"""Gets the backup_strategy of this OpenGaussInstanceResponse.
 
         :return: The backup_strategy of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
@@ -273,7 +273,7 @@ class OpenGaussInstanceResponse:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this OpenGaussInstanceResponse.
+        r"""Sets the backup_strategy of this OpenGaussInstanceResponse.
 
         :param backup_strategy: The backup_strategy of this OpenGaussInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
@@ -282,7 +282,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def port(self):
-        """Gets the port of this OpenGaussInstanceResponse.
+        r"""Gets the port of this OpenGaussInstanceResponse.
 
         数据库端口信息，与请求参数相同。
 
@@ -293,7 +293,7 @@ class OpenGaussInstanceResponse:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this OpenGaussInstanceResponse.
+        r"""Sets the port of this OpenGaussInstanceResponse.
 
         数据库端口信息，与请求参数相同。
 
@@ -304,7 +304,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this OpenGaussInstanceResponse.
+        r"""Gets the enterprise_project_id of this OpenGaussInstanceResponse.
 
         项目标签。
 
@@ -315,7 +315,7 @@ class OpenGaussInstanceResponse:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this OpenGaussInstanceResponse.
+        r"""Sets the enterprise_project_id of this OpenGaussInstanceResponse.
 
         项目标签。
 
@@ -326,7 +326,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this OpenGaussInstanceResponse.
+        r"""Gets the flavor_ref of this OpenGaussInstanceResponse.
 
         规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
@@ -337,7 +337,7 @@ class OpenGaussInstanceResponse:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this OpenGaussInstanceResponse.
+        r"""Sets the flavor_ref of this OpenGaussInstanceResponse.
 
         规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
@@ -348,7 +348,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def volume(self):
-        """Gets the volume of this OpenGaussInstanceResponse.
+        r"""Gets the volume of this OpenGaussInstanceResponse.
 
         :return: The volume of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -357,7 +357,7 @@ class OpenGaussInstanceResponse:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this OpenGaussInstanceResponse.
+        r"""Sets the volume of this OpenGaussInstanceResponse.
 
         :param volume: The volume of this OpenGaussInstanceResponse.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -366,7 +366,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def region(self):
-        """Gets the region of this OpenGaussInstanceResponse.
+        r"""Gets the region of this OpenGaussInstanceResponse.
 
         区域ID。
 
@@ -377,7 +377,7 @@ class OpenGaussInstanceResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this OpenGaussInstanceResponse.
+        r"""Sets the region of this OpenGaussInstanceResponse.
 
         区域ID。
 
@@ -388,7 +388,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this OpenGaussInstanceResponse.
+        r"""Gets the availability_zone of this OpenGaussInstanceResponse.
 
         可用区ID。
 
@@ -399,7 +399,7 @@ class OpenGaussInstanceResponse:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this OpenGaussInstanceResponse.
+        r"""Sets the availability_zone of this OpenGaussInstanceResponse.
 
         可用区ID。
 
@@ -410,7 +410,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this OpenGaussInstanceResponse.
+        r"""Gets the vpc_id of this OpenGaussInstanceResponse.
 
         虚拟私有云ID。
 
@@ -421,7 +421,7 @@ class OpenGaussInstanceResponse:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this OpenGaussInstanceResponse.
+        r"""Sets the vpc_id of this OpenGaussInstanceResponse.
 
         虚拟私有云ID。
 
@@ -432,7 +432,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this OpenGaussInstanceResponse.
+        r"""Gets the subnet_id of this OpenGaussInstanceResponse.
 
         子网的网络ID信息。
 
@@ -443,7 +443,7 @@ class OpenGaussInstanceResponse:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this OpenGaussInstanceResponse.
+        r"""Sets the subnet_id of this OpenGaussInstanceResponse.
 
         子网的网络ID信息。
 
@@ -454,7 +454,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this OpenGaussInstanceResponse.
+        r"""Gets the security_group_id of this OpenGaussInstanceResponse.
 
         实例所属的安全组。
 
@@ -465,7 +465,7 @@ class OpenGaussInstanceResponse:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this OpenGaussInstanceResponse.
+        r"""Sets the security_group_id of this OpenGaussInstanceResponse.
 
         实例所属的安全组。
 
@@ -476,7 +476,7 @@ class OpenGaussInstanceResponse:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this OpenGaussInstanceResponse.
+        r"""Gets the charge_info of this OpenGaussInstanceResponse.
 
         :return: The charge_info of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`
@@ -485,7 +485,7 @@ class OpenGaussInstanceResponse:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this OpenGaussInstanceResponse.
+        r"""Sets the charge_info of this OpenGaussInstanceResponse.
 
         :param charge_info: The charge_info of this OpenGaussInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`

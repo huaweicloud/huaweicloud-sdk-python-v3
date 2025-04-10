@@ -30,7 +30,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, vpc_attachments=None, page_info=None, request_id=None):
-        """ListVpcAttachmentsResponse
+        r"""ListVpcAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
 
     @property
     def vpc_attachments(self):
-        """Gets the vpc_attachments of this ListVpcAttachmentsResponse.
+        r"""Gets the vpc_attachments of this ListVpcAttachmentsResponse.
 
         VPC连接列表
 
@@ -69,7 +69,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
 
     @vpc_attachments.setter
     def vpc_attachments(self, vpc_attachments):
-        """Sets the vpc_attachments of this ListVpcAttachmentsResponse.
+        r"""Sets the vpc_attachments of this ListVpcAttachmentsResponse.
 
         VPC连接列表
 
@@ -80,7 +80,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpcAttachmentsResponse.
+        r"""Gets the page_info of this ListVpcAttachmentsResponse.
 
         :return: The page_info of this ListVpcAttachmentsResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpcAttachmentsResponse.
+        r"""Sets the page_info of this ListVpcAttachmentsResponse.
 
         :param page_info: The page_info of this ListVpcAttachmentsResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpcAttachmentsResponse.
+        r"""Gets the request_id of this ListVpcAttachmentsResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ListVpcAttachmentsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpcAttachmentsResponse.
+        r"""Sets the request_id of this ListVpcAttachmentsResponse.
 
         请求ID
 

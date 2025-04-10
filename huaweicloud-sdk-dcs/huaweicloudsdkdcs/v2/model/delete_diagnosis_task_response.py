@@ -26,7 +26,7 @@ class DeleteDiagnosisTaskResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """DeleteDiagnosisTaskResponse
+        r"""DeleteDiagnosisTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDiagnosisTaskResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this DeleteDiagnosisTaskResponse.
+        r"""Gets the results of this DeleteDiagnosisTaskResponse.
 
         删除实例诊断结果
 
@@ -55,7 +55,7 @@ class DeleteDiagnosisTaskResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this DeleteDiagnosisTaskResponse.
+        r"""Sets the results of this DeleteDiagnosisTaskResponse.
 
         删除实例诊断结果
 

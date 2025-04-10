@@ -29,7 +29,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
     }
 
     def __init__(self, enabled=None, token=None, user_data=None):
-        """ListApplicationEndpointAttributesResponseBodyAttributes
+        r"""ListApplicationEndpointAttributesResponseBodyAttributes
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListApplicationEndpointAttributesResponseBodyAttributes.
+        r"""Gets the enabled of this ListApplicationEndpointAttributesResponseBodyAttributes.
 
         设备是否可用。
 
@@ -65,7 +65,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListApplicationEndpointAttributesResponseBodyAttributes.
+        r"""Sets the enabled of this ListApplicationEndpointAttributesResponseBodyAttributes.
 
         设备是否可用。
 
@@ -76,7 +76,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
 
     @property
     def token(self):
-        """Gets the token of this ListApplicationEndpointAttributesResponseBodyAttributes.
+        r"""Gets the token of this ListApplicationEndpointAttributesResponseBodyAttributes.
 
         设备token。
 
@@ -87,7 +87,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ListApplicationEndpointAttributesResponseBodyAttributes.
+        r"""Sets the token of this ListApplicationEndpointAttributesResponseBodyAttributes.
 
         设备token。
 
@@ -98,7 +98,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ListApplicationEndpointAttributesResponseBodyAttributes.
+        r"""Gets the user_data of this ListApplicationEndpointAttributesResponseBodyAttributes.
 
         用户数据。
 
@@ -109,7 +109,7 @@ class ListApplicationEndpointAttributesResponseBodyAttributes:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ListApplicationEndpointAttributesResponseBodyAttributes.
+        r"""Sets the user_data of this ListApplicationEndpointAttributesResponseBodyAttributes.
 
         用户数据。
 

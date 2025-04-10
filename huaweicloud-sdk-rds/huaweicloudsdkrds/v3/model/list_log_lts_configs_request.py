@@ -41,7 +41,7 @@ class ListLogLtsConfigsRequest:
     }
 
     def __init__(self, engine=None, enterprise_project_id=None, instance_id=None, instance_name=None, limit=None, offset=None, sort=None, instance_status=None, x_language=None):
-        """ListLogLtsConfigsRequest
+        r"""ListLogLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListLogLtsConfigsRequest.
+        r"""Gets the engine of this ListLogLtsConfigsRequest.
 
         引擎。
 
@@ -109,7 +109,7 @@ class ListLogLtsConfigsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListLogLtsConfigsRequest.
+        r"""Sets the engine of this ListLogLtsConfigsRequest.
 
         引擎。
 
@@ -120,7 +120,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLogLtsConfigsRequest.
+        r"""Gets the enterprise_project_id of this ListLogLtsConfigsRequest.
 
         企业项目ID。默认为空。
 
@@ -131,7 +131,7 @@ class ListLogLtsConfigsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLogLtsConfigsRequest.
+        r"""Sets the enterprise_project_id of this ListLogLtsConfigsRequest.
 
         企业项目ID。默认为空。
 
@@ -142,7 +142,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLogLtsConfigsRequest.
+        r"""Gets the instance_id of this ListLogLtsConfigsRequest.
 
         实例ID。默认为空。
 
@@ -153,7 +153,7 @@ class ListLogLtsConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLogLtsConfigsRequest.
+        r"""Sets the instance_id of this ListLogLtsConfigsRequest.
 
         实例ID。默认为空。
 
@@ -164,7 +164,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListLogLtsConfigsRequest.
+        r"""Gets the instance_name of this ListLogLtsConfigsRequest.
 
         实例名称。默认为空。
 
@@ -175,7 +175,7 @@ class ListLogLtsConfigsRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListLogLtsConfigsRequest.
+        r"""Sets the instance_name of this ListLogLtsConfigsRequest.
 
         实例名称。默认为空。
 
@@ -186,7 +186,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLogLtsConfigsRequest.
+        r"""Gets the limit of this ListLogLtsConfigsRequest.
 
         查询记录数。默认10。
 
@@ -197,7 +197,7 @@ class ListLogLtsConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLogLtsConfigsRequest.
+        r"""Sets the limit of this ListLogLtsConfigsRequest.
 
         查询记录数。默认10。
 
@@ -208,7 +208,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLogLtsConfigsRequest.
+        r"""Gets the offset of this ListLogLtsConfigsRequest.
 
         索引位置，偏移量。默认0。
 
@@ -219,7 +219,7 @@ class ListLogLtsConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLogLtsConfigsRequest.
+        r"""Sets the offset of this ListLogLtsConfigsRequest.
 
         索引位置，偏移量。默认0。
 
@@ -230,7 +230,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListLogLtsConfigsRequest.
+        r"""Gets the sort of this ListLogLtsConfigsRequest.
 
         排序
 
@@ -241,7 +241,7 @@ class ListLogLtsConfigsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListLogLtsConfigsRequest.
+        r"""Sets the sort of this ListLogLtsConfigsRequest.
 
         排序
 
@@ -252,7 +252,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this ListLogLtsConfigsRequest.
+        r"""Gets the instance_status of this ListLogLtsConfigsRequest.
 
         实例状态
 
@@ -263,7 +263,7 @@ class ListLogLtsConfigsRequest:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this ListLogLtsConfigsRequest.
+        r"""Sets the instance_status of this ListLogLtsConfigsRequest.
 
         实例状态
 
@@ -274,7 +274,7 @@ class ListLogLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListLogLtsConfigsRequest.
+        r"""Gets the x_language of this ListLogLtsConfigsRequest.
 
         语言。
 
@@ -285,7 +285,7 @@ class ListLogLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListLogLtsConfigsRequest.
+        r"""Sets the x_language of this ListLogLtsConfigsRequest.
 
         语言。
 

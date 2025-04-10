@@ -27,7 +27,7 @@ class ShowGroupRequest:
     }
 
     def __init__(self, instance_id=None, group=None):
-        """ShowGroupRequest
+        r"""ShowGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowGroupRequest.
+        r"""Gets the instance_id of this ShowGroupRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowGroupRequest.
+        r"""Sets the instance_id of this ShowGroupRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowGroupRequest:
 
     @property
     def group(self):
-        """Gets the group of this ShowGroupRequest.
+        r"""Gets the group of this ShowGroupRequest.
 
         消费组名称。
 
@@ -81,7 +81,7 @@ class ShowGroupRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowGroupRequest.
+        r"""Sets the group of this ShowGroupRequest.
 
         消费组名称。
 

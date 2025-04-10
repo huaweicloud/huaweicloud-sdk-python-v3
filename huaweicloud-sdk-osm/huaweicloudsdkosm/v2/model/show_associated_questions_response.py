@@ -30,7 +30,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
     }
 
     def __init__(self, questions=None, error_code=None, error_msg=None):
-        """ShowAssociatedQuestionsResponse
+        r"""ShowAssociatedQuestionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
 
     @property
     def questions(self):
-        """Gets the questions of this ShowAssociatedQuestionsResponse.
+        r"""Gets the questions of this ShowAssociatedQuestionsResponse.
 
         问题列表
 
@@ -69,7 +69,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
 
     @questions.setter
     def questions(self, questions):
-        """Sets the questions of this ShowAssociatedQuestionsResponse.
+        r"""Sets the questions of this ShowAssociatedQuestionsResponse.
 
         问题列表
 
@@ -80,7 +80,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowAssociatedQuestionsResponse.
+        r"""Gets the error_code of this ShowAssociatedQuestionsResponse.
 
         错误码
 
@@ -91,7 +91,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowAssociatedQuestionsResponse.
+        r"""Sets the error_code of this ShowAssociatedQuestionsResponse.
 
         错误码
 
@@ -102,7 +102,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowAssociatedQuestionsResponse.
+        r"""Gets the error_msg of this ShowAssociatedQuestionsResponse.
 
         错误描述
 
@@ -113,7 +113,7 @@ class ShowAssociatedQuestionsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowAssociatedQuestionsResponse.
+        r"""Sets the error_msg of this ShowAssociatedQuestionsResponse.
 
         错误描述
 

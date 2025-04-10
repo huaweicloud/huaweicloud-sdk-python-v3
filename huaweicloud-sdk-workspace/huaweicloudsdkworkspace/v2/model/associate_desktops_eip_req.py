@@ -27,7 +27,7 @@ class AssociateDesktopsEipReq:
     }
 
     def __init__(self, eip_id=None, desktop_id=None):
-        """AssociateDesktopsEipReq
+        r"""AssociateDesktopsEipReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociateDesktopsEipReq:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this AssociateDesktopsEipReq.
+        r"""Gets the eip_id of this AssociateDesktopsEipReq.
 
         桌面绑定的Eip的id。
 
@@ -59,7 +59,7 @@ class AssociateDesktopsEipReq:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this AssociateDesktopsEipReq.
+        r"""Sets the eip_id of this AssociateDesktopsEipReq.
 
         桌面绑定的Eip的id。
 
@@ -70,7 +70,7 @@ class AssociateDesktopsEipReq:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this AssociateDesktopsEipReq.
+        r"""Gets the desktop_id of this AssociateDesktopsEipReq.
 
         桌面id。
 
@@ -81,7 +81,7 @@ class AssociateDesktopsEipReq:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this AssociateDesktopsEipReq.
+        r"""Sets the desktop_id of this AssociateDesktopsEipReq.
 
         桌面id。
 

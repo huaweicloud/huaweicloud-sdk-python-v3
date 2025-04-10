@@ -39,7 +39,7 @@ class ChatRequestMessage:
     }
 
     def __init__(self, case=None, chat_id=None, message=None, infer_end=None, meta_prompt=None, need_preprocess=None, user_id=None, task_parameters=None):
-        """ChatRequestMessage
+        r"""ChatRequestMessage
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ChatRequestMessage:
 
     @property
     def case(self):
-        """Gets the case of this ChatRequestMessage.
+        r"""Gets the case of this ChatRequestMessage.
 
         case
 
@@ -101,7 +101,7 @@ class ChatRequestMessage:
 
     @case.setter
     def case(self, case):
-        """Sets the case of this ChatRequestMessage.
+        r"""Sets the case of this ChatRequestMessage.
 
         case
 
@@ -112,7 +112,7 @@ class ChatRequestMessage:
 
     @property
     def chat_id(self):
-        """Gets the chat_id of this ChatRequestMessage.
+        r"""Gets the chat_id of this ChatRequestMessage.
 
         chat id
 
@@ -123,7 +123,7 @@ class ChatRequestMessage:
 
     @chat_id.setter
     def chat_id(self, chat_id):
-        """Sets the chat_id of this ChatRequestMessage.
+        r"""Sets the chat_id of this ChatRequestMessage.
 
         chat id
 
@@ -134,7 +134,7 @@ class ChatRequestMessage:
 
     @property
     def message(self):
-        """Gets the message of this ChatRequestMessage.
+        r"""Gets the message of this ChatRequestMessage.
 
         message
 
@@ -145,7 +145,7 @@ class ChatRequestMessage:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ChatRequestMessage.
+        r"""Sets the message of this ChatRequestMessage.
 
         message
 
@@ -156,7 +156,7 @@ class ChatRequestMessage:
 
     @property
     def infer_end(self):
-        """Gets the infer_end of this ChatRequestMessage.
+        r"""Gets the infer_end of this ChatRequestMessage.
 
         infer end
 
@@ -167,7 +167,7 @@ class ChatRequestMessage:
 
     @infer_end.setter
     def infer_end(self, infer_end):
-        """Sets the infer_end of this ChatRequestMessage.
+        r"""Sets the infer_end of this ChatRequestMessage.
 
         infer end
 
@@ -178,7 +178,7 @@ class ChatRequestMessage:
 
     @property
     def meta_prompt(self):
-        """Gets the meta_prompt of this ChatRequestMessage.
+        r"""Gets the meta_prompt of this ChatRequestMessage.
 
         prompt
 
@@ -189,7 +189,7 @@ class ChatRequestMessage:
 
     @meta_prompt.setter
     def meta_prompt(self, meta_prompt):
-        """Sets the meta_prompt of this ChatRequestMessage.
+        r"""Sets the meta_prompt of this ChatRequestMessage.
 
         prompt
 
@@ -200,7 +200,7 @@ class ChatRequestMessage:
 
     @property
     def need_preprocess(self):
-        """Gets the need_preprocess of this ChatRequestMessage.
+        r"""Gets the need_preprocess of this ChatRequestMessage.
 
         need or not
 
@@ -211,7 +211,7 @@ class ChatRequestMessage:
 
     @need_preprocess.setter
     def need_preprocess(self, need_preprocess):
-        """Sets the need_preprocess of this ChatRequestMessage.
+        r"""Sets the need_preprocess of this ChatRequestMessage.
 
         need or not
 
@@ -222,7 +222,7 @@ class ChatRequestMessage:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ChatRequestMessage.
+        r"""Gets the user_id of this ChatRequestMessage.
 
         user id
 
@@ -233,7 +233,7 @@ class ChatRequestMessage:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ChatRequestMessage.
+        r"""Sets the user_id of this ChatRequestMessage.
 
         user id
 
@@ -244,7 +244,7 @@ class ChatRequestMessage:
 
     @property
     def task_parameters(self):
-        """Gets the task_parameters of this ChatRequestMessage.
+        r"""Gets the task_parameters of this ChatRequestMessage.
 
         task parameters
 
@@ -255,7 +255,7 @@ class ChatRequestMessage:
 
     @task_parameters.setter
     def task_parameters(self, task_parameters):
-        """Sets the task_parameters of this ChatRequestMessage.
+        r"""Sets the task_parameters of this ChatRequestMessage.
 
         task parameters
 

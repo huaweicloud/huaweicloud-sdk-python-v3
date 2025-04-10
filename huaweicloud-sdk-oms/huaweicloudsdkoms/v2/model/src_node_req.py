@@ -43,7 +43,7 @@ class SrcNodeReq:
     }
 
     def __init__(self, cloud_type=None, region=None, ak=None, sk=None, json_auth_file=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
-        """SrcNodeReq
+        r"""SrcNodeReq
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SrcNodeReq:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this SrcNodeReq.
+        r"""Gets the cloud_type of this SrcNodeReq.
 
         源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Google、URLSource或者UCloud。默认值为Aliyun。
 
@@ -117,7 +117,7 @@ class SrcNodeReq:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this SrcNodeReq.
+        r"""Sets the cloud_type of this SrcNodeReq.
 
         源端云服务提供商，task_type为非url_list时，本参数为URLSource。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、Google、URLSource或者UCloud。默认值为Aliyun。
 
@@ -128,7 +128,7 @@ class SrcNodeReq:
 
     @property
     def region(self):
-        """Gets the region of this SrcNodeReq.
+        r"""Gets the region of this SrcNodeReq.
 
         源端桶所处的区域，task_type为非url_list时，本参数为必选。
 
@@ -139,7 +139,7 @@ class SrcNodeReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SrcNodeReq.
+        r"""Sets the region of this SrcNodeReq.
 
         源端桶所处的区域，task_type为非url_list时，本参数为必选。
 
@@ -150,7 +150,7 @@ class SrcNodeReq:
 
     @property
     def ak(self):
-        """Gets the ak of this SrcNodeReq.
+        r"""Gets the ak of this SrcNodeReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -161,7 +161,7 @@ class SrcNodeReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this SrcNodeReq.
+        r"""Sets the ak of this SrcNodeReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -172,7 +172,7 @@ class SrcNodeReq:
 
     @property
     def sk(self):
-        """Gets the sk of this SrcNodeReq.
+        r"""Gets the sk of this SrcNodeReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -183,7 +183,7 @@ class SrcNodeReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this SrcNodeReq.
+        r"""Sets the sk of this SrcNodeReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -194,7 +194,7 @@ class SrcNodeReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this SrcNodeReq.
+        r"""Gets the json_auth_file of this SrcNodeReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -205,7 +205,7 @@ class SrcNodeReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this SrcNodeReq.
+        r"""Sets the json_auth_file of this SrcNodeReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -216,7 +216,7 @@ class SrcNodeReq:
 
     @property
     def security_token(self):
-        """Gets the security_token of this SrcNodeReq.
+        r"""Gets the security_token of this SrcNodeReq.
 
         源端桶的临时Token（最大长度16384个字符）
 
@@ -227,7 +227,7 @@ class SrcNodeReq:
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this SrcNodeReq.
+        r"""Sets the security_token of this SrcNodeReq.
 
         源端桶的临时Token（最大长度16384个字符）
 
@@ -238,7 +238,7 @@ class SrcNodeReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SrcNodeReq.
+        r"""Gets the app_id of this SrcNodeReq.
 
         当源端为腾讯云时，需要填写此参数。
 
@@ -249,7 +249,7 @@ class SrcNodeReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SrcNodeReq.
+        r"""Sets the app_id of this SrcNodeReq.
 
         当源端为腾讯云时，需要填写此参数。
 
@@ -260,7 +260,7 @@ class SrcNodeReq:
 
     @property
     def bucket(self):
-        """Gets the bucket of this SrcNodeReq.
+        r"""Gets the bucket of this SrcNodeReq.
 
         源端桶的名称，task_type为非url_list时，本参数为必选。
 
@@ -271,7 +271,7 @@ class SrcNodeReq:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this SrcNodeReq.
+        r"""Sets the bucket of this SrcNodeReq.
 
         源端桶的名称，task_type为非url_list时，本参数为必选。
 
@@ -282,7 +282,7 @@ class SrcNodeReq:
 
     @property
     def object_key(self):
-        """Gets the object_key of this SrcNodeReq.
+        r"""Gets the object_key of this SrcNodeReq.
 
         任务类型为对象迁移任务时，表示待迁移对象名称（以“/”结尾的字符串代表待迁移的文件夹，非“/”结尾的字符串代表待迁移的文件。）； 任务类型为前缀迁移任务时，表示待迁移前缀。 整桶迁移时，此参数设置为[\"\"]。
 
@@ -293,7 +293,7 @@ class SrcNodeReq:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this SrcNodeReq.
+        r"""Sets the object_key of this SrcNodeReq.
 
         任务类型为对象迁移任务时，表示待迁移对象名称（以“/”结尾的字符串代表待迁移的文件夹，非“/”结尾的字符串代表待迁移的文件。）； 任务类型为前缀迁移任务时，表示待迁移前缀。 整桶迁移时，此参数设置为[\"\"]。
 
@@ -304,7 +304,7 @@ class SrcNodeReq:
 
     @property
     def list_file(self):
-        """Gets the list_file of this SrcNodeReq.
+        r"""Gets the list_file of this SrcNodeReq.
 
         :return: The list_file of this SrcNodeReq.
         :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
@@ -313,7 +313,7 @@ class SrcNodeReq:
 
     @list_file.setter
     def list_file(self, list_file):
-        """Sets the list_file of this SrcNodeReq.
+        r"""Sets the list_file of this SrcNodeReq.
 
         :param list_file: The list_file of this SrcNodeReq.
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`

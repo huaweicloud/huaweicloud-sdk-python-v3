@@ -29,7 +29,7 @@ class DetachSharedbwDict:
     }
 
     def __init__(self, name=None, size=None, charge_mode=None):
-        """DetachSharedbwDict
+        r"""DetachSharedbwDict
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DetachSharedbwDict:
 
     @property
     def name(self):
-        """Gets the name of this DetachSharedbwDict.
+        r"""Gets the name of this DetachSharedbwDict.
 
         - 功能说明：带宽名称
 
@@ -66,7 +66,7 @@ class DetachSharedbwDict:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DetachSharedbwDict.
+        r"""Sets the name of this DetachSharedbwDict.
 
         - 功能说明：带宽名称
 
@@ -77,7 +77,7 @@ class DetachSharedbwDict:
 
     @property
     def size(self):
-        """Gets the size of this DetachSharedbwDict.
+        r"""Gets the size of this DetachSharedbwDict.
 
         - 功能说明：带宽大小
 
@@ -88,7 +88,7 @@ class DetachSharedbwDict:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DetachSharedbwDict.
+        r"""Sets the size of this DetachSharedbwDict.
 
         - 功能说明：带宽大小
 
@@ -99,7 +99,7 @@ class DetachSharedbwDict:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this DetachSharedbwDict.
+        r"""Gets the charge_mode of this DetachSharedbwDict.
 
         - 功能说明：带宽计费模式
 
@@ -110,7 +110,7 @@ class DetachSharedbwDict:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this DetachSharedbwDict.
+        r"""Sets the charge_mode of this DetachSharedbwDict.
 
         - 功能说明：带宽计费模式
 

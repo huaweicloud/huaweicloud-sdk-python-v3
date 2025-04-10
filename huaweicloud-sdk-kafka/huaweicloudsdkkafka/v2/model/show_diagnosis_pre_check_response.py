@@ -26,7 +26,7 @@ class ShowDiagnosisPreCheckResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowDiagnosisPreCheckResponse
+        r"""ShowDiagnosisPreCheckResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDiagnosisPreCheckResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowDiagnosisPreCheckResponse.
+        r"""Gets the body of this ShowDiagnosisPreCheckResponse.
 
         Kafka消息积压诊断预检查返回对象
 
@@ -55,7 +55,7 @@ class ShowDiagnosisPreCheckResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDiagnosisPreCheckResponse.
+        r"""Sets the body of this ShowDiagnosisPreCheckResponse.
 
         Kafka消息积压诊断预检查返回对象
 

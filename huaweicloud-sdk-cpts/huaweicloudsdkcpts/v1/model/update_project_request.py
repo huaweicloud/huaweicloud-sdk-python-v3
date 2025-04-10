@@ -27,7 +27,7 @@ class UpdateProjectRequest:
     }
 
     def __init__(self, test_suite_id=None, body=None):
-        """UpdateProjectRequest
+        r"""UpdateProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateProjectRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this UpdateProjectRequest.
+        r"""Gets the test_suite_id of this UpdateProjectRequest.
 
         测试工程id
 
@@ -60,7 +60,7 @@ class UpdateProjectRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this UpdateProjectRequest.
+        r"""Sets the test_suite_id of this UpdateProjectRequest.
 
         测试工程id
 
@@ -71,7 +71,7 @@ class UpdateProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProjectRequest.
+        r"""Gets the body of this UpdateProjectRequest.
 
         :return: The body of this UpdateProjectRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequestBody`
@@ -80,7 +80,7 @@ class UpdateProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProjectRequest.
+        r"""Sets the body of this UpdateProjectRequest.
 
         :param body: The body of this UpdateProjectRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequestBody`

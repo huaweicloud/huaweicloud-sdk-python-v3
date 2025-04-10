@@ -29,7 +29,7 @@ class ListDiagnoseRecordsRequest:
     }
 
     def __init__(self, page_size=None, page_no=None, type=None):
-        """ListDiagnoseRecordsRequest
+        r"""ListDiagnoseRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListDiagnoseRecordsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListDiagnoseRecordsRequest.
+        r"""Gets the page_size of this ListDiagnoseRecordsRequest.
 
         单页大小
 
@@ -68,7 +68,7 @@ class ListDiagnoseRecordsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListDiagnoseRecordsRequest.
+        r"""Sets the page_size of this ListDiagnoseRecordsRequest.
 
         单页大小
 
@@ -79,7 +79,7 @@ class ListDiagnoseRecordsRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListDiagnoseRecordsRequest.
+        r"""Gets the page_no of this ListDiagnoseRecordsRequest.
 
         页码
 
@@ -90,7 +90,7 @@ class ListDiagnoseRecordsRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListDiagnoseRecordsRequest.
+        r"""Sets the page_no of this ListDiagnoseRecordsRequest.
 
         页码
 
@@ -101,7 +101,7 @@ class ListDiagnoseRecordsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDiagnoseRecordsRequest.
+        r"""Gets the type of this ListDiagnoseRecordsRequest.
 
         任务类型，例如 ecs诊断任务 1，rds诊断任务 2
 
@@ -112,7 +112,7 @@ class ListDiagnoseRecordsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDiagnoseRecordsRequest.
+        r"""Sets the type of this ListDiagnoseRecordsRequest.
 
         任务类型，例如 ecs诊断任务 1，rds诊断任务 2
 

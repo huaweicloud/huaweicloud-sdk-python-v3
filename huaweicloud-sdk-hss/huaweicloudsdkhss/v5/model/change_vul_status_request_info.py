@@ -39,11 +39,11 @@ class ChangeVulStatusRequestInfo:
     }
 
     def __init__(self, operate_type=None, remark=None, select_type=None, type=None, data_list=None, host_data_list=None, backup_info_id=None, custom_backup_hosts=None):
-        """ChangeVulStatusRequestInfo
+        r"""ChangeVulStatusRequestInfo
 
         The model defined in huaweicloud sdk
 
-        :param operate_type: 操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        :param operate_type: 操作类型，包含如下几种： - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
         :type operate_type: str
         :param remark: 备注
         :type remark: str
@@ -91,9 +91,9 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this ChangeVulStatusRequestInfo.
+        r"""Gets the operate_type of this ChangeVulStatusRequestInfo.
 
-        操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        操作类型，包含如下几种： - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
 
         :return: The operate_type of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -102,9 +102,9 @@ class ChangeVulStatusRequestInfo:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this ChangeVulStatusRequestInfo.
+        r"""Sets the operate_type of this ChangeVulStatusRequestInfo.
 
-        操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        操作类型，包含如下几种： - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
 
         :param operate_type: The operate_type of this ChangeVulStatusRequestInfo.
         :type operate_type: str
@@ -113,7 +113,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ChangeVulStatusRequestInfo.
+        r"""Gets the remark of this ChangeVulStatusRequestInfo.
 
         备注
 
@@ -124,7 +124,7 @@ class ChangeVulStatusRequestInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ChangeVulStatusRequestInfo.
+        r"""Sets the remark of this ChangeVulStatusRequestInfo.
 
         备注
 
@@ -135,7 +135,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def select_type(self):
-        """Gets the select_type of this ChangeVulStatusRequestInfo.
+        r"""Gets the select_type of this ChangeVulStatusRequestInfo.
 
         选择全部漏洞类型 - all_vul : 选择全部漏洞 - all_host : 选择全部主机漏洞
 
@@ -146,7 +146,7 @@ class ChangeVulStatusRequestInfo:
 
     @select_type.setter
     def select_type(self, select_type):
-        """Sets the select_type of this ChangeVulStatusRequestInfo.
+        r"""Sets the select_type of this ChangeVulStatusRequestInfo.
 
         选择全部漏洞类型 - all_vul : 选择全部漏洞 - all_host : 选择全部主机漏洞
 
@@ -157,7 +157,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def type(self):
-        """Gets the type of this ChangeVulStatusRequestInfo.
+        r"""Gets the type of this ChangeVulStatusRequestInfo.
 
         漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
@@ -168,7 +168,7 @@ class ChangeVulStatusRequestInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChangeVulStatusRequestInfo.
+        r"""Sets the type of this ChangeVulStatusRequestInfo.
 
         漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
@@ -179,7 +179,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def data_list(self):
-        """Gets the data_list of this ChangeVulStatusRequestInfo.
+        r"""Gets the data_list of this ChangeVulStatusRequestInfo.
 
         漏洞列表
 
@@ -190,7 +190,7 @@ class ChangeVulStatusRequestInfo:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ChangeVulStatusRequestInfo.
+        r"""Sets the data_list of this ChangeVulStatusRequestInfo.
 
         漏洞列表
 
@@ -201,7 +201,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def host_data_list(self):
-        """Gets the host_data_list of this ChangeVulStatusRequestInfo.
+        r"""Gets the host_data_list of this ChangeVulStatusRequestInfo.
 
         主机维度漏洞列表
 
@@ -212,7 +212,7 @@ class ChangeVulStatusRequestInfo:
 
     @host_data_list.setter
     def host_data_list(self, host_data_list):
-        """Sets the host_data_list of this ChangeVulStatusRequestInfo.
+        r"""Sets the host_data_list of this ChangeVulStatusRequestInfo.
 
         主机维度漏洞列表
 
@@ -223,7 +223,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def backup_info_id(self):
-        """Gets the backup_info_id of this ChangeVulStatusRequestInfo.
+        r"""Gets the backup_info_id of this ChangeVulStatusRequestInfo.
 
         本次漏洞处理的备份信息id，若不传该参数，则不进行备份
 
@@ -234,7 +234,7 @@ class ChangeVulStatusRequestInfo:
 
     @backup_info_id.setter
     def backup_info_id(self, backup_info_id):
-        """Sets the backup_info_id of this ChangeVulStatusRequestInfo.
+        r"""Sets the backup_info_id of this ChangeVulStatusRequestInfo.
 
         本次漏洞处理的备份信息id，若不传该参数，则不进行备份
 
@@ -245,7 +245,7 @@ class ChangeVulStatusRequestInfo:
 
     @property
     def custom_backup_hosts(self):
-        """Gets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
+        r"""Gets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
 
         自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
 
@@ -256,7 +256,7 @@ class ChangeVulStatusRequestInfo:
 
     @custom_backup_hosts.setter
     def custom_backup_hosts(self, custom_backup_hosts):
-        """Sets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
+        r"""Sets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
 
         自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
 

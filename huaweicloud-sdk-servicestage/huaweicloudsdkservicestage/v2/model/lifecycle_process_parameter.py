@@ -31,7 +31,7 @@ class LifecycleProcessParameter:
     }
 
     def __init__(self, command=None, host=None, port=None, path=None):
-        """LifecycleProcessParameter
+        r"""LifecycleProcessParameter
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LifecycleProcessParameter:
 
     @property
     def command(self):
-        """Gets the command of this LifecycleProcessParameter.
+        r"""Gets the command of this LifecycleProcessParameter.
 
         命令参数，适用于command类型
 
@@ -75,7 +75,7 @@ class LifecycleProcessParameter:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this LifecycleProcessParameter.
+        r"""Sets the command of this LifecycleProcessParameter.
 
         命令参数，适用于command类型
 
@@ -86,7 +86,7 @@ class LifecycleProcessParameter:
 
     @property
     def host(self):
-        """Gets the host of this LifecycleProcessParameter.
+        r"""Gets the host of this LifecycleProcessParameter.
 
         默认为POD实例的IP地址。也可以自己指定。适用于http类型。
 
@@ -97,7 +97,7 @@ class LifecycleProcessParameter:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this LifecycleProcessParameter.
+        r"""Sets the host of this LifecycleProcessParameter.
 
         默认为POD实例的IP地址。也可以自己指定。适用于http类型。
 
@@ -108,7 +108,7 @@ class LifecycleProcessParameter:
 
     @property
     def port(self):
-        """Gets the port of this LifecycleProcessParameter.
+        r"""Gets the port of this LifecycleProcessParameter.
 
         端口号，适用于http类型。
 
@@ -119,7 +119,7 @@ class LifecycleProcessParameter:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this LifecycleProcessParameter.
+        r"""Sets the port of this LifecycleProcessParameter.
 
         端口号，适用于http类型。
 
@@ -130,7 +130,7 @@ class LifecycleProcessParameter:
 
     @property
     def path(self):
-        """Gets the path of this LifecycleProcessParameter.
+        r"""Gets the path of this LifecycleProcessParameter.
 
         请求url，适用于http类型。
 
@@ -141,7 +141,7 @@ class LifecycleProcessParameter:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this LifecycleProcessParameter.
+        r"""Sets the path of this LifecycleProcessParameter.
 
         请求url，适用于http类型。
 

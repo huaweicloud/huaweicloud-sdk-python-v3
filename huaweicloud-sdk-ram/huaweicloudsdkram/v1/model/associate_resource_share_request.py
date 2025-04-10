@@ -30,7 +30,7 @@ class AssociateResourceShareRequest:
     }
 
     def __init__(self, x_security_token=None, resource_share_id=None, body=None):
-        """AssociateResourceShareRequest
+        r"""AssociateResourceShareRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AssociateResourceShareRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this AssociateResourceShareRequest.
+        r"""Gets the x_security_token of this AssociateResourceShareRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class AssociateResourceShareRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this AssociateResourceShareRequest.
+        r"""Sets the x_security_token of this AssociateResourceShareRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class AssociateResourceShareRequest:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this AssociateResourceShareRequest.
+        r"""Gets the resource_share_id of this AssociateResourceShareRequest.
 
         资源共享实例的ID。
 
@@ -90,7 +90,7 @@ class AssociateResourceShareRequest:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this AssociateResourceShareRequest.
+        r"""Sets the resource_share_id of this AssociateResourceShareRequest.
 
         资源共享实例的ID。
 
@@ -101,7 +101,7 @@ class AssociateResourceShareRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateResourceShareRequest.
+        r"""Gets the body of this AssociateResourceShareRequest.
 
         :return: The body of this AssociateResourceShareRequest.
         :rtype: :class:`huaweicloudsdkram.v1.ResourceShareAssociationReqBody`
@@ -110,7 +110,7 @@ class AssociateResourceShareRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateResourceShareRequest.
+        r"""Sets the body of this AssociateResourceShareRequest.
 
         :param body: The body of this AssociateResourceShareRequest.
         :type body: :class:`huaweicloudsdkram.v1.ResourceShareAssociationReqBody`

@@ -33,7 +33,7 @@ class HttpFirewallInstanceListResponseData:
     }
 
     def __init__(self, limit=None, offset=None, project_id=None, total=None, records=None):
-        """HttpFirewallInstanceListResponseData
+        r"""HttpFirewallInstanceListResponseData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class HttpFirewallInstanceListResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this HttpFirewallInstanceListResponseData.
+        r"""Gets the limit of this HttpFirewallInstanceListResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -82,7 +82,7 @@ class HttpFirewallInstanceListResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this HttpFirewallInstanceListResponseData.
+        r"""Sets the limit of this HttpFirewallInstanceListResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -93,7 +93,7 @@ class HttpFirewallInstanceListResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this HttpFirewallInstanceListResponseData.
+        r"""Gets the offset of this HttpFirewallInstanceListResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -104,7 +104,7 @@ class HttpFirewallInstanceListResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this HttpFirewallInstanceListResponseData.
+        r"""Sets the offset of this HttpFirewallInstanceListResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -115,7 +115,7 @@ class HttpFirewallInstanceListResponseData:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HttpFirewallInstanceListResponseData.
+        r"""Gets the project_id of this HttpFirewallInstanceListResponseData.
 
         租户项目ID
 
@@ -126,7 +126,7 @@ class HttpFirewallInstanceListResponseData:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HttpFirewallInstanceListResponseData.
+        r"""Sets the project_id of this HttpFirewallInstanceListResponseData.
 
         租户项目ID
 
@@ -137,7 +137,7 @@ class HttpFirewallInstanceListResponseData:
 
     @property
     def total(self):
-        """Gets the total of this HttpFirewallInstanceListResponseData.
+        r"""Gets the total of this HttpFirewallInstanceListResponseData.
 
         防火墙总数量
 
@@ -148,7 +148,7 @@ class HttpFirewallInstanceListResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this HttpFirewallInstanceListResponseData.
+        r"""Sets the total of this HttpFirewallInstanceListResponseData.
 
         防火墙总数量
 
@@ -159,7 +159,7 @@ class HttpFirewallInstanceListResponseData:
 
     @property
     def records(self):
-        """Gets the records of this HttpFirewallInstanceListResponseData.
+        r"""Gets the records of this HttpFirewallInstanceListResponseData.
 
         查询防火墙列表记录
 
@@ -170,7 +170,7 @@ class HttpFirewallInstanceListResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this HttpFirewallInstanceListResponseData.
+        r"""Sets the records of this HttpFirewallInstanceListResponseData.
 
         查询防火墙列表记录
 

@@ -30,7 +30,7 @@ class RunConstituencyParserResponse(SdkResponse):
     }
 
     def __init__(self, tree=None, error_code=None, error_msg=None):
-        """RunConstituencyParserResponse
+        r"""RunConstituencyParserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunConstituencyParserResponse(SdkResponse):
 
     @property
     def tree(self):
-        """Gets the tree of this RunConstituencyParserResponse.
+        r"""Gets the tree of this RunConstituencyParserResponse.
 
         成分句法分析结果，用嵌套括号的形式表示一棵树。括号内的第一个元素为子树的标签，若是叶子节点则用符号_代替。第二个元素为子树，若是叶子节点则为字符串。
 
@@ -69,7 +69,7 @@ class RunConstituencyParserResponse(SdkResponse):
 
     @tree.setter
     def tree(self, tree):
-        """Sets the tree of this RunConstituencyParserResponse.
+        r"""Sets the tree of this RunConstituencyParserResponse.
 
         成分句法分析结果，用嵌套括号的形式表示一棵树。括号内的第一个元素为子树的标签，若是叶子节点则用符号_代替。第二个元素为子树，若是叶子节点则为字符串。
 
@@ -80,7 +80,7 @@ class RunConstituencyParserResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunConstituencyParserResponse.
+        r"""Gets the error_code of this RunConstituencyParserResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunConstituencyParserResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunConstituencyParserResponse.
+        r"""Sets the error_code of this RunConstituencyParserResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunConstituencyParserResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunConstituencyParserResponse.
+        r"""Gets the error_msg of this RunConstituencyParserResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunConstituencyParserResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunConstituencyParserResponse.
+        r"""Sets the error_msg of this RunConstituencyParserResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

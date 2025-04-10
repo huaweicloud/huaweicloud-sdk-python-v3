@@ -25,7 +25,7 @@ class DetachGroupPolicyReqBody:
     }
 
     def __init__(self, group_id=None):
-        """DetachGroupPolicyReqBody
+        r"""DetachGroupPolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetachGroupPolicyReqBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DetachGroupPolicyReqBody.
+        r"""Gets the group_id of this DetachGroupPolicyReqBody.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class DetachGroupPolicyReqBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DetachGroupPolicyReqBody.
+        r"""Sets the group_id of this DetachGroupPolicyReqBody.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

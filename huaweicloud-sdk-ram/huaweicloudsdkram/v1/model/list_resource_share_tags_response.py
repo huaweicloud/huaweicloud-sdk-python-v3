@@ -28,7 +28,7 @@ class ListResourceShareTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, page_info=None):
-        """ListResourceShareTagsResponse
+        r"""ListResourceShareTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceShareTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourceShareTagsResponse.
+        r"""Gets the tags of this ListResourceShareTagsResponse.
 
         一个或多个标签键值对的列表。标签键必须存在，而不是空字符串。标签值必须存在，但可以是空字符串。
 
@@ -62,7 +62,7 @@ class ListResourceShareTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourceShareTagsResponse.
+        r"""Sets the tags of this ListResourceShareTagsResponse.
 
         一个或多个标签键值对的列表。标签键必须存在，而不是空字符串。标签值必须存在，但可以是空字符串。
 
@@ -73,7 +73,7 @@ class ListResourceShareTagsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListResourceShareTagsResponse.
+        r"""Gets the page_info of this ListResourceShareTagsResponse.
 
         :return: The page_info of this ListResourceShareTagsResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfoMarkerByKey`
@@ -82,7 +82,7 @@ class ListResourceShareTagsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListResourceShareTagsResponse.
+        r"""Sets the page_info of this ListResourceShareTagsResponse.
 
         :param page_info: The page_info of this ListResourceShareTagsResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfoMarkerByKey`

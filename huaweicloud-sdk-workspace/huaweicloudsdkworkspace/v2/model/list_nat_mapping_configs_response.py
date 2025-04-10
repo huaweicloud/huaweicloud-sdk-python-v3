@@ -32,7 +32,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
     }
 
     def __init__(self, site_id=None, nat_on=None, vag_ips=None, nat_vag_maps=None):
-        """ListNatMappingConfigsResponse
+        r"""ListNatMappingConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListNatMappingConfigsResponse.
+        r"""Gets the site_id of this ListNatMappingConfigsResponse.
 
         站点ID。
 
@@ -76,7 +76,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListNatMappingConfigsResponse.
+        r"""Sets the site_id of this ListNatMappingConfigsResponse.
 
         站点ID。
 
@@ -87,7 +87,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @property
     def nat_on(self):
-        """Gets the nat_on of this ListNatMappingConfigsResponse.
+        r"""Gets the nat_on of this ListNatMappingConfigsResponse.
 
         是否开启nat映射。
 
@@ -98,7 +98,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @nat_on.setter
     def nat_on(self, nat_on):
-        """Sets the nat_on of this ListNatMappingConfigsResponse.
+        r"""Sets the nat_on of this ListNatMappingConfigsResponse.
 
         是否开启nat映射。
 
@@ -109,7 +109,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @property
     def vag_ips(self):
-        """Gets the vag_ips of this ListNatMappingConfigsResponse.
+        r"""Gets the vag_ips of this ListNatMappingConfigsResponse.
 
         vag Ip列表。
 
@@ -120,7 +120,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @vag_ips.setter
     def vag_ips(self, vag_ips):
-        """Sets the vag_ips of this ListNatMappingConfigsResponse.
+        r"""Sets the vag_ips of this ListNatMappingConfigsResponse.
 
         vag Ip列表。
 
@@ -131,7 +131,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @property
     def nat_vag_maps(self):
-        """Gets the nat_vag_maps of this ListNatMappingConfigsResponse.
+        r"""Gets the nat_vag_maps of this ListNatMappingConfigsResponse.
 
         NAT映射配置表。
 
@@ -142,7 +142,7 @@ class ListNatMappingConfigsResponse(SdkResponse):
 
     @nat_vag_maps.setter
     def nat_vag_maps(self, nat_vag_maps):
-        """Sets the nat_vag_maps of this ListNatMappingConfigsResponse.
+        r"""Sets the nat_vag_maps of this ListNatMappingConfigsResponse.
 
         NAT映射配置表。
 

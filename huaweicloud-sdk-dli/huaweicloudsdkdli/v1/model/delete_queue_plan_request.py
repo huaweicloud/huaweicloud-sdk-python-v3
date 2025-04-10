@@ -27,7 +27,7 @@ class DeleteQueuePlanRequest:
     }
 
     def __init__(self, plan_id=None, queue_name=None):
-        """DeleteQueuePlanRequest
+        r"""DeleteQueuePlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteQueuePlanRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this DeleteQueuePlanRequest.
+        r"""Gets the plan_id of this DeleteQueuePlanRequest.
 
         待删除的队列扩缩容计划的ID
 
@@ -59,7 +59,7 @@ class DeleteQueuePlanRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this DeleteQueuePlanRequest.
+        r"""Sets the plan_id of this DeleteQueuePlanRequest.
 
         待删除的队列扩缩容计划的ID
 
@@ -70,7 +70,7 @@ class DeleteQueuePlanRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this DeleteQueuePlanRequest.
+        r"""Gets the queue_name of this DeleteQueuePlanRequest.
 
         待删除定时扩缩计划的队列名称
 
@@ -81,7 +81,7 @@ class DeleteQueuePlanRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this DeleteQueuePlanRequest.
+        r"""Sets the queue_name of this DeleteQueuePlanRequest.
 
         待删除定时扩缩计划的队列名称
 

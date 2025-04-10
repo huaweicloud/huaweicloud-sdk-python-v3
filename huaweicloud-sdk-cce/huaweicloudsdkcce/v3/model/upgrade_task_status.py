@@ -29,7 +29,7 @@ class UpgradeTaskStatus:
     }
 
     def __init__(self, phase=None, progress=None, completion_time=None):
-        """UpgradeTaskStatus
+        r"""UpgradeTaskStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpgradeTaskStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this UpgradeTaskStatus.
+        r"""Gets the phase of this UpgradeTaskStatus.
 
         升级任务状态. > Init：初始化 > Queuing：等待 > Running：运行中 > Pause：暂停 > Success：成功 > Failed：失败 
 
@@ -68,7 +68,7 @@ class UpgradeTaskStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this UpgradeTaskStatus.
+        r"""Sets the phase of this UpgradeTaskStatus.
 
         升级任务状态. > Init：初始化 > Queuing：等待 > Running：运行中 > Pause：暂停 > Success：成功 > Failed：失败 
 
@@ -79,7 +79,7 @@ class UpgradeTaskStatus:
 
     @property
     def progress(self):
-        """Gets the progress of this UpgradeTaskStatus.
+        r"""Gets the progress of this UpgradeTaskStatus.
 
         升级任务进度
 
@@ -90,7 +90,7 @@ class UpgradeTaskStatus:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this UpgradeTaskStatus.
+        r"""Sets the progress of this UpgradeTaskStatus.
 
         升级任务进度
 
@@ -101,7 +101,7 @@ class UpgradeTaskStatus:
 
     @property
     def completion_time(self):
-        """Gets the completion_time of this UpgradeTaskStatus.
+        r"""Gets the completion_time of this UpgradeTaskStatus.
 
         升级任务结束时间
 
@@ -112,7 +112,7 @@ class UpgradeTaskStatus:
 
     @completion_time.setter
     def completion_time(self, completion_time):
-        """Sets the completion_time of this UpgradeTaskStatus.
+        r"""Sets the completion_time of this UpgradeTaskStatus.
 
         升级任务结束时间
 

@@ -27,7 +27,7 @@ class CreateClusterResp:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateClusterResp
+        r"""CreateClusterResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateClusterResp:
 
     @property
     def id(self):
-        """Gets the id of this CreateClusterResp.
+        r"""Gets the id of this CreateClusterResp.
 
         集群ID。
 
@@ -61,7 +61,7 @@ class CreateClusterResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateClusterResp.
+        r"""Sets the id of this CreateClusterResp.
 
         集群ID。
 
@@ -72,7 +72,7 @@ class CreateClusterResp:
 
     @property
     def name(self):
-        """Gets the name of this CreateClusterResp.
+        r"""Gets the name of this CreateClusterResp.
 
         集群名称。
 
@@ -83,7 +83,7 @@ class CreateClusterResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateClusterResp.
+        r"""Sets the name of this CreateClusterResp.
 
         集群名称。
 

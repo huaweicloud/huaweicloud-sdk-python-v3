@@ -29,7 +29,7 @@ class CertificatesResource:
     }
 
     def __init__(self, id=None, name=None, type=None):
-        """CertificatesResource
+        r"""CertificatesResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CertificatesResource:
 
     @property
     def id(self):
-        """Gets the id of this CertificatesResource.
+        r"""Gets the id of this CertificatesResource.
 
         证书ID。
 
@@ -68,7 +68,7 @@ class CertificatesResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertificatesResource.
+        r"""Sets the id of this CertificatesResource.
 
         证书ID。
 
@@ -79,7 +79,7 @@ class CertificatesResource:
 
     @property
     def name(self):
-        """Gets the name of this CertificatesResource.
+        r"""Gets the name of this CertificatesResource.
 
         证书名称。
 
@@ -90,7 +90,7 @@ class CertificatesResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertificatesResource.
+        r"""Sets the name of this CertificatesResource.
 
         证书名称。
 
@@ -101,7 +101,7 @@ class CertificatesResource:
 
     @property
     def type(self):
-        """Gets the type of this CertificatesResource.
+        r"""Gets the type of this CertificatesResource.
 
         SL证书的类型。分为服务器证书(server)、CA证书(client)。
 
@@ -112,7 +112,7 @@ class CertificatesResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CertificatesResource.
+        r"""Sets the type of this CertificatesResource.
 
         SL证书的类型。分为服务器证书(server)、CA证书(client)。
 

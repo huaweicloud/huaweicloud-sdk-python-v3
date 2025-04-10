@@ -30,7 +30,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, smart_live_jobs=None, x_request_id=None):
-        """ListSmartLiveJobsResponse
+        r"""ListSmartLiveJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSmartLiveJobsResponse.
+        r"""Gets the count of this ListSmartLiveJobsResponse.
 
         **参数解释**： 数字人直播任务总数。
 
@@ -69,7 +69,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSmartLiveJobsResponse.
+        r"""Sets the count of this ListSmartLiveJobsResponse.
 
         **参数解释**： 数字人直播任务总数。
 
@@ -80,7 +80,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
     @property
     def smart_live_jobs(self):
-        """Gets the smart_live_jobs of this ListSmartLiveJobsResponse.
+        r"""Gets the smart_live_jobs of this ListSmartLiveJobsResponse.
 
         数字人直播任务列表。
 
@@ -91,7 +91,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
     @smart_live_jobs.setter
     def smart_live_jobs(self, smart_live_jobs):
-        """Sets the smart_live_jobs of this ListSmartLiveJobsResponse.
+        r"""Sets the smart_live_jobs of this ListSmartLiveJobsResponse.
 
         数字人直播任务列表。
 
@@ -102,7 +102,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSmartLiveJobsResponse.
+        r"""Gets the x_request_id of this ListSmartLiveJobsResponse.
 
         :return: The x_request_id of this ListSmartLiveJobsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSmartLiveJobsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSmartLiveJobsResponse.
+        r"""Sets the x_request_id of this ListSmartLiveJobsResponse.
 
         :param x_request_id: The x_request_id of this ListSmartLiveJobsResponse.
         :type x_request_id: str

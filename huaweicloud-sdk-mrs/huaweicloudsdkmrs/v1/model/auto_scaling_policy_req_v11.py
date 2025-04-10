@@ -27,7 +27,7 @@ class AutoScalingPolicyReqV11:
     }
 
     def __init__(self, node_group=None, auto_scaling_policy=None):
-        """AutoScalingPolicyReqV11
+        r"""AutoScalingPolicyReqV11
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AutoScalingPolicyReqV11:
 
     @property
     def node_group(self):
-        """Gets the node_group of this AutoScalingPolicyReqV11.
+        r"""Gets the node_group of this AutoScalingPolicyReqV11.
 
         弹性伸缩规则适用的节点类型，当前只支持task节点。
 
@@ -59,7 +59,7 @@ class AutoScalingPolicyReqV11:
 
     @node_group.setter
     def node_group(self, node_group):
-        """Sets the node_group of this AutoScalingPolicyReqV11.
+        r"""Sets the node_group of this AutoScalingPolicyReqV11.
 
         弹性伸缩规则适用的节点类型，当前只支持task节点。
 
@@ -70,7 +70,7 @@ class AutoScalingPolicyReqV11:
 
     @property
     def auto_scaling_policy(self):
-        """Gets the auto_scaling_policy of this AutoScalingPolicyReqV11.
+        r"""Gets the auto_scaling_policy of this AutoScalingPolicyReqV11.
 
         :return: The auto_scaling_policy of this AutoScalingPolicyReqV11.
         :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
@@ -79,7 +79,7 @@ class AutoScalingPolicyReqV11:
 
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
-        """Sets the auto_scaling_policy of this AutoScalingPolicyReqV11.
+        r"""Sets the auto_scaling_policy of this AutoScalingPolicyReqV11.
 
         :param auto_scaling_policy: The auto_scaling_policy of this AutoScalingPolicyReqV11.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`

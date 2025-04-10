@@ -27,7 +27,7 @@ class DeleteClickHouseLtsConfigRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """DeleteClickHouseLtsConfigRequest
+        r"""DeleteClickHouseLtsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteClickHouseLtsConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteClickHouseLtsConfigRequest.
+        r"""Gets the x_language of this DeleteClickHouseLtsConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -61,7 +61,7 @@ class DeleteClickHouseLtsConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteClickHouseLtsConfigRequest.
+        r"""Sets the x_language of this DeleteClickHouseLtsConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -72,7 +72,7 @@ class DeleteClickHouseLtsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteClickHouseLtsConfigRequest.
+        r"""Gets the body of this DeleteClickHouseLtsConfigRequest.
 
         :return: The body of this DeleteClickHouseLtsConfigRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteChLtsConfigRequestBody`
@@ -81,7 +81,7 @@ class DeleteClickHouseLtsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteClickHouseLtsConfigRequest.
+        r"""Sets the body of this DeleteClickHouseLtsConfigRequest.
 
         :param body: The body of this DeleteClickHouseLtsConfigRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteChLtsConfigRequestBody`

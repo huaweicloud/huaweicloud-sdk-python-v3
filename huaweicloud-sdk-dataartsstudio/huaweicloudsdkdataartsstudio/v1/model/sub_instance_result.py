@@ -31,7 +31,7 @@ class SubInstanceResult:
     }
 
     def __init__(self, sub_rule_id=None, sub_instance_instance_id=None, abnormal_table_status=None, results=None):
-        """SubInstanceResult
+        r"""SubInstanceResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SubInstanceResult:
 
     @property
     def sub_rule_id(self):
-        """Gets the sub_rule_id of this SubInstanceResult.
+        r"""Gets the sub_rule_id of this SubInstanceResult.
 
         子规则ID
 
@@ -75,7 +75,7 @@ class SubInstanceResult:
 
     @sub_rule_id.setter
     def sub_rule_id(self, sub_rule_id):
-        """Sets the sub_rule_id of this SubInstanceResult.
+        r"""Sets the sub_rule_id of this SubInstanceResult.
 
         子规则ID
 
@@ -86,7 +86,7 @@ class SubInstanceResult:
 
     @property
     def sub_instance_instance_id(self):
-        """Gets the sub_instance_instance_id of this SubInstanceResult.
+        r"""Gets the sub_instance_instance_id of this SubInstanceResult.
 
         子规则实例ID
 
@@ -97,7 +97,7 @@ class SubInstanceResult:
 
     @sub_instance_instance_id.setter
     def sub_instance_instance_id(self, sub_instance_instance_id):
-        """Sets the sub_instance_instance_id of this SubInstanceResult.
+        r"""Sets the sub_instance_instance_id of this SubInstanceResult.
 
         子规则实例ID
 
@@ -108,7 +108,7 @@ class SubInstanceResult:
 
     @property
     def abnormal_table_status(self):
-        """Gets the abnormal_table_status of this SubInstanceResult.
+        r"""Gets the abnormal_table_status of this SubInstanceResult.
 
         异常表任务状态 UNSUPPORTED:不支持异常表,READY：准备中,RUNNING：运行中,FAILED：失败,SUCCESS：成功
 
@@ -119,7 +119,7 @@ class SubInstanceResult:
 
     @abnormal_table_status.setter
     def abnormal_table_status(self, abnormal_table_status):
-        """Sets the abnormal_table_status of this SubInstanceResult.
+        r"""Sets the abnormal_table_status of this SubInstanceResult.
 
         异常表任务状态 UNSUPPORTED:不支持异常表,READY：准备中,RUNNING：运行中,FAILED：失败,SUCCESS：成功
 
@@ -130,7 +130,7 @@ class SubInstanceResult:
 
     @property
     def results(self):
-        """Gets the results of this SubInstanceResult.
+        r"""Gets the results of this SubInstanceResult.
 
         结果集
 
@@ -141,7 +141,7 @@ class SubInstanceResult:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this SubInstanceResult.
+        r"""Sets the results of this SubInstanceResult.
 
         结果集
 

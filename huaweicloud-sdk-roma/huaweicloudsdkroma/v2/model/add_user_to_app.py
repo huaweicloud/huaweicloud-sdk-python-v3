@@ -25,7 +25,7 @@ class AddUserToApp:
     }
 
     def __init__(self, users=None):
-        """AddUserToApp
+        r"""AddUserToApp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddUserToApp:
 
     @property
     def users(self):
-        """Gets the users of this AddUserToApp.
+        r"""Gets the users of this AddUserToApp.
 
         要添加的用户成员列表，空列表时代表清空应用的所有成员
 
@@ -54,7 +54,7 @@ class AddUserToApp:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this AddUserToApp.
+        r"""Sets the users of this AddUserToApp.
 
         要添加的用户成员列表，空列表时代表清空应用的所有成员
 

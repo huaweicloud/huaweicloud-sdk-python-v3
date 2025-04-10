@@ -59,7 +59,7 @@ class NodeGroupV10:
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, node_spec_id=None, vm_product_id=None, vm_spec_code=None, node_product_id=None, root_volume_size=None, root_volume_product_id=None, root_volume_type=None, root_volume_resource_spec_code=None, root_volume_resource_type=None, data_volume_type=None, data_volume_count=None, data_volume_size=None, data_volume_product_id=None, data_volume_resource_spec_code=None, data_volume_resource_type=None):
-        """NodeGroupV10
+        r"""NodeGroupV10
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class NodeGroupV10:
 
     @property
     def group_name(self):
-        """Gets the group_name of this NodeGroupV10.
+        r"""Gets the group_name of this NodeGroupV10.
 
         节点组名。
 
@@ -173,7 +173,7 @@ class NodeGroupV10:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this NodeGroupV10.
+        r"""Sets the group_name of this NodeGroupV10.
 
         节点组名。
 
@@ -184,7 +184,7 @@ class NodeGroupV10:
 
     @property
     def node_num(self):
-        """Gets the node_num of this NodeGroupV10.
+        r"""Gets the node_num of this NodeGroupV10.
 
         节点数量，取值范围0～500，Master节点和Core节点数量至少为1，Core与Task节点总数最大为500个。
 
@@ -195,7 +195,7 @@ class NodeGroupV10:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this NodeGroupV10.
+        r"""Sets the node_num of this NodeGroupV10.
 
         节点数量，取值范围0～500，Master节点和Core节点数量至少为1，Core与Task节点总数最大为500个。
 
@@ -206,7 +206,7 @@ class NodeGroupV10:
 
     @property
     def node_size(self):
-        """Gets the node_size of this NodeGroupV10.
+        r"""Gets the node_size of this NodeGroupV10.
 
         节点的实例规格。
 
@@ -217,7 +217,7 @@ class NodeGroupV10:
 
     @node_size.setter
     def node_size(self, node_size):
-        """Sets the node_size of this NodeGroupV10.
+        r"""Sets the node_size of this NodeGroupV10.
 
         节点的实例规格。
 
@@ -228,7 +228,7 @@ class NodeGroupV10:
 
     @property
     def node_spec_id(self):
-        """Gets the node_spec_id of this NodeGroupV10.
+        r"""Gets the node_spec_id of this NodeGroupV10.
 
         节点实例规格ID。
 
@@ -239,7 +239,7 @@ class NodeGroupV10:
 
     @node_spec_id.setter
     def node_spec_id(self, node_spec_id):
-        """Sets the node_spec_id of this NodeGroupV10.
+        r"""Sets the node_spec_id of this NodeGroupV10.
 
         节点实例规格ID。
 
@@ -250,7 +250,7 @@ class NodeGroupV10:
 
     @property
     def vm_product_id(self):
-        """Gets the vm_product_id of this NodeGroupV10.
+        r"""Gets the vm_product_id of this NodeGroupV10.
 
         节点虚拟机产品ID。
 
@@ -261,7 +261,7 @@ class NodeGroupV10:
 
     @vm_product_id.setter
     def vm_product_id(self, vm_product_id):
-        """Sets the vm_product_id of this NodeGroupV10.
+        r"""Sets the vm_product_id of this NodeGroupV10.
 
         节点虚拟机产品ID。
 
@@ -272,7 +272,7 @@ class NodeGroupV10:
 
     @property
     def vm_spec_code(self):
-        """Gets the vm_spec_code of this NodeGroupV10.
+        r"""Gets the vm_spec_code of this NodeGroupV10.
 
         节点虚拟机产品规格。
 
@@ -283,7 +283,7 @@ class NodeGroupV10:
 
     @vm_spec_code.setter
     def vm_spec_code(self, vm_spec_code):
-        """Sets the vm_spec_code of this NodeGroupV10.
+        r"""Sets the vm_spec_code of this NodeGroupV10.
 
         节点虚拟机产品规格。
 
@@ -294,7 +294,7 @@ class NodeGroupV10:
 
     @property
     def node_product_id(self):
-        """Gets the node_product_id of this NodeGroupV10.
+        r"""Gets the node_product_id of this NodeGroupV10.
 
         节点实例产品ID。
 
@@ -305,7 +305,7 @@ class NodeGroupV10:
 
     @node_product_id.setter
     def node_product_id(self, node_product_id):
-        """Sets the node_product_id of this NodeGroupV10.
+        r"""Sets the node_product_id of this NodeGroupV10.
 
         节点实例产品ID。
 
@@ -316,7 +316,7 @@ class NodeGroupV10:
 
     @property
     def root_volume_size(self):
-        """Gets the root_volume_size of this NodeGroupV10.
+        r"""Gets the root_volume_size of this NodeGroupV10.
 
         节点系统盘大小，不可配置，默认为40GB。
 
@@ -327,7 +327,7 @@ class NodeGroupV10:
 
     @root_volume_size.setter
     def root_volume_size(self, root_volume_size):
-        """Sets the root_volume_size of this NodeGroupV10.
+        r"""Sets the root_volume_size of this NodeGroupV10.
 
         节点系统盘大小，不可配置，默认为40GB。
 
@@ -338,7 +338,7 @@ class NodeGroupV10:
 
     @property
     def root_volume_product_id(self):
-        """Gets the root_volume_product_id of this NodeGroupV10.
+        r"""Gets the root_volume_product_id of this NodeGroupV10.
 
         节点系统盘的产品ID。
 
@@ -349,7 +349,7 @@ class NodeGroupV10:
 
     @root_volume_product_id.setter
     def root_volume_product_id(self, root_volume_product_id):
-        """Sets the root_volume_product_id of this NodeGroupV10.
+        r"""Sets the root_volume_product_id of this NodeGroupV10.
 
         节点系统盘的产品ID。
 
@@ -360,7 +360,7 @@ class NodeGroupV10:
 
     @property
     def root_volume_type(self):
-        """Gets the root_volume_type of this NodeGroupV10.
+        r"""Gets the root_volume_type of this NodeGroupV10.
 
         节点系统盘的类型。
 
@@ -371,7 +371,7 @@ class NodeGroupV10:
 
     @root_volume_type.setter
     def root_volume_type(self, root_volume_type):
-        """Sets the root_volume_type of this NodeGroupV10.
+        r"""Sets the root_volume_type of this NodeGroupV10.
 
         节点系统盘的类型。
 
@@ -382,7 +382,7 @@ class NodeGroupV10:
 
     @property
     def root_volume_resource_spec_code(self):
-        """Gets the root_volume_resource_spec_code of this NodeGroupV10.
+        r"""Gets the root_volume_resource_spec_code of this NodeGroupV10.
 
         节点系统盘产品规格。
 
@@ -393,7 +393,7 @@ class NodeGroupV10:
 
     @root_volume_resource_spec_code.setter
     def root_volume_resource_spec_code(self, root_volume_resource_spec_code):
-        """Sets the root_volume_resource_spec_code of this NodeGroupV10.
+        r"""Sets the root_volume_resource_spec_code of this NodeGroupV10.
 
         节点系统盘产品规格。
 
@@ -404,7 +404,7 @@ class NodeGroupV10:
 
     @property
     def root_volume_resource_type(self):
-        """Gets the root_volume_resource_type of this NodeGroupV10.
+        r"""Gets the root_volume_resource_type of this NodeGroupV10.
 
         节点系统盘产品类型。
 
@@ -415,7 +415,7 @@ class NodeGroupV10:
 
     @root_volume_resource_type.setter
     def root_volume_resource_type(self, root_volume_resource_type):
-        """Sets the root_volume_resource_type of this NodeGroupV10.
+        r"""Sets the root_volume_resource_type of this NodeGroupV10.
 
         节点系统盘产品类型。
 
@@ -426,7 +426,7 @@ class NodeGroupV10:
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this NodeGroupV10.
+        r"""Gets the data_volume_type of this NodeGroupV10.
 
         节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  - SATA：普通IO - SAS：高IO - SSD：超高IO
 
@@ -437,7 +437,7 @@ class NodeGroupV10:
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this NodeGroupV10.
+        r"""Sets the data_volume_type of this NodeGroupV10.
 
         节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  - SATA：普通IO - SAS：高IO - SSD：超高IO
 
@@ -448,7 +448,7 @@ class NodeGroupV10:
 
     @property
     def data_volume_count(self):
-        """Gets the data_volume_count of this NodeGroupV10.
+        r"""Gets the data_volume_count of this NodeGroupV10.
 
         节点数据磁盘存储数目。
 
@@ -459,7 +459,7 @@ class NodeGroupV10:
 
     @data_volume_count.setter
     def data_volume_count(self, data_volume_count):
-        """Sets the data_volume_count of this NodeGroupV10.
+        r"""Sets the data_volume_count of this NodeGroupV10.
 
         节点数据磁盘存储数目。
 
@@ -470,7 +470,7 @@ class NodeGroupV10:
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this NodeGroupV10.
+        r"""Gets the data_volume_size of this NodeGroupV10.
 
         节点数据磁盘存储大小。
 
@@ -481,7 +481,7 @@ class NodeGroupV10:
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this NodeGroupV10.
+        r"""Sets the data_volume_size of this NodeGroupV10.
 
         节点数据磁盘存储大小。
 
@@ -492,7 +492,7 @@ class NodeGroupV10:
 
     @property
     def data_volume_product_id(self):
-        """Gets the data_volume_product_id of this NodeGroupV10.
+        r"""Gets the data_volume_product_id of this NodeGroupV10.
 
         节点数据磁盘的产品ID。
 
@@ -503,7 +503,7 @@ class NodeGroupV10:
 
     @data_volume_product_id.setter
     def data_volume_product_id(self, data_volume_product_id):
-        """Sets the data_volume_product_id of this NodeGroupV10.
+        r"""Sets the data_volume_product_id of this NodeGroupV10.
 
         节点数据磁盘的产品ID。
 
@@ -514,7 +514,7 @@ class NodeGroupV10:
 
     @property
     def data_volume_resource_spec_code(self):
-        """Gets the data_volume_resource_spec_code of this NodeGroupV10.
+        r"""Gets the data_volume_resource_spec_code of this NodeGroupV10.
 
         节点数据磁盘的产品规格。
 
@@ -525,7 +525,7 @@ class NodeGroupV10:
 
     @data_volume_resource_spec_code.setter
     def data_volume_resource_spec_code(self, data_volume_resource_spec_code):
-        """Sets the data_volume_resource_spec_code of this NodeGroupV10.
+        r"""Sets the data_volume_resource_spec_code of this NodeGroupV10.
 
         节点数据磁盘的产品规格。
 
@@ -536,7 +536,7 @@ class NodeGroupV10:
 
     @property
     def data_volume_resource_type(self):
-        """Gets the data_volume_resource_type of this NodeGroupV10.
+        r"""Gets the data_volume_resource_type of this NodeGroupV10.
 
         节点数据磁盘的产品类型。
 
@@ -547,7 +547,7 @@ class NodeGroupV10:
 
     @data_volume_resource_type.setter
     def data_volume_resource_type(self, data_volume_resource_type):
-        """Sets the data_volume_resource_type of this NodeGroupV10.
+        r"""Sets the data_volume_resource_type of this NodeGroupV10.
 
         节点数据磁盘的产品类型。
 

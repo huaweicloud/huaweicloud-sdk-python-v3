@@ -27,7 +27,7 @@ class TaskDetailsError:
     }
 
     def __init__(self, code=None, message=None):
-        """TaskDetailsError
+        r"""TaskDetailsError
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TaskDetailsError:
 
     @property
     def code(self):
-        """Gets the code of this TaskDetailsError.
+        r"""Gets the code of this TaskDetailsError.
 
         算法服务定义的错误码
 
@@ -59,7 +59,7 @@ class TaskDetailsError:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this TaskDetailsError.
+        r"""Sets the code of this TaskDetailsError.
 
         算法服务定义的错误码
 
@@ -70,7 +70,7 @@ class TaskDetailsError:
 
     @property
     def message(self):
-        """Gets the message of this TaskDetailsError.
+        r"""Gets the message of this TaskDetailsError.
 
         算法服务反馈的错误信息
 
@@ -81,7 +81,7 @@ class TaskDetailsError:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this TaskDetailsError.
+        r"""Sets the message of this TaskDetailsError.
 
         算法服务反馈的错误信息
 

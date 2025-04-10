@@ -23,7 +23,7 @@ class CinderListAvailabilityZonesRequest:
     }
 
     def __init__(self):
-        """CinderListAvailabilityZonesRequest
+        r"""CinderListAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 

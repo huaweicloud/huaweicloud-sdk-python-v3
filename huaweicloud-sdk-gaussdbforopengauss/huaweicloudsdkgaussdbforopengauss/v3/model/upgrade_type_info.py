@@ -31,7 +31,7 @@ class UpgradeTypeInfo:
     }
 
     def __init__(self, upgrade_type=None, enable=None, upgrade_action_list=None, is_parallel_upgrade=None):
-        """UpgradeTypeInfo
+        r"""UpgradeTypeInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpgradeTypeInfo:
 
     @property
     def upgrade_type(self):
-        """Gets the upgrade_type of this UpgradeTypeInfo.
+        r"""Gets the upgrade_type of this UpgradeTypeInfo.
 
         升级类型,grey=灰度升级,inplace=就地升级,hotfix=热补丁升级。
 
@@ -75,7 +75,7 @@ class UpgradeTypeInfo:
 
     @upgrade_type.setter
     def upgrade_type(self, upgrade_type):
-        """Sets the upgrade_type of this UpgradeTypeInfo.
+        r"""Sets the upgrade_type of this UpgradeTypeInfo.
 
         升级类型,grey=灰度升级,inplace=就地升级,hotfix=热补丁升级。
 
@@ -86,7 +86,7 @@ class UpgradeTypeInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this UpgradeTypeInfo.
+        r"""Gets the enable of this UpgradeTypeInfo.
 
         可用，不可用。
 
@@ -97,7 +97,7 @@ class UpgradeTypeInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpgradeTypeInfo.
+        r"""Sets the enable of this UpgradeTypeInfo.
 
         可用，不可用。
 
@@ -108,7 +108,7 @@ class UpgradeTypeInfo:
 
     @property
     def upgrade_action_list(self):
-        """Gets the upgrade_action_list of this UpgradeTypeInfo.
+        r"""Gets the upgrade_action_list of this UpgradeTypeInfo.
 
         升级操作列表。
 
@@ -119,7 +119,7 @@ class UpgradeTypeInfo:
 
     @upgrade_action_list.setter
     def upgrade_action_list(self, upgrade_action_list):
-        """Sets the upgrade_action_list of this UpgradeTypeInfo.
+        r"""Sets the upgrade_action_list of this UpgradeTypeInfo.
 
         升级操作列表。
 
@@ -130,7 +130,7 @@ class UpgradeTypeInfo:
 
     @property
     def is_parallel_upgrade(self):
-        """Gets the is_parallel_upgrade of this UpgradeTypeInfo.
+        r"""Gets the is_parallel_upgrade of this UpgradeTypeInfo.
 
         是否正在进行AZ内并行升级。 -true：当前实例处于灰度升级的升级待观察升级方式中，已选择了AZ内并行升级方式，后续无法更改。 -false：当前实例处于升级流程中，未选择AZ内并行升级的方式，后续无法更改。null：当前实例尚未处于升级流程中。
 
@@ -141,7 +141,7 @@ class UpgradeTypeInfo:
 
     @is_parallel_upgrade.setter
     def is_parallel_upgrade(self, is_parallel_upgrade):
-        """Sets the is_parallel_upgrade of this UpgradeTypeInfo.
+        r"""Sets the is_parallel_upgrade of this UpgradeTypeInfo.
 
         是否正在进行AZ内并行升级。 -true：当前实例处于灰度升级的升级待观察升级方式中，已选择了AZ内并行升级方式，后续无法更改。 -false：当前实例处于升级流程中，未选择AZ内并行升级的方式，后续无法更改。null：当前实例尚未处于升级流程中。
 

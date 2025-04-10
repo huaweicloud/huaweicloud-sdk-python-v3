@@ -27,7 +27,7 @@ class BatchCreateClouddcnSubnetsTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateClouddcnSubnetsTagsRequest
+        r"""BatchCreateClouddcnSubnetsTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateClouddcnSubnetsTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateClouddcnSubnetsTagsRequest.
+        r"""Gets the resource_id of this BatchCreateClouddcnSubnetsTagsRequest.
 
         Clouddcn子网的id
 
@@ -60,7 +60,7 @@ class BatchCreateClouddcnSubnetsTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateClouddcnSubnetsTagsRequest.
+        r"""Sets the resource_id of this BatchCreateClouddcnSubnetsTagsRequest.
 
         Clouddcn子网的id
 
@@ -71,7 +71,7 @@ class BatchCreateClouddcnSubnetsTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateClouddcnSubnetsTagsRequest.
+        r"""Gets the body of this BatchCreateClouddcnSubnetsTagsRequest.
 
         :return: The body of this BatchCreateClouddcnSubnetsTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateClouddcnSubnetsTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateClouddcnSubnetsTagsRequest.
+        r"""Sets the body of this BatchCreateClouddcnSubnetsTagsRequest.
 
         :param body: The body of this BatchCreateClouddcnSubnetsTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.BatchCreateRequestBody`

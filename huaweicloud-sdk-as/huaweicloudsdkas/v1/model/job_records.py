@@ -39,7 +39,7 @@ class JobRecords:
     }
 
     def __init__(self, job_name=None, record_type=None, record_time=None, request=None, response=None, code=None, message=None, job_status=None):
-        """JobRecords
+        r"""JobRecords
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class JobRecords:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobRecords.
+        r"""Gets the job_name of this JobRecords.
 
         任务名称
 
@@ -103,7 +103,7 @@ class JobRecords:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobRecords.
+        r"""Sets the job_name of this JobRecords.
 
         任务名称
 
@@ -114,7 +114,7 @@ class JobRecords:
 
     @property
     def record_type(self):
-        """Gets the record_type of this JobRecords.
+        r"""Gets the record_type of this JobRecords.
 
         记录类型。API：接口调用类型。MEG：消息类型。
 
@@ -125,7 +125,7 @@ class JobRecords:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this JobRecords.
+        r"""Sets the record_type of this JobRecords.
 
         记录类型。API：接口调用类型。MEG：消息类型。
 
@@ -136,7 +136,7 @@ class JobRecords:
 
     @property
     def record_time(self):
-        """Gets the record_time of this JobRecords.
+        r"""Gets the record_time of this JobRecords.
 
         记录时间。
 
@@ -147,7 +147,7 @@ class JobRecords:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this JobRecords.
+        r"""Sets the record_time of this JobRecords.
 
         记录时间。
 
@@ -158,7 +158,7 @@ class JobRecords:
 
     @property
     def request(self):
-        """Gets the request of this JobRecords.
+        r"""Gets the request of this JobRecords.
 
         请求体，仅当record_type为API时有效
 
@@ -169,7 +169,7 @@ class JobRecords:
 
     @request.setter
     def request(self, request):
-        """Sets the request of this JobRecords.
+        r"""Sets the request of this JobRecords.
 
         请求体，仅当record_type为API时有效
 
@@ -180,7 +180,7 @@ class JobRecords:
 
     @property
     def response(self):
-        """Gets the response of this JobRecords.
+        r"""Gets the response of this JobRecords.
 
         返回体，仅当record_type为API时有效
 
@@ -191,7 +191,7 @@ class JobRecords:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this JobRecords.
+        r"""Sets the response of this JobRecords.
 
         返回体，仅当record_type为API时有效
 
@@ -202,7 +202,7 @@ class JobRecords:
 
     @property
     def code(self):
-        """Gets the code of this JobRecords.
+        r"""Gets the code of this JobRecords.
 
         返回码，仅当record_type为API时有效
 
@@ -213,7 +213,7 @@ class JobRecords:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this JobRecords.
+        r"""Sets the code of this JobRecords.
 
         返回码，仅当record_type为API时有效
 
@@ -224,7 +224,7 @@ class JobRecords:
 
     @property
     def message(self):
-        """Gets the message of this JobRecords.
+        r"""Gets the message of this JobRecords.
 
         消息，仅当record_type为MEG时有效
 
@@ -235,7 +235,7 @@ class JobRecords:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this JobRecords.
+        r"""Sets the message of this JobRecords.
 
         消息，仅当record_type为MEG时有效
 
@@ -246,7 +246,7 @@ class JobRecords:
 
     @property
     def job_status(self):
-        """Gets the job_status of this JobRecords.
+        r"""Gets the job_status of this JobRecords.
 
         job执行状态：SUCCESS：成功。FAIL：失败。
 
@@ -257,7 +257,7 @@ class JobRecords:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this JobRecords.
+        r"""Sets the job_status of this JobRecords.
 
         job执行状态：SUCCESS：成功。FAIL：失败。
 

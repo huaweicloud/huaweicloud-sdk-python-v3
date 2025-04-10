@@ -25,7 +25,7 @@ class AutoRenewalResourcesRequest:
     }
 
     def __init__(self, resource_id=None):
-        """AutoRenewalResourcesRequest
+        r"""AutoRenewalResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AutoRenewalResourcesRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AutoRenewalResourcesRequest.
+        r"""Gets the resource_id of this AutoRenewalResourcesRequest.
 
         资源实例ID。您可以调用“查询客户包年包月资源列表”接口获取资源ID。在设置弹性云服务器自动续费时，能够自动将其挂载的硬盘一并设置为自动续费。
 
@@ -53,7 +53,7 @@ class AutoRenewalResourcesRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AutoRenewalResourcesRequest.
+        r"""Sets the resource_id of this AutoRenewalResourcesRequest.
 
         资源实例ID。您可以调用“查询客户包年包月资源列表”接口获取资源ID。在设置弹性云服务器自动续费时，能够自动将其挂载的硬盘一并设置为自动续费。
 

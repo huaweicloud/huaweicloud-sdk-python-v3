@@ -35,7 +35,7 @@ class QuotaResource:
     }
 
     def __init__(self, used=None, min=None, max=None, quota=None, project_id=None, type=None):
-        """QuotaResource
+        r"""QuotaResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QuotaResource:
 
     @property
     def used(self):
-        """Gets the used of this QuotaResource.
+        r"""Gets the used of this QuotaResource.
 
         已创建的资源个数
 
@@ -89,7 +89,7 @@ class QuotaResource:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaResource.
+        r"""Sets the used of this QuotaResource.
 
         已创建的资源个数
 
@@ -100,7 +100,7 @@ class QuotaResource:
 
     @property
     def min(self):
-        """Gets the min of this QuotaResource.
+        r"""Gets the min of this QuotaResource.
 
         最少可创建的资源个数
 
@@ -111,7 +111,7 @@ class QuotaResource:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaResource.
+        r"""Sets the min of this QuotaResource.
 
         最少可创建的资源个数
 
@@ -122,7 +122,7 @@ class QuotaResource:
 
     @property
     def max(self):
-        """Gets the max of this QuotaResource.
+        r"""Gets the max of this QuotaResource.
 
         最多可创建的资源个数
 
@@ -133,7 +133,7 @@ class QuotaResource:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this QuotaResource.
+        r"""Sets the max of this QuotaResource.
 
         最多可创建的资源个数
 
@@ -144,7 +144,7 @@ class QuotaResource:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaResource.
+        r"""Gets the quota of this QuotaResource.
 
         资源配额限制
 
@@ -155,7 +155,7 @@ class QuotaResource:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaResource.
+        r"""Sets the quota of this QuotaResource.
 
         资源配额限制
 
@@ -166,7 +166,7 @@ class QuotaResource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this QuotaResource.
+        r"""Gets the project_id of this QuotaResource.
 
         项目ID
 
@@ -177,7 +177,7 @@ class QuotaResource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this QuotaResource.
+        r"""Sets the project_id of this QuotaResource.
 
         项目ID
 
@@ -188,7 +188,7 @@ class QuotaResource:
 
     @property
     def type(self):
-        """Gets the type of this QuotaResource.
+        r"""Gets the type of this QuotaResource.
 
         查询配额的资源类型，支持填写： - edge_node: 边缘节点 - node_cert: 边缘节点证书 - edge_group: 边缘节点组 - group_cert: 边缘节点组证书 - application: 应用模板 - deployment: 容器应用 - device_template: 终端设备模板 - device: 终端设备 - app_version: 应用模板的版本 - tag: 标签  - configmap: 配置项 - secret: 密钥 - ief_instance: 铂金版实例 - service: 服务网格 - gateway: 服务网关
 
@@ -199,7 +199,7 @@ class QuotaResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaResource.
+        r"""Sets the type of this QuotaResource.
 
         查询配额的资源类型，支持填写： - edge_node: 边缘节点 - node_cert: 边缘节点证书 - edge_group: 边缘节点组 - group_cert: 边缘节点组证书 - application: 应用模板 - deployment: 容器应用 - device_template: 终端设备模板 - device: 终端设备 - app_version: 应用模板的版本 - tag: 标签  - configmap: 配置项 - secret: 密钥 - ief_instance: 铂金版实例 - service: 服务网格 - gateway: 服务网关
 

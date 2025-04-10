@@ -25,7 +25,7 @@ class CreateTagsDto:
     }
 
     def __init__(self, tags=None):
-        """CreateTagsDto
+        r"""CreateTagsDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTagsDto:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTagsDto.
+        r"""Gets the tags of this CreateTagsDto.
 
         创建防火墙标签列表
 
@@ -54,7 +54,7 @@ class CreateTagsDto:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTagsDto.
+        r"""Sets the tags of this CreateTagsDto.
 
         创建防火墙标签列表
 

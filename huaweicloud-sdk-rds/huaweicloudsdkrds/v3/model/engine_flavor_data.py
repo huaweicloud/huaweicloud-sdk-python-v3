@@ -47,7 +47,7 @@ class EngineFlavorData:
     }
 
     def __init__(self, vcpus=None, ram=None, spec_code=None, is_ipv6_supported=None, type_code=None, az_status=None, group_type=None, max_connection=None, tps=None, qps=None, min_volume_size=None, max_volume_size=None):
-        """EngineFlavorData
+        r"""EngineFlavorData
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class EngineFlavorData:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this EngineFlavorData.
+        r"""Gets the vcpus of this EngineFlavorData.
 
         CPU大小。例如：1表示1U。
 
@@ -131,7 +131,7 @@ class EngineFlavorData:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this EngineFlavorData.
+        r"""Sets the vcpus of this EngineFlavorData.
 
         CPU大小。例如：1表示1U。
 
@@ -142,7 +142,7 @@ class EngineFlavorData:
 
     @property
     def ram(self):
-        """Gets the ram of this EngineFlavorData.
+        r"""Gets the ram of this EngineFlavorData.
 
         内存大小，单位为GB。
 
@@ -153,7 +153,7 @@ class EngineFlavorData:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this EngineFlavorData.
+        r"""Sets the ram of this EngineFlavorData.
 
         内存大小，单位为GB。
 
@@ -164,7 +164,7 @@ class EngineFlavorData:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this EngineFlavorData.
+        r"""Gets the spec_code of this EngineFlavorData.
 
         资源规格编码。例如：rds.mysql.m1.xlarge.rr。  更多规格说明请参考数据库实例规格。  “rds”代表RDS产品。 “mysql”代表数据库引擎。 “m1.xlarge”代表性能规格，为高内存类型。 “rr”表示只读实例（“.ha”表示主备实例）。 “rha.rr”表示高可用只读实例，规格编码示例：rds.mysql.n1.large.4.rha.rr。 具有公测权限的用户才可选择高可用，您可联系华为云客服人员申请。 高可用只读功能介绍请参见高可用只读简介。
 
@@ -175,7 +175,7 @@ class EngineFlavorData:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this EngineFlavorData.
+        r"""Sets the spec_code of this EngineFlavorData.
 
         资源规格编码。例如：rds.mysql.m1.xlarge.rr。  更多规格说明请参考数据库实例规格。  “rds”代表RDS产品。 “mysql”代表数据库引擎。 “m1.xlarge”代表性能规格，为高内存类型。 “rr”表示只读实例（“.ha”表示主备实例）。 “rha.rr”表示高可用只读实例，规格编码示例：rds.mysql.n1.large.4.rha.rr。 具有公测权限的用户才可选择高可用，您可联系华为云客服人员申请。 高可用只读功能介绍请参见高可用只读简介。
 
@@ -186,7 +186,7 @@ class EngineFlavorData:
 
     @property
     def is_ipv6_supported(self):
-        """Gets the is_ipv6_supported of this EngineFlavorData.
+        r"""Gets the is_ipv6_supported of this EngineFlavorData.
 
         是否支持ipv6。
 
@@ -197,7 +197,7 @@ class EngineFlavorData:
 
     @is_ipv6_supported.setter
     def is_ipv6_supported(self, is_ipv6_supported):
-        """Sets the is_ipv6_supported of this EngineFlavorData.
+        r"""Sets the is_ipv6_supported of this EngineFlavorData.
 
         是否支持ipv6。
 
@@ -208,7 +208,7 @@ class EngineFlavorData:
 
     @property
     def type_code(self):
-        """Gets the type_code of this EngineFlavorData.
+        r"""Gets the type_code of this EngineFlavorData.
 
         资源类型
 
@@ -219,7 +219,7 @@ class EngineFlavorData:
 
     @type_code.setter
     def type_code(self, type_code):
-        """Sets the type_code of this EngineFlavorData.
+        r"""Sets the type_code of this EngineFlavorData.
 
         资源类型
 
@@ -230,7 +230,7 @@ class EngineFlavorData:
 
     @property
     def az_status(self):
-        """Gets the az_status of this EngineFlavorData.
+        r"""Gets the az_status of this EngineFlavorData.
 
         规格所在az的状态，包含以下状态： normal：在售。 unsupported：暂不支持该规格。 sellout：售罄。 abandon：未启用
 
@@ -241,7 +241,7 @@ class EngineFlavorData:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this EngineFlavorData.
+        r"""Sets the az_status of this EngineFlavorData.
 
         规格所在az的状态，包含以下状态： normal：在售。 unsupported：暂不支持该规格。 sellout：售罄。 abandon：未启用
 
@@ -252,7 +252,7 @@ class EngineFlavorData:
 
     @property
     def group_type(self):
-        """Gets the group_type of this EngineFlavorData.
+        r"""Gets the group_type of this EngineFlavorData.
 
         性能规格，包含以下状态： normal：通用增强型。 normal2：通用增强Ⅱ型。 armFlavors：鲲鹏通用增强型。 dedicicateNormal（dedicatedNormalLocalssd）：x86独享型。 armLocalssd：鲲鹏通用型。 normalLocalssd：x86通用型。 general：通用型。 dedicated 对于MySQL引擎：独享型。 对于PostgreSQL和SQL Server引擎：独享型，仅云盘SSD支持。 rapid 对于MySQL引擎：独享型（已下线）。 对于PostgreSQL和SQL Server引擎：独享型，仅极速型SSD支持。 bigmem：超大内存型。 highPerformancePrivilegeEdition：超高IO 尊享版
 
@@ -263,7 +263,7 @@ class EngineFlavorData:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this EngineFlavorData.
+        r"""Sets the group_type of this EngineFlavorData.
 
         性能规格，包含以下状态： normal：通用增强型。 normal2：通用增强Ⅱ型。 armFlavors：鲲鹏通用增强型。 dedicicateNormal（dedicatedNormalLocalssd）：x86独享型。 armLocalssd：鲲鹏通用型。 normalLocalssd：x86通用型。 general：通用型。 dedicated 对于MySQL引擎：独享型。 对于PostgreSQL和SQL Server引擎：独享型，仅云盘SSD支持。 rapid 对于MySQL引擎：独享型（已下线）。 对于PostgreSQL和SQL Server引擎：独享型，仅极速型SSD支持。 bigmem：超大内存型。 highPerformancePrivilegeEdition：超高IO 尊享版
 
@@ -274,7 +274,7 @@ class EngineFlavorData:
 
     @property
     def max_connection(self):
-        """Gets the max_connection of this EngineFlavorData.
+        r"""Gets the max_connection of this EngineFlavorData.
 
         最大连接数
 
@@ -285,7 +285,7 @@ class EngineFlavorData:
 
     @max_connection.setter
     def max_connection(self, max_connection):
-        """Sets the max_connection of this EngineFlavorData.
+        r"""Sets the max_connection of this EngineFlavorData.
 
         最大连接数
 
@@ -296,7 +296,7 @@ class EngineFlavorData:
 
     @property
     def tps(self):
-        """Gets the tps of this EngineFlavorData.
+        r"""Gets the tps of this EngineFlavorData.
 
         数据库每秒执行的事务数，每个事务中包含18条SQL语句。
 
@@ -307,7 +307,7 @@ class EngineFlavorData:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this EngineFlavorData.
+        r"""Sets the tps of this EngineFlavorData.
 
         数据库每秒执行的事务数，每个事务中包含18条SQL语句。
 
@@ -318,7 +318,7 @@ class EngineFlavorData:
 
     @property
     def qps(self):
-        """Gets the qps of this EngineFlavorData.
+        r"""Gets the qps of this EngineFlavorData.
 
         数据库每秒执行的SQL数，包含insert、select、update、delete等。
 
@@ -329,7 +329,7 @@ class EngineFlavorData:
 
     @qps.setter
     def qps(self, qps):
-        """Sets the qps of this EngineFlavorData.
+        r"""Sets the qps of this EngineFlavorData.
 
         数据库每秒执行的SQL数，包含insert、select、update、delete等。
 
@@ -340,7 +340,7 @@ class EngineFlavorData:
 
     @property
     def min_volume_size(self):
-        """Gets the min_volume_size of this EngineFlavorData.
+        r"""Gets the min_volume_size of this EngineFlavorData.
 
         最小磁盘容量，单位G
 
@@ -351,7 +351,7 @@ class EngineFlavorData:
 
     @min_volume_size.setter
     def min_volume_size(self, min_volume_size):
-        """Sets the min_volume_size of this EngineFlavorData.
+        r"""Sets the min_volume_size of this EngineFlavorData.
 
         最小磁盘容量，单位G
 
@@ -362,7 +362,7 @@ class EngineFlavorData:
 
     @property
     def max_volume_size(self):
-        """Gets the max_volume_size of this EngineFlavorData.
+        r"""Gets the max_volume_size of this EngineFlavorData.
 
         最大磁盘容量，单位G
 
@@ -373,7 +373,7 @@ class EngineFlavorData:
 
     @max_volume_size.setter
     def max_volume_size(self, max_volume_size):
-        """Sets the max_volume_size of this EngineFlavorData.
+        r"""Sets the max_volume_size of this EngineFlavorData.
 
         最大磁盘容量，单位G
 

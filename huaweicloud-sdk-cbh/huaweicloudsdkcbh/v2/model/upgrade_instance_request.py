@@ -25,7 +25,7 @@ class UpgradeInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """UpgradeInstanceRequest
+        r"""UpgradeInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeInstanceRequest.
+        r"""Gets the body of this UpgradeInstanceRequest.
 
         :return: The body of this UpgradeInstanceRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.UpgradeCbhRequestBody`
@@ -52,7 +52,7 @@ class UpgradeInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeInstanceRequest.
+        r"""Sets the body of this UpgradeInstanceRequest.
 
         :param body: The body of this UpgradeInstanceRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.UpgradeCbhRequestBody`

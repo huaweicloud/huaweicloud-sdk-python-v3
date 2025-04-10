@@ -37,7 +37,7 @@ class ShowAssetTempAuthorityRequest:
     }
 
     def __init__(self, http_verb=None, bucket=None, object_key=None, content_type=None, content_md5=None, upload_id=None, part_number=None):
-        """ShowAssetTempAuthorityRequest
+        r"""ShowAssetTempAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def http_verb(self):
-        """Gets the http_verb of this ShowAssetTempAuthorityRequest.
+        r"""Gets the http_verb of this ShowAssetTempAuthorityRequest.
 
         分段上传时调用OBS接口的HTTP方法，具体操作需要的HTTP方法请参考OBS的接口文档。  - 初始化上传任务：POST - 上传段：PUT - 合并段：POST - 取消段：DELETE - 列举已上传段：GET
 
@@ -93,7 +93,7 @@ class ShowAssetTempAuthorityRequest:
 
     @http_verb.setter
     def http_verb(self, http_verb):
-        """Sets the http_verb of this ShowAssetTempAuthorityRequest.
+        r"""Sets the http_verb of this ShowAssetTempAuthorityRequest.
 
         分段上传时调用OBS接口的HTTP方法，具体操作需要的HTTP方法请参考OBS的接口文档。  - 初始化上传任务：POST - 上传段：PUT - 合并段：POST - 取消段：DELETE - 列举已上传段：GET
 
@@ -104,7 +104,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ShowAssetTempAuthorityRequest.
+        r"""Gets the bucket of this ShowAssetTempAuthorityRequest.
 
         桶名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
@@ -115,7 +115,7 @@ class ShowAssetTempAuthorityRequest:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ShowAssetTempAuthorityRequest.
+        r"""Sets the bucket of this ShowAssetTempAuthorityRequest.
 
         桶名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
@@ -126,7 +126,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def object_key(self):
-        """Gets the object_key of this ShowAssetTempAuthorityRequest.
+        r"""Gets the object_key of this ShowAssetTempAuthorityRequest.
 
         对象名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
@@ -137,7 +137,7 @@ class ShowAssetTempAuthorityRequest:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this ShowAssetTempAuthorityRequest.
+        r"""Sets the object_key of this ShowAssetTempAuthorityRequest.
 
         对象名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
@@ -148,7 +148,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowAssetTempAuthorityRequest.
+        r"""Gets the content_type of this ShowAssetTempAuthorityRequest.
 
         文件类型对应的content-type，如MP4对应video/mp4。
 
@@ -159,7 +159,7 @@ class ShowAssetTempAuthorityRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowAssetTempAuthorityRequest.
+        r"""Sets the content_type of this ShowAssetTempAuthorityRequest.
 
         文件类型对应的content-type，如MP4对应video/mp4。
 
@@ -170,7 +170,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def content_md5(self):
-        """Gets the content_md5 of this ShowAssetTempAuthorityRequest.
+        r"""Gets the content_md5 of this ShowAssetTempAuthorityRequest.
 
         上传段时每段的MD5。
 
@@ -181,7 +181,7 @@ class ShowAssetTempAuthorityRequest:
 
     @content_md5.setter
     def content_md5(self, content_md5):
-        """Sets the content_md5 of this ShowAssetTempAuthorityRequest.
+        r"""Sets the content_md5 of this ShowAssetTempAuthorityRequest.
 
         上传段时每段的MD5。
 
@@ -192,7 +192,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def upload_id(self):
-        """Gets the upload_id of this ShowAssetTempAuthorityRequest.
+        r"""Gets the upload_id of this ShowAssetTempAuthorityRequest.
 
         每一个上传任务的id，是OBS进行初始段后OBS返回的。
 
@@ -203,7 +203,7 @@ class ShowAssetTempAuthorityRequest:
 
     @upload_id.setter
     def upload_id(self, upload_id):
-        """Sets the upload_id of this ShowAssetTempAuthorityRequest.
+        r"""Sets the upload_id of this ShowAssetTempAuthorityRequest.
 
         每一个上传任务的id，是OBS进行初始段后OBS返回的。
 
@@ -214,7 +214,7 @@ class ShowAssetTempAuthorityRequest:
 
     @property
     def part_number(self):
-        """Gets the part_number of this ShowAssetTempAuthorityRequest.
+        r"""Gets the part_number of this ShowAssetTempAuthorityRequest.
 
         上传段时每一段的id。  取值范围：[1,10000]。
 
@@ -225,7 +225,7 @@ class ShowAssetTempAuthorityRequest:
 
     @part_number.setter
     def part_number(self, part_number):
-        """Sets the part_number of this ShowAssetTempAuthorityRequest.
+        r"""Sets the part_number of this ShowAssetTempAuthorityRequest.
 
         上传段时每一段的id。  取值范围：[1,10000]。
 

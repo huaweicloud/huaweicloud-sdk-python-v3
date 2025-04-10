@@ -25,7 +25,7 @@ class DisassociaterouterRequestBody:
     }
 
     def __init__(self, router=None):
-        """DisassociaterouterRequestBody
+        r"""DisassociaterouterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociaterouterRequestBody:
 
     @property
     def router(self):
-        """Gets the router of this DisassociaterouterRequestBody.
+        r"""Gets the router of this DisassociaterouterRequestBody.
 
         :return: The router of this DisassociaterouterRequestBody.
         :rtype: :class:`huaweicloudsdkdns.v2.Router`
@@ -51,7 +51,7 @@ class DisassociaterouterRequestBody:
 
     @router.setter
     def router(self, router):
-        """Sets the router of this DisassociaterouterRequestBody.
+        r"""Sets the router of this DisassociaterouterRequestBody.
 
         :param router: The router of this DisassociaterouterRequestBody.
         :type router: :class:`huaweicloudsdkdns.v2.Router`

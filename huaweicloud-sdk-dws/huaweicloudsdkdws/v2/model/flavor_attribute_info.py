@@ -27,7 +27,7 @@ class FlavorAttributeInfo:
     }
 
     def __init__(self, code=None, value=None):
-        """FlavorAttributeInfo
+        r"""FlavorAttributeInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FlavorAttributeInfo:
 
     @property
     def code(self):
-        """Gets the code of this FlavorAttributeInfo.
+        r"""Gets the code of this FlavorAttributeInfo.
 
         属性编码
 
@@ -59,7 +59,7 @@ class FlavorAttributeInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this FlavorAttributeInfo.
+        r"""Sets the code of this FlavorAttributeInfo.
 
         属性编码
 
@@ -70,7 +70,7 @@ class FlavorAttributeInfo:
 
     @property
     def value(self):
-        """Gets the value of this FlavorAttributeInfo.
+        r"""Gets the value of this FlavorAttributeInfo.
 
         属性值
 
@@ -81,7 +81,7 @@ class FlavorAttributeInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FlavorAttributeInfo.
+        r"""Sets the value of this FlavorAttributeInfo.
 
         属性值
 

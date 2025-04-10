@@ -25,7 +25,7 @@ class ListServerVolumeAttachmentsRequest:
     }
 
     def __init__(self, server_id=None):
-        """ListServerVolumeAttachmentsRequest
+        r"""ListServerVolumeAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListServerVolumeAttachmentsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListServerVolumeAttachmentsRequest.
+        r"""Gets the server_id of this ListServerVolumeAttachmentsRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ListServerVolumeAttachmentsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListServerVolumeAttachmentsRequest.
+        r"""Sets the server_id of this ListServerVolumeAttachmentsRequest.
 
         云服务器ID。
 

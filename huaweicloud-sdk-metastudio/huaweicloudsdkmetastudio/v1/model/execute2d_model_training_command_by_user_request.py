@@ -29,7 +29,7 @@ class Execute2dModelTrainingCommandByUserRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None, body=None):
-        """Execute2dModelTrainingCommandByUserRequest
+        r"""Execute2dModelTrainingCommandByUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Execute2dModelTrainingCommandByUserRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Execute2dModelTrainingCommandByUserRequest.
+        r"""Gets the job_id of this Execute2dModelTrainingCommandByUserRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class Execute2dModelTrainingCommandByUserRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Execute2dModelTrainingCommandByUserRequest.
+        r"""Sets the job_id of this Execute2dModelTrainingCommandByUserRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class Execute2dModelTrainingCommandByUserRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this Execute2dModelTrainingCommandByUserRequest.
+        r"""Gets the x_app_user_id of this Execute2dModelTrainingCommandByUserRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class Execute2dModelTrainingCommandByUserRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this Execute2dModelTrainingCommandByUserRequest.
+        r"""Sets the x_app_user_id of this Execute2dModelTrainingCommandByUserRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class Execute2dModelTrainingCommandByUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this Execute2dModelTrainingCommandByUserRequest.
+        r"""Gets the body of this Execute2dModelTrainingCommandByUserRequest.
 
         :return: The body of this Execute2dModelTrainingCommandByUserRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.Execute2dModelTrainingCommandByUserReq`
@@ -109,7 +109,7 @@ class Execute2dModelTrainingCommandByUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this Execute2dModelTrainingCommandByUserRequest.
+        r"""Sets the body of this Execute2dModelTrainingCommandByUserRequest.
 
         :param body: The body of this Execute2dModelTrainingCommandByUserRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.Execute2dModelTrainingCommandByUserReq`

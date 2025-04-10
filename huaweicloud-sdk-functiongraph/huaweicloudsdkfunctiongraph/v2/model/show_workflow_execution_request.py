@@ -29,7 +29,7 @@ class ShowWorkflowExecutionRequest:
     }
 
     def __init__(self, workflow_id=None, execution_id=None, x_get_workflow_full_history_data=None):
-        """ShowWorkflowExecutionRequest
+        r"""ShowWorkflowExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowWorkflowExecutionRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ShowWorkflowExecutionRequest.
+        r"""Gets the workflow_id of this ShowWorkflowExecutionRequest.
 
         函数工作流ID
 
@@ -66,7 +66,7 @@ class ShowWorkflowExecutionRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ShowWorkflowExecutionRequest.
+        r"""Sets the workflow_id of this ShowWorkflowExecutionRequest.
 
         函数工作流ID
 
@@ -77,7 +77,7 @@ class ShowWorkflowExecutionRequest:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this ShowWorkflowExecutionRequest.
+        r"""Gets the execution_id of this ShowWorkflowExecutionRequest.
 
         函数流执行实例ID
 
@@ -88,7 +88,7 @@ class ShowWorkflowExecutionRequest:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this ShowWorkflowExecutionRequest.
+        r"""Sets the execution_id of this ShowWorkflowExecutionRequest.
 
         函数流执行实例ID
 
@@ -99,7 +99,7 @@ class ShowWorkflowExecutionRequest:
 
     @property
     def x_get_workflow_full_history_data(self):
-        """Gets the x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
+        r"""Gets the x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
 
         获取函数流执行详情完整输出值
 
@@ -110,7 +110,7 @@ class ShowWorkflowExecutionRequest:
 
     @x_get_workflow_full_history_data.setter
     def x_get_workflow_full_history_data(self, x_get_workflow_full_history_data):
-        """Sets the x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
+        r"""Sets the x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
 
         获取函数流执行详情完整输出值
 

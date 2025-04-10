@@ -25,7 +25,7 @@ class CreateRes:
     }
 
     def __init__(self, id=None):
-        """CreateRes
+        r"""CreateRes
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateRes:
 
     @property
     def id(self):
-        """Gets the id of this CreateRes.
+        r"""Gets the id of this CreateRes.
 
         视频id
 
@@ -53,7 +53,7 @@ class CreateRes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRes.
+        r"""Sets the id of this CreateRes.
 
         视频id
 

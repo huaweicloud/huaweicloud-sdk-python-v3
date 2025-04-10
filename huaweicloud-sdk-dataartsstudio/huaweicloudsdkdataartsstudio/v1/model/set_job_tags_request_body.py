@@ -25,7 +25,7 @@ class SetJobTagsRequestBody:
     }
 
     def __init__(self, tag_names=None):
-        """SetJobTagsRequestBody
+        r"""SetJobTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetJobTagsRequestBody:
 
     @property
     def tag_names(self):
-        """Gets the tag_names of this SetJobTagsRequestBody.
+        r"""Gets the tag_names of this SetJobTagsRequestBody.
 
         标签列表, 若未空，则标识删除标签
 
@@ -54,7 +54,7 @@ class SetJobTagsRequestBody:
 
     @tag_names.setter
     def tag_names(self, tag_names):
-        """Sets the tag_names of this SetJobTagsRequestBody.
+        r"""Sets the tag_names of this SetJobTagsRequestBody.
 
         标签列表, 若未空，则标识删除标签
 

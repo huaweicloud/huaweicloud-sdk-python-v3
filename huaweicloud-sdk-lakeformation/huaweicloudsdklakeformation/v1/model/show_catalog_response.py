@@ -38,7 +38,7 @@ class ShowCatalogResponse(SdkResponse):
     }
 
     def __init__(self, catalog_name=None, description=None, location=None, database_location_list=None, owner=None, owner_type=None, owner_source=None):
-        """ShowCatalogResponse
+        r"""ShowCatalogResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowCatalogResponse.
+        r"""Gets the catalog_name of this ShowCatalogResponse.
 
         catalog名称
 
@@ -97,7 +97,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowCatalogResponse.
+        r"""Sets the catalog_name of this ShowCatalogResponse.
 
         catalog名称
 
@@ -108,7 +108,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowCatalogResponse.
+        r"""Gets the description of this ShowCatalogResponse.
 
         描述信息
 
@@ -119,7 +119,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCatalogResponse.
+        r"""Sets the description of this ShowCatalogResponse.
 
         描述信息
 
@@ -130,7 +130,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowCatalogResponse.
+        r"""Gets the location of this ShowCatalogResponse.
 
         路径地址。例如obs://location/uri/
 
@@ -141,7 +141,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowCatalogResponse.
+        r"""Sets the location of this ShowCatalogResponse.
 
         路径地址。例如obs://location/uri/
 
@@ -152,7 +152,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def database_location_list(self):
-        """Gets the database_location_list of this ShowCatalogResponse.
+        r"""Gets the database_location_list of this ShowCatalogResponse.
 
         数据库路径列表。当值为null时，响应Body无该参数。
 
@@ -163,7 +163,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @database_location_list.setter
     def database_location_list(self, database_location_list):
-        """Sets the database_location_list of this ShowCatalogResponse.
+        r"""Sets the database_location_list of this ShowCatalogResponse.
 
         数据库路径列表。当值为null时，响应Body无该参数。
 
@@ -174,7 +174,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowCatalogResponse.
+        r"""Gets the owner of this ShowCatalogResponse.
 
         catalog所有者。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -185,7 +185,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowCatalogResponse.
+        r"""Sets the owner of this ShowCatalogResponse.
 
         catalog所有者。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -196,7 +196,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def owner_type(self):
-        """Gets the owner_type of this ShowCatalogResponse.
+        r"""Gets the owner_type of this ShowCatalogResponse.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -207,7 +207,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @owner_type.setter
     def owner_type(self, owner_type):
-        """Sets the owner_type of this ShowCatalogResponse.
+        r"""Sets the owner_type of this ShowCatalogResponse.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -218,7 +218,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def owner_source(self):
-        """Gets the owner_source of this ShowCatalogResponse.
+        r"""Gets the owner_source of this ShowCatalogResponse.
 
         所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -229,7 +229,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @owner_source.setter
     def owner_source(self, owner_source):
-        """Sets the owner_source of this ShowCatalogResponse.
+        r"""Sets the owner_source of this ShowCatalogResponse.
 
         所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 

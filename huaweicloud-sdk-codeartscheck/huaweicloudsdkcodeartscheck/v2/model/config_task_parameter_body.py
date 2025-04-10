@@ -33,7 +33,7 @@ class ConfigTaskParameterBody:
     }
 
     def __init__(self, check_id=None, ruleset_id=None, language=None, status=None, task_check_settings=None):
-        """ConfigTaskParameterBody
+        r"""ConfigTaskParameterBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ConfigTaskParameterBody:
 
     @property
     def check_id(self):
-        """Gets the check_id of this ConfigTaskParameterBody.
+        r"""Gets the check_id of this ConfigTaskParameterBody.
 
         检查工具ID
 
@@ -77,7 +77,7 @@ class ConfigTaskParameterBody:
 
     @check_id.setter
     def check_id(self, check_id):
-        """Sets the check_id of this ConfigTaskParameterBody.
+        r"""Sets the check_id of this ConfigTaskParameterBody.
 
         检查工具ID
 
@@ -88,7 +88,7 @@ class ConfigTaskParameterBody:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this ConfigTaskParameterBody.
+        r"""Gets the ruleset_id of this ConfigTaskParameterBody.
 
         规则集ID
 
@@ -99,7 +99,7 @@ class ConfigTaskParameterBody:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this ConfigTaskParameterBody.
+        r"""Sets the ruleset_id of this ConfigTaskParameterBody.
 
         规则集ID
 
@@ -110,7 +110,7 @@ class ConfigTaskParameterBody:
 
     @property
     def language(self):
-        """Gets the language of this ConfigTaskParameterBody.
+        r"""Gets the language of this ConfigTaskParameterBody.
 
         规则集语言
 
@@ -121,7 +121,7 @@ class ConfigTaskParameterBody:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ConfigTaskParameterBody.
+        r"""Sets the language of this ConfigTaskParameterBody.
 
         规则集语言
 
@@ -132,7 +132,7 @@ class ConfigTaskParameterBody:
 
     @property
     def status(self):
-        """Gets the status of this ConfigTaskParameterBody.
+        r"""Gets the status of this ConfigTaskParameterBody.
 
         off：关闭，on：开启
 
@@ -143,7 +143,7 @@ class ConfigTaskParameterBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConfigTaskParameterBody.
+        r"""Sets the status of this ConfigTaskParameterBody.
 
         off：关闭，on：开启
 
@@ -154,7 +154,7 @@ class ConfigTaskParameterBody:
 
     @property
     def task_check_settings(self):
-        """Gets the task_check_settings of this ConfigTaskParameterBody.
+        r"""Gets the task_check_settings of this ConfigTaskParameterBody.
 
         检查参数信息
 
@@ -165,7 +165,7 @@ class ConfigTaskParameterBody:
 
     @task_check_settings.setter
     def task_check_settings(self, task_check_settings):
-        """Sets the task_check_settings of this ConfigTaskParameterBody.
+        r"""Sets the task_check_settings of this ConfigTaskParameterBody.
 
         检查参数信息
 

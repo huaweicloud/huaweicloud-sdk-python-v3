@@ -27,7 +27,7 @@ class Stack:
     }
 
     def __init__(self, name=None, resources=None):
-        """Stack
+        r"""Stack
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Stack:
 
     @property
     def name(self):
-        """Gets the name of this Stack.
+        r"""Gets the name of this Stack.
 
         边缘资源组名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-48]个字符。
 
@@ -59,7 +59,7 @@ class Stack:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Stack.
+        r"""Sets the name of this Stack.
 
         边缘资源组名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-48]个字符。
 
@@ -70,7 +70,7 @@ class Stack:
 
     @property
     def resources(self):
-        """Gets the resources of this Stack.
+        r"""Gets the resources of this Stack.
 
         边缘业务的堆栈，即为资源组。
 
@@ -81,7 +81,7 @@ class Stack:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this Stack.
+        r"""Sets the resources of this Stack.
 
         边缘业务的堆栈，即为资源组。
 

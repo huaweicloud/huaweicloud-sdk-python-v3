@@ -29,7 +29,7 @@ class ModifyPublicIpRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None, body=None):
-        """ModifyPublicIpRequest
+        r"""ModifyPublicIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ModifyPublicIpRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyPublicIpRequest.
+        r"""Gets the instance_id of this ModifyPublicIpRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ModifyPublicIpRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyPublicIpRequest.
+        r"""Sets the instance_id of this ModifyPublicIpRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ModifyPublicIpRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ModifyPublicIpRequest.
+        r"""Gets the node_id of this ModifyPublicIpRequest.
 
         实例节点ID。
 
@@ -88,7 +88,7 @@ class ModifyPublicIpRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ModifyPublicIpRequest.
+        r"""Sets the node_id of this ModifyPublicIpRequest.
 
         实例节点ID。
 
@@ -99,7 +99,7 @@ class ModifyPublicIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyPublicIpRequest.
+        r"""Gets the body of this ModifyPublicIpRequest.
 
         :return: The body of this ModifyPublicIpRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPublicIpRequestBody`
@@ -108,7 +108,7 @@ class ModifyPublicIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyPublicIpRequest.
+        r"""Sets the body of this ModifyPublicIpRequest.
 
         :param body: The body of this ModifyPublicIpRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPublicIpRequestBody`

@@ -25,7 +25,7 @@ class CreateWorkflowRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWorkflowRequest
+        r"""CreateWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateWorkflowRequest.
+        r"""Gets the body of this CreateWorkflowRequest.
 
         :return: The body of this CreateWorkflowRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.WorkflowRequestBody`
@@ -52,7 +52,7 @@ class CreateWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateWorkflowRequest.
+        r"""Sets the body of this CreateWorkflowRequest.
 
         :param body: The body of this CreateWorkflowRequest.
         :type body: :class:`huaweicloudsdkaom.v1.WorkflowRequestBody`

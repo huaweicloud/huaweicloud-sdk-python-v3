@@ -45,7 +45,7 @@ class UpdateIkePolicy:
     }
 
     def __init__(self, ike_version=None, phase1_negotiation_mode=None, authentication_algorithm=None, encryption_algorithm=None, dh_group=None, lifetime_seconds=None, local_id_type=None, local_id=None, peer_id_type=None, peer_id=None, dpd=None):
-        """UpdateIkePolicy
+        r"""UpdateIkePolicy
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class UpdateIkePolicy:
 
     @property
     def ike_version(self):
-        """Gets the ike_version of this UpdateIkePolicy.
+        r"""Gets the ike_version of this UpdateIkePolicy.
 
         IKE协商版本
 
@@ -124,7 +124,7 @@ class UpdateIkePolicy:
 
     @ike_version.setter
     def ike_version(self, ike_version):
-        """Sets the ike_version of this UpdateIkePolicy.
+        r"""Sets the ike_version of this UpdateIkePolicy.
 
         IKE协商版本
 
@@ -135,7 +135,7 @@ class UpdateIkePolicy:
 
     @property
     def phase1_negotiation_mode(self):
-        """Gets the phase1_negotiation_mode of this UpdateIkePolicy.
+        r"""Gets the phase1_negotiation_mode of this UpdateIkePolicy.
 
         协商模式，ike版本为v1时生效
 
@@ -146,7 +146,7 @@ class UpdateIkePolicy:
 
     @phase1_negotiation_mode.setter
     def phase1_negotiation_mode(self, phase1_negotiation_mode):
-        """Sets the phase1_negotiation_mode of this UpdateIkePolicy.
+        r"""Sets the phase1_negotiation_mode of this UpdateIkePolicy.
 
         协商模式，ike版本为v1时生效
 
@@ -157,7 +157,7 @@ class UpdateIkePolicy:
 
     @property
     def authentication_algorithm(self):
-        """Gets the authentication_algorithm of this UpdateIkePolicy.
+        r"""Gets the authentication_algorithm of this UpdateIkePolicy.
 
         认证算法，SHA1和MD5安全性较低，请慎用
 
@@ -168,7 +168,7 @@ class UpdateIkePolicy:
 
     @authentication_algorithm.setter
     def authentication_algorithm(self, authentication_algorithm):
-        """Sets the authentication_algorithm of this UpdateIkePolicy.
+        r"""Sets the authentication_algorithm of this UpdateIkePolicy.
 
         认证算法，SHA1和MD5安全性较低，请慎用
 
@@ -179,7 +179,7 @@ class UpdateIkePolicy:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this UpdateIkePolicy.
+        r"""Gets the encryption_algorithm of this UpdateIkePolicy.
 
         加密算法，3DES安全性较低，请慎用
 
@@ -190,7 +190,7 @@ class UpdateIkePolicy:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this UpdateIkePolicy.
+        r"""Sets the encryption_algorithm of this UpdateIkePolicy.
 
         加密算法，3DES安全性较低，请慎用
 
@@ -201,7 +201,7 @@ class UpdateIkePolicy:
 
     @property
     def dh_group(self):
-        """Gets the dh_group of this UpdateIkePolicy.
+        r"""Gets the dh_group of this UpdateIkePolicy.
 
         DH密钥组
 
@@ -212,7 +212,7 @@ class UpdateIkePolicy:
 
     @dh_group.setter
     def dh_group(self, dh_group):
-        """Sets the dh_group of this UpdateIkePolicy.
+        r"""Sets the dh_group of this UpdateIkePolicy.
 
         DH密钥组
 
@@ -223,7 +223,7 @@ class UpdateIkePolicy:
 
     @property
     def lifetime_seconds(self):
-        """Gets the lifetime_seconds of this UpdateIkePolicy.
+        r"""Gets the lifetime_seconds of this UpdateIkePolicy.
 
         表示SA的生存周期，当该生存周期超时后IKE SA将自动更新
 
@@ -234,7 +234,7 @@ class UpdateIkePolicy:
 
     @lifetime_seconds.setter
     def lifetime_seconds(self, lifetime_seconds):
-        """Sets the lifetime_seconds of this UpdateIkePolicy.
+        r"""Sets the lifetime_seconds of this UpdateIkePolicy.
 
         表示SA的生存周期，当该生存周期超时后IKE SA将自动更新
 
@@ -245,7 +245,7 @@ class UpdateIkePolicy:
 
     @property
     def local_id_type(self):
-        """Gets the local_id_type of this UpdateIkePolicy.
+        r"""Gets the local_id_type of this UpdateIkePolicy.
 
         本端ID类型
 
@@ -256,7 +256,7 @@ class UpdateIkePolicy:
 
     @local_id_type.setter
     def local_id_type(self, local_id_type):
-        """Sets the local_id_type of this UpdateIkePolicy.
+        r"""Sets the local_id_type of this UpdateIkePolicy.
 
         本端ID类型
 
@@ -267,7 +267,7 @@ class UpdateIkePolicy:
 
     @property
     def local_id(self):
-        """Gets the local_id of this UpdateIkePolicy.
+        r"""Gets the local_id of this UpdateIkePolicy.
 
         本端ID
 
@@ -278,7 +278,7 @@ class UpdateIkePolicy:
 
     @local_id.setter
     def local_id(self, local_id):
-        """Sets the local_id of this UpdateIkePolicy.
+        r"""Sets the local_id of this UpdateIkePolicy.
 
         本端ID
 
@@ -289,7 +289,7 @@ class UpdateIkePolicy:
 
     @property
     def peer_id_type(self):
-        """Gets the peer_id_type of this UpdateIkePolicy.
+        r"""Gets the peer_id_type of this UpdateIkePolicy.
 
         对端ID类型
 
@@ -300,7 +300,7 @@ class UpdateIkePolicy:
 
     @peer_id_type.setter
     def peer_id_type(self, peer_id_type):
-        """Sets the peer_id_type of this UpdateIkePolicy.
+        r"""Sets the peer_id_type of this UpdateIkePolicy.
 
         对端ID类型
 
@@ -311,7 +311,7 @@ class UpdateIkePolicy:
 
     @property
     def peer_id(self):
-        """Gets the peer_id of this UpdateIkePolicy.
+        r"""Gets the peer_id of this UpdateIkePolicy.
 
         对端ID
 
@@ -322,7 +322,7 @@ class UpdateIkePolicy:
 
     @peer_id.setter
     def peer_id(self, peer_id):
-        """Sets the peer_id of this UpdateIkePolicy.
+        r"""Sets the peer_id of this UpdateIkePolicy.
 
         对端ID
 
@@ -333,7 +333,7 @@ class UpdateIkePolicy:
 
     @property
     def dpd(self):
-        """Gets the dpd of this UpdateIkePolicy.
+        r"""Gets the dpd of this UpdateIkePolicy.
 
         :return: The dpd of this UpdateIkePolicy.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateDpd`
@@ -342,7 +342,7 @@ class UpdateIkePolicy:
 
     @dpd.setter
     def dpd(self, dpd):
-        """Sets the dpd of this UpdateIkePolicy.
+        r"""Sets the dpd of this UpdateIkePolicy.
 
         :param dpd: The dpd of this UpdateIkePolicy.
         :type dpd: :class:`huaweicloudsdkvpn.v5.UpdateDpd`

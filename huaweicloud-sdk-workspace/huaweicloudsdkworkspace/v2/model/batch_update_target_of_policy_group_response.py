@@ -24,7 +24,7 @@ class BatchUpdateTargetOfPolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUpdateTargetOfPolicyGroupResponse
+        r"""BatchUpdateTargetOfPolicyGroupResponse
 
         The model defined in huaweicloud sdk
 

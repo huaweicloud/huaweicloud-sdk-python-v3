@@ -35,7 +35,7 @@ class GaussDBforOpenDatabaseForCreation:
     }
 
     def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None):
-        """GaussDBforOpenDatabaseForCreation
+        r"""GaussDBforOpenDatabaseForCreation
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @property
     def name(self):
-        """Gets the name of this GaussDBforOpenDatabaseForCreation.
+        r"""Gets the name of this GaussDBforOpenDatabaseForCreation.
 
         数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。 GaussDB 模板库包括postgres， template0 ，template1。
 
@@ -88,7 +88,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussDBforOpenDatabaseForCreation.
+        r"""Sets the name of this GaussDBforOpenDatabaseForCreation.
 
         数据库名称。  数据库名称长度可在1～63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。 GaussDB 模板库包括postgres， template0 ，template1。
 
@@ -99,7 +99,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @property
     def character_set(self):
-        """Gets the character_set of this GaussDBforOpenDatabaseForCreation.
+        r"""Gets the character_set of this GaussDBforOpenDatabaseForCreation.
 
         数据库字符集。默认C。
 
@@ -110,7 +110,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this GaussDBforOpenDatabaseForCreation.
+        r"""Sets the character_set of this GaussDBforOpenDatabaseForCreation.
 
         数据库字符集。默认C。
 
@@ -121,7 +121,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @property
     def owner(self):
-        """Gets the owner of this GaussDBforOpenDatabaseForCreation.
+        r"""Gets the owner of this GaussDBforOpenDatabaseForCreation.
 
         数据库所属用户，缺省时默认是root，不能和系统用户重名，且必须是已存在的用户。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”。
 
@@ -132,7 +132,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GaussDBforOpenDatabaseForCreation.
+        r"""Sets the owner of this GaussDBforOpenDatabaseForCreation.
 
         数据库所属用户，缺省时默认是root，不能和系统用户重名，且必须是已存在的用户。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”。
 
@@ -143,7 +143,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @property
     def template(self):
-        """Gets the template of this GaussDBforOpenDatabaseForCreation.
+        r"""Gets the template of this GaussDBforOpenDatabaseForCreation.
 
         数据库模板名称，仅为template0。
 
@@ -154,7 +154,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this GaussDBforOpenDatabaseForCreation.
+        r"""Sets the template of this GaussDBforOpenDatabaseForCreation.
 
         数据库模板名称，仅为template0。
 
@@ -165,7 +165,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @property
     def lc_collate(self):
-        """Gets the lc_collate of this GaussDBforOpenDatabaseForCreation.
+        r"""Gets the lc_collate of this GaussDBforOpenDatabaseForCreation.
 
         数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到GaussDB ，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
@@ -176,7 +176,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @lc_collate.setter
     def lc_collate(self, lc_collate):
-        """Sets the lc_collate of this GaussDBforOpenDatabaseForCreation.
+        r"""Sets the lc_collate of this GaussDBforOpenDatabaseForCreation.
 
         数据库排序集。默认默认C。  - 须知： 不同的排序规则下，相同字符串的比较其结果可能是不同的。 例如，在en_US.utf8下， select 'a'>'A';执行结果为false，但在'C'下，select 'a'>'A';结果为true。如果数据库从“O”迁移到GaussDB ，数据库排序集需使用'C'才能得到一致的预期。支持的排序规则可以查询系统表 pg_collation。
 
@@ -187,7 +187,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @property
     def lc_ctype(self):
-        """Gets the lc_ctype of this GaussDBforOpenDatabaseForCreation.
+        r"""Gets the lc_ctype of this GaussDBforOpenDatabaseForCreation.
 
         数据库分类集。默认C。
 
@@ -198,7 +198,7 @@ class GaussDBforOpenDatabaseForCreation:
 
     @lc_ctype.setter
     def lc_ctype(self, lc_ctype):
-        """Sets the lc_ctype of this GaussDBforOpenDatabaseForCreation.
+        r"""Sets the lc_ctype of this GaussDBforOpenDatabaseForCreation.
 
         数据库分类集。默认C。
 

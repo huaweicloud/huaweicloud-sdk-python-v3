@@ -28,7 +28,7 @@ class AssociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, gcbandwidths=None):
-        """AssociateGlobalConnectionBandwidthInstanceResponse
+        r"""AssociateGlobalConnectionBandwidthInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AssociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Gets the request_id of this AssociateGlobalConnectionBandwidthInstanceResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class AssociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AssociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Sets the request_id of this AssociateGlobalConnectionBandwidthInstanceResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class AssociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @property
     def gcbandwidths(self):
-        """Gets the gcbandwidths of this AssociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Gets the gcbandwidths of this AssociateGlobalConnectionBandwidthInstanceResponse.
 
         全域互联带宽绑定实例响应详情。
 
@@ -82,7 +82,7 @@ class AssociateGlobalConnectionBandwidthInstanceResponse(SdkResponse):
 
     @gcbandwidths.setter
     def gcbandwidths(self, gcbandwidths):
-        """Sets the gcbandwidths of this AssociateGlobalConnectionBandwidthInstanceResponse.
+        r"""Sets the gcbandwidths of this AssociateGlobalConnectionBandwidthInstanceResponse.
 
         全域互联带宽绑定实例响应详情。
 

@@ -27,7 +27,7 @@ class CreateCcRuleRequestBodyAction:
     }
 
     def __init__(self, category=None, detail=None):
-        """CreateCcRuleRequestBodyAction
+        r"""CreateCcRuleRequestBodyAction
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCcRuleRequestBodyAction:
 
     @property
     def category(self):
-        """Gets the category of this CreateCcRuleRequestBodyAction.
+        r"""Gets the category of this CreateCcRuleRequestBodyAction.
 
         动作类型：  - captcha：人机验证，阻断后用户需要输入正确的验证码，恢复正确的访问页面。  -block：阻断。   - log: 仅记录   - dynamic_block: 上一个限速周期内，请求频率超过“限速频率”将被阻断，那么在下一个限速周期内，请求频率超过“放行频率”将被阻断。注：只有当cc防护规则模式为高级模式时才支持设置dynamic_block防护动作。
 
@@ -60,7 +60,7 @@ class CreateCcRuleRequestBodyAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateCcRuleRequestBodyAction.
+        r"""Sets the category of this CreateCcRuleRequestBodyAction.
 
         动作类型：  - captcha：人机验证，阻断后用户需要输入正确的验证码，恢复正确的访问页面。  -block：阻断。   - log: 仅记录   - dynamic_block: 上一个限速周期内，请求频率超过“限速频率”将被阻断，那么在下一个限速周期内，请求频率超过“放行频率”将被阻断。注：只有当cc防护规则模式为高级模式时才支持设置dynamic_block防护动作。
 
@@ -71,7 +71,7 @@ class CreateCcRuleRequestBodyAction:
 
     @property
     def detail(self):
-        """Gets the detail of this CreateCcRuleRequestBodyAction.
+        r"""Gets the detail of this CreateCcRuleRequestBodyAction.
 
         :return: The detail of this CreateCcRuleRequestBodyAction.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyActionDetail`
@@ -80,7 +80,7 @@ class CreateCcRuleRequestBodyAction:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CreateCcRuleRequestBodyAction.
+        r"""Sets the detail of this CreateCcRuleRequestBodyAction.
 
         :param detail: The detail of this CreateCcRuleRequestBodyAction.
         :type detail: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyActionDetail`

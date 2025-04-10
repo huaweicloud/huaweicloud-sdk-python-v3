@@ -40,7 +40,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
     }
 
     def __init__(self, type=None, id=None, name=None, body=None, group=None, description=None, language=None, owner=None):
-        """ShowSparkJobTemplateResponse
+        r"""ShowSparkJobTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowSparkJobTemplateResponse.
+        r"""Gets the type of this ShowSparkJobTemplateResponse.
 
         模板类型
 
@@ -104,7 +104,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSparkJobTemplateResponse.
+        r"""Sets the type of this ShowSparkJobTemplateResponse.
 
         模板类型
 
@@ -115,7 +115,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSparkJobTemplateResponse.
+        r"""Gets the id of this ShowSparkJobTemplateResponse.
 
         模板id
 
@@ -126,7 +126,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSparkJobTemplateResponse.
+        r"""Sets the id of this ShowSparkJobTemplateResponse.
 
         模板id
 
@@ -137,7 +137,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowSparkJobTemplateResponse.
+        r"""Gets the name of this ShowSparkJobTemplateResponse.
 
         模板名字
 
@@ -148,7 +148,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowSparkJobTemplateResponse.
+        r"""Sets the name of this ShowSparkJobTemplateResponse.
 
         模板名字
 
@@ -159,7 +159,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowSparkJobTemplateResponse.
+        r"""Gets the body of this ShowSparkJobTemplateResponse.
 
         :return: The body of this ShowSparkJobTemplateResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
@@ -168,7 +168,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSparkJobTemplateResponse.
+        r"""Sets the body of this ShowSparkJobTemplateResponse.
 
         :param body: The body of this ShowSparkJobTemplateResponse.
         :type body: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
@@ -177,7 +177,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this ShowSparkJobTemplateResponse.
+        r"""Gets the group of this ShowSparkJobTemplateResponse.
 
         组名
 
@@ -188,7 +188,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowSparkJobTemplateResponse.
+        r"""Sets the group of this ShowSparkJobTemplateResponse.
 
         组名
 
@@ -199,7 +199,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowSparkJobTemplateResponse.
+        r"""Gets the description of this ShowSparkJobTemplateResponse.
 
         模板描述
 
@@ -210,7 +210,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowSparkJobTemplateResponse.
+        r"""Sets the description of this ShowSparkJobTemplateResponse.
 
         模板描述
 
@@ -221,7 +221,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowSparkJobTemplateResponse.
+        r"""Gets the language of this ShowSparkJobTemplateResponse.
 
         语言
 
@@ -232,7 +232,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowSparkJobTemplateResponse.
+        r"""Sets the language of this ShowSparkJobTemplateResponse.
 
         语言
 
@@ -243,7 +243,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowSparkJobTemplateResponse.
+        r"""Gets the owner of this ShowSparkJobTemplateResponse.
 
         模板拥有者
 
@@ -254,7 +254,7 @@ class ShowSparkJobTemplateResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowSparkJobTemplateResponse.
+        r"""Sets the owner of this ShowSparkJobTemplateResponse.
 
         模板拥有者
 

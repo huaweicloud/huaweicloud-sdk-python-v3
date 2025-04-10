@@ -25,7 +25,7 @@ class CreateConnectivityTaskRequestBody:
     }
 
     def __init__(self, address=None):
-        """CreateConnectivityTaskRequestBody
+        r"""CreateConnectivityTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateConnectivityTaskRequestBody:
 
     @property
     def address(self):
-        """Gets the address of this CreateConnectivityTaskRequestBody.
+        r"""Gets the address of this CreateConnectivityTaskRequestBody.
 
         测试地址
 
@@ -53,7 +53,7 @@ class CreateConnectivityTaskRequestBody:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CreateConnectivityTaskRequestBody.
+        r"""Sets the address of this CreateConnectivityTaskRequestBody.
 
         测试地址
 

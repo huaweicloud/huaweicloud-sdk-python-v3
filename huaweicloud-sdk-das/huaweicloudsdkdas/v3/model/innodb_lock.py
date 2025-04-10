@@ -43,7 +43,7 @@ class InnodbLock:
     }
 
     def __init__(self, lock_id=None, lock_trx_id=None, lock_mode=None, lock_type=None, lock_table=None, lock_index=None, lock_space=None, lock_page=None, lock_rec=None, lock_data=None):
-        """InnodbLock
+        r"""InnodbLock
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class InnodbLock:
 
     @property
     def lock_id(self):
-        """Gets the lock_id of this InnodbLock.
+        r"""Gets the lock_id of this InnodbLock.
 
         锁ID
 
@@ -107,7 +107,7 @@ class InnodbLock:
 
     @lock_id.setter
     def lock_id(self, lock_id):
-        """Sets the lock_id of this InnodbLock.
+        r"""Sets the lock_id of this InnodbLock.
 
         锁ID
 
@@ -118,7 +118,7 @@ class InnodbLock:
 
     @property
     def lock_trx_id(self):
-        """Gets the lock_trx_id of this InnodbLock.
+        r"""Gets the lock_trx_id of this InnodbLock.
 
         事务ID
 
@@ -129,7 +129,7 @@ class InnodbLock:
 
     @lock_trx_id.setter
     def lock_trx_id(self, lock_trx_id):
-        """Sets the lock_trx_id of this InnodbLock.
+        r"""Sets the lock_trx_id of this InnodbLock.
 
         事务ID
 
@@ -140,7 +140,7 @@ class InnodbLock:
 
     @property
     def lock_mode(self):
-        """Gets the lock_mode of this InnodbLock.
+        r"""Gets the lock_mode of this InnodbLock.
 
         锁模式，取值为S[,GAP], X[,GAP], IS[,GAP], IX[,GAP], AUTO_INC, and UNKNOWN。
 
@@ -151,7 +151,7 @@ class InnodbLock:
 
     @lock_mode.setter
     def lock_mode(self, lock_mode):
-        """Sets the lock_mode of this InnodbLock.
+        r"""Sets the lock_mode of this InnodbLock.
 
         锁模式，取值为S[,GAP], X[,GAP], IS[,GAP], IX[,GAP], AUTO_INC, and UNKNOWN。
 
@@ -162,7 +162,7 @@ class InnodbLock:
 
     @property
     def lock_type(self):
-        """Gets the lock_type of this InnodbLock.
+        r"""Gets the lock_type of this InnodbLock.
 
         锁类型，取值为RECORD或TABLE。RECORD为行锁, TABLE为表锁
 
@@ -173,7 +173,7 @@ class InnodbLock:
 
     @lock_type.setter
     def lock_type(self, lock_type):
-        """Sets the lock_type of this InnodbLock.
+        r"""Sets the lock_type of this InnodbLock.
 
         锁类型，取值为RECORD或TABLE。RECORD为行锁, TABLE为表锁
 
@@ -184,7 +184,7 @@ class InnodbLock:
 
     @property
     def lock_table(self):
-        """Gets the lock_table of this InnodbLock.
+        r"""Gets the lock_table of this InnodbLock.
 
         加锁的表
 
@@ -195,7 +195,7 @@ class InnodbLock:
 
     @lock_table.setter
     def lock_table(self, lock_table):
-        """Sets the lock_table of this InnodbLock.
+        r"""Sets the lock_table of this InnodbLock.
 
         加锁的表
 
@@ -206,7 +206,7 @@ class InnodbLock:
 
     @property
     def lock_index(self):
-        """Gets the lock_index of this InnodbLock.
+        r"""Gets the lock_index of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的索引，如果是表锁为null
 
@@ -217,7 +217,7 @@ class InnodbLock:
 
     @lock_index.setter
     def lock_index(self, lock_index):
-        """Sets the lock_index of this InnodbLock.
+        r"""Sets the lock_index of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的索引，如果是表锁为null
 
@@ -228,7 +228,7 @@ class InnodbLock:
 
     @property
     def lock_space(self):
-        """Gets the lock_space of this InnodbLock.
+        r"""Gets the lock_space of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的索引，如果是表锁为null
 
@@ -239,7 +239,7 @@ class InnodbLock:
 
     @lock_space.setter
     def lock_space(self, lock_space):
-        """Sets the lock_space of this InnodbLock.
+        r"""Sets the lock_space of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的索引，如果是表锁为null
 
@@ -250,7 +250,7 @@ class InnodbLock:
 
     @property
     def lock_page(self):
-        """Gets the lock_page of this InnodbLock.
+        r"""Gets the lock_page of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的页号，如果是表锁为null
 
@@ -261,7 +261,7 @@ class InnodbLock:
 
     @lock_page.setter
     def lock_page(self, lock_page):
-        """Sets the lock_page of this InnodbLock.
+        r"""Sets the lock_page of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的页号，如果是表锁为null
 
@@ -272,7 +272,7 @@ class InnodbLock:
 
     @property
     def lock_rec(self):
-        """Gets the lock_rec of this InnodbLock.
+        r"""Gets the lock_rec of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的堆号，如果是表锁为null
 
@@ -283,7 +283,7 @@ class InnodbLock:
 
     @lock_rec.setter
     def lock_rec(self, lock_rec):
-        """Sets the lock_rec of this InnodbLock.
+        r"""Sets the lock_rec of this InnodbLock.
 
         如果是lock_type='RECORD' 行级锁 ,为锁住的堆号，如果是表锁为null
 
@@ -294,7 +294,7 @@ class InnodbLock:
 
     @property
     def lock_data(self):
-        """Gets the lock_data of this InnodbLock.
+        r"""Gets the lock_data of this InnodbLock.
 
         事务锁住的主键值，若是表锁，则该值为null
 
@@ -305,7 +305,7 @@ class InnodbLock:
 
     @lock_data.setter
     def lock_data(self, lock_data):
-        """Sets the lock_data of this InnodbLock.
+        r"""Sets the lock_data of this InnodbLock.
 
         事务锁住的主键值，若是表锁，则该值为null
 

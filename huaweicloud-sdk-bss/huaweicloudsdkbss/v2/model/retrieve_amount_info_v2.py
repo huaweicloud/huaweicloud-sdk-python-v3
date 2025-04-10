@@ -35,7 +35,7 @@ class RetrieveAmountInfoV2:
     }
 
     def __init__(self, avail_retrieve_amount=None, measure_id=None, currency=None, amount=None, credit_amount=None, expire_time=None):
-        """RetrieveAmountInfoV2
+        r"""RetrieveAmountInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RetrieveAmountInfoV2:
 
     @property
     def avail_retrieve_amount(self):
-        """Gets the avail_retrieve_amount of this RetrieveAmountInfoV2.
+        r"""Gets the avail_retrieve_amount of this RetrieveAmountInfoV2.
 
         可回收的金额。
 
@@ -89,7 +89,7 @@ class RetrieveAmountInfoV2:
 
     @avail_retrieve_amount.setter
     def avail_retrieve_amount(self, avail_retrieve_amount):
-        """Sets the avail_retrieve_amount of this RetrieveAmountInfoV2.
+        r"""Sets the avail_retrieve_amount of this RetrieveAmountInfoV2.
 
         可回收的金额。
 
@@ -100,7 +100,7 @@ class RetrieveAmountInfoV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this RetrieveAmountInfoV2.
+        r"""Gets the measure_id of this RetrieveAmountInfoV2.
 
         金额单位。 1：元
 
@@ -111,7 +111,7 @@ class RetrieveAmountInfoV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this RetrieveAmountInfoV2.
+        r"""Sets the measure_id of this RetrieveAmountInfoV2.
 
         金额单位。 1：元
 
@@ -122,7 +122,7 @@ class RetrieveAmountInfoV2:
 
     @property
     def currency(self):
-        """Gets the currency of this RetrieveAmountInfoV2.
+        r"""Gets the currency of this RetrieveAmountInfoV2.
 
         币种。 CNY：人民币
 
@@ -133,7 +133,7 @@ class RetrieveAmountInfoV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this RetrieveAmountInfoV2.
+        r"""Sets the currency of this RetrieveAmountInfoV2.
 
         币种。 CNY：人民币
 
@@ -144,7 +144,7 @@ class RetrieveAmountInfoV2:
 
     @property
     def amount(self):
-        """Gets the amount of this RetrieveAmountInfoV2.
+        r"""Gets the amount of this RetrieveAmountInfoV2.
 
         账户余额（仅balance_type=信用账户时这个字段才有值）。
 
@@ -155,7 +155,7 @@ class RetrieveAmountInfoV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this RetrieveAmountInfoV2.
+        r"""Sets the amount of this RetrieveAmountInfoV2.
 
         账户余额（仅balance_type=信用账户时这个字段才有值）。
 
@@ -166,7 +166,7 @@ class RetrieveAmountInfoV2:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this RetrieveAmountInfoV2.
+        r"""Gets the credit_amount of this RetrieveAmountInfoV2.
 
         信用额度（仅balance_type=信用账户时这个字段才有值）。
 
@@ -177,7 +177,7 @@ class RetrieveAmountInfoV2:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this RetrieveAmountInfoV2.
+        r"""Sets the credit_amount of this RetrieveAmountInfoV2.
 
         信用额度（仅balance_type=信用账户时这个字段才有值）。
 
@@ -188,7 +188,7 @@ class RetrieveAmountInfoV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this RetrieveAmountInfoV2.
+        r"""Gets the expire_time of this RetrieveAmountInfoV2.
 
         信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效。
 
@@ -199,7 +199,7 @@ class RetrieveAmountInfoV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this RetrieveAmountInfoV2.
+        r"""Sets the expire_time of this RetrieveAmountInfoV2.
 
         信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效。
 

@@ -26,7 +26,7 @@ class CreateDiagnosisTaskResponse(SdkResponse):
     }
 
     def __init__(self, report_id=None):
-        """CreateDiagnosisTaskResponse
+        r"""CreateDiagnosisTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDiagnosisTaskResponse(SdkResponse):
 
     @property
     def report_id(self):
-        """Gets the report_id of this CreateDiagnosisTaskResponse.
+        r"""Gets the report_id of this CreateDiagnosisTaskResponse.
 
         报告ID
 
@@ -55,7 +55,7 @@ class CreateDiagnosisTaskResponse(SdkResponse):
 
     @report_id.setter
     def report_id(self, report_id):
-        """Sets the report_id of this CreateDiagnosisTaskResponse.
+        r"""Sets the report_id of this CreateDiagnosisTaskResponse.
 
         报告ID
 

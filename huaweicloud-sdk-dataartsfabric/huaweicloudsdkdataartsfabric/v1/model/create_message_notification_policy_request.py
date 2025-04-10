@@ -27,7 +27,7 @@ class CreateMessageNotificationPolicyRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """CreateMessageNotificationPolicyRequest
+        r"""CreateMessageNotificationPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMessageNotificationPolicyRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateMessageNotificationPolicyRequest.
+        r"""Gets the workspace_id of this CreateMessageNotificationPolicyRequest.
 
         Workspace的ID
 
@@ -60,7 +60,7 @@ class CreateMessageNotificationPolicyRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateMessageNotificationPolicyRequest.
+        r"""Sets the workspace_id of this CreateMessageNotificationPolicyRequest.
 
         Workspace的ID
 
@@ -71,7 +71,7 @@ class CreateMessageNotificationPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMessageNotificationPolicyRequest.
+        r"""Gets the body of this CreateMessageNotificationPolicyRequest.
 
         :return: The body of this CreateMessageNotificationPolicyRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CreateMessageNotificationPolicyRequestBody`
@@ -80,7 +80,7 @@ class CreateMessageNotificationPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMessageNotificationPolicyRequest.
+        r"""Sets the body of this CreateMessageNotificationPolicyRequest.
 
         :param body: The body of this CreateMessageNotificationPolicyRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.CreateMessageNotificationPolicyRequestBody`

@@ -27,7 +27,7 @@ class FailedKeypair:
     }
 
     def __init__(self, keypair_name=None, failed_reason=None):
-        """FailedKeypair
+        r"""FailedKeypair
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FailedKeypair:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this FailedKeypair.
+        r"""Gets the keypair_name of this FailedKeypair.
 
         SSH密钥对名称
 
@@ -59,7 +59,7 @@ class FailedKeypair:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this FailedKeypair.
+        r"""Sets the keypair_name of this FailedKeypair.
 
         SSH密钥对名称
 
@@ -70,7 +70,7 @@ class FailedKeypair:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this FailedKeypair.
+        r"""Gets the failed_reason of this FailedKeypair.
 
         导入失败的原因
 
@@ -81,7 +81,7 @@ class FailedKeypair:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this FailedKeypair.
+        r"""Sets the failed_reason of this FailedKeypair.
 
         导入失败的原因
 

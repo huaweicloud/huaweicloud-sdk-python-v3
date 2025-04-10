@@ -30,7 +30,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
     }
 
     def __init__(self, interval_millis=None, top_sql_trend_items=None, total_count=None):
-        """ExportTopSqlTrendDetailsResponse
+        r"""ExportTopSqlTrendDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
     @property
     def interval_millis(self):
-        """Gets the interval_millis of this ExportTopSqlTrendDetailsResponse.
+        r"""Gets the interval_millis of this ExportTopSqlTrendDetailsResponse.
 
         返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s。单位为毫秒。
 
@@ -69,7 +69,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
     @interval_millis.setter
     def interval_millis(self, interval_millis):
-        """Sets the interval_millis of this ExportTopSqlTrendDetailsResponse.
+        r"""Sets the interval_millis of this ExportTopSqlTrendDetailsResponse.
 
         返回列表两个时间点之间的时间间隔。总查询时长一小时之内间隔10s，一小时到六小时范围内间隔60s。单位为毫秒。
 
@@ -80,7 +80,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
     @property
     def top_sql_trend_items(self):
-        """Gets the top_sql_trend_items of this ExportTopSqlTrendDetailsResponse.
+        r"""Gets the top_sql_trend_items of this ExportTopSqlTrendDetailsResponse.
 
         SQL执行耗时区间数据。
 
@@ -91,7 +91,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
     @top_sql_trend_items.setter
     def top_sql_trend_items(self, top_sql_trend_items):
-        """Sets the top_sql_trend_items of this ExportTopSqlTrendDetailsResponse.
+        r"""Sets the top_sql_trend_items of this ExportTopSqlTrendDetailsResponse.
 
         SQL执行耗时区间数据。
 
@@ -102,7 +102,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ExportTopSqlTrendDetailsResponse.
+        r"""Gets the total_count of this ExportTopSqlTrendDetailsResponse.
 
         耗时区间数据总数。
 
@@ -113,7 +113,7 @@ class ExportTopSqlTrendDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ExportTopSqlTrendDetailsResponse.
+        r"""Sets the total_count of this ExportTopSqlTrendDetailsResponse.
 
         耗时区间数据总数。
 

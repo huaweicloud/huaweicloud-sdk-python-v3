@@ -27,7 +27,7 @@ class UpdateDataSourceRequest:
     }
 
     def __init__(self, datasource_id=None, body=None):
-        """UpdateDataSourceRequest
+        r"""UpdateDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDataSourceRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this UpdateDataSourceRequest.
+        r"""Gets the datasource_id of this UpdateDataSourceRequest.
 
         数据源id
 
@@ -60,7 +60,7 @@ class UpdateDataSourceRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this UpdateDataSourceRequest.
+        r"""Sets the datasource_id of this UpdateDataSourceRequest.
 
         数据源id
 
@@ -71,7 +71,7 @@ class UpdateDataSourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataSourceRequest.
+        r"""Gets the body of this UpdateDataSourceRequest.
 
         :return: The body of this UpdateDataSourceRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDatasourceReqDTO`
@@ -80,7 +80,7 @@ class UpdateDataSourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataSourceRequest.
+        r"""Sets the body of this UpdateDataSourceRequest.
 
         :param body: The body of this UpdateDataSourceRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.UpdateDatasourceReqDTO`

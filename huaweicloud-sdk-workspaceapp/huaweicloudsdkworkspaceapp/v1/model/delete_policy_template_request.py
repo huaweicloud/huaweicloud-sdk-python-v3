@@ -25,7 +25,7 @@ class DeletePolicyTemplateRequest:
     }
 
     def __init__(self, policy_template_id=None):
-        """DeletePolicyTemplateRequest
+        r"""DeletePolicyTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePolicyTemplateRequest:
 
     @property
     def policy_template_id(self):
-        """Gets the policy_template_id of this DeletePolicyTemplateRequest.
+        r"""Gets the policy_template_id of this DeletePolicyTemplateRequest.
 
         策略模板id。
 
@@ -53,7 +53,7 @@ class DeletePolicyTemplateRequest:
 
     @policy_template_id.setter
     def policy_template_id(self, policy_template_id):
-        """Sets the policy_template_id of this DeletePolicyTemplateRequest.
+        r"""Sets the policy_template_id of this DeletePolicyTemplateRequest.
 
         策略模板id。
 

@@ -28,7 +28,7 @@ class KeystoneValidateTokenRequest:
     }
 
     def __init__(self, x_subject_token=None, nocatalog=None):
-        """KeystoneValidateTokenRequest
+        r"""KeystoneValidateTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeystoneValidateTokenRequest:
 
     @property
     def x_subject_token(self):
-        """Gets the x_subject_token of this KeystoneValidateTokenRequest.
+        r"""Gets the x_subject_token of this KeystoneValidateTokenRequest.
 
         待校验的token。
 
@@ -61,7 +61,7 @@ class KeystoneValidateTokenRequest:
 
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
-        """Sets the x_subject_token of this KeystoneValidateTokenRequest.
+        r"""Sets the x_subject_token of this KeystoneValidateTokenRequest.
 
         待校验的token。
 
@@ -72,7 +72,7 @@ class KeystoneValidateTokenRequest:
 
     @property
     def nocatalog(self):
-        """Gets the nocatalog of this KeystoneValidateTokenRequest.
+        r"""Gets the nocatalog of this KeystoneValidateTokenRequest.
 
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
@@ -83,7 +83,7 @@ class KeystoneValidateTokenRequest:
 
     @nocatalog.setter
     def nocatalog(self, nocatalog):
-        """Sets the nocatalog of this KeystoneValidateTokenRequest.
+        r"""Sets the nocatalog of this KeystoneValidateTokenRequest.
 
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 

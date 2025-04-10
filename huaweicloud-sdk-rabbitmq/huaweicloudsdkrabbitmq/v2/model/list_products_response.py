@@ -28,7 +28,7 @@ class ListProductsResponse(SdkResponse):
     }
 
     def __init__(self, hourly=None, monthly=None):
-        """ListProductsResponse
+        r"""ListProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def hourly(self):
-        """Gets the hourly of this ListProductsResponse.
+        r"""Gets the hourly of this ListProductsResponse.
 
         表示按需付费的产品列表。
 
@@ -62,7 +62,7 @@ class ListProductsResponse(SdkResponse):
 
     @hourly.setter
     def hourly(self, hourly):
-        """Sets the hourly of this ListProductsResponse.
+        r"""Sets the hourly of this ListProductsResponse.
 
         表示按需付费的产品列表。
 
@@ -73,7 +73,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def monthly(self):
-        """Gets the monthly of this ListProductsResponse.
+        r"""Gets the monthly of this ListProductsResponse.
 
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的rabbitmq实例。
 
@@ -84,7 +84,7 @@ class ListProductsResponse(SdkResponse):
 
     @monthly.setter
     def monthly(self, monthly):
-        """Sets the monthly of this ListProductsResponse.
+        r"""Sets the monthly of this ListProductsResponse.
 
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的rabbitmq实例。
 

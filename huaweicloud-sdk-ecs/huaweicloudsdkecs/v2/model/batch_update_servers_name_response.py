@@ -26,7 +26,7 @@ class BatchUpdateServersNameResponse(SdkResponse):
     }
 
     def __init__(self, response=None):
-        """BatchUpdateServersNameResponse
+        r"""BatchUpdateServersNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateServersNameResponse(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this BatchUpdateServersNameResponse.
+        r"""Gets the response of this BatchUpdateServersNameResponse.
 
         提交请求成功后返回的响应列表。
 
@@ -55,7 +55,7 @@ class BatchUpdateServersNameResponse(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this BatchUpdateServersNameResponse.
+        r"""Sets the response of this BatchUpdateServersNameResponse.
 
         提交请求成功后返回的响应列表。
 

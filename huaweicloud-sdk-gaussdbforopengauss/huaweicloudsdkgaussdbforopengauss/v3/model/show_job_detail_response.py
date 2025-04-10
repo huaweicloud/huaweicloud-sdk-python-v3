@@ -26,7 +26,7 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, job=None):
-        """ShowJobDetailResponse
+        r"""ShowJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this ShowJobDetailResponse.
+        r"""Gets the job of this ShowJobDetailResponse.
 
         :return: The job of this ShowJobDetailResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.JobDetail`
@@ -53,7 +53,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this ShowJobDetailResponse.
+        r"""Sets the job of this ShowJobDetailResponse.
 
         :param job: The job of this ShowJobDetailResponse.
         :type job: :class:`huaweicloudsdkgaussdbforopengauss.v3.JobDetail`

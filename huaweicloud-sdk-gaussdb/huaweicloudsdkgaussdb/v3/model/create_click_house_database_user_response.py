@@ -26,7 +26,7 @@ class CreateClickHouseDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CreateClickHouseDatabaseUserResponse
+        r"""CreateClickHouseDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateClickHouseDatabaseUserResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateClickHouseDatabaseUserResponse.
+        r"""Gets the result of this CreateClickHouseDatabaseUserResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class CreateClickHouseDatabaseUserResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateClickHouseDatabaseUserResponse.
+        r"""Sets the result of this CreateClickHouseDatabaseUserResponse.
 
         请求结果。
 

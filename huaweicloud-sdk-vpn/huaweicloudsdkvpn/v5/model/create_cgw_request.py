@@ -25,7 +25,7 @@ class CreateCgwRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCgwRequest
+        r"""CreateCgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCgwRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCgwRequest.
+        r"""Gets the body of this CreateCgwRequest.
 
         :return: The body of this CreateCgwRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateCgwRequestBody`
@@ -52,7 +52,7 @@ class CreateCgwRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCgwRequest.
+        r"""Sets the body of this CreateCgwRequest.
 
         :param body: The body of this CreateCgwRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateCgwRequestBody`

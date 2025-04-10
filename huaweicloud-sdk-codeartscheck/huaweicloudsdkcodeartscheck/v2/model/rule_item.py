@@ -37,7 +37,7 @@ class RuleItem:
     }
 
     def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, checked=None, rule_config_list=None):
-        """RuleItem
+        r"""RuleItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RuleItem:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RuleItem.
+        r"""Gets the rule_id of this RuleItem.
 
         规则id
 
@@ -96,7 +96,7 @@ class RuleItem:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RuleItem.
+        r"""Sets the rule_id of this RuleItem.
 
         规则id
 
@@ -107,7 +107,7 @@ class RuleItem:
 
     @property
     def rule_language(self):
-        """Gets the rule_language of this RuleItem.
+        r"""Gets the rule_language of this RuleItem.
 
         规则所属语言
 
@@ -118,7 +118,7 @@ class RuleItem:
 
     @rule_language.setter
     def rule_language(self, rule_language):
-        """Sets the rule_language of this RuleItem.
+        r"""Sets the rule_language of this RuleItem.
 
         规则所属语言
 
@@ -129,7 +129,7 @@ class RuleItem:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this RuleItem.
+        r"""Gets the rule_name of this RuleItem.
 
         规则名称
 
@@ -140,7 +140,7 @@ class RuleItem:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this RuleItem.
+        r"""Sets the rule_name of this RuleItem.
 
         规则名称
 
@@ -151,7 +151,7 @@ class RuleItem:
 
     @property
     def rule_severity(self):
-        """Gets the rule_severity of this RuleItem.
+        r"""Gets the rule_severity of this RuleItem.
 
         规则问题级别
 
@@ -162,7 +162,7 @@ class RuleItem:
 
     @rule_severity.setter
     def rule_severity(self, rule_severity):
-        """Sets the rule_severity of this RuleItem.
+        r"""Sets the rule_severity of this RuleItem.
 
         规则问题级别
 
@@ -173,7 +173,7 @@ class RuleItem:
 
     @property
     def rule_tages(self):
-        """Gets the rule_tages of this RuleItem.
+        r"""Gets the rule_tages of this RuleItem.
 
         规则标签
 
@@ -184,7 +184,7 @@ class RuleItem:
 
     @rule_tages.setter
     def rule_tages(self, rule_tages):
-        """Sets the rule_tages of this RuleItem.
+        r"""Sets the rule_tages of this RuleItem.
 
         规则标签
 
@@ -195,7 +195,7 @@ class RuleItem:
 
     @property
     def checked(self):
-        """Gets the checked of this RuleItem.
+        r"""Gets the checked of this RuleItem.
 
         规则状态0：未启用，1：已启用
 
@@ -206,7 +206,7 @@ class RuleItem:
 
     @checked.setter
     def checked(self, checked):
-        """Sets the checked of this RuleItem.
+        r"""Sets the checked of this RuleItem.
 
         规则状态0：未启用，1：已启用
 
@@ -217,7 +217,7 @@ class RuleItem:
 
     @property
     def rule_config_list(self):
-        """Gets the rule_config_list of this RuleItem.
+        r"""Gets the rule_config_list of this RuleItem.
 
         规则配置参数阈值相关信息
 
@@ -228,7 +228,7 @@ class RuleItem:
 
     @rule_config_list.setter
     def rule_config_list(self, rule_config_list):
-        """Sets the rule_config_list of this RuleItem.
+        r"""Sets the rule_config_list of this RuleItem.
 
         规则配置参数阈值相关信息
 

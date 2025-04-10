@@ -25,7 +25,7 @@ class AddTunnelDto:
     }
 
     def __init__(self, device_id=None):
-        """AddTunnelDto
+        r"""AddTunnelDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddTunnelDto:
 
     @property
     def device_id(self):
-        """Gets the device_id of this AddTunnelDto.
+        r"""Gets the device_id of this AddTunnelDto.
 
         **参数说明**：设备ID
 
@@ -53,7 +53,7 @@ class AddTunnelDto:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this AddTunnelDto.
+        r"""Sets the device_id of this AddTunnelDto.
 
         **参数说明**：设备ID
 

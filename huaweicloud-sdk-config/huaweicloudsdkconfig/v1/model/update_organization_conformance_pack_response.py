@@ -40,7 +40,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
     }
 
     def __init__(self, org_conformance_pack_id=None, org_conformance_pack_name=None, owner_id=None, organization_id=None, org_conformance_pack_urn=None, vars_structure=None, created_at=None, updated_at=None):
-        """UpdateOrganizationConformancePackResponse
+        r"""UpdateOrganizationConformancePackResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def org_conformance_pack_id(self):
-        """Gets the org_conformance_pack_id of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the org_conformance_pack_id of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包ID。
 
@@ -104,7 +104,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @org_conformance_pack_id.setter
     def org_conformance_pack_id(self, org_conformance_pack_id):
-        """Sets the org_conformance_pack_id of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the org_conformance_pack_id of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包ID。
 
@@ -115,7 +115,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def org_conformance_pack_name(self):
-        """Gets the org_conformance_pack_name of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the org_conformance_pack_name of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包名称。
 
@@ -126,7 +126,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @org_conformance_pack_name.setter
     def org_conformance_pack_name(self, org_conformance_pack_name):
-        """Sets the org_conformance_pack_name of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the org_conformance_pack_name of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包名称。
 
@@ -137,7 +137,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the owner_id of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包创建者。
 
@@ -148,7 +148,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the owner_id of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包创建者。
 
@@ -159,7 +159,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the organization_id of this UpdateOrganizationConformancePackResponse.
 
         组织ID
 
@@ -170,7 +170,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the organization_id of this UpdateOrganizationConformancePackResponse.
 
         组织ID
 
@@ -181,7 +181,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def org_conformance_pack_urn(self):
-        """Gets the org_conformance_pack_urn of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the org_conformance_pack_urn of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包资源唯一标识。
 
@@ -192,7 +192,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @org_conformance_pack_urn.setter
     def org_conformance_pack_urn(self, org_conformance_pack_urn):
-        """Sets the org_conformance_pack_urn of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the org_conformance_pack_urn of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包资源唯一标识。
 
@@ -203,7 +203,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the vars_structure of this UpdateOrganizationConformancePackResponse.
 
         合规规则包参数。
 
@@ -214,7 +214,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the vars_structure of this UpdateOrganizationConformancePackResponse.
 
         合规规则包参数。
 
@@ -225,7 +225,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the created_at of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包创建时间。
 
@@ -236,7 +236,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the created_at of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包创建时间。
 
@@ -247,7 +247,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateOrganizationConformancePackResponse.
+        r"""Gets the updated_at of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包更新时间。
 
@@ -258,7 +258,7 @@ class UpdateOrganizationConformancePackResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateOrganizationConformancePackResponse.
+        r"""Sets the updated_at of this UpdateOrganizationConformancePackResponse.
 
         组织合规规则包更新时间。
 

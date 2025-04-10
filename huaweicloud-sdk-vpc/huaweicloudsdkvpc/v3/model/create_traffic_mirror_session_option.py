@@ -45,7 +45,7 @@ class CreateTrafficMirrorSessionOption:
     }
 
     def __init__(self, name=None, description=None, traffic_mirror_filter_id=None, traffic_mirror_sources=None, traffic_mirror_target_id=None, traffic_mirror_target_type=None, virtual_network_id=None, packet_length=None, priority=None, enabled=None, type=None):
-        """CreateTrafficMirrorSessionOption
+        r"""CreateTrafficMirrorSessionOption
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateTrafficMirrorSessionOption.
+        r"""Gets the name of this CreateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -118,7 +118,7 @@ class CreateTrafficMirrorSessionOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTrafficMirrorSessionOption.
+        r"""Sets the name of this CreateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -129,7 +129,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateTrafficMirrorSessionOption.
+        r"""Gets the description of this CreateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -140,7 +140,7 @@ class CreateTrafficMirrorSessionOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTrafficMirrorSessionOption.
+        r"""Sets the description of this CreateTrafficMirrorSessionOption.
 
         功能说明：流量镜像会话的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -151,7 +151,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_filter_id(self):
-        """Gets the traffic_mirror_filter_id of this CreateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_filter_id of this CreateTrafficMirrorSessionOption.
 
         功能说明：流量镜像筛选条件ID
 
@@ -162,7 +162,7 @@ class CreateTrafficMirrorSessionOption:
 
     @traffic_mirror_filter_id.setter
     def traffic_mirror_filter_id(self, traffic_mirror_filter_id):
-        """Sets the traffic_mirror_filter_id of this CreateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_filter_id of this CreateTrafficMirrorSessionOption.
 
         功能说明：流量镜像筛选条件ID
 
@@ -173,7 +173,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_sources(self):
-        """Gets the traffic_mirror_sources of this CreateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_sources of this CreateTrafficMirrorSessionOption.
 
         功能说明：镜像源ID列表，支持弹性网卡作为镜像源。 约束：一个镜像会话默认最大支持10个镜像源。
 
@@ -184,7 +184,7 @@ class CreateTrafficMirrorSessionOption:
 
     @traffic_mirror_sources.setter
     def traffic_mirror_sources(self, traffic_mirror_sources):
-        """Sets the traffic_mirror_sources of this CreateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_sources of this CreateTrafficMirrorSessionOption.
 
         功能说明：镜像源ID列表，支持弹性网卡作为镜像源。 约束：一个镜像会话默认最大支持10个镜像源。
 
@@ -195,7 +195,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_target_id(self):
-        """Gets the traffic_mirror_target_id of this CreateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_target_id of this CreateTrafficMirrorSessionOption.
 
         功能说明：镜像目的ID
 
@@ -206,7 +206,7 @@ class CreateTrafficMirrorSessionOption:
 
     @traffic_mirror_target_id.setter
     def traffic_mirror_target_id(self, traffic_mirror_target_id):
-        """Sets the traffic_mirror_target_id of this CreateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_target_id of this CreateTrafficMirrorSessionOption.
 
         功能说明：镜像目的ID
 
@@ -217,7 +217,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def traffic_mirror_target_type(self):
-        """Gets the traffic_mirror_target_type of this CreateTrafficMirrorSessionOption.
+        r"""Gets the traffic_mirror_target_type of this CreateTrafficMirrorSessionOption.
 
         功能说明：镜像目的类型 取值范围：     eni：弹性网卡     elb：私网弹性负载均衡
 
@@ -228,7 +228,7 @@ class CreateTrafficMirrorSessionOption:
 
     @traffic_mirror_target_type.setter
     def traffic_mirror_target_type(self, traffic_mirror_target_type):
-        """Sets the traffic_mirror_target_type of this CreateTrafficMirrorSessionOption.
+        r"""Sets the traffic_mirror_target_type of this CreateTrafficMirrorSessionOption.
 
         功能说明：镜像目的类型 取值范围：     eni：弹性网卡     elb：私网弹性负载均衡
 
@@ -239,7 +239,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def virtual_network_id(self):
-        """Gets the virtual_network_id of this CreateTrafficMirrorSessionOption.
+        r"""Gets the virtual_network_id of this CreateTrafficMirrorSessionOption.
 
         功能说明：指定VNI，用于区分不同会话的镜像流量 取值范围：0~16777215 默认值：1
 
@@ -250,7 +250,7 @@ class CreateTrafficMirrorSessionOption:
 
     @virtual_network_id.setter
     def virtual_network_id(self, virtual_network_id):
-        """Sets the virtual_network_id of this CreateTrafficMirrorSessionOption.
+        r"""Sets the virtual_network_id of this CreateTrafficMirrorSessionOption.
 
         功能说明：指定VNI，用于区分不同会话的镜像流量 取值范围：0~16777215 默认值：1
 
@@ -261,7 +261,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def packet_length(self):
-        """Gets the packet_length of this CreateTrafficMirrorSessionOption.
+        r"""Gets the packet_length of this CreateTrafficMirrorSessionOption.
 
         功能说明：最大传输单元MTU 取值范围：1~1460 默认值：96
 
@@ -272,7 +272,7 @@ class CreateTrafficMirrorSessionOption:
 
     @packet_length.setter
     def packet_length(self, packet_length):
-        """Sets the packet_length of this CreateTrafficMirrorSessionOption.
+        r"""Sets the packet_length of this CreateTrafficMirrorSessionOption.
 
         功能说明：最大传输单元MTU 取值范围：1~1460 默认值：96
 
@@ -283,7 +283,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateTrafficMirrorSessionOption.
+        r"""Gets the priority of this CreateTrafficMirrorSessionOption.
 
         功能说明：会话优先级 取值范围：1~32766
 
@@ -294,7 +294,7 @@ class CreateTrafficMirrorSessionOption:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateTrafficMirrorSessionOption.
+        r"""Sets the priority of this CreateTrafficMirrorSessionOption.
 
         功能说明：会话优先级 取值范围：1~32766
 
@@ -305,7 +305,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateTrafficMirrorSessionOption.
+        r"""Gets the enabled of this CreateTrafficMirrorSessionOption.
 
         功能说明：是否开启会话 取值范围：true、false 默认值：false
 
@@ -316,7 +316,7 @@ class CreateTrafficMirrorSessionOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateTrafficMirrorSessionOption.
+        r"""Sets the enabled of this CreateTrafficMirrorSessionOption.
 
         功能说明：是否开启会话 取值范围：true、false 默认值：false
 
@@ -327,7 +327,7 @@ class CreateTrafficMirrorSessionOption:
 
     @property
     def type(self):
-        """Gets the type of this CreateTrafficMirrorSessionOption.
+        r"""Gets the type of this CreateTrafficMirrorSessionOption.
 
         功能说明：支持的镜像源类型 取值范围：     eni：弹性网卡
 
@@ -338,7 +338,7 @@ class CreateTrafficMirrorSessionOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateTrafficMirrorSessionOption.
+        r"""Sets the type of this CreateTrafficMirrorSessionOption.
 
         功能说明：支持的镜像源类型 取值范围：     eni：弹性网卡
 

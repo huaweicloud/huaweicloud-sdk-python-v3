@@ -29,7 +29,7 @@ class ListTrustedIpAddressesRequest:
     }
 
     def __init__(self, id=None, offset=None, limit=None):
-        """ListTrustedIpAddressesRequest
+        r"""ListTrustedIpAddressesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTrustedIpAddressesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTrustedIpAddressesRequest.
+        r"""Gets the id of this ListTrustedIpAddressesRequest.
 
         仓库id
 
@@ -67,7 +67,7 @@ class ListTrustedIpAddressesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTrustedIpAddressesRequest.
+        r"""Sets the id of this ListTrustedIpAddressesRequest.
 
         仓库id
 
@@ -78,7 +78,7 @@ class ListTrustedIpAddressesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTrustedIpAddressesRequest.
+        r"""Gets the offset of this ListTrustedIpAddressesRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ListTrustedIpAddressesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTrustedIpAddressesRequest.
+        r"""Sets the offset of this ListTrustedIpAddressesRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ListTrustedIpAddressesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTrustedIpAddressesRequest.
+        r"""Gets the limit of this ListTrustedIpAddressesRequest.
 
         返回数量
 
@@ -111,7 +111,7 @@ class ListTrustedIpAddressesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTrustedIpAddressesRequest.
+        r"""Sets the limit of this ListTrustedIpAddressesRequest.
 
         返回数量
 

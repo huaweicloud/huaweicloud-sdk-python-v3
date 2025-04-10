@@ -30,7 +30,7 @@ class ShowTempSetResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, temps=None):
-        """ShowTempSetResponse
+        r"""ShowTempSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTempSetResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTempSetResponse.
+        r"""Gets the code of this ShowTempSetResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowTempSetResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTempSetResponse.
+        r"""Sets the code of this ShowTempSetResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowTempSetResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTempSetResponse.
+        r"""Gets the message of this ShowTempSetResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ShowTempSetResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTempSetResponse.
+        r"""Sets the message of this ShowTempSetResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ShowTempSetResponse(SdkResponse):
 
     @property
     def temps(self):
-        """Gets the temps of this ShowTempSetResponse.
+        r"""Gets the temps of this ShowTempSetResponse.
 
         temps
 
@@ -113,7 +113,7 @@ class ShowTempSetResponse(SdkResponse):
 
     @temps.setter
     def temps(self, temps):
-        """Sets the temps of this ShowTempSetResponse.
+        r"""Sets the temps of this ShowTempSetResponse.
 
         temps
 

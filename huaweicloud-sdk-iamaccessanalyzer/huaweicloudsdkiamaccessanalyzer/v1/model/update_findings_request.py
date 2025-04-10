@@ -27,7 +27,7 @@ class UpdateFindingsRequest:
     }
 
     def __init__(self, analyzer_id=None, body=None):
-        """UpdateFindingsRequest
+        r"""UpdateFindingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFindingsRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this UpdateFindingsRequest.
+        r"""Gets the analyzer_id of this UpdateFindingsRequest.
 
         分析器的唯一标识符。
 
@@ -60,7 +60,7 @@ class UpdateFindingsRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this UpdateFindingsRequest.
+        r"""Sets the analyzer_id of this UpdateFindingsRequest.
 
         分析器的唯一标识符。
 
@@ -71,7 +71,7 @@ class UpdateFindingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFindingsRequest.
+        r"""Gets the body of this UpdateFindingsRequest.
 
         :return: The body of this UpdateFindingsRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateFindingsReqBody`
@@ -80,7 +80,7 @@ class UpdateFindingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFindingsRequest.
+        r"""Sets the body of this UpdateFindingsRequest.
 
         :param body: The body of this UpdateFindingsRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateFindingsReqBody`

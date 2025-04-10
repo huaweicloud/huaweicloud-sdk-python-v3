@@ -27,7 +27,7 @@ class CreateL7ruleRequest:
     }
 
     def __init__(self, l7policy_id=None, body=None):
-        """CreateL7ruleRequest
+        r"""CreateL7ruleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateL7ruleRequest:
 
     @property
     def l7policy_id(self):
-        """Gets the l7policy_id of this CreateL7ruleRequest.
+        r"""Gets the l7policy_id of this CreateL7ruleRequest.
 
         转发策略id
 
@@ -60,7 +60,7 @@ class CreateL7ruleRequest:
 
     @l7policy_id.setter
     def l7policy_id(self, l7policy_id):
-        """Sets the l7policy_id of this CreateL7ruleRequest.
+        r"""Sets the l7policy_id of this CreateL7ruleRequest.
 
         转发策略id
 
@@ -71,7 +71,7 @@ class CreateL7ruleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateL7ruleRequest.
+        r"""Gets the body of this CreateL7ruleRequest.
 
         :return: The body of this CreateL7ruleRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateL7ruleRequestBody`
@@ -80,7 +80,7 @@ class CreateL7ruleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateL7ruleRequest.
+        r"""Sets the body of this CreateL7ruleRequest.
 
         :param body: The body of this CreateL7ruleRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateL7ruleRequestBody`

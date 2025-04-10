@@ -28,7 +28,7 @@ class UpdateAimMsgSignatureResponse(SdkResponse):
     }
 
     def __init__(self, signature_id=None, signature_name=None):
-        """UpdateAimMsgSignatureResponse
+        r"""UpdateAimMsgSignatureResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAimMsgSignatureResponse(SdkResponse):
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this UpdateAimMsgSignatureResponse.
+        r"""Gets the signature_id of this UpdateAimMsgSignatureResponse.
 
         签名ID。
 
@@ -62,7 +62,7 @@ class UpdateAimMsgSignatureResponse(SdkResponse):
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this UpdateAimMsgSignatureResponse.
+        r"""Sets the signature_id of this UpdateAimMsgSignatureResponse.
 
         签名ID。
 
@@ -73,7 +73,7 @@ class UpdateAimMsgSignatureResponse(SdkResponse):
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this UpdateAimMsgSignatureResponse.
+        r"""Gets the signature_name of this UpdateAimMsgSignatureResponse.
 
         签名名称。
 
@@ -84,7 +84,7 @@ class UpdateAimMsgSignatureResponse(SdkResponse):
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this UpdateAimMsgSignatureResponse.
+        r"""Sets the signature_name of this UpdateAimMsgSignatureResponse.
 
         签名名称。
 

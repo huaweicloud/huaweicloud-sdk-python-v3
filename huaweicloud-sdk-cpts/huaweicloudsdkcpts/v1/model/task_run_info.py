@@ -27,7 +27,7 @@ class TaskRunInfo:
     }
 
     def __init__(self, id=None, run_type=None):
-        """TaskRunInfo
+        r"""TaskRunInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskRunInfo:
 
     @property
     def id(self):
-        """Gets the id of this TaskRunInfo.
+        r"""Gets the id of this TaskRunInfo.
 
         任务id
 
@@ -61,7 +61,7 @@ class TaskRunInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskRunInfo.
+        r"""Sets the id of this TaskRunInfo.
 
         任务id
 
@@ -72,7 +72,7 @@ class TaskRunInfo:
 
     @property
     def run_type(self):
-        """Gets the run_type of this TaskRunInfo.
+        r"""Gets the run_type of this TaskRunInfo.
 
         任务类型（0：旧版本任务；1：新版本任务）
 
@@ -83,7 +83,7 @@ class TaskRunInfo:
 
     @run_type.setter
     def run_type(self, run_type):
-        """Sets the run_type of this TaskRunInfo.
+        r"""Sets the run_type of this TaskRunInfo.
 
         任务类型（0：旧版本任务；1：新版本任务）
 

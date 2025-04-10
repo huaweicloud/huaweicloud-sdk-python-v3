@@ -31,7 +31,7 @@ class BucketDetail:
     }
 
     def __init__(self, id=None, name=None, creation_date=None, location=None):
-        """BucketDetail
+        r"""BucketDetail
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BucketDetail:
 
     @property
     def id(self):
-        """Gets the id of this BucketDetail.
+        r"""Gets the id of this BucketDetail.
 
         obs桶id
 
@@ -72,7 +72,7 @@ class BucketDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BucketDetail.
+        r"""Sets the id of this BucketDetail.
 
         obs桶id
 
@@ -83,7 +83,7 @@ class BucketDetail:
 
     @property
     def name(self):
-        """Gets the name of this BucketDetail.
+        r"""Gets the name of this BucketDetail.
 
         obs桶名
 
@@ -94,7 +94,7 @@ class BucketDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BucketDetail.
+        r"""Sets the name of this BucketDetail.
 
         obs桶名
 
@@ -105,7 +105,7 @@ class BucketDetail:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this BucketDetail.
+        r"""Gets the creation_date of this BucketDetail.
 
         obs桶创建时间
 
@@ -116,7 +116,7 @@ class BucketDetail:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this BucketDetail.
+        r"""Sets the creation_date of this BucketDetail.
 
         obs桶创建时间
 
@@ -127,7 +127,7 @@ class BucketDetail:
 
     @property
     def location(self):
-        """Gets the location of this BucketDetail.
+        r"""Gets the location of this BucketDetail.
 
         所属region
 
@@ -138,7 +138,7 @@ class BucketDetail:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this BucketDetail.
+        r"""Sets the location of this BucketDetail.
 
         所属region
 

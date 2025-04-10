@@ -31,7 +31,7 @@ class ListSnapshotConfigsRequest:
     }
 
     def __init__(self, domain=None, app_name=None, limit=None, offset=None):
-        """ListSnapshotConfigsRequest
+        r"""ListSnapshotConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListSnapshotConfigsRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListSnapshotConfigsRequest.
+        r"""Gets the domain of this ListSnapshotConfigsRequest.
 
         域名
 
@@ -74,7 +74,7 @@ class ListSnapshotConfigsRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListSnapshotConfigsRequest.
+        r"""Sets the domain of this ListSnapshotConfigsRequest.
 
         域名
 
@@ -85,7 +85,7 @@ class ListSnapshotConfigsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListSnapshotConfigsRequest.
+        r"""Gets the app_name of this ListSnapshotConfigsRequest.
 
         应用名称
 
@@ -96,7 +96,7 @@ class ListSnapshotConfigsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListSnapshotConfigsRequest.
+        r"""Sets the app_name of this ListSnapshotConfigsRequest.
 
         应用名称
 
@@ -107,7 +107,7 @@ class ListSnapshotConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSnapshotConfigsRequest.
+        r"""Gets the limit of this ListSnapshotConfigsRequest.
 
         每页记录数  取值范围[1,100]  默认值：10
 
@@ -118,7 +118,7 @@ class ListSnapshotConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSnapshotConfigsRequest.
+        r"""Sets the limit of this ListSnapshotConfigsRequest.
 
         每页记录数  取值范围[1,100]  默认值：10
 
@@ -129,7 +129,7 @@ class ListSnapshotConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSnapshotConfigsRequest.
+        r"""Gets the offset of this ListSnapshotConfigsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -140,7 +140,7 @@ class ListSnapshotConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSnapshotConfigsRequest.
+        r"""Sets the offset of this ListSnapshotConfigsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 

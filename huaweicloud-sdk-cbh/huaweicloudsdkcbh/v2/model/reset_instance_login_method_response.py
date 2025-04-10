@@ -24,7 +24,7 @@ class ResetInstanceLoginMethodResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetInstanceLoginMethodResponse
+        r"""ResetInstanceLoginMethodResponse
 
         The model defined in huaweicloud sdk
 

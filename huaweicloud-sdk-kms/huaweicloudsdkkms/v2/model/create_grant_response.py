@@ -26,7 +26,7 @@ class CreateGrantResponse(SdkResponse):
     }
 
     def __init__(self, grant_id=None):
-        """CreateGrantResponse
+        r"""CreateGrantResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGrantResponse(SdkResponse):
 
     @property
     def grant_id(self):
-        """Gets the grant_id of this CreateGrantResponse.
+        r"""Gets the grant_id of this CreateGrantResponse.
 
         授权ID，64字节。
 
@@ -55,7 +55,7 @@ class CreateGrantResponse(SdkResponse):
 
     @grant_id.setter
     def grant_id(self, grant_id):
-        """Sets the grant_id of this CreateGrantResponse.
+        r"""Sets the grant_id of this CreateGrantResponse.
 
         授权ID，64字节。
 

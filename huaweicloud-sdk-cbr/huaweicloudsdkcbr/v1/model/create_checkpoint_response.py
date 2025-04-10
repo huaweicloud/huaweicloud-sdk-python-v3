@@ -26,7 +26,7 @@ class CreateCheckpointResponse(SdkResponse):
     }
 
     def __init__(self, checkpoint=None):
-        """CreateCheckpointResponse
+        r"""CreateCheckpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCheckpointResponse(SdkResponse):
 
     @property
     def checkpoint(self):
-        """Gets the checkpoint of this CreateCheckpointResponse.
+        r"""Gets the checkpoint of this CreateCheckpointResponse.
 
         :return: The checkpoint of this CreateCheckpointResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`
@@ -53,7 +53,7 @@ class CreateCheckpointResponse(SdkResponse):
 
     @checkpoint.setter
     def checkpoint(self, checkpoint):
-        """Sets the checkpoint of this CreateCheckpointResponse.
+        r"""Sets the checkpoint of this CreateCheckpointResponse.
 
         :param checkpoint: The checkpoint of this CreateCheckpointResponse.
         :type checkpoint: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`

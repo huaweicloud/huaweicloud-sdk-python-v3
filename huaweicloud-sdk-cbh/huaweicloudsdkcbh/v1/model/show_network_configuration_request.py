@@ -25,7 +25,7 @@ class ShowNetworkConfigurationRequest:
     }
 
     def __init__(self, body=None):
-        """ShowNetworkConfigurationRequest
+        r"""ShowNetworkConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowNetworkConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowNetworkConfigurationRequest.
+        r"""Gets the body of this ShowNetworkConfigurationRequest.
 
         :return: The body of this ShowNetworkConfigurationRequest.
         :rtype: :class:`huaweicloudsdkcbh.v1.NetworkRequestBody`
@@ -52,7 +52,7 @@ class ShowNetworkConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowNetworkConfigurationRequest.
+        r"""Sets the body of this ShowNetworkConfigurationRequest.
 
         :param body: The body of this ShowNetworkConfigurationRequest.
         :type body: :class:`huaweicloudsdkcbh.v1.NetworkRequestBody`

@@ -53,7 +53,7 @@ class QueryMetricResult:
     }
 
     def __init__(self, job_id=None, node_id=None, time_stamp=None, cpu_util=None, mem_util=None, network_incoming_bytes_rate=None, network_outgoing_bytes_rate=None, disk_read_bytes_rate=None, disk_write_bytes_rate=None, apply_rows_rate=None, apply_transactions_rate=None, apply_ddl_rate=None, apply_average_execute_time=None, apply_average_commit_time=None, apply_current_state=None):
-        """QueryMetricResult
+        r"""QueryMetricResult
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class QueryMetricResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryMetricResult.
+        r"""Gets the job_id of this QueryMetricResult.
 
         任务ID。
 
@@ -152,7 +152,7 @@ class QueryMetricResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryMetricResult.
+        r"""Sets the job_id of this QueryMetricResult.
 
         任务ID。
 
@@ -163,7 +163,7 @@ class QueryMetricResult:
 
     @property
     def node_id(self):
-        """Gets the node_id of this QueryMetricResult.
+        r"""Gets the node_id of this QueryMetricResult.
 
         实例ID。
 
@@ -174,7 +174,7 @@ class QueryMetricResult:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this QueryMetricResult.
+        r"""Sets the node_id of this QueryMetricResult.
 
         实例ID。
 
@@ -185,7 +185,7 @@ class QueryMetricResult:
 
     @property
     def time_stamp(self):
-        """Gets the time_stamp of this QueryMetricResult.
+        r"""Gets the time_stamp of this QueryMetricResult.
 
         上报时间。
 
@@ -196,7 +196,7 @@ class QueryMetricResult:
 
     @time_stamp.setter
     def time_stamp(self, time_stamp):
-        """Sets the time_stamp of this QueryMetricResult.
+        r"""Sets the time_stamp of this QueryMetricResult.
 
         上报时间。
 
@@ -207,7 +207,7 @@ class QueryMetricResult:
 
     @property
     def cpu_util(self):
-        """Gets the cpu_util of this QueryMetricResult.
+        r"""Gets the cpu_util of this QueryMetricResult.
 
         CPU使用率。
 
@@ -218,7 +218,7 @@ class QueryMetricResult:
 
     @cpu_util.setter
     def cpu_util(self, cpu_util):
-        """Sets the cpu_util of this QueryMetricResult.
+        r"""Sets the cpu_util of this QueryMetricResult.
 
         CPU使用率。
 
@@ -229,7 +229,7 @@ class QueryMetricResult:
 
     @property
     def mem_util(self):
-        """Gets the mem_util of this QueryMetricResult.
+        r"""Gets the mem_util of this QueryMetricResult.
 
         内存使用率。
 
@@ -240,7 +240,7 @@ class QueryMetricResult:
 
     @mem_util.setter
     def mem_util(self, mem_util):
-        """Sets the mem_util of this QueryMetricResult.
+        r"""Sets the mem_util of this QueryMetricResult.
 
         内存使用率。
 
@@ -251,7 +251,7 @@ class QueryMetricResult:
 
     @property
     def network_incoming_bytes_rate(self):
-        """Gets the network_incoming_bytes_rate of this QueryMetricResult.
+        r"""Gets the network_incoming_bytes_rate of this QueryMetricResult.
 
         网络输入吞吐量。
 
@@ -262,7 +262,7 @@ class QueryMetricResult:
 
     @network_incoming_bytes_rate.setter
     def network_incoming_bytes_rate(self, network_incoming_bytes_rate):
-        """Sets the network_incoming_bytes_rate of this QueryMetricResult.
+        r"""Sets the network_incoming_bytes_rate of this QueryMetricResult.
 
         网络输入吞吐量。
 
@@ -273,7 +273,7 @@ class QueryMetricResult:
 
     @property
     def network_outgoing_bytes_rate(self):
-        """Gets the network_outgoing_bytes_rate of this QueryMetricResult.
+        r"""Gets the network_outgoing_bytes_rate of this QueryMetricResult.
 
         网络输出吞吐量。
 
@@ -284,7 +284,7 @@ class QueryMetricResult:
 
     @network_outgoing_bytes_rate.setter
     def network_outgoing_bytes_rate(self, network_outgoing_bytes_rate):
-        """Sets the network_outgoing_bytes_rate of this QueryMetricResult.
+        r"""Sets the network_outgoing_bytes_rate of this QueryMetricResult.
 
         网络输出吞吐量。
 
@@ -295,7 +295,7 @@ class QueryMetricResult:
 
     @property
     def disk_read_bytes_rate(self):
-        """Gets the disk_read_bytes_rate of this QueryMetricResult.
+        r"""Gets the disk_read_bytes_rate of this QueryMetricResult.
 
         磁盘读吞吐量。
 
@@ -306,7 +306,7 @@ class QueryMetricResult:
 
     @disk_read_bytes_rate.setter
     def disk_read_bytes_rate(self, disk_read_bytes_rate):
-        """Sets the disk_read_bytes_rate of this QueryMetricResult.
+        r"""Sets the disk_read_bytes_rate of this QueryMetricResult.
 
         磁盘读吞吐量。
 
@@ -317,7 +317,7 @@ class QueryMetricResult:
 
     @property
     def disk_write_bytes_rate(self):
-        """Gets the disk_write_bytes_rate of this QueryMetricResult.
+        r"""Gets the disk_write_bytes_rate of this QueryMetricResult.
 
         磁盘写吞吐量。
 
@@ -328,7 +328,7 @@ class QueryMetricResult:
 
     @disk_write_bytes_rate.setter
     def disk_write_bytes_rate(self, disk_write_bytes_rate):
-        """Sets the disk_write_bytes_rate of this QueryMetricResult.
+        r"""Sets the disk_write_bytes_rate of this QueryMetricResult.
 
         磁盘写吞吐量。
 
@@ -339,7 +339,7 @@ class QueryMetricResult:
 
     @property
     def apply_rows_rate(self):
-        """Gets the apply_rows_rate of this QueryMetricResult.
+        r"""Gets the apply_rows_rate of this QueryMetricResult.
 
         写目标库频率。
 
@@ -350,7 +350,7 @@ class QueryMetricResult:
 
     @apply_rows_rate.setter
     def apply_rows_rate(self, apply_rows_rate):
-        """Sets the apply_rows_rate of this QueryMetricResult.
+        r"""Sets the apply_rows_rate of this QueryMetricResult.
 
         写目标库频率。
 
@@ -361,7 +361,7 @@ class QueryMetricResult:
 
     @property
     def apply_transactions_rate(self):
-        """Gets the apply_transactions_rate of this QueryMetricResult.
+        r"""Gets the apply_transactions_rate of this QueryMetricResult.
 
         DML TPS。
 
@@ -372,7 +372,7 @@ class QueryMetricResult:
 
     @apply_transactions_rate.setter
     def apply_transactions_rate(self, apply_transactions_rate):
-        """Sets the apply_transactions_rate of this QueryMetricResult.
+        r"""Sets the apply_transactions_rate of this QueryMetricResult.
 
         DML TPS。
 
@@ -383,7 +383,7 @@ class QueryMetricResult:
 
     @property
     def apply_ddl_rate(self):
-        """Gets the apply_ddl_rate of this QueryMetricResult.
+        r"""Gets the apply_ddl_rate of this QueryMetricResult.
 
         DDL TPS。
 
@@ -394,7 +394,7 @@ class QueryMetricResult:
 
     @apply_ddl_rate.setter
     def apply_ddl_rate(self, apply_ddl_rate):
-        """Sets the apply_ddl_rate of this QueryMetricResult.
+        r"""Sets the apply_ddl_rate of this QueryMetricResult.
 
         DDL TPS。
 
@@ -405,7 +405,7 @@ class QueryMetricResult:
 
     @property
     def apply_average_execute_time(self):
-        """Gets the apply_average_execute_time of this QueryMetricResult.
+        r"""Gets the apply_average_execute_time of this QueryMetricResult.
 
         事务平均执行时间。
 
@@ -416,7 +416,7 @@ class QueryMetricResult:
 
     @apply_average_execute_time.setter
     def apply_average_execute_time(self, apply_average_execute_time):
-        """Sets the apply_average_execute_time of this QueryMetricResult.
+        r"""Sets the apply_average_execute_time of this QueryMetricResult.
 
         事务平均执行时间。
 
@@ -427,7 +427,7 @@ class QueryMetricResult:
 
     @property
     def apply_average_commit_time(self):
-        """Gets the apply_average_commit_time of this QueryMetricResult.
+        r"""Gets the apply_average_commit_time of this QueryMetricResult.
 
         事务平均提交时间。
 
@@ -438,7 +438,7 @@ class QueryMetricResult:
 
     @apply_average_commit_time.setter
     def apply_average_commit_time(self, apply_average_commit_time):
-        """Sets the apply_average_commit_time of this QueryMetricResult.
+        r"""Sets the apply_average_commit_time of this QueryMetricResult.
 
         事务平均提交时间。
 
@@ -449,7 +449,7 @@ class QueryMetricResult:
 
     @property
     def apply_current_state(self):
-        """Gets the apply_current_state of this QueryMetricResult.
+        r"""Gets the apply_current_state of this QueryMetricResult.
 
         同步状态。
 
@@ -460,7 +460,7 @@ class QueryMetricResult:
 
     @apply_current_state.setter
     def apply_current_state(self, apply_current_state):
-        """Sets the apply_current_state of this QueryMetricResult.
+        r"""Sets the apply_current_state of this QueryMetricResult.
 
         同步状态。
 

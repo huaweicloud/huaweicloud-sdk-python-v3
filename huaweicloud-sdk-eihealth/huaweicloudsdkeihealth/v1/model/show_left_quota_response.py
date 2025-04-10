@@ -30,7 +30,7 @@ class ShowLeftQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quantity=None, cpu=None, ram=None):
-        """ShowLeftQuotaResponse
+        r"""ShowLeftQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowLeftQuotaResponse(SdkResponse):
 
     @property
     def quantity(self):
-        """Gets the quantity of this ShowLeftQuotaResponse.
+        r"""Gets the quantity of this ShowLeftQuotaResponse.
 
         剩余服务器数
 
@@ -69,7 +69,7 @@ class ShowLeftQuotaResponse(SdkResponse):
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this ShowLeftQuotaResponse.
+        r"""Sets the quantity of this ShowLeftQuotaResponse.
 
         剩余服务器数
 
@@ -80,7 +80,7 @@ class ShowLeftQuotaResponse(SdkResponse):
 
     @property
     def cpu(self):
-        """Gets the cpu of this ShowLeftQuotaResponse.
+        r"""Gets the cpu of this ShowLeftQuotaResponse.
 
         剩余CPU
 
@@ -91,7 +91,7 @@ class ShowLeftQuotaResponse(SdkResponse):
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ShowLeftQuotaResponse.
+        r"""Sets the cpu of this ShowLeftQuotaResponse.
 
         剩余CPU
 
@@ -102,7 +102,7 @@ class ShowLeftQuotaResponse(SdkResponse):
 
     @property
     def ram(self):
-        """Gets the ram of this ShowLeftQuotaResponse.
+        r"""Gets the ram of this ShowLeftQuotaResponse.
 
         剩余内存
 
@@ -113,7 +113,7 @@ class ShowLeftQuotaResponse(SdkResponse):
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ShowLeftQuotaResponse.
+        r"""Sets the ram of this ShowLeftQuotaResponse.
 
         剩余内存
 

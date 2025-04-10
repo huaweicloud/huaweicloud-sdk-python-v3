@@ -25,7 +25,7 @@ class CreateNewBlockchainRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNewBlockchainRequest
+        r"""CreateNewBlockchainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNewBlockchainRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNewBlockchainRequest.
+        r"""Gets the body of this CreateNewBlockchainRequest.
 
         :return: The body of this CreateNewBlockchainRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateRequestBody`
@@ -52,7 +52,7 @@ class CreateNewBlockchainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNewBlockchainRequest.
+        r"""Sets the body of this CreateNewBlockchainRequest.
 
         :param body: The body of this CreateNewBlockchainRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.CreateRequestBody`

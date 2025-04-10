@@ -35,7 +35,7 @@ class Ips:
     }
 
     def __init__(self, ip_id=None, ip=None, isp=None, data_center=None, foreign_switch_status=None, udp_switch_status=None):
-        """Ips
+        r"""Ips
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Ips:
 
     @property
     def ip_id(self):
-        """Gets the ip_id of this Ips.
+        r"""Gets the ip_id of this Ips.
 
         ip id
 
@@ -89,7 +89,7 @@ class Ips:
 
     @ip_id.setter
     def ip_id(self, ip_id):
-        """Sets the ip_id of this Ips.
+        r"""Sets the ip_id of this Ips.
 
         ip id
 
@@ -100,7 +100,7 @@ class Ips:
 
     @property
     def ip(self):
-        """Gets the ip of this Ips.
+        r"""Gets the ip of this Ips.
 
         ip
 
@@ -111,7 +111,7 @@ class Ips:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Ips.
+        r"""Sets the ip of this Ips.
 
         ip
 
@@ -122,7 +122,7 @@ class Ips:
 
     @property
     def isp(self):
-        """Gets the isp of this Ips.
+        r"""Gets the isp of this Ips.
 
         线路
 
@@ -133,7 +133,7 @@ class Ips:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this Ips.
+        r"""Sets the isp of this Ips.
 
         线路
 
@@ -144,7 +144,7 @@ class Ips:
 
     @property
     def data_center(self):
-        """Gets the data_center of this Ips.
+        r"""Gets the data_center of this Ips.
 
         数据中心
 
@@ -155,7 +155,7 @@ class Ips:
 
     @data_center.setter
     def data_center(self, data_center):
-        """Sets the data_center of this Ips.
+        r"""Sets the data_center of this Ips.
 
         数据中心
 
@@ -166,7 +166,7 @@ class Ips:
 
     @property
     def foreign_switch_status(self):
-        """Gets the foreign_switch_status of this Ips.
+        r"""Gets the foreign_switch_status of this Ips.
 
         海外区域封禁状态 0-关闭 1-开启
 
@@ -177,7 +177,7 @@ class Ips:
 
     @foreign_switch_status.setter
     def foreign_switch_status(self, foreign_switch_status):
-        """Sets the foreign_switch_status of this Ips.
+        r"""Sets the foreign_switch_status of this Ips.
 
         海外区域封禁状态 0-关闭 1-开启
 
@@ -188,7 +188,7 @@ class Ips:
 
     @property
     def udp_switch_status(self):
-        """Gets the udp_switch_status of this Ips.
+        r"""Gets the udp_switch_status of this Ips.
 
         UDP协议禁用 0-关闭 1-开启
 
@@ -199,7 +199,7 @@ class Ips:
 
     @udp_switch_status.setter
     def udp_switch_status(self, udp_switch_status):
-        """Sets the udp_switch_status of this Ips.
+        r"""Sets the udp_switch_status of this Ips.
 
         UDP协议禁用 0-关闭 1-开启
 

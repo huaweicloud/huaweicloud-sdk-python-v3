@@ -24,7 +24,7 @@ class DeleteSpecialThrottlingConfigurationV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSpecialThrottlingConfigurationV2Response
+        r"""DeleteSpecialThrottlingConfigurationV2Response
 
         The model defined in huaweicloud sdk
 

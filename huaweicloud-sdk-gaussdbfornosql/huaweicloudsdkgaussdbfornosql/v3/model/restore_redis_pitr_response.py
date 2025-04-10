@@ -26,7 +26,7 @@ class RestoreRedisPitrResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestoreRedisPitrResponse
+        r"""RestoreRedisPitrResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestoreRedisPitrResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestoreRedisPitrResponse.
+        r"""Gets the job_id of this RestoreRedisPitrResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class RestoreRedisPitrResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestoreRedisPitrResponse.
+        r"""Sets the job_id of this RestoreRedisPitrResponse.
 
         任务ID。
 

@@ -24,7 +24,7 @@ class SendVeriCodeForUpdateUserInfoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SendVeriCodeForUpdateUserInfoResponse
+        r"""SendVeriCodeForUpdateUserInfoResponse
 
         The model defined in huaweicloud sdk
 

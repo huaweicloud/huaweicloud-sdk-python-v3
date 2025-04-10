@@ -27,7 +27,7 @@ class AddSecurityGroupsRequest:
     }
 
     def __init__(self, port_id=None, body=None):
-        """AddSecurityGroupsRequest
+        r"""AddSecurityGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddSecurityGroupsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this AddSecurityGroupsRequest.
+        r"""Gets the port_id of this AddSecurityGroupsRequest.
 
         端口的唯一标识
 
@@ -60,7 +60,7 @@ class AddSecurityGroupsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this AddSecurityGroupsRequest.
+        r"""Sets the port_id of this AddSecurityGroupsRequest.
 
         端口的唯一标识
 
@@ -71,7 +71,7 @@ class AddSecurityGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSecurityGroupsRequest.
+        r"""Gets the body of this AddSecurityGroupsRequest.
 
         :return: The body of this AddSecurityGroupsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.AddSecurityGroupsRequestBody`
@@ -80,7 +80,7 @@ class AddSecurityGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSecurityGroupsRequest.
+        r"""Sets the body of this AddSecurityGroupsRequest.
 
         :param body: The body of this AddSecurityGroupsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.AddSecurityGroupsRequestBody`

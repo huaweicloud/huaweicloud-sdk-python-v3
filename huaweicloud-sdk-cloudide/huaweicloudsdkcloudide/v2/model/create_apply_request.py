@@ -25,7 +25,7 @@ class CreateApplyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateApplyRequest
+        r"""CreateApplyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateApplyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateApplyRequest.
+        r"""Gets the body of this CreateApplyRequest.
 
         :return: The body of this CreateApplyRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.JoinRequestSchema`
@@ -52,7 +52,7 @@ class CreateApplyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateApplyRequest.
+        r"""Sets the body of this CreateApplyRequest.
 
         :param body: The body of this CreateApplyRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.JoinRequestSchema`

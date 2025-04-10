@@ -34,7 +34,7 @@ class LakeFormationAsyncClient(Client):
         return client_builder
 
     def apply_for_access_async(self, request):
-        """申请接入服务
+        r"""申请接入服务
 
         申请接入服务
         
@@ -101,7 +101,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_authorize_interface_async(self, request):
-        """批量授权
+        r"""批量授权
 
         批量授权接口
         
@@ -168,7 +168,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_cancel_authorization_interface_async(self, request):
-        """取消批量授权
+        r"""取消批量授权
 
         批量取消授权接口
         
@@ -235,7 +235,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_check_permission_async(self, request):
-        """批量鉴权
+        r"""批量鉴权
 
         批量鉴权
         
@@ -302,7 +302,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_access_client_async(self, request):
-        """创建服务接入客户端
+        r"""创建服务接入客户端
 
         创建服务接入客户端。
         其他限制：
@@ -371,7 +371,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_access_client_async(self, request):
-        """删除服务接入客户端
+        r"""删除服务接入客户端
 
         根据ID删除服务接入客户端
         
@@ -438,7 +438,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_access_client_infos_async(self, request):
-        """获取服务接入客户端信息列表
+        r"""获取服务接入客户端信息列表
 
         根据LakeFormation实例获取服务实例相关的接入客户端信息列表。
         
@@ -511,7 +511,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_access_infos_async(self, request):
-        """获取服务接入信息
+        r"""获取服务接入信息
 
         根据LakeFormation实例获取服务实例相关的接入信息。
         
@@ -580,7 +580,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_interfaces_async(self, request):
-        """查询策略
+        r"""查询策略
 
         通过过滤条件查询接口
         
@@ -661,7 +661,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_policy_async(self, request):
-        """获取同步权限策略
+        r"""获取同步权限策略
 
         分页获取同步权限策略
         
@@ -732,7 +732,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_access_client_async(self, request):
-        """获取服务接入客户端详情
+        r"""获取服务接入客户端详情
 
         根据ID获取服务接入客户端详情
         
@@ -799,7 +799,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_sync_policy_async(self, request):
-        """获取同步权限策略
+        r"""获取同步权限策略
 
         获取同步权限策略
         
@@ -870,7 +870,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_access_client_async(self, request):
-        """更新服务接入客户端
+        r"""更新服务接入客户端
 
         根据ID更新服务接入客户端
         
@@ -939,7 +939,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_agency_async(self, request):
-        """创建委托
+        r"""创建委托
 
         创建委托
         
@@ -1004,7 +1004,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_agency_async(self, request):
-        """删除委托
+        r"""删除委托
 
         删除委托
         
@@ -1069,7 +1069,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_agency_async(self, request):
-        """委托查询
+        r"""委托查询
 
         委托查询
         
@@ -1134,7 +1134,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_catalog_async(self, request):
-        """创建catalog
+        r"""创建catalog
 
         创建catalog，会在catalog下创建默认数据库，默认数据库名称为：default
         
@@ -1201,7 +1201,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_catalog_async(self, request):
-        """删除catalog对象
+        r"""删除catalog对象
 
         删除空的catalog对象。
         删除前需要保证catalog下只有默认的数据库，且默认数据库下没有表对象，否则删除失败。
@@ -1269,7 +1269,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_catalogs_async(self, request):
-        """列举catalog信息
+        r"""列举catalog信息
 
         根据catalog名字的通配符列举catalog的详细信息
         
@@ -1334,7 +1334,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_catalog_async(self, request):
-        """获取catalog信息
+        r"""获取catalog信息
 
         获取catalog信息
         
@@ -1401,7 +1401,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_catalog_async(self, request):
-        """修改catalog信息
+        r"""修改catalog信息
 
         修改catalog信息
         
@@ -1470,7 +1470,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_configs_async(self, request):
-        """获取所有用户可见的租户面配置
+        r"""获取所有用户可见的租户面配置
 
         获取所有用户可见的租户面配置
         
@@ -1539,7 +1539,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_credential_async(self, request):
-        """获取临时密钥和securityToken
+        r"""获取临时密钥和securityToken
 
         获取临时密钥和securityToken，失效时间大于等于1小时，请在1小时内更新
         
@@ -1606,7 +1606,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_database_async(self, request):
-        """创建数据库
+        r"""创建数据库
 
         创建数据库
         
@@ -1675,7 +1675,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_database_async(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除指定数据库，catalog的默认数据库不允许删除。
         cascade: 指定为true时，删除数据库下的表；指定为false时，只能删除空的数据库
@@ -1751,7 +1751,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_database_names_async(self, request):
-        """列举数据库名称信息
+        r"""列举数据库名称信息
 
         列举数据库名称信息
         
@@ -1820,7 +1820,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_databases_async(self, request):
-        """列举数据库信息
+        r"""列举数据库信息
 
         列举数据库信息
         
@@ -1895,7 +1895,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_database_async(self, request):
-        """获取数据库
+        r"""获取数据库
 
         获取数据库
         
@@ -1964,7 +1964,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_database_async(self, request):
-        """修改数据库属性
+        r"""修改数据库属性
 
         修改数据库属性
         
@@ -2035,7 +2035,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_function_async(self, request):
-        """创建函数
+        r"""创建函数
 
         创建函数
         
@@ -2106,7 +2106,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_function_async(self, request):
-        """删除函数
+        r"""删除函数
 
         删除函数
         
@@ -2177,7 +2177,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_all_functions_async(self, request):
-        """列举catalog下所有的函数
+        r"""列举catalog下所有的函数
 
         获取catalog下所有的函数
         
@@ -2250,7 +2250,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_function_names_async(self, request):
-        """列举库下所有函数名称
+        r"""列举库下所有函数名称
 
         查询数据库下的所有函数名称列表
         
@@ -2321,7 +2321,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_functions_async(self, request):
-        """列举函数
+        r"""列举函数
 
         列举函数
         
@@ -2398,7 +2398,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_function_async(self, request):
-        """查询函数
+        r"""查询函数
 
         根据函数名称查询函数信息
         
@@ -2469,7 +2469,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_function_async(self, request):
-        """修改函数属性
+        r"""修改函数属性
 
         修改函数属性
         
@@ -2542,7 +2542,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def authorize_access_service_async(self, request):
-        """接入服务授权
+        r"""接入服务授权
 
         接入服务授权
         
@@ -2607,7 +2607,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_agreement_async(self, request):
-        """注册租户协议
+        r"""注册租户协议
 
         用户授权并委托
         
@@ -2672,7 +2672,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_agreement_async(self, request):
-        """删除租户协议
+        r"""删除租户协议
 
         用户取消授权，同时有权限用户删除委托
         
@@ -2735,7 +2735,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_access_service_async(self, request):
-        """查询租户当前的接入服务授权
+        r"""查询租户当前的接入服务授权
 
         查询租户当前的接入服务授权
         
@@ -2798,7 +2798,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_agreement_async(self, request):
-        """查询租户是否注册协议
+        r"""查询租户是否注册协议
 
         查询租户当前协议和委托信息
         
@@ -2861,7 +2861,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_agreement_rule_async(self, request):
-        """查询当前系统协议
+        r"""查询当前系统协议
 
         查询当前系统协议
         
@@ -2924,7 +2924,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def count_meta_obj_async(self, request):
-        """元数据数量统计
+        r"""元数据数量统计
 
         元数据数量统计接口
         
@@ -2989,7 +2989,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_lake_formation_instance_async(self, request):
-        """创建实例
+        r"""创建实例
 
         创建一个LakeFormation实例。
         
@@ -3054,7 +3054,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_lake_formation_instance_async(self, request):
-        """删除实例
+        r"""删除实例
 
         根据实例Id删除LakeFormation实例。
         
@@ -3121,7 +3121,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_lake_formation_instances_async(self, request):
-        """查询实例列表
+        r"""查询实例列表
 
         查询用户创建的实例列表信息。
         
@@ -3196,7 +3196,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def move_lake_formation_instance_out_recycle_bin_async(self, request):
-        """恢复实例
+        r"""恢复实例
 
         从回收站恢复LakeFormation实例
         
@@ -3261,7 +3261,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_lake_formation_instance_async(self, request):
-        """查询实例详情
+        r"""查询实例详情
 
         使用实例Id查询LakeFormation实例详情
         
@@ -3326,7 +3326,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_lake_formation_instance_async(self, request):
-        """更新实例
+        r"""更新实例
 
         修改LakeFormation实例信息
         
@@ -3393,7 +3393,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_lake_formation_instance_default_async(self, request):
-        """设为默认实例
+        r"""设为默认实例
 
         设为默认实例，只有非默认实例可以设置为默认实例
         
@@ -3458,7 +3458,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_lake_formation_instance_scale_async(self, request):
-        """变更实例规格
+        r"""变更实例规格
 
         变更LakeFormation实例规格
         
@@ -3525,7 +3525,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_obs_buckets_async(self, request):
-        """查询OBS桶列表
+        r"""查询OBS桶列表
 
         查询OBS桶列表
         
@@ -3592,7 +3592,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_obs_object_async(self, request):
-        """查询obs桶对象列表
+        r"""查询obs桶对象列表
 
         查询obs桶对象列表
         
@@ -3663,7 +3663,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def add_partitions_async(self, request):
-        """批量添加分区信息
+        r"""批量添加分区信息
 
         批量添加分区信息
         
@@ -3736,7 +3736,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_delete_partition_async(self, request):
-        """批量删除分区信息
+        r"""批量删除分区信息
 
         非事务表：如果设置删除数据，立刻删除分区数据路径下的数据。
         事务表：如果设置删除数据，保留数据在原路径下但对外不可见，待数据超期后统一删除。
@@ -3810,7 +3810,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_delete_partitioned_statistics_async(self, request):
-        """批量清空列表信息
+        r"""批量清空列表信息
 
         删除存在分区的数据及统计信息，保留分区的元数据信息。全部存在、部分存在或都不存在，均返回OK
         非事务表：立刻删除分区路径下的数据。
@@ -3885,7 +3885,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_list_partition_by_values_async(self, request):
-        """批量获取分区信息
+        r"""批量获取分区信息
 
         批量获取分区信息
         
@@ -3958,7 +3958,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_update_partition_async(self, request):
-        """批量修改分区信息
+        r"""批量修改分区信息
 
         所有partition必须要全部存在，如果存在某个partition不存在，就返回失败
         
@@ -4031,7 +4031,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_partition_names_async(self, request):
-        """列举分区值列表
+        r"""列举分区值列表
 
         遍历分区名字列表信息
         对于事务表，支持基于表的特定版本遍历分区名字列表。
@@ -4111,7 +4111,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_partition_names_without_limit_async(self, request):
-        """列举全量分区值列表
+        r"""列举全量分区值列表
 
         遍历分区名称列表信息,返回全量的数据。
         对于事务表，支持基于表的特定版本遍历分区名称列表。
@@ -4185,7 +4185,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_partitions_async(self, request):
-        """列举分区信息
+        r"""列举分区信息
 
         遍历指定数据表下的分区列表，对于事务表，支持基于表的特定版本遍历分区列表。
         当过滤条件不为空时，优先根据过滤条件筛选过滤，
@@ -4270,7 +4270,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_show_partition_column_statistics_async(self, request):
-        """批量获取分区的列统计信息
+        r"""批量获取分区的列统计信息
 
         批量获取分区的列统计信息
         
@@ -4343,7 +4343,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_partition_column_statistics_async(self, request):
-        """删除分区列的统计信息
+        r"""删除分区列的统计信息
 
         删除分区列的统计信息
         
@@ -4419,7 +4419,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def set_partition_column_statistics_async(self, request):
-        """批量设置分区的统计信息
+        r"""批量设置分区的统计信息
 
         批量设置分区的统计信息
         
@@ -4492,7 +4492,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_quotas_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询用户的配额信息。
         
@@ -4555,7 +4555,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def associate_principals_async(self, request):
-        """将一个或者多个用户/用户组加入角色
+        r"""将一个或者多个用户/用户组加入角色
 
         将一个或者多个用户/用户组加入角色
         
@@ -4624,7 +4624,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_role_async(self, request):
-        """创建role
+        r"""创建role
 
         创建role
         
@@ -4691,7 +4691,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_role_async(self, request):
-        """删除角色
+        r"""删除角色
 
         删除指定角色
         
@@ -4758,7 +4758,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_principals_async(self, request):
-        """查询角色下的用户/用户组
+        r"""查询角色下的用户/用户组
 
         查询角色下的用户/用户组
         
@@ -4833,7 +4833,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_role_names_async(self, request):
-        """列举所有角色名
+        r"""列举所有角色名
 
         查询所有角色名字列表
         
@@ -4898,7 +4898,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_roles_async(self, request):
-        """根据条件分页列举角色
+        r"""根据条件分页列举角色
 
         返回所有角色
         
@@ -4971,7 +4971,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def revoke_principals_async(self, request):
-        """将一个或者多个用户/用户组从角色移除
+        r"""将一个或者多个用户/用户组从角色移除
 
         将一个或者多个用户/用户组从角色移除
         
@@ -5040,7 +5040,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_role_async(self, request):
-        """获取角色
+        r"""获取角色
 
         获取角色
         
@@ -5107,7 +5107,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_principals_async(self, request):
-        """更新角色中的principals
+        r"""更新角色中的principals
 
         更新角色中的principals
         
@@ -5176,7 +5176,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_role_async(self, request):
-        """修改角色信息
+        r"""修改角色信息
 
         修改角色信息
         
@@ -5245,7 +5245,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_specs_async(self, request):
-        """list_specs
+        r"""list_specs
 
         查询规格列表
         
@@ -5314,7 +5314,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_update_lake_formation_instance_tags_async(self, request):
-        """批量更新标签
+        r"""批量更新标签
 
         为指定实例批量更新标签
         
@@ -5381,7 +5381,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_lake_formation_instance_tags_async(self, request):
-        """查询资源标签集合
+        r"""查询资源标签集合
 
         查询租户在指定Project中实例类型的所有资源标签集合
         
@@ -5446,7 +5446,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def create_table_async(self, request):
-        """创建表
+        r"""创建表
 
         创建表操作
         
@@ -5517,7 +5517,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_all_tables_async(self, request):
-        """清空表的数据
+        r"""清空表的数据
 
         清空表以及表下所有分区的数据及统计信息。
         
@@ -5588,7 +5588,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_table_async(self, request):
-        """删除表
+        r"""删除表
 
         删除表及表下的分区
         
@@ -5661,7 +5661,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_table_meta_async(self, request):
-        """分页获取表的描述信息
+        r"""分页获取表的描述信息
 
         通过数据库通配符和表通配符，找到符合条件的表并返回表的描述信息。
         
@@ -5741,7 +5741,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_table_names_async(self, request):
-        """列举库下所有表名
+        r"""列举库下所有表名
 
         查询数据库下的所有表名字列表
         
@@ -5814,7 +5814,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_tables_async(self, request):
-        """根据条件分页列举表信息
+        r"""根据条件分页列举表信息
 
         返回数据库下符合查询条件的表的元数据信息，不支持事务操作
         当表名通配符或表类型不为空时，优先根据表名和类型筛选过滤
@@ -5897,7 +5897,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_tables_by_name_async(self, request):
-        """根据表名列举表信息
+        r"""根据表名列举表信息
 
         根据表名查询数据库下的表信息列表
         
@@ -5968,7 +5968,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def show_table_async(self, request):
-        """获取表信息
+        r"""获取表信息
 
         获取表信息
         
@@ -6039,7 +6039,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_table_async(self, request):
-        """修改表信息
+        r"""修改表信息
 
         修改表信息
         
@@ -6112,7 +6112,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_table_column_statistics_async(self, request):
-        """删除表的指定列统计信息
+        r"""删除表的指定列统计信息
 
         删除表的指定列统计信息
         
@@ -6185,7 +6185,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_table_column_statistics_async(self, request):
-        """获取表的列统计信息
+        r"""获取表的列统计信息
 
         获取表的列统计信息
         
@@ -6258,7 +6258,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def set_table_column_statistics_async(self, request):
-        """更新表的列统计信息
+        r"""更新表的列统计信息
 
         更新表的列统计信息
         
@@ -6331,7 +6331,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def batch_create_constraint_async(self, request):
-        """批量创建列限制条件
+        r"""批量创建列限制条件
 
         批量创建表的列限制条件
         
@@ -6404,7 +6404,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def delete_constraint_async(self, request):
-        """删除列限制条件
+        r"""删除列限制条件
 
         删除列限制条件
         
@@ -6477,7 +6477,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_constraints_async(self, request):
-        """获取列限制条件
+        r"""获取列限制条件
 
         若查询外键信息，需要在参数中填写被引用表的数据库名和表名。如：parent_db&#x3D;db1&amp;parent_tbl&#x3D;tbl1
         
@@ -6554,7 +6554,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def associate_roles_async(self, request):
-        """将多个角色授予User
+        r"""将多个角色授予User
 
         将多个角色授予User
         
@@ -6623,7 +6623,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_user_roles_async(self, request):
-        """查询用户的角色列表
+        r"""查询用户的角色列表
 
         查询用户的角色列表
         
@@ -6698,7 +6698,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_users_async(self, request):
-        """获取用户列表
+        r"""获取用户列表
 
         获取用户列表
         
@@ -6773,7 +6773,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def revoke_roles_async(self, request):
-        """将一个或者多个角色从用户移除
+        r"""将一个或者多个角色从用户移除
 
         将一个或者多个角色从用户移除
         
@@ -6842,7 +6842,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def update_roles_async(self, request):
-        """更新用户中的角色
+        r"""更新用户中的角色
 
         更新用户中的角色
         
@@ -6911,7 +6911,7 @@ class LakeFormationAsyncClient(Client):
         return http_info
 
     def list_groups_for_domain_async(self, request):
-        """获取租户的用户组
+        r"""获取租户的用户组
 
         获取租户的用户组
         

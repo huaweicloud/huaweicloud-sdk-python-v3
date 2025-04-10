@@ -28,7 +28,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
     }
 
     def __init__(self, is_permitted=None, team_id=None):
-        """RegisterCompetitionInfoResponse
+        r"""RegisterCompetitionInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
 
     @property
     def is_permitted(self):
-        """Gets the is_permitted of this RegisterCompetitionInfoResponse.
+        r"""Gets the is_permitted of this RegisterCompetitionInfoResponse.
 
         是否允许提交作品，true-允许，false-不允许
 
@@ -62,7 +62,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
 
     @is_permitted.setter
     def is_permitted(self, is_permitted):
-        """Sets the is_permitted of this RegisterCompetitionInfoResponse.
+        r"""Sets the is_permitted of this RegisterCompetitionInfoResponse.
 
         是否允许提交作品，true-允许，false-不允许
 
@@ -73,7 +73,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
 
     @property
     def team_id(self):
-        """Gets the team_id of this RegisterCompetitionInfoResponse.
+        r"""Gets the team_id of this RegisterCompetitionInfoResponse.
 
         团队ID
 
@@ -84,7 +84,7 @@ class RegisterCompetitionInfoResponse(SdkResponse):
 
     @team_id.setter
     def team_id(self, team_id):
-        """Sets the team_id of this RegisterCompetitionInfoResponse.
+        r"""Sets the team_id of this RegisterCompetitionInfoResponse.
 
         团队ID
 

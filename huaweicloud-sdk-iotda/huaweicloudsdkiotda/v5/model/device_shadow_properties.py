@@ -27,7 +27,7 @@ class DeviceShadowProperties:
     }
 
     def __init__(self, properties=None, event_time=None):
-        """DeviceShadowProperties
+        r"""DeviceShadowProperties
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeviceShadowProperties:
 
     @property
     def properties(self):
-        """Gets the properties of this DeviceShadowProperties.
+        r"""Gets the properties of this DeviceShadowProperties.
 
         设备影子的属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构。 **注意**：JSON结构的key当前不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00),key为以上特殊字符无法正常刷新设备影子
 
@@ -61,7 +61,7 @@ class DeviceShadowProperties:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this DeviceShadowProperties.
+        r"""Sets the properties of this DeviceShadowProperties.
 
         设备影子的属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构。 **注意**：JSON结构的key当前不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00),key为以上特殊字符无法正常刷新设备影子
 
@@ -72,7 +72,7 @@ class DeviceShadowProperties:
 
     @property
     def event_time(self):
-        """Gets the event_time of this DeviceShadowProperties.
+        r"""Gets the event_time of this DeviceShadowProperties.
 
         事件操作时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -83,7 +83,7 @@ class DeviceShadowProperties:
 
     @event_time.setter
     def event_time(self, event_time):
-        """Sets the event_time of this DeviceShadowProperties.
+        r"""Sets the event_time of this DeviceShadowProperties.
 
         事件操作时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

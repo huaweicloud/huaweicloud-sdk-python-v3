@@ -25,7 +25,7 @@ class CreateRoutesRequestBody:
     }
 
     def __init__(self, routes=None):
-        """CreateRoutesRequestBody
+        r"""CreateRoutesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateRoutesRequestBody:
 
     @property
     def routes(self):
-        """Gets the routes of this CreateRoutesRequestBody.
+        r"""Gets the routes of this CreateRoutesRequestBody.
 
         待创建的路由列表
 
@@ -53,7 +53,7 @@ class CreateRoutesRequestBody:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this CreateRoutesRequestBody.
+        r"""Sets the routes of this CreateRoutesRequestBody.
 
         待创建的路由列表
 

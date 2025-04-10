@@ -28,7 +28,7 @@ class DisassociateSubnetFirewallResponse(SdkResponse):
     }
 
     def __init__(self, firewall=None, request_id=None):
-        """DisassociateSubnetFirewallResponse
+        r"""DisassociateSubnetFirewallResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DisassociateSubnetFirewallResponse(SdkResponse):
 
     @property
     def firewall(self):
-        """Gets the firewall of this DisassociateSubnetFirewallResponse.
+        r"""Gets the firewall of this DisassociateSubnetFirewallResponse.
 
         :return: The firewall of this DisassociateSubnetFirewallResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.FirewallDetail`
@@ -60,7 +60,7 @@ class DisassociateSubnetFirewallResponse(SdkResponse):
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this DisassociateSubnetFirewallResponse.
+        r"""Sets the firewall of this DisassociateSubnetFirewallResponse.
 
         :param firewall: The firewall of this DisassociateSubnetFirewallResponse.
         :type firewall: :class:`huaweicloudsdkvpc.v3.FirewallDetail`
@@ -69,7 +69,7 @@ class DisassociateSubnetFirewallResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DisassociateSubnetFirewallResponse.
+        r"""Gets the request_id of this DisassociateSubnetFirewallResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class DisassociateSubnetFirewallResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DisassociateSubnetFirewallResponse.
+        r"""Sets the request_id of this DisassociateSubnetFirewallResponse.
 
         请求ID
 

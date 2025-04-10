@@ -33,7 +33,7 @@ class InstanceIpInfo:
     }
 
     def __init__(self, ip_id=None, ip=None, basic_bandwidth=None, elastic_bandwidth=None, ip_status=None):
-        """InstanceIpInfo
+        r"""InstanceIpInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceIpInfo:
 
     @property
     def ip_id(self):
-        """Gets the ip_id of this InstanceIpInfo.
+        r"""Gets the ip_id of this InstanceIpInfo.
 
         IP ID
 
@@ -82,7 +82,7 @@ class InstanceIpInfo:
 
     @ip_id.setter
     def ip_id(self, ip_id):
-        """Sets the ip_id of this InstanceIpInfo.
+        r"""Sets the ip_id of this InstanceIpInfo.
 
         IP ID
 
@@ -93,7 +93,7 @@ class InstanceIpInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this InstanceIpInfo.
+        r"""Gets the ip of this InstanceIpInfo.
 
         IP
 
@@ -104,7 +104,7 @@ class InstanceIpInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this InstanceIpInfo.
+        r"""Sets the ip of this InstanceIpInfo.
 
         IP
 
@@ -115,7 +115,7 @@ class InstanceIpInfo:
 
     @property
     def basic_bandwidth(self):
-        """Gets the basic_bandwidth of this InstanceIpInfo.
+        r"""Gets the basic_bandwidth of this InstanceIpInfo.
 
         保底带宽
 
@@ -126,7 +126,7 @@ class InstanceIpInfo:
 
     @basic_bandwidth.setter
     def basic_bandwidth(self, basic_bandwidth):
-        """Sets the basic_bandwidth of this InstanceIpInfo.
+        r"""Sets the basic_bandwidth of this InstanceIpInfo.
 
         保底带宽
 
@@ -137,7 +137,7 @@ class InstanceIpInfo:
 
     @property
     def elastic_bandwidth(self):
-        """Gets the elastic_bandwidth of this InstanceIpInfo.
+        r"""Gets the elastic_bandwidth of this InstanceIpInfo.
 
         弹性带宽
 
@@ -148,7 +148,7 @@ class InstanceIpInfo:
 
     @elastic_bandwidth.setter
     def elastic_bandwidth(self, elastic_bandwidth):
-        """Sets the elastic_bandwidth of this InstanceIpInfo.
+        r"""Sets the elastic_bandwidth of this InstanceIpInfo.
 
         弹性带宽
 
@@ -159,7 +159,7 @@ class InstanceIpInfo:
 
     @property
     def ip_status(self):
-        """Gets the ip_status of this InstanceIpInfo.
+        r"""Gets the ip_status of this InstanceIpInfo.
 
         IP状态
 
@@ -170,7 +170,7 @@ class InstanceIpInfo:
 
     @ip_status.setter
     def ip_status(self, ip_status):
-        """Sets the ip_status of this InstanceIpInfo.
+        r"""Sets the ip_status of this InstanceIpInfo.
 
         IP状态
 

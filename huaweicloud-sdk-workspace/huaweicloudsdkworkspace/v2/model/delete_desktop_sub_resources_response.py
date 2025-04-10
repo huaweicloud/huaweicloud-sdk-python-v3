@@ -36,7 +36,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, cbc_job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
-        """DeleteDesktopSubResourcesResponse
+        r"""DeleteDesktopSubResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDesktopSubResourcesResponse.
+        r"""Gets the job_id of this DeleteDesktopSubResourcesResponse.
 
         创建云桌面总任务id
 
@@ -90,7 +90,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDesktopSubResourcesResponse.
+        r"""Sets the job_id of this DeleteDesktopSubResourcesResponse.
 
         创建云桌面总任务id
 
@@ -101,7 +101,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @property
     def cbc_job_id(self):
-        """Gets the cbc_job_id of this DeleteDesktopSubResourcesResponse.
+        r"""Gets the cbc_job_id of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】包周期创建桌面的任务ID
 
@@ -112,7 +112,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @cbc_job_id.setter
     def cbc_job_id(self, cbc_job_id):
-        """Sets the cbc_job_id of this DeleteDesktopSubResourcesResponse.
+        r"""Sets the cbc_job_id of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】包周期创建桌面的任务ID
 
@@ -123,7 +123,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @property
     def get_job_endpoint(self):
-        """Gets the get_job_endpoint of this DeleteDesktopSubResourcesResponse.
+        r"""Gets the get_job_endpoint of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
@@ -134,7 +134,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @get_job_endpoint.setter
     def get_job_endpoint(self, get_job_endpoint):
-        """Sets the get_job_endpoint of this DeleteDesktopSubResourcesResponse.
+        r"""Sets the get_job_endpoint of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
@@ -145,7 +145,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @property
     def max_provision_time(self):
-        """Gets the max_provision_time of this DeleteDesktopSubResourcesResponse.
+        r"""Gets the max_provision_time of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】在线开通最大时间，在maxProvisionTime时间范围内，CBC会周期性的查询云服务开通结果；超过maxProvisionTime还没有开通成功，CBC会发失败工单，人工去分析处理。
 
@@ -156,7 +156,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @max_provision_time.setter
     def max_provision_time(self, max_provision_time):
-        """Sets the max_provision_time of this DeleteDesktopSubResourcesResponse.
+        r"""Sets the max_provision_time of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】在线开通最大时间，在maxProvisionTime时间范围内，CBC会周期性的查询云服务开通结果；超过maxProvisionTime还没有开通成功，CBC会发失败工单，人工去分析处理。
 
@@ -167,7 +167,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @property
     def min_provision_time(self):
-        """Gets the min_provision_time of this DeleteDesktopSubResourcesResponse.
+        r"""Gets the min_provision_time of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】开通最小时间（云服务最快开通时长，或一般开通时长）。获取到JobId后，经过minProvisionTime时间后，才来查询获取云服务开通结果。如果为空，云运营平台获取到JobId后，就去查询云服务开通结果。
 
@@ -178,7 +178,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @min_provision_time.setter
     def min_provision_time(self, min_provision_time):
-        """Sets the min_provision_time of this DeleteDesktopSubResourcesResponse.
+        r"""Sets the min_provision_time of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】开通最小时间（云服务最快开通时长，或一般开通时长）。获取到JobId后，经过minProvisionTime时间后，才来查询获取云服务开通结果。如果为空，云运营平台获取到JobId后，就去查询云服务开通结果。
 
@@ -189,7 +189,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @property
     def periodic_query_time(self):
-        """Gets the periodic_query_time of this DeleteDesktopSubResourcesResponse.
+        r"""Gets the periodic_query_time of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】云运营平台会使用getJobEndpoint(Job查询接口)、每隔periodicQueryTime时间去查询云服务开通结果。
 
@@ -200,7 +200,7 @@ class DeleteDesktopSubResourcesResponse(SdkResponse):
 
     @periodic_query_time.setter
     def periodic_query_time(self, periodic_query_time):
-        """Sets the periodic_query_time of this DeleteDesktopSubResourcesResponse.
+        r"""Sets the periodic_query_time of this DeleteDesktopSubResourcesResponse.
 
         【CBC回调】云运营平台会使用getJobEndpoint(Job查询接口)、每隔periodicQueryTime时间去查询云服务开通结果。
 

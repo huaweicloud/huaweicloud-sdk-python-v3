@@ -31,7 +31,7 @@ class ResourcesInfo:
     }
 
     def __init__(self, type=None, used=None, quota=None, min=None):
-        """ResourcesInfo
+        r"""ResourcesInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourcesInfo:
 
     @property
     def type(self):
-        """Gets the type of this ResourcesInfo.
+        r"""Gets the type of this ResourcesInfo.
 
         配额类型
 
@@ -75,7 +75,7 @@ class ResourcesInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourcesInfo.
+        r"""Sets the type of this ResourcesInfo.
 
         配额类型
 
@@ -86,7 +86,7 @@ class ResourcesInfo:
 
     @property
     def used(self):
-        """Gets the used of this ResourcesInfo.
+        r"""Gets the used of this ResourcesInfo.
 
         已使用配额
 
@@ -97,7 +97,7 @@ class ResourcesInfo:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ResourcesInfo.
+        r"""Sets the used of this ResourcesInfo.
 
         已使用配额
 
@@ -108,7 +108,7 @@ class ResourcesInfo:
 
     @property
     def quota(self):
-        """Gets the quota of this ResourcesInfo.
+        r"""Gets the quota of this ResourcesInfo.
 
         总配额数
 
@@ -119,7 +119,7 @@ class ResourcesInfo:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ResourcesInfo.
+        r"""Sets the quota of this ResourcesInfo.
 
         总配额数
 
@@ -130,7 +130,7 @@ class ResourcesInfo:
 
     @property
     def min(self):
-        """Gets the min of this ResourcesInfo.
+        r"""Gets the min of this ResourcesInfo.
 
         最小配额值
 
@@ -141,7 +141,7 @@ class ResourcesInfo:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ResourcesInfo.
+        r"""Sets the min of this ResourcesInfo.
 
         最小配额值
 

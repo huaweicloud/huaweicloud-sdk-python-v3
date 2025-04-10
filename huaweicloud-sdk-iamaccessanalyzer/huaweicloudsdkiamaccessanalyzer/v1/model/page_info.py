@@ -27,7 +27,7 @@ class PageInfo:
     }
 
     def __init__(self, current_count=None, next_marker=None):
-        """PageInfo
+        r"""PageInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PageInfo:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PageInfo.
+        r"""Gets the current_count of this PageInfo.
 
         当前页中的项数。
 
@@ -60,7 +60,7 @@ class PageInfo:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PageInfo.
+        r"""Sets the current_count of this PageInfo.
 
         当前页中的项数。
 
@@ -71,7 +71,7 @@ class PageInfo:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PageInfo.
+        r"""Gets the next_marker of this PageInfo.
 
         如果存在更多可用的输出，那么该值表示可用输出比当前响应中包含的更多。在后续调用此操作时，您可以在标记请求参数中使用此值，以获取输出的下一部分。您应该重复这个过程，直到next_marker返回为null。
 
@@ -82,7 +82,7 @@ class PageInfo:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PageInfo.
+        r"""Sets the next_marker of this PageInfo.
 
         如果存在更多可用的输出，那么该值表示可用输出比当前响应中包含的更多。在后续调用此操作时，您可以在标记请求参数中使用此值，以获取输出的下一部分。您应该重复这个过程，直到next_marker返回为null。
 

@@ -27,7 +27,7 @@ class UserGroupPerms:
     }
 
     def __init__(self, name=None, perm=None):
-        """UserGroupPerms
+        r"""UserGroupPerms
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserGroupPerms:
 
     @property
     def name(self):
-        """Gets the name of this UserGroupPerms.
+        r"""Gets the name of this UserGroupPerms.
 
         消费组名称。
 
@@ -61,7 +61,7 @@ class UserGroupPerms:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserGroupPerms.
+        r"""Sets the name of this UserGroupPerms.
 
         消费组名称。
 
@@ -72,7 +72,7 @@ class UserGroupPerms:
 
     @property
     def perm(self):
-        """Gets the perm of this UserGroupPerms.
+        r"""Gets the perm of this UserGroupPerms.
 
         权限。
 
@@ -83,7 +83,7 @@ class UserGroupPerms:
 
     @perm.setter
     def perm(self, perm):
-        """Sets the perm of this UserGroupPerms.
+        r"""Sets the perm of this UserGroupPerms.
 
         权限。
 

@@ -101,7 +101,7 @@ class InstanceDetail:
     }
 
     def __init__(self, publicip=None, exp_time=None, start_time=None, end_time=None, release_time=None, name=None, instance_id=None, private_ip=None, task_status=None, status=None, created=None, region=None, zone=None, availability_zone_display=None, vpc_id=None, subnet_id=None, security_group_id=None, specification=None, update=None, createinstance_status=None, fail_reason=None, instance_key=None, order_id=None, period_num=None, resource_id=None, bastion_type=None, alter_permit=None, public_id=None, bastion_version=None, new_bastion_version=None, instance_status=None, instance_description=None, slave_zone=None, enterprise_project_id=None, instance_type=None, ha_id=None, slave_zone_display=None, web_port=None, vip=None):
-        """InstanceDetail
+        r"""InstanceDetail
 
         The model defined in huaweicloud sdk
 
@@ -277,7 +277,7 @@ class InstanceDetail:
 
     @property
     def publicip(self):
-        """Gets the publicip of this InstanceDetail.
+        r"""Gets the publicip of this InstanceDetail.
 
         云堡垒机实例弹性公网IP，返回默认值null
 
@@ -288,7 +288,7 @@ class InstanceDetail:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this InstanceDetail.
+        r"""Sets the publicip of this InstanceDetail.
 
         云堡垒机实例弹性公网IP，返回默认值null
 
@@ -299,7 +299,7 @@ class InstanceDetail:
 
     @property
     def exp_time(self):
-        """Gets the exp_time of this InstanceDetail.
+        r"""Gets the exp_time of this InstanceDetail.
 
         云堡垒机实例过期时间。
 
@@ -310,7 +310,7 @@ class InstanceDetail:
 
     @exp_time.setter
     def exp_time(self, exp_time):
-        """Sets the exp_time of this InstanceDetail.
+        r"""Sets the exp_time of this InstanceDetail.
 
         云堡垒机实例过期时间。
 
@@ -321,7 +321,7 @@ class InstanceDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this InstanceDetail.
+        r"""Gets the start_time of this InstanceDetail.
 
         云堡垒机实例开始时间，使用时间戳格式表示。
 
@@ -332,7 +332,7 @@ class InstanceDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this InstanceDetail.
+        r"""Sets the start_time of this InstanceDetail.
 
         云堡垒机实例开始时间，使用时间戳格式表示。
 
@@ -343,7 +343,7 @@ class InstanceDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this InstanceDetail.
+        r"""Gets the end_time of this InstanceDetail.
 
         云堡垒机实例结束时间，使用时间戳格式表示。
 
@@ -354,7 +354,7 @@ class InstanceDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this InstanceDetail.
+        r"""Sets the end_time of this InstanceDetail.
 
         云堡垒机实例结束时间，使用时间戳格式表示。
 
@@ -365,7 +365,7 @@ class InstanceDetail:
 
     @property
     def release_time(self):
-        """Gets the release_time of this InstanceDetail.
+        r"""Gets the release_time of this InstanceDetail.
 
         云堡垒机释放时间，使用时间戳格式表示。
 
@@ -376,7 +376,7 @@ class InstanceDetail:
 
     @release_time.setter
     def release_time(self, release_time):
-        """Sets the release_time of this InstanceDetail.
+        r"""Sets the release_time of this InstanceDetail.
 
         云堡垒机释放时间，使用时间戳格式表示。
 
@@ -387,7 +387,7 @@ class InstanceDetail:
 
     @property
     def name(self):
-        """Gets the name of this InstanceDetail.
+        r"""Gets the name of this InstanceDetail.
 
         云堡垒机实例名称。
 
@@ -398,7 +398,7 @@ class InstanceDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceDetail.
+        r"""Sets the name of this InstanceDetail.
 
         云堡垒机实例名称。
 
@@ -409,7 +409,7 @@ class InstanceDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceDetail.
+        r"""Gets the instance_id of this InstanceDetail.
 
         云堡垒机实例ID，UUID格式。
 
@@ -420,7 +420,7 @@ class InstanceDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceDetail.
+        r"""Sets the instance_id of this InstanceDetail.
 
         云堡垒机实例ID，UUID格式。
 
@@ -431,7 +431,7 @@ class InstanceDetail:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this InstanceDetail.
+        r"""Gets the private_ip of this InstanceDetail.
 
         云堡垒机实例私有ip。
 
@@ -442,7 +442,7 @@ class InstanceDetail:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this InstanceDetail.
+        r"""Sets the private_ip of this InstanceDetail.
 
         云堡垒机实例私有ip。
 
@@ -453,7 +453,7 @@ class InstanceDetail:
 
     @property
     def task_status(self):
-        """Gets the task_status of this InstanceDetail.
+        r"""Gets the task_status of this InstanceDetail.
 
         云堡垒机实例当前的任务状态。 - powering-on 开启 - powering-off 关闭 - rebooting 重启 - delete_wait 删除 - frozen 冻结 - NO_TASK 运行 - unfrozen 解冻 - alter 变更 - updating 升级中 - configuring-ha 配置HA
 
@@ -464,7 +464,7 @@ class InstanceDetail:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this InstanceDetail.
+        r"""Sets the task_status of this InstanceDetail.
 
         云堡垒机实例当前的任务状态。 - powering-on 开启 - powering-off 关闭 - rebooting 重启 - delete_wait 删除 - frozen 冻结 - NO_TASK 运行 - unfrozen 解冻 - alter 变更 - updating 升级中 - configuring-ha 配置HA
 
@@ -475,7 +475,7 @@ class InstanceDetail:
 
     @property
     def status(self):
-        """Gets the status of this InstanceDetail.
+        r"""Gets the status of this InstanceDetail.
 
         云堡垒机实例状态。 - SHUTOFF 已关闭 - ACTIVE 运行中 - DELETING 删除中 - BUILD 创建中 - DELETED 已删除 - ERROR 故障 - HAWAIT 等待备机创建成功 - FROZEN 已冻结 - UPGRADING 升级中 - UNPAID 待支付 - RESIZE 规格变更中 - DILATATION 扩容中 - HA 配置HA中
 
@@ -486,7 +486,7 @@ class InstanceDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceDetail.
+        r"""Sets the status of this InstanceDetail.
 
         云堡垒机实例状态。 - SHUTOFF 已关闭 - ACTIVE 运行中 - DELETING 删除中 - BUILD 创建中 - DELETED 已删除 - ERROR 故障 - HAWAIT 等待备机创建成功 - FROZEN 已冻结 - UPGRADING 升级中 - UNPAID 待支付 - RESIZE 规格变更中 - DILATATION 扩容中 - HA 配置HA中
 
@@ -497,7 +497,7 @@ class InstanceDetail:
 
     @property
     def created(self):
-        """Gets the created of this InstanceDetail.
+        r"""Gets the created of this InstanceDetail.
 
         云堡垒机实例创建时间，使用UTC时间表示。
 
@@ -508,7 +508,7 @@ class InstanceDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this InstanceDetail.
+        r"""Sets the created of this InstanceDetail.
 
         云堡垒机实例创建时间，使用UTC时间表示。
 
@@ -519,7 +519,7 @@ class InstanceDetail:
 
     @property
     def region(self):
-        """Gets the region of this InstanceDetail.
+        r"""Gets the region of this InstanceDetail.
 
         云堡垒机实例所在局点。
 
@@ -530,7 +530,7 @@ class InstanceDetail:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this InstanceDetail.
+        r"""Sets the region of this InstanceDetail.
 
         云堡垒机实例所在局点。
 
@@ -541,7 +541,7 @@ class InstanceDetail:
 
     @property
     def zone(self):
-        """Gets the zone of this InstanceDetail.
+        r"""Gets the zone of this InstanceDetail.
 
         云堡垒机实例所在可用区。
 
@@ -552,7 +552,7 @@ class InstanceDetail:
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this InstanceDetail.
+        r"""Sets the zone of this InstanceDetail.
 
         云堡垒机实例所在可用区。
 
@@ -563,7 +563,7 @@ class InstanceDetail:
 
     @property
     def availability_zone_display(self):
-        """Gets the availability_zone_display of this InstanceDetail.
+        r"""Gets the availability_zone_display of this InstanceDetail.
 
         云堡垒机实例所在可用区中文名称。
 
@@ -574,7 +574,7 @@ class InstanceDetail:
 
     @availability_zone_display.setter
     def availability_zone_display(self, availability_zone_display):
-        """Sets the availability_zone_display of this InstanceDetail.
+        r"""Sets the availability_zone_display of this InstanceDetail.
 
         云堡垒机实例所在可用区中文名称。
 
@@ -585,7 +585,7 @@ class InstanceDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this InstanceDetail.
+        r"""Gets the vpc_id of this InstanceDetail.
 
         云堡垒机实例所在虚拟私有云的VPC ID。
 
@@ -596,7 +596,7 @@ class InstanceDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this InstanceDetail.
+        r"""Sets the vpc_id of this InstanceDetail.
 
         云堡垒机实例所在虚拟私有云的VPC ID。
 
@@ -607,7 +607,7 @@ class InstanceDetail:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this InstanceDetail.
+        r"""Gets the subnet_id of this InstanceDetail.
 
         云堡垒机实例所在子网的ID。
 
@@ -618,7 +618,7 @@ class InstanceDetail:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this InstanceDetail.
+        r"""Sets the subnet_id of this InstanceDetail.
 
         云堡垒机实例所在子网的ID。
 
@@ -629,7 +629,7 @@ class InstanceDetail:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this InstanceDetail.
+        r"""Gets the security_group_id of this InstanceDetail.
 
         云堡垒机实例所属的安全组的ID。
 
@@ -640,7 +640,7 @@ class InstanceDetail:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this InstanceDetail.
+        r"""Sets the security_group_id of this InstanceDetail.
 
         云堡垒机实例所属的安全组的ID。
 
@@ -651,7 +651,7 @@ class InstanceDetail:
 
     @property
     def specification(self):
-        """Gets the specification of this InstanceDetail.
+        r"""Gets the specification of this InstanceDetail.
 
         云堡垒机实例规格。
 
@@ -662,7 +662,7 @@ class InstanceDetail:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this InstanceDetail.
+        r"""Sets the specification of this InstanceDetail.
 
         云堡垒机实例规格。
 
@@ -673,7 +673,7 @@ class InstanceDetail:
 
     @property
     def update(self):
-        """Gets the update of this InstanceDetail.
+        r"""Gets the update of this InstanceDetail.
 
         云堡垒机实例是否可以升级。 - NEW，可以升级 - OLD，不能升级
 
@@ -684,7 +684,7 @@ class InstanceDetail:
 
     @update.setter
     def update(self, update):
-        """Sets the update of this InstanceDetail.
+        r"""Sets the update of this InstanceDetail.
 
         云堡垒机实例是否可以升级。 - NEW，可以升级 - OLD，不能升级
 
@@ -695,7 +695,7 @@ class InstanceDetail:
 
     @property
     def createinstance_status(self):
-        """Gets the createinstance_status of this InstanceDetail.
+        r"""Gets the createinstance_status of this InstanceDetail.
 
         云堡垒机实例在创建实例过程中的过程状态信息。 - Waiting for payment，等待支付 - creating-network，创建网络 - creating-server，创建服务 - tranfering-horizontal-network，网络打通 - adding-policy-route，添加路由策略 - configing-dns，配置DNS - starting-cbs-service，服务运行中 - setting-init-conf，初始化 - buying-EIP，购买弹性公网IP
 
@@ -706,7 +706,7 @@ class InstanceDetail:
 
     @createinstance_status.setter
     def createinstance_status(self, createinstance_status):
-        """Sets the createinstance_status of this InstanceDetail.
+        r"""Sets the createinstance_status of this InstanceDetail.
 
         云堡垒机实例在创建实例过程中的过程状态信息。 - Waiting for payment，等待支付 - creating-network，创建网络 - creating-server，创建服务 - tranfering-horizontal-network，网络打通 - adding-policy-route，添加路由策略 - configing-dns，配置DNS - starting-cbs-service，服务运行中 - setting-init-conf，初始化 - buying-EIP，购买弹性公网IP
 
@@ -717,7 +717,7 @@ class InstanceDetail:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this InstanceDetail.
+        r"""Gets the fail_reason of this InstanceDetail.
 
         云堡垒机实例创建实例失败原因。
 
@@ -728,7 +728,7 @@ class InstanceDetail:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this InstanceDetail.
+        r"""Sets the fail_reason of this InstanceDetail.
 
         云堡垒机实例创建实例失败原因。
 
@@ -739,7 +739,7 @@ class InstanceDetail:
 
     @property
     def instance_key(self):
-        """Gets the instance_key of this InstanceDetail.
+        r"""Gets the instance_key of this InstanceDetail.
 
         云堡垒机实例key。
 
@@ -750,7 +750,7 @@ class InstanceDetail:
 
     @instance_key.setter
     def instance_key(self, instance_key):
-        """Sets the instance_key of this InstanceDetail.
+        r"""Sets the instance_key of this InstanceDetail.
 
         云堡垒机实例key。
 
@@ -761,7 +761,7 @@ class InstanceDetail:
 
     @property
     def order_id(self):
-        """Gets the order_id of this InstanceDetail.
+        r"""Gets the order_id of this InstanceDetail.
 
         订单ID。
 
@@ -772,7 +772,7 @@ class InstanceDetail:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this InstanceDetail.
+        r"""Sets the order_id of this InstanceDetail.
 
         订单ID。
 
@@ -783,7 +783,7 @@ class InstanceDetail:
 
     @property
     def period_num(self):
-        """Gets the period_num of this InstanceDetail.
+        r"""Gets the period_num of this InstanceDetail.
 
         云堡垒机实例订购周期数。
 
@@ -794,7 +794,7 @@ class InstanceDetail:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this InstanceDetail.
+        r"""Sets the period_num of this InstanceDetail.
 
         云堡垒机实例订购周期数。
 
@@ -805,7 +805,7 @@ class InstanceDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this InstanceDetail.
+        r"""Gets the resource_id of this InstanceDetail.
 
         云堡垒机实例的资源id,UUID格式显示。
 
@@ -816,7 +816,7 @@ class InstanceDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this InstanceDetail.
+        r"""Sets the resource_id of this InstanceDetail.
 
         云堡垒机实例的资源id,UUID格式显示。
 
@@ -827,7 +827,7 @@ class InstanceDetail:
 
     @property
     def bastion_type(self):
-        """Gets the bastion_type of this InstanceDetail.
+        r"""Gets the bastion_type of this InstanceDetail.
 
         云堡垒机实例堡垒机类型。 - OEM
 
@@ -838,7 +838,7 @@ class InstanceDetail:
 
     @bastion_type.setter
     def bastion_type(self, bastion_type):
-        """Sets the bastion_type of this InstanceDetail.
+        r"""Sets the bastion_type of this InstanceDetail.
 
         云堡垒机实例堡垒机类型。 - OEM
 
@@ -849,7 +849,7 @@ class InstanceDetail:
 
     @property
     def alter_permit(self):
-        """Gets the alter_permit of this InstanceDetail.
+        r"""Gets the alter_permit of this InstanceDetail.
 
         云堡垒机实例是否可以扩容。 - 1 开启扩容 - 0 关闭扩容
 
@@ -860,7 +860,7 @@ class InstanceDetail:
 
     @alter_permit.setter
     def alter_permit(self, alter_permit):
-        """Sets the alter_permit of this InstanceDetail.
+        r"""Sets the alter_permit of this InstanceDetail.
 
         云堡垒机实例是否可以扩容。 - 1 开启扩容 - 0 关闭扩容
 
@@ -871,7 +871,7 @@ class InstanceDetail:
 
     @property
     def public_id(self):
-        """Gets the public_id of this InstanceDetail.
+        r"""Gets the public_id of this InstanceDetail.
 
         云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
 
@@ -882,7 +882,7 @@ class InstanceDetail:
 
     @public_id.setter
     def public_id(self, public_id):
-        """Sets the public_id of this InstanceDetail.
+        r"""Sets the public_id of this InstanceDetail.
 
         云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
 
@@ -893,7 +893,7 @@ class InstanceDetail:
 
     @property
     def bastion_version(self):
-        """Gets the bastion_version of this InstanceDetail.
+        r"""Gets the bastion_version of this InstanceDetail.
 
         云堡垒机实例当前版本。
 
@@ -904,7 +904,7 @@ class InstanceDetail:
 
     @bastion_version.setter
     def bastion_version(self, bastion_version):
-        """Sets the bastion_version of this InstanceDetail.
+        r"""Sets the bastion_version of this InstanceDetail.
 
         云堡垒机实例当前版本。
 
@@ -915,7 +915,7 @@ class InstanceDetail:
 
     @property
     def new_bastion_version(self):
-        """Gets the new_bastion_version of this InstanceDetail.
+        r"""Gets the new_bastion_version of this InstanceDetail.
 
         云堡垒机实例可以升级的版本。
 
@@ -926,7 +926,7 @@ class InstanceDetail:
 
     @new_bastion_version.setter
     def new_bastion_version(self, new_bastion_version):
-        """Sets the new_bastion_version of this InstanceDetail.
+        r"""Sets the new_bastion_version of this InstanceDetail.
 
         云堡垒机实例可以升级的版本。
 
@@ -937,7 +937,7 @@ class InstanceDetail:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this InstanceDetail.
+        r"""Gets the instance_status of this InstanceDetail.
 
         云堡垒机实例状态。 - building  创建中 - deleting  删除中 - deleted 删除了 - unpaid  未支付 - upgrading 升级中 - resizing  扩容中 - abnormal  异常 - error 故障 - ok  正常
 
@@ -948,7 +948,7 @@ class InstanceDetail:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this InstanceDetail.
+        r"""Sets the instance_status of this InstanceDetail.
 
         云堡垒机实例状态。 - building  创建中 - deleting  删除中 - deleted 删除了 - unpaid  未支付 - upgrading 升级中 - resizing  扩容中 - abnormal  异常 - error 故障 - ok  正常
 
@@ -959,7 +959,7 @@ class InstanceDetail:
 
     @property
     def instance_description(self):
-        """Gets the instance_description of this InstanceDetail.
+        r"""Gets the instance_description of this InstanceDetail.
 
         云堡垒机实例状态描述。
 
@@ -970,7 +970,7 @@ class InstanceDetail:
 
     @instance_description.setter
     def instance_description(self, instance_description):
-        """Sets the instance_description of this InstanceDetail.
+        r"""Sets the instance_description of this InstanceDetail.
 
         云堡垒机实例状态描述。
 
@@ -981,7 +981,7 @@ class InstanceDetail:
 
     @property
     def slave_zone(self):
-        """Gets the slave_zone of this InstanceDetail.
+        r"""Gets the slave_zone of this InstanceDetail.
 
         备可用分区，默认返回null。
 
@@ -992,7 +992,7 @@ class InstanceDetail:
 
     @slave_zone.setter
     def slave_zone(self, slave_zone):
-        """Sets the slave_zone of this InstanceDetail.
+        r"""Sets the slave_zone of this InstanceDetail.
 
         备可用分区，默认返回null。
 
@@ -1003,7 +1003,7 @@ class InstanceDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceDetail.
+        r"""Gets the enterprise_project_id of this InstanceDetail.
 
         云堡垒机实例所属企业项目ID。
 
@@ -1014,7 +1014,7 @@ class InstanceDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceDetail.
+        r"""Sets the enterprise_project_id of this InstanceDetail.
 
         云堡垒机实例所属企业项目ID。
 
@@ -1025,7 +1025,7 @@ class InstanceDetail:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this InstanceDetail.
+        r"""Gets the instance_type of this InstanceDetail.
 
         云堡垒机实例类型。 - null  单机默认返回null - master  HA时返回主机 - slave HA时返回备机
 
@@ -1036,7 +1036,7 @@ class InstanceDetail:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this InstanceDetail.
+        r"""Sets the instance_type of this InstanceDetail.
 
         云堡垒机实例类型。 - null  单机默认返回null - master  HA时返回主机 - slave HA时返回备机
 
@@ -1047,7 +1047,7 @@ class InstanceDetail:
 
     @property
     def ha_id(self):
-        """Gets the ha_id of this InstanceDetail.
+        r"""Gets the ha_id of this InstanceDetail.
 
         云堡垒机实例主备ID。 - 单机堡垒机实例默认返回null - HA堡垒机实例返回主机HAID
 
@@ -1058,7 +1058,7 @@ class InstanceDetail:
 
     @ha_id.setter
     def ha_id(self, ha_id):
-        """Sets the ha_id of this InstanceDetail.
+        r"""Sets the ha_id of this InstanceDetail.
 
         云堡垒机实例主备ID。 - 单机堡垒机实例默认返回null - HA堡垒机实例返回主机HAID
 
@@ -1069,7 +1069,7 @@ class InstanceDetail:
 
     @property
     def slave_zone_display(self):
-        """Gets the slave_zone_display of this InstanceDetail.
+        r"""Gets the slave_zone_display of this InstanceDetail.
 
         云堡垒机实例备机可用分区名称。 单机堡垒机实例和备机堡垒机实例返回null，HA堡垒机实例主机返回备机所在可用区名称。
 
@@ -1080,7 +1080,7 @@ class InstanceDetail:
 
     @slave_zone_display.setter
     def slave_zone_display(self, slave_zone_display):
-        """Sets the slave_zone_display of this InstanceDetail.
+        r"""Sets the slave_zone_display of this InstanceDetail.
 
         云堡垒机实例备机可用分区名称。 单机堡垒机实例和备机堡垒机实例返回null，HA堡垒机实例主机返回备机所在可用区名称。
 
@@ -1091,7 +1091,7 @@ class InstanceDetail:
 
     @property
     def web_port(self):
-        """Gets the web_port of this InstanceDetail.
+        r"""Gets the web_port of this InstanceDetail.
 
         云堡垒机实例WEB界面访问的端口号。
 
@@ -1102,7 +1102,7 @@ class InstanceDetail:
 
     @web_port.setter
     def web_port(self, web_port):
-        """Sets the web_port of this InstanceDetail.
+        r"""Sets the web_port of this InstanceDetail.
 
         云堡垒机实例WEB界面访问的端口号。
 
@@ -1113,7 +1113,7 @@ class InstanceDetail:
 
     @property
     def vip(self):
-        """Gets the vip of this InstanceDetail.
+        r"""Gets the vip of this InstanceDetail.
 
         云堡垒机实例浮动ip。返回默认值null
 
@@ -1124,7 +1124,7 @@ class InstanceDetail:
 
     @vip.setter
     def vip(self, vip):
-        """Sets the vip of this InstanceDetail.
+        r"""Sets the vip of this InstanceDetail.
 
         云堡垒机实例浮动ip。返回默认值null
 

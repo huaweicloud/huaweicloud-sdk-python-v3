@@ -43,7 +43,7 @@ class ListCentralNetworkAttachmentsRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, attachment_instance_type=None, state=None, central_network_id=None, attachment_instance_id=None):
-        """ListCentralNetworkAttachmentsRequest
+        r"""ListCentralNetworkAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the limit of this ListCentralNetworkAttachmentsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -116,7 +116,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the limit of this ListCentralNetworkAttachmentsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -127,7 +127,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the marker of this ListCentralNetworkAttachmentsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -138,7 +138,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the marker of this ListCentralNetworkAttachmentsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -149,7 +149,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the sort_key of this ListCentralNetworkAttachmentsRequest.
 
         排序字段。
 
@@ -160,7 +160,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the sort_key of this ListCentralNetworkAttachmentsRequest.
 
         排序字段。
 
@@ -171,7 +171,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the sort_dir of this ListCentralNetworkAttachmentsRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -182,7 +182,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the sort_dir of this ListCentralNetworkAttachmentsRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -193,7 +193,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the id of this ListCentralNetworkAttachmentsRequest.
 
         根据id查询，可查询多个id。
 
@@ -204,7 +204,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the id of this ListCentralNetworkAttachmentsRequest.
 
         根据id查询，可查询多个id。
 
@@ -215,7 +215,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the name of this ListCentralNetworkAttachmentsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -226,7 +226,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the name of this ListCentralNetworkAttachmentsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -237,7 +237,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def attachment_instance_type(self):
-        """Gets the attachment_instance_type of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the attachment_instance_type of this ListCentralNetworkAttachmentsRequest.
 
         根据附件类型查询，可查询多个附件类型。
 
@@ -248,7 +248,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @attachment_instance_type.setter
     def attachment_instance_type(self, attachment_instance_type):
-        """Sets the attachment_instance_type of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the attachment_instance_type of this ListCentralNetworkAttachmentsRequest.
 
         根据附件类型查询，可查询多个附件类型。
 
@@ -259,7 +259,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the state of this ListCentralNetworkAttachmentsRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -270,7 +270,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the state of this ListCentralNetworkAttachmentsRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -281,7 +281,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the central_network_id of this ListCentralNetworkAttachmentsRequest.
 
         中心网络的ID。
 
@@ -292,7 +292,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the central_network_id of this ListCentralNetworkAttachmentsRequest.
 
         中心网络的ID。
 
@@ -303,7 +303,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @property
     def attachment_instance_id(self):
-        """Gets the attachment_instance_id of this ListCentralNetworkAttachmentsRequest.
+        r"""Gets the attachment_instance_id of this ListCentralNetworkAttachmentsRequest.
 
         Attachment实例的ID。
 
@@ -314,7 +314,7 @@ class ListCentralNetworkAttachmentsRequest:
 
     @attachment_instance_id.setter
     def attachment_instance_id(self, attachment_instance_id):
-        """Sets the attachment_instance_id of this ListCentralNetworkAttachmentsRequest.
+        r"""Sets the attachment_instance_id of this ListCentralNetworkAttachmentsRequest.
 
         Attachment实例的ID。
 

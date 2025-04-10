@@ -41,7 +41,7 @@ class ListProtectedInstancesRequest:
     }
 
     def __init__(self, server_group_id=None, server_group_ids=None, protected_instance_ids=None, limit=None, offset=None, status=None, name=None, query_type=None, availability_zone=None):
-        """ListProtectedInstancesRequest
+        r"""ListProtectedInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListProtectedInstancesRequest.
+        r"""Gets the server_group_id of this ListProtectedInstancesRequest.
 
         保护组的ID，表示查询该保护组下的所有保护实例列表。
 
@@ -110,7 +110,7 @@ class ListProtectedInstancesRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListProtectedInstancesRequest.
+        r"""Sets the server_group_id of this ListProtectedInstancesRequest.
 
         保护组的ID，表示查询该保护组下的所有保护实例列表。
 
@@ -121,7 +121,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def server_group_ids(self):
-        """Gets the server_group_ids of this ListProtectedInstancesRequest.
+        r"""Gets the server_group_ids of this ListProtectedInstancesRequest.
 
         保护组的ID列表，格式为server_group_ids=['server_group_id1','server_group_id2',...,'server_group_idx']，请使用URL编码进行转换。返回“server_group_ids”中有效server_group_id的所有保护实例列表，无效的server_group_id会被忽略。支持查询最多30个server_group_id对应的所有保护实例列表。如果“server_group_id”和“server_group_ids”查询参数同时存在，“server_group_id”会被忽略。
 
@@ -132,7 +132,7 @@ class ListProtectedInstancesRequest:
 
     @server_group_ids.setter
     def server_group_ids(self, server_group_ids):
-        """Sets the server_group_ids of this ListProtectedInstancesRequest.
+        r"""Sets the server_group_ids of this ListProtectedInstancesRequest.
 
         保护组的ID列表，格式为server_group_ids=['server_group_id1','server_group_id2',...,'server_group_idx']，请使用URL编码进行转换。返回“server_group_ids”中有效server_group_id的所有保护实例列表，无效的server_group_id会被忽略。支持查询最多30个server_group_id对应的所有保护实例列表。如果“server_group_id”和“server_group_ids”查询参数同时存在，“server_group_id”会被忽略。
 
@@ -143,7 +143,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def protected_instance_ids(self):
-        """Gets the protected_instance_ids of this ListProtectedInstancesRequest.
+        r"""Gets the protected_instance_ids of this ListProtectedInstancesRequest.
 
         保护实例的ID列表，格式为protected_instance_ids=['protected_instance_id1','protected_instance_id2',...,'protected_instance_idx']，请使用URL编码进行转换。返回“protected_instance_ids”中有效protected_instance_id的所有保护实例列表，无效的protected_instance_id会被忽略。支持查询最多30个protected_instance_id对应的所有保护实例列表。如果“server_group_id”或者“server_group_ids”查询参数存在时，“protected_instance_ids”会被忽略。
 
@@ -154,7 +154,7 @@ class ListProtectedInstancesRequest:
 
     @protected_instance_ids.setter
     def protected_instance_ids(self, protected_instance_ids):
-        """Sets the protected_instance_ids of this ListProtectedInstancesRequest.
+        r"""Sets the protected_instance_ids of this ListProtectedInstancesRequest.
 
         保护实例的ID列表，格式为protected_instance_ids=['protected_instance_id1','protected_instance_id2',...,'protected_instance_idx']，请使用URL编码进行转换。返回“protected_instance_ids”中有效protected_instance_id的所有保护实例列表，无效的protected_instance_id会被忽略。支持查询最多30个protected_instance_id对应的所有保护实例列表。如果“server_group_id”或者“server_group_ids”查询参数存在时，“protected_instance_ids”会被忽略。
 
@@ -165,7 +165,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProtectedInstancesRequest.
+        r"""Gets the limit of this ListProtectedInstancesRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -176,7 +176,7 @@ class ListProtectedInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProtectedInstancesRequest.
+        r"""Sets the limit of this ListProtectedInstancesRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -187,7 +187,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProtectedInstancesRequest.
+        r"""Gets the offset of this ListProtectedInstancesRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -198,7 +198,7 @@ class ListProtectedInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProtectedInstancesRequest.
+        r"""Sets the offset of this ListProtectedInstancesRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -209,7 +209,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListProtectedInstancesRequest.
+        r"""Gets the status of this ListProtectedInstancesRequest.
 
         保护实例状态。
 
@@ -220,7 +220,7 @@ class ListProtectedInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProtectedInstancesRequest.
+        r"""Sets the status of this ListProtectedInstancesRequest.
 
         保护实例状态。
 
@@ -231,7 +231,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListProtectedInstancesRequest.
+        r"""Gets the name of this ListProtectedInstancesRequest.
 
         保护实例的名称。支持模糊查询。
 
@@ -242,7 +242,7 @@ class ListProtectedInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProtectedInstancesRequest.
+        r"""Sets the name of this ListProtectedInstancesRequest.
 
         保护实例的名称。支持模糊查询。
 
@@ -253,7 +253,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListProtectedInstancesRequest.
+        r"""Gets the query_type of this ListProtectedInstancesRequest.
 
         查询场景类型。status_abnormal：表示查询异常状态的保护实例列表。general或空时：该参数不生效。
 
@@ -264,7 +264,7 @@ class ListProtectedInstancesRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListProtectedInstancesRequest.
+        r"""Sets the query_type of this ListProtectedInstancesRequest.
 
         查询场景类型。status_abnormal：表示查询异常状态的保护实例列表。general或空时：该参数不生效。
 
@@ -275,7 +275,7 @@ class ListProtectedInstancesRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListProtectedInstancesRequest.
+        r"""Gets the availability_zone of this ListProtectedInstancesRequest.
 
         保护实例所在的保护组的当前生产站点可用区。
 
@@ -286,7 +286,7 @@ class ListProtectedInstancesRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListProtectedInstancesRequest.
+        r"""Sets the availability_zone of this ListProtectedInstancesRequest.
 
         保护实例所在的保护组的当前生产站点可用区。
 

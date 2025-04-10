@@ -25,7 +25,7 @@ class ListTenantConfigsRequest:
     }
 
     def __init__(self, name=None):
-        """ListTenantConfigsRequest
+        r"""ListTenantConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTenantConfigsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTenantConfigsRequest.
+        r"""Gets the name of this ListTenantConfigsRequest.
 
         开关名称。
 
@@ -54,7 +54,7 @@ class ListTenantConfigsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTenantConfigsRequest.
+        r"""Sets the name of this ListTenantConfigsRequest.
 
         开关名称。
 

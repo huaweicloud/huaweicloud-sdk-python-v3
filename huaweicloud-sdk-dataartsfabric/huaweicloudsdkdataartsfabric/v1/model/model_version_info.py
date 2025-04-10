@@ -37,7 +37,7 @@ class ModelVersionInfo:
     }
 
     def __init__(self, id=None, name=None, cap_white_list=None, description=None, config=None, create_time=None, create_user=None):
-        """ModelVersionInfo
+        r"""ModelVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ModelVersionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ModelVersionInfo.
+        r"""Gets the id of this ModelVersionInfo.
 
         模型版本ID，32~36位的英文、数字、短横组合，系统自动生成无法修改，输入不生效。
 
@@ -94,7 +94,7 @@ class ModelVersionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModelVersionInfo.
+        r"""Sets the id of this ModelVersionInfo.
 
         模型版本ID，32~36位的英文、数字、短横组合，系统自动生成无法修改，输入不生效。
 
@@ -105,7 +105,7 @@ class ModelVersionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ModelVersionInfo.
+        r"""Gets the name of this ModelVersionInfo.
 
         模型版本名称, 只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -116,7 +116,7 @@ class ModelVersionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModelVersionInfo.
+        r"""Sets the name of this ModelVersionInfo.
 
         模型版本名称, 只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -127,7 +127,7 @@ class ModelVersionInfo:
 
     @property
     def cap_white_list(self):
-        """Gets the cap_white_list of this ModelVersionInfo.
+        r"""Gets the cap_white_list of this ModelVersionInfo.
 
         cap白名单
 
@@ -138,7 +138,7 @@ class ModelVersionInfo:
 
     @cap_white_list.setter
     def cap_white_list(self, cap_white_list):
-        """Sets the cap_white_list of this ModelVersionInfo.
+        r"""Sets the cap_white_list of this ModelVersionInfo.
 
         cap白名单
 
@@ -149,7 +149,7 @@ class ModelVersionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ModelVersionInfo.
+        r"""Gets the description of this ModelVersionInfo.
 
         描述信息
 
@@ -160,7 +160,7 @@ class ModelVersionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModelVersionInfo.
+        r"""Sets the description of this ModelVersionInfo.
 
         描述信息
 
@@ -171,7 +171,7 @@ class ModelVersionInfo:
 
     @property
     def config(self):
-        """Gets the config of this ModelVersionInfo.
+        r"""Gets the config of this ModelVersionInfo.
 
         :return: The config of this ModelVersionInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelConfig`
@@ -180,7 +180,7 @@ class ModelVersionInfo:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ModelVersionInfo.
+        r"""Sets the config of this ModelVersionInfo.
 
         :param config: The config of this ModelVersionInfo.
         :type config: :class:`huaweicloudsdkdataartsfabric.v1.ModelConfig`
@@ -189,7 +189,7 @@ class ModelVersionInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ModelVersionInfo.
+        r"""Gets the create_time of this ModelVersionInfo.
 
         创建时间
 
@@ -200,7 +200,7 @@ class ModelVersionInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ModelVersionInfo.
+        r"""Sets the create_time of this ModelVersionInfo.
 
         创建时间
 
@@ -211,7 +211,7 @@ class ModelVersionInfo:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ModelVersionInfo.
+        r"""Gets the create_user of this ModelVersionInfo.
 
         :return: The create_user of this ModelVersionInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -220,7 +220,7 @@ class ModelVersionInfo:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ModelVersionInfo.
+        r"""Sets the create_user of this ModelVersionInfo.
 
         :param create_user: The create_user of this ModelVersionInfo.
         :type create_user: :class:`huaweicloudsdkdataartsfabric.v1.User`

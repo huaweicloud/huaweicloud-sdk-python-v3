@@ -30,7 +30,7 @@ class ListPtrRecordsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, metadata=None, floatingips=None):
-        """ListPtrRecordsResponse
+        r"""ListPtrRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListPtrRecordsResponse.
+        r"""Gets the links of this ListPtrRecordsResponse.
 
         :return: The links of this ListPtrRecordsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListPtrRecordsResponse.
+        r"""Sets the links of this ListPtrRecordsResponse.
 
         :param links: The links of this ListPtrRecordsResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListPtrRecordsResponse.
+        r"""Gets the metadata of this ListPtrRecordsResponse.
 
         :return: The metadata of this ListPtrRecordsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -85,7 +85,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListPtrRecordsResponse.
+        r"""Sets the metadata of this ListPtrRecordsResponse.
 
         :param metadata: The metadata of this ListPtrRecordsResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -94,7 +94,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     @property
     def floatingips(self):
-        """Gets the floatingips of this ListPtrRecordsResponse.
+        r"""Gets the floatingips of this ListPtrRecordsResponse.
 
         弹性公网IP的PTR记录ID列表信息。
 
@@ -105,7 +105,7 @@ class ListPtrRecordsResponse(SdkResponse):
 
     @floatingips.setter
     def floatingips(self, floatingips):
-        """Sets the floatingips of this ListPtrRecordsResponse.
+        r"""Sets the floatingips of this ListPtrRecordsResponse.
 
         弹性公网IP的PTR记录ID列表信息。
 

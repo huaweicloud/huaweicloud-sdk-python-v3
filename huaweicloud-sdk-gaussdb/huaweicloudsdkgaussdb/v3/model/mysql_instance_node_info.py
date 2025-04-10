@@ -59,7 +59,7 @@ class MysqlInstanceNodeInfo:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, port=None, private_read_ips=None, volume=None, az_code=None, region_code=None, created=None, updated=None, flavor_id=None, flavor_ref=None, max_connections=None, vcpus=None, ram=None, need_restart=None, priority=None):
-        """MysqlInstanceNodeInfo
+        r"""MysqlInstanceNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -160,7 +160,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def id(self):
-        """Gets the id of this MysqlInstanceNodeInfo.
+        r"""Gets the id of this MysqlInstanceNodeInfo.
 
         实例ID。
 
@@ -171,7 +171,7 @@ class MysqlInstanceNodeInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlInstanceNodeInfo.
+        r"""Sets the id of this MysqlInstanceNodeInfo.
 
         实例ID。
 
@@ -182,7 +182,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def name(self):
-        """Gets the name of this MysqlInstanceNodeInfo.
+        r"""Gets the name of this MysqlInstanceNodeInfo.
 
         节点名称。
 
@@ -193,7 +193,7 @@ class MysqlInstanceNodeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlInstanceNodeInfo.
+        r"""Sets the name of this MysqlInstanceNodeInfo.
 
         节点名称。
 
@@ -204,7 +204,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def type(self):
-        """Gets the type of this MysqlInstanceNodeInfo.
+        r"""Gets the type of this MysqlInstanceNodeInfo.
 
         节点类型，master或slave。
 
@@ -215,7 +215,7 @@ class MysqlInstanceNodeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlInstanceNodeInfo.
+        r"""Sets the type of this MysqlInstanceNodeInfo.
 
         节点类型，master或slave。
 
@@ -226,7 +226,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def status(self):
-        """Gets the status of this MysqlInstanceNodeInfo.
+        r"""Gets the status of this MysqlInstanceNodeInfo.
 
         节点状态。
 
@@ -237,7 +237,7 @@ class MysqlInstanceNodeInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlInstanceNodeInfo.
+        r"""Sets the status of this MysqlInstanceNodeInfo.
 
         节点状态。
 
@@ -248,7 +248,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def port(self):
-        """Gets the port of this MysqlInstanceNodeInfo.
+        r"""Gets the port of this MysqlInstanceNodeInfo.
 
         数据库端口号。
 
@@ -259,7 +259,7 @@ class MysqlInstanceNodeInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MysqlInstanceNodeInfo.
+        r"""Sets the port of this MysqlInstanceNodeInfo.
 
         数据库端口号。
 
@@ -270,7 +270,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def private_read_ips(self):
-        """Gets the private_read_ips of this MysqlInstanceNodeInfo.
+        r"""Gets the private_read_ips of this MysqlInstanceNodeInfo.
 
         节点的读内网地址。
 
@@ -281,7 +281,7 @@ class MysqlInstanceNodeInfo:
 
     @private_read_ips.setter
     def private_read_ips(self, private_read_ips):
-        """Sets the private_read_ips of this MysqlInstanceNodeInfo.
+        r"""Sets the private_read_ips of this MysqlInstanceNodeInfo.
 
         节点的读内网地址。
 
@@ -292,7 +292,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def volume(self):
-        """Gets the volume of this MysqlInstanceNodeInfo.
+        r"""Gets the volume of this MysqlInstanceNodeInfo.
 
         :return: The volume of this MysqlInstanceNodeInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`
@@ -301,7 +301,7 @@ class MysqlInstanceNodeInfo:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this MysqlInstanceNodeInfo.
+        r"""Sets the volume of this MysqlInstanceNodeInfo.
 
         :param volume: The volume of this MysqlInstanceNodeInfo.
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`
@@ -310,7 +310,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this MysqlInstanceNodeInfo.
+        r"""Gets the az_code of this MysqlInstanceNodeInfo.
 
         可用区。
 
@@ -321,7 +321,7 @@ class MysqlInstanceNodeInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this MysqlInstanceNodeInfo.
+        r"""Sets the az_code of this MysqlInstanceNodeInfo.
 
         可用区。
 
@@ -332,7 +332,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def region_code(self):
-        """Gets the region_code of this MysqlInstanceNodeInfo.
+        r"""Gets the region_code of this MysqlInstanceNodeInfo.
 
         实例所在的区域。
 
@@ -343,7 +343,7 @@ class MysqlInstanceNodeInfo:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this MysqlInstanceNodeInfo.
+        r"""Sets the region_code of this MysqlInstanceNodeInfo.
 
         实例所在的区域。
 
@@ -354,7 +354,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def created(self):
-        """Gets the created of this MysqlInstanceNodeInfo.
+        r"""Gets the created of this MysqlInstanceNodeInfo.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -365,7 +365,7 @@ class MysqlInstanceNodeInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this MysqlInstanceNodeInfo.
+        r"""Sets the created of this MysqlInstanceNodeInfo.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -376,7 +376,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def updated(self):
-        """Gets the updated of this MysqlInstanceNodeInfo.
+        r"""Gets the updated of this MysqlInstanceNodeInfo.
 
         更新时间，格式与\"created\"字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -387,7 +387,7 @@ class MysqlInstanceNodeInfo:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this MysqlInstanceNodeInfo.
+        r"""Sets the updated of this MysqlInstanceNodeInfo.
 
         更新时间，格式与\"created\"字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -398,7 +398,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this MysqlInstanceNodeInfo.
+        r"""Gets the flavor_id of this MysqlInstanceNodeInfo.
 
         规格ID。
 
@@ -409,7 +409,7 @@ class MysqlInstanceNodeInfo:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this MysqlInstanceNodeInfo.
+        r"""Sets the flavor_id of this MysqlInstanceNodeInfo.
 
         规格ID。
 
@@ -420,7 +420,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this MysqlInstanceNodeInfo.
+        r"""Gets the flavor_ref of this MysqlInstanceNodeInfo.
 
         规格码。
 
@@ -431,7 +431,7 @@ class MysqlInstanceNodeInfo:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this MysqlInstanceNodeInfo.
+        r"""Sets the flavor_ref of this MysqlInstanceNodeInfo.
 
         规格码。
 
@@ -442,7 +442,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def max_connections(self):
-        """Gets the max_connections of this MysqlInstanceNodeInfo.
+        r"""Gets the max_connections of this MysqlInstanceNodeInfo.
 
         允许的最大连接数。
 
@@ -453,7 +453,7 @@ class MysqlInstanceNodeInfo:
 
     @max_connections.setter
     def max_connections(self, max_connections):
-        """Sets the max_connections of this MysqlInstanceNodeInfo.
+        r"""Sets the max_connections of this MysqlInstanceNodeInfo.
 
         允许的最大连接数。
 
@@ -464,7 +464,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this MysqlInstanceNodeInfo.
+        r"""Gets the vcpus of this MysqlInstanceNodeInfo.
 
         CPU核数。
 
@@ -475,7 +475,7 @@ class MysqlInstanceNodeInfo:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this MysqlInstanceNodeInfo.
+        r"""Sets the vcpus of this MysqlInstanceNodeInfo.
 
         CPU核数。
 
@@ -486,7 +486,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def ram(self):
-        """Gets the ram of this MysqlInstanceNodeInfo.
+        r"""Gets the ram of this MysqlInstanceNodeInfo.
 
         内存大小，单位为GB。
 
@@ -497,7 +497,7 @@ class MysqlInstanceNodeInfo:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this MysqlInstanceNodeInfo.
+        r"""Sets the ram of this MysqlInstanceNodeInfo.
 
         内存大小，单位为GB。
 
@@ -508,7 +508,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def need_restart(self):
-        """Gets the need_restart of this MysqlInstanceNodeInfo.
+        r"""Gets the need_restart of this MysqlInstanceNodeInfo.
 
         是否需要重启使修改的参数生效。
 
@@ -519,7 +519,7 @@ class MysqlInstanceNodeInfo:
 
     @need_restart.setter
     def need_restart(self, need_restart):
-        """Sets the need_restart of this MysqlInstanceNodeInfo.
+        r"""Sets the need_restart of this MysqlInstanceNodeInfo.
 
         是否需要重启使修改的参数生效。
 
@@ -530,7 +530,7 @@ class MysqlInstanceNodeInfo:
 
     @property
     def priority(self):
-        """Gets the priority of this MysqlInstanceNodeInfo.
+        r"""Gets the priority of this MysqlInstanceNodeInfo.
 
         主备倒换优先级。
 
@@ -541,7 +541,7 @@ class MysqlInstanceNodeInfo:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this MysqlInstanceNodeInfo.
+        r"""Sets the priority of this MysqlInstanceNodeInfo.
 
         主备倒换优先级。
 

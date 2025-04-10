@@ -30,7 +30,7 @@ class ListToolsResponse(SdkResponse):
     }
 
     def __init__(self, tools=None, error_code=None, error_msg=None):
-        """ListToolsResponse
+        r"""ListToolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListToolsResponse(SdkResponse):
 
     @property
     def tools(self):
-        """Gets the tools of this ListToolsResponse.
+        r"""Gets the tools of this ListToolsResponse.
 
         推荐工具列表
 
@@ -69,7 +69,7 @@ class ListToolsResponse(SdkResponse):
 
     @tools.setter
     def tools(self, tools):
-        """Sets the tools of this ListToolsResponse.
+        r"""Sets the tools of this ListToolsResponse.
 
         推荐工具列表
 
@@ -80,7 +80,7 @@ class ListToolsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListToolsResponse.
+        r"""Gets the error_code of this ListToolsResponse.
 
         错误码
 
@@ -91,7 +91,7 @@ class ListToolsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListToolsResponse.
+        r"""Sets the error_code of this ListToolsResponse.
 
         错误码
 
@@ -102,7 +102,7 @@ class ListToolsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListToolsResponse.
+        r"""Gets the error_msg of this ListToolsResponse.
 
         错误描述
 
@@ -113,7 +113,7 @@ class ListToolsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListToolsResponse.
+        r"""Sets the error_msg of this ListToolsResponse.
 
         错误描述
 

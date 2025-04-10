@@ -31,7 +31,7 @@ class UserMigrationList:
     }
 
     def __init__(self, id=None, account=None, is_set_password=None, password=None):
-        """UserMigrationList
+        r"""UserMigrationList
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UserMigrationList:
 
     @property
     def id(self):
-        """Gets the id of this UserMigrationList.
+        r"""Gets the id of this UserMigrationList.
 
         用户ID。
 
@@ -73,7 +73,7 @@ class UserMigrationList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserMigrationList.
+        r"""Sets the id of this UserMigrationList.
 
         用户ID。
 
@@ -84,7 +84,7 @@ class UserMigrationList:
 
     @property
     def account(self):
-        """Gets the account of this UserMigrationList.
+        r"""Gets the account of this UserMigrationList.
 
         用户。
 
@@ -95,7 +95,7 @@ class UserMigrationList:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this UserMigrationList.
+        r"""Sets the account of this UserMigrationList.
 
         用户。
 
@@ -106,7 +106,7 @@ class UserMigrationList:
 
     @property
     def is_set_password(self):
-        """Gets the is_set_password of this UserMigrationList.
+        r"""Gets the is_set_password of this UserMigrationList.
 
         是否重置该用户密码。当前支持的场景： - 实时迁移场景：MySQL迁移。
 
@@ -117,7 +117,7 @@ class UserMigrationList:
 
     @is_set_password.setter
     def is_set_password(self, is_set_password):
-        """Sets the is_set_password of this UserMigrationList.
+        r"""Sets the is_set_password of this UserMigrationList.
 
         是否重置该用户密码。当前支持的场景： - 实时迁移场景：MySQL迁移。
 
@@ -128,7 +128,7 @@ class UserMigrationList:
 
     @property
     def password(self):
-        """Gets the password of this UserMigrationList.
+        r"""Gets the password of this UserMigrationList.
 
         重置后的密码。统一重置密码或单个用户重置密码为true时必填，约束：密码不能为空。
 
@@ -139,7 +139,7 @@ class UserMigrationList:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UserMigrationList.
+        r"""Sets the password of this UserMigrationList.
 
         重置后的密码。统一重置密码或单个用户重置密码为true时必填，约束：密码不能为空。
 

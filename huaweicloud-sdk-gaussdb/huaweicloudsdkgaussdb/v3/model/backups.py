@@ -49,7 +49,7 @@ class Backups:
     }
 
     def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, take_up_time=None, type=None, size=None, datastore=None, instance_id=None, instance_name=None, backup_level=None, description=None):
-        """Backups
+        r"""Backups
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class Backups:
 
     @property
     def id(self):
-        """Gets the id of this Backups.
+        r"""Gets the id of this Backups.
 
         备份ID。
 
@@ -138,7 +138,7 @@ class Backups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Backups.
+        r"""Sets the id of this Backups.
 
         备份ID。
 
@@ -149,7 +149,7 @@ class Backups:
 
     @property
     def name(self):
-        """Gets the name of this Backups.
+        r"""Gets the name of this Backups.
 
         备份名称。
 
@@ -160,7 +160,7 @@ class Backups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Backups.
+        r"""Sets the name of this Backups.
 
         备份名称。
 
@@ -171,7 +171,7 @@ class Backups:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Backups.
+        r"""Gets the begin_time of this Backups.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -182,7 +182,7 @@ class Backups:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Backups.
+        r"""Sets the begin_time of this Backups.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -193,7 +193,7 @@ class Backups:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Backups.
+        r"""Gets the end_time of this Backups.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -204,7 +204,7 @@ class Backups:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Backups.
+        r"""Sets the end_time of this Backups.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -215,7 +215,7 @@ class Backups:
 
     @property
     def status(self):
-        """Gets the status of this Backups.
+        r"""Gets the status of this Backups.
 
         备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
@@ -226,7 +226,7 @@ class Backups:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Backups.
+        r"""Sets the status of this Backups.
 
         备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
@@ -237,7 +237,7 @@ class Backups:
 
     @property
     def take_up_time(self):
-        """Gets the take_up_time of this Backups.
+        r"""Gets the take_up_time of this Backups.
 
         备份花费时间（单位：minutes）
 
@@ -248,7 +248,7 @@ class Backups:
 
     @take_up_time.setter
     def take_up_time(self, take_up_time):
-        """Sets the take_up_time of this Backups.
+        r"""Sets the take_up_time of this Backups.
 
         备份花费时间（单位：minutes）
 
@@ -259,7 +259,7 @@ class Backups:
 
     @property
     def type(self):
-        """Gets the type of this Backups.
+        r"""Gets the type of this Backups.
 
         备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
 
@@ -270,7 +270,7 @@ class Backups:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Backups.
+        r"""Sets the type of this Backups.
 
         备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
 
@@ -281,7 +281,7 @@ class Backups:
 
     @property
     def size(self):
-        """Gets the size of this Backups.
+        r"""Gets the size of this Backups.
 
         备份大小（单位：MB）。
 
@@ -292,7 +292,7 @@ class Backups:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Backups.
+        r"""Sets the size of this Backups.
 
         备份大小（单位：MB）。
 
@@ -303,7 +303,7 @@ class Backups:
 
     @property
     def datastore(self):
-        """Gets the datastore of this Backups.
+        r"""Gets the datastore of this Backups.
 
         :return: The datastore of this Backups.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
@@ -312,7 +312,7 @@ class Backups:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this Backups.
+        r"""Sets the datastore of this Backups.
 
         :param datastore: The datastore of this Backups.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
@@ -321,7 +321,7 @@ class Backups:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Backups.
+        r"""Gets the instance_id of this Backups.
 
         实例ID，严格匹配UUID规则。
 
@@ -332,7 +332,7 @@ class Backups:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Backups.
+        r"""Sets the instance_id of this Backups.
 
         实例ID，严格匹配UUID规则。
 
@@ -343,7 +343,7 @@ class Backups:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this Backups.
+        r"""Gets the instance_name of this Backups.
 
         实例名称。
 
@@ -354,7 +354,7 @@ class Backups:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this Backups.
+        r"""Sets the instance_name of this Backups.
 
         实例名称。
 
@@ -365,7 +365,7 @@ class Backups:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this Backups.
+        r"""Gets the backup_level of this Backups.
 
         备份级别。当开启一级备份开关时，返回该参数。
 
@@ -376,7 +376,7 @@ class Backups:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this Backups.
+        r"""Sets the backup_level of this Backups.
 
         备份级别。当开启一级备份开关时，返回该参数。
 
@@ -387,7 +387,7 @@ class Backups:
 
     @property
     def description(self):
-        """Gets the description of this Backups.
+        r"""Gets the description of this Backups.
 
         备份文件描述信息。
 
@@ -398,7 +398,7 @@ class Backups:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Backups.
+        r"""Sets the description of this Backups.
 
         备份文件描述信息。
 

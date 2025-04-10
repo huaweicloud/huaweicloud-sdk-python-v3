@@ -39,7 +39,7 @@ class CodehubJobInfo:
     }
 
     def __init__(self, application_name=None, privately=None, short_id=None, code_url=None, region_id=None, repo_type=None, properties=None, repo_info=None):
-        """CodehubJobInfo
+        r"""CodehubJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CodehubJobInfo:
 
     @property
     def application_name(self):
-        """Gets the application_name of this CodehubJobInfo.
+        r"""Gets the application_name of this CodehubJobInfo.
 
         应用名称。
 
@@ -99,7 +99,7 @@ class CodehubJobInfo:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this CodehubJobInfo.
+        r"""Sets the application_name of this CodehubJobInfo.
 
         应用名称。
 
@@ -110,7 +110,7 @@ class CodehubJobInfo:
 
     @property
     def privately(self):
-        """Gets the privately of this CodehubJobInfo.
+        r"""Gets the privately of this CodehubJobInfo.
 
         仓库是否私有
 
@@ -121,7 +121,7 @@ class CodehubJobInfo:
 
     @privately.setter
     def privately(self, privately):
-        """Sets the privately of this CodehubJobInfo.
+        r"""Sets the privately of this CodehubJobInfo.
 
         仓库是否私有
 
@@ -132,7 +132,7 @@ class CodehubJobInfo:
 
     @property
     def short_id(self):
-        """Gets the short_id of this CodehubJobInfo.
+        r"""Gets the short_id of this CodehubJobInfo.
 
         仓库短id
 
@@ -143,7 +143,7 @@ class CodehubJobInfo:
 
     @short_id.setter
     def short_id(self, short_id):
-        """Sets the short_id of this CodehubJobInfo.
+        r"""Sets the short_id of this CodehubJobInfo.
 
         仓库短id
 
@@ -154,7 +154,7 @@ class CodehubJobInfo:
 
     @property
     def code_url(self):
-        """Gets the code_url of this CodehubJobInfo.
+        r"""Gets the code_url of this CodehubJobInfo.
 
         代码存放的ssh地址。
 
@@ -165,7 +165,7 @@ class CodehubJobInfo:
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this CodehubJobInfo.
+        r"""Sets the code_url of this CodehubJobInfo.
 
         代码存放的ssh地址。
 
@@ -176,7 +176,7 @@ class CodehubJobInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CodehubJobInfo.
+        r"""Gets the region_id of this CodehubJobInfo.
 
         CodeHub 仓库所在的 Region ID： - 华南-广州：cn-south-1 - 华东-上海二：cn-east-2 - 华北-北京一：cn-north-1 - 华北-北京四：cn-north-4 
 
@@ -187,7 +187,7 @@ class CodehubJobInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CodehubJobInfo.
+        r"""Sets the region_id of this CodehubJobInfo.
 
         CodeHub 仓库所在的 Region ID： - 华南-广州：cn-south-1 - 华东-上海二：cn-east-2 - 华北-北京一：cn-north-1 - 华北-北京四：cn-north-4 
 
@@ -198,7 +198,7 @@ class CodehubJobInfo:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this CodehubJobInfo.
+        r"""Gets the repo_type of this CodehubJobInfo.
 
         - 0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。 - 1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包。 
 
@@ -209,7 +209,7 @@ class CodehubJobInfo:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this CodehubJobInfo.
+        r"""Sets the repo_type of this CodehubJobInfo.
 
         - 0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。 - 1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包。 
 
@@ -220,7 +220,7 @@ class CodehubJobInfo:
 
     @property
     def properties(self):
-        """Gets the properties of this CodehubJobInfo.
+        r"""Gets the properties of this CodehubJobInfo.
 
         可以根据 template-metadata.json 获取动态参数 ID 以及规则。
 
@@ -231,7 +231,7 @@ class CodehubJobInfo:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this CodehubJobInfo.
+        r"""Sets the properties of this CodehubJobInfo.
 
         可以根据 template-metadata.json 获取动态参数 ID 以及规则。
 
@@ -242,7 +242,7 @@ class CodehubJobInfo:
 
     @property
     def repo_info(self):
-        """Gets the repo_info of this CodehubJobInfo.
+        r"""Gets the repo_info of this CodehubJobInfo.
 
         :return: The repo_info of this CodehubJobInfo.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
@@ -251,7 +251,7 @@ class CodehubJobInfo:
 
     @repo_info.setter
     def repo_info(self, repo_info):
-        """Sets the repo_info of this CodehubJobInfo.
+        r"""Sets the repo_info of this CodehubJobInfo.
 
         :param repo_info: The repo_info of this CodehubJobInfo.
         :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`

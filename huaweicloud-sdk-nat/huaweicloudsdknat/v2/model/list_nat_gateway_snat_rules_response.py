@@ -26,7 +26,7 @@ class ListNatGatewaySnatRulesResponse(SdkResponse):
     }
 
     def __init__(self, snat_rules=None):
-        """ListNatGatewaySnatRulesResponse
+        r"""ListNatGatewaySnatRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNatGatewaySnatRulesResponse(SdkResponse):
 
     @property
     def snat_rules(self):
-        """Gets the snat_rules of this ListNatGatewaySnatRulesResponse.
+        r"""Gets the snat_rules of this ListNatGatewaySnatRulesResponse.
 
         查询SNAT规则列表的响应体。
 
@@ -55,7 +55,7 @@ class ListNatGatewaySnatRulesResponse(SdkResponse):
 
     @snat_rules.setter
     def snat_rules(self, snat_rules):
-        """Sets the snat_rules of this ListNatGatewaySnatRulesResponse.
+        r"""Sets the snat_rules of this ListNatGatewaySnatRulesResponse.
 
         查询SNAT规则列表的响应体。
 

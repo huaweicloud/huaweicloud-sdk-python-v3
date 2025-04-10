@@ -27,7 +27,7 @@ class CreateAnAppV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateAnAppV2Request
+        r"""CreateAnAppV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAnAppV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAnAppV2Request.
+        r"""Gets the instance_id of this CreateAnAppV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class CreateAnAppV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAnAppV2Request.
+        r"""Sets the instance_id of this CreateAnAppV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class CreateAnAppV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateAnAppV2Request.
+        r"""Gets the body of this CreateAnAppV2Request.
 
         :return: The body of this CreateAnAppV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.AppCreate`
@@ -80,7 +80,7 @@ class CreateAnAppV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAnAppV2Request.
+        r"""Sets the body of this CreateAnAppV2Request.
 
         :param body: The body of this CreateAnAppV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.AppCreate`

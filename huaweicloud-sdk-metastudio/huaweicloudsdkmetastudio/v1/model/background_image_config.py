@@ -31,7 +31,7 @@ class BackgroundImageConfig:
     }
 
     def __init__(self, dx=None, dy=None, width=None, height=None):
-        """BackgroundImageConfig
+        r"""BackgroundImageConfig
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BackgroundImageConfig:
 
     @property
     def dx(self):
-        """Gets the dx of this BackgroundImageConfig.
+        r"""Gets the dx of this BackgroundImageConfig.
 
         **参数解释**： 背景图片左上角像素点的X轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 需要保证背景图片要铺满画布。即dx <= 0，并且横屏时dx + width >=1920，竖屏时dx + width >=1080。
 
@@ -71,7 +71,7 @@ class BackgroundImageConfig:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this BackgroundImageConfig.
+        r"""Sets the dx of this BackgroundImageConfig.
 
         **参数解释**： 背景图片左上角像素点的X轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 需要保证背景图片要铺满画布。即dx <= 0，并且横屏时dx + width >=1920，竖屏时dx + width >=1080。
 
@@ -82,7 +82,7 @@ class BackgroundImageConfig:
 
     @property
     def dy(self):
-        """Gets the dy of this BackgroundImageConfig.
+        r"""Gets the dy of this BackgroundImageConfig.
 
         **参数解释**： 背景图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**：  需要保证背景图片要铺满画布。即dy <= 0，并且横屏时dy + height >=1080，竖屏时dy + height >=1920。
 
@@ -93,7 +93,7 @@ class BackgroundImageConfig:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this BackgroundImageConfig.
+        r"""Sets the dy of this BackgroundImageConfig.
 
         **参数解释**： 背景图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**：  需要保证背景图片要铺满画布。即dy <= 0，并且横屏时dy + height >=1080，竖屏时dy + height >=1920。
 
@@ -104,7 +104,7 @@ class BackgroundImageConfig:
 
     @property
     def width(self):
-        """Gets the width of this BackgroundImageConfig.
+        r"""Gets the width of this BackgroundImageConfig.
 
         **参数解释**： 背景图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 需要保证背景图片要铺满画布。即width > 1080，并且横屏时dx + width >=1920，竖屏时dx + width >=1080。
 
@@ -115,7 +115,7 @@ class BackgroundImageConfig:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this BackgroundImageConfig.
+        r"""Sets the width of this BackgroundImageConfig.
 
         **参数解释**： 背景图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 需要保证背景图片要铺满画布。即width > 1080，并且横屏时dx + width >=1920，竖屏时dx + width >=1080。
 
@@ -126,7 +126,7 @@ class BackgroundImageConfig:
 
     @property
     def height(self):
-        """Gets the height of this BackgroundImageConfig.
+        r"""Gets the height of this BackgroundImageConfig.
 
         **参数解释**： 背景图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 需要保证背景图片要铺满画布。height> 1080，并且横屏时dy + height >=1080，竖屏时dy + height >=1920。
 
@@ -137,7 +137,7 @@ class BackgroundImageConfig:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this BackgroundImageConfig.
+        r"""Sets the height of this BackgroundImageConfig.
 
         **参数解释**： 背景图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 需要保证背景图片要铺满画布。height> 1080，并且横屏时dy + height >=1080，竖屏时dy + height >=1920。
 

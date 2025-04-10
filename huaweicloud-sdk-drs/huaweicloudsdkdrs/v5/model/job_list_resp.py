@@ -63,7 +63,7 @@ class JobListResp:
     }
 
     def __init__(self, id=None, name=None, status=None, description=None, create_time=None, engine_type=None, net_type=None, charging_mode=None, billing_tag=None, job_direction=None, job_type=None, task_type=None, enterprise_project_id=None, job_mode=None, job_mode_role=None, is_multi_az=None, node_role=None, node_new_framework=None, job_action=None, children=None):
-        """JobListResp
+        r"""JobListResp
 
         The model defined in huaweicloud sdk
 
@@ -157,7 +157,7 @@ class JobListResp:
 
     @property
     def id(self):
-        """Gets the id of this JobListResp.
+        r"""Gets the id of this JobListResp.
 
         任务ID。
 
@@ -168,7 +168,7 @@ class JobListResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobListResp.
+        r"""Sets the id of this JobListResp.
 
         任务ID。
 
@@ -179,7 +179,7 @@ class JobListResp:
 
     @property
     def name(self):
-        """Gets the name of this JobListResp.
+        r"""Gets the name of this JobListResp.
 
         任务名称。
 
@@ -190,7 +190,7 @@ class JobListResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobListResp.
+        r"""Sets the name of this JobListResp.
 
         任务名称。
 
@@ -201,7 +201,7 @@ class JobListResp:
 
     @property
     def status(self):
-        """Gets the status of this JobListResp.
+        r"""Gets the status of this JobListResp.
 
         任务状态。取值： - CREATING：创建中。 - CREATE_FAILED：创建失败。 - CONFIGURATION：配置中。 - STARTJOBING：启动中。 - WAITING_FOR_START：等待启动中。 - START_JOB_FAILED：任务启动失败。 - FULL_TRANSFER_STARTED：全量迁移中，灾备场景为初始化。 - FULL_TRANSFER_FAILED：全量迁移失败，灾备场景为初始化失败。 - FULL_TRANSFER_COMPLETE：全量迁移完成，灾备场景为初始化完成。 - INCRE_TRANSFER_STARTED：增量迁移中，灾备场景为灾备中。 - INCRE_TRANSFER_FAILED：增量迁移失败，灾备场景为灾备异常。 - RELEASE_RESOURCE_STARTED：结束任务中。 - RELEASE_RESOURCE_FAILED：结束任务失败。 - RELEASE_RESOURCE_COMPLETE：已结束。 - CHANGE_JOB_STARTED：任务变更中。 - CHANGE_JOB_FAILED：任务变更失败。 - CHILD_TRANSFER_STARTING：子任务启动中。 - CHILD_TRANSFER_STARTED：子任务迁移中。 - CHILD_TRANSFER_COMPLETE：子任务迁移完成。 - CHILD_TRANSFER_FAILED：子任务迁移失败。 - RELEASE_CHILD_TRANSFER_STARTED：子任务结束中。 - RELEASE_CHILD_TRANSFER_COMPLETE：子任务已结束。
 
@@ -212,7 +212,7 @@ class JobListResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobListResp.
+        r"""Sets the status of this JobListResp.
 
         任务状态。取值： - CREATING：创建中。 - CREATE_FAILED：创建失败。 - CONFIGURATION：配置中。 - STARTJOBING：启动中。 - WAITING_FOR_START：等待启动中。 - START_JOB_FAILED：任务启动失败。 - FULL_TRANSFER_STARTED：全量迁移中，灾备场景为初始化。 - FULL_TRANSFER_FAILED：全量迁移失败，灾备场景为初始化失败。 - FULL_TRANSFER_COMPLETE：全量迁移完成，灾备场景为初始化完成。 - INCRE_TRANSFER_STARTED：增量迁移中，灾备场景为灾备中。 - INCRE_TRANSFER_FAILED：增量迁移失败，灾备场景为灾备异常。 - RELEASE_RESOURCE_STARTED：结束任务中。 - RELEASE_RESOURCE_FAILED：结束任务失败。 - RELEASE_RESOURCE_COMPLETE：已结束。 - CHANGE_JOB_STARTED：任务变更中。 - CHANGE_JOB_FAILED：任务变更失败。 - CHILD_TRANSFER_STARTING：子任务启动中。 - CHILD_TRANSFER_STARTED：子任务迁移中。 - CHILD_TRANSFER_COMPLETE：子任务迁移完成。 - CHILD_TRANSFER_FAILED：子任务迁移失败。 - RELEASE_CHILD_TRANSFER_STARTED：子任务结束中。 - RELEASE_CHILD_TRANSFER_COMPLETE：子任务已结束。
 
@@ -223,7 +223,7 @@ class JobListResp:
 
     @property
     def description(self):
-        """Gets the description of this JobListResp.
+        r"""Gets the description of this JobListResp.
 
         任务描述。
 
@@ -234,7 +234,7 @@ class JobListResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JobListResp.
+        r"""Sets the description of this JobListResp.
 
         任务描述。
 
@@ -245,7 +245,7 @@ class JobListResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this JobListResp.
+        r"""Gets the create_time of this JobListResp.
 
         任务创建时间。
 
@@ -256,7 +256,7 @@ class JobListResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this JobListResp.
+        r"""Sets the create_time of this JobListResp.
 
         任务创建时间。
 
@@ -267,7 +267,7 @@ class JobListResp:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this JobListResp.
+        r"""Gets the engine_type of this JobListResp.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
@@ -278,7 +278,7 @@ class JobListResp:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this JobListResp.
+        r"""Sets the engine_type of this JobListResp.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
@@ -289,7 +289,7 @@ class JobListResp:
 
     @property
     def net_type(self):
-        """Gets the net_type of this JobListResp.
+        r"""Gets the net_type of this JobListResp.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
 
@@ -300,7 +300,7 @@ class JobListResp:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this JobListResp.
+        r"""Sets the net_type of this JobListResp.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
 
@@ -311,7 +311,7 @@ class JobListResp:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this JobListResp.
+        r"""Gets the charging_mode of this JobListResp.
 
         计费模式。取值： - period：包周期。 - on_demand：按需。
 
@@ -322,7 +322,7 @@ class JobListResp:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this JobListResp.
+        r"""Sets the charging_mode of this JobListResp.
 
         计费模式。取值： - period：包周期。 - on_demand：按需。
 
@@ -333,7 +333,7 @@ class JobListResp:
 
     @property
     def billing_tag(self):
-        """Gets the billing_tag of this JobListResp.
+        r"""Gets the billing_tag of this JobListResp.
 
         是否计费。
 
@@ -344,7 +344,7 @@ class JobListResp:
 
     @billing_tag.setter
     def billing_tag(self, billing_tag):
-        """Sets the billing_tag of this JobListResp.
+        r"""Sets the billing_tag of this JobListResp.
 
         是否计费。
 
@@ -355,7 +355,7 @@ class JobListResp:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this JobListResp.
+        r"""Gets the job_direction of this JobListResp.
 
         任务方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -366,7 +366,7 @@ class JobListResp:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this JobListResp.
+        r"""Sets the job_direction of this JobListResp.
 
         任务方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -377,7 +377,7 @@ class JobListResp:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobListResp.
+        r"""Gets the job_type of this JobListResp.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -388,7 +388,7 @@ class JobListResp:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobListResp.
+        r"""Sets the job_type of this JobListResp.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -399,7 +399,7 @@ class JobListResp:
 
     @property
     def task_type(self):
-        """Gets the task_type of this JobListResp.
+        r"""Gets the task_type of this JobListResp.
 
         任务模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
 
@@ -410,7 +410,7 @@ class JobListResp:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this JobListResp.
+        r"""Sets the task_type of this JobListResp.
 
         任务模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
 
@@ -421,7 +421,7 @@ class JobListResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this JobListResp.
+        r"""Gets the enterprise_project_id of this JobListResp.
 
         企业项目ID。
 
@@ -432,7 +432,7 @@ class JobListResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this JobListResp.
+        r"""Sets the enterprise_project_id of this JobListResp.
 
         企业项目ID。
 
@@ -443,7 +443,7 @@ class JobListResp:
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this JobListResp.
+        r"""Gets the job_mode of this JobListResp.
 
         任务模式。取值： - single：单任务。 - sync_child：同步子任务。 - multi_to_single：多对一任务。
 
@@ -454,7 +454,7 @@ class JobListResp:
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this JobListResp.
+        r"""Sets the job_mode of this JobListResp.
 
         任务模式。取值： - single：单任务。 - sync_child：同步子任务。 - multi_to_single：多对一任务。
 
@@ -465,7 +465,7 @@ class JobListResp:
 
     @property
     def job_mode_role(self):
-        """Gets the job_mode_role of this JobListResp.
+        r"""Gets the job_mode_role of this JobListResp.
 
         任务角色。取值： - parent：父任务。 - child：子任务。 - master：主任务。 - slave：备任务。
 
@@ -476,7 +476,7 @@ class JobListResp:
 
     @job_mode_role.setter
     def job_mode_role(self, job_mode_role):
-        """Sets the job_mode_role of this JobListResp.
+        r"""Sets the job_mode_role of this JobListResp.
 
         任务角色。取值： - parent：父任务。 - child：子任务。 - master：主任务。 - slave：备任务。
 
@@ -487,7 +487,7 @@ class JobListResp:
 
     @property
     def is_multi_az(self):
-        """Gets the is_multi_az of this JobListResp.
+        r"""Gets the is_multi_az of this JobListResp.
 
         是否跨AZ任务。
 
@@ -498,7 +498,7 @@ class JobListResp:
 
     @is_multi_az.setter
     def is_multi_az(self, is_multi_az):
-        """Sets the is_multi_az of this JobListResp.
+        r"""Sets the is_multi_az of this JobListResp.
 
         是否跨AZ任务。
 
@@ -509,7 +509,7 @@ class JobListResp:
 
     @property
     def node_role(self):
-        """Gets the node_role of this JobListResp.
+        r"""Gets the node_role of this JobListResp.
 
         任务节点角色。
 
@@ -520,7 +520,7 @@ class JobListResp:
 
     @node_role.setter
     def node_role(self, node_role):
-        """Sets the node_role of this JobListResp.
+        r"""Sets the node_role of this JobListResp.
 
         任务节点角色。
 
@@ -531,7 +531,7 @@ class JobListResp:
 
     @property
     def node_new_framework(self):
-        """Gets the node_new_framework of this JobListResp.
+        r"""Gets the node_new_framework of this JobListResp.
 
         是否新框架。
 
@@ -542,7 +542,7 @@ class JobListResp:
 
     @node_new_framework.setter
     def node_new_framework(self, node_new_framework):
-        """Sets the node_new_framework of this JobListResp.
+        r"""Sets the node_new_framework of this JobListResp.
 
         是否新框架。
 
@@ -553,7 +553,7 @@ class JobListResp:
 
     @property
     def job_action(self):
-        """Gets the job_action of this JobListResp.
+        r"""Gets the job_action of this JobListResp.
 
         :return: The job_action of this JobListResp.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobActions`
@@ -562,7 +562,7 @@ class JobListResp:
 
     @job_action.setter
     def job_action(self, job_action):
-        """Sets the job_action of this JobListResp.
+        r"""Sets the job_action of this JobListResp.
 
         :param job_action: The job_action of this JobListResp.
         :type job_action: :class:`huaweicloudsdkdrs.v5.JobActions`
@@ -571,7 +571,7 @@ class JobListResp:
 
     @property
     def children(self):
-        """Gets the children of this JobListResp.
+        r"""Gets the children of this JobListResp.
 
         子任务列表信息体。
 
@@ -582,7 +582,7 @@ class JobListResp:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this JobListResp.
+        r"""Sets the children of this JobListResp.
 
         子任务列表信息体。
 

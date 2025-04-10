@@ -28,7 +28,7 @@ class ListBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, job_count=None, jobs=None):
-        """ListBatchJobResponse
+        r"""ListBatchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBatchJobResponse(SdkResponse):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ListBatchJobResponse.
+        r"""Gets the job_count of this ListBatchJobResponse.
 
         数目
 
@@ -62,7 +62,7 @@ class ListBatchJobResponse(SdkResponse):
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ListBatchJobResponse.
+        r"""Sets the job_count of this ListBatchJobResponse.
 
         数目
 
@@ -73,7 +73,7 @@ class ListBatchJobResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListBatchJobResponse.
+        r"""Gets the jobs of this ListBatchJobResponse.
 
         批量处理作业详情
 
@@ -84,7 +84,7 @@ class ListBatchJobResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListBatchJobResponse.
+        r"""Sets the jobs of this ListBatchJobResponse.
 
         批量处理作业详情
 

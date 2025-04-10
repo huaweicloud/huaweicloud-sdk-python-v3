@@ -27,7 +27,7 @@ class TopicConfigurationFilter:
     }
 
     def __init__(self, object=None):
-        """TopicConfigurationFilter
+        r"""TopicConfigurationFilter
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class TopicConfigurationFilter:
 
     @property
     def object(self):
-        """Gets the object of this TopicConfigurationFilter.
+        r"""Gets the object of this TopicConfigurationFilter.
 
         :return: The object of this TopicConfigurationFilter.
         :rtype: :class:`huaweicloudsdkobs.v1.FilterObject`
@@ -54,7 +54,7 @@ class TopicConfigurationFilter:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this TopicConfigurationFilter.
+        r"""Sets the object of this TopicConfigurationFilter.
 
         :param object: The object of this TopicConfigurationFilter.
         :type object: :class:`huaweicloudsdkobs.v1.FilterObject`

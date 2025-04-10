@@ -33,7 +33,7 @@ class ShowCommitsByBranchRequest:
     }
 
     def __init__(self, group_name=None, page_index=None, page_size=None, ref_name=None, repository_name=None):
-        """ShowCommitsByBranchRequest
+        r"""ShowCommitsByBranchRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowCommitsByBranchRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowCommitsByBranchRequest.
+        r"""Gets the group_name of this ShowCommitsByBranchRequest.
 
         仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -79,7 +79,7 @@ class ShowCommitsByBranchRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowCommitsByBranchRequest.
+        r"""Sets the group_name of this ShowCommitsByBranchRequest.
 
         仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -90,7 +90,7 @@ class ShowCommitsByBranchRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ShowCommitsByBranchRequest.
+        r"""Gets the page_index of this ShowCommitsByBranchRequest.
 
         分页索引
 
@@ -101,7 +101,7 @@ class ShowCommitsByBranchRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ShowCommitsByBranchRequest.
+        r"""Sets the page_index of this ShowCommitsByBranchRequest.
 
         分页索引
 
@@ -112,7 +112,7 @@ class ShowCommitsByBranchRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowCommitsByBranchRequest.
+        r"""Gets the page_size of this ShowCommitsByBranchRequest.
 
         分页索引
 
@@ -123,7 +123,7 @@ class ShowCommitsByBranchRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowCommitsByBranchRequest.
+        r"""Sets the page_size of this ShowCommitsByBranchRequest.
 
         分页索引
 
@@ -134,7 +134,7 @@ class ShowCommitsByBranchRequest:
 
     @property
     def ref_name(self):
-        """Gets the ref_name of this ShowCommitsByBranchRequest.
+        r"""Gets the ref_name of this ShowCommitsByBranchRequest.
 
         分支或标签名，支持SHA格式
 
@@ -145,7 +145,7 @@ class ShowCommitsByBranchRequest:
 
     @ref_name.setter
     def ref_name(self, ref_name):
-        """Sets the ref_name of this ShowCommitsByBranchRequest.
+        r"""Sets the ref_name of this ShowCommitsByBranchRequest.
 
         分支或标签名，支持SHA格式
 
@@ -156,7 +156,7 @@ class ShowCommitsByBranchRequest:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this ShowCommitsByBranchRequest.
+        r"""Gets the repository_name of this ShowCommitsByBranchRequest.
 
         仓库名
 
@@ -167,7 +167,7 @@ class ShowCommitsByBranchRequest:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this ShowCommitsByBranchRequest.
+        r"""Sets the repository_name of this ShowCommitsByBranchRequest.
 
         仓库名
 

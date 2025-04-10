@@ -43,7 +43,7 @@ class L7ruleResp:
     }
 
     def __init__(self, id=None, provisioning_status=None, tenant_id=None, project_id=None, admin_state_up=None, type=None, compare_type=None, invert=None, key=None, value=None):
-        """L7ruleResp
+        r"""L7ruleResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class L7ruleResp:
 
     @property
     def id(self):
-        """Gets the id of this L7ruleResp.
+        r"""Gets the id of this L7ruleResp.
 
         转发规则ID
 
@@ -107,7 +107,7 @@ class L7ruleResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this L7ruleResp.
+        r"""Sets the id of this L7ruleResp.
 
         转发规则ID
 
@@ -118,7 +118,7 @@ class L7ruleResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this L7ruleResp.
+        r"""Gets the provisioning_status of this L7ruleResp.
 
         转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -129,7 +129,7 @@ class L7ruleResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this L7ruleResp.
+        r"""Sets the provisioning_status of this L7ruleResp.
 
         转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -140,7 +140,7 @@ class L7ruleResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this L7ruleResp.
+        r"""Gets the tenant_id of this L7ruleResp.
 
         转发规则所在的项目ID。
 
@@ -151,7 +151,7 @@ class L7ruleResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this L7ruleResp.
+        r"""Sets the tenant_id of this L7ruleResp.
 
         转发规则所在的项目ID。
 
@@ -162,7 +162,7 @@ class L7ruleResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this L7ruleResp.
+        r"""Gets the project_id of this L7ruleResp.
 
         转发规则所在的项目ID。
 
@@ -173,7 +173,7 @@ class L7ruleResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this L7ruleResp.
+        r"""Sets the project_id of this L7ruleResp.
 
         转发规则所在的项目ID。
 
@@ -184,7 +184,7 @@ class L7ruleResp:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this L7ruleResp.
+        r"""Gets the admin_state_up of this L7ruleResp.
 
         转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -195,7 +195,7 @@ class L7ruleResp:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this L7ruleResp.
+        r"""Sets the admin_state_up of this L7ruleResp.
 
         转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -206,7 +206,7 @@ class L7ruleResp:
 
     @property
     def type(self):
-        """Gets the type of this L7ruleResp.
+        r"""Gets the type of this L7ruleResp.
 
         转发规则的匹配内容
 
@@ -217,7 +217,7 @@ class L7ruleResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this L7ruleResp.
+        r"""Sets the type of this L7ruleResp.
 
         转发规则的匹配内容
 
@@ -228,7 +228,7 @@ class L7ruleResp:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this L7ruleResp.
+        r"""Gets the compare_type of this L7ruleResp.
 
         转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
@@ -239,7 +239,7 @@ class L7ruleResp:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this L7ruleResp.
+        r"""Sets the compare_type of this L7ruleResp.
 
         转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
@@ -250,7 +250,7 @@ class L7ruleResp:
 
     @property
     def invert(self):
-        """Gets the invert of this L7ruleResp.
+        r"""Gets the invert of this L7ruleResp.
 
         是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
 
@@ -261,7 +261,7 @@ class L7ruleResp:
 
     @invert.setter
     def invert(self, invert):
-        """Sets the invert of this L7ruleResp.
+        r"""Sets the invert of this L7ruleResp.
 
         是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
 
@@ -272,7 +272,7 @@ class L7ruleResp:
 
     @property
     def key(self):
-        """Gets the key of this L7ruleResp.
+        r"""Gets the key of this L7ruleResp.
 
         匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
@@ -283,7 +283,7 @@ class L7ruleResp:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this L7ruleResp.
+        r"""Sets the key of this L7ruleResp.
 
         匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
@@ -294,7 +294,7 @@ class L7ruleResp:
 
     @property
     def value(self):
-        """Gets the value of this L7ruleResp.
+        r"""Gets the value of this L7ruleResp.
 
         匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
@@ -305,7 +305,7 @@ class L7ruleResp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this L7ruleResp.
+        r"""Sets the value of this L7ruleResp.
 
         匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 

@@ -27,7 +27,7 @@ class ModifyRepositoryRequest:
     }
 
     def __init__(self, tab_id=None, body=None):
-        """ModifyRepositoryRequest
+        r"""ModifyRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyRepositoryRequest:
 
     @property
     def tab_id(self):
-        """Gets the tab_id of this ModifyRepositoryRequest.
+        r"""Gets the tab_id of this ModifyRepositoryRequest.
 
         tab_id
 
@@ -60,7 +60,7 @@ class ModifyRepositoryRequest:
 
     @tab_id.setter
     def tab_id(self, tab_id):
-        """Sets the tab_id of this ModifyRepositoryRequest.
+        r"""Sets the tab_id of this ModifyRepositoryRequest.
 
         tab_id
 
@@ -71,7 +71,7 @@ class ModifyRepositoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyRepositoryRequest.
+        r"""Gets the body of this ModifyRepositoryRequest.
 
         :return: The body of this ModifyRepositoryRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepositoryPair`
@@ -80,7 +80,7 @@ class ModifyRepositoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyRepositoryRequest.
+        r"""Sets the body of this ModifyRepositoryRequest.
 
         :param body: The body of this ModifyRepositoryRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepositoryPair`

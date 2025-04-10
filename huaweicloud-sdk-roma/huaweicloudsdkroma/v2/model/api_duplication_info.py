@@ -31,7 +31,7 @@ class ApiDuplicationInfo:
     }
 
     def __init__(self, req_method=None, req_uri=None, match_mode=None, duplicated_apis=None):
-        """ApiDuplicationInfo
+        r"""ApiDuplicationInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApiDuplicationInfo:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiDuplicationInfo.
+        r"""Gets the req_method of this ApiDuplicationInfo.
 
         请求方式
 
@@ -75,7 +75,7 @@ class ApiDuplicationInfo:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiDuplicationInfo.
+        r"""Sets the req_method of this ApiDuplicationInfo.
 
         请求方式
 
@@ -86,7 +86,7 @@ class ApiDuplicationInfo:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiDuplicationInfo.
+        r"""Gets the req_uri of this ApiDuplicationInfo.
 
         API的访问地址
 
@@ -97,7 +97,7 @@ class ApiDuplicationInfo:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiDuplicationInfo.
+        r"""Sets the req_uri of this ApiDuplicationInfo.
 
         API的访问地址
 
@@ -108,7 +108,7 @@ class ApiDuplicationInfo:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ApiDuplicationInfo.
+        r"""Gets the match_mode of this ApiDuplicationInfo.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -119,7 +119,7 @@ class ApiDuplicationInfo:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ApiDuplicationInfo.
+        r"""Sets the match_mode of this ApiDuplicationInfo.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -130,7 +130,7 @@ class ApiDuplicationInfo:
 
     @property
     def duplicated_apis(self):
-        """Gets the duplicated_apis of this ApiDuplicationInfo.
+        r"""Gets the duplicated_apis of this ApiDuplicationInfo.
 
         该路径下冲突的api列表
 
@@ -141,7 +141,7 @@ class ApiDuplicationInfo:
 
     @duplicated_apis.setter
     def duplicated_apis(self, duplicated_apis):
-        """Sets the duplicated_apis of this ApiDuplicationInfo.
+        r"""Sets the duplicated_apis of this ApiDuplicationInfo.
 
         该路径下冲突的api列表
 

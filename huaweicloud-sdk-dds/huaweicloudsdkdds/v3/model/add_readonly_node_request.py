@@ -27,7 +27,7 @@ class AddReadonlyNodeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddReadonlyNodeRequest
+        r"""AddReadonlyNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddReadonlyNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddReadonlyNodeRequest.
+        r"""Gets the instance_id of this AddReadonlyNodeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class AddReadonlyNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddReadonlyNodeRequest.
+        r"""Sets the instance_id of this AddReadonlyNodeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class AddReadonlyNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddReadonlyNodeRequest.
+        r"""Gets the body of this AddReadonlyNodeRequest.
 
         :return: The body of this AddReadonlyNodeRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequestBody`
@@ -80,7 +80,7 @@ class AddReadonlyNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddReadonlyNodeRequest.
+        r"""Sets the body of this AddReadonlyNodeRequest.
 
         :param body: The body of this AddReadonlyNodeRequest.
         :type body: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequestBody`

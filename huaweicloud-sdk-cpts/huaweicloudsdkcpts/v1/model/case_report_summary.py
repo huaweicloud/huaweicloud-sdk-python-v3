@@ -27,7 +27,7 @@ class CaseReportSummary:
     }
 
     def __init__(self, case_aw_info_list=None, err_message=None):
-        """CaseReportSummary
+        r"""CaseReportSummary
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaseReportSummary:
 
     @property
     def case_aw_info_list(self):
-        """Gets the case_aw_info_list of this CaseReportSummary.
+        r"""Gets the case_aw_info_list of this CaseReportSummary.
 
         用例和aw信息视图
 
@@ -61,7 +61,7 @@ class CaseReportSummary:
 
     @case_aw_info_list.setter
     def case_aw_info_list(self, case_aw_info_list):
-        """Sets the case_aw_info_list of this CaseReportSummary.
+        r"""Sets the case_aw_info_list of this CaseReportSummary.
 
         用例和aw信息视图
 
@@ -72,7 +72,7 @@ class CaseReportSummary:
 
     @property
     def err_message(self):
-        """Gets the err_message of this CaseReportSummary.
+        r"""Gets the err_message of this CaseReportSummary.
 
         错误信息
 
@@ -83,7 +83,7 @@ class CaseReportSummary:
 
     @err_message.setter
     def err_message(self, err_message):
-        """Sets the err_message of this CaseReportSummary.
+        r"""Sets the err_message of this CaseReportSummary.
 
         错误信息
 

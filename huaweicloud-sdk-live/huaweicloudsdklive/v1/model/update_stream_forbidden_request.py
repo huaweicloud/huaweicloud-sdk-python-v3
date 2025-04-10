@@ -25,7 +25,7 @@ class UpdateStreamForbiddenRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateStreamForbiddenRequest
+        r"""UpdateStreamForbiddenRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateStreamForbiddenRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStreamForbiddenRequest.
+        r"""Gets the body of this UpdateStreamForbiddenRequest.
 
         :return: The body of this UpdateStreamForbiddenRequest.
         :rtype: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`
@@ -52,7 +52,7 @@ class UpdateStreamForbiddenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStreamForbiddenRequest.
+        r"""Sets the body of this UpdateStreamForbiddenRequest.
 
         :param body: The body of this UpdateStreamForbiddenRequest.
         :type body: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`

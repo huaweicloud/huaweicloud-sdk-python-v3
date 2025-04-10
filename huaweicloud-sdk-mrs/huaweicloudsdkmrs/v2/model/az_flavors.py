@@ -33,7 +33,7 @@ class AzFlavors:
     }
 
     def __init__(self, az_code=None, az_name=None, master=None, core=None, task=None):
-        """AzFlavors
+        r"""AzFlavors
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AzFlavors:
 
     @property
     def az_code(self):
-        """Gets the az_code of this AzFlavors.
+        r"""Gets the az_code of this AzFlavors.
 
         可用区code
 
@@ -82,7 +82,7 @@ class AzFlavors:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this AzFlavors.
+        r"""Sets the az_code of this AzFlavors.
 
         可用区code
 
@@ -93,7 +93,7 @@ class AzFlavors:
 
     @property
     def az_name(self):
-        """Gets the az_name of this AzFlavors.
+        r"""Gets the az_name of this AzFlavors.
 
         可用区名称
 
@@ -104,7 +104,7 @@ class AzFlavors:
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this AzFlavors.
+        r"""Sets the az_name of this AzFlavors.
 
         可用区名称
 
@@ -115,7 +115,7 @@ class AzFlavors:
 
     @property
     def master(self):
-        """Gets the master of this AzFlavors.
+        r"""Gets the master of this AzFlavors.
 
         master节点支持的规格列表
 
@@ -126,7 +126,7 @@ class AzFlavors:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this AzFlavors.
+        r"""Sets the master of this AzFlavors.
 
         master节点支持的规格列表
 
@@ -137,7 +137,7 @@ class AzFlavors:
 
     @property
     def core(self):
-        """Gets the core of this AzFlavors.
+        r"""Gets the core of this AzFlavors.
 
         core节点支持的规格列表
 
@@ -148,7 +148,7 @@ class AzFlavors:
 
     @core.setter
     def core(self, core):
-        """Sets the core of this AzFlavors.
+        r"""Sets the core of this AzFlavors.
 
         core节点支持的规格列表
 
@@ -159,7 +159,7 @@ class AzFlavors:
 
     @property
     def task(self):
-        """Gets the task of this AzFlavors.
+        r"""Gets the task of this AzFlavors.
 
         task节点支持的规格列表
 
@@ -170,7 +170,7 @@ class AzFlavors:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this AzFlavors.
+        r"""Sets the task of this AzFlavors.
 
         task节点支持的规格列表
 

@@ -27,7 +27,7 @@ class ListApproversResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListApproversResultDataValue
+        r"""ListApproversResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListApproversResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListApproversResultDataValue.
+        r"""Gets the total of this ListApproversResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListApproversResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListApproversResultDataValue.
+        r"""Sets the total of this ListApproversResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListApproversResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListApproversResultDataValue.
+        r"""Gets the records of this ListApproversResultDataValue.
 
         查询到的审批人对象（ApproverVO）数组。
 
@@ -83,7 +83,7 @@ class ListApproversResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListApproversResultDataValue.
+        r"""Sets the records of this ListApproversResultDataValue.
 
         查询到的审批人对象（ApproverVO）数组。
 

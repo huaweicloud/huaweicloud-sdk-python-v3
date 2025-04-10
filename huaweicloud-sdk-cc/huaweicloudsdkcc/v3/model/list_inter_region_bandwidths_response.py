@@ -30,7 +30,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, inter_region_bandwidths=None):
-        """ListInterRegionBandwidthsResponse
+        r"""ListInterRegionBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListInterRegionBandwidthsResponse.
+        r"""Gets the request_id of this ListInterRegionBandwidthsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListInterRegionBandwidthsResponse.
+        r"""Sets the request_id of this ListInterRegionBandwidthsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListInterRegionBandwidthsResponse.
+        r"""Gets the page_info of this ListInterRegionBandwidthsResponse.
 
         :return: The page_info of this ListInterRegionBandwidthsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListInterRegionBandwidthsResponse.
+        r"""Sets the page_info of this ListInterRegionBandwidthsResponse.
 
         :param page_info: The page_info of this ListInterRegionBandwidthsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
 
     @property
     def inter_region_bandwidths(self):
-        """Gets the inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
+        r"""Gets the inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
 
         域间带宽实例列表。
 
@@ -107,7 +107,7 @@ class ListInterRegionBandwidthsResponse(SdkResponse):
 
     @inter_region_bandwidths.setter
     def inter_region_bandwidths(self, inter_region_bandwidths):
-        """Sets the inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
+        r"""Sets the inter_region_bandwidths of this ListInterRegionBandwidthsResponse.
 
         域间带宽实例列表。
 

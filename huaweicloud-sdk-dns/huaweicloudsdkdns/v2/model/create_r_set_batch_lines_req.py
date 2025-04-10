@@ -31,7 +31,7 @@ class CreateRSetBatchLinesReq:
     }
 
     def __init__(self, name=None, description=None, type=None, lines=None):
-        """CreateRSetBatchLinesReq
+        r"""CreateRSetBatchLinesReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateRSetBatchLinesReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateRSetBatchLinesReq.
+        r"""Gets the name of this CreateRSetBatchLinesReq.
 
         后缀需以Zone Name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -72,7 +72,7 @@ class CreateRSetBatchLinesReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRSetBatchLinesReq.
+        r"""Sets the name of this CreateRSetBatchLinesReq.
 
         后缀需以Zone Name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -83,7 +83,7 @@ class CreateRSetBatchLinesReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateRSetBatchLinesReq.
+        r"""Gets the description of this CreateRSetBatchLinesReq.
 
         可选配置，对域名的描述。 长度不超过255个字符。
 
@@ -94,7 +94,7 @@ class CreateRSetBatchLinesReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRSetBatchLinesReq.
+        r"""Sets the description of this CreateRSetBatchLinesReq.
 
         可选配置，对域名的描述。 长度不超过255个字符。
 
@@ -105,7 +105,7 @@ class CreateRSetBatchLinesReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateRSetBatchLinesReq.
+        r"""Gets the type of this CreateRSetBatchLinesReq.
 
         Record Set的类型。 取值范围：A,AAAA,MX,CNAME,TXT,NS,SRV,CAA。
 
@@ -116,7 +116,7 @@ class CreateRSetBatchLinesReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRSetBatchLinesReq.
+        r"""Sets the type of this CreateRSetBatchLinesReq.
 
         Record Set的类型。 取值范围：A,AAAA,MX,CNAME,TXT,NS,SRV,CAA。
 
@@ -127,7 +127,7 @@ class CreateRSetBatchLinesReq:
 
     @property
     def lines(self):
-        """Gets the lines of this CreateRSetBatchLinesReq.
+        r"""Gets the lines of this CreateRSetBatchLinesReq.
 
         解析线路域名参数。最多支持50个。
 
@@ -138,7 +138,7 @@ class CreateRSetBatchLinesReq:
 
     @lines.setter
     def lines(self, lines):
-        """Sets the lines of this CreateRSetBatchLinesReq.
+        r"""Sets the lines of this CreateRSetBatchLinesReq.
 
         解析线路域名参数。最多支持50个。
 

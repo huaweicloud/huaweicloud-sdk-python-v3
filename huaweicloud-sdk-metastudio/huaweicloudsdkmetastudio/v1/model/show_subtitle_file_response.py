@@ -30,7 +30,7 @@ class ShowSubtitleFileResponse(SdkResponse):
     }
 
     def __init__(self, job_state=None, subtitle_file_info=None, x_request_id=None):
-        """ShowSubtitleFileResponse
+        r"""ShowSubtitleFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSubtitleFileResponse(SdkResponse):
 
     @property
     def job_state(self):
-        """Gets the job_state of this ShowSubtitleFileResponse.
+        r"""Gets the job_state of this ShowSubtitleFileResponse.
 
         字幕文件所有任务状态。 * GENERATING：字幕文件任务生成中。 * GENERATED：字幕文件生成结束。
 
@@ -69,7 +69,7 @@ class ShowSubtitleFileResponse(SdkResponse):
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this ShowSubtitleFileResponse.
+        r"""Sets the job_state of this ShowSubtitleFileResponse.
 
         字幕文件所有任务状态。 * GENERATING：字幕文件任务生成中。 * GENERATED：字幕文件生成结束。
 
@@ -80,7 +80,7 @@ class ShowSubtitleFileResponse(SdkResponse):
 
     @property
     def subtitle_file_info(self):
-        """Gets the subtitle_file_info of this ShowSubtitleFileResponse.
+        r"""Gets the subtitle_file_info of this ShowSubtitleFileResponse.
 
         字幕文件列表。
 
@@ -91,7 +91,7 @@ class ShowSubtitleFileResponse(SdkResponse):
 
     @subtitle_file_info.setter
     def subtitle_file_info(self, subtitle_file_info):
-        """Sets the subtitle_file_info of this ShowSubtitleFileResponse.
+        r"""Sets the subtitle_file_info of this ShowSubtitleFileResponse.
 
         字幕文件列表。
 
@@ -102,7 +102,7 @@ class ShowSubtitleFileResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowSubtitleFileResponse.
+        r"""Gets the x_request_id of this ShowSubtitleFileResponse.
 
         :return: The x_request_id of this ShowSubtitleFileResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowSubtitleFileResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowSubtitleFileResponse.
+        r"""Sets the x_request_id of this ShowSubtitleFileResponse.
 
         :param x_request_id: The x_request_id of this ShowSubtitleFileResponse.
         :type x_request_id: str

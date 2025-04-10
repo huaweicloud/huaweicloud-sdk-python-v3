@@ -28,7 +28,7 @@ class UpdateSiteNetworkBandwidthSizeResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, site_connection=None):
-        """UpdateSiteNetworkBandwidthSizeResponse
+        r"""UpdateSiteNetworkBandwidthSizeResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSiteNetworkBandwidthSizeResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateSiteNetworkBandwidthSizeResponse.
+        r"""Gets the request_id of this UpdateSiteNetworkBandwidthSizeResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class UpdateSiteNetworkBandwidthSizeResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateSiteNetworkBandwidthSizeResponse.
+        r"""Sets the request_id of this UpdateSiteNetworkBandwidthSizeResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class UpdateSiteNetworkBandwidthSizeResponse(SdkResponse):
 
     @property
     def site_connection(self):
-        """Gets the site_connection of this UpdateSiteNetworkBandwidthSizeResponse.
+        r"""Gets the site_connection of this UpdateSiteNetworkBandwidthSizeResponse.
 
         :return: The site_connection of this UpdateSiteNetworkBandwidthSizeResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteConnection`
@@ -80,7 +80,7 @@ class UpdateSiteNetworkBandwidthSizeResponse(SdkResponse):
 
     @site_connection.setter
     def site_connection(self, site_connection):
-        """Sets the site_connection of this UpdateSiteNetworkBandwidthSizeResponse.
+        r"""Sets the site_connection of this UpdateSiteNetworkBandwidthSizeResponse.
 
         :param site_connection: The site_connection of this UpdateSiteNetworkBandwidthSizeResponse.
         :type site_connection: :class:`huaweicloudsdkcc.v3.SiteConnection`

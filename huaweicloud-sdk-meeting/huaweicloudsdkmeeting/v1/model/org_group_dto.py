@@ -27,7 +27,7 @@ class OrgGroupDTO:
     }
 
     def __init__(self, group_id=None, group_name=None):
-        """OrgGroupDTO
+        r"""OrgGroupDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrgGroupDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this OrgGroupDTO.
+        r"""Gets the group_id of this OrgGroupDTO.
 
         分组Id。
 
@@ -61,7 +61,7 @@ class OrgGroupDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this OrgGroupDTO.
+        r"""Sets the group_id of this OrgGroupDTO.
 
         分组Id。
 
@@ -72,7 +72,7 @@ class OrgGroupDTO:
 
     @property
     def group_name(self):
-        """Gets the group_name of this OrgGroupDTO.
+        r"""Gets the group_name of this OrgGroupDTO.
 
         分组名称。
 
@@ -83,7 +83,7 @@ class OrgGroupDTO:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this OrgGroupDTO.
+        r"""Sets the group_name of this OrgGroupDTO.
 
         分组名称。
 

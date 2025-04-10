@@ -27,7 +27,7 @@ class CreateClusterWorkloadRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateClusterWorkloadRequest
+        r"""CreateClusterWorkloadRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusterWorkloadRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterWorkloadRequest.
+        r"""Gets the cluster_id of this CreateClusterWorkloadRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class CreateClusterWorkloadRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterWorkloadRequest.
+        r"""Sets the cluster_id of this CreateClusterWorkloadRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class CreateClusterWorkloadRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClusterWorkloadRequest.
+        r"""Gets the body of this CreateClusterWorkloadRequest.
 
         :return: The body of this CreateClusterWorkloadRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadStatusReq`
@@ -80,7 +80,7 @@ class CreateClusterWorkloadRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClusterWorkloadRequest.
+        r"""Sets the body of this CreateClusterWorkloadRequest.
 
         :param body: The body of this CreateClusterWorkloadRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadStatusReq`

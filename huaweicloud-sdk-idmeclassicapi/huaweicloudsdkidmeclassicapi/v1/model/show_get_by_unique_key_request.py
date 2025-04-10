@@ -31,7 +31,7 @@ class ShowGetByUniqueKeyRequest:
     }
 
     def __init__(self, identifier=None, model_name=None, get_unique_field_method=None, body=None):
-        """ShowGetByUniqueKeyRequest
+        r"""ShowGetByUniqueKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowGetByUniqueKeyRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ShowGetByUniqueKeyRequest.
+        r"""Gets the identifier of this ShowGetByUniqueKeyRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -72,7 +72,7 @@ class ShowGetByUniqueKeyRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ShowGetByUniqueKeyRequest.
+        r"""Sets the identifier of this ShowGetByUniqueKeyRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -83,7 +83,7 @@ class ShowGetByUniqueKeyRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this ShowGetByUniqueKeyRequest.
+        r"""Gets the model_name of this ShowGetByUniqueKeyRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -94,7 +94,7 @@ class ShowGetByUniqueKeyRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this ShowGetByUniqueKeyRequest.
+        r"""Sets the model_name of this ShowGetByUniqueKeyRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -105,7 +105,7 @@ class ShowGetByUniqueKeyRequest:
 
     @property
     def get_unique_field_method(self):
-        """Gets the get_unique_field_method of this ShowGetByUniqueKeyRequest.
+        r"""Gets the get_unique_field_method of this ShowGetByUniqueKeyRequest.
 
         **参数解释：**  方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -116,7 +116,7 @@ class ShowGetByUniqueKeyRequest:
 
     @get_unique_field_method.setter
     def get_unique_field_method(self, get_unique_field_method):
-        """Sets the get_unique_field_method of this ShowGetByUniqueKeyRequest.
+        r"""Sets the get_unique_field_method of this ShowGetByUniqueKeyRequest.
 
         **参数解释：**  方法名称，格式为：getBy{uniqueName}。  uniqueName：表示“唯一键”为“是”的属性英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -127,7 +127,7 @@ class ShowGetByUniqueKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowGetByUniqueKeyRequest.
+        r"""Gets the body of this ShowGetByUniqueKeyRequest.
 
         :return: The body of this ShowGetByUniqueKeyRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOPersistableModelUniqueKeyDTO`
@@ -136,7 +136,7 @@ class ShowGetByUniqueKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowGetByUniqueKeyRequest.
+        r"""Sets the body of this ShowGetByUniqueKeyRequest.
 
         :param body: The body of this ShowGetByUniqueKeyRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOPersistableModelUniqueKeyDTO`

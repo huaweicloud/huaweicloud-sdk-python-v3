@@ -27,7 +27,7 @@ class DeleteCenterTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """DeleteCenterTaskRequest
+        r"""DeleteCenterTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteCenterTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteCenterTaskRequest.
+        r"""Gets the task_id of this DeleteCenterTaskRequest.
 
         后台任务ID
 
@@ -60,7 +60,7 @@ class DeleteCenterTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteCenterTaskRequest.
+        r"""Sets the task_id of this DeleteCenterTaskRequest.
 
         后台任务ID
 
@@ -71,7 +71,7 @@ class DeleteCenterTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteCenterTaskRequest.
+        r"""Gets the body of this DeleteCenterTaskRequest.
 
         :return: The body of this DeleteCenterTaskRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteCenterTaskRequestBody`
@@ -80,7 +80,7 @@ class DeleteCenterTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteCenterTaskRequest.
+        r"""Sets the body of this DeleteCenterTaskRequest.
 
         :param body: The body of this DeleteCenterTaskRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.DeleteCenterTaskRequestBody`

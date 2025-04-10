@@ -31,7 +31,7 @@ class StatisticsRVO:
     }
 
     def __init__(self, create_count=None, delete_count=None, logical_delete_count=None, update_count=None):
-        """StatisticsRVO
+        r"""StatisticsRVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StatisticsRVO:
 
     @property
     def create_count(self):
-        """Gets the create_count of this StatisticsRVO.
+        r"""Gets the create_count of this StatisticsRVO.
 
         **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -75,7 +75,7 @@ class StatisticsRVO:
 
     @create_count.setter
     def create_count(self, create_count):
-        """Sets the create_count of this StatisticsRVO.
+        r"""Sets the create_count of this StatisticsRVO.
 
         **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -86,7 +86,7 @@ class StatisticsRVO:
 
     @property
     def delete_count(self):
-        """Gets the delete_count of this StatisticsRVO.
+        r"""Gets the delete_count of this StatisticsRVO.
 
         **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -97,7 +97,7 @@ class StatisticsRVO:
 
     @delete_count.setter
     def delete_count(self, delete_count):
-        """Sets the delete_count of this StatisticsRVO.
+        r"""Sets the delete_count of this StatisticsRVO.
 
         **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -108,7 +108,7 @@ class StatisticsRVO:
 
     @property
     def logical_delete_count(self):
-        """Gets the logical_delete_count of this StatisticsRVO.
+        r"""Gets the logical_delete_count of this StatisticsRVO.
 
         **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -119,7 +119,7 @@ class StatisticsRVO:
 
     @logical_delete_count.setter
     def logical_delete_count(self, logical_delete_count):
-        """Sets the logical_delete_count of this StatisticsRVO.
+        r"""Sets the logical_delete_count of this StatisticsRVO.
 
         **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -130,7 +130,7 @@ class StatisticsRVO:
 
     @property
     def update_count(self):
-        """Gets the update_count of this StatisticsRVO.
+        r"""Gets the update_count of this StatisticsRVO.
 
         **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -141,7 +141,7 @@ class StatisticsRVO:
 
     @update_count.setter
     def update_count(self, update_count):
-        """Sets the update_count of this StatisticsRVO.
+        r"""Sets the update_count of this StatisticsRVO.
 
         **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

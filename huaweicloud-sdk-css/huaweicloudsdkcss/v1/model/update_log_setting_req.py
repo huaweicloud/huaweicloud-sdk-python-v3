@@ -29,7 +29,7 @@ class UpdateLogSettingReq:
     }
 
     def __init__(self, agency=None, log_base_path=None, log_bucket=None):
-        """UpdateLogSettingReq
+        r"""UpdateLogSettingReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateLogSettingReq:
 
     @property
     def agency(self):
-        """Gets the agency of this UpdateLogSettingReq.
+        r"""Gets the agency of this UpdateLogSettingReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -65,7 +65,7 @@ class UpdateLogSettingReq:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpdateLogSettingReq.
+        r"""Sets the agency of this UpdateLogSettingReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -76,7 +76,7 @@ class UpdateLogSettingReq:
 
     @property
     def log_base_path(self):
-        """Gets the log_base_path of this UpdateLogSettingReq.
+        r"""Gets the log_base_path of this UpdateLogSettingReq.
 
         日志在OBS桶中的备份路径。
 
@@ -87,7 +87,7 @@ class UpdateLogSettingReq:
 
     @log_base_path.setter
     def log_base_path(self, log_base_path):
-        """Sets the log_base_path of this UpdateLogSettingReq.
+        r"""Sets the log_base_path of this UpdateLogSettingReq.
 
         日志在OBS桶中的备份路径。
 
@@ -98,7 +98,7 @@ class UpdateLogSettingReq:
 
     @property
     def log_bucket(self):
-        """Gets the log_bucket of this UpdateLogSettingReq.
+        r"""Gets the log_bucket of this UpdateLogSettingReq.
 
         用于存储日志的OBS桶的桶名。
 
@@ -109,7 +109,7 @@ class UpdateLogSettingReq:
 
     @log_bucket.setter
     def log_bucket(self, log_bucket):
-        """Sets the log_bucket of this UpdateLogSettingReq.
+        r"""Sets the log_bucket of this UpdateLogSettingReq.
 
         用于存储日志的OBS桶的桶名。
 

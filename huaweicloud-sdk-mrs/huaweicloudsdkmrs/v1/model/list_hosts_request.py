@@ -29,7 +29,7 @@ class ListHostsRequest:
     }
 
     def __init__(self, cluster_id=None, page_size=None, current_page=None):
-        """ListHostsRequest
+        r"""ListHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListHostsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListHostsRequest.
+        r"""Gets the cluster_id of this ListHostsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -67,7 +67,7 @@ class ListHostsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListHostsRequest.
+        r"""Sets the cluster_id of this ListHostsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -78,7 +78,7 @@ class ListHostsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListHostsRequest.
+        r"""Gets the page_size of this ListHostsRequest.
 
         分页查询每页返回的最大集群数量。 取值范围：[1～2147483646] 默认值为10。
 
@@ -89,7 +89,7 @@ class ListHostsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListHostsRequest.
+        r"""Sets the page_size of this ListHostsRequest.
 
         分页查询每页返回的最大集群数量。 取值范围：[1～2147483646] 默认值为10。
 
@@ -100,7 +100,7 @@ class ListHostsRequest:
 
     @property
     def current_page(self):
-        """Gets the current_page of this ListHostsRequest.
+        r"""Gets the current_page of this ListHostsRequest.
 
         当前查询页码。默认值为1。
 
@@ -111,7 +111,7 @@ class ListHostsRequest:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this ListHostsRequest.
+        r"""Sets the current_page of this ListHostsRequest.
 
         当前查询页码。默认值为1。
 

@@ -81,7 +81,7 @@ class TestCase:
     }
 
     def __init__(self, auto_type=None, case_design_desc=None, case_name=None, case_num=None, create_time=None, creator_name=None, creator_num=None, deleted=None, expected_results=None, extra_param=None, factor_combination_json=None, operation_and_expected_result=None, id=None, is_archive=None, mindmap_id=None, node_id=None, batch_id=None, branch_id=None, plan_id=None, prerequisite=None, test_case_level=None, test_procedure=None, update_name=None, update_num=None, update_time=None, url=None, uri=None, project_id=None, service_id=None):
-        """TestCase
+        r"""TestCase
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class TestCase:
 
     @property
     def auto_type(self):
-        """Gets the auto_type of this TestCase.
+        r"""Gets the auto_type of this TestCase.
 
         自动化类型
 
@@ -250,7 +250,7 @@ class TestCase:
 
     @auto_type.setter
     def auto_type(self, auto_type):
-        """Sets the auto_type of this TestCase.
+        r"""Sets the auto_type of this TestCase.
 
         自动化类型
 
@@ -261,7 +261,7 @@ class TestCase:
 
     @property
     def case_design_desc(self):
-        """Gets the case_design_desc of this TestCase.
+        r"""Gets the case_design_desc of this TestCase.
 
         用例设计描述
 
@@ -272,7 +272,7 @@ class TestCase:
 
     @case_design_desc.setter
     def case_design_desc(self, case_design_desc):
-        """Sets the case_design_desc of this TestCase.
+        r"""Sets the case_design_desc of this TestCase.
 
         用例设计描述
 
@@ -283,7 +283,7 @@ class TestCase:
 
     @property
     def case_name(self):
-        """Gets the case_name of this TestCase.
+        r"""Gets the case_name of this TestCase.
 
         用例名称
 
@@ -294,7 +294,7 @@ class TestCase:
 
     @case_name.setter
     def case_name(self, case_name):
-        """Sets the case_name of this TestCase.
+        r"""Sets the case_name of this TestCase.
 
         用例名称
 
@@ -305,7 +305,7 @@ class TestCase:
 
     @property
     def case_num(self):
-        """Gets the case_num of this TestCase.
+        r"""Gets the case_num of this TestCase.
 
         用例编号
 
@@ -316,7 +316,7 @@ class TestCase:
 
     @case_num.setter
     def case_num(self, case_num):
-        """Sets the case_num of this TestCase.
+        r"""Sets the case_num of this TestCase.
 
         用例编号
 
@@ -327,7 +327,7 @@ class TestCase:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TestCase.
+        r"""Gets the create_time of this TestCase.
 
         创建时间
 
@@ -338,7 +338,7 @@ class TestCase:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TestCase.
+        r"""Sets the create_time of this TestCase.
 
         创建时间
 
@@ -349,7 +349,7 @@ class TestCase:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TestCase.
+        r"""Gets the creator_name of this TestCase.
 
         创建人名字
 
@@ -360,7 +360,7 @@ class TestCase:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TestCase.
+        r"""Sets the creator_name of this TestCase.
 
         创建人名字
 
@@ -371,7 +371,7 @@ class TestCase:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this TestCase.
+        r"""Gets the creator_num of this TestCase.
 
         创建人工号
 
@@ -382,7 +382,7 @@ class TestCase:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this TestCase.
+        r"""Sets the creator_num of this TestCase.
 
         创建人工号
 
@@ -393,7 +393,7 @@ class TestCase:
 
     @property
     def deleted(self):
-        """Gets the deleted of this TestCase.
+        r"""Gets the deleted of this TestCase.
 
         删除状态
 
@@ -404,7 +404,7 @@ class TestCase:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this TestCase.
+        r"""Sets the deleted of this TestCase.
 
         删除状态
 
@@ -415,7 +415,7 @@ class TestCase:
 
     @property
     def expected_results(self):
-        """Gets the expected_results of this TestCase.
+        r"""Gets the expected_results of this TestCase.
 
         预期结果
 
@@ -426,7 +426,7 @@ class TestCase:
 
     @expected_results.setter
     def expected_results(self, expected_results):
-        """Sets the expected_results of this TestCase.
+        r"""Sets the expected_results of this TestCase.
 
         预期结果
 
@@ -437,7 +437,7 @@ class TestCase:
 
     @property
     def extra_param(self):
-        """Gets the extra_param of this TestCase.
+        r"""Gets the extra_param of this TestCase.
 
         额外模板字段：以json形式存储，前台解析
 
@@ -448,7 +448,7 @@ class TestCase:
 
     @extra_param.setter
     def extra_param(self, extra_param):
-        """Sets the extra_param of this TestCase.
+        r"""Sets the extra_param of this TestCase.
 
         额外模板字段：以json形式存储，前台解析
 
@@ -459,7 +459,7 @@ class TestCase:
 
     @property
     def factor_combination_json(self):
-        """Gets the factor_combination_json of this TestCase.
+        r"""Gets the factor_combination_json of this TestCase.
 
         因子组合json
 
@@ -470,7 +470,7 @@ class TestCase:
 
     @factor_combination_json.setter
     def factor_combination_json(self, factor_combination_json):
-        """Sets the factor_combination_json of this TestCase.
+        r"""Sets the factor_combination_json of this TestCase.
 
         因子组合json
 
@@ -481,7 +481,7 @@ class TestCase:
 
     @property
     def operation_and_expected_result(self):
-        """Gets the operation_and_expected_result of this TestCase.
+        r"""Gets the operation_and_expected_result of this TestCase.
 
         操作及预期结果
 
@@ -492,7 +492,7 @@ class TestCase:
 
     @operation_and_expected_result.setter
     def operation_and_expected_result(self, operation_and_expected_result):
-        """Sets the operation_and_expected_result of this TestCase.
+        r"""Sets the operation_and_expected_result of this TestCase.
 
         操作及预期结果
 
@@ -503,7 +503,7 @@ class TestCase:
 
     @property
     def id(self):
-        """Gets the id of this TestCase.
+        r"""Gets the id of this TestCase.
 
         id 主键
 
@@ -514,7 +514,7 @@ class TestCase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TestCase.
+        r"""Sets the id of this TestCase.
 
         id 主键
 
@@ -525,7 +525,7 @@ class TestCase:
 
     @property
     def is_archive(self):
-        """Gets the is_archive of this TestCase.
+        r"""Gets the is_archive of this TestCase.
 
         状态
 
@@ -536,7 +536,7 @@ class TestCase:
 
     @is_archive.setter
     def is_archive(self, is_archive):
-        """Sets the is_archive of this TestCase.
+        r"""Sets the is_archive of this TestCase.
 
         状态
 
@@ -547,7 +547,7 @@ class TestCase:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this TestCase.
+        r"""Gets the mindmap_id of this TestCase.
 
         脑图id
 
@@ -558,7 +558,7 @@ class TestCase:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this TestCase.
+        r"""Sets the mindmap_id of this TestCase.
 
         脑图id
 
@@ -569,7 +569,7 @@ class TestCase:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TestCase.
+        r"""Gets the node_id of this TestCase.
 
         节点id
 
@@ -580,7 +580,7 @@ class TestCase:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TestCase.
+        r"""Sets the node_id of this TestCase.
 
         节点id
 
@@ -591,7 +591,7 @@ class TestCase:
 
     @property
     def batch_id(self):
-        """Gets the batch_id of this TestCase.
+        r"""Gets the batch_id of this TestCase.
 
         批次id
 
@@ -602,7 +602,7 @@ class TestCase:
 
     @batch_id.setter
     def batch_id(self, batch_id):
-        """Sets the batch_id of this TestCase.
+        r"""Sets the batch_id of this TestCase.
 
         批次id
 
@@ -613,7 +613,7 @@ class TestCase:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this TestCase.
+        r"""Gets the branch_id of this TestCase.
 
         分支ID
 
@@ -624,7 +624,7 @@ class TestCase:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this TestCase.
+        r"""Sets the branch_id of this TestCase.
 
         分支ID
 
@@ -635,7 +635,7 @@ class TestCase:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestCase.
+        r"""Gets the plan_id of this TestCase.
 
         计划ID
 
@@ -646,7 +646,7 @@ class TestCase:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestCase.
+        r"""Sets the plan_id of this TestCase.
 
         计划ID
 
@@ -657,7 +657,7 @@ class TestCase:
 
     @property
     def prerequisite(self):
-        """Gets the prerequisite of this TestCase.
+        r"""Gets the prerequisite of this TestCase.
 
         用例前置步骤
 
@@ -668,7 +668,7 @@ class TestCase:
 
     @prerequisite.setter
     def prerequisite(self, prerequisite):
-        """Sets the prerequisite of this TestCase.
+        r"""Sets the prerequisite of this TestCase.
 
         用例前置步骤
 
@@ -679,7 +679,7 @@ class TestCase:
 
     @property
     def test_case_level(self):
-        """Gets the test_case_level of this TestCase.
+        r"""Gets the test_case_level of this TestCase.
 
         测试用例级别
 
@@ -690,7 +690,7 @@ class TestCase:
 
     @test_case_level.setter
     def test_case_level(self, test_case_level):
-        """Sets the test_case_level of this TestCase.
+        r"""Sets the test_case_level of this TestCase.
 
         测试用例级别
 
@@ -701,7 +701,7 @@ class TestCase:
 
     @property
     def test_procedure(self):
-        """Gets the test_procedure of this TestCase.
+        r"""Gets the test_procedure of this TestCase.
 
         测试步骤
 
@@ -712,7 +712,7 @@ class TestCase:
 
     @test_procedure.setter
     def test_procedure(self, test_procedure):
-        """Sets the test_procedure of this TestCase.
+        r"""Sets the test_procedure of this TestCase.
 
         测试步骤
 
@@ -723,7 +723,7 @@ class TestCase:
 
     @property
     def update_name(self):
-        """Gets the update_name of this TestCase.
+        r"""Gets the update_name of this TestCase.
 
         更新人名字
 
@@ -734,7 +734,7 @@ class TestCase:
 
     @update_name.setter
     def update_name(self, update_name):
-        """Sets the update_name of this TestCase.
+        r"""Sets the update_name of this TestCase.
 
         更新人名字
 
@@ -745,7 +745,7 @@ class TestCase:
 
     @property
     def update_num(self):
-        """Gets the update_num of this TestCase.
+        r"""Gets the update_num of this TestCase.
 
         更新人工号
 
@@ -756,7 +756,7 @@ class TestCase:
 
     @update_num.setter
     def update_num(self, update_num):
-        """Sets the update_num of this TestCase.
+        r"""Sets the update_num of this TestCase.
 
         更新人工号
 
@@ -767,7 +767,7 @@ class TestCase:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TestCase.
+        r"""Gets the update_time of this TestCase.
 
         更新时间
 
@@ -778,7 +778,7 @@ class TestCase:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TestCase.
+        r"""Sets the update_time of this TestCase.
 
         更新时间
 
@@ -789,7 +789,7 @@ class TestCase:
 
     @property
     def url(self):
-        """Gets the url of this TestCase.
+        r"""Gets the url of this TestCase.
 
         url
 
@@ -800,7 +800,7 @@ class TestCase:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TestCase.
+        r"""Sets the url of this TestCase.
 
         url
 
@@ -811,7 +811,7 @@ class TestCase:
 
     @property
     def uri(self):
-        """Gets the uri of this TestCase.
+        r"""Gets the uri of this TestCase.
 
         uri
 
@@ -822,7 +822,7 @@ class TestCase:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestCase.
+        r"""Sets the uri of this TestCase.
 
         uri
 
@@ -833,7 +833,7 @@ class TestCase:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TestCase.
+        r"""Gets the project_id of this TestCase.
 
         项目id
 
@@ -844,7 +844,7 @@ class TestCase:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TestCase.
+        r"""Sets the project_id of this TestCase.
 
         项目id
 
@@ -855,7 +855,7 @@ class TestCase:
 
     @property
     def service_id(self):
-        """Gets the service_id of this TestCase.
+        r"""Gets the service_id of this TestCase.
 
         服务id
 
@@ -866,7 +866,7 @@ class TestCase:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this TestCase.
+        r"""Sets the service_id of this TestCase.
 
         服务id
 

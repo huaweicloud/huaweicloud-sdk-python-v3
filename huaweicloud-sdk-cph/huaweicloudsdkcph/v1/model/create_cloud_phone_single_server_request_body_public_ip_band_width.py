@@ -31,7 +31,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
     }
 
     def __init__(self, band_width_id=None, band_width_size=None, band_width_charge_mode=None, band_width_share_type=None):
-        """CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth
+        r"""CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @property
     def band_width_id(self):
-        """Gets the band_width_id of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Gets the band_width_id of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器的带宽唯一标识，选共享带宽时必选。
 
@@ -73,7 +73,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @band_width_id.setter
     def band_width_id(self, band_width_id):
-        """Sets the band_width_id of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Sets the band_width_id of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器的带宽唯一标识，选共享带宽时必选。
 
@@ -84,7 +84,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @property
     def band_width_size(self):
-        """Gets the band_width_size of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Gets the band_width_size of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器的带宽大小，选独享带宽时必选。
 
@@ -95,7 +95,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @band_width_size.setter
     def band_width_size(self, band_width_size):
-        """Sets the band_width_size of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Sets the band_width_size of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器的带宽大小，选独享带宽时必选。
 
@@ -106,7 +106,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @property
     def band_width_charge_mode(self):
-        """Gets the band_width_charge_mode of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Gets the band_width_charge_mode of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器带宽的计费方式。 0：bandwidth, 按带宽计费 1：traffic, 按流量计费
 
@@ -117,7 +117,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @band_width_charge_mode.setter
     def band_width_charge_mode(self, band_width_charge_mode):
-        """Sets the band_width_charge_mode of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Sets the band_width_charge_mode of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器带宽的计费方式。 0：bandwidth, 按带宽计费 1：traffic, 按流量计费
 
@@ -128,7 +128,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @property
     def band_width_share_type(self):
-        """Gets the band_width_share_type of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Gets the band_width_share_type of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器的带宽类型。 0：per，独享带宽 1：whole，共享带宽
 
@@ -139,7 +139,7 @@ class CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth:
 
     @band_width_share_type.setter
     def band_width_share_type(self, band_width_share_type):
-        """Sets the band_width_share_type of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
+        r"""Sets the band_width_share_type of this CreateCloudPhoneSingleServerRequestBodyPublicIpBandWidth.
 
         云手机服务器的带宽类型。 0：per，独享带宽 1：whole，共享带宽
 

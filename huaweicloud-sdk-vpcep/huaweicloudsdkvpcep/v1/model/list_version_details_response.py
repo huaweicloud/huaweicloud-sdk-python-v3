@@ -26,7 +26,7 @@ class ListVersionDetailsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """ListVersionDetailsResponse
+        r"""ListVersionDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListVersionDetailsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListVersionDetailsResponse.
+        r"""Gets the versions of this ListVersionDetailsResponse.
 
         VPC终端节点版本信息列表。
 
@@ -55,7 +55,7 @@ class ListVersionDetailsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListVersionDetailsResponse.
+        r"""Sets the versions of this ListVersionDetailsResponse.
 
         VPC终端节点版本信息列表。
 

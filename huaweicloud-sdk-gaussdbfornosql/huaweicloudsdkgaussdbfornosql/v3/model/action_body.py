@@ -25,7 +25,7 @@ class ActionBody:
     }
 
     def __init__(self, action=None):
-        """ActionBody
+        r"""ActionBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ActionBody:
 
     @property
     def action(self):
-        """Gets the action of this ActionBody.
+        r"""Gets the action of this ActionBody.
 
         指定容灾实例数据同步操作。 取值pause，表示暂停容灾实例的数据同步。 取值resume，表示恢复容灾实例的数据同步。
 
@@ -53,7 +53,7 @@ class ActionBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ActionBody.
+        r"""Sets the action of this ActionBody.
 
         指定容灾实例数据同步操作。 取值pause，表示暂停容灾实例的数据同步。 取值resume，表示恢复容灾实例的数据同步。
 

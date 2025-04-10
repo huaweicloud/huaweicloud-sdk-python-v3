@@ -31,7 +31,7 @@ class CreateMeetingRequest:
     }
 
     def __init__(self, user_uuid=None, x_authorization_type=None, x_site_id=None, body=None):
-        """CreateMeetingRequest
+        r"""CreateMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this CreateMeetingRequest.
+        r"""Gets the user_uuid of this CreateMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -75,7 +75,7 @@ class CreateMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this CreateMeetingRequest.
+        r"""Sets the user_uuid of this CreateMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -86,7 +86,7 @@ class CreateMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this CreateMeetingRequest.
+        r"""Gets the x_authorization_type of this CreateMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -97,7 +97,7 @@ class CreateMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this CreateMeetingRequest.
+        r"""Sets the x_authorization_type of this CreateMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -108,7 +108,7 @@ class CreateMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this CreateMeetingRequest.
+        r"""Gets the x_site_id of this CreateMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -119,7 +119,7 @@ class CreateMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this CreateMeetingRequest.
+        r"""Sets the x_site_id of this CreateMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -130,7 +130,7 @@ class CreateMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMeetingRequest.
+        r"""Gets the body of this CreateMeetingRequest.
 
         :return: The body of this CreateMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`
@@ -139,7 +139,7 @@ class CreateMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMeetingRequest.
+        r"""Sets the body of this CreateMeetingRequest.
 
         :param body: The body of this CreateMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`

@@ -33,7 +33,7 @@ class SmnTopics:
     }
 
     def __init__(self, display_name=None, name=None, push_policy=None, status=None, topic_urn=None):
-        """SmnTopics
+        r"""SmnTopics
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class SmnTopics:
 
     @property
     def display_name(self):
-        """Gets the display_name of this SmnTopics.
+        r"""Gets the display_name of this SmnTopics.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。默认值为空。
 
@@ -79,7 +79,7 @@ class SmnTopics:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this SmnTopics.
+        r"""Sets the display_name of this SmnTopics.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。显示名的长度为192byte或64个中文。默认值为空。
 
@@ -90,7 +90,7 @@ class SmnTopics:
 
     @property
     def name(self):
-        """Gets the name of this SmnTopics.
+        r"""Gets the name of this SmnTopics.
 
         创建topic的名字。Topic名称只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度为1到255个字符。
 
@@ -101,7 +101,7 @@ class SmnTopics:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SmnTopics.
+        r"""Sets the name of this SmnTopics.
 
         创建topic的名字。Topic名称只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度为1到255个字符。
 
@@ -112,7 +112,7 @@ class SmnTopics:
 
     @property
     def push_policy(self):
-        """Gets the push_policy of this SmnTopics.
+        r"""Gets the push_policy of this SmnTopics.
 
         SMN消息推送策略。取值为0或1
 
@@ -123,7 +123,7 @@ class SmnTopics:
 
     @push_policy.setter
     def push_policy(self, push_policy):
-        """Sets the push_policy of this SmnTopics.
+        r"""Sets the push_policy of this SmnTopics.
 
         SMN消息推送策略。取值为0或1
 
@@ -134,7 +134,7 @@ class SmnTopics:
 
     @property
     def status(self):
-        """Gets the status of this SmnTopics.
+        r"""Gets the status of this SmnTopics.
 
         topic中订阅者的状态。0:主题已删除或主题下订阅列表为空。1:主题下的订阅列表存在状态为“已订阅”的订阅信息。2:主题下的订阅信息状态处于“未订阅”或“已取消”。
 
@@ -145,7 +145,7 @@ class SmnTopics:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmnTopics.
+        r"""Sets the status of this SmnTopics.
 
         topic中订阅者的状态。0:主题已删除或主题下订阅列表为空。1:主题下的订阅列表存在状态为“已订阅”的订阅信息。2:主题下的订阅信息状态处于“未订阅”或“已取消”。
 
@@ -156,7 +156,7 @@ class SmnTopics:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this SmnTopics.
+        r"""Gets the topic_urn of this SmnTopics.
 
         Topic的唯一的资源标识。
 
@@ -167,7 +167,7 @@ class SmnTopics:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this SmnTopics.
+        r"""Sets the topic_urn of this SmnTopics.
 
         Topic的唯一的资源标识。
 

@@ -33,7 +33,7 @@ class InstanceAddress:
     }
 
     def __init__(self, os_ext_ips_ma_cmac_addr=None, os_ext_ip_sport_id=None, os_ext_ip_stype=None, addr=None, version=None):
-        """InstanceAddress
+        r"""InstanceAddress
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceAddress:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this InstanceAddress.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this InstanceAddress.
 
         MAC地址。
 
@@ -82,7 +82,7 @@ class InstanceAddress:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this InstanceAddress.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this InstanceAddress.
 
         MAC地址。
 
@@ -93,7 +93,7 @@ class InstanceAddress:
 
     @property
     def os_ext_ip_sport_id(self):
-        """Gets the os_ext_ip_sport_id of this InstanceAddress.
+        r"""Gets the os_ext_ip_sport_id of this InstanceAddress.
 
         IP地址对应的端口ID。
 
@@ -104,7 +104,7 @@ class InstanceAddress:
 
     @os_ext_ip_sport_id.setter
     def os_ext_ip_sport_id(self, os_ext_ip_sport_id):
-        """Sets the os_ext_ip_sport_id of this InstanceAddress.
+        r"""Sets the os_ext_ip_sport_id of this InstanceAddress.
 
         IP地址对应的端口ID。
 
@@ -115,7 +115,7 @@ class InstanceAddress:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this InstanceAddress.
+        r"""Gets the os_ext_ip_stype of this InstanceAddress.
 
         IP地址类型。  - fixed：代表私有IP地址。 - floating：代表浮动IP地址。
 
@@ -126,7 +126,7 @@ class InstanceAddress:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this InstanceAddress.
+        r"""Sets the os_ext_ip_stype of this InstanceAddress.
 
         IP地址类型。  - fixed：代表私有IP地址。 - floating：代表浮动IP地址。
 
@@ -137,7 +137,7 @@ class InstanceAddress:
 
     @property
     def addr(self):
-        """Gets the addr of this InstanceAddress.
+        r"""Gets the addr of this InstanceAddress.
 
         IP地址。
 
@@ -148,7 +148,7 @@ class InstanceAddress:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this InstanceAddress.
+        r"""Sets the addr of this InstanceAddress.
 
         IP地址。
 
@@ -159,7 +159,7 @@ class InstanceAddress:
 
     @property
     def version(self):
-        """Gets the version of this InstanceAddress.
+        r"""Gets the version of this InstanceAddress.
 
         IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
 
@@ -170,7 +170,7 @@ class InstanceAddress:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceAddress.
+        r"""Sets the version of this InstanceAddress.
 
         IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
 

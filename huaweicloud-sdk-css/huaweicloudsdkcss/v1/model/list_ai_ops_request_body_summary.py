@@ -29,7 +29,7 @@ class ListAiOpsRequestBodySummary:
     }
 
     def __init__(self, high=None, medium=None, suggestion=None):
-        """ListAiOpsRequestBodySummary
+        r"""ListAiOpsRequestBodySummary
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAiOpsRequestBodySummary:
 
     @property
     def high(self):
-        """Gets the high of this ListAiOpsRequestBodySummary.
+        r"""Gets the high of this ListAiOpsRequestBodySummary.
 
         检测项判定为高风险的数量。
 
@@ -68,7 +68,7 @@ class ListAiOpsRequestBodySummary:
 
     @high.setter
     def high(self, high):
-        """Sets the high of this ListAiOpsRequestBodySummary.
+        r"""Sets the high of this ListAiOpsRequestBodySummary.
 
         检测项判定为高风险的数量。
 
@@ -79,7 +79,7 @@ class ListAiOpsRequestBodySummary:
 
     @property
     def medium(self):
-        """Gets the medium of this ListAiOpsRequestBodySummary.
+        r"""Gets the medium of this ListAiOpsRequestBodySummary.
 
         检测项判定为中风险的数量。
 
@@ -90,7 +90,7 @@ class ListAiOpsRequestBodySummary:
 
     @medium.setter
     def medium(self, medium):
-        """Sets the medium of this ListAiOpsRequestBodySummary.
+        r"""Sets the medium of this ListAiOpsRequestBodySummary.
 
         检测项判定为中风险的数量。
 
@@ -101,7 +101,7 @@ class ListAiOpsRequestBodySummary:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ListAiOpsRequestBodySummary.
+        r"""Gets the suggestion of this ListAiOpsRequestBodySummary.
 
         检测项判定为建议的数量。
 
@@ -112,7 +112,7 @@ class ListAiOpsRequestBodySummary:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ListAiOpsRequestBodySummary.
+        r"""Sets the suggestion of this ListAiOpsRequestBodySummary.
 
         检测项判定为建议的数量。
 

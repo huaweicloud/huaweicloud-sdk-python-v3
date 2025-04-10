@@ -29,7 +29,7 @@ class KafkaCreateInfo:
     }
 
     def __init__(self, spec=None, storage=None, az=None):
-        """KafkaCreateInfo
+        r"""KafkaCreateInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class KafkaCreateInfo:
 
     @property
     def spec(self):
-        """Gets the spec of this KafkaCreateInfo.
+        r"""Gets the spec of this KafkaCreateInfo.
 
         kafka实例规格，可选：mini：基准带宽100MB/s，small：基准带宽300MB/s，middle：基准带宽600MB/s，high：基准带宽1200MB/s
 
@@ -65,7 +65,7 @@ class KafkaCreateInfo:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this KafkaCreateInfo.
+        r"""Sets the spec of this KafkaCreateInfo.
 
         kafka实例规格，可选：mini：基准带宽100MB/s，small：基准带宽300MB/s，middle：基准带宽600MB/s，high：基准带宽1200MB/s
 
@@ -76,7 +76,7 @@ class KafkaCreateInfo:
 
     @property
     def storage(self):
-        """Gets the storage of this KafkaCreateInfo.
+        r"""Gets the storage of this KafkaCreateInfo.
 
         存储空间(单位：GB），至多9000，mini版至少300，small至少1200，middle至少2400，high至少4800
 
@@ -87,7 +87,7 @@ class KafkaCreateInfo:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this KafkaCreateInfo.
+        r"""Sets the storage of this KafkaCreateInfo.
 
         存储空间(单位：GB），至多9000，mini版至少300，small至少1200，middle至少2400，high至少4800
 
@@ -98,7 +98,7 @@ class KafkaCreateInfo:
 
     @property
     def az(self):
-        """Gets the az of this KafkaCreateInfo.
+        r"""Gets the az of this KafkaCreateInfo.
 
         kafka实例可用区
 
@@ -109,7 +109,7 @@ class KafkaCreateInfo:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this KafkaCreateInfo.
+        r"""Sets the az of this KafkaCreateInfo.
 
         kafka实例可用区
 

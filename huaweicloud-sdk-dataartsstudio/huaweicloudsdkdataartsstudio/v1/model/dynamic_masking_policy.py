@@ -39,7 +39,7 @@ class DynamicMaskingPolicy:
     }
 
     def __init__(self, id=None, policy_set_id=None, column_name=None, column_type=None, algorithm_type=None, sync_status=None, algorithm_detail=None, algorithm_detail_dto=None):
-        """DynamicMaskingPolicy
+        r"""DynamicMaskingPolicy
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DynamicMaskingPolicy:
 
     @property
     def id(self):
-        """Gets the id of this DynamicMaskingPolicy.
+        r"""Gets the id of this DynamicMaskingPolicy.
 
         字段脱敏策略id。
 
@@ -103,7 +103,7 @@ class DynamicMaskingPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DynamicMaskingPolicy.
+        r"""Sets the id of this DynamicMaskingPolicy.
 
         字段脱敏策略id。
 
@@ -114,7 +114,7 @@ class DynamicMaskingPolicy:
 
     @property
     def policy_set_id(self):
-        """Gets the policy_set_id of this DynamicMaskingPolicy.
+        r"""Gets the policy_set_id of this DynamicMaskingPolicy.
 
         动态脱敏策略id。
 
@@ -125,7 +125,7 @@ class DynamicMaskingPolicy:
 
     @policy_set_id.setter
     def policy_set_id(self, policy_set_id):
-        """Sets the policy_set_id of this DynamicMaskingPolicy.
+        r"""Sets the policy_set_id of this DynamicMaskingPolicy.
 
         动态脱敏策略id。
 
@@ -136,7 +136,7 @@ class DynamicMaskingPolicy:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DynamicMaskingPolicy.
+        r"""Gets the column_name of this DynamicMaskingPolicy.
 
         数据表中的字段名称。
 
@@ -147,7 +147,7 @@ class DynamicMaskingPolicy:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DynamicMaskingPolicy.
+        r"""Sets the column_name of this DynamicMaskingPolicy.
 
         数据表中的字段名称。
 
@@ -158,7 +158,7 @@ class DynamicMaskingPolicy:
 
     @property
     def column_type(self):
-        """Gets the column_type of this DynamicMaskingPolicy.
+        r"""Gets the column_type of this DynamicMaskingPolicy.
 
         数据表中字段的数据类型。
 
@@ -169,7 +169,7 @@ class DynamicMaskingPolicy:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this DynamicMaskingPolicy.
+        r"""Sets the column_type of this DynamicMaskingPolicy.
 
         数据表中字段的数据类型。
 
@@ -180,7 +180,7 @@ class DynamicMaskingPolicy:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this DynamicMaskingPolicy.
+        r"""Gets the algorithm_type of this DynamicMaskingPolicy.
 
         具体动态脱敏规则参数介绍请参见[动态脱敏规则介绍](dataartsstudio_01_1036.html)。 HIVE数据源动态脱敏算法 - MASK 掩盖英文字符和数字 - MASK_SHOW_LAST_4 保留后四位 - MASK_SHOW_FIRST_4 保留前四位 - MASK_HASH 哈希掩盖 - MASK_DATE_SHOW_YEAR 掩盖月份和日期 - MASK_NULL NULL掩盖  DWS数据源动态脱敏算法 - DWS_ALL_MASK 全掩码 - DWS_BACK_KEEP 保留后4位，其余脱敏为* - DWS_FRONT_KEEP 保留前2位，其余脱敏为* - DWS_SELF_CONFIG 需要输入开始位置、结束位置、脱敏字符传入detail结构体中，例如{\"start\": 1, \"end\": 2, \"string_target\": \"*\"}  [DLI数据源动态脱敏算法](tag:nohcs) - [MASK 掩盖英文字符和数字](tag:nohcs) - [MASK_SHOW_LAST_4 保留后四位](tag:nohcs) - [MASK_SHOW_FIRST_4 保留前四位](tag:nohcs) - [MASK_HASH 哈希掩盖](tag:nohcs) - [MASK_DATE_SHOW_YEAR 掩盖月份和日期](tag:nohcs) - [MASK_NULL NULL掩盖](tag:nohcs)
 
@@ -191,7 +191,7 @@ class DynamicMaskingPolicy:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this DynamicMaskingPolicy.
+        r"""Sets the algorithm_type of this DynamicMaskingPolicy.
 
         具体动态脱敏规则参数介绍请参见[动态脱敏规则介绍](dataartsstudio_01_1036.html)。 HIVE数据源动态脱敏算法 - MASK 掩盖英文字符和数字 - MASK_SHOW_LAST_4 保留后四位 - MASK_SHOW_FIRST_4 保留前四位 - MASK_HASH 哈希掩盖 - MASK_DATE_SHOW_YEAR 掩盖月份和日期 - MASK_NULL NULL掩盖  DWS数据源动态脱敏算法 - DWS_ALL_MASK 全掩码 - DWS_BACK_KEEP 保留后4位，其余脱敏为* - DWS_FRONT_KEEP 保留前2位，其余脱敏为* - DWS_SELF_CONFIG 需要输入开始位置、结束位置、脱敏字符传入detail结构体中，例如{\"start\": 1, \"end\": 2, \"string_target\": \"*\"}  [DLI数据源动态脱敏算法](tag:nohcs) - [MASK 掩盖英文字符和数字](tag:nohcs) - [MASK_SHOW_LAST_4 保留后四位](tag:nohcs) - [MASK_SHOW_FIRST_4 保留前四位](tag:nohcs) - [MASK_HASH 哈希掩盖](tag:nohcs) - [MASK_DATE_SHOW_YEAR 掩盖月份和日期](tag:nohcs) - [MASK_NULL NULL掩盖](tag:nohcs)
 
@@ -202,7 +202,7 @@ class DynamicMaskingPolicy:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this DynamicMaskingPolicy.
+        r"""Gets the sync_status of this DynamicMaskingPolicy.
 
         同步状态： - UNKNOWN 未知状态 - NOT_SYNC 未同步 - SYNCING 同步中 - SYNC_SUCCESS 同步成功 - SYNC_FAIL 同步失败 - SYNC_PARTIAL_FAIL 存在失败 - DELETE_FAIL 删除失败 - DELETING 删除中 - UPDATING 更新中 - DATA_UPDATED 数据存在更新
 
@@ -213,7 +213,7 @@ class DynamicMaskingPolicy:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this DynamicMaskingPolicy.
+        r"""Sets the sync_status of this DynamicMaskingPolicy.
 
         同步状态： - UNKNOWN 未知状态 - NOT_SYNC 未同步 - SYNCING 同步中 - SYNC_SUCCESS 同步成功 - SYNC_FAIL 同步失败 - SYNC_PARTIAL_FAIL 存在失败 - DELETE_FAIL 删除失败 - DELETING 删除中 - UPDATING 更新中 - DATA_UPDATED 数据存在更新
 
@@ -224,7 +224,7 @@ class DynamicMaskingPolicy:
 
     @property
     def algorithm_detail(self):
-        """Gets the algorithm_detail of this DynamicMaskingPolicy.
+        r"""Gets the algorithm_detail of this DynamicMaskingPolicy.
 
         动态脱敏策略算法详情。
 
@@ -235,7 +235,7 @@ class DynamicMaskingPolicy:
 
     @algorithm_detail.setter
     def algorithm_detail(self, algorithm_detail):
-        """Sets the algorithm_detail of this DynamicMaskingPolicy.
+        r"""Sets the algorithm_detail of this DynamicMaskingPolicy.
 
         动态脱敏策略算法详情。
 
@@ -246,7 +246,7 @@ class DynamicMaskingPolicy:
 
     @property
     def algorithm_detail_dto(self):
-        """Gets the algorithm_detail_dto of this DynamicMaskingPolicy.
+        r"""Gets the algorithm_detail_dto of this DynamicMaskingPolicy.
 
         :return: The algorithm_detail_dto of this DynamicMaskingPolicy.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AlgorithmDetailDTO`
@@ -255,7 +255,7 @@ class DynamicMaskingPolicy:
 
     @algorithm_detail_dto.setter
     def algorithm_detail_dto(self, algorithm_detail_dto):
-        """Sets the algorithm_detail_dto of this DynamicMaskingPolicy.
+        r"""Sets the algorithm_detail_dto of this DynamicMaskingPolicy.
 
         :param algorithm_detail_dto: The algorithm_detail_dto of this DynamicMaskingPolicy.
         :type algorithm_detail_dto: :class:`huaweicloudsdkdataartsstudio.v1.AlgorithmDetailDTO`

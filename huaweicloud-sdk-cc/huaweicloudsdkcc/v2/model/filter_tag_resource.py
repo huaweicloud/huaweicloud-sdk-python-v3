@@ -31,7 +31,7 @@ class FilterTagResource:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None):
-        """FilterTagResource
+        r"""FilterTagResource
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class FilterTagResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FilterTagResource.
+        r"""Gets the resource_id of this FilterTagResource.
 
         资源ID
 
@@ -74,7 +74,7 @@ class FilterTagResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FilterTagResource.
+        r"""Sets the resource_id of this FilterTagResource.
 
         资源ID
 
@@ -85,7 +85,7 @@ class FilterTagResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this FilterTagResource.
+        r"""Gets the resource_name of this FilterTagResource.
 
         资源名称
 
@@ -96,7 +96,7 @@ class FilterTagResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this FilterTagResource.
+        r"""Sets the resource_name of this FilterTagResource.
 
         资源名称
 
@@ -107,7 +107,7 @@ class FilterTagResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this FilterTagResource.
+        r"""Gets the resource_detail of this FilterTagResource.
 
         资源详情
 
@@ -118,7 +118,7 @@ class FilterTagResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this FilterTagResource.
+        r"""Sets the resource_detail of this FilterTagResource.
 
         资源详情
 
@@ -129,7 +129,7 @@ class FilterTagResource:
 
     @property
     def tags(self):
-        """Gets the tags of this FilterTagResource.
+        r"""Gets the tags of this FilterTagResource.
 
         资源下包含的标签
 
@@ -140,7 +140,7 @@ class FilterTagResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this FilterTagResource.
+        r"""Sets the tags of this FilterTagResource.
 
         资源下包含的标签
 

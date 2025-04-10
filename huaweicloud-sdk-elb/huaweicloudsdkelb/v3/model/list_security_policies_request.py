@@ -39,7 +39,7 @@ class ListSecurityPoliciesRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, protocols=None, ciphers=None):
-        """ListSecurityPoliciesRequest
+        r"""ListSecurityPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecurityPoliciesRequest.
+        r"""Gets the marker of this ListSecurityPoliciesRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -103,7 +103,7 @@ class ListSecurityPoliciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecurityPoliciesRequest.
+        r"""Sets the marker of this ListSecurityPoliciesRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -114,7 +114,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityPoliciesRequest.
+        r"""Gets the limit of this ListSecurityPoliciesRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -125,7 +125,7 @@ class ListSecurityPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityPoliciesRequest.
+        r"""Sets the limit of this ListSecurityPoliciesRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -136,7 +136,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListSecurityPoliciesRequest.
+        r"""Gets the page_reverse of this ListSecurityPoliciesRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -147,7 +147,7 @@ class ListSecurityPoliciesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListSecurityPoliciesRequest.
+        r"""Sets the page_reverse of this ListSecurityPoliciesRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -158,7 +158,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSecurityPoliciesRequest.
+        r"""Gets the id of this ListSecurityPoliciesRequest.
 
         自定义安全策略的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -169,7 +169,7 @@ class ListSecurityPoliciesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSecurityPoliciesRequest.
+        r"""Sets the id of this ListSecurityPoliciesRequest.
 
         自定义安全策略的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -180,7 +180,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecurityPoliciesRequest.
+        r"""Gets the name of this ListSecurityPoliciesRequest.
 
         自定义安全策略的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -191,7 +191,7 @@ class ListSecurityPoliciesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecurityPoliciesRequest.
+        r"""Sets the name of this ListSecurityPoliciesRequest.
 
         自定义安全策略的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -202,7 +202,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListSecurityPoliciesRequest.
+        r"""Gets the description of this ListSecurityPoliciesRequest.
 
         自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -213,7 +213,7 @@ class ListSecurityPoliciesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListSecurityPoliciesRequest.
+        r"""Sets the description of this ListSecurityPoliciesRequest.
 
         自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -224,7 +224,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def protocols(self):
-        """Gets the protocols of this ListSecurityPoliciesRequest.
+        r"""Gets the protocols of this ListSecurityPoliciesRequest.
 
         空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。
 
@@ -235,7 +235,7 @@ class ListSecurityPoliciesRequest:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this ListSecurityPoliciesRequest.
+        r"""Sets the protocols of this ListSecurityPoliciesRequest.
 
         空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。
 
@@ -246,7 +246,7 @@ class ListSecurityPoliciesRequest:
 
     @property
     def ciphers(self):
-        """Gets the ciphers of this ListSecurityPoliciesRequest.
+        r"""Gets the ciphers of this ListSecurityPoliciesRequest.
 
         冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。
 
@@ -257,7 +257,7 @@ class ListSecurityPoliciesRequest:
 
     @ciphers.setter
     def ciphers(self, ciphers):
-        """Sets the ciphers of this ListSecurityPoliciesRequest.
+        r"""Sets the ciphers of this ListSecurityPoliciesRequest.
 
         冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。
 

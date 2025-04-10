@@ -28,7 +28,7 @@ class BatchListJobDetailsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchListJobDetailsResponse
+        r"""BatchListJobDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchListJobDetailsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListJobDetailsResponse.
+        r"""Gets the count of this BatchListJobDetailsResponse.
 
         任务数量
 
@@ -62,7 +62,7 @@ class BatchListJobDetailsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListJobDetailsResponse.
+        r"""Sets the count of this BatchListJobDetailsResponse.
 
         任务数量
 
@@ -73,7 +73,7 @@ class BatchListJobDetailsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchListJobDetailsResponse.
+        r"""Gets the results of this BatchListJobDetailsResponse.
 
         任务详细信息
 
@@ -84,7 +84,7 @@ class BatchListJobDetailsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchListJobDetailsResponse.
+        r"""Sets the results of this BatchListJobDetailsResponse.
 
         任务详细信息
 

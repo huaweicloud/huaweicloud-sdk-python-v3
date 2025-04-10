@@ -29,7 +29,7 @@ class Org:
     }
 
     def __init__(self, org_msp_id=None, org_domain=None, peers=None):
-        """Org
+        r"""Org
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Org:
 
     @property
     def org_msp_id(self):
-        """Gets the org_msp_id of this Org.
+        r"""Gets the org_msp_id of this Org.
 
         组织MSP标识
 
@@ -68,7 +68,7 @@ class Org:
 
     @org_msp_id.setter
     def org_msp_id(self, org_msp_id):
-        """Sets the org_msp_id of this Org.
+        r"""Sets the org_msp_id of this Org.
 
         组织MSP标识
 
@@ -79,7 +79,7 @@ class Org:
 
     @property
     def org_domain(self):
-        """Gets the org_domain of this Org.
+        r"""Gets the org_domain of this Org.
 
         组织域名
 
@@ -90,7 +90,7 @@ class Org:
 
     @org_domain.setter
     def org_domain(self, org_domain):
-        """Sets the org_domain of this Org.
+        r"""Sets the org_domain of this Org.
 
         组织域名
 
@@ -101,7 +101,7 @@ class Org:
 
     @property
     def peers(self):
-        """Gets the peers of this Org.
+        r"""Gets the peers of this Org.
 
         key:节点名称，value：节点详细信息
 
@@ -112,7 +112,7 @@ class Org:
 
     @peers.setter
     def peers(self, peers):
-        """Sets the peers of this Org.
+        r"""Sets the peers of this Org.
 
         key:节点名称，value：节点详细信息
 

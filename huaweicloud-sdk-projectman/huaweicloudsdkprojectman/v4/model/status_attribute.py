@@ -27,7 +27,7 @@ class StatusAttribute:
     }
 
     def __init__(self, id=None, name=None):
-        """StatusAttribute
+        r"""StatusAttribute
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatusAttribute:
 
     @property
     def id(self):
-        """Gets the id of this StatusAttribute.
+        r"""Gets the id of this StatusAttribute.
 
         状态属性id
 
@@ -61,7 +61,7 @@ class StatusAttribute:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StatusAttribute.
+        r"""Sets the id of this StatusAttribute.
 
         状态属性id
 
@@ -72,7 +72,7 @@ class StatusAttribute:
 
     @property
     def name(self):
-        """Gets the name of this StatusAttribute.
+        r"""Gets the name of this StatusAttribute.
 
         状态属性名称
 
@@ -83,7 +83,7 @@ class StatusAttribute:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StatusAttribute.
+        r"""Sets the name of this StatusAttribute.
 
         状态属性名称
 

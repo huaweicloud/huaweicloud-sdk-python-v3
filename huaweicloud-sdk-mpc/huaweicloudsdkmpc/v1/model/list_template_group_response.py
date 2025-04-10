@@ -28,7 +28,7 @@ class ListTemplateGroupResponse(SdkResponse):
     }
 
     def __init__(self, template_group_list=None, total=None):
-        """ListTemplateGroupResponse
+        r"""ListTemplateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @property
     def template_group_list(self):
-        """Gets the template_group_list of this ListTemplateGroupResponse.
+        r"""Gets the template_group_list of this ListTemplateGroupResponse.
 
         模板组信息列表。 
 
@@ -62,7 +62,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @template_group_list.setter
     def template_group_list(self, template_group_list):
-        """Sets the template_group_list of this ListTemplateGroupResponse.
+        r"""Sets the template_group_list of this ListTemplateGroupResponse.
 
         模板组信息列表。 
 
@@ -73,7 +73,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTemplateGroupResponse.
+        r"""Gets the total of this ListTemplateGroupResponse.
 
         转码模板组总数 
 
@@ -84,7 +84,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTemplateGroupResponse.
+        r"""Sets the total of this ListTemplateGroupResponse.
 
         转码模板组总数 
 

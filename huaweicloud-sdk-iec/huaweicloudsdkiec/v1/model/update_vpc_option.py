@@ -27,7 +27,7 @@ class UpdateVpcOption:
     }
 
     def __init__(self, name=None, cidr=None):
-        """UpdateVpcOption
+        r"""UpdateVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateVpcOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpcOption.
+        r"""Gets the name of this UpdateVpcOption.
 
         虚拟私有云名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的VPC不允许重名
 
@@ -61,7 +61,7 @@ class UpdateVpcOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpcOption.
+        r"""Sets the name of this UpdateVpcOption.
 
         虚拟私有云名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的VPC不允许重名
 
@@ -72,7 +72,7 @@ class UpdateVpcOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this UpdateVpcOption.
+        r"""Gets the cidr of this UpdateVpcOption.
 
         虚拟私有云下可用子网的范围。  约束条件：  SYSTEM模式，cidr取值范围：10.0.0.0/8~10.255.0.0/16或者172.16.0.0/12 ~ 172.31.0.0/16或者192.168.0.0/16 。 [CUSTOMER模式，cidr的取值范围：10.0.0.0/8~10.255.255.0/24或者172.16.0.0/12 ~ 172.32.255.0/24或者192.168.0.0/16~192.168.255.0/24。](tag:internal)
 
@@ -83,7 +83,7 @@ class UpdateVpcOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this UpdateVpcOption.
+        r"""Sets the cidr of this UpdateVpcOption.
 
         虚拟私有云下可用子网的范围。  约束条件：  SYSTEM模式，cidr取值范围：10.0.0.0/8~10.255.0.0/16或者172.16.0.0/12 ~ 172.31.0.0/16或者192.168.0.0/16 。 [CUSTOMER模式，cidr的取值范围：10.0.0.0/8~10.255.255.0/24或者172.16.0.0/12 ~ 172.32.255.0/24或者192.168.0.0/16~192.168.255.0/24。](tag:internal)
 

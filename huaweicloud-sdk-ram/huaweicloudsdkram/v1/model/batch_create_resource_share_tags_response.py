@@ -24,7 +24,7 @@ class BatchCreateResourceShareTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateResourceShareTagsResponse
+        r"""BatchCreateResourceShareTagsResponse
 
         The model defined in huaweicloud sdk
 

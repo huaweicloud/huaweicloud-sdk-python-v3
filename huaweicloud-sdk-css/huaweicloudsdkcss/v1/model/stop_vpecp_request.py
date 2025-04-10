@@ -25,7 +25,7 @@ class StopVpecpRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopVpecpRequest
+        r"""StopVpecpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopVpecpRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopVpecpRequest.
+        r"""Gets the cluster_id of this StopVpecpRequest.
 
         指定待关闭终端节点的集群ID。
 
@@ -53,7 +53,7 @@ class StopVpecpRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopVpecpRequest.
+        r"""Sets the cluster_id of this StopVpecpRequest.
 
         指定待关闭终端节点的集群ID。
 

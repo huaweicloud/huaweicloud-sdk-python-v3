@@ -35,7 +35,7 @@ class SmartDocumentRecognizerLayoutBlock:
     }
 
     def __init__(self, location=None, type=None, text=None, words_ids=None, table_id=None, form_id=None):
-        """SmartDocumentRecognizerLayoutBlock
+        r"""SmartDocumentRecognizerLayoutBlock
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @property
     def location(self):
-        """Gets the location of this SmartDocumentRecognizerLayoutBlock.
+        r"""Gets the location of this SmartDocumentRecognizerLayoutBlock.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -89,7 +89,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this SmartDocumentRecognizerLayoutBlock.
+        r"""Sets the location of this SmartDocumentRecognizerLayoutBlock.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -100,7 +100,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @property
     def type(self):
-        """Gets the type of this SmartDocumentRecognizerLayoutBlock.
+        r"""Gets the type of this SmartDocumentRecognizerLayoutBlock.
 
         文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
 
@@ -111,7 +111,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SmartDocumentRecognizerLayoutBlock.
+        r"""Sets the type of this SmartDocumentRecognizerLayoutBlock.
 
         文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
 
@@ -122,7 +122,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @property
     def text(self):
-        """Gets the text of this SmartDocumentRecognizerLayoutBlock.
+        r"""Gets the text of this SmartDocumentRecognizerLayoutBlock.
 
         文档区域文字内容。对于表格与图像，不返回其中的文字内容。 
 
@@ -133,7 +133,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this SmartDocumentRecognizerLayoutBlock.
+        r"""Sets the text of this SmartDocumentRecognizerLayoutBlock.
 
         文档区域文字内容。对于表格与图像，不返回其中的文字内容。 
 
@@ -144,7 +144,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @property
     def words_ids(self):
-        """Gets the words_ids of this SmartDocumentRecognizerLayoutBlock.
+        r"""Gets the words_ids of this SmartDocumentRecognizerLayoutBlock.
 
         文字识别结果索引列表，表示ocr_result的words_block_list中哪些文本框位于该文档区域内。 
 
@@ -155,7 +155,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @words_ids.setter
     def words_ids(self, words_ids):
-        """Sets the words_ids of this SmartDocumentRecognizerLayoutBlock.
+        r"""Sets the words_ids of this SmartDocumentRecognizerLayoutBlock.
 
         文字识别结果索引列表，表示ocr_result的words_block_list中哪些文本框位于该文档区域内。 
 
@@ -166,7 +166,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @property
     def table_id(self):
-        """Gets the table_id of this SmartDocumentRecognizerLayoutBlock.
+        r"""Gets the table_id of this SmartDocumentRecognizerLayoutBlock.
 
         仅当type为\"table\"且入参table为True时返回该字段，表示当前逻辑表格区域对应table_result中哪一项识别结果。 
 
@@ -177,7 +177,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this SmartDocumentRecognizerLayoutBlock.
+        r"""Sets the table_id of this SmartDocumentRecognizerLayoutBlock.
 
         仅当type为\"table\"且入参table为True时返回该字段，表示当前逻辑表格区域对应table_result中哪一项识别结果。 
 
@@ -188,7 +188,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @property
     def form_id(self):
-        """Gets the form_id of this SmartDocumentRecognizerLayoutBlock.
+        r"""Gets the form_id of this SmartDocumentRecognizerLayoutBlock.
 
         仅当type为\"form\"且入参form为True时返回该字段，表示当前有线表单区域对应form_result中哪一项识别结果。 
 
@@ -199,7 +199,7 @@ class SmartDocumentRecognizerLayoutBlock:
 
     @form_id.setter
     def form_id(self, form_id):
-        """Sets the form_id of this SmartDocumentRecognizerLayoutBlock.
+        r"""Sets the form_id of this SmartDocumentRecognizerLayoutBlock.
 
         仅当type为\"form\"且入参form为True时返回该字段，表示当前有线表单区域对应form_result中哪一项识别结果。 
 

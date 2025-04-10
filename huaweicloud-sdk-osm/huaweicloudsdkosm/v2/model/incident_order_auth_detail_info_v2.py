@@ -37,7 +37,7 @@ class IncidentOrderAuthDetailInfoV2:
     }
 
     def __init__(self, id=None, port=None, account=None, type=None, instance_id=None, instance_name=None, region_id=None):
-        """IncidentOrderAuthDetailInfoV2
+        r"""IncidentOrderAuthDetailInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def id(self):
-        """Gets the id of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the id of this IncidentOrderAuthDetailInfoV2.
 
         授权详情id
 
@@ -96,7 +96,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the id of this IncidentOrderAuthDetailInfoV2.
 
         授权详情id
 
@@ -107,7 +107,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def port(self):
-        """Gets the port of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the port of this IncidentOrderAuthDetailInfoV2.
 
         端口
 
@@ -118,7 +118,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the port of this IncidentOrderAuthDetailInfoV2.
 
         端口
 
@@ -129,7 +129,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def account(self):
-        """Gets the account of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the account of this IncidentOrderAuthDetailInfoV2.
 
         账户
 
@@ -140,7 +140,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the account of this IncidentOrderAuthDetailInfoV2.
 
         账户
 
@@ -151,7 +151,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def type(self):
-        """Gets the type of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the type of this IncidentOrderAuthDetailInfoV2.
 
         授权详情类型，0控制台 1主机资源
 
@@ -162,7 +162,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the type of this IncidentOrderAuthDetailInfoV2.
 
         授权详情类型，0控制台 1主机资源
 
@@ -173,7 +173,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the instance_id of this IncidentOrderAuthDetailInfoV2.
 
         实例id
 
@@ -184,7 +184,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the instance_id of this IncidentOrderAuthDetailInfoV2.
 
         实例id
 
@@ -195,7 +195,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the instance_name of this IncidentOrderAuthDetailInfoV2.
 
         实例名称
 
@@ -206,7 +206,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the instance_name of this IncidentOrderAuthDetailInfoV2.
 
         实例名称
 
@@ -217,7 +217,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @property
     def region_id(self):
-        """Gets the region_id of this IncidentOrderAuthDetailInfoV2.
+        r"""Gets the region_id of this IncidentOrderAuthDetailInfoV2.
 
         区域id
 
@@ -228,7 +228,7 @@ class IncidentOrderAuthDetailInfoV2:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this IncidentOrderAuthDetailInfoV2.
+        r"""Sets the region_id of this IncidentOrderAuthDetailInfoV2.
 
         区域id
 

@@ -29,7 +29,7 @@ class GetMetricsRequest:
     }
 
     def __init__(self, type=None, transform=None, aggregate=None):
-        """GetMetricsRequest
+        r"""GetMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class GetMetricsRequest:
 
     @property
     def type(self):
-        """Gets the type of this GetMetricsRequest.
+        r"""Gets the type of this GetMetricsRequest.
 
         查询类型
 
@@ -67,7 +67,7 @@ class GetMetricsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GetMetricsRequest.
+        r"""Sets the type of this GetMetricsRequest.
 
         查询类型
 
@@ -78,7 +78,7 @@ class GetMetricsRequest:
 
     @property
     def transform(self):
-        """Gets the transform of this GetMetricsRequest.
+        r"""Gets the transform of this GetMetricsRequest.
 
         :return: The transform of this GetMetricsRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformMetrics`
@@ -87,7 +87,7 @@ class GetMetricsRequest:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this GetMetricsRequest.
+        r"""Sets the transform of this GetMetricsRequest.
 
         :param transform: The transform of this GetMetricsRequest.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetrics`
@@ -96,7 +96,7 @@ class GetMetricsRequest:
 
     @property
     def aggregate(self):
-        """Gets the aggregate of this GetMetricsRequest.
+        r"""Gets the aggregate of this GetMetricsRequest.
 
         :return: The aggregate of this GetMetricsRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetrics`
@@ -105,7 +105,7 @@ class GetMetricsRequest:
 
     @aggregate.setter
     def aggregate(self, aggregate):
-        """Sets the aggregate of this GetMetricsRequest.
+        r"""Sets the aggregate of this GetMetricsRequest.
 
         :param aggregate: The aggregate of this GetMetricsRequest.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetrics`

@@ -41,7 +41,7 @@ class GetJobInfoResponseBodyJob:
     }
 
     def __init__(self, id=None, name=None, status=None, created=None, ended=None, process=None, instance=None, entities=None, fail_reason=None):
-        """GetJobInfoResponseBodyJob
+        r"""GetJobInfoResponseBodyJob
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def id(self):
-        """Gets the id of this GetJobInfoResponseBodyJob.
+        r"""Gets the id of this GetJobInfoResponseBodyJob.
 
         任务ID。
 
@@ -105,7 +105,7 @@ class GetJobInfoResponseBodyJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetJobInfoResponseBodyJob.
+        r"""Sets the id of this GetJobInfoResponseBodyJob.
 
         任务ID。
 
@@ -116,7 +116,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def name(self):
-        """Gets the name of this GetJobInfoResponseBodyJob.
+        r"""Gets the name of this GetJobInfoResponseBodyJob.
 
         任务名称。
 
@@ -127,7 +127,7 @@ class GetJobInfoResponseBodyJob:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetJobInfoResponseBodyJob.
+        r"""Sets the name of this GetJobInfoResponseBodyJob.
 
         任务名称。
 
@@ -138,7 +138,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def status(self):
-        """Gets the status of this GetJobInfoResponseBodyJob.
+        r"""Gets the status of this GetJobInfoResponseBodyJob.
 
         任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -149,7 +149,7 @@ class GetJobInfoResponseBodyJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetJobInfoResponseBodyJob.
+        r"""Sets the status of this GetJobInfoResponseBodyJob.
 
         任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -160,7 +160,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def created(self):
-        """Gets the created of this GetJobInfoResponseBodyJob.
+        r"""Gets the created of this GetJobInfoResponseBodyJob.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -171,7 +171,7 @@ class GetJobInfoResponseBodyJob:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetJobInfoResponseBodyJob.
+        r"""Sets the created of this GetJobInfoResponseBodyJob.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -182,7 +182,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def ended(self):
-        """Gets the ended of this GetJobInfoResponseBodyJob.
+        r"""Gets the ended of this GetJobInfoResponseBodyJob.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -193,7 +193,7 @@ class GetJobInfoResponseBodyJob:
 
     @ended.setter
     def ended(self, ended):
-        """Sets the ended of this GetJobInfoResponseBodyJob.
+        r"""Sets the ended of this GetJobInfoResponseBodyJob.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -204,7 +204,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def process(self):
-        """Gets the process of this GetJobInfoResponseBodyJob.
+        r"""Gets the process of this GetJobInfoResponseBodyJob.
 
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回“”。
 
@@ -215,7 +215,7 @@ class GetJobInfoResponseBodyJob:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this GetJobInfoResponseBodyJob.
+        r"""Sets the process of this GetJobInfoResponseBodyJob.
 
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回“”。
 
@@ -226,7 +226,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def instance(self):
-        """Gets the instance of this GetJobInfoResponseBodyJob.
+        r"""Gets the instance of this GetJobInfoResponseBodyJob.
 
         :return: The instance of this GetJobInfoResponseBodyJob.
         :rtype: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
@@ -235,7 +235,7 @@ class GetJobInfoResponseBodyJob:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this GetJobInfoResponseBodyJob.
+        r"""Sets the instance of this GetJobInfoResponseBodyJob.
 
         :param instance: The instance of this GetJobInfoResponseBodyJob.
         :type instance: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
@@ -244,7 +244,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def entities(self):
-        """Gets the entities of this GetJobInfoResponseBodyJob.
+        r"""Gets the entities of this GetJobInfoResponseBodyJob.
 
         根据不同的任务，显示不同的内容。
 
@@ -255,7 +255,7 @@ class GetJobInfoResponseBodyJob:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this GetJobInfoResponseBodyJob.
+        r"""Sets the entities of this GetJobInfoResponseBodyJob.
 
         根据不同的任务，显示不同的内容。
 
@@ -266,7 +266,7 @@ class GetJobInfoResponseBodyJob:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this GetJobInfoResponseBodyJob.
+        r"""Gets the fail_reason of this GetJobInfoResponseBodyJob.
 
         任务执行失败时的错误信息。
 
@@ -277,7 +277,7 @@ class GetJobInfoResponseBodyJob:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this GetJobInfoResponseBodyJob.
+        r"""Sets the fail_reason of this GetJobInfoResponseBodyJob.
 
         任务执行失败时的错误信息。
 

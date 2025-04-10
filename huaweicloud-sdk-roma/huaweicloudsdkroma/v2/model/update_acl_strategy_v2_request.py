@@ -29,7 +29,7 @@ class UpdateAclStrategyV2Request:
     }
 
     def __init__(self, instance_id=None, acl_id=None, body=None):
-        """UpdateAclStrategyV2Request
+        r"""UpdateAclStrategyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAclStrategyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAclStrategyV2Request.
+        r"""Gets the instance_id of this UpdateAclStrategyV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateAclStrategyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAclStrategyV2Request.
+        r"""Sets the instance_id of this UpdateAclStrategyV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateAclStrategyV2Request:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this UpdateAclStrategyV2Request.
+        r"""Gets the acl_id of this UpdateAclStrategyV2Request.
 
         ACL策略的编号
 
@@ -88,7 +88,7 @@ class UpdateAclStrategyV2Request:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this UpdateAclStrategyV2Request.
+        r"""Sets the acl_id of this UpdateAclStrategyV2Request.
 
         ACL策略的编号
 
@@ -99,7 +99,7 @@ class UpdateAclStrategyV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAclStrategyV2Request.
+        r"""Gets the body of this UpdateAclStrategyV2Request.
 
         :return: The body of this UpdateAclStrategyV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiAclCreate`
@@ -108,7 +108,7 @@ class UpdateAclStrategyV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAclStrategyV2Request.
+        r"""Sets the body of this UpdateAclStrategyV2Request.
 
         :param body: The body of this UpdateAclStrategyV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.ApiAclCreate`

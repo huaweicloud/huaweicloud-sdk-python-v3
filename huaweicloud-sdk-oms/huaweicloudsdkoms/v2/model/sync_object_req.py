@@ -25,7 +25,7 @@ class SyncObjectReq:
     }
 
     def __init__(self, object_keys=None):
-        """SyncObjectReq
+        r"""SyncObjectReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SyncObjectReq:
 
     @property
     def object_keys(self):
-        """Gets the object_keys of this SyncObjectReq.
+        r"""Gets the object_keys of this SyncObjectReq.
 
         待同步对象的列表,其中待同步对象最大数量为10,列表中object_key为URL编码处理后的结果
 
@@ -53,7 +53,7 @@ class SyncObjectReq:
 
     @object_keys.setter
     def object_keys(self, object_keys):
-        """Sets the object_keys of this SyncObjectReq.
+        r"""Sets the object_keys of this SyncObjectReq.
 
         待同步对象的列表,其中待同步对象最大数量为10,列表中object_key为URL编码处理后的结果
 

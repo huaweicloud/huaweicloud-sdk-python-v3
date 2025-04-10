@@ -26,7 +26,7 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ExecuteRedistributionClusterResponse
+        r"""ExecuteRedistributionClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ExecuteRedistributionClusterResponse.
+        r"""Gets the body of this ExecuteRedistributionClusterResponse.
 
         :return: The body of this ExecuteRedistributionClusterResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteRedistributionClusterResponse.
+        r"""Sets the body of this ExecuteRedistributionClusterResponse.
 
         :param body: The body of this ExecuteRedistributionClusterResponse.
         :type body: str

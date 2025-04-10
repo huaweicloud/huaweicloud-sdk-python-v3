@@ -24,7 +24,7 @@ class BatchDeleteScheduledTasksResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteScheduledTasksResponse
+        r"""BatchDeleteScheduledTasksResponse
 
         The model defined in huaweicloud sdk
 

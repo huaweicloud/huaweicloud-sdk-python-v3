@@ -27,7 +27,7 @@ class AccessControlRule:
     }
 
     def __init__(self, ip=None, description=None):
-        """AccessControlRule
+        r"""AccessControlRule
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AccessControlRule:
 
     @property
     def ip(self):
-        """Gets the ip of this AccessControlRule.
+        r"""Gets the ip of this AccessControlRule.
 
         IP地址或网段。
 
@@ -60,7 +60,7 @@ class AccessControlRule:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this AccessControlRule.
+        r"""Sets the ip of this AccessControlRule.
 
         IP地址或网段。
 
@@ -71,7 +71,7 @@ class AccessControlRule:
 
     @property
     def description(self):
-        """Gets the description of this AccessControlRule.
+        r"""Gets the description of this AccessControlRule.
 
         备注。备注长度范围是0到50个字符，不能包含<>。
 
@@ -82,7 +82,7 @@ class AccessControlRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AccessControlRule.
+        r"""Sets the description of this AccessControlRule.
 
         备注。备注长度范围是0到50个字符，不能包含<>。
 

@@ -49,7 +49,7 @@ class ListSecurityPermissionSetsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, name=None, parent_id=None, type_filter=None, manager_id=None, manager_name=None, manager_type=None, datasource_type=None, sync_status=None, order_by=None, order_by_asc=None):
-        """ListSecurityPermissionSetsRequest
+        r"""ListSecurityPermissionSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityPermissionSetsRequest.
+        r"""Gets the workspace of this ListSecurityPermissionSetsRequest.
 
         DataArts Studio工作空间ID
 
@@ -137,7 +137,7 @@ class ListSecurityPermissionSetsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityPermissionSetsRequest.
+        r"""Sets the workspace of this ListSecurityPermissionSetsRequest.
 
         DataArts Studio工作空间ID
 
@@ -148,7 +148,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityPermissionSetsRequest.
+        r"""Gets the limit of this ListSecurityPermissionSetsRequest.
 
         limit
 
@@ -159,7 +159,7 @@ class ListSecurityPermissionSetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityPermissionSetsRequest.
+        r"""Sets the limit of this ListSecurityPermissionSetsRequest.
 
         limit
 
@@ -170,7 +170,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityPermissionSetsRequest.
+        r"""Gets the offset of this ListSecurityPermissionSetsRequest.
 
         offset
 
@@ -181,7 +181,7 @@ class ListSecurityPermissionSetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityPermissionSetsRequest.
+        r"""Sets the offset of this ListSecurityPermissionSetsRequest.
 
         offset
 
@@ -192,7 +192,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecurityPermissionSetsRequest.
+        r"""Gets the name of this ListSecurityPermissionSetsRequest.
 
         名称
 
@@ -203,7 +203,7 @@ class ListSecurityPermissionSetsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecurityPermissionSetsRequest.
+        r"""Sets the name of this ListSecurityPermissionSetsRequest.
 
         名称
 
@@ -214,7 +214,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListSecurityPermissionSetsRequest.
+        r"""Gets the parent_id of this ListSecurityPermissionSetsRequest.
 
         父权限集id
 
@@ -225,7 +225,7 @@ class ListSecurityPermissionSetsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListSecurityPermissionSetsRequest.
+        r"""Sets the parent_id of this ListSecurityPermissionSetsRequest.
 
         父权限集id
 
@@ -236,7 +236,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def type_filter(self):
-        """Gets the type_filter of this ListSecurityPermissionSetsRequest.
+        r"""Gets the type_filter of this ListSecurityPermissionSetsRequest.
 
         权限集类型过滤,TOP_PERMISSION_SET,SUB_PERMISSION_SET,ALL_PERMISSION_SET
 
@@ -247,7 +247,7 @@ class ListSecurityPermissionSetsRequest:
 
     @type_filter.setter
     def type_filter(self, type_filter):
-        """Sets the type_filter of this ListSecurityPermissionSetsRequest.
+        r"""Sets the type_filter of this ListSecurityPermissionSetsRequest.
 
         权限集类型过滤,TOP_PERMISSION_SET,SUB_PERMISSION_SET,ALL_PERMISSION_SET
 
@@ -258,7 +258,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def manager_id(self):
-        """Gets the manager_id of this ListSecurityPermissionSetsRequest.
+        r"""Gets the manager_id of this ListSecurityPermissionSetsRequest.
 
         管理员id
 
@@ -269,7 +269,7 @@ class ListSecurityPermissionSetsRequest:
 
     @manager_id.setter
     def manager_id(self, manager_id):
-        """Sets the manager_id of this ListSecurityPermissionSetsRequest.
+        r"""Sets the manager_id of this ListSecurityPermissionSetsRequest.
 
         管理员id
 
@@ -280,7 +280,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def manager_name(self):
-        """Gets the manager_name of this ListSecurityPermissionSetsRequest.
+        r"""Gets the manager_name of this ListSecurityPermissionSetsRequest.
 
         管理员名称
 
@@ -291,7 +291,7 @@ class ListSecurityPermissionSetsRequest:
 
     @manager_name.setter
     def manager_name(self, manager_name):
-        """Sets the manager_name of this ListSecurityPermissionSetsRequest.
+        r"""Sets the manager_name of this ListSecurityPermissionSetsRequest.
 
         管理员名称
 
@@ -302,7 +302,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def manager_type(self):
-        """Gets the manager_type of this ListSecurityPermissionSetsRequest.
+        r"""Gets the manager_type of this ListSecurityPermissionSetsRequest.
 
         管理员类型,USER,USER_GROUP
 
@@ -313,7 +313,7 @@ class ListSecurityPermissionSetsRequest:
 
     @manager_type.setter
     def manager_type(self, manager_type):
-        """Sets the manager_type of this ListSecurityPermissionSetsRequest.
+        r"""Sets the manager_type of this ListSecurityPermissionSetsRequest.
 
         管理员类型,USER,USER_GROUP
 
@@ -324,7 +324,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this ListSecurityPermissionSetsRequest.
+        r"""Gets the datasource_type of this ListSecurityPermissionSetsRequest.
 
         数据源类型,HIVE
 
@@ -335,7 +335,7 @@ class ListSecurityPermissionSetsRequest:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this ListSecurityPermissionSetsRequest.
+        r"""Sets the datasource_type of this ListSecurityPermissionSetsRequest.
 
         数据源类型,HIVE
 
@@ -346,7 +346,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ListSecurityPermissionSetsRequest.
+        r"""Gets the sync_status of this ListSecurityPermissionSetsRequest.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -357,7 +357,7 @@ class ListSecurityPermissionSetsRequest:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ListSecurityPermissionSetsRequest.
+        r"""Sets the sync_status of this ListSecurityPermissionSetsRequest.
 
         同步状态,UNKNOWN,NOT_SYNC,SYNCING,SYNC_SUCCESS,SYNC_FAIL
 
@@ -368,7 +368,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityPermissionSetsRequest.
+        r"""Gets the order_by of this ListSecurityPermissionSetsRequest.
 
         排序参数, NAME,CREATE_TIME,UPDATE_TIME
 
@@ -379,7 +379,7 @@ class ListSecurityPermissionSetsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityPermissionSetsRequest.
+        r"""Sets the order_by of this ListSecurityPermissionSetsRequest.
 
         排序参数, NAME,CREATE_TIME,UPDATE_TIME
 
@@ -390,7 +390,7 @@ class ListSecurityPermissionSetsRequest:
 
     @property
     def order_by_asc(self):
-        """Gets the order_by_asc of this ListSecurityPermissionSetsRequest.
+        r"""Gets the order_by_asc of this ListSecurityPermissionSetsRequest.
 
         是否升序（仅指定排序参数时有效）
 
@@ -401,7 +401,7 @@ class ListSecurityPermissionSetsRequest:
 
     @order_by_asc.setter
     def order_by_asc(self, order_by_asc):
-        """Sets the order_by_asc of this ListSecurityPermissionSetsRequest.
+        r"""Sets the order_by_asc of this ListSecurityPermissionSetsRequest.
 
         是否升序（仅指定排序参数时有效）
 

@@ -24,7 +24,7 @@ class DeleteSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSubscriptionResponse
+        r"""DeleteSubscriptionResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class DeleteGaussMySqlConfigurationRequest:
     }
 
     def __init__(self, x_language=None, configuration_id=None):
-        """DeleteGaussMySqlConfigurationRequest
+        r"""DeleteGaussMySqlConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteGaussMySqlConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteGaussMySqlConfigurationRequest.
+        r"""Gets the x_language of this DeleteGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class DeleteGaussMySqlConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteGaussMySqlConfigurationRequest.
+        r"""Sets the x_language of this DeleteGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class DeleteGaussMySqlConfigurationRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this DeleteGaussMySqlConfigurationRequest.
+        r"""Gets the configuration_id of this DeleteGaussMySqlConfigurationRequest.
 
         参数模板ID。
 
@@ -82,7 +82,7 @@ class DeleteGaussMySqlConfigurationRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this DeleteGaussMySqlConfigurationRequest.
+        r"""Sets the configuration_id of this DeleteGaussMySqlConfigurationRequest.
 
         参数模板ID。
 

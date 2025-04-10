@@ -33,7 +33,7 @@ class UpdateTestCaseRequestBody:
     }
 
     def __init__(self, name=None, service_id=None, rank_id=None, testcase_number=None, extend_info=None):
-        """UpdateTestCaseRequestBody
+        r"""UpdateTestCaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UpdateTestCaseRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTestCaseRequestBody.
+        r"""Gets the name of this UpdateTestCaseRequestBody.
 
         页面上显示的用例名称，长度为[3-128]位字符
 
@@ -80,7 +80,7 @@ class UpdateTestCaseRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTestCaseRequestBody.
+        r"""Sets the name of this UpdateTestCaseRequestBody.
 
         页面上显示的用例名称，长度为[3-128]位字符
 
@@ -91,7 +91,7 @@ class UpdateTestCaseRequestBody:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateTestCaseRequestBody.
+        r"""Gets the service_id of this UpdateTestCaseRequestBody.
 
         注册测试类型服务接口返回的服务id，取值范围为10-9999
 
@@ -102,7 +102,7 @@ class UpdateTestCaseRequestBody:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateTestCaseRequestBody.
+        r"""Sets the service_id of this UpdateTestCaseRequestBody.
 
         注册测试类型服务接口返回的服务id，取值范围为10-9999
 
@@ -113,7 +113,7 @@ class UpdateTestCaseRequestBody:
 
     @property
     def rank_id(self):
-        """Gets the rank_id of this UpdateTestCaseRequestBody.
+        r"""Gets the rank_id of this UpdateTestCaseRequestBody.
 
         测试用例等级，可选值为[0,1,2,3,4]，不填时默认为2
 
@@ -124,7 +124,7 @@ class UpdateTestCaseRequestBody:
 
     @rank_id.setter
     def rank_id(self, rank_id):
-        """Sets the rank_id of this UpdateTestCaseRequestBody.
+        r"""Sets the rank_id of this UpdateTestCaseRequestBody.
 
         测试用例等级，可选值为[0,1,2,3,4]，不填时默认为2
 
@@ -135,7 +135,7 @@ class UpdateTestCaseRequestBody:
 
     @property
     def testcase_number(self):
-        """Gets the testcase_number of this UpdateTestCaseRequestBody.
+        r"""Gets the testcase_number of this UpdateTestCaseRequestBody.
 
         用例编号，不填该值时会自动生成，长度为[3-128]位字符
 
@@ -146,7 +146,7 @@ class UpdateTestCaseRequestBody:
 
     @testcase_number.setter
     def testcase_number(self, testcase_number):
-        """Sets the testcase_number of this UpdateTestCaseRequestBody.
+        r"""Sets the testcase_number of this UpdateTestCaseRequestBody.
 
         用例编号，不填该值时会自动生成，长度为[3-128]位字符
 
@@ -157,7 +157,7 @@ class UpdateTestCaseRequestBody:
 
     @property
     def extend_info(self):
-        """Gets the extend_info of this UpdateTestCaseRequestBody.
+        r"""Gets the extend_info of this UpdateTestCaseRequestBody.
 
         :return: The extend_info of this UpdateTestCaseRequestBody.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`
@@ -166,7 +166,7 @@ class UpdateTestCaseRequestBody:
 
     @extend_info.setter
     def extend_info(self, extend_info):
-        """Sets the extend_info of this UpdateTestCaseRequestBody.
+        r"""Sets the extend_info of this UpdateTestCaseRequestBody.
 
         :param extend_info: The extend_info of this UpdateTestCaseRequestBody.
         :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`

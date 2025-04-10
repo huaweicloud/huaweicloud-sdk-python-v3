@@ -31,7 +31,7 @@ class OnePermRuleResponseInfo:
     }
 
     def __init__(self, id=None, ip_cidr=None, rw_type=None, user_type=None):
-        """OnePermRuleResponseInfo
+        r"""OnePermRuleResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OnePermRuleResponseInfo:
 
     @property
     def id(self):
-        """Gets the id of this OnePermRuleResponseInfo.
+        r"""Gets the id of this OnePermRuleResponseInfo.
 
         权限规格的id
 
@@ -71,7 +71,7 @@ class OnePermRuleResponseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OnePermRuleResponseInfo.
+        r"""Sets the id of this OnePermRuleResponseInfo.
 
         权限规格的id
 
@@ -82,7 +82,7 @@ class OnePermRuleResponseInfo:
 
     @property
     def ip_cidr(self):
-        """Gets the ip_cidr of this OnePermRuleResponseInfo.
+        r"""Gets the ip_cidr of this OnePermRuleResponseInfo.
 
         授权对象的IP地址或网段
 
@@ -93,7 +93,7 @@ class OnePermRuleResponseInfo:
 
     @ip_cidr.setter
     def ip_cidr(self, ip_cidr):
-        """Sets the ip_cidr of this OnePermRuleResponseInfo.
+        r"""Sets the ip_cidr of this OnePermRuleResponseInfo.
 
         授权对象的IP地址或网段
 
@@ -104,7 +104,7 @@ class OnePermRuleResponseInfo:
 
     @property
     def rw_type(self):
-        """Gets the rw_type of this OnePermRuleResponseInfo.
+        r"""Gets the rw_type of this OnePermRuleResponseInfo.
 
         授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
@@ -115,7 +115,7 @@ class OnePermRuleResponseInfo:
 
     @rw_type.setter
     def rw_type(self, rw_type):
-        """Sets the rw_type of this OnePermRuleResponseInfo.
+        r"""Sets the rw_type of this OnePermRuleResponseInfo.
 
         授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
@@ -126,7 +126,7 @@ class OnePermRuleResponseInfo:
 
     @property
     def user_type(self):
-        """Gets the user_type of this OnePermRuleResponseInfo.
+        r"""Gets the user_type of this OnePermRuleResponseInfo.
 
         授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。'
 
@@ -137,7 +137,7 @@ class OnePermRuleResponseInfo:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this OnePermRuleResponseInfo.
+        r"""Sets the user_type of this OnePermRuleResponseInfo.
 
         授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。'
 

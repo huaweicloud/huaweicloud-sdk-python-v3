@@ -23,7 +23,7 @@ class ListClusterAllNodeLabelRequest:
     }
 
     def __init__(self):
-        """ListClusterAllNodeLabelRequest
+        r"""ListClusterAllNodeLabelRequest
 
         The model defined in huaweicloud sdk
 

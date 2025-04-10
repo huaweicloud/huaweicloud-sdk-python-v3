@@ -39,7 +39,7 @@ class SliDetail:
     }
 
     def __init__(self, id=None, sort_id=None, sli_type=None, name=None, description=None, comparison_operator=None, numerical_value=None, unit=None):
-        """SliDetail
+        r"""SliDetail
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class SliDetail:
 
     @property
     def id(self):
-        """Gets the id of this SliDetail.
+        r"""Gets the id of this SliDetail.
 
         SLi的ID
 
@@ -97,7 +97,7 @@ class SliDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SliDetail.
+        r"""Sets the id of this SliDetail.
 
         SLi的ID
 
@@ -108,7 +108,7 @@ class SliDetail:
 
     @property
     def sort_id(self):
-        """Gets the sort_id of this SliDetail.
+        r"""Gets the sort_id of this SliDetail.
 
         顺序
 
@@ -119,7 +119,7 @@ class SliDetail:
 
     @sort_id.setter
     def sort_id(self, sort_id):
-        """Sets the sort_id of this SliDetail.
+        r"""Sets the sort_id of this SliDetail.
 
         顺序
 
@@ -130,7 +130,7 @@ class SliDetail:
 
     @property
     def sli_type(self):
-        """Gets the sli_type of this SliDetail.
+        r"""Gets the sli_type of this SliDetail.
 
         SLI类型 REQUEST 请求型SLI指标 INSTANCES 实例型SLI指标
 
@@ -141,7 +141,7 @@ class SliDetail:
 
     @sli_type.setter
     def sli_type(self, sli_type):
-        """Sets the sli_type of this SliDetail.
+        r"""Sets the sli_type of this SliDetail.
 
         SLI类型 REQUEST 请求型SLI指标 INSTANCES 实例型SLI指标
 
@@ -152,7 +152,7 @@ class SliDetail:
 
     @property
     def name(self):
-        """Gets the name of this SliDetail.
+        r"""Gets the name of this SliDetail.
 
         SLI名称
 
@@ -163,7 +163,7 @@ class SliDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SliDetail.
+        r"""Sets the name of this SliDetail.
 
         SLI名称
 
@@ -174,7 +174,7 @@ class SliDetail:
 
     @property
     def description(self):
-        """Gets the description of this SliDetail.
+        r"""Gets the description of this SliDetail.
 
         SLI描述
 
@@ -185,7 +185,7 @@ class SliDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SliDetail.
+        r"""Sets the description of this SliDetail.
 
         SLI描述
 
@@ -196,7 +196,7 @@ class SliDetail:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this SliDetail.
+        r"""Gets the comparison_operator of this SliDetail.
 
         比较符 LESS_THAN 小于 LESS_THAN_OR_EQUAL_TO 小于等于 EQUALS 等于 GREATER_THAN 大于 GREATER_THAN_OR_EQUAL_TO 大于等于
 
@@ -207,7 +207,7 @@ class SliDetail:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this SliDetail.
+        r"""Sets the comparison_operator of this SliDetail.
 
         比较符 LESS_THAN 小于 LESS_THAN_OR_EQUAL_TO 小于等于 EQUALS 等于 GREATER_THAN 大于 GREATER_THAN_OR_EQUAL_TO 大于等于
 
@@ -218,7 +218,7 @@ class SliDetail:
 
     @property
     def numerical_value(self):
-        """Gets the numerical_value of this SliDetail.
+        r"""Gets the numerical_value of this SliDetail.
 
         数值
 
@@ -229,7 +229,7 @@ class SliDetail:
 
     @numerical_value.setter
     def numerical_value(self, numerical_value):
-        """Sets the numerical_value of this SliDetail.
+        r"""Sets the numerical_value of this SliDetail.
 
         数值
 
@@ -240,7 +240,7 @@ class SliDetail:
 
     @property
     def unit(self):
-        """Gets the unit of this SliDetail.
+        r"""Gets the unit of this SliDetail.
 
         单位 PERCENT_SIGN 百分号 MILLISECONDS 毫秒 NUMBER_OF_REQUESTS_PER_SECOND 每秒请求数量
 
@@ -251,7 +251,7 @@ class SliDetail:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this SliDetail.
+        r"""Sets the unit of this SliDetail.
 
         单位 PERCENT_SIGN 百分号 MILLISECONDS 毫秒 NUMBER_OF_REQUESTS_PER_SECOND 每秒请求数量
 

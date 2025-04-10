@@ -28,7 +28,7 @@ class BatchStopJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchStopJobsResponse
+        r"""BatchStopJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchStopJobsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchStopJobsResponse.
+        r"""Gets the results of this BatchStopJobsResponse.
 
         批量暂停返回列表
 
@@ -62,7 +62,7 @@ class BatchStopJobsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchStopJobsResponse.
+        r"""Sets the results of this BatchStopJobsResponse.
 
         批量暂停返回列表
 
@@ -73,7 +73,7 @@ class BatchStopJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchStopJobsResponse.
+        r"""Gets the count of this BatchStopJobsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchStopJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchStopJobsResponse.
+        r"""Sets the count of this BatchStopJobsResponse.
 
         总数
 

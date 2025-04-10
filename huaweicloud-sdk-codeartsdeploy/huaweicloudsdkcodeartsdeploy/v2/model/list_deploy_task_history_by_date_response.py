@@ -28,7 +28,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total_num=None):
-        """ListDeployTaskHistoryByDateResponse
+        r"""ListDeployTaskHistoryByDateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListDeployTaskHistoryByDateResponse.
+        r"""Gets the result of this ListDeployTaskHistoryByDateResponse.
 
         应用历史部署记录列表
 
@@ -62,7 +62,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListDeployTaskHistoryByDateResponse.
+        r"""Sets the result of this ListDeployTaskHistoryByDateResponse.
 
         应用历史部署记录列表
 
@@ -73,7 +73,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListDeployTaskHistoryByDateResponse.
+        r"""Gets the total_num of this ListDeployTaskHistoryByDateResponse.
 
         开始时间和结束时间内应用历史部署记录总数
 
@@ -84,7 +84,7 @@ class ListDeployTaskHistoryByDateResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListDeployTaskHistoryByDateResponse.
+        r"""Sets the total_num of this ListDeployTaskHistoryByDateResponse.
 
         开始时间和结束时间内应用历史部署记录总数
 

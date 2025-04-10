@@ -25,7 +25,7 @@ class NeutronShowSecurityGroupRequest:
     }
 
     def __init__(self, security_group_id=None):
-        """NeutronShowSecurityGroupRequest
+        r"""NeutronShowSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronShowSecurityGroupRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this NeutronShowSecurityGroupRequest.
+        r"""Gets the security_group_id of this NeutronShowSecurityGroupRequest.
 
         安全组ID
 
@@ -53,7 +53,7 @@ class NeutronShowSecurityGroupRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this NeutronShowSecurityGroupRequest.
+        r"""Sets the security_group_id of this NeutronShowSecurityGroupRequest.
 
         安全组ID
 

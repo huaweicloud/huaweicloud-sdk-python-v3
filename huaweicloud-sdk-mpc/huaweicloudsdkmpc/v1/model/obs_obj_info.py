@@ -31,7 +31,7 @@ class ObsObjInfo:
     }
 
     def __init__(self, bucket=None, location=None, object=None, file_name=None):
-        """ObsObjInfo
+        r"""ObsObjInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ObsObjInfo:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsObjInfo.
+        r"""Gets the bucket of this ObsObjInfo.
 
         OBS的bucket名称。 
 
@@ -72,7 +72,7 @@ class ObsObjInfo:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsObjInfo.
+        r"""Sets the bucket of this ObsObjInfo.
 
         OBS的bucket名称。 
 
@@ -83,7 +83,7 @@ class ObsObjInfo:
 
     @property
     def location(self):
-        """Gets the location of this ObsObjInfo.
+        r"""Gets the location of this ObsObjInfo.
 
         OBS桶所在的区域，且必须与使用的MPC区域保持一致。 
 
@@ -94,7 +94,7 @@ class ObsObjInfo:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ObsObjInfo.
+        r"""Sets the location of this ObsObjInfo.
 
         OBS桶所在的区域，且必须与使用的MPC区域保持一致。 
 
@@ -105,7 +105,7 @@ class ObsObjInfo:
 
     @property
     def object(self):
-        """Gets the object of this ObsObjInfo.
+        r"""Gets the object of this ObsObjInfo.
 
         OBS对象路径，遵守OSS Object定义。  - 当用于指示input时,需要指定到具体对象。 - 当用于指示output时, 只需指定到转码结果期望存放的路径。 
 
@@ -116,7 +116,7 @@ class ObsObjInfo:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this ObsObjInfo.
+        r"""Sets the object of this ObsObjInfo.
 
         OBS对象路径，遵守OSS Object定义。  - 当用于指示input时,需要指定到具体对象。 - 当用于指示output时, 只需指定到转码结果期望存放的路径。 
 
@@ -127,7 +127,7 @@ class ObsObjInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ObsObjInfo.
+        r"""Gets the file_name of this ObsObjInfo.
 
         文件名，仅用于转封装指定输出名称。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
 
@@ -138,7 +138,7 @@ class ObsObjInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ObsObjInfo.
+        r"""Sets the file_name of this ObsObjInfo.
 
         文件名，仅用于转封装指定输出名称。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
 

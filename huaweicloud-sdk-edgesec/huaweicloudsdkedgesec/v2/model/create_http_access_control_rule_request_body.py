@@ -39,7 +39,7 @@ class CreateHttpAccessControlRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, time=None, start=None, terminal=None, priority=None, conditions=None, action=None):
-        """CreateHttpAccessControlRuleRequestBody
+        r"""CreateHttpAccessControlRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the name of this CreateHttpAccessControlRuleRequestBody.
 
         规则名称
 
@@ -98,7 +98,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the name of this CreateHttpAccessControlRuleRequestBody.
 
         规则名称
 
@@ -109,7 +109,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the description of this CreateHttpAccessControlRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -120,7 +120,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the description of this CreateHttpAccessControlRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -131,7 +131,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def time(self):
-        """Gets the time of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the time of this CreateHttpAccessControlRuleRequestBody.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -142,7 +142,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the time of this CreateHttpAccessControlRuleRequestBody.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -153,7 +153,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def start(self):
-        """Gets the start of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the start of this CreateHttpAccessControlRuleRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -164,7 +164,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the start of this CreateHttpAccessControlRuleRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -175,7 +175,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the terminal of this CreateHttpAccessControlRuleRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -186,7 +186,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the terminal of this CreateHttpAccessControlRuleRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -197,7 +197,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the priority of this CreateHttpAccessControlRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -208,7 +208,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the priority of this CreateHttpAccessControlRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -219,7 +219,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the conditions of this CreateHttpAccessControlRuleRequestBody.
 
         命中条件
 
@@ -230,7 +230,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the conditions of this CreateHttpAccessControlRuleRequestBody.
 
         命中条件
 
@@ -241,7 +241,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CreateHttpAccessControlRuleRequestBody.
+        r"""Gets the action of this CreateHttpAccessControlRuleRequestBody.
 
         :return: The action of this CreateHttpAccessControlRuleRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -250,7 +250,7 @@ class CreateHttpAccessControlRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateHttpAccessControlRuleRequestBody.
+        r"""Sets the action of this CreateHttpAccessControlRuleRequestBody.
 
         :param action: The action of this CreateHttpAccessControlRuleRequestBody.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`

@@ -28,7 +28,7 @@ class CreateScoresResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """CreateScoresResponse
+        r"""CreateScoresResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateScoresResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateScoresResponse.
+        r"""Gets the error_code of this CreateScoresResponse.
 
         错误码
 
@@ -62,7 +62,7 @@ class CreateScoresResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateScoresResponse.
+        r"""Sets the error_code of this CreateScoresResponse.
 
         错误码
 
@@ -73,7 +73,7 @@ class CreateScoresResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateScoresResponse.
+        r"""Gets the error_msg of this CreateScoresResponse.
 
         错误描述
 
@@ -84,7 +84,7 @@ class CreateScoresResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateScoresResponse.
+        r"""Sets the error_msg of this CreateScoresResponse.
 
         错误描述
 

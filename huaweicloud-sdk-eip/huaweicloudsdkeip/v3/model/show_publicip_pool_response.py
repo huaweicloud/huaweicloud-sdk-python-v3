@@ -28,7 +28,7 @@ class ShowPublicipPoolResponse(SdkResponse):
     }
 
     def __init__(self, publicip_pool=None, request_id=None):
-        """ShowPublicipPoolResponse
+        r"""ShowPublicipPoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPublicipPoolResponse(SdkResponse):
 
     @property
     def publicip_pool(self):
-        """Gets the publicip_pool of this ShowPublicipPoolResponse.
+        r"""Gets the publicip_pool of this ShowPublicipPoolResponse.
 
         :return: The publicip_pool of this ShowPublicipPoolResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`
@@ -60,7 +60,7 @@ class ShowPublicipPoolResponse(SdkResponse):
 
     @publicip_pool.setter
     def publicip_pool(self, publicip_pool):
-        """Sets the publicip_pool of this ShowPublicipPoolResponse.
+        r"""Sets the publicip_pool of this ShowPublicipPoolResponse.
 
         :param publicip_pool: The publicip_pool of this ShowPublicipPoolResponse.
         :type publicip_pool: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`
@@ -69,7 +69,7 @@ class ShowPublicipPoolResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPublicipPoolResponse.
+        r"""Gets the request_id of this ShowPublicipPoolResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ShowPublicipPoolResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPublicipPoolResponse.
+        r"""Sets the request_id of this ShowPublicipPoolResponse.
 
         本次请求的编号
 

@@ -25,7 +25,7 @@ class BatchWriteKvRequestBody:
     }
 
     def __init__(self, table_opers=None):
-        """BatchWriteKvRequestBody
+        r"""BatchWriteKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchWriteKvRequestBody:
 
     @property
     def table_opers(self):
-        """Gets the table_opers of this BatchWriteKvRequestBody.
+        r"""Gets the table_opers of this BatchWriteKvRequestBody.
 
         行操作数组，可以是多个表的操作。
 
@@ -53,7 +53,7 @@ class BatchWriteKvRequestBody:
 
     @table_opers.setter
     def table_opers(self, table_opers):
-        """Sets the table_opers of this BatchWriteKvRequestBody.
+        r"""Sets the table_opers of this BatchWriteKvRequestBody.
 
         行操作数组，可以是多个表的操作。
 

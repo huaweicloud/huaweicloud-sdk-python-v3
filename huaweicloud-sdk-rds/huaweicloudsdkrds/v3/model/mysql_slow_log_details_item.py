@@ -47,7 +47,7 @@ class MysqlSlowLogDetailsItem:
     }
 
     def __init__(self, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, start_time=None, client_ip=None, line_num=None):
-        """MysqlSlowLogDetailsItem
+        r"""MysqlSlowLogDetailsItem
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def count(self):
-        """Gets the count of this MysqlSlowLogDetailsItem.
+        r"""Gets the count of this MysqlSlowLogDetailsItem.
 
         执行次数。
 
@@ -131,7 +131,7 @@ class MysqlSlowLogDetailsItem:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this MysqlSlowLogDetailsItem.
+        r"""Sets the count of this MysqlSlowLogDetailsItem.
 
         执行次数。
 
@@ -142,7 +142,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def time(self):
-        """Gets the time of this MysqlSlowLogDetailsItem.
+        r"""Gets the time of this MysqlSlowLogDetailsItem.
 
         执行时间。
 
@@ -153,7 +153,7 @@ class MysqlSlowLogDetailsItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this MysqlSlowLogDetailsItem.
+        r"""Sets the time of this MysqlSlowLogDetailsItem.
 
         执行时间。
 
@@ -164,7 +164,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this MysqlSlowLogDetailsItem.
+        r"""Gets the lock_time of this MysqlSlowLogDetailsItem.
 
         等待锁时间。mysql支持
 
@@ -175,7 +175,7 @@ class MysqlSlowLogDetailsItem:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this MysqlSlowLogDetailsItem.
+        r"""Sets the lock_time of this MysqlSlowLogDetailsItem.
 
         等待锁时间。mysql支持
 
@@ -186,7 +186,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this MysqlSlowLogDetailsItem.
+        r"""Gets the rows_sent of this MysqlSlowLogDetailsItem.
 
         结果行数量。mysql支持
 
@@ -197,7 +197,7 @@ class MysqlSlowLogDetailsItem:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this MysqlSlowLogDetailsItem.
+        r"""Sets the rows_sent of this MysqlSlowLogDetailsItem.
 
         结果行数量。mysql支持
 
@@ -208,7 +208,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this MysqlSlowLogDetailsItem.
+        r"""Gets the rows_examined of this MysqlSlowLogDetailsItem.
 
         扫描的行数量。mysql支持
 
@@ -219,7 +219,7 @@ class MysqlSlowLogDetailsItem:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this MysqlSlowLogDetailsItem.
+        r"""Sets the rows_examined of this MysqlSlowLogDetailsItem.
 
         扫描的行数量。mysql支持
 
@@ -230,7 +230,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def database(self):
-        """Gets the database of this MysqlSlowLogDetailsItem.
+        r"""Gets the database of this MysqlSlowLogDetailsItem.
 
         所属数据库。
 
@@ -241,7 +241,7 @@ class MysqlSlowLogDetailsItem:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this MysqlSlowLogDetailsItem.
+        r"""Sets the database of this MysqlSlowLogDetailsItem.
 
         所属数据库。
 
@@ -252,7 +252,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def users(self):
-        """Gets the users of this MysqlSlowLogDetailsItem.
+        r"""Gets the users of this MysqlSlowLogDetailsItem.
 
         帐号。
 
@@ -263,7 +263,7 @@ class MysqlSlowLogDetailsItem:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this MysqlSlowLogDetailsItem.
+        r"""Sets the users of this MysqlSlowLogDetailsItem.
 
         帐号。
 
@@ -274,7 +274,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this MysqlSlowLogDetailsItem.
+        r"""Gets the query_sample of this MysqlSlowLogDetailsItem.
 
         执行语法。慢日志默认脱敏显示，如需明文显示，请联系客服人员添加白名单。
 
@@ -285,7 +285,7 @@ class MysqlSlowLogDetailsItem:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this MysqlSlowLogDetailsItem.
+        r"""Sets the query_sample of this MysqlSlowLogDetailsItem.
 
         执行语法。慢日志默认脱敏显示，如需明文显示，请联系客服人员添加白名单。
 
@@ -296,7 +296,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def type(self):
-        """Gets the type of this MysqlSlowLogDetailsItem.
+        r"""Gets the type of this MysqlSlowLogDetailsItem.
 
         语句类型。
 
@@ -307,7 +307,7 @@ class MysqlSlowLogDetailsItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlSlowLogDetailsItem.
+        r"""Sets the type of this MysqlSlowLogDetailsItem.
 
         语句类型。
 
@@ -318,7 +318,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MysqlSlowLogDetailsItem.
+        r"""Gets the start_time of this MysqlSlowLogDetailsItem.
 
         发生时间，UTC时间。
 
@@ -329,7 +329,7 @@ class MysqlSlowLogDetailsItem:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MysqlSlowLogDetailsItem.
+        r"""Sets the start_time of this MysqlSlowLogDetailsItem.
 
         发生时间，UTC时间。
 
@@ -340,7 +340,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this MysqlSlowLogDetailsItem.
+        r"""Gets the client_ip of this MysqlSlowLogDetailsItem.
 
         IP地址。
 
@@ -351,7 +351,7 @@ class MysqlSlowLogDetailsItem:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this MysqlSlowLogDetailsItem.
+        r"""Sets the client_ip of this MysqlSlowLogDetailsItem.
 
         IP地址。
 
@@ -362,7 +362,7 @@ class MysqlSlowLogDetailsItem:
 
     @property
     def line_num(self):
-        """Gets the line_num of this MysqlSlowLogDetailsItem.
+        r"""Gets the line_num of this MysqlSlowLogDetailsItem.
 
         日志单行序列号。
 
@@ -373,7 +373,7 @@ class MysqlSlowLogDetailsItem:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this MysqlSlowLogDetailsItem.
+        r"""Sets the line_num of this MysqlSlowLogDetailsItem.
 
         日志单行序列号。
 

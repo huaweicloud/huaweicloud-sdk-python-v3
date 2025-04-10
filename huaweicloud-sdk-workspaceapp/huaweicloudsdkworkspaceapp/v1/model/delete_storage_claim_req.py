@@ -25,7 +25,7 @@ class DeleteStorageClaimReq:
     }
 
     def __init__(self, items=None):
-        """DeleteStorageClaimReq
+        r"""DeleteStorageClaimReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteStorageClaimReq:
 
     @property
     def items(self):
-        """Gets the items of this DeleteStorageClaimReq.
+        r"""Gets the items of this DeleteStorageClaimReq.
 
         storage_claim_id,数量区间 [1, 50]。
 
@@ -53,7 +53,7 @@ class DeleteStorageClaimReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this DeleteStorageClaimReq.
+        r"""Sets the items of this DeleteStorageClaimReq.
 
         storage_claim_id,数量区间 [1, 50]。
 

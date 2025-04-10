@@ -27,7 +27,7 @@ class UpdateHarvestJobStatusRequestBody:
     }
 
     def __init__(self, job_id=None, status=None):
-        """UpdateHarvestJobStatusRequestBody
+        r"""UpdateHarvestJobStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateHarvestJobStatusRequestBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateHarvestJobStatusRequestBody.
+        r"""Gets the job_id of this UpdateHarvestJobStatusRequestBody.
 
         任务ID
 
@@ -59,7 +59,7 @@ class UpdateHarvestJobStatusRequestBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateHarvestJobStatusRequestBody.
+        r"""Sets the job_id of this UpdateHarvestJobStatusRequestBody.
 
         任务ID
 
@@ -70,7 +70,7 @@ class UpdateHarvestJobStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateHarvestJobStatusRequestBody.
+        r"""Gets the status of this UpdateHarvestJobStatusRequestBody.
 
         任务状态
 
@@ -81,7 +81,7 @@ class UpdateHarvestJobStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHarvestJobStatusRequestBody.
+        r"""Sets the status of this UpdateHarvestJobStatusRequestBody.
 
         任务状态
 

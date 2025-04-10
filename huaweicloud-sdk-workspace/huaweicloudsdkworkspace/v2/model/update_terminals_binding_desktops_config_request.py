@@ -25,7 +25,7 @@ class UpdateTerminalsBindingDesktopsConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTerminalsBindingDesktopsConfigRequest
+        r"""UpdateTerminalsBindingDesktopsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTerminalsBindingDesktopsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTerminalsBindingDesktopsConfigRequest.
+        r"""Gets the body of this UpdateTerminalsBindingDesktopsConfigRequest.
 
         :return: The body of this UpdateTerminalsBindingDesktopsConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.TerminalsBindingDesktopsConfig`
@@ -52,7 +52,7 @@ class UpdateTerminalsBindingDesktopsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTerminalsBindingDesktopsConfigRequest.
+        r"""Sets the body of this UpdateTerminalsBindingDesktopsConfigRequest.
 
         :param body: The body of this UpdateTerminalsBindingDesktopsConfigRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.TerminalsBindingDesktopsConfig`

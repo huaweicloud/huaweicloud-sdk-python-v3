@@ -25,7 +25,7 @@ class BatchDeleteWorkflowsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteWorkflowsRequest
+        r"""BatchDeleteWorkflowsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteWorkflowsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteWorkflowsRequest.
+        r"""Gets the body of this BatchDeleteWorkflowsRequest.
 
         :return: The body of this BatchDeleteWorkflowsRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`
@@ -52,7 +52,7 @@ class BatchDeleteWorkflowsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteWorkflowsRequest.
+        r"""Sets the body of this BatchDeleteWorkflowsRequest.
 
         :param body: The body of this BatchDeleteWorkflowsRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`

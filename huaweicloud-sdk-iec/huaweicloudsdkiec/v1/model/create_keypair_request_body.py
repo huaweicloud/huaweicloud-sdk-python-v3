@@ -27,7 +27,7 @@ class CreateKeypairRequestBody:
     }
 
     def __init__(self, name=None, public_key=None):
-        """CreateKeypairRequestBody
+        r"""CreateKeypairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateKeypairRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateKeypairRequestBody.
+        r"""Gets the name of this CreateKeypairRequestBody.
 
         密钥对名称。 新创建的密钥名称不能和已有密钥名称相同。
 
@@ -60,7 +60,7 @@ class CreateKeypairRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateKeypairRequestBody.
+        r"""Sets the name of this CreateKeypairRequestBody.
 
         密钥对名称。 新创建的密钥名称不能和已有密钥名称相同。
 
@@ -71,7 +71,7 @@ class CreateKeypairRequestBody:
 
     @property
     def public_key(self):
-        """Gets the public_key of this CreateKeypairRequestBody.
+        r"""Gets the public_key of this CreateKeypairRequestBody.
 
         导入的公钥信息。 建议导入的公钥长度不大于1024字节。 > 长度超过1024字节会导致边缘实例注入该密钥失败。
 
@@ -82,7 +82,7 @@ class CreateKeypairRequestBody:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this CreateKeypairRequestBody.
+        r"""Sets the public_key of this CreateKeypairRequestBody.
 
         导入的公钥信息。 建议导入的公钥长度不大于1024字节。 > 长度超过1024字节会导致边缘实例注入该密钥失败。
 

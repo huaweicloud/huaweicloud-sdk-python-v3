@@ -41,7 +41,7 @@ class CreateHttpIgnoreRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, url=None, rule=None, mode=None, domains=None, url_logic=None, advanced=None, conditions=None):
-        """CreateHttpIgnoreRuleRequestBody
+        r"""CreateHttpIgnoreRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the name of this CreateHttpIgnoreRuleRequestBody.
 
         规则名称
 
@@ -106,7 +106,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the name of this CreateHttpIgnoreRuleRequestBody.
 
         规则名称
 
@@ -117,7 +117,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the description of this CreateHttpIgnoreRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -128,7 +128,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the description of this CreateHttpIgnoreRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -139,7 +139,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the url of this CreateHttpIgnoreRuleRequestBody.
 
         误报路径
 
@@ -150,7 +150,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the url of this CreateHttpIgnoreRuleRequestBody.
 
         误报路径
 
@@ -161,7 +161,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def rule(self):
-        """Gets the rule of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the rule of this CreateHttpIgnoreRuleRequestBody.
 
         规则编号
 
@@ -172,7 +172,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the rule of this CreateHttpIgnoreRuleRequestBody.
 
         规则编号
 
@@ -183,7 +183,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the mode of this CreateHttpIgnoreRuleRequestBody.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -194,7 +194,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the mode of this CreateHttpIgnoreRuleRequestBody.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -205,7 +205,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def domains(self):
-        """Gets the domains of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the domains of this CreateHttpIgnoreRuleRequestBody.
 
         域名列表
 
@@ -216,7 +216,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the domains of this CreateHttpIgnoreRuleRequestBody.
 
         域名列表
 
@@ -227,7 +227,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def url_logic(self):
-        """Gets the url_logic of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the url_logic of this CreateHttpIgnoreRuleRequestBody.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -238,7 +238,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @url_logic.setter
     def url_logic(self, url_logic):
-        """Sets the url_logic of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the url_logic of this CreateHttpIgnoreRuleRequestBody.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -249,7 +249,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def advanced(self):
-        """Gets the advanced of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the advanced of this CreateHttpIgnoreRuleRequestBody.
 
         :return: The advanced of this CreateHttpIgnoreRuleRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -258,7 +258,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the advanced of this CreateHttpIgnoreRuleRequestBody.
 
         :param advanced: The advanced of this CreateHttpIgnoreRuleRequestBody.
         :type advanced: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -267,7 +267,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateHttpIgnoreRuleRequestBody.
+        r"""Gets the conditions of this CreateHttpIgnoreRuleRequestBody.
 
         命中条件
 
@@ -278,7 +278,7 @@ class CreateHttpIgnoreRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateHttpIgnoreRuleRequestBody.
+        r"""Sets the conditions of this CreateHttpIgnoreRuleRequestBody.
 
         命中条件
 

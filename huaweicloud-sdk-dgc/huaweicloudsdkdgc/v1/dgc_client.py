@@ -34,7 +34,7 @@ class DgcClient(Client):
         return client_builder
 
     def cancel_script(self, request):
-        """停止脚本实例的执行
+        r"""停止脚本实例的执行
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -102,7 +102,7 @@ class DgcClient(Client):
         return http_info
 
     def create_connection(self, request):
-        """创建连接
+        r"""创建连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -168,7 +168,7 @@ class DgcClient(Client):
         return http_info
 
     def create_job(self, request):
-        """创建作业
+        r"""创建作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -234,7 +234,7 @@ class DgcClient(Client):
         return http_info
 
     def create_resource(self, request):
-        """创建资源
+        r"""创建资源
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -300,7 +300,7 @@ class DgcClient(Client):
         return http_info
 
     def create_script(self, request):
-        """创建脚本
+        r"""创建脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -366,7 +366,7 @@ class DgcClient(Client):
         return http_info
 
     def create_supplementdata(self, request):
-        """创建补数据实例
+        r"""创建补数据实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -432,7 +432,7 @@ class DgcClient(Client):
         return http_info
 
     def delete_connction(self, request):
-        """删除连接
+        r"""删除连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -498,7 +498,7 @@ class DgcClient(Client):
         return http_info
 
     def delete_job(self, request):
-        """删除作业
+        r"""删除作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -566,7 +566,7 @@ class DgcClient(Client):
         return http_info
 
     def delete_resource(self, request):
-        """删除资源
+        r"""删除资源
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -632,7 +632,7 @@ class DgcClient(Client):
         return http_info
 
     def delete_script(self, request):
-        """删除脚本
+        r"""删除脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -700,7 +700,7 @@ class DgcClient(Client):
         return http_info
 
     def execute_script(self, request):
-        """执行脚本
+        r"""执行脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -768,7 +768,7 @@ class DgcClient(Client):
         return http_info
 
     def export_connections(self, request):
-        """导出连接
+        r"""导出连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -832,7 +832,7 @@ class DgcClient(Client):
         return http_info
 
     def export_job(self, request):
-        """导出作业
+        r"""导出作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -898,7 +898,7 @@ class DgcClient(Client):
         return http_info
 
     def export_job_list(self, request):
-        """批量导出作业
+        r"""批量导出作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -964,7 +964,7 @@ class DgcClient(Client):
         return http_info
 
     def import_connections(self, request):
-        """导入连接
+        r"""导入连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1030,7 +1030,7 @@ class DgcClient(Client):
         return http_info
 
     def import_job(self, request):
-        """导入作业
+        r"""导入作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1096,7 +1096,7 @@ class DgcClient(Client):
         return http_info
 
     def list_connections(self, request):
-        """查询连接列表
+        r"""查询连接列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1166,7 +1166,7 @@ class DgcClient(Client):
         return http_info
 
     def list_job_instances(self, request):
-        """查询作业实例列表
+        r"""查询作业实例列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1246,7 +1246,7 @@ class DgcClient(Client):
         return http_info
 
     def list_jobs(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         查询作业列表清单
         
@@ -1321,7 +1321,7 @@ class DgcClient(Client):
         return http_info
 
     def list_resources(self, request):
-        """查询资源列表
+        r"""查询资源列表
 
 
         :param request: Request instance for ListResources
@@ -1389,7 +1389,7 @@ class DgcClient(Client):
         return http_info
 
     def list_script_results(self, request):
-        """查询脚本实例执行结果
+        r"""查询脚本实例执行结果
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1457,7 +1457,7 @@ class DgcClient(Client):
         return http_info
 
     def list_scripts(self, request):
-        """查询脚本列表
+        r"""查询脚本列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1527,7 +1527,7 @@ class DgcClient(Client):
         return http_info
 
     def list_supplementdata(self, request):
-        """查询补数据实例
+        r"""查询补数据实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1607,7 +1607,7 @@ class DgcClient(Client):
         return http_info
 
     def list_system_tasks(self, request):
-        """查询系统任务详情
+        r"""查询系统任务详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1673,7 +1673,7 @@ class DgcClient(Client):
         return http_info
 
     def restore_job_instance(self, request):
-        """重跑作业实例
+        r"""重跑作业实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1741,7 +1741,7 @@ class DgcClient(Client):
         return http_info
 
     def run_once(self, request):
-        """立即执行作业
+        r"""立即执行作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1809,7 +1809,7 @@ class DgcClient(Client):
         return http_info
 
     def show_connection(self, request):
-        """查询连接详情
+        r"""查询连接详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1875,7 +1875,7 @@ class DgcClient(Client):
         return http_info
 
     def show_file_info(self, request):
-        """查询作业文件
+        r"""查询作业文件
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1941,7 +1941,7 @@ class DgcClient(Client):
         return http_info
 
     def show_job(self, request):
-        """查询作业详情
+        r"""查询作业详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2011,7 +2011,7 @@ class DgcClient(Client):
         return http_info
 
     def show_job_instance(self, request):
-        """查询作业实例详情
+        r"""查询作业实例详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2079,7 +2079,7 @@ class DgcClient(Client):
         return http_info
 
     def show_job_status(self, request):
-        """查询实时作业的运行状态
+        r"""查询实时作业的运行状态
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2145,7 +2145,7 @@ class DgcClient(Client):
         return http_info
 
     def show_resource(self, request):
-        """查询资源详情
+        r"""查询资源详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2211,7 +2211,7 @@ class DgcClient(Client):
         return http_info
 
     def show_script(self, request):
-        """查询脚本信息
+        r"""查询脚本信息
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2277,7 +2277,7 @@ class DgcClient(Client):
         return http_info
 
     def start_job(self, request):
-        """启动作业
+        r"""启动作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2345,7 +2345,7 @@ class DgcClient(Client):
         return http_info
 
     def stop_job(self, request):
-        """停止作业
+        r"""停止作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2411,7 +2411,7 @@ class DgcClient(Client):
         return http_info
 
     def stop_job_instance(self, request):
-        """停止作业实例
+        r"""停止作业实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2479,7 +2479,7 @@ class DgcClient(Client):
         return http_info
 
     def stop_supplementdata(self, request):
-        """停止补数据实例
+        r"""停止补数据实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2545,7 +2545,7 @@ class DgcClient(Client):
         return http_info
 
     def update_connection(self, request):
-        """修改连接
+        r"""修改连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2613,7 +2613,7 @@ class DgcClient(Client):
         return http_info
 
     def update_job(self, request):
-        """修改作业
+        r"""修改作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2681,7 +2681,7 @@ class DgcClient(Client):
         return http_info
 
     def update_resource(self, request):
-        """修改资源
+        r"""修改资源
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2749,7 +2749,7 @@ class DgcClient(Client):
         return http_info
 
     def update_script(self, request):
-        """修改脚本内容
+        r"""修改脚本内容
 
         
         Please refer to HUAWEI cloud API Explorer for details.

@@ -34,7 +34,7 @@ class ShowNodePoolResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """ShowNodePoolResponse
+        r"""ShowNodePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowNodePoolResponse.
+        r"""Gets the kind of this ShowNodePoolResponse.
 
         API类型，固定值“NodePool”。
 
@@ -83,7 +83,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowNodePoolResponse.
+        r"""Sets the kind of this ShowNodePoolResponse.
 
         API类型，固定值“NodePool”。
 
@@ -94,7 +94,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowNodePoolResponse.
+        r"""Gets the api_version of this ShowNodePoolResponse.
 
         API版本，固定值“v3”。
 
@@ -105,7 +105,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowNodePoolResponse.
+        r"""Sets the api_version of this ShowNodePoolResponse.
 
         API版本，固定值“v3”。
 
@@ -116,7 +116,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowNodePoolResponse.
+        r"""Gets the metadata of this ShowNodePoolResponse.
 
         :return: The metadata of this ShowNodePoolResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -125,7 +125,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowNodePoolResponse.
+        r"""Sets the metadata of this ShowNodePoolResponse.
 
         :param metadata: The metadata of this ShowNodePoolResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -134,7 +134,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowNodePoolResponse.
+        r"""Gets the spec of this ShowNodePoolResponse.
 
         :return: The spec of this ShowNodePoolResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
@@ -143,7 +143,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowNodePoolResponse.
+        r"""Sets the spec of this ShowNodePoolResponse.
 
         :param spec: The spec of this ShowNodePoolResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
@@ -152,7 +152,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNodePoolResponse.
+        r"""Gets the status of this ShowNodePoolResponse.
 
         :return: The status of this ShowNodePoolResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
@@ -161,7 +161,7 @@ class ShowNodePoolResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNodePoolResponse.
+        r"""Sets the status of this ShowNodePoolResponse.
 
         :param status: The status of this ShowNodePoolResponse.
         :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`

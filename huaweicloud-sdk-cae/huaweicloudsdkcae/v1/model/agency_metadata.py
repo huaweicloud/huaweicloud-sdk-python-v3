@@ -27,7 +27,7 @@ class AgencyMetadata:
     }
 
     def __init__(self, name=None, enum=None):
-        """AgencyMetadata
+        r"""AgencyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AgencyMetadata:
 
     @property
     def name(self):
-        """Gets the name of this AgencyMetadata.
+        r"""Gets the name of this AgencyMetadata.
 
         委托名称，固定值“cae_trust”，该值不可修改。
 
@@ -60,7 +60,7 @@ class AgencyMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyMetadata.
+        r"""Sets the name of this AgencyMetadata.
 
         委托名称，固定值“cae_trust”，该值不可修改。
 
@@ -71,7 +71,7 @@ class AgencyMetadata:
 
     @property
     def enum(self):
-        """Gets the enum of this AgencyMetadata.
+        r"""Gets the enum of this AgencyMetadata.
 
         :return: The enum of this AgencyMetadata.
         :rtype: object
@@ -80,7 +80,7 @@ class AgencyMetadata:
 
     @enum.setter
     def enum(self, enum):
-        """Sets the enum of this AgencyMetadata.
+        r"""Sets the enum of this AgencyMetadata.
 
         :param enum: The enum of this AgencyMetadata.
         :type enum: object

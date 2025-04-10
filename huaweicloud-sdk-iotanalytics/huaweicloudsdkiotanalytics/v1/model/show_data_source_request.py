@@ -25,7 +25,7 @@ class ShowDataSourceRequest:
     }
 
     def __init__(self, datasource_id=None):
-        """ShowDataSourceRequest
+        r"""ShowDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDataSourceRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this ShowDataSourceRequest.
+        r"""Gets the datasource_id of this ShowDataSourceRequest.
 
         数据源id
 
@@ -53,7 +53,7 @@ class ShowDataSourceRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this ShowDataSourceRequest.
+        r"""Sets the datasource_id of this ShowDataSourceRequest.
 
         数据源id
 

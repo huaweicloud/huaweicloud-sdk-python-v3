@@ -39,7 +39,7 @@ class ListServerGroupsRequest:
     }
 
     def __init__(self, offset=None, limit=None, server_group_name=None, server_group_id=None, app_type=None, tags=None, enterprise_project_id=None, is_secondary_server_group=None):
-        """ListServerGroupsRequest
+        r"""ListServerGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListServerGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServerGroupsRequest.
+        r"""Gets the offset of this ListServerGroupsRequest.
 
         查询的偏移量。
 
@@ -103,7 +103,7 @@ class ListServerGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServerGroupsRequest.
+        r"""Sets the offset of this ListServerGroupsRequest.
 
         查询的偏移量。
 
@@ -114,7 +114,7 @@ class ListServerGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServerGroupsRequest.
+        r"""Gets the limit of this ListServerGroupsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -125,7 +125,7 @@ class ListServerGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServerGroupsRequest.
+        r"""Sets the limit of this ListServerGroupsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -136,7 +136,7 @@ class ListServerGroupsRequest:
 
     @property
     def server_group_name(self):
-        """Gets the server_group_name of this ListServerGroupsRequest.
+        r"""Gets the server_group_name of this ListServerGroupsRequest.
 
         服务器组名称。
 
@@ -147,7 +147,7 @@ class ListServerGroupsRequest:
 
     @server_group_name.setter
     def server_group_name(self, server_group_name):
-        """Sets the server_group_name of this ListServerGroupsRequest.
+        r"""Sets the server_group_name of this ListServerGroupsRequest.
 
         服务器组名称。
 
@@ -158,7 +158,7 @@ class ListServerGroupsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListServerGroupsRequest.
+        r"""Gets the server_group_id of this ListServerGroupsRequest.
 
         服务器组唯一标识。
 
@@ -169,7 +169,7 @@ class ListServerGroupsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListServerGroupsRequest.
+        r"""Sets the server_group_id of this ListServerGroupsRequest.
 
         服务器组唯一标识。
 
@@ -180,7 +180,7 @@ class ListServerGroupsRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ListServerGroupsRequest.
+        r"""Gets the app_type of this ListServerGroupsRequest.
 
         应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
@@ -191,7 +191,7 @@ class ListServerGroupsRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ListServerGroupsRequest.
+        r"""Sets the app_type of this ListServerGroupsRequest.
 
         应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
@@ -202,7 +202,7 @@ class ListServerGroupsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListServerGroupsRequest.
+        r"""Gets the tags of this ListServerGroupsRequest.
 
         查询tag字段中包含该值的服务器组。
 
@@ -213,7 +213,7 @@ class ListServerGroupsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListServerGroupsRequest.
+        r"""Sets the tags of this ListServerGroupsRequest.
 
         查询tag字段中包含该值的服务器组。
 
@@ -224,7 +224,7 @@ class ListServerGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListServerGroupsRequest.
+        r"""Gets the enterprise_project_id of this ListServerGroupsRequest.
 
         企业项目ID(字段为空或者0表示使用默认default企业项目)
 
@@ -235,7 +235,7 @@ class ListServerGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListServerGroupsRequest.
+        r"""Sets the enterprise_project_id of this ListServerGroupsRequest.
 
         企业项目ID(字段为空或者0表示使用默认default企业项目)
 
@@ -246,7 +246,7 @@ class ListServerGroupsRequest:
 
     @property
     def is_secondary_server_group(self):
-        """Gets the is_secondary_server_group of this ListServerGroupsRequest.
+        r"""Gets the is_secondary_server_group of this ListServerGroupsRequest.
 
         是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
 
@@ -257,7 +257,7 @@ class ListServerGroupsRequest:
 
     @is_secondary_server_group.setter
     def is_secondary_server_group(self, is_secondary_server_group):
-        """Sets the is_secondary_server_group of this ListServerGroupsRequest.
+        r"""Sets the is_secondary_server_group of this ListServerGroupsRequest.
 
         是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
 

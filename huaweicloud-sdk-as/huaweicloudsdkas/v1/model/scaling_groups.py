@@ -89,7 +89,7 @@ class ScalingGroups:
     }
 
     def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None, iam_agency_name=None, description=None, tags=None):
-        """ScalingGroups
+        r"""ScalingGroups
 
         The model defined in huaweicloud sdk
 
@@ -267,7 +267,7 @@ class ScalingGroups:
 
     @property
     def scaling_group_name(self):
-        """Gets the scaling_group_name of this ScalingGroups.
+        r"""Gets the scaling_group_name of this ScalingGroups.
 
         伸缩组名称。
 
@@ -278,7 +278,7 @@ class ScalingGroups:
 
     @scaling_group_name.setter
     def scaling_group_name(self, scaling_group_name):
-        """Sets the scaling_group_name of this ScalingGroups.
+        r"""Sets the scaling_group_name of this ScalingGroups.
 
         伸缩组名称。
 
@@ -289,7 +289,7 @@ class ScalingGroups:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ScalingGroups.
+        r"""Gets the scaling_group_id of this ScalingGroups.
 
         伸缩组ID。
 
@@ -300,7 +300,7 @@ class ScalingGroups:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ScalingGroups.
+        r"""Sets the scaling_group_id of this ScalingGroups.
 
         伸缩组ID。
 
@@ -311,7 +311,7 @@ class ScalingGroups:
 
     @property
     def scaling_group_status(self):
-        """Gets the scaling_group_status of this ScalingGroups.
+        r"""Gets the scaling_group_status of this ScalingGroups.
 
         伸缩组状态。
 
@@ -322,7 +322,7 @@ class ScalingGroups:
 
     @scaling_group_status.setter
     def scaling_group_status(self, scaling_group_status):
-        """Sets the scaling_group_status of this ScalingGroups.
+        r"""Sets the scaling_group_status of this ScalingGroups.
 
         伸缩组状态。
 
@@ -333,7 +333,7 @@ class ScalingGroups:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this ScalingGroups.
+        r"""Gets the scaling_configuration_id of this ScalingGroups.
 
         伸缩配置ID。
 
@@ -344,7 +344,7 @@ class ScalingGroups:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this ScalingGroups.
+        r"""Sets the scaling_configuration_id of this ScalingGroups.
 
         伸缩配置ID。
 
@@ -355,7 +355,7 @@ class ScalingGroups:
 
     @property
     def scaling_configuration_name(self):
-        """Gets the scaling_configuration_name of this ScalingGroups.
+        r"""Gets the scaling_configuration_name of this ScalingGroups.
 
         伸缩配置名称。
 
@@ -366,7 +366,7 @@ class ScalingGroups:
 
     @scaling_configuration_name.setter
     def scaling_configuration_name(self, scaling_configuration_name):
-        """Sets the scaling_configuration_name of this ScalingGroups.
+        r"""Sets the scaling_configuration_name of this ScalingGroups.
 
         伸缩配置名称。
 
@@ -377,7 +377,7 @@ class ScalingGroups:
 
     @property
     def current_instance_number(self):
-        """Gets the current_instance_number of this ScalingGroups.
+        r"""Gets the current_instance_number of this ScalingGroups.
 
         伸缩组中当前实例数。
 
@@ -388,7 +388,7 @@ class ScalingGroups:
 
     @current_instance_number.setter
     def current_instance_number(self, current_instance_number):
-        """Sets the current_instance_number of this ScalingGroups.
+        r"""Sets the current_instance_number of this ScalingGroups.
 
         伸缩组中当前实例数。
 
@@ -399,7 +399,7 @@ class ScalingGroups:
 
     @property
     def desire_instance_number(self):
-        """Gets the desire_instance_number of this ScalingGroups.
+        r"""Gets the desire_instance_number of this ScalingGroups.
 
         伸缩组期望实例数。
 
@@ -410,7 +410,7 @@ class ScalingGroups:
 
     @desire_instance_number.setter
     def desire_instance_number(self, desire_instance_number):
-        """Sets the desire_instance_number of this ScalingGroups.
+        r"""Sets the desire_instance_number of this ScalingGroups.
 
         伸缩组期望实例数。
 
@@ -421,7 +421,7 @@ class ScalingGroups:
 
     @property
     def min_instance_number(self):
-        """Gets the min_instance_number of this ScalingGroups.
+        r"""Gets the min_instance_number of this ScalingGroups.
 
         伸缩组最小实例数。
 
@@ -432,7 +432,7 @@ class ScalingGroups:
 
     @min_instance_number.setter
     def min_instance_number(self, min_instance_number):
-        """Sets the min_instance_number of this ScalingGroups.
+        r"""Sets the min_instance_number of this ScalingGroups.
 
         伸缩组最小实例数。
 
@@ -443,7 +443,7 @@ class ScalingGroups:
 
     @property
     def max_instance_number(self):
-        """Gets the max_instance_number of this ScalingGroups.
+        r"""Gets the max_instance_number of this ScalingGroups.
 
         伸缩组最大实例数
 
@@ -454,7 +454,7 @@ class ScalingGroups:
 
     @max_instance_number.setter
     def max_instance_number(self, max_instance_number):
-        """Sets the max_instance_number of this ScalingGroups.
+        r"""Sets the max_instance_number of this ScalingGroups.
 
         伸缩组最大实例数
 
@@ -465,7 +465,7 @@ class ScalingGroups:
 
     @property
     def cool_down_time(self):
-        """Gets the cool_down_time of this ScalingGroups.
+        r"""Gets the cool_down_time of this ScalingGroups.
 
         冷却时间，单位是秒。
 
@@ -476,7 +476,7 @@ class ScalingGroups:
 
     @cool_down_time.setter
     def cool_down_time(self, cool_down_time):
-        """Sets the cool_down_time of this ScalingGroups.
+        r"""Sets the cool_down_time of this ScalingGroups.
 
         冷却时间，单位是秒。
 
@@ -487,7 +487,7 @@ class ScalingGroups:
 
     @property
     def lb_listener_id(self):
-        """Gets the lb_listener_id of this ScalingGroups.
+        r"""Gets the lb_listener_id of this ScalingGroups.
 
         经典型负载均衡监听器ID，多个负载均衡监听器ID以逗号分隔。
 
@@ -498,7 +498,7 @@ class ScalingGroups:
 
     @lb_listener_id.setter
     def lb_listener_id(self, lb_listener_id):
-        """Sets the lb_listener_id of this ScalingGroups.
+        r"""Sets the lb_listener_id of this ScalingGroups.
 
         经典型负载均衡监听器ID，多个负载均衡监听器ID以逗号分隔。
 
@@ -509,7 +509,7 @@ class ScalingGroups:
 
     @property
     def lbaas_listeners(self):
-        """Gets the lbaas_listeners of this ScalingGroups.
+        r"""Gets the lbaas_listeners of this ScalingGroups.
 
         增强型负载均衡器信息，该参数为预留字段。
 
@@ -520,7 +520,7 @@ class ScalingGroups:
 
     @lbaas_listeners.setter
     def lbaas_listeners(self, lbaas_listeners):
-        """Sets the lbaas_listeners of this ScalingGroups.
+        r"""Sets the lbaas_listeners of this ScalingGroups.
 
         增强型负载均衡器信息，该参数为预留字段。
 
@@ -531,7 +531,7 @@ class ScalingGroups:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ScalingGroups.
+        r"""Gets the available_zones of this ScalingGroups.
 
         可用分区信息
 
@@ -542,7 +542,7 @@ class ScalingGroups:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ScalingGroups.
+        r"""Sets the available_zones of this ScalingGroups.
 
         可用分区信息
 
@@ -553,7 +553,7 @@ class ScalingGroups:
 
     @property
     def networks(self):
-        """Gets the networks of this ScalingGroups.
+        r"""Gets the networks of this ScalingGroups.
 
         网络信息
 
@@ -564,7 +564,7 @@ class ScalingGroups:
 
     @networks.setter
     def networks(self, networks):
-        """Sets the networks of this ScalingGroups.
+        r"""Sets the networks of this ScalingGroups.
 
         网络信息
 
@@ -575,7 +575,7 @@ class ScalingGroups:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ScalingGroups.
+        r"""Gets the security_groups of this ScalingGroups.
 
         安全组信息
 
@@ -586,7 +586,7 @@ class ScalingGroups:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ScalingGroups.
+        r"""Sets the security_groups of this ScalingGroups.
 
         安全组信息
 
@@ -597,7 +597,7 @@ class ScalingGroups:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScalingGroups.
+        r"""Gets the create_time of this ScalingGroups.
 
         创建伸缩组时间，遵循UTC时间。
 
@@ -608,7 +608,7 @@ class ScalingGroups:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScalingGroups.
+        r"""Sets the create_time of this ScalingGroups.
 
         创建伸缩组时间，遵循UTC时间。
 
@@ -619,7 +619,7 @@ class ScalingGroups:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ScalingGroups.
+        r"""Gets the vpc_id of this ScalingGroups.
 
         伸缩组所在的VPC ID。
 
@@ -630,7 +630,7 @@ class ScalingGroups:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ScalingGroups.
+        r"""Sets the vpc_id of this ScalingGroups.
 
         伸缩组所在的VPC ID。
 
@@ -641,7 +641,7 @@ class ScalingGroups:
 
     @property
     def detail(self):
-        """Gets the detail of this ScalingGroups.
+        r"""Gets the detail of this ScalingGroups.
 
         伸缩组详情。
 
@@ -652,7 +652,7 @@ class ScalingGroups:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ScalingGroups.
+        r"""Sets the detail of this ScalingGroups.
 
         伸缩组详情。
 
@@ -663,7 +663,7 @@ class ScalingGroups:
 
     @property
     def is_scaling(self):
-        """Gets the is_scaling of this ScalingGroups.
+        r"""Gets the is_scaling of this ScalingGroups.
 
         伸缩组伸缩标志。
 
@@ -674,7 +674,7 @@ class ScalingGroups:
 
     @is_scaling.setter
     def is_scaling(self, is_scaling):
-        """Sets the is_scaling of this ScalingGroups.
+        r"""Sets the is_scaling of this ScalingGroups.
 
         伸缩组伸缩标志。
 
@@ -685,7 +685,7 @@ class ScalingGroups:
 
     @property
     def health_periodic_audit_method(self):
-        """Gets the health_periodic_audit_method of this ScalingGroups.
+        r"""Gets the health_periodic_audit_method of this ScalingGroups.
 
         健康检查方式。
 
@@ -696,7 +696,7 @@ class ScalingGroups:
 
     @health_periodic_audit_method.setter
     def health_periodic_audit_method(self, health_periodic_audit_method):
-        """Sets the health_periodic_audit_method of this ScalingGroups.
+        r"""Sets the health_periodic_audit_method of this ScalingGroups.
 
         健康检查方式。
 
@@ -707,7 +707,7 @@ class ScalingGroups:
 
     @property
     def health_periodic_audit_time(self):
-        """Gets the health_periodic_audit_time of this ScalingGroups.
+        r"""Gets the health_periodic_audit_time of this ScalingGroups.
 
         健康检查的间隔时间。
 
@@ -718,7 +718,7 @@ class ScalingGroups:
 
     @health_periodic_audit_time.setter
     def health_periodic_audit_time(self, health_periodic_audit_time):
-        """Sets the health_periodic_audit_time of this ScalingGroups.
+        r"""Sets the health_periodic_audit_time of this ScalingGroups.
 
         健康检查的间隔时间。
 
@@ -729,7 +729,7 @@ class ScalingGroups:
 
     @property
     def health_periodic_audit_grace_period(self):
-        """Gets the health_periodic_audit_grace_period of this ScalingGroups.
+        r"""Gets the health_periodic_audit_grace_period of this ScalingGroups.
 
         健康状况检查宽限期。
 
@@ -740,7 +740,7 @@ class ScalingGroups:
 
     @health_periodic_audit_grace_period.setter
     def health_periodic_audit_grace_period(self, health_periodic_audit_grace_period):
-        """Sets the health_periodic_audit_grace_period of this ScalingGroups.
+        r"""Sets the health_periodic_audit_grace_period of this ScalingGroups.
 
         健康状况检查宽限期。
 
@@ -751,7 +751,7 @@ class ScalingGroups:
 
     @property
     def instance_terminate_policy(self):
-        """Gets the instance_terminate_policy of this ScalingGroups.
+        r"""Gets the instance_terminate_policy of this ScalingGroups.
 
         移除策略。
 
@@ -762,7 +762,7 @@ class ScalingGroups:
 
     @instance_terminate_policy.setter
     def instance_terminate_policy(self, instance_terminate_policy):
-        """Sets the instance_terminate_policy of this ScalingGroups.
+        r"""Sets the instance_terminate_policy of this ScalingGroups.
 
         移除策略。
 
@@ -773,7 +773,7 @@ class ScalingGroups:
 
     @property
     def notifications(self):
-        """Gets the notifications of this ScalingGroups.
+        r"""Gets the notifications of this ScalingGroups.
 
         通知方式：EMAIL为发送邮件通知。该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
@@ -784,7 +784,7 @@ class ScalingGroups:
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this ScalingGroups.
+        r"""Sets the notifications of this ScalingGroups.
 
         通知方式：EMAIL为发送邮件通知。该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
@@ -795,7 +795,7 @@ class ScalingGroups:
 
     @property
     def delete_publicip(self):
-        """Gets the delete_publicip of this ScalingGroups.
+        r"""Gets the delete_publicip of this ScalingGroups.
 
         删除云服务器是否删除云服务器绑定的弹性IP。
 
@@ -806,7 +806,7 @@ class ScalingGroups:
 
     @delete_publicip.setter
     def delete_publicip(self, delete_publicip):
-        """Sets the delete_publicip of this ScalingGroups.
+        r"""Sets the delete_publicip of this ScalingGroups.
 
         删除云服务器是否删除云服务器绑定的弹性IP。
 
@@ -817,7 +817,7 @@ class ScalingGroups:
 
     @property
     def delete_volume(self):
-        """Gets the delete_volume of this ScalingGroups.
+        r"""Gets the delete_volume of this ScalingGroups.
 
         删除云服务器是否删除云服务器绑定的数据盘
 
@@ -828,7 +828,7 @@ class ScalingGroups:
 
     @delete_volume.setter
     def delete_volume(self, delete_volume):
-        """Sets the delete_volume of this ScalingGroups.
+        r"""Sets the delete_volume of this ScalingGroups.
 
         删除云服务器是否删除云服务器绑定的数据盘
 
@@ -839,7 +839,7 @@ class ScalingGroups:
 
     @property
     def cloud_location_id(self):
-        """Gets the cloud_location_id of this ScalingGroups.
+        r"""Gets the cloud_location_id of this ScalingGroups.
 
         该参数为预留字段
 
@@ -850,7 +850,7 @@ class ScalingGroups:
 
     @cloud_location_id.setter
     def cloud_location_id(self, cloud_location_id):
-        """Sets the cloud_location_id of this ScalingGroups.
+        r"""Sets the cloud_location_id of this ScalingGroups.
 
         该参数为预留字段
 
@@ -861,7 +861,7 @@ class ScalingGroups:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ScalingGroups.
+        r"""Gets the enterprise_project_id of this ScalingGroups.
 
         企业项目ID
 
@@ -872,7 +872,7 @@ class ScalingGroups:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ScalingGroups.
+        r"""Sets the enterprise_project_id of this ScalingGroups.
 
         企业项目ID
 
@@ -883,7 +883,7 @@ class ScalingGroups:
 
     @property
     def activity_type(self):
-        """Gets the activity_type of this ScalingGroups.
+        r"""Gets the activity_type of this ScalingGroups.
 
         伸缩组活动类型
 
@@ -894,7 +894,7 @@ class ScalingGroups:
 
     @activity_type.setter
     def activity_type(self, activity_type):
-        """Sets the activity_type of this ScalingGroups.
+        r"""Sets the activity_type of this ScalingGroups.
 
         伸缩组活动类型
 
@@ -905,7 +905,7 @@ class ScalingGroups:
 
     @property
     def multi_az_priority_policy(self):
-        """Gets the multi_az_priority_policy of this ScalingGroups.
+        r"""Gets the multi_az_priority_policy of this ScalingGroups.
 
         伸缩组扩缩容时目标AZ选择的优先级策略
 
@@ -916,7 +916,7 @@ class ScalingGroups:
 
     @multi_az_priority_policy.setter
     def multi_az_priority_policy(self, multi_az_priority_policy):
-        """Sets the multi_az_priority_policy of this ScalingGroups.
+        r"""Sets the multi_az_priority_policy of this ScalingGroups.
 
         伸缩组扩缩容时目标AZ选择的优先级策略
 
@@ -927,7 +927,7 @@ class ScalingGroups:
 
     @property
     def iam_agency_name(self):
-        """Gets the iam_agency_name of this ScalingGroups.
+        r"""Gets the iam_agency_name of this ScalingGroups.
 
         委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -938,7 +938,7 @@ class ScalingGroups:
 
     @iam_agency_name.setter
     def iam_agency_name(self, iam_agency_name):
-        """Sets the iam_agency_name of this ScalingGroups.
+        r"""Sets the iam_agency_name of this ScalingGroups.
 
         委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -949,7 +949,7 @@ class ScalingGroups:
 
     @property
     def description(self):
-        """Gets the description of this ScalingGroups.
+        r"""Gets the description of this ScalingGroups.
 
         伸缩组描述信息
 
@@ -960,7 +960,7 @@ class ScalingGroups:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScalingGroups.
+        r"""Sets the description of this ScalingGroups.
 
         伸缩组描述信息
 
@@ -971,7 +971,7 @@ class ScalingGroups:
 
     @property
     def tags(self):
-        """Gets the tags of this ScalingGroups.
+        r"""Gets the tags of this ScalingGroups.
 
         添加到伸缩组的标签。
 
@@ -982,7 +982,7 @@ class ScalingGroups:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ScalingGroups.
+        r"""Sets the tags of this ScalingGroups.
 
         添加到伸缩组的标签。
 

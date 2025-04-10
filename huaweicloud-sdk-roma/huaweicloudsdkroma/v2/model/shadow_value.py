@@ -29,7 +29,7 @@ class ShadowValue:
     }
 
     def __init__(self, property_name=None, property_value=None, property_updated_date=None):
-        """ShadowValue
+        r"""ShadowValue
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShadowValue:
 
     @property
     def property_name(self):
-        """Gets the property_name of this ShadowValue.
+        r"""Gets the property_name of this ShadowValue.
 
         属性名称
 
@@ -68,7 +68,7 @@ class ShadowValue:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this ShadowValue.
+        r"""Sets the property_name of this ShadowValue.
 
         属性名称
 
@@ -79,7 +79,7 @@ class ShadowValue:
 
     @property
     def property_value(self):
-        """Gets the property_value of this ShadowValue.
+        r"""Gets the property_value of this ShadowValue.
 
         属性最后一次上报值
 
@@ -90,7 +90,7 @@ class ShadowValue:
 
     @property_value.setter
     def property_value(self, property_value):
-        """Sets the property_value of this ShadowValue.
+        r"""Sets the property_value of this ShadowValue.
 
         属性最后一次上报值
 
@@ -101,7 +101,7 @@ class ShadowValue:
 
     @property
     def property_updated_date(self):
-        """Gets the property_updated_date of this ShadowValue.
+        r"""Gets the property_updated_date of this ShadowValue.
 
         属性最后一次上报时间，格式timestamp(ms)，使用UTC时区
 
@@ -112,7 +112,7 @@ class ShadowValue:
 
     @property_updated_date.setter
     def property_updated_date(self, property_updated_date):
-        """Sets the property_updated_date of this ShadowValue.
+        r"""Sets the property_updated_date of this ShadowValue.
 
         属性最后一次上报时间，格式timestamp(ms)，使用UTC时区
 

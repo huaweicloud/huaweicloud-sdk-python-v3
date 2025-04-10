@@ -33,7 +33,7 @@ class DigitalHumanModelingJobInfo:
     }
 
     def __init__(self, job_id=None, state=None, start_time=None, end_time=None, error_info=None):
-        """DigitalHumanModelingJobInfo
+        r"""DigitalHumanModelingJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DigitalHumanModelingJobInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DigitalHumanModelingJobInfo.
+        r"""Gets the job_id of this DigitalHumanModelingJobInfo.
 
         照片建模任务ID。
 
@@ -80,7 +80,7 @@ class DigitalHumanModelingJobInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DigitalHumanModelingJobInfo.
+        r"""Sets the job_id of this DigitalHumanModelingJobInfo.
 
         照片建模任务ID。
 
@@ -91,7 +91,7 @@ class DigitalHumanModelingJobInfo:
 
     @property
     def state(self):
-        """Gets the state of this DigitalHumanModelingJobInfo.
+        r"""Gets the state of this DigitalHumanModelingJobInfo.
 
         任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -102,7 +102,7 @@ class DigitalHumanModelingJobInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DigitalHumanModelingJobInfo.
+        r"""Sets the state of this DigitalHumanModelingJobInfo.
 
         任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -113,7 +113,7 @@ class DigitalHumanModelingJobInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DigitalHumanModelingJobInfo.
+        r"""Gets the start_time of this DigitalHumanModelingJobInfo.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -124,7 +124,7 @@ class DigitalHumanModelingJobInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DigitalHumanModelingJobInfo.
+        r"""Sets the start_time of this DigitalHumanModelingJobInfo.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -135,7 +135,7 @@ class DigitalHumanModelingJobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DigitalHumanModelingJobInfo.
+        r"""Gets the end_time of this DigitalHumanModelingJobInfo.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -146,7 +146,7 @@ class DigitalHumanModelingJobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DigitalHumanModelingJobInfo.
+        r"""Sets the end_time of this DigitalHumanModelingJobInfo.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -157,7 +157,7 @@ class DigitalHumanModelingJobInfo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this DigitalHumanModelingJobInfo.
+        r"""Gets the error_info of this DigitalHumanModelingJobInfo.
 
         :return: The error_info of this DigitalHumanModelingJobInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -166,7 +166,7 @@ class DigitalHumanModelingJobInfo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this DigitalHumanModelingJobInfo.
+        r"""Sets the error_info of this DigitalHumanModelingJobInfo.
 
         :param error_info: The error_info of this DigitalHumanModelingJobInfo.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`

@@ -26,7 +26,7 @@ class CreateMultiTasksResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateMultiTasksResponse
+        r"""CreateMultiTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateMultiTasksResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateMultiTasksResponse.
+        r"""Gets the task_id of this CreateMultiTasksResponse.
 
         任务ID, 可为空
 
@@ -55,7 +55,7 @@ class CreateMultiTasksResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateMultiTasksResponse.
+        r"""Sets the task_id of this CreateMultiTasksResponse.
 
         任务ID, 可为空
 

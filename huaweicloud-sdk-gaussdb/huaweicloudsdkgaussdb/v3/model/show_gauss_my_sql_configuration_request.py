@@ -27,7 +27,7 @@ class ShowGaussMySqlConfigurationRequest:
     }
 
     def __init__(self, x_language=None, configuration_id=None):
-        """ShowGaussMySqlConfigurationRequest
+        r"""ShowGaussMySqlConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGaussMySqlConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlConfigurationRequest.
+        r"""Gets the x_language of this ShowGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowGaussMySqlConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlConfigurationRequest.
+        r"""Sets the x_language of this ShowGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowGaussMySqlConfigurationRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this ShowGaussMySqlConfigurationRequest.
+        r"""Gets the configuration_id of this ShowGaussMySqlConfigurationRequest.
 
         参数模板ID。
 
@@ -82,7 +82,7 @@ class ShowGaussMySqlConfigurationRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this ShowGaussMySqlConfigurationRequest.
+        r"""Sets the configuration_id of this ShowGaussMySqlConfigurationRequest.
 
         参数模板ID。
 

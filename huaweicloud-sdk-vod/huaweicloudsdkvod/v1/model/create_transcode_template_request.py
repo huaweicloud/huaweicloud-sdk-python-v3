@@ -25,7 +25,7 @@ class CreateTranscodeTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTranscodeTemplateRequest
+        r"""CreateTranscodeTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTranscodeTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTranscodeTemplateRequest.
+        r"""Gets the body of this CreateTranscodeTemplateRequest.
 
         :return: The body of this CreateTranscodeTemplateRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplate`
@@ -52,7 +52,7 @@ class CreateTranscodeTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTranscodeTemplateRequest.
+        r"""Sets the body of this CreateTranscodeTemplateRequest.
 
         :param body: The body of this CreateTranscodeTemplateRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplate`

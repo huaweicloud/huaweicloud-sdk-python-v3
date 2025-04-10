@@ -31,7 +31,7 @@ class ListHostResultsRequest:
     }
 
     def __init__(self, host_id=None, scan_id=None, offset=None, limit=None):
-        """ListHostResultsRequest
+        r"""ListHostResultsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListHostResultsRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListHostResultsRequest.
+        r"""Gets the host_id of this ListHostResultsRequest.
 
         主机ID
 
@@ -73,7 +73,7 @@ class ListHostResultsRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListHostResultsRequest.
+        r"""Sets the host_id of this ListHostResultsRequest.
 
         主机ID
 
@@ -84,7 +84,7 @@ class ListHostResultsRequest:
 
     @property
     def scan_id(self):
-        """Gets the scan_id of this ListHostResultsRequest.
+        r"""Gets the scan_id of this ListHostResultsRequest.
 
         扫描ID
 
@@ -95,7 +95,7 @@ class ListHostResultsRequest:
 
     @scan_id.setter
     def scan_id(self, scan_id):
-        """Sets the scan_id of this ListHostResultsRequest.
+        r"""Sets the scan_id of this ListHostResultsRequest.
 
         扫描ID
 
@@ -106,7 +106,7 @@ class ListHostResultsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostResultsRequest.
+        r"""Gets the offset of this ListHostResultsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -117,7 +117,7 @@ class ListHostResultsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostResultsRequest.
+        r"""Sets the offset of this ListHostResultsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -128,7 +128,7 @@ class ListHostResultsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostResultsRequest.
+        r"""Gets the limit of this ListHostResultsRequest.
 
         分页查询，每页显示的条目数量
 
@@ -139,7 +139,7 @@ class ListHostResultsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostResultsRequest.
+        r"""Sets the limit of this ListHostResultsRequest.
 
         分页查询，每页显示的条目数量
 

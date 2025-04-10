@@ -26,7 +26,7 @@ class ImportImageQuickResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ImportImageQuickResponse
+        r"""ImportImageQuickResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportImageQuickResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportImageQuickResponse.
+        r"""Gets the job_id of this ImportImageQuickResponse.
 
         异步任务ID。
 
@@ -55,7 +55,7 @@ class ImportImageQuickResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportImageQuickResponse.
+        r"""Sets the job_id of this ImportImageQuickResponse.
 
         异步任务ID。
 

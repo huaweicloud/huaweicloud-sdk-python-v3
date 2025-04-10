@@ -26,7 +26,7 @@ class ShowPrivateModuleVersionContentResponse(SdkResponse):
     }
 
     def __init__(self, location=None):
-        """ShowPrivateModuleVersionContentResponse
+        r"""ShowPrivateModuleVersionContentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPrivateModuleVersionContentResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowPrivateModuleVersionContentResponse.
+        r"""Gets the location of this ShowPrivateModuleVersionContentResponse.
 
         :return: The location of this ShowPrivateModuleVersionContentResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowPrivateModuleVersionContentResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowPrivateModuleVersionContentResponse.
+        r"""Sets the location of this ShowPrivateModuleVersionContentResponse.
 
         :param location: The location of this ShowPrivateModuleVersionContentResponse.
         :type location: str

@@ -23,7 +23,7 @@ class ListTenantProfilesRequest:
     }
 
     def __init__(self):
-        """ListTenantProfilesRequest
+        r"""ListTenantProfilesRequest
 
         The model defined in huaweicloud sdk
 

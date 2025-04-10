@@ -54,7 +54,7 @@ class ShowFunctionCodeResponse(SdkResponse):
     }
 
     def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None):
-        """ShowFunctionCodeResponse
+        r"""ShowFunctionCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ShowFunctionCodeResponse.
+        r"""Gets the func_urn of this ShowFunctionCodeResponse.
 
         函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -153,7 +153,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ShowFunctionCodeResponse.
+        r"""Sets the func_urn of this ShowFunctionCodeResponse.
 
         函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -164,7 +164,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def func_name(self):
-        """Gets the func_name of this ShowFunctionCodeResponse.
+        r"""Gets the func_name of this ShowFunctionCodeResponse.
 
         函数名称。
 
@@ -175,7 +175,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this ShowFunctionCodeResponse.
+        r"""Sets the func_name of this ShowFunctionCodeResponse.
 
         函数名称。
 
@@ -186,7 +186,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowFunctionCodeResponse.
+        r"""Gets the domain_id of this ShowFunctionCodeResponse.
 
         域名id。
 
@@ -197,7 +197,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowFunctionCodeResponse.
+        r"""Sets the domain_id of this ShowFunctionCodeResponse.
 
         域名id。
 
@@ -208,7 +208,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def runtime(self):
-        """Gets the runtime of this ShowFunctionCodeResponse.
+        r"""Gets the runtime of this ShowFunctionCodeResponse.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -219,7 +219,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ShowFunctionCodeResponse.
+        r"""Sets the runtime of this ShowFunctionCodeResponse.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -230,7 +230,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def code_type(self):
-        """Gets the code_type of this ShowFunctionCodeResponse.
+        r"""Gets the code_type of this ShowFunctionCodeResponse.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -241,7 +241,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this ShowFunctionCodeResponse.
+        r"""Sets the code_type of this ShowFunctionCodeResponse.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -252,7 +252,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def code_url(self):
-        """Gets the code_url of this ShowFunctionCodeResponse.
+        r"""Gets the code_url of this ShowFunctionCodeResponse.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -263,7 +263,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this ShowFunctionCodeResponse.
+        r"""Sets the code_url of this ShowFunctionCodeResponse.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -274,7 +274,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def code_filename(self):
-        """Gets the code_filename of this ShowFunctionCodeResponse.
+        r"""Gets the code_filename of this ShowFunctionCodeResponse.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -285,7 +285,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @code_filename.setter
     def code_filename(self, code_filename):
-        """Sets the code_filename of this ShowFunctionCodeResponse.
+        r"""Sets the code_filename of this ShowFunctionCodeResponse.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -296,7 +296,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def code_size(self):
-        """Gets the code_size of this ShowFunctionCodeResponse.
+        r"""Gets the code_size of this ShowFunctionCodeResponse.
 
         函数大小，单位：字节。
 
@@ -307,7 +307,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @code_size.setter
     def code_size(self, code_size):
-        """Sets the code_size of this ShowFunctionCodeResponse.
+        r"""Sets the code_size of this ShowFunctionCodeResponse.
 
         函数大小，单位：字节。
 
@@ -318,7 +318,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def digest(self):
-        """Gets the digest of this ShowFunctionCodeResponse.
+        r"""Gets the digest of this ShowFunctionCodeResponse.
 
         函数代码SHA512 hash值，用于判断函数是否变化。
 
@@ -329,7 +329,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this ShowFunctionCodeResponse.
+        r"""Sets the digest of this ShowFunctionCodeResponse.
 
         函数代码SHA512 hash值，用于判断函数是否变化。
 
@@ -340,7 +340,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ShowFunctionCodeResponse.
+        r"""Gets the last_modified of this ShowFunctionCodeResponse.
 
         函数最后一次更新时间。
 
@@ -351,7 +351,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ShowFunctionCodeResponse.
+        r"""Sets the last_modified of this ShowFunctionCodeResponse.
 
         函数最后一次更新时间。
 
@@ -362,7 +362,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def func_code(self):
-        """Gets the func_code of this ShowFunctionCodeResponse.
+        r"""Gets the func_code of this ShowFunctionCodeResponse.
 
         :return: The func_code of this ShowFunctionCodeResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -371,7 +371,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @func_code.setter
     def func_code(self, func_code):
-        """Sets the func_code of this ShowFunctionCodeResponse.
+        r"""Sets the func_code of this ShowFunctionCodeResponse.
 
         :param func_code: The func_code of this ShowFunctionCodeResponse.
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -380,7 +380,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def depend_list(self):
-        """Gets the depend_list of this ShowFunctionCodeResponse.
+        r"""Gets the depend_list of this ShowFunctionCodeResponse.
 
         依赖id列表
 
@@ -391,7 +391,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @depend_list.setter
     def depend_list(self, depend_list):
-        """Sets the depend_list of this ShowFunctionCodeResponse.
+        r"""Sets the depend_list of this ShowFunctionCodeResponse.
 
         依赖id列表
 
@@ -402,7 +402,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def depend_version_list(self):
-        """Gets the depend_version_list of this ShowFunctionCodeResponse.
+        r"""Gets the depend_version_list of this ShowFunctionCodeResponse.
 
         依赖版本id列表
 
@@ -413,7 +413,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @depend_version_list.setter
     def depend_version_list(self, depend_version_list):
-        """Sets the depend_version_list of this ShowFunctionCodeResponse.
+        r"""Sets the depend_version_list of this ShowFunctionCodeResponse.
 
         依赖版本id列表
 
@@ -424,7 +424,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def strategy_config(self):
-        """Gets the strategy_config of this ShowFunctionCodeResponse.
+        r"""Gets the strategy_config of this ShowFunctionCodeResponse.
 
         :return: The strategy_config of this ShowFunctionCodeResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -433,7 +433,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @strategy_config.setter
     def strategy_config(self, strategy_config):
-        """Sets the strategy_config of this ShowFunctionCodeResponse.
+        r"""Sets the strategy_config of this ShowFunctionCodeResponse.
 
         :param strategy_config: The strategy_config of this ShowFunctionCodeResponse.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -442,7 +442,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this ShowFunctionCodeResponse.
+        r"""Gets the dependencies of this ShowFunctionCodeResponse.
 
         函数依赖代码包列表。
 
@@ -453,7 +453,7 @@ class ShowFunctionCodeResponse(SdkResponse):
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this ShowFunctionCodeResponse.
+        r"""Sets the dependencies of this ShowFunctionCodeResponse.
 
         函数依赖代码包列表。
 

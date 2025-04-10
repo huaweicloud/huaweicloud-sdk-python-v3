@@ -25,7 +25,7 @@ class CreateMetaStudioOrdersReq:
     }
 
     def __init__(self, cloud_services=None):
-        """CreateMetaStudioOrdersReq
+        r"""CreateMetaStudioOrdersReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMetaStudioOrdersReq:
 
     @property
     def cloud_services(self):
-        """Gets the cloud_services of this CreateMetaStudioOrdersReq.
+        r"""Gets the cloud_services of this CreateMetaStudioOrdersReq.
 
         云服务信息列表
 
@@ -54,7 +54,7 @@ class CreateMetaStudioOrdersReq:
 
     @cloud_services.setter
     def cloud_services(self, cloud_services):
-        """Sets the cloud_services of this CreateMetaStudioOrdersReq.
+        r"""Sets the cloud_services of this CreateMetaStudioOrdersReq.
 
         云服务信息列表
 

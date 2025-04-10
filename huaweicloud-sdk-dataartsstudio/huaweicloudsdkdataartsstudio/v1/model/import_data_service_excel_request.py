@@ -29,7 +29,7 @@ class ImportDataServiceExcelRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """ImportDataServiceExcelRequest
+        r"""ImportDataServiceExcelRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ImportDataServiceExcelRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportDataServiceExcelRequest.
+        r"""Gets the workspace of this ImportDataServiceExcelRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class ImportDataServiceExcelRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportDataServiceExcelRequest.
+        r"""Sets the workspace of this ImportDataServiceExcelRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class ImportDataServiceExcelRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ImportDataServiceExcelRequest.
+        r"""Gets the dlm_type of this ImportDataServiceExcelRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class ImportDataServiceExcelRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ImportDataServiceExcelRequest.
+        r"""Sets the dlm_type of this ImportDataServiceExcelRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class ImportDataServiceExcelRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportDataServiceExcelRequest.
+        r"""Gets the body of this ImportDataServiceExcelRequest.
 
         :return: The body of this ImportDataServiceExcelRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportDataServiceExcelRequestBody`
@@ -109,7 +109,7 @@ class ImportDataServiceExcelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportDataServiceExcelRequest.
+        r"""Sets the body of this ImportDataServiceExcelRequest.
 
         :param body: The body of this ImportDataServiceExcelRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ImportDataServiceExcelRequestBody`

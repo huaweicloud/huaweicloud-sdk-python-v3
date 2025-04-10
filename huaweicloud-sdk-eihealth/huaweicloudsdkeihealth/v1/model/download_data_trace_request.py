@@ -27,7 +27,7 @@ class DownloadDataTraceRequest:
     }
 
     def __init__(self, x_language=None, eihealth_project_id=None):
-        """DownloadDataTraceRequest
+        r"""DownloadDataTraceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadDataTraceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadDataTraceRequest.
+        r"""Gets the x_language of this DownloadDataTraceRequest.
 
         Locale语言信息, zh_cn返回中文，en-us返回英文
 
@@ -59,7 +59,7 @@ class DownloadDataTraceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadDataTraceRequest.
+        r"""Sets the x_language of this DownloadDataTraceRequest.
 
         Locale语言信息, zh_cn返回中文，en-us返回英文
 
@@ -70,7 +70,7 @@ class DownloadDataTraceRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DownloadDataTraceRequest.
+        r"""Gets the eihealth_project_id of this DownloadDataTraceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -81,7 +81,7 @@ class DownloadDataTraceRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DownloadDataTraceRequest.
+        r"""Sets the eihealth_project_id of this DownloadDataTraceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 

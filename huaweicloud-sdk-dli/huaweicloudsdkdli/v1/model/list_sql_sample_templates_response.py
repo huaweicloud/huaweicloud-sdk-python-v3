@@ -32,7 +32,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, sqls=None, sql_count=None):
-        """ListSqlSampleTemplatesResponse
+        r"""ListSqlSampleTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListSqlSampleTemplatesResponse.
+        r"""Gets the is_success of this ListSqlSampleTemplatesResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListSqlSampleTemplatesResponse.
+        r"""Sets the is_success of this ListSqlSampleTemplatesResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListSqlSampleTemplatesResponse.
+        r"""Gets the message of this ListSqlSampleTemplatesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListSqlSampleTemplatesResponse.
+        r"""Sets the message of this ListSqlSampleTemplatesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @property
     def sqls(self):
-        """Gets the sqls of this ListSqlSampleTemplatesResponse.
+        r"""Gets the sqls of this ListSqlSampleTemplatesResponse.
 
         样例模板信息。
 
@@ -120,7 +120,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @sqls.setter
     def sqls(self, sqls):
-        """Sets the sqls of this ListSqlSampleTemplatesResponse.
+        r"""Sets the sqls of this ListSqlSampleTemplatesResponse.
 
         样例模板信息。
 
@@ -131,7 +131,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @property
     def sql_count(self):
-        """Gets the sql_count of this ListSqlSampleTemplatesResponse.
+        r"""Gets the sql_count of this ListSqlSampleTemplatesResponse.
 
         样例模板个数。
 
@@ -142,7 +142,7 @@ class ListSqlSampleTemplatesResponse(SdkResponse):
 
     @sql_count.setter
     def sql_count(self, sql_count):
-        """Sets the sql_count of this ListSqlSampleTemplatesResponse.
+        r"""Sets the sql_count of this ListSqlSampleTemplatesResponse.
 
         样例模板个数。
 

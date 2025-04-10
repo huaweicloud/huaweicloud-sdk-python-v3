@@ -28,7 +28,7 @@ class BatchDeleteMembersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, members=None):
-        """BatchDeleteMembersResponse
+        r"""BatchDeleteMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteMembersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchDeleteMembersResponse.
+        r"""Gets the request_id of this BatchDeleteMembersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class BatchDeleteMembersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchDeleteMembersResponse.
+        r"""Sets the request_id of this BatchDeleteMembersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class BatchDeleteMembersResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this BatchDeleteMembersResponse.
+        r"""Gets the members of this BatchDeleteMembersResponse.
 
         后端服务器对象列表。
 
@@ -84,7 +84,7 @@ class BatchDeleteMembersResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this BatchDeleteMembersResponse.
+        r"""Sets the members of this BatchDeleteMembersResponse.
 
         后端服务器对象列表。
 

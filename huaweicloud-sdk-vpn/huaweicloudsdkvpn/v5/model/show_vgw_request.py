@@ -25,7 +25,7 @@ class ShowVgwRequest:
     }
 
     def __init__(self, vgw_id=None):
-        """ShowVgwRequest
+        r"""ShowVgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVgwRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this ShowVgwRequest.
+        r"""Gets the vgw_id of this ShowVgwRequest.
 
         VPN网关实例ID
 
@@ -53,7 +53,7 @@ class ShowVgwRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this ShowVgwRequest.
+        r"""Sets the vgw_id of this ShowVgwRequest.
 
         VPN网关实例ID
 

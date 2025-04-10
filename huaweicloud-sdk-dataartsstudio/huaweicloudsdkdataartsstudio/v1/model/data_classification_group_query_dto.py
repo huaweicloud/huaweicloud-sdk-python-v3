@@ -41,7 +41,7 @@ class DataClassificationGroupQueryDTO:
     }
 
     def __init__(self, uuid=None, name=None, rules=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, project_id=None):
-        """DataClassificationGroupQueryDTO
+        r"""DataClassificationGroupQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def uuid(self):
-        """Gets the uuid of this DataClassificationGroupQueryDTO.
+        r"""Gets the uuid of this DataClassificationGroupQueryDTO.
 
         规则组ID
 
@@ -110,7 +110,7 @@ class DataClassificationGroupQueryDTO:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this DataClassificationGroupQueryDTO.
+        r"""Sets the uuid of this DataClassificationGroupQueryDTO.
 
         规则组ID
 
@@ -121,7 +121,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationGroupQueryDTO.
+        r"""Gets the name of this DataClassificationGroupQueryDTO.
 
         规则组名称
 
@@ -132,7 +132,7 @@ class DataClassificationGroupQueryDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationGroupQueryDTO.
+        r"""Sets the name of this DataClassificationGroupQueryDTO.
 
         规则组名称
 
@@ -143,7 +143,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def rules(self):
-        """Gets the rules of this DataClassificationGroupQueryDTO.
+        r"""Gets the rules of this DataClassificationGroupQueryDTO.
 
         规则实体
 
@@ -154,7 +154,7 @@ class DataClassificationGroupQueryDTO:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this DataClassificationGroupQueryDTO.
+        r"""Sets the rules of this DataClassificationGroupQueryDTO.
 
         规则实体
 
@@ -165,7 +165,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationGroupQueryDTO.
+        r"""Gets the description of this DataClassificationGroupQueryDTO.
 
         规则组描述
 
@@ -176,7 +176,7 @@ class DataClassificationGroupQueryDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationGroupQueryDTO.
+        r"""Sets the description of this DataClassificationGroupQueryDTO.
 
         规则组描述
 
@@ -187,7 +187,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def created_by(self):
-        """Gets the created_by of this DataClassificationGroupQueryDTO.
+        r"""Gets the created_by of this DataClassificationGroupQueryDTO.
 
         规则组创建人
 
@@ -198,7 +198,7 @@ class DataClassificationGroupQueryDTO:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this DataClassificationGroupQueryDTO.
+        r"""Sets the created_by of this DataClassificationGroupQueryDTO.
 
         规则组创建人
 
@@ -209,7 +209,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def created_at(self):
-        """Gets the created_at of this DataClassificationGroupQueryDTO.
+        r"""Gets the created_at of this DataClassificationGroupQueryDTO.
 
         规则组创建时间
 
@@ -220,7 +220,7 @@ class DataClassificationGroupQueryDTO:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DataClassificationGroupQueryDTO.
+        r"""Sets the created_at of this DataClassificationGroupQueryDTO.
 
         规则组创建时间
 
@@ -231,7 +231,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this DataClassificationGroupQueryDTO.
+        r"""Gets the updated_by of this DataClassificationGroupQueryDTO.
 
         规则组更新人
 
@@ -242,7 +242,7 @@ class DataClassificationGroupQueryDTO:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this DataClassificationGroupQueryDTO.
+        r"""Sets the updated_by of this DataClassificationGroupQueryDTO.
 
         规则组更新人
 
@@ -253,7 +253,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DataClassificationGroupQueryDTO.
+        r"""Gets the updated_at of this DataClassificationGroupQueryDTO.
 
         规则组更新时间
 
@@ -264,7 +264,7 @@ class DataClassificationGroupQueryDTO:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DataClassificationGroupQueryDTO.
+        r"""Sets the updated_at of this DataClassificationGroupQueryDTO.
 
         规则组更新时间
 
@@ -275,7 +275,7 @@ class DataClassificationGroupQueryDTO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataClassificationGroupQueryDTO.
+        r"""Gets the project_id of this DataClassificationGroupQueryDTO.
 
         项目ID
 
@@ -286,7 +286,7 @@ class DataClassificationGroupQueryDTO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataClassificationGroupQueryDTO.
+        r"""Sets the project_id of this DataClassificationGroupQueryDTO.
 
         项目ID
 

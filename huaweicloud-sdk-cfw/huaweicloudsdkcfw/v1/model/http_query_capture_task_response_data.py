@@ -31,7 +31,7 @@ class HttpQueryCaptureTaskResponseData:
     }
 
     def __init__(self, limit=None, offset=None, total=None, records=None):
-        """HttpQueryCaptureTaskResponseData
+        r"""HttpQueryCaptureTaskResponseData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this HttpQueryCaptureTaskResponseData.
+        r"""Gets the limit of this HttpQueryCaptureTaskResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -75,7 +75,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this HttpQueryCaptureTaskResponseData.
+        r"""Sets the limit of this HttpQueryCaptureTaskResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -86,7 +86,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this HttpQueryCaptureTaskResponseData.
+        r"""Gets the offset of this HttpQueryCaptureTaskResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -97,7 +97,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this HttpQueryCaptureTaskResponseData.
+        r"""Sets the offset of this HttpQueryCaptureTaskResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -108,7 +108,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @property
     def total(self):
-        """Gets the total of this HttpQueryCaptureTaskResponseData.
+        r"""Gets the total of this HttpQueryCaptureTaskResponseData.
 
         抓包任务总数
 
@@ -119,7 +119,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this HttpQueryCaptureTaskResponseData.
+        r"""Sets the total of this HttpQueryCaptureTaskResponseData.
 
         抓包任务总数
 
@@ -130,7 +130,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @property
     def records(self):
-        """Gets the records of this HttpQueryCaptureTaskResponseData.
+        r"""Gets the records of this HttpQueryCaptureTaskResponseData.
 
         抓包任务列表
 
@@ -141,7 +141,7 @@ class HttpQueryCaptureTaskResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this HttpQueryCaptureTaskResponseData.
+        r"""Sets the records of this HttpQueryCaptureTaskResponseData.
 
         抓包任务列表
 

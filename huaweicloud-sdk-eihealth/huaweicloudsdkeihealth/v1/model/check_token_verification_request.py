@@ -23,7 +23,7 @@ class CheckTokenVerificationRequest:
     }
 
     def __init__(self):
-        """CheckTokenVerificationRequest
+        r"""CheckTokenVerificationRequest
 
         The model defined in huaweicloud sdk
 

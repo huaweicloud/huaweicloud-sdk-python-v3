@@ -27,7 +27,7 @@ class Span:
     }
 
     def __init__(self, start=None, end=None):
-        """Span
+        r"""Span
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Span:
 
     @property
     def start(self):
-        """Gets the start of this Span.
+        r"""Gets the start of this Span.
 
         :return: The start of this Span.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Position`
@@ -57,7 +57,7 @@ class Span:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this Span.
+        r"""Sets the start of this Span.
 
         :param start: The start of this Span.
         :type start: :class:`huaweicloudsdkiamaccessanalyzer.v1.Position`
@@ -66,7 +66,7 @@ class Span:
 
     @property
     def end(self):
-        """Gets the end of this Span.
+        r"""Gets the end of this Span.
 
         :return: The end of this Span.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Position`
@@ -75,7 +75,7 @@ class Span:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this Span.
+        r"""Sets the end of this Span.
 
         :param end: The end of this Span.
         :type end: :class:`huaweicloudsdkiamaccessanalyzer.v1.Position`

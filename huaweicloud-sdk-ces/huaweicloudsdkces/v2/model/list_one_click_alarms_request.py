@@ -23,7 +23,7 @@ class ListOneClickAlarmsRequest:
     }
 
     def __init__(self):
-        """ListOneClickAlarmsRequest
+        r"""ListOneClickAlarmsRequest
 
         The model defined in huaweicloud sdk
 

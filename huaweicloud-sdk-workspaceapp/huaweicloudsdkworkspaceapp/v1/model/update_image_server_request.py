@@ -27,7 +27,7 @@ class UpdateImageServerRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateImageServerRequest
+        r"""UpdateImageServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateImageServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateImageServerRequest.
+        r"""Gets the server_id of this UpdateImageServerRequest.
 
         镜像实例唯一标识。
 
@@ -60,7 +60,7 @@ class UpdateImageServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateImageServerRequest.
+        r"""Sets the server_id of this UpdateImageServerRequest.
 
         镜像实例唯一标识。
 
@@ -71,7 +71,7 @@ class UpdateImageServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateImageServerRequest.
+        r"""Gets the body of this UpdateImageServerRequest.
 
         :return: The body of this UpdateImageServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateImageServerReq`
@@ -80,7 +80,7 @@ class UpdateImageServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateImageServerRequest.
+        r"""Sets the body of this UpdateImageServerRequest.
 
         :param body: The body of this UpdateImageServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdateImageServerReq`

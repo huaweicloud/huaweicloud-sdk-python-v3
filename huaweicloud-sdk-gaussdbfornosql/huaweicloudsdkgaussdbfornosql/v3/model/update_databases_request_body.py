@@ -27,11 +27,11 @@ class UpdateDatabasesRequestBody:
     }
 
     def __init__(self, action=None, db_id=None):
-        """UpdateDatabasesRequestBody
+        r"""UpdateDatabasesRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param action: 对实例的操作: - flush:清理数据
+        :param action: 对实例的操作:  flush:清理数据
         :type action: str
         :param db_id: 指定需要清理的DB_ID,当action为flush时,才会生效。
         :type db_id: int
@@ -49,9 +49,9 @@ class UpdateDatabasesRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateDatabasesRequestBody.
+        r"""Gets the action of this UpdateDatabasesRequestBody.
 
-        对实例的操作: - flush:清理数据
+        对实例的操作:  flush:清理数据
 
         :return: The action of this UpdateDatabasesRequestBody.
         :rtype: str
@@ -60,9 +60,9 @@ class UpdateDatabasesRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateDatabasesRequestBody.
+        r"""Sets the action of this UpdateDatabasesRequestBody.
 
-        对实例的操作: - flush:清理数据
+        对实例的操作:  flush:清理数据
 
         :param action: The action of this UpdateDatabasesRequestBody.
         :type action: str
@@ -71,7 +71,7 @@ class UpdateDatabasesRequestBody:
 
     @property
     def db_id(self):
-        """Gets the db_id of this UpdateDatabasesRequestBody.
+        r"""Gets the db_id of this UpdateDatabasesRequestBody.
 
         指定需要清理的DB_ID,当action为flush时,才会生效。
 
@@ -82,7 +82,7 @@ class UpdateDatabasesRequestBody:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this UpdateDatabasesRequestBody.
+        r"""Sets the db_id of this UpdateDatabasesRequestBody.
 
         指定需要清理的DB_ID,当action为flush时,才会生效。
 

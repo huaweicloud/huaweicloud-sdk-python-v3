@@ -27,7 +27,7 @@ class LogoffDesktopsReq:
     }
 
     def __init__(self, desktop_ids=None, message=None):
-        """LogoffDesktopsReq
+        r"""LogoffDesktopsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LogoffDesktopsReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this LogoffDesktopsReq.
+        r"""Gets the desktop_ids of this LogoffDesktopsReq.
 
         计算机id列表。
 
@@ -61,7 +61,7 @@ class LogoffDesktopsReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this LogoffDesktopsReq.
+        r"""Sets the desktop_ids of this LogoffDesktopsReq.
 
         计算机id列表。
 
@@ -72,7 +72,7 @@ class LogoffDesktopsReq:
 
     @property
     def message(self):
-        """Gets the message of this LogoffDesktopsReq.
+        r"""Gets the message of this LogoffDesktopsReq.
 
         下发注销桌面任务时，给用户发送的提示信息。
 
@@ -83,7 +83,7 @@ class LogoffDesktopsReq:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this LogoffDesktopsReq.
+        r"""Sets the message of this LogoffDesktopsReq.
 
         下发注销桌面任务时，给用户发送的提示信息。
 

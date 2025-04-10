@@ -29,7 +29,7 @@ class CertForm:
     }
 
     def __init__(self, cert_content=None, name=None, private_key=None):
-        """CertForm
+        r"""CertForm
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CertForm:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this CertForm.
+        r"""Gets the cert_content of this CertForm.
 
         证书内容
 
@@ -65,7 +65,7 @@ class CertForm:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this CertForm.
+        r"""Sets the cert_content of this CertForm.
 
         证书内容
 
@@ -76,7 +76,7 @@ class CertForm:
 
     @property
     def name(self):
-        """Gets the name of this CertForm.
+        r"""Gets the name of this CertForm.
 
         证书名称。长度为4 ~ 50位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。
 
@@ -87,7 +87,7 @@ class CertForm:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertForm.
+        r"""Sets the name of this CertForm.
 
         证书名称。长度为4 ~ 50位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。
 
@@ -98,7 +98,7 @@ class CertForm:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CertForm.
+        r"""Gets the private_key of this CertForm.
 
         私钥内容
 
@@ -109,7 +109,7 @@ class CertForm:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CertForm.
+        r"""Sets the private_key of this CertForm.
 
         私钥内容
 

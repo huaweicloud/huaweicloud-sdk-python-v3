@@ -37,7 +37,7 @@ class ListLabelsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, label_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListLabelsRequest
+        r"""ListLabelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListLabelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLabelsRequest.
+        r"""Gets the offset of this ListLabelsRequest.
 
         查询偏移量，默认0
 
@@ -96,7 +96,7 @@ class ListLabelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLabelsRequest.
+        r"""Sets the offset of this ListLabelsRequest.
 
         查询偏移量，默认0
 
@@ -107,7 +107,7 @@ class ListLabelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLabelsRequest.
+        r"""Gets the limit of this ListLabelsRequest.
 
         查询数量，默认10，最大100
 
@@ -118,7 +118,7 @@ class ListLabelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLabelsRequest.
+        r"""Sets the limit of this ListLabelsRequest.
 
         查询数量，默认10，最大100
 
@@ -129,7 +129,7 @@ class ListLabelsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListLabelsRequest.
+        r"""Gets the name of this ListLabelsRequest.
 
         标签名称，最大64，支持模糊查询
 
@@ -140,7 +140,7 @@ class ListLabelsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLabelsRequest.
+        r"""Sets the name of this ListLabelsRequest.
 
         标签名称，最大64，支持模糊查询
 
@@ -151,7 +151,7 @@ class ListLabelsRequest:
 
     @property
     def label_id(self):
-        """Gets the label_id of this ListLabelsRequest.
+        r"""Gets the label_id of this ListLabelsRequest.
 
         标签标识
 
@@ -162,7 +162,7 @@ class ListLabelsRequest:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this ListLabelsRequest.
+        r"""Sets the label_id of this ListLabelsRequest.
 
         标签标识
 
@@ -173,7 +173,7 @@ class ListLabelsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListLabelsRequest.
+        r"""Gets the x_site of this ListLabelsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -184,7 +184,7 @@ class ListLabelsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListLabelsRequest.
+        r"""Sets the x_site of this ListLabelsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -195,7 +195,7 @@ class ListLabelsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListLabelsRequest.
+        r"""Gets the x_language of this ListLabelsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -206,7 +206,7 @@ class ListLabelsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListLabelsRequest.
+        r"""Sets the x_language of this ListLabelsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -217,7 +217,7 @@ class ListLabelsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListLabelsRequest.
+        r"""Gets the x_time_zone of this ListLabelsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -228,7 +228,7 @@ class ListLabelsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListLabelsRequest.
+        r"""Sets the x_time_zone of this ListLabelsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

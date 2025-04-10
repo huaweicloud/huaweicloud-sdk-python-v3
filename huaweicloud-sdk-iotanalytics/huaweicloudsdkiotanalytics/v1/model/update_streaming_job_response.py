@@ -32,7 +32,7 @@ class UpdateStreamingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_state=None, status=None, check_info=None):
-        """UpdateStreamingJobResponse
+        r"""UpdateStreamingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateStreamingJobResponse.
+        r"""Gets the job_id of this UpdateStreamingJobResponse.
 
         作业ID
 
@@ -76,7 +76,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateStreamingJobResponse.
+        r"""Sets the job_id of this UpdateStreamingJobResponse.
 
         作业ID
 
@@ -87,7 +87,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @property
     def job_state(self):
-        """Gets the job_state of this UpdateStreamingJobResponse.
+        r"""Gets the job_state of this UpdateStreamingJobResponse.
 
         作业状态
 
@@ -98,7 +98,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this UpdateStreamingJobResponse.
+        r"""Sets the job_state of this UpdateStreamingJobResponse.
 
         作业状态
 
@@ -109,7 +109,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateStreamingJobResponse.
+        r"""Gets the status of this UpdateStreamingJobResponse.
 
         操作结果
 
@@ -120,7 +120,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateStreamingJobResponse.
+        r"""Sets the status of this UpdateStreamingJobResponse.
 
         操作结果
 
@@ -131,7 +131,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @property
     def check_info(self):
-        """Gets the check_info of this UpdateStreamingJobResponse.
+        r"""Gets the check_info of this UpdateStreamingJobResponse.
 
         作业错误详情
 
@@ -142,7 +142,7 @@ class UpdateStreamingJobResponse(SdkResponse):
 
     @check_info.setter
     def check_info(self, check_info):
-        """Sets the check_info of this UpdateStreamingJobResponse.
+        r"""Sets the check_info of this UpdateStreamingJobResponse.
 
         作业错误详情
 

@@ -28,7 +28,7 @@ class SearchAuthorizeAppResponse(SdkResponse):
     }
 
     def __init__(self, total=None, records=None):
-        """SearchAuthorizeAppResponse
+        r"""SearchAuthorizeAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchAuthorizeAppResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this SearchAuthorizeAppResponse.
+        r"""Gets the total of this SearchAuthorizeAppResponse.
 
         符合条件的APP总数
 
@@ -62,7 +62,7 @@ class SearchAuthorizeAppResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchAuthorizeAppResponse.
+        r"""Sets the total of this SearchAuthorizeAppResponse.
 
         符合条件的APP总数
 
@@ -73,7 +73,7 @@ class SearchAuthorizeAppResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this SearchAuthorizeAppResponse.
+        r"""Gets the records of this SearchAuthorizeAppResponse.
 
         本次返回的APP列表
 
@@ -84,7 +84,7 @@ class SearchAuthorizeAppResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this SearchAuthorizeAppResponse.
+        r"""Sets the records of this SearchAuthorizeAppResponse.
 
         本次返回的APP列表
 

@@ -29,7 +29,7 @@ class User:
     }
 
     def __init__(self, user_name=None, user_source=None, user_id=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class User:
 
     @property
     def user_name(self):
-        """Gets the user_name of this User.
+        r"""Gets the user_name of this User.
 
         用户名
 
@@ -65,7 +65,7 @@ class User:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this User.
+        r"""Sets the user_name of this User.
 
         用户名
 
@@ -76,7 +76,7 @@ class User:
 
     @property
     def user_source(self):
-        """Gets the user_source of this User.
+        r"""Gets the user_source of this User.
 
         用户类型 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
@@ -87,7 +87,7 @@ class User:
 
     @user_source.setter
     def user_source(self, user_source):
-        """Sets the user_source of this User.
+        r"""Sets the user_source of this User.
 
         用户类型 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
@@ -98,7 +98,7 @@ class User:
 
     @property
     def user_id(self):
-        """Gets the user_id of this User.
+        r"""Gets the user_id of this User.
 
         用户ID
 
@@ -109,7 +109,7 @@ class User:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this User.
+        r"""Sets the user_id of this User.
 
         用户ID
 

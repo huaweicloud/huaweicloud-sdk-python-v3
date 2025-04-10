@@ -35,7 +35,7 @@ class AdminDTO:
     }
 
     def __init__(self, account=None, name=None, pwd=None, email=None, phone=None, country=None):
-        """AdminDTO
+        r"""AdminDTO
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AdminDTO:
 
     @property
     def account(self):
-        """Gets the account of this AdminDTO.
+        r"""Gets the account of this AdminDTO.
 
         用户帐号，帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。
 
@@ -86,7 +86,7 @@ class AdminDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AdminDTO.
+        r"""Sets the account of this AdminDTO.
 
         用户帐号，帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。
 
@@ -97,7 +97,7 @@ class AdminDTO:
 
     @property
     def name(self):
-        """Gets the name of this AdminDTO.
+        r"""Gets the name of this AdminDTO.
 
         名称。
 
@@ -108,7 +108,7 @@ class AdminDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AdminDTO.
+        r"""Sets the name of this AdminDTO.
 
         名称。
 
@@ -119,7 +119,7 @@ class AdminDTO:
 
     @property
     def pwd(self):
-        """Gets the pwd of this AdminDTO.
+        r"""Gets the pwd of this AdminDTO.
 
         若携带则以前台携带为准，否则后台默认生成,密码必须满足: * 6-32位 * 不能和帐号的正序和倒序一致 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + \\ | [ { } ] ; : \\\" ,' < . > / ?
 
@@ -130,7 +130,7 @@ class AdminDTO:
 
     @pwd.setter
     def pwd(self, pwd):
-        """Sets the pwd of this AdminDTO.
+        r"""Sets the pwd of this AdminDTO.
 
         若携带则以前台携带为准，否则后台默认生成,密码必须满足: * 6-32位 * 不能和帐号的正序和倒序一致 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + \\ | [ { } ] ; : \\\" ,' < . > / ?
 
@@ -141,7 +141,7 @@ class AdminDTO:
 
     @property
     def email(self):
-        """Gets the email of this AdminDTO.
+        r"""Gets the email of this AdminDTO.
 
         邮箱，管理员手机和邮箱必填其一，否则无法重置密码。如果企业短信开关关闭，则邮箱必填。格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
@@ -152,7 +152,7 @@ class AdminDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this AdminDTO.
+        r"""Sets the email of this AdminDTO.
 
         邮箱，管理员手机和邮箱必填其一，否则无法重置密码。如果企业短信开关关闭，则邮箱必填。格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
@@ -163,7 +163,7 @@ class AdminDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this AdminDTO.
+        r"""Gets the phone of this AdminDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -174,7 +174,7 @@ class AdminDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this AdminDTO.
+        r"""Sets the phone of this AdminDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -185,7 +185,7 @@ class AdminDTO:
 
     @property
     def country(self):
-        """Gets the country of this AdminDTO.
+        r"""Gets the country of this AdminDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -196,7 +196,7 @@ class AdminDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this AdminDTO.
+        r"""Sets the country of this AdminDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 

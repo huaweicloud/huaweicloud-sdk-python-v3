@@ -53,7 +53,7 @@ class InstanceInfo:
     }
 
     def __init__(self, instance_id=None, business_name=None, business_id=None, app_name=None, host_name=None, instance_name=None, ip_address=None, env_id=None, agent_version=None, last_heartbeat=None, register_time=None, last_modify_user_id=None, instance_status=None, last_modify_user_name=None, last_modify_time=None):
-        """InstanceInfo
+        r"""InstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class InstanceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceInfo.
+        r"""Gets the instance_id of this InstanceInfo.
 
         实例id。
 
@@ -152,7 +152,7 @@ class InstanceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceInfo.
+        r"""Sets the instance_id of this InstanceInfo.
 
         实例id。
 
@@ -163,7 +163,7 @@ class InstanceInfo:
 
     @property
     def business_name(self):
-        """Gets the business_name of this InstanceInfo.
+        r"""Gets the business_name of this InstanceInfo.
 
         应用名称。
 
@@ -174,7 +174,7 @@ class InstanceInfo:
 
     @business_name.setter
     def business_name(self, business_name):
-        """Sets the business_name of this InstanceInfo.
+        r"""Sets the business_name of this InstanceInfo.
 
         应用名称。
 
@@ -185,7 +185,7 @@ class InstanceInfo:
 
     @property
     def business_id(self):
-        """Gets the business_id of this InstanceInfo.
+        r"""Gets the business_id of this InstanceInfo.
 
         应用id。
 
@@ -196,7 +196,7 @@ class InstanceInfo:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this InstanceInfo.
+        r"""Sets the business_id of this InstanceInfo.
 
         应用id。
 
@@ -207,7 +207,7 @@ class InstanceInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this InstanceInfo.
+        r"""Gets the app_name of this InstanceInfo.
 
         组件名称。
 
@@ -218,7 +218,7 @@ class InstanceInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this InstanceInfo.
+        r"""Sets the app_name of this InstanceInfo.
 
         组件名称。
 
@@ -229,7 +229,7 @@ class InstanceInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this InstanceInfo.
+        r"""Gets the host_name of this InstanceInfo.
 
         主机名称。
 
@@ -240,7 +240,7 @@ class InstanceInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this InstanceInfo.
+        r"""Sets the host_name of this InstanceInfo.
 
         主机名称。
 
@@ -251,7 +251,7 @@ class InstanceInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceInfo.
+        r"""Gets the instance_name of this InstanceInfo.
 
         实例名称。
 
@@ -262,7 +262,7 @@ class InstanceInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceInfo.
+        r"""Sets the instance_name of this InstanceInfo.
 
         实例名称。
 
@@ -273,7 +273,7 @@ class InstanceInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this InstanceInfo.
+        r"""Gets the ip_address of this InstanceInfo.
 
         主机ip地址。
 
@@ -284,7 +284,7 @@ class InstanceInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this InstanceInfo.
+        r"""Sets the ip_address of this InstanceInfo.
 
         主机ip地址。
 
@@ -295,7 +295,7 @@ class InstanceInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this InstanceInfo.
+        r"""Gets the env_id of this InstanceInfo.
 
         环境ID。
 
@@ -306,7 +306,7 @@ class InstanceInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this InstanceInfo.
+        r"""Sets the env_id of this InstanceInfo.
 
         环境ID。
 
@@ -317,7 +317,7 @@ class InstanceInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this InstanceInfo.
+        r"""Gets the agent_version of this InstanceInfo.
 
         Javaagent版本。
 
@@ -328,7 +328,7 @@ class InstanceInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this InstanceInfo.
+        r"""Sets the agent_version of this InstanceInfo.
 
         Javaagent版本。
 
@@ -339,7 +339,7 @@ class InstanceInfo:
 
     @property
     def last_heartbeat(self):
-        """Gets the last_heartbeat of this InstanceInfo.
+        r"""Gets the last_heartbeat of this InstanceInfo.
 
         最后心跳时间。
 
@@ -350,7 +350,7 @@ class InstanceInfo:
 
     @last_heartbeat.setter
     def last_heartbeat(self, last_heartbeat):
-        """Sets the last_heartbeat of this InstanceInfo.
+        r"""Sets the last_heartbeat of this InstanceInfo.
 
         最后心跳时间。
 
@@ -361,7 +361,7 @@ class InstanceInfo:
 
     @property
     def register_time(self):
-        """Gets the register_time of this InstanceInfo.
+        r"""Gets the register_time of this InstanceInfo.
 
         注册时间。
 
@@ -372,7 +372,7 @@ class InstanceInfo:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this InstanceInfo.
+        r"""Sets the register_time of this InstanceInfo.
 
         注册时间。
 
@@ -383,7 +383,7 @@ class InstanceInfo:
 
     @property
     def last_modify_user_id(self):
-        """Gets the last_modify_user_id of this InstanceInfo.
+        r"""Gets the last_modify_user_id of this InstanceInfo.
 
         最后修改用户id。
 
@@ -394,7 +394,7 @@ class InstanceInfo:
 
     @last_modify_user_id.setter
     def last_modify_user_id(self, last_modify_user_id):
-        """Sets the last_modify_user_id of this InstanceInfo.
+        r"""Sets the last_modify_user_id of this InstanceInfo.
 
         最后修改用户id。
 
@@ -405,7 +405,7 @@ class InstanceInfo:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this InstanceInfo.
+        r"""Gets the instance_status of this InstanceInfo.
 
         实例状态。
 
@@ -416,7 +416,7 @@ class InstanceInfo:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this InstanceInfo.
+        r"""Sets the instance_status of this InstanceInfo.
 
         实例状态。
 
@@ -427,7 +427,7 @@ class InstanceInfo:
 
     @property
     def last_modify_user_name(self):
-        """Gets the last_modify_user_name of this InstanceInfo.
+        r"""Gets the last_modify_user_name of this InstanceInfo.
 
         最后修改用户名称。
 
@@ -438,7 +438,7 @@ class InstanceInfo:
 
     @last_modify_user_name.setter
     def last_modify_user_name(self, last_modify_user_name):
-        """Sets the last_modify_user_name of this InstanceInfo.
+        r"""Sets the last_modify_user_name of this InstanceInfo.
 
         最后修改用户名称。
 
@@ -449,7 +449,7 @@ class InstanceInfo:
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this InstanceInfo.
+        r"""Gets the last_modify_time of this InstanceInfo.
 
         最后修改时间。
 
@@ -460,7 +460,7 @@ class InstanceInfo:
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this InstanceInfo.
+        r"""Sets the last_modify_time of this InstanceInfo.
 
         最后修改时间。
 

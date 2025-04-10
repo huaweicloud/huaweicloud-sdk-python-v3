@@ -26,7 +26,7 @@ class ListInstancesSupportFastRestoreResponse(SdkResponse):
     }
 
     def __init__(self, support_fast_restore_list=None):
-        """ListInstancesSupportFastRestoreResponse
+        r"""ListInstancesSupportFastRestoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstancesSupportFastRestoreResponse(SdkResponse):
 
     @property
     def support_fast_restore_list(self):
-        """Gets the support_fast_restore_list of this ListInstancesSupportFastRestoreResponse.
+        r"""Gets the support_fast_restore_list of this ListInstancesSupportFastRestoreResponse.
 
         实例的极速恢复支持情况。
 
@@ -55,7 +55,7 @@ class ListInstancesSupportFastRestoreResponse(SdkResponse):
 
     @support_fast_restore_list.setter
     def support_fast_restore_list(self, support_fast_restore_list):
-        """Sets the support_fast_restore_list of this ListInstancesSupportFastRestoreResponse.
+        r"""Sets the support_fast_restore_list of this ListInstancesSupportFastRestoreResponse.
 
         实例的极速恢复支持情况。
 

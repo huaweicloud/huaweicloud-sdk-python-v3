@@ -24,7 +24,7 @@ class BatchCreateLoadbalancerTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateLoadbalancerTagsResponse
+        r"""BatchCreateLoadbalancerTagsResponse
 
         The model defined in huaweicloud sdk
 

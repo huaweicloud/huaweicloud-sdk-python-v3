@@ -47,7 +47,7 @@ class IkePolicy:
     }
 
     def __init__(self, ike_version=None, phase1_negotiation_mode=None, authentication_algorithm=None, encryption_algorithm=None, dh_group=None, authentication_method=None, lifetime_seconds=None, local_id_type=None, local_id=None, peer_id_type=None, peer_id=None, dpd=None):
-        """IkePolicy
+        r"""IkePolicy
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class IkePolicy:
 
     @property
     def ike_version(self):
-        """Gets the ike_version of this IkePolicy.
+        r"""Gets the ike_version of this IkePolicy.
 
         IKE协商版本
 
@@ -131,7 +131,7 @@ class IkePolicy:
 
     @ike_version.setter
     def ike_version(self, ike_version):
-        """Sets the ike_version of this IkePolicy.
+        r"""Sets the ike_version of this IkePolicy.
 
         IKE协商版本
 
@@ -142,7 +142,7 @@ class IkePolicy:
 
     @property
     def phase1_negotiation_mode(self):
-        """Gets the phase1_negotiation_mode of this IkePolicy.
+        r"""Gets the phase1_negotiation_mode of this IkePolicy.
 
         协商模式，ike版本为v1时生效
 
@@ -153,7 +153,7 @@ class IkePolicy:
 
     @phase1_negotiation_mode.setter
     def phase1_negotiation_mode(self, phase1_negotiation_mode):
-        """Sets the phase1_negotiation_mode of this IkePolicy.
+        r"""Sets the phase1_negotiation_mode of this IkePolicy.
 
         协商模式，ike版本为v1时生效
 
@@ -164,7 +164,7 @@ class IkePolicy:
 
     @property
     def authentication_algorithm(self):
-        """Gets the authentication_algorithm of this IkePolicy.
+        r"""Gets the authentication_algorithm of this IkePolicy.
 
         认证算法，SHA1和MD5安全性较低，请慎用
 
@@ -175,7 +175,7 @@ class IkePolicy:
 
     @authentication_algorithm.setter
     def authentication_algorithm(self, authentication_algorithm):
-        """Sets the authentication_algorithm of this IkePolicy.
+        r"""Sets the authentication_algorithm of this IkePolicy.
 
         认证算法，SHA1和MD5安全性较低，请慎用
 
@@ -186,7 +186,7 @@ class IkePolicy:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this IkePolicy.
+        r"""Gets the encryption_algorithm of this IkePolicy.
 
         加密算法，3DES安全性较低，请慎用
 
@@ -197,7 +197,7 @@ class IkePolicy:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this IkePolicy.
+        r"""Sets the encryption_algorithm of this IkePolicy.
 
         加密算法，3DES安全性较低，请慎用
 
@@ -208,7 +208,7 @@ class IkePolicy:
 
     @property
     def dh_group(self):
-        """Gets the dh_group of this IkePolicy.
+        r"""Gets the dh_group of this IkePolicy.
 
         DH密钥组
 
@@ -219,7 +219,7 @@ class IkePolicy:
 
     @dh_group.setter
     def dh_group(self, dh_group):
-        """Sets the dh_group of this IkePolicy.
+        r"""Sets the dh_group of this IkePolicy.
 
         DH密钥组
 
@@ -230,7 +230,7 @@ class IkePolicy:
 
     @property
     def authentication_method(self):
-        """Gets the authentication_method of this IkePolicy.
+        r"""Gets the authentication_method of this IkePolicy.
 
         ike协商时的认证方法
 
@@ -241,7 +241,7 @@ class IkePolicy:
 
     @authentication_method.setter
     def authentication_method(self, authentication_method):
-        """Sets the authentication_method of this IkePolicy.
+        r"""Sets the authentication_method of this IkePolicy.
 
         ike协商时的认证方法
 
@@ -252,7 +252,7 @@ class IkePolicy:
 
     @property
     def lifetime_seconds(self):
-        """Gets the lifetime_seconds of this IkePolicy.
+        r"""Gets the lifetime_seconds of this IkePolicy.
 
         表示SA的生存周期，当该生存周期超时后IKE SA将自动更新
 
@@ -263,7 +263,7 @@ class IkePolicy:
 
     @lifetime_seconds.setter
     def lifetime_seconds(self, lifetime_seconds):
-        """Sets the lifetime_seconds of this IkePolicy.
+        r"""Sets the lifetime_seconds of this IkePolicy.
 
         表示SA的生存周期，当该生存周期超时后IKE SA将自动更新
 
@@ -274,7 +274,7 @@ class IkePolicy:
 
     @property
     def local_id_type(self):
-        """Gets the local_id_type of this IkePolicy.
+        r"""Gets the local_id_type of this IkePolicy.
 
         本端ID类型
 
@@ -285,7 +285,7 @@ class IkePolicy:
 
     @local_id_type.setter
     def local_id_type(self, local_id_type):
-        """Sets the local_id_type of this IkePolicy.
+        r"""Sets the local_id_type of this IkePolicy.
 
         本端ID类型
 
@@ -296,7 +296,7 @@ class IkePolicy:
 
     @property
     def local_id(self):
-        """Gets the local_id of this IkePolicy.
+        r"""Gets the local_id of this IkePolicy.
 
         本端ID
 
@@ -307,7 +307,7 @@ class IkePolicy:
 
     @local_id.setter
     def local_id(self, local_id):
-        """Sets the local_id of this IkePolicy.
+        r"""Sets the local_id of this IkePolicy.
 
         本端ID
 
@@ -318,7 +318,7 @@ class IkePolicy:
 
     @property
     def peer_id_type(self):
-        """Gets the peer_id_type of this IkePolicy.
+        r"""Gets the peer_id_type of this IkePolicy.
 
         对端ID类型
 
@@ -329,7 +329,7 @@ class IkePolicy:
 
     @peer_id_type.setter
     def peer_id_type(self, peer_id_type):
-        """Sets the peer_id_type of this IkePolicy.
+        r"""Sets the peer_id_type of this IkePolicy.
 
         对端ID类型
 
@@ -340,7 +340,7 @@ class IkePolicy:
 
     @property
     def peer_id(self):
-        """Gets the peer_id of this IkePolicy.
+        r"""Gets the peer_id of this IkePolicy.
 
         对端ID
 
@@ -351,7 +351,7 @@ class IkePolicy:
 
     @peer_id.setter
     def peer_id(self, peer_id):
-        """Sets the peer_id of this IkePolicy.
+        r"""Sets the peer_id of this IkePolicy.
 
         对端ID
 
@@ -362,7 +362,7 @@ class IkePolicy:
 
     @property
     def dpd(self):
-        """Gets the dpd of this IkePolicy.
+        r"""Gets the dpd of this IkePolicy.
 
         :return: The dpd of this IkePolicy.
         :rtype: :class:`huaweicloudsdkvpn.v5.Dpd`
@@ -371,7 +371,7 @@ class IkePolicy:
 
     @dpd.setter
     def dpd(self, dpd):
-        """Sets the dpd of this IkePolicy.
+        r"""Sets the dpd of this IkePolicy.
 
         :param dpd: The dpd of this IkePolicy.
         :type dpd: :class:`huaweicloudsdkvpn.v5.Dpd`

@@ -25,7 +25,7 @@ class AccessControl:
     }
 
     def __init__(self, ip_access_control=None):
-        """AccessControl
+        r"""AccessControl
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AccessControl:
 
     @property
     def ip_access_control(self):
-        """Gets the ip_access_control of this AccessControl.
+        r"""Gets the ip_access_control of this AccessControl.
 
         IP接入控制。IP接入控制需输入有效的IP地址和子网掩码，IP和子网掩码间以\"|\"拼接组成一组，如果有多组用\";\"分隔。如：IP|掩码;IP|掩码;IP|掩码。
 
@@ -54,7 +54,7 @@ class AccessControl:
 
     @ip_access_control.setter
     def ip_access_control(self, ip_access_control):
-        """Sets the ip_access_control of this AccessControl.
+        r"""Sets the ip_access_control of this AccessControl.
 
         IP接入控制。IP接入控制需输入有效的IP地址和子网掩码，IP和子网掩码间以\"|\"拼接组成一组，如果有多组用\";\"分隔。如：IP|掩码;IP|掩码;IP|掩码。
 

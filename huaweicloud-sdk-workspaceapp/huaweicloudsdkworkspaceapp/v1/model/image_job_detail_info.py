@@ -41,7 +41,7 @@ class ImageJobDetailInfo:
     }
 
     def __init__(self, id=None, job_type=None, job_resource_info=None, begin_time=None, end_time=None, status=None, job_execute_info=None, project_id=None, job_id=None):
-        """ImageJobDetailInfo
+        r"""ImageJobDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ImageJobDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this ImageJobDetailInfo.
+        r"""Gets the id of this ImageJobDetailInfo.
 
         子任务ID。
 
@@ -110,7 +110,7 @@ class ImageJobDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageJobDetailInfo.
+        r"""Sets the id of this ImageJobDetailInfo.
 
         子任务ID。
 
@@ -121,7 +121,7 @@ class ImageJobDetailInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ImageJobDetailInfo.
+        r"""Gets the job_type of this ImageJobDetailInfo.
 
         :return: The job_type of this ImageJobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
@@ -130,7 +130,7 @@ class ImageJobDetailInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ImageJobDetailInfo.
+        r"""Sets the job_type of this ImageJobDetailInfo.
 
         :param job_type: The job_type of this ImageJobDetailInfo.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
@@ -139,7 +139,7 @@ class ImageJobDetailInfo:
 
     @property
     def job_resource_info(self):
-        """Gets the job_resource_info of this ImageJobDetailInfo.
+        r"""Gets the job_resource_info of this ImageJobDetailInfo.
 
         :return: The job_resource_info of this ImageJobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobResourceInfo`
@@ -148,7 +148,7 @@ class ImageJobDetailInfo:
 
     @job_resource_info.setter
     def job_resource_info(self, job_resource_info):
-        """Sets the job_resource_info of this ImageJobDetailInfo.
+        r"""Sets the job_resource_info of this ImageJobDetailInfo.
 
         :param job_resource_info: The job_resource_info of this ImageJobDetailInfo.
         :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobResourceInfo`
@@ -157,7 +157,7 @@ class ImageJobDetailInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ImageJobDetailInfo.
+        r"""Gets the begin_time of this ImageJobDetailInfo.
 
         任务创建时间。
 
@@ -168,7 +168,7 @@ class ImageJobDetailInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ImageJobDetailInfo.
+        r"""Sets the begin_time of this ImageJobDetailInfo.
 
         任务创建时间。
 
@@ -179,7 +179,7 @@ class ImageJobDetailInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ImageJobDetailInfo.
+        r"""Gets the end_time of this ImageJobDetailInfo.
 
         任务结束时间。
 
@@ -190,7 +190,7 @@ class ImageJobDetailInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ImageJobDetailInfo.
+        r"""Sets the end_time of this ImageJobDetailInfo.
 
         任务结束时间。
 
@@ -201,7 +201,7 @@ class ImageJobDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this ImageJobDetailInfo.
+        r"""Gets the status of this ImageJobDetailInfo.
 
         :return: The status of this ImageJobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailStatus`
@@ -210,7 +210,7 @@ class ImageJobDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImageJobDetailInfo.
+        r"""Sets the status of this ImageJobDetailInfo.
 
         :param status: The status of this ImageJobDetailInfo.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailStatus`
@@ -219,7 +219,7 @@ class ImageJobDetailInfo:
 
     @property
     def job_execute_info(self):
-        """Gets the job_execute_info of this ImageJobDetailInfo.
+        r"""Gets the job_execute_info of this ImageJobDetailInfo.
 
         :return: The job_execute_info of this ImageJobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobExecuteInfo`
@@ -228,7 +228,7 @@ class ImageJobDetailInfo:
 
     @job_execute_info.setter
     def job_execute_info(self, job_execute_info):
-        """Sets the job_execute_info of this ImageJobDetailInfo.
+        r"""Sets the job_execute_info of this ImageJobDetailInfo.
 
         :param job_execute_info: The job_execute_info of this ImageJobDetailInfo.
         :type job_execute_info: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobExecuteInfo`
@@ -237,7 +237,7 @@ class ImageJobDetailInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ImageJobDetailInfo.
+        r"""Gets the project_id of this ImageJobDetailInfo.
 
         项目ID。
 
@@ -248,7 +248,7 @@ class ImageJobDetailInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ImageJobDetailInfo.
+        r"""Sets the project_id of this ImageJobDetailInfo.
 
         项目ID。
 
@@ -259,7 +259,7 @@ class ImageJobDetailInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImageJobDetailInfo.
+        r"""Gets the job_id of this ImageJobDetailInfo.
 
         任务ID。
 
@@ -270,7 +270,7 @@ class ImageJobDetailInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImageJobDetailInfo.
+        r"""Sets the job_id of this ImageJobDetailInfo.
 
         任务ID。
 

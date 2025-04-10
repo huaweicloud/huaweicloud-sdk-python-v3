@@ -28,7 +28,7 @@ class ListCertsResponse(SdkResponse):
     }
 
     def __init__(self, default_certs=None, custom_certs=None):
-        """ListCertsResponse
+        r"""ListCertsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCertsResponse(SdkResponse):
 
     @property
     def default_certs(self):
-        """Gets the default_certs of this ListCertsResponse.
+        r"""Gets the default_certs of this ListCertsResponse.
 
         默认证书列表。
 
@@ -62,7 +62,7 @@ class ListCertsResponse(SdkResponse):
 
     @default_certs.setter
     def default_certs(self, default_certs):
-        """Sets the default_certs of this ListCertsResponse.
+        r"""Sets the default_certs of this ListCertsResponse.
 
         默认证书列表。
 
@@ -73,7 +73,7 @@ class ListCertsResponse(SdkResponse):
 
     @property
     def custom_certs(self):
-        """Gets the custom_certs of this ListCertsResponse.
+        r"""Gets the custom_certs of this ListCertsResponse.
 
         自定义证书列表。
 
@@ -84,7 +84,7 @@ class ListCertsResponse(SdkResponse):
 
     @custom_certs.setter
     def custom_certs(self, custom_certs):
-        """Sets the custom_certs of this ListCertsResponse.
+        r"""Sets the custom_certs of this ListCertsResponse.
 
         自定义证书列表。
 

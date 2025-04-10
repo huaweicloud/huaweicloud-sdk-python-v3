@@ -31,7 +31,7 @@ class CreateEsListenerRequestBody:
     }
 
     def __init__(self, protocol=None, protocol_port=None, server_cert_id=None, ca_cert_id=None):
-        """CreateEsListenerRequestBody
+        r"""CreateEsListenerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateEsListenerRequestBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateEsListenerRequestBody.
+        r"""Gets the protocol of this CreateEsListenerRequestBody.
 
         协议类型，支持HTTP、HTTPS
 
@@ -73,7 +73,7 @@ class CreateEsListenerRequestBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateEsListenerRequestBody.
+        r"""Sets the protocol of this CreateEsListenerRequestBody.
 
         协议类型，支持HTTP、HTTPS
 
@@ -84,7 +84,7 @@ class CreateEsListenerRequestBody:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this CreateEsListenerRequestBody.
+        r"""Gets the protocol_port of this CreateEsListenerRequestBody.
 
         端口。
 
@@ -95,7 +95,7 @@ class CreateEsListenerRequestBody:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this CreateEsListenerRequestBody.
+        r"""Sets the protocol_port of this CreateEsListenerRequestBody.
 
         端口。
 
@@ -106,7 +106,7 @@ class CreateEsListenerRequestBody:
 
     @property
     def server_cert_id(self):
-        """Gets the server_cert_id of this CreateEsListenerRequestBody.
+        r"""Gets the server_cert_id of this CreateEsListenerRequestBody.
 
         server证书Id。如protocol为HTTPS则该字段必选。
 
@@ -117,7 +117,7 @@ class CreateEsListenerRequestBody:
 
     @server_cert_id.setter
     def server_cert_id(self, server_cert_id):
-        """Sets the server_cert_id of this CreateEsListenerRequestBody.
+        r"""Sets the server_cert_id of this CreateEsListenerRequestBody.
 
         server证书Id。如protocol为HTTPS则该字段必选。
 
@@ -128,7 +128,7 @@ class CreateEsListenerRequestBody:
 
     @property
     def ca_cert_id(self):
-        """Gets the ca_cert_id of this CreateEsListenerRequestBody.
+        r"""Gets the ca_cert_id of this CreateEsListenerRequestBody.
 
         CA证书Id。如protocol为HTTPS且为双向认证时则该字段必选。
 
@@ -139,7 +139,7 @@ class CreateEsListenerRequestBody:
 
     @ca_cert_id.setter
     def ca_cert_id(self, ca_cert_id):
-        """Sets the ca_cert_id of this CreateEsListenerRequestBody.
+        r"""Sets the ca_cert_id of this CreateEsListenerRequestBody.
 
         CA证书Id。如protocol为HTTPS且为双向认证时则该字段必选。
 

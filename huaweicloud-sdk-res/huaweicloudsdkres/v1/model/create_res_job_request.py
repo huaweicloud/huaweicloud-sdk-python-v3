@@ -31,7 +31,7 @@ class CreateResJobRequest:
     }
 
     def __init__(self, content_type=None, resource_id=None, workspace_id=None, body=None):
-        """CreateResJobRequest
+        r"""CreateResJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateResJobRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateResJobRequest.
+        r"""Gets the content_type of this CreateResJobRequest.
 
         内容类型，取值为application/json
 
@@ -72,7 +72,7 @@ class CreateResJobRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateResJobRequest.
+        r"""Sets the content_type of this CreateResJobRequest.
 
         内容类型，取值为application/json
 
@@ -83,7 +83,7 @@ class CreateResJobRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateResJobRequest.
+        r"""Gets the resource_id of this CreateResJobRequest.
 
         资源id
 
@@ -94,7 +94,7 @@ class CreateResJobRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateResJobRequest.
+        r"""Sets the resource_id of this CreateResJobRequest.
 
         资源id
 
@@ -105,7 +105,7 @@ class CreateResJobRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateResJobRequest.
+        r"""Gets the workspace_id of this CreateResJobRequest.
 
         工作空间id
 
@@ -116,7 +116,7 @@ class CreateResJobRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateResJobRequest.
+        r"""Sets the workspace_id of this CreateResJobRequest.
 
         工作空间id
 
@@ -127,7 +127,7 @@ class CreateResJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResJobRequest.
+        r"""Gets the body of this CreateResJobRequest.
 
         :return: The body of this CreateResJobRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResJobRequestBody`
@@ -136,7 +136,7 @@ class CreateResJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResJobRequest.
+        r"""Sets the body of this CreateResJobRequest.
 
         :param body: The body of this CreateResJobRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResJobRequestBody`

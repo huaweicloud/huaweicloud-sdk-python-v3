@@ -45,7 +45,7 @@ class ListTwoTemplatesRequest:
     }
 
     def __init__(self, platform=None, language=None, pipeline=None, enter_type=None, search=None, date_order=None, used_time_order=None, type=None, region=None, page_no=None, page_size=None):
-        """ListTwoTemplatesRequest
+        r"""ListTwoTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this ListTwoTemplatesRequest.
+        r"""Gets the platform of this ListTwoTemplatesRequest.
 
         模板平台类型
 
@@ -122,7 +122,7 @@ class ListTwoTemplatesRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ListTwoTemplatesRequest.
+        r"""Sets the platform of this ListTwoTemplatesRequest.
 
         模板平台类型
 
@@ -133,7 +133,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def language(self):
-        """Gets the language of this ListTwoTemplatesRequest.
+        r"""Gets the language of this ListTwoTemplatesRequest.
 
         语言类型
 
@@ -144,7 +144,7 @@ class ListTwoTemplatesRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ListTwoTemplatesRequest.
+        r"""Sets the language of this ListTwoTemplatesRequest.
 
         语言类型
 
@@ -155,7 +155,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def pipeline(self):
-        """Gets the pipeline of this ListTwoTemplatesRequest.
+        r"""Gets the pipeline of this ListTwoTemplatesRequest.
 
         是否支持流水线
 
@@ -166,7 +166,7 @@ class ListTwoTemplatesRequest:
 
     @pipeline.setter
     def pipeline(self, pipeline):
-        """Sets the pipeline of this ListTwoTemplatesRequest.
+        r"""Sets the pipeline of this ListTwoTemplatesRequest.
 
         是否支持流水线
 
@@ -177,7 +177,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def enter_type(self):
-        """Gets the enter_type of this ListTwoTemplatesRequest.
+        r"""Gets the enter_type of this ListTwoTemplatesRequest.
 
         模板分类
 
@@ -188,7 +188,7 @@ class ListTwoTemplatesRequest:
 
     @enter_type.setter
     def enter_type(self, enter_type):
-        """Sets the enter_type of this ListTwoTemplatesRequest.
+        r"""Sets the enter_type of this ListTwoTemplatesRequest.
 
         模板分类
 
@@ -199,7 +199,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListTwoTemplatesRequest.
+        r"""Gets the search of this ListTwoTemplatesRequest.
 
         模板名称
 
@@ -210,7 +210,7 @@ class ListTwoTemplatesRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListTwoTemplatesRequest.
+        r"""Sets the search of this ListTwoTemplatesRequest.
 
         模板名称
 
@@ -221,7 +221,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def date_order(self):
-        """Gets the date_order of this ListTwoTemplatesRequest.
+        r"""Gets the date_order of this ListTwoTemplatesRequest.
 
         模板日期排序
 
@@ -232,7 +232,7 @@ class ListTwoTemplatesRequest:
 
     @date_order.setter
     def date_order(self, date_order):
-        """Sets the date_order of this ListTwoTemplatesRequest.
+        r"""Sets the date_order of this ListTwoTemplatesRequest.
 
         模板日期排序
 
@@ -243,7 +243,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def used_time_order(self):
-        """Gets the used_time_order of this ListTwoTemplatesRequest.
+        r"""Gets the used_time_order of this ListTwoTemplatesRequest.
 
         模板引用次数排序
 
@@ -254,7 +254,7 @@ class ListTwoTemplatesRequest:
 
     @used_time_order.setter
     def used_time_order(self, used_time_order):
-        """Sets the used_time_order of this ListTwoTemplatesRequest.
+        r"""Sets the used_time_order of this ListTwoTemplatesRequest.
 
         模板引用次数排序
 
@@ -265,7 +265,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListTwoTemplatesRequest.
+        r"""Gets the type of this ListTwoTemplatesRequest.
 
         模板公开类型
 
@@ -276,7 +276,7 @@ class ListTwoTemplatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListTwoTemplatesRequest.
+        r"""Sets the type of this ListTwoTemplatesRequest.
 
         模板公开类型
 
@@ -287,7 +287,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListTwoTemplatesRequest.
+        r"""Gets the region of this ListTwoTemplatesRequest.
 
         大区名称
 
@@ -298,7 +298,7 @@ class ListTwoTemplatesRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListTwoTemplatesRequest.
+        r"""Sets the region of this ListTwoTemplatesRequest.
 
         大区名称
 
@@ -309,7 +309,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListTwoTemplatesRequest.
+        r"""Gets the page_no of this ListTwoTemplatesRequest.
 
         分页页数
 
@@ -320,7 +320,7 @@ class ListTwoTemplatesRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListTwoTemplatesRequest.
+        r"""Sets the page_no of this ListTwoTemplatesRequest.
 
         分页页数
 
@@ -331,7 +331,7 @@ class ListTwoTemplatesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTwoTemplatesRequest.
+        r"""Gets the page_size of this ListTwoTemplatesRequest.
 
         每页数据数
 
@@ -342,7 +342,7 @@ class ListTwoTemplatesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTwoTemplatesRequest.
+        r"""Sets the page_size of this ListTwoTemplatesRequest.
 
         每页数据数
 

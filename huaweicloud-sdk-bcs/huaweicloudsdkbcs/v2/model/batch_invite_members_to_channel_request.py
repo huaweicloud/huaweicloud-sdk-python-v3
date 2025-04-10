@@ -25,7 +25,7 @@ class BatchInviteMembersToChannelRequest:
     }
 
     def __init__(self, body=None):
-        """BatchInviteMembersToChannelRequest
+        r"""BatchInviteMembersToChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchInviteMembersToChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchInviteMembersToChannelRequest.
+        r"""Gets the body of this BatchInviteMembersToChannelRequest.
 
         :return: The body of this BatchInviteMembersToChannelRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequestBody`
@@ -52,7 +52,7 @@ class BatchInviteMembersToChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchInviteMembersToChannelRequest.
+        r"""Sets the body of this BatchInviteMembersToChannelRequest.
 
         :param body: The body of this BatchInviteMembersToChannelRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequestBody`

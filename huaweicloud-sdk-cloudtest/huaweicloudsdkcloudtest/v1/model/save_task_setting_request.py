@@ -27,7 +27,7 @@ class SaveTaskSettingRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """SaveTaskSettingRequest
+        r"""SaveTaskSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SaveTaskSettingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this SaveTaskSettingRequest.
+        r"""Gets the service_id of this SaveTaskSettingRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class SaveTaskSettingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this SaveTaskSettingRequest.
+        r"""Sets the service_id of this SaveTaskSettingRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class SaveTaskSettingRequest:
 
     @property
     def body(self):
-        """Gets the body of this SaveTaskSettingRequest.
+        r"""Gets the body of this SaveTaskSettingRequest.
 
         :return: The body of this SaveTaskSettingRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.SaveTaskSettingRequestBody`
@@ -80,7 +80,7 @@ class SaveTaskSettingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SaveTaskSettingRequest.
+        r"""Sets the body of this SaveTaskSettingRequest.
 
         :param body: The body of this SaveTaskSettingRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.SaveTaskSettingRequestBody`

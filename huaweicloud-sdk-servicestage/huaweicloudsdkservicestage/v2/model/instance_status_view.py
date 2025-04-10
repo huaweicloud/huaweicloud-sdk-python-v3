@@ -37,7 +37,7 @@ class InstanceStatusView:
     }
 
     def __init__(self, status=None, available_replica=None, replica=None, fail_detail=None, last_job_id=None, last_job_status=None, enterprise_project_id=None):
-        """InstanceStatusView
+        r"""InstanceStatusView
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceStatusView:
 
     @property
     def status(self):
-        """Gets the status of this InstanceStatusView.
+        r"""Gets the status of this InstanceStatusView.
 
         :return: The status of this InstanceStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
@@ -94,7 +94,7 @@ class InstanceStatusView:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceStatusView.
+        r"""Sets the status of this InstanceStatusView.
 
         :param status: The status of this InstanceStatusView.
         :type status: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
@@ -103,7 +103,7 @@ class InstanceStatusView:
 
     @property
     def available_replica(self):
-        """Gets the available_replica of this InstanceStatusView.
+        r"""Gets the available_replica of this InstanceStatusView.
 
         正常实例副本数。
 
@@ -114,7 +114,7 @@ class InstanceStatusView:
 
     @available_replica.setter
     def available_replica(self, available_replica):
-        """Sets the available_replica of this InstanceStatusView.
+        r"""Sets the available_replica of this InstanceStatusView.
 
         正常实例副本数。
 
@@ -125,7 +125,7 @@ class InstanceStatusView:
 
     @property
     def replica(self):
-        """Gets the replica of this InstanceStatusView.
+        r"""Gets the replica of this InstanceStatusView.
 
         实例副本数。
 
@@ -136,7 +136,7 @@ class InstanceStatusView:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this InstanceStatusView.
+        r"""Sets the replica of this InstanceStatusView.
 
         实例副本数。
 
@@ -147,7 +147,7 @@ class InstanceStatusView:
 
     @property
     def fail_detail(self):
-        """Gets the fail_detail of this InstanceStatusView.
+        r"""Gets the fail_detail of this InstanceStatusView.
 
         :return: The fail_detail of this InstanceStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
@@ -156,7 +156,7 @@ class InstanceStatusView:
 
     @fail_detail.setter
     def fail_detail(self, fail_detail):
-        """Sets the fail_detail of this InstanceStatusView.
+        r"""Sets the fail_detail of this InstanceStatusView.
 
         :param fail_detail: The fail_detail of this InstanceStatusView.
         :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
@@ -165,7 +165,7 @@ class InstanceStatusView:
 
     @property
     def last_job_id(self):
-        """Gets the last_job_id of this InstanceStatusView.
+        r"""Gets the last_job_id of this InstanceStatusView.
 
         最近Job ID。
 
@@ -176,7 +176,7 @@ class InstanceStatusView:
 
     @last_job_id.setter
     def last_job_id(self, last_job_id):
-        """Sets the last_job_id of this InstanceStatusView.
+        r"""Sets the last_job_id of this InstanceStatusView.
 
         最近Job ID。
 
@@ -187,7 +187,7 @@ class InstanceStatusView:
 
     @property
     def last_job_status(self):
-        """Gets the last_job_status of this InstanceStatusView.
+        r"""Gets the last_job_status of this InstanceStatusView.
 
         最近Job的状态
 
@@ -198,7 +198,7 @@ class InstanceStatusView:
 
     @last_job_status.setter
     def last_job_status(self, last_job_status):
-        """Sets the last_job_status of this InstanceStatusView.
+        r"""Sets the last_job_status of this InstanceStatusView.
 
         最近Job的状态
 
@@ -209,7 +209,7 @@ class InstanceStatusView:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceStatusView.
+        r"""Gets the enterprise_project_id of this InstanceStatusView.
 
         企业项目ID。
 
@@ -220,7 +220,7 @@ class InstanceStatusView:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceStatusView.
+        r"""Sets the enterprise_project_id of this InstanceStatusView.
 
         企业项目ID。
 

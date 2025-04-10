@@ -28,7 +28,7 @@ class ShowOrganizationConformancePackDetailedStatusesResponse(SdkResponse):
     }
 
     def __init__(self, statuses=None, page_info=None):
-        """ShowOrganizationConformancePackDetailedStatusesResponse
+        r"""ShowOrganizationConformancePackDetailedStatusesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowOrganizationConformancePackDetailedStatusesResponse(SdkResponse):
 
     @property
     def statuses(self):
-        """Gets the statuses of this ShowOrganizationConformancePackDetailedStatusesResponse.
+        r"""Gets the statuses of this ShowOrganizationConformancePackDetailedStatusesResponse.
 
         组织合规规则包查询列表。
 
@@ -62,7 +62,7 @@ class ShowOrganizationConformancePackDetailedStatusesResponse(SdkResponse):
 
     @statuses.setter
     def statuses(self, statuses):
-        """Sets the statuses of this ShowOrganizationConformancePackDetailedStatusesResponse.
+        r"""Sets the statuses of this ShowOrganizationConformancePackDetailedStatusesResponse.
 
         组织合规规则包查询列表。
 
@@ -73,7 +73,7 @@ class ShowOrganizationConformancePackDetailedStatusesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowOrganizationConformancePackDetailedStatusesResponse.
+        r"""Gets the page_info of this ShowOrganizationConformancePackDetailedStatusesResponse.
 
         :return: The page_info of this ShowOrganizationConformancePackDetailedStatusesResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ShowOrganizationConformancePackDetailedStatusesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowOrganizationConformancePackDetailedStatusesResponse.
+        r"""Sets the page_info of this ShowOrganizationConformancePackDetailedStatusesResponse.
 
         :param page_info: The page_info of this ShowOrganizationConformancePackDetailedStatusesResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

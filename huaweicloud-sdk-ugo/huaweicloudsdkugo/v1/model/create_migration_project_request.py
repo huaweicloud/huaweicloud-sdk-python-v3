@@ -25,7 +25,7 @@ class CreateMigrationProjectRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMigrationProjectRequest
+        r"""CreateMigrationProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMigrationProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMigrationProjectRequest.
+        r"""Gets the body of this CreateMigrationProjectRequest.
 
         :return: The body of this CreateMigrationProjectRequest.
         :rtype: :class:`huaweicloudsdkugo.v1.CreateMigrationProject`
@@ -52,7 +52,7 @@ class CreateMigrationProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMigrationProjectRequest.
+        r"""Sets the body of this CreateMigrationProjectRequest.
 
         :param body: The body of this CreateMigrationProjectRequest.
         :type body: :class:`huaweicloudsdkugo.v1.CreateMigrationProject`

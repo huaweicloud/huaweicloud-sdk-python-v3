@@ -30,7 +30,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     }
 
     def __init__(self, type=None, url=None, protocol=None):
-        """ShowRemoteConsoleAddressResponse
+        r"""ShowRemoteConsoleAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowRemoteConsoleAddressResponse.
+        r"""Gets the type of this ShowRemoteConsoleAddressResponse.
 
         登录类型
 
@@ -69,7 +69,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowRemoteConsoleAddressResponse.
+        r"""Sets the type of this ShowRemoteConsoleAddressResponse.
 
         登录类型
 
@@ -80,7 +80,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowRemoteConsoleAddressResponse.
+        r"""Gets the url of this ShowRemoteConsoleAddressResponse.
 
         远程登录控制台地址
 
@@ -91,7 +91,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowRemoteConsoleAddressResponse.
+        r"""Sets the url of this ShowRemoteConsoleAddressResponse.
 
         远程登录控制台地址
 
@@ -102,7 +102,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this ShowRemoteConsoleAddressResponse.
+        r"""Gets the protocol of this ShowRemoteConsoleAddressResponse.
 
         登录协议
 
@@ -113,7 +113,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ShowRemoteConsoleAddressResponse.
+        r"""Sets the protocol of this ShowRemoteConsoleAddressResponse.
 
         登录协议
 

@@ -30,7 +30,7 @@ class ListPublicipPoolResponse(SdkResponse):
     }
 
     def __init__(self, publicip_pools=None, request_id=None, page_info=None):
-        """ListPublicipPoolResponse
+        r"""ListPublicipPoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
     @property
     def publicip_pools(self):
-        """Gets the publicip_pools of this ListPublicipPoolResponse.
+        r"""Gets the publicip_pools of this ListPublicipPoolResponse.
 
         功能说明：公网池对象
 
@@ -69,7 +69,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
     @publicip_pools.setter
     def publicip_pools(self, publicip_pools):
-        """Sets the publicip_pools of this ListPublicipPoolResponse.
+        r"""Sets the publicip_pools of this ListPublicipPoolResponse.
 
         功能说明：公网池对象
 
@@ -80,7 +80,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPublicipPoolResponse.
+        r"""Gets the request_id of this ListPublicipPoolResponse.
 
         本次请求的编号
 
@@ -91,7 +91,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPublicipPoolResponse.
+        r"""Sets the request_id of this ListPublicipPoolResponse.
 
         本次请求的编号
 
@@ -102,7 +102,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPublicipPoolResponse.
+        r"""Gets the page_info of this ListPublicipPoolResponse.
 
         :return: The page_info of this ListPublicipPoolResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
@@ -111,7 +111,7 @@ class ListPublicipPoolResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPublicipPoolResponse.
+        r"""Sets the page_info of this ListPublicipPoolResponse.
 
         :param page_info: The page_info of this ListPublicipPoolResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`

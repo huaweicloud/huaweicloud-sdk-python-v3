@@ -29,7 +29,7 @@ class UpdateTemplateMetadataRequest:
     }
 
     def __init__(self, client_request_id=None, template_name=None, body=None):
-        """UpdateTemplateMetadataRequest
+        r"""UpdateTemplateMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTemplateMetadataRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this UpdateTemplateMetadataRequest.
+        r"""Gets the client_request_id of this UpdateTemplateMetadataRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class UpdateTemplateMetadataRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this UpdateTemplateMetadataRequest.
+        r"""Sets the client_request_id of this UpdateTemplateMetadataRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class UpdateTemplateMetadataRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this UpdateTemplateMetadataRequest.
+        r"""Gets the template_name of this UpdateTemplateMetadataRequest.
 
         用户希望创建的模板名称
 
@@ -88,7 +88,7 @@ class UpdateTemplateMetadataRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this UpdateTemplateMetadataRequest.
+        r"""Sets the template_name of this UpdateTemplateMetadataRequest.
 
         用户希望创建的模板名称
 
@@ -99,7 +99,7 @@ class UpdateTemplateMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTemplateMetadataRequest.
+        r"""Gets the body of this UpdateTemplateMetadataRequest.
 
         :return: The body of this UpdateTemplateMetadataRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateTemplateMetadataRequestBody`
@@ -108,7 +108,7 @@ class UpdateTemplateMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTemplateMetadataRequest.
+        r"""Sets the body of this UpdateTemplateMetadataRequest.
 
         :param body: The body of this UpdateTemplateMetadataRequest.
         :type body: :class:`huaweicloudsdkaos.v1.UpdateTemplateMetadataRequestBody`

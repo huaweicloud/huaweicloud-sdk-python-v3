@@ -25,7 +25,7 @@ class UpdatePullSourcesConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdatePullSourcesConfigRequest
+        r"""UpdatePullSourcesConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePullSourcesConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePullSourcesConfigRequest.
+        r"""Gets the body of this UpdatePullSourcesConfigRequest.
 
         :return: The body of this UpdatePullSourcesConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.ModifyPullSourcesConfig`
@@ -52,7 +52,7 @@ class UpdatePullSourcesConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePullSourcesConfigRequest.
+        r"""Sets the body of this UpdatePullSourcesConfigRequest.
 
         :param body: The body of this UpdatePullSourcesConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.ModifyPullSourcesConfig`

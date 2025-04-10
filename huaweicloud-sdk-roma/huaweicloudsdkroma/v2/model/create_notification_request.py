@@ -27,7 +27,7 @@ class CreateNotificationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateNotificationRequest
+        r"""CreateNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateNotificationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateNotificationRequest.
+        r"""Gets the instance_id of this CreateNotificationRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateNotificationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateNotificationRequest.
+        r"""Sets the instance_id of this CreateNotificationRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateNotificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNotificationRequest.
+        r"""Gets the body of this CreateNotificationRequest.
 
         :return: The body of this CreateNotificationRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateNotificationRequestBody`
@@ -80,7 +80,7 @@ class CreateNotificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNotificationRequest.
+        r"""Sets the body of this CreateNotificationRequest.
 
         :param body: The body of this CreateNotificationRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateNotificationRequestBody`

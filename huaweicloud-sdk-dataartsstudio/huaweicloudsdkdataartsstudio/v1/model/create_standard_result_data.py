@@ -25,7 +25,7 @@ class CreateStandardResultData:
     }
 
     def __init__(self, value=None):
-        """CreateStandardResultData
+        r"""CreateStandardResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateStandardResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateStandardResultData.
+        r"""Gets the value of this CreateStandardResultData.
 
         :return: The value of this CreateStandardResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVOList`
@@ -52,7 +52,7 @@ class CreateStandardResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateStandardResultData.
+        r"""Sets the value of this CreateStandardResultData.
 
         :param value: The value of this CreateStandardResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVOList`

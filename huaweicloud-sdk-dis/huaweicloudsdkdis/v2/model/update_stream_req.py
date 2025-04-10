@@ -37,7 +37,7 @@ class UpdateStreamReq:
     }
 
     def __init__(self, stream_name=None, data_duration=None, data_type=None, data_schema=None, auto_scale_enabled=None, auto_scale_min_partition_count=None, auto_scale_max_partition_count=None):
-        """UpdateStreamReq
+        r"""UpdateStreamReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class UpdateStreamReq:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this UpdateStreamReq.
+        r"""Gets the stream_name of this UpdateStreamReq.
 
         待更新的通道名称。
 
@@ -95,7 +95,7 @@ class UpdateStreamReq:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this UpdateStreamReq.
+        r"""Sets the stream_name of this UpdateStreamReq.
 
         待更新的通道名称。
 
@@ -106,7 +106,7 @@ class UpdateStreamReq:
 
     @property
     def data_duration(self):
-        """Gets the data_duration of this UpdateStreamReq.
+        r"""Gets the data_duration of this UpdateStreamReq.
 
         数据保留时长。  取值范围：24~72。  单位：小时。  空表示使用缺省值。
 
@@ -117,7 +117,7 @@ class UpdateStreamReq:
 
     @data_duration.setter
     def data_duration(self, data_duration):
-        """Sets the data_duration of this UpdateStreamReq.
+        r"""Sets the data_duration of this UpdateStreamReq.
 
         数据保留时长。  取值范围：24~72。  单位：小时。  空表示使用缺省值。
 
@@ -128,7 +128,7 @@ class UpdateStreamReq:
 
     @property
     def data_type(self):
-        """Gets the data_type of this UpdateStreamReq.
+        r"""Gets the data_type of this UpdateStreamReq.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -139,7 +139,7 @@ class UpdateStreamReq:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this UpdateStreamReq.
+        r"""Sets the data_type of this UpdateStreamReq.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -150,7 +150,7 @@ class UpdateStreamReq:
 
     @property
     def data_schema(self):
-        """Gets the data_schema of this UpdateStreamReq.
+        r"""Gets the data_schema of this UpdateStreamReq.
 
         用于描述用户JSON、CSV格式的源数据结构，采用Avro Schema的语法描述。
 
@@ -161,7 +161,7 @@ class UpdateStreamReq:
 
     @data_schema.setter
     def data_schema(self, data_schema):
-        """Sets the data_schema of this UpdateStreamReq.
+        r"""Sets the data_schema of this UpdateStreamReq.
 
         用于描述用户JSON、CSV格式的源数据结构，采用Avro Schema的语法描述。
 
@@ -172,7 +172,7 @@ class UpdateStreamReq:
 
     @property
     def auto_scale_enabled(self):
-        """Gets the auto_scale_enabled of this UpdateStreamReq.
+        r"""Gets the auto_scale_enabled of this UpdateStreamReq.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -183,7 +183,7 @@ class UpdateStreamReq:
 
     @auto_scale_enabled.setter
     def auto_scale_enabled(self, auto_scale_enabled):
-        """Sets the auto_scale_enabled of this UpdateStreamReq.
+        r"""Sets the auto_scale_enabled of this UpdateStreamReq.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -194,7 +194,7 @@ class UpdateStreamReq:
 
     @property
     def auto_scale_min_partition_count(self):
-        """Gets the auto_scale_min_partition_count of this UpdateStreamReq.
+        r"""Gets the auto_scale_min_partition_count of this UpdateStreamReq.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -205,7 +205,7 @@ class UpdateStreamReq:
 
     @auto_scale_min_partition_count.setter
     def auto_scale_min_partition_count(self, auto_scale_min_partition_count):
-        """Sets the auto_scale_min_partition_count of this UpdateStreamReq.
+        r"""Sets the auto_scale_min_partition_count of this UpdateStreamReq.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -216,7 +216,7 @@ class UpdateStreamReq:
 
     @property
     def auto_scale_max_partition_count(self):
-        """Gets the auto_scale_max_partition_count of this UpdateStreamReq.
+        r"""Gets the auto_scale_max_partition_count of this UpdateStreamReq.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 
@@ -227,7 +227,7 @@ class UpdateStreamReq:
 
     @auto_scale_max_partition_count.setter
     def auto_scale_max_partition_count(self, auto_scale_max_partition_count):
-        """Sets the auto_scale_max_partition_count of this UpdateStreamReq.
+        r"""Sets the auto_scale_max_partition_count of this UpdateStreamReq.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 

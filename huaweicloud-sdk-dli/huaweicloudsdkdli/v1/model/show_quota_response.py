@@ -28,7 +28,7 @@ class ShowQuotaResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, quotas=None):
-        """ShowQuotaResponse
+        r"""ShowQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowQuotaResponse.
+        r"""Gets the is_success of this ShowQuotaResponse.
 
         是否成功
 
@@ -62,7 +62,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowQuotaResponse.
+        r"""Sets the is_success of this ShowQuotaResponse.
 
         是否成功
 
@@ -73,7 +73,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowQuotaResponse.
+        r"""Gets the quotas of this ShowQuotaResponse.
 
         :return: The quotas of this ShowQuotaResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.QuotaList`
@@ -82,7 +82,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowQuotaResponse.
+        r"""Sets the quotas of this ShowQuotaResponse.
 
         :param quotas: The quotas of this ShowQuotaResponse.
         :type quotas: :class:`huaweicloudsdkdli.v1.QuotaList`

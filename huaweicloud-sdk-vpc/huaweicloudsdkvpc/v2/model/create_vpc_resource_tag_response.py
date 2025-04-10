@@ -24,7 +24,7 @@ class CreateVpcResourceTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateVpcResourceTagResponse
+        r"""CreateVpcResourceTagResponse
 
         The model defined in huaweicloud sdk
 

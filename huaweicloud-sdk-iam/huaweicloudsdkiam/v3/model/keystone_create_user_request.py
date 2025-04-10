@@ -25,7 +25,7 @@ class KeystoneCreateUserRequest:
     }
 
     def __init__(self, body=None):
-        """KeystoneCreateUserRequest
+        r"""KeystoneCreateUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class KeystoneCreateUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateUserRequest.
+        r"""Gets the body of this KeystoneCreateUserRequest.
 
         :return: The body of this KeystoneCreateUserRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequestBody`
@@ -52,7 +52,7 @@ class KeystoneCreateUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateUserRequest.
+        r"""Sets the body of this KeystoneCreateUserRequest.
 
         :param body: The body of this KeystoneCreateUserRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequestBody`

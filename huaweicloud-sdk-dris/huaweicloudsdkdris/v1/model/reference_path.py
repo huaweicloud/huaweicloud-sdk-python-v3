@@ -27,7 +27,7 @@ class ReferencePath:
     }
 
     def __init__(self, active_path=None, path_radius=None):
-        """ReferencePath
+        r"""ReferencePath
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReferencePath:
 
     @property
     def active_path(self):
-        """Gets the active_path of this ReferencePath.
+        r"""Gets the active_path of this ReferencePath.
 
         **参数说明**：事件的有效路径
 
@@ -61,7 +61,7 @@ class ReferencePath:
 
     @active_path.setter
     def active_path(self, active_path):
-        """Sets the active_path of this ReferencePath.
+        r"""Sets the active_path of this ReferencePath.
 
         **参数说明**：事件的有效路径
 
@@ -72,7 +72,7 @@ class ReferencePath:
 
     @property
     def path_radius(self):
-        """Gets the path_radius of this ReferencePath.
+        r"""Gets the path_radius of this ReferencePath.
 
         **参数说明**：事件的影响区域半径，可选，单位为分米。用半径表示影响区域边界离中心线的垂直距离，反映该区域的宽度以覆盖实际路段。
 
@@ -83,7 +83,7 @@ class ReferencePath:
 
     @path_radius.setter
     def path_radius(self, path_radius):
-        """Sets the path_radius of this ReferencePath.
+        r"""Sets the path_radius of this ReferencePath.
 
         **参数说明**：事件的影响区域半径，可选，单位为分米。用半径表示影响区域边界离中心线的垂直距离，反映该区域的宽度以覆盖实际路段。
 

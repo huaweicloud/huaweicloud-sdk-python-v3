@@ -27,7 +27,7 @@ class Storage:
     }
 
     def __init__(self, name=None, az_status=None):
-        """Storage
+        r"""Storage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Storage:
 
     @property
     def name(self):
-        """Gets the name of this Storage.
+        r"""Gets the name of this Storage.
 
         磁盘类型名称，可能取值如下： - ULTRAHIGH，表示SSD。
 
@@ -59,7 +59,7 @@ class Storage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Storage.
+        r"""Sets the name of this Storage.
 
         磁盘类型名称，可能取值如下： - ULTRAHIGH，表示SSD。
 
@@ -70,7 +70,7 @@ class Storage:
 
     @property
     def az_status(self):
-        """Gets the az_status of this Storage.
+        r"""Gets the az_status of this Storage.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -81,7 +81,7 @@ class Storage:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this Storage.
+        r"""Sets the az_status of this Storage.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 

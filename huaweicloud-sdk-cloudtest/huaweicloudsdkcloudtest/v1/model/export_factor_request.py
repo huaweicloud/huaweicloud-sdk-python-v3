@@ -29,7 +29,7 @@ class ExportFactorRequest:
     }
 
     def __init__(self, project_id=None, asset_id=None, body=None):
-        """ExportFactorRequest
+        r"""ExportFactorRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExportFactorRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ExportFactorRequest.
+        r"""Gets the project_id of this ExportFactorRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ExportFactorRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ExportFactorRequest.
+        r"""Sets the project_id of this ExportFactorRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ExportFactorRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ExportFactorRequest.
+        r"""Gets the asset_id of this ExportFactorRequest.
 
         资产库ID
 
@@ -88,7 +88,7 @@ class ExportFactorRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ExportFactorRequest.
+        r"""Sets the asset_id of this ExportFactorRequest.
 
         资产库ID
 
@@ -99,7 +99,7 @@ class ExportFactorRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportFactorRequest.
+        r"""Gets the body of this ExportFactorRequest.
 
         :return: The body of this ExportFactorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestAssetExportParam`
@@ -108,7 +108,7 @@ class ExportFactorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportFactorRequest.
+        r"""Sets the body of this ExportFactorRequest.
 
         :param body: The body of this ExportFactorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestAssetExportParam`

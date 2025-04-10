@@ -27,7 +27,7 @@ class BatchTagActionRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchTagActionRequestBody
+        r"""BatchTagActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchTagActionRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchTagActionRequestBody.
+        r"""Gets the action of this BatchTagActionRequestBody.
 
         操作标识。取值： - create，表示添加标签。 - delete，表示删除标签。
 
@@ -59,7 +59,7 @@ class BatchTagActionRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchTagActionRequestBody.
+        r"""Sets the action of this BatchTagActionRequestBody.
 
         操作标识。取值： - create，表示添加标签。 - delete，表示删除标签。
 
@@ -70,7 +70,7 @@ class BatchTagActionRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchTagActionRequestBody.
+        r"""Gets the tags of this BatchTagActionRequestBody.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class BatchTagActionRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchTagActionRequestBody.
+        r"""Sets the tags of this BatchTagActionRequestBody.
 
         标签列表。
 

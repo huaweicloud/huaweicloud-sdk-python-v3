@@ -32,7 +32,7 @@ class ListProPricePlansResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, price_plans=None):
-        """ListProPricePlansResponse
+        r"""ListProPricePlansResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListProPricePlansResponse.
+        r"""Gets the limit of this ListProPricePlansResponse.
 
         每页的记录数
 
@@ -76,7 +76,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProPricePlansResponse.
+        r"""Sets the limit of this ListProPricePlansResponse.
 
         每页的记录数
 
@@ -87,7 +87,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListProPricePlansResponse.
+        r"""Gets the offset of this ListProPricePlansResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -98,7 +98,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProPricePlansResponse.
+        r"""Sets the offset of this ListProPricePlansResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -109,7 +109,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProPricePlansResponse.
+        r"""Gets the count of this ListProPricePlansResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProPricePlansResponse.
+        r"""Sets the count of this ListProPricePlansResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @property
     def price_plans(self):
-        """Gets the price_plans of this ListProPricePlansResponse.
+        r"""Gets the price_plans of this ListProPricePlansResponse.
 
         套餐列表
 
@@ -142,7 +142,7 @@ class ListProPricePlansResponse(SdkResponse):
 
     @price_plans.setter
     def price_plans(self, price_plans):
-        """Sets the price_plans of this ListProPricePlansResponse.
+        r"""Sets the price_plans of this ListProPricePlansResponse.
 
         套餐列表
 

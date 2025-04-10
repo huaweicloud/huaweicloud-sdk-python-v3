@@ -26,7 +26,7 @@ class BatchUpdateMembersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchUpdateMembersResponse
+        r"""BatchUpdateMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateMembersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchUpdateMembersResponse.
+        r"""Gets the job_id of this BatchUpdateMembersResponse.
 
         异步任务ID。
 
@@ -55,7 +55,7 @@ class BatchUpdateMembersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchUpdateMembersResponse.
+        r"""Sets the job_id of this BatchUpdateMembersResponse.
 
         异步任务ID。
 

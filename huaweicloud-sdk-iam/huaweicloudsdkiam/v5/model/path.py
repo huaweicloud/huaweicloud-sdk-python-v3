@@ -23,7 +23,7 @@ class Path:
     }
 
     def __init__(self):
-        """Path
+        r"""Path
 
         The model defined in huaweicloud sdk
 

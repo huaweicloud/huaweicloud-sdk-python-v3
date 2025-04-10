@@ -46,7 +46,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, name=None, status=None, result=None, executor=None, start_time=None, finish_time=None, detail_url=None, modify_url=None, build_id=None, stages=None):
-        """ShowPipelineLastStatusV2Response
+        r"""ShowPipelineLastStatusV2Response
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipelineLastStatusV2Response.
+        r"""Gets the pipeline_id of this ShowPipelineLastStatusV2Response.
 
         流水线id
 
@@ -125,7 +125,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipelineLastStatusV2Response.
+        r"""Sets the pipeline_id of this ShowPipelineLastStatusV2Response.
 
         流水线id
 
@@ -136,7 +136,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPipelineLastStatusV2Response.
+        r"""Gets the name of this ShowPipelineLastStatusV2Response.
 
         流水线名称
 
@@ -147,7 +147,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPipelineLastStatusV2Response.
+        r"""Sets the name of this ShowPipelineLastStatusV2Response.
 
         流水线名称
 
@@ -158,7 +158,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPipelineLastStatusV2Response.
+        r"""Gets the status of this ShowPipelineLastStatusV2Response.
 
         执行状态
 
@@ -169,7 +169,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPipelineLastStatusV2Response.
+        r"""Sets the status of this ShowPipelineLastStatusV2Response.
 
         执行状态
 
@@ -180,7 +180,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowPipelineLastStatusV2Response.
+        r"""Gets the result of this ShowPipelineLastStatusV2Response.
 
         执行结果
 
@@ -191,7 +191,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowPipelineLastStatusV2Response.
+        r"""Sets the result of this ShowPipelineLastStatusV2Response.
 
         执行结果
 
@@ -202,7 +202,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def executor(self):
-        """Gets the executor of this ShowPipelineLastStatusV2Response.
+        r"""Gets the executor of this ShowPipelineLastStatusV2Response.
 
         执行人
 
@@ -213,7 +213,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this ShowPipelineLastStatusV2Response.
+        r"""Sets the executor of this ShowPipelineLastStatusV2Response.
 
         执行人
 
@@ -224,7 +224,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPipelineLastStatusV2Response.
+        r"""Gets the start_time of this ShowPipelineLastStatusV2Response.
 
         启动时间
 
@@ -235,7 +235,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPipelineLastStatusV2Response.
+        r"""Sets the start_time of this ShowPipelineLastStatusV2Response.
 
         启动时间
 
@@ -246,7 +246,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this ShowPipelineLastStatusV2Response.
+        r"""Gets the finish_time of this ShowPipelineLastStatusV2Response.
 
         结束时间
 
@@ -257,7 +257,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this ShowPipelineLastStatusV2Response.
+        r"""Sets the finish_time of this ShowPipelineLastStatusV2Response.
 
         结束时间
 
@@ -268,7 +268,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this ShowPipelineLastStatusV2Response.
+        r"""Gets the detail_url of this ShowPipelineLastStatusV2Response.
 
         运行详情链接
 
@@ -279,7 +279,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this ShowPipelineLastStatusV2Response.
+        r"""Sets the detail_url of this ShowPipelineLastStatusV2Response.
 
         运行详情链接
 
@@ -290,7 +290,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def modify_url(self):
-        """Gets the modify_url of this ShowPipelineLastStatusV2Response.
+        r"""Gets the modify_url of this ShowPipelineLastStatusV2Response.
 
         编辑链接
 
@@ -301,7 +301,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @modify_url.setter
     def modify_url(self, modify_url):
-        """Sets the modify_url of this ShowPipelineLastStatusV2Response.
+        r"""Sets the modify_url of this ShowPipelineLastStatusV2Response.
 
         编辑链接
 
@@ -312,7 +312,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def build_id(self):
-        """Gets the build_id of this ShowPipelineLastStatusV2Response.
+        r"""Gets the build_id of this ShowPipelineLastStatusV2Response.
 
         流水线执行序号
 
@@ -323,7 +323,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this ShowPipelineLastStatusV2Response.
+        r"""Sets the build_id of this ShowPipelineLastStatusV2Response.
 
         流水线执行序号
 
@@ -334,7 +334,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @property
     def stages(self):
-        """Gets the stages of this ShowPipelineLastStatusV2Response.
+        r"""Gets the stages of this ShowPipelineLastStatusV2Response.
 
         阶段信息
 
@@ -345,7 +345,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this ShowPipelineLastStatusV2Response.
+        r"""Sets the stages of this ShowPipelineLastStatusV2Response.
 
         阶段信息
 

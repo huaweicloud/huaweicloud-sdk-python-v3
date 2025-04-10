@@ -25,7 +25,7 @@ class CreateCheckpointRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCheckpointRequest
+        r"""CreateCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCheckpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCheckpointRequest.
+        r"""Gets the body of this CreateCheckpointRequest.
 
         :return: The body of this CreateCheckpointRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`
@@ -52,7 +52,7 @@ class CreateCheckpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCheckpointRequest.
+        r"""Sets the body of this CreateCheckpointRequest.
 
         :param body: The body of this CreateCheckpointRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`

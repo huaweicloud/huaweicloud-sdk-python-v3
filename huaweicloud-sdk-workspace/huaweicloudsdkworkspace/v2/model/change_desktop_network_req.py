@@ -31,7 +31,7 @@ class ChangeDesktopNetworkReq:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, private_ip=None, security_group_ids=None):
-        """ChangeDesktopNetworkReq
+        r"""ChangeDesktopNetworkReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangeDesktopNetworkReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ChangeDesktopNetworkReq.
+        r"""Gets the vpc_id of this ChangeDesktopNetworkReq.
 
         待切换VPC的ID
 
@@ -72,7 +72,7 @@ class ChangeDesktopNetworkReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ChangeDesktopNetworkReq.
+        r"""Sets the vpc_id of this ChangeDesktopNetworkReq.
 
         待切换VPC的ID
 
@@ -83,7 +83,7 @@ class ChangeDesktopNetworkReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ChangeDesktopNetworkReq.
+        r"""Gets the subnet_id of this ChangeDesktopNetworkReq.
 
         待切换子网的ID
 
@@ -94,7 +94,7 @@ class ChangeDesktopNetworkReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ChangeDesktopNetworkReq.
+        r"""Sets the subnet_id of this ChangeDesktopNetworkReq.
 
         待切换子网的ID
 
@@ -105,7 +105,7 @@ class ChangeDesktopNetworkReq:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ChangeDesktopNetworkReq.
+        r"""Gets the private_ip of this ChangeDesktopNetworkReq.
 
         指定私有IP地址
 
@@ -116,7 +116,7 @@ class ChangeDesktopNetworkReq:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ChangeDesktopNetworkReq.
+        r"""Sets the private_ip of this ChangeDesktopNetworkReq.
 
         指定私有IP地址
 
@@ -127,7 +127,7 @@ class ChangeDesktopNetworkReq:
 
     @property
     def security_group_ids(self):
-        """Gets the security_group_ids of this ChangeDesktopNetworkReq.
+        r"""Gets the security_group_ids of this ChangeDesktopNetworkReq.
 
         安全组ID列表
 
@@ -138,7 +138,7 @@ class ChangeDesktopNetworkReq:
 
     @security_group_ids.setter
     def security_group_ids(self, security_group_ids):
-        """Sets the security_group_ids of this ChangeDesktopNetworkReq.
+        r"""Sets the security_group_ids of this ChangeDesktopNetworkReq.
 
         安全组ID列表
 

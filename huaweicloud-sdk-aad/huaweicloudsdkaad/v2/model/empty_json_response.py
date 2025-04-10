@@ -23,7 +23,7 @@ class EmptyJsonResponse:
     }
 
     def __init__(self):
-        """EmptyJsonResponse
+        r"""EmptyJsonResponse
 
         The model defined in huaweicloud sdk
 

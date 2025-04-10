@@ -29,7 +29,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
     }
 
     def __init__(self, limit=None, marker=None, body=None):
-        """ListAggregateComplianceByPolicyAssignmentRequest
+        r"""ListAggregateComplianceByPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAggregateComplianceByPolicyAssignmentRequest.
+        r"""Gets the limit of this ListAggregateComplianceByPolicyAssignmentRequest.
 
         最大的返回数量
 
@@ -68,7 +68,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAggregateComplianceByPolicyAssignmentRequest.
+        r"""Sets the limit of this ListAggregateComplianceByPolicyAssignmentRequest.
 
         最大的返回数量
 
@@ -79,7 +79,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAggregateComplianceByPolicyAssignmentRequest.
+        r"""Gets the marker of this ListAggregateComplianceByPolicyAssignmentRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -90,7 +90,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAggregateComplianceByPolicyAssignmentRequest.
+        r"""Sets the marker of this ListAggregateComplianceByPolicyAssignmentRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -101,7 +101,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAggregateComplianceByPolicyAssignmentRequest.
+        r"""Gets the body of this ListAggregateComplianceByPolicyAssignmentRequest.
 
         :return: The body of this ListAggregateComplianceByPolicyAssignmentRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.AggregatePolicyAssignmentsRequest`
@@ -110,7 +110,7 @@ class ListAggregateComplianceByPolicyAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAggregateComplianceByPolicyAssignmentRequest.
+        r"""Sets the body of this ListAggregateComplianceByPolicyAssignmentRequest.
 
         :param body: The body of this ListAggregateComplianceByPolicyAssignmentRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.AggregatePolicyAssignmentsRequest`

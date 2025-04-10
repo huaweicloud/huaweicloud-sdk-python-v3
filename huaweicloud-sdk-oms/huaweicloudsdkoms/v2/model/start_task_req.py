@@ -41,7 +41,7 @@ class StartTaskReq:
     }
 
     def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, src_security_token=None, dst_ak=None, dst_sk=None, dst_security_token=None, source_cdn_authentication_key=None, migrate_failed_object=None):
-        """StartTaskReq
+        r"""StartTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class StartTaskReq:
 
     @property
     def src_ak(self):
-        """Gets the src_ak of this StartTaskReq.
+        r"""Gets the src_ak of this StartTaskReq.
 
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -108,7 +108,7 @@ class StartTaskReq:
 
     @src_ak.setter
     def src_ak(self, src_ak):
-        """Sets the src_ak of this StartTaskReq.
+        r"""Sets the src_ak of this StartTaskReq.
 
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -119,7 +119,7 @@ class StartTaskReq:
 
     @property
     def src_sk(self):
-        """Gets the src_sk of this StartTaskReq.
+        r"""Gets the src_sk of this StartTaskReq.
 
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -130,7 +130,7 @@ class StartTaskReq:
 
     @src_sk.setter
     def src_sk(self, src_sk):
-        """Sets the src_sk of this StartTaskReq.
+        r"""Sets the src_sk of this StartTaskReq.
 
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -141,7 +141,7 @@ class StartTaskReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this StartTaskReq.
+        r"""Gets the json_auth_file of this StartTaskReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -152,7 +152,7 @@ class StartTaskReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this StartTaskReq.
+        r"""Sets the json_auth_file of this StartTaskReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -163,7 +163,7 @@ class StartTaskReq:
 
     @property
     def src_security_token(self):
-        """Gets the src_security_token of this StartTaskReq.
+        r"""Gets the src_security_token of this StartTaskReq.
 
         源端节点临时Token
 
@@ -174,7 +174,7 @@ class StartTaskReq:
 
     @src_security_token.setter
     def src_security_token(self, src_security_token):
-        """Sets the src_security_token of this StartTaskReq.
+        r"""Sets the src_security_token of this StartTaskReq.
 
         源端节点临时Token
 
@@ -185,7 +185,7 @@ class StartTaskReq:
 
     @property
     def dst_ak(self):
-        """Gets the dst_ak of this StartTaskReq.
+        r"""Gets the dst_ak of this StartTaskReq.
 
         目的端节点AK（最大长度100个字符）。
 
@@ -196,7 +196,7 @@ class StartTaskReq:
 
     @dst_ak.setter
     def dst_ak(self, dst_ak):
-        """Sets the dst_ak of this StartTaskReq.
+        r"""Sets the dst_ak of this StartTaskReq.
 
         目的端节点AK（最大长度100个字符）。
 
@@ -207,7 +207,7 @@ class StartTaskReq:
 
     @property
     def dst_sk(self):
-        """Gets the dst_sk of this StartTaskReq.
+        r"""Gets the dst_sk of this StartTaskReq.
 
         目的端节点SK（最大长度100个字符）。
 
@@ -218,7 +218,7 @@ class StartTaskReq:
 
     @dst_sk.setter
     def dst_sk(self, dst_sk):
-        """Sets the dst_sk of this StartTaskReq.
+        r"""Sets the dst_sk of this StartTaskReq.
 
         目的端节点SK（最大长度100个字符）。
 
@@ -229,7 +229,7 @@ class StartTaskReq:
 
     @property
     def dst_security_token(self):
-        """Gets the dst_security_token of this StartTaskReq.
+        r"""Gets the dst_security_token of this StartTaskReq.
 
         目标端节点临时Token
 
@@ -240,7 +240,7 @@ class StartTaskReq:
 
     @dst_security_token.setter
     def dst_security_token(self, dst_security_token):
-        """Sets the dst_security_token of this StartTaskReq.
+        r"""Sets the dst_security_token of this StartTaskReq.
 
         目标端节点临时Token
 
@@ -251,7 +251,7 @@ class StartTaskReq:
 
     @property
     def source_cdn_authentication_key(self):
-        """Gets the source_cdn_authentication_key of this StartTaskReq.
+        r"""Gets the source_cdn_authentication_key of this StartTaskReq.
 
         CDN鉴权秘钥。
 
@@ -262,7 +262,7 @@ class StartTaskReq:
 
     @source_cdn_authentication_key.setter
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
-        """Sets the source_cdn_authentication_key of this StartTaskReq.
+        r"""Sets the source_cdn_authentication_key of this StartTaskReq.
 
         CDN鉴权秘钥。
 
@@ -273,7 +273,7 @@ class StartTaskReq:
 
     @property
     def migrate_failed_object(self):
-        """Gets the migrate_failed_object of this StartTaskReq.
+        r"""Gets the migrate_failed_object of this StartTaskReq.
 
         迁移类型，标识是否为全量迁移，默认false（全量迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量迁移。
 
@@ -284,7 +284,7 @@ class StartTaskReq:
 
     @migrate_failed_object.setter
     def migrate_failed_object(self, migrate_failed_object):
-        """Sets the migrate_failed_object of this StartTaskReq.
+        r"""Sets the migrate_failed_object of this StartTaskReq.
 
         迁移类型，标识是否为全量迁移，默认false（全量迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量迁移。
 

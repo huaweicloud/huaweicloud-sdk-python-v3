@@ -28,7 +28,7 @@ class ListVpcPeeringsResponse(SdkResponse):
     }
 
     def __init__(self, peerings=None, peerings_links=None):
-        """ListVpcPeeringsResponse
+        r"""ListVpcPeeringsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVpcPeeringsResponse(SdkResponse):
 
     @property
     def peerings(self):
-        """Gets the peerings of this ListVpcPeeringsResponse.
+        r"""Gets the peerings of this ListVpcPeeringsResponse.
 
         peering对象列表
 
@@ -62,7 +62,7 @@ class ListVpcPeeringsResponse(SdkResponse):
 
     @peerings.setter
     def peerings(self, peerings):
-        """Sets the peerings of this ListVpcPeeringsResponse.
+        r"""Sets the peerings of this ListVpcPeeringsResponse.
 
         peering对象列表
 
@@ -73,7 +73,7 @@ class ListVpcPeeringsResponse(SdkResponse):
 
     @property
     def peerings_links(self):
-        """Gets the peerings_links of this ListVpcPeeringsResponse.
+        r"""Gets the peerings_links of this ListVpcPeeringsResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class ListVpcPeeringsResponse(SdkResponse):
 
     @peerings_links.setter
     def peerings_links(self, peerings_links):
-        """Sets the peerings_links of this ListVpcPeeringsResponse.
+        r"""Sets the peerings_links of this ListVpcPeeringsResponse.
 
         分页信息
 

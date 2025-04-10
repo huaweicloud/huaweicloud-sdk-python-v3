@@ -67,7 +67,7 @@ class ClusterDetailInstance:
     }
 
     def __init__(self, flavor=None, volume=None, status=None, actions=None, type=None, id=None, name=None, is_frozen=None, components=None, config_status=None, role=None, group=None, links=None, params_group_id=None, public_ip=None, manage_ip=None, traffic_ip=None, shard_id=None, manage_fix_ip=None, private_ip=None, internal_ip=None, resource=None):
-        """ClusterDetailInstance
+        r"""ClusterDetailInstance
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ClusterDetailInstance:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ClusterDetailInstance.
+        r"""Gets the flavor of this ClusterDetailInstance.
 
         :return: The flavor of this ClusterDetailInstance.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
@@ -192,7 +192,7 @@ class ClusterDetailInstance:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ClusterDetailInstance.
+        r"""Sets the flavor of this ClusterDetailInstance.
 
         :param flavor: The flavor of this ClusterDetailInstance.
         :type flavor: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
@@ -201,7 +201,7 @@ class ClusterDetailInstance:
 
     @property
     def volume(self):
-        """Gets the volume of this ClusterDetailInstance.
+        r"""Gets the volume of this ClusterDetailInstance.
 
         :return: The volume of this ClusterDetailInstance.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`
@@ -210,7 +210,7 @@ class ClusterDetailInstance:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ClusterDetailInstance.
+        r"""Sets the volume of this ClusterDetailInstance.
 
         :param volume: The volume of this ClusterDetailInstance.
         :type volume: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`
@@ -219,7 +219,7 @@ class ClusterDetailInstance:
 
     @property
     def status(self):
-        """Gets the status of this ClusterDetailInstance.
+        r"""Gets the status of this ClusterDetailInstance.
 
         节点状态： - 100：创建中。 - 200：正常。 - 300：失败。 - 303：创建失败。 - 400：已删除。 - 800：冻结。
 
@@ -230,7 +230,7 @@ class ClusterDetailInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterDetailInstance.
+        r"""Sets the status of this ClusterDetailInstance.
 
         节点状态： - 100：创建中。 - 200：正常。 - 300：失败。 - 303：创建失败。 - 400：已删除。 - 800：冻结。
 
@@ -241,7 +241,7 @@ class ClusterDetailInstance:
 
     @property
     def actions(self):
-        """Gets the actions of this ClusterDetailInstance.
+        r"""Gets the actions of this ClusterDetailInstance.
 
         节点操作状态列表： - REBOOTING：重启中。 - RESTORING：恢复中。 - REBOOT_FAILURE：重启失败。
 
@@ -252,7 +252,7 @@ class ClusterDetailInstance:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ClusterDetailInstance.
+        r"""Sets the actions of this ClusterDetailInstance.
 
         节点操作状态列表： - REBOOTING：重启中。 - RESTORING：恢复中。 - REBOOT_FAILURE：重启失败。
 
@@ -263,7 +263,7 @@ class ClusterDetailInstance:
 
     @property
     def type(self):
-        """Gets the type of this ClusterDetailInstance.
+        r"""Gets the type of this ClusterDetailInstance.
 
         节点类型，只支持一种类型“cdm”。
 
@@ -274,7 +274,7 @@ class ClusterDetailInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterDetailInstance.
+        r"""Sets the type of this ClusterDetailInstance.
 
         节点类型，只支持一种类型“cdm”。
 
@@ -285,7 +285,7 @@ class ClusterDetailInstance:
 
     @property
     def id(self):
-        """Gets the id of this ClusterDetailInstance.
+        r"""Gets the id of this ClusterDetailInstance.
 
         节点的虚拟机ID。
 
@@ -296,7 +296,7 @@ class ClusterDetailInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterDetailInstance.
+        r"""Sets the id of this ClusterDetailInstance.
 
         节点的虚拟机ID。
 
@@ -307,7 +307,7 @@ class ClusterDetailInstance:
 
     @property
     def name(self):
-        """Gets the name of this ClusterDetailInstance.
+        r"""Gets the name of this ClusterDetailInstance.
 
         节点的虚拟机名称。
 
@@ -318,7 +318,7 @@ class ClusterDetailInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterDetailInstance.
+        r"""Sets the name of this ClusterDetailInstance.
 
         节点的虚拟机名称。
 
@@ -329,7 +329,7 @@ class ClusterDetailInstance:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this ClusterDetailInstance.
+        r"""Gets the is_frozen of this ClusterDetailInstance.
 
         节点是否冻结：0：否。1：是。
 
@@ -340,7 +340,7 @@ class ClusterDetailInstance:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this ClusterDetailInstance.
+        r"""Sets the is_frozen of this ClusterDetailInstance.
 
         节点是否冻结：0：否。1：是。
 
@@ -351,7 +351,7 @@ class ClusterDetailInstance:
 
     @property
     def components(self):
-        """Gets the components of this ClusterDetailInstance.
+        r"""Gets the components of this ClusterDetailInstance.
 
         组件
 
@@ -362,7 +362,7 @@ class ClusterDetailInstance:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this ClusterDetailInstance.
+        r"""Sets the components of this ClusterDetailInstance.
 
         组件
 
@@ -373,7 +373,7 @@ class ClusterDetailInstance:
 
     @property
     def config_status(self):
-        """Gets the config_status of this ClusterDetailInstance.
+        r"""Gets the config_status of this ClusterDetailInstance.
 
         节点配置状态（查询集群列表时为null）： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
@@ -384,7 +384,7 @@ class ClusterDetailInstance:
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ClusterDetailInstance.
+        r"""Sets the config_status of this ClusterDetailInstance.
 
         节点配置状态（查询集群列表时为null）： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
@@ -395,7 +395,7 @@ class ClusterDetailInstance:
 
     @property
     def role(self):
-        """Gets the role of this ClusterDetailInstance.
+        r"""Gets the role of this ClusterDetailInstance.
 
         实例角色
 
@@ -406,7 +406,7 @@ class ClusterDetailInstance:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ClusterDetailInstance.
+        r"""Sets the role of this ClusterDetailInstance.
 
         实例角色
 
@@ -417,7 +417,7 @@ class ClusterDetailInstance:
 
     @property
     def group(self):
-        """Gets the group of this ClusterDetailInstance.
+        r"""Gets the group of this ClusterDetailInstance.
 
         分组
 
@@ -428,7 +428,7 @@ class ClusterDetailInstance:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ClusterDetailInstance.
+        r"""Sets the group of this ClusterDetailInstance.
 
         分组
 
@@ -439,7 +439,7 @@ class ClusterDetailInstance:
 
     @property
     def links(self):
-        """Gets the links of this ClusterDetailInstance.
+        r"""Gets the links of this ClusterDetailInstance.
 
         链接信息（查询集群列表时返回值为null）
 
@@ -450,7 +450,7 @@ class ClusterDetailInstance:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ClusterDetailInstance.
+        r"""Sets the links of this ClusterDetailInstance.
 
         链接信息（查询集群列表时返回值为null）
 
@@ -461,7 +461,7 @@ class ClusterDetailInstance:
 
     @property
     def params_group_id(self):
-        """Gets the params_group_id of this ClusterDetailInstance.
+        r"""Gets the params_group_id of this ClusterDetailInstance.
 
         组件分组id
 
@@ -472,7 +472,7 @@ class ClusterDetailInstance:
 
     @params_group_id.setter
     def params_group_id(self, params_group_id):
-        """Sets the params_group_id of this ClusterDetailInstance.
+        r"""Sets the params_group_id of this ClusterDetailInstance.
 
         组件分组id
 
@@ -483,7 +483,7 @@ class ClusterDetailInstance:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ClusterDetailInstance.
+        r"""Gets the public_ip of this ClusterDetailInstance.
 
         公网ip
 
@@ -494,7 +494,7 @@ class ClusterDetailInstance:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ClusterDetailInstance.
+        r"""Sets the public_ip of this ClusterDetailInstance.
 
         公网ip
 
@@ -505,7 +505,7 @@ class ClusterDetailInstance:
 
     @property
     def manage_ip(self):
-        """Gets the manage_ip of this ClusterDetailInstance.
+        r"""Gets the manage_ip of this ClusterDetailInstance.
 
         管理ip
 
@@ -516,7 +516,7 @@ class ClusterDetailInstance:
 
     @manage_ip.setter
     def manage_ip(self, manage_ip):
-        """Sets the manage_ip of this ClusterDetailInstance.
+        r"""Sets the manage_ip of this ClusterDetailInstance.
 
         管理ip
 
@@ -527,7 +527,7 @@ class ClusterDetailInstance:
 
     @property
     def traffic_ip(self):
-        """Gets the traffic_ip of this ClusterDetailInstance.
+        r"""Gets the traffic_ip of this ClusterDetailInstance.
 
         流量ip
 
@@ -538,7 +538,7 @@ class ClusterDetailInstance:
 
     @traffic_ip.setter
     def traffic_ip(self, traffic_ip):
-        """Sets the traffic_ip of this ClusterDetailInstance.
+        r"""Sets the traffic_ip of this ClusterDetailInstance.
 
         流量ip
 
@@ -549,7 +549,7 @@ class ClusterDetailInstance:
 
     @property
     def shard_id(self):
-        """Gets the shard_id of this ClusterDetailInstance.
+        r"""Gets the shard_id of this ClusterDetailInstance.
 
         分片id
 
@@ -560,7 +560,7 @@ class ClusterDetailInstance:
 
     @shard_id.setter
     def shard_id(self, shard_id):
-        """Sets the shard_id of this ClusterDetailInstance.
+        r"""Sets the shard_id of this ClusterDetailInstance.
 
         分片id
 
@@ -571,7 +571,7 @@ class ClusterDetailInstance:
 
     @property
     def manage_fix_ip(self):
-        """Gets the manage_fix_ip of this ClusterDetailInstance.
+        r"""Gets the manage_fix_ip of this ClusterDetailInstance.
 
         管理修复ip
 
@@ -582,7 +582,7 @@ class ClusterDetailInstance:
 
     @manage_fix_ip.setter
     def manage_fix_ip(self, manage_fix_ip):
-        """Sets the manage_fix_ip of this ClusterDetailInstance.
+        r"""Sets the manage_fix_ip of this ClusterDetailInstance.
 
         管理修复ip
 
@@ -593,7 +593,7 @@ class ClusterDetailInstance:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ClusterDetailInstance.
+        r"""Gets the private_ip of this ClusterDetailInstance.
 
         私有ip
 
@@ -604,7 +604,7 @@ class ClusterDetailInstance:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ClusterDetailInstance.
+        r"""Sets the private_ip of this ClusterDetailInstance.
 
         私有ip
 
@@ -615,7 +615,7 @@ class ClusterDetailInstance:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this ClusterDetailInstance.
+        r"""Gets the internal_ip of this ClusterDetailInstance.
 
         内部ip
 
@@ -626,7 +626,7 @@ class ClusterDetailInstance:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this ClusterDetailInstance.
+        r"""Sets the internal_ip of this ClusterDetailInstance.
 
         内部ip
 
@@ -637,7 +637,7 @@ class ClusterDetailInstance:
 
     @property
     def resource(self):
-        """Gets the resource of this ClusterDetailInstance.
+        r"""Gets the resource of this ClusterDetailInstance.
 
         资源信息（查询集群列表时返回值为null）
 
@@ -648,7 +648,7 @@ class ClusterDetailInstance:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this ClusterDetailInstance.
+        r"""Sets the resource of this ClusterDetailInstance.
 
         资源信息（查询集群列表时返回值为null）
 

@@ -47,7 +47,7 @@ class ScheduledTask:
     }
 
     def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None, next_execution_time=None, enable=None, description=None, priority=None, time_zone=None, wait_time=None):
-        """ScheduledTask
+        r"""ScheduledTask
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ScheduledTask:
 
     @property
     def id(self):
-        """Gets the id of this ScheduledTask.
+        r"""Gets the id of this ScheduledTask.
 
         任务id。
 
@@ -131,7 +131,7 @@ class ScheduledTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduledTask.
+        r"""Sets the id of this ScheduledTask.
 
         任务id。
 
@@ -142,7 +142,7 @@ class ScheduledTask:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ScheduledTask.
+        r"""Gets the task_name of this ScheduledTask.
 
         任务名称。
 
@@ -153,7 +153,7 @@ class ScheduledTask:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ScheduledTask.
+        r"""Sets the task_name of this ScheduledTask.
 
         任务名称。
 
@@ -164,7 +164,7 @@ class ScheduledTask:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduledTask.
+        r"""Gets the task_type of this ScheduledTask.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
 
@@ -175,7 +175,7 @@ class ScheduledTask:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduledTask.
+        r"""Sets the task_type of this ScheduledTask.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
 
@@ -186,7 +186,7 @@ class ScheduledTask:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ScheduledTask.
+        r"""Gets the scheduled_type of this ScheduledTask.
 
         执行周期。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
 
@@ -197,7 +197,7 @@ class ScheduledTask:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ScheduledTask.
+        r"""Sets the scheduled_type of this ScheduledTask.
 
         执行周期。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
 
@@ -208,7 +208,7 @@ class ScheduledTask:
 
     @property
     def life_cycle_type(self):
-        """Gets the life_cycle_type of this ScheduledTask.
+        r"""Gets the life_cycle_type of this ScheduledTask.
 
         触发场景类型。
 
@@ -219,7 +219,7 @@ class ScheduledTask:
 
     @life_cycle_type.setter
     def life_cycle_type(self, life_cycle_type):
-        """Sets the life_cycle_type of this ScheduledTask.
+        r"""Sets the life_cycle_type of this ScheduledTask.
 
         触发场景类型。
 
@@ -230,7 +230,7 @@ class ScheduledTask:
 
     @property
     def last_status(self):
-        """Gets the last_status of this ScheduledTask.
+        r"""Gets the last_status of this ScheduledTask.
 
         最近一次执行状态。SUCCESS：成功，SKIP：跳过，FAIL：失败。
 
@@ -241,7 +241,7 @@ class ScheduledTask:
 
     @last_status.setter
     def last_status(self, last_status):
-        """Sets the last_status of this ScheduledTask.
+        r"""Sets the last_status of this ScheduledTask.
 
         最近一次执行状态。SUCCESS：成功，SKIP：跳过，FAIL：失败。
 
@@ -252,7 +252,7 @@ class ScheduledTask:
 
     @property
     def next_execution_time(self):
-        """Gets the next_execution_time of this ScheduledTask.
+        r"""Gets the next_execution_time of this ScheduledTask.
 
         下一次执行时间。格式为yyyy-MM-dd HH:mm:ss。
 
@@ -263,7 +263,7 @@ class ScheduledTask:
 
     @next_execution_time.setter
     def next_execution_time(self, next_execution_time):
-        """Sets the next_execution_time of this ScheduledTask.
+        r"""Sets the next_execution_time of this ScheduledTask.
 
         下一次执行时间。格式为yyyy-MM-dd HH:mm:ss。
 
@@ -274,7 +274,7 @@ class ScheduledTask:
 
     @property
     def enable(self):
-        """Gets the enable of this ScheduledTask.
+        r"""Gets the enable of this ScheduledTask.
 
         是否启用。
 
@@ -285,7 +285,7 @@ class ScheduledTask:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ScheduledTask.
+        r"""Sets the enable of this ScheduledTask.
 
         是否启用。
 
@@ -296,7 +296,7 @@ class ScheduledTask:
 
     @property
     def description(self):
-        """Gets the description of this ScheduledTask.
+        r"""Gets the description of this ScheduledTask.
 
         描述。
 
@@ -307,7 +307,7 @@ class ScheduledTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScheduledTask.
+        r"""Sets the description of this ScheduledTask.
 
         描述。
 
@@ -318,7 +318,7 @@ class ScheduledTask:
 
     @property
     def priority(self):
-        """Gets the priority of this ScheduledTask.
+        r"""Gets the priority of this ScheduledTask.
 
         优先级。触发式任务使用。
 
@@ -329,7 +329,7 @@ class ScheduledTask:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ScheduledTask.
+        r"""Sets the priority of this ScheduledTask.
 
         优先级。触发式任务使用。
 
@@ -340,7 +340,7 @@ class ScheduledTask:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduledTask.
+        r"""Gets the time_zone of this ScheduledTask.
 
         时区
 
@@ -351,7 +351,7 @@ class ScheduledTask:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduledTask.
+        r"""Sets the time_zone of this ScheduledTask.
 
         时区
 
@@ -362,7 +362,7 @@ class ScheduledTask:
 
     @property
     def wait_time(self):
-        """Gets the wait_time of this ScheduledTask.
+        r"""Gets the wait_time of this ScheduledTask.
 
         触发式任务触发后，等待时长。
 
@@ -373,7 +373,7 @@ class ScheduledTask:
 
     @wait_time.setter
     def wait_time(self, wait_time):
-        """Sets the wait_time of this ScheduledTask.
+        r"""Sets the wait_time of this ScheduledTask.
 
         触发式任务触发后，等待时长。
 

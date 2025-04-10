@@ -33,7 +33,7 @@ class RadiusHost:
     }
 
     def __init__(self, name=None, radius_ip=None, auth_port=None, accept_port=None, nas_id=None):
-        """RadiusHost
+        r"""RadiusHost
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RadiusHost:
 
     @property
     def name(self):
-        """Gets the name of this RadiusHost.
+        r"""Gets the name of this RadiusHost.
 
         名称
 
@@ -82,7 +82,7 @@ class RadiusHost:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RadiusHost.
+        r"""Sets the name of this RadiusHost.
 
         名称
 
@@ -93,7 +93,7 @@ class RadiusHost:
 
     @property
     def radius_ip(self):
-        """Gets the radius_ip of this RadiusHost.
+        r"""Gets the radius_ip of this RadiusHost.
 
         IP地址
 
@@ -104,7 +104,7 @@ class RadiusHost:
 
     @radius_ip.setter
     def radius_ip(self, radius_ip):
-        """Sets the radius_ip of this RadiusHost.
+        r"""Sets the radius_ip of this RadiusHost.
 
         IP地址
 
@@ -115,7 +115,7 @@ class RadiusHost:
 
     @property
     def auth_port(self):
-        """Gets the auth_port of this RadiusHost.
+        r"""Gets the auth_port of this RadiusHost.
 
         认证端口
 
@@ -126,7 +126,7 @@ class RadiusHost:
 
     @auth_port.setter
     def auth_port(self, auth_port):
-        """Sets the auth_port of this RadiusHost.
+        r"""Sets the auth_port of this RadiusHost.
 
         认证端口
 
@@ -137,7 +137,7 @@ class RadiusHost:
 
     @property
     def accept_port(self):
-        """Gets the accept_port of this RadiusHost.
+        r"""Gets the accept_port of this RadiusHost.
 
         接收端口
 
@@ -148,7 +148,7 @@ class RadiusHost:
 
     @accept_port.setter
     def accept_port(self, accept_port):
-        """Sets the accept_port of this RadiusHost.
+        r"""Sets the accept_port of this RadiusHost.
 
         接收端口
 
@@ -159,7 +159,7 @@ class RadiusHost:
 
     @property
     def nas_id(self):
-        """Gets the nas_id of this RadiusHost.
+        r"""Gets the nas_id of this RadiusHost.
 
         NAS ID
 
@@ -170,7 +170,7 @@ class RadiusHost:
 
     @nas_id.setter
     def nas_id(self, nas_id):
-        """Sets the nas_id of this RadiusHost.
+        r"""Sets the nas_id of this RadiusHost.
 
         NAS ID
 

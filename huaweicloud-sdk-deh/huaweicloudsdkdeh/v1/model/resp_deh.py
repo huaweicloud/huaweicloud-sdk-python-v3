@@ -31,7 +31,7 @@ class RespDeh:
     }
 
     def __init__(self, resource_id=None, resouce_detail=None, tags=None, resource_name=None):
-        """RespDeh
+        r"""RespDeh
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class RespDeh:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RespDeh.
+        r"""Gets the resource_id of this RespDeh.
 
         专属主机ID。
 
@@ -71,7 +71,7 @@ class RespDeh:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RespDeh.
+        r"""Sets the resource_id of this RespDeh.
 
         专属主机ID。
 
@@ -82,7 +82,7 @@ class RespDeh:
 
     @property
     def resouce_detail(self):
-        """Gets the resouce_detail of this RespDeh.
+        r"""Gets the resouce_detail of this RespDeh.
 
         专属主机详情。  该字段用于后续扩展，默认为空。
 
@@ -93,7 +93,7 @@ class RespDeh:
 
     @resouce_detail.setter
     def resouce_detail(self, resouce_detail):
-        """Sets the resouce_detail of this RespDeh.
+        r"""Sets the resouce_detail of this RespDeh.
 
         专属主机详情。  该字段用于后续扩展，默认为空。
 
@@ -104,7 +104,7 @@ class RespDeh:
 
     @property
     def tags(self):
-        """Gets the tags of this RespDeh.
+        r"""Gets the tags of this RespDeh.
 
         标签列表。
 
@@ -115,7 +115,7 @@ class RespDeh:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this RespDeh.
+        r"""Sets the tags of this RespDeh.
 
         标签列表。
 
@@ -126,7 +126,7 @@ class RespDeh:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this RespDeh.
+        r"""Gets the resource_name of this RespDeh.
 
         资源名称。
 
@@ -137,7 +137,7 @@ class RespDeh:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this RespDeh.
+        r"""Sets the resource_name of this RespDeh.
 
         资源名称。
 

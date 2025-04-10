@@ -67,7 +67,7 @@ class CreateDesktopPoolReq:
     }
 
     def __init__(self, name=None, type=None, size=None, description=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, authorized_objects=None, order_id=None, ou_name=None, tags=None, enterprise_project_id=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, desktop_name_policy_id=None):
-        """CreateDesktopPoolReq
+        r"""CreateDesktopPoolReq
 
         The model defined in huaweicloud sdk
 
@@ -182,7 +182,7 @@ class CreateDesktopPoolReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateDesktopPoolReq.
+        r"""Gets the name of this CreateDesktopPoolReq.
 
         桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
 
@@ -193,7 +193,7 @@ class CreateDesktopPoolReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDesktopPoolReq.
+        r"""Sets the name of this CreateDesktopPoolReq.
 
         桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
 
@@ -204,7 +204,7 @@ class CreateDesktopPoolReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateDesktopPoolReq.
+        r"""Gets the type of this CreateDesktopPoolReq.
 
         桌面池类型，DYNAMIC：动态池，STATIC：静态池。
 
@@ -215,7 +215,7 @@ class CreateDesktopPoolReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateDesktopPoolReq.
+        r"""Sets the type of this CreateDesktopPoolReq.
 
         桌面池类型，DYNAMIC：动态池，STATIC：静态池。
 
@@ -226,7 +226,7 @@ class CreateDesktopPoolReq:
 
     @property
     def size(self):
-        """Gets the size of this CreateDesktopPoolReq.
+        r"""Gets the size of this CreateDesktopPoolReq.
 
         桌面池大小：当前桌面池要创建多少台桌面。
 
@@ -237,7 +237,7 @@ class CreateDesktopPoolReq:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateDesktopPoolReq.
+        r"""Sets the size of this CreateDesktopPoolReq.
 
         桌面池大小：当前桌面池要创建多少台桌面。
 
@@ -248,7 +248,7 @@ class CreateDesktopPoolReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateDesktopPoolReq.
+        r"""Gets the description of this CreateDesktopPoolReq.
 
         桌面池描述。
 
@@ -259,7 +259,7 @@ class CreateDesktopPoolReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDesktopPoolReq.
+        r"""Sets the description of this CreateDesktopPoolReq.
 
         桌面池描述。
 
@@ -270,7 +270,7 @@ class CreateDesktopPoolReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateDesktopPoolReq.
+        r"""Gets the availability_zone of this CreateDesktopPoolReq.
 
         可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
 
@@ -281,7 +281,7 @@ class CreateDesktopPoolReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateDesktopPoolReq.
+        r"""Sets the availability_zone of this CreateDesktopPoolReq.
 
         可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
 
@@ -292,7 +292,7 @@ class CreateDesktopPoolReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateDesktopPoolReq.
+        r"""Gets the product_id of this CreateDesktopPoolReq.
 
         套餐ID。
 
@@ -303,7 +303,7 @@ class CreateDesktopPoolReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateDesktopPoolReq.
+        r"""Sets the product_id of this CreateDesktopPoolReq.
 
         套餐ID。
 
@@ -314,7 +314,7 @@ class CreateDesktopPoolReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this CreateDesktopPoolReq.
+        r"""Gets the image_type of this CreateDesktopPoolReq.
 
         镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
 
@@ -325,7 +325,7 @@ class CreateDesktopPoolReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this CreateDesktopPoolReq.
+        r"""Sets the image_type of this CreateDesktopPoolReq.
 
         镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
 
@@ -336,7 +336,7 @@ class CreateDesktopPoolReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CreateDesktopPoolReq.
+        r"""Gets the image_id of this CreateDesktopPoolReq.
 
         镜像ID，用于私有镜像创建桌面场景，配合product_id使用。
 
@@ -347,7 +347,7 @@ class CreateDesktopPoolReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CreateDesktopPoolReq.
+        r"""Sets the image_id of this CreateDesktopPoolReq.
 
         镜像ID，用于私有镜像创建桌面场景，配合product_id使用。
 
@@ -358,7 +358,7 @@ class CreateDesktopPoolReq:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateDesktopPoolReq.
+        r"""Gets the root_volume of this CreateDesktopPoolReq.
 
         :return: The root_volume of this CreateDesktopPoolReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VolumeInfo`
@@ -367,7 +367,7 @@ class CreateDesktopPoolReq:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateDesktopPoolReq.
+        r"""Sets the root_volume of this CreateDesktopPoolReq.
 
         :param root_volume: The root_volume of this CreateDesktopPoolReq.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeInfo`
@@ -376,7 +376,7 @@ class CreateDesktopPoolReq:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this CreateDesktopPoolReq.
+        r"""Gets the data_volumes of this CreateDesktopPoolReq.
 
         数据盘列表。
 
@@ -387,7 +387,7 @@ class CreateDesktopPoolReq:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this CreateDesktopPoolReq.
+        r"""Sets the data_volumes of this CreateDesktopPoolReq.
 
         数据盘列表。
 
@@ -398,7 +398,7 @@ class CreateDesktopPoolReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateDesktopPoolReq.
+        r"""Gets the vpc_id of this CreateDesktopPoolReq.
 
         创建桌面时的VPC ID。
 
@@ -409,7 +409,7 @@ class CreateDesktopPoolReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateDesktopPoolReq.
+        r"""Sets the vpc_id of this CreateDesktopPoolReq.
 
         创建桌面时的VPC ID。
 
@@ -420,7 +420,7 @@ class CreateDesktopPoolReq:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this CreateDesktopPoolReq.
+        r"""Gets the subnet_ids of this CreateDesktopPoolReq.
 
         创建桌面使用的子网ID。
 
@@ -431,7 +431,7 @@ class CreateDesktopPoolReq:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this CreateDesktopPoolReq.
+        r"""Sets the subnet_ids of this CreateDesktopPoolReq.
 
         创建桌面使用的子网ID。
 
@@ -442,7 +442,7 @@ class CreateDesktopPoolReq:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateDesktopPoolReq.
+        r"""Gets the security_groups of this CreateDesktopPoolReq.
 
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
@@ -453,7 +453,7 @@ class CreateDesktopPoolReq:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateDesktopPoolReq.
+        r"""Sets the security_groups of this CreateDesktopPoolReq.
 
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
@@ -464,7 +464,7 @@ class CreateDesktopPoolReq:
 
     @property
     def authorized_objects(self):
-        """Gets the authorized_objects of this CreateDesktopPoolReq.
+        r"""Gets the authorized_objects of this CreateDesktopPoolReq.
 
         要授权的用户/用户组列表。
 
@@ -475,7 +475,7 @@ class CreateDesktopPoolReq:
 
     @authorized_objects.setter
     def authorized_objects(self, authorized_objects):
-        """Sets the authorized_objects of this CreateDesktopPoolReq.
+        r"""Sets the authorized_objects of this CreateDesktopPoolReq.
 
         要授权的用户/用户组列表。
 
@@ -486,7 +486,7 @@ class CreateDesktopPoolReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateDesktopPoolReq.
+        r"""Gets the order_id of this CreateDesktopPoolReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -497,7 +497,7 @@ class CreateDesktopPoolReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateDesktopPoolReq.
+        r"""Sets the order_id of this CreateDesktopPoolReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -508,7 +508,7 @@ class CreateDesktopPoolReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this CreateDesktopPoolReq.
+        r"""Gets the ou_name of this CreateDesktopPoolReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -519,7 +519,7 @@ class CreateDesktopPoolReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this CreateDesktopPoolReq.
+        r"""Sets the ou_name of this CreateDesktopPoolReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -530,7 +530,7 @@ class CreateDesktopPoolReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDesktopPoolReq.
+        r"""Gets the tags of this CreateDesktopPoolReq.
 
         标签列表。
 
@@ -541,7 +541,7 @@ class CreateDesktopPoolReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDesktopPoolReq.
+        r"""Sets the tags of this CreateDesktopPoolReq.
 
         标签列表。
 
@@ -552,7 +552,7 @@ class CreateDesktopPoolReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDesktopPoolReq.
+        r"""Gets the enterprise_project_id of this CreateDesktopPoolReq.
 
         企业项目ID，默认\"0\"
 
@@ -563,7 +563,7 @@ class CreateDesktopPoolReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDesktopPoolReq.
+        r"""Sets the enterprise_project_id of this CreateDesktopPoolReq.
 
         企业项目ID，默认\"0\"
 
@@ -574,7 +574,7 @@ class CreateDesktopPoolReq:
 
     @property
     def disconnected_retention_period(self):
-        """Gets the disconnected_retention_period of this CreateDesktopPoolReq.
+        r"""Gets the disconnected_retention_period of this CreateDesktopPoolReq.
 
         动态池桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
 
@@ -585,7 +585,7 @@ class CreateDesktopPoolReq:
 
     @disconnected_retention_period.setter
     def disconnected_retention_period(self, disconnected_retention_period):
-        """Sets the disconnected_retention_period of this CreateDesktopPoolReq.
+        r"""Sets the disconnected_retention_period of this CreateDesktopPoolReq.
 
         动态池桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
 
@@ -596,7 +596,7 @@ class CreateDesktopPoolReq:
 
     @property
     def enable_autoscale(self):
-        """Gets the enable_autoscale of this CreateDesktopPoolReq.
+        r"""Gets the enable_autoscale of this CreateDesktopPoolReq.
 
         桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
 
@@ -607,7 +607,7 @@ class CreateDesktopPoolReq:
 
     @enable_autoscale.setter
     def enable_autoscale(self, enable_autoscale):
-        """Sets the enable_autoscale of this CreateDesktopPoolReq.
+        r"""Sets the enable_autoscale of this CreateDesktopPoolReq.
 
         桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
 
@@ -618,7 +618,7 @@ class CreateDesktopPoolReq:
 
     @property
     def autoscale_policy(self):
-        """Gets the autoscale_policy of this CreateDesktopPoolReq.
+        r"""Gets the autoscale_policy of this CreateDesktopPoolReq.
 
         :return: The autoscale_policy of this CreateDesktopPoolReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
@@ -627,7 +627,7 @@ class CreateDesktopPoolReq:
 
     @autoscale_policy.setter
     def autoscale_policy(self, autoscale_policy):
-        """Sets the autoscale_policy of this CreateDesktopPoolReq.
+        r"""Sets the autoscale_policy of this CreateDesktopPoolReq.
 
         :param autoscale_policy: The autoscale_policy of this CreateDesktopPoolReq.
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
@@ -636,7 +636,7 @@ class CreateDesktopPoolReq:
 
     @property
     def desktop_name_policy_id(self):
-        """Gets the desktop_name_policy_id of this CreateDesktopPoolReq.
+        r"""Gets the desktop_name_policy_id of this CreateDesktopPoolReq.
 
         策略id，用于指定生成桌面名称策略。
 
@@ -647,7 +647,7 @@ class CreateDesktopPoolReq:
 
     @desktop_name_policy_id.setter
     def desktop_name_policy_id(self, desktop_name_policy_id):
-        """Sets the desktop_name_policy_id of this CreateDesktopPoolReq.
+        r"""Sets the desktop_name_policy_id of this CreateDesktopPoolReq.
 
         策略id，用于指定生成桌面名称策略。
 

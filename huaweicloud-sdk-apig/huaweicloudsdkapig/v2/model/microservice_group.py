@@ -29,7 +29,7 @@ class MicroserviceGroup:
     }
 
     def __init__(self, group_id=None, group_name=None, app_id=None):
-        """MicroserviceGroup
+        r"""MicroserviceGroup
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MicroserviceGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this MicroserviceGroup.
+        r"""Gets the group_id of this MicroserviceGroup.
 
         指定已有的分组，为空时创建新的分组
 
@@ -68,7 +68,7 @@ class MicroserviceGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this MicroserviceGroup.
+        r"""Sets the group_id of this MicroserviceGroup.
 
         指定已有的分组，为空时创建新的分组
 
@@ -79,7 +79,7 @@ class MicroserviceGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this MicroserviceGroup.
+        r"""Gets the group_name of this MicroserviceGroup.
 
         API分组的名称,group_id为空时必填。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -90,7 +90,7 @@ class MicroserviceGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this MicroserviceGroup.
+        r"""Sets the group_name of this MicroserviceGroup.
 
         API分组的名称,group_id为空时必填。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -101,7 +101,7 @@ class MicroserviceGroup:
 
     @property
     def app_id(self):
-        """Gets the app_id of this MicroserviceGroup.
+        r"""Gets the app_id of this MicroserviceGroup.
 
         group_id为空时必填，指定新分组所属的集成应用
 
@@ -112,7 +112,7 @@ class MicroserviceGroup:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this MicroserviceGroup.
+        r"""Sets the app_id of this MicroserviceGroup.
 
         group_id为空时必填，指定新分组所属的集成应用
 

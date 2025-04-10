@@ -30,7 +30,7 @@ class ListSlowlogResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, count=None, slowlogs=None):
-        """ListSlowlogResponse
+        r"""ListSlowlogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSlowlogResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListSlowlogResponse.
+        r"""Gets the total_num of this ListSlowlogResponse.
 
         慢日志总条数
 
@@ -69,7 +69,7 @@ class ListSlowlogResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListSlowlogResponse.
+        r"""Sets the total_num of this ListSlowlogResponse.
 
         慢日志总条数
 
@@ -80,7 +80,7 @@ class ListSlowlogResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSlowlogResponse.
+        r"""Gets the count of this ListSlowlogResponse.
 
         总数
 
@@ -91,7 +91,7 @@ class ListSlowlogResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSlowlogResponse.
+        r"""Sets the count of this ListSlowlogResponse.
 
         总数
 
@@ -102,7 +102,7 @@ class ListSlowlogResponse(SdkResponse):
 
     @property
     def slowlogs(self):
-        """Gets the slowlogs of this ListSlowlogResponse.
+        r"""Gets the slowlogs of this ListSlowlogResponse.
 
         慢日志列表
 
@@ -113,7 +113,7 @@ class ListSlowlogResponse(SdkResponse):
 
     @slowlogs.setter
     def slowlogs(self, slowlogs):
-        """Sets the slowlogs of this ListSlowlogResponse.
+        r"""Sets the slowlogs of this ListSlowlogResponse.
 
         慢日志列表
 

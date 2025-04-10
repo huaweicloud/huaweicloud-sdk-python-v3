@@ -29,7 +29,7 @@ class VersionResult:
     }
 
     def __init__(self, status=None, id=None, links=None):
-        """VersionResult
+        r"""VersionResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class VersionResult:
 
     @property
     def status(self):
-        """Gets the status of this VersionResult.
+        r"""Gets the status of this VersionResult.
 
         API版本的状态：  - CURRENT（当前版本）  - STABLE（稳定版本）  - DEPRECATED（废弃版本）
 
@@ -65,7 +65,7 @@ class VersionResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionResult.
+        r"""Sets the status of this VersionResult.
 
         API版本的状态：  - CURRENT（当前版本）  - STABLE（稳定版本）  - DEPRECATED（废弃版本）
 
@@ -76,7 +76,7 @@ class VersionResult:
 
     @property
     def id(self):
-        """Gets the id of this VersionResult.
+        r"""Gets the id of this VersionResult.
 
         API版本
 
@@ -87,7 +87,7 @@ class VersionResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionResult.
+        r"""Sets the id of this VersionResult.
 
         API版本
 
@@ -98,7 +98,7 @@ class VersionResult:
 
     @property
     def links(self):
-        """Gets the links of this VersionResult.
+        r"""Gets the links of this VersionResult.
 
         链接列表
 
@@ -109,7 +109,7 @@ class VersionResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VersionResult.
+        r"""Sets the links of this VersionResult.
 
         链接列表
 

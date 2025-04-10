@@ -35,7 +35,7 @@ class DirectedEdge:
     }
 
     def __init__(self, id=None, region_id=None, gateway_id=None, gateway_type=None, site_code=None, project_id=None):
-        """DirectedEdge
+        r"""DirectedEdge
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DirectedEdge:
 
     @property
     def id(self):
-        """Gets the id of this DirectedEdge.
+        r"""Gets the id of this DirectedEdge.
 
         实例ID。
 
@@ -83,7 +83,7 @@ class DirectedEdge:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DirectedEdge.
+        r"""Sets the id of this DirectedEdge.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class DirectedEdge:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DirectedEdge.
+        r"""Gets the region_id of this DirectedEdge.
 
         RegionID。
 
@@ -105,7 +105,7 @@ class DirectedEdge:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DirectedEdge.
+        r"""Sets the region_id of this DirectedEdge.
 
         RegionID。
 
@@ -116,7 +116,7 @@ class DirectedEdge:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this DirectedEdge.
+        r"""Gets the gateway_id of this DirectedEdge.
 
         实例ID。
 
@@ -127,7 +127,7 @@ class DirectedEdge:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this DirectedEdge.
+        r"""Sets the gateway_id of this DirectedEdge.
 
         实例ID。
 
@@ -138,7 +138,7 @@ class DirectedEdge:
 
     @property
     def gateway_type(self):
-        """Gets the gateway_type of this DirectedEdge.
+        r"""Gets the gateway_type of this DirectedEdge.
 
         :return: The gateway_type of this DirectedEdge.
         :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -147,7 +147,7 @@ class DirectedEdge:
 
     @gateway_type.setter
     def gateway_type(self, gateway_type):
-        """Sets the gateway_type of this DirectedEdge.
+        r"""Sets the gateway_type of this DirectedEdge.
 
         :param gateway_type: The gateway_type of this DirectedEdge.
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -156,7 +156,7 @@ class DirectedEdge:
 
     @property
     def site_code(self):
-        """Gets the site_code of this DirectedEdge.
+        r"""Gets the site_code of this DirectedEdge.
 
         站点编码定义
 
@@ -167,7 +167,7 @@ class DirectedEdge:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this DirectedEdge.
+        r"""Sets the site_code of this DirectedEdge.
 
         站点编码定义
 
@@ -178,7 +178,7 @@ class DirectedEdge:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DirectedEdge.
+        r"""Gets the project_id of this DirectedEdge.
 
         实例所属项目ID。
 
@@ -189,7 +189,7 @@ class DirectedEdge:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DirectedEdge.
+        r"""Sets the project_id of this DirectedEdge.
 
         实例所属项目ID。
 

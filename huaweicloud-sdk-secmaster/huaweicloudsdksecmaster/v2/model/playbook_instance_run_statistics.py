@@ -29,7 +29,7 @@ class PlaybookInstanceRunStatistics:
     }
 
     def __init__(self, playbook_instance_id=None, playbook_instance_name=None, playbook_instance_run_time=None):
-        """PlaybookInstanceRunStatistics
+        r"""PlaybookInstanceRunStatistics
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PlaybookInstanceRunStatistics:
 
     @property
     def playbook_instance_id(self):
-        """Gets the playbook_instance_id of this PlaybookInstanceRunStatistics.
+        r"""Gets the playbook_instance_id of this PlaybookInstanceRunStatistics.
 
         剧本实例ID
 
@@ -68,7 +68,7 @@ class PlaybookInstanceRunStatistics:
 
     @playbook_instance_id.setter
     def playbook_instance_id(self, playbook_instance_id):
-        """Sets the playbook_instance_id of this PlaybookInstanceRunStatistics.
+        r"""Sets the playbook_instance_id of this PlaybookInstanceRunStatistics.
 
         剧本实例ID
 
@@ -79,7 +79,7 @@ class PlaybookInstanceRunStatistics:
 
     @property
     def playbook_instance_name(self):
-        """Gets the playbook_instance_name of this PlaybookInstanceRunStatistics.
+        r"""Gets the playbook_instance_name of this PlaybookInstanceRunStatistics.
 
         剧本实例名称
 
@@ -90,7 +90,7 @@ class PlaybookInstanceRunStatistics:
 
     @playbook_instance_name.setter
     def playbook_instance_name(self, playbook_instance_name):
-        """Sets the playbook_instance_name of this PlaybookInstanceRunStatistics.
+        r"""Sets the playbook_instance_name of this PlaybookInstanceRunStatistics.
 
         剧本实例名称
 
@@ -101,7 +101,7 @@ class PlaybookInstanceRunStatistics:
 
     @property
     def playbook_instance_run_time(self):
-        """Gets the playbook_instance_run_time of this PlaybookInstanceRunStatistics.
+        r"""Gets the playbook_instance_run_time of this PlaybookInstanceRunStatistics.
 
         剧本实例运行时间
 
@@ -112,7 +112,7 @@ class PlaybookInstanceRunStatistics:
 
     @playbook_instance_run_time.setter
     def playbook_instance_run_time(self, playbook_instance_run_time):
-        """Sets the playbook_instance_run_time of this PlaybookInstanceRunStatistics.
+        r"""Sets the playbook_instance_run_time of this PlaybookInstanceRunStatistics.
 
         剧本实例运行时间
 

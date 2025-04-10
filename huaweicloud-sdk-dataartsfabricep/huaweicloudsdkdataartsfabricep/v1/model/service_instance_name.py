@@ -23,7 +23,7 @@ class ServiceInstanceName:
     }
 
     def __init__(self):
-        """ServiceInstanceName
+        r"""ServiceInstanceName
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class DetectFace:
     }
 
     def __init__(self, bounding_box=None, attributes=None):
-        """DetectFace
+        r"""DetectFace
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DetectFace:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this DetectFace.
+        r"""Gets the bounding_box of this DetectFace.
 
         :return: The bounding_box of this DetectFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -58,7 +58,7 @@ class DetectFace:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this DetectFace.
+        r"""Sets the bounding_box of this DetectFace.
 
         :param bounding_box: The bounding_box of this DetectFace.
         :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -67,7 +67,7 @@ class DetectFace:
 
     @property
     def attributes(self):
-        """Gets the attributes of this DetectFace.
+        r"""Gets the attributes of this DetectFace.
 
         :return: The attributes of this DetectFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.Attributes`
@@ -76,7 +76,7 @@ class DetectFace:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this DetectFace.
+        r"""Sets the attributes of this DetectFace.
 
         :param attributes: The attributes of this DetectFace.
         :type attributes: :class:`huaweicloudsdkfrs.v2.Attributes`

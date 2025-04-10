@@ -27,7 +27,7 @@ class BatchOperateJobStatus:
     }
 
     def __init__(self):
-        """BatchOperateJobStatus
+        r"""BatchOperateJobStatus
 
         The model defined in huaweicloud sdk
 

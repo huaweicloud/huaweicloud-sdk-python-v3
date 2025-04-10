@@ -31,7 +31,7 @@ class DeleteProcessReqBody:
     }
 
     def __init__(self, db_user_id=None, process_ids=None, user=None, database=None):
-        """DeleteProcessReqBody
+        r"""DeleteProcessReqBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteProcessReqBody:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this DeleteProcessReqBody.
+        r"""Gets the db_user_id of this DeleteProcessReqBody.
 
         数据库用户ID
 
@@ -74,7 +74,7 @@ class DeleteProcessReqBody:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this DeleteProcessReqBody.
+        r"""Sets the db_user_id of this DeleteProcessReqBody.
 
         数据库用户ID
 
@@ -85,7 +85,7 @@ class DeleteProcessReqBody:
 
     @property
     def process_ids(self):
-        """Gets the process_ids of this DeleteProcessReqBody.
+        r"""Gets the process_ids of this DeleteProcessReqBody.
 
         会话ID列表。process_ids、user、database至少指定一个参数。
 
@@ -96,7 +96,7 @@ class DeleteProcessReqBody:
 
     @process_ids.setter
     def process_ids(self, process_ids):
-        """Sets the process_ids of this DeleteProcessReqBody.
+        r"""Sets the process_ids of this DeleteProcessReqBody.
 
         会话ID列表。process_ids、user、database至少指定一个参数。
 
@@ -107,7 +107,7 @@ class DeleteProcessReqBody:
 
     @property
     def user(self):
-        """Gets the user of this DeleteProcessReqBody.
+        r"""Gets the user of this DeleteProcessReqBody.
 
         用户
 
@@ -118,7 +118,7 @@ class DeleteProcessReqBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this DeleteProcessReqBody.
+        r"""Sets the user of this DeleteProcessReqBody.
 
         用户
 
@@ -129,7 +129,7 @@ class DeleteProcessReqBody:
 
     @property
     def database(self):
-        """Gets the database of this DeleteProcessReqBody.
+        r"""Gets the database of this DeleteProcessReqBody.
 
         数据库名称
 
@@ -140,7 +140,7 @@ class DeleteProcessReqBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DeleteProcessReqBody.
+        r"""Sets the database of this DeleteProcessReqBody.
 
         数据库名称
 

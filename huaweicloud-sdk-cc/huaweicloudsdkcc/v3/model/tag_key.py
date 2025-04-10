@@ -23,7 +23,7 @@ class TagKey:
     }
 
     def __init__(self):
-        """TagKey
+        r"""TagKey
 
         The model defined in huaweicloud sdk
 

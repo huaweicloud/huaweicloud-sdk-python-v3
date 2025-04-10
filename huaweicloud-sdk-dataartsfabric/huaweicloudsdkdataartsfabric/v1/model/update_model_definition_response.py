@@ -44,7 +44,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
     }
 
     def __init__(self, visibility=None, id=None, name=None, description=None, type=None, create_time=None, update_time=None, current_version=None, create_user=None, update_user=None):
-        """UpdateModelDefinitionResponse
+        r"""UpdateModelDefinitionResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this UpdateModelDefinitionResponse.
+        r"""Gets the visibility of this UpdateModelDefinitionResponse.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -118,7 +118,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this UpdateModelDefinitionResponse.
+        r"""Sets the visibility of this UpdateModelDefinitionResponse.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -129,7 +129,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateModelDefinitionResponse.
+        r"""Gets the id of this UpdateModelDefinitionResponse.
 
         模型ID，32~36位的英文、数字、短横组合
 
@@ -140,7 +140,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateModelDefinitionResponse.
+        r"""Sets the id of this UpdateModelDefinitionResponse.
 
         模型ID，32~36位的英文、数字、短横组合
 
@@ -151,7 +151,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateModelDefinitionResponse.
+        r"""Gets the name of this UpdateModelDefinitionResponse.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -162,7 +162,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateModelDefinitionResponse.
+        r"""Sets the name of this UpdateModelDefinitionResponse.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -173,7 +173,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateModelDefinitionResponse.
+        r"""Gets the description of this UpdateModelDefinitionResponse.
 
         描述信息
 
@@ -184,7 +184,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateModelDefinitionResponse.
+        r"""Sets the description of this UpdateModelDefinitionResponse.
 
         描述信息
 
@@ -195,7 +195,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateModelDefinitionResponse.
+        r"""Gets the type of this UpdateModelDefinitionResponse.
 
         :return: The type of this UpdateModelDefinitionResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
@@ -204,7 +204,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateModelDefinitionResponse.
+        r"""Sets the type of this UpdateModelDefinitionResponse.
 
         :param type: The type of this UpdateModelDefinitionResponse.
         :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
@@ -213,7 +213,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateModelDefinitionResponse.
+        r"""Gets the create_time of this UpdateModelDefinitionResponse.
 
         创建时间
 
@@ -224,7 +224,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateModelDefinitionResponse.
+        r"""Sets the create_time of this UpdateModelDefinitionResponse.
 
         创建时间
 
@@ -235,7 +235,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateModelDefinitionResponse.
+        r"""Gets the update_time of this UpdateModelDefinitionResponse.
 
         更新时间
 
@@ -246,7 +246,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateModelDefinitionResponse.
+        r"""Sets the update_time of this UpdateModelDefinitionResponse.
 
         更新时间
 
@@ -257,7 +257,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def current_version(self):
-        """Gets the current_version of this UpdateModelDefinitionResponse.
+        r"""Gets the current_version of this UpdateModelDefinitionResponse.
 
         :return: The current_version of this UpdateModelDefinitionResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInfo`
@@ -266,7 +266,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this UpdateModelDefinitionResponse.
+        r"""Sets the current_version of this UpdateModelDefinitionResponse.
 
         :param current_version: The current_version of this UpdateModelDefinitionResponse.
         :type current_version: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInfo`
@@ -275,7 +275,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this UpdateModelDefinitionResponse.
+        r"""Gets the create_user of this UpdateModelDefinitionResponse.
 
         :return: The create_user of this UpdateModelDefinitionResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -284,7 +284,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this UpdateModelDefinitionResponse.
+        r"""Sets the create_user of this UpdateModelDefinitionResponse.
 
         :param create_user: The create_user of this UpdateModelDefinitionResponse.
         :type create_user: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -293,7 +293,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this UpdateModelDefinitionResponse.
+        r"""Gets the update_user of this UpdateModelDefinitionResponse.
 
         :return: The update_user of this UpdateModelDefinitionResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -302,7 +302,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this UpdateModelDefinitionResponse.
+        r"""Sets the update_user of this UpdateModelDefinitionResponse.
 
         :param update_user: The update_user of this UpdateModelDefinitionResponse.
         :type update_user: :class:`huaweicloudsdkdataartsfabric.v1.User`

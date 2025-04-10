@@ -28,7 +28,7 @@ class ShowQuotaDetailsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, site_id=None):
-        """ShowQuotaDetailsResponse
+        r"""ShowQuotaDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowQuotaDetailsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowQuotaDetailsResponse.
+        r"""Gets the resources of this ShowQuotaDetailsResponse.
 
         配额资源列表
 
@@ -61,7 +61,7 @@ class ShowQuotaDetailsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowQuotaDetailsResponse.
+        r"""Sets the resources of this ShowQuotaDetailsResponse.
 
         配额资源列表
 
@@ -72,7 +72,7 @@ class ShowQuotaDetailsResponse(SdkResponse):
 
     @property
     def site_id(self):
-        """Gets the site_id of this ShowQuotaDetailsResponse.
+        r"""Gets the site_id of this ShowQuotaDetailsResponse.
 
         站点ID
 
@@ -83,7 +83,7 @@ class ShowQuotaDetailsResponse(SdkResponse):
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ShowQuotaDetailsResponse.
+        r"""Sets the site_id of this ShowQuotaDetailsResponse.
 
         站点ID
 

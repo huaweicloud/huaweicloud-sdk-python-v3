@@ -49,7 +49,7 @@ class AgentInfoResult:
     }
 
     def __init__(self, inner_ip=None, import_ip=None, agent_id=None, host_name=None, os_type=None, agent_state=None, project_id=None, version=None, is_hw_cloud_host=None, vpc_id=None, cmdb_id=None, ecs_id=None, domain_id=None):
-        """AgentInfoResult
+        r"""AgentInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class AgentInfoResult:
 
     @property
     def inner_ip(self):
-        """Gets the inner_ip of this AgentInfoResult.
+        r"""Gets the inner_ip of this AgentInfoResult.
 
         机器 IP。
 
@@ -138,7 +138,7 @@ class AgentInfoResult:
 
     @inner_ip.setter
     def inner_ip(self, inner_ip):
-        """Sets the inner_ip of this AgentInfoResult.
+        r"""Sets the inner_ip of this AgentInfoResult.
 
         机器 IP。
 
@@ -149,7 +149,7 @@ class AgentInfoResult:
 
     @property
     def import_ip(self):
-        """Gets the import_ip of this AgentInfoResult.
+        r"""Gets the import_ip of this AgentInfoResult.
 
         机器导入IP。
 
@@ -160,7 +160,7 @@ class AgentInfoResult:
 
     @import_ip.setter
     def import_ip(self, import_ip):
-        """Sets the import_ip of this AgentInfoResult.
+        r"""Sets the import_ip of this AgentInfoResult.
 
         机器导入IP。
 
@@ -171,7 +171,7 @@ class AgentInfoResult:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AgentInfoResult.
+        r"""Gets the agent_id of this AgentInfoResult.
 
         agent id。
 
@@ -182,7 +182,7 @@ class AgentInfoResult:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AgentInfoResult.
+        r"""Sets the agent_id of this AgentInfoResult.
 
         agent id。
 
@@ -193,7 +193,7 @@ class AgentInfoResult:
 
     @property
     def host_name(self):
-        """Gets the host_name of this AgentInfoResult.
+        r"""Gets the host_name of this AgentInfoResult.
 
         主机名。
 
@@ -204,7 +204,7 @@ class AgentInfoResult:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this AgentInfoResult.
+        r"""Sets the host_name of this AgentInfoResult.
 
         主机名。
 
@@ -215,7 +215,7 @@ class AgentInfoResult:
 
     @property
     def os_type(self):
-        """Gets the os_type of this AgentInfoResult.
+        r"""Gets the os_type of this AgentInfoResult.
 
         操作系统。
 
@@ -226,7 +226,7 @@ class AgentInfoResult:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this AgentInfoResult.
+        r"""Sets the os_type of this AgentInfoResult.
 
         操作系统。
 
@@ -237,7 +237,7 @@ class AgentInfoResult:
 
     @property
     def agent_state(self):
-        """Gets the agent_state of this AgentInfoResult.
+        r"""Gets the agent_state of this AgentInfoResult.
 
         UniAgent状态。
 
@@ -248,7 +248,7 @@ class AgentInfoResult:
 
     @agent_state.setter
     def agent_state(self, agent_state):
-        """Sets the agent_state of this AgentInfoResult.
+        r"""Sets the agent_state of this AgentInfoResult.
 
         UniAgent状态。
 
@@ -259,7 +259,7 @@ class AgentInfoResult:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AgentInfoResult.
+        r"""Gets the project_id of this AgentInfoResult.
 
         所属project ID。
 
@@ -270,7 +270,7 @@ class AgentInfoResult:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AgentInfoResult.
+        r"""Sets the project_id of this AgentInfoResult.
 
         所属project ID。
 
@@ -281,7 +281,7 @@ class AgentInfoResult:
 
     @property
     def version(self):
-        """Gets the version of this AgentInfoResult.
+        r"""Gets the version of this AgentInfoResult.
 
         UniAgent版本。
 
@@ -292,7 +292,7 @@ class AgentInfoResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AgentInfoResult.
+        r"""Sets the version of this AgentInfoResult.
 
         UniAgent版本。
 
@@ -303,7 +303,7 @@ class AgentInfoResult:
 
     @property
     def is_hw_cloud_host(self):
-        """Gets the is_hw_cloud_host of this AgentInfoResult.
+        r"""Gets the is_hw_cloud_host of this AgentInfoResult.
 
         是否华为云机器。
 
@@ -314,7 +314,7 @@ class AgentInfoResult:
 
     @is_hw_cloud_host.setter
     def is_hw_cloud_host(self, is_hw_cloud_host):
-        """Sets the is_hw_cloud_host of this AgentInfoResult.
+        r"""Sets the is_hw_cloud_host of this AgentInfoResult.
 
         是否华为云机器。
 
@@ -325,7 +325,7 @@ class AgentInfoResult:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AgentInfoResult.
+        r"""Gets the vpc_id of this AgentInfoResult.
 
         VPC ID。
 
@@ -336,7 +336,7 @@ class AgentInfoResult:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AgentInfoResult.
+        r"""Sets the vpc_id of this AgentInfoResult.
 
         VPC ID。
 
@@ -347,7 +347,7 @@ class AgentInfoResult:
 
     @property
     def cmdb_id(self):
-        """Gets the cmdb_id of this AgentInfoResult.
+        r"""Gets the cmdb_id of this AgentInfoResult.
 
         CMDB ID.
 
@@ -358,7 +358,7 @@ class AgentInfoResult:
 
     @cmdb_id.setter
     def cmdb_id(self, cmdb_id):
-        """Sets the cmdb_id of this AgentInfoResult.
+        r"""Sets the cmdb_id of this AgentInfoResult.
 
         CMDB ID.
 
@@ -369,7 +369,7 @@ class AgentInfoResult:
 
     @property
     def ecs_id(self):
-        """Gets the ecs_id of this AgentInfoResult.
+        r"""Gets the ecs_id of this AgentInfoResult.
 
         ECS ID。唯一值.
 
@@ -380,7 +380,7 @@ class AgentInfoResult:
 
     @ecs_id.setter
     def ecs_id(self, ecs_id):
-        """Sets the ecs_id of this AgentInfoResult.
+        r"""Sets the ecs_id of this AgentInfoResult.
 
         ECS ID。唯一值.
 
@@ -391,7 +391,7 @@ class AgentInfoResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AgentInfoResult.
+        r"""Gets the domain_id of this AgentInfoResult.
 
         机器所属domain ID。
 
@@ -402,7 +402,7 @@ class AgentInfoResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AgentInfoResult.
+        r"""Sets the domain_id of this AgentInfoResult.
 
         机器所属domain ID。
 

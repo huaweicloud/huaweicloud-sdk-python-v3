@@ -37,7 +37,7 @@ class ListQueriesRequestBody:
     }
 
     def __init__(self, cluster_id=None, project_id=None, offset=None, limit=None, conditions=None, order_by=None, target=None):
-        """ListQueriesRequestBody
+        r"""ListQueriesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListQueriesRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListQueriesRequestBody.
+        r"""Gets the cluster_id of this ListQueriesRequestBody.
 
         集群ID。
 
@@ -90,7 +90,7 @@ class ListQueriesRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListQueriesRequestBody.
+        r"""Sets the cluster_id of this ListQueriesRequestBody.
 
         集群ID。
 
@@ -101,7 +101,7 @@ class ListQueriesRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListQueriesRequestBody.
+        r"""Gets the project_id of this ListQueriesRequestBody.
 
         项目ID。
 
@@ -112,7 +112,7 @@ class ListQueriesRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListQueriesRequestBody.
+        r"""Sets the project_id of this ListQueriesRequestBody.
 
         项目ID。
 
@@ -123,7 +123,7 @@ class ListQueriesRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListQueriesRequestBody.
+        r"""Gets the offset of this ListQueriesRequestBody.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -134,7 +134,7 @@ class ListQueriesRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListQueriesRequestBody.
+        r"""Sets the offset of this ListQueriesRequestBody.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -145,7 +145,7 @@ class ListQueriesRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListQueriesRequestBody.
+        r"""Gets the limit of this ListQueriesRequestBody.
 
         每页显示的条目数量。
 
@@ -156,7 +156,7 @@ class ListQueriesRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListQueriesRequestBody.
+        r"""Sets the limit of this ListQueriesRequestBody.
 
         每页显示的条目数量。
 
@@ -167,7 +167,7 @@ class ListQueriesRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ListQueriesRequestBody.
+        r"""Gets the conditions of this ListQueriesRequestBody.
 
         查询条件数组
 
@@ -178,7 +178,7 @@ class ListQueriesRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ListQueriesRequestBody.
+        r"""Sets the conditions of this ListQueriesRequestBody.
 
         查询条件数组
 
@@ -189,7 +189,7 @@ class ListQueriesRequestBody:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListQueriesRequestBody.
+        r"""Gets the order_by of this ListQueriesRequestBody.
 
         排序字段
 
@@ -200,7 +200,7 @@ class ListQueriesRequestBody:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListQueriesRequestBody.
+        r"""Sets the order_by of this ListQueriesRequestBody.
 
         排序字段
 
@@ -211,7 +211,7 @@ class ListQueriesRequestBody:
 
     @property
     def target(self):
-        """Gets the target of this ListQueriesRequestBody.
+        r"""Gets the target of this ListQueriesRequestBody.
 
         固定值db_queries
 
@@ -222,7 +222,7 @@ class ListQueriesRequestBody:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this ListQueriesRequestBody.
+        r"""Sets the target of this ListQueriesRequestBody.
 
         固定值db_queries
 

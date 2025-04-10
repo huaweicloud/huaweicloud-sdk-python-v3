@@ -53,7 +53,7 @@ class NeutronSecurityGroupRule:
     }
 
     def __init__(self, description=None, direction=None, ethertype=None, id=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, security_group_id=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronSecurityGroupRule
+        r"""NeutronSecurityGroupRule
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def description(self):
-        """Gets the description of this NeutronSecurityGroupRule.
+        r"""Gets the description of this NeutronSecurityGroupRule.
 
         安全组规则描述
 
@@ -137,7 +137,7 @@ class NeutronSecurityGroupRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronSecurityGroupRule.
+        r"""Sets the description of this NeutronSecurityGroupRule.
 
         安全组规则描述
 
@@ -148,7 +148,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def direction(self):
-        """Gets the direction of this NeutronSecurityGroupRule.
+        r"""Gets the direction of this NeutronSecurityGroupRule.
 
         功能说明：规则方向 取值范围：ingress、egress
 
@@ -159,7 +159,7 @@ class NeutronSecurityGroupRule:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this NeutronSecurityGroupRule.
+        r"""Sets the direction of this NeutronSecurityGroupRule.
 
         功能说明：规则方向 取值范围：ingress、egress
 
@@ -170,7 +170,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this NeutronSecurityGroupRule.
+        r"""Gets the ethertype of this NeutronSecurityGroupRule.
 
         功能说明：网络类型 取值范围：IPv4、IPv6
 
@@ -181,7 +181,7 @@ class NeutronSecurityGroupRule:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this NeutronSecurityGroupRule.
+        r"""Sets the ethertype of this NeutronSecurityGroupRule.
 
         功能说明：网络类型 取值范围：IPv4、IPv6
 
@@ -192,7 +192,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def id(self):
-        """Gets the id of this NeutronSecurityGroupRule.
+        r"""Gets the id of this NeutronSecurityGroupRule.
 
         安全组规则ID，查询安全组规则非必选
 
@@ -203,7 +203,7 @@ class NeutronSecurityGroupRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronSecurityGroupRule.
+        r"""Sets the id of this NeutronSecurityGroupRule.
 
         安全组规则ID，查询安全组规则非必选
 
@@ -214,7 +214,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def port_range_max(self):
-        """Gets the port_range_max of this NeutronSecurityGroupRule.
+        r"""Gets the port_range_max of this NeutronSecurityGroupRule.
 
         功能说明：最大端口 取值范围：当协议类型为ICMP时，该值表示ICMP的code
 
@@ -225,7 +225,7 @@ class NeutronSecurityGroupRule:
 
     @port_range_max.setter
     def port_range_max(self, port_range_max):
-        """Sets the port_range_max of this NeutronSecurityGroupRule.
+        r"""Sets the port_range_max of this NeutronSecurityGroupRule.
 
         功能说明：最大端口 取值范围：当协议类型为ICMP时，该值表示ICMP的code
 
@@ -236,7 +236,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def port_range_min(self):
-        """Gets the port_range_min of this NeutronSecurityGroupRule.
+        r"""Gets the port_range_min of this NeutronSecurityGroupRule.
 
         功能说明：最小端口 当协议类型为ICMP时，该值表示ICMP的type。protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
 
@@ -247,7 +247,7 @@ class NeutronSecurityGroupRule:
 
     @port_range_min.setter
     def port_range_min(self, port_range_min):
-        """Sets the port_range_min of this NeutronSecurityGroupRule.
+        r"""Sets the port_range_min of this NeutronSecurityGroupRule.
 
         功能说明：最小端口 当协议类型为ICMP时，该值表示ICMP的type。protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
 
@@ -258,7 +258,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NeutronSecurityGroupRule.
+        r"""Gets the protocol of this NeutronSecurityGroupRule.
 
         功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -269,7 +269,7 @@ class NeutronSecurityGroupRule:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NeutronSecurityGroupRule.
+        r"""Sets the protocol of this NeutronSecurityGroupRule.
 
         功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -280,7 +280,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this NeutronSecurityGroupRule.
+        r"""Gets the remote_group_id of this NeutronSecurityGroupRule.
 
         所属安全组的对端ID
 
@@ -291,7 +291,7 @@ class NeutronSecurityGroupRule:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this NeutronSecurityGroupRule.
+        r"""Sets the remote_group_id of this NeutronSecurityGroupRule.
 
         所属安全组的对端ID
 
@@ -302,7 +302,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this NeutronSecurityGroupRule.
+        r"""Gets the remote_ip_prefix of this NeutronSecurityGroupRule.
 
         对端ip网段
 
@@ -313,7 +313,7 @@ class NeutronSecurityGroupRule:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this NeutronSecurityGroupRule.
+        r"""Sets the remote_ip_prefix of this NeutronSecurityGroupRule.
 
         对端ip网段
 
@@ -324,7 +324,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def remote_address_group_id(self):
-        """Gets the remote_address_group_id of this NeutronSecurityGroupRule.
+        r"""Gets the remote_address_group_id of this NeutronSecurityGroupRule.
 
         功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
 
@@ -335,7 +335,7 @@ class NeutronSecurityGroupRule:
 
     @remote_address_group_id.setter
     def remote_address_group_id(self, remote_address_group_id):
-        """Sets the remote_address_group_id of this NeutronSecurityGroupRule.
+        r"""Sets the remote_address_group_id of this NeutronSecurityGroupRule.
 
         功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
 
@@ -346,7 +346,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this NeutronSecurityGroupRule.
+        r"""Gets the security_group_id of this NeutronSecurityGroupRule.
 
         所属安全组ID
 
@@ -357,7 +357,7 @@ class NeutronSecurityGroupRule:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this NeutronSecurityGroupRule.
+        r"""Sets the security_group_id of this NeutronSecurityGroupRule.
 
         所属安全组ID
 
@@ -368,7 +368,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronSecurityGroupRule.
+        r"""Gets the tenant_id of this NeutronSecurityGroupRule.
 
         项目ID
 
@@ -379,7 +379,7 @@ class NeutronSecurityGroupRule:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronSecurityGroupRule.
+        r"""Sets the tenant_id of this NeutronSecurityGroupRule.
 
         项目ID
 
@@ -390,7 +390,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronSecurityGroupRule.
+        r"""Gets the project_id of this NeutronSecurityGroupRule.
 
         项目ID
 
@@ -401,7 +401,7 @@ class NeutronSecurityGroupRule:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronSecurityGroupRule.
+        r"""Sets the project_id of this NeutronSecurityGroupRule.
 
         项目ID
 
@@ -412,7 +412,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NeutronSecurityGroupRule.
+        r"""Gets the created_at of this NeutronSecurityGroupRule.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -423,7 +423,7 @@ class NeutronSecurityGroupRule:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NeutronSecurityGroupRule.
+        r"""Sets the created_at of this NeutronSecurityGroupRule.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -434,7 +434,7 @@ class NeutronSecurityGroupRule:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NeutronSecurityGroupRule.
+        r"""Gets the updated_at of this NeutronSecurityGroupRule.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -445,7 +445,7 @@ class NeutronSecurityGroupRule:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NeutronSecurityGroupRule.
+        r"""Sets the updated_at of this NeutronSecurityGroupRule.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

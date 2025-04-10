@@ -27,7 +27,7 @@ class QaBotAnswersNew:
     }
 
     def __init__(self, answers=None, recommend_answers=None):
-        """QaBotAnswersNew
+        r"""QaBotAnswersNew
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QaBotAnswersNew:
 
     @property
     def answers(self):
-        """Gets the answers of this QaBotAnswersNew.
+        r"""Gets the answers of this QaBotAnswersNew.
 
         问答机器人回复。
 
@@ -61,7 +61,7 @@ class QaBotAnswersNew:
 
     @answers.setter
     def answers(self, answers):
-        """Sets the answers of this QaBotAnswersNew.
+        r"""Sets the answers of this QaBotAnswersNew.
 
         问答机器人回复。
 
@@ -72,7 +72,7 @@ class QaBotAnswersNew:
 
     @property
     def recommend_answers(self):
-        """Gets the recommend_answers of this QaBotAnswersNew.
+        r"""Gets the recommend_answers of this QaBotAnswersNew.
 
         问答机器人推荐问题
 
@@ -83,7 +83,7 @@ class QaBotAnswersNew:
 
     @recommend_answers.setter
     def recommend_answers(self, recommend_answers):
-        """Sets the recommend_answers of this QaBotAnswersNew.
+        r"""Sets the recommend_answers of this QaBotAnswersNew.
 
         问答机器人推荐问题
 

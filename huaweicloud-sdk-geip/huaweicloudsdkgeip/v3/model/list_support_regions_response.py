@@ -32,7 +32,7 @@ class ListSupportRegionsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, support_regions=None, page_info=None, x_request_id=None):
-        """ListSupportRegionsResponse
+        r"""ListSupportRegionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSupportRegionsResponse.
+        r"""Gets the request_id of this ListSupportRegionsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSupportRegionsResponse.
+        r"""Sets the request_id of this ListSupportRegionsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @property
     def support_regions(self):
-        """Gets the support_regions of this ListSupportRegionsResponse.
+        r"""Gets the support_regions of this ListSupportRegionsResponse.
 
         支持的Region对象
 
@@ -98,7 +98,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @support_regions.setter
     def support_regions(self, support_regions):
-        """Sets the support_regions of this ListSupportRegionsResponse.
+        r"""Sets the support_regions of this ListSupportRegionsResponse.
 
         支持的Region对象
 
@@ -109,7 +109,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSupportRegionsResponse.
+        r"""Gets the page_info of this ListSupportRegionsResponse.
 
         :return: The page_info of this ListSupportRegionsResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -118,7 +118,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSupportRegionsResponse.
+        r"""Sets the page_info of this ListSupportRegionsResponse.
 
         :param page_info: The page_info of this ListSupportRegionsResponse.
         :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -127,7 +127,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSupportRegionsResponse.
+        r"""Gets the x_request_id of this ListSupportRegionsResponse.
 
         :return: The x_request_id of this ListSupportRegionsResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ListSupportRegionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSupportRegionsResponse.
+        r"""Sets the x_request_id of this ListSupportRegionsResponse.
 
         :param x_request_id: The x_request_id of this ListSupportRegionsResponse.
         :type x_request_id: str

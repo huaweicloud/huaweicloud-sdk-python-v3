@@ -29,7 +29,7 @@ class UnlockNodeReadonlyStatusRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UnlockNodeReadonlyStatusRequest
+        r"""UnlockNodeReadonlyStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UnlockNodeReadonlyStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UnlockNodeReadonlyStatusRequest.
+        r"""Gets the instance_id of this UnlockNodeReadonlyStatusRequest.
 
         实例id
 
@@ -67,7 +67,7 @@ class UnlockNodeReadonlyStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UnlockNodeReadonlyStatusRequest.
+        r"""Sets the instance_id of this UnlockNodeReadonlyStatusRequest.
 
         实例id
 
@@ -78,7 +78,7 @@ class UnlockNodeReadonlyStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UnlockNodeReadonlyStatusRequest.
+        r"""Gets the x_language of this UnlockNodeReadonlyStatusRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class UnlockNodeReadonlyStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UnlockNodeReadonlyStatusRequest.
+        r"""Sets the x_language of this UnlockNodeReadonlyStatusRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class UnlockNodeReadonlyStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnlockNodeReadonlyStatusRequest.
+        r"""Gets the body of this UnlockNodeReadonlyStatusRequest.
 
         :return: The body of this UnlockNodeReadonlyStatusRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UnlockNodeReadonlyStatusRequestBody`
@@ -109,7 +109,7 @@ class UnlockNodeReadonlyStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnlockNodeReadonlyStatusRequest.
+        r"""Sets the body of this UnlockNodeReadonlyStatusRequest.
 
         :param body: The body of this UnlockNodeReadonlyStatusRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UnlockNodeReadonlyStatusRequestBody`

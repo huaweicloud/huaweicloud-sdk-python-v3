@@ -29,7 +29,7 @@ class DeleteGdgwRouteAction:
     }
 
     def __init__(self, destination=None, nexthop=None, type=None):
-        """DeleteGdgwRouteAction
+        r"""DeleteGdgwRouteAction
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteGdgwRouteAction:
 
     @property
     def destination(self):
-        """Gets the destination of this DeleteGdgwRouteAction.
+        r"""Gets the destination of this DeleteGdgwRouteAction.
 
         路由子网
 
@@ -66,7 +66,7 @@ class DeleteGdgwRouteAction:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this DeleteGdgwRouteAction.
+        r"""Sets the destination of this DeleteGdgwRouteAction.
 
         路由子网
 
@@ -77,7 +77,7 @@ class DeleteGdgwRouteAction:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this DeleteGdgwRouteAction.
+        r"""Gets the nexthop of this DeleteGdgwRouteAction.
 
         下一跳id
 
@@ -88,7 +88,7 @@ class DeleteGdgwRouteAction:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this DeleteGdgwRouteAction.
+        r"""Sets the nexthop of this DeleteGdgwRouteAction.
 
         下一跳id
 
@@ -99,7 +99,7 @@ class DeleteGdgwRouteAction:
 
     @property
     def type(self):
-        """Gets the type of this DeleteGdgwRouteAction.
+        r"""Gets the type of this DeleteGdgwRouteAction.
 
         :return: The type of this DeleteGdgwRouteAction.
         :rtype: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
@@ -108,7 +108,7 @@ class DeleteGdgwRouteAction:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteGdgwRouteAction.
+        r"""Sets the type of this DeleteGdgwRouteAction.
 
         :param type: The type of this DeleteGdgwRouteAction.
         :type type: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`

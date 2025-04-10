@@ -33,7 +33,7 @@ class DeleteTtscVocabularyConfigsRequest:
     }
 
     def __init__(self, x_request_id=None, x_app_user_id=None, offset=None, limit=None, body=None):
-        """DeleteTtscVocabularyConfigsRequest
+        r"""DeleteTtscVocabularyConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteTtscVocabularyConfigsRequest.
+        r"""Gets the x_request_id of this DeleteTtscVocabularyConfigsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -82,7 +82,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteTtscVocabularyConfigsRequest.
+        r"""Sets the x_request_id of this DeleteTtscVocabularyConfigsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -93,7 +93,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteTtscVocabularyConfigsRequest.
+        r"""Gets the x_app_user_id of this DeleteTtscVocabularyConfigsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -104,7 +104,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteTtscVocabularyConfigsRequest.
+        r"""Sets the x_app_user_id of this DeleteTtscVocabularyConfigsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -115,7 +115,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this DeleteTtscVocabularyConfigsRequest.
+        r"""Gets the offset of this DeleteTtscVocabularyConfigsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页
 
@@ -126,7 +126,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this DeleteTtscVocabularyConfigsRequest.
+        r"""Sets the offset of this DeleteTtscVocabularyConfigsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页
 
@@ -137,7 +137,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this DeleteTtscVocabularyConfigsRequest.
+        r"""Gets the limit of this DeleteTtscVocabularyConfigsRequest.
 
         查询数量
 
@@ -148,7 +148,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this DeleteTtscVocabularyConfigsRequest.
+        r"""Sets the limit of this DeleteTtscVocabularyConfigsRequest.
 
         查询数量
 
@@ -159,7 +159,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTtscVocabularyConfigsRequest.
+        r"""Gets the body of this DeleteTtscVocabularyConfigsRequest.
 
         :return: The body of this DeleteTtscVocabularyConfigsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteTtscVocabularyConfigsRequestBody`
@@ -168,7 +168,7 @@ class DeleteTtscVocabularyConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTtscVocabularyConfigsRequest.
+        r"""Sets the body of this DeleteTtscVocabularyConfigsRequest.
 
         :param body: The body of this DeleteTtscVocabularyConfigsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.DeleteTtscVocabularyConfigsRequestBody`

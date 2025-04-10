@@ -27,7 +27,7 @@ class ShowNextflowWorkflowRequest:
     }
 
     def __init__(self, eihealth_project_id=None, workflow_id=None):
-        """ShowNextflowWorkflowRequest
+        r"""ShowNextflowWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNextflowWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowNextflowWorkflowRequest.
+        r"""Gets the eihealth_project_id of this ShowNextflowWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowNextflowWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowNextflowWorkflowRequest.
+        r"""Sets the eihealth_project_id of this ShowNextflowWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowNextflowWorkflowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ShowNextflowWorkflowRequest.
+        r"""Gets the workflow_id of this ShowNextflowWorkflowRequest.
 
         流程id
 
@@ -81,7 +81,7 @@ class ShowNextflowWorkflowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ShowNextflowWorkflowRequest.
+        r"""Sets the workflow_id of this ShowNextflowWorkflowRequest.
 
         流程id
 

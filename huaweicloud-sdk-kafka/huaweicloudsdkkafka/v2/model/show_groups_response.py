@@ -26,7 +26,7 @@ class ShowGroupsResponse(SdkResponse):
     }
 
     def __init__(self, group=None):
-        """ShowGroupsResponse
+        r"""ShowGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGroupsResponse(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this ShowGroupsResponse.
+        r"""Gets the group of this ShowGroupsResponse.
 
         :return: The group of this ShowGroupsResponse.
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroup`
@@ -53,7 +53,7 @@ class ShowGroupsResponse(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowGroupsResponse.
+        r"""Sets the group of this ShowGroupsResponse.
 
         :param group: The group of this ShowGroupsResponse.
         :type group: :class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroup`

@@ -31,7 +31,7 @@ class CheckBucketResponse:
     }
 
     def __init__(self, error_code=None, error_message=None, response_code=None, success=None):
-        """CheckBucketResponse
+        r"""CheckBucketResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CheckBucketResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CheckBucketResponse.
+        r"""Gets the error_code of this CheckBucketResponse.
 
         错误码。
 
@@ -75,7 +75,7 @@ class CheckBucketResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CheckBucketResponse.
+        r"""Sets the error_code of this CheckBucketResponse.
 
         错误码。
 
@@ -86,7 +86,7 @@ class CheckBucketResponse:
 
     @property
     def error_message(self):
-        """Gets the error_message of this CheckBucketResponse.
+        r"""Gets the error_message of this CheckBucketResponse.
 
         错误信息。
 
@@ -97,7 +97,7 @@ class CheckBucketResponse:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CheckBucketResponse.
+        r"""Sets the error_message of this CheckBucketResponse.
 
         错误信息。
 
@@ -108,7 +108,7 @@ class CheckBucketResponse:
 
     @property
     def response_code(self):
-        """Gets the response_code of this CheckBucketResponse.
+        r"""Gets the response_code of this CheckBucketResponse.
 
         返回的http状态码。
 
@@ -119,7 +119,7 @@ class CheckBucketResponse:
 
     @response_code.setter
     def response_code(self, response_code):
-        """Sets the response_code of this CheckBucketResponse.
+        r"""Sets the response_code of this CheckBucketResponse.
 
         返回的http状态码。
 
@@ -130,7 +130,7 @@ class CheckBucketResponse:
 
     @property
     def success(self):
-        """Gets the success of this CheckBucketResponse.
+        r"""Gets the success of this CheckBucketResponse.
 
         是否成功转储。
 
@@ -141,7 +141,7 @@ class CheckBucketResponse:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this CheckBucketResponse.
+        r"""Sets the success of this CheckBucketResponse.
 
         是否成功转储。
 

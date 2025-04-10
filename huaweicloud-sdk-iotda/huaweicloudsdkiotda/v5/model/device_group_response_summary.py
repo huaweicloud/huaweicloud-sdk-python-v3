@@ -33,7 +33,7 @@ class DeviceGroupResponseSummary:
     }
 
     def __init__(self, group_id=None, name=None, description=None, super_group_id=None, group_type=None):
-        """DeviceGroupResponseSummary
+        r"""DeviceGroupResponseSummary
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DeviceGroupResponseSummary:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeviceGroupResponseSummary.
+        r"""Gets the group_id of this DeviceGroupResponseSummary.
 
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
@@ -82,7 +82,7 @@ class DeviceGroupResponseSummary:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeviceGroupResponseSummary.
+        r"""Sets the group_id of this DeviceGroupResponseSummary.
 
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
@@ -93,7 +93,7 @@ class DeviceGroupResponseSummary:
 
     @property
     def name(self):
-        """Gets the name of this DeviceGroupResponseSummary.
+        r"""Gets the name of this DeviceGroupResponseSummary.
 
         设备组名称，单个资源空间下不可重复。
 
@@ -104,7 +104,7 @@ class DeviceGroupResponseSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeviceGroupResponseSummary.
+        r"""Sets the name of this DeviceGroupResponseSummary.
 
         设备组名称，单个资源空间下不可重复。
 
@@ -115,7 +115,7 @@ class DeviceGroupResponseSummary:
 
     @property
     def description(self):
-        """Gets the description of this DeviceGroupResponseSummary.
+        r"""Gets the description of this DeviceGroupResponseSummary.
 
         设备组描述。
 
@@ -126,7 +126,7 @@ class DeviceGroupResponseSummary:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeviceGroupResponseSummary.
+        r"""Sets the description of this DeviceGroupResponseSummary.
 
         设备组描述。
 
@@ -137,7 +137,7 @@ class DeviceGroupResponseSummary:
 
     @property
     def super_group_id(self):
-        """Gets the super_group_id of this DeviceGroupResponseSummary.
+        r"""Gets the super_group_id of this DeviceGroupResponseSummary.
 
         父设备组ID，该设备组的父设备组ID。
 
@@ -148,7 +148,7 @@ class DeviceGroupResponseSummary:
 
     @super_group_id.setter
     def super_group_id(self, super_group_id):
-        """Sets the super_group_id of this DeviceGroupResponseSummary.
+        r"""Sets the super_group_id of this DeviceGroupResponseSummary.
 
         父设备组ID，该设备组的父设备组ID。
 
@@ -159,7 +159,7 @@ class DeviceGroupResponseSummary:
 
     @property
     def group_type(self):
-        """Gets the group_type of this DeviceGroupResponseSummary.
+        r"""Gets the group_type of this DeviceGroupResponseSummary.
 
         **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组规则
 
@@ -170,7 +170,7 @@ class DeviceGroupResponseSummary:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this DeviceGroupResponseSummary.
+        r"""Sets the group_type of this DeviceGroupResponseSummary.
 
         **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组规则
 

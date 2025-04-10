@@ -27,7 +27,7 @@ class Volume:
     }
 
     def __init__(self, type=None, size=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Volume:
 
     @property
     def type(self):
-        """Gets the type of this Volume.
+        r"""Gets the type of this Volume.
 
         磁盘类型。 磁盘类型枚举值： - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - GPSSD：通用型SSD磁盘类型
 
@@ -59,7 +59,7 @@ class Volume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Volume.
+        r"""Sets the type of this Volume.
 
         磁盘类型。 磁盘类型枚举值： - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - GPSSD：通用型SSD磁盘类型
 
@@ -70,7 +70,7 @@ class Volume:
 
     @property
     def size(self):
-        """Gets the size of this Volume.
+        r"""Gets the size of this Volume.
 
         数据盘大小，容量单位为GB，输入大小范围为[10,32768]。
 
@@ -81,7 +81,7 @@ class Volume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Volume.
+        r"""Sets the size of this Volume.
 
         数据盘大小，容量单位为GB，输入大小范围为[10,32768]。
 

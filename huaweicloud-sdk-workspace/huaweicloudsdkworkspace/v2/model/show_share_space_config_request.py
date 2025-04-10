@@ -25,7 +25,7 @@ class ShowShareSpaceConfigRequest:
     }
 
     def __init__(self, name=None):
-        """ShowShareSpaceConfigRequest
+        r"""ShowShareSpaceConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowShareSpaceConfigRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowShareSpaceConfigRequest.
+        r"""Gets the name of this ShowShareSpaceConfigRequest.
 
         查询协同桌面默认用户配置, share-space-user-conf
 
@@ -53,7 +53,7 @@ class ShowShareSpaceConfigRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowShareSpaceConfigRequest.
+        r"""Sets the name of this ShowShareSpaceConfigRequest.
 
         查询协同桌面默认用户配置, share-space-user-conf
 

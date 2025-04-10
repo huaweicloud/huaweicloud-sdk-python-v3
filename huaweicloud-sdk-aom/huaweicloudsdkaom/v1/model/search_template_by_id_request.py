@@ -27,7 +27,7 @@ class SearchTemplateByIdRequest:
     }
 
     def __init__(self, template_id=None, share_type=None):
-        """SearchTemplateByIdRequest
+        r"""SearchTemplateByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SearchTemplateByIdRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this SearchTemplateByIdRequest.
+        r"""Gets the template_id of this SearchTemplateByIdRequest.
 
         方案id。
 
@@ -59,7 +59,7 @@ class SearchTemplateByIdRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this SearchTemplateByIdRequest.
+        r"""Sets the template_id of this SearchTemplateByIdRequest.
 
         方案id。
 
@@ -70,7 +70,7 @@ class SearchTemplateByIdRequest:
 
     @property
     def share_type(self):
-        """Gets the share_type of this SearchTemplateByIdRequest.
+        r"""Gets the share_type of this SearchTemplateByIdRequest.
 
         模板共享类型，默认为private。可选public private
 
@@ -81,7 +81,7 @@ class SearchTemplateByIdRequest:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this SearchTemplateByIdRequest.
+        r"""Sets the share_type of this SearchTemplateByIdRequest.
 
         模板共享类型，默认为private。可选public private
 

@@ -31,7 +31,7 @@ class MetricFormat:
     }
 
     def __init__(self, data=None, display=None, display_param=None, data_param=None):
-        """MetricFormat
+        r"""MetricFormat
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MetricFormat:
 
     @property
     def data(self):
-        """Gets the data of this MetricFormat.
+        r"""Gets the data of this MetricFormat.
 
         数据格式
 
@@ -75,7 +75,7 @@ class MetricFormat:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this MetricFormat.
+        r"""Sets the data of this MetricFormat.
 
         数据格式
 
@@ -86,7 +86,7 @@ class MetricFormat:
 
     @property
     def display(self):
-        """Gets the display of this MetricFormat.
+        r"""Gets the display of this MetricFormat.
 
         显示格式
 
@@ -97,7 +97,7 @@ class MetricFormat:
 
     @display.setter
     def display(self, display):
-        """Sets the display of this MetricFormat.
+        r"""Sets the display of this MetricFormat.
 
         显示格式
 
@@ -108,7 +108,7 @@ class MetricFormat:
 
     @property
     def display_param(self):
-        """Gets the display_param of this MetricFormat.
+        r"""Gets the display_param of this MetricFormat.
 
         显示参数
 
@@ -119,7 +119,7 @@ class MetricFormat:
 
     @display_param.setter
     def display_param(self, display_param):
-        """Sets the display_param of this MetricFormat.
+        r"""Sets the display_param of this MetricFormat.
 
         显示参数
 
@@ -130,7 +130,7 @@ class MetricFormat:
 
     @property
     def data_param(self):
-        """Gets the data_param of this MetricFormat.
+        r"""Gets the data_param of this MetricFormat.
 
         数据参数
 
@@ -141,7 +141,7 @@ class MetricFormat:
 
     @data_param.setter
     def data_param(self, data_param):
-        """Sets the data_param of this MetricFormat.
+        r"""Sets the data_param of this MetricFormat.
 
         数据参数
 

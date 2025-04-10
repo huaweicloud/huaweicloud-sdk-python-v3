@@ -29,7 +29,7 @@ class UpdateHttpGeoIpRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None, body=None):
-        """UpdateHttpGeoIpRuleRequest
+        r"""UpdateHttpGeoIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateHttpGeoIpRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpGeoIpRuleRequest.
+        r"""Gets the policy_id of this UpdateHttpGeoIpRuleRequest.
 
         策略id
 
@@ -66,7 +66,7 @@ class UpdateHttpGeoIpRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpGeoIpRuleRequest.
+        r"""Sets the policy_id of this UpdateHttpGeoIpRuleRequest.
 
         策略id
 
@@ -77,7 +77,7 @@ class UpdateHttpGeoIpRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateHttpGeoIpRuleRequest.
+        r"""Gets the rule_id of this UpdateHttpGeoIpRuleRequest.
 
         防护规则id
 
@@ -88,7 +88,7 @@ class UpdateHttpGeoIpRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateHttpGeoIpRuleRequest.
+        r"""Sets the rule_id of this UpdateHttpGeoIpRuleRequest.
 
         防护规则id
 
@@ -99,7 +99,7 @@ class UpdateHttpGeoIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpGeoIpRuleRequest.
+        r"""Gets the body of this UpdateHttpGeoIpRuleRequest.
 
         :return: The body of this UpdateHttpGeoIpRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpGeoIpRuleRequestBody`
@@ -108,7 +108,7 @@ class UpdateHttpGeoIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpGeoIpRuleRequest.
+        r"""Sets the body of this UpdateHttpGeoIpRuleRequest.
 
         :param body: The body of this UpdateHttpGeoIpRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpGeoIpRuleRequestBody`

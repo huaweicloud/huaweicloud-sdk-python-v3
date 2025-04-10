@@ -51,7 +51,7 @@ class Environment:
     }
 
     def __init__(self, id=None, name=None, alias=None, description=None, project_id=None, enterprise_project_id=None, charge_mode=None, deploy_mode=None, vpc_id=None, base_resources=None, optional_resources=None, creator=None, create_time=None, update_time=None):
-        """Environment
+        r"""Environment
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class Environment:
 
     @property
     def id(self):
-        """Gets the id of this Environment.
+        r"""Gets the id of this Environment.
 
         环境ID。
 
@@ -145,7 +145,7 @@ class Environment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Environment.
+        r"""Sets the id of this Environment.
 
         环境ID。
 
@@ -156,7 +156,7 @@ class Environment:
 
     @property
     def name(self):
-        """Gets the name of this Environment.
+        r"""Gets the name of this Environment.
 
         环境名称。
 
@@ -167,7 +167,7 @@ class Environment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Environment.
+        r"""Sets the name of this Environment.
 
         环境名称。
 
@@ -178,7 +178,7 @@ class Environment:
 
     @property
     def alias(self):
-        """Gets the alias of this Environment.
+        r"""Gets the alias of this Environment.
 
         环境别名。
 
@@ -189,7 +189,7 @@ class Environment:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this Environment.
+        r"""Sets the alias of this Environment.
 
         环境别名。
 
@@ -200,7 +200,7 @@ class Environment:
 
     @property
     def description(self):
-        """Gets the description of this Environment.
+        r"""Gets the description of this Environment.
 
         环境描述。
 
@@ -211,7 +211,7 @@ class Environment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Environment.
+        r"""Sets the description of this Environment.
 
         环境描述。
 
@@ -222,7 +222,7 @@ class Environment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Environment.
+        r"""Gets the project_id of this Environment.
 
         项目ID。
 
@@ -233,7 +233,7 @@ class Environment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Environment.
+        r"""Sets the project_id of this Environment.
 
         项目ID。
 
@@ -244,7 +244,7 @@ class Environment:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Environment.
+        r"""Gets the enterprise_project_id of this Environment.
 
         企业项目ID。
 
@@ -255,7 +255,7 @@ class Environment:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Environment.
+        r"""Sets the enterprise_project_id of this Environment.
 
         企业项目ID。
 
@@ -266,7 +266,7 @@ class Environment:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this Environment.
+        r"""Gets the charge_mode of this Environment.
 
         收费模式。
 
@@ -277,7 +277,7 @@ class Environment:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this Environment.
+        r"""Sets the charge_mode of this Environment.
 
         收费模式。
 
@@ -288,7 +288,7 @@ class Environment:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this Environment.
+        r"""Gets the deploy_mode of this Environment.
 
         环境类型
 
@@ -299,7 +299,7 @@ class Environment:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this Environment.
+        r"""Sets the deploy_mode of this Environment.
 
         环境类型
 
@@ -310,7 +310,7 @@ class Environment:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Environment.
+        r"""Gets the vpc_id of this Environment.
 
         虚拟私有云ID。
 
@@ -321,7 +321,7 @@ class Environment:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Environment.
+        r"""Sets the vpc_id of this Environment.
 
         虚拟私有云ID。
 
@@ -332,7 +332,7 @@ class Environment:
 
     @property
     def base_resources(self):
-        """Gets the base_resources of this Environment.
+        r"""Gets the base_resources of this Environment.
 
         基础资源。
 
@@ -343,7 +343,7 @@ class Environment:
 
     @base_resources.setter
     def base_resources(self, base_resources):
-        """Sets the base_resources of this Environment.
+        r"""Sets the base_resources of this Environment.
 
         基础资源。
 
@@ -354,7 +354,7 @@ class Environment:
 
     @property
     def optional_resources(self):
-        """Gets the optional_resources of this Environment.
+        r"""Gets the optional_resources of this Environment.
 
         可选资源。
 
@@ -365,7 +365,7 @@ class Environment:
 
     @optional_resources.setter
     def optional_resources(self, optional_resources):
-        """Sets the optional_resources of this Environment.
+        r"""Sets the optional_resources of this Environment.
 
         可选资源。
 
@@ -376,7 +376,7 @@ class Environment:
 
     @property
     def creator(self):
-        """Gets the creator of this Environment.
+        r"""Gets the creator of this Environment.
 
         创建人。
 
@@ -387,7 +387,7 @@ class Environment:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Environment.
+        r"""Sets the creator of this Environment.
 
         创建人。
 
@@ -398,7 +398,7 @@ class Environment:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Environment.
+        r"""Gets the create_time of this Environment.
 
         创建时间。
 
@@ -409,7 +409,7 @@ class Environment:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Environment.
+        r"""Sets the create_time of this Environment.
 
         创建时间。
 
@@ -420,7 +420,7 @@ class Environment:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Environment.
+        r"""Gets the update_time of this Environment.
 
         修改时间。
 
@@ -431,7 +431,7 @@ class Environment:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Environment.
+        r"""Sets the update_time of this Environment.
 
         修改时间。
 

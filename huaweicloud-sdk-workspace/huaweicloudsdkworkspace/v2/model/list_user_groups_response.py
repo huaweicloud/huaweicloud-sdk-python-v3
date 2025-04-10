@@ -28,7 +28,7 @@ class ListUserGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, user_groups=None):
-        """ListUserGroupsResponse
+        r"""ListUserGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUserGroupsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListUserGroupsResponse.
+        r"""Gets the total_count of this ListUserGroupsResponse.
 
         满足条件的用户组总数。
 
@@ -62,7 +62,7 @@ class ListUserGroupsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListUserGroupsResponse.
+        r"""Sets the total_count of this ListUserGroupsResponse.
 
         满足条件的用户组总数。
 
@@ -73,7 +73,7 @@ class ListUserGroupsResponse(SdkResponse):
 
     @property
     def user_groups(self):
-        """Gets the user_groups of this ListUserGroupsResponse.
+        r"""Gets the user_groups of this ListUserGroupsResponse.
 
         用户组列表。
 
@@ -84,7 +84,7 @@ class ListUserGroupsResponse(SdkResponse):
 
     @user_groups.setter
     def user_groups(self, user_groups):
-        """Sets the user_groups of this ListUserGroupsResponse.
+        r"""Sets the user_groups of this ListUserGroupsResponse.
 
         用户组列表。
 

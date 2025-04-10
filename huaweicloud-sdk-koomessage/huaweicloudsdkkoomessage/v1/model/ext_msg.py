@@ -37,7 +37,7 @@ class ExtMsg:
     }
 
     def __init__(self, open_in_browser=None, web_title=None, package_name=None, app_id=None, browser_floor_url=None, depend_engine_ver=None, third_service_name=None):
-        """ExtMsg
+        r"""ExtMsg
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExtMsg:
 
     @property
     def open_in_browser(self):
-        """Gets the open_in_browser of this ExtMsg.
+        r"""Gets the open_in_browser of this ExtMsg.
 
         打开方式。 - 0：webView打开  - 1：浏览器打开   > action_type=OPEN_URL必填，其他不填。 
 
@@ -96,7 +96,7 @@ class ExtMsg:
 
     @open_in_browser.setter
     def open_in_browser(self, open_in_browser):
-        """Sets the open_in_browser of this ExtMsg.
+        r"""Sets the open_in_browser of this ExtMsg.
 
         打开方式。 - 0：webView打开  - 1：浏览器打开   > action_type=OPEN_URL必填，其他不填。 
 
@@ -107,7 +107,7 @@ class ExtMsg:
 
     @property
     def web_title(self):
-        """Gets the web_title of this ExtMsg.
+        r"""Gets the web_title of this ExtMsg.
 
         标题，必填，长度范围为1-20个字符。 > action_type=OPEN_URL必填，其他不填。 
 
@@ -118,7 +118,7 @@ class ExtMsg:
 
     @web_title.setter
     def web_title(self, web_title):
-        """Sets the web_title of this ExtMsg.
+        r"""Sets the web_title of this ExtMsg.
 
         标题，必填，长度范围为1-20个字符。 > action_type=OPEN_URL必填，其他不填。 
 
@@ -129,7 +129,7 @@ class ExtMsg:
 
     @property
     def package_name(self):
-        """Gets the package_name of this ExtMsg.
+        r"""Gets the package_name of this ExtMsg.
 
         app包名，长度范围为1-50个字符。 > action_type=OPEN_APP必填，其他不填。 
 
@@ -140,7 +140,7 @@ class ExtMsg:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this ExtMsg.
+        r"""Sets the package_name of this ExtMsg.
 
         app包名，长度范围为1-50个字符。 > action_type=OPEN_APP必填，其他不填。 
 
@@ -151,7 +151,7 @@ class ExtMsg:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ExtMsg.
+        r"""Gets the app_id of this ExtMsg.
 
         商家应用的appid，长度范围为0-60个字符。 > action_type=OPEN_APP必填，其他不填。 
 
@@ -162,7 +162,7 @@ class ExtMsg:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ExtMsg.
+        r"""Sets the app_id of this ExtMsg.
 
         商家应用的appid，长度范围为0-60个字符。 > action_type=OPEN_APP必填，其他不填。 
 
@@ -173,7 +173,7 @@ class ExtMsg:
 
     @property
     def browser_floor_url(self):
-        """Gets the browser_floor_url of this ExtMsg.
+        r"""Gets the browser_floor_url of this ExtMsg.
 
         兜底url，长度范围为0-1000个字符，支持http/https。 > action_type=OPEN_APP选填，其他不填。 
 
@@ -184,7 +184,7 @@ class ExtMsg:
 
     @browser_floor_url.setter
     def browser_floor_url(self, browser_floor_url):
-        """Sets the browser_floor_url of this ExtMsg.
+        r"""Sets the browser_floor_url of this ExtMsg.
 
         兜底url，长度范围为0-1000个字符，支持http/https。 > action_type=OPEN_APP选填，其他不填。 
 
@@ -195,7 +195,7 @@ class ExtMsg:
 
     @property
     def depend_engine_ver(self):
-        """Gets the depend_engine_ver of this ExtMsg.
+        r"""Gets the depend_engine_ver of this ExtMsg.
 
         依赖的快应用引擎版本号，长度范围为1-50个字符。 > action_type=OPEN_QUICK必填，其他不填。 
 
@@ -206,7 +206,7 @@ class ExtMsg:
 
     @depend_engine_ver.setter
     def depend_engine_ver(self, depend_engine_ver):
-        """Sets the depend_engine_ver of this ExtMsg.
+        r"""Sets the depend_engine_ver of this ExtMsg.
 
         依赖的快应用引擎版本号，长度范围为1-50个字符。 > action_type=OPEN_QUICK必填，其他不填。 
 
@@ -217,7 +217,7 @@ class ExtMsg:
 
     @property
     def third_service_name(self):
-        """Gets the third_service_name of this ExtMsg.
+        r"""Gets the third_service_name of this ExtMsg.
 
         第三方服务名，长度范围为1-50个字符。 > action_type=OPEN_QUICK或OPEN_APP必填，其他不填。 
 
@@ -228,7 +228,7 @@ class ExtMsg:
 
     @third_service_name.setter
     def third_service_name(self, third_service_name):
-        """Sets the third_service_name of this ExtMsg.
+        r"""Sets the third_service_name of this ExtMsg.
 
         第三方服务名，长度范围为1-50个字符。 > action_type=OPEN_QUICK或OPEN_APP必填，其他不填。 
 

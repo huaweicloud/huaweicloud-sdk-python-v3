@@ -28,7 +28,7 @@ class DeleteCentralNetworkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network=None):
-        """DeleteCentralNetworkResponse
+        r"""DeleteCentralNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteCentralNetworkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteCentralNetworkResponse.
+        r"""Gets the request_id of this DeleteCentralNetworkResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class DeleteCentralNetworkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteCentralNetworkResponse.
+        r"""Sets the request_id of this DeleteCentralNetworkResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class DeleteCentralNetworkResponse(SdkResponse):
 
     @property
     def central_network(self):
-        """Gets the central_network of this DeleteCentralNetworkResponse.
+        r"""Gets the central_network of this DeleteCentralNetworkResponse.
 
         :return: The central_network of this DeleteCentralNetworkResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetwork`
@@ -80,7 +80,7 @@ class DeleteCentralNetworkResponse(SdkResponse):
 
     @central_network.setter
     def central_network(self, central_network):
-        """Sets the central_network of this DeleteCentralNetworkResponse.
+        r"""Sets the central_network of this DeleteCentralNetworkResponse.
 
         :param central_network: The central_network of this DeleteCentralNetworkResponse.
         :type central_network: :class:`huaweicloudsdkcc.v3.CentralNetwork`

@@ -35,7 +35,7 @@ class AddDomainSetInfoDto:
     }
 
     def __init__(self, fw_instance_id=None, object_id=None, name=None, description=None, domain_names=None, domain_set_type=None):
-        """AddDomainSetInfoDto
+        r"""AddDomainSetInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AddDomainSetInfoDto:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this AddDomainSetInfoDto.
+        r"""Gets the fw_instance_id of this AddDomainSetInfoDto.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -86,7 +86,7 @@ class AddDomainSetInfoDto:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this AddDomainSetInfoDto.
+        r"""Sets the fw_instance_id of this AddDomainSetInfoDto.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -97,7 +97,7 @@ class AddDomainSetInfoDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AddDomainSetInfoDto.
+        r"""Gets the object_id of this AddDomainSetInfoDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -108,7 +108,7 @@ class AddDomainSetInfoDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AddDomainSetInfoDto.
+        r"""Sets the object_id of this AddDomainSetInfoDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -119,7 +119,7 @@ class AddDomainSetInfoDto:
 
     @property
     def name(self):
-        """Gets the name of this AddDomainSetInfoDto.
+        r"""Gets the name of this AddDomainSetInfoDto.
 
         域名组名称
 
@@ -130,7 +130,7 @@ class AddDomainSetInfoDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddDomainSetInfoDto.
+        r"""Sets the name of this AddDomainSetInfoDto.
 
         域名组名称
 
@@ -141,7 +141,7 @@ class AddDomainSetInfoDto:
 
     @property
     def description(self):
-        """Gets the description of this AddDomainSetInfoDto.
+        r"""Gets the description of this AddDomainSetInfoDto.
 
         域名组描述
 
@@ -152,7 +152,7 @@ class AddDomainSetInfoDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddDomainSetInfoDto.
+        r"""Sets the description of this AddDomainSetInfoDto.
 
         域名组描述
 
@@ -163,7 +163,7 @@ class AddDomainSetInfoDto:
 
     @property
     def domain_names(self):
-        """Gets the domain_names of this AddDomainSetInfoDto.
+        r"""Gets the domain_names of this AddDomainSetInfoDto.
 
         域名信息列表
 
@@ -174,7 +174,7 @@ class AddDomainSetInfoDto:
 
     @domain_names.setter
     def domain_names(self, domain_names):
-        """Sets the domain_names of this AddDomainSetInfoDto.
+        r"""Sets the domain_names of this AddDomainSetInfoDto.
 
         域名信息列表
 
@@ -185,7 +185,7 @@ class AddDomainSetInfoDto:
 
     @property
     def domain_set_type(self):
-        """Gets the domain_set_type of this AddDomainSetInfoDto.
+        r"""Gets the domain_set_type of this AddDomainSetInfoDto.
 
         域名组类型，0表示应用域名组，1表示网络域名组
 
@@ -196,7 +196,7 @@ class AddDomainSetInfoDto:
 
     @domain_set_type.setter
     def domain_set_type(self, domain_set_type):
-        """Sets the domain_set_type of this AddDomainSetInfoDto.
+        r"""Sets the domain_set_type of this AddDomainSetInfoDto.
 
         域名组类型，0表示应用域名组，1表示网络域名组
 

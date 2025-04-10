@@ -30,7 +30,7 @@ class ListNotificationTopicsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, topic_count=None, topics=None):
-        """ListNotificationTopicsResponse
+        r"""ListNotificationTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNotificationTopicsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListNotificationTopicsResponse.
+        r"""Gets the request_id of this ListNotificationTopicsResponse.
 
         request_id
 
@@ -69,7 +69,7 @@ class ListNotificationTopicsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListNotificationTopicsResponse.
+        r"""Sets the request_id of this ListNotificationTopicsResponse.
 
         request_id
 
@@ -80,7 +80,7 @@ class ListNotificationTopicsResponse(SdkResponse):
 
     @property
     def topic_count(self):
-        """Gets the topic_count of this ListNotificationTopicsResponse.
+        r"""Gets the topic_count of this ListNotificationTopicsResponse.
 
         topics数量
 
@@ -91,7 +91,7 @@ class ListNotificationTopicsResponse(SdkResponse):
 
     @topic_count.setter
     def topic_count(self, topic_count):
-        """Sets the topic_count of this ListNotificationTopicsResponse.
+        r"""Sets the topic_count of this ListNotificationTopicsResponse.
 
         topics数量
 
@@ -102,7 +102,7 @@ class ListNotificationTopicsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ListNotificationTopicsResponse.
+        r"""Gets the topics of this ListNotificationTopicsResponse.
 
         主题信息
 
@@ -113,7 +113,7 @@ class ListNotificationTopicsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ListNotificationTopicsResponse.
+        r"""Sets the topics of this ListNotificationTopicsResponse.
 
         主题信息
 

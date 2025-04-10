@@ -37,7 +37,7 @@ class ListNosqlTaskListRequest:
     }
 
     def __init__(self, job_name=None, job_status=None, instance_id=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListNosqlTaskListRequest
+        r"""ListNosqlTaskListRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListNosqlTaskListRequest.
+        r"""Gets the job_name of this ListNosqlTaskListRequest.
 
         任务名称，默认为空。对应取值如下：  \"REBOOT\"：重启实例  \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格  \"UPGRADE_DATABASE\"：补丁升级
 
@@ -96,7 +96,7 @@ class ListNosqlTaskListRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListNosqlTaskListRequest.
+        r"""Sets the job_name of this ListNosqlTaskListRequest.
 
         任务名称，默认为空。对应取值如下：  \"REBOOT\"：重启实例  \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格  \"UPGRADE_DATABASE\"：补丁升级
 
@@ -107,7 +107,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def job_status(self):
-        """Gets the job_status of this ListNosqlTaskListRequest.
+        r"""Gets the job_status of this ListNosqlTaskListRequest.
 
         任务执行状态，默认为空。 取值：  值为\"Pending\"，表示任务未执行。  值为\"Running\"，表示任务正在执行。  值为\"Completed\"，表示任务执行成功。  值为\"Failed\"，表示任务执行失败。  值为\"Canceled\"，表示任务取消执行。
 
@@ -118,7 +118,7 @@ class ListNosqlTaskListRequest:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ListNosqlTaskListRequest.
+        r"""Sets the job_status of this ListNosqlTaskListRequest.
 
         任务执行状态，默认为空。 取值：  值为\"Pending\"，表示任务未执行。  值为\"Running\"，表示任务正在执行。  值为\"Completed\"，表示任务执行成功。  值为\"Failed\"，表示任务执行失败。  值为\"Canceled\"，表示任务取消执行。
 
@@ -129,7 +129,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListNosqlTaskListRequest.
+        r"""Gets the instance_id of this ListNosqlTaskListRequest.
 
         实例ID，不传该值默认查所有符合条件的实例。
 
@@ -140,7 +140,7 @@ class ListNosqlTaskListRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListNosqlTaskListRequest.
+        r"""Sets the instance_id of this ListNosqlTaskListRequest.
 
         实例ID，不传该值默认查所有符合条件的实例。
 
@@ -151,7 +151,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListNosqlTaskListRequest.
+        r"""Gets the start_time of this ListNosqlTaskListRequest.
 
         任务创建起始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100，不传默认为当前时间前七天。
 
@@ -162,7 +162,7 @@ class ListNosqlTaskListRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListNosqlTaskListRequest.
+        r"""Sets the start_time of this ListNosqlTaskListRequest.
 
         任务创建起始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100，不传默认为当前时间前七天。
 
@@ -173,7 +173,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListNosqlTaskListRequest.
+        r"""Gets the end_time of this ListNosqlTaskListRequest.
 
         任务创建结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100，不传默认为当前时间。
 
@@ -184,7 +184,7 @@ class ListNosqlTaskListRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListNosqlTaskListRequest.
+        r"""Sets the end_time of this ListNosqlTaskListRequest.
 
         任务创建结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100，不传默认为当前时间。
 
@@ -195,7 +195,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNosqlTaskListRequest.
+        r"""Gets the offset of this ListNosqlTaskListRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。
 
@@ -206,7 +206,7 @@ class ListNosqlTaskListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNosqlTaskListRequest.
+        r"""Sets the offset of this ListNosqlTaskListRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。
 
@@ -217,7 +217,7 @@ class ListNosqlTaskListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNosqlTaskListRequest.
+        r"""Gets the limit of this ListNosqlTaskListRequest.
 
         查询记录数。不传该参数时，默认为10,取值范围1-100。
 
@@ -228,7 +228,7 @@ class ListNosqlTaskListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNosqlTaskListRequest.
+        r"""Sets the limit of this ListNosqlTaskListRequest.
 
         查询记录数。不传该参数时，默认为10,取值范围1-100。
 

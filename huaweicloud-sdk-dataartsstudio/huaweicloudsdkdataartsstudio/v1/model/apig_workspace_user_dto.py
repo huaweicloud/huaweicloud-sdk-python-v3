@@ -31,7 +31,7 @@ class ApigWorkspaceUserDto:
     }
 
     def __init__(self, type=None, user_ids=None, groups=None, roles_ids=None):
-        """ApigWorkspaceUserDto
+        r"""ApigWorkspaceUserDto
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ApigWorkspaceUserDto:
 
     @property
     def type(self):
-        """Gets the type of this ApigWorkspaceUserDto.
+        r"""Gets the type of this ApigWorkspaceUserDto.
 
         用户类型，0:添加用户;1:添加用户组
 
@@ -73,7 +73,7 @@ class ApigWorkspaceUserDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApigWorkspaceUserDto.
+        r"""Sets the type of this ApigWorkspaceUserDto.
 
         用户类型，0:添加用户;1:添加用户组
 
@@ -84,7 +84,7 @@ class ApigWorkspaceUserDto:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this ApigWorkspaceUserDto.
+        r"""Gets the user_ids of this ApigWorkspaceUserDto.
 
         用户列表信息
 
@@ -95,7 +95,7 @@ class ApigWorkspaceUserDto:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this ApigWorkspaceUserDto.
+        r"""Sets the user_ids of this ApigWorkspaceUserDto.
 
         用户列表信息
 
@@ -106,7 +106,7 @@ class ApigWorkspaceUserDto:
 
     @property
     def groups(self):
-        """Gets the groups of this ApigWorkspaceUserDto.
+        r"""Gets the groups of this ApigWorkspaceUserDto.
 
         用户组列表信息
 
@@ -117,7 +117,7 @@ class ApigWorkspaceUserDto:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ApigWorkspaceUserDto.
+        r"""Sets the groups of this ApigWorkspaceUserDto.
 
         用户组列表信息
 
@@ -128,7 +128,7 @@ class ApigWorkspaceUserDto:
 
     @property
     def roles_ids(self):
-        """Gets the roles_ids of this ApigWorkspaceUserDto.
+        r"""Gets the roles_ids of this ApigWorkspaceUserDto.
 
         空间角色列表
 
@@ -139,7 +139,7 @@ class ApigWorkspaceUserDto:
 
     @roles_ids.setter
     def roles_ids(self, roles_ids):
-        """Sets the roles_ids of this ApigWorkspaceUserDto.
+        r"""Sets the roles_ids of this ApigWorkspaceUserDto.
 
         空间角色列表
 

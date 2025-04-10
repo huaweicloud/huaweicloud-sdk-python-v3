@@ -37,7 +37,7 @@ class ShowHistoryTaskDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, history_tasks_id=None, page_size=None, page_number=None, status=None, url=None, create_time=None):
-        """ShowHistoryTaskDetailsRequest
+        r"""ShowHistoryTaskDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the enterprise_project_id of this ShowHistoryTaskDetailsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -95,7 +95,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the enterprise_project_id of this ShowHistoryTaskDetailsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -106,7 +106,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def history_tasks_id(self):
-        """Gets the history_tasks_id of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the history_tasks_id of this ShowHistoryTaskDetailsRequest.
 
         刷新任务ID。
 
@@ -117,7 +117,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @history_tasks_id.setter
     def history_tasks_id(self, history_tasks_id):
-        """Sets the history_tasks_id of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the history_tasks_id of this ShowHistoryTaskDetailsRequest.
 
         刷新任务ID。
 
@@ -128,7 +128,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the page_size of this ShowHistoryTaskDetailsRequest.
 
         刷新预热的urls所显示单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
@@ -139,7 +139,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the page_size of this ShowHistoryTaskDetailsRequest.
 
         刷新预热的urls所显示单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
@@ -150,7 +150,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the page_number of this ShowHistoryTaskDetailsRequest.
 
         刷新预热的urls当前查询为第几页，取值范围为1-65535。默认值1。
 
@@ -161,7 +161,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the page_number of this ShowHistoryTaskDetailsRequest.
 
         刷新预热的urls当前查询为第几页，取值范围为1-65535。默认值1。
 
@@ -172,7 +172,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the status of this ShowHistoryTaskDetailsRequest.
 
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
@@ -183,7 +183,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the status of this ShowHistoryTaskDetailsRequest.
 
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
@@ -194,7 +194,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def url(self):
-        """Gets the url of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the url of this ShowHistoryTaskDetailsRequest.
 
         url的地址。
 
@@ -205,7 +205,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the url of this ShowHistoryTaskDetailsRequest.
 
         url的地址。
 
@@ -216,7 +216,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowHistoryTaskDetailsRequest.
+        r"""Gets the create_time of this ShowHistoryTaskDetailsRequest.
 
         刷新预热任务的创建时间。不传参默认为查询7天内的任务。最长可查询15天内数据。
 
@@ -227,7 +227,7 @@ class ShowHistoryTaskDetailsRequest:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowHistoryTaskDetailsRequest.
+        r"""Sets the create_time of this ShowHistoryTaskDetailsRequest.
 
         刷新预热任务的创建时间。不传参默认为查询7天内的任务。最长可查询15天内数据。
 

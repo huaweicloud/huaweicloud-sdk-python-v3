@@ -28,7 +28,7 @@ class DeleteHostResponse(SdkResponse):
     }
 
     def __init__(self, status=None, id=None):
-        """DeleteHostResponse
+        r"""DeleteHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteHostResponse.
+        r"""Gets the status of this DeleteHostResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class DeleteHostResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteHostResponse.
+        r"""Sets the status of this DeleteHostResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteHostResponse.
+        r"""Gets the id of this DeleteHostResponse.
 
         主机id
 
@@ -84,7 +84,7 @@ class DeleteHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteHostResponse.
+        r"""Sets the id of this DeleteHostResponse.
 
         主机id
 

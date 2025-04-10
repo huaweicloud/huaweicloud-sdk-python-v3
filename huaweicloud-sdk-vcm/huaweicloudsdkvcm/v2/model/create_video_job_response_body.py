@@ -25,7 +25,7 @@ class CreateVideoJobResponseBody:
     }
 
     def __init__(self, id=None):
-        """CreateVideoJobResponseBody
+        r"""CreateVideoJobResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVideoJobResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this CreateVideoJobResponseBody.
+        r"""Gets the id of this CreateVideoJobResponseBody.
 
         作业ID
 
@@ -54,7 +54,7 @@ class CreateVideoJobResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateVideoJobResponseBody.
+        r"""Sets the id of this CreateVideoJobResponseBody.
 
         作业ID
 

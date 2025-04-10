@@ -24,7 +24,7 @@ class EnableLogCollectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableLogCollectionResponse
+        r"""EnableLogCollectionResponse
 
         The model defined in huaweicloud sdk
 

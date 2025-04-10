@@ -31,7 +31,7 @@ class CreateIndicatorDetailIndicatorType:
     }
 
     def __init__(self, indicator_type=None, id=None, category=None, layout_id=None):
-        """CreateIndicatorDetailIndicatorType
+        r"""CreateIndicatorDetailIndicatorType
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @property
     def indicator_type(self):
-        """Gets the indicator_type of this CreateIndicatorDetailIndicatorType.
+        r"""Gets the indicator_type of this CreateIndicatorDetailIndicatorType.
 
         indicator_type
 
@@ -75,7 +75,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @indicator_type.setter
     def indicator_type(self, indicator_type):
-        """Sets the indicator_type of this CreateIndicatorDetailIndicatorType.
+        r"""Sets the indicator_type of this CreateIndicatorDetailIndicatorType.
 
         indicator_type
 
@@ -86,7 +86,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @property
     def id(self):
-        """Gets the id of this CreateIndicatorDetailIndicatorType.
+        r"""Gets the id of this CreateIndicatorDetailIndicatorType.
 
         id
 
@@ -97,7 +97,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIndicatorDetailIndicatorType.
+        r"""Sets the id of this CreateIndicatorDetailIndicatorType.
 
         id
 
@@ -108,7 +108,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @property
     def category(self):
-        """Gets the category of this CreateIndicatorDetailIndicatorType.
+        r"""Gets the category of this CreateIndicatorDetailIndicatorType.
 
         category
 
@@ -119,7 +119,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateIndicatorDetailIndicatorType.
+        r"""Sets the category of this CreateIndicatorDetailIndicatorType.
 
         category
 
@@ -130,7 +130,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this CreateIndicatorDetailIndicatorType.
+        r"""Gets the layout_id of this CreateIndicatorDetailIndicatorType.
 
         layoutId
 
@@ -141,7 +141,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this CreateIndicatorDetailIndicatorType.
+        r"""Sets the layout_id of this CreateIndicatorDetailIndicatorType.
 
         layoutId
 

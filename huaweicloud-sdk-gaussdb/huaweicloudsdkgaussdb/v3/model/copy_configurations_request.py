@@ -29,7 +29,7 @@ class CopyConfigurationsRequest:
     }
 
     def __init__(self, x_language=None, configuration_id=None, body=None):
-        """CopyConfigurationsRequest
+        r"""CopyConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CopyConfigurationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CopyConfigurationsRequest.
+        r"""Gets the x_language of this CopyConfigurationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -67,7 +67,7 @@ class CopyConfigurationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CopyConfigurationsRequest.
+        r"""Sets the x_language of this CopyConfigurationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -78,7 +78,7 @@ class CopyConfigurationsRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this CopyConfigurationsRequest.
+        r"""Gets the configuration_id of this CopyConfigurationsRequest.
 
         参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
 
@@ -89,7 +89,7 @@ class CopyConfigurationsRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this CopyConfigurationsRequest.
+        r"""Sets the configuration_id of this CopyConfigurationsRequest.
 
         参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
 
@@ -100,7 +100,7 @@ class CopyConfigurationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyConfigurationsRequest.
+        r"""Gets the body of this CopyConfigurationsRequest.
 
         :return: The body of this CopyConfigurationsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CopyConfigurationsRequestBody`
@@ -109,7 +109,7 @@ class CopyConfigurationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyConfigurationsRequest.
+        r"""Sets the body of this CopyConfigurationsRequest.
 
         :param body: The body of this CopyConfigurationsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CopyConfigurationsRequestBody`

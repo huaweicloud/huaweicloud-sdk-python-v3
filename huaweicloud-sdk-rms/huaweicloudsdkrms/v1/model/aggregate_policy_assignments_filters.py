@@ -29,7 +29,7 @@ class AggregatePolicyAssignmentsFilters:
     }
 
     def __init__(self, account_id=None, compliance_state=None, policy_assignment_name=None):
-        """AggregatePolicyAssignmentsFilters
+        r"""AggregatePolicyAssignmentsFilters
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AggregatePolicyAssignmentsFilters:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AggregatePolicyAssignmentsFilters.
+        r"""Gets the account_id of this AggregatePolicyAssignmentsFilters.
 
         源帐号ID。
 
@@ -68,7 +68,7 @@ class AggregatePolicyAssignmentsFilters:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AggregatePolicyAssignmentsFilters.
+        r"""Sets the account_id of this AggregatePolicyAssignmentsFilters.
 
         源帐号ID。
 
@@ -79,7 +79,7 @@ class AggregatePolicyAssignmentsFilters:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this AggregatePolicyAssignmentsFilters.
+        r"""Gets the compliance_state of this AggregatePolicyAssignmentsFilters.
 
         合规结果。
 
@@ -90,7 +90,7 @@ class AggregatePolicyAssignmentsFilters:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this AggregatePolicyAssignmentsFilters.
+        r"""Sets the compliance_state of this AggregatePolicyAssignmentsFilters.
 
         合规结果。
 
@@ -101,7 +101,7 @@ class AggregatePolicyAssignmentsFilters:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this AggregatePolicyAssignmentsFilters.
+        r"""Gets the policy_assignment_name of this AggregatePolicyAssignmentsFilters.
 
         合规规则名称
 
@@ -112,7 +112,7 @@ class AggregatePolicyAssignmentsFilters:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this AggregatePolicyAssignmentsFilters.
+        r"""Sets the policy_assignment_name of this AggregatePolicyAssignmentsFilters.
 
         合规规则名称
 

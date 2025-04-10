@@ -25,7 +25,7 @@ class CreateVirtualGatewayRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVirtualGatewayRequest
+        r"""CreateVirtualGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVirtualGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVirtualGatewayRequest.
+        r"""Gets the body of this CreateVirtualGatewayRequest.
 
         :return: The body of this CreateVirtualGatewayRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVirtualGatewayRequestBody`
@@ -52,7 +52,7 @@ class CreateVirtualGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVirtualGatewayRequest.
+        r"""Sets the body of this CreateVirtualGatewayRequest.
 
         :param body: The body of this CreateVirtualGatewayRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateVirtualGatewayRequestBody`

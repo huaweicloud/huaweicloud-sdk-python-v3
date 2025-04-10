@@ -28,7 +28,7 @@ class ListServiceConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, connections=None, total_count=None):
-        """ListServiceConnectionsResponse
+        r"""ListServiceConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServiceConnectionsResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this ListServiceConnectionsResponse.
+        r"""Gets the connections of this ListServiceConnectionsResponse.
 
         连接列表。
 
@@ -62,7 +62,7 @@ class ListServiceConnectionsResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this ListServiceConnectionsResponse.
+        r"""Sets the connections of this ListServiceConnectionsResponse.
 
         连接列表。
 
@@ -73,7 +73,7 @@ class ListServiceConnectionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListServiceConnectionsResponse.
+        r"""Gets the total_count of this ListServiceConnectionsResponse.
 
         满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 
@@ -84,7 +84,7 @@ class ListServiceConnectionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListServiceConnectionsResponse.
+        r"""Sets the total_count of this ListServiceConnectionsResponse.
 
         满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 

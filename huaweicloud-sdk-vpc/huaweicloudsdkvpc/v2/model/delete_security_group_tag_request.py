@@ -27,7 +27,7 @@ class DeleteSecurityGroupTagRequest:
     }
 
     def __init__(self, key=None, security_group_id=None):
-        """DeleteSecurityGroupTagRequest
+        r"""DeleteSecurityGroupTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecurityGroupTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteSecurityGroupTagRequest.
+        r"""Gets the key of this DeleteSecurityGroupTagRequest.
 
         功能说明：键值
 
@@ -59,7 +59,7 @@ class DeleteSecurityGroupTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteSecurityGroupTagRequest.
+        r"""Sets the key of this DeleteSecurityGroupTagRequest.
 
         功能说明：键值
 
@@ -70,7 +70,7 @@ class DeleteSecurityGroupTagRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this DeleteSecurityGroupTagRequest.
+        r"""Gets the security_group_id of this DeleteSecurityGroupTagRequest.
 
         安全组资源ID
 
@@ -81,7 +81,7 @@ class DeleteSecurityGroupTagRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this DeleteSecurityGroupTagRequest.
+        r"""Sets the security_group_id of this DeleteSecurityGroupTagRequest.
 
         安全组资源ID
 

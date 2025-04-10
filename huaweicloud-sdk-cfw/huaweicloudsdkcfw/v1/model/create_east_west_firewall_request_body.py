@@ -29,7 +29,7 @@ class CreateEastWestFirewallRequestBody:
     }
 
     def __init__(self, er_id=None, inspection_cidr=None, mode=None):
-        """CreateEastWestFirewallRequestBody
+        r"""CreateEastWestFirewallRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateEastWestFirewallRequestBody:
 
     @property
     def er_id(self):
-        """Gets the er_id of this CreateEastWestFirewallRequestBody.
+        r"""Gets the er_id of this CreateEastWestFirewallRequestBody.
 
         出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
 
@@ -65,7 +65,7 @@ class CreateEastWestFirewallRequestBody:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this CreateEastWestFirewallRequestBody.
+        r"""Sets the er_id of this CreateEastWestFirewallRequestBody.
 
         出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
 
@@ -76,7 +76,7 @@ class CreateEastWestFirewallRequestBody:
 
     @property
     def inspection_cidr(self):
-        """Gets the inspection_cidr of this CreateEastWestFirewallRequestBody.
+        r"""Gets the inspection_cidr of this CreateEastWestFirewallRequestBody.
 
         创建引流VPC时使用的网段
 
@@ -87,7 +87,7 @@ class CreateEastWestFirewallRequestBody:
 
     @inspection_cidr.setter
     def inspection_cidr(self, inspection_cidr):
-        """Sets the inspection_cidr of this CreateEastWestFirewallRequestBody.
+        r"""Sets the inspection_cidr of this CreateEastWestFirewallRequestBody.
 
         创建引流VPC时使用的网段
 
@@ -98,7 +98,7 @@ class CreateEastWestFirewallRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateEastWestFirewallRequestBody.
+        r"""Gets the mode of this CreateEastWestFirewallRequestBody.
 
         东西向防火墙模式，填写er
 
@@ -109,7 +109,7 @@ class CreateEastWestFirewallRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateEastWestFirewallRequestBody.
+        r"""Sets the mode of this CreateEastWestFirewallRequestBody.
 
         东西向防火墙模式，填写er
 

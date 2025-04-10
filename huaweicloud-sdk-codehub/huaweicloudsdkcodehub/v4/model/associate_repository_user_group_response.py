@@ -26,7 +26,7 @@ class AssociateRepositoryUserGroupResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """AssociateRepositoryUserGroupResponse
+        r"""AssociateRepositoryUserGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateRepositoryUserGroupResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AssociateRepositoryUserGroupResponse.
+        r"""Gets the status of this AssociateRepositoryUserGroupResponse.
 
         关联结果
 
@@ -55,7 +55,7 @@ class AssociateRepositoryUserGroupResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociateRepositoryUserGroupResponse.
+        r"""Sets the status of this AssociateRepositoryUserGroupResponse.
 
         关联结果
 

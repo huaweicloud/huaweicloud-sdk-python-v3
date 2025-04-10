@@ -43,7 +43,7 @@ class AutoLauchResponseInfo:
     }
 
     def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, name=None, type=None, path=None, hash=None, run_user=None, recent_scan_time=None):
-        """AutoLauchResponseInfo
+        r"""AutoLauchResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AutoLauchResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AutoLauchResponseInfo.
+        r"""Gets the agent_id of this AutoLauchResponseInfo.
 
         Agent ID
 
@@ -117,7 +117,7 @@ class AutoLauchResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AutoLauchResponseInfo.
+        r"""Sets the agent_id of this AutoLauchResponseInfo.
 
         Agent ID
 
@@ -128,7 +128,7 @@ class AutoLauchResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this AutoLauchResponseInfo.
+        r"""Gets the host_id of this AutoLauchResponseInfo.
 
         主机id
 
@@ -139,7 +139,7 @@ class AutoLauchResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this AutoLauchResponseInfo.
+        r"""Sets the host_id of this AutoLauchResponseInfo.
 
         主机id
 
@@ -150,7 +150,7 @@ class AutoLauchResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this AutoLauchResponseInfo.
+        r"""Gets the host_name of this AutoLauchResponseInfo.
 
         服务器名称
 
@@ -161,7 +161,7 @@ class AutoLauchResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this AutoLauchResponseInfo.
+        r"""Sets the host_name of this AutoLauchResponseInfo.
 
         服务器名称
 
@@ -172,7 +172,7 @@ class AutoLauchResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this AutoLauchResponseInfo.
+        r"""Gets the host_ip of this AutoLauchResponseInfo.
 
         服务器ip
 
@@ -183,7 +183,7 @@ class AutoLauchResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this AutoLauchResponseInfo.
+        r"""Sets the host_ip of this AutoLauchResponseInfo.
 
         服务器ip
 
@@ -194,7 +194,7 @@ class AutoLauchResponseInfo:
 
     @property
     def name(self):
-        """Gets the name of this AutoLauchResponseInfo.
+        r"""Gets the name of this AutoLauchResponseInfo.
 
         自启动项名称
 
@@ -205,7 +205,7 @@ class AutoLauchResponseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AutoLauchResponseInfo.
+        r"""Sets the name of this AutoLauchResponseInfo.
 
         自启动项名称
 
@@ -216,7 +216,7 @@ class AutoLauchResponseInfo:
 
     @property
     def type(self):
-        """Gets the type of this AutoLauchResponseInfo.
+        r"""Gets the type of this AutoLauchResponseInfo.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -227,7 +227,7 @@ class AutoLauchResponseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AutoLauchResponseInfo.
+        r"""Sets the type of this AutoLauchResponseInfo.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -238,7 +238,7 @@ class AutoLauchResponseInfo:
 
     @property
     def path(self):
-        """Gets the path of this AutoLauchResponseInfo.
+        r"""Gets the path of this AutoLauchResponseInfo.
 
         自启动项的路径
 
@@ -249,7 +249,7 @@ class AutoLauchResponseInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AutoLauchResponseInfo.
+        r"""Sets the path of this AutoLauchResponseInfo.
 
         自启动项的路径
 
@@ -260,7 +260,7 @@ class AutoLauchResponseInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this AutoLauchResponseInfo.
+        r"""Gets the hash of this AutoLauchResponseInfo.
 
         采用sha256算法生成的文件hash值
 
@@ -271,7 +271,7 @@ class AutoLauchResponseInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this AutoLauchResponseInfo.
+        r"""Sets the hash of this AutoLauchResponseInfo.
 
         采用sha256算法生成的文件hash值
 
@@ -282,7 +282,7 @@ class AutoLauchResponseInfo:
 
     @property
     def run_user(self):
-        """Gets the run_user of this AutoLauchResponseInfo.
+        r"""Gets the run_user of this AutoLauchResponseInfo.
 
         运行用户
 
@@ -293,7 +293,7 @@ class AutoLauchResponseInfo:
 
     @run_user.setter
     def run_user(self, run_user):
-        """Sets the run_user of this AutoLauchResponseInfo.
+        r"""Sets the run_user of this AutoLauchResponseInfo.
 
         运行用户
 
@@ -304,7 +304,7 @@ class AutoLauchResponseInfo:
 
     @property
     def recent_scan_time(self):
-        """Gets the recent_scan_time of this AutoLauchResponseInfo.
+        r"""Gets the recent_scan_time of this AutoLauchResponseInfo.
 
         最近扫描时间
 
@@ -315,7 +315,7 @@ class AutoLauchResponseInfo:
 
     @recent_scan_time.setter
     def recent_scan_time(self, recent_scan_time):
-        """Sets the recent_scan_time of this AutoLauchResponseInfo.
+        r"""Sets the recent_scan_time of this AutoLauchResponseInfo.
 
         最近扫描时间
 

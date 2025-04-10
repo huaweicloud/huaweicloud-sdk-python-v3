@@ -27,7 +27,7 @@ class UpdateConformancePackRequestBody:
     }
 
     def __init__(self, name=None, vars_structure=None):
-        """UpdateConformancePackRequestBody
+        r"""UpdateConformancePackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConformancePackRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConformancePackRequestBody.
+        r"""Gets the name of this UpdateConformancePackRequestBody.
 
         合规规则包名称。
 
@@ -60,7 +60,7 @@ class UpdateConformancePackRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConformancePackRequestBody.
+        r"""Sets the name of this UpdateConformancePackRequestBody.
 
         合规规则包名称。
 
@@ -71,7 +71,7 @@ class UpdateConformancePackRequestBody:
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this UpdateConformancePackRequestBody.
+        r"""Gets the vars_structure of this UpdateConformancePackRequestBody.
 
         合规规则包参数。
 
@@ -82,7 +82,7 @@ class UpdateConformancePackRequestBody:
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this UpdateConformancePackRequestBody.
+        r"""Sets the vars_structure of this UpdateConformancePackRequestBody.
 
         合规规则包参数。
 

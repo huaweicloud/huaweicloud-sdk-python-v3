@@ -33,7 +33,7 @@ class CaptureResultUrlVO:
     }
 
     def __init__(self, captcha=None, expires=None, file_list=None, request_header=None, url=None):
-        """CaptureResultUrlVO
+        r"""CaptureResultUrlVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CaptureResultUrlVO:
 
     @property
     def captcha(self):
-        """Gets the captcha of this CaptureResultUrlVO.
+        r"""Gets the captcha of this CaptureResultUrlVO.
 
         下载链接提取码，用于打开下载链接时使用。
 
@@ -82,7 +82,7 @@ class CaptureResultUrlVO:
 
     @captcha.setter
     def captcha(self, captcha):
-        """Sets the captcha of this CaptureResultUrlVO.
+        r"""Sets the captcha of this CaptureResultUrlVO.
 
         下载链接提取码，用于打开下载链接时使用。
 
@@ -93,7 +93,7 @@ class CaptureResultUrlVO:
 
     @property
     def expires(self):
-        """Gets the expires of this CaptureResultUrlVO.
+        r"""Gets the expires of this CaptureResultUrlVO.
 
         下载链接过期时间
 
@@ -104,7 +104,7 @@ class CaptureResultUrlVO:
 
     @expires.setter
     def expires(self, expires):
-        """Sets the expires of this CaptureResultUrlVO.
+        r"""Sets the expires of this CaptureResultUrlVO.
 
         下载链接过期时间
 
@@ -115,7 +115,7 @@ class CaptureResultUrlVO:
 
     @property
     def file_list(self):
-        """Gets the file_list of this CaptureResultUrlVO.
+        r"""Gets the file_list of this CaptureResultUrlVO.
 
         抓包文件列表，当环境不支持obs文件夹分享时使用。当此字段存在时，无captch，expires，url返回值。
 
@@ -126,7 +126,7 @@ class CaptureResultUrlVO:
 
     @file_list.setter
     def file_list(self, file_list):
-        """Sets the file_list of this CaptureResultUrlVO.
+        r"""Sets the file_list of this CaptureResultUrlVO.
 
         抓包文件列表，当环境不支持obs文件夹分享时使用。当此字段存在时，无captch，expires，url返回值。
 
@@ -137,7 +137,7 @@ class CaptureResultUrlVO:
 
     @property
     def request_header(self):
-        """Gets the request_header of this CaptureResultUrlVO.
+        r"""Gets the request_header of this CaptureResultUrlVO.
 
         :return: The request_header of this CaptureResultUrlVO.
         :rtype: :class:`huaweicloudsdkcfw.v1.HostHeaderInfo`
@@ -146,7 +146,7 @@ class CaptureResultUrlVO:
 
     @request_header.setter
     def request_header(self, request_header):
-        """Sets the request_header of this CaptureResultUrlVO.
+        r"""Sets the request_header of this CaptureResultUrlVO.
 
         :param request_header: The request_header of this CaptureResultUrlVO.
         :type request_header: :class:`huaweicloudsdkcfw.v1.HostHeaderInfo`
@@ -155,7 +155,7 @@ class CaptureResultUrlVO:
 
     @property
     def url(self):
-        """Gets the url of this CaptureResultUrlVO.
+        r"""Gets the url of this CaptureResultUrlVO.
 
         下载链接
 
@@ -166,7 +166,7 @@ class CaptureResultUrlVO:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CaptureResultUrlVO.
+        r"""Sets the url of this CaptureResultUrlVO.
 
         下载链接
 

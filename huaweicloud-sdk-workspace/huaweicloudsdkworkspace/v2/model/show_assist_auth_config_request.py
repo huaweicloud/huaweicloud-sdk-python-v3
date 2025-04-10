@@ -23,7 +23,7 @@ class ShowAssistAuthConfigRequest:
     }
 
     def __init__(self):
-        """ShowAssistAuthConfigRequest
+        r"""ShowAssistAuthConfigRequest
 
         The model defined in huaweicloud sdk
 

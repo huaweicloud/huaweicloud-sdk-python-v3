@@ -30,7 +30,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, count=None, servers=None):
-        """ListCloudPhoneServersResponse
+        r"""ListCloudPhoneServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudPhoneServersResponse.
+        r"""Gets the request_id of this ListCloudPhoneServersResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudPhoneServersResponse.
+        r"""Sets the request_id of this ListCloudPhoneServersResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListCloudPhoneServersResponse.
+        r"""Gets the count of this ListCloudPhoneServersResponse.
 
         实例总数。
 
@@ -91,7 +91,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListCloudPhoneServersResponse.
+        r"""Sets the count of this ListCloudPhoneServersResponse.
 
         实例总数。
 
@@ -102,7 +102,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this ListCloudPhoneServersResponse.
+        r"""Gets the servers of this ListCloudPhoneServersResponse.
 
         云手机服务器信息。
 
@@ -113,7 +113,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ListCloudPhoneServersResponse.
+        r"""Sets the servers of this ListCloudPhoneServersResponse.
 
         云手机服务器信息。
 

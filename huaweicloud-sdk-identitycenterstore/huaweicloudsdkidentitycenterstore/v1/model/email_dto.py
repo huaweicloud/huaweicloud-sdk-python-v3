@@ -33,7 +33,7 @@ class EmailDto:
     }
 
     def __init__(self, primary=None, type=None, value=None, verification_status=None):
-        """EmailDto
+        r"""EmailDto
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class EmailDto:
 
     @property
     def primary(self):
-        """Gets the primary of this EmailDto.
+        r"""Gets the primary of this EmailDto.
 
         一个布尔值，表示这是否为用户的主电子邮箱
 
@@ -74,7 +74,7 @@ class EmailDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this EmailDto.
+        r"""Sets the primary of this EmailDto.
 
         一个布尔值，表示这是否为用户的主电子邮箱
 
@@ -85,7 +85,7 @@ class EmailDto:
 
     @property
     def type(self):
-        """Gets the type of this EmailDto.
+        r"""Gets the type of this EmailDto.
 
         表示电子邮箱类型的字符串
 
@@ -96,7 +96,7 @@ class EmailDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EmailDto.
+        r"""Sets the type of this EmailDto.
 
         表示电子邮箱类型的字符串
 
@@ -107,7 +107,7 @@ class EmailDto:
 
     @property
     def value(self):
-        """Gets the value of this EmailDto.
+        r"""Gets the value of this EmailDto.
 
         包含电子邮箱地址的字符串
 
@@ -118,7 +118,7 @@ class EmailDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EmailDto.
+        r"""Sets the value of this EmailDto.
 
         包含电子邮箱地址的字符串
 
@@ -129,7 +129,7 @@ class EmailDto:
 
     @property
     def verification_status(self):
-        """Gets the verification_status of this EmailDto.
+        r"""Gets the verification_status of this EmailDto.
 
         电子邮箱地址的验证状态
 
@@ -140,7 +140,7 @@ class EmailDto:
 
     @verification_status.setter
     def verification_status(self, verification_status):
-        """Sets the verification_status of this EmailDto.
+        r"""Sets the verification_status of this EmailDto.
 
         电子邮箱地址的验证状态
 

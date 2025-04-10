@@ -27,7 +27,7 @@ class UpdateIndicatorRequestBody:
     }
 
     def __init__(self, trigger_flag=None, data_object=None):
-        """UpdateIndicatorRequestBody
+        r"""UpdateIndicatorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateIndicatorRequestBody:
 
     @property
     def trigger_flag(self):
-        """Gets the trigger_flag of this UpdateIndicatorRequestBody.
+        r"""Gets the trigger_flag of this UpdateIndicatorRequestBody.
 
         触发标志
 
@@ -61,7 +61,7 @@ class UpdateIndicatorRequestBody:
 
     @trigger_flag.setter
     def trigger_flag(self, trigger_flag):
-        """Sets the trigger_flag of this UpdateIndicatorRequestBody.
+        r"""Sets the trigger_flag of this UpdateIndicatorRequestBody.
 
         触发标志
 
@@ -72,7 +72,7 @@ class UpdateIndicatorRequestBody:
 
     @property
     def data_object(self):
-        """Gets the data_object of this UpdateIndicatorRequestBody.
+        r"""Gets the data_object of this UpdateIndicatorRequestBody.
 
         :return: The data_object of this UpdateIndicatorRequestBody.
         :rtype: :class:`huaweicloudsdksa.v2.IndicatorDataObjectDetail`
@@ -81,7 +81,7 @@ class UpdateIndicatorRequestBody:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this UpdateIndicatorRequestBody.
+        r"""Sets the data_object of this UpdateIndicatorRequestBody.
 
         :param data_object: The data_object of this UpdateIndicatorRequestBody.
         :type data_object: :class:`huaweicloudsdksa.v2.IndicatorDataObjectDetail`

@@ -47,7 +47,7 @@ class OpenEntity:
     }
 
     def __init__(self, attributes=None, connection=None, create_time=None, created_by=None, display_text=None, guid=None, relationship_attributes=None, type_name=None, updated_by=None, update_time=None, tags=None, classification_names=None):
-        """OpenEntity
+        r"""OpenEntity
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class OpenEntity:
 
     @property
     def attributes(self):
-        """Gets the attributes of this OpenEntity.
+        r"""Gets the attributes of this OpenEntity.
 
         属性Map<String, Object>
 
@@ -131,7 +131,7 @@ class OpenEntity:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this OpenEntity.
+        r"""Sets the attributes of this OpenEntity.
 
         属性Map<String, Object>
 
@@ -142,7 +142,7 @@ class OpenEntity:
 
     @property
     def connection(self):
-        """Gets the connection of this OpenEntity.
+        r"""Gets the connection of this OpenEntity.
 
         :return: The connection of this OpenEntity.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
@@ -151,7 +151,7 @@ class OpenEntity:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this OpenEntity.
+        r"""Sets the connection of this OpenEntity.
 
         :param connection: The connection of this OpenEntity.
         :type connection: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
@@ -160,7 +160,7 @@ class OpenEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OpenEntity.
+        r"""Gets the create_time of this OpenEntity.
 
         创建时间
 
@@ -171,7 +171,7 @@ class OpenEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OpenEntity.
+        r"""Sets the create_time of this OpenEntity.
 
         创建时间
 
@@ -182,7 +182,7 @@ class OpenEntity:
 
     @property
     def created_by(self):
-        """Gets the created_by of this OpenEntity.
+        r"""Gets the created_by of this OpenEntity.
 
         创建人
 
@@ -193,7 +193,7 @@ class OpenEntity:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this OpenEntity.
+        r"""Sets the created_by of this OpenEntity.
 
         创建人
 
@@ -204,7 +204,7 @@ class OpenEntity:
 
     @property
     def display_text(self):
-        """Gets the display_text of this OpenEntity.
+        r"""Gets the display_text of this OpenEntity.
 
         资产的名称
 
@@ -215,7 +215,7 @@ class OpenEntity:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this OpenEntity.
+        r"""Sets the display_text of this OpenEntity.
 
         资产的名称
 
@@ -226,7 +226,7 @@ class OpenEntity:
 
     @property
     def guid(self):
-        """Gets the guid of this OpenEntity.
+        r"""Gets the guid of this OpenEntity.
 
         资产guid
 
@@ -237,7 +237,7 @@ class OpenEntity:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this OpenEntity.
+        r"""Sets the guid of this OpenEntity.
 
         资产guid
 
@@ -248,7 +248,7 @@ class OpenEntity:
 
     @property
     def relationship_attributes(self):
-        """Gets the relationship_attributes of this OpenEntity.
+        r"""Gets the relationship_attributes of this OpenEntity.
 
         相关的属性 Map<String, Object>
 
@@ -259,7 +259,7 @@ class OpenEntity:
 
     @relationship_attributes.setter
     def relationship_attributes(self, relationship_attributes):
-        """Sets the relationship_attributes of this OpenEntity.
+        r"""Sets the relationship_attributes of this OpenEntity.
 
         相关的属性 Map<String, Object>
 
@@ -270,7 +270,7 @@ class OpenEntity:
 
     @property
     def type_name(self):
-        """Gets the type_name of this OpenEntity.
+        r"""Gets the type_name of this OpenEntity.
 
         资产类型
 
@@ -281,7 +281,7 @@ class OpenEntity:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this OpenEntity.
+        r"""Sets the type_name of this OpenEntity.
 
         资产类型
 
@@ -292,7 +292,7 @@ class OpenEntity:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this OpenEntity.
+        r"""Gets the updated_by of this OpenEntity.
 
         更新人
 
@@ -303,7 +303,7 @@ class OpenEntity:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this OpenEntity.
+        r"""Sets the updated_by of this OpenEntity.
 
         更新人
 
@@ -314,7 +314,7 @@ class OpenEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this OpenEntity.
+        r"""Gets the update_time of this OpenEntity.
 
         更新时间
 
@@ -325,7 +325,7 @@ class OpenEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this OpenEntity.
+        r"""Sets the update_time of this OpenEntity.
 
         更新时间
 
@@ -336,7 +336,7 @@ class OpenEntity:
 
     @property
     def tags(self):
-        """Gets the tags of this OpenEntity.
+        r"""Gets the tags of this OpenEntity.
 
         标签
 
@@ -347,7 +347,7 @@ class OpenEntity:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this OpenEntity.
+        r"""Sets the tags of this OpenEntity.
 
         标签
 
@@ -358,7 +358,7 @@ class OpenEntity:
 
     @property
     def classification_names(self):
-        """Gets the classification_names of this OpenEntity.
+        r"""Gets the classification_names of this OpenEntity.
 
         分类 List<String> classificationNames
 
@@ -369,7 +369,7 @@ class OpenEntity:
 
     @classification_names.setter
     def classification_names(self, classification_names):
-        """Sets the classification_names of this OpenEntity.
+        r"""Sets the classification_names of this OpenEntity.
 
         分类 List<String> classificationNames
 

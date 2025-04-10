@@ -33,7 +33,7 @@ class ScriptExecuteParam:
     }
 
     def __init__(self, resourceful=None, timeout=None, success_rate=None, execute_user=None, script_params=None):
-        """ScriptExecuteParam
+        r"""ScriptExecuteParam
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ScriptExecuteParam:
 
     @property
     def resourceful(self):
-        """Gets the resourceful of this ScriptExecuteParam.
+        r"""Gets the resourceful of this ScriptExecuteParam.
 
         是否资源受限，true表示不受限，false表示受限
 
@@ -79,7 +79,7 @@ class ScriptExecuteParam:
 
     @resourceful.setter
     def resourceful(self, resourceful):
-        """Sets the resourceful of this ScriptExecuteParam.
+        r"""Sets the resourceful of this ScriptExecuteParam.
 
         是否资源受限，true表示不受限，false表示受限
 
@@ -90,7 +90,7 @@ class ScriptExecuteParam:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ScriptExecuteParam.
+        r"""Gets the timeout of this ScriptExecuteParam.
 
         超时时间，单位：秒，取值范围待定，5 < timeout < 1800
 
@@ -101,7 +101,7 @@ class ScriptExecuteParam:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ScriptExecuteParam.
+        r"""Sets the timeout of this ScriptExecuteParam.
 
         超时时间，单位：秒，取值范围待定，5 < timeout < 1800
 
@@ -112,7 +112,7 @@ class ScriptExecuteParam:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this ScriptExecuteParam.
+        r"""Gets the success_rate of this ScriptExecuteParam.
 
         成功率，支持小数点后一位
 
@@ -123,7 +123,7 @@ class ScriptExecuteParam:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this ScriptExecuteParam.
+        r"""Sets the success_rate of this ScriptExecuteParam.
 
         成功率，支持小数点后一位
 
@@ -134,7 +134,7 @@ class ScriptExecuteParam:
 
     @property
     def execute_user(self):
-        """Gets the execute_user of this ScriptExecuteParam.
+        r"""Gets the execute_user of this ScriptExecuteParam.
 
         脚本执行用户，如：root
 
@@ -145,7 +145,7 @@ class ScriptExecuteParam:
 
     @execute_user.setter
     def execute_user(self, execute_user):
-        """Sets the execute_user of this ScriptExecuteParam.
+        r"""Sets the execute_user of this ScriptExecuteParam.
 
         脚本执行用户，如：root
 
@@ -156,7 +156,7 @@ class ScriptExecuteParam:
 
     @property
     def script_params(self):
-        """Gets the script_params of this ScriptExecuteParam.
+        r"""Gets the script_params of this ScriptExecuteParam.
 
         脚本入参列表
 
@@ -167,7 +167,7 @@ class ScriptExecuteParam:
 
     @script_params.setter
     def script_params(self, script_params):
-        """Sets the script_params of this ScriptExecuteParam.
+        r"""Sets the script_params of this ScriptExecuteParam.
 
         脚本入参列表
 

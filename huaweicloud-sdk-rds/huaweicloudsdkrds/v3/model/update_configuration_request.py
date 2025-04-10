@@ -29,7 +29,7 @@ class UpdateConfigurationRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, body=None):
-        """UpdateConfigurationRequest
+        r"""UpdateConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateConfigurationRequest.
+        r"""Gets the x_language of this UpdateConfigurationRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdateConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateConfigurationRequest.
+        r"""Sets the x_language of this UpdateConfigurationRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdateConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this UpdateConfigurationRequest.
+        r"""Gets the config_id of this UpdateConfigurationRequest.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class UpdateConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this UpdateConfigurationRequest.
+        r"""Sets the config_id of this UpdateConfigurationRequest.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class UpdateConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigurationRequest.
+        r"""Gets the body of this UpdateConfigurationRequest.
 
         :return: The body of this UpdateConfigurationRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ConfigurationForUpdate`
@@ -109,7 +109,7 @@ class UpdateConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigurationRequest.
+        r"""Sets the body of this UpdateConfigurationRequest.
 
         :param body: The body of this UpdateConfigurationRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ConfigurationForUpdate`

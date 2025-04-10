@@ -29,7 +29,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, key=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteTagRequest.
+        r"""Gets the resource_type of this DeleteTagRequest.
 
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
 
@@ -65,7 +65,7 @@ class DeleteTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteTagRequest.
+        r"""Sets the resource_type of this DeleteTagRequest.
 
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
 
@@ -76,7 +76,7 @@ class DeleteTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteTagRequest.
+        r"""Gets the resource_id of this DeleteTagRequest.
 
         资源id。  
 
@@ -87,7 +87,7 @@ class DeleteTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteTagRequest.
+        r"""Sets the resource_id of this DeleteTagRequest.
 
         资源id。  
 
@@ -98,7 +98,7 @@ class DeleteTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTagRequest.
+        r"""Gets the key of this DeleteTagRequest.
 
         标签key。  标签key不能为空或者空字符串。
 
@@ -109,7 +109,7 @@ class DeleteTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTagRequest.
+        r"""Sets the key of this DeleteTagRequest.
 
         标签key。  标签key不能为空或者空字符串。
 

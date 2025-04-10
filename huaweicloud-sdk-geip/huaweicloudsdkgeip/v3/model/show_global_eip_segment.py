@@ -65,7 +65,7 @@ class ShowGlobalEipSegment:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, cidr=None, cidr_v6=None, freezen=None, freezen_info=None, status=None, created_at=None, updated_at=None, internet_bandwidth=None, associate_instance=None, is_pre_paid=None, tags=None, sys_tags=None, enterprise_project_id=None):
-        """ShowGlobalEipSegment
+        r"""ShowGlobalEipSegment
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ShowGlobalEipSegment:
 
     @property
     def id(self):
-        """Gets the id of this ShowGlobalEipSegment.
+        r"""Gets the id of this ShowGlobalEipSegment.
 
         全域弹性公网IP段的ID
 
@@ -194,7 +194,7 @@ class ShowGlobalEipSegment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowGlobalEipSegment.
+        r"""Sets the id of this ShowGlobalEipSegment.
 
         全域弹性公网IP段的ID
 
@@ -205,7 +205,7 @@ class ShowGlobalEipSegment:
 
     @property
     def name(self):
-        """Gets the name of this ShowGlobalEipSegment.
+        r"""Gets the name of this ShowGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -216,7 +216,7 @@ class ShowGlobalEipSegment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGlobalEipSegment.
+        r"""Sets the name of this ShowGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -227,7 +227,7 @@ class ShowGlobalEipSegment:
 
     @property
     def description(self):
-        """Gets the description of this ShowGlobalEipSegment.
+        r"""Gets the description of this ShowGlobalEipSegment.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -238,7 +238,7 @@ class ShowGlobalEipSegment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowGlobalEipSegment.
+        r"""Sets the description of this ShowGlobalEipSegment.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -249,7 +249,7 @@ class ShowGlobalEipSegment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowGlobalEipSegment.
+        r"""Gets the domain_id of this ShowGlobalEipSegment.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -260,7 +260,7 @@ class ShowGlobalEipSegment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowGlobalEipSegment.
+        r"""Sets the domain_id of this ShowGlobalEipSegment.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -271,7 +271,7 @@ class ShowGlobalEipSegment:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ShowGlobalEipSegment.
+        r"""Gets the access_site of this ShowGlobalEipSegment.
 
         接入点信息
 
@@ -282,7 +282,7 @@ class ShowGlobalEipSegment:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ShowGlobalEipSegment.
+        r"""Sets the access_site of this ShowGlobalEipSegment.
 
         接入点信息
 
@@ -293,7 +293,7 @@ class ShowGlobalEipSegment:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this ShowGlobalEipSegment.
+        r"""Gets the geip_pool_name of this ShowGlobalEipSegment.
 
         全域弹性公网IP池子名称
 
@@ -304,7 +304,7 @@ class ShowGlobalEipSegment:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this ShowGlobalEipSegment.
+        r"""Sets the geip_pool_name of this ShowGlobalEipSegment.
 
         全域弹性公网IP池子名称
 
@@ -315,7 +315,7 @@ class ShowGlobalEipSegment:
 
     @property
     def isp(self):
-        """Gets the isp of this ShowGlobalEipSegment.
+        r"""Gets the isp of this ShowGlobalEipSegment.
 
         全域弹性公网IP所属线路
 
@@ -326,7 +326,7 @@ class ShowGlobalEipSegment:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ShowGlobalEipSegment.
+        r"""Sets the isp of this ShowGlobalEipSegment.
 
         全域弹性公网IP所属线路
 
@@ -337,7 +337,7 @@ class ShowGlobalEipSegment:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ShowGlobalEipSegment.
+        r"""Gets the ip_version of this ShowGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段的版本 - 取值范围：4、6
 
@@ -348,7 +348,7 @@ class ShowGlobalEipSegment:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ShowGlobalEipSegment.
+        r"""Sets the ip_version of this ShowGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段的版本 - 取值范围：4、6
 
@@ -359,7 +359,7 @@ class ShowGlobalEipSegment:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ShowGlobalEipSegment.
+        r"""Gets the cidr of this ShowGlobalEipSegment.
 
         全域公网IP段的cidr
 
@@ -370,7 +370,7 @@ class ShowGlobalEipSegment:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ShowGlobalEipSegment.
+        r"""Sets the cidr of this ShowGlobalEipSegment.
 
         全域公网IP段的cidr
 
@@ -381,7 +381,7 @@ class ShowGlobalEipSegment:
 
     @property
     def cidr_v6(self):
-        """Gets the cidr_v6 of this ShowGlobalEipSegment.
+        r"""Gets the cidr_v6 of this ShowGlobalEipSegment.
 
         指定cidr-v6创建
 
@@ -392,7 +392,7 @@ class ShowGlobalEipSegment:
 
     @cidr_v6.setter
     def cidr_v6(self, cidr_v6):
-        """Sets the cidr_v6 of this ShowGlobalEipSegment.
+        r"""Sets the cidr_v6 of this ShowGlobalEipSegment.
 
         指定cidr-v6创建
 
@@ -403,7 +403,7 @@ class ShowGlobalEipSegment:
 
     @property
     def freezen(self):
-        """Gets the freezen of this ShowGlobalEipSegment.
+        r"""Gets the freezen of this ShowGlobalEipSegment.
 
         是否冻结
 
@@ -414,7 +414,7 @@ class ShowGlobalEipSegment:
 
     @freezen.setter
     def freezen(self, freezen):
-        """Sets the freezen of this ShowGlobalEipSegment.
+        r"""Sets the freezen of this ShowGlobalEipSegment.
 
         是否冻结
 
@@ -425,7 +425,7 @@ class ShowGlobalEipSegment:
 
     @property
     def freezen_info(self):
-        """Gets the freezen_info of this ShowGlobalEipSegment.
+        r"""Gets the freezen_info of this ShowGlobalEipSegment.
 
         冻结原因
 
@@ -436,7 +436,7 @@ class ShowGlobalEipSegment:
 
     @freezen_info.setter
     def freezen_info(self, freezen_info):
-        """Sets the freezen_info of this ShowGlobalEipSegment.
+        r"""Sets the freezen_info of this ShowGlobalEipSegment.
 
         冻结原因
 
@@ -447,7 +447,7 @@ class ShowGlobalEipSegment:
 
     @property
     def status(self):
-        """Gets the status of this ShowGlobalEipSegment.
+        r"""Gets the status of this ShowGlobalEipSegment.
 
         状态
 
@@ -458,7 +458,7 @@ class ShowGlobalEipSegment:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowGlobalEipSegment.
+        r"""Sets the status of this ShowGlobalEipSegment.
 
         状态
 
@@ -469,7 +469,7 @@ class ShowGlobalEipSegment:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowGlobalEipSegment.
+        r"""Gets the created_at of this ShowGlobalEipSegment.
 
         创建时间
 
@@ -480,7 +480,7 @@ class ShowGlobalEipSegment:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowGlobalEipSegment.
+        r"""Sets the created_at of this ShowGlobalEipSegment.
 
         创建时间
 
@@ -491,7 +491,7 @@ class ShowGlobalEipSegment:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowGlobalEipSegment.
+        r"""Gets the updated_at of this ShowGlobalEipSegment.
 
         更新时间
 
@@ -502,7 +502,7 @@ class ShowGlobalEipSegment:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowGlobalEipSegment.
+        r"""Sets the updated_at of this ShowGlobalEipSegment.
 
         更新时间
 
@@ -513,7 +513,7 @@ class ShowGlobalEipSegment:
 
     @property
     def internet_bandwidth(self):
-        """Gets the internet_bandwidth of this ShowGlobalEipSegment.
+        r"""Gets the internet_bandwidth of this ShowGlobalEipSegment.
 
         :return: The internet_bandwidth of this ShowGlobalEipSegment.
         :rtype: :class:`huaweicloudsdkgeip.v3.InternetBandwidthInfo`
@@ -522,7 +522,7 @@ class ShowGlobalEipSegment:
 
     @internet_bandwidth.setter
     def internet_bandwidth(self, internet_bandwidth):
-        """Sets the internet_bandwidth of this ShowGlobalEipSegment.
+        r"""Sets the internet_bandwidth of this ShowGlobalEipSegment.
 
         :param internet_bandwidth: The internet_bandwidth of this ShowGlobalEipSegment.
         :type internet_bandwidth: :class:`huaweicloudsdkgeip.v3.InternetBandwidthInfo`
@@ -531,7 +531,7 @@ class ShowGlobalEipSegment:
 
     @property
     def associate_instance(self):
-        """Gets the associate_instance of this ShowGlobalEipSegment.
+        r"""Gets the associate_instance of this ShowGlobalEipSegment.
 
         :return: The associate_instance of this ShowGlobalEipSegment.
         :rtype: :class:`huaweicloudsdkgeip.v3.InstanceInfo`
@@ -540,7 +540,7 @@ class ShowGlobalEipSegment:
 
     @associate_instance.setter
     def associate_instance(self, associate_instance):
-        """Sets the associate_instance of this ShowGlobalEipSegment.
+        r"""Sets the associate_instance of this ShowGlobalEipSegment.
 
         :param associate_instance: The associate_instance of this ShowGlobalEipSegment.
         :type associate_instance: :class:`huaweicloudsdkgeip.v3.InstanceInfo`
@@ -549,7 +549,7 @@ class ShowGlobalEipSegment:
 
     @property
     def is_pre_paid(self):
-        """Gets the is_pre_paid of this ShowGlobalEipSegment.
+        r"""Gets the is_pre_paid of this ShowGlobalEipSegment.
 
         是否包周期
 
@@ -560,7 +560,7 @@ class ShowGlobalEipSegment:
 
     @is_pre_paid.setter
     def is_pre_paid(self, is_pre_paid):
-        """Sets the is_pre_paid of this ShowGlobalEipSegment.
+        r"""Sets the is_pre_paid of this ShowGlobalEipSegment.
 
         是否包周期
 
@@ -571,7 +571,7 @@ class ShowGlobalEipSegment:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowGlobalEipSegment.
+        r"""Gets the tags of this ShowGlobalEipSegment.
 
         全域弹性公网IP段标签
 
@@ -582,7 +582,7 @@ class ShowGlobalEipSegment:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowGlobalEipSegment.
+        r"""Sets the tags of this ShowGlobalEipSegment.
 
         全域弹性公网IP段标签
 
@@ -593,7 +593,7 @@ class ShowGlobalEipSegment:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowGlobalEipSegment.
+        r"""Gets the sys_tags of this ShowGlobalEipSegment.
 
         系统标签
 
@@ -604,7 +604,7 @@ class ShowGlobalEipSegment:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowGlobalEipSegment.
+        r"""Sets the sys_tags of this ShowGlobalEipSegment.
 
         系统标签
 
@@ -615,7 +615,7 @@ class ShowGlobalEipSegment:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowGlobalEipSegment.
+        r"""Gets the enterprise_project_id of this ShowGlobalEipSegment.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -626,7 +626,7 @@ class ShowGlobalEipSegment:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowGlobalEipSegment.
+        r"""Sets the enterprise_project_id of this ShowGlobalEipSegment.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 

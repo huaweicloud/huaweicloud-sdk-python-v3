@@ -29,7 +29,7 @@ class UpdateJobRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, body=None):
-        """UpdateJobRequest
+        r"""UpdateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateJobRequest.
+        r"""Gets the cluster_id of this UpdateJobRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class UpdateJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateJobRequest.
+        r"""Sets the cluster_id of this UpdateJobRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class UpdateJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this UpdateJobRequest.
+        r"""Gets the job_name of this UpdateJobRequest.
 
         作业名称。
 
@@ -88,7 +88,7 @@ class UpdateJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this UpdateJobRequest.
+        r"""Sets the job_name of this UpdateJobRequest.
 
         作业名称。
 
@@ -99,7 +99,7 @@ class UpdateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateJobRequest.
+        r"""Gets the body of this UpdateJobRequest.
 
         :return: The body of this UpdateJobRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmUpdateJobJsonReq`
@@ -108,7 +108,7 @@ class UpdateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateJobRequest.
+        r"""Sets the body of this UpdateJobRequest.
 
         :param body: The body of this UpdateJobRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmUpdateJobJsonReq`

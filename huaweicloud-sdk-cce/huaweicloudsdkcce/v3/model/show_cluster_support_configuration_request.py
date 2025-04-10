@@ -31,7 +31,7 @@ class ShowClusterSupportConfigurationRequest:
     }
 
     def __init__(self, cluster_id=None, cluster_type=None, cluster_version=None, network_mode=None):
-        """ShowClusterSupportConfigurationRequest
+        r"""ShowClusterSupportConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterSupportConfigurationRequest.
+        r"""Gets the cluster_id of this ShowClusterSupportConfigurationRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -75,7 +75,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterSupportConfigurationRequest.
+        r"""Sets the cluster_id of this ShowClusterSupportConfigurationRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -86,7 +86,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this ShowClusterSupportConfigurationRequest.
+        r"""Gets the cluster_type of this ShowClusterSupportConfigurationRequest.
 
         集群类型，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -97,7 +97,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this ShowClusterSupportConfigurationRequest.
+        r"""Sets the cluster_type of this ShowClusterSupportConfigurationRequest.
 
         集群类型，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -108,7 +108,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this ShowClusterSupportConfigurationRequest.
+        r"""Gets the cluster_version of this ShowClusterSupportConfigurationRequest.
 
         集群版本，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -119,7 +119,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this ShowClusterSupportConfigurationRequest.
+        r"""Sets the cluster_version of this ShowClusterSupportConfigurationRequest.
 
         集群版本，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -130,7 +130,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @property
     def network_mode(self):
-        """Gets the network_mode of this ShowClusterSupportConfigurationRequest.
+        r"""Gets the network_mode of this ShowClusterSupportConfigurationRequest.
 
         集群网络类型，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -141,7 +141,7 @@ class ShowClusterSupportConfigurationRequest:
 
     @network_mode.setter
     def network_mode(self, network_mode):
-        """Sets the network_mode of this ShowClusterSupportConfigurationRequest.
+        r"""Sets the network_mode of this ShowClusterSupportConfigurationRequest.
 
         集群网络类型，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

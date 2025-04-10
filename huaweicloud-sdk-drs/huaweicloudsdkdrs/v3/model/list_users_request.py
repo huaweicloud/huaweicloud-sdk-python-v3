@@ -27,7 +27,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListUsersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListUsersRequest.
+        r"""Gets the x_language of this ListUsersRequest.
 
         请求语言类型
 
@@ -60,7 +60,7 @@ class ListUsersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListUsersRequest.
+        r"""Sets the x_language of this ListUsersRequest.
 
         请求语言类型
 
@@ -71,7 +71,7 @@ class ListUsersRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListUsersRequest.
+        r"""Gets the job_id of this ListUsersRequest.
 
         任务ID
 
@@ -82,7 +82,7 @@ class ListUsersRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListUsersRequest.
+        r"""Sets the job_id of this ListUsersRequest.
 
         任务ID
 

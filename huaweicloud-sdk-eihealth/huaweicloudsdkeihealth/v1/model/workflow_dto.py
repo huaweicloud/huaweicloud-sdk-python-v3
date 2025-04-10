@@ -39,7 +39,7 @@ class WorkflowDto:
     }
 
     def __init__(self, name=None, version=None, summary=None, description=None, labels=None, timeout=None, output_dir=None, tasks=None):
-        """WorkflowDto
+        r"""WorkflowDto
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class WorkflowDto:
 
     @property
     def name(self):
-        """Gets the name of this WorkflowDto.
+        r"""Gets the name of this WorkflowDto.
 
         流程名称，取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。更新流程时，流程名称不支持修改。
 
@@ -101,7 +101,7 @@ class WorkflowDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkflowDto.
+        r"""Sets the name of this WorkflowDto.
 
         流程名称，取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。更新流程时，流程名称不支持修改。
 
@@ -112,7 +112,7 @@ class WorkflowDto:
 
     @property
     def version(self):
-        """Gets the version of this WorkflowDto.
+        r"""Gets the version of this WorkflowDto.
 
         流程版本，取值范围[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。更新流程时，流程版本不支持修改。
 
@@ -123,7 +123,7 @@ class WorkflowDto:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this WorkflowDto.
+        r"""Sets the version of this WorkflowDto.
 
         流程版本，取值范围[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。更新流程时，流程版本不支持修改。
 
@@ -134,7 +134,7 @@ class WorkflowDto:
 
     @property
     def summary(self):
-        """Gets the summary of this WorkflowDto.
+        r"""Gets the summary of this WorkflowDto.
 
         流程简述 取值范围[0,128]
 
@@ -145,7 +145,7 @@ class WorkflowDto:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this WorkflowDto.
+        r"""Sets the summary of this WorkflowDto.
 
         流程简述 取值范围[0,128]
 
@@ -156,7 +156,7 @@ class WorkflowDto:
 
     @property
     def description(self):
-        """Gets the description of this WorkflowDto.
+        r"""Gets the description of this WorkflowDto.
 
         流程描述 取值范围[0,65535]，后续支持markdown文本
 
@@ -167,7 +167,7 @@ class WorkflowDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkflowDto.
+        r"""Sets the description of this WorkflowDto.
 
         流程描述 取值范围[0,65535]，后续支持markdown文本
 
@@ -178,7 +178,7 @@ class WorkflowDto:
 
     @property
     def labels(self):
-        """Gets the labels of this WorkflowDto.
+        r"""Gets the labels of this WorkflowDto.
 
         流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -189,7 +189,7 @@ class WorkflowDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this WorkflowDto.
+        r"""Sets the labels of this WorkflowDto.
 
         流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -200,7 +200,7 @@ class WorkflowDto:
 
     @property
     def timeout(self):
-        """Gets the timeout of this WorkflowDto.
+        r"""Gets the timeout of this WorkflowDto.
 
         流程超时时间，取值范围[1,144000]，单位分钟，默认1440
 
@@ -211,7 +211,7 @@ class WorkflowDto:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this WorkflowDto.
+        r"""Sets the timeout of this WorkflowDto.
 
         流程超时时间，取值范围[1,144000]，单位分钟，默认1440
 
@@ -222,7 +222,7 @@ class WorkflowDto:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this WorkflowDto.
+        r"""Gets the output_dir of this WorkflowDto.
 
         流程的当前工作目录，默认为根目录，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -233,7 +233,7 @@ class WorkflowDto:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this WorkflowDto.
+        r"""Sets the output_dir of this WorkflowDto.
 
         流程的当前工作目录，默认为根目录，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -244,7 +244,7 @@ class WorkflowDto:
 
     @property
     def tasks(self):
-        """Gets the tasks of this WorkflowDto.
+        r"""Gets the tasks of this WorkflowDto.
 
         流程中子任务的描述信息，子任务数量取值范围:[1,64]
 
@@ -255,7 +255,7 @@ class WorkflowDto:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this WorkflowDto.
+        r"""Sets the tasks of this WorkflowDto.
 
         流程中子任务的描述信息，子任务数量取值范围:[1,64]
 

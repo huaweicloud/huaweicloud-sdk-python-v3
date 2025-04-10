@@ -27,7 +27,7 @@ class BranchResponse:
     }
 
     def __init__(self, branches=None, total=None):
-        """BranchResponse
+        r"""BranchResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BranchResponse:
 
     @property
     def branches(self):
-        """Gets the branches of this BranchResponse.
+        r"""Gets the branches of this BranchResponse.
 
         分支信息
 
@@ -61,7 +61,7 @@ class BranchResponse:
 
     @branches.setter
     def branches(self, branches):
-        """Sets the branches of this BranchResponse.
+        r"""Sets the branches of this BranchResponse.
 
         分支信息
 
@@ -72,7 +72,7 @@ class BranchResponse:
 
     @property
     def total(self):
-        """Gets the total of this BranchResponse.
+        r"""Gets the total of this BranchResponse.
 
         总数
 
@@ -83,7 +83,7 @@ class BranchResponse:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BranchResponse.
+        r"""Sets the total of this BranchResponse.
 
         总数
 

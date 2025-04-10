@@ -28,7 +28,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
     }
 
     def __init__(self, policy_objects_list=None, total=None):
-        """ListAccessPolicyObjectsResponse
+        r"""ListAccessPolicyObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
 
     @property
     def policy_objects_list(self):
-        """Gets the policy_objects_list of this ListAccessPolicyObjectsResponse.
+        r"""Gets the policy_objects_list of this ListAccessPolicyObjectsResponse.
 
         查询接入策略应用对象响应。
 
@@ -62,7 +62,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
 
     @policy_objects_list.setter
     def policy_objects_list(self, policy_objects_list):
-        """Sets the policy_objects_list of this ListAccessPolicyObjectsResponse.
+        r"""Sets the policy_objects_list of this ListAccessPolicyObjectsResponse.
 
         查询接入策略应用对象响应。
 
@@ -73,7 +73,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAccessPolicyObjectsResponse.
+        r"""Gets the total of this ListAccessPolicyObjectsResponse.
 
         对象总数。
 
@@ -84,7 +84,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAccessPolicyObjectsResponse.
+        r"""Sets the total of this ListAccessPolicyObjectsResponse.
 
         对象总数。
 

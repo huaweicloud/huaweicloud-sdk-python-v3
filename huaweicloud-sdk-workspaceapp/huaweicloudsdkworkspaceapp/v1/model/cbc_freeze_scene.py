@@ -30,7 +30,7 @@ class CbcFreezeScene:
     }
 
     def __init__(self):
-        """CbcFreezeScene
+        r"""CbcFreezeScene
 
         The model defined in huaweicloud sdk
 

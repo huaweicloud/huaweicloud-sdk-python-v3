@@ -25,7 +25,7 @@ class UpdateHealthmonitorRequestBody:
     }
 
     def __init__(self, healthmonitor=None):
-        """UpdateHealthmonitorRequestBody
+        r"""UpdateHealthmonitorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateHealthmonitorRequestBody:
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this UpdateHealthmonitorRequestBody.
+        r"""Gets the healthmonitor of this UpdateHealthmonitorRequestBody.
 
         :return: The healthmonitor of this UpdateHealthmonitorRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorReq`
@@ -51,7 +51,7 @@ class UpdateHealthmonitorRequestBody:
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this UpdateHealthmonitorRequestBody.
+        r"""Sets the healthmonitor of this UpdateHealthmonitorRequestBody.
 
         :param healthmonitor: The healthmonitor of this UpdateHealthmonitorRequestBody.
         :type healthmonitor: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorReq`

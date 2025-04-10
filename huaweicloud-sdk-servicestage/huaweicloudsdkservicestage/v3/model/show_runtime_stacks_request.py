@@ -23,7 +23,7 @@ class ShowRuntimeStacksRequest:
     }
 
     def __init__(self):
-        """ShowRuntimeStacksRequest
+        r"""ShowRuntimeStacksRequest
 
         The model defined in huaweicloud sdk
 

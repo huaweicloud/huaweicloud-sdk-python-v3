@@ -33,7 +33,7 @@ class QuotaResource:
     }
 
     def __init__(self, type=None, min=None, max=None, quota=None, used=None):
-        """QuotaResource
+        r"""QuotaResource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QuotaResource:
 
     @property
     def type(self):
-        """Gets the type of this QuotaResource.
+        r"""Gets the type of this QuotaResource.
 
         配额类型信息
 
@@ -82,7 +82,7 @@ class QuotaResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaResource.
+        r"""Sets the type of this QuotaResource.
 
         配额类型信息
 
@@ -93,7 +93,7 @@ class QuotaResource:
 
     @property
     def min(self):
-        """Gets the min of this QuotaResource.
+        r"""Gets the min of this QuotaResource.
 
         配额最小取值
 
@@ -104,7 +104,7 @@ class QuotaResource:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaResource.
+        r"""Sets the min of this QuotaResource.
 
         配额最小取值
 
@@ -115,7 +115,7 @@ class QuotaResource:
 
     @property
     def max(self):
-        """Gets the max of this QuotaResource.
+        r"""Gets the max of this QuotaResource.
 
         配额最大取值
 
@@ -126,7 +126,7 @@ class QuotaResource:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this QuotaResource.
+        r"""Sets the max of this QuotaResource.
 
         配额最大取值
 
@@ -137,7 +137,7 @@ class QuotaResource:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaResource.
+        r"""Gets the quota of this QuotaResource.
 
         用户配额的实际值
 
@@ -148,7 +148,7 @@ class QuotaResource:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaResource.
+        r"""Sets the quota of this QuotaResource.
 
         用户配额的实际值
 
@@ -159,7 +159,7 @@ class QuotaResource:
 
     @property
     def used(self):
-        """Gets the used of this QuotaResource.
+        r"""Gets the used of this QuotaResource.
 
         已使用的配额值
 
@@ -170,7 +170,7 @@ class QuotaResource:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaResource.
+        r"""Sets the used of this QuotaResource.
 
         已使用的配额值
 

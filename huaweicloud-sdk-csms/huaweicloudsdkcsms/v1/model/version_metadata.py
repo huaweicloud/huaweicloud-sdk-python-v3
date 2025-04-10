@@ -35,7 +35,7 @@ class VersionMetadata:
     }
 
     def __init__(self, id=None, create_time=None, expire_time=None, kms_key_id=None, secret_name=None, version_stages=None):
-        """VersionMetadata
+        r"""VersionMetadata
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VersionMetadata:
 
     @property
     def id(self):
-        """Gets the id of this VersionMetadata.
+        r"""Gets the id of this VersionMetadata.
 
         凭据的版本号标识符，凭据对象下唯一。
 
@@ -89,7 +89,7 @@ class VersionMetadata:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionMetadata.
+        r"""Sets the id of this VersionMetadata.
 
         凭据的版本号标识符，凭据对象下唯一。
 
@@ -100,7 +100,7 @@ class VersionMetadata:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VersionMetadata.
+        r"""Gets the create_time of this VersionMetadata.
 
         凭据版本创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -111,7 +111,7 @@ class VersionMetadata:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VersionMetadata.
+        r"""Sets the create_time of this VersionMetadata.
 
         凭据版本创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -122,7 +122,7 @@ class VersionMetadata:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this VersionMetadata.
+        r"""Gets the expire_time of this VersionMetadata.
 
         凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。
 
@@ -133,7 +133,7 @@ class VersionMetadata:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this VersionMetadata.
+        r"""Sets the expire_time of this VersionMetadata.
 
         凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。
 
@@ -144,7 +144,7 @@ class VersionMetadata:
 
     @property
     def kms_key_id(self):
-        """Gets the kms_key_id of this VersionMetadata.
+        r"""Gets the kms_key_id of this VersionMetadata.
 
         加密版本凭据值的KMS主密钥ID。
 
@@ -155,7 +155,7 @@ class VersionMetadata:
 
     @kms_key_id.setter
     def kms_key_id(self, kms_key_id):
-        """Sets the kms_key_id of this VersionMetadata.
+        r"""Sets the kms_key_id of this VersionMetadata.
 
         加密版本凭据值的KMS主密钥ID。
 
@@ -166,7 +166,7 @@ class VersionMetadata:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this VersionMetadata.
+        r"""Gets the secret_name of this VersionMetadata.
 
         凭据名称。
 
@@ -177,7 +177,7 @@ class VersionMetadata:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this VersionMetadata.
+        r"""Sets the secret_name of this VersionMetadata.
 
         凭据名称。
 
@@ -188,7 +188,7 @@ class VersionMetadata:
 
     @property
     def version_stages(self):
-        """Gets the version_stages of this VersionMetadata.
+        r"""Gets the version_stages of this VersionMetadata.
 
         凭据版本被标记的状态列表。每个版本标签对于凭据对象下版本是唯一存在的，如果创建版本时，指定的是同一凭据对象下的一个已经标记在其他版本上的状态，该标签将自动从其他版本上删除，并附加到此版本上。  如果未指定version_stage的值，则凭据管理服务会自动移动临时标签SYSCURRENT到此新版本。
 
@@ -199,7 +199,7 @@ class VersionMetadata:
 
     @version_stages.setter
     def version_stages(self, version_stages):
-        """Sets the version_stages of this VersionMetadata.
+        r"""Sets the version_stages of this VersionMetadata.
 
         凭据版本被标记的状态列表。每个版本标签对于凭据对象下版本是唯一存在的，如果创建版本时，指定的是同一凭据对象下的一个已经标记在其他版本上的状态，该标签将自动从其他版本上删除，并附加到此版本上。  如果未指定version_stage的值，则凭据管理服务会自动移动临时标签SYSCURRENT到此新版本。
 

@@ -30,7 +30,7 @@ class BatchShowTestCaseResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """BatchShowTestCaseResponse
+        r"""BatchShowTestCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchShowTestCaseResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this BatchShowTestCaseResponse.
+        r"""Gets the code of this BatchShowTestCaseResponse.
 
         :return: The code of this BatchShowTestCaseResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class BatchShowTestCaseResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BatchShowTestCaseResponse.
+        r"""Sets the code of this BatchShowTestCaseResponse.
 
         :param code: The code of this BatchShowTestCaseResponse.
         :type code: str
@@ -76,7 +76,7 @@ class BatchShowTestCaseResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchShowTestCaseResponse.
+        r"""Gets the data of this BatchShowTestCaseResponse.
 
         :return: The data of this BatchShowTestCaseResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class BatchShowTestCaseResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchShowTestCaseResponse.
+        r"""Sets the data of this BatchShowTestCaseResponse.
 
         :param data: The data of this BatchShowTestCaseResponse.
         :type data: object
@@ -94,7 +94,7 @@ class BatchShowTestCaseResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this BatchShowTestCaseResponse.
+        r"""Gets the message of this BatchShowTestCaseResponse.
 
         :return: The message of this BatchShowTestCaseResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class BatchShowTestCaseResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this BatchShowTestCaseResponse.
+        r"""Sets the message of this BatchShowTestCaseResponse.
 
         :param message: The message of this BatchShowTestCaseResponse.
         :type message: str

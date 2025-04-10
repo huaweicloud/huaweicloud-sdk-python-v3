@@ -44,7 +44,7 @@ class ShowPluginResponse(SdkResponse):
     }
 
     def __init__(self, plugin_id=None, plugin_name=None, plugin_type=None, plugin_scope=None, plugin_content=None, remark=None, create_time=None, update_time=None, roma_app_id=None, roma_app_name=None):
-        """ShowPluginResponse
+        r"""ShowPluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this ShowPluginResponse.
+        r"""Gets the plugin_id of this ShowPluginResponse.
 
         插件编码。
 
@@ -118,7 +118,7 @@ class ShowPluginResponse(SdkResponse):
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this ShowPluginResponse.
+        r"""Sets the plugin_id of this ShowPluginResponse.
 
         插件编码。
 
@@ -129,7 +129,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ShowPluginResponse.
+        r"""Gets the plugin_name of this ShowPluginResponse.
 
         插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -140,7 +140,7 @@ class ShowPluginResponse(SdkResponse):
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ShowPluginResponse.
+        r"""Sets the plugin_name of this ShowPluginResponse.
 
         插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -151,7 +151,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def plugin_type(self):
-        """Gets the plugin_type of this ShowPluginResponse.
+        r"""Gets the plugin_type of this ShowPluginResponse.
 
         插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
 
@@ -162,7 +162,7 @@ class ShowPluginResponse(SdkResponse):
 
     @plugin_type.setter
     def plugin_type(self, plugin_type):
-        """Sets the plugin_type of this ShowPluginResponse.
+        r"""Sets the plugin_type of this ShowPluginResponse.
 
         插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
 
@@ -173,7 +173,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def plugin_scope(self):
-        """Gets the plugin_scope of this ShowPluginResponse.
+        r"""Gets the plugin_scope of this ShowPluginResponse.
 
         插件可见范围 - global：全局可见 - app：集成应用可见
 
@@ -184,7 +184,7 @@ class ShowPluginResponse(SdkResponse):
 
     @plugin_scope.setter
     def plugin_scope(self, plugin_scope):
-        """Sets the plugin_scope of this ShowPluginResponse.
+        r"""Sets the plugin_scope of this ShowPluginResponse.
 
         插件可见范围 - global：全局可见 - app：集成应用可见
 
@@ -195,7 +195,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def plugin_content(self):
-        """Gets the plugin_content of this ShowPluginResponse.
+        r"""Gets the plugin_content of this ShowPluginResponse.
 
         插件定义内容，支持json。参考提供的具体模型定义  CorsPluginContent：跨域资源共享 定义内容 SetRespHeadersContent：HTTP响应头管理 定义内容 KafkaLogContent：Kafka日志推送 定义内容 BreakerContent：断路器 定义内容 RateLimitContent 流量控制 定义内容 ThirdAuthContent: 第三方认证 定义内容
 
@@ -206,7 +206,7 @@ class ShowPluginResponse(SdkResponse):
 
     @plugin_content.setter
     def plugin_content(self, plugin_content):
-        """Sets the plugin_content of this ShowPluginResponse.
+        r"""Sets the plugin_content of this ShowPluginResponse.
 
         插件定义内容，支持json。参考提供的具体模型定义  CorsPluginContent：跨域资源共享 定义内容 SetRespHeadersContent：HTTP响应头管理 定义内容 KafkaLogContent：Kafka日志推送 定义内容 BreakerContent：断路器 定义内容 RateLimitContent 流量控制 定义内容 ThirdAuthContent: 第三方认证 定义内容
 
@@ -217,7 +217,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this ShowPluginResponse.
+        r"""Gets the remark of this ShowPluginResponse.
 
         插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -228,7 +228,7 @@ class ShowPluginResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ShowPluginResponse.
+        r"""Sets the remark of this ShowPluginResponse.
 
         插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -239,7 +239,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowPluginResponse.
+        r"""Gets the create_time of this ShowPluginResponse.
 
         创建时间。
 
@@ -250,7 +250,7 @@ class ShowPluginResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowPluginResponse.
+        r"""Sets the create_time of this ShowPluginResponse.
 
         创建时间。
 
@@ -261,7 +261,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowPluginResponse.
+        r"""Gets the update_time of this ShowPluginResponse.
 
         更新时间。
 
@@ -272,7 +272,7 @@ class ShowPluginResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowPluginResponse.
+        r"""Sets the update_time of this ShowPluginResponse.
 
         更新时间。
 
@@ -283,7 +283,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ShowPluginResponse.
+        r"""Gets the roma_app_id of this ShowPluginResponse.
 
         归属集成应用编码，plugin_scope为app时生效
 
@@ -294,7 +294,7 @@ class ShowPluginResponse(SdkResponse):
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ShowPluginResponse.
+        r"""Sets the roma_app_id of this ShowPluginResponse.
 
         归属集成应用编码，plugin_scope为app时生效
 
@@ -305,7 +305,7 @@ class ShowPluginResponse(SdkResponse):
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this ShowPluginResponse.
+        r"""Gets the roma_app_name of this ShowPluginResponse.
 
         API归属的集成应用名称
 
@@ -316,7 +316,7 @@ class ShowPluginResponse(SdkResponse):
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this ShowPluginResponse.
+        r"""Sets the roma_app_name of this ShowPluginResponse.
 
         API归属的集成应用名称
 

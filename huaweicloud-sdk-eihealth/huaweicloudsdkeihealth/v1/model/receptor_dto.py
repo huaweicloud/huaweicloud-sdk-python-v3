@@ -37,7 +37,7 @@ class ReceptorDto:
     }
 
     def __init__(self, name=None, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
-        """ReceptorDto
+        r"""ReceptorDto
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ReceptorDto:
 
     @property
     def name(self):
-        """Gets the name of this ReceptorDto.
+        r"""Gets the name of this ReceptorDto.
 
         靶点名称。
 
@@ -95,7 +95,7 @@ class ReceptorDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReceptorDto.
+        r"""Sets the name of this ReceptorDto.
 
         靶点名称。
 
@@ -106,7 +106,7 @@ class ReceptorDto:
 
     @property
     def receptor(self):
-        """Gets the receptor of this ReceptorDto.
+        r"""Gets the receptor of this ReceptorDto.
 
         :return: The receptor of this ReceptorDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -115,7 +115,7 @@ class ReceptorDto:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this ReceptorDto.
+        r"""Sets the receptor of this ReceptorDto.
 
         :param receptor: The receptor of this ReceptorDto.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -124,7 +124,7 @@ class ReceptorDto:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this ReceptorDto.
+        r"""Gets the bounding_box of this ReceptorDto.
 
         :return: The bounding_box of this ReceptorDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BoundBoxDto`
@@ -133,7 +133,7 @@ class ReceptorDto:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this ReceptorDto.
+        r"""Sets the bounding_box of this ReceptorDto.
 
         :param bounding_box: The bounding_box of this ReceptorDto.
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundBoxDto`
@@ -142,7 +142,7 @@ class ReceptorDto:
 
     @property
     def remove_ion(self):
-        """Gets the remove_ion of this ReceptorDto.
+        r"""Gets the remove_ion of this ReceptorDto.
 
         去除受体中的离子。
 
@@ -153,7 +153,7 @@ class ReceptorDto:
 
     @remove_ion.setter
     def remove_ion(self, remove_ion):
-        """Sets the remove_ion of this ReceptorDto.
+        r"""Sets the remove_ion of this ReceptorDto.
 
         去除受体中的离子。
 
@@ -164,7 +164,7 @@ class ReceptorDto:
 
     @property
     def remove_water(self):
-        """Gets the remove_water of this ReceptorDto.
+        r"""Gets the remove_water of this ReceptorDto.
 
         去除受体中的水分子。
 
@@ -175,7 +175,7 @@ class ReceptorDto:
 
     @remove_water.setter
     def remove_water(self, remove_water):
-        """Sets the remove_water of this ReceptorDto.
+        r"""Sets the remove_water of this ReceptorDto.
 
         去除受体中的水分子。
 
@@ -186,7 +186,7 @@ class ReceptorDto:
 
     @property
     def remove_ligand(self):
-        """Gets the remove_ligand of this ReceptorDto.
+        r"""Gets the remove_ligand of this ReceptorDto.
 
         去除受体中的配体分子。
 
@@ -197,7 +197,7 @@ class ReceptorDto:
 
     @remove_ligand.setter
     def remove_ligand(self, remove_ligand):
-        """Sets the remove_ligand of this ReceptorDto.
+        r"""Sets the remove_ligand of this ReceptorDto.
 
         去除受体中的配体分子。
 
@@ -208,7 +208,7 @@ class ReceptorDto:
 
     @property
     def add_hydrogen(self):
-        """Gets the add_hydrogen of this ReceptorDto.
+        r"""Gets the add_hydrogen of this ReceptorDto.
 
         增加氢原子。
 
@@ -219,7 +219,7 @@ class ReceptorDto:
 
     @add_hydrogen.setter
     def add_hydrogen(self, add_hydrogen):
-        """Sets the add_hydrogen of this ReceptorDto.
+        r"""Sets the add_hydrogen of this ReceptorDto.
 
         增加氢原子。
 

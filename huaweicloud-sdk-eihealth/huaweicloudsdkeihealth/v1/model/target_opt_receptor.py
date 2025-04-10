@@ -35,7 +35,7 @@ class TargetOptReceptor:
     }
 
     def __init__(self, file=None, balanced_charge=None, water_model=None, force_field=None, ion_type=None, ion_concentration=None):
-        """TargetOptReceptor
+        r"""TargetOptReceptor
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class TargetOptReceptor:
 
     @property
     def file(self):
-        """Gets the file of this TargetOptReceptor.
+        r"""Gets the file of this TargetOptReceptor.
 
         :return: The file of this TargetOptReceptor.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -86,7 +86,7 @@ class TargetOptReceptor:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this TargetOptReceptor.
+        r"""Sets the file of this TargetOptReceptor.
 
         :param file: The file of this TargetOptReceptor.
         :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -95,7 +95,7 @@ class TargetOptReceptor:
 
     @property
     def balanced_charge(self):
-        """Gets the balanced_charge of this TargetOptReceptor.
+        r"""Gets the balanced_charge of this TargetOptReceptor.
 
         是否平衡电荷
 
@@ -106,7 +106,7 @@ class TargetOptReceptor:
 
     @balanced_charge.setter
     def balanced_charge(self, balanced_charge):
-        """Sets the balanced_charge of this TargetOptReceptor.
+        r"""Sets the balanced_charge of this TargetOptReceptor.
 
         是否平衡电荷
 
@@ -117,7 +117,7 @@ class TargetOptReceptor:
 
     @property
     def water_model(self):
-        """Gets the water_model of this TargetOptReceptor.
+        r"""Gets the water_model of this TargetOptReceptor.
 
         水模型, 支持选择spc, spce, tip3p, tip4p, tip5p
 
@@ -128,7 +128,7 @@ class TargetOptReceptor:
 
     @water_model.setter
     def water_model(self, water_model):
-        """Sets the water_model of this TargetOptReceptor.
+        r"""Sets the water_model of this TargetOptReceptor.
 
         水模型, 支持选择spc, spce, tip3p, tip4p, tip5p
 
@@ -139,7 +139,7 @@ class TargetOptReceptor:
 
     @property
     def force_field(self):
-        """Gets the force_field of this TargetOptReceptor.
+        r"""Gets the force_field of this TargetOptReceptor.
 
         蛋白立场，支持选择amber03, amber94, amber96, amber99, amber99sb, amber99sb-ildn, amberGS, charmm27, oplsaa, gromos43a1, gromos43a2, gromos45a3, gromos53a5, gromos53a6, gromos54a7
 
@@ -150,7 +150,7 @@ class TargetOptReceptor:
 
     @force_field.setter
     def force_field(self, force_field):
-        """Sets the force_field of this TargetOptReceptor.
+        r"""Sets the force_field of this TargetOptReceptor.
 
         蛋白立场，支持选择amber03, amber94, amber96, amber99, amber99sb, amber99sb-ildn, amberGS, charmm27, oplsaa, gromos43a1, gromos43a2, gromos45a3, gromos53a5, gromos53a6, gromos54a7
 
@@ -161,7 +161,7 @@ class TargetOptReceptor:
 
     @property
     def ion_type(self):
-        """Gets the ion_type of this TargetOptReceptor.
+        r"""Gets the ion_type of this TargetOptReceptor.
 
         离子种类，支持选择NaCl、MgCl2、None，若设置了平衡电荷不支持选择None
 
@@ -172,7 +172,7 @@ class TargetOptReceptor:
 
     @ion_type.setter
     def ion_type(self, ion_type):
-        """Sets the ion_type of this TargetOptReceptor.
+        r"""Sets the ion_type of this TargetOptReceptor.
 
         离子种类，支持选择NaCl、MgCl2、None，若设置了平衡电荷不支持选择None
 
@@ -183,7 +183,7 @@ class TargetOptReceptor:
 
     @property
     def ion_concentration(self):
-        """Gets the ion_concentration of this TargetOptReceptor.
+        r"""Gets the ion_concentration of this TargetOptReceptor.
 
         离子浓度，单位mol/L，若离子种类设置为None离子浓度不支持设置
 
@@ -194,7 +194,7 @@ class TargetOptReceptor:
 
     @ion_concentration.setter
     def ion_concentration(self, ion_concentration):
-        """Sets the ion_concentration of this TargetOptReceptor.
+        r"""Sets the ion_concentration of this TargetOptReceptor.
 
         离子浓度，单位mol/L，若离子种类设置为None离子浓度不支持设置
 

@@ -35,7 +35,7 @@ class ListCommandsRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, limit=None, command_id=None, command_name=None, offset=None):
-        """ListCommandsRequest
+        r"""ListCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListCommandsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCommandsRequest.
+        r"""Gets the instance_id of this ListCommandsRequest.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ListCommandsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCommandsRequest.
+        r"""Sets the instance_id of this ListCommandsRequest.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ListCommandsRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListCommandsRequest.
+        r"""Gets the service_id of this ListCommandsRequest.
 
         服务ID
 
@@ -109,7 +109,7 @@ class ListCommandsRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListCommandsRequest.
+        r"""Sets the service_id of this ListCommandsRequest.
 
         服务ID
 
@@ -120,7 +120,7 @@ class ListCommandsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCommandsRequest.
+        r"""Gets the limit of this ListCommandsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -131,7 +131,7 @@ class ListCommandsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCommandsRequest.
+        r"""Sets the limit of this ListCommandsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -142,7 +142,7 @@ class ListCommandsRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this ListCommandsRequest.
+        r"""Gets the command_id of this ListCommandsRequest.
 
         命令ID
 
@@ -153,7 +153,7 @@ class ListCommandsRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ListCommandsRequest.
+        r"""Sets the command_id of this ListCommandsRequest.
 
         命令ID
 
@@ -164,7 +164,7 @@ class ListCommandsRequest:
 
     @property
     def command_name(self):
-        """Gets the command_name of this ListCommandsRequest.
+        r"""Gets the command_name of this ListCommandsRequest.
 
         命令名称
 
@@ -175,7 +175,7 @@ class ListCommandsRequest:
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this ListCommandsRequest.
+        r"""Sets the command_name of this ListCommandsRequest.
 
         命令名称
 
@@ -186,7 +186,7 @@ class ListCommandsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCommandsRequest.
+        r"""Gets the offset of this ListCommandsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -197,7 +197,7 @@ class ListCommandsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCommandsRequest.
+        r"""Sets the offset of this ListCommandsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

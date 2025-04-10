@@ -34,7 +34,7 @@ class DeHClient(Client):
         return client_builder
 
     def batch_create_dedicated_host_tags(self, request):
-        """批量添加专属主机标签
+        r"""批量添加专属主机标签
 
         为指定专属主机批量添加标签。
         
@@ -103,7 +103,7 @@ class DeHClient(Client):
         return http_info
 
     def batch_delete_dedicated_host_tags(self, request):
-        """批量删除专属主机标签
+        r"""批量删除专属主机标签
 
         批量删除指定专属主机标签。
         
@@ -172,7 +172,7 @@ class DeHClient(Client):
         return http_info
 
     def list_dedicated_host_types(self, request):
-        """查询可用的专属主机类型
+        r"""查询可用的专属主机类型
 
         查询某一AZ内可用的专属主机类型。
         
@@ -237,7 +237,7 @@ class DeHClient(Client):
         return http_info
 
     def list_dedicated_hosts(self, request):
-        """查询专属主机列表
+        r"""查询专属主机列表
 
         通过该接口查询专属主机列表。
         
@@ -328,7 +328,7 @@ class DeHClient(Client):
         return http_info
 
     def list_dedicated_hosts_by_tags(self, request):
-        """按标签查询专属主机列表
+        r"""按标签查询专属主机列表
 
         使用标签过滤专属主机列表，并返回专属主机使用的所有标签。
         
@@ -395,7 +395,7 @@ class DeHClient(Client):
         return http_info
 
     def list_servers_dedicated_host(self, request):
-        """查询专属主机上的云服务器
+        r"""查询专属主机上的云服务器
 
         查询专属主机上已部署的云服务器信息。
         
@@ -464,7 +464,7 @@ class DeHClient(Client):
         return http_info
 
     def show_dedicated_host(self, request):
-        """查询专属主机详情
+        r"""查询专属主机详情
 
         查询某一台专属主机的详情。
         
@@ -529,7 +529,7 @@ class DeHClient(Client):
         return http_info
 
     def show_dedicated_host_tags(self, request):
-        """查询指定专属主机标签
+        r"""查询指定专属主机标签
 
         查询指定专属主机的标签信息。
         
@@ -596,7 +596,7 @@ class DeHClient(Client):
         return http_info
 
     def show_quota_sets(self, request):
-        """查询租户的专属主机配额
+        r"""查询租户的专属主机配额
 
         该接口用于查询租户的专属主机配额。
         
@@ -663,7 +663,7 @@ class DeHClient(Client):
         return http_info
 
     def update_dedicated_host(self, request):
-        """更新专属主机属性
+        r"""更新专属主机属性
 
         该接口用于变更专属主机的“auto_placement”和“name”属性。
         

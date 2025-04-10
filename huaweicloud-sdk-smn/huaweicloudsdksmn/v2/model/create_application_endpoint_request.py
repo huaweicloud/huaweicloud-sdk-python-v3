@@ -27,7 +27,7 @@ class CreateApplicationEndpointRequest:
     }
 
     def __init__(self, application_urn=None, body=None):
-        """CreateApplicationEndpointRequest
+        r"""CreateApplicationEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateApplicationEndpointRequest:
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this CreateApplicationEndpointRequest.
+        r"""Gets the application_urn of this CreateApplicationEndpointRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class CreateApplicationEndpointRequest:
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this CreateApplicationEndpointRequest.
+        r"""Sets the application_urn of this CreateApplicationEndpointRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class CreateApplicationEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateApplicationEndpointRequest.
+        r"""Gets the body of this CreateApplicationEndpointRequest.
 
         :return: The body of this CreateApplicationEndpointRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequestBody`
@@ -80,7 +80,7 @@ class CreateApplicationEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateApplicationEndpointRequest.
+        r"""Sets the body of this CreateApplicationEndpointRequest.
 
         :param body: The body of this CreateApplicationEndpointRequest.
         :type body: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequestBody`

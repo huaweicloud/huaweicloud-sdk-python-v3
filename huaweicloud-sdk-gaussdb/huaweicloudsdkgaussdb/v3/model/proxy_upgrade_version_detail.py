@@ -31,7 +31,7 @@ class ProxyUpgradeVersionDetail:
     }
 
     def __init__(self, instance_id=None, workflow_id=None, state=None, error_message=None):
-        """ProxyUpgradeVersionDetail
+        r"""ProxyUpgradeVersionDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProxyUpgradeVersionDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ProxyUpgradeVersionDetail.
+        r"""Gets the instance_id of this ProxyUpgradeVersionDetail.
 
         实例id.
 
@@ -75,7 +75,7 @@ class ProxyUpgradeVersionDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ProxyUpgradeVersionDetail.
+        r"""Sets the instance_id of this ProxyUpgradeVersionDetail.
 
         实例id.
 
@@ -86,7 +86,7 @@ class ProxyUpgradeVersionDetail:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ProxyUpgradeVersionDetail.
+        r"""Gets the workflow_id of this ProxyUpgradeVersionDetail.
 
         工作流Id。
 
@@ -97,7 +97,7 @@ class ProxyUpgradeVersionDetail:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ProxyUpgradeVersionDetail.
+        r"""Sets the workflow_id of this ProxyUpgradeVersionDetail.
 
         工作流Id。
 
@@ -108,7 +108,7 @@ class ProxyUpgradeVersionDetail:
 
     @property
     def state(self):
-        """Gets the state of this ProxyUpgradeVersionDetail.
+        r"""Gets the state of this ProxyUpgradeVersionDetail.
 
         agent返回的升级下发状态码，默认返回。
 
@@ -119,7 +119,7 @@ class ProxyUpgradeVersionDetail:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ProxyUpgradeVersionDetail.
+        r"""Sets the state of this ProxyUpgradeVersionDetail.
 
         agent返回的升级下发状态码，默认返回。
 
@@ -130,7 +130,7 @@ class ProxyUpgradeVersionDetail:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ProxyUpgradeVersionDetail.
+        r"""Gets the error_message of this ProxyUpgradeVersionDetail.
 
         错误消息。
 
@@ -141,7 +141,7 @@ class ProxyUpgradeVersionDetail:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ProxyUpgradeVersionDetail.
+        r"""Sets the error_message of this ProxyUpgradeVersionDetail.
 
         错误消息。
 

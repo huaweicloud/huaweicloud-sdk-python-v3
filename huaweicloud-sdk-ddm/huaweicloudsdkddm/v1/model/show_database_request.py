@@ -27,7 +27,7 @@ class ShowDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, ddm_dbname=None):
-        """ShowDatabaseRequest
+        r"""ShowDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDatabaseRequest.
+        r"""Gets the instance_id of this ShowDatabaseRequest.
 
         DDM实例ID
 
@@ -59,7 +59,7 @@ class ShowDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDatabaseRequest.
+        r"""Sets the instance_id of this ShowDatabaseRequest.
 
         DDM实例ID
 
@@ -70,7 +70,7 @@ class ShowDatabaseRequest:
 
     @property
     def ddm_dbname(self):
-        """Gets the ddm_dbname of this ShowDatabaseRequest.
+        r"""Gets the ddm_dbname of this ShowDatabaseRequest.
 
         需要查询的逻辑库名称，不区分大小写。
 
@@ -81,7 +81,7 @@ class ShowDatabaseRequest:
 
     @ddm_dbname.setter
     def ddm_dbname(self, ddm_dbname):
-        """Sets the ddm_dbname of this ShowDatabaseRequest.
+        r"""Sets the ddm_dbname of this ShowDatabaseRequest.
 
         需要查询的逻辑库名称，不区分大小写。
 

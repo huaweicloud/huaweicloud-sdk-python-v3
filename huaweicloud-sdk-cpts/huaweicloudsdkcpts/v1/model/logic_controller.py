@@ -27,7 +27,7 @@ class LogicController:
     }
 
     def __init__(self, for_loop_params=None, condition=None):
-        """LogicController
+        r"""LogicController
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LogicController:
 
     @property
     def for_loop_params(self):
-        """Gets the for_loop_params of this LogicController.
+        r"""Gets the for_loop_params of this LogicController.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -61,7 +61,7 @@ class LogicController:
 
     @for_loop_params.setter
     def for_loop_params(self, for_loop_params):
-        """Sets the for_loop_params of this LogicController.
+        r"""Sets the for_loop_params of this LogicController.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -72,7 +72,7 @@ class LogicController:
 
     @property
     def condition(self):
-        """Gets the condition of this LogicController.
+        r"""Gets the condition of this LogicController.
 
         逻辑控制器条件
 
@@ -83,7 +83,7 @@ class LogicController:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this LogicController.
+        r"""Sets the condition of this LogicController.
 
         逻辑控制器条件
 

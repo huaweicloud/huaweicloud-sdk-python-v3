@@ -29,7 +29,7 @@ class PrecheckClusterRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """PrecheckClusterRequestBody
+        r"""PrecheckClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PrecheckClusterRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this PrecheckClusterRequestBody.
+        r"""Gets the api_version of this PrecheckClusterRequestBody.
 
         API版本，默认为v3
 
@@ -65,7 +65,7 @@ class PrecheckClusterRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this PrecheckClusterRequestBody.
+        r"""Sets the api_version of this PrecheckClusterRequestBody.
 
         API版本，默认为v3
 
@@ -76,7 +76,7 @@ class PrecheckClusterRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this PrecheckClusterRequestBody.
+        r"""Gets the kind of this PrecheckClusterRequestBody.
 
         资源类型，默认为PreCheckTask
 
@@ -87,7 +87,7 @@ class PrecheckClusterRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this PrecheckClusterRequestBody.
+        r"""Sets the kind of this PrecheckClusterRequestBody.
 
         资源类型，默认为PreCheckTask
 
@@ -98,7 +98,7 @@ class PrecheckClusterRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this PrecheckClusterRequestBody.
+        r"""Gets the spec of this PrecheckClusterRequestBody.
 
         :return: The spec of this PrecheckClusterRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -107,7 +107,7 @@ class PrecheckClusterRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this PrecheckClusterRequestBody.
+        r"""Sets the spec of this PrecheckClusterRequestBody.
 
         :param spec: The spec of this PrecheckClusterRequestBody.
         :type spec: :class:`huaweicloudsdkcce.v3.PrecheckSpec`

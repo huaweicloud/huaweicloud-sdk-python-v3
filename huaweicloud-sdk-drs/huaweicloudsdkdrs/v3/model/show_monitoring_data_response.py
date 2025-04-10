@@ -28,7 +28,7 @@ class ShowMonitoringDataResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """ShowMonitoringDataResponse
+        r"""ShowMonitoringDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMonitoringDataResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ShowMonitoringDataResponse.
+        r"""Gets the results of this ShowMonitoringDataResponse.
 
         容灾监控数据响应体集合
 
@@ -62,7 +62,7 @@ class ShowMonitoringDataResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ShowMonitoringDataResponse.
+        r"""Sets the results of this ShowMonitoringDataResponse.
 
         容灾监控数据响应体集合
 
@@ -73,7 +73,7 @@ class ShowMonitoringDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowMonitoringDataResponse.
+        r"""Gets the count of this ShowMonitoringDataResponse.
 
         查询总数
 
@@ -84,7 +84,7 @@ class ShowMonitoringDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowMonitoringDataResponse.
+        r"""Sets the count of this ShowMonitoringDataResponse.
 
         查询总数
 

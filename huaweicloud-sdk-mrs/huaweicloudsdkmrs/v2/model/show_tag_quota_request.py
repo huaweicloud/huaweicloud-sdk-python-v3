@@ -27,7 +27,7 @@ class ShowTagQuotaRequest:
     }
 
     def __init__(self, cluster_id=None, auto_scaling_policy_tags=None):
-        """ShowTagQuotaRequest
+        r"""ShowTagQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTagQuotaRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowTagQuotaRequest.
+        r"""Gets the cluster_id of this ShowTagQuotaRequest.
 
         集群ID。
 
@@ -60,7 +60,7 @@ class ShowTagQuotaRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowTagQuotaRequest.
+        r"""Sets the cluster_id of this ShowTagQuotaRequest.
 
         集群ID。
 
@@ -71,7 +71,7 @@ class ShowTagQuotaRequest:
 
     @property
     def auto_scaling_policy_tags(self):
-        """Gets the auto_scaling_policy_tags of this ShowTagQuotaRequest.
+        r"""Gets the auto_scaling_policy_tags of this ShowTagQuotaRequest.
 
         是否查询弹性伸缩策略标签
 
@@ -82,7 +82,7 @@ class ShowTagQuotaRequest:
 
     @auto_scaling_policy_tags.setter
     def auto_scaling_policy_tags(self, auto_scaling_policy_tags):
-        """Sets the auto_scaling_policy_tags of this ShowTagQuotaRequest.
+        r"""Sets the auto_scaling_policy_tags of this ShowTagQuotaRequest.
 
         是否查询弹性伸缩策略标签
 

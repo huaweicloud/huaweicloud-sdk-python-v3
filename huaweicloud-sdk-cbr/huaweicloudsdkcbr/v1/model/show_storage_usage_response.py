@@ -28,7 +28,7 @@ class ShowStorageUsageResponse(SdkResponse):
     }
 
     def __init__(self, resource_count=None, storage_usage=None):
-        """ShowStorageUsageResponse
+        r"""ShowStorageUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStorageUsageResponse(SdkResponse):
 
     @property
     def resource_count(self):
-        """Gets the resource_count of this ShowStorageUsageResponse.
+        r"""Gets the resource_count of this ShowStorageUsageResponse.
 
         满足过滤条件的资源总条数
 
@@ -62,7 +62,7 @@ class ShowStorageUsageResponse(SdkResponse):
 
     @resource_count.setter
     def resource_count(self, resource_count):
-        """Sets the resource_count of this ShowStorageUsageResponse.
+        r"""Sets the resource_count of this ShowStorageUsageResponse.
 
         满足过滤条件的资源总条数
 
@@ -73,7 +73,7 @@ class ShowStorageUsageResponse(SdkResponse):
 
     @property
     def storage_usage(self):
-        """Gets the storage_usage of this ShowStorageUsageResponse.
+        r"""Gets the storage_usage of this ShowStorageUsageResponse.
 
         
 
@@ -84,7 +84,7 @@ class ShowStorageUsageResponse(SdkResponse):
 
     @storage_usage.setter
     def storage_usage(self, storage_usage):
-        """Sets the storage_usage of this ShowStorageUsageResponse.
+        r"""Sets the storage_usage of this ShowStorageUsageResponse.
 
         
 

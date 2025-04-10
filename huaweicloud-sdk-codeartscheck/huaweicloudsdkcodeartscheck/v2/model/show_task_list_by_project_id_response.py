@@ -28,7 +28,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ShowTaskListByProjectIdResponse
+        r"""ShowTaskListByProjectIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowTaskListByProjectIdResponse.
+        r"""Gets the tasks of this ShowTaskListByProjectIdResponse.
 
         任务信息
 
@@ -62,7 +62,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowTaskListByProjectIdResponse.
+        r"""Sets the tasks of this ShowTaskListByProjectIdResponse.
 
         任务信息
 
@@ -73,7 +73,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTaskListByProjectIdResponse.
+        r"""Gets the total of this ShowTaskListByProjectIdResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowTaskListByProjectIdResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTaskListByProjectIdResponse.
+        r"""Sets the total of this ShowTaskListByProjectIdResponse.
 
         总数
 

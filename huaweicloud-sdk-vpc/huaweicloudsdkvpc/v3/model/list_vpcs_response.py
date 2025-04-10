@@ -30,7 +30,7 @@ class ListVpcsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, vpcs=None, page_info=None):
-        """ListVpcsResponse
+        r"""ListVpcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVpcsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpcsResponse.
+        r"""Gets the request_id of this ListVpcsResponse.
 
         请求ID
 
@@ -69,7 +69,7 @@ class ListVpcsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpcsResponse.
+        r"""Sets the request_id of this ListVpcsResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ListVpcsResponse(SdkResponse):
 
     @property
     def vpcs(self):
-        """Gets the vpcs of this ListVpcsResponse.
+        r"""Gets the vpcs of this ListVpcsResponse.
 
         VPC列表响应体
 
@@ -91,7 +91,7 @@ class ListVpcsResponse(SdkResponse):
 
     @vpcs.setter
     def vpcs(self, vpcs):
-        """Sets the vpcs of this ListVpcsResponse.
+        r"""Sets the vpcs of this ListVpcsResponse.
 
         VPC列表响应体
 
@@ -102,7 +102,7 @@ class ListVpcsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpcsResponse.
+        r"""Gets the page_info of this ListVpcsResponse.
 
         :return: The page_info of this ListVpcsResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListVpcsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpcsResponse.
+        r"""Sets the page_info of this ListVpcsResponse.
 
         :param page_info: The page_info of this ListVpcsResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

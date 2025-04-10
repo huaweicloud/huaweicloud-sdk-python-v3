@@ -28,7 +28,7 @@ class ListHarvestTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, harvest_tasks=None):
-        """ListHarvestTaskResponse
+        r"""ListHarvestTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHarvestTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListHarvestTaskResponse.
+        r"""Gets the total of this ListHarvestTaskResponse.
 
         总任务数
 
@@ -62,7 +62,7 @@ class ListHarvestTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListHarvestTaskResponse.
+        r"""Sets the total of this ListHarvestTaskResponse.
 
         总任务数
 
@@ -73,7 +73,7 @@ class ListHarvestTaskResponse(SdkResponse):
 
     @property
     def harvest_tasks(self):
-        """Gets the harvest_tasks of this ListHarvestTaskResponse.
+        r"""Gets the harvest_tasks of this ListHarvestTaskResponse.
 
         任务信息
 
@@ -84,7 +84,7 @@ class ListHarvestTaskResponse(SdkResponse):
 
     @harvest_tasks.setter
     def harvest_tasks(self, harvest_tasks):
-        """Sets the harvest_tasks of this ListHarvestTaskResponse.
+        r"""Sets the harvest_tasks of this ListHarvestTaskResponse.
 
         任务信息
 

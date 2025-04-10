@@ -29,7 +29,7 @@ class UpdateNoticeRuleReq:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """UpdateNoticeRuleReq
+        r"""UpdateNoticeRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateNoticeRuleReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateNoticeRuleReq.
+        r"""Gets the api_version of this UpdateNoticeRuleReq.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -65,7 +65,7 @@ class UpdateNoticeRuleReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateNoticeRuleReq.
+        r"""Sets the api_version of this UpdateNoticeRuleReq.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -76,7 +76,7 @@ class UpdateNoticeRuleReq:
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateNoticeRuleReq.
+        r"""Gets the kind of this UpdateNoticeRuleReq.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -87,7 +87,7 @@ class UpdateNoticeRuleReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateNoticeRuleReq.
+        r"""Sets the kind of this UpdateNoticeRuleReq.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -98,7 +98,7 @@ class UpdateNoticeRuleReq:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateNoticeRuleReq.
+        r"""Gets the spec of this UpdateNoticeRuleReq.
 
         :return: The spec of this UpdateNoticeRuleReq.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateNoticeRuleItem`
@@ -107,7 +107,7 @@ class UpdateNoticeRuleReq:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateNoticeRuleReq.
+        r"""Sets the spec of this UpdateNoticeRuleReq.
 
         :param spec: The spec of this UpdateNoticeRuleReq.
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateNoticeRuleItem`

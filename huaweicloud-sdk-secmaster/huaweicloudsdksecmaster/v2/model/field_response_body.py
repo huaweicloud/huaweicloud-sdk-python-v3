@@ -91,7 +91,7 @@ class FieldResponseBody:
     }
 
     def __init__(self, id=None, cloud_pack_version=None, business_id=None, business_type=None, dataclass_name=None, business_code=None, field_key=None, name=None, description=None, default_value=None, display_type=None, field_type=None, extra_json=None, field_tooltip=None, iu_type=None, used_by=None, json_schema=None, is_built_in=None, case_sensitive=None, read_only=None, required=None, searchable=None, visible=None, maintainable=None, editable=None, creatable=None, mapping=None, target_api=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None, create_time=None, update_time=None):
-        """FieldResponseBody
+        r"""FieldResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -274,7 +274,7 @@ class FieldResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this FieldResponseBody.
+        r"""Gets the id of this FieldResponseBody.
 
         Id value
 
@@ -285,7 +285,7 @@ class FieldResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FieldResponseBody.
+        r"""Sets the id of this FieldResponseBody.
 
         Id value
 
@@ -296,7 +296,7 @@ class FieldResponseBody:
 
     @property
     def cloud_pack_version(self):
-        """Gets the cloud_pack_version of this FieldResponseBody.
+        r"""Gets the cloud_pack_version of this FieldResponseBody.
 
         订阅包版本
 
@@ -307,7 +307,7 @@ class FieldResponseBody:
 
     @cloud_pack_version.setter
     def cloud_pack_version(self, cloud_pack_version):
-        """Sets the cloud_pack_version of this FieldResponseBody.
+        r"""Sets the cloud_pack_version of this FieldResponseBody.
 
         订阅包版本
 
@@ -318,7 +318,7 @@ class FieldResponseBody:
 
     @property
     def business_id(self):
-        """Gets the business_id of this FieldResponseBody.
+        r"""Gets the business_id of this FieldResponseBody.
 
         关联业务id
 
@@ -329,7 +329,7 @@ class FieldResponseBody:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this FieldResponseBody.
+        r"""Sets the business_id of this FieldResponseBody.
 
         关联业务id
 
@@ -340,7 +340,7 @@ class FieldResponseBody:
 
     @property
     def business_type(self):
-        """Gets the business_type of this FieldResponseBody.
+        r"""Gets the business_type of this FieldResponseBody.
 
         关联业务
 
@@ -351,7 +351,7 @@ class FieldResponseBody:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this FieldResponseBody.
+        r"""Sets the business_type of this FieldResponseBody.
 
         关联业务
 
@@ -362,7 +362,7 @@ class FieldResponseBody:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this FieldResponseBody.
+        r"""Gets the dataclass_name of this FieldResponseBody.
 
         数据类名称
 
@@ -373,7 +373,7 @@ class FieldResponseBody:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this FieldResponseBody.
+        r"""Sets the dataclass_name of this FieldResponseBody.
 
         数据类名称
 
@@ -384,7 +384,7 @@ class FieldResponseBody:
 
     @property
     def business_code(self):
-        """Gets the business_code of this FieldResponseBody.
+        r"""Gets the business_code of this FieldResponseBody.
 
         字段业务编码
 
@@ -395,7 +395,7 @@ class FieldResponseBody:
 
     @business_code.setter
     def business_code(self, business_code):
-        """Sets the business_code of this FieldResponseBody.
+        r"""Sets the business_code of this FieldResponseBody.
 
         字段业务编码
 
@@ -406,7 +406,7 @@ class FieldResponseBody:
 
     @property
     def field_key(self):
-        """Gets the field_key of this FieldResponseBody.
+        r"""Gets the field_key of this FieldResponseBody.
 
         字段key
 
@@ -417,7 +417,7 @@ class FieldResponseBody:
 
     @field_key.setter
     def field_key(self, field_key):
-        """Sets the field_key of this FieldResponseBody.
+        r"""Sets the field_key of this FieldResponseBody.
 
         字段key
 
@@ -428,7 +428,7 @@ class FieldResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this FieldResponseBody.
+        r"""Gets the name of this FieldResponseBody.
 
         字段名称
 
@@ -439,7 +439,7 @@ class FieldResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FieldResponseBody.
+        r"""Sets the name of this FieldResponseBody.
 
         字段名称
 
@@ -450,7 +450,7 @@ class FieldResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this FieldResponseBody.
+        r"""Gets the description of this FieldResponseBody.
 
         字段描述
 
@@ -461,7 +461,7 @@ class FieldResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FieldResponseBody.
+        r"""Sets the description of this FieldResponseBody.
 
         字段描述
 
@@ -472,7 +472,7 @@ class FieldResponseBody:
 
     @property
     def default_value(self):
-        """Gets the default_value of this FieldResponseBody.
+        r"""Gets the default_value of this FieldResponseBody.
 
         默认值
 
@@ -483,7 +483,7 @@ class FieldResponseBody:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this FieldResponseBody.
+        r"""Sets the default_value of this FieldResponseBody.
 
         默认值
 
@@ -494,7 +494,7 @@ class FieldResponseBody:
 
     @property
     def display_type(self):
-        """Gets the display_type of this FieldResponseBody.
+        r"""Gets the display_type of this FieldResponseBody.
 
         显示类型
 
@@ -505,7 +505,7 @@ class FieldResponseBody:
 
     @display_type.setter
     def display_type(self, display_type):
-        """Sets the display_type of this FieldResponseBody.
+        r"""Sets the display_type of this FieldResponseBody.
 
         显示类型
 
@@ -516,7 +516,7 @@ class FieldResponseBody:
 
     @property
     def field_type(self):
-        """Gets the field_type of this FieldResponseBody.
+        r"""Gets the field_type of this FieldResponseBody.
 
         字段类型，如shorttext,radio,grid等
 
@@ -527,7 +527,7 @@ class FieldResponseBody:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this FieldResponseBody.
+        r"""Sets the field_type of this FieldResponseBody.
 
         字段类型，如shorttext,radio,grid等
 
@@ -538,7 +538,7 @@ class FieldResponseBody:
 
     @property
     def extra_json(self):
-        """Gets the extra_json of this FieldResponseBody.
+        r"""Gets the extra_json of this FieldResponseBody.
 
         附加json
 
@@ -549,7 +549,7 @@ class FieldResponseBody:
 
     @extra_json.setter
     def extra_json(self, extra_json):
-        """Sets the extra_json of this FieldResponseBody.
+        r"""Sets the extra_json of this FieldResponseBody.
 
         附加json
 
@@ -560,7 +560,7 @@ class FieldResponseBody:
 
     @property
     def field_tooltip(self):
-        """Gets the field_tooltip of this FieldResponseBody.
+        r"""Gets the field_tooltip of this FieldResponseBody.
 
         工具提示
 
@@ -571,7 +571,7 @@ class FieldResponseBody:
 
     @field_tooltip.setter
     def field_tooltip(self, field_tooltip):
-        """Sets the field_tooltip of this FieldResponseBody.
+        r"""Sets the field_tooltip of this FieldResponseBody.
 
         工具提示
 
@@ -582,7 +582,7 @@ class FieldResponseBody:
 
     @property
     def iu_type(self):
-        """Gets the iu_type of this FieldResponseBody.
+        r"""Gets the iu_type of this FieldResponseBody.
 
         输入输出类型
 
@@ -593,7 +593,7 @@ class FieldResponseBody:
 
     @iu_type.setter
     def iu_type(self, iu_type):
-        """Sets the iu_type of this FieldResponseBody.
+        r"""Sets the iu_type of this FieldResponseBody.
 
         输入输出类型
 
@@ -604,7 +604,7 @@ class FieldResponseBody:
 
     @property
     def used_by(self):
-        """Gets the used_by of this FieldResponseBody.
+        r"""Gets the used_by of this FieldResponseBody.
 
         使用业务
 
@@ -615,7 +615,7 @@ class FieldResponseBody:
 
     @used_by.setter
     def used_by(self, used_by):
-        """Sets the used_by of this FieldResponseBody.
+        r"""Sets the used_by of this FieldResponseBody.
 
         使用业务
 
@@ -626,7 +626,7 @@ class FieldResponseBody:
 
     @property
     def json_schema(self):
-        """Gets the json_schema of this FieldResponseBody.
+        r"""Gets the json_schema of this FieldResponseBody.
 
         json模式
 
@@ -637,7 +637,7 @@ class FieldResponseBody:
 
     @json_schema.setter
     def json_schema(self, json_schema):
-        """Sets the json_schema of this FieldResponseBody.
+        r"""Sets the json_schema of this FieldResponseBody.
 
         json模式
 
@@ -648,7 +648,7 @@ class FieldResponseBody:
 
     @property
     def is_built_in(self):
-        """Gets the is_built_in of this FieldResponseBody.
+        r"""Gets the is_built_in of this FieldResponseBody.
 
         是否内置，true内置，false非内置
 
@@ -659,7 +659,7 @@ class FieldResponseBody:
 
     @is_built_in.setter
     def is_built_in(self, is_built_in):
-        """Sets the is_built_in of this FieldResponseBody.
+        r"""Sets the is_built_in of this FieldResponseBody.
 
         是否内置，true内置，false非内置
 
@@ -670,7 +670,7 @@ class FieldResponseBody:
 
     @property
     def case_sensitive(self):
-        """Gets the case_sensitive of this FieldResponseBody.
+        r"""Gets the case_sensitive of this FieldResponseBody.
 
         大小写敏感，true敏感，false不敏感
 
@@ -681,7 +681,7 @@ class FieldResponseBody:
 
     @case_sensitive.setter
     def case_sensitive(self, case_sensitive):
-        """Sets the case_sensitive of this FieldResponseBody.
+        r"""Sets the case_sensitive of this FieldResponseBody.
 
         大小写敏感，true敏感，false不敏感
 
@@ -692,7 +692,7 @@ class FieldResponseBody:
 
     @property
     def read_only(self):
-        """Gets the read_only of this FieldResponseBody.
+        r"""Gets the read_only of this FieldResponseBody.
 
         只读模式，true只读，false非只读
 
@@ -703,7 +703,7 @@ class FieldResponseBody:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this FieldResponseBody.
+        r"""Sets the read_only of this FieldResponseBody.
 
         只读模式，true只读，false非只读
 
@@ -714,7 +714,7 @@ class FieldResponseBody:
 
     @property
     def required(self):
-        """Gets the required of this FieldResponseBody.
+        r"""Gets the required of this FieldResponseBody.
 
         是否必填，true必填，false非必填
 
@@ -725,7 +725,7 @@ class FieldResponseBody:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this FieldResponseBody.
+        r"""Sets the required of this FieldResponseBody.
 
         是否必填，true必填，false非必填
 
@@ -736,7 +736,7 @@ class FieldResponseBody:
 
     @property
     def searchable(self):
-        """Gets the searchable of this FieldResponseBody.
+        r"""Gets the searchable of this FieldResponseBody.
 
         可搜索，true可搜索，false非可搜索
 
@@ -747,7 +747,7 @@ class FieldResponseBody:
 
     @searchable.setter
     def searchable(self, searchable):
-        """Sets the searchable of this FieldResponseBody.
+        r"""Sets the searchable of this FieldResponseBody.
 
         可搜索，true可搜索，false非可搜索
 
@@ -758,7 +758,7 @@ class FieldResponseBody:
 
     @property
     def visible(self):
-        """Gets the visible of this FieldResponseBody.
+        r"""Gets the visible of this FieldResponseBody.
 
         可见，true可见，false非可见
 
@@ -769,7 +769,7 @@ class FieldResponseBody:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this FieldResponseBody.
+        r"""Sets the visible of this FieldResponseBody.
 
         可见，true可见，false非可见
 
@@ -780,7 +780,7 @@ class FieldResponseBody:
 
     @property
     def maintainable(self):
-        """Gets the maintainable of this FieldResponseBody.
+        r"""Gets the maintainable of this FieldResponseBody.
 
         可维护，true可维护，false非可维护
 
@@ -791,7 +791,7 @@ class FieldResponseBody:
 
     @maintainable.setter
     def maintainable(self, maintainable):
-        """Sets the maintainable of this FieldResponseBody.
+        r"""Sets the maintainable of this FieldResponseBody.
 
         可维护，true可维护，false非可维护
 
@@ -802,7 +802,7 @@ class FieldResponseBody:
 
     @property
     def editable(self):
-        """Gets the editable of this FieldResponseBody.
+        r"""Gets the editable of this FieldResponseBody.
 
         可编辑，true可编辑，false非可编辑
 
@@ -813,7 +813,7 @@ class FieldResponseBody:
 
     @editable.setter
     def editable(self, editable):
-        """Sets the editable of this FieldResponseBody.
+        r"""Sets the editable of this FieldResponseBody.
 
         可编辑，true可编辑，false非可编辑
 
@@ -824,7 +824,7 @@ class FieldResponseBody:
 
     @property
     def creatable(self):
-        """Gets the creatable of this FieldResponseBody.
+        r"""Gets the creatable of this FieldResponseBody.
 
         可创建，true可创建，false非可创建
 
@@ -835,7 +835,7 @@ class FieldResponseBody:
 
     @creatable.setter
     def creatable(self, creatable):
-        """Sets the creatable of this FieldResponseBody.
+        r"""Sets the creatable of this FieldResponseBody.
 
         可创建，true可创建，false非可创建
 
@@ -846,7 +846,7 @@ class FieldResponseBody:
 
     @property
     def mapping(self):
-        """Gets the mapping of this FieldResponseBody.
+        r"""Gets the mapping of this FieldResponseBody.
 
         是否展示在分类映射外的其他地方
 
@@ -857,7 +857,7 @@ class FieldResponseBody:
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this FieldResponseBody.
+        r"""Sets the mapping of this FieldResponseBody.
 
         是否展示在分类映射外的其他地方
 
@@ -868,7 +868,7 @@ class FieldResponseBody:
 
     @property
     def target_api(self):
-        """Gets the target_api of this FieldResponseBody.
+        r"""Gets the target_api of this FieldResponseBody.
 
         目标api
 
@@ -879,7 +879,7 @@ class FieldResponseBody:
 
     @target_api.setter
     def target_api(self, target_api):
-        """Sets the target_api of this FieldResponseBody.
+        r"""Sets the target_api of this FieldResponseBody.
 
         目标api
 
@@ -890,7 +890,7 @@ class FieldResponseBody:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this FieldResponseBody.
+        r"""Gets the creator_id of this FieldResponseBody.
 
         Creator id value
 
@@ -901,7 +901,7 @@ class FieldResponseBody:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this FieldResponseBody.
+        r"""Sets the creator_id of this FieldResponseBody.
 
         Creator id value
 
@@ -912,7 +912,7 @@ class FieldResponseBody:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this FieldResponseBody.
+        r"""Gets the creator_name of this FieldResponseBody.
 
         Creator name value
 
@@ -923,7 +923,7 @@ class FieldResponseBody:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this FieldResponseBody.
+        r"""Sets the creator_name of this FieldResponseBody.
 
         Creator name value
 
@@ -934,7 +934,7 @@ class FieldResponseBody:
 
     @property
     def modifier_id(self):
-        """Gets the modifier_id of this FieldResponseBody.
+        r"""Gets the modifier_id of this FieldResponseBody.
 
         Modifier id value
 
@@ -945,7 +945,7 @@ class FieldResponseBody:
 
     @modifier_id.setter
     def modifier_id(self, modifier_id):
-        """Sets the modifier_id of this FieldResponseBody.
+        r"""Sets the modifier_id of this FieldResponseBody.
 
         Modifier id value
 
@@ -956,7 +956,7 @@ class FieldResponseBody:
 
     @property
     def modifier_name(self):
-        """Gets the modifier_name of this FieldResponseBody.
+        r"""Gets the modifier_name of this FieldResponseBody.
 
         Modifier name value
 
@@ -967,7 +967,7 @@ class FieldResponseBody:
 
     @modifier_name.setter
     def modifier_name(self, modifier_name):
-        """Sets the modifier_name of this FieldResponseBody.
+        r"""Sets the modifier_name of this FieldResponseBody.
 
         Modifier name value
 
@@ -978,7 +978,7 @@ class FieldResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FieldResponseBody.
+        r"""Gets the create_time of this FieldResponseBody.
 
         Create time
 
@@ -989,7 +989,7 @@ class FieldResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FieldResponseBody.
+        r"""Sets the create_time of this FieldResponseBody.
 
         Create time
 
@@ -1000,7 +1000,7 @@ class FieldResponseBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this FieldResponseBody.
+        r"""Gets the update_time of this FieldResponseBody.
 
         Update time
 
@@ -1011,7 +1011,7 @@ class FieldResponseBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this FieldResponseBody.
+        r"""Sets the update_time of this FieldResponseBody.
 
         Update time
 
